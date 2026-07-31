@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐⭐⭐ | 5.6KB | `entities/sparse-autoencoders.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Sparse Autoencoders"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 关联
 - [Natural Language Autoencoders](ch01/1330-natural-language-autoencoders-anthropic.html) — NLA 在 SAE 基础上增加文字输出能力
 - [Anthropic](ch01/989-anthropic.html) — 主要研究机构

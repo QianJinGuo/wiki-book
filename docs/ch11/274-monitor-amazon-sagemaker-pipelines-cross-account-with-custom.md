@@ -7,15 +7,6 @@
 # Monitor Amazon SageMaker Pipelines cross-account with custom Amazon CloudWatch dashboards
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Monitor Amazon SageMaker Pip…"))
-    核心内容
-    分析
-```
-
 ## 核心内容
 
 ```mermaid

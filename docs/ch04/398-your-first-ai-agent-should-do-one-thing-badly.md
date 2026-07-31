@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Your First AI Agent Should D…"))
-    深度分析
-      1. 为什么 Agentic 系统不能'先设计…
-      2. POC 墓地的具体形态
-      3. 医疗人员验证案例的'单点切入'模式
-      4. 'Crawl, Walk, Run' 与…
-    实践启示
-    相关实体
+  root(("Your First AI Agent Should Do One"))
+    为什么 Agentic 系统不能先设计再实现
+    POC 墓地的具体形态
+    医疗人员验证案例的单点切入模式
+    Crawl Walk Run 与 Karpathy 的 Vibe
 ```
 
 ## 摘要

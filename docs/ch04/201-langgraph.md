@@ -10,22 +10,18 @@
 ```mermaid
 mindmap
   root(("LangGraph 状态机执行引擎深度解析"))
-    Overview
     核心概念解析
       StateGraph 三要素
       StateGraph 内部核心数据结构
       compile 的意义
     Reducer 机制
-    调度器：事件循环
-      条件边（Conditional Edge）
-    Fan-out / Fan-in 并行模式
+    调度器 事件循环
+      条件边 Conditional Edge
+    Fan-out Fan-in 并行模式
     CompiledGraph 四大接口
-    与 Agent Skill Writing…
-    深度分析
-      状态机模型对 Agent 架构的根本性影响
-      Reducer 机制的设计意图
-      条件边是 ReAct 的本质
-      Fan-out/Fan-in 的工程意义
+    与 Agent Skill Writing 的关系
+    状态机模型对 Agent 架构的根本性影响
+    Reducer 机制的设计意图
 ```
 
 ## Overview

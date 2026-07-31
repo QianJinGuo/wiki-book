@@ -9,15 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("AgentMemory：Coding Agent 本地记…"))
-    概述
-    核心架构
+  root(("AgentMemory Coding Agent 本地记忆系统"))
     数据模型
     检索机制
     对外接口
     竞品对比
-    适用场景
-    深度分析
 ```
 
 ## 概述

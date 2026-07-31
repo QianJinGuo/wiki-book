@@ -13,16 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Ant SingGuard-NSFA: 蚂蚁开源AI A…"))
-    概述
-    SingGuard-NSFA: 智能体行为安全护栏
+  root(("Ant SingGuard-NSFA 蚂蚁开源AI"))
+    SingGuard-NSFA 智能体行为安全护栏
       风险分类体系
       双模推理机制
       原生可扩展设计
-      评测表现
-    SingGuard: 多模态安全框架
+    SingGuard 多模态安全框架
     蚂蚁AI安全体系脉络
-    相关实体
 ```
 
 ## 概述

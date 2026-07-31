@@ -13,16 +13,6 @@
 拆解 OpenClaw 架构（一）：6 阶段流水线与 20+ 平台的消息归一化
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("花费 2 个星期写了 8 篇 OpenClaw 源码拆解…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/381-hermes-agent-goal.html)
 - [Agent Memory Architecture Ruofei](../ch04/121-agent-memory.html)

@@ -13,15 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("AWS DevOps Agent 实战：如何使用生成式 …"))
+  root(("AWS DevOps Agent 实战 如何使用生成式 AI"))
     故障演练的自动化转型
     核心流程
       故障响应场景设计
       用 Kiro 生成演练手册
       运行演练与查看调查
-      调查结果形成演练报告
     实践价值
-    相关实体
 ```
 
 ## 故障演练的自动化转型

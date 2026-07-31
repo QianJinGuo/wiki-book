@@ -11,13 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Interaction Models: A Scalab…"))
-    Summary
+  root(("Interaction Models A Scalable"))
     Source
     Notes
-    相关实体
-    深度分析
-    实践启示
 ```
 
 ## Summary

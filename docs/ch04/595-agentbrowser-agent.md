@@ -9,17 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("AgentBrowser：Agent 浏览器工具框架"))
-    Overview
+  root(("AgentBrowser Agent 浏览器工具框架"))
     Implementations
-      elizaOS/agentbrowser ~…
-      AshtonVaughan/agentbrow…
-      zabarich/agentbrowser …
+      elizaOSagentbrowser 25 stars
+      AshtonVaughanagentbrowser 2 stars
+      zabarichagentbrowser 2 stars
     Common Features
-    深度分析
-    实践启示
-    Related
-    相关实体
 ```
 
 ## Overview

@@ -13,16 +13,6 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 数据库设计：experiments 表（固定输入）下挂 experiment_runs 表（不同 Prompt/参数的结果），同一输入对比任意变体。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Prompt 调试器：A/B 测试模板对比"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/989-anthropic.html)
 - [Claude Opus 47](ch01/976-claude.html)

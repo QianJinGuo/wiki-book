@@ -11,18 +11,16 @@
 
 ```mermaid
 mindmap
-  root(("Self-Evolving Agents 系统性综述（厦…"))
-    核心概念：Self-Evolving Agen…
-    为什么需要 Self-Evolving Age…
-    统一分类：三条自进化路线
-      路线一：Model-Centric Self-…
-      路线二：Environment-Centric…
-      路线三：Model-Environment C…
-    关键判断（论文核心观点）
+  root(("Self-Evolving Agents 系统性综述"))
+    核心概念 Self-Evolving Agents 两个核心特征
+    为什么需要 Self-Evolving Agents
+    统一分类 三条自进化路线
+      路线一 Model-Centric Self-Evolution
+      路线二 Environment-Centric
+      路线三 Model-Environment
+    关键判断 论文核心观点
     技术谱系图
     论文信息
-    深度分析
-    实践启示
 ```
 
 ## 摘要

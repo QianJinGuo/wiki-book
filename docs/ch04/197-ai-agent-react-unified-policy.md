@@ -11,15 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("火山引擎 AI 搜索千万级 Agent 架构演进与实践：…"))
-    深度分析
-      ReAct 架构的三重原罪：企业级生产环境的照妖镜
-      Workflow + Agent 分层的哲学：…
-      Unified Policy 的设计哲学：从议…
-      Context Manager：被低估但最硬核…
-    实践启示
-    相关实体
-    第 1 来源 — 30 分钟搞定个人情报站：V…
+  root(("火山引擎 AI 搜索千万级 Agent 架构演进与实践 从"))
+    ReAct 架构的三重原罪 企业级生产环境的照妖镜
+    Workflow Agent 分层的哲学 确定性与不确定性的边界
+    Unified Policy 的设计哲学 从议会制到独裁中心
+    Context Manager 被低估但最硬核的模块
+    第 1 来源 30 分钟搞定个人情报站 Viking AI
 ```
 
 ## 摘要

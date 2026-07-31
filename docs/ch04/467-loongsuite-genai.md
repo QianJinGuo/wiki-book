@@ -11,22 +11,16 @@
 mindmap
   root(("LoongSuite GenAI 可观测语义规范"))
     核心贡献
-      Entry/Step Span 架构
+      EntryStep Span 架构
       Skill 语义
       Token 级推理观测
-      GenAI Utils
-    深度分析
-      为什么现有 OTel SemConv 不足以支…
-      Skill 作为独立观测粒度的意义
-      Token 级可观测的工程挑战
-      LoongSuite 定位：厂商增强还是上游标准
-    实践启示
-      对于 Agent 框架开发者
-      对于可观测平台团队
-      对于推理引擎团队
-      对于规范制定者
-    关联实体
-    相关实体
+    为什么现有 OTel SemConv 不足以支撑 AI Agent
+    Skill 作为独立观测粒度的意义
+    Token 级可观测的工程挑战
+    LoongSuite 定位 厂商增强还是上游标准
+    对于 Agent 框架开发者
+    对于可观测平台团队
+    对于推理引擎团队
 ```
 
 ## 核心贡献

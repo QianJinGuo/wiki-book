@@ -13,17 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic 实战分享：如何让 AI Agent …"))
-    深度分析
-      RetroForge 案例对比
-      架构设计启示
-    实践启示
-    客户案例扩展：Rakuten 夜间运行 + 审…
+  root(("Anthropic 实战分享 如何让 AI Agent 持续工作几天"))
+    三大失败根因
+    Agent SDK 结构化管理
+    对抗式架构 Adversarial Architecture
+    审美量化
+    RetroForge 案例对比
+    架构设计启示
+    客户案例扩展 Rakuten 夜间运行 审阅队列瓶颈
       Rakuten 案例概况
       与 RetroForge 架构的对照
       六层夜间控制环
-      新瓶颈：晨间审阅队列
-    相关实体
 ```
 
 ## 摘要

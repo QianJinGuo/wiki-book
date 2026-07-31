@@ -11,31 +11,28 @@
 
 ```mermaid
 mindmap
-  root(("打造可靠的 AI 编程环境：Claude Code Ho…"))
-    Claude Code Hooks 是什么？
+  root(("打造可靠的 AI 编程环境 Claude Code Hooks"))
+    Claude Code Hooks 是什么
       概率性问题
       Hooks 如何解决这个问题
-    Hooks 工作原理：事件驱动的四步流程
-      事件 → 匹配器 → Hook → 退出码（4…
-      配置作用域：用户、项目和本地
-       if   字段：更细粒度的过滤
-      JSON 输出：更精细的控制
-    Hooks 事件类型：快速参考表
+    Hooks 工作原理 事件驱动的四步流程
+      事件 匹配器 Hook 退出码 4步流程
+      配置作用域 用户 项目和本地
+      if 字段 更细粒度的过滤
+    Hooks 事件类型 快速参考表
     四种 Hook 类型详解
-      Command Hooks（主力军）
-      HTTP Hooks（外部集成）
-      Prompt Hooks（AI 驱动的决策）
-      Agent Hooks（工具辅助验证）
-    7 个生产级 Hook 示例（开箱即用）
-      1\. 自动格式化
-      2\. 保护敏感文件
-      3\. 完成通知
-      4\. 会话上下文注入
+      Command Hooks 主力军
+      HTTP Hooks 外部集成
+      Prompt Hooks AI 驱动的决策
+    个生产级 Hook 示例 开箱即用
+      自动格式化
+      保护敏感文件
+      完成通知
     开箱即用的 Hooks 入门配置
       完整配置
       如何针对你的技术栈定制
       验证 Hooks 是否生效
-    CI/CD 集成与实践
+    CICD 集成与实践
       Headless 模式行为
       GitHub Actions 集成
       团队 Hook 管理
@@ -43,7 +40,6 @@ mindmap
       Hook 没有触发
       Hook 运行但不阻止
       无限循环
-      性能问题
 ```
 
 ##  Claude Code Hooks 是什么？

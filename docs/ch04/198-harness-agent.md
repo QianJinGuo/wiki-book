@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Harness 工程实践：如何让 Agent 完成自主迭代"))
+  root(("Harness 工程实践 如何让 Agent 完成自主迭代"))
     技术架构
       Harness 工程的研发流程重定义
       三大关卡的解决方案
-      Agent 优化实例：从做加法到做减法
-    深度分析
-      1. Harness 工程的核心不是 AI 代…
-      2. Reward Hacking 是 Age…
-      3. 父子 Agent 模式是解决长上下文任务…
-      4. 评测集的「Signal Quality」…
-    实践启示
-    相关实体
+      Agent 优化实例 从做加法到做减法
+    Harness 工程的核心不是 AI 代劳 而是「人的杠杆率」提升
+    Reward Hacking 是 Agent 自主迭代的头号敌人
+    父子 Agent 模式是解决长上下文任务的实际工程选择
+    评测集的「Signal Quality」决定了迭代的上限
 ```
 
 ## 摘要

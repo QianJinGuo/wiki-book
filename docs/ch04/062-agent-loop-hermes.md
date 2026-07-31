@@ -9,27 +9,24 @@
 
 ```mermaid
 mindmap
-  root(("Agent Loop 源码导读：一次 Hermes 任务…"))
-    核心发现
+  root(("Agent Loop 源码导读 一次 Hermes 任务的完整生命周期"))
     主循环 5 阶段抽象
-    4 个核心模块
-      模块 1：Loop Orchestrator（…
-      模块 2：Prompt Builder（提示词…
-      模块 3：执行层（LLM Adapter + …
-      模块 4：Trajectory Recorde…
+    个核心模块
+      模块 1 Loop Orchestrator 循环主控
+      模块 2 Prompt Builder 提示词组装
+      模块 3 执行层 LLM Adapter Tool Runner
     一轮内完整时序
-    4 种退出姿势
-      退出 1：任务自然完成（约 70% 任务）
-      退出 2：达到最大 turn 上限
-      退出 3：用户主动打断
-      退出 4：不可恢复错误
+    种退出姿势
+      退出 1 任务自然完成 约 70 任务
+      退出 2 达到最大 turn 上限
+      退出 3 用户主动打断
     源码发现
-      发现 1：Loop 内不做任何业务判断
-      发现 2：每一步事件实时落盘
-      发现 3：Tool 调用默认串行
-      发现 4：刻意避免状态机
+      发现 1 Loop 内不做任何业务判断
+      发现 2 每一步事件实时落盘
+      发现 3 Tool 调用默认串行
     设计哲学
     与 Hermes Agent 自进化系统的关系
+    核心数据
 ```
 
 ## 核心发现

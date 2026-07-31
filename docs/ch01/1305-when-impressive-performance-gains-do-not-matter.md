@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("When Impressive Performance …"))
-    深度分析
-      阈值思维 vs 百分比思维
-      人因工程的隐性约束
-      非线性投资回报
-    实践启示
-    相关实体
+  root(("When Impressive Performance Gains"))
+    约束一 注意力阈值 Attention Threshold
+    约束二 从一到二 Going From One to Two
+    约束三 流水线反压 Backpressure in Pipelines
+    阈值思维 vs 百分比思维
+    人因工程的隐性约束
+    非线性投资回报
 ```
 
 ## 摘要

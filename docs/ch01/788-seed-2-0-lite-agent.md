@@ -12,16 +12,6 @@
 - 「Claude Opus 4.7」→「Claude 四点七」
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("豆包 Seed 2.0 Lite升级：给 Agent 装…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/035-agent.html)
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)

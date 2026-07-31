@@ -11,19 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Nvidia Agentic AI Subsurface…"))
+  root(("Nvidia Agentic AI Subsurface"))
     知识关联
-    来源
-    深度分析
-      Agentic AI 在工业仿真的范式意义
-      24/7 自主仿真循环的技术架构
-      数字孪生与 Agentic AI 的交汇点
-      NVIDIA Omniverse / DRIV…
-    实践启示
-      对工业 AI / 数智化从业者
-      对 Agent / AI 系统架构师
-      对 NVIDIA 生态开发者
-    相关实体
+    Agentic AI 在工业仿真的范式意义
+    自主仿真循环的技术架构
+    数字孪生与 Agentic AI 的交汇点
+    NVIDIA Omniverse DRIVE 平台战略
+    对工业 AI 数智化从业者
+    对 Agent AI 系统架构师
+    对 NVIDIA 生态开发者
 ```
 
 ## 核心要点

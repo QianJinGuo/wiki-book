@@ -9,17 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("POPO (Group Prioritized Off-…"))
+  root(("POPO Group Prioritized Off-Policy"))
     核心概述
     问题背景
     核心设计
-      Priorized Group Replay（…
-      Decoupled Off-Policy Op…
-    实验结果
+      Priorized Group Replay 优先级组回放
+      Decoupled Off-Policy Optimization
     消融关键
     兼容性
     设计取舍
-    相关实体
 ```
 
 ## 核心概述

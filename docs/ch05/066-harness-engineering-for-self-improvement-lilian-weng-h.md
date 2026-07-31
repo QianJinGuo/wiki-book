@@ -13,19 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering for Self…"))
-    核心命题
-    与已有实体的关系
+  root(("Harness Engineering for"))
     Harness 设计模式
-      模式一：工作流自动化
-      模式二：文件系统作为持久化记忆
-      模式三：子智能体与后台任务
+      模式一 工作流自动化
+      模式二 文件系统作为持久化记忆
+      模式三 子智能体与后台任务
     Harness 优化演进路径
       上下文工程谱系
       工作流设计
       自我提升型 Harness
-      MemoHarness：经验驱动的案例级 Ha…
-    7 大未来挑战
+    大未来挑战
     基准附录
 ```
 

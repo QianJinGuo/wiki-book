@@ -12,13 +12,10 @@ AI security covers more than just data theft prevention, restricting [rogue AI a
 
 ```mermaid
 mindmap
-  root(("LLMjacking: what these attac…"))
-    Statistics from a honey…
-    What are the attackers …
-    Conclusions and defense…
-    相关实体
-    深度分析
-    实践启示
+  root(("LLMjacking what these attacks are"))
+    Statistics from a honeypot
+    What are the attackers after
+    Conclusions and defense tips
 ```
 
 ## Statistics from a honeypot

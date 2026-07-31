@@ -10,17 +10,13 @@
 ```mermaid
 mindmap
   root(("Claude Code MCP Server"))
-    核心洞察
     MCP 实现机制
       配置与连接
       API 两个位置
-      执行流程：真正的 RPC 调用
-    深度分析
-      MCP 祛魅：很多场景下一条 Bash 就够了
-      MCP 真正不可替代的场景
-      MCP Server 的 instructio…
-    实践启示
-    相关实体
+      执行流程 真正的 RPC 调用
+    MCP 祛魅 很多场景下一条 Bash 就够了
+    MCP 真正不可替代的场景
+    MCP Server 的 instructions 字段
 ```
 
 ## 核心洞察

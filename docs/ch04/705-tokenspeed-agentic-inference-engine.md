@@ -9,30 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("Tokenspeed Agentic Inference…"))
-    Overview
+  root(("Tokenspeed Agentic Inference Engine"))
     Core Architecture
-      Compiler-Backed SPMD Pa…
-      C++ FSM Control Plane +…
-      Pluggable Layered Kerne…
-      Fast MLA Kernel（已被 vLLM…
+      Compiler-Backed SPMD Parallelism
+      C FSM Control Plane Python
+      Pluggable Layered Kernel System
     Performance Benchmarks
-    Agentic Workload Optimi…
+    Agentic Workload Optimization
       与传统推理场景的区别
       TokenSpeed 的针对性优化
       与其他推理引擎的关系
     技术规格
-    深度分析
-      1. Agentic 推理场景与传统推理场景的…
-      2. 编译器级 SPMD 并行：手动优化的天花…
-      3. MLA kernel 的工程价值：从贡献…
-      4. PD 分离架构的深意：从资源效率到弹性扩展
-    实践启示
-      1. Agentic 场景优先考虑专用推理引擎
-      2. 利用 Pluggable Kernel …
-      3. PD 分离部署需重新设计资源分配策略
-      4. 连续批处理的 Agentic 调优重点
-    相关概念
+    Agentic 推理场景与传统推理场景的本质差异
+    编译器级 SPMD 并行 手动优化的天花板与自动化的差距
+    MLA kernel 的工程价值 从贡献 vLLM 看生态定位
+    PD 分离架构的深意 从资源效率到弹性扩展
 ```
 
 ## Overview

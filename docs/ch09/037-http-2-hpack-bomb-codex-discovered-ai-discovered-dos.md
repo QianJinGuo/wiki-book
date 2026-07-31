@@ -13,17 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("HTTP/2 HPACK Bomb — Codex Di…"))
-    三个独有贡献（不应合并到现有 entity）
+  root(("HTTP2 HPACK Bomb Codex Discovered"))
+    三个独有贡献 不应合并到现有 entity
     Attack Anatomy
-      Component 1: HPACK Inde…
-      Component 2: HTTP/2 Win…
-    Why the Classic Defense…
+      Component 1 HPACK Indexed
+      Component 2 HTTP2 Window Stall
+    Why the Classic Defenses Dont
     Impact
     Disclosure Timeline
     Mitigations
     Historical Lineage
-    Significance: AI-Driven…
+    Significance AI-Driven
 ```
 
 ## 三个独有贡献（不应合并到现有 entity）

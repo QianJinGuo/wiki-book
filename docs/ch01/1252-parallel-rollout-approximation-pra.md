@@ -17,18 +17,15 @@ PRA 通过系统实验分析了制约 pixel-space AR 生成效果的瓶颈并提
 
 ```mermaid
 mindmap
-  root(("Parallel Rollout Approximati…"))
-    技术背景：Pixel-Space AR 的困境
+  root(("Parallel Rollout Approximation"))
+    技术背景 Pixel-Space AR 的困境
     PRA 方法详解
       低维中间态预测
       并行 Rollout 近似
-    实验结果
-    深度分析
-      1. '纯'自回归路线的复兴意义
-      2. 统一视觉与语言建模架构的路径
-      3. '内部降维' vs '外部 tokeni…
-      4. 并行近似串行的范式价值
-    实践启示
+    纯自回归路线的复兴意义
+    统一视觉与语言建模架构的路径
+    内部降维 vs 外部 tokenizer的设计哲学
+    并行近似串行的范式价值
 ```
 
 ## 核心要点

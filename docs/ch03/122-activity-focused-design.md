@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.2KB | `entities/activity-focused-design.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Activity-Focused Design"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 - Activity-Focused Design 以用户**活动**（Activity）为中心设计，而非人口统计或功能列表

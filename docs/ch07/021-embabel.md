@@ -17,21 +17,20 @@
 ```mermaid
 mindmap
   root(("Embabel"))
-    核心命题
     关键设计选择
-      为什么不用状态机（LangGraph 风格）
+      为什么不用状态机 LangGraph 风格
       GOAP 两大特点
-      规划过程（A* 本质）
+      规划过程 A 本质
     与同类框架对比
-    5 大核心优势
+    大核心优势
     Rod Johnson 的 8 大核心观点
-      1. 语言之争基本结束 → 邻接性原则
-      2. Coding Agent 正在毁掉代码库…
-      3. Alien Stack 双向伤害
-      4. 对 MCP 持相对怀疑
+      语言之争基本结束 邻接性原则
+      Coding Agent 正在毁掉代码库 如果你放弃控制
+      Alien Stack 双向伤害
     关键金句
     现状
-    启示（对 agent/harness 团队）
+    启示 对 agentharness 团队
+    相关对照
 ```
 
 ## 核心命题

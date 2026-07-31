@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Loop Engineering 系统框架：四次跃迁、五…"))
+  root(("Loop Engineering 系统框架 四次跃迁 五要素模型"))
     四次抽象跃迁
     五要素模型
-    Loop 解剖结构：六个组件
+    Loop 解剖结构 六个组件
     四种 Loop 模式
     成本公式与 Thrashing 系数
     三大风险
     产品落地对比
-    相关实体
 ```
 
 ## 四次抽象跃迁

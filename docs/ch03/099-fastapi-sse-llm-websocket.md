@@ -9,16 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("FastAPI SSE — LLM流式传输的WebSoc…"))
-    核心结论
+  root(("FastAPI SSE LLM流式传输的WebSocket替代方案"))
     SSE vs WebSocket vs 长轮询
-    FastAPI StreamingRespon…
+    FastAPI StreamingResponse 实现要点
       异步生成器模式
     生产环境6大避坑
-    Redis Pub/Sub 广播通知架构
+    Redis PubSub 广播通知架构
     性能调优
     适用场景判断
-    相关实体
+    SSE 的技术本质与 HTTP 分块传输
+    断点续传的实现机制
 ```
 
 ## 核心结论

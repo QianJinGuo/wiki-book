@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLM-as-a-Verifier: A General…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - 来自 newsletter 的高质量技术文章
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification.md)

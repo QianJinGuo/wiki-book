@@ -12,19 +12,13 @@
 
 ```mermaid
 mindmap
-  root(("ChatGPT 官宣 26 位未来之星：穿墙少年、街头摊…"))
-    核心内容
-      主要章节
-    相关实体
-    深度分析
-    实践启示
-    26位未来之星详细档案
-      01 穿墙找人 — Wi-Find
-      02 150万颗星星 — Matteo Paz
-      03 看不见的Wordle — Crystal…
-      04 12岁丧父 — Charlotte Ro…
+  root(("ChatGPT 官宣 26 位未来之星 穿墙少年 街头摊贩 盲童的朋友"))
+    主要章节
+    位未来之星详细档案
+      穿墙找人 Wi-Find
+      150万颗星星 Matteo Paz
+      看不见的Wordle Crystal Yang
     第一代AI原住民
-    来源
 ```
 
 ## 核心内容

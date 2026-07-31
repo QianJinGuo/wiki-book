@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("NVIDIA XR AI：AR 眼镜与 XR 设备的 A…"))
-    核心问题：XR 硬件就绪但 AI 集成缺失
+  root(("NVIDIA XR AI AR 眼镜与 XR 设备的 AI"))
+    核心问题 XR 硬件就绪但 AI 集成缺失
     架构设计
     技术栈
-    应用场景
-    与现有实体的差异化
-    相关主题
 ```
 
 ## 核心问题：XR 硬件就绪但 AI 集成缺失

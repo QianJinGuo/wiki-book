@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("What Figma Made Visible: Com…"))
-    深度分析
-      Figma 作为「认知脚手架」
-      与 Agent Harness 设计..…
-      对「AI 取代设计师」叙事的反驳
-      行业尚无定论
-    实践启示
-    相关实体
+  root(("What Figma Made Visible Component"))
+    Figma 的核心创新 可见性 Visibility
+    「摩擦即学习」论点
+    「一次性 UI」问题
+    设计系统实践的代际差异
+    Figma 作为「认知脚手架」
+    与 Agent Harness 设计 的类比
+    对「AI 取代设计师」叙事的反驳
+    行业尚无定论
 ```
 
 ## 摘要

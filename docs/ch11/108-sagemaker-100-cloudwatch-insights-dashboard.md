@@ -13,9 +13,8 @@
 
 ```mermaid
 mindmap
-  root(("SageMaker 推理可观测性：100+ 详细指标 +…"))
-    核心架构
-    100+ 详细指标覆盖范围
+  root(("SageMaker 推理可观测性 100 详细指标"))
+    详细指标覆盖范围
     Insights Dashboard 三视图
       Performance Tab
       Capacity Tab

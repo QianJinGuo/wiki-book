@@ -18,29 +18,27 @@
 mindmap
   root(("Claude Code 架构深度解析"))
     文章核心
-    一、工具并发机制
+    一 工具并发机制
       批次执行策略
       最大并发数
       设计影响
-    二、延迟加载：shouldDefer + To…
+    二 延迟加载 shouldDefer ToolSearch
       机制
       ToolSearch 搜索逻辑
       返回格式
-    三、Prefix Cache 优化：defer…
+    三 Prefix Cache 优化 deferredtoolsdelta
       问题
-      早期方案（失效）
-      现在的方案：deferred_tools_de…
-      Compact 边界处理
-    四、工具结果大小控制
-    五、权限检查
-    六、仓库目录树感知
+      早期方案 失效
+      现在的方案 deferredtoolsdelta
+    四 工具结果大小控制
+    五 权限检查
+    六 仓库目录树感知
       三种框架策略对比
       Claude Code 的设计判断
-    七、Plan 模式
+    七 Plan 模式
       Claude Code 的权限层约束
       进入方式
       子 Agent 限制
-      退出与审批
 ```
 
 ## 文章核心

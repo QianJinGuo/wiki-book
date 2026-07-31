@@ -11,13 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Skill Hell：Agent Skill 工程方法论"))
-    核心概念：Skill Hell
-    信息分层（Progressive Disclo…
+  root(("Skill Hell Agent Skill 工程方法论"))
+    核心概念 Skill Hell
+    信息分层 Progressive Disclosure
     description 路由设计
-    Completion Criterion（完成…
+    Completion Criterion 完成标准
     Steps
-    Leading Words（语义压缩）
+    Leading Words 语义压缩
     Skill 维护与删除
     安全审计
 ```

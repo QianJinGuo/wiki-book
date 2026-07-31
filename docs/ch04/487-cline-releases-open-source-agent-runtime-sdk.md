@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-releases-open-source-agent-runtime-sdk.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cline releases open-source a…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - Cline releases open-source agent runtime SDK
 - v×c=64 分

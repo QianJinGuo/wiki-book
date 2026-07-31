@@ -13,15 +13,14 @@ Quanta Magazine 深度报道，探讨基因组 AI 基础模型（Evo 2、Genos�
 
 ```mermaid
 mindmap
-  root(("Why the Human Genome's Tangl…"))
-    核心论点
+  root(("Why the Human Genomes Tangled"))
     关键 AI 模型
       Evo 2
       Genos
-      AlphaGenome Google Dee…
+      AlphaGenome Google DeepMind
     物理性挑战
     对 AI for Science 的启示
-    与 AI Agent/Harness 的关联
+    与 AI AgentHarness 的关联
 ```
 
 ## 核心论点

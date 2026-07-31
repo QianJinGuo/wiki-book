@@ -13,21 +13,19 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock AgentCore AG-…"))
+  root(("Amazon Bedrock AgentCore AG-UI 协议"))
     核心概念
       什么是 AG-UI 协议
-      Amazon Bedrock AgentCor…
+      Amazon Bedrock AgentCore 的三协议架构
     技术架构
       FAST 全栈解决方案模板
       AG-UI 事件流协议
       双模式后端实现
     生成式 UI 实战
-      CopilotKit + FAST 增强方案
+      CopilotKit FAST 增强方案
       架构组件
-    实践启示
-      适用场景
-      部署建议
-      与相关技术的关系
+    部署建议
+    与相关技术的关系
 ```
 
 ## 摘要

@@ -9,15 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("三层 Agent 架构：Skill / SubAgent…"))
+  root(("三层 Agent 架构 Skill SubAgent Agent"))
     三层职责分层
-    Skill：执行稳定性的核心
-    SubAgent：上下文隔离与 Memory 传递
-    Agent Team：四路并行与 Mailbo…
+    Skill 执行稳定性的核心
+    SubAgent 上下文隔离与 Memory 传递
+    Agent Team 四路并行与 Mailbox 协调
     核心设计原则
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 三层职责分层

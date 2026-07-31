@@ -7,20 +7,6 @@
 # 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 Harness 到动态工作流：Claude Code…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/742-9.html)

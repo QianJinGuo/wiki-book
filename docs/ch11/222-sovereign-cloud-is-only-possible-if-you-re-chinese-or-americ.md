@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Sovereign cloud is only poss…"))
-    深度分析
-      主权云的技术结构性困境
-      欧洲主权云的历史教训
-      云退出策略被普遍忽视
-      多云策略的误区
-    实践启示
-    相关实体
+  root(("Sovereign cloud is only possible"))
+    主权云的技术结构性困境
+    欧洲主权云的历史教训
+    云退出策略被普遍忽视
+    多云策略的误区
 ```
 
 ## 摘要

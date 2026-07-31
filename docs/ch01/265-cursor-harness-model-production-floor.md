@@ -18,24 +18,15 @@
 
 ```mermaid
 mindmap
-  root(("Cursor Harness Model Product…"))
+  root(("Cursor Harness Model Production"))
     太长不看
-    核心洞察
-      模型决定上限，Harness 决定下限
-      把 Harness 当线上系统运营
-      从静态上下文到动态上下文
-      评估三层体系
-    深度分析
-      1. '模型 + Harness' 作为发布单…
-      2. 动态上下文 vs 静态上下文：Token…
-      3. Keep Rate：重新定义 Agent…
-      4. 工具错误的非均匀分布：SRE 方法论在 …
-    实践启示
-      对 Agent 团队的建议
-      对 Harness 设计者的建议
-      对评估框架设计者的建议
-    关联阅读
-    相关实体
+    模型决定上限 Harness 决定下限
+    把 Harness 当线上系统运营
+    从静态上下文到动态上下文
+    评估三层体系
+    模型 Harness 作为发布单元的工程含义
+    动态上下文 vs 静态上下文 Token 经济学的范式转移
+    Keep Rate 重新定义 Agent 质量的代理指标
 ```
 
 ## 太长不看 

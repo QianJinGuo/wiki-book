@@ -9,20 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("AWS 一周综述：Amazon Bedrock Agen…"))
-    Amazon Bedrock AgentCor…
+  root(("AWS 一周综述 Amazon Bedrock AgentCore"))
+    Amazon Bedrock AgentCore 付款功能
     上周发布的重要内容
       适用于 AWS 的代理工具套件
       AWS MCP 服务器正式发布
-      适用于人工智能代理的 Amazon WorkS…
-      Amazon EC2 M8idn/M8idb …
+      适用于人工智能代理的 Amazon WorkSpaces 预览版
     其他重要更新
       Valkey 迎来两周年
       通过 SQL 查询十亿级向量数据
-      使用 AWS DevOps 代理构建端到端代理…
-    深度分析
-    实践启示
-    相关实体
+      使用 AWS DevOps 代理构建端到端代理 SRE
 ```
 
 ## 核心要点

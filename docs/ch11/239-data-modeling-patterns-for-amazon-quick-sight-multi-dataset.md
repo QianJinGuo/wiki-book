@@ -17,15 +17,6 @@ In this post, we shift from concepts to patterns. For each schema, you’ll find
 Note: All Multi-Dataset relationships in the current release use inner join. Only rows with matching keys in both datasets appear in query results. Design your data model accordingly.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Data modeling patterns for A…"))
-    Supported patterns
-      Scenario 1: Simple star…
-```
-
 ## Supported patterns
 
 ```mermaid

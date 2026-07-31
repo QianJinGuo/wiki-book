@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code on AWS Bedrock 配…"))
-    核心内容
-    Claude Code on AWS Bedr…
-    **一、背景**
-    **二、系统架构**
-    **三、第一步：验证 AWS Bedrock …
-      1.1 在 Bedrock 控制台测试 Cla…
-      1.2 创建最小权限的 IAM 用户
-      1.3 附加最小权限 Policy
+  root(("Claude Code on AWS Bedrock 配置指南"))
+    Claude Code on AWS Bedrock 配置指南
+    一 背景
+    二 系统架构
+    三 第一步 验证 AWS Bedrock 中 Claude 模型是否可用
+      在 Bedrock 控制台测试 Claude 模型
+      创建最小权限的 IAM 用户
+      附加最小权限 Policy
     参考来源
-    相关实体
-    深度分析
 ```
 
 ## 核心内容

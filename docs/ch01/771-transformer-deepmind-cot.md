@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Transformer 的拓扑麻烦：DeepMind 论…"))
-    深度分析
-      1. 核心问题：Transformer 的状态…
-      2. 两个典型失败案例
-      3. CoT 是补丁，不是解决方案
-      4. 解决方向：重新拥抱循环
-    实践启示
+  root(("Transformer 的拓扑麻烦 DeepMind"))
+    核心问题 Transformer 的状态追踪缺陷
+    两个典型失败案例
+    CoT 是补丁 不是解决方案
+    解决方向 重新拥抱循环
     相关页面
 ```
 

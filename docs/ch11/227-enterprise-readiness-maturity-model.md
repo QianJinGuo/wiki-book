@@ -11,12 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Enterprise Readiness Maturit…"))
-    核心内容
-      五级成熟度定义
-      评估维度
-    深度分析
-    实践启示
+  root(("Enterprise Readiness Maturity Model"))
+    五级成熟度定义
+    评估维度
 ```
 
 ## 核心内容

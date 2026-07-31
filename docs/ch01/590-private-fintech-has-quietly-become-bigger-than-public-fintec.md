@@ -11,13 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Private Fintech Has Quietly …"))
-    深度分析
-      结构性转变而非周期性现象
-      「zombie land」与 fintech …
-      对全球金融科技生态的影响
-    实践启示
-    相关实体
+  root(("Private Fintech Has Quietly"))
+    私人金融科技的规模超越
+    为什么头部公司选择保持私有
+    「品类唯一」的头部效应
+    二级市场从权宜之计变为永久基础设施
+    结构性转变而非周期性现象
+    「zombie land」与 fintech 的两极分化
+    对全球金融科技生态的影响
 ```
 
 ## 摘要

@@ -11,14 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("TokenSpeed: A Speed-of-Light…"))
-    深度分析
-      与 TensorRT-LLM 的性能对比
-      控制平面安全设计
-      开发时间线与成熟度
-      协作生态
-    实践启示
-    相关实体
+  root(("TokenSpeed A Speed-of-Light LLM"))
+    为什么需要专门的 Agentic 推理引擎
+    四大核心组件
+    与 TensorRT-LLM 的性能对比
+    控制平面安全设计
+    开发时间线与成熟度
+    协作生态
 ```
 
 ## 摘要

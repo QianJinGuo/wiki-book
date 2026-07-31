@@ -10,17 +10,13 @@
 ```mermaid
 mindmap
   root(("AutoCLI"))
-    Overview
     Key Facts
-    Supported Platforms 55+
+    Supported Platforms 55
     Technical Highlights
     autocli-skill
-    深度分析
-      定位与优势
-      在 Agent 工具栈中的位置
-      autocli-skill 的设计
-    实践启示
-    Related
+    定位与优势
+    在 Agent 工具栈中的位置
+    autocli-skill 的设计
 ```
 
 ## Overview

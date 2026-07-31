@@ -15,15 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Static Devirtualization of T…"))
-    深度分析
-      1. '通用优化打败 VM 特定知识'是去虚拟…
-      2. SSA + Pass-feeding-p…
-      3. '可配置内存范围'是把通用方法安全化的关键
-      4. 为什么作者怀疑 LLVM-based 框架
-    实践启示
-    关联实体
-    相关链接
+  root(("Static Devirtualization of Themida"))
+    为什么不用模式匹配
+    Themida 与 VMProtect 的关键差异
+    核心方法 Guided Symbolic Evaluation
+    优化 Pass 套件
+    通用优化打败 VM 特定知识是去虚拟化范式的胜利
+    SSA Pass-feeding-pass 的复利效应
+    可配置内存范围是把通用方法安全化的关键
+    为什么作者怀疑 LLVM-based 框架
 ```
 
 ## 摘要

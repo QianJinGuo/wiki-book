@@ -13,18 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock AgentCore: 知识…"))
+  root(("Amazon Bedrock AgentCore"))
     三大知识层架构
-      组织知识层：Bedrock Managed K…
-      世界知识层：Web Search on Age…
-      付费知识层：AgentCore payment…
-    三个独有贡献（不应合并到现有 entity）
+      组织知识层 Bedrock Managed Knowledge Base
+      世界知识层 Web Search on AgentCore
+      付费知识层 AgentCore payments WAF AI 流量变现
+    三个独有贡献 不应合并到现有 entity
     持续学习与生产可观测性
       最危险的失败模式
       修复策略
-    与现有 AgentCore Harness…
+    与现有 AgentCore Harness 实体的差异化
     关键引用
-    相关主题
 ```
 
 ## 三大知识层架构

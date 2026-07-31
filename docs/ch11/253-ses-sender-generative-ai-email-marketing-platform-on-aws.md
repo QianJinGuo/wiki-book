@@ -13,11 +13,11 @@ AWS 推出的 SES Sender 是构建于 Amazon SES 之上的自托管、开源邮�
 
 ```mermaid
 mindmap
-  root(("SES Sender: Generative AI Em…"))
+  root(("SES Sender Generative AI Email"))
     核心痛点
     AI 驱动的核心能力
-      1. 模板智能创作
-      2. 原生 MCP 集成
+      模板智能创作
+      原生 MCP 集成
     架构设计
       核心组件
       部署资源

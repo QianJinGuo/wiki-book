@@ -43,12 +43,12 @@
 
 ```mermaid
 mindmap
-  root(("用 LiteLLM WebSearch Intercep…"))
-    **1\. 引言**
-    **2\. 方案概述与原理**
-      2.1 问题背景
-      2.2 三个关键事实（决定实现路径）
-      2.3 实现方案：子类化并重写 _exe
+  root(("用 LiteLLM WebSearch Interception"))
+    引言
+    方案概述与原理
+      问题背景
+      三个关键事实 决定实现路径
+      实现方案 子类化并重写 exe
 ```
 
 ## **1\. 引言**

@@ -7,20 +7,6 @@
 # 本地 vs 云端 Agent 的现场之争：当下选本地，终局云端（行小招）
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("本地 vs 云端 Agent 的现场之争：当下选本地，终…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [llmreaper - dom based ai conversation exfiltration via brows](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)

@@ -13,27 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("LiteLLM 驱动的 Amazon Bedrock 成…"))
-    痛点：AI 投入不可控 + 资产被盗
-    方案：四层防护体系
-      第 1 层：LiteLLM Virtual K…
-      第 2 层：LiteLLM 多维监控
-      第 3 层：AWS Budgets 平台级兜底
-      第 4 层：AWS 原生安全纵深
+  root(("LiteLLM 驱动的 Amazon Bedrock 成本治理"))
+    痛点 AI 投入不可控 资产被盗
+    方案 四层防护体系
+      第 1 层 LiteLLM Virtual Key 实时限额
+      第 2 层 LiteLLM 多维监控
+      第 3 层 AWS Budgets 平台级兜底
     改造成果
-    三个独有贡献
-    与现有实体的差异化
-    深度分析
-      核心观点：四层防护体系覆盖完整成本治理生命周期
-      技术要点：Virtual Key 是多租户成本…
-      实践价值：AWS Budgets 自动联动是平…
-      核心观点：Bedrock 多模型路由需要专属配…
-    实践启示
-      1. 成本治理必须分层设计，不能依赖单一工具
-      2. IAM Role 替换 Long-liv…
-      3. Prometheus + Grafana…
-      4. 预算超支前设置自动限速机制，而非仅靠告警
-    相关主题
+    核心观点 四层防护体系覆盖完整成本治理生命周期
+    技术要点 Virtual Key 是多租户成本治理的核心抽象
+    实践价值 AWS Budgets 自动联动是平台级兜底的关键
+    核心观点 Bedrock 多模型路由需要专属配额管理
+    成本治理必须分层设计 不能依赖单一工具
 ```
 
 ## 痛点：AI 投入不可控 + 资产被盗

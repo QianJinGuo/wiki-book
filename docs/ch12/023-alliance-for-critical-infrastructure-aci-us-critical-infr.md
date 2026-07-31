@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("Alliance for Critical Infras…"))
-    深度分析
-      1. ACI 出现的政治背景：政府撤退的产业自组织
-      2. Polycrisis 是 ACI 唯一真…
-      3. ISAC/SCC 协作模型是 ACI 成…
-      4. CIPAC 缺位的制度真空是 ACI 的…
-    实践启示
-    相关实体
+  root(("Alliance for Critical"))
+    ACI 出现的政治背景 政府撤退的产业自组织
+    Polycrisis 是 ACI 唯一真正新的安全概念
+    ISACSCC 协作模型是 ACI 成功的关键约束
+    CIPAC 缺位的制度真空是 ACI 的最大风险
 ```
 
 ## 摘要

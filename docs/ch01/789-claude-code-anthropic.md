@@ -7,22 +7,6 @@
 # Claude Code 上下文工程 —— Anthropic 团队的工程实践
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 上下文工程 —— Anthrop…"))
-    相关实体
-    深度分析
-      核心观点
-    一句话定位
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    第 2 来源 — Claude Code 系统…
-```
-
 ## 相关实体
 
 - [anthropic 最新播客：如何打造下一代 claude](ch01/989-anthropic.html)

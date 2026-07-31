@@ -11,16 +11,6 @@
 - **泛化能力弱**：高质量训练数据稀缺，技能难以迁移到新任务
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("浙大开源SkillX：全自动构建Agent技能知识库，即…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [我用 Skillmd 做了一个简历生成器](../ch04/271-skill.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)

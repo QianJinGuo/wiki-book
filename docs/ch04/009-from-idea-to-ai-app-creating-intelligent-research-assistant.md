@@ -11,17 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("From idea to AI app: creatin…"))
-    核心内容
-    Why choose Strands Agen…
-    深度分析
-      模型驱动架构的核心价值
-      30 行代码的实现启示
-      Kiro + Strands 的协同开发模式
-      生产级部署的关键考量
-    实践启示
+  root(("From idea to AI app creating"))
+    Why choose Strands Agents
+    模型驱动架构的核心价值
+    行代码的实现启示
+    Kiro Strands 的协同开发模式
+    生产级部署的关键考量
     参考来源
-    相关实体
 ```
 
 ## 核心内容

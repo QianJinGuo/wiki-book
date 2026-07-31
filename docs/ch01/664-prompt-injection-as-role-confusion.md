@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Prompt Injection as Role Con…"))
-    深度分析
-      对 Agent 安全的深远影响
-      与 Agent Security Threat…
-      '潜意识'效应的启示
-    实践启示
-      对 Agent 开发者的建议
-      对 AI 安全研究者的建议
-    相关实体
+  root(("Prompt Injection as Role Confusion"))
+    LLM 的世界 单一通道的 token 流
+    角色标签 LLM 的类型系统
+    Prompt Injection 角色边界失败
+    两种防御方式
+    对 Agent 安全的深远影响
+    与 Agent Security Threat Model 的关系
+    潜意识效应的启示
+    对 Agent 开发者的建议
 ```
 
 ## 摘要

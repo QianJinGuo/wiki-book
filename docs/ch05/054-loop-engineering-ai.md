@@ -11,17 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Loop Engineering 会是 AI 的下个关键…"))
-    深度分析
-      从 Harness 到 Loop：工程范式转移…
-      Loop Engineering 的「非共识」…
-      Token 经济学的核心矛盾
-      可观测性的丧失与恢复
-    实践启示
-    延伸：Graph Engineering — …
+  root(("Loop Engineering 会是 AI 的下个关键词吗"))
+    从 Harness 到 Loop 工程范式转移的内在逻辑
+    Loop Engineering 的「非共识」 技术本质 vs 概念包装
+    Token 经济学的核心矛盾
+    可观测性的丧失与恢复
+    延伸 Graph Engineering Loop 之后的任务拓扑显式化
       四类边
       窄图落地路径
-    相关实体
 ```
 
 ## 摘要

@@ -13,25 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock Cross-Region …"))
+  root(("Amazon Bedrock Cross-Region"))
     核心概念
-      3 个关键概念
+      个关键概念
       两种 CRIS Scope
     GDPR 对齐
     安全性设计
     透明性和审计性
-    代码示例（CRIS profile 调用）
-    深度分析
-      1. Geo CRIS 的静态性与 GDPR …
-      2. Global CRIS 的成本优势实质上…
-      3. IAM 的角色从访问控制延伸为数据治理的…
-      4. Source-region 日志集中是数…
-    实践启示
-    关键设计模式
-      1. **Profile 抽象解耦 regio…
-      2. **日志 source-region 中…
-      3. **IAM profile 级粒度**
-      4. **CloudTrail metadat…
+    代码示例 CRIS profile 调用
+    Geo CRIS 的静态性与 GDPR 动态合规的内在张力
+    Global CRIS 的成本优势实质上是跨区数据流的隐性风险溢价
+    IAM 的角色从访问控制延伸为数据治理的前置防线
 ```
 
 ## 核心概念

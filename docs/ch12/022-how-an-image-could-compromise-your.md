@@ -9,22 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("How an image could compromis…"))
+  root(("How an image could compromise your"))
     漏洞概述
-    技术分析
-      漏洞定位：SetMacOSTags 函数中的 …
-      攻击链分析
-      修复方案分析
-    深度分析
-      漏洞根源：信任边界跨越与不安全编程范式
-      利用场景与攻击向量
-      架构级修复的示范意义
-    实践启示
-      对开发者的启示
-      对安全研究人员的启示
-      对企业安全运营的启示
-      对普通用户的启示
-    相关实体
+    漏洞定位 SetMacOSTags 函数中的 system 调用
+    攻击链分析
+    修复方案分析
+    漏洞根源 信任边界跨越与不安全编程范式
+    利用场景与攻击向量
+    架构级修复的示范意义
+    对开发者的启示
 ```
 
 ## 核心要点

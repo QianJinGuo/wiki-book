@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("NVIDIA BlueField DPU：助力 AI 云…"))
-    深度分析
-      DPU 破解虚拟化的'不可能三角'
-      全栈硬件卸载：从 CPU 中释放 AI 算力
-      构建 CPU-DPU-GPU 可信链路
-      对 AI 云基础设施架构的影响
-    实践启示
-    相关实体
+  root(("NVIDIA BlueField DPU 助力 AI 云兼顾效率与可信"))
+    DPU 破解虚拟化的不可能三角
+    全栈硬件卸载 从 CPU 中释放 AI 算力
+    构建 CPU-DPU-GPU 可信链路
+    对 AI 云基础设施架构的影响
 ```
 
 ## 深度分析

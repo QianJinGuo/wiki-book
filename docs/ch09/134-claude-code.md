@@ -18,13 +18,10 @@
 ```mermaid
 mindmap
   root(("Claude Code 命令使用指南"))
-    相关实体
-    深度分析
-      1. 上下文管理是 Claude Code 高…
-      2. 权限系统是 Claude Code 安全…
-      3. fewer-permission-pr…
-      4. skills vs memory…
-    实践启示
+    上下文管理是 Claude Code 高效使用的第一道门槛
+    权限系统是 Claude Code 安全与效率的平衡器
+    fewer-permission-prompts
+    skills vs memory 的分层设计是知识管理的方法论体现
 ```
 
 ## 相关实体

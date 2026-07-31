@@ -13,19 +13,16 @@ Patrick McCanna investigated Claude Code's session logs and discovered that the 
 
 ```mermaid
 mindmap
-  root(("The text in Claude Code’s “E…"))
+  root(("The text in Claude Codes Extended"))
     Key Findings
-      1. Thinking Block Struc…
-      2. Documentation Gap
-      3. Implications for Age…
-    Relevance to Agent Engi…
-    深度分析
-      加密推理签名 vs 透明推理：Anthropi…
-      摘要 ≠ 原始推理：数据损失的隐性成本
-      文档措辞的'间接性'值得 Agent 开发者警惕
-      对 Agent 可观测性架构的影响
-    实践启示
-    Related
+      Thinking Block Structure
+      Documentation Gap
+      Implications for Agent Transparency
+    Relevance to Agent Engineering
+    加密推理签名 vs 透明推理 Anthropic 的设计取舍
+    摘要 原始推理 数据损失的隐性成本
+    文档措辞的间接性值得 Agent 开发者警惕
+    对 Agent 可观测性架构的影响
 ```
 
 ## Key Findings

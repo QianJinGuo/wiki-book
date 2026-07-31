@@ -13,14 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Model Size Scaling in 2023-2…"))
-    深度分析
-      数据墙：2027 年后的核心约束
-      2024 年：模型最受硬件约束的一年
-      Sparsity 作为参数放大器
-      预训练计算的增长轨迹
-    实践启示
-    相关实体
+  root(("Model Size Scaling in 2023-2031"))
+    HBM 读取时间 模型规模的物理约束
+    Pipeline 并行度 不是 FLOPs 而是 HBM
+    模型规模推演 从 10T 到 14 千万亿
+    数据墙 2027 年后的核心约束
+    年 模型最受硬件约束的一年
+    Sparsity 作为参数放大器
+    预训练计算的增长轨迹
 ```
 
 ## 摘要

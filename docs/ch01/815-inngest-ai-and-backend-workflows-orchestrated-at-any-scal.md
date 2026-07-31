@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.8KB | `entities/inngest-ai-and-backend-workflows-orchestrated-at-any-scale.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Inngest - AI and backend wor…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - 开源工作流编排平台，GitHub 6.6K stars
 - 核心特性：Infraless（无基础设施 boilerplate）、Agnostic（任意环境运行）、Observable（可观测性）

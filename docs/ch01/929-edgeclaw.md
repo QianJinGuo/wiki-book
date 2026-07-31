@@ -12,11 +12,9 @@
 
 ```mermaid
 mindmap
-  root(("EdgeClaw — 端云两栖龙虾框架"))
+  root(("EdgeClaw 端云两栖龙虾框架"))
     基本信息
     核心设计
-    深度分析
-    实践启示
     与本文相关
 ```
 

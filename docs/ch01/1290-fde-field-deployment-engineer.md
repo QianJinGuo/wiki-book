@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("FDE（Field Deployment Enginee…"))
-    什么是 FDE — 三种不同形态
-    FDE 与外包/实施/SA 的本质分野
-    从 Demo 到生产：复杂度被严重低估
-    「蒸馏」— FDE 商业模式成立的前提
-    Palantir 的 FDE vs 今天的 F…
+  root(("FDE Field Deployment Engineer"))
+    什么是 FDE 三种不同形态
+    FDE 与外包实施SA 的本质分野
+    从 Demo 到生产 复杂度被严重低估
+    「蒸馏」 FDE 商业模式成立的前提
+    Palantir 的 FDE vs 今天的 FDE 已是两个物种
     什么样的企业才能推得动 AI
-    中国能跑通 FDE 吗？
-    招人：7000 份简历 → 20+ offer…
+    中国能跑通 FDE 吗
+    招人 7000 份简历 20 offer 录取率 03
 ```
 
 ## 什么是 FDE — 三种不同形态

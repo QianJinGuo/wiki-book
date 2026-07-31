@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Kipi: Open-source OSINT Inve…"))
-    深度分析
-      Agent 架构在情报分析中的应用
-      Graph RAG 的结构化知识组织
-      开源 OSINT 的安全伦理
-      技术栈推测
-    实践启示
-      适用场景
-      快速上手
-      局限性
-      与同类工具对比
-    相关实体
+  root(("Kipi Open-source OSINT"))
+    产品定位与差异化
+    技术架构
+    案例演示 俄罗斯联盟欺诈网络
+    证据分级系统
+    Agent 架构在情报分析中的应用
+    Graph RAG 的结构化知识组织
+    开源 OSINT 的安全伦理
+    技术栈推测
 ```
 
 ## 摘要

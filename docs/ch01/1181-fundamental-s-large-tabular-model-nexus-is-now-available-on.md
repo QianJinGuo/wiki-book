@@ -7,20 +7,6 @@
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Fundamental’s Large Tabular …"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [百型智能 ontoz：企业本体论 + 群智能体协同体系，新一代企业级 ai 基础设施](../ch05/094-ai.html)

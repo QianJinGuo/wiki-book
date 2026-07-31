@@ -11,13 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Okta AI Agent Governance - F…"))
-    深度分析
-      战略定位：身份治理的自然延伸
-      竞争格局与局限性
-      对 Agent 工程的影响
-    实践启示
-    相关实体
+  root(("Okta AI Agent Governance -"))
+    三大治理维度
+    NHI Non-Human Identity 管理架构
+    四大风险模型
+    Kill Switch 机制
+    战略定位 身份治理的自然延伸
+    竞争格局与局限性
+    对 Agent 工程的影响
 ```
 
 ## 摘要

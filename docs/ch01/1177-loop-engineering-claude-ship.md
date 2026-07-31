@@ -9,15 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Loop Engineering 半年实战拆解：clau…"))
+  root(("Loop Engineering 半年实战拆解"))
     核心概述
     七 Agent 流水线
       五大设计决策
-      编排层：/ship 状态机
+      编排层 ship 状态机
     进化循环 vs 代码循环
     诚实缺陷
     快速开始
-    相关实体
 ```
 
 ## 核心概述

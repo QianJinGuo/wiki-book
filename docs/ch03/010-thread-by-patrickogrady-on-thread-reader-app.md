@@ -9,22 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Thread by @_patrickogrady on…"))
-    核心内容
-      Route 66 计划（2025-05-12）
-      Tempo 共识机制（2025-12-09）
-      关于 Loss-y 消息传递的共识研究提问（2…
-      Commonware 成立与框架发布（2024…
-    深度分析
-      Route 66 的战略逻辑
-      专业化趋势的本质
-      Tempo 的密码学创新
-      关于'有损模型'的研究空白
-    实践启示
-      对区块链开发者的建议
-      对投资机构的启示
-      对协议设计研究者的方向
-    相关实体
+  root(("Thread by patrickogrady on Thread"))
+    Route 66 计划 2025-05-12
+    Tempo 共识机制 2025-12-09
+    关于 Loss-y 消息传递的共识研究提问 2024-11-14
+    Commonware 成立与框架发布 2024-08-08
+    Route 66 的战略逻辑
+    专业化趋势的本质
+    Tempo 的密码学创新
+    关于有损模型的研究空白
 ```
 
 ## 核心内容

@@ -10,16 +10,6 @@
 > 不是简单的"我们支持插件"的声明。扩展系统不是事后打补丁式的钩子集合，而是从架构第一天起就作为一等公民存在的能力注入层。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("这个开源 Agent 框架的核心设计，可能是目前最「聪明…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)

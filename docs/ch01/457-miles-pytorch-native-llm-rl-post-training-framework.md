@@ -13,17 +13,14 @@ Miles 是 RadixArk 推出的开源 LLM RL 后训练框架，以 PyTorch 为核�
 
 ```mermaid
 mindmap
-  root(("Miles: PyTorch-Native LLM RL…"))
-    背景：为什么需要 Miles
+  root(("Miles PyTorch-Native LLM RL"))
+    背景 为什么需要 Miles
     架构亮点
     关键技术特性
-    深度分析
-      RL 后训练的分布式系统本质
-      组合性（Composability）vs 一体…
-      MoE-aware Alignment 的关键性
-      可观测性作为 RL 训练的关键基础设施
-    实践启示
-    相关实体
+    RL 后训练的分布式系统本质
+    组合性 Composability vs 一体化 Monolithic
+    MoE-aware Alignment 的关键性
+    可观测性作为 RL 训练的关键基础设施
 ```
 
 ## 背景：为什么需要 Miles

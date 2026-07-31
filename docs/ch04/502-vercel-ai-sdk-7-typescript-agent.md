@@ -13,19 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Vercel AI SDK 7 — TypeScript…"))
-    核心定位
+  root(("Vercel AI SDK 7 TypeScript Agent"))
     五大能力域
-      1. Develop Agents — 开发控制
-      2. Run Agents — 运行保障
-      3. Integrate Any Agent …
-      4. Observe Agents — 可观测性
+      Develop Agents 开发控制
+      Run Agents 运行保障
+      Integrate Any Agent Harness 框架集成
     技术架构洞察
       Tool Context 隔离模型
       WorkflowAgent 持久化模型
       MCP Apps 集成模式
     生态位分析
-    相关主题
 ```
 
 ## 核心定位

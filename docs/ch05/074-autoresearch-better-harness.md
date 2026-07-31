@@ -11,16 +11,6 @@
 **标签:** #BetterHarness #HarnessEngineering #Eval #Trace #自动优化
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 Autoresearch 到 Better-Harn…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Hermes Agent Deep Dive Alibaba](../ch03/096-hermes-agent.html)
 - [Deerflow Hermes Openclaw Comparison](../ch04/494-deerflow-hermes-openclaw.html)

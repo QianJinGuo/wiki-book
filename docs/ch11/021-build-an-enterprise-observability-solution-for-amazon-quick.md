@@ -13,27 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Build an enterprise observab…"))
-    核心内容
-    Solution overview
+  root(("Build an enterprise observability"))
     Prerequisites
     Deploy the solution
       Clone the repository
       Set up vended logs
       Deploy data pipeline
-      Set up data catalog
-    深度分析
-      1. 双重数据通道的架构权衡
-      2. 数据保护策略与合规边界的精确控制
-      3. KMS 统一加密策略与密钥轮换
-      4. Quick Sight + 自定义 Ch…
-    实践启示
-      1. 在启用 Chat Message Log…
-      2. 优先使用 Lake Formation …
-      3. 将数据湖扩展纳入长期可观测性规划
-      4. 建立 Dashboard 和 Chat …
-    关键要点
-    相关实体
+    双重数据通道的架构权衡
+    数据保护策略与合规边界的精确控制
+    KMS 统一加密策略与密钥轮换
+    Quick Sight 自定义 Chat Agent 的双层消费模式
+    在启用 Chat Message Logging 前完成数据隐私审查
+    优先使用 Lake Formation 而非纯 IAM 策略进行访问控制
 ```
 
 ## 核心内容

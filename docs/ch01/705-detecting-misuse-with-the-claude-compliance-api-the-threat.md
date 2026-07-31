@@ -13,20 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Detecting Misuse with the Cl…"))
+  root(("Detecting Misuse with the Claude"))
     Core Findings
-      Claude Compliance API O…
-      Key Finding: The Threat…
+      Claude Compliance API Overview
+      Key Finding The Threat Is in the
       Detection Architecture
-      Real Detection Cases
-    Implications for Agent/…
-    深度分析
-      内容层检测 vs 系统提示保护的安全范式转移
-      双层检测架构的工程优势
-      LLM-as-Judge 的安全检测范式
-      Compliance API 作为企业 Age…
-    实践启示
-    Related
+    Implications for AgentHarness
+    内容层检测 vs 系统提示保护的安全范式转移
+    双层检测架构的工程优势
+    LLM-as-Judge 的安全检测范式
+    Compliance API 作为企业 Agent 安全基石
 ```
 
 ## Core Findings

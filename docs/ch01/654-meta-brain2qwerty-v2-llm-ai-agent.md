@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Meta Brain2Qwerty v2: 非侵入式脑机…"))
-    深度分析
-      非侵入式 BCI 的里程碑式突破
-      LLM 在 BCI 解码中的关键作用
-      AI Agent 辅助 vs 人工决策
-      与 Meta 更大的战略关联
-    实践启示
-    相关实体
+  root(("Meta Brain2Qwerty v2 非侵入式脑机接口解码"))
+    非侵入式 BCI 的里程碑式突破
+    LLM 在 BCI 解码中的关键作用
+    AI Agent 辅助 vs 人工决策
+    与 Meta 更大的战略关联
 ```
 
 ## 摘要

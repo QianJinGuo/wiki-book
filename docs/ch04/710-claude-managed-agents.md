@@ -10,14 +10,14 @@
 ```mermaid
 mindmap
   root(("Claude Managed Agents 企业边界更新"))
-    概述
-    核心架构：混合控制平面
+    核心架构 混合控制平面
     Self-hosted Sandboxes
     MCP Tunnels
     两次更新的完整图景
     社区质疑回应情况
     四象限验证框架
     产品定位
+    工程哲学
 ```
 
 ## 概述

@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("AI打工大排行：Claude Fable 5自动赚钱的能…"))
-    深度分析
-      RLI 的独特价值：从'解题'到'挣钱'的标尺转换
-      Worker-critic Loop：Agen…
-      '锯齿状前沿'对 Agent 能力理解的启示
-      GPT-5.5 的'伪造渲染图'——Agent…
-    实践启示
-    相关实体
+  root(("AI打工大排行 Claude Fable 5自动赚钱的能力"))
+    RLI 的独特价值 从解题到挣钱的标尺转换
+    Worker-critic Loop Agent 自我改进的关键机制
+    锯齿状前沿对 Agent 能力理解的启示
+    GPT-55 的伪造渲染图Agent 可信度的警示
 ```
 
 ## 摘要

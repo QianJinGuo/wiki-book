@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("OpenSquilla launches open-so…"))
-    相关实体
-    深度分析
-      核心问题诊断：为什么大多数 Agent 部署在…
-      成本控制技术栈：协调路由策略
-      四层认知记忆架构：受认知科学启发的记忆设计
-      安全架构：syscall 级隔离而非容器包装
-    实践启示
-      何时考虑 OpenSquilla
-      与其他方案的对比考量
-      技术选型注意事项
-      开发者入手建议
+  root(("OpenSquilla launches open-source"))
+    核心问题诊断 为什么大多数 Agent 部署在浪费 Token
+    成本控制技术栈 协调路由策略
+    四层认知记忆架构 受认知科学启发的记忆设计
+    安全架构 syscall 级隔离而非容器包装
+    何时考虑 OpenSquilla
+    与其他方案的对比考量
+    技术选型注意事项
+    开发者入手建议
 ```
 
 ## 核心要点

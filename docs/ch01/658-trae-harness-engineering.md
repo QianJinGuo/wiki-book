@@ -10,12 +10,9 @@
 
 ```mermaid
 mindmap
-  root(("来自字节跳动TRAE的Harness Engineeri…"))
-    1. 什么是 Harness Engineer…
-    相关实体
-    深度分析
-    实践启示
-    第 1 来源 — 我们实测TRAE Work的…
+  root(("来自字节跳动TRAE的Harness Engineering指南"))
+    什么是 Harness Engineering
+    第 1 来源 我们实测TRAE Work的这份攻略 被官方收进知识库了
 ```
 
 ## 1. 什么是 Harness Engineering？

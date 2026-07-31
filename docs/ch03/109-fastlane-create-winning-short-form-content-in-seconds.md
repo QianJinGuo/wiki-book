@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Fastlane | Create Winning Sh…"))
-    深度分析
-      产品定位与竞争格局
-      PLG 策略分析
-      内容同质化风险
-      定价策略
-    实践启示
-    相关实体
+  root(("Fastlane Create Winning"))
+    产品定位与竞争格局
+    PLG 策略分析
+    内容同质化风险
+    定价策略
 ```
 
 ## 摘要

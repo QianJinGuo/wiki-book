@@ -13,27 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Mathematical Optimization at…"))
-    核心定位：Prescriptive vs Pr…
+  root(("Mathematical Optimization at"))
+    核心定位 Prescriptive vs Predictive AI
     四步方法论
-    三个客户案例（量化收益）
+    三个客户案例 量化收益
       BMW 工厂机器人路径排序
       Delivery Hero 中程物流
       Amazon EU 物流网络
-      Australian Red Cross Li…
     可复用方法论产品
     与 ML 的关系
-    实践启示
-      1. 评估你的组织是否有'隐藏'的优化问题
-      2. 建模比求解更关键：投资领域专家
-      3. 用 AI 加速建模而非替代建模
-      4. 从持续优化的视角设计系统
     参考链接
-    深度分析
-      1. 数学优化：被低估的企业 AI 应用
-      2. AWS 创新中心的行业解决方案模式
-      3. 优化问题的建模比求解更难
-      4. AI + 优化的混合方法论
+    数学优化 被低估的企业 AI 应用
+    AWS 创新中心的行业解决方案模式
 ```
 
 ## 核心定位：Prescriptive vs Predictive AI

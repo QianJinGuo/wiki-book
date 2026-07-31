@@ -31,11 +31,11 @@ LangChain 证明了这一点：他们只改了 LLM 外围的基础设施（同�
 
 ```mermaid
 mindmap
-  root(("超级AI背后的秘密武器：Agent Harness深度解析"))
-    什么是 Agent Harness？
+  root(("超级AI背后的秘密武器 Agent Harness深度解析"))
+    什么是 Agent Harness
     工程三层论
     生产级 Harness 的 11 个核心组件
-      1. 编排循环
+      编排循环
 ```
 
 ## 什么是 Agent Harness？

@@ -13,13 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("DataFlow-Harness — 北大 Code A…"))
+  root(("DataFlow-Harness 北大 Code Agent"))
     NL2Pipeline Gap
     核心消融发现
     Harness 工程约束
     输出产物
     资源链接
-    相关实体
 ```
 
 ## NL2Pipeline Gap

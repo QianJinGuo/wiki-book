@@ -9,23 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Qwen Code Skill Testing Fram…"))
+  root(("Qwen Code Skill Testing Framework"))
     背景与动机
-    核心架构
     测试文件 Schema
     回归指标
     MVP 阶段
     与现有工具的差异
-    深度分析
-      1. 从'测试工具'到'回归框架'的范式跃迁
-      2. 执行与验证分离的架构价值
-      3. ASK User Question 的建…
-      4. DSL 可编辑的工程考量
-    实践启示
-      架构设计
-      工程实现
-      场景扩展
-      成熟度评估
+    从测试工具到回归框架的范式跃迁
+    执行与验证分离的架构价值
+    ASK User Question 的建模问题
 ```
 
 ## 背景与动机

@@ -14,27 +14,20 @@
 ```mermaid
 mindmap
   root(("Claude Code 18个隐藏设置"))
-    Claude Code 核心配置（settin…
-      1. enabledPlugins：禁用而非卸载
-      2. permissions.deny：已知 …
-      3. hooks.SessionStart：按…
-      4. disableAllHooks：紧急开关
-    API/Console 高杠杆设置
-      8. cache_control 断点位置（最…
-      9. inference_geo 数据驻留溢价
-      10. Workspace 级别速率限制
-    Claude.ai 关键设置
+    Claude Code 核心配置 settingsjson
+      enabledPlugins 禁用而非卸载
+      permissionsdeny 已知 bug 需 OS 层备份
+      hooksSessionStart 按分支加载 context
+    APIConsole 高杠杆设置
+      cachecontrol 断点位置 最大单一成本杠杆
+      inferencegeo 数据驻留溢价
+      Workspace 级别速率限制
+    Claudeai 关键设置
     审计脚本
-    未入选设置（已排除）
-    深度分析
-      成本控制的层级思维
-      模型选择的成本经济学
-      Hook 机制的失控风险
-    实践启示
-      立即可行动的清单
-      中期优化方向
-      关键警示
-    相关实体
+    未入选设置 已排除
+    成本控制的层级思维
+    模型选择的成本经济学
+    Hook 机制的失控风险
 ```
 
 ## Claude Code 核心配置（settings.json）

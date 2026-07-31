@@ -13,35 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("AgentScope Java 2.0：企业级分布式 H…"))
-    背景：为什么企业需要专门的 Agent Har…
+  root(("AgentScope Java 20 企业级分布式 Harness 框架"))
+    背景 为什么企业需要专门的 Agent Harness 框架
     核心架构设计
       模块化 Middleware 架构
-      抽象文件系统（Abstract FileSys…
+      抽象文件系统 Abstract FileSystem
       Workspace 模型
-      消息类型系统（Sealed Class）
     企业级特性
       多租户权限模型
       模型 Fallback 与降级链
       事件流与可观测性
-      Kubernetes 原生部署
     Builder Pattern 与流畅 API
-    与 Claude Code Harness 的…
-    实践启示
-      1. 在 Java 生态中构建 Agent，A…
-      2. Sealed Class 是构建类型安全…
-      3. Abstract FileSystem …
-      4. 模型 Fallback 链需要在上线前充…
-    2nd Source：阿里云云原生 / Age…
-      关键架构决策：组织级 vs Cloud Age…
-      Open SWE vs AgentScope …
-      关键模式：工作区作为配置仓库
-      子 agent 用 markdown 文件声明
-    深度分析
-      责任链模式在 AI Agent 场景的工程化迁移
-      Sealed Class 作为消息类型系统的优…
-      Abstract FileSystem 的多租…
-      事件流架构的可观测性设计
+    与 Claude Code Harness 的架构对比
+    在 Java 生态中构建 Agent AgentScope
+    Sealed Class 是构建类型安全消息系统的好选择
+    Abstract FileSystem 是多租户 Agent 的必备抽象
 ```
 
 ## 摘要

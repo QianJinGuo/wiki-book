@@ -18,14 +18,10 @@ These improvements coupled with SageMaker AI provide an enterprise-grade generat
 
 ```mermaid
 mindmap
-  root(("AWS Mlflow V310 Generative A…"))
-    Getting started with Sa…
+  root(("AWS Mlflow V310 Generative AI"))
+    Getting started with SageMaker AI
       Prerequisites
     Migration
-    Conclusion
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## Getting started with SageMaker AI MLflow App v3.10

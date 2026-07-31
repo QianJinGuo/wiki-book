@@ -13,13 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("Microsoft Foundry 生产级 Agent …"))
-    核心命题：Harness = Model
+  root(("Microsoft Foundry 生产级 Agent 工程"))
+    核心命题 Harness Model
     从 Chatbot 到 Agent 的范式跃迁
     三大工程设计理念
     生产 Agent 的失效模式
     规模数据
-    相关实体
 ```
 
 ## 核心命题：Harness = Model

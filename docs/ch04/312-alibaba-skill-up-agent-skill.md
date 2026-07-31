@@ -13,17 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Alibaba Skill-Up：声明式 Agent S…"))
-    核心问题
+  root(("Alibaba Skill-Up 声明式 Agent Skill"))
     设计概览
     四大核心设计
-      1. 声明式评测配置
-      2. expect + judge 分层判定
-      3. 多引擎支持
-      4. 结构化 CI 友好报告
+      声明式评测配置
+      expect judge 分层判定
+      多引擎支持
     多轮会话评测
     重型端到端评测
-    落地案例：1200 行手搓脚本 → 一份声明
+    落地案例 1200 行手搓脚本 一份声明
     上手路径
     对比
 ```

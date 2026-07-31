@@ -13,12 +13,11 @@ Anthropic 在 2026 年 7 月为 Claude 推出了 **Reflect** 功能（Beta），
 
 ```mermaid
 mindmap
-  root(("Claude Reflect：Anthropic 的 A…"))
-    4D AI Fluency 框架
+  root(("Claude Reflect Anthropic 的 AI"))
+    D AI Fluency 框架
     功能设计
     战略意义
     相关研究背景
-    相关实体
 ```
 
 ## 4D AI Fluency 框架

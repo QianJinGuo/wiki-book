@@ -7,21 +7,6 @@
 # Harness 工程分享：LLM Agent 的 prompt cache 命中率 90% 实战
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 工程分享：LLM Agent 的 pro…"))
-    相关实体
-    深度分析
-      核心观点
-    核心结论
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [yoonho lee: text optimization as a legitimate learning mecha](https://github.com/QianJinGuo/wiki/blob/main/entities/yoonho-lee-text-optimization-as-legitimate-learning-mechanism.md)

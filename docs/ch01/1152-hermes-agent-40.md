@@ -7,20 +7,6 @@
 # Hermes Agent 工具系统实战解析：40+ 工具为什么不用配置表
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 工具系统实战解析：40+ 工具…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [codex discovered a hidden http/2 bomb](ch01/517-codex.html)

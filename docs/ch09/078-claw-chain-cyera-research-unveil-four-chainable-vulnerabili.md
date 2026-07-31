@@ -9,17 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Claw Chain: Cyera Research U…"))
-    关键洞察
-    深度分析
-      漏洞链条设计：AI Agent 作为攻击放大器
-      技术细节分解
-      攻击面分析
-    实践启示
-      对于 OpenClaw 部署者
-      对于 AI Agent 平台设计者
-      对于安全研究社区
-    相关实体
+  root(("Claw Chain Cyera Research Unveil"))
+    漏洞链条设计 AI Agent 作为攻击放大器
+    技术细节分解
+    攻击面分析
+    对于 OpenClaw 部署者
+    对于 AI Agent 平台设计者
+    对于安全研究社区
 ```
 
 ## 核心要点

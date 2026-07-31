@@ -11,21 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy 最新访谈：从 Vibe Coding …"))
-    核心洞察
+  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
     要点
-    来源
-    深度分析
-      Vibe Coding 与 Agentic E…
-      Software 3.0 的工程含义
-      可验证性决定自动化上限
-      '幽灵'隐喻对工程设计的影响
-    实践启示
-      1. 先建验证体系，再上 Agent
-      2. 用任务可验证性作为引入 Agent 的决…
-      3. 构建 Agent Control Plane
-      4. 投资过程资产而非聊天记录
-    相关实体
+    Vibe Coding 与 Agentic Engineering
+    Software 30 的工程含义
+    可验证性决定自动化上限
+    幽灵隐喻对工程设计的影响
+    先建验证体系 再上 Agent
+    用任务可验证性作为引入 Agent 的决策标准
+    构建 Agent Control Plane
 ```
 
 ## 核心洞察

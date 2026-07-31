@@ -13,16 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy AutoResearch Loop C…"))
-    核心发现：Benchmark 测的是'模型 +…
-    什么是 Harness？
-    Karpathy AutoResearch …
-      实验结果
+  root(("Karpathy AutoResearch Loop Cycle"))
+    核心发现 Benchmark 测的是模型 Harness组合能力
+    什么是 Harness
+    Karpathy AutoResearch Loop Cycle
       Loop 三要素
-      Loop 适用标准（四项全能）
-    Bilevel Autoresearch（双层…
+      Loop 适用标准 四项全能
+    Bilevel Autoresearch 双层自动研究
     隐性代价
-    与已有实体的关系
 ```
 
 ## 核心发现：Benchmark 测的是"模型 + Harness"组合能力

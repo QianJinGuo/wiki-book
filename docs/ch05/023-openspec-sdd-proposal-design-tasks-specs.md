@@ -11,22 +11,24 @@
 
 ```mermaid
 mindmap
-  root(("OpenSpec 规范驱动开发（SDD）框架 — pro…"))
-    核心问题
+  root(("OpenSpec 规范驱动开发 SDD 框架"))
     OpenSpec 是什么
-    相关实体
-    目录结构 — 两大核心模块
-    四类核心文档（核心方法论）
-      📄 proposal.md — 提案文档
-      📐 design.md — 技术设计文档
-      ✅ tasks.md — 实施任务清单
-      📋 specs/ — 规范增量（Spec De…
+    目录结构 两大核心模块
+    四类核心文档 核心方法论
+      proposalmd 提案文档
+      designmd 技术设计文档
+      tasksmd 实施任务清单
     ADDED
-      能力: work-log
+      能力 work-log
     MODIFIED
-      能力: 既有 X
+      能力 既有 X
     REMOVED
-      能力: 废弃 Y
+      能力 废弃 Y
+    Trae IDE 安装配置 5 分钟
+    实操案例 Trae OpenSpec 开发日报生成工具
+      步骤 1 创建变更
+      步骤 2 审阅规划文档 人在回路
+      步骤 3 实施变更
 ```
 
 ## 核心问题

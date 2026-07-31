@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.4KB | `entities/drupal-core-security-drupal-to-release-urgent-core-security.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Drupal to Release Urgent Cor…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 ```mermaid

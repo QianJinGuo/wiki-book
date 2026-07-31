@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("OpenClaw 多租户系列 #7 — 基于 ECS F…"))
-    三个独有贡献（独立 entity 价值）
+  root(("OpenClaw 多租户系列 7 基于 ECS Fargate"))
+    三个独有贡献 独立 entity 价值
     核心方案定位
     双 Agent 对比
-    四层隔离机制（核心实现）
+    四层隔离机制 核心实现
     Graviton ARM64 选型关键理由
     系列定位
-    实践启示
-      1. 评估开源 AI 工具时：检查多租户部署方案
-      2. AI 推理工作负载：考虑 Gravito…
-      3. 使用 Fargate 减少运维负担
-      4. 多租户隔离：从网络层做起
-    关联阅读
+    OpenClaw 从单机到多租户的架构演进
+    Graviton 的成本效率对 AI 推理的意义
 ```
 
 ## 三个独有贡献（独立 entity 价值）

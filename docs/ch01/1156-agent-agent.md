@@ -26,10 +26,9 @@
 
 ```mermaid
 mindmap
-  root(("这届 Agent，全是草台班子：到底什么 Agent 在…"))
+  root(("这届 Agent 全是草台班子 到底什么 Agent 在产生价值"))
     什么 Agent 在被真实使用
-    一、不存在通用 Agent
-    相关链接
+    一 不存在通用 Agent
 ```
 
 ##  什么 Agent 在被真实使用

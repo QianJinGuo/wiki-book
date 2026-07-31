@@ -13,14 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Stop hand-tuning kernels: Ho…"))
-    深度分析
-      Agentic Development 对硬件…
-      Skill + Agent 的分层编排模式
-      从 Profile 到行动的闭环缺口
-      跨架构迁移的 Agent 辅助
-    实践启示
-    相关实体
+  root(("Stop hand-tuning kernels How"))
+    五大专项 Skills
+    Agent 层的编排
+    实战案例 Softmax 内核优化
+    Agentic Development 对硬件编程范式的重构
+    Skill Agent 的分层编排模式
+    从 Profile 到行动的闭环缺口
+    跨架构迁移的 Agent 辅助
 ```
 
 ## 摘要

@@ -15,30 +15,15 @@ Addy Osmani 提出 Loop Engineering——比 Agent Harness Engineering 再高一
 
 ```mermaid
 mindmap
-  root(("Loop Engineering:不再写提示词,而是设计…"))
+  root(("Loop"))
     核心定义
-    五模块 + 记忆（Codex / Claude…
-    /goal 的验证者分离设计
-    深度分析
-      Loop vs Harness：层级关系而非替代
-      技能的'复利效应'
-      三个循环搞不定的问题
-      实践启示
-    相关实体
-    第 2 来源：InfoQ 褚杏娟「AI编程又变…
-      核心创新 / 关键数据
-      对照表：两篇来源维度对比
-      与已有 source 呼应
-      实践启示
-    第3 来源：微信公众号「ps. Harness…
-      三来源维度对比表
-      与已有 source呼应
-      Loop Engineering关键结论（合并…
-    第 4 来源：微信公众号「架构师 JiaGou…
-      核心创新 / 关键数据
-      四来源维度对比表
-      与已有 source 呼应
-      实践启示
+    五模块 记忆 Codex Claude Code 通用
+    goal 的验证者分离设计
+    Loop vs Harness 层级关系而非替代
+    技能的复利效应
+    三个循环搞不定的问题
+    核心创新 关键数据
+    对照表 两篇来源维度对比
 ```
 
 ## 核心定义

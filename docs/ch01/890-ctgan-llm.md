@@ -13,15 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("CTGAN+LLM 组合拳：携程测试数据生成工程方案"))
-    背景
+  root(("CTGANLLM 组合拳 携程测试数据生成工程方案"))
     模型调研对比
-    核心方案：LLM-CTGAN协同
+    核心方案 LLM-CTGAN协同
       架构
       关联关系识别
       生成实现
-      Prompt工程演进
-    实验结果
     总结
 ```
 

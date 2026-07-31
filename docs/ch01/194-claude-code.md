@@ -12,19 +12,19 @@ mindmap
   root(("Claude Code 源码核心机制详解"))
     核心设计亮点
     跨框架对比总结
-    1. System Prompt 动态组装
+    System Prompt 动态组装
       默认 Prompt 写了什么
       运行时动态注入
-    2. 工具系统
-      并发调度：isConcurrencySafe
-      延迟加载：shouldDefer + Tool…
+    工具系统
+      并发调度 isConcurrencySafe
+      延迟加载 shouldDefer ToolSearch
       工具结果大小控制
-    3. 仓库目录树感知
-    4. Plan 模式
-    5. Context 压缩管理
+    仓库目录树感知
+    Plan 模式
+    Context 压缩管理
       动态触发阈值
       五层压缩机制
-    6. Sub-Agent 系统
+    Sub-Agent 系统
       七种执行模式
       内置 Agent 类型
 ```

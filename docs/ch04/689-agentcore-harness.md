@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("AgentCore Harness 行程分配与优化多智能…"))
+  root(("AgentCore Harness 行程分配与优化多智能体系统"))
     核心挑战
     系统架构
     技术实现

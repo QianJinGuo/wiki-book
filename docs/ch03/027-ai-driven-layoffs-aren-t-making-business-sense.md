@@ -9,18 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("AI-driven layoffs aren't mak…"))
-    技术洞察
-    深度分析
-      生产力悖论的深层机制
-      AI 错误成本的几何级数效应
-      人才信号的双向作用
-      TCO 的三个隐形杀手
-    实践启示
-      给企业决策者的建议
-      给 IT 和 HR 联合团队的行动指南
-      给 CIO 的技术路线图建议
-    相关实体
+  root(("AI-driven layoffs arent making"))
+    生产力悖论的深层机制
+    AI 错误成本的几何级数效应
+    人才信号的双向作用
+    TCO 的三个隐形杀手
+    给企业决策者的建议
+    给 IT 和 HR 联合团队的行动指南
+    给 CIO 的技术路线图建议
 ```
 
 ## 核心要点

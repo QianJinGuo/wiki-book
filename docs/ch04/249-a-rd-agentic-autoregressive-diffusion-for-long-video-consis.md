@@ -11,25 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("A²RD: Agentic Autoregressive…"))
-    Summary
+  root(("ARD Agentic Autoregressive"))
     核心架构解析
-      Multimodal Video Memory…
-      Adaptive Segment Genera…
-      Hierarchical Test-Time …
-    工作流程：两阶段闭环
-    LVBench-C 基准：非线性的实体与环境转换
+      Multimodal Video Memory 跨越长距离的多模态追踪
+      Adaptive Segment Generation
+      Hierarchical Test-Time
+    工作流程 两阶段闭环
+    LVBench-C 基准 非线性的实体与环境转换
     术语澄清
-    深度分析
-      A²RD 的设计哲学：解耦与闭环
-      训练免费的代价与收益
-      HITS 的创新意义：测试时学习的范式延伸
-      与竞争方案的差异化
-    实践启示
-      对于视频生成研究社区
-      对于工业应用
-      对于 Agent 系统设计
-    相关实体
+    ARD 的设计哲学 解耦与闭环
+    训练免费的代价与收益
+    HITS 的创新意义 测试时学习的范式延伸
+    与竞争方案的差异化
 ```
 
 ## Summary

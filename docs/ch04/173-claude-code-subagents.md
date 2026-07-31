@@ -13,19 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Subagents 深度指南：上…"))
-    核心论点
+  root(("Claude Code Subagents 深度指南 上下文卫生实战"))
     三层价值
     长会话为什么会变脏
     内置 Explore 和 Plan
     fresh vs fork
     context-timeline 钩子
     四类高频自定义 Subagent
-      1. 代码审查
-      2. 影响面分析
-      3. 测试诊断
-      4. 文档一致性检查
+      代码审查
+      影响面分析
+      测试诊断
     Subagent 模板示例
+    最容易踩的四个坑
 ```
 
 ## 核心论点

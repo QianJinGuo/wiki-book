@@ -11,18 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("Wi-Fi 8 is closer than you t…"))
-    核心设计转向：从速度到可靠性
+  root(("Wi-Fi 8 is closer than you think"))
+    核心设计转向 从速度到可靠性
     频谱效率增强
     漫游与移动性革新
-      无缝移动域（SMD）漫游
+      无缝移动域 SMD 漫游
       RSN 覆盖与 ESS 扫描优化
     MCS 速率阶梯细化
     客户端功耗优化
     安全演进与后量子密码
     Wi-Fi Sensing 与增强广播
       Wi-Fi Sensing
-      增强广播服务（802.11bc）
+      增强广播服务 80211bc
     接入点的边缘 AI 平台化
 ```
 

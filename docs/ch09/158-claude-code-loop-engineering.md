@@ -14,13 +14,13 @@
 
 ```mermaid
 mindmap
-  root(("打造 Claude Code 可持续推进的工作流：Loo…"))
+  root(("打造 Claude Code 可持续推进的工作流 Loop"))
     核心引用
-    2024→2026 的演进路径
+    的演进路径
     Loop 的三种形态
-      1. 单 Agent 循环
-      2. 多 Agent 舰队循环（Fleet L…
-      3. Open-loop vs Closed-…
+      单 Agent 循环
+      多 Agent 舰队循环 Fleet Loop
+      Open-loop vs Closed-loop
     实际应用建议
     与现有实体的关系
 ```

@@ -23,15 +23,12 @@ In this post, we cover the structure of Amazon Quick ARNs and provide a practica
 
 ```mermaid
 mindmap
-  root(("Amazon Quick ARNs: Cross-acc…"))
+  root(("Amazon Quick ARNs Cross-account"))
     A note on naming
-    Think of ARNs as postal…
-    What this looks like in…
-      Why permissions don’t t…
-      How the dependency chai…
-    深度分析
-    实践启示
-    相关实体
+    Think of ARNs as postal addresses
+    What this looks like in practice
+      Why permissions dont transfer
+      How the dependency chain works
 ```
 
 ## A note on naming

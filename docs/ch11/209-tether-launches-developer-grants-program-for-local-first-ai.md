@@ -11,13 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("Tether launches developer gr…"))
-    深度分析
-      QVAC 平台：Tether 的去中心化 AI…
-      $1,500-$4,000 每交付物的定价逻辑
-      稳定币 + 本地 AI 的协同想象空间
-    实践启示
-    相关实体
+  root(("Tether launches developer grants"))
+    QVAC 平台 Tether 的去中心化 AI 战略
+    -4000 每交付物的定价逻辑
+    稳定币 本地 AI 的协同想象空间
 ```
 
 ## 核心要点

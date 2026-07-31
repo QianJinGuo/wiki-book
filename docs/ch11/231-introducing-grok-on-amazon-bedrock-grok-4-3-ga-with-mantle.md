@@ -13,16 +13,14 @@ xAI's Grok 4.3 is now generally available on Amazon Bedrock, marking xAI's entry
 
 ```mermaid
 mindmap
-  root(("Introducing Grok on Amazon B…"))
+  root(("Introducing Grok on Amazon"))
     Key Capabilities
-      Configurable Reasoning …
+      Configurable Reasoning Effort
       Model Parameters
       Mantle Inference Engine
-      Tool Calling and Structur…
-    Service Tiers and Regiona…
-    Comparison with Grok 4.5
+    Service Tiers Regional Availability
+    Comparison with Grok 45
     Practical Guidance
-    Related Entities
 ```
 
 ## Key Capabilities

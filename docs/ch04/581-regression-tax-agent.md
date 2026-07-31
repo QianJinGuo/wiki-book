@@ -11,14 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Regression Tax: 技能包导致 Agent …"))
+  root(("Regression Tax 技能包导致 Agent"))
     核心概念
     三种回归机制
-      1. Skill-Description Os…
-      2. Grounding Displaceme…
-      3. Verification Displac…
+      Skill-Description Osmosis 技能描述渗透
+      Grounding Displacement 输入锚定偏移
+      Verification Displacement 输出校验失效
     结构性问题
-    实践建议
     与现有工作的关系
 ```
 

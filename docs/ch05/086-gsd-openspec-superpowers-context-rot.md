@@ -14,11 +14,11 @@
 
 ```mermaid
 mindmap
-  root(("GSD 完胜 OpenSpec 和 Superpower…"))
-    核心洞见：三层防御模型
-      OpenSpec：防 AI 该做什么的腐烂
-      Superpowers：防 AI 怎么做事的腐烂
-      GSD：防 AI 脑子本身的腐烂
+  root(("GSD 完胜 OpenSpec 和 Superpowers"))
+    核心洞见 三层防御模型
+      OpenSpec 防 AI 该做什么的腐烂
+      Superpowers 防 AI 怎么做事的腐烂
+      GSD 防 AI 脑子本身的腐烂
     源码实测数字澄清
     理想用户画像
     与现有 wiki 实体关系

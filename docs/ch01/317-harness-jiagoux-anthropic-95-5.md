@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("数据级 Harness：架构师 JiaGouX 解读 A…"))
-    深度分析
-      1. 95% 这个数字到底在说什么
-      2. 错得很安静：false sense of…
-      3. Data is not software…
-      4. 反直觉边界：检索 ≠ 用对
-    实践启示
-    相关实体
+  root(("数据级 Harness 架构师 JiaGouX 解读"))
+    95 这个数字到底在说什么
+    错得很安静 false sense of precision
+    Data is not software 执行层反馈对比
+    反直觉边界 检索 用对
 ```
 
 ## 摘要

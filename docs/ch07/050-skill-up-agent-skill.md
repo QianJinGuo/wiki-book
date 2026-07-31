@@ -13,19 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("skill-up: 阿里开源 Agent Skill 评…"))
+  root(("skill-up 阿里开源 Agent Skill 评测框架"))
     定位与核心问题
     四大核心设计
-      1. 声明式配置：eval.yaml
-      2. expect + judge 分层判定
-      3. 多引擎支持
-      4. 结构化报告
+      声明式配置 evalyaml
+      expect judge 分层判定
+      多引擎支持
     多轮会话评测
     重型端到端评测
-    迁移案例：~1200 行 Shell 脚本 →…
+    迁移案例 1200 行 Shell 脚本 80 行 YAML
     安装与使用
     开源地址
-    相关实体
 ```
 
 ## 定位与核心问题

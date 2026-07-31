@@ -11,16 +11,6 @@ Google Cloud Tech 前些日子发布了一篇 Agent Skill 设计模式文章：�
 现在回头看，5 个名字本身可能没有那么重要。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 Anthropic 到 Google：Agent S…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/397-agent-skills.html)
 - [Anthropic Google Agent Skills Design Patterns](ch04/383-anthropic-google-agent-skills.html)

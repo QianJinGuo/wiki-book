@@ -12,14 +12,12 @@
 
 ```mermaid
 mindmap
-  root(("Meta's AI Chief On AI Beef, …"))
+  root(("Metas AI Chief On AI Beef New"))
     人物背景
     Muse Spark 模型
     与 Sam Altman 的私人矛盾
     Zuck 与人才招募
     Meta AI 团队阵容
-    深度分析
-    实践启示
     播客出处
 ```
 

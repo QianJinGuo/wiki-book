@@ -14,17 +14,13 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock AgentCore Web…"))
-    深度分析
-      技术架构
-      接入方式
-      响应格式
-      与自建方案和第三方工具的对比
-    第 2 来源 — AWS 中国区博客实战教程 …
-      核心新增内容
-      互补角度
-    实践启示
-    相关实体
+  root(("Amazon Bedrock AgentCore Web"))
+    技术架构
+    接入方式
+    响应格式
+    与自建方案和第三方工具的对比
+    核心新增内容
+    互补角度
 ```
 
 ## 摘要

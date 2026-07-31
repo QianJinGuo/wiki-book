@@ -11,25 +11,25 @@
 
 ```mermaid
 mindmap
-  root(("StarAgent/Drogo WebTerminal …"))
-    Overview
-    4 层职责分离
-    黑屏模式更新（wsh/wcp）
-      3 个关键体验提升
+  root(("StarAgentDrogo WebTerminal CLI"))
+    层职责分离
+    黑屏模式更新 wshwcp
+      个关键体验提升
       遗憾
-    会话设计：复用已登录浏览器上下文
-      4 个直接收益
-    命令执行：动态闭环而非固定 suite
+    会话设计 复用已登录浏览器上下文
+      个直接收益
+    命令执行 动态闭环而非固定 suite
       三份证据文件
-    文件传输：协议化，告别 DOM 自动化
-      5 个文件 API
+    文件传输 协议化 告别 DOM 自动化
+      个文件 API
       下载路径
       上传路径
-    交互式调试：默认接口应该像普通 shell
-      HTTP 控制面（默认）
+    交互式调试 默认接口应该像普通 shell
+      HTTP 控制面 默认
       状态保持
       Playwright 单线程教训
-    验收案例：Emacs + eshell + g…
+    验收案例 Emacs eshell gdb coredump
+    GPU hang 现场
 ```
 
 ## Overview

@@ -9,25 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Doris MCP on AgentCore Runti…"))
-    核心内容
+  root(("Doris MCP on AgentCore Runtime"))
     三个关键洞察
-      1. MCP协议作为Agent数据接口
-      2. VPC native的安全价值
-      3. $0.3/天的经济学
-    与知识库的连接
-    深度分析
-      1. 懒初始化的'无服务器+有状态'架构哲学
-      2. '重工具'与'轻代理'的边界划定
-      3. JWT 本地验证的免回调机制
-      4. S3 直传的部署范式
-    实践启示
-      1. 为 MCP Server 选择长连接友好…
-      2. 将 OAuth 认证配置脚本化
-      3. 生产级部署务必配置 VPC + 安全组隔离
-      4. 一键部署配置应成为标准实践
-    架构图
-    相关实体
+      MCP协议作为Agent数据接口
+      VPC native的安全价值
+      03天的经济学
+    懒初始化的无服务器有状态架构哲学
+    重工具与轻代理的边界划定
+    JWT 本地验证的免回调机制
+    S3 直传的部署范式
+    为 MCP Server 选择长连接友好的运行时
+    将 OAuth 认证配置脚本化
+    生产级部署务必配置 VPC 安全组隔离
 ```
 
 ## 核心内容

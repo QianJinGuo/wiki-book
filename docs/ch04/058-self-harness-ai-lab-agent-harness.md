@@ -13,24 +13,24 @@
 
 ```mermaid
 mindmap
-  root(("Self-Harness：上海AI Lab 提出的 Ag…"))
-    一句话总结
-    范式定位：Harness 改进的第三条路
+  root(("Self-Harness 上海AI Lab 提出的 Agent"))
+    范式定位 Harness 改进的第三条路
     Harness 形式化定义
     Self-Harness 三阶段闭环
-      阶段一：Weakness Mining（弱点挖掘）
-      阶段二：Harness Proposal（Ha…
-      阶段三：Proposal Validation…
-    实验：Terminal-Bench-2.0 +…
-    主结果：三个反直觉细节
-    进化轨迹：分支搜索与合并
-      MiniMax M2.5：42.2% → 53…
-      Qwen3.5：20.3% → 36.7%
-      GLM-5：46.1% → 57.0%
-    三个 Case Study：补丁如何改变真实执…
-      Case 1：GLM-5 + build-po…
-      Case 2：MiniMax M2.5 + c…
-      Case 3：Qwen3.5 + extrac…
+      阶段一 Weakness Mining 弱点挖掘
+      阶段二 Harness Proposal Harness 提案
+      阶段三 Proposal Validation 提案验证 接受门极其保守
+    实验 Terminal-Bench-20 三个底座模型
+    主结果 三个反直觉细节
+    进化轨迹 分支搜索与合并
+      MiniMax M25 422 539
+      Qwen35 203 367
+      GLM-5 461 570
+    三个 Case Study 补丁如何改变真实执行轨迹
+      Case 1 GLM-5 build-pov-ray 探索型 工程型
+      Case 2 MiniMax M25
+      Case 3 Qwen35 extract-elf
+    Self-Harness 与 L6 Meta-Harness 的关系
 ```
 
 ## 一句话总结

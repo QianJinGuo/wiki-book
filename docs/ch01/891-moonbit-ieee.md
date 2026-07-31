@@ -13,17 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("MoonBit与无资源语言代码生成：IEEE论文评估与改进"))
-    核心发现
-      零样本 vs 增强方法
-    方法论
-      基准构建
-      Few-shot 与 RAG 尝试
-      继续预训练 Continued Pre-tr…
-      Instruction Transferrin…
+  root(("MoonBit与无资源语言代码生成 IEEE论文评估与改进"))
+    零样本 vs 增强方法
+    基准构建
+    Few-shot 与 RAG 尝试
+    继续预训练 Continued Pre-training
+    Instruction Transferring 指令迁移
     MoonBit 的 AI-Native 语言设计
     意义与观察
-    相关概念
 ```
 
 ## 核心发现

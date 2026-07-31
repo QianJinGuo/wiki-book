@@ -13,15 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Twilight of the Chatbots：从聊天…"))
-    核心论点
-    深度分析
-      指数增长的感知困境
-      Agent 能力评估的三个关键基准
-      从'外行聊天'到'专家委托'的范式转换
-      Agent 化的工作模式变革
-    实践启示
-    相关实体
+  root(("Twilight of the Chatbots"))
+    指数增长的感知困境
+    Agent 能力评估的三个关键基准
+    从外行聊天到专家委托的范式转换
+    Agent 化的工作模式变革
 ```
 
 ## 摘要

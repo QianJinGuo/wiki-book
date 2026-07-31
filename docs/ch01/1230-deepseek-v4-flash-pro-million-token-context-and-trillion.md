@@ -11,15 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek V4 Flash & Pro: Mil…"))
-    相关实体
-    深度分析
-      1. 混合注意力机制：CSA + HCA 的双…
-      2. mHC：万亿规模训练的稳定性保障
-      3. Muon 优化器：二阶梯度信息的复兴
-      4. 1M 上下文的工程含义：从'炫耀性参数'…
-    实践启示
-    关联实体
+  root(("DeepSeek V4 Flash Pro"))
+    混合注意力机制 CSA HCA 的双层压缩哲学
+    mHC 万亿规模训练的稳定性保障
+    Muon 优化器 二阶梯度信息的复兴
+    1M 上下文的工程含义 从炫耀性参数到生产工具
 ```
 
 ## 相关实体

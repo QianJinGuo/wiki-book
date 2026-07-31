@@ -9,22 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Xero Announces Integration w…"))
+  root(("Xero Announces Integration with"))
     集成功能
     核心价值主张
     公司背景
     产品功能
     合作伙伴关系背景
-    深度分析
-      战略意义
-      双向集成的深层价值
-      竞争格局影响
-      数据安全与隐私考量
-    实践启示
-      对小企业主的建议
-      对 fintech 从业者的启示
-      对投资人的参考
-    相关公司
+    战略意义
+    双向集成的深层价值
+    竞争格局影响
 ```
 
 ## 核心要点

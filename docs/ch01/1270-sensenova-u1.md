@@ -9,20 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("SenseNova-U1 — 商汤原生统一多模态模型"))
-    核心架构：NEO-Unify
+  root(("SenseNova-U1 商汤原生统一多模态模型"))
+    核心架构 NEO-Unify
       三组核心矛盾与解法
       其他架构要点
     四步训练策略
     核心 benchmark 成绩
-    推理系统：LightLLM + LightX2…
+    推理系统 LightLLM LightX2V 解耦部署
     模型规格
     开源生态
     技术演进判断
-    深度分析
-      架构创新的本质：消解模态之间的「异构墙」
-      三组核心矛盾的设计启示
-      开源战略的市场意义
+    架构创新的本质 消解模态之间的「异构墙」
 ```
 
 ## 核心架构：NEO-Unify

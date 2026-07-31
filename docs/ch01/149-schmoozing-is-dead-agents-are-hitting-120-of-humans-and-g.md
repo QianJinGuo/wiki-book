@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 3.8KB | `entities/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Schmoozing Is Dead, Agents A…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - Schmoozing（社交 networking）已死：AI agent 正在取代人类进行销售和客户互动
 - AI Agent 效率指标：部分场景达到人类效率的 120%

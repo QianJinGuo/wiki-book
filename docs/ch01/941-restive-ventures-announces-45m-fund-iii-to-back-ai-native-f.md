@@ -12,16 +12,6 @@
 *   [Follow on Google News](https://news.google.com/publications/CAAqBwgKMMfxpQswn_y9Aw?oc=3&ceid=GB:en&hl=en-GB&gl=GB)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Restive Ventures Announces $…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Introducing Claude Platform On Aws](ch01/150-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](../ch11/013-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)

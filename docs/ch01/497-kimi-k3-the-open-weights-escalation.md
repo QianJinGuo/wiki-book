@@ -15,16 +15,12 @@
 
 ```mermaid
 mindmap
-  root(("Kimi K3: The Open-Weights Es…"))
-    Summary
-    Key Points
+  root(("Kimi K3 The Open-Weights Escalation"))
     Deep Analysis
       The Watershed Has Arrived
-      Capital Efficiency: The…
-      The Open-Closed Dance: …
-      The Policy Trilemma
+      Capital Efficiency The Underrated
+      The Open-Closed Dance Economic
     Practical Insights
-    Related Entities
 ```
 
 ## Summary

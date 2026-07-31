@@ -21,23 +21,14 @@ mindmap
     文章摘要
     Hermes 四层记忆体系
     核心设计原则
-      1. 不轻易改系统提示词
-      2. memory 工具设计
-      3. 压缩前的 memory flush
-      4. session_search：档案室不等…
+      不轻易改系统提示词
+      memory 工具设计
+      压缩前的 memory flush
     Hermes vs OpenClaw 系统重心差异
     给自研 Agent 的三个小问题
-    深度分析
-      记忆的本质：不是存储，是成本分配
-      Frozen Snapshot 机制：缓存友好…
-      Memory Flush 的真正意义：状态迁移…
-      session_search 的技术选型：FT…
-    实践启示
-      1. 先算成本，再设计记忆
-      2. 用字符限制而非 token 限制管理热记…
-      3. 保护 prompt cache 不要只靠…
-      4. 压缩节点是记忆设计的试金石
-    相关实体
+    记忆的本质 不是存储 是成本分配
+    Frozen Snapshot 机制 缓存友好的设计
+    Memory Flush 的真正意义 状态迁移而非历史截断
 ```
 
 ## 文章摘要

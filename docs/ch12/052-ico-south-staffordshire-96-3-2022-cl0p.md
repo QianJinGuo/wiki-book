@@ -13,15 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("ICO 对 South Staffordshire 处以…"))
-    深度分析
-      事件背景与攻击链路
-      三大关键技术失败
-      影响范围与数据敏感性
-      监管立场与 CNI 含义
-    实践启示
-    关联实体
-    相关实体
+  root(("ICO 对 South Staffordshire 处以 963"))
+    事件背景与攻击链路
+    三大关键技术失败
+    影响范围与数据敏感性
+    监管立场与 CNI 含义
 ```
 
 ## 摘要

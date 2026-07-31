@@ -11,13 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Haptics design and implement…"))
-    深度分析
-      技术实现架构
-      代码实现模式
-      与游戏触觉的对比
-    实践启示
-    相关实体
+  root(("Haptics design and implementation"))
+    触觉反馈的三个价值维度
+    触觉波形语言 Haptic Language
+    设计原则
+    典型应用场景
+    技术实现架构
+    代码实现模式
+    与游戏触觉的对比
 ```
 
 ## 摘要

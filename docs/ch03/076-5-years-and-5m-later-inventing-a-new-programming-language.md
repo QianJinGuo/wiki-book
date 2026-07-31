@@ -15,14 +15,11 @@ Wasp 创始人 Matija Sosic 公开复盘：花了 5 年、烧掉 500 万美金�
 
 ```mermaid
 mindmap
-  root(("5 Years and $5M Later: Inven…"))
-    深度分析
-      DSL 的两难：技术正确不等于市场正确
-      「我们以为是语言，其实是规范」是最有价值的认知
-      IDE 工具链：被严重低估的隐藏成本
-      为什么 AI 编程时代反而强化了 Wasp 的价值
-    实践启示
-    相关实体
+  root(("Years and 5M Later Inventing a"))
+    DSL 的两难 技术正确不等于市场正确
+    「我们以为是语言 其实是规范」是最有价值的认知
+    IDE 工具链 被严重低估的隐藏成本
+    为什么 AI 编程时代反而强化了 Wasp 的价值
 ```
 
 ## 摘要

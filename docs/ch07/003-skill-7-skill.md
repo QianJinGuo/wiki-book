@@ -9,20 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("工作流的 Skill 怎么写？从 7 个顶级 Skill…"))
-    一、Skill 是什么
-    二、Frontmatter：决定 Skill …
-      2.1 必填字段
-      2.2 Description 的写法决定加载率
-      2.3 可选扩展字段
-    三、5 种核心设计模式
-      模式 1：线性流程
-    Prerequisites（前置条件）
-    Quick Start（主流程：Step 1 …
-    Fallback（降级方案）
-    Troubleshooting（故障排除）
-      模式 2：决策树 + 按需加载
-    Authentication（认证前置）
+  root(("工作流的 Skill 怎么写 从 7 个顶级 Skill"))
+    一 Skill 是什么
+    二 Frontmatter 决定 Skill 是否被加载的门面
+      必填字段
+      Description 的写法决定加载率
+      可选扩展字段
+    三 5 种核心设计模式
+      模式 1 线性流程
+    Prerequisites 前置条件
+    Quick Start 主流程 Step 1 2 3
+    Fallback 降级方案
+    Troubleshooting 故障排除
+      模式 2 决策树 按需加载
+    Authentication 认证前置
 ```
 
 ## 一、Skill 是什么

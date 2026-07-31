@@ -13,18 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("当 Agentic AI 重塑生产关系：智能体浪潮下的企…"))
+  root(("当 Agentic AI 重塑生产关系 智能体浪潮下的企业战略与行动框架"))
     核心叙事
     三大独有贡献
-      1. '生产力决定生产关系'分析框架
-      2. AWS 五层最佳实践架构 + Agent…
-      3. AIDLC 演进路径：Generativ…
+      生产力决定生产关系分析框架
+      AWS 五层最佳实践架构 AgentCore 9 模块映射
+      AIDLC 演进路径 Generative AI AI Agent
     双维度定位矩阵
-    '代理人困境'实证：AI 影子采纳率
-    关键数据
-    实践启示
-    相关实体
-    上线状态 / 链接
+    代理人困境实证 AI 影子采纳率
+    上线状态 链接
+    核心观点 生产力决定生产关系是 Agentic AI
+    技术要点 AIDLC 是 Agent 时代的软件开发范式转移
+    实践价值 MCP A2A 是接口标准化层面的 NM M 降维
 ```
 
 ## 核心叙事

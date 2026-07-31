@@ -40,13 +40,13 @@
 ```mermaid
 mindmap
   root(("Amazon Quick 飞书SSO对接指南"))
-    **一、使用飞书 SSO 登录 Amazon …
-      1.1 Amazon Quick 简介
-      1.2 与飞书的对接方式
-      1.3 飞书用户同步到 IAM Identit…
-    **一、Quick Web 接入飞书（概述）**
-    **二、Quick Desktop 接入飞书 …
-      2.1 Quick Desktop 的认证要求
+    一 使用飞书 SSO 登录 Amazon Quick
+      Amazon Quick 简介
+      与飞书的对接方式
+      飞书用户同步到 IAM Identity Center
+    一 Quick Web 接入飞书 概述
+    二 Quick Desktop 接入飞书 SSO
+      Quick Desktop 的认证要求
 ```
 
 ## **一、使用飞书 SSO 登录 Amazon Quick**

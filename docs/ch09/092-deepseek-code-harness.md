@@ -10,14 +10,14 @@
 ```mermaid
 mindmap
   root(("DeepSeek Code Harness"))
-    Overview
-    背景：Claude Code 定义上限，但中国…
+    背景 Claude Code 定义上限 但中国开发者被排除在外
     DeepSeek 招聘详情
-    核心公式：Model + Harness = …
-    关键数据：Harness 的决定性作用
-    Anthropic 模型+Harness 共同…
-    长时运行能力：区分'会写代码'和'能完成任务'
+    核心公式 Model Harness Agent
+    关键数据 Harness 的决定性作用
+    Anthropic 模型Harness 共同演化编年史
+    长时运行能力 区分会写代码和能完成任务
     DeepSeek 的机会与挑战
+    Harness 正在成为新市场
 ```
 
 ## Overview

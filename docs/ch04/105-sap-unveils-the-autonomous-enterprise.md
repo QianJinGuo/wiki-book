@@ -9,15 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("SAP Unveils the Autonomous E…"))
-    核心架构：SAP Business AI Pl…
-    SAP Autonomous Suite：50…
-    Joule Work：对话式工作体验
+  root(("SAP Unveils the Autonomous"))
+    核心架构 SAP Business AI Platform
+    SAP Autonomous Suite 50 领域专属助理
+    Joule Work 对话式工作体验
     战略合作伙伴生态
-    市场进入：€1 亿欧元合作伙伴基金
+    市场进入 1 亿欧元合作伙伴基金
     技术意义与行业影响
-    深度分析
-    实践启示
+    参考文献
 ```
 
 ## 核心架构：SAP Business AI Platform

@@ -15,19 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Google Agentic RAG — Suffici…"))
-    概述
-      单步 RAG 的痛点
-    三个独有贡献
-      1. 5-Phase 编排 with Pers…
-      2. Sufficient Context A…
-      3. Cross-Corpus Routing…
-    5-Phase 完整流程
+  root(("Google Agentic RAG Sufficient"))
+    单步 RAG 的痛点
+    5-Phase 编排 with Persistence
+    Sufficient Context Agent 3-check 质量门
+    Cross-Corpus Routing 实测有效
+    -Phase 完整流程
     与现有 entity 差异化
-    FramesQA 例子：M*A*S*H vs …
+    FramesQA 例子 MASH vs Cheers
     局限
-    深度分析
-    实践启示
 ```
 
 ## 概述

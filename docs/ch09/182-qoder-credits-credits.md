@@ -14,11 +14,10 @@
 
 ```mermaid
 mindmap
-  root(("用好 Qoder Credits：优化的不是花费多少，而…"))
-    深度分析
-      单位 Credits 产出的本质
-      上下文管理是最直接的杠杆
-      Harness Engineering 的前置意义
+  root(("用好 Qoder Credits 优化的不是花费多少 而是单位"))
+    单位 Credits 产出的本质
+    上下文管理是最直接的杠杆
+    Harness Engineering 的前置意义
     关键概念
 ```
 

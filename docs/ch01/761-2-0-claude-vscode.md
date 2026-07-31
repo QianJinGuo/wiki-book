@@ -12,16 +12,6 @@
 每天用 Comate 写代码，但配额是月度的。经常到月底才发现快用完了，或者不知道哪个模型消耗最快。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("2 小时，0 行手写代码，我用 Claude 做了一个生…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](ch01/976-claude.html)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)

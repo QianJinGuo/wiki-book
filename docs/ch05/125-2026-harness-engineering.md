@@ -11,30 +11,25 @@
 
 ```mermaid
 mindmap
-  root(("为什么 2026 年真正重要的是 Harness Eng…"))
+  root(("为什么 2026 年真正重要的是 Harness Engineering"))
     核心概念
-      Agent = Model + Harness
+      Agent Model Harness
       操作系统类比
     五种核心 Harness 工件
-      1. AGENT.md / CLAUDE.md…
-      2. JSON 功能列表（进度追踪器）
-      3. 会话初始化例程
-      4. Sprint 合约
+      AGENTmd CLAUDEmd 文件
+      JSON 功能列表 进度追踪器
+      会话初始化例程
     三大实践阵营
-      OpenAI：环境优先
-      Anthropic：执行与评审分离
-      ThoughtWorks：2×2 分类框架
+      OpenAI 环境优先
+      Anthropic 执行与评审分离
+      ThoughtWorks 22 分类框架
     五条普适原则
     Harness 衰减悖论
       构建是为了删除
       成本演化
-    深度分析
-      1. Harness Engineering …
-      2. '环境比模型更重要'的隐含前提
-      3. 从'强模型'到'强系统'的范式迁移
-      4. Harness 衰减的深层次含义
-    实践启示
-    相关实体
+    Harness Engineering 的本质是信任但验证的系统化
+    环境比模型更重要的隐含前提
+    从强模型到强系统的范式迁移
 ```
 
 ## 摘要

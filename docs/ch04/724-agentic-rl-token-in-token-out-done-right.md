@@ -11,11 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Agentic RL: Token-In, Token-…"))
-    深度分析
-    Train on the model’s o…
-    Decoding doesn’t undo …
-    相关实体
+  root(("Agentic RL Token-In Token-Out"))
+    Train on the models own tokens
+    Decoding doesnt undo encoding
 ```
 
 ## 深度分析

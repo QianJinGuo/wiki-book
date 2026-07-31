@@ -12,14 +12,10 @@ mindmap
   root(("CyberSecQwen-4B"))
     Key Capabilities
     Performance
-    Technical Details
-    深度分析
-      小专项 vs 大通用：参数效率的核心逻辑
-      AMD ROCm 生态的实战验证
-      微调配方的高度可迁移性
-      安全边界的清醒定位
-    实践启示
-    相关实体
+    小专项 vs 大通用 参数效率的核心逻辑
+    AMD ROCm 生态的实战验证
+    微调配方的高度可迁移性
+    安全边界的清醒定位
 ```
 
 ## Key Capabilities

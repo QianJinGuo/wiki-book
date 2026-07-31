@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Autoresearch: The feedback l…"))
-    深度分析
-      Inner Loop vs Outer Loo…
-      Agent Recipes as Knowle…
-      The Human-as-Signal-Sou…
-      From Agent Harnesses to…
-    实践启示
+  root(("Autoresearch The feedback loop"))
+    Inner Loop vs Outer Loop The Core
+    Agent Recipes as Knowledge
+    The Human-as-Signal-Source Design
+    From Agent Harnesses to Agent
 ```
 
 ## 摘要

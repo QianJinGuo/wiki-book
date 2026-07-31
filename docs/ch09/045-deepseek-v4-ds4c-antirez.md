@@ -17,24 +17,18 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek V4 DS4C Antirez 本地推…"))
+  root(("DeepSeek V4 DS4C Antirez 本地推理实践"))
     核心事件
     关键技术细节
-      1. 非对称 MoE 量化
-      2. KV Cache 磁盘化
-      3. 双 API 兼容层
+      非对称 MoE 量化
+      KV Cache 磁盘化
+      双 API 兼容层
     性能实测
     antirez 的设计哲学
     开发者社区反响
     人物背景
-    深度分析
-      1. 专用引擎 vs 通用引擎的技术取舍
-      2. 非对称 MoE 量化的信息论基础
-      3. KV Cache 磁盘化的工程逻辑
-      4. '三件套'全栈理念的复利效应
-    实践启示
-      给 AI 应用开发者的建议
-      给基础设施工程师的启发
+    专用引擎 vs 通用引擎的技术取舍
+    非对称 MoE 量化的信息论基础
 ```
 
 ## 核心事件

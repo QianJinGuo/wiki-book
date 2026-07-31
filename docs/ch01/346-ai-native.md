@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("AI Native 时代 —— 研发组织何去何从"))
-    核心洞察
-    组织的本质：2000年协调问题
+  root(("AI Native 时代 研发组织何去何从"))
+    组织的本质 2000年协调问题
     旧定律都是人的协作物理学
-    AI 不是新工具，是新协作主体
-    双层架构：Harness + Hive Mind
-    范式转换：Org Chart → Execut…
+    AI 不是新工具 是新协作主体
+    双层架构 Harness Hive Mind
+    范式转换 Org Chart Execution Graph
     人的双重角色
     Harness Engineering
+    管理塌缩 不是消失
 ```
 
 ## 核心洞察

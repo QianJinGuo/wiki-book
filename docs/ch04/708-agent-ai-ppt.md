@@ -13,30 +13,26 @@
 
 ```mermaid
 mindmap
-  root(("企业级多-agent-规模化落地怎么做群虾智能-ai-沙…"))
+  root(("企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-"))
     沙龙概述
-    议题一：基于 HiClaw 实现企业级多 Ag…
+    议题一 基于 HiClaw 实现企业级多 Agent 协作
       HiClaw 核心架构
       Matrix 协议与透明化协作
       企业级安全与治理
-    议题二：QwenPaw — 即刻加载你的专属智…
+    议题二 QwenPaw 即刻加载你的专属智能搭档
       产品定位
       核心特性
       多模型后端支持
-      应用场景
-    议题三：基于 AgentScope-Java …
-      核心理念：代码即知识
+    议题三 基于 AgentScope-Java 的数据飞轮答疑
+      核心理念 代码即知识
       四层架构设计
       AgentLoop 闭环迭代机制
-      工程价值
-    议题四：Nacos Skill/Worker …
+    议题四 Nacos SkillWorker Registry
       解决的核心问题
-      核心能力
       Worker 的定义与价值
-      意义
     现场实操环节
     技术生态总结
-    深度分析
+    相关资源
 ```
 
 ## 沙龙概述

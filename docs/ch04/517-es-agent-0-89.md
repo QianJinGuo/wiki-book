@@ -7,16 +7,6 @@
 # ES 做 Agent 记忆层，召回率0.89
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ES 做 Agent 记忆层，召回率0.89"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 摘要
 
 基于 Elasticsearch 构建 Agent 记忆系统的完整工程实践，来自 Atlas 项目（noamschwartz/atlas-memory-demo）。核心方案：三索引分型（episodic/semantic/procedural/catalog）+ BM25+dense 双通路混合召回 + cross-encoder 重排序 + consolidation 写后提炼 + soft-supersession 矛盾处理。提供了完整的 ES mapping 模板、recall.py 脚本和 168 QA 评测集。

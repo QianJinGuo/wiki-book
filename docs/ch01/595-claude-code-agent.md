@@ -80,10 +80,10 @@ Agent 可能又回到默认知识，给出：
 
 ```mermaid
 mindmap
-  root(("从 Claude Code 记忆系统看四层 Agent …"))
-    01从'检索'到'自治'的演化
-    02L0 RAG：上下文塞的越多效果越差
-    03L1 Summary：压缩对话，然后丢了关…
+  root(("从 Claude Code 记忆系统看四层 Agent 记忆方案"))
+    从检索到自治的演化
+    L0 RAG 上下文塞的越多效果越差
+    L1 Summary 压缩对话 然后丢了关键信息
 ```
 
 ## 01从"检索"到"自治"的演化

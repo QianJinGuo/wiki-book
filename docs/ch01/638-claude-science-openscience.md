@@ -15,16 +15,14 @@ OpenScience 覆盖文献检索、假设生成、代码实验到论文撰写的�
 
 ```mermaid
 mindmap
-  root(("Claude Science 开源平替 OpenScie…"))
+  root(("Claude Science 开源平替 OpenScience"))
     核心功能对比
       Claude Science 的定位与限制
       OpenScience 的开源替代方案
-    深度分析
-      1. 「模型不可知」策略的竞争意义
-      2. 数据飞轮与「研究品味」
-      3. 科研 AI 的「研二学生」定位
-      4. 开源社区的反应与「先活下来」策略
-    实践启示
+    「模型不可知」策略的竞争意义
+    数据飞轮与「研究品味」
+    科研 AI 的「研二学生」定位
+    开源社区的反应与「先活下来」策略
 ```
 
 ## 核心功能对比

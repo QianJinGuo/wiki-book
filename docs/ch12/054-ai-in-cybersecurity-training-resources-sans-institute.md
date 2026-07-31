@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("AI in Cybersecurity Training…"))
-    深度分析
-      SANS 的 AI 安全定位
-      GIAC 认证体系的 AI 扩展
-      AI 安全培训的技术趋势
-      与 wiki 知识体系的交叉
-    实践启示
-    相关实体
+  root(("AI in Cybersecurity Training"))
+    AI Security Maturity Model
+    Secure AI Blueprint
+    Critical AI Security Guidelines
+    课程体系 9 门核心课程
+    SANS 的 AI 安全定位
+    GIAC 认证体系的 AI 扩展
+    AI 安全培训的技术趋势
+    与 wiki 知识体系的交叉
 ```
 
 ## 摘要

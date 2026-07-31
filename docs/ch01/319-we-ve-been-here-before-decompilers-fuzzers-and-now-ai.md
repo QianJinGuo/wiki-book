@@ -11,24 +11,19 @@
 
 ```mermaid
 mindmap
-  root(("We've Been Here Before: Deco…"))
-    Summary
-    核心论点：历史重演的规律
+  root(("Weve Been Here Before Decompilers"))
+    核心论点 历史重演的规律
       三次技术变革的共同模式
       永恒的循环模式
-    AI 与漏洞研究：这次有什么不同
+    AI 与漏洞研究 这次有什么不同
       确实不同的部分
       并非不同的部分
-    深度分析
-      Thomas Ptacek 的论点与反驳
-      equilibrium argument 的深…
-      历史类比的有效性与局限性
-    实践启示
-      对于漏洞研究员
-      对于安全团队
-      对于安全教育
-      对于 AI 安全研究
-    相关实体
+    Thomas Ptacek 的论点与反驳
+    equilibrium argument 的深层含义
+    历史类比的有效性与局限性
+    对于漏洞研究员
+    对于安全团队
+    对于安全教育
 ```
 
 ## Summary

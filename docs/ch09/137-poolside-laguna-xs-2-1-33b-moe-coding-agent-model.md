@@ -13,17 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Poolside Laguna XS 2.1: 33B …"))
+  root(("Poolside Laguna XS 21 33B MoE"))
     架构与基准
     部署与生态
-    深度分析
-      1. MoE 架构的高效激活比是本地编码代理的…
-      2. 专注 Agentic Coding 基准…
-      3. 开源 DFlash Speculator…
-      4. 完全宽松许可与差异化定价策略
-    实践启示
+    MoE 架构的高效激活比是本地编码代理的关键设计选择
+    专注 Agentic Coding 基准的定向优化策略
+    开源 DFlash Speculator 解决本地推理速度瓶颈
+    完全宽松许可与差异化定价策略
     wiki 定位
-    相关实体
 ```
 
 ## 架构与基准

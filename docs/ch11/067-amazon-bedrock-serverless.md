@@ -37,16 +37,6 @@ Amazon Bedrock模型推理的Serverless 异步架构 – 处理在线多模态�
 八、总结
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Bedrock 模型推理 Serverle…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 
 ```mermaid

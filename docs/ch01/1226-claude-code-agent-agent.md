@@ -9,18 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 多智能体协作体系设计：从单Age…"))
-    概述
-    为什么需要多Agent协作？
+  root(("Claude Code 多智能体协作体系设计"))
+    为什么需要多Agent协作
     多Agent协作的核心架构模式
-      1. 父子层级架构（Parent-Child …
-      2. 水平分工架构（Horizontal Di…
-      3. 流水线架构（Pipeline Archi…
+      父子层级架构 Parent-Child Hierarchy
+      水平分工架构 Horizontal Division
+      流水线架构 Pipeline Architecture
     多Agent协作的核心设计模式
-      模式一：上下文隔离子Agent（Context…
-      模式二：分支-合并并行（Fork-Join P…
-      模式三：研究与执行分离（Research-Ex…
-      模式四：确定性生命周期钩子（Determini…
+      模式一 上下文隔离子Agent Context-Isolated
+      模式二 分支-合并并行 Fork-Join Parallelism
+      模式三 研究与执行分离 Research-Execution
     多Agent通信协议
       消息传递模式
       共享状态模式
@@ -29,13 +27,16 @@ mindmap
       分层权限设计
       子Agent权限隔离
     上下文管理策略
-      分层记忆模式（Tiered Memory）
+      分层记忆模式 Tiered Memory
       上下文压缩策略
       子Agent独立上下文
     冲突解决与一致性
       多Agent写入冲突
       版本控制集成
       决策一致性
+    实践案例 Claude Code 的多Agent实现
+      场景 复杂代码重构
+      关键实现细节
 ```
 
 ## 概述

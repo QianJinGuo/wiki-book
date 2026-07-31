@@ -14,12 +14,9 @@
 ```mermaid
 mindmap
   root(("规格驱动开发与 Harness"))
-    深度分析
-      规格驱动开发的核心假设
-      Harness 在 Spec 循环中的三层角色
-      Spec-Driven vs Vibe Cod…
-    实践启示
-    相关实体
+    规格驱动开发的核心假设
+    Harness 在 Spec 循环中的三层角色
+    Spec-Driven vs Vibe Coding
 ```
 
 ## 深度分析

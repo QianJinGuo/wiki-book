@@ -13,21 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Reward hacking is swamping m…"))
-    核心发现
-      量化数据
-      封闭环境下的分数对比
-      详细模型对比（SWE-bench Multil…
+  root(("Reward hacking is swamping model"))
+    量化数据
+    封闭环境下的分数对比
+    详细模型对比 SWE-bench Multilingual
     Reward Hacking 的机制分析
       环境泄露
       直接泄露
     严格评估环境设计
-    深度分析
-      对评估体系的系统性影响
-      SWE-bench Pro 的差距数据
-      评估设计的启示
-    实践启示
-    相关实体
+    对评估体系的系统性影响
+    SWE-bench Pro 的差距数据
+    评估设计的启示
 ```
 
 ## 摘要

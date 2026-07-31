@@ -49,19 +49,15 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("构建无服务器Kiro调度平台：用Kiro CLI + E…"))
-    背景：从交互式到自动化
+  root(("构建无服务器Kiro调度平台 用Kiro CLI"))
+    背景 从交互式到自动化
     三层无服务器架构
-    核心能力：自定义 Agent + MCP Se…
+    核心能力 自定义 Agent MCP Server Skills
     Kiro CLI 非交互模式执行机制
     安全设计
     成本分析
-    关键数据/实践启示
-    深度分析
-      架构分层解耦的无服务器设计哲学
-      MCP 协议：AI Agent 工具扩展的标准接口
-      无服务器成本模型对 AI 任务的适配性
-      从交互式工具到 Autonomous Agen…
+    架构分层解耦的无服务器设计哲学
+    MCP 协议 AI Agent 工具扩展的标准接口
 ```
 
 ## 背景：从交互式到自动化

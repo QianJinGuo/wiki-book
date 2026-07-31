@@ -13,11 +13,10 @@ Claude Code 创始人揭秘 Claude Tag 功能在团队协作中的实战应用�
 
 ```mermaid
 mindmap
-  root(("Claude code创始人最新揭秘：Claude Ta…"))
-    核心内容
-      三级跳:从补全一行代码,到AI自己给自己排期
-      什么是Claude Tag
-      技术支撑:更长的自主运行时间,加上真正好用的记忆
+  root(("Claude code创始人最新揭秘 Claude"))
+    三级跳从补全一行代码到AI自己给自己排期
+    什么是Claude Tag
+    技术支撑更长的自主运行时间加上真正好用的记忆
 ```
 
 ## 核心内容

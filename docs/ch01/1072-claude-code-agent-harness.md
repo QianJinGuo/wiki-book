@@ -13,17 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("面向大型代码库的 Claude Code 团队落地经验与…"))
-    深度分析
-      核心观点
-    核心问题：大型代码库为何放大AI编程失误？
-    13个Agent Harness模式
-      1.
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
+  root(("面向大型代码库的 Claude Code 团队落地经验与扩展策略"))
+    核心问题 大型代码库为何放大AI编程失误
+    个Agent Harness模式
 ```
 
 ## 深度分析

@@ -9,21 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/direct-connect-dx-迁移最佳实践.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Direct Connect (DX) 迁移最佳实践"))
-    深度分析
-      核心观点
-    **一、概述**
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Direct Connect (DX) 迁移最佳实践 涉及agent领域的核心技术议题。

@@ -11,29 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("ARA — Agent-Native Research …"))
+  root(("ARA Agent-Native Research"))
     论文与作者
-    深度分析
-      1. 37 作者的协作规模信号
-      2. Agent-native 的定义：从'A…
-      3. 研究 artifact 的可复现性标准变化
-      4. 从学术论文到工程实践的转移挑战
-    实践启示
-      1. 研究团队：评估哪些研究流程可以 agen…
-      2. 可复现性：记录 agent 的决策路径
-      3. 学术-工程转化：提前设计工程化路径
-      4. 评审标准：区分人类和 agent 贡献
-    相关实体
-    核心问题
-    论文格式的两笔'隐形税'
-      1. 叙事税 Storytelling Tax
-      2. 工程税 Engineering Tax
-      量化：PaperBench 8921 条专家标…
-    解决方案：ARA 四层互锁的'研究包'
-    三个让生态跑起来的机制
-      1. Live Research Manager
-      2. ARA Compiler
-      3. ARA-native Review Sy…
+    37 作者的协作规模信号
+    Agent-native 的定义 从AI 辅助研究到AI 驱动研究
+    研究 artifact 的可复现性标准变化
+    从学术论文到工程实践的转移挑战
+    研究团队 评估哪些研究流程可以 agent-native 化
+    可复现性 记录 agent 的决策路径
+    学术-工程转化 提前设计工程化路径
 ```
 
 ## 论文与作者

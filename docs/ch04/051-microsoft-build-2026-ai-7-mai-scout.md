@@ -14,29 +14,28 @@
 
 ```mermaid
 mindmap
-  root(("Microsoft Build 2026：微软 AI 独…"))
-    相关实体
-    一句话定位
-    1. MAI-Thinking-1：微软首个高…
+  root(("Microsoft Build 2026 微软 AI 独立日 7"))
+    MAI-Thinking-1 微软首个高级推理模型
       模型规格
       性能基准
-      关键差异化：'独立训练'
-      推理赛道格局
-    2. MAI 模型家族：多模态生态系统
-    3. Scout：'升级版 OpenClaw'…
+      关键差异化 独立训练
+    MAI 模型家族 多模态生态系统
+    Scout 升级版 OpenClaw 企业级智能体
       产品定位
       集成范围
-      关键设计决策
-      微软对 OpenClaw 安全漏洞的应对
-    4. 微软 AI 战略定位的根本转变
-      转型前：'AI 应用整合者'
-      转型后：'全栈 AI 基础设施与模型提供者'
-    5. 核心断言 / 行业意义
+    微软 AI 战略定位的根本转变
+      转型前 AI 应用整合者
+      转型后 全栈 AI 基础设施与模型提供者
+    核心断言 行业意义
     与现有 wiki 实体的关系
-      vs OpenClaw../ch11/2…
-      vs Claude Code / Codex
-      vs Kimi Work../ch01/…
-      vs wow-harness v3../…
+      vs OpenClaw
+      vs Claude Code Codex
+      vs Kimi Work
+    启示
+    量子位补充 Windows 生态 NVIDIA 合作 2nd
+      OpenClaw 正式登陆 Windows MXC 操作系统级安全沙箱
+      GitHub Copilot 独立桌面 App
+      Windows 开发者体验大升级
 ```
 
 ## 相关实体

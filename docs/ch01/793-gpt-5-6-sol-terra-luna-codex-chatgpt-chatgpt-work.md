@@ -13,15 +13,14 @@ OpenAI 于 2026年7月10日正式发布 GPT-5.6 系列，同时将 Codex 整合�
 
 ```mermaid
 mindmap
-  root(("GPT-5.6 Sol/Terra/Luna 分层定价，…"))
+  root(("GPT-56 SolTerraLuna 分层定价 Codex"))
     模型层级与定价
     Benchmark 表现
     架构变化
-    Amazon Bedrock Availabi…
+    Amazon Bedrock Availability
       Bedrock Inference Engine
       Prompt Caching
       Security
-      Regional Availability
 ```
 
 ## 模型层级与定价

@@ -13,19 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("CaRE: Bi-Level Routing MoE —…"))
+  root(("CaRE Bi-Level Routing MoE 港大ICML"))
     核心贡献
       三大创新
     方法设计
       双阶段路由机制
       参数效率
     研究动机
-    深度分析
-      参数效率与可扩展性的系统权衡
-      '判别性 + 全面性'双目标路由的认知隐喻
-      跨时间线的全局知识整合能力
-      评测范式的隐性贡献：OmniBenchmark…
-    实践启示
+    参数效率与可扩展性的系统权衡
+    判别性 全面性双目标路由的认知隐喻
+    跨时间线的全局知识整合能力
+    评测范式的隐性贡献 OmniBenchmark-1K
 ```
 
 ## 核心贡献

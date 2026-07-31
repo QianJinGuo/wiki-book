@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic：生物学Agent的瓶颈不在模型，而在…"))
-    深度分析
-      1. 生物学 Agent 为什么落后于 Cod…
-      2. Karpathy 的「浏览器点击税」与生…
-      3. VirBench：系统化评估生物学 Ag…
-      4. gget virus：为病毒数据检索构建…
-    实践启示
-    相关实体
+  root(("Anthropic 生物学Agent的瓶颈不在模型 而在数据基础设施"))
+    生物学 Agent 为什么落后于 Coding Agent
+    Karpathy 的「浏览器点击税」与生物学 Agent 的共鸣
+    VirBench 系统化评估生物学 Agent 的数据访问能力
+    gget virus 为病毒数据检索构建确定性工具层
 ```
 
 ## 摘要

@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Codex 48小时两次被迫重置Token额度——消耗太…"))
-    深度分析
-      1. Codex 额度消耗的三种暗模式
-      2. OpenAI Codex 团队的工程文化反思
-      3. Token 经济的透明度困境
-      4. 重置机制的产品设计分析
-    实践启示
-    相关实体
+  root(("Codex 48小时两次被迫重置Token额度消耗太快的真相来了"))
+    Codex 额度消耗的三种暗模式
+    OpenAI Codex 团队的工程文化反思
+    Token 经济的透明度困境
+    重置机制的产品设计分析
 ```
 
 ## 摘要

@@ -34,10 +34,10 @@ source_published: 2026年7月10日 05:59
 
 ```mermaid
 mindmap
-  root(("不止是GPT-5.6！Codex正式上位替换ChatGPT"))
-    Grok 4.5：便宜到分数不重要
-    Muse Spark 1.1：不砌墙，想当包工头
-    GPT-5.6：一家三口，正面刚Fable 5
+  root(("不止是GPT-56 Codex正式上位替换ChatGPT"))
+    Grok 45 便宜到分数不重要
+    Muse Spark 11 不砌墙 想当包工头
+    GPT-56 一家三口 正面刚Fable 5
 ```
 
 ## Grok 4.5：便宜到分数不重要

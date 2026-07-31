@@ -11,12 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("Build a Healthcare Appointme…"))
-    核心洞察
+  root(("Build a Healthcare Appointment"))
     架构设计
-    7 个医疗工具（Strands @tool 装…
-    对话流程（4 阶段）
-    关键设计决策
+    个医疗工具 Strands tool 装饰器
+    对话流程 4 阶段
     部署
     与现有 Agent 实体的差异化
 ```

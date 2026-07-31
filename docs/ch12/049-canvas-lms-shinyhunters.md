@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Canvas LMS 攻击者 ShinyHunters …"))
-    深度分析
-      Canvas LMS 攻击背景
-      域名暂停机制分析
-      暗网基础设施的优势
-      网络犯罪组织的典型响应模式
-    实践启示
-    关联实体
+  root(("Canvas LMS 攻击者 ShinyHunters"))
+    Canvas LMS 攻击背景
+    域名暂停机制分析
+    暗网基础设施的优势
+    网络犯罪组织的典型响应模式
 ```
 
 ## 摘要

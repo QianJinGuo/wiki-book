@@ -8,18 +8,6 @@
 从微信文章 [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md) 提取。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("告别“氛围编程”：基于 Harness 治理和 SDD …"))
-    核心内容
-      主要章节
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ
 

@@ -11,17 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 多 Agent Harness …"))
-    核心结论
+  root(("Claude Code 多 Agent Harness 源码拆解"))
     四个源码级机制
-      1. 通信 = 互相留小纸条（pendingM…
-      2. 隔离 = 一项一项手工抠（createS…
-      3. 省钱 = 抠到一个标点都不差（Fork …
-      4. 并行 = 捆住主 agent 的手脚（C…
+      通信 互相留小纸条 pendingMessages
+      隔离 一项一项手工抠 createSubagentContext
+      省钱 抠到一个标点都不差 Fork Subagent Prompt
     设计模式提炼
-    与 Harness Engineering 理…
-    关键洞察
-    相关实体
+    与 Harness Engineering 理论的关系
 ```
 
 ## 核心结论

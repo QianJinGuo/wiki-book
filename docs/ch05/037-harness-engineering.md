@@ -11,13 +11,13 @@
 mindmap
   root(("Harness Engineering 系统性解读"))
     核心主线
-    Prompt / Context / Harn…
-    Harness 不是 AGENTS.md
-    Harness 的本质：七环节控制回路
-     相关实体
-    为什么'更多上下文'不是答案
-    Generator / Evaluator 模式
-    核心动作
+    Prompt Context Harness 三层区分
+    Harness 不是 AGENTSmd
+    Harness 的本质 七环节控制回路
+    相关实体
+    相关实体
+    相关实体
+    为什么更多上下文不是答案
 ```
 
 ## 核心主线

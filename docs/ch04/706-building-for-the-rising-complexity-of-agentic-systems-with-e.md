@@ -9,30 +9,22 @@
 
 ```mermaid
 mindmap
-  root(("Building for the Rising Comp…"))
-    概述
+  root(("Building for the Rising"))
     从 Chatbot 到 Agent 的演进
-      三种 AI 交互模式（按复杂度排序）
+      三种 AI 交互模式 按复杂度排序
     Agentic 架构特性
-      Primary / Sub-Agent 架构
-      真实 Trace：Claude Code 33…
-      Prompt Caching：系统级挑战
-    核心性能挑战：延迟与吞吐的根本矛盾
-    Extreme Co-Design：NVIDI…
+      Primary Sub-Agent 架构
+      真实 Trace Claude Code 33 分钟编码会话
+      Prompt Caching 系统级挑战
+    核心性能挑战 延迟与吞吐的根本矛盾
+    Extreme Co-Design NVIDIA 的解法思路
       硬件架构全景
       软件优化层
       关键设计原则
-    深度分析
-      1. Agentic 工作负载重新定义 AI …
-      2. 上下文带宽成为新型 I/O 瓶颈
-      3. Prompt Caching 的高命中率…
-      4. 延迟、吞吐、上下文长度构成不可能三角，硬…
-    实践启示
-      1. 将 Prompt Caching 作为系…
-      2. 使用 Disaggregated Ser…
-      3. 在 Multi-Agent 架构中建立基…
-      4. 重新定义 AI 基础设施团队的容量规划维度
-    行业观点与争议
+    Agentic 工作负载重新定义 AI 基础设施需求
+    上下文带宽成为新型 IO 瓶颈
+    Prompt Caching 的高命中率证明 Agentic
+    延迟 吞吐 上下文长度构成不可能三角 硬件专业化是必然
 ```
 
 ## 概述

@@ -5,17 +5,6 @@
 > 📊 Level ⭐ | 5.2KB | `entities/nginx-rift-achieving-nginx-remote-code-execution-v.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("NGINX Rift: Achieving NGINX …"))
-    相关实体
-    深度分析
-    实践启示
-    关联阅读
-```
-
 ## 核心要点
 - 来源：depthfirst.com
 - 评分：v=5 c=12 (56分)

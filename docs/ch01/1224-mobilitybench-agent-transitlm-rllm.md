@@ -13,23 +13,23 @@
 
 ```mermaid
 mindmap
-  root(("高德路线规划双路线：MobilityBench（Agen…"))
-    核心命题
+  root(("高德路线规划双路线 MobilityBench Agent 基准"))
     双路线战略
-    第一路线：MobilityBench（Agen…
-      问题：Agent 范式没有'考卷'
-      解法：MobilityBench 三大创新
+    第一路线 MobilityBench Agent 路线规划基准
+      问题 Agent 范式没有考卷
+      解法 MobilityBench 三大创新
       三个关键发现
-    第二路线：TransitLM（端到端 RLLM）
+    第二路线 TransitLM 端到端 RLLM
       挑衅性问题
-      解法：TransitLM 三大设计
+      解法 TransitLM 三大设计
       三个关键发现
-    双路线辩证：两条都会赢，只是节奏不同
-      Agent 路线（对应 MobilityBen…
-      端到端路线（对应 TransitLM）
+    双路线辩证 两条都会赢 只是节奏不同
+      Agent 路线 对应 MobilityBench
+      端到端路线 对应 TransitLM
     时空基座模型愿景
     三步未来
     关键资源
+    与 AMAP-ML 团队其他工作的关联
 ```
 
 ## 核心命题

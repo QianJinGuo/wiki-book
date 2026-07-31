@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Tether launches developer gr…"))
-    深度分析
-      QVAC：Tether 的平台锁定战略
-      端侧 AI 的可行性验证
-      自托管支付：绕过传统金融基础设施
-      与去中心化 AI 叙事的交叉
-    实践启示
-    相关实体
+  root(("Tether launches developer grants"))
+    QVAC Tether 的平台锁定战略
+    端侧 AI 的可行性验证
+    自托管支付 绕过传统金融基础设施
+    与去中心化 AI 叙事的交叉
 ```
 
 ## 摘要

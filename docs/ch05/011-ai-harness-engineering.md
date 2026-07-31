@@ -14,14 +14,11 @@
 
 ```mermaid
 mindmap
-  root(("一文带你弄懂 AI 圈爆火的新概念：Harness En…"))
-    深度分析
-      一、三次重心迁移的内在逻辑
-      二、Harness 的六层构成
-      三、业界三家代表性实践
-      四、Harness Engineering 的…
-    实践启示
-    相关实体
+  root(("一文带你弄懂 AI 圈爆火的新概念 Harness"))
+    一 三次重心迁移的内在逻辑
+    二 Harness 的六层构成
+    三 业界三家代表性实践
+    四 Harness Engineering 的本质重新定位
 ```
 
 ## 摘要

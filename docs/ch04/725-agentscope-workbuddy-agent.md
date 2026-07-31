@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("我用阿里 AgentScope 复刻了一个 WorkBu…"))
-    核心定位
+  root(("我用阿里 AgentScope 复刻了一个 WorkBuddy"))
     关键技术点
       模型配置管理
       Toolkit 工具系统
       权限系统五种模式
-      工作目录隔离
     与既有内容的关系
     四层工具架构
 ```

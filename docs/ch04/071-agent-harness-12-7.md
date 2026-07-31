@@ -16,19 +16,18 @@ LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 �
 
 ```mermaid
 mindmap
-  root(("一篇看懂 Agent Harness 的结构！ — 12…"))
-    相关实体
+  root(("一篇看懂 Agent Harness 的结构 12组件7决策完整框架"))
     核心主张
     三层工程
     生产级 Harness 12 组件
-      1. 编排循环
-      2. 工具
-      3. 记忆
-      4. 上下文管理
-    7 个关键决策
+      编排循环
+      工具
+      记忆
+    个关键决策
     框架对比
     脚手架隐喻
-    深度分析
+    核心叙事差异 1st source 是「12 组件 7
+    互补角度 7 条
 ```
 
 ## 相关实体

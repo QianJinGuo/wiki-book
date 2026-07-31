@@ -9,26 +9,22 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Skills / MCP / R…"))
-    核心命题
-    Rules：项目级行为规范的被动注入机制
+  root(("Claude Code Skills MCP Rules 源码分析"))
+    Rules 项目级行为规范的被动注入机制
       什么是 Rules
       文件发现与加载
-      注入位置：messages，而非 system
-    MCP：标准化工具协议的 RPC 调用
+      注入位置 messages 而非 system
+    MCP 标准化工具协议的 RPC 调用
       什么是 MCP
       MCP 在 API 请求中占据两个位置
-      执行流程：真正的函数调用
-      MCP 真正的不可替代场景
-    Skills：可复用提示词的注入机制
+      执行流程 真正的函数调用
+    Skills 可复用提示词的注入机制
       什么是 Skills
       列表注入与 token 预算
-      执行流程：提示词注入，不是函数调用
-      Inline 模式 vs Fork 模式
+      执行流程 提示词注入 不是函数调用
     三者核心对比
     回答三个常见困惑
     实际使用建议
-    相关实体
 ```
 
 ## 核心命题

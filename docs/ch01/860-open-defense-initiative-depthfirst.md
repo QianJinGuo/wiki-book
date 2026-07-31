@@ -9,13 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Open Defense Initiative | de…"))
-    深度分析
-      1. 威胁格局：AI 漏洞发现进入自动化阶段
-      2. depthfirst 的技术差异化
-      3. 实证数据：FFmpeg 案例
-      4. Open Defense Initiat…
-    相关实体
+  root(("Open Defense Initiative depthfirst"))
+    威胁格局 AI 漏洞发现进入自动化阶段
+    depthfirst 的技术差异化
+    实证数据 FFmpeg 案例
+    Open Defense Initiative 的运营模式
 ```
 
 ## 核心要点

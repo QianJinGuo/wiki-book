@@ -13,15 +13,13 @@ Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 
 
 ```mermaid
 mindmap
-  root(("Optimize blueprint extractio…"))
+  root(("Optimize blueprint extraction"))
     核心机制
-    工作流（从 schema 优化到 produc…
-    实际 schema 示例（Purchase O…
+    工作流 从 schema 优化到 production
+    实际 schema 示例 Purchase Order
     与现有 IDP 方案对比
     实践要点
     与现有 wiki 实体的关联
-    原文链接
-    深度分析
 ```
 
 ## 核心机制

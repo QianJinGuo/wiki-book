@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("NVIDIA Nemotron 3 Ultra: Hyb…"))
+  root(("NVIDIA Nemotron 3 Ultra Hybrid"))
     核心规格
-    架构创新：Hybrid Transformer…
+    架构创新 Hybrid Transformer-Mamba MoE
     为什么 Agent 需要专门的模型
-    4 个企业级用例
-    部署：SageMaker JumpStart …
+    个企业级用例
+    部署 SageMaker JumpStart one-click
     与其他前沿模型的差异
-    实践启示
-      1. Agentic 场景：评估推理延迟而非只…
-      2. MoE 模型：注意 GPU 内存需求
-      3. SageMaker JumpStart：…
-      4. Tool calling 准确性是 ag…
-    相关链接
+    Nemotron Ultra NVIDIA 的开源 LLM 战略定位
+    MoE 架构的推理效率优势
 ```
 
 ## 核心规格

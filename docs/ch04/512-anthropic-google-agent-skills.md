@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.8KB | `entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 Anthropic 到 Google：Agent S…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Google Cloud Tech 发布的《5 Agent Skill design patterns every ADK developer should know》将常见 Skill 分为 5 类：Tool Wrapper、Generator、Reviewer、Inversion、Pipeline。这篇文章的核心价值不在于新增了多少名词，而在于补上了 Skills 讨论的又一块缺口：从「格式怎么写」继续演进到「工作流怎么设计」 ^。Anthropic 先解决了 Skill 的格式和运行机制问题，Google 则补上了 Skill 的内容设计模式 ^。

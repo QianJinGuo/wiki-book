@@ -15,18 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("K-Dense — The Model Is No Lo…"))
-    TL;DR
+  root(("K-Dense The Model Is No Longer"))
+    TLDR
     四个 case 的核心数据
-      Case 1: 材料科学（无机晶体生成）
-      Case 2: 药物发现（ADMET 预测）
-      Case 3: 气候模拟（区域降尺度）
-      Case 4: 蛋白质设计（binder 生成）
-    核心论点：Context Quality  …
+      Case 1 材料科学 无机晶体生成
+      Case 2 药物发现 ADMET 预测
+      Case 3 气候模拟 区域降尺度
+    核心论点 Context Quality Model
     与现有实体的关系
-    实践启示
     局限
-    深度分析
 ```
 
 ## TL;DR

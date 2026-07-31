@@ -7,21 +7,6 @@
 # Mnilax：CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条，Claude 错误率从 41% 降到 3%
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Mnilax：CLAUDE.md 规则从 Karpath…"))
-    相关实体
-    深度分析
-      核心观点
-    文章背景
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [《从零实现 agent 系统》连载 01｜agent 系统是什么：问题空间与架构切片](../ch03/035-agent.html)

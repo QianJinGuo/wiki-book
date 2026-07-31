@@ -13,27 +13,23 @@
 
 ```mermaid
 mindmap
-  root(("开始在 Amazon Bedrock 上使用 OpenA…"))
+  root(("开始在 Amazon Bedrock 上使用 OpenAI"))
     背景与战略意义
     接入方式
-      1. 通过 Bedrock API 直接调用
-      2. 通过 Bedrock AgentCore…
-      3. 作为 Codex Agent 的推理后端
+      通过 Bedrock API 直接调用
+      通过 Bedrock AgentCore 集成
+      作为 Codex Agent 的推理后端
     模型对比与选型
-      GPT-5.5 的核心优势
+      GPT-55 的核心优势
       选型建议
     架构最佳实践
       多模型路由策略
       成本管控
       安全合规
     与 Anthropic 模型的混合使用
-    深度分析
-      云平台模型聚合是 AI 基础设施的商品化信号
-      多模型路由策略的工程经济学
-      模型混合编排的'比较优势'原则
-      Codex + Bedrock 的企业级价值
-    实践启示
-    相关实体
+    云平台模型聚合是 AI 基础设施的商品化信号
+    多模型路由策略的工程经济学
+    模型混合编排的比较优势原则
 ```
 
 ## 背景与战略意义

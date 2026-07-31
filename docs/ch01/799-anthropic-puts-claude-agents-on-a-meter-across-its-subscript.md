@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 6.0KB | `entities/anthropic-claude-agents-meter-infoworld.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic puts Claude agents…"))
-    技术洞察
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - **代理使用量追踪** — 不再仅基于 token 计费，而是追踪 AI 代理执行的操作数量、完成任务数和操作复杂度
 - **订阅分层** — 多层订阅计划，允许企业选择匹配其使用模式的计划

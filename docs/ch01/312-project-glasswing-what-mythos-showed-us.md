@@ -9,11 +9,10 @@
 
 ```mermaid
 mindmap
-  root(("Project Glasswing: what Myth…"))
-    背景
+  root(("Project Glasswing what Mythos"))
     Mythos Preview 的核心能力跃升
-      Exploit Chain Construct…
-      Proof Generation（证明生成）
+      Exploit Chain Construction 利用链构造
+      Proof Generation 证明生成
       与通用模型的关键差距
     模型拒止行为的不一致性
     信噪比问题
@@ -22,12 +21,11 @@ mindmap
     为什么通用编码 Agent 不适合仓库级漏洞挖掘
       上下文错配
       吞吐量局限
-    Cloudflare 的漏洞发现 Harnes…
+    Cloudflare 的漏洞发现 Harness 架构
       八阶段管道详解
     对安全团队的影响
       速度不够
       架构优先
-    深度分析
 ```
 
 ## 核心要点

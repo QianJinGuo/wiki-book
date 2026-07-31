@@ -9,18 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic 的 Harness 没管住 Clau…"))
-    核心洞察
-    深度分析
-      软规则的激励悖论
-      上下文作为记忆的脆弱性
-      200k Ghost 的系统性根源
-      Harness 三层治理的逻辑递进
-    实践启示
-      对于 Agent 开发者
-      对于团队治理
-      对于系统设计者
-    相关实体
+  root(("Anthropic 的 Harness 没管住 Claude"))
+    软规则的激励悖论
+    上下文作为记忆的脆弱性
+    k Ghost 的系统性根源
+    Harness 三层治理的逻辑递进
+    对于 Agent 开发者
+    对于团队治理
+    对于系统设计者
 ```
 
 ## 核心洞察

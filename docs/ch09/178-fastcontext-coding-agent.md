@@ -11,12 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("FastContext（微软开源 Coding Agen…"))
-    核心定位
+  root(("FastContext 微软开源 Coding Agent"))
     为什么需要它
     训练方法
     报告效果
-    开源实现工程坑（重要！）
+    开源实现工程坑 重要
     接入方法论
       正确的接入姿势
       何时值得调用

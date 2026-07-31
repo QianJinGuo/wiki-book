@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.5KB | `entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic to share Mythos cy…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - Published Time: 2026-05-18T13:19:24.000Z # Anthropic to share Mythos cyber flaw findings with global finance watchdog | AI (artificial intelligence) | The Guardian [Skip to main content](https://www.t
 ## 相关实体

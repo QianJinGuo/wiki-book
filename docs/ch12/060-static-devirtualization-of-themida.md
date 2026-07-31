@@ -11,21 +11,17 @@
 
 ```mermaid
 mindmap
-  root(("Static Devirtualization of T…"))
+  root(("Static Devirtualization of Themida"))
     核心方法
-      引导式符号执行（Guided Symbolic…
+      引导式符号执行 Guided Symbolic Evaluation
       通用优化 Passes 的协同崩塌效应
       Themida 特有的 VJCC 处理
-      回填（Lowering）阶段的关键约束
-    深度分析
-      框架可移植性的来源
-      Pattern Matching 的失效与结构…
-      符号执行防御的边界
-    实践启示
-      二进制安全研究
-      工具链构建
-      软件保护评估
-    相关实体
+    框架可移植性的来源
+    Pattern Matching 的失效与结构化方法的胜利
+    符号执行防御的边界
+    二进制安全研究
+    工具链构建
+    软件保护评估
 ```
 
 ## 摘要

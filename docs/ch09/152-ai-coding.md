@@ -15,10 +15,9 @@
 mindmap
   root(("百度 AI Coding 质量关卡实践"))
     核心链路
-      1. Agent Operating Rule…
-      2. Code Validation（开发期即…
-      3. Runtime Verify / Bro…
-      4. Figma To Verify（视觉走查）
+      Agent Operating Rules 操作协议
+      Code Validation 开发期即时 CR
+      Runtime Verify Browser Use 浏览器验证
     应用案例
       快捷回复功能的三轮验证
       RSpack HMR 调试

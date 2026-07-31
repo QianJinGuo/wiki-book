@@ -13,22 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Mollick 的 AI 实用指南：免费 vs 付费·模…"))
+  root(("Mollick 的 AI 实用指南 免费 vs"))
     背景数据
     免费 vs 付费决策
-    模型选择（具体操作）
-      GPT-5 系列（最多选择）
+    模型选择 具体操作
+      GPT-5 系列 最多选择
       Claude
       Gemini
     Deep Research 是核心被低估功能
-    Quick Tips（Mollick 实用建议）
+    Quick Tips Mollick 实用建议
     关键引用
-    相关主题
-    深度分析
-      1. 免费与付费的分水岭：不是价格，而是使用场景
-      2. Agent Model 的崛起：从对话工…
-      3. Deep Research：被大众忽视的…
-      4. Prompt Engineering 的…
+    免费与付费的分水岭 不是价格 而是使用场景
+    Agent Model 的崛起 从对话工具到工作引擎
 ```
 
 ## 背景数据

@@ -11,17 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Tencent AI Infra: Backend En…"))
-    深度分析
-      硬件范式转移：从 CPU 中心到 GPU 中心
-      'AI 大型机'的回归与'去 NVIDIA 化…
-      深度学习框架的标准化与编程语言迁移
-      模型训练的三大挑战：存得下、算得快、传得开
-    实践启示
-      对转型 AI Infra 的后台工程师
-      对企业 AI Infra 建设
-      对学习路径的规划
-    相关实体
+  root(("Tencent AI Infra Backend"))
+    硬件范式转移 从 CPU 中心到 GPU 中心
+    AI 大型机的回归与去 NVIDIA 化的预言
+    深度学习框架的标准化与编程语言迁移
+    模型训练的三大挑战 存得下 算得快 传得开
+    对转型 AI Infra 的后台工程师
+    对企业 AI Infra 建设
+    对学习路径的规划
 ```
 
 ## 摘要

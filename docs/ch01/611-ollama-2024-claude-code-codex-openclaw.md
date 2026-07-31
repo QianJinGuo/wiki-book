@@ -19,14 +19,11 @@
 
 ```mermaid
 mindmap
-  root(("Ollama 已经不是 2024 年那个了！一键配齐 C…"))
-    深度分析
-      从模型 Docker 到 AI 入口层：Oll…
-      GGUF 解锁的深层影响
-      ollama launch：从 API 到环境…
-      MLX 引擎与 LM Studio 的竞争分析
-    实践启示
-    相关实体
+  root(("Ollama 已经不是 2024 年那个了 一键配齐 Claude"))
+    从模型 Docker 到 AI 入口层 Ollama 的战略跃迁
+    GGUF 解锁的深层影响
+    ollama launch 从 API 到环境的体验跨越
+    MLX 引擎与 LM Studio 的竞争分析
 ```
 
 ## 摘要

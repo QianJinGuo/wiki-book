@@ -41,29 +41,28 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Qoder Skills 完全指南 + Agent Sk…"))
+  root(("Qoder Skills 完全指南 Agent Skill"))
     核心概念
       菜单与菜谱的比喻
       Skill 与周边工具的生态定位
     Skill 的技术架构
       文件结构规范
-      三级渐进式披露机制（Progressive D…
+      三级渐进式披露机制 Progressive Disclosure
       跨平台兼容性
     Skill vs 其他工具的抉择框架
     三大最适合场景
-      场景一：文档与资产创建（Document and …
-      场景二：工作流自动化（Workflow Aut…
-      场景三：MCP 能力增强（MCP Enhanc…
+      场景一 文档与资产创建 Document Asset Creation
+      场景二 工作流自动化 Workflow Automation
+      场景三 MCP 能力增强 MCP Enhancement
     安装与验证
-    SKILL.md 编写规范
-      YAML Frontmatter（触发器）
+    SKILLmd 编写规范
+      YAML Frontmatter 触发器
       写好 Description 的三个黄金原则
       正文写作的四个技巧
     五种进阶工作流模式
-      模式一：顺序工作流编排
-      模式二：跨 MCP 协调
-      模式三：迭代优化循环
-      模式四：上下文感知的工具选择
+      模式一 顺序工作流编排
+      模式二 跨 MCP 协调
+      模式三 迭代优化循环
     测试与迭代方法论
 ```
 

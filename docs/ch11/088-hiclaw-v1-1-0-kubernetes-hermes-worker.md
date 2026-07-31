@@ -9,23 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("HiClaw v1.1.0 — Kubernetes 集…"))
+  root(("HiClaw v110 Kubernetes 集群部署与"))
     核心变化
-      Kubernetes 原生架构（重大重构）
+      Kubernetes 原生架构 重大重构
       Hermes Worker 运行时
       企业级 Helm Chart 部署
-      可插拔 Provider 架构
     架构改进
     关键技术细节
     修复亮点
-    深度分析
-      1. Controller-Reconcile…
-      2. Hermes Worker 定位：自主编…
-      3. CRD 化资源管理：kubectl 原生…
-      4. Provider 接口与 Sidecar…
-    实践启示
-    关联概念
-    相关实体
+    Controller-Reconciler 架构 从单容器到
+    Hermes Worker 定位 自主编程 Agent
+    CRD 化资源管理 kubectl 原生操作的价值
+    Provider 接口与 Sidecar 模式 存储网关解耦的实现路径
 ```
 
 ## 核心变化

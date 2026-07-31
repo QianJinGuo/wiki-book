@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信"))
-    关键要点
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘要
 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
 

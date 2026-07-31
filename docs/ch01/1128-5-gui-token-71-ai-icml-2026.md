@@ -9,19 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-icml-2026-11papers-da769794d77c.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("5亿视频炼出全球最大GUI开源数据集、推理Token省7…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 5亿视频炼出全球最大GUI开源数据集、推理Token省71%小模型反超大模型——小米AI团队多篇论文入选ICML 2026 涉及agent领域的核心技术议题。

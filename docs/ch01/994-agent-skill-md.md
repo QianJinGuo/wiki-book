@@ -31,10 +31,10 @@
 
 ```mermaid
 mindmap
-  root(("手把手教你撰写 Agent Skill.md"))
-    到底什么是Agent Skills？
-    渐进式披露：像外卖骑手一样高效
-    SKILL.md 文件长什么样？
+  root(("手把手教你撰写 Agent Skillmd"))
+    到底什么是Agent Skills
+    渐进式披露 像外卖骑手一样高效
+    SKILLmd 文件长什么样
 ```
 
 ## 到底什么是Agent Skills？

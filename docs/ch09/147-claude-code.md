@@ -9,12 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 为什么会忽略指令：四类失效原因 …"))
+  root(("Claude Code 为什么会忽略指令 四类失效原因 五层规则框架"))
     核心概述
     指令失效的四类原因
     五层规则框架
-    CLAUDE.md 的定位：入口卡而非总控台
-    实操：变胖的 CLAUDE.md 怎么收
+    CLAUDEmd 的定位 入口卡而非总控台
+    实操 变胖的 CLAUDEmd 怎么收
     Subagent 作为上下文卫生工具
 ```
 

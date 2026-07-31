@@ -9,19 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Spec as AIOS：AI-Native 全栈交付的…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 Spec as AIOS：AI-Native 全栈交付的抗熵架构 涉及agent领域的核心技术议题。

@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Gemini AI (Google)"))
-    Overview
+  root(("Gemini AI Google"))
     名称澄清
     Gemini 的学习相关功能
-      1. Gemini in Google Wor…
-      2. Gemini Chat（gemini.g…
-      3. Gemini 与 NotebookLM …
-      4. Gemini 是否有'Study Mod…
+      Gemini in Google Workspace for
+      Gemini Chat geminigooglecom
+      Gemini 与 NotebookLM 的区别
     Pricing
     Strengths
     Weaknesses
-    深度分析
-    实践启示
 ```
 
 ## Overview

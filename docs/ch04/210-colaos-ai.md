@@ -16,25 +16,20 @@
 mindmap
   root(("ColaOS 与 AI 原生组织"))
     三个重写
-    产品：从工具到关系
+    产品 从工具到关系
       关键问题
-      不做工具，做一个人
-      Soul System：有灵魂才有留存
-    路线：one-person company 的…
+      不做工具 做一个人
+      Soul System 有灵魂才有留存
+    路线 one-person company 的 10x 产出
       AI coding 覆盖率
-    组织：AI 的速度必须穿过组织
+    组织 AI 的速度必须穿过组织
       五周奇迹
-      Soul Team：叙事方向穿透组织
+      Soul Team 叙事方向穿透组织
       迭代节奏变化
-      纯语音交互的赌注
     两大陷阱
-    深度分析
-      1. 摩擦经济学：AI 原生产品的成败本质
-      2. Soul System 的记忆架构：关系…
-      3. One-Person Company 的…
-      4. 流程穿透力：AI 速度的组织瓶颈
-    实践启示
-    相关实体
+    摩擦经济学 AI 原生产品的成败本质
+    Soul System 的记忆架构 关系持续性的技术基础
+    One-Person Company 的组织实验意义
 ```
 
 ## 三个重写

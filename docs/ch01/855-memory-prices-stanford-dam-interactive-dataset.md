@@ -11,15 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Memory Prices - Stanford DAM…"))
-    深度分析
-      方法论与数据可靠性
-      关键 Caveats
-      价格趋势的核心发现
-    实践启示
-      对 AI 基础设施经济学的影响
-      数据维护节奏
-      与类似数据资源的比较
+  root(("Memory Prices - Stanford DAM"))
+    数据覆盖范围
+    四大可视化图表
+    方法论与数据可靠性
+    关键 Caveats
+    价格趋势的核心发现
+    对 AI 基础设施经济学的影响
+    数据维护节奏
+    与类似数据资源的比较
 ```
 
 ## 摘要

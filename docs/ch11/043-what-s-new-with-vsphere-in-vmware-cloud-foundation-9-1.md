@@ -13,30 +13,29 @@
 
 ```mermaid
 mindmap
-  root(("What’s New with vSphere in V…"))
+  root(("Whats New with vSphere in VMware"))
     vCenter 维护革新
-      Quick Patch：安全补丁分钟级部署
-      Reduced Downtime Upgrad…
+      Quick Patch 安全补丁分钟级部署
+      Reduced Downtime Upgrade RDU
       单一 API 调整 vCenter 规格
     ESXi 生命周期管理
       Zero Touch Provisioning
       ESX Live Patch 默认启用
-      vSphere Lifecycle Manag…
+      vSphere Lifecycle Manager 增强
     性能与伸缩性
-      vCenter Operations Per …
+      vCenter Operations Per Minute 提升 25
       vMotion 并发度提升
       Intel QAT 加速加密 vMotion
-      Topology Aware Schedule…
-    AI/ML 基础设施支持
-      Enhanced DirectPath I/O…
+    AIML 基础设施支持
+      Enhanced DirectPath IO 生态扩展
       AMD IOMMU 虚拟化
       GPU-Direct RDMA over RoCE
     DRS 与 VM 迁移
-      Non-Disruptive vMotion …
-      Flow Processing Offload…
+      Non-Disruptive vMotion Evacuation
+      Flow Processing Offload FPO
     Guest OS 定制增强
     证书管理自动化
-    vSAN Desired State Conf…
+    vSAN Desired State Configuration
 ```
 
 ## 核心要点

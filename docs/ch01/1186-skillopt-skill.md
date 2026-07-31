@@ -9,21 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-microsoft-train-skill-hyman's-blog.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("微软等提出 SkillOpt：把 Skill 当成模型一…"))
-    深度分析
-      核心观点
-    一句话
-      第一步：带着当前 skill 跑任务
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 微软等提出 SkillOpt：把 Skill 当成模型一样训练 涉及agent领域的核心技术议题。

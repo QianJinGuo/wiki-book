@@ -13,15 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("1-Click GitHub Token Stealin…"))
+  root(("-Click GitHub Token Stealing via"))
     漏洞核心
     攻击链拆解
     影响范围
     责任披露时间线
     防御建议
     与本 wiki 其他实体的关联
-    相关实体
-    深度分析
 ```
 
 ## 漏洞核心

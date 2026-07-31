@@ -11,13 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("从 Coding 到 Anything：Qoder 多 …"))
-    核心观点：Coding → Anything
+  root(("从 Coding 到 Anything Qoder 多 Agent"))
+    核心观点 Coding Anything
     四大分享主题
-      1. Qoder Desktop：多 Agen…
-      2. 桌面 Agent：从 IDE 到桌面
-      3. 零售全域 Agent
-      4. 托管运行时（Hosted Runtime）
+      Qoder Desktop 多 Agent 协作与 Harness 实践
+      桌面 Agent 从 IDE 到桌面
+      零售全域 Agent
     竞争重心迁移
     人的位置重构
     与 wiki 已有知识的关联

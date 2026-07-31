@@ -13,8 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("Gemma 4 模型发布 — Google DeepMi…"))
-    背景
+  root(("Gemma 4 模型发布 Google DeepMind"))
     模型规格
       三个变体
       共同能力
@@ -22,11 +21,6 @@ mindmap
     Bedrock 集成价值
       数据保护
       部署灵活性
-      应用场景
-    实践启示
-    上线状态
-    原文链接
-    相关实体
 ```
 
 ## 背景

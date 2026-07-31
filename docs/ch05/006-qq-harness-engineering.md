@@ -11,34 +11,32 @@
 
 ```mermaid
 mindmap
-  root(("QQ音乐 Harness Engineering 实践（…"))
-    概述
+  root(("QQ音乐 Harness Engineering 实践 大仓多服务场景"))
     核心命题与核心公式
-      1. 核心命题
-      2. 核心公式：代码产出 = AI 能力 × …
-      3. 上下文五类缺口
-    Harness 的语义：挽具的隐喻
-      Harness Engineering 四大标…
-    QQ音乐 Harness Engineerin…
-      业务复杂度：50+ 微服务 + 三仓协同
+      核心命题
+      核心公式 代码产出 AI 能力 上下文质量
+      上下文五类缺口
+    Harness 的语义 挽具的隐喻
+      Harness Engineering 四大标准组件
+    QQ音乐 Harness Engineering 框架
+      业务复杂度 50 微服务 三仓协同
       四类约束必须进入框架
-      L5 治理层 vs L3/L4 执行层 vs …
-      技术路线：业务约束编码成 AI 可执行的工程制品
-    五阶段 + 四门禁
-      错误代价递增曲线 + 门禁锚点
-    三层知识体系 + 三仓联动
+      L5 治理层 vs L3L4 执行层 vs L1L2 体验层
+    五阶段 四门禁
+      错误代价递增曲线 门禁锚点
+    三层知识体系 三仓联动
       三层知识架构
-      .service-matrix/depend…
-      三仓联动：同一条 TAPD 单的三个分支
-      占位符词典（唯一真相源）
-    Skill / Agent / Command…
+      service-matrixdependenciesyaml 单一真相源
+      三仓联动 同一条 TAPD 单的三个分支
+    Skill Agent Command 三件套
       三种能力原子的分工
-      按阶段组织的 Agent 体系（24 个）
-      35 个 Slash Command
-    Self-Refinement：让 AI 从错…
+      按阶段组织的 Agent 体系 24 个
+      个 Slash Command
+    Self-Refinement 让 AI 从错误中沉淀经验
       闭环流程
       产物示例
-      Meta 案例：写文章本身就是 Self-Re…
+      Meta 案例 写文章本身就是 Self-Refinement
+    与 Claude Code Cursor Cline 的关系
 ```
 
 ## 概述

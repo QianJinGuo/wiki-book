@@ -13,14 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("给 AI 做工作面试：Mollick 的模型评估方法论"))
+  root(("给 AI 做工作面试 Mollick 的模型评估方法论"))
     Benchmark 的系统性缺陷
-    Vibes 测试：Mollick 的 Otte…
-    GDPval：真实工作评估框架
+    Vibes 测试 Mollick 的 Otter Test
+    GDPval 真实工作评估框架
     AI 的系统性态度差异
     企业 AI 选型建议
-    深度分析
-    实践启示
     关键引用
 ```
 

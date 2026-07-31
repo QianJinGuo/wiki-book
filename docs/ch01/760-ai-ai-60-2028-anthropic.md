@@ -9,15 +9,6 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-05-AI自己造AI-概率60-2028年底前-Anthropic联创坐不住了-新智元.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI自己造AI，概率60%，2028年底前！Anthro…"))
-    技术分析
-      --- 新智元报道
-```
-
 ## 核心要点
 
 AI自己造AI，概率60%，2028年底前！Anthropic联创坐不住了

@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("WorkOS Pipes: Third-party in…"))
-    深度分析
-      市场定位：API Economy 的'钻井平台…
-      技术架构：三层抽象
-      关键洞察：授权与认证的解耦
-      共享凭证的双重用途
-    实践启示
-      何时考虑使用 Pipes
-      集成架构建议
-      共享凭证的使用策略
-      安全注意事项
-    相关资源
-    相关实体
+  root(("WorkOS Pipes Third-party"))
+    市场定位 API Economy 的钻井平台思维
+    技术架构 三层抽象
+    关键洞察 授权与认证的解耦
+    共享凭证的双重用途
+    何时考虑使用 Pipes
+    集成架构建议
+    共享凭证的使用策略
+    安全注意事项
 ```
 
 ## 核心要点

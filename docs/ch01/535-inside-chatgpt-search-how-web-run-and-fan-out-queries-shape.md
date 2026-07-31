@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 8.2KB | `entities/chatgpt-search-web-run-fanout-searchengineland.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Inside ChatGPT Search: how w…"))
-    技术洞察
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - **web.run 查询广播** — ChatGPT Search 不搜索单一来源，而是将查询同时广播到多个来源
 - **结果综合** — 从多个来源综合信息，按相关性、新近度、来源权威性加权

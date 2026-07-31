@@ -9,27 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("TiDB Cloud — Agent-native 数据…"))
+  root(("TiDB Cloud Agent-native 数据库与 Kimi"))
     核心概念
-      Agent-native 时代的数据 Infr…
-      Kimi K2.6 为什么选 TiDB Cloud
-    架构核心：虚拟数据库层
-    三大战略决策（Kimi K2.6 能做成的关键）
-      1. 最小化 Agent 使用 Infra 工…
-      2. 统一技术栈
-      3. 极致低成本
-    行业收敛：one agent, one san…
+      Agent-native 时代的数据 Infra 竞争逻辑
+      Kimi K26 为什么选 TiDB Cloud
+    架构核心 虚拟数据库层
+    三大战略决策 Kimi K26 能做成的关键
+      最小化 Agent 使用 Infra 工具时的摩擦
+      统一技术栈
+      极致低成本
+    行业收敛 one agent one sandbox one
     上半场 vs 下半场
-    深度分析
-      虚拟数据库层：Agent-native 数据库…
-      竞争逻辑的根本转变
-      'one agent, one databas…
-      上半场到下半半场的竞争转移
-    实践启示
-      对 AI Agent 团队的基础设施选型建议
-      对数据库基础设施提供商的启示
-      行业趋势判断
-    相关实体
+    虚拟数据库层 Agent-native 数据库的核心架构突破
+    竞争逻辑的根本转变
+    one agent one database 范式的行业收敛意义
 ```
 
 ## 核心概念

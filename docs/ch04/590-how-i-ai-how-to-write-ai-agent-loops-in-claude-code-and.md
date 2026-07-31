@@ -9,14 +9,6 @@
 > **来源**: [🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead](https://www.lennysnewsletter.com/p/how-i-ai-how-to-write-ai-agent-loops)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("🎙️ How I AI: How to write AI…"))
-    概述
-```
-
 ## 概述
 
 Published Time: 2026-06-22T15:02:37+00:00

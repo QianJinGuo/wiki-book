@@ -11,21 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("使用 Amazon CloudFront 和 AWS W…"))
+  root(("使用 Amazon CloudFront 和 AWS WAF"))
     概览
     三个核心工程问题
-      1. 缓存策略分层（公开/登录/Cookie）
-      2. xmlrpc.php 攻击面防御
-      3. 基于 Cookie 的缓存键问题
+      缓存策略分层 公开登录Cookie
+      xmlrpcphp 攻击面防御
+      基于 Cookie 的缓存键问题
     WAF 路径规则与速率限制
     与其他 CloudFront 文档的差异化
-    实践启示
-    深度分析
-      1. Cookie 缓存键碎片化是 WordP…
-      2. 三层缓存策略是可复用的会话型 CMS 模式
-      3. Count + Label + Cust…
-      4. Cache Tag 语义化失效将 CDN…
-    相关实体
+    Cookie 缓存键碎片化是 WordPress CDN 化的核心矛盾
+    三层缓存策略是可复用的会话型 CMS 模式
+    Count Label Custom Rule 模式是 WAF
+    Cache Tag 语义化失效将 CDN
 ```
 
 ## 概览

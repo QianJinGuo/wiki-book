@@ -14,20 +14,16 @@
 
 ```mermaid
 mindmap
-  root(("百度网盘主端 FE AICR：AI Code Revie…"))
+  root(("百度网盘主端 FE AICR AI Code Review 准入实践"))
     核心数据
     多智能体协作审查架构
       关键设计原则
     检测耗时管理
-    CI/CD vs Pre-commit 决策
+    CICD vs Pre-commit 决策
     全流程 CR 建设蓝图
     与已有 wiki 实体关系
-    深度分析
-      多角色审查架构的设计原理与制衡机制
-      '模型能力 vs 规则约束'的动态关系
-      CI/CD + Pre-commit 的互补架构
-      误报治理的工程方法论
-    实践启示
+    多角色审查架构的设计原理与制衡机制
+    模型能力 vs 规则约束的动态关系
 ```
 
 ## 核心数据

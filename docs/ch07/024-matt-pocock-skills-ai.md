@@ -9,26 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Matt Pocock Skills — AI编程技能集合"))
-    概述
+  root(("Matt Pocock Skills AI编程技能集合"))
     Skill 分类
     核心 Skill 详解
-      grill-me — 需求追问
-      grill-with-docs — 术语对齐
-      caveman — 极简回复模式
+      grill-me 需求追问
+      grill-with-docs 术语对齐
+      caveman 极简回复模式
     核心理念
-    深度分析
-      Skill 的工程本质：从'约束AI'到'约束人'
-      grill-me 的深层价值：强制延迟满足
-      三类 Skill 的协同矩阵
-      与 DDD/SDD 的渊源
-    实践启示
-      立即可用的组合
-      caveman 的安全边界
-      CONTEXT.md 的维护策略
-      ADR 的触发条件
-    完整工作流（6 步）
-    与其他工作流对比
+    Skill 的工程本质 从约束AI到约束人
+    grill-me 的深层价值 强制延迟满足
+    三类 Skill 的协同矩阵
+    与 DDDSDD 的渊源
+    立即可用的组合
 ```
 
 ## 概述

@@ -7,20 +7,6 @@
 # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("面向 LLM 的架构设计：什么是真正的 AI Frien…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [why internally-built ai fails fund accounting audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)

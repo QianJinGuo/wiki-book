@@ -7,21 +7,6 @@
 # Anthropic Institute《When AI builds itself》深度解读：AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX）
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic Institute《When AI …"))
-    相关实体
-    深度分析
-      核心观点
-    一、核心信号：AI 已经进入 AI 研发的执行层
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)

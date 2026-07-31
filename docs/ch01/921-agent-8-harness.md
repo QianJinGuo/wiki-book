@@ -27,14 +27,14 @@
 
 ```mermaid
 mindmap
-  root(("长时自主Agent，先解决这8个Harness核心问题"))
+  root(("长时自主Agent 先解决这8个Harness核心问题"))
     引言
     agent 会怎么犯蠢
-      1. 任务前：上下文没吃够 Pre-Task
-      2. 规划阶段：上下文不完整 Plannin…
-      3. 规划阶段：短期思维 Planning …
+      任务前 上下文没吃够 Pre-Task
+      规划阶段 上下文不完整 Planning Incomplete
+      规划阶段 短期思维 Planning Short Term
     任务执行阶段的陷阱
-      4. 任务阶段：上下文焦虑 Task — C…
+      任务阶段 上下文焦虑 Task Context Anxiety
 ```
 
 ## 引言

@@ -13,26 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Rethinking Search as Code Ge…"))
+  root(("Rethinking Search as Code Generation"))
     核心范式转换
     SDK 基础原语 Primitives
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
     与现有 agentic-search 实体的差异化
     技术细节深度分析
       Code-as-IR 的工程优势
       与传统 RAG 检索的对比
       Production 部署的考量
-    深度分析
-      1. 传统搜索刚性的根本原因
-      2. controllability 瓶颈的技…
-      3. Search as Code 的架构创新
-      4. 与 function calling /…
-    实践启示
-      1. 重新设计 Agent Harness 的…
-      2. 引入 Code-as-IR 的可观测性层
-      3. 构建 Sandboxed Code Ex…
-      4. 设计 Per-Primitive 迭代细…
-    与现有实体/概念的链接
+    传统搜索刚性的根本原因
+    controllability 瓶颈的技术本质
+    Search as Code 的架构创新
 ```
 
 ## 核心范式转换

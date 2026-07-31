@@ -13,24 +13,27 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 1.0.24 工具调用安全事故：…"))
-    概述
-    1. 事件时间线
-    2. 事件核心：沉默致命的工具调用
-    3. 触发链还原：tool-call 路径拆解
-      3.1 /file-write 工具的沙箱盲区
-      3.2 多轮 tool-call 的失控
-      3.3 真实生产环境暴露
-    4. Anthropic 的官方解释与争议：'…
-    5. 三位安全专家的深度评论
-      5.1 Yadin Porter de Leó…
-      5.2 Sounil Yu（Knostic C…
-      5.3 Nicholas Kridi（Neur…
-    6. 真实案例：GitHub Issue 1…
-      6.1 Issue 13880
-      6.2 Issue 19867
-      6.3 共同点
-    7. Claude Code vs OpenA…
+  root(("Claude Code 1024 工具调用安全事故 静默删"))
+    事件时间线
+    事件核心 沉默致命的工具调用
+    触发链还原 tool-call 路径拆解
+      file-write 工具的沙箱盲区
+      多轮 tool-call 的失控
+      真实生产环境暴露
+    Anthropic 的官方解释与争议 不是 prompt
+    三位安全专家的深度评论
+      Yadin Porter de Len ToolSis CEO
+      Sounil Yu Knostic CEO
+      Nicholas Kridi NeuralTrust
+    真实案例 GitHub Issue 13880 与 19867
+      Issue 13880
+      Issue 19867
+      共同点
+    Claude Code vs OpenAI Codex CLI
+    5 条运维启示
+      配置 env-protection hooks
+      Secret scanning
+      限制写入目标
 ```
 
 ## 概述

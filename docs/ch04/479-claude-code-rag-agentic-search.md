@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 开发负责人：为何放弃 RAG 而…"))
-    深度分析
-      RAG vs Agentic Search 的…
-      与 Claude Code 架构的关系
-      实践中的平衡策略
-      对知识管理工具的影响
-    实践启示
-    相关实体
+  root(("Claude Code 开发负责人 为何放弃 RAG 而选择"))
+    RAG vs Agentic Search 的本质差异
+    与 Claude Code 架构的关系
+    实践中的平衡策略
+    对知识管理工具的影响
 ```
 
 ## 摘要

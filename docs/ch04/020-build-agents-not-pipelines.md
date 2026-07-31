@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Build agents, not pipelines"))
-    深入分析
-      Pipeline与Agent的本质区别
-      可预测性陷阱：Pipeline的成本下限
-      Context-Gathering：Pipel…
-      模型选择的灵活性矛盾
-    相关主题
+  root(("Build agents not pipelines"))
+    Pipeline与Agent的本质区别
+    可预测性陷阱 Pipeline的成本下限
+    Context-Gathering Pipeline的隐形债务
+    模型选择的灵活性矛盾
 ```
 
 ## 核心要点

@@ -9,24 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Recent Developments in LLM A…"))
+  root(("Recent Developments in LLM"))
     核心主题
     主要模型架构分析
-      Gemma 4：KV Sharing + PLE
-      Laguna XS.2：Layer-wise …
-      ZAYA1-8B：Compressed Con…
-      DeepSeek V4：mHC + CSA/HCA
-    深度分析
-      长上下文效率：架构演进的主轴
-      压缩范式的本质区别
-      mHC 的意义：从'注意力改造'到'残差流改造'
-      复杂度 vs 效率的权衡
-    实践启示
-      对模型选择的影响
-      对 Agent 系统设计的启发
-      对自研模型的建议
-      警惕点
-    相关实体
+      Gemma 4 KV Sharing PLE
+      Laguna XS2 Layer-wise Attention
+      ZAYA1-8B Compressed Convolutional
+    长上下文效率 架构演进的主轴
+    压缩范式的本质区别
+    mHC 的意义 从注意力改造到残差流改造
+    复杂度 vs 效率的权衡
+    对模型选择的影响
+    对 Agent 系统设计的启发
 ```
 
 ## 核心主题

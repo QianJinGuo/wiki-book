@@ -12,14 +12,17 @@
 ```mermaid
 mindmap
   root(("Programbench Agent Benchmark"))
-    深度分析
-    实践启示
     参见
-    任务设计：无源码、无反编译、无网络
+    任务设计 无源码 无反编译 无网络
     任务规模与覆盖范围
-    评估体系：248K+ 行为测试
-    评估框架：mini-SWE-agent
-    当前最佳表现：Claude Opus 4.7 …
+    评估体系 248K 行为测试
+    评估框架 mini-SWE-agent
+    当前最佳表现 Claude Opus 47 仅 3
+    意义与影响
+      区别于传统基准
+      推动 Agent 能力发展
+      与 Harness Engineering 的关联
+    参见
 ```
 
 ## 深度分析

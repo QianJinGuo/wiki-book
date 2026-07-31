@@ -15,7 +15,7 @@
 
 ```mermaid
 mindmap
-  root(("Nano Banana 2 Lite 与 Gemini …"))
+  root(("Nano Banana 2 Lite 与 Gemini Omni"))
     Nano Banana 2 Lite
     Gemini Omni Flash
     平台可用性

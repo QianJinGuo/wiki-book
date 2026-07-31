@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Latest open artifacts (#19)：…"))
-    深度分析
-      开放权重前沿的'中国加速'
-      RAM：相对采用度指标的引入
-      Qwen3.5：架构升级与权衡
-      GLM-5：商业化压力的信号
-    实践启示
-    关联实体
+  root(("Latest open artifacts 19 Qwen 35"))
+    开放权重前沿的中国加速
+    RAM 相对采用度指标的引入
+    Qwen35 架构升级与权衡
+    GLM-5 商业化压力的信号
 ```
 
 ## 摘要

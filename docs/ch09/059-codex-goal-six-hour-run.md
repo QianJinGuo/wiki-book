@@ -10,23 +10,19 @@
 ```mermaid
 mindmap
   root(("Codex Goal Six Hour Run"))
-    概述
     核心机制
       持久化目标状态
-      运行时续跑（Runtime Continuat…
+      运行时续跑 Runtime Continuation
       目标生命周期工具
-    实测案例：6 小时 44 分钟连续任务
+    实测案例 6 小时 44 分钟连续任务
       任务背景
       关键观察
-    与 Claude Code Ralph Wig…
-    深度分析
-      1. 持久化目标状态改变了 AI 运行的可用性边界
-      2. 94% Cache Hit Rate 证…
-      3. '从 supervisor 到 arch…
-      4. 自动续跑消除人工恢复的上下文断层
-    实践启示
+    与 Claude Code Ralph Wiggum Loop 的对比
+    持久化目标状态改变了 AI 运行的可用性边界
+    94 Cache Hit Rate 证明上下文积累有长期价值
+    从 supervisor 到 architect的范式转变将质量责任前移
+    自动续跑消除人工恢复的上下文断层
     适用边界
-    范式转变
 ```
 
 ## 概述

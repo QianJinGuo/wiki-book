@@ -13,14 +13,11 @@ Jefferies（全球全服务投资银行）在 AWS 上构建了 Agentic AI Trade 
 
 ```mermaid
 mindmap
-  root(("Jefferies 构建 Agentic AI Trad…"))
-    深度分析
-      1. Agentic AI 在投行交易场景中的…
-      2. Strands Agents + MCP…
-      3. 混合架构中的关键工程决策
-      4. AI 幻觉缓解的前瞻性设计
-    实践启示
-    相关实体
+  root(("Jefferies 构建 Agentic AI Trade"))
+    Agentic AI 在投行交易场景中的独特价值
+    Strands Agents MCP 的架构优势
+    混合架构中的关键工程决策
+    AI 幻觉缓解的前瞻性设计
 ```
 
 ## 摘要

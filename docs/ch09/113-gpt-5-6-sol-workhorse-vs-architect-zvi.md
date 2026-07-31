@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("GPT-5.6 Sol：Workhorse vs Arc…"))
-    核心定位：Workhorse vs Archi…
+  root(("GPT-56 Sol Workhorse vs Architect"))
+    核心定位 Workhorse vs Architect
     基准测试对比
     定价与分层
     实际应用模式
-    相关实体
-    深度分析
-      Workhorse vs Architect：…
-      定价策略背后的产品哲学
-      基准测试揭示了什么
-      实际应用中的协同模式
-    实践启示
+    Workhorse vs Architect 互补而非竞争的模型范式
+    定价策略背后的产品哲学
+    基准测试揭示了什么
+    实际应用中的协同模式
 ```
 
 ## 核心定位：Workhorse vs Architect

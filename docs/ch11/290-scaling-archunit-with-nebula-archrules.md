@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Scaling ArchUnit with Nebula…"))
-    深度分析
-      背景：Polyrepo 的治理困境
-      为什么选择 ArchUnit
-      Nebula ArchRules 架构
-      报告系统
-    实践启示
-    相关实体
+  root(("Scaling ArchUnit with Nebula"))
+    背景 Polyrepo 的治理困境
+    为什么选择 ArchUnit
+    Nebula ArchRules 架构
+    报告系统
 ```
 
 ## 摘要

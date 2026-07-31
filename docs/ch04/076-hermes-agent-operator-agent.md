@@ -9,15 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Hermes Agent Operator 上手：把一个…"))
-    一句话总结
-    核心架构：控制面 vs. 运行面
+  root(("Hermes Agent Operator 上手 把一个"))
+    核心架构 控制面 vs 运行面
     控制室 5 文件模板
     Agent 三组件与沉淀顺序
-    三条访问路径（优于'四级演进'）
-    SEO Agent 案例：强顺序链路不宜硬拆容器
-    四道门：原型 → 生产
-    安全：延迟触发型 Prompt Injection
+    三条访问路径 优于四级演进
+    SEO Agent 案例 强顺序链路不宜硬拆容器
+    四道门 原型 生产
+    安全 延迟触发型 Prompt Injection
+    模型路由
 ```
 
 ## 一句话总结

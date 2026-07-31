@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.2KB | `entities/gpt-image-2完全指南.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("gpt-image-2完全指南"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/1258-gpt-image-2.html)
 

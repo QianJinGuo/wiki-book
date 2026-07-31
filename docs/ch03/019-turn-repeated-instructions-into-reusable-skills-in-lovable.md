@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Turn repeated instructions i…"))
-    深度分析
-      1. Skills 的本质价值：消除重复摩擦
-      2. Description 设计是技能系统的…
-      3. Skills 的可组合性与'聚焦优于大而全'
-      4. 渐进式细节加载架构
-    实践启示
+  root(("Turn repeated instructions into"))
+    Skills 的本质价值 消除重复摩擦
+    Description 设计是技能系统的关键工程点
+    Skills 的可组合性与聚焦优于大而全
+    渐进式细节加载架构
     典型 Skill 示例解析
       design-system
       fresh-eyes-review
       landing-page-copy
-    相关实体
 ```
 
 ## 核心要点

@@ -13,12 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("A backdoor in a LinkedIn job…"))
+  root(("A backdoor in a LinkedIn job offer"))
     内容提炼
     The backdoor
-    关键洞察
-    实践启示
-    相关实体
 ```
 
 ## 核心要点

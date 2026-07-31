@@ -10,17 +10,6 @@ Every organization has access to the same foundation models. The real competitiv
 What makes this experience truly powerful is [agent Skills for model customization](<https://github.com/awslabs/agent-plugins/tree/main/plugins/sagemaker-ai>). They are pre-built, modular instruction sets that encode deep AWS and data science expertise across the entire customization lifecycle. When you describe your use case, the AI coding agent activates the relevant skills, guiding it through data preparation and validation, technique selection, hyperparameter configuration, model evaluation, and deployment. Skills provide specialized knowledge about SageMaker AI APIs, ML workflows, best practices, and common patterns, enabling your coding agent to provide more accurate, SageMaker AI-specific guidance, generating ready-to-run notebooks at each step. Skills are fully customizable, so you can modify them to match your team's workflows, governance standards, and tooling preferences, enabling reproducible organizational best practices, a common challenge with general-purpose coding assistants.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS SageMaker AI Agent 引导式工作…"))
-    Amazon Kiro in SageMake…
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## Amazon Kiro in SageMaker AI Studio JupyterLab
 
 ## 相关实体

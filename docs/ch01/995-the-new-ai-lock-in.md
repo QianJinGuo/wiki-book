@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.4KB | `entities/new-lock.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The new AI lock-in"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-lock.md)
 - review: v=7 × c=8 = 56

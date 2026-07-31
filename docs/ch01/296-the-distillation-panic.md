@@ -14,13 +14,10 @@
 ```mermaid
 mindmap
   root(("The distillation panic"))
-    深度分析
-      1. 蒸馏技术的本质：行业标准的两种形态
-      2. 'Distillation attack…
-      3. 灰色地带：API 蒸馏的合规现状
-      4. 真正的违规行为：jailbreaking…
-    实践启示
-    相关实体
+    蒸馏技术的本质 行业标准的两种形态
+    Distillation attacks 的语义污染风险
+    灰色地带 API 蒸馏的合规现状
+    真正的违规行为 jailbreaking 滥用 而非蒸馏
 ```
 
 ## 摘要

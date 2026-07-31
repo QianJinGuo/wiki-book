@@ -9,22 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic 长时运行 Agent 架构：对抗式设…"))
+  root(("Anthropic 长时运行 Agent 架构 对抗式设计"))
     背景数据
     三大失败根因
-      1. 上下文焦虑（Context）
-      2. 规划缺陷（Planning）
-      3. 自我评判陷阱（Self-judgment）
-    Agent SDK：结构化管理框架
-    对抗式架构（GAN-style）
+      上下文焦虑 Context
+      规划缺陷 Planning
+      自我评判陷阱 Self-judgment
+    Agent SDK 结构化管理框架
+    对抗式架构 GAN-style
     审美量化
-    案例：RetroForge（对抗架构 vs 普…
-    5 条实战建议
-    深度分析
-      对抗架构的深层逻辑
-      上下文管理的工程本质
-      审美量化的认识论意义
-      长时运行的隐性成本
+    案例 RetroForge 对抗架构 vs 普通循环
+    条实战建议
+    对抗架构的深层逻辑
 ```
 
 ## 背景数据

@@ -11,16 +11,6 @@
 让模型具备"长期个性化能力"——记忆、推理与对齐三能力协同。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("PersonaVLM: Long-term Person…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)

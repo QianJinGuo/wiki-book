@@ -12,10 +12,9 @@
 ```mermaid
 mindmap
   root(("Introducing Vercel Connect"))
-    Overview
-    Link to headinghttp:…
-    深度分析
-    实践启示
+    Link to headingRegister a
+    Link to headingRequest scoped
+    Link to headingTh
 ```
 
 ## Overview

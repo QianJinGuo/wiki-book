@@ -13,21 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Spec-Driven Development (SDD…"))
-    核心案例：5人7天干完20人数周的活
+  root(("Spec-Driven Development SDD 全面总结"))
+    核心案例 5人7天干完20人数周的活
     什么是 SDD
     SDD 四阶段模型
-    三文件体系（GitHub Spec Kit）
+    三文件体系 GitHub Spec Kit
       好 Spec 六要素
       粒度检验标准
     工具生态对比
     数据验证
-    深度分析
-      SDD 与 Vibe Coding 的本质差异…
-      Spec 作为共享心智模型（Shared Me…
-      SDD 在 Agent Teams 中的扩展
-      为什么 Vibe Coding 仍然不可替代
-    实践启示
+    SDD 与 Vibe Coding 的本质差异 约束 vs 自由
+    Spec 作为共享心智模型 Shared Mental Model
 ```
 
 ## 核心案例：5人7天干完20人数周的活

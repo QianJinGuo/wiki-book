@@ -13,21 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("基于 Amazon IoT Core 与 Kiro 构建…"))
+  root(("基于 Amazon IoT Core 与 Kiro"))
     场景
     数据链路
     三阶段演进
-      1. 手动步骤指南（基线）
-      2. 幂等 boto3 编排脚本（改进）
-      3. Kiro 包装工作流（AI Agent …
+      手动步骤指南 基线
+      幂等 boto3 编排脚本 改进
+      Kiro 包装工作流 AI Agent 可调用
     各层选择的关键原因
     关键工程细节
-      1. IoT Policy IP 白名单
-      2. Firehose 5 MiB / 5 m…
-      3. 为什么 Kinesis Data Str…
+      IoT Policy IP 白名单
+      Firehose 5 MiB 5 min buffer
+      为什么 Kinesis Data Streams 而不是直接
     价值
     配套资源
-    待关注
+    三层部署形态的递进本质 知识编码层级的跃迁
 ```
 
 ## 场景

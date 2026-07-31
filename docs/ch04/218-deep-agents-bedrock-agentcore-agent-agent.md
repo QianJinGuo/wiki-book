@@ -13,21 +13,20 @@
 
 ```mermaid
 mindmap
-  root(("Deep Agents + Bedrock AgentC…"))
+  root(("Deep Agents Bedrock AgentCore 多"))
     核心模式
     实战架构
       五个核心组件
-      工作流（4 步）
+      工作流 4 步
     关键工程细节
       Browser MicroVM 隔离
       Code Interpreter 隔离
       Memory 配置
-      模型无关
     三层可观测性
     部署到 Runtime
     与已有实体的差异化
-    深度分析
-    实践启示
+    上手资源
+    应用场景 作者建议
 ```
 
 ## 核心模式

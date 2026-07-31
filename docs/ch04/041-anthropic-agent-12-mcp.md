@@ -19,27 +19,18 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic 官方生产级 Agent 最佳实践：1…"))
+  root(("Anthropic 官方生产级 Agent 最佳实践 12"))
     微信正文
-    背景：MCP 的定位
+    背景 MCP 的定位
     五组12模式
-      第一组：工具交互面（Tool Surface）
-      第二组：交互语义（Interaction Se…
-      第三组：认证与凭证流（Auth and Cre…
-      第四组：上下文经济（Context Econo…
+      第一组 工具交互面 Tool Surface
+      第二组 交互语义 Interaction Semantics
+      第三组 认证与凭证流 Auth and Credential Flow
     结语
     参考资源
-    深度分析
-      一、模式结构的全局视角
-      二、Tool Surface 设计的三层决策
-      三、交互语义模式的深层逻辑
-      四、上下文经济的核心矛盾
-    Related entities
-    实践启示
-      1. 从模式1开始，先想清楚分发形态
-      2. 工具粒度决策先用「意图探测」方法
-      3. Form Mode 设计优先考虑「不打断…
-      4. 凭证托管是生产级集成的门槛
+    一 模式结构的全局视角
+    二 Tool Surface 设计的三层决策
+    三 交互语义模式的深层逻辑
 ```
 
 ## 微信正文

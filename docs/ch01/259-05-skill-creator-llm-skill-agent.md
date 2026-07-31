@@ -9,25 +9,24 @@
 
 ```mermaid
 mindmap
-  root(("05—skill-creator 源码深度拆解：LLM …"))
-    skill-creator vs SkillS…
-    能力一：触发率测评（run_eval.py）
-      核心函数：run_single_query（r…
+  root(("skill-creator 源码深度拆解 LLM Skill"))
+    skill-creator vs SkillSentry 分工
+    能力一 触发率测评 runevalpy
+      核心函数 runsinglequery runevalpy35-181
       关键设计点
-    能力二：自动优化 description 循环…
-      防过拟合设计：60/40 train/test…
-      迭代循环核心（run_loop.py:79-2…
-    能力三：统计聚合（aggregate_benc…
-      统计计算（aggregate_benchmar…
-      为什么是 n-1（Bessel 修正）
+    能力二 自动优化 description 循环 runlooppy
+      防过拟合设计 6040 traintest 分割
+      迭代循环核心 runlooppy79-241
+    能力三 统计聚合 aggregatebenchmarkpy
+      统计计算 aggregatebenchmarkpy45-64
+      为什么是 n-1 Bessel 修正
       跨 config 对比
-    能力四：三 Agent 评审系统
-      Grader Agent（agents/gra…
-      Comparator Agent（agents…
-      Analyzer Agent（agents/a…
+    能力四 三 Agent 评审系统
+      Grader Agent agentsgradermd
+      Comparator Agent agentscomparatormd
+      Analyzer Agent agentsanalyzermd
     SkillSentry 借鉴对照
     核心工程智慧总结
-    相关主题
 ```
 
 ## skill-creator vs SkillSentry 分工

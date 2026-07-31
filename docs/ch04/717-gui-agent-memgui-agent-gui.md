@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("让GUI Agent不再「边做边忘」：快手、浙大提出Me…"))
-    深度分析
-      从'被动追加'到'主动管理'的范式转变
-      ConAct 不是 Prompt Trick—…
-      与 Context Management 领域…
-      8B 模型泛化到分布外场景的意义
-    实践启示
-    相关实体
+  root(("让GUI Agent不再「边做边忘」 快手"))
+    从被动追加到主动管理的范式转变
+    ConAct 不是 Prompt Trick需要训练才能习得
+    与 Context Management 领域的关联
+    B 模型泛化到分布外场景的意义
 ```
 
 ## 摘要

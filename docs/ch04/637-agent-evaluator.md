@@ -13,11 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Agent 自进化评估瓶颈 — 外置 evaluator…"))
-    核心命题
-    与已有实体的关系
-    正例：深层自改进只在可验证区间成立
-    反例：优化器会攻击分数
+  root(("Agent 自进化评估瓶颈 外置 evaluator"))
+    正例 深层自改进只在可验证区间成立
+    反例 优化器会攻击分数
     LLM-as-Judge 的风险
     三层评估框架
       铁律

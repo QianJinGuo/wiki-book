@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("OpenAI 的最强对手，离「AI Windows」又近…"))
-    核心论点
+  root(("OpenAI 的最强对手 离「AI Windows」又近了一步"))
     MCP 是什么
-    Anthropic vs OpenAI：两条路径
+    Anthropic vs OpenAI 两条路径
     「AI Windows」战略
     对开发者的意义
     对算力成本的潜在影响
     挑战与局限
-    深度分析
-      MCP 作为'AI 时代的 USB 标准'的战…
-      为什么 Anthropic 选择'精选'而非'…
-      AI Gateway 与 MCP Gatewa…
-      '工具网络'替代'超级模型'的范式转变
+    MCP 作为AI 时代的 USB 标准的战略意义
+    为什么 Anthropic 选择精选而非开放
 ```
 
 ## 核心论点

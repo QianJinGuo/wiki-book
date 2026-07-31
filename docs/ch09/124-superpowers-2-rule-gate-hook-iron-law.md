@@ -13,15 +13,15 @@ Superpowers 第二篇深度解读：聚焦 Rule/Gate/Hook 核心哲学、Iron La
 
 ```mermaid
 mindmap
-  root(("Superpowers 深度解读（2）：Rule/Gat…"))
-    一句话
-    互补角度（vs 百度Geek说版）
+  root(("Superpowers 深度解读 2 RuleGateHook 与"))
+    互补角度 vs 百度Geek说版
     Rule vs Gate vs Hook
-    1% Rule
-    Iron Law（TDD）
-    systematic-debugging Ph…
-    writing-skills：把 TDD 应用…
-    Cialdini 说服原则（PUA Skill）
+    Rule
+    Iron Law TDD
+    systematic-debugging Phase 45
+    writing-skills 把 TDD 应用到 prompt
+    Cialdini 说服原则 PUA Skill
+    SDLC 范式映射
 ```
 
 ## 一句话

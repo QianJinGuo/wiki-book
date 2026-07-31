@@ -11,18 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("AI + Skills 打通中间件迁移：Android …"))
-    概述
-    核心洞察
-      AI 辅助开发的根本矛盾
-      知识的三个状态
-      AI + Skills 分工模型
+  root(("AI Skills 打通中间件迁移 Android 到鸿蒙定位服务实践"))
+    AI 辅助开发的根本矛盾
+    知识的三个状态
+    AI Skills 分工模型
     三种迁移方式对比
-    方法论
-      AI + Skills 工作流（完整闭环）
-      构建 Skills 三原则
-    未来展望
-    相关实体
+    AI Skills 工作流 完整闭环
+    构建 Skills 三原则
 ```
 
 ## 概述

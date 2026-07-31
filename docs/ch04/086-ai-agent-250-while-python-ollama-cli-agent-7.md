@@ -11,22 +11,25 @@
 
 ```mermaid
 mindmap
-  root(("AI Agent 的内核是 250 行 while 循环…"))
-    Overview
-    7 阶段渐进
+  root(("AI Agent 的内核是 250 行 while 循环 用"))
+    阶段渐进
     Stage 1-2 核心代码与设计
-      Stage 1：15 行 while True…
-      Stage 2：工具调用协议
-    Stage 3-4：Skill + 斜杠命令
-      Stage 3：Skill 动态加载
+      Stage 1 15 行 while True 骨架
+      Stage 2 工具调用协议
+    Stage 3-4 Skill 斜杠命令
+      Stage 3 Skill 动态加载
     角色
     指令
-      Stage 4：斜杠命令（/skills, /…
-    Stage 5-6：持久化 + 自动压缩
-      Stage 5：JSON 持久化（最大坑）
-      Stage 6：上下文自动压缩
-    Stage 7：后台定时循环
+      Stage 4 斜杠命令 skills tools help
+    Stage 5-6 持久化 自动压缩
+      Stage 5 JSON 持久化 最大坑
+      Stage 6 上下文自动压缩
+    Stage 7 后台定时循环
       两个关键设计决策
+    核心工程经验
+      description 是 LLM 决策唯一依据
+      工具结果截断不能省
+      Ollama toolcall 必须 modeldump
 ```
 
 ## Overview

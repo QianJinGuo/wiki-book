@@ -15,23 +15,18 @@
 
 ```mermaid
 mindmap
-  root(("Agent 开发应小步快跑：第一个 Agent 只需做一…"))
-    背景：POC 墓地现象
-    高风险领域的'小步快跑'实证：医疗人员资质核验
-    'If I Were Starting Tod…
-      1. Narrow scoped agents…
-      2. Human in the loop is…
-      3. Make failure satisfy…
-      4. Weekly iteration vs …
+  root(("Agent 开发应小步快跑 第一个 Agent 只需做一件事 哪怕很烂"))
+    背景 POC 墓地现象
+    高风险领域的小步快跑实证 医疗人员资质核验
+    If I Were Starting Today 五条原则
+      Narrow scoped agents fewer tasks
+      Human in the loop is a feature
+      Make failure satisfyingly obvious
     为什么这种反直觉的方法有效
     与 wiki 现有实体的差异化
-    实践启示（5 条可执行项）
+    实践启示 5 条可执行项
     与相关 entity 的关系
-    深度分析
-      1. Crawl-Walk-Run：AI ag…
-      2. 与 How We Built Cogn…
-      3. 迭代开发的核心：从失败中学习
-      4. 'Walk'阶段是关键过渡点
+    Crawl-Walk-Run AI agent 开发的阶段性框架
 ```
 
 ## 背景：POC 墓地现象

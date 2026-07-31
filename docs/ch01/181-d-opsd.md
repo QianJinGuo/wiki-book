@@ -13,11 +13,10 @@ d-OPSD（On-policy Self-distillation for Diffusion LLMs）是由马普所联合�
 
 ```mermaid
 mindmap
-  root(("d-OPSD —— 扩散语言模型的在线自蒸馏框架"))
+  root(("d-OPSD 扩散语言模型的在线自蒸馏框架"))
     核心动机
-    关键问题：参考解幻觉
+    关键问题 参考解幻觉
     四大创新
-    实验结果
 ```
 
 ## 核心动机

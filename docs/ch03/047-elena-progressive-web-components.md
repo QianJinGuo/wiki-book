@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Elena | Progressive Web Comp…"))
-    相关实体
-    深度分析
-      '渐进增强'理念的回归
-      Shadow DOM 的放弃与可访问性
-      跨框架兼容的实际代价
-      2.9kB 的设计立场
-    实践启示
-      何时考虑 Elena
-      何时可能不适合
-      开发者体验考量
+  root(("Elena Progressive Web Components"))
+    渐进增强理念的回归
+    Shadow DOM 的放弃与可访问性
+    跨框架兼容的实际代价
+    kB 的设计立场
+    何时考虑 Elena
+    何时可能不适合
+    开发者体验考量
 ```
 
 ## 核心要点

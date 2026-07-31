@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Hands-free first notice of l…"))
-    深度分析
-      浏览器推理 vs 传统 RPA 的范式差异
-      证据标记的复利效应
-      人在环路的位置重置
-      合规性内建于执行轨迹
-    实践启示
-    相关实体
+  root(("Hands-free first notice of loss"))
+    架构分层
+    Nova Act 与 Strands Agent 的职责分离
+    多模态证据分析流程
+    复杂度分类
+    浏览器推理 vs 传统 RPA 的范式差异
+    证据标记的复利效应
+    人在环路的位置重置
+    合规性内建于执行轨迹
 ```
 
 ## 摘要

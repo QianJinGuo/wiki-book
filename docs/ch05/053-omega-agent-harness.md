@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("OMEGA: 面向多机器人协作的具身Agent Harn…"))
-    深度分析
-      从 Software Agent Orches…
-      三层系统架构的设计理性
-      与现有方案的对比定位
-      2026-07-22 Supplementar…
-    实践启示
-    相关实体
+  root(("OMEGA 面向多机器人协作的具身Agent Harness"))
+    从 Software Agent Orchestration 到
+    三层系统架构的设计理性
+    与现有方案的对比定位
+    -07-22 Supplementary Harness VLA
 ```
 
 ## 摘要

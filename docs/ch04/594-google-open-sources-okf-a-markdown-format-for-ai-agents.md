@@ -14,8 +14,8 @@
 
 ```mermaid
 mindmap
-  root(("Google Open-Sources OKF, a M…"))
-    Google Open-Sources a K…
+  root(("Google Open-Sources OKF a"))
+    Google Open-Sources a Knowledge
     What the spec leaves out
     评估理由
     相关

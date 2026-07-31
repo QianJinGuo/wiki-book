@@ -9,10 +9,10 @@
 
 ```mermaid
 mindmap
-  root(("OpenAI Reasoning Models (o1/…"))
+  root(("OpenAI Reasoning Models o1o3o4-mini"))
     模型系列概览
     核心技术特征
-      Extended Chain-of-Thoug…
+      Extended Chain-of-Thought 扩展思维链
       训练方法
       与传统 GPT 系列的区别
     能力表现

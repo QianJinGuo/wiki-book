@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("ZCode - Simple, Fast, Vibe-R…"))
-    深度分析
-      1. GLM-5.2 时代的编程范式转变
-      2. Vibe Coding 理念的工程化落地
-      3. 中国 AI 编程工具竞争格局中的定位
-      4. 对开发工作流的实际影响
-    实践启示
-    相关实体
+  root(("ZCode - Simple Fast Vibe-Ready"))
+    GLM-52 时代的编程范式转变
+    Vibe Coding 理念的工程化落地
+    中国 AI 编程工具竞争格局中的定位
+    对开发工作流的实际影响
 ```
 
 ## 摘要

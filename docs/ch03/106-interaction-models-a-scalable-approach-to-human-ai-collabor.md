@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Interaction Models: A Scalab…"))
-    深度分析
-      当前 AI 交互的瓶颈：回合制限制
-      微回合架构的技术创新
-      双层架构：实时响应 + 深度推理
-      新交互维度的基准测试
-    实践启示
-    相关实体
+  root(("Interaction Models A Scalable"))
+    当前 AI 交互的瓶颈 回合制限制
+    微回合架构的技术创新
+    双层架构 实时响应 深度推理
+    新交互维度的基准测试
 ```
 
 ## 摘要

@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("基于Strands和AgentCore 实现Agenti…"))
-    概述
-    核心技术
-    深度分析
-      核心架构：Agentic Scheduler …
-      Orchestrator 状态机设计
-      错误分类与自适应策略
-      Human-in-the-Loop 审批机制
-    实践启示
-      1. 从规则引擎到 Agentic 的演进路径
-      2. Specs 驱动开发的重要性
-      3. 记忆机制的设计权衡
-      4. 跨区域调度的成本考量
-    来源
-    相关实体
+  root(("基于Strands和AgentCore 实现Agentic"))
+    核心架构 Agentic Scheduler 的设计哲学
+    Orchestrator 状态机设计
+    错误分类与自适应策略
+    Human-in-the-Loop 审批机制
+    从规则引擎到 Agentic 的演进路径
+    Specs 驱动开发的重要性
+    记忆机制的设计权衡
+    跨区域调度的成本考量
 ```
 
 ## 概述

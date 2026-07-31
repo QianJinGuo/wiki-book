@@ -11,14 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Building Agentic AI Applicat…"))
-    深度分析
-      S3 Vectors：成本优化的向量存储
-      S3 Tables + Apache Iceb…
-      Lake Formation 细粒度安全
-      AgentCore Gateway 拦截器模式
-    实践启示
-    相关实体
+  root(("Building Agentic AI Applications"))
+    Agentic AI 为何需要新的治理模型
+    四层架构
+    S3 Vectors 成本优化的向量存储
+    S3 Tables Apache Iceberg
+    Lake Formation 细粒度安全
+    AgentCore Gateway 拦截器模式
 ```
 
 ## 摘要

@@ -21,14 +21,11 @@
 
 ```mermaid
 mindmap
-  root(("场景营销前端 AI Coding — AI Native…"))
-    深度分析
-      D2C 的结构性局限与 Agent-Nativ…
-      分层信息架构：渐进式上下文的关键设计
-      工程层的降噪与蒙版处理：确定性问题不容 AI
-      Skill 驱动的能力扩展与去中心化扩展
-    实践启示
-    相关实体
+  root(("场景营销前端 AI Coding AI Native 的视觉稿还原"))
+    D2C 的结构性局限与 Agent-Native 的设计哲学
+    分层信息架构 渐进式上下文的关键设计
+    工程层的降噪与蒙版处理 确定性问题不容 AI
+    Skill 驱动的能力扩展与去中心化扩展
 ```
 
 ## 摘要

@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("The Primitive is the Product…"))
-    核心论点：AI 颠覆了软件产品逻辑
-    Tao of HashiCorp：原语设计哲学
-    原语思维（Primitive Thinking）
+  root(("The Primitive is the Product AI"))
+    核心论点 AI 颠覆了软件产品逻辑
+    Tao of HashiCorp 原语设计哲学
+    原语思维 Primitive Thinking
       产品即原语
       典型案例
       原语 vs 平台
     对 AI Agent 时代的启示
-    相关实体
 ```
 
 ## 核心论点：AI 颠覆了软件产品逻辑

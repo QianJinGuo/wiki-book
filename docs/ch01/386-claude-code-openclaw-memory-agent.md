@@ -12,16 +12,6 @@
 * • **Managed** ： ` /etc/claude-code/CLAUDE.md ` ，系统管理员写的全局策略，所有用户都得遵守，企业场景下用来统一规范
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("读完 Claude Code 和 OpenClaw 的 …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)

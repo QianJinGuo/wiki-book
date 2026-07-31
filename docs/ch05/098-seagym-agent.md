@@ -13,13 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("SEAGym: 自进化Agent评测环境 — 清华大学"))
+  root(("SEAGym 自进化Agent评测环境 清华大学"))
     核心动机
     SEAGym 框架
     多视角评测体系
     关键实验结果
     论文信息
-    相关实体
 ```
 
 ## 核心动机

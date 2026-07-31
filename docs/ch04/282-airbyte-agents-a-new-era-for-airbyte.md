@@ -9,16 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("Airbyte Agents: A New Era fo…"))
-    核心定位
+  root(("Airbyte Agents A New Era for Airbyte"))
     为什么 Agents 会失败
-    核心产品：Context Store
+    核心产品 Context Store
     性能收益
-      与各 MCP Vendor 对比的 Token…
+      与各 MCP Vendor 对比的 Token 节省
     三种接入方式
     上市状态
     Airbyte 的战略定位
-    与 Airbyte Data Replicat…
+    与 Airbyte Data Replication 的关系
+    Agent 瓶颈的范式转移 从模型到数据
 ```
 
 ## 核心定位

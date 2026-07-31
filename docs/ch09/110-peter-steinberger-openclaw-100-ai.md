@@ -9,15 +9,10 @@
 
 ```mermaid
 mindmap
-  root(("Peter Steinberger / OpenClaw…"))
-    概述
-    关键数据
+  root(("Peter Steinberger OpenClaw"))
     AI代理承担的工作
     CodexBar
     思考
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 概述

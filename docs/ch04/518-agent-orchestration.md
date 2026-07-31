@@ -10,15 +10,11 @@
 ```mermaid
 mindmap
   root(("Agent orchestration"))
-    Select your cookie pref…
-    Customize cookie prefer…
+    Select your cookie preferences
+    Customize cookie preferences
       Essential
       Performance
       Functional
-      Advertising
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心要点

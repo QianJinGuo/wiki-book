@@ -13,13 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Jane Street — 形式化方法与编程的未来"))
-    概述
-    核心论点（v=7, c=7, v×c=49）
-    关键洞察
-    实践启示
+  root(("Jane Street 形式化方法与编程的未来"))
+    核心论点 v7 c7 vc49
     与其他工作的关联
-    原文链接
 ```
 
 ## 概述

@@ -20,19 +20,19 @@
 
 ```mermaid
 mindmap
-  root(("GSD 上下文管理工具：用 Plan 约束 Agent …"))
-    上下文失控，才逼我找到 GSD
+  root(("GSD 上下文管理工具 用 Plan 约束 Agent 行为边界"))
+    上下文失控 才逼我找到 GSD
     GSD 是什么
-    四层结构：让 agent 只看它该看的那部分
-      第一层 · ROADMAP（项目层）
-      第二层 · Phase（边界显式定义）
-      第三层 · Plan frontmatter（…
-     相关实体
-      第四层 · Summary（provides …
+    四层结构 让 agent 只看它该看的那部分
+      第一层 ROADMAP 项目层
+      第二层 Phase 边界显式定义
+      第三层 Plan frontmatter 机器可执行合约
+    相关实体
+    相关实体
+      第四层 Summary provides affects
     context-budget 4档退化机制
-    Subagent 委派：orchestrato…
+    Subagent 委派 orchestrator 本身不读大文件
     六步走完一个 phase
-    实战数据
 ```
 
 ## 上下文失控，才逼我找到 GSD

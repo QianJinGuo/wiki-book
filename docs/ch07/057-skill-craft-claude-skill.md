@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Skill Craft：Claude Skill 质量工…"))
-    深度分析
-      1. Skill 质量问题的根因：缺乏工程化治理
-      2. 三层评估体系的设计哲学
-      3. 约束衰减：Skill 系统的阿喀琉斯之踵
-      4. 从单 Skill 到多 Skill 系统…
-    实践启示
-    相关实体
+  root(("Skill Craft Claude Skill 质量工程工具"))
+    Skill 质量问题的根因 缺乏工程化治理
+    三层评估体系的设计哲学
+    约束衰减 Skill 系统的阿喀琉斯之踵
+    从单 Skill 到多 Skill 系统的复杂性跃迁
 ```
 
 ## 摘要

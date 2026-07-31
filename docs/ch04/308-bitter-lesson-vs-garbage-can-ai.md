@@ -13,25 +13,19 @@
 
 ```mermaid
 mindmap
-  root(("Bitter Lesson vs Garbage Can…"))
+  root(("Bitter Lesson vs Garbage Can"))
     两个理论框架
-      Garbage Can Model（垃圾桶模型）
-      Bitter Lesson（苦涩教训）
+      Garbage Can Model 垃圾桶模型
+      Bitter Lesson 苦涩教训
     Agents 的两种路线
-      Manus：精心手工构建的 Agent
-      ChatGPT Agent：结果训练的 Agent
+      Manus 精心手工构建的 Agent
+      ChatGPT Agent 结果训练的 Agent
     在 Garbage Can 中的 Agents
-    深度分析
-      1. 组织理论与 AI 采用的根本冲突
-      2. 手工定制 vs 结果训练的本质差异
-      3. 竞争基础的重新定义
-      4. AI 能力的快速进化使临界点临近
-    实践启示
-      1. 定义'好结果'而非'好流程'
-      2. 优先投资结果定义和评估能力
-      3. 接受计算的规模化力量
-      4. 保持双轨实验
-    相关实体
+    组织理论与 AI 采用的根本冲突
+    手工定制 vs 结果训练的本质差异
+    竞争基础的重新定义
+    AI 能力的快速进化使临界点临近
+    定义好结果而非好流程
 ```
 
 ## 两个理论框架

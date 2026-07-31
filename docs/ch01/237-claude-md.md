@@ -11,33 +11,28 @@
 
 ```mermaid
 mindmap
-  root(("CLAUDE.md"))
+  root(("CLAUDEmd"))
     文章概要
-    核心循环：8步生命周期
-    步骤1：上下文组装
-      buildEffectiveSystemPro…
+    核心循环 8步生命周期
+    步骤1 上下文组装
+      buildEffectiveSystemPrompt
       系统提示词内容清单
-      CLAUDE.md 四级加载
-      @include 指令
-    步骤2：API调用与异步生成器
+      CLAUDEmd 四级加载
+    步骤2 API调用与异步生成器
       queryLoop 无限循环
       State 对象的状态传递
-    步骤3：响应解析
-      text + tool_use 块
-      43个内置工具
-    步骤4：权限检查
+    步骤3 响应解析
+      text tooluse 块
+      个内置工具
+    步骤4 权限检查
       四层判断机制
       分类器判断逻辑
       不同工具的通过路径
-    步骤5：工具执行
+    步骤5 工具执行
       工具统一接口
-      并发/串行执行策略
+      并发串行执行策略
       实际效果
-    深度分析
-      Agent Harness 是真正的工程壁垒
-      上下文缓存的分层策略
-      State 对象的时间维度
-      权限设计的纵深防御
+    Agent Harness 是真正的工程壁垒
 ```
 
 ## 文章概要

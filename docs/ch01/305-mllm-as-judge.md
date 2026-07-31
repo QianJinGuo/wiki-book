@@ -15,23 +15,18 @@
 
 ```mermaid
 mindmap
-  root(("多模态评估器：MLLM-as-Judge 图文评估"))
+  root(("多模态评估器 MLLM-as-Judge 图文评估"))
     背景与动机
     四种评估器
     技术实现
     关键设计发现
-      Q1: Judge 需要看到图像吗？
-      Q2: 选择哪个 Bedrock 模型？
-      Q3: Prompt 设计要点
-      Reference 的使用
+      Q1 Judge 需要看到图像吗
+      Q2 选择哪个 Bedrock 模型
+      Q3 Prompt 设计要点
     与现有技术的关系
     实用建议
     未来方向
-    深度分析
-      1. MLLM-as-Judge 填补了多模态…
-      2. '先推理后评分'是提升 judge-to…
-      3. Reference-based 与 Re…
-      4. Mid-tier reasoning-c…
+    MLLM-as-Judge 填补了多模态 AI 评估的空白
 ```
 
 ## 核心要点

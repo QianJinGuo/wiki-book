@@ -9,20 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("OpenAI携手五巨头开源革命性超算协议：一举解决超大集…"))
-    背景：为什么需要MRC
+  root(("OpenAI携手五巨头开源革命性超算协议"))
+    背景 为什么需要MRC
     MRC是什么
     三大核心机制
-      1. 多平面网络（Multi-Plane Ne…
-      2. 自适应包喷射（Adaptive Pack…
-      3. SRv6源路由（Source Routi…
+      多平面网络 Multi-Plane Network
+      自适应包喷射 Adaptive Packet Spray
+      SRv6源路由 Source Routing
     实际表现
     总结
-    深度分析
-      关键洞察
-      与行业整体趋势的关联
-    实践启示
-    相关链接
+    与行业整体趋势的关联
 ```
 
 ## 背景：为什么需要MRC

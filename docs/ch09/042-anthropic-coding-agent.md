@@ -9,15 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic Coding Agent 社会科学家…"))
+  root(("Anthropic Coding Agent 社会科学家采用调查"))
     背景与方法
-    核心发现
     采用率分布
-    性别鸿沟（p0.05显著）
+    性别鸿沟 p005显著
     用途与产出悖论
     社会性隐忧
     学科差异深层分析
-    性别鸿沟机制（p0.05显著）
+    性别鸿沟机制 p005显著
+    产出悖论详解
 ```
 
 ## 背景与方法

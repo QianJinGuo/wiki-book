@@ -11,17 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("LEAP：Google Agentic Framewor…"))
+  root(("LEAP Google Agentic Framework"))
     核心创新
     关键结果
     方法论意义
     与 wiki 已有知识的关联
-    深度分析
-      Agentic 循环：超越'一次生成'的范式突破
-      AND-OR DAG 作为推理骨架
-      '不用专用微调'的方法论启示
-      验证器即环境的架构设计
-    实践启示
+    Agentic 循环 超越一次生成的范式突破
+    AND-OR DAG 作为推理骨架
+    不用专用微调的方法论启示
+    验证器即环境的架构设计
 ```
 
 ## 核心创新

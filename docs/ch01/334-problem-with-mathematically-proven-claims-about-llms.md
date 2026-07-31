@@ -9,17 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Problem with Mathematically …"))
-    概述
+  root(("Problem with Mathematically"))
     三类被误用的「数学证明」
-      1. AI 不能自我改进——Zenil 论文的…
-      2. 幻觉不可避免——定义过于宽泛
-      3. 数学天花板——Hartmanis-Ste…
+      AI 不能自我改进Zenil 论文的 KL-flow 收敛
+      幻觉不可避免定义过于宽泛
+      数学天花板Hartmanis-Stearns 定理的滥用
     共同论证模式
     为什么这类论证持续出现
-    深度分析
-    实践启示
-    相关实体
     核心教训
 ```
 

@@ -22,13 +22,13 @@ There was some confusion in the replies to the tweets, and since it's not the fi
 
 ```mermaid
 mindmap
-  root(("Why Drizzle ORM couldn't pub…"))
+  root(("Why Drizzle ORM couldnt publish"))
     Manifests
     Packuments
-    The 100 MB limit.
-    Is my project at risk o…
-    How can I avoid large m…
-    Fixing registry ineffic…
+    The 100 MB limit
+    Is my project at risk of hitting
+    How can I avoid large manifests
+    Fixing registry inefficiencies
     What our registry does
 ```
 

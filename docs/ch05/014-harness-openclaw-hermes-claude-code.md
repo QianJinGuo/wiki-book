@@ -45,29 +45,24 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Harness 到底是什么？看看 OpenClaw、He…"))
+  root(("Harness 到底是什么 看看 OpenClaw Hermes"))
     内容
     模型与工程
     什么是 Harness
     三个框架对比
-      1. OpenClaw：先把 Agent 管住
-      2. Hermes：先让 Agent 长本事
-      3. Claude Code
+      OpenClaw 先把 Agent 管住
+      Hermes 先让 Agent 长本事
+      Claude Code
     Harness 七层模型
-      第一层：角色与规则
-      第二层：记忆系统
-      第三层：上下文加载机制
-      第四层：稳定执行
+      第一层 角色与规则
+      第二层 记忆系统
+      第三层 上下文加载机制
     OpenClaw 中的 Harness 具体实现
-      MCP/工具链
+      MCP工具链
       Skills
       Runtime
     结语
-    深度分析
-      三种路线代表了三种工程哲学
-      七层模型的分层逻辑
-      一个核心矛盾
-      真正的问题
+    三种路线代表了三种工程哲学
 ```
 
 ## 内容

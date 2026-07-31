@@ -10,16 +10,6 @@ Security pros warn YellowKey claim could make stolen laptops a much bigger probl
 Cybersecurity reporter
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Mystery Microsoft bug leaker…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 
 ```mermaid

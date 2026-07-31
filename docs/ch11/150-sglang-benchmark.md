@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("基于SGLang的大模型推理部署实践——Benchmar…"))
+  root(("基于SGLang的大模型推理部署实践Benchmark方法论"))
     核心贡献
     Benchmark 方法论
       测试规划四问
@@ -21,7 +21,7 @@ mindmap
     部署方案对比
       单机部署
       多机 Non-PD 分离
-      多节点 PD 分离（2P2D）
+      多节点 PD 分离 2P2D
     选型决策树
     Debug 与调优
       TTFT 高

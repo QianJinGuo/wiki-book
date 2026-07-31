@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Form-Over-Function Mistakes,…"))
-    深度分析
-      1. 'UI 快餐'模式的系统性风险
-      2. Windows 8 案例：功能模型错误，…
-      3. Apple AI Summaries：信…
-      4. Twitter → X 案例：品牌认知的…
-    实践启示
-      1. 建立设计前的'功能签字'机制
-      2. 五项预警指标监测
-      3. 原型测试的最小可行投入
-      4. IA 和用户旅程是最被低估的设计阶段
-    相关实体
+  root(("Form-Over-Function Mistakes or"))
+    UI 快餐模式的系统性风险
+    Windows 8 案例 功能模型错误 而非设计审美错误
+    Apple AI Summaries 信任侵蚀的隐蔽性
+    Twitter X 案例 品牌认知的不可强制转移性
+    建立设计前的功能签字机制
+    五项预警指标监测
+    原型测试的最小可行投入
+    IA 和用户旅程是最被低估的设计阶段
 ```
 
 ## 核心要点

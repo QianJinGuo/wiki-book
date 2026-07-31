@@ -15,21 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Against \"Brain Damage\"))
-    MIT 'Your Brain on Chat…
-    学习脑：AI 作为 tutor vs shor…
-    创意脑：AI 的可预测性与多样性
-    集体脑：AI 对社会过程的影响
-    关键数据/实践启示
-    深度分析
-      1. '必要难度'原理与学习心理
-      2. Scaffold vs Shortcut…
-      3. 锚定效应与认知架构
-    实践启示
-      1. '先卡住、再提问'确保心理努力优先
-      2. '100 ideas'流程强制 AI 跨…
-      3. 会议前'独思'仪式建立认知隔离
-    相关实体
+  root(("Against Brain Damage"))
+    MIT Your Brain on ChatGPT 研究的正确解读
+    学习脑 AI 作为 tutor vs shortcut
+    创意脑 AI 的可预测性与多样性
+    集体脑 AI 对社会过程的影响
+    必要难度原理与学习心理
+    Scaffold vs Shortcut 动态连续谱
+    锚定效应与认知架构
+    先卡住 再提问确保心理努力优先
 ```
 
 ## MIT "Your Brain on ChatGPT" 研究的正确解读

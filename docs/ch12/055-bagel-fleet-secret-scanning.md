@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("bagel — Fleet 级 Secret Scann…"))
-    核心定位
+  root(("bagel Fleet 级 Secret Scanning"))
     bagel 工具架构
     Fleet 级部署
-    集成 GitHub Actions + SARIF
+    集成 GitHub Actions SARIF
     与 AI 编程助手的交互风险
-    实战数据 + 部署建议
+    实战数据 部署建议
     与现有 secret scanning 工具对比
-    三个独有贡献
+    关联主题
 ```
 
 ## 核心定位

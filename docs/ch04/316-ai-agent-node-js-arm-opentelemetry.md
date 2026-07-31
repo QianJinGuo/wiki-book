@@ -13,13 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("AI Agent Node.js ARM 探针 — 通过…"))
-    深度分析
-      一、AI Agent 可观测性的'三层黑盒'困境
-      二、OpenTelemetry 扩展的技术路径
-      三、从'能监控'到'能诊断'：性能基线数据的价值
-      四、与同类方案的技术对比
-    实践启示
+  root(("AI Agent Nodejs ARM 探针 通过"))
+    一 AI Agent 可观测性的三层黑盒困境
+    二 OpenTelemetry 扩展的技术路径
+    三 从能监控到能诊断 性能基线数据的价值
+    四 与同类方案的技术对比
 ```
 
 ## 核心要点

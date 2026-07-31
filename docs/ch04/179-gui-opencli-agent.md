@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("浏览器自动化：从 GUI 到 OpenCLI — Age…"))
-    深度分析
-      1. 为什么 Agent 操控浏览器路不好走
-      2. 快速上手
-      3. AI Agent 探索工作流
-      4. 懒加载机制：必须主动探索
-    实践启示
-    相关实体
+  root(("浏览器自动化 从 GUI 到 OpenCLI Agent"))
+    为什么 Agent 操控浏览器路不好走
+    快速上手
+    AI Agent 探索工作流
+    懒加载机制 必须主动探索
 ```
 
 ## 摘要

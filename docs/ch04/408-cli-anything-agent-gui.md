@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("CLI-Anything：让 Agent 自主驱动任意 …"))
-    深度分析
-      1. CLI 作为 Agent-Tool 接口…
-      2. 自动化 CLI 生成的质量边界
-      3. 从'工具使用'到'环境适配'的 Agen…
-      4. 社区驱动的工具注册表模式
-    实践启示
-    相关实体
+  root(("CLI-Anything 让 Agent 自主驱动任意 GUI 软件"))
+    CLI 作为 Agent-Tool 接口的范式优势
+    自动化 CLI 生成的质量边界
+    从工具使用到环境适配的 Agent 能力跃迁
+    社区驱动的工具注册表模式
 ```
 
 ## 摘要

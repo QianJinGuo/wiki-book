@@ -15,11 +15,11 @@
 mindmap
   root(("阿里云 AgentTeams 企业级多 Agent 平台"))
     四层落地架构
-    四道安全防线（零信任 Agent 管理底座）
+    四道安全防线 零信任 Agent 管理底座
     三层协作架构
-      引擎热插拔（协议层解耦）
+      引擎热插拔 协议层解耦
     Sandbox 沙箱运行时
-    Agent 持续进化（AgentLoop 双飞轮）
+    Agent 持续进化 AgentLoop 双飞轮
     设计哲学
 ```
 

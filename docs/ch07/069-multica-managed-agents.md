@@ -11,15 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("Multica — 开源 Managed Agents 平台"))
-    核心定位
+  root(("Multica 开源 Managed Agents 平台"))
     关键技术参数
     核心概念
     与现有知识关联
-    关键洞察
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心定位

@@ -15,15 +15,13 @@ Meta 于 2026年7月10日正式发布 Muse Spark 1.1，一个主打 agentic 和 
 
 ```mermaid
 mindmap
-  root(("Meta Muse Spark 1.1 — 匹敌 Opu…"))
+  root(("Meta Muse Spark 11 匹敌 Opus 48 的"))
     Benchmark 表现
-    从 1.0 到 1.1 的飞跃
+    从 10 到 11 的飞跃
     关键技术特性
     定价与性价比
     垂直领域表现
     训练方法与技术路线
-    行业影响
-    深度分析
 ```
 
 ## Benchmark 表现

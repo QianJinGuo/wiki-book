@@ -10,15 +10,9 @@
 ```mermaid
 mindmap
   root(("Claude Code 架构解析"))
-    Overview
     核心 Insight
     子页面
-    Related
-    深度分析
-      补充：多 Agent 协作源码深析 — 上下文…
-    实践启示
-    架构图
-    相关实体
+    补充 多 Agent 协作源码深析 上下文隔离即核心机制
 ```
 
 ## Overview

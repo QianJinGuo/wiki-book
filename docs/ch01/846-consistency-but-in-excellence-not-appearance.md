@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Consistency, But in Excellen…"))
-    深度分析
-      Design Systems 的系统性困境
-      从软件设计到更广泛的启示
-      对 AI 生成设计的隐含批判
-    实践启示
-    相关实体
+  root(("Consistency But in Excellence Not"))
+    一致性 vs 卓越的根本张力
+    Apple 图标的三时代对比
+    翻转的逻辑
+    Design Systems 的系统性困境
+    从软件设计到更广泛的启示
+    对 AI 生成设计的隐含批判
 ```
 
 ## 摘要

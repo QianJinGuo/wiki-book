@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("Obsidian + Claude Code 完整集成指…"))
-    深度分析
-      五种策略的本质：「同步语义」vs「访问语义」的…
-      Obsidian 1.12 CLI 是结构性转折点
-      QMD + 会话同步：把对话本身变成可检索资产
-      文件混乱治理：四层防线
-    实践启示
-    相关实体
+  root(("Obsidian Claude Code 完整集成指南 五种知识管理策略"))
+    五种策略的本质 「同步语义」vs「访问语义」的两条路线
+    Obsidian 112 CLI 是结构性转折点
+    QMD 会话同步 把对话本身变成可检索资产
+    文件混乱治理 四层防线
 ```
 
 ## 摘要

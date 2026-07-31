@@ -18,14 +18,14 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Memory Setup (Ob…"))
+  root(("Claude Code Memory Setup Obsidian"))
     概要
+    两层记忆架构
+    关键效果指标
+    工作流
     技术背景
     价值分析
-    深度分析
-    实践启示
     相关项目
-    相关实体
 ```
 
 ## 概要

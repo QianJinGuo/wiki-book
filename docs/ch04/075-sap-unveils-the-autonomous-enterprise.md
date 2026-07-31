@@ -21,32 +21,23 @@
 
 ```mermaid
 mindmap
-  root(("SAP Unveils the Autonomous E…"))
-    核心架构：SAP Business AI Pl…
-    SAP Autonomous Suite：50…
+  root(("SAP Unveils the Autonomous"))
+    核心架构 SAP Business AI Platform
+    SAP Autonomous Suite 50 领域专属助理
       领域覆盖
-      典型案例：Autonomous Close A…
-      Industry AI：7 大行业垂直方案
-    Joule Work：对话式工作体验
-      核心能力
+      典型案例 Autonomous Close Assistant
+      Industry AI 7 大行业垂直方案
+    Joule Work 对话式工作体验
     战略合作伙伴生态
       Anthropic 合作的技术意义
-    市场进入：€1 亿欧元合作伙伴基金
-      RISE with SAP 和 SAP GRO…
+    市场进入 1 亿欧元合作伙伴基金
+      RISE with SAP 和 SAP GROW 加速计划
       ERP 迁移工具
     技术意义与行业影响
       三大差异化特点
       与企业 AI 落地趋势的关联
-    深度分析
-      1. '任务关键型'定位揭示了企业 AI 与消…
-      2. Knowledge Graph 是 SA…
-      3. 合作伙伴生态构建了企业 AI 落地的完整…
-      4. €1 亿欧元基金的真实目的是降低客户 A…
-    实践启示
-      1. 企业 AI 落地必须先构建业务知识图谱，…
-      2. 企业 AI 落地应以'流程闭环'而非'单…
-      3. AI Agent 的企业级部署必须将安全…
-      4. 利用 AI 采用作为推动云转型的杠杆，实…
+    任务关键型定位揭示了企业 AI 与消费级 AI 的本质差异
+    Knowledge Graph 是 SAP 方案的核心差异化资产
 ```
 
 ## 核心架构：SAP Business AI Platform

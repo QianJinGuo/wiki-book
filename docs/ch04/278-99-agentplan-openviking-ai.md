@@ -13,17 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("99-元月用-agentplan-openviking-…"))
+  root(("-元月用-agentplan-openviking-给销售团队配一个"))
     方案详解
       架构全景
       为什么选择 OpenViking
       搭建与使用
-    深度分析
-      AgentPlan + OpenViking：…
-      '9.9 元'背后的商业逻辑
-      对 Agent 产品设计的启示
-    实践启示
-    相关实体
+    AgentPlan OpenViking Agent
+    元背后的商业逻辑
+    对 Agent 产品设计的启示
 ```
 
 ## 摘要

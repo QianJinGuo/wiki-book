@@ -11,21 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("企业级 Skill 8 块最小骨架 + 8 条 chec…"))
-    概述
-    核心命题
-      第一原则
-    8 块最小骨架总览
+  root(("企业级 Skill 8 块最小骨架 8 条 checklist 设计规范"))
+    第一原则
+    块最小骨架总览
     When to use
-      ▎3. Do not use when：明确的…
     Do not use when
-      ▎4. Inputs：把模糊的'上下文'变成显…
     Inputs
-      ▎5. Steps：可执行、可检查、可失败的步骤
-      ▎6. Verification：怎么知道这次…
     Steps
     Verification
-      ▎7. Failure handling：失败…
+    Failure handling
 ```
 
 ## 概述

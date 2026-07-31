@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("RocketMQ-A2A：会话级可重放事件流驱动的多智能…"))
-    核心洞察：生产 MAS 的瓶颈不在模型层
-    LiteTopic：面向海量会话的轻量队列模型
+  root(("RocketMQ-A2A 会话级可重放事件流驱动的多智能体可靠协作"))
+    核心洞察 生产 MAS 的瓶颈不在模型层
+    LiteTopic 面向海量会话的轻量队列模型
     RocketMQ-A2A 异步交互范式
     性能数据
     生产落地
-      百炼（阿里云大模型服务平台）
+      百炼 阿里云大模型服务平台
       Qoder Cloud Agents
     开源与论文
     与业界关系

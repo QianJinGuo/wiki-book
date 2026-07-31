@@ -13,28 +13,18 @@ OpenClaw 创始人 **Peter Steinberger** 与 Claude Code 创始人 **Boris Chern
 
 ```mermaid
 mindmap
-  root(("OpenClaw 与 Claude Code 的 Age…"))
-    五级跃迁史：从 While 循环到多 Agen…
-      第一阶段：学术界 While 循环 2022
-      第二阶段：AutoGPT 2023
-      第三阶段：Ralph 循环 2025
-      第四阶段：产品化循环 2026 春季
+  root(("OpenClaw 与 Claude Code 的 Agent"))
+    五级跃迁史 从 While 循环到多 Agent 编排
+      第一阶段 学术界 While 循环 2022
+      第二阶段 AutoGPT 2023
+      第三阶段 Ralph 循环 2025
     Boris Cherny 的循环实操指南
     与已有实体的关联
-    核心论点
-      从 Token 到循环管控
-      循环 vs Cron：决策机制的差异
-      可复用技能：循环的核心资产
+    从 Token 到循环管控
+    循环 vs Cron 决策机制的差异
+    可复用技能 循环的核心资产
     三大核心新逻辑
-    深度分析
-      1. Agent Loop：AI agent …
-      2. 与 Claude Code loop 的对比
-      3. 递归 loop 的风险
-    实践启示
-      1. 选择 loop 模式匹配任务复杂度
-      2. 所有 loop 必须有退出条件
-      3. Loop 中的状态管理
-    相关实体
+    Agent Loop AI agent 的核心执行模式
 ```
 
 ## 五级跃迁史：从 While 循环到多 Agent 编排

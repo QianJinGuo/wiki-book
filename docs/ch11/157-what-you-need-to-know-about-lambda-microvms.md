@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("What You Need to Know About …"))
-    深度分析
-      Agent Sandbox 的基础设施级解决方案
-      对 Agent Runtime 生态的影响
-      Firecracker 的战略价值
-      定价模型的隐含信号
-    实践启示
-    相关实体
+  root(("What You Need to Know About"))
+    解决的核心问题
+    与传统 Lambda 的根本区别
+    Shell 访问与 Docker 支持
+    与 AgentCore Runtime 的对比
+    Agent Sandbox 的基础设施级解决方案
+    对 Agent Runtime 生态的影响
+    Firecracker 的战略价值
+    定价模型的隐含信号
 ```
 
 ## 摘要

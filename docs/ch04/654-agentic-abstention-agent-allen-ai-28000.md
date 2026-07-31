@@ -11,12 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Abstention—Agent 能及时…"))
-    核心问题
+  root(("Agentic AbstentionAgent 能及时停止吗"))
     与 LLM Abstention 的关键区别
     三类典型失败模式
-    基准结果（28000+ 任务）
-    方法：CONVOLVE
+    基准结果 28000 任务
+    方法 CONVOLVE
     对工程实践的意义
 ```
 

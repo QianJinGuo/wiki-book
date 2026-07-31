@@ -9,13 +9,9 @@
 
 ```mermaid
 mindmap
-  root(("ICML 2026 Position Paper — T…"))
-    概述
-    深度分析
-    实践启示
-    5 上下文管理模式 → 复杂度层级谱系
+  root(("ICML 2026 Position Paper"))
+    上下文管理模式 复杂度层级谱系
     缩放族假设 vs 固定系统对照
-    相关实体
 ```
 
 ## 概述

@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI tool poisoning exposes a …"))
-    关键要点
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘要
 Title: AI tool poisoning exposes a major flaw in enterprise agent security
 URL Source: https://venturebeat.com/security/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security

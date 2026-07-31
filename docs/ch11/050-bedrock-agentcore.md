@@ -12,21 +12,15 @@ mindmap
   root(("Bedrock AgentCore 自定义代码评估器"))
     核心概念
     关键质量维度与评估器实现
-      1. ToolResponseSchemaVa…
-      2. StockPriceDriftCheck…
-      3. WorkflowContractGSR（…
-      4. BrokerPIILeakChecker…
-    深度分析
-      代码评估器的本质定位
-      OTel Spans 作为统一评估契约
-      Online 评估的采样经济性
-      CI/CD 集成：门禁而非建议
-    实践启示
-      何时选代码评估器而非 LLM-as-a-Judge
-      评估级别选择决策树
-      生产落地推荐路径
-      团队职责分离
-    相关实体
+      ToolResponseSchemaValidator TRACE 级
+      StockPriceDriftChecker TRACE 级
+      WorkflowContractGSR SESSION 级
+    代码评估器的本质定位
+    OTel Spans 作为统一评估契约
+    Online 评估的采样经济性
+    CICD 集成 门禁而非建议
+    何时选代码评估器而非 LLM-as-a-Judge
+    评估级别选择决策树
 ```
 
 ## 摘要

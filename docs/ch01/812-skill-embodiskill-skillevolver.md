@@ -9,23 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("清华自进化Skill双星：EmbodiSkill + S…"))
-    核心问题
-    EmbodiSkill：诊断层——先判断'哪里…
-      四种反思类型（关键创新）
+  root(("清华自进化Skill双星 EmbodiSkill"))
+    EmbodiSkill 诊断层先判断哪里出了问题
+      四种反思类型 关键创新
       技能结构
-      '执行→反思→更新'螺旋
-      性能
-    SkillEvolver：生成层——自动生成技…
-      核心定位
-      方案多样性（Population-based）
-      轨迹对比 + 机械检查
-      关键特性
-    深度分析
-      诊断层 vs 生成层的分工
-      为什么是'技能'而不是'模型'
-      与 OpenAI Codex /goal 的互补
-    实践启示
+      执行反思更新螺旋
+    SkillEvolver 生成层自动生成技能改进方案
+      方案多样性 Population-based
+      轨迹对比 机械检查
+    诊断层 vs 生成层的分工
+    为什么是技能而不是模型
+    与 OpenAI Codex goal 的互补
     参考链接
 ```
 

@@ -48,20 +48,13 @@ graph TB
 mindmap
   root(("花叔的 Claude Code 多 Agent 用量画像"))
     花叔的多 Agent 用量画像
-    一、Agent View 是什么
-    二、Agent View 解决的是人的问题，不…
-    三、Agent View 的诞生路径：从内部工…
-    四、关键技术细节
+    一 Agent View 是什么
+    二 Agent View 解决的是人的问题 不是 AI 的问题
+    三 Agent View 的诞生路径 从内部工具到产品化
+    四 关键技术细节
     花叔的使用建议
-    深度分析
-      注意力经济视角下的 Agent 基础设施
-      Sherlocking 模式的双重意涵
-      Git Worktree 隔离机制的工程权衡
-    实践启示
-      对于个人开发者
-      对于团队和工作流设计者
-      对于工具生态参与者
-      长期趋势
+    注意力经济视角下的 Agent 基础设施
+    Sherlocking 模式的双重意涵
 ```
 
 ## 花叔的多 Agent 用量画像

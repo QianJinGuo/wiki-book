@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.7KB | `entities/thread-0xcheeezzyyyy.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thread by @0xCheeezzyyyy on …"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 @0xCheeezzyyyy 的这条推文串揭示了 DeFi 信用层演进的关键拐点：固定利率信贷产品长期缺失的本质原因是 DeFi 基础设施尚未成熟到支持复杂的负债管理策略。IRIS 的核心创新在于引入 **intent-based model（意图模型）**，将借款人最终想要实现的财务目标（固定利率融资）而非具体的技术实现（锁定某一特定借贷池的利率）作为撮合起点，从而将定价权从静态的单点利率转移到 solver 的主动生命周期管理能力上 。

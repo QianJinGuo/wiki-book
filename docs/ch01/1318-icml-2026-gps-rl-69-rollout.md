@@ -13,10 +13,8 @@ GPS（Generalizable Predictive Prompt Selection）是清华大学与腾讯在 IC
 
 ```mermaid
 mindmap
-  root(("ICML 2026: GPS — 小模型「指挥」大模型R…"))
-    核心问题
-    方法：GPS
-    实验结果
+  root(("ICML 2026 GPS 小模型「指挥」大模型RL后训练"))
+    方法 GPS
     关键信息
 ```
 

@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 6.5KB | `entities/anthropic-puts-claude-agents-on-a-meter-across-its.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic puts Claude agents…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - 来源：infoworld.com
 - 评分：v=5 c=12 (56分)

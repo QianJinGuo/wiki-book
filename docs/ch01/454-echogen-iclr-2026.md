@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("EchoGen — ICLR 2026 首个基于视觉自回…"))
-    深度分析
-      主体驱动生成的两难与 VAR 的破局
-      解耦注入的设计原理
-      Subject-Text CFG 的动态控制
-      与扩散模型效率优化的对比
-    实践启示
-    相关实体
+  root(("EchoGen ICLR 2026"))
+    主体驱动生成的两难与 VAR 的破局
+    解耦注入的设计原理
+    Subject-Text CFG 的动态控制
+    与扩散模型效率优化的对比
 ```
 
 ## 摘要

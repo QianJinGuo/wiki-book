@@ -11,10 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Programbench Swe Agent Bench…"))
+  root(("Programbench Swe Agent Benchmark"))
     相关资源
-    深度分析
-    实践启示
+    相关资源
 ```
 
 ## 摘要

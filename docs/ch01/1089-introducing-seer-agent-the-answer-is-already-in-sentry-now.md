@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.8KB | `entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing Seer Agent: The …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - Sentry Seer Agent：利用 LLM 在 Sentry 内直接回答开发者问题
 - 将调试工作流从人工排查转变为自然语言问答

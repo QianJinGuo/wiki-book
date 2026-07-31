@@ -11,19 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Building Blocks for Foundati…"))
+  root(("Building Blocks for Foundation"))
     核心摘要
-    深度分析
-      三重扩展定律的基础设施含义
-      通信瓶颈的关键性
-      Slurm vs Kubernetes 的架构取舍
-      推理框架的分化趋势
-    实践启示
-      基础设施选型决策框架
-      存储层次设计
-      资源编排选型
-      分布式训练框架选择
-    相关实体
+    三重扩展定律的基础设施含义
+    通信瓶颈的关键性
+    Slurm vs Kubernetes 的架构取舍
+    推理框架的分化趋势
+    基础设施选型决策框架
+    存储层次设计
+    资源编排选型
 ```
 
 ## 核心摘要

@@ -9,8 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("三剑合璧Quick Suite + Agent Core…"))
-    概述
+  root(("三剑合璧Quick Suite Agent Core"))
     业务背景与客户痛点
       客户场景
       核心痛点
@@ -21,13 +20,14 @@ mindmap
     系统架构
       基于 Kiro 的 MCP 开发与部署
       Excel MCP Server 架构设计
-      Amazon Quick Suite Flow…
+      Amazon Quick Suite Flows 设计
     经验总结与最佳实践
-      AgentCore 部署 MCP Server…
-      OAuth 2.0 认证配置注意事项
+      AgentCore 部署 MCP Server 经验
+      OAuth 20 认证配置注意事项
     成本分析
     结论
     核心技术栈
+    三产品协同架构的价值
 ```
 
 ## 概述

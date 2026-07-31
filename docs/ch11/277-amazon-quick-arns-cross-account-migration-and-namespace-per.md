@@ -7,20 +7,6 @@
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Quick ARNs: Cross-acc…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 ```mermaid

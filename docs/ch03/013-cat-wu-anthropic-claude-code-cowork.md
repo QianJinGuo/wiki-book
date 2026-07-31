@@ -9,17 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Cat Wu — Anthropic Claude Co…"))
-    核心洞察
+  root(("Cat Wu Anthropic Claude"))
     Claude Code三产品选型
     与本文相关
-    相关实体
-    深度分析
-      使命驱动 vs 流程驱动：Anthropic …
-      产品品味与角色融合：PM 职能的范式转移
-      自动化原则：95% = 没自动化
-      Evals：被低估的产品工具
-    实践启示
+    使命驱动 vs 流程驱动 Anthropic 的双重护城河
+    产品品味与角色融合 PM 职能的范式转移
+    自动化原则 95 没自动化
+    Evals 被低估的产品工具
 ```
 
 ## 核心洞察

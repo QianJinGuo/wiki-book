@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("50 design token files, one p…"))
+  root(("design token files one problem"))
     Core Problem
     Three-Layer Analysis
-      1. Format Layer: Parsea…
-      2. Semantic Layer: Nami…
-      3. Constraint Layer: In…
+      Format Layer Parseability of
+      Semantic Layer Naming Convention
+      Constraint Layer Inter-Token
     Practical Insights
     Unique Contributions
-    Related
 ```
 
 ## Core Problem

@@ -9,16 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("CLAUDE.md 12 条规则：Karpathy 扩展模板"))
-    概述
+  root(("CLAUDEmd 12 条规则 Karpathy 扩展模板"))
     核心设计原则
     规则体系
-      基础层（Karpathy 4 条）——防写代码失败
-      扩展层（新增 8 条）——防 agent 编排失败
+      基础层 Karpathy 4 条 防写代码失败
+      扩展层 新增 8 条 防 agent 编排失败
     Karpathy 模板的 4 个失效点
     数据
-    深度分析
-    实践启示
     参考来源
 ```
 

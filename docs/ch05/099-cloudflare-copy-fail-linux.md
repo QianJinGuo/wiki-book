@@ -11,17 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Cloudflare Copy Fail Linux 内…"))
-    概述
+  root(("Cloudflare Copy Fail Linux 内核漏洞应急响应"))
     漏洞机制
-      AF_ALG + Page Cache 交互缺陷
+      AFALG Page Cache 交互缺陷
       攻击链
     Cloudflare 应急响应 Harness
-      时间线（48 小时闭环）
+      时间线 48 小时闭环
       三层防御架构
       Harness 工程亮点
     对 Harness Engineering 的启示
-    相关主题
 ```
 
 ## 概述

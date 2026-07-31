@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Subagent 详解：把探索过…"))
-    深度分析
-      长会话为什么会变脏
-      Subagent 的三层价值
-      Subagent 文件结构
-      配置位置的优先级
-    实践启示
-    相关实体
+  root(("Claude Code Subagent 详解 把探索过程关进独立工作区"))
+    长会话为什么会变脏
+    Subagent 的三层价值
+    Subagent 文件结构
+    配置位置的优先级
 ```
 
 ## 摘要

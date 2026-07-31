@@ -9,19 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("龙虾装上了，可以用来干啥？分享下我的 OpenClaw …"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 分享下我的 OpenClaw 多智能体团队搭建经验！

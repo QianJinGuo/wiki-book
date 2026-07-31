@@ -12,11 +12,10 @@
 ```mermaid
 mindmap
   root(("Introducing eve"))
-    Overview
-    Link to headinghttp:…
-      Link to headinghttp:…
-    深度分析
-    实践启示
+    Link to headingAn agent is a
+      Link to headingCreate an eve
+    Link to headingWhy we built eve
+    Link to
 ```
 
 ## Overview

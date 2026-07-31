@@ -11,15 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Why Ctrl+V won't paste image…"))
-    深度分析
-      三层故障链的工程启示
-      静默覆写的调试技巧
-      三组件架构的设计模式
-      上游修复的工程权衡
-    实践启示
-    相关实体
-    相关主题
+  root(("Why CtrlV wont paste images in"))
+    三层故障链的工程启示
+    静默覆写的调试技巧
+    三组件架构的设计模式
+    上游修复的工程权衡
 ```
 
 ## 摘要

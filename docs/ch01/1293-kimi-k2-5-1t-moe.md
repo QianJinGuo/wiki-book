@@ -5,18 +5,6 @@
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/kimi-k2-5-architecture-innovation-moonshot-2026.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Kimi K2.5 架构创新 — 1T MoE 一层路由…"))
-    概述
-    深度分析
-    实践启示
-    关键差异点：K2.5 vs DeepSeek-V3
-    相关实体
-```
-
 ## 概述
 
 Kimi K2.5（Moonshot AI）是 K2 之后的开源 1T MoE 升级版本，核心架构创新是**"一层路由"机制**（路由只发生在 attention 后残差出口，与 DeepSeek-V3 256 个 64 维 expert 的逐层路由形成本质区别），叠加**深度研究 / 视觉-代码-操作 / 多模态表格理解** 三项新能力，模型权重 + 训练数据 + 配套 harness（OpenShell、AWorld）**全部开源**。

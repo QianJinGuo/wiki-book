@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Unlocking the Cloudflare app…"))
+  root(("Unlocking the Cloudflare app"))
+    从受限到开放
+    自管理 OAuth 能力
     技术实现深度分析
-      OAuth 引擎升级：Hydra 1.x → …
+      OAuth 引擎升级 Hydra 1x 2x
       蓝绿部署的关键设计
     对 Agent 生态的意义
-    实践启示
-    相关实体
 ```
 
 ## 摘要

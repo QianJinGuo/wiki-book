@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("N-Day Research with AI: Usin…"))
-    深度分析
-      1. 技术架构分层
-      2. RAG 集成的实际价值
-      3. Token 瓶颈与工程妥协
-      4. 与传统 N-day 研究流程的对比
-    实践启示
-    相关实体
+  root(("N-Day Research with AI Using"))
+    技术架构分层
+    RAG 集成的实际价值
+    Token 瓶颈与工程妥协
+    与传统 N-day 研究流程的对比
 ```
 
 ## 深度分析

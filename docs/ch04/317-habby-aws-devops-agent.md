@@ -9,14 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Habby 游戏借助 AWS DevOps Agent …"))
-    深度分析
-      游戏行业 AI 运维的特殊性
-      双通道集成架构的价值
-      GitHub 集成：解决变更根因定位的最后一公里
-      多账户统一管理的架构设计
-    实践启示
-    相关实体
+  root(("Habby 游戏借助 AWS DevOps Agent"))
+    游戏行业 AI 运维的特殊性
+    双通道集成架构的价值
+    GitHub 集成 解决变更根因定位的最后一公里
+    多账户统一管理的架构设计
 ```
 
 ## 核心要点

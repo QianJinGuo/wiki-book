@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Reasoning lift: What happens…"))
-    相关实体
-    深度分析
-      核心发现：reasoning 模式重塑 AI …
-      品牌持久性的机制差异
-      为什么 Finance 领域表现最突出
-      两种模式的信息架构差异
-    实践启示
-      1. 测量必须按 reasoning 模式分割
-      2. TOFU 内容策略需要重新评估
-      3. 优化信源的可检索性，而非排名
-      4. Selection 阶段的 prompt…
+  root(("Reasoning lift What happens to AI"))
+    核心发现 reasoning 模式重塑 AI 信息获取机制
+    品牌持久性的机制差异
+    为什么 Finance 领域表现最突出
+    两种模式的信息架构差异
+    测量必须按 reasoning 模式分割
+    TOFU 内容策略需要重新评估
+    优化信源的可检索性 而非排名
+    Selection 阶段的 prompt 设计影响研究深度
 ```
 
 ## 核心要点

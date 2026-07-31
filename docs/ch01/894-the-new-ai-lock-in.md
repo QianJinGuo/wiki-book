@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.1KB | `entities/the-new-ai-lock-in.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The new AI lock-in"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - Published Time: 2026-05-16T22:36:49-06:00 Even as models get easier to swap, the work that surrounds them is not. Developers already move among Claude Code, Codex, Gemini, and local models with less c
 ## 相关实体

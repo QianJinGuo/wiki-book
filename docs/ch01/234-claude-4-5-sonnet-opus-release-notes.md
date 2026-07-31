@@ -9,23 +9,22 @@
 
 ```mermaid
 mindmap
-  root(("Claude 4/5 Sonnet & Opus Rel…"))
+  root(("Claude 45 Sonnet Opus Release Notes"))
     发布时间线
     Sonnet 5 核心升级
       关键能力
       行业应用
       可用性
-    Opus 4.7 核心升级
+    Opus 47 核心升级
       新 Tokenizer
       视觉增强
-      新 Reasoning Effort：xhi…
-      自适应思考（Adaptive Thinking）
+      新 Reasoning Effort xhigh
     Benchmark 跃进
     第三方验证
-    Sonnet 4.6 定位
-      Sonnet 4.6 性能基准
-    Haiku 4.5 定位
-      Haiku 4.5 vs 其他层级延迟对比
+    Sonnet 46 定位
+      Sonnet 46 性能基准
+    Haiku 45 定位
+      Haiku 45 vs 其他层级延迟对比
     模型层级与适用场景对照
 ```
 

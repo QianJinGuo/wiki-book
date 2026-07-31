@@ -15,15 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("腾讯研究院 2026 Q2 Agent 产业回顾——Ag…"))
-    一、Agent 成为通用入口
-    二、垂直行业批量装配
-    三、Tokenmaxxing 运动的教训
-    四、组织瓶颈取代技术瓶颈
-    五、技能严重重复
-    六、Multi-Agent 合作瓶颈
-    七、Loop Engineering 与自进化
-    八、CPU 重归算力中心
+  root(("腾讯研究院 2026 Q2 Agent 产业回顾Agent"))
+    一 Agent 成为通用入口
+    二 垂直行业批量装配
+    三 Tokenmaxxing 运动的教训
+    四 组织瓶颈取代技术瓶颈
+    五 技能严重重复
+    六 Multi-Agent 合作瓶颈
+    七 Loop Engineering 与自进化
+    八 CPU 重归算力中心
 ```
 
 ## 一、Agent 成为通用入口

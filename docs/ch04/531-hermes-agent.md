@@ -10,17 +10,11 @@
 ```mermaid
 mindmap
   root(("Hermes Agent"))
-    Overview
     Key Facts
-    核心架构
-      Self-Evolution（自进化）
-      记忆机制
-      Skill 机制
+    Self-Evolution 自进化
+    记忆机制
+    Skill 机制
     生态位
-    Related
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## Overview

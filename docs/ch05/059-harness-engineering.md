@@ -14,16 +14,12 @@
 ```mermaid
 mindmap
   root(("开启Harness Engineering探索之旅"))
-    核心洞察
     详细内容
     关键特征
-    深度分析
-      Harness Engineering 的概念…
-      腾讯的「出码率与提效裂开一道缝」洞察
-      两轨道 + 长期记忆的系统架构
-      关于 AI 不确定性的系统治理
-    实践启示
-    相关实体
+    Harness Engineering 的概念结晶过程
+    腾讯的「出码率与提效裂开一道缝」洞察
+    两轨道 长期记忆的系统架构
+    关于 AI 不确定性的系统治理
 ```
 
 ## 核心洞察

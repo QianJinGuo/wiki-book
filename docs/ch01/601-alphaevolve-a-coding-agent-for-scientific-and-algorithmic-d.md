@@ -15,16 +15,6 @@ AlphaEvolve 不是把 LLM 当成一个更聪明的程序员，而是把 LLM 放�
 核心判断：只要问题存在可执行、可验证、可比较的反馈回路，LLM 就可以不只"直接答题"，而是被放进一个进化系统里持续生成、评估、保留和重组更好的程序。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AlphaEvolve: A coding agent …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Alphaevolve Impact](../ch04/464-alphaevolve-impact-deepmind.html)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.html)

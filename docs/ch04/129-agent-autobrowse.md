@@ -9,16 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("浏览器 Agent 的失忆问题：Autobrowse 如…"))
-    背景：探索税（Discovery Tax）
+  root(("浏览器 Agent 的失忆问题 Autobrowse"))
+    背景 探索税 Discovery Tax
     Autobrowse 是什么
     五步学习循环
-      第一步：目标（Objective）
-      第二步：运行（Run）
-      第三步：研究（Study）
-      第四步：迭代（Iterate）
-    Craigslist 基准：$0.22 → $…
-    哪些情况不该用（自批评）
+      第一步 目标 Objective
+      第二步 运行 Run
+      第三步 研究 Study
+    Craigslist 基准 022 012
+    哪些情况不该用 自批评
     技能文件才是真正的交付物
     技能库的复利效应
     递归改进自身

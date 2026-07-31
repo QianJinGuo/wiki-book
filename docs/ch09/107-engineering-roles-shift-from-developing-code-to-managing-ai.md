@@ -11,15 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Engineering roles shift from…"))
-    相关实体
-    深度分析
-      1. '看不见的工作'为什么让生产力指标失真
-      2. Engineering role 的三层…
-      3. 为什么测量框架成为最大瓶颈
-      4. 对企业的可执行建议
-    实践启示
-    关联实体
+  root(("Engineering roles shift from"))
+    看不见的工作为什么让生产力指标失真
+    Engineering role 的三层重新定义
+    为什么测量框架成为最大瓶颈
+    对企业的可执行建议
 ```
 
 ## 相关实体

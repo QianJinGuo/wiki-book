@@ -15,12 +15,11 @@ Couchbase 的 Capella iQ 是一个 AI-powered 开发者助手，能够生成 SQL
 
 ```mermaid
 mindmap
-  root(("Couchbase Capella iQ — 多模型 A…"))
+  root(("Couchbase Capella iQ 多模型 AI 推理架构的"))
     架构设计
     模型评估框架
     关键技术决策
     未来规划
-    相关实体
 ```
 
 ## 架构设计

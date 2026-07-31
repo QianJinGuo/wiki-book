@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("SchemaFlow: Agentic Database…"))
-    深度分析
-      五阶段流水线架构
-      PDF RAG Context
-      Promptfoo 评估护栏
-      与单 Prompt 范式的对比
-    实践启示
-    相关实体
+  root(("SchemaFlow Agentic Database"))
+    五阶段流水线架构
+    PDF RAG Context
+    Promptfoo 评估护栏
+    与单 Prompt 范式的对比
 ```
 
 ## 摘要

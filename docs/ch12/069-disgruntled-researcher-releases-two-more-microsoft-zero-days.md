@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Disgruntled researcher relea…"))
-    深度分析
-      攻击者动机与背景
-      YellowKey：BitLocker 的最后防线
-      GreenPlasma：权限提升的艺术
-      泄露披露的生态影响
-    实践启示
-      企业安全团队
-      安全产品开发者
-      威胁情报视角
-    相关实体
+  root(("Disgruntled researcher releases"))
+    攻击者动机与背景
+    YellowKey BitLocker 的最后防线
+    GreenPlasma 权限提升的艺术
+    泄露披露的生态影响
+    企业安全团队
+    安全产品开发者
+    威胁情报视角
 ```
 
 ## 核心要点

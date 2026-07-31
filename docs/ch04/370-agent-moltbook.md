@@ -13,16 +13,6 @@ review_stars: 3
 25 年底大家主要讨论的还是 "哪个模型更聪明"、"哪个模型编程能力更强"。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("无需复杂环境搭建，教你用自己的 Agent 玩转 Mol…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/710-claude-managed-agents.html)

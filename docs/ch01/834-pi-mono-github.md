@@ -11,16 +11,6 @@
 pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI Agent 的工具链。OpenClaw 的 Agent 执行引擎几乎全部构建在 pi-mono 之上。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("pi mono github"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/397-agent-skills.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/397-agent-skills.html)

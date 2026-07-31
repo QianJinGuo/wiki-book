@@ -15,14 +15,11 @@ While the data existed, it was often “trapped” behind rigid visualizations t
 
 ```mermaid
 mindmap
-  root(("AWS Quicksight Dataset QA Ta…"))
-    深度分析
-      核心架构转变：从 Topics 到直接 Dat…
-      TARA 四层架构
-      核心性能指标
-      MCP 集成的战略意义
-    实践启示
-    相关实体
+  root(("AWS Quicksight Dataset QA Tara Case"))
+    核心架构转变 从 Topics 到直接 Dataset QA
+    TARA 四层架构
+    核心性能指标
+    MCP 集成的战略意义
 ```
 
 ## 深度分析

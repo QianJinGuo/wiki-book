@@ -12,16 +12,6 @@
 几十行代码就能跑起来。Demo 通了以后，确实挺有成就感。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 30 分钟手搓 Agent，到 Harness 成为…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html)

@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Development environments for…"))
-    深度分析
-      云端 Agent 环境的核心价值
-      多 Repo 环境：企业级开发的关键基础设施
-      Dockerfile 配置化的安全与效率平衡
-      Agent 主导的环境配置流程
-    实践启示
-      对开发团队
-      对平台/基础设施团队
-      对 Agent 开发/调试场景
-    相关实体
+  root(("Development environments for your"))
+    云端 Agent 环境的核心价值
+    多 Repo 环境 企业级开发的关键基础设施
+    Dockerfile 配置化的安全与效率平衡
+    Agent 主导的环境配置流程
+    对开发团队
+    对平台基础设施团队
+    对 Agent 开发调试场景
 ```
 
 ## 核心要点

@@ -14,13 +14,13 @@
 
 ```mermaid
 mindmap
-  root(("GLM-5.2: Built for Long-Hori…"))
+  root(("GLM-52 Built for Long-Horizon Tasks"))
     评估理由
-    第二来源：HuggingFace Model …
-    第 5 来源 — 华为云部署与昇腾优化
+    第二来源 HuggingFace Model Card
+    第 5 来源 华为云部署与昇腾优化
     相关
-    Interconnects 分析视角（Nath…
-      为什么是'step change'
+    Interconnects 分析视角 Nathan Lambert
+      为什么是step change
       与闭源模型的竞争定位
 ```
 

@@ -11,16 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("How Amazon Bedrock catches A…"))
-    Summary
-    Key Points
+  root(("How Amazon Bedrock catches"))
     Deep Analysis
-      1. The paradigm shift: …
-      2. The five-stage analy…
-      3. The continuous feedb…
-      4. Guardrail calibratio…
+      The paradigm shift From surface
+      The five-stage analysis pipeline
+      The continuous feedback loop as a
     Practical Insights
-    Related Entities
 ```
 
 ## Summary

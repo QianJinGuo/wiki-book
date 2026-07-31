@@ -9,22 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("AgentCore Identity: 3-legged…"))
-    核心内容
+  root(("AgentCore Identity 3-legged"))
     三个关键洞察
-      1. 为什么AI Agent需要特殊身份管理
-      2. Session binding的审计价值
-      3. ECS与AgentCore Identi…
-    深度分析
-      OAuth 2.0 Authorization…
-      Session Binding防止的两类攻击
-      ALB OIDC与Microsoft Entr…
-      Token Vault与自动刷新机制
-    实践启示
-      架构设计层面
-      安全运营层面
-      故障排查要点
-    相关实体
+      为什么AI Agent需要特殊身份管理
+      Session binding的审计价值
+      ECS与AgentCore Identity的集成
+    OAuth 20 Authorization Code
+    Session Binding防止的两类攻击
+    ALB OIDC与Microsoft Entra ID的兼容性挑战
+    Token Vault与自动刷新机制
+    架构设计层面
+    安全运营层面
+    故障排查要点
 ```
 
 ## 核心内容

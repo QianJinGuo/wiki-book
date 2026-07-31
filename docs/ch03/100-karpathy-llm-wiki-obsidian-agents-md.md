@@ -11,17 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy LLM Wiki 搭建实战——Obsi…"))
-    核心洞察：维护成本外部化
+  root(("Karpathy LLM Wiki 搭建实战Obsidian"))
+    核心洞察 维护成本外部化
     三层架构
     三大操作
     RAG vs LLM Wiki 对比
-    深度分析
-      维护成本外部化的经济原理
-      三层架构的职责分离与安全边界
-      Ingest 操作的系统性影响
-      LLM Wiki vs RAG 的范式差异
-    实践启示
+    维护成本外部化的经济原理
+    三层架构的职责分离与安全边界
+    Ingest 操作的系统性影响
+    LLM Wiki vs RAG 的范式差异
 ```
 
 ## 核心洞察：维护成本外部化

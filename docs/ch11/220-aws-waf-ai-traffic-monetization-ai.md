@@ -13,23 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("AWS WAF AI Traffic Monetizat…"))
-    背景
+  root(("AWS WAF AI Traffic Monetization"))
     行业背景
       AI Bot 流量数据
       商业痛点
-    核心能力
-      定价维度
-      支付集成
+    定价维度
+    支付集成
     关键概念
       Protection Pack
       Bot Classification 依赖
     实施流程
-    行业意义
-      内容经济的转折点
-      商业影响
-    实践启示
-    上线状态
+    内容经济的转折点
+    商业影响
 ```
 
 ## 背景

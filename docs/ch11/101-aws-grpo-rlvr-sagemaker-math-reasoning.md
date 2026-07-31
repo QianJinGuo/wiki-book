@@ -13,19 +13,15 @@ In this post, you will learn how to implement reinforcement learning with verifi
 
 ```mermaid
 mindmap
-  root(("AWS GRPO RLVR Sagemaker Math…"))
+  root(("AWS GRPO RLVR Sagemaker Math"))
     Technical overview
-    深度分析
-      RLVR双奖励机制的设计逻辑
-      GRPO的组内相对优化机制
-      QLoRA在RLVR训练中的角色
-      8-shot阈值的理论解释
-    实践启示
-      1. 何时选择RLVR而非DPO/RM
-      2. 奖励函数设计的最佳实践
-      3. GRPO超参数配置建议
-      4. 扩展到其他领域的路径
-    相关实体
+    RLVR双奖励机制的设计逻辑
+    GRPO的组内相对优化机制
+    QLoRA在RLVR训练中的角色
+    -shot阈值的理论解释
+    何时选择RLVR而非DPORM
+    奖励函数设计的最佳实践
+    GRPO超参数配置建议
 ```
 
 ## Technical overview

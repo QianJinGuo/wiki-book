@@ -16,9 +16,7 @@ Semgrep: Intercom PHP 供应链攻击 Mini-Shai-Hulud，Packagist/Composer 投�
 mindmap
   root(("Semgrep Intercom Php Security"))
     相关资源
-    深度分析
-    实践启示
-    相关实体
+    相关资源
 ```
 
 ## 摘要

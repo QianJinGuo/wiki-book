@@ -11,12 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Natural Language Autoencoder…"))
-    核心定位
-    核心技术架构：AV + AR 双模块闭环（NL…
+  root(("Natural Language Autoencoders"))
+    核心技术架构 AV AR 双模块闭环 NLA 方法
     核心指标
-    安全应用一：可解释性 — 检测未口头化的评估意识
-    安全应用二：模型审计（Auditing Task）
+    安全应用一 可解释性 检测未口头化的评估意识
+    安全应用二 模型审计 Auditing Task
     两大关键局限
     发布资源
     技术演进路径

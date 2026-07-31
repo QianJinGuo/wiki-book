@@ -25,14 +25,6 @@ This predictability makes scaling laws highly valuable in practice. A common wor
 | $\epsilon$ | Generalization error. |
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Scaling Laws, Carefully"))
-    Early days: ML loss pre…
-```
-
 ## Early days: ML loss predictability
 
 The predictability of generalization error with scale had already been investigated before scaling laws became a mainstream concept.

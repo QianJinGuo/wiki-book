@@ -15,19 +15,17 @@
 
 ```mermaid
 mindmap
-  root(("Lilian Weng Harness Engineer…"))
+  root(("Lilian Weng Harness Engineering"))
     递进链条
-      第一层：Context Engineering
-      第二层：Workflow Design
-      第三层：Self-Improving Harn…
-      第四层：Evolutionary Search
+      第一层 Context Engineering
+      第二层 Workflow Design
+      第三层 Self-Improving Harness
     与现有实体的关系
     边界与瓶颈
-    2026-07-08 补充（AI寒武纪版）
+    -07-08 补充 AI寒武纪版
       Harness 三大设计模式
       其他补充工作
       六类常见失效模式
-      关联实践
 ```
 
 ## 递进链条

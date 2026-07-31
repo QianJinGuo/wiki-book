@@ -9,8 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("腾讯CDN LEGO Harness Engineeri…"))
-    概述
+  root(("腾讯CDN LEGO Harness Engineering实战"))
     核心成果
       Nonstop项目
       效率提升数据
@@ -18,16 +17,9 @@ mindmap
     Harness Engineering五层架构
     对抗式CR
     发现的问题
-    深度分析
-      AI Coding在高风险后端的核心挑战
-      五层架构的递进逻辑
-      对抗式CR的有效性根因
-      知识资产沉淀策略
-    实践启示
-      从'能用AI'到'敢用AI'的关键转型
-      建立团队专属Skill库的路径
-      人机协作架构设计的核心原则
-      团队能力建设渐进路径
+    AI Coding在高风险后端的核心挑战
+    五层架构的递进逻辑
+    对抗式CR的有效性根因
 ```
 
 ## 概述

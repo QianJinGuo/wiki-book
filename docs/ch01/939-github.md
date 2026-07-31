@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.8KB | `entities/open-source-projects-leaving-github.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("明星开源项目，为什么开始离开 GitHub？"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 - 开源项目离开 GitHub 的驱动因素：监管风险（微软与五角大楼合作）、Copilot 训练数据争议、去中心化托管趋势

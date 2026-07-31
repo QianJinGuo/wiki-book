@@ -12,20 +12,19 @@
 ```mermaid
 mindmap
   root(("Agent Skills 终于有 UI 了"))
-    核心论点：软件「双形态」重构
-    问题：低效介入
+    核心论点 软件「双形态」重构
+    问题 低效介入
     渲染层方案对比
     两种 Widget 模式
-      预定义模板（零 token 消耗）
-      动态生成（数据驱动）
-    实战案例：Frontend-design Sk…
-      第一轮：生成初版（6 秒）
-      第二轮：加调性视觉预览
-      第三轮：加自定义品牌色
-      持久化结果
-    输出端：结果 Dashboard
-    进阶：手动配置 show_widget
-    结论：一个 Skill，两种界面
+      预定义模板 零 token 消耗
+      动态生成 数据驱动
+    实战案例 Frontend-design Skill 加设计方向面板
+      第一轮 生成初版 6 秒
+      第二轮 加调性视觉预览
+      第三轮 加自定义品牌色
+    输出端 结果 Dashboard
+    进阶 手动配置 showwidget
+    结论 一个 Skill 两种界面
 ```
 
 ## 核心论点：软件「双形态」重构

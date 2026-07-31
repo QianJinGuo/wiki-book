@@ -9,22 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Kimi Attention Residuals（Att…"))
-    一句话总结
-    核心洞察
-      问题：PreNorm 稀释
-      解法：AttnRes
-      工程折中：Block AttnRes
-    关键数据
-    技术要点
-    深度分析
-      PreNorm 稀释的数学本质
-      AttnRes 的选择性路由机制
-      Block 折中的边界效益分析
-      与既有工作的对比
-    实践启示
+  root(("Kimi Attention Residuals AttnRes"))
+    问题 PreNorm 稀释
+    解法 AttnRes
+    工程折中 Block AttnRes
+    PreNorm 稀释的数学本质
+    AttnRes 的选择性路由机制
+    Block 折中的边界效益分析
+    与既有工作的对比
     与既有知识库内容的互补
-    相关实体
 ```
 
 ## 一句话总结

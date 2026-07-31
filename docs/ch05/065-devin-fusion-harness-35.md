@@ -13,19 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Devin Fusion: 多模型路由 Harness …"))
+  root(("Devin Fusion 多模型路由 Harness 实现 35"))
     核心方法
-      Sidekick 架构：双 Agent 并行
+      Sidekick 架构 双 Agent 并行
       Sidekick 解决三大问题
-      动态会话中路由（Dynamic Mid-Ses…
-    深度分析
-      1. 模型路由的'智能保留'悖论
-      2. Sidekick 随模型变强而更优的反直…
-      3. 多模型 Harness 的兴起：单一模型…
-      4. 缓存工程是模型路由的隐藏关键
+      动态会话中路由 Dynamic Mid-Session Routing
+    模型路由的智能保留悖论
+    Sidekick 随模型变强而更优的反直觉特性
+    多模型 Harness 的兴起 单一模型时代的终结
+    缓存工程是模型路由的隐藏关键
     基准表现
-    实践启示
-    相关实体
 ```
 
 ## 摘要

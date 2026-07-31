@@ -17,20 +17,19 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic 最新博客：MCP 没死，它又来了"))
+  root(("Anthropic 最新博客 MCP 没死 它又来了"))
     核心摘要
-    01 社区批评回顾
-    02 Anthropic 的回应：三条路各有地盘
-    03 Token 解法
-      解法一：Tool Search（按需加载）
-      解法二：程序化工具调用
+    社区批评回顾
+    Anthropic 的回应 三条路各有地盘
+    Token 解法
+      解法一 Tool Search 按需加载
+      解法二 程序化工具调用
       综合效果
-    04 Cloudflare 的实践：代码编排模式
-    05 Skills 转正
-    06 MCP 的真正地盘
+    Cloudflare 的实践 代码编排模式
+    Skills 转正
+    MCP 的真正地盘
       三问题的 Anthropic 回答
       发展图景
-    深度分析
 ```
 
 ## 核心摘要

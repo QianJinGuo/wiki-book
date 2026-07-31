@@ -13,23 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Quick Research: Agent…"))
-    核心问题：科研数据整合瓶颈
-    Amazon Quick Research 核…
-    Spaces：数据组织层
-    端到端 walkthrough（罕见癌症研究案例）
-    关键设计模式（可复用）
-      1. **Plan Before Run**
-      2. **Inline Citation + …
-      3. **Statement-level Re…
-      4. **Spaces as Indexed …
-    实践启示
-    深度分析
-      1. Agentic Workflow 将'研…
-      2. Citation Provenance …
-      3. 'Plan Before Run' 是降…
-      4. Statement-level Revi…
-    相关链接
+  root(("Amazon Quick Research Agentic"))
+    核心问题 科研数据整合瓶颈
+    Amazon Quick Research 核心能力
+    Spaces 数据组织层
+    端到端 walkthrough 罕见癌症研究案例
+    关键设计模式 可复用
+      Plan Before Run
+      Inline Citation Evidence Chain
+      Statement-level Revision
+    Agentic Workflow 将研究从批次处理升级为可演进的知识系统
+    Citation Provenance 是对抗 LLM 幻觉的结构性防线
+    Plan Before Run 是降低 agentic
 ```
 
 ## 核心问题：科研数据整合瓶颈

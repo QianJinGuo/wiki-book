@@ -13,17 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("手把手：用 Hermes Skills + Karpat…"))
-    深度分析
-      核心观点
-    整体结构：三层互相喂养
-    第二步：理解 SKILL.
+  root(("手把手 用 Hermes Skills Karpathy 的"))
+    整体结构 三层互相喂养
+    第二步 理解 SKILL
     When to Use
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
 ```
 
 ## 深度分析

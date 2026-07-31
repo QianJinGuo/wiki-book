@@ -37,10 +37,10 @@ Cursor(@cursor_ai) Composer 2 is now available in Cursor.
 
 ```mermaid
 mindmap
-  root(("Cursor如何把一个通用模型，训成顶级编程 Agent"))
+  root(("Cursor如何把一个通用模型 训成顶级编程 Agent"))
     两阶段训练流程
-    第一阶段：持续预训练（Continued Pr…
-      1. 基础模型选择：Kimi K2.5
+    第一阶段 持续预训练 Continued Pretraining CPT
+      基础模型选择 Kimi K25
 ```
 
 ## 两阶段训练流程

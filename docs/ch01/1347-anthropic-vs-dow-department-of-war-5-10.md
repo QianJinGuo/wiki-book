@@ -13,23 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic vs DoW (Department…"))
-    背景
-    核心论点：开源是 5-10 年稳定均衡
+  root(("Anthropic vs DoW Department of"))
+    核心论点 开源是 5-10 年稳定均衡
     关键论据
-      1. Anthropic 供应链风险指定的信号意义
-      2. 开源模型的商业模式困境
-      3. 全球主权 AI 需求
-      4. 开源模型生态现状
-    深度分析
-      1. 'not your weights, n…
-      2. '商品化互补品'策略的临界点：万亿成本 …
-      3. 双重视角的方法论价值：技术 + 政策 =…
-      4. 主权 AI 的'商业真空'风险
-    与现有实体的差异化
-    实践启示
+      Anthropic 供应链风险指定的信号意义
+      开源模型的商业模式困境
+      全球主权 AI 需求
+    not your weights not your brain
+    商品化互补品策略的临界点 万亿成本 vs 亿万收益的数学崩塌
+    双重视角的方法论价值 技术 政策 更准确的预测
+    主权 AI 的商业真空风险
     局限性
-    相关实体
+    原始引用
 ```
 
 ## 背景

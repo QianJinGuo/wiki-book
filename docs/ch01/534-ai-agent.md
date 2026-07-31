@@ -15,14 +15,11 @@ OBI（OpenTelemetry eBPF Instrumentation）的做法是：**在 Linux 内核里�
 
 ```mermaid
 mindmap
-  root(("不改一行代码，看透 AI Agent 的每一次调用"))
-    深度分析
-      为什么 GenAI 语义约定埋点如此困难
-      eBPF 无侵入观测的技术架构
-      跨语言协程追踪
-      SSE 流式响应与 MCP 协议追踪
-    实践启示
-    相关实体
+  root(("不改一行代码 看透 AI Agent 的每一次调用"))
+    为什么 GenAI 语义约定埋点如此困难
+    eBPF 无侵入观测的技术架构
+    跨语言协程追踪
+    SSE 流式响应与 MCP 协议追踪
 ```
 
 ## 深度分析

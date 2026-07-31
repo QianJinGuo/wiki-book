@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 11.8KB | `entities/anthropic-google-agent-skills-design-patterns.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 Anthropic 到 Google：Agent S…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)

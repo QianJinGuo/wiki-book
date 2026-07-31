@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("现代浏览器内部机制：Chromium/Blink/V8 …"))
+  root(("现代浏览器内部机制 ChromiumBlinkV8 架构"))
     对 Agent Browser Use 的关键意义
     核心管线
-    多进程架构（Chromium）
+    多进程架构 Chromium
     V8 JavaScript 引擎
     安全模型
     三大引擎差异速查
     关键实践启示
-    相关实体
+    延伸资源
 ```
 
 ## 对 Agent Browser Use 的关键意义

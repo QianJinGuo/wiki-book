@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Edge AI Networking — Wi-Fi 7…"))
-    三个独有贡献
-    Technical Requirements …
-    Wi-Fi 7/8 Capabilities
+  root(("Edge AI Networking Wi-Fi 78"))
+    Technical Requirements for Edge
+    Wi-Fi 78 Capabilities
     Market Dynamics
-      Wi-Fi vs 5G/6G mmWave f…
+      Wi-Fi vs 5G6G mmWave for Edge AI
       Three Emerging Use Cases
     Vendor Ecosystem
     Source

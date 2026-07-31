@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Co-Existence and the End of …"))
-    深度分析
-      1. 从 Co-Intelligence 到 …
-      2. 'AI 喜欢什么'作为新营销维度
-      3. 写作的'分层 AI 使用'模式
-      4. Prompt Injection 伦理的觉醒
-    实践启示
-    相关实体
+  root(("Co-Existence and the End of"))
+    从 Co-Intelligence 到 Co-Existence
+    AI 喜欢什么作为新营销维度
+    写作的分层 AI 使用模式
+    Prompt Injection 伦理的觉醒
 ```
 
 ## 摘要

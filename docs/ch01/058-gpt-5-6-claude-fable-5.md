@@ -59,9 +59,9 @@ ultra模式在15分钟内就烧完Pro会员5小时限额的程度。
 
 ```mermaid
 mindmap
-  root(("GPT-5.6一发布，Claude终于舍得重置Fable…"))
-    GPT-5.6正式上线
-    ChatGPT Work登场：把目标变成完成品
+  root(("GPT-56一发布 Claude终于舍得重置Fable 5额度了"))
+    GPT-56正式上线
+    ChatGPT Work登场 把目标变成完成品
 ```
 
 ## GPT-5.6正式上线

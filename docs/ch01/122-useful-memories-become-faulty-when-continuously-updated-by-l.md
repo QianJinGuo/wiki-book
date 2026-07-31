@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Useful Memories Become Fault…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 这篇来自 UIUC Dylan Zhang 的研究是 2026 年最具实践意义的 AI Agent 基础研究之一，其核心发现对当前主流的 Agent 记忆架构提出了根本性质疑：
 **1. 核心发现：迭代生成导致知识漂移**

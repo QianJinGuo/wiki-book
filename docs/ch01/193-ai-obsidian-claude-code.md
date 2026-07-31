@@ -11,31 +11,26 @@
 
 ```mermaid
 mindmap
-  root(("开源 AI 知识管理搭档 Obsidian + Clau…"))
-    核心痛点：文件分散与混乱
+  root(("开源 AI 知识管理搭档 Obsidian Claude Code"))
+    核心痛点 文件分散与混乱
     五大集成策略
-      策略 1：独立开发者 Vault + 符号链接
-      策略 2：Vault = Claude Cod…
-      策略 3：MCP 桥接
-      策略 4：每个仓库一个 Vault
+      策略 1 独立开发者 Vault 符号链接
+      策略 2 Vault Claude Code 工作目录
+      策略 3 MCP 桥接
     解决文件混乱问题
-      步骤 1：通过   app.json   …
-      步骤 2：用正则排除文件类型
-      步骤 3：用 File Explorer++ …
-      步骤 4：关闭「检测所有文件扩展名」
+      步骤 1 通过 appjson 排除目录
+      步骤 2 用正则排除文件类型
+      步骤 3 用 File Explorer 做「硬过滤」
     插件推荐
       开发者 Vault 必备
-      Obsidian 内直接用 Claude Co…
-      MCP 插件（远程访问）
-      其他实用插件
+      Obsidian 内直接用 Claude Code 选一个
+      MCP 插件 远程访问
     Dataview 查询技巧
-      给每个   CLAUDE.md   加 f…
+      给每个 CLAUDEmd 加 frontmatter
       查询所有项目配置
-      列出所有 Claude 计划（按最近更新）
-      配合 Templater 自动生成   CL…
+      列出所有 Claude 计划 按最近更新
     Obsidian CLI 的突破性进展
     社区最佳实践
-    深度分析
 ```
 
 ##  核心痛点：文件分散与混乱

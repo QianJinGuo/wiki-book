@@ -5,17 +5,6 @@
 > 📊 Level ⭐ | 4.6KB | `entities/pipes-workos-docs.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Pipes – WorkOS Docs"))
-    深度分析
-    实践启示
-    关联阅读
-    相关实体
-```
-
 ## 核心要点
 - Pipes is an OAuth integration-as-a-service product by WorkOS 
 - 抽象掉了 token 刷新、凭证存储、OAuth 流程管理等工程负担 

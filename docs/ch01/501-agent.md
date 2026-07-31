@@ -16,13 +16,14 @@ CLI-Anything 是香港大学数据科学实验室（HKUDS）的开源项目，�
 ```mermaid
 mindmap
   root(("让 Agent 自主完成任务"))
-    深度分析
-      1. CLI 作为 Agent 与 GUI 软…
-      2. SKILL.md 是 Agent 的'工…
-      3. 元技能（Meta-Skill）：Agen…
-      4. REPL 模式 + undo/redo：…
-    实践启示
-      相关实体
+    阶段全自动流水线
+    SKILLmd Agent 可读的工具说明书
+    CLI-Hub 社区驱动的 CLI 注册表
+    真实 Demo
+    CLI 作为 Agent 与 GUI 软件的接口协议层
+    SKILLmd 是 Agent 的工具使用手册范式
+    元技能 Meta-Skill Agent 自主发现工具的起点
+    REPL 模式 undoredo Agent 长流程任务的关键支撑
 ```
 
 ## 摘要

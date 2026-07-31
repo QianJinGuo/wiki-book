@@ -9,19 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering - 让 Codi…"))
+  root(("Harness Engineering - 让 Coding"))
     核心主题
     关键内容
       Harness 工程化
       实践方法
-    深度分析
-      上下文耗尽：长程任务的根本制约
-      可续传机制：File As Progress …
-      并行执行与任务边界的三角权衡
-      多层重试：分层故障处理的成本博弈
-    实践启示
+    上下文耗尽 长程任务的根本制约
+    可续传机制 File As Progress 的设计哲学
+    并行执行与任务边界的三角权衡
+    多层重试 分层故障处理的成本博弈
     相关文章
-    相关实体
 ```
 
 ## 核心主题

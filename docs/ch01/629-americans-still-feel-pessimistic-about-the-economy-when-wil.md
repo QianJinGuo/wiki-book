@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 7.4KB | `entities/consumer-confidence-economy-cnbc.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Americans still feel pessimi…"))
-    技术洞察
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - **通胀的心理影响** — 近期高通胀的心理冲击挥之不去，消费者以峰值价格为锚点
 - **收入焦虑** — 工资增长但感觉未能跟上支出（住房、杂货）

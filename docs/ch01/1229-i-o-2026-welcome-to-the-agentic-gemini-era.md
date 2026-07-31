@@ -9,26 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("I/O 2026: Welcome to the age…"))
-    概述
+  root(("IO 2026 Welcome to the agentic"))
     规模数据
     AI 全栈概览
-      基础设施：TPU 8t 与 TPU 8i
+      基础设施 TPU 8t 与 TPU 8i
       新模型家族
       SynthID 与 AI 透明度
     Agentic 产品矩阵
-      Gemini Spark（消费者 AI 代理）
-      信息代理（Information Agents…
-      Daily Brief（个性化每日简报）
-      Ask Maps 与 Ask YouTube
-    Antigravity 2.0
+      Gemini Spark 消费者 AI 代理
+      信息代理 Information Agents in Search
+      Daily Brief 个性化每日简报
+    Antigravity 20
     产品生态规模
     技术趋势总结
-    深度分析
-      从'AI 辅助'到'AI 代理'的结构性转变
-      全栈垂直整合：Google 的结构性护城河
-      速度作为核心竞争力
-      商业策略：价格锚定与成本重构
+    从AI 辅助到AI 代理的结构性转变
+    全栈垂直整合 Google 的结构性护城河
 ```
 
 ## 概述

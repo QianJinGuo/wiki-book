@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("火山引擎 AI 搜索千万级 Agent 架构演进与实践：…"))
-    深度分析
-      从 ReAct 到 UP-ReAct：Agen…
-      Unified Policy：从'议会制'到'…
-      Context Manager：Agent 内…
-      '万物皆 Tool'的抽象能力
-    实践启示
-    相关实体
+  root(("火山引擎 AI 搜索千万级 Agent 架构演进与实践 从"))
+    从 ReAct 到 UP-ReAct Agent 架构的工程化觉醒
+    Unified Policy 从议会制到总统制的控制权重构
+    Context Manager Agent 内存管理的工程哲学
+    万物皆 Tool的抽象能力
 ```
 
 ## 摘要

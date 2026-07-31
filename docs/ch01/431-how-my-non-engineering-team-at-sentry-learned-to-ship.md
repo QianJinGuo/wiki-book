@@ -13,15 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("How my non-engineering team …"))
-    深度分析
-      触发点：CMS 不对称成为 velocity 杀手
-      迁移战果
-      增量产出（迁移后 4 个月）
-      关键基础设施：page-type Skills
-    实践启示
-    原文链接
-    相关实体
+  root(("How my non-engineering team at"))
+    触发点 CMS 不对称成为 velocity 杀手
+    迁移战果
+    增量产出 迁移后 4 个月
+    关键基础设施 page-type Skills
 ```
 
 ## 摘要

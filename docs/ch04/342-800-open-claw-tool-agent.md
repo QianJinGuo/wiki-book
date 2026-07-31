@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("800行代码实现 Open Claw 的 Tool、消息…"))
-    深度分析
-      架构哲学：反中间件的确定性追求
-      数据流全景与并发安全
-      设计取舍的代价
-      与主流 Agent 框架的对比
-    实践启示
-    架构图
-    相关实体
+  root(("行代码实现 Open Claw 的 Tool 消息总线"))
+    Tool 层 四要素抽象与零依赖设计
+    MessageBus 入站消息总线的双消费模式
+    SubagentManager 单进程并发的子 Agent 管理
+    REPL 主循环 布尔锁并发控制
+    架构哲学 反中间件的确定性追求
+    数据流全景与并发安全
+    设计取舍的代价
+    与主流 Agent 框架的对比
 ```
 
 ## 摘要

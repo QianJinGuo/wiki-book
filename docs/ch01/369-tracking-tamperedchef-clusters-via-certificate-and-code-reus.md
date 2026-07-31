@@ -9,16 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Tracking TamperedChef Cluste…"))
-    深度分析
-      1. 威胁行为体的TTPs模式
-      2. 三大集群的差异化追踪
-      3. 代码签名证书滥用的关键洞察
-      4. AI在攻击中的应用
-    实践启示
-      对安全团队的指导
-      对威胁情报的启示
-    相关实体
+  root(("Tracking TamperedChef Clusters"))
+    威胁行为体的TTPs模式
+    三大集群的差异化追踪
+    代码签名证书滥用的关键洞察
+    AI在攻击中的应用
+    对安全团队的指导
+    对威胁情报的启示
 ```
 
 ## 核心要点

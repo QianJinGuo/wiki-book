@@ -10,23 +10,18 @@
 
 ```mermaid
 mindmap
-  root(("AWS Sagemaker Capacity Aware…"))
+  root(("AWS Sagemaker Capacity Aware"))
     三个关键洞察
-      1. 实例池+优先级Fallback
-      2. 混合GPU舰队加权利用率
-      3. Multi-instance并发控制
-    与知识库的连接
-    深度分析
-      架构本质：从'绑定单一实例'到'容量抽象层'
-      容量窗口机制：VariantInstanceP…
-      模型-硬件匹配策略的双轨制
-      加权利用率：为什么聚合指标会误导扩缩容决策
-    实践启示
-      1. 优先使用Instance Pools而不…
-      2. 实例池优先级设计：同族优先，跨族兜底
-      3. 加权利用率指标的即时可用性
-      4. 异步推理+Instance Pools的…
-    相关实体
+      实例池优先级Fallback
+      混合GPU舰队加权利用率
+      Multi-instance并发控制
+    架构本质 从绑定单一实例到容量抽象层
+    容量窗口机制
+    模型-硬件匹配策略的双轨制
+    加权利用率 为什么聚合指标会误导扩缩容决策
+    优先使用Instance Pools而不是手动多Endpoint方案
+    实例池优先级设计 同族优先 跨族兜底
+    加权利用率指标的即时可用性
 ```
 
 ## 三个关键洞察

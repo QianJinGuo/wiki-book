@@ -15,14 +15,15 @@ AWS 发布的 AgentOps 参考架构，将 Agent 运维拆解为四大支柱（�
 
 ```mermaid
 mindmap
-  root(("AgentOps: Operationalize age…"))
-    深度分析
-      1. AgentOps 是 GenAIOps …
-      2. 确定性策略 + 非确定性执行的二元治理
-      3. 记忆的账号级隔离是安全刚需，也是运维负担
-      4. 评估门控从'发布前快照'变为'持续质量流'
-    实践启示
-      相关实体
+  root(("AgentOps Operationalize agentic"))
+    四大支柱
+    AgentOps 生命周期
+    关键架构决策
+    评估四层模型的工程价值
+    AgentOps 是 GenAIOps 的范式升级 而非简单延伸
+    确定性策略 非确定性执行的二元治理
+    记忆的账号级隔离是安全刚需 也是运维负担
+    评估门控从发布前快照变为持续质量流
 ```
 
 ## 摘要

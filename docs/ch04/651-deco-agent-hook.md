@@ -11,12 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("DECO — 腾讯数据工程 Agent Hook 护栏层实践"))
+  root(("DECO 腾讯数据工程 Agent Hook 护栏层实践"))
     三类治理问题
     Hook 链护栏体系
-      长文本完整性护栏（读写两侧 Offload）
-      危险操作 HITL（beforeTool Gu…
-      上下文联动闭环（Hook → state → …
+      长文本完整性护栏 读写两侧 Offload
+      危险操作 HITL beforeTool Guard
+      上下文联动闭环 Hook state Attachment
     行业定位
     关联条目
     退出

@@ -9,16 +9,10 @@
 
 ```mermaid
 mindmap
-  root(("从0到1:联想基于Strands Agent SDK的资…"))
-    概述
-    核心技术
-    深度分析
-      技术选型：为什么是Strands Agent …
-      三层架构设计亮点
-      多Agent协作模式的价值
-    实践启示
-    来源
-    相关实体
+  root(("从0到1联想基于Strands Agent"))
+    技术选型 为什么是Strands Agent SDK
+    三层架构设计亮点
+    多Agent协作模式的价值
 ```
 
 ## 概述

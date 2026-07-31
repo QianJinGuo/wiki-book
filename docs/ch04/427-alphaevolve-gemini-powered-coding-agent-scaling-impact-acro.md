@@ -13,16 +13,6 @@
 <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17"></path></svg><svg viewbox="0 0 24 24" id=arrow-back>
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AlphaEvolve: Gemini-powered …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](../ch03/035-agent.html)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.html)

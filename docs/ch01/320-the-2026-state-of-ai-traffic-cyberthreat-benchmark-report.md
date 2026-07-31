@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("The 2026 State of AI Traffic…"))
-    深度分析
-      1. AI-Powered Bot Traff…
-      2. Credential Stuffing …
-      3. Ad Fraud 的 AI 复杂度升级
-      4. Defense Automation：A…
-    实践启示
-    相关实体
+  root(("The 2026 State of AI Traffic"))
+    AI-Powered Bot Traffic 从规则规避到智能伪装
+    Credential Stuffing 的 AI 进化
+    Ad Fraud 的 AI 复杂度升级
+    Defense Automation AI 同步驱动攻防升级
 ```
 
 ## 摘要

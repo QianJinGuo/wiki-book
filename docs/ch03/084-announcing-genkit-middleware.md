@@ -10,25 +10,17 @@
 ```mermaid
 mindmap
   root(("Announcing Genkit Middleware"))
-    核心架构：三层拦截体系
+    核心架构 三层拦截体系
     预置中间件分析
-      Retry — 瞬态故障弹性
-      Fallback — 多模型韧性
-      Tool Approval — 人工在环（Hu…
-      Skills — 动态技能注入
-    深度分析
-      1. Middleware 组合顺序语义
-      2. 与传统 Web Middleware 的…
-      3. 中间件的跨语言一致性
-      4. 与主流 Agent 框架的对比
-    实践启示
-      1. 生产级应用的 Middleware 堆栈建议
-      2. 自定义 Middleware 设计原则
-      3. 调试与可观测性
-      4. 安全考量
-    相关资源
-    相关实体
-    标签
+      Retry 瞬态故障弹性
+      Fallback 多模型韧性
+      Tool Approval 人工在环 Human-in-the-Loop
+    Middleware 组合顺序语义
+    与传统 Web Middleware 的范式对比
+    中间件的跨语言一致性
+    与主流 Agent 框架的对比
+    生产级应用的 Middleware 堆栈建议
+    自定义 Middleware 设计原则
 ```
 
 ## 核心架构：三层拦截体系

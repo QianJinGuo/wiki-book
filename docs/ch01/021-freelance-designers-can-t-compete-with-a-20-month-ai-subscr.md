@@ -11,18 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Freelance Designers Can't Co…"))
-    核心观点
-    深度分析
-      1. 数据验证：市场收缩是结构性的而非周期性
-      2. Creative Compression…
-      3. Expertise Inversion …
-      4. 依然成立的五个可行定位
-    实践启示
-      给独立设计师
-      给设计工作室或代理机构
-      给企业品牌负责人
-    相关实体
+  root(("Freelance Designers Cant Compete"))
+    数据验证 市场收缩是结构性的而非周期性
+    Creative Compression Model 的三层框架
+    Expertise Inversion Trap 违反直觉的风险分布
+    依然成立的五个可行定位
+    给独立设计师
+    给设计工作室或代理机构
+    给企业品牌负责人
 ```
 
 ## 核心观点

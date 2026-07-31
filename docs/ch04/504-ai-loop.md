@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("企业 AI Loop 落地框架：五类工程对象"))
-    核心论点
-    五类工程对象（5 接口框架）
-    三层 Loop（吴恩达）
-    Loop 能力 × 企业前置条件
+  root(("企业 AI Loop 落地框架 五类工程对象"))
+    五类工程对象 5 接口框架
+    三层 Loop 吴恩达
+    Loop 能力 企业前置条件
     Loop 落地的四级路径
-    企业 AI 落地现状（Deloitte 202…
-    传统工程 × AI Loop 映射
+    企业 AI 落地现状 Deloitte 2026 报告引用
+    传统工程 AI Loop 映射
     推荐实践起点
 ```
 

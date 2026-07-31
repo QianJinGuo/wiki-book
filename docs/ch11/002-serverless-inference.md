@@ -10,17 +10,14 @@
 ```mermaid
 mindmap
   root(("Serverless Inference"))
-    相关实体
-    深度分析
-      Serverless Inference 的定…
-      性能数据的深层解读
-      多模态能力的战略价值
-      经济模型与客户增长
-    实践启示
-      何时选择 Serverless Inference
-      迁移策略建议
-      BYOM（Bring Your Own Mod…
-      监控和成本控制
+    Serverless Inference 的定位与市场逻辑
+    性能数据的深层解读
+    多模态能力的战略价值
+    经济模型与客户增长
+    何时选择 Serverless Inference
+    迁移策略建议
+    BYOM Bring Your Own Model 的长期价值
+    监控和成本控制
 ```
 
 ## 核心要点

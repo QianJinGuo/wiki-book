@@ -5,18 +5,6 @@
 > 📊 Level ⭐⭐ | 3.9KB | `entities/icon-pack-websites-designers-should-bookmark.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Icon Pack Websites Designers…"))
-    Summary
-    Notes
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## Summary
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icon-pack-websites-designers-should-bookmark.md)
 

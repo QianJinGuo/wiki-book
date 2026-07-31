@@ -9,7 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("去哪儿网 AI Coding 研发平台实践：L0-L5 …"))
+  root(("去哪儿网 AI Coding 研发平台实践 L0-L5 自动化分级"))
     核心概述
     AI Coding L0-L5 自动化分级
     Harness 四把锁
@@ -17,7 +17,6 @@ mindmap
     QunarDevCenter
     天弦 QDO
     关键经验
-    相关实体
 ```
 
 ## 核心概述

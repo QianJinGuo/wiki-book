@@ -13,15 +13,15 @@ Sebastian Cuadros 基于 LinkedIn 5306 人数据筛选出 1680 名 Anthropic 工
 
 ```mermaid
 mindmap
-  root(("Anthropic 工程团队 1680 人画像：不是博士…"))
-    一句话
+  root(("Anthropic 工程团队 1680 人画像 不是博士实验室 是"))
     核心数据
     典型工程师画像
-    Infra  Research
+    Infra Research
     薪酬亮点
     人才来源 Top 10
     学校来源 Top 5
     职级压平
+    岗位结构断裂
 ```
 
 ## 一句话

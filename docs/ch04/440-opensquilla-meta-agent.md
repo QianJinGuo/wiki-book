@@ -11,21 +11,17 @@
 
 ```mermaid
 mindmap
-  root(("OpenSquilla：Meta 开源 Agent 框架"))
+  root(("OpenSquilla Meta 开源 Agent 框架"))
     Key Research
-      OpenSquilla Launches Op…
-      Meta Skill 时代：Skill 之上的…
-    深度分析
-      1. 路由决策的分层复杂性
-      2. 四层认知架构的工程对标
-      3. 本地 embedding 的隐私-成本平衡
-      4. Syscall 隔离的容器替代方案
-    实践启示
-      1. 构建本地 Token 监控看板
-      2. 混合检索强制对齐
-      3. 三层工具执行策略落地
-      4. 热记忆自动晋升机制
-    关联阅读
+      OpenSquilla Launches Open-Source
+      Meta Skill 时代 Skill 之上的抽象层
+    路由决策的分层复杂性
+    四层认知架构的工程对标
+    本地 embedding 的隐私-成本平衡
+    Syscall 隔离的容器替代方案
+    构建本地 Token 监控看板
+    混合检索强制对齐
+    三层工具执行策略落地
 ```
 
 ## Key Research

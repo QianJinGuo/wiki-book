@@ -9,32 +9,23 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code vs Codex 上下文架构：五…"))
-    核心命题
-    Claude Code：上下文窗口是一切的边界
-      CLAUDE.md 四层结构
-      Auto Memory：LLM 驱动的记忆选取
+  root(("Claude Code vs Codex 上下文架构 五层压缩管道"))
+    Claude Code 上下文窗口是一切的边界
+      CLAUDEmd 四层结构
+      Auto Memory LLM 驱动的记忆选取
     Claude Code 五层压缩管道
-      第一层：Budget Reduction（预算…
-      第二层：Snip（片段截断）
-      第三层：Microcompact（微压缩）
-      第四层：Context Collapse（上下…
-    Codex Cloud Agent：文件系统即…
+      第一层 Budget Reduction 预算削减
+      第二层 Snip 片段截断
+      第三层 Microcompact 微压缩
+    Codex Cloud Agent 文件系统即上下文
       仓库快照注入
       实际约束
-      没有 CLAUDE.md 等效物
+      没有 CLAUDEmd 等效物
     两种策略关键差异
     执行模型差异根源
-    深度分析
-      五层管道的协同逻辑
-      '读时投影'的设计哲学
-      Codex '文件系统即上下文'的隐含成本
-      两种架构背后的认知假设
-    实践启示
-      选型建议
-      Claude Code 用户：理解 Auto …
-      Claude Code 用户：监控压缩层级
-      Codex 用户：维护项目文档
+    五层管道的协同逻辑
+    读时投影的设计哲学
+    Codex 文件系统即上下文的隐含成本
 ```
 
 ## 核心命题

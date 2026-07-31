@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 5.0KB | `entities/notion-dev-platform.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build with Notion's Develope…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Notion 的 Developer Platform 设计理念突破了传统 CRUD API 的定位，转向「Agent-First」的基础设施思维。从已披露的文档来看，Notion 没有把 API 设计成给人类开发者使用的工具，而是针对 AI Agent 的操作模式进行了专门优化——包括结构化 schema 定义、declarative sync pattern、以及将外部数据源映射到 Notion Database 的持久化游标机制。这种设计选择背后的逻辑是：未来的 Notion 使用者将越来越多的是 AI Agent 而不是人类，因此 API 的原语（primitive）应该适配 AI 的认知方式（结构化输出、确定性状态）而不是人类的交互习惯。 See also [Harness Engineering](../ch05/120-harness-engineering.html)

@@ -9,21 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek陈德里AI论文第二弹：从6分到8分，De…"))
-    深度分析
-      核心观点
-    论文背景
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了 涉及agent领域的核心技术议题。

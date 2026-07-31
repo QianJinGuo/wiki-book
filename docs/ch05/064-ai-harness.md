@@ -13,15 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("翁荔再写万字长文：AI自我改进，先从Harness开始"))
-    深度分析
-      从上下文工程到 Harness 演化的递进逻辑
-      Self-Harness：让 Harness …
-      DGM 与进化搜索的可规模化路径
-      评估：始终是绕不开的瓶颈
-    实践启示
-    相关实体
-    第 2 Source — PaperWeekly
+  root(("翁荔再写万字长文 AI自我改进 先从Harness开始"))
+    从上下文工程到 Harness 演化的递进逻辑
+    Self-Harness 让 Harness 本身成为优化对象
+    DGM 与进化搜索的可规模化路径
+    评估 始终是绕不开的瓶颈
+    第 2 Source PaperWeekly
 ```
 
 ## 摘要

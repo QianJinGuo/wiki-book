@@ -9,15 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("民生银行基于规格驱动开发（SDD）的 CodeAgent…"))
+  root(("民生银行基于规格驱动开发 SDD 的 CodeAgent"))
     背景与挑战
     关于 SDD 的认知
     开发实践
     局限性思考
     行动进阶
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 背景与挑战

@@ -23,18 +23,18 @@
 
 ```mermaid
 mindmap
-  root(("Harness 模式 6-SubAgent 实战 — 1…"))
-    1. Vibe Coding → Harnes…
-    2. 单仓重构 — Git Submodule…
-    3. 6 Sub-Agent 全流程协作
-      两个问题（Anthropic 博客提到）
-      6 个 Agent 拆分
-    4. Agent Handoff 协议
-      Bug 修复流程（has_bugs 状态）
-    5. 测试用例设计 — test-case-d…
-    6. E2E 浏览器测试 — Chrome D…
-    7. 文档与代码一致性 — /goal 自动化
-    8. 局限性与教训
+  root(("Harness 模式 6-SubAgent 实战 17哥"))
+    Vibe Coding Harness 范式转变
+    单仓重构 Git Submodule 方案
+    6 Sub-Agent 全流程协作
+      两个问题 Anthropic 博客提到
+      个 Agent 拆分
+    Agent Handoff 协议
+      Bug 修复流程 hasbugs 状态
+    测试用例设计 test-case-designer
+    E2E 浏览器测试 Chrome DevTools MCP
+    文档与代码一致性 goal 自动化
+    局限性与教训
 ```
 
 ## 1. Vibe Coding → Harness 范式转变

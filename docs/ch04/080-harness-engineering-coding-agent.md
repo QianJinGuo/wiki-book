@@ -9,8 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering: 让 Codin…"))
-    相关实体
+  root(("Harness Engineering 让 Coding"))
     核心定义
     核心关注点
       效果
@@ -24,7 +23,6 @@ mindmap
       任务拆解
       并行执行
       可续传
-      有完成条件
     理念
       任务边界清晰
       错误在最小范围内解决
@@ -33,10 +31,10 @@ mindmap
       任务粒度
       子任务的 CLI 化与并发调度
       File As Progress
-      任务状态设计
     示例
       全量 Code Review
       JS to TS 迁移
+    Harness Engineering 的本质定位
 ```
 
 ## 相关实体

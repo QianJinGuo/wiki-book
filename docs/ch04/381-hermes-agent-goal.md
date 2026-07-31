@@ -9,15 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Hermes Agent /goal 长任务运行时架构"))
+  root(("Hermes Agent goal 长任务运行时架构"))
     元信息
-    核心洞察
     四大运行时部件
     GoalState 设计要点
-    Judge 判定策略：保守优先
+    Judge 判定策略 保守优先
     fail-open 异常保护
-    与 Codex CLI / Claude Co…
-    深度分析
+    与 Codex CLI Claude Code 的关键差异
 ```
 
 ## 元信息

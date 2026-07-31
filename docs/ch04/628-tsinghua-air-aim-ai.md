@@ -13,13 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("Tsinghua AIR AIM：AI 数学家从解题到参…"))
-    核心案例：84页量子算法论文
+  root(("Tsinghua AIR AIM AI"))
+    核心案例 84页量子算法论文
     五阶段人机协同工作流
-    关键洞察
-      AI 数学能力从'解题'走向'研究'
-      AI Scientist 的工作流启示
-      与 AI Scientist 其他方案的对比
+    AI 数学能力从解题走向研究
+    AI Scientist 的工作流启示
+    与 AI Scientist 其他方案的对比
     参考文献
 ```
 

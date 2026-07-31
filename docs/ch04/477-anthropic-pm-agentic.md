@@ -10,7 +10,6 @@
 ```mermaid
 mindmap
   root(("Anthropic PM 的 Agentic 工作流"))
-    概述
     核心机制
       Claude 三件套分工
       PM 自建三个 Agent
@@ -18,10 +17,7 @@ mindmap
     Claude Managed Agents
     Memory for Managed Agents
     效率提升
-    深度分析
-    实践启示
-    相关
-```
+    相关```
 
 ## 概述
 Anthropic PM Jess Yan 在 Claude Managed Agents 上构建的 agentic 工作流——PM 自己开多个 agent 完成任务，从"等排期"变为"直接交付"。

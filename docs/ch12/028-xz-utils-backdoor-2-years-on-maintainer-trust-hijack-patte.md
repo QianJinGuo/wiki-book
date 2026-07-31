@@ -48,19 +48,15 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("xz-utils Backdoor 2 Years On…"))
+  root(("xz-utils Backdoor 2 Years On"))
     三条独有贡献
-    攻击时间线（Jia Tan）
+    攻击时间线 Jia Tan
     CVE-Driven Scanner 的结构性盲区
     三个 Practical Moves
     与 supply chain 实体的差异化
     AI Agent 时代的放大效应
     引用
-    深度分析
-      1. 社会工程攻击供应链的新范式
-      2. 单一维护者项目的系统性风险
-      3. 与 AI agent 安全的交叉影响
-      4. 后门检测的技术局限
+    社会工程攻击供应链的新范式
 ```
 
 ## 三条独有贡献

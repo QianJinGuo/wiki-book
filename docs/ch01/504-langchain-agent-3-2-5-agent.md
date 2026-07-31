@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("LangChain用Agent做销售获客，3个月转化率提…"))
-    深度分析
-      评估体系：先定义'好'，再写代码
-      国内 Agent 落地的三大误区
-      Token 经济学：Token 不是成本，是投资
-      扩散效应：从 SDR 到全公司
-    实践启示
-    相关实体
+  root(("LangChain用Agent做销售获客 3个月转化率提升25倍"))
+    痛点驱动 从真实业务问题出发
+    GTM Agent 架构 主 Agent 派活 子 Agent 干活
+    偏保守的设计哲学
+    邮件策略 Skill 化的剧本系统
+    评估体系 先定义好 再写代码
+    国内 Agent 落地的三大误区
+    Token 经济学 Token 不是成本 是投资
+    扩散效应 从 SDR 到全公司
 ```
 
 ## 摘要

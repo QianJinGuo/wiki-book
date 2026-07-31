@@ -10,14 +10,11 @@
 ```mermaid
 mindmap
   root(("AI Gateway production index"))
-    深度分析
-      1. 成本与音量的分歧映射不同的业务风险层级
-      2. Agentic Workload 正在重…
-      3. 多模型路由是规模化的标准架构，而非可选项
-      4. Provider Outage 的真实成…
-    实践启示
-      给 AI Gateway 使用者的行动建议
-    相关实体
+    成本与音量的分歧映射不同的业务风险层级
+    Agentic Workload 正在重构 AI 的成本结构
+    多模型路由是规模化的标准架构 而非可选项
+    Provider Outage 的真实成本被 SLA 掩盖了
+    给 AI Gateway 使用者的行动建议
 ```
 
 ## 核心要点

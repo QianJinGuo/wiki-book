@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Agent Evolution: Four Stages…"))
-    深度分析
-      四阶段范式演进
-      六维技术概念演变
-      核心哲学：构建确定性承载不确定性
-      与本文观察的对应关系
-    实践启示
-    相关实体
+  root(("Agent Evolution Four Stages and"))
+    四阶段范式演进
+    六维技术概念演变
+    核心哲学 构建确定性承载不确定性
+    与本文观察的对应关系
 ```
 
 ## 摘要

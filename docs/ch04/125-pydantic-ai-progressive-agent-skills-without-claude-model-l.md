@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Pydantic AI: Progressive Age…"))
-    深度分析
-      Claude Skills 的商业价值与技术限制
-      Claude 官方《Building Effe…
-      Pydantic AI 的四个核心能力
-      Pydantic AI 的三个局限性
-    实践启示
-      对使用 Claude Skills 的团队
-      对选择 Agent 框架的架构师
-      对 Pydantic AI 选型
-      对 Agent 框架设计者
-    相关实体
+  root(("Pydantic AI Progressive Agent"))
+    Claude Skills 的商业价值与技术限制
+    Claude 官方 Building Effective
+    Pydantic AI 的四个核心能力
+    Pydantic AI 的三个局限性
+    对使用 Claude Skills 的团队
+    对选择 Agent 框架的架构师
+    对 Pydantic AI 选型
+    对 Agent 框架设计者
 ```
 
 ## 摘要

@@ -9,16 +9,6 @@
 > 作者苍何（521篇原创）分享了用 Hermes Agent + Kimi K2.6 搭建 7×24h 不间断运行的 AI 研发军团的完整教程。从飞书下达需求到最终交付，市场调研、PRD、架构设计、开发、测试全部由不同 Agent 自主完成。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("万字保姆级教程：Hermes+Kimi K2.6 打造7…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Hermes Agent K2 6 Tutorial](../ch03/096-hermes-agent.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)

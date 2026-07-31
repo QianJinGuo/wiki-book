@@ -8,18 +8,6 @@
 # the anti singularity
 source: 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("the anti singularity"))
-    摘录
-    标签
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘录
 > Title: The Anti-Singularity
 URL Source: https://www.lesswrong.com/posts/k3XHZ4DjykLSfsnks/the-anti-singularity

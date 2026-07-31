@@ -16,23 +16,21 @@
 
 ```mermaid
 mindmap
-  root(("wow-harness v3：AI 开发的治理协议"))
-    一句话定位
-    设计哲学：套具比模型重要
-    5 大核心问题 + v3 解法
-      问题 1：AI 做过的事，怎么不丢？
-      问题 2：工程概念跨 session 怎么不漂移？
-      问题 3：怎么确保 AI 的产出真的做完了？
-      问题 4：怎么让 AI 不是'一个工具'而是'…
-    学术验证：ESAA 论文
+  root(("wow-harness v3 AI 开发的治理协议"))
+    设计哲学 套具比模型重要
+    大核心问题 v3 解法
+      问题 1 AI 做过的事 怎么不丢
+      问题 2 工程概念跨 session 怎么不漂移
+      问题 3 怎么确保 AI 的产出真的做完了
+    学术验证 ESAA 论文
     v3 vs 现有工具的根本区别
-      vs Claude Code（地基，非竞争）
+      vs Claude Code 地基 非竞争
       vs Superpowers
       vs Hermes Agent
-      vs OpenHands
     v3 协议的 6 大设计原则
     启示
-    v3 涵盖的 21 个模块（部分）
+    v3 涵盖的 21 个模块 部分
+    核心断言
 ```
 
 ## 一句话定位

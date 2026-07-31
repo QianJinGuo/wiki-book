@@ -13,19 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("构建 Serverless A2A 网关：Agent 发…"))
+  root(("构建 Serverless A2A 网关 Agent 发现"))
     背景与问题
     三层架构
-      管理层（Management Layer）
-      控制层（Control Layer）
-      执行层（Execution Layer）
+      管理层 Management Layer
+      控制层 Control Layer
+      执行层 Execution Layer
     A2A 协议端点
     安全考量
       后端信任模型
-      Amazon Bedrock AgentCor…
+      Amazon Bedrock AgentCore 认证细节
       私有部署
     部署
-    相关实体
 ```
 
 ## 背景与问题

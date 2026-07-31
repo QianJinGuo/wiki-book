@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Nikesh Arora 20VC 访谈：Token 定…"))
-    核心观点
-      1. Token 定价：长期将降至今天的十分之一
-      2. 模型能力严重过剩
-      3. FDE（前线部署工程师）是产品不成熟的代名词
-      4. SaaS 应用将让位于 AI 应用
+  root(("Nikesh Arora 20VC 访谈 Token 定价 FDE"))
+    Token 定价 长期将降至今天的十分之一
+    模型能力严重过剩
+    FDE 前线部署工程师 是产品不成熟的代名词
+    SaaS 应用将让位于 AI 应用
     关键引用
     与现有知识的关系
 ```

@@ -11,20 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Real-time voice agents with …"))
-    背景：构建语音 Agent 的挑战
+  root(("Real-time voice agents with"))
+    背景 构建语音 Agent 的挑战
     技术架构
       核心组件
       账户边界划分
       端到端媒体流
-      Amazon Bedrock 集成原理
-    适用场景
-      场景一：无屏幕/低注意力环境语音接口
-      场景二：大规模Inbound电话支持
+    场景一 无屏幕低注意力环境语音接口
+    场景二 大规模Inbound电话支持
     技术优势总结
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心要点

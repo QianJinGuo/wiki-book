@@ -11,31 +11,22 @@
 
 ```mermaid
 mindmap
-  root(("给 Hermes 装上显微镜：Agent 执行全知道"))
-    背景
+  root(("给 Hermes 装上显微镜 Agent 执行全知道"))
     要解决的四个核心问题
-    技术方案：OpenTelemetry 链路追踪
+    技术方案 OpenTelemetry 链路追踪
       五大优势
     可观测内容
       ReAct 结构化 Trace
-      模型调用（chat span）
-      工具调用（execute_tool span）
-      Agent 级汇总
+      模型调用 chat span
+      工具调用 executetool span
     接入部署
       前提条件
       部署步骤
       日志接入
-      验证
     总结与展望
-    深度分析
-      1. Agent 可观测性的本质挑战
-      2. OpenTelemetry + GenA…
-      3. TTFT 单独记录的工程意义
-      4. 安全审计的滞后性风险
-    实践启示
-      给 AI Infra 团队的落地建议
-      给 Agent 开发者的日常洞察
-      给平台/风控团队的治理视角
+    Agent 可观测性的本质挑战
+    OpenTelemetry GenAI Semantic
+    TTFT 单独记录的工程意义
 ```
 
 ## 背景

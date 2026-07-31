@@ -11,12 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("How to Automate AI Model Doc…"))
-    深度分析
-    Introducing the NVIDIA …
-    How the MCG toolkit wor…
-    Designed for flexibilit…
-    相关实体
+  root(("How to Automate AI Model"))
+    Introducing the NVIDIA MCG
+    How the MCG toolkit
+    Designed for
 ```
 
 ## 深度分析

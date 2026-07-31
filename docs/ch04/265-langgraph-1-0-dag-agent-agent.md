@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("LangGraph 1.0：别再用 DAG 写 Agen…"))
-    深度分析
-      DAG 的数学模型局限与 StateGraph…
-      Pregel：从图处理引擎到 Agent OS…
-      Checkpoint 与 Durable Ex…
-      LangGraph vs Microsoft …
-    实践启示
-    相关实体
+  root(("LangGraph 10 别再用 DAG 写 Agent 了 你的"))
+    DAG 的数学模型局限与 StateGraph 的突破
+    Pregel 从图处理引擎到 Agent OS 内核
+    Checkpoint 与 Durable Execution 的差距
+    LangGraph vs Microsoft Agent
 ```
 
 ## 摘要

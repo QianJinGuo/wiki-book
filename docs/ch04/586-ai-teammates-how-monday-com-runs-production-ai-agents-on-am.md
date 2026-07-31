@@ -11,13 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("AI Teammates: How monday.com…"))
-    Overview
-    Three Levels of AI Engi…
-    Architecture: Sphera Ag…
-    State, Memory and Sessions
+  root(("AI Teammates How mondaycom Runs"))
+    Three Levels of AI Engineering
+    Architecture Sphera Agent System
+    State Memory Sessions
     Five Production Retrofits
-    Morphex: Fully Autonomo…
+    Morphex Fully Autonomous
     Source
 ```
 

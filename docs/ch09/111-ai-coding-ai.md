@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("AI Coding 入门指南：如何更好地让 AI 真正帮…"))
-    深度分析
-      上下文是 AI Coding 的核心战场
-      反例分析的价值
-      幻觉管理的'重启但不归零'策略
-      Rules 的六个陷阱
-    实践启示
-    相关实体
+  root(("AI Coding 入门指南 如何更好地让 AI 真正帮你干活"))
+    AI 替代了什么 没替代什么
+    三种编程范式
+    Harness Engineering 的最小实践维度
+    Rules vs Skills 的本质区别
+    上下文是 AI Coding 的核心战场
+    反例分析的价值
+    幻觉管理的重启但不归零策略
+    Rules 的六个陷阱
 ```
 
 ## 摘要

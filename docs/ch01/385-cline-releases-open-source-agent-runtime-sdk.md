@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Cline releases open-source a…"))
-    深度分析
-      1. 重构动机：为什么'叠加'行不通
-      2. 分层 TypeScript 栈：单一职责…
-      3. Harness 升级带来的可恢复性与可迁移性
-      4. Agent Teams / Subage…
-    实践启示
-    相关实体
+  root(("Cline releases open-source agent"))
+    重构动机 为什么叠加行不通
+    分层 TypeScript 栈 单一职责的可组合架构
+    Harness 升级带来的可恢复性与可迁移性
+    Agent Teams Subagents Plugins 原生
 ```
 
 ## 摘要

@@ -11,13 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Mistral OCR 4: SOTA OCR for …"))
-    深度分析
-      OCR 范式转变：从'提取'到'理解'
-      竞品格局
-      对 RAG 系统的影响
-    实践启示
-    相关实体
+  root(("Mistral OCR 4 SOTA OCR for"))
+    结构化文档理解 而非简单文字提取
+    Benchmark 表现与局限性
+    部署与定价
+    与 Search Toolkit 集成
+    OCR 范式转变 从提取到理解
+    竞品格局
+    对 RAG 系统的影响
 ```
 
 ## 摘要

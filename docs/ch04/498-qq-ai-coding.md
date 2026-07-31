@@ -13,9 +13,9 @@ QQ 浏览器平台技术团队（腾讯 CSIG）基于 CodeBuddy Plugin 搭建了
 
 ```mermaid
 mindmap
-  root(("QQ浏览器团队经验管理系统：从AI Coding对话中提…"))
-    问题定义：经验断层
-    核心设计：从 Agent 视角定义经验
+  root(("QQ浏览器团队经验管理系统 从AI Coding对话中提纯团队经验"))
+    问题定义 经验断层
+    核心设计 从 Agent 视角定义经验
       三镜头框架
     系统架构
       管道流程

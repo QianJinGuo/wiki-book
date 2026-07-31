@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Where OpenClaw Security Is H…"))
-    深度分析
-      1. 从'验证'到'执行'：安全控制点的重新定位
-      2. Agent 供应链的结构性风险：Claw…
-      3. Prompt Fatigue 与上下文感…
-      4. 静态分析即可持续安全：GHSA 到 Op…
-    实践启示
-      对 Agent 系统开发者
-      对 Agent 用户
-      对安全研究者
-    相关实体
+  root(("Where OpenClaw Security Is"))
+    从验证到执行 安全控制点的重新定位
+    Agent 供应链的结构性风险 ClawHub 案例
+    Prompt Fatigue 与上下文感知审批
+    静态分析即可持续安全 GHSA 到 OpenGrep 规则
+    对 Agent 系统开发者
+    对 Agent 用户
+    对安全研究者
 ```
 
 ## 核心要点

@@ -11,10 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic's Zero Trust for A…"))
-    相关实体
+  root(("Anthropics Zero Trust for AI"))
     实战启示
-    上线状态 / 链接
+    上线状态 链接
 ```
 
 ## 相关实体

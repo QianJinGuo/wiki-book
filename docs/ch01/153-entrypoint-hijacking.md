@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 3.7KB | `entities/entrypointhijacking.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("EntryPoint Hijacking"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论

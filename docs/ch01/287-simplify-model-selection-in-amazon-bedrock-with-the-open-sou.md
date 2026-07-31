@@ -17,19 +17,16 @@ The [Amazon Bedrock Model Profiler](https://github.com/aws-samples/sample-bedroc
 
 ```mermaid
 mindmap
-  root(("Simplify model selection in …"))
-    Solution Overview
-      Data Sources
-      Data Pipeline Architect…
-      Key Features
-      Deployment Options
+  root(("Simplify model selection in"))
+    Data Sources
+    Data Pipeline Architecture
+    Key Features
+    Deployment Options
     Deep Analysis
-      The Model Selection Pro…
-      Architectural Excellenc…
-      Business Impact: Real-W…
-      Position in the AWS AI …
+      The Model Selection Problem
+      Architectural Excellence
+      Business Impact Real-World Use Cases
     Practical Insights
-    Related Entities
 ```
 
 ## Solution Overview

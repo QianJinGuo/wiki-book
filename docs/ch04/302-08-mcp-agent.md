@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("第 08 篇 · MCP：让 Agent 跟外部生态对接"))
-    深度分析
-      MCP 在 Agent 工具调用体系中的定位
-      MCP 的三大核心抽象能力解构
-      本地 Tools vs MCP：选择策略
-      MCP Transport 选择：stdio …
-    实践启示
-    相关实体
+  root(("第 08 篇 MCP 让 Agent 跟外部生态对接"))
+    MCP 在 Agent 工具调用体系中的定位
+    MCP 的三大核心抽象能力解构
+    本地 Tools vs MCP 选择策略
+    MCP Transport 选择 stdio vs
 ```
 
 ## 摘要

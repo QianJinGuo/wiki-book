@@ -11,28 +11,20 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Nova Forge 域定制超参调优：艺术…"))
-    概述
+  root(("Amazon Nova Forge 域定制超参调优 艺术与科学"))
     三大定制阶段
     三大超参挑战
-      1. Catastrophic Forgett…
-      2. Learning Rate 学习率
-      3. RFT Baseline 约束
+      Catastrophic Forgetting 灾难性遗忘
+      Learning Rate 学习率
+      RFT Baseline 约束
     战略决策树
       Checkpoint 选择 最影响决策
       Training Mode 选择
     关键数字锚点
     实战推荐工作流
-    深度分析
-      1. 稳定性-灵活性权衡是超参调优的核心矛盾
-      2. 学习率对数据混合的强耦合性
-      3. RFT 基线性能的双向约束机制
-      4. Checkpoint 选择决定上限，超参…
-    实践启示
-      1. 始终从服务默认值起步，特别是使用数据混合时
-      2. 用 LoRA + post-traine…
-      3. SFT 必须包含 Reasoning-I…
-      4. 数据质量优先，混合比例以 50% 为实验起点
+    稳定性-灵活性权衡是超参调优的核心矛盾
+    学习率对数据混合的强耦合性
+    RFT 基线性能的双向约束机制
 ```
 
 ## 概述

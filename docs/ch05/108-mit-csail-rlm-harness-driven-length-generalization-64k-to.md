@@ -13,11 +13,11 @@ MIT CSAIL researchers propose using the **`harness`** as an explicit variable fo
 
 ```mermaid
 mindmap
-  root(("MIT CSAIL RLM: Harness-Drive…"))
-    Core Insight: Harness a…
-    Locally In-Distribution…
+  root(("MIT CSAIL RLM Harness-Driven"))
+    Core Insight Harness as a
+    Locally In-Distribution LID Design
     Results
-    Implications for Agent …
+    Implications for Agent Systems
 ```
 
 ## Core Insight: Harness as a Generalization Variable

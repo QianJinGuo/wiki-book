@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("RFC 9958: Post-Quantum Crypt…"))
-    深度分析
-      Mosca 模型与过渡时间线
-      PQ/T 混合方案的工程挑战
-      受限设备与网络的影响
-    实践启示
-    相关实体
+  root(("RFC 9958 Post-Quantum"))
+    CRQC 威胁模型 对称 vs 非对称
+    NIST 标准化 PQC 算法
+    PQC 三大类别
+    KEM vs 传统密钥交换的根本差异
+    Mosca 模型与过渡时间线
+    PQT 混合方案的工程挑战
+    受限设备与网络的影响
 ```
 
 ## 摘要

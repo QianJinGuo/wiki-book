@@ -13,14 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("DiffusionGemma：扩散式文本生成模型（Goo…"))
-    概述
+  root(("DiffusionGemma 扩散式文本生成模型 Google"))
     关键架构特性
     适用场景 vs 局限
     与传统自回归 LLM 的核心权衡
     性能指标
-    三个独有贡献（不应合并到现有 entity）
-    相关主题
+    三个独有贡献 不应合并到现有 entity
 ```
 
 ## 概述

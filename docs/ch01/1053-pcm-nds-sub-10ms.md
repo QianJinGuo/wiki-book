@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("北大PCM忆阻器NDS芯片：sub-10ms神经动力学系统"))
+  root(("北大PCM忆阻器NDS芯片 sub-10ms神经动力学系统"))
     核心突破
     性能数据
     与现有 AI 硬件的对比
     局限性
-    相关实体
 ```
 
 ## 核心突破

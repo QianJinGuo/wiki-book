@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("一文看懂 AI 编程智能体工程化新范式：Loop Eng…"))
-    深度分析
-      从 Prompt Engineering 到 …
-      Six Core Components 的工程…
-      Worktrees：一个被低估的关键组件
-      Sub-agents 的 maker/chec…
-    实践启示
-    相关实体
+  root(("一文看懂 AI 编程智能体工程化新范式 Loop Engineering"))
+    从 Prompt Engineering 到 Loop
+    Six Core Components 的工程学意义
+    Worktrees 一个被低估的关键组件
+    Sub-agents 的 makerchecker 分离
 ```
 
 ## 摘要

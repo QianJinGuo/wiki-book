@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Control where your AI agents…"))
-    深度分析
-      AI Agent 浏览器控制的必要性
-      两层策略架构
-      自定义根 CA 的实际价值
-      策略配置的工程实践
-    实践启示
-    相关实体
+  root(("Control where your AI agents can"))
+    AI Agent 浏览器控制的必要性
+    两层策略架构
+    自定义根 CA 的实际价值
+    策略配置的工程实践
 ```
 
 ## 核心要点

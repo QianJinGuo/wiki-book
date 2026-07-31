@@ -15,14 +15,11 @@ AgentLoop 是阿里云面向企业级智能体推出的一站式自进化平台�
 
 ```mermaid
 mindmap
-  root(("阿里云刚发布的 AgentLoop 是什么？"))
-    深度分析
-      Agent 优化面临的三大核心挑战
-      MVP 五环的工程解读
-      Agent 观测与传统观测的本质差异
-      与 Hermes Agent../ch0…
-    实践启示
-    相关实体
+  root(("阿里云刚发布的 AgentLoop 是什么"))
+    Agent 优化面临的三大核心挑战
+    MVP 五环的工程解读
+    Agent 观测与传统观测的本质差异
+    与 Hermes Agent 和 Agent Harness
 ```
 
 ## 核心要点

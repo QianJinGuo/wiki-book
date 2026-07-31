@@ -12,17 +12,16 @@ In this post, you'll learn to back up and restore Amazon EKS cluster resources a
 
 ```mermaid
 mindmap
-  root(("Back up and restore your Ama…"))
+  root(("Back up and restore your Amazon"))
     Prerequisites
     Velero overview
     Tutorial
-      Set up environment vari…
-      Configure Amazon S3 and…
+      Set up environment variables
+      Configure Amazon S3 and IAM
       Install Velero
     Back up an application
     Restore an application
     Clean up
-    Conclusion
     About the authors
 ```
 

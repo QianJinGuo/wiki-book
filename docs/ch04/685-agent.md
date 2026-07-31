@@ -15,12 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("万字长文拆解 Agent 架构设计（二）：工具系统设计"))
+  root(("万字长文拆解 Agent 架构设计 二 工具系统设计"))
     核心组件
       AgentTool 接口
       三档权限分级
       子 Agent 作为普通工具
-      两阶段安全分类器
     设计原则
 ```
 

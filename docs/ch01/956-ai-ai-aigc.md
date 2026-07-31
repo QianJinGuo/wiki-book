@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.6KB | `entities/快来-和ai实战派一起ai-aigc峰会最新嘉宾阵容来了.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("快来，和AI实战派一起AI！AIGC峰会最新嘉宾阵容来了"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 
 - AIGC产业峰会嘉宾阵容报道

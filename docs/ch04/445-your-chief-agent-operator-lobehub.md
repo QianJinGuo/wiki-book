@@ -9,19 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Your Chief Agent Operator · …"))
+  root(("Your Chief Agent Operator LobeHub"))
     产品概述
       核心功能矩阵
       典型用例
-    深度分析
-      1. 'Chief Agent'范式的设计哲学
-      2. 生态规模：Marketplace 作为护城河
-      3. 'Evolve'能力：白盒记忆的意义
-      4. 开源策略：社区驱动的冷启动
-    实践启示
-      给 Agent 开发者的建议
-      给企业引入者的建议
-      给 AI 研究者的建议
+    Chief Agent范式的设计哲学
+    生态规模 Marketplace 作为护城河
+    Evolve能力 白盒记忆的意义
+    开源策略 社区驱动的冷启动
+    给 Agent 开发者的建议
+    给企业引入者的建议
+    给 AI 研究者的建议
 ```
 
 ## 产品概述

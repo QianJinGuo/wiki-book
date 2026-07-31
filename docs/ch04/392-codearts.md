@@ -15,13 +15,10 @@
 
 ```mermaid
 mindmap
-  root(("华为云码道（CodeArts）商用新版本"))
-    深度分析
-      企业级 AI 编码的两大核心矛盾
-      Skill 市场：从'AI 工具'到'AI 工…
-      Linux CLI 支持的战略意义
-    实践启示
-    关联实体
+  root(("华为云码道 CodeArts 商用新版本"))
+    企业级 AI 编码的两大核心矛盾
+    Skill 市场 从AI 工具到AI 工程平台
+    Linux CLI 支持的战略意义
 ```
 
 ## 核心要点

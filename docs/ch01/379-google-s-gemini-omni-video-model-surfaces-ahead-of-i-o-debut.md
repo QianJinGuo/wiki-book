@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Google's Gemini Omni video m…"))
+  root(("Googles Gemini Omni video model"))
     事件经过
-      意外泄露与 A/B 测试
+      意外泄露与 AB 测试
       初步用户反馈
     产品定位分析
       Nano Banana 模式的视频复刻
       分级发布策略
       作为 Agent 的定位
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心要点

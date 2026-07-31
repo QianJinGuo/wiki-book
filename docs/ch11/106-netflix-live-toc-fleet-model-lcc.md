@@ -15,23 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Netflix Live 运营体系：TOC Fleet …"))
-    BOC 广播运营中心：信号冗余架构
-    TOC Fleet Model：大规模并发运营分工
-    Live Command Center：端到端…
+  root(("Netflix Live 运营体系 TOC Fleet Model"))
+    BOC 广播运营中心 信号冗余架构
+    TOC Fleet Model 大规模并发运营分工
+    Live Command Center 端到端实时可观测性
     LOL 四级预警与事件分级体系
-    关键数据/实践启示
-    深度分析
-      1. 四代演进的核心驱动力：规模 vs 人力效率
-      2. BOC 信号冗余的航空级工程哲学
-      3. LOL 四级预警是'运营可持续性'设计
-      4. LCC 的 38M events/sec…
-    实践启示
-      1. 大规模运营团队：采用 Fleet Mod…
-      2. 直播系统：信号冗余是强制要求而非可选优化
-      3. 运营可持续性：设计分级战备而非全天候高压
-      4. 可观测性：设计'行动视图'而非'数据仪表板'
-    相关实体
+    四代演进的核心驱动力 规模 vs 人力效率
+    BOC 信号冗余的航空级工程哲学
+    LOL 四级预警是运营可持续性设计
+    LCC 的 38M eventssec 可观测性挑战
 ```
 
 ## BOC 广播运营中心：信号冗余架构

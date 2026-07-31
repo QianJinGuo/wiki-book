@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-closer-than-you-think.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Wi-Fi 8 is closer than you t…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - value=7, confidence=9, product=63
 - Technically informative Wi-Fi 8 article

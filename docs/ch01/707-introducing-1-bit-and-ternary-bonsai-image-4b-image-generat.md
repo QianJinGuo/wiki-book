@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Introducing 1-bit and Ternar…"))
-    深度分析
-      量化的'帕累托前沿'被显著外推
-      端侧激活内存比部署体积更关键
-      低比特路径必须在硬件栈里实现才有意义
-      推理 PaaS 化的反向趋势
-    实践启示
-    相关实体
+  root(("Introducing 1-bit and Ternary"))
+    量化的帕累托前沿被显著外推
+    端侧激活内存比部署体积更关键
+    低比特路径必须在硬件栈里实现才有意义
+    推理 PaaS 化的反向趋势
 ```
 
 ## 摘要

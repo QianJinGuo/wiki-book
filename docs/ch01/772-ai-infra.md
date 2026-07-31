@@ -55,14 +55,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/百度百舸-ai-infra-助力具身智能模型加速迭代.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("百度百舸 AI Infra 助力具身智能模型加速迭代"))
-    2026-07-08 补充：Cosmos 3 …
-```
-
 ## 2026-07-08 补充：Cosmos 3 全链路训练优化
 
 百度百舸团队在国产主流 GPU（无 NVLink）上对 Cosmos3-Nano-Policy-DROID 做全链路优化，效果超越官方 GB200 基准：

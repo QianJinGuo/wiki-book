@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("百度提出 Unlimited OCR：用 Referen…"))
-    深度分析
-      R-SWA 的注意力机制设计
-      DeepEncoder 与 R-SWA 的协同效应
-      窗口宽度 128 为何足够
-      工程价值：在已有模型上做手术
-    实践启示
-    相关实体
+  root(("百度提出 Unlimited OCR 用 Reference"))
+    R-SWA 的注意力机制设计
+    DeepEncoder 与 R-SWA 的协同效应
+    窗口宽度 128 为何足够
+    工程价值 在已有模型上做手术
     参考来源
 ```
 

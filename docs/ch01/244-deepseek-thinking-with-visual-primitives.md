@@ -14,28 +14,25 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek Thinking with Visua…"))
+  root(("DeepSeek Thinking with Visual"))
     发布背景
-    核心创新：视觉原语
-      解决的问题：Reference Gap（指代鸿沟）
+    核心创新 视觉原语
+      解决的问题 Reference Gap 指代鸿沟
       三件不同的事
       视觉原语的具体形式
-      范式转移
     效率对比
     压缩链路
     Benchmark 详细结果
-      计数任务：和 Gemini-3-Flash 互…
-      空间推理 + 通用 VQA：DeepSeek …
-      拓扑推理（真正的差距所在）
-      为什么 frontier 模型集体在拓扑推理上翻车
-    5阶段训练管线
-      Stage 1: Pretraining（预训练）
-      Stage 2: Specialized SF…
-      Stage 3: Specialized RL…
-      Stage 4: Unified RFT（统一…
+      计数任务 和 Gemini-3-Flash 互有胜负 整体打平
+      空间推理 通用 VQA DeepSeek 在 46 上排第一 基本打平
+      拓扑推理 真正的差距所在
+    阶段训练管线
+      Stage 1 Pretraining 预训练
+      Stage 2 Specialized SFT 专家化监督微调
+      Stage 3 Specialized RL 专家化强化学习
     数据体量
       Anti-cheat 数据设计
-    隐藏彩蛋：多语言能力
+    隐藏彩蛋 多语言能力
 ```
 
 ## 发布背景

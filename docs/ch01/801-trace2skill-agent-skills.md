@@ -12,16 +12,6 @@
 - 根据新轨迹顺序式更新 skill bank，容易把局部 lesson 直接糊到技能上，得到碎片化、局部过拟合的结果
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Trace2Skill 把\"轨迹里的局部经验\"蒸馏成…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)

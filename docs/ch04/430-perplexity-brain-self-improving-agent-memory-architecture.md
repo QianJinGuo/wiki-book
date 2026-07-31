@@ -13,18 +13,15 @@ Perplexity Brain（2026年6月发布）是一个自改进 agent 记忆系统，�
 
 ```mermaid
 mindmap
-  root(("Perplexity Brain: Self-impro…"))
-    核心设计：两个维度
-    Context Graph（上下文图）
+  root(("Perplexity Brain Self-improving"))
+    核心设计 两个维度
+    Context Graph 上下文图
     递归自改进循环
     与现有 Agent 记忆方案的差异
-    深度分析
-      '工作记忆'vs'用户记忆'是 Agent 记…
-      递归自改进循环是 Brain 的核心竞争力
-      Context Graph 的单一图结构 vs…
-      产品公告的技术细节缺失值得警惕
-    实践启示
-    局限性
+    工作记忆vs用户记忆是 Agent 记忆范式的根本分野
+    递归自改进循环是 Brain 的核心竞争力
+    Context Graph 的单一图结构 vs 模块化分层存储
+    产品公告的技术细节缺失值得警惕
 ```
 
 ## 核心设计：两个维度

@@ -9,25 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering：让 Coding…"))
+  root(("Harness Engineering 让 Coding"))
     核心定义
     三大困难点
     关键技巧
       任务粒度
       子任务 CLI 化与并发调度
       File As Progress
-      任务状态机
     真实落地案例
       全量 Code Review
       JS to TS 迁移
-    Meta-Skill：Skill for Sk…
+    Meta-Skill Skill for Skill
     核心理念
-    深度分析
-      1. 3000 行经验上限的精确推导：Toke…
-      2. CLI 化的核心价值不在并发，而在 Pr…
-      3. File As Progress 的双通…
-      4. IN_PROGRESS 残留处理的判断依…
-    实践启示
+    3000 行经验上限的精确推导 Token 消耗的量化拆解
+    CLI 化的核心价值不在并发 而在 Prompt 的确定性
 ```
 
 ## 核心定义

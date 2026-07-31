@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("State of Routing in Model Se…"))
-    深度分析
-      Objective 模式的设计智慧
-      从 Switchboard 到 Lightbu…
-      与 Envoy 生态的整合
-    实践启示
-    相关实体
+  root(("State of Routing in Model Serving"))
+    模型 Serving vs 模型 Inference 的区分
+    三大平台设计原则
+    Switchboard 架构
+    Switchboard 的演进挑战
+    Objective 模式的设计智慧
+    从 Switchboard 到 Lightbulb 的架构演进启示
+    与 Envoy 生态的整合
 ```
 
 ## 摘要

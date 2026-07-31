@@ -13,15 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Mellum 2 (JetBrains open-wei…"))
+  root(("Mellum 2 JetBrains open-weight"))
     核心架构特征
-    三个独有贡献
     与现有 code-LLM entity 的差异化
     评测覆盖
     知识库定位
-    深度分析
-    实践启示
-    来源
 ```
 
 ## 核心架构特征

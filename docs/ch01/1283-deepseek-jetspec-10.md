@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("不只DeepSeek，阶跃等开源JetSpec：大模型解…"))
-    深度分析
-      投机解码的因果-效率两难困境
-      吞吐量导向 vs 延迟导向的双路径
-      Agent 场景驱动推理效率创新
-      阶跃 Flash 模型叙事中的 JetSpec
-    实践启示
-    相关实体
+  root(("不只DeepSeek 阶跃等开源JetSpec 大模型解码提速近10倍"))
+    投机解码的因果-效率两难困境
+    吞吐量导向 vs 延迟导向的双路径
+    Agent 场景驱动推理效率创新
+    阶跃 Flash 模型叙事中的 JetSpec
 ```
 
 ## 摘要

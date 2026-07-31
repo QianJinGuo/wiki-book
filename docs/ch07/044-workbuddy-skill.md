@@ -16,13 +16,10 @@
 ```mermaid
 mindmap
   root(("我给 WorkBuddy 加浏览器 Skill"))
-    深度分析
-      1. Agent 浏览器能力的'最后一公里'问题
-      2. 从'能读网页'到'会上网'的能力跃迁
-      3. Skill Forge 的深层意义：操作…
-      4. 与 PC Agent 生态的关系
-    实践启示
-    相关实体
+    Agent 浏览器能力的最后一公里问题
+    从能读网页到会上网的能力跃迁
+    Skill Forge 的深层意义 操作模式的知识固化
+    与 PC Agent 生态的关系
 ```
 
 ## 摘要

@@ -13,9 +13,8 @@
 
 ```mermaid
 mindmap
-  root(("We Ran 250 AI Agent Evals to…"))
-    Overview
-    The Problem We Were Try…
+  root(("We Ran 250 AI Agent Evals to Find"))
+    The Problem We Were Trying to Solve
     Methodology
 ```
 

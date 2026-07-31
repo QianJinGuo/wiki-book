@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Google Workspace Updates: Sm…"))
-    深度分析
-      产品定位与市场意图
-      技术实现的关键要素
-      推出节奏与版本策略
-      竞争格局影响
-    实践启示
-      对 IT 管理员
-      对决策者
-      对迁移项目实施者
-    相关实体
+  root(("Google Workspace Updates Small"))
+    产品定位与市场意图
+    技术实现的关键要素
+    推出节奏与版本策略
+    竞争格局影响
+    对 IT 管理员
+    对决策者
+    对迁移项目实施者
 ```
 
 ## 深度分析

@@ -11,10 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("在 Amazon EKS 上构建安全的 AI Agent…"))
-    背景：AI Agent 安全事件频发
+  root(("在 Amazon EKS 上构建安全的 AI Agent 沙箱"))
+    背景 AI Agent 安全事件频发
     传统容器的隔离局限
-    EKS + Kata Containers 方…
+    EKS Kata Containers 方案核心
     部署架构与性能数据
 ```
 

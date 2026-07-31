@@ -13,17 +13,15 @@ Meta 发布了首个 Agent 驱动的图像生成模型，将 LLM 作为图像生
 
 ```mermaid
 mindmap
-  root(("Meta 首个 Agent 生图模型：LLM contr…"))
-    模型概述：Muse Image
+  root(("Meta 首个 Agent 生图模型 LLM controlled"))
+    模型概述 Muse Image
       技术架构
       推理时间扩展
       多轮编辑与社交集成
-    深度分析
-      1. LLM Controlled Gener…
-      2. 「思考越久越好」的深层意义
-      3. 社交图谱作为「上下文」的 AI 产品设计
-      4. Muse Spark 的协同联动
-    实践启示
+    LLM Controlled Generation
+    「思考越久越好」的深层意义
+    社交图谱作为「上下文」的 AI 产品设计
+    Muse Spark 的协同联动
 ```
 
 ## 模型概述：Muse Image

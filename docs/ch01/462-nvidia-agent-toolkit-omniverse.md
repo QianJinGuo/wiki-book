@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("NVIDIA Agent Toolkit + Omniv…"))
-    深度分析
-      Agent Toolkit + Omniver…
-      ovrtx、ovphysx、CAD-to-Si…
-      从'手动构建仿真场景'到'智能体自动准备仿真场…
-      '仿真就绪'作为 Agent 能力的可测量标准
-    实践启示
-    相关实体
+  root(("NVIDIA Agent Toolkit Omniverse"))
+    Agent Toolkit Omniverse 的战略意义
+    ovrtx ovphysx CAD-to-SimReady
+    从手动构建仿真场景到智能体自动准备仿真场景的范式转变
+    仿真就绪作为 Agent 能力的可测量标准
 ```
 
 ## 摘要

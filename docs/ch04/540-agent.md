@@ -13,16 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("想让 Agent 在你睡觉时继续干活？先给它排好夜班"))
-    核心问题
+  root(("想让 Agent 在你睡觉时继续干活 先给它排好夜班"))
     工程架构
     实践案例
-    深度分析
-      从 Prompt 到 Loop：Agent 工…
-      无人值守任务的四个运行时能力
-      GOAL/STATE/EVIDENCE/PER…
-      低峰窗口下的工程经济学
-    实践启示
+    从 Prompt 到 Loop Agent 工作单元的重定义
+    无人值守任务的四个运行时能力
+    GOALSTATEEVIDENCEPERMISSIONS 四件套
+    低峰窗口下的工程经济学
     关键洞见
 ```
 

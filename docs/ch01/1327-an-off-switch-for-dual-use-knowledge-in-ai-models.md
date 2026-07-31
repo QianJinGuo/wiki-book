@@ -18,14 +18,11 @@
 
 ```mermaid
 mindmap
-  root(("An off switch for dual use k…"))
-    深度分析
-      1. GRAM 的技术设计深度
-      2. 与数据过滤和 Unlearning 的对比
-      3. 安全边界上的开放挑战
-      4. 与 AI Agent 安全的关联
-    实践启示
-    相关实体
+  root(("An off switch for dual use"))
+    GRAM 的技术设计深度
+    与数据过滤和 Unlearning 的对比
+    安全边界上的开放挑战
+    与 AI Agent 安全的关联
 ```
 
 ## 摘要

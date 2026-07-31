@@ -9,14 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Sandworm Hackers Shift From …"))
-    深度分析
-      从 IT 到 OT：攻击范式的战略性转变
-      LOTL 战术的演进与危险
-      老旧漏洞链的持续价值
-      43 天警告窗口：被忽视的黄金干预期
-    实践启示
-    相关实体
+  root(("Sandworm Hackers Shift From IT"))
+    从 IT 到 OT 攻击范式的战略性转变
+    LOTL 战术的演进与危险
+    老旧漏洞链的持续价值
+    天警告窗口 被忽视的黄金干预期
 ```
 
 ## 核心要点

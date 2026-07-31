@@ -16,15 +16,15 @@
 
 ```mermaid
 mindmap
-  root(("Fable 5 的信号:Agent 开始拼 Runtim…"))
-    核心概念 1:Runtime ≠ 模型背后的基…
-    核心概念 2:Runtime Contract…
-    核心概念 3:Task Brief 9 字段模板
-    核心概念 4:能力路由 8 维度
-    核心概念 5:执行状态 — 账本而非聊天记录
-    核心概念 6:长任务适配判断表
-    核心概念 7:设计对象变了 — 8 维度 Ru…
-    核心洞察:Prompt 可复制 vs Prom…
+  root(("Fable 5 的信号Agent 开始拼 Runtime"))
+    核心概念 1Runtime 模型背后的基础设施
+    核心概念 2Runtime Contract 而非 Prompt
+    核心概念 3Task Brief 9 字段模板
+    核心概念 4能力路由 8 维度
+    核心概念 5执行状态 账本而非聊天记录
+    核心概念 6长任务适配判断表
+    核心概念 7设计对象变了 8 维度 Runtime 清单
+    核心洞察Prompt 可复制 vs Prompt 难复制
 ```
 
 ## 核心概念 1:Runtime ≠ 模型背后的基础设施

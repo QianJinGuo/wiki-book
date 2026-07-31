@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/long-running-agent-ralph-loop-harness-takeover.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("长周期 Agent 详解：从 Ralph Loop 到可…"))
-    深度分析
-      核心观点
-    太长不看
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness 涉及agent领域的核心技术议题。

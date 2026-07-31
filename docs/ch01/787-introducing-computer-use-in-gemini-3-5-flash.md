@@ -13,21 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Introducing computer use in …"))
+  root(("Introducing computer use in"))
     Core Capabilities
-      What Is Computer Use?
+      What Is Computer Use
       Architecture
       Key Technical Details
-      Use Cases
-    Comparison with Other C…
-    Implications for Agent/…
-    深度分析
-      原生多模态 vs 工具化的 Computer …
-      从 API 优先到 UI 自动化的 Agent…
-      错误恢复能力的关键性
-      安全沙箱的必要性
-    实践启示
-    Related
+    Comparison with Other Computer
+    Implications for AgentHarness
+    原生多模态 vs 工具化的 Computer Use 架构差异
+    从 API 优先到 UI 自动化的 Agent 演化路径
+    错误恢复能力的关键性
+    安全沙箱的必要性
 ```
 
 ## Core Capabilities

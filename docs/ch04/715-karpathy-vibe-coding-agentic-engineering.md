@@ -9,21 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy 最新访谈：从 Vibe Coding …"))
-    核心论点
-      Vibe Coding vs Agentic …
-      2025-2026 演进里程碑
-      Software 3.0 的关键变化
+  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
+    Vibe Coding vs Agentic Engineering
+    -2026 演进里程碑
+    Software 30 的关键变化
     三个提醒
-      1. 跨越中间层
-      2. 遵守工程纪律
-      3. 别把理解力外包出去
+      跨越中间层
+      遵守工程纪律
+      别把理解力外包出去
     关键人物与立场
     可验证性的关键作用
     关联条目
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 摘要

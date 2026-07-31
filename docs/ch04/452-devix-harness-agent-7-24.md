@@ -11,18 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("阿里 Devix Harness 运维 Agent：7×…"))
-    核心结论
+  root(("阿里 Devix Harness 运维 Agent 724"))
     痛点与设计哲学
     三层流水线架构
-    诊断引擎：6 步完整推理链
+    诊断引擎 6 步完整推理链
     分级决策引擎
-      为什么不让 Agent 直接决策？
+      为什么不让 Agent 直接决策
       五种决策动作
       三级规则降级匹配
-    规则自进化：三条并行路径
+    规则自进化 三条并行路径
     安全防护三道防线
     运维工具
+    与 Harness Engineering 理论的映射
 ```
 
 ## 核心结论

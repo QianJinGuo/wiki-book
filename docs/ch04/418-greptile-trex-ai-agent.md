@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Greptile TREX：AI 代码审查的执行引擎与 …"))
-    深度分析
-      从独立 Agent 到嵌套架构的演进
-      Artifact 即证据：从 bullet p…
-      模型无关性的工程实践
-      设计权衡
-    实践启示
-    相关实体
+  root(("Greptile TREX AI 代码审查的执行引擎与 Agent"))
+    从独立 Agent 到嵌套架构的演进
+    Artifact 即证据 从 bullet points 到多模态验证
+    模型无关性的工程实践
+    设计权衡
 ```
 
 ## 摘要

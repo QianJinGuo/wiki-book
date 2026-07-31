@@ -16,13 +16,14 @@
 ```mermaid
 mindmap
   root(("The Shape of the Thing"))
-    深度分析
-      「Shape of the Thing」的三个轴
-      Software Factory 的工程边界
-      Rolling disruption 的工程含义
-      Recursive Self-Improvem…
-    实践启示
-    相关实体
+    从 co-intelligence 到 managing AIs
+    指数曲线 Otter Test 与能力轨迹
+    四张指数曲线的多样性
+    Software Factory 激进组织实验
+    「Shape of the Thing」的三个轴
+    Software Factory 的工程边界
+    Rolling disruption 的工程含义
+    Recursive Self-Improvement 的真实含义
 ```
 
 ## 摘要

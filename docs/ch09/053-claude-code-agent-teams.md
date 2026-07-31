@@ -10,18 +10,17 @@
 ```mermaid
 mindmap
   root(("Claude Code Agent Teams 架构分析"))
-    核心结论
     三种多 agent 形态的边界
     四大架构组件
       Team Lead
       Teammates
-      Task List（协作核心）
-      Mailbox
-    Hooks：质量检查点
+      Task List 协作核心
+    Hooks 质量检查点
     Context 隔离是最大价值
     权限继承的坑
-    官方限制（不适合生产的原因）
-    设计借鉴：混合架构
+    官方限制 不适合生产的原因
+    设计借鉴 混合架构
+    Task List 的设计哲学 从聊天协调到结构化协调
 ```
 
 ## 核心结论

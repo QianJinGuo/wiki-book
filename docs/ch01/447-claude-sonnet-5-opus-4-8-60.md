@@ -13,20 +13,16 @@ Anthropic 于 2026 年 7 月发布 Claude Sonnet 5，作为 Sonnet 系列里最�
 
 ```mermaid
 mindmap
-  root(("Claude Sonnet 5 发布，性能接近 Opus…"))
+  root(("Claude Sonnet 5 发布 性能接近 Opus 48"))
     性能基准评测
       Agentic Coding 能力
       多学科推理
-      计算机使用（Computer Use）
-      第三方榜单
+      计算机使用 Computer Use
     成本分析
-    深度分析
-      Sonnet 5 的战略定位：Agentic …
-      Tokenizer 变更的成本陷阱
-      安全评估的进步
-      全平台部署策略
-    实践启示
-    相关实体
+    Sonnet 5 的战略定位 Agentic 能力下沉
+    Tokenizer 变更的成本陷阱
+    安全评估的进步
+    全平台部署策略
 ```
 
 ## 核心要点

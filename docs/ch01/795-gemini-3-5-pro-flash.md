@@ -13,16 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Gemini 3.5 Pro继续跳票，谷歌端上三款Fla…"))
+  root(("Gemini 35 Pro继续跳票 谷歌端上三款Flash模型强行交作业"))
     三款模型详解
-      Gemini 3.6 Flash：效率提升型模型
-      Gemini 3.5 Flash-Lite：高…
-      Gemini 3.5 Flash Cyber：…
-    深度分析
-      Flash 系列的策略价值
-      安全模型的审慎开放策略
-      Pro 跳票的行业信号
-    实践启示
+      Gemini 36 Flash 效率提升型模型
+      Gemini 35 Flash-Lite 高吞吐低成本模型
+      Gemini 35 Flash Cyber 安全微调模型
+    Flash 系列的策略价值
+    安全模型的审慎开放策略
+    Pro 跳票的行业信号
     相关实体链接
 ```
 
