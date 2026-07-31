@@ -32,6 +32,25 @@ AgentCore 支持 Claude Code、Codex、Kiro、Cursor CLI、OpenCode、Gemini CLI
 
 ## 实践启示
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 ### 1. 将「Agent 必须在笔记本上运行」视为技术债，而不是物理约束
 
 如果你的团队正在通过保持笔记本开盖来维持 Agent 运行，这说明你的平台基础设施还没有为 AI-native 开发流程做好准备。第一步行动是识别 Agent 运行时依赖的五个要素（shell、文件系统、代码库、依赖、凭证），然后评估哪些可以在云端实现物理隔离。 任何在本地运行 Agent 的团队都应该问自己：我们的安全边界是否真的允许 Agent 访问 GitHub credentials？答案如果是「勉强允许」或「不知道」，那么 AgentCore 或类似平台就是优先的迁移目标。

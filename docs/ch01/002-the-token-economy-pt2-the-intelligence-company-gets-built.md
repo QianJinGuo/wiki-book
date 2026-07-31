@@ -13,6 +13,27 @@
 - **CLARITY Act 进展**：2025 年数字资产市场澄清法案以 15-9 出委员会，Polymarket 定价 60% 概率年内通过，核心争议在 Section 404 的 yield 定义 
 
 ## 背景与核心论点
+
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
 本文是 Token Economy 系列的第二篇。`Part 1` 提出 tokens 本身不创造生产力，运营模型才是关键。本篇则回答：如果你的公司无法自建这套运营模型，会发生什么？
 **答案是：有人会替你建。**
 文章开篇列出四个标志性信号：

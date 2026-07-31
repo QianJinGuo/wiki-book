@@ -5,6 +5,32 @@
 > 📊 Level ⭐⭐ | 14.4KB | `entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 by awschina on 12 1月 2026 in Artificial Intelligence Permalink Share 1. 背景介绍 随着云原生技术和分布式搜索引擎的广泛应用，OpenSearch 已成为企业构建搜索和分析解决方案的重要选择。然而，OpenSearch 的使用往往面临着诸多挑战： 在运维层面 ，复杂的集群配置、繁琐的索引管理、性能调优的专业门槛，以及故障排查时需要深厚的技术积累，使得许多运维人员在日常工作中感到力不从心，难以快速响应业务需求。 在应用层面 ，从海量数据中提取有价值的信息、优化搜索性能、调整向量检索参数等任务，同样需要深入理解 OpenSearch 的查询语法和底层机制，这对开发人员和数据分析师来说也是不小的挑战。为了降低 Op
 
 ## 核心技术

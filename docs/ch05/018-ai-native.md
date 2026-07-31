@@ -14,6 +14,21 @@
 **最值得关注的不是数字，是节奏。**
 
 ## 组织的本质：2000年协调问题
+
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
 组织的演化核心在解决同一件事：**信息怎么路由**。
 
 - 罗马军团：8→80→480→5000人嵌套结构，信息路由协议化

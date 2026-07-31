@@ -12,6 +12,27 @@ WalkerYu（一起walkwalk）2026-05-27 **深度解读 Lenny's Newsletter Dan Shi
 
 ## 核心故事：30 人 = 100 人产出
 
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
+
 **Dan Shipper**（Every 公司创始人）做了个产品，全程 vibe coding，**上线后每 10 分钟崩溃一次**。让 Codex 修，修出一个新问题，再修，再生出四个。最后找来两个资深工程师用同样的 AI 工具**彻底重写了整个代码库**——他们做到了。
 
 > **他自己做不到的事，别人用同样的 AI 工具做到了。**

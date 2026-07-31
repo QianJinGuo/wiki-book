@@ -9,6 +9,32 @@
 **核心价值：** Skill 本质是"知识注入"——不生成新工具，而是把指令文本注入 LLM 上下文，让 LLM 用已有工具执行指令。模式选择决定了知识如何组织、触发条件如何声明、执行流程如何控制。
 
 ## 5 种核心设计模式
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 ### 模式 1：线性流程（Linear）
 **适用：** 有明确步骤的操作（部署、安装、迁移）
 **结构：** Prerequisites → Quick Start（Step 1→2→3）→ Fallback → Troubleshooting

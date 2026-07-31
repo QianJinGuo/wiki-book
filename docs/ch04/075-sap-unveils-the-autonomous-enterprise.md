@@ -28,6 +28,21 @@ SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Busines
 
 ## SAP Autonomous Suite：50+ 领域专属助理
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 SAP Autonomous Suite 是部署在 Business AI Platform 之上的自主运营层，赋予 SAP 现有业务应用执行端到端流程的 AI 能力 。
 
 ### 领域覆盖

@@ -18,6 +18,26 @@
 
 ## 1. 范式跃迁：从 DDD + 配置化到面向 Skills 编程
 
+```mermaid
+graph TB
+    subgraph "记忆分层"
+        WM[工作记忆<br/>上下文窗口] --> SM[短期记忆<br/>Session级]
+        SM --> LM[长期记忆<br/>跨Session]
+    end
+    LM --> VDB[向量数据库<br/>Embedding检索]
+    LM --> KB[知识库<br/>结构化存储]
+    subgraph "RAG 流程"
+        Q[查询] --> RET[检索] --> RK[重排序] --> CT[上下文注入]
+    end
+    VDB --> RET
+    KB --> RET
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef rag fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WM,SM,LM,VDB,KB mem
+    class Q,RET,RK,CT rag
+```
+
+
 ### 1.1 传统范式的天花板
 
 过去应对业务变化的经典策略是 **DDD 分层 + 配置化**：通过领域建模拆分业务能力，通过配置参数驱动行为差异。这套模式在以人为主的传统研发模式下有效，但面对高频定制化需求时，**配置化的参数空间爆炸，SPI 扩展点变成了"每次都要写的代码"**——DDD 实现了架构解耦，但没有解决重复编码的问题。

@@ -12,6 +12,25 @@
 
 ## 核心论点
 
+```mermaid
+graph LR
+    subgraph "威胁模型"
+        ATK[攻击者] --> VEC[攻击向量]
+        VEC --> TGT[目标系统]
+    end
+    subgraph "防御层"
+        WAF[WAF/网关] --> IDS[入侵检测]
+        IDS --> RBAC[权限控制]
+        RBAC --> AUD[审计日志]
+    end
+    VEC --> WAF
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK,VEC,TGT threat
+    class WAF,IDS,RBAC,AUD defense
+```
+
+
 > 真正的难点在长尾。spec 从没想过的边缘情况，只会在生产环境里一个错误日志接一个错误日志地冒出来。**LFD 会快进这条长尾**。
 
 **LFD 会快进这条长尾**。**如果你能一开始就拿到真实的 expected-output examples（"好结果长什么样"）**，你就可以在发布前做 soak：几百个边缘情况在一次优化运行里打到智能体身上，而不是等一个季度的 bug report 慢慢滴下来。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]

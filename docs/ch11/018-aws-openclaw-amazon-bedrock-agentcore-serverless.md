@@ -21,6 +21,25 @@ feed_name: AWS China Blog
 * * *
 
 ## 七、配置消息渠道
+
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
 基础设施和运行时都部署完了，现在需要把 IM 渠道的消息推送接到我们的 [Amazon API Gateway](https://aws.amazon.com/cn/api-gateway/) 上。这一步对应的是 Refactor 中"消息接入"维度的改造 — 传统 OpenClaw 的 Gateway 直接监听端口，现在改为通过 webhook 回调的方式接入。
 本步骤至少选一个渠道配置。
 选哪个渠道？Telegram 配置步骤最少；飞书适合国内企业环境但步骤多。本节先讲 Telegram，飞书见后半部分。

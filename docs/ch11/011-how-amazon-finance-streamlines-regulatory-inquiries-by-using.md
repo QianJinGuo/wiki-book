@@ -19,6 +19,25 @@ Processing these regulatory inquiries involves reviewing documentation, extracti
 In this post, we demonstrate how Amazon FinTech teams are using [Amazon Bedrock](<https://aws.amazon.com/bedrock/?nc2=type_a>) and other AWS services to build a scalable AI application to transform how regulatory inquiries are handled. Each team using this solution creates and maintains its own dedicated knowledge base, populated with that team's specific documents and reference materials.
 
 ## **Challenges**
+
+```mermaid
+graph LR
+    subgraph "威胁模型"
+        ATK[攻击者] --> VEC[攻击向量]
+        VEC --> TGT[目标系统]
+    end
+    subgraph "防御层"
+        WAF[WAF/网关] --> IDS[入侵检测]
+        IDS --> RBAC[权限控制]
+        RBAC --> AUD[审计日志]
+    end
+    VEC --> WAF
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK,VEC,TGT threat
+    class WAF,IDS,RBAC,AUD defense
+```
+
 The scale and complexity of managing regulatory inquiries presented several interconnected challenges:
 **Knowledge fragmentation and retrieval complexity**
 Regulatory inquiries require synthesizing information from thousands of historical documents. These documents exist in various formats (PDF, PPT, Word, CSV) and contain domain-specific terminology. Teams needed a way to quickly locate relevant precedents and supporting information across this vast corpus while maintaining accuracy and regulatory compliance.

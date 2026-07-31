@@ -40,6 +40,27 @@ Subagents 正好卡在这两个问题中间。它的价值倒不在于让系统�
 * * *
 
 ##  同一条线索
+
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
 这两个月翻 Claude Code 相关的讨论，会看到不少表面不同、底子相近的经验。
 Kaxil Naik 有条长帖讲得很扎实。他是 Apache Airflow 的 PMC member 和 core committer，也在 Astronomer 做工程管理。他现在的工作流里，Skills、Hooks、MCP、CLI、Subagents、Agent teams 都在用。
 帖子里他没有去比哪个模型最强，结论反而落在一句话上：Harness matters more than the model。

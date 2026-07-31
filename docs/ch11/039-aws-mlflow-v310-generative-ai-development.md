@@ -14,6 +14,25 @@ Observability improvements include more granular trace filtering and search, ric
 These improvements coupled with SageMaker AI provide an enterprise-grade generative AI infrastructure, making it straightforward to track experiments, monitor generative AI performance, and maintain governance across AI applications at scale.
 
 ## Getting started with SageMaker AI MLflow App v3.10
+
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
 For new users, creating a SageMaker AI MLflow App is straightforward through the [SageMaker Studio console](<https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-launch.html>), AWS CLI, or API. The default configuration automatically provisions MLflow 3.10, giving you immediate access to all the latest capabilities.
 You can get started with fully managed MLflow 3.10 on Amazon SageMaker AI MLflow Apps through the [AWS Management Console](<https://aws.amazon.com/console/>), [AWS Command Line Interface](<https://aws.amazon.com/cli/>) (AWS CLI), or [API](<https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_mlflow_app.html>).
 

@@ -8,6 +8,21 @@
 YC 总裁 Garry Tan 的 OpenClaw 一周内两次失败：日历查询和时区计算。两次都是 Agent 有现成工具却选择自己推理——该用脚本的地方用了模型。Garry Tan 的解法是 skillify：一套 10 步检查清单，将每次失败固化为确定性测试，让同样的错误结构上不可能再发生。
 
 ## 两次失败的核心机制
+
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
 ### 失败 1：传感器失效
 3,146 个本地日历文件已索引，grep 100ms 内能找到答案。Agent 却绕了五分钟远路：调用 live calendar API → 被拒 → email search → 嘈杂无结论 → 再调 API → 再被拒 → 最后才搜本地。
 **根因**：工作分类错位。日历 grep 是确定性工作（deterministic work），同样输入同样输出，不需要模型。但 Agent 在判断空间（latent space）里完成这件事——启动推理、发起 API、解释结果，而一个三行脚本 100ms 就够了。

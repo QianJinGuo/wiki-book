@@ -18,6 +18,27 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)
 
 ## 组织为何存在：两千年的协调问题
+
+```mermaid
+graph TB
+    subgraph "Agent 架构"
+        IN[输入/意图] --> PL[规划器<br/>Plan]
+        PL --> EX[执行器<br/>Execute]
+        EX --> OB[观察<br/>Observe]
+        OB -->|"反思"| PL
+    end
+    subgraph "基础设施"
+        MEM[记忆<br/>跨Session状态]
+        SKL[技能<br/>可复用能力]
+        TL[工具/MCP<br/>外部操作]
+    end
+    PL & EX --> MEM & SKL & TL
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef infra fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB core
+    class MEM,SKL,TL infra
+```
+
 把视角拉远来看，组织的演化已持续两千年，本质始终在解决同一个问题：信息如何路由 。
 罗马军团把军队拆成 8→80→480→5000 人的嵌套结构，这是把信息路由协议化——每一层都有人聚合下层、向上传递。1806 年普鲁士被拿破仑击败后重建的"总参谋部"，是中层管理的雏形：一群专门做信息整合和决策预演的人 。1840 年代美国铁路从军队借用这个结构，画出世界上第一张组织架构图——为了避免火车相撞 。Taylor 的科学管理把金字塔做到极致；战后矩阵组织、Spotify Squad、Holacracy、Valve 扁平化，都是各种修补 。
 这两千年里有一件事没变：组织演化的核心约束是人的"管理跨度"——一个人能直接管的下属在 3 到 8 之间 。这个数字不是文化决定的，是人这个生物的硬限制。所以所有组织的形状，本质上都是在这个限制上做的妥协 。

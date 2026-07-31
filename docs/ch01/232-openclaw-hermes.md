@@ -14,6 +14,28 @@ OpenClaw和Hermes都还在路上——各自回答了4个重要问题，但都�
 
 ## OpenClaw四大设计亮点
 
+```mermaid
+graph TB
+    subgraph "协作模式"
+        L["Leader<br/>编排者"] --> W1["Worker 1"]
+        L --> W2["Worker 2"]
+        L --> W3["Worker 3"]
+    end
+    subgraph "通信"
+        MSG[消息队列<br/>异步]
+        A2A[A2A协议<br/>Agent间]
+        MCP[MCP<br/>工具调用]
+    end
+    W1 & W2 & W3 --> MSG
+    L --> A2A
+    W1 & W2 --> MCP
+    classDef role fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef proto fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L,W1,W2,W3 role
+    class MSG,A2A,MCP proto
+```
+
+
 | 设计 | 解决的问题 | 核心机制 |
 |------|---------|---------|
 | 多协议可插拔契约 | 平台锁定 | Channel 25+ Adapter，统一Plugin SDK |

@@ -10,6 +10,32 @@
 随后，我把这些方法应用到了长时间自主编码（long-running autonomous coding）上，并继承了我们早期 harness 工作中的两个经验：第一，把构建任务拆解成可处理的小块；第二，使用结构化工件（structured artifacts）在不同会话之间交接上下文。最终结果是一个由 planner、generator 和 evaluator 组成的三代理架构，它能够在持续数小时的自主编码会话中产出内容丰富的全栈应用。
 
 ## 为什么"天真实现"行不通
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 我们此前已经展示过，harness 设计会对长时间运行的 agentic coding 效果产生显著影响。在更早的一次实验中，我们使用了一个 initializer agent 把产品规格拆解成任务清单，再由一个 coding agent 按"每次实现一个功能"的方式完成任务，并通过工件交接在不同 session 之间延续上下文。更广泛的开发者社区也逐渐收敛到了类似的洞见，比如 Ralph Wiggum 方法，就是通过 hooks 或脚本让 agent 持续处于迭代循环中。
 但有些问题始终没有消失。任务一旦复杂起来，agent 仍然很容易随着时间推移而逐渐偏航。在拆解这个问题时，我们观察到两种常见失效模式。
 第一种，是模型在上下文窗口逐渐被填满时，往往会在长任务中失去连贯性（参见我们关于 context engineering 的文章）。有些模型还会表现出"context anxiety（上下文焦虑）"：当它们接近自己认为的上下文上限时，就会过早开始收尾。context reset（上下文重置）——也就是彻底清空上下文窗口、重新启动一个新 agent，并配合一个结构化交接文档，把前一个 agent 的状态和下一步计划一起传过去——可以同时解决这两个问题。

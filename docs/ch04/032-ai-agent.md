@@ -243,6 +243,32 @@ Goal-Driven 的五个前提（目标清晰、边界清晰、状态可见、过�
 3. **脚手架 > 模型的结论是情境依赖的**：当模型能力成为瓶颈时（例如需要更复杂的推理），模型升级的优先级会上升。这不是一个绝对原则，而是资源分配的经验法则。
 
 ## Related entities
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 - [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
 - [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路
 

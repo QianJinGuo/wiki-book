@@ -22,6 +22,27 @@
 
 ## 历史脉络：从 Mamba 到 Hybrid
 
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
+
 **2023 年 12 月**：Mamba 和 Striped Hyena 引发"我们是否需要全 attention"的讨论。但早期模型有几个问题：
 - 难实现（tricky implementations）
 - 开源工具问题

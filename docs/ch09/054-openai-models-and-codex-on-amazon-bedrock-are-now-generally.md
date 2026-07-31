@@ -40,6 +40,27 @@ Codex is the OpenAI coding agent for AI-powered software development. More than 
 
 ## **What's  next**
 
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
+
 During our expanded partnership announcement, we introduced Amazon Bedrock Managed Agents, powered by OpenAI. Coming soon, it will let you deploy production-ready agents built on the OpenAI agent harness, delivering faster execution, sharper reasoning, and reliable steering of long-running tasks. Every agent will operate with its own identity, log every action for auditability, and run with all model inference on Amazon Bedrock. To stay up to date, sign up through the [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html).
 
 We will continue expanding the OpenAI capabilities available on Amazon Bedrock as new advances arrive. That includes Daybreak, the OpenAI vision for changing how software is built and defended. Daybreak, which includes cyber models and Codex Security, is designed to help cyber defenders identify vulnerabilities, review code for risk, and guide remediation across the development lifecycle. When Daybreak becomes available on Bedrock, security teams will be able to adopt it through the governance and operational frameworks they already use on AWS.

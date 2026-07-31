@@ -458,6 +458,32 @@ Agent 修复自己的 bug 这一场景看似惊艳，但作者清醒地指出：
 Goal-Driven 本质上是一种**有限自治**：在清晰的目标、边界、状态、留痕和权限约束下，Agent 可以自主推进而不需要人实时介入。这代表了 AI Agent 从"工具"向"协作者"的转变。
 
 ## Related entities
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 - [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
 - [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
 - 十年老技术开发的 AI Agent 探索之路

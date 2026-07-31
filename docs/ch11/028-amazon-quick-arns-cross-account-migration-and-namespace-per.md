@@ -20,6 +20,25 @@ In this post, we cover the structure of Amazon Quick ARNs and provide a practica
 
 ## A note on naming
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 Amazon Quick is the service that you use today, but ARNs and API endpoints still use “quicksight” as the service identifier. We keep this for compatibility with existing AWS Identity and Access Management (IAM) policies, automation, and integrations across customer environments.
 
 Throughout this post, you see ARNs like:

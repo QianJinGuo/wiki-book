@@ -33,6 +33,27 @@ DeepSeek V4 的 CSA/HCA 压缩的是序列维度本身（每 128 token 压缩为
 
 ## 实践启示
 
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
+
 1. **架构选型时优先评估长上下文效率**：评估新模型时，不仅看 benchmark 分数，还需关注 KV Cache 规模、Attention FLOPs 和上下文长度支持，尤其在 Agent 和推理场景下。
 
 2. **不同场景适配不同注意力优化方案**：GQA（适合大多数生产部署，平衡精度与效率）、MLA（适合云端高吞吐长上下文）、CSA/HCA（适合超长上下文，1M+ token）、CCA（适合训练效率优先场景）。

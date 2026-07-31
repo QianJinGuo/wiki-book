@@ -33,6 +33,27 @@
 在采用AI编程助手的团队中，开发者报告的主要痛点不再是AI生成代码的速度和质量，而是"等待人类反馈"和"协调多人协作"，这说明协作本身已经成为了新的瓶颈。
 
 ## 二、在Agent时代，传统的"研发资源组织形式"也是效率的阻碍
+
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
 ### 2.1 代码和代码是分离的
 当一个 Agent 需要实现一个端到端的功能时，它面临的第一个挑战不是"如何写代码"，而是"代码在哪里"。客户端代码在一个仓库，前端代码在另一个仓库，后端服务分散在多个微服务仓库，SDK 又有独立的版本管理。每个仓库都有自己的分支策略、CI 流程、代码规范。Agent 必须在这些仓库之间来回切换，每次切换都意味着上下文的丢失和重建。更关键的是，这些仓库之间的依赖关系往往没有显式声明，Agent 无法通过程序化的方式理解"修改这个 API 会影响哪些前端页面"。
 

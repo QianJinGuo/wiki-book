@@ -12,6 +12,32 @@
 
 ## 核心定位
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 **问题**：CMS 2.0 接入配置涉及一系列参数和步骤（账号 ID、workspace、region、LicenseKey、Endpoint、serviceName、serviceType、attributes 等），6 步操作多个参数传递，对**非高频使用 CLI 的运维人员门槛较高**。
 
 **解法**：将完整 CLI 操作知识封装为 Skill，**核心思路 = 将 CLI 操作流程转化为 AI Agent 可执行的结构化工作流**。用户无需记忆命令和参数，只需用自然语言描述需求。

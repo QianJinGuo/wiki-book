@@ -31,6 +31,27 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 
 ## 实践启示
 
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
+
 1. **边缘物理 AI 优先选择 MoE 架构**：在边缘部署 AI 时，MoE 是突破功耗和延迟约束的关键——今天就应开始评估 Qwen3 MoE 在目标嵌入式平台上的适配性和专家路由效率。
 
 2. **利用混合推理架构实现场景自适应**：Nemotron 2 Nano 的 `/think` / `/no_think` 模式切换能力，可直接应用于需要同时支持深度推理和即时响应的车载和机器人产品设计。

@@ -223,6 +223,25 @@ LASTNAME
 *   [Cyber Crime](https://hackread.com/category/latest-cyber-crime/)
 
 ## [Baltimore' 911 CAD system hacked; remained suspended for 17 hours](https://hackread.com/baltimore-911-cad-system-hacked-suspended/)
+
+```mermaid
+graph LR
+    subgraph "威胁模型"
+        ATK[攻击者] --> VEC[攻击向量]
+        VEC --> TGT[目标系统]
+    end
+    subgraph "防御层"
+        WAF[WAF/网关] --> IDS[入侵检测]
+        IDS --> RBAC[权限控制]
+        RBAC --> AUD[审计日志]
+    end
+    VEC --> WAF
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK,VEC,TGT threat
+    class WAF,IDS,RBAC,AUD defense
+```
+
  The 911 dispatch system of Baltimore became the target of hack attack over the weekend. As per Pugh…
 [by Waqas](https://hackread.com/author/hackread/)
 

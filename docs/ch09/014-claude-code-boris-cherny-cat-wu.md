@@ -12,6 +12,32 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 1. **验证比指令更重要**：Boris 学到的最重要经验——每次 Claude 犯错，不要告诉它下次怎么做，而是让它把经验写进 CLAUDE.md 或做成 Skill，「如果你能做到这点，Claude 就能一直跑下去」
 2. **自我验证是 Agent 超越工具的关键时刻**：Opus 4 刚发布时，Claude 已经能够打开 Claude CLI，在 bash 里自己测试自己写的功能——这标志着 Agent 从「执行单元」变成「自包含的执行系统」
 3. **Routines 让 Claude 从同步工具变成异步基础设施**：当 Claude 可以监听 GitHub issues 并自动提交修复 PR 时，工程师的角色从「执行者」变成「编排者」

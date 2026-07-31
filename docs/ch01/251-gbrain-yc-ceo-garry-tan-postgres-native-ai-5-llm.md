@@ -10,6 +10,26 @@ Garry Tan 本人用 GBrain 运行自己的日常 Agent：17888 个页面、4383 
 整套项目仅用 12 天完成开发。
 
 ## 与 GStack 的关系
+
+```mermaid
+graph TB
+    subgraph "记忆分层"
+        WM[工作记忆<br/>上下文窗口] --> SM[短期记忆<br/>Session级]
+        SM --> LM[长期记忆<br/>跨Session]
+    end
+    LM --> VDB[向量数据库<br/>Embedding检索]
+    LM --> KB[知识库<br/>结构化存储]
+    subgraph "RAG 流程"
+        Q[查询] --> RET[检索] --> RK[重排序] --> CT[上下文注入]
+    end
+    VDB --> RET
+    KB --> RET
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef rag fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WM,SM,LM,VDB,KB mem
+    class Q,RET,RK,CT rag
+```
+
 - **GStack**：教 Agent 怎么写代码（7 万+ Star，每天 3 万开发者使用）
 - **GBrain**：教 Agent 怎么记事和思考
 两个项目相互独立，可单独使用，也可组合。`hosts/gbrain.ts` 是连接两者的桥梁——GStack 的编码 Skill 在动手写代码前会先查 GBrain 脑子，确认之前是否讨论过或决定过什么。

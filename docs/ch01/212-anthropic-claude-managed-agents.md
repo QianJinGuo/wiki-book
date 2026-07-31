@@ -8,6 +8,26 @@
 本文介绍 Anthropic 正式开放 Claude Managed Agents 平台，系统性拆解其四大新功能模块：Managed Agents（四核心抽象）、Multiagent Sessions（多 Agent 协作）、Outcomes Loop（结果驱动自我评估）、Webhooks（异步通知）、Dreams（记忆整理）。Anthropic 的战略意图是将 Claude 从"调用模型"转变为"能代你把事情做完的系统"。
 
 ## 四大新功能
+
+```mermaid
+graph TB
+    subgraph "记忆分层"
+        WM[工作记忆<br/>上下文窗口] --> SM[短期记忆<br/>Session级]
+        SM --> LM[长期记忆<br/>跨Session]
+    end
+    LM --> VDB[向量数据库<br/>Embedding检索]
+    LM --> KB[知识库<br/>结构化存储]
+    subgraph "RAG 流程"
+        Q[查询] --> RET[检索] --> RK[重排序] --> CT[上下文注入]
+    end
+    VDB --> RET
+    KB --> RET
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef rag fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WM,SM,LM,VDB,KB mem
+    class Q,RET,RK,CT rag
+```
+
 ### 1. Managed Agents 四核心概念
 | 概念 | 含义 |
 |------|------|

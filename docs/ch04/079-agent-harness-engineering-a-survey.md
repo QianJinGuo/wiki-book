@@ -72,6 +72,26 @@ survey 指出一个值得注意的产业演化趋势：从 agent frameworks 到 
 五个 open problems 中，trace-native failure diagnosis 和 reliable state in long-running agents 具有最高的工程紧迫性。前者对应着当前 observability 工具虽然广泛部署但离线 evaluation 能力严重不足的现状，后者则是长程 agent 任务可靠性的核心瓶颈。adaptive simplification 作为第五个问题，虽然具有长期战略价值，但在当前模型能力仍在快速提升的阶段，其优先级相对较低。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    subgraph "记忆分层"
+        WM[工作记忆<br/>上下文窗口] --> SM[短期记忆<br/>Session级]
+        SM --> LM[长期记忆<br/>跨Session]
+    end
+    LM --> VDB[向量数据库<br/>Embedding检索]
+    LM --> KB[知识库<br/>结构化存储]
+    subgraph "RAG 流程"
+        Q[查询] --> RET[检索] --> RK[重排序] --> CT[上下文注入]
+    end
+    VDB --> RET
+    KB --> RET
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef rag fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WM,SM,LM,VDB,KB mem
+    class Q,RET,RK,CT rag
+```
+
 **对于 harness 设计者**：优先关注 Execution environment 和 Lifecycle & orchestration——这两个层次在开源生态中最为成熟，也是大多数 agent 系统首先遇到的工程瓶颈。Context & memory management 虽然关键，但建议优先考虑嵌入式方案而非独立组件，等待该层次的标准化接口成熟。
 **对于平台工程师**：以 cost-quality-speed trilemma 和 capability-control tradeoff 为核心度量维度设计系统。避免针对单一指标（如单纯降低 latency 或单纯提升 quality）的局部优化——harness 变更必须作为系统级变更进行测试。同时，在设计 pipeline 时预留 observability 和 governance 的接入点，而非事后补救。
 **对于评估和验证团队**：Verification & evaluation 当前在开源生态中已有 21 个主要项目，覆盖相对完整。但关键缺口在于 trace-native failure diagnosis——现有的评估方案多依赖事后 log 分析而非实时轨迹质量判断。建议投入资源建立以 trace 为核心对象的 evaluation 基础设施。

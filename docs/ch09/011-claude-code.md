@@ -14,6 +14,34 @@ Claude Code 已在生产环境中运行于数百万行的大型单体仓库、�
 
 ## 如何在大型代码库中导航
 
+```mermaid
+graph TB
+    subgraph "五扩展点 Harness"
+        CM["CLAUDE.md<br/>上下文文件"] --> HK["Hooks<br/>生命周期钩子"]
+        HK --> SK["Skills<br/>可复用能力"]
+        SK --> PL["Plugins<br/>第三方扩展"]
+        PL --> MC["MCP<br/>工具协议"]
+    end
+    subgraph "导航方式"
+        AG["Agent式搜索<br/>实时遍历文件系统"] 
+        RG["RAG 检索<br/>嵌入索引(可能过时)"]
+    end
+    CM --> AG
+    subgraph "辅助能力"
+        LSP["LSP 集成<br/>类型检查/跳转"]
+        SA["子 Agent<br/>并行委派"]
+    end
+    SK --> LSP
+    PL --> SA
+    classDef ext fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef nav fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef aux fill:#d1fae5,stroke:#059669,color:#064e3b
+    class CM,HK,SK,PL,MC ext
+    class AG,RG nav
+    class LSP,SA aux
+```
+
+
 Claude Code 导航代码库的方式与软件工程师相同：遍历文件系统、读取文件、使用 grep 精确定位所需内容，并跟踪代码库中的引用。它在开发者本地机器上运行，不需要构建、维护或上传代码库索引到服务器。
 
 ### Agent式搜索 vs RAG

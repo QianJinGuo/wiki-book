@@ -15,6 +15,21 @@
 **结论：** AI第一次在科研竞赛中以完全无人干预的方式击败人类。 ]]   ^["[Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prime-intellect-auto-nanogpt-opus-2930.md)"]
 
 ## Key Behavioral Observations: Opus vs Codex
+
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
 Opus 4.7 和 Codex（GPT 5.5）展现出截然不同的"性格缺陷"：   ^["[Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prime-intellect-auto-nanogpt-opus-2930.md)"]
 | 维度 | Opus 4.7 | Codex (GPT 5.5) |
 |------|---------|----------------|

@@ -8,6 +8,21 @@
 
 ## Summary
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 AI-generated phishing emails represent a new class of cyber threat — grammatically perfect, contextually accurate, and personalized to the target using OSINT. Traditional rule-based filters that rely on detecting typos, generic salutations, or mismatched domains are ineffective against these attacks. Amazon Bedrock provides a behavioral analysis framework that uses foundation models combined with sender baseline tracking, contextual grounding, and Amazon Bedrock Guardrails to detect AI-generated phishing at the behavioral level. This creates a multi-stage analysis pipeline that evaluates word choice, communication style deviations, and contextual appropriateness of requests.
 
 ## Key Points

@@ -8,6 +8,29 @@
 本文来自百度Geek说，作者网盘主端团队，从认知层、工具层、实战层三个层面系统讲解如何有效使用AI Coding。核心理念：**上下文是AI Coding的核心竞争力**——模型只是原材料，工具决定上下文质量，Harness Engineering决定团队规模化复用的能力。
 
 ## AI 到底替代了什么？
+
+```mermaid
+graph LR
+    subgraph "AI 编程工具矩阵"
+        CC["Claude Code<br/>自主编程"]
+        CX["Codex CLI<br/>任务委派"]
+        CU["Cursor/Windsurf<br/>辅助编程"]
+        OT["Qoder/Trae<br/>桌面 Agent"]
+    end
+    subgraph "编程范式"
+        V1["Vibe Coding<br/>氛围驱动"] --> V2["Agentic Coding<br/>自主循环"]
+        V2 --> V3["Loop Engineering<br/>设计循环"]
+    end
+    CC & CX --> V2
+    CU --> V1
+    OT --> V2
+    V3 --> CC & CX
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef paradigm fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class CC,CX,CU,OT tool
+    class V1,V2,V3 paradigm
+```
+
 **AI 替代的是：** 机械重复的编码动作（样板代码、CRUD、格式转换）；低价值的信息检索（查 API 文档、查语法）；简单的逻辑拼接。
 **AI 没有替代的是：** 理解需求背后的业务意图；做架构决策和技术选型；组织上下文、识别边界条件；对生成结果的质量判断与把控。
 **谁能更快、更准确地组织上下文，谁的 AI 生产效率就越高。** 这是一项新的核心技能，而不是可选项。

@@ -19,6 +19,27 @@ Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safe
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
+
 **1. Agentic AI的核心是specialized models的协同栈，而非单一超大模型**
 
 文章明确指出："If it's just a bigger model in the same chat window, it's not agentic." NVIDIA Nemotron 3的策略是让Super（长context推理）、Content Safety（多模态安全）、VoiceChat（实时语音）、Nano Omni（原生omni理解）各司其职，通过NeMo工具链整合检索、工具调用、评估和judge模型。这种分工模式解决了"context explosion"（token量是标准chat的15x）和"thinking tax"（每步推理都消耗资源）的问题，让每个模型专注最高效的任务。

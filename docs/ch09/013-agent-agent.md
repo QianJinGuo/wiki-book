@@ -10,6 +10,35 @@ AI 小老六（WeChat MP）2026-06 提出的 **业务 Agent 落地方法论**—
 
 ## 第一性原理：通用 Agent 已经在做的，团队不要重做
 
+```mermaid
+graph TB
+    subgraph "通用 Agent 基座"
+        BASE["Codex / Claude Code<br/>任务理解/代码/工具/协作"]
+    end
+    subgraph "业务增强层"
+        BK["业务知识<br/>术语/模板/验收标准"]
+        BT["内部工具<br/>API/CLI/MCP"]
+        BR["流程规则<br/>约束/确认/回滚"]
+        BP["权限边界<br/>可见范围/操作授权"]
+        BE["评测集<br/>回归/指标/归因"]
+        BO["线上观测<br/>日志/trace/告警"]
+    end
+    BASE --> BK & BT & BR & BP & BE & BO
+    subgraph "三步落地"
+        S1["1. 跑裸基座 baseline"] --> S2["2. 补短板增强"]
+        S2 --> S3["3. MVP 闭环 + 增量评测"]
+    end
+    BK & BT & BR --> S2
+    BE & BO --> S3
+    classDef base fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef aug fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef step fill:#d1fae5,stroke:#059669,color:#064e3b
+    class BASE base
+    class BK,BT,BR,BP,BE,BO aug
+    class S1,S2,S3 step
+```
+
+
 ### 通用 Agent 擅长的 vs 团队要补的（6 维能力分工表）
 | 能力域 | 通用 Agent 已经擅长 | 团队必须补上 |
 |--------|--------------------|--------------|
