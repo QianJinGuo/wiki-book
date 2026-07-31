@@ -15,22 +15,39 @@ Claude Code 源码泄露之后，Zhi.Yuan（SooKool）与 AI 一起分析，拆�
 
 ```mermaid
 graph TB
-    subgraph Main["单线程主循环"]
-        S[组装 Prompt] --> C[调用模型]
-        C --> D{检测 tool_use?}
-        D -->|是| E[StreamingToolExecutor 并行执行]
-        D -->|否| F[流式输出文本]
-        E --> G{API 中断?}
-        G -->|是| H[墓碑消息 TombstoneMessage]
-        G -->|否| S
-        H --> S
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph Hooks["Hook 审查系统"]
-        PH[Prompt Hook<br/>Sonnet 单步判断]
-        AH[Agent Hook<br/>Haiku 多步验证]
-        PH -->|exit=2| |一票否决|
-        AH -->|exit=2| |一票否决|
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 Claude Code 的设计哲学是「把失败一定会发生当成设计前提，而不是异常」。StreamingToolExecutor 的核心机制是：模型流式输出时，只要检测到 tool_use JSON block 就立即启动工具执行，不等模型说完 ^。只读操作最多 10 个并行，写操作排队串行 ^。更关键的是「墓碑消息」机制：API 中断时给每个孤儿工具调用生成错误占位，中断消息标记为 TombstoneMessage，保证消息流不断裂 ^。这种设计不追求消除失败，而是让系统在面对故障时仍能保持状态完整性和可调试性 ^。

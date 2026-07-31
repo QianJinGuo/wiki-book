@@ -8,17 +8,39 @@
 
 ```mermaid
 graph TB
-    AG[Agent] --> TB[Tool Bus]
-    TB --> FT[Function Tool]
-    TB --> MT[MCP Tool]
-    subgraph "MCP"
-        MCS[Server] --> RES[资源/工具]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    MT --> MCS
-    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class AG,TB,FT,MT t
-    class MCS,RES m
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 从代码到分子系列：一场由 AI 驱动的 EGFR 抑制剂发现之旅 — 深度融合 AWS Bedrock与 Claude Code/Claude Agent Skills，生命健康行业的科学活动探微 by awschina on 09 2月 2026 in Industries Permalink Share 传统药物研发的"三座大山" 在深入介绍本文主题之前，让我们先直面药物研发领域的残酷现实： 时间成本：漫长的研发周期 从靶点发现到临床试验，一个新药的平均研发周期长达 10-15年 早期药物发现阶段（靶点验证→先导化合物筛选→优化）就需要 3-5年 化学家需要手动检索文献、下载数据、分析化合物性质、绘制结构图，每个步骤都是时间黑洞 经济成本：天文数字的投入 一个新药的平均研发成本高达 26亿美元 （数据来源：Tufts CSDD，2020） 其中约30%的费用花在早期药物发现阶段的"试错"上 大量资金浪费在低成功率的化合物筛选中（成功率不足5%） 技能壁垒：多学科交叉的复杂性 药物化学家需要掌握：化学信息学（RDKit）、分子对接（AutoDock）、数据分析（Python）、文献管理（EndNote） 不同工具之间数据格式不兼容，需要手动转换（如SDF→PDB→MOL2） 知识孤岛问题严重：化合物数据库（ChEMBL）、基因突变数据库（COSMIC）、文献数据库（PubMed）分散在不同平台，无法自动关联 从痛点到突破：Claude Agent Skills的解决方案 这正是本文的核心关注点： 如何用一句提示词（prompt），让AI自动完成上述所有工作？ 本文将详细记录如何驱动Claude Agent Skills完成一次完整的EGFR抑制剂药物发现流程——从数据库挖掘、结构-活性关系分析，到分子生成、虚拟筛选，再到文献综述和报告生成。 传统流程需要反复切换工具、手动处理数据的"苦力活"，现在可以交给AI一键完成。 这不仅是一次技术实践，更是对AI如何革新科学研究范式的深刻思考。让我们开始这段旅程。

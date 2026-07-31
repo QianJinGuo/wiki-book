@@ -14,17 +14,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[API Gateway]
-    GW --> SVC[服务层]
-    SVC --> DB[数据层]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
-    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class LB,GW,SVC,DB i
-    class AGT,SB a
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 Broadcast Operations Center（BOC）是直播事件的核心指挥舱，从场馆接收完整制作信号后进行信号接入、检查、 conditioning、字幕处理、图形插入和广告管理。BOC 使用 hub-and-spoke 架构，通过 SMPTE 2022-7 无缝切换（双独立网络路径）和 SRT 贡献系统实现信号传输的高冗余。场馆端要求三路完全独立的传输路径（主备光纤 + 卫星 + 企业互联网 + SRT），所有硬件使用双路独立电源（UPS 保护），并要求在每次播出前执行 FACS/FAX 设施检查验证音视频同步、字幕和备用切换器输入。

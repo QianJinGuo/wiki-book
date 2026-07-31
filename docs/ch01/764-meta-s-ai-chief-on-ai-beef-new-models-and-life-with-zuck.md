@@ -15,15 +15,39 @@ Alex Wang，Meta AI 负责人，此前是 Scale AI 的联合创始人兼 CEO。 
 
 ```mermaid
 graph TB
-    Q[查询] --> R[检索]
-    R --> K[重排序]
-    K --> C[上下文注入]
-    C --> LLM[生成]
-    subgraph "存储"
-        VDB[向量库]
-        KB[知识库]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    R --> VDB & KB
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 Meta 近期发布了新一代模型 **Muse Spark**，这是 Wang 入职后首个对外公布的成果。 该模型以语音模式（Voice Mode）和 Meta Glasses 为载体对外展示。 业界对 Meta 能否追上竞争对手仍有疑问，但 Muse Spark 被视为 Meta AI 复兴的第一个可见成果。

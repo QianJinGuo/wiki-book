@@ -13,11 +13,33 @@ Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTar
 ## 实践启示
 
 ```mermaid
-graph LR
-    OBS[可观测性] --> GRD[护栏]
-    GRD --> ORC[编排]
-    ORC --> AG[Agent]
-    AG -->|"反馈"| OBS
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 1. **在评估邮件 SaaS 服务的安全合规性时，明确询问密钥管理架构**：如果服务提供商声称支持"加密"但保留解密能力，则该加密仅保护传输层，而非内容层。对于需要真正内容加密的场景（如医疗、金融行业的敏感通信），应选择客户自管理密钥的方案。

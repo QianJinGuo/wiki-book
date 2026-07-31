@@ -30,51 +30,39 @@ AgentScope Java 1.1.0 通过四项核心能力回应上述挑战：
 
 ```mermaid
 graph TB
-    subgraph "调用方 (Caller)"
-        C[HTTP/gRPC 请求]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-
-    subgraph "HarnessAgent"
-        H[ReActAgent 封装]
-        CH[WorkspaceContextHook<br/>推理前注入]
-        MH[MemoryFlushHook<br/>推理后沉淀]
-        MC[MemoryConsolidator<br/>周期合并]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-
-    subgraph "RuntimeContext"
-        RC[SessionId + UserId + AgentId]
-        IS[IsolationScope]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-
-    subgraph "Workspace"
-        AG[AGENTS.md<br/>人格定义]
-        MEM[MEMORY.md<br/>精炼记忆]
-        KNOW[knowledge/<br/>领域知识]
-        SKL[skills/<br/>技能脚本]
-        SA[subagents/<br/>子Agent规格]
-        HIST[agents/&lt;agentId&gt;/<br/>会话历史]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-
-    subgraph "AbstractFilesystem"
-        AF[read/write/ls/grep<br/>统一接口]
-        LF[LocalFilesystemSpec]
-        RF[RemoteFilesystemSpec]
-        SF[SandboxFilesystemSpec]
-    end
-
-    C --> H
-    H --> CH
-    H --> MH
-    MH --> MC
-    CH --> RC
-    CH --> AG
-    CH --> MEM
-    CH --> KNOW
-    MH --> HIST
-    RC --> IS
-    AF --> LF
-    AF --> RF
-    AF --> SF
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 > [!architecture]

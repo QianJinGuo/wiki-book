@@ -6,6 +6,38 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((Agent核心架构))
+    推理模式
+      ReAct
+      Plan-and-Execute
+      反思循环
+    规划器
+      任务分解
+      目标层级
+      动态重规划
+    执行器
+      工具调用
+      代码执行
+      沙箱隔离
+    观察与反馈
+      环境感知
+      结果验证
+      错误恢复
+    Agent框架
+      OpenAI Agents SDK
+      LangGraph
+      CrewAI
+      AutoGen
+    自主性等级
+      人工审批
+      人机协作
+      全自主
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

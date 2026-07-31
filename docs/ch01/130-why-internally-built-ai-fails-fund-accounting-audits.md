@@ -14,13 +14,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[Gateway]
-    GW --> SVC[服务]
-    SVC --> DB[数据]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 **AI 在基金会计中面临的是审计架构问题，而非性能问题。** COSO 2026 年生成式 AI 指引与 PCAOB AS 2201 共同将 AI 审计标准明确为两个核心问题：①能否证明 AI 看了什么（输入的可验证性）；②能否证明系统与上季度运行的是同一个（可重现性）。这两个问题对任何通用聊天界面包装的内部 AI 都是结构性挑战：会话历史可编辑、模型静默漂移、输出非确定性、缺乏版本控制。

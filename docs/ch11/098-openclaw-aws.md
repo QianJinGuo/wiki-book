@@ -7,15 +7,33 @@
 ## 概述
 
 ```mermaid
-graph LR
-    OBS[可观测性] --> GRD[护栏]
-    GRD --> ORC[编排]
-    ORC --> AG[Agent]
-    AG -->|"反馈"| OBS
-    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class OBS,GRD,ORC h
-    class AG a
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文探讨如何将 OpenClaw 从个人 AI 助手转型为面向客户的服务Agent。围绕五个核心问题展开：会话隔离（dmScope 配置实现多客户 session 独立）、多渠道接入（Web Widget 与消息平台的身份关联）、安全模型（tools.deny 硬约束 + Bedrock Guardrails 内容过滤的双层防护）、知识库注入（Bootstrap 文件 + Amazon Bedrock Knowledge Bases 的 RAG 检索）、以及客户记忆的局限与演进方向。部署架构基于 AWS，采用 ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计，通过

@@ -4,16 +4,39 @@
 
 ```mermaid
 graph TB
-    subgraph Control["控制二分法"]
-        FF_D[前馈×计算: 类型检查/CLI默认参数]
-        FF_S[前馈×语义: 架构说明/Skill准入]
-        FB_D[反馈×计算: 测试/lint/静态分析]
-        FB_S[反馈×语义: LLM judge/人工review]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    FF_D -->|便宜稳定| EARLY[尽量前移]
-    FF_S --> EARLY
-    FB_D -->|关键节点| LATE[留给闸门]
-    FB_S --> LATE
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 > 📊 Level ⭐⭐ | 18.2KB | `entities/martin-fowler-ai-rd-harness-nondeterminism.md`

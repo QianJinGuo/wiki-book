@@ -8,13 +8,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[Gateway]
-    GW --> SVC[服务]
-    SVC --> DB[数据]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 > AWS China Blog 2026-06-12 案例研究：车载视频 AI 厂商 Waylens 把分散在 N 台 EC2 上的 OpenClaw 多智能体平台迁移到 Amazon EKS + CRD + Operator 三层架构。核心创新是 **把平台自身运维交给 agent 自管理**——Admin agent 负责跨 agent 升级编排，Rex（Backup EKS Operator）在 Admin 故障时接管，巡检/升级/故障恢复全 agent 化。配套 aws-samples/sample-your-opc-eks-agents 一键部署仓库。

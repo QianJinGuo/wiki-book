@@ -32,27 +32,39 @@ Harness 按自己的节奏重试，队列按自己的条件重试，HTTP 层管�
 
 ```mermaid
 graph TB
-    subgraph Primitives["三原语"]
-        W[Worker — 任何连接的进程]
-        F[Function — 带标识符的工作单元]
-        T[Trigger — 声明式触发机制]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    W -->|注册| F
-    W -->|绑定| T
-    F --> T
-    
-    subgraph Participants["参与者"]
-        TS[TypeScript API]
-        PY[Python ML Pipeline]
-        RS[Rust 微服务]
-        AG[Agent]
-        BR[浏览器]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    
-    Participants -->|全部是 Worker| W
-    
-    style AG fill:#9cf,stroke:#333
-    style W fill:#f9f,stroke:#333
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 一旦我意识到这一点，我和我非常出色的团队就清楚了：我们可以用这个抽象来构建一个后端。这远不只是学术练习。我们发现，这个抽象在 agentic 世界以及更广泛的场景里都有非常实际的价值，因为它完整封装了"后端"的执行上下文。于是我们构建了 iii，让每个人都能使用这个抽象。
 iii 的工作方式正如上面所说：

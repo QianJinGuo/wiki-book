@@ -31,10 +31,39 @@ source_url: https://mp.weixin.qq.com/s/LIjNSJOVlsYoqnzoxjRYaw
 
 ```mermaid
 graph TB
-    AG[Agent] --> TB[Tool Bus]
-    TB --> FT[Function]
-    TB --> MT[MCP]
-    MT --> MCS[Server]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
+    end
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 **重复 CRUD 是"复制粘贴综合症"的典型症状。** 文章指出了一个在 FastAPI/SQLAlchemy 项目中极其普遍的问题：每个实体（User、Product、Order）都维护一个 Repository 类，其中 save、get、update、delete 的实现几乎完全相同，唯一变化的是实体类型、ORM 模型类型和实体-模型映射三样东西。当业务逻辑需要修改时，开发者在8个仓库里改8遍，漏改一个就是 Bug。这是典型的 DRY（Don't Repeat Yourself）原则被忽视后的技术债累积。

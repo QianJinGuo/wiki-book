@@ -46,14 +46,33 @@
 ## 深度分析
 
 ```mermaid
-graph LR
-    PROB[问题] --> SOL[解决方案]
-    SOL --> MKT[市场验证]
-    MKT --> GROW[增长飞轮]
-    GROW --> REV[收入]
-    REV -->|"再投入"| SOL
-    classDef s fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class PROB,SOL,MKT,GROW,REV s
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 ### 方法论范式转移：从"快速试错"到"智能验证"

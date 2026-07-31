@@ -12,30 +12,39 @@ AI 小老六（WeChat MP）2026-06 提出的 **业务 Agent 落地方法论**—
 
 ```mermaid
 graph TB
-    subgraph "通用 Agent 基座"
-        BASE["Codex / Claude Code<br/>任务理解/代码/工具/协作"]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "业务增强层"
-        BK["业务知识<br/>术语/模板/验收标准"]
-        BT["内部工具<br/>API/CLI/MCP"]
-        BR["流程规则<br/>约束/确认/回滚"]
-        BP["权限边界<br/>可见范围/操作授权"]
-        BE["评测集<br/>回归/指标/归因"]
-        BO["线上观测<br/>日志/trace/告警"]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    BASE --> BK & BT & BR & BP & BE & BO
-    subgraph "三步落地"
-        S1["1. 跑裸基座 baseline"] --> S2["2. 补短板增强"]
-        S2 --> S3["3. MVP 闭环 + 增量评测"]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    BK & BT & BR --> S2
-    BE & BO --> S3
-    classDef base fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef aug fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef step fill:#d1fae5,stroke:#059669,color:#064e3b
-    class BASE base
-    class BK,BT,BR,BP,BE,BO aug
-    class S1,S2,S3 step
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 

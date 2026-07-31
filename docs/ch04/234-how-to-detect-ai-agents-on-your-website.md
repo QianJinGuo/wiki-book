@@ -51,14 +51,33 @@ This guide covers AI agent detection through identity, network, browser, and beh
 ## 深度分析
 
 ```mermaid
-graph LR
-    IN[输入] --> TH[思考<br/>Thought]
-    TH --> AC[行动<br/>Action]
-    AC --> OB[观察<br/>Observation]
-    OB -->|"循环"| TH
-    TH --> OUT[输出]
-    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class IN,TH,AC,OB,OUT core
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 AI 代理流量检测已形成四个层次的信号体系：**身份层**通过 User-Agent 字符串和爬虫签名库识别自声明的 Bot，如 GPTBot、ClaudeBot 等，局限性在于可被轻易伪造；**网络层**通过 IP 声誉、ASN 分析（数据中心 vs. 住宅）、TLS 指纹（JA3/JA4）以及 IP 地理位置与浏览器时区/语言的一致性交叉验证来识别伪装流量；**浏览器层**通过自动化框架残留物（如 Playwright/Puppeteer 的 `cdc_` 前缀）、Canvas/WebGL/Audio API 一致性检测、硬件 plausibility 校验来发现模拟环境；**行为层**则通过打字速度、页面导航间隔、表单填写模式、鼠标移动轨迹和点击位置来构建访客行为画像，单一信号不足以定论，但多个信号叠加能构建出难以伪造的 profile 。

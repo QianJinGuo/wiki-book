@@ -15,15 +15,39 @@ Square 于 2026 年 5 月 11 日发布 Square for Drive-Thru，定位为面向�
 
 ```mermaid
 graph TB
-    Q[查询] --> R[检索]
-    R --> K[重排序]
-    K --> C[上下文注入]
-    C --> LLM[生成]
-    subgraph "存储"
-        VDB[向量库]
-        KB[知识库]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    R --> VDB & KB
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 Square 进入 drive-thru 赛道本质上是一次"场景补全"。Square 的核心用户群是中小型餐厅，但在 QSR 领域，drive-thru 是占比最高的销售渠道（约占 QSR 总营收的 60-70%），而 Square 在这一场景的存在感最弱。通过推出专用的 drive-thru 解决方案，Square 将自己的覆盖范围从"堂食+外卖+线上"扩展到了"堂食+外卖+线上+drive-thru"的全渠道。

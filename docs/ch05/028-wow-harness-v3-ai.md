@@ -15,20 +15,39 @@
 
 ```mermaid
 graph TB
-    subgraph V3["wow-harness v3 治理协议"]
-        TL[事件时间线: 唯一真相源] --> CG[概念图: 工程概念生命周期]
-        CG --> V[双层验证: 自检+cross-validator]
-        V --> AUTO[自动扩张图: 协议驱动调度]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph Lifecycle["概念生命周期"]
-        CRE[创建] --> MOD[修改]
-        MOD --> REP[被替换]
-        REP --> RET[退役]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    AUTO -->|事件触发| SPAWN[自动spawn新session]
-    SPAWN -->|无状态| CAPSULE[上下文胶囊]
-    
-    style V3 fill:#e8f5e9
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 **"AI 写得越多，我维护它越累"** —— 不是 AI 不够聪明，是它每次都重新发明你之前已经建立过的约定。v3 用**协议 + 物理拦截 + 事件溯源**解决这个问题。

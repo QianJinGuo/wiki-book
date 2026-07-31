@@ -17,15 +17,39 @@
 
 ```mermaid
 graph TB
-    Q[查询] --> R[检索]
-    R --> K[重排序]
-    K --> C[上下文注入]
-    C --> LLM[生成]
-    subgraph "存储"
-        VDB[向量库]
-        KB[知识库]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    R --> VDB & KB
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 **UX 设计的六项核心原则是递进关系**：User first → Usability → Consistency → Accessibility → Hierarchy → Context，这六项原则并非并列关系，而是从"战略层"到"表现层"的递进。User first 是设计决策的出发点；Usability 是功能可用性的底线；Consistency 降低用户认知负担；Accessibility 扩展用户边界；Hierarchy 引导视觉注意力；Context 提供恰到好处的信息时机。一个网站如果只做到前三项，只能算"能用"；只有六项全部做到，才能算真正的好 UX。

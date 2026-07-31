@@ -3,21 +3,33 @@
 ## Ch05.003 Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 
 ```mermaid
-graph LR
-    subgraph G1["第一代: Prompt Engineering"]
-        P[提示词优化] --> M[模型输出]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    subgraph G2["第二代: Agent Loops"]
-        M2[模型] --> T[工具调用]
-        T -->|反馈| M2
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    subgraph G3["第三代: Harness Engineering"]
-        H[Harness 承重层] -->|编排| M3[模型]
-        M3 -->|受控执行| T3[工具+沙箱]
-        T3 -->|验证| V[检查点]
-        V -->|回写| H
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
     end
-    G1 --> G2 --> G3
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 > 📊 Level ⭐⭐ | 37.1KB | `entities/harness-engineering.md`

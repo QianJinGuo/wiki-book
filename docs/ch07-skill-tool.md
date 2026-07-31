@@ -6,6 +6,38 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((技能与工具))
+    Skill技能
+      可复用能力
+      描述与触发
+      版本管理
+    MCP协议
+      Server
+      Client
+      Tool Bus
+    Function Calling
+      参数Schema
+      返回格式
+      并行调用
+    工具生态
+      搜索
+      代码执行
+      文件操作
+      API调用
+    工具选择
+      意图匹配
+      参数推断
+      依赖解析
+    安全边界
+      权限控制
+      沙箱执行
+      审计日志
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

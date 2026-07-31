@@ -8,17 +8,39 @@
 
 ```mermaid
 graph TB
-    AG[Agent] --> TB[Tool Bus]
-    TB --> FT[Function Tool]
-    TB --> MT[MCP Tool]
-    subgraph "MCP"
-        MCS[Server] --> RES[资源/工具]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    MT --> MCS
-    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class AG,TB,FT,MT t
-    class MCS,RES m
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 基于Bedrock Agentcore 实现智能成本分析与告警系统 by awschina on 04 3月 2026 in Artificial Intelligence Permalink Share 摘要：在云原生时代，企业数字化转型的步伐不断加快，云基础设施已成为业务发展的核心支撑。云成本的有效监控与管理，已不再是可选项，而是企业数字化战略成功的关键要素。本文设计并实现了一套智能云成本监控与告警系统，使用者通过自然语言与智能体交互，获取与云成本相关的分析建议和优化方案，同时实现异常告警。 目录 01 1、引言 02 2、方案概述 03 3、核心功能实现 04 4、附录 05 5、结语 1、引言 在云原生时代，企业数字化转型的步伐不断加快，云基础设施已成为业务发展的核心支撑。然而，伴随着云服务使用规模的快速增长，云成本管理正成为企业面临的重大挑战。云成本的有效监控与管理，已不再是可选

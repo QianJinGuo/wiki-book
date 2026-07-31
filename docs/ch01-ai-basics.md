@@ -6,6 +6,39 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((AI与LLM基础))
+    Token化
+      分词器
+      BPE/WordPiece
+      词汇表
+    嵌入
+      语义向量
+      位置编码
+    注意力机制
+      自注意力
+      多头注意力
+      KV Cache
+    前馈网络
+      FFN层
+      MoE混合专家
+    生成与推理
+      Next-Token预测
+      投机解码
+      量化加速
+    模型演化
+      GPT系列
+      Claude系列
+      开源模型
+    应用能力
+      代码生成
+      推理链
+      多模态
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

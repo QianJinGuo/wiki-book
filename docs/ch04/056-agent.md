@@ -23,57 +23,39 @@ Shareable link: https://excalidraw.com/#json=V1TZR8SVycPL0VJvBiYhU,bLOKZsFPtzVew
 
 ```mermaid
 graph TB
-    L1["L1 Reflection<br/>输出自审<br/><i>单次执行内 Critic 循环</i>"]
-    L2["L2 Persistent Memory<br/>持久记忆<br/><i>跨 session 状态层</i>"]
-    L3["L3 Evolutionary Search<br/>进化搜索<br/><i>轨迹级因果归因</i>"]
-    L4["L4 Adversarial Training<br/>对抗训练<br/><i>双 Agent 零数据动力学</i>"]
-    L5["L5 Self-Modification<br/>自我修改<br/><i>改进改进过程本身</i>"]
-    L6["L6 Meta-Harness<br/>编排自优化<br/><i>Big Harness &gt; Big Model</i>"]
-
-    L1 ==>|"持久化是基础"| L2
-    L2 ==>|"需要足够轨迹"| L3
-    L3 ==>|"需要压力测试"| L4
-    L4 ==>|"暴露改进过程"| L5
-    L5 ==>|"可优化 Harness"| L6
-
-    L6 -.feedback.-> L1
-    L2 -.feedback.-> L1
-    L5 -.feedback.-> L2
-
-    P1["LangGraph<br/>Reflection"]
-    P2["Letta Code<br/>Agent Zero<br/>Hermes Agent"]
-    P3["EvoAgentX<br/>AgentEvolver"]
-    P4["Agent0<br/>Qwen3-8B +18%"]
-    P5["HyperAgents<br/>autoresearch"]
-    P6["Stanford<br/>Meta-Harness"]
-
-    L1 --- P1
-    L2 --- P2
-    L3 --- P3
-    L4 --- P4
-    L5 --- P5
-    L6 --- P6
-
-    INS["💡 训练 = 上学<br/>六机制 = 毕业后的自学能力"]
-    L6 -.- INS
-
-    classDef layer1 fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef layer2 fill:#d1fae5,stroke:#059669,color:#064e3b
-    classDef layer3 fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef layer4 fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef layer5 fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef layer6 fill:#0f172a,stroke:#000,color:#fff
-    classDef project fill:#f3f4f6,stroke:#6b7280,color:#1f2937
-    classDef insight fill:#fef9c3,stroke:#ca8a04,color:#713f12
-
-    class L1 layer1
-    class L2 layer2
-    class L3 layer3
-    class L4 layer4
-    class L5 layer5
-    class L6 layer6
-    class P1,P2,P3,P4,P5,P6 project
-    class INS insight
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
+    end
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 ### 封面图（AI 生成 / 装饰参考，仅供参考）

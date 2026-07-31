@@ -4,14 +4,39 @@
 
 ```mermaid
 graph TB
-    REQ[请求] --> M1[Middleware 1: 日志]
-    M1 --> M2[Middleware 2: 认证]
-    M2 --> M3[Middleware 3: 限流]
-    M3 --> AG[Agent 执行]
-    AG --> R1[Middleware 3: 结果检查]
-    R1 --> R2[Middleware 2: 审计]
-    R2 --> R3[Middleware 1: 响应日志]
-    R3 --> RES[响应]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
+    end
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 > 📊 Level ⭐ | 8.6KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`

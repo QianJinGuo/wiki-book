@@ -8,17 +8,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[API Gateway]
-    GW --> SVC[服务层]
-    SVC --> DB[数据层]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
-    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class LB,GW,SVC,DB i
-    class AGT,SB a
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 by awschina on 04 1月 2026 in Application Integration Permalink Share 序言 在快时尚电商行业，速度就是一切。从新款上架到库存周转，从个性化推荐到智能客服，每一个环节都需要快速响应市场变化。随着 AI 技术的飞速发展，越来越多的快时尚电商企业开始探索如何将 AI Agent 全面应用于各类业务场景——无论是智能穿搭推荐、实时库存查询、退换货处理，还是潮流趋势分析。 然而，将 AI Agent 从概念验证推向生产环境，往往面临着巨大的技术挑战：如何处理促销季的流量洪峰？如何确保数百万用户的个性化体验？如何在保证响应速度的同时维护数据安全？ 在本文中，我们将介绍 AgentCore Runtime，这是 AgentCore 的核心组件，它使您能够使用"任何框架和模型"，安全、大规模地部署和运行高效的 Agent。对于快时尚电商企业而言，这意味着您可以快速构建智能客服 Agent 处理海量咨询、部署穿搭推荐 Agent 提升转化率、运行库存管理 Agent 优化供应链，所有这些都具备实际部署所需的规模、可靠性和安全性。 AgentCore Runtime 提供工具和功能，使 Agent 更加有效和强大，提供专门构建的基础设施以安全地扩展 Agent，并提供控制措施以运行可信赖的 Agent。AgentCore Runtime 服务可与流行的开源框架和任何模型配合使用，因此您无需在开源灵活性和企业级安全性及可靠性之间做出选择。

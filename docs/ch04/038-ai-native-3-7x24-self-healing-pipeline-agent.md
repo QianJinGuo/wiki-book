@@ -22,25 +22,39 @@
 
 ```mermaid
 graph TB
-    subgraph托管["AI 全托管"]
-        CA[Coding Agent] -->|干活| CODE[编写代码]
-        SA[监督 Agent] -->|盯着| CA
-        SA -->|卡住: 自动恢复| CA
-        SA -->|完成: 输出PR+报告| PR[可合并 PR]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    
-    subgraph Heal["Self-Healing 三层"]
-        L1["L1 静态诊断<br/>编译错误/依赖缺失"] --> L2["L2 动态推理<br/>运行时异常/断言失败"]
-        L2 --> L3["L3 验证闭环<br/>修复→构建→测试"]
-        L3 -->|超过N轮| MANUAL[上报人工]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    
-    CODE -->|构建失败| L1
-    
-    subgraph Flywheel["质量效率双飞轮"]
-        Q[质量门禁] -->|减少返工| EFF[效率提升]
-        EFF -->|释放资源| Q
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 **"Human on the Loop" 范式转移** —— 减少 Human in the Loop = 释放 AI 产能。**指数级（10x+）效率跃迁** = 时间解放（24h）× 注意力解放（决策审查）的乘法。

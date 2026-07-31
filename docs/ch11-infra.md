@@ -6,6 +6,41 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((云基础设施))
+    云平台
+      AWS
+      Cloudflare
+      GCP/Azure
+    容器化
+      Docker
+      Kubernetes
+      Serverless
+    API层
+      Gateway
+      负载均衡
+      CDN加速
+    数据存储
+      R2/S3
+      关系数据库
+      向量数据库
+    可观测性
+      日志
+      指标
+      链路追踪
+    部署策略
+      CI/CD
+      蓝绿部署
+      金丝雀发布
+    成本优化
+      Spot实例
+      自动扩缩
+      资源右调
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |
