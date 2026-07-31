@@ -11,11 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("My bets on open models, mid-…"))
-    相关实体
-    深度分析
-    实践启示
-    关联实体
+  root(("My bets on open models mid-2026"))
+    能力差距没有按算力差距线性扩大
+    RL 训练范式让真实使用分布成为新护城河
+    重复性自动化是开源的真正主场
+    中国开源实验室的benchmark 焦点是激励结构的必然
 ```
 
 ## 相关实体

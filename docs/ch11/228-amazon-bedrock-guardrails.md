@@ -15,14 +15,14 @@ AI 编码助手生成的代码可能包含 unsafe code patterns。Amazon Bedrock
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock Guardrails 代码…"))
-    核心概念：Text Units
-    架构模式 1：Pre-commit Hook 模型
-    架构模式 2：Streaming Interv…
-    架构模式 3：解耦 ApplyGuardrai…
-    架构模式 4：Batch Output to …
-    架构模式 5：风险分级评估深度
-    架构模式 6：多阶段 Agent Pipeline
+  root(("Amazon Bedrock Guardrails"))
+    核心概念 Text Units
+    架构模式 1 Pre-commit Hook 模型
+    架构模式 2 Streaming Interval 优化至
+    架构模式 3 解耦 ApplyGuardrail API 选择性评估
+    架构模式 4 Batch Output to Text Unit
+    架构模式 5 风险分级评估深度
+    架构模式 6 多阶段 Agent Pipeline
     完整决策框架
 ```
 

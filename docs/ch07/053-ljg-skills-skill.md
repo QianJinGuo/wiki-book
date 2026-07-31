@@ -11,16 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("李继刚 ljg Skills 系列（四）：表达写作类 S…"))
+  root(("李继刚 ljg Skills 系列 四 表达写作类 Skill"))
     系列背景
-    深度分析
-      表达的三个层次
-      从 Skill 设计看 ljg 的方法论哲学
-      表达 Skill 在 Agent 工作流中的应用
-      三个递进建议
-    实践启示
-    相关实体
-    来源
+    表达的三个层次
+    从 Skill 设计看 ljg 的方法论哲学
+    表达 Skill 在 Agent 工作流中的应用
+    三个递进建议
 ```
 
 ## 摘要

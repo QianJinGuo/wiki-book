@@ -15,7 +15,7 @@
 
 ```mermaid
 mindmap
-  root(("现代AI之父新作：13个大模型实测，检索agent真的可…"))
+  root(("现代AI之父新作 13个大模型实测 检索agent真的可信吗"))
     SearchGEO 评测框架
     关键实验结果
 ```

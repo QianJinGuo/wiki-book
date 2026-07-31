@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("GPT 5.4 是 Codex 的一次大跨越：四维评估视…"))
-    深度分析
-      一、四维评估框架取代单点正确性
-      二、Reasoning Efficiency：…
-      三、Claude vs GPT 的 Agent…
-      四、Agent 工具的下一形态 = Slack
-    实践启示
-    相关实体
+  root(("GPT 54 是 Codex 的一次大跨越 四维评估视角与"))
+    一 四维评估框架取代单点正确性
+    二 Reasoning Efficiency 被低估的模型竞争维度
+    三 Claude vs GPT 的 Agent 哲学分歧
+    四 Agent 工具的下一形态 Slack
 ```
 
 ## 摘要

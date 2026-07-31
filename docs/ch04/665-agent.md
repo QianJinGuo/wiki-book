@@ -13,12 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("生产级 Agent 全景框架 (叶小钗)"))
+  root(("生产级 Agent 全景框架 叶小钗"))
     核心框架
       Agent 在企业中的定位
       Workflow vs Agent 选型矩阵
     技术架构
-    Tool / Skill / Pipeline…
+    Tool Skill Pipeline Agent 四概念
     AI 原生组织四层
     生产级成熟度 6 阶段
     多 Agent 设计原则

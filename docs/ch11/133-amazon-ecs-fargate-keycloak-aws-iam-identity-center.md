@@ -9,13 +9,9 @@
 
 ```mermaid
 mindmap
-  root(("基于 Amazon ECS Fargate 自建 Key…"))
-    概述
+  root(("基于 Amazon ECS Fargate 自建 Keycloak"))
     架构要点
     技术价值
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 概述

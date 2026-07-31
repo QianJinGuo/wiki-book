@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("Kuikly — 腾讯开源跨端框架（Kotlin Mul…"))
+  root(("Kuikly 腾讯开源跨端框架 Kotlin Multiplatform"))
     核心特性
     AI 编程基础设施
       Skills 和 Rules 的收益

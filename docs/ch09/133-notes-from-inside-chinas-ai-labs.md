@@ -9,17 +9,6 @@ Staring out the window on a new, high-speed train from Hangzhou to Shanghai I'm 
 Interconnects AI is a reader-supported publication. Consider becoming a subscriber.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Notes From Inside Chinas AI …"))
-    The mentality of Chines…
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## The mentality of Chinese researchers
 The Chinese companies building language models are set up as the perfect fast-followers for the technology, building on long-standing cultural traditions in education and work, along with subtly different approaches to building technology companies. When you look at the outputs, the latest, biggest models enabling agentic workflows, and the ingredients, excellent scientists, large-scale data, and accelerated computing, the Chinese and American labs look largely similar. The lasting differences emerge in how these are organized and conditioned.
 

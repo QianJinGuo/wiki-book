@@ -15,13 +15,14 @@
 
 ```mermaid
 mindmap
-  root(("New legal questions: agentic…"))
-    深度分析
-      1990 年法律框架 vs 2026 年技术现实
-      Agent 身份的'非人类身份爆炸'
-      渗透测试作为 Agent 法律问题的'试验场'
-    实践启示
-    相关实体
+  root(("New legal questions agentic pen"))
+    传统渗透测试风险的 Agent 化转型
+    四个全新法律问题
+    Agent 身份与归属问题
+    法律改革动向
+    年法律框架 vs 2026 年技术现实
+    Agent 身份的非人类身份爆炸
+    渗透测试作为 Agent 法律问题的试验场
 ```
 
 ## 摘要

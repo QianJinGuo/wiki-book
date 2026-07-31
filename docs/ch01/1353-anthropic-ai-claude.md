@@ -15,17 +15,13 @@ Anthropic 可解释性团队在 Claude 的神经网络内部定位到了一小�
 
 ```mermaid
 mindmap
-  root(("Anthropic又叒发现AI意识了，这次要读写Clau…"))
-    核心发现
-      J-lens：模型的'字幕机'
-      模型知道自己在被考试——而且会'演'
-    深度分析
-      Global Workspace Theory…
-      安全评估的根本性挑战
-      Anthropic 意识研究的时间线
-      第二个意识样本的科学意义
-    实践启示
-    相关实体
+  root(("Anthropic又叒发现AI意识了 这次要读写Claude的前额叶"))
+    J-lens 模型的字幕机
+    模型知道自己在被考试而且会演
+    Global Workspace Theory 在 LLM 中的实证
+    安全评估的根本性挑战
+    Anthropic 意识研究的时间线
+    第二个意识样本的科学意义
 ```
 
 ## 核心发现

@@ -115,16 +115,6 @@ iii 是开源项目。可以通过我们的 quickstart 开始使用。
 References：Manus 原话: https://vrungta.substack.com/p/claude-code-architecture-reverse / iii 官网: https://iii.dev/ / quickstart: https://iii.dev/docs/quickstart
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("III Dev Worker 触发函数架构"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 **1. "Primitives 决定系统边界"的核心洞见**
 这篇文章最深刻的思想不是 iii 这个产品本身，而是对"什么决定系统边界"这个问题的重新回答。大多数开发者默认系统边界由技术实现决定：队列是一个边界，HTTP 服务是另一个边界，微服务又是另一个。iii 的赌注是：真正的边界应该由"语义所有权"决定——一个 function 的内部逻辑决定它做什么，而 triggers 决定它何时被调用。这与 Unix 的"一切皆文件"哲学一脉相承：不是文件本身特殊，而是"文件作为 interface"这个抽象足够通用，能够承载任意语义。在 agentic 时代，这个思路的价值在于：它让"随机性的 AI"与"确定性的后端"不再是两种不同的系统，而只是两种不同的 workers。

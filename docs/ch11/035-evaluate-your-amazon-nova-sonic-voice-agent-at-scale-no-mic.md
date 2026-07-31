@@ -28,13 +28,10 @@ In this post, we walk you through the [Nova Sonic Test Harness](<https://github.
 
 ```mermaid
 mindmap
-  root(("Evaluate your Amazon Nova So…"))
-    Why speech-to-speech te…
-    How the test harness wo…
+  root(("Evaluate your Amazon Nova Sonic"))
+    Why speech-to-speech testing is
+    How the test harness works
       Defining a test scenario
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## Why speech-to-speech testing is different

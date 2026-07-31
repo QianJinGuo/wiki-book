@@ -11,16 +11,6 @@ AgentCore is the platform to build, connect, and optimize agents at scale, with 
 [Recommendations](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimization-recommendations.html>) analyze production traces and evaluation outputs to optimize your system prompt or tool descriptions for the evaluator you specify. [Batch evaluation](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-evaluations.html>) helps test the recommendation against a pre-defined test dataset and reports aggregate scores, catching regressions on cases you know matter. When hand-authored scenarios aren't enough, you can also [simulate a dataset](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/simulation.html>) using an LLM-backed actor to play the role of an end user. [A/B testing](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-testing.html>) runs a controlled comparison between versions of an agent through [AgentCore Gateway](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html>), splitting live production traffic at the percentage you configure and reporting results with confidence intervals and statistical significance. Recommendations propose changes, batch evaluation and A/B testing validate them, and together they replace the manual cycle of reading traces, guessing at fixes, and deploying blind.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Bedrock Agentcore Qualit…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

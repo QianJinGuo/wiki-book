@@ -9,15 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("向量数据库选型：Chroma vs Qdrant"))
+  root(("向量数据库选型 Chroma vs Qdrant"))
     核心框架
     选型决策矩阵
     架构本质
     关键阈值
     过滤性能差异
     实践原则
-    深度分析
-    相关链接
 ```
 
 ## 核心框架

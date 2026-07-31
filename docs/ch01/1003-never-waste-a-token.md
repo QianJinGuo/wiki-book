@@ -15,8 +15,8 @@
 ```mermaid
 mindmap
   root(("never waste a token"))
-    the problem that’s easy…
-    the move: stop tying th…
+    the problem thats easy to miss
+    the move stop tying the request
     评估理由
     相关
 ```

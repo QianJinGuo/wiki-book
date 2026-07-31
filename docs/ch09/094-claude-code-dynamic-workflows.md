@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Dynamic Workflow…"))
-    深度分析
-      静态 vs 动态 Harness 的范式转变
-      锦标赛模式的工程洞察
-      隔离区模式的安全价值
-      Token 预算的工程必要性
-    实践启示
-    相关实体
+  root(("Claude Code Dynamic Workflows"))
+    动态工作流的运作机制
+    大失败模式
+    大基础模式
+    大实战用例
+    静态 vs 动态 Harness 的范式转变
+    锦标赛模式的工程洞察
+    隔离区模式的安全价值
+    Token 预算的工程必要性
 ```
 
 ## 摘要

@@ -13,22 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("MCP tool design: Practical a…"))
-    核心挑战：Bloat 与 Confusion
+  root(("MCP tool design Practical"))
+    核心挑战 Bloat 与 Confusion
     Key Design Dimensions
     六种 MCP 工具设计策略详解
-      V1: Raw Passthrough（原始透…
-      V2: Rich Descriptions（丰…
-      V3: Schema + Defaults（模…
-      V4: Lazy Loading with R…
+      V1 Raw Passthrough 原始透传 反模式基线
+      V2 Rich Descriptions 丰富描述 最快见效
+      V3 Schema Defaults 模式约束 默认值 结构为王
     策略对比总览
-    深度分析
-      上下文工程：Agent 系统设计的核心约束
-      从'API 透传'到'Agent 封装'的演进路径
-      Skills 与 MCP 工具设计的交汇点
-      安全性：被忽视的设计维度
-    实践启示
-    相关实体
+    上下文工程 Agent 系统设计的核心约束
+    从API 透传到Agent 封装的演进路径
+    Skills 与 MCP 工具设计的交汇点
+    安全性 被忽视的设计维度
 ```
 
 ## 摘要

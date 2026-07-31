@@ -9,20 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("LLM-as-a-Verifier: A General…"))
+  root(("LLM-as-a-Verifier A"))
     背景与动机
       标准 LLM-as-a-Judge 的平局困境
-    方法论
-      三大扩展维度
-      轨迹选择的轮询赛制
-      Prompt 设计要点
-    实验结果
-      主要性能指标
-      即插即用效果
-      扩展规律
-    深度分析
-    实践启示
-    相关实体
+    三大扩展维度
+    轨迹选择的轮询赛制
+    Prompt 设计要点
+    主要性能指标
+    即插即用效果
+    扩展规律
 ```
 
 ## 核心要点

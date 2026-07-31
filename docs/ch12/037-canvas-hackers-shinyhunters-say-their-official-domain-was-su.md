@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Canvas Hackers ShinyHunters …"))
-    深度分析
-      攻击时间线与因果链条
-      为什么 clearnet 与 onion 分离
-      域名暂停机制分析
-      完全弃用 Clearnet 的战略含义
-    实践启示
-    相关实体
+  root(("Canvas Hackers ShinyHunters Say"))
+    攻击时间线与因果链条
+    为什么 clearnet 与 onion 分离
+    域名暂停机制分析
+    完全弃用 Clearnet 的战略含义
 ```
 
 ## 摘要

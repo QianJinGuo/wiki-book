@@ -13,11 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Skills：让 Claude 记住「怎么做」，告别重复教学"))
-    深度分析
-    实践启示
-    关联实体
-    相关实体
+  root(("Skills 让 Claude 记住「怎么做」 告别重复教学"))
+    Skill vs Prompt 的本质差异
+    context fork 解决主 session 污染
+    disable-model-invocation 防止自动触发的副作用
+    SKILLmd 最小结构
 ```
 
 ## 摘要

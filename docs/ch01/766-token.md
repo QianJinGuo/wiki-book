@@ -18,13 +18,9 @@
 ```mermaid
 mindmap
   root(("Token不经济"))
-    深度分析
-      Token 定价市场结构性抬升
-      Agent 架构的五重系统性浪费
-      Token 应用的结构性鸿沟
-    实践启示
-    相关实体
-```
+    Token 定价市场结构性抬升
+    Agent 架构的五重系统性浪费
+    Token 应用的结构性鸿沟```
 
 ## 摘要
 

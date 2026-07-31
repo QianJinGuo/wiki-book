@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("How I Build Software in June…"))
-    深度分析
-      从 CLI 到 UI 的编排演进
-      Token 经济学与并行化
-      持续改进的不变性
-    实践启示
-    相关实体
+  root(("How I Build Software in June 2026"))
+    编排器驱动的工作流
+    个人 Backlog 系统
+    Agent Session 管理
+    交付速度的理想条件
+    从 CLI 到 UI 的编排演进
+    Token 经济学与并行化
+    持续改进的不变性
 ```
 
 ## 摘要

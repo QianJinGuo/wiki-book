@@ -14,14 +14,14 @@
 ```mermaid
 mindmap
   root(("AI Agent Hype Meets Reality"))
-    深度分析
-      Agent 产品流失的根本原因
-      与 Vibe Coding Reality G…
-      对 Agent 市场的预测
-    实践启示
-      对 Agent 产品构建者的建议
-      对 Agent 投资者的建议
-    相关实体
+    Agent 产品的糖衣增长周期
+    Epic Systems 的低期望哲学
+    Nail It Then Scale It 策略
+    Agent 产品流失的根本原因
+    与 Vibe Coding Reality Gap 的关联
+    对 Agent 市场的预测
+    对 Agent 产品构建者的建议
+    对 Agent 投资者的建议
 ```
 
 ## 摘要

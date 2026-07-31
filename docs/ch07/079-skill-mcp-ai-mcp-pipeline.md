@@ -13,11 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("skill-mcp — 把 AI 技能当软件包管理（MC…"))
-    核心理念：技能即软件包
+  root(("skill-mcp 把 AI 技能当软件包管理 MCP 权限网关"))
+    核心理念 技能即软件包
     三种部署场景
     五个 MCP 工具
-    Pipeline：只调度、不执行（核心设计决策）
+    Pipeline 只调度 不执行 核心设计决策
     安全设计
     与同类项目对比
     技术栈

@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Unlocking asynchronicity in …"))
-    相关实体
-    深度分析
-      1. 同步批处理的根本性低效
-      2. CUDA Streams：并发执行的基础
-      3. CUDA Events：跨 Stream…
-      4. Double Buffering：消除数…
-    实践启示
-      1. LLM 推理服务部署：优先考虑异步批处理
-      2. 推理框架选型：检查 async 支持状态
-      3. 长序列场景的最大受益者
-      4. 显存预算与 CUDA Graph 的权衡
+  root(("Unlocking asynchronicity in"))
+    同步批处理的根本性低效
+    CUDA Streams 并发执行的基础
+    CUDA Events 跨 Stream 同步机制
+    Double Buffering 消除数据竞争
+    LLM 推理服务部署 优先考虑异步批处理
+    推理框架选型 检查 async 支持状态
+    长序列场景的最大受益者
+    显存预算与 CUDA Graph 的权衡
 ```
 
 ## 核心要点

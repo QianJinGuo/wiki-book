@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("LLMReaper - DOM Based AI Con…"))
-    深度分析
-      攻击面的根本问题：浏览器扩展模型设计
-      MutationObserver 的滥用与防御困境
-      服务 Worker 的 Same Origin…
-      LLM 对话作为新的'凭证泄露通道'
-    实践启示
-      对个人用户
-      对企业安全团队
-      对 LLM 平台厂商
-      对安全研究社区
-    相关实体
+  root(("LLMReaper - DOM Based AI"))
+    攻击面的根本问题 浏览器扩展模型设计
+    MutationObserver 的滥用与防御困境
+    服务 Worker 的 Same Origin Policy 绕过
+    LLM 对话作为新的凭证泄露通道
+    对个人用户
+    对企业安全团队
+    对 LLM 平台厂商
+    对安全研究社区
 ```
 
 ## 摘要

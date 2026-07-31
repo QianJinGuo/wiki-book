@@ -44,18 +44,15 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("From SSH to REST: A Security…"))
-    深度分析
-      问题本质：SSH 作为临时方案的长期技术债
-      技术选型的关键洞察：为什么不自己造轮子
-      Quarry 的架构价值：解耦 Airflow…
-      迁移策略：增量分阶段的本质是风险管理
-    实践启示
-      安全迁移的工程方法论
-      YARN Distributed Shell …
-      SSH 去化的收益矩阵
-      迁移完成后的战略价值
-    相关实体
+  root(("From SSH to REST A"))
+    问题本质 SSH 作为临时方案的长期技术债
+    技术选型的关键洞察 为什么不自己造轮子
+    Quarry 的架构价值 解耦 Airflow 与 EMR 基础设施细节
+    迁移策略 增量分阶段的本质是风险管理
+    安全迁移的工程方法论
+    YARN Distributed Shell 的应用场景
+    SSH 去化的收益矩阵
+    迁移完成后的战略价值
 ```
 
 ## 深度分析

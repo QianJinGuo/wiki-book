@@ -7,17 +7,6 @@
 > -> [Book a Demo | See PlayerZero in Action](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/playerzero-request-demo.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Book a Demo | See PlayerZero…"))
-    深度分析
-    实践启示
-    关联阅读
-    相关实体
-```
-
 ## 深度分析
 **1. Cookie声明页暴露的追踪生态规模**
 整个 Demo 请求页加载了 48 个 Cookie，涵盖 13 家第三方服务商（Cloudflare、Google Analytics、HubSpot、LinkedIn、Meta、Twitter、Reddit、Amazon 等），另有 11 个"未分类"Cookie。这映射出一家 ToB SaaS 企业在营销归因、用户行为分析、CRM 集成和广告投放上的完整数据链路。对于安全/隐私团队而言，这个清单即是供应商风险评估的直接素材。

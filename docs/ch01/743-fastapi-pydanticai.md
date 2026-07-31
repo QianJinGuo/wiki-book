@@ -19,14 +19,11 @@
 
 ```mermaid
 mindmap
-  root(("FastAPI 之父的 PydanticAI 是真的夯！"))
-    深度分析
-      类型合约：从'建议'到'执行'的范式转变
-      ModelRetry 作为控制流信号
-      provider 抽象的层次与取舍
-      与 CrewAI/LangGraph 的边界对照
-    实践启示
-    相关实体
+  root(("FastAPI 之父的 PydanticAI 是真的夯"))
+    类型合约 从建议到执行的范式转变
+    ModelRetry 作为控制流信号
+    provider 抽象的层次与取舍
+    与 CrewAILangGraph 的边界对照
 ```
 
 ## 摘要

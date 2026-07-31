@@ -13,9 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Agent Protocol 不变层：跨框架的 6 个稳…"))
-    核心框架：Agent Runtime Prot…
-    三层概念：标准、对象、Runtime 能力
+  root(("Agent Protocol 不变层 跨框架的 6 个稳定"))
+    核心框架 Agent Runtime Protocol 6 对象
+    三层概念 标准 对象 Runtime 能力
     Runtime 与 Protocol 的关系
     跨框架映射
     核心洞见

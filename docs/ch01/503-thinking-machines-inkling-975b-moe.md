@@ -13,15 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Thinking Machines Inkling — …"))
+  root(("Thinking Machines Inkling 975B"))
     技术规格
-    与 Thinking Machines 交互模…
-    深度分析
-      架构设计：DeepSeek-V3 路线的继承与改进
-      训练策略：混合优化与大规模强化学习的结合
-      多模态的原生整合策略
-      开放生态与定制化平台
-    实践启示
+    与 Thinking Machines 交互模型的关系
+    架构设计 DeepSeek-V3 路线的继承与改进
+    训练策略 混合优化与大规模强化学习的结合
+    多模态的原生整合策略
+    开放生态与定制化平台
     行业背景
 ```
 

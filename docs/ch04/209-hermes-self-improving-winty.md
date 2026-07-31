@@ -9,27 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Hermes Self-Improving 闭环详解（w…"))
+  root(("Hermes Self-Improving 闭环详解 winty"))
     核心定义
     四组件闭环
-    反馈环：
-    关键洞察
-      三层分水岭（winty 概念篇）
-      Memory ≠ 日志
-      Memory 与 Skill 分离设计
-      Skill = 企业级资产
+    反馈环
+    三层分水岭 winty 概念篇
+    Memory 日志
+    Memory 与 Skill 分离设计
+    Skill 企业级资产
     核心哲学
-    深度分析
-      组织学隐喻背后的设计意图
-      四组件为何必须分离
-      独立 Review Agent 的认知偏差过滤价值
-      复利式学习的结构性意义
-    实践启示
-      落地路径：从小场景可复用任务开始
-      Skill 治理是企业级落地的必备条件
-      Token 膨胀的主动管理
-      人工干预的合法性
-    相关实体
 ```
 
 ## 核心定义

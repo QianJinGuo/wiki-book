@@ -8,16 +8,6 @@
 ![Image 2](https://bishopfox.com/static/assets/images/backgrounds/promobar-bg-lines-left.svg)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing AIMap: Security …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security V2](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)

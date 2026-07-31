@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.2KB | `entities/harness-engineering-让-coding-agent-可靠完成长程任务.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering: 让 Codin…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 微信文章：Harness Engineering: 让 Coding Agent 可靠完成长程任务
 ## 相关实体

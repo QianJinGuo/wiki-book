@@ -13,22 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("Agent 记忆注入实战：5 维框架（选什么/放哪里/怎…"))
-    一句话定位
-    4 个常见问题
-    4 篇前沿论文
-    5 维框架详解
-      维度 1：选什么（记忆选择）— MemGuid…
-      维度 2：放哪里（注入位置）— Lost-in…
-      维度 3：怎么放（注入格式）— Section…
-      维度 4：放多少（数量控制）— 宁缺毋滥
-    ACE 框架：把记忆当作策略手册
+  root(("Agent 记忆注入实战 5 维框架"))
+    个常见问题
+    篇前沿论文
+    维框架详解
+      维度 1 选什么 记忆选择 MemGuide STITCH
+      维度 2 放哪里 注入位置 Lost-in-the-Middle
+      维度 3 怎么放 注入格式 Section QA
+    ACE 框架 把记忆当作策略手册
       记忆观转变
       策略手册结构
-    STRATEGIES（成功经验）
-    COMMON MISTAKES（失败教训）
-      3 角色协作
+    STRATEGIES 成功经验
+    COMMON MISTAKES 失败教训
+      角色协作
     完整流程整合
+    改进效果对比
 ```
 
 ## 一句话定位

@@ -9,15 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("YC掌门人60天写了60万行代码：gstack开源"))
+  root(("YC掌门人60天写了60万行代码 gstack开源"))
     核心数据
     gstack是什么
-      15个角色
+      个角色
     一次典型Sprint
     并行运行10-15个Sprint
     亮点能力
-    深度分析
-    实践启示
 ```
 
 ## 核心数据

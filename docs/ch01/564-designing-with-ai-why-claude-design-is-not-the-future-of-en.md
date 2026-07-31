@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Designing with AI: Why Claud…"))
-    深度分析
-      AI 设计工具的光谱
-      MCP 作为设计-开发桥梁
-      对 Jim Nielsen 设计哲学ht…
-      开放 vs 封闭的生态之争
-    实践启示
-    相关实体
+  root(("Designing with AI Why Claude"))
+    Claude Design 的能力边界
+    企业级设计的四大缺失
+    企业 AI 设计工具的四个标准
+    Penpot 的差异化定位
+    AI 设计工具的光谱
+    MCP 作为设计-开发桥梁
+    对 Jim Nielsen 设计哲学 的呼应
+    开放 vs 封闭的生态之争
 ```
 
 ## 摘要

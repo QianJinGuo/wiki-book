@@ -11,16 +11,6 @@
 评估大模型在 LBS 场景中，从海量隐式信号（点击、搜索、导航片段）里精准推理用户深层意图的能力——而非执行明确指令。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("智能时空思考Agent｜首个真实出行隐式意图评测基准LB…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Lbs Intentbench](ch04/273-lbs-intentbench.html)
 - [Programbench Agent Benchmark](ch04/163-programbench-agent-benchmark.html)

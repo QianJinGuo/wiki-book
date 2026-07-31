@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("百炼网关：用RocketMQ LiteTopic重构大模…"))
-    核心内容
-      大模型限流的挑战
-      算法选择：固定窗口 + 漏桶
-      传统 Topic/Group 方案的瓶颈
-      LiteTopic 三件套
-    深度分析
-      1. 限流从「防御题」变成「资源调度题」
-      2. 物理载体的选择决定了系统上限
-      3. 租户隔离的成本从乘法变加法
-      4. Suspend vs Sleep 的线程…
-    实践启示
-    相关实体
+  root(("百炼网关 用RocketMQ LiteTopic重构大模型限流架构"))
+    大模型限流的挑战
+    算法选择 固定窗口 漏桶
+    传统 TopicGroup 方案的瓶颈
+    LiteTopic 三件套
+    限流从「防御题」变成「资源调度题」
+    物理载体的选择决定了系统上限
+    租户隔离的成本从乘法变加法
+    Suspend vs Sleep 的线程经济学
 ```
 
 ## 核心内容

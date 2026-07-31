@@ -13,16 +13,6 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 办公任务：OfficeQA Pro 从 57.1% 干到 80.6%，简单理解就是让它处理 Excel 和 Doc 这些文件更靠谱了。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Opus 4.7 并不是一次全面升级，甚至…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [From Prompt To Harness Claude Official](../ch05/009-harness.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)

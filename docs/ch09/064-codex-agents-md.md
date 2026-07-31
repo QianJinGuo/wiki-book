@@ -11,27 +11,23 @@
 
 ```mermaid
 mindmap
-  root(("Codex AGENTS.md 项目说明书完整指南"))
-    概述
-    AGENTS.md 的定位
-    Codex 发现链（全局层 → 项目层 → 合并）
-      第一步：全局层（Global scope）
-      第二步：项目层（Project scope）
-      第三步：合并
-    AGENTS.override.md：Code…
+  root(("Codex AGENTSmd 项目说明书完整指南"))
+    AGENTSmd 的定位
+    Codex 发现链 全局层 项目层 合并
+      第一步 全局层 Global scope
+      第二步 项目层 Project scope
+      第三步 合并
+    AGENTSoverridemd Codex 独有的「临时盖章」
     该写什么 vs 不该写什么
       该写的五类
       不该写的
       大小红线
     两个配置旋钮
-      project_doc_fallback_fi…
-      project_doc_max_bytes
+      projectdocfallbackfilenames
+      projectdocmaxbytes
     验证流程
-    深度分析
-      AGENTS.md 是「上下文工程」的核心实践载体
-      发现链设计中的「Unix 哲学」基因
-      AGENTS.override.md：从「配置…
-      字节上限 vs 行数上限：两种上下文管理哲学
+    AGENTSmd 是「上下文工程」的核心实践载体
+    发现链设计中的「Unix 哲学」基因
 ```
 
 ## 概述

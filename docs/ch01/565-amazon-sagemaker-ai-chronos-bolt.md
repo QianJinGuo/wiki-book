@@ -13,15 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("基于 amazon sagemaker ai 部署 ch…"))
+  root(("基于 amazon sagemaker ai 部署 chronos"))
     技术原理
-    深度分析
-      时序预测从'训练驱动'到'推理驱动'的范式转变
-      '先 Bolt 后 DeepAR'策略的工程合理性
-      概率预测在业务决策中的实际价值
-      与中国区部署场景的关联
-    实践启示
-    相关实体
+    时序预测从训练驱动到推理驱动的范式转变
+    先 Bolt 后 DeepAR策略的工程合理性
+    概率预测在业务决策中的实际价值
+    与中国区部署场景的关联
 ```
 
 ## 摘要

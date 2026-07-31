@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Code Simulation for Enterpri…"))
-    深度分析
-      Code Review 与 Code Simu…
-      Sim-1 的技术实现路径
-      与传统可观测性工具的关系
-      跨服务追踪的竞争优势
-    实践启示
-      引入模拟而非替换测试
-      落地时间线参考
-      评估自身适用性
-    相关实体
+  root(("Code Simulation for Enterprise"))
+    Code Review 与 Code Simulation 的本质差异
+    Sim-1 的技术实现路径
+    与传统可观测性工具的关系
+    跨服务追踪的竞争优势
+    引入模拟而非替换测试
+    落地时间线参考
+    评估自身适用性
 ```
 
 ## 核心要点

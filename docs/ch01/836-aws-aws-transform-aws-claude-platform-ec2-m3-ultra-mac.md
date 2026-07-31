@@ -5,18 +5,6 @@
 > 📊 Level ⭐⭐ | 5.5KB | `entities/aws-一周综述aws-transform-上线一周年aws-云端-claude-platformec2-m3-ultr.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS 一周综述：AWS Transform 上线一周年…"))
-    概述
-    要点
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 概述
 
 AWS 官方周综述，涵盖 AWS Transform、Claude Platform 云端部署、EC2 M3 Ultra Mac 实例等 2026 年 5 月中旬技术动态。

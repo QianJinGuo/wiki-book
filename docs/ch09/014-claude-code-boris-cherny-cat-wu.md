@@ -11,15 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 一周年回顾：Boris Cher…"))
-    深度分析
-      01 两个赞的起点：起点低不是坏事
-      02 验证才是关键：让 Agent 从错误中进化
-      03 人人都在写代码：新分工的浮现
-      04 Routines 的威力：Agent 从…
-    实践启示
-    相关实体
-    第 2 来源 — 2026-06-30：子智能…
+  root(("Claude Code 一周年回顾 Boris Cherny"))
+    两个赞的起点 起点低不是坏事
+    验证才是关键 让 Agent 从错误中进化
+    人人都在写代码 新分工的浮现
+    Routines 的威力 Agent 从同步工具变成异步基础设施
 ```
 
 ## 摘要

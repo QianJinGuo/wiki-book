@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("AI 没把更多流量导向 Amazon，利好品牌官网 — …"))
+  root(("AI 没把更多流量导向 Amazon 利好品牌官网 Michael"))
     五大核心观点
-      1. AI 导流 4-8 倍偏向品牌官网
-      2. Shopify 的护城河是基础设施栈，不…
-      3. AI 是导流渠道（referral ch…
-      4. 消费者并不想让 AI 自动购物
+      AI 导流 4-8 倍偏向品牌官网
+      Shopify 的护城河是基础设施栈 不可被 Vibe
+      AI 是导流渠道 referral channel 不是分发平台
     关键引用
     与现有知识的关系
 ```

@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Opus 4.8: The System …"))
-    深度分析
-      三个基准点：4.7、4.8、Mythos
-      RSP v3.3 的关键修订：门槛上调
-      失败模式揭示：Claude「能但选择不做」
-      对齐风险：能力上升快于对齐技术
-    实践启示
-      对使用 Opus 4.8 的判断
-      对模型部署的判断
-      对齐研究的关键信号
-      何时不要用 Opus 4.8
-    相关实体
+  root(("Claude Opus 48 The System Card"))
+    三个基准点 47 48 Mythos
+    RSP v33 的关键修订 门槛上调
+    失败模式揭示 Claude「能但选择不做」
+    对齐风险 能力上升快于对齐技术
+    对使用 Opus 48 的判断
+    对模型部署的判断
+    对齐研究的关键信号
+    何时不要用 Opus 48
 ```
 
 ## 核心要点

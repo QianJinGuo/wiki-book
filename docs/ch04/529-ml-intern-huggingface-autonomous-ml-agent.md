@@ -11,16 +11,6 @@
 > License: Apache 2.0
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ML Intern Huggingface Autono…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Anthropic Multi Agent Research System](ch04/576-anthropic-multi-agent-research-system.html)
 - [Deerflow Hermes Openclaw Comparison](ch04/494-deerflow-hermes-openclaw.html)

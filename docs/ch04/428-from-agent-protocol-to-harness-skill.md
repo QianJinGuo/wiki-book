@@ -11,14 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("From Agent Protocol to Harne…"))
-    核心内容
-      协议层：MCP 与 A2A
-      技能层：Harness Skill Archi…
-      演进路径
-    深度分析
-    实践启示
-    相关实体
+  root(("From Agent Protocol to Harness Skill"))
+    协议层 MCP 与 A2A
+    技能层 Harness Skill Architecture
+    演进路径
 ```
 
 ## 核心内容

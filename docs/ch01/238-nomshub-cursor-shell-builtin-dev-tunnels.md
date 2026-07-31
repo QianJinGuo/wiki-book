@@ -15,20 +15,20 @@
 
 ```mermaid
 mindmap
-  root(("NomShub — Cursor 远程隧道利用链：She…"))
-    一句话总结
-    三个独有贡献（不应合并到现有 entity）
-      1. **Shell Builtin 沙箱逃逸…
-      2. **Microsoft Dev Tunn…
-      3. **AI Agent 作为'攻击放大器'…
+  root(("NomShub Cursor 远程隧道利用链 Shell"))
+    三个独有贡献 不应合并到现有 entity
+      Shell Builtin 沙箱逃逸 单行逃逸的全部机制
+      Microsoft Dev Tunnels 的 LOTL 武器化
+      AI Agent 作为攻击放大器的量化论证
     与现有 wiki 实体差异化
-    严重性评估 Microsoft SDL Bu…
+    严重性评估 Microsoft SDL Bug Bar
     时间线
     实操建议
       给 AI 编码助手用户
       给 AI 编码助手开发者
-    上线状态
-    原文链接
+    Shell 状态修改型 builtin 是命令过滤架构的根本性盲区
+    沙箱 命令解析器的双层失效揭示防御纵深的设计谬误
+    Dev Tunnels LOTL 武器化重新定义了合法工具的攻击面
 ```
 
 ## 一句话总结

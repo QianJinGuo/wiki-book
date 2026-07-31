@@ -13,22 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("视频 RAG 分块策略：停顿 / 滑动窗口 / LLM …"))
-    一句话
-    核心问题
+  root(("视频 RAG 分块策略 停顿 滑动窗口 LLM 主题分块"))
     三种分块策略
-      1. 基于停顿的分块 Pause-Based…
-      2. 基于 LLM 的主题分块 LLM-Ba…
-      3. 复合 Pipeline（生产级 RAG …
-    关键洞察
-    深度分析
-      视频 RAG 与文本 RAG 的本质差异
-      与已有 RAG 分块实体的关系
-      三大分块策略的工程取舍
-      与 Agent 记忆架构 的呼应
-    实践启示
+      基于停顿的分块 Pause-Based Chunking
+      基于 LLM 的主题分块 LLM-Based Topic
+      复合 Pipeline 生产级 RAG 同时用
+    视频 RAG 与文本 RAG 的本质差异
+    与已有 RAG 分块实体的关系
+    三大分块策略的工程取舍
+    与 Agent 记忆架构 的呼应
     与现有实体的差异化定位
-    原文链接
 ```
 
 ## 一句话

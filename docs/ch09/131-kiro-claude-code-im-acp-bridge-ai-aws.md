@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("让 Kiro 和 Claude Code 响应 IM 消…"))
-    概述
-    核心技术
-    来源
-    相关实体
-    深度分析
-      1. ACP 协议：CLI AI Agent …
-      2. Kiro 与 Claude Code 的…
-      3. 进程池生命周期与 Session 解耦
-      4. 异步任务队列与 Webhook 推送机制
-    实践启示
-      1. 优先选择原生 ACP 支持的工具
-      2. 异步任务队列是远程协作的关键
-      3. 安全隔离要从小处着手
-      4. 进程池的 TTL 和上限保证系统韧性
+  root(("让 Kiro 和 Claude Code 响应 IM 消息 用"))
+    ACP 协议 CLI AI Agent 的标准化桥梁
+    Kiro 与 Claude Code 的 ACP 集成差异
+    进程池生命周期与 Session 解耦
+    异步任务队列与 Webhook 推送机制
+    优先选择原生 ACP 支持的工具
+    异步任务队列是远程协作的关键
+    安全隔离要从小处着手
+    进程池的 TTL 和上限保证系统韧性
 ```
 
 ## 概述

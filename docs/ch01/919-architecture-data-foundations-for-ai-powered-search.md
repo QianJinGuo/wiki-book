@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.9KB | `entities/architecture-data-foundations-for-ai-powered-search.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Architecture & data foundati…"))
-    深度分析
-    实践启示
-    相关概念
-```
-
 ## 核心要点
 - AI 驱动搜索的核心架构组件：摄取 → 丰富 → 混合索引 → 检索 → 推荐 → RAG 接口
 - 搜索质量评估维度：精确率、召回率、相关性、排名、刷新延迟

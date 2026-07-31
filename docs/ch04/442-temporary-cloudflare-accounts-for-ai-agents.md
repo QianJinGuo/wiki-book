@@ -11,14 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Temporary Cloudflare Account…"))
-    深度分析
-      Agent 基础设施的「零配置」范式
-      安全模型分析
-      对 Agent 工作流的影响
-      与 auth.md 的互补关系
-    实践启示
-    相关实体
+  root(("Temporary Cloudflare Accounts for"))
+    问题定义 Agent 的「人类墙壁」
+    技术实现
+    生态布局
+    Agent 基础设施的「零配置」范式
+    安全模型分析
+    对 Agent 工作流的影响
+    与 authmd 的互补关系
 ```
 
 ## 摘要

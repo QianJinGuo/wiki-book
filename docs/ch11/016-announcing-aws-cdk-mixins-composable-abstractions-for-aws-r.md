@@ -9,15 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Announcing AWS CDK Mixins: C…"))
-    背景
-    什么是 CDK Mixins？
+  root(("Announcing AWS CDK Mixins"))
+    什么是 CDK Mixins
     Mixins 和 Aspects
     使用 CDK Mixins
     创建自定义 Mixins
     Mixin 行为控制
     ECS ClusterSettings Mixin
-    S3 Mixins: PublicAccess…
+    S3 Mixins PublicAccessBlock 和
+    Vended Logs 和日志传递
 ```
 
 ## 背景

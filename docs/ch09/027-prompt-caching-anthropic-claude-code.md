@@ -9,24 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Prompt Caching 工程实践 — Anthro…"))
-    核心约束：Prompt Caching = 前…
-    9条工程经验
-      1. 缓存即基建
-      2. 排好队形（Prompt 排列优先级）
-      3. 别动 Prompt
-      4. 别换模型
-    深度分析
-      从优化手段到架构约束的范式转移
-      不可变性设计是缓存友好的本质
-      分层缓存失效与灾难链
-      子 Agent 架构与缓存隔离
-    实践启示
-      1. 从第一天起就把缓存策略写进架构设计文档
-      2. 强制排序所有结构化数据的序列化
-      3. 用 system-reminder…
-      4. 模型切换前先做缓存 ROI 计算
-    相关实体
+  root(("Prompt Caching 工程实践 Anthropic"))
+    核心约束 Prompt Caching 前缀匹配
+    条工程经验
+      缓存即基建
+      排好队形 Prompt 排列优先级
+      别动 Prompt
+    从优化手段到架构约束的范式转移
+    不可变性设计是缓存友好的本质
+    分层缓存失效与灾难链
+    子 Agent 架构与缓存隔离
+    从第一天起就把缓存策略写进架构设计文档
+    强制排序所有结构化数据的序列化
 ```
 
 ## 核心约束：Prompt Caching = 前缀匹配

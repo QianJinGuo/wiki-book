@@ -10,13 +10,9 @@
 
 ```mermaid
 mindmap
-  root(("当公司变成Agent：AI 时代组织的 5 个反思 — …"))
-    核心洞察
+  root(("当公司变成Agent AI 时代组织的 5 个反思 范凌访谈"))
     组织变革关键
-    GEA Generative Enterpr…
-    深度分析
-    实践启示
-    相关实体
+    GEA Generative Enterprise Agent
 ```
 
 ## 核心洞察

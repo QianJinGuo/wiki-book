@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("使用 Kiro AI IDE 开发 基于Amazon E…"))
-    概述
-    深度分析
-      Spec 驱动开发的核心价值
-      MCP 集成策略分析
-      多 Agent 系统的'Agents as T…
-      智能降级设计
-    核心技术
-    实践启示
-      1. Spec 驱动开发是 AI 辅助编程的有…
-      2. MCP 集成是扩展 AI 能力的核心技术路径
-      3. 'Agents as Tools'模式适…
-      4. AI 辅助开发需要迭代优化心态
-    来源
-    相关实体
+  root(("使用 Kiro AI IDE 开发 基于Amazon EMR"))
+    Spec 驱动开发的核心价值
+    MCP 集成策略分析
+    多 Agent 系统的Agents as Tools模式
+    智能降级设计
+    Spec 驱动开发是 AI 辅助编程的有效范式
+    MCP 集成是扩展 AI 能力的核心技术路径
+    Agents as Tools模式适合复杂任务分解
+    AI 辅助开发需要迭代优化心态
 ```
 
 ## 概述

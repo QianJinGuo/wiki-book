@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 7.9KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Restrict access to sensitive…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 ```mermaid

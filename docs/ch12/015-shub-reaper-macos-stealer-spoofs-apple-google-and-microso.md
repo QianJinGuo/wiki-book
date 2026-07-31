@@ -9,15 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("SHub Reaper: macOS Stealer S…"))
-    相关实体
-    深度分析
-      攻击链分层伪装机制
-      免杀技术演进
-      地理封锁与目标筛选
-      投递管道与环境检测
-    实践启示
-    MITRE ATTandCK 映射
+  root(("SHub Reaper macOS Stealer Spoofs"))
+    攻击链分层伪装机制
+    免杀技术演进
+    地理封锁与目标筛选
+    投递管道与环境检测
+    MITRE ATTCK 映射
     检测规则
       Sigma 规则
       YARA 规则
@@ -29,7 +26,6 @@ mindmap
     威胁归因与演化
       SHub 恶意软件家族演化
       相关 macOS 窃密木马
-    结论
 ```
 
 ## 核心要点

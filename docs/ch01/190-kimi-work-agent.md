@@ -14,22 +14,21 @@
 
 ```mermaid
 mindmap
-  root(("Kimi Work：通用 Agent 战场从云端迁移到本地"))
-    相关实体
-    一句话定位
+  root(("Kimi Work 通用 Agent 战场从云端迁移到本地"))
     三个关键事件
-      ① OpenAI：Codex 周活 500 万…
-      ② Anthropic 提前布局
-      ③ Kimi 发布 Kimi Work（Beta）
-    5 大技术特性
-      ① Harness 搬到用户电脑上（核心架构决策）
-      ② Agent 集群：默认并行（最多 300 …
-      ③ Kimi WebBridge（浏览器桥接）
-      ④ 内置专业金融数据源
-    5 大测试场景实测
+      OpenAI Codex 周活 500 万 并入 ChatGPT
+      Anthropic 提前布局
+      Kimi 发布 Kimi Work Beta
+    大技术特性
+      Harness 搬到用户电脑上 核心架构决策
+      Agent 集群 默认并行 最多 300 个分身
+      Kimi WebBridge 浏览器桥接
+    大测试场景实测
     长程连贯性的工程细节
-    Vibe Coding → Vibe Work…
+    Vibe Coding Vibe Working 范式转移
     模型公司在通用 Agent 上的天然优势
+    Kimi Work 的局限 官方自评
+    核心断言
 ```
 
 ## 相关实体

@@ -67,18 +67,15 @@ Claude Code 负责人 Boris Cherny 也总结了关于  ** Opus 4.7  ** 的重磅
 
 ```mermaid
 mindmap
-  root(("刚刚Opus 4.7发布，相比4.6核心变化，与Clau…"))
-    深度分析
-      核心能力跃升的本质
-      Token 消耗增加的深层含义
-      视觉能力对 Agent 架构的影响
-      指令遵循的'字面化'陷阱
-    实践启示
-      1. 重新审视现有 Prompts 和 Har…
-      2. Effort 等级的选择策略
-      3. 充分利用 Auto mode 提升并行效率
-      4. 建立验证闭环是提升效率的关键
-    相关实体
+  root(("刚刚Opus 47发布 相比46核心变化 与Claude"))
+    核心能力跃升的本质
+    Token 消耗增加的深层含义
+    视觉能力对 Agent 架构的影响
+    指令遵循的字面化陷阱
+    重新审视现有 Prompts 和 Harness
+    Effort 等级的选择策略
+    充分利用 Auto mode 提升并行效率
+    建立验证闭环是提升效率的关键
 ```
 
 ## 深度分析

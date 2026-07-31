@@ -11,13 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("Evaluating AI Agents: A Prod…"))
-    Overview
-    Three-Layer Build-Time …
-    strands-agents-evals Fr…
+  root(("Evaluating AI Agents A Production"))
+    Three-Layer Build-Time Assessment
+    strands-agents-evals Framework
     Handling Non-Determinism
-    Production Monitoring w…
-    Deployment Pipeline wit…
+    Production Monitoring with
+    Deployment Pipeline with
     Results
     Source
 ```

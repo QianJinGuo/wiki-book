@@ -11,15 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("OpenAgents Workspace：多 Agent…"))
-    深度分析
-      架构设计理念
-      共享浏览器的技术挑战
-      与 Hermes Agent V014 Ar…
-      与 Building Web Search …
+  root(("OpenAgents Workspace 多 Agent 协作平台"))
+    问题定义 Agent 孤岛
+    三大核心组件
+    差异化定位
+    架构设计理念
+    共享浏览器的技术挑战
+    与 Hermes Agent V014 Architecture
+    与 Building Web Search Enabled
     局限与风险
-    实践启示
-    相关实体
 ```
 
 ## 摘要

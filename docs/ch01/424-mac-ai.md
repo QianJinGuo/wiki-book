@@ -29,17 +29,14 @@
 
 ```mermaid
 mindmap
-  root(("国产双开源：让Mac成为你的私人AI工作站"))
-    Cider：为 Apple Silicon 补…
-    Mano-P：让 Mac 长出「手」
-    Cider + Mano-P = Privat…
-    深度分析
-      Apple Silicon + MLX 生态的…
-      Cider 的关键技术突破：补齐 MLX 的量…
-      端侧 GUI Agent 的生产力革命
-      硬件限制的现实：内存瓶颈与自动进化
-    实践启示
-    相关实体
+  root(("国产双开源 让Mac成为你的私人AI工作站"))
+    Cider 为 Apple Silicon 补齐端侧 AI 生态
+    Mano-P 让 Mac 长出「手」
+    Cider Mano-P Private AI
+    Apple Silicon MLX 生态的战略转折点
+    Cider 的关键技术突破 补齐 MLX 的量化缺口
+    端侧 GUI Agent 的生产力革命
+    硬件限制的现实 内存瓶颈与自动进化
 ```
 
 ## Cider：为 Apple Silicon 补齐端侧 AI 生态

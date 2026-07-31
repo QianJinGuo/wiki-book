@@ -14,16 +14,6 @@ Anthropic + Cerebral Valley 联合黑客松：用 Opus 4.7 + Claude Code，一�
 - **技术实现**：Claude Managed Agents，一个 Opus 4.7 主治医师 Agent 管三个子 Agent（病人角色扮演/观察者评估/问诊复盘）
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 2026 黑客松获奖项目"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
 - [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)

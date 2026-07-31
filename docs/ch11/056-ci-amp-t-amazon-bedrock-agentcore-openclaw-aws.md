@@ -9,20 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("CI&amp;T基于 Amazon Bedrock Ag…"))
-    概述
-    核心技术
-    来源
-    相关实体
-    深度分析
-      Multi-Agent 协作架构的核心设计逻辑
-      Skills 层的设计价值
-      从'被动响应'到'主动发现'的关键转变
-      Amazon Bedrock AgentCor…
-    实践启示
-      架构设计层面
-      技术选型层面
-      组织流程层面
+  root(("CIampT基于 Amazon Bedrock AgentCore"))
+    Multi-Agent 协作架构的核心设计逻辑
+    Skills 层的设计价值
+    从被动响应到主动发现的关键转变
+    Amazon Bedrock AgentCore 的
+    架构设计层面
+    技术选型层面
+    组织流程层面
 ```
 
 ## 概述

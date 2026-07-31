@@ -9,15 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("The Race to Own the Agentic …"))
-    深度分析
-      1. 反驳「AI 杀 SaaS」叙事的六点框架
-      2. 威胁来源：从「水平竞争」到「垂直夹击」
-      3. 四步行动框架的内在逻辑
-      4. Moats 重新定义：Sean Dohe…
-    实践启示
-    关联阅读
-    相关实体
+  root(("The Race to Own the Agentic"))
+    反驳「AI 杀 SaaS」叙事的六点框架
+    威胁来源 从「水平竞争」到「垂直夹击」
+    四步行动框架的内在逻辑
+    Moats 重新定义 Sean Doherty 的「micro
 ```
 
 ## 深度分析

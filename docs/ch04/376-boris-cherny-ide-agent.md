@@ -7,17 +7,6 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/boris-cherny-interview-2026-ide-to-agent-console.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Boris Cherny 新访谈：开发工具正在从 IDE…"))
-    深度分析
-    实践启示
-    Related entities
-    关联阅读
-```
-
 ## 深度分析
 **1. 开发工具控制点正在从 IDE 光标迁移到 Agent 控制台**
 Boris Cherny 在访谈中描绘的愿景，核心不是"AI 帮工程师更快写代码"，而是整个软件工程的交互界面正在发生结构性迁移。过去的控制点是文件、函数、命令和光标；现在越来越多地变成目标、约束、权限、预算、验证和审查。这意味着开发工具的形态不再只是 IDE，而是一套能管理 Agent 工作流的控制台——观察、调度、审查。这不只是 Claude Code 一家的变化，而是整个软件工程控制点的一次迁移 。

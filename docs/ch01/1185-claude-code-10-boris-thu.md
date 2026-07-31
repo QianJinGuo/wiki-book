@@ -7,20 +7,6 @@
 # Claude Code Team 10 Tips Boris Data派Thu
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 团队 10 条经验：Boris …"))
-    相关实体
-    深度分析
-      核心观点
-      1.
-      内容结构
-      技术要点
-    实践启示
-```
-
 ## 相关实体
 
 - [claude skill 质检工具 skill craft](ch01/976-claude.html)

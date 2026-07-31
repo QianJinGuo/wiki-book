@@ -41,10 +41,10 @@
 
 ```mermaid
 mindmap
-  root(("用 LiteLLM WebSearch Intercep…"))
-    **1\. 引言**
-    **2\. 方案概述与原理**
-      2.1 问题背景
+  root(("用 LiteLLM WebSearch Interception"))
+    引言
+    方案概述与原理
+      问题背景
 ```
 
 ## **1\. 引言**

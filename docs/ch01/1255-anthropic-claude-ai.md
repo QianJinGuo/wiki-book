@@ -47,15 +47,12 @@ Claude的大脑里，竟然凭借本能长出了一个诡异的结构。
 
 ```mermaid
 mindmap
-  root(("刚刚，Anthropic切开Claude大脑！AI自发长…"))
+  root(("刚刚 Anthropic切开Claude大脑"))
     要点
-    深度分析
-      Jacobian Lens 的工作原理与创新
-      J-space 与全局工作空间理论的对标验证
-      点燃效应与白熊效应：跨物种的认知趋同
-      反事实反思训练与表征干预
-    实践启示
-    相关实体
+    Jacobian Lens 的工作原理与创新
+    J-space 与全局工作空间理论的对标验证
+    点燃效应与白熊效应 跨物种的认知趋同
+    反事实反思训练与表征干预
 ```
 
 ## 要点

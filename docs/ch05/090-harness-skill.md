@@ -14,13 +14,13 @@
 
 ```mermaid
 mindmap
-  root(("Harness 工程之道：Skill 原理与最佳实践"))
+  root(("Harness 工程之道 Skill 原理与最佳实践"))
     Skill 的定义
-    核心理念：渐进性披露（Progressive …
+    核心理念 渐进性披露 Progressive Disclosure
       三阶段模型
     System Prompt 与 Skill 的区别
     目录结构规范
-    SKILL.md 文件结构
+    SKILLmd 文件结构
       frontmatter 元信息
       其他关键字段
     与现有实体的关系

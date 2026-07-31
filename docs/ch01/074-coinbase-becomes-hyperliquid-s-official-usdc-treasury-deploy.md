@@ -9,23 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Coinbase Becomes Hyperliquid…"))
+  root(("Coinbase Becomes Hyperliquids"))
     事件背景
     关键角色分工
-      Coinbase——收益共享型 Treasur…
-      Circle——技术部署方
-      Native Markets——过渡期支持
-      Hyper Foundation——生态资助
-    深度分析
-      稳定币格局的马太效应
-      交易所与稳定币发行商的权力博弈
-      Circle 的战略卡位
-      HYPE 代币的即时暴涨
-    实践启示
-      对 DeFi 协议而言
-      对稳定币发行商而言
-      对交易员和投资者而言
-    相关实体
+      Coinbase收益共享型 Treasury Deployer
+      Circle技术部署方
+      Native Markets过渡期支持
+    稳定币格局的马太效应
+    交易所与稳定币发行商的权力博弈
+    Circle 的战略卡位
+    HYPE 代币的即时暴涨
+    对 DeFi 协议而言
+    对稳定币发行商而言
 ```
 
 ## 核心要点

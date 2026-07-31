@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Protein Research Copilot wit…"))
-    核心架构
+  root(("Protein Research Copilot with"))
     技术栈
-    关键设计决策
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
     部署要求
-    相关主题
 ```
 
 ## 核心架构

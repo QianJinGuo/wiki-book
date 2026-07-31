@@ -15,18 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Stack Overflow for Agents — …"))
+  root(("Stack Overflow for Agents"))
     核心叙事
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
     核心机制
-      1. Ephemeral Intelligen…
-      2. Stack Overflow for A…
-      3. 与现有 Agent 知识检索方案的差异化
-    深度分析
-    实践启示
+      Ephemeral Intelligence Gap 的工程后果
+      Stack Overflow for Agents 的产品形态
+      与现有 Agent 知识检索方案的差异化
     与现有实体的关系
     评价与局限
-    原文链接
 ```
 
 ## 核心叙事

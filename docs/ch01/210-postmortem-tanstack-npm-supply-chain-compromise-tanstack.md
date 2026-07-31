@@ -12,35 +12,25 @@ URL Source: https://tanstack.com/blog/npm-supply-chain-compromise-postmortem
 
 ```mermaid
 mindmap
-  root(("Postmortem: TanStack npm sup…"))
-    TL;DR
+  root(("Postmortem TanStack npm"))
+    TLDR
     Impact
       Packages affected
       What the malware does
     Timeline
-      Pre-attack cache poiso…
-      Detonation publish pha…
+      Pre-attack cache poisoning phase
+      Detonation publish phase
       Detection and response
     Root cause
-      1. pull_request_target …
-      2. GitHub Actions cache…
-      3. OIDC token extractio…
-      Why none alone is enough
+      pullrequesttarget Pwn Request
+      GitHub Actions cache poisoning
+      OIDC token extraction from runner
     Detection
       How we found out
-      IOC fingerprints for d…
-    深度分析
-      攻击链的工程复杂度
-      信任边界的三重穿越
-      OIDC Trusted Publisher …
-      自传播 payload 的想象空间
-    实践启示
-      对开源维护者的建议
-      对安全团队的建议
-    Lessons learned
-      What went well
-      What could have been be…
-      What we got lucky on
+      IOC fingerprints for downstream
+    攻击链的工程复杂度
+    信任边界的三重穿越
+    OIDC Trusted Publisher 的安全隐患
 ```
 
 ## TL;DR

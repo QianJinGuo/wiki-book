@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Qwen-Image-Flash: Beyond Obj…"))
+  root(("Qwen-Image-Flash Beyond Objective"))
     核心贡献
     方法概述
-    实验设置（来自 Appendix A）
-    失败尝试（Section 6.1 'Unsuc…
-    与现有 image-generation 实体…
+    实验设置 来自 Appendix A
+    失败尝试 Section 61 Unsuccessful
+    与现有 image-generation 实体的关系
     对 AI Engineering 实践的启示
-    相关实体
     关键引用
 ```
 

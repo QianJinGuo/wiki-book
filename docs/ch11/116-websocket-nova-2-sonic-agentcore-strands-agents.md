@@ -9,18 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("快时尚电商行业智能体设计思路与应用实践（八）基于 Web…"))
-    概述
-    核心技术
-    来源
-    深度分析
-      1. WebSocket 全双工通信架构：替代…
-      2. 三层解耦架构：Nova 2 Sonic …
-      3. Barge-in 实时中断机制：实现自然…
-      4. Tool Calling 打通语音与电商…
-    实践启示
-    架构图
-    相关实体
+  root(("快时尚电商行业智能体设计思路与应用实践 八 基于"))
+    WebSocket 全双工通信架构 替代 HTTP 请求-响应范式
+    三层解耦架构 Nova 2 Sonic Strands
+    Barge-in 实时中断机制 实现自然对话体验
+    Tool Calling 打通语音与电商业务系统
 ```
 
 ## 概述

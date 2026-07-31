@@ -13,16 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("阿里数据研发 Harness Engineering：N…"))
-    深度分析
-      数据研发领域特有的挑战
-      DSL 作为语义约束层
-      Harness vs CI/CD Pipeli…
-      以 Agent 养 Agent 的自我迭代闭环
-    实践启示
-    相关实体
-    第 2 来源 — 1688数据中心 Multi…
-      核心增量
+  root(("阿里数据研发 Harness Engineering NL2SQL"))
+    数据研发领域特有的挑战
+    DSL 作为语义约束层
+    Harness vs CICD Pipeline 的核心区别
+    以 Agent 养 Agent 的自我迭代闭环
+    核心增量
 ```
 
 ## 摘要

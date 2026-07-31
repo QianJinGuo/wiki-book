@@ -12,16 +12,6 @@
 *   [Community](https://lovable.dev/community)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building is just the beginni…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 
 ```mermaid

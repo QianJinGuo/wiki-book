@@ -13,17 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Building a secure auth code …"))
-    核心内容
-    技术要点
-    深度分析
-      1. AgentCore Gateway 的双…
-      2. PKCE 与无密钥客户端设计的安全意义
-      3. 令牌验证的灵活性与 Gateway 的 …
-      4. 刷新令牌的生命周期管理
-    实践启示
-    相关实体
-    相关主题
+  root(("Building a secure auth code flow"))
+    AgentCore Gateway 的双角色 OAuth
+    PKCE 与无密钥客户端设计的安全意义
+    令牌验证的灵活性与 Gateway 的 IdP 中立性
+    刷新令牌的生命周期管理
 ```
 
 ## 核心内容

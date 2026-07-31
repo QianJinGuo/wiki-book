@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("The Bitter Lesson versus The…"))
-    深度分析
-      1. Sutton 苦味教训的精确表述
-      2. Manus 的'工艺陷阱'与 ChatG…
-      3. 从 Garbage Can 到'Bitt…
-      4. '哪种问题'才是企业现实——未解之问
-    实践启示
-    相关实体
+  root(("The Bitter Lesson versus The"))
+    Sutton 苦味教训的精确表述
+    Manus 的工艺陷阱与 ChatGPT agent 的结果训练
+    从 Garbage Can 到Bitter Lesson
+    哪种问题才是企业现实未解之问
 ```
 
 ## 摘要

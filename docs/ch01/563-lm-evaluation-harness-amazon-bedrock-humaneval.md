@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("使用 lm evaluation harness 评估 …"))
-    深度分析
-      HumanEval 的饱和与代码生成评测的演进方向
-      Prompt Caching 的经济学
-      sweep 模式的方法论意义
-      Bedrock 托管环境 vs 直接 API …
-    实践启示
-    相关实体
+  root(("使用 lm evaluation harness 评估"))
+    HumanEval 的饱和与代码生成评测的演进方向
+    Prompt Caching 的经济学
+    sweep 模式的方法论意义
+    Bedrock 托管环境 vs 直接 API 的评估一致性
 ```
 
 ## 摘要

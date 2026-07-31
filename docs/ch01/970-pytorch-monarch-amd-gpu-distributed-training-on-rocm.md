@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("PyTorch Monarch: AMD GPU Dis…"))
-    背景
+  root(("PyTorch Monarch AMD GPU"))
     技术架构
-    深度分析
-      从'检查点容错'到'架构级容错'的范式转变
-      零拷贝通信与 ROCm 生态的关键跨越
-      弹性扩展的实际意义
-    实践启示
+    从检查点容错到架构级容错的范式转变
+    零拷贝通信与 ROCm 生态的关键跨越
+    弹性扩展的实际意义
     与传统检查点的对比
 ```
 

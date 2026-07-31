@@ -60,28 +60,19 @@ As agent adoption scaled, we saw a common pattern emerge across enterprises, inc
 
 ```mermaid
 mindmap
-  root(("Powering agentic AI sales st…"))
-    **The challenge: Agent …
-    **Why Bedrock AgentCore…
-    **What Field Advisor en…
-    **How Amazon Bedrock Ag…
-      **Key architecture comp…
-      **Core architectural ca…
-      **Orchestration and mod…
-      **Multi-agent coordinat…
-    **Conclusion**
+  root(("Powering agentic AI sales"))
+    The challenge Agent proliferation
+    Why Bedrock AgentCore Built for
+    What Field Advisor enables for
+    How Amazon Bedrock AgentCore
+      Key architecture components
+      Core architectural capabilities
+      Orchestration and model
+    Conclusion
       Acknowledgements
     About the authors
-    深度分析
-      1. 从定制基础设施到平台服务的范式转移
-      2. Supervisor 模式对认知负载管理…
-      3. 中断机制作为跨边界协同的统一协议
-      4. Prompt Caching 作为多轮对…
-    实践启示
-      1. 优先评估平台成熟度，而非功能集合
-      2. 从单一 Supervisor 开始，工具…
-      3. 用 Hook 机制处理横切关注点，而非装…
-      4. 生产流量在线评估优于离线测试集
+    从定制基础设施到平台服务的范式转移
+    Supervisor 模式对认知负载管理的启示
 ```
 
 ## **The challenge: Agent proliferation without orchestration**

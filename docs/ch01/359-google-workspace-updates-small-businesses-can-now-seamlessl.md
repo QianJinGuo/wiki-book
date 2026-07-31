@@ -9,23 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Google Workspace Updates: Sm…"))
+  root(("Google Workspace Updates Small"))
     背景与问题
     功能详解
       自动化用户导入机制
       数据迁移范围
       适用版本与可用性
-      部署节奏
     技术实现要点
       迁移前置条件
       与传统迁移方式的对比
-    实践建议
-      对于正在评估迁移的企业
-      对于 IT 管理员
-    深度分析
-    实践启示
+    对于正在评估迁移的企业
+    对于 IT 管理员
     相关资源
-    相关实体
 ```
 
 ## 核心要点

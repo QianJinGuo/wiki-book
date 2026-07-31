@@ -11,18 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("Static Devirtualization of T…"))
-    关键要点
+  root(("Static Devirtualization of Themida"))
     核心方法论
-      引导式符号执行（Guided Symbolic…
+      引导式符号执行 Guided Symbolic Evaluation
       符号执行的核心机制
     优化 Pass 系统
       Pass 间的协同效应
     Themida 特有的虚拟化条件跳转
-    降级（Lowering）阶段
-    实验结果
+    降级 Lowering 阶段
     对抗符号执行的方向
     跨混淆器泛化能力
+    符号执行是去虚拟化的主引擎 而非 VM handler 模式匹配
+    Pass 间的协同收敛是 VM 脚手架坍缩的驱动机制
 ```
 
 ## 摘要

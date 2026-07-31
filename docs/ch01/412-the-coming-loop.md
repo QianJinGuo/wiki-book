@@ -14,16 +14,14 @@
 ```mermaid
 mindmap
   root(("The Coming Loop"))
-    深度分析
-      Harness Loop 的架构模式
-      与 Harness Engineering …
-      代码质量的长期影响
-      软件工程的范式转变
-    实践启示
-      对 Harness 工程师的建议
-      对代码质量的关注
-      对 Agent 系统设计的启示
-    相关实体
+    两种循环的区分
+    循环在哪些领域有效
+    循环在持久代码中的问题
+    软件作为有机体
+    Harness Loop 的架构模式
+    与 Harness Engineering Framework 的关系
+    代码质量的长期影响
+    软件工程的范式转变
 ```
 
 ## 摘要

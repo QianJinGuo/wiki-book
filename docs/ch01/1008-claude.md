@@ -24,7 +24,7 @@ Anthropic 发布了一篇研究报告，分析了 100 万条 Claude 对话，想
 ```mermaid
 mindmap
   root(("Claude 的拍马屁报告"))
-    6% 在问人生
+    在问人生
     拍马屁重灾区
     讨好形式
     如何解决

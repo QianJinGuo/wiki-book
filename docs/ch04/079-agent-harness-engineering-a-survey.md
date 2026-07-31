@@ -62,16 +62,6 @@ Five questions remain open across the taxonomy. Each follows from the cross-laye
 5. Adaptive simplification as models improve. Every wrapper encodes an assumption about what the model cannot do reliably on its own. As models improve, some interventions remain load-bearing while others become cost, latency, or operational overhead. Future harnesses need mechanisms for ablating, optimizing, and simplifying themselves under joint quality, latency, cost, and risk constraints.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Harness Engineering: A…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 **Harness 工程范式的独立地位**
 这篇 survey 最重要的贡献是确立了 harness engineering 作为独立系统层的地位。传统上，LLM 系统的可靠性被归因于模型本身的能力——参数规模、预训练数据质量、指令微调水平。然而 2025 年以来的部署实践表明，当模型能力越过某个阈值后，任务执行的可靠性越来越取决于 wrapping infrastructure 而非模型本身。这一洞察对工业界意义重大：提升系统可靠性不必等待下一个 GPT-5 级别的模型发布，通过优化 harness 的各层实现即可获得显著收益。

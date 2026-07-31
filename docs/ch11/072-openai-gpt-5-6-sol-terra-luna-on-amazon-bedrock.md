@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("OpenAI GPT-5.6 Sol/Terra/Lun…"))
-    深度分析
-      三模型分层策略：从'一个模型干所有事'到'按需…
-      Prompt Caching 的工程经济学
-      Bedrock 战略层分析：AWS 的模型中间…
-    实践启示
-    相关实体
+  root(("OpenAI GPT-56 SolTerraLuna on"))
+    三模型分层策略 从一个模型干所有事到按需选择
+    Prompt Caching 的工程经济学
+    Bedrock 战略层分析 AWS 的模型中间层策略
 ```
 
 ## 摘要

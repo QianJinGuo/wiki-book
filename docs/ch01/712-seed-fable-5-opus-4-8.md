@@ -13,17 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Seed 开启持续进化，Fable 5 点评：Opus …"))
+  root(("Seed 开启持续进化 Fable 5 点评 Opus 48 水准"))
     实战案例深度分析
-      Case 1：前端重构
-      Case 2：营销号清理
-      Case 3：AI Lab 招聘分析
-      VLM 视觉能力
-    深度分析
-      Evolving 模式的产品设计价值
-      子 Agent 模式的自主决策水平
-      三周进化速度的行业意义
-    实践启示
+      Case 1 前端重构
+      Case 2 营销号清理
+      Case 3 AI Lab 招聘分析
+    Evolving 模式的产品设计价值
+    子 Agent 模式的自主决策水平
+    三周进化速度的行业意义
     相关实体链接
 ```
 

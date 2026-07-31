@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐⭐ | 4.8KB | `entities/www.blocksandfiles.com-5241795.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Redis agentic AI flowers wit…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - **Iris Context Engine 发布**：Redis 推出 Iris，一个面向 AI Agent 的统一上下文和记忆层，使企业数据能被 Agent 有效访问和利用。Iris 并非数据库，而是构建在 Redis 之上的"Agent 平台"
 - **三核心组件架构**：Redis Context Retriever（外部数据导航）、Redis Agent Memory（短长期记忆）、Redis Data Integration / RDI（实时数据流同步）构成完整的数据-Agent 接口层

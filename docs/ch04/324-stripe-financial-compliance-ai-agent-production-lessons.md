@@ -13,22 +13,18 @@ Stripe 在 AWS Bedrock 上构建生产级合规审查 Agent 系统，处理年 $
 
 ```mermaid
 mindmap
-  root(("Stripe Financial Compliance …"))
-    核心架构：ReAct + DAG 任务分解
-      1. 任务分解为 DAG（有向无环图）
-      2. ReAct Agent 框架
-      3. 专用 Agent 服务
+  root(("Stripe Financial Compliance AI"))
+    核心架构 ReAct DAG 任务分解
+      任务分解为 DAG 有向无环图
+      ReAct Agent 框架
+      专用 Agent 服务
     LLM Proxy 架构
-    成本优化：Prompt Caching
+    成本优化 Prompt Caching
     生产结果
-    关键经验（可复用模式）
+    关键经验 可复用模式
     与现有 Agent 实体的差异化
-    深度分析
-      DAG 任务分解 vs 单体 Agent 的架…
-      ReAct 闭环控制的工程实现细节
-      Agent 与传统 ML 基础设施分离的必然性
-      LLM Proxy 模式的生产价值
-    实践启示
+    DAG 任务分解 vs 单体 Agent 的架构权衡
+    ReAct 闭环控制的工程实现细节
 ```
 
 ## 核心架构：ReAct + DAG 任务分解

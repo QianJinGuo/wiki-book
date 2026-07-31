@@ -13,16 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Proactive Memory Agent — Met…"))
-    核心发现：Behavioral State D…
-    架构设计：双阶段记忆干预
-      Phase 1：记忆管理（Memory Man…
-      Phase 2：干预选择（Interventi…
-    选择性干预  被动检索
+  root(("Proactive Memory Agent Meta AI Wu"))
+    核心发现 Behavioral State Decay
+    架构设计 双阶段记忆干预
+      Phase 1 记忆管理 Memory Management
+      Phase 2 干预选择 Intervention Selection
+    选择性干预 被动检索
     与现有记忆架构的关系
     开放权重训练
     评价与局限
-    相关实体
 ```
 
 ## 核心发现：Behavioral State Decay

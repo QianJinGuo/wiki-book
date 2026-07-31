@@ -17,26 +17,21 @@ External → MCP → Skill → Agent → Memory → LLM
 
 ```mermaid
 mindmap
-  root(("MCP · Skill · Agent · LLM · …"))
-    相关实体
-    核心架构（三层结构）
-      1. 能力执行主链
-      2. 认知-行动-记忆闭环
-      3. 横切全局的Runtime（Harness）
+  root(("MCP Skill Agent LLM Harness 一张图讲清"))
+    核心架构 三层结构
+      能力执行主链
+      认知-行动-记忆闭环
+      横切全局的Runtime Harness
     逐层拆解
-      L4：Agent（应用与编排层）
-      L3：LLM（认知引擎）
-      L2：Skill（能力SDK）
-      L1：MCP（连接与协议层）
+      L4 Agent 应用与编排层
+      L3 LLM 认知引擎
+      L2 Skill 能力SDK
     Memory 分层
     Harness 的六大职责
-    典型执行流程（闭环）
+    典型执行流程 闭环
     关键认知
-    深度分析
-      1. 分层架构是 Agentic AI 系统从…
-      2. Harness 作为'操作系统'类比，揭…
-      3. Memory 的分层设计（短期/长期）是…
-      4. MCP 作为'统一接口标准'解决了 AI…
+    分层架构是 Agentic AI 系统从 Demo 走向生产的核心约束
+    Harness 作为操作系统类比 揭示了 Runtime
 ```
 
 ## 相关实体

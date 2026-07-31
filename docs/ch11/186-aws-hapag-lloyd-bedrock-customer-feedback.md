@@ -14,17 +14,14 @@ Over the past years, the Digital Customer Experience and Engineering team has ev
 
 ```mermaid
 mindmap
-  root(("AWS Hapag Lloyd Bedrock Cust…"))
-    **Understanding user im…
-    相关实体
-    深度分析
-      核心架构洞察
-      AI-Native 组织演进
-      反馈驱动的产品迭代闭环
-    实践启示
-      企业级 AI 应用的关键考量
-      复制路径建议
-      更新日期
+  root(("AWS Hapag Lloyd Bedrock Customer"))
+    Understanding user impact
+    核心架构洞察
+    AI-Native 组织演进
+    反馈驱动的产品迭代闭环
+    企业级 AI 应用的关键考量
+    复制路径建议
+    更新日期
 ```
 
 ## **Understanding user impact.**

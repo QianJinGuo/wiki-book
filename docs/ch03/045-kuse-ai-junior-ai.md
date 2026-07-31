@@ -12,13 +12,10 @@
 
 ```mermaid
 mindmap
-  root(("Kuse.ai Junior — 全球第一个AI员工"))
+  root(("Kuseai Junior 全球第一个AI员工"))
     基本信息
     核心设计
     两个AI员工
-    关键洞察
-    深度分析
-    实践启示
     与本文相关
 ```
 

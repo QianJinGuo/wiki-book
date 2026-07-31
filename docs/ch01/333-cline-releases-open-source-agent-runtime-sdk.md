@@ -13,27 +13,19 @@
 
 ```mermaid
 mindmap
-  root(("Cline releases open-source a…"))
+  root(("Cline releases open-source agent"))
     技术架构
       各层职责详解
     核心特性
-      1. Agent Teams and Subage…
-      2. 插件系统（Plugin System）
-      3. 原生内置能力
-      4. 连接器通道（Connector Chan…
+      Agent Teams Subagents
+      插件系统 Plugin System
+      原生内置能力
     性能基准
     产品背景
     开发者资源
-    相关实体
-    深度分析
-      SDK 分层架构的设计哲学
-      Session 持久性与长程任务的意义
-      基准测试的方法论问题
-      插件系统的安全边界
-    实践启示
-      对 Agent SDK 开发者的建议
-      对企业集成团队的建议
-      对 Agent 评测设计者的建议
+    SDK 分层架构的设计哲学
+    Session 持久性与长程任务的意义
+    基准测试的方法论问题
 ```
 
 ## 核心要点

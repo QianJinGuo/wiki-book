@@ -13,16 +13,13 @@ Amazon Bedrock 现支持 MiniMax M2 系列三款开源权重模型（M2、M2.1�
 
 ```mermaid
 mindmap
-  root(("在 Amazon Bedrock 上运行 MiniMax…"))
+  root(("在 Amazon Bedrock 上运行 MiniMax 模型"))
     MiniMax M2 系列
     部署选项
-    深度分析
-      MiniMax M2.5 的 Agent-Na…
-      MoE 架构的推理成本经济学
-      Bedrock 的双端点设计：开发者体验的工程取舍
-      伸缩与稳速：on-demand 推理的实践模式
-    实践启示
-    相关实体
+    MiniMax M25 的 Agent-Native 训练范式
+    MoE 架构的推理成本经济学
+    Bedrock 的双端点设计 开发者体验的工程取舍
+    伸缩与稳速 on-demand 推理的实践模式
 ```
 
 ## MiniMax M2 系列

@@ -9,13 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Kimi K3，这是 DeepSeek 2.0 时刻"))
-    深度分析
-      K3 的架构创新与扩展效率
-      LMArena 登顶的行业意义
-      长程自主 Agent 能力的实证
-      'DeepSeek 2.0 时刻'的深层含义
-    实践启示
+  root(("Kimi K3 这是 DeepSeek 20 时刻"))
+    K3 的架构创新与扩展效率
+    LMArena 登顶的行业意义
+    长程自主 Agent 能力的实证
+    DeepSeek 20 时刻的深层含义
     相关实体链接
 ```
 

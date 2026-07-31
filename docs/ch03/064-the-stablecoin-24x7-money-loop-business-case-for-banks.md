@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("The stablecoin 24x7 money lo…"))
-    核心论点（Core Thesis）
-    银行业务对比矩阵（Business Trade…
-    大行（G-SIB）双轨布局
+  root(("The stablecoin 24x7 money loop"))
+    核心论点 Core Thesis
+    银行业务对比矩阵 Business Trade-off Matrix
+    大行 G-SIB 双轨布局
     行业关键数据点
     监管框架
     Cash App 集成案例
-    三层洞察（Why this matters f…
-    深度分析
+    三层洞察 Why this matters for AI
+    引用与回链
 ```
 
 ## 核心论点（Core Thesis）

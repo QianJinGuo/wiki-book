@@ -13,13 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("CMU PACE — Proxy for Agentic…"))
-    深度分析
-      代理评测的底层逻辑：能力维度的可迁移性
-      Local vs Global 选题机制的理论基础
-      Agent 基准的能力指纹分析
-      局限性：代理评测与完整评测的边界
-    实践启示
+  root(("CMU PACE Proxy for Agentic"))
+    代理评测的底层逻辑 能力维度的可迁移性
+    Local vs Global 选题机制的理论基础
+    Agent 基准的能力指纹分析
+    局限性 代理评测与完整评测的边界
 ```
 
 ## 核心要点

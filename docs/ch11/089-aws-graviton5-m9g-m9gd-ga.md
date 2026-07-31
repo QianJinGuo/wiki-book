@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("AWS Graviton5 M9g/M9gd 实例 GA…"))
-    三个独有贡献
-    关键架构升级（vs Graviton4）
+  root(("AWS Graviton5 M9gM9gd 实例 GA 公告"))
+    关键架构升级 vs Graviton4
     网络与存储带宽
-    M9g 实例规格（部分）
-    M9gd 实例（本地 NVMe SSD）
-    Nitro Isolation Engine（…
+    M9g 实例规格 部分
+    M9gd 实例 本地 NVMe SSD
+    Nitro Isolation Engine 安全增强
     客户案例
     适用工作负载
+    可用区域
 ```
 
 ## 三个独有贡献

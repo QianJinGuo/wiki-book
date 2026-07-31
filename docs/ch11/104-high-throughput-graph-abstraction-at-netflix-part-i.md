@@ -13,18 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("High-Throughput Graph Abstra…"))
-    核心问题
+  root(("High-Throughput Graph Abstraction"))
     规模指标
     设计取舍
-      1. 写入路径
-      2. 存储抽象
-      3. 实时性 vs 准确性
+      写入路径
+      存储抽象
+      实时性 vs 准确性
     创新点
     与传统 Service Map 的差异
     关键 trade-off
     待续
-    相关实体
+    层级化存储架构的工程哲学
+    边与属性的分离索引策略
 ```
 
 ## 核心问题

@@ -13,23 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("SchemaFlow: OpenAI Cookbook …"))
+  root(("SchemaFlow OpenAI Cookbook"))
     SchemaFlow 是什么
     五大核心设计模式
-      1. Staged agentic workf…
-      2. Pydantic schema 强类型约束
-      3. PDF RAG context
-      4. Promptfoo eval guard…
+      Staged agentic workflow
+      Pydantic schema 强类型约束
+      PDF RAG context
     与现有 wiki 实体的差异化
-    实践启示（Actionable）
-    深度分析
-      1. Staged workflow 的可观测…
-      2. Generator-Evaluator …
-      3. RAG 是上下文窗口的成本优化策略
-      4. Pydantic schema 将 LL…
-    三个独有贡献（不应合并到现有 entity）
-    上线状态 / 链接
-    相关实体
+    实践启示 Actionable
+    Staged workflow 的可观测性价值
+    Generator-Evaluator 分离是
+    RAG 是上下文窗口的成本优化策略
+    Pydantic schema 将 LLM
 ```
 
 ## SchemaFlow 是什么

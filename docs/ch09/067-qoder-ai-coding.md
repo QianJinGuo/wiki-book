@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Qoder 企业版全球发布：让 AI Coding 从"…"))
+  root(("Qoder 企业版全球发布 让 AI Coding"))
     产品功能详解
       共享 Credits 资源池
       分级模型权限管控
-      企业专属 Plugin/Skill 市场
-      QMind 知识引擎
-    深度分析
-      1. AI Coding 从'效率提升'到'组…
-      2. Plugin/Skill 市场作为'组织…
-      3. '模型权限按代码库分级'是解决企业 AI…
-      4. RepoWiki 解决了'AI 理解大型…
-    实践启示
+      企业专属 PluginSkill 市场
+    AI Coding 从效率提升到组织能力的范式跃迁
+    PluginSkill 市场作为组织知识资产管理的基础设施
+    模型权限按代码库分级是解决企业 AI 安全焦虑的关键设计
+    RepoWiki 解决了AI 理解大型代码库的工程瓶颈
 ```
 
 ## 核心要点

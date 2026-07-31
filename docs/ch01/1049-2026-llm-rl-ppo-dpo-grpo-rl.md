@@ -7,20 +7,6 @@
 # 2026 年面向 LLM 的 RL 方法总结：从 PPO 到 DPO 到 GRPO，再到多智能体 RL
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("2026 年面向 LLM 的 RL 方法总结：从 PPO…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/888-self-taught-rlvr.html)

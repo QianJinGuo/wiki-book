@@ -27,9 +27,9 @@ I want to cover the problem we set out to solve with Crossplane, the parts of th
 
 ```mermaid
 mindmap
-  root(("Building Modelplane on Cross…"))
-    The problem, in Crosspl…
-    What made it buildable:…
+  root(("Building Modelplane on Crossplane"))
+    The problem in Crossplane terms
+    What made it buildable Developer
     Designing the API
 ```
 

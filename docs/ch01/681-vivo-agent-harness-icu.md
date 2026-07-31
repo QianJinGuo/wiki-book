@@ -13,7 +13,7 @@ vivo 互联网项目团队 Jiang Zuohan 提出以 **"大模型是大脑，Agent 
 
 ```mermaid
 mindmap
-  root(("vivo Agent 系统分析：大模型是大脑不是马，Ha…"))
+  root(("vivo Agent 系统分析 大模型是大脑不是马 Harness"))
     核心隐喻对比
     四大身体系统问题
     Harness-as-ICU 框架
@@ -21,7 +21,6 @@ mindmap
     当前阶段的本质判断
     关键独到判断
     与其他实体的关系
-    实践启示
 ```
 
 ## 核心隐喻对比

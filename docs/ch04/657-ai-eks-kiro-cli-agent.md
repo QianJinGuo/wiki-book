@@ -13,7 +13,7 @@ AWS Kiro-cli 结合 Arm MCP Server 与 Kiro Powers，让 AI Agent 自主执行 E
 
 ```mermaid
 mindmap
-  root(("AI 时代的 EKS 升级范式：Kiro-cli Age…"))
+  root(("AI 时代的 EKS 升级范式 Kiro-cli Agent"))
     传统 EKS 升级的三大痛点
     Kiro-cli 架构
     对照实验

@@ -9,29 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("NotebookLM：Google AI 笔记本工具"))
-    Overview
+  root(("NotebookLM Google AI 笔记本工具"))
     Key Facts
     Core Features
-      Audio Overviews（音频概览）
+      Audio Overviews 音频概览
       Source Groundning
-      Notebook（笔记本）
-      Other Features
-    Pricing and Usage Limits
+      Notebook 笔记本
+    Pricing Usage Limits
       具体额度限制
-      Google Workspace / 教育账号
+      Google Workspace 教育账号
     Strengths
     Weaknesses
-    深度分析
-      定位：垂直场景的极致深度 vs 通用工具的广度
-      音频概览：重新定义'阅读'这个动作
-      竞争态势：在知识管理工具谱系中的位置
-      技术护城河与不确定性
-    实践启示
-      何时使用 NotebookLM（最佳场景）
-      使用策略建议
-      局限性规避
-      未来升级方向
+    定位 垂直场景的极致深度 vs 通用工具的广度
+    音频概览 重新定义阅读这个动作
+    竞争态势 在知识管理工具谱系中的位置
 ```
 
 ## Overview

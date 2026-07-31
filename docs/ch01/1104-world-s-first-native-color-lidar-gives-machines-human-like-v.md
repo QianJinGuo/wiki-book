@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.7KB | `entities/technology-ouster-rev8-native-color-lidar.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("World’s first native color L…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - ...
 

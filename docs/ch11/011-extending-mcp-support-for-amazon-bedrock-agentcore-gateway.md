@@ -43,26 +43,21 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Extending MCP support for Am…"))
-    Unite MCP servers for e…
-    Surface your MCP server…
-    Dynamic listing for run…
-    Streaming, session mana…
+  root(("Extending MCP support for Amazon"))
+    Unite MCP servers for enterprise
+    Surface your MCP server
+    Dynamic listing for runtime
+    Streaming session management and
       Streamable HTTP
       Session management
       Elicitation
-    OAuth 2.0 on-behalf-of …
-    Conclusion
+    OAuth 20 on-behalf-of token exchange
     About the authors
       Anagh Agrawal
       Eashan Kaushik
       Ke Ma
-      Kyungna Kim
-    第 2 来源 — MCP 2026-07-28…
-      MCP 无状态化
-      HTTP 标准化
-      扩展系统与授权升级
-      实践启示
+    MCP 无状态化
+    HTTP 标准化
 ```
 
 ## Unite MCP servers for enterprise through AgentCore Gateway

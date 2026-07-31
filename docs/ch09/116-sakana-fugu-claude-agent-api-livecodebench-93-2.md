@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Sakana Fugu 发布：Claude 禁令后的多 …"))
-    深度分析
-      技术架构：可交换 Agent 池与协调器模型
-      基准测试的可信度争议
-      商业定位与市场影响
-    实践启示
-    相关实体
+  root(("Sakana Fugu 发布 Claude 禁令后的多 Agent"))
+    技术架构 可交换 Agent 池与协调器模型
+    基准测试的可信度争议
+    商业定位与市场影响
 ```
 
 ## 摘要

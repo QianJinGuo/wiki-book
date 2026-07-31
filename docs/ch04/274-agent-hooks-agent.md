@@ -15,15 +15,11 @@ Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——
 
 ```mermaid
 mindmap
-  root(("Agent Hooks：把 Agent 工作流变成可编程的"))
-    相关实体
-    核心论点
+  root(("Agent Hooks 把 Agent 工作流变成可编程的"))
     生命周期模型
     设计原则
-    核心价值：确定性
+    核心价值 确定性
     落地路径
-    深度分析
-    实践启示
 ```
 
 ## 相关实体

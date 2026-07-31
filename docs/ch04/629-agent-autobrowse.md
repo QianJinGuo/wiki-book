@@ -7,21 +7,6 @@
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("浏览器 Agent 的失忆问题：Autobrowse 如…"))
-    相关实体
-    深度分析
-      核心观点
-    核心问题：探索税（Discovery Tax）
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [浏览器 agent 的失忆问题：autobrowse 如何让每次探索变成永久技能](../ch07/040-autobrowse-browserbase-persistent-skill.html)

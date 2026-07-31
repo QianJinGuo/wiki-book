@@ -9,9 +9,8 @@
 
 ```mermaid
 mindmap
-  root(("Gemma 4 Multi Token Predicti…"))
-    概述
-    问题背景：为什么 LLM 推理慢？
+  root(("Gemma 4 Multi Token Prediction"))
+    问题背景 为什么 LLM 推理慢
     MTP 核心技术
       Speculative Decoding 原理
       架构优化
@@ -19,12 +18,13 @@ mindmap
       基准测试结果
       适用模型
       硬件适配细节
-    应用场景
     使用方法
       支持框架
       官方文档
     技术溯源
     相关资源
+    参见
+    引用
 ```
 
 ## 概述

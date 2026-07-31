@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 3.0KB | `entities/exaforceagenticsocplatformandmdr.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Exaforce | Agentic SOC Platf…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论

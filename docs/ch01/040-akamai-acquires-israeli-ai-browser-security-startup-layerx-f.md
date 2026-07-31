@@ -9,21 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Akamai acquires Israeli AI b…"))
-    相关实体
+  root(("Akamai acquires Israeli AI"))
     交易概况
     公司背景
       LayerX
       Akamai 的以色列收购脉络
-    深度分析
-      1. 为什么这笔交易值得关注
-      2. 估值逻辑：~$10M ARR → $20…
-      3. Secure Enterprise Br…
-      4. Akamai 的战略意图
-    实践启示
-      对于安全团队
-      对于创业者和投资人
-      对于 MandA 策略
+    为什么这笔交易值得关注
+    估值逻辑 10M ARR 205M 20x 溢价合理吗
+    Secure Enterprise Browser SEB 赛道分析
+    Akamai 的战略意图
+    对于安全团队
+    对于创业者和投资人
 ```
 
 ## 核心要点

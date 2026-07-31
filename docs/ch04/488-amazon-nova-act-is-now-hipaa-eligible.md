@@ -9,20 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Nova Act is now HIPAA…"))
+  root(("Amazon Nova Act is now HIPAA"))
     技术规格
     使用前提
-    深度分析
-      HIPAA 合规资质对 AI Agent 领域…
-      技术架构层面的关键设计
-      AWS 共享责任模型的落地实践
-      市场竞争格局
-    实践启示
-      快速启动路径
-      优先自动化场景推荐
-      安全与合规 checklist
-      集成架构建议
-    相关实体
+    HIPAA 合规资质对 AI Agent 领域的战略意义
+    技术架构层面的关键设计
+    AWS 共享责任模型的落地实践
+    市场竞争格局
+    快速启动路径
+    优先自动化场景推荐
 ```
 
 ## 核心要点

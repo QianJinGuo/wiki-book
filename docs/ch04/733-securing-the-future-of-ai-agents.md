@@ -15,13 +15,14 @@
 
 ```mermaid
 mindmap
-  root(("Securing the future of AI ag…"))
-    深度分析
-      '假设 misalignment' 的安全哲学
-      Detection-Response 矩阵的工…
-      百万轨迹数据的启示
-    实践启示
-    相关实体
+  root(("Securing the future of AI agents"))
+    AI Control 框架的三层防御
+    威胁建模方法论
+    双维度安全等级体系
+    大规模轨迹分析实践
+    假设 misalignment 的安全哲学
+    Detection-Response 矩阵的工程意义
+    百万轨迹数据的启示
 ```
 
 ## 摘要

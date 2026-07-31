@@ -13,10 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Why Real Workload Performanc…"))
-    Overview
-    Defining the problem: W…
-    Four questions to ask a…
+  root(("Why Real Workload Performance is"))
+    Defining the problem What
+    Four questions to ask about any
 ```
 
 ## Overview

@@ -14,17 +14,20 @@
 
 ```mermaid
 mindmap
-  root(("MSA 稀疏注意力三国杀：NSA / DSA / MoB…"))
-    一句话总结
+  root(("MSA 稀疏注意力三国杀 NSA DSA MoBA MSA"))
     为什么大家都奔向稀疏
-    MSA 架构：粗筛 + 精算
-      第一步：粗筛
-      第二步：精算
-    索引分支训练：KL 对齐
-    Kernel 创新：Outer Gather Q
-    MSA 性能数据（109B 实验模型，1M 上…
-    MSA 能力不掉：3T token 对照实验
-    附录最有意思：head 涌现的三种模式
+    MSA 架构 粗筛 精算
+      第一步 粗筛
+      第二步 精算
+    索引分支训练 KL 对齐
+    Kernel 创新 Outer Gather Q
+    MSA 性能数据 109B 实验模型 1M 上下文
+    MSA 能力不掉 3T token 对照实验
+    附录最有意思 head 涌现的三种模式
+    三国杀 3 个核心分歧轴
+      分歧一 颗粒度token 级还是块级
+      分歧二 压不压 KV
+      分歧三 要不要辅助分支
 ```
 
 ## 一句话总结

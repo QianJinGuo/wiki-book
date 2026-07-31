@@ -15,18 +15,18 @@
 
 ```mermaid
 mindmap
-  root(("电商 AI 操作系统崛起：从「工具人」到「All in …"))
-    一句话定位
-    行业背景：AI 工具的「摩尔定律」
+  root(("电商 AI 操作系统崛起 从「工具人」到「All in One」"))
+    行业背景 AI 工具的「摩尔定律」
     Token 成本急剧增长
-    5 巨头 Headless 布局（All in…
+    巨头 Headless 布局 All in One 战略
     两类解法
-      第一类：平台内置 AI 助手
-      第二类：第三方跨平台工具
+      第一类 平台内置 AI 助手
+      第二类 第三方跨平台工具
       StoreClaw 三层架构
-    行业 KnowHow 的 Skill 化（经验…
-    案例数据（注：产品方自报，仅供参考）
-    关键洞察
+    行业 KnowHow 的 Skill 化 经验平权
+    案例数据 注 产品方自报 仅供参考
+    行业垂类 All in One 画像
+    为什么电商最先跑出来
 ```
 
 ## 一句话定位

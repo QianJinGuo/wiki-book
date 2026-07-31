@@ -19,11 +19,11 @@ mindmap
   root(("Meta Skill"))
     它解决了什么
     三大要素组合
-    典型实现：meta-kid-project-p…
+    典型实现 meta-kid-project-planner
     真实成本
-    解决方案：个人 × 社区索引协议
-    范式：Skill 2.0
-    三条线交点（为什么现在出）
+    解决方案 个人 社区索引协议
+    范式 Skill 20
+    三条线交点 为什么现在出
     与多 Agent 团队的关系
 ```
 

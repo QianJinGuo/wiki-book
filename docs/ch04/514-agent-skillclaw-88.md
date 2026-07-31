@@ -11,16 +11,6 @@
 阿里 DreamX 团队提出 SkillClaw，一个让多用户 Agent 生态中的技能库持续自动进化的框架——用户正常使用 Agent，系统在后台收集交互轨迹、夜间进化技能、次日同步给所有用户，不需要人工介入。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 技能夜间自进化——阿里开源 SkillCla…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)
 - [Skillclaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)

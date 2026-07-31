@@ -13,16 +13,13 @@ Stack Overflow 文章，将制造业的约束理论（Theory of Constraints）�
 
 ```mermaid
 mindmap
-  root(("The New Bottleneck: Theory o…"))
-    核心框架：从代码生成到流程瓶颈
-      1. 需求与构思（Ideation and Req…
-      2. 设计交接（Design Handoffs）
-      3. 审查与判断（Review and Judgm…
-      4. 跨职能协调（Cross-function…
+  root(("The New Bottleneck Theory of"))
+    核心框架 从代码生成到流程瓶颈
+      需求与构思 Ideation Requirements
+      设计交接 Design Handoffs
+      审查与判断 Review Judgment
     为什么流程变革如此困难
-    实践建议
     与 Harness Engineering 的关联
-    相关实体
 ```
 
 ## 核心框架：从代码生成到流程瓶颈

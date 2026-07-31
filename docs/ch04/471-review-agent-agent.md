@@ -11,16 +11,6 @@
 Review Agent 解决的就是这个问题。它换了个角色、换了个 prompt、换了套判断标准，专门干"复盘 + 决定该记什么"这一件事。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Review Agent：后台复盘 Agent 如何判断…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/072-skills.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)

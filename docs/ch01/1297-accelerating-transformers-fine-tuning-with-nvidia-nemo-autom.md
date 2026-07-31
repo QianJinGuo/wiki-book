@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Accelerating Transformers Fi…"))
-    深度分析
-      MoE 微调的核心挑战
-      Expert Parallelism vs 传…
-      与推理框架的互操作
-    实践启示
-    相关实体
+  root(("Accelerating Transformers"))
+    技术栈层级
+    三大加速来源
+    性能基准数据
+    MoE 微调的核心挑战
+    Expert Parallelism vs 传统数据并行
+    与推理框架的互操作
 ```
 
 ## 摘要

@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Gemma 4 QAT Models: Quantiza…"))
-    概述
-    关键技术：移动端特殊 QAT Schema
-    Q4_0 标准 vs 移动端 Schema 性…
-    工具链支持（部署生态）
+  root(("Gemma 4 QAT Models"))
+    关键技术 移动端特殊 QAT Schema
+    Q40 标准 vs 移动端 Schema 性能对比
+    工具链支持 部署生态
     与 Gemma 4 完整生态的关系
-    实践启示
-      1. 边缘部署：优先选择 QAT 模型而非自行量化
-      2. 评估量化影响：在你的任务上跑基准测试
-      3. INT8 量化通常是安全的起点
-      4. 关注推理加速而非仅模型体积
     与现有 Gemma 实体差异化
-    上线状态
+    QAT 量化感知训练 的精度保护机制
+    量化对推理成本的非线性影响
+    Google 在开源模型压缩方面的战略意图
 ```
 
 ## 概述

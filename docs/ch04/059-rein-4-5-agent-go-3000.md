@@ -14,18 +14,18 @@
 
 ```mermaid
 mindmap
-  root(("Rein：4 模块 + 5 类型边界防止 agent.g…"))
-    相关实体
-    一句话定位
-    核心问题
-    4 模块分工
-    5 条类型边界（数据契约）
-    7 个不变量（核心循环的'宪法'）
+  root(("Rein 4 模块 5 类型边界防止 agentgo 膨胀到"))
+    模块分工
+    条类型边界 数据契约
+    个不变量 核心循环的宪法
     三大核心设计模式
-      1. ToolSpec vs Tool（安全边…
-      2. Provider 流式 = 同步（等价性…
-      3. 投影式压缩（Context 不改写历史）
-    18 个 Option 的安全默认
+      ToolSpec vs Tool 安全边界 不是封装好习惯
+      Provider 流式 同步 等价性约束
+      投影式压缩 Context 不改写历史
+    个 Option 的安全默认
+    Observation Envelope 一切失败回传模型
+    M1 最小工具集
+    Metadata 的三个默认值 纵深防御
 ```
 
 ## 相关实体

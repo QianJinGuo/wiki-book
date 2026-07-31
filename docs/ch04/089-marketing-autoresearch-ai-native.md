@@ -13,28 +13,23 @@
 
 ```mermaid
 mindmap
-  root(("高德 Marketing AutoResearch：营销…"))
-    一句话
-    核心问题：营销系统的'结构性断层'
+  root(("高德 Marketing AutoResearch 营销增长 AI"))
+    核心问题 营销系统的结构性断层
     三大技术架构
-      1. 业务协议 Business Proto…
-      2. Agent Team — 多角色协作
-      3. 真实反馈 — 让策略接受业务验证
+      业务协议 Business Protocol 给 Agent
+      Agent Team 多角色协作
+      真实反馈 让策略接受业务验证
     五层解耦工程实现
-      可视化中枢（7 大模块展示）
-      协作入口（5 类追问）
-    实践验证（5 个真实脱敏案例）
-      Case 1: 极端波动下的自动修复
-      Case 2: 外部事件不等于盲目加码
-      Case 3: 节假日前的前置布局
-      Case 4: 从失败维度中重新发现机会
-    深度分析
-      与现有 AutoResearch 实体的差异化定位
-      与高德 AI Native 系列的内部一致性
-      与 高德 AI Companion Agen…
-      与 Harness Engineering…
-    实践启示
-    与已有实体的差异化定位
+      可视化中枢 7 大模块展示
+      协作入口 5 类追问
+    实践验证 5 个真实脱敏案例
+      Case 1 极端波动下的自动修复
+      Case 2 外部事件不等于盲目加码
+      Case 3 节假日前的前置布局
+    与现有 AutoResearch 实体的差异化定位
+    与高德 AI Native 系列的内部一致性
+    与 高德 AI Companion Agent 架构 的层级关系
+    与 Harness Engineering 的深度共鸣
 ```
 
 ## 一句话

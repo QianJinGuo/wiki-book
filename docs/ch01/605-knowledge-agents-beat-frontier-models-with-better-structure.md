@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Knowledge Agents: Beat Front…"))
-    深度分析
-      实验结果：模型均衡化效应
-      与传统 RAG 的区别
-      成本与经济效益
-    实践启示
-    相关实体
+  root(("Knowledge Agents Beat Frontier"))
+    Knowledge Agent 的知识架构
+    多轮检索策略
+    Hybrid 检索 BM25 Embedding
+    实验结果 模型均衡化效应
+    与传统 RAG 的区别
+    成本与经济效益
 ```
 
 ## 摘要

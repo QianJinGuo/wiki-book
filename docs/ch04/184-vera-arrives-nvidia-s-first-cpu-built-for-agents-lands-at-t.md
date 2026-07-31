@@ -9,29 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Vera Arrives: NVIDIA's First…"))
+  root(("Vera Arrives NVIDIAs First CPU"))
     背景与定位
     技术规格与设计理念
     首批交付详情
       Anthropic
       OpenAI
       SpaceXAI
-      Oracle Cloud Infrastruc…
     在 NVIDIA 平台中的位置
-    行业意义
-    深度分析
-      架构创新的市场逻辑
-      合作伙伴选择的战略意图
-      竞争格局与市场信号
-      技术护城河分析
-    实践启示
-      对 AI 基础设施选型的启示
-      对云厂商战略的参考
-      对 AI 代理架构设计的建议
-    第 2 来源 — Vera Rubin 平台性…
-      芯片与系统架构
-      网络与互联
-      开放生态与部署
+    架构创新的市场逻辑
+    合作伙伴选择的战略意图
+    竞争格局与市场信号
+    技术护城河分析
 ```
 
 ## 核心要点

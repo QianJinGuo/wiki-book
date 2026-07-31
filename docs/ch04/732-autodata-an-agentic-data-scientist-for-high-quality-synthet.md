@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Autodata: An Agentic Data Sc…"))
-    深度分析
-      为什么 Agentic 数据创建重要
-      与 Self-Instruct 和 Evol-…
-      Agent 训练 Agent 的范式意义
-    实践启示
-    相关实体
+  root(("Autodata An Agentic Data"))
+    从合成数据到 Agentic 数据创建
+    Meta-Optimization 框架
+    Agentic Self-Instruct
+    实验验证
+    为什么 Agentic 数据创建重要
+    与 Self-Instruct 和 Evol-Instruct 的区别
+    Agent 训练 Agent 的范式意义
 ```
 
 ## 摘要

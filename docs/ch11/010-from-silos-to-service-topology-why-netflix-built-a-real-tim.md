@@ -11,25 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("From silos to service topolo…"))
-    核心内容
-      The Puzzle with a Thous…
-      The Three Questions Eve…
-      Why This Matters More T…
-      Building on What We Lea…
-    深度分析
-      多层图融合架构的核心洞察
-      中介层解析的三阶段工程价值
-      实时拓扑的'活地图'属性对可观测性范式的冲击
-      可观测性数据源的互补性三角
-    实践启示
-      1. 以'三个问题'驱动可观测性建设
-      2. 构建多源数据融合的工程习惯
-      3. 优先解决中介层解析问题
-      4. 拓扑数据的时间维度设计
-    参考来源
-    架构图
-    相关实体
+  root(("From silos to service topology"))
+    The Puzzle with a Thousand Pieces
+    The Three Questions Every
+    Why This Matters More Than Ever
+    Building on What We Learned
+    多层图融合架构的核心洞察
+    中介层解析的三阶段工程价值
+    实时拓扑的活地图属性对可观测性范式的冲击
+    可观测性数据源的互补性三角
 ```
 
 ## 核心内容

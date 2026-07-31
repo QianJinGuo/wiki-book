@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Spec Kit / OpenSpec / Superp…"))
-    深度分析
-      框架选择的底层逻辑：棕地项目 vs 绿地的结构…
-      铁律纪律的深层价值：反 LLM 乐观偏好的封闭设计
-      规范累积机制的进化逻辑
-      与 Matt Pocock Skills 的对…
-    实践启示
-    相关实体
+  root(("Spec Kit OpenSpec Superpowers 融合"))
+    框架选择的底层逻辑 棕地项目 vs 绿地的结构性差异
+    铁律纪律的深层价值 反 LLM 乐观偏好的封闭设计
+    规范累积机制的进化逻辑
+    与 Matt Pocock Skills 的对比视角
 ```
 
 ## 摘要

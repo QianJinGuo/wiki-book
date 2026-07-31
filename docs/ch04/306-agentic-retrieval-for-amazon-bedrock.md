@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Retrieval for Amazon…"))
-    深度分析
-      为什么单次向量检索在多跳问题上必然失败
-      规划循环的工程实现与可观测性
-      FullDocumentExpansion 的…
-      与 DIY Agent 框架的对比
-    实践启示
-    相关实体
+  root(("Agentic Retrieval for Amazon Bedrock"))
+    为什么单次向量检索在多跳问题上必然失败
+    规划循环的工程实现与可观测性
+    FullDocumentExpansion 的独特价值
+    与 DIY Agent 框架的对比
 ```
 
 ## 摘要

@@ -9,27 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Agent/Skills/Teams 架构演进过程及技术…"))
-    核心命题
-    关键洞察
-      1. Agent 演进四路径
-      2. Agent Skills vs 动态 S…
-      3. Google DeepMind 5 条反…
-      4. P0-P3 选型路径
+  root(("AgentSkillsTeams 架构演进过程及技术选型之道"))
+    Agent 演进四路径
+    Agent Skills vs 动态 System Prompt
+    Google DeepMind 5 条反直觉结论
+    P0-P3 选型路径
     与 Wiki 已有内容的关系
-    来源
     元信息
-    相关实体
-    深度分析
-      从技术演进视角重新理解四种架构范式
-      为什么 Skills 优于动态 System …
-      45% 阈值背后的 Scaling Law 暗示
-      错误放大效应的工程解法
-    实践启示
-      选型决策树
-      Agent Skills 落地 Checklist
-      Multi-Agent 防翻车指南
-      Agent Teams 适用场景判断
+    从技术演进视角重新理解四种架构范式
+    为什么 Skills 优于动态 System Prompt
 ```
 
 ## 核心命题

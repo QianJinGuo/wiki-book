@@ -11,19 +11,22 @@
 
 ```mermaid
 mindmap
-  root(("DESIGN.md：AI 设计 Agent 的视觉约束对…"))
-    概述
-    核心命题
+  root(("DESIGNmd AI 设计 Agent 的视觉约束对齐文件"))
     VoltAgent awesome 集合
       思路有多简单
       浏览站点
     仓库已收集的 73 个网站
-    DESIGN.md 里写什么
+    DESIGNmd 里写什么
     怎么用
       最简单的玩法
       进阶玩法
-    核心洞察
     与现有 entity 的差异化
+    学术pro 续篇 71 套设计规范的 Skill 化整合
+      核心定位 Design MD Collection Skill
+      五大应用场景分类
+      实战 demo 验证
+    设计约束的协议化 从 Figma 到纯文本的范式转移
+    Stitch 的方法论 轻量接口 vs 重量平台的战略选择
 ```
 
 ## 概述

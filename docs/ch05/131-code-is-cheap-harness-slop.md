@@ -11,18 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("Code is cheap: Harness 方法论——…"))
-    核心论点：代码正在变得非常廉价
+  root(("Code is cheap Harness 方法论水流理论"))
+    核心论点 代码正在变得非常廉价
     大模型的两个底层事实
-      事实 1：大模型不是确定性函数
-      事实 2：上下文窗口有限，给得太多反而会腐烂
+      事实 1 大模型不是确定性函数
+      事实 2 上下文窗口有限 给得太多反而会腐烂
     独特概念体系
-      1. 反 slop（Anti-Slop）
-      2. 水流理论（Water Flow Theo…
-      3. 最小混沌单元（Minimum Chaos…
+      反 slop Anti-Slop
+      水流理论 Water Flow Theory
+      最小混沌单元 Minimum Chaos Unit
     实践方法论
       Spec 是第一制品
-      new-chat skill（定期重启）
+      new-chat skill 定期重启
       Checkpoint 验证闭环
     与现有 Harness 实体的关系
 ```

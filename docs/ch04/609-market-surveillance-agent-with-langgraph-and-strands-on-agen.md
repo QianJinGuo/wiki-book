@@ -13,14 +13,13 @@ AWS 官方博客发布的一篇深度技术文章，演示如何将 LangGraph（
 
 ```mermaid
 mindmap
-  root(("Market surveillance agent wi…"))
+  root(("Market surveillance agent with"))
     架构设计
     关键技术点
       AgentCore Memory 集成
       可观测性
       LangGraph 有向图状态管理
     互补角度
-    相关实体
 ```
 
 ## 架构设计

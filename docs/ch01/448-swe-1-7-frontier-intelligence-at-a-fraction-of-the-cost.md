@@ -18,14 +18,11 @@
 
 ```mermaid
 mindmap
-  root(("SWE-1.7: Frontier Intelligen…"))
-    深度分析
-      1. RL 训练稳定性的关键突破
-      2. 跨洲多集群 RL 训练架构
-      3. 容错设计的工程智慧
-      4. 自压缩与交替长度惩罚
-    实践启示
-    相关实体
+  root(("SWE-17 Frontier Intelligence at a"))
+    RL 训练稳定性的关键突破
+    跨洲多集群 RL 训练架构
+    容错设计的工程智慧
+    自压缩与交替长度惩罚
 ```
 
 ## 摘要

@@ -13,12 +13,10 @@ browser-use 团队通过 Firecracker microVM 在 EC2 上运行云端浏览器隔
 
 ```mermaid
 mindmap
-  root(("Browser Use Firecracker：云端浏览…"))
+  root(("Browser Use Firecracker 云端浏览器成本降"))
     核心架构决策
     成本对比
     工程洞察
-    深度分析
-    实践启示
     与现有实体差异化
 ```
 

@@ -13,17 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("AgentENV：面向大规模 Agentic RL 的智…"))
-    核心定位
-    关键设计决策
-      为什么选 Firecracker 而非容器
-      镜像管理：OCI 兼容 + OverlayBD…
-      状态管理：增量快照 + COW Fork
-      空闲资源复用：弹性生命周期
+  root(("AgentENV 面向大规模 Agentic RL 的智能体执行环境"))
+    为什么选 Firecracker 而非容器
+    镜像管理 OCI 兼容 OverlayBD 按需加载
+    状态管理 增量快照 COW Fork
+    空闲资源复用 弹性生命周期
     生产数据
     与现有方案的成本对比
     与相关实体的关系
-    关键洞察
 ```
 
 ## 核心定位

@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Production-Ready Autonomous …"))
-    深度分析
-      MCP 协议在生产监控中的实际应用
-      从被动响应到主动预防的范式转移
-      Harness Engineering 视角
-      早期采用者数据
-    实践启示
-    相关实体
+  root(("Production-Ready Autonomous"))
+    从 Preview 到 GA 的关键进展
+    Datadog MCP Server 的角色
+    端到端事件解决流程
+    主动预防能力
+    MCP 协议在生产监控中的实际应用
+    从被动响应到主动预防的范式转移
+    Harness Engineering 视角
+    早期采用者数据
 ```
 
 ## 摘要

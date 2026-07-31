@@ -8,18 +8,6 @@
 从微信文章 [token级，精准控制生成长度：3B模型击败GPT 5.4、Claude](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/token级精准控制生成长度3b模型击败gpt-54claude.md) 提取。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("token级，精准控制生成长度：3B模型击败GPT 5.…"))
-    核心内容
-      主要章节
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/wj5L4eEHatAyP0Kjcw1rjQ
 

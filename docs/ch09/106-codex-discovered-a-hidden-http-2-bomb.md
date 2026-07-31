@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Codex Discovered a Hidden HT…"))
-    深度分析
-      '放大率不来自解码量'是新型 bomb 的本质
-      RFC 9113 §8.2.3 自身的'友好性…
-      '压到 swap 但不让 OOM' 是更阴险的…
-      Codex 这次发现是 AI 安全研究范式的分水岭
-    实践启示
-    相关实体
+  root(("Codex Discovered a Hidden HTTP2 Bomb"))
+    放大率不来自解码量是新型 bomb 的本质
+    RFC 9113 823 自身的友好性被武器化
+    压到 swap 但不让 OOM 是更阴险的攻击策略
+    Codex 这次发现是 AI 安全研究范式的分水岭
 ```
 
 ## 摘要

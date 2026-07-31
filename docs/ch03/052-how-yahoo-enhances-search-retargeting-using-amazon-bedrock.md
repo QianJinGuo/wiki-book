@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("How Yahoo enhances search re…"))
+  root(("How Yahoo enhances search"))
     Business Context
     Technical Implementation
 ```

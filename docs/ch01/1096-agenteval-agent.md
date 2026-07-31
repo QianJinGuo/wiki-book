@@ -9,22 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从手动到自动化：用AgentEval构建Agent评测体系"))
-    深度分析
-      核心观点
-    核心问题
-    pass@k 和 pass^k 指标
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 从手动到自动化：用AgentEval构建Agent评测体系 涉及agent领域的核心技术议题。

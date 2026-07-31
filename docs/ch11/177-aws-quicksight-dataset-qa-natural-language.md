@@ -11,16 +11,6 @@ Quick already offers two natural language querying modes. [Dashboard Q&A](<https
 While the industry has raced to ship text-to-SQL demos, the real challenge in enterprise BI has never been generating SQL. The challenge is grounding ambiguous business language against complex schemas, enforcing security at every step, and explaining what the system did and why. The agentic system of Quick is purpose-built for this. The model must resolve lexical ambiguity— _does "volume" mean row count, revenue, or units shipped?_ —and map colloquial business language to the precise column names and calculations in the dataset, without a predefined dictionary. Before any query runs, the system searches across all your structured assets (dashboards, datasets, and topics) using a semantic graph that understands how your assets relate to each other. This lets it find the right source even when your question doesn't use the exact name of a dataset or column. After the source is identified, the system peeks into the data for context like sample values and distributions and uses author-provided field descriptions and business context to disambiguate before using one of the three capabilities available for generating SQL.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Quicksight Dataset QA Na…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

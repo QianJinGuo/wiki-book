@@ -13,16 +13,13 @@ Zalando 在百万 RPS 级别的客户端负载均衡工程实践，从服务发�
 
 ```mermaid
 mindmap
-  root(("Client-Side Load Balancing a…"))
-    核心内容
-    Skipper and the Fan-Out…
-    Building the Same Hash …
-    深度分析
-      共享基础设施的'扇出放大'问题
-      客户端负载均衡的哈希一致性挑战
-      从'共享命运'到'可观测性'的架构收益
-      边缘流量与内部流量的分层治理
-    实践启示
+  root(("Client-Side Load Balancing at a"))
+    Skipper and the Fan-Out Problem
+    Building the Same Hash Ring
+    共享基础设施的扇出放大问题
+    客户端负载均衡的哈希一致性挑战
+    从共享命运到可观测性的架构收益
+    边缘流量与内部流量的分层治理
 ```
 
 ## 核心内容

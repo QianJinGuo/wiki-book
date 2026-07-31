@@ -16,14 +16,11 @@ Harness Engineering 迭代依赖人工经验，但模型以月为单位进化、
 
 ```mermaid
 mindmap
-  root(("复旦 AHE：让 Harness 自进化的 Agenti…"))
-    深度分析
-      核心问题：Harness 迭代速度跟不上模型进化
-      三角色流水线
-      三层可观测性
-      关键洞察 1：事实比策略更可迁移
-    实践启示
-    相关实体
+  root(("复旦 AHE 让 Harness 自进化的 Agentic"))
+    核心问题 Harness 迭代速度跟不上模型进化
+    三角色流水线
+    三层可观测性
+    关键洞察 1 事实比策略更可迁移
 ```
 
 ## 摘要

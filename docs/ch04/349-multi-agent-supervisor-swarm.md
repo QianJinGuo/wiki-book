@@ -11,16 +11,6 @@
 解法是：多个 Agent 协作，每个只干一件事。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Multi-Agent 的四种协作模式：Supervis…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Factory Mission Multi Agent Architecture](../ch01/1235-factory-mission-multi-agent-architecture.html)

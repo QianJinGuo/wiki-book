@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Vibe Coding and Agentic Engi…"))
-    深度分析
-      1. Vibe Coding → Agenti…
-      2. 偏差正常化（Anomaly Normal…
-      3. 代码本体感觉（Proprioceptio…
-      4. 真正的产品壁垒是「数据层和接口」而不是代码
-    实践启示
-    相关实体
+  root(("Vibe Coding and Agentic"))
+    Vibe Coding Agentic Engineering
+    偏差正常化 Anomaly Normalization 是 AI
+    代码本体感觉 Proprioception 丧失比代码质量更可怕
+    真正的产品壁垒是「数据层和接口」而不是代码
 ```
 
 ## 摘要

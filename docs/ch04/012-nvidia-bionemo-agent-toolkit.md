@@ -11,14 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("NVIDIA BioNeMo Agent Toolkit…"))
+  root(("NVIDIA BioNeMo Agent Toolkit"))
     核心组件
-    深度分析
-      智能体在科学发现中的范式转变
-      生态集成策略的价值
-      博士级研究助理的能力定位
-    实践启示
-    相关实体
+    技术架构
+    覆盖领域
+    智能体在科学发现中的范式转变
+    生态集成策略的价值
+    博士级研究助理的能力定位
 ```
 
 ## 摘要

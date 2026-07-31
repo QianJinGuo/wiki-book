@@ -11,26 +11,21 @@
 
 ```mermaid
 mindmap
-  root(("Extending MCP support for Am…"))
-    Unite MCP servers for e…
-    Surface your MCP server…
-    Dynamic listing for run…
-    Streaming, session mana…
+  root(("Extending MCP support for Amazon"))
+    Unite MCP servers for enterprise
+    Surface your MCP server
+    Dynamic listing for runtime
+    Streaming session management and
       Streamable HTTP
       Session management
       Elicitation
-    OAuth 2.0 on-behalf-of …
-    Conclusion
+    OAuth 20 on-behalf-of token exchange
     About the authors
       Anagh Agrawal
       Eashan Kaushik
       Ke Ma
-      Kyungna Kim
-    深度分析
-      1. AgentCore Gateway：AW…
-      2. MCP 作为 Agent 工具标准的价值
-      3. Gateway 模式的安全优势
-      4. 多 agent 系统的工具共享
+    AgentCore Gateway AWS 的 Agent 通信基础设施
+    MCP 作为 Agent 工具标准的价值
 ```
 
 ## Unite MCP servers for enterprise through AgentCore Gateway

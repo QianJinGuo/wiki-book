@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("knowledge-work-plugins拆解：Ant…"))
-    深度分析
-      仓库定位：不是框架，是岗位封装
-      四种组件：Skills 是核心
-      渐进式披露：三级信息加载解决上下文瓶颈
-      ~~ 占位符：工具无关抽象
-    实践启示
-      落地优先级（参考 txtmix.com）
-      对 Agent Builder 的可借鉴设计
-      关键判断
-      何时不要用
-    相关实体
+  root(("knowledge-work-plugins拆解"))
+    仓库定位 不是框架 是岗位封装
+    四种组件 Skills 是核心
+    渐进式披露 三级信息加载解决上下文瓶颈
+    占位符 工具无关抽象
+    落地优先级 参考 txtmixcom
+    对 Agent Builder 的可借鉴设计
+    关键判断
+    何时不要用
 ```
 
 ## 核心要点

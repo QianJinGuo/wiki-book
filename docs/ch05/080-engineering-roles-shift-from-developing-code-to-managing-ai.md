@@ -9,15 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Engineering roles shift from…"))
-    背景
-    关键数据
+  root(("Engineering roles shift from"))
     角色转变的具体表现
     度量框架的失配
     建议措施
     相关趋势
-    深度分析
-    实践启示
 ```
 
 ## 核心要点

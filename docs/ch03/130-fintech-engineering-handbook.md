@@ -14,11 +14,10 @@
 ```mermaid
 mindmap
   root(("Fintech Engineering Handbook"))
-    Overview
-      For whom?http://w.pi…
-    Principleshttp://w.p…
-    Representing moneyht…
-      Precision handlinght…
+    For
+    Principleshttpwpitulamefintech-eng
+    Representing
+      Precision
 ```
 
 ## Overview

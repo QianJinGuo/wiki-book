@@ -9,17 +9,6 @@
 > **Background**：本文档基于 Alex L. Zhang 和 Omar Khattab（MIT）的博客文章 "Language model harnesses are compositional generalizers" 建立。提出了 Harness 作为组合泛化（compositional generalization）的核心理论：一个好的 harness 能使每个 LLM 调用保持局部在分布内（locally in-distribution），从而将复杂问题分解为已有能力的组合。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Language Model Harnesses as …"))
-    核心论点
-    实验结果
-    意义
-    相关实体
-```
-
 ## 核心论点
 
 现代 post-training 已变成暴力范式——不断策划更多环境和更长训练 horizon。但 frontier Transformer 在**组合泛化**（compositional generalization）上仍然薄弱：无法通过组合已有经验解决未见问题。

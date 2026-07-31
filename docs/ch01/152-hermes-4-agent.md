@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-four-agents-setup.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我给Hermes配了4个Agent"))
-    关键要点
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘要
 我给Hermes配了4个Agent
 

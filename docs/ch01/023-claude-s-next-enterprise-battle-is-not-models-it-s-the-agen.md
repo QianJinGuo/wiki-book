@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude's next enterprise bat…"))
-    深度分析
-      1. 从模型博弈到基础设施博弈的范式转移
-      2. 模型易换，运行时难迁——锁定效应的真实机制
-      3. Anthropic 的 5.7% 为何战…
-      4. Microsoft 的分发优势与 Ope…
-    实践启示
-      对企业买家
-      对 AI 管理者和开发者
-      对供应商
-    关联阅读
-     相关实体
+  root(("Claudes next enterprise battle is"))
+    从模型博弈到基础设施博弈的范式转移
+    模型易换 运行时难迁锁定效应的真实机制
+    Anthropic 的 57 为何战略意义大于数字本身
+    Microsoft 的分发优势与 OpenAI 的稳定跟随
+    对企业买家
+    对 AI 管理者和开发者
+    对供应商
+    相关实体
 ```
 
 ## 核心要点

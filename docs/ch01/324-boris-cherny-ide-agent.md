@@ -16,18 +16,15 @@
 
 ```mermaid
 mindmap
-  root(("Boris Cherny 新访谈：开发工具正在从 IDE…"))
-    深度分析
-      1. 产品悬置（Product Pendulu…
-      2. 控制点迁移 —— 从编辑器交互到工作流控制
-      3. 'coding is solved'的前…
-      4. 印刷术类比的工程含义
-    实践启示
-      1. 重新评估 Agent 产品的成熟度
-      2. 重构开发流程以匹配新的控制点
-      3. 区分'代码生成'与'软件工程'
-      4. 拥抱 Loop 模式
-    相关实体
+  root(("Boris Cherny 新访谈 开发工具正在从 IDE 变成"))
+    产品悬置 Product Pendulum 不是 PMF 失败
+    控制点迁移 从编辑器交互到工作流控制
+    coding is solved的前提条件分析
+    印刷术类比的工程含义
+    重新评估 Agent 产品的成熟度
+    重构开发流程以匹配新的控制点
+    区分代码生成与软件工程
+    拥抱 Loop 模式
 ```
 
 ## 摘要

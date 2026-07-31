@@ -11,8 +11,7 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Vision: Building Vis…"))
-    Overview
+  root(("Agentic Vision Building Visual"))
     Architecture
     Two MCP Servers
       CV Server

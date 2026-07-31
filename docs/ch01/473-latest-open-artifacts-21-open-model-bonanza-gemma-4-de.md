@@ -15,23 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Latest open artifacts (#21):…"))
+  root(("Latest open artifacts 21 Open"))
     CAISI V4 IRT 评估的方法论缺陷
     Harness 选择扭曲能力评估
     开放模型生态的关键进展
-    关键数据/实践启示
-    深度分析
-      1. 21 期的模型密集度反映了开源加速趋势
-      2. Gemma 4 的 Google 战略定位
-      3. 项目反应理论（IRT）在模型评估中的应用
-      4. 开源模型的'长尾评测'问题
-    实践启示
-      1. 模型选型：关注 IRT 校准后的得分而非…
-      2. 追踪 Interconnects Lat…
-      3. Gemma 4 适合'易部署'场景
-      4. 评估框架：引入 IRT 或类似校准方法
-    相关实体
-    相关引用
+    21 期的模型密集度反映了开源加速趋势
+    Gemma 4 的 Google 战略定位
+    项目反应理论 IRT 在模型评估中的应用
+    开源模型的长尾评测问题
+    模型选型 关注 IRT 校准后的得分而非原始准确率
 ```
 
 ## CAISI V4 IRT 评估的方法论缺陷

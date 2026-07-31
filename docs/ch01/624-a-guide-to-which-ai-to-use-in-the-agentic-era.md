@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("A Guide to Which AI to Use i…"))
-    深度分析
-      Models / Apps / Harness…
-      各厂商的 Harness 策略对比
-      'AI 做事' vs 'AI 说话' 的范式转移
-      NotebookLM 的独特价值
-    实践启示
-    相关实体
+  root(("A Guide to Which AI to Use in the"))
+    Models Apps Harnesses 框架的深层含义
+    各厂商的 Harness 策略对比
+    AI 做事 vs AI 说话 的范式转移
+    NotebookLM 的独特价值
 ```
 
 ## 摘要

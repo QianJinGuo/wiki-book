@@ -11,19 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Design Patterns for AI Agent…"))
-    核心内容
-      主流架构模式
-      新兴模式
-      工程实践要点
-    深度分析
-    实践启示
-    相关实体
-    第 2 来源：前端 T 站 4 模式选型决策树…
-      5 步选型决策树
-      5 个关键阈值
-      AgentScope 3 完整 Demo
-      4 模式互补关系
+  root(("Design Patterns for AI Agents"))
+    主流架构模式
+    新兴模式
+    工程实践要点
+    步选型决策树
+    个关键阈值
+    AgentScope 3 完整 Demo
+    模式互补关系
 ```
 
 ## 核心内容

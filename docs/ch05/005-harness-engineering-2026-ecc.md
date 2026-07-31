@@ -45,27 +45,21 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Harness Engineering 综合论述：为什么…"))
+  root(("Harness Engineering 综合论述 为什么 2026"))
     Harness Engineering 是什么
     与传统软件工程的 4 个核心区别
-      1. 概率性 vs 确定性
-      2. 工具设计是核心竞争力
-      3. Verifier 决定上线
-      4. 上下文是稀缺资源
-    2026 年的关键演进
+      概率性 vs 确定性
+      工具设计是核心竞争力
+      Verifier 决定上线
+    年的关键演进
     Harness 工程的 4 层架构
     现实案例
       Claude Code 的 Harness
       OpenAI Agents SDK
       AWS AgentCore
-      Hermes Agent
     局限与反对声音
     与相邻概念的区分
-    深度分析
-      洞察 1：Harness Engineerin…
-      洞察 2：Rahul Patil / AI 技…
-      洞察 3：LLM 作为新运行时的工程范式重塑
-      洞察 4：多层 Verifier 架构的必然性
+    洞察 1 Harness Engineering
 ```
 
 ## Harness Engineering 是什么

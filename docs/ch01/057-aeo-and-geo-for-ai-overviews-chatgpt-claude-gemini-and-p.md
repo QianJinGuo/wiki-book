@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("AEO and GEO for AI Overviews…"))
-    相关实体
-    深度分析
-      AEO vs GEO：概念溯源与实际差异
-      多表面爬取生态：被忽视的基础设施
-      内容被引用的核心逻辑：不可合成性
-      Agentic 体验：被低估的下一个表面
-    实践启示
-      立即可执行
-      内容策略层面
-      长期布局
+  root(("AEO and GEO for AI Overviews"))
+    AEO vs GEO 概念溯源与实际差异
+    多表面爬取生态 被忽视的基础设施
+    内容被引用的核心逻辑 不可合成性
+    Agentic 体验 被低估的下一个表面
+    立即可执行
+    内容策略层面
+    长期布局
 ```
 
 ## 核心要点

@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 4.1KB | `entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("You.com | Download the Guide…"))
-    深度分析
-    相关链接
-    实践启示
-```
-
 ## 深度分析
 **You.com 这篇 API 延迟指南的核心论点是：基准测试表中的延迟数字是一个"演示指标"，而不是"生产指标"。这个认知差距正在导致大量错误的 AI API 采购决策。**
 文章提出的关键框架是 **Time-to-Useful-Result**（到达可操作结果的时间），而不是单纯看 API 响应延迟。这个重新定义非常重要，因为它把"API 多快返回"变成了"用户多快得到正确答案"。

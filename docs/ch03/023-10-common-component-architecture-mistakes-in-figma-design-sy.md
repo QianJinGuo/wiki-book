@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 7.5KB | `entities/10-common-component-architecture-mistakes-in-figma-design-systems.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("10 Common Component Architec…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - Newsletter article, source: https://zeroheight.com/blog/10-common-component-architecture-mistakes-in-figma-design-systems/
 - 设计系统组件架构的十大常见错误及解决方案

@@ -171,19 +171,15 @@ REPL 场景下，  ` sendCallback  ` 直接输出到终端：
 
 ```mermaid
 mindmap
-  root(("800行代码实现 Open Claw 的 Tool、消息…"))
-    深度分析
-      架构哲学：薄抽象层的工程价值
-      ToolRegistry 的 exclude …
-      MessageBus 的有/无订阅者二分路由
-      互斥锁驱动的并发控制：单进程的妥协
-    实践启示
-      1. 从零构建 Agent 框架时，优先选择贴…
-      2. exclude 是控制子 Agent…
-      3. MessageBus 的方向分离（出站/…
-      4. 布尔锁在单进程场景足够，但需要为多用户扩…
-    Related
-    相关实体
+  root(("行代码实现 Open Claw 的 Tool 消息总线"))
+    架构哲学 薄抽象层的工程价值
+    ToolRegistry 的 exclude 设计 能力隔离的模式样本
+    MessageBus 的有无订阅者二分路由
+    互斥锁驱动的并发控制 单进程的妥协
+    从零构建 Agent 框架时 优先选择贴近模型 API 的薄抽象
+    exclude 是控制子 Agent 能力边界的有效模式
+    MessageBus 的方向分离 出站入站 是解耦的关键
+    布尔锁在单进程场景足够 但需要为多用户扩展预留架构
 ```
 
 ## 深度分析

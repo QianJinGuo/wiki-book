@@ -13,17 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Hermes Agent SOUL.md：3 层提示词、…"))
-    深度分析
-      安全扫描：防注入第一道门
-      /personality 命令：14 个内置人…
-      SOUL.md vs AGENTS.md：职责分离
-      特殊执行模式：继承规则
-    实践启示
-      SOUL.md 写什么
-      不写什么
-      跨框架迁移对照表
-    相关实体
+  root(("Hermes Agent SOULmd 3 层提示词 14"))
+    三层提示词架构
+    stable 层 14 部分分解
+    SOULmd 加载流程
+    安全扫描 防注入第一道门
+    personality 命令 14 个内置人格 自定义
+    SOULmd vs AGENTSmd 职责分离
+    特殊执行模式 继承规则
+    SOULmd 写什么
 ```
 
 ## 摘要

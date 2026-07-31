@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Yann Dubois × Matt Turck：Ope…"))
-    深度分析
-      一、'可靠性台阶'是 Agent 落地的关键变量
-      二、纵向 + 横向团队的组织方式
-      三、SFT 与 RL 对幻觉的对冲机制
-      四、强化学习从'竞赛玩具'到'现实生产力'的转折
-    实践启示
-    相关实体
+  root(("Yann Dubois Matt Turck OpenAI"))
+    一 可靠性台阶是 Agent 落地的关键变量
+    二 纵向 横向团队的组织方式
+    三 SFT 与 RL 对幻觉的对冲机制
+    四 强化学习从竞赛玩具到现实生产力的转折
 ```
 
 ## 摘要

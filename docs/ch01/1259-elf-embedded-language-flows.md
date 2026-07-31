@@ -17,26 +17,17 @@
 
 ```mermaid
 mindmap
-  root(("ELF: Embedded Language Flows…"))
+  root(("ELF Embedded Language Flows 何恺明"))
     概要
     核心创新
-      核心洞察
       架构三要素
       Self-CFG
     关键性能数据
     技术背景
     实验覆盖
     作者背景
-    深度分析
-      1. 扩散模型在语言生成领域的范式突破
-      2. x-prediction 的理论基础
-      3. Self-CFG：跨模态技术迁移的成功案例
-      4. 效率与效果的 trade-off 重新定义
-    实践启示
-      1. 连续空间方法在语言生成中的潜力
-      2. x-prediction 应该成为连续语…
-      3. CFG 在语言模型中的更广泛应用
-      4. 何恺明团队的研究方法论
+    扩散模型在语言生成领域的范式突破
+    x-prediction 的理论基础
 ```
 
 ## 概要

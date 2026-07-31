@@ -13,8 +13,7 @@ Giles Thomas 在从零训练 LLM 的项目中发现一个反直觉现象：OpenA
 
 ```mermaid
 mindmap
-  root(("GPT-2 权重之谜：为什么 OpenAI 的原始权重比…"))
-    核心发现
+  root(("GPT-2 权重之谜 为什么 OpenAI"))
     实验设置
     意义
 ```

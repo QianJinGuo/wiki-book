@@ -48,23 +48,26 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("MAC（multi-agent-coding）：Skil…"))
-    一句话定位
-    1. 问题背景：完全委托 0-20%
-    2. MAC 的核心架构：两层叠加
+  root(("MAC multi-agent-coding Skills"))
+    问题背景 完全委托 0-20
+    MAC 的核心架构 两层叠加
       关键判断
       关系原则
-    3. Skills：概率层，工作流的形状
+    Skills 概率层 工作流的形状
       任务在哪里
       MAC 的解法
       Skills 的局限
-    4. Hooks：确定性层，Harness 的地基
+    Hooks 确定性层 Harness 的地基
       为什么需要确定性层
       Hooks 的实现
-    5. Harness 框架和项目知识，分开放
+    Harness 框架和项目知识 分开放
       这个分离的价值
-    6. 回到 0-20%：Hooks 改变委托性质
+    回到 0-20 Hooks 改变委托性质
     核心金句
+    与已有 wiki 实体的关系
+      vs 晓斌 Agent-Oriented Infra
+      vs wow-harness v3
+      vs 高德 AI-Native 生产线
 ```
 
 ## 一句话定位

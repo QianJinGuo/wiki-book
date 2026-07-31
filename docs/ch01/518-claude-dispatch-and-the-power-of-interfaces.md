@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Dispatch and the Powe…"))
-    深度分析
-      界面即瓶颈：能力溢出的根源
-      三种界面范式的对比
-      Dispatch 模式的战略意义
-      与 Harness Engineering…
-    实践启示
-    相关实体
+  root(("Claude Dispatch and the Power of"))
+    聊天界面的认知税
+    专用界面的探索
+    用已有的界面 OpenClaw 现象
+    Claude Dispatch 手机成为 AI 遥控器
+    界面即瓶颈 能力溢出的根源
+    三种界面范式的对比
+    Dispatch 模式的战略意义
+    与 Harness Engineering 的关联
 ```
 
 ## 摘要

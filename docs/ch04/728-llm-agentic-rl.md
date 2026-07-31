@@ -15,11 +15,10 @@
 
 ```mermaid
 mindmap
-  root(("训练LLM智能体的七条实战经验——Agentic RL最…"))
+  root(("训练LLM智能体的七条实战经验Agentic RL最佳实践"))
     核心框架概览
     七条实战清单
     关键工业验证
-    相关实体
 ```
 
 ## 核心框架概览

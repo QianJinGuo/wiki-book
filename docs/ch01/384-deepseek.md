@@ -18,16 +18,6 @@
 说起来，赶在五一长假之前丢个重磅论文，这风格还真挺特么DeepSeek的，熟悉的味道又回来了。以及，这次内容真的太长了，建议你可以先收藏了，假期里无聊的时候慢慢读，我这五一期间尽量...尽量不卷了，不给各位增加阅读负担。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek视觉原语论文：当所有人在堆图像分辨率时，…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Pi Mono Github](ch01/834-pi-mono-github.html)
 - [From Prompt To Harness Claude Official](../ch05/009-harness.html)

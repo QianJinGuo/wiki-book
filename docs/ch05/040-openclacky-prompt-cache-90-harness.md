@@ -9,28 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("OpenClacky — Prompt Cache 命中…"))
-    核心结论
+  root(("OpenClacky Prompt Cache 命中率 90 的"))
     高Cache命中率与多功能的结构性冲突
     三代失败史
-      第一代（2024-2025上）：RAG/知识库
-      第二代（2025中期）：多Agent工作流
-      第三代（2025年底至今）：Ruby重写
+      第一代 2024-2025上 RAG知识库
+      第二代 2025中期 多Agent工作流
+      第三代 2025年底至今 Ruby重写
     核心工程决策
-      决策1：双cache标记（滚动双缓冲）
-      决策2：永不变的system prompt
-      决策3：invoke_skill的妙用
-      决策4：16个稳定工具
-    深度分析
-      Cache命中率的工程本质
-      三代演进的认知迭代
-      双Cache标记的架构意义
-      System Prompt冻结的工程哲学
-    实践启示
-      优先级自查：从高命中率到功能完整
-      自检清单：你的Agent离90%命中率还有多远
-      关键工程判断
-    相关实体
+      决策1 双cache标记 滚动双缓冲
+      决策2 永不变的system prompt
+      决策3 invokeskill的妙用
+    Cache命中率的工程本质
+    三代演进的认知迭代
+    双Cache标记的架构意义
+    System Prompt冻结的工程哲学
+    优先级自查 从高命中率到功能完整
 ```
 
 ## 核心结论

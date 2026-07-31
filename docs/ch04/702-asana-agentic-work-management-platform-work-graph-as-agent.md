@@ -13,20 +13,19 @@
 
 ```mermaid
 mindmap
-  root(("Asana Agentic Work Managemen…"))
+  root(("Asana Agentic Work Management"))
     三个独有贡献不应合并到现有 entity
     核心定位与背景
-      为什么做 Agentic Work Manag…
-      四个结构性优势Asana 自述,需对照竞品验证
+      为什么做 Agentic Work Management
+      四个结构性优势Asana 自述需对照竞品验证
     产品矩阵三层架构
-      第一层:个人助理 — Asana Dash
-      第二层:下一代 AI Teammates
-      第三层:垂直应用Asana 2.0 的高价值…
-    商业背景:SaaSpocalypse 中的 A…
+      第一层个人助理 Asana Dash
+      第二层下一代 AI Teammates
+      第三层垂直应用Asana 20 的高价值场景
+    商业背景SaaSpocalypse 中的 Asana
     与竞品的差异化对照表
     三个值得跟踪的开放问题
     与现有 wiki 实体的关联
-    深度分析
 ```
 
 ## 三个独有贡献(不应合并到现有 entity)

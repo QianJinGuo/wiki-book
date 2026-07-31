@@ -5,19 +5,6 @@
 > 📊 Level ⭐⭐ | 5.6KB | `entities/using-kiro-cli-agent-client-protocol-build-ai-chat.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("使用 Kiro CLI 和 Agent Client P…"))
-    概述
-    核心技术
-    来源
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 概述
 
 ```mermaid

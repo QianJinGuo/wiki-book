@@ -9,21 +9,19 @@
 
 ```mermaid
 mindmap
-  root(("Your AI Agents Are Already I…"))
-    背景：AI 代理部署速度超过治理成熟度
-    核心问题：身份黑暗物质（Identity Da…
+  root(("Your AI Agents Are Already Inside"))
+    背景 AI 代理部署速度超过治理成熟度
+    核心问题 身份黑暗物质 Identity Dark Matter
       身份黑暗物质的技术根因
     企业身份团队现在在问的三个关键问题
-      问题1：我们的环境中有哪些 AI 代理在运行？
-      问题2：我们现在对 NIST 身份要求的合规性…
-      问题3：我们是否有应立即轮换的静态凭证？
+      问题1 我们的环境中有哪些 AI 代理在运行
+      问题2 我们现在对 NIST 身份要求的合规性如何
+      问题3 我们是否有应立即轮换的静态凭证
     Orchid Security 的解决路径
-      技术方法：全谱身份权威（Full-Spectr…
+      技术方法 全谱身份权威 Full-Spectrum
       安全 AI 代理采用的五项原则
-    深度问题：身份黑暗物质正在加速
-    Gartner Market Guide fo…
-    深度分析
-    实践启示
+    深度问题 身份黑暗物质正在加速
+    Gartner Market Guide for Guardian
 ```
 
 ## 背景：AI 代理部署速度超过治理成熟度

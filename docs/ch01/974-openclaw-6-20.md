@@ -43,14 +43,6 @@ grammY 库接收到 Telegram 的 Update 事件，Channel Adapter 把它归一化
 这些问题背后，是一系列非常老练的工程决策。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("拆解 OpenClaw 架构（一）：6 阶段流水线与 2…"))
-    Gateway：一个 Node.js 进程统治一切
-```
-
 ## Gateway：一个 Node.js 进程统治一切
 
 OpenClaw 的 Gateway 是一个用 TypeScript 写的长驻 Node.js 进程，要求 Node 22+，默认绑定  127.0.0.1:18789  。它是整个系统的神经中枢，采用经典的 Hub-and-Spoke 架构，所有的消息面、会话路由、Agent 编排、事件协调全归它管。

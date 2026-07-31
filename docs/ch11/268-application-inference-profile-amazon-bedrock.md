@@ -13,9 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("基于 Application Inference Pro…"))
-    痛点：Bedrock 成本可见性
-    方案核心：Application Infere…
+  root(("基于 Application Inference Profile"))
+    痛点 Bedrock 成本可见性
+    方案核心 Application Inference Profile
     架构
     与现有方案对比
 ```

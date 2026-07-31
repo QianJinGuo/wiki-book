@@ -11,18 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("How AI changes software P&L"))
-    相关概念
-    相关实体
-    深度分析
-      传统软件 vs AI 软件：两种 PandL 模式…
-      为什么 AI 功能缺乏规模效益
-      竞争动态：软件护城河的侵蚀
-      套利机会的框架
-    实践启示
-      对 SaaS 公司和产品经理
-      对创业者和投资人
-      对企业战略和运营
+  root(("How AI changes software PL"))
+    传统软件 vs AI 软件 两种 PL 模式的根本分歧
+    为什么 AI 功能缺乏规模效益
+    竞争动态 软件护城河的侵蚀
+    套利机会的框架
+    对 SaaS 公司和产品经理
+    对创业者和投资人
+    对企业战略和运营
 ```
 
 ## 摘要

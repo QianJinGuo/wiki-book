@@ -12,13 +12,9 @@
 ```mermaid
 mindmap
   root(("Agentic search models"))
-    Summary
     Notes
-    相关实体
-    深度分析
-      前沿模型的 80/20 困境
-      Agentic Search Models 的崛起
-    实践启示
+    前沿模型的 8020 困境
+    Agentic Search Models 的崛起
 ```
 
 ## Summary

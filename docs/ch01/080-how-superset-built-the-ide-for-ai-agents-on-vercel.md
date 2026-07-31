@@ -11,18 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("How Superset built the IDE f…"))
+  root(("How Superset built the IDE for AI"))
     核心指标
-    深度分析
-      1. 并行基础设施是 Agent 产品成败的关键
-      2. Vercel 全栈的组合优势
-      3. '自己吃自己的狗粮' 作为产品验证
-      4. 事件驱动型扩展能力的验证
-    实践启示
-      对 Agent 平台开发者的建议
-      对 Vercel 平台能力的印证
-    相关概念
-    相关实体
+    并行基础设施是 Agent 产品成败的关键
+    Vercel 全栈的组合优势
+    自己吃自己的狗粮 作为产品验证
+    事件驱动型扩展能力的验证
+    对 Agent 平台开发者的建议
+    对 Vercel 平台能力的印证
 ```
 
 ## 摘要

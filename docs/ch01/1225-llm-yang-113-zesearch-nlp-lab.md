@@ -9,19 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("LLM 自我提升系统综述 — Yang 等 113 页四…"))
-    概述
-    触发背景：Anthropic 'When AI…
-    核心框架：四阶段闭环 + 一控制层
-      1. 数据获取（Data Acquisitio…
-      2. 数据筛选（Data Selection）…
-      3. 模型优化（Model Optimizat…
-      4. 推理细化（Inference Refin…
+  root(("LLM 自我提升系统综述 Yang 等 113 页四阶段闭环框架"))
+    触发背景 Anthropic When AI builds
+    核心框架 四阶段闭环 一控制层
+      数据获取 Data Acquisition 三种路径递进
+      数据筛选 Data Selection 两类核心机制
+      模型优化 Model Optimization GRO 框架
     六大风险
     六大应用场景
     四大未来方向
     与现有实体的差异化定位
-    深度分析
 ```
 
 ## 概述

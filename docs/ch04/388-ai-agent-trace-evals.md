@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("AI Agent 落地：如何攻克稳定性、成本与评估难题？…"))
-    深度分析
-      'Trace 即 Evals'的方法论基础
-      Agent Engineering 的三阶段演…
-      Agent Trace 的技术挑战与存储架构创新
-      路径依赖与分叉点的诊断价值
-    实践启示
+  root(("AI Agent 落地 如何攻克稳定性 成本与评估难题"))
+    Trace 即 Evals的方法论基础
+    Agent Engineering 的三阶段演进与 Harness
+    Agent Trace 的技术挑战与存储架构创新
+    路径依赖与分叉点的诊断价值
 ```
 
 ## 摘要

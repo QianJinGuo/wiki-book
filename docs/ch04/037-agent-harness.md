@@ -133,18 +133,15 @@ iii [2] 是开源项目。可以通过我们的 quickstart [3] 开始使用。
 
 ```mermaid
 mindmap
-  root(("Agent架构关键变化：Harness正在成为新后端"))
-    深度分析
-      1. 核心论点：Harness 与后端的二元分…
-      2. 三原语抽象：Worker、Trigger…
-      3. 范式转移的本质：类别坍缩
-      4. 实时特性：发现、扩展、可观测性
-    实践启示
-      1. 重新思考Agent系统的集成边界
-      2. 采用Worker-first架构思维
-      3. 优先投资实时发现和可观测性基础设施
-      4. 重新审视Harness的迭代成本
-    相关实体
+  root(("Agent架构关键变化 Harness正在成为新后端"))
+    核心论点 Harness 与后端的二元分离是暂时状态
+    三原语抽象 Worker Trigger Function
+    范式转移的本质 类别坍缩
+    实时特性 发现 扩展 可观测性
+    重新思考Agent系统的集成边界
+    采用Worker-first架构思维
+    优先投资实时发现和可观测性基础设施
+    重新审视Harness的迭代成本
 ```
 
 ## 深度分析

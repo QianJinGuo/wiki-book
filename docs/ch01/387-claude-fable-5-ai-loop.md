@@ -11,15 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Fable 5 发布：AI 工作流的关键正…"))
-    深度分析
-      从'提示模型'到'设计循环'的范式转移
-      Parameter Golf 实验：验证器子 …
-      Fable 5 vs Opus 4.7：实验策…
-      记忆递进模型：从失败到通用规则的五阶段
-    实践启示
-    相关实体
-    相关主题
+  root(("Claude Fable 5 发布 AI 工作流的关键正在转向"))
+    从提示模型到设计循环的范式转移
+    Parameter Golf 实验 验证器子 Agent 优于自我批判
+    Fable 5 vs Opus 47 实验策略的质变
+    记忆递进模型 从失败到通用规则的五阶段
 ```
 
 ## 摘要

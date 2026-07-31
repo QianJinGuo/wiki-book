@@ -45,20 +45,19 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("长周期 Agent 详解：从 Ralph Loop 到可…"))
-    5 张卡治理框架（若飞 2026-06 续篇）
-      5 张卡清单
-      Level 1 准入流程（先反着看四层 set…
+  root(("长周期 Agent 详解 从 Ralph Loop 到可接管"))
+    张卡治理框架 若飞 2026-06 续篇
+      张卡清单
+      Level 1 准入流程 先反着看四层 setup
       记忆预算观
-      Skill 准入 + 退场
-    总结：若飞 long-running-agen…
+    总结 若飞 long-running-agent 系列两篇视角融合
     背景与问题定义
-    三类漂移：长周期 Agent 的核心陷阱
+    三类漂移 长周期 Agent 的核心陷阱
     Ralph Loop 的结构性问题
-      Jarrod Watts 的'模糊性复利'
-    长周期 Agent 的证据链：三层工程抓手
+      Jarrod Watts 的模糊性复利
+    长周期 Agent 的证据链 三层工程抓手
     Subagent 架构与多 Agent 质量治理
-    可接管的标准：从'能继续'到'能被接管'
+    可接管的标准 从能继续到能被接管
 ```
 
 ## 5 张卡治理框架（若飞 2026-06 续篇）

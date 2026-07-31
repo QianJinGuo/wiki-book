@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Dify集成Amazon Bedrock AgentCo…"))
-    概述
-    核心技术
-    深度分析
-      云端托管浏览器：AI Agent网页交互范式的…
-      双组件架构：Session Manager与B…
-      Dify生态的能力缺口与填补路径
-      GitHub仓库分析：从信息获取到结构化洞察的…
-    实践启示
-      优先掌握会话生命周期管理
-      利用Agent节点集成实现智能导航
-      复用GitHub分析模式构建可扩展的信息获取流程
-      构建可观测性体系：Browser Viewer…
-    来源
-    相关实体
+  root(("Dify集成Amazon Bedrock AgentCore"))
+    云端托管浏览器 AI Agent网页交互范式的根本转变
+    双组件架构 Session Manager与Browser
+    Dify生态的能力缺口与填补路径
+    GitHub仓库分析 从信息获取到结构化洞察的完整闭环
+    优先掌握会话生命周期管理
+    利用Agent节点集成实现智能导航
+    复用GitHub分析模式构建可扩展的信息获取流程
+    构建可观测性体系 Browser Viewer的集成价值
 ```
 
 ## 概述

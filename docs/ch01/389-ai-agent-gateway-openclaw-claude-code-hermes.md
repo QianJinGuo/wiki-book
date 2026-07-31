@@ -9,15 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("AI Agent Gateway 架构设计 — Open…"))
+  root(("AI Agent Gateway 架构设计"))
     评分
     与现有 wiki 的关系
     文章导航
     框架哲学对比
     关键技术细节
     三个核心架构取舍
-    深度分析
-    实践启示
 ```
 
 ## 评分

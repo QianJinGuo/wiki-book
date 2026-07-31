@@ -13,15 +13,14 @@ Chrome DevTools 团队在 Lighthouse 中新增了 **Agentic Browsing** 评估类
 
 ```mermaid
 mindmap
-  root(("Lighthouse Agentic Browsing …"))
+  root(("Lighthouse Agentic Browsing"))
     核心评估维度
       WebMCP 集成
-      Agent 导向的可访问性（A11y Tree）
+      Agent 导向的可访问性 A11y Tree
       稳定性与可发现性
-    评分机制（非传统模式）
+    评分机制 非传统模式
     开发者改进路径
     战略意义
-    相关主题
 ```
 
 ## 核心评估维度

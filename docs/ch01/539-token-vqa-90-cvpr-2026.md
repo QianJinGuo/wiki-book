@@ -39,11 +39,9 @@ MetaCompress团队 投稿 凹非寺 量子位 | 公众号 QbitAI
 
 ```mermaid
 mindmap
-  root(("只看图片就能学会压缩Token！浙大&阿里新框架多轮VQ…"))
-    详细信息
+  root(("只看图片就能学会压缩Token 浙大阿里新框架多轮VQA压缩率90"))
     研究背景
     研究成果
-    原文
 ```
 
 ## 核心要点

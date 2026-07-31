@@ -13,15 +13,15 @@ peerd 是第一个完全运行在浏览器中的 [AI Agent Harness](https://gith
 
 ```mermaid
 mindmap
-  root(("peerd: 浏览器原生的 AI Agent Harness"))
+  root(("peerd 浏览器原生的 AI Agent Harness"))
     架构创新
-    安全模型：双角色架构
+    安全模型 双角色架构
     计算沙箱
-    Peer-to-Peer Agent 通信（P…
+    Peer-to-Peer Agent 通信 Preview
     BYOK 模式
     与其他 Agent Harness 的差异化
     当前状态
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
 ```
 
 ## 架构创新

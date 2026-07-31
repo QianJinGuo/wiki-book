@@ -15,15 +15,13 @@
 
 ```mermaid
 mindmap
-  root(("Netflix Metadata Service and…"))
-    问题：碎片化的 ML 景观
-    核心抽象：AIP URI 词汇体系
-    技术架构：从事件到图谱
-    图谱构建示例：连接模型到 A/B 测试
-    AIP Portal：探索而非仅搜索
-    关键数据/实践启示
-    深度分析
-    实践启示
+  root(("Netflix Metadata Service and"))
+    问题 碎片化的 ML 景观
+    核心抽象 AIP URI 词汇体系
+    技术架构 从事件到图谱
+    图谱构建示例 连接模型到 AB 测试
+    AIP Portal 探索而非仅搜索
+    相关引用
 ```
 
 ## 问题：碎片化的 ML 景观

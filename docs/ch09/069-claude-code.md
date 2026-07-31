@@ -10,32 +10,27 @@
 ```mermaid
 mindmap
   root(("Claude Code 集成其他工具指南"))
-    概述
     MCP 协议集成
       MCP 是 Claude Code 的扩展基石
       MCP 核心机制
       MCP 工具调用流程
-      MCP 真正不可替代的场景
-    IM 平台操控：IMClaw
+    IM 平台操控 IMClaw
       核心概念
       典型应用场景
       技术架构
-      相关项目
     Kiro AI IDE 协同
       Kiro 与 Claude Code 的关系
       典型集成场景
     企业级部署集成
-      与 AWS Bedrock AgentCore…
+      与 AWS Bedrock AgentCore 的集成
       与 OpenClaw 的对比
     Skills 系统集成
       Claude Code Skills vs MCP
       Skill 使用场景
       Skill 安全风险
     工具选择矩阵
-    深度分析
-      MCP 与 Skills 的哲学差异
-      IM 操控 Agent 的适用边界
-      工具选择的工程思维
+    MCP 与 Skills 的哲学差异
+    IM 操控 Agent 的适用边界
 ```
 
 ## 概述

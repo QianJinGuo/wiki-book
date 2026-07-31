@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Slack AI: The Path to Multi-…"))
-    深度分析
-      四阶段演进的工程动因
-      智能路由层的架构深度
-      多云的真实代价
-      '零事故迁移'方法论
-    实践启示
-    相关实体
+  root(("Slack AI The Path to Multi-Cloud"))
+    四阶段演进的工程动因
+    智能路由层的架构深度
+    多云的真实代价
+    零事故迁移方法论
 ```
 
 ## 摘要

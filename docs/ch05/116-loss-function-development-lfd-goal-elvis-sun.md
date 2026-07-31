@@ -9,24 +9,22 @@
 
 ```mermaid
 mindmap
-  root(("Loss Function Development (L…"))
-    概述
-    核心论点
-    Spec-Driven vs Loss-Fun…
-    智能体作弊 3 次（失败案例）
-      循环 1（5 分钟）— 直接拿 eval se…
-      循环 2（20 分钟）— 盲测 30 条目，但…
-      循环 3（30 分钟）— 盲测 200 条目，…
-      关键洞察
+  root(("Loss Function Development LFD"))
+    Spec-Driven vs Loss-Function
+    智能体作弊 3 次 失败案例
+      循环 1 5 分钟 直接拿 eval set 生成 seed data
+      循环 2 20 分钟 盲测 30 条目 但 miss 列表变成关键词
+      循环 3 30 分钟 盲测 200 条目 但枚举膨胀
     Loss Function 的 4 个组件
-      1. 目标（Target）
-      2. 约束（Constraints）
-      3. 仪表（Instrumentation）—…
-      4. 强制熵（Forced Entropy）
-    一路向下的梯度下降：两个循环
-    Meta-Meta-Prompt：让 Agen…
+      目标 Target
+      约束 Constraints
+      仪表 Instrumentation Harness
+    一路向下的梯度下降 两个循环
+    Meta-Meta-Prompt 让 Agent 设计 goal
     蒸馏从训练时移到提示时
-      信息对称 = 执行成本坍缩
+      信息对称 执行成本坍缩
+    真实案例 calcom 关闭开源 2026-04
+    新护城河 信息不对称
 ```
 
 ## 概述

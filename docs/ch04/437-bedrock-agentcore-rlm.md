@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Bedrock AgentCore RLM：突破上下文窗…"))
-    深度分析
-      RLM 的核心创新：从上下文容器到程序化环境
-      为什么现有方案都存在根本缺陷
-      Bedrock AgentCore Code …
-      分层 LLM 架构的洞见
-    实践启示
-      何时应该采用 RLM 架构
-      子模型选择的经济学
-      系统提示工程的关键细节
-      会话管理与成本控制
-    相关实体
+  root(("Bedrock AgentCore RLM 突破上下文窗口限制"))
+    RLM 的核心创新 从上下文容器到程序化环境
+    为什么现有方案都存在根本缺陷
+    Bedrock AgentCore Code
+    分层 LLM 架构的洞见
+    何时应该采用 RLM 架构
+    子模型选择的经济学
+    系统提示工程的关键细节
+    会话管理与成本控制
 ```
 
 ## 核心要点

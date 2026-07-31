@@ -15,13 +15,12 @@
 
 ```mermaid
 mindmap
-  root(("一份可信来源，终结 Skill 管理混乱：Skill 治…"))
+  root(("一份可信来源 终结 Skill 管理混乱 Skill 治理最佳实践"))
     多 Agent Skill 管理的五大挑战
     Nacos AI Registry 三步治理路径
-      第一步：本机统一 → Local mode
-      第二步：进入 Registry → 资产属性化
-      第三步：安全准入 → 治理闭环
-    核心架构
+      第一步 本机统一 Local mode
+      第二步 进入 Registry 资产属性化
+      第三步 安全准入 治理闭环
 ```
 
 ## 多 Agent Skill 管理的五大挑战

@@ -15,18 +15,15 @@ AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agen
 
 ```mermaid
 mindmap
-  root(("AgentRun CLI v0.1.0 正式开源：一行命…"))
-    相关实体
-    深度分析
-      托管 Agent 的工程化拐点
-      CLI 与 SDK 的分层架构设计
-      声明式 API 的 GitOps 实践
-      多 Agent 编排的平台化趋势
-    实践启示
-      1. 本地开发调试流程优化
-      2. CI/CD 流水线集成
-      3. 多环境 Profile 管理
-      4. SDK 与 CLI 的选型决策
+  root(("AgentRun CLI v010 正式开源 一行命令运行您的托管"))
+    托管 Agent 的工程化拐点
+    CLI 与 SDK 的分层架构设计
+    声明式 API 的 GitOps 实践
+    多 Agent 编排的平台化趋势
+    本地开发调试流程优化
+    CICD 流水线集成
+    多环境 Profile 管理
+    SDK 与 CLI 的选型决策
 ```
 
 ## 相关实体

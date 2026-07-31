@@ -11,13 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("【图解】Claude Code 源码解析 ｜Prompt…"))
+  root(("图解 Claude Code 源码解析 ｜Prompt 提示词模块"))
     六大 Prompt 模块概览
-    Core System Prompt：静态/动…
-      优先级策略树：buildEffectiveS…
-    Tool Prompts：自然语言行为协议
-    Skill Prompts：渐进式加载
-      Skill 的结构（以 claude-api…
+    Core System Prompt 静态动态分离
+      优先级策略树 buildEffectiveSystemPrompt
+    Tool Prompts 自然语言行为协议
+    Skill Prompts 渐进式加载
+      Skill 的结构 以 claude-api skill 为例
       Token 优化策略
       Skill Prompt 标准格式
     Reference Documentation

@@ -13,10 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Code is the easy part, or ho…"))
-    Overview
-    Some contexthttp://…
-    First make the proble…
+  root(("Code is the easy part or how we"))
+    Some
+    First make the problem simple
 ```
 
 ## Overview

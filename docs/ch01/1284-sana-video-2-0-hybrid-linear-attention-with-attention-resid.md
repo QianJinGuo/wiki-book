@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("SANA-Video 2.0: Hybrid Linea…"))
-    深度分析
-      效率-质量权衡的架构创新
-      从零训练的 hybrid 设计
-      Sol-Engine 全栈优化的协同效应
-      与扩散模型中效率优化趋势的关系
-    实践启示
-    相关实体
+  root(("SANA-Video 20 Hybrid Linear"))
+    效率-质量权衡的架构创新
+    从零训练的 hybrid 设计
+    Sol-Engine 全栈优化的协同效应
+    与扩散模型中效率优化趋势的关系
 ```
 
 ## 摘要

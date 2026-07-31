@@ -9,14 +9,6 @@
 > Knowledge bases that ground agents and generative AI applications over your enterprise data are hard to build at scale. Teams typically stitch together connectors, parsers, vector stores, knowledge graphs, and retrieval logic, then operationalize all of it for production. Each piece brings its own c
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build Enterprise Search for …"))
-    Simplified setup
-```
-
 ## 摘要
 
 # Build enterprise search for agents with Amazon Bedrock Managed Knowledge Base

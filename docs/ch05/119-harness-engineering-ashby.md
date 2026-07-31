@@ -11,25 +11,25 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering 从理论到实战：行…"))
-    概述
-    核心命题
-    Böckeler 理论框架 30 秒回顾
+  root(("Harness Engineering 从理论到实战"))
+    Bckeler 理论框架 30 秒回顾
       三句话核心
-    行为正确性：Harness 最大的缺口
-      真实场景（Agent 工作 3 小时）
-      自我指涉的验证回路（结构性死结）
+    行为正确性 Harness 最大的缺口
+      真实场景 Agent 工作 3 小时
+      自我指涉的验证回路 结构性死结
       头部公司不完美但有效的做法
-    上下文腐烂：长任务的隐形杀手
-      Anthropic 两段式架构（cwc-lon…
-    可驾驭性：被忽略的架构判决
-      ✅ 高可驾驭性
-      ❌ 低可驾驭性
-    Ashby 定律：模型越强，需要的纪律越多
+    上下文腐烂 长任务的隐形杀手
+      Anthropic 两段式架构
+    可驾驭性 被忽略的架构判决
+      高可驾驭性
+      低可驾驭性
+    Ashby 定律 模型越强 需要的纪律越多
       Thoughtworks 技术雷达的精准表述
-    结语：Harness Engineering …
+    结语 Harness Engineering 的真正边界
       对管理者的三件事
       回到 Karpathy
+    个一手信息来源
+    与现有 harness-engineering 实体的差异化
 ```
 
 ## 概述

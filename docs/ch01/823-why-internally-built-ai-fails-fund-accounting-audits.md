@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Why Internally-Built AI Fail…"))
-    深度分析
-      审计标准的技术影响
-      架构五层控制模型
-      IT 接手 ≠ 合规转移
-      Build vs Buy 的真正问题
-    实践启示
-    相关实体
+  root(("Why Internally-Built AI Fails"))
+    审计标准的技术影响
+    架构五层控制模型
+    IT 接手 合规转移
+    Build vs Buy 的真正问题
 ```
 
 ## 摘要

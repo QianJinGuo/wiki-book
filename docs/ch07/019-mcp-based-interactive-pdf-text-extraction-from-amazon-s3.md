@@ -13,11 +13,10 @@ AWS 推出的基于 Model Context Protocol (MCP) 的交互式 PDF 文本提取�
 
 ```mermaid
 mindmap
-  root(("MCP-based Interactive PDF Te…"))
-    核心能力
-      实时文本提取
-      成本优化
-      最小化基础设施
+  root(("MCP-based Interactive PDF Text"))
+    实时文本提取
+    成本优化
+    最小化基础设施
     技术实现
       工作流程
       MCP 服务器核心代码
@@ -32,10 +31,6 @@ mindmap
       法律服务公司
       金融服务合规
       企业战略团队
-    扩展与增强选项
-    实践启示
-      选型决策树
-      关键要点
 ```
 
 ## 摘要

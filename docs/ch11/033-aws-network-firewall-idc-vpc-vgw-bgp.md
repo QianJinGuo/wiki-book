@@ -13,23 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("AWS Network Firewall 审查 IDC-…"))
+  root(("AWS Network Firewall 审查 IDC-VPC"))
     场景与挑战
-    核心架构
     关键技术点
-      1. BGP 路由传播
-      2. 手工高优先级路由
-      3. NFW 路由配置
-      4. 验证实验
+      BGP 路由传播
+      手工高优先级路由
+      NFW 路由配置
     VGW vs TGW 场景选择
-    深度分析
-      1. VGW + NFW 架构：静态路由劫持流…
-      2. BGP 路由传播是 AWS 跨网络互联的…
-      3. 主动拦截 vs 被动监听：NFW 的架构定位
-      4. 双 AZ NFW 高可用：生产部署的必要条件
-    实践启示
+    VGW NFW 架构 静态路由劫持流量的实现原理
+    BGP 路由传播是 AWS 跨网络互联的统一基础
+    主动拦截 vs 被动监听 NFW 的架构定位
+    双 AZ NFW 高可用 生产部署的必要条件
     关键引用清单
-    相关实体
 ```
 
 ## 场景与挑战

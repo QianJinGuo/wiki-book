@@ -48,16 +48,13 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("AI Infra 入门：RMSNorm、Softmax、…"))
-    深度分析
-      1. RMSNorm：从方差到归一化的数学推导链
-      2. Softmax：概率归一化的数学与工程
-      3. Causal Mask 与 Online…
-      4. Sampling：从 Multinomi…
+  root(("AI Infra 入门 RMSNorm Softmax"))
+    RMSNorm 从方差到归一化的数学推导链
+    Softmax 概率归一化的数学与工程
+    Causal Mask 与 Online Softmax
+    Sampling 从 Multinomial 到
     核心金句
-    实践启示
     相关页面
-    相关实体
 ```
 
 ## 摘要

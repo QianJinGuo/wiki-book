@@ -9,29 +9,23 @@
 
 ```mermaid
 mindmap
-  root(("AI Agent 架构设计（七）：Skills 系统设计…"))
-    Skills 的本质：Agent 的专业经验
-    OpenClaw：赌社区集体智慧
-      ClawHub：Agent 界的 npm
-      社区赌注的代价：供应链攻击
-    Claude Code：赌个人经验沉淀
-      Skills 的来源：你自己写
-      渐进式披露：经验越多，成本越低
+  root(("AI Agent 架构设计 七 Skills 系统设计"))
+    Skills 的本质 Agent 的专业经验
+    OpenClaw 赌社区集体智慧
+      ClawHub Agent 界的 npm
+      社区赌注的代价 供应链攻击
+    Claude Code 赌个人经验沉淀
+      Skills 的来源 你自己写
+      渐进式披露 经验越多 成本越低
       Compaction 后 Skills 的持续性
-    Hermes Agent：赌 Agent 能自…
-      颠覆前提：经验为什么要人来写
-      这个赌注难在哪里？
-      Skills 的共享：跨 Agent 的经验传播
-    三种赌注，三种取舍
-    深度分析
-      三种架构理念的根本分歧
-      渐进式披露的工程意义
-      安全模型的深层矛盾
-    实践启示
-      选择框架时的决策树
-      企业级部署的关键考量
-      构建个人 Skills 库的最佳实践
-    相关实体
+    Hermes Agent 赌 Agent 能自我进化
+      颠覆前提 经验为什么要人来写
+      这个赌注难在哪里
+      Skills 的共享 跨 Agent 的经验传播
+    三种赌注 三种取舍
+    三种架构理念的根本分歧
+    渐进式披露的工程意义
+    安全模型的深层矛盾
 ```
 
 ## Skills 的本质：Agent 的专业经验

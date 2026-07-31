@@ -11,16 +11,6 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 [__](javascript:void(0))
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("cPanel, WHM Release Fixes fo…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 
 ```mermaid

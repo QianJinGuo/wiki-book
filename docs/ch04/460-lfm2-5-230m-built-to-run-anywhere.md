@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("LFM2.5-230M: Built to Run An…"))
+  root(("LFM25-230M Built to Run Anywhere"))
     核心指标
     训练与微调
       机器人端部署验证
@@ -22,11 +22,8 @@ mindmap
       CPU 推理
       GPU 推理
     生态系统支持
-    深度分析
-      对边缘 Agent 生态的意义
-      技术路线意义
-    实践启示
-    相关实体
+    对边缘 Agent 生态的意义
+    技术路线意义
 ```
 
 ## 摘要

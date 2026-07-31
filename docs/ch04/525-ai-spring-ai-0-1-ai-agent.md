@@ -12,16 +12,6 @@ Linux说过一句很经典的话：Talk is cheap, show me the code.
 1、该项目本身纯作为学习用途的Demo，只是用作展示"理论背后看得见的代码"。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI实践｜基于 Spring AI 从0到1构建 AI …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)

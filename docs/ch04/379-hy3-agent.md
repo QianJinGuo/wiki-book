@@ -12,13 +12,10 @@
 ```mermaid
 mindmap
   root(("姚顺雨评测腾讯混元 Hy3 Agent 能力"))
-    深度分析
-      Hy3 的架构定位：快慢思考融合的 MoE 设计
-      元宝 Agent 的任务完成模式
-      与 Coding Agent 的定位差异
-      Agent 评测的方法论启示
-    实践启示
-    相关实体
+    Hy3 的架构定位 快慢思考融合的 MoE 设计
+    元宝 Agent 的任务完成模式
+    与 Coding Agent 的定位差异
+    Agent 评测的方法论启示
 ```
 
 ## 摘要

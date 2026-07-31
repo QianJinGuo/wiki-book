@@ -15,20 +15,17 @@
 
 ```mermaid
 mindmap
-  root(("UltraEP：300微秒实时 MoE 专家负载均衡"))
+  root(("UltraEP 300微秒实时 MoE 专家负载均衡"))
     问题
     核心设计
       GPU-native 在线求解器
       通信 Kernel
       共享冗余 Slot
     结果
-    深度分析
-      从'预测'到'实时求解'的范式转变
-      Quota 机制的联合优化价值
-      通信 Kernel 的双缓冲与中继架构
-      跨层共享冗余 Slot 的空间效率
-    实践启示
-    相关实体
+    从预测到实时求解的范式转变
+    Quota 机制的联合优化价值
+    通信 Kernel 的双缓冲与中继架构
+    跨层共享冗余 Slot 的空间效率
     开源
 ```
 

@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Agent Teams 实战：怎…"))
-    核心问题
+  root(("Claude Code Agent Teams 实战 怎么拆任务"))
     三种协作结构
     什么时候该用 Agent Teams
     Agent Teams 多出来的是「协作状态」
-    并行之前，先问四个工程问题
+    并行之前 先问四个工程问题
     团队 Prompt 模板
     落地前检查清单
-    深度分析
-      协作结构的本质区别
-      文件边界是团队协作的第一约束
-      双向依赖才是 Agent Teams 的适用场景
-      证据链是验收的核心
+    协作结构的本质区别
+    文件边界是团队协作的第一约束
 ```
 
 ## 核心问题

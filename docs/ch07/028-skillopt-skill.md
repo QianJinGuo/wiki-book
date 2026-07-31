@@ -11,16 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("SkillOpt — 微软训练 Skill 文档的方法论"))
+  root(("SkillOpt 微软训练 Skill 文档的方法论"))
     核心思想
-    训练循环：深度学习 → 文本空间
+    训练循环 深度学习 文本空间
     两个模型分工
     关键设计
-      克制的学问（textual learning …
+      克制的学问 textual learning rate
       rejected-edit buffer
-      slow/meta update
-    实验结果
-      6 个 benchmark 相比直怼 GPT-…
+      slowmeta update
+    个 benchmark 相比直怼 GPT-55
     学到的规则特点
       规则示例
     跨模型跨环境迁移

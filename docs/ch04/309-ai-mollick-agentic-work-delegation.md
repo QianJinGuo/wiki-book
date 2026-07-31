@@ -13,23 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("管理作为 AI 超级能力：Mollick 的 Agent…"))
+  root(("管理作为 AI 超级能力 Mollick 的 Agentic"))
     沃顿 MBA 四天创业挑战赛
-    Agentic Work  delegatio…
+    Agentic Work delegation 方程
     让 delegation 更有价值的三个杠杆
     管理文档就是 AI Prompt
-    管理 101 = AI Agent 协作技能
+    管理 101 AI Agent 协作技能
     GDPval 数据支持
-    深度分析
-      1. '管理 AI'作为核心能力的范式确认
-      2. 72% 击败人类专家的实验设计意义
-      3. 管理技能的可迁移性
-      4. '超级能力'隐喻的双重含义
-    实践启示
-      1. 管理者：将 AI 管理技能纳入绩效评估
-      2. 技术专家：学习管理 AI 而非只学技术
-      3. 组织：重新定义'AI 素养'
-      4. 招聘：重视 AI 管理经验而非 AI 编…
+    管理 AI作为核心能力的范式确认
+    72 击败人类专家的实验设计意义
 ```
 
 ## 沃顿 MBA 四天创业挑战赛

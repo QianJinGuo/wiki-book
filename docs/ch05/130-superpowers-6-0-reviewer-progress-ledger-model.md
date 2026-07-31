@@ -15,14 +15,12 @@
 
 ```mermaid
 mindmap
-  root(("Superpowers 6.0 反作弊重写：review…"))
-    一句话定位
+  root(("Superpowers 60 反作弊重写 reviewer"))
     六大技术杠杆
-      1. 两个 reviewer 合并为一：一次 …
-      2. Reviewer 只读怀疑论者（三道硬闸门）
-      3. 文件替代粘贴：三个脚本的上下文经济学
-      4. Progress Ledger：对抗 c…
-    诚实边界（术哥明确标注）
+      两个 reviewer 合并为一 一次 diff 出两个裁决
+      Reviewer 只读怀疑论者 三道硬闸门
+      文件替代粘贴 三个脚本的上下文经济学
+    诚实边界 术哥明确标注
     Wiki 关联
 ```
 

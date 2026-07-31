@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Superpowers 深度解析：给 Claude Co…"))
-    一句话
+  root(("Superpowers 深度解析 给 Claude Code"))
     三大原罪
-    brainstorming SKILL.md …
+    brainstorming SKILLmd 关键设计
     概率操控四技巧
     作者 Jesse Vincent obra
     项目热度
-    负向收益（7 项诚实评估）
+    负向收益 7 项诚实评估
     后悔成本决策
 ```
 

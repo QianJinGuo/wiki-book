@@ -13,8 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("LLM + 语义聚类 VOC 四级标签体系 Pipeline"))
-    背景
+  root(("LLM 语义聚类 VOC 四级标签体系 Pipeline"))
     四级结构
     三阶段 Pipeline
     技术核心

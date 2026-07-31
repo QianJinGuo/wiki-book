@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.5KB | `entities/every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Every AI Subscription Is a T…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - AI 订阅模式正在形成企业级供应商锁定
 - 订阅成本增长速度超过实际基础设施价值

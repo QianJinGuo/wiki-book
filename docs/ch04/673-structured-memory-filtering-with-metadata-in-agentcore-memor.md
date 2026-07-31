@@ -13,14 +13,13 @@ Amazon Bedrock AgentCore Memory 的元数据过滤机制（metadata filtering）
 
 ```mermaid
 mindmap
-  root(("Structured Memory Filtering …"))
+  root(("Structured Memory Filtering with"))
     核心机制
-      命名空间 + 元数据双层架构
+      命名空间 元数据双层架构
       元数据生命周期
     实测效果
-    应用场景
-      多 Agent 架构
-      多租户系统
+    多 Agent 架构
+    多租户系统
     现有覆盖
 ```
 

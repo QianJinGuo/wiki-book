@@ -9,26 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("GBrain — YC CEO Garry Tan 的 …"))
-    概述
+  root(("GBrain YC CEO Garry Tan 的"))
     与 GStack 的关系
-    核心架构
-      Compiled Truth + Timeli…
-      25 个 Skill 即插即用
-      混合搜索 + 实体自动升级
-      能打电话的脑子
+    Compiled Truth Timeline 知识模型
+    个 Skill 即插即用
+    混合搜索 实体自动升级
+    能打电话的脑子
     部署方式
     设计哲学
-    深度分析
-      Thin Harness, Fat Skill…
-      Compiled Truth + Timeli…
-      8 层架构的认知升维
-      实体自动升级的价值
-    实践启示
-      对 Agent 开发者的启示
-      对个人知识管理的启示
-      对 AI 创业的启示
-    相关链接
+    Thin Harness Fat Skill 哲学的完整实现
 ```
 
 ## 概述

@@ -11,17 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("SeedVR2 on Amazon SageMaker:…"))
-    概述
-    核心技术
-      关键特性
+  root(("SeedVR2 on Amazon SageMaker"))
+    关键特性
     AWS 三层架构
       数据流
     部署要点
-    应用场景
     与现有 AI 视频工具的关系
     开源资源
-    相关实体
 ```
 
 ## 概述

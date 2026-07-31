@@ -13,14 +13,11 @@ Vivek Haldar 展示了一个具体的工作流案例：将 Agent Skill 从**纯�
 
 ```mermaid
 mindmap
-  root(("How I Cut an AI Agent's Toke…"))
-    深度分析
-      Crystallized Workflow：从…
-      编译过程：从 Trace 到 Harness
-      「编译器」类比为什么成立
-      激励相容性分析：为什么大模型厂商不会主动推广
-    实践启示
-    相关实体
+  root(("How I Cut an AI Agents Token Use"))
+    Crystallized Workflow 从探索到固化的自然演化
+    编译过程 从 Trace 到 Harness
+    「编译器」类比为什么成立
+    激励相容性分析 为什么大模型厂商不会主动推广
 ```
 
 ## 摘要

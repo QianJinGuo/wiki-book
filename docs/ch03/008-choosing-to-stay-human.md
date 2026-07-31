@@ -16,22 +16,14 @@
 ```mermaid
 mindmap
   root(("Choosing to Stay Human"))
-    认知投降：Cognitive Surrende…
-    0.15 SD 的巨大差异
+    认知投降 Cognitive Surrender 的机制
+    SD 的巨大差异
     AI 写作的隐性成本
-    Too Frictionless：工具设计的根…
+    Too Frictionless 工具设计的根本问题
     主动选择保留什么给人类
-    深度分析
-      认知投降：设计学陷阱而非懒惰
-      Scaffold vs. Shortcut 的…
-      AI 写作的三层成本与风格资产风险
-      Agentic 系统的反学习机制
-    实践启示
-      启用 /learn 类工具而非直接问答
-      要求 AI 解释推理过程以保持认知参与
-      建立认知任务分类意识
-      为 AI 输出增加故意摩擦
-    关键数据/实践启示
+    认知投降 设计学陷阱而非懒惰
+    Scaffold vs Shortcut 的结构性不对称
+    AI 写作的三层成本与风格资产风险
 ```
 
 ## 认知投降：Cognitive Surrender 的机制

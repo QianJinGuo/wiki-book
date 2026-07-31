@@ -5,18 +5,6 @@
 > 📊 Level ⭐ | 10.1KB | `entities/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Nvidia's Jensen Huang bets o…"))
-    文章概要
-    深度分析
-    实践启示
-    关联阅读
-    相关实体
-```
-
 ## 核心要点
 - Published Time: 2026-05-13T13:00:01+0000
 

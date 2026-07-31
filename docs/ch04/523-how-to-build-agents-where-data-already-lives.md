@@ -11,13 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("How to build Agents Where Da…"))
-    深度分析
-      企业级挑战
-      与 Claude Code Large Co…
-      与 Building Web Search …
-    实践启示
-    相关实体
+  root(("How to build Agents Where Data"))
+    数据驻留优先 Data-Locality-First 原则
+    典型部署模式
+    技术架构要点
+    与 RAG 模式的关系
+    企业级挑战
+    与 Claude Code Large Codebase
+    与 Building Web Search Enabled
 ```
 
 ## 摘要

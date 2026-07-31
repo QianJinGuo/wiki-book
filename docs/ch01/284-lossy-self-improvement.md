@@ -17,21 +17,13 @@
 mindmap
   root(("Lossy self-improvement"))
     RSI 的三大假设与 LSI 的提出
-    复杂性刹车（Complexity Brake）
+    复杂性刹车 Complexity Brake
     三大核心摩擦
-    LSI 时代：不是指数爆炸，而是线性爬坡
-    关键数据/实践启示
-    深度分析
-      1. RSI 假设的结构性脆弱性
-      2. 复杂性刹车的双重来源
-      3. AutoML 的警示寓言
-      4. Amdahl 定律的 AI 研究适配
-    实践启示
-      1. 建立 RSI 失败概率的先验评估框架
-      2. 用 Amdahl 定律估算 AI 辅助研…
-      3. 设计抗'最后 1-3%' 过拟合的后训练流程
-      4. 区分'模型更准确'与'用户更有效'的评估体系
-    相关实体
+    LSI 时代 不是指数爆炸 而是线性爬坡
+    RSI 假设的结构性脆弱性
+    复杂性刹车的双重来源
+    AutoML 的警示寓言
+    Amdahl 定律的 AI 研究适配
 ```
 
 ## RSI 的三大假设与 LSI 的提出

@@ -11,20 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy's Autoresearch foun…"))
-    概述
+  root(("Karpathys Autoresearch found a"))
     正文要点
-    深度分析
-      1. Autoresearch 的领域迁移：从…
-      2. Campaign-Lane-Hypoth…
-      3. toTimeZone 导致 Cl…
-      4. AI Agent 作为'去偏见探测器'：…
-    实践启示
-      1. 为 Autoresearch 性能调查准…
-      2. 用 Campaign-Lane 结构将开…
-      3. 将 EXPLAIN PLAN inde…
-      4. 构建从 system.query_lo…
-    相关实体
+    Autoresearch 的领域迁移 从模型训练到查询性能优化
+    Campaign-Lane-Hypothesis-Experimen
+    toTimeZone 导致 ClickHouse 主键失效的根因分析
+    AI Agent 作为去偏见探测器 认知惯性移除的价值
+    为 Autoresearch 性能调查准备独立的基准测试集群
+    用 Campaign-Lane 结构将开放优化问题转化为可管理的探索组合
+    将 EXPLAIN PLAN indexes1 json1
 ```
 
 ## 概述

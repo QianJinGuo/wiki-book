@@ -16,23 +16,18 @@
 
 ```mermaid
 mindmap
-  root(("Agent 的骨架:Agent Runtime 7 大职…"))
-    核心定位:Runtime 是 Agent 的'…
-    Runtime 7 大职责 + 1 复杂 Ag…
-      1. 工具管理 ToolRegistry
-      2. 上下文组装 Context Engin…
-      3. 状态管理 State
-      4. 终止判断 Termination
-    3 主流框架对比
+  root(("Agent 的骨架Agent Runtime 7 大职责 3"))
+    核心定位Runtime 是 Agent 的底盘
+    Runtime 7 大职责 1 复杂 Agent 扩展层
+      工具管理 ToolRegistry
+      上下文组装 Context Engineering 执行层
+      状态管理 State
+    主流框架对比
     Runtime 价值的核心洞察
     与现有实体的交叉对比
-    深度分析
-      1. 七职责是通用'契约清单',不是某一框架的…
-      2. 状态管理 + 终止判断 = 运行时'自控…
-      3. Router 是复杂度的分水岭:简单 A…
-      4. Trace ↔ 可观测性 是同一数据流的…
-    实践启示5 条 actionable
-    局限性 / 需关注的边界
+    七职责是通用契约清单不是某一框架的私有设计
+    状态管理 终止判断 运行时自控机制是 Second Curve 的核心
+    Router 是复杂度的分水岭简单 Agent 用提示词路由复杂
 ```
 
 ## 核心定位:Runtime 是 Agent 的"底盘"

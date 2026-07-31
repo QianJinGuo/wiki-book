@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 5.0KB | `entities/openclaw-comprehensive-guide-32k-chars.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw 完全指南：这可能是全网最新最全的系统化…"))
-    关键洞察
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 关键洞察
 本页面分析了 OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏） 的核心内容。
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)

@@ -13,21 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("Trail of Bits: Skill Scanner…"))
-    一句话总结
-    攻击对象（4 个 scanner）
-    攻击技术（'standard tricks'）
+  root(("Trail of Bits Skill Scanner"))
+    攻击对象 4 个 scanner
+    攻击技术 standard tricks
     为什么 skill 安全至关重要
-      1. Skill 是新形态的 dependency
-      2. 5 种 distribution cha…
-      3. Scanner 的根本局限：静态规则的对…
+      Skill 是新形态的 dependency
+      5 种 distribution channel 几乎全
+      Scanner 的根本局限 静态规则的对抗弱势
     与现有实体的关系
-      与 Skill Design Pattern…
-      与 Skillclaw../ch04/4…
-      与 Agent Security Three…
+      与 Skill Design Patterns 的关系
+      与 Skillclaw 的关系
+      与 Agent Security Three Step
     关键实证数据
-    实践启示（对 skill marketplac…
-    实践启示（对 skill 开发者）
+    实践启示 对 skill marketplace 建设者
+    实践启示 对 skill 开发者
+    引用要点
 ```
 
 ## 一句话总结

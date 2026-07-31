@@ -13,11 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("腾讯 K8s + Ray 超大规模 AI Workloa…"))
+  root(("腾讯 K8s Ray 超大规模 AI Workload 调度实践"))
     AI Infra 黄金组合
     调度范式革新
       Ray 核心优势 vs 其他引擎
-    K8s + Ray 协同调度
+    K8s Ray 协同调度
     腾讯落地实践
       KubeRay 联邦架构
       跨层弹性调度

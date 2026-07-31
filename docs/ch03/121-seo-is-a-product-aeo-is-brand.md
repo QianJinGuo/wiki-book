@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 5.3KB | `entities/seo-product-aeo-brand-productledseo.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SEO is a product, AEO is brand"))
-    技术洞察
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - **SEO 作为产品** — 传统 SEO 是关于驱动流量，可衡量、可量化，有转化漏斗和 ROI
 - **AEO 作为品牌** — 答案引擎优化是在更广泛信息生态系统中建立权威和存在

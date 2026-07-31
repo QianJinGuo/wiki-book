@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("Autoresearch: AI Agent-Drive…"))
+  root(("Autoresearch AI Agent-Driven"))
     实验设计
     结果
     方法论意义

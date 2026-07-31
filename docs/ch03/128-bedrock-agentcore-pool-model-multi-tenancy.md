@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Bedrock AgentCore Pool Model…"))
-    核心架构：三级层次隔离
+  root(("Bedrock AgentCore Pool Model"))
+    核心架构 三级层次隔离
     池模型 vs 专用模型
     技术实现
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
     GitHub 仓库
     部署要求
-    相关主题
 ```
 
 ## 核心架构：三级层次隔离

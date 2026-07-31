@@ -13,19 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("钉钉 Stream + CLI 代理双引擎 AI 助手架构"))
-    一、问题域：为什么传统 Webhook 方案失败
-    二、架构核心：钉钉 Stream + CLI 代理
-    三、双引擎选择：从 Qoder CLI 到 C…
-    四、MCP 工具集成：跳过 OAuth 的无头方案
-    五、生产级稳定性：stdbuf + 进程控制 …
-      5.1 stdbuf 行缓冲（必须）
-      5.2 ProcessBuilder 子进程控制
-      5.3 用户上下文三重防护
-      5.4 权限隔离双模式
-    六、五级知识沉淀模型（L0-L4）
-    七、踩坑经验清单
-    八、关键配置参考
+  root(("钉钉 Stream CLI 代理双引擎 AI 助手架构"))
+    一 问题域 为什么传统 Webhook 方案失败
+    二 架构核心 钉钉 Stream CLI 代理
+    三 双引擎选择 从 Qoder CLI 到 Claude Code
+    四 MCP 工具集成 跳过 OAuth 的无头方案
+    五 生产级稳定性 stdbuf 进程控制 三重防护
+      stdbuf 行缓冲 必须
+      ProcessBuilder 子进程控制
+      用户上下文三重防护
+    六 五级知识沉淀模型 L0-L4
+    七 踩坑经验清单
+    八 关键配置参考
 ```
 
 ## 一、问题域：为什么传统 Webhook 方案失败

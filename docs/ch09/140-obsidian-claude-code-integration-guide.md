@@ -14,11 +14,9 @@ Obsidian Claude Code 集成：双向链接 + 块引用 + 本地模型支持
 
 ```mermaid
 mindmap
-  root(("Obsidian Claude Code Integra…"))
+  root(("Obsidian Claude Code Integration"))
     相关资源
-    深度分析
-    实践启示
-    相关实体
+    相关资源
 ```
 
 ## 摘要

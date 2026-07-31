@@ -9,32 +9,22 @@
 
 ```mermaid
 mindmap
-  root(("MNN-Sana-Edit-V2：端侧运行的图像漫画风编…"))
-    元数据
+  root(("MNN-Sana-Edit-V2 端侧运行的图像漫画风编辑大模型"))
     原始内容
     技术架构
     核心技术详解
-      Learnable Query：连接理解与生成…
-      Connector 模块：跨模态对齐
-      Deep Compression Autoen…
-      Linear DiT
+      Learnable Query 连接理解与生成的桥梁
+      Connector 模块 跨模态对齐
+      Deep Compression Autoencoder
     训练策略
       三阶段训练
     MNN 端侧部署优化
       模型转换
       量化技术
       真机速度测试
-      运行要求
-    深度分析
-      1. 端侧 AI 图像编辑的技术突破
-      2. 端云协同的新范式
-      3. 量化策略的精细平衡
-      4. 苹果生态的端侧优势
-    实践启示
-      对 AI 应用开发者的启示
-      对端智能基础设施团队的启示
-      对 AI 研究者的启示
-      对产品与商业化团队的启示
+    端侧 AI 图像编辑的技术突破
+    端云协同的新范式
+    量化策略的精细平衡
 ```
 
 ## 摘要

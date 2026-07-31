@@ -13,16 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Incident Triage Assi…"))
-    相关实体
-    深度分析
-      1. Agentic 编排架构：Chat Ag…
-      2. New Relic 5 个推理工具的 T…
-      3. RCA Brief 标准格式：Cross…
-      4. 异步补全 vs 实时编排的对比
+  root(("Agentic Incident Triage Assistant"))
+    Agentic 编排架构 Chat Agent 作为三方集成枢纽
+    New Relic 5 个推理工具的 Tool Routing 模式
+    RCA Brief 标准格式 Cross-Shift
+    异步补全 vs 实时编排的对比
     与现有 wiki 实体的差异化
-    实践启示
-    相关主题
 ```
 
 ## 相关实体

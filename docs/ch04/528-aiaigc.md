@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aiaigc-summit-guest-lineup.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AIAIGC峰会嘉宾阵容"))
-    关键要点
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘要
 2026年中国AIGC产业峰会将于5月20日在北京金茂万丽酒店举办，主题「@所有人，马上AI起来」。本次公布的新一波嘉宾以具身智能、大模型和AI落地为核心，标志着AIGC从讨论未来转向当下应用。
 

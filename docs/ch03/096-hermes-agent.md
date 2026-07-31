@@ -10,14 +10,14 @@
 ```mermaid
 mindmap
   root(("Hermes Agent 工具系统架构分析"))
-    核心结论
-    4 层架构
+    层架构
     ToolEntry 数据结构
     自注册机制
     注册安全
     工具调度流程
-    check_fn 30s TTL 缓存
+    checkfn 30s TTL 缓存
     Toolset 组合
+    动态 Schema 覆盖
 ```
 
 ## 核心结论

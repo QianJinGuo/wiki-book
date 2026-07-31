@@ -13,20 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("nanobot：4000行极简 Agent 框架架构解析"))
-    wttr.in primary
-      记忆系统：'grep beats RAG'
-      Subagent：消息总线重注入
-      MCP 集成：标准协议桥接
-    深度分析
-      1. '控制面集中化'是工程取舍而非教条
-      2. Markdown-as-Config 是…
-      3. Progressive Loading …
-      4. '错误恢复委托给 LLM'是健壮性的范式转移
-    实践启示
-    适用与不适用场景
-    关联实体
-    相关链接
+  root(("nanobot 4000行极简 Agent 框架架构解析"))
+    整体架构 控制面集中化
+    ReAct 循环的极简实现
+    Tool 系统 最小公共接口
+    Skill 系统 Markdown-as-Config
+    wttrin primary
+      记忆系统 grep beats RAG
+      Subagent 消息总线重注入
+      MCP 集成 标准协议桥接
+    控制面集中化是工程取舍而非教条
+    Markdown-as-Config 是 prompt
+    Progressive Loading 是 context
 ```
 
 ## 摘要

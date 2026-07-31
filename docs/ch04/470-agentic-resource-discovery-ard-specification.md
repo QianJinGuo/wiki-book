@@ -11,13 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Resource Discovery (…"))
-    深度分析
-      企业 AI 的 '最后一公里'
-      联邦架构的战略选择
-      与 MCP/A2A 的生态协同
-    实践启示
-    相关实体
+  root(("Agentic Resource Discovery ARD"))
+    从部署到发现的断层
+    四步架构
+    与 Snowflake Cortex Agents 的集成
+    企业 AI 的 最后一公里
+    联邦架构的战略选择
+    与 MCPA2A 的生态协同
 ```
 
 ## 摘要

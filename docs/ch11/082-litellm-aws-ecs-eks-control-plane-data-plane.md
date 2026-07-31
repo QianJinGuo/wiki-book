@@ -13,14 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("LiteLLM 生产级部署：AWS ECS/EKS 双方…"))
+  root(("LiteLLM 生产级部署 AWS ECSEKS 双方案"))
     选型决策矩阵
-    方案一：ECS Fargate 部署
-    方案二：EKS 部署
-    Control Plane / Data Pl…
+    方案一 ECS Fargate 部署
+    方案二 EKS 部署
+    Control Plane Data Plane 分离 多区域高可用
     安全最佳实践
-    深度分析
-    实践启示
     关键引用清单
 ```
 

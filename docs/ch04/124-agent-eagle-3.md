@@ -9,9 +9,9 @@
 
 ```mermaid
 mindmap
-  root(("多轮 Agent 场景下，滴滴的 EAGLE-3 训推加…"))
-    背景：为什么 Agent 场景对推理速度要求更高
-    投机解码（Speculative Decodi…
+  root(("多轮 Agent 场景下 滴滴的 EAGLE-3 训推加速实践"))
+    背景 为什么 Agent 场景对推理速度要求更高
+    投机解码 Speculative Decoding 核心逻辑
       两阶段流程
       长上下文场景的挑战
     EAGLE-3 方案选择
@@ -19,23 +19,19 @@ mindmap
       长序列是前置条件
     EAGLE-3 训练形态与显存问题
       多层特征融合的代价
-      TTT（Training-Time Test）机制
+      TTT Training-Time Test 机制
       显存 OOM 本质
-    解决方案：USP（Unified Sequen…
+    解决方案 USP Unified Sequence
       两种序列并行方式对比
       USP 核心设计
       USP 效果
     实测效果
       Accept Len 对比
-      TPOT（Time Per Output To…
+      TPOT Time Per Output Token 收益
     当前挑战与后续规划
       核心挑战
       后续规划
-    深度分析
-      1. TTT 机制揭示了训练-推理分布一致性问…
-      2. 显存 OOM 的根因分析提供了长序列训练…
-      3. USP 的设计揭示了分布式长序列训练的核…
-      4. P95/P99 延迟比 Mean 更重要…
+    TTT 机制揭示了训练-推理分布一致性问题在 Draft
 ```
 
 ## 背景：为什么 Agent 场景对推理速度要求更高

@@ -23,19 +23,18 @@ In this post, we demonstrate how Amazon FinTech teams are using [Amazon Bedrock]
 
 ```mermaid
 mindmap
-  root(("How Amazon Finance streamlin…"))
-    **Challenges**
-    **Solution overview**
-    **Knowledge base ingest…
-    **Chat Application**
-    **Multi-turn conversati…
-    **Observability**
-    **Conclusion**
+  root(("How Amazon Finance streamlines"))
+    Challenges
+    Solution overview
+    Knowledge base ingestion flow
+    Chat Application
+    Multi-turn conversational experience
+    Observability
+    Conclusion
     About the authors
-      Balajikumar Gopalakrish…
+      Balajikumar Gopalakrishnan
       Biswajit Mohapatra
       Pramodh Korukonda
-      Jeff Rebacz
 ```
 
 ## **Challenges**

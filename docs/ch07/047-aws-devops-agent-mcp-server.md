@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("AWS DevOps Agent × MCP Serve…"))
+  root(("AWS DevOps Agent MCP Server"))
     文章摘要
-    深度分析
-      MCP 协议在 AI Agent 运维场景的结…
-      Private Connection 的安全模…
-      从'相关性推理'到'因果性推理'的跨越
-      Tool Docstring 作为 Agent…
-    实践启示
-      架构设计层面
-      安全防护层面
-      工具开发层面
-      可扩展性层面
-    相关实体
+    MCP 协议在 AI Agent 运维场景的结构性价值
+    Private Connection 的安全模型 零信任思维的工程实践
+    从相关性推理到因果性推理的跨越
+    Tool Docstring 作为 Agent 决策的唯一依据
+    架构设计层面
+    安全防护层面
+    工具开发层面
 ```
 
 ## 核心要点

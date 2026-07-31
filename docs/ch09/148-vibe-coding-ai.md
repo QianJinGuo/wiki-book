@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("无障碍设计师 vibe coding：当所有同事都在用 …"))
-    概述
-    'Vibe coding' 的真实定义（作者版本）
-    实际产出（GitHub App 无障碍改进）
+  root(("无障碍设计师 vibe coding 当所有同事都在用 AI 写代码时"))
+    Vibe coding 的真实定义 作者版本
+    实际产出 GitHub App 无障碍改进
     关键贡献
-    一句话定位
-    相关实体
 ```
 
 ## 概述

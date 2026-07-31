@@ -54,16 +54,6 @@
 *   [Awards](https://awards.thehackernews.com/)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The UI is dead, long live th…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Servicenow Ui Is Dead Agent](../ch03/035-agent.html)
 - [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)

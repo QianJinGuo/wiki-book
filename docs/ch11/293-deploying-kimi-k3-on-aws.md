@@ -15,8 +15,8 @@
 mindmap
   root(("Deploying Kimi K3 on AWS"))
     Model Overview
-    Infrastructure Requirem…
-    Relationship to Other K…
+    Infrastructure Requirements
+    Relationship to Other Kimi K3
 ```
 
 ## Model Overview

@@ -11,16 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Harness 之后：Agent 可靠性的关键，是状态边…"))
-    相关实体
-    深度分析
-      核心观点
+  root(("Harness 之后 Agent 可靠性的关键 是状态边界和失败闭环"))
     太长不看
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-      补充：State/View/Control 三…
+    补充 StateViewControl 三轴 从 ReAct 到
 ```
 
 ## 相关实体

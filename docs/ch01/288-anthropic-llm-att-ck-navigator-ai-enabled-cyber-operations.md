@@ -14,19 +14,15 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic LLM ATT&CK Navigat…"))
-    概述
+  root(("Anthropic LLM ATTCK Navigator"))
     ARiES 风险评分方法
-    核心发现
-      1. 中-高风险行为者占比半年翻 1.7 倍
-      2. 技术复杂度不再是主要区分指标
-      3. Agentic Scaffolding …
-      4. ATTandCK 框架覆盖缺口
+    中-高风险行为者占比半年翻 17 倍
+    技术复杂度不再是主要区分指标
+    Agentic Scaffolding 是新的风险乘数
+    ATTCK 框架覆盖缺口
     高频被滥用的技术
     配套产品变更
     与 N-days 研究的互补
-    实践启示
-    深度分析
 ```
 
 ## 概述

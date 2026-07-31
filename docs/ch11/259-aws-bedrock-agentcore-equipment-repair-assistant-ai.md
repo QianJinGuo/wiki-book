@@ -13,16 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("AWS Bedrock AgentCore Equipm…"))
-    背景
+  root(("AWS Bedrock AgentCore Equipment"))
     技术架构
       核心组件
-      架构分段（Section A/B/C/D）
+      架构分段 Section ABCD
     实践要点
-    上线状态
-    实践启示
-    原文链接
-    相关实体
 ```
 
 ## 背景

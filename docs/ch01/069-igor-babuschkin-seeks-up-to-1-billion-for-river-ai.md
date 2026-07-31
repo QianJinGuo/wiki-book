@@ -13,14 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Igor Babuschkin Seeks Up To …"))
-    深度分析
-      资本密集型竞争的现实
-      创始人背景与战略定位
-      对 AI 生态的影响
-      信息可靠性评估
-    实践启示
-    相关实体
+  root(("Igor Babuschkin Seeks Up To 1"))
+    事件要素
+    Neolabs 浪潮的背景
+    Forbes 未披露的信息
+    资本密集型竞争的现实
+    创始人背景与战略定位
+    对 AI 生态的影响
+    信息可靠性评估
 ```
 
 ## 摘要

@@ -13,18 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic Global Workspace (…"))
+  root(("Anthropic Global Workspace"))
     J-Space 的核心发现
       J-Space 的独特性质
     全局工作空间理论
     与之前工作的关系
     反响与意义
     参考资源
-    机器之心第2译本补充（3rd source, …
+    机器之心第2译本补充 3rd source 2026-07-07
       五大证据系统化呈现
       后训练塑造了 J-space 的「立场」
       反事实反思训练
-      '体验式语言'依赖 J-space
 ```
 
 ## J-Space 的核心发现

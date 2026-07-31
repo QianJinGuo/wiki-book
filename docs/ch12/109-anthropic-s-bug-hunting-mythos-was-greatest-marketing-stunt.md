@@ -13,16 +13,6 @@ Published Time: 2026-05-11T16:30:53.000Z
 cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos AI 安全扫描模型后，只发现 1 个低危漏洞。他将 Mythos 的炒作定性为"主要是一场营销活动"，认为其能力被严重夸大了。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic's bug-hunting Myth…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

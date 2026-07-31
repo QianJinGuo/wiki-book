@@ -13,27 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("How LLMs Actually Work: 0xka…"))
-    概述
+  root(("How LLMs Actually Work 0xkato"))
     关键内容精要
-      1. Tokenization
-      2. Embeddings
-      3. Positional encoding
-      4. Attention + 5. Multi…
+      Tokenization
+      Embeddings
+      Positional encoding
     实践价值
     与现有 LLM 架构实体的差异化
-    上线状态
-    深度分析
-      1. 'LLM 如何工作'的教育必要性
-      2. Tokenization 是理解 LLM…
-      3. Sampling 温度的工程含义
-      4. Attention 机制的可解释性价值
-    实践启示
-      1. 用 tokenizer 可视化工具检查你…
-      2. 按任务类型而非感觉设定温度
-      3. 利用 attention 热力图调试输出
-      4. 将 LLM 机制知识纳入团队培训
-    相关实体
+    LLM 如何工作的教育必要性
+    Tokenization 是理解 LLM 行为的第一把钥匙
+    Sampling 温度的工程含义
+    Attention 机制的可解释性价值
+    用 tokenizer 可视化工具检查你的提示词
 ```
 
 ## 概述

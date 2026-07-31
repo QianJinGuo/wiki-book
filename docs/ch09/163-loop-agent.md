@@ -11,10 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Loop 的产品视角——项目中心从人挪到 Agent 系统"))
-    核心论点
+  root(("Loop 的产品视角项目中心从人挪到 Agent 系统"))
     Loop 的两层价值
-    实证案例：定制刻字项链小生意的 Discord…
+    实证案例 定制刻字项链小生意的 Discord 运营
     关键产品洞察
     Dittos Loop For Codex
 ```

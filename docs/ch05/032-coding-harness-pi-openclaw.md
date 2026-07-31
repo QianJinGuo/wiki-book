@@ -9,25 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("Coding Harness 工程本质：从 Pi 到 O…"))
+  root(("Coding Harness 工程本质 从 Pi 到 OpenClaw"))
     核心定义
     Pi 分层架构
     Harness 补齐的八个能力
     五个可复用的工程模式
-      1. Context 像投影，不像容器
-      2. Transcript 是账本，worki…
-      3. 权限要进运行时管线
-      4. Runtime kernel 小，产品 …
-    Pi → OpenClaw 的演进
+      Context 像投影 不像容器
+      Transcript 是账本 working context 是视图
+      权限要进运行时管线
+    Pi OpenClaw 的演进
       session 需要两层状态
       工具策略需要动态化
     稳定路线
     Harness 会被模型内化吗
-    深度分析
-      工程的北极是运行时语义，不是提示词
-      Pi → OpenClaw 揭示的不仅是演进，…
-      durable history 和 worki…
-      权限进运行时管线是安全架构，不是功能特性
+    工程的北极是运行时语义 不是提示词
 ```
 
 ## 核心定义

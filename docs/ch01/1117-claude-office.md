@@ -9,19 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/今天起claude正式接入office全家桶跨应用还能共享记忆.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("今天起，Claude正式接入Office全家桶，跨应用还…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 今天起，Claude正式接入Office全家桶，跨应用还能共享记忆 涉及claude领域的核心技术议题。

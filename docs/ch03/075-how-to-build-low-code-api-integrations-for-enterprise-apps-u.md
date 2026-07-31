@@ -11,27 +11,20 @@
 
 ```mermaid
 mindmap
-  root(("How to Build Low-Code API In…"))
+  root(("How to Build Low-Code API"))
     核心摘要
-    What are API Integratio…
-    Benefits of low-code AP…
+    What are API Integration Actions
+    Benefits of low-code API
     构建步骤概览
-      Step 1: Create your OIN…
-      Step 2: Configure authe…
-      Step 3: Build your low-…
-    How to test your API in…
+      Step 1 Create your OIN integration
+      Step 2 Configure authentication
+      Step 3 Build your low-code
+    How to test your API integration
       Create a test instance
       Update a test instance
-    深度分析
-      1. 从'构建 SCIM 服务器'到'低代码映…
-      2. 低代码集成的适用边界
-      3. Workflows 作为集成编排层的价值
-      4. OIN 的生态战略意义
-    实践启示
-      给 ISV 开发者的行动清单
-      给企业安全团队的启示
-      给低代码平台设计者的参考
-    相关实体
+    从构建 SCIM 服务器到低代码映射的范式转移
+    低代码集成的适用边界
+    Workflows 作为集成编排层的价值
 ```
 
 ## 核心摘要

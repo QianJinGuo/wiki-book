@@ -17,26 +17,22 @@ feed_name: AWS China Blog
 
 ```mermaid
 mindmap
-  root(("基于 AWS 示例项目，展示如何将 OpenClaw 迁…"))
-    亚马逊AWS官方博客https://aw…
-    一、环境准备
-      第一步：设置 AWS 账号和区域环境变量
-      第二步：安装基础依赖
-      第三步：启动 Docker 服务
-      第四步：配置 AWS X-Rayhttp…
-    二、获取代码
-      第一步：克隆项目代码
-      第二步：设置部署区域
-      第三步：创建 Python 虚拟环境并安装依赖
-      了解 cdk.json 配置项
-    三、CDK 初始化（Bootstrap）
-      第一步：初始化 CDK 工作台
-      第二步：预览将要创建的资源
-      第三步：应用部署补丁
-    相关链接
+  root(("基于 AWS 示例项目 展示如何将 OpenClaw 迁移为基于"))
+    亚马逊AWS官方博客
+    一 环境准备
+      第一步 设置 AWS 账号和区域环境变量
+      第二步 安装基础依赖
+      第三步 启动 Docker 服务
+    二 获取代码
+      第一步 克隆项目代码
+      第二步 设置部署区域
+      第三步 创建 Python 虚拟环境并安装依赖
+    三 CDK 初始化 Bootstrap
+      第一步 初始化 CDK 工作台
+      第二步 预览将要创建的资源
+      第三步 应用部署补丁
     本篇作者
-    AWS 架构师中心：云端创新的引领者
-    深度分析
+    AWS 架构师中心 云端创新的引领者
 ```
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)

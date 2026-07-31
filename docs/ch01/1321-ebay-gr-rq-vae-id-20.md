@@ -13,9 +13,9 @@ eBay 广告推荐团队在覆盖 20 亿商品的全量语料上训练 RQ-VAE，�
 
 ```mermaid
 mindmap
-  root(("eBay 生成式检索（GR）工业实践：RQ-VAE 语义…"))
+  root(("eBay 生成式检索 GR 工业实践 RQ-VAE 语义 ID"))
     传统检索方法的局限
-    语义 ID 生成（RQ-VAE）
+    语义 ID 生成 RQ-VAE
     生成式检索模型
     召回效果
     语义 ID 作为排序特征

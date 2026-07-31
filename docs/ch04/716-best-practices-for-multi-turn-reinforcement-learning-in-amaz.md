@@ -13,15 +13,12 @@ Amazon SageMaker AI 推出多轮强化学习（Multi-Turn RL, MTRL）能力，�
 
 ```mermaid
 mindmap
-  root(("Best Practices for Multi-Tur…"))
-    核心架构
+  root(("Best Practices for Multi-Turn"))
     最佳实践要点
-    深度分析
-      1. MTRL 的核心挑战：多步依赖与奖励信号处理
-      2. 环境模拟的三层架构：从录播回放到隔离执行
-      3. 奖励函数设计的陷阱：从 Reward H…
-      4. 评估独立性：训练成功的关键监测机制
-    实践启示
+    MTRL 的核心挑战 多步依赖与奖励信号处理
+    环境模拟的三层架构 从录播回放到隔离执行
+    奖励函数设计的陷阱 从 Reward Hacking 到梯度消失
+    评估独立性 训练成功的关键监测机制
 ```
 
 ## 核心架构

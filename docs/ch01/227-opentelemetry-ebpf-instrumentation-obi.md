@@ -13,23 +13,22 @@
 
 ```mermaid
 mindmap
-  root(("OpenTelemetry eBPF Instrumen…"))
-    一、为什么需要 eBPF 零代码可观测性
-    二、OBI 三大支柱
-    三、协议识别：三级瀑布式匹配
+  root(("OpenTelemetry eBPF"))
+    一 为什么需要 eBPF 零代码可观测性
+    二 OBI 三大支柱
+    三 协议识别 三级瀑布式匹配
       防误判细节
-    四、语言深度集成：不止于网络层
-      Go：内核里重建 goroutine 父子血缘
-      Python asyncio：4 组 upro…
-      跨进程传播：内核态统一完成
-    五、数据管线：DAG + 死锁探测 + 对象池
-      顶层骨架：三条独立 Agent + errgr…
-      swarm：两阶段启动
-      msg.Queue：带死锁探测的扇出队列
-      应用可观测完整 DAG
-    六、CUDA/GPU 追踪
-    七、日志增强的工程取舍
-    八、产品方自报：阿里云云监控 2.0 中的 O…
+    四 语言深度集成 不止于网络层
+      Go 内核里重建 goroutine 父子血缘
+      Python asyncio 4 组 uprobe 3 张 BPF
+      跨进程传播 内核态统一完成
+    五 数据管线 DAG 死锁探测 对象池
+      顶层骨架 三条独立 Agent errgroup
+      swarm 两阶段启动
+      msgQueue 带死锁探测的扇出队列
+    六 CUDAGPU 追踪
+    七 日志增强的工程取舍
+    八 产品方自报 阿里云云监控 20 中的 OBI 落地
 ```
 
 ## 一、为什么需要 eBPF 零代码可观测性

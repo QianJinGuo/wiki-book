@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Something's Rotten in the St…"))
-    相关实体
-    深度分析
-      设计标准的崩塌
-      Squircle 困境
-      生态系统的连锁反应
-      核心矛盾
-    实践启示
-      对平台拥有者的启示
-      对设计师的启示
-      对开发者的启示
+  root(("Somethings Rotten in the State of"))
+    设计标准的崩塌
+    Squircle 困境
+    生态系统的连锁反应
+    核心矛盾
+    对平台拥有者的启示
+    对设计师的启示
+    对开发者的启示
 ```
 
 ## 核心要点

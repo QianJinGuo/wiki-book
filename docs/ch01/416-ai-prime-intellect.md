@@ -9,13 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("AI科研超越人类 — Prime Intellect递归…"))
+  root(("AI科研超越人类 Prime Intellect递归自改进实验"))
     Event Overview
-    Key Behavioral Observat…
-    Paradigm Shift: From Ca…
-    60 Steps Significance
-    深度分析
-    实践启示
+    Key Behavioral Observations Opus
+    Paradigm Shift From Causality to
+    Steps Significance
     Links
     See Also
 ```

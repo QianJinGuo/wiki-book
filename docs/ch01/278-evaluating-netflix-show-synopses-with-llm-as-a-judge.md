@@ -13,22 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Evaluating Netflix Show Syno…"))
-    核心内容
-      Introduction
-      The Making of a “Good” …
+  root(("Evaluating Netflix Show Synopses"))
+    Introduction
+    The Making of a Good Synopsis
     评分理由
-    相关实体
-    深度分析
-      1. 专用判官架构优于单提示词过载
-      2. 人类-AI 校准循环是将主观专家知识迁移…
-      3. 推理时计算扩展是评估质量与可读性的杜杆
-      4. Tiered Rationales 重构…
-    实践启示
-      1. 在构建 LLM 评估系统前先建立 Gol…
-      2. 对每个评估维度使用独立判官而非复合判官
-      3. 优先使用 APO 而非手动迭代提示词
-      4. 将共识评分作为推理长度超过临界点后的主要…
+    专用判官架构优于单提示词过载
+    人类-AI 校准循环是将主观专家知识迁移到模型的关键
+    推理时计算扩展是评估质量与可读性的杜杆
+    Tiered Rationales 重构了准确率-可读性之争
+    在构建 LLM 评估系统前先建立 Golden Set
 ```
 
 ## 核心内容

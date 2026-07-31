@@ -9,17 +9,6 @@
 【新智元导读】当普通人还在钻研「最强提示词咒语」时，硅谷顶级实验室已经把AI基建跑成了生产线。本文核心论点：Claude Code 的好用程度，98.4% 来自工程基础设施而非AI能力本身。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("撕开Claude Code真相：让它好用的98.4%，是…"))
-    核心数据：1.6% vs 98.4%
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心数据：1.6% vs 98.4%
 Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）系统性分析了 Claude Code v2.1.88 版本 51.2 万行 TypeScript 源码：
 

@@ -12,14 +12,10 @@
 ```mermaid
 mindmap
   root(("You Must Fix Your Asserts"))
-    深度分析
-      断言作为程序规范的形式化工具
-      禁用断言的三重危险
-      Assert 与 fuzz 的协同效应
-      Zig 与 C/C++ 断言哲学的对比
-    实践启示
-    相关实体
-    相关主题
+    断言作为程序规范的形式化工具
+    禁用断言的三重危险
+    Assert 与 fuzz 的协同效应
+    Zig 与 CC 断言哲学的对比
 ```
 
 ## 摘要

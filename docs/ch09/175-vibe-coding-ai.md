@@ -14,12 +14,9 @@ Vibe Coding 作为 AI 软件工程的入门范式：以自然语言意图驱动�
 ```mermaid
 mindmap
   root(("Vibe Coding 与 AI 软件工程"))
-    深度分析
-      Vibe Coding 的适用边界
-      缺乏工程约束的风险放大机制
-      Vibe Coding → Loop Engi…
-    实践启示
-    相关实体
+    Vibe Coding 的适用边界
+    缺乏工程约束的风险放大机制
+    Vibe Coding Loop Engineering 的进化条件
 ```
 
 ## 深度分析

@@ -9,21 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("Gene/GEP — EvoMap×清华 提出的「策略基…"))
-    核心定位
+  root(("GeneGEP EvoMap清华 提出的「策略基因」经验对象框架"))
     反直觉的「Agent 玄学」
-    Gene / Capsule / Event …
-    GEP（Gene Evolution Prot…
-    Skill vs Gene 受控实验：输的不是…
+    Gene Capsule Event 三件套
+    GEP Gene Evolution Protocol 六阶段循环
+    Skill vs Gene 受控实验 输的不是质量 是形态
       算术对比
-      关键数据（Gemini 3.1 Pro / F…
-      预算对齐实验：剪短 Skill 仍打不过 Gene
-      渐进式构造：strategy 层不可省
-    鲁棒性边界：结构宽容，语义挑剔
-    失败经验的最优形态：AVOID 警告
-      对照一：失败放在不同载体里
-      对照二：失败和策略的混合形态
-    一个真实的 Gene 是什么样（UV-vis …
+      关键数据 Gemini 31 Pro Flash T005 max
+      预算对齐实验 剪短 Skill 仍打不过 Gene
+    鲁棒性边界 结构宽容 语义挑剔
+    失败经验的最优形态 AVOID 警告
+      对照一 失败放在不同载体里
+      对照二 失败和策略的混合形态
+    一个真实的 Gene 是什么样 UV-vis 场景 约 230
+    CritPt benchmark 端到端验证
 ```
 
 ## 核心定位

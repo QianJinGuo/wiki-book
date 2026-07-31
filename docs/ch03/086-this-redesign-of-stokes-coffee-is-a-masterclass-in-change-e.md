@@ -9,19 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("This redesign of Stokes Coff…"))
-    概述
-    项目背景：Stokes Coffee 的传承挑战
+  root(("This redesign of Stokes Coffee is"))
+    项目背景 Stokes Coffee 的传承挑战
     Eat Marketing 的策略方法
-      从人出发，而非从视觉出发
+      从人出发 而非从视觉出发
       Stokes People 角色系统
       字体与语调
-      色彩方案
     核心启示
-    相关实体
-    相关概念
-    深度分析
-    实践启示
 ```
 
 ## 概述

@@ -13,7 +13,7 @@ AgentCompile is an LLM-guided compilation framework for `Transformer` inference 
 
 ```mermaid
 mindmap
-  root(("AgentCompile: LLM-Guided CUD…"))
+  root(("AgentCompile LLM-Guided CUDA"))
     Architecture
     Performance
     Significance

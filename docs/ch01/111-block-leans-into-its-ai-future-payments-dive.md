@@ -8,16 +8,6 @@
 Opens in a new window Opens an external website Opens an external website in a new window
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Block leans into its AI futu…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Notion Ai Agents](../ch04/298-ai-agent.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)

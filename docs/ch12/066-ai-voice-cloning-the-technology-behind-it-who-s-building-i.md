@@ -9,7 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("AI Voice Cloning: The Techno…"))
+  root(("AI Voice Cloning The Technology"))
     技术栈解析
       三种克隆方法
       模型架构层次
@@ -17,17 +17,11 @@ mindmap
     生态玩家
       四类参与者
     安全风险
-    深度分析
-      技术民主化的质变
-      零样本质量即将达到 parity
-      实时化的下一个前沿
-      多语言 preserving voice id…
-    实践启示
-      1. 安全团队必须关注 Voice Cloni…
-      2. 内容创作者的新工具箱
-      3. 企业品牌语音策略
-      4. 无障碍应用的重要机遇
-    相关实体
+    技术民主化的质变
+    零样本质量即将达到 parity
+    实时化的下一个前沿
+    多语言 preserving voice identity
+    安全团队必须关注 Voice Cloning 的认证风险
 ```
 
 ## 核心要点

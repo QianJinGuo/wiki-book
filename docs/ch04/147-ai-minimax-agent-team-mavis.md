@@ -19,27 +19,26 @@
 
 ```mermaid
 mindmap
-  root(("一个 AI 还是不够的：MiniMax Agent Te…"))
-    背景
+  root(("一个 AI 还是不够的 MiniMax Agent Team Mavis"))
     单 Agent 的四个痛点
-      痛点一：上下文焦虑
-      痛点二：注意力漂移
-      痛点三：IM 场景的延迟期望
-      痛点四：角色混淆
+      痛点一 上下文焦虑
+      痛点二 注意力漂移
+      痛点三 IM 场景的延迟期望
     Agent Team 的核心认知
     三个关键架构差异
-      差异一：对抗式验证
-      差异二：状态机管理
-      差异三：隔离上下文
+      差异一 对抗式验证
+      差异二 状态机管理
+      差异三 隔离上下文
     Owner-Worker-Verifier 三角色
-      Owner（项目经理）
-      Worker（专业执行）
-      Verifier（对抗检查）
+      Owner 项目经理
+      Worker 专业执行
+      Verifier 对抗检查
     Task 派发 vs Agent Team
     IM 场景落地
     Verifier 在研究场景的具体工作
       来源检查
       时效检查
+    文档场景 能做 能交付
 ```
 
 ## 背景

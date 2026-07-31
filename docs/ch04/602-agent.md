@@ -9,19 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/你不知道的-agent原理架构与工程实践-v2.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("你不知道的 Agent：原理、架构与工程实践"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 0

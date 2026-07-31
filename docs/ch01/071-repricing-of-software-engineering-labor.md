@@ -20,11 +20,11 @@ Looking back over the last decade, I have mixed feelings about some of the calls
 
 ```mermaid
 mindmap
-  root(("Repricing of Software Engine…"))
-    Generalist SWEs were a …
+  root(("Repricing of Software Engineering"))
+    Generalist SWEs were a product of
     LLMs Changed The Dynamics
-    Repricing of the Middle…
-    Expertise is getting mo…
+    Repricing of the Middle Layer
+    Expertise is getting more valuable
     Where I think this goes
 ```
 

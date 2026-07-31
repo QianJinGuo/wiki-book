@@ -9,20 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy 最新访谈：从 Vibe Coding …"))
-    核心论点
+  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
     三个提醒
     行业信号
-    深度分析
-      1. Vibe Coding 与 Agenti…
-      2. 可验证性：理解 LLM 自动化边界的核心框架
-      3. Software 3.0 的真正含义：程…
-      4. MenuGen 案例：两种范式的直接碰撞
-    实践启示
-      给开发者的建议
-      给团队管理者的建议
-      给创业者的建议
-    相关实体
+    Vibe Coding 与 Agentic Engineering
+    可验证性 理解 LLM 自动化边界的核心框架
+    Software 30 的真正含义 程序边界的扩大
+    MenuGen 案例 两种范式的直接碰撞
+    给开发者的建议
+    给团队管理者的建议
 ```
 
 ## 核心论点

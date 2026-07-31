@@ -9,26 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("三器合一：gstack + Superpowers + …"))
+  root(("三器合一 gstack Superpowers OpenSpec"))
     元信息
     核心概念
     四个关键串联点
-      1. OpenSpec 产物 → gstack…
-      2. Superpowers HARD-GAT…
-      3. Superpowers TDD → gs…
-      4. gstack /ship → OpenS…
-    完整工作流示例（加暗色模式）
+      OpenSpec 产物 gstack 评审
+      Superpowers HARD-GATE 自动拦截
+      Superpowers TDD gstack review 质量提升
+    完整工作流示例 加暗色模式
     避坑要点
-    相关概念
-    深度分析
-      三层架构的协同逻辑
-      HARD-GATE 的本质
-      TDD 与 /review 的互补性
-      发布流水线的顺序陷阱
-    实践启示
-      如何真正用好三层串联
-      避免门禁重叠
-      TDD 例外的正确理解
+    三层架构的协同逻辑
+    HARD-GATE 的本质
+    TDD 与 review 的互补性
 ```
 
 ## 元信息

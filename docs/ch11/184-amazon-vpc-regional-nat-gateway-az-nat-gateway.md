@@ -41,11 +41,11 @@
 
 ```mermaid
 mindmap
-  root(("Amazon VPC Regional NAT Gate…"))
-    **一．背景：为什么要重新认识 NAT 网关**
-    **二．两种 NAT 网关的工作原理**
-      2.1 AZ（可用区）NAT 网关——传统形态
-      2.2 Regional（区域）NAT 网关—…
+  root(("Amazon VPC Regional NAT Gateway 与"))
+    一．背景 为什么要重新认识 NAT 网关
+    二．两种 NAT 网关的工作原理
+      AZ 可用区 NAT 网关传统形态
+      Regional 区域 NAT 网关新形态
 ```
 
 ## **一．背景：为什么要重新认识 NAT 网关**

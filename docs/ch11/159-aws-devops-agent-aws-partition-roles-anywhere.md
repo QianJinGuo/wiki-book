@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 7.6KB | `entities/aws-devops-agent-mcp-china-partition-bridge.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS DevOps Agent 接入 AWS 中国区系…"))
-    深度分析
-    实践启示
-    多账号扩展：Hub-Spoke 扇出（系列第二篇）
-    相关实体
-```
-
 ## 核心要点
 
 ```mermaid

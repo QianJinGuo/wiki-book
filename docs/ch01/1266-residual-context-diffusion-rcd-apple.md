@@ -13,18 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Residual Context Diffusion (…"))
-    背景
-    核心方法：RCD
+  root(("Residual Context Diffusion RCD"))
+    核心方法 RCD
       RCD 与传统 dLLM 的关键区别
-    实验结果
-    深度分析
-      3.1 Token 残差再利用：从'丢弃'到'…
-      3.2 两阶段解耦训练的设计哲学
-      3.3 扩散语言模型推理效率的实用化路径
-      3.4 与自回归模型推理优化的对比视角
-    实践启示
-    相关实体
+    Token 残差再利用 从丢弃到压缩的范式转变
+    两阶段解耦训练的设计哲学
+    扩散语言模型推理效率的实用化路径
+    与自回归模型推理优化的对比视角
 ```
 
 ## 背景

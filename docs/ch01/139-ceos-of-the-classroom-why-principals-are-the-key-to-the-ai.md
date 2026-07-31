@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/principals-ai-education.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CEOs of the classroom: Why p…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - 待补充
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/principals-ai-education.md)

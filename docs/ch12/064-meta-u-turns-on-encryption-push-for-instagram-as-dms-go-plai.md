@@ -17,16 +17,6 @@ Swiss privacy outfit Proton also questioned what exactly happens to existing cha
 Meta has become increasingly aggressive about monetizing and analyzing user interactions. Last year, the company confirmed that interactions with Meta AI tools, including those inside private conversations, could be used for ad targeting. The company has not publicly said whether ordinary Instagram messages could eventually feed into similar systems now that encryption is gone.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Meta U-turns on encryption p…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

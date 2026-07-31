@@ -13,10 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Harness Handbook — 行为级 Agent…"))
-    核心问题
-    三层结构（L1-L3）
-    Behavior-Guided Progres…
+  root(("Harness Handbook 行为级 Agent"))
+    三层结构 L1-L3
+    Behavior-Guided Progressive
     Handbook 生成流程
     评估结果
     Handbook Studio

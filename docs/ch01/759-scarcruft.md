@@ -12,18 +12,13 @@
 ```mermaid
 mindmap
   root(("ScarCruft 游戏平台供应链攻击分析"))
-    关键要点
-    相关实体
-    深度分析
-      攻击链解析
-      核心战术特点
-      地缘政治动机
-      技术演进
-    实践启示
-      对安全团队
-      对开发者
-      对威胁情报
-```
+    攻击链解析
+    核心战术特点
+    地缘政治动机
+    技术演进
+    对安全团队
+    对开发者
+    对威胁情报```
 
 ## 摘要
 Title: A rigged game: ScarCruft compromises gaming platform in a supply-chain attack

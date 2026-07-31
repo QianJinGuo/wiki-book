@@ -55,9 +55,9 @@ Below, I share my approach to creating effective design docs and explain what be
 
 ```mermaid
 mindmap
-  root(("How to Write an Effective So…"))
-    An example design doc🔗…
-    When should you write a…
+  root(("How to Write an Effective"))
+    An example design doc
+    When should you write a design doc
 ```
 
 ## An example design doc[🔗](http://refactoringenglish.com/excerpts/write-an-effective-design-doc/#an-example-design-doc)

@@ -13,18 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Yoonho Lee: Text Optimizatio…"))
-    一句话总结
-    核心论证（三层）
-      1. Text optimization 是合…
-      2. Text optimization 在低…
-      3. Text optimization 开启…
-    关键概念：Text Layer
-    与现有实体的关系（不同 layer 的共存）
+  root(("Yoonho Lee Text Optimization as a"))
+    核心论证 三层
+      Text optimization 是合法的 update
+      Text optimization 在低数据场景下
+      Text optimization 开启新的 scaling
+    关键概念 Text Layer
+    与现有实体的关系 不同 layer 的共存
     引用要点
-    实践启示
-    相关研究（出自原博客）
+    相关研究 出自原博客
     立场 vs 工具的差异
+    与现有 Hermes Agent Skill Crossover
 ```
 
 ## 一句话总结

@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Mem0 vs WorkBuddy：Agent 记忆层的…"))
-    深度分析
-      1. Mem0 的写入流程：从非结构化对话到结…
-      2. 检索策略：多路融合的设计哲学
-      3. Entity Store：记忆之间的'超…
-      4. 两条路线的对比与选择
-    实践启示
-    相关实体
+  root(("Mem0 vs WorkBuddy Agent 记忆层的两条路线"))
+    Mem0 的写入流程 从非结构化对话到结构化长期记忆
+    检索策略 多路融合的设计哲学
+    Entity Store 记忆之间的超链接
+    两条路线的对比与选择
 ```
 
 ## 摘要

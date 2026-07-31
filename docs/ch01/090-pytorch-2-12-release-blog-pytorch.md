@@ -11,17 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("PyTorch 2.12 Release Blog – …"))
-    相关实体
-    深度分析
-      从研究框架到生产平台的演变
-      ROCm：AMD GPU 的第一等公民地位
-      torch.cond 进入 CUDA Grap…
-      torchcomms：分布式训练的重大变革即将到来
-    实践启示
-      对 AI 基础设施团队
-      对 ML 研究工程师
-      对框架开发者和贡献者
+  root(("PyTorch 212 Release Blog PyTorch"))
+    从研究框架到生产平台的演变
+    ROCm AMD GPU 的第一等公民地位
+    torchcond 进入 CUDA Graphs 控制流民主化
+    torchcomms 分布式训练的重大变革即将到来
+    对 AI 基础设施团队
+    对 ML 研究工程师
+    对框架开发者和贡献者
 ```
 
 ## 核心要点

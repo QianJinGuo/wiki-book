@@ -12,13 +12,10 @@
 ```mermaid
 mindmap
   root(("Sandboxing an AI Agent"))
-    深度分析
-      Agent 自主化趋势下的安全悖论
-      沙箱作为工具后端 Tool Backend
-      沙箱作为 Agent 的家 Agent's …
-      沙箱实现的技术选型
-    实践启示
-    相关实体
+    Agent 自主化趋势下的安全悖论
+    沙箱作为工具后端 Tool Backend
+    沙箱作为 Agent 的家 Agents Home
+    沙箱实现的技术选型
 ```
 
 ## 摘要

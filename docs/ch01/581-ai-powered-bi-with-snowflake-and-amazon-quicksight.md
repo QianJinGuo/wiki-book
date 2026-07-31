@@ -11,17 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("AI-powered BI with Snowflake…"))
-    深度分析
-      语义层架构的范式意义
-      LLM 幻觉的技术机制
-      与 Agent 生态的交叉
-      Open Semantic Interchan…
-    实践启示
-      适用场景
-      实施注意事项
-      局限性
-    相关实体
+  root(("AI-powered BI with Snowflake and"))
+    问题定义 最后一英里语义鸿沟
+    解决方案架构
+    Semantic View 的核心机制
+    实施流程
+    语义层架构的范式意义
+    LLM 幻觉的技术机制
+    与 Agent 生态的交叉
+    Open Semantic Interchange OSI 倡议
 ```
 
 ## 摘要

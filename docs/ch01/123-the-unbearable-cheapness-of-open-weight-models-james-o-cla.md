@@ -18,13 +18,13 @@ What worries me about this is that Anthropic and OpenAI seem to have backed them
 
 ```mermaid
 mindmap
-  root(("The Unbearable Cheapness of …"))
+  root(("The Unbearable Cheapness of Open"))
     Open Weight vs Low Cost
-    How do you keep prices …
-    Will Anthropic and OpenAI…
-    Why not compete?
-    True Open Source vs Ope…
-    Bonus:
+    How do you keep prices high for
+    Will Anthropic OpenAI lean on
+    Why not compete
+    True Open Source vs Open Weight
+    Bonus
 ```
 
 ## Open Weight vs Low Cost

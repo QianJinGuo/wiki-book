@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 7.4KB | `entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Back up and restore your Ama…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - ...
 ## 相关实体

@@ -10,12 +10,8 @@
 ```mermaid
 mindmap
   root(("Markdown 不会过时"))
-    Thariq 的 HTML 主张 vs Mar…
-    为什么 Markdown 最适合 AI
-    相关实体
-    深度分析
-    实践启示
-```
+    Thariq 的 HTML 主张 vs Markdown
+    为什么 Markdown 最适合 AI```
 
 ## Thariq 的 HTML 主张 vs Markdown
 Claude Code 工程师 Thariq 提出新观点：不用 Markdown，HTML 才是未来。观点在 X 上获得千万次浏览，Karpathy 转发并评论。

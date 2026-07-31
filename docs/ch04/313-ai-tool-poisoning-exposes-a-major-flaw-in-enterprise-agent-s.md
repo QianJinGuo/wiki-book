@@ -12,17 +12,14 @@ Published Time: 2026-05-10T17:22:13.590Z
 
 ```mermaid
 mindmap
-  root(("AI tool poisoning exposes a …"))
-    深度分析
-      根本性缺陷：元数据与指令边界的崩塌
-      攻击向量分类
-      核心论点：artifact integrity…
-      MCP 验证代理架构分析
-    实践启示
-      分阶段实施路径
-      企业评估清单
-      战略风险警示
-    相关实体
+  root(("AI tool poisoning exposes a major"))
+    根本性缺陷 元数据与指令边界的崩塌
+    攻击向量分类
+    核心论点 artifact integrity
+    MCP 验证代理架构分析
+    分阶段实施路径
+    企业评估清单
+    战略风险警示
 ```
 
 ## 深度分析

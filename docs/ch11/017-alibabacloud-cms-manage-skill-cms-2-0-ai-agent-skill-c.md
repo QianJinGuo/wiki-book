@@ -15,22 +15,19 @@
 
 ```mermaid
 mindmap
-  root(("alibabacloud-cms-manage Skil…"))
-    核心定位
-    CMS 2.0 + aliyun cms2 C…
-    6 步 CLI 接入流程
-    alibabacloud-cms-manage…
+  root(("alibabacloud-cms-manage Skill 阿里云"))
+    CMS 20 aliyun cms2 CLI 概览
+    步 CLI 接入流程
+    alibabacloud-cms-manage Skill 工作机制
       Skill 链接
       工作机制
-      安全机制：两阶段确认协议
-    K8s 自动接入演示：LangChain 应用…
+      安全机制 两阶段确认协议
+    K8s 自动接入演示 LangChain 应用的
       场景设定
       ack-onepilot 机制
       完整交互过程
-      自动化覆盖的 8 个步骤
     与现有实体差异化
-    相关主题
-    深度分析
+    与第 1 来源的呼应
 ```
 
 ## 核心定位

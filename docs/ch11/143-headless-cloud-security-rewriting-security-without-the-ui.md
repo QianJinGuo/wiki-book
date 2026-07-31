@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Headless cloud security: Rew…"))
+  root(("Headless cloud security Rewriting"))
     要点
-    相关实体
-    深度分析
-      核心理念：从人类交互到机器原生安全
-      市场背景：AI 压缩攻击窗口，传统安全模型失效
-      技术架构：CNAPP + 运行时遥测 + Ag…
-      与传统 CNAPP 的本质区别
-    实践启示
-      1. 安全运营的架构重构是必选项，而非可选项
-      2. 数据质量决定了 AI 安全的上限
-      3. Agent Skills 是安全 AI …
-      4. 从小范围试点开始，逐步扩大 AI 自治边界
+    核心理念 从人类交互到机器原生安全
+    市场背景 AI 压缩攻击窗口 传统安全模型失效
+    技术架构 CNAPP 运行时遥测 Agent Skills
+    与传统 CNAPP 的本质区别
+    安全运营的架构重构是必选项 而非可选项
+    数据质量决定了 AI 安全的上限
+    Agent Skills 是安全 AI 落地的关键桥梁
 ```
 
 ## 摘要

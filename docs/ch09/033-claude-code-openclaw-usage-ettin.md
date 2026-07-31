@@ -9,18 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Openclaw Usage E…"))
-    概述
+  root(("Claude Code Openclaw Usage Ettin"))
     Claude Code 记忆检索现状
     OpenClaw 记忆检索现状
     Ettin Reranker 核心优势
       Retrieve-then-Rerank 范式
-    Claude Code 集成 Ettin Re…
-      方案一：替换 Sonnet sideQuery
-      方案二：保留 LLM 路由 + Ettin 验证层
+    Claude Code 集成 Ettin Reranker
+      方案一 替换 Sonnet sideQuery
+      方案二 保留 LLM 路由 Ettin 验证层
       推荐配置
-    OpenClaw 集成 Ettin Reran…
-      升级方案：sqlite-vec + BM25 …
+    OpenClaw 集成 Ettin Reranker
+      升级方案 sqlite-vec BM25 Ettin Rerank
       替代 sqlite-vec embedding
     关键考量
       延迟 vs 精度权衡

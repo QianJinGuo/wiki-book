@@ -15,13 +15,12 @@
 
 ```mermaid
 mindmap
-  root(("Mem0 vs WorkBuddy：Agent 记忆层的…"))
+  root(("Mem0 vs WorkBuddy Agent 记忆层的两条路线"))
     Mem0 架构
       写入流程
       检索模式
     WorkBuddy 对比
     关键工程洞察
-    第 2 来源 — 微信同日同主题报道
 ```
 
 ## Mem0 架构

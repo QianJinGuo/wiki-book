@@ -16,18 +16,15 @@
 
 ```mermaid
 mindmap
-  root(("吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代"))
+  root(("吴恩达最新思考 从分钟到天 AI产品如何靠三层Loop迭代"))
     三层循环架构
-      1. Agentic Coding Loop（…
-      2. Developer Feedback L…
-      3. External Feedback Lo…
-    深度分析
-      Loop Engineering 的理论框架化
-      循环加速与工程师角色重塑
-      人类上下文优势的工程化路径
-      与 Boris Cherny 和 Peter …
-    实践启示
-    相关实体
+      Agentic Coding Loop 分钟级
+      Developer Feedback Loop 小时级
+      External Feedback Loop 天级
+    Loop Engineering 的理论框架化
+    循环加速与工程师角色重塑
+    人类上下文优势的工程化路径
+    与 Boris Cherny 和 Peter
 ```
 
 ## 三层循环架构

@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.8KB | `entities/linn-fritz-looks-at-the-lighter-side-of-life.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Linn Fritz looks at the ligh…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - 评分：v=7, c=8（v×c=56）
 - 来源：The Guardian（Anthropic 安全漏洞披露）

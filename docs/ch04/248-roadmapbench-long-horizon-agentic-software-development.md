@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("RoadmapBench: Long-Horizon A…"))
+  root(("RoadmapBench Long-Horizon Agentic"))
     研究背景
       现有基准的局限
       真实软件开发的特点
@@ -23,15 +23,11 @@ mindmap
       评估指标
     评估结果
       模型表现
-      关键发现
-    深度分析
-      为什么长期开发如此困难？
-      多语言支持的挑战
-      与 SWE-bench 的对比
-    实践启示
-      对 Agent 架构设计的启示
-      对评估体系的启示
-      对产业应用的启示
+    为什么长期开发如此困难
+    多语言支持的挑战
+    与 SWE-bench 的对比
+    对 Agent 架构设计的启示
+    对评估体系的启示
 ```
 
 ## 摘要

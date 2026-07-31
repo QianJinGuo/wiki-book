@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("阿里 Harness 工程实战：Agent 自主迭代 1…"))
-    背景：Badcase 修复速度为瓶颈
+  root(("阿里 Harness 工程实战 Agent 自主迭代 17"))
+    背景 Badcase 修复速度为瓶颈
     三大落地关卡
-      第一关：工具 Agent 可调用化
-      第二关：长程任务防早停与上下文打爆
-      第三关：防止 Reward Hacking 与…
-    迭代过程：做加法 → 做减法
+      第一关 工具 Agent 可调用化
+      第二关 长程任务防早停与上下文打爆
+      第三关 防止 Reward Hacking 与策略退化
+    迭代过程 做加法 做减法
     与现有知识体系的关系
     关键教训
 ```

@@ -13,19 +13,13 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ```mermaid
 mindmap
-  root(("Building Supercharger: How R…"))
+  root(("Building Supercharger How Rocket"))
     业务背景
     技术栈
     Supercharger 六大互联能力
     架构特点
-    实践启示
     与现有 wiki 实体的关联
-    原文链接
-    深度分析
-      核心观点
-      技术要点
-      实践价值
-      相关实体
+    实践价值
 ```
 
 ## 业务背景

@@ -14,20 +14,17 @@
 
 ```mermaid
 mindmap
-  root(("LangSmith Engine: Trace-Base…"))
-    深度分析
-      一、Agent 上线后的问题形态变化
-      二、Self-Improving Agent …
-      三、为什么 issue 比 trace 更重要
-      四、整体架构：Screener → Inves…
+  root(("LangSmith Engine Trace-Based"))
+    一 Agent 上线后的问题形态变化
+    二 Self-Improving Agent 的工程化路径
+    三 为什么 issue 比 trace 更重要
+    四 整体架构 Screener Investigator 沉淀
     Agent Purpose
     Expected Tools
     Known Failure Modes
     User Preferences
-      九、MVP 演进路径
-      十、核心飞轮
-    实践启示
-    相关实体
+      九 MVP 演进路径
+      十 核心飞轮
 ```
 
 ## 摘要

@@ -13,11 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("驾驭AI Coding：面向团队的Harness Eng…"))
+  root(("驾驭AI Coding 面向团队的Harness"))
     Harness 6 大支柱
-    AI Coding 一体化架构（5 层）
-    '3+1 Phase' 多 Agent 协作
-    实施路线图（3 阶段）
+    AI Coding 一体化架构 5 层
+    Phase 多 Agent 协作
+    实施路线图 3 阶段
     工具系统三件套
     关键理念
 ```

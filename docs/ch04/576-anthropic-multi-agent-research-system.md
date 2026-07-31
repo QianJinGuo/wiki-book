@@ -11,12 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic Multi Agent Resear…"))
-    Evaluation-relevant tak…
-    Why it matters for this…
-    深度分析
-    实践启示
-    相关实体
+  root(("Anthropic Multi Agent Research"))
+    Evaluation-relevant takeaways
+    Why it matters for this vault
 ```
 
 ## Evaluation-relevant takeaways

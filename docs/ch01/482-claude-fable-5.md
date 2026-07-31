@@ -51,9 +51,9 @@ Fable 5 原定退出订阅套餐的时间是7月7日，不少用户为了榨干�
 ```mermaid
 mindmap
   root(("全网最全的Claude Fable 5 省钱攻略都在这了"))
-    ◈第一个：把Fable 5 蒸馏成skill
-    ◈第二个：文字转图片，最高省70%
-    ◈第三种：Fable 只当包工头，搬砖交给便宜模型
+    第一个 把Fable 5 蒸馏成skill
+    第二个 文字转图片 最高省70
+    第三种 Fable 只当包工头 搬砖交给便宜模型
 ```
 
 ## ◈第一个：把Fable 5 蒸馏成skill

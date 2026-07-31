@@ -9,15 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("从 OpenClaw 到 OpenHuman：私人 AI…"))
-    它到底是什么？不是助手，是运行层
-    上下文层：先把你的世界变成 AI 能用的材料
+  root(("从 OpenClaw 到 OpenHuman 私人 AI"))
+    它到底是什么 不是助手 是运行层
+    上下文层 先把你的世界变成 AI 能用的材料
       Memory Tree 六步记忆漏斗
-    行动层：不是 prompt，而是缰绳
-    信任层：安全不是口号，是控制面
+    行动层 不是 prompt 而是缰绳
+    信任层 安全不是口号 是控制面
     当前阶段与适用场景
-    深度分析
-    实践启示
     相关技术栈
 ```
 

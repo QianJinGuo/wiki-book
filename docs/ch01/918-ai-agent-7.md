@@ -12,16 +12,6 @@
 - Agent 岗位面试通过率：18.7%（Stanford AI Index 2026）
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("被裁了想转 AI Agent？先看面试官到底在筛你哪 7…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Claude Code Source Leak Lifecycle Analysis](../ch03/078-claude-code.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/451-vibe-coding-agentic-engineering.html)

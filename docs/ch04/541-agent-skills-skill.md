@@ -13,14 +13,14 @@ Agent Skills 官方规范的一个反常识设计：**skill 之间在规范层�
 
 ```mermaid
 mindmap
-  root(("Agent Skills 无依赖设计：Skill 之间不…"))
+  root(("Agent Skills 无依赖设计 Skill"))
     核心设计原则
-      6 个自描述字段，零个指向外部
-      Progressive Disclosure …
-      available_skills 是平铺清单，…
+      个自描述字段 零个指向外部
+      Progressive Disclosure 三阶段
+      availableskills 是平铺清单 不是 DAG
     与四种体系的反差对比
     编排责任推给了 agent 层
-    实证案例：12 个 skill 互相不认识
+    实证案例 12 个 skill 互相不认识
     设计得失
     给 Skill 设计者的建议
     与其他实体的关系

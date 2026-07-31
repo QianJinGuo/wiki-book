@@ -45,17 +45,17 @@ Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理�
 
 ```mermaid
 mindmap
-  root(("Stripe Agent 经济基础设施 5 套图谱：MP…"))
-    核心框架：Agent 是新经济主体
-    5 套基础设施图谱
-    1. 机器支付协议（MPP）
-    2. Link Agent 钱包
-    3. Stripe Projects（Vibe…
-    4. Metronome + Tempo（流式…
+  root(("Stripe Agent 经济基础设施 5 套图谱 MPP"))
+    核心框架 Agent 是新经济主体
+    套基础设施图谱
+    机器支付协议 MPP
+    Link Agent 钱包
+    Stripe Projects Vibe-deploying
+    Metronome Tempo 流式支付
       稳定币的技术合理性
-    5. Radar（防 Token 盗窃）
-    Token 计费革命：SaaS 经济学失效
-      5.1 两个转型案例
+    Radar 防 Token 盗窃
+    Token 计费革命 SaaS 经济学失效
+      两个转型案例
 ```
 
 ## 核心框架：Agent 是新经济主体

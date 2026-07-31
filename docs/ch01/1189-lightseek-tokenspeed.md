@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 3.2KB | `entities/lightseek-tokenspeed.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("lightseek tokenspeed"))
-    深度分析
-    实践启示
-    相关资源
-    相关实体
-```
-
 ## 深度分析
 TokenSpeed 的核心竞争力来自三个正交的技术决策，针对 agentic inference workload 做了系统性优化，而非对 TensorRT-LLM 的局部改进。
 **架构层面：控制平面与执行平面解耦**。TokenSpeed Scheduler 用 C++ finite-state machine 做控制平面，将 KV cache 生命周期、请求状态转移、overlap timing 的正确性在编译时强制约束，而非依赖 Python runtime 约定。这意味着在生产环境中，即使模型出现异常推理行为，控制平面的 FSM 也不会进入未定义状态。相比之下，TensorRT-LLM 的调度逻辑更多依赖 CUDA graph 和 runtime convention，在复杂并发场景下可观测性和可预测性较弱。

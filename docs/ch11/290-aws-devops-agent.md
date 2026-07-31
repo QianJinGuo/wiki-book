@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("星合互娱借助 AWS DevOps Agent 构建多游…"))
+  root(("星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系"))
     业务挑战
     选择 AWS DevOps Agent 的核心考量
-    落地实践
-      多账号统一管理
-      运维流程自动化
-    实践启示
-    相关实体
+    多账号统一管理
+    运维流程自动化
 ```
 
 ## 业务挑战

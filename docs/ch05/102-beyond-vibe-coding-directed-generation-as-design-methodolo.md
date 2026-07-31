@@ -13,12 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("Beyond Vibe Coding — Directe…"))
+  root(("Beyond Vibe Coding Directed"))
     Core Thesis
-    Directed Generation: Th…
-    Design Pattern Paradigm…
-    Language Precision Matt…
-    Connection to Harness E…
+    Directed Generation Three Phases
+    Design Pattern Paradigm Shift
+    Language Precision Matters
+    Connection to Harness Engineering
 ```
 
 ## Core Thesis

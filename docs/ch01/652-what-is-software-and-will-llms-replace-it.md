@@ -11,17 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("What Is Software, and Will L…"))
-    深度分析
-      新分层架构：LLM → 编排层 → 确定性内核
-      Agent 架构验证了这一分层
-      软件工程师角色的转变
-      对 'Vibe Coding' 的隐含回应
-    实践启示
-      对产品设计的指导
-      对 Agent 开发的指导
-      对职业发展的指导
-    相关实体
+  root(("What Is Software and Will LLMs"))
+    软件的四大不可替代功能
+    LLM 吞噬的是接口层
+    CRM 为什么是完美的论证载体
+    新分层架构 LLM 编排层 确定性内核
+    Agent 架构验证了这一分层
+    软件工程师角色的转变
+    对 Vibe Coding 的隐含回应
+    对产品设计的指导
 ```
 
 ## 摘要

@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("WorkBuddy 产品实践：从模型到 Harness …"))
+  root(("WorkBuddy 产品实践 从模型到 Harness 的"))
     核心抽象
     四层能力体系
     Context Engineering 五类动作
@@ -21,16 +21,15 @@ mindmap
       Prompt Cache 意识
     Memory 系统
       五类长期记忆
-      关键设计：程序性记忆不进长期记忆
+      关键设计 程序性记忆不进长期记忆
       记忆作用域分层
-    Harness Engineering 五层架…
-      1. 运行环境层
-      2. 引导层（Feedforward）
-      3. 反馈层（Feedback）
-      4. 编排层
+    Harness Engineering 五层架构 构建者视角
+      运行环境层
+      引导层 Feedforward
+      反馈层 Feedback
     Loop Engineering
     未解决问题
-    相关实体
+    第 1 来源 WorkBuddy VS Codex
 ```
 
 ## 核心抽象

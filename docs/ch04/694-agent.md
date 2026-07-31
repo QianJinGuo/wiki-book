@@ -9,16 +9,6 @@
 面向 Agent 的后端架构设计：API 优先、结构化输出、状态机化、可回放。传统 BFF（Backend for Frontend）的进化——从服务人类 UI 到服务 Agent 的 Machine-to-Machine 接口。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 后端架构"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 本页作为知识图谱锚点，连接了以下关键实体：[后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/022-ai-friendly.html)。 相关主题通过 [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html) 延伸。

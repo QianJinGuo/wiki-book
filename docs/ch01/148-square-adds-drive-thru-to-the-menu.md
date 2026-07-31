@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/square-adds-drive-thru-to-the-menu.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Square Adds Drive-Thru to th…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 Square 于 2026 年 5 月 11 日发布 Square for Drive-Thru，定位为面向快餐（QSR）的端到端drive-thru 解决方案。该产品与 The Howard Company（drive-thru 基础设施）和 Nanonation（数字标牌）合作开发，将订单捕获、厨房操作和客户交接整合到一个统一工作流中。
 核心功能包括：菜单板订单实时同步到确认屏幕（顾客可见）、KDS 路由将订单直接发送到相应厨房工位、自动订单编号标签帮助识别订单，以及与 Square 统一平台的报表、现金流工具、营销和客户互动模块的深度集成。

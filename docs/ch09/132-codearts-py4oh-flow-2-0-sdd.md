@@ -13,9 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("华为云码道（CodeArts）重构图形编程项目实践 — …"))
+  root(("华为云码道 CodeArts 重构图形编程项目实践"))
     项目背景
-    SDD 工作流：规格驱动开发的核心实践
+    SDD 工作流 规格驱动开发的核心实践
     AI 辅助编码的三类角色
     Py4OHBridge 双客户端架构
     安全防护体系

@@ -56,15 +56,12 @@ FlightRecorder's trace analyzer now supports ncclx and gloo backends alongside t
 
 ```mermaid
 mindmap
-  root(("PyTorch 2.12 Release Blog"))
-    **Platform Related Upda…
-      **CUDA**
-      **ROCm**
-      **Apple MPS**
-    **Deprecations and Brea…
-    深度分析
-    实践启示
-    相关实体
+  root(("PyTorch 212 Release Blog"))
+    Platform Related Updates
+      CUDA
+      ROCm
+      Apple MPS
+    Deprecations and Breaking Changes
 ```
 
 ## **Platform Related Updates**

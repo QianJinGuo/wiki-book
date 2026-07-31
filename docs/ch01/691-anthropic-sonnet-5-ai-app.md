@@ -13,11 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic深夜连放两弹：Sonnet 5、全新A…"))
-    技术分析
-      一、Claude Sonnet 5
-      二、Claude Science：给科学家的A…
-    定价、Token 变更与安全评估
+  root(("Anthropic深夜连放两弹 Sonnet 5"))
+    一 Claude Sonnet 5
+    二 Claude Science 给科学家的AI工作台
+    定价 Token 变更与安全评估
 ```
 
 ## 核心要点

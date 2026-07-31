@@ -13,14 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Google出手统一全模态检索：Gemini Embed…"))
-    一句话
+  root(("Google出手统一全模态检索 Gemini Embedding"))
     核心价值
     关键实验结果
-    深度分析
-    实践启示
-    关联阅读
-    相关实体
 ```
 
 ## 一句话

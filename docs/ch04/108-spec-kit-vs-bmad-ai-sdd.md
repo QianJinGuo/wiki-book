@@ -15,30 +15,21 @@
 
 ```mermaid
 mindmap
-  root(("Spec-Kit vs BMAD：AI 原生 SDD 双…"))
-    AI 原生的本质：协作流程重塑
-    SDD 工具谱系：Spec-Kit / Ope…
-    Spec-Kit 实战：秩序感很强
-      多仓适配：3 类补充
+  root(("Spec-Kit vs BMAD AI 原生 SDD"))
+    AI 原生的本质 协作流程重塑
+    SDD 工具谱系 Spec-Kit OpenSpec BMAD
+    Spec-Kit 实战 秩序感很强
+      多仓适配 3 类补充
       顺序流程的拉扯现实
-    BMAD 实战：AI 团队围着项目追问
-      圆桌（Roundtable）— 核心功能
-      圆桌挑战'成功标准' — 硬约束落地
+    BMAD 实战 AI 团队围着项目追问
+      圆桌 Roundtable 核心功能
+      圆桌挑战成功标准 硬约束落地
       BMAD 帮我纠正的 2 个认知偏差
-      砍需求 13 项 — 贯穿全程
-    一句话差异：Spec-Kit vs BMAD
+    一句话差异 Spec-Kit vs BMAD
       场景适配公式
     与现有 SDD 实体差异化
-    深度分析
-      1. SDD 双框架互补公式的深层含义
-      2. 圆桌评审的核心价值：对抗 AI 漂移而非…
-      3. 基线验证是重构迁移的硬约束
-      4. AI 原生团队需要「机制建设」而非「工具…
-    实践启示
-      1. 重构迁移项目优先建立行为基线
-      2. 多仓项目用三层补充机制补 Spec-Ki…
-      3. 用「砍需求 13 项」逻辑做需求优先级动…
-      4. 小团队优先用 BMAD 补角色缺失
+    SDD 双框架互补公式的深层含义
+    圆桌评审的核心价值 对抗 AI 漂移而非对抗人类
 ```
 
 ## AI 原生的本质：协作流程重塑

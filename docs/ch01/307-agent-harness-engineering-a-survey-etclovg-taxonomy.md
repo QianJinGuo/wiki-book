@@ -9,15 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Agent Harness Engineering: A…"))
-    Overview
+  root(("Agent Harness Engineering A"))
     ETCLOVG Taxonomy
     Three Engineering Phases
-    Cross-Layer Synthesis …
+    Cross-Layer Synthesis 3 Recurring
     Ecosystem Findings
-    5 Open Problems
-    Unique Contributions v…
+    Open Problems
+    Unique Contributions vs Existing
     Links
+    See Also
 ```
 
 ## Overview

@@ -15,17 +15,13 @@ Apple Security Engineering and Architecture (SEAR) 联合 Hardware Technologies 
 
 ```mermaid
 mindmap
-  root(("Apple corecrypto formal veri…"))
-    三个独有贡献（不应合并到现有 entity）
+  root(("Apple corecrypto formal"))
+    三个独有贡献 不应合并到现有 entity
     形式化验证的工程栈
     关键方法论
       Spec extraction
-      Montgomery multiplicati…
+      Montgomery multiplication 证明
       Constant-time 证明
-      Cross-implementation eq…
-    深度分析
-    实践启示
-    与现有实体的差异化
     关键术语
     链接到现有实体
 ```

@@ -9,14 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("AWS DevOps Agent 实战：云网络故障自主调…"))
-    深度分析
-      混合云网络故障的特殊复杂性
-      DevOps Agent 的三大核心能力层次
-      5 阶段 Mitigation Plan 的工…
-      自建快指标的必要性
-    实践启示
-    相关实体
+  root(("AWS DevOps Agent 实战 云网络故障自主调查与修复建议"))
+    混合云网络故障的特殊复杂性
+    DevOps Agent 的三大核心能力层次
+    阶段 Mitigation Plan 的工程价值
+    自建快指标的必要性
 ```
 
 ## 核心要点

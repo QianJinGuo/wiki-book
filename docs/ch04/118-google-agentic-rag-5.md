@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Google Agentic RAG 跨语料库框架：充分…"))
-    深度分析
-      1. '充分上下文'是 RAG 的范式转移
-      2. 跨语料库检索的工程价值
-      3. 'Sufficient Context'…
-      4. 与'循环 Agent'的本质区别
-    实践启示
-    相关实体
+  root(("Google Agentic RAG 跨语料库框架"))
+    现有 RAG 的根本缺陷 搜一次就停
+    多智能体框架的五个角色
+    充分上下文智能体 Sufficient Context Agent
+    5 阶段完整管线
+    充分上下文是 RAG 的范式转移
+    跨语料库检索的工程价值
+    Sufficient Context 设计的精妙之处
+    与循环 Agent的本质区别
 ```
 
 ## 摘要

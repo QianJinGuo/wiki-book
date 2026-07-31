@@ -21,18 +21,15 @@
 
 ```mermaid
 mindmap
-  root(("Auto-Improving Agent Platfor…"))
+  root(("Auto-Improving Agent Platform"))
     概要
     五工作流
     三架构原则
-    核心洞察
     Improve 工作流
     Hill Climb vs Improve
     局限与反思
-    深度分析
-      为什么自动改进在 Agent 平台率先成立
-      Improve vs Hill Climb：向…
-      提示词文件化：被低估的底层前提
+    为什么自动改进在 Agent 平台率先成立
+    Improve vs Hill Climb 向外探索与向内守住
 ```
 
 ## 概要

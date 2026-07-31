@@ -14,27 +14,25 @@
 
 ```mermaid
 mindmap
-  root(("阿里云 AgentLoop：企业级智能体自进化飞轮（4 …"))
-    一、定位：企业智能体下半场的发令枪
-      1.1 两类 Agent 进化场景
-      1.2 行业数据：Agent 落地的真实瓶颈
-    二、4 大工程难点（LLM-as-Judge …
-    三、AgentLoop 的 4 环飞轮产品化
-      第 1 环：全栈观测分析 — 完整 Traje…
-      第 2 环：Agent Ontology + …
-      第 3 环：Agent-as-a-Judge …
-      第 4 环：记忆库 + 经验库 — 自进化的上…
-    四、4 环闭环全景
-    五、与既有实体的关联
-    六、关键概念辨析
-      Agent-as-a-Judge vs LLM…
-      数据驱动 vs Trajectory 驱动（4…
-    七、实践启示
-      对企业：评估覆盖率是 Agent 规模化的命脉
-      对平台建设者：4 环缺一不可
-      对 Agent 设计者：trajectory …
-      对个人 Agent 进化：参考 Hermes …
-    八、引用与延伸阅读
+  root(("阿里云 AgentLoop 企业级智能体自进化飞轮 4 环闭环"))
+    一 定位 企业智能体下半场的发令枪
+      两类 Agent 进化场景
+      行业数据 Agent 落地的真实瓶颈
+    二 4 大工程难点 LLM-as-Judge 范式难以应对
+    三 AgentLoop 的 4 环飞轮产品化
+      第 1 环 全栈观测分析 完整 Trajectory 执行轨迹
+      第 2 环 Agent Ontology Pipeline
+      第 3 环 Agent-as-a-Judge 范式产品化
+    四 4 环闭环全景
+    五 与既有实体的关联
+    六 关键概念辨析
+      Agent-as-a-Judge vs LLM-as-a-Judge
+      数据驱动 vs Trajectory 驱动 4 环飞轮内两条路径
+    七 实践启示
+      对企业 评估覆盖率是 Agent 规模化的命脉
+      对平台建设者 4 环缺一不可
+      对 Agent 设计者 trajectory 是一等公民
+    八 引用与延伸阅读
 ```
 
 ## 一、定位：企业智能体下半场的发令枪

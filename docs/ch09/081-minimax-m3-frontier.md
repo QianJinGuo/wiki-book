@@ -16,7 +16,7 @@
 mindmap
   root(("MiniMax M3 开源 Frontier 模型"))
     三件套能力
-    MSA：MiniMax Sparse Atte…
+    MSA MiniMax Sparse Attention
       MSA 三个关键词
       性能数据
       稀疏路线对比
@@ -24,15 +24,11 @@ mindmap
     交互式用户模拟器训练
       范式变化
       FP8 GEMM 自主优化案例
-      PostTrainBench：自主训练模型
+      PostTrainBench 自主训练模型
     MiniMax Code 与定价
     评估成绩
-    深度分析
-      1. MSA 工程化突破的意义
-      2. 原生多模态对 Coding Agent …
-      3. 交互式用户模拟器的范式价值
-      4. 三件套协同效应的系统设计视角
-    实践启示
+    MSA 工程化突破的意义
+    原生多模态对 Coding Agent 的真实价值
 ```
 
 ## 三件套能力

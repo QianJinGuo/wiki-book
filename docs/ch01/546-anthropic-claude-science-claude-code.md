@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic推出Claude Science——科…"))
-    深度分析
-      Claude Science 的产品定位：从「…
-      AI in Science 的三巨头路线对比
-      与 Claude Code 的架构类比
-      科研 Agent 的可复现性与治理挑战
-    实践启示
-    相关实体
+  root(("Anthropic推出Claude"))
+    Claude Science 的产品定位 从「聊天框」到「科研流水线」
+    AI in Science 的三巨头路线对比
+    与 Claude Code 的架构类比
+    科研 Agent 的可复现性与治理挑战
 ```
 
 ## 摘要

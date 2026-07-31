@@ -13,10 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("The Shape of AI: Jaggedness,…"))
-    深度分析
-    实践启示
-    关联实体
+  root(("The Shape of AI Jaggedness"))
+    Jagged Frontier 是 AI 的持久特征
+    即使 AI 几乎完全超人 人类仍需处理边缘情况
+    瓶颈会从智力迁移到制度
+    Reverse Salient 解决一个短板带来跳跃
 ```
 
 ## 摘要

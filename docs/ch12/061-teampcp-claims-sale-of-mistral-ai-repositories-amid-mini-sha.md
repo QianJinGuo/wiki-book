@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 7.4KB | `entities/teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-shai-hulud-attack-1.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("TeamPCP Claims Sale of Mistr…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 ```mermaid

@@ -9,17 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Building AI Agents in Accoun…"))
-    深度分析
-      1. Skill-Config 分离架构的设计思想
-      2. MCP 作为 AI Agent 操作系统…
-      3. 会计内控框架下的人机协同模式
-      4. 实施路径与演进规律
-    实践启示
-      给财务领导者的建议
-      技术层面的关键原则
-    关联阅读
-    相关实体
+  root(("Building AI Agents in Accounting"))
+    Skill-Config 分离架构的设计思想
+    MCP 作为 AI Agent 操作系统级的连接协议
+    会计内控框架下的人机协同模式
+    实施路径与演进规律
+    给财务领导者的建议
+    技术层面的关键原则
 ```
 
 ## 核心要点

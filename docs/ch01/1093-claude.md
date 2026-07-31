@@ -31,7 +31,7 @@
 
 ```mermaid
 mindmap
-  root(("Claude 最歧视的，是印度三哥"))
+  root(("Claude 最歧视的 是印度三哥"))
     测试方法
     不只是贵
     扩大战场

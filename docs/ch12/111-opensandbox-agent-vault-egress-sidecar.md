@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("OpenSandbox：阿里开源的云端 Agent 安全…"))
-    定位：执行面，不是完整 Agent 产品
-    凭据设计（核心亮点）
+  root(("OpenSandbox 阿里开源的云端 Agent 安全沙箱 凭据"))
+    定位 执行面 不是完整 Agent 产品
+    凭据设计 核心亮点
     云端 Agent 接入架构
     适用场景与前置条件
-    相关实体
 ```
 
 ## 定位：执行面，不是完整 Agent 产品

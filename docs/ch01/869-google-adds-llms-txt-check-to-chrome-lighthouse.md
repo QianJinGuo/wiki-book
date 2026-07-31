@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.3KB | `entities/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Google adds llms.txt check t…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 
 - searchengineland.com 技术文章

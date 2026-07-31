@@ -15,15 +15,15 @@ Claude Code 是目前最受欢迎的 AI 编程工具之一，而支撑它流畅�
 
 ```mermaid
 mindmap
-  root(("Anthropic 最新博客：Prompt Cachin…"))
-    01 缓存即基建
-    02 排好队形
-    03 别动 Prompt
-    04 别换模型
-    05 别碰工具
-    06 Plan Mode
-    07 延迟加载
-    08 压缩的学问（Cache-Safe For…
+  root(("Anthropic 最新博客 Prompt Caching 是构建"))
+    缓存即基建
+    排好队形
+    别动 Prompt
+    别换模型
+    别碰工具
+    Plan Mode
+    延迟加载
+    压缩的学问 Cache-Safe Forking
 ```
 
 ## 01 缓存即基建

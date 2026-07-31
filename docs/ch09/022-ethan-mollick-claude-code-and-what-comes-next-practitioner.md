@@ -13,18 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Ethan Mollick: Claude Code a…"))
+  root(("Ethan Mollick Claude Code and"))
     现象级实测
     能力突变的两个关键
-    Claude Code 的四个 Magic T…
-      1. Compaction（Memento 比喻）
-      2. Skills（Matrix 比喻）
-      3. Subagents
-      4. Model Context Protoc…
+    Claude Code 的四个 Magic Tricks
+      Compaction Memento 比喻
+      Skills Matrix 比喻
+      Subagents
     对非程序员的实战指南
-    Mollick 自己的例子：历史世界模拟器
+    Mollick 自己的例子 历史世界模拟器
     风险与警告
-    与 Opus 4 7 Launch Clau…
+    与 Opus 4 7 Launch Claude Code
     三个独到洞察
 ```
 

@@ -10,14 +10,12 @@
 ```mermaid
 mindmap
   root(("Claude Code Harness 深度分析"))
-    TAOR Loop：Orchestrator …
+    TAOR Loop Orchestrator 越笨越稳定
     Context 管理
     六层记忆系统
     五档权限光谱
     多 Agent 编排
-    Anti-Distillation and Und…
-    深度分析
-    实践启示
+    Anti-Distillation Undercover
 ```
 
 ## TAOR Loop：Orchestrator 越笨越稳定

@@ -12,18 +12,18 @@
 
 ```mermaid
 mindmap
-  root(("Factory Mission Multi Agent …"))
-    核心定位
+  root(("Factory Mission Multi Agent"))
     人物背景
     架构全景图
-      Orchestrator（规划者）
-      Workers（实现者）
-      Validators（验证者）
+      Orchestrator 规划者
+      Workers 实现者
+      Validators 验证者
     五大 Multi-Agent 策略
-    核心概念：Validation Contract
-    串行  并行（反直觉）
-    Droid Whispering（模型选择哲学）
+    核心概念 Validation Contract
+    串行 并行 反直觉
+    Droid Whispering 模型选择哲学
     编排逻辑声明式
+    真实数字 Slack 克隆案例
 ```
 
 ## 核心定位

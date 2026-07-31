@@ -9,15 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Introducing Scheduled Tasks …"))
-    从'时间驱动'到'上下文驱动'的范式转变
+  root(("Introducing Scheduled Tasks 20"))
+    从时间驱动到上下文驱动的范式转变
     在同一任务内继续执行
     为 Web App 添加调度行为
-    增强可追踪性：侧边栏、日历视图和运行卡片
+    增强可追踪性 侧边栏 日历视图和运行卡片
     灵活的执行选项与高级设置
-    深度分析
-    实践启示
     使用示例
+    技术架构要点
 ```
 
 ## 核心要点

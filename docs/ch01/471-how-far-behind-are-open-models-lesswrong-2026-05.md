@@ -13,20 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("How far behind are open mode…"))
-    核心发现
-      1. 当前差距（2026-05）
-      2. 差距时间趋势
-      3. Provider degradation…
+  root(("How far behind are open models"))
+    当前差距 2026-05
+    差距时间趋势
+    Provider degradation 可能夸大差距
     数据来源
-    方法论
-    反向/前瞻视角
+    反向前瞻视角
     与中国模型
     启示
       对 AI 行业
       对开发者
     与 Interconnects 洞察的呼应
-    待关注
 ```
 
 ## 核心发现

@@ -7,21 +7,6 @@
 # Gaode Uplift Model Iteration Agent Long Running Harness
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("高德 Uplift 模型迭代 Agent：长时间运行 H…"))
-    相关实体
-    深度分析
-      核心观点
-    本期导读
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [xz, two years on: what scanners still cannot catch](ch01/659-xz.html)

@@ -30,15 +30,15 @@ Subagents 正好卡在这两个问题中间。它的价值倒不在于让系统�
 
 ```mermaid
 mindmap
-  root(("Subagents 详解：Claude Code 如何避…"))
+  root(("Subagents 详解 Claude Code 如何避免上下文污染"))
     太长不看
     同一条线索
     长会话为什么会变脏
-    Subagent 的价值不是「多开一个 Age…
+    Subagent 的价值不是「多开一个 Agent」
     一个 Subagent 文件长什么样
-    内置 Explore 和 Plan：把脏活挡在…
-    Fork 很强，但别把它当默认
-    看见上下文：context-timeline 钩子
+    内置 Explore 和 Plan 把脏活挡在主窗口外
+    Fork 很强 但别把它当默认
+    看见上下文 context-timeline 钩子
 ```
 
 ##  太长不看

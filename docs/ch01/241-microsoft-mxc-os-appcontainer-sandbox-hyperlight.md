@@ -15,22 +15,18 @@
 
 ```mermaid
 mindmap
-  root(("Microsoft MXC — 跨 OS 代理代码执行容…"))
-    一句话总结
-    10 个 Containment Backen…
-    三个独有贡献（不应合并到现有 entity）
-      1. **AppContainer 三层 Fa…
-      2. **bubblewrap proxy 故…
-      3. **LXC fail-closed sc…
+  root(("Microsoft MXC 跨 OS 代理代码执行容器"))
+    个 Containment Backend 速查表
+    三个独有贡献 不应合并到现有 entity
+      AppContainer 三层 Fallback 设计
+      bubblewrap proxy 故意不设 NOPROXY
+      LXC fail-closed scoping
     三个与其他 agent 安全实体的差异化对比
     与现有 wiki 实体差异化
     关键代码引用
-    上线状态 / 链接
-    深度分析
-      1. OS 厂商入场安全层的范式意义
-      2. 三层 fallback 揭示的 Wind…
-      3. 合作式执行与强制执行之间的诚实边界
-      4. dispatcher 模式的核心价值：策…
+    上线状态 链接
+    OS 厂商入场安全层的范式意义
+    三层 fallback 揭示的 Windows 容器化演进路径
 ```
 
 ## 一句话总结

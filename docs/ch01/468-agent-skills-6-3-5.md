@@ -13,16 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Agent Skills 开发指南：6 字段规范、3 级…"))
+  root(("Agent Skills 开发指南 6 字段规范 3 级加载 5"))
     核心概念
-    渐进式披露（Progressive Discl…
-    6 字段规范
+    渐进式披露 Progressive Disclosure
+    字段规范
       字段约束表
       name 校验细节
     目录结构
     开发流程
-      第一步：先真实地完成一次任务
-      第二步：搭目录结构
+      第一步 先真实地完成一次任务
+      第二步 搭目录结构
     最佳实践原则
     高价值指令模式
     Description 优化方法论

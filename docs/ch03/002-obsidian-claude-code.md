@@ -9,23 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Obsidian + Claude Code 集成指南"))
-    概述
+  root(("Obsidian Claude Code 集成指南"))
     核心痛点
     五种集成策略
-      策略 1：独立开发者 Vault + 符号链接
-      策略 2：Vault = Claude Cod…
-      策略 3：MCP 桥接
-      策略 4：每个仓库一个 Vault
+      策略 1 独立开发者 Vault 符号链接
+      策略 2 Vault Claude Code 工作目录 社区最流行
+      策略 3 MCP 桥接
     文件混乱问题解决路径
     必备插件生态
     Obsidian CLI 突破性进展
     社区最佳实践原则
-    深度分析
-      五种策略背后的哲学分歧
-      工具选择矩阵
-      Obsidian CLI 的深远影响
-      「AI 负责读取」原则的深层含义
+    五种策略背后的哲学分歧
+    工具选择矩阵
 ```
 
 ## 概述

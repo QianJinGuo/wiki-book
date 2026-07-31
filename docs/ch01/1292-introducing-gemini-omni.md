@@ -10,17 +10,14 @@
 ```mermaid
 mindmap
   root(("Introducing Gemini Omni"))
-    深度分析
-      Gemini Omni 的架构定位
-      '对话式视频编辑'的产品范式创新
-      多输入融合的技术挑战
-      SynthID 水印的负责任 AI 价值
-    实践启示
-      对 AI/ML 研究者
-      对产品 / 设计师
-      对开发者
-      对负责任 AI 关注者
-    相关实体
+    Gemini Omni 的架构定位
+    对话式视频编辑的产品范式创新
+    多输入融合的技术挑战
+    SynthID 水印的负责任 AI 价值
+    对 AIML 研究者
+    对产品 设计师
+    对开发者
+    对负责任 AI 关注者
 ```
 
 ## 核心要点

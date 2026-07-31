@@ -47,32 +47,32 @@ graph TB
 ```mermaid
 mindmap
   root(("AWS Bedrock 多智能体协作指南"))
-    一、AWS Bedrock 多智能体核心架构
-      1.1 关键服务组件
-      1.2 Agent 基本结构
-    二、Bedrock Agent 创建与配置
-      2.1 单 Agent 创建流程
-      2.2 Agent Alias 与版本管理
-    三、多 Agent 协作模式实现
-      3.1 Orchestrator-Worker…
-      3.2 Hierarchical 层叠模式
-      3.3 Agent-to-Agent 通信协议
-    四、跨账户多 Agent 协作
-      4.1 跨账户调用架构
-      4.2 跨账户配置
-    五、Tool Use 与函数调用
-      5.1 Action Groups 定义
-      5.2 函数调用模式
-    六、最佳实践与性能优化
-      6.1 Session 管理
-      6.2 并发控制
-      6.3 错误处理与重试
-    七、安全与权限管理
-      7.1 Agent 资源策略
-      7.2 护栏（Guardrails）配置
-    八、监控与可观测性
-      8.1 CloudWatch 指标
-      8.2 CloudWatch Logs 集成
+    一 AWS Bedrock 多智能体核心架构
+      关键服务组件
+      Agent 基本结构
+    二 Bedrock Agent 创建与配置
+      单 Agent 创建流程
+      Agent Alias 与版本管理
+    三 多 Agent 协作模式实现
+      Orchestrator-Worker 模式
+      Hierarchical 层叠模式
+      Agent-to-Agent 通信协议
+    四 跨账户多 Agent 协作
+      跨账户调用架构
+      跨账户配置
+    五 Tool Use 与函数调用
+      Action Groups 定义
+      函数调用模式
+    六 最佳实践与性能优化
+      Session 管理
+      并发控制
+      错误处理与重试
+    七 安全与权限管理
+      Agent 资源策略
+      护栏 Guardrails 配置
+    八 监控与可观测性
+      CloudWatch 指标
+      CloudWatch Logs 集成
 ```
 
 ## 一、AWS Bedrock 多智能体核心架构

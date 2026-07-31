@@ -14,9 +14,9 @@
 ```mermaid
 mindmap
   root(("Agent Harness 6 种运行模式与 SDB 方法论"))
-    Stochastic-Deterministi…
+    Stochastic-Deterministic Boundary
     三个正交维度
-    6 种运行时模式
+    种运行时模式
     可靠性分解公式
     典型失败签名
 ```

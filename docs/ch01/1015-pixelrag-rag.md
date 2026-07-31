@@ -13,14 +13,12 @@ PixelRAG 是 UC Berkeley 的开源项目，提出一种**纯视觉原生的 RAG 
 
 ```mermaid
 mindmap
-  root(("PixelRAG：用截图替代文本解析的视觉 RAG 范式"))
+  root(("PixelRAG 用截图替代文本解析的视觉 RAG 范式"))
     核心流程
     技术架构
-    关键数据
     核心优势
     与经典 RAG 的对比
     论文参考
-    实践启示
 ```
 
 ## 核心流程

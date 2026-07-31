@@ -11,13 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("Agent落地真相：协议、成本与进化——一场关于智能体从…"))
-    深度分析
-      Agent 落地的三重缺口
-      Spec-First：从 Vibe Codin…
-      Token 成本治理的三层架构
-    实践启示
-    相关实体
+  root(("Agent落地真相 协议 成本与进化一场关于智能体从能跑通到能投产的讨论"))
+    Agent 落地的三重缺口
+    Spec-First 从 Vibe Coding 到规约编程的范式转变
+    Token 成本治理的三层架构
 ```
 
 ## 摘要

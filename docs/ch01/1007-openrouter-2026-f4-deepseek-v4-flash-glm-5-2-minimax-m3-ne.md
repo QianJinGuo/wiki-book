@@ -15,11 +15,11 @@ OpenRouter 于 2026 年 6 月发布了《The Open-Weight Models That Matter》�
 
 ```mermaid
 mindmap
-  root(("OpenRouter 2026 开源 F4：DeepSe…"))
-    DeepSeek V4 Flash：性价比之王
-    GLM 5.2：开源质量铁王座
-    MiniMax M3：多模态长文本专精
-    NVIDIA Nemotron 3 Ultra…
+  root(("OpenRouter 2026 开源 F4 DeepSeek V4"))
+    DeepSeek V4 Flash 性价比之王
+    GLM 52 开源质量铁王座
+    MiniMax M3 多模态长文本专精
+    NVIDIA Nemotron 3 Ultra 企业级开源
     总体评估
 ```
 

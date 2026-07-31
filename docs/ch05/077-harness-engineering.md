@@ -13,21 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering 的未来——什么会…"))
-    核心框架：主权线
-      '主权不可自生'原则
-      被取代的工作（回答'怎么做'）
-      不会消失的工作（回答'该不该做'）
+  root(("Harness Engineering 的未来什么会消失 什么不会"))
+    核心框架 主权线
+      主权不可自生原则
+      被取代的工作 回答怎么做
+      不会消失的工作 回答该不该做
     三阶段演进路径
-      短期：Agent 架构师
-      中期：审核自动生成的 Harness
-      长期：治理工程
-    深度分析
-      与 Harness Engineering 概…
-      实际落地的张力
-      对从业者的影响
-    实践启示
-    相关实体
+      短期 Agent 架构师
+      中期 审核自动生成的 Harness
+      长期 治理工程
+    与 Harness Engineering 概念体系的关系
+    实际落地的张力
+    对从业者的影响
 ```
 
 ## 摘要

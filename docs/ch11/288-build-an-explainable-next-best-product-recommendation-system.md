@@ -13,11 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Build an explainable next-be…"))
-    核心架构
+  root(("Build an explainable"))
     技术栈
     数据管道
-    关键设计决策
 ```
 
 ## 核心架构

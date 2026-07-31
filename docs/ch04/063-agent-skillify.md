@@ -9,35 +9,27 @@
 
 ```mermaid
 mindmap
-  root(("Agent 可靠性的工程解法：从 Skillify 看持…"))
-    概述
+  root(("Agent 可靠性的工程解法 从 Skillify 看持续改进机制"))
     两次失败的核心机制
-      失败 1：传感器失效
-      失败 2：'28 分钟'
+      失败 1 传感器失效
+      失败 2 28 分钟
       共同本质
     Skillify 10 步法
-      Step 1：SKILL.md——契约
-      Step 2：Deterministic co…
-      Step 3：Unit tests——确定性函…
-      Step 4：Integration test…
+      Step 1 SKILLmd契约
+      Step 2 Deterministic code脚本
+      Step 3 Unit tests确定性函数测试
     三个关键机制
-      机制 1：自举循环（Bootstrapping…
-      机制 2：从 'vibes-based' 到 …
-      机制 3：可验证性是改进的前提
+      机制 1 自举循环 Bootstrapping Loop
+      机制 2 从 vibes-based 到 structurally
+      机制 3 可验证性是改进的前提
     三个关键权衡
-      权衡 1：灵活性 vs 确定性
-      权衡 2：Skill 数量 vs 系统复杂度
-      权衡 3：Skill 生命周期管理
-    相关概念
-    深度分析
-      自举循环的本质：智能制造约束，约束反过来限制智能
-      'structurally impossibl…
-      可验证性是改进的充要条件
-      熵增是 Agent 系统的内生力量
-    实践启示
-      立即可行的行动
-      中期系统建设
-      长期架构原则
+      权衡 1 灵活性 vs 确定性
+      权衡 2 Skill 数量 vs 系统复杂度
+      权衡 3 Skill 生命周期管理
+    自举循环的本质 智能制造约束 约束反过来限制智能
+    structurally impossible比shouldnt
+    可验证性是改进的充要条件
+    熵增是 Agent 系统的内生力量
 ```
 
 ## 概述

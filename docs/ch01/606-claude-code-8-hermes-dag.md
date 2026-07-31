@@ -14,15 +14,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 动态工作流 8 译本（行小招译注…"))
-    深度分析
-      1. 'Prompt Claude to cr…
-      2. Ultracode-trigger：触发…
-      3. Token-budget 的工程意义
-      4. Save and Share Workflo…
-    实践启示
-    关联实体
-    相关实体
+  root(("Claude Code 动态工作流 8 译本 行小招译注"))
+    Prompt Claude to create workflow
+    Ultracode-trigger 触发器即工作流
+    Token-budget 的工程意义
+    Save Share Workflow 从个人技巧到团队资产
 ```
 
 ## 摘要

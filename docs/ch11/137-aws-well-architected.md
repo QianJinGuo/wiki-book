@@ -11,19 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("AWS 软件供应链安全 Well-Architected…"))
-    概述
+  root(("AWS 软件供应链安全 Well-Architected 最佳实践"))
     核心防御维度
-      1. 凭证卫生 Credential Hyg…
-      2. 最小权限 Least Privilege
-      3. SBOM Software Bill …
-      4. 纵深防御 Layered Defense
+      凭证卫生 Credential Hygiene
+      最小权限 Least Privilege
+      SBOM Software Bill of Materials
     与 Well-Architected 五大支柱映射
     关键攻击向量总结
     落地建议
-    相关实体
-    深度分析
-    实践启示
 ```
 
 ## 概述

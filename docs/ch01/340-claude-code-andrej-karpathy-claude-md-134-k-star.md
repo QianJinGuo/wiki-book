@@ -9,23 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("最佳 Claude Code 配置：Andrej Kar…"))
-    深度分析
-      1. 四条规则精确对治四种结构性失败
-      2. 复杂偏向是 RL 训练的内置偏见
-      3. '顺手优化'是独立的失败模式
-      4. 行为准则本质是概率分布约束，而非确定性规则
-    实践启示
-      1. 为每个项目创建专属 CLAUDE.md
-      2. 在 Prompt 中主动暴露歧义而非等待…
-      3. 用'老工程师测试'抵抗复杂化冲动
-      4. 将验收标准强制转化为'测试优先'表述
-    背景与起源
-    CLAUDE.md 完整内容（四条规则）
-    1. Think Before Coding
-    2. Simplicity First
-    3. Surgical Changes
-    4. Goal-Driven Execution
+  root(("最佳 Claude Code 配置 Andrej Karpathy"))
+    四条规则精确对治四种结构性失败
+    复杂偏向是 RL 训练的内置偏见
+    顺手优化是独立的失败模式
+    行为准则本质是概率分布约束 而非确定性规则
+    为每个项目创建专属 CLAUDEmd
+    在 Prompt 中主动暴露歧义而非等待 AI 提问
+    用老工程师测试抵抗复杂化冲动
+    将验收标准强制转化为测试优先表述
 ```
 
 ## 深度分析

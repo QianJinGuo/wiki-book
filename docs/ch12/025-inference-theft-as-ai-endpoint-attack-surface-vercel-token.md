@@ -48,15 +48,13 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Inference Theft as AI Endpoi…"))
-    三条独有贡献（与同类安全 entity 区分）
+  root(("Inference Theft as AI Endpoint"))
+    三条独有贡献 与同类安全 entity 区分
     攻击面分类
     为什么 Web 防御不奏效
     与同类安全实体的差异化
     关键 takeaway
     引用
-    深度分析
-    实践启示
 ```
 
 ## 三条独有贡献（与同类安全 entity 区分）

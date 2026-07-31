@@ -35,15 +35,6 @@ OpenAI误导了整个AI圈好几年！
 不是事后诸葛。说这话的，是当年就在OpenAI做大模型优化的研究员**Diogo Almeida** 。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI塌房！Scaling law原作曝bug，万…"))
-    核心观点
-    技术洞察
-```
-
 ## 核心观点
 
 > 本文通过article、llm视角，分析了的AI/ML技术动态。

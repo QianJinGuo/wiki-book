@@ -15,19 +15,19 @@
 
 ```mermaid
 mindmap
-  root(("Agivar 录屏教学桌面 Agent：清华非十科技 大…"))
-    一句话定位
-    序：AI 学着操作电脑
-    FDE Forward Deployment…
-    Agivar 核心能力：录屏教学
-      与'按键精灵'的本质区别
-    案例：广东省政务部门
-    大脑 + 小脑双层架构
-      底层：Jittor 计图 推理引擎
+  root(("Agivar 录屏教学桌面 Agent 清华非十科技"))
+    序 AI 学着操作电脑
+    FDE Forward Deployment Engineer 现状
+    Agivar 核心能力 录屏教学
+      与按键精灵的本质区别
+    案例 广东省政务部门
+    大脑 小脑双层架构
+      底层 Jittor 计图 推理引擎
       速度对比
     三层确定性设计
-    全栈自研：清华团队底牌
-      同公司前作：Fitten Code
+    全栈自研 清华团队底牌
+      同公司前作 Fitten Code
+    平台支持
 ```
 
 ## 一句话定位

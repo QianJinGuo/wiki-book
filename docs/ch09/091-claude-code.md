@@ -9,17 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 可控性：软规则无法变成硬约束"))
-    核心洞察
-      软规则陷阱
-      200k Ghost（指令退化）
+  root(("Claude Code 可控性 软规则无法变成硬约束"))
+    软规则陷阱
+    k Ghost 指令退化
     Harness 治理对策
       Anthropic 的 Harness 设计
       评估者训练难点
-    深度分析
-    实践启示
     Sources
-    相关实体
 ```
 
 ## 核心洞察

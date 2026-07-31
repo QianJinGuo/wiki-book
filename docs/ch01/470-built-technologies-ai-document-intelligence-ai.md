@@ -13,14 +13,11 @@ Built Technologies（房地产金融软件提供商，处理超 5000 亿美元�
 
 ```mermaid
 mindmap
-  root(("Built Technologies AI Docume…"))
-    深度分析
-      1. '文档理解'取代'文档提取'的范式转变
-      2. 动态 Schema 生成的生产力价值
-      3. 置信度评分与人机反馈循环的设计
-      4. 分层推理架构：事实提取与判断分离
-    实践启示
-    相关实体
+  root(("Built Technologies AI Document"))
+    文档理解取代文档提取的范式转变
+    动态 Schema 生成的生产力价值
+    置信度评分与人机反馈循环的设计
+    分层推理架构 事实提取与判断分离
 ```
 
 ## 摘要

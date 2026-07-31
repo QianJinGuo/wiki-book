@@ -17,14 +17,11 @@
 
 ```mermaid
 mindmap
-  root(("别再手动复制 Skill 了：多 Agent 时代的 S…"))
-    深度分析
-      多 Agent 时代的 Skill 碎片化困境
-      软链接模式的技术取舍
-      从个人管理到团队协作
-      Skill 管理的未来形态
-    实践启示
-    相关实体
+  root(("别再手动复制 Skill 了 多 Agent 时代的 Skill"))
+    多 Agent 时代的 Skill 碎片化困境
+    软链接模式的技术取舍
+    从个人管理到团队协作
+    Skill 管理的未来形态
 ```
 
 ## 摘要

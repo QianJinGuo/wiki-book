@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Cost effective deployment of…"))
-    深度分析
-      从 GPU 到专用 AI 芯片的迁移动机
-      模块化编译策略
-      架构设计：双层 Auto Scaling
-      压测结果的关键洞察
-    实践启示
-    相关实体
+  root(("Cost effective deployment of"))
+    从 GPU 到专用 AI 芯片的迁移动机
+    模块化编译策略
+    架构设计 双层 Auto Scaling
+    压测结果的关键洞察
 ```
 
 ## 核心要点

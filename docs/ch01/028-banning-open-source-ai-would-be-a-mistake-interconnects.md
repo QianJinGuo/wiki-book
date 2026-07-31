@@ -15,16 +15,11 @@ Nathan Lambert 在 Interconnects 发表的评论文章，反对美国政府对�
 
 ```mermaid
 mindmap
-  root(("Banning Open Source AI Would…"))
-    核心论点
-    背景
-    深度分析
-      开源 AI 的三根支柱：教育、创新与竞争
-      安全与隐私：开源的优势而非劣势
-      中国竞争论的悖论
-      评价格与定位
-    实践启示
-    相关实体
+  root(("Banning Open Source AI Would Be A"))
+    开源 AI 的三根支柱 教育 创新与竞争
+    安全与隐私 开源的优势而非劣势
+    中国竞争论的悖论
+    评价格与定位
 ```
 
 ## 核心论点

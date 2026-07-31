@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Disgruntled researcher relea…"))
-    深度分析
-      1. BitLocker 作为'最后防线'的失守
-      2. 提权漏洞的'二阶段利用'模式
-      3. '报复性披露'的产业代价
-      4. AI Agent 部署对漏洞响应的新要求
-    实践启示
-      1. BitLocker 部署的强制基线
-      2. 提权漏洞的优先级管理
-      3. 建立不依赖厂商响应速度的安全基线
-      4. AI Agent 场景的纵深防御
-    相关实体
+  root(("Disgruntled researcher releases"))
+    BitLocker 作为最后防线的失守
+    提权漏洞的二阶段利用模式
+    报复性披露的产业代价
+    AI Agent 部署对漏洞响应的新要求
+    BitLocker 部署的强制基线
+    提权漏洞的优先级管理
+    建立不依赖厂商响应速度的安全基线
+    AI Agent 场景的纵深防御
 ```
 
 ## 摘要

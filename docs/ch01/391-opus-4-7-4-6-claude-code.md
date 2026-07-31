@@ -11,15 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Opus 4.7 发布：相比 4.6 核心变化与 Cla…"))
-    相关实体
-    深度分析
-      1. 自我验证：从'生成工具'到'工程助手'的…
-      2. xhigh effort 与 adapt…
-      3. Auto mode：告别'权限弹窗' 的…
-      4. 视觉能力的战略价值：computer-u…
-    实践启示
-    关联实体
+  root(("Opus 47 发布 相比 46 核心变化与 Claude"))
+    自我验证 从生成工具到工程助手的关键一步
+    xhigh effort 与 adaptive thinking
+    Auto mode 告别权限弹窗 的并行 agent 时代
+    视觉能力的战略价值 computer-use agent 的杀手级特性
 ```
 
 ## 相关实体

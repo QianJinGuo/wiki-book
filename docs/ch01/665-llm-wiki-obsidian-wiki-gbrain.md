@@ -13,16 +13,6 @@
 然而，仅仅是通过Skill自动更新来解决 Agent 的"自进化"，其实还是有点不够的，也有很多人反映真正在用 Hermes Agent 的时候，也没感觉到明显的变聪明，或者看到自动沉淀的比较好的 Skill。这是因为，自动沉淀 Skill 的机制很多时候还是取决于模型自己的判断和决策，这种判断和决策的触发时机和可控性相对就比较低了。因此，通过人给予Agent更多的"知识"来提升 Agent 的能力，甚至存放知识的这个"知识库"如果能"自动梳理"、"自动组织"、"自动更新"甚至"自动进化"，那就更好了，从而就能推动 Agent 的不断"自进化"。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLM Wiki / Obsidian Wiki / G…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)

@@ -7,16 +7,6 @@
 > -> [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing deepsec: The sec…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 LLM 直接扫描代码（幻觉率高、误报率难以控制），而是将安全发现流程拆解为 Scan → Investigate → Revalidate → Enrich → Export 的多 agent 协作流水线。
 **Scan 阶段**：纯 regex，仅定位 security-sensitive 区域，不做任何语义判断。这一步的作用是缩小后续 expensive agent 调查的范围——一个大仓库可能有数万文件，但 security-sensitive 区域往往集中在 auth、data-access、crypto、input-validation 等少数模块。

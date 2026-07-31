@@ -9,21 +9,6 @@
 > **Background**：本文基于 leehanchung 2026-05-08 发表的深度技术分析，系统梳理了 AI Agent 系统中"Harness 层"的技术债务问题。文章以 Google 经典论文《Hidden Technical Debt in Machine Learning Systems》为类比，指出 Agent 系统中真正的工程复杂度不在模型本身，而在围绕模型的 Harness 层——system prompts、tool wrappers、planner-executor loops、retry policies、context compaction 策略等。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hidden Technical Debt of AI …"))
-    核心论点
-    Harness 层的五个技术债务维度
-      1. System Prompt 膨胀
-      2. Tool Wrapper 脆弱性
-      3. Planner-Executor 循环的…
-      4. Context Compaction 策略
-    与现有实体的差异化
-    实践启示
-```
-
 ## 核心论点
 
 Agent 系统的 Harness 层（系统提示词、工具包装器、规划-执行循环、重试策略、上下文压缩策略、工具调用白名单、停止判断器、降级方案）构成了真正的技术债务来源。即使使用 n8n 等低代码工具绘制工作流，本质上仍是 Harness 工程。

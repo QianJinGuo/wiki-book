@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 3.5KB | `entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Igor Babuschkin Seeks Up To …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - 来源：https://letsdatascience.com/news/igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09
 - 评分：v=7 × c=8 = 56

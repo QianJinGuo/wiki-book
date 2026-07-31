@@ -9,17 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek Visual Primitives：视…"))
-    核心定位
-    核心概念：Reference Gap
-      Perception Gap vs Refer…
-      '看见' vs '看清楚' vs '说清楚指哪个'
+  root(("DeepSeek Visual Primitives"))
+    核心概念 Reference Gap
+      Perception Gap vs Reference Gap
+      看见 vs 看清楚 vs 说清楚指哪个
       Point 为什么比框更适合拓扑推理
     关键技术数据
       压缩效率
-      压缩链路（三步）
+      压缩链路 三步
       拓扑推理领先幅度
-    5阶段训练管线
+    阶段训练管线
       专家化设计
       三层 RL 奖励
       OPD 蒸馏
@@ -28,11 +27,8 @@ mindmap
       多语言零-shot
     局限
     对 coding agent 的意义
-    深度分析
-      1. Reference Gap 是比 Per…
-      2. 视觉原语将 grounding 从验证工…
-      3. 7056 倍压缩效率重新定义多模态 LL…
-      4. 拓扑推理是所有 frontier 模型共…
+    Reference Gap 是比 Perception Gap
+    视觉原语将 grounding 从验证工具升级为思考媒介
 ```
 
 ## 核心定位

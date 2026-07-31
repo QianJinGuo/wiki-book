@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Securing AI Agents: AWS × Ci…"))
-    深度分析
-      企业 AI Agent 部署的'三盲区'
-      AI Registry + Cisco AI …
-      行业意义：企业 AI 安全的'标准化时刻'
-      与 U Of T Ai Worm Cleve…
-    实践启示
-    相关实体
+  root(("Securing AI Agents AWS Cisco AI"))
+    企业 AI Agent 部署的三盲区
+    AI Registry Cisco AI Defense 的三层防护
+    行业意义 企业 AI 安全的标准化时刻
+    与 U Of T Ai Worm Cleverhans
 ```
 
 ## 摘要

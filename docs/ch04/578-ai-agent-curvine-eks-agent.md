@@ -13,13 +13,12 @@ AI Agent 大规模部署面临一个独特的存储挑战：每个 Agent 实例�
 
 ```mermaid
 mindmap
-  root(("AI Agent 存储选型：Curvine 如何在 EK…"))
+  root(("AI Agent 存储选型 Curvine 如何在 EKS"))
     传统方案的局限
-      EBS：隔离性好，但挂载数是硬上限
-      EFS：隔离机制成熟，但大规模 provisi…
-      S3：容量无限，但不是文件系统
-    Curvine：为 Agent 规模化设计的分…
-      核心架构
+      EBS 隔离性好 但挂载数是硬上限
+      EFS 隔离机制成熟 但大规模 provision 是瓶颈
+      S3 容量无限 但不是文件系统
+    Curvine 为 Agent 规模化设计的分布式缓存文件系统
       与 JuiceFS 的核心差异
     万级 Pod 基准测试
 ```

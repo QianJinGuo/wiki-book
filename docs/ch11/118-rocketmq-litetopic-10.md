@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("百炼网关实践：用 RocketMQ LiteTopic …"))
-    深度分析
-      核心洞见：限流从防御题变成资源调度题
-      漏桶机制与消息队列的深度耦合
-      Suspend vs Sleep：理解 MQ …
-      大模型限流的普适范式
-    实践启示
-    关联实体
+  root(("百炼网关实践 用 RocketMQ LiteTopic"))
+    核心洞见 限流从防御题变成资源调度题
+    漏桶机制与消息队列的深度耦合
+    Suspend vs Sleep 理解 MQ 级限流的本质区别
+    大模型限流的普适范式
 ```
 
 ## 核心要点

@@ -9,18 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 大型代码库最佳实践 — Anth…"))
+  root(("Claude Code 大型代码库最佳实践 Anthropic"))
     核心判断
     Agent 式搜索 vs RAG
-    七层扩展体系（Harness）
+    七层扩展体系 Harness
     三层部署路径
     三个成功部署模式
-      模式1：让代码库对 Claude 可读
-      模式2：指定专人负责
-      模式3：治理先行
-    配置迭代：随模型进化
+      模式1 让代码库对 Claude 可读
+      模式2 指定专人负责
+      模式3 治理先行
+    配置迭代 随模型进化
     适用边界
-    相关实体
+    Agent 式搜索为何优于 RAG 代码库动态性的根本矛盾
 ```
 
 ## 核心判断

@@ -17,14 +17,11 @@
 
 ```mermaid
 mindmap
-  root(("一文看懂 AI 编程智能体工程化新范式：Loop Eng…"))
-    深度分析
-      从 Prompt Engineering 到 …
-      Loop Engineering 的工程化本质
-      六大核心构件的协同关系
-      典型 Loop 的工作流程
-    实践启示
-    相关实体
+  root(("一文看懂 AI 编程智能体工程化新范式 Loop Engineering"))
+    从 Prompt Engineering 到 Loop
+    Loop Engineering 的工程化本质
+    六大核心构件的协同关系
+    典型 Loop 的工作流程
 ```
 
 ## 摘要

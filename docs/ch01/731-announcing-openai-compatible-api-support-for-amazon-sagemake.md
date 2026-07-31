@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Announcing OpenAI-compatible…"))
-    相关实体
-    深度分析
-      技术架构层面
-      Bearer Token 认证机制
-      多模型托管的 Inference Compon…
-      与现有生态的集成路径
-    实践启示
-      迁移策略建议
-      安全实施要点
-      成本优化考量
-      适用场景判断
+  root(("Announcing OpenAI-compatible API"))
+    技术架构层面
+    Bearer Token 认证机制
+    多模型托管的 Inference Components 架构
+    与现有生态的集成路径
+    迁移策略建议
+    安全实施要点
+    成本优化考量
+    适用场景判断
 ```
 
 ## 核心要点

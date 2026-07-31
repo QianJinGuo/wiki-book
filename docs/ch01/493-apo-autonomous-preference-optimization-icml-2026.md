@@ -9,24 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("APO — Autonomous Preference …"))
-    核心问题：概念漂移（Concept Drift）
-    APO 框架：两阶段协议
-      阶段一：监督引导的共识合成
-      阶段二：约束感知的偏好优化
+  root(("APO Autonomous Preference"))
+    核心问题 概念漂移 Concept Drift
+    APO 框架 两阶段协议
+      阶段一 监督引导的共识合成
+      阶段二 约束感知的偏好优化
     数学形式化
-    数据集：CXR-MAX
-    实验结果
+    数据集 CXR-MAX
     意义
-    深度分析
-      约束满足视角：为何 APO 有效
-      多流共识的数学直觉
-      为什么学生能超越教师
-      与传统多教师蒸馏的根本区别
-    实践启示
-      算法层面
-      工程层面
-      应用场景
+    约束满足视角 为何 APO 有效
+    多流共识的数学直觉
+    为什么学生能超越教师
 ```
 
 ## 核心问题：概念漂移（Concept Drift）

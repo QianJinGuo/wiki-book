@@ -9,18 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic's bug-hunting Myth…"))
-    关键要点
-    深度分析
-      事件背景
-      实际测试结果
-      与同类工具对比
-      核心结论
-    实践启示
-      对安全团队
-      对开发者
-      对 AI 厂商
-    相关实体
+  root(("Anthropics bug-hunting Mythos was"))
+    事件背景
+    实际测试结果
+    与同类工具对比
+    对安全团队
+    对开发者
+    对 AI 厂商
 ```
 
 ## 摘要

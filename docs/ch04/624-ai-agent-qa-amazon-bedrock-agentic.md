@@ -13,9 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("用 AI Agent 加速游戏 QA：基于 Amazon…"))
-    核心问题：QA 成为游戏开发的瓶颈
-    解决方案：Agentic 测试编排
+  root(("用 AI Agent 加速游戏 QA 基于 Amazon"))
+    核心问题 QA 成为游戏开发的瓶颈
+    解决方案 Agentic 测试编排
     架构与工作流
     与 Bedrock 多模态模型对比测试平台的关系
     关键优势

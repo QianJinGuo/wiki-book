@@ -13,19 +13,16 @@ Morphllm shows how to exploit the structure of code editing tasks for LLM infere
 
 ```mermaid
 mindmap
-  root(("Optimizing Models to Be Fast…"))
+  root(("Optimizing Models to Be Fast at"))
     Core Findings
-      1. Incremental Context …
-      2. Structural Propertie…
-      3. Inference Performanc…
-    Differentiation from Ge…
-    深度分析
-      推测解码的定制化是核心竞争力
-      前缀缓存命中率决定廉价 GPU 的可行性
-      跨机器 TCP 前缀缓存突破 NVLink 限制
-      Chinchilla 法则在推测解码场景下失效
-    实践启示
-    Related
+      Incremental Context Strategy
+      Structural Properties of Code Edits
+      Inference Performance Gains
+    Differentiation from General
+    推测解码的定制化是核心竞争力
+    前缀缓存命中率决定廉价 GPU 的可行性
+    跨机器 TCP 前缀缓存突破 NVLink 限制
+    Chinchilla 法则在推测解码场景下失效
 ```
 
 ## Core Findings

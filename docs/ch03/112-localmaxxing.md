@@ -9,15 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Localmaxxing：局部最优陷阱"))
-    Summary
-    深度分析
-      本地模型的实用边界
-      延迟：本地模型的唯一真正优势
-      质量差异的感知阈值
-      Token 效率：被低估的优势
-    实践启示
-    相关实体
+  root(("Localmaxxing 局部最优陷阱"))
+    本地模型的实用边界
+    延迟 本地模型的唯一真正优势
+    质量差异的感知阈值
+    Token 效率 被低估的优势
 ```
 
 ## Summary

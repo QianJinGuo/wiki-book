@@ -13,16 +13,15 @@ Moondream 的 Photon 推理引擎通过 **pipelined decoding** 技术消除 GPU 
 
 ```mermaid
 mindmap
-  root(("Moondream Photon: Pipelined …"))
+  root(("Moondream Photon Pipelined"))
     GPU Bubble 的根因
     三个核心机制
-      1. Ping-Pong Slots（双缓冲槽）
-      2. Forward Now, Sample …
-      3. Zombies（僵尸序列）
+      Ping-Pong Slots 双缓冲槽
+      Forward Now Sample Later 先算后采
+      Zombies 僵尸序列
     Prefill 共享同一 Pipeline
     性能效果
     与现有推理优化技术的区别
-    相关实体
 ```
 
 ## GPU Bubble 的根因

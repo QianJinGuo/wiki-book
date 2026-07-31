@@ -13,8 +13,8 @@
 
 ```mermaid
 mindmap
-  root(("FinOps + DevOps 双Agent 协作：AI…"))
-    三个独有贡献（不应合并到现有 entity）
+  root(("FinOps DevOps 双Agent 协作 AI驱动的云成本优化实战"))
+    三个独有贡献 不应合并到现有 entity
     双Agent 协作架构
       关注点分离
       结构化交接清单

@@ -7,20 +7,6 @@
 # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("腾讯混元新里程碑：Hy3 preview 发布开源，Ag…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [an opinionated guide to using ai right now](../ch09/098-an-opinionated-guide-to-using-ai-right-now.html)

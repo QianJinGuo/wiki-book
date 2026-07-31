@@ -9,16 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Thrive Capital Bets $100 Mil…"))
-    相关实体
-    深度分析
-      Thrive Capital 的投资逻辑
-      Shopify AI 战略的核心数据
-      Agentic Shopping：从工具到生态
-      投资风险与不确定性
-    实践启示
-      对创业者的启示
-      对投资人的启示
+  root(("Thrive Capital Bets 100 Million"))
+    Thrive Capital 的投资逻辑
+    Shopify AI 战略的核心数据
+    Agentic Shopping 从工具到生态
+    投资风险与不确定性
+    对创业者的启示
+    对投资人的启示
 ```
 
 ## 核心要点

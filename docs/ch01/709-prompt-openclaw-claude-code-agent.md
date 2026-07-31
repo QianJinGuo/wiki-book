@@ -13,14 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("别再亲自写Prompt了！OpenClaw与Claude…"))
-    深度分析
-      五级跃迁史
-      Boris 的循环实操五条技巧
-      循环管控的三个硬性约束
-      循环增值的关键：可复用技能
-    实践启示
-    相关实体
+  root(("别再亲自写Prompt了 OpenClaw与Claude"))
+    Boris Cherny 的进化三阶段
+    五级跃迁史
+    Boris 的循环实操五条技巧
+    循环管控的三个硬性约束
+    循环增值的关键 可复用技能
 ```
 
 ## 摘要

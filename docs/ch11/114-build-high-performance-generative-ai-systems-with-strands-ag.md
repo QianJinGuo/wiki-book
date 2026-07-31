@@ -13,19 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Build high-performance gener…"))
-    核心问题
-    解决方案：四层架构
+  root(("Build high-performance generative"))
+    解决方案 四层架构
     组件职责
       NVIDIA NIM
       Strands Agents
       Bedrock AgentCore Runtime
-      AgentCore Memory
     部署工具链
-    适用场景
     部署优势
     关键 trade-off
     参考实现
+    分离式架构的性能收益
+    状态管理范式的演进
 ```
 
 ## 核心问题

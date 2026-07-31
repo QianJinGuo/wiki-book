@@ -13,14 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("AI Agent 时代 CI/CD 生存指南 — 阿里 …"))
-    核心命题
-    与已有实体的关系
+  root(("AI Agent 时代 CICD 生存指南 阿里 a1 CLI"))
     四层准入门禁
-    AI 动态冒烟测试（核心创新）
+    AI 动态冒烟测试 核心创新
       五把锁约束随机性
       Stop hook 自愈
-    CI 历史反馈闭环（Dogfooding 模式）
+    CI 历史反馈闭环 Dogfooding 模式
     发布流水线
       Beta Telemetry 4 维度
       版本一致性

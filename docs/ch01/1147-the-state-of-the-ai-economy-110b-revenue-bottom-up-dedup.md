@@ -13,12 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("The State of the AI Economy …"))
+  root(("The State of the AI Economy 110B"))
     Core Numbers
     Methodology Innovation
-    Supply Side vs Demand S…
+    Supply Side vs Demand Side
     Exclusions
-    Differentiation from Ex…
+    Differentiation from Existing
 ```
 
 ## Core Numbers

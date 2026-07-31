@@ -51,13 +51,12 @@
 
 ```mermaid
 mindmap
-  root(("Agent之间，有互联网了！"))
-    三个核心概念：Agent需要一个真正的工位
-    第 2 来源 — 机器之心（Octo 深度分析…
-      核心理念：从「单一 Agent」到「一张组织网络」
-      Octo 架构：Bot / Channel /…
-      A2A 协作与组织级部署
-      互补角度
+  root(("Agent之间 有互联网了"))
+    三个核心概念 Agent需要一个真正的工位
+    核心理念 从「单一 Agent」到「一张组织网络」
+    Octo 架构 Bot Channel Matter 三要素
+    A2A 协作与组织级部署
+    互补角度
 ```
 
 ## 三个核心概念：Agent需要一个真正的工位

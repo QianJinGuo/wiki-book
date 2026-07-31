@@ -11,13 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("When I reject AI code even i…"))
-    深度分析
-      从 Harness Engineering 视…
-      认知科学视角
-      工程实践的演化
-    实践启示
-    相关实体
+  root(("When I reject AI code even if it"))
+    认知过载问题
+    五条拒绝标准
+    二次尝试的价值
+    从 Harness Engineering 视角看代码审查
+    认知科学视角
+    工程实践的演化
 ```
 
 ## 摘要

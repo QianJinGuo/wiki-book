@@ -11,17 +11,6 @@
 1. **多种行为偏好均可潜意识传递**，包括一些不安全的行为偏好
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Nature | Anthropic：蒸馏过程潜意识传递…"))
-    相关实体
-    深度分析
-    实践启示
-    关联阅读
-```
-
 ## 相关实体
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/397-agent-skills.html)
 - [Sap Unveils The Autonomous Enterprise](../ch04/105-sap-unveils-the-autonomous-enterprise.html)

@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Scaling Camera File Processi…"))
-    深度分析
-      「构建不如合作」的工程哲学
-      从 GPU 到 CPU 的架构逆向选择
-      开放标准的战略价值
-      影响力的「缺席」表现
-    实践启示
-    相关实体
+  root(("Scaling Camera File Processing at"))
+    为什么构建 MPS
+    FilmLight API 的角色
+    云原生架构的关键约束
+    弹性扩缩容应对生产负载
+    「构建不如合作」的工程哲学
+    从 GPU 到 CPU 的架构逆向选择
+    开放标准的战略价值
+    影响力的「缺席」表现
 ```
 
 ## 摘要

@@ -13,14 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("How to Detect AI Agents on Y…"))
-    深度分析
-      从'bot or not'到意图分类的范式转变
-      隐身浏览器与本地化部署的挑战
-      CAPTCHA 已失效
-      浏览器仍是关键检测窗口
-    实践启示
-    相关实体
+  root(("How to Detect AI Agents on Your"))
+    四层检测信号体系
+    六类 AI Agent 流量分类
+    三种检测方法对比
+    从bot or not到意图分类的范式转变
+    隐身浏览器与本地化部署的挑战
+    CAPTCHA 已失效
+    浏览器仍是关键检测窗口
 ```
 
 ## 摘要

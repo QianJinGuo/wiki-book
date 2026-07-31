@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("高德Proactive Agent — LBS场景时空思…"))
-    核心定位
-    范式跃迁：RecSys → Proactive…
+  root(("高德Proactive Agent"))
+    范式跃迁 RecSys Proactive Agent
     Proactive Agent 三大核心能力
     用户体验三转变
-    深度分析
-      从'候选项'到'确定答案'的范式根本性转变
-      时空三维度信号（Where-When-Who）…
-      全局感知 → 全需求预估的'不重不漏'逻辑
-      GenUI：意图与界面的同步演化
-    实践启示
-      系统设计层面
-      产品与交互设计层面
-      技术选型与架构演进层面
-    相关实体
+    从候选项到确定答案的范式根本性转变
+    时空三维度信号 Where-When-Who 的语义层放大
+    全局感知 全需求预估的不重不漏逻辑
+    GenUI 意图与界面的同步演化
+    系统设计层面
 ```
 
 ## 核心定位

@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 3.8KB | `entities/granola-the-ai-notepad-for-backtoback-meetings.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Granola — The AI Notepad for…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - Granola 是一款面向高频会议场景的 AI 原生会议记录工具
 - 核心差异化："AI 增强而非 AI 全替代"——人类与会者仍是会议的主体

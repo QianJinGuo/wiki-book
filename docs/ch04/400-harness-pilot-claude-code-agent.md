@@ -11,16 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Harness Pilot：Claude Code 插件…"))
-    深度分析
-      1. 核心问题：AI Agent 的隐性规则盲区
-      2. 范式转变：从'教'到'验'
-      3. 四条设计原则
-      4. 两大 Skill
+  root(("Harness Pilot Claude Code"))
+    核心问题 AI Agent 的隐性规则盲区
+    范式转变 从教到验
+    四条设计原则
+    两大 Skill
     核心金句
-    实践启示
     相关页面
-    相关实体
 ```
 
 ## 摘要

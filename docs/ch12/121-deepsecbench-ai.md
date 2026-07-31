@@ -9,17 +9,6 @@
 > **Background**：本文基于 Vercel 发布的 DeepSecBench 基准测试。该基准评估了多个 AI 模型（Claude、GPT、Gemini 等）在自动化网络安全漏洞发现上的表现，并探讨了模型能力与安全扫描自动化之间的关系。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSecBench：评估 AI 模型在网络安全漏洞…"))
-    核心洞察
-    关键发现
-    方法论
-    相关实体
-```
-
 ## 核心洞察
 
 ```mermaid

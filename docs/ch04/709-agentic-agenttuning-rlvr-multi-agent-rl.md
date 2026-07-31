@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("淘宝直播数字人 Agentic 架构升级：AgentTu…"))
-    深度分析
-      1. 从静态Workflow到Agentic架…
-      2. '先蒸馏再强化'的工程理性
-      3. Multi-Agent RL解决多奖励混…
-      4. 仿真环境中的训练挑战
-    实践启示
-    相关实体
+  root(("淘宝直播数字人 Agentic 架构升级 AgentTuning"))
+    从静态Workflow到Agentic架构数字人交互的范式转变
+    先蒸馏再强化的工程理性
+    Multi-Agent RL解决多奖励混杂问题的机制分析
+    仿真环境中的训练挑战
 ```
 
 ## 摘要

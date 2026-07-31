@@ -9,17 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("2028: Two scenarios for glob…"))
-    核心观点
+  root(("Two scenarios for global AI"))
     背景与紧迫性
     算力优势的复利效应
     中国AI竞争力的两大漏洞
-      漏洞一：非法获取算力
-      漏洞二：蒸馏攻击（Distillation A…
+      漏洞一 非法获取算力
+      漏洞二 蒸馏攻击 Distillation Attacks
     四个竞争前沿
-    '齐头并进'风险是AI安全领域最被低估的威胁
-    Mythos Preview：'觉醒时刻'
-    AI作为'加速器'的级联效应
+    齐头并进风险是AI安全领域最被低估的威胁
+    Mythos Preview 觉醒时刻
+    AI作为加速器的级联效应
+    场景一 民主国家保持 commanding and
 ```
 
 ## 核心观点

@@ -10,18 +10,15 @@
 ```mermaid
 mindmap
   root(("Hermes Agent Loop 架构"))
-    5 阶段主循环
-    4 个核心模块
-      1. Loop Orchestrator（主控）
-      2. Prompt Builder（提示词组装）
-      3. 执行层（LLM Adapter + To…
-      4. Trajectory Recorder（…
-    一轮 = 1次 LLM + 0~N次 Tool
-    4 种退出姿势
+    阶段主循环
+    个核心模块
+      Loop Orchestrator 主控
+      Prompt Builder 提示词组装
+      执行层 LLM Adapter Tool Runner
+    一轮 1次 LLM 0N次 Tool
+    种退出姿势
     设计哲学
     与本 wiki 的关系
-    深度分析
-    实践启示
 ```
 
 ## 5 阶段主循环

@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("What Job Interviews Taught M…"))
+  root(("What Job Interviews Taught Me"))
     内容提炼
-    Why?
+    Why
       Uniformity
-    关键洞察
-    实践启示
-    相关实体
 ```
 
 ## 核心要点

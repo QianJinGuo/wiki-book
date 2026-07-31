@@ -11,16 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Codex 重磅升级：Appshots / Goal 毕…"))
-    相关实体
-    深度分析
-      1. Appshots 解决的是'上下文获取的…
-      2. /goal 毕业意味着 Agent 从'…
-      3. Locked Use 是 Compute…
-      4. '50% 用户不写代码'是 Codex …
-    实践启示
-    关联实体
-    信号判断
+  root(("Codex 重磅升级 Appshots Goal 毕业 锁屏远程操控"))
+    Appshots 双击 Command 读懂所有屏
+    goal 模式正式毕业
+    Locked Use Mac 锁屏远程操控
+    应用内浏览器迭代
+    Appshots 解决的是上下文获取的物理边界
+    goal 毕业意味着 Agent 从反射模型升级为规划模型
+    Locked Use 是 Computer Use 的物理空间扩展
+    50 用户不写代码是 Codex 定位的根本转变
 ```
 
 ## 相关实体

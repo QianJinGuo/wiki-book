@@ -13,16 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Graviton 优化 Agentic RL 沙箱层：架…"))
-    核心发现
+  root(("Graviton 优化 Agentic RL 沙箱层 架构与成本优势分析"))
     架构分析
     延伸意义
-    深度分析
-      1. 沙箱层：Agentic RL 训练中被忽…
-      2. 沙盒负载的四个关键特征
-      3. Graviton vs Intel 的实…
-      4. 成本模型的复利效应：单价优势 × 性能优势
-    实践启示
+    沙箱层 Agentic RL 训练中被忽视的成本中心
+    沙盒负载的四个关键特征
+    Graviton vs Intel 的实测对比 物理核对 SMT
+    成本模型的复利效应 单价优势 性能优势
 ```
 
 ## 核心发现

@@ -11,14 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Self-Service AWS Health Anal…"))
-    深度分析
-      多 Agent 架构的设计哲学
-      成本优化策略
-      与 AWS DevOps Agent 的集成愿景
-      实际查询示例
-    实践启示
-    相关实体
+  root(("Self-Service AWS Health Analytics"))
+    问题定义
+    Chaplin 解决方案架构
+    关键 MCP 工具
+    多 Agent 架构的设计哲学
+    成本优化策略
+    与 AWS DevOps Agent 的集成愿景
+    实际查询示例
 ```
 
 ## 摘要

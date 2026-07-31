@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Reimagining the mouse pointe…"))
+  root(("Reimagining the mouse pointer for"))
     四项交互原则详解
-      1. 保持工作流连续（Maintain the…
-      2. 展示与讲述（Show and Tell）
-      3. 利用「这个/那个」的指代力量（Embra…
-      4. 将像素转化为可交互实体（Turn Pix…
-    深度分析
-      一、「Copy and Prompt」→「Po…
-      二、Spatial AI Interactio…
-      三、对「AI Native 应用」交互设计标准…
-      四、与传统 GUI 设计逻辑的根本性冲突
-    实践启示
-    相关实体
+      保持工作流连续 Maintain the Flow
+      展示与讲述 Show and Tell
+      利用「这个那个」的指代力量 Embrace This and That
+    一 「Copy and Prompt」「Point and
+    二 Spatial AI Interaction 从研究到产品化的跨越
+    三 对「AI Native 应用」交互设计标准的重新定义
+    四 与传统 GUI 设计逻辑的根本性冲突
 ```
 
 ## 摘要

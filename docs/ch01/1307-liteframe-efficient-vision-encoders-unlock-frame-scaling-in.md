@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("LiteFrame: Efficient Vision …"))
-    深度分析
-      问题本质：两阶段瓶颈迁移
-      核心技术路径：CTD + LMA
-      架构设计哲学
-      性能-延迟 Pareto 前沿的重定义
-    实践启示
-      对 Video LLM 系统设计的启示
-      对算力规划的启示
-      研究方向建议
-    相关实体
+  root(("LiteFrame Efficient Vision"))
+    问题本质 两阶段瓶颈迁移
+    核心技术路径 CTD LMA
+    架构设计哲学
+    性能-延迟 Pareto 前沿的重定义
+    对 Video LLM 系统设计的启示
+    对算力规划的启示
+    研究方向建议
 ```
 
 ## 核心要点

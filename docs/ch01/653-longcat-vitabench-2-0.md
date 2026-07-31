@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("美团 LongCat 开源 VitaBench 2.0：…"))
-    深度分析
-      从任务完成到用户理解：评测范式的根本转变
-      记忆不是解药：Agentic Memory 与…
-      个性化：从'会做事'到'会做人'的鸿沟
-      思考模式的副作用
-    实践启示
-    相关实体
+  root(("美团 LongCat 开源 VitaBench 20"))
+    从任务完成到用户理解 评测范式的根本转变
+    记忆不是解药 Agentic Memory 与 RAG
+    个性化 从会做事到会做人的鸿沟
+    思考模式的副作用
 ```
 
 ## 摘要

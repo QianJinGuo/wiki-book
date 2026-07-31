@@ -9,20 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("基于Bedrock AgentCore+Strands构…"))
-    概述
-    核心技术
-    来源
-    相关实体
-    深度分析
-      架构解耦：多层抽象的工程价值
-      AgentCore Memory 的'千人千面…
-      Gateway 的协议翻译与生态兼容
-      无服务器架构的运维简化
-    实践启示
-      框架选型：模型驱动 vs 流程驱动
-      企业级部署的关键检查点
-      快速集成路径
+  root(("基于Bedrock"))
+    架构解耦 多层抽象的工程价值
+    AgentCore Memory 的千人千面机制
+    Gateway 的协议翻译与生态兼容
+    无服务器架构的运维简化
+    框架选型 模型驱动 vs 流程驱动
+    企业级部署的关键检查点
+    快速集成路径
 ```
 
 ## 概述

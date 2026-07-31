@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Valkey 为什么这么快？盘点 Valkey 中提升性…"))
-    深度分析
-      从 Redis fork 到独立生态
-      性能优化的工程哲学
-      GLIDE 客户端的战略意义
-    实践启示
-    相关实体
+  root(("Valkey 为什么这么快 盘点 Valkey 中提升性能的黑科技"))
+    五层系统架构
+    设计哲学 单线程执行 多线程 IO
+    网络与 IO 层优化
+    CPU 与命令执行优化
+    从 Redis fork 到独立生态
+    性能优化的工程哲学
+    GLIDE 客户端的战略意义
 ```
 
 ## 摘要

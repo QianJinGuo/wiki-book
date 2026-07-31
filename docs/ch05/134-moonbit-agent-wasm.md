@@ -14,11 +14,11 @@
 
 ```mermaid
 mindmap
-  root(("MoonBit：面向 Agent 协作的编程语言（语言即…"))
-    核心架构：语言即工具链
+  root(("MoonBit 面向 Agent 协作的编程语言 语言即工具链"))
+    核心架构 语言即工具链
       形式化验证
-    AI 原生部署：Wasm 沙箱
-    AI 友好性：低资源语言优势
+    AI 原生部署 Wasm 沙箱
+    AI 友好性 低资源语言优势
     启示
 ```
 

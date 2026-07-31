@@ -13,14 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("AutoResearch 异步多 Agent AI 寒武…"))
-    深度分析
-      核心观点
-      AutoResearch 当前状态
-      下一阶段：异步大规模 Agent 协作
-      内容结构
-    实践启示
-    相关实体
+  root(("AutoResearch 异步多 Agent AI 寒武纪新阶段"))
+    AutoResearch 当前状态
+    下一阶段 异步大规模 Agent 协作
 ```
 
 ## 深度分析

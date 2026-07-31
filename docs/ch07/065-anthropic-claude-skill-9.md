@@ -13,17 +13,14 @@ Datawhale 编译自 Anthropic 官方博客。Anthropic 内部把 Claude Code Ski
 
 ```mermaid
 mindmap
-  root(("Anthropic Claude Skill 9 类任务…"))
-    核心洞察
-      9 类 Skill 任务分类
-      关键最佳实践
+  root(("Anthropic Claude Skill 9 类任务分类法"))
+    类 Skill 任务分类
+    关键最佳实践
     与现有知识库的关联
-    深度分析
-      9 类分类的底层逻辑：从「能力注入」到「工作流…
-      「验证」优先的策略合理性
-      Gotchas 经济的信号价值
-      vs Google 5 设计模式：互补而非替代
-    实践启示
+    类分类的底层逻辑 从「能力注入」到「工作流封装」
+    「验证」优先的策略合理性
+    Gotchas 经济的信号价值
+    vs Google 5 设计模式 互补而非替代
     原始存档
 ```
 

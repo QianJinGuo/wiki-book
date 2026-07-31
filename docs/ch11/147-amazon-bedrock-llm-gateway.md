@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock + LLM Gateway…"))
-    深度分析
-      弹性模式的渐进式演进路径
-      LLM Gateway 的核心价值与选型考量
-      弹性设计的维度权衡
-    实践启示
-    相关实体
+  root(("Amazon Bedrock LLM Gateway"))
+    弹性模式的渐进式演进路径
+    LLM Gateway 的核心价值与选型考量
+    弹性设计的维度权衡
 ```
 
 ## 摘要

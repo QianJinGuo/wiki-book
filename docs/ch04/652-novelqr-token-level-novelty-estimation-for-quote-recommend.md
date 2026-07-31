@@ -15,13 +15,11 @@ NOVELQR（Novelty-aware Quote Recommendation）是一个两阶段引据推荐框
 
 ```mermaid
 mindmap
-  root(("NOVELQR — Token-Level Novelt…"))
-    核心发现
+  root(("NOVELQR Token-Level Novelty"))
     两阶段框架
-      阶段一：离线构建 — 生成式标签智能体（Lab…
-      阶段二：在线推理
-    核心技术：Token级新颖性估计
-    实验结果
+      阶段一 离线构建 生成式标签智能体 Label Agent
+      阶段二 在线推理
+    核心技术 Token级新颖性估计
     意义
 ```
 

@@ -18,23 +18,18 @@ Anthropic 官方最近那篇关于 MCP 的文章《  Building agents that reach 
 
 ```mermaid
 mindmap
-  root(("Anthropic 官方生产级 Agent 最佳实践：1…"))
-    深度分析
-      模式的本质分类
-      跨模式的内在联系
-      12 个模式与 Agent 工程成熟度的关系
-    实践启示
-      从这 12 个模式里可以提炼出的工程原则
-      实际落地的建议路径
-      需要警惕的反模式
-      一个值得思考的问题
-    工具交互面（Tool surface）
-      1\. 远程优先服务器模式（Remote-Fi…
-      2\. 按意图组织工具模式（Intent-Gr…
-      3\. 薄交互面模式（Thin Surface…
-    Related entities
-    交互语义（Interaction Semant…
-    相关实体
+  root(("Anthropic 官方生产级 Agent 最佳实践 12"))
+    模式的本质分类
+    跨模式的内在联系
+    个模式与 Agent 工程成熟度的关系
+    从这 12 个模式里可以提炼出的工程原则
+    实际落地的建议路径
+    需要警惕的反模式
+    一个值得思考的问题
+    工具交互面 Tool surface
+      远程优先服务器模式 Remote-First Server
+      按意图组织工具模式 Intent-Grouped Tools
+      薄交互面模式 Thin Surface Pattern
 ```
 
 ## 深度分析

@@ -12,25 +12,24 @@
 ```mermaid
 mindmap
   root(("生产级 Harness 的 12 大组件以及主流框架对比"))
-    1. 为什么问题通常不在模型
-    2. 什么是 Agent Harness
-      2.1 不只是 prompt 外壳，更是一整套…
-      2.2 Agent 是行为，Harness 是…
-      2.3 把它理解成操作系统
-    3. 生产级 Harness 的 12 个组件
-      3.1 编排循环（Orchestration …
-      3.2 工具系统（Tools）
-      3.3 记忆系统（Memory）
-      3.4 上下文管理（Context Manag…
-    4. 一次完整循环
-      4.1 七个步骤
-      4.2 文件系统纳入 Harness
-    5. 主流框架对比
-    6. 脚手架隐喻
-      6.1 好的 Harness 应该随模型增强而变薄
-      6.2 模型和 Harness 已经开始共同进化
-    7. 每个 Harness 架构师的 7 个选择
-    8. 作者的结论
+    为什么问题通常不在模型
+    什么是 Agent Harness
+      不只是 prompt 外壳 更是一整套运行时
+      Agent 是行为 Harness 是产出这种行为的机械结构
+      把它理解成操作系统
+    生产级 Harness 的 12 个组件
+      编排循环 Orchestration Loop
+      工具系统 Tools
+      记忆系统 Memory
+    一次完整循环
+      七个步骤
+      文件系统纳入 Harness
+    主流框架对比
+    脚手架隐喻
+      好的 Harness 应该随模型增强而变薄
+      模型和 Harness 已经开始共同进化
+    每个 Harness 架构师的 7 个选择
+    作者的结论
 ```
 
 ## 1. 为什么问题通常不在模型

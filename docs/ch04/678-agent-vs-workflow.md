@@ -15,8 +15,8 @@
 
 ```mermaid
 mindmap
-  root(("Agent vs Workflow：控制权连续谱与生产级…"))
-    自主性连续谱（Level 0-5）
+  root(("Agent vs Workflow 控制权连续谱与生产级选型框架"))
+    自主性连续谱 Level 0-5
     核心对比
     选型九问
     三种混合架构

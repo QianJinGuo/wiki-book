@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Cline releases open-source a…"))
-    深度分析
-      SDK 架构的分层设计
-      Agent Runtime 的可移植性意义
-      Benchmark 表现与模型关联
-      Native Plugin 体系与生态扩展
-    实践启示
-      选型评估要点
-      Plugin 设计的正确姿势
-      许可证注意事项
-    相关实体
+  root(("Cline releases open-source agent"))
+    SDK 架构的分层设计
+    Agent Runtime 的可移植性意义
+    Benchmark 表现与模型关联
+    Native Plugin 体系与生态扩展
+    选型评估要点
+    Plugin 设计的正确姿势
+    许可证注意事项
 ```
 
 ## 核心要点

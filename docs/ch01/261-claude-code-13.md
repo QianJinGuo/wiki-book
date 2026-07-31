@@ -14,21 +14,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 源码深度解析（13 核心机制）"))
-    13 个核心模块
-    关键设计决策
+  root(("Claude Code 源码深度解析 13 核心机制"))
+    个核心模块
     与现有知识关联
-    深度分析
-      System Prompt 动态组装的工程价值
-      工具并发调度的隐性约束
-      deferred_tools_delta：Pr…
-      microCompact 的注意力屏蔽原理
-    实践启示
-      1. 设计工具时声明并发安全性
-      2. 用 delay loading 降低首次…
-      3. 用 Hooks 构建安全护栏
-      4. 用 CLAUDE.md 建立项目级工程契约
-    相关实体
+    System Prompt 动态组装的工程价值
+    工具并发调度的隐性约束
+    deferredtoolsdelta Prefix Cache
+    microCompact 的注意力屏蔽原理
+    设计工具时声明并发安全性
+    用 delay loading 降低首次响应延迟
 ```
 
 ## 13 个核心模块

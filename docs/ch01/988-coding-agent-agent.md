@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让 Coding Agent 从黑盒到透明：阿里云 Ag…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践 涉及agent领域的核心技术议题。

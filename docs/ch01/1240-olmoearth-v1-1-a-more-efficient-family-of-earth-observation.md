@@ -9,19 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("OlmoEarth v1.1: A more effic…"))
-    概述
-    核心创新：Token 序列长度优化
+  root(("OlmoEarth v11 A more efficient"))
+    核心创新 Token 序列长度优化
     Sentinel-2 数据的 Token 设计
-      传统方案：分辨率分块（Resolution-b…
-      新方案：合并分辨率 Token
+      传统方案 分辨率分块 Resolution-based Patches
+      新方案 合并分辨率 Token
       性能挑战与解决方案
     效率提升效果
     模型规格
     学术价值
     技术背景
-      核心问题
     资源链接
+    三倍效率提升的核心 Token 合并的工程代价
 ```
 
 ## 概述

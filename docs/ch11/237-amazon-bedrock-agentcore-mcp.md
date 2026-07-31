@@ -13,12 +13,11 @@ AWS China Blog 2026-07-29 发布的深度技术文章，系统地介绍了使用
 
 ```mermaid
 mindmap
-  root(("使用 Amazon Bedrock AgentCore …"))
+  root(("使用 Amazon Bedrock AgentCore 构建企业级"))
     四种架构模式
-      Method 1：直接 Lambda 调用（演…
-      Method 2：用户认证 + AgentCo…
-      Method 3：OAuth2 + Agent…
-      Method 4：API Key + API …
+      Method 1 直接 Lambda 调用 演示和测试专用
+      Method 2 用户认证 AgentCore Gateway
+      Method 3 OAuth2 AgentCore Gateway
     核心架构设计
       AgentCore Gateway 模式
       多身份验证路径

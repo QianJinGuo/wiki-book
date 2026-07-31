@@ -9,16 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("Funnel Builder 漏洞正被利用于 WooCo…"))
+  root(("Funnel Builder 漏洞正被利用于"))
     事件概述
-    技术细节
-      攻击向量
-      攻击手法
+    攻击向量
+    攻击手法
     处置建议
-    相关实体
     时间线
-    深度分析
-    实践启示
 ```
 
 ## 事件概述

@@ -12,22 +12,17 @@
 ```mermaid
 mindmap
   root(("The Google Capital Company"))
-    概述
     正文要点
-      Berkshire Hathaway and …
-      Google Cloud's Runway
-      Berkshire Hathaway and …
-    深度分析
-      1. Google Aggregator 模式…
-      2. 'See's→BNSF'范式重现：Goo…
-      3. $80B 股权融资：风险共担而非财务需求
-      4. 从'经济的一部分'到'整个经济'：规模天…
-    实践启示
-      1. 识别现金牛业务的再投资天花板
-      2. 高不确定性项目优先引入战略投资者共担风险
-      3. 从'经济的一部分'向'整个经济'延伸的战…
-      4. 警惕 Aggregator 的隐形脆弱性…
-    相关实体
+      Berkshire Hathaway and Productive
+      Google Clouds Runway
+      Berkshire Hathaway and Google Equity
+    Google Aggregator 模式 绝对价值优先于相对价值
+    SeesBNSF范式重现 Google Services 养
+    80B 股权融资 风险共担而非财务需求
+    从经济的一部分到整个经济 规模天花板的根本差异
+    识别现金牛业务的再投资天花板
+    高不确定性项目优先引入战略投资者共担风险
+    从经济的一部分向整个经济延伸的战略路径
 ```
 
 ## 概述

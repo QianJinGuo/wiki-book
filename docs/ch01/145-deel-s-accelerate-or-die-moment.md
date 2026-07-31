@@ -9,14 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Deel's "Accelerate or Die" M…"))
-    深度分析
-      增长背后的战略逻辑
-      AI 时代的防御性构建
-      'Ghostbuster'角色：效率优化的组织创新
-      资本配置的speed muscle
-    实践启示
-    相关实体
+  root(("Deels Accelerate or Die Moment"))
+    增长背后的战略逻辑
+    AI 时代的防御性构建
+    Ghostbuster角色 效率优化的组织创新
+    资本配置的speed muscle
 ```
 
 ## 核心要点

@@ -13,18 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("JetBrains Marketplace Ecosys…"))
+  root(("JetBrains Marketplace Ecosystem"))
     Attack Chain
       Vector
       Exfiltration Mechanism
       Response
-    AI Agent Security Impli…
-      Developer Tool Supply C…
-      API Key Management Best…
-      Marketplace Security Me…
-    Related Supply Chain In…
-    深度分析
-    实践启示
+    AI Agent Security Implications
+      Developer Tool Supply Chain Risk
+      API Key Management Best Practices
+      Marketplace Security Mechanisms
+    Related Supply Chain Incidents
 ```
 
 ## Attack Chain

@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Agent Executor, Google's dis…"))
-    相关实体
-    深度分析
-      1. 问题定位：长时运行 Agent 的运维困境
-      2. 核心架构设计
-      3. 与现有生态的兼容性策略
-      4. Agent Substrate：Kube…
-    实践启示
-      对开发者的建议
-      对架构师的建议
-      技术选型检查清单
-      下一步行动
+  root(("Agent Executor Googles"))
+    问题定位 长时运行 Agent 的运维困境
+    核心架构设计
+    与现有生态的兼容性策略
+    Agent Substrate Kubernetes 的
+    对开发者的建议
+    对架构师的建议
+    技术选型检查清单
+    下一步行动
 ```
 
 ## 核心要点

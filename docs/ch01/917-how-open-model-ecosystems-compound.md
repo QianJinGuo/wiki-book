@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-open-model-ecosystems-compound.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How Open Model Ecosystems Co…"))
-    关键要点
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘要
 Title: How open model ecosystems compound
 URL Source: https://www.interconnects.ai/p/how-open-model-ecosystems-compound

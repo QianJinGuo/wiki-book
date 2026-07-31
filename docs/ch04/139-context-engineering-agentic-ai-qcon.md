@@ -15,21 +15,21 @@
 
 ```mermaid
 mindmap
-  root(("一点天下：Context Engineering 与 A…"))
+  root(("一点天下 Context Engineering 与"))
     背景命题
-    一、底层支撑：多云共生的确定性架构
-    二、V1 → V2 技术演进
-      V1 问题（低代码线性 Workflow）
-      V2 方案：Agent Loop + Cont…
-    三、六层上下文体系（L1–L6）
-    四、主动注入：Hook 化的主动推送
+    一 底层支撑 多云共生的确定性架构
+    二 V1 V2 技术演进
+      V1 问题 低代码线性 Workflow
+      V2 方案 Agent Loop Context Engineering
+    三 六层上下文体系 L1L6
+    四 主动注入 Hook 化的主动推送
       三类检索钩子
-    五、Token 预算治理
+    五 Token 预算治理
       问题
-      三级内容分层（L0/L1/L2）
+      三级内容分层 L0L1L2
       动态注入策略
-    六、渐进式工具加载（Deferred Tool…
-    七、压缩续接（PreCompact Hook）
+    六 渐进式工具加载 Deferred Tool Registry
+    七 压缩续接 PreCompact Hook
 ```
 
 ## 背景命题

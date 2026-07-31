@@ -16,13 +16,12 @@ Netflix 开源的 **oci-agent** 是一个面向观察性因果推断（Observati
 
 ```mermaid
 mindmap
-  root(("Netflix OCI-Agent: 人机协同因果推断 …"))
-    核心架构：三角色 + Actor-Critic…
-    四项设计诊断（Design Diagnosti…
-    案例：新娱乐类型对留存的影响
+  root(("Netflix OCI-Agent 人机协同因果推断"))
+    核心架构 三角色 Actor-Critic Loop
+    四项设计诊断 Design Diagnostics
+    案例 新娱乐类型对留存的影响
     关键设计原则
     技术栈
-    与现有实体的差异化
 ```
 
 ## 核心架构：三角色 + Actor-Critic Loop

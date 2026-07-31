@@ -11,16 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("LLM-as-a-Verifier: A General…"))
-    深度分析
-      验证精度 vs 评判精度的本质差异
-      评分粒度扩展的数学原理
-      竞赛式轨迹选择的工程价值
-    实践启示
-      对 AI 研究者
-      对 Agent 开发者
-      对工程团队
-    相关实体
+  root(("LLM-as-a-Verifier A"))
+    验证精度 vs 评判精度的本质差异
+    评分粒度扩展的数学原理
+    竞赛式轨迹选择的工程价值
+    对 AI 研究者
+    对 Agent 开发者
+    对工程团队
 ```
 
 ## 核心要点

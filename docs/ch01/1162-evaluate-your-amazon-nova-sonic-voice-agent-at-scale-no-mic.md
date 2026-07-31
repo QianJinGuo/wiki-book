@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-micr.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Evaluate your Amazon Nova So…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required 涉及agent领域的核心技术议题。

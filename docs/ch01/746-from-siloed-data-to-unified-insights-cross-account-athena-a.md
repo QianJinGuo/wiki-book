@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From siloed data to unified …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - AWS China ML 发布的技术文章
 - 涉及领域：aws, machine-learning, ai-agents, bedrock

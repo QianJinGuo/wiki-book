@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek Code Harness：对标 Cla…"))
-    深度分析
-      DeepSeek 的战略逻辑
-      从 Harness Engineering…
-      与 Claude Code 内部机制..…
-      飞轮效应的竞争壁垒
-    实践启示
-    相关实体
+  root(("DeepSeek Code Harness 对标 Claude"))
+    DeepSeek 公开招兵买马
+    Anthropic 的垄断与封锁
+    Harness 为什么成了必争之地
+    模型与 Harness 共同演化
+    DeepSeek 的战略逻辑
+    从 Harness Engineering 视角看
+    与 Claude Code 内部机制 的对比
+    飞轮效应的竞争壁垒
 ```
 
 ## 摘要

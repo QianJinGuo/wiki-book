@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Claw-SWE-Bench：首个独立测量Harness…"))
+  root(("Claw-SWE-Bench"))
     核心贡献
     适配器设计
     横扫实验关键发现
-      固定 harness（OpenClaw），换模型
-      固定模型，换 harness
+      固定 harness OpenClaw 换模型
+      固定模型 换 harness
     答案泄露修复
     资源链接
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心贡献

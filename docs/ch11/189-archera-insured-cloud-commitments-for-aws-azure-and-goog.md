@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Archera • Insured cloud comm…"))
+  root(("Archera Insured cloud commitments"))
     产品机制
     商业模式分析
     市场定位
-    深度分析
-      保险机制的商业逻辑
-      客户价值分析
-      风险因素
-    实践启示
-      何时考虑 Archera 类型的产品
-      评估替代方案
-      实施建议
-    相关实体
+    保险机制的商业逻辑
+    客户价值分析
+    风险因素
+    何时考虑 Archera 类型的产品
+    评估替代方案
 ```
 
 ## 核心要点

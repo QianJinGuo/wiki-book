@@ -27,17 +27,14 @@ user agent和assistant交互过程中，critic model作为第三者，用来选�
 ```mermaid
 mindmap
   root(("Agent框架OWL原理详解"))
-    User Agent和Assistant Ag…
-    深度分析
-      核心架构设计思想
-      记忆管理机制的层次设计
-      工具生态的'嵌套Agent'模式
-      Critic机制的两种形态
-    实践启示
-      何时选择OWL架构
-      避坑指南
-      二次开发建议
-    相关实体
+    User Agent和Assistant Agent之间的交互
+    核心架构设计思想
+    记忆管理机制的层次设计
+    工具生态的嵌套Agent模式
+    Critic机制的两种形态
+    何时选择OWL架构
+    避坑指南
+    二次开发建议
 ```
 
 ## User Agent和Assistant Agent之间的交互

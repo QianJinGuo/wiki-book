@@ -9,12 +9,9 @@
 
 ```mermaid
 mindmap
-  root(("CHERIoT-Ibex: Closing the do…"))
-    深度分析
-    实践启示
+  root(("CHERIoT-Ibex Closing the door on"))
     Azure Infrastructure Blog
     Blog Post
-    相关实体
 ```
 
 ## 深度分析

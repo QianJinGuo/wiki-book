@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("知识库问答 @文档：从 DOM 方案到 ProseMir…"))
-    深度分析
-      核心观点
-    一句话定位
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 知识库问答 @文档：从 DOM 方案到 ProseMirror 落地 涉及agent领域的核心技术议题。

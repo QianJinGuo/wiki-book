@@ -39,20 +39,20 @@
 
 ```mermaid
 mindmap
-  root(("AWS 正式发布 Lambda MicroVMs：面向 …"))
-    **一句话理解**
-    **一、痛点：不可能三角**
-    **二、三大核心能力**
-      2.1 虚拟机级隔离
-      2.2 近乎瞬时的启动与恢复
-      2.3 有状态执行
-    **三、架构原理**
-      3.1 底层：Firecracker 快照 +…
-      3.2 租户隔离：由你定义粒度
-    **四、典型使用场景**
-    **五、与同类服务的关系**
-      5.1 Lambda MicroVMs vs …
-      5.2 Lambda MicroVMs vs …
+  root(("AWS 正式发布 Lambda MicroVMs 面向 AI"))
+    一句话理解
+    一 痛点 不可能三角
+    二 三大核心能力
+      虚拟机级隔离
+      近乎瞬时的启动与恢复
+      有状态执行
+    三 架构原理
+      底层 Firecracker 快照 专属 URL
+      租户隔离 由你定义粒度
+    四 典型使用场景
+    五 与同类服务的关系
+      Lambda MicroVMs vs Lambda
+      Lambda MicroVMs vs Bedrock
 ```
 
 ## **一句话理解**

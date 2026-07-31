@@ -16,18 +16,15 @@
 
 ```mermaid
 mindmap
-  root(("Three Years from GPT-3 to Ge…"))
-    深度分析
-      1. '能编码 = 通用工具'的核心论断
-      2. Antigravity Inbox：从 …
-      3. '管理数字同事'的人机协作模式
-      4. PhD 级智能的真实测试
-    实践启示
-      1. 重新理解 Agent 编程工具的能力边界
-      2. 采用 Inbox 范式设计 Agent …
-      3. 训练'指导者'而非'提示者'的能力
-      4. 评估 AI 智能时关注'类人错误'而非'…
-    相关实体
+  root(("Three Years from GPT-3 to Gemini 3"))
+    能编码 通用工具的核心论断
+    Antigravity Inbox 从 Chatbox 到
+    管理数字同事的人机协作模式
+    PhD 级智能的真实测试
+    重新理解 Agent 编程工具的能力边界
+    采用 Inbox 范式设计 Agent 交互界面
+    训练指导者而非提示者的能力
+    评估 AI 智能时关注类人错误而非AI 错误
 ```
 
 ## 摘要

@@ -15,19 +15,17 @@
 
 ```mermaid
 mindmap
-  root(("腾讯混元 HiLS-Attention：可学习层级稀疏注…"))
+  root(("腾讯混元 HiLS-Attention"))
     核心创新
       可学习 chunk 质量代理
       层级 softmax 分解
     训练策略
     关键实验数据
     价值评估
-    深度分析
-      HiLS 解决的核心理论缺口
-      可学习 chunk 表示 vs 均值池化的本质差异
-      8K→4M 外推能力的工程意义
-      轻量改造成本的战略价值
-    实践启示
+    HiLS 解决的核心理论缺口
+    可学习 chunk 表示 vs 均值池化的本质差异
+    K4M 外推能力的工程意义
+    轻量改造成本的战略价值
 ```
 
 ## 核心创新

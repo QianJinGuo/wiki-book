@@ -18,13 +18,10 @@
 ```mermaid
 mindmap
   root(("开启Harness Engineering探索之旅"))
-    深度分析
-      1. '出码率与提效之间的裂缝'——Harne…
-      2. SpecWorker六阶段管线的工程哲学
-      3. 可监测性的三个维度——信任AI的工程前提
-      4. 知识库作为AI长期记忆的运作机制
-    实践启示
-    相关实体
+    出码率与提效之间的裂缝Harness Engineering的起源问题
+    SpecWorker六阶段管线的工程哲学
+    可监测性的三个维度信任AI的工程前提
+    知识库作为AI长期记忆的运作机制
 ```
 
 ## 摘要

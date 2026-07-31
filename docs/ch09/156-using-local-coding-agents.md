@@ -9,14 +9,6 @@
 > Source: [Using Local Coding Agents](https://magazine.sebastianraschka.com/p/using-local-coding-agents) | Score: v*c=81
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Using Local Coding Agents"))
-    Overview
-```
-
 ## Overview
 
 Published Time: 2026-06-27T11:21:58+00:00

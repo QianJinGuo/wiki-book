@@ -9,21 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("Snowflake Agentic Enterprise…"))
-    概述
+  root(("Snowflake Agentic Enterprise"))
     核心叙事转换
-    CoCo + CoWork 双引擎闭环
-      CoCo（Cortex Code → 改名）
-      CoWork（Snowflake Intell…
-    Cortex Sense — 24% → 83…
+    CoCo CoWork 双引擎闭环
+      CoCo Cortex Code 改名
+      CoWork Snowflake Intelligence 改名
+    Cortex Sense 24 83 开箱准确率
     标杆案例
-      Samsung SIA（shopper's i…
+      Samsung SIA shoppers insight
       Thomson Reuters CoCounsel
-    AI 时代没有'慢数据' — Datastream
-    Agentic Search — 不是 Top…
-    治理升维：从'管数据'到'管行为'
+    AI 时代没有慢数据 Datastream
+    Agentic Search 不是 Top-K 是精确提取
+    治理升维 从管数据到管行为
       五大治理能力
-      Snowflake 对 Agent 治理边界的…
+      Snowflake 对 Agent 治理边界的重新定义
+    语义上下文 Horizon Context
 ```
 
 ## 概述

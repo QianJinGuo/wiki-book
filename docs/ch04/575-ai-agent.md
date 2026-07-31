@@ -8,16 +8,6 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-canvas-agent-era-content-creation.md)（叶小钗）
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI 内容创作，开始进入"画布 Agent"时代"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - AI 内容创作正从单点工具向"画布 Agent"平台演进
 - 画布原生 AI Agent 将模型、工作流与可视化画布整合，降低创作门槛

@@ -17,14 +17,11 @@
 
 ```mermaid
 mindmap
-  root(("Exploring Self-Distilled Rea…"))
-    深度分析
-      SDR 的理论基础：自蒸馏作为正则化机制
-      SDR 与模型合并的对比
-      推理数据覆盖率的'悬崖效应'
-      推理启用 vs 禁用的不对称影响
-    实践启示
-    相关实体
+  root(("Exploring Self-Distilled"))
+    SDR 的理论基础 自蒸馏作为正则化机制
+    SDR 与模型合并的对比
+    推理数据覆盖率的悬崖效应
+    推理启用 vs 禁用的不对称影响
 ```
 
 ## 摘要

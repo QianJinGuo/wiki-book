@@ -11,16 +11,6 @@ Anthropic 最新发布了 Computer Use 开发者最佳实践，核心建议是�
 对点击准确率影响最大的优化，就是在发送给 API 之前先把截图降采样。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 发布 Computer Use 最佳实践"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Anthropic 发布的这份最佳实践揭示了 Computer Use 技术落地的几个关键工程挑战。

@@ -11,18 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("墙比模型更重要：Stripe Minions + 字节 …"))
-    Overview
+  root(("墙比模型更重要 Stripe Minions 字节"))
     三家公司对照
-    Stripe Minions：4 个核心机制
-    字节 DeerFlow 2.0：从'半途而废'…
-      3 个真实失败模式
-      3 个工程化解法
-    蚂蚁支小助：金融场景的 4 AI 分工
-      4 个角色
+    Stripe Minions 4 个核心机制
+    字节 DeerFlow 20 从半途而废到 Super Agent
+      个真实失败模式
+      个工程化解法
+    蚂蚁支小助 金融场景的 4 AI 分工
+      个角色
     为什么更强的模型解决不了
     三阶段 AI 工程进化史
-    与已有 Harness Engineering…
+    与已有 Harness Engineering 实体的关系
+    三家案例揭示的墙本质上是风险管理
 ```
 
 ## Overview

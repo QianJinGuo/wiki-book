@@ -13,19 +13,19 @@
 
 ```mermaid
 mindmap
-  root(("Olmo Hybrid and the Hybrid A…"))
+  root(("Olmo Hybrid and the Hybrid"))
     Hybrid 架构浪潮的 2026 春季清单
-    历史脉络：从 Mamba 到 Hybrid
+    历史脉络 从 Mamba 到 Hybrid
     Olmo Hybrid 模型规格
-    关键理论：Hybrid  Transformer
+    关键理论 Hybrid Transformer
       缩放实验的明确排序
       预训练效率具体数字
     Post-training 的挑战
-      1. Benchmark 性能
-      2. 开源工具支持的现实
+      Benchmark 性能
+      开源工具支持的现实
       关键 inference flags
-    与现有 Generalization Dyn…
-    与 Notes From Inside Ch…
+    与现有 Generalization Dynamics Lm
+    与 Notes From Inside Chinas Ai
     三个独到洞察
 ```
 

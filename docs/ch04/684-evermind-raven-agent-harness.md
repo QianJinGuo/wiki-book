@@ -15,7 +15,7 @@
 
 ```mermaid
 mindmap
-  root(("EverMind Raven：自进化 Agent Har…"))
+  root(("EverMind Raven 自进化 Agent Harness"))
     数字生命四阶段框架
     EverOS 记忆系统
       学术成果

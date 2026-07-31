@@ -7,16 +7,6 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-copilot-studio-agent-governance.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("New and improved Agent gover…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - **核心挑战**：组织在扩展 AI Agent 规模时面临核心张力——如何在扩大自动化的同时不失去控制权
 - **关键更新**：April 2026 Copilot Studio 更新聚焦于为管理员提供更好的可见性和治理能力，以及扩展 intelligent workflow 功能

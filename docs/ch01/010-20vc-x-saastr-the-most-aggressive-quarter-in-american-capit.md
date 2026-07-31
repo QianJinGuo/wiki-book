@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("20VC x SaaStr: The Most Aggr…"))
-    深度分析
-      超大规模资本支出的结构性逻辑
-      隐藏在增长背后的结构性风险
-      Palantir 的护城河：唯一能交付企业级 …
-      AI 采购的 COVID 式压缩
-    实践启示
-      对投资人
-      对 operator / 高管
-      对创始人和 CEO
-      对分析师和策略师
-    相关实体
+  root(("VC x SaaStr The Most Aggressive"))
+    超大规模资本支出的结构性逻辑
+    隐藏在增长背后的结构性风险
+    Palantir 的护城河 唯一能交付企业级 AI 转型的公司
+    AI 采购的 COVID 式压缩
+    对投资人
+    对 operator 高管
+    对创始人和 CEO
+    对分析师和策略师
 ```
 
 ## 核心要点

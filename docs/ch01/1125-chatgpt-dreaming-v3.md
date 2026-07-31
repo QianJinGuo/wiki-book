@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-dreaming-v3-long-term-memory-openai.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ChatGPT 的'失忆症'终于被治好了！Dreamin…"))
-    深度分析
-      核心观点
-      1.
-      内容结构
-      技术要点
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ChatGPT 的'失忆症'终于被治好了！Dreaming V3 让大模型拥有长期记忆 涉及agent领域的核心技术议题。

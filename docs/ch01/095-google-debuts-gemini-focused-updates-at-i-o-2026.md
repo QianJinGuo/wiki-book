@@ -9,21 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Google Debuts Gemini-Focused…"))
-    概述
+  root(("Google Debuts Gemini-Focused"))
     主要发布内容
       Gemini 模型更新
-      Android 17 与 Gemini Int…
-      新平台：Aluminium OS 和 Andr…
-    深度分析
-      技术层面：平台厂商嵌入基础模型的权衡
-      开发者层面：API 稳定性与工具链变革
-      行业层面：Google I/O 的信号价值
-    实践启示
-      针对 ML 工程师与基础设施团队
-      针对开发者与工具链团队
-      关注重点
-    相关实体
+      Android 17 与 Gemini Intelligence
+      新平台 Aluminium OS 和 Android XR
+    技术层面 平台厂商嵌入基础模型的权衡
+    开发者层面 API 稳定性与工具链变革
+    行业层面 Google IO 的信号价值
+    针对 ML 工程师与基础设施团队
+    针对开发者与工具链团队
+    关注重点
 ```
 
 ## 概述

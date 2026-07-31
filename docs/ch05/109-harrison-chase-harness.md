@@ -11,7 +11,7 @@
 
 ```mermaid
 mindmap
-  root(("黄仁勋 × Harrison Chase 对话：未来公司…"))
+  root(("黄仁勋 Harrison Chase 对话 未来公司将建立在"))
     Harness 作为企业新基石
     开源权重模型 vs 前沿模型策略
     企业智能必须内建

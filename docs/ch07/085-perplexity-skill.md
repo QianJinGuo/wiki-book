@@ -9,19 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Perplexity 首次公开了内部 Skill 设计指南"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 Perplexity 首次公开了内部 Skill 设计指南 涉及agent领域的核心技术议题。

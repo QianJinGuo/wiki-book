@@ -14,22 +14,22 @@
 
 ```mermaid
 mindmap
-  root(("Model-Harness Fit：Agent 脚手架适…"))
-    核心论点：Model-Harness-Fit
+  root(("Model-Harness Fit Agent 脚手架适配模型"))
+    核心论点 Model-Harness-Fit
     让人不舒服的榜单
     为什么模型不是单独存在的
-    三种壳，三种完全不同的协议
-      Codex：typed asynchronou…
-      Claude Code：direct type…
-      GitHub Copilot CLI：supe…
-    工具表：模型的方言
+    三种壳 三种完全不同的协议
+      Codex typed asynchronous protocol
+      Claude Code direct typed
+      GitHub Copilot CLI supervisor
+    工具表 模型的方言
       Codex的工具差异化
       Claude Code的工具
       Copilot CLI的工具
-    Skill：md文件格式一样，底下契约根本不一样
-    记忆层：最密集的碰撞面
-      oai-mem-citation：六个字符…
-    Copilot CLI的诚实做法：真正的路由
+    Skill md文件格式一样 底下契约根本不一样
+    记忆层 最密集的碰撞面
+      oai-mem-citation 六个字符决定记忆生死
+    Copilot CLI的诚实做法 真正的路由
 ```
 
 ## 核心论点：Model-Harness-Fit

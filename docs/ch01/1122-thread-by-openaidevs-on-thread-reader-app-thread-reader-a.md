@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.6KB | `entities/thread-openai-devs.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thread by @OpenAIDevs on Thr…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 @OpenAIDevs 的这条推文串揭示了 OpenAI 将 Codex 从单纯的代码补全工具演进为**可编程自动化平台**的核心策略。Hooks 机制的本质是在 Codex 的执行循环中插入用户可控的脚本钩子——在任务的关键节点（ToolUse 前后、UserPromptSubmit 等）触发自定义逻辑，这与 Claude Code 的 Hooks 设计哲学高度一致，说明行业已形成共识：可扩展性是 Agent 平台的核心竞争力，而非模型能力本身 。

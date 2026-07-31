@@ -11,12 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Dynamic Subagents: 代码驱动的 Sub…"))
-    深度分析
-      从「模型推理编排」到「代码编排」的范式转变
-      六种模式的工程本质
-    实践启示
-    相关实体
+  root(("Dynamic Subagents 代码驱动的 Subagent 编排"))
+    从「模型推理编排」到「代码编排」的范式转变
+    六种模式的工程本质
 ```
 
 ## 摘要

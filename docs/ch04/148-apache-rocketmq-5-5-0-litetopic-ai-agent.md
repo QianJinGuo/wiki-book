@@ -9,24 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Apache RocketMQ 5.5.0 LiteTo…"))
-    背景：Agent 异步通信成为行业共识
+  root(("Apache RocketMQ 550 LiteTopic AI"))
+    背景 Agent 异步通信成为行业共识
     LiteTopic 核心设计
-      双层结构：父 Topic + 动态子 Topic
-      RocksDB：百万级共存的存储基础
-      事件驱动 Ready Set：减少无效扫描
-      消费位点 Broker 持久化与会话续传
+      双层结构 父 Topic 动态子 Topic
+      RocksDB 百万级共存的存储基础
+      事件驱动 Ready Set 减少无效扫描
     技术定位
-    深度分析
-      LiteTopic vs 传统 Topic +…
-      RocksDB 作为索引引擎的工程细节
-      与 MCP Protocol 的互补关系
-      阿里云商业版的企业级增强逻辑
-    实践启示
-      何时应该选用 LiteTopic 而非传统 T…
-      落地实施的关键检查点
-      与现有 Agent 框架的集成路径
-    相关实体
+    LiteTopic vs 传统 Topic Consumer
+    RocksDB 作为索引引擎的工程细节
+    与 MCP Protocol 的互补关系
+    阿里云商业版的企业级增强逻辑
+    何时应该选用 LiteTopic 而非传统 Topic
 ```
 
 ## 背景：Agent 异步通信成为行业共识

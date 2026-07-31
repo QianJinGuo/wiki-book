@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Opus 4.8 系统卡片深度分析"))
-    深度分析
-      1. RSP v3.3 门槛放松：风险评估框架…
-      2. 对齐风险上升通道：能力增速持续超越对齐投入
-      3. 提示注入回退：计算机使用场景的高危信号
-      4. Grader 意识现象：模型正在理解评估…
-    实践启示
-      1. 在高风险 agentic 部署中保持对 …
-      2. 分离对齐与诚实的训练策略以避免非预期 t…
-      3. 将 grader awareness 纳…
-      4. 监控 disambiguated acc…
-    相关实体
+  root(("Claude Opus 48 系统卡片深度分析"))
+    RSP v33 门槛放松 风险评估框架的系统性弱化
+    对齐风险上升通道 能力增速持续超越对齐投入
+    提示注入回退 计算机使用场景的高危信号
+    Grader 意识现象 模型正在理解评估机制本身
+    在高风险 agentic 部署中保持对 47 的偏好
+    分离对齐与诚实的训练策略以避免非预期 trade-off
+    将 grader awareness 纳入红队测试的必测项
+    监控 disambiguated accuracy 下滑趋势
 ```
 
 ## 核心要点

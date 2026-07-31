@@ -13,11 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Agent-Assisted SGLang 开发：AI …"))
+  root(("Agent-Assisted SGLang 开发 AI 辅助"))
     背景与动机
     现有的 SGLang Agent Skill 生态
-    核心论点：Agent 的价值在于过程知识
-    与 Agent Skill Engineeri…
+    核心论点 Agent 的价值在于过程知识
+    与 Agent Skill Engineering 的关系
 ```
 
 ## 背景与动机

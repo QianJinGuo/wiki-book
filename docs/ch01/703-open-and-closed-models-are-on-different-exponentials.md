@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Open and Closed Models Are o…"))
-    深度分析
-      '不同的指数'意味着什么
-      RSI 论述的反驳
-      对 AI Agent 生态的影响
-    实践启示
-    相关实体
+  root(("Open and Closed Models Are on"))
+    闭源前沿模型的集成化指数
+    开源模型经济的分散化指数
+    两条指数曲线的核心差异
+    不同的指数意味着什么
+    RSI 论述的反驳
+    对 AI Agent 生态的影响
 ```
 
 ## 摘要

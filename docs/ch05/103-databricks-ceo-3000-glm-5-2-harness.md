@@ -13,13 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("Databricks CEO用3000名程序员真实任务测…"))
+  root(("Databricks CEO用3000名程序员真实任务测试GLM"))
     测试方法论
-    核心发现
-      1. GLM 5.2 逼近 Opus 4.8，…
-      2. Token 单价 ≠ 任务成本
-      3. Harness 对效率的决定性影响
-      4. 模型分类呈现能力梯队
+    GLM 52 逼近 Opus 48 开源模型迎来突破
+    Token 单价 任务成本
+    Harness 对效率的决定性影响
+    模型分类呈现能力梯队
     Omnigent 智能路由
 ```
 

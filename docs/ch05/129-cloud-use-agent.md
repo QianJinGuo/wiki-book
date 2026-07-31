@@ -13,15 +13,13 @@ Cloud Use 是阿里技术提出的原创框架，系统性定义了 AI Agent 如
 
 ```mermaid
 mindmap
-  root(("Cloud Use 框架：Agent 作为云上受治理主体…"))
-    核心论点
-    Cloud Use 四层能力模型（依赖链）
+  root(("Cloud Use 框架 Agent 作为云上受治理主体的四层模型"))
+    Cloud Use 四层能力模型 依赖链
     三类任务场景
-    工程实践：咖啡品牌 BI 案例的六道门槛
+    工程实践 咖啡品牌 BI 案例的六道门槛
     失败恢复模式
     成熟度三阶段
     与相关框架的关系
-    关键洞察
 ```
 
 ## 核心论点

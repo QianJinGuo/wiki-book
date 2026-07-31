@@ -9,25 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Microsoft Build 2026 全景：7 款 …"))
-    深度分析
-      核心观点
-    一句话定位
-    1.
-      现场演示：MXC 沙箱成功拦截危险指令
-      配套发布
-    2.
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Microsoft Build 2026 全景：7 款 MAI 模型 + Scout + OpenClaw 登 Windows + NVIDIA 涉及agent领域的核心技术议题。

@@ -10,29 +10,20 @@
 ```mermaid
 mindmap
   root(("CLI-Anything"))
-    Overview
     Key Facts
     Core Components
       CLI-Hub
       SKILL 格式
       Agent Harness
     Agent 兼容性
-      Blender：3D 无人机建模
-      FreeCAD：好奇号月球车
-      Draw.io：完整 HTTPS 握手流程图
-      平台支持一览
-    深度分析
-      设计哲学：软件eating向的范式转换
-      技术架构：三层解耦
-      与 OpenCLI 的差异化定位
-      工具层战争的战略意义
-    实践启示
-      1. 工具封装的标准化的价值
-      2. Skill 市场是 Agent 生态的 …
-      3. 学术实验室的开源战略值得借鉴
-      4. 多 Agent 协作中的工具标准化
-    与 Hermes-Agentch03/0…
-    Related
+      Blender 3D 无人机建模
+      FreeCAD 好奇号月球车
+      Drawio 完整 HTTPS 握手流程图
+    设计哲学 软件eating向的范式转换
+    技术架构 三层解耦
+    与 OpenCLI 的差异化定位
+    工具层战争的战略意义
+    工具封装的标准化的价值
 ```
 
 ## Overview

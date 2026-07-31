@@ -13,17 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic Dynamic Workflows …"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-    第 2 来源 — 动态工作流六种编排模式详解 …
-      核心增量
-      关键差异
+  root(("Anthropic Dynamic Workflows 深度实战"))
+    核心增量
+    关键差异
 ```
 
 ## 深度分析

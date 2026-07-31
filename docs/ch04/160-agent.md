@@ -10,14 +10,11 @@
 ```mermaid
 mindmap
   root(("Agent 上下文窗口管理对比"))
-    Overview
     文件读取策略对比
-    会话压缩（Compaction）策略对比
+    会话压缩 Compaction 策略对比
     子 Agent 隔离策略对比
     关键收敛发现
     与传统内存管理的类比
-    深度分析
-    实践启示
 ```
 
 ## Overview

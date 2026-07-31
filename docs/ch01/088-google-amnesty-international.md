@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Google 与 Amnesty Internation…"))
-    相关实体
-    深度分析
-      背景：商业间谍软件的检测困境
-      技术实现：Android Intrusion …
-      战略意义：改变攻守平衡
-      局限性：并非银弹
-    实践启示
-      对于高风险用户（记者、活动家、人权工作者）
-      对于安全团队和企业
-      对于安全行业和研究者
-      政策层面
+  root(("Google 与 Amnesty International"))
+    背景 商业间谍软件的检测困境
+    技术实现 Android Intrusion Logging
+    战略意义 改变攻守平衡
+    局限性 并非银弹
+    对于高风险用户 记者 活动家 人权工作者
+    对于安全团队和企业
+    对于安全行业和研究者
+    政策层面
 ```
 
 ## 核心要点

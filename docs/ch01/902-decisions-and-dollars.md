@@ -14,14 +14,12 @@
 ```mermaid
 mindmap
   root(("Decisions and Dollars"))
-    核心论点
-    Context - Harness - J…
-    Cursor $60B 收购案的数据护城河逻辑
-    纠正即数据（Corrections as Sc…
+    Context - Harness - Judgment 三层演化
+    Cursor 60B 收购案的数据护城河逻辑
+    纠正即数据 Corrections as Scorecard
     垂直 AI 公司的实践
     实验室购买 Judgment 的趋势
-    与现有实体的差异化
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
 ```
 
 ## 核心论点

@@ -15,16 +15,6 @@ Hermes Agent 的 Skills 闭环系统实现了"经验提取→知识存储→智�
 7. **自改进** — 使用时发现过时时立即 patch
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes新顶流Agent Skills闭环系统深度解析"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Hermes Agent Deep Dive Alibaba](../ch03/096-hermes-agent.html)
 - [Skill System Design Three Way Comparison](ch04/271-skill.html)

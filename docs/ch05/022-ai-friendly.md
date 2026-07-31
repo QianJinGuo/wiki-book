@@ -44,16 +44,16 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("AI Friendly 架构设计：后端系统面向无人值守开…"))
+  root(("AI Friendly 架构设计"))
     三范式框架
-      1. 确定性 → 概率性
-      2. 结构化 → 语义化
-      3. 静态 → 动态
+      确定性 概率性
+      结构化 语义化
+      静态 动态
     架构大图与核心能力层
       基础依赖层
       AI Friendly独有三层
       质量和稳定性
-    实战案例：淘天秒杀业务
+    实战案例 淘天秒杀业务
       AI审核系统
       CogentAI答疑系统
     Context Engineering实践

@@ -32,8 +32,8 @@ But first, let’s start with the obvious wrong answers.
 
 ```mermaid
 mindmap
-  root(("How To Measure Development P…"))
-    Measuring Work or Activ…
+  root(("How To Measure Development"))
+    Measuring Work or Activity
     Measuring Output
       Uncertainty
 ```

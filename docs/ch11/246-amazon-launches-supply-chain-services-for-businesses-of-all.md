@@ -7,20 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon launches Supply Chain…"))
-    Summary
-    Key Points
-    深度分析
-    实践启示
-    Related Entities
-    Tags
-    相关实体
-```
-
 ## Summary
 
 ```mermaid

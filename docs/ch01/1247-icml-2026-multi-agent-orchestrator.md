@@ -13,23 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("ICML 2026｜如何对Multi-Agent系统进行…"))
-    研究背景：多智能体系统评估的盲区
-      Orchestrator-Executor 架…
+  root(("ICML 2026｜如何对Multi-Agent系统进行过程评估"))
+    研究背景 多智能体系统评估的盲区
+      Orchestrator-Executor 架构的脆弱性
       传统评估的局限
-    方法论
-      调度熵：量化 Orchestrator 的不确定性
-      IWG：让过程变得可检查
-    核心发现
-      发现一：System-Level 与 Orch…
-      发现二：不同模型有不同的调度风格
-      发现三：Reasoning Trap
-    深度分析
-      从'执行能力'到'调度能力'的范式转移
-      Reasoning Trap 的深层启示
-      熵动力学作为系统健康指标
-    实践启示
-    相关实体
+    调度熵 量化 Orchestrator 的不确定性
+    IWG 让过程变得可检查
+    发现一 System-Level 与
+    发现二 不同模型有不同的调度风格
+    发现三 Reasoning Trap
+    从执行能力到调度能力的范式转移
+    Reasoning Trap 的深层启示
 ```
 
 ## 摘要

@@ -7,21 +7,6 @@
 # Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent Skills 源码级拆解：3级…"))
-    相关实体
-    深度分析
-      核心观点
-    核心定位
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [hermes新顶流agent skills闭环系统深度解析](../ch07/017-hermes-skill.html)

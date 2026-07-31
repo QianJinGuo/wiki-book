@@ -19,16 +19,6 @@ AI Detection and Response (AIDR) is the [operating model](https://www.mitiga.io/
 - How Mitiga's Helios AIDR works
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Detection and Response Ai…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

@@ -14,30 +14,28 @@
 
 ```mermaid
 mindmap
-  root(("AI Agent 评测实战：5 维指标体系 + L1/L…"))
-    一、定位：Agent 评测与对话评测的本质差异
+  root(("AI Agent 评测实战 5 维指标体系 L1L2L3 准出分级"))
+    一 定位 Agent 评测与对话评测的本质差异
       Agent 评测的 5 个独特挑战
-    二、5 维 Agent 评测指标体系
-      2.1 维度① 任务完成度（北极星）
-      2.2 维度② 工具使用质量
-      2.3 维度③ 规划与推理
-      2.4 维度④ SubAgent 协作
-    三、评测集三层设计
-    四、LLM-as-Judge 三模式
-      模式 1：结果评判（最常用）
-      模式 2：工具链评判
-      模式 3：对比评判（A/B 实验用）
-    五、6 大 Agent 评测 Benchmar…
-    六、5 大评测方法论
-      方法论 1：LLM-as-Judge（LMSY…
-      方法论 2：Arena 式众包评测（Chatb…
-      方法论 3：G-Eval（Chain-of-T…
-      方法论 4：Eval-as-Service（O…
-    七、L1/L2/L3 准出分级（变更风险维度）
-    八、持续运营
-      评测集定期更新（每月）
+    二 5 维 Agent 评测指标体系
+      维度 任务完成度 北极星
+      维度 工具使用质量
+      维度 规划与推理
+    三 评测集三层设计
+    四 LLM-as-Judge 三模式
+      模式 1 结果评判 最常用
+      模式 2 工具链评判
+      模式 3 对比评判 AB 实验用
+    五 6 大 Agent 评测 Benchmark 对比
+    六 5 大评测方法论
+      方法论 1 LLM-as-Judge LMSYS 范式
+      方法论 2 Arena 式众包评测 Chatbot Arena
+      方法论 3 G-Eval Chain-of-Thought 评测
+    七 L1L2L3 准出分级 变更风险维度
+    八 持续运营
+      评测集定期更新 每月
       异常监控告警阈值
-      '评测墙'（Evaluation Wall）
+      评测墙 Evaluation Wall
 ```
 
 ## 一、定位：Agent 评测与对话评测的本质差异

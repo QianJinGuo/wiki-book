@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 6.2KB | `entities/aderant-transforms-cloud-operations-with-amazon-quick.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Aderant transforms cloud ope…"))
-    深度分析
-    实践启示
-    关联阅读
-```
-
 ## 核心要点
 
 ```mermaid

@@ -12,13 +12,10 @@
 
 ```mermaid
 mindmap
-  root(("MiniMax M2.7 — 自我进化LLM"))
+  root(("MiniMax M27 自我进化LLM"))
     基本信息
-    核心能力
     Benchmark一览
     自我进化
-    深度分析
-    实践启示
     关联项目
     与本文相关
 ```

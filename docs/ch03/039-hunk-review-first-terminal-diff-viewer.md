@@ -11,12 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Hunk - Review-first Terminal…"))
-    深度分析
-      为什么 Agent 时代需要 Review-f…
-      与其他 developer tools 的定位
-    实践启示
-    相关实体
+  root(("Hunk - Review-first Terminal Diff"))
+    Review-first 设计理念
+    Agentic 工作流集成
+    多 VCS 支持
+    竞品对比
+    为什么 Agent 时代需要 Review-first Diff 工具
+    与其他 developer tools 的定位
 ```
 
 ## 摘要

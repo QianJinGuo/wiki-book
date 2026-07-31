@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Quick + Cisco Webex M…"))
-    深度分析
-      与现有 Amazon Quick 实体的差异化
-      3 个 Cisco Webex MCP ser…
-      OAuth Scope 分层防御（read v…
-      Meeting-lifecycle 闭环的 4…
-    实践启示
-    相关实体
+  root(("Amazon Quick Cisco Webex MCP"))
+    与现有 Amazon Quick 实体的差异化
+    个 Cisco Webex MCP server 详解
+    OAuth Scope 分层防御 read vs write
+    Meeting-lifecycle 闭环的 4 阶段
 ```
 
 ## 核心要点

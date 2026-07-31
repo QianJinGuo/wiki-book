@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("从自建 Elasticsearch 迁移到 Amazon…"))
+  root(("从自建 Elasticsearch 迁移到 Amazon"))
     背景与迁移目标
     迁移方案选型
     向量索引迁移
     架构与验证
-    相关实体
 ```
 
 ## 背景与迁移目标

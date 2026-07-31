@@ -11,19 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("前端如何消费 Agent 的 SSE 流 — Agent…"))
+  root(("前端如何消费 Agent 的 SSE 流 Agent 前端工程实践"))
     关键技术实现
       SSE 流解析
       跨 chunk 拼接
       多行 data 拼接
-      Store 中的事件时间线
-    深度分析
-      事件驱动架构在 Agent UI 中的必然性
-      流式缓冲作为 Agent UI 的基础设施
-      事件统一建模的设计价值
-      与 AI Agent 生态的对接模式
-    实践启示
-    相关实体
+    事件驱动架构在 Agent UI 中的必然性
+    流式缓冲作为 Agent UI 的基础设施
+    事件统一建模的设计价值
+    与 AI Agent 生态的对接模式
 ```
 
 ## 摘要

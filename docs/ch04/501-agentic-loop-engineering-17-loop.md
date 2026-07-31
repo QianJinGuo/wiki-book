@@ -13,22 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Loop Engineering 工程手…"))
-    一句话定位
-    核心结论
+  root(("Agentic Loop Engineering 工程手册 17"))
     四次范式跃迁
     通用 Loop 结构
     三条测量规则
     六大核心实证发现
-      1. Run Until Done — Fee…
-      2. Skill 注入与 Context En…
-      3. Maker-Checker 分离
-      4. 记忆与检索
+      Run Until Done Feedback vs Retry
+      Skill 注入与 Context Engineering
+      Maker-Checker 分离
     运营与安全
       多 Loop 协调
       预算与成本
       安全护栏
     七大生产 Pattern
+    Capstone Orchestra
+    共享工具库
 ```
 
 ## 一句话定位

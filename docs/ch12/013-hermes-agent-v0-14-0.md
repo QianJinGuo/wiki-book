@@ -9,15 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Hermes Agent v0.14.0 核心架构与快速上手"))
-    核心定位
+  root(("Hermes Agent v0140 核心架构与快速上手"))
     System Prompt 三层架构
-    Agent Loop：思考-行动循环
+    Agent Loop 思考-行动循环
     工具自动发现机制
     安装方式
     源码目录结构
     CLI 核心命令
     AIAgent 核心接口
+    关键参数
 ```
 
 ## 核心定位

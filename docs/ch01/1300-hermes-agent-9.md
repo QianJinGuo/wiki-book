@@ -11,16 +11,13 @@
 mindmap
   root(("Hermes Agent 9 模块系统架构"))
     三条主线
-    9 大模块速览
+    大模块速览
     一次任务全链路
     关键设计理念
-    深度分析
-      执行链与学习链的进程解耦
-      Prompt Assembly 的动态拼装机制
-      Memory Store 的有界冻结设计
-      Skill 的生命周期管理体系
-    实践启示
-    相关实体
+    执行链与学习链的进程解耦
+    Prompt Assembly 的动态拼装机制
+    Memory Store 的有界冻结设计
+    Skill 的生命周期管理体系
 ```
 
 ## 三条主线

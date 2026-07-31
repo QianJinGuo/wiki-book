@@ -7,19 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai官方cli上线跟复杂的sdk说拜拜.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI官方CLI上线，跟复杂的SDK说拜拜"))
-    Summary
-    Key Points
-    Source
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## Summary
 OpenAI 发布官方 CLI 工具，允许开发者通过命令行直接调用 Codex 模型，无需 SDK。
 

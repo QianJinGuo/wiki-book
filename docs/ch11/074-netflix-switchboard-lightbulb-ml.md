@@ -15,23 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Netflix Switchboard → Lightb…"))
-    背景：Netflix 的模型定义
-    Switchboard：集中式路由抽象
+  root(("Netflix Switchboard Lightbulb"))
+    背景 Netflix 的模型定义
+    Switchboard 集中式路由抽象
     Switchboard 的挑战
-    Lightbulb：解耦式路由
-    Lightbulb + Envoy 数据平面
-    关键数据/实践启示
-    深度分析
-      1. Switchboard：Netflix …
-      2. Lightbulb 模型：请求复杂度的实…
-      3. 路由准确性的业务影响
-      4. 与 OpenAI auto 模式的对比
-    实践启示
-      1. 多模型环境：引入路由层而非手动选择
-      2. 路由策略应反映业务优先级
-      3. 用 A/B 测试验证路由策略
-      4. 监控路由准确率
+    Lightbulb 解耦式路由
+    Lightbulb Envoy 数据平面
+    Switchboard Netflix 的 LLM 路由层
+    Lightbulb 模型 请求复杂度的实时评估
+    路由准确性的业务影响
 ```
 
 ## 背景：Netflix 的模型定义

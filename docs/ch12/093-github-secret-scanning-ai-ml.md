@@ -13,15 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("GitHub Secret Scanning: AI/M…"))
-    深度分析
-      信噪比决定安全工具的有效性
-      上下文感知验证的技术实现
-      两级架构的工程设计
-      与传统方法的对比
+  root(("GitHub Secret Scanning AIML"))
+    信噪比决定安全工具的有效性
+    上下文感知验证的技术实现
+    两级架构的工程设计
+    与传统方法的对比
     差异化对比
-    实践启示
-    相关实体
 ```
 
 ## 摘要

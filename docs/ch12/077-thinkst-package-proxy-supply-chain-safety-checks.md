@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Thinkst Package Proxy: Suppl…"))
-    深度分析
-      10 天窗口的安全博弈论
-      代理模式 vs 包装器模式
-      Agent 时代的供应链风险放大
-    实践启示
-    相关实体
+  root(("Thinkst Package Proxy Supply"))
+    供应链安全的演变
+    理想化的保护策略
+    架构设计
+    内置检查项
+    天窗口的安全博弈论
+    代理模式 vs 包装器模式
+    Agent 时代的供应链风险放大
 ```
 
 ## 摘要

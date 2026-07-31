@@ -13,16 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Cilium Tetragon — Kubernetes…"))
-    一、为什么'镜像扫描通过'≠'运行时安全'
-    二、运行时威胁模型（5 类核心向量）
-    三、为什么容器隔离 + K8s 内置控制不够
-    四、Cilium Tetragon：eBPF …
-      4 个核心能力
-    五、部署架构
-    六、实践启示
-    七、与现有实体差异化
-    相关实体
+  root(("Cilium Tetragon Kubernetes"))
+    一 为什么镜像扫描通过运行时安全
+    二 运行时威胁模型 5 类核心向量
+    三 为什么容器隔离 K8s 内置控制不够
+    四 Cilium Tetragon eBPF 内核级防御
+      个核心能力
+    五 部署架构
+    六 实践启示
+    七 与现有实体差异化
 ```
 
 ## 一、为什么"镜像扫描通过"≠"运行时安全"

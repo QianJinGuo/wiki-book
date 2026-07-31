@@ -11,15 +11,6 @@
 投机解码的基本思路是让轻量 draft model 一次猜出多个未来 token，再交给 target model 批量验证。其效率取决于两个因素的平衡：自回归 drafter 质量高但生成开销大，并行 drafter 速度快但 token 间因果依赖弱。Domino 关注的正是如何解决并行 draft 中的 suffix decay 问题——后缀 token 容易偏离已采样的前缀。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("大三本科生一作，交出7.92倍加速的投机解码新答卷！De…"))
-    Domino 核心设计
-    实验结果
-```
-
 ## Domino 核心设计
 
 Domino 由两部分组成：**parallel draft backbone** 为整个 draft block 并行产生 hidden states 和 base logits，保持主要计算的高吞吐；**Domino head** 使用轻量 GRU causal encoder 汇总已生成 draft token，通过 low-rank correction head 生成 logit-space 残差修正，把昂贵的主干计算与必要的因果修正拆开。

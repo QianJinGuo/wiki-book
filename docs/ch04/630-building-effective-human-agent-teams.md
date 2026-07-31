@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Building effective human-age…"))
-    核心转变：从单人到团队
+  root(("Building effective human-agent teams"))
+    核心转变 从单人到团队
     通信架构
     信任机制
     冲突解决
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
     与现有实体差异化
-    相关主题
 ```
 
 ## 核心转变：从单人到团队

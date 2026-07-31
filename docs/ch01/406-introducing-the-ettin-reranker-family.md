@@ -9,17 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Introducing the Ettin Rerank…"))
-    Reranker 是什么？为什么要用 Retr…
+  root(("Introducing the Ettin Reranker"))
+    Reranker 是什么 为什么要用
     模型家族架构
     Benchmark 结果
-      MTEBeng, v2 Retrieval
-    训练配方（Distillation Recipe）
+      MTEBeng v2 Retrieval
+    训练配方 Distillation Recipe
     使用示例
-      Retrieve-then-Rerank 完整…
-    速度基准（Flash Attention 2 …
+      Retrieve-then-Rerank 完整 Pipeline
+    速度基准 Flash Attention 2 优化
     核心价值与实践启示
-    相关概念
+    资源链接
 ```
 
 ## 核心要点

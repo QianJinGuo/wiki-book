@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.8KB | `entities/subagents-详解claude-code-如何避免上下文污染-v2.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Subagents 详解：Claude Code 如何避…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 这篇文章的核心洞察并不在于 Subagent 这个功能本身，而在于它折射出的一个更宏观的行业转变：2026 年，AI 编程工具的重心正在从"模型能力"向"上下文管理基础设施"迁移。Kaxil Naik（Apache Airflow PMC）的那句话"Harness matters more than the model"精确地概括了这个趋势。
 Subagent 背后的设计哲学值得深挖：它不是在构建"多智能体协作"，而是在实践一种"上下文卫生"（context hygiene）——把那些必须发生但留在主窗口就会污染推理过程的探索性操作，隔离到独立工作区中执行，只把结论回收给主 Agent。这种思路和传统的"增加模型上下文窗口"完全不同——不是让模型记住更多，而是让模型只看到值得看的东西。

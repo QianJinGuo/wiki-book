@@ -7,16 +7,6 @@
 coach-author-vc]
 ---
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("What Do Your Startup Advisor…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - 创始人常犯的错误：用正式顾问协议弥补「关系缺口」，而非真正建立有意义的关系
 - 顾问结构被滥用：把应该是全职招聘的人变成「 fractional advisor」，以股权代替工资

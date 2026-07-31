@@ -11,25 +11,20 @@
 
 ```mermaid
 mindmap
-  root(("从 0 到 1 教你写 Agent Skill，让 AI…"))
+  root(("从 0 到 1 教你写 Agent Skill 让 AI 懂你的潜规则"))
     核心价值
     Skill 目录结构
-    核心设计哲学：渐进式披露
-    SKILL.md 格式
+    核心设计哲学 渐进式披露
+    SKILLmd 格式
     高质量 Skill 编写规范
     评估与迭代
       测试用例设计
       运行评估
       断言编写
-      聚合结果分析
-    scripts/ 编写规范
-      自包含脚本（PEP 723 / Deno / …
+    scripts 编写规范
+      自包含脚本 PEP 723 Deno Bun
       Agentic 脚本设计原则
-    深度分析
-      1. '渐进式披露'是工程上对注意力经济的妥协
-      2. description 字段是 Skil…
-      3. '从真实经验提炼'是 Skill 质量的…
-      4. 评测体系的核心价值是建立 Skill 迭…
+    渐进式披露是工程上对注意力经济的妥协
 ```
 
 ## 核心价值

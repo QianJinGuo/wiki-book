@@ -13,16 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("What it feels like to work w…"))
-    核心发现
+  root(("What it feels like to work with"))
     与现有 Mythos 实体的关系
     安全影响
-    深度分析
-      1. Mythos 能力的本质跃迁：从'对话工…
-      2. 可解释性缺口：黑箱化是能力增长的代价
-      3. 成本结构的新挑战：Token 消耗与服务…
-      4. 安全护栏的双刃剑效应
-    实践启示
+    Mythos 能力的本质跃迁 从对话工具到自主工作室
+    可解释性缺口 黑箱化是能力增长的代价
+    成本结构的新挑战 Token 消耗与服务经济性
+    安全护栏的双刃剑效应
 ```
 
 ## 核心发现

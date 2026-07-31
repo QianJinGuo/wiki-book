@@ -9,17 +9,6 @@
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/webkit-customizable-select-golden-rule.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The golden rule of Customiza…"))
-    内容提炼
-    关键洞察
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 - **来源**: https://webkit.org/blog/18117/the-golden-rule-of-customizable-select/

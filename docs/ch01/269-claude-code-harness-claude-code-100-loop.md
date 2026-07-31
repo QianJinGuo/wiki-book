@@ -9,7 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 之父最新访谈：编程已经结束、ha…"))
+  root(("Claude Code 之父最新访谈 编程已经结束 harness"))
     相关资源
     关于 Boris Cherny
     Claude Code 的诞生

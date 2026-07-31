@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Wiki Evolver Skill System De…"))
-    深度分析
-      从采集器到操作系统
-      Knowledge Ladder 的层次设计
-      与现有 Skill 生态的关系
-      与 Agent 记忆系统../ch03/…
-    实践启示
-    相关实体
+  root(("Wiki Evolver Skill System Design"))
+    设计哲学 涌现层的缺失
+    Skill 目录结构
+    Core Contract 每次运行至少产出一个 durable
+    Operating Loop 六步循环
+    从采集器到操作系统
+    Knowledge Ladder 的层次设计
+    与现有 Skill 生态的关系
+    与 Agent 记忆系统 的关联
 ```
 
 ## 摘要

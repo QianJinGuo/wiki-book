@@ -28,10 +28,10 @@ In this post, I’ll explain why ClickHouse is a strong choice for storing trace
 
 ```mermaid
 mindmap
-  root(("Building Jaeger’s ClickHouse…"))
+  root(("Building Jaegers ClickHouse"))
     Why columnar storage wins
-      High-throughput ingest …
-      Compression that actual…
+      High-throughput ingest and
+      Compression that actually matters
       Real-time analytics
     Designing the schema
       Trade-offs in primary key

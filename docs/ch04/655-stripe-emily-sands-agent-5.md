@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stripe-agent-economic-infrastructure-emily-sands.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Stripe 高管 Emily Sands：agent …"))
-    深度分析
-      核心观点
-    01 互联网上出现了新主体
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础设施全面上线 涉及agent领域的核心技术议题。

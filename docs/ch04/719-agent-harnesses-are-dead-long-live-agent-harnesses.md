@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Agent Harnesses Are Dead. Lo…"))
-    核心论点：Harness 的商品化周期
-      框架→脚手架→Harness 的术语轮回
+  root(("Agent Harnesses Are Dead Long"))
+    核心论点 Harness 的商品化周期
+      框架脚手架Harness 的术语轮回
       模型提供商正在吸收整个栈
-      Garry Tan 的'Harness 即管道…
-    深度分析
-      1. 构建成本坍塌对 SaaS 的冲击
-      2. 真正能复利的事物
-      3. Entangled Software（纠…
-      4. '路，而不是车'——基础设施 vs 应用…
-    实践启示
-    相关实体
+      Garry Tan 的Harness 即管道视角
+    构建成本坍塌对 SaaS 的冲击
+    真正能复利的事物
+    Entangled Software 纠缠式软件 Agent 的未来形态
+    路 而不是车基础设施 vs 应用层的价值分配
 ```
 
 ## 摘要

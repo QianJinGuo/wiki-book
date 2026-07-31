@@ -7,21 +7,6 @@
 # optimize_anything: A Universal API for Optimizing any Text Parameter
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("optimize_anything: A Univers…"))
-    相关实体
-    深度分析
-      核心观点
-    核心内容
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [读完这篇，你就搞懂 deepseek v4 了](ch01/1151-deepseek-v4.html)

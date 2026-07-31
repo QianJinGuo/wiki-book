@@ -5,18 +5,6 @@
 > 📊 Level ⭐ | 3.6KB | `entities/zeus-rwa-thread-reader.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thread by @ZeusRWA on Thread…"))
-    Summary
-    Key Points
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## Summary
 @ZeusRWA 观察到 RWA（现实世界资产）赛道的一个关键分化：项目建设层面百花齐放（多产品线、成熟基础设施、用户 onboarding），但 token 价格表现却参差不齐。少数 RWA token 逆势大涨，其背后的逻辑是：市场不再仅将 token 视为"utility token"，而是将其定价为对未来金融基础设施的早期股权类投资。
 

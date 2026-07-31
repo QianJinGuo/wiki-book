@@ -19,21 +19,21 @@
 
 ```mermaid
 mindmap
-  root(("APPO (Agentic Procedural Pol…"))
-    一句话总结
-    痛点：奖励只给终点，中间决策谁负责？
-    APPO 核心：把「过程」当作信用分配的基本单位
-    Branching Score：熵 + 未来价…
-    过程级 Advantage：双组估计 + 未来…
-    实验：13 项基准，三类任务全覆盖
-    主结果：全面领先，深度搜索尤其亮眼
-      数学 + 知识推理（10 项基准）
-      深度搜索（GAIA / WebWalkerQA…
-      Pass@K 分析
+  root(("APPO Agentic Procedural Policy"))
+    痛点 奖励只给终点 中间决策谁负责
+    APPO 核心 把「过程」当作信用分配的基本单位
+    Branching Score 熵 未来价值 过滤「假高熵」
+    过程级 Advantage 双组估计 未来感知缩放
+    实验 13 项基准 三类任务全覆盖
+    主结果 全面领先 深度搜索尤其亮眼
+      数学 知识推理 10 项基准
+      深度搜索 GAIA WebWalkerQA HLE Xbench
+      PassK 分析
     消融与训练动态
-      组件消融（Qwen2.5-7B，知识推理 5 …
+      组件消融 Qwen25-7B 知识推理 5 项平均
       分支预算
       训练曲线
+    与 ARPO 的本质差异
 ```
 
 ## 一句话总结

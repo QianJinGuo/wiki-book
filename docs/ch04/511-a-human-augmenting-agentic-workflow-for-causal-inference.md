@@ -13,14 +13,11 @@ Netflix 开源了 OCI-Agent，一个用于观测性因果推断（Observational 
 
 ```mermaid
 mindmap
-  root(("A Human-Augmenting Agentic W…"))
-    深度分析
-      1. OCI-Agent 填补了数据科学自动化…
-      2. 'Human-Augmenting'设计…
-      3. 开源策略推动 OCI 工作流标准化
-      4. 对 Agent 可解释性和可审计性的设计考量
-    实践启示
-    相关实体
+  root(("A Human-Augmenting Agentic"))
+    OCI-Agent 填补了数据科学自动化中的关键空白
+    Human-Augmenting设计哲学 Agent 做苦工 人类做判断
+    开源策略推动 OCI 工作流标准化
+    对 Agent 可解释性和可审计性的设计考量
 ```
 
 ## 深度分析

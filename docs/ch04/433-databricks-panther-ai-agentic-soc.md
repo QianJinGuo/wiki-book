@@ -13,14 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Databricks 收购 Panther：AI 驱动的…"))
-    核心架构
+  root(("Databricks 收购 Panther AI 驱动的"))
     传统 SIEM vs Agentic SOC
     Agentic SOC 工作流机制
     Databricks 安全收购布局
-    关键洞察
-    深度分析
-    实践启示
     与现有实体差异化
 ```
 

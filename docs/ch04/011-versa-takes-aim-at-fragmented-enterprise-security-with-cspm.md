@@ -11,21 +11,17 @@
 
 ```mermaid
 mindmap
-  root(("Versa takes aim at fragmente…"))
-    关键数据
+  root(("Versa takes aim at fragmented"))
     三项核心更新
-      1. CSPM — 消除双门户问题
-      2. Concerto 13.1.1 — 消除…
-      3. AI Agent 信任与验证框架（202…
-    深度分析
-      网络安全融合的结构性障碍
-      Shadow AI 的安全盲区
-      SASE 市场的整合压力
-    实践启示
-      对安全团队
-      对网络架构团队
-      行业观察
-    相关实体
+      CSPM 消除双门户问题
+      Concerto 1311 消除策略孤岛
+      AI Agent 信任与验证框架 2026-05-21 发布
+    网络安全融合的结构性障碍
+    Shadow AI 的安全盲区
+    SASE 市场的整合压力
+    对安全团队
+    对网络架构团队
+    行业观察
 ```
 
 ## 摘要

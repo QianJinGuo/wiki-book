@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Build financial document pro…"))
-    相关实体
-    深度分析
-      1. 为什么金融文档处理是 OCR 的死亡区
-      2. Pulse AI 的架构选择：VLM +…
-      3. Amazon Bedrock Nova …
-      4. 端到端流水线架构
-    实践启示
-      企业落地要点
-      技术决策树
-      监控与迭代
+  root(("Build financial document"))
+    为什么金融文档处理是 OCR 的死亡区
+    Pulse AI 的架构选择 VLM 经典 ML 混合
+    Amazon Bedrock Nova Micro 的定位
+    端到端流水线架构
+    企业落地要点
+    技术决策树
+    监控与迭代
 ```
 
 ## 核心要点
