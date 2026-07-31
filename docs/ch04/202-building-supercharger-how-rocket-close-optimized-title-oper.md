@@ -20,6 +20,19 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ## 技术栈
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **Strands Agents** —— AWS 开源 agent harness SDK，基于 Anthropic Claude via Bedrock
 - **Amazon Bedrock** —— 灵活的 LLM 平台
 - **Amazon Bedrock Knowledge Bases** —— 知识检索增强

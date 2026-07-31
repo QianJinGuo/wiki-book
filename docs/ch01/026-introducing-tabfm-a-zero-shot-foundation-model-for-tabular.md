@@ -21,6 +21,25 @@ TabFM is a foundation model for tabular data classification and regression, intr
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 ### 一、范式转变：从"训练"到"上下文理解"
 
 TabFM 代表了表格数据建模的一次根本性范式转变。传统 ML 工作流（如 XGBoost 或 Random Forest）对于每个新数据集都需要经历漫长的训练周期：数据清洗 → 特征工程 → 超参数调优 → 模型训练 → 评估 → 部署。即使使用 AutoML 工具，这一流程仍然需要数小时到数天的计算资源和人工介入。

@@ -24,6 +24,24 @@ Harness Engineering（驾御工程/运行约束工程）是在 LLM 外部设计�
 
 ## 为什么需要 Harness
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### Prompt 调优的局限性
 
 当 Agent 进入工程现场，任务可能持续几十轮对话，或多个 Agent 并行推进：

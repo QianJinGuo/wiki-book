@@ -14,6 +14,20 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 - **失败归因转移**：在 Deep Research、Agent Coder、GUI Browser、Agentic RAG 四类典型多智能体系统中，Orchestrator 承担主要失败责任，而非单个 Executor
 - **调度熵（Scheduling Entropy）**：用香农熵度量 Orchestrator 在每一步选择 Agent 时的不确定性，熵高 = 调度不稳定
 - **Mean-Field Entropy Dynamics**：任务推进带来聚焦力（熵下降），上下文累积带来扩散力（熵上升），二者共同决定系统能否收敛

@@ -16,6 +16,19 @@
 - 编码效率提升 10 倍，但端到端需求交付效率只提升 2-3 倍
 
 ## 组织的本质：2000年协调问题
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 组织的演化核心在解决同一件事：**信息怎么路由**。
 
 - 罗马军团：8→80→480→5000人嵌套结构，信息路由协议化

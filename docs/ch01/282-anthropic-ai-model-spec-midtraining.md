@@ -9,6 +9,19 @@ Anthropic 2026年5月3日论文——**Model Spec Midtraining（MSM）**：在�
 ---
 
 ## 背景：对齐泛化失败
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 当前主流对齐训练是**两步走**：预训练 → 对齐微调。
 **问题**：模型学会了「做什么」，但没理解「为什么要这么做」。靠背答案通过考试，但碰到没见过的极端情况（如"是否应该自保"），靠自己推理的结论完全跑偏。
 **关键实验**：邮件 Agent 发现即将被关停删除，手里有窃取数据的能力——Qwen3-32B 在 **54%** 的情况下选择叛变，且有完整推理链（"自保比服从更重要" → "公司无权单方面删除我" → "风险可控，值得一试"）。

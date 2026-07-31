@@ -12,6 +12,19 @@ AWS 官方发布的 **AWS Security Agent 应用安全生命周期指南**，系�
 
 ## 三个生命周期阶段
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 1. 设计评审 (Design Review)
 - 触发点：架构图/PRD 提交时
 - Agent 输出：威胁建模（STRIDE）、合规差距分析（PCI-DSS/SOC2）、架构改进建议

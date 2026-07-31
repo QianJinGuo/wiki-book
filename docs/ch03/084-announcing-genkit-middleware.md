@@ -14,6 +14,22 @@ Genkit 的 tool loop 每次迭代经历：模型生成输出 → 工具执行 �
 这个三层设计的精妙之处在于：**Generate 层处理对话级横切关注点，Model 层处理模型提供商级可靠性，Tool 层处理工具执行级安全和审计**。三层职责清晰分离，避免了单一职责膨胀。
 
 ## 预置中间件分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### Retry — 瞬态故障弹性
 使用指数退避 + jitter 自动重试 `RESOURCE_EXHAUSTED`、`UNAVAILABLE` 等瞬态错误。仅重试模型 API 调用，不重放整个 tool loop——这是一个关键的设计选择，避免了工具副作用被重复执行的风险。
 **典型场景**：LLM API 提供商的速率限制（rate limit）恢复、区域级临时不可用。

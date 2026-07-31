@@ -16,6 +16,19 @@ CreaoAI 联合创始人在 2026 年 6 月分享了云端 Agent 基础设施的�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - **桌面 vs 云端 Agent 的根本差异**：桌面端一个用户一台机器一个进程，状态、密钥、生命周期都在同一受信边界里；云端 Agent 跑在每次全新启动的沙箱里，底下多租户共享硬件，触发源可能是定时任务/HTTP 请求/另一个 Agent，用户多半不在线。
 - **沙箱快照（sandbox snapshot）解决可复现性**：用户满意环境后冻结成快照，每次运行都从同一份快照启动，桌面框架做不到（pip install 装的版本六个月后不同）。
 - **第一版方案的失败**：把 Runner 代码（管理 Agent 的运行时库）也打包进快照镜像，用户不动 Runner 也要跟着发版，第一版方案是「启动时检查 Runner 版本不一致就丢快照重建」，代价是每次部署后第一次运行要重建环境——**但这违背了「环境会保持冻结直到你主动改」的隐含约定**。

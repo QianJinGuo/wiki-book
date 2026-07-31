@@ -14,6 +14,19 @@ Hermes Agent（Nous Research 开发，GitHub Star 突破 60,000）用三层提�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 三层提示词架构
 
 Hermes 系统提示词分为三层（源码：`agent/system_prompt.py` 的 `build_system_prompt_parts()`）：

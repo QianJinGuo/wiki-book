@@ -29,6 +29,19 @@ Anthropic的研究者借着这个思路去找Claude内部有没有类似的东�
 
 ## 五个验证实验
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 实验一：可报告性——Claude开口之前，心里已经有了答案
 
 研究者让Claude默想一项运动，然后用一个词说出来。在Claude开口之前，用J-lens读一下它的中间层，「Soccer」已经排在最前面。Claude接下来果然答的是「Soccer」。

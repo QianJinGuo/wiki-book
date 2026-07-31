@@ -18,6 +18,24 @@
 
 ## Harness 设计模式
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Weng 在文章中归纳了 Harness 工程的三种核心设计模式：
 
 **模式一：工作流自动化**。设计一个让模型可以在其中运行、测试并迭代的工作流。Karpathy 的 autoresearch 仓库是典型范例——规划、执行、观察/测试、改进，直到达成目标。模型通过智能体运行时（而非静态提示词模板）来分析执行轨迹和失败案例，据此迭代改进。

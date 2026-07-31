@@ -16,6 +16,25 @@ NVIDIA 宣布将 Omniverse 库整合到 NVIDIA Agent Toolkit 中，为 AI 智能
 
 ## 核心要点
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    subgraph "学习"
+        RL[强化学习]
+        SIM[仿真训练]
+    end
+    DEC --> RL
+    RL --> SIM
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef l fill:#d1fae5,stroke:#059669,color:#064e3b
+    class PER,DEC,ACT,ENV c
+    class RL,SIM l
+```
+
+
 - **三大 Omniverse 库**：ovrtx（传感器仿真：摄像头、激光雷达、雷达输出生成）、ovphysx（GPU 加速物理仿真：碰撞、质量、摩擦、运动行为）、CAD-to-SimReady（CAD 数据→OpenUSD SimReady 资产的自动转换）
 - **Agent Toolkit 定位**：帮助软件制造商构建连接工具、技能和数据源的 AI 智能体，Omniverse 库将智能体扩展到 3D 和物理 AI 工作流
 - **行业集成**：SideFX（Houdini）和 PTC 正在集成 Omniverse 库，实现面向智能体的传感器仿真、物理仿真和资产验证

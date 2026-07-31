@@ -11,6 +11,20 @@
 Factory（15亿美元估值）的 **Mission** 是一套多 agent 编排系统，背后回答了一个核心问题：**当你需要 agent 团队完成比单个 agent 难上一两个数量级的任务时，应该怎么组织**。
 
 ## 人物背景
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 **Luke Alvoeiro**：Block 开源 coding agent **Goose**（43.9k★，捐给 AI Agentic Foundation）→ Factory CTO，负责 Droid 的核心 agent harness。
 
 ## 架构全景图

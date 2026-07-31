@@ -13,6 +13,25 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifierageneral-purposeverific.md)
 
 ## 背景与动机
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 ### 标准 LLM-as-a-Judge 的平局困境
 标准 LLM-as-a-Judge 方法 prompting 模型输出一个离散分数 token（如 1-8），然后选择最高概率 token 作为最终分数。然而，在比较复杂的长周期 Agent 轨迹时，这种粗粒度评分往往给两条轨迹打相同分数（如两条轨迹都得到 4 分），导致平局无法区分。实验数据显示，LLM-as-a-Judge 在 Terminal-Bench 上产生高达 27% 的平局率（ties）。这在需要精细选择最优轨迹的场景（如代码生成、终端操作）是致命的缺陷。
 LLM-as-a-Verifier 的核心思想是将"裁判"（Judge， 形成整体判断并给出决策）与"验证器"（Verifier， 确认某事的正确性，需要更细致的评估）区分开来 。验证器不是输出一个粗粒度分数，而是通过三个维度的扩展提供细粒度反馈：评分粒度、重复验证次数、评估标准分解。

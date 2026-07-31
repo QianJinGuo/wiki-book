@@ -10,6 +10,24 @@
 
 ## Matteo Paz：AI发现150万未知天体
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### 背景与成就
 
 Matteo Paz是一名在Caltech完成突破的高中生。2023年3月，他参与了Caltech的Summer Research Connection暑期研究项目，由IPAC资深天文学家Davy Kirkpatrick担任导师。此前，他在八年级就修完了AP Calculus BC（大学先修微积分BC），并在2022年夏天进入Caltech的Planet Finder Academy（行星发现学院）。

@@ -9,6 +9,22 @@ Amazon CloudFront部署小指南（二十四）：将CloudFront "多域名"改�
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 **1. "多域名"架构在规模化运营中暴露的三大核心局限**
 
 传统多域名架构的主要问题在于：无法实现基于单个域名的缓存刷新操作（只能刷新整个Distribution，影响所有域名）、无法为不同域名定制独立的安全策略（WAF规则共享）、无法针对单个域名进行独立配置调整（源站、CDN、网络配置均共享）。这三个局限性在多租户SaaS场景中尤为突出，因为不同租户对安全策略和缓存行为的需求往往各异。

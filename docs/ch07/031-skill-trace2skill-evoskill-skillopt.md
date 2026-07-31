@@ -12,6 +12,20 @@ Skill 自进化是 Agent 系统从"人工调优"走向"自主优化"的关键技
 
 ## 核心要点
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 ### 核心问题：Skill 自进化的过拟合
 
 基于单通轨迹的自动沉淀存在根本性风险：如果轨迹存在偶然性或极端 Case，Skill 进化方向会被"带偏"。企业级场景更严重——同类任务不同用户 Query 差异大，简单在线更新导致质量"飘忽不定"。

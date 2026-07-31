@@ -33,6 +33,19 @@ task-reviewer-prompt.md 关键约束：
 
 ## 文件交接降低上下文成本
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 这是 6.0 中最被低估的改动——把交接材料文件化：
 
 | 脚本 | 输出 | 作用 |

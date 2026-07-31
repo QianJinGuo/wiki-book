@@ -30,6 +30,24 @@ Procedural Memory 编码"如何做"的知识——即执行特定任务的步骤
 
 ## 六种架构权衡
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 从简单到复杂，Agent 记忆系统的架构可以分为 **六个层次**，每层在表达能力、延迟、存储成本和工程复杂度之间做不同取舍。
 
 ### 1. Buffer（缓冲区）

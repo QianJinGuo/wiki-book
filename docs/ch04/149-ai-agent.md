@@ -11,6 +11,22 @@
 - 生产失败七大原因：工具随意、上下文无序、状态管理缺失、失败恢复缺失、评估集缺失、trace缺失、过度自治
 
 ## 三种系统形态
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 | 类型 | 特点 | 适用场景 |
 |------|------|---------|
 | Tool-Using Assistant | 工具调用+短链路 | 查数据/SQL助手 |

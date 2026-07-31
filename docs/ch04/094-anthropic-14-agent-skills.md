@@ -38,6 +38,22 @@
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Anthropic 官方的 14 个 Agent Skills 设计模式并非零散技巧，而是一套覆盖技能**生命周期全链路**的系统性框架。从「如何被选中」到「如何被执行」，再到「如何被约束」，构成了一个完整的设计维度体系。
 
 ### 1. 模式分类的内在逻辑

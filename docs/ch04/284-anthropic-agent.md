@@ -11,6 +11,22 @@
 Claude Code 之父 Boris：一年前 Claude 连写 Bash 命令都费劲，每次任务顶多 20 分钟；现在 Claude Code 能有效运行**数天**。
 
 ## 三大失败根因
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. 上下文焦虑（Context）
 随着 Token 消耗接近上限，模型表现出「上下文焦虑」——为了强行结束对话，会草率收尾并故意忽略技术细节。
 

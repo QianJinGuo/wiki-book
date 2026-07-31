@@ -16,6 +16,19 @@ BCS 发表深度分析文章，探讨 AI Agent 自动化渗透测试带来的四
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 1. 传统渗透测试风险的 Agent 化转型
 
 大多数 agentic pen-test 的风险与传统 pen-test 相同，但**交付方式根本不同**：

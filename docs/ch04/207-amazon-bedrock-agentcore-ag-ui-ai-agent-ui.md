@@ -14,6 +14,18 @@ AG-UI（Agent-User Interaction Protocol）是一个开放的 Agent-用户交互�
 
 ## 核心概念
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 ### 什么是 AG-UI 协议
 
 AG-UI 定义了 Agent 后端与前端之间的标准化事件通信协议。它支持：

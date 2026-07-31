@@ -14,6 +14,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **AutoResearch = 基模 + Agent Loop**：基模固定时，方法循环设计是研究效率竞争的本质。
 - **四种循环设计**：
   1. **线性 Keep-or-Discard**（Karpathy autoresearch）：最简单，固定时间预算，无并行能力。

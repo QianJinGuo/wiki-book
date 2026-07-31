@@ -37,6 +37,22 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 核心观点
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Boris Cherny 在 Sequoia AI Ascent 2026 上的访谈，提出了一个关键命题：**开发工具的中心正在从 IDE 里的光标，慢慢挪到管理 Agent 工作流的那块控制台上。**
 这个转变的深层含义是：以前问的是"AI 能不能帮工程师更快地写代码"，现在问题变成了"人怎么把目标讲清楚，Agent 怎么持续执行，系统怎么记录过程，风险动作怎么审批，最后结果怎么验证和回滚"。
 

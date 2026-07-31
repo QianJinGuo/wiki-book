@@ -20,6 +20,24 @@
 
 ## 痛点：奖励只给终点，中间决策谁负责？
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 LLM Agent 训练范式：
 - **RLVR**（Reinforcement Learning with Verifiable Rewards）：用可验证的最终答案做稀疏奖励
 - **GRPO / DAPO**：在此基础上不断迭代

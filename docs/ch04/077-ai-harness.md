@@ -15,6 +15,19 @@ LangChain 仅通过改变包裹 LLM 的底层架构，让 TerminalBench 2.0 排�
 > "如果你不是模型本身，那你就是 Harness。"
 
 ## 三个层次
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 层次 | 范围 |
 |------|------|
 | 提示词工程 | 精心设计模型接收到的指令 |

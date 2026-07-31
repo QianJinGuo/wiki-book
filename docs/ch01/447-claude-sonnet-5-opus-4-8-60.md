@@ -22,6 +22,24 @@ Anthropic 于 2026 年 7 月发布 Claude Sonnet 5，作为 Sonnet 系列里最�
 
 ## 性能基准评测
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### Agentic Coding 能力
 
 Sonnet 5 在 SWE-bench Pro 上达到 63.2%，虽与 Opus 4.8 的 69.2% 仍有差距，但已显著超越 Sonnet 4.6（58.1%）。在 CursorBench 3.1 上表现更突出——Sonnet 5 得分为 57%（Sonnet 4.6 为 49%），高 effort 模式下已接近 Opus 4.8 high 水平。

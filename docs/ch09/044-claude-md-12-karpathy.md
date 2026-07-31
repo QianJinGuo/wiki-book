@@ -8,6 +8,18 @@
 基于 Forrest Chang 整理的 Karpathy 4 条 CLAUDE.md 规则，扩展 8 条覆盖 2026 年 5 月 agent 驱动场景的新规则。6 周 30 个代码库实测，错误率从 41% 降至 3%，遵循率保持 76-78%。
 
 ## 核心设计原则
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
 CLAUDE.md 不是愿望清单，而是**行为契约**，每条规则对应一个可观察的失败模式： ^["[Claude写代码错误率从41%降到11%](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-12-rules-karpathy-extension.md)"]
 
 - 规则 ≤200 行，超过后遵循率骤降

@@ -18,6 +18,19 @@ Meta has become increasingly aggressive about monetizing and analyzing user inte
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 **1. Meta 的"加密优先"叙事与商业利益存在根本矛盾**
 
 Meta 多年来公开倡导端到端加密是"在线通信的未来"，却在 2026 年悄然移除 Instagram DMs 的加密选项。这种 180 度反转揭示了其隐私承诺的工具性本质：当加密与数据变现、广告定向产生冲突时，Meta 选择了后者。Proton 明确指出这一决定"表明 Meta 对用户隐私和安全几乎毫不关心"，反映出不加密的 DMs 可被平台读取、分析并用于广告变现的商业逻辑。

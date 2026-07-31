@@ -21,6 +21,19 @@ Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 核心论点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——把可重复的规则从模型记忆里挪出来，搬进会在已知生命周期节点上自动运行的代码。
 > 提示词负责"引导"，Hooks 负责"那些每次都必须发生的行为"。
 项目说明写"别改自动生成的文件"只是叮嘱，PreToolUse Hook 能在编辑真正落地之前就把它拦下来——前者是叮嘱，后者是闸门。

@@ -12,6 +12,19 @@
 
 ## 背景与紧迫性
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 Anthropic发布了一篇新论文，阐述美中AI竞争的观点。AI即将变得足够强大，可用于前所未有地大规模镇压公民，甚至改变国家间的力量平衡。由于AI发展日新月异，我们只有有限的时间来设定竞争条件——决定这些威胁是否以及如何实现。
 
 **关键背景**：

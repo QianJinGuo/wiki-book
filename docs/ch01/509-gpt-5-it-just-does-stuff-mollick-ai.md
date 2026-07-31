@@ -20,6 +20,19 @@ Mollick 用 GPT-5 写 intro paragraph 时只给了一句指令"do something very
 
 ## 两大常见 AI 使用问题的解决
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 问题一：选错模型
 旧版 AI 默认给快速但弱的模型，用户不知道哪个是更好的。GPT-5 作为 switch 自动选择子模型+思考时长。但问题是：**GPT-5 对什么是"hard problem"判断过于随意**（2/3 的 SVG otter 请求被判定为简单问题，只有 1/3 进入 Reasoner）。
 

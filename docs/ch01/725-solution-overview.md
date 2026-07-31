@@ -31,6 +31,22 @@ In this post, we explore how Amazon Bedrock Data Automation can accurately extra
 
 ## Solution overview
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 Amazon Bedrock Data Automation lets you configure output based on your processing needs using blueprints. A blueprint in Amazon Bedrock Data Automation is a configuration template that defines how data should be extracted from documents. It specifies:
 
   * The document type being processed

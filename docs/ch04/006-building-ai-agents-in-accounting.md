@@ -11,6 +11,22 @@
 - 实践效果：预付账款对账从约 2 小时压缩至约 5 分钟，跨多个对账项目可节省整天的月末结账时间 
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. Skill-Config 分离架构的设计思想
 文章中最核心的工程洞察是 Skill 与 Config 的严格分离。Skill（技能）是一个自包含的工作流，包含系统提示词（System Prompt）定义"做什么"、MCP 连接器定义"能操作哪些系统"、触发机制和驱动行为的配置。一个 Skill 一旦编写完成，就可以永久运行，无需每次手动调用。
 而 Config（配置）则是 YAML 文件，其中存放的是具体业务参数：预付账款 GL 账户代码、供应商编码映射表、重要性水平阈值、期末部分月 convention、以及路由规则（谁在哪个频道被呼叫）。当业务规则变化时，只需编辑 Config 文件，而不需要触碰 Skill 本体。

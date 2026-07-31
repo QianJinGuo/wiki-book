@@ -56,6 +56,19 @@ Agent 调用某个工具后，该工具进一步调用其他未声明的外部�
 - **缺口**：behavioral specification 和运行时验证层是当前供应链框架中的空白地带
 
 ## 实践启示
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### 分阶段实施路径
 文章提供了务实的渐进式部署建议：
 1. **第一步（立即）：Endpoint Allowlisting**

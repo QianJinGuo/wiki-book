@@ -12,6 +12,19 @@ AFINE 安全研究团队发布原创攻击研究：在**严格 CSP (Content Secu
 
 ## 攻击技术栈
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 1. 严格 CSP 下的 HTML 注入
 
 许多现代应用配置了禁止 inline script 的严格 CSP，但仍允许 inline HTML 元素 (input form)。攻击者通过 XSS 变体注入隐藏的 input 元素：

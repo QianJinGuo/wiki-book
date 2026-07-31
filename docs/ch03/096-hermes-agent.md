@@ -10,6 +10,24 @@ Hermes Agent 的工具系统核心是**单例注册表 + import 即自注册 + A
 
 ## 4 层架构
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ```
 tools/*.py        → 自注册层（import 时执行 registry.register()）
 tools/registry.py → 单例注册表（ToolRegistry）

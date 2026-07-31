@@ -40,6 +40,22 @@ SaaS 产品经理每周评估 1-10 家客户定制需求工作量，少则 1 小
 **Skills 不是替你"发明"工作经验，而是帮你把已有经验稳定地复用出来。** Skill 的价值 = 你讲清楚多少判断标准和方法论，而非给出多长的提示词。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 第一性原理：Skill 的本质是经验的压缩格式
 这篇文章最核心的认知贡献是揭示了 Skill 和 Prompt 的本质区别：**Prompt 是指令，Skill 是经验的结构化载体**。
 Prompt 的逻辑是"告诉 AI 怎么做"——给出规则、给出示例、给出约束，AI 按照指令执行。Skill 的逻辑是"把人的经验固化下来"——这个人是怎么判断的？他的判断标准是什么？他遇到矛盾时怎么权衡？这两种逻辑产出的 AI 行为有本质差异：Prompt 给出的 AI 输出依赖模型自身的推理能力，Skill 给出的 AI 输出复制的是这个人的判断框架。

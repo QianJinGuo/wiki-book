@@ -49,6 +49,18 @@ This guide covers AI agent detection through identity, network, browser, and beh
 *   81% of internal tests from cside were able to bypass bot detection from legacy platforms with AI-agent based bots. 
 
 ## 深度分析
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
 AI 代理流量检测已形成四个层次的信号体系：**身份层**通过 User-Agent 字符串和爬虫签名库识别自声明的 Bot，如 GPTBot、ClaudeBot 等，局限性在于可被轻易伪造；**网络层**通过 IP 声誉、ASN 分析（数据中心 vs. 住宅）、TLS 指纹（JA3/JA4）以及 IP 地理位置与浏览器时区/语言的一致性交叉验证来识别伪装流量；**浏览器层**通过自动化框架残留物（如 Playwright/Puppeteer 的 `cdc_` 前缀）、Canvas/WebGL/Audio API 一致性检测、硬件 plausibility 校验来发现模拟环境；**行为层**则通过打字速度、页面导航间隔、表单填写模式、鼠标移动轨迹和点击位置来构建访客行为画像，单一信号不足以定论，但多个信号叠加能构建出难以伪造的 profile 。
 与传统 Bot 检测不同，AI 代理流量呈现出三个新特征：**反检测浏览器普及**，Playwright npm 月下载量翻三倍达 3500 万，"stealth browser" 搜索持续创历史高位，这类工具抑制 `navigator.webdriver` 标志、伪造 Canvas/WebGL 指纹、剥离 CDP 痕迹；**本地化托管**，AI 代理越来越多地运行在真实消费者硬件上（个人笔记本的 Claude 浏览器扩展），请求来自合法住宅 IP、真实浏览器、 authentic 设备指纹；**从脚本化到推理化**，传统 Bot 按固定步骤执行，AI 代理能推理页面、适应异常，CAPTCHA 作为防线已失效——AI 视觉模型比人类更快更可靠地解决 CAPTCHA 。
 81% 的 legacy 平台 bot 检测方案可被 AI 代理流量绕过，原因在于这些方案依赖已知模式匹配而非行为分析，且免费/低价附加组件主要检测基础自动化模式，无法应对住宅 IP + 真实浏览器 + 行为模拟的组合攻击 。

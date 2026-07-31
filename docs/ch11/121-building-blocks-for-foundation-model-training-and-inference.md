@@ -7,6 +7,24 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
 ## 核心摘要
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 AWS 提供从 P5 (H100/H200) 到 P6 (B200/B300) 的 GPU 实例家族，配合 EFA v2/v3/v4 OS-bypass 网络和 FSx for Lustre 分层存储，构成基础模型训练和推理的完整基础设施层。
 资源编排层面，Slurm 和 Kubernetes 代表两种路线：Slurm 以作业级原子调度适合 HPC 风格的大规模训练；Kubernetes 以声明式 API 适合云原生部署，但需要 Kueue/Volcano/KAI Scheduler 补齐作业级调度和拓扑感知。
 ML 软件栈从内核驱动 → CUDA → NCCL( aws-ofi-nccl ) → PyTorch → 分布式训练框架（Transformers/Megatron/veRL）和推理框架（vLLM/SGLang），每一层都需正确配置才能高效运行。

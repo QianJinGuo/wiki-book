@@ -26,6 +26,19 @@ Agent 的核心算法很简单：给 LLM 上下文，让它在循环中调用工
 
 ## 循环 1：Agent 循环
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Agent 的核心，其实就是模型在循环中调用工具，直到任务完成。
 
 这正是 LangChain 的 create_agent 提供的能力。选择任意模型，接入工具，你就有了一个可以工作的 Agent 循环。工具让 Agent 具备了在现实世界中采取行动的能力。

@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **Fable 5 是 Mythos-class 模型**：在软件工程、知识工作、科学研究、视觉任务上达到顶尖水平。任务越长越复杂，领先幅度越大。
 - **安全防护机制**：Fable 5 内置针对网络安全、生物化学、蒸馏等高风险领域的检测和回退机制——对敏感请求自动切换到 Claude Opus 4.8（次强模型），回退率低于 5%。
 - **Claude Mythos 5**：与 Fable 5 共享同一底层模型，但在防御和生物医学领域放宽了防护限制，面向网络防御人员和关键基础设施提供方。

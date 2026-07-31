@@ -35,6 +35,24 @@
 **文章的深层逻辑：** 作者认为问题的根源不在于 AI 能力不足，而在于组织的协作基础设施未为 AI 优化。这与 1920 年代电力时代的管理革命类似——仅仅是"替换引擎"是不够的，需要重构整个生产关系。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 **面向 Agent 的研发范式转换：**
 1. **All-in-Code 的信息管理**：将需求、代码、测试、文档、配置全部纳入统一的版本控制系统，消除信息孤岛。Agent 可以在单一上下文中访问所有相关信息，消除了跨系统切换的上下文丢失。
 2. **版本化一切以隔绝外部依赖**：外部 API 文档、SDK 版本、需求描述都应该被版本化并本地存储，确保 Agent 的行为可复现，不受外部系统变化的影响。

@@ -24,6 +24,19 @@ User query → LLM agent → 生成 TypeScript/Python code (用 SDK primitives) 
 
 ## SDK 基础原语 (Primitives)
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Perplexity 暴露给 LLM agent 的核心 primitives：
 
 | Primitive | 用途 | 类比传统 |

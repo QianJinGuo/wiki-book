@@ -14,6 +14,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **四层分离架构**：SKILL.md（编排层，只负责流程编排和决策指引，不嵌入大段实现代码）+ config.yaml（参数层，模板而非表单，用`auto`占位符让运行时填充）+ scripts/（实现层，封装确定性逻辑确保执行一致性）+ references/（知识层，渐进式披露详细原理和背景知识）
 2. **SKILL.md的核心原则**：控制在200行以内（实测170行和133行效果最佳），只回答四个问题——何时触发（触发条件）、有哪些步骤（步骤编排）、每一步调用哪个脚本的哪个函数（实现委托）、遇到异常如何决策（判定标准）
 3. **config.yaml的设计哲学**：应定义为参数结构模板而非填写好的表单。好的config用`auto`占位符表示自动检测填充，用空列表`[]`定义结构框架，注释标注[必填]/[自动检测]/[默认值]

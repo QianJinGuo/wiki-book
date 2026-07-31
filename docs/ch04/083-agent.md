@@ -11,6 +11,20 @@
 - **竞争分水岭**：从模型能力转向环境能力，谁能构建多源、实时、可信、可治理的上下文供给体系，谁能让Agent从"能演示"走向"能生产" 
 
 ## 为什么AI Coding先跑通了
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 ### 数字化环境的天生优势
 2026年2月Anthropic平台数据显示，软件工程行业AI调用量占比高达49.7%，接近一半。这个结果说明Agent目前最容易跑通的场景是高度数字化、上下文天然在线化的领域 。
 程序员天然工作在一个数字世界中：输入端有PRD、交互设计、技术方案、代码、Issue、日志等；输出端可直接完成Design、Coding、Test、Deploy等工作。AI Coding能够快速嵌入的根本原因不是"代码更适合AI"，而是工作环境本身已完成数字化表达 。

@@ -11,6 +11,16 @@
 **ds4.c** 是 Redis 作者 antirez（Salvatore Sanfilippo）专为 DeepSeek V4 Flash 打造的本地推理引擎，以 C + Metal 从头实现，无框架依赖，无抽象层，Metal-only。
 
 ## 技术规格
+
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
 | 维度 | 参数 |
 |------|------|
 | 作者 | Salvatore Sanfilippo（antirez） |

@@ -14,6 +14,19 @@ AWS 和 Cisco AI Defense 在 2026 年 5 月发布合作方案，针对 MCP（Mod
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - **协议普及速度**：MCP 半年内被企业广泛采用，企业常管理数十到数百个 MCP servers
 - **三大安全缺口**：可见性盲区（不知道部署了哪些 Agent / Tools）、安全评审瓶颈（人工流程数周级）、合规审计缺位（无自主 Agent 审计踪迹）
 - **核心风险**：未审核的 MCP server、A2A agent、Skills 可能访问敏感系统、违反 SOX/GDPR 合规要求、引入可被利用的漏洞

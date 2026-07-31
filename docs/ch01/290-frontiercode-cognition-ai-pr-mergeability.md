@@ -16,6 +16,25 @@
 
 ## 三个独有贡献（不应合并到现有 entity）
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 ### 1. **Mergeability 范式：第一个测量"PR 会被合并吗"的基准**
 
 SWE-Bench Verified/Pro 等第一代编码基准只测 **functional correctness**（测试通过就行）。FrontierCode 重新定义了"高质量代码":

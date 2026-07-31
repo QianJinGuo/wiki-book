@@ -14,6 +14,24 @@ claude-apprentice 是一个提升 Claude Code 协作效率的开源工具，其 
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 1. **5 层架构落地为 32 文件系统**：Prompt/L1（3 文件）→ Context/L2（8 文件）→ Harness/L3（11 文件）→ Loop/L4（1 文件）→ Memory/L5（1 文件）+ CLI/脚本（8 文件），Harness 层最厚
 2. **CLAUDE.md 知识下沉策略**：从 200 行压缩到 53 行，子文件分层承载，CLI 加载时间降低 60%
 3. **Spec 驱动工作流**：PROPOSE→APPLY→SHIP→ARCHIVE 四阶段生命周期，将软件工程的规格先行方法论引入 AI 协作

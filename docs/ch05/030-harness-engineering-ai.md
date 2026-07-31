@@ -36,6 +36,20 @@ Claude 3.0→3.5升级后，许多硬编码检查规则自然变得不必要。
 **新衡量标准**：代码产出率、Agent系统健壮性、自动闭环机制、对AI失效模式的理解 → **系统杠杆率**。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 AI 工程能力的三次进化（Prompt → Context → Harness）不是技术革命，而是问题域的逐步扩展。
 **Prompt Engineering 时代**（2019-2022）：这个时代的核心矛盾是"模型不知道该说什么"。GPT-2/GPT-3 的语言理解能力有限，需要精心设计的提示来激发潜在能力。Prompt Engineering 的本质是**补强模型的语言推理链路**——当模型无法可靠地做思维链推理时，通过 few-shot examples 示范正确的推理模式。
 **Context Engineering 时代**（2022-2024）：这个时代的核心矛盾是"模型不记得"。Claude/GPT-4 的推理能力足够强，但上下文窗口有限且注意力会漂移。Context Engineering 的本质是**为模型构建外部记忆系统**——RAG、层次记忆、动态加载，本质上都是在解决"信息怎么进来"的问题。

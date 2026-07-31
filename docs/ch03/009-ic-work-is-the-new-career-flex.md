@@ -14,6 +14,25 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-ic-work-is-the-new-career-flex.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 **1. HI-C 角色是 AI 原生组织的组织结构创新，而非简单的高级 IC 回归**
 文章将 HI-C 描述为"比过去的 Staff Engineer、Principal Designer 更进一步"的角色 。关键区别在于：传统高级 IC 的职责是"在某一领域深入钻研"，而 HI-C 是"独立运营一个业务功能，从头到尾"。这种角色的出现需要两个条件同时成立：① AI 填补了设计、工程、营销等各环节的平均水平技能缺口；② 信息传递不再经过层层 gatekeeping。传统高级 IC（如 Staff Engineer）的职能边界从未扩展到"独立跑通一个增长功能"，因为那需要跨设计、工程、营销、运营的协调能力——而这正是 AI 当前正在压缩的成本。AI 作为"平均智能"的定位在这里是关键使能因素，它让人得以专注于端到端的项目整合，而非每个环节都达到专家水平。
 **2. "平均智能"是 AI 赋能个体效率提升的核心框架——被严重低估**

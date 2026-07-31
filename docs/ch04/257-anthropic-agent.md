@@ -55,6 +55,24 @@ Dreaming 是一个在 session 之间运行的异步任务，读取现有的 memo
 ---.md]
 
 ## 真实用户案例
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 公司 | 场景 | 效果 |.md]
 |------|------|------|.md]
 | **Harvey**（法律科技） | 用 Managed Agents 协调长文法律文书起草。加了 dreaming 之后，Agent 能记住上次 session 里学到的文件格式技巧和工具使用模式 | 完成率涨了约 **6 倍** |.md]

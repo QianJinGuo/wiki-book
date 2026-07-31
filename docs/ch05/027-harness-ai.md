@@ -15,6 +15,24 @@
 - **Skill、Agent、工具链会随模型迭代更新，但领域知识是永恒的。**
 
 ## 一、三大标志性 Harness 实践对比
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 实践方 | 核心关注 | 关键动作 |
 |---|---|---|
 | OpenAI — Codex | 人机交互协议 | 零手写代码，通过精确的指令协议驾驭 Agent |

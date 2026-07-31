@@ -14,6 +14,25 @@ Interconnects（Nathan Lambert）的一篇政策评论：**"Distillation attacks
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **术语之争**："Distillation attacks" 把"合法的、广泛使用的蒸馏技术"与"少数实验室的 API 滥用行为"混为一谈，可能造成行业性语言污染。
 - **蒸馏是行业标准**：在后训练阶段用作数据引擎（指令数据、偏好数据、RL 验证）或特定技能迁移（数学推理、代码能力），闭源与开源模型都在使用。
 - **真正的违规行为是 jailbreaking / API 滥用**：少数中国实验室的核心问题是绕过 API 使用条款（jailbreaking、identity spoofing、hacking），而非"蒸馏"本身。

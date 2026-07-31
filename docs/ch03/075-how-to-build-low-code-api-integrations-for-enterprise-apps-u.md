@@ -10,6 +10,19 @@
 API Integration Actions 是 Okta Integration Network (OIN) 的一项新功能，允许 ISV（独立软件供应商）使用 Okta Workflows（低代码构建器）构建 Provisioning、Entitlements 和 Universal Logout 应用。无需构建和维护 SCIM 服务器，直接将现有 API 映射到 Okta 动作契约，大幅降低企业身份集成门槛。
 
 ## What are API Integration Actions?
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 API Integration Actions are a feature that uses Workflows, Okta's low-code builder, to enable independent software vendors (ISVs) to build Okta Integrations (Provisioning, Entitlements, Universal Logout) that are seamlessly invoked by Okta services — for example, retrieving and updating entitlements or triggering risk-based logout flows.
 You can just skip the complexity of building and maintaining a System for Cross-domain Identity Management (SCIM) server. API Integration Actions allow you to use your existing APIs as-is by mapping them directly to Okta action contracts. By using our low-code builder, you no longer need in-depth knowledge of protocols, making it faster and easier to build, test, and deliver enterprise-grade Secure Identity Integrations. This leads to a fast time-to-value for customers leveraging ISV data for connector-heavy Okta Identity Governance (OIG) use cases.
 

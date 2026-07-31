@@ -7,6 +7,19 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 
 ## 摘要
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 本文提出了一套专为跨境金融机构打造的智能合规中枢架构方案，旨在解决面对多重监管框架（如 PCI DSS v4.0、MAS TRM-G、DORA、等保 2.0 三级等）时由于重复审计、术语壁垒和修复滞后带来的"规模化合规难题"。核心创新包括：Prowler ECS Fargate 按需扫描 + OCSF 标准输出 + 自定义框架 JSON 扩展 + Rationale 映射逻辑文档 + Bedrock GenAI 条款级分析，实现一次扫描覆盖 51 个合规框架。
 
 ## 关键要点

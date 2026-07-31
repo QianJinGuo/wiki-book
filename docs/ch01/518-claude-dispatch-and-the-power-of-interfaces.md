@@ -12,6 +12,24 @@ AI 的能力已经远超大多数人的认知，但这种「能力溢出」（ca
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 聊天界面的认知税
 
 新研究揭示了一个反直觉的现象：使用聊天界面完成复杂工作时，用户实际上承受了额外的认知负荷。一项针对金融专业人士使用 GPT-4o1 进行复杂估值任务的研究发现，虽然 AI 带来了生产力提升，但聊天界面本身——冗长的文字墙、不断涌现的新话题建议、混乱的讨论结构——部分抵消了这种收益。

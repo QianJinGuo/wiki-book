@@ -25,6 +25,25 @@
 问题出在哪？规则写了，但没有系统地验证规则是否真的被执行了，也没有验证执行结果是否稳定。**这就是 AI Skill 测评要解决的问题。**
 
 ## 什么是 AI Skill
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 **AI Skill 是一种以 Markdown 编写的「给模型看的说明书」，是 LLM 应用质量的核心载体。** 它告诉大模型在特定场景下该怎么做，模型读懂了才能按规则执行；模型没读懂，规则就形同虚设。
 ```
 用户说「帮我报销」

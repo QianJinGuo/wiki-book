@@ -10,6 +10,24 @@
 Hermes Agent 是 Nous Research 于 2025 年 2 月开源的自托管智能体框架，GitHub 50.6K star，被认为是 OpenClaw 的首个真正竞争对手。其核心差异在于内置**闭环学习循环**（A Closed Learning Loop），通过"触发 → review → 写回 → 再注入"把 self-improving 飞轮真正跑通。
 
 ## 核心机制
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 系统架构三层
 1. **用户界面层** — 对外交互入口
 2. **核心代理层** — AIAgent、PromptBuilder、SessionDB、工具系统；闭环学习循环主要落在此层

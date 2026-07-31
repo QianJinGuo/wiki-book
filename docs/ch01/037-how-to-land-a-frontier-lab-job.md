@@ -16,6 +16,16 @@
 
 ## 三项底层特质
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 | 特质 | 含义 |
 |------|------|
 | Intent | 选高价值问题领域聚焦 |

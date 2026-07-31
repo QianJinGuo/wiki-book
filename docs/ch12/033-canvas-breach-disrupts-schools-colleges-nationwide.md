@@ -11,6 +11,19 @@
 [![Image 3: Krebs on Security](https://krebsonsecurity.com/wp-content/uploads/2021/03/kos-27-03-2021.jpg)](https://krebsonsecurity.com/ "Krebs on Security")
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
 - [Aws Bedrock Agentcore Identity Security](../ch11/270-aws-bedrock-agentcore.html)
 - [Github Investigating Teampcp Claimed 17Cc77](../ch01/820-github.html)

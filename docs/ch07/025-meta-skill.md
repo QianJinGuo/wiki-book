@@ -19,6 +19,22 @@
 > 关键转换：从"手动组合 Skill"到"Skill 自我编排"。
 
 ## 三大要素组合
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 | 要素 | 角色 | 类比 |
 |---|---|---|
 | **Meta Skill** | "项目经理的操作手册"——决定哪些步骤并行/串行、产出物上下游衔接 | PM |

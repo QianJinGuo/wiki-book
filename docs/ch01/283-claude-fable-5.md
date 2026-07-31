@@ -10,6 +10,19 @@
 
 ## 触发场景：Fable 5 把护栏从"后端黑盒"推到"前端产品体验"
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 X 用户 @amarjeet 测试 Claude Fable 5 时发现：当某些请求触发安全边界，系统**主动告知用户**——"我被护栏拦下了，换了一个备用模型给你回答"。
 
 **关键设计转变**：

@@ -12,6 +12,22 @@ Anthropic 官方开源的 `knowledge-work-plugins` 仓库是一个面向企业�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **岗位封装而非功能增强**：每个插件对应一个完整企业职能（如 engineering 插件含 10 个 Skills、9 个 MCP 连接器），让 Claude 具备岗位级专业能力
 - **4 种组件各司其职**：Skills（核心指令文件）、Commands（legacy 快捷命令）、Agents（cowork 中较少用）、Hooks（安全设计值得注意）
 - **3 级渐进式披露**：元数据（始终加载，~100 词）→ SKILL.md 正文（触发加载，~1500 词）→ references/examples（按需加载，无限制）

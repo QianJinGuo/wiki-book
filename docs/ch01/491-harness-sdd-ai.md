@@ -21,6 +21,24 @@ source_url: https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ
 - ####  步骤4：任务部署
 
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 「氛围编程」（Vibe Coding）的本质是用自然语言模糊了需求和实现之间的边界，这在探索性、原型化阶段有巨大价值，但当系统进入存量维护和复杂需求阶段时，这种模糊性就成了风险本身。Harness Engineering 和 SDD 的提出，本质上是在说：AI 辅助开发需要一套结构化的「确定性承重层」（Deterministic Load-Bearing Layer），而不能把所有决策都推给模型的随机生成能力。
 文章中「存量应用进行 Vibe Coding 风险非常高」这一判断揭示了一个被忽视的工程现实：对于已有大量业务逻辑、边界条件和异常处理的历史系统，AI 的介入必须非常谨慎。一个 5 万行的遗留系统，其「隐性规则」数量远超显式代码，任何未经 Harness 过滤的 AI 生成代码都可能与这些隐性规则产生冲突，结果是系统性的、难以追踪的回归 Bug。
 SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD 提供的是需求到规范的转化层（PRD → 设计知识库），而 Harness Engineering 提供的是规范到代码的治理层（设计知识库 → AI 执行）。这两者合在一起，构成了一条从业务需求到 AI 生成结果的完整链路。

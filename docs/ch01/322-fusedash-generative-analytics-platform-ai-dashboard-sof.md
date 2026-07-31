@@ -16,6 +16,19 @@ Fusedash 是一个生成式分析平台，通过自然语言描述直接生成�
 
 ## 产品定位与核心价值
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 Fusedash 将自己定位为「生成式分析平台」，而非传统意义的 BI 软件或数据可视化工具。核心差异在于：**仪表板不是被"建造"出来的，而是被"描述"出来的**。用户无需拖拽组件、无需设定布局、无需手动绑定数据字段，只需用自然语言说明需求，平台即可生成包含 KPI 卡片、筛选器、下钻视图的完整交互界面。
 
 这一理念与当前 LLM 应用的主流范式一致——将用户意图（intent）转化为结构化输出。在 Fusedash 的场景中，用户意图被转化为 SQL 查询逻辑、图表配置和仪表板布局。平台支持 Claude、GPT 或任何兼容 MCP 的模型，用户可以自选 AI 引擎而不被绑定。

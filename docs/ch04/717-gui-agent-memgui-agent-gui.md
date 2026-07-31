@@ -12,6 +12,24 @@ MemGUI-Agent 是由浙江大学 APRIL 实验室和快手主站技术部联合提
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 1. **长程 GUI 任务的两个核心瓶颈**：传统 ReAct 风格 Agent 在长程任务中面临"prompt explosion"（历史线性膨胀）和"information loss"（关键事实被噪声淹没）。几十步后，Agent 可能只记得"查过参数"但忘了具体数值。
 
 2. **ConAct（Context-as-Action）设计**：将上下文管理定义为与 UI 操作同级的"第一类动作"。Agent 每步输出五段结构化内容——thinking、folding、tool_call、ui_observation、action_intent——其中 tool_call 既可以是常规 UI 操作，也可以是 memory_add/update/delete 等记忆操作。

@@ -14,6 +14,19 @@ Ethan Mollick（One Useful Thing）2025 年 9 月的这篇文章记录了 AI age
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 测的是任务，不是工作
 
 Mollick 的关键区分：**测的是任务（task），不是工作（job）**。一份教授工作包含教学、研究、写作、年度汇报、学生支持、阅读、行政等多任务，AI 完成其中几个不意味着替代整份工作。在 jagged frontier 持续存在的背景下，AI 难以替代"整个工作"。

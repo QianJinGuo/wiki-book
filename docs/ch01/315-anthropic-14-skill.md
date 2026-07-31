@@ -110,6 +110,22 @@
 → [返回总览](../ch04/271-skill.html)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 系统性视角：5 类模式的内在逻辑
 Anthropic 的 14 种模式并非孤立的技巧，而是一条从「触发」到「执行」再到「校准」的完整链路。
 

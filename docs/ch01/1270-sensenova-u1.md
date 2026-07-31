@@ -27,6 +27,24 @@ NEO-Unify 完全去掉 VE 和 VAE，图像直接转化为 token，理解和生�
 - **混合注意力 Mask**：文本 token 走因果注意力，同块图像 token 双向关注
 
 ## 四步训练策略
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 1. **理解预热**：注意力融合，恢复语义骨干
 2. **生成预训练**：冻结理解分支，256-2048 动态分辨率掌握图像生成
 3. **统一中期训练**：双分支同时激活，84k 步端到端联合训练

@@ -31,6 +31,19 @@ Claude Code 中有三个易混淆但本质不同的概念：[^1]
 4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识
 
 ## 与 Hermes 的关联
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 Agent View 解决的问题域与 Hermes 的 [Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 高度相关：
 
 - Hermes 通过 wiki-pipeline 编排多个 agent 协作

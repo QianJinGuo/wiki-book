@@ -10,6 +10,22 @@
 **问题通常不在模型本身，而在模型周围工程——Harness。**
 
 ## Demo 型 vs 生产型代码库四维判别
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 | 维度 | Demo 型 | 生产型 |
 |------|---------|--------|
 | 工具 | 接受任意字符串，出错返回空列表 | 入口校验格式，结构化错误 |

@@ -12,6 +12,19 @@ AutomatorRunner 在 WeChat 发表的技术文章，记录了从 Claude Skills �
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - Claude Skills 绑定 Claude SDK，月费成本高；想切换到 DeepSeek/Gemini 需要 litellm 转接，增加故障点
 - Progressive Loading 是设计哲学而非 Claude 专利——可应用于任何 Agent 框架
 - Claude 官方《Building Effective Agents》核心观点：框架不重要，工具设计和上下文管理才是关键

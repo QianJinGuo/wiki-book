@@ -14,6 +14,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 ### HBM 读取时间：模型规模的物理约束
 
 token 生成速度的根本物理约束是 HBM 读取速度。当模型足够大，需要在单次前向传播中读取超过一半的 HBM 权重时，token 生成时间至少为 HBM 栈全量读取时间 × pipeline stage 数。

@@ -14,6 +14,24 @@
 
 ## 核心经验
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### Skills 的设计原则
 
 Skills 模块化的设计使得开发者可以像搭积木一样组合不同的能力。每个 Skill 聚焦单一功能，通过标准接口实现互操作。一个优秀的 Skill 需要提供三要素：明确的工作流程（什么时候该问、什么时候该做、什么时候该停下来让用户检查）、明确的质量标准（什么算好、什么算 AI 味太重）、明确的迭代接口（不满意时该反馈什么、Agent 知道该改哪一层）。

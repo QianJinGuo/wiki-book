@@ -17,6 +17,19 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 校验对象的范式转移：从「稳定」到「漂移」
 
 传统 Pydantic 解决的痛点是人填表单——用户名太长、邮箱没 @、手机号少一位，错误模式是稳定可枚举的，单条报错就有行动价值。LLM 时代校验对象换成 JSON 输出，同样的 prompt 跑 100 次，第 1 次可能字段名少下划线，第 47 次可能多出未定义字段，第 89 次可能把 str 字段塞 None——错误模式是漂移的、概率的，单次报错没有方向性价值，必须看跨批次的趋势分布。原文用工厂质检的三阶段比喻刻画这个迁移：从「成品逐件人工目检」→「抽检 + SPC 统计」→「在线监测 + 实时纠偏」。

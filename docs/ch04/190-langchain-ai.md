@@ -10,6 +10,19 @@ LangChain 创始人 Harrison Chase 系统分析 AI 智能体与沙盒集成的�
 
 ## 背景
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 智能体需要执行代码、安装软件包、访问文件，必须与主机系统隔离以防止访问凭证、文件或网络资源。沙盒提供了这种隔离，但如何集成沙盒与智能体有两条路线。
 
 ## 模式一：智能体在沙盒内运行

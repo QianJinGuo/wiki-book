@@ -12,6 +12,19 @@ Gartner 将 **Guardian Agents** 定义为：负责"管理 AI 代理身份/访问
 
 ## 核心问题：身份黑暗物质（Identity Dark Matter）
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 传统 IAM 系统设计时假设身份主体是人类用户——登录、执行操作、登出。而 AI 代理的运作模式截然不同：
 
 - **持续运行**：AI 代理不"登录-登出"，而是长期驻留持续执行任务

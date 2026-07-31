@@ -14,6 +14,22 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **人才流失的四条神经线**：Noam Shazeer（架构）、John Jumper（科学/AlphaFold）、Jonas Adler（预训练）、Alexander Pritzel（编程）——分别踩在大模型最核心的几条神经线上，引发市场对谷歌「能否留人」的深层担忧。
 - **Gemini 3.5 Pro 跳票**：I/O 2026 上承诺的 Gemini 3.5 Pro 从 6 月推至 7 月，两百万 token 上下文和 Deep Think 深度推理空有纸面规格，迟迟不到用户手中，加剧市场焦虑。
 - **Gemini Spark 的核心定位**：不是普通的聊天机器人，而是运行在云端专用 VM 上的持久化 Agent——用户合上电脑、锁了手机、睡着了，它还在云端继续运行。通过 Antigravity Agent 框架（Tasks、Skills、Schedules）实现定时或条件触发的自动化工作流。

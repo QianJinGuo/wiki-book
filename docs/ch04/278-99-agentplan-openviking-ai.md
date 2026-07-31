@@ -14,6 +14,24 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 1. **极致低价**：AgentPlan Small 套餐原价 ¥40/月，新用户活动期低至 ¥9.9/月，是目前性价比最高的 AI Agent 落地场景之一
 2. **AgentPlan 编排中枢**：作为"大脑和钱包"，负责多工具协同调用——专业数据集（DataPro）、豆包搜索、Agent 记忆（OpenViking）、Supabase 存储
 3. **OpenViking 记忆体**：采用虚拟文件系统范式替代传统 chunk-based RAG，通过三层上下文分级（L0 摘要 → L1 总结 → L2 完整内容）实现高效的记忆存取

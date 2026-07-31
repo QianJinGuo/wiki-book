@@ -17,6 +17,24 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 1. **语言形式（linguistic form）与接地语义（grounded semantics）的区分是理解 LLMs 局限的核心框架**
    传统语义理论都要求语言与某种语言外的东西相连：可能是世界中的对象与属性（Frege/Russell）、社会实践（维特根斯坦传统）、或心理概念（心灵哲学传统）。而 LLMs 的训练过程只接触词序流（word sequences），完全没有机会将内部表征连接到任何语言外实体——没有与人物、对象、事件、社会线索或意图状态的连接。这意味着 LLMs 可以学到丰富的语言形式结构（句法模式、语用惯例、词间关系），但这种结构不是语义结构，无法支撑真正的指称理论（theory of reference）。
 2. **分析性/综合性区分（analytic/synthetic distinction）揭示 LLMs 无法区分"依据意义为真"与"依据世界为真"**

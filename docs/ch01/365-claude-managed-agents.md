@@ -9,6 +9,22 @@ Claude Managed Agents 是 Anthropic 推出的托管 Agent 平台 API，核心是
 > 定位：从 Messages API（自己管一切）到 Managed Agents（只管提示词和任务），类比 AWS 从 EC2 到 Lambda 的演进。
 
 ## 四大核心概念
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. Agent（配置模板）
 可复用的配置定义：模型、system prompt、工具集、MCP 服务。
 

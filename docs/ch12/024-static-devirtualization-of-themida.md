@@ -12,6 +12,18 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 Back Engineering Labs 公开了对 **Themida/CodeVirtualizer** 这类基于虚拟机（VM-based）的二进制混淆器的静态去虚拟化技术。核心方法不依赖 VM 特定的模式匹配，而是通过 **Guided Symbolic Evaluation + SSA IR + 一套通用编译器优化 Pass** 把虚拟化的代码还原为可执行的原生代码。该方法对 VMProtect、Themida、vxlang、EagleVM 等多种 VM 混淆器都适用。配套引擎 **BLARE2** 支持 AMD64/ARM64 双架构 + 完整的 Pass 系统、优化器、指令选择器、寄存器分配器和链接器，能产出与原始函数近 1:1 的输出。
 
 ## 核心要点

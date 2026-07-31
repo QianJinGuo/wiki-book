@@ -29,6 +29,19 @@ MCP（ Model Context Protocol）服务正在成为下一个 OAuth 式的攻击�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 1. **OAuth 应用清单连续可见性**：将第三方应用的刷新令牌清单作为常设运营队列，而非定期审计时的一次性工作。每个持有活动刷新令牌的第三方应用都应被持续追踪，而非在审计时才想起它。 
 
 2. **授权年龄与重新同意策略**：建立超过 30 天未重新同意的令牌告警队列。授权期限应作为独立的安全策略维度，区别于传统的会话超时配置。 

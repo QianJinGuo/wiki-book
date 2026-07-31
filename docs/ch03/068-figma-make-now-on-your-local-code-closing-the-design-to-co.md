@@ -16,6 +16,24 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 - **核心主张：设计 vs 代码是假对立**。Figma 平台的设计哲学是「在正确的时刻给你正确的工具」，所以要打通从设计画布到生产代码库。
 - **代码现状对照 10 年前的设计**。Figma 刚推出时设计是离线单人模式，今天更多人用 Agent 写代码，但代码工具还停留在 2016 协作水平。IDE 和 terminal 对很多人来说不像「家」。
 - **直接编辑代码库（visual edits）**。在 Make 中选中元素、调整属性、改变布局/颜色/字体/尺寸，Agent 找到相关代码并编辑以让 UI 反映设计。

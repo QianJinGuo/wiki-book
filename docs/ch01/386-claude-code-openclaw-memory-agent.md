@@ -22,6 +22,24 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Claude Code 与 OpenClaw 的记忆系统分歧，本质上是两种截然不同的 AI 哲学立场在工程层面的体现。Claude Code 押注 LLM 的语义理解能力足以从少量记忆中精确定位相关内容——通过 Sonnet 进行 sideQuery，从几百个 frontmatter 中挑选 5 个最相关的记忆文件，完全绕开了向量数据库的检索范式。这种选择背后的潜台词是"LLM 已经足够聪明，不需要额外的检索基础设施"，它信任模型在上下文充足时的理解力，愿意以简洁架构换取这种灵活性。相比之下，OpenClaw 选择了更重的工程方案：SQLite + sqlite-vec 扩展做 embedding 检索，双路并行（余弦相似度 + BM25）再通过 Reciprocal Rank Fusion 加权合并。这代表的是"LLM 会犯错，确定性任务还是交给传统工程方案"的保守立场。两者没有绝对优劣，但揭示了一个核心问题：当记忆规模从几十个文件扩展到成百上千个时，LLM sideQuery 的准确率还能维持吗？
 
 Claude Code 的六层记忆架构（Managed → User → Project → Local → Auto Memory → Team Memory）实际上是一套精心设计的权限模型与优先级体系。每一层都有独立的生命周期和可见性边界：Managed 是系统级强制策略，User 是私有偏好，Project 是团队共享，Local 是个人项目级配置，Auto Memory 是 AI 自动提取的长期记忆，Team Memory 是跨仓库的组织级知识。这种分层设计在企业场景中尤为关键——系统管理员可以通过 Managed 层强制执行安全策略（如"禁止删除日志"），而团队成员各自维护自己的 Project 和 Local 层，互不干扰。值得注意的是，这套权限体系完全基于文件系统与 frontmatter，没有运行时权限检查机制，属于"约定大于配置"的软性治理。这与 OpenClaw 将身份拆分为 SOUL.md / AGENTS.md / USER.md / IDENTITY.md 等多个独立文件的做法形成了有趣的对比——两者都在试图解决同一个问题：如何在多用户、多项目、多会话的场景下，让 AI 始终知道"我是谁、我在哪里、我该遵守什么"。

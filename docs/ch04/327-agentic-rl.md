@@ -12,6 +12,22 @@ Cameron R. Wolfe 系统梳理了 Agentic RL 方向：当 LLM 从静态问答模�
 
 ## 从单轮 MDP 到多轮环境交互
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 Agentic RL 的状态包含模型上下文 + 外部环境状态；动作从 token 扩展到推理文本 / 工具调用 / 环境操作；奖励既有终局也有过程。直接后果：rollout 成本和方差显著上升，需环境隔离 + 并行部署（R2E-Gym 规模扩大后需引入 Kubernetes）。
 
 Agent 四类组件：LLM backbone + instructions（缩小探索空间）+ tools（API/代码解释器/浏览器/MCP）+ environment（状态/奖励/交互规则）。**harness 设计**是关键——上下文管理决定训练轨迹是否可学。

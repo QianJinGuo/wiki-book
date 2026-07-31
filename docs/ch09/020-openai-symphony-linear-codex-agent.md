@@ -14,6 +14,19 @@ Symphony 是 OpenAI 在 2026-06 前后开源的 **Codex 编排规范**：把 **L
 
 ## 背景：从「agent 写代码」到「管理一群 agent」
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 OpenAI 半年前做了一次激进实验：一个生产力工具项目里**仓库每一行代码都必须由 Codex 生成**。这件事跑通后，新的瓶颈出现——当 AI 已经能写代码时，**卡住团队效率的变成了「人类如何管理这些 AI」**。
 
 **今日 coding agent 的矛盾**：单 agent 能力越来越强（网页 / CLI / IDE 都能跑），但使用方式仍以**交互式**为主——工程师要同时开三到五个 session，分别分配任务、检查输出、补充上下文、纠正方向，**上下文切换成本急剧上升**。OpenAI 观察到「**agent 本身很快，但整个系统并没有真正变快**」，形容为「**拥有一批能力很强的初级工程师，却让高级工程师一直在旁边逐个盯进度**」。

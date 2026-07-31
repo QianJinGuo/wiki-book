@@ -10,6 +10,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 2026 年 6 月 2 日，多伦多大学（U of T）CleverHans Lab 与 Vector Institute 的 Nicolas Papernot 团队发布研究，首次证明**公开可访问的 AI 模型**可以被用于驱动一种新型蠕虫——这种蠕虫会随着从一个设备扩散到下一个设备而**自适应调整策略**。与传统需要顶尖 AI 能力和高额成本的高级威胁不同，这种 AI 蠕虫可以用免费的开源模型构建，攻击每一个联网设备，而当前的网络防御体系尚未准备好应对这种威胁。
 
 ## 核心要点

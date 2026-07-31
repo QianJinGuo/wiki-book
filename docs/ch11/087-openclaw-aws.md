@@ -5,6 +5,19 @@
 > 📊 Level ⭐⭐ | 10.3KB | `entities/enterprise-openclaw-security-deploy-architecture-guide.md`
 
 ## 概述
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 企业级OpenClaw安全部署架构指南 by awschina on 23 4月 2026 in Security, Identity, Compliance Permalink Share 摘要：本博客提供企业在亚马逊云科技上部署类OpenClaw智能体的综合安全方案指南，包括架构设计、缓解注入攻击、企业内部系统集中访问和细粒度授权等。 目录 01 引言 02 AI Agent 安全：一个全新的问题域 03 威胁全景：了解你的对手 04 安全架构总览：纵深防御七层模型 05 核心安全能力：Amazon Bedrock AgentCore 06 关键安全场景与解决方案 07 安全运营：12 项安全控制清单 08 参考资源 09 相关链接 1. 引言 在过去十年中，企业安全架构的演进经历了从边界防御到零信任的深刻转型。然而， Agent 的出现正在带来又一次范式级的挑战——这一次，威胁不再单
 
 ## 核心技术

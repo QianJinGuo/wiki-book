@@ -12,6 +12,19 @@
 
 ## 核心反直觉判断
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 大众对头部 AI 大厂普遍存在一种"刻板印象"：一定由顶尖高校博士 + 各大前沿研究论文作者 + 算法天才组成。但**实际上不是**。Anthropic 这家被外界视为前沿 AI Lab 的公司，真正极度渴求并大规模雇佣的，似乎并不是理论派的「研究员」，而是有能力在产业界落地大规模生产系统的「**构建者**」。
 
 ## 数据来源

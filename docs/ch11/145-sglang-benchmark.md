@@ -10,6 +10,16 @@
 
 ## 核心贡献
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 本文的核心价值在于提供了一套**可复现的大模型推理部署方法论**，而非单一的技术点：
 
 1. **Benchmark 方法论**：明确了测试规划、指标定义、变量控制（Warmup 策略、input/output 长度固定）、及结果可信度验证 —— 尤其揭示了 SGLang bench_serving 在 PD 分离场景下对截断请求的误判问题

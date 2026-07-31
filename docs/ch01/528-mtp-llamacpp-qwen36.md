@@ -14,6 +14,16 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 - **MTP 加速在 GPU 上效果显著（+83%），但在 CPU 上反而降速（-18% ~ -40%）**：GPU 并行计算使 draft token 验证几乎"免费"；CPU 串行执行的每个验证都有实际计算开销，抵消了 acceptance 的节省
 - **Graviton4 ARM 比 Intel x86 快 1.86x ~ 2.34x**：LLM 推理是 memory-bandwidth-bound 任务，Graviton4 的 DDR5-5600 + ARM SVE/MMLA 指令优化优势巨大
 - **MoE 模型是 CPU 部署的关键**：35B-A3B MoE（激活参数仅 ~3B）在 CPU 上比 27B Dense 快 3.7x ~ 4.6x

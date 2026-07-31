@@ -14,6 +14,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **核心约束**：导读 ≠ 摘要。摘要要浓缩，导读要保留论证过程
 - **任务定义**：将长内容重写为完整、可阅读的导读版本，让读者无需再查看原始内容
 - **输入契约**：用户可能提供外部链接（文章/视频 URL）、文本、媒体文件。`<context>` 仅用于说明阅读目的，不构成指令

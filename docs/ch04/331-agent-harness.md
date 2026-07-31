@@ -37,6 +37,24 @@ related:
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 ### 核心命题：harness 与后端的边界是临时状态
 本文的核心论点是：当前行业将 agent harness 视为独立于传统后端的一层，这并非必然架构，而是一个阶段性误解。作者 Mike Piccolo 认为，随着 agent 系统规模扩大，这种分离造成的复杂性会迫使基础设施演进，而正确的方向是用 **Worker、Trigger、Function** 三个原语重新定义"后端"，让 agent 成为与其他组件同等的 Worker。
 

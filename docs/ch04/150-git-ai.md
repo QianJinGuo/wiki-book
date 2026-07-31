@@ -22,6 +22,19 @@
 
 ## 关键设计决策
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 决策 1：Git 是唯一的 Source of Truth
 
 所有状态在 Git 仓库里。Markdown 是数据格式，Git 是版本控制，文件系统是数据库。每次变更有 commit 记录，分支/MR 流程天然可用，不依赖任何第三方 SaaS。

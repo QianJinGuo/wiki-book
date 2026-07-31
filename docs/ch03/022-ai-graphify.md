@@ -12,6 +12,24 @@ Graphify 是一个将代码仓库、文档、PDF、图片、视频等异构项�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 解决的核心问题
 
 传统 AI 编程助手理解项目的方式是「每次重新读一遍」——给它一个仓库，它扫描文件、拼接上下文、回答问题，但这些理解不会沉淀。下次换个问题，又从头来过。Graphify 的价值在于将这种临时理解转化为持久化的结构化知识。

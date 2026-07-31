@@ -22,6 +22,24 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### 从"对话式 AI Coding"到"Harness Engineering"的根本驱动力
 
 文章揭示了一个关键趋势：**AI Coding 的工具效率提升正在遭遇"工程天花板"**。单个开发者在对话窗口中通过 prompt 驱动 AI 写代码可以做到 10 倍速，但当团队规模扩大、项目复杂度提升后，瓶颈从"代码生成的效率"转移到"工程流程的协调效率"。

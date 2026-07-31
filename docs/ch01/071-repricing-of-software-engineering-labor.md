@@ -27,6 +27,19 @@ Pull up a resume from an engineer who started around that time and you will usua
 
 ## LLMs Changed The Dynamics
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 LLMs did not kill software engineering. It compressed the cost of implementation. The work that got hit first was the work that was already standardized: CRUD apps; API integration and glue code; Framework-heavy backend work; Frontend scaffolding; Standard architectural patterns.
 
 What used to take a team can now is being done by a 2-member team and AI. That is why implementation-heavy roles are becoming low-leverage work.

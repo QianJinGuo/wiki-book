@@ -25,6 +25,19 @@ As it turns out, a slightly stale skill isn’t just inefficient, it’s a liabi
 
 ## The Problem We Were Trying to Solve
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 At Wix, the tech writers team writes and maintains developer documentation. This includes API references, guides, tutorials, and anything else an external developer needs to build apps on the Wix platform. Increasingly, the audience for our docs is shifting from human developers to AI agents. To handle this shift, our team took on responsibility for making sure our docs actually work for agents, not just humans.
 
 Around the same time, we started seeing skills appear. Teams throughout the company began writing skills, teaching agents how to do specific developer tasks. These skills contained a mix of information extracted from docs, combined with curated instructions and information for guiding agents. All the skills were maintained independently, without coordination with the documentation they were derived from.

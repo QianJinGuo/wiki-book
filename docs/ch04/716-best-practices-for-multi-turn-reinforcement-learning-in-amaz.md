@@ -14,6 +14,24 @@ SageMaker AI MTRL 提供模块化 Agent-Environment 接口，支持低代码集�
 
 ## 最佳实践要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 1. **训练环境可信度**：构建可信任的训练环境，防止 reward hacking
 2. **外部评估**：设置独立于训练的评估 pipeline
 3. **奖励函数设计**：对齐最终任务的奖励信号

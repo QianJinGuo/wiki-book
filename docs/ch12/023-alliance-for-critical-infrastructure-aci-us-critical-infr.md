@@ -12,6 +12,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 2026 年 2 月，JPMorgan Chase、Mastercard、AT&T、Berkshire Hathaway Energy 等公司联合发起 Alliance for Critical Infrastructure（ACI，关键基础设施联盟），把既有的三部门执行工作组（Tri-Sector Executive Working Group：能源、金融、电信）重组为可吸纳更多成员的非营利组织。联盟成立的直接背景是 Trump 政府对 CISA 的大幅裁员、关闭 Critical Infrastructure Partnership Advisory Council（CIPAC），并暗示可能关闭 FEMA——这导致基础设施运营商失去与联邦政府的协调通道。ACI 的核心战略是四支柱：① 跨部门依赖分析；② polycrisis（复合危机）联合响应；③ 私营部门对政府的运营支持（含扩大的信息共享）；④ 政策与监管建议。
 
 ## 核心要点

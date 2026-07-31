@@ -12,6 +12,19 @@
 - **关联工具**：OpenSpec、Superpowers、gstack
 
 ## 核心概念
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 三个工具在同一个 Claude Code 会话中串联整合，各管不同层次，互不干扰：
 | 工具 | 职责 | 存储位置 |
 |------|------|----------|

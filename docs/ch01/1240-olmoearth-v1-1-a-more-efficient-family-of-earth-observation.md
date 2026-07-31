@@ -14,6 +14,25 @@ OlmoEarth 已被广泛应用于追踪红树林变化、分类森林损失驱动�
 
 ## 核心创新：Token 序列长度优化
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 OlmoEarth 模型基于 Transformer 架构，处理遥感数据时需先将数据转换为模型可摄入的 token 序列。在 Transformer 模型中，**模型大小**和 **token 序列长度** 是控制效率的两个关键杠杆：
 
 - **模型大小**：OlmoEarth v1.1 以模型家族形式发布（Base、Tiny、Nano 三种规格），用户可根据自身计算预算选择合适的模型规模

@@ -12,6 +12,22 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch11/235-openclaw.html)
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/175-apache-doris-mcp-server-quick-suite-ai.html)

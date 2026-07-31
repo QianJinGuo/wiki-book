@@ -16,6 +16,19 @@
 
 ## 从"时间驱动"到"上下文驱动"的范式转变
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Scheduled Tasks 2.0 解决的核心问题是上一代调度系统的根本局限：基于时钟的调度（cron-style）假设每一次执行都是独立事件，任务的上下文在每次触发时都需要重建。
 
 传统调度系统的局限在于，它只回答"什么时候运行"，而不回答"在哪里运行"和"保留什么上下文"。当人们听到"调度任务"时，第一反应是"在设定的时间运行一个任务"——这确实是 Scheduled Tasks 1.0 解决的问题：每日摘要、周报、定期扫描和常规总结都可以无需手动启动就能运行。

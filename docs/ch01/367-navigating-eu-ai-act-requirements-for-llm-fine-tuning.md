@@ -14,6 +14,24 @@ Markdown Content:
 The EU AI Act requires organizations fine-tuning large language models (LLMs) to track computational resources measured in floating-point operations (FLOPs) to determine compliance obligations. As c...
 
 ## 关键要点
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 - 技术领域：AI / Regulatory / EU AI Act / Amazon SageMaker
 - 来源：AWS Machine Learning Blog
 - 评分：value=8, confidence=9, product=72

@@ -14,6 +14,16 @@ This article provides a first-principles analysis of LLM inference costs, starti
 
 ## Key Points
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 ### 1. Two Numbers Define GPU Inference Capacity
 
 Every GPU has two critical specs that determine inference performance:

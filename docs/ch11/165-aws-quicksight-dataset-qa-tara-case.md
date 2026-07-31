@@ -12,6 +12,19 @@ While the data existed, it was often “trapped” behind rigid visualizations t
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 核心架构转变：从 Topics 到直接 Dataset Q&A
 
 TARA 的本质突破在于**移除语义中间层**。传统 Topics 模式需要在语义模型中手动定义每个字段、关系、同义词和聚合规则，用户才能查询数据。直接 Dataset Q&A 则在查询时动态完成所有工作。

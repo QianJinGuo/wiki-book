@@ -19,6 +19,24 @@ SWE-1.7 是 Cognition 公司基于 Kimi K2.7 基座训练的最新编程智能�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 - **成本-性能 Pareto 前沿推动**：SWE-1.7 挑战了"后训练天花板"（Post-Training Ceiling）假设——基座模型 Kimi K2.7 已经过充分 RL 后训练，但 Cognition 的额外 RL 训练仍带来大幅提升，表明 RL 的能力挖掘远未到极限。
 - **熵值保存与训练稳定性**：发现 top-p 采样在 rollout 中能有效防止熵坍塌（Entropy Collapse），但简单的 top-p 实现会放大训练-推理分布不匹配。通过采样分布重放（记录 rollout 时的可用 token 集合，在训练器中用同样的 mask 重归一化概率），使熵在训练全程保持恒定。
 - **三大洲多集群训练**：利用 RL 的自然拆分特性——训练器集中在单集群，推理引擎可分布在任意集群。跨四个数据中心、三大洲，通过对象存储传输压缩权重增量（>99% 压缩率），1T 参数的跨洲权重更新仅需 1-2 分钟。

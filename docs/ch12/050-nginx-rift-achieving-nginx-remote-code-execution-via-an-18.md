@@ -14,6 +14,19 @@ Internally, we have an autonomous system that specializes in analyzing low level
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 **1. 18 年静默的内存损坏：经典状态机的两面-pass 设计缺陷**
 CVE-2026-42945 的本质是一个精妙的状态机缺陷：NGINX 脚本引擎采用"两次-pass"设计——第一次计算所需内存长度，第二次执行实际拷贝。 关键问题出在 `is_args` 标志位上：当 `rewrite` 指令的替换字符串包含问号时，`ngx_http_script_start_args_code` 会将 `e->is_args = 1` 永久设置在主引擎上。但在计算长度时，`ngx_http_script_complex_value_code` 创建了一个全新零初始化的子引擎 `le`， 其 `le.is_args = 0`。长度计算因此走向未转义的分支，而拷贝时却使用主引擎（`is_args=1`）进入了转义分支——这个状态不一致在 2008 年就存在，18 年来无人发现。
 

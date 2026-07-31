@@ -12,6 +12,19 @@
 
 ## 背景
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 在 OPC 团队中，没有专职产品角色。团队不仅要关注"把需求做完"，还必须回答更前置的问题：这个问题是否真的值得做？证据来自用户、数据还是直觉？需求边界是否清楚？上线后如何判断成功或失败？Anthropic 开源的 Product Management Skills 正好可以承接这些问题——它本质上是一套产研共同决策框架，把从发现问题到上线复盘的过程拆成一组可重复使用的动作。
 
 ## 核心设计

@@ -14,6 +14,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **三层架构**：Harness 层（CLAUDE.md 可验证约束 + 决策点 + 组件分层对照表）→ Skill 层（8 个 Skill，带硬门控的执行步骤，借鉴铁律纪律）→ Spec 层（Delta Spec，只写变化的规范）
 - **组件分层对照表**：L0 原始层（禁止直接使用）→ L1 封装层（优先使用）→ L2 业务层（搜到即用）→ L3 页面层（仅对应页面内）。自动维护：review 发现违规 → 判断规范缺失 → 自动补入 CLAUDE.md
 - **流程裁剪**：三种模式——full（完整链）、light（小改动）、bugfix（独立链路），避免小改动大流程

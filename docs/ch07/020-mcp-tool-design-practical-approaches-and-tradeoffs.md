@@ -14,6 +14,24 @@
 
 ## 核心挑战：Bloat 与 Confusion
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 MCP 工具设计面临两个核心问题：
 
 1. **Bloat（膨胀）**：工具定义每次调用都加载到 LLM 的上下文中，无论工具是否被使用。多个连接的 MCP 服务器可能会在用户提出一个问题之前就消耗大量上下文。随着上下文填满，LLM 的推理能力会下降。

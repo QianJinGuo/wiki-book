@@ -15,6 +15,24 @@
 **论文给出的更扎心结论**：是，但有严格前提。
 
 ## 相关实体
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 - [Lucasfcostacom Blog Backpressure Is All You Need](../ch01/005-backpressure-is-all-you-need.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/330-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Ai Native Startup Cyberfund Guide](ch05/018-ai-native.html)

@@ -12,6 +12,16 @@ MTP drafters 以 Apache 2.0 开源协议发布，兼容 vLLM、MLX、HuggingFace
 
 ## 问题背景：为什么 LLM 推理慢？
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 LLM 推理的核心瓶颈是**内存带宽瓶颈**（Memory Bandwidth Bottleneck）：
 
 - 标准大模型每次只能生成 **1 个 token**

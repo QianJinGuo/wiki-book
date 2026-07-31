@@ -11,6 +11,22 @@
 - **战略重点**: Enterprise IT 应关注编排框架承诺、工作流表面和服务合作伙伴关系，而非点解决方案的模型替换
 
 ## 摘要
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 随着模型替换成本持续下降，AI 供应商锁定正在发生结构性迁移。真正的锁定不在模型层——那里替换越来越容易——而在模型周围的工作流、治理和运营层面。编排框架积累的粘性、工作流管理平面的锁定、以及嵌入运营深处的服务关系，才是构成新一代 AI 锁定的核心。
 
 ## 深度分析

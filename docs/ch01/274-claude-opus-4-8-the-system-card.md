@@ -23,6 +23,19 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 三个基准点：4.7、4.8、Mythos
 
 Anthropic 的模型坐标系已经形成三个基准点：Opus 4.7（6 周前发布）、Opus 4.8（增量升级）、Mythos（更高能力基线但未公开释放）。System card 的核心叙事是「4.8 比 4.7 强但比 Mythos 弱」——Mythos 是 outlier，4.8 反而是直线上的正常点。这种三明治式比较反映了前沿模型实验室的发布策略：基准线被推到能写 Anthropic 内部 slack 的级别（Mythos），增量更新变成「更便宜的版本」。

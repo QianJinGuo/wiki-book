@@ -19,6 +19,19 @@
 > 论文原话：Agent skills are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, **none of which mirrors the reproducible, feedback-driven optimization loop that makes deep-learning training reliable**.
 
 ## 四步训练循环（mini training loop）
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 步 | 动作 | 关键设计 |
 |---|---|---|
 | 1. **执行任务** | agent 携带 skill document 跑任务，记录完整 rollout 轨迹和得分 | |

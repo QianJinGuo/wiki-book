@@ -12,6 +12,24 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **AI 业务资产论**：AI 投入不再是成本中心，而是需要用新估值指标衡量的业务资产
 - **硅基员工进入公司治理**：6 类 Agent（财务/法务/销售/投研/供应链/IR）进入正式治理架构
 - **五大新估值指标**：SPC、RPA、PCI、IGM、ARR，构成 AI 原生公司的估值框架

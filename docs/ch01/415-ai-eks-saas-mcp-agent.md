@@ -14,6 +14,22 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **三层诊断架构**：确定性规则层（32 条规则，零幻觉）→ AI 总结层（关联分析 + 场景化判断）→ Agent 自主诊断层（按需实时数据采集）
 - **核心差异化**：通过 Amazon EKS MCP Server 实现 AI Agent 的"主动探索"能力，突破传统静态扫描工具的"固定数据集"局限
 - **异步事件驱动架构**：SQS + ECS Fargate 解耦，消除 Lambda 函数的 15 分钟超时限制，使 Agent 能从容执行多轮工具调用

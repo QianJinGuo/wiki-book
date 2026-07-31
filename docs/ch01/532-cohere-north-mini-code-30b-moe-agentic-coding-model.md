@@ -48,6 +48,18 @@ Cohere 在评测中使用了三个 harness：
 
 ## 三件独特贡献（与同 size 开源 coding 模型差异）
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 1. **Sovereign-developer定位** —不同于 Qwen3-Coder、Devstral 等"中国/欧洲主权云"模型，North Mini Code 是北美大厂第一款明确"反 vendor lock-in"的开源 agentic coding 模型。Apache2.0 + 本地/私有部署 + "freedom from vendor constraints"叙事直接对标商业 API 模型。
 2. **256K context +64K max generation** — 同 size级别里 context window 大幅领先（Devstral Small2约32K），让 agentic coding 可在长 repo + 多文件上下文中执行。
 3. **30B MoE 高效推理** —3B active 让单卡 H100 可跑，是"小尺寸 + 长 context + agentic"三角平衡的代表；与 Qwen3-Coder-30B-A3B（同年同月发布）的设计哲学几乎完全重合，构成"open agentic coding30B MoE" 的双重选项。

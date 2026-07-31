@@ -16,6 +16,24 @@
 | **L7 行业应用** | 业务落地 | 医疗/法律/金融/研发 |
 
 ## 核心设计原则
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 - **Harness = 底盘 + 刹车 + 仪表盘 + 安全带**：框架给工具，Harness 给系统级保障
 - **稳定压倒一切**：断点续跑、多模型容灾、五级风险分级
 - **成本意识**：上下文压缩 52%、简单任务用便宜模型

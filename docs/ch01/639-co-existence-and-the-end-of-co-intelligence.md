@@ -14,6 +14,24 @@ Ethan Mollick 在 _Co-Intelligence_ 出版两年后宣布新作 _Co-Existence_�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 - **范式转移的论据**：Anthropic 报告 AI 写 80% 代码、每个开发者产出 8× 代码量；研究显示 AI 编码 agent 带来 17× 代码量增长。Co-intelligence 阶段（人类居中、chatbot 是助手）已被 agent 阶段（自主系统超越人类）取代。
 - **写书的"边界"经验**：Mollick 亲手写每一章草稿（AI 不擅长长文写作、有明显的文本痕迹、读起来乏味），但仍使用 AI 做章节审稿、事实核查（让多模型议会交叉验证）、解困助手。最终决定比上一本书少用 em-dash，"绝望地证明文字是人类的"。
 - **建站委托的彻底翻转**：新书网站用 Claude Code + Opus 4.8 在几分钟内完成（之前用模板耗数小时）。这引出反向问题——**如何让 AI 喜欢你的作品**？AI 会读你写的内容并决定是否推荐给人类用户。

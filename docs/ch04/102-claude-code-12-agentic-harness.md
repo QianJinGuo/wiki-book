@@ -44,6 +44,24 @@
 ** 权衡点  ** ：压缩一定是有损的。信息在一轮轮总结中会丢失，如果后面又需要这些细节，Agent 可能会「编」而不是承认不知道。
 
 ##  工作流与编排
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 这一组模式的核心其实就是一个词：  ** 分离  ** 。
 把读取和写入拆开，把「查资料」和「改代码」的上下文拆开，把顺序执行和并行执行也拆开。这样做的好处是，随着任务变复杂，系统不会越来越乱。
 大多数 Agent 的默认做法是把这些事情混在一起，刚开始可能没问题，但任务一多，质量就很容易下降。

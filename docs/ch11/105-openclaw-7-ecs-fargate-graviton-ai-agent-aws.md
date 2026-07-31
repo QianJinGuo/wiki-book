@@ -10,6 +10,22 @@
 
 ## 三个独有贡献（独立 entity 价值）
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 1. **ECS Fargate + Graviton 变体的完整 IaC** — 与系列第 3 篇 EKS + K8s 变体形成 infra 选择双胞胎：前者托管无节点管理、后者 K8s 灵活可扩展。本文给出 Terraform 完整模板 + EFS Access Point 权限三件套 + ALB Path-Based Routing 的 per-tenant 动态生成。
 2. **OpenClaw + Hermes 双 Agent 并行部署模式** — 每用户 Slot 同时包含两个互补 Agent（OpenClaw 走多渠道+Web UI、Hermes 走自进化+持久记忆+操作 AWS/EKS），通过 EFS Access Point 的 uid/gid 差异（1000 vs 10000）实现文件级隔离。
 3. **四层隔离纵深防御 + Agent 驱动数据分析工作流** — 路由层 (ALB path) / 计算层 (独立 ECS Task) / 存储层 (EFS AP) / 分配层 (DDB ConditionExpression) 四层机制；实战环节用 Hermes 通过预装 kubectl/aws cli 直接管理 EKS Spark 集群跑 NYC 出租车数据分析。

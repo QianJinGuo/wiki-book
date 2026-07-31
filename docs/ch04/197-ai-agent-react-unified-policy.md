@@ -12,6 +12,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **旧架构三大工程原罪**：极高的时间复杂度（三节点 DAG 导致 3 倍推理延迟）、上下文震荡（状态在节点间重复搬运导致 Prompt 指数级膨胀）、控制流破碎（新工具融入需硬编码 If-Else 特判逻辑）
 - **Workflow + Agent 分层原则**：预定义路径、硬规则校验、权限控制留在 Workflow；Agent 只负责在环境反馈中做动态策略决策
 - **Unified Policy 节点**：单次前向传递同时完成全局规划（Planning）、动作选择（Action Selection，输出结构化 JSON Schema 指令）、终止判定（Termination）

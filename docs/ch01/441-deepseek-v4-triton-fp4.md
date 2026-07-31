@@ -13,6 +13,16 @@
 4. **profiling 方法论**：消灭数据搬运比加速计算更有效
 
 ## 关键数据
+
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
 | 优化阶段 | 单次 GEMM | 端到端速度 | 相对首版 |
 |---------|---------|-----------|---------|
 | 基线：Python fallback | 52 ms | 0.79 tok/s | 1.0x |

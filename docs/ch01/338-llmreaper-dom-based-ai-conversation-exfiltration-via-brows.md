@@ -12,6 +12,19 @@ LLMReaper 是 thewhiteh4t 发布的概念验证（PoC），演示恶意 Chrome �
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - **任何扩展都能读取 LLM 对话**：当用户给浏览器扩展授予站点权限时，扩展就可以读取该页面 DOM 的全部内容——包括用户提示词与 LLM 回答，因为这些内容正是通过 DOM 渲染的。
 - **历史供应链攻击持续重演**：2024 年 12 月 Cyberhaven 扩展供应链攻击波及 260 万用户；2025 年 2 月 GitLab 威胁情报团队发现 16 个恶意 Chrome 扩展影响 320 万用户；2026 年 4 月发现 100+ Chrome 扩展窃取 Google OAuth2 Bearer tokens 与 Telegram 会话。
 - **PoC 实现细节**：包括 chrome_ext（manifest.json、popup.html、popup.js、scripts/background.js、scripts/content.js）与后端 llmreaper.py，兼容 Manifest V3，minor 修改即可移植到 Firefox。

@@ -47,6 +47,24 @@ Token 退化的本质是**预训练-后训练数据分布失配**在 token 粒�
 - [LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](ch01/1274-llm.html)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 ### 退化本质：lm_head 而非 embedding
 Token 退化的精确定位是 **lm_head 输出层**，而非 embedding 输入层。对比实验（预训练模型能输出"马嘉祺"，SFT 后不行）+ 语义理解能力未损（能回答马嘉祺信息）双重验证了这一点。这意味着修复应聚焦 lm_head 权重修正，而非重新训练 embedding。
 

@@ -18,6 +18,22 @@
 
 ## 三层体系的架构映射
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 | 层次 | 对应路线 | 核心能力 | 代表系统 |
 |------|---------|---------|---------|
 | **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](../ch05/058-agent-harness.html) |

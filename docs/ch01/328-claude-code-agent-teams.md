@@ -16,6 +16,20 @@
 
 ## 三种协作结构
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 Subagents、Agent View、Agent Teams 不按 Level 1/2/3 排队，它们解决的是不同问题：
 
 | 能力 | 价值 | 适合场景 |

@@ -14,6 +14,19 @@ CrewAI 团队的核心论断：最有效的 agentic 系统都起步于"丢人的
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **POC 墓地陷阱**：技能娴熟的工程师设计"理想系统"——研究员 agent 给规划 agent 喂数据，规划 agent 协调执行 agent，质量 agent 验证结果。三个月后，仍停留在开发阶段，零生产流量。问题不是野心，是**在还没理解系统时就优化**。
 - **医疗人员资质验证案例**：一家医疗人员配置公司没有从自动化整个入职流水线开始，而是只做了一件事——背景调查工作流。第一个版本简单直接：收集人员数据、查询相关源、JSON 结构化输出、基于数据决策、推送结果到 Snowflake。几周交付，后续通过真实运行逐步加上护栏、人工审计、并行工作流。
 - **Human-in-the-loop 是特性不是限制**：从 100% 人工审核开始，逐步降到 80% → 50% → 完全自主。审核者会告诉你**实际**哪里出错，而不是你**想象**会出错的地方。

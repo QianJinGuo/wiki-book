@@ -7,6 +7,19 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 - Shai-Hulud npm 蠕虫新变种，针对 TanStack 生态发起供应链攻击
 - 利用 `pull_request_target` + GitHub Actions 缓存污染 + OIDC 令牌内存提取攻入发布流水线
 - 令牌窃取后通过 GitHub 提交搜索实现 P2P 中继，绕过一切 C2 阻断

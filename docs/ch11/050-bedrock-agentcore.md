@@ -5,6 +5,22 @@
 > 📊 Level ⭐⭐ | 12.9KB | `entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md`
 
 ## 摘要
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 Amazon Bedrock AgentCore 支持自定义代码评估器（Custom Code-Based Evaluators），通过将 AWS Lambda 函数作为评估引擎，对 Agent 应用进行确定性质量检查。适用于金融、医疗等强合规领域，弥补 LLM-as-a-Judge 在结构化约束（JSON Schema、数值精度、工作流顺序、PII 合规）上的不足。评估可在 On-Demand（开发迭代、CI/CD 回归测试）和 Online（生产流量持续监控）两种模式下运行。
 
 ## 核心概念

@@ -16,6 +16,24 @@ Storage Agent Family 是火山引擎（Volcano Engine）推出的面向云存储
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **去中心化 Agent 架构**：每款存储产品拥有独立 Agent，而非一个统一大 Agent——TOS Agent 偏运维向，TLS Agent 偏分析向，各自的 Agent 由产品团队独立研发
 - **四类核心场景**：日常运维编排、异常排查根因定位、数据洞察与成本分析、多媒体内容创作闭环
 - **四项关键机制**：活跃会话无上限、User 级长期记忆、User 凭证贯穿全部动作、动作安全护栏（Commit + Dry-Run + 分级管控）

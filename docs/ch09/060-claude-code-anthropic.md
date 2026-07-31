@@ -9,6 +9,24 @@
 Claude Code 的能力上限，取决于你怎么配它，模型本身有多强反倒是其次的。
 
 ## Agent 式搜索 vs RAG
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 方案 | 机制 | 大型代码库的问题 |
 |------|------|----------------|
 | **RAG** | embedding + 向量检索 | 索引更新速度跟不上工程师提交速度，可能查到过期内容且无提示 |

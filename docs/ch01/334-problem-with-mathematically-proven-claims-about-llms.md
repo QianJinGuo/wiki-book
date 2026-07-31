@@ -10,6 +10,24 @@ John Allsopp 在 Web Directions 博客发表文章，系统性批判了近年来
 
 ## 三类被误用的「数学证明」
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### 1. AI 不能自我改进——Zenil 论文的 KL-flow 收敛
 
 支持此论点的核心引用是 Hector Zenil 等人的论文，提出 LLM 的 KL-flow 收敛证明——在无外部验证器的情况下，AI 无法通过自我生成数据实现持续改进。

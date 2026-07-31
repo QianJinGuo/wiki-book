@@ -19,6 +19,19 @@
 
 ## QoderWork 诊断
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 实际排查过程展示了 AI 编码工具在系统诊断中的独特价值：
 
 1. QoderWork 运行 `top` 发现 Load Average 46，CPU 空闲 0%，16GB 内存几乎耗尽，只剩 120MB 可用

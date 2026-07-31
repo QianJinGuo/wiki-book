@@ -15,6 +15,24 @@
 
 ## Reranker 是什么？为什么要用 Retrieve-then-Rerank？
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 **Reranker（CrossEncoder）** 接收一个 `(query, document)` 对，输出一个相关性分数。与 Embedding 模型不同，CrossEncoder 在所有 Transformer 层中让两个文本互相 attention，因此精度更高但计算更贵——每个 `(query, document)` 对都要单独跑一次模型。
 
 因为 CrossEncoder 成本太高无法对整个语料库打分，业界标准做法是 **Retrieve-then-Rerank** 两阶段流程：

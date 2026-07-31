@@ -8,6 +8,19 @@
 Martin Fowler 在 Pragmatic Engineer 播客访谈中指出：**软件工程过去几十年都建立在一台确定性机器上，现在我们把一个非确定性的协作者接进了研发链路。** 这个视角将 AI 研发的各种新概念（Vibe Coding、Agentic Engineering、Harness Engineering 等）统一到了一个核心问题下：当 AI 开始读仓库、改文件、调工具、跑测试、开 PR、查日志、修 CI 时，整个研发系统怎么消化这种非确定性。
 
 ## 关键论点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 1. 非确定性进入研发链路
 - 软件工程建立在确定性机器上，LLM 是概率性系统，本质上是非确定性的
 - AI 同一目标可能用不同路径完成；解释失败可能看似合理却未经验证；改一处可能顺手改旁边多处

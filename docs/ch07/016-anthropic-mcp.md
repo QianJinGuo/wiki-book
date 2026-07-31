@@ -17,6 +17,22 @@ Anthropic 发布官方博客《Building agents that reach production systems wit
 ---
 
 ## 01 社区批评回顾
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 过去一个多月社区对 MCP 的批评集中在三点：
 | 问题 | 数据 |
 |------|------|

@@ -14,6 +14,19 @@ CostaLong 月影 2026 年 5 月的这篇文章系统介绍 Claude Code 的 Skill
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. Skill vs Prompt 的本质差异
 
 | 维度 | Prompt | Skill |

@@ -12,6 +12,19 @@ HUMAN Security 于 2026 年 6 月 2 日发布的《2026 年 AI 流量与网络�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 1. **AI-Powered Bot Traffic 正在突破传统检测防线**：Bot 网络运营者利用 LLM 生成多样化、拟人化的流量特征，规避基于规则和签名的检测系统
 2. **Credential Stuffing 攻击的精准度大幅提升**：AI 使攻击者能够自动化分析泄露数据，构建高度个性化的凭证组合，而非简单粗暴的批量尝试
 3. **Ad Fraud 进入 AI 生成行为时代**：虚假用户的点击、浏览和转化行为由 AI 生成，难以通过传统行为分析检测

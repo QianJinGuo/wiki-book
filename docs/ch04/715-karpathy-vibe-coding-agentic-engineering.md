@@ -8,6 +8,19 @@
 Karpathy 在红杉资本 AI Ascent 2026 访谈的核心观点深度解读。文章从 Vibe Coding 的起源（2025.2）到 Agentic Engineering 的定型（2026.2），系统梳理了 AI 辅助编程从"个人工具"到"工程体系"的范式转变，以及对中国技术管理者的现实启示。
 
 ## 核心论点
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### Vibe Coding vs Agentic Engineering
 - **Vibe Coding** — 降低软件创造的门槛，释放长尾需求。适合原型、个人工具、一次性脚本、低风险场景。
 - **Agentic Engineering** — 围绕 Agent 执行工程任务的工作方式。关心：上下文边界、工具权限、文件修改权限、审批机制、测试验证、环境隔离、回滚审计。

@@ -24,6 +24,24 @@ AGENTS.md 是一个简单的开放格式，用于指导 AI Coding Agent 在项�
 
 ## 没有 AGENTS.md 的日子
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 痛点集中在以下几个方面 ：
 
 - **前后端上下文割裂**：AI Coding 时只能打开一个仓库，改一个涉及前后端联动的功能需要在两个窗口之间来回切换，切换过程中 AI 丢失上下文

@@ -17,6 +17,19 @@ Harness Engineering 迭代依赖人工经验，但模型以月为单位进化、
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **核心问题**：Harness Engineering 的人工迭代速度跟不上模型月度级别的进化速度
 - **方案定位**：让 Harness 在结构化可观测环境里自己演化，而不是工程师手调
 - **三角色协同**：Coding Agent（跑测试）→ Agent Debugger（整理轨迹）→ Evolve Agent（修改 Harness 实现进化）

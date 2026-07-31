@@ -12,6 +12,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    subgraph "学习"
+        RL[强化学习]
+        SIM[仿真训练]
+    end
+    DEC --> RL
+    RL --> SIM
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef l fill:#d1fae5,stroke:#059669,color:#064e3b
+    class PER,DEC,ACT,ENV c
+    class RL,SIM l
+```
+
+
 - **JoyAI 基础模型体系**：以 JoyAI 基座大模型为核心，覆盖语音、图像、视频、实时交互、世界模型和具身智能的七大基础模型矩阵，包括 JoyAI-Talker（实时语音交互）、JoyAI-Video-Edit（实时视频编辑）、JoyAI-Echo（长音视频生成）、JoyAI-VL-Interaction（视频语言交互）等
 - **JoyAI-Talker**：实时语音交互模型，具备低延迟对话、情绪理解、工具调用和记忆能力，让 AI 从机械执行指令走向理解人的意图和状态
 - **JoyAI-Video-Edit**：实时视频编辑模型，支持自定义画面和边预览边修改，大幅降低视频制作门槛

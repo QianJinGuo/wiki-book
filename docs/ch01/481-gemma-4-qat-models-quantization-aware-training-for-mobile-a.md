@@ -19,6 +19,16 @@ Google 2026-06-05 发布 Gemma 4 QAT（Quantization-Aware Training）检查点�
 
 ## 关键技术：移动端特殊 QAT Schema
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 Google 为 E2B / E4B edge 模型重新思考量化方案，针对**移动处理器架构**优化：
 
 - **Static activations（静态激活）**：训练时预计算 scale settings，推理时不需要动态 scale 计算 → 减少 mobile chip 工作负载

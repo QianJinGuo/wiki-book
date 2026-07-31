@@ -14,6 +14,24 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 摘要
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 Nathan Lambert（Interconnects AI）2026 年 4 月发表的这篇长文把"开源 vs 闭源模型谁会赢"这个常见但失焦的问题，拆成了 13 个具体可下注的判断。核心论断：这是一个经济学问题，而不是能力问题 — 闭源在 RL 训练范式下占据真实使用场景的数据优势，开源在重复性自动化场景的 API 份额会继续扩大；中国开源实验室的"benchmark 焦点"和"美国开源实验室的复苏"会同时发生。
 
 ## 核心要点

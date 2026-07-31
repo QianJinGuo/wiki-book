@@ -22,6 +22,25 @@ Karpathy 说得很直白：当时他和 Tianlin Shi、Jim Fan 几个人一起干
 
 ## Karpathy 的三步忠告
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 ### 第一步：别再逼 Agent 什么都能干，先把底层模型做对
 
 今年 5 月他加入 Anthropic 预训练团队时，在 X 上写的第一句话就是：**我认为接下来几年 LLM 前沿的工作将尤为关键。** 一个"发明"了 vibe coding、让 Collins 辞典把它评为年度词汇的人，此刻选择回到最底层的预训练研究——这本身就是对 Agent 热潮的一记"行为投票"。

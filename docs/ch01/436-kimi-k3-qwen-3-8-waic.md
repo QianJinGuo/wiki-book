@@ -14,6 +14,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **Kimi K3 的实测表现**：实际编码能力约等于 GPT-5.4/5.5 水平（Florian 评估），代码更简洁但边界情况覆盖不足。API 因需求过载经常报错。
 - **中国模型竞争力的根源**：不仅在于算力或数据规模，更在于实验室文化——专注、不分散精力、资本效率高。中国实验室团队小型化（200-300 人，平均年龄 20 多岁），没有企业在多云/企业级服务上的"分心"。
 - **Qwen 3.8 的宣布**：阿里巴巴承诺开源 2.4T 参数旗舰模型，进一步加速了开源模型的发布节奏。但 Qwen 的大模型表现历来不如其小模型突出，这可能是云端公司资源分配的自然结果。

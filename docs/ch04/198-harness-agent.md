@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **Agent 自主迭代核心矛盾**：一个人每天最多跑一次迭代实验，但每周上百个 badcase 需要处理。从人工驱动转变为 Agent 自主驱动是提升迭代效率的关键。
 - **研发工具 Agent 可调用化**：所有人类使用的研发工具（代码部署、评测、日志查询）都必须提供 CLI/MCP 接口，让 Agent 具备人所拥有的所有操作上下文。
 - **长程任务防早停与上下文管理**：通过禁止模型提问、防止早停、遇错先分析、一次只做一件事等 prompt 约束，结合父子 Agent 模式解决上下文打爆问题。

@@ -10,6 +10,22 @@
 - Microsoft 为初创公司提供的综合支持计划，包含 Azure 云资源、AI 工具和技术支持
 
 ## 项目概述
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Microsoft for Startups 是微软面向初创企业的支持计划，帮助创始人克服常见挑战，通过提供 AI 服务、专家指导和关键技术加速产品从 idea 到 MVP 再到规模化的全过程。
 
 ## 核心权益

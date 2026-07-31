@@ -8,6 +8,25 @@
 2026年4-5月推出的主要开源权重模型（Gemma 4、Laguna XS.2、ZAYA1-8B、DeepSeek V4）共同指向一个核心趋势：**长上下文效率优化**。随着推理模型和 Agent 工作流需要保留更多 token，KV-cache 大小、内存带宽和注意力计算成本成为主要瓶颈，各大厂商纷纷引入架构层面的 trick 来降低这些成本。
 
 ## 主要模型架构分析
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 ### Gemma 4：KV Sharing + PLE
 Gemma 4 E2B/E4B 引入两项效率优化：
 **Cross-Layer KV Sharing（跨层 KV 共享）**：后续层复用前面层的 key-value 状态，而非每层独立计算 K/V 投影。E2B 共35层，前15层独立计算 KV，后20层复用；E4B 共42层，前24层独立计算，后18层共享。该设计可将 128K 上下文下的 KV cache 内存减少约一半（E2B 节省 2.7GB，E4B 节省 6GB）。代价是模型容量略有降低，但对小模型影响较小。

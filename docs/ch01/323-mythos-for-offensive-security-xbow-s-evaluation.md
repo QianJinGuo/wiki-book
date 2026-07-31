@@ -13,6 +13,19 @@
 ---
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### 1. 测试方法论：专业团队 + 多维度评估
 XBOW 组建了来自公司不同部门的 **10 人专家团队**，从多个方向评估模型。测试沿用评估 Opus 4.7 和 GPT 5.5 的同一套内部基准系统：对已发现漏洞的开源应用冻结在漏洞版本，用 autonomous agent 运行测试 。
 本次评估还扩展到其他维度：

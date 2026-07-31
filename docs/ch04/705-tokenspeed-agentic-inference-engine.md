@@ -10,6 +10,16 @@ TokenSpeed 是由 Lightseek 团队开发的专为 **agentic workloads** 设计�
 
 ## Core Architecture
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 ### Compiler-Backed SPMD Parallelism Modeling
 
 TokenSpeed 采用 **SPMD（Single Program Multiple Data）并行建模**，通过编译器级别的优化实现高效的多 GPU 扩展。在 SPMD 模式下，所有 GPU 执行相同的计算 kernel，但处理不同的数据分片，这种模型特别适合 Transformer 架构的自注意力计算模式。编译器能够自动分析计算图，将注意力计算、投影操作等拆分为可并行的子任务，最大化 GPU 利用率。

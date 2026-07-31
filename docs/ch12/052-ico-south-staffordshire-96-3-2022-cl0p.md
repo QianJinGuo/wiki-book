@@ -10,6 +10,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 2026 年 5 月 11 日，英国数据保护监管机构 ICO 对自来水公司 South Staffordshire 的母公司 South Staffordshire Plc 处以 963,900 英镑（约合 130 万美元）的罚款，原因是 2022 年 7 月披露的 Cl0p 勒索软件攻击暴露了"该公司数据安全方法的重大失败"。攻击实际入侵发生在 2020 年 9 月，但在长达近两年时间里都未被发现，导致 633,887 人的个人数据被泄露，包括用户名、密码、银行账号、排序码，以及优先服务登记客户的残疾推断信息和员工的国民保险号码。该公司数据总量超过 4TB，最终被泄露到网上。
 
 ## 核心要点

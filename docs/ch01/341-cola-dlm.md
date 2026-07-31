@@ -14,6 +14,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **核心主张**：Token 是语言系统的表层载体，不是语义本身；表征（representation）才是模型应学习的对象
 - **架构核心**：Latent Prior（生成"潜在语义"）+ Decoder（把语义翻译成文字）；diffusion / flow matching 全程在 latent 空间而非 token 空间
 - **Text VAE**：Encoder 把离散文本压缩成连续 latent，Decoder 把 latent 还原回文本；latent 是可连续变化、可被概率建模的随机变量

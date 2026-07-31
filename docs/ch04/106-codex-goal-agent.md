@@ -9,6 +9,19 @@
 **比普通 loop 多走的一步**：没有把长任务包装成"无限自动化"，而是把长任务拆成一组可以被观察、记账、暂停、恢复和收束的状态，再把模型自己改写状态的口子堵上。
 
 ## 三层设计
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 第一层：目标持久化（state-db）
 目标从 prompt 里的文字 → state-db 里的持久对象，具备：
 

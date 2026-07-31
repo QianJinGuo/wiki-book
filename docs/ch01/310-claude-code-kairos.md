@@ -55,6 +55,24 @@ Bridge 的数据流设计是清晰的：远端入口 → bridge 拉取工作 →
 当前仓库状态：产品意图一致、框架布线完整、外围能力有真实实现，但 assistant 主模块、gate、session discovery、proactive 状态、session transcript 等核心环节还是 stub。这是一个「半成品平台」状态——能展示局部能力，但未形成完整闭环。对外可以宣传方向，对内要知道哪些地方还没通。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 **1. 评估 Agent 系统时，看运行模型而非功能清单**
 KAIROS 的价值不是数它有多少个工具开关，而是看它从「同步问答」到「常驻代理」的运行模型转变是否彻底。评估任何 Agent 系统，第一问应该是：它的生命周期是短命的还是持续的？第二问：外部事件能否接入它的主循环？这两个问题比功能列表更能判断系统本质。
 **2. Brief 是工程问题，不是 UI 问题**

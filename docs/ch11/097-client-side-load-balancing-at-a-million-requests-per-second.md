@@ -10,6 +10,24 @@ Zalando 在百万 RPS 级别的客户端负载均衡工程实践，从服务发�
 
 ## 核心内容
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 ![Image 1: Client-Side Load Balancing](https://img01.ztat.net/engineering-blog/posts/2026/06/images/cslb-consistent-hash-load-balancing-after.png?imwidth=1320#previewimage)
 
 Our busiest API ran its high-volume internal traffic through the cluster's shared edge ingress load balancer. For years we could never be sure whether a latency spike came from our own code or from reusing that shared edge router internally.

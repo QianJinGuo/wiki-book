@@ -12,6 +12,18 @@
 - **生产即设计** — 生产代码是设计意图的最真实表达
 
 ## 技术洞察
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
 **设计-代码循环的价值创造**：
 这篇文章的核心洞察是：**设计-代码循环创造的价值，超越纯粹设计或纯粹代码单独能实现的**。
 关键机制：

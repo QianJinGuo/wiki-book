@@ -8,6 +8,19 @@
 Amazon Bedrock AgentCore Identity通过3-legged OAuth + session binding模式为ECS上的AI Agent提供企业级安全身份认证。Agent访问云资源时通过OAuth获取临时凭证并绑定到特定session，防止token泄露和权限滥用。
 
 ## 三个关键洞察
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### 1. 为什么AI Agent需要特殊身份管理
 传统 IAM user/service account不适用于AI Agent——Agent行为不可预测、可能越权访问敏感资源。3-legged OAuth让每次Agent任务获得最小权限的临时token，且绑定到特定session可审计和撤销。
 

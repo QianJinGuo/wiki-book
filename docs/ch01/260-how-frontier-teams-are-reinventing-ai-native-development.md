@@ -16,6 +16,20 @@
 
 ## 三条 AI-native 开发路径
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 ### 1. Pathfinder Initiative（先锋项目）
 
 **实验设计**：6 名资深工程师，单一任务：**重建 Amazon Bedrock inference engine**（原估算 30 人 12-18 个月）。

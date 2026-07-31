@@ -12,6 +12,19 @@
 - **商业落地**：OCI 计划 2026 年部署数十万颗 Vera CPU，是首个超大规模部署 Vera 的云厂商；Vera 还是 Vera Rubin NVL72 的主机处理器，与 Rubin GPU 通过第二代 NVLink-C2C 互联
 
 ## 背景与定位
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 Agentic AI 对 CPU 有与传统数据中心完全不同的需求。NVIDIA CEO 黄仁勋在 GTC 上推出 Vera CPU 时，将其定位为 NVIDIA 下一个多亿美元业务线。随着 AI 模型从"回答问题"向"执行行动"演进，专门为这种工作负载设计的 CPU 成为必要。
 AI 代理并非只运行在 GPU 上——每个代理沙箱、每次工具调用、每个编排层、每次长上下文检索操作，都是 CPU 的工作。Vera 正是为这种现实需求从头设计的新类别 CPU。
 

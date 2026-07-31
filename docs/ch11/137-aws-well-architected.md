@@ -8,6 +8,19 @@
 
 ## 概述
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 针对 2024-2025 年爆发的 **Shai-Hulud** (npm 供应链蠕虫)、**Chalk/Debug** (TJ Actions 恶意更新)、**axios** (钓鱼维护者接管) 等真实攻击事件，AWS 发布 Well-Architected Framework 下的软件供应链安全最佳实践。
 
 ## 核心防御维度

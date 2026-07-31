@@ -87,6 +87,22 @@ main 分支加载 context-main.md，feat/auth 加载 context-feat-auth.md，防�
 
 ## API/Console 高杠杆设置
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 8. cache_control 断点位置（最大单一成本杠杆）
 ```python
 # 错误：断点放在用户消息后

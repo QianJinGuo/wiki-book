@@ -44,6 +44,19 @@
 本质上这是一个**人机协同**的定位，而非全自动漏洞发现。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 1. **小模型足够做初筛**：4B 参数的 qwen3:4b-q4_K_M 可本地运行，30B 的 qwen3-coder:30b 用于分析阶段——分层使用模型能兼顾速度与推理能力。
 2. **n8n 作为工作流编排层**：低代码可视化 workflow 降低了自动化流水线的搭建门槛，特别适合串联 webhooks、数据处理节点和 AI Agent。
 3. **RAG 是必要投资**：没有历史上下文库，纯 LLM 分析二进制 diff 的效果会大打折扣。对于专注特定厂商（本文是 Microsoft）的安全研究员，建议持续积累该厂商的 CVE 分析笔记并向量化。

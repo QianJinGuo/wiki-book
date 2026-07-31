@@ -12,6 +12,19 @@ Anthropic 于 2026 年 6 月发表科学博客《为生物学智能体铺平道�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **生物学 Agent 的瓶颈是数据基础设施，而非模型推理能力**：即便 GPT-5.5 和 Claude Opus 4.7 这类顶级模型，在面对混乱的生物数据接口时也表现堪忧
 2. **VirBench 基准测试揭示严重不稳定问题**：同一个模型在相同提示词下三次运行，埃博拉病毒检索分别返回 106 条、15 条和 5 条序列（标准答案是 266 条）
 3. **gget virus 将检索准确率提升至 99.7%**：通过确定性工具层屏蔽底层数据源的复杂性，让模型专注推理而非数据访问

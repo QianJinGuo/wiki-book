@@ -11,6 +11,19 @@
 本文来自 ClearSec Labs 的 Matt Handley，从历史视角审视 AI 给漏洞研究领域带来的冲击。作者通过 decompiler（反编译器）、fuzzer（模糊测试器）、static analysis（静态分析）三次类似技术变革的历史经验，指出"easy work goes away, harder work becomes more valuable"的规律，并给出在 AI 时代保持竞争力的实践建议。
 
 ## 核心论点：历史重演的规律
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### 三次技术变革的共同模式
 **第一次：Decompiler（反编译器）**
 Hex-Rays 将反编译能力大众化后，业界担忧 reverse engineering 将被机器终结。作者指出实际结果：**decompiler 没有取代 RE，而是让其变得可访问**——真正理解 decompiler 局限（何时它产生幻觉类型、何时漏掉别名、输出看起来合理但实际错误）的工程师反而更有价值。

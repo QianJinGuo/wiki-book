@@ -23,6 +23,19 @@
 
 ## 核心管线
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Chromium 渲染管线（10 阶段）：
 
 **URL 输入** → **网络加载**（DNS/TLS/HTTP/缓存/预加载） → **HTML 解析**（DOM 构建） → **CSS 解析**（CSSOM） → **样式计算**（Computed Style） → **布局**（Layout Tree / Reflow） → **绘制记录**（Paint Records / Display List） → **分层**（Layer Tree） → **光栅化**（Tile Raster，CPU→GPU） → **合成**（Compositor Frame → GPU 进程 → 屏幕）

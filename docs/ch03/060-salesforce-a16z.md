@@ -12,6 +12,24 @@ Salesforce 宣布开放 API，推出"无头产品"（headless product），把�
 
 ## 旧世界：界面曾经就是产品
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Salesforce 过去二十年卖的是一套让销售团队运转的**方法论**：Pipeline 视图、预测工具、活动流。界面是强制数据规范化的机制——它创造了共同语言（Leads、Opportunities、Accounts），让数以千计的销售代表录入本来不会录入的数据。
 
 **最深的粘性是肌肉记忆**：十年用下来的快捷键、工作流程、汇报节奏都长在 Salesforce 里。迁移 CRM，最难迁移的不是数据，是这些人的习惯。

@@ -12,6 +12,19 @@
 
 ## 核心定位
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 两条 AI 趋势
 
 **趋势 1**：大模型竞争正从"谁更聪明"转向"谁的 Agent 工程能力更强"（Codex 持续更新可感知）

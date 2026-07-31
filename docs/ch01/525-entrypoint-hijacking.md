@@ -15,6 +15,24 @@ Windows processes dynamically load multiple modules (DLLs) into memory at runtim
 [Kurosh Dabbagh Escalante](https://x.com/_Kudaes_) released the [EPI](https://github.com/Kudaes/EPI) (EntryPoint Injection) proof of concept in 2023 and introduced a documented method to abuse the _EntryPoint_ property of a DLL. EPI patches the _EntryPoint_ of a loaded DLL (_kernelbase.dll_) and uses the _QueueUserWorkItem_ from inside the redirected _EntryPoint_. The malicious code is executed on a thread-pool thread. [Hugo Valette](https://x.com/RWXstoned) approached the same technique during x33fcon 2025, and released two proof-of-concepts examples called [LdrShuffle](https://github.com/RWXstoned/LdrShuffle), demonstrating EntryPoint Hijacking within the same and remote processes. It should be noted that _LdrShuffle_ handles the execution differently, even though both proof of concepts hijack the same property.
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 EntryPoint Hijacking 之所以被视为高级代码注入技术，是因为它从根本上利用了 Windows 加载器（loader）的正常行为，而非依赖任何专有的恶意 API。整个攻击链不触发 `CreateRemoteThread`、`NtCreateThreadEx` 等常见的线程创建 API，从而绕过了大量基于 API 调用日志的 EDR 检测机制。
 **核心机制拆解**
 Windows 进程的每个加载 DLL 都拥有一个 EntryPoint 地址，记录在 PEB（Process Environment Block）的 `LDR_DATA_TABLE_ENTRY` 结构中。当进程或线程创建/终止事件发生时，ntdll 的 `LdrpDx` 流程会遍历已加载模块列表，依次调用其 `_DllMain()` 函数。攻击者的关键技术动作分为以下几步：

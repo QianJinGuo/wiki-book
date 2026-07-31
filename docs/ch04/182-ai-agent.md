@@ -14,6 +14,22 @@
 
 ## 核心产品主张：低提示词交付可用成果
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 胖鹅 AI 打出的旗号很直接——**低提示词**（Low-Prompt）：不要求用户懂 ，不用配置  和 Skill，不用学 AI，就能产出和精通 AI 的人一样的产出结果。
 
 ### 实测场景一：行业研究 PPT 生成

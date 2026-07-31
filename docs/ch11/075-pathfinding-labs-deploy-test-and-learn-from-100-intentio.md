@@ -10,6 +10,19 @@
 
 ## 核心组成
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 Pathfinding Labs 由三个部分构成，形成从学习到实战的完整闭环：
 
 **1. Web Catalog（[pathfinding.cloud/labs](https://pathfinding.cloud/labs)）**

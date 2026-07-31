@@ -8,6 +8,19 @@
 **SSE（Server-Sent Events）是LLM流式传输的更优选择**，而非 WebSocket。SSE 基于普通 HTTP，浏览器原生支持 EventSource，连接断开时自动重连，服务器可指定事件 ID 实现断点续传。   ^[https://mp.weixin.qq.com/s/7FWjN0GDBgVyvEDiaC1AMQ]
 
 ## SSE vs WebSocket vs 长轮询
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 | 特性 | 长轮询 | SSE | WebSocket |
 |------|--------|-----|-----------|
 | 方向 | 双向（低效） | **单向（服务器→客户端）** | 双向（全双工） |

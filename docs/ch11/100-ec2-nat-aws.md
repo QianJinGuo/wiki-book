@@ -10,6 +10,22 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 本文档系统对比了 AWS 中国宁夏区域（cn-northwest-1）所有当前代 EC2 实例类型作为 NAT 实例时的**可用带宽与成本**，并给出基于 **Auto Scaling Group + CloudFormation** 的高可用部署方案。
 
 **核心问题**：私有子网通过 NAT 访问互联网时，NAT 网关按双向数据处理费 + 出站流量费计费，成本对开发测试/大流量场景偏高；NAT 实例仅出站流量费，更适合成本敏感场景，但需自行管理高可用与带宽选型。

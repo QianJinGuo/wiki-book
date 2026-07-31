@@ -14,6 +14,18 @@ Google Research 与 Google Cloud 联合发布的 **Agentic RAG 框架**（已上
 
 ## 核心要点
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 ### 1. 现有 RAG 的根本缺陷：搜一次就停
 
 传统 RAG 系统：

@@ -5,6 +5,19 @@
 > 📊 Level ⭐⭐ | 10.8KB | `entities/where-openclaw-security-is-heading-openclaw-blog.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 - **范式转变**：从"验证后获取"到" egress 路由 + 代理策略执行"，Proxyline 负责路由，代理负责策略 enforcement
 - **fs-safe**：将文件系统边界检查抽象为可复用原语库，插件和核心代码共用同一套 root-bounded 原语，而非各自实现
 - **ClawHub 信任体系**：信任证据直接绑定到特定版本（clean/suspicious/quarantined/malicious），安装路径消费这些信号，而非事后本地检查

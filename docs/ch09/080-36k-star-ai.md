@@ -14,6 +14,24 @@ Understand-Anything（36k stars）：Claude Code 插件，`/understand` 命令�
 
 ## 核心功能
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **Guided Tours**：按调用链生成代码阅读路线
 - **Diff Impact Analysis**：改动影响分析，增量扫描
 - **Domain View**：代码→业务逻辑映射

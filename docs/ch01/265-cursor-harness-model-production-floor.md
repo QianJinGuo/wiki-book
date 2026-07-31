@@ -27,6 +27,19 @@
 
 ## 核心洞察 
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 模型决定上限，Harness 决定下限
 
 模型决定系统能理解多复杂的任务、能否在陌生问题里做像样的推理。但"生产下限"是另一件事：上下文不完整、工具超时、日志很脏、用户需求含糊、模型中途切换、缓存突然失效时，系统还能不能把任务稳稳带下去。

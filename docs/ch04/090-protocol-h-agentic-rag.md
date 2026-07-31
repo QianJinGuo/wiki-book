@@ -29,6 +29,24 @@
 **真实影响**：三家金融服务场景内部评估（Q4 2025，约1500条多跳查询），约30%出现"静默失败"——答案表面权威但遗漏超过20%的相关数据点，且推理路径不透明不利于审计。
 
 ## 分层Agentic解决方案：Protocol-H架构总览
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 Protocol-H 引入了受组织层级与人类问题求解方式启发的 supervisor-worker 拓扑结构：
 > 就像管理者会先把专业分析分派给数据分析师( SQL )和研究(文档)再汇总结论一样，supervisor负责拆解问题，worker负责执行各自模态的任务。
 核心：**基于编排进行专业化**——每个worker专注自身模态(SQL或语义检索)，supervisor负责管理推理流并处理复杂的多跳场景。

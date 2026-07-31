@@ -14,6 +14,24 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **核心创新**：不是"能做什么"，而是"做完之后会发生什么"。所谓的"自动学习"，本质是 Prompt Engineering + 文件持久化的一次精妙工程化实践。
 - **OpenClaw vs Hermes 哲学分歧**：OpenClaw 是全能助手、插件生态、无状态（需手动配置 AGENTS.md/SOUL.md/USER.md）；Hermes Agent 是自我进化、越用越强、四维持久记忆自动保存。
 - **四维持久记忆系统**：身份记忆（IDENTITY，Agent 角色定义）+ Agent 笔记（MEMORY.md，用户偏好、项目上下文、经验教训）+ 程序性记忆（SKILL.md，可复用工作流程）+ 对话历史（当前会话完整上下文）。

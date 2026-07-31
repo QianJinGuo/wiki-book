@@ -10,6 +10,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - **vCenter Quick Patch**：安全补丁更新 downtime 降至 1 分钟内，部分场景 zero downtime 
 - **ESX Live Patch**：kernel 级别热补丁默认启用，vmkmodule + vSAN/UserSpace daemon 均支持 
 - **Intel QAT 加速 vMotion**：加密 vMotion 卸载至硬件，释放 CPU 核心给业务负载 

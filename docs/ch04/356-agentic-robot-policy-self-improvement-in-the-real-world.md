@@ -15,6 +15,19 @@ Published Time: Wed, 17 Jun 2026 23:48:33 GMT
 Markdown Content:
 ## ENPIRE: Agentic Robot Policy Self-Improvement in the Real World
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 , [Jia Xie](https://jia-xie.com/)2†, [Tonghe Zhang](https://tonghe-zhang.github.io/)2†, [Haotian Lin](https://darthutopian.github.io/)2†, [Letian "Max" Fu](https://max-fu.github.io/)3, [Haoru Xue](https://haoruxue.github.io/)3, Jalen Lu 2,
 
 [Yi Yang](https://yiyang-23.github.io/)2, [Cunxi Dai](https://cunxid.github.io/)2, [Zi Wang](https://ziwang1105.github.io/)1, [Jimmy Wu](https://jimmyyhwu.github.io/)1, [Guanzhi Wang](https://guanzhi.me/)1, [S. Shankar Sastry](https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html)3, [Ken Goldberg](https://goldberg.berkeley.edu/)3,

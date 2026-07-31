@@ -21,6 +21,19 @@ AI 可以在 1 小时内生成相当于 1 周的代码量，但代码审查仍�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 1. 引入 AI 审查作为第一道防线
 AI 生成代码 → AI 自动审查 → 人类重点审查——三层审查模型解决规模化问题。
 

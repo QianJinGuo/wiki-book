@@ -16,6 +16,24 @@
 
 ## World Knowledge
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 针对具体环境的结构化环境认知，以 Markdown 文档存储。可被现有 Agent 直接加载到上下文，无需修改推理框架。
 
 关键特性：显式、可迁移、可版本化、可校验。

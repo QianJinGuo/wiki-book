@@ -24,6 +24,19 @@ CVE-2026-33634 的 CVSS 9.4 分值表明这是一个极度严重的漏洞。Chec
 ---
 
 ## 实践启示
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 供应链攻击已成为攻击者入侵企业的主流路径，而此次 Checkmarx Jenkins 插件事件更是将攻击的复杂性与危害程度推向了新高度。以下从多个维度提取可操作的实践启示，帮助安全团队建立更健壮的防御体系。
 
 ### 1. 插件生态的安全风险

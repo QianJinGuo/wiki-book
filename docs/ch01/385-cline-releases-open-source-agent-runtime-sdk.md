@@ -14,6 +14,19 @@ Cline 在 2026-05-13 发布 `@cline/sdk`，将原本耦合在 IDE 内的 Agent �
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **从 IDE 宿主中解耦的核心 Agent Loop**：团队选择"重新构建"而非"叠加"，原因在于既有架构已经与 IDE 宿主不可分离；新设计把 stateless agentic loop 与 stateful orchestration 清晰分层。
 - **Provider 完全外置于 agent loop**：`@cline/llms` 覆盖 Anthropic、OpenAI、Google、AWS Bedrock、Mistral、LiteLLM 与任何 OpenAI 兼容端点；切换 provider 是 config change 而非 code change。
 - **跨表面可迁移的会话**：session 不再随 UI 重启而死亡，可在 CLI、VS Code、JetBrains 之间无缝迁移；这是 harness 升级后"长时间任务可恢复"的关键能力。

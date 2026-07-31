@@ -46,6 +46,19 @@ Optimizer    = paged_adamw_8bit
 ```
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### 1. 小专项模型 vs 大通用模型的 trade-off 重新被审视
 过去两年 LLM 发展主旋律是"规模即性能"——GPT-4、Claude、Gemini 都在堆参数、堆算力。但 CyberSecQwen-4B 的核心论点在于：**防御性网络安全是一个强约束场景，通用大规模模型的三高（高调用成本、高数据泄露风险、高部署门槛）与该场景天然不兼容**。
 这揭示了一个重要趋势：**AI 落地正在从"通用最优"向"场景最优"分化**。不是每个场景都需要 70B 或 100B+ 的模型；垂直领域的专项微调可以用 1/10 的参数实现相当甚至更好的专业任务表现。

@@ -18,6 +18,19 @@
 
 ## 产品功能详解
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 共享 Credits 资源池
 
 企业版采用 Credits 完全资源池化模式——企业持有共享资源包，管理员可为成员或计费组动态分配额度。云市场兑换码同步支持席位的新增、调整与续费，实现灵活的订阅管理。这解决了企业在规模化使用 AI 编码工具时最关心的三个问题：资源如何灵活调配、人员变动如何快速响应、预算和续费如何集中可控。

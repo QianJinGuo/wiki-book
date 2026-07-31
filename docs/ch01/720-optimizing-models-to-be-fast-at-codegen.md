@@ -29,6 +29,16 @@ By identifying "unchanged" vs "changed" portions of code edits:
 
 ## Differentiation from General Inference Optimization
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 | Dimension | Morphllm | General (vLLM/TensorRT) |
 |-----------|----------|------------------------|
 | Target | Code editing agents | General LLM inference |

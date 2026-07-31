@@ -14,6 +14,22 @@
 Skill 天然是双形态单元：SKILL.md + scripts/ = Agent 的 CLI 层，一直缺 GUI 层。Qoder Quest 补上了这一半。
 
 ## 问题：低效介入
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 五轮对话收集参数举例（Frontend-design Skill）：
 ```
 Agent: 这个页面是给谁用的？什么场景？

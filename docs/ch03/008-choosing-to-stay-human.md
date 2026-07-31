@@ -18,6 +18,25 @@ Wharton 的同事将此称为"认知投降"——人们会停止思考问题，�
 
 ## 0.15 SD 的巨大差异
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 教育领域是区分 AI 使用方式导致结果差异最清晰的地方。土耳其高中约 1000 名学生学习数学的实验中，一组使用 plain ChatGPT，另一组没有 AI。使用 ChatGPT 的学生作业做得更好并认为自己学得更多，但在不使用 AI 的情况下参加考试时，他们的表现不如没有使用 ChatGPT 的同学——因为 AI 旨在成为 helpful assistant，实际上只是给他们答案，而真正的学习需要心理努力。
 
 同一研究团队在台北 10 所高中、约 1000 名学生、为期五个月的 Python 课程中运行了第二个实验。由 AI tutor 提供个性化问题序列的学生在最终考试中得分高 0.15 standard deviations（考试时不允许使用 AI）。按一些估算，这相当于 6-9 个月的额外学校教育，没有增加任何教学时间或教师工作量。差异在于 AI 帮助调整学习节奏以适应学生，而不是替代学生完成工作。

@@ -24,6 +24,20 @@
 
 ## SDD 工具谱系：Spec-Kit / OpenSpec / BMAD
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 | 工具 | 风格 | 核心特点 |
 |------|------|----------|
 | **Spec-Kit** | 标准化规格流程 | `/specify` / `/plan` / `/tasks` / `/implement` 顺序流程，强制上下文标准化 |

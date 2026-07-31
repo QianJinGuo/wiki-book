@@ -17,6 +17,19 @@
 | **覆盖率** | 功能×0.5+路径×0.3+断言×0.2 | ≥ 95% |
 
 ## Δ < 0：最危险的指标组合
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 通过率 | Δ | 诊断 | 行动 |
 |--------|---|------|------|
 | 高 | 高 | Skill 质量好 | ✅ 正常发布 |

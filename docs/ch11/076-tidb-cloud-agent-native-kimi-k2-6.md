@@ -5,6 +5,19 @@
 > 📊 Level ⭐⭐ | 10.8KB | `entities/tidb-cloud-agent-database.md`
 
 ## 核心概念
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### Agent-native 时代的数据 Infra 竞争逻辑
 过去 30 年：比单点性能（TPS、延迟、单库容量）。
 现在比的是当以下四件事**同时发生时**，谁能提供最顺畅的体验：

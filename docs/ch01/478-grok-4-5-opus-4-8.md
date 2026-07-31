@@ -58,6 +58,19 @@ Grok 4.5 在自家阵营已是最贵，输出价是 grok-4.3 的 2.4 倍。上�
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 「Opus 级能力，四分之一价格」的性价比定位
 
 Grok 4.5 的定价策略极具攻击性。Opus 4.8 的输出价格为 $25/百万 tokens，Grok 4.5 为 $6/百万，不到四分之一。在 benchmark 互有胜负的情况下，这个定价直接改变了高端模型的竞争格局——开发者可以在「能力上限」和「成本效率」之间重新做选择。值得注意的是 SWE-Bench Pro 上 Grok 4.5 平均每个任务输出 15,954 tokens，而 Opus 4.8（max）为 67,020 tokens，仅为对手的四分之一左右——「更省 token」不仅是价格优势，也意味着更低的延迟。

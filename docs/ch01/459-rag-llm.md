@@ -14,6 +14,24 @@
 
 ## 核心问题
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 > "**这个视频整体在讲什么？**" —— 系统出现幻觉或返回泛泛的答案。检索器只看到孤立的短片段，看不到整体。问题不在 LLM，而在分块策略本身。
 
 视频文件不是文档，而是由时间驱动的交互流（画面切换 + 语音对话）。文本 RAG 的标准分隔标记（段落、换行符、固定 Token 数）无法直接迁移。

@@ -13,6 +13,19 @@
 > "裸 LLM = 没有内存、没有硬盘、没有 I/O 的 CPU。上下文窗口 = 内存（快但有限），外部数据库 = 硬盘（大但慢），工具集成 = 设备驱动，Harness = 操作系统。" — Beren Millidge
 
 ## 三层工程模型
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 1. **Prompt Engineering** — 设计模型接收的指令
 2. **Context Engineering** — 管理模型看到什么、什么时候看到
 3. **Harness Engineering** — 前两者 + 完整应用基础设施

@@ -17,6 +17,17 @@ For most of the last decade, the assumed endgame for a successful fintech was an
 
 ## **Why the biggest companies are choosing to stay home**
 
+```mermaid
+graph LR
+    SRC[数据源] --> ING[采集]
+    ING --> PROC[处理]
+    PROC --> STO[存储]
+    STO --> SERV[服务]
+    classDef s fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class SRC,ING,PROC,STO,SERV s
+```
+
+
 Steve put it as plainly as I’ve heard anyone say it: “You’re starting to see a world where there are going to be trillion-dollar fintech companies and they could be private. It’s a state of the world where you just don’t need to be a public company anymore. There’s plenty of capital available.”
 
 That is a remarkable sentence from someone who has spent 25 years arranging private capital raises, IPOs and fintech M&A. And the data backs him up. The cohort is concentrated, though. The top ten private fintechs account for 60% of the $1.9 trillion in total valuation, and the same names dominate the secondary market. Stripe, Revolut, Kraken, Rippling, AlphaSense and a handful of others soak up roughly 96% of last twelve months’ executed secondary volume.

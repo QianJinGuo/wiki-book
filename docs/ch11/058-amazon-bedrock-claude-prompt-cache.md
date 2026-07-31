@@ -5,6 +5,22 @@
 > 📊 Level ⭐⭐ | 11.6KB | `entities/amazon-bedrock-claude-prompt-cache-strategy.md`
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - Prompt Caching 可降低长上下文应用的输入 token 成本和响应延迟
 - Content Block 的 20-block 回看限制是关键约束
 - 推荐布局：受控场景单 CP，通用 agentic 场景三 CP

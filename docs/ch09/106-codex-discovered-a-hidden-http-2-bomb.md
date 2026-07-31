@@ -14,6 +14,19 @@ Calif.io 2026-06-02 公开披露"HTTP/2 Bomb"——一种利用 HPACK 索引引�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - **影响范围极大**：nginx、Apache httpd、Microsoft IIS、Envoy、Cloudflare Pingora 五大主流服务器默认配置均受影响，Shodan 估测 880K+ 站点可被攻击
 - **两段已知技术被 AI 链成新攻击**：HPACK 索引引用放大（每 1 字节上行 → 70-4000 字节服务器分配）+ 零字节 WINDOW_UPDATE 持续占位
 - **攻击规模**：100Mbps 家用带宽可在数秒内击垮目标；针对 Apache/Envoy 单一客户端可在约 20 秒内吃满 32GB 服务器内存

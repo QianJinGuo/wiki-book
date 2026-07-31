@@ -20,6 +20,24 @@
 | 活跃度 | 极高，日常更新 |
 
 ## 架构概述
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 与 OpenClaw 的分工
 - **pi-mono 负责**：Agent 执行引擎（Agent Loop / 会话持久化 / 基础工具 / 模型抽象 / 系统提示构建）
 - **OpenClaw 独立实现**：多渠道消息网关（Telegram/Discord/WhatsApp）、认证与安全（API Key 轮换、工具策略过滤）、向量记忆系统、上下文压缩、多 Agent 路由、流式处理

@@ -21,6 +21,22 @@ Claude Code 插件可以包含：
 
 ## feature-dev：7阶段结构化功能开发
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 核心价值：把功能开发变成严谨的结构化流程，避免盲目编码。
 
 1. **发现需求** — 明确要解决的问题

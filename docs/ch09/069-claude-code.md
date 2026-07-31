@@ -8,6 +8,22 @@
 本文系统性整理 Claude Code 与 **Obsidian 以外**的各种工具集成方案，涵盖 MCP 协议扩展、IM 平台操控、IDE 协同、企业级部署集成等多个维度。核心价值在于帮助开发者了解 Claude Code 的生态广度，根据自身场景选择最适合的集成路径。
 
 ## MCP 协议集成
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### MCP 是 Claude Code 的扩展基石
 **MCP（Model Context Protocol）是 Anthropic 提出的开放协议，让 Claude Code 能调用外部服务提供的工具**。通过 MCP，Claude Code 可以连接 GitHub、Slack、数据库、向量搜索等多种外部系统。
 

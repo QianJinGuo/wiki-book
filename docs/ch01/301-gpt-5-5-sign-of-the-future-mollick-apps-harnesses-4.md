@@ -25,6 +25,25 @@ Mollick 提出 AI 思考的新分层模型——不要把"AI"当一个东西看�
 
 ## GPT-imagegen-2 与 Otter Test 跨越门槛
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 新图像模型能渲染高质量文字 + 几乎任意场景描述——这是 Otter Test（让 AI 画"在飞机上用 wifi 的水獭"）第一次真正跨过实用门槛。Mollick 用三段 prompt 演示：
 
 1. **学术论文首图**："水獭科学家展示 Otter Test 结果，论文完美排版放在桌上"——可放大到看清正文

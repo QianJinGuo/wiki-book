@@ -16,6 +16,19 @@ We encourage you to start applying these practices in your projects and share yo
 
 ## About the authors
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### Anastasia Tzeveleka
 
 Anastasia Tzeveleka is a Principal Generative AI/ML Specialist Solutions Architect at AWS. Her experience spans the entire AI lifecycle, from collaborating with organizations training cutting-edge Large Language Models (LLMs) to guiding enterprises in deploying and scaling agentic AI applications powered by these models.

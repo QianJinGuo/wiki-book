@@ -31,6 +31,24 @@
 - 通过与 git hook 配对，可以在每次提交自动更新知识图谱
 
 ## 2. 工作流程
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 1. 打开 Claude Code -> /resume 加载 Obsidian 上下文
 2. Claude 查询 graph.json 理解代码结构
 3. 工作完成后 -> /save 写入日志

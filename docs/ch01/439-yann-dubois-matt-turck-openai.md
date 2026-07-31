@@ -14,6 +14,24 @@ Yann Dubois（OpenAI Post-Training Frontiers 联合负责人）与纽约 VC Matt
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 - **可靠性跨过临界点**：Yann 认为 AI 的进步其实一直是连续的，但人们的感受像台阶函数，因为 Agent 模型的每步出错概率降到足够低后，使用体验发生质变。
 - **预训练 → 中训练 → 后训练**：把预训练比作"走进图书馆"，中训练是"挑出高质量书多读几遍"（Wikipedia、GitHub 等高密度信息源加权），后训练是"把学霸变成你可以直接提问的专家"。
 - **强化学习为什么突然管用了**：当模型先验知识达到一定规模后 RL 才有效，这不只是 LLM 的现象，机器人领域同样进入这个阶段；方法上 GRPO 因简洁可扩展胜出。

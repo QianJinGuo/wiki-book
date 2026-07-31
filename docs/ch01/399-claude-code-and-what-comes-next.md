@@ -14,6 +14,25 @@ Ethan Mollick 用一个真实实验展示 Claude Code 的能力跃迁：给一�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **能力跃迁的两大支柱**：（1）最新 AI 自主工作时能自我修正（编程任务尤其明显）；（2）AI 被赋予"agentic harness"——工具与方法的组合。两大因素叠加让 big AI companies 的最新工具实现大跃迁。METR 数据显示 AI 能 50% 可靠完成的任务时长呈指数增长。
 - **上下文压缩（Compaction）机制**：当 Claude Code 上下文窗口填满时，它**主动停下**，做笔记记录当前状态，然后**清空上下文**，新 Claude 读笔记继续工作（"像 Memento 主角看纹身找回记忆"）。这是 Claude 能跑数小时的关键。
 - **Skills 模式**：用户不必逐次 prompt 复杂指令——Skills 是 AI **自己决定何时使用**的指令包，含 prompt + 工具。需要建网站？加载 Website Creator Skill。需要 Excel？加载 Excel Skill。Jesse Vincent 发布的 [superpowers](https://github.com/obra/superpowers) 是一组完整 SDLC 流程 Skills。

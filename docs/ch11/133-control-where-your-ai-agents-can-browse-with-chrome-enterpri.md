@@ -7,6 +7,22 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - AWS China ML 发布的技术文章，介绍 Amazon Bedrock AgentCore Browser 的 Chrome 企业策略控制能力
 - 三大能力：URL 白名单/黑名单、禁用危险浏览器功能（密码管理器、下载等）、将策略管理与 Agent 开发解耦
 - 支持自定义根 CA 证书，解决内部服务使用私有 PKI 的连接问题

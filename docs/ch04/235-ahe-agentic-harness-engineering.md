@@ -8,6 +8,19 @@
 Harness Engineering 迭代依赖人工经验，模型以月为单位进化、任务场景往长尾分布发展——如何让 Harness 自动从经验中学习并改进？
 
 ## 论文信息
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 - **标题：** Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses
 - **arXiv:** arxiv.org/abs/2604.25850
 - **代码:** github.com/china-qijizhifeng/agentic-Harness-engineering

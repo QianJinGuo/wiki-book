@@ -14,6 +14,19 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 摘要
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 CIO Dive 2026-05-14 报道 Harness 公司发布的《State of Engineering Excellence 2026》调研结果：在 700 名企业开发者与工程负责人中，**81% 表示 AI 节省下来的编码时间现在被用来审查 AI 的产出**；近三分之一的开发者工作时间被这种"看不见的工作"占据。该报告揭示了 AI 编码工具大规模落地后，工程角色正从"开发者"转向"AI 管理者"，但企业现有的生产力衡量框架仍然停留在上一个时代。
 
 ## 核心要点

@@ -90,6 +90,19 @@ Karpathy 已不再记 PyTorch/NumPy/pandas 之间细碎的 API 差异，但仍�
 传统算法题测不出 Agentic Engineering 能力。替代评估方式：给候选人一个极大项目（如做一个给 Agent 用的 Twitter 仿盘，要求绝对安全），然后让 10 个 Cursor 作为红队去攻击。最终看的是：把模糊目标变成清晰规格、指挥多个 Agent 完成大规模实现、识别安全和架构风险、设置测试与验证、在模型生成的大量代码里保住质量判断。
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### 范式转变的实质：从工具到系统
 Karpathy 一年前提出 Vibe Coding，命名的是一种个人开发体验——用自然语言指挥 AI 生成代码、调整、迭代，核心关注点是「能否快速把想法跑起来」。一年后他转向 Agentic Engineering，这个命名重心从「开发体验」移到了「工程责任」。
 这个转变的实质不是术语更新，而是 Agent 在软件工程链路里的渗透深度发生了质变。2025 年底的转折点是可观测的：模型不再只补函数级代码块，开始能接住更大粒度的任务——读上下文、改多文件、调命令、跑测试、基于失败继续修。这意味着 Agent 从「开发工具」变成了「工程链路里的执行节点」。

@@ -12,6 +12,24 @@ AGENTS.md 是 Codex 的「项目说明书」——每次启动会话前必读的
 
 ## AGENTS.md 的定位
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 AGENTS.md 是你写给 Codex 的一份持久指令，它每次启动、动手干活之前都先读一遍，当成这个项目的背景装进脑子。没有 AGENTS.md，你就得每次重新解释一遍上下文。
 
 类比：**交接班的工作清单**。工厂三班倒，上一班下班前在墙上写清楚注意事项，下一班接手照着干。AGENTS.md 就是 Codex 的那块交接板——而且是每次接班前都会先扫一眼的那块。

@@ -44,6 +44,25 @@ Computer 中的加载过程：
 **进入索引层的门槛极高**——每一个 token 都至关重要，描述必须极其稠密精炼。
 
 ## 什么时候需要 Skill？
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 ### ✅ 需要 Skill
 - **纠正错误或不一致**：Agent 在没有特殊语境的情况下会出错，或需要极高一致性
 - **特定知识或流程**：知识耐用但不在模型训练数据中（如企业工作流）
