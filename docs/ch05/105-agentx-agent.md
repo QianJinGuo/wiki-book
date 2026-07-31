@@ -8,6 +8,21 @@
 
 快手 AgentX 团队技术报告《AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems》——让 Agent 不只是辅助写代码，而是成为推荐迭代的执行主体。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快手 AgentX——推荐系统自我迭代的 Agent 驱…"))
+    四阶段架构
+      1. Brainstorm Agent
+      2. Developing Agent
+      3. Evaluation Agent
+      4. Harness Evolution（SG…
+    生产级量化结果
+    对 Agent 工程的意义
+```
+
 ## 四阶段架构
 
 ### 1. Brainstorm Agent

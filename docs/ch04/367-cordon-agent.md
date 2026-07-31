@@ -6,6 +6,21 @@
 
 # Cordon：Agent 工具调用的语义事务安全边界
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cordon：Agent 工具调用的语义事务安全边界"))
+    深度分析
+      1. 问题：为什么'逐个工具审批'不够？
+      2. Cordon 核心：Semantic T…
+      3. 三步协议：Prepare → Valid…
+      4. 三个关键机制
+    实践启示
+    相关页面
+```
+
 ## 摘要
 
 论文 Cordon: Semantic Transactions for Tool-Using LLM Agents 提出一种新的 Agent 安全范式：不再逐个审批工具调用，而是为整段 Agent 任务建立可验证、提交、回滚和审计的事务边界（semantic transaction）。核心洞察：很多风险不是单个工具调用明显危险，而是多个看似正常的步骤组合后才危险——真正需要判断的是整段任务执行流是否应该被提交。

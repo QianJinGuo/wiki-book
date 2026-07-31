@@ -6,6 +6,28 @@
 
 # ABot-AgentOS：面向通用机器人智能体的 Agent OS
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德 ABot-AgentOS：面向机器人智能体的通用自…"))
+    一句话总结
+    核心贡献
+      1. 通用机器人 Agent OS 架构
+      2. Agent Harness：具身版的推理…
+      3. 多模态图记忆系统
+      4. Failure-driven Lifel…
+    与现有 wiki 知识的关系
+    关键数据
+    深度分析
+      1. ABot-AgentOS 的核心洞察：具…
+      2. 多模态图记忆：从'文本检索'到'实体-事…
+      3. Failure-driven Self-…
+      4. EmbodiedWorldBench 填…
+    实践启示
+```
+
 ## 一句话总结
 
 高德提出 ABot-AgentOS，一个位于大模型与机器人控制栈之间的通用 Agent OS，通过 Agent Harness（推理→执行→验证闭环）、多模态图记忆和 failure-driven self-evolution 将高层认知与底层硬件解耦，使同一套系统适配四足机器人、移动机器人、机械臂和人形机器人等异构本体。

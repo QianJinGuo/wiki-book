@@ -6,6 +6,28 @@
 
 # 试用 Amazon Bedrock 中的新控制台体验
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("试用 Amazon Bedrock 中的新控制台体验：该…"))
+    概览
+    五大新能力
+      1. 模型目录 Model Catalog
+      2. 并排比较 Side-by-side C…
+      3. 基于项目的组织 Project-bas…
+      4. 项目感知文档 Project-awar…
+    区域可用性
+    实践启示
+    与其他 Bedrock 文档的差异化
+    深度分析
+      核心观点
+      技术要点
+      实践价值
+      相关实体
+```
+
 ## 概览
 
 ```mermaid

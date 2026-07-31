@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/claude-code-governance-soft-rules.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 可控性：软规则无法变成硬约束"))
+    核心洞察
+      软规则陷阱
+      200k Ghost（指令退化）
+    Harness 治理对策
+      Anthropic 的 Harness 设计
+      评估者训练难点
+    深度分析
+    实践启示
+    Sources
+    相关实体
+```
+
 ## 核心洞察
 ### 软规则陷阱
 - **写进上下文的规则 ≠ 工程系统的硬约束** — 它们依赖模型"记得并愿意执行"

@@ -4,6 +4,35 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/claude-code-routines-proactive-agent.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Routines：从工具到队友的…"))
+    背景案例：Sarah 的文档困境
+    以前在 Claude Code 上跑定时任务的…
+    Routines 的三个能力
+      1. 始终在线（云端基础设施）
+      2. 灵活触发方式
+      3. 非黑盒（透明可干预）
+    设计 Routine 需想清楚的三件事
+      Trigger（触发时机）
+      Context（可用信息）
+      Steerability（引导质量）
+    使用方式
+    场景示例
+      部署验证器
+      值班事件处理器
+      积压工单清理
+    实时介入演示（关键点）
+    深度分析
+      从工具到队友的范式转变
+      三道坎的解决对应关系
+      Context 天花板悖论
+      Steerability 的两种路径对比
+```
+
 ## 背景案例：Sarah 的文档困境
 Claude Code 团队每周合并 PR 增长 200%，但负责两个产品文档的工程师 Sarah 工作量也跟着涨——每次代码更新，她需要手动对比变更并逐条补文档。Routines 上线后，她搭了两个 routine：
 1. **每周定时**：对比主分支最新变更和文档仓库，有差异就开 PR

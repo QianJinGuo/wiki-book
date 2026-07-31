@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 4.2KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Announcing AWS CDK Mixins: C…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - ... → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
 

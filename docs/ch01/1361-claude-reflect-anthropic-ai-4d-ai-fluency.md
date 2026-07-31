@@ -8,6 +8,19 @@
 
 Anthropic 在 2026 年 7 月为 Claude 推出了 **Reflect** 功能（Beta），旨在帮助用户反思何时、如何以及为何使用 AI，以可量化的方式提升 AI 协作能力，而非简单地统计使用时长。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Reflect：Anthropic 的 A…"))
+    4D AI Fluency 框架
+    功能设计
+    战略意义
+    相关研究背景
+    相关实体
+```
+
 ## 4D AI Fluency 框架
 
 Reflect 背后的核心思维框架是 Anthropic 提出的 **4D AI Fluency Framework**，包含四个维度：

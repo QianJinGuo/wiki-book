@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 开发负责人：为何放弃 RAG 而…"))
+    深度分析
+      RAG vs Agentic Search 的…
+      与 Claude Code 架构的关系
+      实践中的平衡策略
+      对知识管理工具的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Boris Cherny（Claude Code 开发负责人）在 X 上分享了 Anthropic 在 Claude Code 中从 RAG 转向 Agentic Search 的技术决策。早期 Claude Code 使用 RAG 算法配合本地向量数据库进行知识检索，但团队发现 Agentic Search 通常效果更好——更简单，且不存在安全性、隐私性、数据过时性和可靠性方面的问题。微信公众号作者基于自身 RAG 实践经验对此进行了深度分析，指出 Agentic Search 在复杂推理场景下优势明显，但在简单问答场景下比 RAG 更慢、更耗 Token，并提出了 Agentic RAG 的混合方案。

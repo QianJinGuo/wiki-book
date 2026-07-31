@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/ai-coding-entropy-framework-baidu-geek-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Coding 的底层框架：一切优化都是在对抗熵增—…"))
+    核心概述
+    信息论三概念 → AI Coding 映射
+    两个现实修正
+      修正一：低熵 ≠ 正确（模型自信度 vs 正确性）
+      修正二：交叉熵 HQ,P 才是更关键的问题
+    覆盖层 vs 填补层
+    四个经典问题的回答
+      Q1. Context Engineering…
+      Q2. 历史业务为什么总翻车
+      Q3. Agent 能不能只给需求文档完成交付
+      Q4. 记忆越多越准还是越走神
+    Harness Engineering 的信息…
+    核心金句
+```
+
 ## 核心概述
 
 用信息论三个概念（熵、条件熵、互信息）统一解释 AI Coding 的所有优化手段：**一切优化都是在对抗熵增**——让模型少猜一点，让真实约束多暴露一点。Context Engineering、RAG、记忆、SDD、Harness Engineering 都可以放到同一个坐标系里看。

@@ -11,6 +11,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Three Years from GPT-3 to Ge…"))
+    深度分析
+      1. '能编码 = 通用工具'的核心论断
+      2. Antigravity Inbox：从 …
+      3. '管理数字同事'的人机协作模式
+      4. PhD 级智能的真实测试
+    实践启示
+      1. 重新理解 Agent 编程工具的能力边界
+      2. 采用 Inbox 范式设计 Agent …
+      3. 训练'指导者'而非'提示者'的能力
+      4. 评估 AI 智能时关注'类人错误'而非'…
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick 通过让 Gemini 3 复刻自己三年前 GPT-3 时代的"糖果驱动 FTL 飞船"演示，展示了 AI 三年来的跨越式进步：从"能写诗描述引擎"进化为"能编码、设计界面、让你真正驾驶飞船"。核心论断是：**"编写代码的能力不仅是编程，而是能做计算机上发生的任何事"**——这使任何能编码的 Agent 变成通用工具。Gemini 3 配合的 Antigravity 工具引入 Inbox 概念，让人从"通过聊天界面提示 AI"演化为"管理数字同事"。

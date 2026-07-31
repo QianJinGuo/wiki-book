@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-54-is-a-big-step-for-codex.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT 5.4 是 Codex 的一次大跨越：四维评估视…"))
+    深度分析
+      一、四维评估框架取代单点正确性
+      二、Reasoning Efficiency：…
+      三、Claude vs GPT 的 Agent…
+      四、Agent 工具的下一形态 = Slack
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Interconnects（Nathan Lambert）从 agent-native 工作流视角评测 GPT 5.4 + Codex 组合：相比传统 benchmark 的"单点正确性"，真正的 agent 体验是"正确性、易用性、速度、成本"四维混合，GPT 5.4 在这四个维度上都比前代有实质提升，"硬棱角"消失，是首个让人感觉"扔什么都能干"的 OpenAI agent。文章同时给出 Claude 与 GPT 在 agent 哲学上的关键分野："Claude 推测你的意图，GPT 严格按你说的做"，并预言 agent 工具的形态会像 Slack——多个 agent 在用户视野下互相沟通。

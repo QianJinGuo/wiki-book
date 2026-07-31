@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 7.4KB | `entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Turns Alexa Into Its …"))
+    相关实体
+    深度分析
+      从搜索框到语音：零售 AI 的范式转移
+      Alexa 的结构性护城河
+      Amazon vs Walmart：两种 AI…
+      代理式商务（Agentic Commerce）…
+    实践启示
+      对零售平台的启示
+      对品牌/商家的启示
+      对 AI/技术从业者的启示
+```
+
 ## 核心要点
 - 来源：https://www.pymnts.com/news/retail/2026/amazon-bets-on-voice-as-agentic-commerces-winning-ai-interface/
 - 评分：v=8 c=7

@@ -10,6 +10,17 @@
 > 核心判断：很多 AI 编码翻车不是模型能力不够，而是仓库没有给 Agent 一套能可靠工作的系统。
 1. **指令子系统** — 告诉 Agent 项目是什么、技术栈、不可违反的规则
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从 Prompt 到 Harness：Claude 官方…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)

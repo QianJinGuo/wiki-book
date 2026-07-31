@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/yum-brands-ai-backbone-tech-chief.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Yum Brands' tech chief on bu…"))
+    Summary
+    Key Points
+    Related
+    深度分析
+    相关实体
+    实践启示
+```
+
 ## Summary
 *(AI-generated summary - TODO: manually review)*
 

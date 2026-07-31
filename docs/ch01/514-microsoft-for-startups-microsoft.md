@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/Microsoft-for-Startups-Microsoft-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft for Startups | Mic…"))
+    项目概述
+    核心权益
+      创业积分（Startup Credits）
+      技术福利
+      积分使用范围
+      Microsoft 生态优势
+    创始人案例
+    常见问题
+    相关链接
+    相关实体
+    深度分析
+      项目定位与市场策略
+      分层信用机制的激励设计
+      生态协同的网络效应
+      市场进入的双重路径
+    实践启示
+      行动建议
+      时机判断
+```
+
 ## 核心要点
 - 来源：https://www.microsoft.com/en-us/startups/apply
 - 评分：v=7 c=8

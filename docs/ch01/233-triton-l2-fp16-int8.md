@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 17.6KB | `entities/triton-l2缓存命中优化矩阵乘法fp16int8详解及性能测试.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Triton L2缓存命中优化矩阵乘法(fp16&int…"))
+    文章概要
+    基础概念
+    L2缓存命中优化矩阵乘法
+      分组计算：利用 L2 Cache 的关键
+    int8精度下的Triton Matmul
+    性能测试结论
+    深度分析
+      1. L2 Cache 命中优化的本质：数据访…
+      2. Triton 的抽象层次：平衡易用性与性能
+      3. int8 量化：精度与性能的博弈
+      4. Flash Attention 与算子融…
+    实践启示
+      对 GPU 性能优化的启示
+      对模型训练工程的启示
+      对 AI Infrastructure 工程的启示
+    相关实体
+```
+
 ## 文章概要
 "L2缓存命中优化矩阵乘法"是Triton官方提供的第三个教程，本文将结合硬件特性对此部分内容进行详解。同时笔者也简单的做了下int8 matul的魔改，并进行了量化/非量化性能测试及分析。
 

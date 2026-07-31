@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/diffusiongemma-4x-faster-text-generation-google-2026-06.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DiffusionGemma：扩散式文本生成模型（Goo…"))
+    概述
+    关键架构特性
+    适用场景 vs 局限
+    与传统自回归 LLM 的核心权衡
+    性能指标
+    三个独有贡献（不应合并到现有 entity）
+    相关主题
+```
+
 ## 概述
 
 Google 2026-06-10 发布的实验性开放模型，Apache 2.0 协议，基于 Gemma 4 系列，集成 Gemini Diffusion 研究成果。采用 26B MoE（激活 3.8B）+ 扩散头（diffusion head）设计，从传统自回归 LLM 的逐 token 生成范式转为整段文本并行生成。在 H100 上达到 1000+ tokens/s，RTX 5090 上 700+ tokens/s，是标准 Gemma 4 的 4× 速度。

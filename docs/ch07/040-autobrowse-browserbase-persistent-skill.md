@@ -7,6 +7,22 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autobrowse-browserbase-persistent-skill-files.md)
 
 # Autobrowse — 浏览器 Agent 持久记忆：技能文件作为永久技能
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Autobrowse Browserbase Persi…"))
+    核心定位
+    核心问题：探索税（Discovery Tax）
+    核心架构：五步学习循环
+    关键设计：记忆 = Markdown 技能文件
+    量化效果：Craigslist 基准
+    核心发现：JSON API 逆向
+    自批评：Agency 分层框架
+    复利与递归
+```
+
 ## 核心定位
 Browserbase（Kyle Jeong, 2026-05-07）提出。核心命题：**让浏览器 Agent 的每次探索都变成可复用的永久技能**——不是向量，不是会话录像，而是任何人都能读懂的 markdown 技能文件。
 

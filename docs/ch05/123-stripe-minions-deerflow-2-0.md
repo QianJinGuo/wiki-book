@@ -6,6 +6,25 @@
 
 # 墙比模型更重要：三家公司独立得出同一结论
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("墙比模型更重要：Stripe Minions + 字节 …"))
+    Overview
+    三家公司对照
+    Stripe Minions：4 个核心机制
+    字节 DeerFlow 2.0：从'半途而废'…
+      3 个真实失败模式
+      3 个工程化解法
+    蚂蚁支小助：金融场景的 4 AI 分工
+      4 个角色
+    为什么更强的模型解决不了
+    三阶段 AI 工程进化史
+    与已有 Harness Engineering…
+```
+
 ## Overview
 
 2026 年 6 月，微信公众号文章综合 Stripe、字节跳动、蚂蚁集团三家公司的实践，提出一个统一论断：**"墙比模型更重要"**（the wall matters more than the model）。三家分属支付、客服+内容+研发、金融行业的公司独立得出了同一个结论——**AI 的能力 × 运行环境的设计 = 实际产出，是乘法不是加法**。

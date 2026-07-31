@@ -6,6 +6,21 @@
 
 # OMEGA: 面向多机器人协作的具身Agent Harness
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OMEGA: 面向多机器人协作的具身Agent Harn…"))
+    深度分析
+      从 Software Agent Orches…
+      三层系统架构的设计理性
+      与现有方案的对比定位
+      2026-07-22 Supplementar…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 OMEGA（Orchestration system for Multiple Embodied Generalist Agents）是一套面向真实世界多机器人协作的 embodied agent harness，由中国科学技术大学张举勇教授团队联合上海人工智能实验室共同完成。 它将 LLM 驱动的 coding agent 协作模式（任务拆解→子任务分配→并行执行→结果汇总）引入机器人领域，为多机器人团队提供一层可执行的协作系统，覆盖任务感知与拆解、动态任务分配、并行执行控制、状态同步与等待协调、异常检测与重调度、以及技能沉淀与复用六大关键能力层。

@@ -6,6 +6,24 @@
 
 LangChain 团队（2026）提出的 Agent 循环工程 4 层栈框架，将「loopcraft」（循环工艺）从概念推向可落地的分层架构。文章以 LangChain 内部文档 Agent 为贯穿示例，每层对应一个 LangChain 产品原语。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering 四层循环栈：从 Age…"))
+    理论基础：Loopcraft 与 Agent …
+    四层循环栈
+      第一层：Agent 循环（模型 + 工具）
+      第二层：验证循环（Agent + 评分器）
+      第三层：事件驱动循环（验证 + 系统）
+      第四层：爬坡循环（系统 + Engine）
+    人类监督
+    四层汇总表
+    深度分析与实践启示
+    相关实体
+```
+
 ## 理论基础：Loopcraft 与 Agent 的"辛辣教训"
 
 Loopcraft（循环工艺）指围绕 Agent 叠加循环以成倍放大效能的技艺。swyx、Steipete、Boris Cherny、Andrej Karpathy 等人不约而同得出同一结论：**不应再手动给 Agent 写 prompt，应设计循环让循环去驱动 Agent**。

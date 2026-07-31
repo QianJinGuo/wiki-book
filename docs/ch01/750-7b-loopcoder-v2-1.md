@@ -21,6 +21,19 @@ source_published: 2026-06-30
 
 论文标题起得很干脆——《Only Loop Once》，只循环一次。背后是来自  北京航空航天大学、IQuest Research、澜舟
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("都在卷「让大模型多循环几遍」，这个7B模型LoopCod…"))
+    详细信息
+      一、「循环」，当下最热的卷法
+      二、旋钮拧大 ≠ 更强：
+      第 2 遍封顶，第 3 遍跳水
+    原文
+```
+
 ## 核心要点
 
 > 本文为微信公众号文章，由 WeChat backfill 收录。

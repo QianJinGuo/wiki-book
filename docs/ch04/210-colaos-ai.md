@@ -9,6 +9,34 @@
 > [!summary] 核心洞察
 > AI 原生产品的核心不是更大的模型或更强的工具，而是**降低摩擦**（让普通人能用 Agent）和**穿透组织**（让 AI 的速度变成成果的速度）。ColaOS 创始人橘子从 ListenHub（SaaS 两年迭代）到 ColaOS（一天一版），展示了 AI 对产品和组织的双重重写。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ColaOS 与 AI 原生组织"))
+    三个重写
+    产品：从工具到关系
+      关键问题
+      不做工具，做一个人
+      Soul System：有灵魂才有留存
+    路线：one-person company 的…
+      AI coding 覆盖率
+    组织：AI 的速度必须穿过组织
+      五周奇迹
+      Soul Team：叙事方向穿透组织
+      迭代节奏变化
+      纯语音交互的赌注
+    两大陷阱
+    深度分析
+      1. 摩擦经济学：AI 原生产品的成败本质
+      2. Soul System 的记忆架构：关系…
+      3. One-Person Company 的…
+      4. 流程穿透力：AI 速度的组织瓶颈
+    实践启示
+    相关实体
+```
+
 ## 三个重写
 
 | 维度 | ListenHub（旧） | ColaOS（新） |

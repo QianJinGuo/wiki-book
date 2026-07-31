@@ -8,6 +8,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Dynamic Workflows …"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+    第 2 来源 — 动态工作流六种编排模式详解 …
+      核心增量
+      关键差异
+```
+
 ## 深度分析
 
 Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode 模式 + /deep-research + 保存复用 涉及agent领域的核心技术议题。

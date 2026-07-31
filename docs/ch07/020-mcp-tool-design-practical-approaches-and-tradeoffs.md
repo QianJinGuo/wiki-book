@@ -8,6 +8,29 @@
 
 > MCP tool design requires balancing expressiveness, safety, and discoverability. This article from AWS's blog covers practical patterns and tradeoffs in designing tools for Claude/MCP agents, addressing the core challenges of **bloat** (tool definitions consuming too much context) and **confusion** (poor tool choices leading to retries).
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MCP tool design: Practical a…"))
+    核心挑战：Bloat 与 Confusion
+    Key Design Dimensions
+    六种 MCP 工具设计策略详解
+      V1: Raw Passthrough（原始透…
+      V2: Rich Descriptions（丰…
+      V3: Schema + Defaults（模…
+      V4: Lazy Loading with R…
+    策略对比总览
+    深度分析
+      上下文工程：Agent 系统设计的核心约束
+      从'API 透传'到'Agent 封装'的演进路径
+      Skills 与 MCP 工具设计的交汇点
+      安全性：被忽视的设计维度
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 当 MCP（Model Context Protocol）工具表现不佳时，问题通常不在协议本身，而在工具设计。许多团队直接将现有 API 暴露给 Agent，期望 LLM 自行理解——这在简单场景下可行，但在复杂系统中经常导致调用失败、参数错误和重试消耗上下文。本文系统性地探讨了 6 种 MCP 工具设计策略，从简单的描述增强到完整的 Agent-as-Tool 架构，并通过一个 K-12 教育资源搜索的后端示例进行了对比验证。

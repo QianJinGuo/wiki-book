@@ -10,6 +10,22 @@ Meta 于 2026年7月10日正式发布 Muse Spark 1.1，一个主打 agentic 和 
 
 这是 Meta 超级智能实验室的第二代多模态推理模型。4 月发布的初代 1.0 反响平平，被首席 AI 官 Alexandr Wang 称为「开胃菜」。三个月后，1.1 以脱胎换骨的姿态重回牌桌，不仅性能大幅提升，更以极具侵略性的定价搅动了市场。同日 OpenAI 发布 GPT-5.6 系列，形成双线价格战夹击。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Meta Muse Spark 1.1 — 匹敌 Opu…"))
+    Benchmark 表现
+    从 1.0 到 1.1 的飞跃
+    关键技术特性
+    定价与性价比
+    垂直领域表现
+    训练方法与技术路线
+    行业影响
+    深度分析
+```
+
 ## Benchmark 表现
 
 Muse Spark 1.1 在 MCP Atlas 上拿到 88.1 分（工具调用得分最高），第二名 Opus 4.8 为 82.2。JobBench（职业级工具使用）54.7，高于 Opus 4.8 的 48.4。HLE（带工具）62.1，拿下第一。在 Agent 评测线上，Muse Spark 1.1 基本压过 Opus 4.8 和 GPT-5.5。 GPT-5.5 在 MCP Atlas 上仅获 75.3 分，被拉开超过 12 分。

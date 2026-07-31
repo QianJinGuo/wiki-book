@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐ | 8.5KB | `entities/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Akamai acquires Israeli AI b…"))
+    相关实体
+    交易概况
+    公司背景
+      LayerX
+      Akamai 的以色列收购脉络
+    深度分析
+      1. 为什么这笔交易值得关注
+      2. 估值逻辑：~$10M ARR → $20…
+      3. Secure Enterprise Br…
+      4. Akamai 的战略意图
+    实践启示
+      对于安全团队
+      对于创业者和投资人
+      对于 MandA 策略
+```
+
 ## 核心要点
 - 来源：https://www.calcalistech.com/ctechnews/article/byinuqxkme
 - 评分：v=8 c=9

@@ -6,6 +6,21 @@
 
 # What You Need to Know About Lambda MicroVMs
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What You Need to Know About …"))
+    深度分析
+      Agent Sandbox 的基础设施级解决方案
+      对 Agent Runtime 生态的影响
+      Firecracker 的战略价值
+      定价模型的隐含信号
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/cat-wu-anthropic-pm-interview.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cat Wu: Anthropic Claude Cod…"))
+    核心洞察
+      速度来源 = 流程 + 使命，不只是 Mythos
+      Claude Code 源码泄露：流程漏洞
+      OpenClaw 不能用 Claude：订阅制…
+      PM 核心职责：缩短创意到交付时间
+    深度分析
+      流程作为竞争优势
+      角色融合的本质
+      100% 自动化原则的深层含义
+      产品品味作为护城河
+    实践启示
+      对 AI 产品经理
+      对工程团队
+      对组织设计
+      对自动化实践
+    相关实体
+```
+
 ## 核心洞察
 ### 速度来源 = 流程 + 使命，不只是 Mythos
 Anthropic 能保持极高发布速度的原因：

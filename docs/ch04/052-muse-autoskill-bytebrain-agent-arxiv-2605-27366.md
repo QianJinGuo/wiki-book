@@ -6,6 +6,32 @@
 
 # MUSE-Autoskill：字节 ByteBrain 自进化 Agent 五阶段技能生命周期，arXiv 2605.27366
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MUSE-Autoskill：字节 ByteBrain …"))
+    概述
+    时代背景
+    核心痛点
+    现有 Agent 四大致命缺陷
+    核心创新：软件工程最佳实践引入 Agent
+    MUSE-Autoskill 核心架构
+      技能定义（遵循 Anthropic Agent…
+      五阶段统一技能生命周期（核心贡献）
+      上下文管理系统
+    三大创新点
+      创新一：软件工程最佳实践引入 Agent
+      创新二：技能级记忆，让经验真正可积累
+      创新三：外部化技能，实现跨 Agent 知识共享
+    实验结果
+      SkillsBench 基准测试
+      自动技能生成（最令人震惊）
+      跨 Agent 技能转移
+      成本分析
+```
+
 ## 概述
 
 字节跳动 ByteBrain 团队 2026-05-26 发布 arXiv 2605.27366 论文《MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation》。**全称 Memory-Utilizing Skill Evolution Agent**。核心创新：把技能管理抽象为五阶段统一生命周期（创建/记忆/管理/评估/改进），遵循 Anthropic Agent Skills 开放标准。**关键结果：SkillsBench 51 任务，自生成技能准确率 87.94% 显著超过人类技能 68.40%；MUSE 生成技能注入 Hermes，关闭 79% 与人类技能差距**。

@@ -12,6 +12,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multi-agent-mission-factory-luke-aiengineer.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Multi-Agent 架构：Factory Missi…"))
+    深度分析
+      1. 瓶颈转移：从'模型智能'到'治理带宽'
+      2. 五种协作策略的工程取舍
+      3. Validation Contract：…
+      4. '串行优于并行'的反直觉结论
+    实践启示
+      1. Multi-Agent 系统的设计起点
+      2. 串行优于并行的工程含义
+      3. Validation Contract …
+      4. Droid Whispering 的成本…
+    相关实体
+```
+
 ## 摘要
 
 Luke Alvoeiro 在 AI Engineer 大会上系统阐述了 Factory Mission 系统的设计哲学——当 Agent 需要完成比单个 Agent 难一两个数量级的任务时，组织方式比单点智能更重要。本文整合其演讲的核心内容：五种 Multi-Agent 协作策略、Orchestrator/Worker/Validator 三角架构、Validation Contract 与结构化 Handoff、"串行优于并行"的反直觉结论、Droid Whispering 模型选择策略，以及声明式编排逻辑。

@@ -6,6 +6,29 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Native 时代 —— 研发组织何去何从"))
+    组织为何存在：两千年的协调问题
+    组织的形态来自哪里：人的镜像
+    AI 不是新工具，是新协作主体
+    从 Org Chart 到 Execution…
+    人既是瓶颈，也是兜底
+    新瓶颈：信息形态的人形偏置
+    深度分析
+      管理塌缩的真正含义
+      Platform 三柱架构的分工逻辑
+      Death of Ego 的边界条件
+    实践启示
+      判断节点类型，按类型设计治理
+      立即启动 Harness 建设
+      给 Architect 真实的激励
+      建立 Agent 名册，开始治理
+```
+
 ## 核心要点
 - AI 不是工具，是新的协作主体，其特点与人形成镜像反面：无限注意力、无情绪疲劳、无 context-switch 成本 
 - 组织最小单元正从"人 + 长期关系网"迁移到"任务 + 上下文 + 权限 + 工具"；核心问题从 ownership 变为 routing + governance 

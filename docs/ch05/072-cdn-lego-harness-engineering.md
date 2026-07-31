@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/tencent-cdn-lego-harness.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯CDN LEGO Harness Engineeri…"))
+    概述
+    核心成果
+      Nonstop项目
+      效率提升数据
+    AI Coding问题体系
+    Harness Engineering五层架构
+    对抗式CR
+    发现的问题
+    深度分析
+      AI Coding在高风险后端的核心挑战
+      五层架构的递进逻辑
+      对抗式CR的有效性根因
+      知识资产沉淀策略
+    实践启示
+      从'能用AI'到'敢用AI'的关键转型
+      建立团队专属Skill库的路径
+      人机协作架构设计的核心原则
+      团队能力建设渐进路径
+```
+
 ## 概述
 腾讯CDN LEGO项目是Harness Engineering在超大型高风险后端系统中的深度实践。LEGO作为腾讯CDN核心接入层，承载100万行核心C++代码+300万行深度改造第三方库，日均万亿请求，理论组合路径高达13,824×N种。核心命题：从"AI能写"到"AI写了敢用"。
 

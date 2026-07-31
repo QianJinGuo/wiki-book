@@ -15,6 +15,26 @@
 > 摘要: GSD (Get Shit Done) Claude Code 增强工具，四层上下文结构(ROADMAP→Phase→Plan frontmatter→Summary provides/affects)+context-budget 4档退化+6步phase流程，零工平台15天/638 commits/7 phase落地
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GSD 上下文管理工具：用 Plan 约束 Agent …"))
+    上下文失控，才逼我找到 GSD
+    GSD 是什么
+    四层结构：让 agent 只看它该看的那部分
+      第一层 · ROADMAP（项目层）
+      第二层 · Phase（边界显式定义）
+      第三层 · Plan frontmatter（…
+     相关实体
+      第四层 · Summary（provides …
+    context-budget 4档退化机制
+    Subagent 委派：orchestrato…
+    六步走完一个 phase
+    实战数据
+```
+
 ## 上下文失控，才逼我找到 GSD
 在遇到 GSD 之前，作者试过 Superpowers 和 gstack 两个 Claude Code 插件。两个工具的思路是"将通用大模型强行赋予角色，按企业架构划分工作"——架构师/开发者/测试者。在单个功能点上很顺，但面对零工平台这种体量的项目，代码跑着跑着 agent 开始"忘事"——字段命名丢了、模块依赖没接上、上下文里没有足够的 plan 细节。
 核心问题：它们偏向"将工作按角色拆分"，而不是"将上下文按依赖拆分"。面对庞大代码库，总是会丢失很多计划细节。

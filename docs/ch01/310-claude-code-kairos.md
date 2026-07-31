@@ -42,6 +42,16 @@ KAIROS 的代价主要有四类：
 - 关键外围能力有真实实现：Bridge perpetual session、频道消息接入、Brief 规则、daily-log memory prompt
 - 主入口和核心状态闭环仍有明显缺口：assistant 主模块、gate、session discovery、proactive 状态、session transcript 等地方还是 stub
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code KAIROS 范式深度解析"))
+    深度分析
+    实践启示
+```
+
 ## 深度分析
 **KAIROS 的本质是从「工具」到「中枢」的定位跃迁**
 KAIROS 在代码中出现了 365 次（含前缀变量），这个数字背后不是简单的功能堆砌，而是一套渐进的架构意图。外围能力先长出来——Bridge、Brief、Channels、每日记忆日志、后台任务基础设施——但主闭环还没打穿。这种「外层先行、核心渐进」的生长模式，恰恰是复杂系统从边缘向中心渗透的典型路径。

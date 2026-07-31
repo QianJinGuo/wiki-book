@@ -10,6 +10,17 @@
 Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一个 Markdown Wiki。核心价值是把模型逐渐形成的理解沉淀成可读、可修改、可追溯的 Markdown 知识 artifact。nashsu/llm_wiki 社区将此想法做成桌面开源应用。
 **关键区分：** RAG 更像是「把资料找出来」，LLM Wiki 试图解决的是「把读过的资料组织起来」。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLM Wiki 架构解析：Karpathy 的 Mar…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Karpathy Llm Wiki V2 2026](ch01/1274-llm.html)
 - [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/039-rag-vs-llm-wiki.html)

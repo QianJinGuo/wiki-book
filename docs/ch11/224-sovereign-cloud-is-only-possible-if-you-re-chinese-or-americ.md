@@ -8,6 +8,21 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5237660.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sovereign cloud is only poss…"))
+    深度分析
+      主权云的技术结构性困境
+      欧洲主权云的历史教训
+      云退出策略被普遍忽视
+      多云策略的误区
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

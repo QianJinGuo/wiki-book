@@ -6,6 +6,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/viktor-not-a-tool-a-hire.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Viktor | Not a tool. A hire."))
+    相关实体
+    深度分析
+      从「工具」到「员工」：AI 产品叙事的根本转移
+      多工具串联：Agent 架构的核心能力
+      持久记忆与学习曲线
+      使用场景分层：从初创公司到企业
+    实践启示
+      采购评估 checklist
+      竞争对手对比要点
+      扩展路径
+    关联追踪
+```
+
 ## 核心要点
 - Viktor 是主打「AI 同事」定位的产品，而非传统 AI 助手或自动化工具
 - 核心差异化叙事：从「告诉你怎么做」到「替你做完」

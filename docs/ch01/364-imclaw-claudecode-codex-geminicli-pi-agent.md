@@ -6,6 +6,25 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("IMClaw：通过微信/飞书操控ClaudeCode/C…"))
+    深度分析
+      1. ACP 协议：多 Agent 集成的标准…
+      2. IMClaw 架构：网关模式的工程取舍
+      3. 多 Agent 集成的现状与挑战
+      4. 安全模型的权衡
+    实践启示
+      给平台开发者/工具链工程师
+      给安全团队
+      给 AI Agent 研究者
+      给企业 IT 团队
+    相关实体
+```
+
 ## 核心要点
 - IMClaw：支持 ACP 协议的 AI Agent 网关，实现远程操控多种 Coding Agent
 - 支持 Agent：Claude、Codex、Gemini CLI、Cursor、Copilot、Pi、OpenClaw、Droid、iFlow、Kilocode、Kimi、Kiro、OpenCode、Qoder、Qwen、Trae 等十余种

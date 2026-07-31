@@ -8,6 +8,20 @@
 
 > HSCodeComp（Harmonized System Code Compass）是阿里 ATH-MaaS 团队提出的首个面向「分层规则应用」（Hierarchical Rule Application）能力的专家级 Deep Search Agent 基准，获 ACL 2026 Best Resource Paper。核心发现：最强 Agent（~49.4%）远落后于人类专家（95%），且 Test-Time Scaling 无法弥合差距。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("HSCodeComp：阿里 ACL 2026 最佳资源论…"))
+    核心贡献
+      知识复杂度三层模型
+      Benchmark 设计
+      关键发现
+    分层规则应用（Hierarchical Rul…
+    与现有 Agent 评测体系的关系
+```
+
 ## 核心贡献
 
 ### 知识复杂度三层模型

@@ -8,6 +8,20 @@
 
 > **Background**：arxiv 论文 2606.25996（2026-06-24 首发，25 日 v2 修订），提出 Autodata——一种通用方法，使 AI Agent 充当数据科学家来构建高质量训练和评估数据。作者团队来自 Meta（Jason Weston、Sainbayar Sukhbaatar 等），属于 cs.AI / cs.CL / cs.LG 交叉领域。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Autodata: An Agentic Data Sc…"))
+    深度分析
+      为什么 Agentic 数据创建重要
+      与 Self-Instruct 和 Evol-…
+      Agent 训练 Agent 的范式意义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Autodata 的核心思想是将数据科学家的全部工作流程——数据收集、清洗、标注、验证——Agent 化，并通过 **meta-optimization**（元优化）让数据科学家 Agent 学会创建更强的数据。论文提出了一个具体实现方案 **Agentic Self-Instruct**，在计算机科学研究任务、法律推理任务和数学对象推理任务上，均优于经典合成数据集创建方法。更重要的是，meta-optimizing 数据科学家 Agent 本身能带来更大的性能提升。

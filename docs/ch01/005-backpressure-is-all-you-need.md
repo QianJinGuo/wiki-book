@@ -6,6 +6,24 @@
 
 # Backpressure is all you need
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Backpressure is all you need"))
+    深入分析
+      反压的系统论视角：从生产者-消费者模型重新理解…
+      质量门禁的层次性与渐进式可信度建立
+      「昂贵剪贴板」问题的根源：跨Agent通信缺乏…
+      TypeScript 作为反压原语的设计启示
+    实践启示
+      立即可落地的三项实践
+      与现有工程实践的对齐策略
+      长期演进的监控指标建议
+    相关主题
+```
+
 ## 核心要点
 
 Insightful and practical framework applying systems engineering backpressure to coding agent workflows, offering a compelling third path between full autonomy and constant oversight.

@@ -12,6 +12,17 @@ Codex摸到了市场规律！Codex已自己完成商业闭环，大牛已躺赚2
 但在这次 AI 打工赚钱的过程中，人类几乎没有介入，仅仅只提供了提示词"帮我赚5美元，做你擅长的事"。
 Chris 是这样评论的："ChatGPT 就像个猎人，他出去帮我找食物，然后努力把食物带回部落，这样我们才能一起生存下去。"
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex 自主赚钱：全自动商业闭环实验"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Skill Rag Tsinghua Sra](../ch04/271-skill.html)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/122-useful-memories-become-faulty-when-continuously-updated-by-l.html)

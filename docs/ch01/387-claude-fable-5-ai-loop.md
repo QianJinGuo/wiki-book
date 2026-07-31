@@ -6,6 +6,22 @@
 
 # Claude Fable 5 发布：AI 工作流的关键正在转向 Loop 循环
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Fable 5 发布：AI 工作流的关键正…"))
+    深度分析
+      从'提示模型'到'设计循环'的范式转移
+      Parameter Golf 实验：验证器子 …
+      Fable 5 vs Opus 4.7：实验策…
+      记忆递进模型：从失败到通用规则的五阶段
+    实践启示
+    相关实体
+    相关主题
+```
+
 ## 摘要
 
 2026 年 7 月 1 日，Anthropic 发布了 Claude Fable 5（Mythos-class 模型），它在几乎所有测试基准上达到顶尖水平，尤其在软件工程、知识工作、科学研究和视觉任务上表现突出。与模型发布同步，Anthropic 工程师 @RLanceMartin 分享了围绕"循环"（Loop）设计 AI 工作流的核心理念——包括自我纠正循环（self-correcting loop）和记忆驱动的跨会话循环（memory loop）。本文深入分析了 Fable 5 在 Parameter Golf 挑战和 Continual Learning Bench 中的表现，揭示了"设计循环而非提示模型"这一新兴范式。

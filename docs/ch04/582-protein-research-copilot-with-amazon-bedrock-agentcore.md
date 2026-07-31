@@ -8,6 +8,20 @@
 
 > **Background**：基于 AWS 官方技术博客（2026-06-23），介绍如何用 Strands Agents SDK + Amazon Bedrock AgentCore 构建一个蛋白质研究助手。核心创新在于将蛋白质语言模型（ESM-C 300M）嵌入到 Agent 工作流中，实现自然语言驱动的肽序列相似性搜索。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Protein Research Copilot wit…"))
+    核心架构
+    技术栈
+    关键设计决策
+    三个独有贡献（不应合并到现有 entity）
+    部署要求
+    相关主题
+```
+
 ## 核心架构
 
 系统由三个专用工具编排在一个 Strands Agent 中：

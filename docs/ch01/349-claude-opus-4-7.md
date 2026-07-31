@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 11.7KB | `entities/claude-opus-4-7-launch.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Opus 4.7 发布分析"))
+    核心升级
+    Benchmark 跃进
+    第三方验证
+    Claude Code 负责人 Boris C…
+      自动模式（Auto mode）= 告别权限弹窗
+      新技能 /fewer-permission-…
+      Recaps（回顾）
+      专注模式（Focus mode）
+    官方 Claude Code 搭配最佳实践
+      交互式编码会话组织
+      推荐 effort 设置
+      自适应思考配合
+      值得注意的行为变化（4.6→4.7）
+    注意事项（Caveats）
+    总结
+    Cross-links
+```
+
 ## 核心升级
 - **新 tokenizer**：同一输入可多消耗 1.0-1.35x token，但整体推理效率提升使总 token 用量减少最多 50%
 - **视觉增强**：支持 2,576px 长边图片（~3.75 MP），3x 于前代，可用于密集截图读取的 Computer-Use Agent

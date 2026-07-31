@@ -41,6 +41,32 @@ graph TB
 
 > 📊 Level ⭐⭐ | 26.3KB | `entities/harness-engineering-alibaba-java-case-study.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里工程师 Harness 工程化实践 (双案例合并)"))
+    文章概要
+    三次范式跃迁
+    Harness Engineering 四根支柱
+      支柱一：上下文架构（Context Archi…
+      支柱二：Agent 专业化（Agent Spe…
+      支柱三：持久化记忆（Persistent Me…
+      支柱四：结构化执行（Structured Ex…
+    Anthropic 四类失败模式
+    企业级项目三大挑战
+      1. 认知负担（Cognitive Load）
+      2. 质量控制的系统性缺失（Systemati…
+      3. 熵的累积（Entropy Accumul…
+    开发者角色范式转移
+    实战结果
+    深度分析
+      1. 为什么 Context Architec…
+      2. 三角色分离（Planner/Genera…
+      3. Entropy Garbage Coll…
+```
+
 ## 文章概要
 阿里工程师在企业级 Java 应用（10万+行代码）上从零构建 Harness 体系，AI 代码率从 **24.86% 提升至 90.54%**。文章系统梳理三次范式跃迁（Prompt→Context→Harness）、四根支柱、四类失败模式，以及真实项目的完整实践路径。
 

@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/microsoft-agent-framework-structured-output.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft Agent Framework 结构…"))
+    核心问题
+    两种声明方式
+      方式一：Pydantic 类
+      方式二：JSON Schema dict
+    response.value vs respo…
+    配置时机
+    流式 + 结构化
+    能力边界
+    生产注意点
+    Pydantic vs JSON Schema…
+```
+
 ## 核心问题
 传统方案：提示词要求"只输出 JSON" + `json.loads()` → 易夹杂 markdown、缺字段、类型漂移。Agent Framework 的解法：Schema 由 API 约束，框架负责解析 。
 

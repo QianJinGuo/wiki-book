@@ -8,6 +8,24 @@
 
 > **注意**：本条目的原始存档来源文章内容不完整，仅包含一篇跳转指引（指向 `[Trae Solo Work Feishu Bitable Pipeline Tutorial](https://github.com/QianJinGuo/wiki/blob/main/entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md)`），该目标实体目前尚未建立。以下内容基于原始来源的元数据标签、文章结构线索以及飞书多维表格（Bitable）与 TRAE SOLO Work 模式的已知产品特性进行合理推断和构建，待目标实体完善后可进一步修订。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("TRAE SOLO Work 模式 + 飞书多维表格 5…"))
+    深度分析
+      TRAE SOLO Work 模式的定位
+      飞书多维表格作为 Agent 数据底座
+      5 步管道设计
+      增量同步的技术挑战
+    实践启示
+      适用场景
+      局限性
+      扩展方向
+    相关实体
+```
+
 ## 摘要
 
 本教程介绍如何将 TRAE SOLO Work 模式与飞书多维表格（Bitable）结合，通过 5 个步骤构建一套面向个人或小团队的数据流转自动化管道。核心场景是将飞书多维表格作为结构化数据源或任务记录层，利用 TRAE 的 Solo Work 模式实现增量同步、AI 辅助内容生成和自动化执行。教程覆盖从连接配置、增量同步策略、到 AI 生成内容回写的完整闭环，适用于知识管理、运营数据追踪和轻量级业务流程场景。

@@ -6,6 +6,24 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-infra-backend-engineer-huangrunpeng.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tencent AI Infra: Backend En…"))
+    深度分析
+      硬件范式转移：从 CPU 中心到 GPU 中心
+      'AI 大型机'的回归与'去 NVIDIA 化…
+      深度学习框架的标准化与编程语言迁移
+      模型训练的三大挑战：存得下、算得快、传得开
+    实践启示
+      对转型 AI Infra 的后台工程师
+      对企业 AI Infra 建设
+      对学习路径的规划
+    相关实体
+```
+
 ## 摘要
 
 腾讯云开发者黄润鹏撰写的技术长文，系统性拆解 AI Infra 的硬件、软件、训练与推理挑战。文章核心论点是：**传统后台工程师积累的方法论可以无缝迁移到 AI Infra**，区别只是战场从 CPU 转移到 GPU。这一框架对正在转型 AI 基础设施领域的后端工程师极具参考价值。

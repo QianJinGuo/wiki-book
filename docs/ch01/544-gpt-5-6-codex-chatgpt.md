@@ -29,6 +29,17 @@ source_published: 2026年7月10日 05:59
 
 要理解OpenAI为什么这么做，得先看这三个模型。有意思的是，看完你会发现，它们和这次改名说的是同一件事。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("不止是GPT-5.6！Codex正式上位替换ChatGPT"))
+    Grok 4.5：便宜到分数不重要
+    Muse Spark 1.1：不砌墙，想当包工头
+    GPT-5.6：一家三口，正面刚Fable 5
+```
+
 ## Grok 4.5：便宜到分数不重要
 
 先注意一个有趣的细节：发布方不叫xAI了，叫SpaceXAI（这读起来也太别扭了。xAI今年2月并入SpaceX，6月SpaceX完成史上最大IPO（募资750亿美元，上市估值1.77万亿），紧接着甩出600亿美元宣布收购Cursor。所以Grok 4.5身上挂着两个第一：SpaceXAI改名后的第一个模型，也是官方口径「与Cursor团队共同训练」的第一个成果。

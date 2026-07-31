@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Dynamically Splitting Wide P…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads 涉及aws领域的核心技术议题。

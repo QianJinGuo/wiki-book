@@ -8,6 +8,20 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sakana-fugu-livecodebench-93-2.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sakana Fugu 发布：Claude 禁令后的多 …"))
+    深度分析
+      技术架构：可交换 Agent 池与协调器模型
+      基准测试的可信度争议
+      商业定位与市场影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Sakana AI 在 Anthropic 因美国政府指令暂停 Claude Fable 5 和 Mythos 5 访问后，发布了商业多 Agent 编排 API——Fugu 和 Fugu Ultra。Fugu Ultra 在 LiveCodeBench 上以 93.2 分超越 Fable 5 的 89.8 分，在 SWE-Bench Pro 上以 73.7 分领先 Claude Opus 4.8（69.2）和 GPT-5.5（58.6）。然而，Fugu 的黑盒路由器设计——用户无法知晓底层使用了哪些模型——引发了行业对可信度和透明度的广泛质疑。

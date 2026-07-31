@@ -6,6 +6,18 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI三个语音模型发布同传被杀死"))
+    关键要点
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 OpenAI三个语音模型发布同传被杀死
 

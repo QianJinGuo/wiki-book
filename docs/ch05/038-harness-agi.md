@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 14.8KB | `entities/wangyunhe-harness-optimization-agentsoul.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战"))
+    核心命题：Agent = Models + H…
+    国内模型格局：七国八制与异构竞争
+    任务冲突：为什么统一模型难以胜任
+    多模型协同的必然性
+      Claude Code 的多模型实现
+    Harness Engineering：形式化…
+    Model Parameters + Harn…
+    AI'灵魂'之争：核心哲学问题
+      为什么这个问题重要
+    深度分析
+```
+
 ## 核心命题：Agent = Models + Harness
 
 王云鹤（华为诺亚方舟实验室）提出 **Agent = Models + Harness** 的定义框架，其中 Models 特指多模型协作而非单一 Base Model。这一定义直接回应了 Agent 概念长期缺乏清晰边界的问题。

@@ -10,6 +10,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/818662.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Alliance for Critical Infras…"))
+    深度分析
+      1. ACI 出现的政治背景：政府撤退的产业自组织
+      2. Polycrisis 是 ACI 唯一真…
+      3. ISAC/SCC 协作模型是 ACI 成…
+      4. CIPAC 缺位的制度真空是 ACI 的…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

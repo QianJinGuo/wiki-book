@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-architecture-analysis.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 设计原则与对照分析"))
+    五条系统设计原则
+      1. 先定边界，再开始执行
+      2. 把连续运行当状态机，不当函数调用
+      3. 把横切复杂度收敛到运行时层
+      4. 把多 Agent 设计成任务系统
+    与 Harness Engineering 的…
+    Claude Code、OpenClaw、He…
+    核心启示
+    深度分析
+      从'函数调用'到'状态机'的范式转移
+      Tool Runtime 的收敛价值
+      多 Agent 的本质是任务系统
+      稳定性来源于内部抽象的收敛
+    实践启示
+    相关实体
+```
+
 ## 五条系统设计原则
 ### 1. 先定边界，再开始执行
 在第一轮请求前，尽量把工具面、权限模式、恢复方式、承载宿主这些会影响执行边界的因素先定下来。

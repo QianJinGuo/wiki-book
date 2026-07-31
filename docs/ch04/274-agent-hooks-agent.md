@@ -10,6 +10,22 @@
 **标签:** #AgentHooks #工作流可编程 #生命周期 #ClaudeCode
 Hooks 将 Agent 工作流从"模型记住规则"变成"确定性自动化"——把可重复的规则从模型记忆里挪出来，搬进会在已知生命周期节点上自动运行的代码。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Hooks：把 Agent 工作流变成可编程的"))
+    相关实体
+    核心论点
+    生命周期模型
+    设计原则
+    核心价值：确定性
+    落地路径
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)

@@ -9,6 +9,16 @@
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=24 stars=4 通过评分门槛。
 > URL: https://arxiv.org/abs/2606.17030
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qwen-RobotWorld Technical Re…"))
+    评估理由
+    相关
+```
+
 ## 核心要点
 
 Published Time: Wed, 17 Jun 2026 01:07:18 GMT

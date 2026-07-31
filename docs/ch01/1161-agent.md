@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-data派thu-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent"))
+    深度分析
+      核心观点
+      1.
+      内容结构
+      技术要点
+    实践启示
+```
+
 ## 深度分析
 
 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent 涉及agent领域的核心技术议题。

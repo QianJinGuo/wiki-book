@@ -14,6 +14,15 @@
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LiveWorld：视频世界模型新范式，让镜头之外的世界…"))
+    LiveWorld：解耦世界演化与观察渲染
+```
+
 ## 
 
 已关注

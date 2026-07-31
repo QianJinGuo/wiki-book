@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI携手五巨头开源革命性超算协议：一举解决超大集…"))
+    背景：为什么需要MRC
+    MRC是什么
+    三大核心机制
+      1. 多平面网络（Multi-Plane Ne…
+      2. 自适应包喷射（Adaptive Pack…
+      3. SRv6源路由（Source Routi…
+    实际表现
+    总结
+    深度分析
+      关键洞察
+      与行业整体趋势的关联
+    实践启示
+    相关链接
+```
+
 ## 背景：为什么需要MRC
 
 在[Stargate](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)（星际之门）之前，OpenAI已与合作伙伴历时数年，共同开发、部署并维护了三代超级计算机。这段经历让OpenAI深刻认识到，要在Stargate这样的规模下高效使用算力，必须重新思考并大幅降低整个技术栈每一层的复杂度，网络设计也不例外。

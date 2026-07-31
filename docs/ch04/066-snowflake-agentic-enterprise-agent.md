@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 21.5KB | `entities/snowflake-agentic-enterprise-summit-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Snowflake Agentic Enterprise…"))
+    概述
+    核心叙事转换
+    CoCo + CoWork 双引擎闭环
+      CoCo（Cortex Code → 改名）
+      CoWork（Snowflake Intell…
+    Cortex Sense — 24% → 83…
+    标杆案例
+      Samsung SIA（shopper's i…
+      Thomson Reuters CoCounsel
+    AI 时代没有'慢数据' — Datastream
+    Agentic Search — 不是 Top…
+    治理升维：从'管数据'到'管行为'
+      五大治理能力
+      Snowflake 对 Agent 治理边界的…
+```
+
 ## 概述
 
 Snowflake 在 **Summit 2026** 通过 Platform Keynote 发布 CoCo / CoWork 双引擎、Cortex Sense、Agent Identity、Data Movement Policies、Datastream、Agentic Search 等一系列产品，**核心主张是从 "can we" 走向 "shall we"**——大模型已证明能不能做，但企业真正要决定的是敢不敢用。Snowflake 把 AI 的复杂性收进底层，把可信度带到业务前台。

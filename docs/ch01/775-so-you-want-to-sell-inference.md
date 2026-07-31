@@ -6,6 +6,21 @@
 
 # So You Want to Sell Inference
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("So You Want to Sell Inference"))
+    深度分析
+      推理市场的结构性变化
+      Harness 的价值与陷阱
+      对 AI Infra 投资的启示
+      Sierra 和 Devin 的定价模式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Tom Tunguz 深入分析 LLM 推理市场的商业经济学。核心论点：AI 增长最快的公司要么在卖推理，要么在转售推理。但推理转售是**零毛利业务**——本质上是支付通道而非软件公司。文章系统性地拆解了三种定价策略：cost-plus markup、value-based pricing、cost optimization，并指出 **value-based pricing 是唯一可持续的模型**。

@@ -10,6 +10,30 @@
 
 > **Core insight**: Ethan Mollick 提出"认知投降"（cognitive surrender）概念：人类面对 AI 请求时倾向于停止思考、直接接受 AI 输出。台北 10 所高中 Python 课程的 RCT 显示，带教师引导的 AI tutor 产生 0.15 SD 效果量（= 6-9 个月额外学业进步），而简单 ChatGPT 使用则导致 17% 成绩下降——使用方式的微小差异导致结果的天壤之别。核心命题：决定什么保留给人类本身是一个需要主动做出的选择，而非默认。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Choosing to Stay Human"))
+    认知投降：Cognitive Surrende…
+    0.15 SD 的巨大差异
+    AI 写作的隐性成本
+    Too Frictionless：工具设计的根…
+    主动选择保留什么给人类
+    深度分析
+      认知投降：设计学陷阱而非懒惰
+      Scaffold vs. Shortcut 的…
+      AI 写作的三层成本与风格资产风险
+      Agentic 系统的反学习机制
+    实践启示
+      启用 /learn 类工具而非直接问答
+      要求 AI 解释推理过程以保持认知参与
+      建立认知任务分类意识
+      为 AI 输出增加故意摩擦
+    关键数据/实践启示
+```
+
 ## 认知投降：Cognitive Surrender 的机制
 
 Wharton 的同事将此称为"认知投降"——人们会停止思考问题，直接让 AI 做工作，即使 AI 错了也会接受。Part of the problem 是这些工具的设计方式：当 AI 系统需要 elaborate back-and-forth 对话并经常出错时，人类必须在每一步都保持参与。Agentic 系统被设计为让生活更轻松，因为它们 just do stuff——这对于完成任务很棒，但对于学习任何东西、保持真实、或避免认知投降来说很糟糕。如果你提出了一个困难的请求并得到了答案，很容易就直接接受 AI 的回复。

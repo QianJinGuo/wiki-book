@@ -8,6 +8,26 @@
 
 > 本文综合提炼自 NVIDIA Nemotron 3 Ultra 在 Amazon SageMaker JumpStart 的 day-zero 发布公告。关键定位：**为长时自主 agent 优化的开源 MoE 模型** —— 550B 总参数/55B 激活、1M token 上下文、NVFP4 精度、**5x 推理加速 + 30% agentic 任务成本下降**。架构创新：**Hybrid Transformer-Mamba MoE**（首个大规模生产级 Transformer-Mamba 混合 MoE）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NVIDIA Nemotron 3 Ultra: Hyb…"))
+    核心规格
+    架构创新：Hybrid Transformer…
+    为什么 Agent 需要专门的模型
+    4 个企业级用例
+    部署：SageMaker JumpStart …
+    与其他前沿模型的差异
+    实践启示
+      1. Agentic 场景：评估推理延迟而非只…
+      2. MoE 模型：注意 GPU 内存需求
+      3. SageMaker JumpStart：…
+      4. Tool calling 准确性是 ag…
+    相关链接
+```
+
 ## 核心规格
 
 | 维度 | 规格 |

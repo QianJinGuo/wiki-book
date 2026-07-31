@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 16.0KB | `entities/ai-agents-inside-perimeter-hackernews.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Your AI Agents Are Already I…"))
+    背景：AI 代理部署速度超过治理成熟度
+    核心问题：身份黑暗物质（Identity Da…
+      身份黑暗物质的技术根因
+    企业身份团队现在在问的三个关键问题
+      问题1：我们的环境中有哪些 AI 代理在运行？
+      问题2：我们现在对 NIST 身份要求的合规性…
+      问题3：我们是否有应立即轮换的静态凭证？
+    Orchid Security 的解决路径
+      技术方法：全谱身份权威（Full-Spectr…
+      安全 AI 代理采用的五项原则
+    深度问题：身份黑暗物质正在加速
+    Gartner Market Guide fo…
+    深度分析
+    实践启示
+```
+
 ## 背景：AI 代理部署速度超过治理成熟度
 
 Gartner 在其首份 **Market Guide for Guardian Agents** 中指出："企业 AI 代理的采用正在加速，超过了治理策略控制的成熟度。"  这一判断与 Orchid Security 的市场观察一致——企业正在快速部署 AI 代理，但相应的安全管理框架仍处于早期阶段。

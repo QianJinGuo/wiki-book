@@ -8,6 +8,22 @@
 
 > 2026-06-07 引用自 Interconnects《GPT 5.4 is a big step for Codex》，2026-03-18。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT 5.4 Codex 评测：Interconnec…"))
+    Agent 评测的四个维度
+    为什么之前离开 OpenAI Agent
+    GPT 5.4 vs Claude 的个性差异
+    实际优势
+    弱点
+    深度分析
+    实践启示
+    结论
+```
+
 ## Agent 评测的四个维度
 
 传统 benchmark 简化为单一正确性分数，但这不能反映 Agent 实际体验。Interconnects 关注四个维度：

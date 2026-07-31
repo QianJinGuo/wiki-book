@@ -34,6 +34,15 @@ SimFoundry还能在保持物体功能和Affordance不变的前提下，自动更
 
 这是怎么做到的？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("李飞飞署名具身新论文：Sim2Real烧不起，Real2…"))
+    一段视频，生成无限训练场景
+```
+
 ## 一段视频，生成无限训练场景
 
 SimFoundry 的核心贡献，在于打通了 场景生成、数据生成、策略评测和策略训练 的整个Real-to-Sim闭环。

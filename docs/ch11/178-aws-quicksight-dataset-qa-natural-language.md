@@ -10,6 +10,17 @@ Every BI team knows this bottleneck: a business user has a question that falls o
 Quick already offers two natural language querying modes. [Dashboard Q&A](<https://community.amazonquicksight.com/t/how-amazon-shipping-turns-questions-into-decisions-with-amazon-quick-chat-agent/51689>) is intended for questions about data visualized in published dashboards, drawing on the business context that authors have built into each view. [Topic Q&A](<https://community.amazonquicksight.com/t/amazon-quick-best-practices-for-amazon-quick-sight-topics/51683>) goes further. Authors enrich the data model with business-friendly field names and synonyms, so users can query a curated set of fields in plain language. Dataset Q&A now completes the picture. Users can explore any dataset directly, going beyond what an author has pre-configured, while all the security, permissions, and governance that enterprises expect from Quick remain fully enforced.
 While the industry has raced to ship text-to-SQL demos, the real challenge in enterprise BI has never been generating SQL. The challenge is grounding ambiguous business language against complex schemas, enforcing security at every step, and explaining what the system did and why. The agentic system of Quick is purpose-built for this. The model must resolve lexical ambiguity— _does "volume" mean row count, revenue, or units shipped?_ —and map colloquial business language to the precise column names and calculations in the dataset, without a predefined dictionary. Before any query runs, the system searches across all your structured assets (dashboards, datasets, and topics) using a semantic graph that understands how your assets relate to each other. This lets it find the right source even when your question doesn't use the exact name of a dataset or column. After the source is identified, the system peeks into the data for context like sample values and distributions and uses author-provided field descriptions and business context to disambiguate before using one of the three capabilities available for generating SQL.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Quicksight Dataset QA Na…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

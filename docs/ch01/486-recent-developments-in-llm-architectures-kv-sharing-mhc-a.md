@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/recent-developments-in-llm-architectures-kv-sharing-mhc-and-compressed-attention.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Recent Developments in LLM A…"))
+    核心主题
+    主要模型架构分析
+      Gemma 4：KV Sharing + PLE
+      Laguna XS.2：Layer-wise …
+      ZAYA1-8B：Compressed Con…
+      DeepSeek V4：mHC + CSA/HCA
+    深度分析
+      长上下文效率：架构演进的主轴
+      压缩范式的本质区别
+      mHC 的意义：从'注意力改造'到'残差流改造'
+      复杂度 vs 效率的权衡
+    实践启示
+      对模型选择的影响
+      对 Agent 系统设计的启发
+      对自研模型的建议
+      警惕点
+    相关实体
+```
+
 ## 核心主题
 2026年4-5月推出的主要开源权重模型（Gemma 4、Laguna XS.2、ZAYA1-8B、DeepSeek V4）共同指向一个核心趋势：**长上下文效率优化**。随着推理模型和 Agent 工作流需要保留更多 token，KV-cache 大小、内存带宽和注意力计算成本成为主要瓶颈，各大厂商纷纷引入架构层面的 trick 来降低这些成本。
 

@@ -8,6 +8,22 @@
 
 AI Coding Agent Token 成本优化的完整五层模型：使用习惯→模型路由→Context 工程→代码图谱→Agent 架构。devinyzeng/腾讯技术工程。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Coding Agent Token 成本控制五层模型"))
+    一句话
+    五层优化模型
+    成本结构（核心洞察）
+    Prompt Cache 三推论
+    四个压缩工具对比
+    代码图谱实测
+    Orchestrator-Worker 成本对比
+    数据流转四原则
+```
+
 ## 一句话
 
 **成本 = 重复上下文搬运，优化 = 减少重复 + 合理路由 + 精准检索 + 清晰分工。核心不是少问一句话，是让系统少重复做无效工作。**

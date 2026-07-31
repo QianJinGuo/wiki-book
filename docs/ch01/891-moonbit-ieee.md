@@ -8,6 +8,24 @@
 
 > **Background**：本文基于量子位对 IEEE TSE 接收论文《No Resource, No Benchmarks, No Problem? Evaluating and Improving LLMs for Code Generation in No-Resource Languages》的报道。论文由瑞士 USI Software Institute 和西班牙塞维利亚大学联合完成，系统评估了大模型在 MoonBit、Gleam 等无资源语言上的代码生成能力，并提出了系统性教学路径。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MoonBit与无资源语言代码生成：IEEE论文评估与改进"))
+    核心发现
+      零样本 vs 增强方法
+    方法论
+      基准构建
+      Few-shot 与 RAG 尝试
+      继续预训练 Continued Pre-tr…
+      Instruction Transferrin…
+    MoonBit 的 AI-Native 语言设计
+    意义与观察
+    相关概念
+```
+
 ## 核心发现
 
 论文将编程语言分为三类：高资源语言（Python、Java）、低资源语言（R、Lua、Haskell、Julia、Racket）和无资源语言（MoonBit、Gleam）。核心发现：大模型在新语言上**零样本表现极差**，但可以通过系统方法显著提升。

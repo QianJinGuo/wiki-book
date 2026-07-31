@@ -8,6 +8,20 @@
 
 > 从优化理论、演化生物学、竞争市场、机器学习四个学科论证 AI 专业化不可避免。v=9 c=9 s=5 vxc=81
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI 专业化不可避免：Goldfeder/Wyder/L…"))
+    深度分析
+      优化理论：无免费午餐定理的现实含义
+      演化生物学视角：专业化作为进化稳定策略
+      市场竞争维度：Jevons 悖论与专业化的正反…
+      跨学科论证的方法论价值
+    实践启示
+```
+
 ## 摘要
 
 Goldfeder、Wyder、LeCun 与 Shwartz-Ziv 在 2026 年的工作《AI Must Embrace Specialization via Superhuman Adaptable Intelligence》从四个学科——优化理论、演化生物学、竞争市场、机器学习——构建了 AI 专业化不可避免的跨学科论证体系。Dharma AI 团队对此进行了解读与拓展。核心结论是：专业的模型并不会随着通用模型能力的提升而变得多余；相反，通用模型越强，专业化的价值和必要性反而越大。

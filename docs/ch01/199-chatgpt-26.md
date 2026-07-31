@@ -7,6 +7,26 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)
 从微信文章 [ChatGPT 官宣 26 位未来之星，他们是：穿墙少年、街头摊贩、盲童的朋友……](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md) 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ChatGPT 官宣 26 位未来之星：穿墙少年、街头摊…"))
+    核心内容
+      主要章节
+    相关实体
+    深度分析
+    实践启示
+    26位未来之星详细档案
+      01 穿墙找人 — Wi-Find
+      02 150万颗星星 — Matteo Paz
+      03 看不见的Wordle — Crystal…
+      04 12岁丧父 — Charlotte Ro…
+    第一代AI原住民
+    来源
+```
+
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg
 

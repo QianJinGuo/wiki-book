@@ -19,6 +19,26 @@ updated: '2026-06-08'
 type: entity
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fundamental’s Large Tabular …"))
+    相关实体
+    What is NEXUS?
+    Why existing approaches…
+    How NEXUS works on Amaz…
+    Get started with NEXUS …
+    Enterprise use cases tr…
+      Financial services
+      Healthcare
+      Manufacturing and suppl…
+      Retail and ecommerce
+    Why choose NEXUS on Ama…
+    Strategic AWS partnership
+```
+
 ## 相关实体
 - [Openai Models Codex Amazon Bedrock Ga](../ch11/295-amazon-bedrock.html)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/731-announcing-openai-compatible-api-support-for-amazon-sagemake.html)

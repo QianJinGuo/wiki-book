@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于钉钉机器人的 Qoder CLI / Claude …"))
+    深度分析
+      核心观点
+    一、背景与问题
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 基于钉钉机器人的 Qoder CLI / Claude Code 双引擎 AI 助手实践 涉及agent领域的核心技术议题。

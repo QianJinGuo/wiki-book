@@ -8,6 +8,19 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/roman-linkedin-backdoor-supply-chain.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A backdoor in a LinkedIn job…"))
+    内容提炼
+    The backdoor
+    关键洞察
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **来源**: https://roman.pt/posts/linkedin-backdoor/

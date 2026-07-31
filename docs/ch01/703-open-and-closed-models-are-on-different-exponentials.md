@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interconnects-ai-p-open-and-closed-models-are-on-different.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Open and Closed Models Are o…"))
+    深度分析
+      '不同的指数'意味着什么
+      RSI 论述的反驳
+      对 AI Agent 生态的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Interconnects（Nathan Lambert）撰文分析 AI 模型生态的核心经济张力：闭源前沿模型与开源模型正运行在两条不同的指数曲线上。闭源实验室（Anthropic、OpenAI）凭借 coding agent 的产品市场契合度，正在构建类似 Apple + Microsoft 的集成化高价壁垒；开源模型经济则走向更分散、更大总量但利润共享的 commodity 市场。核心论断：未来 5-10 年 OpenAI 和 Anthropic 估值将达 $2-10T，但开源模型生态的总体市场价值将远超两者之和。

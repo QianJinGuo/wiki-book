@@ -8,6 +8,22 @@
 
 > **Background**：2026-06-23 发表的 AI Agent 产品现实分析。文章从产品角度审视 Agent 的实际表现，指出当前 Agent 产品的高流失率（churn）问题，以及"产品不工作"的核心挑战。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent Hype Meets Reality"))
+    深度分析
+      Agent 产品流失的根本原因
+      与 Vibe Coding Reality G…
+      对 Agent 市场的预测
+    实践启示
+      对 Agent 产品构建者的建议
+      对 Agent 投资者的建议
+    相关实体
+```
+
 ## 摘要
 
 AI Agent 创业领域正在经历一个反复出现的模式：高调发布 → 大量注册 → 疯狂增长 → 融资 → 产品根本不能用 → 流失。作者以 Epic Systems 创始人 Judy Faulkner 的经验为对照，提出了"先做好一件事，再扩展"的务实策略。

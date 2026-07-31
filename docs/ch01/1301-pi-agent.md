@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/pi-agent-framework.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Pi Agent：极简核心 + 事件总线扩展框架"))
+    概述
+    深度分析
+    相关实体
+```
+
 ## 概述
 **Pi Agent（badlogic/pi-mono）** 的核心设计哲学：**核心代码极度克制，把所有"可定制性"维度全部交给扩展系统**。
 不是简单的"我们支持插件"。扩展系统是从架构第一天起就作为**一等公民**存在的能力注入层。

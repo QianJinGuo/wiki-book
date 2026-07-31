@@ -11,6 +11,17 @@
 
 * ** 零外部依赖  ** ：不需要API Key、数据库、网络。任何人克隆下来就能跑。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我用 SKILL.md 做了一个简历生成器"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Skill Engineering Ai As Algorithm](../ch04/271-skill.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/096-hermes-agent.html)

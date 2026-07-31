@@ -10,6 +10,28 @@
 **演讲者：** 何宇航（易点天下 中台研发总监）
 **主题：** 企业级 Agentic AI 的工程化落地：Context Engineering + 安全防御体系
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一点天下：Context Engineering 与 A…"))
+    背景命题
+    一、底层支撑：多云共生的确定性架构
+    二、V1 → V2 技术演进
+      V1 问题（低代码线性 Workflow）
+      V2 方案：Agent Loop + Cont…
+    三、六层上下文体系（L1–L6）
+    四、主动注入：Hook 化的主动推送
+      三类检索钩子
+    五、Token 预算治理
+      问题
+      三级内容分层（L0/L1/L2）
+      动态注入策略
+    六、渐进式工具加载（Deferred Tool…
+    七、压缩续接（PreCompact Hook）
+```
+
 ## 背景命题
 > "如何在一个确定性要求极高的复杂企业架构中，有效驯服 Agent 固有的'幻觉'与'遗忘'，让概率性的智能稳定地跑在确定性的生产系统之上？"
 

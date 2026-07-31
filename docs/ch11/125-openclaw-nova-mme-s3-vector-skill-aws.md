@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/openclaw-leveraging-nova-mme-s3-vector-implement-skill.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("给 Openclaw瘦身-利用Nova MME 和 S3…"))
+    概述
+    核心技术
+    深度分析
+    实践启示
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

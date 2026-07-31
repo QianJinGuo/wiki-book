@@ -8,6 +8,30 @@
 
 Anthropic 官方 Claude Code 插件体系，发布于 2026 年 5 月，GitHub 仓库已获 20K+ Stars。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 官方插件系统 (claude-p…"))
+    插件系统架构
+    feature-dev：7阶段结构化功能开发
+    hookify：自然语言配置 Hooks
+    code-modernization：遗留代码…
+    claude-code-setup：项目一键配…
+    深度分析
+      1. 多智能体并行架构的意义
+      2. Hook 系统的安全防护边界
+      3. 遗留代码现代化的行为不变性保证
+      4. 只读扫描的安全信任模型
+    实践启示
+      1. 用 feature-dev 替代「边想边…
+      2. 用 hookify 建立团队编码规范
+      3. 对遗留代码项目先用 code-moder…
+      4. 新项目先用 claude-code-se…
+    相关资源
+```
+
 ## 插件系统架构
 
 Claude Code 插件可以包含：

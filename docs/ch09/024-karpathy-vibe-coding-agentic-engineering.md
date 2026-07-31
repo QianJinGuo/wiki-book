@@ -6,6 +6,29 @@
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v3.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy 最新访谈：从 Vibe Coding …"))
+    核心观点
+      Vibe Coding vs Agentic …
+      Software 3.0 的三层架构
+      Agent Control Plane 八层框架
+      可验证性决定自动化边界
+    深度分析
+      范式转变的实质：从工具到系统
+      可验证性是 Agent 扩张的天花板
+      Software 3.0 的架构含义
+      幽灵比喻的工程推论
+    实践启示
+      对工程团队
+      对个人开发者
+      对组织和技术管理者
+    相关实体
+```
+
 ## 核心观点
 ### Vibe Coding vs Agentic Engineering 的分工
 | 维度 | Vibe Coding | Agentic Engineering |

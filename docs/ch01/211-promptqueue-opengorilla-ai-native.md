@@ -6,6 +6,36 @@
 
 # PromptQueue + OpenGorilla 集成 — AI-Native 异步任务引擎与自进化认知层
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("PromptQueue + OpenGorilla 集成…"))
+    一句话
+    架构图
+    相关实体
+    一、立项背景（Purpose）
+      1.1 解决的 3 个核心痛点
+      1.2 目标用户
+    二、整体架构（4 层分离）
+      2.1 4 层职责
+      2.2 Monorepo 4 包结构
+    三、核心功能矩阵
+      3.1 任务生命周期（7 状态机）
+      3.2 Tool Loop — Worker-…
+      3.3 Human-in-the-Loop（*…
+      3.4 Provider 架构（Plugin …
+    四、OpenGorilla 集成（**AI-N…
+      4.1 4 大集成能力
+      4.2 自进化闭环
+    五、5 大核心 Insight
+      Insight 1: LLM 调用本质是队列问题
+      Insight 2: Tool 的治理权必须在…
+      Insight 3: HITL 不是 feat…
+      Insight 4: 经验即资产
+```
+
 ## 一句话
 
 > **PromptQueue = "BullMQ meets AI"** — 把消息队列的可靠性带入 LLM 调用；**OpenGorilla** = 认知记忆层 — 让每一次任务执行都成为自进化数据

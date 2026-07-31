@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("微调 Amazon Nova 模型实现精准邮件数据提取"))
+    深度分析
+      微调策略的技术细节
+      评估结果深度解读
+      幻觉抑制的关键发现
+      生产部署架构
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

@@ -47,6 +47,34 @@ graph TB
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 综合论述：为什么…"))
+    Harness Engineering 是什么
+    与传统软件工程的 4 个核心区别
+      1. 概率性 vs 确定性
+      2. 工具设计是核心竞争力
+      3. Verifier 决定上线
+      4. 上下文是稀缺资源
+    2026 年的关键演进
+    Harness 工程的 4 层架构
+    现实案例
+      Claude Code 的 Harness
+      OpenAI Agents SDK
+      AWS AgentCore
+      Hermes Agent
+    局限与反对声音
+    与相邻概念的区分
+    深度分析
+      洞察 1：Harness Engineerin…
+      洞察 2：Rahul Patil / AI 技…
+      洞察 3：LLM 作为新运行时的工程范式重塑
+      洞察 4：多层 Verifier 架构的必然性
+```
+
 ## Harness Engineering 是什么
 
 Harness Engineering 的核心命题：**当 LLM 是新一代运行时（Karpathy Software 3.0），agent harness 就是这个运行时的「操作系统 + 标准库」**。开发者面对的不再是「写代码调用 API」，而是「**设计一个 harness 让 LLM 在其中安全、高效、可验证地工作**」。

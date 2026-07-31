@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-live-translation-apps-with-gpt-realtime-translate.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build Live Translation Apps …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - `Openai Gpt Realtime Voice Models Qbitai` — GPT Realtime Voice 模型的详细信息，与 gpt-realtime-translate 直接相关
 - `Openai Realtime Api Architecture` — OpenAI Realtime API 的架构说明

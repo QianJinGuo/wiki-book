@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-main-path-to-truly-creative-ai.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Main Path to Truly Creat…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 Title: The Main Path to Truly Creative AI
 URL Source: https://danielmiessler.com/blog/the-main-path-to-truly-creative-ai

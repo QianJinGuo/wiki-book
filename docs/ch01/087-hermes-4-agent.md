@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/我给hermes配了4个agent真正有用的是这些事.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我给Hermes配了4个Agent，真正有用的是这些事"))
+    元数据
+    原始内容
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/LLVZts-SRNo-Jh1GpV2BRA
 

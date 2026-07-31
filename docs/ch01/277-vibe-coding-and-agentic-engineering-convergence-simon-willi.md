@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe-coding-agentic-engineering-convergence-simon-willison.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vibe Coding and Agentic Engi…"))
+    深度分析
+      1. Vibe Coding → Agenti…
+      2. 偏差正常化（Anomaly Normal…
+      3. 代码本体感觉（Proprioceptio…
+      4. 真正的产品壁垒是「数据层和接口」而不是代码
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准创始人）在 2026 年 5 月的访谈里系统讨论了 Vibe Coding 与 Agentic Engineering 的融合：两种范式从「对立」走向「半黑盒合作」，关键转折是 Claude Opus 4.5 + GPT 5.1 在 2025-11 同时发布后 Coding Agent 真正成为 Daily Driver。访谈里给出了三个对未来 12-18 个月最重要的判断——「代码本体感觉丧失」是真正危险、「数据层和接口的价值上升而代码本身贬值」、并行 Agent 做 Spike 是新工作流。

@@ -8,6 +8,19 @@
 
 > **Background**：本文基于 2026 年 7 月 2 日发表于《Science》的论文《A sub-10-millisecond neural dynamical system based on phase-change memristors》，由北京大学杨玉超团队与中国科学院上海微系统所宋志棠团队联合完成。该研究利用相变存储器（PCM）忆阻器的物理特性，设计了一款 40nm NDS 专用芯片，将神经动力学系统迭代延迟压至亚 10ms 量级。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("北大PCM忆阻器NDS芯片：sub-10ms神经动力学系统"))
+    核心突破
+    性能数据
+    与现有 AI 硬件的对比
+    局限性
+    相关实体
+```
+
 ## 核心突破
 
 NDS（Neural Dynamical Systems）方法利用神经网络嵌入连续时间微分方程求解，在高保真几何重建任务（如脑皮层表面建模）上精度远超传统 CNN 和 Transformer。但 NDS 的计算速度一直难以突破：由于每一步都需要神经网络参与自适应步长搜索与误差校验，GPU A100 上也需要数百毫秒才能完成一次完整迭代。

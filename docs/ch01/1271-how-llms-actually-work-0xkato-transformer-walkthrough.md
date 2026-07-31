@@ -8,6 +8,34 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-llms-actually-work-0xkato.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How LLMs Actually Work: 0xka…"))
+    概述
+    关键内容精要
+      1. Tokenization
+      2. Embeddings
+      3. Positional encoding
+      4. Attention + 5. Multi…
+    实践价值
+    与现有 LLM 架构实体的差异化
+    上线状态
+    深度分析
+      1. 'LLM 如何工作'的教育必要性
+      2. Tokenization 是理解 LLM…
+      3. Sampling 温度的工程含义
+      4. Attention 机制的可解释性价值
+    实践启示
+      1. 用 tokenizer 可视化工具检查你…
+      2. 按任务类型而非感觉设定温度
+      3. 利用 attention 热力图调试输出
+      4. 将 LLM 机制知识纳入团队培训
+    相关实体
+```
+
 ## 概述
 
 0xkato 2026-06-01 发布的 transformer 完整 walkthrough 长文，9 节系统覆盖 LLM 内部机制，**避免数学**但保留工程准确性。目标读者：能读 modern LLM papers 和 model cards 的人。

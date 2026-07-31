@@ -11,6 +11,17 @@ Published Time: Wed, 13 May 2026 15:55:13 GMT
 [depthfirst](https://depthfirst.com/)
 [Sign in](https://app.depthfirst.com/)[Request demo](https://depthfirst.com/book-a-demo)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Open Defense Initiative"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Opendefenseinitiativedepthfirst](https://github.com/QianJinGuo/wiki/blob/main/entities/opendefenseinitiativedepthfirst.md)
 - [Open Defense Initiative Depthfirst](ch01/860-open-defense-initiative-depthfirst.html)

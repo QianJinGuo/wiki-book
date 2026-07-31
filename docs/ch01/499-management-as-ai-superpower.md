@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/management-as-ai-superpower.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Management as AI superpower"))
+    深度分析
+      1. 从'prompting'到'delega…
+      2. '好交付文档'的结构共性
+      3. AI 时代稀缺性的反转
+      4. 软技能到硬技能的范式重估
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick 在宾大实验班的发现：非技术背景的 EMBA 学生用 Claude Code + Google Antigravity 在四天内创建的 startup 原型，比他 15 年教学生涯中**整学期学生产出还要好一个数量级**。原因不是学生突然变成 AI 专家——而是他们**会用管理技能委托 AI**：明确目标、定义交付物、识别结果好坏。这些被贬为"软技能"的能力在 AI 时代变成"硬技能"。本文提出"管理即 AI 超能力"的核心论断与决策公式。

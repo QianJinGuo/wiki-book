@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/一个文件让-ai-coding-效率翻倍agentsmd-实践指南.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一个文件让 AI Coding 效率翻倍：AGENTS.…"))
+    AGENTS.md 是什么
+      格式统一化历程
+    没有 AGENTS.md 的日子
+    核心理念：地图，而非手册
+    深度分析
+    实践启示
+```
+
 ## AGENTS.md 是什么
 
 AGENTS.md 是一个简单的开放格式，用于指导 AI Coding Agent 在项目中工作。可以把它理解为 **给 AI 看的 README**——README.md 是给人类看的项目说明，AGENTS.md 则是给 AI Agent 看的项目指令，包含构建命令、编码规范、测试要求、安全注意事项等 AI 需要知道的上下文 。

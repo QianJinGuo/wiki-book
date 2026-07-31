@@ -8,6 +8,28 @@
 
 > 来源：阿里云云原生 | 发布日期：2026-07-17
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("云效 AI Code Review — GitLab I…"))
+    Architecture and Integrat…
+      Security-First Design
+      Integration Workflow
+      VPC Private Network Acc…
+      Token Authentication
+    Capabilities Beyond Tok…
+      Iterative Follow-up
+      Cross-File Context Unde…
+    深度分析
+      The Private-Network AI …
+      GitLab as the Critical …
+      From Diff-Review to Con…
+    实践启示
+    Related Entities
+```
+
 ## 摘要
 
 云效 (Yunxiao) is [Alibaba Cloud](../ch04/347-agentic-cloud.html)'s DevOps platform. Its **AI Code Review** capability, previously available for Alibaba Cloud's Codeup, now officially supports **GitLab integration** — enabling enterprises to leverage AI-driven code review without moving their repositories out of private networks. The architecture is built around security-first principles: no public exposure required, no repository migration, and Personal Access Token based authentication.

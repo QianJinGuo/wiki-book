@@ -6,6 +6,21 @@
 
 # The Recent History of AI in 32 Otters
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The recent history of AI in …"))
+    深度分析
+      「水獭基准」的方法论价值
+      开源模型的追赶速度
+      「无法分辨真假」的临界点
+      与「Sparks of AGI」论文的对话
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick（沃顿商学院教授）用一个简单而巧妙的基准测试——"otter on a plane using wifi"——追踪了 AI 图像生成从 2021 年到 2025 年的演进历程。这个偶然的测试揭示了 AI 发展的三个关键趋势：多种类型 AI 工具的涌现、能力的快速提升、以及开源/本地模型的追赶速度。从 VQGAN+CLIP 的抽象色块到 Midjourney 的照片级写实，从扩散模型到多模态直接生成，从闭源垄断到本地 GPU 可运行的开源模型，三年间的变化堪称翻天覆地。

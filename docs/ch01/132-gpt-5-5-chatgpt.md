@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐ | 4.5KB | `entities/gpt-55来了我撤回了退订chatgpt的决定.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5.5来了！我撤回了退订ChatGPT的决定"))
+    元数据
+    原始内容
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 摘要
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/Sfft58JM9dasu8LuB7NcYw
 

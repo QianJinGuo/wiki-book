@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deeppotential-alibabacloud-agentrun-scientific-ai.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("深势科技携手阿里云AgentRun"))
+    关键要点
+    深度分析
+      1. AI4S 的特殊性：从'辅助工具'到'原…
+      2. 科研 Agent 的四大工程挑战
+      3. AgentRun 的技术解法
+      4. MCP 市场：工具链标准化的战略价值
+    实践启示
+      1. 科研 Agent 需要专门的架构设计，不…
+      2. Serverless 架构与 Agent…
+      3. 安全沙箱是 Agent 工程化的标配
+      4. MCP 生态是 Agent 能力扩展的关…
+    相关实体
+```
+
 ## 摘要
 深势科技携手阿里云AgentRun，加速科研 AI Agent 全速运行
 

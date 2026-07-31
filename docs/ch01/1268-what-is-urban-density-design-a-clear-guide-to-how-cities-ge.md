@@ -6,6 +6,21 @@
 
 # Urban Density Design：城市密度设计完全指南
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What Is Urban Density Design…"))
+    深度分析
+      巴黎悖论：密度 ≠ 高度
+      Missing Middle Housing …
+      TOD 的经济学逻辑
+      与 AI/Agent 话题的意外连接
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 城市密度设计（Urban Density Design）是规划和建设城市的实践，目标是在给定土地面积内容纳更多人口、活动和功能，同时维持宜居性、服务可达性和公共空间品质。它不仅仅是「把楼建高」，而是关于街道、建筑、开放空间、交通和混合功能如何协同工作，创造对居民和行人友好的场所。

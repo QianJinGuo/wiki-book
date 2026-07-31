@@ -8,6 +8,22 @@
 # AI Native 时代 —— 研发组织何去何从
 > 作者：许晓斌 | 来源：阿里技术 | 2026-05-14（25分钟阅读）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Native 时代 —— 研发组织何去何从"))
+    核心洞察
+    组织的本质：2000年协调问题
+    旧定律都是人的协作物理学
+    AI 不是新工具，是新协作主体
+    双层架构：Harness + Hive Mind
+    范式转换：Org Chart → Execut…
+    人的双重角色
+    Harness Engineering
+```
+
 ## 核心洞察
 **内部访谈数据**（4位深度使用AI的工程师）：
 

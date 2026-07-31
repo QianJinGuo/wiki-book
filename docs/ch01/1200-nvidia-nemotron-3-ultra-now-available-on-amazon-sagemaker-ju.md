@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NVIDIA Nemotron 3 Ultra now …"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart 涉及agent领域的核心技术议题。

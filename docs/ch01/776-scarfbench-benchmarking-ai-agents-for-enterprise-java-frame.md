@@ -6,6 +6,23 @@
 
 # ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ScarfBench: Benchmarking AI …"))
+    深度分析
+      1. 框架迁移为何如此困难？
+      2. 从编译到行为成功的三级落差
+      3. 迁移是迭代的依赖解析过程而非线性变换
+      4. 非代码因素的挑战
+    基准测试指标
+    实践启示
+    相关实体
+    来源
+```
+
 ## 摘要
 
 IBM Research 推出的 ScarfBench (Self-Contained Application Refactoring Benchmark) 是一个评估 AI Agent 在企业级 Java 框架迁移任务上表现的开源基准测试。它覆盖 Spring、Jakarta EE、Quarkus 三大 Java 生态系统的跨框架迁移，包含 34 个应用、102 个框架实现、204 个迁移任务、约 151K 行代码和 1331 个专家编写的测试用例。当前最强 AI Agent 的行为成功率不足 10%，揭示了框架迁移远未达到自动化水平。

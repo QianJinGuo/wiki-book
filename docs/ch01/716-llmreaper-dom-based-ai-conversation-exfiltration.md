@@ -6,6 +6,16 @@
 
 # LLMReaper - DOM Based AI Conversation Exfiltration
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLMReaper - DOM Based AI Con…"))
+    深度分析
+    相关实体
+```
+
 ## 深度分析
 
 Published Time: 2026-05-27T00:00:00.000Z

@@ -295,6 +295,15 @@ OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话
 
   
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI深夜放出GPT-Live，ChatGPT终于…"))
+    第 2 来源 — SWE-Bench Pro …
+```
+
 ## 第 2 来源 — SWE-Bench Pro 审计 (AI寒武纪, 2026-07-08)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-gpt-live-voice-model-swe-bench-pro-audit-2026.md)

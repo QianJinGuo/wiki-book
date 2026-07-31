@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/knowledge-agents-beat-frontier-models.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Knowledge Agents: Beat Front…"))
+    深度分析
+      实验结果：模型均衡化效应
+      与传统 RAG 的区别
+      成本与经济效益
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 James Wang 提出的 "Knowledge Agent" 模式是一种将领域专业知识预处理为结构化知识单元（concept docs + thesis docs），通过 hybrid BM25 + semantic search 注入 agent 上下文的方法。该方法使本地运行的小模型（如 Qwen 3.6 27B）在特定领域超越了 Claude Opus 等前沿模型，同时大幅降低推理成本。作者已构建 12 个 specialist knowledge agents，覆盖金融分析、企业知识、医学研究等领域，并开源了通用模板。

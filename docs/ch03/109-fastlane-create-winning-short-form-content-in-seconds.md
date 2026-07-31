@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fastlane | Create Winning Sh…"))
+    深度分析
+      产品定位与竞争格局
+      PLG 策略分析
+      内容同质化风险
+      定价策略
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Fastlane 是一个 AI 驱动的短内容生产平台，定位为"30 秒生成 30 天的病毒式内容"。它通过输入网站 URL 自动学习产品信息和目标受众，然后生成适配 TikTok、Instagram Reels 和 YouTube Shorts 的短视频内容。核心功能包括 Blitz Mode（类似 Tinder 的内容滑动筛选）、500+ 超写实 AI 虚拟人 UGC 角色库、2000+ 真人 UGC 视频素材库、以及一键跨平台发布调度。产品采用典型 PLG 策略，通过 Product Hunt 高频曝光和用户增长案例（如 31.8M views）建立社会证明。

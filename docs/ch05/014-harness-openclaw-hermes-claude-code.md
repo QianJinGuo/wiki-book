@@ -47,6 +47,36 @@ graph TB
 > Date: 2026-05-07
 > Collected: 2026-05-07
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 到底是什么？看看 OpenClaw、He…"))
+    内容
+    模型与工程
+    什么是 Harness
+    三个框架对比
+      1. OpenClaw：先把 Agent 管住
+      2. Hermes：先让 Agent 长本事
+      3. Claude Code
+    Harness 七层模型
+      第一层：角色与规则
+      第二层：记忆系统
+      第三层：上下文加载机制
+      第四层：稳定执行
+    OpenClaw 中的 Harness 具体实现
+      MCP/工具链
+      Skills
+      Runtime
+    结语
+    深度分析
+      三种路线代表了三种工程哲学
+      七层模型的分层逻辑
+      一个核心矛盾
+      真正的问题
+```
+
 ## 内容
 Harness 最近有些小火，但这东西跟 OpenClaw 和 Hermes 不一样，到现在都只有个框架性描述：为 Agent 的稳定执行而生。要了解 Harness 不仅要看大概念，最好借助现在实际运行的很好的 Agent 框架，比如 Claude Code、OpenClaw、Hermes。
 Martin Fowler 在 2026 年 4 月写的文章里，把 Harness Engineering 直接定义成一套围绕 coding agent 的信任建设模型，核心是通过上下文、约束、反馈回路和工程结构，让人逐步敢把任务交给 Agent。

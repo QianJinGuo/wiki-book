@@ -8,6 +8,23 @@
 
 > **Background**: XBow 团队对 Anthropic 的 Mythos 能力进行了实际评测，详细记录了与 Mythos 交互的真实体验、模型在 CTF 挑战和真实漏洞挖掘中的表现，以及与现有 AI 安全工具的对比。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What it feels like to work w…"))
+    核心发现
+    与现有 Mythos 实体的关系
+    安全影响
+    深度分析
+      1. Mythos 能力的本质跃迁：从'对话工…
+      2. 可解释性缺口：黑箱化是能力增长的代价
+      3. 成本结构的新挑战：Token 消耗与服务…
+      4. 安全护栏的双刃剑效应
+    实践启示
+```
+
 ## 核心发现
 
 XBow 团队的评测揭示了 Mythos 在实际安全场景中的表现：Mythos 在 CTF 挑战中表现出色，但在真实世界漏洞发现中仍有明显局限。评测团队发现 Mythos 的优势在于其系统性推理能力，而非暴力试错。

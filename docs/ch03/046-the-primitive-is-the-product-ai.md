@@ -8,6 +8,22 @@
 
 > 本文基于 Amplify Partners 合伙人 Lenny Pruss 的博客整理。文章提出在 AI Agent 时代，软件产品的最重要设计决策不再是"构建什么功能"，而是"暴露什么原语（primitive）"。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Primitive is the Product…"))
+    核心论点：AI 颠覆了软件产品逻辑
+    Tao of HashiCorp：原语设计哲学
+    原语思维（Primitive Thinking）
+      产品即原语
+      典型案例
+      原语 vs 平台
+    对 AI Agent 时代的启示
+    相关实体
+```
+
 ## 核心论点：AI 颠覆了软件产品逻辑
 
 传统软件经济学：**拥有更多工作流 = 捕获更多价值**。功能是软件的"货币"——每个新功能扩大产品面、增加切换成本。

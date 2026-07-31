@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-beta-foundation-model-company-advantage.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kimi Work Beta：通用 Agent 一定来自…"))
+    深度分析
+      1. 为什么通用 Agent 的壁垒在模型层而…
+      2. 模型公司做 Agent 的结构性优势
+      3. Vibe Working：意图驱动的任务…
+      4. Kimi Work Beta 的技术架构
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Kimi Work Beta 是 Moonshot AI（月之暗面）推出的通用 AI Agent 产品，其核心理念主张：**真正通用的 AI Agent 必须来自基础模型公司**。这一判断基于一个根本性的观察——Agent 的能力边界本质上是其底层模型能力的外延，而非独立构建的中间层应用。当模型公司直接掌控模型层与 Agent 层的协同设计（co-design）时，才能打通推理能力、工具调用、上下文管理、长期记忆与安全策略之间的全链路闭环。本文深度剖析这一论断背后的技术逻辑、工程约束与竞争格局，探讨为何通用 Agent 不是应用层创业的机会，而是一场基础模型公司的专属竞赛。

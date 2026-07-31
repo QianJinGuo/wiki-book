@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/computer-use-45x-more-expensive-than-structured-apis.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Computer Use 45x More Expens…"))
+    Benchmark 数据详解
+    核心洞察解析
+    架构启示
+      何时选择 Computer Use
+      何时选择 API Agent
+      混合策略
+    深度分析
+      关键洞察
+      与行业整体趋势的关联
+    实践启示
+    相关实体
+    相关概念
+    实践建议
+      对于 Agent 开发者的建议
+      对于平台/基础设施团队的启示
+```
+
 ## 核心要点
 
 - **价值评分**: 8 | **置信度**: 9 | **产品**: 72

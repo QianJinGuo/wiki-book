@@ -8,6 +8,25 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("当 Agentic AI 重塑生产关系：智能体浪潮下的企…"))
+    核心叙事
+    三大独有贡献
+      1. '生产力决定生产关系'分析框架
+      2. AWS 五层最佳实践架构 + Agent…
+      3. AIDLC 演进路径：Generativ…
+    双维度定位矩阵
+    '代理人困境'实证：AI 影子采纳率
+    关键数据
+    实践启示
+    相关实体
+    上线状态 / 链接
+```
+
 ## 核心叙事
 
 AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产关系"**出发，重新框架化 Agentic AI 的企业级落地问题。文章核心论点：

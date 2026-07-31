@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stop hand-tuning kernels: Ho…"))
+    深度分析
+      Agentic Development 对硬件…
+      Skill + Agent 的分层编排模式
+      从 Profile 到行动的闭环缺口
+      跨架构迁移的 Agent 辅助
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AWS 宣布 Neuron Agentic Development 能力——一套 AI Agent 和 Skills 集合，使 ML 工程师无需深厚的芯片级经验即可在 AWS Trainium/Inferentia 上编写、调试和性能分析 NKI（Neuron Kernel Interface）内核。该方案将传统的手动内核调优流程转化为 Agent 驱动的自动化工作流，覆盖内核编写→调试→性能分析→文档查询的完整流水线。

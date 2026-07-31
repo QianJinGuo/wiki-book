@@ -10,6 +10,29 @@
 >
 > 原文：→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft MXC — 跨 OS 代理代码执行容…"))
+    一句话总结
+    10 个 Containment Backen…
+    三个独有贡献（不应合并到现有 entity）
+      1. **AppContainer 三层 Fa…
+      2. **bubblewrap proxy 故…
+      3. **LXC fail-closed sc…
+    三个与其他 agent 安全实体的差异化对比
+    与现有 wiki 实体差异化
+    关键代码引用
+    上线状态 / 链接
+    深度分析
+      1. OS 厂商入场安全层的范式意义
+      2. 三层 fallback 揭示的 Wind…
+      3. 合作式执行与强制执行之间的诚实边界
+      4. dispatcher 模式的核心价值：策…
+```
+
 ## 一句话总结
 
 MXC 是 **dispatcher 模式**的跨 OS 沙箱：1 个 JSON 策略模型 + 1 个二进制 dispatcher (Windows `wxc-exec.exe` / Linux `lxc-exec` / macOS `mxc-exec-mac`) → 10 种 OS-原生 enforcement backend。**不是"一个 sandbox"而是"一个统一接口，调用各平台 native 的隔离原语"**。

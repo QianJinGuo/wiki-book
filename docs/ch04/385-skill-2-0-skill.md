@@ -8,6 +8,28 @@
 
 # 达尔文.skill 2.0：Skill 自我进化优化器
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("达尔文.skill 2.0正式开源发布！让你的所有ski…"))
+    一句话
+    核心升级
+    关键数字
+    深度分析
+      微软双论文的互补性
+      多评委独立性的统计学意义
+      Validation-Gated 回滚的数学保证
+      Human-in-the-Loop 的设计意图
+    实践启示
+      如何设计有效的评分标准
+      多评委架构的工程迁移
+      早停机制防止过度优化
+      干跑控制的红线设计
+    相关概念
+```
+
 ## 一句话
 
 花叔发布达尔文.skill 2.0——吸收微软 SkillOpt/SkillLens 论文，9维评分 + 多评委独立审查 + validation-gated 回滚 + human-in-the-loop，近 30 个 skill 平均涨幅 +15 分。

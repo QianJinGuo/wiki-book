@@ -6,6 +6,21 @@
 
 # Claude Dispatch and the Power of Interfaces
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Dispatch and the Powe…"))
+    深度分析
+      界面即瓶颈：能力溢出的根源
+      三种界面范式的对比
+      Dispatch 模式的战略意义
+      与 Harness Engineering…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AI 的能力已经远超大多数人的认知，但这种「能力溢出」（capability overhang）的主要瓶颈不是模型本身，而是人与 AI 交互的界面。本文由 Ethan Mollick 撰写，系统分析了从通用聊天机器人到专用界面、再到按需生成界面的演进路径，并以 Claude Dispatch 和 OpenClaw 为核心案例，论证了一个关键观点：**AI 的下一次能力跃升将来自界面革新，而非模型改进**。

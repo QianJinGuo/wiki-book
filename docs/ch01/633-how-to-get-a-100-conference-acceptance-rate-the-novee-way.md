@@ -6,6 +6,20 @@
 
 # How to Get a 100% Conference Acceptance Rate, The Novee Way: A High-Severity CVE in Leading Call-for-Papers Software
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Get a 100% Conference…"))
+    深度分析
+    What you need to know
+    The Setup
+    Inside the Vulnerability
+    相关实体
+    相关主题
+```
+
 ## 深度分析
 
 URL Source: https://novee.security/blog/pretalx-stored-xss-vulnerability-account-takeover/

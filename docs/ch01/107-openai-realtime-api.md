@@ -10,6 +10,17 @@
 > **SHA256**: f60f5255f7c8d3b2438625f60daf1e1d2cb4792da5ac17e925ac9fa83d7e0284
 > **参考原文**: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI Realtime API 架构首次公开"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/731-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/821-openai-gpt-realtime-voice-models-qbitai.html)

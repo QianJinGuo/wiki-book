@@ -12,6 +12,24 @@
 > Score: 8×8=64 | strong
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1-million-exposed-ai-services-hackernews.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("100万+AI服务暴露在公网——HackerNews扫描报告"))
+    相关实体
+    深度分析
+      核心发现概览
+      无认证部署成默认选项
+      Ollama API 大规模暴露
+      Agent 管理平台漏洞
+    实践启示
+      立即行动项
+      战略建议
+      漏洞响应优先级
+```
+
 ## 相关实体
 
 ```mermaid

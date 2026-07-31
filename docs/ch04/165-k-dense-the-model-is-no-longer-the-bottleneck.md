@@ -10,6 +10,25 @@
 >
 > **核心论点**: 在 GPT-5 / Claude Opus 4.5 / Gemini 2.5 Pro 这代模型之后，**模型能力不再是科学 AI 应用的天花板**。真正的瓶颈是 **agentic workflow 设计** —— 如何让模型在多步推理中保持高质量上下文。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("K-Dense — The Model Is No Lo…"))
+    TL;DR
+    四个 case 的核心数据
+      Case 1: 材料科学（无机晶体生成）
+      Case 2: 药物发现（ADMET 预测）
+      Case 3: 气候模拟（区域降尺度）
+      Case 4: 蛋白质设计（binder 生成）
+    核心论点：Context Quality  …
+    与现有实体的关系
+    实践启示
+    局限
+    深度分析
+```
+
 ## TL;DR
 
 - **What**: K-Dense (AI4Science 咨询团队) 在 2026-06 发表的文章，主张 "model is no longer the bottleneck" 假说

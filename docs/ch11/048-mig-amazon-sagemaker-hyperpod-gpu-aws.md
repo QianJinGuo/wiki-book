@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 13.1KB | `entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 MIG 技术在 Amazon SageMaker …"))
+    概述
+    核心技术
+    深度分析
+      1. MIG技术的核心价值
+      2. 资源利用率的数学提升
+      3. 云原生集成的架构优势
+      4. 成本结构的重构
+    实践启示
+      启示一：按需选择MIG配置而非'一刀切'整卡分配
+      启示二：构建智能调度层实现MIG实例自动管理
+      启示三：在多租户环境中充分利用MIG的硬件隔离特性
+      启示四：将MIG与成本监控体系深度集成
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

@@ -8,6 +8,24 @@
 
 > 来源：机器之心 | 发布日期：2026-07-22
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini 3.5 Pro继续跳票，谷歌端上三款Fla…"))
+    三款模型详解
+      Gemini 3.6 Flash：效率提升型模型
+      Gemini 3.5 Flash-Lite：高…
+      Gemini 3.5 Flash Cyber：…
+    深度分析
+      Flash 系列的策略价值
+      安全模型的审慎开放策略
+      Pro 跳票的行业信号
+    实践启示
+    相关实体链接
+```
+
 ## 摘要
 
 谷歌未按预期发布 Gemini 3.5 Pro，而是同时发布了三款 Flash 系列轻量级模型：Gemini 3.6 Flash、Gemini 3.5 Flash-Lite 以及嵌入 CodeMender 的 Gemini 3.5 Flash Cyber。Gemini 3.6 Flash 的智能水平并未超过 Gemini 3.5 Flash，但在效率和多任务表现上有所提升，输出 Token 消耗减少 17%。谷歌同时透露 Gemini 3.5 Pro 仍在内测中，并已启动下一代模型 Gemini 4 的预训练。

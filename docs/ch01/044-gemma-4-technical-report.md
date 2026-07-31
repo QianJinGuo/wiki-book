@@ -13,6 +13,21 @@
 **Tags:** newsletter, ai, model, google, deepmind, llm, multimodal
 **Ingested:** 2026-07-09 18:59 UTC
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemma 4 Technical Report"))
+    深度分析
+      1. 从 Gemma 3 到 Gemma 4 …
+      2. 无编码器架构的突破性设计
+      3. 推理效率的多维度优化
+      4. 开源生态的战略定位
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Gemma 4 是 Google DeepMind 推出的新一代开源权重、原生多模态语言模型家族。该系列覆盖从 2.3B 到 31B 参数的密集（Dense）和混合专家（MoE）架构，在文本、图像和音频三种模态上实现前沿性能。相比 Gemma 3，Gemma 4 引入了思考模式（Thinking Mode）、无编码器统一架构（Encoder-Free Architecture）、长上下文效率优化（p-RoPE + KV Cache Sharing）、量化感知训练（QAT）以及多 Token 预测草稿头（MTP Drafter）等关键创新。Gemma 4 31B 在 Arena 文本评测中以 Elo 1451 成为领先的密集开源模型，以不到 1/10 的参数匹配或超越更大模型的表现。

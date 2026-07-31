@@ -8,6 +8,27 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/napkin-inference-cost-injuly-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Inference cost at scale with…"))
+    Summary
+    Key Points
+      1. Two Numbers Define G…
+      2. KV-Cache Transforms …
+      3. Optimal Batch Size: …
+      4. Real-World Constrain…
+    Deep Analysis
+      Memory-Bandwidth: The U…
+      The Batch Size vs. Cont…
+      Implications for Produc…
+      Connection to Local Inf…
+    Practical Implications
+    Related Entities
+```
+
 ## Summary
 
 This article provides a first-principles analysis of LLM inference costs, starting from GPU hardware specs and working through to dollar-per-user pricing. The key insight: on modern GPUs like the NVIDIA B200, memory bandwidth — not compute — is the binding constraint for inference. With a 32B parameter model on a single B200, you can serve ~40-60 concurrent users at 40 tokens/second each, translating to roughly $4.32/user/month in hardware rental costs.

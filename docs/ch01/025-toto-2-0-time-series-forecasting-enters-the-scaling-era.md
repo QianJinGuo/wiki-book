@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 9.2KB | `entities/toto-2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Toto 2.0: Time series foreca…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - Datadog 开源的时间序列预测基础模型家族，4M 到 2.5B 参数
 - 首个在时间序列领域展示可靠 scaling 行为的基础模型家族

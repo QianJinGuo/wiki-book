@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Intercom, now called Fin, la…"))
+    相关实体
+    深度分析
+      1. 元认知型 AI Agent 的商业首例
+      2. 支持运营团队的「隐形危机」被显性化
+      3. 技术栈选择揭示模型能力边界
+      4. 「提案系统」重新定义人机职责边界
+    实践启示
+      给企业 AI 负责人
+      给产品/工具厂商
+      给 AI 开发者/架构师
+      给投资者
+```
+
 ## 核心要点
 - 评分：v=7 × c=9 = 63
 - 来源：venturebeat

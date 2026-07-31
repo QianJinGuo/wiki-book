@@ -8,6 +8,19 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-enpire-agentic-robot-policy-self-improvement.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Robot Policy Self-Im…"))
+    核心内容
+    ENPIRE: Agentic Robot P…
+    Abstract
+    Learned Manipulation Po…
+    ENPIRE System
+```
+
 ## 核心内容
 
 Published Time: Wed, 17 Jun 2026 23:48:33 GMT

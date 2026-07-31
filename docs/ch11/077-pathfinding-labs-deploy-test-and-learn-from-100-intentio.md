@@ -8,6 +8,22 @@
 
 [Pathfinding Labs](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/datadog-pathfinding-labs-security.md) 是 DataDog Security Labs 于 2026 年 5 月发布的云安全实训平台，核心功能是允许用户在自有 AWS Sandbox 账户中一键部署**故意存在漏洞的 AWS 环境**，随后对其进行利用（red team）或检测验证（blue team）。项目包含超过 100 个 Terraform 编写的实验环境，通过一个 Go 语言编写的 CLI 工具 `plabs` 封装所有 Terraform 细节，用户无需直接接触 Terraform 即可完成完整的攻击链演练。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Pathfinding Labs: Deploy, te…"))
+    核心组成
+    实验类型
+    与 Stratus Red Team 的关系
+    图思维与攻击链
+    快速上手
+    路线图
+    深度分析
+    实践启示
+```
+
 ## 核心组成
 
 ```mermaid

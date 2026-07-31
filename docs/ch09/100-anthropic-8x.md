@@ -8,6 +8,24 @@
 
 基于若飞（架构师 JiaGouX）对 Anthropic Claude Code/Cowork 负责人 Fiona Fung 访谈的深度分析，探讨 AI 放大代码吞吐后工程组织的瓶颈迁移。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 8x 产出复盘：从代码吞吐到验证协作接口"))
+    核心数据
+    与现有实体的关系
+    深度分析
+      瓶颈迁移：从写代码到验证代码
+      Spec 即验证接口：TDD 在 AI 时代的复活
+      Bad/Sad 质量框架：从二元判定到分级体验
+      Routines：反馈循环的工程化
+    未解决的工程问题
+    实践启示
+    渐进式落地策略
+```
+
 ## 核心数据
 
 - 2026 Q2，Anthropic 工程师平均每天合入代码为 2024 年的 **8 倍**

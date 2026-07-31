@@ -20,6 +20,23 @@ feed_name: AWS China Blog
 
 * * *
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 AWS 示例项目，展示如何将 OpenClaw 迁…"))
+    七、配置消息渠道
+      选项 A：配置 Telegram
+      选项 B：配置飞书
+    八、发送消息验证
+    九、查看监控和日志
+    相关链接
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 七、配置消息渠道
 
 ```mermaid

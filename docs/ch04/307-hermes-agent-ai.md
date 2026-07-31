@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/hermes-agent-memory-system-three-layer-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("拆解 Hermes Agent 的记忆系统：一个生产级 …"))
+    三层记忆架构
+      Layer 1：Built-in Memory
+      Layer 2：External Memory…
+      Layer 3：Session Search
+    冻结快照模式：解决 Prefix Cache …
+    上下文围栏：防御 Prompt Injection
+    生产级工程细节
+      安全扫描
+      原子写入
+    设计哲学总结
+    深度分析
+      关键洞察
+      与行业整体趋势的关联
+    实践启示
+    相关实体
+```
+
 ## 三层记忆架构
 
 Hermes 的记忆系统由三个层级堆叠而成，每层解决不同层次的问题：

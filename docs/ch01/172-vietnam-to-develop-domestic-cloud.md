@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/vietnamtodevelopdomesticcloud.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vietnam to develop domestic …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 越南政府宣布建设国内云平台，以摆脱对外国云服务商依赖
 - 目标：2030 年核心政府服务全部上线，2035 年成为"发达数字国家"

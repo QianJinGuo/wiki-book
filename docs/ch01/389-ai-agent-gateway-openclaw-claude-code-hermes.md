@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/gateway-architecture-openclaw-claude-hermes-comparison.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent Gateway 架构设计 — Open…"))
+    评分
+    与现有 wiki 的关系
+    文章导航
+    框架哲学对比
+    关键技术细节
+    三个核心架构取舍
+    深度分析
+    实践启示
+```
+
 ## 评分
 - **价值**：8/10 — 三框架 Gateway 设计哲学横向对比，视角独特，技术细节准确（端口号/bindings 配置/适配器数量）
 - **置信度**：8/10 — 公众号原创，源码级细节，与公开文档一致

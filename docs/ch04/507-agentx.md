@@ -10,6 +10,25 @@ AgentX 是快手推出的面向工业推荐系统的 Agent 驱动自迭代框架
 
 技术报告：[AgentX: Towards Agent-Driven Self-Iteration of Industrial Recommender Systems](https://arxiv.org/abs/2606.26859v2)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快手 AgentX"))
+    架构组成
+      Brainstorm Agent
+      Developing Agent
+      Evaluation Agent
+      Harness Evolution SGPO
+    实验数据
+    自加速特性
+    模型研究拓展
+    与相关概念的关系
+    第 2 来源 — 快手技术公众号 2026-…
+      互补角度
+```
+
 ## 架构组成
 
 AgentX 将推荐实验拆解为四个核心阶段：

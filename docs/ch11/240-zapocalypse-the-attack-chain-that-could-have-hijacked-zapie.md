@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Zapocalypse: The Attack Chai…"))
+    深度分析
+      核心观点
+      内容结构
+      代码/配置示例
+      技术要点
+    实践启示
+```
+
 ## 深度分析
 
 ```mermaid

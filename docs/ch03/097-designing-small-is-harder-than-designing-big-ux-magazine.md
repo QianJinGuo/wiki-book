@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/designing-small-is-harder-than-designing-big-ux-magazine.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Designing Small Is Harder th…"))
+    Summary
+    相关实体
+    Notes
+    深度分析
+      系统性思维与增量交付的张力
+      水平切片的陷阱
+      最小可用价值单元的定义
+      学习循环的构建机制
+    实践启示
+      分解大型功能前先定义'最小价值单元'
+      按用户价值维度分解，避免按技术层分解
+      明确每次迭代需要验证的假设
+      接受'不完整'的情感不适，主动克服完整性焦虑
+```
+
 ## Summary
 ## 相关实体
 

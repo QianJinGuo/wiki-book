@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/deepseek-v3-moe-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek V3 MoE 架构"))
+    定义
+    核心范式
+    背景与提出
+    局限与反对声音
+    深度分析
+      MLA 机制：MoE 之外的隐形创新
+      无辅助损失负载均衡：MoE 训练的老难题解法
+      FP8 训练：成本革命的技术基础
+      开源策略的生态效应
+    实践启示
+    相关实体
+```
+
 ## 定义
 
 DeepSeek-V3 是 DeepSeek（深度求索）于 2024 年 12 月发布的开源大语言模型，采用 MoE（Mixture of Experts）架构。模型总参数量 671B，每次推理激活 37B 参数，在主流基准测试上达到 GPT-4o 和 Claude 3.5 Sonnet 级别性能，同时推理成本仅为同级别 dense model 的 1/5-1/10。DeepSeek-V3 是目前最强的开源 MoE 模型，也是 DeepSeek-R1 推理模型的基座。

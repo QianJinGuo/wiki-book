@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐ | 5.5KB | `entities/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Thrive Capital Bets $100 Mil…"))
+    相关实体
+    深度分析
+      Thrive Capital 的投资逻辑
+      Shopify AI 战略的核心数据
+      Agentic Shopping：从工具到生态
+      投资风险与不确定性
+    实践启示
+      对创业者的启示
+      对投资人的启示
+```
+
 ## 核心要点
 - 来源：https://www.pymnts.com/news/ecommerce/2026/thrive-capital-bets-100-million-on-shopifys-ai-future/
 - 评分：v=7 c=8

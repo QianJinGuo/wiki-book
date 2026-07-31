@@ -8,6 +8,21 @@
 
 Vivek Haldar 展示了一个具体的工作流案例：将 Agent Skill 从**纯自然语言指令**（natlang code）**编译**为**确定性 Python 程序 + LLM 仅做核心决策**的混合架构，获得了 **94% token 减少** 和 **87% 延迟降低**，同时输出质量基本不变。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How I Cut an AI Agent's Toke…"))
+    深度分析
+      Crystallized Workflow：从…
+      编译过程：从 Trace 到 Harness
+      「编译器」类比为什么成立
+      激励相容性分析：为什么大模型厂商不会主动推广
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 当 Agent Skill 运行多次后，大部分行为不再需要 LLM 推理——路径已经固化（crystallized）。Vivek Haldar 以他的 LinkedIn 回帖 Skill 为例展示了「编译」过程：原始 Skill 是纯自然语言描述的 Agent Skill，每次运行 agent 都需要从零解读指令、制定计划、调用工具、跟踪状态。编译后，Skill 变成了一个「薄引导程序」（thin bootloader），调用一个 Python 程序执行所有确定性工作，仅在候选选择和草稿撰写这两个真正需要语义理解的步骤调用 LLM。

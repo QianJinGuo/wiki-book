@@ -6,6 +6,23 @@
 
 # How Amazon Bedrock catches AI-generated phishing
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Amazon Bedrock catches A…"))
+    Summary
+    Key Points
+    Deep Analysis
+      1. The paradigm shift: …
+      2. The five-stage analy…
+      3. The continuous feedb…
+      4. Guardrail calibratio…
+    Practical Insights
+    Related Entities
+```
+
 ## Summary
 
 ```mermaid

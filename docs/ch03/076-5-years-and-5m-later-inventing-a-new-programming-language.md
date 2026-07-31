@@ -10,6 +10,21 @@ Wasp 创始人 Matija Sosic 公开复盘：花了 5 年、烧掉 500 万美金�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5-years-and-5m-later-inventing-a-new.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("5 Years and $5M Later: Inven…"))
+    深度分析
+      DSL 的两难：技术正确不等于市场正确
+      「我们以为是语言，其实是规范」是最有价值的认知
+      IDE 工具链：被严重低估的隐藏成本
+      为什么 AI 编程时代反而强化了 Wasp 的价值
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Wasp 想做的是 "Rails / Laravel for JS"，但拉伸到前端——一个跨整个 Web 应用栈的「通用框架」。2021 年与孪生兄弟 Martin 进入 YC，共募资 500 万美金。最初设计是发明一门新的 DSL 来抽象常见 Web 应用模式，类似 Terraform 但作用于 Web 栈（React + Node.js + Prisma）。五年下来发现：开发者爱这个 idea，但「容忍」这门语言——`-lang` 后缀让人误以为是要替代 JavaScript，Haskell 实现细节意外强化了「这是 Haskell-based 语言」的错误定位，自建 IDE 支持的工作量超出想象。最终决定保留 Wasp 编译器内核不变，只把「前端 DSL」换成 TypeScript SDK，迎来更平滑的 onboarding 与更好的 AI Agent 兼容性。

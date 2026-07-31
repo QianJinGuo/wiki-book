@@ -6,6 +6,22 @@
 
 # Regression Tax: 技能包导致 Agent 性能退化的系统性分析
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Regression Tax: 技能包导致 Agent …"))
+    核心概念
+    三种回归机制
+      1. Skill-Description Os…
+      2. Grounding Displaceme…
+      3. Verification Displac…
+    结构性问题
+    实践建议
+    与现有工作的关系
+```
+
 ## 核心概念
 
 **Regression Tax（回归税）** 是指为 LLM Agent 添加技能包（Skills）后，其在部分任务上获得增益的同时，在另一些原本能独立完成的任务上出现性能退化的现象。该概念由 Sentient Labs 在 arXiv:2607.22520 中系统提出，基于 **5,832 次配对对照实验**。

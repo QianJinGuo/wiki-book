@@ -6,6 +6,18 @@
 
 # Solution overview
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Solution overview"))
+    深度分析
+    Solution overview
+    相关实体
+    相关主题
+```
+
 ## 深度分析
 
 ---

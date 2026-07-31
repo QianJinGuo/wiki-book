@@ -6,6 +6,27 @@
 
 # Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Code is cheap: Harness 方法论——…"))
+    核心论点：代码正在变得非常廉价
+    大模型的两个底层事实
+      事实 1：大模型不是确定性函数
+      事实 2：上下文窗口有限，给得太多反而会腐烂
+    独特概念体系
+      1. 反 slop（Anti-Slop）
+      2. 水流理论（Water Flow Theo…
+      3. 最小混沌单元（Minimum Chaos…
+    实践方法论
+      Spec 是第一制品
+      new-chat skill（定期重启）
+      Checkpoint 验证闭环
+    与现有 Harness 实体的关系
+```
+
 ## 核心论点：代码正在变得非常廉价
 
 无岳（阿里云开发者）基于过去 20 天 70 万行代码、10 个并行项目的实践，提出核心判断：**代码本身，正在从稀缺资源变成可以快速生成、快速验证、快速丢弃的过程产物**。

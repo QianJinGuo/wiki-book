@@ -8,6 +8,25 @@
 
 > **Background**：本文基于 AWS China Blog 2026 年 6 月发布的三篇系列文章综合提炼。系列主题是企业级 AI Agent 从原型到生产的评估方法论，核心框架为 ADLC（Agent Development Lifecycle）。三篇分别覆盖：为什么评估是起点（Part 1）、评估维度与方法论（Part 2）、工程化落地与工具支持（Part 3）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS China 企业级智能体评估方法论 ADLC 系列"))
+    核心命题：为什么 Agent 评估不同于传统 QA
+    ADLC：Agent Development …
+    评估方法论框架：两根支柱
+      支柱一：评什么（维度体系）
+      支柱二：怎么评（方法矩阵）
+    工程化落地：评估嵌入开发流程
+      评估数据集管理
+      工程纪律
+      AgentCore Evaluations 工具
+    与现有 Agent 评估实体差异化
+    来源
+```
+
 ## 核心命题：为什么 Agent 评估不同于传统 QA
 
 Agent 与传统软件有三个本质差异，导致传统 QA 框架系统性失效：

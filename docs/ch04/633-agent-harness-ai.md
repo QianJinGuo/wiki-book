@@ -6,6 +6,17 @@
 
 # Agent Harness 可观测性：生产级 AI 项目必须补上的一课
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Harness 可观测性：生产级 AI 项目…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 本文来自"叶小钗"，分享开发 Mini-Openclaw Agent 时的可观测性实践。

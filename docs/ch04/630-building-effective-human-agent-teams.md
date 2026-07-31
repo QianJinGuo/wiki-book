@@ -8,6 +8,21 @@
 
 > **Background**：Anthropic 官方博客，探讨从"单人单 Agent"到"多人多 Agent 团队"的范式转变。文章基于 Claude 在实际生产环境中的使用数据和模式观察。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building effective human-age…"))
+    核心转变：从单人到团队
+    通信架构
+    信任机制
+    冲突解决
+    三个独有贡献（不应合并到现有 entity）
+    与现有实体差异化
+    相关主题
+```
+
 ## 核心转变：从单人到团队
 
 传统 AI 使用模式是"单人单 Agent"——一个人在一个聊天窗口中完成任务。随着 AI 能力增强（coding、research、financial analysis），使用场景从终端、IDE 扩展到电子表格、演示文稿，但本质上仍是"单人体验"。

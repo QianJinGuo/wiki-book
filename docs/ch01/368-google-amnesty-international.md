@@ -8,6 +8,30 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-amnesty-spyware-detection.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google & Amnesty Internation…"))
+    相关实体
+    深度分析
+      背景：商业间谍软件对公民社会的威胁
+      Intrusion Logging：首个主流设…
+      与其他防御功能的对比
+      局限性与已知约束
+    实践启示
+      如何启用 Intrusion Logging
+      对 Spyware Vendors 的影响
+      值得关注的后续发展
+    关联追踪
+    扩展阅读：商业间谍软件生态详解
+      主要厂商与产品线
+      Pegasus 攻击案例时间线
+      间谍软件的技术演进路径
+      Android vs iOS 攻击面对比
+```
+
 ## 核心要点
 - value=9, confidence=8, product=72
 - Well-sourced expert article

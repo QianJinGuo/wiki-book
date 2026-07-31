@@ -6,6 +6,33 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-2.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent 的迁移与现代化 — 使用 Amazon…"))
+    标签
+    相关实体
+    环境准备要点
+      核心依赖栈
+      AWS X-Ray 分布式追踪配置
+      cdk.json 配置架构
+    CDK 初始化流程
+      Bootstrap 原理
+      cdk synth 的双重价值
+      部署前必要补丁
+    深度分析
+      1. 环境准备作为架构选择的缩影
+      2. X-Ray 配置的深层含义
+      3. 多租户 Serverless 的成本模型
+      4. Workspace Sync 的数据持久…
+    实践启示
+      环境标准化
+      配置管理
+      迁移检查点
+```
+
 ## 标签
 
 ```mermaid

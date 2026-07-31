@@ -13,6 +13,23 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-skill-document-training-microsoft-sjtu.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SkillOpt"))
+    它要解决什么
+    四步训练循环（mini training lo…
+    实验结果
+      迁移性（值得重视的工程能力）
+    工程意义：Agent 时代的新型资产
+    5 条局限
+    成本权衡
+    与现有范式对照
+    对 harness/agent 团队的启示
+```
+
 ## 它要解决什么
 主流 skill 生产方式（人工手写 / LLM 一次性生成 / 自修订）**没有验证机制**。人工写的改一行不知影响；LLM 生成的 quality 看那次 prompt；自修订"看起来更聪明"实际可能更差。
 

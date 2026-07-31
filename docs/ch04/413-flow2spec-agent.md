@@ -8,6 +8,26 @@
 
 携程（Lands）开源的 Flow2Spec 是一个让项目在开发过程中自然长出知识图谱的 Agent 工程框架。核心设计：知识库不是一个大文档而是一套路由协议，Agent 通过 manifest→matcher→topic→dependencies→docs 的渐进式路径获取精确上下文，每次开发产生的新知识通过 f2s-kb-distill/f2s-kb-sync 反哺回知识库，形成知识演进闭环。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Flow2Spec：开发过程自然长出知识图谱的 Agen…"))
+    核心洞察
+      「上下文越多 Agent 越笨」悖论与 Flo…
+      知识路由协议：manifest→matcher…
+      渐进式读取四步：match → expand …
+      知识从开发过程中长出而非预先建设
+    与现有知识库的关联
+    深度分析
+      从「文件索引」到「知识路由」的范式转换
+      manifest-routing.json 的…
+      知识反哺循环：让 Agent 从消费者变成维护者
+    实践启示
+    原始存档
+```
+
 ## 核心洞察
 
 ### 「上下文越多 Agent 越笨」悖论与 Flow2Spec 的解法

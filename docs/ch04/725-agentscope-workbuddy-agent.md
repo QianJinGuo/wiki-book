@@ -6,6 +6,22 @@
 
 # 我用阿里 AgentScope 复刻了一个 WorkBuddy — 从开源框架到可运行 Agent 的实践拆解
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我用阿里 AgentScope 复刻了一个 WorkBu…"))
+    核心定位
+    关键技术点
+      模型配置管理
+      Toolkit 工具系统
+      权限系统五种模式
+      工作目录隔离
+    与既有内容的关系
+    四层工具架构
+```
+
 ## 核心定位
 
 本文来自叶小钗，是一篇 AgentScope Python 框架的实践教程。作者使用阿里开源的 AgentScope 框架（Python 版），完整复刻了 WorkBuddy 的核心工作流，涵盖模型配置管理、Toolkit 工具系统、权限控制、工作目录管理和前端交互等关键模块。

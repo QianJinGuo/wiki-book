@@ -10,6 +10,22 @@
 
 > **Core insight**: Mollick 观察到 AI 使用范式的根本转变——从"co-intelligence"（与 AI 作为共同工作者，引导、纠正、合作）到"wizard"（召唤 AI 执行任务，输出惊艳但过程不透明）。这不仅是工具能力提升，而是人类与 AI 关系性质的改变。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("On Working with Wizards: AI …"))
+    从共同工作者到巫师
+    Wizard 的力量：GPT-5 Pro 和 …
+    Wizard 的问题
+    我们如何与巫师相处
+    深度分析
+    实践启示
+    关键数据/实践启示
+    相关实体
+```
+
 ## 从共同工作者到巫师
 
 在 Mollick 的书《Co-Intelligence》中，他描述了一种人与 AI 合作的方式——把 AI 当作 intern 或 co-worker，纠正其错误、检查其工作、共同开发想法并引导其方向。过去几周他开始相信 co-intelligence 仍然重要，但 AI 的本质开始指向不同方向：从 partners 到 audience，从 collaboration 到 conjuring。

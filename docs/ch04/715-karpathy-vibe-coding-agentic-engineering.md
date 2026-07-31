@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/karpathy-vibe-coding-agentic-engineering-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy 最新访谈：从 Vibe Coding …"))
+    核心论点
+      Vibe Coding vs Agentic …
+      2025-2026 演进里程碑
+      Software 3.0 的关键变化
+    三个提醒
+      1. 跨越中间层
+      2. 遵守工程纪律
+      3. 别把理解力外包出去
+    关键人物与立场
+    可验证性的关键作用
+    关联条目
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 Karpathy 在红杉资本 AI Ascent 2026 访谈的核心观点深度解读。文章从 Vibe Coding 的起源（2025.2）到 Agentic Engineering 的定型（2026.2），系统梳理了 AI 辅助编程从"个人工具"到"工程体系"的范式转变，以及对中国技术管理者的现实启示。
 

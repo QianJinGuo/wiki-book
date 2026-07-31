@@ -6,6 +6,22 @@
 
 # ProgramBench: Benchmarking Programs, Not Prompts
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Programbench Agent Benchmark"))
+    深度分析
+    实践启示
+    参见
+    任务设计：无源码、无反编译、无网络
+    任务规模与覆盖范围
+    评估体系：248K+ 行为测试
+    评估框架：mini-SWE-agent
+    当前最佳表现：Claude Opus 4.7 …
+```
+
 ## 深度分析
 
 **当前 LLM 在端到端程序合成上存在根本性能力缺口，最佳模型仅 3% almost-resolved。** ProgramBench 的任务设计——仅凭编译后二进制和文档从头实现程序、无源码、无反编译、无网络——确保测试的是 Agent 的真实架构和合成能力。即使 Claude Opus 4.7 最佳表现也仅达 3% almost-resolved，排行榜前五名Resolved 均为 0%。这表明当前 LLM 在需要真正架构设计的程序重建任务上存在系统性不足，而非简单的 prompt 优化问题。

@@ -12,6 +12,36 @@
 > date: 2026-04-22
 > tags: #Claude #Agent #Skill #Prompt-Engineering #Web-Design #oklch
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我把 Claude Design 做成了 Skill，人…"))
+    核心摘要
+    一、Claude Design 核心洞察
+      产品定位
+      效果数据
+    二、系统提示词核心理念拆解
+      2.1 角色定位：设计师 + 工匠 + 产品经理
+      2.2 工作流：先问后做，尽早出活
+      2.3 去除 AI 味的秘诀
+      2.4 oklch 色彩系统
+    三、web-design-engineer S…
+      为什么做这个 Skill？
+      Skill 结构（约 400 行）
+    四、实战对比
+      Demo 1：太空探索博物馆
+      Demo 2：独立摄影师个人网站
+    五、核心结论
+    相关链接
+    深度分析
+      设计工具范式的根本转移
+      提示词工程的结构性价值
+      动态角色切换的设计意图
+      反 AI 味的系统性方法
+```
+
 ## 核心摘要
 拆解 Claude Design 约 420 行系统提示词的设计理念，并将其提炼成 ~400 行的 web-design-engineer Skill。核心结论：Claude Design 的竞争力 = 50% Opus 4.7 模型能力 + 50% 精心设计的 Prompt Engineering。
 ---

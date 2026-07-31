@@ -8,6 +8,21 @@
 
 > **v×c = 64**，来自 rss 频道。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用 lm evaluation harness 评估 …"))
+    深度分析
+      HumanEval 的饱和与代码生成评测的演进方向
+      Prompt Caching 的经济学
+      sweep 模式的方法论意义
+      Bedrock 托管环境 vs 直接 API …
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文展示了如何在 Amazon Bedrock 上集成 lm-evaluation-harness 框架与 LiteLLM 适配层，对 GPT-5.6 Sol、Claude Opus 4.8、Claude Sonnet 5 运行 HumanEval 编程基准测试。三模型 pass@1 均达到 97-98%，其中 GPT-5.6 Sol 以 98.2% 领先。同时，利用 Bedrock Prompt Caching 可节省 84% 以上的输入 token 成本（从 $203.10 降至 $31.99）。

@@ -10,6 +10,21 @@
 
 南京大学 LAMDA 团队推出 PRISM（A Plug-in Reproducible Infrastructure for Scalable Multimodal Continual Instruction Tuning），一个低门槛、插件式、可复现的多模态持续指令微调（MCIT）研究基础设施，在单张 24G 消费级显卡上即可完成从训练到评估的完整实验流程。该工具包旨在打破 MCIT 领域的硬件壁垒和工程壁垒，使研究者能以小时为单位迭代方法。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("24G显卡可跑！南大PRISM工具包来了，多模态持续微调…"))
+    深度分析
+      MCIT 领域的两大隐性壁垒
+      PRISM 的核心架构设计
+      PRISM 的基准评估体系
+      对持续学习研究的工程化启示
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **低硬件门槛**：通过全栈定制的精度调度系统，LLM 主体采用 bitsandbytes 8-bit 加载（QLoRA 风格），计算与 LoRA 适配器保持 bf16 精度，同时为 mm_projector 等关键多模态连接模块跳过量化，可在单张 24G 显卡载入 InternVL 本体、视觉编码塔和 CLIP 双塔。

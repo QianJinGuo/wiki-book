@@ -32,6 +32,17 @@ Cursor(@cursor_ai) Composer 2 is now available in Cursor.
 
 以下是根据 Cursor 官方技术报告整理的 Composer 2 诞生过程 👇🏼
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cursor如何把一个通用模型，训成顶级编程 Agent"))
+    两阶段训练流程
+    第一阶段：持续预训练（Continued Pr…
+      1. 基础模型选择：Kimi K2.5
+```
+
 ## 两阶段训练流程
 
 Composer 2 遵循一个两阶段训练流水线，旨在构建深厚的知识储备和执行能力：

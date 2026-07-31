@@ -8,6 +8,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Demis Hassabis YC Interview:…"))
+    深度分析
+      AGI 时间线：2030 年与深科技创业的张力
+      当前架构的根本局限：记忆、推理、持续学习
+      '锯齿状智能'的具象案例：下棋走错路
+      AlphaGo 思想回归：从语言模型到搜索 +…
+    实践启示
+      对 AI Agent 构建者
+      对深科技创业者
+      对 AI 产品架构师
+      对科学发现 AI 工具设计者
+    相关实体
+```
+
 ## 摘要
 
 Google DeepMind CEO Demis Hassabis 与 YC 总裁 Garry Tan 的深度访谈，涵盖 AGI 时间线（2030 年）、当前大模型的局限（持续学习、长期推理、记忆）、AlphaGo 思想回归 Gemini、模型蒸馏的极限、Agents 的未来、AI 在基础推理上的"锯齿状智能"失败、以及对深科技创业者的建议。Hassabis 长期主义视角与对 AI 现状的冷静评估对构建 AGI 路径的工程团队极具参考价值。

@@ -8,6 +8,19 @@
 
 > **Background**: Based on Exponential View's 2026-06-25 inaugural AI Economy report, using bottom-up, deduplicated financial modeling covering consumer and enterprise AI spending across the full stack.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The State of the AI Economy …"))
+    Core Numbers
+    Methodology Innovation
+    Supply Side vs Demand S…
+    Exclusions
+    Differentiation from Ex…
+```
+
 ## Core Numbers
 
 - **Past 12 months AI revenue**: $110B (deduplicated)

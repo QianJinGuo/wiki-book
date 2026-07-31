@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/is-software-losing-its-head-a16z.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Is Software Losing Its Head?"))
+    技术洞察
+    深度分析
+      1. Headless 架构范式的兴衰
+      2. LLM 集成对架构分层的影响
+      3. 性能与延迟的新挑战
+      4. 成本模型的范式转移
+    实践启示
+      对架构师的建议
+      对产品团队的建议
+      技术选型考量
+    相关实体
+```
+
 ## 核心要点
 - 传统 headless 架构将前端与后端解耦，提供灵活性和可扩展性
 - LLM 直接集成到软件栈中，改变了 headless 的基本原则

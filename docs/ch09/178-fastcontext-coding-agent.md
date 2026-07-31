@@ -6,6 +6,25 @@
 
 # FastContext（微软开源 Coding Agent 仓库探索子代理）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FastContext（微软开源 Coding Agen…"))
+    核心定位
+    为什么需要它
+    训练方法
+    报告效果
+    开源实现工程坑（重要！）
+    接入方法论
+      正确的接入姿势
+      何时值得调用
+      实验设计
+    架构启发
+    上生产前必修 P0
+```
+
 ## 核心定位
 
 微软开源的 **Explore 子 Agent**，只做一件事：在仓库里找到跟任务相关的**文件和行号**，把证据（citation bundle）交回主 Agent。**不负责改代码、不跑测试**。

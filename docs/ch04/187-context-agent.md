@@ -6,6 +6,34 @@
 
 > -> [Context不是免费的：长文档Agent性能天花板与架构优化](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-not-free-long-document-agent-architecture-raunak.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Context不是免费的：长文档Agent性能天花板与架…"))
+    核心命题
+    核心问题：原始 API 响应并非为智能体输入而设计
+    解决方案：Content/Metadata 分…
+      三步后处理（约 20 行代码）
+      编号块格式
+      按需查询架构
+      完整流水线
+    Prompt Pattern 修正
+    核心原则
+    其他可行方法（对比）
+    深度分析
+      1. 解析 API 与智能体输入之间存在根本性…
+      2. 按需查询架构将智能体从不必要的 toke…
+      3. Prompt Pattern 的修正比模…
+      4. 20 行代码实现的性能跃升具有极高的工程…
+    实践启示
+      1. 在向 Agent 传递任何外部系统输出之…
+      2. 为文档块建立编号系统，保留精确引用能力而…
+      3. Prompt 设计应明确指导 Agent…
+      4. 评估 Agent 性能时，先审查上下文中…
+```
+
 ## 核心命题
 构建文档密集型 Agent 时，原始解析 JSON（坐标、置信度分数、边界框）塞满上下文窗口导致 Agent 无法工作。解决方案：将 Content（Markdown 编号块）和 Metadata（CSV/JSON 结构化文件）分离，让 Agent 用代码按需查询元数据，而非全部塞进上下文。
 

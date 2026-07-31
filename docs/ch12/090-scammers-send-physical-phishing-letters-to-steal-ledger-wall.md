@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scammers Send Physical Phish…"))
+    相关实体
+    深度分析
+      攻击维度的升级：从数字到物理
+      '量子抵抗'叙事的滥用
+      数据来源与 Global-e 泄露的关联
+      钓鱼攻击的完整杀伤链
+    实践启示
+      硬件钱包用户的关键原则
+      已受害用户的紧急响应
+      供应链安全的更广泛教训
+```
+
 ## 核心要点
 
 ```mermaid

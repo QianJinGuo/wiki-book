@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/harness-engineering-systematic-framework.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 系统梳理"))
+    概述
+    Prompt / Context / Harn…
+    量化证据：1.6% AI 决策 vs 98.4…
+      OpenAI Frontier 团队的极限实验
+      Stripe Minions
+    Harness 不是 AGENTS.md
+    七环节控制回路
+    渐进披露原则
+    Generator / Evaluator 模式
+    核心动作
+```
+
 ## 概述
 Harness Engineering 系统梳理——基于李宏毅课程 + OpenAI/Anthropic/Martin Fowler 实践。核心命题：**当 AI 从聊天走向行动，工程的重点不再是写更好的提示词，而是设计一个能持续校正它的系统**。 ^[claude-code-engineering-truth-1.6-98.4.md]
 

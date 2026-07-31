@@ -8,6 +8,27 @@
 
 > Lilian Weng (翁荔) 博客最新文章，系统梳理了 Harness 工程在递归式自我提升（RSI）方向的研究全景，从 ACE、MCE、Meta-Harness 到 Self-Harness、Darwin Gödel Machine、SIA，涵盖 35+ 篇论文参考文献。[^1]
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering for Self…"))
+    核心命题
+    与已有实体的关系
+    Harness 设计模式
+      模式一：工作流自动化
+      模式二：文件系统作为持久化记忆
+      模式三：子智能体与后台任务
+    Harness 优化演进路径
+      上下文工程谱系
+      工作流设计
+      自我提升型 Harness
+      MemoHarness：经验驱动的案例级 Ha…
+    7 大未来挑战
+    基准附录
+```
+
 ## 核心命题
 
 递归式自我提升（RSI）究竟会先发生在模型权重层面，还是先发生在 **Harness（脚手架）**层面？翁荔认为近期内 RSI 路径不太可能一上来就是模型改写自己的权重，更可行的路径是：**Harness 工程向「元方法论」演进**——改进获得更好答案的机制本身。[^1]

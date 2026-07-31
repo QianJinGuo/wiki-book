@@ -6,6 +6,21 @@
 
 # Agentic Vision: Building Visual Intelligence with Amazon Bedrock and MCP Servers
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Vision: Building Vis…"))
+    Overview
+    Architecture
+    Two MCP Servers
+      CV Server
+      OpenSearch Server
+    Use Cases
+    Source
+```
+
 ## Overview
 
 ```mermaid

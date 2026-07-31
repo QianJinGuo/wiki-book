@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/new-ai-lock-in.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The new AI lock-in"))
+    深度分析
+      锁定的三层迁移结构
+      MCP 的局限：一个协议不是平台
+      95% 失败率的真正含义
+      战略决策的层次性
+    实践启示
+      针对 Enterprise IT 决策者
+      针对 AI 平台/工具开发者
+    相关主题
+     相关实体
+```
+
 ## 核心要点
 - **Published Time**: 2026-05-16T22:36:49-06:00
 - **核心命题**: AI 供应商锁定（lock-in）并未消失，而是从模型层向上迁移到了编排层（Orchestration）、工作流表面（Workflow Surface）和服务层（Services Layer）

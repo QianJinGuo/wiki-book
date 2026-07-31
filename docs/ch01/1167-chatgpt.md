@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-dreaming-v3-long-term-memory-xinzhiyuan.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ChatGPT记忆大升级，十亿人免费用！"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ChatGPT记忆大升级，十亿人免费用！ 涉及architecture领域的核心技术议题。

@@ -8,6 +8,24 @@
 
 > **Background**: 本文基于 AWS Machine Learning Blog 官方教程，详细介绍 OAuth 2.0 Authorization Code Flow 在 Bedrock AgentCore Gateway 与 MCP 客户端集成中的实施配置。内容涵盖架构概述、组件说明、IdP 配置步骤、以及 Kiro IDE 集成。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building a secure auth code …"))
+    核心内容
+    技术要点
+    深度分析
+      1. AgentCore Gateway 的双…
+      2. PKCE 与无密钥客户端设计的安全意义
+      3. 令牌验证的灵活性与 Gateway 的 …
+      4. 刷新令牌的生命周期管理
+    实践启示
+    相关实体
+    相关主题
+```
+
 ## 核心内容
 
 文章系统讲解了如何使用 OAuth 2.0 授权码流程为托管在 Amazon Bedrock AgentCore Gateway 上的 MCP 服务器实现入站认证。主要包括：

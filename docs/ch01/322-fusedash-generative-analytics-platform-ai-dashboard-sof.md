@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/fusedash-generative-analytics-platform.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fusedash -  Generative Analy…"))
+    产品定位与核心价值
+    核心功能模块解析
+      数据连接层
+      仪表板生成引擎
+      AI 对话层
+    场景化用例分析
+      电商 / 零售
+      SaaS 产品
+      代理 / 客户报告
+      高管层
+    技术架构关键特征
+    深度分析
+      切入角度与市场空白
+      局限性与适用边界
+      竞争态势与差异化方向
+    实践启示
+      适合引入 Fusedash 的团队特征
+      落地路径建议
+      成本评估框架
+    相关实体
+```
+
 ## 核心要点
 
 - AI-driven self-generating dashboard platform

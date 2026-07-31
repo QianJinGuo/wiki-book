@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/hermes-9-module-architecture-winty.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent 九模块架构解析"))
+    9 大模块
+      1. Agent Loop（执行核心）
+      2. Prompt Assembly（系统提示…
+      3. Memory Store（记忆系统）
+      4. Skill Manager（技能系统）
+    一次任务全链路
+    核心观点
+    深度分析
+      三线解耦架构：执行与学习的正交分离
+      Skill Manager 的生命周期管理：过…
+      Nudge Engine：隐式经验到显式知识的…
+      Prompt Assembly 的动态拼装：版…
+    实践启示
+      构建分离式学习架构
+      用结构化 Skill 封装经验知识
+      阈值触发的隐式经验捕获
+      记忆冻结隔离学习与执行
+    架构图
+    相关实体
+```
+
 ## 9 大模块
 
 ### 1. Agent Loop（执行核心）

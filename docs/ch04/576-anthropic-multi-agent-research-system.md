@@ -6,6 +6,19 @@
 
 # Anthropic Multi-Agent Research System
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Multi Agent Resear…"))
+    Evaluation-relevant tak…
+    Why it matters for this…
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## Evaluation-relevant takeaways
 
 多 agent 系统不应只检查"有没有走预定义路径"。很多任务存在多条有效路径，因此评估应更关注 outcome 是否正确、过程是否合理。早期小样本测试就很有价值，不必等到几百条样本。多 agent / orchestration 系统应优先围绕真实使用模式设计 eval suite 。

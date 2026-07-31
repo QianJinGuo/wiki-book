@@ -6,6 +6,21 @@
 
 # 火山引擎 AI 搜索千万级 Agent 架构演进与实践：从 ReAct 三节点到 Unified Policy
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("火山引擎 AI 搜索千万级 Agent 架构演进与实践：…"))
+    深度分析
+      从 ReAct 到 UP-ReAct：Agen…
+      Unified Policy：从'议会制'到'…
+      Context Manager：Agent 内…
+      '万物皆 Tool'的抽象能力
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 火山引擎 AI 搜索团队面向千万级并发企业级生产环境，将传统的 ReAct 三节点 DAG 架构重构为 Unified Policy Agent（UP-ReAct）架构。通过剥离确定性与不确定性、分离策略决策与上下文管理，将 TTFT（首字返回时间）暴降 30%，对话综合评分提升 14.78%。这场重构不仅是代码层面的优化，更是对工业级 Agent 设计哲学的底层重塑——从"让模型更聪明"转向"让系统更可控"。

@@ -10,6 +10,24 @@
 模型看任务，选择工具，程序执行工具，把结果写回上下文，再进入下一轮。
 几十行代码就能跑起来。Demo 通了以后，确实挺有成就感。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从 30 分钟手搓 Agent，到 Harness 成为…"))
+    相关实体
+    深度分析
+      三层架构演进：从最小循环到新后端
+      运行时能力目录的核心价值
+      统一 Trace 的架构意义
+      Agent 作为后端参与者的范式转变
+    实践启示
+      给内部 Agent 系统的第一版架构建议
+      需要提前预判的六个边界问题
+      自检问题清单
+```
+
 ## 相关实体
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html)

@@ -6,6 +6,21 @@
 
 # NeurIPS 2026 Rebuttal Skill — 开源论文回复 Skill 工作流
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NeurIPS 2026 Rebuttal Skill …"))
+    深度分析
+      从审稿经验到可复用 Skill 的知识工程
+      P0-P3 优先级框架的决策逻辑
+      '先判断，再行事'的原则
+      Agent Skill 作为学术工作流的新范式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 港大 NLP 组博士生李磊开源了 Rebuttal Skill，可直接加载到 OpenCode、Claude Code、Gemini CLI 等支持 skill 的工具中使用。该 skill 将论文 rebuttal 经验整理为两阶段工作流：第一阶段分析 review 的核心问题与深层次质疑，第二阶段生成结构化的 rebuttal 回复。李磊曾在 EMNLP 2023 获最佳长论文奖，2025 年获评 EMNLP 杰出 AC，其将多年审稿经验沉淀为可复用的 agent skill，帮助作者在 rebuttal 阶段做出更有效的决策。

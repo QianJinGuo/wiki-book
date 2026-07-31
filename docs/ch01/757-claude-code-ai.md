@@ -25,6 +25,16 @@ source_published: 2026-07-01
 
 另一方面对外宣称，美国商务部已解除对其 Claude Fabl
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("实锤了：Claude Code偷查用户，时区、中国AI实…"))
+    详细信息
+    原文
+```
+
 ## 核心要点
 
 > 本文为微信公众号文章，由 WeChat backfill 收录。

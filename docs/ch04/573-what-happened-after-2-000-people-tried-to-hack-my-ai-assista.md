@@ -8,6 +8,19 @@
 
 > Source: [What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval](https://www.fernandoi.cl/posts/hackmyclaw) | Score: v*c=72
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What happened after 2,000 pe…"))
+    Overview
+    The setup
+      Anti-Prompt-Injection R…
+    The attacks
+    What went wrong
+```
+
 ## Overview
 
 Markdown Content:

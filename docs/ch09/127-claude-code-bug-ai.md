@@ -8,6 +8,24 @@
 
 # 复制这套神仙配置，让Claude Code全自动修Bug！
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("复制这套神仙配置，让Claude Code全自动修Bug…"))
+    核心问题
+    六层配置体系
+      1. CLAUDE.md 持续累积规则
+      2. PostToolUse 钩子：实时捕捉错误
+      3. Stop 钩子：质量门禁
+      4. PreToolUse 钩子：事前拦截
+    深度分析
+    实践启示
+    相关主题
+    相关实体
+```
+
 ## 核心问题
 
 Claude 没有跨会话记忆。每次新会话都从零开始，昨天花 20 分钟修的 bug，明天照样会出现。Boris Cherny（Claude Code 创始人）采访爆料：Claude 团队内部已停止人为修复 Claude 的错误，改用自动化配置让 Claude 自己修复。

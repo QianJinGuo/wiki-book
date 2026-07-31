@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 15.2KB | `entities/acker-agent-evolution-three-routes-convergence.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent演化：三条路线汇聚框架"))
+    核心框架
+    三层体系的架构映射
+    短期分化原因
+    长期必融合的原因
+    受治理Agent Runtime
+    模型非唯一壁垒
+    Agent作为软件之上的协调层
+    商业化路径
+```
+
 ## 核心框架
 
 三条路线从真实任务结构里自然长出来：

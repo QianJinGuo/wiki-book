@@ -10,6 +10,25 @@
 
 腾讯工程师 eliqiao 发布的 Loop Engineering 实践指南，是**首个将 Loop Engineering 系统映射到具体产品（CodeBuddy）的完整实现文档**。核心贡献：**Inner/Outer Loop 概念模型**（ReAct = Inner Loop，Loop Engineering = Outer Loop）、**五阶段循环机制**（Discover → Plan → Execute → Verify → Iterate）、**六要素构建体系**、以及 CodeBuddy 三种循环驱动模式（/goal 条件驱动、/loop 时间驱动、Automations 跨会话）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering 实践指南：CodeBu…"))
+    Inner/Outer Loop 概念模型
+    ReAct 四大局限 → Loop Engin…
+    五阶段循环机制
+    六要素构建体系
+    CodeBuddy 三种循环驱动模式
+      /goal — 条件驱动的持续工作
+      /loop — 时间驱动的循环任务
+      Automations — 跨会话定时任务
+    范式演进链
+    三大风险（与 Loop Engineering…
+    实践案例
+```
+
 ## Inner/Outer Loop 概念模型
 
 本文最核心的理论贡献是将 ReAct 与 Loop Engineering 的关系明确定义为 **Inner Loop vs Outer Loop**：

@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Skill Issues: Compromising C…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - Published Time: Wed, 13 May 2026 16:58:06 GMT AI coding apps, such as Claude Code, codex, etc. are [becoming increasingly popular](https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-
 ## 相关实体

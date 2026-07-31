@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("TMIC AI小新 DeepAgent架构演进"))
+    核心洞察
+    产品背景
+    三大痛点 → 对应解法
+      痛点详解
+    加载上下文模块设计
+      设计原则
+      工具箱三层树状结构
+    DeepAgent核心组件
+      四大核心组件
+      业务场景特定优化
+      Planning职责
+      ReAct模式
+    与定制化Workflow的本质区别
+    深度分析
+      1. 上下文工程的本质：从'交给AI'到'为A…
+      2. 前置决策 vs 动态规划：准确率驱动的架…
+      3. 上下文窗口溢出的工程解法：压缩与卸载并行
+      4. Tree Action模式：依赖关系驱动…
+    实践启示
+```
+
 ## 核心洞察
 
 TMIC AI小新从定制化workflow演进到DeepAgent模式，核心转变是：**从预设流程控制转向AI自主决策 + 配套的上下文工程**。不是简单地把决策权交给LLM，而是设计完整的加载上下文模块来解决上下文工程问题。

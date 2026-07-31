@@ -8,6 +8,21 @@
 
 > **Background**：基于 AWS 官方技术博客（2026-06-23），介绍 Amazon Bedrock AgentCore 的多租户架构模式。以医疗 AI 助手为示例，展示 Tier → Tenant → User 三级隔离体系，但模式通用适用于各类 SaaS 多租户 Agent 系统。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Bedrock AgentCore Pool Model…"))
+    核心架构：三级层次隔离
+    池模型 vs 专用模型
+    技术实现
+    三个独有贡献（不应合并到现有 entity）
+    GitHub 仓库
+    部署要求
+    相关主题
+```
+
 ## 核心架构：三级层次隔离
 
 ```

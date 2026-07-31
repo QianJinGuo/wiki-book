@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semis-memo-supply-chain-inheritance.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Semis Memo: Supply Chain Inh…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Semis Memo: Supply Chain Inheritance](../ch05/094-ai.html)
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](ch01/759-scarcruft.html)

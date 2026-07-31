@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/qoder-skills-complete-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qoder Skills 完全指南"))
+    核心概念
+      Skill 的本质
+      跨平台兼容性
+    三大关键对比
+    三大使用场景
+      场景一：文档与资产创建
+      场景二：工作流自动化
+      场景三：MCP 能力增强
+    安装方式
+    进阶模式
+    测试与迭代
+    团队协作
+    深度分析
+```
+
 ## 核心概念
 **Skill** 是 AI 世界里的菜谱（Recipe），是一个开放标准的文件夹，包含一套告诉 AI 如何处理特定任务或工作流的指令。
 

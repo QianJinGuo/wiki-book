@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/opendefenseinitiativedepthfirst.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Open Defense Initiative | de…"))
+    深度分析
+      1. 威胁格局：AI 漏洞发现进入自动化阶段
+      2. depthfirst 的技术差异化
+      3. 实证数据：FFmpeg 案例
+      4. Open Defense Initiat…
+    相关实体
+```
+
 ## 核心要点
 - **定位**：depthfirst 公司的开放式防御倡议，旨在关键开源项目被 AI 驱动攻击者攻破前提供前沿安全能力 
 - **危机背景**：Mythos 和 GPT-5.5 Cyber 已展示自主漏洞发现与利用能力，开源模型正在快速追赶，留给防御者的窗口期很短 

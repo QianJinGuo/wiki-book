@@ -10,6 +10,25 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-searchcli-agent-driven-search-self-iteration.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("火山引擎 SearchCLI：Agent 驱动的搜索自迭…"))
+    问题背景
+    搜索自迭代闭环
+    三层架构
+    SPA 策略优化框架
+      Genome 编码
+      初始种群
+      多保真评测
+      多视角 Elite
+    实验结果
+    工程特性
+    相关实体
+```
+
 ## 问题背景
 
 搜索调优参数彼此影响（召回/排序/零结果率/延迟），传统依赖搜索专家反复试验，难以低成本可复现持续迭代。

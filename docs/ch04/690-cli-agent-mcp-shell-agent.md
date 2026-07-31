@@ -8,6 +8,20 @@
 
 CLI Agent 的设计模式：基于 MCP 协议的工具调用、Shell 级别的进程编排、管道组合。代表实践包括 Claude Code、Codex CLI 等。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CLI Agent 模式：MCP 与 Shell Agent"))
+    深度分析
+      MCP 协议：工具调用的标准化接口
+      Shell 级进程编排：超越简单工具调用
+      管道组合的设计模式
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### MCP 协议：工具调用的标准化接口

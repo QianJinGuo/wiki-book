@@ -6,6 +6,26 @@
 
 [Claude Code Prompt Source Analysis Fanone](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-prompt-source-analysis-fanone.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("【图解】Claude Code 源码解析 ｜Prompt…"))
+    六大 Prompt 模块概览
+    Core System Prompt：静态/动…
+      优先级策略树：buildEffectiveS…
+    Tool Prompts：自然语言行为协议
+    Skill Prompts：渐进式加载
+      Skill 的结构（以 claude-api…
+      Token 优化策略
+      Skill Prompt 标准格式
+    Reference Documentation
+    Included Documentation
+    When to Use WebFetch
+    Common Pitfalls
+```
+
 ## 六大 Prompt 模块概览
 Claude Code 的提示词体系分为六大模块：
 | 模块 | 职责 |

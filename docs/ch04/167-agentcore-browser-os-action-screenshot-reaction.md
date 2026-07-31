@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentCore Browser OS级操作：Acti…"))
+    核心内容
+    三个关键洞察
+      1. 视觉反馈驱动的Agent循环
+      2. 8个原子操作的粒度设计
+      3. Browser作为Agent的感知-执行界面
+    深度分析
+      OS层与Web层的能力边界
+      Action-Screenshot-React…
+      8个原子操作的分类逻辑
+      会话与权限管理
+    实践启示
+      何时使用OS Level Actions而非C…
+      实现打印对话框自动关闭
+      坐标映射与viewport设置
+      可靠性设计建议
+    与知识库的连接
+    相关实体
+```
+
 ## 核心内容
 Amazon Bedrock AgentCore引入OS-level Actions，允许Agent直接操控GUI界面——通过Action-Screenshot-Reaction闭环实现浏览器自动化。8个原子操作覆盖鼠标、键盘、截图等OS层交互，Agent通过视觉反馈（截图）感知环境状态并决定下一步操作。
 

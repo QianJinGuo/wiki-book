@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/agent-memory-modular-framework.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Memory 模块化框架与评测：Memory…"))
+    核心命题
+    统一框架：四组件
+      检索方法对比
+    实验发现
+      数据集
+      关键结论
+      新 SOTA
+    与 Agent Memory Archite…
+    相关主题
+    相关实体
+    深度分析
+      框架本质：四组件是治理分工，不是功能切分
+      层次化架构的实验支撑与内在局限
+      蒸馏与记忆的边界被混淆
+      底层 LLM 决定上限的意义
+    实践启示
+      1. 优先投资 Management 层，而非…
+      2. 层次化存储 + 任务约束检索是当前最优架…
+      3. 管理好 Extraction 的信息损失
+      4. 评测从 recall 转向治理能力
+```
+
 ## 核心命题
 *Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework*（ICLR 2026 投稿，arXiv:2604.01707）提出：Agent Memory 的核心问题不是容量，而是**治理**——系统能否在正确时间取回正确信息。上下文窗口扩展解决的是带宽问题，不是建模问题。
 

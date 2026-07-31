@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 11.3KB | `entities/ai-native-team-building-yexiaochai.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Native 团队搭建：七层模型与六步演进路线"))
+    相关实体
+    评分
+    AI 如何优化组织复杂度
+    AI 参与工作的七层模型
+    六步演进路线
+    三类核心资产
+    核心洞察
+    深度分析
+      七层模型的递进逻辑与组织变革的关系
+      管理本质问题的 AI 解答
+      六步演进路线的陷阱：工具先行 vs. 管理先行
+      判断力成为核心稀缺能力的深层含义
+```
+
 ## 相关实体
 - [Ai Native Team Building Failures Ceo Digital Twin Case](../ch05/018-ai-native.html)
 - [Ai Native Rd Org Design](../ch05/018-ai-native.html)

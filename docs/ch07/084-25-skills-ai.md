@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nico-25-skills-workflow-asset-ruofei-analysis.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("25个Skills详解：从生产力清单到AI工作流资产"))
+    深度分析
+      核心观点
+    核心命题
+      个人视角
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 25个Skills详解：从生产力清单到AI工作流资产 涉及agent领域的核心技术议题。

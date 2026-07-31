@@ -8,6 +8,20 @@
 
 > Source: [MDN Blog 原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-mdn-mcp-server-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing the MDN MCP server"))
+    三个独有贡献（不应合并到现有 entity）
+    MDN MCP server 的核心能力
+    与现有 MCP 实体的差异化
+    实践启示
+    相关主题
+    References
+```
+
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **首批主流 Web 标准权威机构采纳 MCP** — Mozilla 旗下 MDN（Web 文档领域的 canonical reference）推出官方 MCP server，标志着 MCP 从 Anthropic 协议升级为主流 Web 标准协议。之前 MCP 主要在 AWS / Anthropic / Claude Code / Kiro 等厂商生态内使用，MDN 接入是首次主流开放标准机构的背书。

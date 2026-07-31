@@ -8,6 +8,15 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llms-are-complicated-now-ianbarber.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLMs are complicated now"))
+    核心内容
+```
+
 ## 核心内容
 
 Published Time: 2026-06-19T21:39:25+00:00

@@ -6,6 +6,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-chunking-vectorization-rerank-distillation.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("RAG 深度解析：分块向量化召回重排才是蒸馏同事 Ski…"))
+    核心洞察
+    要点
+    深度分析
+      1. Skill 与 RAG 的分工本质
+      2. 数据质量先于模型调优
+      3. 分块策略的两难困境
+      4. 父子分块的工程智慧
+    实践启示
+    来源
+    相关
+    相关实体
+```
+
 ## 核心洞察
 RAG 完整流程：分块->向量化->召回->重排；知识蒸馏同事 Skill 的关键在召回质量而非生成质量。Skill 可以教 AI 怎么做，却不一定能让 AI 知道为什么这么做。
 

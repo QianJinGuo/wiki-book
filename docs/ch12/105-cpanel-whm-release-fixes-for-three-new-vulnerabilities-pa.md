@@ -10,6 +10,17 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 [![Image 1: The Hacker News Logo](blob:http://localhost/5c34172ae87fab3ecb77bf8cfaf83e48)](http://thehackernews.com/)
 [__](javascript:void(0))
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("cPanel, WHM Release Fixes fo…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 
 ```mermaid

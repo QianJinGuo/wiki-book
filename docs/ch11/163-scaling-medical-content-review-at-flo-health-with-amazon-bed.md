@@ -6,6 +6,26 @@
 
 # Scaling medical content review at Flo Health with Amazon Bedrock – Part 2
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scaling medical content revi…"))
+    关键技术架构
+      MACROS 架构适配
+      AI 内容生成管道
+      渐进式内容呈现
+      具体案例优于抽象规则
+    深度分析
+      AI 在高信任度领域的边界设计哲学
+      多 Judge 架构的模块化价值
+      结构化反馈循环作为系统级学习机制
+      YAML 胜于 JSON 的工程启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

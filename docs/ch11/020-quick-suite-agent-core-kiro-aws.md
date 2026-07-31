@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 21.7KB | `entities/quick-suite-agent-core-kiro-logistics-quote-assistant.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("三剑合璧Quick Suite + Agent Core…"))
+    概述
+    业务背景与客户痛点
+      客户场景
+      核心痛点
+    技术方案选型
+      SaaS 服务化交付模式
+      最小化 IT 研发介入
+      聚焦效率提升场景
+    系统架构
+      基于 Kiro 的 MCP 开发与部署
+      Excel MCP Server 架构设计
+      Amazon Quick Suite Flow…
+    经验总结与最佳实践
+      AgentCore 部署 MCP Server…
+      OAuth 2.0 认证配置注意事项
+    成本分析
+    结论
+    核心技术栈
+```
+
 ## 概述
 
 ```mermaid

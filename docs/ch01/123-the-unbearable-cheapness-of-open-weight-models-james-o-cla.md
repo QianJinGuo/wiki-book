@@ -13,6 +13,20 @@ Today I was setting up Hermes to see how it does with web research. I chose Deep
 
 What worries me about this is that Anthropic and OpenAI seem to have backed themselves into a corner of high costs. Can they reasonably decrease their prices by 20-50x to compete with DeepSeek or Xiaomi’s Mimo?
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Unbearable Cheapness of …"))
+    Open Weight vs Low Cost
+    How do you keep prices …
+    Will Anthropic and OpenAI…
+    Why not compete?
+    True Open Source vs Ope…
+    Bonus:
+```
+
 ## Open Weight vs Low Cost
 
 Are these models cheap because they are open weight and having hundreds or people stress test running them on different hardware helped to lower the cost? Or is it that they are being provided as loss leaders to drive the prices down?

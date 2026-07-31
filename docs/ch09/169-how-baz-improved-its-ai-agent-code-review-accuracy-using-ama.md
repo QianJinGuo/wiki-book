@@ -6,6 +6,21 @@
 
 # How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Baz improved its AI Agen…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 - [linear code intelligence: controlled codebase access for lin](../ch01/913-20.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)

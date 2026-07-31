@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐ | 8.4KB | `entities/ai-driven-layoffs-arent-making-business-sense.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI-driven layoffs aren't mak…"))
+    相关实体
+    深度分析
+      1. 数据揭示的核心矛盾
+      2. ROI 的真实驱动因素
+      3. IT 公司裁员的特殊性
+      4. 短期主义与长期代价
+    实践启示
+      对于 CIO / IT 领导者的行动建议
+      对于组织战略的反思
+```
+
 ## 核心要点
 - 来源：cio.com
 - 评分：v=5 c=12 (56分)

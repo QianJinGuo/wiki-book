@@ -12,6 +12,21 @@
 
 **原文链接**: https://mp.weixin.qq.com/s/JucDgrZBncTtEAu7Quv_Og
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek点燃大模型效率之争，阶跃火速接棒：Jet…"))
+    深度分析
+      投机解码的效率边界
+      DSpark：吞吐量优先的调度方案
+      JetSpec：低延迟场景的因果并行草稿
+      从推理效率到 Agent 规模化
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 年中，DeepSeek 发布 DSpark 推理加速方案后，阶跃星辰随即发表 JetSpec 论文，两家公司的同期工作共同指向大模型行业的新阶段：模型能力仍然重要，但推理效率正在成为决定 Agent 能否规模化落地的基础变量。DSpark 从系统层面减少无效计算，JetSpec 从算法层面用因果并行树生成（Causal Parallel Tree Drafting）提高有效 token 生成率，在 Qwen3-8B 上最高实现 9.64 倍端到端解码加速。

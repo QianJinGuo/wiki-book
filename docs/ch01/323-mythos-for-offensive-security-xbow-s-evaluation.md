@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/mythos_offensive_security_xbow_evaluatio.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Mythos for Offensive Securit…"))
+    深度分析
+      1. 测试方法论：专业团队 + 多维度评估
+      2. 基准测试结果：漏洞发现能力大幅提升
+      3. Live-site 验证的固有挑战
+      4. 判断力：精确但过于字面
+    实践启示
+      给安全团队的启示
+      给 AI/安全工具开发者的启示
+      给企业安全决策者的启示
+    相关实体
+```
+
 ## 核心要点
 - **模型定位**：Anthropic 前沿模型，专为 offensive security 任务设计，在漏洞发现方面实现重大突破 
 - **核心优势**：源代码审计能力极强，漏洞候选发现效率大幅领先先代模型 

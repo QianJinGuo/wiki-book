@@ -8,6 +8,24 @@
 
 > **Background**：Armin Ronacher（Flask/Sentry 创始人）2026-06-23 发表的技术深度文章，从 Harness 工程师视角探讨 Agent Loop 的演进方向。文章区分了两种循环：Agent Loop（模型调用工具的内部循环）和 Harness Loop（外部编排器决定何时继续的循环），并对后者的发展提出了深刻的反思。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Coming Loop"))
+    深度分析
+      Harness Loop 的架构模式
+      与 Harness Engineering …
+      代码质量的长期影响
+      软件工程的范式转变
+    实践启示
+      对 Harness 工程师的建议
+      对代码质量的关注
+      对 Agent 系统设计的启示
+    相关实体
+```
+
 ## 摘要
 
 Armin Ronacher 观察到一种新的工作模式正在兴起：工作被放入队列，机器拾取、尝试、停止，然后一个 Harness 决定这是否真的是结束。这种"Harness Loop"模式已经在代码移植、性能探索、安全扫描等领域展现出惊人的效果，但 Ronacher 对将其用于编写持久代码持谨慎态度。他担心这会导致代码库变成"只能由机器诊断的有机体"，并呼吁在拥抱循环未来的同时保持人类判断力。

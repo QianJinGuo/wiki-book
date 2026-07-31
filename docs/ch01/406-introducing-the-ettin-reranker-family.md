@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/introducing-the-ettin-reranker-family.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing the Ettin Rerank…"))
+    Reranker 是什么？为什么要用 Retr…
+    模型家族架构
+    Benchmark 结果
+      MTEBeng, v2 Retrieval
+    训练配方（Distillation Recipe）
+    使用示例
+      Retrieve-then-Rerank 完整…
+    速度基准（Flash Attention 2 …
+    核心价值与实践启示
+    相关概念
+```
+
 ## 核心要点
 
 - **6 个模型规模**：17M / 32M / 68M / 150M / 400M / 1B 参数，全部基于 JHU Ettin ModernBERT 编码器

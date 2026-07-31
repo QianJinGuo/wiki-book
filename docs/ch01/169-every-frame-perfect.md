@@ -8,6 +8,18 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tonsky-every-frame-perfect.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Every Frame Perfect"))
+    内容提炼
+    关键洞察
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **来源**: https://tonsky.me/blog/every-frame-perfect/

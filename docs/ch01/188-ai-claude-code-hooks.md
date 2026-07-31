@@ -6,6 +6,46 @@
 
 [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("打造可靠的 AI 编程环境：Claude Code Ho…"))
+    Claude Code Hooks 是什么？
+      概率性问题
+      Hooks 如何解决这个问题
+    Hooks 工作原理：事件驱动的四步流程
+      事件 → 匹配器 → Hook → 退出码（4…
+      配置作用域：用户、项目和本地
+       if   字段：更细粒度的过滤
+      JSON 输出：更精细的控制
+    Hooks 事件类型：快速参考表
+    四种 Hook 类型详解
+      Command Hooks（主力军）
+      HTTP Hooks（外部集成）
+      Prompt Hooks（AI 驱动的决策）
+      Agent Hooks（工具辅助验证）
+    7 个生产级 Hook 示例（开箱即用）
+      1\. 自动格式化
+      2\. 保护敏感文件
+      3\. 完成通知
+      4\. 会话上下文注入
+    开箱即用的 Hooks 入门配置
+      完整配置
+      如何针对你的技术栈定制
+      验证 Hooks 是否生效
+    CI/CD 集成与实践
+      Headless 模式行为
+      GitHub Actions 集成
+      团队 Hook 管理
+    常见问题与故障排查
+      Hook 没有触发
+      Hook 运行但不阻止
+      无限循环
+      性能问题
+```
+
 ##  Claude Code Hooks 是什么？
 Claude Code hooks 本质上就是一些你自己定义的操作，比如 shell 命令、HTTP 调用，或者额外的提示，它们会在 Claude Code 的不同阶段自动执行。
 和写在提示词里的约定不一样，hooks 是  ** 一定会触发的  ** ，不会被「忘掉」。这也意味着你可以更稳定地控制一些事情，比如代码格式化、安全检查、通知，或者整个开发流程里的自动化步骤。

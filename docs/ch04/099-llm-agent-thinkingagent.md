@@ -8,6 +8,41 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从零设计准生产级 LLM Agent：ThinkingA…"))
+    概述
+    1. 架构总览：五层垂直分离 + Pipeli…
+      1.1 五层架构
+      1.2 核心设计方法
+      1.3 Pipeline 是唯一的'上帝视角'
+      1.4 ComponentAssembler：…
+    2. 推理框架：Plan-and-Execut…
+      2.1 三段式循环（核心控制流）
+    3. 任务分析：让 Agent 真正理解任务
+    4. 提示词工程：四个关键实践
+      4.1 从模型行为规律反推 Prompt 布局
+      4.2 工具选择的优先级提示（first ma…
+      4.3 为副作用设计提示词
+      4.4 为 LLM 推理输出加装消息信封
+    5. 检查点机制：长任务的生命线
+      5.1 保存时机：评估通过后
+      5.2 检查点内容
+    6. 上下文管理：推理轨迹的托举
+      6.1 双缓冲设计
+      6.2 五步自动修复法
+      6.3 Token 预算管理：角色分配制
+      6.4 上下文压缩：混合策略 + 渐进式处理
+    7. 可靠性体系：Pillar-Layer 异…
+      7.1 六层异常矩阵
+      7.2 带行为的标准化异常
+      7.3 基于代价设计恢复策略
+      7.4 LLM 网关：标准化协议 + 四类恢复
+```
+
 ## 概述
 
 **工程师与艺术家（Thinking）** 2026-06 发布的 **ThinkingAgent** 是从零独立构建的准生产级 LLM Agent 框架，**不依赖任何已有代码或架构**。本文是中文圈公开材料中**最完整、最底层、最有工程取舍判断**的 Agent 框架设计文档——覆盖从 Pipeline 架构到上下文压缩到 Benchmark 的完整链路。

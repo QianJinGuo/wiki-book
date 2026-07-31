@@ -11,6 +11,17 @@
 > SHA-256：`417c5764404afba03c0584973d3606b637c048f1c5628330d40ecae966b64035`
 Claude Code 源码泄露之后，Zhi.Yuan（SooKool）与 AI 一起分析，拆解 5 个核心工程设计。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 的 Agent 工程"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

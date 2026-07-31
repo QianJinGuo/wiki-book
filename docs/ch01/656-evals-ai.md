@@ -10,6 +10,17 @@
 > 来源：https://mp.weixin.qq.com/s/hQyh7ln5RlIjKdssnDiwSQ
 AI Evals 的本质：**把"好不好"变成可重复判断的工程机制**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Evals 到底在评什么？一文拆解 AI 评估的三种方法"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Ai Skill Skill Creator 源码拆解](../ch04/319-skill-skill.html)
 - [Ai Skill Metrics System](ch01/452-ai-skill.html)

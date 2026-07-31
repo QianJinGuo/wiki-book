@@ -6,6 +6,21 @@
 
 # VMAF v1: Netflix 视频质量度量的全面升级
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("VMAF v1: Netflix 视频质量度量的全面升级"))
+    深度分析
+      CSF 调制：统一多设备模型的突破
+      CAMBI 集成：带状伪影检测
+      Chroma 特征：色彩失真的感知
+      运动特征修正
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

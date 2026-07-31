@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 14.2KB | `entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Boris Cherny 新访谈：开发工具正在从 IDE…"))
+    相关实体
+    核心观点
+    深度分析
+      1. 产品悬置与能力跨越
+      2. 代码生成正在变便宜，软件工程没有变简单
+      3. 开发工具交互界面的根本迁移
+      4. Loop：Agent 从回答者变成执行者…
+    实践启示
+      给工程师的建议
+      给组织的建议
+      技术判断
+      一句话总结
+```
+
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)

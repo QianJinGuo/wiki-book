@@ -6,6 +6,18 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-model-building-blocks.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Foundation Model Building Bl…"))
+    Summary
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## Summary
 *(See [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-model-building-blocks.md))*
 

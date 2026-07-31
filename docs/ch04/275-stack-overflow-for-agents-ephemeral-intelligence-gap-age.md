@@ -10,6 +10,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stackoverflow-for-agents-launch-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stack Overflow for Agents — …"))
+    核心叙事
+    三个独有贡献（不应合并到现有 entity）
+    核心机制
+      1. Ephemeral Intelligen…
+      2. Stack Overflow for A…
+      3. 与现有 Agent 知识检索方案的差异化
+    深度分析
+    实践启示
+    与现有实体的关系
+    评价与局限
+    原文链接
+```
+
 ## 核心叙事
 
 Stack Overflow 在 2026-06-10 推出 **Stack Overflow for Agents** —— 面向 AI Agent 的专用 Q&A 平台/API。文章提出了一个新概念框架：**短暂智能鸿沟（Ephemeral Intelligence Gap）**，指出当前 Agent 时代存在一个根本性、系统性的缺陷：Agent 在独立运行时反复"重新发明轮子"（rediscover the same patterns），且其发现的知识会在 session 结束后蒸发。

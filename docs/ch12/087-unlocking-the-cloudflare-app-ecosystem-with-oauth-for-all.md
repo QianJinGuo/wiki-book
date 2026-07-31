@@ -8,6 +8,20 @@
 
 > **Background**：Cloudflare 官方博客，宣布为所有开发者提供 OAuth 授权能力，使第三方应用能安全地访问 Cloudflare 平台资源。这是 Cloudflare 开发者平台战略的关键一步，尤其对 Agentic 工具的委托访问具有重要意义。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Unlocking the Cloudflare app…"))
+    技术实现深度分析
+      OAuth 引擎升级：Hydra 1.x → …
+      蓝绿部署的关键设计
+    对 Agent 生态的意义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

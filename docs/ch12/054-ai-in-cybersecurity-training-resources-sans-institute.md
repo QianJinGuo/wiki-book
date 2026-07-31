@@ -6,6 +6,21 @@
 
 # SANS Institute AI 安全培训体系
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI in Cybersecurity Training…"))
+    深度分析
+      SANS 的 AI 安全定位
+      GIAC 认证体系的 AI 扩展
+      AI 安全培训的技术趋势
+      与 wiki 知识体系的交叉
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

@@ -8,6 +8,18 @@
 
 LangChain 发布 Deep Agents v0.7，简化了 base harness，在同等性能下减少了 65% 的 base input tokens。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LangChain Deep Agents v0.7: …"))
+    核心改进
+      更精简的 Base Harness
+      Context Engineering 原则
+    与现有实体的关系
+```
+
 ## 核心改进
 
 ### 更精简的 Base Harness

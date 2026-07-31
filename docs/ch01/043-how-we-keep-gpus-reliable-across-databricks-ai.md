@@ -8,6 +8,27 @@
 
 > **已评分** | v*c=72 | value=8 | confidence=9 | stars=4
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How we keep GPUs reliable ac…"))
+    背景
+    GPU 训练负载下的三种故障模式
+      1. 任务崩溃（Crashed Jobs）
+      2. 静默降级（Silent Slowdowns）
+      3. 数值损坏（Numerical Corru…
+    深度分析
+      1. 三种故障模式的'可见性'与'危害性'的逆相关
+      2. NCCL 看门狗超时：症状的聚合器而非故…
+      3. GPU 硬件故障率 vs 传统硬件的显著差异
+      4. 多阶段健康检查体系的必要性
+    实践启示
+    相关实体
+    来源
+```
+
 ## 摘要
 
 Databricks AI 团队分享了其在大规模 GPU 训练可靠性方面的实践经验。文章系统梳理了 GPU 在大规模训练负载下的三种故障模式（任务崩溃、静默降级、数值损坏），以及 Databricks 应对这些故障的多阶段健康检查体系。系列开篇聚焦于故障模式的分类和检测方法。

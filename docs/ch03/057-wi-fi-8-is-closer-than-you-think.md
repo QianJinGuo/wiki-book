@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-is-closer-than-you-think.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Wi-Fi 8 is closer than you t…"))
+    核心设计转向：从速度到可靠性
+    频谱效率增强
+    漫游与移动性革新
+      无缝移动域（SMD）漫游
+      RSN 覆盖与 ESS 扫描优化
+    MCS 速率阶梯细化
+    客户端功耗优化
+    安全演进与后量子密码
+    Wi-Fi Sensing 与增强广播
+      Wi-Fi Sensing
+      增强广播服务（802.11bc）
+    接入点的边缘 AI 平台化
+```
+
 ## 核心设计转向：从速度到可靠性
 
 Wi-Fi 8 的发布标志着企业无线网络从"尽力而为"（best-effort）向"有保障的服务质量"（guaranteed QoS）的关键转折。回顾 Wi-Fi 技术演进历史：802.11b/g 追求覆盖、802.11a/n 追求速度、802.11ac 追求高密度、802.11ax 追求效率，而 802.11bn（Wi-Fi 8）首次将可靠性作为首要目标。

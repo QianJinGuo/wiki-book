@@ -6,6 +6,21 @@
 
 > NVIDIA CEO 黄仁勋与 LangChain CEO Harrison Chase 的 26 分钟深度对话（2026-07），阐述了未来企业将由 Harness 系统而非传统业务流程定义的愿景。对话涵盖开源 vs 前沿模型策略、企业智能内建、Agent 安全治理、以及从编程到构建 Agent 的范式转变。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("黄仁勋 × Harrison Chase 对话：未来公司…"))
+    Harness 作为企业新基石
+    开源权重模型 vs 前沿模型策略
+    企业智能必须内建
+    从编程到构建 Agent 的范式转变
+    Agent 安全与治理
+    关联条目
+    退出
+```
+
 ## Harness 作为企业新基石
 
 黄仁勋的核心论断："今天的多数公司建立在'业务流程'之上，未来的公司将建立在 **Harness** 之上。" LangChain 将成为创建公司"操作系统"的工具，将传统工作流转变为自主、智能、高效的 Agent 系统。

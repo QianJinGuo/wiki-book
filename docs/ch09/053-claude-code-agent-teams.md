@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/claude-code-agent-teams-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Agent Teams 架构分析"))
+    核心结论
+    三种多 agent 形态的边界
+    四大架构组件
+      Team Lead
+      Teammates
+      Task List（协作核心）
+      Mailbox
+    Hooks：质量检查点
+    Context 隔离是最大价值
+    权限继承的坑
+    官方限制（不适合生产的原因）
+    设计借鉴：混合架构
+```
+
 ## 核心结论
 
 Claude Code Agent Teams 把多 agent 协作做成了一套**本地 runtime**：一个 lead、多个独立 Claude Code session、一个共享 task list、一个 mailbox、再加 hooks 做质量检查点。

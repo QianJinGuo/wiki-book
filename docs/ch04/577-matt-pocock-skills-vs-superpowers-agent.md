@@ -12,6 +12,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/matt-pocock-skills-vs-superpowers.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Matt Pocock Skills vs Superp…"))
+    核心哲学对比
+    工程流水线
+    三个精巧设计
+    量化对比
+    四大支柱框架（源码深度解析）
+    Writing-Great-Skills 元方法论
+```
+
 ## 核心哲学对比
 
 - **Superpowers**：假设模型会偷懒、会给自己找理由，把每条退路堵死。hook 从会话第一秒上强度

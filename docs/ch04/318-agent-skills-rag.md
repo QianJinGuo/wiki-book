@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用 Agent Skills 做知识库检索，能比传统 …"))
+    深度分析
+      传统 RAG 的结构性困境
+      Skills 渐进式披露架构的创新价值
+      技术实现的关键设计原则
+      当前方案的局限与边界
+    实践启示
+    相关资源
+    相关实体
+```
+
 ## 核心要点
 - Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）
 - 渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗

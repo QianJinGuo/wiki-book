@@ -8,6 +8,25 @@
 
 > **Background**：本文为 AWS China Blog 2026-06-12 发布的生产案例（作者：辛嘉诚、钱海涛、何浩），介绍如何用 Bedrock AgentCore + Strands Agents SDK + CloudWatch + AWS DevOps Agent 构建多账户对话式运维系统。属于 `Agentcore Harness` 主题的"企业级生产落地"维度的具体案例。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock AgentCore 多账户对话式…"))
+    核心叙事
+    方案与架构
+      三种访问方式
+      五条数据路径
+      技术选型
+    三个独有贡献（与现有 agentcore en…
+    三条可复用设计模式
+    核心功能与落地效果
+    AgentCore 如何支撑飞书对话式运维
+    多账户跨区域设计
+    深度分析
+```
+
 ## 核心叙事
 
 ```mermaid

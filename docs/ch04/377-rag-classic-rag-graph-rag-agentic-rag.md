@@ -12,6 +12,17 @@
 > | Graph RAG | connects（连接） | 依赖分析、影响分析、组织关系、供应链 |
 > | Agentic RAG | reasons（推理） | 多步骤调查、复杂归因、跨系统分析 |
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一文看懂三种 RAG 架构：Classic RAG、Gr…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Protocol H Hierarchical Agentic Rag Enterprise](ch04/237-agentic.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)

@@ -10,6 +10,15 @@
 
 Novel agentic framework (Qwen-Image-Agent) addressing a clearly defined problem (Context Gap). Full paper with architecture, methodology, and likely benchmarks. High originality and practical relevance for agent engineering.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qwen-Image-Agent: Bridging t…"))
+    Content Summary
+```
+
 ## Content Summary
 
 Published Time: Mon, 29 Jun 2026 00:48:51 GMT

@@ -12,6 +12,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("深入理解 Claude Code 源码中的 Agent …"))
+    深度分析
+      1. Agent Harness 作为'围绕 …
+      2. 上下文组装：缓存分层是性能的关键
+      3. CLAUDE.md 加载层级：配置文件就…
+      4. 完整上下文包：用户消息只是冰山一角
+    实践启示
+      1. 构建 Agent Harness 的优先级
+      2. 学习 Claude Code 的具体设计
+      3. Plan Mode 的设计原则
+      4. 工具并发设计原则
+    相关实体
+```
+
 ## 摘要
 
 本文基于 Claude Code 源码泄露事件，**逐行拆解一个请求从用户输入到 Agent 交付可工作的代码的完整生命周期**。核心论断是：**LLM 调用本身只是一行代码，真正让 Agent 可用的，是围绕这行代码精心设计的 Agent Harness**。整个 Agent 由 `query.ts` 中的 `query()` 异步生成器函数驱动，所有其他代码都为这个函数服务。文中详细剖析了上下文组装、API 调用、响应解析、权限检查、工具执行、结果反馈、上下文管理、终止恢复这 8 个核心步骤，以及 Plan Mode、Tasks 等高级特性。

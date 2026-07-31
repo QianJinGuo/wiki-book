@@ -10,6 +10,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wiener-intelligence-reasoning-data-generation-nature.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("维纳智能：高精度推理数据生成与工业级 Agentic AI"))
+    核心技术
+      cQrA 推理数据生成
+      数据→Token→数据 大闭环
+      解决 Agent 三重困局
+    落地案例
+    背景
+    2026-07-08 补充（新智元报道）
+      Nature 论文详情
+      Frameworker 概念
+      营收
+```
+
 ## 核心技术
 
 ### cQrA 推理数据生成

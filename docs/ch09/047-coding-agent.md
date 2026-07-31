@@ -6,6 +6,30 @@
 
 # Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Coding Agent在百度的落地实践：从反馈闭环到工…"))
+    核心结论
+    双层Loop架构
+    Feedback Loop四层数据
+    Skill vs MCP优化
+    Benchmark方法论
+    模型适配关键洞察
+    深度分析
+      双层Loop的工程本质
+      Feedback Loop四层数据的递进关系
+      Skill vs MCP的本质选择
+      Benchmark方法论的反直觉之处
+    实践启示
+      框架设计原则
+      数据驱动的优化闭环
+      Skill/MCP的工程策略
+      Benchmark构建实践
+```
+
 ## 核心结论
 
 - 框架必须动态适配模型变化，不存在静态框架

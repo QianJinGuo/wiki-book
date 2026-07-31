@@ -10,6 +10,24 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-harness-engineering-prompt-to-hook-to-plugin.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("小米 Harness 工程：从个人实践到团队标准的 Pr…"))
+    三次跨越
+      第一次：把流程写进 Prompt
+      第二次：把约束下沉到 Hook
+      第三次：把约束沉淀为可复用能力（插件化）
+    双通道证据机制
+    质量门禁三层拦截
+    实测数据（2026-04-24 至 06-05）
+    案例：GP Inline Install
+    诚实边界
+    相关实体
+```
+
 ## 三次跨越
 
 ### 第一次：把流程写进 Prompt

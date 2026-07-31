@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/sap-unveils-autonomous-enterprise.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SAP Unveils the Autonomous E…"))
+    核心架构：SAP Business AI Pl…
+    SAP Autonomous Suite：50…
+    Joule Work：对话式工作体验
+    战略合作伙伴生态
+    市场进入：€1 亿欧元合作伙伴基金
+    技术意义与行业影响
+    深度分析
+    实践启示
+```
+
 ## 核心架构：SAP Business AI Platform
 
 SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Business Technology Platform](https://www.sap.com/products/business-technology-platform.html)（SAP BTP）、SAP Business Data Cloud 和 SAP Business AI 统一为单一托管环境，为企业 AI 提供安全、可扩展的部署底座 。

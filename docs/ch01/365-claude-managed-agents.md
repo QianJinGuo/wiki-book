@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/claude-managed-agents-developer-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Managed Agents 开发者指南"))
+    Overview
+    四大核心概念
+      1. Agent（配置模板）
+      2. Environment（运行模板）
+      3. Session（运行实例）
+      4. Events（通信通道）
+    扩展能力
+      自定义工具（JSON Schema）
+      MCP 服务器
+    多智能体编排（研究预览版）
+      协调器 + 工作者模式
+      与 Agent Teams 模式的区别
+    产品定位对比
+    定价
+    与 PM 视角的关系
+    深度分析
+      1. Harness 编排引擎的产品哲学
+      2. 四层概念模型的语义层级
+      3. 多智能体架构的当前限制
+      4. 定价模型的双重成本结构
+```
+
 ## Overview
 Claude Managed Agents 是 Anthropic 推出的托管 Agent 平台 API，核心是一个叫 **Harness** 的编排引擎：将工具调用、上下文管理、错误恢复、沙箱环境等基础设施收走，开发者只需关注任务本身。
 > 定位：从 Messages API（自己管一切）到 Managed Agents（只管提示词和任务），类比 AWS 从 EC2 到 Lambda 的演进。

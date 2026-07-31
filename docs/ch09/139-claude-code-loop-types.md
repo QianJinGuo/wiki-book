@@ -8,6 +8,22 @@
 
 > Claude Code 团队 (Delba de Oliveira & Michael Segner) 官方定义的四种 Loop 类型。与第三方教程不同，这是官方分类法。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Loop Types — 官方四…"))
+    四种 Loop 类型一览
+    代码质量五原则（第 2 来源独家）
+    Token 管理六策略（第 2 来源独家）
+    第 3 来源 — 架构师中文实践视角（2026…
+      长任务状态追踪六要素
+      构建有效的 Skill 的实战建议
+      四类 Loop 的控制权递进关系
+    与已有实体的关系
+```
+
 ## 四种 Loop 类型一览
 
 | Loop 类型 | 触发方式 | 停止条件 | 适用场景 | 关键特性 |

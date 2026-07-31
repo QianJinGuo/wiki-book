@@ -9,6 +9,22 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md)
 → 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/094-claude-code-dynamic-workflows.html)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 动态工作流 8 译本（行小招译注…"))
+    深度分析
+      1. 'Prompt Claude to cr…
+      2. Ultracode-trigger：触发…
+      3. Token-budget 的工程意义
+      4. Save and Share Workflo…
+    实践启示
+    关联实体
+    相关实体
+```
+
 ## 摘要
 
 本文是 Thariq 撰写的 "Claude Code 动态工作流" 系列文章的中文译注第 8 译本，由译者行小招翻译并附加 Hermes DAG 并行模式的对比分析。原文聚焦 Claude Code 在多 Agent 编排（multi-agent orchestration）场景下的 `/goal`、`/loop`、ultracode-trigger 等组合使用方式；译注则把这些 prompt 技巧与 Hermes 的 DAG 任务调度做横向对比，提炼出"声明式 workflow + 触发器"的通用模式。

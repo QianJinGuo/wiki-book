@@ -6,6 +6,22 @@
 
 「Agent Harness Engineering 技术连载」第 15 篇（收官篇），将前 14 篇理论提炼为可立即使用的实践指南——10 步从零到生产路线图、8 种常见失败模式速查表、Harness 设计 Checklist、给不同角色的具体建议。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 实践指南：10 …"))
+    核心定义
+    10 步从零构建 Harness
+    8 种常见失败模式速查表
+    Harness 设计 Checklist（5 …
+    三个新技能
+    三个趋势
+    系列三件最重要的事
+    深度分析与实践启示
+```
+
 ## 核心定义
 
 Harness Engineering 是弥合「Demo 能跑」与「生产能用」之间鸿沟的工程学科。类比：**Harness Engineering 之于 AI Agent，正如 DevOps 之于软件部署**。

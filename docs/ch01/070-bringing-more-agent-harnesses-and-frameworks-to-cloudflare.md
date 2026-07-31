@@ -39,6 +39,18 @@ To solve these scaling challenges, there’s a new, three-layer stack that is em
 
 The Agents SDK is that bottom layer: it makes primitives like durable execution available to any harness and any framework. Flue, our new open-source framework from the team behind [Astro](https://astro.build/), is the first to build on it. Here’s how.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Bringing more agent harnesse…"))
+    Flue
+      The Flue developer expe…
+      Designed for production…
+      Deploy anywhere, includ…
+```
+
 ## Flue
 
 [Flue](https://flueframework.com/) shipped 1.0 Beta this week, built on the [Pi](https://pi.dev/) harness, the same harness that [OpenClaw](https://openclaw.ai/) is built on. What makes it different as an agent framework is the approach: you don’t script what your agent does, you describe what it knows. Define the context an agent needs — its model, skills, sandbox, and instructions — and it solves whatever task you give it, autonomously. There’s no orchestration loop to write.

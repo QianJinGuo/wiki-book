@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/hermes-agent-loop-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent Loop 架构"))
+    5 阶段主循环
+    4 个核心模块
+      1. Loop Orchestrator（主控）
+      2. Prompt Builder（提示词组装）
+      3. 执行层（LLM Adapter + To…
+      4. Trajectory Recorder（…
+    一轮 = 1次 LLM + 0~N次 Tool
+    4 种退出姿势
+    设计哲学
+    与本 wiki 的关系
+    深度分析
+    实践启示
+```
+
 ## 5 阶段主循环
 ```
 Receive Input → Build Prompt → Call LLM → Execute Tool → Check Done

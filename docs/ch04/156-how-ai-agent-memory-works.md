@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/how-ai-agent-memory-works.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How AI Agent Memory Works"))
+    记忆的类型
+      Working Memory（工作记忆）
+      Long-term Memory（长期记忆）
+      Episodic Memory（情景记忆）
+      Semantic Memory（语义记忆）
+    六种架构权衡
+      1. Buffer（缓冲区）
+      2. Rolling Summary（滚动摘要）
+      3. Vector Store（向量存储）
+      4. Knowledge Graph（知识图谱）
+    生产部署考量
+    与相关概念的关系
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 记忆的类型
 
 当代 Agent 记忆系统通常由 **五个层次** 组成，每个层次解决不同的时间尺度和记忆需求。

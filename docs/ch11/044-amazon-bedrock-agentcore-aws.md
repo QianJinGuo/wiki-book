@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock AgentCore 为部署…"))
+    概述
+    核心技术
+    来源
+    深度分析
+      1. 代理可信部署的核心矛盾：自主性与安全性的平衡
+      2. Cedar 策略语言：自然语言与形式化授…
+      3. AgentCore Evaluation…
+      4. 情节性记忆：从事件记录到经验学习的跃迁
+    实践启示
+      1. 建立代理治理的第一道防线：策略优先于开发
+      2. 构建评估驱动的质量闭环：将监控嵌入部署生…
+      3. 利用 MCP 协议实现开发工作流集成
+      4. 挖掘情节性记忆的业务价值：个性化与效率的平衡
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

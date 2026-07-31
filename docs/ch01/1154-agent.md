@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 记忆存储方案深度洞察"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Agent 记忆存储方案深度洞察 涉及agent领域的核心技术议题。

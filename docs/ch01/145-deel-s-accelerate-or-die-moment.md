@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐ | 4.0KB | `entities/deels-accelerate-or-die-moment.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Deel's "Accelerate or Die" M…"))
+    深度分析
+      增长背后的战略逻辑
+      AI 时代的防御性构建
+      'Ghostbuster'角色：效率优化的组织创新
+      资本配置的speed muscle
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **$0 → $100M ARR in 20 months**：当时创纪录的增长速度（AI增长狂潮之前）

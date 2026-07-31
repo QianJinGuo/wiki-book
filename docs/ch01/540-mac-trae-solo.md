@@ -12,6 +12,17 @@ review_stars: 3
 
 👆这个场景你大概再熟悉不过。工作日下午，星巴克长桌前长满了人。每个人都低着头，眉头微皱，看上去像在拯救世界。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我把Mac留在家，用手机让TRAE SOLO替我打了一天工"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Trae Solo Work Feishu Bitable Pipeline Tutorial](https://github.com/QianJinGuo/wiki/blob/main/entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)

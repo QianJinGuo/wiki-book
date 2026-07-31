@@ -8,6 +8,28 @@
 
 # AI-Infra-Auto-Driven-SKILLS：推理框架工作流编码
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI-Infra-Auto-Driven-SKILLS …"))
+    一句话
+    核心价值
+    10 个 Core Skills
+    深度分析
+      1. 工程纪律转化为可执行工作流
+      2. SOTA Humanize Loop 的…
+      3. skill 工件的具体结构
+      4. 与传统 Agent 工作流的区别
+    实践启示
+      对 AI Infra 开发者的启示
+      对 Agent 开发者的启示
+      对框架开发团队的启示
+    关联阅读
+    相关实体
+```
+
 ## 一句话
 
 BBuf 在 GiantPandaLLM 发文介绍 AI-Infra-Auto-Driven-SKILLS v0.1.0——将推理框架开发的 benchmark/profile/debug 流程整理成 SKILL.md，供 Codex / Claude Code 按步骤执行，遵循工程纪律。

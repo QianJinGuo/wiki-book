@@ -8,6 +8,20 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-case-for-an-accessibility-designer-vibe-coding-when-all-his-coworkers-are-also-vibe-coding.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("无障碍设计师 vibe coding：当所有同事都在用 …"))
+    概述
+    'Vibe coding' 的真实定义（作者版本）
+    实际产出（GitHub App 无障碍改进）
+    关键贡献
+    一句话定位
+    相关实体
+```
+
 ## 概述
 
 GitHub accessibility designer **Eric Bailey** 2026-06-15 发表的内部反思：当团队 100% 转向 LLM-first 工作流（GitHub 自家 app 也是 LLM-driven），且个人 token 使用被追踪排名时，**无障碍设计师也被结构性强制 vibe coding**。作者坦诚：作为详细 spec 写得好但 JS 写不好的人，借助 LLM 现在能直接做出产品级无障碍增强。

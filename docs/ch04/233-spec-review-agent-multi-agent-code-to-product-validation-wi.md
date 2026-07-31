@@ -8,6 +8,34 @@
 
 > 本文综合提炼自 Baz 公司（[baz.co](https://baz.co/)）构建的 **Spec Review Agent** —— 用 Amazon Bedrock + AgentCore 实现"代码-产品"全栈自动验证。核心架构：**Specification Subagent 解析 Figma/Jira 需求 → Implementation Subagent 用 Browser Tool 渲染 Preview Environment 做视觉/行为验证 → Report Generator 合并发现**。量化收益：**bugs 报告减少 50%、time-to-merge 提升 30-70%**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Spec Review Agent: Multi-Age…"))
+    问题：代码审查的'产品意图断层'
+    解决方案架构：多阶段多 agent 流水线
+    Amazon Bedrock AgentCor…
+    量化收益
+    关键设计模式（可复用）
+      1. **Code + Browser 双轨验…
+      2. **每个需求独立 Subagent**
+      3. **三源上下文融合（Spec + Cod…
+      4. **MCP 标准化集成**
+    实践启示
+      1. 在提交规格前先用 AI 审查
+      2. 多 agent  单 agent：每个…
+      3. AI 审查不能替代人类审查
+      4. 建立规格质量基线
+    相关参考
+    深度分析
+      1. Spec Review Agent：AI…
+      2. Bedrock AgentCore 作为…
+      3. 多 agent 审查的分工优势
+      4. 规格审查的可自动化程度
+```
+
 ## 问题：代码审查的"产品意图断层"
 
 传统 diff-only code review 只能验证"代码能否编译运行"，不能验证"是否符合产品需求"。结果是 QA 团队需要数小时手动点击 preview environment 检查设计意图一致性：

@@ -6,6 +6,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Static Devirtualization of T…"))
+    关键要点
+    核心方法论
+      引导式符号执行（Guided Symbolic…
+      符号执行的核心机制
+    优化 Pass 系统
+      Pass 间的协同效应
+    Themida 特有的虚拟化条件跳转
+    降级（Lowering）阶段
+    实验结果
+    对抗符号执行的方向
+    跨混淆器泛化能力
+```
+
 ## 摘要
 
 ```mermaid

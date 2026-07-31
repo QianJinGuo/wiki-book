@@ -8,6 +8,21 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Better decisions at scale: H…"))
+    深度分析
+      数学优化 vs 机器学习：演绎 vs 归纳
+      四步优化框架的工程实践
+      关键案例深度解析
+      可复用解决方案的抽象
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

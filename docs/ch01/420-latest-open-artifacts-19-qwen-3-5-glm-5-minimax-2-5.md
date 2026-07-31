@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Latest open artifacts (#19)：…"))
+    深度分析
+      开放权重前沿的'中国加速'
+      RAM：相对采用度指标的引入
+      Qwen3.5：架构升级与权衡
+      GLM-5：商业化压力的信号
+    实践启示
+    关联实体
+```
+
 ## 摘要
 
 Interconnects 第 19 期 "Latest open artifacts" 汇总了 2026 年 2-3 月中国 AI 实验室在开放权重（open-weights）模型上的密集发布：Qwen、MiniMax、Z.ai、Ant Ling、StepFun 等均推出旗舰模型；同时行业仍密切关注 DeepSeek V4 的即将发布。本期引入新的"相对采用度指标"（Relative Adoption Metrics, RAM），用于在同一规模类别内标准化比较模型下载量，GPT-OSS 与 Kimi K2 Thinking 在 RAM 评分中表现突出。

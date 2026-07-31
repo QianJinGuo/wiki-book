@@ -14,6 +14,21 @@
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("TACO: 让 CLI Agent 在自主迭代中学会丢掉…"))
+    深度分析
+      终端上下文污染：一个被低估的 Agent 瓶颈
+      自进化 vs 静态压缩的比较优势
+      三层演化机制解析
+      具体压缩行为分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 TACO（Terminal Agent Compression）是一个无需训练、即插即用的终端智能体自进化观测压缩框架，由曼彻斯特大学、北京航空航天大学、香港科技大学及 MAP 研究团队联合提出。核心思路是让 Agent 从真实交互轨迹中学习 compression rules，在过滤低价值 terminal output 的同时，保留后续决策所需的关键行动线索。实验显示 TACO 在 TerminalBench 1.0/2.0 及多个 terminal-related benchmark 上同时提升了任务成功率和 token 效率——不是简单地把输出变短，而是让终端输出变得更像"下一步决策所需的 observation"。

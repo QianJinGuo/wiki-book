@@ -6,6 +6,20 @@
 
 # When I reject AI code even if it works
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("When I reject AI code even i…"))
+    深度分析
+      从 Harness Engineering 视…
+      认知科学视角
+      工程实践的演化
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Vinicius Brasil 在本文中提出了一个在 AI 辅助编码时代日益重要的实践问题：即使 AI 生成的代码能够正常运行、通过 CI，开发者也应该基于工程原则系统性地拒绝某些代码。文章从个人实践出发，总结了五条拒绝 AI 代码的具体标准，并论证了人工审查在 AI 编码工作流中不可替代的地位。

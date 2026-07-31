@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐ | 11.4KB | `entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenSquilla launches open-so…"))
+    相关实体
+    深度分析
+      核心问题诊断：为什么大多数 Agent 部署在…
+      成本控制技术栈：协调路由策略
+      四层认知记忆架构：受认知科学启发的记忆设计
+      安全架构：syscall 级隔离而非容器包装
+    实践启示
+      何时考虑 OpenSquilla
+      与其他方案的对比考量
+      技术选型注意事项
+      开发者入手建议
+```
+
 ## 核心要点
 - OpenSquilla 发布首个公开版本 v0.1.0，Apache-2.0 许可，可自托管
 - 定位：面向长期运行、高频会话的 Agent 部署场景，解决 Token 成本累积问题

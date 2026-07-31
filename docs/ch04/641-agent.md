@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("智能问数Agent--数据智能体-火山引擎"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 智能问数Agent--数据智能体-火山引擎 涉及agent领域的核心技术议题。

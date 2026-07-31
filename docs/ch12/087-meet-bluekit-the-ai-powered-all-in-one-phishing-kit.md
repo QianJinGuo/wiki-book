@@ -9,6 +9,17 @@ Introducing Varonis Atlas: Secure everything you build and run with AI [Learn mo
 [](https://www.varonis.com/?hsLang=en)
 Data Security Platform
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Meet Bluekit: The AI-Powered…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 
 ```mermaid

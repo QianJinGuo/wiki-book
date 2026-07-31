@@ -10,6 +10,26 @@
 
 > DeepSeek 研究员崔添翼附议：Harness 方向的自进化与模型方向同样重要，**Skill 是 Harness 自进化的初级形式**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Lilian Weng Harness Engineer…"))
+    递进链条
+      第一层：Context Engineering
+      第二层：Workflow Design
+      第三层：Self-Improving Harn…
+      第四层：Evolutionary Search
+    与现有实体的关系
+    边界与瓶颈
+    2026-07-08 补充（AI寒武纪版）
+      Harness 三大设计模式
+      其他补充工作
+      六类常见失效模式
+      关联实践
+```
+
 ## 递进链条
 
 Context Engineering → Workflow Design → Self-Improving Harness → Evolutionary Search

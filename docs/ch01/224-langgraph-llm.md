@@ -6,6 +6,22 @@
 
 [Langgraph State Machine Under The Hood](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langgraph-state-machine-under-the-hood.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LangGraph 底层原理：它是怎么把 LLM 变成一…"))
+    01 LangChain 的老问题
+    02 状态机是什么
+    03 StateGraph 执行引擎：心脏长什么样
+    04 一次完整执行：从 invoke 到节点运…
+    05 Reducer：状态更新的核心机制
+    06 图的调度器：它怎么决定下一步去哪
+    07 并行执行：Fan-out / Fan-i…
+    08 编译产物：CompiledGraph 里…
+```
+
 ## 01 LangChain 的老问题
 LangChain 早期架构是**线性 Chain**：
 ```

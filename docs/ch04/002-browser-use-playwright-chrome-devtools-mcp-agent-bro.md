@@ -20,6 +20,31 @@
 | **多身份隔离（多账号）** | ❌ | ❌ | ❌ | ❌ | **✅ 浏览器身份 × 静态代理绑定** |
 | **Skill Forge 流程打包** | ❌ | ❌ | ❌ | ❌ | ✅（注：与 [古法程序员 spec-as-code](../ch01/517-codex.html) 的 SKILL.md 模式重叠） |
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("五款浏览器自动化工具横向对比：browser-use /…"))
+    四层抽象
+    选型结论
+    决策树
+    深度分析
+      技术栈选择的根本分歧
+      状态管理是隐性分水岭
+      依赖链复杂度影响 AI 集成可靠性
+    实践启示
+      1. AI Coding 工作流首选 agen…
+      2. 企业级 CI/CD 选 Playwrig…
+      3. browser-use 适合探索性任务，…
+      4. chrome-devtools-mcp …
+    第五款候选：BrowserAct（待第三方验证）
+      ⚠️ 验证状态声明
+      三种浏览器模式
+      Remote-assist（人机接力）
+      多 Session + 静态代理绑定
+```
+
 ## 四层抽象
 
 ```mermaid

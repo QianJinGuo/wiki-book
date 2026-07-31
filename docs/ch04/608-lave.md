@@ -8,6 +8,20 @@
 
 > 清华大学 AI Agent 课题组提出 LAVE（Lookahead-then-Verify），通过前瞻补全与语法验证实现扩散语言模型的可靠约束解码，在四个主流扩散 LM 上达到接近 100% 的语法正确率。论文被 ISSTA 2026 接收。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LAVE：面向扩散语言模型的约束解码"))
+    核心问题
+    方法：LAVE
+      工作示例
+    实验结果
+    相关实体
+    论文信息
+```
+
 ## 核心问题
 
 扩散语言模型（Diffusion LLM）从 [MASK] 构成的序列出发以非顺序方式生成 token，具备并行解码和高效率推理的潜力（LLaDA、Dream、Gemini Diffusion 等）。但在代码、JSON、SMILES 等形式语言生成任务中，其输出难以稳定满足语法约束——Dream-7B 在 HumanEval-CPP 上的语法错误率高达 23.8%。

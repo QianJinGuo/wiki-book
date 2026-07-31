@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-poc-why-fail-to-production.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("很多企业做完 AI PoC，为什么还是上不了生产"))
+    关键要点
+    相关实体
+    深度分析
+      1. 算力认知错位：从资源投入到效率工程
+      2. 智能体架构脆弱：从 Demo 可用到生产可用
+      3. 工程化体系缺口：从功能交付到可靠性交付
+      4. 场景渗透不充分：从云端演示到边缘落地
+    实践启示
+      启示一：建立算力效率评估体系
+      启示二：构建智能体原生架构
+      启示三：优先补足工程化基础能力
+      启示四：提前布局边缘和端侧场景
+```
+
 ## 摘要
 ---
 source: wechat

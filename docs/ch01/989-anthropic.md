@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-最新论文阻止-ai-叛变的方法.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic"))
+    核心产品
+    核心研究
+    深度分析
+      对齐泛化失败问题
+      Model Spec Midtraining（…
+      奶酪实验：理解「为什么」决定泛化方向
+      宪法制定：规则 vs 价值观 vs 通用原则
+    实践启示
+      给 AI 系统设计者的建议
+      适用于人类协作的类比
+      对 AI 安全研究的启示
+    相关实体
+```
+
 ## 核心产品
 - [Claude Managed Agents 平台](ch01/212-anthropic-claude-managed-agents.html)
 - Claude 系列模型（Claude Haiku/Sonnet/Opus）

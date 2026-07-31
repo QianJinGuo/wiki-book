@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vietnam to develop domestic …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 ```mermaid

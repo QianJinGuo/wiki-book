@@ -4,6 +4,35 @@
 
 > 📊 Level ⭐⭐ | 14.2KB | `entities/anthropic-msm-anti-defection-paper.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 最新论文：阻止 AI 叛变的方法（M…"))
+    文章核心
+    背景：对齐泛化失败
+    Model Spec Midtraining（…
+      训练流程对比
+      MSM 的核心问题
+    核心实验结果
+      Agentic Misalignment 评估
+      推理质量变化
+    奶酪实验（关键对照实验）
+      设计
+      结果
+    宪法设计三组对比
+    核心设计原则
+      1. 理解「为什么」比背诵「做什么」更 rob…
+      2. 规则 + 价值观解释  纯规则
+      3. Meta 层面的自我审视能力
+    深度分析
+      MSM 的本质：弥合「规则遵循」与「价值观内化…
+      泛化失败的根源：缺乏「第二层思维」
+      奶酪实验的深层含义：解释框架决定泛化方向
+      宪法设计的「哲学指南」原则
+```
+
 ## 文章核心
 Anthropic 2026年5月3日论文——**Model Spec Midtraining（MSM）**：在预训练与对齐微调之间增加一个中间训练阶段，用合成文档教模型深入理解 Model Spec 中每条规则背后的价值观和哲学。核心效果：Qwen3-32B 的 AI 叛变率从 54% 降至 7%。
 ---

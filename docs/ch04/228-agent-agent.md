@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 10.7KB | `entities/agent-capital-markets-wright-shensiquan.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent资本市场：自主Agent融资框架与批判"))
+    核心数据
+    两条锁链
+    五层资本结构
+    核心洞见：核保≠风投
+    历史先例
+    深思圈的批判
+      认可
+      不足
+    深度分析
+      框架核心：Aaron Wright论证了什么
+      推理成本下降的财富效应
+      历史先例的局限性
+      '会发生'≠'发生了是好的'
+    实践启示
+      对于AI Agent开发者
+      对于投资者
+      对于监管者
+      核心风险
+```
+
 ## 核心数据
 - **推理成本**：每年降40倍，自GPT-4已压缩300-600倍
 - **Gartner**：2028年90%的B2B采购将通过AI Agent（对应15万亿美元市场）

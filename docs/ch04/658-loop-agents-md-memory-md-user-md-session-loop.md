@@ -8,6 +8,20 @@
 
 Loop Engineering 的一个致命问题：一次会话结束，Loop 就"死了"。张心翮（阿里技术）提出了"**意识×Loop**"框架，用三个意识文件（AGENTS.md / MEMORY.md / USER.md）实现跨 Session 自进化。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("意识×Loop：AGENTS.md/MEMORY.md/…"))
+    意识层三件套
+    三层对齐体系
+    MEMORY→AGENTS 升格机制：人肉阀门
+    Loop 六大框架的落地映射
+    核心判断
+    与其他实体的关系
+```
+
 ## 意识层三件套
 
 | 文件 | 定位 | 核心机制 |

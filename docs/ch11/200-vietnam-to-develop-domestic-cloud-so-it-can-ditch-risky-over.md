@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-domestic-cloud.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vietnam to develop domestic …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

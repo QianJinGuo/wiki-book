@@ -6,6 +6,23 @@
 
 # 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("长期运行的 Agent 怎么管：Hermes 治理分层与…"))
+    相关实体
+    深度分析
+      核心观点
+    核心论点：don't automate slop
+      Level 1 四个验收点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [hermes新顶流agent skills闭环系统深度解析](../ch07/017-hermes-skill.html)

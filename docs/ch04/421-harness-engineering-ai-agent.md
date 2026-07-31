@@ -8,6 +8,34 @@
 
 Harness Engineering（驾御工程/运行约束工程）是在 LLM 外部设计一整套机制，让 Agent 的行为能够被约束、被验证、被纠偏。它解决的重点是确保 Agent 在长期运行中持续做对，而非仅仅纠结于单次输出质量。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 驾御工程：AI …"))
+    核心定义
+    为什么需要 Harness
+      Prompt 调优的局限性
+      典型的“捷径”行为
+    四大工程能力
+      1. 架构约束
+      2. 反馈回路
+      3. 工作流控制
+      4. 改进循环
+    实证效果
+      Can.ac 实验
+      LangChain Terminal Benc…
+      OpenAI 实践
+    落地建议（Claude Code 用户）
+      组件分层
+      最小可行 Harness 四步走
+      最小 PostToolUse Hook 示例
+    问题诊断
+    核心论断
+    参考资源
+```
+
 ## 核心定义
 
 **关键区分**：

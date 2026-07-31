@@ -6,6 +6,22 @@
 
 # Red-Teaming after Mythos — Gray Swan
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Red-Teaming after Mythos — Z…"))
+    深度分析
+      从 Jailbreak 到系统性安全评估的范式转移
+      Agent 安全的新威胁模型
+      AI 安全产业的演进方向
+    实践启示
+      对 Agent 开发者的建议
+      投资视角
+    相关实体
+```
+
 ## 摘要
 
 Latent Space 对 Gray Swan 联合创始人 Zico Kolter（CMU 教授、OpenAI 董事会安全委员会成员）和 Matt Fredrikson（CMU 教授、Gray Swan CEO）的深度访谈。核心议题：在 Mythos 被美国政府列入出口管制后，AI red-teaming 的方法论演进、agent 安全的新威胁模型，以及 AI 安全产业的未来走向。这是当前 AI 安全领域最具实操价值的对话之一。

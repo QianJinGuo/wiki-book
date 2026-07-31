@@ -4,6 +4,37 @@
 
 > 📊 Level ⭐⭐⭐ | 15.2KB | `entities/tokenspeed-agentic-inference-engine.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tokenspeed Agentic Inference…"))
+    Overview
+    Core Architecture
+      Compiler-Backed SPMD Pa…
+      C++ FSM Control Plane +…
+      Pluggable Layered Kerne…
+      Fast MLA Kernel（已被 vLLM…
+    Performance Benchmarks
+    Agentic Workload Optimi…
+      与传统推理场景的区别
+      TokenSpeed 的针对性优化
+      与其他推理引擎的关系
+    技术规格
+    深度分析
+      1. Agentic 推理场景与传统推理场景的…
+      2. 编译器级 SPMD 并行：手动优化的天花…
+      3. MLA kernel 的工程价值：从贡献…
+      4. PD 分离架构的深意：从资源效率到弹性扩展
+    实践启示
+      1. Agentic 场景优先考虑专用推理引擎
+      2. 利用 Pluggable Kernel …
+      3. PD 分离部署需重新设计资源分配策略
+      4. 连续批处理的 Agentic 调优重点
+    相关概念
+```
+
 ## Overview
 
 TokenSpeed 是由 Lightseek 团队开发的专为 **agentic workloads** 设计的 LLM 推理引擎，旨在为复杂多步 Agent 场景提供接近光速（speed-of-light）的推理性能。与传统推理引擎不同，TokenSpeed 从设计之初就将 Agent 场景的特殊需求——高并发、长上下文、多轮工具调用——纳入核心架构考量，而非作为事后优化点叠加。

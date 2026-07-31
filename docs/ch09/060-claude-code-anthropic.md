@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/claude-code-large-codebase-enterprise-deployment.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 大型代码库最佳实践 — Anth…"))
+    核心判断
+    Agent 式搜索 vs RAG
+    七层扩展体系（Harness）
+    三层部署路径
+    三个成功部署模式
+      模式1：让代码库对 Claude 可读
+      模式2：指定专人负责
+      模式3：治理先行
+    配置迭代：随模型进化
+    适用边界
+    相关实体
+```
+
 ## 核心判断
 **「模型能力是地板，配置质量才是天花板。」**
 Claude Code 的能力上限，取决于你怎么配它，模型本身有多强反倒是其次的。

@@ -8,6 +8,20 @@
 
 > Agent 框架层出不穷——LangGraph、OpenAI Assistants、A2A、AG-UI、Deep Agents——名字越来越多，API 越来越像一套套独立世界观。但框架名词在变，底层问题始终围绕任务、上下文、步骤、事件、状态和产物展开。将这些名词往下拆，会发现它们都在回答同一个底层问题：**Agent Runtime 对外暴露的一组稳定对象、生命周期操作和状态迁移是什么？**
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Protocol 不变层：跨框架的 6 个稳…"))
+    核心框架：Agent Runtime Prot…
+    三层概念：标准、对象、Runtime 能力
+    Runtime 与 Protocol 的关系
+    跨框架映射
+    核心洞见
+    与其他实体的关系
+```
+
 ## 核心框架：Agent Runtime Protocol 6 对象
 
 **Agent Protocol ≠ 某一个具体标准**（不等于 A2A、AG-UI、LangChain Agent Protocol 或任意单一规范）。它指的是 Agent Runtime 对外暴露的一组稳定对象、生命周期操作和状态迁移。具体协议标准和框架 API 是证据，不是主线。

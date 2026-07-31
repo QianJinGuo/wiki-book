@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐⭐ | 16.4KB | `entities/google-io-2026-agentic-gemini-era.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("I/O 2026: Welcome to the age…"))
+    概述
+    规模数据
+    AI 全栈概览
+      基础设施：TPU 8t 与 TPU 8i
+      新模型家族
+      SynthID 与 AI 透明度
+    Agentic 产品矩阵
+      Gemini Spark（消费者 AI 代理）
+      信息代理（Information Agents…
+      Daily Brief（个性化每日简报）
+      Ask Maps 与 Ask YouTube
+    Antigravity 2.0
+    产品生态规模
+    技术趋势总结
+    深度分析
+      从'AI 辅助'到'AI 代理'的结构性转变
+      全栈垂直整合：Google 的结构性护城河
+      速度作为核心竞争力
+      商业策略：价格锚定与成本重构
+```
+
 ## 概述
 
 2026 年 5 月 19 日，Google CEO Sundar Pichai 在 Google I/O 2026 主题演讲中正式宣布 Gemini 进入"**agentic era**（自主智能体时代）"。这是 Google 自十年前 All-in AI 战略以来最具转折性的一次产品与技术宣示——AI 不再只是辅助工具，而是开始自主执行多步骤、长周期任务的代理实体。

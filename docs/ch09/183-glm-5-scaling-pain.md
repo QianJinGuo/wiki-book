@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 11.3KB | `entities/glm5-scaling-pain.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GLM-5 Scaling Pain 推理复盘"))
+    概述
+    三类异常现象
+    根因一：PD 分离架构下 KV Cache 竞态
+      问题机制
+      修复方案
+    根因二：HiCache 加载时序缺失
+      问题机制
+      修复方案
+    优化：LayerSplit KV Cache …
+      核心思路
+      效果
+    关键工程洞察
+    相关链接
+    相关页面
+```
+
 ## 概述
 智谱团队 2026 年披露 GLM-5 在高并发 Coding Agent 场景下遭遇的推理稳定性问题及修复方案。核心问题：乱码（garbled output）、复读（repetition）、生僻字（rare character）三类异常，根因分别定位到 PD 分离架构下 KV Cache 竞态和 HiCache 加载时序两个独立 Bug，以及 LayerSplit KV Cache 分层存储优化。
 

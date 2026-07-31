@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Improve bot accuracy with Am…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - AWS China ML 发布的技术文章
 - 涉及领域：aws, machine-learning, ai-agents, bedrock

@@ -6,6 +6,19 @@
 
 # Loop 的产品视角——项目中心从人挪到 Agent 系统
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop 的产品视角——项目中心从人挪到 Agent 系统"))
+    核心论点
+    Loop 的两层价值
+    实证案例：定制刻字项链小生意的 Discord…
+    关键产品洞察
+    Dittos Loop For Codex
+```
+
 ## 核心论点
 
 钟十六（前阶跃 Agent 产品负责人）提出：**项目中心会从人变成 Agent 系统**。当 Loop 真正跑通后，发动机不再是人的每一步推动，而是 Agent 系统自行运转，人只在关键路口被请来拍板。

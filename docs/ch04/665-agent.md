@@ -8,6 +8,22 @@
 
 叶小钗基于 6 场企业培训总结的生产级 Agent 系统性框架，覆盖**架构、Harness 工程、组织与人才**三大维度，回答 "Agent 进入企业后应该做什么、怎样做成可长期运行的生产系统" 这一核心问题。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("生产级 Agent 全景框架 (叶小钗)"))
+    核心框架
+      Agent 在企业中的定位
+      Workflow vs Agent 选型矩阵
+    技术架构
+    Tool / Skill / Pipeline…
+    AI 原生组织四层
+    生产级成熟度 6 阶段
+    多 Agent 设计原则
+```
+
 ## 核心框架
 
 ### Agent 在企业中的定位

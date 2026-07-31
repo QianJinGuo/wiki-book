@@ -7,6 +7,17 @@
 # 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍
 #####  一个真实场景：凌晨三点，线上服务突然报错，翻遍日志发现是因为某个环境变量没传对类型，字符串当成了数字用。你盯着代码里散  落的  ` os.getenv  ` ，  想骂人却不知从何骂起。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("还在手写 os.getenv？pydantic-sett…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Skill Development Guide Aliyun 2026](../ch04/271-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)

@@ -7,6 +7,25 @@
 When you accidentally delete a production namespace or a cluster upgrade fails, rebuilding your Amazon Elastic Kubernetes Service (Amazon EKS) cluster resources means recreating every deployment, service, and persistent volume manually. With Velero, a backup and restore tool for Kubernetes, you capture resource definitions to Amazon Simple Storage Service (Amazon S3) and persistent volume data as Amazon Elastic Block Store (Amazon EBS) snapshots. Velero supports cross-cluster restores, namespace-level granularity, and portability across Kubernetes distributions. If you need centralized, fully managed backup scheduling instead, [AWS Backup for Amazon EKS](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) handles that for you.
 In this post, you'll learn to back up and restore Amazon EKS cluster resources and persistent volume data using Velero. You'll deploy a sample stateful application, back it up, and restore it to a different namespace within the same cluster. Along the way, you'll configure least-privilege AWS Identity and Access Management (AWS IAM) roles using Amazon EKS Pod Identity and scope Velero's Kubernetes permissions with a custom ClusterRole. A ClusterRole is a Kubernetes resource that defines cluster-wide permissions.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Back up and restore your Ama…"))
+    Prerequisites
+    Velero overview
+    Tutorial
+      Set up environment vari…
+      Configure Amazon S3 and…
+      Install Velero
+    Back up an application
+    Restore an application
+    Clean up
+    Conclusion
+    About the authors
+```
+
 ## Prerequisites
 
 ```mermaid

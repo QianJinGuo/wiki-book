@@ -10,6 +10,27 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Be more expressive to close …"))
+    研究背景
+    核心发现
+    深度分析
+      表达力→魅力→成交的传导机制
+      产品类型的调节效应
+      愤怒表达的悖论
+      研究局限性
+    实践启示
+      1. 销售演示中的'高表达力' checklist
+      2. 产品类型决定表达投入度
+      3. 愤怒情境下的应对
+      4. 视频销售场景的优化方向
+    相关实体
+```
+
 ## 研究背景
 一项来自维也纳大学（University of Vienna）和维也纳莫德尔大学（Modul University Vienna）的销售演示实验，分析了 847 名受试者观看 14 场不同行业（App、硬件、营销咨询等）销售视频后的反应。核心问题是：销售人员的表达力（expressiveness）究竟如何影响成交率。
 

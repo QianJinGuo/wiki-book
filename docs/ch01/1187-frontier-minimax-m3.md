@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-m3-frontier-three-set-open-source.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("国内首个 Frontier 三件套开源大模型：MiniM…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 国内首个 Frontier 三件套开源大模型：MiniMax M3 完整技术拆解 涉及agent领域的核心技术议题。

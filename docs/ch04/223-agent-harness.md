@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/agent-harness-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Harness 架构"))
+    7 层架构
+    核心设计原则
+    工具系统设计
+    深度分析
+    实践启示
+    参见
+    相关实体
+```
+
 ## 7 层架构
 | 层级 | 核心职责 | 关键设计 |
 |------|---------|---------|

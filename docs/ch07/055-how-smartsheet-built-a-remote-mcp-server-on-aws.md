@@ -8,6 +8,22 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-smartsheet-built-a-remote-mcp-server-on-aws.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Smartsheet built a remot…"))
+    Overview
+    Architecture
+    Deployment and Scaling
+    Security and Governance
+    Observability
+    Testing Non-Determinist…
+    AI Optimizations
+    Future Directions
+```
+
 ## Overview
 
 Smartsheet, an enterprise work management platform, built a remote `Model Context Protocol (MCP)` server on AWS to give AI agents structured access to enterprise Smartsheet data. The server connects AI assistants like Amazon Quick and Claude Desktop to Smartsheet's capabilities through natural language, enabling analysis, task updates, sheet creation, workspace management, and autonomous agent workflows. Since launch, Smartsheet has saved over 3 billion tokens through AI-specific optimizations.

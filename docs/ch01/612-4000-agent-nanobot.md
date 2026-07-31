@@ -14,6 +14,21 @@
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("4000行代码撑起一个Agent框架？nanobot架构…"))
+    深度分析
+      极简架构的约束与取舍
+      Tool 系统：统一 str 返回类型的深层逻辑
+      Skill 系统的懒加载模式：文件系统即 co…
+      Subagent 消息总线重注入模式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 nanobot 是香港大学数据科学实验室（HKUDS）开源的轻量级 Agent 框架，核心代码仅 3,935 行（对比 LangChain 的 430,000+ 行），却在 30 天内获得 28,500+ GitHub Stars。其设计哲学是极简主义：所有控制流集中在一个 `while` 循环（ReAct 模式），工具接口统一为 `execute(kwargs) -> str`，记忆系统用 grep 替代向量数据库，Skill 系统用 Markdown 文件替代代码插件。本文深入拆解 nanobot 的架构决策，分析其在个人助手场景下的优势与在生产环境中的局限。

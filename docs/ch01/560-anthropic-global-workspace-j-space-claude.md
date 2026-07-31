@@ -8,6 +8,25 @@
 
 2026年7月7日，Anthropic 发表了一篇重磅研究《Language Models 中的 Global Workspace》（A global workspace in language models），发现 Claude 内部存在一个特殊的神经激活区域——**J-Space**（雅可比空间），它像一个静默运行的心理工作区，里面会浮现模型正在考虑、可能报告、也可能用于推理的概念。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Global Workspace (…"))
+    J-Space 的核心发现
+      J-Space 的独特性质
+    全局工作空间理论
+    与之前工作的关系
+    反响与意义
+    参考资源
+    机器之心第2译本补充（3rd source, …
+      五大证据系统化呈现
+      后训练塑造了 J-space 的「立场」
+      反事实反思训练
+      '体验式语言'依赖 J-space
+```
+
 ## J-Space 的核心发现
 
 J-Space 是一小组特殊的内部神经激活模式，每个模式对应一个具体的词，但某个模式亮起来并不代表模型正在说这个词——只代表这个词「在它心上」。Anthropic 用雅可比矩阵（Jacobian）作为数学工具定位出这些模式，因此命名为 J-Space。

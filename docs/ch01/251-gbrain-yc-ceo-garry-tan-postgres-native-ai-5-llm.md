@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 16.4KB | `entities/gbrain.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GBrain — YC CEO Garry Tan 的 …"))
+    概述
+    与 GStack 的关系
+    核心架构
+      Compiled Truth + Timeli…
+      25 个 Skill 即插即用
+      混合搜索 + 实体自动升级
+      能打电话的脑子
+    部署方式
+    设计哲学
+    深度分析
+      Thin Harness, Fat Skill…
+      Compiled Truth + Timeli…
+      8 层架构的认知升维
+      实体自动升级的价值
+    实践启示
+      对 Agent 开发者的启示
+      对个人知识管理的启示
+      对 AI 创业的启示
+    相关链接
+```
+
 ## 概述
 GBrain 于 2026 年 4 月初开源，十几天内斩获 9K+ Star。其核心解决的是 AI Agent 的"金鱼脑"问题——每次开聊都从零开始，昨天告诉它的事今天就当没发生过。
 Garry Tan 本人用 GBrain 运行自己的日常 Agent：17888 个页面、4383 个人物、723 家公司、21 个定时任务全自动运转。

@@ -12,6 +12,21 @@
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一文看懂 AI 编程智能体工程化新范式：Loop Eng…"))
+    深度分析
+      从 Prompt Engineering 到 …
+      Loop Engineering 的工程化本质
+      六大核心构件的协同关系
+      典型 Loop 的工作流程
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Loop Engineering 是 AI 编程领域从 Prompt Engineering 演进而来的新范式，核心思想是将「人工反复输入提示词」升级为「设计可持续运转的智能体工作循环」。本文深入分析这一范式的技术背景、核心构件、架构设计与实践路径，揭示其作为 AI 编程工程化新范式的本质特征。

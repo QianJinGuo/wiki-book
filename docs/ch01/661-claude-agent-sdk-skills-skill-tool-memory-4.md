@@ -6,6 +6,22 @@
 
 Claude Agent SDK 系列第 11 篇，系统阐述 Skills 在 Agent 架构中的定位——将团队经验沉淀为可复用、可审查、可版本管理的「操作手册」，而非一次性 prompt。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Agent SDK Skills：可复用的…"))
+    核心边界：Skill ≠ Tool ≠ Mem…
+    渐进加载：Skill 的核心工程价值
+    Skill 文件结构
+    4 方分工：Skills / Hooks / …
+    何时值得写 Skill：5 条件
+    可落地的 Skill 模板
+    When To Use / Inputs / …
+    5 个常见坑
+```
+
 ## 核心边界：Skill ≠ Tool ≠ Memory
 
 文章首先厘清三个容易混淆的概念：

@@ -8,6 +8,16 @@
 
 > Source: [How we used DSPy to turn AI evaluations into better responses in Dash chat](https://dropbox.tech/machine-learning/how-we-turned-ai-evaluations-into-better-responses-in-dash-chat) | Score: v*c=81
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How we used DSPy to turn AI …"))
+    Overview
+    The hidden complexity o…
+```
+
 ## Overview
 
 Markdown Content:

@@ -6,6 +6,21 @@
 
 # DeepSeek V4 (Flash & Pro) ：通往百万级上下文与万亿参数推理的新纪元
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek V4 (Flash & Pro) ：通…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [读完这篇，你就搞懂 deepseek v4 了](ch01/1151-deepseek-v4.html)

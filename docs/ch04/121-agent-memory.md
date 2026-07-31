@@ -4,6 +4,35 @@
 
 > 📊 Level ⭐⭐ | 15.2KB | `entities/agent-memory-architecture-ruofei.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Memory 架构解析"))
+    核心论点
+      边界切分
+      三类工程记忆（不止用户偏好）
+    Memory 三主链路
+      写入
+      读取
+      管理（最被低估）
+    五条路线对比
+    Coding Agent 四层记忆结构
+    最小可用 Memory 设计（7 步）
+    关联实体
+    深度分析
+      Memory 作为控制面，而非存储层
+      三类记忆的差异化生命周期
+      写入规则的本质：预算分配
+      读取的核心矛盾：相似性 vs 相关性
+    实践启示
+      第一步：把记忆分类，匹配存储
+      第二步：为每条记忆带元信息
+      第三步：读写权限严格分层
+      第四步：实现 Progressive Disc…
+```
+
 ## 核心论点
 Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些过去可以继续进入未来"这个工程问题。
 

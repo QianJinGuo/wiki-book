@@ -10,6 +10,37 @@
 
 Addy Osmani 提出 Loop Engineering——比 Agent Harness Engineering 再高一层的抽象：不再是人给智能体写提示词，而是**设计一套系统替你写提示词**。Peter Steinberger 和 Claude Code 负责人 Boris Cherny 均已实践此模式。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering:不再写提示词,而是设计…"))
+    核心定义
+    五模块 + 记忆（Codex / Claude…
+    /goal 的验证者分离设计
+    深度分析
+      Loop vs Harness：层级关系而非替代
+      技能的'复利效应'
+      三个循环搞不定的问题
+      实践启示
+    相关实体
+    第 2 来源：InfoQ 褚杏娟「AI编程又变…
+      核心创新 / 关键数据
+      对照表：两篇来源维度对比
+      与已有 source 呼应
+      实践启示
+    第3 来源：微信公众号「ps. Harness…
+      三来源维度对比表
+      与已有 source呼应
+      Loop Engineering关键结论（合并…
+    第 4 来源：微信公众号「架构师 JiaGou…
+      核心创新 / 关键数据
+      四来源维度对比表
+      与已有 source 呼应
+      实践启示
+```
+
 ## 核心定义
 
 循环 = 递归式目标：你定义目的，AI 不断迭代直到完成。与 Harness 的关系：Harness 是给单个智能体打造运行环境；Loop 是定时跑的框架，会自己派生子智能体、自己喂自己。**Loop > Harness > Prompt**。

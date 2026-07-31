@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/agent-browser.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentBrowser：Agent 浏览器工具框架"))
+    Overview
+    Implementations
+      elizaOS/agentbrowser ~…
+      AshtonVaughan/agentbrow…
+      zabarich/agentbrowser …
+    Common Features
+    深度分析
+    实践启示
+    Related
+    相关实体
+```
+
 ## Overview
 AgentBrowser 是专供 AI Agent 使用的浏览器运行时，从通用浏览器自动化演进而来，具备语义理解、站点记忆、自愈执行等能力。
 

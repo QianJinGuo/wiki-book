@@ -8,6 +8,21 @@
 
 > DAG 不是 Agent 编排的答案，它是 Agent 最简单的特例。无环图天生不能循环、反思、重试、恢复。LangGraph 的 StateGraph + Pregel 引擎 = Agent 的操作系统内核：调度、持久化、恢复三个原语 DAG 一个都没有。但 Checkpoint 不等于 Durable Execution——2026 年的 Agent 框架都停在"给了你 F5 存档键"阶段，自动恢复还需自建。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LangGraph 1.0：别再用 DAG 写 Agen…"))
+    深度分析
+      DAG 的数学模型局限与 StateGraph…
+      Pregel：从图处理引擎到 Agent OS…
+      Checkpoint 与 Durable Ex…
+      LangGraph vs Microsoft …
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 LangChain Expression Language（LCEL）底层的 DAG（有向无环图）模型适用于批处理脚本：数据从左往右流，每个节点最多执行一次，没有回边、没有挂起、没有恢复。然而真实的 Agent 工作流需要循环反思、条件分支、重试恢复和人工在环——这些 DAG 的数学模型都不支持。LangGraph 1.0 引入 StateGraph 作为替代计算模型，将图从"数据流管道"转变为"状态载体"，并用 Pregel BSP（批量同步并行）引擎作为执行内核，在每个 superstep 后自动 checkpoint。这篇文章系统性地对比了 DAG 与 StateGraph 的拓扑差异，详细剖析了 Pregel 的 Plan→Execute→Update 循环，并与 Microsoft Agent Framework 1.0 做了全面的设计哲学对比。

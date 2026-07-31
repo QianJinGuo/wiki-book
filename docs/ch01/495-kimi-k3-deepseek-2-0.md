@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/kimi-k3这是-deepseek-20-时刻.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kimi K3，这是 DeepSeek 2.0 时刻"))
+    深度分析
+      K3 的架构创新与扩展效率
+      LMArena 登顶的行业意义
+      长程自主 Agent 能力的实证
+      'DeepSeek 2.0 时刻'的深层含义
+    实践启示
+    相关实体链接
+```
+
 ## 摘要
 
 Kimi K3 是月之暗面（Moonshot AI）于 2026 年 7 月发布的开源大模型，参数量达 2.8 万亿，基于 KDA（Kimi Delta Attention）混合线性注意力和注意力残差架构，原生支持视觉理解，上下文窗口 100 万 token。发布后被全球社区称为"DeepSeek 2.0 时刻"，在 LMArena Frontend Code Arena 以 1679 分超越 Claude Fable 5 登顶第一，两两对战胜率 76%。在 14 项 benchmark 中对 Opus 4.8 取得 14:0 全胜，整体能力仅次于 Claude Fable 5 和 GPT-5.6 Sol。

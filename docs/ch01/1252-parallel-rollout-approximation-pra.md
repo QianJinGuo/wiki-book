@@ -12,6 +12,25 @@
 
 PRA 通过系统实验分析了制约 pixel-space AR 生成效果的瓶颈并提出了针对性方案。PRA-Small（135M 参数）已超过 1.9B 参数基线，PRA-Large（511M 参数）达到 FID 1.94，刷新了 pixel-space AR 图像生成的性能水平。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Parallel Rollout Approximati…"))
+    技术背景：Pixel-Space AR 的困境
+    PRA 方法详解
+      低维中间态预测
+      并行 Rollout 近似
+    实验结果
+    深度分析
+      1. '纯'自回归路线的复兴意义
+      2. 统一视觉与语言建模架构的路径
+      3. '内部降维' vs '外部 tokeni…
+      4. 并行近似串行的范式价值
+    实践启示
+```
+
 ## 核心要点
 
 - **问题定位**：pixel-space AR 存在两个核心瓶颈——高维 pixel token 的单步预测误差（输出端），以及 teacher-forced 训练与自回归推理之间的分布不匹配（输入端）。二者相互耦合，使采样过程中的误差不断累积放大。

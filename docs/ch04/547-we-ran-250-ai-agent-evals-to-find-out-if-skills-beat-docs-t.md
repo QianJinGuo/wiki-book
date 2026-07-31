@@ -8,6 +8,17 @@
 
 > Source: [We Ran 250 AI Agent Evals to Find Out if Skills Beat Docs. The Answer Is More Complicated Than We Expected](https://www.wix.engineering/post/we-ran-250-ai-agent-evals-to-find-out-if-skills-beat-docs-the-answer-is-more-complicated-than-we-ex) | Score: v*c=64
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("We Ran 250 AI Agent Evals to…"))
+    Overview
+    The Problem We Were Try…
+    Methodology
+```
+
 ## Overview
 
 Published Time: 2026-05-06T11:16:26.529Z

@@ -8,6 +8,19 @@
 
 AWS Kiro-cli 结合 Arm MCP Server 与 Kiro Powers，让 AI Agent 自主执行 EKS 集群升级的全流程：风险识别、路径规划、升级执行与故障排查。对照实验显示：加载 Skill 知识库后 agent 自主执行耗时仅 2.5 小时（vs 无 Skill 时工程师全程介入的 6 小时），节省 60%。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI 时代的 EKS 升级范式：Kiro-cli Age…"))
+    传统 EKS 升级的三大痛点
+    Kiro-cli 架构
+    对照实验
+    三个核心场景
+    运维范式启示
+```
+
 ## 传统 EKS 升级的三大痛点
 
 1. **风险识别靠"经验记忆"**——14+ EKS Add-on 和 6-10 个自管理 Helm 组件的兼容性信息分散在 K8s release notes、AWS 文档和各项目 GitHub README 中，经验随人员流动而流失。

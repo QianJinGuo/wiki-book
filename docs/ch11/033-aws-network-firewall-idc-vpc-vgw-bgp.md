@@ -8,6 +8,30 @@
 > AWS China Blog 2026-06-12 实验笔记：用 CloudFormation 搭建 VPC + 模拟 IDC 环境，开启 BGP 路由传播 + 手工配置高优先级路由条目，验证 IDC ↔ 云之间流量经 AWS Network Firewall 审查的完整方案。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-network-firewall-服务审查-idc-和云上-vpc-间的流量-vgw-架构的设计和实验.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Network Firewall 审查 IDC-…"))
+    场景与挑战
+    核心架构
+    关键技术点
+      1. BGP 路由传播
+      2. 手工高优先级路由
+      3. NFW 路由配置
+      4. 验证实验
+    VGW vs TGW 场景选择
+    深度分析
+      1. VGW + NFW 架构：静态路由劫持流…
+      2. BGP 路由传播是 AWS 跨网络互联的…
+      3. 主动拦截 vs 被动监听：NFW 的架构定位
+      4. 双 AZ NFW 高可用：生产部署的必要条件
+    实践启示
+    关键引用清单
+    相关实体
+```
+
 ## 场景与挑战
 
 ```mermaid

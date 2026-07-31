@@ -6,6 +6,22 @@
 
 AWS Bedrock AgentCore 是 AWS 推出的 Agent 基础设施平台，旨在为开发者提供生产级 AI Agent 部署能力。通过 `CreateHarness` 和 `InvokeHarness` 两个核心 API，覆盖 Agent 运行所需的六大基础设施原语。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock AgentCore"))
+    核心能力
+    相关实体
+    深度分析
+      六大原语的设计哲学
+      与 MCP 生态的关系
+      企业级部署的权衡
+    实践启示
+    应用场景
+```
+
 ## 核心能力
 
 ```mermaid

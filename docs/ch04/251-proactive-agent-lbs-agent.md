@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/amap-proactive-agent-lbs-spacetime.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德Proactive Agent — LBS场景时空思…"))
+    核心定位
+    范式跃迁：RecSys → Proactive…
+    Proactive Agent 三大核心能力
+    用户体验三转变
+    深度分析
+      从'候选项'到'确定答案'的范式根本性转变
+      时空三维度信号（Where-When-Who）…
+      全局感知 → 全需求预估的'不重不漏'逻辑
+      GenUI：意图与界面的同步演化
+    实践启示
+      系统设计层面
+      产品与交互设计层面
+      技术选型与架构演进层面
+    相关实体
+```
+
 ## 核心定位
 高德地图 Proactive Agent：将传统"搜与推"升级为**会思考、会主动决策**的时空思考型 Agent，在用户开口之前就提供量身定制的贴心服务。
 

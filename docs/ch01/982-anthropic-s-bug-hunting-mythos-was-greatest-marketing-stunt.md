@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/anthropic-mythos-bug-hunting-marketing.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic's bug-hunting Myth…"))
+    关键要点
+    深度分析
+      事件背景
+      实际测试结果
+      与同类工具对比
+      核心结论
+    实践启示
+      对安全团队
+      对开发者
+      对 AI 厂商
+    相关实体
+```
+
 ## 摘要
 cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos 漏洞挖掘 AI。Anthropic 此前宣称 Mythos 能力太强不适合公开，在对 cURL 的扫描中却仅发现 1 个低危漏洞。Stenberg 认为围绕 Mythos 的炒作"主要是营销"，而非真正的 AI 安全突破。
 

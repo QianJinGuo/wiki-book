@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/almcorp-google-ads-expanded-experiment-v24-1.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google Ads Expanded Experime…"))
+    深度分析
+      1. 自动化与测量之间的结构性矛盾
+      2. 三种实验类型的分层设计
+      3. 报告层的统计化是重大进步
+      4. API-UI 对齐的战略意图
+    实践启示
+      1. 建立实验优先级矩阵
+      2. 定义明确的成功标准再开始实验
+      3. 重视异步操作的错误处理
+      4. 连接外部数据做下游验证
+    相关实体
+```
+
 ## 核心要点
 - Google Ads v24.1 扩展了 AI Max、视频、Demand Gen 和 Performance Max 的实验支持
 - 涵盖 AI Max 策略更新和实验配置变化

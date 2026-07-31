@@ -8,6 +8,25 @@
 
 > **Background**：本文基于 AWS 官方博客文章，系统梳理 SageMaker AI 推理端点的详细可观测性能力——涵盖 100+ OpenTelemetry 指标、内置 Insights Dashboard（Performance/Capacity/Reliability 三视图）、PromQL 对接 Grafana 等完整方案。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SageMaker 推理可观测性：100+ 详细指标 +…"))
+    核心架构
+    100+ 详细指标覆盖范围
+    Insights Dashboard 三视图
+      Performance Tab
+      Capacity Tab
+      Reliability Tab
+    启用方式
+    PromQL 对接 Grafana
+    定价
+    前置条件
+    与现有 MLOps 实体的差异化
+```
+
 ## 核心架构
 
 ```mermaid

@@ -6,6 +6,26 @@
 
 # GenPage: Netflix 端到端生成式首页构建
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GenPage: Netflix 端到端生成式首页构建"))
+    核心洞察
+    架构设计
+      自定义 Tokenization
+      训练三阶段
+      RL 训练细节
+    生产挑战与解决方案
+      冷启动
+      多节奏增量训练
+      业务规则约束解码
+    生产效果
+    与其他方案的差异化
+    可复用经验
+```
+
 ## 核心洞察
 
 ```mermaid

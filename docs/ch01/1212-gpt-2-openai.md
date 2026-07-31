@@ -8,6 +8,17 @@
 
 Giles Thomas 在从零训练 LLM 的项目中发现一个反直觉现象：OpenAI 原始 GPT-2 small 权重在指令跟随评估中始终优于他自训练的模型，即使他的模型在交叉熵损失（cross-entropy loss）等技术指标上表现更好。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-2 权重之谜：为什么 OpenAI 的原始权重比…"))
+    核心发现
+    实验设置
+    意义
+```
+
 ## 核心发现
 
 - **反直觉结果**：更低的 test loss 并不意味着更好的指令跟随能力

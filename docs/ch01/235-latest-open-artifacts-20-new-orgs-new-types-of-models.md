@@ -18,6 +18,27 @@ updated: '2026-06-08'
 type: entity
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Latest open artifacts (#20):…"))
+    相关实体
+      **Our Picks**
+      **Models**
+    深度分析
+      1. 开源模型生态的结构性分散
+      2. LatentMoE 与 NVFP4：量化…
+      3. 主权 AI 的实证：Sarvam 的 I…
+      4. 从通用到专用：专用模型的功能域扩张
+    实践启示
+      1. 为特定任务域选择专用模型而非追求最大通用模型
+      2. 关注 LatentMoE + 低精度量化…
+      3. 在多语言或本土化场景中评估 Sarvam…
+      4. 利用 Chroma Context-1 …
+```
+
 ## 相关实体
 - [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/473-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
 - [Interconnects What Comes Next With Open Models](ch01/201-what-comes-next-with-open-models.html)

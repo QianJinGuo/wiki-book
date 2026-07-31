@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/reasoning-lift.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Reasoning lift: What happens…"))
+    相关实体
+    深度分析
+      核心发现：reasoning 模式重塑 AI …
+      品牌持久性的机制差异
+      为什么 Finance 领域表现最突出
+      两种模式的信息架构差异
+    实践启示
+      1. 测量必须按 reasoning 模式分割
+      2. TOFU 内容策略需要重新评估
+      3. 优化信源的可检索性，而非排名
+      4. Selection 阶段的 prompt…
+```
+
 ## 核心要点
 - AI 电台实验：四个 AI 运行电台广播
 - 实验过程与结果分析

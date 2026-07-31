@@ -6,6 +6,26 @@
 
 # AWS Network Firewall 规则冲突 AI 实时检测方案（部署小指南六）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Network Firewall 规则冲突 AI…"))
+    概述
+    深度分析
+      1. '代码负责发现冲突，AI 负责解释冲突'…
+      2. STRICT_ORDER 语义理解是 A…
+      3. 端到端事件驱动架构 + CloudFor…
+      4. 多维冲突检测覆盖了 Suricata /…
+    实践启示
+      1. 用 CloudTrail + Event…
+      2. 让 LLM 做语义判断，让代码做确定性计算
+      3. STRICT_ORDER / 优先级语义…
+      4. Serverless + 按需计费是中小…
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

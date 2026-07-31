@@ -30,6 +30,17 @@ Increasing efficiency starts with reducing what Copilot has to repeat from turn 
 
 We are working on both: improving the Copilot harness so more of each session goes toward the task itself, and expanding Auto so Copilot can pick the model that fits the work without asking developers to make that choice every time. This post focuses on harness improvements in GitHub Copilot for VS Code and on ongoing work to expand Auto across Copilot surfaces.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Getting more from each token…"))
+    Increased prompt cachin…
+    Where GitHub Copilot au…
+    How Auto selects the ri…
+```
+
 ## Increased prompt caching and deferred tools
 
 In longer GitHub Copilot sessions in VS Code, the harness prepares a lot of recurring information for the model: instructions, repository context, conversation history, available tools, and the current state of the task. Some of that context is needed. Some of it can be cached, deferred, or loaded only when it becomes relevant.

@@ -21,6 +21,25 @@ OWL在具体的代码实现上流程更加复杂一些，笔者看的代码入�
 user agent和assistant交互过程中，critic model作为第三者，用来选择一个user / assistant agent的最佳答案给到assistant / user agent。critic model可以是人类的判断，让人工介入进行选择，在Human类中实现。OWL是camel库的更高层的封装，Human类在camel库的camel/human.py中实现。critic model也可以是一个LLM，由CriticAgent类实现，使用system prompt如下：
     You are a {critic_role} who teams up with a {user_role} and a {assistant_role} to solve a task: {task}.Your job is to select an option from their proposals and provides your explanations.Your selection criteria are {criteria}.You always have to choose an option from the proposals.=============================================中文翻译分割线=============================================你是一位 {批评者角色}，与一位 {用户角色} 和一位 {助手角色} 合作来解决一项任务：{任务}。你的工作是从他们的提议中选择一个选项，并给出你的解释。你的选择标准是 {criteria（标准内容）}。你必须始终从这些提议中选择一个选项。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent框架OWL原理详解"))
+    User Agent和Assistant Ag…
+    深度分析
+      核心架构设计思想
+      记忆管理机制的层次设计
+      工具生态的'嵌套Agent'模式
+      Critic机制的两种形态
+    实践启示
+      何时选择OWL架构
+      避坑指南
+      二次开发建议
+    相关实体
+```
+
 ## User Agent和Assistant Agent之间的交互
 本小节笔者用一个例子来展示User Agent和Assistant Agent之间的交互细节，具体任务如下。由于任务比较简单，没涉及TaskSpecifyAgent和TaskPlannerAgent。
 上述内容已涵盖OWL框架的核心机制。

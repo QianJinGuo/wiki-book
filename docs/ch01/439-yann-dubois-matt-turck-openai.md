@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yann-dubois-openai-post-training-matt-turck-interview.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Yann Dubois × Matt Turck：Ope…"))
+    深度分析
+      一、'可靠性台阶'是 Agent 落地的关键变量
+      二、纵向 + 横向团队的组织方式
+      三、SFT 与 RL 对幻觉的对冲机制
+      四、强化学习从'竞赛玩具'到'现实生产力'的转折
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Yann Dubois（OpenAI Post-Training Frontiers 联合负责人）与纽约 VC Matt Turck（FirstMark Capital）的深度访谈，涵盖 GPT-5.5 发布内幕后训练团队的运作机制、强化学习从"竞赛玩具"转向"现实生产力"的关键转折、预训练是否撞墙的争论、以及 OpenAI 对持续学习、Harness 工程化、模型评估等核心议题的判断。对构建 Agent 系统、后训练流水线、RL 训练循环的从业者有直接参考价值。

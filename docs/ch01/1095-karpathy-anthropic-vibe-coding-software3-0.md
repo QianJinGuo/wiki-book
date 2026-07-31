@@ -6,6 +6,22 @@
 
 # Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy加入Anthropic后首讲：Vibe …"))
+    相关实体
+    深度分析
+      核心观点
+    核心框架：Software 1.
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](../ch05/001-impeccable.html)

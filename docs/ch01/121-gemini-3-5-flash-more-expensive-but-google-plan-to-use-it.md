@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 4.9KB | `entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini 3.5 Flash: more expen…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Google 在 I/O 大会上发布 Gemini 3.5 Flash，直接面向公众可用，跳过预览阶段 
 - 定价大幅上涨：3.5 Flash 是 3 Flash Preview 的 3 倍，是 3.1 Flash-Lite 的 6 倍 

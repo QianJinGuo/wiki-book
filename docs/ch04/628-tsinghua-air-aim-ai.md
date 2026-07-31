@@ -8,6 +8,21 @@
 
 清华大学智能产业研究院（AIR）刘洋教授团队开发的 **AIM（AI Mathematician）** 系统，是面向数学研究的智能体系统。与专注于解题的 AI 不同，AIM 尝试参与更早一步的科研工作：帮助研究者发散思路、组织定理、生成证明草稿。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tsinghua AIR AIM：AI 数学家从解题到参…"))
+    核心案例：84页量子算法论文
+    五阶段人机协同工作流
+    关键洞察
+      AI 数学能力从'解题'走向'研究'
+      AI Scientist 的工作流启示
+      与 AI Scientist 其他方案的对比
+    参考文献
+```
+
 ## 核心案例：84页量子算法论文
 
 AIM 深度参与了一项量子算法研究（Sign Embedding Quantum Algorithms for Matrix Equations and Matrix Functions），最终形成 84 页论文。研究从人类研究者提出的宏观直觉出发——"有理逼近能否成为量子算法设计原则"——AIM 协助完成了从思路发散到定理组织的全流程。

@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/lighthouse_attention.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Lighthouse Attention"))
+    深度分析
+      设计哲学：对称性 vs 不对称性
+      选择机制：核外设计
+      两阶段训练：可恢复性保证
+      上下文并行：稀疏方法的关键优势
+    实践启示
+    关联阅读
+    相关实体
+```
+
 ## 核心要点
 - 选择性层级注意力（Selection-based Hierarchical Attention），通过对称 Q/K/V 池化在多分辨率金字塔中稀疏化注意力 
 - 前向+反向延迟比标准注意力快约 **17×**（512K 上下文，单卡 B200），端到端预训练提速 **1.4–1.7×**（98K 上下文）

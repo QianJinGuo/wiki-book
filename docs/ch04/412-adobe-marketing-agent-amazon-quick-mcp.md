@@ -8,6 +8,21 @@
 
 > **来源**: AWS Machine Learning Blog · Ebbey Thomas, Siddhartha Srivastava, Ranjith Raman, Eugene Thomas · 2026-06-19
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Adobe Marketing Agent 与 Amaz…"))
+    深度分析
+      架构设计
+      五大营销工具详解
+      配置流程实战
+      安全与治理要点
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick 深度集成，让营销团队以自然语言查询营销数据。Amazon Quick 提供对话体验和动作编排，Adobe 提供营销领域分析能力。这是两个企业级厂商通过开放协议交换领域专用 AI 工具的典型案例。

@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/github-copilot-individual-plans-flex-allotments.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub Copilot Individual Pl…"))
+    相关实体
+    深度分析
+      定价结构的双层设计
+      套餐价值对比
+      Max 套餐的战略意图
+      竞争格局影响
+    实践启示
+      1. 监控用量，为升级做准备
+      2. 理解'无限量'的范围
+      3. 考虑年度订阅锁定风险
+      4. 企业用户应关注个人套餐变化的外溢效应
+```
+
 ## 核心要点
 - GitHub Copilot 新定价方案- Flex Allotments 灵活配额
 - Source: https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/

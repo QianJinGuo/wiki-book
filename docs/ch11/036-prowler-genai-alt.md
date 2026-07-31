@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Prowler 与 GenAI 构建金融行业智能合…"))
+    关键要点
+    深度分析
+      1. '规模化合规难题'的本质：框架重复与术语壁垒
+      2. Prowler 的检测-映射解耦架构：核…
+      3. Rationale 文档：GenAI 精…
+      4. GenAI '最后一公里' 问题的解决
+    实践启示
+      1. 跨境金融机构的框架整合策略
+      2. 小型安全团队的合规效率杠杆
+      3. 审计准备流程的根本性改变
+      4. 合规报告的自动化分层
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

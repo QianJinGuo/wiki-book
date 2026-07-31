@@ -8,6 +8,17 @@
 
 特赞（Tezign）在企业场景的生成式 Agent 实践：将创意内容生产流程 Agent 化，涵盖素材理解、创意生成、合规审核、多渠道分发。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("特赞企业级生成式 Agent"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 本页作为知识图谱锚点，连接了以下关键实体：[当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/896-agent-ai.html)。 相关主题通过 [CUGA: IBM Research Enterprise Agent Harness](../ch05/058-agent-harness.html) 延伸。

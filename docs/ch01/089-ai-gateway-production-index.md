@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/aigatewayproductionindex.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Gateway production index"))
+    深度分析
+      1. 成本与音量的分歧映射不同的业务风险层级
+      2. Agentic Workload 正在重…
+      3. 多模型路由是规模化的标准架构，而非可选项
+      4. Provider Outage 的真实成…
+    实践启示
+      给 AI Gateway 使用者的行动建议
+    相关实体
+```
+
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论

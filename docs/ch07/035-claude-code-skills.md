@@ -8,6 +8,26 @@
 
 > 小 G (JavaGuide) 对 Claude Code Skills 的深度技术解析。与 [Claude Code Skills/MCP/Rules 源码分析](ch07/006-claude-code-skills-mcp-rules.html) 互补——该实体聚焦源码层实现，本实体聚焦用户层的发现机制、SKILL.md 编写、执行流程与安全限制。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Skills 实战指南 — 发现…"))
+    Skills 的核心设计理念
+    发现机制
+    执行流程
+    安全限制
+    与其他机制的配合
+    深度分析
+      Skill 的 Token 经济学
+      Skill 作为 Agent 的「肌肉记忆」
+      MCP Source 的安全隔离悖论
+      Skills 在 Agent Teams 中的角色
+    实践启示
+    相关实体
+```
+
 ## Skills 的核心设计理念
 
 **按需加载的操作手册**：

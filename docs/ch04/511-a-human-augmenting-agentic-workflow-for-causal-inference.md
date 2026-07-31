@@ -8,6 +8,21 @@
 
 Netflix 开源了 OCI-Agent，一个用于观测性因果推断（Observational Causal Inference, OCI）的 Agent 工作流。其核心设计理念是"人类增强"（Human-Augmenting）——Agent 处理重复性、易出错的技术步骤（协变量平衡检查、敏感性分析、多轮迭代追踪），而人类专注于更高层次的判断：问题框架、假设审视和结果评估。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A Human-Augmenting Agentic W…"))
+    深度分析
+      1. OCI-Agent 填补了数据科学自动化…
+      2. 'Human-Augmenting'设计…
+      3. 开源策略推动 OCI 工作流标准化
+      4. 对 Agent 可解释性和可审计性的设计考量
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### 1. OCI-Agent 填补了数据科学自动化中的关键空白

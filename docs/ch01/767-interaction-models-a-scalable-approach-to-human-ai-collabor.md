@@ -6,6 +6,20 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models-human-ai.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Interaction Models: A Scalab…"))
+    Summary
+    Source
+    Notes
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## Summary
 Today, we’re announcing a research preview of interaction models: models that handle interaction natively rather than through external scaffolding. We think interactivity should scale alongside intelligence; the way we work with AI should not be treated as an afterthought. Interaction models let people collaborate with AI the way we naturally collaborate with each other—they continuously take in audio, video, and text, and think, respond, and act in real time.
 We train an interaction model from...

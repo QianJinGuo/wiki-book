@@ -8,6 +8,28 @@
 > AWS China Blog 2026-06-12 配置手册：把 LiteLLM AI Gateway 的请求日志与费用数据接入 Amazon QuickSight，构建运维监控 Dashboard。三条数据源路径：S3 日志 + Athena（Aurora 不可用的解耦方案）、Aurora PostgreSQL（内嵌数据源）、安全最佳实践。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-amazon-quicksight-数据可视化配置手册.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LiteLLM + Amazon QuickSight …"))
+    数据源选型决策树
+    三层数据源架构
+      路径 1：S3 + Athena（解耦方案）
+      路径 2：Aurora PostgreSQL（…
+      路径 3：混合（生产推荐）
+    QuickSight 配置 5 步
+    安全最佳实践
+    深度分析
+      跨工具数据建模的权衡
+      QuickSight SPICE 引擎 vs …
+      IAM 数据库认证与 VPC 私有连接的隐性复杂度
+      多源 JOIN 是成本归因的基础
+    实践启示
+    关键引用清单
+```
+
 ## 数据源选型决策树
 
 ```mermaid

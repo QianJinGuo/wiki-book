@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/codex-goal-six-hour-run.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex Goal Six Hour Run"))
+    概述
+    核心机制
+      持久化目标状态
+      运行时续跑（Runtime Continuat…
+      目标生命周期工具
+    实测案例：6 小时 44 分钟连续任务
+      任务背景
+      关键观察
+    与 Claude Code Ralph Wig…
+    深度分析
+      1. 持久化目标状态改变了 AI 运行的可用性边界
+      2. 94% Cache Hit Rate 证…
+      3. '从 supervisor 到 arch…
+      4. 自动续跑消除人工恢复的上下文断层
+    实践启示
+    适用边界
+    范式转变
+```
+
 ## 概述
 
 **`/goal`** 是 OpenAI Codex CLI v0.128.0（2026-04-30）中引入的持久化目标工作流特性，使 AI Agent 能够在数小时的暂停后无缝恢复执行，而无需人工重新输入提示词。

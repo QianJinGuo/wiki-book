@@ -6,6 +6,25 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Loop 架构三层模型：Loop + Ski…"))
+    核心命题
+    三层架构
+      第一层：Loop = cron + 决策者
+      第二层：Skill = 耐久 workflow
+      第三层：Orchestrator = 执行引擎
+    耐久执行六要素
+    自建 Skill 的 Agent
+    step 级 checkpoint 的双重价值
+    复利 Loop
+    可观测性 = 信任层
+    Loop 在哪里断裂
+```
+
 ## 核心命题
 
 所有人都在问"loop 到底是什么"，但很少有人追问：这个 loop 到底运行在哪里？

@@ -9,6 +9,19 @@
 > 来源：夕小瑶科技说 (WeChat) | 2026-07-14 | v×c=56
 > 核心观点：三家国产桌面 Agent（豆包/WorkBuddy/QoderWork）各有侧重——豆包是封闭套装（强多模态+语音），QoderWork 是专业 Agent 市场（硬核 Skill 生态），WorkBuddy 是开放连接器（外接模型+IM 全接入）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("豆包、WorkBuddy、QoderWork怎么选？我用…"))
+    深度分析
+      桌面 Agent 的分化趋势
+      关键能力缺口
+      Skill 生态的三种模式
+    评测分数对比
+```
+
 ## 摘要
 
 文章通过 8 个真实办公任务（本地电脑操控、信息搜索整合、跨设备协同、多模态、Skill/MCP 生态、外接模型、语音通话与屏幕共享、价格透明度）横评了三家国产桌面 Agent：豆包（字节）、WorkBuddy（腾讯）、QoderWork（阿里）。评测发现三家没有全能冠军，但各自有清晰的定位分工。豆包在 PPT 制作和多模态能力上表现突出，但生态封闭（仅飞书 IM、仅豆包模型）；QoderWork 在微信提醒、专家 Skill 套件上最强，适合专业场景；WorkBuddy 最开放（外接模型、全 IM 接入、费用预估），但电脑操控能力较弱。

@@ -7,6 +7,17 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securityaffairs-bwh-hotels-breach.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securityaffairs-bwh-hotels-breach.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hackers accessed BWH Hotels …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/ai-coding-agent-memory-system.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Coding Agent 记忆系统"))
+    相关实体
+    深度分析
+      1. 记忆的本质是分层成本管理
+      2. 热记忆设计优先于向量检索
+      3. 压缩前的状态迁移是记忆可靠性的关键
+      4. Skills 是程序性记忆，不是日志
+    实践启示
+      先定义热记忆边界，再上向量库
+      会话历史必须有档案层
+      压缩前必须有一次状态迁移
+      流程经验要变成可维护资产
+```
+
 ## 相关实体
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
 - [Agent 记忆架构](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)

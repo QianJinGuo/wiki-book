@@ -9,6 +9,19 @@
 > 来源：夕小瑶科技说 (WeChat) | 2026-07-13 | v×c=72
 > 核心观点：Codex 负责人 Tibo 公开教用户通过 CLIProxyAPI 将 GPT-5.6 Sol 接到 Claude Code 使用，反映了 AI 产品竞争进入「评论区即更新日志、社区即控制台」的新阶段。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("逆了个大天！负责人亲自下场，教大家反代Codex"))
+    深度分析
+      反代的战略意义
+      产品运营的「评论区化」
+      额度战：AI 编程的新竞争维度
+    时间线
+```
+
 ## 摘要
 
 Codex 团队负责人 Tibo 在 2026 年 7 月公开转发教程，教用户使用 CLIProxyAPI 工具将 Codex 订阅中的 GPT-5.6 Sol 模型接入竞争对手 Claude Code 使用。教程仅需三步：安装 CLIProxyAPI、连接 Codex 账号、配置别名。Tibo 甚至承诺「如果这条路被封，欠大家一次额度重置」。事件随后发酵为 OpenAI 与 Anthropic 之间的额度战——Claude 延长促销、增加周用量，Codex 随即取消 5 小时限时并重置额度。文章揭示了 AI 编程产品的新竞争形态：产品版本日志藏进评论区，社区成为产品的野生控制台。

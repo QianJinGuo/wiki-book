@@ -8,6 +8,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-zhuge6-yucheng-translation.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Dynamic Workflow…"))
+    深度分析
+      核心观点
+    一句话定位
+    核心内容（与前 5 译本同源）
+      3 大失败模式（Workflows 必杀技）
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角） 涉及agent领域的核心技术议题。

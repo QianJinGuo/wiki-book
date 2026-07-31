@@ -8,6 +8,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-long-running-agent-architecture-6h-retroforge.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 实战分享：如何让 AI Agent …"))
+    深度分析
+      RetroForge 案例对比
+      架构设计启示
+    实践启示
+    客户案例扩展：Rakuten 夜间运行 + 审…
+      Rakuten 案例概况
+      与 RetroForge 架构的对照
+      六层夜间控制环
+      新瓶颈：晨间审阅队列
+    相关实体
+```
+
 ## 摘要
 
 Anthropic 工程师 Ash Prabaker 与 Andrew Wilson 在 RetroForge 大会上分享了长时运行 Agent 的架构设计。核心挑战在于：一年前 Claude 每次任务只能运行约 20 分钟，而现在 Claude Code 能有效运行数天。在极简架构下，Agent 自主完成任务的连续运行时间从 1 小时（Opus 3.7）提升到 12 小时（Opus 4.6），提升 **10 倍以上**。演讲归纳了三大失败根因（上下文焦虑、规划缺陷、自我评判），提出了 Agent SDK 结构化管理方案和 GAN 风格的对抗式架构，并通过 RetroForge 6 小时案例验证了方案有效性。

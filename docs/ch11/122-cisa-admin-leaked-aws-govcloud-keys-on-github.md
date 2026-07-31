@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CISA Admin Leaked AWS GovClo…"))
+    事件概述
+    深度分析
+      1. 人为失误与制度失效的叠加效应
+      2. GovCloud 凭证的极高价值
+      3. 内部 artifactory 成为持久化…
+      4. 弱密码实践放大风险
+    受影响系统与暴露资产
+    关键时间线
+    实践启示
+      1. 强制实施 GitHub 组织级策略
+      2. 部署自动化的 secrets 扫描和告警
+      3. 凭证轮换的快速响应机制
+      4. 禁止使用个人 GitHub 账户处理工作…
+    相关人物与组织
+    外部参考
+    相关实体
+```
+
 ## 事件概述
 
 ```mermaid

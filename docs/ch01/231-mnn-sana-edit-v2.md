@@ -4,6 +4,39 @@
 
 > 📊 Level ⭐⭐ | 17.7KB | `entities/mnn-sana-edit-v2端侧运行的图像漫画风编辑大模型.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MNN-Sana-Edit-V2：端侧运行的图像漫画风编…"))
+    元数据
+    原始内容
+    技术架构
+    核心技术详解
+      Learnable Query：连接理解与生成…
+      Connector 模块：跨模态对齐
+      Deep Compression Autoen…
+      Linear DiT
+    训练策略
+      三阶段训练
+    MNN 端侧部署优化
+      模型转换
+      量化技术
+      真机速度测试
+      运行要求
+    深度分析
+      1. 端侧 AI 图像编辑的技术突破
+      2. 端云协同的新范式
+      3. 量化策略的精细平衡
+      4. 苹果生态的端侧优势
+    实践启示
+      对 AI 应用开发者的启示
+      对端智能基础设施团队的启示
+      对 AI 研究者的启示
+      对产品与商业化团队的启示
+```
+
 ## 摘要
 MNN-Sana-Edit-V2 是由淘宝 Meta 团队联合杭州电子科技大学研发的端侧图像漫画风编辑大模型，基于 Sana 和 MetaQuery 学术成果创新构建，采用 Qwen3-0.6B 作为冻结的预训练 LLM，通过 Learnable Query 和 Connector 模块桥接文本理解与图像生成，结合 Linear DiT、Deep Compression Autoencoder 等高效架构设计，并依托 MNN 框架实现 4/8bit 量化部署，使全部模型可在手机端本地运行；该模型在 iPhone 17 Pro 上仅需约 15 秒即可完成 512×512 图像的漫画风格转换，较云端方案提速 2.5 倍，同时保障用户隐私与推理效率，目前已集成至 MNN Chat 应用（支持 iOS/Android），相关代码与模型权重已在 GitHub、HuggingFace 及 ModelScope 全面开源。
 

@@ -10,6 +10,21 @@
 
 TabFM is a foundation model for tabular data classification and regression, introduced by Google Research. By framing tabular prediction as an in-context learning (ICL) problem, TabFM eliminates the need for manual model training, hyperparameter tuning, and complex feature engineering — enabling zero-shot predictions on previously unseen tables in a single forward pass.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing TabFM: A zero-sh…"))
+    核心摘要
+    深度分析
+      一、范式转变：从'训练'到'上下文理解'
+      二、核心技术：交替行-列注意力机制
+      三、与 TimesFM 的家族关系：从时序到表…
+      四、对传统 ML 工作流的影响与局限
+    实践启示
+```
+
 ## 核心摘要
 
 - **发布方**: Google Research

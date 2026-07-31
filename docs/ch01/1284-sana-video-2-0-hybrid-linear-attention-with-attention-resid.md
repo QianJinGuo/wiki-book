@@ -8,6 +8,21 @@
 
 > SANA-Video 2.0 是 NVIDIA Research（Efficient AI Team 与新加坡实验室）推出的高效视频生成模型系列（5B 和 14B 参数），支持 720p 分辨率视频在单张 H100 GPU 上生成。其核心技术是 Hybrid Linear-Softmax Attention（混合线性-软最大化注意力）和 Block Attention Residuals（注意力残差）机制，在匹配全 Softmax 视频 DiT 生成质量的同时，实现 3.2× 的注意力层加速。结合 Sol-Engine 全栈优化后，5B 模型流水线可在 13.06 秒内生成 720p/5s 视频，比 Wan 2.2-A14B 快 120 倍。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SANA-Video 2.0: Hybrid Linea…"))
+    深度分析
+      效率-质量权衡的架构创新
+      从零训练的 hybrid 设计
+      Sol-Engine 全栈优化的协同效应
+      与扩散模型中效率优化趋势的关系
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 SANA-Video 2.0 是 NVIDIA 在视频生成效率-质量权衡方面的最新进展。传统视频扩散 Transformer 面临的两难困境是：Softmax Attention 提供高质量但计算复杂度随序列长度呈 O(N²) 增长，Linear Attention 具有 O(N) 复杂度但表达能力受限。SANA-Video 2.0 的混合线性-软注意力在 3:1 比例下交替使用门控线性注意力与门控软注意力锚点，在保留线性注意力长序列优势的同时恢复全秩 token 交互——通过从零训练而非将预训练模型线性化，让模型完整学习混合注意力模式。在低分辨率代理研究中，25% Softmax 被确定为最优的质效权衡点。

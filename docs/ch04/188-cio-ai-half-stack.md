@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/aliyun-cio-ai-rd-efficiency.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里云CIO：AI产研效能规模化提升实践（抛弃生码率、重…"))
+    相关实体
+    评分
+    核心判断：「技能通胀，品味通缩」
+    两个流行误区
+      1. AI 生码率是毒药
+      2. Vibe Coding 不适合企业存量系统
+    AI 改写人月神话与左移
+    四个显性改变
+    灵魂 × 骨架
+    新生产关系：PDFE + ABE（Half-S…
+```
+
 ## 相关实体
 - [Yumanju Ai Full Flow Efficiency](../ch05/094-ai.html)
 - [Skill Development Guide Aliyun 2026](ch04/271-skill.html)

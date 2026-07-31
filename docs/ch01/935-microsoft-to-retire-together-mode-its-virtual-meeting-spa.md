@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft to retire ‘Togethe…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 **Microsoft 关闭 Together Mode 的决定，本质上是对"元宇宙办公"愿景的一次公开撤退。它揭示了一个重要的产品设计教训：当一个功能无法达到临界用户量时，继续维护它反而比关停更危险。**
 Together Mode 的核心设计目标是解决"视频会议疲劳"（video meeting fatigue）——疫情期间 Microsoft 观察到员工在长期视频会议中产生的身心疲惫感。Together Mode 通过把参会者"放置"在虚拟场景（咖啡馆、会议室、剧院）中，创造一种"共在感"（copresence），让会议体验更接近物理空间。

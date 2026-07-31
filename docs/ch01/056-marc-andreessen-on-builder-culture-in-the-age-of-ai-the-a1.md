@@ -8,6 +8,27 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Marc Andreessen on Builder C…"))
+    Summary
+    Key Points
+      1. AI Expands Work, Not…
+      2. The Rise of the 'AI-…
+      3. Narrative vs. Realit…
+      4. Organizational Restr…
+    Deep Analysis
+      The Builder Thesis in C…
+      The Capability-Expansio…
+      Organizational Implicat…
+      Critique and Limitations
+    Practical Takeaways
+    Related Entities
+```
+
 ## Summary
 
 Erik Torenberg interviews Marc Andreessen on the a16z Show, covering AI's impact on jobs and productivity, the rise of "AI-native" builders, the changing media landscape, and why increased capability tends to expand work rather than eliminate it. The conversation offers a wide-ranging look at how technology is reshaping both systems and society.

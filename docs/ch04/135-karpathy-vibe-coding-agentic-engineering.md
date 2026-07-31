@@ -10,6 +10,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy 最新访谈：从 Vibe Coding …"))
+    深度分析
+      1. 任务粒度跃迁是 Agentic Engi…
+      2. Agentic Engineering …
+      3. 文档角色在 Software 3.0 里…
+      4. 锯齿状智能决定护栏必须默认开启
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 年 5 月，Karpathy 在 Sequoia AI Ascent 2026 上系统重述了从「Vibe Coding」到「Agentic Engineering」的概念漂移：Vibe Coding 命名的是一种个人体验（说需求、看结果、继续调整），而 Agentic Engineering 命名的是一套专业工作方式（围绕 Agent 的上下文、权限、工具、验证、审计、回滚来重新设计研发链路）。访谈的核心主张是：AI 编程的下一阶段差距会越来越落到模型**外面**那套系统——Harness、上下文管理、过程资产、验证体系、发布与审计——而不是模型本身。

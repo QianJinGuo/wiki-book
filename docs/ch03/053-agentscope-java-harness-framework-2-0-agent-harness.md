@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 45.8KB | `entities/agentscope-java-harness-framework-enterprise-distributed.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentScope Java Harness Fram…"))
+    背景：个人助手型 Agent 与企业级 Age…
+    AgentScope Java 1.1.0 四…
+    架构总览
+    核心支柱一：Workspace 作为唯一事实来源
+      Workspace 与 OpenClaw 的本…
+    核心支柱二：AbstractFilesyste…
+      AbstractFilesystem 接口规范
+      三种模式的注册策略
+    三大工程能力
+      安全与隔离
+      分布式部署
+      Subagent 与异步任务
+    记忆管理机制
+      双层记忆 vs Compaction 四档策略
+    核心概念映射
+```
+
 ## 背景：个人助手型 Agent 与企业级 Agent 是两种工程形态
 
 个人助手型 Agent（OpenClaw/Hermes/Claude Code）以本地目录为工作区，单机单用户运行良好，但直接平移到企业场景面临五个核心障碍：

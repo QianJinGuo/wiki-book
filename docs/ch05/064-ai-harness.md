@@ -8,6 +8,22 @@
 
 > AI 自我改进短期内最先被改写的，可能不是模型权重，而是模型外层的 Harness。从 ACE 到 DGM，Agent 不只是在 Harness 里完成任务，也开始修改 Harness 本身。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("翁荔再写万字长文：AI自我改进，先从Harness开始"))
+    深度分析
+      从上下文工程到 Harness 演化的递进逻辑
+      Self-Harness：让 Harness …
+      DGM 与进化搜索的可规模化路径
+      评估：始终是绕不开的瓶颈
+    实践启示
+    相关实体
+    第 2 Source — PaperWeekly
+```
+
 ## 摘要
 
 2026 年 7 月 4 日，翁荔在 Lil'Log 发布《Harness Engineering for Self-Improvement》，系统性地梳理了 AI 自我改进的技术路径。文章的核心论点是：**短期内，AI 自我改进的现实起点不会是模型直接重写自身权重，而是先让外层运行系统（Harness）变得更稳定、更可验证。** 自动科研、自我改进 Agent、进化式程序搜索被放进同一条线索中重新审视，揭示出一条清晰的递进线：提示词 → 结构化上下文 → 工作流 → Harness 代码 → 优化器代码。

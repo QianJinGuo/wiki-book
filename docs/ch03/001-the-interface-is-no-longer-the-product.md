@@ -52,6 +52,17 @@ The old tools will not vanish quickly. They have distribution, habits, enterpris
 
 The more interesting future is not only agents operating apps. It is applications designed so agents, humans, and existing tools can all work with the same underlying objects. Not because every app disappears but because the source of truth may move.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Interface Is No Longer t…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [From System Of Record To System Of Intelligence](../ch01/252-from-system-of-record-to-system-of-intelligence.html)
 - [Notebook Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)

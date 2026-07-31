@@ -6,6 +6,21 @@
 
 # AnySearch — Agent专用搜索引擎，登顶Product Hunt
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AnySearch — Agent专用搜索引擎，登顶Pr…"))
+    深度分析
+      Agent 时代搜索的'重新定义'
+      与传统 AI 搜索的本质差异
+      三大排序算法的工程智慧
+      Agent 原生设计的工程落地
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AnySearch 是一款由中国团队开发的 Agent 专用搜索引擎，于 2026 年 7 月登顶 Product Hunt 周榜 Top 1。与面向人类的通用 AI 搜索不同，AnySearch 专门为 AI Agent 提供实时、准确、可追溯的结构化信息输入。它覆盖 20 多个垂直领域数据源，通过意图路由、多源交叉过滤和结构化输出，重新设计了 Agent 的信息获取链路。

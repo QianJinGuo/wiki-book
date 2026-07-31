@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/破案了为啥chatgpt老想着稳稳地接住你.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("破案了为啥chatgpt老想着稳稳地接住你"))
+    摘录
+    标签
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 摘录
 > 破案了！为啥ChatGPT老想着「稳稳地接住你」
 编辑 | Youli、泽南 

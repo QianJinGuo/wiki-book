@@ -8,6 +8,22 @@
 
 > **Background**：本文基于 TechMonitor 2026-06-17 报道，综合 Databricks Lakewatch 安全湖仓架构 + Panther agentic SOC 平台的收购整合细节。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Databricks 收购 Panther：AI 驱动的…"))
+    核心架构
+    传统 SIEM vs Agentic SOC
+    Agentic SOC 工作流机制
+    Databricks 安全收购布局
+    关键洞察
+    深度分析
+    实践启示
+    与现有实体差异化
+```
+
 ## 核心架构
 
 Databricks 通过收购 Panther 构建 **AI-native Security Lakehouse**，核心理念是用 Agentic 工作流替代传统 SIEM 的手动流程：

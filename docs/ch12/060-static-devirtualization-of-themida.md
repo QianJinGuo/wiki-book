@@ -6,6 +6,28 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/static-devirtualization-of-themida.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Static Devirtualization of T…"))
+    核心方法
+      引导式符号执行（Guided Symbolic…
+      通用优化 Passes 的协同崩塌效应
+      Themida 特有的 VJCC 处理
+      回填（Lowering）阶段的关键约束
+    深度分析
+      框架可移植性的来源
+      Pattern Matching 的失效与结构…
+      符号执行防御的边界
+    实践启示
+      二进制安全研究
+      工具链构建
+      软件保护评估
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

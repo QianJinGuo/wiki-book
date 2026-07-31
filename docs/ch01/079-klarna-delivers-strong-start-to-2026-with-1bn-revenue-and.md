@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 7.0KB | `entities/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Klarna delivers strong start…"))
+    深度分析
+      一、商业模式的「三重产品」协同效应
+      二、网络效应的复利增长逻辑
+      三、单位经济效率的质的飞跃
+      四、信用风险管控的护城河
+    实践启示
+      对金融科技从业者的启示
+      对企业与商户的启示
+      对投资人与分析师的启示
+    相关实体
+```
+
 ## 核心要点
 - GMV 达 337 亿美元（+33% YoY），美国市场 +39%、美国以外 +31%
 - 收入突破 10 亿美元大关（+44% YoY），调整后营业利润 6800 万美元，而去年同期仅 300 万美元

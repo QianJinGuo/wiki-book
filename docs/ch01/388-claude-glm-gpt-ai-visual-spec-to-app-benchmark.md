@@ -8,6 +8,32 @@
 
 > VISTA（VIsual Spec-To-App Benchmark）是由 University of Arizona、Zoom 与 Stony Brook University 联合推出的首个面向 Visual Spec-to-Web-App 的端到端 Benchmark。它不再要求 Agent 修复已有代码，而是要求 Agent 根据产品需求、网页设计稿和 Figma 信息，从零构建完整、可运行的多页面 Web 应用，标志着 Coding Agent 评估从"代码评测"到"产品评测"的范式转变。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude、GLM、GPT谁才是真正的AI软件工程师？…"))
+    研究背景：从'写代码'到'开发产品'
+      现有 Benchmark 的局限
+      VISTA 的定位
+    Benchmark 设计
+      数据构建
+      五种输入条件
+      DOM-Grounded Evaluation
+    核心发现
+      发现一：'模型 + Harness'系统竞争
+      发现二：领先模型差距缩小但远未满分
+      发现三：模型形成不同的工程风格
+      发现四：开发流程行为差异显著
+    深度分析
+      从'谁更会写代码'到'谁更会开发产品'
+      '模型 + Harness'系统竞争的含义
+      与现有评估体系的互补性
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Coding Agent 已经从"修复代码"进化到"开发产品"，但现有 Benchmark（如 SWE-bench）仍专注于 GitHub Issue 修复。VISTA 填补了这一空白：它要求 Agent 根据产品需求（PRD）、Figma 设计稿和网页截图，从零构建可运行的多页面 Web 应用。Benchmark 覆盖 10 类真实 Web 应用、128 个页面、3253 个可交互组件和 458 个视觉锚点。通过 DOM-Grounded Evaluation 同时衡量定位和交互行为，VISTA 从质量（Quality）、速度（Speed）、成本（Cost）三个维度全面评估 Coding Agent 的真实软件工程能力。

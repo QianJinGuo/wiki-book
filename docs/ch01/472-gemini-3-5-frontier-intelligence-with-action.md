@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/gemini-3-5-frontier-intelligence.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini 3.5: frontier intelli…"))
+    发布概览
+    性能基准
+      Agentic 与 Coding 表现
+      速度优势
+    Agentic 能力与用例
+      核心定位
+      与 Antigravity 的协同
+      多模态与图形生成
+    商业落地与合作伙伴
+    Gemini Spark：个人 AI 智能体
+      Search 中的增强
+    安全框架
+    技术架构要点
+    与前代对比
+```
+
 ## 发布概览
 
 Gemini 3.5 是 Google 最新一代模型系列，核心理念是将前沿智能（frontier intelligence）与行动能力（action）深度融合，代表了 Google 在构建更强大 agentic AI 系统上的重大突破。

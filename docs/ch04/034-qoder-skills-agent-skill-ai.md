@@ -41,6 +41,37 @@ graph TB
 
 > 📊 Level ⭐⭐ | 35.4KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qoder Skills 完全指南 + Agent Sk…"))
+    核心概念
+      菜单与菜谱的比喻
+      Skill 与周边工具的生态定位
+    Skill 的技术架构
+      文件结构规范
+      三级渐进式披露机制（Progressive D…
+      跨平台兼容性
+    Skill vs 其他工具的抉择框架
+    三大最适合场景
+      场景一：文档与资产创建（Document and …
+      场景二：工作流自动化（Workflow Aut…
+      场景三：MCP 能力增强（MCP Enhanc…
+    安装与验证
+    SKILL.md 编写规范
+      YAML Frontmatter（触发器）
+      写好 Description 的三个黄金原则
+      正文写作的四个技巧
+    五种进阶工作流模式
+      模式一：顺序工作流编排
+      模式二：跨 MCP 协调
+      模式三：迭代优化循环
+      模式四：上下文感知的工具选择
+    测试与迭代方法论
+```
+
 ## 核心概念
 Qoder Skills 是 AI 工作流定制的基础设施，它解决了一个根本性问题：**如何让 AI 按你的标准稳定执行，而非每次凭"直觉"自由发挥**。
 

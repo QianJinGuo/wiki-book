@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/microsoft-zero-days-researcher-disgruntled-theregister.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Disgruntled researcher relea…"))
+    深度分析
+      安全研究的'越界复仇'模式：一种新型威胁行为体
+      BitLocker 绕过的真实威胁边界
+      漏洞公开时机的战术选择
+      从 PoC 到武器化的威胁演进链
+    实践启示
+      对企业安全团队的行动建议
+      对个人用户的防护建议
+      对安全行业的结构反思
+    评分
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

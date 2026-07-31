@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embabel-rod-johnson-framework-era-interview.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Rod Johnson 回归：Embabel 与「最后一…"))
+    深度分析
+      核心观点
+    一句话定位
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Rod Johnson 回归：Embabel 与「最后一波由人类选择的框架」 涉及agent领域的核心技术议题。

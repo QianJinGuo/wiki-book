@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯混元Hy3-preview发布"))
+    关键要点
+    相关实体
+    深度分析
+      架构选择：快慢融合的 MoE 路线
+      评测策略：从公开榜单到真实战斗力
+      Agent 能力的重点突破
+      开源策略与生态布局
+    实践启示
+      对模型研发团队
+      对 Agent 应用开发者
+      对企业评估标准
+    相关链接
+```
+
 ## 摘要
 腾讯混元 Hy3-preview 发布并开源，这是一个快慢思考融合的混合专家模型（MoE），总参数 295B，激活参数 21B，最大支持 256K 上下文长度，在复杂推理、指令遵循、上下文学习、代码、智能体等能力上实现大幅提升。
 

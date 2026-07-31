@@ -8,6 +8,19 @@
 
 > **Background**：本文基于 AWS China Blog 发布的 POC 实践总结，完整介绍从自建 Elasticsearch 8.17 迁移到 Amazon OpenSearch Service 的数据迁移方案选型、全量与增量同步策略，以及数据一致性验证。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从自建 Elasticsearch 迁移到 Amazon…"))
+    背景与迁移目标
+    迁移方案选型
+    向量索引迁移
+    架构与验证
+    相关实体
+```
+
 ## 背景与迁移目标
 
 ```mermaid

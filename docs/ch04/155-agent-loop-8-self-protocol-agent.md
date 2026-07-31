@@ -8,6 +8,34 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Loop 工程手册 8 个未解问题 + SE…"))
+    一句话定位
+    Agent Loop 核心主张
+    Agent Loop 7 件套
+    4 个核心设计法
+      ① Stopping Condition 优先…
+      ② Context 是'组装出来的'
+      ③ 失败是输入，不是终点
+      ④ 多 Agent 协作有 6 种'拓扑'
+    8 个未解问题（核心价值）
+      1. 软目标停止条件怎么办？
+      2. Maker-Checker 同病相怜
+      3. 护栏写在哪一层？
+      4. 记忆给多大？
+    SELF Protocol：30 天治理薄壳
+      是什么 / 不是什么
+      三大模块（被真实坑逼出来的）
+      30+ 天真实数据（单样本 · 公开邀拍砖）
+      Safe-Launch 安全承诺
+    SELF Protocol 对照 Loop 5…
+    关键洞察提炼
+```
+
 ## 一句话定位
 
 腾讯云开发者陈进（2026-06-16）读完 Peter Steinberger / Boris Cherny 提出的"Agent Loop"工程手册（Reddit/X 讨论量 220 万）后，**整理出 4 个设计法、6 种多 Agent 拓扑、8 个未解问题**，并将自己 30 天单 Agent 实验的 **SELF Protocol**（治理审查层薄壳）作为"答题草稿"开源邀拍砖。

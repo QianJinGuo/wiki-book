@@ -8,6 +8,21 @@
 
 > EchoGen 是中国科学技术大学与淘天集团-音视频技术团队在 ICLR 2026 上提出的首个基于视觉自回归（Visual Auto-Regressive, VAR）模型的前馈式（feed-forward）主体驱动（subject-driven）图像生成框架。通过**双路径主体注入策略**将高层语义身份与低层细节纹理解耦注入，EchoGen-2B 在 DreamBench 上以 **DINO 0.755、CLIP-I 0.835、CLIP-T 0.325** 全面超越所有基线，推理延迟仅 **5.2 秒**（1024×1024），较扩散方案加速 2-18×。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("EchoGen — ICLR 2026 首个基于视觉自回…"))
+    深度分析
+      主体驱动生成的两难与 VAR 的破局
+      解耦注入的设计原理
+      Subject-Text CFG 的动态控制
+      与扩散模型效率优化的对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 主体驱动图像生成（Subject-Driven Generation）长期面临"质量 vs. 效率"的两难困境：测试时微调方案（如 DreamBooth）能精准保留主体身份，但需为每个新主体单独训练数十分钟至数小时；扩散模型前馈方案摆脱了逐主体训练，但继承了迭代去噪的高推理延迟。EchoGen 的突破口在于选择 VAR 模型作为基座——VAR 模型采用"由粗到细"的下一尺度预测（next-scale prediction）范式，天然具有快速采样的优势，但在可控生成特别是主体驱动方向的研究几乎空白。EchoGen 填补了这一空白，通过创新的双路径注入策略和 Subject-Text CFG，在保持 VAR 高效推理的同时实现了超越扩散方案的主体保真度。

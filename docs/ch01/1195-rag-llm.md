@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/video-rag-chunking-strategy-deephub-imba.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LL…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LLM 的方法 涉及agent领域的核心技术议题。

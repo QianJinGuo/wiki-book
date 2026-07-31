@@ -8,6 +8,17 @@
 
 > Source: [Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM](https://www.morling.dev/blog/hardwood-1-0-fast-lightweight-apache-parquet-reader-for-the-jvm) | Score: v*c=72
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hardwood 1.0: A Fast, Lightw…"))
+    Overview
+    Why Hardwoodhttp://w…
+    What’s in Hardwood 1.0…
+```
+
 ## Overview
 
 Published Time: 2026-06-25T07:30:00+02:00

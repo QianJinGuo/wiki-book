@@ -8,6 +8,22 @@
 
 Quanta Magazine 深度报道，探讨基因组 AI 基础模型（Evo 2、Genos、AlphaGenome）在理解人类基因组物理结构时面临的根本性挑战。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Why the Human Genome's Tangl…"))
+    核心论点
+    关键 AI 模型
+      Evo 2
+      Genos
+      AlphaGenome Google Dee…
+    物理性挑战
+    对 AI for Science 的启示
+    与 AI Agent/Harness 的关联
+```
+
 ## 核心论点
 
 DNA 的分子结构自 1950 年代被破译以来，一直被视为生命的密码。但人类基因组中仅 2% 是实际基因——其余 98% 的功能仍在研究中。基因调控（哪些基因被打开/关闭）比基因序列本身更关键，而这个过程极其复杂。

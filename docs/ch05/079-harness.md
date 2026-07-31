@@ -8,6 +8,22 @@
 
 百度 Geek 说 17 哥分享团队将开发模式从 "Vibe Coding" 升级为 "Harness 模式" 的实践——代码库为唯一事实源，Agent 自治流转。该实践基于一个实际的大模型评测平台（Side-by-Side 平台），从两个独立仓库（React 前端 + Go 后端）出发，通过 Git Submodule 整合为单仓，并设计了一套由 6 个专业 Sub-Agent 组成的自动化协作流水线。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("如何利用 Harness 一句话交付产品功能"))
+    核心模式
+    深度分析
+      从 Vibe Coding 到 Harness…
+      单仓重构：AI-First 架构的基础设施前提
+      Agent Handoff 协议：分布式协作的…
+      E2E 测试的局限与 Harness 的边界认知
+    实践启示
+    相关实体
+```
+
 ## 核心模式
 
 Harness 模式的三个核心转变：

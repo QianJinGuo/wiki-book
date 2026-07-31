@@ -8,6 +8,19 @@
 
 > **Background**：本文基于 数据STUDIO 公众号对 Python 3.15 beta 1 的实测体验，从开发者实际项目的视角评估了该版本的关键改动：惰性导入、冻结字典与哨兵值、以及进程附加调试等特性。文章以"会不会真的塞进项目里"为排序标准，而非 Release Notes 的顺序。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Python 3.15 Beta 实测：实战视角的技术特…"))
+    核心特性
+      1. lazy import — 惰性导入
+      2. frozendict + sent…
+      3. 进程附加调试（attach to run…
+    实战评估
+```
+
 ## 核心特性
 
 ### 1. `lazy import` — 惰性导入

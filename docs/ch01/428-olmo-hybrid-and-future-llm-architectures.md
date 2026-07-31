@@ -8,6 +8,27 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/olmo-hybrid-and-future-llm-architectures.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Olmo Hybrid and future LLM a…"))
+    Summary
+    Key Points
+      1. Hybrid Architecture:…
+      2. Why Hybrid? Compleme…
+      3. GDN vs. Mamba: The R…
+      4. Pretraining Gains: ~…
+    Deep Analysis
+      The Expressivity Argument
+      The KV-Cache Efficiency…
+      Are Frontier Models Alr…
+      The Distillation Resear…
+    Practical Implications
+    Related Entities
+```
+
 ## Summary
 
 Olmo Hybrid is a 7B hybrid architecture model from AI2 that mixes Gated DeltaNet (GDN) recurrent layers with standard attention layers, achieving roughly 2x training efficiency over the dense Olmo 3 baseline. The release accompanies substantial theoretical work showing that hybrid models are "more than the sum of their parts" — there are formal problems related to code evaluation that neither transformers nor GDN can solve alone, but which hybrid models can represent and learn. However, post-training and open-source tooling remain significant challenges.

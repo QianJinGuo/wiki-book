@@ -8,6 +8,26 @@
 
 > Cognition 推出的 Devin Fusion 是一种新型多模型路由 harness，在 FrontierCode 基准上以 35% 更低成本维持 Fable 5 级性能，核心思路是在不牺牲智能的前提下跨前沿模型智能路由。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Devin Fusion: 多模型路由 Harness …"))
+    核心方法
+      Sidekick 架构：双 Agent 并行
+      Sidekick 解决三大问题
+      动态会话中路由（Dynamic Mid-Ses…
+    深度分析
+      1. 模型路由的'智能保留'悖论
+      2. Sidekick 随模型变强而更优的反直…
+      3. 多模型 Harness 的兴起：单一模型…
+      4. 缓存工程是模型路由的隐藏关键
+    基准表现
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 工程团队在模型成本上"烧钱"已成常态——对所有任务使用最贵模型不可持续，但现有模型混合工具在基准上表现好看，实际编码中却无法产出可合并的代码。Cognition 的 Devin Fusion 通过智能路由解决了这一矛盾：在 FrontierCode Extended 基准上，Fusion + Fable 5 得分 57.6（Fable 5 单独 57.0），但成本从 $5.12 降至 $3.00（降低 35%）。

@@ -6,6 +6,28 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Versa takes aim at fragmente…"))
+    关键数据
+    三项核心更新
+      1. CSPM — 消除双门户问题
+      2. Concerto 13.1.1 — 消除…
+      3. AI Agent 信任与验证框架（202…
+    深度分析
+      网络安全融合的结构性障碍
+      Shadow AI 的安全盲区
+      SASE 市场的整合压力
+    实践启示
+      对安全团队
+      对网络架构团队
+      行业观察
+    相关实体
+```
+
 ## 摘要
 Versa Networks 在 2026 年 5 月为其 VersaONE Universal SASE 平台发布三项协同更新：Cloud Security Posture Management (CSPM) 云安全态势管理、Concerto 13.1.1 编排平台升级，以及将于 5 月 21 日推出的 AI Agent 信任与验证框架。该公司同期发布首届《State of SASE + AI Report》，调查 525 名美国企业 IT 和安全决策者，结果显示 35% 的组织在过去一年因网络与安全团队之间的协调缺口而遭受安全漏洞，99% 将融合列为战略优先级，但仅有 30% 实现落地。
 

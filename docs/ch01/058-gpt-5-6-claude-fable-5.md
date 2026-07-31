@@ -54,6 +54,16 @@ GPT-5.6-Sol被喂进大量技术文档后，在Codex里一路查资料、找方�
 
 ultra模式在15分钟内就烧完Pro会员5小时限额的程度。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5.6一发布，Claude终于舍得重置Fable…"))
+    GPT-5.6正式上线
+    ChatGPT Work登场：把目标变成完成品
+```
+
 ## GPT-5.6正式上线
 
 GPT-5.6家族分三档：

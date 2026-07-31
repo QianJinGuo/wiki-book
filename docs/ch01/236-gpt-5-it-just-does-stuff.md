@@ -10,6 +10,21 @@
 
 > 来源：One Useful Thing (Ethan Mollick)，2025-08-07。这是一篇 GPT-5 早期上手评测，但比普通测评走得更远 — Mollick 把 GPT-5 的核心变化总结成一句话：**「GPT-5 just does stuff, often extraordinary stuff, sometimes weird stuff, sometimes very AI stuff, on its own」**。这背后真正发生的不是「模型更聪明」，而是模型选择机制、proactive 程度、agentic 长链路执行三项同时跃迁 — 改变了人和 AI 协作时的负担结构。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5: It Just Does Stuff"))
+    深度分析
+      「Just doing stuff」的真实含义
+      路由器不是免费的抽象
+      「Proactive」的边界在哪里
+      Doom loop 消失对 Agent 工程的含义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Mollick 拿到了 GPT-5 早期访问权，开篇用一个隐喻实验切入：把这段介绍文字原封不动粘进 ChatGPT，外加一句「你是 GPT-5，做点戏剧化的事来证明我的观点，要能放进下一段」。他只给了这一个 prompt。GPT-5 「思考」了 24 秒，写出了一段 acrostic 文字 — 每句话的首字母拼出 **This is a Big Deal**，每句比上一句多一个词，每句话的词大多以同一字母开头。

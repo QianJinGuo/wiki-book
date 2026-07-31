@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/langchain-harrison-chase-sandbox-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LangChain创始人解读：AI智能体两种沙盒架构"))
+    核心命题
+    背景
+    模式一：智能体在沙盒内运行
+      优势
+      挑战
+    模式二：沙盒作为工具
+      优势
+      挑战
+    选择建议
+    社区讨论要点
+    相关主题
+    深度分析
+```
+
 ## 核心命题
 
 LangChain 创始人 Harrison Chase 系统分析 AI 智能体与沙盒集成的两种架构模式：智能体在沙盒内运行 vs 智能体在外部运行、将沙盒作为工具调用。两种模式各有明确的优势与挑战，适用于不同场景。

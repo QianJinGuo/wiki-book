@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐ | 8.7KB | `entities/microsoft-is-quietly-shopping-for-an-openai-replac.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft is quietly shoppin…"))
+    事件背景
+    Cursor 收购尝试：最具体的退却
+    Inception：正在进行的对话
+    MAI：内部自研路径
+    深层战略逻辑
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 来源：https://thenextweb.com/news/microsoft-startup-deals-life-after-openai
 - 评分：v=8 × c=7 = 56

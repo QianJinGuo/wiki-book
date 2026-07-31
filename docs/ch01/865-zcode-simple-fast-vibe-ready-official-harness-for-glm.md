@@ -8,6 +8,21 @@
 
 > **已评分** | v*c=56 | value=8 | confidence=7 | stars=4
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ZCode - Simple, Fast, Vibe-R…"))
+    深度分析
+      1. GLM-5.2 时代的编程范式转变
+      2. Vibe Coding 理念的工程化落地
+      3. 中国 AI 编程工具竞争格局中的定位
+      4. 对开发工作流的实际影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ZCode 是智谱（Zhipu AI）为 GLM-5.2 推出的官方编程助手（coding harness），提供简洁、快速、适配 Vibe Coding 的开发环境。作为 GLM-5.2 的官方集成开发工具，ZCode 旨在降低 AI 辅助编程的门槛，让开发者通过自然语言描述需求即可生成可运行代码。

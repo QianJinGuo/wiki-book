@@ -8,6 +8,23 @@
 
 由 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab，于 2026 年 7 月 16 日发布自研 AI 模型 Inkling。该模型采用开放权重策略，外部开发者和企业可直接下载并根据需求修改。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Thinking Machines Inkling — …"))
+    技术规格
+    与 Thinking Machines 交互模…
+    深度分析
+      架构设计：DeepSeek-V3 路线的继承与改进
+      训练策略：混合优化与大规模强化学习的结合
+      多模态的原生整合策略
+      开放生态与定制化平台
+    实践启示
+    行业背景
+```
+
 ## 技术规格
 
 - **架构**：混合专家（MoE）Transformer

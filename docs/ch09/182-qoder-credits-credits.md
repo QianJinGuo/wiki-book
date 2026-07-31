@@ -9,6 +9,19 @@
 > 来源：阿里云云原生 (WeChat) | 2026-07-24 | v×c=56
 > 核心观点：AI Coding Agent 的 Credits 优化重点是「验证过的产出 ÷ 花掉的 Credits」，而非单纯减少消耗。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用好 Qoder Credits：优化的不是花费多少，而…"))
+    深度分析
+      单位 Credits 产出的本质
+      上下文管理是最直接的杠杆
+      Harness Engineering 的前置意义
+    关键概念
+```
+
 ## 摘要
 
 Qoder Credits 优化的核心是提升「验证过的产出 ÷ 花掉的 Credits」比率，而非简单压缩总开销。文章提出三大杠杆：上下文与缓存管理（单 Session 单任务、精确指路、趁热追问、避免频繁切模型）、好设计与好验证（目标定义、最小充分测试、Harness Engineering 仓库改造）、模型分工（高级模型做决策→性价比模型做吞吐→测试做裁判）与时间调度（/schedule 夜间执行）。核心原则是「先保证做对，再谈省」。

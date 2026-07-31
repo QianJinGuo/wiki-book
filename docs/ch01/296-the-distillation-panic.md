@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-distillation-panic.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The distillation panic"))
+    深度分析
+      1. 蒸馏技术的本质：行业标准的两种形态
+      2. 'Distillation attack…
+      3. 灰色地带：API 蒸馏的合规现状
+      4. 真正的违规行为：jailbreaking…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Interconnects（Nathan Lambert）的一篇政策评论：**"Distillation attacks" 是一个糟糕的术语**。作者认为 Anthropic 公开点名 3 家中国实验室通过 API 滥用提取模型信号是合理的，但把这种行为统一称作"蒸馏攻击"会**把整个行业标准的蒸馏技术（distillation）污名化**。蒸馏是后训练（post-training）的核心技术之一，几乎所有主流模型——包括 NVIDIA Nemotron、Allen AI Olmo——都以不同形式依赖蒸馏。误用术语可能导致监管过度，伤害西方学术界与小型开源贡献者，最终反噬美国 AI 生态。

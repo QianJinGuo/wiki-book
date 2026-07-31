@@ -10,6 +10,17 @@
 
 [昨天的文章](<https://mp.weixin.qq.com/s?__biz=MzA4NzgzMjA4MQ==&mid=2453486370&idx=1&sn=a14c3dd3cccc067fa915131eaa3752ac&scene=21#wechat_redirect>)介绍了 Anthropic 工程师 Thariq 的 Fable 5 实战指南，核心观点是：**Fable 5 的能力上限，取决于你能发现多少自己还不知道的东西。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fable 5 实战之：五亿 token 暴改我三年前的网站"))
+    核心观点
+    三年前的 AGI Hunt
+    技术洞察
+```
+
 ## 核心观点
 
 > 本文通过article、llm、anthropic视角，分析了的AI/ML技术动态。

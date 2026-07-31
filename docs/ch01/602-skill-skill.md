@@ -10,6 +10,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-microsoft-train-skill-like-neural-network.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("别再手写 Skill 了！微软最新研究：像神经网络一样训…"))
+    深度分析
+      实验结果的全面性
+      优化器学到的规则特征
+      跨模型迁移能力
+      训练成本分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 SkillOpt 将深度学习的训练范式映射到文本空间：Skill 文档是「权重」，Agent 执行任务是「前向传播」，分析失败原因是「梯度计算」，修改文档是「权重更新」。通过这种类比，SkillOpt 实现了 Skill 文档的自动化优化，在 SearchQA、SpreadsheetBench、OfficeQA、DocVQA、LiveMath、ALFWorld 等 6 个基准上全面超越直怼前沿模型的结果。关键设计包括 textual learning rate（每轮最多改 4 条规则）、rejected-edit buffer（失败修改的前车之鉴）和 slow/meta update（跨 epoch 的动量更新）。

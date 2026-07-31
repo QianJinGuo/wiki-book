@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 31.5KB | `entities/claude-code-core-internals.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 源码核心机制详解"))
+    核心设计亮点
+    跨框架对比总结
+    1. System Prompt 动态组装
+      默认 Prompt 写了什么
+      运行时动态注入
+    2. 工具系统
+      并发调度：isConcurrencySafe
+      延迟加载：shouldDefer + Tool…
+      工具结果大小控制
+    3. 仓库目录树感知
+    4. Plan 模式
+    5. Context 压缩管理
+      动态触发阈值
+      五层压缩机制
+    6. Sub-Agent 系统
+      七种执行模式
+      内置 Agent 类型
+```
+
 ## 核心设计亮点
 1. **动态 System Prompt** — 运行时由 `buildEffectiveSystemPrompt` 函数动态组装，包含6层优先级：基础行为契约 → 工具描述（每个工具独立 prompt() 方法） → MCP 指令 → Skill 索引 → 环境信息 → ToolSearch 提示。禁用某个工具后其描述自动从 prompt 消失。动态 System Prompt 组装
 2. **多维度工具调度** — 每个工具声明 `isConcurrencySafe()` 决定是否能并发执行。调度层用 `partitionToolCalls()` 按并发安全性分批，只读工具合并为 `Promise.all` 并发，写操作单独串行。支持延迟加载（`shouldDefer` + `ToolSearch`），通过 `searchHint` 评分匹配。

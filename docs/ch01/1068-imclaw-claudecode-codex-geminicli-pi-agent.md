@@ -6,6 +6,21 @@
 
 # IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("IMClaw：通过微信/飞书操控ClaudeCode/C…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](../ch04/266-karpathy-autoresearch.html)

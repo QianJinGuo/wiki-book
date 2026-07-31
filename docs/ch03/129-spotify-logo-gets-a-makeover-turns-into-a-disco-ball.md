@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Spotify Logo Gets a Makeover…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49

@@ -6,6 +6,28 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-founder-harness-100-lines.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("最新Claude Code创始人：编程已经解决了，Har…"))
+    Summary
+    Key Points
+    相关实体
+    深度分析
+      1. Product Overhang 是创新…
+      2. Loop 机制揭示了 Agent 级联架…
+      3. 全科型团队的实质是专业壁垒的重组
+      4. SaaS 护城河重排揭示了 AI 的真实…
+    实践启示
+      1. 建立「模型能力-产品层」的对标节奏
+      2. 用 Loop 重新设计后台任务拓扑
+      3. 团队评估核心转向「业务理解深度+AI调度…
+      4. 架构设计坚持「最小化产品层」原则
+    关联阅读
+```
+
 ## Summary
 Claude Code创始人关于Harness和编程未来的观点。
 

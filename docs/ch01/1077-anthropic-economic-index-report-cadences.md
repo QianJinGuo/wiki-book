@@ -8,6 +8,20 @@
 
 > **Background**：本文基于 Anthropic 2026 年 6 月发布的 Economic Index 报告。该报告是 Anthropic 持续追踪 AI 经济影响的系列研究，本版聚焦"Cadences"（节奏模式），首次引入小时级采样、会话产出分类器和 Economic Index Survey 三项方法论升级。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Economic Index rep…"))
+    方法论升级
+    Chapter 1：外部世界节奏对 AI 使用…
+    Chapter 2：会话产出分析
+    Chapter 3：用户预期调查（首次发布）
+    核心洞察
+    相关主题
+```
+
 ## 方法论升级
 
 本版 Economic Index 有三项关键改进：

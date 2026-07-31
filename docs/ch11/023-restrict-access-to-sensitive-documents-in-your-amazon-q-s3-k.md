@@ -4,6 +4,36 @@
 
 > 📊 Level ⭐⭐ | 18.7KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-q-s3-knowledge-bases.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Restrict Access to Sensitive…"))
+    概述
+    核心机制：ACL 评估在查询时而非索引时
+    两种 ACL 配置方法
+      Global ACL 文件
+      Document-level Metadata…
+    IAM Policy Assignments …
+      绕过风险与防护
+    QuickSight Flows 与 ACL …
+    关键工程约束
+      1. 不可逆性
+      2. 身份匹配规则
+      3. ACL 文件本身的写权限管控
+      4. 同步延迟
+    部署最佳实践
+      分层防护策略
+      配置验证流程
+      变更管理
+    深度分析
+      查询时评估将权限控制从'配置时'转化为'访问时'
+      Deny-by-default 是企业级 RA…
+      Global ACL vs Metadata …
+      IAM Policy Assignment 与…
+```
+
 ## 概述
 
 ```mermaid

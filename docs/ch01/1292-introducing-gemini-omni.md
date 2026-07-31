@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐⭐ | 7.1KB | `entities/introducing-gemini-omni.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Gemini Omni"))
+    深度分析
+      Gemini Omni 的架构定位
+      '对话式视频编辑'的产品范式创新
+      多输入融合的技术挑战
+      SynthID 水印的负责任 AI 价值
+    实践启示
+      对 AI/ML 研究者
+      对产品 / 设计师
+      对开发者
+      对负责任 AI 关注者
+    相关实体
+```
+
 ## 核心要点
 - Gemini Omni Flash 是 Google DeepMind 的多模态模型，能处理视频、音频、文本、图片任意组合输入
 - 视频对话编辑（Veo 3）、实时语音对话（Gemini 2.5 Flash）、Canvas 文生图深度集成

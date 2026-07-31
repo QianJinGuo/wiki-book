@@ -12,6 +12,17 @@ Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎
 整期播客 35 分钟，主持人是 Peter Yang，嘉宾是 Alex Albert。
 前 Claude Relations 负责人
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 最新播客：如何打造下一代 Claude"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Opus 47](ch01/976-claude.html)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)

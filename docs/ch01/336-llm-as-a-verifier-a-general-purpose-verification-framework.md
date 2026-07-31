@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/llm-as-a-verifierageneral-purposeverific.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLM-as-a-Verifier: A General…"))
+    背景与动机
+      标准 LLM-as-a-Judge 的平局困境
+    方法论
+      三大扩展维度
+      轨迹选择的轮询赛制
+      Prompt 设计要点
+    实验结果
+      主要性能指标
+      即插即用效果
+      扩展规律
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 提出 LLM-as-a-Verifier 框架，通过三大维度提升验证精度：评分粒度扩展（G）、重复验证（K）、标准分解（C）
 - 在 Terminal-Bench 2.0 达到 86.4% 准确率（下游任务成功率），SWE-Bench Verified 达 77.8%

@@ -11,6 +11,17 @@
 **会议：** ACL 2026 Recommended Oral
 **arXiv：** 2511.18850v3
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cognitive Alpha Mining via L…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch01/665-llm-wiki-obsidian-wiki-gbrain.html)

@@ -12,6 +12,17 @@
 但凡跑过稍微长一点的 AI 编程任务，大概都能体会那种烦：活儿没干完，Agent 先停了；人回来补一句"继续"，它又得从头热身一遍。
 周末我把 Jarrod Watts 那条长帖、他开源的 long-running-agent-skill、OpenAI /goal 的官方文档，以及 Anthropic 最近两篇 long-running agent 和 context engineering 的文章串着翻了一遍。读完之后，脑子里最先冒出来的不是某个新功能，而是我们近期一直在聊的那条线：Harness、上下文工作集、上下文操作，再到 Martin Fowler 那篇反复讲的"非确定性怎么进研发链路"。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("长周期-agent-详解-从-ralph-loop-到可…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html)
 - [Long Running Agent Ralph Loop Handover Harness Ruofei](../ch05/009-harness.html)

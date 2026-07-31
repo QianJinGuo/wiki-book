@@ -10,6 +10,21 @@ CrewAI 创始人提出的 Agent 安全建设顺序论：企业普遍先建安全
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/youre-building-agent-security-in-the-wrong-order.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("You're building agent securi…"))
+    深度分析
+      1. '值得安全保护的东西'——Agent 安…
+      2. Harness Engineering …
+      3. 预算驱动 vs 问题驱动的建设顺序错位
+      4. Governance 作为架构而非合规
+    实践启示
+      相关实体
+```
+
 ## 摘要
 
 这篇文章直击 Agent 安全建设中的核心矛盾：**安全是企业的预算入口（buying gate），但安全层所保护的东西——Agent 本身——还没有可靠运行。** 财富 500 强公司花了三个月实施完整的企业级 Agent IAM，拥有"漂亮的合规文档"，但接入 Agent 后发现 Harness 不存在。这不是能力问题，而是排序问题。

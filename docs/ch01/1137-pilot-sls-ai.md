@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("龙套件 Pilot SLS AI 编程指标实践"))
+    深度分析
+      核心观点
+    引子：Coding 变快了，组织为什么没跟上？
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Loongsuite Pilot Sls Ai Coding Metrics Practice 涉及agent领域的核心技术议题。

@@ -6,6 +6,21 @@
 
 # CoDA-Bench：Code Agent 数据智能基准
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CoDA-Bench：Code Agent 数据智能基准"))
+    深度分析
+      被基准设计隐藏的'数据发现'缺口
+      Kaggle 生态驱动的干扰设计哲学
+      Code Intelligence 与 Dat…
+      对 Code Agent 生产部署的启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 CoDA-Bench 是中国人民大学研究团队提出的 Code Agent 联合评估基准，首次同时评测 Code Agent 的 Code Intelligence（代码分析能力）与 Data Intelligence（数据发现能力）。该基准将 Agent 置于包含 1000+ 数据文件的复杂数据目录中，只给一句自然语言问题，不提供文件名、路径或 schema，要求 Agent 自主探索文件系统找到相关数据后再编写代码完成分析。实验发现，当前最佳系统在 CoDA-Bench 上执行准确率仅 61.1%，在更难的 CoDA-HARD 子集上最高为 49.6%，揭示了当前 Code Agent 的真实瓶颈不是"不会写代码"，而是"找不对数据"。

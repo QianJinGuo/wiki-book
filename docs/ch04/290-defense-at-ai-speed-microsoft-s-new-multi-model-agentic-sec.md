@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 9.3KB | `entities/defense_at_ai_speed_microsofts_new_multi.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Defense at AI speed: Microso…"))
+    深度分析
+      背景：从 DARPA AI Cyber Cha…
+      MDASH 架构：多模型 Agentic Pi…
+      两类典型漏洞的单模型盲区分析
+      基准测试结果与局限
+    实践启示
+      对安全团队
+      对 AI/ML 工程师
+      对企业安全战略
+    相关实体
+```
+
 ## 核心要点
 - Microsoft 发布 **MDASH**（Microsoft Security multi-model agentic scanning harness），一个编排 100+ specialized AI agents 的多模型漏洞发现系统 
 - 在 StorageDrive 测试驱动（21 个植入漏洞）中实现 **21/21 发现、零假阳性**；在 CyberGym 公开基准（1,507 真实漏洞）上达到 **88.45%**，排名第一 

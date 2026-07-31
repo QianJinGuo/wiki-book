@@ -6,6 +6,32 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/日志别再print了深入对比python三大日志方案.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("日志别再print了！深入对比Python三大日志方案"))
+    标准库 logging：什么都能做，但什么都不好做
+    Loguru：开发者体验的极致
+      零配置起步
+      文件轮转，一行搞定
+      异常处理，优雅得不像话
+      上下文绑定，告别参数传递
+    Logfire：面向可观测性的新一代方案
+    实战对比：三个场景，三种选择
+      场景1：一个简单的 cron 脚本
+      场景2：一个高并发的 API 网关
+      场景3：一个金融级交易系统
+    迁移指南：从 logging 到 Loguru
+      1. 替换调用
+      2. 桥接第三方库
+      3. 逐步替换
+    避坑指南
+    核心回顾
+    深度分析
+```
+
 ## 标准库 logging：什么都能做，但什么都不好做
 标准库 logging 是 Python 自带的"瑞士军刀"。先看一段最典型的配置代码：
 ```python

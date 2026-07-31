@@ -9,6 +9,21 @@
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=64 stars=4 通过评分门槛。
 > URL: https://z.ai/blog/glm-5.2
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GLM-5.2: Built for Long-Hori…"))
+    评估理由
+    第二来源：HuggingFace Model …
+    第 5 来源 — 华为云部署与昇腾优化
+    相关
+    Interconnects 分析视角（Nath…
+      为什么是'step change'
+      与闭源模型的竞争定位
+```
+
 ## 核心要点
 
 Markdown Content:

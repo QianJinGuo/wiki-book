@@ -8,6 +8,22 @@
 
 Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 是一个 2026-06 推出的特性，自动 refine blueprint extraction instructions 来提升 IDP 流水线的精度。开发者只需要提供 3-10 个 example 文档 + ground truth，BDA 在数分钟内完成 instruction 优化（无需 model fine-tuning）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Optimize blueprint extractio…"))
+    核心机制
+    工作流（从 schema 优化到 produc…
+    实际 schema 示例（Purchase O…
+    与现有 IDP 方案对比
+    实践要点
+    与现有 wiki 实体的关联
+    原文链接
+    深度分析
+```
+
 ## 核心机制
 
 ```mermaid

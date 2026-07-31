@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baixing-ontoz-enterprise-ontology-xinzhiyuan.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("百型智能 OntoZ：企业本体论 + 群智能体协同体系，…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 百型智能 OntoZ：企业本体论 + 群智能体协同体系，新一代企业级 AI 基础设施 涉及agent领域的核心技术议题。

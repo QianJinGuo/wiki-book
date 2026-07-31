@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/b2b-email-marketing-what-still-works.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("B2B Email Marketing: What St…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 B2B Email Marketing 在 2026 年依然是最高价值的营销渠道之一，但策略重心已发生显著转移。这篇 Exit Five Live 活动预告揭示了几个关键行业动态：
 **1. 邮件营销的核心价值未被动摇**

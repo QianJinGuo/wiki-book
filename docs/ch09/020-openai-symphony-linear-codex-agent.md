@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 17.9KB | `entities/openai-symphony-codex-orchestration-linear-control-plane.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI Symphony：Linear 即 Cod…"))
+    核心论点
+    背景：从「agent 写代码」到「管理一群 a…
+    核心机制：把 Linear 变成 Agent …
+      一、Issue ↔ Agent Workspa…
+      二、抽象层：Ticket 承载更大的工作单元
+      三、Agent 也能创造新工作
+    产出与组织变化
+      500% PR 增长（前三周）
+      PM / 设计师直接参与
+      PR 护送到 Merging 状态
+    边界与设计教训
+      不适合所有任务
+      不要把 agent 当成状态机里的死板节点
+    技术底座
+      极简仓库结构
+      Codex App Server（headle…
+    普通团队的落地建议
+    与本 Wiki 其他编排方案的关系
+```
+
 ## 核心论点
 
 Symphony 是 OpenAI 在 2026-06 前后开源的 **Codex 编排规范**：把 **Linear 这种任务管理系统**变成 **coding agent 的控制平面**，让每一个开放任务都自动对应到一个独立 agent workspace，**从「人盯 session 干活」范式跃迁到「任务系统驱动 agent 干活」**。

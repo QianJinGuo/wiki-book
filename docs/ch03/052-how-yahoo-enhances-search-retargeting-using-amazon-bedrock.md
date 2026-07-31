@@ -8,6 +8,16 @@
 
 > **Background**: Based on the AWS ML Blog article describing Yahoo's implementation of Amazon Bedrock to enhance Search Retargeting (SRT) capabilities in their omnichannel Demand-Side Platform (DSP).
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Yahoo enhances search re…"))
+    Business Context
+    Technical Implementation
+```
+
 ## Business Context
 
 Yahoo's omnichannel DSP enables advertisers to purchase ad inventory across multiple exchanges and channels through a single interface. Search Retargeting (SRT) is a core audience targeting solution that helps advertisers reach users based on their historical search behavior, bridging search intent with display, video, and native advertising.

@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/localmaxxing.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Localmaxxing：局部最优陷阱"))
+    Summary
+    深度分析
+      本地模型的实用边界
+      延迟：本地模型的唯一真正优势
+      质量差异的感知阈值
+      Token 效率：被低估的优势
+    实践启示
+    相关实体
+```
+
 ## Summary
 > Score: 7×8=56
 作者五周的实践结论：在日常工作中，有约 50% 的任务可以完全由本地 35B 模型完成而无需调用云端大参数模型。在 1478 个任务中，Email & Inbound、Scheduling、Summarization、Admin 四类占 41.8%；Engineering 和 Market Research 各约 10%，各有一半属于简单任务。延迟是选择本地模型的唯一真正理由：Qwen 3.6 35B-A3B-4bit 在 MacBook Pro M5 上平均响应 2.8 秒，比 Opus 4.5 云端快 2.1 倍 。

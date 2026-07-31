@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/xero-announces-integration-with-anthropics-claude.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Xero Announces Integration w…"))
+    集成功能
+    核心价值主张
+    公司背景
+    产品功能
+    合作伙伴关系背景
+    深度分析
+      战略意义
+      双向集成的深层价值
+      竞争格局影响
+      数据安全与隐私考量
+    实践启示
+      对小企业主的建议
+      对 fintech 从业者的启示
+      对投资人的参考
+    相关公司
+```
+
 ## 核心要点
 - 小企业管理和会计平台 **Xero** 宣布与 Anthropic 的 AI 助手 Claude 达成实时集成（live integration）
 - 该集成紧随 Xero 于 2026 年 3 月宣布的多年合作伙伴关系，是双方合作的首次落地实现 

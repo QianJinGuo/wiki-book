@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/aws-bedrock-agentcore-doris-mcp-server.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Doris MCP on AgentCore Runti…"))
+    核心内容
+    三个关键洞察
+      1. MCP协议作为Agent数据接口
+      2. VPC native的安全价值
+      3. $0.3/天的经济学
+    与知识库的连接
+    深度分析
+      1. 懒初始化的'无服务器+有状态'架构哲学
+      2. '重工具'与'轻代理'的边界划定
+      3. JWT 本地验证的免回调机制
+      4. S3 直传的部署范式
+    实践启示
+      1. 为 MCP Server 选择长连接友好…
+      2. 将 OAuth 认证配置脚本化
+      3. 生产级部署务必配置 VPC + 安全组隔离
+      4. 一键部署配置应成为标准实践
+    架构图
+    相关实体
+```
+
 ## 核心内容
 Apache Doris通过MCP协议部署在Amazon Bedrock AgentCore Runtime上，实现VPC内原生运行、Cognito OAuth认证、按需付费（$0.3/天）。Agent可直接通过MCP调用Doris执行SQL分析，无需数据迁移。
 

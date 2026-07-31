@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 17.1KB | `entities/ruofei-personal-ai-workbench-18-actions.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Personal AI 工作台：Claude 18 动作框架"))
+    核心立场
+    六层工作台结构
+    18 个动作映射到六层
+      工作区（边界）
+      身份
+      行为契约
+      任务入口
+    关键设计原则
+      Project 是边界，不是万能记忆
+      Custom Instructions = 行…
+      流程卡片 = 过程资产，而非一次性提示词
+      上下文隔离：新话题开新 chat
+    与 Harness 工程化的对应关系
+    最小可行版本
+    边界注意事项
+    深度分析
+      框架定位：Personal Harness 的…
+      18 个动作的设计逻辑
+      与官方框架的缺口
+      核心洞察评估
+```
+
 ## 核心立场
 > Claude 用得好不好，越来越像一个**环境工程问题**，而非提示词技巧问题。
 核心论点：给 Claude 一个稳定的工作现场（Personal Harness），比优化单次提示词更有复利价值。   ^[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]

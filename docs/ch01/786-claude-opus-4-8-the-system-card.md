@@ -6,6 +6,16 @@
 
 # Claude Opus 4.8: The System Card
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Opus 4.8: The System …"))
+    深度分析
+    相关实体
+```
+
 ## 深度分析
 
 Published Time: 2026-05-29T20:50:28+00:00

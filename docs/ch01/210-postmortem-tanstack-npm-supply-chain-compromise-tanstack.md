@@ -7,6 +7,42 @@
 # "Postmortem: TanStack npm supply-chain compromise | TanStack Blog"
 URL Source: https://tanstack.com/blog/npm-supply-chain-compromise-postmortem
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Postmortem: TanStack npm sup…"))
+    TL;DR
+    Impact
+      Packages affected
+      What the malware does
+    Timeline
+      Pre-attack cache poiso…
+      Detonation publish pha…
+      Detection and response
+    Root cause
+      1. pull_request_target …
+      2. GitHub Actions cache…
+      3. OIDC token extractio…
+      Why none alone is enough
+    Detection
+      How we found out
+      IOC fingerprints for d…
+    深度分析
+      攻击链的工程复杂度
+      信任边界的三重穿越
+      OIDC Trusted Publisher …
+      自传播 payload 的想象空间
+    实践启示
+      对开源维护者的建议
+      对安全团队的建议
+    Lessons learned
+      What went well
+      What could have been be…
+      What we got lucky on
+```
+
 ## TL;DR
 On 2026-05-11 between 19:20 and 19:26 UTC, an attacker published 84 malicious versions across 42 @tanstack/* npm packages by combining: the pull_request_target "Pwn Request" pattern, GitHub Actions cache poisoning across the fork↔base trust boundary, and runtime memory extraction of an OIDC token from the GitHub Actions runner process. No npm tokens were stolen and the npm publish workflow itself was not compromised.
 The malicious versions were detected publicly within 20 minutes by an external researcher ashishkurmi working for stepsecurity. All affected versions have been deprecated; npm security has been engaged to pull tarballs from the registry. We have no evidence of npm credentials being stolen, but we strongly recommend that anyone who installed an affected version on 2026-05-11 rotate AWS, GCP, Kubernetes, Vault, GitHub, npm, and SSH credentials reachable from the install host.

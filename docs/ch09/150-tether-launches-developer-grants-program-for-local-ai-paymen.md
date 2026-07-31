@@ -8,6 +8,21 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-ai-paymen.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tether launches developer gr…"))
+    深度分析
+      QVAC：Tether 的平台锁定战略
+      端侧 AI 的可行性验证
+      自托管支付：绕过传统金融基础设施
+      与去中心化 AI 叙事的交叉
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Tether 于 2026 年 5 月 11 日推出开发者资助计划，为基于 QVAC 平台构建端侧 AI 推理工具和自托管支付基础设施的开源项目提供每项 $1,500–$4,000 的资助，以 USDT 或比特币支付，无总额上限。这是 Tether 从稳定币发行商向去中心化基础设施平台转型的关键一步。

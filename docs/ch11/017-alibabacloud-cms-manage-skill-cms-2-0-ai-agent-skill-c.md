@@ -10,6 +10,29 @@
 
 阿里云云原生团队 2026-06-07 发布 **`alibabacloud-cms-manage` Skill**——基于 Claude Code 的 AI Agent Skill 化方案，**将 6 步 CLI 接入流程封装为开箱即用的 Skill**，让用户用**一句自然语言**即可让 AI Agent 自动编排 CLI 命令完成可观测接入。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("alibabacloud-cms-manage Skil…"))
+    核心定位
+    CMS 2.0 + aliyun cms2 C…
+    6 步 CLI 接入流程
+    alibabacloud-cms-manage…
+      Skill 链接
+      工作机制
+      安全机制：两阶段确认协议
+    K8s 自动接入演示：LangChain 应用…
+      场景设定
+      ack-onepilot 机制
+      完整交互过程
+      自动化覆盖的 8 个步骤
+    与现有实体差异化
+    相关主题
+    深度分析
+```
+
 ## 核心定位
 
 ```mermaid

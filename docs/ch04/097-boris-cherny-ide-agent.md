@@ -5,6 +5,28 @@
 > 📊 Level ⭐⭐ | 16.9KB | `entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md`
 
 # Boris Cherny 新访谈：IDE → Agent 控制台
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Boris Cherny 新访谈：开发工具正在从 IDE…"))
+    核心观点
+    产品悬置：能力溢出后产品形态才成立
+    Claude Code 的成长路径
+    深度分析
+      从输入预测到自主代理的根本转变
+      Agent Loop：从'一次 prompt …
+      代码生成变便宜，但软件工程没有变简单
+      SaaS 从前台入口退到 Agent 后台能力层
+    实践启示
+      1. 以 Loop 而非会话为粒度设计工作流
+      2. 重新定义开发工具的度量指标
+      3. 构建 Skills 和 Runbooks…
+      4. 渐进式引入 Agent 进入工程链路
+    相关实体
+```
+
 ## 核心观点
 Boris Cherny（Anthropic Claude Code 负责人）在 Sequoia AI Ascent 2026 访谈中，系统性地阐述了开发工具的范式转变：从 IDE（人类在画布上操作）到 Agent 控制台（AI 是主要执行者，人是审阅者和方向设定者）。这不仅是 Claude Code 一家的产品变化，而是软件工程控制点的一次整体迁移。
 

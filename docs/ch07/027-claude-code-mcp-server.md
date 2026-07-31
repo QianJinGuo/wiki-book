@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-mcp-server.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code MCP Server"))
+    核心洞察
+    MCP 实现机制
+      配置与连接
+      API 两个位置
+      执行流程：真正的 RPC 调用
+    深度分析
+      MCP 祛魅：很多场景下一条 Bash 就够了
+      MCP 真正不可替代的场景
+      MCP Server 的 instructio…
+    实践启示
+    相关实体
+```
+
 ## 核心洞察
 **MCP（Model Context Protocol）是 Anthropic 提出的开放协议，让 Claude Code 能调用外部服务提供的工具。它是 `tool_use` 最直接的应用——模型触发后，客户端向外部 MCP Server 进程发起 RPC 调用，拿到真实结果。**
 MCP 在 Claude Code 中占据两个 API 位置：`tools[]` 注册工具 + `system` 动态区域注入 Server 级 instructions。这是 Claude Code 四个被分析框架（Codex、OpenCode、Gemini-CLI）中**唯一对 MCP 有完整原生实现**的。

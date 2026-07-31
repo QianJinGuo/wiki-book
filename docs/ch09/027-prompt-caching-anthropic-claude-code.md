@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/anthropic-prompt-caching-claude-code.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Prompt Caching 工程实践 — Anthro…"))
+    核心约束：Prompt Caching = 前…
+    9条工程经验
+      1. 缓存即基建
+      2. 排好队形（Prompt 排列优先级）
+      3. 别动 Prompt
+      4. 别换模型
+    深度分析
+      从优化手段到架构约束的范式转移
+      不可变性设计是缓存友好的本质
+      分层缓存失效与灾难链
+      子 Agent 架构与缓存隔离
+    实践启示
+      1. 从第一天起就把缓存策略写进架构设计文档
+      2. 强制排序所有结构化数据的序列化
+      3. 用 system-reminder…
+      4. 模型切换前先做缓存 ROI 计算
+    相关实体
+```
+
 ## 核心约束：Prompt Caching = 前缀匹配
 API 缓存从请求开头到每个 `cache_control` 断点之间的所有内容。只要下次请求的前缀跟上次一样，就能复用计算结果。
 Claude Code 是长对话 Agent，用户在一个 session 里聊几十轮，每轮都带完整上下文重新发请求。没有缓存，延迟和成本都会爆炸。

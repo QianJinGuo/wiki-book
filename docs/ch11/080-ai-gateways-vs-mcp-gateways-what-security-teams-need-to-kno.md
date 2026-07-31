@@ -6,6 +6,24 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Gateways vs MCP Gateways:…"))
+    关键要点
+    深度分析
+      一、架构定位的本质差异
+      二、「可见」不等于「可控」
+      三、会话级行为上下文是真正的安全缺口
+      四、规则引擎的局限性被低估
+    实践启示
+      针对安全团队的建议
+      针对安全架构的长期规划
+    关联阅读
+```
+
 ## 摘要
 
 ```mermaid

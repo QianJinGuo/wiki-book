@@ -8,6 +8,19 @@
 
 > InfoQ 对话观测云 CEO 蒋烁淼，讨论 Agent 爆发后可观测性如何从后台工具变为系统中央基础设施。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 时代可观测性：ABA、统一上下文与 Guan…"))
+    核心转变
+    ABA（Agent Behavior Anal…
+    可观测平台 = 系统的统一上下文平台
+    三层能力架构
+    Builder 角色
+```
+
 ## 核心转变
 
 Gartner 预警到 2028 年公民开发者采用 Prompt-to-App 可能使软件缺陷增加 2500%。Vibe Coding 批量生产的"日抛型软件"在传统运维架构下是灾难。

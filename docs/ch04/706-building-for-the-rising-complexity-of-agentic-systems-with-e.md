@@ -4,6 +4,37 @@
 
 > 📊 Level ⭐⭐⭐ | 14.0KB | `entities/nvidia-agentic-systems-extreme-co-design.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building for the Rising Comp…"))
+    概述
+    从 Chatbot 到 Agent 的演进
+      三种 AI 交互模式（按复杂度排序）
+    Agentic 架构特性
+      Primary / Sub-Agent 架构
+      真实 Trace：Claude Code 33…
+      Prompt Caching：系统级挑战
+    核心性能挑战：延迟与吞吐的根本矛盾
+    Extreme Co-Design：NVIDI…
+      硬件架构全景
+      软件优化层
+      关键设计原则
+    深度分析
+      1. Agentic 工作负载重新定义 AI …
+      2. 上下文带宽成为新型 I/O 瓶颈
+      3. Prompt Caching 的高命中率…
+      4. 延迟、吞吐、上下文长度构成不可能三角，硬…
+    实践启示
+      1. 将 Prompt Caching 作为系…
+      2. 使用 Disaggregated Ser…
+      3. 在 Multi-Agent 架构中建立基…
+      4. 重新定义 AI 基础设施团队的容量规划维度
+    行业观点与争议
+```
+
 ## 概述
 
 NVIDIA 2026 年技术博客指出，生成式 AI 的第一章由「人类发请求、模型作响应」定义，第二章——**agentic 时代**——的本质截然不同：Agent 调用工具、生成子代理、在记忆中保留信息、管理自身上下文窗口，并自行判断任务完成时机。这种转变将 token 消耗量、上下文长度和延迟一并推向极高需求区域。

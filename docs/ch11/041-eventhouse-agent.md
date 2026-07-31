@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 13.6KB | `entities/alibaba-eventhouse-enterprise-agent-context.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里云 EventHouse 企业级 Agent 上下文…"))
+    为什么 AI Coding 先跑通，行业 Ag…
+    五维框架详解
+      维度一：信息完备性——让 Agent 看见真实…
+      维度二：统一 Catalog——信息的'图书馆…
+      维度三：知识对账（Knowledge Wiki…
+      维度四：变更治理——CI/CD 思维管 Age…
+    核心判断与行业意义
+    深度分析
+    实践启示
+    相关概念
+    相关实体
+```
+
 ## 为什么 AI Coding 先跑通，行业 Agent 落地难
 
 ```mermaid

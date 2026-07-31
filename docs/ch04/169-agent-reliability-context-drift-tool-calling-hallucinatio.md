@@ -4,6 +4,36 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/agent-reliability-context-drift-tool-hallucination.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Reliability: Context D…"))
+    核心问题
+    一、上下文漂移
+      根因：注意力机制
+      三种漂移模式
+      检测信号
+      解法分层
+    二、工具调用幻觉
+      根因：概率生成
+      三种幻觉类型
+      对应解法
+      三段式校验
+    与 vault 知识关联
+    相关实体
+    深度分析
+      上下文漂移的注意力机制深层根因
+      工具调用幻觉的概率生成本质
+      Context Drift 与 Tool Ha…
+    实践启示
+      工程层面：上下文漂移的防御体系
+      工程层面：工具调用幻觉的校验体系
+      Agent Harness 层的职责整合
+      面试回答框架
+```
+
 ## 核心问题
 Agent 运行多轮后可靠性的两个核心问题：
 1. **上下文漂移**（Context Drift）：Agent 执行方向偏离原始目标

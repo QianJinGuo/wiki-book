@@ -4,6 +4,37 @@
 
 > 📊 Level ⭐⭐⭐ | 10.0KB | `entities/deepseek-visual-primitives.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek Visual Primitives：视…"))
+    核心定位
+    核心概念：Reference Gap
+      Perception Gap vs Refer…
+      '看见' vs '看清楚' vs '说清楚指哪个'
+      Point 为什么比框更适合拓扑推理
+    关键技术数据
+      压缩效率
+      压缩链路（三步）
+      拓扑推理领先幅度
+    5阶段训练管线
+      专家化设计
+      三层 RL 奖励
+      OPD 蒸馏
+    数据设计亮点
+      Anti-cheap 思维
+      多语言零-shot
+    局限
+    对 coding agent 的意义
+    深度分析
+      1. Reference Gap 是比 Per…
+      2. 视觉原语将 grounding 从验证工…
+      3. 7056 倍压缩效率重新定义多模态 LL…
+      4. 拓扑推理是所有 frontier 模型共…
+```
+
 ## 核心定位
 DeepSeek 2026-04-30 发布的视觉原语论文。核心创新：让模型在思考过程中输出坐标（bounding box / point）作为"用手指着图说话"的媒介，把 grounding 从 post-hoc verification 变成 intrinsic medium of thought。 ^["raw/articles/deepseek-visual-primitives-thinking"]
 

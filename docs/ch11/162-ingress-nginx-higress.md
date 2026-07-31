@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/higress-cncf-sandbox-ingress-nginx-replacement.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ingress-nginx已退役higress如何平滑替代"))
+    事件概述
+    深度分析
+      Gateway API 三层资源模型与阿里云 …
+      为什么需要替代Ingress Nginx
+      AI原生网关的战略价值
+      CNCF Sandbox的战略意义
+    实践启示
+    相关实体
+```
+
 ## 事件概述
 
 ```mermaid

@@ -10,6 +10,22 @@
 
 阿里云泊予（2026-06-05）基于 6 个业务 Agent 评测实战，提出"用强 Agent 搭建评测 Harness"的工程范式：将评测逻辑从 Python 脚本（test_runner.py / report_generator.py）升级为 Agent 提示词（评测 Agent System Prompt）+ 三层指标框架 + system.question 数据列规范，单 Agent 评测全流程从 ~1.5 周压缩到 ~1-2 天。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 工程搭建式业务 Agent 评测方案：C…"))
+    核心洞察
+    三层指标框架（L1 / L2 / L3）
+    Harness 五步搭建法
+    与传统评测工程的对照
+    加速比（6 个 Agent 实战数据）
+    评测 Agent 调被测 Agent 的 4 …
+    评测集设计四原则
+    LLM-as-Judge Rubric 设计心得
+```
+
 ## 核心洞察
 
 - **范式转变**：传统评测是"人写评测代码 → 跑脚本 → 人看结果 → 人改代码"（周级启动，天级迭代）；Harness 式是"CC 搭建 Harness → 平台跑批 → CC 分析 → CC 调整 Harness"（天级启动，小时级迭代）。 

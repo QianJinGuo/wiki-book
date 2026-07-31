@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 12.3KB | `entities/problem-with-mathematically-proven-claims-about-llms.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Problem with Mathematically …"))
+    概述
+    三类被误用的「数学证明」
+      1. AI 不能自我改进——Zenil 论文的…
+      2. 幻觉不可避免——定义过于宽泛
+      3. 数学天花板——Hartmanis-Ste…
+    共同论证模式
+    为什么这类论证持续出现
+    深度分析
+    实践启示
+    相关实体
+    核心教训
+```
+
 ## 概述
 
 John Allsopp 在 Web Directions 博客发表文章，系统性批判了近年来三波被广泛引用的「数学证明 LLM 局限性」声明。他指出这些论证存在共同的逻辑缺陷：**取最大版本声明 → 证明 → 推广时丢弃假设 → 修饰性语言包装**。这三波主张分别涉及 AI 自我改进的不可能性、幻觉的不可避免性、以及 LLM 的计算天花板。

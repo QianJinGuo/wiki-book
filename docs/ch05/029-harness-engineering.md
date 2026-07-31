@@ -43,6 +43,22 @@ graph TB
 
 # 万字干货！Harness Engineering如何工程化落地？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("万字干货！Harness Engineering如何工程…"))
+    核心结论
+    六大核心概念
+    Rule（软约束工程规矩）
+    Skill（标准操作手册）
+    Sub Agent（多角色分工）
+    Workflow（接力赛规则）
+    Scripts（最硬门禁）
+    MCP（外接能力接口）
+```
+
 ## 核心结论
 
 - Harness Engineering = Rule + Skill + Sub Agent + Workflow + Scripts + MCP 六层串联

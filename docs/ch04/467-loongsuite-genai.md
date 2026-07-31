@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/loongsuite-genai-semconv.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LoongSuite GenAI 可观测语义规范"))
+    核心贡献
+      Entry/Step Span 架构
+      Skill 语义
+      Token 级推理观测
+      GenAI Utils
+    深度分析
+      为什么现有 OTel SemConv 不足以支…
+      Skill 作为独立观测粒度的意义
+      Token 级可观测的工程挑战
+      LoongSuite 定位：厂商增强还是上游标准
+    实践启示
+      对于 Agent 框架开发者
+      对于可观测平台团队
+      对于推理引擎团队
+      对于规范制定者
+    关联实体
+    相关实体
+```
+
 ## 核心贡献
 ### Entry/Step Span 架构
 解决 Agent 长程任务 Trace 冗长问题：Entry Span 还原原始输入，Step Span 逐轮展开 ReAct 循环。已落地 OpenClaw、QwenPaw、Hermes Agent。

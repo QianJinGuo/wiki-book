@@ -9,6 +9,32 @@
 > [!summary] 核心洞察
 > MiniMax M3 是国内首个同时具备 Coding Frontier + 1M 上下文 + 原生多模态的开源模型。三大技术主线：MSA 稀疏注意力解决百万 token 可用化、原生多模态统一 token 空间、交互式用户模拟器实现从单轮代码生成到长期协作的训练范式变化。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MiniMax M3 开源 Frontier 模型"))
+    三件套能力
+    MSA：MiniMax Sparse Atte…
+      MSA 三个关键词
+      性能数据
+      稀疏路线对比
+    原生多模态
+    交互式用户模拟器训练
+      范式变化
+      FP8 GEMM 自主优化案例
+      PostTrainBench：自主训练模型
+    MiniMax Code 与定价
+    评估成绩
+    深度分析
+      1. MSA 工程化突破的意义
+      2. 原生多模态对 Coding Agent …
+      3. 交互式用户模拟器的范式价值
+      4. 三件套协同效应的系统设计视角
+    实践启示
+```
+
 ## 三件套能力
 
 | 能力 | 说明 | 意义 |

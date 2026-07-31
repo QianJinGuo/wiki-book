@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-missing-layer-in-agentic-systems.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A Missing Layer in Agentic S…"))
+    深度分析
+      90/10 法则的架构意义
+      Human-in-the-loop vs Hu…
+      装饰器模式的工程效率
+      监管驱动的采纳时间线
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 CrewAI 创始人提出 Agentic 系统需要第三层——Human-in-the-Loop (HITL) 层。在确定性骨架（Flows）和智能推理（Agent/Crews）之外，HITL 不是对 Agent 能力不足的妥协，而是扩大可部署用例范围的关键架构。通过 90/10 法则（90% 自动化、10% 人类增强），系统能覆盖 99.9% 准确率要求、合规签批、人性化输出等用例——这些在纯自主架构下会永远卡在试点阶段。AB InBev 每年 2000 万工单的实践证明：30% 完全自主 + 70% 人机协作 = 2800 万美元单用例价值。

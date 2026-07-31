@@ -8,6 +8,22 @@
 
 Amazon Bedrock AgentCore Memory 的元数据过滤机制（metadata filtering）在命名空间隔离基础上叠加了细粒度属性过滤，使 Agent 从语义相似的噪声中精确检索所需信息。实测将长时记忆问答准确率从 40% 提升至 64%，对上下文依赖型问题（时间范围、优先级、部门）的准确率从 16% 提升至 69%。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Structured Memory Filtering …"))
+    核心机制
+      命名空间 + 元数据双层架构
+      元数据生命周期
+    实测效果
+    应用场景
+      多 Agent 架构
+      多租户系统
+    现有覆盖
+```
+
 ## 核心机制
 
 AgentCore Memory 通过三层生命周期管理元数据：配置（configuration）、存储（ingestion）、检索（retrieval），在短期记忆（short-term memory）和长期记忆（long-term memory）两个层级均生效。

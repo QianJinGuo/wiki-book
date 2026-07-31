@@ -11,6 +11,17 @@
 - Length: 3674 chars (微信版)
 - SHA256: b7f08a9221689ae53f18651567d97f1e5110931bc8978d41d50159b7513e3810
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy × Boris 访谈：Software…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)

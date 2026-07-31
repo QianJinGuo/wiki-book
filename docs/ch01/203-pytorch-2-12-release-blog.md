@@ -51,6 +51,22 @@ PyTorch Profiler Events API now exposes flow IDs, flow types, activity types, un
 **FlightRecorder: ncclx + gloo Backends**
 FlightRecorder's trace analyzer now supports ncclx and gloo backends alongside the existing nccl and xccl backends, enabling distributed communication tracing across a broader set of collective backends. Additionally, FlightRecorder now recognizes torchcomms operations (e.g., all_gather_single, reduce_scatter_v, barrier) that were previously untracked. A race condition that could cause an infinite loop when multiple process groups concurrently accessed the FlightRecorder singleton was also fixed in this cycle. Backend allowlist added by Lily Janjigian (Meta) (PR #180268), with torchcomms operation support by Tushar Jain (PR #178359).
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("PyTorch 2.12 Release Blog"))
+    **Platform Related Upda…
+      **CUDA**
+      **ROCm**
+      **Apple MPS**
+    **Deprecations and Brea…
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## **Platform Related Updates**
 ### **CUDA**
 **CUDA Graph kernel annotations**

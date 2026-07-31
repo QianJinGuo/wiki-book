@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/cloudflare-glasswing-mythos-security.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Project Glasswing: what Myth…"))
+    背景
+    Mythos Preview 的核心能力跃升
+      Exploit Chain Construct…
+      Proof Generation（证明生成）
+      与通用模型的关键差距
+    模型拒止行为的不一致性
+    信噪比问题
+      编程语言因素
+      模型偏见
+    为什么通用编码 Agent 不适合仓库级漏洞挖掘
+      上下文错配
+      吞吐量局限
+    Cloudflare 的漏洞发现 Harnes…
+      八阶段管道详解
+    对安全团队的影响
+      速度不够
+      架构优先
+    深度分析
+```
+
 ## 核心要点
 - **Mythos Preview** 是 Anthropic 在 Project Glasswing 框架下提供的安全专用 LLM，在漏洞发现与利用链构造上相比通用模型有质的飞跃 
 - Mythos Preview 能将低危漏洞链式组合成可利用的高危漏洞（Exploit Chain Construction），而不仅是报告孤立问题 

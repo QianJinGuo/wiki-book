@@ -6,6 +6,21 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/creativeboom-ai-views-changed.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Have your views on AI changed"))
+    深度分析
+      态度演变的深层原因
+      生成式 AI vs 嵌入式 AI 的认知分野
+      经济权力集中的担忧
+      定义问题的浮现
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Creative Boom 对其创意社区成员的一年期 AI 态度调查
 - 整体情绪：从一年前的普遍焦虑，转向"无奈接受 + 理性评估"的复杂心态

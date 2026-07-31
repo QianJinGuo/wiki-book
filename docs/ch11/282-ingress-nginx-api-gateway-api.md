@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("告别 Ingress Nginx：云原生 API 网关 …"))
+    深度分析
+      角色分层是 Gateway API 相对 In…
+      '无 annotation' 才是真正的标准化
+      GIE 是 Gateway API 面向 AI…
+      双模并行 + 注解兼容 = 迁移路径关键
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

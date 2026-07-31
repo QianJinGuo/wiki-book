@@ -8,6 +8,28 @@
 
 > **Background**: 本文合成自 AWS ML Blog 2026-06-15 文章，作者 Sundar Raghavan（Sr Solutions Architect, Agentic AI Foundations）和 Saurav Das（AgentCore PM）。聚焦 LangChain Deep Agents 框架 + Amazon Bedrock AgentCore 基础设施的端到端集成，是"框架级 + 基础设施级"双层编排的最新官方参考实现。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Deep Agents + Bedrock AgentC…"))
+    核心模式
+    实战架构
+      五个核心组件
+      工作流（4 步）
+    关键工程细节
+      Browser MicroVM 隔离
+      Code Interpreter 隔离
+      Memory 配置
+      模型无关
+    三层可观测性
+    部署到 Runtime
+    与已有实体的差异化
+    深度分析
+    实践启示
+```
+
 ## 核心模式
 
 **两层分工**：

@@ -8,6 +8,22 @@
 
 > AI Agent 从设计系统的读取者进化为写作者，Figma MCP + Storybook MCP + DESIGN.md + SKILL.md 四层能力叠加。v=8 c=9 s=4 vxc=72
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("设计系统的新作者：从 Agent 读到 Agent 写"))
+    深度分析
+      从读到写的范式转变
+      四种写入模式的深度分析
+      治理模型的张力
+      可追溯性的挑战
+    实践启示
+    相关实体
+    参考来源
+```
+
 ## 摘要
 
 Murphy Trueman 在 2025 年预测设计系统的下一个用户将是 Agent——一个会解析组件、检查 token、理解命名规范并产出结构正确代码的读取者。仅仅 12 个月后，Agent 已经开始写入设计系统。Figma 开放 Canvas 给 Agent 的 `use_figma` 工具、Storybook 10.3 的 MCP for React、Google 的 DESIGN.md 开放规范、Anthropic 的 Agent Skills 规范四层能力叠加，共同推动 Agent 从设计系统的读者进化为作者。这一转变对设计系统的治理模型、可追溯性和审查流程带来了根本性挑战。

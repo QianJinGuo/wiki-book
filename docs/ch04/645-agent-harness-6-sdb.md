@@ -8,6 +8,19 @@
 
 > Stanford 独立研究者 Vasundra Srinivasan 提出的生产级 LLM Agent 运行时架构方法论（arXiv 2605.20173），涵盖随机-确定性边界（SDB）、6 种运行时模式、5 步选择流程和 12 类失败签名。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Harness 6 种运行模式与 SDB 方法论"))
+    Stochastic-Deterministi…
+    三个正交维度
+    6 种运行时模式
+    可靠性分解公式
+    典型失败签名
+```
+
 ## Stochastic-Deterministic Boundary（SDB）
 
 SDB 是 LLM 随机输出与系统确定性写入之间的接口，论文将其形式化为四部分契约：

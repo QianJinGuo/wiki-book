@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/skill-issues-compromising-claude-code-with-malicious-skills-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Skill Issues: Compromising C…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - **攻击向量**：Claude Code 的 Skill 文件（.md 格式）可被恶意构造，通过 `allowed-tools` frontmatter 或 `permissionMode: bypassPermissions` 绕过权限控制，实现远程代码执行（RCE）
 - **核心问题**：Skill 文件本质上等同于可执行代码——用户下载和运行未审计的 Skill 与下载运行未知二进制程序具有相同的风险等级

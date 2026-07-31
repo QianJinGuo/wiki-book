@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 10.1KB | `entities/thinking-machines-interaction-models.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Thinking Machines 交互模型（Inter…"))
+    核心定位
+    核心思路
+    系统架构：双模型协作
+    时间对齐微轮次（200ms Micro-Tur…
+    无编码器早期融合
+    推理优化
+    基准测试
+    安全设计
+```
+
 ## 核心定位
 Thinking Machines Lab（OpenAI 前 CTO Mira Murati 创办）发布的交互模型，旨在解决假实时问题——当前 AI 模型以轮次为单位工作，人必须等模型说完才能接话。
 

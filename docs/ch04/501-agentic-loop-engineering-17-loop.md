@@ -8,6 +8,29 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-loop-engineering-工程手册.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Loop Engineering 工程手…"))
+    一句话定位
+    核心结论
+    四次范式跃迁
+    通用 Loop 结构
+    三条测量规则
+    六大核心实证发现
+      1. Run Until Done — Fee…
+      2. Skill 注入与 Context En…
+      3. Maker-Checker 分离
+      4. 记忆与检索
+    运营与安全
+      多 Loop 协调
+      预算与成本
+      安全护栏
+    七大生产 Pattern
+```
+
 ## 一句话定位
 
 一份完全可复现的 Agentic Loop Engineering 工程手册（18 个 py 文件 + 共享工具库），在 A100 80GB GPU 上用 Qwen2.5-Coder-32B-Instruct-AWQ 逐项测量 17 种 loop 工程化技术，核心结论：**loop 的质量完全取决于它接入了什么可验证信号**。

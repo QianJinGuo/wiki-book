@@ -19,6 +19,17 @@ Agent Framework 是微软面向 .NET / Python 的统一 Agent 开发框架，承
 - 步骤固定、要强控执行顺序 → Workflow
 - 纯确定性逻辑 → 普通函数，不必上 Agent
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("微软 Agent Framework 全栈指南：从 He…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Microsoft Agent Framework Python Zizhi](../ch04/617-python.html)
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)

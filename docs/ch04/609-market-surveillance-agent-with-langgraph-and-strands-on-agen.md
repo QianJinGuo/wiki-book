@@ -8,6 +8,21 @@
 
 AWS 官方博客发布的一篇深度技术文章，演示如何将 LangGraph（宏观工作流编排）与 Strands（智能 Agent 推理引擎）结合在 Amazon Bedrock AgentCore 上构建生产级市场监控多 Agent 系统。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Market surveillance agent wi…"))
+    架构设计
+    关键技术点
+      AgentCore Memory 集成
+      可观测性
+      LangGraph 有向图状态管理
+    互补角度
+    相关实体
+```
+
 ## 架构设计
 
 文章提出三层架构：LangGraph 负责宏观编排（状态管理 + 有向图 + checkpoint 恢复），Strands Agent 在单个工作流节点内充当推理引擎，AgentCore 提供生产级部署基础设施。

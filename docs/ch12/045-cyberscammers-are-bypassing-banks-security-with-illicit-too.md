@@ -8,6 +8,21 @@
 
 > **来源**: [原文链接](https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cyberscammers are bypassing …"))
+    核心发现
+    技术分析
+      威胁机制
+    与现有实体对比
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心发现
 
 ```mermaid

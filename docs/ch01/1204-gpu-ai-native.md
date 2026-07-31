@@ -25,6 +25,15 @@ source_published: 2026年7月8日 08:30
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从日志学习到风洞验证构建-gpu-集群的-ai-native-稳定性闭环.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从日志学习到风洞验证：构建 GPU 集群的 AI Nat…"))
+    第 2 Source — 阿里云开发者
+```
+
 ## 第 2 Source — 阿里云开发者
 
 > From WeChat MP 阿里云开发者, supplemental coverage of the same topic.

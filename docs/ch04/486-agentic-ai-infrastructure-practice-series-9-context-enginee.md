@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-ai-infrastructure-practice-series-nine-context-engineering.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic AI Infrastructure Pr…"))
+    深度分析
+      上下文工程 ≠ RAG 的升级
+      AWS 的解决方案框架
+      对 Agent 架构的启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 这是 AWS 官方博客"Agentic AI 基础设施实践经验系列"的第九篇，系统性地分析了 Agentic AI 时代上下文管理的范式转变。文章从传统聊天应用的简单上下文模型出发，论证了 Agent 系统中上下文复杂度的指数级增长，并结合 AWS Bedrock AgentCore 和 Strands Agents 展示了从上下文检索、处理到管理的完整框架。核心观点：**Context Engineering 不是 RAG 的升级版，而是 Agentic AI 时代独立的技术方法论，需要从架构层面系统性解决上下文窗口限制、成本压力、性能衰减和个性化偏好四大挑战。**

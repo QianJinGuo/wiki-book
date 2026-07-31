@@ -9,6 +9,21 @@
 > **来源**：运维有术（术哥）。对 OpenSpec、Superpowers、GSD 三个 AI 编程框架的源码级对比分析，指出三者解决的是 context rot 的三个不同症状阶段——需求漂移、流程退化、注意力稀释，存在递进关系而非替代关系。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gsd-openspec-superpowers-context-rot-three-defenses-运维有术.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GSD 完胜 OpenSpec 和 Superpower…"))
+    核心洞见：三层防御模型
+      OpenSpec：防 AI 该做什么的腐烂
+      Superpowers：防 AI 怎么做事的腐烂
+      GSD：防 AI 脑子本身的腐烂
+    源码实测数字澄清
+    理想用户画像
+    与现有 wiki 实体关系
+```
+
 ## 核心洞见：三层防御模型
 
 三个框架不是在竞争，而是在不同的纵深防御 context rot：

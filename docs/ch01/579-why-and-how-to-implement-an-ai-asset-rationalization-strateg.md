@@ -6,6 +6,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Why and how to implement an …"))
+    相关实体
+    深度分析
+      AI 资产理性化的本质
+      传统 IT 理性化不适用 AI 的原因
+      典型失败模式：客服聊天机器人案例
+      关键评估维度框架
+    实践启示
+      立即行动的紧迫性
+      实施路径建议
+      常见 AI 浪费来源及对策
+      未来趋势关注
+```
+
 ## 核心要点
 - AI 资产理性化策略实施指南
 - 评分：value=8, confidence=7, product=56

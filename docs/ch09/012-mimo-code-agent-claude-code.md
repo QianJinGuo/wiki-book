@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 28.0KB | `entities/mimo-code-xiaomi-coding-harness-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("小米 MiMo Code — 长程编程 Agent 三大…"))
+    概述
+    与 Claude Code 对比
+    VILA 实验室的 Claude Code 源…
+    MiMo Code 三大主线
+      主线一：计算（Compute）— 解决 '做对'
+      主线二：记忆（Memory）— 让逻辑会话无限延伸
+      主线三：进化（Evolution）— 跨 se…
+    Dynamic Workflow：编排从 pr…
+      与 Claude Code 编排对比
+      为什么把流程代码化？
+    关键 bug 教训：自动删除全局 npm 包
+    Coding Harness 开源的商业模式之争
+      社区一派观点
+      反方观点
+      核心争议：coding harness 是否有…
+      Anthropic 商业模式深度解析
+    工程重点分化的本质
+      共同基础
+      关键分化
+```
+
 ## 概述
 
 **小米 MiMo 团队** 2026-06-11 凌晨发布 **MiMo Code**（MIT 开源，基于 OpenCode 构建），定位**长程自动化编程任务的终端编程 Agent**。核心目标：解决 AI 编程 Agent 在**几十步甚至上百步**持续执行中的**决策质量、状态连续性和跨任务经验积累**问题。

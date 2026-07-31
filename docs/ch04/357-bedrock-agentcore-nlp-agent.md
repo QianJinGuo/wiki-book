@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Bedrock AgentCore NLP 仪表盘自动化…"))
+    相关实体
+    深度分析
+      架构设计：三代理协作模式
+      变更管理：原位保留与版本化
+      安全模型：IAM 权限与验证闭环
+      技术栈选择依据
+    实践启示
+      1. 从单代理逐步演进到多代理架构
+      2. Validation-First 策略应…
+      3. 充分利用 AgentCore 的托管能力
+      4. 错误处理与用户期望管理
+```
+
 ## 核心要点
 
 - 技术主题：Bedrock Agentic AI 应用实践

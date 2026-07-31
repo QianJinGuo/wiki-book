@@ -6,6 +6,24 @@
 
 # 百度 Unlimited OCR：R-SWA 参考滑动窗口注意力
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("百度 Unlimited OCR：R-SWA 参考滑动窗…"))
+    核心创新
+    R-SWA 机制
+      两层注意力分离
+      固定 KV Cache 设计
+      三种注意力机制对比
+    Benchmark 结果
+    与长上下文研究的关系
+    与 DeepSeek OCR 的关系
+    开源
+    相关实体
+```
+
 ## 核心创新
 
 百度开源的 Unlimited OCR 在 OmniDocBench 上刷新 SOTA（93.23%，超 DeepSeek OCR +6.22%），核心创新是 **R-SWA（Reference Sliding Window Attention）**——一种让模型学会"遗忘"的注意力机制，实现超长文档连续解析而 KV Cache 不膨胀。

@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/unlocking-ai-flexibility-in-europe-a-guide-to-cross-region-i.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Unlocking AI flexibility in …"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access 涉及aws领域的核心技术议题。

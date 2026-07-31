@@ -8,6 +8,24 @@
 
 > **Background**: 作者使用 QoderWork（AI 编码工具）诊断 Mac 电脑的异常功耗和发热问题，发现根源是 Agent Browser 残留的 Chrome 僵尸进程在后台消耗 768% CPU。文章记录了完整的排查过程和自动化清理方案。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Browser 僵尸进程排查与定时清理（Cl…"))
+    问题发现
+    QoderWork 诊断
+    解决方案
+    深度分析
+      Agent 工具的进程生命周期管理挑战
+      AI 自愈循环（Self-Healing Lo…
+      峰谷 Token 经济与夜间 Agent 编排
+      Agent OS 形态的收敛
+    实践启示
+    相关实体
+```
+
 ## 问题发现
 
 作者在 Claude Code 额度告急（$200 周额度耗尽 90%）后发现 Mac Mini 和 MacBook 出现异常：

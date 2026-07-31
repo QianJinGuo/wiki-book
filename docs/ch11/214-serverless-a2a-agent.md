@@ -8,6 +8,26 @@
 
 > 本文基于 AWS Machine Learning Blog 的技术文章整理。原文介绍了如何在 AWS 上构建一个 serverless 的 Agent-to-Agent (A2A) 网关，实现 agent 的注册、发现、路由和访问控制，支持异构环境（AWS、非 AWS 云、混合环境）下的 agent 互联。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("构建 Serverless A2A 网关：Agent 发…"))
+    背景与问题
+    三层架构
+      管理层（Management Layer）
+      控制层（Control Layer）
+      执行层（Execution Layer）
+    A2A 协议端点
+    安全考量
+      后端信任模型
+      Amazon Bedrock AgentCor…
+      私有部署
+    部署
+    相关实体
+```
+
 ## 背景与问题
 
 ```mermaid

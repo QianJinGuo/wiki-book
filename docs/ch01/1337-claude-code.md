@@ -11,6 +11,17 @@
 你做亚马逊产品调研时，可能也熟悉这套老方法。
 先在 Amazon 搜关键词，看头部竞品的价格带、评分、评论数、主图和五点卖点。再打开 Keepa 看排名和价格走势，用 Helium 10 或 Jungle Scout 补一轮关键词。接着翻评论，摘几条差评，问供应商报价，最后靠经验给一个判断。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我用 Claude Code 做需求调研，像多了一个产品经理"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
 - [Code Review Graph](ch01/833-code-review-graph-claude-code-6-8-token.html)

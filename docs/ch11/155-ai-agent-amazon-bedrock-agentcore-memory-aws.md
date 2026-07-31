@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("当 AI Agent 学会"忘记"：Amazon Bed…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+      记忆哲学的根本转变
+      双层架构的设计优势
+      四种内置策略的差异化价值
+      三层自定义体系的工程意义
+    实践启示
+      记忆策略选型决策树
+      预算更新场景的整合验证
+      会话连续性保障实践
+      进阶定制建议
+    关联阅读
+```
+
 ## 概述
 
 ```mermaid

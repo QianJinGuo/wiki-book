@@ -10,6 +10,22 @@
 
 术哥（ShugeX）源码级分析 Superpowers v6.0.3，翻 158 commits + 3 核心 prompt + 3 shell 脚本。核心结论：**6.0 不是性能调优，是围绕 reviewer 角色的结构性重写**——堵住 controller 被反复观测到的几条作弊路径，提速降本是结构改造的副产品。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Superpowers 6.0 反作弊重写：review…"))
+    一句话定位
+    六大技术杠杆
+      1. 两个 reviewer 合并为一：一次 …
+      2. Reviewer 只读怀疑论者（三道硬闸门）
+      3. 文件替代粘贴：三个脚本的上下文经济学
+      4. Progress Ledger：对抗 c…
+    诚实边界（术哥明确标注）
+    Wiki 关联
+```
+
 ## 一句话定位
 
 > 把 reviewer 从一个可被辅导、可被绕过、可被静默升级到顶配模型的配角，重写成一个**只读、怀疑、独立、强制读文件**的裁决者。

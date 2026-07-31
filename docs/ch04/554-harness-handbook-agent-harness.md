@@ -8,6 +8,21 @@
 
 > **Background**：本文档基于腾讯 HY LLM Frontier 与 Indiana University 联合发布的 Harness Handbook 研究项目建立。该项目提出用三层行为级手册（L1-L3）组织 agent harness 代码，使复杂 system 行为可浏览、可验证、可修改。参考了项目官网、GitHub 仓库、Handbook Studio Demo 多源信息。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Handbook — 行为级 Agent…"))
+    核心问题
+    三层结构（L1-L3）
+    Behavior-Guided Progres…
+    Handbook 生成流程
+    评估结果
+    Handbook Studio
+    与其他 Harness 实体的关系
+```
+
 ## 核心问题
 
 Agent harness 的 behavior 散布在数千个文件中（Codex 有 2,267 文件、34,000+ 函数、160,000 代码连接），传统文件树展示"代码在哪里"但不展示"这些代码如何协作产生行为"。搜索 `delete`、`permission`、`confirm` 只返回散落的片段，无法重建完整的 behavior chain。

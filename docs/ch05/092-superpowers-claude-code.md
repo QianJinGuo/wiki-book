@@ -8,6 +8,22 @@
 
 17000+ 字深度解析 Claude Code Superpowers：14 技能拆解、brainstorming SKILL.md 源码解析、概率操控技巧、querit.ai 真实案例复盘、负向收益诚实评估。百度Geek说/奔跑的脆皮肠。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Superpowers 深度解析：给 Claude Co…"))
+    一句话
+    三大原罪
+    brainstorming SKILL.md …
+    概率操控四技巧
+    作者 Jesse Vincent obra
+    项目热度
+    负向收益（7 项诚实评估）
+    后悔成本决策
+```
+
 ## 一句话
 
 **大模型=能力，Superpowers=纪律，你=方向。14 Skill 强制"澄清→设计→规划→执行→验证"五阶段流程，概率操控让"正确行为"从 20%→80%。**

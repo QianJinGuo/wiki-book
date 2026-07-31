@@ -28,6 +28,20 @@ Cohere 于2026-06-09 发布 North Mini Code（`North-Mini-Code-1.0`），是公�
 - **Inter-token latency**：领先 Devstral Small2 **30%**
 - **TTFT (Time-to-First-Token)**：与 Devstral Small2接近，Devstral略优
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cohere North Mini Code -30B …"))
+    Agentic 工作流能力
+    三件独特贡献（与同 size 开源 codin…
+    对标对比
+    深度分析
+    实践启示
+    来源
+```
+
 ## Agentic 工作流能力
 
 North Mini Code专为 agentic workflows 设计：

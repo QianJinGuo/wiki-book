@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-coding-入门指南-如何更好地让ai真正帮你干活.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Coding 入门指南：如何更好地让 AI 真正帮…"))
+    深度分析
+      上下文是 AI Coding 的核心战场
+      反例分析的价值
+      幻觉管理的'重启但不归零'策略
+      Rules 的六个陷阱
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 这是网盘主端团队编写的 AI Coding 入门指南，面向初次接触 AI 辅助编程的开发者。文章系统性地梳理了 AI Coding 的概念体系、工具层配置、标准开发流程和实战技巧，核心论点是：**AI Coding 的成败取决于上下文构建质量，而非模型能力**。文章将 Vibe Coding、Spec Coding、Rules、Skills 等概念统一到"上下文工程"这个核心框架下，提出了 Harness Engineering 的最小实践维度。全文约 9500 字，覆盖从认知到实战的完整链路。

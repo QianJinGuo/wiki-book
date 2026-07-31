@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/thin-harness-fat-skills.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Thin Harness, Fat Skills：AI工…"))
+    核心理念：Latent vs Determin…
+    Thin Harness, Fat Skill…
+      Fat Skills（Markdown 技能文件）
+      Fat Code（确定性逻辑）
+      Thin Harness（~200行轻量框架）
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心理念：Latent vs Deterministic 空间分离
 
 AI应用有两个完全不同的空间：Latent 空间和 Deterministic 空间。前者是模型的领地——判断、阅读、综合、推理，擅长但不确定；后者是代码的领地——SQL、编译、算术、文件操作，精确可复现。核心错误在于把确定性任务扔给LLM，把不确定性任务交给人去做。一个典型反例是用LLM安排800人座位表，这种确定性编排问题让模型反复纠结座位冲突，而代码本可以线性求解 。

@@ -8,6 +8,27 @@
 
 > 深入解析 AgentCore Payments 技术架构与 x402 协议，探讨代理商务（agentic commerce）的支付创新方向。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentCore Payments 与代理商务创新：技…"))
+    核心内容
+    深度分析
+      代理商务的支付墙：为什么传统支付无法支撑 AI…
+      x402 协议与多协议编排架构
+      原子性预算执行：三阶段 Reserve-Pro…
+      零摩擦接入：AgentCore Identit…
+    实践启示
+      代理商务优先考虑稳定币结算层
+      用支付会话而非硬编码预算约束代理消费
+      选择支持 x402 协议的 MCP 和 API…
+      为代理内存层叠加支付记忆
+    参考来源
+    相关实体
+```
+
 ## 核心内容
 
 ```mermaid

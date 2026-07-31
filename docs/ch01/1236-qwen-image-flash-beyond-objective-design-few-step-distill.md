@@ -8,6 +8,22 @@
 
 > **Background**: This is an arxiv 2606.03746 (cs.CV) paper from the Qwen team (Tianhe Wu et al., 23 authors, Alibaba). Submitted 2026-06-02, v2 on 2026-06-03. It introduces a few-step distillation methodology for the Qwen-Image-2.0 unified text-to-image + instruction-guided image editing model, producing a 4-NFE student called Qwen-Image-Flash. The paper's central message is that the **training recipe** (data composition, teacher guidance, task mixture) matters as much as the distillation objective — a contribution to the broader few-step visual generation literature where prior work focused almost exclusively on objective design (DMD, consistency, adversarial, distribution matching).
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qwen-Image-Flash: Beyond Obj…"))
+    核心贡献
+    方法概述
+    实验设置（来自 Appendix A）
+    失败尝试（Section 6.1 'Unsuc…
+    与现有 image-generation 实体…
+    对 AI Engineering 实践的启示
+    相关实体
+    关键引用
+```
+
 ## 核心贡献
 
 The paper delivers three non-obvious empirical findings, each backed by ablation tables on the unified T2I+editing benchmark:

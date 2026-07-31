@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cli-anything-wechat-demo-conglin.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CLI-Anything：让 Agent 自主驱动任意 …"))
+    深度分析
+      1. CLI 作为 Agent-Tool 接口…
+      2. 自动化 CLI 生成的质量边界
+      3. 从'工具使用'到'环境适配'的 Agen…
+      4. 社区驱动的工具注册表模式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 CLI-Anything 是香港大学数据科学实验室（HKUDS）开发的开源项目，核心思路是**为任意 GUI 软件自动生成一套结构化的 CLI 接口**，让 AI Agent（Claude Code、Codex 等）通过命令行直接操控 Blender、GIMP、FreeCAD 等专业软件，彻底绕过截图点击式的脆弱 GUI 自动化。项目配套 CLI-Hub 社区注册表，已覆盖创意设计、科学计算、开发工具、游戏、办公协作等 20+ 款软件。

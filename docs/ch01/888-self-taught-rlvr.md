@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/self-taught-rlvr.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Self-Taught RLVR 综述"))
+    三种 Self 框架
+    RLSD：OPSD + RLVR 解耦
+    NPO：Near-Future Policy …
+    CoPD：协同进化蒸馏
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 三种 Self 框架
 | 方法 | 维度 | 核心思想 |
 |------|------|---------|

@@ -7,6 +7,18 @@
 # Lessons from Building Claude Code: Seeing like an Agent
 **作者**：Thariq（Claude Code 团队）| **来源**：X (@trq212) | **时间**：2026年2月28日
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 核心开发者经验：Action S…"))
+    一、Action Space 才是你的产品
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 一、Action Space 才是你的产品
 很多人做 Agent，第一反应是堆能力：接网页、接数据库、接浏览器、接10个模型，再加一堆花哨工具。
 真正上线后你会发现，最先出问题的往往是两件事：

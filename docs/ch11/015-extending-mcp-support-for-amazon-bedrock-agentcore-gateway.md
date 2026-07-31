@@ -6,6 +6,33 @@
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Extending MCP support for Am…"))
+    Unite MCP servers for e…
+    Surface your MCP server…
+    Dynamic listing for run…
+    Streaming, session mana…
+      Streamable HTTP
+      Session management
+      Elicitation
+    OAuth 2.0 on-behalf-of …
+    Conclusion
+    About the authors
+      Anagh Agrawal
+      Eashan Kaushik
+      Ke Ma
+      Kyungna Kim
+    深度分析
+      1. AgentCore Gateway：AW…
+      2. MCP 作为 Agent 工具标准的价值
+      3. Gateway 模式的安全优势
+      4. 多 agent 系统的工具共享
+```
+
 ## Unite MCP servers for enterprise through AgentCore Gateway
 
 ```mermaid

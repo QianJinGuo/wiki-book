@@ -10,6 +10,21 @@
 > **来源**: https://aws.amazon.com/blogs/machine-learning/scaling-ux-testing-with-amazon-nova-act-a-new-approach-to-user-flow-analysis
 > **发布**: AWS China ML (2026-07-14)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scaling UX Testing with Amaz…"))
+    深度分析
+      Nova Act 的真正创新：从'脚本执行'到…
+      文档驱动测试生成：从隐式知识到显式测试
+      三层粒度设计：对抗指令模糊性的工程实践
+      分析层的价值：从执行结果到设计决策
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本方案展示如何利用 Amazon Nova Act（多模态基础模型，能够通过视觉理解并与浏览器界面交互）构建云端部署的 UX 测试平台。传统 UX 测试面临三大困境：人工测试无法规模化、自动化脚本在界面变更时频繁断裂、全面覆盖多设备多场景的成本高昂。该方案通过四个层次的架构（文档处理层、编排层、执行层、分析层）实现了从文档到测试用例自动生成、Nova Act 智能体并行执行用户流程、自动化分析生成可操作洞察的完整闭环。与传统的 Selenium/Playwright 脚本方案不同，Nova Act 通过视觉理解（分析截图、识别交互元素）来适应界面变化，模仿人类测试员的推理方式。

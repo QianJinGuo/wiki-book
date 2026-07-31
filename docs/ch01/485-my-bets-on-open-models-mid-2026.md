@@ -6,6 +6,18 @@
 
 # My bets on open models, mid-2026
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("My bets on open models, mid-…"))
+    相关实体
+    深度分析
+    实践启示
+    关联实体
+```
+
 ## 相关实体
 
 - [dean ball on open models and government control](ch01/842-dean-ball-on-open-models-and-government-control.html)

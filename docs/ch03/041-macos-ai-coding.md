@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐ | 5.2KB | `entities/在-macos-上用-ai-coding-搭一个隐私优先的会议纪要助手.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 macOS 上用 AI Coding 搭一个隐私优先…"))
+    标签
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 标签
 #macos #ai #meeting-notes #privacy #aws #bedrock
 ## 深度分析

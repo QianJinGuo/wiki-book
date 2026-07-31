@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/claude-code-openclaw-usage-ettin.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Openclaw Usage E…"))
+    概述
+    Claude Code 记忆检索现状
+    OpenClaw 记忆检索现状
+    Ettin Reranker 核心优势
+      Retrieve-then-Rerank 范式
+    Claude Code 集成 Ettin Re…
+      方案一：替换 Sonnet sideQuery
+      方案二：保留 LLM 路由 + Ettin 验证层
+      推荐配置
+    OpenClaw 集成 Ettin Reran…
+      升级方案：sqlite-vec + BM25 …
+      替代 sqlite-vec embedding
+    关键考量
+      延迟 vs 精度权衡
+      部署复杂度
+      与现有架构兼容性
+    总结
+```
+
 ## 概述
 
 **Ettin Reranker Family** 是由 Tom Aarsen 于 2026 年 5 月发布的六个 CrossEncoder reranker 模型系列（基于 Johns Hopkins University CLSP 的 ModernBERT 编码器），参数量从 17M 到 1B，支持最高 8192 tokens 上下文长度。

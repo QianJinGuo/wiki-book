@@ -9,6 +9,18 @@
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=49 stars=4 通过评分门槛。
 > URL: https://www.implicator.ai/google-open-sources-a-knowledge-format-and-wires-it-into-its-catalog/
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google Open-Sources OKF, a M…"))
+    Google Open-Sources a K…
+    What the spec leaves out
+    评估理由
+    相关
+```
+
 ## 核心要点
 
 Published Time: 2026-06-16T03:41:17.000Z

@@ -10,6 +10,21 @@
 > **来源**: https://aws.amazon.com/blogs/machine-learning/agentic-retrieval-for-amazon-bedrock-managed-knowledge-base
 > **发布**: AWS China ML (2026-07-23)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Retrieval for Amazon…"))
+    深度分析
+      为什么单次向量检索在多跳问题上必然失败
+      规划循环的工程实现与可观测性
+      FullDocumentExpansion 的…
+      与 DIY Agent 框架的对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Amazon Bedrock Managed Knowledge Bases 新推出的 Agentic Retrieval（通过 AgenticRetrieveStream API）是一种全新的检索模式，解决了传统单次向量检索（single-shot retrieval）在多跳问题、比较推理、跨知识库查询等场景下的根本性缺陷。该方案将规划、迭代检索和充分性判断内置到服务端，通过一个 Foundation Model 驱动的规划循环自动分解用户问题、逐意图检索、判断证据是否充分、必要时迭代搜索，最终在同一调用中生成有引用的回答。相比自定义 Agent 框架 + Retrieve API 的 DIY 方案，Agentic Retrieval 提供了开箱即用的单 API 方案，具备一致的日志、安全和成本行为。

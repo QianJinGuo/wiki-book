@@ -10,6 +10,30 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-anything-personal-assistant-agent-benchmark-three-dimensional-context.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claw-Anything：首个面向个人助理 Agent…"))
+    核心命题
+    三维上下文扩展
+    两类评测能力
+    数据生产管线
+    实战结果
+    消融实验：四个反直觉发现
+      1. 给模型看得越多，它反而做得越差
+      2. 能看到一切，但不一定能'看'到一切
+      3. '看见一切'是生死线
+      4. '主动'比'被动'难得多
+    核心洞察
+    深度分析
+      上下文扩展 ≠ 上下文理解：噪声与矛盾的双刃剑
+      CLI vs GUI 的能力鸿沟暴露了 Age…
+      主动服务需要'世界模型'而非'工具调用'
+      权限边界的量化评测填补了行业空白
+```
+
 ## 核心命题
 
 常驻型 AI 助理的下一次飞跃，不在于把某一个模型单点调得更聪明，而在于**扩展智能体的上下文（Scaling Agent Context）**——不断拓宽助理能够持续"感知—推理—执行"的范围。

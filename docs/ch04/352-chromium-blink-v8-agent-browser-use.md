@@ -8,6 +8,22 @@
 
 > 本文是对「架构师 JiaGouX」发布的超长浏览器内部机制技术文的摘要整合。原文系对 Chrome Mariko Kosaka "Inside look at modern web browser" 系列等资源的中文深度编译。 **Agent 视角**：AI Agent 的 Browser Use（browser CLI、Playwright、Chrome MCP、Computer Use 等工具）依赖对浏览器底层机制的理解来调试、优化和扩展。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("现代浏览器内部机制：Chromium/Blink/V8 …"))
+    对 Agent Browser Use 的关键意义
+    核心管线
+    多进程架构（Chromium）
+    V8 JavaScript 引擎
+    安全模型
+    三大引擎差异速查
+    关键实践启示
+    相关实体
+```
+
 ## 对 Agent Browser Use 的关键意义
 
 | 浏览器组件 | Agent Browser Use 关联 |

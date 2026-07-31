@@ -17,6 +17,15 @@ Given all that, if the cost isn’t too high then it’s not a bad idea to look 
 
 We’ll explore three different protocols I rely on and how we can make them post-quantum resistant.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("On Post-Quantum Security Ado…"))
+    SSH
+```
+
 ## SSH
 
 ```mermaid

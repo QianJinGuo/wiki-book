@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/enterprise-software-moats-agent-era.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Enterprise Software Moats in…"))
+    核心问题
+    旧世界护城河：五维评估框架
+    Agent 时代的护城河重塑
+      失效的旧护城河
+      变得更重要了
+    新护城河：三条路
+    新数据护城河逻辑
+    动作层护城河
+    最后那一公里
+    网络效应回归
+```
+
 ## 核心问题
 当软件去掉界面，剩下的是什么？和 PostgreSQL + API 本质区别是什么？SaaS 时代让软件"难以被替换"的东西，在 Agent 时代还成立吗？
 

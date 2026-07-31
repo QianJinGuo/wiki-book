@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一文看懂 OpenAI 开源的 Codex 编排规范：S…"))
+    深度分析
+      核心观点
+    为什么需要 Symphony：AI 编程的瓶颈变了
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony 涉及agent领域的核心技术议题。

@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/claude-managed-agents-self-hosted-sandbox-enterprise.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Managed Agents 企业边界更新"))
+    概述
+    核心架构：混合控制平面
+    Self-hosted Sandboxes
+    MCP Tunnels
+    两次更新的完整图景
+    社区质疑回应情况
+    四象限验证框架
+    产品定位
+```
+
 ## 概述
 Anthropic 2026年5月18日更新 Claude Managed Agents，新增 self-hosted sandboxes 和 MCP tunnels 功能。本质是"brain Anthropic化、hand 企业侧化"的混合控制平面架构落地。 ^[https://mp.weixin.qq.com/s/dqg5rr2V073oloyAZVPB9Q]
 

@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/tokenomics-the-625-minute-rule-for-claudes-cache.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tokenomics: the 62.5-minute …"))
+    核心结论
+    深度分析
+      1. 定价结构的数学本质
+      2. 缓存刷新的经济学含义
+      3. 美元金额的规模敏感性
+      4. Compaction（压缩）的成本收益分析
+    实践启示
+      1. 实现缓存计时器
+      2. 根据前缀规模选择策略
+      3. Compaction 的触发条件
+      4. Opus 4.7 迁移检查清单
+```
+
 ## 核心结论
 **62.5 分钟**是 Claude 提示缓存策略的决策临界点：
 

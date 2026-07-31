@@ -8,6 +8,28 @@
 
 OpenAI 的 Codex 已从单一 CLI 工具演进为一套围绕 agent runtime 展开的多端系统——涵盖 Web/Cloud、桌面 App、CLI、IDE 扩展、Exec、SDK、MCP Server 及 GitHub Action 等八个端，全部由同一套 Codex harness 驱动。其核心架构分为四层：客户端表面、协议与集成层、本地 runtime、OpenAI 后端与云端环境。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("万字详解 codex 全链路架构：Codex 不是一个 …"))
+    Codex 产品形态全景
+    App Server：关键底座
+    三层会话模型
+      Thread（线程）
+      Turn（轮次）
+      Item（事件项）
+    沙箱与权限体系
+    多端集成策略
+    深度分析
+      1. '端是入口，Harness 才是身体'—…
+      2. App Server 协议面的设计哲学：…
+      3. 沙箱设计：'权限分层'而非'权限开关'
+      4. 'Codex 不是写代码的工具，而是代码…
+    实践启示
+```
+
 ## 核心要点
 
 - **多端统一 harness**：Codex 所有端由同一个 Codex harness 驱动，使用同一套 thread/turn/item 抽象和同一个 app-server 协议面。

@@ -8,6 +8,19 @@
 
 > **Background**: Based on UX Magazine 2026-06-25 article redefining AI-assisted design workflow from a designer's perspective, proposing "directed generation" as the precise term replacing "vibe coding".
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Beyond Vibe Coding — Directe…"))
+    Core Thesis
+    Directed Generation: Th…
+    Design Pattern Paradigm…
+    Language Precision Matt…
+    Connection to Harness E…
+```
+
 ## Core Thesis
 
 **"Vibe coding" is a mislabeling of serious design work.** Andrej Karpathy accurately described a specific low-accountability behavior in early 2025 (loose description, accept output, don't scrutinize). But the term migrated into contexts where it doesn't belong — serious designers' AI-assisted workflows.

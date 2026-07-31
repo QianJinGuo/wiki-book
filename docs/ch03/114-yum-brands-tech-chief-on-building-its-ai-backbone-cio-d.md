@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/819775.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Yum Brands' tech chief on bu…"))
+    深度分析
+      Byte by Yum 平台架构
+      技术供应商多元化
+      ROI 评估方法
+      战略定位：AI 是工具而非目的
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Yum Brands（Taco Bell、KFC、Pizza Hut 母公司）首席数字与技术官 Jim Dausch 在 CIO Dive 虚拟活动上分享了公司 AI 战略。核心数据：Taco Bell 数字销售占比从 2019 年的 1% 飙升至 2026 年的近 70%。公司通过 Byte by Yum 平台统一了 60 年历史品牌的碎片化数据资产，建立通用数据模型，在 35,000 家餐厅、150 个国家部署。AI 战略覆盖三个维度：创新速度与企业生产力、客户生命周期 AI 嵌入、餐厅运营简化。

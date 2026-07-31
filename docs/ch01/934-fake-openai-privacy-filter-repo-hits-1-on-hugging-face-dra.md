@@ -6,6 +6,18 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thehackernews-fake-openai-privacy-filter.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fake OpenAI Privacy Filter R…"))
+    关键要点
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 关键要点
 - 攻击者在 Hugging Face 上发布假冒 OpenAI 隐私过滤器仓库
 - 仓库被下载 244,000 次，实际为恶意软件

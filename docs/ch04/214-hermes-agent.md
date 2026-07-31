@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-self-evolution-源码解析.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("拆完 Hermes 源码发现 Agent 自我进化不需要…"))
+    深度分析
+      '自我进化不需要训练模型'的工程含义
+      冻结快照模式：为什么不能'实时更新记忆'
+      KEPA 与传统反向传播的本质类比
+      后台审查逻辑的设计取舍
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 刘庭辉 2026 年对 Hermes Agent 源码的拆解分析：Hermes Agent 的核心创新不是"能做什么"而是"做完之后会发生什么"——通过四维持久记忆、技能自动创造系统、KEPA（对"提示"做反向传播）三大机制，让 Agent 越用越强。所谓的"自动学习"，本质是 Prompt Engineering + 文件持久化的一次精妙工程化实践。

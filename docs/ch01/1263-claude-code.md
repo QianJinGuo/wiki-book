@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/claude-code-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 架构解析"))
+    Overview
+    核心 Insight
+    子页面
+    Related
+    深度分析
+      补充：多 Agent 协作源码深析 — 上下文…
+    实践启示
+    架构图
+    相关实体
+```
+
 ## Overview
 Claude Code 源码拆解（by 无岳，阿里云开发者，2026-04-15）。核心论点：**真正决定 Agent 能不能长期活下去的，不是模型，而是围着模型搭起来的运行时。**
 

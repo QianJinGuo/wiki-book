@@ -8,6 +8,21 @@
 
 Built Technologies（房地产金融软件提供商，处理超 5000 亿美元项目）基于 Amazon Bedrock 和 AWS IDP（智能文档处理）加速器构建了 AI 文档处理引擎，服务于房地产全生命周期的 Agentic 产品。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Built Technologies AI Docume…"))
+    深度分析
+      1. '文档理解'取代'文档提取'的范式转变
+      2. 动态 Schema 生成的生产力价值
+      3. 置信度评分与人机反馈循环的设计
+      4. 分层推理架构：事实提取与判断分离
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 房地产金融运行在文档之上：提款包、贷款协议、发票、保险证书、检查报告等数十种文档类型。这些文档通常冗长、格式不一致、领域专深、处理困难。Built Technologies 与 AWS Generative AI Innovation Center 合作，基于 AWS IDP Accelerator 和 Amazon Bedrock 构建了 AI 驱动文档处理引擎。该引擎将以往需要 3-9 天的分类和提取工作流压缩到几分钟内完成，支持超过 250 种文档类型，并作为多个 Agentic AI 产品的基础文档智能服务层。

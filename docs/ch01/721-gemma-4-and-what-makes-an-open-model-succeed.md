@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemma 4 and what makes an op…"))
+    深度分析
+      开放模型的'暗物质'比喻
+      '可微调性'是被忽视的关键维度
+      美国开放模型的'转向时刻'
+      Gemma 系列的历史包袱
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Sebastian Raschka（Interconnects AI）在这篇文章中分析了 Google Gemma 4 开放模型的发布，并提出了一个更宏大的问题：**在 2026 年开放模型竞争已经白热化的环境下，一个开放模型成功的决定因素到底是什么？** 文章提出了评估开放模型的五维框架（性能、来源国、许可证、工具链、可微调性），指出 benchmark 分数在发布时只是故事的极小一部分，真正的成败取决于生态系统成熟度和易用性。文章认为 Gemma 4 采用 Apache 2.0 许可证是重大利好，但也指出 Gemma 系列历史上工具链问题和微调后性能下降的隐忧。

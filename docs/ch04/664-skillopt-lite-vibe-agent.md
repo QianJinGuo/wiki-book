@@ -10,6 +10,20 @@
 > **来源**：Hyman的杂货铺 | [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-lite-一行vibe指令进化agent技能.md)
 > **GitHub**：https://github.com/EvolvingLMMs-Lab/SkillOpt-Lite
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SkillOpt-Lite：一行Vibe指令加速Agen…"))
+    核心创新
+      零阶优化统一视角
+      HarnessOpt：技能饱和后改脚手架
+    关键实验结果
+    边界条件
+    实践启示
+```
+
 ## 核心创新
 
 SkillOpt-Lite 将 Agent 技能优化重构为**零阶优化 + 文件系统调试**范式，删掉了 SkillOpt 管线中层层叠叠的组件（mini-batch合并、慢更新阻尼、拒绝缓冲），仅保留四个核心步骤：

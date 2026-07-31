@@ -7,6 +7,17 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saastr-who-winning-enterprise-ai.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saastr-who-winning-enterprise-ai.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Who Winning Enterprise AI Now"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 **企业 AI 市场格局的结构性变化**：
 1. **多模型成为新默认**：ETR 数据显示四家可信供应商（OpenAI、Anthropic、Google xGroq）并存，单一模型架构已成采购风险

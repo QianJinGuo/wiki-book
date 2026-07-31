@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-inference-shift.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Inference Shift"))
+    Summary
+    相关实体
+    深度分析
+      GPU 时代的终结与新架构的萌芽
+      Answer Inference vs. Ag…
+      Cerebras 的战略定位与局限
+      Nvidia 的战略应对与解耦趋势
+    实践启示
+      对 AI 基础设施决策者的建议
+      对 AI Agent 开发者的建议
+      对芯片和基础设施投资人的建议
+      对云提供商战略的建议
+```
+
 ## Summary
 > Score: 8×7=56
 

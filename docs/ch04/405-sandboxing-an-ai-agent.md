@@ -6,6 +6,21 @@
 
 # Sandboxing an AI Agent
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sandboxing an AI Agent"))
+    深度分析
+      Agent 自主化趋势下的安全悖论
+      沙箱作为工具后端 Tool Backend
+      沙箱作为 Agent 的家 Agent's …
+      沙箱实现的技术选型
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 随着 AI Agent 从"逐条审批"模式迈向"长时间自主运行"模式，沙箱（Sandbox）成为保障安全的关键基础设施。沙箱为 Agent 提供独立的计算环境，实现隔离（Containment）、并行（Parallelism）、可复现（Reproducibility）、资源治理（Resource Governance）和低成本恢复（Cheap Recovery）。本文探讨了两种主流的沙箱架构模式——沙箱作为工具后端（Tool Backend）vs 沙箱作为 Agent 的家（Agent's Home）——以及它们在不同场景下的适用性。

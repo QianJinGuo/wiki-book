@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent Operator 上手：把一个…"))
+    一句话总结
+    核心架构：控制面 vs. 运行面
+    控制室 5 文件模板
+    Agent 三组件与沉淀顺序
+    三条访问路径（优于'四级演进'）
+    SEO Agent 案例：强顺序链路不宜硬拆容器
+    四道门：原型 → 生产
+    安全：延迟触发型 Prompt Injection
+```
+
 ## 一句话总结
 
 本文是 Shann³《How to Become a Hermes Agent Operator》的中文解读 + 本土化补充，提出**把单个 Agent 从聊天窗口养成可运营系统的最小化路径**：先建控制室（5文件），再养真实任务（3次纠偏），最后决定要不要拆 Agent / 加编排 / 上 cron。

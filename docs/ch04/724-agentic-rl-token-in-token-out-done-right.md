@@ -6,6 +6,18 @@
 
 # Agentic RL: Token-In, Token-Out Done Right
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic RL: Token-In, Token-…"))
+    深度分析
+    Train on the model’s o…
+    Decoding doesn’t undo …
+    相关实体
+```
+
 ## 深度分析
 
 Published Time: May 28, 2026

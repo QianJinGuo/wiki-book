@@ -7,6 +7,26 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi-apirouter如何正确组织路由.md)
 从微信文章 [FastAPI APIRouter：如何正确组织路由](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi-apirouter如何正确组织路由.md) 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FastAPI APIRouter：如何正确组织路由"))
+    核心内容
+      主要章节
+    深度分析
+      1. APIRouter 的本质：模块化路由容器
+      2. 前缀与标签：API 可发现性的基础设施
+      3. 工程化价值：从个人项目到团队协作
+      4. 常见反模式与避坑指南
+    实践启示
+      给后端开发者
+      给技术负责人/架构师
+      给全栈开发者
+    相关实体
+```
+
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/qkMW9of3yj_sk1f3rKBQEg
 

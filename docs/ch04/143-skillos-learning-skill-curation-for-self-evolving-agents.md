@@ -6,6 +6,35 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-os-learning-skill-curation-self-evolving-agents.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SkillOS: Learning Skill Cura…"))
+    论文信息
+    核心贡献
+    系统架构
+    核心创新
+      1. 任务分组训练
+      2. 复合奖励设计
+      3. GRPO 优化
+    实验结果
+      ALFWorld 多步交互任务
+      关键发现
+    深度分析
+      技能策展为何是自我进化的关键瓶颈
+      技能作为 Markdown 文件的工程哲学
+      Insert/Update/Delete 三元…
+      与现有工作的本质区别
+    实践启示
+      1. 构建自我进化系统的工程路线
+      2. 任务分组策略决定学习信号质量
+      3. 复合奖励的工程实现
+      4. 技能外部化的运维价值
+    相关实体
+```
+
 ## 论文信息
 - **作者**: Siru Ouyang, Jun Yan, Yanfei Chen 等
 - **发布**: 2026-05-08

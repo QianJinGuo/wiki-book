@@ -17,6 +17,21 @@ This eventually [got resolved with the help of NPM support](https://x.com/andrii
 
 There was some confusion in the replies to the tweets, and since it's not the first time we've seen this issue crop up, we thought it might be interesting to explain what this limit is, how we got here and some steps you can take to avoid running into this.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Why Drizzle ORM couldn't pub…"))
+    Manifests
+    Packuments
+    The 100 MB limit.
+    Is my project at risk o…
+    How can I avoid large m…
+    Fixing registry ineffic…
+    What our registry does
+```
+
 ## Manifests
 
 When you run npm publish in your project and you've successfully authenticated, the client submits the package and its metadata to the registry.

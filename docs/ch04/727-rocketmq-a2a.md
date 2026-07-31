@@ -8,6 +8,23 @@
 
 阿里云消息团队发表的 Apache RocketMQ 创新论文《RocketMQ-A2A: Reliable Session-Level Replayable Event Streams for Large-Scale Multi-Agent Collaboration》入选 FSE 2026 Industry Papers Track（CCF-A 类软件工程顶级会议）。论文提出以"会话级可重放事件流"为核心的 A2A 交互范式，将消息队列作为多智能体通信基础设施。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("RocketMQ-A2A：会话级可重放事件流驱动的多智能…"))
+    核心洞察：生产 MAS 的瓶颈不在模型层
+    LiteTopic：面向海量会话的轻量队列模型
+    RocketMQ-A2A 异步交互范式
+    性能数据
+    生产落地
+      百炼（阿里云大模型服务平台）
+      Qoder Cloud Agents
+    开源与论文
+    与业界关系
+```
+
 ## 核心洞察：生产 MAS 的瓶颈不在模型层
 
 阿里云服务多个生产级 MAS 时发现四类系统级瓶颈：

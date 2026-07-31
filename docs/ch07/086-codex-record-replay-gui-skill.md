@@ -8,6 +8,18 @@
 
 OpenAI 为 Codex 上线 Record & Replay 功能：在 macOS 上演示一次 GUI workflow，Codex 把它编译成可复用的 Skill。不是屏幕录制，而是 **workflow capture**——具体操作被抽象为结构化步骤、可变输入和验收条件。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex Record & Replay：GUI 演示…"))
+    技术链路：录制 → 转译 → 回放
+    生态定位
+    适用场景与边界
+    局限
+```
+
 ## 技术链路：录制 → 转译 → 回放
 
 **录制阶段**依赖 Computer Use（需要 macOS Screen Recording + Accessibility 权限）。Codex 观察完成流程所需的动作和窗口内容。

@@ -8,6 +8,26 @@
 
 闪购搜索团队（阿里云开发者 久梦）把企业级 AI 助手落地到钉钉群的完整方案。核心是用 **钉钉 Stream（WebSocket）+ CLI 代理** 替代传统 Webhook 方案，避开内网公网回调限制；引擎侧 Qoder CLI 与 Claude Code 并行部署，通过 ProcessBuilder 子进程调用；上下文与权限走 LinkedHashMap LRU + 管理员/只读双模式；外部工具通过 MCP 协议 + 静态 Token 跳过 OAuth 浏览器授权。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("钉钉 Stream + CLI 代理双引擎 AI 助手架构"))
+    一、问题域：为什么传统 Webhook 方案失败
+    二、架构核心：钉钉 Stream + CLI 代理
+    三、双引擎选择：从 Qoder CLI 到 C…
+    四、MCP 工具集成：跳过 OAuth 的无头方案
+    五、生产级稳定性：stdbuf + 进程控制 …
+      5.1 stdbuf 行缓冲（必须）
+      5.2 ProcessBuilder 子进程控制
+      5.3 用户上下文三重防护
+      5.4 权限隔离双模式
+    六、五级知识沉淀模型（L0-L4）
+    七、踩坑经验清单
+    八、关键配置参考
+```
+
 ## 一、问题域：为什么传统 Webhook 方案失败
 
 闪购搜索团队的日常操作分散在 SLS 日志、TPP 实验平台、代码仓库等多个平台。目标是**在钉钉群里直接对话一个 AI 助手**，让 AI 替人查日志、看实验、分析性能、部署代码。

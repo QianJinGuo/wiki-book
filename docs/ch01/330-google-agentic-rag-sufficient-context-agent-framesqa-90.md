@@ -10,6 +10,26 @@
 
 > **Background**：Google Research 在 2026-04-27 发布的 vendor 技术博客，宣布 Gemini Enterprise Agent Platform 的 Agentic RAG 能力。核心创新是 **Sufficient Context Agent**（一种 query→draft→gap→iterate 的反思型质量门控），在 FramesQA 基准上达到 90.1% cross-corpus 准确率（vs Vanilla RAG baseline up to 34% improvement）。**注意 vendor framing**——34% 提升限定在 Google 内部 factuality 数据集，未在 BEIR 等公开 benchmark 验证。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google Agentic RAG — Suffici…"))
+    概述
+      单步 RAG 的痛点
+    三个独有贡献
+      1. 5-Phase 编排 with Pers…
+      2. Sufficient Context A…
+      3. Cross-Corpus Routing…
+    5-Phase 完整流程
+    与现有 entity 差异化
+    FramesQA 例子：M*A*S*H vs …
+    局限
+    深度分析
+    实践启示
+```
+
 ## 概述
 
 Google 的 Agentic RAG 框架将单步 RAG 升级为**多 Agent 协同 + 反思循环**架构，目的是解决多源多跳查询的"信息孤岛"问题。

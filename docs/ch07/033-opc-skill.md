@@ -6,6 +6,26 @@
 
 # 京东健康 OPC 团队产品全流程 Skill 探索
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("京东健康 OPC 团队产品全流程 Skill 探索"))
+    背景
+    核心设计
+      8 个 Product Management …
+      产品全流程四阶段
+    深度分析
+      1. OPC 模式的本质：产品判断力的技能化
+      2. Skill 作为决策框架而非自动化脚本
+      3. 从'快速交付'到'做正确的事'的范式转变
+      4. 七大常见错误与反模式
+    实践启示
+    相关实体
+    来源
+```
+
 ## 摘要
 
 京东健康 OPC（One Person Company）团队在无专职产品角色的模式下，探索将产品全流程 Skill 化——从需求判断、方案设计到交付验证，构建完整的 Agent Skill 体系。基于 Anthropic 开源的 Product Management Skills，他们适配了 OPC 场景的 8 个核心 Skill，实现从问题发现到上线复盘的完整产品闭环。

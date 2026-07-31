@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/context-window-management.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 上下文窗口管理对比"))
+    Overview
+    文件读取策略对比
+    会话压缩（Compaction）策略对比
+    子 Agent 隔离策略对比
+    关键收敛发现
+    与传统内存管理的类比
+    深度分析
+    实践启示
+```
+
 ## Overview
 对比 Pi、OpenClaw、Claude Code、Letta 四个主流 agent 框架的上下文窗口管理策略——文件读取截断、工具结果预算、会话压缩（compaction）、子 agent 隔离。揭示四大框架在上下文管理上的设计收敛：**硬上限+分页+LRU+LLM驱动压缩已成工程共识**，类比传统计算的内存管理系统分层设计哲学。
 **核心洞察：** 上下文不再只是 transcript 里刚好能放下的内容。它变成了系统必须主动管理的对象。最佳设计应让模型自主管理上下文预算，类似于内存管理系统对程序不可见的分层管理。

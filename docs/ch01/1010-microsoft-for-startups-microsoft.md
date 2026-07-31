@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/microsoft-startups.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft for Startups | Mic…"))
+    深度分析
+      价值主张的三层结构
+      生态系统锁定策略
+      创始人案例的印证
+      Credit 机制的商业逻辑
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 文章分析了零售银行业务的核心问题
 - 涉及 AI 在金融领域的应用

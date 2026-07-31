@@ -47,6 +47,24 @@ graph TB
 
 Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理：深思圈 2026-06-05）——提出 **"agent 是互联网的新经济主体"** 框架。Stripe 5 套基础设施全面上线：**MPP（机器支付协议）+ Link Agent 钱包（2.5 亿用户）+ Stripe Projects（vibe-deploying）+ Metronome + Tempo（流式支付）+ Radar（防 token 盗窃）**。战略目标：把整个 agent 经济的基础设施层**锁定**，如同当年锁定互联网支付。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stripe Agent 经济基础设施 5 套图谱：MP…"))
+    核心框架：Agent 是新经济主体
+    5 套基础设施图谱
+    1. 机器支付协议（MPP）
+    2. Link Agent 钱包
+    3. Stripe Projects（Vibe…
+    4. Metronome + Tempo（流式…
+      稳定币的技术合理性
+    5. Radar（防 Token 盗窃）
+    Token 计费革命：SaaS 经济学失效
+      5.1 两个转型案例
+```
+
 ## 核心框架：Agent 是新经济主体
 
 > "**互联网上出现了新的经济主体。它叫 Agent**。"

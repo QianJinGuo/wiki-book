@@ -10,6 +10,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("云端 Agent 基础设施两条硬经验：CreaoAI 状…"))
+    深度分析
+      1. 桌面 → 云端 Agent 的信任模型差异
+      2. 第一版失败的根本原因是「变更节奏冲突」
+      3. 借鉴操作系统「内核 vs 用户态」分离的…
+      4. 凭据隔离的「不可信代码 + 短期凭据」组合
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 CreaoAI 联合创始人在 2026 年 6 月分享了云端 Agent 基础设施的两条硬经验：① **把变化慢的和变化快的分开**——用户环境（包、文件、配置）冻结到用户主动改变为止，平台 Runner 代码则通过 hot-swap 热替换不依赖状态；② **把凭据隔离在执行边界之外**——长生命周期凭据绝不进入沙箱，沙箱通过 API bridge 桥接层 + IP 白名单 + 短期 JWT 三层校验发起外部调用。这两条经验的核心是判断标准：对于云平台上持久化的每一样东西，都要问清楚「谁控制它的变更节奏」。

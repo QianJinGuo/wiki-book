@@ -6,6 +6,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek-V4深度拆解：一篇论文同时做了五件大事"))
+    关键要点
+    相关实体
+    深度分析
+      1. 架构追赶背后的工程化壁垒
+      2. CSA/HCA混合注意力：推理经济学的再…
+      3. 训练不稳定性的隐患
+      4. 硬件生态的长期布局
+    实践启示
+      对AI基础设施团队
+      对模型开发者
+      对技术决策者
+```
+
 ## 摘要
 ---
 source: wechat

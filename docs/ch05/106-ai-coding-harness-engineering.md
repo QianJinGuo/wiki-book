@@ -8,6 +8,20 @@
 
 腾讯技术工程 atreusliu 发布的团队级 Harness Engineering 完整落地规范，从理念到实操覆盖 6 大支柱、5 层架构、3 阶段路线图和详细配置步骤，是 AI Coding 工具链在团队中系统化落地的生产级实践指南。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("驾驭AI Coding：面向团队的Harness Eng…"))
+    Harness 6 大支柱
+    AI Coding 一体化架构（5 层）
+    '3+1 Phase' 多 Agent 协作
+    实施路线图（3 阶段）
+    工具系统三件套
+    关键理念
+```
+
 ## Harness 6 大支柱
 
 | 支柱 | 核心问题 | 对应工具与团队实践 |

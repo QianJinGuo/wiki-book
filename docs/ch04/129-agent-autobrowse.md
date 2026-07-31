@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/autobrowse-browserbase-persistent-skill-files.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("浏览器 Agent 的失忆问题：Autobrowse 如…"))
+    背景：探索税（Discovery Tax）
+    Autobrowse 是什么
+    五步学习循环
+      第一步：目标（Objective）
+      第二步：运行（Run）
+      第三步：研究（Study）
+      第四步：迭代（Iterate）
+    Craigslist 基准：$0.22 → $…
+    哪些情况不该用（自批评）
+    技能文件才是真正的交付物
+    技能库的复利效应
+    递归改进自身
+```
+
 ## 背景：探索税（Discovery Tax）
 浏览器 Agent 的核心缺陷：**没有记忆**——每次会话结束，它学到的一切都跟着蒸发。
 > "它是个有推理能力的健忘症患者：每次解决问题的方式都很优雅，但会话一关闭，醒来之后什么都记不住，一切归零。"

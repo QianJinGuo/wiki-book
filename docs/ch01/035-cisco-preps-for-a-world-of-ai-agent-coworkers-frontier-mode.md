@@ -8,6 +8,23 @@
 
 URL: https://www.nextplatform.com/ai/2026/06/03/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats/5250406
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cisco Preps For A World Of A…"))
+    深度分析
+      1. AI Agent 作为同事：企业基础设施…
+      2. Frontier model 的安全威胁
+      3. 企业网络的 agent 准备度
+    实践启示
+      1. 为 agent 准备'数字工位'
+      2. Agent 流量需要独立的监控策略
+      3. Frontier model 的安全评估
+    相关实体
+```
+
 ## 深度分析
 
 ### 1. AI Agent 作为同事：企业基础设施的准备

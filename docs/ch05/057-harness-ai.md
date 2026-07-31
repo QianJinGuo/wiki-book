@@ -8,6 +8,25 @@
 
 2026年7月4日，Lilian Weng（翁荔）更新博客，系统梳理了从 ACE、Meta Context Engineering 到 Self-Harness、Darwin Gödel Machine 等一系列围绕 "Harness 自我优化" 的研究工作。文章核心问题：递归式自我提升（Recursive Self-Improvement, RSI）究竟会先发生在模型权重层面，还是先发生在这层「脚手架」上？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升"))
+    Harness 设计模式
+    Harness 优化技术全景
+      上下文工程
+      工作流设计
+      自我提升型 Harness
+    深度分析
+      1. Harness 工程正在从'工程实践'走…
+      2. 'Harness 层 vs 核心智能'的…
+      3. 评估者瓶颈是 RSI 的首要障碍
+      4. 多样性坍缩与奖励作弊的系统性风险
+    实践启示
+```
+
 ## 核心要点
 
 - **Harness 的定位**：介于原始模型与真实世界场景之间的系统层，负责编排执行流程、工具调用、上下文管理、结果评估。其重要性不亚于模型本身的原始智能。

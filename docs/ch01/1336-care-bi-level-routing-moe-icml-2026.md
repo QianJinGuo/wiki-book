@@ -8,6 +8,26 @@
 
 > **Background**：本文档基于对港大ICML 2026论文《Scaling Continual Learning to 300+ Tasks with Bi-Level Routing Mixture-of-Experts》的系统分析建立。参考了机器之心对该论文的报道。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CaRE: Bi-Level Routing MoE —…"))
+    核心贡献
+      三大创新
+    方法设计
+      双阶段路由机制
+      参数效率
+    研究动机
+    深度分析
+      参数效率与可扩展性的系统权衡
+      '判别性 + 全面性'双目标路由的认知隐喻
+      跨时间线的全局知识整合能力
+      评测范式的隐性贡献：OmniBenchmark…
+    实践启示
+```
+
 ## 核心贡献
 
 CaRE（Scalable Continual Learner with efficient Bi-Level Routing Mixture-of-Experts）是香港大学提出的全新持续学习范式，首次将连续学习成功扩展到包含 **300+ 非重叠任务**的超长序列。

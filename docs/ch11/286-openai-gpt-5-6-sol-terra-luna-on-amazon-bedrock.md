@@ -9,6 +9,17 @@
 > **vxc score**: 72 | AWS官方GPT-5.6部署指南，涵盖Sol/Terra/Luna三款模型的选型、推理配置、Prompt缓存、Codex集成、配额管理
 > **发布**: Get started with OpenAI GPT-5.6 Sol, Terra, and Luna on Amazon Bedrock
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI GPT-5.6 Sol/Terra/Lun…"))
+    Summary
+    Key Points
+    Related Entities
+```
+
 ## Summary
 
 ```mermaid
