@@ -9,15 +9,33 @@
 ## 深度分析
 
 ```mermaid
-graph LR
-    ATK[攻击向量] --> WAF[防护层]
-    WAF --> IDS[检测]
-    IDS --> RSP[响应]
-    RSP --> AUD[审计]
-    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
-    class ATK t
-    class WAF,IDS,RSP,AUD d
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 **GPU Allocation Utilization 是推理工作负载中最容易被忽视的效率维度，但它往往比 MFU 更直接地决定实际成本。** 文章提出了一个三级利用率的框架：Model FLOP/s Utilization（最严格，衡量算法算力利用效率）→ nvidia-smi "GPU utilization"（kernel 在 GPU 上运行的时间比例）→ GPU Allocation Utilization（付费 GPU 秒数中实际运行应用程序代码的比例）。第三个指标是大多数公司在推理场景下实际亏损最大的盲区：在非峰值时段，多数组织的 GPU Allocation Utilization 仅 10-20%，意味着 80-90% 的 GPU 费用在为空闲容量付费。 这个指标与 MFU 并不矛盾——MFU 衡量给定 GPU 的计算效率，Allocation Utilization 衡量 GPU 是否被有效分配给工作负载；即使 MFU 高达 90%，如果 GPU 在 70% 的时间内等待请求，Allocation Utilization 仍然只有 30%。

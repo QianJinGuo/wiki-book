@@ -8,13 +8,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[Gateway]
-    GW --> SVC[服务]
-    SVC --> DB[数据]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 使用Amazon EMR Serverless Storage简化运维节省成本 by awschina on 16 12月 2025 in Analytics Permalink Share 一、前言 我们知道Spark作业在运行过程中需要临时存储来保存计算过程中产生的Shuffle数据，具体为每个作业的配置多大的存储空间来保存Shuffle数据，在作业运行之前我们不容易评估，由于可能的数据倾斜我们可能还要为Executor配置更多的存储。由于Shuffle数据的存在，Spark DRA(Dynamic Resource Allocation)在容器中运行时没有External shuffle service(非ON YARN调度，而是在比如k8s/EMR Serverless)并不能很好的工作，因为Shuffle数据可能会被作业的其它的Stage引用，如果释放Executor会造成Shu

@@ -6,6 +6,41 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((AI工具生态))
+    CLI Agent
+      Codex
+      Claude Code
+      Cursor
+    浏览器工具
+      Playwright
+      Browser-use
+      CDP
+    开发平台
+      VS Code插件
+      JetBrains插件
+      IDE集成
+    知识管理
+      Wiki系统
+      RAG工具
+      笔记工具
+    自动化工具
+      工作流引擎
+      Zapier类
+      n8n
+    模型服务
+      OpenAI API
+      Anthropic API
+      开源推理
+    监控与调试
+      Langfuse
+      Helicone
+      可观测性
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

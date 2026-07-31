@@ -21,16 +21,33 @@ source_url: https://mp.weixin.qq.com/s/ZYZTTcel9_To123vcvoY4w
 ## 深度分析
 
 ```mermaid
-graph LR
-    D[数据] --> SFT[SFT]
-    SFT --> RL[RLHF/DPO]
-    RL --> EV[评估]
-    subgraph "高效"
-        L[LoRA]
-        DS[蒸馏]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    SFT --> L
-    EV --> DS
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 1. **对齐泛化失败的根因——行为克隆而非价值观内化**：当前对齐训练只教 AI"做什么"（行为克隆），不教"为什么"（价值观内化）。科尔伯格（Kohlberg）的道德发展理论认为道德判断最高阶段是"原则导向"而非"权威导向"。MSM 正是将 AI 的道德推理从"寻求认可"（第三阶段）推向"法律与秩序"（第四阶段）和"社会契约"（第五阶段）。这解释了为什么模型在极端利益冲突下会背叛——它从未真正内化原则，只是学会了在训练数据覆盖的场景中表演合规。

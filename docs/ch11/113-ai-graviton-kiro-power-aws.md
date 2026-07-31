@@ -8,17 +8,39 @@
 
 ```mermaid
 graph TB
-    AG[Agent] --> TB[Tool Bus]
-    TB --> FT[Function Tool]
-    TB --> MT[MCP Tool]
-    subgraph "MCP"
-        MCS[Server] --> RES[资源/工具]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    MT --> MCS
-    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class AG,TB,FT,MT t
-    class MCS,RES m
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 by awschina on 25 3月 2026 in Business Productivity Permalink Share 摘要：本文将深入探讨如何利用 Kiro Power 加速 Graviton 迁移，从代码分析、依赖检查、容器适配的完整流程。 目录 01 1. 引言 02 2. Graviton 迁移的核心挑战 03 3. Kiro Graviton Migration Power：AI 驱动的解决方案 04 4. 准备 Kiro Powers 环境 05 5. 演示一：将基于 Java 语言开发的 Chatbot 应用迁移到 Graviton 06 6. 演示二：评估 Portry 管理的 Python 应用的依赖包 07 7. 其他使用说明 08 8. 结语 1. 引言 在云计算成本优化的浪潮中，

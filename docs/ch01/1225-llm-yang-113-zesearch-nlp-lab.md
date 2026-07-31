@@ -23,18 +23,33 @@
 ## 核心框架：四阶段闭环 + 一控制层
 
 ```mermaid
-graph LR
-    DA["1.数据获取<br/>静态筛选→环境交互→合成生成"]
-    DS["2.数据筛选<br/>模型引导评分+自适应选择"]
-    MO["3.模型优化<br/>GRO: 生成→奖励→优化"]
-    IR["4.推理细化<br/>搜索/反思/工具/修正"]
-    AE["自动评估<br/>贯穿全程的控制层"]
-    DA --> DS --> MO --> IR
-    IR -->|"闭环反馈"| DA
-    AE --- DA & DS & MO & IR
-    style DA fill:#8b5cf6,stroke:#333,color:#fff
-    style MO fill:#f97316,stroke:#333,color:#fff
-    style AE fill:#22c55e,stroke:#333,color:#fff
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 

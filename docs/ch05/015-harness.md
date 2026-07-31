@@ -7,21 +7,33 @@
 ## 摘要
 
 ```mermaid
-graph LR
-    CAND[候选输出] -->|验证| VER[已验证动作]
-    VER -->|dry-run| EXEC[已执行动作]
-    EXEC -->|checkpoint| COMMIT[已提交状态]
-    
-    CAND -.->|跳过验证| ACCIDENT1[事故: 猜测当事实]
-    CAND -.->|跳过dry-run| ACCIDENT2[事故: 副作用不可逆]
-    VER -.->|跳过退场| ACCIDENT3[事故: 临时结论成长期偏好]
-    
-    COMMIT -->|失败回写| TRACE[Trace分析]
-    TRACE -->|修正验证规则| CAND
-    
-    style ACCIDENT1 fill:#fdd
-    style ACCIDENT2 fill:#fdd
-    style ACCIDENT3 fill:#fdd
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 若飞 2026-06-02 续篇把 Agent Harness Engineering 综述（[LLM-Harness Survey](https://picrew.github.io/LLM-Harness/)）从"组件清单"推到"**运行时闭环**"。核心论断：Harness 之后，Agent 可靠性的下一步是**状态边界**和**失败闭环**——模型可以给出可能性，但系统不能轻易把可能性当成事实。下一步拆成三件事：**运行时契约 / 状态提交闸门 / 失败回写闭环**。

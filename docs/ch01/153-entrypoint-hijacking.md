@@ -12,11 +12,33 @@
 ## 深度分析
 
 ```mermaid
-graph LR
-    ATK[攻击] --> WAF[防护]
-    WAF --> IDS[检测]
-    IDS --> RSP[响应]
-    RSP --> AUD[审计]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 EntryPoint Hijacking 是一种**无新建线程**的代码注入技术，核心创新在于将恶意代码写入内存后不立即执行，而是等待进程正常创建新线程时触发。这与传统的 Thread Injection（CreateRemoteThread）等技术的根本区别在于：不依赖 API 调用产生新线程，不在进程上下文留下明显的线程创建痕迹，从而大幅提升 EDR 规避能力。

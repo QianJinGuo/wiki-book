@@ -14,11 +14,33 @@ CLARITY Act 的核心张力在于它试图同时解决两个问题：监管透�
 ## 实践启示
 
 ```mermaid
-graph LR
-    OBS[可观测性] --> GRD[护栏]
-    GRD --> ORC[编排]
-    ORC --> AG[Agent]
-    AG -->|"反馈"| OBS
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 **金融科技公司需将 CLARITY Act 的证券/商品划界逻辑纳入产品设计。** 如果你的产品涉及通证发行或稳定币嵌入，在架构层面需要考虑"从证券到商品"的转换路径——包括法律顾问介入的时机、链上行为日志的留存（用于事后证明性质转变），以及可能需要的监管沙盒备案。

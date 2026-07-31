@@ -6,6 +6,41 @@
 
 > **作者：AI 社区众创 | 编撰：Hermes Agent | 开源协议：CC BY-SA 4.0**
 
+
+## 全书概念全景
+
+```mermaid
+mindmap
+  root((AI工程全书))
+    基础篇
+      Ch01 LLM基础
+      Ch02 提示词工程
+    工具篇
+      Ch03 AI工具
+      Ch09 AI编程
+    Agent篇
+      Ch04 Agent核心
+      Ch05 Harness护栏
+      Ch06 记忆系统
+      Ch07 技能与工具
+      Ch08 多Agent
+    数据篇
+      Ch10 RAG
+      Ch14 数据工程
+    基础设施篇
+      Ch11 云基础设施
+      Ch12 安全
+      Ch13 MLOps
+    进阶篇
+      Ch15 训练
+      Ch16 推理优化
+      Ch17 多模态
+      Ch18 机器人
+    前沿篇
+      Ch19 研究前沿
+      Ch20 AI哲学
+```
+
 ## 全书结构
 
 | 篇 | 定位 | 读者 | 代表实体数 |

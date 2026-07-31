@@ -26,20 +26,33 @@ Skill 是 Agent 能力的最小封装单元，它把领域知识、工作流程�
 ## 深度分析
 
 ```mermaid
-graph LR
-    INT[意图] --> PLN[拆解]
-    PLN --> GEN[生成]
-    GEN --> VAL[验证]
-    VAL -->|"失败"| PLN
-    subgraph "上下文"
-        CM[CLAUDE.md]
-        SK[Skills]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    INT --> CM & SK
-    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class INT,PLN,GEN,VAL f
-    class CM,SK c
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 **Skill 评估框架的核心问题：能跑和好用之间隔着"可量化标准"。** 文章指出了 Skill 开发中的核心困境：description 写得太宽泛导致 Agent 不触发，工作流缺少分支导致复杂输入就翻车，需要脚本却硬塞 Markdown 导致重复执行同一段代码。这些问题写的时候不一定能看出来，只有真正使用时才会暴露（也可能不会暴露）。这意味着 Skill 的质量无法靠"看起来合理"来判断，必须有一套可量化的评估体系。

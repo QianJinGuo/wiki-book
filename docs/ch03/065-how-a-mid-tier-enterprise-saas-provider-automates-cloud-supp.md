@@ -20,23 +20,39 @@ Mid-tier SaaS automates cloud support triage with a 5-agent workflow, boosting t
 
 ```mermaid
 graph TB
-    subgraph "协作模式"
-        L["Leader<br/>编排者"] --> W1["Worker 1"]
-        L --> W2["Worker 2"]
-        L --> W3["Worker 3"]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "通信"
-        MSG[消息队列<br/>异步]
-        A2A[A2A协议<br/>Agent间]
-        MCP[MCP<br/>工具调用]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    W1 & W2 & W3 --> MSG
-    L --> A2A
-    W1 & W2 --> MCP
-    classDef role fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef proto fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class L,W1,W2,W3 role
-    class MSG,A2A,MCP proto
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 

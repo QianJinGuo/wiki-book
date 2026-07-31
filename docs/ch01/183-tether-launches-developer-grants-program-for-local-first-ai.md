@@ -15,11 +15,33 @@
 ## 深度分析
 
 ```mermaid
-graph LR
-    SRC[数据源] --> ING[采集]
-    ING --> PROC[处理]
-    PROC --> STO[存储]
-    STO --> SERV[服务]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 Tether 的资助计划表面是生态建设，实质是平台锁定的前瞻布局。QVAC 作为 Tether 的端侧 AI 推理平台，通过资助开发者构建核心库、文档、应用来降低生态进入门槛——这是典型的"先养工具，再圈用户"路径。资助金额 $1,500–$4,000 对独立开发者尤其有吸引力，在东南亚、非洲、南美等地区相当于 1–2 个月的平均工资。

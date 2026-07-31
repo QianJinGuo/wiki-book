@@ -22,21 +22,39 @@
 
 ```mermaid
 graph TB
-    subgraph Core["Pi Agent 核心"]
-        A[Agent] -->|推理| LLM[LLM 对话]
-        A -->|调用| T[Tools]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph Ext["Extensions 扩展层"]
-        E1[消息修改] -->|on_message| A
-        E2[工具拦截] -->|on_tool_call| A
-        E3[结果改写] -->|on_tool_result| A
-        E4[状态更新] -->|on_turn_end| A
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    subgraph Reg["能力注册"]
-        R1[自定义工具] --> A
-        R2[终端命令] --> A
-        R3[模型 Provider] --> A
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 Pi Agent 的核心设计哲学体现了一种彻底的极简主义：仅用三个抽象（Agent、Tools、Extensions）就撑起了整个框架，而把所有的复杂性都推到了扩展层。Agent 负责与大模型对话推理，Tools 定义 Agent 可调用的能力，Extensions 则是对外开放的扩展系统——没有工作流编排器、没有状态机图引擎、没有记忆检索层。这种"极度克制的核心"策略使得框架本身的学习曲线极低，同时将复杂性封装在可插拔的扩展中，让用户按需引入。

@@ -8,13 +8,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[Gateway]
-    GW --> SVC[服务]
-    SVC --> DB[数据]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 使用 Kiro 规范驱动开发加速数据质量建设 by awschina on 09 12月 2025 in AWS re:Invent Permalink Share 业务背景 无论是传统行业企业的数据运营分析，互联网企业的数据行为分析，再到 AI 时代的领域数据上下文知识传递，精确的参数知识微调，数据质量一直都是极为重要的一环。在与企业客户的交流中逐渐发现，数据质量已从“技术小问题”升级为业务危机。近年来，即便企业在大数据和工具上投入巨大，脏数据、重复数据和过期数据仍广泛存在，直接威胁到 AI 项目、客户运营和报表的可靠性。 数据管道的质量受数据本身、基础设施、生命周期管理、开发部署和处理流程等多维因素影响，其中错误数据类型、清洗阶段问题和兼容性问题尤为常见，导致管道不稳定、数据不可用。数据从需求到落地阶段的语义表达不一致，实际数据管道中的重复和不一致记录、缺乏前瞻性的清洗与治理、依赖人工

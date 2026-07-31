@@ -40,14 +40,33 @@
 ## 5 步法（核心方法论）
 
 ```mermaid
-graph LR
-    S1["Step 1<br/>/plan 需求梳理<br/>14字段设计"] --> S2["Step 2<br/>飞书应用配置<br/>凭证·权限·发布"]
-    S2 --> S3["Step 3<br/>多维表格配置<br/>字段类型匹配"]
-    S3 --> S4["Step 4<br/>SOLO Work模式<br/>自动采集脚本"]
-    S4 --> S5["Step 5<br/>定时任务+监控<br/>7x24稳定运行"]
-    S5 -.->|"3400+帖子"| S3
-    style S1 fill:#8b5cf6,stroke:#333,color:#fff
-    style S5 fill:#22c55e,stroke:#333,color:#fff
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 
