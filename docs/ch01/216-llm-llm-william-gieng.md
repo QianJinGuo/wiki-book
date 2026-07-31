@@ -4,76 +4,11 @@
 
 > 📊 Level ⭐⭐ | 22.3KB | `entities/llm-themes-not-observations-causal-inference-william-gieng-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLM 主题 生成变量 别把 LLM 提取的主题当成真实变量"))
-    经典反例 客服账单不满主题
-      危险工作流
-    NULL 干预的 4 类常见错误
-      选择偏差
-      时序问题
-      测量问题
-    案例 billshock 主题导致符号反转
-      模拟场景
-      种模型设定的 4 个答案
-      符号反转的机制
-    选择问题的 3 种处理假设
-      更深层次问题
-    测量问题 差异性测量误差
-      LLM 输出的不显嘈杂是隐患
-      差异性测量误差才是真正造成损害的地方
-      相关文献
-    问诊断清单
-    生成变量 的更广泛模式
-    关键术语
-```
-
 ## 概述
 
 **"生成变量"（Generated Variable）** 是 LLM 时代因果推断方法论的核心议题。William Gieng 在 2026-06 通过 Towards Data Science 发表《LLM Themes Are Not Observations》，指出 **LLM 从文本提取的主题标签不应被直接视为客户属性的观测值**——它继承了**文本产生机制、模型提取过程和样本选择机制**中的隐含假设。一旦把 NULL 填成 0 或"未提及问题"或 IPW，**就会引入选择偏差、时序偏差、测量误差、变量角色误判四类错误**。**错误地控制干预后生成的文本主题，甚至可能导致干预效应方向被反向估计**（真实 −0.50 → 朴素 +0.12）。
 
 ## 核心论点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 > **别把 LLM 提取的主题当成观测值**。给因果分析从业者的提醒：**警惕"生成变量"**。
 
@@ -310,12 +245,12 @@ Python 案例使用 `numpy.default_rng(7)` + 4 个 logistic 方程，可重现�
 ## 相关实体
 
 - [Video Rag Chunking Strategy](ch01/223-rag.html)（文本 + AI 同源 — 视频 RAG 切片策略）
-- [2 Year 25 Ai Projects Summary](ch01/1119-5-ai.html)（2 年 25 个 AI 项目总结 — 失败案例对照）
-- [Loss Function Development Elvis Sun Goal Loop 2026](ch01/913-20.html)（LFD 强制熵同源 — 都是"系统化检查"思维）
+- [2 Year 25 Ai Projects Summary](ch01/1122-5-ai.html)（2 年 25 个 AI 项目总结 — 失败案例对照）
+- [Loss Function Development Elvis Sun Goal Loop 2026](ch01/926-20.html)（LFD 强制熵同源 — 都是"系统化检查"思维）
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/058-agent-harness.html)（Agent 记忆体系 — 类似"看起来像观测但实际是生成"）
-- [Recent Developments In Llm Architectures Jiqizhixin](ch01/1274-llm.html)（LLM 架构最新进展 — 同主题）
-- [2 Year 25 Ai Projects Summary](ch01/1119-5-ai.html)（2 年 25 个 AI 项目 — 失败方法论对照）
-- [While Breathless In Stodgy Viridian](ch01/529-while-breathless-in-stodgy-viridian.html)（对 LLM 局限的反思同源）
+- [Recent Developments In Llm Architectures Jiqizhixin](ch01/637-llm.html)（LLM 架构最新进展 — 同主题）
+- [2 Year 25 Ai Projects Summary](ch01/1122-5-ai.html)（2 年 25 个 AI 项目 — 失败方法论对照）
+- [While Breathless In Stodgy Viridian](ch01/532-while-breathless-in-stodgy-viridian.html)（对 LLM 局限的反思同源）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-themes-not-observations-william-gieng-causal-inference-2026.md)
 

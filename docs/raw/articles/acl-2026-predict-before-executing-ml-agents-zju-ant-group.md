@@ -5,7 +5,7 @@ source: wechat
 feed_name: 机器之心
 source_published: 2026-07-14
 ingested: 2026-07-14
-type: raw
+type: raw-article
 wechat_mp_fakeid: MP_WXS_3073282833
 sha256: 60d4097a13bcfcd31ba262ec078f9d3e575d903e024bd1239ba4586450be0362
 ---

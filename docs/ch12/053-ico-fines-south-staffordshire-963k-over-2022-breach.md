@@ -4,56 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/ico-fines-south-staffordshire-2022-breach.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ICO fines South Staffordshire"))
-    事件时间线
-    一 从「数据控制者」到「关键基础设施守护者」监管范围的扩张
-    二 「预防不足」重于「响应迟缓」合规重心的转变
-    三 供应链安全短板第三方软件即攻击面
-    四 罚款减免机制的设计逻辑
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 2026年5月，英国信息专员办公室（ICO）对 South Staffordshire 水务公司处以 96.4 万英镑罚款，起因是 2022 年 Cl0p 勒索软件攻击导致超过 60 万用户的个人数据泄露至暗网。该案是 ICO 首次对关键基础设施运营商以数据保护不力为由开出高额罚单，标志着监管范围从传统科技公司扩展至公用事业领域。
 
@@ -119,8 +70,8 @@ ICO 将原始罚款从约 160 万英镑减免至 96.4 万英镑（减免 40%）�
 
 ## 相关实体
 
-- [ICO fines Cl0p victim South Staffs Water over data breach](../ch01/1243-0.html)
-- [AI Code Review](../ch05/094-ai.html)
+- [ICO fines Cl0p victim South Staffs Water over data breach](../ch01/1248-0.html)
+- [AI Code Review](../ch05/095-ai.html)
 - [主题导航 - 网络安全与隐私](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)

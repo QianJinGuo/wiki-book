@@ -10,25 +10,6 @@
 
 Claude Code 并非从零开始设计的开发工具，而是脱胎于 Anthropic 的安全对齐研究。其核心开发者 Boris Cherny 透露当前仅完成约 1% 的愿景。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 身世 从安全对齐到开发工具的革命"))
-    起源 安全对齐研究的意外产物
-      -2022 从安全研究到编码工具
-      早期挑战与 clide 的诞生
-    Boris Cherny 的加入与 Claude Code 的诞生
-      年 9 月 两天的原型
-      年 12 月 两周冲刺
-      年 2 月 正式发布
-    安全对齐基因如何塑造产品特质
-    「1 完成度」的战略意义
-    「两周冲刺」的文化启示
-    从 coding assistant 到 AI 管理员的角色跃迁
-```
-
 ## 起源：安全对齐研究的意外产物
 
 ### 2021-2022：从安全研究到编码工具
@@ -50,41 +31,6 @@ mindmap
 Ben Mann 说：「我爱它。它真的很棒，但它可以好得多。」问题是 clide 太超前了——Sid Bidasaria 后来回忆：「大家都谈论 clide，但它又笨重又慢。」Claude Code 第一位工程师 Adam Wolff 给它加了原始的 agentic 能力——能从部分改动推断用户意图，第一次成功时他在厨房里跳舞。但 clide 始终是研究侧的玩具，太脆弱、太慢、太不稳定。
 
 ## Boris Cherny 的加入与 Claude Code 的诞生
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 2024 年 9 月：两天的原型
 
@@ -115,7 +61,7 @@ Claude Code 脱胎于安全对齐研究这一事实，从根本上塑造了它�
 Boris Cherny 反复强调「我们只完成了 1%」，这句话需要从两个层面理解：
 
 - **产品层面**：当前 Claude Code 的核心能力（终端交互、文件编辑、代码生成）只是起点。真正的长时自主、持久记忆、复杂上下文管理、开放世界规划——这些能力远未到来
-- **战略层面**：Anthropic 对 coding agent 的定位远超当前市场认知。Claude Code 不仅是代码补全工具，而是朝着全栈开发自动化方向演进。这一愿景与 [Codex 的五层架构](../ch01/517-codex.html) 中对「AI 协作的深层架构」的探索方向一致
+- **战略层面**：Anthropic 对 coding agent 的定位远超当前市场认知。Claude Code 不仅是代码补全工具，而是朝着全栈开发自动化方向演进。这一愿景与 [Codex 的五层架构](../ch01/520-codex.html) 中对「AI 协作的深层架构」的探索方向一致
 
 CaT Wu 的观察也印证了信任的建立过程：刚上线时大家会认真阅读每个权限请求，现在很大一部分用户直接 auto-accept 了。信任正在被建立。
 

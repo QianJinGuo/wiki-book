@@ -9,33 +9,6 @@
 > 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)。
 > 把 CPU 缓存的 L1/L2/L3 层级结构**直接迁移到 Agent 上下文管理**，配套"一个工具而不是三十个"的设计原则、读取区间的三重压缩、写入 diff 的分组采样 + 问题分类等具体工程模式。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CPU 缓存类比下的 Agent 上下文管理 L1L2L3"))
-    L1L2L3 三层架构
-      L1 常驻内容 80 覆盖
-      L2 按需加载 15 覆盖
-      L3 兜底路径 5 覆盖
-    executecode 单工具原则 vs Anthropic
-      核心论断
-      三个机制
-      与 Anthropic 工具数量陷阱 的对比
-    L1 实战 读取区间的三重压缩
-      压缩 1 公式别名化
-      压缩 2 自动补充行列语义
-      压缩 3 样式压缩
-    L1 实战 写入 diff 的双重压缩
-      压缩机制 1 分组采样而非全量 dump
-      压缩机制 2 问题分类
-    L2 实战 规格文档按需加载
-    L2 实战 延迟工具 Deferred Tools
-    L3 实战 原始全集 检索技能文件
-    提示词预算分配
-```
-
 ## 一句话总结
 
 **CPU 面对的是同样的问题**——一个程序可能触碰几 GB 数据，但紧贴处理器的存储空间极小。**Agent 上下文管理应当采用同样的 L1/L2/L3 层级结构**：L1 常驻（80% 覆盖）/ L2 按需规格文档（15% 覆盖）/ L3 原始 API 大全 + 检索技能（5%+ 兜底）。配合 **execute_code 单工具原则**（1 个工具 = 0 工具税 + 编程语言表达力），构建在常见场景下响应高效、偶发场景能力完整、罕见场景不会止步的 Agent。
@@ -50,42 +23,6 @@ mindmap
 - 80% 是高频主干任务（bread-and-butter）
 - 15% 是偶发重要任务（crucial-but-occasional）
 - 5%+ 是稀疏长尾（the long tail）
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
 
 Agent 必须覆盖所有场景，但不可能把一切同时塞进上下文——那正是"提示词臃肿"的失败模式。**真正要解决的问题：在整条任务分布曲线上，最小化每个任务平均消耗的上下文开销**。
 
@@ -135,7 +72,7 @@ Agent 写代码 → 代码调函数 → 函数操作电子表格。**没有 read
 2. **execute_code 把所有决策折叠成一步**——让模型用编程语言的完整表达力组合各种能力，而非拼凑僵硬的工具调用
 3. **三个缓存层从同一个入口触达**——模型始终在写代码，L1/L2/L3 只决定它知道哪些函数可调用，以及找到这些函数要付出多少代价
 
-### 与 [Anthropic 工具数量陷阱](ch04/298-ai-agent.html) 的对比
+### 与 [Anthropic 工具数量陷阱](ch04/030-ai-agent.html) 的对比
 
 | 维度 | Anthropic 答案 | 本文答案 |
 |------|----------------|----------|
@@ -336,15 +273,15 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 
 ## 与现有实体的互补关系
 
-- [AI Agent 工具数量陷阱](ch04/298-ai-agent.html) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
+- [AI Agent 工具数量陷阱](ch04/030-ai-agent.html) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
 - [Agent Harness 上下文管理工作集视角](../ch05/058-agent-harness.html) — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
 - [智能体编排层中的上下文管理架构](../ch03/035-agent.html) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程的概念基础
 - [Code as Agent Harness Survey](../ch09/051-code-as-agent-harness.html) — 编程语言作为 Agent 接口的更广义论述
-- [Claude Code 工具设计演进](../ch03/078-claude-code.html) — Anthropic 工具设计的演进
+- [Claude Code 工具设计演进](../ch03/077-claude-code.html) — Anthropic 工具设计的演进
 - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md) — 记忆/上下文/信息的层级
-- [Claude Code 上下文工程 Thariq](../ch03/078-claude-code.html) — 官方 Anthropic 视角
-- [Codex 上下文工程 LastWhisper](../ch01/517-codex.html) — 另一家 Code 厂商的上下文视角
+- [Claude Code 上下文工程 Thariq](../ch03/077-claude-code.html) — 官方 Anthropic 视角
+- [Codex 上下文工程 LastWhisper](../ch01/520-codex.html) — 另一家 Code 厂商的上下文视角
 - [上下文工程系列](ch04/060-agentic-ai.html) — 系列化上下文工程讨论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cpu-cache-analogy-agent-context-management-liwen-2026-06-12.md)

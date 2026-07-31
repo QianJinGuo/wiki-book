@@ -5,7 +5,7 @@ source_author: "Kario Chen"
 source_publisher: "腾讯技术工程"
 ingested: 2026-07-08
 sha256: "2505bd4402e1d585a7ee39ee00f8bc0ca2a39630c0f2f952ebc5c4e0729a65de"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [token-optimization, context-management, agent-architecture, prompt-engineering, sub-agent, cost-efficiency, harness-design]
 ---

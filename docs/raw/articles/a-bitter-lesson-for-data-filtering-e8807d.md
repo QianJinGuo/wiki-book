@@ -1,6 +1,6 @@
 ---
 title: A Bitter Lesson for Data Filtering
-type: article
+type: raw-article
 tags: [reinforcement-learning, skill-curation, self-evolving-agents, llm-agent, skill-repo, grpo, composite-rewards]
 source: newsletter
 source_url: https://arxiv.org/abs/2605.19407

@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 11.4KB | `entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenSquilla launches open-source"))
-    核心问题诊断 为什么大多数 Agent 部署在浪费 Token
-    成本控制技术栈 协调路由策略
-    四层认知记忆架构 受认知科学启发的记忆设计
-    安全架构 syscall 级隔离而非容器包装
-    何时考虑 OpenSquilla
-    与其他方案的对比考量
-    技术选型注意事项
-    开发者入手建议
-```
-
 ## 核心要点
 - OpenSquilla 发布首个公开版本 v0.1.0，Apache-2.0 许可，可自托管
 - 定位：面向长期运行、高频会话的 Agent 部署场景，解决 Token 成本累积问题
@@ -30,42 +14,13 @@ mindmap
 - Python 3.12+，基于 GitHub 发行 
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Cline releases open-source agent runtime SDK](../ch04/003-agentrun.html)
+- [Cline releases open-source agent runtime SDK](../ch04/444-agentrun.html)
 - [Spring AI AI Agent Demo](../ch03/035-agent.html)
-- [SkillX — 层次化技能知识库](../ch07/056-skillx.html)
+- [SkillX — 层次化技能知识库](../ch07/057-skillx.html)
 
-- [intercom, now called fin, launches an ai agent whose only jo](../ch04/404-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
+- [intercom, now called fin, launches an ai agent whose only jo](../ch04/408-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
 
 ## 深度分析
 ### 核心问题诊断：为什么大多数 Agent 部署在浪费 Token？

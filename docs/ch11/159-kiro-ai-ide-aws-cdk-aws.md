@@ -4,60 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/blog-03-kiro-ai-cdk-development.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("使用 Kiro AI IDE 开发 AWS CDK 部署架构"))
-    Kiro AI IDE 的核心能力
-    三层堆栈架构的演进逻辑
-    关键技术决策点
-    效率提升的关键路径
-    Spec 驱动开发的实施步骤
-    常见问题处理
-    人机协作最佳实践
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 by awschina on 17 12月 2025 in AWS Big Data Permalink Share 概述 本文记录了一次真实的 AI 辅助开发过程：如何使用 Kiro AI IDE 从一个模糊的部署需求开始，通过人机协作，逐步设计出三层堆栈架构，并完成基于Amazon EMR Flink 智能监控系统的AWS CDK 部署代码。 开发成果 ： – 开发时间：从 10 小时缩短到 1.5 小时（效率提升 6-7 倍） – 代码质量：自动应用 AWS 最佳实践 – 架构演进：从单堆栈到三层堆栈的优化过程 项目地址 ： https://github.com/yangguangfu007/emr-flink-monitoring-agent 背景：什么是 AWS CDK 和 Kiro？
 
 ## 核心技术
@@ -128,15 +75,15 @@ FrontendStack（前端应用，经常更新）
 - 深入研究 Kiro MCP Skills 与 Amazon Bedrock 的集成
 
 ## 相关实体
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/035-agent.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
-- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1016-spec.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
+- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1034-spec.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
-- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch05/094-ai.html)
+- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch05/095-ai.html)
 
 ---
 

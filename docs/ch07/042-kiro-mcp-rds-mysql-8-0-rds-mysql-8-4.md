@@ -4,45 +4,11 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/kiro-mcp-rds-mysql-upgrade.md`
 
-
 ## 概述
 
 本文介绍 RDS MySQL 升级助手，这是一款开源工具，可批量执行 Amazon RDS MySQL 8.0 到 RDS MySQL 8.4 主版本升级。它解决了大规模主版本升级中最棘手的两大难题：系统地修复数百个实例的预检查问题，以及验证升级后的应用程序行为。该工具提供了一个包含 19 项 SQL 预检查的引擎，并附带修复方案、自动化参数组和选项组迁移、蓝绿部署和原地升级编排（包含切换前安全检查）以及应用程序验证框架——所有作业都可以通过 shell 脚本或 Kiro IDE/CLI 的自然语言进行访问。
 
 ## 核心能力
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 - **19 项 SQL 预检查引擎**：系统地修复数百个实例的预检查问题
 - **自动化参数组和选项组迁移**
@@ -55,16 +21,16 @@ graph TB
 该工具解决了大规模主版本升级中最棘手的两大难题：系统地修复数百个实例的预检查问题，以及验证升级后的应用程序行为。
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
-- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/065-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/290-aws-devops-agent.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/281-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
+- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/064-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/292-aws-devops-agent.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/279-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
-- [Amazon Quick Mcp Kdbx Time Series](ch07/075-amazon-quick-mcp.html)
-- [Transforming Rare Cancer Research With Amazon Quick Integrat](../ch11/222-amazon-quick.html)
+- [Amazon Quick Mcp Kdbx Time Series](ch07/076-amazon-quick-mcp.html)
+- [Transforming Rare Cancer Research With Amazon Quick Integrat](../ch11/224-amazon-quick.html)
 ## 深度分析
 
 **1. "Agent + MCP + Shell"三层架构的工程实践意义**

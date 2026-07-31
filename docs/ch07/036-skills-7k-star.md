@@ -8,65 +8,11 @@
 
 > **背景**：本文是 ConardLi（code秘密花园）分享其开源 Skills 项目 garden-skills 获得 7K Star 的经验复盘。Skills 是一系列可复用的 AI Agent 能力模块，旨在降低开发者构建 AI Agent 的门槛。项目涵盖视频制作、网页设计、图片生成三大核心 Skill，每个 Skill 都针对 Agent 在复杂任务中的稳定性问题提供了结构化解决方案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("啊 我刚开源的 Skills 已经 7K Star 了"))
-    项目背景
-    核心经验
-      Skills 的设计原则
-      社区驱动的增长
-      与主流 Agent 框架的集成
-    三大核心 Skill 详解
-      视频制作 Skill web-video-presentation
-      网页设计 Skill web-design-engineer
-      图片生成 Skill gpt-image-2
-    Skills 生态的范式意义
-    中文 Agent 社区的独特生态位
-    用 Skill 封装工作流的模式创新
-    从 Demo 到生产的关键桥梁
-```
-
 ## 项目背景
 
 作者连续写了多篇 AI Agent 教程后，将自己积累的 Skills 项目开源。Skills 是一系列可复用的 AI Agent 能力模块，旨在降低开发者构建 AI Agent 的门槛。项目的核心理念是：Agent 默认接到的是一个"任务"，但复杂产物需要的是一条"生产线"——包含明确的工作流程、质量标准和迭代接口。
 
 ## 核心经验
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### Skills 的设计原则
 
@@ -142,8 +88,8 @@ garden-skills 最值得关注的不是单个 Skill 的实现细节，而是它�
 
 ## 相关实体
 
-- [Claude Code 深度分析](../ch03/078-claude-code.html)
-- [MCP Tool Design Tradeoffs](../ch01/989-anthropic.html)
+- [Claude Code 深度分析](../ch03/077-claude-code.html)
+- [MCP Tool Design Tradeoffs](../ch01/1004-anthropic.html)
 - [Agent Harness Context Management](../ch05/058-agent-harness.html)
 - [Hermes Agent 上手](../ch03/096-hermes-agent.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

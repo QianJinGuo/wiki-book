@@ -3,7 +3,7 @@ title: "UIUC、Meta、斯坦福等最新综述！Code as Agent Harness"
 source_url: "https://mp.weixin.qq.com/s/vJqB2bXnpqU4XqiOEJqL2Q"
 author: "Hyman的杂货铺"
 published: "2026-05-20"
-type: raw
+type: raw-article
 tags: [agent, harness, coding-agent, survey, llm, multi-agent]
 created: "2026-05-20"
 sha256: 29a2351e6fe6da2126477fa19e53fcfe97d713c0ee56ba3c5f5382d66090e78c

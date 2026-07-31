@@ -14,70 +14,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
 → 阅读时间：约 30 分钟 · 6 大节 + 1 节致谢 + 3 篇参考资料
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("晓斌 从 People-Oriented 到"))
-    从一个周报系统说起
-    统一观察 软件一直是意图驱动 代码沉淀的进化体
-      传统研发的循环
-      Agent 研发的循环
-      两个案例
-    三个核心推论
-      推论一 Agent 不是革命 是加速
-      推论二 静态沉淀不会消失
-      推论三 模式没变 但模式对基础设施的要求彻底变了
-    三个关键变量 从传统研发到 agent 研发的完整差异
-      变量 1 桥梁带宽 从人到 agent
-      变量 2 沉淀粒度 持久代码与瞬态代码的分化
-      变量 3 循环频率 从发布周期到运行时反馈
-    三个实践案例 agent 与 infra 的摩擦
-      案例一 多角色 agent 研发系统
-      案例二 配置推送agent 的自主程度取决于什么
-      案例三 身份与鉴权的碎片化
-    设计原则 从 People-Oriented 到
-      传统 People-Oriented infra
-      Agent-Oriented infra
-      四层递进设计
-    行业趋势与我们可以做什么
-      行业在做什么
-      大高杠杆行动方向
-    核心金句
-```
-
 ## 一句话定位
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
 
 **"软件一直是'意图驱动 + 代码沉淀'的进化体"**——这个模式从未改变，改变的只是**驱动和沉淀的速度与机制**。Agent 革命的本质是**把循环速度从月级压缩到分钟级**。
 
@@ -313,7 +250,7 @@ graph TB
 - 晓斌 = "harness 平台化"（**运行环境层**变革）——"组装的对象从'应用'变成了'agent 工作环境'"
 - 共同点：都强调"infra / 协议"是 AI Agent 落地的关键
 
-### vs [Kimi Work](../ch01/517-codex.html)
+### vs [Kimi Work](../ch01/520-codex.html)
 - Kimi Work = Harness 搬到本地桌面
 - 晓斌 = Harness **平台化**（云上"组装对象从应用变成 agent 工作环境"）
 - 共同点：harness 决定一切
@@ -387,11 +324,11 @@ graph TB
 ## 相关对照
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层 harness 模型
 - [wow-harness v3](../ch05/009-harness.html) —— 跨 session 事件时间线
-- [Kimi Work](../ch01/517-codex.html) —— 本地桌面 Agent
+- [Kimi Work](../ch01/520-codex.html) —— 本地桌面 Agent
 - [PilotDeck](../ch03/035-agent.html) —— 多项目隔离
 - [Rein](../ch03/035-agent.html) —— 4 模块 + 5 类型边界
 - [Microsoft Build 2026](../ch03/035-agent.html) —— 全栈 AI
-- [Claude Code 20000 字符源码分析](../ch03/078-claude-code.html) —— 98.4% 基础设施
+- [Claude Code 20000 字符源码分析](../ch03/077-claude-code.html) —— 98.4% 基础设施
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
 

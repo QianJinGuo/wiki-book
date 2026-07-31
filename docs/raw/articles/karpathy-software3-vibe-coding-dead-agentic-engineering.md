@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/Ab_dbrinxK8wNSWvYRCxFw"
 feed_name: "萤火AI百宝箱"
 author: "FLY AI CLOUD"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [karpathy, software-3.0, vibe-coding, agentic-engineering, llm, verifiability, framework]
 sha256: "43ebab143443ddc72d4d3e8c24d30d6a833909aef69c892e9c0c538d4ffeb757"
 ---

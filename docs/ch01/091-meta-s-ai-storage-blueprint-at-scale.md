@@ -8,62 +8,11 @@
 
 > **已评分** | v*c=56 | value=8 | confidence=7 | stars=4
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Metas AI Storage Blueprint at Scale"))
-    背景 AI 存储的挑战
-    核心挑战
-    存储是 AI 基础设施的隐形瓶颈
-    Tectonic Meta 的存储基石
-    从文件系统到 BLOB 存储的架构迁移
-    AI 工作负载的独特 IO 模式
-```
-
 ## 摘要
 
 Meta 工程博客详细介绍了其面向 AI 训练的大规模 BLOB 存储架构演进。随着模型能力和训练数据集规模呈指数级增长，存储瓶颈已成为 GPU 训练的主要制约因素。Meta 基于 Tectonic 基础块存储层构建了全球统一的 BLOB 存储架构，以最大化 GPU 利用率和研究迭代速度为核心目标。
 
 ## 背景：AI 存储的挑战
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 过去几年，模型能力和训练数据集规模经历了指数级增长，新前沿模型的发布间隔从数月缩短到数周。可靠快速的存储访问对 AI 创新的速度和计算成本至关重要——"如果 AI 是大脑，存储就是内存"。然而，AI 计算性能大约每两年翻三倍，存储和互连性能的增长却相对有限，导致存储瓶颈成为 AI 工作负载 GPU 停等的主要贡献因素之一。
 
@@ -112,7 +61,7 @@ Meta 的 AI 存储实践揭示了数个重要趋势：(1) 存储与计算之间�
 
 - [Databricks GPU 可靠性实践](ch01/043-how-we-keep-gpus-reliable-across-databricks-ai.html)
 - [AI Infrastructure & Cost Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md)
-- [Graviton 优化 Agentic RL Sandbox](../ch04/327-agentic-rl.html)
+- [Graviton 优化 Agentic RL Sandbox](../ch04/236-agentic-rl.html)
 - [AI 友好的后端标准](../ch05/022-ai-friendly.html)
 
 ## 来源

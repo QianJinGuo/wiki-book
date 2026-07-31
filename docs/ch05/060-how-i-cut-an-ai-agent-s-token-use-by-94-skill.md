@@ -8,61 +8,11 @@
 
 Vivek Haldar 展示了一个具体的工作流案例：将 Agent Skill 从**纯自然语言指令**（natlang code）**编译**为**确定性 Python 程序 + LLM 仅做核心决策**的混合架构，获得了 **94% token 减少** 和 **87% 延迟降低**，同时输出质量基本不变。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How I Cut an AI Agents Token Use"))
-    Crystallized Workflow 从探索到固化的自然演化
-    编译过程 从 Trace 到 Harness
-    「编译器」类比为什么成立
-    激励相容性分析 为什么大模型厂商不会主动推广
-```
-
 ## 摘要
 
 当 Agent Skill 运行多次后，大部分行为不再需要 LLM 推理——路径已经固化（crystallized）。Vivek Haldar 以他的 LinkedIn 回帖 Skill 为例展示了「编译」过程：原始 Skill 是纯自然语言描述的 Agent Skill，每次运行 agent 都需要从零解读指令、制定计划、调用工具、跟踪状态。编译后，Skill 变成了一个「薄引导程序」（thin bootloader），调用一个 Python 程序执行所有确定性工作，仅在候选选择和草稿撰写这两个真正需要语义理解的步骤调用 LLM。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **94% token 减少**：从编译前到编译后，token 用量降低了 94%
 - **87% 延迟降低**：同样的任务完成时间减少了 87%
@@ -135,9 +85,9 @@ Vivek 开发了一种他称为「natlang code」（自然语言代码）的理�
 ## 相关实体
 
 - [Agent Harness Engineering Survey](ch05/120-harness-engineering.html)
-- [Skill 编排的6种依赖关系](../ch04/271-skill.html)
+- [Skill 编排的6种依赖关系](../ch04/273-skill.html)
 - [CLI Agent模式——MCP与Shell Agent](../ch03/035-agent.html)
-- [Skill Hub MVP评估与发布](../ch04/271-skill.html)
+- [Skill Hub MVP评估与发布](../ch04/273-skill.html)
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivekhaldar-compiling-ai-agent-skill-token-cut-94pct-2026.md)

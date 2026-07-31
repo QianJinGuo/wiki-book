@@ -1,7 +1,7 @@
 ---
 
 title: "看 AgentRun 如何玩转记忆存储，最佳实践来了！"
-type: source
+type: raw-article
 tags: [mlops, wechat, llm, ai-agent, engineering]
 source: wechat
 source_url: "https://mp.weixi"

@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/amazon-bedrock-claude-prompt-cache-strategy.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("在 Amazon Bedrock 上为 Claude"))
-    -block 回看限制的几何含义
-    三 CP 布局的工程代价与收益
-    Claude Thinking 与 Cache
-    模型支持与 TTL 选择策略
-    策略选择决策树
-    上线后必建监控指标
-    常见陷阱与规避
-    代码实现关键函数
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 - Prompt Caching 可降低长上下文应用的输入 token 成本和响应延迟
 - Content Block 的 20-block 回看限制是关键约束
 - 推荐布局：受控场景单 CP，通用 agentic 场景三 CP
@@ -107,22 +53,22 @@ Claude thinking (extended thinking 或 adaptive thinking) 引入了一个特殊�
 - [Anthropic Prompt Caching for Claude Code](../ch01/217-anthropic-prompt-caching-claude-code.html) — Anthropic 官方博客解析：Prompt Caching 的 7 条经验与架构约束
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/306-amazon-nova.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/054-prowler-genai.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/009-aws-bedrock.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/295-amazon-bedrock.html)
 
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/561-amazon-bedrock-agentcore.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/704-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/566-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [SunFinance: Textract+Claude准确率90.8%的ID提取方案](../ch05/094-ai.html)
+- [SunFinance: Textract+Claude准确率90.8%的ID提取方案](../ch05/095-ai.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/300-bedrock.html)
 - [Amazon Finance 监管查询自动化](ch11/012-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html) — Bedrock + RAG 在金融合规场景的实战：多级 KV Cache、Query Expansion、DynamoDB 状态管理的完整架构
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [yc掌门人60天写了60万行代码：gstack开源](../ch01/662-garry-tan.html)
-- [markdown 不会过时](../ch01/802-markdown.html)
-- [miro-amazon-bedrock-bug-routing](ch11/179-miro-amazon-bedrock-bug.html)
+- [yc掌门人60天写了60万行代码：gstack开源](../ch01/673-garry-tan.html)
+- [markdown 不会过时](../ch01/816-markdown.html)
+- [miro-amazon-bedrock-bug-routing](ch11/181-miro-amazon-bedrock-bug.html)
 
 ---
 

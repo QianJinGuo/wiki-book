@@ -3,7 +3,7 @@ title: "Claw-Anything：首个面向个人助理 Agent 的三维上下文扩展�
 source_url: "https://mp.weixin.qq.com/s/rEk33ieaeX0Gg5mmb9LKZQ"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # Claw-Anything：See Anything, then Do Anything

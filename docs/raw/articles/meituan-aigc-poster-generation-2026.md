@@ -1,6 +1,6 @@
 ---
 title: "美团海报生成 AIGC 技术创新与实践"
-type: raw
+type: raw-article
 source: wechat
 ingested: 2026-07-03
 sha256: 719cad84d1a9864e0f38b4d9c82ff66b0ea0a55f96dbe1b677c2d235405c40e8

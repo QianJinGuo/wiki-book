@@ -2,7 +2,7 @@
 title: "llm prefix caching comprehensive guide 2026 07 03"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 443dfc295b9792362e749c9be16a5509a4d06a435b507732001df863c880b4d2
 ---

@@ -4,40 +4,10 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/products-are-out-brains-are-in.md`
 
-
 ## 核心要点
 - （待补充）
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 **决策质量为何成为稀缺资产。** 传统经济学把土地、劳动、资本、技术列为生产要素，但本文指出二十一世纪的新要素是**大规模决策质量**。执行决策的成本因自动化和 AI 持续下降，但做出最优决策的成本丝毫未降——因为最优决策需要对企业所处复杂、不确定的环境有清晰认知，这种理解无法被自动化取代。
 **企业采购逻辑的根本转变。** 高度监管行业的大型企业不会自建工具，即使软件完全商品化。它们评估供应商时首要问的不再是功能ROI，而是"谁更不可能让我惹上大麻烦""谁能安全处理我的客户数据""谁的运营具有前瞻性让我不必频繁更换系统"。这本质上是把采购决策从纯技术评估转向了对**团队判断力**的押注。
 **Founder Content 的本质是证明决策能力。** 文章认为"science fiction"式的创始人对股东信和芒格的思想才是真正的 thought leadership，而非领英发帖或 AI 生成的营销博客。有效的创始人内容需要展示：1）预测质量（敢于做具体、可证伪的声明，且在被证伪时公开更新）；2）决策透明度（展示推理过程而非只给结论）；3）认知诚实（承认局限性同时保持大胆）；4）决策速度与效率（更快更便宜地得出好决策意味着更多决策容量和先发优势）。
@@ -54,9 +24,9 @@ graph TB
 ## 关联阅读
 ## 相关实体
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/517-microsoft-for-startups-microsoft.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
-- [White House Federal Identity Security Ai](../ch05/094-ai.html)
+- [White House Federal Identity Security Ai](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/products-are-out-brains-are-in.md)
 

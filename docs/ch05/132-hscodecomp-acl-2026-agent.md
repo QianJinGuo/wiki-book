@@ -8,53 +8,9 @@
 
 > HSCodeComp（Harmonized System Code Compass）是阿里 ATH-MaaS 团队提出的首个面向「分层规则应用」（Hierarchical Rule Application）能力的专家级 Deep Search Agent 基准，获 ACL 2026 Best Resource Paper。核心发现：最强 Agent（~49.4%）远落后于人类专家（95%），且 Test-Time Scaling 无法弥合差距。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("HSCodeComp 阿里 ACL 2026"))
-    核心贡献
-      知识复杂度三层模型
-      Benchmark 设计
-    分层规则应用 Hierarchical Rule Application
-    与现有 Agent 评测体系的关系
-```
-
 ## 核心贡献
 
 ### 知识复杂度三层模型
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 层次 | 知识类型 | 代表 |
 |------|---------|------|
 | Level 1 | 开放域数据 | BrowseComp, GAIA |
@@ -95,7 +51,7 @@ HSCodeComp 定位在现有 Deep Search 基准的盲区——测量 Agent 在"规
 
 - [Harness Engineering](ch05/120-harness-engineering.html) — Agent Harness 提供 +8.5pt 增益，验证了 Harness 对规则应用的基础作用
 - [AINMM 成熟度模型](ch05/018-ai-native.html) — 验证回路依赖规则锚定而非模型自省
-- [AI Agent 评测 5 维体系](ch05/111-ai-coding.html) — 评测方法论参考
+- [AI Agent 评测 5 维体系](ch05/112-ai-coding.html) — 评测方法论参考
 - [评估 Harness 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md) — 任务设计与评测方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hscodecomp-acl-2026-best-resource-paper.md)

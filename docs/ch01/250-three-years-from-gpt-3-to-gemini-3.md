@@ -11,65 +11,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Three Years from GPT-3 to Gemini 3"))
-    能编码 通用工具的核心论断
-    Antigravity Inbox 从 Chatbox 到
-    管理数字同事的人机协作模式
-    PhD 级智能的真实测试
-    重新理解 Agent 编程工具的能力边界
-    采用 Inbox 范式设计 Agent 交互界面
-    训练指导者而非提示者的能力
-    评估 AI 智能时关注类人错误而非AI 错误
-```
-
 ## 摘要
 
 Ethan Mollick 通过让 Gemini 3 复刻自己三年前 GPT-3 时代的"糖果驱动 FTL 飞船"演示，展示了 AI 三年来的跨越式进步：从"能写诗描述引擎"进化为"能编码、设计界面、让你真正驾驶飞船"。核心论断是：**"编写代码的能力不仅是编程，而是能做计算机上发生的任何事"**——这使任何能编码的 Agent 变成通用工具。Gemini 3 配合的 Antigravity 工具引入 Inbox 概念，让人从"通过聊天界面提示 AI"演化为"管理数字同事"。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **三年跨越式进步**：2022 年 ChatGPT 发布时 AI 能写连贯段落；2025 年 Gemini 3 能编码引擎、设计界面、让你实际驾驶飞船。
 - **"编写代码的能力不仅是编程"**：所有在计算机上做的事情最终都是代码——构建仪表板、操作网站、创建 PowerPoint、读取文件。**这使任何能编码的 Agent 变成通用工具**。
@@ -167,11 +113,11 @@ Mollick 给整篇文章的总结：
 
 > "三年前，我们对机器能写关于水獭的诗印象深刻。不到 1000 天后，我在与一个建立自己研究环境的 Agent 争论统计方法论。chatbot 时代正在变成数字同事时代。"
 
-**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
+**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
-Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/517-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
+Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/520-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
 
 ## 实践启示
 
@@ -242,13 +188,13 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 ## 相关实体
 
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [GPT-5.4 Codex 进展](ch01/517-codex.html)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [GPT-5.4 Codex 进展](ch01/520-codex.html)
+- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Karpathy Agentic Engineering 综述](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [AgentOps on Bedrock](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Yann Dubois OpenAI 后训练访谈](ch01/390-openai.html)
+- [AgentOps on Bedrock](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Yann Dubois OpenAI 后训练访谈](ch01/391-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/015-wiki-evolver.html)
-- [AI Agent Harness 构建](ch01/973-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/988-ai-agent-harness.html)
 - [Harness 状态边界与失败闭环](../ch05/009-harness.html)
 - [Agent Vibecoder 上下文压缩](../ch03/035-agent.html)
 - [腾讯混元 HY3 开源预览](ch01/117-hy3-preview.html)

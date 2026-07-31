@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/rqH80y2ogQ1r6PdRpXV9Fw
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, gitlab, layoff, agent-platform, devops, industry, agent-governance, indian-hiring, fiscal-2027-q1]
 ---
 

@@ -6,53 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-prowler-与-genai-构建金融行业智能合规中枢.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 Prowler 与 GenAI 构建金融行业智能合规中枢"))
-    Notes
-    规模化合规难题的本质 框架重复与术语壁垒
-    Prowler 的检测-映射解耦架构 核心创新
-    Rationale 文档 GenAI 精确分析的关键
-    GenAI 最后一公里 问题的解决
-    跨境金融机构的框架整合策略
-    小型安全团队的合规效率杠杆
-    审计准备流程的根本性改变
-```
-
 ## Summary
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 *(See [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-prowler-与-genai-构建金融行业智能合规中枢.md))*
 
 ## Notes
@@ -61,8 +15,8 @@ graph TB
 ## 相关实体
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch11/054-prowler-genai.html)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
-- [CloudSectiDbits](ch11/252-cloudsectidbits.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
+- [CloudSectiDbits](ch11/254-cloudsectidbits.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/272-aws-bedrock-agentcore.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

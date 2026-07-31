@@ -1,6 +1,6 @@
 ---
 title: We let four AIs run radio stations. Here's what happened. | Andon Labs
-type: raw
+type: raw-article
 tags: []
 source: newsletter
 source_url: https://andonlabs.com/blog/andon-fm

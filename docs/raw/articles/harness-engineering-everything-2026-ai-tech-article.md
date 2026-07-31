@@ -6,7 +6,7 @@ feed: AI技术立文
 publish_time: "2026-06-09 14:07"
 ingested: "2026-06-10"
 sha256: 8346a31f64c7a5ed0ee411c78ec1d28eccf636e8
-type: raw
+type: raw-article
 tags: [harness-engineering, agent, openai, anthropic, thoughtworks, guides-sensors, build-to-delete, harness-decay, five-artifacts, three-camps, five-principles]
 sources: [harness-engineering]
 ---

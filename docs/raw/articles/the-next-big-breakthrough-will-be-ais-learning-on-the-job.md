@@ -2,7 +2,7 @@
 title: "The next big breakthrough will be AIs learning on the job"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: a28c5e02f66d57511f003de1eb916fbfa43de9917ecbc107347444b09d22f73e
 ---

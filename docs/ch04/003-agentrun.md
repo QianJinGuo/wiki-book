@@ -2,56 +2,7 @@
 
 ## Ch04.003 AgentRun
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 > 📊 Level ⭐ | 9.6KB | `entities/aliyun-agentrun.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentRun"))
-    API 集成 OpenAI 协议兼容
-      端点格式
-      Python 调用示例
-      五条集成路径
-    定位对比
-    架构设计 平台与用户分工的边界艺术
-    多模型支持 灵活性与统一入口的矛盾
-    OpenAI 兼容协议的策略价值
-    定价与成本模型分析
-    何时选 AgentRun 而不是自建
-    集成最佳实践
-```
 
 ## 核心能力
 - **5 种创建模式**：快速创建 / 代码创建 / 工作流创建 / 超级 Agent / 模板创建
@@ -167,9 +118,9 @@ AgentRun 基于函数计算计费，核心优势是**按实际调用计费 + 零
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
 
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/003-agentrun.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch04/561-amazon-bedrock-agentcore.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/444-agentrun.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch04/566-amazon-bedrock-agentcore.html)
 - [OpenCLI](../ch03/088-opencli.html)
 - [AutoCLI](../ch03/125-autocli.html)
 - [阿里巴巴 Aone 面向 Agent 的研发模式探索](ch04/055-aone-agentic.html)

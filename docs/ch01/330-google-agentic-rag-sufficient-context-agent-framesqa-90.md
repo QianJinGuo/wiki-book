@@ -10,22 +10,6 @@
 
 > **Background**：Google Research 在 2026-04-27 发布的 vendor 技术博客，宣布 Gemini Enterprise Agent Platform 的 Agentic RAG 能力。核心创新是 **Sufficient Context Agent**（一种 query→draft→gap→iterate 的反思型质量门控），在 FramesQA 基准上达到 90.1% cross-corpus 准确率（vs Vanilla RAG baseline up to 34% improvement）。**注意 vendor framing**——34% 提升限定在 Google 内部 factuality 数据集，未在 BEIR 等公开 benchmark 验证。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Google Agentic RAG Sufficient"))
-    单步 RAG 的痛点
-    5-Phase 编排 with Persistence
-    Sufficient Context Agent 3-check 质量门
-    Cross-Corpus Routing 实测有效
-    -Phase 完整流程
-    与现有 entity 差异化
-    FramesQA 例子 MASH vs Cheers
-    局限
-```
-
 ## 概述
 
 Google 的 Agentic RAG 框架将单步 RAG 升级为**多 Agent 协同 + 反思循环**架构，目的是解决多源多跳查询的"信息孤岛"问题。
@@ -37,41 +21,6 @@ Google 的 Agentic RAG 框架将单步 RAG 升级为**多 Agent 协同 + 反思�
 Vanilla RAG 是 "retrieve-once-then-generate" 模式，面对需要跨数据源二次检索的查询会失败。
 
 ## 三个独有贡献
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 
 ### 1. 5-Phase 编排 with Persistence
 
@@ -176,7 +125,7 @@ graph TB
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-agentic-rag-sufficient-context-agent-framesqa.md)
 
 ## 相关实体
-- [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](../ch04/237-agentic.html)
+- [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](../ch04/648-agentic.html)
 - [is grep all you need? — 检索 × harness × 交付方式耦合三元组（pwc 论文 arxi](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

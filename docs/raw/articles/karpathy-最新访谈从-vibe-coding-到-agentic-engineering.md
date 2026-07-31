@@ -1,7 +1,7 @@
 ---
 
 title: "Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering"
-type: source
+type: raw-article
 tags: [mlops, wechat, llm, ai-agent, engineering]
 source: wechat
 source_url: "https://mp.weixi"

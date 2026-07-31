@@ -4,65 +4,11 @@
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/anthropic-prompt-caching-claude-code.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Prompt Caching 工程实践 Anthropic"))
-    核心约束 Prompt Caching 前缀匹配
-    条工程经验
-      缓存即基建
-      排好队形 Prompt 排列优先级
-      别动 Prompt
-    从优化手段到架构约束的范式转移
-    不可变性设计是缓存友好的本质
-    分层缓存失效与灾难链
-    子 Agent 架构与缓存隔离
-    从第一天起就把缓存策略写进架构设计文档
-    强制排序所有结构化数据的序列化
-```
-
 ## 核心约束：Prompt Caching = 前缀匹配
 API 缓存从请求开头到每个 `cache_control` 断点之间的所有内容。只要下次请求的前缀跟上次一样，就能复用计算结果。
 Claude Code 是长对话 Agent，用户在一个 session 里聊几十轮，每轮都带完整上下文重新发请求。没有缓存，延迟和成本都会爆炸。
 
 ## 9条工程经验
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 1. 缓存即基建
 Anthropic 内部把 Prompt Cache 命中率当作 `uptime` 级别的指标监控，一旦下降就触发 oncall 告警，工程师得像处理线上事故一样排查。
 
@@ -198,12 +144,12 @@ Prompt Cache 命中率应该进监控，且告警阈值要严格。如果团队�
 ## 相关实体
 - [Claude Code Prompt 提示词体系源码解析](ch09/061-claude-code-prompt.html)
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](ch09/061-claude-code-prompt.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/078-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/076-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/089-claude-code-1.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

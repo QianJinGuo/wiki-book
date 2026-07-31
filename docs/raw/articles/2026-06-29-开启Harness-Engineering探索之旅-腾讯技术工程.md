@@ -2,7 +2,7 @@
 title: "开启Harness Engineering探索之旅 腾讯技术工程"
 created: 2026-06-29
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 07d9813722c1ae3ba4543f1cf2123cfa93f888763cd0d18ff01022cf14daec64
 ---

@@ -4,7 +4,7 @@ title: "从单兵作战到团队协作：AgentRun 的多 Agent 生产级协作�
 source: "阿里云云原生 / 丛霄 / 悠逸"
 ingested: 2026-06-15
 sha256: "e5f6a7b8c9d0e1f2a3b4c5d6e7f8091a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7"
-type: raw
+type: raw-article
 tags: [agentrun, multi-agent, a2a, agentcard, service-discovery, alibaba-cloud, orchestrator, workspace]
 ---
 

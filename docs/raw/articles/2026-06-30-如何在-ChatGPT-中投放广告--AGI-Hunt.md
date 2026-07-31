@@ -2,7 +2,7 @@
 title: "如何在 ChatGPT 中投放广告  AGI Hunt"
 created: 2026-06-30
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 783be52e6dbc40328def88f67adb772ba966a28594343d85e4c751e06932dc54
 ---

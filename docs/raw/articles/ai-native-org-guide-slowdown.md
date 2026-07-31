@@ -3,7 +3,7 @@ title: "AI 原生搭建指南：都在用AI，公司为什么更慢了？"
 author: "叶小钗"
 date: "2026-05-18"
 source_url: "https://mp.weixin.qq.com/s/MFmOciB003eKLeZim3mp1w"
-type: article
+type: raw-article
 sha256: 4617d3b96f8d34ee5da856380db2a2d0fb3acc4ce7c9c479f2bfc57d10291980
 review_value: 7
 review_confidence: 8

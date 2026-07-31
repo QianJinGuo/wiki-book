@@ -10,61 +10,7 @@
 
 > **Core insight**: Cognito 多区域复制通过单向主→辅助复制，使用户池配置和用户数据在辅助区域保持只读同步副本。现有用户无需重新登录即可失效转移到辅助区域，但失效转移期间新用户注册和用户信息更新不可用。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Cognito 多区域复制 跨区域用户认证韧性方案"))
-    问题背景
-    多区域复制工作原理
-    配置三步流程
-    其他配置与失效转移
-    定价与可用性
-    多区域认证的架构必要性
-    最终一致性在认证场景下的容忍度
-    KMS 跨区域复制的安全边界
-```
-
 ## 问题背景
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 许多应用程序依赖 Amazon Cognito 处理用户和机器间身份验证以及管理用户个人资料。在构建高可用性架构时，跨 AWS 区域的数据一致性是关键方法，但此前实现该目标面临诸多挑战：工程团队花费大量时间构建和维护自定义复制解决方案；跨区域手动导出/导入用户数据存在安全隐患且容易引发不一致；区域过渡期间用户会经历强制重置密码、重新登录等中断。对于机器间通信，团队必须在辅助区域创建新的应用程序客户端，这意味着重新配置应用程序并更新受 OAuth 保护的资源以接受新区域签发者签发的访问令牌。
 
@@ -138,7 +84,7 @@ Bedrock 跨区域推理和 Cognito 多区域复制是同一架构模式的不同
 ## 相关引用
 
 ## 相关实体
-- [Aws Software Supply Chain Security Well Architected](../ch05/094-ai.html)
+- [Aws Software Supply Chain Security Well Architected](../ch05/095-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)

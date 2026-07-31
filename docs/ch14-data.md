@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((数据工程))
-    数据采集
-      API集成
-      爬虫抓取
-      流式摄入
-    数据处理
-      ETL流水线
-      批处理
-      流处理
-    数据存储
-      数据湖
-      数据仓库
-      Iceberg
-    数据质量
-      校验规则
-      去重清洗
-      血缘追踪
-    数据治理
-      元数据管理
-      访问控制
-      合规审计
-    特征工程
-      特征提取
-      特征存储
-      在线/离线
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -48,25 +17,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph LR
-    SRC[数据源] --> ING[采集/ETL]
-    ING --> PROC[处理/计算]
-    PROC --> STO[存储<br/>湖/仓/库]
-    STO --> SERV[服务/API]
-    subgraph "质量"
-        VAL[验证] 
-        GOV[治理]
-    end
-    ING --> VAL
-    STO --> GOV
-    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef qual fill:#fef3c7,stroke:#d97706,color:#78350f
-    class SRC,ING,PROC,STO,SERV flow
-    class VAL,GOV qual
-```
-
 
 没有好数据，就没有好模型。
 
@@ -804,7 +754,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 
 ## Ch14.005 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
-> 📊 Level ⭐⭐ | 24.2KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
+> 📊 Level ⭐⭐ | 24.3KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
 
 # 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
@@ -2253,7 +2203,7 @@ SeaTunnel AI CLI 面临的挑战是整个"AI for Data Engineering"领域的缩�
 
 ## Ch14.016 Moneyball for Physical AI
 
-> 📊 Level ⭐⭐ | 8.1KB | `entities/moneyball-for-physical-ai.md`
+> 📊 Level ⭐⭐ | 8.2KB | `entities/moneyball-for-physical-ai.md`
 
 # Moneyball for Physical AI
 
@@ -3562,7 +3512,7 @@ Databend Cloud on AWS 架构:
 
 ## Ch14.035 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
-> 📊 Level ⭐⭐ | 4.0KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
 
 # Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
@@ -3682,7 +3632,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ## Ch14.038 Amazon Quick integration with time-series databases for market intelligence using MCP
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
 # Amazon Quick integration with time-series databases for market intelligence using MCP
 

@@ -4,7 +4,7 @@ source: "陈进 / 腾讯云开发者"
 source_url: "https://mp.weixin.qq.com/s/DtQ0FfSpUxYdRR8XOvppaw"
 ingested: 2026-06-16
 sha256: "5293ebfb5c6870f44aad451fc2c6138ed31296fce11f4b2113bbad515644c077"
-type: raw
+type: raw-article
 tags: [agent, agent-loop, harness-engineering, multi-agent, memory, guardrails, stopping-condition, tencent-cloud, chen-jin, 2026, second-hand-interpretation, self-protocol]
 review_value: 8
 review_confidence: 8

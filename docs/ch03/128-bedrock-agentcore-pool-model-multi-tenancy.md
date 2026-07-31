@@ -8,20 +8,6 @@
 
 > **Background**：基于 AWS 官方技术博客（2026-06-23），介绍 Amazon Bedrock AgentCore 的多租户架构模式。以医疗 AI 助手为示例，展示 Tier → Tenant → User 三级隔离体系，但模式通用适用于各类 SaaS 多租户 Agent 系统。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Bedrock AgentCore Pool Model"))
-    核心架构 三级层次隔离
-    池模型 vs 专用模型
-    技术实现
-    三个独有贡献 不应合并到现有 entity
-    GitHub 仓库
-    部署要求
-```
-
 ## 核心架构：三级层次隔离
 
 ```
@@ -41,44 +27,6 @@ User (终端用户: 医生 / 护士)
 - **成本追踪隔离** — 粒度到租户级别的调用计费
 
 ## 池模型 vs 专用模型
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 | 维度 | 池模型 (Pool) | 专用模型 (Dedicated) |
 |------|-------------|-------------------|
@@ -124,7 +72,7 @@ graph TB
 
 ## 相关主题
 
-- [Protein Research Copilot](../ch04/561-amazon-bedrock-agentcore.html) — 同系列文章，聚焦 AgentCore 的单租户 Agent 应用
+- [Protein Research Copilot](../ch04/566-amazon-bedrock-agentcore.html) — 同系列文章，聚焦 AgentCore 的单租户 Agent 应用
 - Amazon Bedrock AgentCore — AWS Agent 部署平台
 - AI Agent 多租户架构 — SaaS 场景下的 Agent 隔离设计
 - Healthcare AI — 医疗 AI 应用场景

@@ -2,7 +2,7 @@
 title: "从个人生产力到组织能力：LoongSuite-Pilot×SLS 的 AI Coding 度量实践"
 created: 2026-06-09
 updated: 2026-06-09
-type: article
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/SEOGc3KIGm7eFpyUK6nR4g"
 ingested: 2026-06-09
 sha256: "$(echo 'loongsuite_metrics_content' | shasum -a 256 | cut -d' ' -f1 | head -c 16)"

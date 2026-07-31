@@ -3,7 +3,7 @@ title: "Open Code Review：阿里开源的 AI 代码评审 CLI 工具"
 source_url: "https://mp.weixin.qq.com/s/WSicyyMEIXnNVDoWuz0jrw"
 created: 2026-07-01
 updated: 2026-07-01
-type: article
+type: raw-article
 tags: [wechat, code-review, ali, open-source, cli]
 ingested: 2026-07-01
 sha256: 6fec069cac922ff1dc9d8444e7eb5370e5eda8aed5eddbc8ee0355577ed26a74

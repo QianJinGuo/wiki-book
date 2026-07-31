@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: Doris MCP on AgentCore Runtime / VPC native + Cognito OAuth / $0.3/日按需付费
 sha256: d232733e51cf

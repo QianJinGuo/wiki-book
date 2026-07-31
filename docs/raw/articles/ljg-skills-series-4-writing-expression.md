@@ -3,7 +3,7 @@ title: "6.1k星AI Skill牛在哪？"
 source_url: "https://www.xiaohongshu.com/explore/6a3ba6990000000015026f4d"
 created: 2026-07-02
 updated: 2026-07-02
-type: article
+type: raw-article
 tags: [xiaohongshu, ljg, skill, ai, agent, writing, knowledge-management]
 ingested: 2026-07-02
 sha256: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b

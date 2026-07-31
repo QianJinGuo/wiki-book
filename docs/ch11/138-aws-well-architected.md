@@ -6,58 +6,7 @@
 
 # AWS 软件供应链安全 Well-Architected 最佳实践
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS 软件供应链安全 Well-Architected 最佳实践"))
-    核心防御维度
-      凭证卫生 Credential Hygiene
-      最小权限 Least Privilege
-      SBOM Software Bill of Materials
-    与 Well-Architected 五大支柱映射
-    关键攻击向量总结
-    落地建议
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 针对 2024-2025 年爆发的 **Shai-Hulud** (npm 供应链蠕虫)、**Chalk/Debug** (TJ Actions 恶意更新)、**axios** (钓鱼维护者接管) 等真实攻击事件，AWS 发布 Well-Architected Framework 下的软件供应链安全最佳实践。
 
@@ -120,7 +69,7 @@ graph TB
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/054-prowler-genai.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](ch11/023-restrict-access-to-sensitive-documents-in-your-amazon-q-s3-k.html)
 - [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-cognito-multi-region-replication.md)
-- [Aws Transform Ezconvertbi Bi Migration](ch11/214-aws-transform-ezconvertbi-bi-migration.html)
+- [Aws Transform Ezconvertbi Bi Migration](ch11/216-aws-transform-ezconvertbi-bi-migration.html)
 - [Amazon Bedrock Agentic Payments Guardrails](ch11/295-amazon-bedrock.html)
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
 

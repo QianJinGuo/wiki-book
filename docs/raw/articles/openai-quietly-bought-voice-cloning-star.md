@@ -1,6 +1,6 @@
 ---
 title: OpenAI Quietly Bought Voice-Cloning Startup Weights.gg
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.implicator.ai/openai-quietly-bought-voice-cloning-startup-weights-gg-then-folded-the-team/
 fetcher: jina

@@ -1,6 +1,6 @@
 ---
 title: Anthropic to share Mythos cyber flaw findings with global finance watchdog
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb
 tags: [news]

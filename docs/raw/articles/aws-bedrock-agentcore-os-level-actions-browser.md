@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: OS级操作4步闭环：Action-Screenshot-Reaction / 8个原子操作（鼠标/键盘/截图） / 浏览器自动化
 sha256: b8b7c813759a

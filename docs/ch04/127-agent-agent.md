@@ -6,33 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ai-companion-agent-architecture.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("高德伴行Agent 空间智能高可用Agent架构"))
-    核心架构 Supervisor驱动的双内核Agent
-      双内核设计
-      架构收益
-    ReAct推理引擎优化
-      业界方案对比
-      四大首创优化
-      训练效果
-    Skill动态注入系统
-      问题 全量Prompt注入的三重困境
-      三层筛选机制
-      核心效果
-    时空上下文体系
-      统一时空状态
-      五层时空粒度 四类记忆表征
-      检索 KV精确 向量语义 置信度门控
-    端到端评测结论
-    双内核架构的本质 可控自由度优先 而非最大自由度
-    ReAct优化的本质 推理轮次压缩就是用户体验
-    Skill动态注入的三层筛选 分层决策的工程价值
-```
-
 ## 核心架构：Supervisor驱动的双内核Agent
 伴行Agent的本质是**空间智能内核 + 行动引擎**：以用户的实时位置和空间任务为中心，持续理解"人在哪里、要去哪、周围有什么、接下来怎么行动"。
 
@@ -51,37 +24,6 @@ mindmap
 基于LangGraph4J搭建层级式多Agent协同框架：一个中心Supervisor负责任务路由、执行边界和结果聚合。
 
 ## ReAct推理引擎优化
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 业界方案对比
 | 方案 | 特点 | 适用性 |
 |------|------|--------|
@@ -219,12 +161,12 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 - [Hermes Agent](../ch03/096-hermes-agent.html)（被本文分析对比）
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/441-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/397-agent-skills.html)
-- [ai agent memory systems](ch04/121-agent-memory.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/401-agent-skills.html)
+- [ai agent memory systems](ch04/098-agent-memory.html)
 
 ---
 

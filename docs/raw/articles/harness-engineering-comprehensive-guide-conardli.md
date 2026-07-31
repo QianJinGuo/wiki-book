@@ -1,6 +1,6 @@
 ---
 title: "harness engineering comprehensive guide conardli"
-type: raw
+type: raw-article
 source_url: https://mp.weixin.qq.com/s/gs5ndvlMqM-Y4jg1_D2aFw
 author: ConardLi (code秘密花园)
 published: 2026-04-03

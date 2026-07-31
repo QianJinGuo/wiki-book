@@ -4,62 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/automating-confidential-containers-coco-infrastructure-with-kyverno.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Automating Confidential"))
-    CoCo 工作负载的必备配置
-    实际部署挑战
-    Kyverno 解决方案
-      信任悖论 Kyverno 处于不可信控制平面
-    团队职责划分
-    部署与证明流程
-    零信任安全模型的工程化代价
-    Policy as Code 的双重角色
-    三团队分工模型的现实意义
-```
-
 ## CoCo 工作负载的必备配置
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 在 CoCo 环境中运行的 Pod 通常需要在清单中注入以下元素：
 | 组件 | 必要性 | 作用 |
 |------|--------|------|
@@ -97,8 +42,8 @@ Kyverno 本身运行在 CoCo 信任模型中标记为不可信的 Kubernetes 控
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
 - [From Kubernetes Dev Setup To Production What Actually Change](ch11/085-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/013-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/235-openclaw.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1248-0.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/237-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)（CNCF Blog, 2026-05-19）
 

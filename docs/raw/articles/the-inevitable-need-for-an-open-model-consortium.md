@@ -11,7 +11,7 @@ source_url: https://www.interconnects.ai/p/the-inevitable-need-for-an-open-model
 tags:
 - article
 title: The inevitable need for an open model consortium
-type: source
+type: raw-article
 updated: '2026-06-07'
 ---
 

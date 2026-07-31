@@ -6,48 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
 
-
 ## 摘要
 OpenAI三个语音模型发布同传被杀死
 
 ## 关键要点
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)
 
 ## 深度分析
@@ -63,7 +25,7 @@ graph TB
 
 ## 相关实体
 
-- [OpenAI buys AI consultancy to sell enterprises on its models](ch01/1059-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.html)
+- [OpenAI buys AI consultancy to sell enterprises on its models](ch01/1211-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.html)
 
 ---
 ## 关联

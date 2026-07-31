@@ -12,44 +12,7 @@ Published Time: 2026-05-11T16:30:53.000Z
 
 cURL 项目创始人 Daniel Stenberg 测试了 Anthropic 的 Mythos AI 安全扫描模型后，只发现 1 个低危漏洞。他将 Mythos 的炒作定性为"主要是一场营销活动"，认为其能力被严重夸大了。
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 1. **Mythos 实际效果远低于宣传**: Anthropic 声称 Mythos 过于强大不能公开，但实际扫描 cURL 代码库只发现 1 个确认漏洞（计划6月底发布为低危 CVE），而Mythos 最初报告的5个"确认安全漏洞"中，3个是误报，1个只是普通 Bug。
 
@@ -79,10 +42,10 @@ graph TB
 
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
-- [Anthropic Mythos Bug Hunting Marketing](../ch01/989-anthropic.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01/989-anthropic.html)
+- [Anthropic Mythos Bug Hunting Marketing](../ch01/1004-anthropic.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](../ch01/1004-anthropic.html)
 - [Harness Engineering Three Evolutions](../ch05/120-harness-engineering.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/989-anthropic.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/1004-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

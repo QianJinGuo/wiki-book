@@ -8,59 +8,7 @@
 > AWS China Blog 2026-06-12 架构指南：在 AWS 上以生产级标准部署 LiteLLM AI Gateway。两条路径：ECS Fargate（零运维、Serverless）与 EKS（K8s 原生、灵活），并结合 Control Plane / Data Plane 分离实现多区域高可用。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LiteLLM 生产级部署 AWS ECSEKS 双方案"))
-    选型决策矩阵
-    方案一 ECS Fargate 部署
-    方案二 EKS 部署
-    Control Plane Data Plane 分离 多区域高可用
-    安全最佳实践
-    关键引用清单
-```
-
 ## 选型决策矩阵
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 | 维度 | ECS Fargate | EKS |
 |------|-------------|-----|
@@ -176,7 +124,7 @@ autoscaling:
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
 - [LiteLLM Bedrock 成本治理](ch11/042-litellm-amazon-bedrock.html) — 姐妹篇（运行时限额 + 审计）
-- [LiteLLM + QuickSight 可视化](ch11/222-amazon-quick.html) — 姐妹篇（运维监控）
+- [LiteLLM + QuickSight 可视化](ch11/224-amazon-quick.html) — 姐妹篇（运维监控）
 - [AWS NFW AI 冲突检测](ch11/126-aws-network-firewall-ai.html) — NFW 与 ECS/EKS 部署组合使用
 
 ## 架构图

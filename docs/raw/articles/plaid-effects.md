@@ -1,6 +1,6 @@
 ---
 title: Plaid's Effects on the Financial Ecosystem
-type: source
+type: raw-article
 tags: [fintech, open-banking, plaid, infrastructure, payments]
 source: newsletter
 source_url: https://plaid.com/events/effects/

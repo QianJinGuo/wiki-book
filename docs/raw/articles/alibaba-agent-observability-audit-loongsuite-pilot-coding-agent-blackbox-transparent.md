@@ -5,7 +5,7 @@ source: wechat
 author: 望陶 / 太业 / 石木 / 阿里云云原生
 published: 2026-06-02
 ingested: 2026-06-02
-type: raw-archive
+type: raw-article
 tags: [wechat, alibaba-cloud, observability, otel, semconv, loongsuite, coding-agent, data-collection, sidecar, span-semantic, three-agent-forms, four-observability-capabilities]
 sha256: 1abd3357880ee8609ac052bec41e92b79de4802257c7ac3b8ebca2d1867af844
 ---

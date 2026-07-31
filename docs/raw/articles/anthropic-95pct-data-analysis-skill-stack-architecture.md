@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/Y0DoUjK_eHdDNwLLDHcJTg
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, anthropic, data-analysis-agent, 95-accuracy, self-service-data, semantic-layer, trusted-data-source, unbook-skill, code-agent-vs-analysis-agent, 3-failure-modes, 4-trusted-sources, online-validation, offline-evaluation, ablation-experiment, silent-failure]
 ---
 

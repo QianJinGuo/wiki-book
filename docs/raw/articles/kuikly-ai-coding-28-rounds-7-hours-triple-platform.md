@@ -3,7 +3,7 @@ title: "Kuikly AI 编程实践：28 轮对话 7.5 小时交付三端 AI 聊天 A
 source_url: "https://mp.weixin.qq.com/s/xVSkRLIYP0Y9Q9ia-Co2Xw"
 ingested: 2026-06-30
 sha256: a06b0cde288467a9f5fd3b6c52b8db355106cbedd208d3bd9158af689b82046c
-type: raw
+type: raw-article
 tags: [kuikly, cross-platform, kotlin-multiplatform, ai-coding, codebuddy, tencent, skills-and-rules, client-development]
 author: 腾讯端服务联盟
 ---

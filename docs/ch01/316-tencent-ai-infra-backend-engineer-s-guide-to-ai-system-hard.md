@@ -6,63 +6,11 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-infra-backend-engineer-huangrunpeng.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Tencent AI Infra Backend"))
-    硬件范式转移 从 CPU 中心到 GPU 中心
-    AI 大型机的回归与去 NVIDIA 化的预言
-    深度学习框架的标准化与编程语言迁移
-    模型训练的三大挑战 存得下 算得快 传得开
-    对转型 AI Infra 的后台工程师
-    对企业 AI Infra 建设
-    对学习路径的规划
-```
-
 ## 摘要
 
 腾讯云开发者黄润鹏撰写的技术长文，系统性拆解 AI Infra 的硬件、软件、训练与推理挑战。文章核心论点是：**传统后台工程师积累的方法论可以无缝迁移到 AI Infra**，区别只是战场从 CPU 转移到 GPU。这一框架对正在转型 AI 基础设施领域的后端工程师极具参考价值。
 
 ## 核心要点
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 - AI Infra 视角：传统后台以 CPU 为核心，AI Infra 以 GPU 为核心，设计目标从逻辑事务处理转向高吞吐浮点计算
 - LLM 生成一个 token 需要读取全量模型参数，H20 单卡 96GB 显存 vs CPU 带宽无法满足计算密度
@@ -169,7 +117,7 @@ LLM 推理每次都需要把之前生成的所有 token 重新输入模型计算
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 后台工程方法论的更高层抽象
-- [Pydantic AI Progressive Agent Skills](../ch04/397-agent-skills.html) — Python-first AI 框架的另一视角
+- [Pydantic AI Progressive Agent Skills](../ch04/401-agent-skills.html) — Python-first AI 框架的另一视角
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-infra-backend-engineer-huangrunpeng.md)
 
 ---

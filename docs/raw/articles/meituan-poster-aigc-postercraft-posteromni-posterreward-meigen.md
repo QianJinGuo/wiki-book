@@ -5,7 +5,7 @@ title: "美团海报生成 AIGC 技术创新与实践"
 author: 视觉智能（美团技术团队）
 publisher: 美团技术团队
 date: 2026-06-18
-type: article
+type: raw-article
 ingested: 2026-06-18
 review_value: 10
 review_confidence: 10

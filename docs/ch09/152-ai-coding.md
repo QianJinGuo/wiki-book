@@ -8,22 +8,6 @@
 
 > 百度 Geek 说团队在 AI Coding 场景下建立的全链路质量保障体系，将验证流程左移到 Agent 开发过程中。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("百度 AI Coding 质量关卡实践"))
-    核心链路
-      Agent Operating Rules 操作协议
-      Code Validation 开发期即时 CR
-      Runtime Verify Browser Use 浏览器验证
-    应用案例
-      快捷回复功能的三轮验证
-      RSpack HMR 调试
-    沉淀机制
-```
-
 ## 核心链路
 
 百度的 AI Coding 质量保障体系由五道关卡组成，从开发期到提交后逐层递进：
@@ -71,37 +55,6 @@ mindmap
 后续链路：可视化报告 → IDE 唤起修复 → 按文件分组独立 git worktree 自动批量修复 → 闭环标记 → iCode 现场集成。
 
 ## 应用案例
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 快捷回复功能的三轮验证
 

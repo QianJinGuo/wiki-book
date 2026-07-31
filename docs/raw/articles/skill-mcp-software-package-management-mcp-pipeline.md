@@ -3,7 +3,7 @@ title: "skill-mcp：把 AI 技能当软件包管理 — 版本化、MCP 权限�
 source_url: "https://mp.weixin.qq.com/s/a1Ss_jUxlLpCFduQF35vuA"
 ingested: 2026-06-30
 sha256: cb145383d51274bb7e3e4a8bcdfe767a3c26ad57ac48997ef97246abfac007f0
-type: raw
+type: raw-article
 tags: [skill-mcp, mcp, skill-management, versioning, dag-pipeline, security, prompt-injection, permission-gateway, ai-agent, shugex]
 author: 术哥无界 | ShugeX
 ---

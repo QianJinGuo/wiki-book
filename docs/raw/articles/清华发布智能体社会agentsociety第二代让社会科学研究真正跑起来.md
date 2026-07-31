@@ -2,7 +2,7 @@
 title: "清华发布智能体社会AgentSociety第二代：让社会科学研究真正「跑起来」"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 59bc3688dd8a73302a3a2303c8f4520cfcae8d4f8f1a8e78ea936ae92652eb84
 ---

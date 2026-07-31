@@ -11,7 +11,7 @@ review_value: 8
 review_confidence: 8
 review_recommendation: strong
 review_stars: 4
-type: article
+type: raw-article
 tags: [agent, reliability, skillify, harness-engineering, testing, openclaw]
 ---
 Agent 可靠性的工程解法：从 Skillify 看持续改进机制

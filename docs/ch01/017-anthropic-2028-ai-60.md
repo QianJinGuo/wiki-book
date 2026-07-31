@@ -7,69 +7,16 @@
 # Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
 Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称：  ** AI 系统自己迭代改造自己，可能就在两年后。  **
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 联创 2028 年实现 AI"))
-    核心论证的结构与逻辑
-    数据可信度与隐藏假设
-    对立观点的实质
-    递归自我改进的风险图景
-    对 AI 研究者和工程师
-    对公司和组织
-    对政策制定者
-    对个人
-```
-
 ## 相关实体
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/843-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/856-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
 - [2028 Two Scenarios For Global Ai Leadership](ch01/004-2028-two-scenarios-for-global-ai-leadership.html)
-- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/976-claude.html)
-- [Anthropic联创2028 Ai自我构建概率超60](ch01/989-anthropic.html)
+- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/1022-claude.html)
+- [Anthropic联创2028 Ai自我构建概率超60](ch01/1004-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md)
 
 ## 深度分析
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 ### 1. 核心论证的结构与逻辑
 

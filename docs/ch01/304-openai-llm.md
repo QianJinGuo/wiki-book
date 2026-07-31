@@ -4,23 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI携手五巨头开源革命性超算协议"))
-    背景 为什么需要MRC
-    MRC是什么
-    三大核心机制
-      多平面网络 Multi-Plane Network
-      自适应包喷射 Adaptive Packet Spray
-      SRv6源路由 Source Routing
-    实际表现
-    总结
-    与行业整体趋势的关联
-```
-
 ## 背景：为什么需要MRC
 
 在[Stargate](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)（星际之门）之前，OpenAI已与合作伙伴历时数年，共同开发、部署并维护了三代超级计算机。这段经历让OpenAI深刻认识到，要在Stargate这样的规模下高效使用算力，必须重新思考并大幅降低整个技术栈每一层的复杂度，网络设计也不例外。
@@ -30,43 +13,6 @@ mindmap
 问题还会随着集群规模的增大变得更严重、更难解决。OpenAI面临两个核心挑战：第一，尽量避免网络拥塞——虽然部分瓶颈无法消除（比如两块GPU同时向同一目标发送数据），但其他情况下的拥塞可以通过设计来规避；第二，把网络故障对训练任务的影响压到最低——在足够大的规模下，即使是最优质的网络，也会持续出现链路和交换机故障。以前一次故障就可能让训练任务崩溃，要么从上一个检查点重新开始，要么等待网络重新计算路由，这个过程可能要花上几十秒，在GPU算力和时间上都是巨大的浪费。同步预训练场景下，成千上万块GPU跨机器协同、步调一致地训练同一个模型，任何一次链路抖动的影响都被成倍放大。
 
 ## MRC是什么
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 MRC（Multipath Reliable Connection，多路径可靠连接）的目标，不只是快，还要做到性能可预期，即便面对故障也如此。
 

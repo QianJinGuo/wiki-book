@@ -4,64 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/hiclaw-v110-k8s-hermes-worker.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("HiClaw v110 Kubernetes 集群部署与"))
-    核心变化
-      Kubernetes 原生架构 重大重构
-      Hermes Worker 运行时
-      企业级 Helm Chart 部署
-    架构改进
-    关键技术细节
-    修复亮点
-    Controller-Reconciler 架构 从单容器到
-    Hermes Worker 定位 自主编程 Agent
-    CRD 化资源管理 kubectl 原生操作的价值
-    Provider 接口与 Sidecar 模式 存储网关解耦的实现路径
-```
-
 ## 核心变化
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 ### Kubernetes 原生架构（重大重构）
 HiClaw v1.1.0 从单容器模式重构为标准的 **Controller-Reconciler 架构**：
 

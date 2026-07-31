@@ -2,12 +2,11 @@
 
 ## Ch04.596 AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/ai-agent-engineer-learning-roadmap-backend-2026.md`
+> 📊 Level ⭐⭐ | 4.3KB | `entities/ai-agent-engineer-learning-roadmap-backend-2026.md`
 
 # AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026.md)
-
 
 ## 深度分析
 
@@ -15,37 +14,6 @@ AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力�
 ### 核心观点
 1. # AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图
 ## 核心判断
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 **AI Agent 不是 Prompt 工程的延长线，而是一套新的应用工程体系。
 2. **
 对后端/大数据工程师来说，这是优势区，不是劣势区。
@@ -83,10 +51,10 @@ graph TB
 ### 关联实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/235-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/237-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 
 ## 实践启示

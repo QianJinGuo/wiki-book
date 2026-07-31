@@ -4,58 +4,11 @@
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/opencli.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenCLI"))
-    Key Facts
-    Core Features
-    工作原理
-    Directory Structure
-    与 Agent 生态的关系
-    与爬虫的本质差异 模拟 vs 原生
-    数据获取路径 反向解析 vs 原生直连
-    AI Agent 适配性 额外封装 vs 原生设计
-```
-
 ## Overview
 OpenCLI 是一个开源的 AI Agent 工具网关框架，Stars 17.1k，核心目标是将**任何网站、Electron 应用、本地二进制工具**转换为标准化的命令行接口，专为 AI Agent 设计。
 > "Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime."
 
 ## Key Facts
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 | Fact | Detail |
 |------|--------|
 | GitHub | https://github.com/jackwener/OpenCLI |

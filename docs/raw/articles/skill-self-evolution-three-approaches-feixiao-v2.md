@@ -2,7 +2,7 @@
 title: "如何更科学、方向可控的实现 Skill 的"自进化"? — Trace2Skill / EvoSkill / SkillOpt 三路线深度解析"
 created:2026-06-10
 updated:2026-06-10
-type: article
+type: raw-article
 platform:阿里云开发者
 author:飞樰
 source_url: https://mp.weixin.qq.com/s/2Cq0QR3vcKlMHkI0XyYYrw

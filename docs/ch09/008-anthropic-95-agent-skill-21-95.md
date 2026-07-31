@@ -6,25 +6,6 @@
 
 # Anthropic 内部 95% 数据分析自动化
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 内部 95 数据分析自动化 分析 Agent"))
-    数据分析的 95 自动化目标
-    Skill Stack AI 能力的分层架构
-    与 Harness Engineering 的关系
-    从 95 标准分析自动化开始
-    5 高价值分析仍需人类
-    量化自动化的覆盖率
-    数据分析 写代码 核心区分
-    大失败模式 Anthropic 总结
-      概念与字段的映射模糊
-      数据过期
-      检索失败
-```
-
 ## 一句话总结
 
 > "**Anthropic 的做法是：95% 的业务数据分析请求由 Claude 自动完成，整体准确率约 95%。**"
@@ -35,39 +16,6 @@ mindmap
 - ✅ **大模型给了第三条路** — 但需要把分析 Agent 栈做好
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 1. 数据分析的 95% 自动化目标
 Anthropic 提出数据分析 95% 可由 AI 自动完成的假设——但这 95% 是"标准分析"（描述统计、趋势分析、异常检测），剩余 5%（因果推断、实验设计、业务判断）是最有价值的。
@@ -90,18 +38,18 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 追踪 AI 自动完成的分析任务占比——95% 是目标，当前可能在 60-70%，逐步提升。
 
 ## 相关实体
-- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/604-anthropic-claude.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
+- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1354-anthropic-claude.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/710-claude-managed-agents.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/989-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/271-skill.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/1004-anthropic.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/273-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture.md)
 
-- [使用Claude Codesession管理与1M上下文](../ch03/078-claude-code.html)
-- [Anthropic 95Pct Data Analysis Summary 189 Chars](../ch01/989-anthropic.html)
-- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](../ch01/989-anthropic.html)
-- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/989-anthropic.html)
+- [使用Claude Codesession管理与1M上下文](../ch03/077-claude-code.html)
+- [Anthropic 95Pct Data Analysis Summary 189 Chars](../ch01/1004-anthropic.html)
+- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](../ch01/1004-anthropic.html)
+- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/1004-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 数据分析 ≠ 写代码（核心区分）
 

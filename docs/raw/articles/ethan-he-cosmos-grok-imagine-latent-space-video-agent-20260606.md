@@ -2,7 +2,7 @@
 title: "Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见"
 created: "2026-06-06"
 updated: "2026-06-06"
-type: raw
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/dOKQToqmT5a-CrBLRDMQxA"
 source_name: "InfoQ WeChat MP (Latent Space 访谈翻译)"
 author: "InfoQ 整理 / Ethan He 主讲"

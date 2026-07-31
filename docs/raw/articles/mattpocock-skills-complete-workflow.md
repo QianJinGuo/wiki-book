@@ -3,7 +3,7 @@ title: "Matt Pocock Skills 完整工作流：从需求澄清到架构整理"
 source_url: "https://mp.weixin.qq.com/s/yARyzAvHrG6H-XmBh04kcg"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # Matt Pocock Skills 完整工作流：从需求澄清到架构整理

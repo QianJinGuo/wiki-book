@@ -21,17 +21,6 @@ We've talked to engineers at several different neocloud and AI infrastructure te
 
 That's the part that keeps catching our attention. Many teams, many versions of the same thing, none of them confident their version is good enough to share. Meanwhile every new team starting up does the same thing again, because they have to.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Every Team is Building the Same"))
-    The shape of the problem
-    Why does it keep happening
-    What were working on
-```
-
 ## The shape of the problem
 
 The actual problem is simple enough to state in a sentence: compute is fast, networks are slow, and the same data gets read many times.
@@ -47,41 +36,6 @@ First, somebody adds a local NVMe cache on each compute node. Works great. Hit r
 This is the arc. We've seen it told to us by different people who didn't realize they were describing the same arc. The endpoint is roughly: local cache, peer cache, dedicated cache tier, falling back to the actual data store as a last resort. Three layers. Same shape every time. Different code every time.
 
 ## Why does it keep happening
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 You'd think, given that everyone ends up at the same place, somebody would have built the thing and shared it by now. And to be fair, some pieces exist. The cloud providers ship their own managed-cache products in front of object storage, but each one is tied to its provider. Several open-source projects have built filesystem-shaped abstractions over object stores, each with its own trade-offs in data format, deployment model, or feature gating. There are options. None of them are quite the thing the agentic stack needs.
 

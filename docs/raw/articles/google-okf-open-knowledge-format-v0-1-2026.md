@@ -4,7 +4,7 @@ source: "AI寒武纪"
 source_url: "https://mp.weixin.qq.com/s/nhF1cy_lIQukq_niVFvRCA"
 ingested: 2026-06-16
 sha256: "44b8630e21f4f4805a53d7c816da09485c1c815bcb92c47481bd389a9a8f7d5b"
-type: raw
+type: raw-article
 tags: [okf, open-knowledge-format, google-cloud, knowledge-catalog, knowledge-format, knowledge-base, knowledge-management, markdown, frontmatter, agent-knowledge, llm-wiki, karpathy-wiki, agents-md, claude-md, format-standard, 2026, ai-cambrian]
 review_value: 8
 review_confidence: 8

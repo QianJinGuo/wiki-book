@@ -2,7 +2,7 @@
 title: "知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer — 4 种范式全景对比 + Pyramid KB 原创框架"
 created:2026-06-10
 updated:2026-06-10
-type: article
+type: raw-article
 platform:阿里云开发者
 author:板牙
 source_url: https://mp.weixin.qq.com/s/_IlrlfGpPa42VhTaKNAj6A

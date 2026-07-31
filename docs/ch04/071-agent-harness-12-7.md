@@ -11,67 +11,17 @@
 Agent = Model + Harness。模型负责智能，Harness 负责把智能变成能持续工作的系统。
 LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 从榜外跳到第 5 名。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一篇看懂 Agent Harness 的结构 12组件7决策完整框架"))
-    核心主张
-    三层工程
-    生产级 Harness 12 组件
-      编排循环
-      工具
-      记忆
-    个关键决策
-    框架对比
-    脚手架隐喻
-    核心叙事差异 1st source 是「12 组件 7
-    互补角度 7 条
-```
-
 ## 相关实体
 - [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)
 - [Langchain Anatomy Agent Harness](../ch05/058-agent-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-12-components-7-decisions.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 核心主张
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 Agent = Model + Harness。模型负责智能，Harness 负责把智能变成能持续工作的系统。 LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 从榜外跳到第 5 名。
 

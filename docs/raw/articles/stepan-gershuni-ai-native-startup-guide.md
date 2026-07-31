@@ -3,7 +3,7 @@ title: "他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚�
 source_url: "https://mp.weixin.qq.com/s/TXk9JNSnBDCjm3VzvtcJGg"
 author: "深思圈 / 深思SenseAI"
 created: 2026-05-26
-type: article
+type: raw-article
 tags: [ai-agent, startup, context, eval, skills, harness, operations]
 sha256: ""
 ---

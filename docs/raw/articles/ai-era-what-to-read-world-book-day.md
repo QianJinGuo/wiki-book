@@ -1,6 +1,6 @@
 ---
 title: 世界读书日｜AI时代，我们该读什么？
-type: raw
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/exxxGcmamyVROyf9PBQdbQ
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

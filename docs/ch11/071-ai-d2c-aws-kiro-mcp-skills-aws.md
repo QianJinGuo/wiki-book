@@ -4,56 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让 AI 理解你的组件库 新一代智能 D2C架构 基于 AWS"))
-    知识工具化 从喂文档到调接口的范式转变
-    三层架构的职责分离与协同机制
-    组件选择 从规则引擎到语义对齐
-    自主执行模式与人工审核的边界划分
-    构建企业组件库时 优先采用 Skill 封装格式
-    在 Steering 文件中强制声明组件库优先策略
-    设计组件选择 Skill 时 采用专用而非通用原则
-    利用 MCP 协议实现工具的动态发现机制
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 by awschina on 08 12月 2025 in Case Study Permalink Share 摘要 随着企业级前端开发的复杂度不断提升，设计到代码（Design-to-Code, D2C）工具虽然能够自动生成代码，但往往无法理解和利用企业内部的组件库。本文探讨了如何利用 AWS Kiro IDE、Model Context Protocol (MCP) 和 Skills 构建新一代智能 D2C 平台。核心创新在于通过 Skills 将组件知识封装为可调用工具 ，结合 Steering 策略引导，使 AI 能够自动发现、理解并正确使用企业组件库。我们成功将组件库利用率从接近 0% 提升到 80% 以上，开发时间从数小时缩短到数分钟。 背景 传统 D2C 工具
 
 ## 核心技术
@@ -125,10 +76,10 @@ Steering 文件中配置的 `AUTONOMOUS MODE` 使 AI 能够完整执行 Step 1-6
 
 ## 相关实体
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/298-ai-agent.html)
-- [Agentic AI 系统架构与分层模型](../ch05/090-harness-skill.html)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/030-ai-agent.html)
+- [Agentic AI 系统架构与分层模型](../ch05/091-harness-skill.html)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md)
 

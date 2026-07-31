@@ -6,7 +6,7 @@ author: 术哥
 ingested: 2026-06-17
 sha256: 0a94a5f49a813a3eda28cb6b11205e6c374cc3486a43fffaddbca5281422231a
 tags: [wechat, article, shuge, comet, openspec, superpowers, ai-coding, three-tools-pipeline, engineering-discipline, filesystem-driven, yaml-state-machine, shell-script, multi-platform-adapter, multi-agent, subagent-driven-development, subagent-driven, context-compression, sha256-tracking, pre-tool-use-hook, brownfield-spec, delta-spec, artifact-graph, ai-coding-workflow, spec-driven-development]
-type: raw
+type: raw-article
 ---
 
 # AI 编程总失控？Comet + OpenSpec + Superpowers 用文件系统管住 AI

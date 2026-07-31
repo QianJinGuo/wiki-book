@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 15.3KB | `entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Managed Agents 新更新专属云模式"))
-    架构边界 brain 与 hands 的分离
-    Self-Hosted Sandboxes 的机制与价值
-    MCP Tunnels 私有工具的网络可达性
-    与 5 月 6 日更新的互补关系
-    社区质疑的回应进度
-    与其他 Agent 工具的定位差异
-    验证框架 不要先看功能够不够多
-    BrainHands 分离架构正在成为企业 Agent 部署的标准模式
-```
-
 ## 架构边界：brain 与 hands 的分离
 
 2026 年 4 月 8 日 Anthropic 工程博客文章 *Scaling Managed Agents: Decoupling the brain from the hands* 已经阐明了这个方向——将 Claude Managed Agents 拆解为 session、harness、sandbox 三个抽象层次。5 月 18 日的更新把这个架构真正产品化：
@@ -32,39 +16,6 @@ mindmap
 这个分离的本质是 **执行边界客户侧化，控制平面 Anthropic 化**。Agent 的决策过程、session 状态、事件流仍在托管控制平面，但执行可以落在企业自有基础设施。
 
 ## Self-Hosted Sandboxes 的机制与价值
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 Self-hosted sandbox 的运作模式：
 
@@ -186,12 +137,12 @@ Self-hosted sandbox 的设计更适合 worker 只返回结构化摘要和证据�
 ## 相关实体
 - [Claude Managed Agents Self Hosted Sandbox Enterprise](../ch04/710-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/212-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents Official](../ch04/603-claude-managed-agents-official.html)
+- [Claude Managed Agents Official](../ch04/607-claude-managed-agents-official.html)
 - [Claude Managed Agents](../ch04/710-claude-managed-agents.html)
-- [Anthropic Pm Jess Yan Managed Agents](ch01/989-anthropic.html)
+- [Anthropic Pm Jess Yan Managed Agents](ch01/1004-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
-- [openai 的最强对手，离「ai windows」又近了一步](../ch04/478-anthropic-ai.html)
+- [openai 的最强对手，离「ai windows」又近了一步](../ch04/484-anthropic-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 

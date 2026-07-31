@@ -2,7 +2,7 @@
 title: "Claude Code vs Kimi vs MiniMax Agent Tea 科技充电站"
 created: 2026-05-21
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: d6a82cbbe2dd92a34ab4044f5b44338d157e93f660a07821b6a72f9fdd51540d
 ---

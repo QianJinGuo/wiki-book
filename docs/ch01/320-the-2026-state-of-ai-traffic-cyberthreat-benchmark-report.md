@@ -6,59 +6,11 @@
 
 # The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The 2026 State of AI Traffic"))
-    AI-Powered Bot Traffic 从规则规避到智能伪装
-    Credential Stuffing 的 AI 进化
-    Ad Fraud 的 AI 复杂度升级
-    Defense Automation AI 同步驱动攻防升级
-```
-
 ## 摘要
 
 HUMAN Security 于 2026 年 6 月 2 日发布的《2026 年 AI 流量与网络威胁基准报告》（The 2026 State of AI Traffic & Cyberthreat Benchmark Report）是首份系统性分析 AI 技术如何重塑网络攻防格局的研究报告。报告基于 100+ 组织的基准测试数据，揭示了四个核心趋势：AI 驱动的 Bot 流量能够借助大语言模型规避传统检测、凭证填充攻击借助 AI 变得更加精准和个性化、AI 生成虚假用户行为使广告欺诈达到新复杂度水平，以及防御侧同步出现 AI 驱动的自动化安全系统。该报告为 CISOs 和反欺诈团队提供了可操作的威胁情报与防御建议，标志着网络安全行业正式进入 AI vs. AI 的对抗时代。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 1. **AI-Powered Bot Traffic 正在突破传统检测防线**：Bot 网络运营者利用 LLM 生成多样化、拟人化的流量特征，规避基于规则和签名的检测系统
 2. **Credential Stuffing 攻击的精准度大幅提升**：AI 使攻击者能够自动化分析泄露数据，构建高度个性化的凭证组合，而非简单粗暴的批量尝试
@@ -195,8 +147,8 @@ AI 驱动的凭证填充要求企业重新审视登录安全策略：
 
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html) — Karpathy 对 AI 时代安全问题的讨论
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html) — Agent 架构中的安全考量
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html) — AI 工具化的安全影响
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — 企业级 Agent 部署的安全考量
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html) — AI 工具化的安全影响
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — 企业级 Agent 部署的安全考量
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html) — Agent 系统的可观测性与安全审计
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/tJBB26BCNOGzdI0iBD9hGg
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]
 sha256: c28e456b59d9a7fdf18af64ba4aa32dfe59d26ca33de7481ff295a57aef9478b
 created: 2026-05-18
-type: article
+type: raw-article
 platform: wechat
 created: 2026-05-18
 sha256: ec80a8523c36f380d7f097ef809d1668ce3ab29a80c84eea9176aba8f160748f

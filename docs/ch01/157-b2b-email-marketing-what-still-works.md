@@ -6,7 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/b2b-email-marketing-what-still-works.md)
 
-
 ## 深度分析
 B2B Email Marketing 在 2026 年依然是最高价值的营销渠道之一，但策略重心已发生显著转移。这篇 Exit Five Live 活动预告揭示了几个关键行业动态：
 **1. 邮件营销的核心价值未被动摇**
@@ -19,37 +18,6 @@ B2B Email Marketing 在 2026 年依然是最高价值的营销渠道之一，但
 活动形式为"几位营销人员现场演示真实活动、Copy、Workflow 和工具" ，这种开放式分享模式表明，行业正在从竞争走向协作生态，通过真实案例驱动行业标准提升。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 基于以上分析，B2B 邮件营销从业者可从以下方向优化策略：
 **策略层面**
 
@@ -67,9 +35,9 @@ graph TB
 
 ## 相关实体
 
-- [Freelance Designers Can't Compete With a $20/Month AI Subscription - Here's What Actually Works Now](../ch05/094-ai.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1268-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/094-ai.html)
+- [Freelance Designers Can't Compete With a $20/Month AI Subscription - Here's What Actually Works Now](../ch05/095-ai.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1273-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/095-ai.html)
 
 ---
 

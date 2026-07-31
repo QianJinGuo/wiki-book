@@ -1,7 +1,7 @@
 ---
 sha256: d5548e9addc8f1897883d7eb22ec4c2aa12d56f2705313f96a4edcbeae2d541b
 title: "一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南"
-type: source
+type: raw-article
 tags: [mlops, ai-agent, engineering, wechat]
 source: wechat
 source_url: "https://mp.weixi"

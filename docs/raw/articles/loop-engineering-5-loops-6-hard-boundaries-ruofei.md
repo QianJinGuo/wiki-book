@@ -3,7 +3,7 @@ title: "Loop Engineering：5 类循环 + 6 个生产硬边界 + 从 Loop 到 Gra
 source_url: "https://mp.weixin.qq.com/s/RF2DVQCl-lSf-huPZRY57w"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # Loop Engineering：5 类循环 + 6 个生产硬边界 + 从 Loop 到 Graph

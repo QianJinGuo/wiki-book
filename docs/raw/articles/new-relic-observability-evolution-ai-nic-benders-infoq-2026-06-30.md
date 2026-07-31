@@ -5,7 +5,7 @@ author: "InfoQ（编译：宇琪，策划：Tina）"
 published: 2026-06-30
 ingested: 2026-06-30
 language: zh
-type: raw
+type: raw-article
 sha256: "b9503dba5d7a7ff6bf57f326a0659b9b084276e819e7b9e1c9fea39acbec8a77"
 ---
 

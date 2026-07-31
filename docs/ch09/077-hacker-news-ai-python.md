@@ -9,59 +9,12 @@
 2026 年 5 月 12 日，一篇题为 "If AI writes your code, why use Python?" 的文章在 Hacker News 上引发剧烈讨论，迅速攀升至 526 分，评论数突破 568 条，成为当日最热门的技术话题之一。
 文章核心论点直击灵魂：如果 AI 已经能够根据自然语言描述生成完整的、可运行的代码，我们是否还需要学习和使用 Python 这类编程语言？
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hacker News 热帖 AI 会写代码了 为啥还要用 Python"))
-    正方 编程语言成为 AI 的汇编语言
-    反方 编程语言将退居幕后
-    编程语言没有消亡 只是进化
-    判断
-```
-
 ## 正方：编程语言成为 AI 的"汇编语言"
 1. **编程语言是 AI 输出的验证工具**。 "如果你不懂 Python，你如何判断 AI 生成的代码是否正确？" 编程语言成为了人与 AI 之间建立信任的基础设施。
 2. **复杂系统需要精确的抽象层**。 AI 擅长处理明确的、局部的任务，但在构建大型复杂系统时，类型系统、模块化设计、架构模式等，仍然是组织复杂性的最佳工具。
 3. **调试和维护离不开代码理解**。 AI 生成的代码一旦出错，调试过程仍然需要人类阅读、理解、修改代码。
 
 ## 反方：编程语言将退居幕后
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 1. **自然语言就是新的编程语言**。 通过精心构造的自然语言 prompt，AI 能够生成比自己手写更高质量的代码。
 2. **中间层终将被消除**。 从机器码到汇编，从汇编到 C，从 C 到 Python——AI 自然语言编程不过是这棵抽象树的下一个分支。
 3. **领域专家比编程专家更重要**。 未来最有价值的不是"会写代码的人"，而是"知道该让代码做什么的人"。
@@ -83,9 +36,9 @@ Python 不会消失，但它正在从一门"人人都该学的编程语言"转�
 Doocs 微信号整理：https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ
 
 ## 相关实体
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html)
+- [Pi Openclaw Coding Harness](../ch11/237-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/050-openspec.html)
-- [Ai Era Git Version Control Agentic Coding Practices](../ch04/237-agentic.html)
+- [Ai Era Git Version Control Agentic Coding Practices](../ch04/648-agentic.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/035-agent.html)
 - [Ai Coding Guide Tmall Deep Dive](ch09/017-ai-coding-guide-tmall-deep-dive.html)
 

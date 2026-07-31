@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/4_tUnMVligTIPkxmwjSqFg
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, trae, solo-work, feishu-bitable, agent-tutorial, work-mode, code-mode, practical-pipeline, incremental-sync]
 ---
 

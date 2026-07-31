@@ -5,7 +5,7 @@ title: "基于顶级 Agent（Claude Code）的 Harness 工程搭建式业务 Age
 author: 泊予
 publisher: 阿里云开发者
 date: 2026-06-05
-type: article
+type: raw-article
 ingested: 2026-06-05
 review_value: 8
 review_confidence: 8

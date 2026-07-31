@@ -12,7 +12,7 @@ date: 2026-05-27
 created: 2026-05-28
 updated: 2026-05-28
 tags: [claude, claude-code, hooks, memory, claude-md, self-improvement, workflow]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: 60c0850b475cbc544bc0441edd21ce6faa9a4740e4bd534affb1be403b58c40d
 ---

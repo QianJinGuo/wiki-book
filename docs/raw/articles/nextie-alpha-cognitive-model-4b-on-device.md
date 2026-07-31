@@ -3,7 +3,7 @@ title: "新程Alpha认知模型：4B参数端侧部署，群体智能以小搏�
 source_url: "https://mp.weixin.qq.com/s/ypRly7nJcT3sKkvEI46OLw"
 ingested: 2026-06-10
 sha256: a2c108ceeeba66302e90a980c4942230df61b0973c8ac30792e1f6a017a38e52
-type: source
+type: raw-article
 tags: [wechat, cognitive-model, on-device, nextie, group-intelligence, harness]
 ---
 

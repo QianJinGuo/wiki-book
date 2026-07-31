@@ -16,30 +16,6 @@
 
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SAP Unveils the Autonomous"))
-    核心架构 SAP Business AI Platform
-    SAP Autonomous Suite 50 领域专属助理
-      领域覆盖
-      典型案例 Autonomous Close Assistant
-      Industry AI 7 大行业垂直方案
-    Joule Work 对话式工作体验
-    战略合作伙伴生态
-      Anthropic 合作的技术意义
-    市场进入 1 亿欧元合作伙伴基金
-      RISE with SAP 和 SAP GROW 加速计划
-      ERP 迁移工具
-    技术意义与行业影响
-      三大差异化特点
-      与企业 AI 落地趋势的关联
-    任务关键型定位揭示了企业 AI 与消费级 AI 的本质差异
-    Knowledge Graph 是 SAP 方案的核心差异化资产
-```
-
 ## 核心架构：SAP Business AI Platform
 
 SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Business Technology Platform](https://www.sap.com/products/business-technology-platform.html)（SAP BTP）、SAP Business Data Cloud 和 SAP Business AI 统一为单一托管环境，为企业 AI 提供安全、可扩展的部署底座 。
@@ -51,37 +27,6 @@ SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Busines
 ---
 
 ## SAP Autonomous Suite：50+ 领域专属助理
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 SAP Autonomous Suite 是部署在 Business AI Platform 之上的自主运营层，赋予 SAP 现有业务应用执行端到端流程的 AI 能力 。
 
@@ -246,7 +191,7 @@ SAP 在 AI 时代选择了与 Anthropic、NVIDIA、Google Cloud、Microsoft、Pa
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-unveils-the-autonomous-enterprise.md)
 
-- [nature | anthropic：蒸馏过程潜意识传递行为偏好](../ch05/094-ai.html)
+- [nature | anthropic：蒸馏过程潜意识传递行为偏好](../ch05/095-ai.html)
 
 ## 参考文献
 

@@ -10,7 +10,7 @@ review_value: 8
 review_confidence: 8
 review_stars: 4
 review_recommendation: positive
-type: source
+type: raw-article
 tags: [article]
 created: 2026-07-09
 updated: 2026-07-09

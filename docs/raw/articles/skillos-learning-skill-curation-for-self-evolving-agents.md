@@ -3,7 +3,7 @@ title: "SkillOS: Learning Skill Curation for Self-Evolving Agents"
 source: newsletter
 source_url: "https://arxiv.org/pdf/2605.06614.pdf"
 ingested: 2026-05-12
-type: source
+type: raw-article
 tags: [agent-tools, ai-agent, llm, newsletter, agent]
 sha256: 32cb4d3c6725505e9f8b989aba38ad78a962cc194d34dbd84c5f7ffa79b671c4
 ---

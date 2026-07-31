@@ -10,57 +10,7 @@
 
 本文详细记录了百炼网关团队对限流系统的端到端重构过程，核心技术选型是 **RocketMQ LiteTopic**。通过将限流决策与消息队列的 topic 模型深度结合，实现了多租户间的精细隔离与按需弹性，方案上线后限流比降低了 10 倍。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("百炼网关实践 用 RocketMQ LiteTopic"))
-    核心洞见 限流从防御题变成资源调度题
-    漏桶机制与消息队列的深度耦合
-    Suspend vs Sleep 理解 MQ 级限流的本质区别
-    大模型限流的普适范式
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **背景问题**：百炼平台从千级用户增长到百万级，传统"一个限流器卡在网关上"的粗粒度方案在 GPU 资源稀缺、租户隔离要求高、突发流量不可预测的三重约束下彻底失效。需要同时实现租户级流量隔离、精细化配额限流、平滑突发与资源统筹三个目标。
 - **算法选型**：固定窗口（容忍短期波动）→ 漏桶（匀速放行，更适合 GPU 稳态负载）的组合，而非滑动窗口或令牌桶。关键考量：GPU 扩容周期长、单价高，对流量尖峰极其敏感，漏桶的"匀速放行"特性天然匹配 GPU 的负载特性。
@@ -119,7 +69,7 @@ Suspend 的 Broker 级实现确保了：被限流的 LiteTopic 不占用任何�
 - [Harness Engineering](../ch05/120-harness-engineering.html)
 - [AI-Friendly 后端标准](../ch05/022-ai-friendly.html)
 - [Alitech 标准体系](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md)
-- [阿里云 LLM Wiki 实践](../ch01/1274-llm.html)
+- [阿里云 LLM Wiki 实践](../ch01/637-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/百炼网关实践用-rocketmq-litetopic-让限流比降了-10-倍.md)
 

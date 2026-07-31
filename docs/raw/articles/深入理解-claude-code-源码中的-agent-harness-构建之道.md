@@ -1,7 +1,7 @@
 ---
 
 title: "深入理解 Claude Code 源码中的 Agent Harness 构建之道"
-type: source
+type: raw-article
 tags: [ai-agent, engineering, agent-tools, wechat]
 source: wechat
 source_url: "https://mp.weixi"

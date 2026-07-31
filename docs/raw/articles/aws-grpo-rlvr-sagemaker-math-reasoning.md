@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: GRPO+RLVR双奖励系统：format 0.5 + correctness 1.0 / Qwen2.5-0.5B数学推理3.7x提升 / 8-shot阈值激活规律
 sha256: 982f29ad7429

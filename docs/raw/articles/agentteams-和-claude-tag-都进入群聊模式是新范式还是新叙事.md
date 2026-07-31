@@ -2,7 +2,7 @@
 title: "agentteams 和 claude tag 都进入群聊模式是新范式还是新叙事"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: a318dbfbf78ec84ccb7ebbeb68d75a70446afb0b6acf91290d2ba8d831bcb955
 ---

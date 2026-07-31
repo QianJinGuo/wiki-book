@@ -4,64 +4,10 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/skillsui.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SkillsUI"))
-    Key Facts
-    核心问题 function calling 和 MCP 解决不了的那段路
-    三层架构
-      Agent 调度层 Planning 和 Skill 编排彻底分开
-      Skill 层 原子能力的可执行规范
-      AIUI 层 卡片化交互 非聊天框
-    接入工程
-      路径一 OpenAPISwagger 半自动生成
-      路径二 业务嗅探 老旧系统
-    四大工程决策
-    定位 企业 AI 落地的中间层赌注
-    和 MCP 的互补关系
-    卡片化 UI 的战略判断
-```
-
 ## Overview
 SkillsUI（兔展智能）是一个企业 Agent 中间层平台，定位为"企业 Agent 最后一公里"——解决 function calling/MCP 等底层协议到企业存量系统之间的工程层缺口。官网：https://skillsui.rabbitpre.com.cn/
 
 ## Key Facts
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | Fact | Detail |
 |------|--------|
 | 定位 | 企业 Agent 应用/中间层 |
@@ -84,7 +30,7 @@ SkillsUI 把企业 Agent 拆成三层，每层职责单一、互相解耦：
 - **意图识别** — 把用户自然语言映射到一个或多个 Skill
 - **任务规划** — 决定 Skill 执行顺序，处理依赖关系
 - **多轮 slot filling** — 缺参数主动问询，不盲目猜测
-业务规则、异常处理、人机协同节点全部下沉到 Skill 层。Agent 调度层不感知 Skill 实现细节，只感知输入输出 schema。和 LangGraph 的"显式状态机 + 节点化"思路同向。 See also [Agent Skills Teams Architecture Evolution Selection Guide](../ch04/238-agent-skills-teams.html)
+业务规则、异常处理、人机协同节点全部下沉到 Skill 层。Agent 调度层不感知 Skill 实现细节，只感知输入输出 schema。和 LangGraph 的"显式状态机 + 节点化"思路同向。 See also [Agent Skills Teams Architecture Evolution Selection Guide](../ch04/241-agent-skills-teams.html)
 
 ### 2. Skill 层：原子能力的"可执行规范"
 企业级 Skill 包含五样东西：

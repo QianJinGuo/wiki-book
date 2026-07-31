@@ -10,22 +10,6 @@
 Anthropic 的工程师们写了篇技术博客，标题是：构建 Claude Code 的经验教训：Prompt Caching 就是一切。
 Claude Code 是目前最受欢迎的 AI 编程工具之一，而支撑它流畅运行的底层秘密，其实就藏在「缓存」这两个字里。这篇博客一共讲了 7 条经验，条条都是踩坑踩出来的。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 最新博客 Prompt Caching 是构建"))
-    缓存即基建
-    排好队形
-    别动 Prompt
-    别换模型
-    别碰工具
-    Plan Mode
-    延迟加载
-    压缩的学问 Cache-Safe Forking
-```
-
 ## 01 缓存即基建
 Anthropic 内部把 Prompt Cache 的命中率当作基础设施级别的指标来监控，地位跟服务器 uptime 差不多。一旦命中率下降，就会触发 oncall 告警，工程师得像处理线上事故一样去排查。
 换句话说，缓存在 Claude Code 里，并非锦上添花的优化，而是整个系统能跑起来的前提。
@@ -36,41 +20,6 @@ API 会缓存从请求开头到每个 `cache_control` 断点之间的所有内�
 而所有经验中最重要的一条，也就从这个原理生长出来。
 
 ## 02 排好队形
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 既然缓存靠前缀匹配，那 prompt 里内容的排列顺序就至关重要了。
 Anthropic 给出的最佳实践是这样排的：
 1. **静态系统 prompt 和工具定义**（全局缓存，所有 session 共享）
@@ -246,13 +195,13 @@ Anthropic 把缓存命中率当作基础设施级别指标来监控，一旦下�
 缓存按账号隔离，如果使用账号池，需要确保每个项目/用户的请求尽量路由到同一账号，避免缓存命中率因账号混用而下降。
 ## 相关实体
 - [Anthropic Prompt Caching Claude Code](ch01/217-anthropic-prompt-caching-claude-code.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1004-anthropic.html)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/212-anthropic-claude-managed-agents.html)
-- [腾讯研究院ai速递 20260506](ch01/673-ai-20260506.html)
+- [腾讯研究院ai速递 20260506](ch01/684-ai-20260506.html)
 - [claude-code-kairos-paradigm-2026](ch01/310-claude-code-kairos.html)
-- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/662-garry-tan.html)
+- [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](ch01/673-garry-tan.html)
 
 ---
 

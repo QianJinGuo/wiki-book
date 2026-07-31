@@ -29,62 +29,7 @@ In this post, you will learn how to:
 
 When finished you will have a system that uses concrete-ml in SageMaker AI designed to perform end-to-end encrypted ML inference.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("End-to-end encrypted ML inference"))
-    Prerequisites
-    数学安全与硬件安全的根本性差异
-    量化是 FHE 推理从理论可行走向工程落地的关键杠杆
-    Concrete-ML 的 API 兼容性大幅降低了 FHE 的应用门槛
-    S3 中转架构反映了 FHE 与云服务 API 约束的深层冲突
-    量化是 FHE 推理的必选项 而非可选项
-    采用异步推理模式并配置足够的等待超时
-    妥善保管客户端解密后的数据FHE 安全不覆盖端点侧明文
-```
-
 ## Solution overview
-
-```mermaid
-graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
-    end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
-    end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
-    end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
-    end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
-```
-
 
 Using concrete-ml in SageMaker AI works as follows:
 
@@ -157,8 +102,8 @@ Concrete-Ml 在训练阶段仍使用 plaintext 数据，训练流程与标准 sk
 文章指出 Concrete-ML 对原型验证和非商业用途免费，但商业部署需要商业许可。企业用户在评估成本时，应将 Zama 商业许可费用纳入 TCO 计算，并与合规团队确认数据处理 jurisdiction 是否对加密方案有特定要求。
 
 ## 相关实体
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/094-ai.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/095-ai.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01/671-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/295-amazon-bedrock.html)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)

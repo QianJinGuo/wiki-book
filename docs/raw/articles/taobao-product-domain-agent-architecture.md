@@ -4,7 +4,7 @@ author: "商品中心技术团队"
 source: "大淘宝技术"
 source_url: "https://mp.weixin.qq.com/s/VacWMG2oaAPq4vBsKEf7SA"
 created: 2026-05-25
-type: raw
+type: raw-article
 tags: [article]
 sha256: c01bb39d8c7e281a47b3e97aa21255db5138e55e1fb354373b33f15c507a6b64
 ---

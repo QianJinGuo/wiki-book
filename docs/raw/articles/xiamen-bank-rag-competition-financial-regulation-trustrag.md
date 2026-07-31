@@ -7,7 +7,7 @@ publish_date: 2025-06-25
 created: 2026-07-05
 ingested: 2026-07-05
 tags: [rag, retrieval-augmented-generation, financial-regulation, competition, trustrag, hybrid-retrieval, qwen3, qlora, finetuning, wechat]
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: strong

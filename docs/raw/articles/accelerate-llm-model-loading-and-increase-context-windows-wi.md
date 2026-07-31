@@ -2,7 +2,7 @@
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/accelerate-llm-model-loading-and-increase-context-windows-with-gpudirect-on-amazon-fsx-for-lustre-and-turboquant
 ingested: 2026-06-07
-type: article
+type: raw-article
 sha256: 3b62022b3ef5f352dd1c86af7bc04351df67792a8aac71b2504045097a0fad80
 feed_name: AWS China ML
 source_published: 2026-06-01

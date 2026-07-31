@@ -2,7 +2,7 @@
 title: "领先于Transformer 新架构首个1200万上下文模型SubQ 成本仅Op 机器之心"
 created: 2026-05-06
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 4d388039c32099b881e562bd69514ffe924767c3277fe0bb2d33581b79336614
 ---

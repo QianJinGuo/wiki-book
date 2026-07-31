@@ -3,6 +3,7 @@ title: "AgentENV：当大模型开始学会"做事"，我们开源了支撑它�
 source_url: "https://mp.weixin.qq.com/s/FuogYS7jLk7xyPOkZacd2Q"
 source_account: "AgentENV 团队 / KVCache.AI (清华MADSys实验室+月之暗面)"
 ingested: 2026-07-28
+sha256: "2f86907ee9892b08939a7b25d32577d866665a02670b6e9af8eee8124b981cff"
 type: raw-article
 tags:
   - agentenv

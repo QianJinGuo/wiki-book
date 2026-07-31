@@ -4,7 +4,7 @@ source_title: "Lilian Weng：Harness才是模型自我迭代的现实起点和�
 source_author: "AI寒武纪"
 ingested: 2026-07-08
 sha256: "dcca14b7872303354bc4b939ce566afef9ff9bf7de92507857cb53249dd7ae36"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [harness-engineering, rsi, lilian-weng, self-harness, evolutionary-search, meta-harness]
 ---

@@ -2,7 +2,7 @@
 source: newsletter
 source_url: https://www.vincentschmalbach.com/claude-code-china-router-fingerprint/
 ingested: 2026-07-02
-type: raw
+type: raw-article
 tags: [anthropic, claude-code, security, fingerprinting, api-routing, china, privacy]
 sha256: 6787822cf5740891ee964f76277f7fad2b011983bb49b0645a46cfb393682fca
 ---

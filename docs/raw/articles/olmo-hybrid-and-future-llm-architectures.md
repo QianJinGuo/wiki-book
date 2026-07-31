@@ -2,7 +2,7 @@
 source: rss
 source_url: https://www.interconnects.ai/p/olmo-hybrid-and-future-llm-architectures
 ingested: 2026-06-07
-type: article
+type: raw-article
 sha256: 8d6c30233e8c224f2cc2c94a3eba32292ca95330dcdc927027df319e46cc768e
 feed_name: Interconnects
 source_published: 2026-03-05

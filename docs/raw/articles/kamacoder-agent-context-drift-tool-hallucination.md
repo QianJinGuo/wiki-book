@@ -2,7 +2,7 @@
 title: "面试官皱眉：\"你的 Agent 跑了10轮之后还靠谱吗\"——上下文漂移与工具调用幻觉深度解析"
 source_url: https://mp.weixin.qq.com/s/4SebcRmlVlJ_MECOv7_3PQ
 sha256: e8146b4d3ee4
-type: raw
+type: raw-article
 created: 2026-05-15
 updated: 2026-05-15
 tags: [agent, reliability, context-drift, tool-hallucination, transformer, attention, interview]

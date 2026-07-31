@@ -7,7 +7,7 @@ publish_date: 2026-07-05
 created: 2026-07-05
 ingested: 2026-07-05
 tags: [milvus, vector-database, segment, compaction, deletion, delta-log, source-code-analysis, wechat]
-type: article
+type: raw-article
 review_value: 9
 review_confidence: 9
 review_recommendation: strong

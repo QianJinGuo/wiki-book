@@ -1,6 +1,6 @@
 ---
 title: "我们刚过了人类最后一个劳动节？AI新职业的八个变化"
-type: article
+type: raw-article
 source: 腾讯研究院
 source_url: "https://mp.weixin.qq.com/s/rlKHbcIuE8DQZhf16fpEUQ"
 author: 吴朋阳

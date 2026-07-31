@@ -3,7 +3,7 @@ title: "Skill 系统：Agent 如何把经验沉淀成可复用能力"
 source_url: "hermes-skill-system-winty"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: 9eca815cee0da056e5c4cdefb90c811bb22d9920840731babf8ecb5593d4ac3a
 ---
 ---

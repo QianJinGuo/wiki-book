@@ -6,22 +6,6 @@
 
 「Agent Harness Engineering 技术连载」第 15 篇（收官篇），将前 14 篇理论提炼为可立即使用的实践指南——10 步从零到生产路线图、8 种常见失败模式速查表、Harness 设计 Checklist、给不同角色的具体建议。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 实践指南 10 步路线图"))
-    核心定义
-    步从零构建 Harness
-    种常见失败模式速查表
-    Harness 设计 Checklist 5 大类 18 项
-    三个新技能
-    三个趋势
-    系列三件最重要的事
-    深度分析与实践启示
-```
-
 ## 核心定义
 
 Harness Engineering 是弥合「Demo 能跑」与「生产能用」之间鸿沟的工程学科。类比：**Harness Engineering 之于 AI Agent，正如 DevOps 之于软件部署**。
@@ -29,37 +13,6 @@ Harness Engineering 是弥合「Demo 能跑」与「生产能用」之间鸿沟�
 Agent 面临的上下文腐烂、工具误用、成本失控、安全漏洞、跨会话失忆——这些问题不是模型的问题，是 Harness 的问题。
 
 ## 10 步从零构建 Harness
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 | 步骤 | 内容 | 对应系列篇目 |
 |---|---|---|
@@ -121,7 +74,7 @@ graph TB
 
 **1. 10 步路线图 vs Hermes Agent 的实现映射**
 
-Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAUDE.md（目标边界）；Step 2 = tools/ 目录（原子工具）；Step 3 = context management + compaction；Step 4 = session persistence + memory tool；Step 5 = disallowed_tools + hooks；Step 6 = pre-commit hooks + wiki-lint；Step 7 = Langfuse integration；Step 8 = cron + kanban（长程执行）；Step 9 = model routing（OpenRouter）。Step 10 持续迭代通过 skill_manage 和 session_search 实现。 [Hermes Agent Skills Source Code Analysis Shuge](../ch04/439-hermes-agent-skills.html)
+Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAUDE.md（目标边界）；Step 2 = tools/ 目录（原子工具）；Step 3 = context management + compaction；Step 4 = session persistence + memory tool；Step 5 = disallowed_tools + hooks；Step 6 = pre-commit hooks + wiki-lint；Step 7 = Langfuse integration；Step 8 = cron + kanban（长程执行）；Step 9 = model routing（OpenRouter）。Step 10 持续迭代通过 skill_manage 和 session_search 实现。 [Hermes Agent Skills Source Code Analysis Shuge](../ch04/442-hermes-agent-skills.html)
 
 **2. Progress File 模式与 Hermes Memory/Cron 的对比**
 
@@ -140,9 +93,9 @@ Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAU
 - [Harness Engineering Framework](ch05/120-harness-engineering.html)
 - [Production Harness 12 Components](ch05/034-harness-12.html)
 - [Harness Engineering 14 步路线图](ch05/120-harness-engineering.html)
-- [AI Agent Harness Construction — Akshay](../ch01/973-ai-agent-harness.html)
+- [AI Agent Harness Construction — Akshay](../ch01/988-ai-agent-harness.html)
 - [Ralph Loop 长程执行](ch05/009-harness.html)
-- [Hermes Agent Skills 源码分析](../ch04/439-hermes-agent-skills.html)
+- [Hermes Agent Skills 源码分析](../ch04/442-hermes-agent-skills.html)
 - [Agent 记忆生命周期哲学](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
 - [Agent Engineering Guide MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-10-step-practical-guide-2026.md)

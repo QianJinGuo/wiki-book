@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((推理优化))
-    量化
-      INT4/INT8
-      GPTQ
-      AWQ
-    KV Cache
-      PagedAttention
-      KV共享
-      缓存淘汰
-    调度
-      Prefill/Decode分离
-      连续批处理
-      请求排队
-    投机解码
-      草稿模型
-      多Token预测
-      验证接受
-    架构优化
-      Flash Attention
-      稀疏注意力
-      MoE路由
-    部署
-      vLLM
-      TensorRT-LLM
-      SGLang
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -49,25 +18,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph LR
-    Q[量化 INT4/8] --> KV[KV Cache优化]
-    KV --> PD[Prefill/Decode分离]
-    PD --> SP[投机采样]
-    subgraph "部署"
-        LOC[本地GPU]
-        CLD[云端API]
-        EDG[边缘设备]
-    end
-    Q --> LOC & CLD
-    SP --> EDG
-    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
-    class Q,KV,PD,SP opt
-    class LOC,CLD,EDG deploy
-```
-
 
 模型训练好了，怎么高效地跑起来？
 
@@ -1470,7 +1420,7 @@ SGLang作为UC Berkeley/CMU/Stability AI联合开发的LLM推理框架，其核�
 
 ## Ch16.014 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md`
 
 # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
@@ -2202,254 +2152,9 @@ JoyAI-VL-Interaction 选择全栈开源，与许多大模型企业的闭源策�
 
 ---
 
-## Ch16.021 ServiceNow vLLM V0→V1 正确性修复
+## Ch16.021 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-vllm-correctness-huggingface.md)
-
-## 核心问题：训练-推理 logprob 不匹配
-
-PipelineRL 的训练器直接消费 rollout 产生的 token logprobs 来计算策略比率、KL 散度、clip rate、entropy 和 reward。任何 logprob 计算语义的变化都会改变训练动态。
-
-vLLM V1 默认返回**原始模型输出的 logprobs**（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是**经过采样器处理的分布的 logprobs**。这一语义差异导致初始 V1 跑通后，clip rate、KL、entropy、reward 全面漂移。
-
-## 四个后端修复
-
-### 1. Logprob 语义修复
-
-设置 `logprobs-mode=processed_logprobs` 移除了明显的均值偏移，使策略比率均值稳定在 1.0 附近。但训练曲线仍有差距——说明单一修复不够，下一个问题在推理路径本身。
-
-### 2. 运行时默认值对齐
-
-V1 的 prefix caching（默认开启）和 async scheduling（默认开启）引入了 V0 不存在的执行路径差异。在 online RL 场景下，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。
-
-对齐配置：
-
-```yaml
-vllm_config:
-  use_v1: true
-  vllm_kwargs:
-    logprobs-mode: processed_logprobs
-    enable-prefix-caching: false
-    async-scheduling: false
-```
-
-### 3. Inflight Weight Updates 语义对齐
-
-V0 的权重同步机制：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存。V1 等效方案：
-
-```python
-await engine.pause_generation(mode="keep", clear_cache=False)
-await engine_client.collective_rpc_async(
-    "receive_weight_update",
-    args=(request.model_dump_json(),),
-)
-await engine.resume_generation()
-```
-
-关键：`mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
-
-### 4. fp32 lm_head 最终投影精度
-
-即使前三项修复完成，最终 parity 仍需要 fp32 `lm_head`。MiniMax-M1 技术报告和 ScaleRL 论文都独立发现了这个问题：RL 更新直接消费 token logprobs，而 lm_head 输出的 logits 精度变化会传播到 logprobs，进而影响策略比率、KL 散度和 clip rate。
-
-## 核心工程原则：先修后端，再谈目标
-
-ServiceNow 的经验是：**错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读**。正确的问题分解应该是：
-
-1. 推理后端是否产生了正确的 logprobs？
-2. 给定正确的 logprobs，目标函数是否还需要 off-policy 或 async 修正？
-
-这两个问题需要分离处理。
-
-## 相关实体
-
-- [ServiceNow vLLM Correctness（更完整的分析）](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-vllm-correctness.md)
-- [vLLM V0→V1 迁移中的 logprob 差异修复](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
-
-## 深度分析
-
-vLLM V0 到 V1 的迁移表面上是同一个推理引擎的版本升级，实际上是一次架构重写带来的行为契约变化。 ServiceNow 团队设定的迁移目标"让 V1 返回与 V0 等效的 rollout logprobs"看似技术性极强，实则揭示了 RL 训练系统中的一个深层依赖：训练器对推理后端的输出语义做了隐式假设。这些假设在 V0 时代是正确的，但在 V1 重写后若不显式声明和强制对齐，就会成为训练不稳定的隐秘根源。
-
-logprobs 的语义差异（原始模型输出 vs. 采样器处理后分布）是四个修复中最初级但也最关键的一个。 它之所以关键，不是因为修复困难，而是因为它揭示了一个更普遍的问题：推理引擎版本升级时，默认配置的语义变化往往不会出现在升级指南中，却会直接影响消费推理输出的上游系统。这一问题在 PipelineRL 这类直接消费 token logprobs 计算训练目标的架构中尤为致命——logprob 均值偏移直接体现为策略比率的系统性偏差。
-
-prefix caching 在 RL 推理中的危险性被这一案例充分暴露。 Prefix caching 的设计目的是通过重用已计算的 KV cache 加速推理，这在静态场景（固定模型权重、固定对话前缀）下是合理的优化。然而，在 online RL 场景下，模型权重在训练过程中持续更新，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 获取与当前权重不对应的过期推理结果。这一问题在异步调度和并发请求混合时进一步复杂化，因为缓存失效边界与权重更新边界的对齐无法得到保障。
-
-fp32 lm_head 的发现在多个独立研究中得到印证（MiniMax-M1 技术报告、ScaleRL 论文），表明这是一个跨团队、跨方法的普遍性问题而非 ServiceNow 特有。 fp16 lm_head 输出的 logits 精度变化通过 logprobs 传播到 RL 更新的每一个计算环节——策略比率、KL 散度、clip rate 均受影响。这意味着在大型 RL 训练任务中，lm_head 投影精度的选择并非性能优化问题，而是正确性前提。ScaleRL 将 fp32 logits/head 计算纳入标准 RL 配方，意味着这一实践正在从个别案例上升为社区共识。
-
-ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——具有超出 vLLM 迁移场景的方法论价值。 在引入任何目标侧修正（truncated importance sampling、off-policy correction、async correction）之前，必须首先确保推理后端在等效条件下运行。这一原则的反面教训同样重要：在推理后端行为未对齐的情况下，目标侧的修正会与后端问题产生混合效应，使得训练曲线难以解读，也无法判断改进来源于修正本身还是后端修复的附带结果。
-
-## 实践启示
-
-- **推理引擎升级时的必检清单**：在将推理引擎升级到新版本后，第一步应验证 rollout logprobs 与旧版本的语义等效性，而非直接进行目标函数调优或训练超参数调整；具体检查项应包括 logprobs 计算位置（原始输出 vs. 采样后）、默认精度（fp16 vs. fp32）和默认优化项（prefix caching、async scheduling）的状态变化。
-- **online RL 场景下禁用 prefix caching**：在模型权重持续更新的训练场景中，prefix caching 引入的缓存重用语义与权重更新边界可能产生冲突；建议在 online RL 训练中显式设置 `enable-prefix-caching: false`，直到推理引擎提供权重更新感知的缓存失效机制。
-- **inflight weight update 的语义声明**：在实现权重更新逻辑时，应明确声明 `mode` 和 `clear_cache` 参数的语义选择并与推理引擎版本对齐；`mode="keep"` 和 `clear_cache=False` 的组合匹配了 V0 的隐式语义，但新引擎版本可能有不同的默认值，需要显式对齐。
-- **lm_head 投影精度作为 RL 正确性前提**：对于直接消费 token logprobs 的 RL 训练系统，建议将 fp32 lm_head 作为基线配置而非可选优化；这一选择与 ScaleRL 论文的推荐一致，在不引入显著性能损失的情况下消除了数值精度传播这一隐蔽的正确性风险。
-- **问题分解的工程顺序**：当训练曲线出现异常时，应严格遵循"推理后端等效性 → 目标函数修正"的处理顺序；在确认推理后端正确性之前，避免在目标侧引入修正——否则修正效果与后端修复效果混合，使得训练异常的根因诊断变得不可信。
-
----
-
-## Ch16.022 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
-
-> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
-
-# Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
-
-> **Background**: Hugging Face team profiling series part 2 (2026-06-11). Climbs from single nn.Linear to 3-layer MLP with ReLU activation, profiles GPU kernel launch overhead, and shows torch.compile Inductor fusion reducing 9+ launches to 3 fused triton kernels.
-
-## Core problem
-
-- nn.Linear is the building block of nearly all deep learning models
-- Single nn.Linear call produces multiple kernel launches (matmul + bias add)
-- ReLU activation adds additional launches
-- At small batch size (1024x1024), each layer can produce 5+ launches
-- Kernel launch overhead (10-20us each) dominates total latency in overhead-bound regime
-
-## Key findings
-
-1. **3-layer MLP produces 9+ kernel launches** (3 Linear x 3 ops/Linear + 2 ReLU), single launch 10-20us, launch overhead 30%+ of total
-2. **torch.compile auto-fusion**: Inductor backend fuses matmul + bias_add + relu into a single triton kernel, reducing 3 launches per layer to 1, total 9 to 3
-3. **Compute-bound vs overhead-bound crossover**: at batch=1024 launch overhead dominates; at batch>=4096 compute dominates and fusion gains diminish
-4. **CPU dispatch chain is hidden overhead**: each op traverses torch.add -> aten::add -> aten::add.out -> aten::copy_ dispatch layers, visible in profiler but not in user code
-5. **torch.compile guard / recompile**: dynamic shapes trigger multiple recompiles, so first call can be slower than eager mode
-
-## Practical takeaways
-
-- Latency-sensitive small batch inference (batch<=2048): prefer torch.compile fusion
-- Large batch training (batch>=4096): eager and compile modes have similar performance
-- When profiling, focus on cudaLaunchKernel duration field, not just Self CUDA Time
-- Use torch.profiler.profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) with record_function decorator to localize bottlenecks
-
-## Wiki cross-links
-
-- Same series (profiling part 1) - not yet ingested; check entities/torch-compile-* for related Inductor backend content
-- Candidate associations: kernel fusion, launch overhead, Inductor backend (no existing entity)
-
-## 深度分析
-
-### 核心观点
-
-1. **单算子层面的"融合"已接近极限，融合优化的主战场正在向算子间边界迁移**
-   - `nn.Linear` 的 bias 加法已经通过 cuBLAS GEMM 的 **epilogue** 机制在单 kernel 内部融合（`addmm`），`torch.compile` 在单 Linear 层上没有更多融合空间
-   - 真正的融合收益出现在 **算子间**：GeLU + element-wise mul + reshape 这三个独立 kernel 在 compile 后融合为一个 Triton kernel，消除了中间结果在 HBM 的往返
-   - 这意味着未来优化应关注"哪些算子之间有中间结果往返"，而非在单算子内部寻找融合机会
-
-2. **CPU 端的 dispatch 开销是被忽视的瓶颈，尤其在 overhead-bound 场景**
-   - 每个 PyTorch 算子经过 `aten::linear → aten::t → aten::addmm` 的 dispatch 链，每次 dispatch 触发 Python/C++ binding 开销
-   - `torch.compile` 通过 Inductor 在编译时展开这个链，直接发射 `aten::addmm`，消除了中间 view 操作带来的 CPU 开销
-   - 对 batch<=2048 的小 batch 推理，这个 CPU 开销占总延迟的 30%+，是 fused kernel 带来的主要收益来源
-
-3. **静态 shape 特化 vs 通用性是一个根本性权衡**
-   - Inductor 的 fused kernel 为 `[8192, 3072]` 形状专门生成，执行时间 89.4µs；Liger 手写 kernel 泛化任意形状执行时间 92.8µs
-   - 差距仅 3.4µs，但背后是 compile-time shape specialization 的代价——动态 shape 触发 recompile，重编译成本可能远超单次执行节省
-   - 实际工程选择应基于输入 shape 是否稳定，而非绝对性能数字
-
-4. **GEMM 形状影响 kernel 选型，从而影响性能——同样的 FLOPs 不等于同样的速度**
-   - gate_proj 和 up_proj：M·K·N = 8192·768·3072，执行时间 0.19ms
-   - down_proj：M·K·N = 8192·3072·768，执行时间 0.17ms（快约 10%）
-   - 原因：N=768 vs N=3072 导致 cuBLAS 选择了不同的 tile 配置（128×256 with stages_64x3 vs 128×128 with stages_32x5），更深 pipeline 的 tile 在该形状下复用更好
-
-### 技术要点
-
-- **GEMM epilogue**：矩阵乘 kernel 在写回 HBM 前执行 bias add / activation，避免单独发起一次 HBM 读写
-- **Triton pointwise fusion**：Inductor 的 Triton 后端将 pointwise 算子（GeLU、mul、reshape）融合为单一 kernel，intermediate 留在寄存器而非 HBM
-- **cuBLAS occupancy query**：每次 GEMM 发射前调用 `cudaOccupancyMaxActiveBlocksPerMultiprocessor` 确认最优 grid 配置，pointwise kernel 则直接发射无查询
-- **View 不产生 kernel**：`aten::t`、`aten::transpose`、`aten::as_strided` 只改 tensor metadata（shape + stride），不搬动数据，不发射 GPU kernel
-
-### 实践价值
-
-- 对**ML 工程师**：小 batch 推理（batch≤2048）优先用 `torch.compile`，收益最大；大 batch 训练（batch≥4096）可保留 eager mode 省去编译开销
-- 对**性能工程师**：profiler 表中看到 `0.000us` CUDA 时间的 op 名称（如 `aten::t`）应忽略，它们是纯 CPU 元数据操作，不是真正的 GPU 负载
-- 对**框架开发者**：设计新算子时考虑是否有 epilogue融合机会——在 GEMM 尾部做激活函数比单独发射 kernel 更高效
-
-### 相关实体
-
-- [Deepseek V4 Triton Fp4 Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-triton-fp4-optimization.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
-- [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
-
-## 实践启示
-
-1. **建立"先猜测再验证"的 profiler 习惯**：每次看 trace 前先在脑中构建预期，trace 打开后第一时间关注"预期与现实的差异"——差异就是最有价值的发现
-2. **小 batch 推理优先 torch.compile**：batch≤2048 时融合收益最高（kernel launch overhead 占 30%+）；batch≥4096 后 compute-bound 主导，compile 收益递减
-3. **关注 cudaLaunchKernel duration 而非只看 Self CUDA Time**：Self CUDA Time 漏掉了 kernel launch 调度开销，duration 字段包含 launch 和实际执行两部分
-4. **动态 shape 场景慎用 torch.compile**：若输入 shape 在每次推理时都可能变化（如 streaming 输入），compile 的 recompile 成本会抵消甚至超过融合收益，此时用 Liger 类手写 fused kernel 更稳定
-5. **用 kernels 库分发预编译 kernel**：避免本地编译的痛苦（版本不匹配、GPU 架构差异），通过 `get_kernel("kernels-community/liger-kernels", version=N)` 下载 CI 预编译的版本化二进制
-
-## Source
-
-Original URL: https://huggingface.co/blog/torch-mlp-fusion
-
-Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huggingface-torch-mlp-fusion-profiling-2026.md)
-
----
-
-## Ch16.023 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
-
-> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
-
-# MiMo-V2.5 推理系统全链路优化
-
-## 摘要
-
-小米 MiMo-V2.5 系列模型的推理系统全链路优化方案，围绕 Hybrid SWA + MoE + 多模态复合架构，系统性重构了 KVCache 管理、调度策略、Prefill/Decode 链路，实现 API 降价最高 99%。这是业内首篇全面覆盖该组合架构的大规模工程落地方案。
-
-## 核心要点
-
-1. **Hybrid SWA 架构**：70 层 Transformer 中 10 层 Full Attention + 60 层 Sliding Window Attention（窗口 128 token），KVCache 降至 1/7，Prefill 计算量降至 1/7
-2. **KVCache 系统重构**：双池分治（Full KV Pool + SWA KV Pool环形缓冲区）、前缀缓存树重构、GCache 三级缓存（GPU→CPU→NVMe SSD）
-3. **调度优化**：KVCache 亲和调度（L2 命中率+25%）、计算量感知优先调度（TTFT P90 -30%）、EP 缩减与三级长度分桶
-4. **Decode 加速**：MTP 投机解码（前 128 token 加速 2.3×）、SWA 显存扩容（有效容量 +5 倍）
-5. **多模态链路并行化**：Encoder 跨请求 Batch、GPU 图片预处理、视频多 chunk 并行（1 小时视频 156s→23s）
-
-## 深度分析
-
-### 1. Hybrid SWA 是生产级 LLM 推理的成本最优解之一
-
-MiMo-V2.5 证明了一个关键假设：在 70 层模型中仅用 14% 的 Full Attention 层即可维持足够质量，同时将 KVCache 和 Prefill 计算量降至 1/7。这意味着 **Attention 的稀疏化不是质量牺牲而是架构设计选择**——Sliding Window Attention 对局部依赖建模能力与 Full Attention 接近，而全局依赖由少量 Full Attention 层承载。这一设计在长序列场景下优势更显著，与当前模型上下文窗口持续扩张的趋势高度契合。
-
-### 2. 前缀缓存树重构是 SWA 工程化的核心挑战
-
-SWA 模式下传统「token 序列相等 → KV 也相等」的缓存假设被打破，因为窗口滑动导致相同前缀在不同请求中的 KVCache 表示不同。MiMo 团队的解决方案——将匹配规则升级为「窗口安全长度」（尾部至少 W 个 token 仍有有效 slot），并让淘汰路径与请求生命周期绑定——是针对 SWA 特性的关键工程创新。线上命中率平均 93% 证明了这种方案的有效性。这一思路对任何采用 SWA 或其变体的推理系统都有普适参考价值。
-
-### 3. GCache 三级缓存的零成本策略值得所有推理系统借鉴
-
-GCache 利用 GPU 机器上已被分配的 CPU 内存和 NVMe SSD，作为 KVCache 的二级/三级存储，实现了「额外存储成本为零」。RDMA 通信实现 170 GB/s 读吞吐和 280μs 延迟，使三级缓存在性能上也可接受。这种「混部存算」的思路——在推理节点上复用已有的 CPU/NVMe 资源作为缓存层——比独立部署缓存集群更经济。与 `Agent 评测的分层评分引擎` 的成本分层思路一致。
-
-### 4. 计算量感知调度是对传统负载均衡的范式改进
-
-传统负载均衡考虑的是请求数量均衡，而 MiMo 的「计算量感知优先调度」考虑的是真实计算 token 数量。这一差异在混合 Attention 架构下至关重要——不同请求的 Prefill 计算量可能相差数十倍（取决于输入长度和处理 attention 的层数）。优先处理计算量小的请求再辅以等待时间惩罚避免饥饿，这种「先易后难 + 公平补偿」的策略使 TTFT P90 降低 30%，同时不牺牲吞吐。
-
-### 5. 多模态链路并行化的架构设计原则
-
-MiMo 在多模态优化上的设计体现了一个重要原则——**将瓶颈操作从 CPU/IO 路径迁移至 GPU 计算路径**。图片预处理从 CPU 侧迁移至 GPU 消除大图瓶颈，视频解码多 chunk 多线程并行化，Encoder 支持跨请求 Batch。这背后是对「GPU 利用率高但 CPU/IO 成为瓶颈」现象的工程回应——当模型推理本身已高度优化时，数据预处理和传输的瓶颈就会凸显。随着多模态 Agent 场景增多（输入含图片、音频、视频），这一优化原则将变得越来越关键。
-
-## 实践启示
-
-1. **Attention 架构选择是推理成本的根本杠杆**：在模型设计阶段，对 Attention 比例的取舍直接影响部署成本。MiMo 的 Hybrid SWA 实践证明 10% 的全注意力层就足以维持质量。模型团队应在训练前就评估推理成本，而非先训后优化。
-
-2. **前缀缓存在 SWA 架构下需要重新设计**：传统基于精确 token 匹配的缓存策略在 SWA 下失效。如果团队部署的模型使用 SWA 或变体，应参考 MiMo 的「窗口安全长度」方案重新设计缓存逻辑。
-
-3. **推理优化要系统性考虑 KVCache、调度、Decode 三个维度**：单一维度的优化效果有限，MiMo 证明三维联动（KVCache 亲和调度 + 双池分治 + 投机解码）的协同效果远超各维度之和。建议推理系统团队以「全链路」视角而非「单点优化」视角制定优化计划。
-
-4. **多模态 Agent 场景的瓶颈正在从模型推理转移到数据处理**：随着推理效率提升，图片/视频预处理和传输将逐渐成为延迟的主要贡献者。将预处理迁移到 GPU 并支持跨请求 Batch 是当前最有效的缓解策略。
-
-5. **开源回馈是检验工程质量的试金石**：MiMo 将部分优化以 PR 形式回馈 SGLang 开源社区。回馈开源的过程强制团队将临时方案标准化为通用设计，本身就是工程自检。
-
-## 相关实体
-
-- `AReaL 2.0 在线 RL 系统` — 推理基础设施的另一个维度（RL 训练方）
-- `Agent 评测体系化指南` — 分层效率设计的评估维度
-- `洞察 Agent 可信推理链路` — 企业级推理应用场景
-- `Codex Agent 项目配置` — Agent 推理客户端实践
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mimo-v2-5-inference-system-optimization-hybrid-swa.md)
-
----
-
-## Ch16.024 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
-
-> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/llm-inference-pipeline-internals.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-inference-pipeline-internals.md)
 
@@ -2562,6 +2267,267 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 - → [DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
 - → [GLM-5 Scaling Pain](https://github.com/QianJinGuo/wiki/blob/main/entities/glm5-scaling-pain-inference.md)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
 - → [vLLM](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm.md)：PagedAttention 的具体实现
+
+## 工业实践：快手 kLLM 全栈优化（2026-07）
+
+快手系统软件团队围绕 GLM-5.2（DSA/MLA）与 DeepSeek-V4 构建自研推理引擎 kLLM，将本文上述概念落地为可量化的生产优化，原则是**不以模型能力损失为代价做优化**。
+
+| 本文概念 | kLLM 工业实践 | 量化收益 |
+|---------|--------------|---------|
+| PagedAttention / KV cache | **分级 KV Cache**（L1 GPU HBM / L2 CPU DRAM / L3 SSD+分布式）+ Cache-Aware 路由 | 命中率 +20pp、SLO 下吞吐 +30%、总命中率 ~87.6%；前缀树增量匹配使 GPU Bubble 400ms→30ms、Prefill +40% |
+| Prefill vs Decode（TTFT vs ITL） | **PD 分离 + SLO Load 驱动弹性**：以相对 TTFT/TPOT SLO 的背离度统一度量 P/D 压力，取预测/真实值上界 | 容量生效速度 10min→10s（约 60×），OpenRouter Uptime 99%+ |
+| Speculative decoding | **DSpark 半自回归投机解码**（并行 logits + 轻量序列模块 Bias 修正） | DeepSeek V4 Flash 线上 TPOT -15% |
+| 长上下文 / KV 膨胀 | **MLA 下 Attention Request DP + MoE EP 混合并行**（cKV 跨 Head 共享无法 TP 切分 → 按请求维分） | 8 卡 KV 容量 2.9M→21.2M Tokens（7.3×）、TTFT -25% |
+| Continuous batching 边界 | **Chunk Prefill 公平调度 + Decode KV 高水位保护**（短请求优先、长请求 Chunk 边界让出） | 平均 TTFT -17.8%、P50 -26.0%、P95 -12.1%（P99 +2.7%） |
+
+**核心洞见**：①模型侧降本 ≠ 系统侧同比提效——新一代模型（稀疏激活/稀疏注意力/百万上下文）把瓶颈从单一算力问题转化为计算/通信/显存/调度耦合的系统问题；②并行边界应按状态分布方式重构（MLA cKV 沿 Request DP、MoE 沿专家 EP、Dense FFN 按需 TP），而非单一并行策略覆盖全模型。
+
+**Agent 场景延伸**：kLLM 规划 Program-Aware 全生命周期调度——调度单元从"单请求"提升为一次 agent 会话/工作流，做暂停/恢复调度 + 工具调用空窗资源回收，指向推理系统向 agent 工作负载演进。
+
+---
+
+## Ch16.022 ServiceNow vLLM V0→V1 正确性修复
+
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-vllm-correctness-huggingface.md)
+
+## 核心问题：训练-推理 logprob 不匹配
+
+PipelineRL 的训练器直接消费 rollout 产生的 token logprobs 来计算策略比率、KL 散度、clip rate、entropy 和 reward。任何 logprob 计算语义的变化都会改变训练动态。
+
+vLLM V1 默认返回**原始模型输出的 logprobs**（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是**经过采样器处理的分布的 logprobs**。这一语义差异导致初始 V1 跑通后，clip rate、KL、entropy、reward 全面漂移。
+
+## 四个后端修复
+
+### 1. Logprob 语义修复
+
+设置 `logprobs-mode=processed_logprobs` 移除了明显的均值偏移，使策略比率均值稳定在 1.0 附近。但训练曲线仍有差距——说明单一修复不够，下一个问题在推理路径本身。
+
+### 2. 运行时默认值对齐
+
+V1 的 prefix caching（默认开启）和 async scheduling（默认开启）引入了 V0 不存在的执行路径差异。在 online RL 场景下，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。
+
+对齐配置：
+
+```yaml
+vllm_config:
+  use_v1: true
+  vllm_kwargs:
+    logprobs-mode: processed_logprobs
+    enable-prefix-caching: false
+    async-scheduling: false
+```
+
+### 3. Inflight Weight Updates 语义对齐
+
+V0 的权重同步机制：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存。V1 等效方案：
+
+```python
+await engine.pause_generation(mode="keep", clear_cache=False)
+await engine_client.collective_rpc_async(
+    "receive_weight_update",
+    args=(request.model_dump_json(),),
+)
+await engine.resume_generation()
+```
+
+关键：`mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
+
+### 4. fp32 lm_head 最终投影精度
+
+即使前三项修复完成，最终 parity 仍需要 fp32 `lm_head`。MiniMax-M1 技术报告和 ScaleRL 论文都独立发现了这个问题：RL 更新直接消费 token logprobs，而 lm_head 输出的 logits 精度变化会传播到 logprobs，进而影响策略比率、KL 散度和 clip rate。
+
+## 核心工程原则：先修后端，再谈目标
+
+ServiceNow 的经验是：**错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读**。正确的问题分解应该是：
+
+1. 推理后端是否产生了正确的 logprobs？
+2. 给定正确的 logprobs，目标函数是否还需要 off-policy 或 async 修正？
+
+这两个问题需要分离处理。
+
+## 相关实体
+
+- [ServiceNow vLLM Correctness（更完整的分析）](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-vllm-correctness.md)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
+
+## 深度分析
+
+vLLM V0 到 V1 的迁移表面上是同一个推理引擎的版本升级，实际上是一次架构重写带来的行为契约变化。 ServiceNow 团队设定的迁移目标"让 V1 返回与 V0 等效的 rollout logprobs"看似技术性极强，实则揭示了 RL 训练系统中的一个深层依赖：训练器对推理后端的输出语义做了隐式假设。这些假设在 V0 时代是正确的，但在 V1 重写后若不显式声明和强制对齐，就会成为训练不稳定的隐秘根源。
+
+logprobs 的语义差异（原始模型输出 vs. 采样器处理后分布）是四个修复中最初级但也最关键的一个。 它之所以关键，不是因为修复困难，而是因为它揭示了一个更普遍的问题：推理引擎版本升级时，默认配置的语义变化往往不会出现在升级指南中，却会直接影响消费推理输出的上游系统。这一问题在 PipelineRL 这类直接消费 token logprobs 计算训练目标的架构中尤为致命——logprob 均值偏移直接体现为策略比率的系统性偏差。
+
+prefix caching 在 RL 推理中的危险性被这一案例充分暴露。 Prefix caching 的设计目的是通过重用已计算的 KV cache 加速推理，这在静态场景（固定模型权重、固定对话前缀）下是合理的优化。然而，在 online RL 场景下，模型权重在训练过程中持续更新，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 获取与当前权重不对应的过期推理结果。这一问题在异步调度和并发请求混合时进一步复杂化，因为缓存失效边界与权重更新边界的对齐无法得到保障。
+
+fp32 lm_head 的发现在多个独立研究中得到印证（MiniMax-M1 技术报告、ScaleRL 论文），表明这是一个跨团队、跨方法的普遍性问题而非 ServiceNow 特有。 fp16 lm_head 输出的 logits 精度变化通过 logprobs 传播到 RL 更新的每一个计算环节——策略比率、KL 散度、clip rate 均受影响。这意味着在大型 RL 训练任务中，lm_head 投影精度的选择并非性能优化问题，而是正确性前提。ScaleRL 将 fp32 logits/head 计算纳入标准 RL 配方，意味着这一实践正在从个别案例上升为社区共识。
+
+ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——具有超出 vLLM 迁移场景的方法论价值。 在引入任何目标侧修正（truncated importance sampling、off-policy correction、async correction）之前，必须首先确保推理后端在等效条件下运行。这一原则的反面教训同样重要：在推理后端行为未对齐的情况下，目标侧的修正会与后端问题产生混合效应，使得训练曲线难以解读，也无法判断改进来源于修正本身还是后端修复的附带结果。
+
+## 实践启示
+
+- **推理引擎升级时的必检清单**：在将推理引擎升级到新版本后，第一步应验证 rollout logprobs 与旧版本的语义等效性，而非直接进行目标函数调优或训练超参数调整；具体检查项应包括 logprobs 计算位置（原始输出 vs. 采样后）、默认精度（fp16 vs. fp32）和默认优化项（prefix caching、async scheduling）的状态变化。
+- **online RL 场景下禁用 prefix caching**：在模型权重持续更新的训练场景中，prefix caching 引入的缓存重用语义与权重更新边界可能产生冲突；建议在 online RL 训练中显式设置 `enable-prefix-caching: false`，直到推理引擎提供权重更新感知的缓存失效机制。
+- **inflight weight update 的语义声明**：在实现权重更新逻辑时，应明确声明 `mode` 和 `clear_cache` 参数的语义选择并与推理引擎版本对齐；`mode="keep"` 和 `clear_cache=False` 的组合匹配了 V0 的隐式语义，但新引擎版本可能有不同的默认值，需要显式对齐。
+- **lm_head 投影精度作为 RL 正确性前提**：对于直接消费 token logprobs 的 RL 训练系统，建议将 fp32 lm_head 作为基线配置而非可选优化；这一选择与 ScaleRL 论文的推荐一致，在不引入显著性能损失的情况下消除了数值精度传播这一隐蔽的正确性风险。
+- **问题分解的工程顺序**：当训练曲线出现异常时，应严格遵循"推理后端等效性 → 目标函数修正"的处理顺序；在确认推理后端正确性之前，避免在目标侧引入修正——否则修正效果与后端修复效果混合，使得训练异常的根因诊断变得不可信。
+
+---
+
+## Ch16.023 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+
+> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
+
+# Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+
+> **Background**: Hugging Face team profiling series part 2 (2026-06-11). Climbs from single nn.Linear to 3-layer MLP with ReLU activation, profiles GPU kernel launch overhead, and shows torch.compile Inductor fusion reducing 9+ launches to 3 fused triton kernels.
+
+## Core problem
+
+- nn.Linear is the building block of nearly all deep learning models
+- Single nn.Linear call produces multiple kernel launches (matmul + bias add)
+- ReLU activation adds additional launches
+- At small batch size (1024x1024), each layer can produce 5+ launches
+- Kernel launch overhead (10-20us each) dominates total latency in overhead-bound regime
+
+## Key findings
+
+1. **3-layer MLP produces 9+ kernel launches** (3 Linear x 3 ops/Linear + 2 ReLU), single launch 10-20us, launch overhead 30%+ of total
+2. **torch.compile auto-fusion**: Inductor backend fuses matmul + bias_add + relu into a single triton kernel, reducing 3 launches per layer to 1, total 9 to 3
+3. **Compute-bound vs overhead-bound crossover**: at batch=1024 launch overhead dominates; at batch>=4096 compute dominates and fusion gains diminish
+4. **CPU dispatch chain is hidden overhead**: each op traverses torch.add -> aten::add -> aten::add.out -> aten::copy_ dispatch layers, visible in profiler but not in user code
+5. **torch.compile guard / recompile**: dynamic shapes trigger multiple recompiles, so first call can be slower than eager mode
+
+## Practical takeaways
+
+- Latency-sensitive small batch inference (batch<=2048): prefer torch.compile fusion
+- Large batch training (batch>=4096): eager and compile modes have similar performance
+- When profiling, focus on cudaLaunchKernel duration field, not just Self CUDA Time
+- Use torch.profiler.profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) with record_function decorator to localize bottlenecks
+
+## Wiki cross-links
+
+- Same series (profiling part 1) - not yet ingested; check entities/torch-compile-* for related Inductor backend content
+- Candidate associations: kernel fusion, launch overhead, Inductor backend (no existing entity)
+
+## 深度分析
+
+### 核心观点
+
+1. **单算子层面的"融合"已接近极限，融合优化的主战场正在向算子间边界迁移**
+   - `nn.Linear` 的 bias 加法已经通过 cuBLAS GEMM 的 **epilogue** 机制在单 kernel 内部融合（`addmm`），`torch.compile` 在单 Linear 层上没有更多融合空间
+   - 真正的融合收益出现在 **算子间**：GeLU + element-wise mul + reshape 这三个独立 kernel 在 compile 后融合为一个 Triton kernel，消除了中间结果在 HBM 的往返
+   - 这意味着未来优化应关注"哪些算子之间有中间结果往返"，而非在单算子内部寻找融合机会
+
+2. **CPU 端的 dispatch 开销是被忽视的瓶颈，尤其在 overhead-bound 场景**
+   - 每个 PyTorch 算子经过 `aten::linear → aten::t → aten::addmm` 的 dispatch 链，每次 dispatch 触发 Python/C++ binding 开销
+   - `torch.compile` 通过 Inductor 在编译时展开这个链，直接发射 `aten::addmm`，消除了中间 view 操作带来的 CPU 开销
+   - 对 batch<=2048 的小 batch 推理，这个 CPU 开销占总延迟的 30%+，是 fused kernel 带来的主要收益来源
+
+3. **静态 shape 特化 vs 通用性是一个根本性权衡**
+   - Inductor 的 fused kernel 为 `[8192, 3072]` 形状专门生成，执行时间 89.4µs；Liger 手写 kernel 泛化任意形状执行时间 92.8µs
+   - 差距仅 3.4µs，但背后是 compile-time shape specialization 的代价——动态 shape 触发 recompile，重编译成本可能远超单次执行节省
+   - 实际工程选择应基于输入 shape 是否稳定，而非绝对性能数字
+
+4. **GEMM 形状影响 kernel 选型，从而影响性能——同样的 FLOPs 不等于同样的速度**
+   - gate_proj 和 up_proj：M·K·N = 8192·768·3072，执行时间 0.19ms
+   - down_proj：M·K·N = 8192·3072·768，执行时间 0.17ms（快约 10%）
+   - 原因：N=768 vs N=3072 导致 cuBLAS 选择了不同的 tile 配置（128×256 with stages_64x3 vs 128×128 with stages_32x5），更深 pipeline 的 tile 在该形状下复用更好
+
+### 技术要点
+
+- **GEMM epilogue**：矩阵乘 kernel 在写回 HBM 前执行 bias add / activation，避免单独发起一次 HBM 读写
+- **Triton pointwise fusion**：Inductor 的 Triton 后端将 pointwise 算子（GeLU、mul、reshape）融合为单一 kernel，intermediate 留在寄存器而非 HBM
+- **cuBLAS occupancy query**：每次 GEMM 发射前调用 `cudaOccupancyMaxActiveBlocksPerMultiprocessor` 确认最优 grid 配置，pointwise kernel 则直接发射无查询
+- **View 不产生 kernel**：`aten::t`、`aten::transpose`、`aten::as_strided` 只改 tensor metadata（shape + stride），不搬动数据，不发射 GPU kernel
+
+### 实践价值
+
+- 对**ML 工程师**：小 batch 推理（batch≤2048）优先用 `torch.compile`，收益最大；大 batch 训练（batch≥4096）可保留 eager mode 省去编译开销
+- 对**性能工程师**：profiler 表中看到 `0.000us` CUDA 时间的 op 名称（如 `aten::t`）应忽略，它们是纯 CPU 元数据操作，不是真正的 GPU 负载
+- 对**框架开发者**：设计新算子时考虑是否有 epilogue融合机会——在 GEMM 尾部做激活函数比单独发射 kernel 更高效
+
+### 相关实体
+
+- [Deepseek V4 Triton Fp4 Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-triton-fp4-optimization.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
+- [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
+
+## 实践启示
+
+1. **建立"先猜测再验证"的 profiler 习惯**：每次看 trace 前先在脑中构建预期，trace 打开后第一时间关注"预期与现实的差异"——差异就是最有价值的发现
+2. **小 batch 推理优先 torch.compile**：batch≤2048 时融合收益最高（kernel launch overhead 占 30%+）；batch≥4096 后 compute-bound 主导，compile 收益递减
+3. **关注 cudaLaunchKernel duration 而非只看 Self CUDA Time**：Self CUDA Time 漏掉了 kernel launch 调度开销，duration 字段包含 launch 和实际执行两部分
+4. **动态 shape 场景慎用 torch.compile**：若输入 shape 在每次推理时都可能变化（如 streaming 输入），compile 的 recompile 成本会抵消甚至超过融合收益，此时用 Liger 类手写 fused kernel 更稳定
+5. **用 kernels 库分发预编译 kernel**：避免本地编译的痛苦（版本不匹配、GPU 架构差异），通过 `get_kernel("kernels-community/liger-kernels", version=N)` 下载 CI 预编译的版本化二进制
+
+## Source
+
+Original URL: https://huggingface.co/blog/torch-mlp-fusion
+
+Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huggingface-torch-mlp-fusion-profiling-2026.md)
+
+---
+
+## Ch16.024 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
+
+> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
+
+# MiMo-V2.5 推理系统全链路优化
+
+## 摘要
+
+小米 MiMo-V2.5 系列模型的推理系统全链路优化方案，围绕 Hybrid SWA + MoE + 多模态复合架构，系统性重构了 KVCache 管理、调度策略、Prefill/Decode 链路，实现 API 降价最高 99%。这是业内首篇全面覆盖该组合架构的大规模工程落地方案。
+
+## 核心要点
+
+1. **Hybrid SWA 架构**：70 层 Transformer 中 10 层 Full Attention + 60 层 Sliding Window Attention（窗口 128 token），KVCache 降至 1/7，Prefill 计算量降至 1/7
+2. **KVCache 系统重构**：双池分治（Full KV Pool + SWA KV Pool环形缓冲区）、前缀缓存树重构、GCache 三级缓存（GPU→CPU→NVMe SSD）
+3. **调度优化**：KVCache 亲和调度（L2 命中率+25%）、计算量感知优先调度（TTFT P90 -30%）、EP 缩减与三级长度分桶
+4. **Decode 加速**：MTP 投机解码（前 128 token 加速 2.3×）、SWA 显存扩容（有效容量 +5 倍）
+5. **多模态链路并行化**：Encoder 跨请求 Batch、GPU 图片预处理、视频多 chunk 并行（1 小时视频 156s→23s）
+
+## 深度分析
+
+### 1. Hybrid SWA 是生产级 LLM 推理的成本最优解之一
+
+MiMo-V2.5 证明了一个关键假设：在 70 层模型中仅用 14% 的 Full Attention 层即可维持足够质量，同时将 KVCache 和 Prefill 计算量降至 1/7。这意味着 **Attention 的稀疏化不是质量牺牲而是架构设计选择**——Sliding Window Attention 对局部依赖建模能力与 Full Attention 接近，而全局依赖由少量 Full Attention 层承载。这一设计在长序列场景下优势更显著，与当前模型上下文窗口持续扩张的趋势高度契合。
+
+### 2. 前缀缓存树重构是 SWA 工程化的核心挑战
+
+SWA 模式下传统「token 序列相等 → KV 也相等」的缓存假设被打破，因为窗口滑动导致相同前缀在不同请求中的 KVCache 表示不同。MiMo 团队的解决方案——将匹配规则升级为「窗口安全长度」（尾部至少 W 个 token 仍有有效 slot），并让淘汰路径与请求生命周期绑定——是针对 SWA 特性的关键工程创新。线上命中率平均 93% 证明了这种方案的有效性。这一思路对任何采用 SWA 或其变体的推理系统都有普适参考价值。
+
+### 3. GCache 三级缓存的零成本策略值得所有推理系统借鉴
+
+GCache 利用 GPU 机器上已被分配的 CPU 内存和 NVMe SSD，作为 KVCache 的二级/三级存储，实现了「额外存储成本为零」。RDMA 通信实现 170 GB/s 读吞吐和 280μs 延迟，使三级缓存在性能上也可接受。这种「混部存算」的思路——在推理节点上复用已有的 CPU/NVMe 资源作为缓存层——比独立部署缓存集群更经济。与 `Agent 评测的分层评分引擎` 的成本分层思路一致。
+
+### 4. 计算量感知调度是对传统负载均衡的范式改进
+
+传统负载均衡考虑的是请求数量均衡，而 MiMo 的「计算量感知优先调度」考虑的是真实计算 token 数量。这一差异在混合 Attention 架构下至关重要——不同请求的 Prefill 计算量可能相差数十倍（取决于输入长度和处理 attention 的层数）。优先处理计算量小的请求再辅以等待时间惩罚避免饥饿，这种「先易后难 + 公平补偿」的策略使 TTFT P90 降低 30%，同时不牺牲吞吐。
+
+### 5. 多模态链路并行化的架构设计原则
+
+MiMo 在多模态优化上的设计体现了一个重要原则——**将瓶颈操作从 CPU/IO 路径迁移至 GPU 计算路径**。图片预处理从 CPU 侧迁移至 GPU 消除大图瓶颈，视频解码多 chunk 多线程并行化，Encoder 支持跨请求 Batch。这背后是对「GPU 利用率高但 CPU/IO 成为瓶颈」现象的工程回应——当模型推理本身已高度优化时，数据预处理和传输的瓶颈就会凸显。随着多模态 Agent 场景增多（输入含图片、音频、视频），这一优化原则将变得越来越关键。
+
+## 实践启示
+
+1. **Attention 架构选择是推理成本的根本杠杆**：在模型设计阶段，对 Attention 比例的取舍直接影响部署成本。MiMo 的 Hybrid SWA 实践证明 10% 的全注意力层就足以维持质量。模型团队应在训练前就评估推理成本，而非先训后优化。
+
+2. **前缀缓存在 SWA 架构下需要重新设计**：传统基于精确 token 匹配的缓存策略在 SWA 下失效。如果团队部署的模型使用 SWA 或变体，应参考 MiMo 的「窗口安全长度」方案重新设计缓存逻辑。
+
+3. **推理优化要系统性考虑 KVCache、调度、Decode 三个维度**：单一维度的优化效果有限，MiMo 证明三维联动（KVCache 亲和调度 + 双池分治 + 投机解码）的协同效果远超各维度之和。建议推理系统团队以「全链路」视角而非「单点优化」视角制定优化计划。
+
+4. **多模态 Agent 场景的瓶颈正在从模型推理转移到数据处理**：随着推理效率提升，图片/视频预处理和传输将逐渐成为延迟的主要贡献者。将预处理迁移到 GPU 并支持跨请求 Batch 是当前最有效的缓解策略。
+
+5. **开源回馈是检验工程质量的试金石**：MiMo 将部分优化以 PR 形式回馈 SGLang 开源社区。回馈开源的过程强制团队将临时方案标准化为通用设计，本身就是工程自检。
+
+## 相关实体
+
+- `AReaL 2.0 在线 RL 系统` — 推理基础设施的另一个维度（RL 训练方）
+- `Agent 评测体系化指南` — 分层效率设计的评估维度
+- `洞察 Agent 可信推理链路` — 企业级推理应用场景
+- `Codex Agent 项目配置` — Agent 推理客户端实践
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mimo-v2-5-inference-system-optimization-hybrid-swa.md)
 
 ---
 

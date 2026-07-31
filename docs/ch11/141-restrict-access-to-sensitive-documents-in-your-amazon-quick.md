@@ -4,46 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md`
 
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 - AWS QuickSight S3 知识库支持文档级 ACL，提供文件夹或单文档级别的精细访问控制 
 - 启用 ACL 后，未明确列入配置的文档或前缀默认拒绝访问（Deny-by-default） 
 - 两种配置方式：Global ACL 文件（适合稳定的文件夹结构）和 Document-level 元数据文件（适合频繁变更的权限） 
@@ -70,12 +31,12 @@ Amazon QuickSight 的文档级 ACL 功能代表了企业 AI 搜索系统中访�
 ## 相关实体
 - [PyTorch 2.12 Release Blog – PyTorch](../ch01/203-pytorch-2-12-release-blog.html) — 另一个 2026 年重大技术发布
 - [TeamPCP Claims Sale of Mistral AI Repositories](../ch12/061-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html) — AI 基础设施安全事件
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/094-ai.html)
-- [CloudSectiDbits](ch11/252-cloudsectidbits.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/095-ai.html)
+- [CloudSectiDbits](ch11/254-cloudsectidbits.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/054-prowler-genai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/272-aws-bedrock-agentcore.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
-- [amazon quick arns: cross-account migration and namespace per](ch11/222-amazon-quick.html)
+- [amazon quick arns: cross-account migration and namespace per](ch11/224-amazon-quick.html)
 
 ---
 

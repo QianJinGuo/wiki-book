@@ -4,7 +4,7 @@ author: "术哥无界"
 source: "运维有术"
 source_url: "https://mp.weixin.qq.com/s/Ib241_1rIS3A5-MThimJ1A"
 created: 2026-05-25
-type: raw
+type: raw-article
 tags: [article]
 sha256: ad0a8d9c7ac31a75ab27856ca23e822489703552976b31c99c4f17146245f41a
 ---

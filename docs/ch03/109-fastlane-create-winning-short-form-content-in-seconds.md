@@ -8,52 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Fastlane Create Winning"))
-    产品定位与竞争格局
-    PLG 策略分析
-    内容同质化风险
-    定价策略
-```
-
 ## 摘要
 
 Fastlane 是一个 AI 驱动的短内容生产平台，定位为"30 秒生成 30 天的病毒式内容"。它通过输入网站 URL 自动学习产品信息和目标受众，然后生成适配 TikTok、Instagram Reels 和 YouTube Shorts 的短视频内容。核心功能包括 Blitz Mode（类似 Tinder 的内容滑动筛选）、500+ 超写实 AI 虚拟人 UGC 角色库、2000+ 真人 UGC 视频素材库、以及一键跨平台发布调度。产品采用典型 PLG 策略，通过 Product Hunt 高频曝光和用户增长案例（如 31.8M views）建立社会证明。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 1. **趋势内容 → 产品内容的自动化流水线** — Fastlane 的核心价值主张是将热门趋势视频自动转化为适配特定产品的营销内容，降低短内容生产的认知门槛和时间成本。用户无需从零构思创意，系统会基于产品信息自动生成内容方案。
 
@@ -101,7 +60,7 @@ Fastlane 采用了教科书级的 PLG（Product-Led Growth）策略：
 
 ## 相关实体
 
-- [AI Video Tools](../ch05/094-ai.html)
+- [AI Video Tools](../ch05/095-ai.html)
 - AI Video Generation
 - Agent Harness
 - [MOC: Vision & Multimodal](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)

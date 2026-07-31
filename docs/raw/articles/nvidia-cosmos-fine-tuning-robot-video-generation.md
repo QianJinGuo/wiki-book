@@ -1,6 +1,6 @@
 ---
 title: Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation
 tags: [newsletter, security]

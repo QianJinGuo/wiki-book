@@ -114,7 +114,6 @@ iii 是开源项目。可以通过我们的 quickstart 开始使用。
 参考阅读：明星开源项目，为什么开始离开 GitHub？ / 300万人在存的Claude提示词 / 别再把上下文当聊天记录 / Claude 发布官方报告，承认存在 3 处质量退化问题
 References：Manus 原话: https://vrungta.substack.com/p/claude-code-architecture-reverse / iii 官网: https://iii.dev/ / quickstart: https://iii.dev/docs/quickstart
 
-
 ## 深度分析
 **1. "Primitives 决定系统边界"的核心洞见**
 这篇文章最深刻的思想不是 iii 这个产品本身，而是对"什么决定系统边界"这个问题的重新回答。大多数开发者默认系统边界由技术实现决定：队列是一个边界，HTTP 服务是另一个边界，微服务又是另一个。iii 的赌注是：真正的边界应该由"语义所有权"决定——一个 function 的内部逻辑决定它做什么，而 triggers 决定它何时被调用。这与 Unix 的"一切皆文件"哲学一脉相承：不是文件本身特殊，而是"文件作为 interface"这个抽象足够通用，能够承载任意语义。在 agentic 时代，这个思路的价值在于：它让"随机性的 AI"与"确定性的后端"不再是两种不同的系统，而只是两种不同的 workers。
@@ -126,37 +125,6 @@ Anthropic（薄）与 LangGraph（厚）的争论本质上是"在 harness 层编
 文章最超前的部分是 agent 可以创建 sandbox worker，而这个 sandbox 也是一个 worker。这创造了一个有趣的递归：agent（一个 worker）可以动态创建新的 workers（sandbox），新 workers 注册自己的 functions，其他 workers 立即可以发现并调用它们。这带来的结果不是"agent 有了更多能力"，而是"系统的能力边界可以在运行时扩展"。这比"agent 调用 API"强大得多——后者受限于预先定义的 API 集合，而前者可以动态创造全新的 function 集合。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 **1. 在设计 Agent 工具时，先问"这个工具是否应该是 function"**
 传统 Agent 开发中，"工具"是一个模糊的概念——它可能是一个 API、一个代码执行环境、一个文件读取操作。iii 的框架提供了一个清晰的判断标准：如果一个工具可以被多个不同的 trigger（HTTP、状态变化、队列、cron）触发，它就应该是一个 function 而非硬编码的 API。这个判断帮助避免"工具"概念的膨胀——很多所谓的"工具"其实只是 trigger 类型的不同，本质上是同一个 work unit。
 **2. 用"注册"而非"配置"来扩展系统**
@@ -168,13 +136,13 @@ iii 的核心价值主张不是"它是一个更好的 harness"，而是"它消�
 **5. Primitives 设计比功能列表更重要**
 iii 最值得学习的不是它的具体功能，而是它的设计哲学：找到一个足够小、足够通用的 primitive 集合，让"添加功能"的答案变成"添加一个 Worker"。在设计任何复杂系统时，先问：能否用一个 primitive 回答"我想要 X"这个问题？如果不能，为什么？如果能，这个 primitive 是什么？"添加一个 worker"这个答案的优雅之处在于它是自描述的——它告诉你具体做什么（添加 worker）以及这会带来的效果（系统获得新能力并立即可发现、可观测）。
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch01/989-anthropic.html)
-- [Anthropic 12 Mcp Production Patterns](ch01/989-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch01/989-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/271-skill.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch01/1004-anthropic.html)
+- [Anthropic 12 Mcp Production Patterns](ch01/1004-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch01/1004-anthropic.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/273-skill.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/286-anthropic-claude-code.html)
 
-- [Anthropic Long Running Agent Architecture 6H Retroforge](ch01/989-anthropic.html)
+- [Anthropic Long Running Agent Architecture 6H Retroforge](ch01/1004-anthropic.html)
 
 ---
 

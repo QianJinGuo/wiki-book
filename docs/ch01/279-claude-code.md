@@ -4,23 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/claude-code-best-practices.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 大型代码库最佳实践"))
-    核心导航机制
-    Harnes 与模型同等重要
-      CLAUDEmd 文件
-      Hooks
-      Skills
-    三种成功部署的配置模式
-      使代码库可大规模导航
-      积极维护 CLAUDEmd 文件
-      分配 Claude Code 管理和采用的所有权
-```
-
 ## 核心导航机制
 Claude Code 导航代码库的方式与软件工程师相同：遍历文件系统、读取文件、使用 grep 精确定位所需内容、追踪代码库中的引用。它在开发者的本地机器上运行，无需构建、维护或上传代码库索引到服务器。
 与 RAG 驱动的 AI 编程工具不同，Claude Code 不依赖嵌入整个代码库并在查询时检索相关块。在大规模场景下，这些系统可能失效——嵌入管道无法跟上活跃工程团队的节奏。当开发者查询索引时，它反映的是数周、数天甚至数小时前的代码库状态。检索返回的是团队两周前重命名的函数，或上个 sprint 删除的模块，且没有任何过时的指示。
@@ -28,41 +11,6 @@ Claude Code 导航代码库的方式与软件工程师相同：遍历文件系�
 这种方法的权衡在于：当 Claude 有足够的起始上下文知道从哪里查找时，效果最佳。这意味着 Claude 的导航质量取决于代码库的设置——通过 CLAUDE.md 文件和 Skills 进行分层上下文。
 
 ## Harnes：与模型同等重要
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 关于 Claude Code 最常见的误解之一是其能力完全由使用的模型决定。团队关注模型的基准测试及其在测试任务上的表现。实际上，围绕模型构建的生态系统——harness——比单独的模型更能决定 Claude Code 的表现。
 Harness 由五个扩展点构建：CLAUDE.md 文件、hooks、skills、plugins 和 MCP servers，每个都服务于不同的功能。团队构建它们的顺序很重要，因为每一层都建立在前一层的基础上。另外两个能力——LSP 集成和 subagents——完善了整个设置。
 | 组件 | 是什么 | 何时加载 | 最适合 | 常见混淆 |
@@ -129,11 +77,11 @@ Claude Code 在大型代码库中的表现揭示了企业 AI 编程工具部署�
 **所有权是采用瓶颈**：技术准备度与组织准备度的错位是常见失败模式。成功案例显示，专门的 agent manager 角色和插件/MCP 的开箱即用体验对于跨越"第一天可用性"障碍至关重要。
 
 ## 相关实体
-- [How_Claude_Code_Works_In_Large_Codebases](ch01/976-claude.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
-- [Claude Code Large Codebase Harness Configuration](../ch03/078-claude-code.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
-- [Code Review Graph](ch01/833-code-review-graph-claude-code-6-8-token.html)
+- [How_Claude_Code_Works_In_Large_Codebases](ch01/1022-claude.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/286-anthropic-claude-code.html)
+- [Claude Code Large Codebase Harness Configuration](../ch03/077-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
+- [Code Review Graph](ch01/847-code-review-graph-claude-code-6-8-token.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
 

@@ -12,7 +12,7 @@ date: 2026-05-27
 created: 2026-05-28
 updated: 2026-05-28
 tags: [autoresearch, ai-for-science, research-agent, autonomy-level, l0-l4, the-ai-scientist, alphafold, multi-agent, benchmark]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: 5730b097d4fb6f5cdd1364ace813cc7786c6012b5d5950dbe2826c85c0f534ba
 ---

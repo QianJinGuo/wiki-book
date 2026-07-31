@@ -1,6 +1,6 @@
 ---
 title: "Agent Skill 规范、构建与设计模式（核心摘要）"
-type: source
+type: raw-article
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/LCpiLyLnRn5WyuHpribyHw"
 sha256: 5ca5275e13328882765bf954396c0aafab83f92646d60b0626655e2d7f746ec2

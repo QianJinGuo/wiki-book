@@ -5,7 +5,7 @@ source_url: https://www.lesswrong.com/posts/rJcCrXyEsJKmmDpWG/how-far-behind-are
 ingested: 2026-06-01
 feed_name: LessWrong
 source_published: 2026-05-28T09:41:40Z
-type: article
+type: raw-article
 sha256: c207b6f3560bd464eeac4b996fb501caac46b2f16a8c71552d354b6b06e56527
 tags: [open-models, benchmark, evaluation, lesswrong, ai-frontier]
 ---

@@ -4,60 +4,10 @@
 
 > 📊 Level ⭐⭐ | 10.7KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenSpec 四步法深度复盘 流程完整 代码正确"))
-    四步法各环节短板分析
-    五项升级方案
-      升级一 Propose 后加 Spec Review
-      升级二 Apply 拆分为原子任务 检查点
-      升级三 Verify 加入运行验证
-    文档链路 vs 代码链路 两条平行线的错位
-    Verify 的定位偏差 暴露问题 解决问题
-    上下文窗口压力 被低估的衰减因子
-    自 Review 的局限性 用同一把尺子量自己
-    质量保障必须分层叠加 不能依赖单一环节
-    测试必须从可选变成强制
-```
-
 ## 核心洞察
 **流程完整 ≠ 代码正确。** OpenSpec 四步法（propose → apply → verify → archive）保证了需求对齐的文档链路，但无法保证 AI 实际输出的代码质量。
 
 ## 四步法各环节短板分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 环节 | 设计意图 | 实际短板 |
 |------|----------|----------|
 | Propose | 对齐需求，一次性生成 proposal + specs + design + tasks | Spec 质量无验证机制，格式错误静默忽略，来源不可靠的 Spec 导致下游全部偏离 |

@@ -18,44 +18,7 @@ AI Detection and Response (AIDR) is the [operating model](https://www.mitiga.io/
 - What AIDR is – and what it is not
 - How Mitiga's Helios AIDR works
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 AIDR 的核心命题是：在凭证或可信集成已被攻陷的情况下，防御的胜负手从预防转移到了可见性、调查保真度和响应速度。传统的"预防优先"安全模型假设边界可控、凭证不泄露，但在云和 SaaS 时代，凭证泄露和可信集成滥用已成常态而非异常。这不是某个厂商的话术，而是整个行业对原有安全假设被迫进行的重新校准。
 
@@ -78,7 +41,7 @@ Mitiga 将云、 SaaS 、身份和 AI 遥测数据统一到单一取证系统的
 4. **以 90% 调查时间压缩为目标设计响应流程**： Mitiga 宣称的 90% 调查时间压缩背后需要 playbook 自动化和 AI 辅助取证，而非人工流程优化。团队应审视现有应急响应流程中哪些环节是纯人工的，这些环节在真正的实时攻击中必然成为瓶颈。
 
 ## 相关实体
-- [Fedora Hummingbird Brings The Container Security Model To Li](../ch05/094-ai.html)
+- [Fedora Hummingbird Brings The Container Security Model To Li](../ch05/095-ai.html)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 - [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01/038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
 - [Building Blocks For Foundation Model Training And Inference On Aws](../ch11/121-building-blocks-for-foundation-model-training-and-inference.html)

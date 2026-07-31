@@ -2,7 +2,7 @@
 title: "Scaling Law一招鲜？首个晶体结构操作基准，顶级大模型集体翻车"
 created: 2026-07-15
 updated: 2026-07-15
-type: source
+type: raw-article
 tags: [source, ai, llm]
 source_url: "https://mp.weixin.qq.com/s/T7ZSsP3kI8e2ogvLZ4p9hg"
 source_published: 2026-07-14

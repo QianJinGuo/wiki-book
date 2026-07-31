@@ -8,7 +8,7 @@ review_confidence: 7
 review_recommendation: strong
 review_stars: 3
 tags: [ai-coding, tmall, best-practices, engineering]
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 sha256: 1ec625eafa142703ba9cfcfbfb51d11f8c61a04af9cff086a1e227a030da4659

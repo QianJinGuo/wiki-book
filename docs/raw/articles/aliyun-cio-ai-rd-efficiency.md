@@ -6,7 +6,7 @@ author: 王玮、籍云（阿里云CIO蒋林泉团队）
 ingested: 2026-05-18
 sha256: fadfe347436fe1141fbabdac1caa09c9a7908ffd06dbd18de851684880382fe8
 tags: [ai-rd, efficiency, aliyun, cio, code-generation, vibe-coding, shift-left, mythical-man-month, spec-driven, half-stack, organization-design, agent]
-type: article
+type: raw-article
 ---
 阿里云CIO蒋林泉团队的AI时代产研组织效能规模化提升实践复盘。
 2026财年数据：前端人均有效代码量3x，后端2x；千行代码缺陷率前端-30%，后端-55%。在承接更多核心业务+AI创新、不增人力的前提下实现。

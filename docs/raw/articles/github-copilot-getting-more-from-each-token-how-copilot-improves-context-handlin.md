@@ -2,7 +2,7 @@
 title: "Getting more from each token: How Copilot improves context handling and model routing"
 source_url: "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 0c0d08298e2b0f5fbfed9a9be1fe63cebf310d7a2042de127089032ee4965783
 ---

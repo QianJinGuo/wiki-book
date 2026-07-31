@@ -10,24 +10,6 @@
 
 腾讯应用宝活动平台（支撑应用宝内 app、pc、手助等产品所有日常/节假日活动）在生产环境中实践 Harness Engineering 的完整报告，详细记录了从对话式 AI Coding 走向工程化系统的路径、架构设计与实战经验。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("应用宝活动平台 Harness 工程实践从对话式 AI"))
-    从对话式 AI Coding 到 Harness 工程化
-    独特贡献
-      知识库工程子系统
-      状态文件驱动
-      12 专家 Agent 体系
-    七条核心原则
-    开放性思考
-      TDD 在 AI 时代
-      AI 工程架构分层
-      代码还重要吗
-```
-
 ## 一句话
 
 **应用宝活动平台团队在 90+ 微服务、800+ 文档、12 个专家 Agent 的生产规模下，用"知识库工程 ✖️ 端到端开发工程"双重架构，实现了从对话式 AI Coding 到系统化 Harness 工程的全流程落地。**
@@ -67,37 +49,6 @@ mindmap
 - **Hook 机制**：Stop/SessionStart/SessionEnd 三事件注入脚本，强制流程确定性、跨会话断点恢复、清理残留
 
 ### 3. 12 专家 Agent 体系
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 设计原则——单一职责、上下文隔离、工具最小权限、确定性输入输出（结构化状态文件）、模型可插拔：
 

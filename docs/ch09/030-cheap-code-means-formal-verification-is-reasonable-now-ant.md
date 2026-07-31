@@ -16,18 +16,6 @@ This is why comprehensive conformance test suites can be so valuable. If they're
 
 Enter TLA+. It's a formal spec language for modeling complex systems with many moving parts, with a model checker that exhaustively searches all possible states which are implied by the spec. It's perfect for finding the kinds of gnarly bugs like race conditions which can be hard to find other ways.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cheap code means formal"))
-    introducing the hill
-    how it works
-    building confidence
-    reflections
-```
-
 ## introducing the hill
 
 TLA+ is a way to formally model systems to check whether it's possible to reach certain states. For example, you could model an escape room and check whether it's possible for players to ever become stuck. You define possible starting points and transitions, like players discovering the Red Key in Room 1. If it's possible for some other part of the escape room to close access to the Red Key before players discover it, and the Red Key is necessary to progress, the TLA+ checker should discover that. Or you model participants in a distributed data storage system and check that it is impossible for data to be lost due to unresolved intents (ask me how I know).
@@ -37,41 +25,6 @@ Point is, this is very useful for distributed and concurrent systems like Antfly
 So our question was: how much value could we get out of modeling some or all of this in TLA+ without needing to write it or even read it ourselves? Sure, it might be _more_ effective if we spent a long time studying the language's intricacies and carefully modeling our systems with it, but how much value could we get from just a few afternoons of modeling it with agents? The answer, it turns out, is quite a lot!
 
 ## how it works
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Here's the workflow I eventually settled on. At first, I kept everything in one SKILL.md file that I directed the agents to use, but eventually I wrote my own CLI to scaffold it better.
 
@@ -105,8 +58,8 @@ Confidence in your codebase can't be automated away. It's ultimately your job as
 
 ## 相关实体
 - [Apple Corecrypto Formal Verification Blueprint](../ch12/026-apple-corecrypto-formal-verification-blueprint-post-quantu.html)
-- [Is Software Losing Its Head](../ch01/651-is-software-losing-its-head.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Is Software Losing Its Head](../ch01/937-is-software-losing-its-head.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

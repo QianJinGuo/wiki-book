@@ -3,7 +3,7 @@ title: "agent skills teams architecture evolution selection guide"
 source_url: https://arxiv.org/abs/2512.08296
 ingested: 2026-04-28
 sha256: aa647f41babf2c4854da80373660582b900cccf6f10d327cbc898745a6cd964d
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [reinforcement-learning, skill-curation, self-evolving-agents, llm-agent, skill-repo, grpo, composite-rewards]

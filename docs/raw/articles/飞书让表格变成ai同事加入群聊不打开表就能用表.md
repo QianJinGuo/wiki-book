@@ -2,7 +2,7 @@
 title: "飞书让表格变成「AI同事」加入群聊，不打开表就能用表"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 17b7c70af4dc5f8830a8e2cd5617834dab1146ba685eb78bece65708bd6a4ce8
 ---

@@ -4,7 +4,7 @@ source_url: https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprint
 source: newsletter
 created: 2026-06-01
 updated: 2026-06-01
-type: article
+type: raw-article
 tags: [newsletter, article]
 sha256: 92a43f69622b0bca
 ---

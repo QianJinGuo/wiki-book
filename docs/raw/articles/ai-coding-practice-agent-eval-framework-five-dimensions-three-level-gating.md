@@ -3,7 +3,7 @@ title: "AI Agent 评测实战指南：5 维指标体系 + L1/L2/L3 准出分级 
 source_url: "https://mp.weixin.qq.com/s/emNgDJciraMSQIshpcZIIw"
 ingested: 2026-06-18
 sha256: c8c71c9ec31a5dfd8bb1ea81a992e40d382f4bd5e2707f115e284a82cddd8d45
-type: raw
+type: raw-article
 tags: [agent-evaluation, five-dimension-framework, llm-as-judge, three-level-gating, test-suite-design, swe-bench, toolbench, agentbench, webarena, gaia, g-eval, eval-as-service, devin-13pct, swe-agent-12pct, ai-coding-practice]
 ---
 

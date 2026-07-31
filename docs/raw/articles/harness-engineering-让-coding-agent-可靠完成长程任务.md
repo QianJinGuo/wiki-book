@@ -1,7 +1,7 @@
 ---
 
 title: "Harness Engineering: 让 Coding Agent 可靠完成长程任务"
-type: source
+type: raw-article
 tags: [ai-agent, engineering, wechat]
 source: wechat
 source_url: "https://mp.weixi"

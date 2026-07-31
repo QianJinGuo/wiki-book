@@ -8,24 +8,6 @@
 
 AI 编程助手进化为"AI 软件工程师"时，"Vibe Coding"生产力悖论正在浮现：Agent 生成代码的速度呈指数级增长，组织的整体研发效率却提升有限。问题不在于 AI 的能力，而在于我们仍用工业时代的协作模式来组织 AI 时代的研发。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 时代的生产力悖论 协作成为新瓶颈"))
-    传统协作模式的结构性低效
-      上下文碎片化
-      接口摩擦
-      知识孤岛
-    Agent 时代的新协作范式
-      自然语言即代码
-      信息基础设施重构
-      文档即代码
-    Amdahl 定律的组织应用
-    互补角度
-```
-
 ## 核心论点
 
 "约束不再是代码生产的速度，而是软件组织的结构。"
@@ -33,41 +15,6 @@ mindmap
 传统协作和分工旨在提升效率，但在 Agent 时代这种传统分工反而成为效率的阻碍。前端与后端、产品与开发、开发与测试的分离，在人力时代支持了专业化与规模化，而在 AI 时代则意味着上下文中断、信息损耗和协作摩擦。
 
 ## 传统协作模式的结构性低效
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 上下文碎片化
 
@@ -112,8 +59,8 @@ AI 可以直接理解自然语言描述的需求并生成实现，不再需要�
 
 - [Vibe Coding](../ch09/175-vibe-coding-ai.html)
 - [AI-Native Development](../ch05/018-ai-native.html)
-- [Agent Orchestration](../ch04/518-agent-orchestration.html)
-- [Software Engineering Transformation](../ch05/094-ai.html)
+- [Agent Orchestration](../ch04/523-agent-orchestration.html)
+- [Software Engineering Transformation](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-productivity-paradox-collaboration-bottleneck-alibaba.md)
 

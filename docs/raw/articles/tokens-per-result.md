@@ -3,7 +3,7 @@ title: "Intelligence Per Dollar"
 source_url: "https://tomtunguz.com/tokens-per-result/"
 ingested: "2026-06-05"
 sha256: "95ec5901c264cff33c03386bbc780e3a3064bd582de8038c81850c33ce2fc51e"
-type: article
+type: raw-article
 tags: [article]
 ---
 

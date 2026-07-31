@@ -2,7 +2,7 @@
 title: "Fintech Engineering Handbook"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 00d0f5c41ad4c109601ea8751ac75a1090d1e9b939a77cfed5a6241f975a484f
 ---

@@ -1,7 +1,7 @@
 ---
 title: "World’s first native color LiDAR gives machines human-like vision"
 sha256: a87ad7cb423680abfb467f5b9b0a34cb57eca6a59bde59252cceab9846a2d146
-type: source
+type: raw-article
 source: newsletter
 source_url: "https://newatlas.com/technology/ouster-rev8-native-color-lidar/"
 review_value: 7

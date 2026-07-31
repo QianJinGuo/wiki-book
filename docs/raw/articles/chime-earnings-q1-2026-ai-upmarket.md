@@ -11,7 +11,7 @@ ingested: 2026-05-16
 review_stars: 4
 created: 2026-05-12
 updated: 2026-05-12
-type: entity
+type: raw-article
 tags: [fintech, ai, earnings, chime]
 ---
 Title: Chime Turns a Profit as Members Hit 10.2 Million

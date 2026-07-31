@@ -8,25 +8,7 @@
 
 Superpowers 6.0（2026-06-16 发布，06-18 v6.0.3 修补）的核心主线不是新增平台或补安全策略，而是**重新设计了 AI Agent 软件工程中最贵、最容易跑偏的流程：任务后的代码评审**。
 
-与 [术哥的反作弊视角](../ch01/913-20.html) 互补——术哥聚焦 reviewer 隔离堵作弊路径，本文聚焦文件交接降低上下文成本 + 多平台 harness 映射。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Superpowers 60 SDD 评审重写 文件交接 多平台支持"))
-    SDD 评审重写
-      旧版问题
-      解法 单一 Task Reviewer 双 Verdict
-    文件交接降低上下文成本
-    多平台 Harness 映射
-    Visual Brainstorming 安全补强
-    效率收益
-    升级检查清单
-    评审的价值来自发现缺陷 不来自仪式感
-    文件交接是上下文经济学的关键实践
-```
+与 [术哥的反作弊视角](../ch01/926-20.html) 互补——术哥聚焦 reviewer 隔离堵作弊路径，本文聚焦文件交接降低上下文成本 + 多平台 harness 映射。
 
 ## SDD 评审重写
 
@@ -50,37 +32,6 @@ task-reviewer-prompt.md 关键约束：
 核心判断：**评审的价值来自发现具体缺陷，不来自制造"我又完整检查了一遍"的仪式感**。
 
 ## 文件交接降低上下文成本
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 这是 6.0 中最被低估的改动——把交接材料文件化：
 
@@ -174,9 +125,9 @@ progress ledger（.superpowers/sdd/progress.md）让长任务在上下文压缩�
 
 ## 相关链接
 
-- → [术哥反作弊视角分析](../ch01/913-20.html) — 互补视角
+- → [术哥反作弊视角分析](../ch01/926-20.html) — 互补视角
 - → [三器合一工程化实战](ch05/050-openspec.html) — Superpowers + OpenSpec + gstack 串联
-- → [Superpowers 工作流入门](../ch03/078-claude-code.html)
+- → [Superpowers 工作流入门](../ch03/077-claude-code.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-6-sdd-review-redesign-file-handoff.md)
 
 ---

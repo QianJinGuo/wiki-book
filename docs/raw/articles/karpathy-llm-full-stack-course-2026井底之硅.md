@@ -1,7 +1,7 @@
 ---
 title: "karpathy-llm-full-stack-course-2026井底之硅"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: 6b4d0de19bd085d0e61792ad218345a1fccf21c4655711cc3142992281fea1d6
 ---
 source_url: https://mp.weixin.qq.com/s/QTY_X4y0W_1UG8HUM5xPoQ

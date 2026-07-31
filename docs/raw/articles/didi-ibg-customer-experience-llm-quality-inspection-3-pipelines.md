@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/_wTZKL9U1i4QE2vo5c8oaQ
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, didi, ibg, customer-experience, llm-quality-inspection, multilingual, spanish, portuguese, contact-reason, intent-pipeline, compliance-pipeline, voc-pipeline, enterprise-llm, architecture-over-prompt, data-quality, config-externalization, traceability, semantic-clustering, embedding, tool-use, json-schema]
 ---
 

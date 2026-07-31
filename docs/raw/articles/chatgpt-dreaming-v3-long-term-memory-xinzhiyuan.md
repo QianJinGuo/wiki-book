@@ -5,7 +5,7 @@ title: "ChatGPT记忆大升级，十亿人免费用！"
 author: ASI启示录
 publisher: 新智元
 date: 2026-06-07
-type: article
+type: raw-article
 ingested: 2026-06-07
 review_value: 7
 review_confidence: 8

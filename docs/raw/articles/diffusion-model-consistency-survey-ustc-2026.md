@@ -2,7 +2,7 @@
 title: "AI视觉创作总差点意思？中科大等综述500+篇文献系统分析生成一致性"
 created: 2026-07-02
 updated: 2026-07-02
-type: source
+type: raw-article
 tags: [diffusion, consistency, computer-vision, generative-ai, survey]
 sha256: f98a7db537b4940bfebb710e353caa60861ba3e7a069bb09bf6efa4df569209c
 source: wechat

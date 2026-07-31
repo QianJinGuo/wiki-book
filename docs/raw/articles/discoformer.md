@@ -2,7 +2,7 @@
 title: "discoformer"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: abcda5c8e437061d1fe0b31491318b57fc386cc04f56ae2642407218c6d18bdf
 ---

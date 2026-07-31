@@ -1,7 +1,7 @@
 ---
 
 title: "Project Glasswing: what Mythos showed us"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://blog.cloudflare.com/cyber-frontier-models/
 fetcher: jina-reader

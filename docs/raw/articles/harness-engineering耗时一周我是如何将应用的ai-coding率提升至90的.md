@@ -1,7 +1,7 @@
 ---
 
 title: "Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的"
-type: source
+type: raw-article
 tags: [mlops, wechat, ai-agent, engineering, rag]
 source: wechat
 source_url: "https://mp.weixi"

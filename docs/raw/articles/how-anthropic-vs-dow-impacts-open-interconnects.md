@@ -6,7 +6,7 @@ ingested: 2026-06-15
 creator: nathan
 tags: [ai-policy, anthropic, open-models, interconnects, us-government]
 sha256: 823f87b32253f53e6e7357c6c51a2fe1124eb30aaafc713538c4e26d3b0c05d5
-type: article
+type: raw-article
 ---
 
 source_url: https://www.interconnects.ai/p/how-anthropic-vs-dow-impacts-open

@@ -4,46 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/sap-intelligent-procurement-assistant-solution.md`
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 **企业级 Agent 应用的核心架构范式：从 GUI 自动化到自然语言交互**。本文揭示了传统企业软件的深层次体验问题——采购人员需要在 SAP GUI 中手动切换多个事务码（ME41 查询询价单、ME47 查看报价、XK03 查询供应商、ME21N 创建订单），这种基于事务码的操作模式在 ERP 系统中极为普遍，代表了过去三十年企业软件的典型交互范式。SAP 智能采购助手通过引入自然语言对话层，将用户从"记住操作步骤"转变为"描述业务目标"，这是企业软件交互范式的一次根本性转变。
 
@@ -68,10 +29,10 @@ graph TB
 **会话上下文管理（Memory）是多轮交互场景的核心基础设施**。本文提到 Bedrock AgentCore Memory 负责记录对话上下文，支持多轮连续交互。对于企业采购场景，多轮交互的典型模式是：用户先询问某供应商的历史报价（第一轮）→ Agent 返回数据 → 用户进一步要求对比多个供应商（第二轮）→ Agent 跨请求保持上下文。这种跨请求的上下文保持能力，使得用户无需在单一请求中提供所有背景信息，大幅提升了交互的自然性和效率。在构建类似的企业 Agent 系统时，应将 Memory 的设计视为核心架构决策，而非事后补充功能。
 
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/561-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/566-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/561-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/566-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Multi Agent Collaboration Guide](ch11/009-aws-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-intelligent-procurement-assistant-solution.md)

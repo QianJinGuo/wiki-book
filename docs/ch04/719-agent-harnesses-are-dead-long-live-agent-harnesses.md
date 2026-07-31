@@ -2,62 +2,15 @@
 
 ## Ch04.719 Agent Harnesses Are Dead. Long Live Agent Harnesses.
 
-> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/agent-harnesses-are-dead-long-live-agent-harnesses.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/agent-harnesses-are-dead-long-live-agent-harnesses.md`
 
 # Agent Harnesses Are Dead. Long Live Agent Harnesses.
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Harnesses Are Dead Long"))
-    核心论点 Harness 的商品化周期
-      框架脚手架Harness 的术语轮回
-      模型提供商正在吸收整个栈
-      Garry Tan 的Harness 即管道视角
-    构建成本坍塌对 SaaS 的冲击
-    真正能复利的事物
-    Entangled Software 纠缠式软件 Agent 的未来形态
-    路 而不是车基础设施 vs 应用层的价值分配
-```
 
 ## 摘要
 
 Agent Harness 正经历从"硬编码框架"到"声明式配置驱动"再到"纠缠式软件（Entangled Software）"的范式转变。CrewAI 创始人 João Moura 在 2026 年 4 月的深度分析中指出：构建层正在快速商品化，Harness 作为独立层正在"死亡"，但 Harness 的核心价值——约束、验证、编排——并未消失，而是被吸收到更高层级的平台能力中。
 
 ## 核心论点：Harness 的商品化周期
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 框架→脚手架→Harness 的术语轮回
 
@@ -127,10 +80,10 @@ CrewAI 同时构建了框架（CrewAI Flows）和 Harness（CrewAI Crews and Age
 - [Hermes Agent Operator](../ch03/096-hermes-agent.html)
 - [Harness Engineering 核心模式](../ch05/120-harness-engineering.html)
 - [Claude Code 动态工作流](../ch09/094-claude-code-dynamic-workflows.html)
-- [Harness Generator-Evaluator](../ch01/989-anthropic.html)
-- [Agent Reliability Engineering](ch04/271-skill.html)
-- [当 AI 构建自身](../ch01/989-anthropic.html)
-- [Prime Intellect Auto NanoGPT](../ch01/742-9.html)
+- [Harness Generator-Evaluator](../ch01/1004-anthropic.html)
+- [Agent Reliability Engineering](ch04/273-skill.html)
+- [当 AI 构建自身](../ch01/1004-anthropic.html)
+- [Prime Intellect Auto NanoGPT](../ch01/755-9.html)
 
 ---
 

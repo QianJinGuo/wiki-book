@@ -8,64 +8,7 @@
 
 > **Background**: 智慧工厂跨账户迁移实战。从"手动步骤指南" → 幂等 boto3 编排脚本 → Kiro 包装为 AI Agent 可调用的工作流。配套源码：`mildone82/iot-migration`。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 Amazon IoT Core 与 Kiro"))
-    场景
-    数据链路
-    三阶段演进
-      手动步骤指南 基线
-      幂等 boto3 编排脚本 改进
-      Kiro 包装工作流 AI Agent 可调用
-    各层选择的关键原因
-    关键工程细节
-      IoT Policy IP 白名单
-      Firehose 5 MiB 5 min buffer
-      为什么 Kinesis Data Streams 而不是直接
-    价值
-    配套资源
-    三层部署形态的递进本质 知识编码层级的跃迁
-```
-
 ## 场景
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - 4 个 Advantech 网关（cnn7-gw01..04）通过 MQTT over TLS (8883, X.509 mTLS) 推送到 Amazon IoT Core
 - IoT Rule (SQL 2016-03-23) → Kinesis Data Streams (On-Demand) → Kinesis Data Firehose → S3
@@ -196,8 +139,8 @@ IoT 链路中断时最直接的告警信号是 S3 Object 写入停止。建议�
 
 ## 相关实体
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
-- [Kiro Quick Deploy Agent Deploy Amazon Bedrock Agentcore](../ch04/549-amazon-bedrock-agentcore.html)
-- [Developing Flink Monitoring System On Amazon Emr With Kiro Ai Ide](../ch05/091-ai.html)
+- [Kiro Quick Deploy Agent Deploy Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
+- [Developing Flink Monitoring System On Amazon Emr With Kiro Ai Ide](../ch05/095-ai.html)
 - [Quick Suite Agent Core Kiro Logistics Quote Assistant](../ch03/035-agent.html)
 - [Aws Direct Connect Dx Migration Best Practices](ch11/039-direct-connect-dx.html)
 

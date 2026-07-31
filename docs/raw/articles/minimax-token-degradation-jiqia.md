@@ -12,7 +12,7 @@ review_recommendation: strong
 review_stars: 5
 created: 2026-05-09
 updated: 2026-05-09
-type: raw
+type: raw-article
 sha256: ""
 ---
 # 大模型不认识马嘉祺？我们做了一次全链路排查

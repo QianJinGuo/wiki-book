@@ -1,6 +1,6 @@
 ---
 title: CEOs’ top priorities for IT leaders today
-type: entity
+type: raw-article
 tags: [article]
 created: 2026-05-20
 updated: 2026-05-20

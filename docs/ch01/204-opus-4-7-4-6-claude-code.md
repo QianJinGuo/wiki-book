@@ -84,22 +84,6 @@ Opus 4.7  [1]  是我们目前公开可用的最强通用模型，尤其适合�
 我们在  发布公告  [1]  中提到过，两项变化会影响 token 用量，一是更新了 tokenizer，二是模型在更高 effort 等级下，尤其是在更长会话的后续轮次中，更倾向于进行更多思考。因此，当你用 Opus 4.7 替换 Opus 4.6 时，通常需要做一些调校，才能拿到最佳表现。对 prompt 和 harness 做几处小调整，往往就能带来明显差异。
 这篇文章会介绍有哪些变化，以及如何在 Claude Code 中更有效地使用 Opus 4.7。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("刚刚Opus 47发布 相比46核心变化 与Claude"))
-    如何组织交互式编码会话
-    Opus 47 推荐的 effort 设置
-    如何与自适应思考配合
-    值得注意的行为变化
-    接下来可以尝试什么
-    参考阅读
-    Agent能力升级的战略意义
-    Token成本上升的商业影响
-```
-
 ##  如何组织交互式编码会话
 Opus 4.7 的 token 用量和行为表现，会因为你的部署方式不同而变化，尤其取决于你是在运行单轮输入、更加自主且异步的编码智能体，还是多轮交互、同步配合的编码智能体。在交互式场景里，它会在用户轮次之后进行更多推理，这会提升它在长会话中的连贯性、指令遵循能力和编码质量，但也往往会消耗更多 token。
 为了在 Claude Code 中充分发挥 Opus 4.7 的效果，我们发现，最好把 Claude 当成一个可以委派任务的能干工程师，而不是一个需要你逐行带着走的结对程序员：
@@ -110,41 +94,6 @@ Opus 4.7 的 token 用量和行为表现，会因为你的部署方式不同而�
   * ** 为已完成任务设置通知。  ** 你可以让 Claude 在任务完成时播放提示音，它也能自己创建基于 hook 的通知。
 
 ##  Opus 4.7 推荐的 effort 设置
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Claude Code 中，Opus 4.7 现在的默认 effort 等级是  ` xhigh  ` 。这是一个位于  ` high  ` 和  ` max  ` 之间的新等级，让用户在处理困难问题时，能更细致地控制推理深度与延迟之间的权衡。我们推荐在大多数智能体编码任务中使用  ` xhigh  ` ，尤其是那些对智能水平敏感的任务，比如设计 API 和 schema、迁移遗留代码、以及审查大型代码库。
 下面是各个 effort 等级的额外建议：
 
@@ -220,11 +169,11 @@ Opus 4.7在安全方面"与4.6大致持平"，但在"受控物质的伤害减少
 4. **长期成本监控**：Token消耗的增加可能不会立即显现，建议建立细粒度的Token使用监控机制，及时发现异常消耗。
 5. **并行Claude实例的工作流**：Boris Cherny提到的"并行运行多个Claude实例"模式值得探索，特别是对于需要批量处理代码审查或重构任务的团队。
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
 - [Anthropic Prompt Caching Claude Code Agihunt](ch01/217-anthropic-prompt-caching-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opus-4-7-launch-claude-code-best-practices-wechat.md)
 

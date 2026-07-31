@@ -6,70 +6,15 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Token 撤销触发设备擦除的安全漏洞"))
-    事件概述
-    攻击路径深度解析
-      入口 pullrequesttarget 与 Actions 缓存污染
-      载荷行为 凭证窃取与 P2P 中继
-      SIGIL 的双重功能 死亡开关 P2P 令牌中继
-    供应链攻击的范式跃迁
-    pullrequesttarget 漏洞的广泛影响
-    密码学实现的安全隐患
-    OSS 供应链安全生态的系统性脆弱性
-    对于开发者与维护者
-    对于安全团队
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - Shai-Hulud npm 蠕虫新变种，针对 TanStack 生态发起供应链攻击
 - 利用 `pull_request_target` + GitHub Actions 缓存污染 + OIDC 令牌内存提取攻入发布流水线
 - 令牌窃取后通过 GitHub 提交搜索实现 P2P 中继，绕过一切 C2 阻断
 - 持久化 `gh-token-monitor` 含真实 `rm -rf ~/` 逻辑，构成死亡开关； revocation 必须在移除持久化单元之后
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1092-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/094-ai.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1108-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/095-ai.html)
 - [From Doer To Director The Ai Mindset Shift](../ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecurityreach-revoke-token-wipe-computer.md)

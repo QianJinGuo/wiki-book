@@ -4,30 +4,6 @@
 
 > 📊 Level ⭐⭐ | 17.5KB | `entities/claude-4-5-sonnet-opus-release-notes.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude 45 Sonnet Opus Release Notes"))
-    发布时间线
-    Sonnet 5 核心升级
-      关键能力
-      行业应用
-      可用性
-    Opus 47 核心升级
-      新 Tokenizer
-      视觉增强
-      新 Reasoning Effort xhigh
-    Benchmark 跃进
-    第三方验证
-    Sonnet 46 定位
-      Sonnet 46 性能基准
-    Haiku 45 定位
-      Haiku 45 vs 其他层级延迟对比
-    模型层级与适用场景对照
-```
-
 ## 发布时间线
 
 | 模型 | 发布日期 | 定位 |
@@ -39,44 +15,6 @@ mindmap
 | Claude Sonnet 5 | 2026-06-30 | 最新 Sonnet 旗舰，接近 Opus 智能的 Sonnet 定价 |
 
 ## Sonnet 5 核心升级
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 Claude Sonnet 5 是 Anthropic 最新一代 Sonnet 模型，在 Amazon Bedrock 和 Claude Platform on AWS 上可用。它带来接近 Opus 级别的智能，同时保持 Sonnet 的定价和速度。
 
@@ -345,9 +283,9 @@ Anthropic 数据显示验证工作可将效率提升 2-3 倍。对于代码任�
 
 ## 相关实体
 
-- [Claude Opus 4.7](ch01/976-claude.html) — 最新旗舰模型发布
-- [Claude Opus 4.7 深度分析](ch01/349-claude-opus-4-7.html) — 详细发布分析
-- [Anthropic](ch01/989-anthropic.html) — 模型开发商
+- [Claude Opus 4.7](ch01/1022-claude.html) — 最新旗舰模型发布
+- [Claude Opus 4.7 深度分析](ch01/350-claude-opus-4-7.html) — 详细发布分析
+- [Anthropic](ch01/1004-anthropic.html) — 模型开发商
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

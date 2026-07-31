@@ -6,7 +6,7 @@ feed: 腾讯云开发者
 publish_time: "2026-06-09 08:45"
 ingested: "2026-06-10"
 sha256: dcd180f86d1ecf55d19332f921cbcc5a0906fb38
-type: raw
+type: raw-article
 tags: [agent, nanobot, HKUDS, react-loop, skill-markdown, memory-grep, subagent, mcp, asyncio, minimalist-architecture]
 ---
 

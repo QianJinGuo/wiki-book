@@ -1,7 +1,7 @@
 ---
 title: "claude-code-skill-writing-guide"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: 14b08702fc5d189029c184f98d5730e1f3fc29b8258e1d6bebe1e36f2d2ed3e0
 ---
 # 同事惊呆了："Claude Skills 我也在用，但你 SKILL.md 写了 2000 行，是把它当 Prompt 还是当文档？"

@@ -3,7 +3,7 @@ title: "Open Notebook：开源版 Google Notebook LM 替代品"
 source_url: "https://mp.weixin.qq.com/s/ACLLu6zMlnEgXcte7v1JYQ"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # Open Notebook：开源版 Google Notebook LM 替代品

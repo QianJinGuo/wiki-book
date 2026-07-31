@@ -1,6 +1,6 @@
 ---
 title: Unlocking asynchronicity in continuous batching
-type: article
+type: raw-article
 source: newsletter
 source_url: https://huggingface.co/blog/continuous_async
 tags: [newsletter, security]

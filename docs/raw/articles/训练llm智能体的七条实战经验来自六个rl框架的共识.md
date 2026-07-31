@@ -1,5 +1,5 @@
 ---
-type: source
+type: raw-article
 source_url: https://mp.weixin.qq.com/s/jyAy4ux8BUclTHnhsU-qzg
 sha256: e84d2faf23279e15e5b9d110028521267482deb99fb3171dd12d725a3e3b0998
 ingested: 2026-07-09

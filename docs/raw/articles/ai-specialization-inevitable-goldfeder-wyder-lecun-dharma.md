@@ -2,7 +2,7 @@
 source: newsletter
 source_url: https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable
 ingested: 2026-07-02
-type: raw
+type: raw-article
 tags: [specialization, model-architecture, post-training, optimization, agent-architecture, theory]
 sha256: 5d714e0672ad38f5b781a9d68f639e3b99c2aba9763c9104e06dc3841fb25936
 ---

@@ -5,7 +5,7 @@ source_url: https://mp.weixin.qq.com/s/vsvqHXCBHWJJFRDOviIj2w
 author: VibeCoder (Vibe编码)
 published: 2026-06-12
 ingested: 2026-06-12
-type: article-summary
+type: raw-article
 tags: [claude-fable-5, mythos-5, prompt-leak, cl4r1t4s, runtime-control-plane, attack-surface, mcp, agent-security, harness-security, prompt-engineering, system-prompt]
 sha256: 96dfda14dec99ca2376611fc0094e1a806b487412f6cef5384b2859fbed711b9
 ---

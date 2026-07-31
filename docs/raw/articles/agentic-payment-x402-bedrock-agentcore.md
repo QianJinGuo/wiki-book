@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/ai-agent-based-on-amazon-bedro
 ingested: 2026-06-01
 feed_name: AWS
 source_published: 2026-06-01T06:04:02Z
-type: article
+type: raw-article
 sha256: aad285644938d384f111e9d3b529fde66f21d636d9badb9116a5a49b8c8bca7a
 tags: [agentic-payment, x402, bedrock, aws, protocol]
 ---

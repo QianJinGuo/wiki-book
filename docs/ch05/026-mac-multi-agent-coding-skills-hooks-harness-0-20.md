@@ -2,36 +2,6 @@
 
 ## Ch05.026 MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 > 📊 Level ⭐⭐ | 16.9KB | `entities/mac-multi-agent-coding-skills-hooks-harness.md`
 
 # MAC（multi-agent-coding）：Skills + Hooks 两层 Harness
@@ -42,33 +12,6 @@ graph TB
 **MAC（multi-agent-coding）** 是一套将 **Skills（概率层）+ Hooks（确定性层）** 叠加的 Harness 框架设计。它是 **Anthropic 2026 Agentic Coding Trends Report 中"完全委托 0-20%"问题** 的解法：工程师已在用 AI 处理 60% 工作，但能完全委托的只有 0-20%——差距不是模型能力，是**信任环境**。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mac-multi-agent-coding-skills-hooks-harness.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MAC multi-agent-coding Skills"))
-    问题背景 完全委托 0-20
-    MAC 的核心架构 两层叠加
-      关键判断
-      关系原则
-    Skills 概率层 工作流的形状
-      任务在哪里
-      MAC 的解法
-      Skills 的局限
-    Hooks 确定性层 Harness 的地基
-      为什么需要确定性层
-      Hooks 的实现
-    Harness 框架和项目知识 分开放
-      这个分离的价值
-    回到 0-20 Hooks 改变委托性质
-    核心金句
-    与已有 wiki 实体的关系
-      vs 晓斌 Agent-Oriented Infra
-      vs wow-harness v3
-      vs 高德 AI-Native 生产线
-```
 
 ## 一句话定位
 
@@ -251,7 +194,7 @@ mindmap
 - [Claude Code Dynamic Workflows](../ch09/094-claude-code-dynamic-workflows.html) —— 动态工作流
 - [Agent Harness 架构](ch05/058-agent-harness.html) —— 7 层模型
 - [Rein](../ch03/035-agent.html) —— 单 agent 架构
-- [Kimi Work](../ch01/517-codex.html) —— 本地 Agent
+- [Kimi Work](../ch01/520-codex.html) —— 本地 Agent
 
 ## 深度分析
 

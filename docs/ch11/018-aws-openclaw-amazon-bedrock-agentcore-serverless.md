@@ -20,58 +20,7 @@ feed_name: AWS China Blog
 
 * * *
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 AWS 示例项目 展示如何将 OpenClaw 迁移为基于"))
-    七 配置消息渠道
-      选项 A 配置 Telegram
-      选项 B 配置飞书
-    八 发送消息验证
-    九 查看监控和日志
-```
-
 ## 七、配置消息渠道
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 基础设施和运行时都部署完了，现在需要把 IM 渠道的消息推送接到我们的 [Amazon API Gateway](https://aws.amazon.com/cn/api-gateway/) 上。这一步对应的是 Refactor 中"消息接入"维度的改造 — 传统 OpenClaw 的 Gateway 直接监听端口，现在改为通过 webhook 回调的方式接入。
 本步骤至少选一个渠道配置。
 选哪个渠道？Telegram 配置步骤最少；飞书适合国内企业环境但步骤多。本节先讲 Telegram，飞书见后半部分。
@@ -231,11 +180,11 @@ PowerShell
 4. **冷启动延迟需要纳入 UX 设计**：首次消息触发 microVM 创建约需 10-15 秒，用户体验上这是"等待但有响应"。建议在 Bot 欢迎消息或文档中告知用户首次交互会有稍长延迟，避免用户误以为 Bot 无响应而重复发送消息。
 5. **监控大盘是运维的主入口**：CloudWatch 的 Router Lambda 日志是排查消息路由失败的第一站；AgentCore 容器日志用于排查 OpenClaw 本身的问题；Token Analytics 大盘用于实时评估 AI 成本。三个视角缺一不可，建议运维团队为每个视角准备标准化的查询过滤条件。
 ## 相关实体
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/561-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/561-amazon-bedrock-agentcore.html)
-- [Openclaw Multi 2](ch11/235-openclaw.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/561-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/566-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/566-amazon-bedrock-agentcore.html)
+- [Openclaw Multi 2](ch11/237-openclaw.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/566-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
 

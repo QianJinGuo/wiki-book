@@ -1,6 +1,6 @@
 ---
 title: model half-life
-type: source
+type: raw-article
 source: newsletter
 source_url: https://aifoc.us/model-half-life/
 sha256: 64979f43616f

@@ -2,7 +2,7 @@
 title: "强化学习的进化从ppo到maxrlllm推理训练的算法演进史"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: c5ae2e6933afdff34b97ffa12a33106e2e238e5306088e1891e89e8659221058
 ---

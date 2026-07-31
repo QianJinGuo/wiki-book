@@ -4,7 +4,7 @@ source_url: https://developers.openai.com/mcp"
 tags: [openai]
 ingested: 2026-04-28
 sha256: 0970f348b620dbbd0280597befd2d5114844dca2226e13c524a198025ba33379
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: []

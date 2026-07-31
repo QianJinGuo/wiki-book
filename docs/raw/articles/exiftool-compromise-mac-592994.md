@@ -1,6 +1,6 @@
 ---
 title: How an image could compromise your Mac: understanding an ExifTool vulnerability (CVE-2026-3102)
-type: article
+type: raw-article
 tags: []
 source: newsletter
 source_url: https://securelist.com/exiftool-compromise-mac/119866/

@@ -1,7 +1,7 @@
 ---
 title: "baidu-comate-coding-agent-feedback-loop-wanpeng"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: ba563948f774a0c3bf751289c77ea084dec3d3c488854ad5c2339c4cae7e7493
 ---
 source_url: https://mp.weixin.qq.com/s/rKnNaGJnlfhdIufpGDuHuQ

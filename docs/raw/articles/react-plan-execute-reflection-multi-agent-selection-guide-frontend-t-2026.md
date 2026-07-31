@@ -4,7 +4,7 @@ source: "tabzhan / 前端T站"
 source_url: "https://mp.weixin.qq.com/s/XeNEa0sZkUTBMhM0wzCy3A"
 ingested: 2026-06-16
 sha256: "3099054c6f52cd192e2bc7770d3a449bcd2f58fbbd7fb790537a5d629576ade7"
-type: raw
+type: raw-article
 tags: [react, plan-and-execute, reflection, multi-agent, agentscope, agent-patterns, agent-architecture, decision-tree, 5-step-selection, dashscope, qwen, dialog-agent, self-critique, ai-generated, frontend-t, 2026]
 review_value: 8
 review_confidence: 7

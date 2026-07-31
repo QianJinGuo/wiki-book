@@ -4,59 +4,7 @@
 
 > 📊 Level ⭐⭐ | 21.8KB | `entities/harness-之后-状态边界与失败闭环-ruofei.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 之后 状态边界与失败闭环 若飞续篇"))
-    与若飞 long-running-agent 系列的关系
-    核心框架 1 状态提交链路 候选 已验证 已执行 已提交
-    核心框架 2 Trace 回写 前馈反馈 计算语义控制
-    核心框架 3 先做三件事 运行时契约 提交闸门 失败回写
-      运行时契约
-      状态提交闸门
-      失败回写
-    三条分歧 模型 vs Harness 的边界
-      分歧 1 模型会不会把 Harness 吃掉
-      分歧 2 同一个模型在不同 Harness 里差多少
-      分歧 3 Harness 能不能解决欠规格
-    落地 先稳再自动化
-    与其他实体的关系
-    状态闸门跳级是 Agent 事故的本质模式
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
 
 若飞 2026-06-02 续篇把 Agent Harness Engineering 综述（[LLM-Harness Survey](https://picrew.github.io/LLM-Harness/)）从"组件清单"推到"**运行时闭环**"。核心论断：Harness 之后，Agent 可靠性的下一步是**状态边界**和**失败闭环**——模型可以给出可能性，但系统不能轻易把可能性当成事实。下一步拆成三件事：**运行时契约 / 状态提交闸门 / 失败回写闭环**。
 
@@ -106,7 +54,7 @@ graph TB
 
 工程里更稳的分配是：**便宜、稳定、快速的检查尽量前移**；**昂贵、不确定、需要取舍的检查留给关键节点**。
 
-这与 [六条经验](../ch04/330-ai-coding-agent.html) 里的"测试和重构不是旧时代包袱，而是 AI 时代的价值锚——AI 生成越快，确定性反馈环越值钱"完全一致：Martin Fowler 与 OpenAI Harness Engineering 的共识在这里再次出现。
+这与 [六条经验](../ch04/333-ai-coding-agent.html) 里的"测试和重构不是旧时代包袱，而是 AI 时代的价值锚——AI 生成越快，确定性反馈环越值钱"完全一致：Martin Fowler 与 OpenAI Harness Engineering 的共识在这里再次出现。
 
 ## 核心框架 3：先做三件事（运行时契约 / 提交闸门 / 失败回写）
 
@@ -199,11 +147,11 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
   - Ralph Loop 与可接管 Harness（2026-05-10）（2026-05-10，三类漂移 + 可接手标准）
   - Hermes 5 张卡治理框架（2026-06-01）（2026-06-01，don't automate slop）
   - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/096-hermes-agent.html)（Cowork + TERMINATION 段）
-  - [Agent Memory 架构：过去影响未来](../ch04/121-agent-memory.html)（记忆预算的更早版本）
+  - [Agent Memory 架构：过去影响未来](../ch04/098-agent-memory.html)（记忆预算的更早版本）
 - **互补实践**：
   - [Codex /goal Runtime](../ch04/106-codex-goal-agent.html)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
-  - [Anthropic 长时运行 Agent 架构](../ch01/989-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
-  - [六条经验：让 AI 编码 Agent 变得可控](../ch04/330-ai-coding-agent.html)（Martin Fowler 反馈环共识）
+  - [Anthropic 长时运行 Agent 架构](../ch01/1004-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
+  - [六条经验：让 AI 编码 Agent 变得可控](../ch04/333-ai-coding-agent.html)（Martin Fowler 反馈环共识）
   - [Harness design for long running apps](ch05/009-harness.html)（Anthropic 官方长任务 Harness 解读）
   - [Martin Fowler：非确定性进了研发链路](ch05/009-harness.html)（前馈/反馈原文）
 - **概念图**：
@@ -232,7 +180,7 @@ CMU/Yale/Johns Hopkins 的七层 ETCLOVG 分类（Execution / Tooling / Context 
 
 ### 3. 记忆预算观重新定义了 memory 的角色
 
-若飞在本文和 5 张卡续篇里反复强调"记忆像预算，不像仓库"——长期记忆不是存储，而是选择性消耗认知资源的决策。这个框架与 [六条经验](../ch04/330-ai-coding-agent.html) 里"AI 生成越快，确定性反馈环越值钱"共享同一个底层逻辑：资源（token 预算、注意力预算、判断预算）越稀缺，越需要把资源分配给高价值验证，而不是把所有中间结果都沉淀成"经验"。把临时绕路、失败猜测、一次性偏好写入长期记忆，是在预支明天的认知预算。
+若飞在本文和 5 张卡续篇里反复强调"记忆像预算，不像仓库"——长期记忆不是存储，而是选择性消耗认知资源的决策。这个框架与 [六条经验](../ch04/333-ai-coding-agent.html) 里"AI 生成越快，确定性反馈环越值钱"共享同一个底层逻辑：资源（token 预算、注意力预算、判断预算）越稀缺，越需要把资源分配给高价值验证，而不是把所有中间结果都沉淀成"经验"。把临时绕路、失败猜测、一次性偏好写入长期记忆，是在预支明天的认知预算。
 
 ### 4. 前馈/反馈 × 计算/语义的二维控制矩阵有实操价值
 

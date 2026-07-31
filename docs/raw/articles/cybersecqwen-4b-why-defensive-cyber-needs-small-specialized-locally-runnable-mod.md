@@ -3,7 +3,7 @@ title: "CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-R
 source: newsletter
 source_url: "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b"
 ingested: 2026-05-12
-type: source
+type: raw-article
 tags: [newsletter, security]
 sha256: 6b97b8dd3c728932c0d4b4ae52b10f2734aa61db4ac574b434827a10c83ec8af
 ---

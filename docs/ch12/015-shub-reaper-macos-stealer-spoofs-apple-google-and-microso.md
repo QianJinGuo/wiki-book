@@ -4,67 +4,7 @@
 
 > 📊 Level ⭐⭐ | 19.6KB | `entities/shub-reaper-macos-stealer-attack-chain.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SHub Reaper macOS Stealer Spoofs"))
-    攻击链分层伪装机制
-    免杀技术演进
-    地理封锁与目标筛选
-    投递管道与环境检测
-    MITRE ATTCK 映射
-    检测规则
-      Sigma 规则
-      YARA 规则
-      端点检测查询
-    技术指标
-      网络通信
-      文件系统路径
-      静态字符串与标识符
-    威胁归因与演化
-      SHub 恶意软件家族演化
-      相关 macOS 窃密木马
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 - SHub Reaper 是 SHub 窃密木马的变种，通过假冒 WeChat、Miro 等流行应用安装程序进行传播
 - 攻击链在不同阶段伪装成不同可信品牌：微软域名托管载荷 → 苹果安全更新执行 → 谷歌软件更新目录持久化
@@ -72,11 +12,11 @@ graph TB
 - 该木马建立持久化后门，每 60 秒向 C2 发送心跳，可接收远程代码执行指令
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/913-20.html)
-- [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](ch12/051-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/926-20.html)
+- [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](ch12/052-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/348-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/759-scarcruft.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/349-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/772-scarcruft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shub-reaper-macos-stealer-attack-chain.md)
 

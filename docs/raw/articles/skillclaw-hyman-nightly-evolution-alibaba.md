@@ -5,7 +5,7 @@ source_platform: wechat
 author: "Hyman的杂货铺"
 publish_date: 2026-04-11
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [skillclaw, amap, alibaba, agent, skill-evolution, collective-intelligence, wildclawbench]
 review_value: ★★★★☆
 review_confidence: ★★★★☆

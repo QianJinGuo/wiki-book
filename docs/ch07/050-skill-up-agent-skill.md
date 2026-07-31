@@ -8,62 +8,11 @@
 
 > 声明式 CLI 评测框架，让 Agent Skill 可评测可回归。2026 年 7 月由阿里巴巴开源，填补了 Agent Skill 缺乏标准化评测工具的空缺。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("skill-up 阿里开源 Agent Skill 评测框架"))
-    定位与核心问题
-    四大核心设计
-      声明式配置 evalyaml
-      expect judge 分层判定
-      多引擎支持
-    多轮会话评测
-    重型端到端评测
-    迁移案例 1200 行 Shell 脚本 80 行 YAML
-    安装与使用
-    开源地址
-```
-
 ## 定位与核心问题
 
 随着 AI Agent 快速普及，Skill（技能）已成为 Agent 能力封装的标准单元。但开发者编写 Skill 后，往往只能靠人工抽查或零散的 shell 脚本来验证效果——评测成本高、不可重复、难以规模化。skill-up 正是为此而生：一个专注于 Agent Skill 评测与回归的 CLI 框架，用声明式 YAML 配置替代手写脚本，支持多引擎并行运行、结构化报告输出。
 
 ## 四大核心设计
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 1. 声明式配置：`eval.yaml`
 
@@ -219,12 +168,12 @@ skill-up run eval.yaml --retry-failed
 
 ## 相关实体
 
-- [Alibaba Skill-Up：声明式 Agent Skill 评测框架（同主题深度解读）](../ch04/312-alibaba-skill-up-agent-skill.html) — 基于另一篇来源文章的全面分析，含对比评测框架
+- [Alibaba Skill-Up：声明式 Agent Skill 评测框架（同主题深度解读）](../ch04/314-alibaba-skill-up-agent-skill.html) — 基于另一篇来源文章的全面分析，含对比评测框架
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/035-agent.html) — 另一 YAML 驱动的 Agent 评测框架（Go 语言，pass@k 指标），定位互补
-- [Agent Skill 评估与迭代](../ch04/269-agent-skill.html) — 侧重于手动测试方法论，与 skill-up 的自动化 CI 方案形成对照
+- [Agent Skill 评估与迭代](../ch04/271-agent-skill.html) — 侧重于手动测试方法论，与 skill-up 的自动化 CI 方案形成对照
 - [Agent 评测体系化指南](../ch03/035-agent.html) — 评估体系全链路：指标体系、数据集、评分与闭环
-- [SWE-bench Agent 评估方法论](../ch04/691-swe-bench-agent.html) — 软件工程 Agent 评测基准方法论
-- [SkillScan：智能体技能安全扫描](../ch04/269-agent-skill.html) — 技能安全扫描与 skill-up 的质量验证相辅相成
+- [SWE-bench Agent 评估方法论](../ch04/692-swe-bench-agent.html) — 软件工程 Agent 评测基准方法论
+- [SkillScan：智能体技能安全扫描](../ch04/271-agent-skill.html) — 技能安全扫描与 skill-up 的质量验证相辅相成
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-skill-up-agent-skill-evaluation-cli-2026.md)
 

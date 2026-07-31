@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/interpol-operation-ramz-mena-cybercrime.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("INTERPOL Operation Ramz MENA"))
-    行动背景与规模
-    各国执法行动详情
-      阿尔及利亚 摧毁钓鱼即服务 Phishing-as-a-Service
-    私营部门参与
-      Group-IB
-    技术与战术特征
-    全球执法背景
-    行动意义
-    PhaaS 商业模式的区域扩散
-    人口贩运与网络犯罪的交织
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - **行动代号**: Operation Ramz
 - **执行机构**: INTERPOL（国际刑警组织）
 - **参与国家**: 13 个 MENA（中东和北非）国家
@@ -130,9 +76,9 @@ Group-IB 和 Team Cymru 的参与表明私营部门威胁情报已成为执法�
 2. **定期检查设备入侵迹象**：卡塔尔案例中设备所有者对入侵不知情，个人应定期检查是否有异常进程、未授权连接或性能异常。
 ## 相关实体
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki/blob/main/entities/london-met-police-big-tech-data-requests.md)
-- [Nathan Lambert Claude Mythos Open Weights](../ch01/403-nathan-lambert.html)
+- [Nathan Lambert Claude Mythos Open Weights](../ch01/404-nathan-lambert.html)
 - [Shinyhunters 7 Eleven Data Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/shinyhunters-7-eleven-data-breach.md)
-- [Japan Pm Cybersecurity Review Anthropic Mythos](../ch01/989-anthropic.html)
+- [Japan Pm Cybersecurity Review Anthropic Mythos](../ch01/1004-anthropic.html)
 - [New Cybersecurity Coalition Us Policy](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interpol-operation-ramz-mena-cybercrime.md)

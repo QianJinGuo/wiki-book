@@ -7,20 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)
 从微信文章 [ChatGPT 官宣 26 位未来之星，他们是：穿墙少年、街头摊贩、盲童的朋友……](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md) 提取。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ChatGPT 官宣 26 位未来之星 穿墙少年 街头摊贩 盲童的朋友"))
-    主要章节
-    位未来之星详细档案
-      穿墙找人 Wi-Find
-      150万颗星星 Matteo Paz
-      看不见的Wordle Crystal Yang
-    第一代AI原住民
-```
-
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg
 
@@ -39,44 +25,6 @@ source_url: https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg
 - ##  第一代 AI 原住民
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 - [ChatGPT官宣26位未来之星](ch01/199-chatgpt-26.html)
 
 ## 深度分析

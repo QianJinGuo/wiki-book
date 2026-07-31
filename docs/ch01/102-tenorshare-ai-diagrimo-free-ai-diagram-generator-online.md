@@ -4,68 +4,11 @@
 
 > 📊 Level ⭐ | 5.9KB | `entities/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Tenorshare AI Diagrimo - Free AI"))
-    产品概述
-      核心功能
-      使用场景
-      定价模式
-    技术定位
-    市场差异化
-    用户价值
-    多语言支持
-    适用人群
-    使用建议
-    注意事项
-```
-
 ## 核心要点
 
 - Tenorshare AI Diagrimo 是一款基于 AI 技术的在线图表生成工具，能够将文本快速转换为结构化的可视化图表 
 
 ## 产品概述
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 Tenorshare AI Diagrimo 是由 Tenorshare 公司推出的 AI 驱动图表生成器，旨在帮助用户将文本内容即时转化为清晰的图表、流程图或信息图。其核心理念是通过语义理解技术，让用户无需设计技能即可创建专业的视觉内容 。
 
@@ -150,10 +93,10 @@ Diagrimo 的核心价值主张在于**降低可视化门槛**。传统图表制�
 - 复杂的自定义设计可能受限，有高度定制需求时建议使用专业设计工具
 
 ## 相关实体
-- [Imagetovideoai Generator](../ch05/094-ai.html)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/094-ai.html)
+- [Imagetovideoai Generator](../ch05/095-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/095-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/799-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/766-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md)
 

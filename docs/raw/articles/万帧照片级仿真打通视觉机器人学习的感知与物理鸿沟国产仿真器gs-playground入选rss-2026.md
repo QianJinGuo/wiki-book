@@ -2,7 +2,7 @@
 title: "万帧照片级仿真打通视觉机器人学习的感知与物理鸿沟国产仿真器gs playground入选rss 2026"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: c176dc330214fd39fa24657fbcfb6dbd3b2433932a0991985204feb74773251e
 ---

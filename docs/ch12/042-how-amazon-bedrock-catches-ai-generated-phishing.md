@@ -6,58 +6,7 @@
 
 # How Amazon Bedrock catches AI-generated phishing
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How Amazon Bedrock catches"))
-    Deep Analysis
-      The paradigm shift From surface
-      The five-stage analysis pipeline
-      The continuous feedback loop as a
-    Practical Insights
-```
-
 ## Summary
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 AI-generated phishing emails represent a new class of cyber threat — grammatically perfect, contextually accurate, and personalized to the target using OSINT. Traditional rule-based filters that rely on detecting typos, generic salutations, or mismatched domains are ineffective against these attacks. Amazon Bedrock provides a behavioral analysis framework that uses foundation models combined with sender baseline tracking, contextual grounding, and Amazon Bedrock Guardrails to detect AI-generated phishing at the behavioral level. This creates a multi-stage analysis pipeline that evaluates word choice, communication style deviations, and contextual appropriateness of requests.
 

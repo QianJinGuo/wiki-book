@@ -2,78 +2,7 @@
 
 ## Ch11.009 AWS Bedrock 多智能体协作指南
 
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 > 📊 Level ⭐⭐ | 35.9KB | `entities/aws-bedrock-multi-agent-collaboration-guide.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Bedrock 多智能体协作指南"))
-    一 AWS Bedrock 多智能体核心架构
-      关键服务组件
-      Agent 基本结构
-    二 Bedrock Agent 创建与配置
-      单 Agent 创建流程
-      Agent Alias 与版本管理
-    三 多 Agent 协作模式实现
-      Orchestrator-Worker 模式
-      Hierarchical 层叠模式
-      Agent-to-Agent 通信协议
-    四 跨账户多 Agent 协作
-      跨账户调用架构
-      跨账户配置
-    五 Tool Use 与函数调用
-      Action Groups 定义
-      函数调用模式
-    六 最佳实践与性能优化
-      Session 管理
-      并发控制
-      错误处理与重试
-    七 安全与权限管理
-      Agent 资源策略
-      护栏 Guardrails 配置
-    八 监控与可观测性
-      CloudWatch 指标
-      CloudWatch Logs 集成
-```
 
 ## 一、AWS Bedrock 多智能体核心架构
 

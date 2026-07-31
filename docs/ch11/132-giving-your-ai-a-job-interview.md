@@ -2,7 +2,7 @@
 
 ## Ch11.132 Giving your AI a Job Interview
 
-> 📊 Level ⭐⭐ | 8.3KB | `entities/giving-your-ai-a-job-interview.md`
+> 📊 Level ⭐⭐ | 8.4KB | `entities/giving-your-ai-a-job-interview.md`
 
 # Giving your AI a Job Interview
 
@@ -10,60 +10,7 @@ Ethan Mollick（One Useful Thing）关于 AI 评估方法论的深度文章。�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/giving-your-ai-a-job-interview.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Giving your AI a Job Interview"))
-    基准测试的三重问题
-    三种评估路径
-    GuacaDrone 实验 AI 的判断倾向差异
-    AI 评估的效度危机我们在测什么
-    Vibes 式测试的隐性价值 探测模型的世界观
-    GuacaDrone 实验揭示的态度偏差是规模化部署的系统性风险
-    面试类比的力量与局限
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "实验管理"
-        TRACK[实验追踪<br/>MLflow/W&B]
-        HP[超参调优<br/>Optuna]
-        REG[模型注册<br/>版本管理]
-    end
-    subgraph "评估流水线"
-        BENCH[基准测试<br/>自动评测]
-        HUMAN[人工评估<br/>LLM-as-Judge]
-        DRIFT[漂移检测<br/>数据/概念漂移]
-    end
-    subgraph "部署流水线"
-        PACKAGE[模型打包<br/>ONNX/TensorRT]
-        TEST[Integration测试<br/>回归检测]
-        DEPLOY[灰度发布<br/>A/B测试]
-    end
-    TRACK --> HP --> REG
-    REG --> BENCH & HUMAN
-    BENCH & HUMAN --> DRIFT
-    DRIFT --> PACKAGE --> TEST --> DEPLOY
-    subgraph "监控"
-        PERF[性能监控<br/>延迟/吞吐]
-        ALERT[告警规则<br/>异常检测]
-        RETRAIN[触发再训练]
-    end
-    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
-    classDef exp fill:#dbeafe,stroke:#2563eb
-    classDef eval fill:#ede9fe,stroke:#7c3aed
-    classDef deploy fill:#fef3c7,stroke:#d97706
-    classDef mon fill:#d1fae5,stroke:#059669
-    class TRACK,HP,REG exp
-    class BENCH,HUMAN,DRIFT eval
-    class PACKAGE,TEST,DEPLOY deploy
-    class PERF,ALERT,RETRAIN mon
-```
-
 
 AI 评估面临三重困境：(1) 基准测试的题目和答案公开，部分模型在训练中已见过；(2) 即便没见过，我们也不清楚这些测试到底在测什么（MMLU-Pro 中的"直立人平均颅容量"和"Cheap Trick 1979 年现场专辑"这类题目，答对意味着什么？）；(3) 测试往往未校准——从 84% 到 85% 和从 40% 到 41% 的难度可能完全不同。Mollick 提出三种互补的评估路径：Vibes 式测试（个人快速感知）、真实世界基准（如 GDPval）、系统性"面试"（组织级部署必做）。
 
@@ -126,7 +73,7 @@ Vibes 测试看似不严谨，实际上在探测一个标准基准无法捕获�
 
 ### 5. 评估的新范式：从"有多好"到"哪里好、怎么好"
 
-Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多好"（MMLU 分数），到多维度的"哪里好"（GDPval 按职业拆分），再到行为维度的"怎么好"（GuacaDrone 式态度测试）。这个三层递进——能力→分布→行为——对 [AgentOps](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 的评估四层模型有直接启发：工具级评估是"有多好"，会话级评估是"哪里好"，系统级评估需要加入"怎么好"（态度/风险偏好）的维度。
+Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多好"（MMLU 分数），到多维度的"哪里好"（GDPval 按职业拆分），再到行为维度的"怎么好"（GuacaDrone 式态度测试）。这个三层递进——能力→分布→行为——对 [AgentOps](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 的评估四层模型有直接启发：工具级评估是"有多好"，会话级评估是"哪里好"，系统级评估需要加入"怎么好"（态度/风险偏好）的维度。
 
 ## 实践启示
 
@@ -138,10 +85,10 @@ Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多�
 
 ### 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Ai Job Interview Model Evaluation Mollick](../ch05/094-ai.html)
-- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/444-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Ai Job Interview Model Evaluation Mollick](../ch05/095-ai.html)
+- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/438-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Youre Building Agent Security In The Wrong Order](../ch03/035-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 

@@ -7,7 +7,7 @@ publish_date: 2026-07-07
 created: 2026-07-07
 ingested: 2026-07-07
 tags: [anthropic, llm, interpretability, j-space, global-workspace, jacobian-lens, mechanistic-interpretability]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

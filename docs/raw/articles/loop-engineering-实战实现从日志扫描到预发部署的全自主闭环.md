@@ -7,7 +7,7 @@ publish_date: 2026-07-07
 created: 2026-07-07
 ingested: 2026-07-07
 tags: [loop-engineering, agent, devops, automation, cicd, ali-cloud, agent-monitoring, self-healing]
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: strong

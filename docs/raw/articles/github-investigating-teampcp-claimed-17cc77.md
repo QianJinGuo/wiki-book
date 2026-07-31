@@ -1,6 +1,6 @@
 ---
 title: GitHub Breached — Employee Device Hack Led to Exfiltration of 3,800+ Internal Repos
-type: article
+type: raw-article
 tags: [security]
 source: newsletter
 source_url: https://www.thehackernews.com/2026/05/github-investigating-teampcp-claimed.html

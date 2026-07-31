@@ -6,7 +6,7 @@ authors:
 published: "2026-05-26"
 platform: "微信"
 tags: [messaging, rocketmq, agent, multi-agent, async, infrastructure]
-type: raw
+type: raw-article
 created: "2026-05-26"
 updated: "2026-05-26"
 sha256: "26f9306d74754943557707446327170ef01a41965953ed0a0e6372ec87087b1e"

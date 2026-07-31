@@ -1,7 +1,7 @@
 ---
 tags: [wechat, article, claude, openai]
 title: "codex goal six hour run"
-type: raw
+type: raw-article
 url: https://tectontide.com/en/blog/codex-goal-six-hour-run/
 ingested: 2026-05-09
 sha256: 42aa6ff39ea8db3b1254aac0f14de1bbfb2a9bcf9914585b93b57efbbcb6f16c

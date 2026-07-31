@@ -8,22 +8,6 @@
 
 > **Background**：本文基于叶小钗为某企业进行的 6 场系统性培训整理，覆盖 Agent 架构、Harness 工程、AI 原生组织与人才三个维度，提供了一个从架构到组织再到人才的完整闭环框架。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("生产级 Agent 全景 架构 Harness 工程 组织与人才"))
-    Agent 在企业中的定位
-    Coding Agent 作为早期优势场景
-    Workflow vs Agent 决策框架
-    Agent 产品形态
-    稳定性设计
-    多 Agent 设计
-    Agent 技术架构八层
-    Harness 的核心职责
-```
-
 ## Agent 在企业中的定位
 
 传统企业软件的核心职责是 System of Record——记录系统（CRM、ERP、项目管理等）。Agent 增加了一个新的软件层：**认知与行动层**。用户直接提交任务，Agent 理解意图、组织上下文、判断工具、调用系统、检查结果并写回业务系统。
@@ -31,37 +15,6 @@ mindmap
 企业软件由此分成三层：**用户入口与交互层 + 认知与行动层 + 业务记录层**。Agent 的价值取决于完成了多少任务以及完成的任务有多大价值。
 
 ## Coding Agent 作为早期优势场景
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 Coding Agent 拥有四个天然优势：上下文相对清晰（代码、依赖、配置在仓库中）、工具天然存在（终端、文件系统、Git）、验证机制完整（编译、测试、运行可验证）、恢复成本低（Git 版本控制）。这使得 Coding Agent 成为观察通用 Agent 演化方向的重要窗口。
 

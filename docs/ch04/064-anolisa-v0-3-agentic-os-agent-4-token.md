@@ -14,70 +14,11 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anolisa-v03-alibaba-agentic-os.md)
 → [GitHub 开源](https://github.com/alibaba/anolisa) · [阿里云产品文档](https://help.aliyun.com/zh/alinux/agentic-os-getting-started)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ANOLISA v03 阿里 Agentic OS Agent"))
-    三大用户痛点
-    亮点一 AgentSecCore 4 层防护
-      场景示例
-      层防护 从输入端到执行端到运行环境
-    亮点二 SkillFS Token 节省 看得见的省
-    亮点三 工作区快照 ws-ckpt 后悔药
-      场景
-      ANOLISA 方案
-    ANOLISA v03 全部新功能速览
-    体验教程 3 个场景
-      准备工作 4 步
-      场景一 节省 Token
-      场景二 安全防护 亲眼看一次注入拦截
-    关键组件全景
-    核心金句
-```
-
 ## 一句话定位
 
 **"放权焦虑" 三件套解法**：① 安全（防护 + 拦截 + 告警）② Token（节省 + 可见）③ 错误（快照 + 回滚）= **敢放手**
 
 ## 1. 三大用户痛点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 > "**排名前三的痛点**：
 > 1. '**我怎么才能放心把更多事情交给 Agent 而不用担心安全问题**'
@@ -263,7 +204,7 @@ ANOLISA v0.3 架构
 - **ANOLISA = 阿里系统级安全 / Token / 快照基础设施**
 - 共同点：都强调"基础设施决定 AI 自主空间"
 
-### vs [Kimi Work](../ch01/517-codex.html)
+### vs [Kimi Work](../ch01/520-codex.html)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - **ANOLISA = 阿里云 ECS 镜像 + Agentic OS**（**云端系统级**）
 - 共同点：都强调"为 AI 套上家 / 套上 OS"
@@ -315,7 +256,7 @@ ANOLISA v0.3 架构
 
 - **通过 OpenClaw 的 Hook 机制扩展 ANOLISA 的安全策略**。ANOLISA 的 Copilot Shell（cosh）提供了完善的 Hook 功能，支持会话导出和自定义状态栏。可以利用 Hook 在每次 Agent 执行敏感操作前自动插入人工确认步骤，或将安全事件导出到 SIEM 系统，实现 ANOLISA 与企业现有安全基础设施的集成 
 
-- **关注 ANOLISA 与 [OpenClaw](../ch11/235-openclaw.html) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](../ch03/096-hermes-agent.html) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
+- **关注 ANOLISA 与 [OpenClaw](../ch11/237-openclaw.html) 的集成深度**。ANOLISA 的入口是 OpenClaw，而 OpenClaw 本身支持多租户和多种部署形态（ECS/Fargate/Graviton）。在评估企业级部署时，需要考虑 ANOLISA 的多 Agent 保护能力是否满足多租户场景下的隔离需求，以及 [Hermes Agent](../ch03/096-hermes-agent.html) 等其他 Agent 系统是否能与 ANOLISA 的安全框架无缝协同 
 
 ## 11. 局限 / 待验证
 
@@ -330,7 +271,7 @@ ANOLISA v0.3 架构
 - [wow-harness v3](../ch05/009-harness.html) —— 协议层治理
 - [MAC Skills + Hooks](../ch05/026-mac-multi-agent-coding-skills-hooks-harness-0-20.html) —— 工程师个人框架
 - [高德 AI-Native 生产线](../ch05/018-ai-native.html) —— 企业级 R&D
-- [Kimi Work](../ch01/517-codex.html) —— 本地 Agent
+- [Kimi Work](../ch01/520-codex.html) —— 本地 Agent
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层模型
 - [Microsoft Build 2026](../ch03/035-agent.html) —— 全栈 AI
 - [PilotDeck](../ch03/035-agent.html) —— 多项目隔离

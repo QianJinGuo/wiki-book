@@ -2,7 +2,7 @@
 title: "Repricing of Software Engineering Labor"
 source_url: "https://blog.grandimam.com/posts/repricing-of-software-engineering-labor"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 7ea1f8c5843fc1783e43e89e5d00e81eb9e87e0fedabfe856a19188f57d6ba4f
 ---

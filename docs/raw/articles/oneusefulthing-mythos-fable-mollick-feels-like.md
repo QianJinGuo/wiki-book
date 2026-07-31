@@ -5,7 +5,7 @@ source: "oneusefulthing"
 author: "Ethan Mollick"
 publish_date: "2026-06-09"
 ingested: "2026-06-11"
-type: article
+type: raw-article
 tags: [claude, anthropic, fable-5, mythos, mollick, one-useful-thing, hands-on-evaluation, long-horizon-tasks, agentic-workflow, patron-vs-wizard]
 source_type: newsletter
 sha256: "1f24ed9fb785448f0d7016395db159b5db4e8aa2451db688a4d0cc0eb6a11714"

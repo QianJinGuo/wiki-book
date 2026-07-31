@@ -2,66 +2,9 @@
 
 ## Ch05.025 OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语
 
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 > 📊 Level ⭐⭐ | 17.0KB | `entities/openai-skills-shell-compaction-agent-primitives.md`
 
 > -> [OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-skills-shell-compaction-agent-primitives.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI SkillsShellCompaction"))
-    三大原语定义
-      Skills 技能 按需加载的程序
-      Shell 工具 智能体的执行引擎
-      压缩 Compaction 保持长周期运行
-    十大非直观技巧
-      技能描述 决策边界 而非营销文案
-      负面示例 边缘情况覆盖减少误触发
-      模板和示例放入技能内部 不使用时不占成本
-    三种构建模式
-      模式 A 安装 获取 写入 artifact 制品
-      模式 B 技能 Shell 处理可重复工作流
-      模式 C 高级 技能作为企业工作流的载体
-    OpenAI vs OpenClaw 全方位对比
-    核心原则
-    三位一体原语解决的是不同层次的失败模式 而非同一问题的三个方面
-    Token 成本最优解与提示词工程直觉相悖
-    技能路由存在初期触发率下降的反直觉现象 负面示例是恢复关键
-```
 
 ## 核心命题
 
@@ -272,8 +215,8 @@ Skills + Shell + 开放网络访问是高风险组合。  推荐默认安全姿�
 Skills 同时适用于托管 Shell 和本地 Shell 模式，且在同一 API 下保持行为一致。  推荐的开发节奏是：本地环境下快速迭代技能定义和示例 → 验证无误后迁移到托管容器获得可重复性和部署一致性。对于企业级技能，建议在 CI/CD 流程中加入"本地验证 → 托管验证"的双阶段门禁。
 
 ## 相关主题
-- [Skills Anthropic Openai Comparison Frontend Design](../ch01/719-skills-anthropic-openai-comparison-frontend-design.html) — Anthropic/Google Skills 设计模式对比
-- [Claude Code Openclaw Memory Comparison](../ch03/078-claude-code.html) — OpenClaw vs Claude Code 内存对比
+- [Skills Anthropic Openai Comparison Frontend Design](../ch01/735-skills-anthropic-openai-comparison-frontend-design.html) — Anthropic/Google Skills 设计模式对比
+- [Claude Code Openclaw Memory Comparison](../ch03/077-claude-code.html) — OpenClaw vs Claude Code 内存对比
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md) — 上下文窗口管理方案对比
 - [Harness Engineering Long Term Agent Tasks](ch05/120-harness-engineering.html) — 长周期 Agent 的 Harness 设计
 

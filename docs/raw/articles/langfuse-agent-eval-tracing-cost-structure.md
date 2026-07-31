@@ -3,7 +3,7 @@ title: "做Agent评测的几个反直觉感悟"
 source_url: "https://www.xiaohongshu.com/explore/6a14f1040000000008025eea"
 created: 2026-07-02
 updated: 2026-07-02
-type: article
+type: raw-article
 tags: [xiaohongshu, agent, eval, tracing, langfuse, cost]
 ingested: 2026-07-02
 sha256: f8a3c7b2e7d1f4a5b6c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9

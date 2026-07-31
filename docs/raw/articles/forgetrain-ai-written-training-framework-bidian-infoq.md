@@ -12,7 +12,7 @@ date: 2026-05-28
 created: 2026-05-28
 updated: 2026-05-28
 tags: [forge-train, ai-coding, training-framework, llm-infra,国产算力, megatron, minimax, harness, ai研发ai, human-on-the-loop, moe]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: 73d2fb03227156309e28e1cb171dbee1780f04d2b6ff25323a4ea1c949d646fd
 ---

@@ -1,7 +1,7 @@
 ---
 
 title: "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）"
-type: raw
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/wRtvQK0P0o4cvVTlRq0LXA
 original_source_url: https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures

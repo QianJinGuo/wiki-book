@@ -6,55 +6,7 @@
 
 # What My Privacy and Security Stack Actually Looks Like
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("What My Privacy and Security"))
-    为什么情绪直觉被列为第一位
-    张发票的地址保护经验
-    认证体系的层级降级策略
-    为什么同时用两个密码管理器
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 资深隐私/安全记者 Yael 在博文中分享了她"实际在用"的隐私与安全实践，区别于常规的"工具推荐清单"。她的栈覆盖日常行为（情绪直觉、线下会面习惯）、个人信息保护（PO Box、数据经纪商退订）、隐私卫生（隐私屏、耳机通话、删除旧账号）、设备卫生（磁盘加密、iVerify、权限审计）、认证（YubiKey + 1Password/Bitwarden + Authy）、浏览（Mullvad VPN、uBlock Origin、Privacy Badger、多浏览器轮换）、通信保护（Signal 消失消息、Google Advanced Protection Program、Apple Lockdown Mode）、支付（信用卡优先、冻结信用）。
 
@@ -161,12 +113,12 @@ Yael 的威胁情报来源形成了一个分层结构：
 
 ## 相关实体
 
-- [Karpathy Vibe Coding 访谈](../ch04/237-agentic.html)
+- [Karpathy Vibe Coding 访谈](../ch04/648-agentic.html)
 - [Karpathy Vibe Coding 完整版](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Code 源码机制](../ch03/078-claude-code.html)
+- [Claude Code 源码机制](../ch03/077-claude-code.html)
 - [Agent 原理架构与工程实践](../ch03/035-agent.html)
 - [多智能体交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [OpenClaw 完整指南](../ch11/235-openclaw.html)
+- [OpenClaw 完整指南](../ch11/237-openclaw.html)
 - [LLMReaper Browser Extension Attack](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html) — AI 对话的扩展窃取风险
 
 > [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-my-privacy-and-security-stack-actually-looks-like.md)

@@ -1,7 +1,7 @@
 ---
 title: Cline releases open-source agent runtime SDK
 sha256: 5f109a1394ae8b47c745cecff1042e7ee1307ad0b4ae1501077ac70ea74a8004
-type: source
+type: raw-article
 source: newsletter
 source_url: https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/
 url: https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/

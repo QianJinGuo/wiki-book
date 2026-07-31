@@ -2,7 +2,7 @@
 title: "CyberSecQwen-4B"
 created: "2026-05-12"
 updated: "2026-05-12"
-type: raw
+type: raw-article
 tags: [cybersecurity, small-language-model, specialized-model, amd-mi300x, threat-intelligence, cve-classification, lora-finetuning, rocm]
 source_url: "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b"
 ingested: "2026-05-12"

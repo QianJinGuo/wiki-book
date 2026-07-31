@@ -5,7 +5,7 @@ source: "Dario Amodei personal blog"
 author: "Dario Amodei"
 publish_date: "2026-06-12"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: [ai-policy, dario-amodei, anthropic, policy-recommendation, regulation, ai-governance, treebeard, collingridge, hayek]
 source_type: newsletter
 sha256: "6984f87cdb55b9192d7631310398c1a468324384419709d7c342a89ab44e4f8e"

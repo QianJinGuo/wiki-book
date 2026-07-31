@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/VHLC8m75AE1WaCZOQdvajg
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, grep-vs-vector, retrieval, agentic-rag, harness, inline-delivery, longmemeval, context-engineering, pwc, arxiv-2605-15184, harness-engineering]
 ---
 

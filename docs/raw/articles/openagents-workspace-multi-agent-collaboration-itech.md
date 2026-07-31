@@ -5,7 +5,7 @@ author: "iTech (博客园)"
 published: 2026-06-28
 ingested: 2026-06-28
 language: zh
-type: raw
+type: raw-article
 sha256: "eb0dc70f14f096d7b6c7805bb214af0212fa73366092a5a90f60fd973a217ed0"
 ---
 

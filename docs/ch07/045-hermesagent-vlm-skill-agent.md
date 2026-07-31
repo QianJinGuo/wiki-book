@@ -8,66 +8,11 @@
 
 高德扫街榜（Amap Street Food List）POI 配图系统重构案例。从手工作坊式 Workflow（50+ SQL/8 步骤/T+1 24 小时）重构为 "VLM 语义感知 + Skill 化生产 + HermesAgent 编排 + 语言驱动干预" 的生产级 Agent 系统。单榜单生产 **24h → 30min，提效 48 倍**。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("高德扫街榜 HermesAgent 配图系统 VLM Skill"))
-    架构设计哲学 确定性流程 Agent 各司其职
-    五层系统架构
-    六段式全链路
-    关键技术详解
-      Agent 化精排决策
-      兜底与质检
-      多模态知识库
-    工程实践与踩坑
-    核心工程原则 跨场景可复用
-    与其他实体的关系
-```
-
 ## 架构设计哲学：确定性流程 + Agent 各司其职
 
 核心选型：**混合架构**——确定性 Pipeline 负责"重活"（高并发/批量/同构/可并行），Agent 推理负责"巧活"（开放式/组合式/需要理解规则）。这个选择直接回应了"纯 DAG 不够灵活 vs 纯 ReAct Agent 执行路径不稳定"的两难。
 
 ## 五层系统架构
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 
 | 层级 | 组件 | 职责 |
 |------|------|------|
@@ -143,10 +88,10 @@ Hermes 作为 Agent 编排层，自然语言对话支持进度查询/单点重�
 
 ## 与其他实体的关系
 
-- **HermesAgent 生产案例**：本文是 wiki 中首个 HermesAgent 在大型互联网应用中的端到端生产案例，与 [高德 SDD/Harness 编码范式](../ch05/111-ai-coding.html) 互补——前者讲 AI 编码，本文讲 Agent 在生产链路的编排
+- **HermesAgent 生产案例**：本文是 wiki 中首个 HermesAgent 在大型互联网应用中的端到端生产案例，与 [高德 SDD/Harness 编码范式](../ch05/112-ai-coding.html) 互补——前者讲 AI 编码，本文讲 Agent 在生产链路的编排
 - **确定性 + Agent 混合架构**：与 [Harness Engineering](../ch05/120-harness-engineering.html) 的"多层重试+执行者/验证者分离"哲学一致——确定性与 Agent 的边界划分是生产级 Agent 系统设计的核心
 - **Skill 化/MCP 层**：五层架构中的 MCP/Skill 层与 [Hermes Agent](../ch03/096-hermes-agent.html) 的 Skill 系统直接对应——每个能力被封装为可独立调用的工具
-- **RAG 配置驱动**：与 [Flow2Spec 结构化知识路由](../ch01/1016-spec.html) 的"规则外置"思想同源——业务知识从代码中剥离出来
+- **RAG 配置驱动**：与 [Flow2Spec 结构化知识路由](../ch01/1034-spec.html) 的"规则外置"思想同源——业务知识从代码中剥离出来
 - **语言驱动生产**：与 Claude Tag 的"聊天即工作流入口"趋势一致——自然语言成为新的生产接口
 
 ## 实践启示

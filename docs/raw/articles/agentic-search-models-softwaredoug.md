@@ -6,7 +6,7 @@ url: https://softwaredoug.com/blog/2026/05/11/the-new-agentic-search-models.html
 title: "Agentic search models"
 sha256: 06b2287624032d4028b8cd24ecca5b31620d8df85458c7b249ba09e25589e7e3
 date: 2026-05-13
-type: raw
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: neutral

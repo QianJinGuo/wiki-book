@@ -1,7 +1,7 @@
 ---
 
 title: "Recent Developments in LLM Architectures: KV Sharing, mHC, a"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures
 tags: [llm]

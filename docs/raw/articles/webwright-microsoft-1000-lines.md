@@ -3,7 +3,7 @@ title: "微软 1000 行代码，把 Claude Opus 干翻了 15 分"
 source_url: "https://mp.weixin.qq.com/s/tK26B6oV49DRGhizBdoUDA"
 author: "winty / 前端Q"
 created: 2026-05-26
-type: article
+type: raw-article
 tags: [agent, harness, web-agent, microsoft]
 sha256: ""
 ---

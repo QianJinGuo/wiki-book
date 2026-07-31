@@ -3,7 +3,7 @@ title: "ZCode - Simple, Fast, Vibe-Ready | Official Harness for GLM-5.2"
 source_url: "https://zcode.z.ai/en"
 ingested: 2026-07-02T11:40:45Z
 sha256: placeholder
-type: raw
+type: raw-article
 tags: [raw, ai, coding-harness]
 ---
 

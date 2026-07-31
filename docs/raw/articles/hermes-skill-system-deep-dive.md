@@ -5,7 +5,7 @@ author: 李伟山
 published: 2026-04-15
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [hermes-agent, skill-system, closed-loop, self-evolution, progressive-disclosure, source-code]
 sha256: dbb7bb9e59d15a34aea97077ca6dd63726ca8438122958344894e6d5937869ad 
 review_value: 7

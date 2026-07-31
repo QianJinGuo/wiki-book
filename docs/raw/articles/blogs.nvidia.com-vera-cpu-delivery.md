@@ -1,7 +1,7 @@
 ---
 
 title: "Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs"
-type: entity
+type: raw-article
 tags: [article]
 created: 2026-05-20
 updated: 2026-05-20

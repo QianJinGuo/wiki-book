@@ -5,7 +5,7 @@ source_site: "新智元"
 author: "ASI启示录"
 ingested: "2026-07-08"
 sha256: "db412eaf244d64051e6a92b883ea21fee19bc5c03ad0e08cf87a12a74fadbdad"
-type: raw
+type: raw-article
 tags:
   - moworld
   - flash-world-model

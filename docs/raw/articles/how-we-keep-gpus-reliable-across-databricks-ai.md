@@ -3,7 +3,7 @@ title: "How we keep GPUs reliable across Databricks AI"
 source_url: "https://www.databricks.com/blog/how-we-keep-gpus-reliable-across-databricks-ai"
 ingested: 2026-07-02T11:40:01Z
 sha256: placeholder
-type: raw
+type: raw-article
 tags: [newsletter, raw]
 ---
 

@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/JgzjyGmGQX-qiHqWfWzWZg"
 feed_name: "Acker自留地"
 author: "Acker自留地"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [agent, evolution, governance, agent-runtime, context, memory, execution, three-routes]
 sha256: "8285067d634fdab335ab4f1df39f79fcf98a23b824ed05ea1d0c1c7e6ff35173"
 ---

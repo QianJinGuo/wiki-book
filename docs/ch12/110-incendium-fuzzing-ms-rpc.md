@@ -9,44 +9,7 @@
 # Incendium MS-RPC Fuzzing
 Incendium: Microsoft RPC 接口深度模糊测试，漏洞发现方法论
 
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 [](/) [Remco van der Meer](/) Ethical Hacker, Security researcher
 
 ## 深度分析
@@ -63,7 +26,7 @@ Incendium 项目展示了 MS-RPC 模糊测试的方法论演进：通过递归�
 5. **Canary + ETW 实时告警组合**：在 fuzzing 时使用可识别前缀（`incendiumrocks_`）作为 canary，配合 ETW 实时监控 file/registry 操作，实时捕获哪些 RPC 程序/端点触发了哪些路径，是高效缩小攻击面的方法。
 
 ## 相关资源
-- [Agent Memory 架构](../ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构](../ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Claude Managed Agents 开发者指南](../ch04/710-claude-managed-agents.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/incendium-fuzzing-ms-rpc.md)
 

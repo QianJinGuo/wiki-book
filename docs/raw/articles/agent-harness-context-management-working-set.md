@@ -10,7 +10,7 @@ review_value: 8.5
 review_confidence: 7
 review_recommendation: "strong"
 review_stars: 4
-type: raw
+type: raw-article
 tags: [agent-harness, context-management, working-set, compaction, contextual-boundaries, claude-code, openclaw, memory, pi]
   - "agent-harness"
   - "context-management"

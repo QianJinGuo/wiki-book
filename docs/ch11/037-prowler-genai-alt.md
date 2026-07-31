@@ -6,53 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 Prowler 与 GenAI 构建金融行业智能合规中枢 Alt"))
-    规模化合规难题的本质 框架重复与术语壁垒
-    Prowler 的检测-映射解耦架构 核心创新
-    Rationale 文档 GenAI 精确分析的关键
-    GenAI 最后一公里 问题的解决
-    跨境金融机构的框架整合策略
-    小型安全团队的合规效率杠杆
-    审计准备流程的根本性改变
-    合规报告的自动化分层
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 本文提出了一套专为跨境金融机构打造的智能合规中枢架构方案，旨在解决面对多重监管框架（如 PCI DSS v4.0、MAS TRM-G、DORA、等保 2.0 三级等）时由于重复审计、术语壁垒和修复滞后带来的"规模化合规难题"。核心创新包括：Prowler ECS Fargate 按需扫描 + OCSF 标准输出 + 自定义框架 JSON 扩展 + Rationale 映射逻辑文档 + Bedrock GenAI 条款级分析，实现一次扫描覆盖 51 个合规框架。
 
 ## 关键要点
@@ -112,23 +66,23 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/306-amazon-nova.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/009-aws-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/058-amazon-bedrock-claude-prompt-cache.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/295-amazon-bedrock.html)
 
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/561-amazon-bedrock-agentcore.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/704-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/566-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/300-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/航班变更信息智能识别解决方案.md)
 
-- [CloudSectiDbits](ch11/252-cloudsectidbits.html)
+- [CloudSectiDbits](ch11/254-cloudsectidbits.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

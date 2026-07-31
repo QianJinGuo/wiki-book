@@ -4,7 +4,7 @@ source: "Agent手记 / Agent技术笔记"
 source_url: "https://mp.weixin.qq.com/s/ohkdS_tPhbpK-Re3-jZeYw"
 ingested: 2026-06-16
 sha256: "895f791d047c3f5d6c997328866cf91d097e42a4494c9ec724ff6ba3527dc41d"
-type: raw
+type: raw-article
 tags: [agent-memory, memory-injection, context-engineering, memguide, stitch, ace-framework, lost-in-the-middle, context-burst, intent-driven, slot-driven, context-filter, section-qa, rag, dynamic-context, google-deepmind, microsoft-research, anthropic, stanford, uc-berkeley, agent-shouji, 2026]
 review_value: 9
 review_confidence: 8

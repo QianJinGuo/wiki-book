@@ -8,25 +8,6 @@
 
 闪购搜索团队（阿里云开发者 久梦）把企业级 AI 助手落地到钉钉群的完整方案。核心是用 **钉钉 Stream（WebSocket）+ CLI 代理** 替代传统 Webhook 方案，避开内网公网回调限制；引擎侧 Qoder CLI 与 Claude Code 并行部署，通过 ProcessBuilder 子进程调用；上下文与权限走 LinkedHashMap LRU + 管理员/只读双模式；外部工具通过 MCP 协议 + 静态 Token 跳过 OAuth 浏览器授权。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("钉钉 Stream CLI 代理双引擎 AI 助手架构"))
-    一 问题域 为什么传统 Webhook 方案失败
-    二 架构核心 钉钉 Stream CLI 代理
-    三 双引擎选择 从 Qoder CLI 到 Claude Code
-    四 MCP 工具集成 跳过 OAuth 的无头方案
-    五 生产级稳定性 stdbuf 进程控制 三重防护
-      stdbuf 行缓冲 必须
-      ProcessBuilder 子进程控制
-      用户上下文三重防护
-    六 五级知识沉淀模型 L0-L4
-    七 踩坑经验清单
-    八 关键配置参考
-```
-
 ## 一、问题域：为什么传统 Webhook 方案失败
 
 闪购搜索团队的日常操作分散在 SLS 日志、TPP 实验平台、代码仓库等多个平台。目标是**在钉钉群里直接对话一个 AI 助手**，让 AI 替人查日志、看实验、分析性能、部署代码。
@@ -73,35 +54,9 @@ mindmap
 **MCP 默认 OAuth2 流程**：
 
 ```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
+用户 → AI 请求 → 触发 MCP server → 返回 OAuth URL
+   → 用户浏览器打开 URL → 登录 → 授权 → 拿到 token
+   → token 传回 MCP server → 工具调用继续
 ```
 
 **Docker 容器里的问题**：无浏览器，无法完成交互式授权。
@@ -302,11 +257,11 @@ L0-L4 模型虽然在文章靠后位置描述，但它的实现复杂度不高�
 Stream 模式的多实例冲突问题（消息重复处理）是典型的"开发环境正常、生产环境异常"场景。解决方案是环境开关 `dingtalk.stream.enabled` 配合 antx/diamond 注入，生产/预发设 `false`，只有日常开发环境才开启。这个模式可以推广到所有有状态的长连接组件。
 
 ## 相关实体
-- [Claude Code Core Internals](../ch03/078-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/989-anthropic.html)
-- [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.html)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/290-aws-devops-agent.html)
+- [Claude Code Core Internals](../ch03/077-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/286-anthropic-claude-code.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1004-anthropic.html)
+- [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/046-coding-agent.html)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/292-aws-devops-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
 

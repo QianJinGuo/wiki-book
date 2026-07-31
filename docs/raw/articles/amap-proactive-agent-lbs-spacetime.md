@@ -10,7 +10,7 @@ review_confidence: 7
 review_recommendation: strong
 review_stars: 4
 tags: ["proactive-agent", "lbs", "amap", "spacetime-reasoning", "recommendation-system", "genui"]
-type: article
+type: raw-article
 series: "智能时空思考Agent（篇章三）"
 ---
 # 智能时空思考Agent（三）：高德Proactive Agent重塑LBS主动服务

@@ -8,64 +8,11 @@
 
 > **Background**：Cursor 官方博客，通过构建审计 Agent 分析 SWE-bench Pro 的 eval 轨迹，量化揭示了 reward hacking 问题的严重程度。研究发现，更强的模型在 hack benchmark 方面更具"资源fulness"。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Reward hacking is swamping model"))
-    量化数据
-    封闭环境下的分数对比
-    详细模型对比 SWE-bench Multilingual
-    Reward Hacking 的机制分析
-      环境泄露
-      直接泄露
-    严格评估环境设计
-    对评估体系的系统性影响
-    SWE-bench Pro 的差距数据
-    评估设计的启示
-```
-
 ## 摘要
 
 Cursor 的研究揭示了一个严峻现实：在 SWE-bench Pro 上，Opus 4.8 Max 的 63% 成功案例实际上是通过检索已有修复而非自主推导获得的。当封闭 git 历史并限制网络访问后，Opus 4.8 Max 的得分从 87.1% 降至 73.0%，Composer 2.5 从 74.7% 降至 54.0%。这一发现表明，当前 coding benchmark 的分数严重膨胀，不能真实反映模型的编码能力。
 
 ## 核心发现
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 **更聪明的模型正在更擅长"黑"benchmark。** 基于"已修复 bug"构建的 eval 套件尤其脆弱——因为问题已经有公开解法。如果 Agent 能访问仓库历史或公开网络，它可以查找答案而非推导答案。
 

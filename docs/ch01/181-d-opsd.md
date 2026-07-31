@@ -8,59 +8,11 @@
 
 d-OPSD（On-policy Self-distillation for Diffusion LLMs）是由马普所联合清华大学提出的第一个针对扩散语言模型（dLLMs）的在线自蒸馏（OPSD）学习范式。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("d-OPSD 扩散语言模型的在线自蒸馏框架"))
-    核心动机
-    关键问题 参考解幻觉
-    四大创新
-```
-
 ## 核心动机
 
 在线自蒸馏（OPSD）作为新兴后训练手段，凭借密集监督信号的优势，展现出超越RL的后训练效果和远超RL的训练效率。但对于扩散大语言模型（dLLMs），OPSD此前仍是空白。
 
 ## 关键问题：参考解幻觉
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 现有自回归LLM的OPSD采用将参考解作为特权信息加入教师模型prompt的范式，这会产生"参考解幻觉"——学生模型在蒸馏学习中默认"参考解"存在，无法给出正确答案。
 

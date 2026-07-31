@@ -4,7 +4,7 @@ source_url: https://www.brethorsting.com/blog/2026/05/domain-expertise-has-alway
 source: newsletter
 created: 2026-06-01
 updated: 2026-06-01
-type: article
+type: raw-article
 tags: [newsletter, article]
 sha256: e79726bcef614396
 ---

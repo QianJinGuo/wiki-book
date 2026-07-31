@@ -2,7 +2,7 @@
 title: "Claude Code 的 loop 实操 碎片化自动 架构师"
 created: 2026-06-30
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: b41e1bab4fea0f053e83cdfa8f58feea973124a25a120235c7ecaad6b3d24652
 ---

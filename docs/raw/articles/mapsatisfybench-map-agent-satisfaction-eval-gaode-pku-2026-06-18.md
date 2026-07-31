@@ -3,7 +3,7 @@ title: "MapSatisfyBench：首个以满意度为核心目标的地图智能体评
 source_url: "https://mp.weixin.qq.com/s/HNQFGzcRkB16ZbdvF7op9g"
 ingested: 2026-06-18
 sha256: pending
-type: raw
+type: raw-article
 ---
 
 # MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准

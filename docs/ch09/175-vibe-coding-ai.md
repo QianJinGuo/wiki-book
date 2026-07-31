@@ -8,17 +8,6 @@
 
 Vibe Coding 作为 AI 软件工程的入门范式：以自然语言意图驱动代码生成，优势是极速原型，风险是缺乏工程约束。从 Vibe Coding 到 Loop Engineering 的进化路径。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Vibe Coding 与 AI 软件工程"))
-    Vibe Coding 的适用边界
-    缺乏工程约束的风险放大机制
-    Vibe Coding Loop Engineering 的进化条件
-```
-
 ## 深度分析
 
 ### Vibe Coding 的适用边界
@@ -35,51 +24,16 @@ Vibe Coding 放大了缺乏工程约束的风险：没有版本控制的迭代�
 
 ## 实践启示
 
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
-
 1. **为 Vibe Coding 设置护栏**：即使在使用 Vibe Coding 时，也应至少保证版本控制（git 每步 commit）和基本测试覆盖（至少一个冒烟测试）。
 2. **建立"退出 Vibe Coding"的信号**：当代码被第二次阅读、被其他人修改、或进入生产环境时，应主动切换为结构化开发模式。
 3. **Vibe 用于探索，Loop 用于交付**：用 Vibe Coding 快速探索"做什么"，用 Loop Engineering 可靠交付"怎么做"。
 
 ## 相关实体
 
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview](../ch04/451-vibe-coding-agentic-engineering.html)
-- [无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](../ch01/913-20.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview](../ch04/457-vibe-coding-agentic-engineering.html)
+- [无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](../ch01/926-20.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 
 ---

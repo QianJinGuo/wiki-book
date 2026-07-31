@@ -5,7 +5,7 @@ source: "wechat|码途漫谈"
 author: "码途漫谈"
 publish_date: "2026-06-11"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: []
 source_type: wechat
 sha256: "2363bece8b7b3ba3c9890c011b546d33cba889c659aa0fe1d9324424ad3ee1a2"

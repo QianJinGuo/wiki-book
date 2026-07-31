@@ -1,7 +1,7 @@
 ---
 
 title: "Gemini 3.5 Flash: more expensive, but Google plan to use it for everything"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://simonwillison.net/2026/May/19/gemini-35-flash/
 ingested: 2026-05-20

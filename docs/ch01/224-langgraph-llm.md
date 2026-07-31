@@ -6,22 +6,6 @@
 
 [Langgraph State Machine Under The Hood](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langgraph-state-machine-under-the-hood.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LangGraph 底层原理 它是怎么把 LLM 变成一台状态机的"))
-    LangChain 的老问题
-    状态机是什么
-    StateGraph 执行引擎 心脏长什么样
-    一次完整执行 从 invoke 到节点运行的全流程
-    Reducer 状态更新的核心机制
-    图的调度器 它怎么决定下一步去哪
-    并行执行 Fan-out Fan-in 模式
-    编译产物 CompiledGraph 里藏了什么
-```
-
 ## 01 LangChain 的老问题
 LangChain 早期架构是**线性 Chain**：
 ```
@@ -36,44 +20,6 @@ LangChain 早期架构是**线性 Chain**：
 这些都需要**带状态的循环控制流**——这正是 LangGraph 解决的核心问题。
 
 ## 02 状态机是什么
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 **状态机（State Machine）三要素：**
 | 要素 | 含义 |
 |------|------|
@@ -350,29 +296,29 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 **5. 多 Agent 协作时，用 Fan-out 而非在一个节点里串行调用**
 新手实现「同时查天气、查新闻、查股价」的做法是在一个 LLM 节点里 `await Promise.all([weather(), news(), stock()])`——这破坏了图的可见性：外部无法观测到有三个子任务在执行，也不知道哪个先完成。正确做法：用 Fan-out 图结构，三个节点并行执行，一个 merge 节点汇总结果。这样 `stream()` 输出里每个 chunk 都能看到具体是哪个子节点完成了，前端可以精确渲染每个数据源的加载状态。
 ## 相关实体
-- [Gepa Optimize Anything](ch01/295-gepa-optimize-anything.html)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [How Open Model Ecosystems Compound](ch01/917-how-open-model-ecosystems-compound.html)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/1151-deepseek-v4.html)
+- [Gepa Optimize Anything](ch01/296-gepa-optimize-anything.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/104-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [How Open Model Ecosystems Compound](ch01/930-how-open-model-ecosystems-compound.html)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/710-deepseek-v4.html)
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
 
-- [Tomtunguz Ai Model Inflation](../ch05/094-ai.html)
-- [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](ch01/1243-0.html)
-- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/817-vlm.html)
-- [We Let Four Ais Run Radio Stations Heres What Happened](../ch05/094-ai.html)
-- [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-Recruitment.md)
-- [Lightfield Ai Pipeline Generation](../ch05/094-ai.html)
-- [Creativeboom Ai Views Changed](../ch05/094-ai.html)
-- [Netflix Is Building An Ai Animation Studio](../ch11/234-netflix-is-building-an-ai-animation-studio.html)
+- [Tomtunguz Ai Model Inflation](../ch05/095-ai.html)
+- [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](ch01/1248-0.html)
+- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/831-vlm.html)
+- [We Let Four Ais Run Radio Stations Heres What Happened](../ch05/095-ai.html)
+- [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-recruitment.md)
+- [Lightfield Ai Pipeline Generation](../ch05/095-ai.html)
+- [Creativeboom Ai Views Changed](../ch05/095-ai.html)
+- [Netflix Is Building An Ai Animation Studio](../ch11/236-netflix-is-building-an-ai-animation-studio.html)
 - [Minicpm V 46 13B Xinazhiyuan](https://github.com/QianJinGuo/wiki/blob/main/entities/minicpm-v-46-13b-xinazhiyuan.md)
-- [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](ch01/622-gemma-4.html)
-- [Model Half Life Aifoc](ch01/1024-model-half-life.html)
-- [Ghostbyt3 Github Io Blog Nday Research Ai](ch01/820-github.html)
+- [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](ch01/632-gemma-4.html)
+- [Model Half Life Aifoc](ch01/1039-model-half-life.html)
+- [Ghostbyt3 Github Io Blog Nday Research Ai](ch01/834-github.html)
 - [Ai Friendly Architecture Design](../ch05/022-ai-friendly.html)
-- [Obsidian Llm Wiki Local Kytmanov](ch01/1274-llm.html)
-- [Olmo Hybrid And Future Llm Architectures](ch01/428-olmo-hybrid-and-future-llm-architectures.html)
+- [Obsidian Llm Wiki Local Kytmanov](ch01/637-llm.html)
+- [Olmo Hybrid And Future Llm Architectures](ch01/429-olmo-hybrid-and-future-llm-architectures.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.html)
-- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](ch01/1016-spec.html)
+- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](ch01/1034-spec.html)
 
 ---
 

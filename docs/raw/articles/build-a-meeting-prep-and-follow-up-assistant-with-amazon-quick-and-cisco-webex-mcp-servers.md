@@ -4,7 +4,7 @@ source_url: https://aws.amazon.com/blogs/machine-learning/build-a-meeting-prep-a
 ingested: 2026-06-13
 feed_name: AWS China ML
 source_published: 2026-06-12
-type: article
+type: raw-article
 tags: [aws, amazon-quick, cisco-webex, mcp, mcp-server, meeting-prep, vidcast, agent, ai-agent, productivity, tool-use]
 sha256: "60515ff80940ab37cf60f5fb5de4e1058649c23a9f1c731de8ff4779f1d75d16"
 ---

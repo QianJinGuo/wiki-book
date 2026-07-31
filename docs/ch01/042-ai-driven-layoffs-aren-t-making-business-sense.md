@@ -4,20 +4,6 @@
 
 > 📊 Level ⭐ | 8.4KB | `entities/ai-driven-layoffs-arent-making-business-sense.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI-driven layoffs arent making"))
-    数据揭示的核心矛盾
-    ROI 的真实驱动因素
-    IT 公司裁员的特殊性
-    短期主义与长期代价
-    对于 CIO IT 领导者的行动建议
-    对于组织战略的反思
-```
-
 ## 核心要点
 - 来源：cio.com
 - 评分：v=5 c=12 (56分)
@@ -26,39 +12,10 @@ mindmap
 - 真正驱动 ROI 的因素：员工再培训、upskilling、让员工构建自己的 AI 代理/自动化流程
 - 替代方案：「自动化增强」(automate-to-augment) 策略，而非「自动化替代」(automate-to-replace)
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 - [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](../ch03/011-cio.html)
 - [Ai Driven Layoffs Business Sense Cio](../ch03/011-cio.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/444-agentrun.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-driven-layoffs-arent-making-business-sense.md)

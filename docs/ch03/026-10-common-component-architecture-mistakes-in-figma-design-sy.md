@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐ | 7.1KB | `entities/component-architecture-mistakes-figma-zeroheight.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("common component architecture"))
-    过度工程与工程不足的钟摆效应
-    命名作为系统可发现性的基础
-    状态变体的完整覆盖为什么重要
-    设计-开发不对齐的根因
-    设计系统建设初期
-    规模化设计系统
-    可访问性不是后期添加
-```
-
 ## 核心要点
 1. **过度工程** — 组件试图处理过多变体，导致复杂性拖慢设计和开发
 2. **工程不足** — 组件太简单，随着用例出现需要频繁创建新组件
@@ -32,41 +17,6 @@ mindmap
 10. **将设计系统视为完成品** — 设计系统是活的产品，需要持续维护和演进
 
 ## 技术洞察
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 **设计系统组件架构的核心原则**：
 这篇文章是 Figma/设计系统领域的实践指南。核心洞察：
 平衡的艺术：
@@ -120,7 +70,7 @@ graph TB
 ## 相关实体
 
 - [10 Common Component Architecture Mistakes in Figma Design Systems](ch03/023-10-common-component-architecture-mistakes-in-figma-design-sy.html)
-- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/237-agentic.html)
+- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/648-agentic.html)
 - [What the design-to-code loop unlocks](../ch09/007-design-to-code.html)
 
 ---

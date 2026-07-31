@@ -10,10 +10,9 @@
 腾讯CDN LEGO项目  就是这样一个系统。100万行核心代码、300万行深度改造的第三方库，服务亿级用户，承担流量调度、协议解析、安全防护、缓存加速等关键职责。它面对的不是确定性的输入输出，而是不可控的客户端、不可控的源站、多协议、多配置、公网全量攻击面——这些  因素  维度的叠加不是简单相加，而是乘积式的复杂度爆炸，理论组合路径高达 13,824 × N 种。在这样的  复杂  的  系统里让 AI 写代码，一行失误就可能是一场全网事故。
 但正因为难，才值得做。 我们系统性地探索了 AI Coding 在高风险后端场景的落地路径：一方面，用 AI 零人工代码实现了一个 Rust 版 Nonstop 代理框架，以此探测 AI 编码的能力边界与行为特性；另一方面，在超大规模 C++ LEGO  项目中构建了 Harness Engineering 五层架构和多模型对抗式CR，为 AI 产出的每一行代码建立从生成到上线的完整质量屏障。本文不仅是一份将 AI Coding 引入  腾讯  CDN核心框架的实战记录，更是一条从"AI 能写"到"AI 写了敢用" 的完整工程路径。
 
-
 ## 相关实体
-- [Tencent Cdn Lego Harness Engineering](ch05/072-cdn-lego-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
+- [Tencent Cdn Lego Harness Engineering](ch05/073-cdn-lego-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/120-harness-engineering.html)
 - [Harness Engineering Reliable Long Term Agent](ch05/120-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](ch05/120-harness-engineering.html)
@@ -21,37 +20,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 AI Coding在后端系统中的核心挑战不是"能力不足"，而是"不知道自己不足"。LEGO项目的13,824×N维度组合空间，使得系统的行为空间远超任何AI模型的探索覆盖能力。更危险的是，AI具有**自信错误输出**的特质——它会用高度确信的语气输出错误结论，这在工程场景中是致命的：人类工程师在AI输出的自信结论面前，反而降低了本应保持的怀疑警觉。这种"AI自信降低人工审查意愿"的效应，是比幻觉本身更难对付的系统性风险。nonstop项目20天Rust零人工代码的实现证明了AI在系统级编程上的能力边界，但同时也暴露了13类典型问题，其中"不会说'我不知道'"被标记为最高风险。
 

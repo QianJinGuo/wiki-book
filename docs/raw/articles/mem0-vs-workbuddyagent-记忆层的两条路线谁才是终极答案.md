@@ -3,7 +3,7 @@ title: "Mem0 vs WorkBuddy：Agent 记忆层的两条路线，谁才是终极答�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/CyZv5BQyW3SSVIJ1U8Ba9A"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 56
 tags: [raw]
 sha256: "ea488becd0b52865612a1e14c7adebe57c6b4fc2c4f1e3d19cfa59e878bfa4b3"

@@ -5,7 +5,7 @@ title: "Harness 实践：将任何文字编辑成精美的文章"
 author: ConardLi
 publisher: code秘密花园
 date: 2026-06-18
-type: article
+type: raw-article
 ingested: 2026-06-18
 review_value: 8
 review_confidence: 9

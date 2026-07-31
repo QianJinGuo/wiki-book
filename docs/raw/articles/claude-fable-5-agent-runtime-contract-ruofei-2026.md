@@ -6,7 +6,7 @@ publisher: 架构师 (公众号)
 publish_time: 2026-06-14 22:46
 related_first_source: claude-fable-5-prompt-leak (VibeCoder 2026-06-12 安全工程视角)
 ingested: 2026-06-15
-type: raw
+type: raw-article
 sources: []
 review_value: 8
 review_confidence: 7

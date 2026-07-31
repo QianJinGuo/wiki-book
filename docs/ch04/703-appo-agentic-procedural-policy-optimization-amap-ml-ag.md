@@ -14,70 +14,11 @@
 > Interpreter: Hyman 的杂货铺 (微信公众号转载解读)
 > Date: 2026-06-16
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("APPO Agentic Procedural Policy"))
-    痛点 奖励只给终点 中间决策谁负责
-    APPO 核心 把「过程」当作信用分配的基本单位
-    Branching Score 熵 未来价值 过滤「假高熵」
-    过程级 Advantage 双组估计 未来感知缩放
-    实验 13 项基准 三类任务全覆盖
-    主结果 全面领先 深度搜索尤其亮眼
-      数学 知识推理 10 项基准
-      深度搜索 GAIA WebWalkerQA HLE Xbench
-      PassK 分析
-    消融与训练动态
-      组件消融 Qwen25-7B 知识推理 5 项平均
-      分支预算
-      训练曲线
-    与 ARPO 的本质差异
-```
-
 ## 一句话总结
 
 中科大与阿里高德联合提出 **APPO（Agentic Procedural Policy Optimization）**，用 **Branching Score** 把 Agent 强化学习的分支点从工具调用边界下沉到序列中的**细粒度决策点**，在 13 项基准上相对强基线平均提升近 4 分，**工具调用次数基本持平**。
 
 ## 痛点：奖励只给终点，中间决策谁负责？
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 LLM Agent 训练范式：
 - **RLVR**（Reinforcement Learning with Verifiable Rewards）：用可验证的最终答案做稀疏奖励
@@ -251,13 +192,13 @@ A = α · A_base + (1-α) · A_future
 
 ## 相关实体
 - [Agentic RL: Token-In Token-Out Done Right](ch04/724-agentic-rl-token-in-token-out-done-right.html)（相关：Token-In/Token-Out RL 训练框架，但 APPO 进一步细化到决策点）
-- [港中文 SLIM：动态技能生命周期管理](ch04/327-agentic-rl.html)（相关：另一条 Agentic RL 主线——技能生命周期管理）
-- [高德 Harness/SDD 体系](../ch05/111-ai-coding.html)（同公司高德不同主题：SDD 体系 vs Agentic RL）
+- [港中文 SLIM：动态技能生命周期管理](ch04/236-agentic-rl.html)（相关：另一条 Agentic RL 主线——技能生命周期管理）
+- [高德 Harness/SDD 体系](../ch05/112-ai-coding.html)（同公司高德不同主题：SDD 体系 vs Agentic RL）
 - [Harness Engineering 综述](../ch05/120-harness-engineering.html)（相关：APPO 是 Agentic RL 的"过程工程化"）
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)（相关：过程级 credit 与编排的"阶段化"同源）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
-- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/913-20.html)
+- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/926-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---

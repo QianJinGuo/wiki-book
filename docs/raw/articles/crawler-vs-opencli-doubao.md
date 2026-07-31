@@ -5,7 +5,7 @@ source: 豆包 (Doubao)
 ingested: 2026-04-25
 sha256: 86753266da9c394aab431fc473e53dbdd153729a73d41077c4b046585bddd7a1
 note: 内容由 AI 生成，不能完全保障真实
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: []

@@ -3,7 +3,7 @@ title: "Agent 如何管理其他 Agent：四种Sub Agent 模式"
 source_url: "https://mp.weixin.qq.com/s/OmdV7cucIVqwOVo7ZO_h1g"
 author: "ChallengeHub"
 published: "2026-05-07"
-type: raw
+type: raw-article
 tags: [agent, multi-agent, sub-agent, workflow, orchestration, pattern]
 created: "2026-05-20"
 sha256: a65a7342064f436c72db15ca43a07971fa02d27086c7c0d867df50836dad5209

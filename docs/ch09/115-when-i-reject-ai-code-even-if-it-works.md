@@ -6,60 +6,11 @@
 
 # When I reject AI code even if it works
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("When I reject AI code even if it"))
-    认知过载问题
-    五条拒绝标准
-    二次尝试的价值
-    从 Harness Engineering 视角看代码审查
-    认知科学视角
-    工程实践的演化
-```
-
 ## 摘要
 
 Vinicius Brasil 在本文中提出了一个在 AI 辅助编码时代日益重要的实践问题：即使 AI 生成的代码能够正常运行、通过 CI，开发者也应该基于工程原则系统性地拒绝某些代码。文章从个人实践出发，总结了五条拒绝 AI 代码的具体标准，并论证了人工审查在 AI 编码工作流中不可替代的地位。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 认知过载问题
 
@@ -117,7 +68,7 @@ AI 生成的代码往往同时增加了内在负荷（方案可能不是最优�
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — 代码审查作为 Agent 系统的控制层
 - [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) — AI 辅助编码的完整工作流
-- [Building Reliable Agentic AI Systems](../ch04/254-building-reliable-agentic-ai-systems.html) — 同样关注 AI 系统的工程可靠性
+- [Building Reliable Agentic AI Systems](../ch04/257-building-reliable-agentic-ai-systems.html) — 同样关注 AI 系统的工程可靠性
 - [Claude Code Dynamic Workflows](ch09/094-claude-code-dynamic-workflows.html) — AI 编码代理的实践模式
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/when-i-reject-ai-code-even-if-it-works-vinibrasil.md)

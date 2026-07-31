@@ -8,61 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cola DLM 字节跳动连续潜空间扩散语言模型"))
-    为什么Token 语义是一个暴论
-    Cola DLM 的生成模型分两段
-    关键创新一 Text VAElatent 不是 embedding
-    关键创新二 block-causal DiT Flow Matching
-```
-
 ## 摘要
 
 字节跳动 Seed 团队发布的 **Cola DLM（Continuous Latent Diffusion Language Model）** 是 2026 年 LLM 架构探索的标志性工作。其核心主张是「**Token ≠ 语义，表征（Representation）才是主角**」——把语言生成从"恢复 token"升级为"transport latent prior"。在 ~2B 参数、约 2000 EFLOPs 的严格对照实验中，Cola DLM 展现出比自回归模型和主流离散 DLM **更稳定的 scaling 趋势**。项目以"开源到底"方式释出论文、代码、模型权重和中文博客。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **核心主张**：Token 是语言系统的表层载体，不是语义本身；表征（representation）才是模型应学习的对象
 - **架构核心**：Latent Prior（生成"潜在语义"）+ Decoder（把语义翻译成文字）；diffusion / flow matching 全程在 latent 空间而非 token 空间
@@ -170,11 +120,11 @@ Cola DLM 的"语义部 + 文字部"分层，在多模态语境下有天然优势
 
 ## 相关实体
 
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](ch01/1073-deepseek-v4-flash-pro.html)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/1151-deepseek-v4.html)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元](ch01/1074-deepseek-v4-flash-pro.html)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/710-deepseek-v4.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/120-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Diffusion Model Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)

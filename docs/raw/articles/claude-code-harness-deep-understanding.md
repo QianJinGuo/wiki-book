@@ -8,7 +8,7 @@ review_confidence: 7
 review_recommendation: strong
 review_stars: 3
 tags: [claude-code, harness, source-analysis, agent]
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 sha256: e8e7a09897a6e171a054f5f1eee8c7c1e0bbe74a3b0af400163155fc31fac255

@@ -2,77 +2,25 @@
 
 ## Ch05.016 高德广告工程 Harness/SDD 体系演进：从\"氛围编程\"治理到 AI Native 全流程闭环
 
-> 📊 Level ⭐⭐ | 20.3KB | `entities/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md`
+> 📊 Level ⭐⭐ | 20.3KB | `entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md`
 
 # 告别"氛围编程"：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践
 > Source: https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ
 > Author: 王树新 (高德大模型应用平台)
 > Collected: 2026-05-07
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("高德广告工程 HarnessSDD 体系演进 从氛围编程治理到"))
-    一 识别 AI Coding 的三大核心问题
-    二 从出码率看提效背后的深层困境
-    三 解法 SDD 与 Harness
-      SDD 规范驱动开发
-      Harness 驾驭工程
-    四 Qoder 平台落地实践
-      知识库三层分层
-      Quest Spec 模式 Spec 生成
-      专家团模式 Experts Mode
-    从出码率到提效 指标幻觉的本质
-    SDD 的本质 从文档驱动到规范即源码
-    Harness Engineering 的核心 控制论而非优化论
-    熵管理 AI Coding 的不可逃避规律
-```
-
 ## 一、识别 AI Coding 的三大核心问题
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
+- [Pi Openclaw Coding Harness](../ch11/237-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/120-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 
-- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/094-ai.html)
+- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/095-ai.html)
 ## 二、从"出码率"看"提效"背后的深层困境
 
 **原因1：研发是全链路，不仅仅是写代码**
@@ -248,13 +196,13 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 
 ## 相关实体（更新）
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
+- [Pi Openclaw Coding Harness](../ch11/237-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/120-harness-engineering.html)
 - [K/S/T 知识底座](ch05/058-agent-harness.html)（相关：K/S/T 是知识用途分类，本文在工程层落地）
 - [Harness Engineering 综述](ch05/120-harness-engineering.html)（相关：三阶段 Prompt→Context→Harness）
-- [Spec as AIOS (高德 App 平台)](../ch01/1016-spec.html)（同团队同主题另一视角）
+- [Spec as AIOS (高德 App 平台)](../ch01/1034-spec.html)（同团队同主题另一视角）
 
 → [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 → [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)

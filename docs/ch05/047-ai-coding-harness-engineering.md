@@ -6,23 +6,11 @@
 
 # 从AI Coding到Harness Engineering的端到端工程开发实践
 
-本文系统性地阐述了团队从 AI Coding 效率瓶颈出发，逐步演进到 Harness Engineering 的完整工程路径。核心观点是：AI Coding 工具（如 [Qoder](../ch03/067-qoder-skill-ui-agent.html)、[Claude Code](../ch03/070-claude-code-agent.html)）虽然大幅提升了代码生成效率，但真正的变革来自**从"AI 帮忙写代码"到"系统性工程能力建设"的范式转换**。
+本文系统性地阐述了团队从 AI Coding 效率瓶颈出发，逐步演进到 Harness Engineering 的完整工程路径。核心观点是：AI Coding 工具（如 [Qoder](../ch03/066-qoder-skill-ui-agent.html)、[Claude Code](../ch03/069-claude-code-agent.html)）虽然大幅提升了代码生成效率，但真正的变革来自**从"AI 帮忙写代码"到"系统性工程能力建设"的范式转换**。
 
 文章提出了 Harness Engineering 实践的四层递进模型：从个人的 AI Coding 效率提升 → 团队协作规范建设 → 组织级知识沉淀 → 跨团队工程能力平台化。每一层都对应具体的工程实践，包括问题定义框架、任务分解方法、质量保障策略和持续改进机制。这些实践共同构成了一个从"体感能用"到"实际可用"的端到端工程体系。
 
 文章特别强调了**状态机设计**在 AI Agent 工程中的核心地位——通过明确的状态定义和转移规则，将不确定性降至可控范围。这与 [Harness Engineering](ch05/120-harness-engineering.html) 框架中的"可观测性"和"可控性"原则一脉相承。文章还提供了多个来自阿里技术团队的实战案例，展示了不同阶段的工程演进路径。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从AI Coding到Harness"))
-    从对话式 AI Coding到Harness
-    知识库工程 AI 生产 人工补充 AI 消费的闭环
-    设计原则体系 AI 负责认知 脚本负责执行
-    冲突治理与 Fork-Join 模式
-```
 
 ## 核心要点
 
@@ -33,37 +21,6 @@ mindmap
 - **DAG 编排 + Fork-Join 并行**：通过 task-planner 将任务拆解为 DAG 拓扑，同一层的任务用 worktree 隔离并发执行，最后统一 merge 收口。冲突治理策略：能事前隔离就隔离、必须共享就串行收口。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 从"对话式 AI Coding"到"Harness Engineering"的根本驱动力
 
@@ -138,7 +95,7 @@ graph TB
 - [Harness Engineering: Why It Matters](ch05/120-harness-engineering.html)
 - [Harness Engineering Survey](ch05/120-harness-engineering.html)
 - [Harness Engineering Self-Improvement](ch05/120-harness-engineering.html)
-- [Claude Code Agent Engineering](../ch03/070-claude-code-agent.html)
+- [Claude Code Agent Engineering](../ch03/069-claude-code-agent.html)
 - [Agent 从演示到生产](ch05/120-harness-engineering.html)
 - [应用宝活动 Harness Engineering](ch05/120-harness-engineering.html)
 

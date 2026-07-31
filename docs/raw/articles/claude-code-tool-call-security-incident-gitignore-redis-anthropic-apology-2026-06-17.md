@@ -6,7 +6,7 @@ author: "Web3天空"
 published: "2026-06-17"
 ingested: "2026-06-17"
 sha256: "da2f969257f5fb63d5a6970b38de28d025f1c207804d91de6cd04963bdc218d7"
-type: raw
+type: raw-article
 tags:
   - claude-code
   - anthropic

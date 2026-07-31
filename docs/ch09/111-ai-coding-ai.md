@@ -8,62 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-coding-入门指南-如何更好地让ai真正帮你干活.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Coding 入门指南 如何更好地让 AI 真正帮你干活"))
-    AI 替代了什么 没替代什么
-    三种编程范式
-    Harness Engineering 的最小实践维度
-    Rules vs Skills 的本质区别
-    上下文是 AI Coding 的核心战场
-    反例分析的价值
-    幻觉管理的重启但不归零策略
-    Rules 的六个陷阱
-```
-
 ## 摘要
 
 这是网盘主端团队编写的 AI Coding 入门指南，面向初次接触 AI 辅助编程的开发者。文章系统性地梳理了 AI Coding 的概念体系、工具层配置、标准开发流程和实战技巧，核心论点是：**AI Coding 的成败取决于上下文构建质量，而非模型能力**。文章将 Vibe Coding、Spec Coding、Rules、Skills 等概念统一到"上下文工程"这个核心框架下，提出了 Harness Engineering 的最小实践维度。全文约 9500 字，覆盖从认知到实战的完整链路。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. AI 替代了什么、没替代什么
 

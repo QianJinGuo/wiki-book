@@ -1,6 +1,6 @@
 ---
 title: "context window management comparison"
-type: raw
+type: raw-article
 source_url: https://mp.weixin.qq.com/s/ajurJ3Vayd9qLIwh9M3Fnw
 ingested: 2026-04-27
 sha256: d6eacd5d03398cce4dd3066f89ecc5dd01a97343d9de0b901595695d1c169c7f

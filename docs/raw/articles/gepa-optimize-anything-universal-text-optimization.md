@@ -1,7 +1,7 @@
 ---
 tags: [wechat, article, claude, openai]
 title: "gepa optimize anything universal text optimization"
-type: raw
+type: raw-article
 url: https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/
 ingested: 2026-05-08
 sha256: 9f960c14545369cea3a9a27790f56bf56188b513782d049b8af3c4ffaa03775c

@@ -2,7 +2,7 @@
 title: "Review Agent：后台复盘 Agent 如何判断什么值得保存"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: 微信公众平台
 author: winty
 source_url: https://mp.weixin.qq.com/s/WdbZVxbpXT6W-oguTef_Iw

@@ -1,6 +1,6 @@
 ---
 title: "OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确"
-type: raw
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/JLVMwY7Y0bjnDB17x1mdBg
 fetcher: curl_direct

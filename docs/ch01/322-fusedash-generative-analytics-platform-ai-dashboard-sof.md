@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/fusedash-generative-analytics-platform.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Fusedash - Generative Analytics"))
-    产品定位与核心价值
-    核心功能模块解析
-      数据连接层
-      仪表板生成引擎
-      AI 对话层
-    场景化用例分析
-      电商 零售
-      SaaS 产品
-      代理 客户报告
-    技术架构关键特征
-    切入角度与市场空白
-    局限性与适用边界
-    竞争态势与差异化方向
-    适合引入 Fusedash 的团队特征
-```
-
 ## 核心要点
 
 - AI-driven self-generating dashboard platform
@@ -37,35 +15,6 @@ mindmap
 Fusedash 是一个生成式分析平台，通过自然语言描述直接生成可交互的业务仪表板。它将传统 BI 工具需要数小时手动配置的工作压缩到分钟级别完成。
 
 ## 产品定位与核心价值
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 Fusedash 将自己定位为「生成式分析平台」，而非传统意义的 BI 软件或数据可视化工具。核心差异在于：**仪表板不是被"建造"出来的，而是被"描述"出来的**。用户无需拖拽组件、无需设定布局、无需手动绑定数据字段，只需用自然语言说明需求，平台即可生成包含 KPI 卡片、筛选器、下钻视图的完整交互界面。
 
@@ -184,10 +133,10 @@ MCP 协议支持是一个值得关注的长期差异化方向。随着 AI Agent 
 
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
-- [Langgraph State Machine Under The Hood](../ch04/201-langgraph.html)
-- [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/1151-deepseek-v4.html)
-- [Minimax Agent Team Mavis Owner Worker Verifier](ch01/1303-owner-worker-verifier.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/989-anthropic.html)
+- [Langgraph State Machine Under The Hood](../ch04/202-langgraph.html)
+- [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/710-deepseek-v4.html)
+- [Minimax Agent Team Mavis Owner Worker Verifier](ch01/1308-owner-worker-verifier.html)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/1004-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fusedash-generative-analytics-platform.md)
 

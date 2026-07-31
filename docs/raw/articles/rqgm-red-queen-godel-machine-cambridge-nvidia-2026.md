@@ -6,7 +6,7 @@ institution: "Cambridge + NVIDIA"
 published: 2026-06-24
 ingested: 2026-06-28
 language: en
-type: raw
+type: raw-article
 sha256: "be930c4a8c636477172d691a87b56e0e9e52816a591654e8ef4f107e142445c1"
 ---
 

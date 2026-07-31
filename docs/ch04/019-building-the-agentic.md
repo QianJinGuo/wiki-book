@@ -8,21 +8,6 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building the agentic"))
-    Gemini 35 Flash 面向 Agentic 工作流的速度优化
-    Antigravity 平台 Google 的 Agent
-    Managed Agents in Gemini API 降低
-    AI Studio 移动端 Android 集成 Vibe
-    对于个人开发者
-    对于企业技术负责人
-    对于 AIML 研究者
-```
-
 ## 核心要点
 
 - Google 在 I/O 2026 正式推出 Gemini 3.5 Flash，性能超越 Gemini 3.1 Pro 且速度提升 4 倍
@@ -32,37 +17,6 @@ mindmap
 - 2 百万美元的 Build with Gemini XPRIZE Hackathon 正式启动 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 1. Gemini 3.5 Flash：面向 Agentic 工作流的速度优化
 
@@ -114,11 +68,11 @@ Google AI Studio 新增移动端应用和原生 Android 支持，标志着"vibe 
 3. **隔离持久化环境的技术实现**：Managed Agents 的 Linux 隔离环境设计是安全 Agent 执行的有趣参考
 
 ## 相关实体
-- [Google Io 2026 Agentic Gemini Era](ch04/237-agentic.html)
+- [Google Io 2026 Agentic Gemini Era](ch04/648-agentic.html)
 - [Building Is Just The Beginning Introducing Discove](../ch12/089-building-is-just-the-beginning-introducing-discoverability.html)
 - [The Agentic Trust Management Platform Drata](ch04/022-the-agentic-trust-management-platform-drata.html)
-- [Nvidia Agentic Systems Extreme Co Design](ch04/237-agentic.html)
-- [Google Debuts Gemini Focused Updates At Io 2026](../ch01/913-20.html)
+- [Nvidia Agentic Systems Extreme Co Design](ch04/648-agentic.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](../ch01/926-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 

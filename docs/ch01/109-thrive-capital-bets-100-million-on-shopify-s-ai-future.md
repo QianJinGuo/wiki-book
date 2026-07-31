@@ -2,60 +2,17 @@
 
 ## Ch01.109 Thrive Capital Bets $100 Million on Shopify's AI Future
 
-> 📊 Level ⭐ | 5.5KB | `entities/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thrive Capital Bets 100 Million"))
-    Thrive Capital 的投资逻辑
-    Shopify AI 战略的核心数据
-    Agentic Shopping 从工具到生态
-    投资风险与不确定性
-    对创业者的启示
-    对投资人的启示
-```
+> 📊 Level ⭐ | 5.5KB | `entities/thrive-capital-bets-100-million-on-shopifys-ai-future.md`
 
 ## 核心要点
 - 来源：https://www.pymnts.com/news/ecommerce/2026/thrive-capital-bets-100-million-on-shopifys-ai-future/
 - 评分：v=7 c=8
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
-- [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
+- [Amazon Turns Alexa Into Its Next Storefront](ch01/066-amazon-turns-alexa-into-its-next-storefront.html)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/098-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/037-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
 

@@ -2,7 +2,7 @@
 source_url: http://www.originhq.com/research/mxc-execution-containers-internals
 ingested: 2026-06-09
 sha256: 2c697237bb4651caafdf5c90c6e5403d516fceea0f59c673efc586d2d3aad70a
-type: article
+type: raw-article
 author: Origin
 title: "MXC Internals: How Microsoft's eXecution Containers Actually Isolate Agent Code"
 created: 2026-06-09

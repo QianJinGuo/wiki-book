@@ -1,7 +1,7 @@
 ---
 title: "深入理解 AI Agent 时代的驾驭工程：Harness Engineering"
 created: 2026-07-01
-type: source
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/bRz-1CrKRvQwzkeNzij-tQ"
 sha256: "b1103d9c9326fcc414b4d32580bd560237fa60fbcf8a7afe4e945a3f24a9339e"
 tags: [harness-engineering, context-engineering, ai-agent, coding-agent, feedback-loop]

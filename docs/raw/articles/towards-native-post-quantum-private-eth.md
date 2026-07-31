@@ -2,7 +2,7 @@
 title: "Towards Native Post-Quantum Private ETH - Privacy - Ethereum Research"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 5e512ec4623f74488133f30505c6a7b994e3fb2bdd393ed54b9fbd8ade504c58
 ---

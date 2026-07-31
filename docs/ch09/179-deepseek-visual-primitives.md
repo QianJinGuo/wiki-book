@@ -4,74 +4,10 @@
 
 > 📊 Level ⭐⭐⭐ | 10.0KB | `entities/deepseek-visual-primitives.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek Visual Primitives"))
-    核心概念 Reference Gap
-      Perception Gap vs Reference Gap
-      看见 vs 看清楚 vs 说清楚指哪个
-      Point 为什么比框更适合拓扑推理
-    关键技术数据
-      压缩效率
-      压缩链路 三步
-      拓扑推理领先幅度
-    阶段训练管线
-      专家化设计
-      三层 RL 奖励
-      OPD 蒸馏
-    数据设计亮点
-      Anti-cheap 思维
-      多语言零-shot
-    局限
-    对 coding agent 的意义
-    Reference Gap 是比 Perception Gap
-    视觉原语将 grounding 从验证工具升级为思考媒介
-```
-
 ## 核心定位
 DeepSeek 2026-04-30 发布的视觉原语论文。核心创新：让模型在思考过程中输出坐标（bounding box / point）作为"用手指着图说话"的媒介，把 grounding 从 post-hoc verification 变成 intrinsic medium of thought。 ^["raw/articles/deepseek-visual-primitives-thinking"]
 
 ## 核心概念：Reference Gap
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 ### Perception Gap vs Reference Gap
 | 术语 | 含义 | 主流解决方案 |
 |------|------|------------|
@@ -185,7 +121,7 @@ DeepSeek 目前无法自主判断"是否需要用视觉原语"，必须由外部
 > 原文链接：https://mp.weixin.qq.com/s/tz7Zdbv8KhHtG8fCGqQ5LQ
 
 ## 相关实体
-- [DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」](../ch01/1091-deepseek.html)
+- [DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」](../ch01/570-deepseek.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

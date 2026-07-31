@@ -4,62 +4,12 @@
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/agent-production-harness-engineering.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent生产级Harness工程指南"))
-    行业失败率
-    Demo型 vs 生产型代码库
-      判别法 10分钟读代码可辨
-    Claude Code 退化事故复盘 2026年4月
-    四支柱审查框架
-      支柱一 构建工具契约约束模型
-      支柱二 记忆可信隔离可追溯
-      支柱三 运行框架循环即基础设施
-    优先级建议
-    推荐阅读体系
-    相关页面
-```
-
 ## 核心定位
 **工程赤字（Engineering Deficit）**：大多数 Agent 项目失败，不是因为模型能力不够，而是模型周围的工程（Harness）不够扎实。
 > 边界要建，输入要校验，状态要隔离，循环要打点，暴露面要测试。
 ---
 
 ## 行业失败率
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 数据 | 来源 |
 |------|------|
 | 88% 的 Agent 项目没有进入生产环境 | 行业数据 |
@@ -174,14 +124,14 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 → [Cursor Harness 复盘](../ch01/265-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
 → [Claude Code 提示词体系](../ch09/061-claude-code-prompt.html)
 → [Agent Harness 上下文管理](ch05/058-agent-harness.html)
-→ [Agent Memory 架构](../ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
+→ [Agent Memory 架构](../ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/120-harness-engineering.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/120-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch05/120-harness-engineering.html)
 
-- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/976-claude.html)
+- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/1022-claude.html)
 - [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.html)
 
 ## 深度分析

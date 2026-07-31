@@ -5,7 +5,7 @@ source: "Hyman的杂货铺（微信公众号）"
 source_author: "Hyman"
 ingested: 2026-07-09
 sha256: "41b2039681e483c5366943fbf030420825dd9457edda8521e8f709cda75826f1"
-type: raw-source
+type: raw-article
 status: ingested
 review_value: 8
 review_confidence: 8

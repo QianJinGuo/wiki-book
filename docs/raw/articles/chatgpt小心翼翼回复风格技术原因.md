@@ -1,6 +1,6 @@
 ---
 title: "破案了！为啥ChatGPT老想着「稳稳地接住你」"
-type: source
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/iiCIgpU-uHSuvjA0ihbk_A
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

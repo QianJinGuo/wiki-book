@@ -5,7 +5,7 @@ source_site: "无糖AI"
 author: "无糖ai（整理自 LangChain Labs Viv 演讲）"
 ingested: "2026-07-08"
 sha256: "220f188fd62c537d3c16e8fd7c2c5602042b7cf43f5c48285682ccead1b6b343"
-type: raw
+type: raw-article
 tags:
   - agent-improvement
   - trace

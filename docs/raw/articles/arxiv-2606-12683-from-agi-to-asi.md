@@ -2,7 +2,7 @@
 source: newsletter
 source_url: https://arxiv.org/abs/2606.12683
 ingested: 2026-06-17
-type: article
+type: raw-article
 sha256: 2bbf485b8d05c3f8686027598f1ef2e721685ca06cd8df4aedbac1e2bd0303eb
 feed_name: arXiv
 source_published: 2026-06-17

@@ -10,25 +10,6 @@
 
 > **来源**：CrewAI Blog（blog.crewai.com），发布于 2026-04-02，原文链接：[You're building agent security in the wrong order](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/youre-building-agent-security-in-the-wrong-order.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 安全三步法 先 Harness 再"))
-    现象 所有人都在解第 3 步
-    错位序列 Fortune 500 的典型失败
-    正确序列 三步依次
-      第 1 步 Harness 基础
-      第 2 步 Governance 架构而非合规 checkbox
-      第 3 步 Identity and Auth zero
-    为什么大家把顺序搞反了
-    给客户的建议 来自 CrewAI
-    与 wiki 现有实体的差异化
-    实践启示 5 条可执行项
-    与相关 entity 的关系
-```
-
 ## 现象：所有人都在解第 3 步
 
 2 周内 Agent 安全市场爆发：
@@ -39,37 +20,6 @@ mindmap
 > "I respect the work. But they're all solving step three." 
 
 ## 错位序列：Fortune 500 的典型失败
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 **典型剧本**（CrewAI 2 年观察 + 数 B 执行量）：
 
@@ -161,8 +111,8 @@ graph TB
 | **互补关系** | 任何 secure agent 前必读 | 本实体执行后的技术参考 |
 
 **关键互补点**：
-- `[Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)` — MCP supply chain 攻击模型（**怎么攻击**）
-- `[Secure Ai Agents Policy Lambda Interceptors Aws](ch04/298-ai-agent.html)` — Policy + Lambda 实现 runtime interception（**怎么防御**）
+- `[Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)` — MCP supply chain 攻击模型（**怎么攻击**）
+- `[Secure Ai Agents Policy Lambda Interceptors Aws](ch04/030-ai-agent.html)` — Policy + Lambda 实现 runtime interception（**怎么防御**）
 - 本实体（**什么时候**做）— security 落地的**序列决策**问题
 
 ## 实践启示（5 条可执行项）
@@ -177,7 +127,7 @@ graph TB
 
 - `[Agent Development Crawl Walk Run Crewai Iterative](../ch03/035-agent.html)` — 同作者上一篇（CrewAI 迭代方法论）：先做一件事、上生产、积累数据
 - `[Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html)` — Harness Engineering 综述：harness 是什么、为什么重要
-- `[Ai Agents Security Survey Attack Defense](ch04/298-ai-agent.html)` — Agent 安全 attack/defense survey（不同问题域）
+- `[Ai Agents Security Survey Attack Defense](ch04/030-ai-agent.html)` — Agent 安全 attack/defense survey（不同问题域）
 
 ## 深度分析
 

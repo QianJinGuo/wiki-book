@@ -1,6 +1,6 @@
 ---
 title: Automating Confidential Containers (CoCo) infrastructure with Kyverno
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.cncf.io/blog/2026/05/19/automating-confidential-containers-coco-infrastructure-with-kyverno/
 tags: [cncf, kubernetes]

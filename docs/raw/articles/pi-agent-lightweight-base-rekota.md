@@ -3,7 +3,7 @@ title: "个人开发 Agent，为什么我建议先看 Pi？"
 source_url: "https://www.xiaohongshu.com/explore/6a12a463000000003502ff9e"
 created: 2026-07-02
 updated: 2026-07-02
-type: article
+type: raw-article
 tags: [xiaohongshu, pi, agent, open-source, gondolin, security]
 ingested: 2026-07-02
 sha256: c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4

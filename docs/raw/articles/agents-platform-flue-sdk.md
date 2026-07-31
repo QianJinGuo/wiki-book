@@ -2,7 +2,7 @@
 title: "Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue"
 source_url: "https://blog.cloudflare.com/agents-platform-flue-sdk/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 2850d3f6ecd744bb5d53d198bad0a4823981e1917db5f44e0df0fd162bef66d4
 ---

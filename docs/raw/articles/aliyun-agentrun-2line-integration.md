@@ -1,7 +1,7 @@
 ---
 title: "用两行代码将 AgentRun 集成到你的应用"
 sha256: bd93c6f41f9a9e7b41531675c8f4866540fb41519a37b2dfab48db64ce066b84
-type: raw
+type: raw-article
 created: 2026-05-14
 updated: 2026-05-14
 source_url: "https://mp.weixin.qq.com/s/139AsxhoOacnO84DkMN_ow"

@@ -2,7 +2,7 @@
 title: "下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化"
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 platform: 詹生Talk
 author: 詹老师
 source_url: https://mp.weixin.qq.com/s/759TfOdXch5zWrT4Yo42xA

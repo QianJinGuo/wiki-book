@@ -10,7 +10,7 @@ tags:
   - harness-engineering
   - operator
   - wechat
-type: article
+type: raw-article
 sha256: d6ceb1e59e2359d0270b1e8b7d546e942f3325f6a7c2480be048363b64f49812
 ---
 

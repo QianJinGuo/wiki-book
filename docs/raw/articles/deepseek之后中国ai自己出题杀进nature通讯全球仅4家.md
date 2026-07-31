@@ -3,7 +3,7 @@ title: "DeepSeek之后，中国AI「自己出题」杀进Nature通讯！全球�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/AzFzI0Bf7n1yVdMJYGheCg"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 49
 tags: [raw]
 sha256: "9ddb85b44957abb5f673175585e5d728d5852870ed21b2e5d5b170a38abd8f1d"

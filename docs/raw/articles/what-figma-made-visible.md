@@ -4,7 +4,7 @@ source_url: "https://blog.murphytrueman.com/what-figma-made-visible/"
 ingested: 2026-06-19
 sha256: 2843fff215aa4a21
 created: 2026-06-19
-type: article
+type: raw-article
 ---
 
 # What Figma made visible

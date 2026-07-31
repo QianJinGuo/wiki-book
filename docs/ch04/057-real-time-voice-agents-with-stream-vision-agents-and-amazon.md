@@ -6,22 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Real-time voice agents with"))
-    背景 构建语音 Agent 的挑战
-    技术架构
-      核心组件
-      账户边界划分
-      端到端媒体流
-    场景一 无屏幕低注意力环境语音接口
-    场景二 大规模Inbound电话支持
-    技术优势总结
-```
-
 ## 核心要点
 - Stream Vision Agents + Amazon Nova 2 Sonic + Stream Edge Network 构建生产级实时语音 Agent
 - Nova 2 Sonic 是 unified speech-to-speech 模型，单次网络往返完成语音理解与生成，避免传统 ASR→LLM→TTS 三段式的延迟瓶颈 
@@ -30,43 +14,6 @@ mindmap
 - 支持 Function Calling 工具调用，可在对话中查询数据库、调用 API、触发工作流 
 
 ## 背景：构建语音 Agent 的挑战
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 构建生产级语音 Agent 面临多重工程挑战：实时音频流基础设施管理、语音识别、LLM 集成、TTS 服务各有独立的延迟特征和故障模式。整个语音交互 pipeline 需在几百毫秒内完成才能让用户感觉自然，任何延迟都会打断对话节奏。
 传统架构将语音交互拆解为多个独立服务串联：麦克风采集 → STT 语音转文字 → LLM 处理语义 → TTS 文字转语音 → 播放。每个环节至少一次网络往返，累积延迟可达数秒。更糟糕的是，团队在重连逻辑、WebRTC 连接管理、边界情况处理上花费的时间往往超过实际 AI 能力开发。
 此外，生产语音应用还需处理网络不稳定、浏览器兼容性、会话超时、服务不可用时的优雅降级等现实问题。
@@ -193,26 +140,26 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [Amazon Nova Lite Fine-Tuning](../ch11/306-amazon-nova.html) — Nova 视觉模型微调实践
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/306-amazon-nova.html) — Nova 多模态嵌入能力
 - [Nemotron 3 Multi-Agent System](../ch03/035-agent.html) — NVIDIA 多Agent系统参考
-- [Amazon Bedrock AgentCore Memory](ch04/561-amazon-bedrock-agentcore.html) — Bedrock Agent 记忆哲学
+- [Amazon Bedrock AgentCore Memory](ch04/566-amazon-bedrock-agentcore.html) — Bedrock Agent 记忆哲学
 - [Strands Agents SDK](ch04/697-strands-agents.html) — 确定性数据分析实践
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/300-bedrock.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/561-amazon-bedrock-agentcore.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/235-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: 背景与架构概览](../ch11/235-openclaw.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/566-amazon-bedrock-agentcore.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/272-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/237-openclaw.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/177-apache-doris-mcp-server-quick-suite-ai.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/272-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: 背景与架构概览](../ch11/237-openclaw.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/235-openclaw.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/270-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/237-openclaw.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/272-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/295-amazon-bedrock.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/561-amazon-bedrock-agentcore.html)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/561-amazon-bedrock-agentcore.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/566-amazon-bedrock-agentcore.html)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/566-amazon-bedrock-agentcore.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11/009-aws-bedrock.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/054-prowler-genai.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11/058-amazon-bedrock-claude-prompt-cache.html)

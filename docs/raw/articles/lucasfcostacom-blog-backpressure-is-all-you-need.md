@@ -4,7 +4,7 @@ source_url: https://www.lucasfcosta.com/blog/backpressure-is-all-you-need
 source: newsletter
 created: 2026-06-01
 updated: 2026-06-01
-type: article
+type: raw-article
 tags: [newsletter, article]
 sha256: 68a5f82334ec1dea
 ---

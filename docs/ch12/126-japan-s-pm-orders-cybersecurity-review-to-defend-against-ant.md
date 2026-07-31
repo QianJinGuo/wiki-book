@@ -6,44 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
 
-
 ## Summary
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
@@ -66,13 +29,13 @@ graph TB
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
 
 ## 相关实体
-- [Anthropic PM 的 Agentic 工作流](../ch04/477-anthropic-pm-agentic.html)
+- [Anthropic PM 的 Agentic 工作流](../ch04/483-anthropic-pm-agentic.html)
 - [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](ch12/109-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
-- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/989-anthropic.html)
-- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/989-anthropic.html)
-- [dario amodei 2026 policy on the ai exponential](../ch05/094-ai.html)
+- [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](../ch01/1004-anthropic.html)
+- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](../ch01/1004-anthropic.html)
+- [dario amodei 2026 policy on the ai exponential](../ch05/095-ai.html)
 
 ---

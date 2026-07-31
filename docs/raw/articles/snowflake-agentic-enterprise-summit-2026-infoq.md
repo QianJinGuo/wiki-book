@@ -6,7 +6,7 @@ author: "王玮"
 pub_date: "2026-06-12"
 ingested: "2026-06-12"
 sha256: "798fdc4ae077a6c6aa65b638b533ea197b5f8f710ea9ffff3649f055ffd5dcc3"
-type: source
+type: raw-article
 tags: ["snowflake", "agentic-enterprise", "agent-identity", "data-movement-policy", "cowork", "cortex-code", "agentic-search", "datastream", "summit-2026", "trust"]
 ---
 

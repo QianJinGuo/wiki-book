@@ -3,7 +3,7 @@ title: "Mystery Microsoft bug leaker keeps the zero-days coming"
 source_url: "microsoft-zero-days-researcher-disgruntled"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: 02cb14da81100e13d9f07e6824da87d1a89aa55135e7ae16bd1bec027b458092
 ---
 ---

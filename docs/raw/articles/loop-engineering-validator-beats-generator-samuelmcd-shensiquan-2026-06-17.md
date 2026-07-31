@@ -6,7 +6,7 @@ author: "深思SenseAI 翻译/评论 Samuel McDonnell (@samueljmcd)"
 published: "2026-06-17"
 ingested: "2026-06-17"
 sha256: "ea62419289c67bcde01bda95d56327229b2a86d96a8f510d54ab12513b42502a"
-type: raw
+type: raw-article
 tags:
   - loop-engineering
   - verifier

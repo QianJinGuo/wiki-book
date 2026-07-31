@@ -1,6 +1,6 @@
 ---
 title: Securing AI Agents and Machine Identities
-type: raw
+type: raw-article
 tags: [1password, ai-security, iam, authentication]
 source: newsletter
 source_url: https://1password.com/webinars/solving-the-access-trust-gap-in-the-age-of-ai-and-automation

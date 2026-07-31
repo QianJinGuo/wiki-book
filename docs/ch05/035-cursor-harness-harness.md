@@ -6,21 +6,6 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cursor 复盘 Harness 模型决定能力上限"))
-    Harness 作为持续运营的软件产品
-    上下文管理范式转移 从静态塞入到动态拉取
-    模型变强后的「护栏拆除」问题
-    工具错误的上下文污染效应
-    建立 Harness 持续运营闭环
-    多模型支持的真实复杂度
-    Keep Rate 作为真实质量代理指标
-```
-
 ## 核心要点
 - **问题核心**：同一个模型放进不同 Coding Agent，体感差异巨大——核心在于 Harness 而非模型本身
 - **核心洞察**：模型决定能力上限，Harness 决定生产下限；Harness 是模型和真实交付之间那套运行系统
@@ -31,37 +16,6 @@ mindmap
 - **多 Agent 方向**：重点不在角色数量，而在 Harness 能不能调度谁、怎么描述任务、怎么合并结果
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### Harness 作为持续运营的软件产品
 Cursor 复盘最核心的洞察是把 **Harness 不当成「设计完就稳定存在」的架构层，而是当成持续运行、持续实验、持续修正的软件产品**。 每次调整都该有假设、有实验、有指标、有观测、有回滚。这个表述听着不新鲜，但放在 Agent 语境里其实挺扎眼——很多团队改 Prompt、加工具、换模型，确实还没有走到这套流程。
 这带来一个根本性的视角转变：**Agent 质量不能只看模型分数，更准确的发布单元是「模型 + Harness」的组合**。 当这些组件都开始承重，团队怎么持续运营它，才是真正的工程挑战。
@@ -121,32 +75,32 @@ Cursor 另外看了两个代理指标：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
 ## 相关实体
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/096-hermes-agent.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/009-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch05/009-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/003-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/444-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/120-harness-engineering.html)
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/120-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/235-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/237-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch05/120-harness-engineering.html)
 
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/035-agent.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/989-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1004-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](ch05/009-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [吴恩达：AI 将最先杀死前端](ch05/094-ai.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/397-agent-skills.html)
-- [天猫新品营销技术团队AI编码实战指南（上）](ch05/094-ai.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [吴恩达：AI 将最先杀死前端](ch05/095-ai.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/401-agent-skills.html)
+- [天猫新品营销技术团队AI编码实战指南（上）](ch05/095-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch05/058-agent-harness.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/989-anthropic.html)
-- [你写的 Skill，及格了吗？](../ch04/271-skill.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/237-agentic.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/976-claude.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1004-anthropic.html)
+- [你写的 Skill，及格了吗？](../ch04/273-skill.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/648-agentic.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1022-claude.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/710-claude-managed-agents.html)
 
 ---

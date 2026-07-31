@@ -8,24 +8,6 @@
 
 URL: https://claude.com/blog/running-an-ai-native-engineering-org
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Running an AI-native engineering org"))
-    AI-native 工程组织 从用 AI到围绕 AI 组织
-    工程经理的新角色 AI 产出的质量守门人
-    代码审查的规模化瓶颈
-    引入 AI 审查作为第一道防线
-    重新定义工程师角色
-    投资审查基础设施
-    The processes that quietly
-      Planning shift roadmaps to just
-      Context gathering ask Claude not
-      Code review trust but verify
-```
-
 ## 深度分析
 
 ### 1. AI-native 工程组织：从"用 AI"到"围绕 AI 组织"
@@ -39,41 +21,6 @@ AI 可以在 1 小时内生成相当于 1 周的代码量，但代码审查仍�
 
 ## 实践启示
 
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
-
 ### 1. 引入 AI 审查作为第一道防线
 AI 生成代码 → AI 自动审查 → 人类重点审查——三层审查模型解决规模化问题。
 
@@ -84,7 +31,7 @@ AI 生成代码 → AI 自动审查 → 人类重点审查——三层审查模�
 审查工具（diff 可视化、AI 审查助手、自动测试）比写代码工具更重要。
 
 ## 相关实体
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch01/036-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 - [Products Are Out Brains Are In](ch01/135-products-are-out-brains-are-in.html)
 - Investing In Stitch

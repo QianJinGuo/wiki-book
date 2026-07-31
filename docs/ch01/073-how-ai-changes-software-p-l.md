@@ -6,57 +6,13 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gptomics-com-how-ai-changes-software-p-l.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How AI changes software PL"))
-    传统软件 vs AI 软件 两种 PL 模式的根本分歧
-    为什么 AI 功能缺乏规模效益
-    竞争动态 软件护城河的侵蚀
-    套利机会的框架
-    对 SaaS 公司和产品经理
-    对创业者和投资人
-    对企业战略和运营
-```
-
 ## 摘要
 （本页为 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gptomics-com-how-ai-changes-software-p-l.md) 的摘要合成页）
 GPTomics 文章揭示了一个关键洞察：AI 能力正在从根本上重构软件的成本结构。传统 SaaS 的边际成本递减模式（COGS 随用户增加而下降）将被打破——AI 个性化推理的成本与用户数成线性关系，导致 AI-heavy 产品的利润率趋近于消费品公司，而非传统软件公司。
 
 ## 相关概念
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 ## 相关实体
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/095-ai.html)
 
 ## 深度分析
 ### 传统软件 vs AI 软件：两种 P&L 模式的根本分歧

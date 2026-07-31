@@ -6,65 +6,11 @@
 
 # OMEGA: 面向多机器人协作的具身Agent Harness
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OMEGA 面向多机器人协作的具身Agent Harness"))
-    从 Software Agent Orchestration 到
-    三层系统架构的设计理性
-    与现有方案的对比定位
-    -07-22 Supplementary Harness VLA
-```
-
 ## 摘要
 
 OMEGA（Orchestration system for Multiple Embodied Generalist Agents）是一套面向真实世界多机器人协作的 embodied agent harness，由中国科学技术大学张举勇教授团队联合上海人工智能实验室共同完成。 它将 LLM 驱动的 coding agent 协作模式（任务拆解→子任务分配→并行执行→结果汇总）引入机器人领域，为多机器人团队提供一层可执行的协作系统，覆盖任务感知与拆解、动态任务分配、并行执行控制、状态同步与等待协调、异常检测与重调度、以及技能沉淀与复用六大关键能力层。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 
 - **协作系统而非动作模型**：OMEGA 不是再做一个机器人动作模型，而是为多机器人团队提供一层可执行的协作系统，解决"多台机器人的动作如何组成一次协作"的问题，而非"一台机器人的感知如何变成一次动作"。
 - **Harness 架构类比**：与 Claude Code/Codex 等 coding agent 的协作模式类似——主 agent 将任务拆成子任务分给 subagent，OMEGA 将类似的系统能力带到机器人协作中，把工程师脑中的调度经验变成系统中可执行的流程。
@@ -144,10 +90,10 @@ OMEGA 的设计理念对通用 harness engineering 有重要借鉴意义：它�
 
 ## 相关实体
 
-- [Agent Orchestration Multi Agent Systems](../ch04/518-agent-orchestration.html) — 多智能体编排的基础架构模式，OMEGA 将其扩展到物理机器人领域
+- [Agent Orchestration Multi Agent Systems](../ch04/523-agent-orchestration.html) — 多智能体编排的基础架构模式，OMEGA 将其扩展到物理机器人领域
 - [Coze 3 Multimagent Team Orchestration Wangheige](../ch03/035-agent.html) — Coze 的团队级编排设计，提供软件侧的参考对比
 - [Agent Harness Context Management Working Set](ch05/058-agent-harness.html) — harness 工程中的 context management，与 OMEGA 的分层设计有相似的设计哲学
-- [阿里云刚发布的 Agentloop 是什么](../ch04/300-agentloop.html) — 阿里云的 AgentLoop 编排方案，为软件侧的多 agent 协作提供另一种范式参考
+- [阿里云刚发布的 Agentloop 是什么](../ch04/302-agentloop.html) — 阿里云的 AgentLoop 编排方案，为软件侧的多 agent 协作提供另一种范式参考
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/omega-orchestration-multiple-embodied-generalist-agents-ustc-2026.md)
 

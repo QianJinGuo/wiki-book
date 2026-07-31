@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 19.6KB | `entities/ai-native-rd-org-design.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Native 时代研发组织何去何从"))
-    组织的本质 2000年协调问题
-    旧定律都是人的协作物理学
-    AI 不是新工具 是新协作主体
-    双层架构 Harness Hive Mind
-    范式转换 Org Chart Execution Graph
-    人的双重角色
-    Harness Engineering
-    管理塌缩 不是消失
-```
-
 ## 核心洞察
 **内部访谈数据**（4位深度使用AI的工程师）：
 
@@ -30,37 +14,6 @@ mindmap
 **最值得关注的不是数字，是节奏。**
 
 ## 组织的本质：2000年协调问题
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 组织的演化核心在解决同一件事：**信息怎么路由**。
 
 - 罗马军团：8→80→480→5000人嵌套结构，信息路由协议化
@@ -272,9 +225,9 @@ AI Native 时代，artifact 可见性大幅提升，但"被看见"（被认可�
 
 ## 相关实体
 
-- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/896-agent-ai.html)
-- [AI in Cybersecurity Training Resources | SANS Institute](ch05/094-ai.html)
-- [AI设计的思想实验：权衡与边界](../ch01/915-stochastic-parrot-thought-experiment.html)
+- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/909-agent-ai.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](ch05/095-ai.html)
+- [AI设计的思想实验：权衡与边界](../ch01/928-stochastic-parrot-thought-experiment.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](ch05/009-harness.html)
 
 ---

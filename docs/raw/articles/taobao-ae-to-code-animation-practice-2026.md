@@ -12,7 +12,7 @@ date: 2026-06-29
 created: 2026-06-29
 updated: 2026-06-29
 tags: [frontend, animation, design-to-code, ae, cursor, ai-integration, taobao]
-type: article
+type: raw-article
 provenance_state: extracted
 sha256: bed6f39a85f606d3b9743ae626c037817ff4d4f624c036bd78f611a76f7bbffc
 ---

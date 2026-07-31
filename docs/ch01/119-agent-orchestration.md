@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 4.9KB | `entities/agent-orchestration.md`
 
-
 ## 核心要点
 - **控制平面缺失是 Agent 网络失效的根本原因**：状态丢失、人为审批缺失、单点故障导致静默级联失败
 - **AWS Step Functions** 提供确定性工作流编排，支持状态管理、重试逻辑、分支与并行执行
@@ -13,37 +12,6 @@
 - **Amazon MWAA**（Managed Workflows for Apache Airflow）基于 DAG 的编排，处理复杂多步骤管道
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 Agent 编排（Agent Orchestration）是多 Agent 系统从「实验原型」走向「生产可靠」的关键跨越。当单个 Agent 独立运行时，问题相对可控——调用工具、执行任务、返回结果。但一旦将多个专业化 Agent 编织成网络，如果没有控制平面（Control Plane）来管理执行流程、状态持久化和审批门控，整个系统会在三个维度上暴露脆弱性。
 **状态丢失问题**尤为典型。在一个典型的多 Agent 协作流程中：Agent A 负责任务拆解，Agent B 负责具体执行，Agent C 负责结果整合。如果某个步骤失败，缺乏持久化状态的系统无法从断点恢复，只能从头重启，导致重复计算和资源浪费。AWS Step Functions 通过其内置的状态管理机制解决了这一问题——每个状态转换都有记录，失败后可精确重试而非全链路重启。
 **审批门控的缺失**是生产环境的另一大隐患。在企业级应用中，某些操作具有不可逆性：删除资源、发送外部通信、审批财务流程等。这些操作如果由 Agent 自主执行，一旦出错代价极高。工作流中嵌入人工审批节点（Human-in-the-loop Approval）使得系统能够在关键步骤暂停，将控制权交还给人类操作员，这是 Agent 系统获得企业信任的技术基础。

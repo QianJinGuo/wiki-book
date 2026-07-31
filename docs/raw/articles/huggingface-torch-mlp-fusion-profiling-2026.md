@@ -5,7 +5,7 @@ source: huggingface
 author: "Aritra Roy Gosthipatya, Remi Ouazan Reboul, Sergio Paniego, Pedro Cuenca, Sayak Paul"
 publish_date: "2026-06-11"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: [pytorch, profiling, ml-engineering, model-architecture, optimization, kernel-fusion]
 source_type: newsletter
 sha256: "702c7ed581e5ef051b3211d6e30a9127bad90205a41d518c60a01c4d1d07ac53"

@@ -2,7 +2,7 @@
 title: "01"
 created: 2026-06-18
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: d38cbd8af04e555914677f95b63e2aeb2bea5a8f6d426ef5376630dd2a0953e4
 ---

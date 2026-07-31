@@ -2,7 +2,7 @@
 title: "工作区模式 —— 评审所有暂存、未暂存和未追踪的变更ocr review# 分支对比 —— 比较两个引用之间的 diffocr review --from main --to feature-branch# 单次提交ocr review --commit abc123# 附带需求背景 —— 评审变更是否正确实现了需求ocr review --background \"实现用户登录的手机号验证逻辑\"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 598ce76f869b01de54108a92bc5a1a7ea1f9b6f9f947bcc424d74bbb08c6493e
 ---

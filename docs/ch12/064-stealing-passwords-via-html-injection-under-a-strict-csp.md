@@ -6,59 +6,7 @@
 
 # Stealing Passwords via HTML Injection Under a Strict CSP
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Stealing Passwords via HTML"))
-    攻击原理三要素
-    浏览器差异对比
-    完整攻击链 单次点击
-    实际代码演示
-    CSP 的安全边界被重新定义
-    密码管理器的设计缺陷
-    Referer 策略规范的实现不一致
-    对 Web 安全评估的影响
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 AFINE Security Research 于 2026 年 6 月披露了一种在**严格 CSP（Content-Security-Policy）**下通过 HTML 注入窃取浏览器保存密码的攻击技术。核心发现：即使 CSP 设置为 `script-src 'none'`、`default-src 'none'`（理论上阻止一切脚本执行），攻击者仍可通过**Chrome 密码自动填充**机制 + **Referer 头泄露**实现密码窃取，全程无需 JavaScript。攻击链为：HTML 注入伪造表单 → Chrome 自动填充密码 → `<meta>` 标签设置 `unsafe-url` referrer 策略 → `<meta>` 重定向到攻击者域名 → Referer 头携带明文密码。
 

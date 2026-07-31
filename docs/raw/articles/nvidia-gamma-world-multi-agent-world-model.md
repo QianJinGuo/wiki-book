@@ -5,7 +5,7 @@ source_url: https://research.nvidia.com/labs/sil/projects/gamma-world/
 ingested: 2026-06-01
 feed_name: NVIDIA Research
 source_published: 2026-05-28T04:23:24Z
-type: article
+type: raw-article
 sha256: 8491006f6a8b853d9991c413b087f94525198eacdd84415e60227173eb700126
 tags: [world-model, multi-agent, nvidia, generative-ai, attention-mechanism]
 ---

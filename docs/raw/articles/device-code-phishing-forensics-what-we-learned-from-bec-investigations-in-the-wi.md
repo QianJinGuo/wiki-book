@@ -1,7 +1,7 @@
 ---
 source_url: https://research.eye.security/device-code-phishing-forensics/
 ingested: 2026-06-04
-type: article
+type: raw-article
 author: 
 title: "Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild"
 tags: []

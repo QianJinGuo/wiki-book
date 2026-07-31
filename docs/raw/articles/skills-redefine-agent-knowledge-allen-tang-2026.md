@@ -12,7 +12,7 @@ date: 2026-06-29
 created: 2026-06-29
 updated: 2026-06-29
 tags: [skills, claude-code, anthropic, context-engineering, knowledge-management, progressive-disclosure, agent-harness]
-type: article
+type: raw-article
 provenance_state: extracted
 sha256: 65dbf919ae8d9b448092b788c0821f912dffbc4f705fe06ffc4caa1f335667a5
 ---

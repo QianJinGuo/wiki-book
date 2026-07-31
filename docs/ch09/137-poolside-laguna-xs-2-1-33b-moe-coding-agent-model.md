@@ -8,21 +8,6 @@
 
 > **Background**: Poolside 发布了 Laguna XS 2.1，一个 33B 总参数（3B 激活/词元）的 MoE 模型，专为 Agentic Coding 和长周期本地编码任务设计。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Poolside Laguna XS 21 33B MoE"))
-    架构与基准
-    部署与生态
-    MoE 架构的高效激活比是本地编码代理的关键设计选择
-    专注 Agentic Coding 基准的定向优化策略
-    开源 DFlash Speculator 解决本地推理速度瓶颈
-    完全宽松许可与差异化定价策略
-    wiki 定位
-```
-
 ## 架构与基准
 
 - 33B 总参数，3B 激活参数/词元（MoE）
@@ -32,41 +17,6 @@ mindmap
 - 256K 上下文长度
 
 ## 部署与生态
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 支持 vLLM、SGLang、TensorRT-LLM、HuggingFace Transformers、Ollama。提供三种量化版本：FP8、INT4、NVFP4。开源 DFlash speculator 模型使本地推理 tok/s 翻倍。
 
@@ -94,7 +44,7 @@ OpenMDW-1.1 许可证赋予了开发者最大的使用自由度，而 API 定价
 
 ### 5. 与开源 Agent 生态系统深度集成
 
-支持 vLLM、SGLang、TensorRT-LLM、Ollama 和 HuggingFace Transformers 等主流推理框架，意味着开发者可以无缝接入 [Claude Code](../ch03/078-claude-code.html)、[Codex](../ch01/517-codex.html) 或其他支持 BYOM 的 Agent 系统，而不受限于 Poolside 自身的工具链。这种生态兼容策略有助于其在快速演变的开源 Agent 工具链中保持长期相关性。
+支持 vLLM、SGLang、TensorRT-LLM、Ollama 和 HuggingFace Transformers 等主流推理框架，意味着开发者可以无缝接入 [Claude Code](../ch03/077-claude-code.html)、[Codex](../ch01/520-codex.html) 或其他支持 BYOM 的 Agent 系统，而不受限于 Poolside 自身的工具链。这种生态兼容策略有助于其在快速演变的开源 Agent 工具链中保持长期相关性。
 
 ## 实践启示
 
@@ -104,7 +54,7 @@ OpenMDW-1.1 许可证赋予了开发者最大的使用自由度，而 API 定价
 
 3. **Agentic Coding 场景的定价应匹配其使用模式**：Coding Agent 会在多次交互中重复发送项目上下文（System Prompt、CLAUDE.md 等），cache-read 友好型定价模型可降低 50%+ 的实际使用成本。采购 API 时应关注 caching tier 定价而非仅看输入/输出价格。
 
-4. **开源 Coding Agent 模型正在形成分层竞争格局**：Laguna XS 2.1 (63.1% SWE-bench ML) 与 [DeepSeek](../ch01/1091-deepseek.html)、Qwen 等国产模型之间的差距正在收窄，开发者应基于本地部署成本、推理速度和特定语言/框架的支持度做综合选型，而非仅看单点基准分数。
+4. **开源 Coding Agent 模型正在形成分层竞争格局**：Laguna XS 2.1 (63.1% SWE-bench ML) 与 [DeepSeek](../ch01/570-deepseek.html)、Qwen 等国产模型之间的差距正在收窄，开发者应基于本地部署成本、推理速度和特定语言/框架的支持度做综合选型，而非仅看单点基准分数。
 
 5. **256K 上下文对 Coding Agent 的实际意义**：256K 上下文足够覆盖中等规模项目的完整代码库，使得 Agent 可以在不依赖 RAG 或分块策略的情况下处理大多数仓库。这一能力与 Agentic Coding 工作流的深度集成比单纯的基准分数更重要。
 
@@ -114,10 +64,10 @@ Laguna XS 2.1 是 Agentic Coding 领域当前最具竞争力的开源模型之�
 
 ## 相关实体
 
-- [Codex 五层架构](../ch01/517-codex.html)
-- [Claude Code 深度架构分析](../ch03/078-claude-code.html)
-- [Pi Agent](../ch04/348-pi-agent.html)
-- [LLM Post-Training](../ch01/1274-llm.html)
+- [Codex 五层架构](../ch01/520-codex.html)
+- [Claude Code 深度架构分析](../ch03/077-claude-code.html)
+- [Pi Agent](../ch04/350-pi-agent.html)
+- [LLM Post-Training](../ch01/637-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/poolside-laguna-xs-2-1-2026.md)
 

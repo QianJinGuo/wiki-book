@@ -2,7 +2,7 @@
 title: "1. 准备 CLI（二选一）curl -fsSL https://nacos.io/nacos-installer.sh | bash -s -- --cli# 或者直接使用 npxnpx @nacos-group/cli@latest skill-sync --help# 2. 配置 CLI profilenpx @nacos-group/cli@latest profile edit test"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 8f1f51507fc29764402a80366f63e9be9adfc65ae40362a9d4347f87c2f93155
 ---

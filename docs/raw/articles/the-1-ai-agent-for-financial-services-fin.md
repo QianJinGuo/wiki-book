@@ -1,7 +1,7 @@
 ---
 title: The #1 AI Agent for financial services | Fin
 sha256: 9acda8abb5aa86fcab2d2a5f01f9d16c9cf73bd209cc3ca66ddae04a6ce15fdf
-type: source
+type: raw-article
 source: newsletter
 source_url: https://fin.ai/solutions/financial-services
 ingested: 2026-05-15

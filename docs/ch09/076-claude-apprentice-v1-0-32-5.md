@@ -8,54 +8,11 @@
 
 > 基于造物手稿的 claude-apprentice v1.0 发布日志，深入讲解 32 个核心文件的设计取舍与背后踩坑。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("claude-apprentice v10 32 文件设计取舍与"))
-    层架构的设计哲学 从提问到记忆的分层抽象
-    CLAUDEmd 压缩 知识下沉的量化收益
-    Spec 驱动工作流 软件工程方法论在 AI 协作中的落地
-    错题本机制 系统化的经验积累
-```
-
 ## 摘要
 
 claude-apprentice 是一个提升 Claude Code 协作效率的开源工具，其 v1.0 版本包含 32 个核心文件，按 5 层架构组织：Prompt/L1 → Context/L2 → Harness/L3 → Loop/L4 → Memory/L5。 核心设计包括 CLAUDE.md 从 200 行压缩到 53 行的知识下沉策略、PROPOSE→APPLY→SHIP→ARCHIVE 的四阶段 Spec 驱动工作流、8 条种子错题本机制，以及 6 维度代码评审体系。 该工具已在 GitHub 和 npm 公开发布，v1.1 已增加 SSOT 治理和双版本号策略。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 1. **5 层架构落地为 32 文件系统**：Prompt/L1（3 文件）→ Context/L2（8 文件）→ Harness/L3（11 文件）→ Loop/L4（1 文件）→ Memory/L5（1 文件）+ CLI/脚本（8 文件），Harness 层最厚
 2. **CLAUDE.md 知识下沉策略**：从 200 行压缩到 53 行，子文件分层承载，CLI 加载时间降低 60%
@@ -122,7 +79,7 @@ PROPOSE→APPLY→SHIP→ARCHIVE 四阶段生命周期将传统软件工程中�
 
 ### 与传统工具的对比定位
 
-与 [兔兔AGI Loop Engineering](ch09/158-claude-code-loop-engineering.html) 和 [黄佳 8 关卡](../ch03/078-claude-code.html) 互补：
+与 [兔兔AGI Loop Engineering](ch09/158-claude-code-loop-engineering.html) 和 [黄佳 8 关卡](../ch03/077-claude-code.html) 互补：
 - Loop Engineering：方法论层面，讲"怎么做"（循环执行+验证）
 - 8 关卡：企业门禁层面，讲"怎么卡"（质量门禁流程）
 - **claude-apprentice**：工程实现层面，讲"具体用什么文件/工具/规则"
@@ -146,7 +103,7 @@ PROPOSE→APPLY→SHIP→ARCHIVE 四阶段生命周期将传统软件工程中�
 ## 相关实体
 
 - [Claude Code Loop Engineering](ch09/158-claude-code-loop-engineering.html) — 兔兔AGI 的 Loop Engineering 方法论
-- [黄佳 8 关卡](../ch03/078-claude-code.html) — 企业级 AI 代码质量门禁框架
+- [黄佳 8 关卡](../ch03/077-claude-code.html) — 企业级 AI 代码质量门禁框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 分层 Harness 工程的通用理论
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html) — 上下文分层与工作集管理技术
 - [OpenSpec/Solo Spec 驱动开发](../ch05/050-openspec.html) — 规格先行在 AI 开发中的应用

@@ -3,7 +3,7 @@ title: "翁荔再写万字长文：AI自我改进，先从Harness开始"
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/2fkkOj2jeyv3Lmv7Tbr_LA"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 81
 tags: [raw]
 sha256: "b9bc869ca2c5fda02bc83bce65a2b04c7751a2863908fe493952e5ae12c796ed"

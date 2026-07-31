@@ -10,49 +10,12 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 [![Image 1: The Hacker News Logo](blob:http://localhost/5c34172ae87fab3ecb77bf8cfaf83e48)](http://thehackernews.com/)
 [__](javascript:void(0))
 
-
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/1089-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
-- [Airbyte Agents A New Era For Airbyte Airbyte](../ch04/580-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
-- [Airbyte Agents](../ch04/580-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
-- [5 Years And 5M Later Inventing A New](../ch03/076-5-years-and-5m-later-inventing-a-new-programming-language.html)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/652-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
+- [Airbyte Agents A New Era For Airbyte Airbyte](../ch04/584-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
+- [Airbyte Agents](../ch04/584-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
+- [5 Years And 5M Later Inventing A New](../ch03/075-5-years-and-5m-later-inventing-a-new-programming-language.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 

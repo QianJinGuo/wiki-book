@@ -1,7 +1,7 @@
 ---
 
 title: "深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？"
-type: source
+type: raw-article
 tags: [wechat, ai-agent, engineering, agent-tools, aws]
 source: wechat
 source_url: "https://mp.weixi"

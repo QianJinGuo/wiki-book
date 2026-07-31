@@ -6,29 +6,6 @@
 
 # Thought-Aligner：智能体行为安全新范式——可插拔思维校正层
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thought-Aligner"))
-    范式转变 从内容安全到行为安全
-    核心洞察 「先想偏了 才做错了」
-      端点拦截的两个问题
-    方法 可插拔思维校正层
-      部署位置
-    三个特点
-      轻量级 可插拔
-      维持有用性 不拦住一切
-      低延迟和可部署性
-    数据与训练
-      为什么需要深度训练
-      训练数据
-    覆盖基准
-    关键数字
-    真实部署 OpenClaw 验证
-```
-
 ## Overview
 
 Thought-Aligner 是**上海创智学院 × 复旦大学**联合提出的智能体行为安全新方法，已被 **ICML 2026 接收**。arxiv:2505.11063，github.com/WhitzardAgent/Thought-Aligner。核心定位：**轻量级智能体「思维校正」新思路，在智能体执行工具前修正其推理偏差，从源头防范行为风险**。
@@ -36,42 +13,6 @@ Thought-Aligner 是**上海创智学院 × 复旦大学**联合提出的智能�
 > **范式转变**：从「内容是否安全」转向「**行为是否可靠**」。从「阻断式规则拦截」走向「**修复式思维校正**」。
 
 ## 范式转变：从内容安全到行为安全
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 | 维度 | 传统大模型 | 智能体 |
 |------|----------|--------|
@@ -193,11 +134,11 @@ Agent 以「**Thought-Action-Observation**」循环完成任务。危险行为�
 
 本文是**具体方法**层级的安全方案：
 
-- [AI Agents Security Survey](../ch04/298-ai-agent.html) — 攻击/防御**综述**（清华 Fangcun / Bishop Fox AIMap / 1Password），覆盖威胁格局
-- [AI Tool Poisoning](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具投毒攻击分析
+- [AI Agents Security Survey](../ch04/030-ai-agent.html) — 攻击/防御**综述**（清华 Fangcun / Bishop Fox AIMap / 1Password），覆盖威胁格局
+- [AI Tool Poisoning](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具投毒攻击分析
 - [Claw Chain](ch09/078-claw-chain-cyera-research-unveil-four-chainable-vulnerabili.html) — OpenClaw 漏洞研究
-- [Anthropic 长时运行 Agent 架构](../ch01/989-anthropic.html) — 对抗式设计 + 合同谈判
-- [Enterprise OpenClaw Security](../ch11/235-openclaw.html) — 部署架构
+- [Anthropic 长时运行 Agent 架构](../ch01/1004-anthropic.html) — 对抗式设计 + 合同谈判
+- [Enterprise OpenClaw Security](../ch11/237-openclaw.html) — 部署架构
 
 Thought-Aligner 的独特贡献：
 - **不重新训练原始 Agent**——可插拔即用

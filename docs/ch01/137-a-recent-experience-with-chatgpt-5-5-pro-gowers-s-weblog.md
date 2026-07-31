@@ -6,50 +6,11 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
 
-
 ## 相关实体
-- [GPT-5.5来了！我撤回了退订ChatGPT的决定](ch01/738-chatgpt.html)
+- [GPT-5.5来了！我撤回了退订ChatGPT的决定](ch01/951-chatgpt.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 这是一篇极具标志性的数学 AI 实验记录。Timothy Gowers（菲尔兹奖得主，剑桥大学教授）让 ChatGPT 5.5 Pro 挑战开放数学问题，并在不到两小时内得到了 Isaac Rajagopal（MIT 学生）认为"几乎肯定正确"的证明——这实际上已经是发表级别的数学成果。
 **核心事件**：Nathanson 在论文《Diversity, Equity and Inclusion for Problems in Additive Number Theory》中提出关于 h 倍 sumset 上界的问题。ChatGPT 5.5 Pro 将原有的指数上界改进为指数为 k^α（α>1/2）的上界，随后进一步将上界改进为关于 k 的多项式 O(k^{10h³})。Gowers 坦承自己的数学输入为零——整个证明几乎全由 ChatGPT 完成。
 **关键洞察**：Isaac Rajagopal 指出，ChatGPT 提出的"利用 h²-解离集来控制低阶关系"这一想法是"完全原创的"，属于那种"花一两周苦思才能想出来"的创意。

@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/WaH2ouRp9VZ-EkV4ImJCEg
 author: 架构师（JiaGouX）
 published: 2026-06-27
 ingested: 2026-06-27
-type: raw
+type: raw-article
 tags: [agent, environment-engineering, harness, loop-engineering, self-harness, pomdp, feedback-loop]
 review_value: 8
 review_confidence: 8

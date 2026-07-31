@@ -10,71 +10,11 @@
 >
 > 原文：→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/frontier-code-cognition-mergeability-benchmark.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("FrontierCode Cognition AI 的 PR"))
-    三个独有贡献 不应合并到现有 entity
-      Mergeability 范式 第一个测量PR 会被合并吗的基准
-      三种新颖评分方法
-      20 旗舰开源项目维护者亲建 40 小时任务
-    实验结果 最 unsaturated
-    与现有 wiki 实体差异化
-    关键技术细节
-      维度评分方法
-      Rubric Hardening Pipeline
-      任务规模
-    Mergeability 范式代表编码评估的第二轴心转移
-    reverse-classical 是测试质量自动验证的认知突破
-    mutagent 解决了 LLM-as-judge 的严格性 vs
-    Maintainer-rubric 是code review
-```
-
 ## 一句话总结
 
 **FrontierCode = "20+ 旗舰开源项目维护者共建的 PR mergeability 评估基准"**。与 SWE-Bench Pro 关注"功能正确"不同, FrontierCode 测的是"maintainer 看完你的 PR 会不会合并"——六维度评分 (correctness / regression / cleanliness / test quality / scope / code quality), 维护者亲自写 rubric 40+ 小时/任务, 实证误判率比 SWE-Bench Pro **低 81%**。
 
 ## 三个独有贡献（不应合并到现有 entity）
-
-```mermaid
-graph TB
-    subgraph "实验管理"
-        TRACK[实验追踪<br/>MLflow/W&B]
-        HP[超参调优<br/>Optuna]
-        REG[模型注册<br/>版本管理]
-    end
-    subgraph "评估流水线"
-        BENCH[基准测试<br/>自动评测]
-        HUMAN[人工评估<br/>LLM-as-Judge]
-        DRIFT[漂移检测<br/>数据/概念漂移]
-    end
-    subgraph "部署流水线"
-        PACKAGE[模型打包<br/>ONNX/TensorRT]
-        TEST[Integration测试<br/>回归检测]
-        DEPLOY[灰度发布<br/>A/B测试]
-    end
-    TRACK --> HP --> REG
-    REG --> BENCH & HUMAN
-    BENCH & HUMAN --> DRIFT
-    DRIFT --> PACKAGE --> TEST --> DEPLOY
-    subgraph "监控"
-        PERF[性能监控<br/>延迟/吞吐]
-        ALERT[告警规则<br/>异常检测]
-        RETRAIN[触发再训练]
-    end
-    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
-    classDef exp fill:#dbeafe,stroke:#2563eb
-    classDef eval fill:#ede9fe,stroke:#7c3aed
-    classDef deploy fill:#fef3c7,stroke:#d97706
-    classDef mon fill:#d1fae5,stroke:#059669
-    class TRACK,HP,REG exp
-    class BENCH,HUMAN,DRIFT eval
-    class PACKAGE,TEST,DEPLOY deploy
-    class PERF,ALERT,RETRAIN mon
-```
-
 
 ### 1. **Mergeability 范式：第一个测量"PR 会被合并吗"的基准**
 
@@ -203,8 +143,8 @@ Claude Opus 4.8 在 Diamond 上仅得 13.4%，意味着即使是最强的模型�
 
 ## 相关阅读
 
-- [ProgramBench](../ch04/163-programbench-agent-benchmark.html) — 程序化编码基准 (与 FrontierCode 的 maintainer-rubric 范式对比)
-- [Claude Code Performance Benchmarking](../ch03/078-claude-code.html) — 单 agent 性能基准
+- [ProgramBench](../ch04/164-programbench-agent-benchmark.html) — 程序化编码基准 (与 FrontierCode 的 maintainer-rubric 范式对比)
+- [Claude Code Performance Benchmarking](../ch03/077-claude-code.html) — 单 agent 性能基准
 - **Devin Self-Improving Agent** — FrontierCode 的核心用户之一
 - **LLM-as-Judge** — mutagent 是 LLM-as-judge 的进阶范式
 - **Agent Evaluation Methodology** — 评估方法论综述

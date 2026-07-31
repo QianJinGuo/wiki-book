@@ -8,22 +8,6 @@
 
 腾讯研究院「AI 跃迁者调研」第五期访谈出门问问创始人兼 CEO 李志飞。他从 2025 年端午节用 Cursor 三天写出近 20 万行代码（「AI 版飞书」原型）出发，经历「个人产能爆棚 → 组织完全跟不上」的痛苦，用近一年时间推动组织转型，自研 CodeBanana 作为组织操作系统。本文提炼了超级个体天花板、CodeBanana 架构、全栈转型铁律、系统设计师角色、延迟满足感等核心洞察。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("超级个体到超级组织 李志飞 CodeBanana 组织转型实践"))
-    「超级个体被高估 超级组织被低估」 thesis
-    原型驱动工作流 vs 线性流水线
-    CodeBanana 设计哲学 沟通与执行合二为一
-    系统设计师 把控制权还给需求方
-    与现有知识库的关联
-    从「超级个体」到「超级组织」的认知陷阱
-    CodeBanana 的 architecture pattern
-    「全栈化」的组织代价与收益
-```
-
 ## 核心洞察
 
 ### 「超级个体被高估，超级组织被低估」 thesis
@@ -44,41 +28,10 @@ CodeBanana 是李志飞自研的组织操作系统，核心理念：**沟通在�
 
 ## 与现有知识库的关联
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-
 - [Harness Engineering 范式 — 综合性概念解析](../ch05/120-harness-engineering.html) — CodeBanana 是组织级 Harness 系统的一个具体实现案例
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/397-agent-skills.html) — CodeBanana 的 Skill 商店是 Agent Skill 生态在组织场景的应用实例
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/401-agent-skills.html) — CodeBanana 的 Skill 商店是 Agent Skill 生态在组织场景的应用实例
 - [Hermes Agent](../ch03/096-hermes-agent.html) — CodeBanana 的 Skill 系统和 Agent 管理具象化了 Hermes 之类 Agent 系统的组织级部署
-- [Claude Code 一周年回顾](../ch03/078-claude-code.html) — 李志飞的「不允许手写代码」转型与 Claude Code/Agent 编码实践的呼应
+- [Claude Code 一周年回顾](../ch03/077-claude-code.html) — 李志飞的「不允许手写代码」转型与 Claude Code/Agent 编码实践的呼应
 
 ## 深度分析
 

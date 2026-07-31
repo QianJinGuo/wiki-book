@@ -2,66 +2,9 @@
 
 ## Ch12.066 AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Voice Cloning The Technology"))
-    技术栈解析
-      三种克隆方法
-      模型架构层次
-      Speaker Embedding 的核心作用
-    生态玩家
-      四类参与者
-    安全风险
-    技术民主化的质变
-    零样本质量即将达到 parity
-    实时化的下一个前沿
-    多语言 preserving voice identity
-    安全团队必须关注 Voice Cloning 的认证风险
-```
+> 📊 Level ⭐⭐ | 7.2KB | `entities/ai-voice-cloning-the-technology-behind-it-whos-building-it-a.md`
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 - Published Time: 2026-05-16T11:13:31+01:00
 - Voice cloning 从需要数小时训练的复杂语音模型，到现在只需短音频片段几分钟即可复制的 DIY 工具
 - 零样本克隆（Zero-shot）只需 3-10 秒音频；少样本克隆（Few-shot）需要 1-5 分钟；完全微调需要 1 小时以上
@@ -157,10 +100,10 @@ Voice cloning 可以用于：
 - 特殊口音
 - 跨语言切换
 ## 相关实体
-- [Openai Quietly Bought Voice Cloning Star](../ch01/714-openai-quietly-bought-voice-cloning-startup-weights-gg.html)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Scammers Send Physical Phishing Letters To Steal Ledger Wall](https://github.com/QianJinGuo/wiki/blob/main/entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Openai Quietly Bought Voice Cloning Star](../ch01/732-openai-quietly-bought-voice-cloning-startup-weights-gg.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/104-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [Scammers Send Physical Phishing Letters To Steal Ledger Wall](ch12/090-scammers-send-physical-phishing-letters-to-steal-ledger-wall.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

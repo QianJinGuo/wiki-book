@@ -4,7 +4,7 @@ title: "AFAC2026 金融AI武道大会：四道业务真题考验Agent工程落�
 source_url: "https://mp.weixin.qq.com/s/4vql9YcPEPB591T63vzUNg"
 author: ""
 ingested: 2026-07-02
-type: raw
+type: raw-article
 tags: [agent, harness, financial-ai, afac, ai-agent]
 ---
 

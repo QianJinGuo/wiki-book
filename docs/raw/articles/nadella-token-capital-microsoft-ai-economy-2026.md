@@ -6,7 +6,7 @@ publisher: AI寒武纪 (公众号)
 publish_time: 2026-06-15 13:31
 translated_from: https://x.com/satyanadella/status/2066182223213293753
 ingested: 2026-06-15
-type: raw
+type: raw-article
 sources: []
 review_value: 7
 review_confidence: 7

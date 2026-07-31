@@ -4,70 +4,12 @@
 
 > 📊 Level ⭐⭐ | 16.8KB | `entities/agent-memory-architecture-essence.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Memory 架构本质"))
-    瓶颈在持续理解
-    先划边界 Memory vs State Policy Profile
-    蒸馏是管道的一步 不是记忆本身
-    四个建模对象
-    基本记忆单元 六维度
-    三条链路 写入 管理 读取
-      写入 预算分配
-      管理 最容易偷懒也最关键
-      读取 任务约束优先
-    进化 修正 遗忘
-      自我修正
-      有策略的遗忘
-    落地判断
-```
-
 ## 瓶颈在持续理解
 今天的大模型在单次会话里已经足够聪明。问题不在于它一时想不出来，而在于它没法把昨天学到的东西，以一种可靠、可更新、可追责的方式带到今天。
 **Context window 扩展解决的是带宽问题，不是建模问题。** benchmark 已经证实：拉到 35 个 session、300 个 turn 的尺度上，长上下文和 RAG 在时间推理、长程一致性上仍然明显落后于人类。
 所以 memory 正在从附加功能变成 Agent 架构的核心子系统——一个完整的 **write–manage–read 闭环**，而不是"有个存储层就算有记忆"。
 
 ## 先划边界：Memory vs State / Policy / Profile
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 **Memory vs State：** State 是当前 session 内的短期运行态（对话上下文、工具中间结果、规划器当前步骤），Session 结束即销毁。Memory 是跨 session 持续存在的、可影响未来决策的结构化历史。
 **Memory vs Policy：** Policy 管的是"允许与禁止"——权限边界、安全规则、合规约束。它是系统的外部规范，通常不应该被 memory 系统动态修改。
 **Memory vs Profile：** Profile 是用户模型的低维、显式快照层（名字、角色、偏好标签）。它是记忆的一个输出产物，不是记忆本身。
@@ -207,10 +149,10 @@ RAG 式的语义相似召回假设"表面语义相关 = 实质相关"。但真�
 **意图浮现的多模型耦合机制。** 四个模型（用户、任务、世界、自我）长期耦合后浮现意图——这个假设目前没有实验验证。需要设计实验来测试：单独优化某个模型的记忆质量，对整体意图理解准确率的边际贡献是多少？哪个模型的贡献最大？
 ## 相关实体
 - [How Ai Agent Memory Works](ch04/156-how-ai-agent-memory-works.html)
-- [Memory Agent Systems Cobanov](ch04/604-memory-agent-systems-cobanov.html)
+- [Memory Agent Systems Cobanov](ch04/608-memory-agent-systems-cobanov.html)
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
-- [Memory Vs Rag Agent Memory Systematic Framework](ch04/121-agent-memory.html)
-- [Agent Memory Architecture Past Influence Future Ruofei](ch04/121-agent-memory.html)
+- [Memory Vs Rag Agent Memory Systematic Framework](ch04/098-agent-memory.html)
+- [Agent Memory Architecture Past Influence Future Ruofei](ch04/098-agent-memory.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

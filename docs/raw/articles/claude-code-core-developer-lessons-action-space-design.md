@@ -3,7 +3,7 @@ title: "claude code core developer lessons action space design"
 source_url: https://x.com/trq212/status/2027463795355095314
 ingested: 2026-04-28
 sha256: 2b0150eb45dda1eeaf8e504a176e14bb107022ca8b6d58ea2f241a58bfca5742
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [twitter]

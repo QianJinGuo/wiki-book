@@ -3,7 +3,7 @@ title: "Databend on AWS：面向 AI 的多模态一体化数仓亮相 2026 亚�
 source_url: "https://mp.weixin.qq.com/s/9ju1Gc_IiQobTJ7k5pyE9w"
 ingested: 2026-06-30
 sha256: 39ba1f9f5f213f9f188895ae0cb7c6265a65b41773d2fe64695b3f900a5a59d1
-type: raw
+type: raw-article
 tags: [databend, aws, lakehouse, agent, trace, memory, vector-search, full-text-search, s3, graviton, bedrock, mcp, ai-udf, real-time-analytics, agentic-ai]
 author: Databend
 ---

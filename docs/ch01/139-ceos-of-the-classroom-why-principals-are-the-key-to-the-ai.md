@@ -6,43 +6,11 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/principals-ai-education.md)
 
-
 ## 核心要点
 - 待补充
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/principals-ai-education.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 **中间层缺口是 AI 时代教育危机的核心。** 传统 philanthropy 聚焦于早期教育（0–5 岁）和高等教育（18+），却系统性忽视了中学阶段（初中，约 12–14 岁）——这个阶段学生最容易流失，而教育资源恰恰最匮乏。Salesforce 的 Principal Innovation Fund 直接将 $100K 交给校长自主支配，而非绑定用途，正是对这一结构性缺失的直接回应。
 **校长是学校 AI 转型的关键节点而非边缘角色。** 文章将校长定位为「学校的 CEO」，而非单纯的教育行政管理者。在 AI 语境下，这意味着：AI 落地的最小决策单元应该是学校而非学区或教育部——只有校长最了解自己学校的学生需求、教师状态和技术基础，能够在「效率工具」和「教育价值」之间找到本校的平衡点。
 **AI 在教育中的真正价值不是节省时间，而是重构时间。** 81% 的教师报告 AI 节省了行政事务时间，但文章的核心观点是：节省下来的时间应当用于加强师生之间的高价值互动——意义建构、观点表达、社会情感成长——而非简单地将更多时间投入内容生产。AI 的「jagged intelligence」（擅长可描述任务，不擅长高语境判断）决定了它的角色是承担行政自动化，而非替代教育的核心人际维度。
@@ -57,8 +25,8 @@ graph TB
 
 ## 相关实体
 
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/167-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [The best argument I've heard for why AI won't take your job](../ch05/094-ai.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/168-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [The best argument I've heard for why AI won't take your job](../ch05/095-ai.html)
 
 ---
 

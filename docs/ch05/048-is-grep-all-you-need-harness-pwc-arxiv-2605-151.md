@@ -6,25 +6,6 @@
 
 # Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Is Grep All You Need 检索 Harness"))
-    论文与作者
-    三个核心实验发现
-      Inline 交付时 grep 1010 赢 vector
-      改成交付到磁盘 read 后 vector 反超
-      同样 Claude Opus 换 harness 准确率差 16pp
-    核心概念定义
-    主实验结论
-    论文深层主张
-    论文标题的精确答案
-    论文呼吁的研究方向
-    对 Agent 工程师的核心借鉴
-```
-
 ## 论文与作者
 
 **论文**：*Is Grep All You Need?*（来自普华永道，arXiv 2605.15184）
@@ -34,42 +15,11 @@ mindmap
 **论文给出的更扎心结论**：是，但有严格前提。
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 - [Lucasfcostacom Blog Backpressure Is All You Need](../ch01/005-backpressure-is-all-you-need.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/330-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Ai Native Startup Cyberfund Guide](ch05/018-ai-native.html)
 - [Harness Engineering Comprehensive Guide Conardli](ch05/120-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/298-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/030-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)
 

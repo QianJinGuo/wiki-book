@@ -2,7 +2,7 @@
 title: "dream-dense-retrieval-autoregressive-modeling-challengehub-2026"
 created: 2026-07-24
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 0d499544bdd05f26acb2d8696ff6f12cf0c71c1eb33dee872d6fe86cdd3b91fc
 ---

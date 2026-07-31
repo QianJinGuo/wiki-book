@@ -8,63 +8,11 @@
 
 > MCP tool design requires balancing expressiveness, safety, and discoverability. This article from AWS's blog covers practical patterns and tradeoffs in designing tools for Claude/MCP agents, addressing the core challenges of **bloat** (tool definitions consuming too much context) and **confusion** (poor tool choices leading to retries).
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MCP tool design Practical"))
-    核心挑战 Bloat 与 Confusion
-    Key Design Dimensions
-    六种 MCP 工具设计策略详解
-      V1 Raw Passthrough 原始透传 反模式基线
-      V2 Rich Descriptions 丰富描述 最快见效
-      V3 Schema Defaults 模式约束 默认值 结构为王
-    策略对比总览
-    上下文工程 Agent 系统设计的核心约束
-    从API 透传到Agent 封装的演进路径
-    Skills 与 MCP 工具设计的交汇点
-    安全性 被忽视的设计维度
-```
-
 ## 摘要
 
 当 MCP（Model Context Protocol）工具表现不佳时，问题通常不在协议本身，而在工具设计。许多团队直接将现有 API 暴露给 Agent，期望 LLM 自行理解——这在简单场景下可行，但在复杂系统中经常导致调用失败、参数错误和重试消耗上下文。本文系统性地探讨了 6 种 MCP 工具设计策略，从简单的描述增强到完整的 Agent-as-Tool 架构，并通过一个 K-12 教育资源搜索的后端示例进行了对比验证。
 
 ## 核心挑战：Bloat 与 Confusion
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 MCP 工具设计面临两个核心问题：
 
@@ -170,7 +118,7 @@ Anthropic 的 Skills 系统和 AWS 的 AgentCore Gateway 都体现了同样的�
 - [Hermes Agent 上手](../ch03/096-hermes-agent.html)
 - [Agent Harness Context Management](../ch05/058-agent-harness.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Claude Code /checkup 功能](../ch03/078-claude-code.html)
+- [Claude Code /checkup 功能](../ch03/077-claude-code.html)
 - [MCP 协议生态系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mcp-tool-design-practical-approaches-and-tradeoffs.md)

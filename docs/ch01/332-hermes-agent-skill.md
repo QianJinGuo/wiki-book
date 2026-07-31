@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/hermes-skill-system.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent Skill 系统深度解析"))
-    三个不能单用 Memory 的坑
-      坑 1 执行 vs 理解
-      坑 2 版本化需求
-      坑 3 依赖关系
-    SKILLmd 五区块设计
-    Skill 检索匹配四步
-    修补哲学 patch 不是重写
-    生命周期五阶段
-    实操建议 winty 总结
-    过程性知识 vs 陈述性知识的认知科学分野
-    SKILLmd 五区块设计的工程意图
-```
-
 ## 核心定位
 **Skill = 过程性知识 = 菜谱 ≠ 便签**
 Hermes Agent 的 Skill 系统与 Memory 系统解决的是完全不同的问题：
@@ -36,39 +17,6 @@ Hermes Agent 的 Skill 系统与 Memory 系统解决的是完全不同的问题�
 ---
 
 ## 三个不能单用 Memory 的坑
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 坑 1：执行 vs 理解
 Memory 的查询路径是"看完再说"，但执行型任务需要"打开手册第 3 步→做完打勾→出错回到第 2 步"。**任何超过 3 步的流程塞进 Memory 都会出问题。**
 
@@ -213,11 +161,11 @@ Skill 退役时切忌直接删除——工具栈过时不代表经验过时。�
 → [Hermes Agent 自进化机制](../ch03/096-hermes-agent.html)（Skills 系统概述 + 三层架构）
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 → [winty·Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
-→ [Agent Memory 架构对比](../ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
+→ [Agent Memory 架构对比](../ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
-- [AI Skill 测评指标体系](ch01/452-ai-skill.html)
-- [Agentic AI 系统架构与分层模型](../ch05/090-harness-skill.html)
+- [AI Skill 测评指标体系](ch01/453-ai-skill.html)
+- [Agentic AI 系统架构与分层模型](../ch05/091-harness-skill.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 

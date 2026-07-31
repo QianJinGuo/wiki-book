@@ -12,25 +12,6 @@
 
 **人物：** Salvatore Sanfilippo（antirez），Redis 作者（2009-2020主导），2024年底以 evangelist 身份回归 Redis
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek V4 DS4C Antirez 本地推理实践"))
-    核心事件
-    关键技术细节
-      非对称 MoE 量化
-      KV Cache 磁盘化
-      双 API 兼容层
-    性能实测
-    antirez 的设计哲学
-    开发者社区反响
-    人物背景
-    专用引擎 vs 通用引擎的技术取舍
-    非对称 MoE 量化的信息论基础
-```
-
 ## 核心事件
 
 antirez 发布 **ds4.c**——专为 DeepSeek V4 Flash 打造的本地推理引擎。C + Metal，从头实现，无框架依赖，无抽象层，Metal-only。
@@ -40,45 +21,6 @@ antirez 发布 **ds4.c**——专为 DeepSeek V4 Flash 打造的本地推理引�
 **技术栈**：C 55.4% + Objective-C 30.2% + Metal 13.8%
 
 ## 关键技术细节
-
-```mermaid
-graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
-    end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
-    end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
-    end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
-    end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
-```
-
 
 ### 1. 非对称 MoE 量化
 
@@ -196,10 +138,10 @@ antirez 提出的推理引擎 + 专用 GGUF + coding agent 验证三者组合，
 
 ## 相关实体
 
-- [ds4c-deepseek-v4-antirez](../ch01/515-ds4c-deepseek-v4-antirez.html) — 同一项目的另一篇报道
-- [Redis之父下场给DeepSeek V4单独造了一台推理引擎](../ch01/1151-deepseek-v4.html) — 量子位的另一篇相关报道
-- [DeepSeek-V4深度拆解](../ch01/1151-deepseek-v4.html) — DeepSeek V4 论文深度解读
-- [DeepSeek V4 Pro vs Claude](../ch01/1151-deepseek-v4.html) — V4 Pro 和 Flash 对比测试
+- [ds4c-deepseek-v4-antirez](../ch01/518-ds4c-deepseek-v4-antirez.html) — 同一项目的另一篇报道
+- [Redis之父下场给DeepSeek V4单独造了一台推理引擎](../ch01/710-deepseek-v4.html) — 量子位的另一篇相关报道
+- [DeepSeek-V4深度拆解](../ch01/710-deepseek-v4.html) — DeepSeek V4 论文深度解读
+- [DeepSeek V4 Pro vs Claude](../ch01/710-deepseek-v4.html) — V4 Pro 和 Flash 对比测试
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)

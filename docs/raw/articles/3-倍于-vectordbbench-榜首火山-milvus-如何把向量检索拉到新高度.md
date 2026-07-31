@@ -3,7 +3,7 @@ title: "3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/e7sMz_eCK4IuCTbMyPM2Tg"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 56
 tags: [raw]
 sha256: "52a201027fff057edce3d22e7663746382568bb45f4f13fd2841e86f7f300de1"

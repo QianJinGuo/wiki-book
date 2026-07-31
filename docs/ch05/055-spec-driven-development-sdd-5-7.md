@@ -8,24 +8,6 @@
 
 阿里云开发者王砚舒系统总结了 SDD（Spec-Driven Development）方法论，包含5人7天交付案例、四阶段模型、三文件体系、好Spec六要素、工具生态对比及硬数据验证。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Spec-Driven Development SDD 全面总结"))
-    核心案例 5人7天干完20人数周的活
-    什么是 SDD
-    SDD 四阶段模型
-    三文件体系 GitHub Spec Kit
-      好 Spec 六要素
-      粒度检验标准
-    工具生态对比
-    数据验证
-    SDD 与 Vibe Coding 的本质差异 约束 vs 自由
-    Spec 作为共享心智模型 Shared Mental Model
-```
-
 ## 核心案例：5人7天干完20人数周的活
 
 团队使用 Qoder 与 SDD 方法，在 7 天内交付了 QoderWork 产品，完成了传统需要 20 人数周的工作量。核心洞察是 **DAY 0 的 Spec 编写决定了整个项目的成败**——Spec 是锚点，效率源于 Spec 约束下的人机协作没有失控。
@@ -33,41 +15,6 @@ mindmap
 这一案例的关键因素并非 AI 编码速度本身，而是 Spec 提供了明确的「成功标准」和「边界定义」，使得 AI 在有限的决策空间内高效产出，而人工审查只需要验证 Spec 符合性而非逐行检查代码。这种分工模式将人的稀缺注意力集中在高价值判断上，将执行层面的重复劳动完全交给了 AI。
 
 ## 什么是 SDD
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Spec-Driven Development 的核心思想是将规格说明（Specification）作为唯一真实来源（Single Source of Truth），代码作为其派生产物。先定义 WHAT，再让 AI 做 HOW。
 
@@ -178,8 +125,8 @@ SDD 的真正价值不在于文档本身，而在于 Spec 创建过程中建立�
 - [Vibe Coding 的局限性与 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [Harness Engineering 实践指南](ch05/120-harness-engineering.html)
 - [Spec Kit & OpenSpec 混合 Harness](ch05/050-openspec.html)
-- [SDD 实践：Lattice Harness 团队 AI 编码](ch05/111-ai-coding.html)
-- [Codex 五层架构](../ch01/517-codex.html)
+- [SDD 实践：Lattice Harness 团队 AI 编码](ch05/112-ai-coding.html)
+- [Codex 五层架构](../ch01/520-codex.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sdd-spec-driven-development-summary-qoder.md)
 

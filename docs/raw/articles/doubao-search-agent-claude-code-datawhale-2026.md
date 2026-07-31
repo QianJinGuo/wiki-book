@@ -3,6 +3,7 @@ title: "最新发布！豆包搜索+Claude Code实测来了"
 source_url: "https://mp.weixin.qq.com/s/I72BQlRHBZG33dXyYE47Vg"
 source_account: "李秀奇 / Datawhale"
 ingested: 2026-07-28
+sha256: "0adc410c16e945e9c88a6f014bef5f9f0a1f231aeec9fcebadb6f312e4fc6f50"
 type: raw-article
 tags:
   - doubao-search

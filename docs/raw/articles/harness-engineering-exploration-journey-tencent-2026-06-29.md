@@ -2,7 +2,7 @@
 title: "harness engineering exploration journey tencent 2026 06 29"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 13b95837b8b33e2b7cf7e50a77f1691dbc12aa8897970017f7f4717da72cf50b
 ---

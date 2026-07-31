@@ -2,7 +2,7 @@
 title: "Fine-tune Amazon Nova models for accurate email data extraction"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 7efb226440e423dd6903ae0c3d48d0ab04043cf079ea967036c5c19c8ab934ee
 ---

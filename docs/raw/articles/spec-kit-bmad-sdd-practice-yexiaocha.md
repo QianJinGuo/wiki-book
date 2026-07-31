@@ -5,7 +5,7 @@ title: "AI 原生研发落地实践：我用 Spec-Kit 和 BMAD 跑了一遍 SDD"
 author: 叶小钗
 publisher: 叶小钗
 date: 2026-06-05
-type: article
+type: raw-article
 ingested: 2026-06-05
 review_value: 8
 review_confidence: 8

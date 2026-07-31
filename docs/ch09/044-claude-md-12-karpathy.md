@@ -4,60 +4,10 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/claude-code-12-rules-karpathy-extension.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CLAUDEmd 12 条规则 Karpathy 扩展模板"))
-    核心设计原则
-    规则体系
-      基础层 Karpathy 4 条 防写代码失败
-      扩展层 新增 8 条 防 agent 编排失败
-    Karpathy 模板的 4 个失效点
-    数据
-    参考来源
-```
-
 ## 概述
 基于 Forrest Chang 整理的 Karpathy 4 条 CLAUDE.md 规则，扩展 8 条覆盖 2026 年 5 月 agent 驱动场景的新规则。6 周 30 个代码库实测，错误率从 41% 降至 3%，遵循率保持 76-78%。
 
 ## 核心设计原则
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 CLAUDE.md 不是愿望清单，而是**行为契约**，每条规则对应一个可观察的失败模式： ^["[Claude写代码错误率从41%降到11%](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-12-rules-karpathy-extension.md)"]
 
 - 规则 ≤200 行，超过后遵循率骤降
@@ -123,12 +73,12 @@ Karpathy 的原始规则用身份语言（"像资深工程师"）来传递行为
 - Karpathy 原始模板：[Forrest Chang's repo](https://github.com/forrestchang/andrej-karpathy-skills) (120K star)
 
 ## 相关实体
-- [Claude Code 可控性：软规则无法变成硬约束](../ch03/078-claude-code.html) — 软规则 vs 硬约束的深度对比
+- [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html) — 软规则 vs 硬约束的深度对比
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/078-claude-code.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/311-claude-code-subagent.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code Subagent 上下文卫生](../ch04/313-claude-code-subagent.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/076-obsidian-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

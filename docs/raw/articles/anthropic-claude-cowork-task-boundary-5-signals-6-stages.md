@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/LZMqIIu_yEoMVHy5wgujJw
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, anthropic, claude-cowork, knowledge-work-agent, task-selection, 5-signals, 6-stages, 6-controls, skill-precipitation, plugin-supply-chain, control-plane, claude-code, vibe-working]
 ---
 

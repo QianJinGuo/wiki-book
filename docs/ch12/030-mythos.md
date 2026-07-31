@@ -6,55 +6,7 @@
 
 # Mythos 对企业安全架构影响的思考
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Mythos 对企业安全架构影响的思考"))
-    从人类节奏到机器速度 安全运营的结构性变革
-    微软MDASH的启示 多智能体防御架构
-    语义与意图治理 传统安全体系无法覆盖的新维度
-    智能体身份全生命周期管理
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 本文由火山引擎AI安全团队撰写，系统分析了Claude Mythos（Anthropic于2026年4月推出的机构级前沿模型）对企业安全架构的深远影响。Mythos将"自主发现并武器化漏洞"的能力提升到超越人类顶尖专家的水平，将漏洞从公开披露到被规模化利用的窗口从数月压缩到数分钟，倒逼安全运营从"人类节奏"切换到"机器速度"。文章提出了一套完整的安全架构应对方案：在治理维度推进AI原生零信任与智能体身份治理，在控制维度用AI实现"意图-行为对齐"，在韧性维度假设边界终将被穿透而建立快速响应机制。
 
@@ -79,7 +31,7 @@ Mythos带来的最根本冲击不是某个具体能力的提升，而是安全�
 
 文中提到的微软MDASH研究（多模型、100+专精Agent协同，以88.4%登顶CyberGym榜单）提供了一个关键的防御范式参考：**用更多的智能体对抗智能体**。单体模型能力再强也存在上限，而多模型、多智能体协同的调度体系可以全面超越单体Mythos的能力。
 
-这一发现与[Agent团队协作](../ch01/976-claude.html)中的"群聊模式"讨论高度相关——多个专精Agent通过编排调度层实现能力互补，比单一通用Agent在复杂安全任务中表现更优。MDASH的架构设计（编排调度层 + 五段流水线 + 支撑底座）可以作为AI安全红队的参考模板。
+这一发现与[Agent团队协作](../ch01/1022-claude.html)中的"群聊模式"讨论高度相关——多个专精Agent通过编排调度层实现能力互补，比单一通用Agent在复杂安全任务中表现更优。MDASH的架构设计（编排调度层 + 五段流水线 + 支撑底座）可以作为AI安全红队的参考模板。
 
 ### 语义与意图治理：传统安全体系无法覆盖的新维度
 
@@ -130,7 +82,7 @@ Mythos带来的最根本冲击不是某个具体能力的提升，而是安全�
 ## 相关实体
 
 - [Agent系统生产化部署](../ch05/058-agent-harness.html) — 响应速度作为系统设计的第一性原理
-- [Agent团队协作](../ch01/976-claude.html) — 多Agent协同模式
+- [Agent团队协作](../ch01/1022-claude.html) — 多Agent协同模式
 - [Agent后端架构](../ch03/035-agent.html) — 上下文感知权限系统
 - [Alitech标准化实践](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md) — 治理优先的系统设计
 - [注意力坍缩](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — 信息边界管理

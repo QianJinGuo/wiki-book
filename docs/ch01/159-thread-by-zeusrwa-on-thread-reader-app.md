@@ -4,49 +4,10 @@
 
 > 📊 Level ⭐ | 3.6KB | `entities/zeus-rwa-thread-reader.md`
 
-
 ## Summary
 @ZeusRWA 观察到 RWA（现实世界资产）赛道的一个关键分化：项目建设层面百花齐放（多产品线、成熟基础设施、用户 onboarding），但 token 价格表现却参差不齐。少数 RWA token 逆势大涨，其背后的逻辑是：市场不再仅将 token 视为"utility token"，而是将其定价为对未来金融基础设施的早期股权类投资。
 
 ## Key Points
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 - RWA 项目建设蓬勃：多家公司已建立多产品线、完善基础设施、成熟用户 onboarding 体系
 - Token 价格表现分化：项目建设强 ≠ token 价格强，部分 token 表现挣扎
 - 少数 RWA token 逆势大涨：市场对头部 tokenization 公司的估值逻辑正在转变
@@ -80,9 +41,9 @@ graph TB
 
 ## 相关实体
 - 
-- [Thread Openai Devs](ch01/390-openai.html)
+- [Thread Openai Devs](ch01/391-openai.html)
 - [Thread Patrickogrady](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
-- [Thread 0Xcheeezzyyyy](ch01/1243-0.html)
+- [Thread 0Xcheeezzyyyy](ch01/1248-0.html)
 
 ---
 

@@ -9,23 +9,6 @@
 > **来源**：百度Geek说（鸽子王）。百度网盘主端 FE 团队在 CI/CD 流水线中嵌入 AICR（AI Code Review）强制检测链路的实战经验，覆盖架构设计、模型选型、误报治理、耗时优化、全流程规划。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-aicr-ai-code-review-ci-cd-entry.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("百度网盘主端 FE AICR AI Code Review 准入实践"))
-    核心数据
-    多智能体协作审查架构
-      关键设计原则
-    检测耗时管理
-    CICD vs Pre-commit 决策
-    全流程 CR 建设蓝图
-    与已有 wiki 实体关系
-    多角色审查架构的设计原理与制衡机制
-    模型能力 vs 规则约束的动态关系
-```
-
 ## 核心数据
 
 | 指标 | 数值 |
@@ -40,37 +23,6 @@ mindmap
 | GPT5.5 vs GLM5 相对检出 | 3.2x |
 
 ## 多智能体协作审查架构
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ```
 三路并行审查 Agent ──→ 聚合整理 Agent ──→ 核实 Agent ──→ 复核 Agent

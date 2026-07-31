@@ -2,7 +2,7 @@
 title: "GenPage: Towards End-to-End Generative Homepage Construction at Netflix"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: d32f8a64460b7a57ea7b07df7bb6c8038cb1f7d9d5d29e02026c3841fac8a078
 ---

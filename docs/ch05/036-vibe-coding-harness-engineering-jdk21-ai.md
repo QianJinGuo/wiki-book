@@ -10,25 +10,6 @@
 
 维护性工程（框架迁移、版本升级、安全修复）占工程团队大部分时间，传统 Vibe Coding 方式在处理这类任务时容易修改范围失控、依赖混乱、配置冲突。小米本次实践的核心洞察是：不是让 AI 更"聪明"，而是让工程体系能够持续约束、复用和进化 AI 的能力。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 Vibe Coding 到 Harness"))
-    三部分框架
-      执行约束
-      经验沉淀 Skill 化
-      反馈闭环
-    效果数据
-    核心贡献
-    从自由生成到约束执行 AI 工程化的范式转折
-    维护性工程是 AI Agent 的理想场景
-    经验回流 知识复利的工程化实现
-    反馈闭环是 AI 可靠性的最后一公里
-    为 AI 写文档 而不是为人类写文档
-```
-
 ## 三部分框架
 
 ### 1. 执行约束
@@ -70,37 +51,6 @@ mindmap
 
 ## 效果数据
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
-
 | 指标 | 结果 |
 |------|------|
 | 文件修改量 | 30+ 个文件 / 50+ 个依赖变更 |
@@ -137,11 +87,11 @@ jdk-upgrade-lessons Skill 的设计将一次性的升级经验转化为可复用
 
 ### 4. 反馈闭环是 AI 可靠性的最后一公里
 
-本案例中最具实践价值的洞察之一是：AI 在执行复杂工程任务时，天然的"乐观偏差"需要通过工程机制来对抗。测试前置驱动验证将测试从"验证手段"提升为"合约执行器"——AI 在升级前就被告知"我会用这些测试来判定你是否成功"，这改变了 AI 的行为模式，使其更谨慎地执行修改。[Regression Tax 研究](../ch03/072-skills.html) 表明，缺乏闭环验证的 AI 技能会随使用次数增加而退化，而本案例中的反馈闭环正是对抗这种退化的有效手段。
+本案例中最具实践价值的洞察之一是：AI 在执行复杂工程任务时，天然的"乐观偏差"需要通过工程机制来对抗。测试前置驱动验证将测试从"验证手段"提升为"合约执行器"——AI 在升级前就被告知"我会用这些测试来判定你是否成功"，这改变了 AI 的行为模式，使其更谨慎地执行修改。[Regression Tax 研究](../ch03/071-skills.html) 表明，缺乏闭环验证的 AI 技能会随使用次数增加而退化，而本案例中的反馈闭环正是对抗这种退化的有效手段。
 
 ### 5. 开发者角色的根本性转变
 
-本案例中，小米开发者的核心工作不是写升级代码（这部分由 AI 执行），而是：定义约束边界、设计工具接口、编排执行流程、设计验证机制、总结升级经验。这验证了 [Agent Skill 规范、构建与设计模式](../ch04/269-agent-skill.html) 中提出的"开发者从代码编写者转变为约束设计者"的预判。当 AI 承担执行层后，人的核心价值是定义"什么能做、什么不能做、做到什么程度"——工程规范正在成为比代码更重要的资产。
+本案例中，小米开发者的核心工作不是写升级代码（这部分由 AI 执行），而是：定义约束边界、设计工具接口、编排执行流程、设计验证机制、总结升级经验。这验证了 [Agent Skill 规范、构建与设计模式](../ch04/271-agent-skill.html) 中提出的"开发者从代码编写者转变为约束设计者"的预判。当 AI 承担执行层后，人的核心价值是定义"什么能做、什么不能做、做到什么程度"——工程规范正在成为比代码更重要的资产。
 
 ## 实践启示
 
@@ -155,7 +105,7 @@ jdk-upgrade-lessons Skill 的设计将一次性的升级经验转化为可复用
 
 ### 3. Skill 是组织工程记忆的载体
 
-将升级流程封装为版本化、可复用的 Skill，使工程经验从"存在于个别开发者的脑中"转变为"存储在仓库中的可执行知识"。结合 [技能治理与 AI 注册中心](../ch04/271-skill.html) 中的思路，团队可以建立 Skill 的注册、发现、版本管理机制，让 AI 在执行任务时自动选择最匹配的 Skill 版本。
+将升级流程封装为版本化、可复用的 Skill，使工程经验从"存在于个别开发者的脑中"转变为"存储在仓库中的可执行知识"。结合 [技能治理与 AI 注册中心](../ch04/273-skill.html) 中的思路，团队可以建立 Skill 的注册、发现、版本管理机制，让 AI 在执行任务时自动选择最匹配的 Skill 版本。
 
 ### 4. 渐进式披露优于全量上下文
 
@@ -168,12 +118,12 @@ AI 的上下文窗口有限，一次性输入所有约束和参考信息会导�
 ## 相关实体
 
 - → [Harness Engineering](ch05/120-harness-engineering.html) — 本文是该方法论在维护性工程场景的完整实证
-- → [Agent Skill 规范、构建与设计模式](../ch04/269-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
+- → [Agent Skill 规范、构建与设计模式](../ch04/271-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
 - → [Vibe Coding 与 AI 软件工程](../ch09/175-vibe-coding-ai.html) — Vibe Coding 概念背景，与本案例的"约束 vs 自由"对比
 - → [腾讯 Harness Engineering 团队实践](ch05/120-harness-engineering.html) — 同一方法论在不同组织的实践对比
-- → [ScarfBench：企业 Java 框架迁移 AI 评测](../ch04/298-ai-agent.html) — 企业级迁移场景的基准评测，与本案例互补
-- → [技能治理与 AI 注册中心](../ch04/271-skill.html) — Skill 的注册发现与版本管理机制
-- → [Regression Tax：技能如何损害 LLM Agent](../ch03/072-skills.html) — 缺乏反馈闭环导致的技能退化问题，与本案例的闭环设计形成对照
+- → [ScarfBench：企业 Java 框架迁移 AI 评测](../ch04/030-ai-agent.html) — 企业级迁移场景的基准评测，与本案例互补
+- → [技能治理与 AI 注册中心](../ch04/273-skill.html) — Skill 的注册发现与版本管理机制
+- → [Regression Tax：技能如何损害 LLM Agent](../ch03/071-skills.html) — 缺乏反馈闭环导致的技能退化问题，与本案例的闭环设计形成对照
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe-coding-to-harness-engineering-jdk-upgrade-xiaomi.md)
 
 ---

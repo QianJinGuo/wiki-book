@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 22.1KB | `entities/ai-evals-methodology.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Evals 评估方法论"))
-    三种评估方法
-      人工评估
-      基于代码的评估
-      LLM-as-a-Judge
-    参考答案 vs 无参考答案
-    关键原则
-    与 Langfuse 的关系
-    AI Engineering Loop 的完整闭环
-    三种评估方法的互补关系
-    二元分数 vs 分级量表的设计哲学
-    判断是否需要自动评估器的决策框架
-```
-
 ## 三种评估方法
 ### 1. 人工评估
 手动查看输出、打分。**永远是最重要的第一步。** ^["Evals到底在评什么？一文拆解AI评估的三种方法 (Lotte Verheyden, Langfuse, 2026-05-20)"]
@@ -37,44 +18,6 @@ mindmap
 **局限：需要校准；可能与应用 LLM 共享盲点（同模型家族）。** 一个经人工标注校准 + 基于代码检查兜底的 LLM 裁判可以可靠。 ^["Evals到底在评什么？一文拆解AI评估的三种方法 (Lotte Verheyden, Langfuse, 2026-05-20)"]
 
 ## 参考答案 vs 无参考答案
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 | | 参考答案 | 无参考答案 |
 |--|---------|---------|
 | 机制 | 与预定义期望输出比较 | 只评估输出本身 |
@@ -207,10 +150,10 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 - **定期生产监控**：确保生产质量没有漂移
 ## 相关实体
 - [Better Harness Eval Trace Methodology](../ch05/009-harness.html)
-- [Anthropic Claude Next Gen Alex Infoq](ch01/604-anthropic-claude.html)
-- [Agent Skill Writing](../ch04/269-agent-skill.html)
-- [Programbench Agent Benchmark](../ch04/163-programbench-agent-benchmark.html)
-- [Llm As A Verifier Framework](ch01/1274-llm.html)
+- [Anthropic Claude Next Gen Alex Infoq](ch01/1354-anthropic-claude.html)
+- [Agent Skill Writing](../ch04/271-agent-skill.html)
+- [Programbench Agent Benchmark](../ch04/164-programbench-agent-benchmark.html)
+- [Llm As A Verifier Framework](ch01/637-llm.html)
 
 ---
 

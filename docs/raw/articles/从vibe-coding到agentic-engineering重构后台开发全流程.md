@@ -1,7 +1,7 @@
 ---
 sha256: a9c9a8206a2a
 title: "从Vibe Coding到Agentic Engineering：重构后台开发全流程"
-type: source
+type: raw-article
 tags: [mlops, wechat, ai-agent, engineering, agent-tools]
 source: wechat
 source_url: "https://mp.weixi"

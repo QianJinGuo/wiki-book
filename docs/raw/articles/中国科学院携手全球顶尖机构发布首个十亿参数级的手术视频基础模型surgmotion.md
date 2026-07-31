@@ -3,7 +3,7 @@ title: "中国科学院携手全球顶尖机构发布首个十亿参数级的手
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/SmG9AVWh5kRPhSHxgUH_Hg"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "9eb4a35e8f6a68b4e524cb7b86f293f5f61ae57c5bba4199647ab6fa532030fd"

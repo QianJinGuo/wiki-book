@@ -2,68 +2,11 @@
 
 ## Ch11.030 AWS Bedrock Dynamic Document Extraction Pipeline
 
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 > 📊 Level ⭐⭐ | 15.7KB | `entities/extract-data-with-on-demand-and-batch-pipelines-dynamically.md`
 
 # AWS Bedrock Dynamic Document Extraction Pipeline
 
 > **架构概述**：AWS 中国博客 2026-06-11 发布的智能文档处理（IDP）参考架构，演示了 Amazon Bedrock 文档处理 pipeline 如何**同时支持 on-demand 与 batch 两种推理模式**，并通过 **Bedrock Prompt Management 实现每文档动态 prompt 选取**。真实场景：客户拥有数亿份扫描 PDF 地契文档，格式各异（列表/表格/图示），需要 LLM 抽取标准化数据。架构以 FIFO SQS 队列触发 Lambda 函数，按文档级别路由到不同 prompt 版本与模型，结构化结果存入 DynamoDB。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Bedrock Dynamic Document"))
-    三条独有贡献
-    核心架构图
-    实现细节
-      On-demand 路径 SQS FIFO Lambda
-      Batch 路径 Bedrock Batch Inference
-      Prompt Management 模式
-    与现有实体的关系
-      Aws Bedrock Intelligence Message
-      Process Financial Documents Using
-      差异化
-    与 agent harness 主题的关联
-    引用
-```
 
 ## 三条独有贡献
 
@@ -170,7 +113,7 @@ Lambda 处理流程：
 
 ## 相关实体
 
-- [from pdfs to insights: architecting an intelligent document](ch11/248-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+- [from pdfs to insights: architecting an intelligent document](ch11/249-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)
 
 ## 深度分析
@@ -196,7 +139,7 @@ Lambda 处理流程：
    - 实践价值：这是 agent/harness 可观测性设计的极简参考实现，可推广到任何需要 trace LLM 调用质量的场景。
 
 5. **按文档格式动态选 prompt 是提升提取精度的关键工程细节**
-   - 核心观点：文章强调"地契文档有 3 种格式变体（编号列表/表格/图示），不假设一个 prompt 适用所有"。这与 [Optimize Blueprint Extraction Accuracy In Amazon Bedrock Dat](../ch12/041-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.html) 的"跨版面泛化"问题呼应，但本文给出了具体的工程解法。
+   - 核心观点：文章强调"地契文档有 3 种格式变体（编号列表/表格/图示），不假设一个 prompt 适用所有"。这与 [Optimize Blueprint Extraction Accuracy In Amazon Bedrock Dat](../ch12/040-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.html) 的"跨版面泛化"问题呼应，但本文给出了具体的工程解法。
    - 技术要点：每种文档格式对应独立的 prompt（3 格式 × 2-3 任务 = 6-9 prompts），SQS 消息的 `prompt_id` 字段按文档格式路由选择。这是"格式感知 prompt 路由"的工程实现。
    - 实践价值：在实际 IDP 项目中，按格式分 prompt 的准确率提升往往比优化单一 prompt 更显著，因为不同格式的版面特征差异远大于同一格式内的措辞差异。
 

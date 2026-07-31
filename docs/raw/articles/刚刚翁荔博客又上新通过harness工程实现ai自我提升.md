@@ -3,7 +3,7 @@ title: "刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/kZrryL8_fxfq2pSFw6LSqg"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 81
 tags: [raw]
 sha256: "5562e1dce1942488629cec7b8690a4412fb8f8cd11d5fbdd32a00238d1e744c1"

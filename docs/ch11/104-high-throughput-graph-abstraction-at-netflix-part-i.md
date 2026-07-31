@@ -2,70 +2,13 @@
 
 ## Ch11.104 High-Throughput Graph Abstraction at Netflix: Part I
 
-> 📊 Level ⭐⭐ | 9.6KB | `entities/high-throughput-graph-abstraction-at-netflix.md`
+> 📊 Level ⭐⭐ | 9.7KB | `entities/high-throughput-graph-abstraction-at-netflix.md`
 
 # High-Throughput Graph Abstraction at Netflix: Part I
 
 > **Background**: Netflix 内部维护一个跨服务的"图"用于描述服务依赖、客户连接、用户体验路径。Part I 介绍 10M ops/sec 规模、跨 650TB 数据量的生产级图抽象挑战与设计取舍。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("High-Throughput Graph Abstraction"))
-    规模指标
-    设计取舍
-      写入路径
-      存储抽象
-      实时性 vs 准确性
-    创新点
-    与传统 Service Map 的差异
-    关键 trade-off
-    待续
-    层级化存储架构的工程哲学
-    边与属性的分离索引策略
-```
-
 ## 核心问题
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Netflix 内部 1,500+ 微服务每日产生海量 ops 事件（service → service, service → DB, service → user），需要构建实时图抽象用于：
 - 故障定位（"哪些服务依赖此 down 的下游？"）
@@ -133,7 +76,7 @@ Part II 将介绍 query engine、impact analysis 算法、client libraries。
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Plaid Effects](../ch05/094-ai.html)
+- [Plaid Effects](../ch05/095-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 相关主题

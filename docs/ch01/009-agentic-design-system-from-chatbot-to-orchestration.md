@@ -6,46 +6,14 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-design-system-from-chatbot-to-orchestration.md)
 
-
 ## 相关实体
 - [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](../ch04/049-nvidia-extreme-co-design-agentic-systems.html)
-- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/237-agentic.html)
-- [Agentic AI 系统架构与分层模型](../ch05/090-harness-skill.html)
-- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](../ch11/235-openclaw.html)
+- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/648-agentic.html)
+- [Agentic AI 系统架构与分层模型](../ch05/091-harness-skill.html)
+- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](../ch11/237-openclaw.html)
 - [快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客](../ch03/035-agent.html)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 **从工具到基础设施的范式转变**
 本文提出的核心命题是：设计系统正在经历从"人类专用资源"到"智能体可用基础设施"的根本性转变。传统设计系统的定位是供设计师和开发者查阅的文档库，其价值在于组件的数量、文档的完整性和视觉一致性。而 agentic design system 的价值衡量标准变成了：**智能体能否理解系统中的规则、意图和约束条件，并在人类监督下安全地执行操作**。
 这一转变的关键触发点是 Gartner 的预测数据：到 2026 年底，40% 的企业应用将嵌入任务专用 AI 智能体，而 2025 年这一比例还不足 5%。这种爆发式增长意味着设计系统团队必须重新思考其服务对象——不再仅仅是人或机器，而是人机协同的工作流。

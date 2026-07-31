@@ -2,7 +2,7 @@
 title: "Sakana Fugu Launches With 93.2 LiveCodeBench Score After Claude Ban"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: b5ffb376fd217323ff3819eaf5a8bd6761f5b1d6e9bcaff9d4ccb5d7826fa4a3
 ---

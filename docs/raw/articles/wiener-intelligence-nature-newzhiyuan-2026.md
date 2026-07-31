@@ -5,7 +5,7 @@ source_author: "新智元"
 source_publisher: "新智元"
 ingested: 2026-07-08
 sha256: "aaa9c9e18b0a88b3fe0ad0ccf8074877141a18d43ccdcf09eeb7cb5af2b96320"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [wiener-intelligence, reasoning-data-generation, nature-communications, cqra, closed-loop-feedback, causal-anchoring]
 ---

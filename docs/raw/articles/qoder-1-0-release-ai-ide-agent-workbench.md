@@ -1,6 +1,6 @@
 ---
 title: Qoder 1.0正式发布！从AI IDE迈向智能体自主开发工作台
-type: raw
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/l-L2_abmijjpG_XOCAMsZw
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

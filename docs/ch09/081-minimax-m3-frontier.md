@@ -9,28 +9,6 @@
 > [!summary] 核心洞察
 > MiniMax M3 是国内首个同时具备 Coding Frontier + 1M 上下文 + 原生多模态的开源模型。三大技术主线：MSA 稀疏注意力解决百万 token 可用化、原生多模态统一 token 空间、交互式用户模拟器实现从单轮代码生成到长期协作的训练范式变化。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MiniMax M3 开源 Frontier 模型"))
-    三件套能力
-    MSA MiniMax Sparse Attention
-      MSA 三个关键词
-      性能数据
-      稀疏路线对比
-    原生多模态
-    交互式用户模拟器训练
-      范式变化
-      FP8 GEMM 自主优化案例
-      PostTrainBench 自主训练模型
-    MiniMax Code 与定价
-    评估成绩
-    MSA 工程化突破的意义
-    原生多模态对 Coding Agent 的真实价值
-```
-
 ## 三件套能力
 
 | 能力 | 说明 | 意义 |
@@ -42,43 +20,6 @@ mindmap
 **核心判断：** 这三项不是并列卖点，而是一个系统能力的三个接口。任何一项短板都会拖垮整体表现。
 
 ## MSA：MiniMax Sparse Attention
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 长上下文难点：1M token 下算得动、跑得快、找得准。全注意力计算量近似平方级上升。
 
@@ -189,11 +130,11 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 5. **API 经济性已经发生结构性变化：** 同等价位下 M3 提供约 2 倍的 token 容量，DeepSeek API 的低价策略正在被主流厂商跟进。成本下行意味着 Agent 应用的大规模部署门槛降低，商业模式需要重新评估单位经济性。
 
 ## 相关实体
-- [Claude Code Open Source Model Enterprise Practice](../ch03/078-claude-code.html)
+- [Claude Code Open Source Model Enterprise Practice](../ch03/077-claude-code.html)
 - [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01/117-hy3-preview.html)
 - [Cline Open Source Agent Runtime Sdk](../ch03/035-agent.html)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
-- [How Open Model Ecosystems Compound](../ch01/917-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](../ch01/930-how-open-model-ecosystems-compound.html)
 
 - [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](../ch03/035-agent.html)
 

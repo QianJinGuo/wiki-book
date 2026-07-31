@@ -2,7 +2,7 @@
 title: "我把Seed 2 1 Pro塞进Claude Code 让它修我自己产品的bug 花叔"
 created: 2026-06-23
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 900ff1441af2dd5b5d7008452c3a6999f8a011fa6ed35b34f2189c0ec81a068c
 ---

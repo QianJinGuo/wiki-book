@@ -12,69 +12,11 @@
 > date: 2026-04-22
 > tags: #Claude #Agent #Skill #Prompt-Engineering #Web-Design #oklch
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我把 Claude Design 做成了 Skill"))
-    核心摘要
-    一 Claude Design 核心洞察
-      产品定位
-      效果数据
-    二 系统提示词核心理念拆解
-      角色定位 设计师 工匠 产品经理
-      工作流 先问后做 尽早出活
-      去除 AI 味的秘诀
-    三 web-design-engineer Skill 设计
-      为什么做这个 Skill
-      Skill 结构 约 400 行
-    四 实战对比
-      Demo 1 太空探索博物馆
-      Demo 2 独立摄影师个人网站
-    五 核心结论
-    设计工具范式的根本转移
-    提示词工程的结构性价值
-```
-
 ## 核心摘要
 拆解 Claude Design 约 420 行系统提示词的设计理念，并将其提炼成 ~400 行的 web-design-engineer Skill。核心结论：Claude Design 的竞争力 = 50% Opus 4.7 模型能力 + 50% 精心设计的 Prompt Engineering。
 ---
 
 ## 一、Claude Design 核心洞察
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 产品定位
 2026 年 4 月 17 日 Anthropic 发布，界面：左边聊天，右边画布。Figma 股价当天大跌。
 **Ryan Mather（Anthropic 设计团队）的关键一句话**：

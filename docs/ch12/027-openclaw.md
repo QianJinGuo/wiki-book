@@ -2,59 +2,12 @@
 
 ## Ch12.027 OpenClaw 安全和功能增强实践
 
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 > 📊 Level ⭐⭐ | 12.6KB | `entities/openclaw-security-and-feature-enhancement-practices.md`
 
 # OpenClaw 安全和功能增强实践
 
 > AWS 中国官方博客 2026-03-12 发布，作者"龙虾阿含"在 AWS EC2 上自托管 OpenClaw 后，从**安全防护**与**功能增强**两条主线整理的工程实践记录。本质是"不是官方教程，而是实际踩坑后的复盘"——把自托管 AI Agent 部署的实战安全风险与缓解措施系统化。
 >
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw 安全和功能增强实践"))
-    一 自托管 AI Agent 的安全范式差异
-    二 凭证散落问题
-    三 提示注入 理论风险 vs 真实风险
-    四 4 种 AWS 部署方式的工程含义
-```
-
 ## 相关实体
 
 - [discord 全平台端到端加密](ch12/096-discord.html)
@@ -127,7 +80,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 - 危险操作的二次确认（删除文件、修改配置、转账）
 - 沙箱化 Agent 进程（chroot / 容器 / separate user）
 
-这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
+这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
 
 ### 四、4 种 AWS 部署方式的工程含义
 
@@ -138,7 +91,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 3. **EKS Graviton 多租户（大规模）** —— 完整 Kubernetes 化，per-tenant namespace 隔离，适合 100+ 用户的 SaaS 化产品。
 4. **CI/CD 集成（持续运营）** —— 把 OpenClaw 配置 / Skill 版本化、灰度、回滚，适合生产级长期运营。
 
-这与 [EKS Graviton 多租户 OpenClaw 实践](../ch11/235-openclaw.html) 直接对应——后者是该文章中"方案 3"的工程细节展开。
+这与 [EKS Graviton 多租户 OpenClaw 实践](../ch11/237-openclaw.html) 直接对应——后者是该文章中"方案 3"的工程细节展开。
 
 ### 五、对其他自托管 Agent 的参考价值
 
@@ -164,14 +117,14 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 
 ## 关联实体
 
-- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/561-amazon-bedrock-agentcore.html)
-- [EKS Graviton 多租户 OpenClaw K8s 实践](../ch11/235-openclaw.html)
-- [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/561-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/566-amazon-bedrock-agentcore.html)
+- [EKS Graviton 多租户 OpenClaw K8s 实践](../ch11/237-openclaw.html)
+- [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/566-amazon-bedrock-agentcore.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/009-harness.html)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Claude Code vs OpenClaw Memory 对比](../ch03/078-claude-code.html)
-- [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/078-claude-code.html)
-- [Claude Code vs OpenClaw 使用 Ettin](../ch09/033-claude-code-openclaw-usage-ettin.html)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Claude Code vs OpenClaw Memory 对比](../ch03/077-claude-code.html)
+- [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/077-claude-code.html)
+- [Claude Code vs OpenClaw 使用 Ettin](../ch09/034-claude-code-openclaw-usage-ettin.html)
 - [Claude Managed Agents 自托管沙箱企业版](../ch04/710-claude-managed-agents.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

@@ -6,56 +6,11 @@
 
 # SSD Spec 驱动开发实战：从四条约束到 ASD Harness 的工程落地
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SSD Spec 驱动开发实战 从四条约束到 ASD"))
-    两个前提 重新理解 AI Coding 的成本结构
-    四条设计约束 工程判据
-    SSD 工程方案 五个设计内核
-    ASD Harness 三层开源架构
-    核心金句
-    相关页面
-```
-
 ## 摘要
 
 术哥 Spec-Driven AI 编程系列第三篇（实战篇），基于百人团队半年踩坑经验，提出 SSD（Superpowers-enhanced Spec-Driven Development）工程方案。核心发现：编码阶段提速 10 倍，端到端交付只快了 13%——中间 87% 的效率被验证和上下文损耗吃掉。文章从两个前提（意图→代码有损管道、Control 边际收益递减）推导出四条设计约束（减层/注入上下文/机器验证/自适应强度），并落成开源 ASD Harness（三层架构 + 8 步闸门管道 + 5 个 Agent Skill）。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 1. 两个前提：重新理解 AI Coding 的成本结构
 
@@ -133,7 +88,7 @@ ASD（Agent-Spec-Driven Development）是 SSD Harness 的开源实现，专门�
 
 ## 相关页面
 
-- [术哥三器对比：Comet/OpenSpec/Superpowers](ch05/111-ai-coding.html) — 同作者系列第二篇
+- [术哥三器对比：Comet/OpenSpec/Superpowers](ch05/112-ai-coding.html) — 同作者系列第二篇
 - [Spec 作为 AIOS 反熵架构](ch05/018-ai-native.html)
 - [OpenSpec Spec-Driven Development](ch05/050-openspec.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ssd-spec-driven-development-harness-asd-shuge-2026-06-17.md)

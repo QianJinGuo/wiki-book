@@ -4,7 +4,7 @@ title: "打破SWE-bench唯分数论，首个独立测量harness的基准开源�
 source: "机器之心"
 ingested: 2026-06-15
 sha256: "b5d7b8c1a2e3f4d5061728394a5b6c7d8e9f0a1b2c3d4e5f60718293a4b5c6d"
-type: raw
+type: raw-article
 tags: [sweb-bench, harness-evaluation, benchmark, coding-agent, openclaw, claw-swe-bench, tokenrhythm]
 ---
 

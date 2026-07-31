@@ -2,7 +2,7 @@
 title: "刚刚，Anthropic发布Sonnet 5，性能接近Opus 4.8，但不一定更便宜"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: e925a1fac00e4ac9606d1f657b26f805abcfa96626fc288e71641ba4a1bdfc49
 ---

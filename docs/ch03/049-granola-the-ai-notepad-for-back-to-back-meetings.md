@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 3.8KB | `entities/granola-the-ai-notepad-for-backtoback-meetings.md`
 
-
 ## 核心要点
 - Granola 是一款面向高频会议场景的 AI 原生会议记录工具
 - 核心差异化："AI 增强而非 AI 全替代"——人类与会者仍是会议的主体
@@ -12,39 +11,6 @@
 - 产品定位：结构化记录和摘要助手，而非试图完全接管会议
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 Granola 的产品定位揭示了一个垂直场景 AI 原生应用的机会窗口：高频、重复、信息密集的会议记录场景。
 
 **"AI 增强而非 AI 全替代"的设计哲学**：
@@ -78,10 +44,10 @@ Granola 的产品定位揭示了一个垂直场景 AI 原生应用的机会窗�
 5. **产品迭代方向**：从记录工具到会议智能助手，支持会议前的议程生成和会议后的任务跟踪
 ## 相关实体
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](../ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Anthropic_Cache_Tokenomics](../ch01/989-anthropic.html)
+- [Anthropic_Cache_Tokenomics](../ch01/1004-anthropic.html)
 - [Marc Andreessen On Builder Culture In The Age Of Ai The A16Z Show](../ch01/056-marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a1.html)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](ch03/019-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/048-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/granola-the-ai-notepad-for-backtoback-meetings.md)
 

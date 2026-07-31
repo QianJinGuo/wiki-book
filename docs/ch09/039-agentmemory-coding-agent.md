@@ -4,59 +4,10 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/agentmemory-coding-agent-local-memory.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentMemory Coding Agent 本地记忆系统"))
-    数据模型
-    检索机制
-    对外接口
-    竞品对比
-```
-
 ## 概述
 AgentMemory（rohitg00/agentmemory，npm: @agentmemory/agentmemory@0.9.20）不是又一个向量数据库包装器，而是一个**本地 Agent 记忆运行时**：把 hook 捕获、隐私过滤、观察记录、压缩、索引、检索、上下文注入、MCP 工具、REST API、viewer、审计和多 Agent 协作都放进了一个可启动的本地服务里。
 
 ## 核心架构
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 ```
 agentmemory = Node CLI + memory worker + plugin/hooks/skills
 iii         = Rust runtime / 本地服务引擎（iii-hq/iii）
@@ -146,7 +97,7 @@ combinedScore = bm25Weight*(1/(RRF_K+bm25Rank)) + vectorWeight*(1/(RRF_K+vectorR
 ## Related
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 
 ## 相关实体
 

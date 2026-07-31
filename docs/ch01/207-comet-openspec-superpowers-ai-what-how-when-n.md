@@ -8,34 +8,6 @@
 
 > **来源说明**：本文基于术哥（ShugeX / 运维有术）2026-06-17 发布的深度源码分析整理（《AI 编程总失控？Comet + OpenSpec + Superpowers 用文件系统管住 AI》，术哥无界系列第 142 篇 / AI 编程最佳实战「2026」系列第 42 篇）。作者显式声明「源码分析基于本地仓库版本，尚未在生产环境中完成全场景验证」，按 web-content-reviewer `honest-second-hand-interpretation-scoring` 自觉的局限性披露提高 c 评分。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("三器合一 Comet OpenSpec Superpowers"))
-    一 核心论点 AI 编程的瓶颈是工程纪律 不是模型能力
-    二 三器分工 WHAT HOW WHEN-NEXT
-    三 Superpowers 57 行 Shell 脚本的自举魔法
-      核心反直觉点
-      session-start 脚本核心逻辑
-      平台适配三层逻辑
-    四 OpenSpec Delta Spec Artifact Graph
-      Delta Spec 增量规格 brownfield-first
-    ADDED Requirements
-      Requirement Two-Factor
-    MODIFIED Requirements
-      Requirement Session Expiration
-    REMOVED Requirements
-      Requirement Remember Me
-      Artifact Graph 制品依赖图
-      个平台适配器
-    五 Comet YAML 状态机的工程纪律
-      五阶段状态机
-      合法的转换事件 5 种
-      阶段检测 first-match-wins 链路
-```
-
 ## 一、核心论点：AI 编程的瓶颈是工程纪律，不是模型能力
 
 术哥通过拆解三个 GitHub 开源项目的源码得出结论：
@@ -49,41 +21,6 @@ mindmap
 三个项目都没有依赖复杂的基础设施，核心载体就是 **Markdown 文件、YAML 配置和 Shell 脚本**。
 
 ## 二、三器分工：WHAT / HOW / WHEN-NEXT
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 这不是同类竞品，而是一条流水线的三层：
 
@@ -458,21 +395,21 @@ artifacts:
 
 ## 十一、与其他三器组合的关系
 
-- **vs [三器合一：gstack + Superpowers + OpenSpec](../ch05/111-ai-coding.html)**（AgentBuff, 2026-05-12）：第三器不同（gstack vs Comet），视角也不同（AgentBuff 偏「HARD-GATE 串联」+「TDD 与 /review 互补」，术哥偏「源码机制 + 平台适配 + 工程取舍」）。术哥文章更深入到 Shell 脚本 + YAML 状态机 + 9 平台 Hook + SHA256 追踪的具体实现
-- **vs [Superpowers 深度拆解](../ch05/094-ai.html)**（开源圆桌）：单项目深度。本实体是三项目系统视角
-- **vs [Hermes Agent Skills 源码分析](../ch04/439-hermes-agent-skills.html)**（术哥本人）：术哥对 Hermes 的源码分析风格一致（57 行 Shell、Markdown 为主、平台适配）。本实体是术哥对外部三项目（Comet/OpenSpec/Superpowers）的源码分析
+- **vs [三器合一：gstack + Superpowers + OpenSpec](../ch05/112-ai-coding.html)**（AgentBuff, 2026-05-12）：第三器不同（gstack vs Comet），视角也不同（AgentBuff 偏「HARD-GATE 串联」+「TDD 与 /review 互补」，术哥偏「源码机制 + 平台适配 + 工程取舍」）。术哥文章更深入到 Shell 脚本 + YAML 状态机 + 9 平台 Hook + SHA256 追踪的具体实现
+- **vs [Superpowers 深度拆解](../ch05/095-ai.html)**（开源圆桌）：单项目深度。本实体是三项目系统视角
+- **vs [Hermes Agent Skills 源码分析](../ch04/442-hermes-agent-skills.html)**（术哥本人）：术哥对 Hermes 的源码分析风格一致（57 行 Shell、Markdown 为主、平台适配）。本实体是术哥对外部三项目（Comet/OpenSpec/Superpowers）的源码分析
 - **vs [OpenSpec 规范驱动开发 SDD](../ch05/050-openspec.html)**：OpenSpec 单项目视角（Trae 原生支持）。本实体是三项目流水线视角
 
 ## 相关实体
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)
-→ [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](../ch05/111-ai-coding.html) — 同期同主题：gstack 作为第三器的视角
-→ [Superpowers Deep Dive Kaiyuandakashuo](../ch05/094-ai.html) — Superpowers 单项目深度
+→ [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](../ch05/112-ai-coding.html) — 同期同主题：gstack 作为第三器的视角
+→ [Superpowers Deep Dive Kaiyuandakashuo](../ch05/095-ai.html) — Superpowers 单项目深度
 → [Openspec Spec Driven Development Trae Solo](../ch05/050-openspec.html) — OpenSpec 单项目深度
 → [Openspec 四步法深度复盘 流程完整不等于代码正确](../ch05/050-openspec.html) — OpenSpec 四步法实战复盘
 → [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/050-openspec.html) — gstack + OpenSpec + Superpowers 生产级实践
-→ [Claude Code Skills Superpowers Practice](ch01/490-claude-code-skills-superpowers.html) — Claude Code + Superpowers 实践
-→ [Hermes Agent Skills Source Code Analysis Shuge](../ch04/439-hermes-agent-skills.html) — 术哥本人对 Hermes Agent Skills 的源码分析（方法论参照）
+→ [Claude Code Skills Superpowers Practice](ch01/492-claude-code-skills-superpowers.html) — Claude Code + Superpowers 实践
+→ [Hermes Agent Skills Source Code Analysis Shuge](../ch04/442-hermes-agent-skills.html) — 术哥本人对 Hermes Agent Skills 的源码分析（方法论参照）
 → [缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记](../ch05/050-openspec.html) — 同期同作者 24h 后反思
 
 ---

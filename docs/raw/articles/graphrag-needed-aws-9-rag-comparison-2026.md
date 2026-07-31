@@ -2,7 +2,7 @@
 title: "GraphRAG 是不是智商税？AWS 实测 9 种 RAG 方案"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: a282aea561bcbccc00e6066057c81f9798777e3bc10e54ede80dfa5dd8437d8b
 ---

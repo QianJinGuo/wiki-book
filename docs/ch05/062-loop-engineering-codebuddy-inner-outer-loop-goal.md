@@ -10,25 +10,6 @@
 
 腾讯工程师 eliqiao 发布的 Loop Engineering 实践指南，是**首个将 Loop Engineering 系统映射到具体产品（CodeBuddy）的完整实现文档**。核心贡献：**Inner/Outer Loop 概念模型**（ReAct = Inner Loop，Loop Engineering = Outer Loop）、**五阶段循环机制**（Discover → Plan → Execute → Verify → Iterate）、**六要素构建体系**、以及 CodeBuddy 三种循环驱动模式（/goal 条件驱动、/loop 时间驱动、Automations 跨会话）。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Loop Engineering 实践指南 CodeBuddy"))
-    InnerOuter Loop 概念模型
-    ReAct 四大局限 Loop Engineering 四大补位
-    五阶段循环机制
-    六要素构建体系
-    CodeBuddy 三种循环驱动模式
-      goal 条件驱动的持续工作
-      loop 时间驱动的循环任务
-      Automations 跨会话定时任务
-    范式演进链
-    三大风险 与 Loop Engineering 综合实战来源共享框架
-    实践案例
-```
-
 ## Inner/Outer Loop 概念模型
 
 本文最核心的理论贡献是将 ReAct 与 Loop Engineering 的关系明确定义为 **Inner Loop vs Outer Loop**：
@@ -50,43 +31,6 @@ Loop Engineering（Outer Loop）
 8 维度对比表覆盖：关注层次、循环粒度、状态管理、停止条件、验证机制、错误恢复、并行能力、运行周期。
 
 ## ReAct 四大局限 → Loop Engineering 四大补位
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 | 局限 | 症状 | Loop Engineering 解法 | CodeBuddy 实现 |
 |------|------|---------------------|---------------|
@@ -176,9 +120,9 @@ Loop Engineering    → 怎么管（跨任务编排、验证、状态管理）
 - [Loop Engineering 四层循环栈（LangChain）](ch05/004-loop-engineering.html)
 - [Loop Engineering 清华框架](ch05/004-loop-engineering.html)
 - [Agent Loop 8 个未解问题（腾讯陈进）](ch05/004-loop-engineering.html)
-- [OpenClaw Agent Loop 设计范式](../ch01/1036-openclaw-agent.html)
-- [AI Agent Loops Claude Code Codex](../ch03/078-claude-code.html)
-- [Hermes Agent Loop 架构](../ch04/236-hermes-agent-loop.html)
+- [OpenClaw Agent Loop 设计范式](../ch01/1049-openclaw-agent.html)
+- [AI Agent Loops Claude Code Codex](../ch03/077-claude-code.html)
+- [Hermes Agent Loop 架构](../ch04/239-hermes-agent-loop.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)
 
 ---

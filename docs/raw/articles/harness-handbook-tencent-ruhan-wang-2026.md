@@ -3,7 +3,7 @@ source_url: https://ruhan-wang.github.io/Harness-Handbook/
 source: web
 title: "Harness Handbook — Making Agent Harnesses Understandable, Auditable & Editable"
 ingested: 2026-07-18
-type: raw
+type: raw-article
 tags: [agent, harness, manual, behavior]
 sha256: 0544c4534ab2ee3b66ce8a21d28241f224420eec80201e3f90c75d83d215b14c
 ---

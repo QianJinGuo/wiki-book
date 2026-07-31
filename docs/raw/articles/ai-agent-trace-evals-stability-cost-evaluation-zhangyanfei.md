@@ -3,7 +3,7 @@ title: "AI Agent 落地：如何攻克稳定性、成本与评估难题？ — T
 source_url: "https://mp.weixin.qq.com/s/YXAzdvgpGwJBz-0EwW9Vkw"
 created: 2026-07-01
 updated: 2026-07-01
-type: article
+type: raw-article
 tags: [wechat, agent, evaluation, trace, harness, observability]
 ingested: 2026-07-01
 sha256: cc4b0372b9057ad93623f112f5e02569f4217a346b302a1bf192c29ef29d83be

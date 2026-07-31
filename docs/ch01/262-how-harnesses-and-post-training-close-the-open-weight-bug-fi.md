@@ -8,28 +8,6 @@
 
 > **Background**: Vincenzo Iozzo (security researcher) ran a controlled study with 5 open-weight LLMs against a single known bug to measure how much base-model architecture vs post-training (RLHF/instruction-tuning) drives vulnerability-finding capability. Result: post-training dominates — even small open models with good harness scaffolding match or beat larger base models.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How harnesses and post-training"))
-    Core thesis
-    Empirical setup
-    Key findings
-      Post-training is the dominant axis
-      Harness scaffolding 14-16x lift
-      GLM-51s edge is post-training not
-    Implications for the wiki
-      For AgentHarness engineering
-      For Security research
-      For the open-weight vs
-    Methodology strengths
-    Methodology caveats
-    Relation to existing wiki entities
-    Cross-link targets
-```
-
 ## Core thesis
 
 For vulnerability discovery on real code:
@@ -38,37 +16,6 @@ For vulnerability discovery on real code:
 - **GLM-5.1's empirical lead is largely post-training, not architecture** — when the same harness is applied, the gap narrows or reverses.
 
 ## Empirical setup
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 | Model | Architecture | Post-training | Size |
 |-------|--------------|---------------|------|
@@ -227,9 +174,9 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 ## 相关实体
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
 - [The It And Security Field Guide To Ai Adoption Tines](../ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/094-ai.html)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
-- [How Open Model Ecosystems Compound](ch01/917-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](ch01/930-how-open-model-ecosystems-compound.html)
 
 ---
 

@@ -2,7 +2,7 @@
 title: "OpenAI Tax AI 自我进化：Codex Eval 闭环 6 周 25%→86% + Symphony + MOSS"
 created: "2026-06-06"
 updated: "2026-06-06"
-type: raw
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/xAHmDUEgvHeilq1cXISxaQ"
 source_name: "新智元 WeChat MP"
 author: "新智元"

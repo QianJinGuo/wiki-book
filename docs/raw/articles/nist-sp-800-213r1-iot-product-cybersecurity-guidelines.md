@@ -2,7 +2,7 @@
 title: "NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines for the Federal Government"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 01c0a044e7125cb8ffa73ce23611c00f9d56d301a4ec737d07d7ca7b2c734a32
 ---

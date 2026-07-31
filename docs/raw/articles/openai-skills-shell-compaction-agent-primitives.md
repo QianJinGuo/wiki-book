@@ -2,7 +2,7 @@
 title: "OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语"
 created: 2026-05-28
 updated: 2026-05-28
-type: raw
+type: raw-article
 tags: [openai, skills, shell, compaction, agent-standards, glean, enterprise-agent, harness, prompt-spaghetti]
 sources:
   - https://mp.weixin.qq.com/s/S1juTn1FAd2MbifDrAuO4Q

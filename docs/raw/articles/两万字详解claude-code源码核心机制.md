@@ -1,7 +1,7 @@
 ---
 sha256: 93f59b321b0f59ac422285e357dec74b56c9f3dd8be86e1af35c2778665f1677
 title: "两万字详解Claude Code源码核心机制"
-type: source
+type: raw-article
 tags: [ai-agent, engineering, agent-tools, wechat]
 source: wechat
 source_url: "https://mp.weixi"

@@ -8,18 +8,6 @@
 
 > Source: [Fintech Engineering Handbook](https://w.pitula.me/fintech-engineering-handbook) | Score: v*c=48
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Fintech Engineering Handbook"))
-    For
-    Principleshttpwpitulamefintech-eng
-    Representing
-      Precision
-```
-
 ## Overview
 
 Markdown Content:
@@ -34,41 +22,6 @@ Welcome to the Fintech Engineering Handbook. This resource aims to describe the 
 To learn more about the background of this book, see [Appendix C](http://w.pitula.me/fintech-engineering-handbook#about).
 
 ## Principles[](http://w.pitula.me/fintech-engineering-handbook#principles)
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Everything you will read below is a way to adhere to the three principles:
 

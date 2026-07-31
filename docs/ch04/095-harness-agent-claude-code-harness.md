@@ -10,22 +10,6 @@
 
 阿里云泊予（2026-06-05）基于 6 个业务 Agent 评测实战，提出"用强 Agent 搭建评测 Harness"的工程范式：将评测逻辑从 Python 脚本（test_runner.py / report_generator.py）升级为 Agent 提示词（评测 Agent System Prompt）+ 三层指标框架 + system.question 数据列规范，单 Agent 评测全流程从 ~1.5 周压缩到 ~1-2 天。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 工程搭建式业务 Agent 评测方案 Claude"))
-    三层指标框架 L1 L2 L3
-    Harness 五步搭建法
-    与传统评测工程的对照
-    加速比 6 个 Agent 实战数据
-    评测 Agent 调被测 Agent 的 4 个常见踩坑
-    评测集设计四原则
-    LLM-as-Judge Rubric 设计心得
-    可复用资产 沉淀模板
-```
-
 ## 核心洞察
 
 - **范式转变**：传统评测是"人写评测代码 → 跑脚本 → 人看结果 → 人改代码"（周级启动，天级迭代）；Harness 式是"CC 搭建 Harness → 平台跑批 → CC 分析 → CC 调整 Harness"（天级启动，小时级迭代）。 
@@ -33,37 +17,6 @@ mindmap
 - **核心矛盾**：业务 Agent 迭代快（天级），传统评测工程搭建慢（周级）。 
 
 ## 三层指标框架（L1 / L2 / L3）
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 经过 6 个 Agent 实战沉淀的通用框架：
 
@@ -222,9 +175,9 @@ graph TB
 ## 相关主题
 
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) — AHE 通用 Harness 工程框架
-- [Claude Code Architecture](../ch03/078-claude-code.html) — Claude Code 架构（作为 Harness 搭建者的能力来源）
+- [Claude Code Architecture](../ch03/077-claude-code.html) — Claude Code 架构（作为 Harness 搭建者的能力来源）
 - LLM-as-Judge 通用方法
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/330-ai-coding-agent.html) — AI Coding Agent 质量防御五机制（评测即其中一环）
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/333-ai-coding-agent.html) — AI Coding Agent 质量防御五机制（评测即其中一环）
 
 ---
 

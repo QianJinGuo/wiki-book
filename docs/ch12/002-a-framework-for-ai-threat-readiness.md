@@ -2,58 +2,7 @@
 
 ## Ch12.002 A Framework for AI Threat Readiness
 
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 > 📊 Level ⭐ | 10.4KB | `entities/ai_threat_readiness_framework.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("A Framework for AI Threat Readiness"))
-    AI 驱动威胁的本质转变
-    双轴驱动框架的核心洞察
-    四大支柱的递进关系
-    红队的真实世界实验
-    建立持续发现-验证-修复的运营飞轮
-    将补丁响应升级为零日响应能力
-    构建分层代码扫描策略
-    建立上下文关联的检测能力
-```
 
 ## 核心要点
 - AI 正在加速漏洞发现与利用的整个生命周期，前沿模型已能自主发现零日漏洞、生成可用的利用代码、并链接多个弱点形成攻击链
@@ -103,9 +52,9 @@ AI 代码分析需要分层策略，而不是对所有代码一视同仁。首�
 框架最后强调了治理的重要性：建立明确的 ownership、定义预期结果、并用清晰的指标追踪进度。这些指标包括 SLA 遵守率、异常数量、资产和环境覆盖范围、以及针对定义安全结果的进展。
 关键实践：建立定义清晰的委员会、角色和决策流程；定义结果和关键指标以追踪进展并向执行层报告；创建策略、SLA 和异常流程以确保风险被一致地处理。指标体系应该覆盖从暴露发现到修复完成的全流程时间（MTTR），以及各层次的覆盖率。
 ## 相关实体
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/444-agentrun.html)
 - [Where Openclaw Security Is Heading Openclaw Blog](ch12/032-where-openclaw-security-is-heading-openclaw-blog.html)
-- [Vietnamtodevelopdomesticcloud](../ch01/1116-opd.html)
+- [Vietnamtodevelopdomesticcloud](../ch01/1119-opd.html)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
 - [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01/038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
 

@@ -3,7 +3,7 @@ title: "如何构建生产准备的AI代理：MCP、CLI与技能——适合合�
 source_url: "https://mp.weixin.qq.com/s/lW51nHefm7pEmhjKxEWOFw"
 author: "啊镒opc实验基地"
 created: 2026-05-26
-type: article
+type: raw-article
 tags: [mcp, cli, skill, agent, production, connection-stack, tool-calling]
 sha256: ""
 ---

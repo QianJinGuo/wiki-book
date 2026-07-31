@@ -7,7 +7,7 @@ source_published: 2026-05-11T17:08:24Z
 title: Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
 created: 2026-05-12
 updated: 2026-05-12
-type: entity
+type: raw-article
 tags: [aws, amazon-nova, multimodal-embeddings, manufacturing, retrieval, bedrock, s3-vectors]
 sha256: cf1a494ce9dda409afdbcdc5e581d1f10bd1aeb775a7595519e459712f8d18c4
 review_value: 8

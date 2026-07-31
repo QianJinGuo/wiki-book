@@ -2,7 +2,7 @@
 title: "Build the Agent or Power the Agent?"
 source_url: "https://tanayj.com/p/build-the-agent-or-power-the-agent"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: ff7a1e1946356443a6ede854bfaf8bfd9e4572ad0c1e54b19fb4d26ed2d75261
 ---

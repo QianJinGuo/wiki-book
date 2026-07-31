@@ -4,67 +4,11 @@
 
 > 📊 Level ⭐⭐ | 23.4KB | `entities/claude-code-skills-mcp-rules-source-analysis.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code Skills MCP Rules 源码分析"))
-    Rules 项目级行为规范的被动注入机制
-      什么是 Rules
-      文件发现与加载
-      注入位置 messages 而非 system
-    MCP 标准化工具协议的 RPC 调用
-      什么是 MCP
-      MCP 在 API 请求中占据两个位置
-      执行流程 真正的函数调用
-    Skills 可复用提示词的注入机制
-      什么是 Skills
-      列表注入与 token 预算
-      执行流程 提示词注入 不是函数调用
-    三者核心对比
-    回答三个常见困惑
-    实际使用建议
-```
-
 ## 核心命题
 
 **Rules、MCP、Skills 的本质差异，不在功能层面，而在信息注入 API 请求的位置。** 同一套 `tool_use` 协议之上，三者分别占据 `messages`（被动注入）、`tools[]` + `system`（标准化工具调用）、`messages`（提示词注入）三个不同插槽。理解这一点，就能拨开文档和博客中的概念迷雾。
 
 ## Rules：项目级行为规范的被动注入机制
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 什么是 Rules
 
@@ -209,11 +153,11 @@ Skills 有两种执行模式，**Inline 是默认模式**，Fork 需要 Skill �
 
 ## 相关实体
 
-- [Claude Code 架构解析：从 Skill 调用到 Prompt Cache](../ch03/078-claude-code.html)
+- [Claude Code 架构解析：从 Skill 调用到 Prompt Cache](../ch03/077-claude-code.html)
 - [Anthropic MCP 最新博客：Token 成本解法 + Tool Search](ch07/016-anthropic-mcp.html)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/120-harness-engineering.html)
-- [Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/070-claude-code-agent.html)
-- [Claude Code Governance：软规则与项目级行为规范](../ch03/078-claude-code.html)
+- [Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/069-claude-code-agent.html)
+- [Claude Code Governance：软规则与项目级行为规范](../ch03/077-claude-code.html)
 - [Agent Harness Context Management：Working Set 策略](../ch05/058-agent-harness.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

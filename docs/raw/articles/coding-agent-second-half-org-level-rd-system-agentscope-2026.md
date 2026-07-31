@@ -5,7 +5,7 @@ source_url: https://mp.weixin.qq.com/s/LA1AFSjb5ffTHDA2xkv0wQ
 author: 阿里云云原生 / AgentScope 社区
 published: 2026-06-12
 ingested: 2026-06-12
-type: article-summary
+type: raw-article
 tags: [coding-agent, agentscope, agentscope-java, harness, open-swe, stripe-minions, ramp-inspect, coinbase-cloudbot, organization-level, sandbox, draft-pr, plan-mode, tool-curation, sub-agent]
 sha256: 77f11ee32aa18f0862d039866162af0620cf07a7a1805c250751a43453a5b594
 ---

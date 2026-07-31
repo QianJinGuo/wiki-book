@@ -6,58 +6,11 @@
 
 # Loop 的产品视角——项目中心从人挪到 Agent 系统
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Loop 的产品视角项目中心从人挪到 Agent 系统"))
-    Loop 的两层价值
-    实证案例 定制刻字项链小生意的 Discord 运营
-    关键产品洞察
-    Dittos Loop For Codex
-```
-
 ## 核心论点
 
 钟十六（前阶跃 Agent 产品负责人）提出：**项目中心会从人变成 Agent 系统**。当 Loop 真正跑通后，发动机不再是人的每一步推动，而是 Agent 系统自行运转，人只在关键路口被请来拍板。
 
 ## Loop 的两层价值
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **内层**：多 Agent workflow 把一次复杂任务做得更闭环——执行 Agent + 验证 Agent，把"做了"变成"做到、验过、能交付"
 - **外层**：目标、状态、触发和记忆——它知道自己为什么做、现在做到哪、什么时候回来、哪些反馈要记住、哪些人类判断以后可以作为默认规则

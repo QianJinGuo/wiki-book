@@ -5,7 +5,7 @@ source_author: "百度Geek说"
 source_publisher: "百度Geek说"
 ingested: 2026-07-08
 sha256: "188225422da0d7031993b8f60f8ddbeb293df11b2e235588e8104e65cd050483"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [baidu, ai-infra, cosmos-3, training-optimization, torch-compile, activation-checkpointing, rdma, domestic-gpu]
 ---

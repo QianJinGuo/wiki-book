@@ -1,6 +1,6 @@
 ---
 title: "dataflow harness data pipeline agent pku 2026"
-type: source
+type: raw-article
 created: "2026-07-27"
 updated: "2026-07-27"
 sha256: "2a6d06ec08bf1f6558b2fb57c4878e8d67f19cbcb2fe894385a9b4caf266fb90"

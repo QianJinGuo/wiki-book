@@ -4,7 +4,7 @@ author: "叶小钗"
 source: "兔兔AGI"
 source_url: "https://mp.weixin.qq.com/s/yU3-ciE-R6pJ1tluHlYF3Q"
 created: 2026-05-25
-type: raw
+type: raw-article
 tags: [article]
 sha256: 984445a33b3b477e6c9c0ee7b738ed534568c69dc357e90c6e2753215f0d7b02
 ---

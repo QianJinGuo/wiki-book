@@ -1,6 +1,6 @@
 ---
 title: Activity-Focused Design
-type: entity
+type: raw-article
 tags: [ux-design, methodology, ux-design]
 source: newsletter
 source_url: https://ixdf.org/literature/article/activity-focused-design

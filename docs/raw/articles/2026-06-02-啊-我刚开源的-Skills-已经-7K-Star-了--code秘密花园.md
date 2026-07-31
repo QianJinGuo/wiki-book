@@ -2,7 +2,7 @@
 title: "啊 我刚开源的 Skills 已经 7K Star 了  code秘密花园"
 created: 2026-06-02
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: c51dd49c2c90139f1ec4ad867e71c0cfd3c94088f4c3fad00ede25191fbd9934
 ---

@@ -11,7 +11,7 @@ source_url: https://www.interconnects.ai/p/the-distillation-panic
 tags:
 - article
 title: The distillation panic
-type: source
+type: raw-article
 updated: '2026-06-07'
 ---
 

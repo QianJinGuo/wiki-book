@@ -9,56 +9,11 @@
 
 # PilotDeck：清华系 Agent 操作系统
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("小龙虾彻底凉了 清华团队连夜开源Agent神器PilotDeck"))
-    三个核心工程突破
-    架构哲学 从模型调用到环境自治
-    子Agent路由 跨越请求级路由的思维陷阱
-    白盒记忆 重新定义AI 记忆的可观测性
-    开发团队的并行化策略
-    产品团队的 AI 行为可审计性
-    成本控制与资源分配
-    企业隐私与本地部署
-```
-
 ## 一句话
 
 清华大学 THUNLP / OpenBMB / 面壁智能 / AI9stars 联合开源 PilotDeck——独立 WorkSpace + 白盒可控记忆 + 子Agent级智能路由（Token 降70%），完全开源。
 
 ## 三个核心工程突破
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 **成本**：子Agent级路由，不是 per-request 路由，避免 KV-cache 打断，综合节省 70-78% token
 
@@ -152,7 +107,7 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 
 **路由机制延伸**：第 1 来源只覆盖"按规则 + 自然语言选模型"，第 2 来源**新增一维度**——路由可以**冷启动本地模型**（VoxCPM 案例）。这一能力是 [Harness 7 层架构](../ch05/120-harness-engineering.html) 中"环境即服务"层的具体实现：路由不只决策，更可动态拉起新资源。
 
-**OpenClaw 横向对比的反思**：两源都把 OpenClaw 定位"范式探路者而非生态建设者"，呼应 [OpenClaw 8 部分总结](../ch11/235-openclaw.html) 提到的"安全/性能/可观测性短板"——PilotDeck 正是补足这些短板的后继者（隔离、记忆可控、成本）。
+**OpenClaw 横向对比的反思**：两源都把 OpenClaw 定位"范式探路者而非生态建设者"，呼应 [OpenClaw 8 部分总结](../ch11/237-openclaw.html) 提到的"安全/性能/可观测性短板"——PilotDeck 正是补足这些短板的后继者（隔离、记忆可控、成本）。
 
 ### 实践启示（从 2 源综合后）
 
@@ -173,7 +128,7 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 - → [第 1 原文存档（新智元 ASI启示录 2026-05-28）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-agent-os-openbmb-tsinghua.md)
 - → [第 2 原文存档（数据派THU 2026-06-09）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-data派thu-2026.md)
 ## 相关实体
-- [Minicpm5 1B Forgetrain Machine Heart](../ch05/094-ai.html)
+- [Minicpm5 1B Forgetrain Machine Heart](../ch05/095-ai.html)
 
 ---
 

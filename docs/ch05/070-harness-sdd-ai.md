@@ -5,7 +5,6 @@
 > 📊 Level ⭐⭐ | 7.8KB | `entities/harness-sdd-duiwu-ai-fullstack-dewux.md`
 
 # 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术
-
 ## 一、核心理念：Harness 思维 — 让 AI 模仿，而不是凭空创造
 全栈 SDD 开发中，最常见也最致命的错误是：让 AI 从零开始写代码。AI 模型具备"通识能力"，给它一个需求描述，它确实能生成可运行的代码。但问题在于，这些代码往往是"外星代码"：
 
@@ -13,42 +12,11 @@
 - 复用率低（没有利用项目已有的公共组件、工具函数、请求封装）
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 - [告别氛围编程基于 Harness 治理和 Sdd 的团队级 Ai 研发范式演进与实践](ch05/009-harness.html)
 - [Wow Harness V3 Governance Protocol](ch05/009-harness.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html)
 - [Stepan Gershuni Ai Native Startup Guide](ch05/018-ai-native.html)
-- [Oz Multi Harness Cloud Agent Orchestration](../ch04/518-agent-orchestration.html)
+- [Oz Multi Harness Cloud Agent Orchestration](../ch04/523-agent-orchestration.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-sdd-duiwu-ai-fullstack-dewux.md)
 

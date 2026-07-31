@@ -4,7 +4,7 @@ source: "蒸馏小余"
 source_url: "https://mp.weixin.qq.com/s/OgyHoH_7z4_GX5c2g3ZfLA"
 ingested: 2026-06-16
 sha256: "cacc93b7b9ee06737de763e4046e277c2da6b6cd7c4eff5cc06f47c250e6c03c"
-type: raw
+type: raw-article
 tags: [agent-memory, memory-in-the-llm-era, iclr2026, arxiv-2604-01707, four-module-framework, locomo, longmemeval, mem0, memoryos, memtree, memos, modular-architecture, memory-benchmark, distillery-xiaoyu, 2026, engineering-principles, position-bias, token-cost, memory-governance]
 review_value: 8
 review_confidence: 8

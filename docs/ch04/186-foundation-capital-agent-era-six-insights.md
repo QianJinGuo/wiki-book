@@ -6,66 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-capital-agent-era-six-insights.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Foundation Capital Agent Era Six"))
-    三大拐点框架
-    六条洞察
-      洞察一 Agent 是主用户
-      洞察二 可插拔 微调
-      洞察三 上下文图谱 真正护城河
-    核心量化数据
-    从工具到用户的范式转移
-    Harness 范式的持久性论证
-    上下文图谱的结构性含义
-    Agent 部署质量危机的深层原因
-    对 AI 产品创始人的行动清单
-```
-
 ## 核心定位
 Foundation Capital 合伙人 Ashu Garg（2026-05-07）基于 Turing CEO Jonathan Siddharth + Arize CPO Aparna Dhinakaran 对谈的投资 thesis。核心命题：Agent 才是软件的主用户；上下文图谱是真正护城河；反馈闭环本身是产品。
 
 ## 三大拐点框架
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 | 拐点 | 时间 | 核心 |
 |------|------|------|
 | ChatGPT 时刻 | 2022年底 | 预训练+RLHF 证明语言模型可做通用界面 |
@@ -169,7 +113,7 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 
 ## 相关概念
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — "可插拔>微调"洞察与 Harness Engineering 的核心命题完全一致：框架比模型更持久
-- [Factory Mission](../ch01/1235-factory-mission-multi-agent-architecture.html) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
+- [Factory Mission](../ch01/1240-factory-mission-multi-agent-architecture.html) — 多 Agent 协作框架 vs. Foundation Capital 的 Agent 主用户原则相互印证
 - [Autobrowse](../ch07/040-autobrowse-browserbase-persistent-skill.html) — 同样的"反馈循环=产品"洞察，Autobrowse 通过技能文件实现自我改进闭环
 - [Anthropic Claude Managed Agents](../ch01/212-anthropic-claude-managed-agents.html) — Claude Managed Agents 的 Outcomes Loop 自我评估是"反馈闭环=产品"的具体工程实现
 -  — Jonathan Siddharth 是 Turing CEO，其 Agent 优先实践是本篇发言的背景注脚；三角 Orchestrator+Worker+Validator 架构与本文洞察相互印证
@@ -180,7 +124,7 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 ## 相关实体
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/035-agent.html)
-- [Agent 时代架构师技能指南](../ch03/072-skills.html)
+- [Agent 时代架构师技能指南](../ch03/071-skills.html)
 
 ---
 

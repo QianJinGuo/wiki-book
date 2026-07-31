@@ -8,62 +8,7 @@
 
 > Netflix Tech Blog 2026-06-03 工程实践：解决 Apache Cassandra 4.x 在 PB 级时序数据上 wide partition 问题的完整方案。从 `nodetool tablehistograms` 的 percentile 检测 → DynamicTimeSliceConfigWorker 自动调整 time_bucket → **async 动态分区管道（Detection / Planning & Splitting / Serving Reads）** 在 TimeSeries ID 粒度上做细粒度拆分，附 Decision Tree（Partial Return / Block ID / Dynamic Split）。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Dynamically Splitting Wide"))
-    背景 Wide Partition 的代价
-    基础策略 Time Slices Time Buckets
-    现有方法的局限
-    解决方案 1 Time Slice Re-Partitioning
-      当 Partial ID 宽时 三个备选
-    解决方案 2 Dynamic Partitioning per
-      Stage 1 Detection
-      Stage 2 Planning Splitting
-      Stage 3 Serving Reads
-    关键概念参考
-    分层决策树的价值 从一刀切到精确匹配场景
-    Read-Path Detection 的反直觉设计
-```
-
 ## 背景：Wide Partition 的代价
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Netflix TimeSeries Abstraction 每天摄入 PB 级时序事件数据，依赖 Cassandra 4.x 作为底层存储。理想读延迟为**个位数 ms**，但当 partition 增长过宽时：
 
@@ -263,11 +208,11 @@ Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition �
 ## 来源
 
 ## 相关实体
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](ch11/224-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](ch11/206-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam Domestic Cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1148-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
-- [Toto 2](ch11/167-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](ch11/224-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1169-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Toto 2](ch11/168-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](ch11/206-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
 

@@ -9,70 +9,11 @@
 > 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/msa-sparse-attention-three-kingdoms-huashu-2026-06-12.md)，并参考 MiniMax M3 论文 *MiniMax Sparse Attention*（https://github.com/MiniMax-AI/MSA/blob/main/docs/MiniMaxSparseAttention.pdf ）。
 > 这是一份把 2026 年稀疏注意力赛道 4 份方案 (NSA / DSA / MoBA / MSA) 摆到一张桌上的完整对比。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MSA 稀疏注意力三国杀 NSA DSA MoBA MSA"))
-    为什么大家都奔向稀疏
-    MSA 架构 粗筛 精算
-      第一步 粗筛
-      第二步 精算
-    索引分支训练 KL 对齐
-    Kernel 创新 Outer Gather Q
-    MSA 性能数据 109B 实验模型 1M 上下文
-    MSA 能力不掉 3T token 对照实验
-    附录最有意思 head 涌现的三种模式
-    三国杀 3 个核心分歧轴
-      分歧一 颗粒度token 级还是块级
-      分歧二 压不压 KV
-      分歧三 要不要辅助分支
-```
-
 ## 一句话总结
 
 2026 年稀疏注意力已成国产长上下文模型的"标配动作"——DeepSeek NSA (2025-02 论文) + DSA (2025-09 V3.2 落地)、Kimi MoBA (2025-02)、MiniMax MSA (2026-06 M3 配套)。**四份方案表面相似，骨子里在三个分歧轴 (颗粒度 / KV 压缩 / 辅助分支) 上分道扬镳**，外加一条正在收敛的暗线（训练配方从端到端 → 蹭信号 → KL 对齐）。背后是两种信念：DeepSeek 押"信息禁得起压"，MiniMax 押"要省就省在挑选上"。
 
 ## 为什么大家都奔向稀疏
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 Transformer full attention 计算量是 **O(n²)**——1M 上下文下算力直接吃满，KV cache 把显存也吃满。**稀疏注意力的核心思路：生成下一个词时，没必要真的回头看完前面 100 万个 token，挑出真正相关的一小撮来精算**。
 
@@ -312,12 +253,12 @@ MSA 论文花了大量篇幅讲"试过、没用、砍掉"：
 ## 与现有实体的互补关系
 
 - [MiniMax M3 开源 Frontier 模型](../ch09/081-minimax-m3-frontier.html) — MSA 是 M3 的核心架构创新
-- [DeepSeek V4 Flash Pro 1M 上下文](ch01/1073-deepseek-v4-flash-pro.html) — 压得狠路线的最新代表
-- [DeepSeek V4 训练方法学](ch01/1151-deepseek-v4.html) — 训练配方对比
+- [DeepSeek V4 Flash Pro 1M 上下文](ch01/1074-deepseek-v4-flash-pro.html) — 压得狠路线的最新代表
+- [DeepSeek V4 训练方法学](ch01/710-deepseek-v4.html) — 训练配方对比
 - [Lighthouse Attention](https://github.com/QianJinGuo/wiki/blob/main/entities/lighthouse_attention.md) — 另一款稀疏 attention 方案（对称 Q/K/V 池化）
 - [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 稀疏注意力的概念基础
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 长上下文管理的核心议题
-- [近期 LLM 架构进展](ch01/1274-llm.html) — 注意力架构的近期综述
+- [近期 LLM 架构进展](ch01/637-llm.html) — 注意力架构的近期综述
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — KL 对齐作为 "强教弱" 范式的理论基础
 - [M3 开源三件套](../ch09/081-minimax-m3-frontier.html) — 同一文章的不同角度解读
 

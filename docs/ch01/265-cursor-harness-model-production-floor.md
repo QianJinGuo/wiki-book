@@ -13,22 +13,6 @@
 
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cursor Harness Model Production"))
-    太长不看
-    模型决定上限 Harness 决定下限
-    把 Harness 当线上系统运营
-    从静态上下文到动态上下文
-    评估三层体系
-    模型 Harness 作为发布单元的工程含义
-    动态上下文 vs 静态上下文 Token 经济学的范式转移
-    Keep Rate 重新定义 Agent 质量的代理指标
-```
-
 ## 太长不看 
 
 核心结论速览：
@@ -42,37 +26,6 @@ mindmap
 ---
 
 ## 核心洞察 
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 模型决定上限，Harness 决定下限
 
@@ -192,13 +145,13 @@ Claude Code Subagents 的设计实际上就是这种路由抽象的具体实现 
 
 - [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) — 上下文≠聊天记录而是工作集 + 四框架对比 + compaction 光谱 + 九字自查表
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html) — Code as Agent Harness 综述
-- [Openclaw Prompt Context Harness](../ch11/235-openclaw.html) — 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
-- [Claude Code Deep Architecture Analysis](../ch03/078-claude-code.html) — Claude Code 源码级架构深度解析：工具并发、延迟加载、权限系统、Plan 模式、Compact 机制
-- [Cat Wu Anthropic Pm Interview](ch01/989-anthropic.html) — Cat Wu PM 访谈：产品节奏、100% 自动化原则、模型进化对 Harness 的影响
+- [Openclaw Prompt Context Harness](../ch11/237-openclaw.html) — 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
+- [Claude Code Deep Architecture Analysis](../ch03/077-claude-code.html) — Claude Code 源码级架构深度解析：工具并发、延迟加载、权限系统、Plan 模式、Compact 机制
+- [Cat Wu Anthropic Pm Interview](ch01/1004-anthropic.html) — Cat Wu PM 访谈：产品节奏、100% 自动化原则、模型进化对 Harness 的影响
 
 ## 相关实体
 
-- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/989-anthropic.html)
+- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/1004-anthropic.html)
 - [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](https://github.com/QianJinGuo/wiki/blob/main/entities/nextie-alpha-cognitive-model-4b-on-device.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-harness-model-production-floor.md)

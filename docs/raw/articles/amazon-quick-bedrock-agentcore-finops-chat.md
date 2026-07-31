@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/based-on-amazon-quick-amazon-b
 ingested: 2026-06-01
 feed_name: AWS
 source_published: 2026-05-28T09:52:31Z
-type: article
+type: raw-article
 sha256: a382610aafce2f66884247b0066e92f8fa38bb8a50e089c0e026da91d7f628fa
 tags: ['finops', 'aws', 'bedrock', 'agentcore', 'cost-optimization']
 ---

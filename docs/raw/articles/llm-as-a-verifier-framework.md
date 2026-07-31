@@ -2,7 +2,7 @@
 
 title: "LLM-as-a-Verifier: A General-Purpose Verification Framework"
 sha256: 75e0fc88dbc7bda09b969b341594c9b4c744618019a6786ed5419ec0e45b8de5
-type: source
+type: raw-article
 source: newsletter
 source_url: https://llm-as-a-verifier.notion.site/
 tags: [llm, verification]

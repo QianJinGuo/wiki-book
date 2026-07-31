@@ -1,6 +1,6 @@
 ---
 title: "Guide to Security Operations at Machine Speed | Arctic Wolf"
-type: raw
+type: raw-article
 tags: [security, soc, operations, arctic-wolf]
 source: newsletter
 source_url: "https://arcticwolf.com/resource/aw/guide-to-security-operations-at-machine-speed"

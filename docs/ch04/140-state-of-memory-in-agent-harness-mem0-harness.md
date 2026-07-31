@@ -9,60 +9,11 @@
 > 出处: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-memory-in-agent-harness-mem0-2026.md) · 作者 mem0 · 2026-06-11
 > 原帖: x.com/mem0ai/status/2061822612398014782
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("State of Memory in Agent Harness"))
-    TLDR
-    Memory 三层分类法
-    九大 Harness 横评
-      设计模式对照表
-      几个真正的亮点
-    Benchmark 批判
-    共同短板与 harness boundary 论点
-    研究层未解决的三个坑
-    Mem0 的定位
-    价值与局限
-```
-
 ## TL;DR
 
 mem0 团队系统横评了 9 个主流 [agent harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的 memory 机制（Claude Code、Anthropic Managed Agents、OpenAI Codex、GitHub Copilot、OpenClaw、`Hermes Agent`、AWS Bedrock AgentCore、Windsurf、Devin），得出三个结论：（1）memory 已经是 harness 的核心能力；（2）大多数实现停留在"本地、有限、关键词式、难共享"阶段；（3）这些限制本质上是 **harness boundary 的限制**，因此 mem0 把自己定位为 cross-harness 的基础设施层。
 
 ## Memory 三层分类法
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 文章先建立分析框架：把 memory 按"**存在哪里**"而非"**存什么**"划三层，因为失败模式不同。
 

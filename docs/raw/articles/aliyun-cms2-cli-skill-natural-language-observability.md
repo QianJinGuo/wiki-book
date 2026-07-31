@@ -5,7 +5,7 @@ title: "告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测�
 author: 铖朴、珂帆
 publisher: 阿里云云原生
 date: 2026-06-07
-type: article
+type: raw-article
 ingested: 2026-06-07
 review_value: 8
 review_confidence: 9

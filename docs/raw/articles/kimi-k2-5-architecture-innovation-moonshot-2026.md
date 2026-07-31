@@ -5,7 +5,7 @@ source_url: https://mp.weixin.qq.com/s/-LlryKjaW1jS_UouZwAU7Q
 author: 朱洁 (架构师带你玩AI)
 published: 2026-06-12
 ingested: 2026-06-12
-type: article-summary
+type: raw-article
 tags: [kimi, k2.5, moe, moonshot, architecture, one-layer-routing, open-source]
 sha256: 5b575ee54f4b9a3bd79eb80642a60e0857892959401b27d6d40cb4a4719ea139
 ---

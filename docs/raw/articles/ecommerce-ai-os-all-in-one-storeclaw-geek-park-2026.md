@@ -4,7 +4,7 @@ source: "Cynthia / 极客公园"
 source_url: "https://mp.weixin.qq.com/s/dVjKyrh_dyg1YkHlOUzXFA"
 ingested: 2026-06-16
 sha256: "8f576d64708db4b639f9afeb35929cbd4a240c873664aaa6569e90698df414f0"
-type: raw
+type: raw-article
 tags: [ecommerce, ai-operating-system, ai-os, all-in-one, storeclaw, salesforce-headless, shopify-sidekick, amazon-seller-assistant, sap-joule, atlassian-rovo, google-workspace-gemini, e-commerce-ai, knowledge-skill, industry-knowhow, mcp, agent-platform, 2026, geek-park]
 review_value: 7
 review_confidence: 7
@@ -155,5 +155,5 @@ StoreClaw 预装几十个电商相关 Skills（Listing 优化/关键词研究/GE
 → [[entities/exploring-openclaw-use-cases-in-ecommerce-platforms|OpenClaw 电商平台应用场景]] — OpenClaw 工具视角
 → [[entities/fast-fashion-ecommerce-agent-design-8-websocket-voice-system|快时尚电商语音系统 (AWS)]] — 语音交互电商 Agent
 → [[entities/vivo-ai-sales-guide-ecommerce-agent|vivo AI 导购]] — vivo 单品牌 AI 导购
-→ [[entities/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future|Thrive 1 亿投资 Shopify AI]] — Shopify AI 战略投资
+→ [[entities/thrive-capital-bets-100-million-on-shopifys-ai-future|Thrive 1 亿投资 Shopify AI]] — Shopify AI 战略投资
 → [[raw/articles/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026|原文存档（本篇）]]

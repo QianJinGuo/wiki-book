@@ -3,7 +3,7 @@ title: "JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins"
 source_url: "https://blog.jetbrains.com/platform/2026/06/marketplace-ecosystem-security-update-malicious-ai-plugins/"
 ingested: 2026-06-19
 sha256: b0d99d9f23acf028
-type: article
+type: raw-article
 tags: [security, supply-chain, jetbrains, marketplace, ai-plugins, api-key-theft]
 created: 2026-06-19
 ---

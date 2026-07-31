@@ -5,7 +5,7 @@ source_site: "机器之心"
 author: "机器之心发布"
 ingested: "2026-07-08"
 sha256: "e81c10e3eba7810a8b4b268dde9f042a8c69b984d68c758f6410ba64dffeae32"
-type: raw
+type: raw-article
 tags:
   - evermind
   - raven

@@ -3,7 +3,7 @@ title: "How Semgrep Cut Taint Analysis Time by 75%"
 source_url: "https://semgrep.dev/blog/2026/how-we-cut-semgreps-taint-analysis-time-by-75-percent/"
 ingested: 2026-06-18
 sha256: ""
-type: article
+type: raw-article
 tags: [security, static-analysis, semgrep, engineering, ai]
 created: 2026-06-18
 ---

@@ -3,7 +3,7 @@ title: "不用人类手写训练框架了！AI自己写代码，训出1B端侧�
 source_url: "https://mp.weixin.qq.com/s/2tdHV01FL_YGUmZQ12DS2A"
 author: "机器之心"
 created: 2026-05-26
-type: article
+type: raw-article
 tags: [minicpm, forgetrain, edge-agent, openbmb,面壁,端侧模型,ai-train]
 sha256: ""
 ---

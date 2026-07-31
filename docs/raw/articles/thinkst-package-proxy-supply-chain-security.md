@@ -2,7 +2,7 @@
 title: "Enhance your Supply Chain Security with our Package Proxy Tool"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 466d2531ba3f137ff2a4a7b640bb558c5778424c3d0602643551499c8772ee40
 ---

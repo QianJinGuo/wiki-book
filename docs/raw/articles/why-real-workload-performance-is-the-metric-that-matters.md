@@ -2,7 +2,7 @@
 title: "Why Real Workload Performance is the Metric that Matters"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 777e9a8de58a54e9902f173985a561658df3fc5e0c1067891dd03bc7286fe628
 ---

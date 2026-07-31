@@ -4,24 +4,6 @@
 
 > 📊 Level ⭐ | 12.7KB | `entities/habib-hajallie-s-meticulous-ballpoint-pen-drawings-examine-the-depths-of-emotion.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Habib Hajallies Meticulous"))
-    艺术家背景
-    展览概述 Black Blue
-      媒介转变 从黑到蓝
-    作品解析
-      主要作品
-    画廊陈述
-    艺术媒介与材料的隐喻系统
-    颜色转换的情绪标记功能
-    身份认同与文化背景的交织
-    艺术作为疗愈空间
-```
-
 ## 艺术家背景
 
 Habib Hajallie 是一位来自英国 Kent 郡的艺术家，具有 Sierra Leonean（塞拉利昂）和 Lebanese（黎巴嫩）的双重文化遗产。作为 British man of Sierra Leonean and Lebanese heritage，他的创作身份认同天然具有跨文化张力，这种张力在作品中体现为对 Black cultural figures（黑人文化人物）、家庭成员以及个人生命体验的深入探索。
@@ -29,37 +11,6 @@ Habib Hajallie 是一位来自英国 Kent 郡的艺术家，具有 Sierra Leonea
 Hajallie 的官方网站为 https://www.habibhajallie.com/，他目前在 Larkin Durey 画廊举办个人展览。
 
 ## 展览概述：Black & Blue
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 Hajallie 的当前个展「Black & Blue」正在伦敦 Larkin Durey 画廊展出，展期至 2026 年 5 月 22 日。
 

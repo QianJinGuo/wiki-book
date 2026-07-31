@@ -7,7 +7,7 @@ feed: 机器之心
 publish_time: "2026-06-09 12:07"
 ingested: "2026-06-10"
 sha256: f0430b58221e4c19482d747a9b8032f7cb7c7713
-type: raw
+type: raw-article
 tags: [agent, biology, anthropic, virbench, gget-virus, data-infrastructure, ncbi, benchmark, determinism, karpathy]
 ---
 

@@ -1,5 +1,5 @@
 ---
-type: article
+type: raw-article
 title: "The recent history of AI in 32 otters"
 source: rss
 source_url: https://www.oneusefulthing.org/p/the-recent-history-of-ai-in-32-otters

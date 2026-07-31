@@ -8,31 +8,6 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Loop 工程手册 8 个未解问题 SELF"))
-    Agent Loop 核心主张
-    Agent Loop 7 件套
-    个核心设计法
-      Stopping Condition 优先于 Prompt
-      Context 是组装出来的
-      失败是输入 不是终点
-    个未解问题 核心价值
-      软目标停止条件怎么办
-      Maker-Checker 同病相怜
-      护栏写在哪一层
-    SELF Protocol 30 天治理薄壳
-      是什么 不是什么
-      三大模块 被真实坑逼出来的
-      天真实数据 单样本 公开邀拍砖
-    SELF Protocol 对照 Loop 5 件套
-    关键洞察提炼
-    与其他 LoopHarness 实体的关系
-```
-
 ## 一句话定位
 
 腾讯云开发者陈进（2026-06-16）读完 Peter Steinberger / Boris Cherny 提出的"Agent Loop"工程手册（Reddit/X 讨论量 220 万）后，**整理出 4 个设计法、6 种多 Agent 拓扑、8 个未解问题**，并将自己 30 天单 Agent 实验的 **SELF Protocol**（治理审查层薄壳）作为"答题草稿"开源邀拍砖。
@@ -40,37 +15,6 @@ mindmap
 > **重要诚实声明**：本文是**二手解读**（作者未接触 Peter Steinberger / Boris Cherny 原始全文），且 SELF Protocol 是**单样本、单 Agent、无对照组**的实验数据。
 
 ## Agent Loop 核心主张
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **别再死磕 Prompt 怎么写了，去设计一个能让 AI 自己转起来的"循环（Loop）"。**
 
@@ -187,7 +131,7 @@ LLM 当 judge 互打分会漂移——**上午 0.85，下午同样的输出 0.6*
 → [Loop Engineering（Addy Osmani 若飞）](../ch05/004-loop-engineering.html) — 同样是 Loop 范式但面向**开发循环**（commit-iterate-fix）而非 **Agent 自循环**（prompt-tool-output-loop）
 → [Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) — 同样社区层面的 Agent 工程化范式整理，但**侧重 12 组件分类**
 → [Harness Architecture Production Guide](../ch05/058-agent-harness.html) — Harness 12 组件 vs Agent Loop 7 件套（不同抽象层级）
-→ [腾讯 Skill 写作 Playbook](ch04/271-skill.html) — 同样腾讯系但讲 **Skill 写作**（如何写好一个 Skill）
+→ [腾讯 Skill 写作 Playbook](ch04/273-skill.html) — 同样腾讯系但讲 **Skill 写作**（如何写好一个 Skill）
 → [从 Prompt 到 Harness 工程三次进化](../ch05/009-harness.html) — 同样腾讯系但讲**进化论**（从 Prompt 到 Harness 的迁移）
 → [Harness Observability Production](../ch05/058-agent-harness.html) — 同样讲 Harness 但侧重**可观测性**
 

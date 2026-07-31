@@ -10,61 +10,7 @@
 
 > **Core insight**: Netflix ML serving 的核心挑战是区分 model serving（端到端工作流执行）和 model inference（单一 scoring 函数），Switchboard 作为强制入口点处理 1M req/s 的上下文感知路由，但引入单点和延迟问题，最终演化为 Lightbulb（将路由元数据与实际请求路径解耦）+ Envoy 代理。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Netflix Switchboard Lightbulb"))
-    背景 Netflix 的模型定义
-    Switchboard 集中式路由抽象
-    Switchboard 的挑战
-    Lightbulb 解耦式路由
-    Lightbulb Envoy 数据平面
-    Switchboard Netflix 的 LLM 路由层
-    Lightbulb 模型 请求复杂度的实时评估
-    路由准确性的业务影响
-```
-
 ## 背景：Netflix 的模型定义
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 在 Netflix，ML model 的定义与 typical inference 不同。Model inference 通常只关注 `infer(features) -> score` 能力，而 Netflix 的"model"是封装了 pre-processing、post-processing、feature computation logic 和 optional ML-trained component 的 self-contained workflow。端到端执行这个工作流被称为 model serving。
 
@@ -143,7 +89,7 @@ OpenAI 的 auto 模式也做模型路由，但规则不透明且偏向成本优�
 ## 相关实体
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](ch11/090-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](ch11/091-netflix-nebula-archrules-java-archunit.html)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](ch11/104-high-throughput-graph-abstraction-at-netflix-part-i.html)
 

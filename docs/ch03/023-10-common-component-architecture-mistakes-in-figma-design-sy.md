@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 7.5KB | `entities/10-common-component-architecture-mistakes-in-figma-design-systems.md`
 
-
 ## 核心要点
 - Newsletter article, source: https://zeroheight.com/blog/10-common-component-architecture-mistakes-in-figma-design-systems/
 - 设计系统组件架构的十大常见错误及解决方案
@@ -12,39 +11,8 @@
 
 ## 相关实体
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-
 - [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
-- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/237-agentic.html)
+- [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/648-agentic.html)
 - [What the design-to-code loop unlocks](../ch09/007-design-to-code.html)
 
 ## 深度分析

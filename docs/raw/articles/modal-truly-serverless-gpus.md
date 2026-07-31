@@ -5,7 +5,7 @@ url: https://modal.com/blog/truly-serverless-gpus
 title: "How to achieve truly serverless GPUs"
 sha256: ef00f88fd5ac6f2ae3da5af3751a404ddf6d1fd46806b560b6be5652cc0aa147
 date: 2026-05-13
-type: raw
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: neutral

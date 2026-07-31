@@ -7,7 +7,7 @@ feed: 阿里云开发者
 publish_time: "2026-06-09 08:30"
 ingested: "2026-06-10"
 sha256: d17689882f745fd4d5ce6f204ee4a3bfe804ffd5
-type: raw
+type: raw-article
 tags: [skill, self-evolution, trace2skill, evoskill, skillopt, agent, overfitting, verification, training-paradigm, qwen, microsoft, frontier-set, learning-rate]
 provenance_state: archived
 ---

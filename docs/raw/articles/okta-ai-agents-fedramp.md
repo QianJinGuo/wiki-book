@@ -2,7 +2,7 @@
 title: "Okta is the first to bring AI agent governance inside FedRAMP boundaries"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 40725f5ab8157d004314ad648e80c76de7776a7f6be7d084f96f08ed2ce9c2cf
 ---

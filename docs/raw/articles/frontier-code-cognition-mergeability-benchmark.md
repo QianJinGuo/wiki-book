@@ -2,7 +2,7 @@
 source_url: http://cognition.ai/blog/frontier-code
 ingested: 2026-06-09
 sha256: 6c41a2f9c18eaf4c2ecee42b9e4d0f43aa5425e5593aaf4753a1370c4df4b572
-type: article
+type: raw-article
 author: Eric Lu, Ben Pan, Deniz Birlikci, Sam Lee, Ray Wang, Rohan Choudhury, Fermi Ma, TC Qin, Carlo Baronio, Silas Alberti
 title: "Introducing FrontierCode: Measuring Code Mergeability, Not Just Correctness"
 created: 2026-06-09

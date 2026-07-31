@@ -6,69 +6,11 @@
 
 # 严格 CSP 下的密码窃取：HTML 注入 + Chrome 自动填充攻击
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("严格 CSP 下的密码窃取 HTML 注入 Chrome 自动填充攻击"))
-    攻击技术栈
-      严格 CSP 下的 HTML 注入
-      Chrome 自动填充触发
-      Referer 头外泄
-    浏览器特定测量
-    CSP 失效场景示例
-    防御建议
-      应用开发者
-      用户
-      安全团队
-    与现有 entity 差异化
-    Referer 头处理的不一致性 Chrome 的特权地位
-    meta 重定向的双重滥用 强制 referrer policy
-    密码管理器行为设计缺陷 Chrome 的域名无关自动填充
-```
-
 ## 概述
 
 AFINE 安全研究团队发布原创攻击研究：在**严格 CSP (Content Security Policy)** 环境下，通过 HTML 注入 + Chrome 自动填充行为 + Referer 头，实现用户密码外泄。
 
 ## 攻击技术栈
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### 1. 严格 CSP 下的 HTML 注入
 
@@ -236,18 +178,18 @@ Content-Security-Policy:
 - **密码窃取专项测试**：如果目标有登录功能，主动尝试注入 form 标签并观察 autofill 行为（需在受控环境）
 
 ## 相关实体
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/742-9.html)
-- [Ico Fines South Staffordshire 2022 Breach](ch01/913-20.html)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/755-9.html)
+- [Ico Fines South Staffordshire 2022 Breach](ch01/926-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](../ch03/106-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/094-ai.html)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/095-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/162-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
 - [discord 全平台端到端加密](../ch12/096-discord.html)
 - [incendium fuzzing ms rpc](../ch12/110-incendium-fuzzing-ms-rpc.html)
-- [the interface is no longer the product](../ch05/094-ai.html)
-- [a route to root in a 4g industrial router](ch01/913-20.html)
+- [the interface is no longer the product](../ch05/095-ai.html)
+- [a route to root in a 4g industrial router](ch01/926-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

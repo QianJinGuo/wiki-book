@@ -10,58 +10,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
-    任务粒度跃迁是 Agentic Engineering 的真正起点
-    Agentic Engineering 是一种「控制面」重构
-    文档角色在 Software 30 里被重新定义
-    锯齿状智能决定护栏必须默认开启
-```
-
 ## 摘要
 
 2026 年 5 月，Karpathy 在 Sequoia AI Ascent 2026 上系统重述了从「Vibe Coding」到「Agentic Engineering」的概念漂移：Vibe Coding 命名的是一种个人体验（说需求、看结果、继续调整），而 Agentic Engineering 命名的是一套专业工作方式（围绕 Agent 的上下文、权限、工具、验证、审计、回滚来重新设计研发链路）。访谈的核心主张是：AI 编程的下一阶段差距会越来越落到模型**外面**那套系统——Harness、上下文管理、过程资产、验证体系、发布与审计——而不是模型本身。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **概念漂移**：Vibe Coding ≠ Agentic Engineering。前者抬高「所有人做软件的下限」，后者守住「专业软件的质量门槛」。两个概念在 2025-2026 间已被 Google（Addy Osmani）、GLM-5 论文、Linus Torvalds 等多方独立呼应，不是 Karpathy 一家之言。
 - **任务粒度变化**：2025-12 是分水岭，模型从「补一个函数」升级到「接一段流程」：读上下文、改多个文件、调命令、跑测试、根据失败继续修、给出可 review 的结果。前者是工具，后者是工程系统。
@@ -110,17 +63,17 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [Claude Code Harness Deep Understanding](../ch01/422-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
+- [Claude Code Harness Deep Understanding](../ch01/423-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/074-claude-code-harness.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/451-vibe-coding-agentic-engineering.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/457-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
-- [protecting against token theft](../ch01/309-protecting-against-token-theft.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
+- [protecting against token theft](../ch01/307-protecting-against-token-theft.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

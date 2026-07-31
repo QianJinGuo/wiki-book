@@ -6,61 +6,7 @@
 
 # 在 Amazon EKS 上使用 NVIDIA GPU Operator 管理自定义 GPU 驱动与 CUDA 工作负载
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("在 Amazon EKS 上使用 NVIDIA GPU"))
-    三个独有贡献 不应合并到现有 entity
-    核心问题 平台团队的 GPU 运维边界不清
-    GPU Operator 的本质 在 host 节点上安装 driver
-    关键踩坑 driver 兼容性不只是 CUDA 兼容矩阵
-    节点组架构 managed vs self-managed
-    生产推荐组合
-    实践路径 6 步
-    关键结论表
-```
-
 ## 三个独有贡献（不应合并到现有 entity）
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 1. **GPU driver / CUDA runtime / CUDA Toolkit 三层职责清晰分离** — 节点只装 driver（GPU Operator 统一管理），业务容器镜像固定 CUDA runtime，**节点 AMI 不装 CUDA Toolkit**。这是平台团队可标准化、可审计、可复现部署的关键架构选择。
 2. **GPU Operator + Kiro + EKS MCP 的 AI 运维闭环** — 通过 MCP 把分散在 EKS / Kubernetes / 节点层 / driver 层的状态串联起来，自然语言巡检 + 只读模式生产巡检 + 知识沉淀。属于 GPU + AI Ops 的具体落地模式。
@@ -248,7 +194,7 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
 - [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](../ch04/027-pod.html)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/235-openclaw.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/237-openclaw.html)
 - [Openclaw Amazon Bedrock Eks Printer Qc](ch11/295-amazon-bedrock.html)
 
 ---

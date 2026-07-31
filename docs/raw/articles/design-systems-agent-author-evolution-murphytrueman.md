@@ -2,7 +2,7 @@
 source: newsletter
 source_url: https://blog.murphytrueman.com/your-design-systems-newest-author-is-an-agent/
 ingested: 2026-07-02
-type: raw
+type: raw-article
 tags: [design-systems, agent, mcp, figma, storybook, design-md, skill-md, ai-agent, tooling]
 sha256: 33e02fb7c70913c791c1f65282f9e95ce75dbfd48994ec5b49d394825c356b3d
 ---

@@ -3,6 +3,7 @@ title: "万字长文拆解Agent 架构设计（六）：用 LangChain 复刻 Cla
 source_url: "https://mp.weixin.qq.com/s/WKsp9OWIMtl2n7ZZgXGR6w"
 source_account: "AllenTang / 架构师带你玩转AI"
 ingested: 2026-07-28
+sha256: "3e41c7a0e5cc59f08addda88fe8e6a0132ce3fb4c6131879a3db4ee4461c553e"
 type: raw-article
 tags:
   - agent-architecture

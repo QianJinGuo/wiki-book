@@ -4,45 +4,15 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md`
 
-
 ## 核心要点
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 - [P Seo Is A Product Aeo Is Brand](ch03/121-seo-is-a-product-aeo-is-brand.html)
-- [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Spotify Llm Evals Funnel Not Fork](../ch01/1274-llm.html)
+- [Amazon Turns Alexa Into Its Next Storefront](../ch01/066-amazon-turns-alexa-into-its-next-storefront.html)
+- [Spotify Llm Evals Funnel Not Fork](../ch01/637-llm.html)
 - [你的一人公司品牌部带着Image 2模型的Lovart中文版来了](https://github.com/QianJinGuo/wiki/blob/main/entities/你的一人公司品牌部带着image-2模型的lovart中文版来了.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/913-20.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/926-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md)
 

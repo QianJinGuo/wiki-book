@@ -2,7 +2,7 @@
 source: rss
 source_url: https://www.oneusefulthing.org/p/real-ai-agents-and-real-work
 ingested: 2026-06-07
-type: article
+type: raw-article
 sha256: 5f36dc64b0f435963bb23fb326ff321e8bc87cd9e9d3d4105b69f108690ec794
 feed_name: One Useful Thing
 source_published: 2025-09-29

@@ -1,7 +1,7 @@
 ---
 
 title: "Claude's next enterprise battle is not models: it's the agent control plane"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://venturebeat.com/orchestration/claudes-next-enterprise-battle-is-not-models-its-the-agent-control-plane
 tags: [venturebeat]

@@ -8,56 +8,11 @@
 
 > **Source**：腾讯技术工程，发布于 2026-06-29。本文是对腾讯技术工程关于 Harness Engineering 实践的系统整理。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("开启Harness Engineering探索之旅"))
-    详细内容
-    关键特征
-    Harness Engineering 的概念结晶过程
-    腾讯的「出码率与提效裂开一道缝」洞察
-    两轨道 长期记忆的系统架构
-    关于 AI 不确定性的系统治理
-```
-
 ## 核心洞察
 
 腾讯技术工程团队对 Harness Engineering 的实践探索，涵盖 Agent = Model + Harness 的核心架构定义、研发全链路的轨道设计（需求澄清→方案→实现→测试→部署→归档）、协议层/执行层/反馈层的三层设计，以及状态机与质量门禁的工程实践。
 
 ## 详细内容
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 # 开启Harness Engineering探索之旅
 
@@ -128,7 +83,7 @@ graph TB
 
 ## 相关实体
 
-[Claude Code Large Codebase Harness Configuration](../ch03/078-claude-code.html)、[超级Ai背后的秘密武器Agent Harness深度解析](ch05/058-agent-harness.html)、[Harness Engineering](ch05/120-harness-engineering.html)、[Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html)、[Tencent Knowledge Harness Practice](ch05/009-harness.html)
+[Claude Code Large Codebase Harness Configuration](../ch03/077-claude-code.html)、[超级Ai背后的秘密武器Agent Harness深度解析](ch05/058-agent-harness.html)、[Harness Engineering](ch05/120-harness-engineering.html)、[Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html)、[Tencent Knowledge Harness Practice](ch05/009-harness.html)
 
 ## 原文存档
 

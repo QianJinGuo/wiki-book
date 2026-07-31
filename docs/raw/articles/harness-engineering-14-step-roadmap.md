@@ -2,7 +2,7 @@
 title: "Harness 工程 14 步路线图：从单 Agent 到自改进系统"
 source_url: https://mp.weixin.qq.com/s/p1OeUgazStV_LL56zUfRfA
 ingested: 2026-06-18
-type: raw
+type: raw-article
 source: wechat
 sha256: a0bb7e112ef4c507e9ae0ce0647baad52cc49898c99dd5ba65dd695ac4ba0a73
 ---

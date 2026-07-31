@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐ | 9.8KB | `entities/anthropic-founders-playbook-huashu-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic创始人行动手册 花叔x Claude Code译本"))
-    核心框架
-      AI为精益创业三大基础设施
-      创业生命周期四阶段
-      想法阶段退出标准 三问
-    方法论范式转移 从快速试错到智能验证
-    Agentic编程重塑工程边界
-    三阶段退出标准的递进逻辑
-    AI工具选择的隐性前提
-    想法阶段 建立证据驱动的验证流程
-    MVP阶段 CLAUDEmd是第一天就写的工程优先级
-    发布阶段 用Claude Cowork做创始人放手审计
-```
-
 ## 核心框架
 ### AI为精益创业三大基础设施
 1. **对话式智能与研究**：竞品分析、财务建模、pitch deck、PRD文档、战略思考伙伴（反方代言人分析） ^[https://mp.weixin.qq.com/s/_IuT9RX6WC34J_Js2sAl4Q]
@@ -63,35 +44,6 @@ mindmap
 - 把Claude当结构化反方代言人是每个阶段都成立的核心用法
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 ### 方法论范式转移：从"快速试错"到"智能验证"
 传统精益创业强调"快速原型、快速验证"，但对独立创始人而言，试错成本仍然很高——每个错误都意味着工程时间或金钱的消耗。Anthropic的框架将AI内化为"随叫随到的专家团队"，从根本上改变了验证阶段的成本结构。想法阶段的"以研究为导向的验证"不再只是头脑风暴，而是AI驱动的大规模证据收集——竞品分析、市场规模测算、财务建模都可以在对话中完成，无需雇佣分析师或购买数据报告。这是一种从"试错中学习"到"先理解后建造"的范式转移。 ^[https://mp.weixin.qq.com/s/_IuT9RX6WC34J_Js2sAl4Q]
 
@@ -121,11 +73,11 @@ graph TB
 - 原版下载：claude.com/blog/the-founders-playbook
 - Anthropic Startups Program（免费API credits + 最高档rate limits）
 ## 相关实体
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment](../ch03/078-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch04/478-anthropic-ai.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/286-anthropic-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment](../ch03/077-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment Anthropic Aihanshijì](../ch04/484-anthropic-ai.html)
 - [Anthropic Prompt Caching Claude Code Agihunt](ch01/217-anthropic-prompt-caching-claude-code.html)
-- [Cat Wu Claude Code Pm](../ch03/078-claude-code.html)
+- [Cat Wu Claude Code Pm](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-founders-playbook-huashu-2026.md)
 

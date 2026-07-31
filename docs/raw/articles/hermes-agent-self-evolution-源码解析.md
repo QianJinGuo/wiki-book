@@ -5,7 +5,7 @@ author: 刘庭辉
 published: 2026-05-12
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [hermes-agent, openclaw, self-evolving, kepa, agent-framework, memory-system, skill-system]
 sha256: 4794209df769c3aa01c74b62711c41892dafc8131396b0b9be223cfca3afbfdb
 review_value: 7

@@ -5,7 +5,7 @@ source_site: "凡人修AI传"
 author: "凡人修AI传"
 ingested: "2026-07-08"
 sha256: "f53233b258ddf4bba225368b3cbe95cecdbff2540932f507bf3e81b2eb3f5893"
-type: raw
+type: raw-article
 tags:
   - agent
   - workflow

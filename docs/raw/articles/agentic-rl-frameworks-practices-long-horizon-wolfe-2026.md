@@ -12,7 +12,7 @@ date: 2026-06-29
 created: 2026-06-29
 updated: 2026-06-29
 tags: [agentic-rl, reinforcement-learning, llm-agent, training, rollout, environment, trajectory, tool-use]
-type: article
+type: raw-article
 provenance_state: extracted
 sha256: 858eb18fcab13bc0933a358571437f772c7e39d241527069159daacabdbca2ef
 ---

@@ -2,70 +2,13 @@
 
 ## Ch11.129 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手
 
-> 📊 Level ⭐⭐ | 8.4KB | `entities/amazon-quick-bedrock-agentcore-finops-chat.md`
+> 📊 Level ⭐⭐ | 8.5KB | `entities/amazon-quick-bedrock-agentcore-finops-chat.md`
 
 # 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手
 
 > **Background**: AWS China 团队将开源的 Billing and Cost Management MCP Server 改造适配后，部署到 Amazon Bedrock AgentCore Runtime，通过 Cognito OAuth 2.0 保护，最终接入 Amazon Quick Chat Agent 让业务用户用中文对话式查询多账号 AWS 成本。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("用 Amazon Quick Bedrock AgentCore"))
-    整体链路
-    三大组件
-      Amazon Quick Chat Agent MCP 客户端
-      Amazon Bedrock AgentCore Runtime
-      Amazon Cognito
-    跨账号模式
-    MCP协议架构 解耦与组合的灵活性
-    OAuth 2LO在M2M场景的安全边界
-    跨账号委托的最小权限设计
-    Serverless容器化MCP的运维边界
-    建立MCP Server版本管理与工具清单同步机制
-```
-
 ## 整体链路
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 ```
 业务用户在 Amazon Quick 中提问
@@ -126,11 +69,11 @@ AgentCore Runtime 用 Cognito Authorizer 校验 JWT
 - Quick Chat Agent 上下文管理
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/549-amazon-bedrock-agentcore.html)
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/549-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/566-amazon-bedrock-agentcore.html)
 - [Bedrock Agentcore Coding Agent Hosting](ch11/050-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/549-amazon-bedrock-agentcore.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/549-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/566-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/566-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-bedrock-agentcore-finops-chat.md)
 

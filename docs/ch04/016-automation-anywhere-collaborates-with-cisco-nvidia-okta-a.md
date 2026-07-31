@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Automation Anywhere Collaborates"))
-    Claw-Style AI Agent 的企业化挑战
-    四方合作的战略意图
-    Process Reasoning Engine PRE 与
-    自主企业 Autonomous Enterprise 的愿景
-    企业采纳建议
-    技术团队关注点
-    行业观察
-```
-
 ## 核心要点
 
 - Automation Anywhere 联合 Cisco、NVIDIA、Okta 和 OpenAI 发布 EnterpriseClaw，将 claw-style AI agents 引入企业级运营
@@ -26,42 +11,6 @@ mindmap
 - 四大技术合作： Cisco AI Defense（安全）、NVIDIA OpenShell + NIM（推理引擎）、Okta（身份认证）、OpenAI（GPT-5.5 模型） 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### 1. Claw-Style AI Agent 的企业化挑战
 
@@ -124,10 +73,10 @@ Automation Anywhere CEO Mihir Shukla 的表述揭示了其核心愿景：**AI �
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/223-rag.html)
 - [Strands Agents High Performance Genai Systems](ch04/697-strands-agents.html)
 - [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/079-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/094-ai.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/095-ai.html)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/149-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](../ch01/1016-spec.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](../ch01/1034-spec.html)
 
 ---
 

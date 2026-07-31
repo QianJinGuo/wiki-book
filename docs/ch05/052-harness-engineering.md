@@ -4,59 +4,10 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/harness-engineering-systematic-framework.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 系统梳理"))
-    Prompt Context Harness 三层区分
-    量化证据 16 AI 决策 vs 984 工程基础设施
-      OpenAI Frontier 团队的极限实验
-      Stripe Minions
-    Harness 不是 AGENTSmd
-    七环节控制回路
-    渐进披露原则
-    Generator Evaluator 模式
-    核心动作
-    相关
-```
-
 ## 概述
 Harness Engineering 系统梳理——基于李宏毅课程 + OpenAI/Anthropic/Martin Fowler 实践。核心命题：**当 AI 从聊天走向行动，工程的重点不再是写更好的提示词，而是设计一个能持续校正它的系统**。 ^[claude-code-engineering-truth-1.6-98.4.md]
 
 ## Prompt / Context / Harness 三层区分
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 层次 | 关心什么 | 本质 |
 |------|---------|------|
 | **Prompt Engineering** | 怎么去问 | 一句指令 |
@@ -161,7 +112,7 @@ Harness 的渐进披露信息系统：
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/120-harness-engineering.html)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/120-harness-engineering.html)
 - [Harness Engineering 四根支柱与四要素架构](ch05/120-harness-engineering.html)
-- [Harness Engineering 指南（字节跳动TRAE）](../ch01/658-trae-harness-engineering.html)
+- [Harness Engineering 指南（字节跳动TRAE）](../ch01/670-trae-harness-engineering.html)
 
 ---
 

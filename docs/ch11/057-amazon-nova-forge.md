@@ -6,65 +6,7 @@
 
 # Amazon Nova Forge 域定制超参调优：艺术与科学
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Nova Forge 域定制超参调优 艺术与科学"))
-    三大定制阶段
-    三大超参挑战
-      Catastrophic Forgetting 灾难性遗忘
-      Learning Rate 学习率
-      RFT Baseline 约束
-    战略决策树
-      Checkpoint 选择 最影响决策
-      Training Mode 选择
-    关键数字锚点
-    实战推荐工作流
-    稳定性-灵活性权衡是超参调优的核心矛盾
-    学习率对数据混合的强耦合性
-    RFT 基线性能的双向约束机制
-```
-
 ## 概述
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 Amazon Nova Forge 是 AWS 提供的**自建前沿模型**定制服务，核心价值在于：从早期 checkpoint 起步、混合专有数据与 Amazon Nova 精选数据、在 AWS 上安全托管定制模型。**数据混合 (data mixing)** 能力是核心 — 让模型吸收领域知识同时保留通用推理与指令遵循能力，避免 catastrophic forgetting。
 

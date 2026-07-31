@@ -3,7 +3,7 @@ title: "智源悟界·RoboBrain Orca：多模态表征世界模型"
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/25B0q0G2elnh1QpeTXHwOg"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "da2d488b4b6b3facb7d011adf6767ff3d221c0ce303cd18f5bddc2e90f49b056"

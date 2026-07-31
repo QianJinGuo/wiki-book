@@ -5,7 +5,7 @@ source_author: "听雨"
 source_publisher: "量子位 (QbitAI)"
 ingested: 2026-07-08
 sha256: "7f3362f35dd78287ab3a5400ffbf8d6ccff5c44d61f1488753a2931c1d00a011"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [harness-engineering, rsi, self-improvement, lilian-weng, self-harness, evolutionary-search, dgm]
 ---

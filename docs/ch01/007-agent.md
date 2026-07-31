@@ -8,65 +8,11 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kuaishou-worker-agent-desktop-software.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("快手首个打工人Agent"))
-    四个老问题的一次性解决
-    应用固化作为 Agent 落地的工程范式
-    主动规划 Agent 决策能力的关键升级
-    browser-use 能力 Agent 的最后一块拼图
-    企业 AI 落地应从场景切入
-    关注 ROI 可见性
-    用户体验优先
-    本土化适配
-```
-
 ## 摘要
 
 快手上线的 **KroWork** 是一款面向普通职场人的桌面 Agent 工具——用户通过自然语言描述需求，KroWork 帮你把活儿干完，并把整个流程固化为一个可以直接打开的本地桌面应用。 与通用 Agent 产品相比，KroWork 的核心创新在于"应用固化 + 本地托管"——第一次生成消耗 token，之后每次打开都是零成本的本地执行。这一产品形态同时回应了 Agent 落地的四个老问题：**提示词疲劳、成功率赌博、省 token、数据不出域**。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **"跑通一次，变成应用"**：用户跟 KroWork 说一遍需求，它帮你把活儿干完，然后直接把整个流程变成一个有界面、可反复使用的本地软件。第一次生成调用大模型，之后应用住在用户电脑里，打开如同普通软件，**完全不用消耗 token**。
 - **典型案例：股票智能分析台**：输入股票代码、时间范围，自动展示价格趋势并生成普通人能看懂的报告；几分钟内生成完整深色科技风桌面应用，支持设置价格波动提醒弹窗。
@@ -224,7 +170,7 @@ browser-use 能力让 Agent 能够访问没有 API 的信息源，这是 Agent �
 - [Enterprise Software Moats in the Agent Era](../ch03/035-agent.html)
 - [AutoResearch 多 Agent 软件开发](../ch03/035-agent.html)
 - [Factory Mission Multi-Agent 系统](../ch03/035-agent.html)
-- [AgentOps on Bedrock](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [AgentOps on Bedrock](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/221-agi.html)
 - [应用固化（Application Solidification）](https://github.com/QianJinGuo/wiki/blob/main/concepts/application-solidification.md)
 

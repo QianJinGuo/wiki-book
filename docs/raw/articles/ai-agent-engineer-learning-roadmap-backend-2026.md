@@ -3,7 +3,7 @@ title: "AI Agent 工程师学习路线：面向资深后端/大数据工程师�
 source_url: "https://mp.weixin.qq.com/s/HWdqrPP1IFdex33afqQEeQ"
 author: "安北（Agent开发笔记）"
 published: "2026-05-19"
-type: raw
+type: raw-article
 tags: [agent, llm, workflow, context-engineering, memory, rag, mcp, backend]
 created: "2026-05-20"
 sha256: 3321aa10b53f39fe2dbd78185adbde6942ba59d2db5bd746db95f8dc61c781c3

@@ -4,7 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/940okCms5A4PdJEdrh2Gtg"
 author: "AGI Hunt"
 created: 2026-07-02
 updated: 2026-07-02
-type: raw
+type: raw-article
 tags: [dockerless, coding-agent, verifier, swe-bench, agent-training, sft, rl, grpo, post-training]
 ingested: 2026-07-02
 sha256: d6875c5bf3b88ce8653ca50892026fc5a79d509902678a691a4ad957b45173be

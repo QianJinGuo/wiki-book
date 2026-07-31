@@ -4,73 +4,20 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build financial document"))
-    为什么金融文档处理是 OCR 的死亡区
-    Pulse AI 的架构选择 VLM 经典 ML 混合
-    Amazon Bedrock Nova Micro 的定位
-    端到端流水线架构
-    企业落地要点
-    技术决策树
-    监控与迭代
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 - Pulse AI + Amazon Bedrock 金融文档处理方案
 - 使用 Nova Micro 微调进行文档提取
 - Source: https://aws.amazon.com/blogs/machine-learning/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock/
 
 ## 相关实体
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/561-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/566-amazon-bedrock-agentcore.html)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch04/697-strands-agents.html)
-- [Automate Schema Generation for Intelligent Document Processing](ch11/170-automate-schema-generation-for-intelligent-document-processi.html)
-- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/367-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/298-ai-agent.html)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Automate Schema Generation for Intelligent Document Processing](ch11/172-automate-schema-generation-for-intelligent-document-processi.html)
+- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/368-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/030-ai-agent.html)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/671-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

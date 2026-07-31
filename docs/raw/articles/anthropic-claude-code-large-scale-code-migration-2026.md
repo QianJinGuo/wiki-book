@@ -3,7 +3,7 @@ source_url: https://claude.com/blog/ai-code-migration
 source: web
 title: "How Anthropic runs large-scale code migrations with Claude Code"
 ingested: 2026-07-18
-type: raw
+type: raw-article
 tags: [claude-code, code-migration, agent, loop]
 sha256: 758f871f5c3e53b84f1ee7a4ea191ab17e31e67e96ae4dd8986a347d419c3701
 ---

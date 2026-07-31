@@ -3,7 +3,7 @@ title: "Qoder 企业版全球发布：让 AI Coding 从“个人工具”长出�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/4TKC8s77gAB9P4lzP0YTyw"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 56
 tags: [raw]
 sha256: "3f5121bd3d4b103ab72444940239487dbf894db0cfa400b94a4d0dad15fcfbcd"

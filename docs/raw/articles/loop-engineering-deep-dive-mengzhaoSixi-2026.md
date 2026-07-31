@@ -5,7 +5,7 @@ author: "梦朝思夕 (梦朝思夕技术与管理博客)"
 published: 2026-06-16
 ingested: 2026-06-28
 language: zh
-type: raw
+type: raw-article
 sha256: "7356db50976a1bf24a4a9dd3c9c07279efdcc0cea812cf4d989b8714627871c0"
 ---
 

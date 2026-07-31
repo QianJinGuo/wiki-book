@@ -2,65 +2,11 @@
 
 ## Ch11.172 Automate Schema Generation for Intelligent Document Processing
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Automate Schema Generation for"))
-    技术架构的核心创新
-    关键技术决策背后的权衡
-    Schema生成的评价机制
-    与IDP Accelerator的深度集成
-    适用场景判断
-    部署与配置要点
-    质量优化策略
-    技术选型参考
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 Title: Automate schema generation for intelligent document processing | Amazon Web Services
 URL Source: https://aws.amazon.com/blogs/machine-learning/automate-schema-generation-for-intelligent-document-processing/
 Published Time: 2026-05-12T07:54:08-08:00
@@ -76,7 +22,7 @@ Before you can extract information from documents using intelligent document pro
 - [原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
 ## 相关实体
-- [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/136-build-financial-document-processing-with-pulse-ai-and-amazon.html)
+- [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/137-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 
 ## 深度分析
 ### 技术架构的核心创新
@@ -140,6 +86,10 @@ Before you can extract information from documents using intelligent document pro
 - 编排层：AWS Step Functions状态机
 - 计算层：AWS Lambda（无服务器）
 这一技术栈组合代表了AWS平台上典型的无服务器AI管道架构，其设计模式可复用于其他需要批量文档处理的项目。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

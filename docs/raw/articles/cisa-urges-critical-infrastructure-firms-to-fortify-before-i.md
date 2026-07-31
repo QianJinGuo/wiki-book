@@ -11,7 +11,7 @@ ingested: 2026-05-16
 review_stars: 4
 created: 2026-05-12
 updated: 2026-05-12
-type: entity
+type: raw-article
 tags: [newsletter]
 ---
 Title: CISA urges critical infrastructure firms to ‘fortify’ before it’s too late

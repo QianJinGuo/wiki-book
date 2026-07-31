@@ -6,64 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Versa takes aim at fragmented"))
-    三项核心更新
-      CSPM 消除双门户问题
-      Concerto 1311 消除策略孤岛
-      AI Agent 信任与验证框架 2026-05-21 发布
-    网络安全融合的结构性障碍
-    Shadow AI 的安全盲区
-    SASE 市场的整合压力
-    对安全团队
-    对网络架构团队
-    行业观察
-```
-
 ## 摘要
 Versa Networks 在 2026 年 5 月为其 VersaONE Universal SASE 平台发布三项协同更新：Cloud Security Posture Management (CSPM) 云安全态势管理、Concerto 13.1.1 编排平台升级，以及将于 5 月 21 日推出的 AI Agent 信任与验证框架。该公司同期发布首届《State of SASE + AI Report》，调查 525 名美国企业 IT 和安全决策者，结果显示 35% 的组织在过去一年因网络与安全团队之间的协调缺口而遭受安全漏洞，99% 将融合列为战略优先级，但仅有 30% 实现落地。
 
 ## 关键数据
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - **35%** 的企业因网络与安全团队协调缺口导致安全漏洞 
 - **73%** 的企业表示技术集成复杂性延误或搁置了关键项目 
 - **99%** 将 SASE 融合列为战略优先级，但仅 **30%** 实现了共享所有权 
@@ -105,9 +51,9 @@ Google 以 32 亿美元收购 Wiz 将 CSPM 赛道推向资本热点，但 Versa 
 Versa 的三路更新（CSPM + Orchestration + Agent Trust）勾勒出 SASE 平台的演进方向：**单平台融合**正在从营销概念走向工程现实。对于已有 Versa 部署的企业，这是评估平台扩展能力的窗口；对于新评估者，Concerto 13.1.1 的策略统一能力和 AI Agent 验证框架是差异化的技术买点。
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [AI tool poisoning — VentureBeat](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [企业级OpenClaw安全部署架构指南](../ch11/235-openclaw.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning — VentureBeat](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [企业级OpenClaw安全部署架构指南](../ch11/237-openclaw.html)
 
 ---
 

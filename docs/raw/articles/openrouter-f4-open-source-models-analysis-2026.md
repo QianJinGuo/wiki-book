@@ -2,7 +2,7 @@
 title: "刚刚OpenRouter发布2026最值得关注的“开源F4”，开源追上闭源了，差距只剩3到6个月"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 8c5840ef381a6d0c0c127ddb8039195b3a84533c06261b93ff306fee795ed9f7
 ---

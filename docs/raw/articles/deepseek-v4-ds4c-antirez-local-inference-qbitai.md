@@ -1,7 +1,7 @@
 ---
 tags: [wechat, article, claude, openai]
 title: "deepseek v4 ds4c antirez local inference qbitai"
-type: raw
+type: raw-article
 url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 ingested: 2026-05-08
 sha256: 9f2951cfd8217340ace9c67ee7d9173822fc27a8b66f28d0f55df8dbcfa03308

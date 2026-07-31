@@ -2,7 +2,7 @@
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-data-automation
 ingested: 2026-06-13
-type: article
+type: raw-article
 sha256: "e12ec8c5d0233860bb330c786118a3f541d487ea72c79376adcd5d31d0ab0e1c"
 feed_name: AWS China ML
 source_published: 2026-06-11

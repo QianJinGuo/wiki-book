@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/blogs/machine-learning/sagemaker-qualcomm-ai-
 ingested: 2026-06-01
 feed_name: AWS China Blog
 source_published: 2026-05-29T00:52:00Z
-type: article
+type: raw-article
 sha256: f8ee065826be893684ab3968f6fc3310da781f2f365eb76bc649dba0ec871db7
 tags: [sagemaker, qualcomm, edge-ai, npu, mlops]
 ---

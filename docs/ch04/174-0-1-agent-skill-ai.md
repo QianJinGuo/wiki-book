@@ -6,64 +6,10 @@
 
 [Agent Skill Writing Guide](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skill-writing-guide.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 0 到 1 教你写 Agent Skill 让 AI 懂你的潜规则"))
-    核心价值
-    Skill 目录结构
-    核心设计哲学 渐进式披露
-    SKILLmd 格式
-    高质量 Skill 编写规范
-    评估与迭代
-      测试用例设计
-      运行评估
-      断言编写
-    scripts 编写规范
-      自包含脚本 PEP 723 Deno Bun
-      Agentic 脚本设计原则
-    渐进式披露是工程上对注意力经济的妥协
-```
-
 ## 核心价值
 Agent Skill = **岗位职责说明书 + 操作SOP + 避坑指南**的合集。让通用大模型秒变领域专家，不改变模型本身，通过结构化上下文注入实现。
 
 ## Skill 目录结构
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ```
 my-skill/
 ├── SKILL.md         # 必须：YAML元数据 + Markdown正文
@@ -214,16 +160,16 @@ Ruby：`bundler/inline`
 → `Agent Skills Teams Architecture Evolution Selection Guide` — 多 Agent 场景下 Skill 的组合与选择策略
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/419-aws-sagemaker-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/423-aws-sagemaker-ai-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html)
 
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
-- [SkillX — 层次化技能知识库](../ch07/056-skillx.html)
-- [SkillClaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/260-anthropic-agent.html)
+- [SkillX — 层次化技能知识库](../ch07/057-skillx.html)
+- [SkillClaw](ch04/479-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/397-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/401-agent-skills.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

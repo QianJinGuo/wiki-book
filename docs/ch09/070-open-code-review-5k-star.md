@@ -8,22 +8,6 @@
 
 > Open Code Review 是阿里巴巴开源的 AI 驱动代码评审 CLI 工具，其前身是阿里集团内部官方 AI 代码评审助手，内部服务数万开发者、识别数百万代码缺陷后正式开源。核心设计理念是「确定性工程 × Agent 混合驱动」——将代码评审中不能出错的环节由工程逻辑保证，将动态决策交还给 Agent。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里重磅开源 Open Code Review 一周 5k"))
-    架构设计
-      确定性工程层
-      Agent 决策层
-      假阴性 漏报 优化
-    确定性工程 Agent 混合架构的设计哲学
-    代码评审的 AI 工程化挑战 准确率 vs 召回率的根本矛盾
-    Token 成本控制 工程化落地的关键
-    开源生态的意义
-```
-
 ## 核心要点
 
 - **核心架构**：确定性工程（文件筛选、文件打包、规则匹配、定位修正）负责强约束；Agent 负责动态决策（场景化提示词调优、场景化工具集沉淀）。两种范式的各司其职，是比纯 Agent 方案更可靠的工程选择
@@ -32,41 +16,6 @@ mindmap
 - **Token 效率**：平均 352K-743K token/次评审（Claude Code 为 2062K-5664K），成本约为 CC 的 1/6 至 1/8，是同类产品中效率最高的选择
 
 ## 架构设计
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 确定性工程层
 
@@ -121,9 +70,9 @@ OCR 的推出填补了 AI 代码评审工具链中的一个重要空白：此前
 
 ## 相关实体
 
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html) — 同为 AI 编码工具，可以与 OCR 的架构设计做对比
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html) — 同为 AI 编码工具，可以与 OCR 的架构设计做对比
 - **阿里开源生态** — OCR 是阿里开源体系中重要的 AI 开发者工具
-- [AI 编码效率分析](../ch05/111-ai-coding.html) — AI 辅助编程效果的量化评估方法论
+- [AI 编码效率分析](../ch05/112-ai-coding.html) — AI 辅助编程效果的量化评估方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里重磅开源open-code-review一周-5k-star为你的代码保驾护航.md)
 

@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/openhuman-private-ai-runtime-from-openclaw.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 OpenClaw 到 OpenHuman 私人 AI"))
-    它到底是什么 不是助手 是运行层
-    上下文层 先把你的世界变成 AI 能用的材料
-      Memory Tree 六步记忆漏斗
-    行动层 不是 prompt 而是缰绳
-    信任层 安全不是口号 是控制面
-    当前阶段与适用场景
-    相关技术栈
-```
-
 ## 它到底是什么？不是助手，是运行层
 
 可以把一个 AI 产品拆成三个平面：界面层、模型层和运行层。界面层包括桌面 App、聊天入口、通知、语音、会议；模型层负责云端模型、本地模型、推理调用；运行层则涵盖上下文、工具、记忆、权限、安全和失败处理。绝大多数 AI 应用都只停在前两层，OpenHuman 的重心踩在第三层。
@@ -26,43 +11,6 @@ mindmap
 仓库结构方面，app/ 是 React + Tauri 桌面入口，app/src-tauri/ 负责桌面壳、窗口、权限和 core lifecycle，真正的核心在 src/ 里的 Rust openhuman-core。
 
 ## 上下文层：先把你的世界变成 AI 能用的材料
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 私人 AI 的第一道坎是上下文供应链，必须回答四个问题：数据从哪里来？怎么变干净？什么该记？以后怎么找回来？
 
@@ -187,7 +135,7 @@ rm、dd、sudo、ssh、curl、wget 视为高风险命令 。但简单禁止联�
 
 ## 相关技术栈
 
-- [OpenHuman Memory Tree](ch04/121-agent-memory.html) — 记忆框架核心
+- [OpenHuman Memory Tree](ch04/098-agent-memory.html) — 记忆框架核心
 - Composio — SaaS 集成平台
 - Tauri — 桌面壳框架
 - Agent Harness 工程 — 缰绳设计模式

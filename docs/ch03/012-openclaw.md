@@ -7,9 +7,8 @@
 # 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！
 大家好，欢迎来到 code秘密花园，我是花园老师（ConardLi）
 
-
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](../ch04/271-skill.html)
+- [Skill Development Guide Aliyun 2026](../ch04/273-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)
 - [Openclaw Multi Agent Team Practice](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
 - [Strands Agents Cloud Cost Optimizer](../ch04/697-strands-agents.html)
@@ -19,38 +18,6 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "编排层"
-        COORD[协调器<br/>Orchestrator]
-        QUEUE[消息队列]
-    end
-    subgraph "Agent 团队"
-        W1["Worker A<br/>专项能力1"]
-        W2["Worker B<br/>专项能力2"]
-        W3["Worker C<br/>专项能力3"]
-    end
-    COORD --> QUEUE
-    QUEUE --> W1 & W2 & W3
-    W1 & W2 & W3 -->|"结果"| QUEUE
-    QUEUE -->|"汇总"| COORD
-    subgraph "共享层"
-        SHARED_MEM[共享记忆]
-        TOOL_BUS[工具总线]
-    end
-    W1 & W2 & W3 --> SHARED_MEM
-    W1 & W2 & W3 --> TOOL_BUS
-    IN[任务输入] --> COORD
-    COORD --> OUT[结果输出]
-    classDef coord fill:#dbeafe,stroke:#2563eb
-    classDef worker fill:#ede9fe,stroke:#7c3aed
-    classDef shared fill:#fef3c7,stroke:#d97706
-    class COORD,QUEUE coord
-    class W1,W2,W3 worker
-    class SHARED_MEM,TOOL_BUS shared
-```
-
 
 这篇文章的核心洞察并非某个具体的 OpenClaw 配置技巧，而是对「**专精智能体优于全能智能体**」这一设计原则的实证。作者从自己两个月内迭代出六个专精 Agent 的实践经验出发，总结出了三个阻碍全能 Agent 的根本原因：上下文污染、技能冲突和人设冲突。这三个问题本质上都是**单一 Agent 上下文窗口容量有限性与多场景需求之间的结构性矛盾**——在 LLM 的上下文窗口有物理限制的前提下，往里面塞入的异质性内容越多，每个子任务能分配到的注意力密度就越低，最终表现为 Agent 在每个任务上的表现都不够专业。专精 Agent 的设计通过将上下文空间按职能领域做隔离，让每个 Agent 的注意力资源始终高度集中，这是该方法论的有效性来源 。
 

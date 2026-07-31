@@ -4,36 +4,6 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/didi-eagle-3-speculative-decoding-agents.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("多轮 Agent 场景下 滴滴的 EAGLE-3 训推加速实践"))
-    背景 为什么 Agent 场景对推理速度要求更高
-    投机解码 Speculative Decoding 核心逻辑
-      两阶段流程
-      长上下文场景的挑战
-    EAGLE-3 方案选择
-      候选方案对比
-      长序列是前置条件
-    EAGLE-3 训练形态与显存问题
-      多层特征融合的代价
-      TTT Training-Time Test 机制
-      显存 OOM 本质
-    解决方案 USP Unified Sequence
-      两种序列并行方式对比
-      USP 核心设计
-      USP 效果
-    实测效果
-      Accept Len 对比
-      TPOT Time Per Output Token 收益
-    当前挑战与后续规划
-      核心挑战
-      后续规划
-    TTT 机制揭示了训练-推理分布一致性问题在 Draft
-```
-
 ## 背景：为什么 Agent 场景对推理速度要求更高
 
 过去两年，大语言模型（LLM）的应用形态从 ChatBot 快速演进为 [AI Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-patterns.md)。在自动化代码工程、长文档分析、多轮工具调用等复杂工作流中，上下文长度已从千级 token 扩展至数十万级；与此同时，LLM 的自回归生成具有强串行特性，导致延迟和吞吐成为制约用户体验与成本的核心瓶颈。
@@ -43,43 +13,6 @@ Agent 执行"思考—行动—观察—再规划"多轮循环，生成 500 toke
 LLM 的自回归生成是典型的 [memory-bound](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 瓶颈：每生成一个 token 都需执行一次前向计算并伴随对显存的高频访问（权重访问 + KV cache 读写），而自回归的串行依赖使整个生成过程难以并行优化。
 
 ## 投机解码（Speculative Decoding）核心逻辑
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 ### 两阶段流程
 
@@ -242,10 +175,10 @@ EAGLE-3 相对 MTP 在 Mean TPOT 上有 59% 改善，但文章更强调 P95/P95 
 ## 相关技术链接
 
 ## 相关实体
-- [Eagle 3 Speculative Decoding Optimization](../ch01/1016-spec.html)
+- [Eagle 3 Speculative Decoding Optimization](../ch01/1034-spec.html)
 - [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/035-agent.html)
 - [Gemma 4 Multi Token Prediction Drafters](../ch01/245-gemma-4-multi-token-prediction-drafters.html)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/094-ai.html)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/095-ai.html)
 - [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-eagle-3-speculative-decoding-agents.md)

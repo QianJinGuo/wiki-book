@@ -6,64 +6,11 @@
 
 # Backpressure is all you need
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Backpressure is all you need"))
-    反压的系统论视角 从生产者-消费者模型重新理解AI工作流
-    质量门禁的层次性与渐进式可信度建立
-    「昂贵剪贴板」问题的根源 跨Agent通信缺乏自动反压
-    TypeScript 作为反压原语的设计启示
-    立即可落地的三项实践
-    与现有工程实践的对齐策略
-    长期演进的监控指标建议
-```
-
 ## 核心要点
 
 Insightful and practical framework applying systems engineering backpressure to coding agent workflows, offering a compelling third path between full autonomy and constant oversight.
 
 ## 深入分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=8, c=7, stars=4。
 

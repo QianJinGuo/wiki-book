@@ -6,65 +6,14 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-we-made-window-join-parallel-and-vectorized.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How we made WINDOW JOIN parallel"))
-    专用算子 vs 通用查询重写 性能差距的本质
-    AVX2 SIMD 优化的工程细节
-    Amdahl 定律在数据库并行化中的体现
-    低基数快速路径的设计权衡
-    对于时序数据库选型的建议
-    对于数据库内核开发者的借鉴
-    对于金融数据工程师的具体指导
-    对于性能工程师的基准测试方法论
-```
-
 ## 相关实体
 
 - [How to create websites with great UX designs: Principles and examples](ch01/136-how-to-create-websites-with-great-ux-designs-principles-and.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/223-rag.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1268-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1273-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 ### 专用算子 vs 通用查询重写：性能差距的本质
 QuestDB WINDOW JOIN 展现出比 Timescale、DuckDB、ClickHouse 快 25 倍的性能，其根本原因在于**专用算子知道窗口结构而通用查询重写不知道** ^。
 基准测试揭示了一个重要洞察：即使其他引擎使用了正确的计划形状（ClickHouse 的 UNION ALL + 窗口函数），仍无法匹敌专用算子的数据级并行性加连续切片 SIMD ^。这是因为：

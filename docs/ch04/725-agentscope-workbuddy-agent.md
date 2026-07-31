@@ -6,20 +6,6 @@
 
 # 我用阿里 AgentScope 复刻了一个 WorkBuddy — 从开源框架到可运行 Agent 的实践拆解
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我用阿里 AgentScope 复刻了一个 WorkBuddy"))
-    关键技术点
-      模型配置管理
-      Toolkit 工具系统
-      权限系统五种模式
-    与既有内容的关系
-    四层工具架构
-```
-
 ## 核心定位
 
 本文来自叶小钗，是一篇 AgentScope Python 框架的实践教程。作者使用阿里开源的 AgentScope 框架（Python 版），完整复刻了 WorkBuddy 的核心工作流，涵盖模型配置管理、Toolkit 工具系统、权限控制、工作目录管理和前端交互等关键模块。
@@ -68,42 +54,11 @@ AgentScope 通过 ToolCallStartEvent、ToolCallDeltaEvent、ToolCallEndEvent 流
 ## 与既有内容的关系
 
 - [WorkBuddy 产品架构](../ch03/035-agent.html) — 提示词与产品化视角，本文补充了工程实现视角
-- [AgentScope Java Harness](../ch03/053-agentscope-java-harness-framework-2-0-agent-harness.html) — AgentScope Java 版的企业级 Harness 实现，本文对应 Python 版实践
-- [WorkBuddy 记忆对比](ch04/303-mem0-vs-workbuddy-agent.html) — 记忆层面的比较分析
+- [AgentScope Java Harness](../ch03/052-agentscope-java-harness-framework-2-0-agent-harness.html) — AgentScope Java 版的企业级 Harness 实现，本文对应 Python 版实践
+- [WorkBuddy 记忆对比](ch04/625-mem0-vs-workbuddy-agent.html) — 记忆层面的比较分析
 - [OpenClaw vs WorkBuddy](../ch05/004-loop-engineering.html) — 工作流引擎对比
 
 ## 四层工具架构
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 mini-WorkBuddy 的工具组织为四层：基础 Tool（Read/Write/Bash）→ MCP 接入 → Skills/Skill Loader → Tool Group 动态分组。这套结构为后续拆解"专家"和"专家团"能力提供了可扩展的工具基础。
 

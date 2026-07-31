@@ -3,7 +3,7 @@ title: "微软 Agent Framework 全栈指南：从 Hello Agent 到生产托管（
 source_url: "microsoft-agent-framework-python-zizhi"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: 3d2667ad9eca934aa3bd7cd28af66c0cccb16e198505b942d9a5588077c7af84
 ---
 ---

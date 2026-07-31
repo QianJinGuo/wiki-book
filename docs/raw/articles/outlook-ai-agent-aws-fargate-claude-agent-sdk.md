@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/ai-agent-automation-workflow-a
 ingested: 2026-06-01
 feed_name: AWS
 source_published: 2026-05-28T05:38:22Z
-type: article
+type: raw-article
 sha256: 524cbeb0cc2ab546bb7d80c6ae1e39da4132aebe8d76c82db9f951e9fd50596f
 tags: ['office-automation', 'aws', 'fargate', 'claude-agent-sdk', 'outlook']
 ---

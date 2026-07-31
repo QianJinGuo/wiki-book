@@ -4,7 +4,7 @@ source_url: "https://www.hyperdimensional.co/p/that-untravelld-world"
 author: "Dean Ball"
 ingested: "2026-06-21"
 sha256: "6d3eedd7d3bee3f4"
-type: article
+type: raw-article
 tags: [ai-governance, openai, policy, frontier-ai]
 ---
 

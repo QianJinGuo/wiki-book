@@ -10,18 +10,6 @@ Nathan Lambert 在 Interconnects 发表的评论文章，反对美国政府对�
 
 本文最初作为联合署名评论文章（op-ed）撰写，面向非技术性的普通公众，但被多家媒体拒稿，最终在 Interconnects 自有平台发布。作者以此为契机，系统性地阐述了开源 AI 在 2026 年地缘政治与 AI 监管双重背景下的战略意义。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Banning Open Source AI Would Be A"))
-    开源 AI 的三根支柱 教育 创新与竞争
-    安全与隐私 开源的优势而非劣势
-    中国竞争论的悖论
-    评价格与定位
-```
-
 ## 核心论点
 
 - **教育基础**：开源起源于 MIT 的自由软件运动（1983），是美国大学编程教育的核心基础设施。90% 以上的软件构建于开源之上。
@@ -31,42 +19,6 @@ mindmap
 - **中国陷阱**：利用中国竞争为借口的监管将适得其反——迫使全球采用中国模型，削弱美国创业公司竞争力。
 
 ## 背景
-
-```mermaid
-graph TB
-    subgraph "项目生命周期"
-        INIT[项目创建<br/>License选择]
-        FORK[Fork/Clone<br/>本地开发]
-        CONTR[贡献代码<br/>PR流程]
-    end
-    subgraph "质量门禁"
-        CI[CI自动化<br/>测试+Lint]
-        REVIEW[Code Review<br/>同行评审]
-        MERGE[合并决策<br/>维护者审批]
-    end
-    CONTR --> CI --> REVIEW --> MERGE
-    subgraph "发布"
-        VERSION[版本管理<br/>SemVer]
-        REL[发布<br/>Changelog]
-        DIST[分发<br/>PyPI/npm]
-    end
-    MERGE --> VERSION --> REL --> DIST
-    subgraph "社区"
-        DISCUSS[讨论区<br/>Issue/Discord]
-        GOV[治理模型<br/>BDFL/委员会]
-    end
-    DIST --> DISCUSS --> GOV
-    GOV -->|"方向反馈"| INIT
-    classDef life fill:#dbeafe,stroke:#2563eb
-    classDef quality fill:#ede9fe,stroke:#7c3aed
-    classDef release fill:#fef3c7,stroke:#d97706
-    classDef community fill:#d1fae5,stroke:#059669
-    class INIT,FORK,CONTR life
-    class CI,REVIEW,MERGE quality
-    class VERSION,REL,DIST release
-    class DISCUSS,GOV community
-```
-
 
 2026 年 6 月，适逢美国政府签署 AI 模型审查行政令、国会立法提案推进、以及限制外国人访问 Anthropic 模型等监管行动密集涌现。Lambert 认为这些行动可能"不经意或有意地"限制开源 AI。
 
@@ -126,7 +78,7 @@ Lambert 将开源的价值归纳为三个相互关联的维度，这一框架对
 
 ## 相关实体
 
-- [AI 公司为何把哲学家请进实验室](ch01/989-anthropic.html) — AI 对齐与伦理治理相关讨论
+- [AI 公司为何把哲学家请进实验室](ch01/1004-anthropic.html) — AI 对齐与伦理治理相关讨论
 - [Anthropic 8x 输出验证瓶颈](../ch09/100-anthropic-8x.html) — Anthropic 工程实践与模型输出治理
 
 ---

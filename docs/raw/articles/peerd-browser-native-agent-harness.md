@@ -5,7 +5,7 @@ author: "NotASithLord"
 published: "2026-06-25"
 ingested: "2026-06-25"
 sha256: "auto"
-type: article
+type: raw-article
 ---
 
 # peerd: The first AI agent harness native to the browser

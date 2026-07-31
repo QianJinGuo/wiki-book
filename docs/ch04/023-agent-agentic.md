@@ -8,7 +8,6 @@
 
 当数据消费主体从 “Human + Application” 扩张至千万级 AI Agent，传统数据库的能力边界已被彻底打破——海量 AI Agent 全天候自主检索、推理、协作、调度数据，传统数据底座已无法适配全新的业务逻辑。2026 火山引擎 FORCE 原动力大会·SUMMER，火山引擎数据库推出“**Agentic Data Management and Services** ”产品体系，并完成全栈产品升级。
 
-
 ## 核心观点
 
 > 本文通过article、agent、volcano-engine视角，分析了的技术进展和应用场景。
@@ -44,37 +43,6 @@
 以往数据库的访问对象是规整、可控的业务代码，人类手动编写 SQL 完成查询；而现在，调度数据的是一批具备自主规划、反复试错、瞬时并发暴涨特性的 AI...
 
 ## 技术洞察
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 本文的核心技术价值在于：
 - 当数据消费主体从 “Human + Application” 扩张至千万级 AI Agent，传统数据库的能力边界已被彻底打破——海量 AI Agent 全天候自主检索、推理、协作、调度数据，传统数据...

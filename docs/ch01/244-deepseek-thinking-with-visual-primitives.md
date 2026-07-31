@@ -9,32 +9,6 @@
 > Source: https://mp.weixin.qq.com/s/tz7Zdbv8KhHtG8fCGqQ5LQ
 > 官方论文：DeepSeek, "Thinking with Visual Primitives", 2026-04-30
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek Thinking with Visual"))
-    发布背景
-    核心创新 视觉原语
-      解决的问题 Reference Gap 指代鸿沟
-      三件不同的事
-      视觉原语的具体形式
-    效率对比
-    压缩链路
-    Benchmark 详细结果
-      计数任务 和 Gemini-3-Flash 互有胜负 整体打平
-      空间推理 通用 VQA DeepSeek 在 46 上排第一 基本打平
-      拓扑推理 真正的差距所在
-    阶段训练管线
-      Stage 1 Pretraining 预训练
-      Stage 2 Specialized SFT 专家化监督微调
-      Stage 3 Specialized RL 专家化强化学习
-    数据体量
-      Anti-cheat 数据设计
-    隐藏彩蛋 多语言能力
-```
-
 ## 发布背景
 - 2026-04-24：DeepSeek V4 论文发布（58页），提到多模态是 V5 方向
 - 2026-04-29：DeepSeek App 开始灰度内测识图模式
@@ -42,44 +16,6 @@ mindmap
 - DeepSeek 是七大主流 coding agent（OpenAI/Anthropic/Google/Qwen/Kimi/GLM/DeepSeek）中最后一个把视觉接入主力产品的旗舰
 
 ## 核心创新：视觉原语
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 ### 解决的问题：Reference Gap（指代鸿沟）
 主流路径在解决 **Perception Gap（感知鸿沟）**：让模型"看得更清楚"，通过高分辨率切割把图切成更多 patch。代价是图像 token 暴涨，KV cache 跟着暴涨。
 DeepSeek 的论点是：**感知再强，指代不准也白搭**。
@@ -156,7 +92,7 @@ DeepSeek 用坐标（x, y）解决：每一步都是精确数值，没有歧义�
 
 - F_TwG：专门训 thinking with grounding（用框思考）
 - F_TwP：专门训 thinking with pointing（用点思考）
-分开训的原因：避免模式冲突（用框和用点的思维方式有差异，混在一起训会互相干扰） See also [Karpathy Vibe Coding To Agentic Engineering](../ch04/237-agentic.html)
+分开训的原因：避免模式冲突（用框和用点的思维方式有差异，混在一起训会互相干扰） See also [Karpathy Vibe Coding To Agentic Engineering](../ch04/648-agentic.html)
 
 ### Stage 3: Specialized RL（专家化强化学习）
 算法：GRPO（V4 论文同款）

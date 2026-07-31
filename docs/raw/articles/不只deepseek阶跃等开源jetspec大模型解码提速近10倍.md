@@ -2,7 +2,7 @@
 title: "不只deepseek阶跃等开源jetspec大模型解码提速近10倍"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 89ea1bc9aaafd40de0b5a2eb7ced132b596f77ca4df1563d4ce674e65d6ac7bb
 ---

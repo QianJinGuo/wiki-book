@@ -11,7 +11,7 @@ source_url: https://www.interconnects.ai/p/the-next-phase-of-open-models
 tags:
 - article
 title: What comes next with open models
-type: source
+type: raw-article
 updated: '2026-06-07'
 ---
 

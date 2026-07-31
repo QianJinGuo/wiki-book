@@ -4,7 +4,7 @@ title: "Claude背后全是大厂老兵！Anthropic工程团队1680人画像曝�
 source: "InfoQ / 褚杏娟"
 ingested: 2026-06-15
 sha256: "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8091a2b3c4d5e6f7a8b9c0d1e2f3"
-type: raw
+type: raw-article
 tags: [anthropic, engineering-team, talent-analysis, hiring, compensation, infrastructure, google, linkedin-data, sebastian-cuadros]
 ---
 

@@ -9,38 +9,6 @@
 > **来源**：术哥（shuge）Spec-Driven AI 编程系列第四篇（反思篇），2026-06-18
 > **核心命题**：**"收藏过万的融合方案 ≠ 工程有效方案"。好的工具链不是收集出来的，是删出来的。** 本文给出**缝合怪的 3 个识别测试** + **加法 vs 减法的传播学反思** + **Plan Mode + Superpowers + ASD 最终方案**的完整决策过程。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("缝合怪识别与减法决策论 OpenSpec Superpowers"))
-    一 定位 反爆款实战反思
-    二 下线原因 11 1 的三处重叠
-      手工同步 自动集成
-    三 能修 但值得修吗 三笔账算完就收手
-      第一笔账 你修补的不是 bug 是世界观
-      第二笔账 修补的终点 是重写
-      第三笔账 就算修成了 方向也是反的
-    四 为什么缝合怪反而受追捧 三个认知陷阱
-      陷阱一 收藏的是安全感 不是工作流
-      陷阱二 加法有传播性 减法只有有效性
-      陷阱三 把单独有道理当成叠加更有道理
-    五 3 个测试识别缝合怪 本文独有方法论
-      真相源测试
-      同步测试
-      重叠测试
-    六 正确路径 渐进式 分流 vs 缝合 串联
-      主干 按需求分档
-      增强层 ASD Agent-Spec-Driven 6 注入点
-      验证管道 8 步独立闸门
-    七 与既有实体的关联
-    八 关键金句 直接引用
-      关于 Spec 与测试
-      关于修补
-      关于传播学
-```
-
 ## 一、定位：反爆款实战反思
 
 | 维度 | 上周收藏过万的融合方案 | 本文作者团队 2 周实测 |
@@ -52,37 +20,6 @@ mindmap
 | 最终走向 | 持续在收藏夹里 | 下线 OpenSpec |
 
 ## 二、下线原因：1+1 < 1 的三处重叠
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 把 OpenSpec 和 Superpowers 两条工具链并排画出来，3 处重叠一目了然：
 
@@ -240,16 +177,16 @@ bootstrap → spec-lint → build → lint → unit-test → ac-coverage → int
 |---|---|---|
 | [Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](ch05/009-harness.html) | **同作者昨日（6/17）ASD 实战文** | 116 行深度文档：4 条设计约束 + ASD 三层架构 + 8 步闸门管道 + 5 Agent Skill；本文是其次日（6/18）的反思篇，专攻"缝合怪识别 + 减法决策论" |
 | [Openspec 四步法深度复盘 流程完整不等于代码正确](ch05/050-openspec.html) | **同主题批判视角** | OpenSpec 流程完整 ≠ 代码正确（与本文"流程完整不等于工程有效"同脉） |
-| [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch05/111-ai-coding.html) | **同作者 6/17 三件套** | 术哥 6/17 OpenSpec+Superpowers+Comet 三件套（420 行）；与本文 6/18 OpenSpec+Superpowers **主动下线**形成强烈对照 — 同作者 24 小时内从"整合"到"拆分"的决策弧 |
-| [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](ch05/111-ai-coding.html) | **同三件套范式** | gstack + Superpowers + OpenSpec 三器合一工程化（114 行） |
+| [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch05/112-ai-coding.html) | **同作者 6/17 三件套** | 术哥 6/17 OpenSpec+Superpowers+Comet 三件套（420 行）；与本文 6/18 OpenSpec+Superpowers **主动下线**形成强烈对照 — 同作者 24 小时内从"整合"到"拆分"的决策弧 |
+| [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](ch05/112-ai-coding.html) | **同三件套范式** | gstack + Superpowers + OpenSpec 三器合一工程化（114 行） |
 | [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html) | **gstack 三件套** | 同上 gstack 三件套另一角度（233 行） |
-| [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](../ch03/078-claude-code.html) | **Superpowers 单独实战** | Superpowers 工作流详细解读（无 OpenSpec） |
-| [Claude Code Skills Superpowers Practice](../ch01/490-claude-code-skills-superpowers.html) | **Superpowers 技能实践** | Superpowers Skills 实践 |
-| [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1016-spec.html) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
+| [Claude Code Superpowers Workflow By Xinlingyuanyuanyuan](../ch03/077-claude-code.html) | **Superpowers 单独实战** | Superpowers 工作流详细解读（无 OpenSpec） |
+| [Claude Code Skills Superpowers Practice](../ch01/492-claude-code-skills-superpowers.html) | **Superpowers 技能实践** | Superpowers Skills 实践 |
+| [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1034-spec.html) | **Spec-Kit + BMAD** | Spec-Kit + BMAD SDD 实践（不同 SDD 流派） |
 | [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/018-ai-native.html) | **Spec-as-AIOS** | 高德 Spec-as-AIOS 反熵架构（Spec 即操作系统的不同视角） |
 | [Openspec Spec Driven Development Trae Solo](ch05/050-openspec.html) | **OpenSpec 单独实战** | OpenSpec + TRAE 单独使用 |
 | [Harness Engineering Alibaba Java Case Study](ch05/120-harness-engineering.html) | **阿里 Harness 工程** | 阿里 Harness 工程实践（与 SDD 互补） |
-| [Harness Pilot Claude Code Plugin Yangtong 2026 06 17](../ch03/078-claude-code.html) | **Harness Pilot** | Claude Code Harness 插件 |
+| [Harness Pilot Claude Code Plugin Yangtong 2026 06 17](../ch03/077-claude-code.html) | **Harness Pilot** | Claude Code Harness 插件 |
 
 ## 八、关键金句（直接引用）
 

@@ -10,63 +10,11 @@
 
 > **说明**：原文含 StoreClaw 产品案例展示段落。本文已对产品部分做批判性吸收，重点保留**行业趋势 + 5 巨头布局 + 案例数据 + Token 成本数据点**。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("电商 AI 操作系统崛起 从「工具人」到「All in One」"))
-    行业背景 AI 工具的「摩尔定律」
-    Token 成本急剧增长
-    巨头 Headless 布局 All in One 战略
-    两类解法
-      第一类 平台内置 AI 助手
-      第二类 第三方跨平台工具
-      StoreClaw 三层架构
-    行业 KnowHow 的 Skill 化 经验平权
-    案例数据 注 产品方自报 仅供参考
-    行业垂类 All in One 画像
-    为什么电商最先跑出来
-```
-
 ## 一句话定位
 
 **电商是 AI 操作系统（AI OS）最先落地的行业之一**。从「十几后台 + 十几 AI 用法 = 上百种人肉搬运」到「一个统一 Agent 入口 + 跨场景能力调用 = 行业基础设施」—— 这是 Salesforce/Amazon/Shopify/SAP/Atlassian/Google 在 2026 年的共同押注。
 
 ## 行业背景：AI 工具的「摩尔定律」
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 2025 到 2026 年，**AI 工具的供给密度提升，正以远超摩尔定律晶体管密度提升的速度一路狂奔**。
 
@@ -168,10 +116,10 @@ StoreClaw 预装几十个电商相关 Skills（Listing 优化/关键词研究/GE
 ## 关联引用
 
 → [电商智能体设计实践 (AWS Bedrock AgentCore)](../ch03/035-agent.html) — AWS 技术栈视角
-→ [OpenClaw 电商平台应用场景](../ch11/235-openclaw.html) — OpenClaw 工具视角
+→ [OpenClaw 电商平台应用场景](../ch11/237-openclaw.html) — OpenClaw 工具视角
 → [快时尚电商语音系统 (AWS)](../ch03/035-agent.html) — 语音交互电商 Agent
 → [vivo AI 导购](../ch03/035-agent.html) — vivo 单品牌 AI 导购
-→ [Thrive 1 亿投资 Shopify AI](../ch01/1243-0.html) — Shopify AI 战略投资
+→ [Thrive 1 亿投资 Shopify AI](../ch05/095-ai.html) — Shopify AI 战略投资
 → [原文存档（本篇）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
 
 ## 相关实体

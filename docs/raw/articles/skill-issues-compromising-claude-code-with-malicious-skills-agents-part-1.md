@@ -1,7 +1,7 @@
 ---
 
 title: "Skill Issues: Compromising Claude Code with malicious skills & agents -- Part 1"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://labs.reversec.com/posts/2026/05/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1
 fetcher: jina

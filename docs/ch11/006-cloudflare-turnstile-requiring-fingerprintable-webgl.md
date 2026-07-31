@@ -6,46 +6,7 @@
 
 # Cloudflare Turnstile requiring fingerprintable WebGL
 
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Niche but well-documented analysis of Cloudflare Turnstile WebGL fingerprinting requirements that effectively bans privacy-focused browsers, with specific browser bug references and screenshots.
 
@@ -64,10 +25,10 @@ Turnstile 的官方解释是："Turnstile 使用浏览器指纹来验证您是�
 Mozilla Firefox 在 WebGL 指纹保护方面存在已知漏洞（Bugzilla#1916271），其 Gecko 引擎会泄露经过清理的 GPU 特性，而 WebKit 和 Blink 则为所有用户返回硬编码字符串。更关键的是，即使用户在 Firefox 设置中选择了"严格"增强隐私保护，`privacy.resistfingerprinting` 也未被默认启用，意味着大多数 Firefox 用户在不知不觉中暴露了可追踪的 WebGL 信息 ^。
 
 ## 相关实体
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](../ch01/913-20.html)
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/094-ai.html)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](../ch01/926-20.html)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/095-ai.html)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](../ch01/913-20.html)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](../ch01/926-20.html)
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/020-build-agents-not-pipelines.html)
 
 ## 相关主题

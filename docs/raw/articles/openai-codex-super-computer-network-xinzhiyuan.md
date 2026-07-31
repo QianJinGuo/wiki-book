@@ -2,7 +2,7 @@
 title: "OpenAI秘密矩阵曝光！你的所有设备，被Codex连成一台超级电脑"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: 新智元
 author: ASI启示录
 source_url:

@@ -1,7 +1,7 @@
 ---
 title: "claude-code-hidden-settings-18"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: 86a3d94ced2c03052915da7fc4b92f0593d5d868d5b3b2d2ef7f6f14062c4eea
 provenance_state: archived
 ---

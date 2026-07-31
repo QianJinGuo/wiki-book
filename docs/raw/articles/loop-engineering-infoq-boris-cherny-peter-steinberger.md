@@ -6,7 +6,7 @@ feed: InfoQ
 publish_time: "2026-06-09 15:19"
 ingested: "2026-06-10"
 sha256: 5cee318d60ca272931605a3619650c7c7d4b3365
-type: raw
+type: raw-article
 tags: [loop-engineering, claude-code, boris-cherny, peter-steinberger, harness, generator-evaluator, token-cost, context-rot, routines]
 sources: [loop-engineering-addy-osmani-challengehub]
 ---

@@ -1,7 +1,7 @@
 ---
 
 title: "AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://hackread.com/ai-voice-cloning-technology-behind-where-it-is-headed/
 tags: [hackread, mistral-ai, security, vulnerability, repository-attack]

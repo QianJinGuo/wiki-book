@@ -6,22 +6,6 @@
 
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("xAI Grok Musk 训练新一代模型"))
-    xAI 的「死」是主动战略收缩 而非竞争失败
-    Colossus 1 租给 Anthropic 是一笔双蠃的算力套现交易
-    11 GPU 利用率揭示的是组织工程能力危机 而非硬件不足
-    Grok 的产品定位困境 社交媒体附属品而非 AI 平台
-    当你的独立公司烧钱速度超过融资能力时 「并入大生态」是比硬撑更理性的选择
-    淘汰算力资产的正确姿势是战略合作 而非直接报废
-    GPU 利用率低于20时 第一反应应该是检查调度系统和训练框架
-    模型公司的护城河不能只靠「价格战」或「政治立场」 必须有可量化的生态位
-```
-
 ## 深度分析
 ### 1. xAI 的「死」是主动战略收缩，而非竞争失败
 xAI 从诞生到解散，表面上是败于 OpenAI/Anthropic 的竞争压力，但实质是一场精心设计的资本结构重组。2026年2月资本层面并入、3月团队清零、5月品牌注销——这是三步节奏分明的撤退，而非溃败。核心逻辑：独立公司的百亿美元年烧钱速度已经无法通过单独融资覆盖，而并入 SpaceX 后整个集团1.25万亿美元估值能承载更大量级的债务和融资。马斯克保住了 Grok 这条产品线和 Colossus 2 的资产，但放弃了独立公司这个「壳」——这是一种融资能力上的「降本增效」。
@@ -39,43 +23,6 @@ Grok 最强的差异化是「反 woke」和政治立场鲜明的实时 X 数据�
 2026年3月底，最后一位创始团队联合创始人离职，xAI 创始团队全员清零。对于一家 AI 模型公司而言，研究团队是核心资产——算法创新、架构改进、训练细节优化都依赖有经验的研究员。当这些人全部离开后，剩下的只是算力和品牌。马斯克能买 GPU，但买不到有战斗力的研究团队。这个问题在 SpaceXAI 架构下不会自然消失，只会被组织惯性暂时掩盖。
 
 ## 实践启示
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 ### 1. 当你的独立公司烧钱速度超过融资能力时，「并入大生态」是比硬撑更理性的选择
 如果业务需要大量资本投入但边际融资成本越来越高，且业务本身是大生态的一部分（如此处的 AI 模型与社交媒体/航天），那么独立融资的估值天花板反而会成为限制。并入主生态后，估值故事从「AI 模型公司」升级为「大生态基础设施」，融资通道和债务容量都会上一个量级。这不是失败，是重新定价。
 
@@ -175,8 +122,8 @@ xAI作为独立公司，过去两年面对四个无解的问题。
 ** 第二，模型差异化窗口已经关闭。  **
 Grok 1到Grok 4一路推下来，bench
 ## 相关实体
-- [Xai Dissolved Grok Colossus2 Analysis](../ch05/094-ai.html)
-- [Xai Shutdown Grok Still Alive](../ch05/094-ai.html)
+- [Xai Dissolved Grok Colossus2 Analysis](../ch05/095-ai.html)
+- [Xai Shutdown Grok Still Alive](../ch05/095-ai.html)
 - [Building Blocks For Foundation Model Training And Inference On Aws](../ch11/121-building-blocks-for-foundation-model-training-and-inference.html)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/035-agent.html)
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)

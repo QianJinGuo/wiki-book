@@ -4,63 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/ibm-forward-deployed-units-ai-deployment.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("IBM Forward Deployed Units FDU AI"))
-    背景 企业 AI 交付的痛点
-    核心概念 Forward Deployed Units
-      团队结构
-      与传统咨询模式的区别
-    Forward Deployed Engineer FDE 角色
-    技术支撑 IBM Consulting Advantage
-    客户案例
-    从人力扩张到智能交付的范式转变
-    运营化取代项目化 Agentic AI 的核心诉求
-    FDE 角色崛起 技术-商业的跨界融合
-```
-
 ## 背景：企业 AI 交付的痛点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 IBM 在公告中指出，传统的 enterprise delivery model 依赖于劳动密集型（labor-intensive）的人力扩张模式——项目规模扩大意味着需要投入更多人力的线性增长。然而，随着 AI  adoption 加速，IBM 认为成功的关键已转向如何组织团队、协调 AI agents（[Agent](../ch03/035-agent.html)）、强化 governance（治理），以及将 AI 能力 operationalize（可操作化）为可量化的业务成果。
 这一判断呼应了 **Agentic AI** 落地过程中的核心矛盾：企业在 experiment（实验）阶段可以快速验证 POC，但将 AI 真正部署到 production（生产环境）时却困难重重。技术不是问题，operating model（运营模式）才是瓶颈。
 
@@ -137,7 +81,7 @@ FDU 运行在 IBM Consulting Advantage 平台上，形成了"平台+交付模型
 - **Agentic AI** — FDU 的核心能力载体，AI agent 可自主执行 coding、evaluation、testing 等任务（概念页待建）
 - **IBM watsonx** — IBM 企业 AI 平台，与 FDU 形成平台+交付模型的组合（实体页待建）
 - **企业 AI 部署** — FDU 试图解决的正是从 experiment 到 production 的规模化落地难题（概念页待建）
-- [硅谷一线 FDE 实践者圆桌](../ch01/1290-fde-field-deployment-engineer.html) — 与本文互补：IBM 是公司战略视角，该文是一线实践者视角，覆盖 FDE 三种形态、蒸馏飞轮、中国落地障碍等
+- [硅谷一线 FDE 实践者圆桌](../ch01/1295-fde-field-deployment-engineer.html) — 与本文互补：IBM 是公司战略视角，该文是一线实践者视角，覆盖 FDE 三种形态、蒸馏飞轮、中国落地障碍等
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ibm-forward-deployed-units-ai-deployment.md)
 
 ---

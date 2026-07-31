@@ -3,7 +3,7 @@ title: "WWW 2026 | RAG黑箱被打开！OpenDecoder把文档质量写进解码"
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/hhtjInhN8kmH5EBLRrd4Gw"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "7f7c886cef00e9d2575a82583f84b071a5d4fbee7221d3088990db84aeb946b5"

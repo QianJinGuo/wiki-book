@@ -4,66 +4,10 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/google-debuts-gemini-focused-updates-at-io-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Google Debuts Gemini-Focused"))
-    主要发布内容
-      Gemini 模型更新
-      Android 17 与 Gemini Intelligence
-      新平台 Aluminium OS 和 Android XR
-    技术层面 平台厂商嵌入基础模型的权衡
-    开发者层面 API 稳定性与工具链变革
-    行业层面 Google IO 的信号价值
-    针对 ML 工程师与基础设施团队
-    针对开发者与工具链团队
-    关注重点
-```
-
 ## 概述
 Google I/O 2026 于 5 月 19-20 日在加州山景城 Shoreline Amphitheatre 举行，主题演讲定 于 5 月 19 日上午 10 点（太平洋时间）。据 Gizmodo、Android Authority、Mashable、TechRadar 等多家媒体报道，本届 I/O 将以 **Gemini 模型升级** 为核心，并加速 Gemini 在 Android、ChromeOS 及新硬件平台上的深度整合。
 
 ## 主要发布内容
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 ### Gemini 模型更新
 据 Gizmodo 记录，Google 此前已发布 Gemini 2.5 系列（包括 Gemini 2.5 Flash 和 2.5 Pro），2025 年底推出 Gemini 3，并预览了 Gemini 3.1 Pro 和 3.1 Flash-Lite。多方报道推测本次 I/O 可能公布新模型（Gemini 4 或 Gemini 3.x 增量版本），具体命名和性能数据尚未官方确认。
 
@@ -112,8 +56,8 @@ Google I/O 作为平台和工具方向的**信号事件**，其实质影响体�
 - [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 - [Gemini Ai](ch01/047-gemini-ai-google.html)
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/094-ai.html)
-- [Google Io 2026 Agentic Gemini Era](../ch04/237-agentic.html)
+- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/095-ai.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/648-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-debuts-gemini-focused-updates-at-io-2026.md)
 

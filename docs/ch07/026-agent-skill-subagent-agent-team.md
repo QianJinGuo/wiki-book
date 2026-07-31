@@ -4,19 +4,6 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/baidu-netdisk-three-layer-agent-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("三层 Agent 架构 Skill SubAgent Agent"))
-    三层职责分层
-    Skill 执行稳定性的核心
-    SubAgent 上下文隔离与 Memory 传递
-    Agent Team 四路并行与 Mailbox 协调
-    核心设计原则
-```
-
 ## 三层职责分层
 | 层级 | 定位 | 解决的问题 | 适用场景 | ].md]
 |------|------|-----------|---------| ].md]
@@ -26,37 +13,6 @@ mindmap
 整体方案的稳定性，最终由 Skill 的规范质量决定。SubAgent 和 Agent Team 提供的是调度骨架，骨架上每个节点能不能稳定输出，取决于 Skill 本身有没有真正约束执行过程，而不只是描述了执行目标。 ].md]
 
 ## Skill：执行稳定性的核心
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 Skill 把一类任务的执行方式写成可复用的规范文件，AI 调用时按规范走，不再每次重新理解。它是无状态的，没有对话历史，只做一件事——被调用时稳定输出。 ].md]
 **最有用的约束：Checklist** ].md]
 把每个步骤拆成可以逐项打勾的检查项。AI 在多步骤任务里很容易跳步，有了 Checklist，每完成一步对照一项，遗漏率明显下降。 ].md]
@@ -114,9 +70,9 @@ Agent Team 把四类提取任务（UI 组件、布局文件、业务逻辑、资
    整体方案的稳定性由 Skill 的规范质量决定，SubAgent 和 Agent Team 提供的是调度骨架，骨架上每个节点能不能稳定输出，取决于 Skill 有没有真正约束执行过程。这意味着在三层架构中，Skill 层的基础设施投入回报率最高——一个 extractor Skill 的改进会同时惠及所有使用它的 Teammate 和 SubAgent。 ].md]
 ## 相关实体
 - [Baidu Netdisk Kmp Migration Three Layer Agent Architecture](../ch03/035-agent.html)
-- [Agent Memory Engineering Tax Aws China 2026](../ch04/121-agent-memory.html)
-- [Ai Skill Skill Creator 源码拆解](../ch04/319-skill-skill.html)
-- [From Agent Protocol To Harness Skill](../ch04/428-from-agent-protocol-to-harness-skill.html)
+- [Agent Memory Engineering Tax Aws China 2026](../ch04/098-agent-memory.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/321-skill-skill.html)
+- [From Agent Protocol To Harness Skill](../ch04/431-from-agent-protocol-to-harness-skill.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture.md)].md]

@@ -5,7 +5,7 @@ source: "Cilium Blog"
 author: "Cilium Team"
 publish_date: "2026-06-07"
 ingested: "2026-06-11"
-type: article
+type: raw-article
 tags: [kubernetes, security, cilium, ebpf, runtime-security, k8s]
 source_type: rss
 sha256: "0b328aebd48b0b1a3c596d80b7891f6dccef6853e2e3fdca3c0b3cb0a9f1bd2d"

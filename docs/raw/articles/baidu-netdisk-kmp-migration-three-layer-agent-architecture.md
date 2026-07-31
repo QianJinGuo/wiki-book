@@ -6,7 +6,7 @@ feed_name: "百度Geek说"
 author: "三石"
 published: "2026-05-20"
 created: "2026-05-20"
-type: article
+type: raw-article
 tags:
   - agent-engineering
   - skill

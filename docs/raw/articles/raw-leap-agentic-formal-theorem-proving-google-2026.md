@@ -4,7 +4,7 @@ source_title: "LEAP：Google 用 Agentic Framework 让大模型攻克形式化�
 source_author: ScienceAI / 数据派THU
 ingested: 2026-07-07
 sha256: a8a9173882e7542c4865476d914df47210d79f4bf2f866b0f5d150f8427a0eda
-type: raw-source
+type: raw-article
 ---
 
 来源：ScienceAI

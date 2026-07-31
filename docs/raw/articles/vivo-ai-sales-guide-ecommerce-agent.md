@@ -12,7 +12,7 @@ date: 2026-05-27
 created: 2026-05-28
 updated: 2026-05-28
 tags: [ai-agent, ecommerce, rag, fasttext, intent-classification, product-recommendation, vivo, structured-output, knowledge-base, prompt-engineering]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: b955f976153d15ac043f10bc6c0e49abee457f58c456f66d8a1c74ddde95b723
 ---

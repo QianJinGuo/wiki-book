@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/1dXweRUM2Sx6KfRrrp6hJg
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, claude-code, dynamic-workflows, thariq-translation, 8th-source, hermes-dag-parallel, xingxiaozhao, opus-4-vs-gpt-5-5, prompt-claude-to-create-workflow, ultracode-trigger, /goal-/loop-combo, token-budget, save-share-workflow]
 ---
 

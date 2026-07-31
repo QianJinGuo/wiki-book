@@ -51,19 +51,6 @@ PyTorch Profiler Events API now exposes flow IDs, flow types, activity types, un
 **FlightRecorder: ncclx + gloo Backends**
 FlightRecorder's trace analyzer now supports ncclx and gloo backends alongside the existing nccl and xccl backends, enabling distributed communication tracing across a broader set of collective backends. Additionally, FlightRecorder now recognizes torchcomms operations (e.g., all_gather_single, reduce_scatter_v, barrier) that were previously untracked. A race condition that could cause an infinite loop when multiple process groups concurrently accessed the FlightRecorder singleton was also fixed in this cycle. Backend allowlist added by Lily Janjigian (Meta) (PR #180268), with torchcomms operation support by Tushar Jain (PR #178359).
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("PyTorch 212 Release Blog"))
-    Platform Related Updates
-      CUDA
-      ROCm
-      Apple MPS
-    Deprecations and Breaking Changes
-```
-
 ## **Platform Related Updates**
 ### **CUDA**
 **CUDA Graph kernel annotations**
@@ -86,43 +73,6 @@ FlexAttention on AMD GPUs now uses two-stage pipelining in the Triton backend, d
 Apple Silicon binary wheels now ship with ahead-of-time-compiled Metal-4 shaders, built on macOS 26 with the metal-4 standard. This eliminates the runtime shader compilation overhead on first run, reducing startup latency for MPS workloads. A companion API (`torch._C._mps_loadMetalllib`) was also added for loading pre-compiled .metallib blobs directly, supporting the Triton Apple MPS backend's compile-time metallib workflow. Contributed by Isalia20 (Irakli Salia) (PR #179378).
 
 ## **Deprecations and Breaking Changes**
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 #### **Distributed: Planned Breaking Changes for torchcomms**
 We've been working hard on integrating torchcomms directly into PyTorch Distributed so everyone can get the benefits out of the box. In an upcoming release (2.13+) we're planning on using torchcomms by default, which includes some breaking changes to how ProcessGroups operate. We aim to make these changes work automatically for most models and fix any incompatibilities in the ecosystem, but nevertheless, some models will be impacted.
 We're still polishing torchcomms but you can use it right now and get access to the new APIs, fault tolerance, window, scalability, and debuggability features. To get started, `pip install torchcomms` and set `TORCH_DISTRIBUTED_USE_TORCHCOMMS=1`.
@@ -170,8 +120,8 @@ PyTorch 2.x系列的演进方向（硬件无关性、编译优化、生产就绪
 - [Pytorch 2 12 Release Blog](ch01/203-pytorch-2-12-release-blog.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
-- [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/1274-llm.html)
-- [Deepseek V4 Triton Fp4 Optimization](ch01/441-deepseek-v4-triton-fp4.html)
+- [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/637-llm.html)
+- [Deepseek V4 Triton Fp4 Optimization](ch01/444-deepseek-v4-triton-fp4.html)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 title: "WorkOS Pipes: Third-party integrations without the headache"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://workos.com/blog/workos-pipes-third-party-integrations
 fetcher: jina

@@ -8,18 +8,6 @@
 
 火山引擎 AI 搜索团队分享了其 Agent 架构从 ReAct 三节点演进到 Unified Policy Agent（UP-ReAct）的实践历程。该系统支持千万级并发用户，是生产级 Agent 架构设计的典型案例。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("火山引擎 AI 搜索千万级 Agent 架构演进 从 ReAct"))
-    从 Prompt Engineering 到 System
-    Workflow Unified Policy Agent 的架构解耦
-    Unified Policy 三合一决策中枢
-    三个统一 控制 行为 状态
-```
-
 ## 核心问题
 
 随着规模增长，ReAct 三节点架构暴露出三个关键问题：
@@ -42,28 +30,6 @@ mindmap
 ### Workflow + Unified Policy Agent 的架构解耦
 
 核心设计是将 AI 搜索链路一分为二：
-
-```mermaid
-graph TD
-    subgraph "旧架构: ReAct 三节点"
-        TH["Thought<br/>推理节点"]
-        AC["Action<br/>动作节点"]
-        IT["Iteration<br/>迭代节点"]
-        TH --> AC --> IT --> TH
-    end
-    subgraph "新架构: UP-ReAct"
-        WF["Workflow 层<br/>确定性骨架<br/>风控·路由·画像·召回"]
-        UP["Unified Policy<br/>三合一决策中枢"]
-        CM["Context Manager<br/>滑动窗口·语义去重·记忆驱逐"]
-        WF --> UP
-        CM --> UP
-    end
-    UP -->|"Planning<br/>Action Selection<br/>Termination"| Tool["万物皆 Tool<br/>search·exit·think·load"]
-    style UP fill:#f97316,stroke:#333,color:#fff
-    style WF fill:#3b82f6,stroke:#333,color:#fff
-    style CM fill:#22c55e,stroke:#333,color:#fff
-```
-
 
 **Workflow 层（确定性骨架）**：接管所有无需 LLM 决策的前置工作——风控校验、意图路由分类、用户画像预加载、基础倒排索引召回。例如电商搜索中"必须先过滤无库存商品"是绝对业务红利规则，硬编码在 Workflow 中远比指望 Agent 每次都"想起"调用过滤工具可靠得多。
 

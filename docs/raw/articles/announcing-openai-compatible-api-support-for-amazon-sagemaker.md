@@ -1,6 +1,6 @@
 ---
 title: Announcing OpenAI-compatible API support for Amazon SageMaker AI Endpoints
-type: source
+type: raw-article
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/announcing-openai-compatible-api-support-for-amazon-sagemaker-ai-endpoints
 tags: [aws-china-blog, agentic-ai, context-engineering]

@@ -6,7 +6,7 @@ url: https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-perfor
 title: "Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google"
 sha256: 168a5a4965e1b203006f1f9cb4119c8561ec07325ce1d1154ab23f49b69961c3
 date: 2026-05-13
-type: raw
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: neutral

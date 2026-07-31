@@ -1,6 +1,6 @@
 ---
 title: Create Custom MCP Catalogs and Profiles
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.docker.com/blog/create-custom-mcp-catalogs-and-profiles/
 fetcher: jina

@@ -1,6 +1,6 @@
 ---
 title: Agent Executor, Google’s distributed Agent Runtime
-type: article
+type: raw-article
 tags: [agent, apple, google, llm, optimization, vision]
 source: rss
 source_url: https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime/

@@ -1,7 +1,7 @@
 ---
 
 title: "Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps"
-type: article
+type: raw-article
 source: newsletter
 source_url: https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/
 tags: [google, ai]

@@ -8,28 +8,6 @@
 
 # "Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践"
 # Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness不是目的 知识才是护城河"))
-    一 三大标志性 Harness 实践对比
-    二 Harness Engineering 三支柱 知识位置
-    三 核心论点 为什么知识沉淀比工作流更重要
-      工作流是可替换的 知识是可累积的
-      没有知识沉淀的工作流是一次性的
-      知识是团队的复利资产
-    四 知识分层架构 五层存储 五种类型 三级成熟度
-      五层存储架构
-      五种知识类型 MECE 原则
-      三级成熟度 自动衰减
-    五 团队知识库设计
-      独立 Git 仓库 知识的单一事实来源
-      三种团队角色
-      区块链三思想借鉴 用 Git 实现
-```
-
 ## 核心论点
 **"工作流只是管道，知识才是流过管道的活水。"**
 
@@ -37,37 +15,6 @@ mindmap
 - **Skill、Agent、工具链会随模型迭代更新，但领域知识是永恒的。**
 
 ## 一、三大标志性 Harness 实践对比
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 实践方 | 核心关注 | 关键动作 |
 |---|---|---|
 | OpenAI — Codex | 人机交互协议 | 零手写代码，通过精确的指令协议驾驭 Agent |
@@ -186,7 +133,7 @@ log.md 只追加不修改确保了知识变更的历史完整性；evidence.cont
 当每个阶段入口/出口都有明确持久化产物时，Agent 可以在任意时间点暂停、人类在任意时间审批后继续。这解决了 Harness 工作流的"在场依赖"问题——真正实现了 7×24 小时流转而不需要工程师全程在场。^
 **与行业 Harness 实践的呼应关系**
 文章第一节对比的三大 Harness 实践（OpenAI Codex 的指令协议 / Cursor Self-Driving 的多 Agent 协同 / Anthropic Claude Code 的长时稳定性）分别对应了人机交互、编排和记忆三个维度。腾讯 AI Team 的知识管理框架本质上是为这三个维度提供持续的知识供给和生命周期管理能力。^
-这与 [Harness Engineering 全面解读](ch05/120-harness-engineering.html) 中描述的"约束校验与失败恢复"支柱以及 [Claude Code 大型代码库最佳实践](../ch03/078-claude-code.html) 中的多层记忆系统形成互补——本文提供了知识层面的系统性方案，而行业实践提供了工具层面的具体实现路径。^
+这与 [Harness Engineering 全面解读](ch05/120-harness-engineering.html) 中描述的"约束校验与失败恢复"支柱以及 [Claude Code 大型代码库最佳实践](../ch03/077-claude-code.html) 中的多层记忆系统形成互补——本文提供了知识层面的系统性方案，而行业实践提供了工具层面的具体实现路径。^
 
 ## Related entities
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/009-harness.html)

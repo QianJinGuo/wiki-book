@@ -8,64 +8,11 @@
 
 高德信息业务中心营销算法团队构建的 **AI Agent 系统**，专注 Uplift 模型（预测"给用户发券能多撬动多少 GMV"）迭代的完整生命周期自动化。输入一句自然语言目标，1-2 天后输出训练完的模型 + AUUC 评估报告 + 审计日志，工程师介入次数 = 0。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("面向复杂算法任务的 AI Agent 高德"))
-    五层架构
-    三个核心能力
-      能力 1 不知疲倦 不丢进度
-      能力 2 能审稿自己 能修自己的错
-      能力 3 能跟企业平台对话 卡住会等人
-    完整迭代案例 时间线
-    整体工程指标
-    业界范式对齐与企业实践
-      个 harness primitives 实现对照
-      企业平台典型痛点与补丁
-      Audit 驱动落地的三项能力
-    与已有实体的关联
-    test-time compute allocation per
-    企业 AI vs Kaggle 沙盒
-```
-
 ## 一句话
 
 **从 3-5 天人工迭代到 1-2 天无人值守，工程师投入降低 67%——通过 5 层 Long-Running Harness + 8 个 LLM Agent 协作 + 3 个核心能力（不丢进度/自审自修/企业平台适配），实现算法工程的真正自动化。**
 
 ## 五层架构
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ```
 L5: 业务层 (Uplift 模型迭代生命周期)
@@ -156,7 +103,7 @@ L1: 基础设施层 (数据平台、训练平台、Git 存档)
 
 - [高德 Marketing AutoResearch](../ch04/089-marketing-autoresearch-ai-native.html) — 同属营销算法团队，本文聚焦 Uplift 模型迭代自动化，对方聚焦营销决策托管
 - [高德 AI 伴行架构](../ch03/035-agent.html) — 空间智能场景的 Agent 架构
-- [阿里 LoongSuite Pilot 观测审计](../ch09/047-coding-agent.html) — 企业级 Agent 可观测性方案
+- [阿里 LoongSuite Pilot 观测审计](../ch09/046-coding-agent.html) — 企业级 Agent 可观测性方案
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html) — 业界 harness 范式综述
 
 ## 核心论点
@@ -196,7 +143,7 @@ Agent harness 不只控制行为，还作为实验基础设施——控制变量
 快速迭代小幅优化比慢速大幅重构更有效——harness 的实验能力支撑快速迭代。
 ## 相关实体
 
-- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/913-20.html)
+- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](../ch01/926-20.html)
 
 ---
 

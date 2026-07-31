@@ -6,61 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("腾讯混元Hy3-preview发布"))
-    架构选择 快慢融合的 MoE 路线
-    评测策略 从公开榜单到真实战斗力
-    Agent 能力的重点突破
-    开源策略与生态布局
-    对模型研发团队
-    对 Agent 应用开发者
-    对企业评估标准
-```
-
 ## 摘要
 腾讯混元 Hy3-preview 发布并开源，这是一个快慢思考融合的混合专家模型（MoE），总参数 295B，激活参数 21B，最大支持 256K 上下文长度，在复杂推理、指令遵循、上下文学习、代码、智能体等能力上实现大幅提升。
 
 ## 关键要点
-
-```mermaid
-graph TB
-    subgraph "项目生命周期"
-        INIT[项目创建<br/>License选择]
-        FORK[Fork/Clone<br/>本地开发]
-        CONTR[贡献代码<br/>PR流程]
-    end
-    subgraph "质量门禁"
-        CI[CI自动化<br/>测试+Lint]
-        REVIEW[Code Review<br/>同行评审]
-        MERGE[合并决策<br/>维护者审批]
-    end
-    CONTR --> CI --> REVIEW --> MERGE
-    subgraph "发布"
-        VERSION[版本管理<br/>SemVer]
-        REL[发布<br/>Changelog]
-        DIST[分发<br/>PyPI/npm]
-    end
-    MERGE --> VERSION --> REL --> DIST
-    subgraph "社区"
-        DISCUSS[讨论区<br/>Issue/Discord]
-        GOV[治理模型<br/>BDFL/委员会]
-    end
-    DIST --> DISCUSS --> GOV
-    GOV -->|"方向反馈"| INIT
-    classDef life fill:#dbeafe,stroke:#2563eb
-    classDef quality fill:#ede9fe,stroke:#7c3aed
-    classDef release fill:#fef3c7,stroke:#d97706
-    classDef community fill:#d1fae5,stroke:#059669
-    class INIT,FORK,CONTR life
-    class CI,REVIEW,MERGE quality
-    class VERSION,REL,DIST release
-    class DISCUSS,GOV community
-```
-
 - 混元 MoE 架构：总参数 295B，激活 21B，支持 256K 上下文
 - 强化学习驱动：2026 年 2 月完成预训练和 RL 基础设施重建
 - Agent 能力全面提升：SWE-Bench Verified、Terminal-Bench 2.0、ClawEval 等基准表现竞争力
@@ -69,9 +18,9 @@ graph TB
 
 ## 相关实体
 - [Cline releases open-source agent runtime SDK](../ch03/035-agent.html)
-- [Cline releases open-source agent runtime SDK](../ch04/487-cline-releases-open-source-agent-runtime-sdk.html)
+- [Cline releases open-source agent runtime SDK](../ch04/493-cline-releases-open-source-agent-runtime-sdk.html)
 
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
 
 ## 深度分析
 ### 架构选择：快慢融合的 MoE 路线

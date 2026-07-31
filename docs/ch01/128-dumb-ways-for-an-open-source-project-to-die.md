@@ -4,47 +4,10 @@
 
 > 📊 Level ⭐ | 4.7KB | `entities/dumb-ways-for-an-open-source-project-to-die.md`
 
-
 ## 核心要点
 - ...
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "项目生命周期"
-        INIT[项目创建<br/>License选择]
-        FORK[Fork/Clone<br/>本地开发]
-        CONTR[贡献代码<br/>PR流程]
-    end
-    subgraph "质量门禁"
-        CI[CI自动化<br/>测试+Lint]
-        REVIEW[Code Review<br/>同行评审]
-        MERGE[合并决策<br/>维护者审批]
-    end
-    CONTR --> CI --> REVIEW --> MERGE
-    subgraph "发布"
-        VERSION[版本管理<br/>SemVer]
-        REL[发布<br/>Changelog]
-        DIST[分发<br/>PyPI/npm]
-    end
-    MERGE --> VERSION --> REL --> DIST
-    subgraph "社区"
-        DISCUSS[讨论区<br/>Issue/Discord]
-        GOV[治理模型<br/>BDFL/委员会]
-    end
-    DIST --> DISCUSS --> GOV
-    GOV -->|"方向反馈"| INIT
-    classDef life fill:#dbeafe,stroke:#2563eb
-    classDef quality fill:#ede9fe,stroke:#7c3aed
-    classDef release fill:#fef3c7,stroke:#d97706
-    classDef community fill:#d1fae5,stroke:#059669
-    class INIT,FORK,CONTR life
-    class CI,REVIEW,MERGE quality
-    class VERSION,REL,DIST release
-    class DISCUSS,GOV community
-```
-
 开源项目的死亡并非单一原因导致，而是多种结构性脆弱性叠加的结果。理解这些死因，对于构建更具韧性的开源生态至关重要。
 **1. 人的问题比代码问题更致命。** 绝大多数开源项目死亡并非因为代码质量下降，而是因为维护者离开了。Ghost Maintainer（幽灵维护者）、Corporate Orphan（公司遗弃）、Thesis Orphan（学术遗弃）、Funding Cliff（资金断裂）、Hired Away（被挖走）——这些死因的共同特征是：项目依赖单一或少数维护者，一旦这些人退出，项目即进入不可逆的衰落。
 **2. 维护者存在 ≠ 项目健康。** 即使维护者仍在，项目也可能已经"功能性死亡"。Burnout Plateau（倦怠停滞）让维护者有气无力推进实质改进；Benevolent Zombie（善意僵尸）靠机器维持表面活性；Toxic Gatekeeping（毒性把关）吓退所有潜在继任者。核心问题是：recency-based 健康度指标（如最近提交时间、贡献图）完全无法区分真正活跃与机器驱动的空转。
@@ -59,7 +22,7 @@ graph TB
 4. **将项目"可发布性"纳入维护标准。** 定期检查：发布权限是否仍然有效？CI 是否仍然绿？能否从源码构建并发布一个版本？这些检查比 commit graph 更能反映项目真实存活能力。
 5. **为 Fork 保留可能性。** 保持与社区的良好关系，避免进入 Toxic Gatekeeping 状态。即使项目当前健康，也要关注是否有替代 fork 可用。License 变更（Terraform/OpenTofu、Redis/Valkey）表明 Fork 往往是唯一出路，提前保持关系比危机时重建容易得多。
 ## 相关实体
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/444-agentrun.html)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 - [Products Are Out Brains Are In](ch01/135-products-are-out-brains-are-in.html)

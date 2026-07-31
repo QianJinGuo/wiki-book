@@ -7,22 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)
 来自 newsletter 文章 [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md) 提取。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CyberSecQwen-4B Why Defensive"))
-    主要章节
-    关键性能数据
-    训练配方
-    小专项模型 vs 大通用模型的 trade-off 重新被审视
-    数据主权与隐私边界成为选购模型的硬指标
-    LoRA 微调 专项数据的 recipe 可迁移性得到验证
-    AMD ROCm 生态正在补齐 AI 训练最后一公里
-    给网络安全团队
-```
-
 ## 核心内容
 CyberSecQwen-4B 是一个 4B 参数的专项网络安全模型，在 CTI-Bench 基准上以 4B 参数量超越了 Cisco 8B 通用安全模型 Foundation-Sec-Instruct-8B（CTI-MCQ 58.68% vs 49.96%，+8.7pp），同时参数减半。模型可运行于单张 12GB 消费级 GPU，数据全程不离本地，适合 SOC、MDR、威胁情报、漏洞分析等敏感场景。
 
@@ -62,43 +46,6 @@ Optimizer    = paged_adamw_8bit
 ```
 
 ## 深度分析
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 ### 1. 小专项模型 vs 大通用模型的 trade-off 重新被审视
 过去两年 LLM 发展主旋律是"规模即性能"——GPT-4、Claude、Gemini 都在堆参数、堆算力。但 CyberSecQwen-4B 的核心论点在于：**防御性网络安全是一个强约束场景，通用大规模模型的三高（高调用成本、高数据泄露风险、高部署门槛）与该场景天然不兼容**。
 这揭示了一个重要趋势：**AI 落地正在从"通用最优"向"场景最优"分化**。不是每个场景都需要 70B 或 100B+ 的模型；垂直领域的专项微调可以用 1/10 的参数实现相当甚至更好的专业任务表现。

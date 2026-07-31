@@ -1,7 +1,7 @@
 ---
 title: "How to Calculate the Inference Efficiency Ratio"
 sha256: dfbe73c56bda5f3675af303722859f01684d990274e82bfdd8c43981991b7ce7
-type: source
+type: raw-article
 source: newsletter
 source_url: "https://www.thesaascfo.com/how-to-calculate-the-inference-efficiency-ratio/"
 review_value: 8

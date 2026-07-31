@@ -4,7 +4,7 @@ title: "我把 YC 最新一批 196 家公司全扒了一遍——AI 已经不再
 source: "深思圈 / 深思SenseAI"
 ingested: 2026-06-15
 sha256: "d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1"
-type: raw
+type: raw-article
 tags: [yc, startup, ai-agent, b2b, market-analysis, chris-lu, agent-as-a-service, drone, defense, founder-background]
 ---
 

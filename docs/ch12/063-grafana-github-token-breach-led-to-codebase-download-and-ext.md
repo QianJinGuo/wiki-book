@@ -4,44 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
 
-
 ## 事件概要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 Grafana 于 2026 年 5 月披露，公司遭 unauthorized party 获取了可访问其 GitHub 环境的 token，并下载了代码库。调查显示无客户数据或个人信息的访问痕迹，Grafana 随即启动取证分析、定位泄露源头、作废凭证并强化安全管控。攻击者随后试图勒索 Grafana，要求支付赎金以阻止被盗数据库公开，Grafana 拒绝支付并遵循 FBI 一贯立场——不与勒索者谈判。
 CoinbaseCartel 宣称对此次事件负责。该组织于 2025 年 9 月崛起，被评估为 ShinyHunters、Scattered Spider 和 LAPSUS$ 生态的分支，专注于数据窃取和勒索而非传统勒索软件，已累计受害 170 家机构，遍布医疗、科技、交通、制造和商业服务领域。
 
@@ -96,10 +59,10 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - 将 CoinbaseCartel 的 TTPs（战术、技术、流程）纳入 SOC 检测规则
 ## 相关实体
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
-- [Grafana Github Token Breach Led To Html](../ch01/820-github.html)
-- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/820-github.html)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/820-github.html)
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/820-github.html)
+- [Grafana Github Token Breach Led To Html](../ch01/834-github.html)
+- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/834-github.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/834-github.html)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/834-github.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)

@@ -1,7 +1,7 @@
 ---
 title: "alibaba-agentic-cloud"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: 3afdccd447b883f8863f3fd96281b11cede2415ccbfefdf3b9049f5f2799358c
 ---
 # 阿里云 Agentic Cloud

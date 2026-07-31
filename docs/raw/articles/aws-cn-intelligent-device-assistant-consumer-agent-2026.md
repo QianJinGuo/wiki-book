@@ -2,7 +2,7 @@
 source: rss
 source_url: https://aws.amazon.com/cn/blogs/china/based-on-aws-intelligent-device-assistant
 ingested: 2026-06-17
-type: article
+type: raw-article
 sha256: 58caebdc7dd7106ec17cae9811bc7ca752c89faedad1265da98aa24906667adf
 feed_name: AWS China Blog
 source_published: 2026-06-17

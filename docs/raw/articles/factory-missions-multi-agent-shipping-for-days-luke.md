@@ -5,7 +5,7 @@ source_platform: wechat
 author: "歪脖抠腚"
 publish_date: 2026-05-14
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [factory, multi-agent, missions, orchestrator, worker, validator, validation-contract, structured-handoff, droid-whispering, factory-droid]
 review_value: ★★★★★
 review_confidence: ★★★★☆

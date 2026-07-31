@@ -4,26 +4,6 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/ai-coding-entropy-framework-baidu-geek-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Coding 的底层框架 一切优化都是在对抗熵增信息论视角"))
-    核心概述
-    信息论三概念 AI Coding 映射
-    两个现实修正
-      修正一 低熵 正确 模型自信度 vs 正确性
-      修正二 交叉熵 HQP 才是更关键的问题
-    覆盖层 vs 填补层
-    四个经典问题的回答
-      Q1 Context Engineering vs RAG vs 记忆
-      Q2 历史业务为什么总翻车
-      Q3 Agent 能不能只给需求文档完成交付
-    Harness Engineering 的信息论解释
-    核心金句
-```
-
 ## 核心概述
 
 用信息论三个概念（熵、条件熵、互信息）统一解释 AI Coding 的所有优化手段：**一切优化都是在对抗熵增**——让模型少猜一点，让真实约束多暴露一点。Context Engineering、RAG、记忆、SDD、Harness Engineering 都可以放到同一个坐标系里看。
@@ -31,43 +11,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-coding-entropy-framework-baidu-geek-2026.md)
 
 ## 信息论三概念 → AI Coding 映射
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 | 概念 | 公式 | AI Coding 含义 |
 |------|------|----------------|
@@ -135,8 +78,8 @@ Harness = 计划分解 + 状态管理 + 工具编排 + 验证门控 + 反馈回�
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文给出了 Harness 的信息论解释
 - [高德 Spec as AI OS：反熵增架构](../ch05/018-ai-native.html) — 同一主题的工程实践视角
-- [Claude Code 为什么会忽略指令](../ch03/078-claude-code.html) — CLAUDE.md 越写越糟的信息论解释（噪音稀释信号）
-- [Skills 重新定义 Agent 喂知识](../ch03/072-skills.html) — Skills 的渐进式披露本质是信息密度优化
+- [Claude Code 为什么会忽略指令](../ch03/077-claude-code.html) — CLAUDE.md 越写越糟的信息论解释（噪音稀释信号）
+- [Skills 重新定义 Agent 喂知识](../ch03/071-skills.html) — Skills 的渐进式披露本质是信息密度优化
 
 ---
 

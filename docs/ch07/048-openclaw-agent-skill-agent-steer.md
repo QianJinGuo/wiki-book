@@ -8,28 +8,6 @@
 
 > 京东技术发布的 OpenClaw 源码深度分析，聚焦 Agent 执行引擎、Skill 系统、子 Agent 架构和容错机制——与 [OpenClaw 与 Hermes 源码架构对比](../ch01/232-openclaw-hermes.html)（Gateway/Channel/Dreaming 记忆视角）互补。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw 深度架构分析 Agent 引擎 多源 Skill"))
-    架构分层
-    Agent 执行引擎
-    Skill 机制详解
-      多源加载 6 来源按优先级合并
-      过滤与资格
-      数量限制
-    子 Agent 架构
-      创建参数 sessionsspawn 工具
-      创建流程
-      生命周期与注册表
-    五层容错体系
-    工具权限策略
-    与已有 OpenClaw 实体的互补
-    关键独到判断
-```
-
 ## 架构分层
 
 OpenClaw 在 pi-mono（嵌入式 Agent 引擎）之上构建三层：
@@ -40,39 +18,6 @@ OpenClaw 在 pi-mono（嵌入式 Agent 引擎）之上构建三层：
 **两种互补架构**：Agent + Skill（注入领域知识）+ 主子 Agent（并行执行+上下文隔离）。
 
 ## Agent 执行引擎
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 **双入口同流程**：CLI 和 Gateway/API 走同一条执行路径。runWithModelFallback 提供多 Auth Profile 轮换。
 

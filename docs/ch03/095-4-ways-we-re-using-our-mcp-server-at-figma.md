@@ -6,7 +6,6 @@
 
 # 4 ways we’re using our MCP server at Figma
 
-
 ## Overview
 
 Published Time: 2026-06-16T12:00:00.000Z
@@ -17,39 +16,6 @@ Two months after [opening the canvas to agents ![Image 1: Dark terminal window l
 Here are four workflows Figmates are running right now using these new capabilities.
 
 ## [1. Create and refresh decks in Figma Slides](http://www.figma.com/blog/4-ways-were-using-our-mcp-server-at-figma/#_1-create-and-refresh-decks-in-figma-slides)
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 Mallory Dean, a designer advocate at Figma, maintains an evergreen deck covering Figma’s AI product launches. It's a living deck that she refreshes every few weeks so that what she's presenting at design talks and customer meetings stays current as we ship.
 

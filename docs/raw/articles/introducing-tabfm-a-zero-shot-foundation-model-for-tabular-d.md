@@ -3,7 +3,7 @@ title: "Introducing TabFM: A zero-shot foundation model for tabular data"
 source_url: "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/"
 ingested: 2026-07-02T11:40:01Z
 sha256: placeholder
-type: raw
+type: raw-article
 tags: [newsletter, raw]
 ---
 

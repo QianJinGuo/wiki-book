@@ -5,7 +5,7 @@ source_platform: wechat
 author: "AI贺贺"
 publish_date: 2026-05-19
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [agentmemory, coding-agent, long-term-memory, bm25, vector-search, graph-search, mcp, rest-api, iii-engine, hook, codex, claude-code]
 review_value: ★★★★☆
 review_confidence: ★★★★☆

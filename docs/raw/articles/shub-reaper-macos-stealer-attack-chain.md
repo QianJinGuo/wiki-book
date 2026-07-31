@@ -1,7 +1,7 @@
 ---
 
 title: "SHub Reaper: macOS Stealer Spoofs Apple, Google, and Microsoft in a Single Attack Chain"
-type: raw
+type: raw-article
 tags: [macos, malware, stealer, apple, security]
 source: newsletter
 source_url: https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain

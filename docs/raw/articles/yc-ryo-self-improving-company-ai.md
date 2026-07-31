@@ -3,7 +3,7 @@ title: "如何用AI打造一家自我进化的公司"
 source_url: "https://mp.weixin.qq.com/s/vHNtacpK9oFWw8n2oRL3cQ"
 author: "深思圈"
 created: 2026-05-26
-type: article
+type: raw-article
 tags: [ai-agent, company-design, self-improving, yc, organizational]
 sha256: ""
 ---

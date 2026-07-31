@@ -2,7 +2,7 @@
 title: "Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 373c39b0e83d2db24b8f762c370837c0e8db8a303b1188813bbc30c9e206297c
 ---

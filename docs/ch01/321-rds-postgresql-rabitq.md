@@ -4,58 +4,10 @@
 
 > 📊 Level ⭐⭐ | 12.7KB | `entities/在-rds-postgresql-中实现-rabitq-量化.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("在 RDS PostgreSQL 中实现 RaBitQ 量化"))
-    向量检索成为 RDBMS 新标配
-    pgvector 在大规模场景下的三大瓶颈
-    为什么是 RaBitQ
-    核心原理 几何特性 随机旋转 SQ4
-    相关资源
-```
-
 ## 核心要点
 阿里云 RDS PostgreSQL 在 pgvector 扩展中引入了 **RaBitQ（Random Binary Quantization）** 向量量化技术，实现 **32 倍压缩比**（float32 → 1bit/维度），同时通过理论误差界保证召回率。实测在 1024 维 100M 向量的业务数据集上，IVF-RaBitQ 索引空间仅 16GB（vs. HNSW 的 689GB），索引创建时间从 4 天缩短至 4 小时，P99 查询延迟在混合读写场景下降低至原来的约 1/4。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 ### 向量检索成为 RDBMS 新标配
 随着大语言模型和多模态 AI 的普及，将非结构化数据（文本、图像、音频）编码为高维向量并在海量向量中快速检索，已成为 RAG、语义搜索、图像检索、推荐系统等场景的基础设施需求。pgvector 基于 PostgreSQL 内核的 Access Method 接口实现了 IVF-FLAT 和 HNSW 两种向量索引，让企业无需引入专用向量数据库即可获得 AI 能力。阿里云 RDS PostgreSQL 在跟进开源版本迭代的同时，针对生产场景做了性能和稳定性优化，RaBitQ 即为其中关键引入。
 
@@ -115,21 +67,21 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/在-rds-postgresql-中实现-rabitq-量化.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1274-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/637-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/009-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/003-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/271-skill.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/444-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/273-skill.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/120-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/235-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/237-openclaw.html)
 
-- [Hermes Agent /goal 长任务运行时架构](../ch04/381-hermes-agent-goal.html)
+- [Hermes Agent /goal 长任务运行时架构](../ch04/385-hermes-agent-goal.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/096-hermes-agent.html)
-- [LoongSuite GenAI 可观测语义规范](../ch04/467-loongsuite-genai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/472-loongsuite-genai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/035-agent.html)
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/111-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/112-ai-coding.html)
 - [卡片式对话的协议方案探索和思考](https://github.com/QianJinGuo/wiki/blob/main/entities/卡片式对话的协议方案探索和思考.md)
 
 ---

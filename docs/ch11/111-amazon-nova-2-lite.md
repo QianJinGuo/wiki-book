@@ -6,60 +6,7 @@
 
 # Amazon Nova 2 Lite 视觉对象检测（自然语言驱动）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Nova 2 Lite 视觉对象检测 自然语言驱动"))
-    关键 Prompt 模板设计
-    成本与定位
-    与现有 entity 差异化
-    零训练检测的实现机制
-    归一化坐标系统的工程影响
-    Serverless 架构的成本经济学
-    三行业用例的泛化性分析
-    快速验证优先于复杂架构
-```
-
 ## 概述
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 Amazon Nova 2 Lite 是 AWS Bedrock 上的多模态基础模型，通过**自然语言 prompt** 实现零训练目标检测 —— 无需数据标注、无需训练、无需基础设施管理。给定图像和目标列表（如 "vehicle"、"person"、"dent"），模型返回结构化 JSON 的精确 bounding box 坐标。
 

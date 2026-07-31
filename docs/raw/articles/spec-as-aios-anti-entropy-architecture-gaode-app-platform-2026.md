@@ -5,7 +5,7 @@ source: wechat
 author: APP 平台业务中心 / 高德技术
 published: 2026-06-02
 ingested: 2026-06-02
-type: raw-archive
+type: raw-article
 tags: [wechat, spec-as-aios, anti-entropy, sdg-spec-driven, harness-engineering, three-tier-specification, ai-native-architecture, agentic-coding, code-entropy, multi-agent-collaboration, automated-gate, gaode, alibaba, ai-friendly-framework, knowledge-graph]
 sha256: 1fa1bb81d65034140e4b911518ff1a13d92e448c693e0e8e1935da983ed3d393
 ---

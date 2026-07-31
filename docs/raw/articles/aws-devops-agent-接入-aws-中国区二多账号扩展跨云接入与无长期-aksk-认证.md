@@ -4,7 +4,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/aws-devops-agent-access-aws-ac
 ingested: 2026-07-01
 sha256: b6a004b51d64ef20fbb91eab6cce4800c4e1371e60065e4b6709bebd13e728c3
 title: "AWS DevOps Agent 接入 AWS 中国区（二）：多账号扩展、跨云接入与无长期 AK/SK 认证"
-type: article
+type: raw-article
 tags: [aws, devops-agent, agent-infrastructure, mcp, aws-china]
 ---
 

@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/blogs.nvidia.com-vera-cpu-delivery.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Vera Arrives NVIDIAs First CPU"))
-    背景与定位
-    技术规格与设计理念
-    首批交付详情
-      Anthropic
-      OpenAI
-      SpaceXAI
-    在 NVIDIA 平台中的位置
-    架构创新的市场逻辑
-    合作伙伴选择的战略意图
-    竞争格局与市场信号
-    技术护城河分析
-```
-
 ## 核心要点
 - **发布背景**：NVIDIA 创始人兼 CEO Jensen Huang 在 2026 年 3 月 GTC San Jose 上正式发布 Vera CPU，这是 NVIDIA 首个独立 CPU 产品线，被定位为下一个数十亿美元业务
 - **首批交付对象**：Anthropic（旧金山）、OpenAI（Mission Bay）、SpaceXAI（帕洛阿尔托）、Oracle Cloud Infrastructure（圣克拉拉），均由 NVIDIA VP Ian Buck 亲自送货上门
@@ -31,37 +12,6 @@ mindmap
 - **商业落地**：OCI 计划 2026 年部署数十万颗 Vera CPU，是首个超大规模部署 Vera 的云厂商；Vera 还是 Vera Rubin NVL72 的主机处理器，与 Rubin GPU 通过第二代 NVLink-C2C 互联
 
 ## 背景与定位
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 Agentic AI 对 CPU 有与传统数据中心完全不同的需求。NVIDIA CEO 黄仁勋在 GTC 上推出 Vera CPU 时，将其定位为 NVIDIA 下一个多亿美元业务线。随着 AI 模型从"回答问题"向"执行行动"演进，专门为这种工作负载设计的 CPU 成为必要。
 AI 代理并非只运行在 GPU 上——每个代理沙箱、每次工具调用、每个编排层、每次长上下文检索操作，都是 CPU 的工作。Vera 正是为这种现实需求从头设计的新类别 CPU。
 
@@ -142,10 +92,10 @@ NVLink Fusion 向第三方 XPU 开放 NVIDIA 基础设施平台，使合作伙�
 
 ## 相关实体
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/184-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
-- [Nvidia Agentic Systems Extreme Co Design](ch04/237-agentic.html)
+- [Nvidia Agentic Systems Extreme Co Design](ch04/648-agentic.html)
 - [Sap Unveils The Autonomous Enterprise](ch04/105-sap-unveils-the-autonomous-enterprise.html)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/237-agentic.html)
-- [Nemotron 3 5 Content Safety](../ch01/479-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/648-agentic.html)
+- [Nemotron 3 5 Content Safety](../ch01/478-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blogs.nvidia.com-vera-cpu-delivery.md)

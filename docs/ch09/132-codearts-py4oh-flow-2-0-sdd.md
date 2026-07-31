@@ -8,21 +8,6 @@
 
 > 本文是华为云码道（CodeArts）在实际企业项目——Py4OH-Flow 2.0（基于 Blockly 的跨平台可视化编程工具重构）中的完整工程实践记录。核心亮点：利用 CodeArts 的 Spec-Driven Development（SDD）工作流，将 9 万行历史遗留代码以约 2 万行全新代码等价替换，代码量缩减近 80%。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("华为云码道 CodeArts 重构图形编程项目实践"))
-    项目背景
-    SDD 工作流 规格驱动开发的核心实践
-    AI 辅助编码的三类角色
-    Py4OHBridge 双客户端架构
-    安全防护体系
-    上下文感知能力
-    关系页面
-```
-
 ## 项目背景
 
 Py4OH（Python for OpenHarmony）是一个专为开源鸿蒙操作系统构建的 Python 语言支持层与软硬件一体化解决方案，由电子科技大学开源鸿蒙技术俱乐部指导老师、奇林波科技旗下蜀鸿会技术社区创始人唐佐林发起。
@@ -35,41 +20,6 @@ Py4OH 工具链包括：
 Py4OH-Flow 1.0 版本基于开源项目二次开发，长期积累了大量历史遗留问题：编译环境依赖 Python 2.7（已于 2020 年停止维护）、修改必须编译后才能看到效果、二次开发的补丁式修改导致代码耦合严重、缺乏工程化规范。
 
 ## SDD 工作流：规格驱动开发的核心实践
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 本项目最核心的开发范式中，特性规格文档（`.codeartsdoer/specs/` 目录）完整记录了各项功能的 "做什么"（What）：
 

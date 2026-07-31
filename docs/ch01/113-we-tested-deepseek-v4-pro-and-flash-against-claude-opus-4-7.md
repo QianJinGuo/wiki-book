@@ -4,61 +4,16 @@
 
 > 📊 Level ⭐ | 5.2KB | `entities/wetesteddeepseekv4proandflashagainstclau.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("We Tested DeepSeek V4 Pro and"))
-    复杂工作流测试揭示模型间真实差距
-    租约过期处理是所有模型的共同弱点
-    端点路由挂载错误是 DeepSeek V4 Flash 的致命伤
-    Flash 级别的工具调用可靠性超出预期
-    在 AI 编程评估中纳入代码正确性深层检查
-    对工作流系统中的租约过期逻辑必须进行专项测试
-    利用低成本模型进行快速原型探索
-    为 Flash 级别模型建立差异化的代码审查清单
-```
-
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wetesteddeepseekv4proandflashagainstclau.md)
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1091-deepseek.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1151-deepseek-v4.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/570-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/710-deepseek-v4.html)
 - We Tested DeepSeek V4 Pro and Flash Against Claude
 
 ## 深度分析

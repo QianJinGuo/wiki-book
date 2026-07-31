@@ -4,7 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/uOCq__-ksvmwf6tCRg3brw"
 original_url: "https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 All API handlers must validate input with Zod before processing.

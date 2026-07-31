@@ -2,7 +2,7 @@
 title: "我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: 百度Geek说
 author: 鸟窝
 source_url: https://mp.weixin.qq.com/s/BPviViv47rZRt0feiONYqg

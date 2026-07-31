@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: 3-legged OAuth + session binding / ECS AI Agent安全架构 / AgentCore Identity
 sha256: d3fb03fe6f76

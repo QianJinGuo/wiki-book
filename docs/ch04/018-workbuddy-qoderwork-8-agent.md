@@ -9,60 +9,11 @@
 > 来源：夕小瑶科技说 (WeChat) | 2026-07-14 | v×c=56
 > 核心观点：三家国产桌面 Agent（豆包/WorkBuddy/QoderWork）各有侧重——豆包是封闭套装（强多模态+语音），QoderWork 是专业 Agent 市场（硬核 Skill 生态），WorkBuddy 是开放连接器（外接模型+IM 全接入）。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("豆包 WorkBuddy QoderWork怎么选"))
-    桌面 Agent 的分化趋势
-    关键能力缺口
-    Skill 生态的三种模式
-    评测分数对比
-```
-
 ## 摘要
 
 文章通过 8 个真实办公任务（本地电脑操控、信息搜索整合、跨设备协同、多模态、Skill/MCP 生态、外接模型、语音通话与屏幕共享、价格透明度）横评了三家国产桌面 Agent：豆包（字节）、WorkBuddy（腾讯）、QoderWork（阿里）。评测发现三家没有全能冠军，但各自有清晰的定位分工。豆包在 PPT 制作和多模态能力上表现突出，但生态封闭（仅飞书 IM、仅豆包模型）；QoderWork 在微信提醒、专家 Skill 套件上最强，适合专业场景；WorkBuddy 最开放（外接模型、全 IM 接入、费用预估），但电脑操控能力较弱。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 
 - **本地电脑操控**：豆包和 QoderWork 打平，均能流畅操作浏览器和本地软件；WorkBuddy 默认绕过 Computer Use 能力，改用手写代码方式执行任务，速度明显慢
 - **信息搜索整合**：豆包效率最高（并行搜索+快速产出），WorkBuddy 深度最强（HTML 报告+独家数据），QoderWork 最简练（老板摘要风格）；但三家都有事实盲区，人工核查不可省

@@ -4,7 +4,7 @@ source_url: https://www.volcengine.com/docs/85637/1544066?lang=zh
 author: 火山引擎
 date: 2026-05-25
 title: "智能问数Agent--数据智能体-火山引擎"
-type: raw
+type: raw-article
 tags: [volcengine, data-agent, nl2sql, intelligent-query, enterprise, ai-agent]
 review_value: 8
 review_confidence: 9

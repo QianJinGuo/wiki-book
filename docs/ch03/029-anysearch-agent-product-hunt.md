@@ -6,54 +6,11 @@
 
 # AnySearch — Agent专用搜索引擎，登顶Product Hunt
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AnySearch Agent专用搜索引擎 登顶Product Hunt"))
-    Agent 时代搜索的重新定义
-    与传统 AI 搜索的本质差异
-    三大排序算法的工程智慧
-    Agent 原生设计的工程落地
-```
-
 ## 摘要
 
 AnySearch 是一款由中国团队开发的 Agent 专用搜索引擎，于 2026 年 7 月登顶 Product Hunt 周榜 Top 1。与面向人类的通用 AI 搜索不同，AnySearch 专门为 AI Agent 提供实时、准确、可追溯的结构化信息输入。它覆盖 20 多个垂直领域数据源，通过意图路由、多源交叉过滤和结构化输出，重新设计了 Agent 的信息获取链路。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 - **目标差异**：不是给人用的搜索，而是给 Agent 用的——交付结构化数据而非网页链接
 - **技术架构**：智能意图识别 → 垂直数据源路由 → 同源衰减+信息密度仲裁+混合排序 → 正文提取+内容清洗+Markdown 结构化输出

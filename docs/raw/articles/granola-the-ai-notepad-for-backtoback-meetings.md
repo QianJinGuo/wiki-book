@@ -5,7 +5,7 @@ title: "Granola — The AI Notepad for back-to-back meetings"
 sha256: 2bd2879a772dfaced24ea9c4e273773b733cfd8c803ac375d0158ffa6153abea
 created: 2026-05-14
 updated: 2026-05-14
-type: source
+type: raw-article
 tags: []
 review_value: 7
 review_confidence: 8

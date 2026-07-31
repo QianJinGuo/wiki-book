@@ -4,7 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/DY9oiDqQJb8PCXwC6GMlcQ"
 author: "伍斌 @ CSDN"
 created: 2026-07-02
 updated: 2026-07-02
-type: raw
+type: raw-article
 tags: [deepseek, r1, amd, gpu, deployment, vllm, rocm, local-llm, ngrok, cherry-studio, opencode]
 ingested: 2026-07-02
 sha256: e12b2fe0764b7601b4f7e74bcc458bb2d7c9bb156daf88bc15f9403352b6ceaa

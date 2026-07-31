@@ -6,67 +6,11 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Weve Been Here Before Decompilers"))
-    核心论点 历史重演的规律
-      三次技术变革的共同模式
-      永恒的循环模式
-    AI 与漏洞研究 这次有什么不同
-      确实不同的部分
-      并非不同的部分
-    Thomas Ptacek 的论点与反驳
-    equilibrium argument 的深层含义
-    历史类比的有效性与局限性
-    对于漏洞研究员
-    对于安全团队
-    对于安全教育
-```
-
 ## Summary
 > Score: 8×8=64
 本文来自 ClearSec Labs 的 Matt Handley，从历史视角审视 AI 给漏洞研究领域带来的冲击。作者通过 decompiler（反编译器）、fuzzer（模糊测试器）、static analysis（静态分析）三次类似技术变革的历史经验，指出"easy work goes away, harder work becomes more valuable"的规律，并给出在 AI 时代保持竞争力的实践建议。
 
 ## 核心论点：历史重演的规律
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 ### 三次技术变革的共同模式
 **第一次：Decompiler（反编译器）**
 Hex-Rays 将反编译能力大众化后，业界担忧 reverse engineering 将被机器终结。作者指出实际结果：**decompiler 没有取代 RE，而是让其变得可访问**——真正理解 decompiler 局限（何时它产生幻觉类型、何时漏掉别名、输出看起来合理但实际错误）的工程师反而更有价值。
@@ -186,7 +130,7 @@ ISACA 调查支持这一观点：87% 的网络安全专业人士认为 AI 将增
 4. **可解释 AI 在安全中的应用**：理解 AI 为什么认为某代码有漏洞，比仅知道结果更重要
 
 ## 相关实体
-- [weve-been-here-before-ai-vulnerability-research](../ch05/094-ai.html)
+- [weve-been-here-before-ai-vulnerability-research](../ch05/095-ai.html)
 
 ---
 ## 关联

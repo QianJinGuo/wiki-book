@@ -1,7 +1,7 @@
 ---
 title: Temporarily disabling new user registrations
 sha256: b8b065119670abaf17668e2ec70a7443a9b9b089ef382d66806b50fe80458062
-type: source
+type: raw-article
 source: newsletter
 source_url: https://status.rubygems.org/incidents/cytf062tkwtt
 review_value: 7

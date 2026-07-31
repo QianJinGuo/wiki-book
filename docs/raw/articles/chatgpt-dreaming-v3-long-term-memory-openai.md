@@ -5,7 +5,7 @@ title: "ChatGPT 的"失忆症"终于被治好了！Dreaming V3 让大模型拥�
 author: 大石
 publisher: 51CTO技术栈
 date: 2026-06-05
-type: article
+type: raw-article
 ingested: 2026-06-05
 review_value: 8
 review_confidence: 8

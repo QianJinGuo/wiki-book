@@ -5,7 +5,7 @@ author: 丛林
 published: 2026-05-17
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [routa, multi-agent, agent-coordination, software-delivery, kanban]
 sha256: 7bac88057abec99c0492ec553bf24ebfb4ceb75bbda1464a7d8a8520af6cfe1e
 review_value: 7

@@ -1,7 +1,7 @@
 ---
 title: "IC work is the new career flex"
 sha256: 14ddb606c50586cfa7ccfdae75b31343321d95b53db5f532b3792b1e5257a757
-type: source
+type: raw-article
 source: newsletter
 source_url: "https://www.elenaverna.com/p/ic-work-is-the-new-career-flex"
 review_value: 7

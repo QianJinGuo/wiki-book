@@ -1,7 +1,7 @@
 ---
 
 title: "How Claude Code works in large codebases: Best practices and where to start"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
 tags: [claude]

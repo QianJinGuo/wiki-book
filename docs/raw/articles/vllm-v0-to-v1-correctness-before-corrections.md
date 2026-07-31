@@ -9,7 +9,7 @@ review_recommendation: strong
 review_stars: 5
 source_feed: TLDR AI (newsletter)
 source_published: 2026-05-06
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [newsletter, security]

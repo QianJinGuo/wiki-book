@@ -8,22 +8,6 @@
 
 > **Background**：本文基于 Zvi（thezvi.wordpress.com）对 OpenAI GPT-5.6 Sol 的全面分析，整合官方基准测试、社区反馈、基准验证、安全评估和实际使用模式，聚焦 Sol 作为"Workhorse"定位与 Claude Fable 作为"Architect"定位的范式对比。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GPT-56 Sol Workhorse vs Architect"))
-    核心定位 Workhorse vs Architect
-    基准测试对比
-    定价与分层
-    实际应用模式
-    Workhorse vs Architect 互补而非竞争的模型范式
-    定价策略背后的产品哲学
-    基准测试揭示了什么
-    实际应用中的协同模式
-```
-
 ## 核心定位：Workhorse vs Architect
 
 Zvi 的核心框架将 Sol 和 Fable 定位为互补而非竞争对手：
@@ -38,44 +22,6 @@ Zvi 的核心框架将 Sol 和 Fable 定位为互补而非竞争对手：
 | 最佳搭档 | Codex / ChatGPT Work | Claude Code / Cowork |
 
 ## 基准测试对比
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 两种模型在不同基准测试中展现出截然不同的优势：
 
@@ -96,9 +42,9 @@ Zvi 建议的实践模式：
 - Sol 适合"已知如何做的任务"，Fable 适合"需要想清楚再做的任务"
 
 ## 相关实体
-- [GPT-5.6 Sol/Terra/Luna 分层定价](../ch01/517-codex.html)
-- [GPT-5.6 Preview System Card](../ch01/530-gpt-5-6-preview-system-card-community-detection-benchmar.html)
-- [Claude Opus 4.8 System Card (Zvi)](../ch01/1334-claude-opus-4-8.html)
+- [GPT-5.6 Sol/Terra/Luna 分层定价](../ch01/520-codex.html)
+- [GPT-5.6 Preview System Card](../ch01/533-gpt-5-6-preview-system-card-community-detection-benchmar.html)
+- [Claude Opus 4.8 System Card (Zvi)](../ch01/1339-claude-opus-4-8.html)
 
 ## 深度分析
 

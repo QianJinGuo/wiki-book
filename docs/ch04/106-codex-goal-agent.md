@@ -4,68 +4,11 @@
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/codex-goal-agent-runtime.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex goal 长任务Agent的目标运行时"))
-    三层设计
-      第一层 目标持久化 state-db
-      第二层 运行时生命周期
-      第三层 完成审计 预算收束
-    Goal vs Loop 根本差别
-    工作现场六组件
-    三条可搬回实践
-      让目标长出状态机
-      让完成长出审计
-      让收束长出模板
-    与用户 Harness 体系的关系
-    相关页面
-    目标状态机的本质 把意图变成运行时对象
-    Completion Audit 协议 堵住模型自我宣布完成的口子
-```
-
 ## 核心论点
 `/goal` 把一个长期目标放进了 Codex 的**运行时里**：目标有状态，过程有记账，完成要审计，预算到了要收束。
 **比普通 loop 多走的一步**：没有把长任务包装成"无限自动化"，而是把长任务拆成一组可以被观察、记账、暂停、恢复和收束的状态，再把模型自己改写状态的口子堵上。
 
 ## 三层设计
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 第一层：目标持久化（state-db）
 目标从 prompt 里的文字 → state-db 里的持久对象，具备：
 
@@ -137,17 +80,17 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 
 - [高德伴行Agent](../ch03/035-agent.html)（工作现场六组件）
 - [Hermes Agent](../ch03/096-hermes-agent.html)（Karpathy 观点被多次引用）
-- [Agent Memory Architecture](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)（状态为什么得落在模型外面）
+- [Agent Memory Architecture](ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html)（状态为什么得落在模型外面）
 
 ## 相关页面
 - [原文存档：Codex /goal 实现拆解](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-implementation-breakdown.md)
 
 ## 相关实体
 - [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/059-codex-goal-six-hour-run.html)
-- [Cline releases open-source agent runtime SDK](ch04/487-cline-releases-open-source-agent-runtime-sdk.html)
+- [Cline releases open-source agent runtime SDK](ch04/493-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](../ch03/035-agent.html)
 
-- [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/390-openai.html)
+- [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/391-openai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 ### 目标状态机的本质：把"意图"变成"运行时对象"

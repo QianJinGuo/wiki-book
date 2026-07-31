@@ -10,7 +10,7 @@ review_value: 8
 review_confidence: 8
 review_recommendation: strong
 review_stars: 4
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 sha256: a01614f5d7bbceccc424fa8ed2df63b771af0619647dec7a4a93197050f9adc1

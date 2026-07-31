@@ -1,7 +1,7 @@
 ---
 title: "The great memory panic of 2026"
 sha256: 70b96bd0f6bd71d0156927d3985cad6922eb3b20bfa9930cd8124b4b27961815
-type: source
+type: raw-article
 source: newsletter
 source_url: "https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/"
 tags: [article]

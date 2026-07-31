@@ -4,59 +4,12 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/harness-engineering-systematic-explainer.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 系统性解读"))
-    核心主线
-    Prompt Context Harness 三层区分
-    Harness 不是 AGENTSmd
-    Harness 的本质 七环节控制回路
-    相关实体
-    相关实体
-    相关实体
-    为什么更多上下文不是答案
-```
-
 ## 核心主线
 李宏毅老师课程核心：有时候语言模型不是不够聪明，只是缺少人类为它设计好的行动环境。
 > 一个模型会写代码，不代表它知道文件在哪里；一个测试脚本存在，不代表它会主动运行；规则写在文档里，不代表它会稳定遵守。
 Harness 要解决的不是"怎样让模型回答得更漂亮"，而是：当一个概率模型要读文件、调用工具、修改代码、运行测试、观察日志、操作浏览器、跨会话推进任务时，怎样让它持续看见事实、执行动作、接收反馈、保存进度，并在失败后修正下一轮行动？
 
 ## Prompt / Context / Harness 三层区分
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 层次 | 关心什么 | 类比 |
 |------|---------|------|
 | **Prompt Engineering** | 怎么去问 | 一句指令 |
@@ -191,20 +144,20 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
-- [AI Skill 测评指标体系](../ch01/452-ai-skill.html)
+- [AI Skill 测评指标体系](../ch01/453-ai-skill.html)
 
 ## Related
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/120-harness-engineering.html)
 
 - [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/223-rag.html)
-- [AgentCore Managed Harness](../ch04/689-agentcore-harness.html)
+- [AgentCore Managed Harness](../ch04/690-agentcore-harness.html)
 - [Agent Harness 解析：智能体架构深度拆解](ch05/058-agent-harness.html)
-- [From Agent Protocol to Harness Skill](../ch04/428-from-agent-protocol-to-harness-skill.html)
-- [Claude Code 架构深度解析](../ch03/078-claude-code.html)
-- [Agent Memory 架构解析](../ch04/121-agent-memory.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
-- [claude-code-7-layer-memory-architecture](../ch03/078-claude-code.html)
-- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
+- [From Agent Protocol to Harness Skill](../ch04/431-from-agent-protocol-to-harness-skill.html)
+- [Claude Code 架构深度解析](../ch03/077-claude-code.html)
+- [Agent Memory 架构解析](../ch04/098-agent-memory.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/237-openclaw.html)
+- [claude-code-7-layer-memory-architecture](../ch03/077-claude-code.html)
+- [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
 
 ---
 

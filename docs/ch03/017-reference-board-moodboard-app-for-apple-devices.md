@@ -4,66 +4,11 @@
 
 > 📊 Level ⭐ | 8.3KB | `entities/www-referenceboard-app.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Reference Board Moodboard App for"))
-    主要功能
-      无限画布 Infinite Canvas
-      视觉搜索 Visual Search
-      OCR 文字识别
-    跨设备体验
-      小组件 Widgets
-      浏览器扩展
-    定价与隐私
-    与同类工具对比
-    技术特性
-```
-
 ## 核心定位
 
 Reference Board 定位为「私人灵感库」，强调不追踪用户数据、不出售信息，所有灵感素材通过 iCloud 在用户自有设备间加密同步。 这与 Pinterest 等云端社交平台形成鲜明对比——Reference 是一款**纯本地、私有化**的视觉收藏工具。
 
 ## 主要功能
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 
 ### 无限画布（Infinite Canvas）
 应用提供无限画布，用户可在 Mac 上自由展开多个 moodboard，不受边界限制地收集和探索视觉灵感。
@@ -112,11 +57,11 @@ Reference 在三端各有侧重：iPhone 用于随时捕获灵感，iPad 提供�
 - **DAM 能力**: 虽非专业 DAM 系统，但自动标签、颜色识别和 OCR 使其具备轻量级数字资产组织能力
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/913-20.html)
-- [Shub Reaper Macos Stealer Attack Chain](../ch05/094-ai.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/926-20.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch05/095-ai.html)
 - [Somethings Rotten In The State Of Macos Icon Design](https://github.com/QianJinGuo/wiki/blob/main/entities/somethings-rotten-in-the-state-of-macos-icon-design.md)
-- [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](../ch05/111-ai-coding.html)
-- [Apple Silicon Costs More Than Openrouter](../ch01/398-apple-silicon-costs-more-than-openrouter.html)
+- [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](../ch05/112-ai-coding.html)
+- [Apple Silicon Costs More Than Openrouter](../ch01/401-apple-silicon-costs-more-than-openrouter.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-referenceboard-app.md)
 

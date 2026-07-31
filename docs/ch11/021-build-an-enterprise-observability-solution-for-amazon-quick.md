@@ -2,70 +2,13 @@
 
 ## Ch11.021 Build an enterprise observability solution for Amazon Quick
 
-> 📊 Level ⭐⭐ | 21.4KB | `entities/build-an-enterprise-observability-solution-for-amazon-quick.md`
+> 📊 Level ⭐⭐ | 21.5KB | `entities/build-an-enterprise-observability-solution-for-amazon-quick.md`
 
 # Build an enterprise observability solution for Amazon Quick
 
 > **Summary**: 使用Amazon Bedrock AgentCore构建企业级可观测性解决方案，监控Amazon Quick服务的最佳实践
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build an enterprise observability"))
-    Prerequisites
-    Deploy the solution
-      Clone the repository
-      Set up vended logs
-      Deploy data pipeline
-    双重数据通道的架构权衡
-    数据保护策略与合规边界的精确控制
-    KMS 统一加密策略与密钥轮换
-    Quick Sight 自定义 Chat Agent 的双层消费模式
-    在启用 Chat Message Logging 前完成数据隐私审查
-    优先使用 Lake Formation 而非纯 IAM 策略进行访问控制
-```
-
 ## 核心内容
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 # Build an enterprise observability solution for Amazon Quick
 
@@ -257,10 +200,10 @@ Quick Sight Dashboard 和自定义 Chat Agent 分别服务于不同使用场景�
 ---
 
 ## 相关实体
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/295-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

@@ -2,12 +2,11 @@
 
 ## Ch07.085 Perplexity 首次公开了内部 Skill 设计指南
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/perplexity-internal-skill-design-guide-xiaojianke.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/perplexity-internal-skill-design-guide-xiaojianke.md`
 
 # Perplexity 首次公开了内部 Skill 设计指南
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-internal-skill-design-guide-xiaojianke.md)
-
 
 ## 深度分析
 
@@ -38,47 +37,14 @@ Perplexity 首次公开了内部 Skill 设计指南 涉及agent领域的核心�
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
 2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
 3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现

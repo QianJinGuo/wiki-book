@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/openclacky-harness-prompt-cache.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClacky Prompt Cache 命中率 90 的"))
-    高Cache命中率与多功能的结构性冲突
-    三代失败史
-      第一代 2024-2025上 RAG知识库
-      第二代 2025中期 多Agent工作流
-      第三代 2025年底至今 Ruby重写
-    核心工程决策
-      决策1 双cache标记 滚动双缓冲
-      决策2 永不变的system prompt
-      决策3 invokeskill的妙用
-    Cache命中率的工程本质
-    三代演进的认知迭代
-    双Cache标记的架构意义
-    System Prompt冻结的工程哲学
-    优先级自查 从高命中率到功能完整
-```
-
 ## 核心结论
 **「效果已经不是当前 Agent 的主要矛盾，成本才是。」**
 3项任务 × 4家Agent横评（OpenRouter CSV逐请求核算）：
@@ -39,41 +17,6 @@ mindmap
 ---
 
 ## 高Cache命中率与多功能的结构性冲突
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 | 冲突场景 | 失效机制 |
 |---------|---------|
 | 切模型 | 模型ID写进system prompt → 立即失效 |
@@ -229,8 +172,8 @@ System Prompt冻结原则体现了一个深层工程哲学：**不变性是最�
 ## 相关实体
 ## 相关实体
 - [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/120-harness-engineering.html)
-- [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/1091-deepseek.html)
-- [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
+- [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/570-deepseek.html)
+- [Openclaw Prompt Context Harness](../ch11/237-openclaw.html)
 - [Prompt Context Harness Three Evolutions](ch05/009-harness.html)
 - [From Prompt To Harness Claude Official](ch05/009-harness.html)
 

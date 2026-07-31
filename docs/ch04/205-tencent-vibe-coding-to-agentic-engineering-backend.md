@@ -8,62 +8,11 @@
 
 做后台开发的同事应该都有这个体会：从接到需求到最终发布，我们要在 PM、GitPlatform、编辑器、DevOps 平台、Galileo 之间来回横跳。每次切换都在丢上下文——刚在 PM 看完需求描述，切到编辑器就忘了某个细节；部署完测试环境去查日志，又得回忆刚才改了哪几行代码。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Tencent Vibe Coding to Agentic"))
-    Vibe Coding的问题
-    Agentic Engineering的核心思路
-    实践方案
-    全流程概览
-    工具体系架构
-    关键设计原则
-    传统方式 vs Claude Code 方式
-    核心理念
-```
-
 ## Vibe Coding的问题
 
 你可能听过 **Vibe Coding** 这个说法——打开 AI 对话框，用自然语言描述需求，让模型直接生成代码，跑通就算完。原型验证很爽，但一旦要上生产，问题就来了：生成的代码质量不可控、没有审查流程、改完了 commit message 也是乱的。说到底，Vibe Coding 是"提示即祈祷"（prompt-and-pray），你把需求扔给 AI，然后祈祷它别出错。
 
 ## Agentic Engineering的核心思路
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 今年行业里逐渐形成了一个更成熟的概念：**Agentic Engineering**（智能体工程）。核心思路是——人负责定义目标、约束条件和质量标准，AI 作为自主智能体在 **结构化流程** 中执行规划、编码、测试和迭代，每个关键节点都有人工审核。它不是让 AI 随意发挥，而是把 AI 的能力嵌入到一套有纪律的工程体系里。
 
@@ -162,10 +111,10 @@ Skill/Command/MCP 三层架构的核心价值在于分离了不同层次的关�
 5. **跨模型审查避免单一模型盲区**：用 Claude 写的代码用 Codex 审查，反之亦然。 在团队中建立机制，让不同模型交叉审查同一代码，能显著提高问题发现率。
 
 ## 相关实体
-- [从Vibe Coding到Agentic Engineering重构后台开发全流程](ch04/237-agentic.html)
-- [Karpathy Vibe Coding To Agentic Engineering](ch04/237-agentic.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](ch04/239-ahe-agentic-harness-engineering.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/451-vibe-coding-agentic-engineering.html)
+- [从Vibe Coding到Agentic Engineering重构后台开发全流程](ch04/648-agentic.html)
+- [Karpathy Vibe Coding To Agentic Engineering](ch04/648-agentic.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](ch04/242-ahe-agentic-harness-engineering.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/457-vibe-coding-agentic-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering V4](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-vibe-coding-to-agentic-engineering-backend.md)

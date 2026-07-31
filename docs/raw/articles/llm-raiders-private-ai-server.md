@@ -3,7 +3,7 @@ title: "LLMjacking: what these attacks are, and how to protect AI servers"
 source_url: "llm-raiders-private-ai-server"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: 638060b10cd78ced2e0ceb0385292df5da04f72b20578c924fe437b74b2e9e77
 ---
 ---

@@ -6,57 +6,11 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5-things-to-know-about-the-clarity-act.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Things to Know about the CLARITY Act"))
-    核心要点速览
-    超越加密货币 下一代金融基础设施的控制权争夺
-    证券与商品的边界划定 十年争议的终结尝试
-    收益 Yield 战场 银行与加密行业的利益博弈
-    全球竞争力视角 监管真空的战略风险
-    对数字资产发行方和交易所
-    对金融机构
-    对投资者
-```
-
 ## 概述
 
 CLARITY Act 是美国参议院银行委员会于 2026 年 5 月公布的数字资产监管框架草案，旨在为数字资产市场建立明确的法律边界。该法案是超过十年两党谈判的成果，其核心目标不仅是规范加密货币交易，更是**定义下一代金融基础设施的控制权与治理规则**。
 
 ## 核心要点速览
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 - **监管范围**：超越单纯加密货币交易，涉及稳定币、tokenized 资产、AI 驱动金融代理等未来金融基础设施
 - **证券 vs 商品边界**：试图终结数字资产 decade-long 的监管归属争议

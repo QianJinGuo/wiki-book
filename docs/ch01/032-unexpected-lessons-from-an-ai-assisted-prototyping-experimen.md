@@ -8,58 +8,11 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Unexpected lessons from an"))
-    出发点 传统设计流程的翻译损耗
-    实验设置 4 人 pod 真实代码库 真实约束
-    核心洞见一 邻近性放大了什么
-    核心洞见二 设计师的时间分配被重写
-```
-
 ## 摘要
 
 Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adobe Firefly 团队内部进行的"AI 辅助原型设计"实验。小组由 1 名 PM、3 名工程师和 1 名设计师组成，仅用 8 个工作日就把两个新功能（Precision Flow、Markup）交付到生产构建。文章最有价值的洞见不是速度，而是"邻近性（proximity）"重塑了设计-工程-产品的协作形态——距离消失，约束被前置，但协作不仅没有弱化反而被强化。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **作者**: Veronica Peitong Chen (Adobe Design)
 - **来源**: [https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment](https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment)
@@ -137,11 +90,11 @@ graph TB
 
 ## 相关实体
 
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/094-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/095-ai.html)
 - [system over model, tested: reproducing mythos's freebsd find](../ch12/030-mythos.html)
 - [from doer to director: the ai mindset shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [DDoSing Software Delivery Pipelines](ch01/913-20.html)
-- [How my non-engineering team at Sentry learned to ship](ch01/431-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
+- [DDoSing Software Delivery Pipelines](ch01/926-20.html)
+- [How my non-engineering team at Sentry learned to ship](ch01/432-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 

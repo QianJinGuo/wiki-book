@@ -222,55 +222,7 @@ LASTNAME
 *   [Hacking News](https://hackread.com/category/data-breaches/hacking-news/)
 *   [Cyber Crime](https://hackread.com/category/latest-cyber-crime/)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Canvas Hackers ShinyHunters Say"))
-    Baltimore 911 CAD system hacked
-    Scammers using voicemail email
-    Cloudflare Mitigates Massive 56
-    Kubernetes Clusters Targeted by
-```
-
 ## [Baltimore' 911 CAD system hacked; remained suspended for 17 hours](https://hackread.com/baltimore-911-cad-system-hacked-suspended/)
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
  The 911 dispatch system of Baltimore became the target of hack attack over the weekend. As per Pugh…
 [by Waqas](https://hackread.com/author/hackread/)
 
@@ -334,11 +286,11 @@ Canvas LMS 攻击影响全球数百所大学，凸显了教育机构在网络安
 
 ## 相关实体
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/146-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/348-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1092-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [a route to root in a 4g industrial router](../ch01/913-20.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/349-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/1108-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [a route to root in a 4g industrial router](../ch01/926-20.html)
 
 ---
 

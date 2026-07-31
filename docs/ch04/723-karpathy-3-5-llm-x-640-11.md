@@ -2,25 +2,9 @@
 
 ## Ch04.723 Karpathy 3.5 小时免费「LLM 全栈课」再登 X 热榜，640 万播放、11 万点赞
 
-> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/karpathy-llm-full-stack-course-2026井底之硅.md`
+> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/karpathy-llm-full-stack-course-2026井底之硅.md`
 
 # Karpathy 3.5 小时免费「LLM 全栈课」再登 X 热榜，640 万播放、11 万点赞
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy 35 小时免费「LLM 全栈课」再登 X 热榜"))
-    课程结构
-    为什么反复出圈
-    社区影响力
-    课程定位的稀缺性
-    从零构建方法论的心理锚点
-    为什么是现在出圈
-    与其他学习路径的关系
-    对 AI 学习者的路径建议
-```
 
 ## 核心结论
 
@@ -28,43 +12,6 @@ mindmap
 - 覆盖预训练(tokenization/GPT-2/Llama3.1) → SFT(幻觉/工具调用) → RL(DeepSeek-R1/AlphaGo/RLHF) 完整链路
 
 ## 课程结构
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 | 阶段 | 时长 | 核心内容 |
 |------|------|---------|
@@ -126,10 +73,10 @@ Karpathy 课程的传播数据（640万播放、HN 讨论热度）是 LLM 行业
 
 ## 相关实体
 - [Karpathy Vibe Engineering Silicon Era Jiangtao](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-engineering-silicon-era-jiangtao.md)
-- [Karpathy Llm Wiki V2 2026](../ch01/1274-llm.html)
-- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](../ch01/802-markdown.html)
+- [Karpathy Llm Wiki V2 2026](../ch01/637-llm.html)
+- [Llm Wiki Architecture Karpathy Markdown Knowledge Base](../ch01/816-markdown.html)
 - [Karpathy Vibe Coding Agentic Engineering V3](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Llm Wiki Architecture](../ch01/1274-llm.html)
+- [Llm Wiki Architecture](../ch01/637-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-llm-full-stack-course-2026井底之硅.md)
 

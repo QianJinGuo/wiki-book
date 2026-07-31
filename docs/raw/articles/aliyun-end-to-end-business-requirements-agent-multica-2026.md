@@ -1,6 +1,6 @@
 ---
 title: "阿里云端到端业务需求专家 Agent：Multica 平台 + superai-* 技能集群 + TDD/pre-push 质量门禁"
-type: raw
+type: raw-article
 source_url: https://mp.weixin.qq.com/s/9o_z-POj9r4dbwe3NlC1pw
 source_mp: 阿里云开发者
 source_author: 阿里云开发者（阿里妹 导读）

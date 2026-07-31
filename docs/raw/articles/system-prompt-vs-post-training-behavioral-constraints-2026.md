@@ -5,7 +5,7 @@ source_url: https://mp.weixin.qq.com/s/RkCp-TgitKtSp5Hn9z03Bg
 author: ZeaTalk (架构师带你玩AI)
 published: 2026-06-12
 ingested: 2026-06-12
-type: article-summary
+type: raw-article
 tags: [system-prompt, post-training, dpo, sft, agent-engineering, prompt-engineering, behavioral-constraints]
 sha256: 0f1832fb68888fc5c917ea75320c72a8521bf569ebf9091038105981eb8ac0fa
 ---

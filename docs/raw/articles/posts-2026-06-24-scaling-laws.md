@@ -2,7 +2,7 @@
 title: "Scaling Laws, Carefully"
 source_url: "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 2ae874711e7fe8fc717e6b5ac4a328817c706a126e86675168846592ba83d383
 ---

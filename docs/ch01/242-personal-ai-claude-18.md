@@ -4,64 +4,11 @@
 
 > 📊 Level ⭐⭐ | 17.1KB | `entities/ruofei-personal-ai-workbench-18-actions.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Personal AI 工作台 Claude 18 动作框架"))
-    核心立场
-    六层工作台结构
-    个动作映射到六层
-      工作区 边界
-      身份
-      行为契约
-    关键设计原则
-      Project 是边界 不是万能记忆
-      Custom Instructions 行为契约 而非人格设定
-      流程卡片 过程资产 而非一次性提示词
-    与 Harness 工程化的对应关系
-    最小可行版本
-    边界注意事项
-    框架定位 Personal Harness 的最小化实现
-```
-
 ## 核心立场
 > Claude 用得好不好，越来越像一个**环境工程问题**，而非提示词技巧问题。
 核心论点：给 Claude 一个稳定的工作现场（Personal Harness），比优化单次提示词更有复利价值。   ^[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 
 ## 六层工作台结构
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 层 | 核心问题 | 解决的痛点 |
 |----|---------|----------|
 | 工作区 | 不同任务放不同 Project | 上下文互相污染 |
@@ -274,7 +221,7 @@ good example:   ^[原文存档](https://github.com/QianJinGuo/wiki-book/tree/mai
 ## 关联阅读
 - 原文：https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w（若飞/架构师，2026-05-18）
 - 属于 JiaGouX 公众号 Harness 系列文章之一（Agent Harness、Memory、Goal、Skills、Personal Harness）
-- [Agent Memory 架构本质](../ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构本质](../ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md) ^[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 

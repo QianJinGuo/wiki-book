@@ -8,50 +8,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nikesh-arora-20vc-business-strategy.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Nikesh Arora 20VC 访谈 Token 定价 FDE"))
-    Token 定价 长期将降至今天的十分之一
-    模型能力严重过剩
-    FDE 前线部署工程师 是产品不成熟的代名词
-    SaaS 应用将让位于 AI 应用
-    关键引用
-    与现有知识的关系
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 Palo Alto Networks CEO Nikesh Arora 做客 20VC 播客，深入讨论 AI 行业的核心经济与战略议题。本文提炼六大主题：Token 定价趋势、FDE 的本质、SaaS→AI 应用转型、记忆/上下文作为护城河、分化模型世界、以及 AI 对网络安全的影响。
 

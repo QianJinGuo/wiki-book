@@ -7,7 +7,7 @@ publish_date: 2026-06-17
 ingested: 2026-06-17
 sha256: 090d398443a78c80f1f52762f283d45d67fce6993ddef1d831f3bdda6434a54c
 tags: [wechat, article, winty, skill-hub, skill-lifecycle, skill-governance, skill-治理, creation, review, release, canary, live, deprecation, retired, 4-class-review, data-driven-migration, abort-trigger, 30-day-migration, lifecycle-dashboard, db-migrate-advisor-incident, scenario-proposal-template, frontendq]
-type: raw
+type: raw-article
 ---
 
 # AI Skill 也会"退休"，企业到底怎么管？

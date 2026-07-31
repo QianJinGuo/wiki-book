@@ -4,24 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-vs-openclaw-comparison.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 为什么火了 和 OpenClaw 龙虾比一比"))
-    一句话格局定位
-    名字先赢一半 爱马仕 vs 龙虾
-    定位差异 通用助手 vs 自成长框架
-      OpenClaw 什么都能干的万能助手
-      Hermes 越用越聪明的成长型框架
-    Hermes 在中国社区特别火的原因
-    Hermes 的核心能力 五个层面
-    技能系统与安全边界
-    客观横向对比
-    命名策略影响了社区传播和用户心理锚点
-```
-
 ## 一句话格局定位
 
 现在 AI Agent 圈的格局，用一句话概括：**OpenClaw 负责开疆拓土，Hermes 负责精细耕作**。
@@ -29,37 +11,6 @@ mindmap
 OpenClaw（开源龙虾）GitHub 上 37 万星，坐稳第一把交椅。Hermes Agent 14 万星，排名第二。
 
 ## 名字先赢一半：爱马仕 vs 龙虾
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 OpenClaw，直译是"开源爪子"，社区给它起了个外号叫"龙虾"。Hermes 呢？希腊神话里的信使之神，同时也是奢侈品牌爱马仕的同名。中文社区直接叫它"爱马仕"。
 
@@ -161,10 +112,10 @@ Hermes 在中国社区的爆发，微信集成、Notion 知识管理、股票盯
 ## 相关实体
 
 - [Hermes Agent 记忆系统深度拆解](../ch03/096-hermes-agent.html)
-- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](../ch11/235-openclaw.html)
-- [DeerFlow vs Hermes vs OpenClaw 深度对比](ch04/494-deerflow-hermes-openclaw.html)
+- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](../ch11/237-openclaw.html)
+- [DeerFlow vs Hermes vs OpenClaw 深度对比](ch04/500-deerflow-hermes-openclaw.html)
 - [Hermes Agent 深度解析](../ch03/096-hermes-agent.html)
-- [OpenClaw 架构八部总结](../ch11/235-openclaw.html)
+- [OpenClaw 架构八部总结](../ch11/237-openclaw.html)
 - [Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 - [深度拆解 Hermes 记忆系统：它修正了 OpenClaw 的哪层误区](../ch03/096-hermes-agent.html)
 

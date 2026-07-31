@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/JV4-oPP0jjsBCZ4tW3Gy1g
 author: stevenpxiao/腾讯技术工程
 date: 2026-05-11
 title: "Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践"
-type: raw
+type: raw-article
 tags: [knowledge-management, harness-engineering, tencent, workflow, team-practice]
 review_value: 9
 review_confidence: 8

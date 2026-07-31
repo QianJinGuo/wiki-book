@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/image-analytics-case-study-pra
 ingested: 2026-06-01
 feed_name: AWS
 source_published: 2026-05-28T01:20:51Z
-type: article
+type: raw-article
 sha256: e95deb3fd00c5567b84b5b9f07cf4f828291db2e8017e958a8cc5c1ea6c370ee
 tags: ['bedrock', 'multimodal', 'vision', 'image-analysis']
 ---

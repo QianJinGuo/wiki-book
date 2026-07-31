@@ -3,6 +3,7 @@ title: "AutoHarness 走到哪了：学界业界的能力调研"
 source_url: "https://mp.weixin.qq.com/s/J9FKvVCUjfgj_N3uE35GwQ"
 source_account: "VibeCoder (Vibe编码)"
 ingested: 2026-07-28
+sha256: "c0b7fbaf615ec3dc4c7b0eb4a0749d3da983b325f3562bf858b2ecfb38c248ed"
 type: raw-article
 tags:
   - auto-harness

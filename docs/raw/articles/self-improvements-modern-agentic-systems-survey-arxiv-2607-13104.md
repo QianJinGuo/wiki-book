@@ -1,7 +1,7 @@
 ---
 title: "Self-Improvements in Modern Agentic Systems: A Survey"
 sha256: skip
-type: source
+type: raw-article
 source_url: "https://arxiv.org/abs/2607.13104"
 tags: [article, survey, self-improvement, agent, harness]
 review_value: 9

@@ -3,7 +3,7 @@ title: "Inside Thinking Machines' Interaction Models"
 source_url: "https://blog.bytebytego.com/p/inside-thinking-machines-interaction"
 author: ByteByteGo
 ingested: 2026-07-01
-type: raw
+type: raw-article
 sha256: df04abf76049b12b8d188ecfe278be757b166fa324acd1400586000af73ef4fb
 ---
 

@@ -2,7 +2,7 @@
 title: "Claude Code 27 条技巧：从工具清单到工程升级路径"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: b6cd93e04d57c5c904a6d830562e38f4f59edbcdf646087f129a9fb67149d9ff
 ---

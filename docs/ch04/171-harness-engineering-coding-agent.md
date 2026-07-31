@@ -4,27 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/harness-engineering-long-term-agent-tasks.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 让 Coding"))
-    核心定义
-    三大困难点
-    关键技巧
-      任务粒度
-      子任务 CLI 化与并发调度
-      File As Progress
-    真实落地案例
-      全量 Code Review
-      JS to TS 迁移
-    Meta-Skill Skill for Skill
-    核心理念
-    3000 行经验上限的精确推导 Token 消耗的量化拆解
-    CLI 化的核心价值不在并发 而在 Prompt 的确定性
-```
-
 ## 核心定义
 **Harness Engineering**：为 AI Coding Agent 构建「缰绳」，使其在安全边界内被稳定地约束、引导和复用。核心目标是让 Agent 能够可靠完成涉及成百上千文件、跨越多个会话、消耗数千万 Token 量级的**长程任务**。
 四大核心原则：
@@ -34,37 +13,6 @@ mindmap
 4. **有完成条件** — 客观可程序化验证的子任务成功标准
 
 ## 三大困难点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 困难 | 根因 | 对应原则 |
 |------|------|----------|
 | 上下文耗尽 | 上下文窗口有限，压缩叠加导致细节丢失 | 任务拆解 |
@@ -167,17 +115,17 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 - [Agent Harness 组件解析](../ch05/058-agent-harness.html)
 
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [AI Coding Agent 记忆系统](ch04/330-ai-coding-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
-- [柚漫剧 AI 全流程提效拆解](../ch05/094-ai.html)
-- [Agent Skill 设计模式](ch04/397-agent-skills.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [AI Coding Agent 记忆系统](ch04/333-ai-coding-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/357-agent-principle-architecture-engineering-practice.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/095-ai.html)
+- [Agent Skill 设计模式](ch04/401-agent-skills.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)

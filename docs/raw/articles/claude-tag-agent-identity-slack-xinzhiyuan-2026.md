@@ -2,7 +2,7 @@
 title: "Claude有「编制」了！Anthropic发的"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 116795dfa142e48c7c4cd38f270c508124926bed0f193674b10a0e9f424170be
 ---

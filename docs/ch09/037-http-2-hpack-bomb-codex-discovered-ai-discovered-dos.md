@@ -8,24 +8,6 @@
 
 > **Source**: Calif.io disclosure 2026-06-02 by Quang Luong, Jun Rong, Duc Phan. Attack discovered by OpenAI Codex from public fix commits. Affects nginx, Apache httpd, Microsoft IIS, Envoy, Cloudflare Pingora in default configuration. 880,000+ vulnerable websites per Shodan.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("HTTP2 HPACK Bomb Codex Discovered"))
-    三个独有贡献 不应合并到现有 entity
-    Attack Anatomy
-      Component 1 HPACK Indexed
-      Component 2 HTTP2 Window Stall
-    Why the Classic Defenses Dont
-    Impact
-    Disclosure Timeline
-    Mitigations
-    Historical Lineage
-    Significance AI-Driven
-```
-
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **AI-as-vulnerability-discoverer (Codex)** — First major security disclosure where the attack chain was discovered end-to-end by an AI coding model reading public fix commits. Signals a regime change in commit-to-exploit windows (weeks → minutes).
@@ -33,41 +15,6 @@ mindmap
 3. **HTTP/2 window stall as memory-pinning primitive** — Zero-byte WINDOW_UPDATE + 1-byte drips keeps every allocation live until server timeout. The "kill" tactic is to hold pressure below the OOM threshold and degrade all other requests via swap, not OOM the worker.
 
 ## Attack Anatomy
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Two decade-old techniques, chained in a way humans hadn't combined before:
 
@@ -155,7 +102,7 @@ Created as new entity: `http2-hpack-bomb-codex-ai-discovery-32gb-dos.md`. The Ca
 - OpenAI Codex
 - Slowloris DoS
 - AI-generated exploit primitives
-- AI agent security (see [1Password Securing Ai Agents Machine Identities](../ch04/298-ai-agent.html), [Ai Agents Security Survey Attack Defense](../ch04/298-ai-agent.html))
+- AI agent security (see [1Password Securing Ai Agents Machine Identities](../ch04/030-ai-agent.html), [Ai Agents Security Survey Attack Defense](../ch04/030-ai-agent.html))
 - CVE disclosure conventions (CVE-2016-6581, CVE-2025-53020, CVE-2026-49975)
 
 ## 深度分析

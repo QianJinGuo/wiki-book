@@ -4,7 +4,7 @@ title: "想让 Agent 在你睡觉时继续干活？先给它排好夜班"
 source_url: "https://mp.weixin.qq.com/s/jSzMDM8n_X6vjOXwOYdRdQ"
 author: ""
 ingested: 2026-07-02
-type: raw
+type: raw-article
 tags: [agent, cron, task-scheduling, automation, agent-lifecycle]
 ---
 

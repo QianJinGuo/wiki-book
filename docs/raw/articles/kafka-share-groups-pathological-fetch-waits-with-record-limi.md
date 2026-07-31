@@ -2,7 +2,7 @@
 title: "Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: fd8989eae0c5eb6bf46475138c5c6c584d02ee6fc749526454dcef964c857029
 ---

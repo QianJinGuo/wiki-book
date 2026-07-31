@@ -6,72 +6,18 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From Doer To Director The AI"))
-    文章摘要
-    从做工作到管理工作的认知跨越
-    AI burnout 被忽视的新型职业倦怠
-    微观管理 AI 的诱惑与陷阱
-    流程基础是 AI 发挥价值的先决条件
-    个人工作流程层面
-    心理调适层面
-    团队管理层面
-```
-
 ## 相关实体
-- [独家对话罗福莉：AI范式已然巨变！](../ch05/094-ai.html)
+- [独家对话罗福莉：AI范式已然巨变！](../ch05/095-ai.html)
 - [agentic code review](ch01/171-agentic-code-review.html)
 - [apple foundation models](ch01/154-apple-foundation-models.html)
 - [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)
 - [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)
 - [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)
-- [a backdoor in a linkedin job offer](../ch05/094-ai.html)
+- [a backdoor in a linkedin job offer](../ch05/095-ai.html)
 - [every frame perfect](ch01/169-every-frame-perfect.html)
 - [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)
 
 ## 文章摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 AI 正在从根本上改变我们工作的本质——不是让我们变得更快，而是改变工作的性质。作者 Paul Boag 认为 AI 正在将我们从"执行者"转变为"指挥者"，这需要一种完全不同的思维模式。从设计师到设计主管的转型与这一 AI 转型高度相似，那些能够提前适应这种思维转变的人将在 AI 增强的世界中脱颖而出。
 
 ## 深度分析

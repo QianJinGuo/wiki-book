@@ -1,6 +1,6 @@
 ---
 title: "GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价"
-type: source
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/I5dRqYWogmgROkOusRtzTA
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

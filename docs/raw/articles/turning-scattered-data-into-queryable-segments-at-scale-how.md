@@ -2,7 +2,7 @@
 title: "Turning Scattered Data Into Queryable Segments at Scale: How Razorpay Built Its Customer Data…"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: ad4763c88c062a89412de6f1cd7acb9bcd24ff4a033120054ba3921595948d2b
 ---

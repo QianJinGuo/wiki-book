@@ -7,7 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saastr-who-winning-enterprise-ai.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saastr-who-winning-enterprise-ai.md)
 
-
 ## 深度分析
 **企业 AI 市场格局的结构性变化**：
 1. **多模型成为新默认**：ETR 数据显示四家可信供应商（OpenAI、Anthropic、Google xGroq）并存，单一模型架构已成采购风险
@@ -18,37 +17,6 @@
 这组数据揭示了企业 AI 采购的理性回归：从早期的"OpenAI 狂热"转向基于实际集成难度、分发渠道和细分场景选择的多供应商策略。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 - **企业 AI 采购策略**：不要押注单一模型供应商；建立多模型评估框架，按场景（编码、文档、推理）选择最优模型
 - **AI 供应商**：编码助手是当前企业 AI 的最大收入来源，也是竞争最激烈的领域——这是获客和留存的关键战场
 - **分发渠道重要性**：与现有企业软件（Google Workspace、Microsoft 365、Salesforce）深度集成的 AI 产品比独立 AI 工具更具分发优势
@@ -56,13 +24,13 @@ graph TB
 - **投资视角**：Claude 的高速增长说明"可信替代者"战略在企业市场有效；关注模型公司在编码、医疗、法律等垂直场景的专有数据积累
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch11/222-amazon-quick.html)
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch11/224-amazon-quick.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
 
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 ---

@@ -4,32 +4,6 @@
 
 > 📊 Level ⭐⭐ | 28.0KB | `entities/mimo-code-xiaomi-coding-harness-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("小米 MiMo Code 长程编程 Agent 三大主线"))
-    与 Claude Code 对比
-    VILA 实验室的 Claude Code 源码分析
-    MiMo Code 三大主线
-      主线一 计算 Compute 解决 做对
-      主线二 记忆 Memory 让逻辑会话无限延伸
-      主线三 进化 Evolution 跨 session 经验沉淀
-    Dynamic Workflow 编排从 prompt 转为代码
-      与 Claude Code 编排对比
-      为什么把流程代码化
-    关键 bug 教训 自动删除全局 npm 包
-    Coding Harness 开源的商业模式之争
-      社区一派观点
-      反方观点
-      核心争议 coding harness 是否有护城河
-    工程重点分化的本质
-      共同基础
-      关键分化
-    工程不是 AI 的极端化体现
-```
-
 ## 概述
 
 **小米 MiMo 团队** 2026-06-11 凌晨发布 **MiMo Code**（MIT 开源，基于 OpenCode 构建），定位**长程自动化编程任务的终端编程 Agent**。核心目标：解决 AI 编程 Agent 在**几十步甚至上百步**持续执行中的**决策质量、状态连续性和跨任务经验积累**问题。
@@ -37,41 +11,6 @@ mindmap
 **罗福莉原话**："14 天、5 个人、一场 vibe coding 之旅。" 当前 MiMo Auto 限时免费，基于 MiMo-V2.5，**支持 100 万 token 上下文**。Auto 模式新用户可能被随机分配到 **UltraSpeed 模式**（MiMo-V2.5-Pro **1000 tokens/s**）。 ^["[InfoQ: 5人2周肝出5.1k星！小米 MiMo Code开源](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mimo-code-xiaomi-coding-harness-2026.md)"]
 
 ## 与 Claude Code 对比
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | 维度 | 数值 | 备注 |
 |------|------|------|
@@ -357,16 +296,16 @@ MiMo Code 的 npm uninstall bug 暴露了 **Agent Harness 设计的通用安全�
 
 ## 相关实体
 
-- [撕开Claude Code真相：1.6% vs 98.4%](../ch03/078-claude-code.html)（同 VILA 论文来源）
+- [撕开Claude Code真相：1.6% vs 98.4%](../ch03/077-claude-code.html)（同 VILA 论文来源）
 - [Claude Code Dynamic Workflows Thariq Blog Gaia](ch09/094-claude-code-dynamic-workflows.html)（Anthropic Dynamic Workflow 同主题）
 - [Codex Goal Agent Runtime](../ch04/106-codex-goal-agent.html)（Codex goal agent runtime 对照）
-- [Codex Context Engineering Lastwhisper Thinking In Context](../ch01/517-codex.html)（Codex 上下文工程对照）
+- [Codex Context Engineering Lastwhisper Thinking In Context](../ch01/520-codex.html)（Codex 上下文工程对照）
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/058-agent-harness.html)（mem0 Agent 记忆体系对照）
 - [Openai Skills Shell Compaction Agent Primitives](../ch05/025-openai-skills-shell-compaction-agent.html)（OpenAI Skills + Compaction 同源）
-- [Claude Code Source Leak Lifecycle Analysis](../ch03/078-claude-code.html)（Claude Code 源码生命周期分析）
-- [Snowflake Agentic Enterprise Summit 2026](../ch04/237-agentic.html)（Snowflake — 企业级 AI 可审计性同主线）
-- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/271-skill.html)（Agent Reliability Engineering 持续改进对照）
-- [Claude Code Tool Design Evolution Anthropic](../ch03/078-claude-code.html)（Claude Code 工具设计演进）
+- [Claude Code Source Leak Lifecycle Analysis](../ch03/077-claude-code.html)（Claude Code 源码生命周期分析）
+- [Snowflake Agentic Enterprise Summit 2026](../ch04/648-agentic.html)（Snowflake — 企业级 AI 可审计性同主线）
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/273-skill.html)（Agent Reliability Engineering 持续改进对照）
+- [Claude Code Tool Design Evolution Anthropic](../ch03/077-claude-code.html)（Claude Code 工具设计演进）
 - [Hermes Agent Self Evolving](../ch03/096-hermes-agent.html)（Hermes Agent 自演进对照）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)（Spec-as-AIOS — 可审查性同主线）
 

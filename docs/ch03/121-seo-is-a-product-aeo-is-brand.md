@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/seo-product-aeo-brand-productledseo.md`
 
-
 ## 核心要点
 - **SEO 作为产品** — 传统 SEO 是关于驱动流量，可衡量、可量化，有转化漏斗和 ROI
 - **AEO 作为品牌** — 答案引擎优化是在更广泛信息生态系统中建立权威和存在
@@ -12,35 +11,6 @@
 - **战略含义** — 组织需要两者，但不应混淆；将 AEO 视为 SEO 战术会错失其品牌建设价值
 
 ## 技术洞察
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 **SEO 与 AEO 的战略区分**：
 这篇文章的核心洞察是：**SEO 和 AEO 服务于不同的战略目的，不应混淆**。
 对比框架：

@@ -1,6 +1,6 @@
 ---
 title: The new AI lock-in
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.infoworld.com/article/4171983/the-new-ai-lock-in.html
 tags: [infoworld]

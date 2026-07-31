@@ -5,7 +5,7 @@ mp: "CSDN"
 pub_date: "2026-06-17"
 ingested: "2026-06-17"
 sha256: "04f86c8f03d32f26fd0950fe9e0dd17cdbe25fda1ee3f0fa54b80bfae717f2e6"
-type: source
+type: raw-article
 tags: ["openjiuwen", "jiuwenswarm", "symphony", "skill-orchestration", "skill-retrieval", "skill-tree", "skill-graph", "agent-tools", "scale-challenge", "动态能力分发"]
 ---
 

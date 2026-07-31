@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/claude-md-12-rules-mnilax.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CLAUDEmd 规则从 Karpathy 的 4 条增加到 12 条"))
-    评分
-    核心标签
-    方法论价值 从经验到可复现的工程实践
-    规则互补性 新旧规则争夺注意力预算
-    规则 1-4 的内在局限
-    值得商榷的结论
-    CLAUDEmd 写作原则
-    团队采纳路径
-```
-
 ## 评分
 | 维度 | 分数 | 
 |------|------| 
@@ -28,36 +12,6 @@ mindmap
 | 推荐入库 | **是** | 
 
 ## 核心标签
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 `claude` `claude-code` `claude-md` `prompt-engineering` `coding-agent` 
 
 ## 摘要
@@ -164,7 +118,7 @@ CLAUDE.md 本质上是 **Agent 的架构约束层（Architecture Constraints）*
 
 ## 相关链接
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-md-12-rules-mnilax-cf2019.md)
-- [CLAUDE Code 创始人 100 条 Harness 规则](../ch03/078-claude-code.html) — 另一位实践者的规则集合，可对比参考
+- [CLAUDE Code 创始人 100 条 Harness 规则](../ch03/077-claude-code.html) — 另一位实践者的规则集合，可对比参考
 -  — working set 机制与 CLAUDE.md 的互补关系
 -  — 本文的 Token 预算和检查点机制在此框架中的定位
 

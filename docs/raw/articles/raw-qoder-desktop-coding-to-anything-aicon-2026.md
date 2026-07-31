@@ -4,7 +4,7 @@ source_title: "从 Coding 到 Anything：Qoder 多 Agent 协作与 Harness 实�
 source_author: InfoQ / AI前线（王玮）
 ingested: 2026-07-07
 sha256: 8f0bc3497406ed869ea93834b9f94f85737f10652755f8fc6625194e9f491998
-type: raw-source
+type: raw-article
 ---
 
 作者 | 王玮

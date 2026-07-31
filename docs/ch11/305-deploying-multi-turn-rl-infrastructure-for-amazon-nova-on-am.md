@@ -6,56 +6,7 @@
 
 # Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Deploying Multi-Turn RL"))
-    多轮 RL 的企业级意义
-    基础设施架构的工程智慧
-    与 agent-harness 训练的关系
-    训练数据与奖励设计
-```
-
 ## 摘要
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 AWS 提出了面向 Amazon Nova 模型在 SageMaker HyperPod 上运行多轮强化学习（Multi-Turn RL）的生产级基础设施方案。该方案采用两阶段部署模型：一次性 CDK 部署构建长生命周期基础架构（VPC、EKS、HyperPod 集群、ECS、S3、IAM 及 Step Functions 管线），每次训练运行时动态创建临时资源。这种分离设计将 GPU 闲置成本降到最低，同时支持快速迭代。核心架构由三层组成：SageMaker HyperPod（EKS）负责模型推理与 GRPO 权重更新，ECS on Fargate 运行奖励环境，Nova Forge SDK 在模型与奖励环境之间路由消息并追踪多轮对话状态。
 
@@ -106,7 +57,7 @@ Wordle 环境作为默认验证任务，展示了多轮 RL 的核心机制：模
 - [Agent Harness Production](../ch05/058-agent-harness.html) — Agent 生产级 Harness 工程实践
 - [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/035-agent.html) — Agent 从原型到投产的关键挑战
 - [Rl训练一层就够了单层Rl超越全参数训练跨任务跨模型跨算法全部验证](https://github.com/QianJinGuo/wiki/blob/main/entities/rl训练一层就够了单层rl超越全参数训练跨任务跨模型跨算法全部验证.md) — 单层 RL 训练的效率发现
-- [Agent Config Model Tool Skill Mcp Prompt Combination Yexiaochai 09](../ch04/271-skill.html) — Agent 配置编排方法论
+- [Agent Config Model Tool Skill Mcp Prompt Combination Yexiaochai 09](../ch04/273-skill.html) — Agent 配置编排方法论
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-amazon-sagemaker-hyper.md)

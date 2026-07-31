@@ -2,73 +2,11 @@
 
 ## Ch11.007 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
 
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 > 📊 Level ⭐⭐ | 52.5KB | `entities/bedrock-agentcore-payment-x402-agent.md`
 
 # 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
 
 > 实战教程：使用 Bedrock AgentCore Payment 构建支持 x402 协议的自主支付 AI Agent，包含完整代码示例。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("用 Amazon Bedrock AgentCore"))
-    一 背景 为什么 Agent 需要支付能力
-    二 项目介绍与整体架构
-      开源项目简介
-      整体架构
-      业务模块组成
-    三 系统架构 支付流程与技术实现
-      支付流程总览
-      阶段一 发起请求 402 挑战
-      阶段二 服务端签名 信任边界
-    四 部署概要
-      前置条件
-      准备 Coinbase CDP 凭证 钱包
-      部署步骤
-    五 结语
-    三层架构的解耦价值 为什么支付不能嵌入 Agent 逻辑
-    EIP-3009 在 Web2 场景中的桥接价值
-    x402 v1v2 双版本兼容的工程复杂性
-```
 
 ## 核心内容
 
@@ -820,13 +758,13 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 
 ## 相关实体
 - [Firecracker Bedrock Agentcore Multi Tenant](ch11/050-bedrock-agentcore.html)
-- [Agentcore Payments X402 Agentic Commerce](ch11/066-agentcore-payments.html)
+- [Agentcore Payments X402 Agentic Commerce](ch11/065-agentcore-payments.html)
 - [Openclaw Amazon Bedrock Eks Printer Qc](ch11/295-amazon-bedrock.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/561-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/566-amazon-bedrock-agentcore.html)
 - [Agentic Payment X402 Bedrock Agentcore](ch11/050-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-agentcore-payment-x402-agent.md)
-- [Ai Research Assistant From Idea To App](../ch05/094-ai.html)
+- [Ai Research Assistant From Idea To App](../ch05/095-ai.html)
 
 ---
 

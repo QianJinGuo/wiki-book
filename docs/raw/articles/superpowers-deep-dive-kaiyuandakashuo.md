@@ -4,7 +4,7 @@ title: "给 Claude Code 装上「方法论」：深入解读 superpowers"
 source: "开源大咖说"
 ingested: 2026-06-15
 sha256: "f6a7b8c9d0e1f2a3b4c5d6e7f8091a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8"
-type: raw
+type: raw-article
 tags: [superpowers, claude-code, skill, jesse-vincent, obra, rule-gate-hook, iron-law, hard-gate, writing-skills, session-start-hook, perl, agentskills]
 ---
 

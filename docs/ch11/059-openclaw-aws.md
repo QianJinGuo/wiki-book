@@ -4,60 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/openclaw-service-enterprise-share-system-design.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("当 OpenClaw 学会团队记忆"))
-    核心问题框架
-    架构定位 叠加而非替代
-    关键技术设计
-    设计哲学
-    分阶段采用路径
-    面客部署关键配置点
-    命名空间设计建议
-    运维实践
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文围绕 AI Agent 在多客户、多 Agent 协作场景下的”记忆困境”，介绍基于 Amazon AgentCore Memory 的 OpenClaw 企业级共享记忆插件 memory-agentcore，逐一拆解记忆系统的五个核心问题：记什么（Amazon AgentCore 4 策略自动提取 + 本地三层噪音预过滤）、怎么存（Event → Memory Record 的全托管数据路径）、怎么找（auto-recall 自动召回 + 肘点算法分数间隙过滤）、谁能看（层级命名空间 + actorId 驱动的最小权限隔离）、怎么管（8 个 Agent 工具
 
 ## 核心技术
@@ -144,11 +91,11 @@ memory-agentcore 的核心架构决策是**不占用 OpenClaw 独占 Slot**，�
 → [C4 架构图](assets/c4/openclaw-service-enterprise-share-system-design-c4.html)
 
 ## 相关实体
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](ch11/235-openclaw.html)
-- [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](ch11/237-openclaw.html)
+- [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
 - [Agentic Design System - From Chatbot to Orchestration](../ch01/009-agentic-design-system-from-chatbot-to-orchestration.html)
 - [快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客](../ch03/035-agent.html)
-- [把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客](ch11/235-openclaw.html)
+- [把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客](ch11/237-openclaw.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)

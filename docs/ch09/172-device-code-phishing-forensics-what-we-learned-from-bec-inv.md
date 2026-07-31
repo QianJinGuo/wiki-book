@@ -2,12 +2,11 @@
 
 ## Ch09.172 Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md`
+> 📊 Level ⭐⭐ | 3.1KB | `entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md`
 
 # Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md)
-
 
 ## 深度分析
 
@@ -37,49 +36,14 @@ April 1st started with the kind of phishing reports we receive all the time from
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1175-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
 2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
 3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现

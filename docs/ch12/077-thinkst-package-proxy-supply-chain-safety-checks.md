@@ -8,58 +8,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinkst-package-proxy-supply-chain-security.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thinkst Package Proxy Supply"))
-    供应链安全的演变
-    理想化的保护策略
-    架构设计
-    内置检查项
-    天窗口的安全博弈论
-    代理模式 vs 包装器模式
-    Agent 时代的供应链风险放大
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 Thinkst 推出了 [Package Proxy](https://packageproxy.dev/)——一个基于 Cloudflare Workers 的透明代理层，在 npm、pip、uv、cargo 等包管理器安装依赖前执行安全检查。核心机制是拦截包管理器的 index URL 请求，对每个包执行策略检查（包龄、上传方式、黑白名单），不合格的包返回 404。无需客户端软件，仅需配置变更即可部署。上线后已成功防御 TanStack、BitWarden、TeamPCP 等多起供应链攻击。
 

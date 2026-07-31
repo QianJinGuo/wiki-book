@@ -2,7 +2,7 @@
 title: "Refund Verification"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 43db3e2dc441155c2205c280c85a05e9732944d7929087f2c5475165ecb4b21e
 ---

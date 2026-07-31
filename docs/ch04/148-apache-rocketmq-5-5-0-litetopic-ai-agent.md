@@ -4,61 +4,11 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/rocket-mq-5-litetopic-ai-agent-async-cloudnative.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Apache RocketMQ 550 LiteTopic AI"))
-    背景 Agent 异步通信成为行业共识
-    LiteTopic 核心设计
-      双层结构 父 Topic 动态子 Topic
-      RocksDB 百万级共存的存储基础
-      事件驱动 Ready Set 减少无效扫描
-    技术定位
-    LiteTopic vs 传统 Topic Consumer
-    RocksDB 作为索引引擎的工程细节
-    与 MCP Protocol 的互补关系
-    阿里云商业版的企业级增强逻辑
-    何时应该选用 LiteTopic 而非传统 Topic
-```
-
 ## 背景：Agent 异步通信成为行业共识
 
 Anthropic MCP 2026 Roadmap 与 Google ADK Long Running Agent 方案不约而同指向同一组基础设施需求：海量会话通道、状态持久化与断点续传、异步生命周期管理。三条路径收敛到同一问题：传统 Topic + Consumer Group 无法支撑百万级轻量 Agent 会话。
 
 ## LiteTopic 核心设计
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 双层结构：父 Topic + 动态子 Topic
 
@@ -153,11 +103,11 @@ LiteTopic 定位为消息基础设施，与上层 Agent 框架的集成主要有
 两条路径的共同前提是：Agent 框架侧需要支持「发布到 LiteTopic」和「从 LiteTopic 消费」两种操作——这意味着框架侧需进行小幅改造以适配 LiteTopic SDK。预计随着 RocketMQ 5.5.0 普及，会有更多框架跟进支持。
 
 ## 相关实体
-- [Rocketmq Litetopic Ai Agent Messaging](../ch01/434-rocketmq-litetopic.html)
+- [Rocketmq Litetopic Ai Agent Messaging](../ch01/435-rocketmq-litetopic.html)
 - [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/385-hermes-agent-goal.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/271-skill.html)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/273-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocket-mq-5-litetopic-ai-agent-async-cloudnative.md)
 

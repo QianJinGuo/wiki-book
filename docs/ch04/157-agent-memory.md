@@ -4,68 +4,10 @@
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/agent-memory-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Memory 架构本质"))
-    边界划定
-    蒸馏 记忆
-    四类建模对象
-    基本记忆单元 六维度
-    三条链路
-      写入 预算分配
-      管理 防止垃圾堆化
-      读取 任务约束驱动
-    进化 修正 遗忘
-      自我修正
-      有策略的遗忘
-    与 Hermes Agent Deep Dive 的关系
-    从信息论视角看 Memory 治理
-```
-
 ## Overview
 Agent Memory 不是"把聊天记录存起来"，而是一个完整的 **write–manage–read 闭环**，决定什么信息被允许持续影响未来决策。核心问题不是容量，而是**治理**——谁被允许持续影响未来。
 
 ## 核心命题
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 **Context window 扩展解决的是带宽问题，不是建模问题。** benchmark 已证实：拉到 35 session、300 turn 的尺度，长上下文和 RAG 在时间推理、长程一致性上仍明显落后于人类。Memory 正在从附加功能变成 Agent 架构的核心子系统。
 
 ## 边界划定
@@ -203,19 +145,19 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 **与本 entity 的关系**：Brain 是"write–manage–read 闭环"的产品化实例——write 阶段记录工作上下文，manage 阶段构建 context graph，read 阶段在新任务起点注入经验。
 
 ## 相关主题
-- [Agent Skill Writing](ch04/269-agent-skill.html) — Skill 是 Memory 系统持久化的载体之一
+- [Agent Skill Writing](ch04/271-agent-skill.html) — Skill 是 Memory 系统持久化的载体之一
 - [Anthropic Mcp Revisited](../ch07/016-anthropic-mcp.html) — MCP 作为 Agent 工具调用协议，与 Memory 的世界模型有交叉（环境约束信息）
 - [Gbrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html) — Compiled Truth + Timeline 知识模型，与 Memory 的信念追踪机制相关
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-architecture-essence.md)
 
 ## 相关实体
-- [Agent Memory 架构解析](ch04/121-agent-memory.html)
-- [memory agent systems cobanov](ch04/604-memory-agent-systems-cobanov.html)
+- [Agent Memory 架构解析](ch04/098-agent-memory.html)
+- [memory agent systems cobanov](ch04/608-memory-agent-systems-cobanov.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
-- [ai agent memory systems](ch04/121-agent-memory.html)
-- [Personal AI 工作台：Claude 18 动作框架](../ch05/094-ai.html)
+- [ai agent memory systems](ch04/098-agent-memory.html)
+- [Personal AI 工作台：Claude 18 动作框架](../ch05/095-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

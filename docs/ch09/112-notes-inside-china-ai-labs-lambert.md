@@ -7,52 +7,16 @@
 # Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes from inside China's AI
 Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes from inside China's AI labs Lessons from my trip to talk to most of the leading AI labs in China. Nathan Lambert May 07, 2026 211 29 30 Share Article voiceover 0:00 -16:35 Audio playback is not supported on your browser. Please upgrade. Staring out the window on a new, high-speed train from Hangzhou to Shanghai I'm gifted with views of dramatic ridgelines speckled with wind turbines that are silhouetted against the setting sun. The mountains cast a backdrop to a mix of spanning fields and clustered skyscrapers. I'm returning from China with great humility. It's a very warming, human experience to go somewhere so foreign and be so welcomed. I had the honor of meeting so many people in the AI ecosystem who I knew from afar, and they greeted me with big smiles and cheer, reminding me how global my work and the AI ecosystem is. Interconnects AI is a reader-supported publication. Consider becoming a subscriber. Subscribe The mentality of Chinese researchers The Chinese companies building language models are set up as the perfect fast-followers for the technology, building on long-standing cultural traditions in education and work, along with subtly different approaches to building technology companies. When you look at the outputs, the latest, biggest models enabling agentic workflows, and the ingredients, excellent scientists, large-scale data, and accelerated computing, the Chinese and American labs look largely similar. The lasting differences emerge in how these are organized and conditioned. I've long thought that a reason that the Chinese labs are so good at catching up and keeping up with the frontier is that they're culturally aligned for this task, but without talking to people directly I felt like it wasn't my place to attribute substantial influence to this hunch. Speaking with many wonderful, humble, and open scientists at the leading Chinese labs has crystallized a lot of my belief... [truncated]
 
-
 ## 相关实体
 - [Notes From Inside Chinas Ai Labs](ch09/133-notes-from-inside-chinas-ai-labs.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/565-score-by-collisions-patch-by-panic.html)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/869-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Agentcore Managed Harness](../ch04/224-agentcore-managed-harness.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/569-score-by-collisions-patch-by-panic.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/883-google-adds-llms-txt-check-to-chrome-lighthouse.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Agentcore Managed Harness](../ch04/225-agentcore-managed-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notes-inside-china-ai-labs-lambert.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Nathan Lambert 的中国 AI 实验室之行揭示了一个长期被西方科技界低估的现实：中美 AI 竞争力的差距不是技术能力的根本性差异，而是组织文化和工作方式的系统性不同。西方媒体倾向于将中国 AI 描述为「模仿者」或「跟随者」，但 Lambert 的第一手观察指向一个更微妙的事实——快速跟随本身就是一种卓越的能力，它要求在消化吸收他人创新的同时保持自主探索的平衡。这种「建设性跟随」的智慧很少被西方分析框架所重视。
 

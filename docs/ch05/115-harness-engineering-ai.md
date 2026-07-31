@@ -75,42 +75,6 @@ nonstop 项目成果数据  ：
 完成nonstop项目后，我们有惊喜更有疑问。惊喜的是AI能力确实很强，但  同时  也发现了很多问题：尤其是LEGO这样百万行级、高可靠的 C++ 系统，能不能"放心用"，会不会翻车？ 也是 Harness Engineering要解决的核心命题。
 
 ###  ** 三、核心问题：AI Coding在大型项目里为什么容易翻车？  **
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 尽管nonstop  让我  们  探测  出  AI 编码的能力边界与行为特性  ，但在实际应用AI Coding的过程中，我们也发现了许多问题和挑战。
 
 ###  3.1  AI Coding的常见问题
@@ -357,22 +321,6 @@ AI 的"自信"会传染  ：  格式工整的文档反而降低审查意愿
 工程体系才重要  。
 AI Coding 不是"让 AI 替你写代码"，而是重新  定义  人与 AI 协作的工程范式。LEGO Harness Engineering 的价值不在于某次效率提升的数字，而在于：每一个踩坑变成规则，每一条规则内化进 Skill，每一个 Skill 让下一个人少走弯路——这是一套可持续进化的工程体系。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering AI"))
-    AI Coding 在高风险后端系统的可行性框架
-    上下文约束反馈三角架构的深层含义
-    对抗式 CR 的有效性与局限
-    AI 在高风险场景的能力边界与职业演变
-    建立上下文体系的关键步骤
-    设计有效约束的核心原则
-    构建反馈闭环的实践要点
-    对抗式 CR 的实践建议
-```
-
 ## 深度分析
 ### 1. AI Coding 在高风险后端系统的可行性框架
 本文提出的核心命题具有重要的工程意义：AI 能否在"出事会炸"的后端系统中写代码？作者的回答是"能，但需要系统性的 Harness"。这一结论建立在 `Tencent Cdn Lego Harness Engineering` 所展示的完整工程实践之上，而非单纯依赖模型的原生能力。
@@ -434,7 +382,7 @@ mindmap
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/120-harness-engineering.html)
 - [Harness Engineering Jk Launcher Baijiajie](ch05/120-harness-engineering.html)
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
-- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](ch05/111-ai-coding.html)
+- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](ch05/112-ai-coding.html)
 
 ---
 

@@ -2,7 +2,7 @@
 title: "Designing A Better Lou: Reducing Cognitive Load Through Design, Content, and Systems"
 source_url: "https://tympanus.net/codrops/2026/06/16/designing-a-better-lou-reducing-cognitive-load-through-design-content-and-systems/"
 ingested: 2026-06-20
-type: article
+type: raw-article
 tags: [design, ux, cognitive-load, healthcare, design-systems]
 sha256: ""
 created: 2026-06-20

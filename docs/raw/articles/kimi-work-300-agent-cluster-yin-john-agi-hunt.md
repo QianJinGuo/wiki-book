@@ -5,7 +5,7 @@ title: "Kimi 决定，要用 300 个 Agent 解救非程序员们"
 author: 尹John
 publisher: AGI Hunt
 date: 2026-06-05
-type: article
+type: raw-article
 ingested: 2026-06-05
 review_value: 8
 review_confidence: 8

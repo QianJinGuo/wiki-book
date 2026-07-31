@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/from-kubernetes-dev-setup-to-production-what-actually-change.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From Kubernetes Dev Setup to"))
-    生产就绪的本质 能力的积累 而非配置的堆叠
-    变更风险的时间维度
-    备份验证的文化含义
-    工具链选择的工程哲学
-    从运行在 Kubernetes到生产就绪的检查清单
-    警惕GitOps 速度幻觉
-    告警治理 先减噪音 再建信号
-    Day-2 运维的持续性
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 - **在 Kubernetes 上运行 ≠ 生产就绪**：开发风格部署（local minikube、自签名证书、bundled 依赖、手动 Helm 序列）和生产平台的差距是系统性的，不是加几个配置项就能弥合
 - **时序很重要**：能力建设遵循一个顺序——先让构建块可用 → 再让产品端到端可用 → 再让变更加受控 → 最后让运维可恢复可观测
 - **GitOps 是杠杆，但不是银弹**：引入 Flux/SOPS 改变了变更管理的质量，但前提是底层组件（数据库、存储、身份提供者）已经可重复安装
@@ -136,9 +82,9 @@ GitOps 让你能更安全地加快变更速度，但需要显式工程优化才�
 ## 相关实体
 - [What Marketing Can Learn From It About Running Complex Technology](../ch03/107-what-marketing-can-learn-from-it-about-running-complex-techn.html)
 - [Forward Networks Predict Network Verification](https://github.com/QianJinGuo/wiki/blob/main/entities/forward-networks-predict-network-verification.md)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/235-openclaw.html)
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/271-skill.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/237-openclaw.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1248-0.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/273-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-kubernetes-dev-setup-to-production-what-actually-change.md)
 

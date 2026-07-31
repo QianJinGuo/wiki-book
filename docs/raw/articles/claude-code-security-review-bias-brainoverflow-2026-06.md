@@ -5,7 +5,7 @@ source: "blog|claude.com|brainoverflow"
 author: ""
 publish_date: "2026-06-01T11:35:14-07:00"
 ingested: "2026-06-11"
-type: article
+type: raw-article
 tags: []
 source_type: rss
 sha256: "0c472d719e11c5c0e6658489b1570770e6ef11cdb957693dc4a351f2acfa9de8"

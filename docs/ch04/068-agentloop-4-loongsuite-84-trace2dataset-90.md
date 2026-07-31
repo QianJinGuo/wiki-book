@@ -9,32 +9,6 @@
 > **来源**：阿里云云原生（Cloud Native 公众号），2026-06-18
 > **核心命题**：**企业 Agent 落地的瓶颈已从"能不能跑通"转向"能不能形成自进化飞轮"**。阿里云推出 **AgentLoop** — 企业级 Agent 一站式自进化平台，把"数据采集 → 数据集构建 → 效果评估 → 进化资产沉淀"4 步闭环产品化。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里云 AgentLoop 企业级智能体自进化飞轮 4 环闭环"))
-    一 定位 企业智能体下半场的发令枪
-      两类 Agent 进化场景
-      行业数据 Agent 落地的真实瓶颈
-    二 4 大工程难点 LLM-as-Judge 范式难以应对
-    三 AgentLoop 的 4 环飞轮产品化
-      第 1 环 全栈观测分析 完整 Trajectory 执行轨迹
-      第 2 环 Agent Ontology Pipeline
-      第 3 环 Agent-as-a-Judge 范式产品化
-    四 4 环闭环全景
-    五 与既有实体的关联
-    六 关键概念辨析
-      Agent-as-a-Judge vs LLM-as-a-Judge
-      数据驱动 vs Trajectory 驱动 4 环飞轮内两条路径
-    七 实践启示
-      对企业 评估覆盖率是 Agent 规模化的命脉
-      对平台建设者 4 环缺一不可
-      对 Agent 设计者 trajectory 是一等公民
-    八 引用与延伸阅读
-```
-
 ## 一、定位：企业智能体下半场的发令枪
 
 ### 1.1 两类 Agent 进化场景
@@ -59,37 +33,6 @@ mindmap
 **恶性循环**：缺少进化飞轮基础设施 → 不敢放量 → 没有观测数据 → 无法进化。
 
 ## 二、4 大工程难点（LLM-as-Judge 范式难以应对）
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 | 难点 | LLM-as-Judge | Agent 时代 |
 |---|---|---|
@@ -119,7 +62,7 @@ graph TB
 
 > 一条 23 秒的慢请求，通过 4 层视图交叉定位，可精确到"某一轮 LLM 多步冗余循环调用"。
 
-**与既有 LoongSuite 实体的关系**：[Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.html)（401 行深度文档）覆盖 LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力。本 entity 在其基础上扩展到 AgentLoop **整平台**视角，包含后续 3 环。
+**与既有 LoongSuite 实体的关系**：[Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/046-coding-agent.html)（401 行深度文档）覆盖 LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力。本 entity 在其基础上扩展到 AgentLoop **整平台**视角，包含后续 3 环。
 
 ### 第 2 环：Agent Ontology + Pipeline（Trace2Dataset）
 
@@ -204,9 +147,9 @@ graph TB
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.html) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
-| [Loongsuite Genai Semconv Alibaba](ch04/467-loongsuite-genai.html) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
-| [Aliyun Cms2 Cli Skill Natural Language Observability](ch04/271-skill.html) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
+| [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/046-coding-agent.html) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
+| [Loongsuite Genai Semconv Alibaba](ch04/472-loongsuite-genai.html) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
+| [Aliyun Cms2 Cli Skill Natural Language Observability](ch04/273-skill.html) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
 | [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](../ch05/120-harness-engineering.html) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |
 | [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/035-agent.html) | **理论框架** | 阿里"四阶段六维度"Agent 进化理论框架 |
 | [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/295-amazon-bedrock.html) | **AWS 平行方案** | Amazon Bedrock AgentCore Quality Evaluations |

@@ -1,7 +1,7 @@
 ---
 sha256: 4d5e47c25383
 title: "RAG深度解析：分块、向量化、召回、重排，才是“蒸馏同事skill”的关键"
-type: source
+type: raw-article
 tags: [mlops, wechat, llm, ai-agent, engineering]
 source: wechat
 source_url: "https://mp.weixi"

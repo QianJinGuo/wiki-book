@@ -11,7 +11,7 @@ source_url: https://netflixtechblog.com/scaling-camera-file-processing-at-netfli
 tags:
 - article
 title: Scaling Camera File Processing at Netflix
-type: source
+type: raw-article
 updated: '2026-06-07'
 ---
 

@@ -9,49 +9,10 @@
 Today, we’re excited to announce the general availability of Claude Platform on AWS. Claude Platform on AWS is a new service that gives customers direct access to Anthropic’s native Claude Platform experience through their AWS account, with no separate credentials, contracts, or billing relationships required. AWS is the first cloud provider to offer access to the native Claude Platform experience.
 In this post, we explore how Claude Platform on AWS works and how you can start using it today.
 
-
 ## Claude Platform experience through AWS
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1004-anthropic.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/013-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Claude For Small Business](ch01/027-introducing-claude-for-small-business.html)
@@ -59,9 +20,9 @@ graph TB
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-platform-on-aws.md)
 
-- [Anthropic出手Ai的内心独白曝光了](ch01/989-anthropic.html)
-- [Claude Code Context Engineering Anthropic Thariq](../ch03/078-claude-code.html)
-- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](../ch05/018-ai-native.html)
+- [Anthropic出手Ai的内心独白曝光了](ch01/1004-anthropic.html)
+- [Claude Code Context Engineering Anthropic Thariq](../ch03/077-claude-code.html)
+- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](ch01/1004-anthropic.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)

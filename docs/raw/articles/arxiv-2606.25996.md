@@ -1,7 +1,7 @@
 ---
 title: "Autodata: An agentic data scientist to create high quality synthetic data"
 source_url: "https://arxiv.org/abs/2606.25996"
-type: article
+type: raw-article
 created: 2026-06-26
 updated: 2026-06-26
 sha256: 926477076b31e43b4d6e6a636cf8e87bbf842c3ccfe2c348372384d2534916b9

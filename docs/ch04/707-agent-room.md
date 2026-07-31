@@ -6,22 +6,6 @@
 
 # 协作涌现：Agent Room 的多智能体决策框架
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("协作涌现 Agent Room 的多智能体决策框架"))
-    两层涌现
-    研发AI的三阶段演进
-    Agent Room概念
-      核心组件
-    协作涌现的现场
-      示例1 需求自迭代 产品QA架构全栈多角色协作
-      示例2 工单排查自闭环
-    涌现的形式化定义
-```
-
 ## 两层涌现
 
 **第一层涌现（语言模型）**：单个token没有智能，单句话也没有智能。但当海量文本、语义结构、知识关系、推理痕迹、行动描述被压缩进一个语言模型里，模型通过预测下一个词学到的就不只是语法，而是世界在语言中的投影。它没有被显式编程去"理解业务""做产品判断""写代码"，但在足够规模的语言训练之后，这些能力从语言结构中长了出来。
@@ -46,37 +30,6 @@ mindmap
 把多个角色放进同一个上下文场里，让它们自己判断是否该介入、该沉默、该推进。
 
 ### 核心组件
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 - **DAG**：负责把共识沉淀成依赖
 - **Memory**：负责让旧阻塞不反复污染新决策
@@ -167,7 +120,7 @@ Agent Room的价值不只是"自动创建了变更、分支和环境"。真正�
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
 - [Hermes Agent 12 Layer Full Configuration Guide](../ch03/096-hermes-agent.html)
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1248-0.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/emergent-collaboration-ai-high-quality-decision-agent-room.md)

@@ -39,17 +39,3 @@
 
 ---
 > 共 354 个来源，3359 篇实体。
-
-## 来源分布
-
-```mermaid
-graph LR
-    SRC[3359篇材料] --> WX[微信公众号 1287]
-    SRC --> AWS[AWS Blog 305]
-    SRC --> OTH[其他 767]
-    WX --> AUD[中文读者]
-    AWS --> ENG[英文工程]
-    OTH --> ARX[arXiv 论文]
-    OTH --> BLOG[技术博客]
-    OTH --> NEWS[行业新闻]
-```

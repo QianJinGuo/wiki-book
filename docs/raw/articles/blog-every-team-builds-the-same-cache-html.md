@@ -2,7 +2,7 @@
 title: "Every Team is Building the Same Cache — TierFS"
 source_url: "https://tierfs.com/blog/every-team-builds-the-same-cache.html"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 2602e974e39554f900b994a975d2980d6d8cb2c316da7e03972b879fe68aabb8
 ---

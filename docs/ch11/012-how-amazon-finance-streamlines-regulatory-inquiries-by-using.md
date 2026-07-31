@@ -18,56 +18,7 @@ Amazon's Finance Technology (FinTech) teams build and operate systems for Amazon
 Processing these regulatory inquiries involves reviewing documentation, extracting relevant information, retrieving supporting data from multiple systems within Amazon's infrastructure, and compiling responses within regulatory timeframes. As inquiry frequency and business complexity grew, Amazon needed a more scalable approach.
 In this post, we demonstrate how Amazon FinTech teams are using [Amazon Bedrock](<https://aws.amazon.com/bedrock/?nc2=type_a>) and other AWS services to build a scalable AI application to transform how regulatory inquiries are handled. Each team using this solution creates and maintains its own dedicated knowledge base, populated with that team's specific documents and reference materials.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How Amazon Finance streamlines"))
-    Challenges
-    Solution overview
-    Knowledge base ingestion flow
-    Chat Application
-    Multi-turn conversational experience
-    Observability
-    Conclusion
-    About the authors
-      Balajikumar Gopalakrishnan
-      Biswajit Mohapatra
-      Pramodh Korukonda
-```
-
 ## **Challenges**
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 The scale and complexity of managing regulatory inquiries presented several interconnected challenges:
 **Knowledge fragmentation and retrieval complexity**
 Regulatory inquiries require synthesizing information from thousands of historical documents. These documents exist in various formats (PDF, PPT, Word, CSV) and contain domain-specific terminology. Teams needed a way to quickly locate relevant precedents and supporting information across this vast corpus while maintaining accuracy and regulatory compliance.
@@ -165,10 +116,10 @@ If you're ready to modernize your knowledge-intensive processes with generative 
 **4. 防御 Prompt 注入应成为 AI 系统的标准 Checklist 项**
 文章中"检测到 Prompt 注入时返回固定回复"的设计反映了一种防御哲学：宁可拒答，不可误答。对于面向外部用户的 AI 系统，这应该是标准配置。但需要注意：检测本身可能产生误判（用户正常询问中包含类似攻击的词汇），需要有机制让用户申诉或重试。建议将这一防御机制设计为可配置的，允许在不同安全级别下调整阈值。
 ## 相关实体
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/561-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/566-amazon-bedrock-agentcore.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/295-amazon-bedrock.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/561-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/566-amazon-bedrock-agentcore.html)
 - [Introducing Claude Platform On Aws](../ch01/150-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 
 ---

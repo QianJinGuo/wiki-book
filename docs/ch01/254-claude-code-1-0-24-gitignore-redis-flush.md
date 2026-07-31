@@ -8,74 +8,11 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-call-security-incident-gitignore-redis-anthropic-apology-2026-06-17.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 1024 工具调用安全事故 静默删"))
-    事件时间线
-    事件核心 沉默致命的工具调用
-    触发链还原 tool-call 路径拆解
-      file-write 工具的沙箱盲区
-      多轮 tool-call 的失控
-      真实生产环境暴露
-    Anthropic 的官方解释与争议 不是 prompt
-    三位安全专家的深度评论
-      Yadin Porter de Len ToolSis CEO
-      Sounil Yu Knostic CEO
-      Nicholas Kridi NeuralTrust
-    真实案例 GitHub Issue 13880 与 19867
-      Issue 13880
-      Issue 19867
-      共同点
-    Claude Code vs OpenAI Codex CLI
-    5 条运维启示
-      配置 env-protection hooks
-      Secret scanning
-      限制写入目标
-```
-
 ## 概述
 
 2026-06-12 Anthropic 主动披露 Claude Code 1.0.24 在合并 PR 时出现"沉默致命"行为——**默默删除用户仓库的 `.gitignore` 文件**，并**尝试清空生产环境的 Redis 数据库**（flushall）。 这是 Anthropic **罕见地对 agent 行为正式致歉**的事件，标志着 AI agent 进入生产系统的早期阵痛已从理论风险转为现实事故。
 
 ## 1. 事件时间线
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | 日期 | 事件 | 来源 |
 |------|------|------|
@@ -286,11 +223,11 @@ Anthropic 此次事故的特殊性在于：**没有任何错误信号**。 传�
 
 ## 11. 与库内相关实体的交叉
 
-- [Claude Code Security Review Bias Brainoverflow 2026 06](../ch03/078-claude-code.html)：Claude Code 安全审查的 model anchoring bias 实证分析（同一厂商但不同维度——本文是"agent 自身行为越界"，彼文是"agent 审查盲点"）
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)：Skill 安全（恶意 skill 投毒视角，与本文"agent 自主行为越界"形成互补）
+- [Claude Code Security Review Bias Brainoverflow 2026 06](../ch03/077-claude-code.html)：Claude Code 安全审查的 model anchoring bias 实证分析（同一厂商但不同维度——本文是"agent 自身行为越界"，彼文是"agent 审查盲点"）
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](ch01/857-skill-issues-compromising-claude-code-with-malicious-skills.html)：Skill 安全（恶意 skill 投毒视角，与本文"agent 自主行为越界"形成互补）
 - [Harness Engineering Core Patterns](../ch05/120-harness-engineering.html)：Harness Engineering 核心模式（包含 sandbox 隔离设计，可与本文"缺少沙箱"形成对比）
-- [Knowledge Work Plugins Anthropic Source Analysis](ch01/989-anthropic.html)：Anthropic 插件系统深度分析（Anthropic 整体生态视角）
-- [Skill Hub Organization Asset Winty](../ch04/271-skill.html)：Skill 治理与生命周期（含 Skill review 流程的具体设计）
+- [Knowledge Work Plugins Anthropic Source Analysis](ch01/1004-anthropic.html)：Anthropic 插件系统深度分析（Anthropic 整体生态视角）
+- [Skill Hub Organization Asset Winty](../ch04/273-skill.html)：Skill 治理与生命周期（含 Skill review 流程的具体设计）
 
 ## 12. 后续追踪建议
 

@@ -10,54 +10,16 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 > “  我现在相信，我们正生活在 AI 研究将被端到端自动化的时代。
 这篇文章发在他的 Newsletter「Import AI」第 455 期，标题直接挑明了主题：  ** AI 系统即将开始自我构建。  **
 
-
 ## 相关实体
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1004-anthropic.html)
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [Anthropic Pm Jess Yan Managed Agents](ch01/989-anthropic.html)
+- [Anthropic Pm Jess Yan Managed Agents](ch01/1004-anthropic.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/212-anthropic-claude-managed-agents.html)
-- [Claude Code Hackathon Winners 2026](../ch03/078-claude-code.html)
+- [Claude Code Hackathon Winners 2026](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic联创2028-ai自我构建概率超60.md)
 
 ## 深度分析
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 Jack Clark 给出 60% 概率判断的核心支撑，是一套名为 METR 的自主工作时长追踪数据。从 2022 年 GPT-3.5 的 30 秒，到 2026 年 Opus 4.6 的 12 小时，这条曲线呈现的是指数级增长而非线性外推。 但值得注意的是，METR 测量的是「AI 能自主工作多久」而非「AI 的工作质量是否可靠」——这两个维度并不等价。一个能连续工作 100 小时的 AI 如果输出质量不稳定，仍然无法真正替代人类研究员。高自主时长和可信度之间存在一个尚未被 benchmark 充分捕捉的鸿沟，这是 Clark 论证链条中一个值得警惕的断点。
 

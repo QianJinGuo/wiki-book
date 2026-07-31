@@ -4,60 +4,11 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/hermes-agent-tool-system-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 工具系统架构分析"))
-    层架构
-    ToolEntry 数据结构
-    自注册机制
-    注册安全
-    工具调度流程
-    checkfn 30s TTL 缓存
-    Toolset 组合
-    动态 Schema 覆盖
-```
-
 ## 核心结论
 
 Hermes Agent 的工具系统核心是**单例注册表 + import 即自注册 + AST 扫描**的组合：新增工具文件不需要修改任何注册逻辑，只要文件里有 `registry.register()` 调用就会被自动发现和加载。
 
 ## 4 层架构
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ```
 tools/*.py        → 自注册层（import 时执行 registry.register()）

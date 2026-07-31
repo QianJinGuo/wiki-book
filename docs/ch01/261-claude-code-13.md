@@ -9,22 +9,6 @@
 # Claude Code 源码深度解析（13 核心机制）
 > 22,873 字源码深度拆解，每节均与 Codex/OpenCode/Gemini-CLI 横向对比
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 源码深度解析 13 核心机制"))
-    个核心模块
-    与现有知识关联
-    System Prompt 动态组装的工程价值
-    工具并发调度的隐性约束
-    deferredtoolsdelta Prefix Cache
-    microCompact 的注意力屏蔽原理
-    设计工具时声明并发安全性
-    用 delay loading 降低首次响应延迟
-```
-
 ## 13 个核心模块
 | # | 模块 | 核心亮点 |
 |---|------|---------|
@@ -43,41 +27,6 @@ mindmap
 | 13 | 预算管理 | 四维度：Token/成本(maxBudgetUsd)/工具结果/轮次 |
 
 ## 关键设计决策
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 1. **微压缩（microCompact）** — 利用 Anthropic API cache_edits 在服务端做注意力屏蔽，本地消息和 cache 都不变，解决压缩与 cache 的矛盾
 2. **延迟加载与 prefix cache** — 通过独立 attachment（deferred_tools_delta）而非修改消息流，避免工具发现状态变化破坏 cache
 3. **权限拒绝渐进升级** — 3次连续或20次累计→从自动切换到询问用户，防止分类器误判导致死锁
@@ -85,11 +34,11 @@ graph TB
 5. **两阶段 AI 分类器** — 先 64t 快速判断放行，再 4096t 链式推理降低误报，都利用 prompt cache 复用
 
 ## 与现有知识关联
-- [Claude Code 架构解析](../ch03/078-claude-code.html) — 互补页面，本文更深更全面
+- [Claude Code 架构解析](../ch03/077-claude-code.html) — 互补页面，本文更深更全面
 - [Claude Code Prompt/Context/Harness](../ch09/061-claude-code-prompt.html) — 三层工程视角
 - [Prompt Caching 工程实践](ch01/217-anthropic-prompt-caching-claude-code.html) — 与 microCompact 相关
 - [Agent Harness 12 组件](../ch05/058-agent-harness.html) — Harness 通用框架
-- [Claude Code Subagent 上下文卫生](../ch04/311-claude-code-subagent.html) — Sub-Agent 设计
+- [Claude Code Subagent 上下文卫生](../ch04/313-claude-code-subagent.html) — Sub-Agent 设计
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-source-deep-dive-warrior.md)
 
 ## 深度分析
@@ -147,11 +96,11 @@ microCompact 通过 `cache_edits` 保留本地消息不变，解决的是"cache 
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/061-claude-code-prompt.html)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/422-claude-code-harness-deep-understanding.html)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/423-claude-code-harness-deep-understanding.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

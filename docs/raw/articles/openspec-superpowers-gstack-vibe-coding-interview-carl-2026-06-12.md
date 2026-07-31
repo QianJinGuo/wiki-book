@@ -5,7 +5,7 @@ source: "wechat|代码随想录|卡码大模型"
 author: "程序员Carl"
 publish_date: "2026-06-12"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: []
 source_type: wechat
 sha256: "fdaac93827a8a46ca1d185be6db8f8b610e480935d9210d4134a4dba109f9da3"

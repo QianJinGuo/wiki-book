@@ -1,7 +1,7 @@
 ---
 title: "pydantic-ai-progressive-agent-skills-automatorrunner"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: f835e253f12062a361d62ebb53826a864f88f131fda3460113198cef078fc1fe
 ---
 source_url: https://mp.weixin.qq.com/s/osc5beCKJGDAvHeY2Ji4_w

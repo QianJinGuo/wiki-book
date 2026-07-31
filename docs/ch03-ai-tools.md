@@ -6,76 +6,17 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((AI工具生态))
-    CLI Agent
-      Codex
-      Claude Code
-      Cursor
-    浏览器工具
-      Playwright
-      Browser-use
-      CDP
-    开发平台
-      VS Code插件
-      JetBrains插件
-      IDE集成
-    知识管理
-      Wiki系统
-      RAG工具
-      笔记工具
-    自动化工具
-      工作流引擎
-      Zapier类
-      n8n
-    模型服务
-      OpenAI API
-      Anthropic API
-      开源推理
-    监控与调试
-      Langfuse
-      Helicone
-      可观测性
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 52 |
-| ⭐⭐ 工程师 | 需编程基础 | 84 |
+| ⭐ 入门 | 零基础可读 | 51 |
+| ⭐⭐ 工程师 | 需编程基础 | 85 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
 
 ## 导读
-
-```mermaid
-graph LR
-    subgraph "AI 工具生态"
-        CLI["CLI Agent<br/>Codex/Claude Code"]
-        IDE["IDE 插件<br/>Cursor/Windsurf"]
-        PLT["平台<br/>OpenClaw/Hermes"]
-        MCP["MCP<br/>工具协议"]
-    end
-    CLI & IDE & PLT --> MCP
-    subgraph "能力"
-        CODE["代码"] 
-        BROWSER["浏览器"]
-        DATA["数据"]
-    end
-    CLI --> CODE
-    IDE --> CODE
-    PLT --> BROWSER & DATA
-    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef cap fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class CLI,IDE,PLT,MCP tool
-    class CODE,BROWSER,DATA cap
-```
-
 
 AI 工具正在重新定义"开发者工具"的边界。
 
@@ -124,9 +65,9 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [029. AnySearch — Agent专用搜索引擎，登顶Product Hunt](ch03/029-anysearch-agent-product-hunt)
 - [030. Crawler vs Opencli Doubao](ch03/030-crawler-vs-opencli-doubao)
 - [031. Nvidia Cut Checkpoint Costs Nvcomp](ch03/031-nvidia-cut-checkpoint-costs-nvcomp)
-- [032. 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍](ch03/032-os-getenv-pydantic-settings)
-- [033. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/033-03-ai-skill-8-40-90)
-- [034. How to Automate AI Model Documentation with NVIDIA MCG Toolkit](ch03/034-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk)
+- [032. How to Automate AI Model Documentation with NVIDIA MCG Toolkit](ch03/032-how-to-automate-ai-model-documentation-with-nvidia-mcg-toolk)
+- [033. 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍](ch03/033-os-getenv-pydantic-settings)
+- [034. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/034-03-ai-skill-8-40-90)
 - [035. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/035-agent)
 - [036. Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.](ch03/036-form-over-function-mistakes-or-how-not-to-harm-your-busines)
 - [037. AI-Driven Layoffs Aren't Making Businesses More Efficient](ch03/037-ai-driven-layoffs-aren-t-making-businesses-more-efficient)
@@ -144,42 +85,42 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [049. Granola — The AI Notepad for back-to-back meetings](ch03/049-granola-the-ai-notepad-for-back-to-back-meetings)
 - [050. Python 3.15 Beta 实测：实战视角的技术特性评估](ch03/050-python-3-15-beta)
 - [051. Buildkite Pricing | Buildkite](ch03/051-buildkite-pricing-buildkite)
-- [052. How Yahoo enhances search retargeting using Amazon Bedrock](ch03/052-how-yahoo-enhances-search-retargeting-using-amazon-bedrock)
-- [053. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/053-agentscope-java-harness-framework-2-0-agent-harness)
-- [054. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/054-harness-engineering-ai-coding-90)
-- [055. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/055-ai-native-dan-shipper-30-100-saas-6)
-- [056. 日志别再print了！深入对比Python三大日志方案](ch03/056-print-python)
-- [057. Wi-Fi 8 is closer than you think](ch03/057-wi-fi-8-is-closer-than-you-think)
-- [058. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/058-hermes-wiki-obsidian-hermes-agent-9)
-- [059. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/059-nvidia-gpu-kernel-cute-python-julia)
-- [060. Salesforce 主动砍掉了界面，a16z 合伙人说：护城河从来不在那里](ch03/060-salesforce-a16z)
-- [061. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/061-yc-ceo-garry-tan-200-400-ai-agent)
-- [062. Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar](ch03/062-stripe-agent-5-mpp-link-projects-metronome-tempo)
-- [063. gstack — AI协作开发工作流 & 复杂度棘轮](ch03/063-gstack-ai)
-- [064. The stablecoin 24x7 money loop: business case for banks](ch03/064-the-stablecoin-24x7-money-loop-business-case-for-banks)
-- [065. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/065-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
-- [066. 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑](ch03/066-websocket-llm-fastapi-sse)
-- [067. Qoder Skill UI — Agent 与人类的协作界面层](ch03/067-qoder-skill-ui-agent)
-- [068. Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop](ch03/068-figma-make-now-on-your-local-code-closing-the-design-to-co)
-- [069. Wi-Fi 8 技术解析：超越高速的可靠性和边缘计算](ch03/069-wi-fi-8)
-- [070. 花叔的 Claude Code 多 Agent 用量画像](ch03/070-claude-code-agent)
-- [071. Bedrock AgentCore 多租户 Agent 构建实践](ch03/071-bedrock-agentcore-agent)
-- [072. 如何把经验装到Skills](ch03/072-skills)
-- [073. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/073-pi-mono-ai-agent-openclaw)
-- [074. Boris Cherny — 从 IDE 到 Agent 控制台](ch03/074-boris-cherny-ide-agent)
-- [075. How to Build Low-Code API Integrations for Enterprise Apps Using Okta](ch03/075-how-to-build-low-code-api-integrations-for-enterprise-apps-u)
-- [076. 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)](ch03/076-5-years-and-5m-later-inventing-a-new-programming-language)
-- [077. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/077-obsidian-claude-code)
-- [078. Claude Code 命令完全指南](ch03/078-claude-code)
+- [052. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/052-agentscope-java-harness-framework-2-0-agent-harness)
+- [053. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/053-harness-engineering-ai-coding-90)
+- [054. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/054-ai-native-dan-shipper-30-100-saas-6)
+- [055. 日志别再print了！深入对比Python三大日志方案](ch03/055-print-python)
+- [056. Wi-Fi 8 is closer than you think](ch03/056-wi-fi-8-is-closer-than-you-think)
+- [057. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/057-hermes-wiki-obsidian-hermes-agent-9)
+- [058. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/058-nvidia-gpu-kernel-cute-python-julia)
+- [059. Salesforce 主动砍掉了界面，a16z 合伙人说：护城河从来不在那里](ch03/059-salesforce-a16z)
+- [060. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/060-yc-ceo-garry-tan-200-400-ai-agent)
+- [061. Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar](ch03/061-stripe-agent-5-mpp-link-projects-metronome-tempo)
+- [062. gstack — AI协作开发工作流 & 复杂度棘轮](ch03/062-gstack-ai)
+- [063. The stablecoin 24x7 money loop: business case for banks](ch03/063-the-stablecoin-24x7-money-loop-business-case-for-banks)
+- [064. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/064-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
+- [065. 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑](ch03/065-websocket-llm-fastapi-sse)
+- [066. Qoder Skill UI — Agent 与人类的协作界面层](ch03/066-qoder-skill-ui-agent)
+- [067. Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop](ch03/067-figma-make-now-on-your-local-code-closing-the-design-to-co)
+- [068. Wi-Fi 8 技术解析：超越高速的可靠性和边缘计算](ch03/068-wi-fi-8)
+- [069. 花叔的 Claude Code 多 Agent 用量画像](ch03/069-claude-code-agent)
+- [070. Bedrock AgentCore 多租户 Agent 构建实践](ch03/070-bedrock-agentcore-agent)
+- [071. 如何把经验装到Skills](ch03/071-skills)
+- [072. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/072-pi-mono-ai-agent-openclaw)
+- [073. Boris Cherny — 从 IDE 到 Agent 控制台](ch03/073-boris-cherny-ide-agent)
+- [074. How to Build Low-Code API Integrations for Enterprise Apps Using Okta](ch03/074-how-to-build-low-code-api-integrations-for-enterprise-apps-u)
+- [075. 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)](ch03/075-5-years-and-5m-later-inventing-a-new-programming-language)
+- [076. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/076-obsidian-claude-code)
+- [077. Claude Code 命令完全指南](ch03/077-claude-code)
+- [078. Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now](ch03/078-real-time-personalisation-at-scale-how-zepto-understands-wh)
 - [079. Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战](ch03/079-amazon-quick-cisco-webex-mcp-meeting-lifecycle-mcp)
-- [080. Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now](ch03/080-real-time-personalisation-at-scale-how-zepto-understands-wh)
-- [081. Pinterest Is Making Ads More Intent-Aware, Not Just Interest](ch03/081-pinterest-is-making-ads-more-intent-aware-not-just-interest)
-- [082. 开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/082-ai-obsidian-claude-code)
-- [083. AI 把代码写快了 10 倍，为什么交付只快了 18%](ch03/083-ai-10-18)
-- [084. Announcing Genkit Middleware](ch03/084-announcing-genkit-middleware)
-- [085. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/085-claude-code-token-71-5)
-- [086. This redesign of Stokes Coffee is a masterclass in 'change everything, but don't change a thing' | Creative Boom](ch03/086-this-redesign-of-stokes-coffee-is-a-masterclass-in-change-e)
-- [087. 设计系统的新作者：从 Agent 读到 Agent 写](ch03/087-agent-agent)
+- [080. Pinterest Is Making Ads More Intent-Aware, Not Just Interest](ch03/080-pinterest-is-making-ads-more-intent-aware-not-just-interest)
+- [081. 开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/081-ai-obsidian-claude-code)
+- [082. AI 把代码写快了 10 倍，为什么交付只快了 18%](ch03/082-ai-10-18)
+- [083. Announcing Genkit Middleware](ch03/083-announcing-genkit-middleware)
+- [084. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/084-claude-code-token-71-5)
+- [085. This redesign of Stokes Coffee is a masterclass in 'change everything, but don't change a thing' | Creative Boom](ch03/085-this-redesign-of-stokes-coffee-is-a-masterclass-in-change-e)
+- [086. 设计系统的新作者：从 Agent 读到 Agent 写](ch03/086-agent-agent)
+- [087. How Yahoo enhances search retargeting using Amazon Bedrock](ch03/087-how-yahoo-enhances-search-retargeting-using-amazon-bedrock)
 - [088. OpenCLI](ch03/088-opencli)
 - [089. Marvis — 腾讯多智能体桌面助手](ch03/089-marvis)
 - [090. Affirm Maps Road to $100B GMV With Card, AI Commerce](ch03/090-affirm-maps-road-to-100b-gmv-with-card-ai-commerce)

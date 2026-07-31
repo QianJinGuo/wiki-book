@@ -4,7 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/kS8oyTzjK1LhE_0NRSBJuw"
 author: "小G / JavaGuide"
 created: 2026-07-02
 updated: 2026-07-02
-type: raw
+type: raw-article
 tags: [skill-orchestration, dependency-management, agent-skills, context-management, versioning, security]
 ingested: 2026-07-02
 sha256: 236ff8479914fb50512b2b104744651e55f6f1949ffc671209204646406d4075

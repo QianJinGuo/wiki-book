@@ -1,7 +1,7 @@
 ---
 tags: [wechat, article, claude, openai]
 title: "tmall ai coding practice team knowledge base npm"
-type: raw
+type: raw-article
 url: https://mp.weixin.qq.com/s/iRkxznDYhE-kXjbIHlrnNA
 ingested: 2026-05-08
 sha256: afdb4cc2e4b2f967e7e56dab684df725a35bd40aaec4ba8924777ce62112176a

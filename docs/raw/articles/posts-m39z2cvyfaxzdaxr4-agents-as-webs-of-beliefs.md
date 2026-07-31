@@ -2,7 +2,7 @@
 title: "Agents as Webs of Beliefs"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 25568971fa80068601a3c002b7b39d7eb7e169b30c4e4340719d71f007e1a164
 ---

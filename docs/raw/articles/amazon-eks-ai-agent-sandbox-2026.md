@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/amazon-eks-build-security-ai-a
 ingested: 2026-07-15
 feed_name: AWS China Blog
 source_published: 2026-07-15
-type: article
+type: raw-article
 source_type: rss
 sha256: "e02cfff7e65a535a31559cf0f6230b215374eff32027746ea9100f9d962d8a03"
 ---

@@ -6,7 +6,7 @@ feed: 高德技术
 publish_time: "2026-06-09 17:45"
 ingested: "2026-06-10"
 sha256: 9b286afdce6cb95119d7a7e13c50ea2c74c010e6
-type: raw
+type: raw-article
 tags: [agent, marketing, autoresearch, agent-team, business-protocol, safety-gate, feedback-loop, amap, governance, a-b-testing]
 ---
 

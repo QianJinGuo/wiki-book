@@ -12,7 +12,7 @@ tags:
 - article
 title: 'What I’ve been building: ATOM Report, post-training course, finishing my book,
   and ongoing research'
-type: source
+type: raw-article
 updated: '2026-06-07'
 ---
 

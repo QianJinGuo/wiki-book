@@ -4,75 +4,11 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("岁高中生用AI挖出150万未知天体 首批ChatGPT原住民毕业"))
-    核心事件
-    Matteo Paz AI发现150万未知天体
-      背景与成就
-      技术方法
-      发现成果
-    ChatGPT Futures 26位入选者
-    代表性项目
-      AION-Search 自然语言搜索14亿张星系图
-      WiFind 用WiFi信号穿透瓦砾找幸存者
-      其他项目
-    第一代ChatGPT原住民
-      AI作为默认基础设施
-    门槛并未消失 只是挪了位置
-      Matteo Paz的完整背景
-      AI的局限性
-      真正的启示
-    洞察一 AI降低的是「执行门槛」 而非「成就门槛」
-    洞察二 「第一代ChatGPT原住民」代表
-```
-
 ## 核心事件
 
 2026年，OpenAI上线「ChatGPT Futures」页面，展示了26位年轻创新者的项目，每人获得1万美元奖金及前沿模型访问权限。这一项目旨在为「AI时代的优秀年轻人」树立标杆，标志着第一代「ChatGPT原住民」正式进入公众视野。
 
 ## Matteo Paz：AI发现150万未知天体
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 ### 背景与成就
 
@@ -202,11 +138,11 @@ ChatGPT Futures名单揭示的机会图谱表明，AI的真正价值在于使此
 ## 参考资料
 
 ## 相关实体
-- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/989-anthropic.html)
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](ch01/849-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
-- [Thehackernews Fake Openai Privacy Filter](ch01/390-openai.html)
-- [Openai Buys Ai Consultancy Enterprises](ch01/390-openai.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](ch01/1004-anthropic.html)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](ch01/862-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
+- [Thehackernews Fake Openai Privacy Filter](ch01/391-openai.html)
+- [Openai Buys Ai Consultancy Enterprises](ch01/391-openai.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/037-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md)
 

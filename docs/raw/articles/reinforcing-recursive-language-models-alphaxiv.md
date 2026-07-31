@@ -9,7 +9,7 @@ ingested: 2026-05-16
 review_stars: 3
 created: 2026-05-14
 updated: 2026-05-14
-type: source
+type: raw-article
 tags: [rlm, reinforcement-learning, language-models, alphaxiv]
 sha256: 6d698aa7d8a9
 ---

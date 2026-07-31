@@ -1,6 +1,6 @@
 ---
 title: "How Amazon Bedrock catches AI-generated phishing"
-type: raw
+type: raw-article
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/how-amazon-bedrock-catches-ai-generated-phishing
 ingested: 2026-07-03

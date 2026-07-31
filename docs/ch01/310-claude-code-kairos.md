@@ -35,13 +35,12 @@ KAIROS 的代价主要有四类：
 2. 成本模型会变差——tick + sleep 本质上是用更多调用换取持续在线行为
 3. 安全与信任门槛更高——trusted directory 检查、KAIROS gate 是产品级放行逻辑
 4. 产品承诺和实现闭环还没完全对齐——主入口和核心状态闭环仍有明显缺口
-当前仓库成熟度评估： See also [Claude Code Architecture](../ch03/078-claude-code.html)
+当前仓库成熟度评估： See also [Claude Code Architecture](../ch03/077-claude-code.html)
 
 - 产品意图非常清楚：方向一致，不是东一块西一块拼起来的
 - 框架布线已经做了很多：工具层、提示词层、bridge 层、memory prompt 分叉、channel notification
 - 关键外围能力有真实实现：Bridge perpetual session、频道消息接入、Brief 规则、daily-log memory prompt
 - 主入口和核心状态闭环仍有明显缺口：assistant 主模块、gate、session discovery、proactive 状态、session transcript 等地方还是 stub
-
 
 ## 深度分析
 **KAIROS 的本质是从「工具」到「中枢」的定位跃迁**
@@ -56,48 +55,6 @@ Bridge 的数据流设计是清晰的：远端入口 → bridge 拉取工作 →
 当前仓库状态：产品意图一致、框架布线完整、外围能力有真实实现，但 assistant 主模块、gate、session discovery、proactive 状态、session transcript 等核心环节还是 stub。这是一个「半成品平台」状态——能展示局部能力，但未形成完整闭环。对外可以宣传方向，对内要知道哪些地方还没通。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 **1. 评估 Agent 系统时，看运行模型而非功能清单**
 KAIROS 的价值不是数它有多少个工具开关，而是看它从「同步问答」到「常驻代理」的运行模型转变是否彻底。评估任何 Agent 系统，第一问应该是：它的生命周期是短命的还是持续的？第二问：外部事件能否接入它的主循环？这两个问题比功能列表更能判断系统本质。
 **2. Brief 是工程问题，不是 UI 问题**

@@ -2,7 +2,7 @@
 title: "全球医疗榜第一 中国AI杀疯了 医疗AI迈入Harness时代 新智元"
 created: 2026-05-07
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 7e9af69a29016e97f1db695a98da3f9c5e79539d5af130dd00b20d7c41eb4ee8
 ---

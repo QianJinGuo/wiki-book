@@ -4,20 +4,6 @@
 
 > 📊 Level ⭐ | 9.5KB | `entities/cat-wu-claude-code-pm.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cat Wu Anthropic Claude"))
-    Claude Code三产品选型
-    与本文相关
-    使命驱动 vs 流程驱动 Anthropic 的双重护城河
-    产品品味与角色融合 PM 职能的范式转移
-    自动化原则 95 没自动化
-    Evals 被低估的产品工具
-```
-
 ## 核心洞察
 | 话题 | 洞察 |
 |------|------|
@@ -29,69 +15,34 @@ mindmap
 | Anthropic成功 | 使命对齐+专注，使命筛子过滤一切分散注意力的方向 |
 
 ## Claude Code三产品选型
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - **CLI**：最新功能+多任务并行
 - **Desktop**：前端+图形化+不熟悉终端
 - **Cowork**：非代码产出（文档/邮件/PPT/Slack）
 
 ## 与本文相关
-- [Claude Code Agent Engineering](ch03/070-claude-code-agent.html) — Claude Code工程设计
+- [Claude Code Agent Engineering](ch03/069-claude-code-agent.html) — Claude Code工程设计
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html) — Claude Code Prompt/Harness分析
 - [Hermes Agent Deep Dive](ch03/096-hermes-agent.html) — Anthropic的Self-Evolution对照
 -  — 详细访谈内容（raw）
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/078-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/002-obsidian-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/077-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/076-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/089-claude-code-1.html)
-- [两万字详解Claude Code源码核心机制](ch03/078-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/311-claude-code-subagent.html)
+- [两万字详解Claude Code源码核心机制](ch03/077-claude-code.html)
+- [Claude Code Subagent 上下文卫生](../ch04/313-claude-code-subagent.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
-- [Claude Opus 4.7 发布分析](../ch01/349-claude-opus-4-7.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/298-ai-agent.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/478-anthropic-ai.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/078-claude-code.html)
+- [Claude Opus 4.7 发布分析](../ch01/350-claude-opus-4-7.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/030-ai-agent.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/484-anthropic-ai.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/078-claude-code.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/077-claude-code.html)
 - [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/217-anthropic-prompt-caching-claude-code.html)
 
 ## 深度分析

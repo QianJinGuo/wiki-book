@@ -6,26 +6,6 @@
 
 [Claude Code Prompt Source Analysis Fanone](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-prompt-source-analysis-fanone.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("图解 Claude Code 源码解析 ｜Prompt 提示词模块"))
-    六大 Prompt 模块概览
-    Core System Prompt 静态动态分离
-      优先级策略树 buildEffectiveSystemPrompt
-    Tool Prompts 自然语言行为协议
-    Skill Prompts 渐进式加载
-      Skill 的结构 以 claude-api skill 为例
-      Token 优化策略
-      Skill Prompt 标准格式
-    Reference Documentation
-    Included Documentation
-    When to Use WebFetch
-    Common Pitfalls
-```
-
 ## 六大 Prompt 模块概览
 Claude Code 的提示词体系分为六大模块：
 | 模块 | 职责 |
@@ -38,41 +18,6 @@ Claude Code 的提示词体系分为六大模块：
 | Memory Prompts | 存储内容、存储方式 |
 
 ## Core System Prompt：静态/动态分离
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 整个系统提示词由**静态规则**和**动态 dynamicSections** 组成：
 
 - **静态规则**：做缓存（不变的部分反复使用）
@@ -212,8 +157,8 @@ coordinator/worker/verifier/planner 四种 Agent 角色通过强角色边界 SOP
 - [Anthropic Prompt Caching Claude Code Agihunt](../ch01/217-anthropic-prompt-caching-claude-code.html)
 - [Anthropic Prompt Caching Claude Code](../ch01/217-anthropic-prompt-caching-claude-code.html)
 - [Claude Code Prompt Source Analysis](ch09/061-claude-code-prompt.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
 
 ---
 

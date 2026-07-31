@@ -12,23 +12,6 @@
 
 论文：[arxiv.org/abs/2606.17453](https://arxiv.org/abs/2606.17453) | 数据及代码：6 月底开源
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MapSatisfyBench"))
-    核心创新
-      评测哲学 不标正确答案 标影响用户接受度的因素
-      隐式决策因素挖掘 还原-识别-过滤三步法
-      满意度影响量化 长期偏好 即时调制
-    关键发现 12 模型实测
-      发现一 能完成任务 但猜不准你
-      发现二 缺乏主动获取可用证据的能力
-      发现三 思考模式能补课 但补不到满分
-    系统设计亮点
-```
-
 ## 核心创新
 
 ### 评测哲学：不标"正确答案"，标"影响用户接受度的因素"
@@ -84,39 +67,6 @@ mindmap
 
 ## 关键发现（12 模型实测）
 
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
-
 基于 React Agent 框架，评估 GPT 系列、Claude 系列、Gemini 系列、DeepSeek 系列、Qwen 系列共 12 个主流大模型。
 
 ### 发现一：能完成任务，但猜不准你
@@ -147,7 +97,7 @@ graph TB
 
 ## 与已有实体的关系
 
-- 与 [高德 SDD/Harness 体系](../ch05/111-ai-coding.html) 同源（高德技术团队），但聚焦评测而非编码
+- 与 [高德 SDD/Harness 体系](../ch05/112-ai-coding.html) 同源（高德技术团队），但聚焦评测而非编码
 - 与 [高德 Uplift 模型迭代 Agent](../ch05/058-agent-harness.html) 同源（高德 AI 团队），但聚焦地图交互而非营销算法
 - "隐式决策因素"概念与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 中"意图恢复"问题呼应——Agent 不应仅执行显式指令，还需主动推断未言明的约束
 - AR = ECR × IISR 的"乘法衰减"设计与 [Agent 可靠性](../ch03/035-agent.html) 的"单点失败传播"模式一致

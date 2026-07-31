@@ -2,7 +2,7 @@
 title: "使用 Amazon Bedrock AgentCore 构建企业级 MCP 服务器：四种架构模式的实践指南"
 created: 2026-07-29
 updated: 2026-07-29
-type: entity
+type: raw-article
 tags: [aws, bedrock, agentcore, mcp, architecture, enterprise]
 source_url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-build-enterprise-mcp
 source: rss

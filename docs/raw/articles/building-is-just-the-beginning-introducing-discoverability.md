@@ -1,7 +1,7 @@
 ---
 
 title: "Building is just the beginning: Introducing Discoverability | Lovable"
-type: article
+type: raw-article
 source: newsletter
 source_url: https://lovable.dev/blog/building-is-just-the-beginning-introducing-discoverability
 tags: [lovable]

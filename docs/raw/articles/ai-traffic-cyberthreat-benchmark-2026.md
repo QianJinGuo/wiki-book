@@ -7,7 +7,7 @@ publish_time: "2026-06-02"
 ingested: "2026-06-02"
 sha256: "92e24665cc98"
 tags: [security, ai, cyberthreat, benchmark]
-type: article
+type: raw-article
 ---
 
 # The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security

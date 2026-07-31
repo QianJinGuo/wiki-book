@@ -6,7 +6,7 @@ author: linkxzhou（周末程序猿）
 ingested: 2026-05-18
 sha256: b84535bb2ddaf82b6a7c4ba1a3436f9fd22b8dc183d38666cf2de5ceffdcf20c
 tags: [agent, architecture, control-flow, reflection, react, planning, pev, multi-agent, blackboard, ensemble, memory, tot, dry-run, metacognitive, self-improve, cellular-automata, agno]
-type: article
+type: raw-article
 ---
 用 agno 框架重写 17 种 Agent 控制流的完整演进指南。
 核心论点：Agent architecture 的本质不是 prompt engineering，而是控制流设计。17 次系统升级拆解为：上一个架构为什么不够、下一个架构多了什么控制能力、复杂度从哪里开始失控。

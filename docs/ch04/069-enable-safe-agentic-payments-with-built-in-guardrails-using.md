@@ -6,30 +6,6 @@
 
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Enable safe agentic payments with"))
-    The challenge Safety risks in
-      Runaway spend
-      Lack of end user consent and
-      Compromise of developer keys and
-    Using AgentCore services and
-      Payment limits and policy for
-      User control funding and delegation
-      AgentCore Identity and Secrets
-    About the authors
-      Joshua Smith
-      Guy Bachar
-    基础设施层强制执行 比模型层更可靠的安全范式
-    四层身份安全模型 纵深防御的完整实践
-    PCI 合规范围极小化 架构设计而非政策声明
-    控制平面与数据平面分离 职责分离原则在云原生支付中的落地
-    初始预算从严 逐步放宽
-```
-
 ## The challenge: Safety risks in agentic payments
 
 Several key risks shape how a payments capability for agents has to be designed.
@@ -57,37 +33,6 @@ The end user’s card number, card verification value (CVV), and other personal 
 When something goes wrong, such as an unexpected charge, a denied payment, or a security or finance team asking what happened, there must be a complete, reliable record of what the agent did, on whose behalf, against which limits, and to which merchant. That record must be produced automatically. Relying on agent code to log its own actions isn’t enough.
 
 ## Using AgentCore services and controls to address these risks
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 AgentCore payments integrates with the rest of Amazon Bedrock AgentCore to address these challenges.
 
@@ -227,11 +172,11 @@ Policy in AgentCore（基于 Cedar 引擎）决定"谁可以调用哪个付费�
 AgentCore Observability 暴露了所有 ProcessPayment 调用的结果（成功、预算耗尽、钱包层失败），开发者应据此配置专项监控：支付错误率突增、单个会话支出速度异常、凭证过期频率等。这些指标应向财务和安全团队同步，而不仅仅由技术团队内部消化——这是因为 agentic 支付的异常往往既是技术事件也是财务事件。
 
 ## 相关实体
-- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/298-ai-agent.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/030-ai-agent.html)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/295-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/566-amazon-bedrock-agentcore.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/281-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/279-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)

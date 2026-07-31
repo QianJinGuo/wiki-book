@@ -1,6 +1,6 @@
 ---
 title: Inngest - AI and backend workflows, orchestrated at any scale
-type: raw
+type: raw-article
 tags: [inngest]
 source: newsletter
 source_url: https://www.inngest.com/

@@ -2,29 +2,13 @@
 
 ## Ch05.007 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 
-> 📊 Level ⭐⭐ | 27.2KB | `entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md`
+> 📊 Level ⭐⭐ | 27.3KB | `entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md`
 
 # 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
 
 > 来源：code秘密花园 ConardLi。本文是 2026 年 Harness Engineering 中文科普里引用最广的一篇 — 同一模型、同一 Prompt，放在不同 Harness 里效果完全不同，决定差距的不是模型参数，而是模型外面那套运行控制系统。本文系统梳理「Prompt → Context → Harness」三次重心迁移，以及 Harness 的六层构成，最后给出 OpenAI/Anthropic 在真实产品中的工程实践。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一文带你弄懂 AI 圈爆火的新概念 Harness"))
-    三次重心迁移
-    Harness 的三层语义
-    Harness 的六层构成
-    三家头部公司的实践
-    为什么同一个模型 不同 Harness 效果天差地别
-    「渐进式披露」作为通用原则
-    「评估与生产分离」是工业级 Harness 的标志
-    「修复方案不是更努力 是补结构性能力」
-```
 
 ## 摘要
 
@@ -33,37 +17,6 @@ ConardLi 在文章开篇讲了一个故事：朋友团队花了几个月调 Agen
 Harness Engineering 的核心命题由此而来：**当模型从「回答问题」走向「执行任务」，系统不能只负责喂信息，还必须负责驾驭过程**。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 1. 三次重心迁移
 
@@ -341,10 +294,10 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 ## 相关实体
 
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent Harness Context Management Working Set](ch05/058-agent-harness.html)
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
 - [Agent Harness Architecture](ch05/058-agent-harness.html)

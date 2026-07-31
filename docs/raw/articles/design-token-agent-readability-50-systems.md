@@ -3,7 +3,7 @@ title: "50 design token files, one problem: your agents can't read the meaning"
 source_url: "https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem"
 ingested: "2026-06-27"
 sha256: "9a5a84ad3e21b87c"
-type: article
+type: raw-article
 tags: [design-token, design-system, agent, ai-agent, interoperability]
 ---
 

@@ -7,7 +7,7 @@ publish_date: 2026-07-02
 created: 2026-07-05
 ingested: 2026-07-05
 tags: [sdd, spec-driven-development, harness-engineering, lattice, ai-coding, verification, context-engineering, loop, drift-check, wechat]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

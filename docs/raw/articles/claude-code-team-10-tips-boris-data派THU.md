@@ -2,7 +2,7 @@
 title: "Claude Code创始人Boris团队10个使用技巧"
 created: 2026-05-28
 updated: 2026-05-28
-type: raw
+type: raw-article
 tags: [claude-code, boris, worktree, plan-mode, claude-md, skills, subagents, terminal, bq-sql, learning]
 sources:
   - https://mp.weixin.qq.com/s/y57VFfi5Tol_c5ouSuyM3Q

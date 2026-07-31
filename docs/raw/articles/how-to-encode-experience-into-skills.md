@@ -2,7 +2,7 @@
 title: "如何把经验装到Skills"
 source_url: "https://mp.weixin.qq.com/s/GIpqXfAT8ESR7c50yctpRQ"
 ingested: 2026-04-30
-type: raw
+type: raw-article
 tags: [agent-skill, skill-writing, case-study, saas, product-management]
 review_value: 7
 review_confidence: 6

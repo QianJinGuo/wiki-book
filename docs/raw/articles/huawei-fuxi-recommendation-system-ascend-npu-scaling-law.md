@@ -4,7 +4,7 @@ title: "推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生�
 author: "郭威 / 华为基础大模型部主任工程师 / InfoQ"
 published: 2026-05-19
 created: 2026-05-19
-type: article
+type: raw-article
 platform: wechat
 tags:
   - Recommendation-System

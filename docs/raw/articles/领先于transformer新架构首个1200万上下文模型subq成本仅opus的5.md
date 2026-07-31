@@ -2,7 +2,7 @@
 title: "领先于transformer新架构首个1200万上下文模型subq成本仅opus的5"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: fd0826868073e1b5938f2b78a055a64b57284b44f478957a2c1e5b63cf188461
 ---

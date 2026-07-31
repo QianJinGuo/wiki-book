@@ -2,7 +2,7 @@
 title: "Session A"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 216c69932faada3331d016b16d51662c3844806afe4f5eb07659bef191948394
 ---

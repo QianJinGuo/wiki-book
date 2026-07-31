@@ -8,55 +8,11 @@
 
 > 阿里技术团队在数据研发领域通过知识工程 + Harness Engineering 实现 NL2SQL 多 Agent 工作流，涵盖 7 Agent 协同、幻觉防控、心跳自迭代等完整工程化方案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里数据研发 Harness Engineering NL2SQL"))
-    数据研发领域特有的挑战
-    DSL 作为语义约束层
-    Harness vs CICD Pipeline 的核心区别
-    以 Agent 养 Agent 的自我迭代闭环
-    核心增量
-```
-
 ## 摘要
 
 阿里技术团队在数据研发领域的 AI 化实践中，构建了一套从「自然语言 → DSL → SQL」的全链路多 Agent 工作流。核心思路是将数据研发专家的碎片化知识转化为结构化知识体系（知识工程），再通过 Harness Engineering 的工作流编排、Gate 审批、幻觉防控和心跳自迭代机制，让 AI 稳定可靠地完成数据研发任务。最终愿景是从「只做选择，不做配置」——数研同学从写代码的人转变为做设计的人。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 - **NL2DSL2SQL 路线**：自然语言 → 标准化的指标-维度语义（DSL）→ SQL。语义层解决自然语言中缺少关键信息的问题，是准确度的核心保障。
 - **7 Agent 多 Agent 工作流**：顺序协作 + 反馈循环组合。Agent 设计包括老架（需求分析）→ 小需（SPEC）→ 老架审核 → 小语（资产盘点）→ 老架（技术方案）→ ... 关键节点设人工 Gate 审批，「AI 做执行，人做决策」。

@@ -1,6 +1,6 @@
 ---
 title: Google Debuts Gemini-Focused Updates at I/O 2026
-type: raw
+type: raw-article
 tags: [newsletter]
 source: newsletter
 source_url: https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6

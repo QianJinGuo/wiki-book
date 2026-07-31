@@ -4,7 +4,7 @@ title: "拆解 Hermes Agent 的记忆系统：一个生产级 AI 记忆是怎么
 author: "VibeCoder"
 published: 2026-04-18
 created: 2026-05-19
-type: article
+type: raw-article
 platform: wechat
 tags:
   - Hermes-Agent

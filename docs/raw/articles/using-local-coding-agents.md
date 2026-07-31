@@ -2,7 +2,7 @@
 title: "Using Local Coding Agents"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: ad8fc386b3c4d322bdcd1e9356b887d20dc64e63ffcec76053f7d26c3742a428
 ---

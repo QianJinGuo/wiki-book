@@ -12,7 +12,6 @@
 
 7 - 8 月 NVIDIA 认证现场考试上海、北京考位现已开放预约，立即报名考取 NVIDIA 认证，验证专业能力，把握 AI 发展机遇。
 
-
 ## 核心观点
 
 > 本文通过article、nvidia视角，分析了的AI/ML技术动态。
@@ -70,39 +69,6 @@ Associate 初级
 **...
 
 ## 技术洞察
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 本文的核心技术价值在于：
 - 想从事 AI 基础架构、AI 工厂或 AI 网络相关工作，需要具备哪些核心技能？从 AI 数据中心设计、GPU 集群部署到高性能网络和 AI 运维管理，相关岗位对专业技能的要求不断提升。NVIDIA ...

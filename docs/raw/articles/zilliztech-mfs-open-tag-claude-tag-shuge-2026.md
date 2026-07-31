@@ -12,7 +12,7 @@ date: 2026-06-27
 created: 2026-06-29
 updated: 2026-06-29
 tags: [agent-harness, context-management, milvus, mfs, open-tag, claude-tag, vector-search, data-integration, zilliztech]
-type: article
+type: raw-article
 provenance_state: extracted
 sha256: 5ca5d359ee99d78226ff75c22936d1411ce5b5befa1a8903239ad589ef3a5cf8
 ---

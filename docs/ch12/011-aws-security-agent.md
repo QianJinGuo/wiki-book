@@ -2,42 +2,7 @@
 
 ## Ch12.011 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
 
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
-> 📊 Level ⭐⭐ | 33.9KB | `entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md`
+> 📊 Level ⭐⭐ | 34.0KB | `entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md`
 
 # 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
 source: rss
@@ -48,37 +13,6 @@ source_published: 2026-05-27T08:26:50Z
 ---
 
 # 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("飞来汇借助 AWS Security Agent"))
-    飞来汇借助 AWS Security Agent
-    一 引言
-    二 跨境支付行业的安全挑战
-      强监管与多地合规要求
-      业务逻辑漏洞远比通用漏洞更致命
-      渗透测试节奏跟不上发版节奏
-    三 AWS Security Agent 简介
-      核心能力一览
-      多智能体协作架构
-      与开发流程的原生集成
-    四 飞来汇的 Security Agent 解决方案
-      整体架构
-      增量代码扫描 让安全反馈与 Code Review 同节拍
-      按需渗透测试 把周级别压缩到小时级别
-    五 飞来汇采用 Security Agent 的收益
-      渗透测试效率 从周级到小时级
-      增量扫描近乎实时 安全真正左移
-      能发现越权与业务逻辑漏洞 弥补传统工具盲区
-    六 落地最佳实践
-      三类扫描的使用频率建议
-      把业务上下文喂给 Agent 效果会大幅提升
-      与人工红队协同 而非替代
-    七 总结与展望
-```
 
 ## 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
 
@@ -418,9 +352,9 @@ AWS Security Agent 的 Cross-Account VPC 能力解决了金融科技公司长期
 ## 相关实体
 - [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](ch12/003-token.html)
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/033-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/094-ai.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/095-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/295-amazon-bedrock.html)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/222-amazon-quick.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/224-amazon-quick.html)
 
 ---
 

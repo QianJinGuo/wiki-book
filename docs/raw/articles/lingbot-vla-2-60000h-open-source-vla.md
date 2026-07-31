@@ -5,7 +5,7 @@ source_site: "量子位"
 author: "金磊"
 ingested: "2026-07-08"
 sha256: "b4265ee5c733e6860de8d393ca10629dc9b811a4f240ac98b6bbf6828c78dad8"
-type: raw
+type: raw-article
 tags:
   - vla
   - embodied-ai

@@ -2,36 +2,6 @@
 
 ## Ch05.005 Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 > 📊 Level ⭐⭐ | 31.1KB | `entities/harness-engineering-paradigm-comprehensive-2026.md`
 
 # Harness Engineering 综合论述：为什么 2026 年真正重要的是它
@@ -39,28 +9,6 @@ graph TB
 2026 年是 Harness Engineering 概念从「Claude Code 内部实践」走向「全行业共识」的关键一年。Rahul Patil（Google）和 AI 技术立文分别在 5-6 月发布了两篇系统化论述，把 Harness Engineering 从「Anthropic 一家之言」推到了「2026 必备工程范式」的位置。 本文综合两文，结合 [Agent Harness 架构](ch05/058-agent-harness.html) 给出 2026 视角下的 Harness Engineering 完整图景。
 
 ---
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 综合论述 为什么 2026"))
-    Harness Engineering 是什么
-    与传统软件工程的 4 个核心区别
-      概率性 vs 确定性
-      工具设计是核心竞争力
-      Verifier 决定上线
-    年的关键演进
-    Harness 工程的 4 层架构
-    现实案例
-      Claude Code 的 Harness
-      OpenAI Agents SDK
-      AWS AgentCore
-    局限与反对声音
-    与相邻概念的区分
-    洞察 1 Harness Engineering
-```
 
 ## Harness Engineering 是什么
 
@@ -163,7 +111,7 @@ Karpathy 的「Software 3.0」类比在 2026 年已经不只是隐喻，而是�
 
 ### 洞察 4：多层 Verifier 架构的必然性
 
-「一个 LLM 审自己写的代码」在 2026 年已经被彻底证伪。Rahul 提出的「L1–L4 verifier 分层」不是过度工程，而是**概率性系统的必然要求**——每个 LLM 都有自己的能力边界和盲点，多层 verifier 的核心价值在于**用不同能力的 model 交叉验证不同维度的问题**。L1 的单元测试检查函数正确性，L2 的 LLM-as-judge 检查语义质量，L3 的静态分析检查安全风格，L4 的人类 gate 守住不可逆决策。只有这种分层才能应对 agent 系统的多维度质量挑战。 [Claude Code 核心架构](../ch03/078-claude-code.html) 的 review mode 迭代路径是这个分层理念的最佳例证。
+「一个 LLM 审自己写的代码」在 2026 年已经被彻底证伪。Rahul 提出的「L1–L4 verifier 分层」不是过度工程，而是**概率性系统的必然要求**——每个 LLM 都有自己的能力边界和盲点，多层 verifier 的核心价值在于**用不同能力的 model 交叉验证不同维度的问题**。L1 的单元测试检查函数正确性，L2 的 LLM-as-judge 检查语义质量，L3 的静态分析检查安全风格，L4 的人类 gate 守住不可逆决策。只有这种分层才能应对 agent 系统的多维度质量挑战。 [Claude Code 核心架构](../ch03/077-claude-code.html) 的 review mode 迭代路径是这个分层理念的最佳例证。
 
 ### 洞察 5：Context 稀缺性催生的「记忆分层」工程哲学
 
@@ -396,7 +344,7 @@ iterative-retrieval
 ## 相关实体
 
 - [loop engineering: 把反馈循环放进工程现场](ch05/004-loop-engineering.html)
-- [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](ch05/090-harness-skill.html)
+- [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](ch05/091-harness-skill.html)
 → [第 1 篇原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-2026-rahul-rauhul.md) · [第 2 篇原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-everything-2026-ai-tech-article.md) · [第 3 篇原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ecc-harness-os-everything-claude-code-vibecoder-2026-06-16.md) · [第 4 篇原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-wukong-ai-recruitment-dingtalk.md)​
 
 ## 第 4 来源：钉钉悟空 AI 招聘 Agent 实战（v×c=64）

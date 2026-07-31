@@ -5,7 +5,7 @@ author: "深思圈 · 深思SenseAI"
 feed_name: "深思圈"
 published: 2026-05-26
 created: 2026-05-26
-type: raw
+type: raw-article
 tags: [agent, ai-native, startup, harness, context-engineering, eval, cyber-fund]
 sha256: 6be1d282bce63e9d9d3ac7ffa8518189f4bf140166142383aab66b418126b222
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Unlocking the Cloudflare app ecosystem with OAuth for all"
 source_url: "https://blog.cloudflare.com/oauth-for-all/"
-type: article
+type: raw-article
 created: 2026-06-26
 updated: 2026-06-26
 sha256: 12e6475d37b5a4aeb6a4d698f9f6ca284ee812ae8ea1c001296af2a7a250fa1d

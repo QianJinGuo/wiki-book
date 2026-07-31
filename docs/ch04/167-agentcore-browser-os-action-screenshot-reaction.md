@@ -4,60 +4,10 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentCore Browser OS级操作"))
-    三个关键洞察
-      视觉反馈驱动的Agent循环
-      8个原子操作的粒度设计
-      Browser作为Agent的感知-执行界面
-    OS层与Web层的能力边界
-    Action-Screenshot-Reaction的工程意义
-    个原子操作的分类逻辑
-    会话与权限管理
-    何时使用OS Level Actions而非CDPPlaywright
-    实现打印对话框自动关闭
-    坐标映射与viewport设置
-```
-
 ## 核心内容
 Amazon Bedrock AgentCore引入OS-level Actions，允许Agent直接操控GUI界面——通过Action-Screenshot-Reaction闭环实现浏览器自动化。8个原子操作覆盖鼠标、键盘、截图等OS层交互，Agent通过视觉反馈（截图）感知环境状态并决定下一步操作。
 
 ## 三个关键洞察
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 1. 视觉反馈驱动的Agent循环
 与API工具调用不同，OS-level Actions通过截图获取环境状态（像素级反馈），Agent据此决策——这是"视觉优先"（Vision-first）的Agent架构，类似于人类操作电脑的方式。
 
@@ -138,27 +88,27 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 *Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)*
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/272-aws-bedrock-agentcore.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/272-aws-bedrock-agentcore.html)
 - [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](../ch11/050-bedrock-agentcore.html)
-- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](ch04/561-amazon-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/235-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/235-openclaw.html)
+- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](ch04/566-amazon-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/237-openclaw.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/177-apache-doris-mcp-server-quick-suite-ai.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/237-openclaw.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/295-amazon-bedrock.html)
-- [OpenClaw多租户迁移: 背景与架构概览](../ch11/235-openclaw.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/561-amazon-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: 背景与架构概览](../ch11/237-openclaw.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/566-amazon-bedrock-agentcore.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/704-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/306-amazon-nova.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [AgentCore Managed Harness](ch04/689-agentcore-harness.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [AgentCore Managed Harness](ch04/690-agentcore-harness.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/300-bedrock.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/561-amazon-bedrock-agentcore.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/566-amazon-bedrock-agentcore.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

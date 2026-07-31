@@ -2,7 +2,7 @@
 title: "browserbc-human-trajectory-skill-distillation-quantumbit-2026"
 created: 2026-07-24
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 15eb510076abe49df1d20e4cfbcca0e84ebc54b3d0651d94fb220c6d8bb68d40
 ---

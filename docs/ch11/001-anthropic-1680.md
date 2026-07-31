@@ -10,61 +10,7 @@
 > Original Source: seb@hiiinternet X 上的硬核背景分析
 > Reporter: 机器之心编辑部
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 招人底牌 1680"))
-    核心反直觉判断
-    数据来源
-    大反直觉特征
-      特征 1 闪电式扩张 18 个月建成「超级战舰」
-      特征 2 「极度排斥」小白 更偏好「资深工程师」
-      特征 3 更偏好「基础设施」 而非「研究」
-    对行业的启示
-    战略含义
-```
-
 ## 核心反直觉判断
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 大众对头部 AI 大厂普遍存在一种"刻板印象"：一定由顶尖高校博士 + 各大前沿研究论文作者 + 算法天才组成。但**实际上不是**。Anthropic 这家被外界视为前沿 AI Lab 的公司，真正极度渴求并大规模雇佣的，似乎并不是理论派的「研究员」，而是有能力在产业界落地大规模生产系统的「**构建者**」。
 
@@ -184,10 +130,10 @@ graph TB
 3. **工程经验中位 12.2 年** — 几乎不招新人，应届生基本不存在；这是"拿来即用"的人才战略
 4. **Google 而非 OpenAI/DeepMind 是最大人才源** — 颠覆业界"AI 实验室互相挖研究员"叙事
 5. **MoTS 去科层化** — 用单一职级消除办公室政治与官僚作风；与[Harness Engineering](../ch05/058-agent-harness.html)"减少人工翻译/人工兜底"的组织哲学一致
-6. **唯一新人入口靠竞赛/fellowship** — IOI 银牌 + Codeforces 2900+ 或对齐 fellowship；与[Anthropic AI 原生创业手册](../ch04/478-anthropic-ai.html)的人才理念互补
+6. **唯一新人入口靠竞赛/fellowship** — IOI 银牌 + Codeforces 2900+ 或对齐 fellowship；与[Anthropic AI 原生创业手册](../ch04/484-anthropic-ai.html)的人才理念互补
 
 ## 相关实体
-- [Anthropic AI 原生创业手册](../ch04/478-anthropic-ai.html)（同公司同主题的人才战略另一视角）
+- [Anthropic AI 原生创业手册](../ch04/484-anthropic-ai.html)（同公司同主题的人才战略另一视角）
 - [Claude Code 招聘工程师](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)（不同主题：用 Claude Code 辅助招聘 vs 本文 Anthropic 招什么样的人）
 - [Harness Engineering 综述](../ch05/120-harness-engineering.html)（相关：构建大规模生产系统的工程能力）
 - [Harness 架构](../ch05/058-agent-harness.html)（相关：Anthropic 40% 基础设施背景与 Harness 实践的组织基础）

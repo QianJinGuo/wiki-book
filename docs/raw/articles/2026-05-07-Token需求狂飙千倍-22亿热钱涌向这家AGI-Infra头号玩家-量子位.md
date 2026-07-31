@@ -2,7 +2,7 @@
 title: "Token需求狂飙千倍 22亿热钱涌向这家AGI Infra头号玩家 量子位"
 created: 2026-05-07
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 4407a0a4e3a034220cfea4b2102ab7d1b1850487d8d8fe05034e8ffe3b1f5833
 ---

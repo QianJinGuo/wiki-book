@@ -4,7 +4,7 @@ author: "binnnliu"
 source: "腾讯技术工程"
 source_url: "https://mp.weixin.qq.com/s/gCRMjGry2EmBmv1CFfCzVQ"
 created: 2026-05-25
-type: raw
+type: raw-article
 tags: [article]
 sha256: ab052a82d2eba312f55fcd6ebdcd776cf014762b334fa4dd1a5f1631f47ee943
 ---

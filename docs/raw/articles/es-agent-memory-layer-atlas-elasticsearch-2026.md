@@ -3,7 +3,7 @@ title: "ES 做 Agent 记忆层，召回率0.89"
 source_url: "https://mp.weixin.qq.com/s/fypjVWJBQg_MZV9OMfPpIA"
 created: 2026-07-01
 updated: 2026-07-01
-type: article
+type: raw-article
 tags: [wechat, agent, memory, elasticsearch, atlas, retrieval, hybrid-search]
 ingested: 2026-07-01
 sha256: 7496c753a04d44c10d428885f7393a5233961ee72cc88343ba2fa8287b11e3c6

@@ -6,7 +6,7 @@ feed: "Vibe编码"
 publish_time: "2026-06-11"
 ingested: 2026-06-11
 sha256: "03fb9b0ca3c87a8fef2b0a0bf9efd19f4ec68df53bbaa3e7805579ce10130679"
-type: raw
+type: raw-article
 tags: [anthropic, claude, managed-agents, sandbox, vault, schedule, agent-architecture, credential-management]
 review_value: 7
 review_confidence: 8

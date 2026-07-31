@@ -5,7 +5,7 @@ url: https://www.citriniresearch.com/p/semis-memo-supply-chain-inheritance
 title: "Semis Memo: Supply Chain Inheritance"
 sha256: 726dd31c98a096181da713473a493f9e2a85a0f5e36ab018650bd78f9652e760
 date: 2026-05-13
-type: raw
+type: raw-article
 review_value: 7
 review_confidence: 7
 review_recommendation: neutral

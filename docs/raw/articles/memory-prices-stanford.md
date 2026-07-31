@@ -2,7 +2,7 @@
 title: "Memory Prices"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 967d805555898b0cddd55a41e9b165bd671e758aa2ed7cd9cc71c9c0104622b8
 ---

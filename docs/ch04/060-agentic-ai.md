@@ -2,30 +2,11 @@
 
 ## Ch04.060 当 Agentic AI 重塑生产关系：智能体浪潮下的企业战略与行动框架
 
-> 📊 Level ⭐⭐ | 22.3KB | `entities/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md`
+> 📊 Level ⭐⭐ | 22.4KB | `entities/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md`
 
 # 当 Agentic AI 重塑生产关系：智能体浪潮下的企业战略与行动框架
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("当 Agentic AI 重塑生产关系 智能体浪潮下的企业战略与行动框架"))
-    核心叙事
-    三大独有贡献
-      生产力决定生产关系分析框架
-      AWS 五层最佳实践架构 AgentCore 9 模块映射
-      AIDLC 演进路径 Generative AI AI Agent
-    双维度定位矩阵
-    代理人困境实证 AI 影子采纳率
-    上线状态 链接
-    核心观点 生产力决定生产关系是 Agentic AI
-    技术要点 AIDLC 是 Agent 时代的软件开发范式转移
-    实践价值 MCP A2A 是接口标准化层面的 NM M 降维
-```
 
 ## 核心叙事
 
@@ -39,37 +20,6 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 文章在 AWS China Blog 系列中是**战略-框架**层（不是单一产品/案例），对标"四阶段工业革命 + 六维度技术变化"型战略盘点。
 
 ## 三大独有贡献
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 1. "生产力决定生产关系"分析框架
 
@@ -184,12 +134,12 @@ graph TB
 
 ## 相关实体
 
-- [Agentic AI 系统架构：Harness + Skill + MCP](../ch05/090-harness-skill.html) — Anthropic/agent 视角的架构总览
-- [AIDLC 范式迁移](../ch05/094-ai.html) — 数据工程视角 AIDLC（互补不重叠）
-- [AIDL 范式迁移：平台驱动数据工程](../ch05/094-ai.html) — 另一 AIDL 视角
+- [Agentic AI 系统架构：Harness + Skill + MCP](../ch05/091-harness-skill.html) — Anthropic/agent 视角的架构总览
+- [AIDLC 范式迁移](../ch05/095-ai.html) — 数据工程视角 AIDLC（互补不重叠）
+- [AIDL 范式迁移：平台驱动数据工程](../ch05/095-ai.html) — 另一 AIDL 视角
 - [Agent Harness 架构设计生产指南](../ch05/058-agent-harness.html) — Aksahy 实战视角
 - [Agent 工程原则与架构实践](../ch03/035-agent.html) — 通用 Agent 工程框架
-- [Strands + AgentCore 多区域 GPU 推理调度](ch04/237-agentic.html) — 实战案例
+- [Strands + AgentCore 多区域 GPU 推理调度](ch04/648-agentic.html) — 实战案例
 
 ## 上线状态 / 链接
 
@@ -210,15 +160,15 @@ graph TB
 
 ### 技术要点：AIDLC 是 Agent 时代的软件开发范式转移
 
-传统 SDLC 的三个核心假设在 Agentic AI 场景全部失效：(1) 确定性假设 → Agent 行为是统计性的，Evaluation 替代单元测试；(2) Guardrail 可选假设 → 自主决策系统必须有强制边界；(3) 部署即终点假设 → Agent 需要持续监控而非一次性验收。这个范式转移与 [Ai Engineering Platform Aidlc Migration](../ch05/094-ai.html) 中的描述一致，但本文从 Agent 应用层（而非数据工程层）验证了 AIDLC 的必要性。Generative AI → AI Agent → Agentic AI 的三阶段演进，每个阶段都对应更复杂的生命周期管理需求。
+传统 SDLC 的三个核心假设在 Agentic AI 场景全部失效：(1) 确定性假设 → Agent 行为是统计性的，Evaluation 替代单元测试；(2) Guardrail 可选假设 → 自主决策系统必须有强制边界；(3) 部署即终点假设 → Agent 需要持续监控而非一次性验收。这个范式转移与 [Ai Engineering Platform Aidlc Migration](../ch05/095-ai.html) 中的描述一致，但本文从 Agent 应用层（而非数据工程层）验证了 AIDLC 的必要性。Generative AI → AI Agent → Agentic AI 的三阶段演进，每个阶段都对应更复杂的生命周期管理需求。
 
 ### 实践价值：MCP + A2A 是接口标准化层面的 N×M → M 降维
 
-当企业有 N 个 Agent 和 M 个工具时，全连接复杂度是 N×M。MCP 协议（Agent↔工具）和 A2A 协议（Agent↔Agent）将复杂度降为 M（工具层）+ N（Agent 层）。这是 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html) 中描述的架构逻辑在接口标准化层面的落地。AWS Bedrock AgentCore 的 Gateway 模块正是这一标准化的基础设施承载。
+当企业有 N 个 Agent 和 M 个工具时，全连接复杂度是 N×M。MCP 协议（Agent↔工具）和 A2A 协议（Agent↔Agent）将复杂度降为 M（工具层）+ N（Agent 层）。这是 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/091-harness-skill.html) 中描述的架构逻辑在接口标准化层面的落地。AWS Bedrock AgentCore 的 Gateway 模块正是这一标准化的基础设施承载。
 
 ### 深层博弈："代理人困境"的微观机制与宏观代价
 
-130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/298-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
+130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/030-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
 
 ### 技术判断：框架无关 + 模型无关是战略灵活性而非技术偏好
 

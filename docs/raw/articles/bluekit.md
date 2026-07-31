@@ -1,7 +1,7 @@
 ---
 
 title: "Meet Bluekit: The AI-Powered All-in-One Phishing Kit"
-type: article
+type: raw-article
 source: newsletter
 source_url: https://www.varonis.com/blog/bluekit
 tags: [varonis, security]

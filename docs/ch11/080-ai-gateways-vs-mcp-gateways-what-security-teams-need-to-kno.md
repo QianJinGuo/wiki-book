@@ -6,54 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Gateways vs MCP Gateways What"))
-    一 架构定位的本质差异
-    二 「可见」不等于「可控」
-    三 会话级行为上下文是真正的安全缺口
-    四 规则引擎的局限性被低估
-    针对安全团队的建议
-    针对安全架构的长期规划
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 AI 网关（AI Gateway）与 MCP 网关（MCP Gateway）是两个被频繁混淆但本质不同的技术层。前者位于代理与大语言模型之间，专注推理路由、成本控制和可观测性；后者位于代理与 MCP 服务器（工具）之间，专注身份认证、工具注册和细粒度访问控制。两者都是 AI 安全架构的必要组件，但均无法独立构成完整的安全解决方案。
 
 ## 关键要点
@@ -105,10 +58,10 @@ Kong 等主流平台已经开始将 MCP 网关功能整合进现有 AI 网关产
 - **长期（18 个月+）**：规划向统一 AI 安全平台收敛，网关层负责基础设施治理，安全平台层负责行为检测和动态执法
 
 ## 关联阅读
-- [Securing AI Agents: How AWS and Cisco AI Defense Scale MCP and A2A](../ch04/298-ai-agent.html) — MCP 和 A2A 协议在企业级部署中的规模实践
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具投毒作为企业代理安全的核心缺陷
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox 的 AI 代理安全测试框架
-- [AgentCore Runtime 部署 Apache Doris MCP Server](ch11/175-apache-doris-mcp-server-quick-suite-ai.html) — MCP Server 部署实践
+- [Securing AI Agents: How AWS and Cisco AI Defense Scale MCP and A2A](../ch04/030-ai-agent.html) — MCP 和 A2A 协议在企业级部署中的规模实践
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具投毒作为企业代理安全的核心缺陷
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/441-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox 的 AI 代理安全测试框架
+- [AgentCore Runtime 部署 Apache Doris MCP Server](ch11/177-apache-doris-mcp-server-quick-suite-ai.html) — MCP Server 部署实践
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
 ---

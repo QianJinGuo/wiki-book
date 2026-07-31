@@ -7,7 +7,7 @@ platform: wechat
 published: "2026-05-30"
 ingested: "2026-05-30"
 sha256: "e26801024723ec11aa768070d5e3b382bc77b2b182cfacd62cd1d0445b267042"
-type: article
+type: raw-article
 tags:
   - agent
   - claude-code

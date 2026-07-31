@@ -2,7 +2,7 @@
 title: "Harness 实践 将任何文字编辑成精美的文章 code秘密花园"
 created: 2026-06-18
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 507c6b184a062872bfed176d76a53436d220dfc6d932f0eb97abb3e657ffd830
 ---

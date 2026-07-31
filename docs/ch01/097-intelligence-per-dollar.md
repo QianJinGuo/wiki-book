@@ -6,7 +6,6 @@
 
 # Intelligence Per Dollar
 
-
 ## 概要
 
 Published Time: 2026-06-03T00:00:00Z
@@ -44,44 +43,6 @@ Every layer in the stack now has to price the same way the customer thinks : per
 
 ## 深度分析
 
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
-
 - **双维度基准测试正在成为行业标准** — Microsoft 在模型发布卡片上新增"平均 token 用量"指标，标志着基准测试从单一性能维度转向"性能 + 成本"双维度评估。这一转变意味着模型评估范式的根本性变化：不再仅问"哪个模型最强"，而是同时问"哪个模型性价比最高"。
 
 - **补贴时代终结，效率竞争开启** — 文章指出 AI 补贴时代（token 价格人为压低）已结束，tokenmaxxing（通过超额 token 消耗换取基准测试高分）的策略正在失效。即使是最有价值的企业（Uber、Salesforce）也已感受到 AI 成本的压力，被迫限制使用量或冻结招聘。这标志着 AI 应用从"技术领先"向"经济理性"的转型。
@@ -105,7 +66,7 @@ graph TB
 - [Products Are Out Brains Are In](ch01/135-products-are-out-brains-are-in.html)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Offline Llm Energy Use Html](ch01/1274-llm.html)
+- [Offline Llm Energy Use Html](ch01/637-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tokens-per-result.md)
 

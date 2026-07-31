@@ -11,22 +11,6 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Impeccable 大规模自动化测试框架"))
-    它解决的问题
-    架构 四层叠加在 harness 之上
-    上下文门 init 强制先写 PRODUCTmd DESIGNmd
-    个命令的 5 阶段分工
-    检测器 41 条 CI 友好规则
-    Live 模式 浏览器源码双向协议
-    文档漂移
-    在 harness 栈中的位置
-```
-
 ## 它解决的问题
 AI 编码助手做前端时，代码能跑只是第一步——更麻烦的是页面会"一眼看出 AI 味"：
 - 紫蓝渐变
@@ -38,37 +22,6 @@ AI 编码助手做前端时，代码能跑只是第一步——更麻烦的是�
 这些单独看不一定错，叠在一起就很像模板。Impeccable 把"反 AI 模板审美"工程化。
 
 ## 架构：四层叠加在 harness 之上
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 层 | 路径 | 职责 |
 |---|---|---|
 | **L1 知识层** | `skill/SKILL.src.md` | 入口：setup + 通用设计规则 + provider 特定规则 + 23 命令表 + 路由规则 |
@@ -147,10 +100,10 @@ npx impeccable detect --json .
 - 底层 agent 负责执行，Impeccable 让执行过程更像"有设计系统约束的前端同事"
 
 ## 相关对照
-- [Agent Skill 编写指南](../ch04/269-agent-skill.html) —— 通用 skill 格式 + 渐进式披露
+- [Agent Skill 编写指南](../ch04/271-agent-skill.html) —— 通用 skill 格式 + 渐进式披露
 - [Agent Harness 架构](ch05/058-agent-harness.html) —— 7 层 harness 模型
-- [Agent Skills 综合调研](../ch04/397-agent-skills.html) —— skill 系统全景
-- [Skills Refiner 设计质量评估框架](../ch03/072-skills.html)
+- [Agent Skills 综合调研](../ch04/401-agent-skills.html) —— skill 系统全景
+- [Skills Refiner 设计质量评估框架](../ch03/071-skills.html)
 - [Agentic Design System 演化](../ch01/009-agentic-design-system-from-chatbot-to-orchestration.html)
 
 ## 关键启示（harness 设计层面）
@@ -204,10 +157,10 @@ npx impeccable detect --json .
 6. **设计 skill 应该搭配硬规则使用**：Anomaly 创始人推荐的组合是「2-3 个 design skill + 一组硬规则（颜色、字号、间距）」，两者互补而非替代
 
 ## 关联阅读
-- [Agent Skill 编写指南](../ch04/269-agent-skill.html) —— skill 格式规范与渐进式披露机制
-- [Karpathy Vibe Coding → Agentic Engineering](../ch04/237-agentic.html) —— Vibe Coding 原始定义与 Software 3.0 演化
-- [Claude Design Skill](../ch01/1150-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
-- [前端 Design Skills 全景对比](../ch01/719-skills-anthropic-openai-comparison-frontend-design.html) —— Anthropic vs OpenAI 设计 skill 生态比较
+- [Agent Skill 编写指南](../ch04/271-agent-skill.html) —— skill 格式规范与渐进式披露机制
+- [Karpathy Vibe Coding → Agentic Engineering](../ch04/648-agentic.html) —— Vibe Coding 原始定义与 Software 3.0 演化
+- [Claude Design Skill](../ch01/1143-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
+- [前端 Design Skills 全景对比](../ch01/735-skills-anthropic-openai-comparison-frontend-design.html) —— Anthropic vs OpenAI 设计 skill 生态比较
 
 ---
 

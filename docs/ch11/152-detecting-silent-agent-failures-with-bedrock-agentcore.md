@@ -12,50 +12,7 @@
 
 有技术深度的文章。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Detecting Silent Agent Failures"))
-    从基础设施可观测性到行为可观测性的范式跃迁
-    Trace 聚类的两层级架构
-    自治系统的可观测性枷锁
-    用户意图分析对 Agent 演进的价值
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 Amazon Bedrock AgentCore 优化推出的 Insights 功能填补了 AI Agent 生产环境可观测性的关键空白 —— 行为性静默故障。这类故障在基础设施层面没有报错，但导致业务逻辑执行错误（如订单未修改、库存误报、审批跳过）。Insights 通过 trace 聚类、根因分析和用户意图分析，将零散 trace 转化为可操作的故障模式排名，帮助开发者从被动排查转向主动预防。
 

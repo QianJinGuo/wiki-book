@@ -8,33 +8,6 @@
 
 本指南是基于天猫新品团队实践经验的全面AI辅助编码实战手册，从问题本质到解决方案，从理论框架到实战案例，系统性介绍如何让AI更好地完成大部分编码需求。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Coding Guide Tmall Deep Dive"))
-    AI生码的四大痛点
-    五大问题根因与解法
-      项目需求隐含信息过多
-      用户输入不精准 必要信息不足
-      任务复杂度高
-    核心方法论
-      最大化复用
-      文档先行
-      二八定律
-    全流程节点优化
-      前置准备
-      开发前
-      开发中 新建型需求
-    两类实战案例
-      需求驱动型 DO WHAT
-      工程主导型 HOW TO DO
-    出码准确率参考
-    本质洞察 AI编码的核心矛盾
-    五大痛点的深层关联
-```
-
 ## AI生码的四大痛点
 
 当前AI代码生成存在四个核心问题，按严重程度排列：
@@ -47,41 +20,6 @@ mindmap
 | **改不动** | 在某些迭代场景中，AI一直无法输出正确结果，在错误中不断循环，甚至还可能改坏其他部分 |
 
 ## 五大问题根因与解法
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. 项目/需求隐含信息过多
 
@@ -444,10 +382,10 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 
 ## 相关实体
 - [Karpathy Claude Md Rules](../ch01/237-claude-md.html)
-- [Ai Memory Architecture Deep Dive](../ch05/094-ai.html)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/111-ai-coding.html)
-- [Tmall Ai Coding Practice Team Knowledge Base Npm](../ch05/111-ai-coding.html)
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html)
+- [Ai Memory Architecture Deep Dive](../ch05/095-ai.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/112-ai-coding.html)
+- [Tmall Ai Coding Practice Team Knowledge Base Npm](../ch05/112-ai-coding.html)
+- [Pi Openclaw Coding Harness](../ch11/237-openclaw.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-coding-guide-tmall-deep-dive.md)

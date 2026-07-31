@@ -8,18 +8,6 @@
 
 OpenAI 为 Codex 上线 Record & Replay 功能：在 macOS 上演示一次 GUI workflow，Codex 把它编译成可复用的 Skill。不是屏幕录制，而是 **workflow capture**——具体操作被抽象为结构化步骤、可变输入和验收条件。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex Record Replay GUI 演示到可复用"))
-    技术链路 录制 转译 回放
-    生态定位
-    适用场景与边界
-    局限
-```
-
 ## 技术链路：录制 → 转译 → 回放
 
 **录制阶段**依赖 Computer Use（需要 macOS Screen Recording + Accessibility 权限）。Codex 观察完成流程所需的动作和窗口内容。
@@ -29,39 +17,6 @@ mindmap
 **回放阶段**，Codex 读取 Skill 并调用当前环境可用工具（Computer Use、browser actions、已安装插件）完成任务。准确说法：record once, compile to Skill, then execute with tools。
 
 ## 生态定位
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 Record & Replay 在 Codex 生态中的位置：
 
@@ -74,7 +29,7 @@ Record & Replay 在 Codex 生态中的位置：
 
 Record & Replay 是 **Skill 生成器**——降低 Skill 创作门槛，把散落在个人手里的操作经验变成可维护资产。
 
-与 [Agent Skill 写作指南](../ch04/269-agent-skill.html) 的关系：传统 Skill 写作要求人手动定义触发条件、输入拆分、步骤表达、失败处理；Record & Replay 提供了"先演示再生成草稿"的替代路径。
+与 [Agent Skill 写作指南](../ch04/271-agent-skill.html) 的关系：传统 Skill 写作要求人手动定义触发条件、输入拆分、步骤表达、失败处理；Record & Replay 提供了"先演示再生成草稿"的替代路径。
 
 ## 适用场景与边界
 

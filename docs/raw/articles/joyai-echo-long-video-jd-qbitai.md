@@ -5,7 +5,7 @@ title: "5分钟AI长视频不翻车！国产开源框架杀到全球第一梯队
 author: 梦瑶 闻乐
 publisher: 量子位 QbitAI
 date: 2026-06-07
-type: article
+type: raw-article
 ingested: 2026-06-07
 review_value: 8
 review_confidence: 8

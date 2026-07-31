@@ -2,7 +2,7 @@
 title: "TRAE SOLO移动端上线 手机也能干活了 随时随地Vibe Working 机器之心"
 created: 2026-05-06
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 11c8ba3b020f8859462f633e0d7ea6f5abb7c321435aa2af17f40a4741873866
 ---

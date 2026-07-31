@@ -2,7 +2,7 @@
 title: "数据级 Harness 视角：架构师 JiaGouX 解读 Anthropic 95% 数据分析 + 5 个反直觉边界"
 created: "2026-06-06"
 updated: "2026-06-06"
-type: raw
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/dLAWaUejq_FVdtyBWyo-RQ"
 source_name: "架构师 WeChat MP (JiaGouX)"
 author: "架构师 (JiaGouX) / 若飞"

@@ -5,7 +5,7 @@ mp: "淘天集团-物流技术团队"
 pub_date: "2026-06-12"
 ingested: "2026-06-12"
 sha256: "544998761b218aaefc8ae1afbddadb5d79399c3a635c72339d38ef2ca04402b0"
-type: source
+type: raw-article
 tags: ["agent-skill", "skill-authoring", "decision-tree", "progressive-disclosure", "eval", "self-review", "taobao-logistics"]
 ---
 

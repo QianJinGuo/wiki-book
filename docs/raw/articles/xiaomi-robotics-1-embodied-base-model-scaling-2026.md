@@ -5,7 +5,7 @@ ingested: 2026-07-23
 feed_name: 小米技术
 publish_date: 2026-07-16
 tags: [embodied-ai, robotics, xiaomi, scaling, robot-foundation-model, real-world-data]
-type: raw
+type: raw-article
 sha256: 36201530e1cdba14d139ee3c0231b7527df9909dcf74caf99abb20b739f70667
 ---
 

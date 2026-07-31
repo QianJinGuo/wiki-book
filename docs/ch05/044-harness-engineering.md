@@ -4,62 +4,12 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/harness-engineering-framework.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 概念框架"))
-    核心方程
-    Anthropic 实践
-      上下文焦虑 Compaction vs Reset
-      自评失真 Generator Evaluator 分离
-    OpenAI 实践
-      渐进式披露
-    LangChain 案例
-    第二来源 2026 Rahul 综述 学科正式确立版
-      学科确立时间线 90 天
-      种 Harness 工件 Rahul 框架
-      操作系统类比 Philipp Schmid
-```
-
 ## 核心方程
 
 - Agent = Model + Harness
 - Harness = Agent - Model = 除模型外的所有东西
 
 ## Anthropic 实践
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 上下文焦虑：Compaction vs Reset
 
@@ -194,11 +144,11 @@ OpenAI 的 AGENTS.md 从"巨册"压缩到 ~100 行目录页，配合后台"文�
 > **判断**: Rahul 综述不是新概念, 是对 Harness Engineering 在 2026 学科确立期的全景图 + 工业成本 + 演化规律的整合. 与 ConardLi 框架互补, 不重复. 5 种 artifact / 5 原则 / 3 阵营 / 衰减论全部是新增视角.
 
 ## 相关实体
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](ch05/058-agent-harness.html)
 - [Harness Engineering 第三代工程范式](ch05/120-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/298-ai-agent.html)
-- [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/030-ai-agent.html)
+- [Openclaw Prompt Context Harness](../ch11/237-openclaw.html)
 
 → [原文存档 (ConardLi)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-framework.md)
 → [原文存档 (Rahul 2026 综述)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-2026-rahul-rauhul.md)

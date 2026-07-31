@@ -1,6 +1,6 @@
 ---
 tags: [wechat, article, claude, openai]
-type: raw
+type: raw-article
 source: wechat
 url: https://mp.weixin.qq.com/s/YPSyVslLGn8OdT7AaknQMQ
 title: Anthropic最新论文：检测LLM内省意识的方法

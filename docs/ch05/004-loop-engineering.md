@@ -2,36 +2,6 @@
 
 ## Ch05.004 Loop Engineering: 把反馈循环放进工程现场
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 > 📊 Level ⭐⭐ | 32.2KB | `entities/loop-engineering-feedback-control-system.md`
 
 # Loop Engineering: 把反馈循环放进工程现场
@@ -39,29 +9,6 @@ graph TB
 2026 年 6 月，Anthropic Claude Code 创建者 Boris Cherny 和 OpenAI 「龙虾之父」Peter Steinberger 同时在公开场合提出一个新范式——**Loop Engineering**。核心命题：**开发者不再手动给编程 Agent 写提示词，而是设计一套循环机制，让这些循环去提示 Agent 并判断下一步**。 这个范式在 Claude Code 已落地的 `/loop` 命令、OpenAI 的 Codex `/goal`、Hermes Agent 的 cronjob 系统中已可看到雏形。本文综合 3 篇深度文章（InfoQ 报道、Peter 本人论述、若飞工程现场分析）还原 Loop Engineering 的完整图景。
 
 ---
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Loop Engineering 把反馈循环放进工程现场"))
-    范式核心 从 Prompt 到 Loop 的跃迁
-    范式细节
-      Loop 的五样必备 一条状态记忆
-      单 Agent 循环 vs Fleet 循环
-      反馈闭环 Loop 不是 cron
-    现实案例
-      Claude Code loop
-      OpenAI Codex goal
-      Hermes Agent cronjob
-    局限与反对声音
-      第 4 来源补强 Samuel McDonnell 泼冷水 视角
-    与相邻概念的区分
-    Loop Engineering 是 Prompt
-    人 Agent 循环的反转 控制流从外到内
-    本质是控制论 反馈回路比循环本身更重要
-```
 
 ## 范式核心：从 Prompt 到 Loop 的跃迁
 
@@ -209,7 +156,7 @@ Peter Steinberger 提出的成本结构揭示了一个反直觉事实：Loop Eng
 | 权限模型 | 无（全自动） | 7 种渐进模式 |
 | 上下文管理 | 无（每轮独立） | 5 层渐进压缩管线 |
 
-这个表印证了 [VILA-Lab 1.6% vs 98.4%](../ch03/078-claude-code.html) 的核心发现：**循环决策逻辑应该占代码总量的 < 10%，复杂度放在循环之外的基础设施里**。
+这个表印证了 [VILA-Lab 1.6% vs 98.4%](../ch03/077-claude-code.html) 的核心发现：**循环决策逻辑应该占代码总量的 < 10%，复杂度放在循环之外的基础设施里**。
 
 **5 个核心决策**（设计任何 Loop 前必须回答的问题）：
 
@@ -267,7 +214,7 @@ Peter Steinberger 提出的成本结构揭示了一个反直觉事实：Loop Eng
 - [Verifier Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)：Verifier-driven Development（"每个 AI 产出必须有 verifier"，与本文"verifier 封顶产出质量"互相印证）
 - [Ai R And D Bottleneck Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-r-and-d-bottleneck-shift.md)：AI R&D 瓶颈迁移（"当 verifier 的成本下降时，loop 才能规模化"，与本文"经济可行性取决于验证成本"同源）
 - [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)：Agent 自我改进循环（与本文"外循环 = 教训持久化"深度交叉）
-- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch05/111-ai-coding.html)：同日入库的 Comet 工程取舍深度文，含完整的 harness 工程取舍 + 9 平台 PreToolUse Hook 嵌套 Skill 触发规范
+- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](ch05/112-ai-coding.html)：同日入库的 Comet 工程取舍深度文，含完整的 harness 工程取舍 + 9 平台 PreToolUse Hook 嵌套 Skill 触发规范
 
 ## 相关实体
 

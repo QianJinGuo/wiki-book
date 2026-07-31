@@ -6,7 +6,7 @@ ingested: 2026-06-09
 sha256: pending
 author: OpenAI Cookbook (partner: SchemaFlow)
 tags: [agent, harness, openai, sql, eval, ratchet, pydantic, guardrails]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 9
 review_recommendation: strong

@@ -6,22 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/viktor-not-a-tool-a-hire.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Viktor Not a tool A hire"))
-    从「工具」到「员工」 AI 产品叙事的根本转移
-    多工具串联 Agent 架构的核心能力
-    持久记忆与学习曲线
-    使用场景分层 从初创公司到企业
-    采购评估 checklist
-    竞争对手对比要点
-    扩展路径
-    关联追踪
-```
-
 ## 核心要点
 - Viktor 是主打「AI 同事」定位的产品，而非传统 AI 助手或自动化工具
 - 核心差异化叙事：从「告诉你怎么做」到「替你做完」
@@ -32,44 +16,7 @@ mindmap
 
 ## 相关实体
 
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
-
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/094-ai.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/095-ai.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/223-rag.html)
 
 ## 深度分析

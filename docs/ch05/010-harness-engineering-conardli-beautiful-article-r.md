@@ -4,30 +4,6 @@
 
 > 📊 Level ⭐⭐ | 25.9KB | `entities/harness-engineering-comprehensive-guide-conardli.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 综合性指南"))
-    核心定义
-    三次工程重心的演进
-      Prompt Engineering 的本质
-      Context Engineering 的本质
-    Harness 的六层架构
-      第一层 上下文管理
-      第二层 工具系统
-      第三层 执行编排
-    头部公司实践
-      Anthropic 的实践
-      OpenAI 的实践
-      LangChain 的实践
-    关键结论
-    个 Phase 流程
-    Reacticle 组件协议 核心创新
-    Reacticle vs Skill 关系
-```
-
 ## 核心定义
 
 **Harness Engineering** 是 AI 工程领域的第三次重心迁移，专注于如何在真实执行过程中持续监督、约束、纠正和验收模型行为。
@@ -40,37 +16,6 @@ LangChain 工程师给出的典型定义：
 **核心公式理解**：Harness 是在 Agent 环境中除了模型外的所有东西，它决定了模型看到什么、能做什么、按什么规则做、做错了怎么纠偏，以及最后如何把能力稳定地交付出来。
 
 ## 三次工程重心的演进
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 AI 工程领域过去两年经历了三次重心迁移，层层递进而非替代：
 
@@ -230,7 +175,7 @@ AGENTS.md 只有 ~100 行充当"目录页"，指向仓库里的详细文档（AR
 
 ## 相关实体
 
-- [反向审计 prompt 范式 — 从 vb 50 行 codex 自我蒸馏到 5 行核心](../ch01/517-codex.html)
+- [反向审计 prompt 范式 — 从 vb 50 行 codex 自我蒸馏到 5 行核心](../ch01/520-codex.html)
 → [第 1 来源 ConardLi Harness 综合性指南原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
 → [第 2 来源 ConardLi Beautiful Article Skill 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/conardli-harness-practice-beautiful-article-reacticle-2026-06-18.md)
 
@@ -349,7 +294,7 @@ Phase 8  Delivery             ★Checkpoint 3 必须停 → 交付 article.html
 ### 与 wiki 既有内容的关系
 
 - **与 [Harness Engineering 实体](ch05/120-harness-engineering.html)（290 行 5 source merged）**：Harness 理论 + 5 制品 + 3 阵营 + 5 原则；本 ConardLi 实践 = Harness 理论的**工程实现**
-- **与 [古法程序员 spec 写作](../ch01/517-codex.html)（2026-05-25）**：古法程序员 = spec 写作的通用框架（rule/docs/skill 三类目录 + skill 三层 + gate 四态 + edge 三种）；Beautiful Article = skill 三层架构的**特化应用**（编排层 + 阶段层 Phase 0-8 + 原子层 component-policy/raw-policy）；Beautiful Article 的 gate = ConardLi 9 套 Checkpoint + 三视角终审
+- **与 [古法程序员 spec 写作](../ch01/520-codex.html)（2026-05-25）**：古法程序员 = spec 写作的通用框架（rule/docs/skill 三类目录 + skill 三层 + gate 四态 + edge 三种）；Beautiful Article = skill 三层架构的**特化应用**（编排层 + 阶段层 Phase 0-8 + 原子层 component-policy/raw-policy）；Beautiful Article 的 gate = ConardLi 9 套 Checkpoint + 三视角终审
 
 ---
 

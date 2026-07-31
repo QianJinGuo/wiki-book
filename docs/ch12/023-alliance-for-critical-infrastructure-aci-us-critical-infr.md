@@ -10,55 +10,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/818662.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Alliance for Critical"))
-    ACI 出现的政治背景 政府撤退的产业自组织
-    Polycrisis 是 ACI 唯一真正新的安全概念
-    ISACSCC 协作模型是 ACI 成功的关键约束
-    CIPAC 缺位的制度真空是 ACI 的最大风险
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 2026 年 2 月，JPMorgan Chase、Mastercard、AT&T、Berkshire Hathaway Energy 等公司联合发起 Alliance for Critical Infrastructure（ACI，关键基础设施联盟），把既有的三部门执行工作组（Tri-Sector Executive Working Group：能源、金融、电信）重组为可吸纳更多成员的非营利组织。联盟成立的直接背景是 Trump 政府对 CISA 的大幅裁员、关闭 Critical Infrastructure Partnership Advisory Council（CIPAC），并暗示可能关闭 FEMA——这导致基础设施运营商失去与联邦政府的协调通道。ACI 的核心战略是四支柱：① 跨部门依赖分析；② polycrisis（复合危机）联合响应；③ 私营部门对政府的运营支持（含扩大的信息共享）；④ 政策与监管建议。
 
@@ -112,20 +64,20 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 
 ## 相关实体
 
-- [Ai Agents Security Survey Attack Defense](../ch04/298-ai-agent.html)
+- [Ai Agents Security Survey Attack Defense](../ch04/030-ai-agent.html)
 - [Anthropic Llm Attck Navigator Cyber Operations](../ch04/166-anthropic-llm.html)
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.html)
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
-- [Aws Software Supply Chain Security Well Architected Best Practices](../ch05/094-ai.html)
+- [Aws Software Supply Chain Security Well Architected Best Practices](../ch05/095-ai.html)
 - [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/223-rag.html)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Ai Traffic Cyberthreat Benchmark 2026](../ch05/094-ai.html)
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/298-ai-agent.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/843-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch05/095-ai.html)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/036-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/030-ai-agent.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/856-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [820297](../ch01/913-20.html)
+- [820297](../ch01/926-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

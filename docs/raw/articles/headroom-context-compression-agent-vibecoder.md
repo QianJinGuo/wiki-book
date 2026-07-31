@@ -5,7 +5,7 @@ title: "Headroom 是怎么省上下文的"
 author: VibeCoder
 publisher: Vibe编码
 date: 2026-06-07
-type: article
+type: raw-article
 ingested: 2026-06-07
 review_value: 8
 review_confidence: 8

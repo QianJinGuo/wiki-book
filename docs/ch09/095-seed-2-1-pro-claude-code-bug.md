@@ -6,19 +6,7 @@
 
 # 我把Seed 2.1 Pro塞进Claude Code，让它修我自己产品的bug
 
-本文是一次极具启发性的实战记录：作者将字节跳动最新发布的 Seed 2.1 Pro 模型（开源，主打编程能力）与 [Claude Code](../ch03/070-claude-code-agent.html) 工具结合，让该模型直接修复自己产品中的真实 bug。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我把Seed 21 Pro塞进Claude Code"))
-    模型混用的工程路径与行业意义
-    Coding Agent 场景下的模型评估方法论
-    代码风格一致性的深层价值
-    视频理解在 Coding Agent 中的潜在应用
-```
+本文是一次极具启发性的实战记录：作者将字节跳动最新发布的 Seed 2.1 Pro 模型（开源，主打编程能力）与 [Claude Code](../ch03/069-claude-code-agent.html) 工具结合，让该模型直接修复自己产品中的真实 bug。
 
 ## 核心要点
 
@@ -29,41 +17,6 @@ mindmap
 - **视频理解与复刻**：除 coding 外，模型还通过了视频→网页的复刻测试，能从 10 秒录屏中还原页面布局、动态渐变、滚动动效等交互细节，与 Opus 4.8 水准接近
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 模型混用的工程路径与行业意义
 
@@ -109,9 +62,9 @@ Seed 2.1 Pro 接入 Claude Code 框架的过程展示了**模型即插即用（p
 
 ## 关联实体
 
-- [Claude Code Agent Engineering](../ch03/070-claude-code-agent.html)
-- [Coding Agent Quality Defense](../ch04/330-ai-coding-agent.html)
-- [Claude Code 记忆系统](../ch03/078-claude-code.html)
+- [Claude Code Agent Engineering](../ch03/069-claude-code-agent.html)
+- [Coding Agent Quality Defense](../ch04/333-ai-coding-agent.html)
+- [Claude Code 记忆系统](../ch03/077-claude-code.html)
 - [Harness Engineering](../ch05/120-harness-engineering.html)
 - [Claude Code Skills Guide](../ch07/035-claude-code-skills.html)
 

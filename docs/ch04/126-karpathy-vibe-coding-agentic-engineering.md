@@ -6,61 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
-    要点
-    Vibe Coding 与 Agentic Engineering
-    Software 30 的工程含义
-    可验证性决定自动化上限
-    幽灵隐喻对工程设计的影响
-    先建验证体系 再上 Agent
-    用任务可验证性作为引入 Agent 的决策标准
-    构建 Agent Control Plane
-```
-
 ## 核心洞察
 Vibe Coding 拉低下限，Agentic Engineering 解决真实交付问题；可验证性决定 Agent 自动化上限；上下文/工具/测试/运行环境成为 Software 3.0 的核心设计对象。
 
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Karpathy 在红杉 AI Ascent 2026 访谈中提出 Software 3.0 概念，认为 Vibe Coding 将软件创造门槛拉低，但 Agentic Engineering 才能解决"更快之后能否可靠交付"的问题。当 Agent 读上下文、改文件、调工具、跑测试、配服务时，它已走进软件工程链路。Vibe Coding 解决"更快做出来"，可靠交付是另一类问题。
 
 ## 要点
@@ -120,24 +69,24 @@ Karpathy 设想的 AI-native 面试是：给候选人一个大项目（如做个
 Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业观察的锚点：①前沿实验室在编程和数学之外往哪些领域注入 RL 数据——那里的能力可能突然冒出来；②Agent-first 基础设施有没有开始收敛——部署、auth、payments、DNS 等让 Karpathy 在 MenuGen 项目上最头疼的环节，是否出现"一句话给 Agent 就能跑"的标准化方案；③下一代模型有没有把审美和代码质量纳入 RL 目标——如果 Agent 写的代码不再让人"心脏病发作"，人在"品味"层守的口子就会变窄。这三个信号分别指向 Agent 能力边界的扩展速度、基础设施成熟度和人类判断力的相对价值变化。
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/237-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/648-agentic.html)
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/1274-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/637-llm.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/096-hermes-agent.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
@@ -146,7 +95,7 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/120-harness-engineering.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 ---
 

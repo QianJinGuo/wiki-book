@@ -8,55 +8,11 @@
 
 Marvis 是腾讯推出的多智能体（Multi-Agent）桌面生产力工具，以 6 只拟人化小马（「牛马办公室」）为交互界面，采用端云混布架构，上线即引爆用户增长。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Marvis 腾讯多智能体桌面助手"))
-    端云混布的技术赌注
-    Multi-Agent 从第一天开始 架构决策的深层逻辑
-    从「告诉你该怎么做」到「直接帮你做了」
-    隐私与授权的权衡设计
-```
-
 ## 摘要
 
 Marvis 是腾讯应用宝团队推出的多智能体桌面助手，以 6 只拟人化小马的创新交互形态，结合端云混布架构和 Multi-Agent 底层设计，实现了从「告诉你该怎么做」到「直接帮你做了」的范式跃迁。上线第三天服务器即被用户量挤爆，近半数用户每天访问。产品核心差异在于：端侧模型确保隐私与离线可用、Multi-Agent 主从架构支撑复杂任务调度、GUI + ROI 混合交互提升用户掌控感。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "编排层"
-        COORD[协调器<br/>Orchestrator]
-        QUEUE[消息队列]
-    end
-    subgraph "Agent 团队"
-        W1["Worker A<br/>专项能力1"]
-        W2["Worker B<br/>专项能力2"]
-        W3["Worker C<br/>专项能力3"]
-    end
-    COORD --> QUEUE
-    QUEUE --> W1 & W2 & W3
-    W1 & W2 & W3 -->|"结果"| QUEUE
-    QUEUE -->|"汇总"| COORD
-    subgraph "共享层"
-        SHARED_MEM[共享记忆]
-        TOOL_BUS[工具总线]
-    end
-    W1 & W2 & W3 --> SHARED_MEM
-    W1 & W2 & W3 --> TOOL_BUS
-    IN[任务输入] --> COORD
-    COORD --> OUT[结果输出]
-    classDef coord fill:#dbeafe,stroke:#2563eb
-    classDef worker fill:#ede9fe,stroke:#7c3aed
-    classDef shared fill:#fef3c7,stroke:#d97706
-    class COORD,QUEUE coord
-    class W1,W2,W3 worker
-    class SHARED_MEM,TOOL_BUS shared
-```
-
 
 - **上线即引爆**：2026-05-20 上线，第三天服务器被用户量挤爆，用户自发的录屏分享带来大量自然增长
 - **端云混布战略**：选择端侧模型（Qwen 35B-A3B，4bit 量化，约 24G 包体）而非纯云端路线，核心理由是经济性（省 Token）、隐私（数据不出本机）、随时可用（无网/弱网可用）
@@ -78,7 +34,7 @@ Marvis 选择端云混布路线是一个面向未来的技术赌注。在当前�
 
 大多数 AI 产品的架构演化路径是从单一 Agent + Skill 积累开始的——简单、清晰、迭代快。Marvis 选择从第一天起 Multi-Agent，原因是其底层能力本就分属不同领域：端侧文件知识库、与英特尔/微软对操作系统的理解、应用宝操作 APP 的运行能力。如果全部塞在一个模型里，会导致上下文爆炸、任务只能串行不能并行、调度极度复杂。
 
-Multi-Agent 架构也带来了更高的指令遵循率要求——主子 Agent 之间的信息传递、结果传递、卡片传递都需要精确的协议设计。团队必须严格测试市面上每款模型在 Marvis 场景中的效果质量达标后才会开放模型切换选项。这种「三层隔离能力 + 严格适配测试」的设计哲学，与 [AgentCore 的 Agent 调度设计](../ch04/689-agentcore-harness.html) 中强调的「调度协议比 Agent 能力本身更重要」形成了有趣的对照。
+Multi-Agent 架构也带来了更高的指令遵循率要求——主子 Agent 之间的信息传递、结果传递、卡片传递都需要精确的协议设计。团队必须严格测试市面上每款模型在 Marvis 场景中的效果质量达标后才会开放模型切换选项。这种「三层隔离能力 + 严格适配测试」的设计哲学，与 [AgentCore 的 Agent 调度设计](../ch04/690-agentcore-harness.html) 中强调的「调度协议比 Agent 能力本身更重要」形成了有趣的对照。
 
 ### 从「告诉你该怎么做」到「直接帮你做了」
 
@@ -90,7 +46,7 @@ Marvis 与市面其他 AI 助手的本质差异在于执行力的跃迁。大模
 
 在「小白开箱即用」和「用户严格授权」之间，Marvis 做出了一个有意思的选择：宁可牺牲便利性，哪怕觉得「咋一直让我点确认」，也坚持让用户自己圈定白名单范围并主动点击授权后才开始工作。不授权就不体验这部分能力。
 
-这种「主权优先」的设计哲学在端侧模型的支持下变得可行——数据不需要传到云端处理，因此严格授权不会牺牲功能质量。这也验证了一个重要原则：**在 Agent 产品设计中，用户的信任比短期留更重要。** 与 [Claude Code 的遥测争议](../ch01/598-anthropic-claude-code.html) 形成对比，Marvis 的端侧 + 严格授权模式在隐私敏感场景具有天然优势。
+这种「主权优先」的设计哲学在端侧模型的支持下变得可行——数据不需要传到云端处理，因此严格授权不会牺牲功能质量。这也验证了一个重要原则：**在 Agent 产品设计中，用户的信任比短期留更重要。** 与 [Claude Code 的遥测争议](../ch01/286-anthropic-claude-code.html) 形成对比，Marvis 的端侧 + 严格授权模式在隐私敏感场景具有天然优势。
 
 ### 意想不到的用户场景
 
@@ -106,11 +62,11 @@ Marvis 上线后出现了大量团队未曾预料的使用场景：写小说（�
 
 ## 相关实体
 
-- [AgentCore Trip Allocation](../ch04/689-agentcore-harness.html)
-- [Agent 配置组合](../ch04/271-skill.html)
+- [AgentCore Trip Allocation](../ch04/690-agentcore-harness.html)
+- [Agent 配置组合](../ch04/273-skill.html)
 - [Backend AI-Friendly 标准](../ch05/022-ai-friendly.html)
-- [Claude Code 遥测与安全](../ch01/598-anthropic-claude-code.html)
-- [GrowBrain 淘宝内容成长引擎](../ch04/237-agentic.html)
+- [Claude Code 遥测与安全](../ch01/286-anthropic-claude-code.html)
+- [GrowBrain 淘宝内容成长引擎](../ch04/648-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/marvis-multi-agent-desktop-tool-tencent-2026-07-15.md)
 

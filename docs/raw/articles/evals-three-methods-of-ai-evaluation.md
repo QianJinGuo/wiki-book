@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/hQyh7ln5RlIjKdssnDiwSQ"
 published_date: "2026-05-20"
 feed_name: "微信公众号"
 tags: [evals, llm-evaluation, llm-as-judge, langfuse, ai-engineering-loop, agent-quality]
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: "pass"

@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, james-cowling, dropbox, convex, engineering-philosophy, ai-era, coding-vs-engineering, wisdom, system-bias, simple-systems, career-advice]
 ---
 

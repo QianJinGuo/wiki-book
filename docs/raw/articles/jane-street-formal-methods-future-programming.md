@@ -3,7 +3,7 @@ title: "Formal methods and the future of programming"
 source_url: "https://blog.janestreet.com/formal-methods-at-jane-street-index/"
 ingested: 2026-06-16
 sha256: "68eebe0d9efeec8269e39167b6b3795de61d0a435372145a6f0351cd8951d6cf"
-type: article
+type: raw-article
 tags: [formal-methods, agentic-coding, jane-street, verification, ai]
 ---
 

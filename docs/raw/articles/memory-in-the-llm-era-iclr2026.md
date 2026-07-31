@@ -2,7 +2,7 @@
 title: "Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework"
 source_url: "https://mp.weixin.qq.com/s/KZJbjozIest4pe5oftACcg"
 ingested: 2026-04-30
-type: raw
+type: raw-article
 tags: [agent-memory, architecture, retrieval-augmented-generation, memory-management, llm-agent, iclr2026, long-context]
 review_value: 8
 review_confidence: 7

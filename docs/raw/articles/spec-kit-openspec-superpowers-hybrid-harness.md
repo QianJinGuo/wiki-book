@@ -5,7 +5,7 @@ source_site: "深入浅出AI"
 author: "CCC"
 ingested: "2026-07-08"
 sha256: "dc15ef82e41308965202b920af622f51546cef88785f80180b8601fa64614705"
-type: raw
+type: raw-article
 tags:
   - spec-kit
   - openspec

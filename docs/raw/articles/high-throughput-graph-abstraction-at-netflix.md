@@ -5,7 +5,7 @@ source_url: https://netflixtechblog.com/high-throughput-graph-abstraction-at-net
 ingested: 2026-06-01
 feed_name: Netflix Tech Blog
 source_published: 2026-05-29T18:49:13Z
-type: article
+type: raw-article
 sha256: aa2761243b0b7387a6a8cc623a7b9c1b00f7d9636019b8e1b3233e3ea35b850d
 tags: [graph, infrastructure, netflix, data-engineering]
 ---

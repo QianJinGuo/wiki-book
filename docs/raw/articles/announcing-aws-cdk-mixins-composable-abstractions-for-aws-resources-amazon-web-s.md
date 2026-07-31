@@ -1,7 +1,7 @@
 ---
 
 title: "Announcing AWS CDK Mixins: Composable Abstractions for AWS Resources | Amazon Web Services"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://aws.amazon.com/blogs/devops/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources/
 tags: [aws-china-blog, agentic-ai, context-engineering]

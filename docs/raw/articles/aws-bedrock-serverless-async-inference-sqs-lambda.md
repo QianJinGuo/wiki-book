@@ -7,7 +7,7 @@ ingested: 2026-05-08
 feed_name: AWS China Blog
 source_published: 2026-05-08T01:31:02Z
 sha256: e1f8faf71139
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

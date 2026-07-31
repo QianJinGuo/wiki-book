@@ -1,6 +1,6 @@
 ---
 title: Dumb Ways for an Open Source Project to Die
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html
 ingested: 2026-05-20

@@ -2,27 +2,9 @@
 
 ## Ch09.178 FastContext（微软开源 Coding Agent 仓库探索子代理）
 
-> 📊 Level ⭐⭐⭐ | 12.3KB | `entities/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md`
+> 📊 Level ⭐⭐⭐ | 12.4KB | `entities/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md`
 
 # FastContext（微软开源 Coding Agent 仓库探索子代理）
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("FastContext 微软开源 Coding Agent"))
-    为什么需要它
-    训练方法
-    报告效果
-    开源实现工程坑 重要
-    接入方法论
-      正确的接入姿势
-      何时值得调用
-      实验设计
-    架构启发
-    上生产前必修 P0
-```
 
 ## 核心定位
 
@@ -31,41 +13,6 @@ mindmap
 工具边界克制到极致——只暴露 `Read`、`Glob`、`Grep` 三个**只读工具**。主 Agent 给一个自然语言查询（如"找到请求校验逻辑和相关测试"），FastContext 自己多轮搜索，最终输出 `<final_answer>` 含文件路径+行号范围。
 
 ## 为什么需要它
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 论文硬数据（Mini-SWE-Agent 轨迹）：
 - **读文件 + 搜索 = 56.2% 工具轮次**
@@ -175,10 +122,10 @@ graph TB
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md)
 
 - [Headroom 是怎么省上下文的](../ch03/035-agent.html)（VibeCoder 上下文优化系列前篇：工具输出字节级压缩；FastContext 偏仓库探索分工，角度互补）
-- [AI Coding Agent 质量防御的五个控制机制](../ch04/330-ai-coding-agent.html)
-- [Coding Agent 在百度的落地实践](ch09/047-coding-agent.html)
+- [AI Coding Agent 质量防御的五个控制机制](../ch04/333-ai-coding-agent.html)
+- [Coding Agent 在百度的落地实践](ch09/046-coding-agent.html)
 - [AgentMemory：Coding Agent 本地记忆](ch09/039-agentmemory-coding-agent.html)
-- [阿里 LoongSuite Pilot：Coding Agent 从黑盒到透明](ch09/047-coding-agent.html)
+- [阿里 LoongSuite Pilot：Coding Agent 从黑盒到透明](ch09/046-coding-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

@@ -4,7 +4,7 @@ title: "从 OpenClaw 到 OpenHuman：私人 AI Runtime 的雏形"
 author: "子非AI"
 published: 2026-05-19
 created: 2026-05-19
-type: article
+type: raw-article
 platform: wechat
 tags: [OpenHuman, AI-Runtime, agent, Memory-Tree, Composio, Local-First, Private-AI, Tool-Governance, Security, Rust]
   - OpenHuman

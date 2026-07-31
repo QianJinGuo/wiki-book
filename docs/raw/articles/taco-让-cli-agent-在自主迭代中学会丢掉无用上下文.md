@@ -2,7 +2,7 @@
 title: "taco 让 cli agent 在自主迭代中学会丢掉无用上下文"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 7b1a0e77a669cb3a04e3571036ec31730120be3643ae34b8aa364d3fd6b14690
 ---

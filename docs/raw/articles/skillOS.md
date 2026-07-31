@@ -2,7 +2,7 @@
 title: "SkillOS"
 created: "2026-05-12"
 updated: "2026-05-12"
-type: raw
+type: raw-article
 tags: [reinforcement-learning, skill-curation, self-evolving-agents, llm-agent, skill-repo, grpo, composite-rewards]
 source_url: "https://arxiv.org/pdf/2605.06614.pdf"
 ingested: "2026-05-12"

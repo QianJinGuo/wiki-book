@@ -2,7 +2,7 @@
 title: "添加官方技能库"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 492bea79bf2183232b0550c8d1451a56ff6159004549d389745fab62a6d90226
 ---

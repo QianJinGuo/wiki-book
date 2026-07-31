@@ -4,20 +4,6 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/claude-code-why-instructions-ignored-jia-gou-x-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 为什么会忽略指令 四类失效原因 五层规则框架"))
-    核心概述
-    指令失效的四类原因
-    五层规则框架
-    CLAUDEmd 的定位 入口卡而非总控台
-    实操 变胖的 CLAUDEmd 怎么收
-    Subagent 作为上下文卫生工具
-```
-
 ## 核心概述
 
 当 `CLAUDE.md` 越写越长后，Claude Code 会开始忽略某些指令。根本原因不是模型不行，而是我们把太多不同性质的规则塞进了同一个入口文件。本文提出四类失效原因和五层规则框架，将模糊的"没听话"问题拆解为可诊断、可工程化的系统设计问题。
@@ -25,41 +11,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-why-instructions-ignored-jia-gou-x-2026.md)
 
 ## 指令失效的四类原因
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 1. **规则没加载到上下文**：子目录 `CLAUDE.md` 或 `.claude/rules/` 只有在读到对应目录时才进上下文。任务刚开始、新建文件、压缩后继续写都可能出现"规则还没进来"的情况。诊断方法：`/memory`、`/context` 查加载状态。
 
@@ -102,8 +53,8 @@ Subagent 的核心价值不是"多一个助手"，而是**上下文隔离**。�
 ## 关联
 
 - [CLAUDE.md 12 条规则](../ch01/237-claude-md.html) — 本文解决"写什么规则"，本文解决"规则放哪里"
-- [Claude Code 大型代码库 Harness 配置](../ch03/078-claude-code.html) — CLAUDE.md 作为 Harness 五扩展点之一
-- [Claude Code 七种自定义方法](../ch03/078-claude-code.html) — Anthropic 官方全景指南
+- [Claude Code 大型代码库 Harness 配置](../ch03/077-claude-code.html) — CLAUDE.md 作为 Harness 五扩展点之一
+- [Claude Code 七种自定义方法](../ch03/077-claude-code.html) — Anthropic 官方全景指南
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 规则分层是 Harness 工程的核心设计决策
 
 ---

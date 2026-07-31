@@ -8,69 +8,11 @@
 
 # Trail of Bits: Skill Scanner Bypass 实证研究
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Trail of Bits Skill Scanner"))
-    攻击对象 4 个 scanner
-    攻击技术 standard tricks
-    为什么 skill 安全至关重要
-      Skill 是新形态的 dependency
-      5 种 distribution channel 几乎全
-      Scanner 的根本局限 静态规则的对抗弱势
-    与现有实体的关系
-      与 Skill Design Patterns 的关系
-      与 Skillclaw 的关系
-      与 Agent Security Three Step
-    关键实证数据
-    实践启示 对 skill marketplace 建设者
-    实践启示 对 skill 开发者
-    引用要点
-```
-
 ## 一句话总结
 
 Trail of Bits 在 2026-06-03 公开实证：4 个公开的 agent skill scanner（ClawHub malicious skill detector、Cisco agent skill scanner、skills.sh 内置 3 个 scanner）**在不到 1 小时内被绕过**。攻击样本代码公开在 [trailofbits/overtly-malicious-skills](https://github.com/trailofbits/overtly-malicious-skills)，揭示 skill marketplace 的 supply chain 安全架构是 ship-first-secure-later 状态。
 
 ## 攻击对象（4 个 scanner）
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 | Scanner | 提供方 | 类型 | 绕过时间 |
 |---------|--------|------|---------|
@@ -117,13 +59,13 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 
 ## 与现有实体的关系
 
-### 与 [Skill Design Patterns](../ch04/271-skill.html) 的关系
+### 与 [Skill Design Patterns](../ch04/273-skill.html) 的关系
 
 - skill-design-patterns = 设计维度（5 种 SKILL.md 写作模式）
 - trail-of-bits 实体 = 攻击维度（SKILL.md 怎么被恶意构造）
 - 共存：cross-link 为 skill 开发者的"威胁模型"
 
-### 与 [Skillclaw](../ch04/474-skillclaw-nacos-agent-skill-registry.html) 的关系
+### 与 [Skillclaw](../ch04/479-skillclaw-nacos-agent-skill-registry.html) 的关系
 
 - skillclaw = 阿里 SkillClaw：让 Agent 技能在真实使用中集体进化
 - trail-of-bits 实体 = 这些"技能市场"的安全现状
@@ -207,7 +149,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 ### 对 Skill Marketplace 建设者
 
-1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](../ch04/298-ai-agent.html) 中的多层防御模型。
+1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](../ch04/030-ai-agent.html) 中的多层防御模型。
 
 2. **out-of-band 分发需要专项审计**：ZIP 手工上传 + API 直接安装是当前最大的 supply chain 盲点。凡是绕过了 marketplace review 流程的分发渠道，都需要独立的人工或自动化审计步骤。
 
@@ -227,7 +169,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 4. **了解 skill 的实际文件组成**：检查 skill 包中是否包含预编译二进制（.pyc、.so、.dll）或非预期文件类型，必要时要求 source code 而非预编译版本。
 
-5. **企业内 skill hub + 代码审计**：相比公共 marketplace，企业自建 skill hub 并对 skill 进行代码审计是更可靠的安全模型。可参考 [Skillsieve Agent Skill Security](../ch04/459-skillsieve-agent-skill.html) 中的企业级 skill 安全实践。
+5. **企业内 skill hub + 代码审计**：相比公共 marketplace，企业自建 skill hub 并对 skill 进行代码审计是更可靠的安全模型。可参考 [Skillsieve Agent Skill Security](../ch04/463-skillsieve-agent-skill.html) 中的企业级 skill 安全实践。
 
 ### 对 Agent 系统设计者
 
@@ -242,8 +184,8 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 ---
 
 **相关实体**：
-- [Skill Design Patterns](../ch04/271-skill.html) — skill 的设计维度（与攻击维度互补）
-- [Skillsieve Agent Skill Security](../ch04/459-skillsieve-agent-skill.html) — 企业级 skill 安全实践
+- [Skill Design Patterns](../ch04/273-skill.html) — skill 的设计维度（与攻击维度互补）
+- [Skillsieve Agent Skill Security](../ch04/463-skillsieve-agent-skill.html) — 企业级 skill 安全实践
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.html) — agent 安全的通用框架
 - [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) — prompt injection 的防御思路
 - [Agent Security Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md) — agent 安全攻击与防御全景

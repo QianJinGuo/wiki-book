@@ -2,69 +2,17 @@
 
 ## Ch04.267 为了让agent更安全的工作，有多少人操碎了心
 
-> 📊 Level ⭐⭐ | 9.8KB | `entities/ath-agent-trust-handshake-protocol.md`
+> 📊 Level ⭐⭐ | 9.9KB | `entities/ath-agent-trust-handshake-protocol.md`
 
 # 为了让agent更安全的工作，有多少人操碎了心
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ath-agent-trust-handshake-protocol.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("为了让agent更安全的工作 有多少人操碎了心"))
-    Agent 权限问题的本质
-    现有方案的三类缺陷
-    ATH 三方可信握手架构
-    Scope Intersection 三方权限交集
-    三方权限交集 Agent 时代的安全范式转换
-    MCP 生态漏洞的深层启示
-    二次确认 从单一授权到按需授权
-    ATH 的标准化前景与现实约束
-```
 
 ## 摘要
 
 本文系统分析了 Agent 权限安全的核心矛盾——「单个权限无害，组合起来可能越界」，传统 RBAC 模型无法管控 LLM 非确定性决策下的权限组合涌现。在对比 MCP、A2A、CLI/GUI 自动化三类现有方案的缺陷后，详细介绍 2026 年 5 月由中国信通院联合腾讯、华为、中兴等发布的 ATH（Agent Trust Handshake）三方可信握手协议。ATH 的核心创新是引入用户作为独立第三方参与方，通过 Scope Intersection（三方权限交集）机制确保最终有效权限 = 服务方审批 ∩ 用户授权 ∩ 智能体请求。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### Agent 权限问题的本质
 
@@ -160,11 +108,11 @@ ATH 的三个技术优势（三权分立、强制 PKCE、短期令牌）同时�
 
 ## 相关实体
 
-- [Agent Protocol 到 Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html)
-- [AgentCore Gateway 认证](ch04/281-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
-- [AI 工具投毒漏洞](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Agent Protocol 到 Harness Skill](ch04/431-from-agent-protocol-to-harness-skill.html)
+- [AgentCore Gateway 认证](ch04/279-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [AI 工具投毒漏洞](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Harness V3 治理协议](../ch05/009-harness.html)
-- [MCP 12 设计模式](../ch01/989-anthropic.html)
+- [MCP 12 设计模式](../ch01/1004-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

@@ -11,37 +11,6 @@ Markdown Content:
 A user journey map is a visual document that captures every action, emotion, and pain point a user encounters while trying to accomplish a specific goal in your product. Unlike analytics dashboards that tell you where users drop off, journey maps explain why they do. [NNGroup's research](https://www.nngroup.com/articles/journey-mapping-impact/) on 300+ UX professionals found that [64% of teams](https://www.nngroup.com/articles/journey-mapping-impact/) create journey maps collaboratively, making them one of the most widely-used alignment tools in product design.
 This guide covers everything from core components and types to a five-step creation process, tool recommendations, and the most common mistakes that turn journey maps into shelf-ware.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("User Journey Maps How UX Teams"))
-    What Is a User Journey Map
-      How a User Journey Map Differs
-      How a User Journey Map Differs
-    Why User Journey Maps Matter in 2026
-      Why Journey Maps Work
-    How User Journey Mapping Works A
-      The User Persona
-      The Scenario and Scope
-      Stages and Touchpoints
-    How to Create a User Journey Map
-      Step 1 Define Your User Persona
-      Step 2 Set the Scenario and Goal
-      Step 3 Map Every Touchpoint and
-    Types of User Journey Maps and
-      Current-State As-Is Maps
-      Future-State To-Be Maps
-      Narrow vs Broad Scope Maps
-    Best Tools for User Journey Mapping
-    Common User Journey Mapping
-      Mistake 1 Starting Without a
-      Mistake 2 Using Internal
-      Mistake 3 Interviewing Only Loyal
-    User Journey Mapping in Practice
-```
-
 ## Key Takeaways
 *   A user journey map visualizes user actions, emotions, touchpoints, and pain points across a timeline to reveal where products cause friction.
 *   [64% of UX professionals](https://www.nngroup.com/articles/journey-mapping-impact/) create journey maps collaboratively with a team, not individually.
@@ -50,41 +19,6 @@ mindmap
 *   The biggest mistake teams make is building maps from internal assumptions instead of real user research.
 
 ## What Is a User Journey Map?
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 A user journey map is a visual representation of a user's complete interaction with a product or service over time. It decomposes the experience into discrete steps, revealing not just the actions users take but the thoughts and emotions they have along the way.
 Think of it as the difference between a floor plan and a walk-through video. Analytics give you the floor plan: traffic, drop-off points, click rates. A journey map gives you the walk-through: the confusion at the front door, the frustration at the broken elevator, the relief when the destination is finally clear.
 Journey maps typically follow a timeline structure. They start when a user first recognizes a need and continue through discovery, onboarding, active use, and sometimes exit. Each phase surfaces a new layer of insight that is invisible in a funnel chart alone.
@@ -269,7 +203,7 @@ Forrester 2026 年的分析指出，最先进的组织正在将 Journey Map 从�
 ## 相关实体
 - [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/user-interviews-guide-pro.md)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03/019-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/030-mythos.html)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

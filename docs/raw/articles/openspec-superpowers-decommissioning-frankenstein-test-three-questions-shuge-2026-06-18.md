@@ -3,7 +3,7 @@ title: "OpenSpec + Superpowers 融合方案下线记：2 周 3 次实测 + 3 个
 source_url: "https://mp.weixin.qq.com/s/tw6nPi8NIYxd55yiPafSig"
 ingested: 2026-06-18
 sha256: b4988a1a8db9fc849eb0ff7912215ae91a4a5a158aae9cae2bea5da14b36e40f
-type: raw
+type: raw-article
 tags: [openspec, superpowers, asd, frankenstein-pattern, three-test-framework, addition-vs-subtraction, plan-mode, propagation-economics, shuge, spec-driven-development, ac-numbering, ac-coverage, drift-check, six-injection-points]
 ---
 

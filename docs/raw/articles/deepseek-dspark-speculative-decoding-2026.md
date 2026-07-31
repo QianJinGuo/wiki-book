@@ -2,7 +2,7 @@
 title: "DeepSeek V4 DSpark：投机解码框架"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 908c9d52a85cb9520958434cad3dbb3af09064d002a104e3214dce65a9e4b7fc
 ---

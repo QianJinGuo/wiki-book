@@ -6,7 +6,7 @@ author: AI技术立文
 publisher: AI技术立文
 published: 2026-05-14
 created: 2026-05-14
-type: raw
+type: raw-article
 tags:
   - harness
   - llm-agent

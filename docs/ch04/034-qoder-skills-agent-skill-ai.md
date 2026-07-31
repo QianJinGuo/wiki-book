@@ -2,69 +2,7 @@
 
 ## Ch04.034 Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行
 
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 > 📊 Level ⭐⭐ | 35.4KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Qoder Skills 完全指南 Agent Skill"))
-    核心概念
-      菜单与菜谱的比喻
-      Skill 与周边工具的生态定位
-    Skill 的技术架构
-      文件结构规范
-      三级渐进式披露机制 Progressive Disclosure
-      跨平台兼容性
-    Skill vs 其他工具的抉择框架
-    三大最适合场景
-      场景一 文档与资产创建 Document Asset Creation
-      场景二 工作流自动化 Workflow Automation
-      场景三 MCP 能力增强 MCP Enhancement
-    安装与验证
-    SKILLmd 编写规范
-      YAML Frontmatter 触发器
-      写好 Description 的三个黄金原则
-      正文写作的四个技巧
-    五种进阶工作流模式
-      模式一 顺序工作流编排
-      模式二 跨 MCP 协调
-      模式三 迭代优化循环
-    测试与迭代方法论
-```
 
 ## 核心概念
 Qoder Skills 是 AI 工作流定制的基础设施，它解决了一个根本性问题：**如何让 AI 按你的标准稳定执行，而非每次凭"直觉"自由发挥**。
@@ -413,41 +351,41 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 ## 相关实体
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)（同主题旧版）
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/269-agent-skill.html)（同主题不同 MP — 实操指引）
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
-- [Agent Skill 设计模式](ch04/397-agent-skills.html)（Anthropic → Google 演进）
-- [重新定义Skill开发：保姆级教程](ch04/271-skill.html)
-- [你写的 Skill，及格了吗？](ch04/271-skill.html)（skill-judge 对照）
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/271-agent-skill.html)（同主题不同 MP — 实操指引）
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/260-anthropic-agent.html)
+- [Agent Skill 设计模式](ch04/401-agent-skills.html)（Anthropic → Google 演进）
+- [重新定义Skill开发：保姆级教程](ch04/273-skill.html)
+- [你写的 Skill，及格了吗？](ch04/273-skill.html)（skill-judge 对照）
 - [Harness Engineering 90 Percent Pillars](../ch05/120-harness-engineering.html)（与 Skill 同源的工程化思路）
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)
 - [qoder skills](../ch07/034-qoder-skills.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/397-agent-skills.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/397-agent-skills.html)
-- [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](../ch03/072-skills.html)
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/271-skill.html)
-- [Agent Skill 设计模式](ch04/397-agent-skills.html)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/401-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/401-agent-skills.html)
+- [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](../ch03/071-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/260-anthropic-agent.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/273-skill.html)
+- [Agent Skill 设计模式](ch04/401-agent-skills.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/095-ai.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/035-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/269-agent-skill.html)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/383-anthropic-google-agent-skills.html)
-- [Garry Tan](../ch01/662-garry-tan.html)
-- [Agent Workflows](ch04/364-agent-workflows.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/271-agent-skill.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/517-anthropic-google-agent-skills.html)
+- [Garry Tan](../ch01/673-garry-tan.html)
+- [Agent Workflows](ch04/366-agent-workflows.html)
 - [Hermes Agent](../ch03/096-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [你写的 Skill，及格了吗？](ch04/271-skill.html)
+- [你写的 Skill，及格了吗？](ch04/273-skill.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
-- [Skillx Zhejiang University](../ch07/056-skillx.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
+- [Skillx Zhejiang University](../ch07/057-skillx.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)
 - [Promptqueue Opengorilla Project Analysis Ljguo](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-opengorilla-project-analysis-ljguo.md)
-- [qoder 团队知识引擎](../ch01/779-qoder.html)
+- [qoder 团队知识引擎](../ch01/794-qoder.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 2nd Source 原文存档

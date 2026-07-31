@@ -4,64 +4,10 @@
 
 > 📊 Level ⭐ | 8.2KB | `entities/gemini-ai.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Gemini AI Google"))
-    名称澄清
-    Gemini 的学习相关功能
-      Gemini in Google Workspace for
-      Gemini Chat geminigooglecom
-      Gemini 与 NotebookLM 的区别
-    Pricing
-    Strengths
-    Weaknesses
-```
-
 ## Overview
 Gemini 是 Google 的多模态 AI 助手，集成在 Google Workspace for Education、Google Classroom、以及独立 gemini.google.com 网站中。Gemini 本身是通用 AI 助手，不是专门的笔记或知识管理工具，但其学习功能散见于多个 Google 产品中。
 
 ## 名称澄清
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 > ⚠️ **"Gemini Guide Learning"不是一个独立产品**。用户可能将以下几类产品混淆：
 > - **Gemini in Google Workspace for Education**（AI 辅助功能集成在各 Google 应用中）
 > - **Google Gemini Chat**（gemini.google.com，独立 AI 对话产品）
@@ -147,8 +93,8 @@ Google 的独立 AI 对话产品，任何人可用（需 Google 账号）。
 ## Related
 - [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
 - [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — Google 专用研究助手
-- [ChatGPT Memory](ch01/355-chatgpt-memory.html) — 对话式记忆
-- [Obsidian](ch01/957-claude-code-memory-setup-obsidian-graphify.html) — 本地笔记
+- [ChatGPT Memory](ch01/357-chatgpt-memory.html) — 对话式记忆
+- [Obsidian](ch01/970-claude-code-memory-setup-obsidian-graphify.html) — 本地笔记
 
 ---
 

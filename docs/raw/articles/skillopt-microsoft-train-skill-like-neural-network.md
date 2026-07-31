@@ -6,7 +6,7 @@ feed_name: "AGI Hunt"
 author: "尹John"
 published: 2026-05-26
 created: 2026-05-27
-type: raw
+type: raw-article
 tags: [skill, agent-training, microsoft-research, skillopt, llm-optimization]
 sha256: "52eee22f72fbc1bd05456f8e08beea3b1c70c24056d18d623e3ec3676db6552f"
 ---

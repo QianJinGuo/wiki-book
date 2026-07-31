@@ -7,7 +7,7 @@ published: "Mon, 15 Jun 2026 03:39:55 +0000"
 creator: awschina
 tags: [aws, aws-china, networking, ec2, nat, infrastructure]
 sha256: e8c20b17d4f8adf82d3fe3267901dd407a8afc45548a9b9698e3c865d760f2dd
-type: article
+type: raw-article
 ---
 
 source_url: https://aws.amazon.com/cn/blogs/china/ec2-nat-instance-deploy-practice/

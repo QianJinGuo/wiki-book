@@ -3,7 +3,7 @@ title: "AP2 协议实测分析：Mandate 机制、Task 状态机与多 Agent 系
 source_url: "https://mp.weixin.qq.com/s/BmvObHXGPsqxoZ6J47QRLA"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # AP2 协议实测分析：Mandate 机制、Task 状态机与多 Agent 系统

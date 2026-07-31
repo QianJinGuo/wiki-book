@@ -6,60 +6,11 @@
 
 # Anthropic knowledge-work-plugins 源码拆解：4 种组件、3 级加载、2 层记忆、岗位型插件市场
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic knowledge-work-plugins"))
-    岗位级封装 从工具到角色的范式转变
-    三层渐进式披露的工程意义
-    两层记忆系统的认知工程
-    工具无关抽象与双模设计
-```
-
 ## 摘要
 
 Anthropic 官方开源的 `knowledge-work-plugins` 仓库是一个面向企业知识工作的 AI 插件集合，2026 年 1 月底创建，5 个月内获得近 2 万 Stars。与大多数 AI 框架或模型不同，它由纯 Markdown 文件和 JSON 配置组成——没有编译、没有依赖，非技术人员也能定制。19 个官方岗位插件 + 5 个合作伙伴插件（Slack/Salesforce、Apollo、Brand Voice 等），覆盖销售、客服、产品、法务、金融、数据、营销、HR、工程等领域。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 - **岗位封装而非功能增强**：每个插件对应一个完整企业职能（如 engineering 插件含 10 个 Skills、9 个 MCP 连接器），让 Claude 具备岗位级专业能力
 - **4 种组件各司其职**：Skills（核心指令文件）、Commands（legacy 快捷命令）、Agents（cowork 中较少用）、Hooks（安全设计值得注意）
@@ -155,9 +106,9 @@ Engineering 插件的 `CONNECTORS.md` 定义了 6 个连接器类别，每个用
 
 ## 相关实体
 
-- [Knowledge Work Plugins Shuge Anthropic Deep Source](../ch01/989-anthropic.html) — 同源姊妹篇：数滴云对同一仓库的深度解读，互补视角
-- [Anthropic Agent Skills Design Patterns 14](../ch04/257-anthropic-agent.html) — Anthropic 官方 14 条 Skill 设计模式
-- [Skill System Design Three Way Comparison](../ch04/271-skill.html) — OpenClaw / Claude Code / Hermes 三方 Skill 系统对比
+- [Knowledge Work Plugins Shuge Anthropic Deep Source](../ch01/1004-anthropic.html) — 同源姊妹篇：数滴云对同一仓库的深度解读，互补视角
+- [Anthropic Agent Skills Design Patterns 14](../ch04/260-anthropic-agent.html) — Anthropic 官方 14 条 Skill 设计模式
+- [Skill System Design Three Way Comparison](../ch04/273-skill.html) — OpenClaw / Claude Code / Hermes 三方 Skill 系统对比
 - [Claude Code Skills Workflow Encapsulation Costa Long](ch07/035-claude-code-skills.html) — Claude Code Skills 工作流封装机制
 
 ---

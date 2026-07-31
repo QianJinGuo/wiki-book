@@ -1,6 +1,6 @@
 ---
 title: Grafana GitHub Token Breach Led to Codebase Download and Ext
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.thehackernews.com/2026/05/grafana-github-token-breach-led-to.html
 tags: [security]

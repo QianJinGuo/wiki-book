@@ -4,58 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/where-openclaw-security-is-heading-openclaw-blog.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Where OpenClaw Security Is"))
-    从验证到执行 安全控制点的重新定位
-    Agent 供应链的结构性风险 ClawHub 案例
-    Prompt Fatigue 与上下文感知审批
-    静态分析即可持续安全 GHSA 到 OpenGrep 规则
-    对 Agent 系统开发者
-    对 Agent 用户
-    对安全研究者
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - **范式转变**：从"验证后获取"到" egress 路由 + 代理策略执行"，Proxyline 负责路由，代理负责策略 enforcement
 - **fs-safe**：将文件系统边界检查抽象为可复用原语库，插件和核心代码共用同一套 root-bounded 原语，而非各自实现
 - **ClawHub 信任体系**：信任证据直接绑定到特定版本（clean/suspicious/quarantined/malicious），安装路径消费这些信号，而非事后本地检查
@@ -89,7 +38,7 @@ Precision 是这种体系的核心要求：噪音规则比无规则更危险，�
 
 ### 5. 运行时状态重构：减少攻击面而非加固边界
 文章提及 SQLite 运行时状态重构（sessions、transcripts、scheduler state、plugin state 移入类型化数据库），其安全动机在于**消除文件系统访问**：最安全的文件系统调用是根本不调用。这是攻击面减少（attack surface reduction）而非边界加固（boundary hardening）的思路——不是让文件系统调用更安全，而是不做文件系统调用。
-Loose files 作为运行时状态存储存在的问题：文件可能被篡改、误删、路径遍历、或因权限配置错误暴露。类型化数据库（SQLite）提供清晰的所有权边界、事务支持和结构化查询 。这一方向与 [Skill System Design Three Way Comparison](../ch04/271-skill.html) 中记录的 ClawHub 恶意 Skill 问题相关——若运行时状态通过文件系统暴露，恶意 Skill 理论上可操纵这些文件。
+Loose files 作为运行时状态存储存在的问题：文件可能被篡改、误删、路径遍历、或因权限配置错误暴露。类型化数据库（SQLite）提供清晰的所有权边界、事务支持和结构化查询 。这一方向与 [Skill System Design Three Way Comparison](../ch04/273-skill.html) 中记录的 ClawHub 恶意 Skill 问题相关——若运行时状态通过文件系统暴露，恶意 Skill 理论上可操纵这些文件。
 
 ## 实践启示
 ### 对 Agent 系统开发者
@@ -109,7 +58,7 @@ Loose files 作为运行时状态存储存在的问题：文件可能被篡改�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/where-openclaw-security-is-heading-openclaw-blog.md)
 
 ## 相关实体
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1036-openclaw-agent.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1049-openclaw-agent.html)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)
 

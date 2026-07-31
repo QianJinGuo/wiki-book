@@ -4,63 +4,11 @@
 
 > 📊 Level ⭐⭐ | 15.9KB | `entities/pi-openclaw-coding-harness.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Coding Harness 工程本质 从 Pi 到 OpenClaw"))
-    核心定义
-    Pi 分层架构
-    Harness 补齐的八个能力
-    五个可复用的工程模式
-      Context 像投影 不像容器
-      Transcript 是账本 working context 是视图
-      权限要进运行时管线
-    Pi OpenClaw 的演进
-      session 需要两层状态
-      工具策略需要动态化
-    稳定路线
-    Harness 会被模型内化吗
-    工程的北极是运行时语义 不是提示词
-```
-
 ## 核心定义
 Coding harness 是模型从"建议你怎么修"走到"自己去修"所必须的那套工程外壳。Pi 在 coding-agent README 里把自己称为 minimal terminal coding harness——它先给模型一组很小的身体能力：read、write、edit、bash。再往外，才是 session、context files、compaction、skills、extensions、TUI、RPC、SDK。
 **Pi 这个顺序把 Agent 的底层工程暴露得很清楚：能力不会从概念里自动长出来，它靠一层层工程边界托住。**
 
 ## Pi 分层架构
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ```
 Provider API -> agent loop -> coding tools
 -> session / context / compaction
@@ -196,11 +144,11 @@ Pi 的 read 截断时给 offset、edit 拒绝时说明原因（oldText 不唯一
 ## 相关
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-openclaw-coding-harness.md)
 ## 相关实体
-- [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
+- [Openclaw Prompt Context Harness](../ch11/237-openclaw.html)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](ch05/120-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](ch05/120-harness-engineering.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](ch05/120-harness-engineering.html)
-- [Agent Memory Architecture Ruofei](../ch04/121-agent-memory.html)
+- [Agent Memory Architecture Ruofei](../ch04/098-agent-memory.html)
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Generalization Dynamics of LM Pre-training — Jiaxin Wen
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://jiaxin-wen.github.io/blog/generalization-dynamics
 tags: [blog]

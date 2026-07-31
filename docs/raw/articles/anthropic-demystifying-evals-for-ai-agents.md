@@ -4,7 +4,7 @@ source_url: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agen
 tags: [anthropic, claude]
 ingested: 2026-05-01
 sha256: 9d67b72967a1404d403f481a4a3dcb83b8d8cd63e7a5ce8248f0d7d9b7ed0e22
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

@@ -1,7 +1,7 @@
 ---
 
 title: "Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-check mess"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.theregister.com/security/2026/05/18/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britains-age-check-mess/5241770/
 tags: [vietnam, cloud-computing, government, data-sovereignty]

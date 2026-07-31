@@ -4,7 +4,7 @@ source_title: "Skills For Real Engineers：把工程基本功装进 AI Agent"
 source_author: "顾旭东"
 ingested: 2026-07-08
 sha256: "ca30b0c0136fae3457f43acd1bbc63bdf25995fedc5b47a815563ae2f8e20255"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [ai-agent, claude-code, codex, skills, engineering, matt-pocock]
 ---

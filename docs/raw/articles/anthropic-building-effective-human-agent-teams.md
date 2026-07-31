@@ -1,7 +1,7 @@
 ---
 title: "Building effective human-agent teams"
 source_url: "https://claude.com/blog/building-effective-human-agent-teams"
-type: article
+type: raw-article
 created: 2026-06-26
 updated: 2026-06-26
 sha256: e469c79050aa9f9c8bb880d9aed94e8960c5acde68aab082888d96b98a4711a1

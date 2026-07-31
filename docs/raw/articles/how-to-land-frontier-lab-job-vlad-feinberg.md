@@ -1,7 +1,7 @@
 ---
 title: "how-to-land-frontier-lab-job-vlad-feinberg"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: 2aea790d09f2e148a2a00a54b4aba825335dfc052b8ddfe9589b1cf47f698c9c
 ---
 source_url: https://mp.weixin.qq.com/s/XJJ8KVe7eOSQrA4GhTtKIw

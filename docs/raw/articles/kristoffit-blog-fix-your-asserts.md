@@ -4,7 +4,7 @@ source_url: https://kristoff.it/blog/fix-your-asserts/
 source: newsletter
 created: 2026-06-01
 updated: 2026-06-01
-type: article
+type: raw-article
 tags: [newsletter, article]
 sha256: e0c6221f412c8b16
 ---

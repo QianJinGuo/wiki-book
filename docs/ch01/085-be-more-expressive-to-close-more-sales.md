@@ -10,55 +10,10 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Be more expressive to close more"))
-    研究背景
-    表达力魅力成交的传导机制
-    产品类型的调节效应
-    愤怒表达的悖论
-    研究局限性
-    销售演示中的高表达力 checklist
-    产品类型决定表达投入度
-    愤怒情境下的应对
-```
-
 ## 研究背景
 一项来自维也纳大学（University of Vienna）和维也纳莫德尔大学（Modul University Vienna）的销售演示实验，分析了 847 名受试者观看 14 场不同行业（App、硬件、营销咨询等）销售视频后的反应。核心问题是：销售人员的表达力（expressiveness）究竟如何影响成交率。
 
 ## 核心发现
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 实验将销售员分为"高表达力"（ energetic speaking、body language、手势、眼神接触）和"低表达力"两组。结果显示：
 
 - 受试者对产品的评价**提升 31.8%**
@@ -132,7 +87,7 @@ graph TB
 
 ## 相关实体
 
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/094-ai.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/095-ai.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/223-rag.html)
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
 

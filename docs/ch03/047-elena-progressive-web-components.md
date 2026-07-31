@@ -2,22 +2,7 @@
 
 ## Ch03.047 Elena | Progressive Web Components
 
-> 📊 Level ⭐ | 4.3KB | `entities/Elena-Progressive-Web-Components.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Elena Progressive Web Components"))
-    渐进增强理念的回归
-    Shadow DOM 的放弃与可访问性
-    跨框架兼容的实际代价
-    kB 的设计立场
-    何时考虑 Elena
-    何时可能不适合
-    开发者体验考量
-```
+> 📊 Level ⭐ | 4.3KB | `entities/elena-progressive-web-components.md`
 
 ## 核心要点
 - Elena：由 @arielle 创建的"Progressive Web Components"轻量库
@@ -26,31 +11,6 @@ mindmap
 - 支持 SSR，无 Shadow DOM 障碍，天然可访问
 - 设计目标：跨框架组件库与设计系统
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "ReAct 循环"
-        IN[用户输入] --> TH[思考<br/>Reasoning]
-        TH --> AC[行动<br/>Action]
-        AC --> OB[观察<br/>Observation]
-        OB -->|"新信息触发"| TH
-        TH -->|"推理完成"| OUT[最终回答]
-    end
-    subgraph "记忆"
-        WM[工作记忆<br/>上下文窗口]
-        SM[短期记忆<br/>会话存储]
-    end
-    TH --> WM
-    OB --> SM
-    SM -->|"回忆"| TH
-    classDef think fill:#dbeafe,stroke:#2563eb
-    classDef act fill:#d1fae5,stroke:#059669
-    classDef mem fill:#fef3c7,stroke:#d97706
-    class TH,OUT think
-    class AC,OB act
-    class WM,SM mem
-```
-
 - [Impeccable](../ch05/001-impeccable.html)
 - [Impeccable Vibe Design Philosophy Anomaly](../ch05/001-impeccable.html)
 

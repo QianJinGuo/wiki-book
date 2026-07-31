@@ -6,7 +6,7 @@ url: https://www.theregister.com/security/2026/05/12/japans-pm-orders-cybersecur
 title: "Japan’s PM orders cybersecurity review to defend against Anthropic Mythos"
 sha256: 099002afe2e3c41212ed18ec10085573e024a66fcb753a465ce07409c583d1d3
 date: 2026-05-13
-type: raw
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: neutral

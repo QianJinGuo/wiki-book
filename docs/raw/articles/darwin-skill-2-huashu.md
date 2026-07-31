@@ -12,7 +12,7 @@ date: 2026-05-28
 created: 2026-05-28
 updated: 2026-05-28
 tags: [darwin-skill, skill-evolution, self-improvement, skillopt, skilllens, microsoft-research, rubric-driven, validation-gated, agent, huashu]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: f834e99eaae4416640d6e462695b92e69db8d1da97f70e093c8b8140e7ee92a1
 ---

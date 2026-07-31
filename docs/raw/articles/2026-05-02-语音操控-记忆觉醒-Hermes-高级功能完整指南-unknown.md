@@ -2,7 +2,7 @@
 title: "《语音操控 + 记忆觉醒：Hermes 高级功能完整指南》"
 created: 2026-05-02
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: ce4b392b39e687af1dae576281b218b56a003fbb36f681853f80b578c03a11f5
 ---

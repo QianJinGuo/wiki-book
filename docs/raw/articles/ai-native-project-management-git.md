@@ -5,7 +5,7 @@ author: 周志伟
 source: 阿里技术
 created: 2026-05-28
 updated: 2026-05-28
-type: raw
+type: raw-article
 sha256: 80191143d23352365a113b73610b972f1209574a89c9d8ff2290700c6eb53194
 tags: [article, project-management, ai-native, git, harness-engineering]
 ---
