@@ -2,6 +2,22 @@
 
 ## Ch12.002 A Framework for AI Threat Readiness
 
+```mermaid
+graph TB
+    subgraph Framework["AI Threat Readiness Framework"]
+        ID[威胁识别] --> ASS[风险评估]
+        ASS --> MIT[缓解措施]
+        MIT --> MON[持续监控]
+        MON --> ID
+    end
+    subgraph Layers["攻击面层"]
+        M[模型层: 对抗样本/数据投毒]
+        I[基础设施层: API 滥用/Token 盗窃]
+        A[应用层: Prompt Injection/越权]
+    end
+    ID --> Layers
+```
+
 > 📊 Level ⭐ | 10.4KB | `entities/ai_threat_readiness_framework.md`
 
 ## 核心要点

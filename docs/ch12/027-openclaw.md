@@ -2,6 +2,21 @@
 
 ## Ch12.027 OpenClaw 安全和功能增强实践
 
+```mermaid
+graph TB
+    subgraph OpenClaw["OpenClaw 安全增强"]
+        INPUT[输入层] --> SAN[输入净化]
+        SAN --> POL[策略检查]
+        POL --> EXEC[沙箱执行]
+        EXEC --> OUT[输出过滤]
+    end
+    subgraph Audit["审计链"]
+        LOG[操作日志] --> SIG[签名校验]
+        SIG --> CHAIN[不可变审计链]
+    end
+    EXEC --> LOG
+```
+
 > 📊 Level ⭐⭐ | 12.6KB | `entities/openclaw-security-and-feature-enhancement-practices.md`
 
 # OpenClaw 安全和功能增强实践

@@ -2,6 +2,20 @@
 
 ## Ch12.028 xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners
 
+```mermaid
+graph LR
+    subgraph Attack["xz-utils 后门攻击链"]
+        SOC[社会工程] -->|获取维护权| REPO[上游仓库]
+        REPO -->|植入后门| BUILD[构建系统]
+        BUILD -->|分发| DIST[Linux 发行版]
+        DIST -->|SSH 认证绕过| ROOT[Root 访问]
+    end
+    subgraph Lesson["超越 CVE 的教训"]
+        TRUST[维护者信任] --> AUDIT[代码审计]
+        REPRO[可复现构建] --> VERIFY[二进制验证]
+    end
+```
+
 > 📊 Level ⭐⭐ | 11.3KB | `entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md`
 
 # xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners

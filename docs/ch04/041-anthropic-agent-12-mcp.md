@@ -24,6 +24,28 @@ MCP = Model Context Protocol，不只是协议，而是**面向 Agent 的产品�
 > "好的 MCP Server，不是 API 的翻译层，而是 Agent 面向任务的产品接口。"
 
 ## 五组12模式
+
+```mermaid
+graph TB
+    subgraph G1["工具交互面"]
+        R["1.远程优先服务器"] --> I["2.按意图组织工具"]
+        I --> T["3.薄交互面"]
+    end
+    subgraph G2["交互语义"]
+        U["4.内联UI"] --> E["5.引导式输入"]
+    end
+    subgraph G3["状态与上下文"]
+        S["6.结构化状态"] --> CTX["7.上下文注入"]
+    end
+    subgraph G4["安全与治理"]
+        A["8.认证委托"] --> P["9.权限边界"]
+        P --> AU["10.审计日志"]
+    end
+    subgraph G5["可靠性"]
+        RL["11.资源限制"] --> GR["12.优雅降级"]
+    end
+    G1 --> G2 --> G3 --> G4 --> G5
+```
 ---
 
 ### 第一组：工具交互面（Tool Surface）

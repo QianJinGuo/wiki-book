@@ -20,6 +20,25 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    subgraph Core["Pi Agent 核心"]
+        A[Agent] -->|推理| LLM[LLM 对话]
+        A -->|调用| T[Tools]
+    end
+    subgraph Ext["Extensions 扩展层"]
+        E1[消息修改] -->|on_message| A
+        E2[工具拦截] -->|on_tool_call| A
+        E3[结果改写] -->|on_tool_result| A
+        E4[状态更新] -->|on_turn_end| A
+    end
+    subgraph Reg["能力注册"]
+        R1[自定义工具] --> A
+        R2[终端命令] --> A
+        R3[模型 Provider] --> A
+    end
+```
+
 Pi Agent 的核心设计哲学体现了一种彻底的极简主义：仅用三个抽象（Agent、Tools、Extensions）就撑起了整个框架，而把所有的复杂性都推到了扩展层。Agent 负责与大模型对话推理，Tools 定义 Agent 可调用的能力，Extensions 则是对外开放的扩展系统——没有工作流编排器、没有状态机图引擎、没有记忆检索层。这种"极度克制的核心"策略使得框架本身的学习曲线极低，同时将复杂性封装在可插拔的扩展中，让用户按需引入。
 
 扩展系统是 Pi Agent 与其他框架最本质的区别。Pi Agent 的扩展同时充当两种角色：既是观察者，通过监听 Agent 运行流程中的关键节点（消息修改、工具拦截、结果改写、状态更新）来介入执行过程；也是能力提供者，可以向核心注册全新的功能——自定义工具、终端命令、键盘快捷键、模型 Provider，甚至替换输入编辑器。这种双重角色使得扩展不只是"在既有流程上增加行为"，而是真正"改变流程本身"。

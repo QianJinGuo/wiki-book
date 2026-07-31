@@ -29,6 +29,31 @@ Harness 按自己的节奏重试，队列按自己的条件重试，HTTP 层管�
 **后端由三个基本元素组成：编排工作的 worker，调用这些服务的 trigger，以及服务内部真正执行工作的 function。**
 
 ### 抽象后端
+
+```mermaid
+graph TB
+    subgraph Primitives["三原语"]
+        W[Worker — 任何连接的进程]
+        F[Function — 带标识符的工作单元]
+        T[Trigger — 声明式触发机制]
+    end
+    W -->|注册| F
+    W -->|绑定| T
+    F --> T
+    
+    subgraph Participants["参与者"]
+        TS[TypeScript API]
+        PY[Python ML Pipeline]
+        RS[Rust 微服务]
+        AG[Agent]
+        BR[浏览器]
+    end
+    
+    Participants -->|全部是 Worker| W
+    
+    style AG fill:#9cf,stroke:#333
+    style W fill:#f9f,stroke:#333
+```
 一旦我意识到这一点，我和我非常出色的团队就清楚了：我们可以用这个抽象来构建一个后端。这远不只是学术练习。我们发现，这个抽象在 agentic 世界以及更广泛的场景里都有非常实际的价值，因为它完整封装了"后端"的执行上下文。于是我们构建了 iii，让每个人都能使用这个抽象。
 iii 的工作方式正如上面所说：
 它把 **Function** 定义为一个带稳定标识符的工作单元，例如 orders::validate。Function 接收输入，并且可以选择返回输出。它可以存在于任何进程里，也可以用任何语言编写。

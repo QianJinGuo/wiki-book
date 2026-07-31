@@ -2,6 +2,19 @@
 
 ## Ch12.017 LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant Ext as 恶意浏览器扩展
+    participant DOM as DOM 树
+    participant AI as AI 对话页面
+    participant Exfil as 攻击者服务器
+    User->>AI: 输入敏感信息
+    AI->>DOM: 渲染对话内容
+    Ext->>DOM: 读取 DOM 节点
+    Ext->>Exfil: 外传对话数据
+```
+
 > 📊 Level ⭐⭐ | 18.1KB | `entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md`
 
 # LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions

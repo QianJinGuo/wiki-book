@@ -2,6 +2,20 @@
 
 ## Ch12.025 Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026
 
+```mermaid
+graph TB
+    subgraph Attack["推理盗窃攻击链"]
+        LEAK[Token 泄露] --> PROXY[代理劫持]
+        PROXY --> CALL[盗用 API 调用]
+        CALL --> COST[成本转嫁受害方]
+    end
+    subgraph Defense["防御层"]
+        ROT[Token 轮换] --> RATE[速率限制]
+        RATE --> BIND[IP/来源绑定]
+        BIND --> MON[异常检测]
+    end
+```
+
 > 📊 Level ⭐⭐ | 13.1KB | `entities/vercel-inference-theft-ai-endpoint-economics-2026.md`
 
 # Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026

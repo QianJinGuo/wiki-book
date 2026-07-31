@@ -22,6 +22,15 @@
 
 ## 四层抽象
 
+```mermaid
+graph LR
+    A["chrome-devtools-mcp<br/>CDP 原语层"] --> B["Playwright<br/>脚本化测试层"]
+    B --> C["agent-browser<br/>AI CLI 工具箱层"]
+    C --> D["browser-use<br/>Agent 闭环层"]
+    style A fill:#f9f,stroke:#333
+    style D fill:#9cf,stroke:#333
+```
+
 - **chrome-devtools-mcp** → 暴露 CDP 原语，最底层
 - **Playwright** → 脚本化测试框架，人类写脚本
 - **agent-browser** → AI 友好的 CLI 工具箱，命令驱动

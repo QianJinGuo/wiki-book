@@ -2,6 +2,14 @@
 
 ## Ch04.003 AgentRun
 
+```mermaid
+graph LR
+    U[用户代码] -->|提交| S[AgentRun Sandbox]
+    S -->|隔离执行| R[运行结果]
+    S -->|网络限制| N[安全边界]
+    S -->|资源限制| L[CPU/内存/时间]
+```
+
 > 📊 Level ⭐ | 9.6KB | `entities/aliyun-agentrun.md`
 
 ## 核心能力

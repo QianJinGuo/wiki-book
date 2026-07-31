@@ -13,6 +13,26 @@ Claude Code 源码泄露之后，Zhi.Yuan（SooKool）与 AI 一起分析，拆�
 
 ## 深度分析
 
+```mermaid
+graph TB
+    subgraph Main["单线程主循环"]
+        S[组装 Prompt] --> C[调用模型]
+        C --> D{检测 tool_use?}
+        D -->|是| E[StreamingToolExecutor 并行执行]
+        D -->|否| F[流式输出文本]
+        E --> G{API 中断?}
+        G -->|是| H[墓碑消息 TombstoneMessage]
+        G -->|否| S
+        H --> S
+    end
+    subgraph Hooks["Hook 审查系统"]
+        PH[Prompt Hook<br/>Sonnet 单步判断]
+        AH[Agent Hook<br/>Haiku 多步验证]
+        PH -->|exit=2| |一票否决|
+        AH -->|exit=2| |一票否决|
+    end
+```
+
 Claude Code 的设计哲学是「把失败一定会发生当成设计前提，而不是异常」。StreamingToolExecutor 的核心机制是：模型流式输出时，只要检测到 tool_use JSON block 就立即启动工具执行，不等模型说完 ^。只读操作最多 10 个并行，写操作排队串行 ^。更关键的是「墓碑消息」机制：API 中断时给每个孤儿工具调用生成错误占位，中断消息标记为 TombstoneMessage，保证消息流不断裂 ^。这种设计不追求消除失败，而是让系统在面对故障时仍能保持状态完整性和可调试性 ^。
 
 Claude Code 选择了单线程主循环 async function* 配合有纪律的工具，来实现「可控的自主性」。这与行业流行的多 Agent 协作趋势形成鲜明对比 ^。Anthropic 原文指出："A simple, single-threaded master loop combined with disciplined tools delivers controllable autonomy." 多 Agent 协作是锦上添花，单线程循环才是基本盘 ^。Coordinator 只调度，Worker 只执行，各自持有完全不同的工具集——这种模式已经在实践中 ^。

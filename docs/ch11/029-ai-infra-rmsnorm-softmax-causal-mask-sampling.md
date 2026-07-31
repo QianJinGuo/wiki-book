@@ -2,6 +2,16 @@
 
 ## Ch11.029 AI Infra 入门：RMSNorm、Softmax、Causal Mask、Sampling 的数学与底层优化
 
+```mermaid
+graph LR
+    Input[输入 Token] --> RMS[RMSNorm<br/>归一化]
+    RMS --> ATTN[Attention<br/>+ Causal Mask]
+    ATTN --> SM[Softmax<br/>概率分布]
+    SM --> FFN[FFN]
+    FFN --> SMP[Sampling<br/>Token 生成]
+    SMP --> Output[输出 Token]
+```
+
 > 📊 Level ⭐⭐ | 15.9KB | `entities/ai-infra-math-foundations-rmsnorm-softmax-causal-mask-sampling-binnnliu-2026-06-17.md`
 
 # AI Infra 入门：RMSNorm、Softmax、Causal Mask、Sampling 的数学与底层优化

@@ -2,6 +2,21 @@
 
 ## Ch11.013 基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构
 
+```mermaid
+graph LR
+    subgraph Before["迁移前: OpenClaw 单体"]
+        APP[单体应用] --> DB[(数据库)]
+    end
+    subgraph After["迁移后: AgentCore Serverless"]
+        GW[Gateway] --> F1[Function: 解析]
+        GW --> F2[Function: 执行]
+        GW --> F3[Function: 验证]
+        F1 --> SQS[SQS 队列]
+        SQS --> F2
+        F2 --> DDB[DynamoDB]
+    end
+```
+
 > 📊 Level ⭐⭐ | 28.8KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md`
 
 # "基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构"

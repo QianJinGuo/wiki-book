@@ -2,6 +2,13 @@
 
 ## Ch12.014 Bleeding Llama：Ollama 未授权内存泄漏漏洞
 
+```mermaid
+graph LR
+    AT[攻击者] -->|未授权访问| OLL[Ollama API<br/>默认无认证]
+    OLL -->|内存泄漏| MEM[模型权重/推理数据]
+    AT -->|模型窃取| STEAL[完整模型下载]
+```
+
 > 📊 Level ⭐⭐ | 20.7KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)
