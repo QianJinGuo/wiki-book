@@ -33,22 +33,32 @@ Agent 是云计算迎来的**第三类使用者**——继人类操作者和确�
 ## Cloud Use 四层能力模型（依赖链）
 
 ```mermaid
-graph TD
-    I["Identity Use<br/>谁在操作<br/>独立身份·权限来源·过期时间"]
-    C["Credential Use<br/>凭证怎么用<br/>Vault·短期令牌·服务端代理"]
-    T["Tool/API Use<br/>工具怎么被治理<br/>MCP+权限/约束/审计/限流"]
-    R["Runtime Use<br/>任务怎么活下去<br/>Session·状态·事件流·取消"]
-    I --> C --> T --> R
-    subgraph "成熟度三阶段"
-        M1["1.只读巡检/诊断"]
-        M2["2.带确认的执行"]
-        M3["3.高风险变更(人审批)"]
+graph TB
+    subgraph "法规要求"
+        GDPR[GDPR<br/>数据保护]
+        INDUSTRY[行业标准<br/>金融/医疗]
+        LOCAL[地方法规<br/>网安法/个保法]
     end
-    R --> M1 --> M2 --> M3
-    style I fill:#ef4444,stroke:#333,color:#fff
-    style C fill:#f97316,stroke:#333,color:#fff
-    style T fill:#3b82f6,stroke:#333,color:#fff
-    style R fill:#8b5cf6,stroke:#333,color:#fff
+    subgraph "实施层"
+        MAP[合规映射<br/>要求→措施]
+        IMPL[技术实施<br/>加密/脱敏/审计]
+        TRAIN[人员培训<br/>意识提升]
+    end
+    GDPR & INDUSTRY & LOCAL --> MAP
+    MAP --> IMPL & TRAIN
+    subgraph "审计层"
+        INTERNAL[内部审计<br/>自查自纠]
+        EXTERNAL[外部审计<br/>第三方认证]
+        REPORT[合规报告<br/>持续更新]
+    end
+    IMPL --> INTERNAL --> EXTERNAL --> REPORT
+    REPORT -->|"法规变化"| MAP
+    classDef req fill:#fee2e2,stroke:#dc2626
+    classDef impl fill:#dbeafe,stroke:#2563eb
+    classDef audit fill:#d1fae5,stroke:#059669
+    class GDPR,INDUSTRY,LOCAL req
+    class MAP,IMPL,TRAIN impl
+    class INTERNAL,EXTERNAL,REPORT audit
 ```
 
 

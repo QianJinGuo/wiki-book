@@ -23,39 +23,36 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "查询处理"
+        Q[用户查询] --> REWRITE[查询改写]
+        REWRITE --> EXPAND[查询扩展]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "多路召回"
+        BM25[BM25<br/>关键词检索]
+        VDB[向量检索<br/>语义相似度]
+        GRAPH[近邻图<br/>TF-IDF余弦]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    EXPAND --> BM25 & VDB & GRAPH
+    subgraph "重排序与融合"
+        RERANK[Reranker<br/>交叉编码器]
+        MERGE[分数融合<br/>RRF/加权]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    BM25 & VDB & GRAPH --> RERANK --> MERGE
+    subgraph "上下文工程"
+        INJECT[上下文注入]
+        COMPRESS[压缩/摘要]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    MERGE --> INJECT --> COMPRESS
+    COMPRESS --> LLM[LLM 生成]
+    LLM --> ANS[回答]
+    classDef query fill:#dbeafe,stroke:#2563eb
+    classDef recall fill:#ede9fe,stroke:#7c3aed
+    classDef rerank fill:#fef3c7,stroke:#d97706
+    classDef ctx fill:#d1fae5,stroke:#059669
+    class Q,REWRITE,EXPAND query
+    class BM25,VDB,GRAPH recall
+    class RERANK,MERGE rerank
+    class INJECT,COMPRESS,LLM ctx
 ```
 
 这篇文章的核心贡献是把"同事.skill"热潮拉回工程现实：**skill 复制动作，RAG 补足认知，二者合一才接近真正的"蒸馏同事"**。一个 top sales 的能力由三层构成——Workflow 层（他知道第一步做什么第二步做什么）、Knowledge 层（他知道做这件事要参考哪些资料）、Judgement 层（在复杂情况下如何权衡）。Skill 负责第一层，RAG 负责第二层，第三层取决于模型能力和人类兜底机制。绝大多数"同事.skill"项目只做了第一层，然后误以为完成了全部蒸馏。

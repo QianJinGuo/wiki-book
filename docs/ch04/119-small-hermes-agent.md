@@ -31,26 +31,39 @@ Agent自我进化之所以难，是因为七个维度的困难相互纠缠，而
 ## 七重困境 → 设计决策映射
 
 ```mermaid
-graph TD
-    subgraph "三层上下文架构"
-        PIN["Pinned Memory<br/>常驻·核心偏好·低频更新"]
-        IDX["Active Index<br/>索引加载·一行摘要·按需展开"]
-        SKI["Triggered Skills<br/>按需加载·token overlap匹配"]
+graph TB
+    subgraph "工作记忆"
+        CTX[上下文窗口<br/>当前对话]
+        ATTN[注意力机制<br/>关键信息加权]
     end
-    subgraph "双轨反思"
-        MR["微反思 Per-Turn<br/>~500 tokens<br/>启发式触发"]
-        FR["全量反思 Session End<br/>~2000-5000 tokens<br/>累积数据充分"]
+    subgraph "短期记忆"
+        SESSION[Session 存储<br/>对话历史]
+        CACHE[临时缓存<br/>中间结果]
     end
-    subgraph "安全围栏"
-        CORE["不可变核心<br/>代码层面硬约束"]
-        PERI["可变外围<br/>审批是唯一写入路径"]
+    subgraph "长期记忆"
+        VDB[(向量数据库<br/>语义检索)]
+        KG[(知识图谱<br/>关系存储)]
+        STRUCT[(结构化存储<br/>用户画像)]
     end
-    PIN --> IDX --> SKI
-    MR -->|"候选"| PERI
-    FR -->|"候选"| PERI
-    CORE --> PERI
-    style CORE fill:#ef4444,stroke:#333,color:#fff
-    style PIN fill:#8b5cf6,stroke:#333,color:#fff
+    CTX --> ATTN --> SESSION --> CACHE
+    CACHE --> VDB & KG & STRUCT
+    subgraph "记忆管理"
+        IMPORT[重要性评分]
+        COMPRESS[压缩摘要]
+        FORGET[遗忘策略]
+    end
+    VDB & KG & STRUCT --> IMPORT
+    IMPORT --> COMPRESS
+    IMPORT --> FORGET
+    COMPRESS -->|"注入"| CTX
+    classDef work fill:#fee2e2,stroke:#dc2626
+    classDef short fill:#fef3c7,stroke:#d97706
+    classDef long fill:#dbeafe,stroke:#2563eb
+    classDef mgmt fill:#ede9fe,stroke:#7c3aed
+    class CTX,ATTN work
+    class SESSION,CACHE short
+    class VDB,KG,STRUCT long
+    class IMPORT,COMPRESS,FORGET mgmt
 ```
 
 

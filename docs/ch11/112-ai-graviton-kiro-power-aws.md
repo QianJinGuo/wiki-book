@@ -30,39 +30,36 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "意图理解"
+        NAT[自然语言描述] --> PARSE[意图解析]
+        PARSE --> CTX[上下文收集<br/>代码库/配置]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "代码生成"
+        PLAN[任务分解] --> GEN[代码生成]
+        GEN --> REVIEW[静态分析]
+        REVIEW -->|"问题"| GEN
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    subgraph "验证闭环"
+        TEST[运行测试]
+        LINT[风格检查]
+        FIX[自动修复]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    GEN --> TEST & LINT
+    TEST -->|"失败"| FIX --> GEN
+    subgraph "知识库"
+        SKILLS[技能/模板]
+        DOCS[文档/示例]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    CTX --> PLAN
+    PLAN --> SKILLS & DOCS
+    classDef intent fill:#dbeafe,stroke:#2563eb
+    classDef gen fill:#ede9fe,stroke:#7c3aed
+    classDef verify fill:#d1fae5,stroke:#059669
+    classDef kb fill:#fef3c7,stroke:#d97706
+    class NAT,PARSE,CTX intent
+    class PLAN,GEN,REVIEW gen
+    class TEST,LINT,FIX verify
+    class SKILLS,DOCS kb
 ```
 
 AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 by awschina on 25 3月 2026 in Business Productivity Permalink Share 摘要：本文将深入探讨如何利用 Kiro Power 加速 Graviton 迁移，从代码分析、依赖检查、容器适配的完整流程。 目录 01 1. 引言 02 2. Graviton 迁移的核心挑战 03 3. Kiro Graviton Migration Power：AI 驱动的解决方案 04 4. 准备 Kiro Powers 环境 05 5. 演示一：将基于 Java 语言开发的 Chatbot 应用迁移到 Graviton 06 6. 演示二：评估 Portry 管理的 Python 应用的依赖包 07 7. 其他使用说明 08 8. 结语 1. 引言 在云计算成本优化的浪潮中，

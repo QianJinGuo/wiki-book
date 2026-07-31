@@ -50,39 +50,34 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "Agent 核心"
+        INT[意图理解] --> PLAN[任务规划]
+        PLAN --> EXEC[工具选择与调用]
+        EXEC --> VERIFY[结果验证]
+        VERIFY -->|"失败重试"| PLAN
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "工具层"
+        direction LR
+        FT[Function<br/>自定义函数]
+        MT[MCP Server<br/>外部服务]
+        API[REST API<br/>HTTP调用]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
+    EXEC --> FT
+    EXEC --> MT
+    EXEC --> API
+    subgraph "安全层"
+        AUTH[权限检查]
         SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+        AUDIT[审计日志]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    EXEC --> AUTH --> SANDBOX
+    SANDBOX --> AUDIT
+    classDef agent fill:#dbeafe,stroke:#2563eb
+    classDef tool fill:#d1fae5,stroke:#059669
+    classDef sec fill:#fee2e2,stroke:#dc2626
+    class INT,PLAN,EXEC,VERIFY agent
+    class FT,MT,API tool
+    class AUTH,SANDBOX,AUDIT sec
 ```
 
 ### 产品定位

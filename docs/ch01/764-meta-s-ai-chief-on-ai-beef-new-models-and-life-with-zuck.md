@@ -31,39 +31,41 @@ Alex Wang，Meta AI 负责人，此前是 Scale AI 的联合创始人兼 CEO。 
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "数据源"
+        API[API 接口]
+        DB_SRC[(数据库)]
+        STREAM[流式数据]
+        FILES[文件/日志]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "采集层"
+        INGEST[数据摄入<br/>Kafka/Flink]
+        CDC[变更捕获<br/>CDC]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    API & DB_SRC --> INGEST
+    DB_SRC --> CDC
+    STREAM & FILES --> INGEST
+    subgraph "处理层"
+        CLEAN[清洗/去重]
+        TRANSFORM[转换/计算]
+        QUALITY[质量校验]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    INGEST & CDC --> CLEAN --> TRANSFORM --> QUALITY
+    subgraph "存储层"
+        LAKE[数据湖<br/>Iceberg/Delta]
+        WH[数据仓库<br/>ClickHouse]
+        FEAT[特征存储<br/>Feast]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    QUALITY --> LAKE
+    QUALITY --> WH
+    QUALITY --> FEAT
+    classDef src fill:#fef3c7,stroke:#d97706
+    classDef ing fill:#dbeafe,stroke:#2563eb
+    classDef proc fill:#ede9fe,stroke:#7c3aed
+    classDef sto fill:#d1fae5,stroke:#059669
+    class API,DB_SRC,STREAM,FILES src
+    class INGEST,CDC ing
+    class CLEAN,TRANSFORM,QUALITY proc
+    class LAKE,WH,FEAT sto
 ```
 
 Meta 近期发布了新一代模型 **Muse Spark**，这是 Wang 入职后首个对外公布的成果。 该模型以语音模式（Voice Mode）和 Meta Glasses 为载体对外展示。 业界对 Meta 能否追上竞争对手仍有疑问，但 Muse Spark 被视为 Meta AI 复兴的第一个可见成果。

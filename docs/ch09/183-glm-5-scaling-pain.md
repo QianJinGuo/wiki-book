@@ -33,32 +33,40 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "模型优化"
+        QUANT[量化<br/>INT4/GPTQ/AWQ]
+        PRUNE[剪枝<br/>稀疏化]
+        DISTIL[蒸馏<br/>小模型]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "运行时优化"
+        KV[KV Cache<br/>PagedAttention]
+        MQA[GQA/MQA<br/>注意力压缩]
+        SPEC[投机解码<br/>Draft→Verify]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    subgraph "调度策略"
+        PRE[Prefill<br/>首token计算]
+        DEC[Decode<br/>自回归生成]
+        CB[连续批处理<br/>Dynamic Batching]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    QUANT --> KV
+    PRUNE --> MQA
+    DISTIL --> SPEC
+    KV --> PRE & DEC
+    PRE & DEC --> CB
+    subgraph "部署架构"
+        DP[数据并行]
+        TP[张量并行]
+        PP[流水线并行]
+    end
+    CB --> DP & TP & PP
+    classDef model fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef sched fill:#fef3c7,stroke:#d97706
+    classDef deploy fill:#d1fae5,stroke:#059669
+    class QUANT,PRUNE,DISTIL model
+    class KV,MQA,SPEC runtime
+    class PRE,DEC,CB sched
+    class DP,TP,PP deploy
 ```
 
 | 异常 | 特征 | 检测信号 |

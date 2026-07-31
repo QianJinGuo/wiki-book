@@ -38,39 +38,43 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "感知层"
+        VISION[视觉感知<br/>RGB-D/点云]
+        TOUCH[触觉传感<br/>力反馈]
+        PROPRIO[本体感受<br/>关节状态]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "认知层"
+        MAP[环境建图<br/>SLAM]
+        LOC[定位<br/>GPS+IMU]
+        UNDERSTAND[场景理解<br/>目标检测]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    VISION --> MAP & UNDERSTAND
+    TOUCH & PROPRIO --> LOC
+    subgraph "决策层"
+        PLAN[任务规划<br/>LLM/VLM]
+        MOTION[运动规划<br/>RRT/MPC]
+        RL[强化学习<br/>Sim-to-Real]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    MAP & UNDERSTAND --> PLAN
+    LOC --> MOTION
+    PLAN --> MOTION
+    MOTION --> RL
+    subgraph "执行层"
+        CTRL[运动控制<br/>PID/阻抗]
+        SAFETY[安全约束<br/>力限/避障]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    RL --> CTRL
+    CTRL --> SAFETY
+    SAFETY --> ENV[物理环境]
+    ENV --> VISION & TOUCH
+    classDef perc fill:#dbeafe,stroke:#2563eb
+    classDef cog fill:#ede9fe,stroke:#7c3aed
+    classDef dec fill:#fef3c7,stroke:#d97706
+    classDef exec fill:#d1fae5,stroke:#059669
+    class VISION,TOUCH,PROPRIO perc
+    class MAP,LOC,UNDERSTAND cog
+    class PLAN,MOTION,RL dec
+    class CTRL,SAFETY exec
 ```
 
 Netflix Druid 集群每日处理 10T 行数据、15M events/sec 写入，26 个图表的热门仪表板每次加载产生 64 次查询，30 人同时查看、每 10 秒刷新，产生 192 qps。 Druid 内置的全结果缓存和段级缓存对滚动窗口失效：时间窗口轻微移动即构成不同的查询字符串导致缓存未命中；Druid 为保证查询正确性主动拒绝缓存含实时段的数据。这类近重复查询构成隐式 DDoS，在不扩容硬件的前提下无法简单解决。

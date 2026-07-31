@@ -27,39 +27,32 @@ DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智�
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 Anthropic 官方明确禁止中国大陆访问 Claude。2025年9月更出台政策：任何由中国资本控制超过50%的公司，不管注册地在哪，都不准用。CEO 达里奥·阿莫迪本人也公开主张对中国实施技术制裁。

@@ -31,32 +31,30 @@ Gartner 2025 年底对大型企业的调查显示：80% 的大型企业在推出
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "发现"
+        PROB[问题定义<br/>用户痛点]
+        JTBD[任务理解<br/>JTBD框架]
+        SEG[市场细分<br/>目标用户]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "验证"
+        MVP[MVP构建<br/>最小可行]
+        PMF[产品市场匹配<br/>PMF验证]
+        ITER[快速迭代<br/>用户反馈]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
+    ITER -->|"Pivot"| PROB
+    subgraph "增长"
+        FLYWHEEL[增长飞轮<br/>自增强循环]
+        UNIT_ECO[单位经济<br/>LTV/CAC]
+        SCALE[规模化<br/>渠道扩展]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
+    classDef discover fill:#dbeafe,stroke:#2563eb
+    classDef validate fill:#ede9fe,stroke:#7c3aed
+    classDef growth fill:#d1fae5,stroke:#059669
+    class PROB,JTBD,SEG discover
+    class MVP,PMF,ITER validate
+    class FLYWHEEL,UNIT_ECO,SCALE growth
 ```
 
 

@@ -24,39 +24,38 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "工作记忆"
+        CTX[上下文窗口<br/>当前对话]
+        ATTN[注意力机制<br/>关键信息加权]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "短期记忆"
+        SESSION[Session 存储<br/>对话历史]
+        CACHE[临时缓存<br/>中间结果]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    subgraph "长期记忆"
+        VDB[(向量数据库<br/>语义检索)]
+        KG[(知识图谱<br/>关系存储)]
+        STRUCT[(结构化存储<br/>用户画像)]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    CTX --> ATTN --> SESSION --> CACHE
+    CACHE --> VDB & KG & STRUCT
+    subgraph "记忆管理"
+        IMPORT[重要性评分]
+        COMPRESS[压缩摘要]
+        FORGET[遗忘策略]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    VDB & KG & STRUCT --> IMPORT
+    IMPORT --> COMPRESS
+    IMPORT --> FORGET
+    COMPRESS -->|"注入"| CTX
+    classDef work fill:#fee2e2,stroke:#dc2626
+    classDef short fill:#fef3c7,stroke:#d97706
+    classDef long fill:#dbeafe,stroke:#2563eb
+    classDef mgmt fill:#ede9fe,stroke:#7c3aed
+    class CTX,ATTN work
+    class SESSION,CACHE short
+    class VDB,KG,STRUCT long
+    class IMPORT,COMPRESS,FORGET mgmt
 ```
 
 Hermes Agent v0.14.0：一个**自进化 AI Agent 框架**。内置学习闭环，能从任务经验中提炼可复用的 skill，并在后续使用中自我修正。

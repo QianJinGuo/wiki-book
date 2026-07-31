@@ -27,30 +27,33 @@ mindmap
 ### 四种编排模式的设计哲学
 
 ```mermaid
-graph TD
-    subgraph "层级编排 Orchestrator-Worker"
-        OW_O["Orchestrator<br/>任务分解+结果合并"] --> OW_W1["Worker 1"]
-        OW_O --> OW_W2["Worker 2"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    subgraph "对等协作 Peer-to-Peer"
-        P2P_A["Agent A"] <-->|"消息传递"| P2P_B["Agent B"]
-        P2P_A <--> P2P_C["Agent C"]
-        P2P_B <--> P2P_C
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    subgraph "市场竞争 Auction-based"
-        AU_T["任务发布"] --> AU_A1["Agent 1 竞标"]
-        AU_T --> AU_A2["Agent 2 竞标"]
-        AU_T --> AU_A3["Agent 3 竞标"]
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
     end
-    subgraph "投票/共识 Voting"
-        VO_Q["问题"] --> VO_V1["Agent 1 判断"]
-        VO_Q --> VO_V2["Agent 2 判断"]
-        VO_Q --> VO_V3["Agent 3 判断"]
-        VO_V1 & VO_V2 & VO_V3 --> VO_R["加权投票"]
-    end
-    style OW_O fill:#8b5cf6,stroke:#333,color:#fff
-    style AU_T fill:#f97316,stroke:#333,color:#fff
-    style VO_R fill:#22c55e,stroke:#333,color:#fff
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 

@@ -32,39 +32,38 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "工作记忆"
+        CTX[上下文窗口<br/>当前对话]
+        ATTN[注意力机制<br/>关键信息加权]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "短期记忆"
+        SESSION[Session 存储<br/>对话历史]
+        CACHE[临时缓存<br/>中间结果]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    subgraph "长期记忆"
+        VDB[(向量数据库<br/>语义检索)]
+        KG[(知识图谱<br/>关系存储)]
+        STRUCT[(结构化存储<br/>用户画像)]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    CTX --> ATTN --> SESSION --> CACHE
+    CACHE --> VDB & KG & STRUCT
+    subgraph "记忆管理"
+        IMPORT[重要性评分]
+        COMPRESS[压缩摘要]
+        FORGET[遗忘策略]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    VDB & KG & STRUCT --> IMPORT
+    IMPORT --> COMPRESS
+    IMPORT --> FORGET
+    COMPRESS -->|"注入"| CTX
+    classDef work fill:#fee2e2,stroke:#dc2626
+    classDef short fill:#fef3c7,stroke:#d97706
+    classDef long fill:#dbeafe,stroke:#2563eb
+    classDef mgmt fill:#ede9fe,stroke:#7c3aed
+    class CTX,ATTN work
+    class SESSION,CACHE short
+    class VDB,KG,STRUCT long
+    class IMPORT,COMPRESS,FORGET mgmt
 ```
 
 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文围绕 AI Agent 在多客户、多 Agent 协作场景下的”记忆困境”，介绍基于 Amazon AgentCore Memory 的 OpenClaw 企业级共享记忆插件 memory-agentcore，逐一拆解记忆系统的五个核心问题：记什么（Amazon AgentCore 4 策略自动提取 + 本地三层噪音预过滤）、怎么存（Event → Memory Record 的全托管数据路径）、怎么找（auto-recall 自动召回 + 肘点算法分数间隙过滤）、谁能看（层级命名空间 + actorId 驱动的最小权限隔离）、怎么管（8 个 Agent 工具

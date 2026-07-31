@@ -28,39 +28,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "输入处理"
+        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
+        EMB --> POS[位置编码<br/>RoPE/ALiBi]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "Transformer Block ×N"
+        ATT[Multi-Head Attention<br/>自注意力]
+        ADD1[残差连接+LayerNorm]
+        FFN[FFN / MoE<br/>前馈/混合专家]
+        ADD2[残差连接+LayerNorm]
+        POS --> ATT --> ADD1 --> FFN --> ADD2
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    subgraph "输出"
+        PROJ[输出投影]
+        SOFT[Softmax / Sampling]
+        NEXT[Next-Token]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    ADD2 --> PROJ --> SOFT --> NEXT
+    subgraph "优化技术"
+        KV[KV Cache<br/>PagedAttention]
+        QUANT[量化 INT4/8]
+        SPEC[投机解码]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    ATT --> KV
+    FFN --> QUANT
+    SOFT --> SPEC
+    classDef input fill:#fef3c7,stroke:#d97706
+    classDef block fill:#dbeafe,stroke:#2563eb
+    classDef output fill:#d1fae5,stroke:#059669
+    classDef opt fill:#ede9fe,stroke:#7c3aed
+    class TOK,EMB,POS input
+    class ATT,ADD1,FFN,ADD2 block
+    class PROJ,SOFT,NEXT output
+    class KV,QUANT,SPEC opt
 ```
 
 **UX 设计的六项核心原则是递进关系**：User first → Usability → Consistency → Accessibility → Hierarchy → Context，这六项原则并非并列关系，而是从"战略层"到"表现层"的递进。User first 是设计决策的出发点；Usability 是功能可用性的底线；Consistency 降低用户认知负担；Accessibility 扩展用户边界；Hierarchy 引导视觉注意力；Context 提供恰到好处的信息时机。一个网站如果只做到前三项，只能算"能用"；只有六项全部做到，才能算真正的好 UX。

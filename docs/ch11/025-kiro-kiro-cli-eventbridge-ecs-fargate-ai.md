@@ -4,32 +4,36 @@
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "意图理解"
+        NAT[自然语言描述] --> PARSE[意图解析]
+        PARSE --> CTX[上下文收集<br/>代码库/配置]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "代码生成"
+        PLAN[任务分解] --> GEN[代码生成]
+        GEN --> REVIEW[静态分析]
+        REVIEW -->|"问题"| GEN
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    subgraph "验证闭环"
+        TEST[运行测试]
+        LINT[风格检查]
+        FIX[自动修复]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    GEN --> TEST & LINT
+    TEST -->|"失败"| FIX --> GEN
+    subgraph "知识库"
+        SKILLS[技能/模板]
+        DOCS[文档/示例]
+    end
+    CTX --> PLAN
+    PLAN --> SKILLS & DOCS
+    classDef intent fill:#dbeafe,stroke:#2563eb
+    classDef gen fill:#ede9fe,stroke:#7c3aed
+    classDef verify fill:#d1fae5,stroke:#059669
+    classDef kb fill:#fef3c7,stroke:#d97706
+    class NAT,PARSE,CTX intent
+    class PLAN,GEN,REVIEW gen
+    class TEST,LINT,FIX verify
+    class SKILLS,DOCS kb
 ```
 
 > 📊 Level ⭐⭐ | 17.0KB | `entities/kiro-job-scheduler-eventbridge-ecs-fargate.md`

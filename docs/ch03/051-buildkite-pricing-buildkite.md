@@ -33,32 +33,39 @@ Self-hosted agentsMac hosted agentsLinux hosted agents
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "实验管理"
+        TRACK[实验追踪<br/>MLflow/W&B]
+        HP[超参调优<br/>Optuna]
+        REG[模型注册<br/>版本管理]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "评估流水线"
+        BENCH[基准测试<br/>自动评测]
+        HUMAN[人工评估<br/>LLM-as-Judge]
+        DRIFT[漂移检测<br/>数据/概念漂移]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    subgraph "部署流水线"
+        PACKAGE[模型打包<br/>ONNX/TensorRT]
+        TEST[Integration测试<br/>回归检测]
+        DEPLOY[灰度发布<br/>A/B测试]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    TRACK --> HP --> REG
+    REG --> BENCH & HUMAN
+    BENCH & HUMAN --> DRIFT
+    DRIFT --> PACKAGE --> TEST --> DEPLOY
+    subgraph "监控"
+        PERF[性能监控<br/>延迟/吞吐]
+        ALERT[告警规则<br/>异常检测]
+        RETRAIN[触发再训练]
+    end
+    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
+    classDef exp fill:#dbeafe,stroke:#2563eb
+    classDef eval fill:#ede9fe,stroke:#7c3aed
+    classDef deploy fill:#fef3c7,stroke:#d97706
+    classDef mon fill:#d1fae5,stroke:#059669
+    class TRACK,HP,REG exp
+    class BENCH,HUMAN,DRIFT eval
+    class PACKAGE,TEST,DEPLOY deploy
+    class PERF,ALERT,RETRAIN mon
 ```
 
 Buildkite 的定价页面揭示了 CI/CD 平台在 2026 年的竞争格局已从单纯的"构建时长计费"演变为"能力模块化订阅"。其四大核心能力——Pipelines、Test Engine、Package Registries、Mobile Delivery Cloud——覆盖了从代码提交到生产发布的完整链路，这意味着 Buildkite 正在从纯粹的构建执行工具向端到端发布平台转型。

@@ -50,24 +50,38 @@ mindmap
 ## 三大技术架构
 
 ```mermaid
-graph TD
-    subgraph "3层技术架构"
-        BP["业务协议 Business Protocol<br/>治理边界·可行动空间·违规拦截"]
-        AT["Agent Team<br/>研究员/审稿人/复盘者<br/>LLM不直接改线上参数"]
-        FB["真实反馈<br/>实验桶/对照桶/归因<br/>有效→经验 无效→记录"]
+graph TB
+    subgraph "攻击面"
+        PROMPT_INJ[提示注入]
+        DATA_LEAK[数据泄露]
+        SUPPLY[供应链攻击]
+        ADVERSARIAL[对抗样本]
     end
-    subgraph "5层解耦工程"
-        L1["1.业务协议<br/>新增行业补齐"]
-        L2["2.评估口径<br/>新增场景补齐"]
-        L3["3.工具适配<br/>注册新策略动作"]
-        L4["4.Agent Team<br/>Runtime编排接入"]
-        L5["5.Runtime<br/>编排·状态·可视化"]
+    subgraph "防御纵深"
+        WAF[应用防火墙]
+        INPUT_GUARD[输入护栏<br/>意图检测]
+        SANDBOX[沙箱隔离<br/>权限最小化]
+        OUTPUT_GUARD[输出审查<br/>PII过滤]
     end
-    BP --> AT --> FB --> BP
-    L1 --> L2 --> L3 --> L4 --> L5
-    style BP fill:#8b5cf6,stroke:#333,color:#fff
-    style AT fill:#f97316,stroke:#333,color:#fff
-    style FB fill:#22c55e,stroke:#333,color:#fff
+    subgraph "检测响应"
+        IDS[入侵检测<br/>行为异常]
+        SIEM[安全事件中心]
+        AUTO_BLOCK[自动阻断]
+        FORENSIC[取证分析]
+    end
+    PROMPT_INJ --> INPUT_GUARD
+    DATA_LEAK --> OUTPUT_GUARD
+    SUPPLY --> SANDBOX
+    ADVERSARIAL --> WAF
+    INPUT_GUARD & OUTPUT_GUARD --> IDS
+    WAF & SANDBOX --> IDS
+    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
+    classDef attack fill:#fee2e2,stroke:#dc2626
+    classDef defense fill:#dbeafe,stroke:#2563eb
+    classDef detect fill:#fef3c7,stroke:#d97706
+    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
+    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
+    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
 ```
 
 

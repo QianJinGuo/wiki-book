@@ -48,24 +48,33 @@ mindmap
 ## 五模块 + 记忆（Codex / Claude Code 通用）
 
 ```mermaid
-graph TD
-    subgraph "Loop > Harness > Prompt"
-        LP["Loop Engineering<br/>设计替你写提示词的循环"]
-        HS["Harness Engineering<br/>给单个智能体打造运行环境"]
-        PT["Prompt Engineering<br/>人写提示词"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    LP --> HS --> PT
-    subgraph "五模块+记忆"
-        AUTO["自动化任务<br/>cron/goal/loops<br/>心跳: 定时发现+分类"]
-        WT["工作树<br/>git worktree<br/>并行隔离"]
-        SKI["技能 SKILL.md<br/>项目知识固化<br/>认知复利"]
-        MCP["插件/连接器<br/>MCP连接器<br/>接真实工具"]
-        SUB["子智能体<br/>干活+检查分离"]
-        MEM["记忆<br/>跨会话状态<br/>Markdown/Linear"]
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    AUTO --> WT --> SKI --> MCP --> SUB --> MEM
-    style LP fill:#8b5cf6,stroke:#333,color:#fff
-    style AUTO fill:#22c55e,stroke:#333,color:#fff
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 
