@@ -17,6 +17,29 @@ browser-use v0.13 的设计挑战了一个广泛假设：更好的 AI 工具 = �
 
 ## Browser Harness 架构（~600 行）
 
+```mermaid
+graph TD
+    subgraph "四文件架构 ~600行"
+        RUN["run.py ~13行<br/>入口·预加载helpers"]
+        HELP["helpers.py ~192行<br/>薄CDP包装: goto/click/type/screenshot"]
+        DAEM["daemon.py ~220行<br/>CDP WebSocket长连接·崩溃检测+重连"]
+        SKI["SKILL.md<br/>LLM运行时指令"]
+    end
+    subgraph "四步循环"
+        OB["Observe<br/>截图+页面信息"]
+        DE["Decide<br/>最多3个动作/步"]
+        AC["Act<br/>CDP坐标点击穿透一切"]
+        VE["Verify<br/>截图确认"]
+    end
+    OB --> DE --> AC --> VE --> OB
+    RUN --> HELP --> DAEM
+    HELP --> AC
+    SKI --> DE
+    style HELP fill:#22c55e,stroke:#333,color:#fff
+    style AC fill:#f97316,stroke:#333,color:#fff
+```
+
+
 v0.13 将之前上万行 Python 代码（DOM 元素提取器、元素索引器、点击包装器、目标管理器、看门狗、跨域 iframe 处理器）替换为仅四文件：
 
 | 文件 | 行数 | 职责 |

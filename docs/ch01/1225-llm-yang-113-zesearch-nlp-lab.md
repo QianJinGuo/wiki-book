@@ -22,6 +22,22 @@
 
 ## 核心框架：四阶段闭环 + 一控制层
 
+```mermaid
+graph LR
+    DA["1.数据获取<br/>静态筛选→环境交互→合成生成"]
+    DS["2.数据筛选<br/>模型引导评分+自适应选择"]
+    MO["3.模型优化<br/>GRO: 生成→奖励→优化"]
+    IR["4.推理细化<br/>搜索/反思/工具/修正"]
+    AE["自动评估<br/>贯穿全程的控制层"]
+    DA --> DS --> MO --> IR
+    IR -->|"闭环反馈"| DA
+    AE --- DA & DS & MO & IR
+    style DA fill:#8b5cf6,stroke:#333,color:#fff
+    style MO fill:#f97316,stroke:#333,color:#fff
+    style AE fill:#22c55e,stroke:#333,color:#fff
+```
+
+
 ```
 ┌─────────────────────────────────────────────────┐
 │  Data Acquisition → Data Selection → Model Opt. → Inference Refinement  │

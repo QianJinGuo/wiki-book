@@ -50,6 +50,38 @@
 
 ### 3. 12 专家 Agent 体系
 
+```mermaid
+graph TD
+    subgraph "规划层"
+        PA["product-analyst<br/>需求拆解"]
+        RA["requirement-analyst<br/>需求澄清+技术方案"]
+        TP["task-planner<br/>任务拆解+DAG编排"]
+    end
+    subgraph "执行层"
+        PE["proto-engineer<br/>Proto变更"]
+        BE["backend-developer<br/>Worktree开发"]
+        CF["code-fixer<br/>复用性修复"]
+    end
+    subgraph "验证层"
+        UT["unit-tester<br/>单测+覆盖率"]
+        IV["interface-verifier<br/>接口验证+根因"]
+        TC["test-case-designer<br/>用例设计"]
+    end
+    subgraph "审查/集成层"
+        CR["code-reviewer<br/>Codar评审(只评不改)"]
+        PB["publisher<br/>发布+配置重启"]
+        GC["git-committer<br/>提交+MR"]
+    end
+    PA --> RA --> TP
+    TP --> PE & BE & CF
+    PE & BE & CF --> UT & IV & TC
+    UT & IV & TC --> CR
+    CR --> PB & GC
+    style TP fill:#8b5cf6,stroke:#333,color:#fff
+    style CR fill:#ef4444,stroke:#333,color:#fff
+```
+
+
 设计原则——单一职责、上下文隔离、工具最小权限、确定性输入输出（结构化状态文件）、模型可插拔：
 
 | 类别 | Agent | 职责 |

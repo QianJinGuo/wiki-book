@@ -39,6 +39,18 @@
 
 ## 5 步法（核心方法论）
 
+```mermaid
+graph LR
+    S1["Step 1<br/>/plan 需求梳理<br/>14字段设计"] --> S2["Step 2<br/>飞书应用配置<br/>凭证·权限·发布"]
+    S2 --> S3["Step 3<br/>多维表格配置<br/>字段类型匹配"]
+    S3 --> S4["Step 4<br/>SOLO Work模式<br/>自动采集脚本"]
+    S4 --> S5["Step 5<br/>定时任务+监控<br/>7x24稳定运行"]
+    S5 -.->|"3400+帖子"| S3
+    style S1 fill:#8b5cf6,stroke:#333,color:#fff
+    style S5 fill:#22c55e,stroke:#333,color:#fff
+```
+
+
 ### 第一步：和 SOLO 聊需求（`/plan` 命令）
 
 **核心提示词**：

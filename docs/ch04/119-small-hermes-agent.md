@@ -10,6 +10,30 @@ Agent自我进化之所以难，是因为七个维度的困难相互纠缠，而
 
 ## 七重困境 → 设计决策映射
 
+```mermaid
+graph TD
+    subgraph "三层上下文架构"
+        PIN["Pinned Memory<br/>常驻·核心偏好·低频更新"]
+        IDX["Active Index<br/>索引加载·一行摘要·按需展开"]
+        SKI["Triggered Skills<br/>按需加载·token overlap匹配"]
+    end
+    subgraph "双轨反思"
+        MR["微反思 Per-Turn<br/>~500 tokens<br/>启发式触发"]
+        FR["全量反思 Session End<br/>~2000-5000 tokens<br/>累积数据充分"]
+    end
+    subgraph "安全围栏"
+        CORE["不可变核心<br/>代码层面硬约束"]
+        PERI["可变外围<br/>审批是唯一写入路径"]
+    end
+    PIN --> IDX --> SKI
+    MR -->|"候选"| PERI
+    FR -->|"候选"| PERI
+    CORE --> PERI
+    style CORE fill:#ef4444,stroke:#333,color:#fff
+    style PIN fill:#8b5cf6,stroke:#333,color:#fff
+```
+
+
 | 困境 | 解法 |
 |------|------|
 | 方向问题（进化往哪走） | 人类始终在回路中，每个候选需用户审批 |

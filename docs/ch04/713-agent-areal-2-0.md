@@ -30,6 +30,27 @@ AReaL 2.0 瞄准的正是这一薄弱环节，推动 Agent 从「执行闭环」
 
 ### 三根支柱的技术深度拆解
 
+```mermaid
+graph LR
+    subgraph "三根支柱"
+        ATDP["ATDP<br/>智能体轨迹协议<br/>步骤级决策过程记录"]
+        DP["Data Proxy<br/>数据代理<br/>拦截·采集·脱敏·权限"]
+        ECP["Evolution Control Plane<br/>演进控制平面<br/>是否更新·更新哪里"]
+    end
+    subgraph "微服务架构"
+        GW["Gateway<br/>HTTP/WS入口"]
+        RO["Router<br/>会话分配与保持"]
+        ACW["Agent-Compute Worker<br/>推理/训练执行"]
+        CTL["Controller<br/>调度扩缩容"]
+    end
+    GW --> RO --> DP --> ACW
+    CTL --> ACW
+    ATDP --> DP
+    DP --> ECP
+    ECP -.->|"RL/偏好优化/蒸馏"| ACW
+```
+
+
 **第一支柱：ATDP（Agent Trajectory Data Protocol）**
 
 普通日志通常记录用户问了什么、模型答了什么、调用了哪个工具、报错信息、延迟和 token 消耗。但对训练一个要从经验中变强的 Agent 来说，这些远远不够。ATDP 要求以步骤为单位记录完整决策过程：

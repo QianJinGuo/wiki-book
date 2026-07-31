@@ -31,6 +31,26 @@
 
 ### 核心组件
 
+```mermaid
+graph TD
+    subgraph "Agent Room: 共享上下文场"
+        P["产品<br/>钉住核心边界和非目标"]
+        Q["QA<br/>提前设置发布前置·拒绝权"]
+        A["架构<br/>指出复用风险·要求可验证路径"]
+        D["全栈<br/>门禁不满足时停下补DAG"]
+    end
+    DAG["DAG<br/>共识沉淀成依赖"]
+    MEM["Memory<br/>旧阻塞不污染新决策"]
+    RT["Runtime<br/>真实执行"]
+    ART["Artifacts<br/>留下证据"]
+    P & Q & A & D --> DAG
+    P & Q & A & D --> MEM
+    DAG --> RT --> ART
+    Q -.->|"拒绝验收<br/>协作涌现标志"| D
+    style Q fill:#ef4444,stroke:#333,color:#fff
+```
+
+
 - **DAG**：负责把共识沉淀成依赖
 - **Memory**：负责让旧阻塞不反复污染新决策
 - **Runtime**：负责真实执行

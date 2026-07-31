@@ -33,6 +33,26 @@ Harness = Agent - Model
 
 ## 2. 七层金字塔架构总览
 
+```mermaid
+graph TD
+    L7["L7 垂直行业应用<br/>医疗·法律·金融·研发"]
+    L6["L6 多Agent协作<br/>任务分配·共识·冲突解决"]
+    L5["L5 自主决策引擎<br/>目标管理·自主规划·自学习"]
+    L4["L4 记忆系统<br/>短/中/长期记忆·低幻觉RAG"]
+    L3["L3 上下文工程<br/>隔离·压缩·成本优化"]
+    L2["L2 工具系统<br/>标准定义·权限·沙箱·MCP"]
+    L1["L1 核心执行引擎<br/>双循环·多模型·稳定性"]
+    L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+    style L7 fill:#8b5cf6,stroke:#333,color:#fff
+    style L6 fill:#6366f1,stroke:#333,color:#fff
+    style L5 fill:#3b82f6,stroke:#333,color:#fff
+    style L4 fill:#06b6d4,stroke:#333,color:#fff
+    style L3 fill:#22c55e,stroke:#333,color:#fff
+    style L2 fill:#eab308,stroke:#333,color:#000
+    style L1 fill:#ef4444,stroke:#333,color:#fff
+```
+
+
 ||| 层级 | 名称 | 核心问题 |
 |||------|------|---------|
 || L1 | 核心执行引擎 | 双循环、多模型、稳定性 |

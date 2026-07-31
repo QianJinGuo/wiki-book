@@ -16,6 +16,26 @@ Agent 是云计算迎来的**第三类使用者**——继人类操作者和确�
 
 ## Cloud Use 四层能力模型（依赖链）
 
+```mermaid
+graph TD
+    I["Identity Use<br/>谁在操作<br/>独立身份·权限来源·过期时间"]
+    C["Credential Use<br/>凭证怎么用<br/>Vault·短期令牌·服务端代理"]
+    T["Tool/API Use<br/>工具怎么被治理<br/>MCP+权限/约束/审计/限流"]
+    R["Runtime Use<br/>任务怎么活下去<br/>Session·状态·事件流·取消"]
+    I --> C --> T --> R
+    subgraph "成熟度三阶段"
+        M1["1.只读巡检/诊断"]
+        M2["2.带确认的执行"]
+        M3["3.高风险变更(人审批)"]
+    end
+    R --> M1 --> M2 --> M3
+    style I fill:#ef4444,stroke:#333,color:#fff
+    style C fill:#f97316,stroke:#333,color:#fff
+    style T fill:#3b82f6,stroke:#333,color:#fff
+    style R fill:#8b5cf6,stroke:#333,color:#fff
+```
+
+
 | 层级 | 核心问题 | 关键能力 |
 |------|---------|---------|
 | **Identity Use** | 谁在操作 | Agent 不能冒用人的账号，每次动作可回答任务发起者、执行身份、权限来源、过期时间 |

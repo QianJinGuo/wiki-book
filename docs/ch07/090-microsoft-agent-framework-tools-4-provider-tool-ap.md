@@ -28,6 +28,28 @@
 
 ### 1. Function Tools（应用代码）
 
+```mermaid
+graph TD
+    subgraph "4类工具"
+        FT["1.Function Tools<br/>应用代码·@tool<br/>可移植性最好·进程内调度"]
+        HT["2.Hosted Tools<br/>Provider托管<br/>Code Interpreter/File Search"]
+        MT["3.MCP Tools<br/>标准协议接入<br/>Hosted/Local MCP"]
+        FX["4.Foundry扩展<br/>项目级连接<br/>Toolboxes/A2A/Computer Use"]
+    end
+    subgraph "Tool Approval"
+        AUTO["auto_approve<br/>只读/低风险"]
+        REQ["always_require<br/>人工确认"]
+        PERM["per_call<br/>按调用判断"]
+    end
+    FT --> AUTO & REQ & PERM
+    MODEL["模型 tool_call"] --> FT & HT & MT & FX
+    style FT fill:#8b5cf6,stroke:#333,color:#fff
+    style HT fill:#3b82f6,stroke:#333,color:#fff
+    style MT fill:#22c55e,stroke:#333,color:#fff
+    style FX fill:#f97316,stroke:#333,color:#fff
+```
+
+
 **开发者用 `@tool` / `FunctionTool` 暴露的本地函数**，由框架的 function-invoking chat client 在**应用进程内调度**。
 
 **特点**：

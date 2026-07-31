@@ -24,6 +24,26 @@
 - 15% 是偶发重要任务（crucial-but-occasional）
 - 5%+ 是稀疏长尾（the long tail）
 
+```mermaid
+graph TD
+    subgraph L1["L1 常驻 · 80% 覆盖"]
+        L1C["系统提示·核心规则<br/>每次调用常驻·未命中: 1次廉价调用"]
+    end
+    subgraph L2["L2 按需 · 15% 覆盖"]
+        L2C["规格文档·Skill文件<br/>一步发现加载·未命中: 搜索"]
+    end
+    subgraph L3["L3 兜底 · 5%+ 覆盖"]
+        L3C["原始API全集·长尾<br/>3-6次grep定位·零常驻成本"]
+    end
+    Task["用户任务分布"] --> L1C
+    L1C -- "未命中" --> L2C
+    L2C -- "未命中" --> L3C
+    exe["execute_code 单工具<br/>0工具税+编程语言表达力"]
+    L1C --- exe
+    L2C --- exe
+    L3C --- exe
+```
+
 Agent 必须覆盖所有场景，但不可能把一切同时塞进上下文——那正是"提示词臃肿"的失败模式。**真正要解决的问题：在整条任务分布曲线上，最小化每个任务平均消耗的上下文开销**。
 
 ## L1/L2/L3 三层架构

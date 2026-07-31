@@ -20,6 +20,28 @@
 
 ## 三大技术架构
 
+```mermaid
+graph TD
+    subgraph "3层技术架构"
+        BP["业务协议 Business Protocol<br/>治理边界·可行动空间·违规拦截"]
+        AT["Agent Team<br/>研究员/审稿人/复盘者<br/>LLM不直接改线上参数"]
+        FB["真实反馈<br/>实验桶/对照桶/归因<br/>有效→经验 无效→记录"]
+    end
+    subgraph "5层解耦工程"
+        L1["1.业务协议<br/>新增行业补齐"]
+        L2["2.评估口径<br/>新增场景补齐"]
+        L3["3.工具适配<br/>注册新策略动作"]
+        L4["4.Agent Team<br/>Runtime编排接入"]
+        L5["5.Runtime<br/>编排·状态·可视化"]
+    end
+    BP --> AT --> FB --> BP
+    L1 --> L2 --> L3 --> L4 --> L5
+    style BP fill:#8b5cf6,stroke:#333,color:#fff
+    style AT fill:#f97316,stroke:#333,color:#fff
+    style FB fill:#22c55e,stroke:#333,color:#fff
+```
+
+
 ### 1. 业务协议 (Business Protocol) — 给 Agent 一块可安全研究的实验场
 
 **第一层不是 prompt，而是业务协议**——把过去依赖人工经验判断的运营规则转化为**机器可执行、可审计、可版本化的生产边界**。

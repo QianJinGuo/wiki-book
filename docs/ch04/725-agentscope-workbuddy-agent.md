@@ -60,6 +60,28 @@ AgentScope 通过 ToolCallStartEvent、ToolCallDeltaEvent、ToolCallEndEvent 流
 
 ## 四层工具架构
 
+```mermaid
+graph TD
+    subgraph "四层工具架构"
+        T1["基础Tool<br/>Read/Write/Bash"]
+        T2["MCP接入<br/>远程工具"]
+        T3["Skills/Skill Loader<br/>Agent技能"]
+        T4["Tool Group<br/>动态分组"]
+    end
+    T1 --> T2 --> T3 --> T4
+    subgraph "权限系统"
+        PM["DEFAULT<br/>所有操作确认"]
+        PA["ACCEPT_EDITS<br/>放行工作目录读写"]
+        PB["BYPASS<br/>跳过确认"]
+    end
+    USER["用户聊天"] --> MODEL["模型配置<br/>models.json切换"] --> REACT["ReAct循环"]
+    REACT --> TK["Toolkit"]
+    TK --> T1 & T2 & T3 & T4
+    TK --> PM & PA & PB
+    style TK fill:#8b5cf6,stroke:#333,color:#fff
+```
+
+
 mini-WorkBuddy 的工具组织为四层：基础 Tool（Read/Write/Bash）→ MCP 接入 → Skills/Skill Loader → Tool Group 动态分组。这套结构为后续拆解"专家"和"专家团"能力提供了可扩展的工具基础。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我用阿里-agentscope-复刻了一个-workbuddy.md)
