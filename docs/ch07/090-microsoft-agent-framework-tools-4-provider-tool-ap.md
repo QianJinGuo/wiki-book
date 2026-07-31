@@ -49,24 +49,33 @@ mindmap
 ### 1. Function Tools（应用代码）
 
 ```mermaid
-graph TD
-    subgraph "4类工具"
-        FT["1.Function Tools<br/>应用代码·@tool<br/>可移植性最好·进程内调度"]
-        HT["2.Hosted Tools<br/>Provider托管<br/>Code Interpreter/File Search"]
-        MT["3.MCP Tools<br/>标准协议接入<br/>Hosted/Local MCP"]
-        FX["4.Foundry扩展<br/>项目级连接<br/>Toolboxes/A2A/Computer Use"]
+graph TB
+    subgraph "Agent 内核"
+        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
+        EX --> OB[观察器<br/>Observer]
+        OB -->|"反馈"| PL
     end
-    subgraph "Tool Approval"
-        AUTO["auto_approve<br/>只读/低风险"]
-        REQ["always_require<br/>人工确认"]
-        PERM["per_call<br/>按调用判断"]
+    subgraph "能力层"
+        SK[技能<br/>Skills]
+        TL[工具<br/>Tools]
+        MM[记忆<br/>Memory]
     end
-    FT --> AUTO & REQ & PERM
-    MODEL["模型 tool_call"] --> FT & HT & MT & FX
-    style FT fill:#8b5cf6,stroke:#333,color:#fff
-    style HT fill:#3b82f6,stroke:#333,color:#fff
-    style MT fill:#22c55e,stroke:#333,color:#fff
-    style FX fill:#f97316,stroke:#333,color:#fff
+    PL --> SK
+    PL --> MM
+    EX --> TL
+    OB --> MM
+    subgraph "护栏"
+        GRD[输入校验]
+        OUT_GRD[输出过滤]
+    end
+    IN[用户意图] --> GRD --> PL
+    OUT[响应] --> OUT_GRD --> USR[用户]
+    classDef core fill:#dbeafe,stroke:#2563eb
+    classDef cap fill:#ede9fe,stroke:#7c3aed
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    class PL,EX,OB core
+    class SK,TL,MM cap
+    class GRD,OUT_GRD guard
 ```
 
 

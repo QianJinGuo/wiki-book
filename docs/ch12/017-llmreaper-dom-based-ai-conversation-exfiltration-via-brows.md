@@ -3,16 +3,38 @@
 ## Ch12.017 LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
 ```mermaid
-sequenceDiagram
-    participant User as 用户
-    participant Ext as 恶意浏览器扩展
-    participant DOM as DOM 树
-    participant AI as AI 对话页面
-    participant Exfil as 攻击者服务器
-    User->>AI: 输入敏感信息
-    AI->>DOM: 渲染对话内容
-    Ext->>DOM: 读取 DOM 节点
-    Ext->>Exfil: 外传对话数据
+graph TB
+    subgraph "攻击面"
+        PROMPT_INJ[提示注入]
+        DATA_LEAK[数据泄露]
+        SUPPLY[供应链攻击]
+        ADVERSARIAL[对抗样本]
+    end
+    subgraph "防御纵深"
+        WAF[应用防火墙]
+        INPUT_GUARD[输入护栏<br/>意图检测]
+        SANDBOX[沙箱隔离<br/>权限最小化]
+        OUTPUT_GUARD[输出审查<br/>PII过滤]
+    end
+    subgraph "检测响应"
+        IDS[入侵检测<br/>行为异常]
+        SIEM[安全事件中心]
+        AUTO_BLOCK[自动阻断]
+        FORENSIC[取证分析]
+    end
+    PROMPT_INJ --> INPUT_GUARD
+    DATA_LEAK --> OUTPUT_GUARD
+    SUPPLY --> SANDBOX
+    ADVERSARIAL --> WAF
+    INPUT_GUARD & OUTPUT_GUARD --> IDS
+    WAF & SANDBOX --> IDS
+    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
+    classDef attack fill:#fee2e2,stroke:#dc2626
+    classDef defense fill:#dbeafe,stroke:#2563eb
+    classDef detect fill:#fef3c7,stroke:#d97706
+    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
+    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
+    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
 ```
 
 > 📊 Level ⭐⭐ | 18.1KB | `entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md`

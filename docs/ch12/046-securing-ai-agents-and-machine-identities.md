@@ -41,43 +41,37 @@ Shareable link: https://excalidraw.com/#json=OUQMTvqOC0O-tqvY2kjvR,0k90NsmJUHkic
 ### 架构图（Mermaid / 知识源 / 可嵌入）
 
 ```mermaid
-flowchart TB
-    subgraph Inputs[Input / Source]
-        A["AI Agent\nNon-Human Identity"]
-        B["Developer Endpoints\nIDE, Tools"]
-        C["CI/CD Pipelines\nAutomation"]
+graph TB
+    subgraph "意图理解"
+        NAT[自然语言描述] --> PARSE[意图解析]
+        PARSE --> CTX[上下文收集<br/>代码库/配置]
     end
-
-    D["Traditional IAM\n(Limitations)"]
-
-    subgraph Solution[1Password Solution]
-        E["Endpoint Discovery\n端点发现"]
-        F["Usage Protection\n使用时保护"]
-        G["Unified Audit\n统一审计"]
+    subgraph "代码生成"
+        PLAN[任务分解] --> GEN[代码生成]
+        GEN --> REVIEW[静态分析]
+        REVIEW -->|"问题"| GEN
     end
-
-    H["Core Risks\n治理盲区 | 凭证蔓延 | 审计薄弱"]
-    I["Best Practices\n动态保护 | 零信任 | 最小权限"]
-
-    A --> D
-    B --> Solution
-    C --> Solution
-    D -.-> Solution
-    Solution --> H
-    Solution --> I
-
-    classDef input fill:#a5d8ff,stroke:#1e1e1e,stroke-width:2px
-    classDef processing fill:#d0bfff,stroke:#1e1e1e,stroke-width:3px
-    classDef storage fill:#c3fae8,stroke:#1e1e1e
-    classDef output fill:#b2f2bb,stroke:#1e1e1e
-    classDef warning fill:#ffd8a8,stroke:#1e1e1e
-    classDef critical fill:#ffc9c9,stroke:#1e1e1e
-
-    class A,H critical
-    class B,C input
-    class D warning
-    class E,F,G processing
-    class I output
+    subgraph "验证闭环"
+        TEST[运行测试]
+        LINT[风格检查]
+        FIX[自动修复]
+    end
+    GEN --> TEST & LINT
+    TEST -->|"失败"| FIX --> GEN
+    subgraph "知识库"
+        SKILLS[技能/模板]
+        DOCS[文档/示例]
+    end
+    CTX --> PLAN
+    PLAN --> SKILLS & DOCS
+    classDef intent fill:#dbeafe,stroke:#2563eb
+    classDef gen fill:#ede9fe,stroke:#7c3aed
+    classDef verify fill:#d1fae5,stroke:#059669
+    classDef kb fill:#fef3c7,stroke:#d97706
+    class NAT,PARSE,CTX intent
+    class PLAN,GEN,REVIEW gen
+    class TEST,LINT,FIX verify
+    class SKILLS,DOCS kb
 ```
 
 ### 封面图（AI 生成 / 装饰参考，仅供参考）

@@ -37,32 +37,38 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "工作记忆"
+        CTX[上下文窗口<br/>当前对话]
+        ATTN[注意力机制<br/>关键信息加权]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "短期记忆"
+        SESSION[Session 存储<br/>对话历史]
+        CACHE[临时缓存<br/>中间结果]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    subgraph "长期记忆"
+        VDB[(向量数据库<br/>语义检索)]
+        KG[(知识图谱<br/>关系存储)]
+        STRUCT[(结构化存储<br/>用户画像)]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    CTX --> ATTN --> SESSION --> CACHE
+    CACHE --> VDB & KG & STRUCT
+    subgraph "记忆管理"
+        IMPORT[重要性评分]
+        COMPRESS[压缩摘要]
+        FORGET[遗忘策略]
+    end
+    VDB & KG & STRUCT --> IMPORT
+    IMPORT --> COMPRESS
+    IMPORT --> FORGET
+    COMPRESS -->|"注入"| CTX
+    classDef work fill:#fee2e2,stroke:#dc2626
+    classDef short fill:#fef3c7,stroke:#d97706
+    classDef long fill:#dbeafe,stroke:#2563eb
+    classDef mgmt fill:#ede9fe,stroke:#7c3aed
+    class CTX,ATTN work
+    class SESSION,CACHE short
+    class VDB,KG,STRUCT long
+    class IMPORT,COMPRESS,FORGET mgmt
 ```
 
 

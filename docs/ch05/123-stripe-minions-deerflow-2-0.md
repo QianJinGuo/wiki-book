@@ -34,21 +34,33 @@ mindmap
 ## 三家公司对照
 
 ```mermaid
-graph TD
-    subgraph "共同工程原则"
-        ISO["隔离<br/>避免任务间互相污染"]
-        DIV["分工<br/>不让单个AI承担所有判断"]
-        VER["验证<br/>关键节点硬规定不能跳过"]
-        FAL["兜底<br/>失败有重试上限和人工介入"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    ST["Stripe Minions<br/>1300+任务/周·无人干预<br/>隔离工作台+工具按需+验证硬规定"]
-    BY["字节 DeerFlow 2.0<br/>GitHub全球热榜第一<br/>独立空间+多AI并行+中间压缩存档"]
-    AN["蚂蚁支小助<br/>4AI分工: 规划/执行/表达/评审"]
-    ST & BY & AN --> ISO & DIV & VER & FAL
-    style ISO fill:#8b5cf6,stroke:#333,color:#fff
-    style DIV fill:#3b82f6,stroke:#333,color:#fff
-    style VER fill:#22c55e,stroke:#333,color:#fff
-    style FAL fill:#f97316,stroke:#333,color:#fff
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 

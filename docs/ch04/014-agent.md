@@ -33,39 +33,32 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "Agent 内核"
+        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
+        EX --> OB[观察器<br/>Observer]
+        OB -->|"反馈"| PL
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "能力层"
+        SK[技能<br/>Skills]
+        TL[工具<br/>Tools]
+        MM[记忆<br/>Memory]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    PL --> SK
+    PL --> MM
+    EX --> TL
+    OB --> MM
+    subgraph "护栏"
+        GRD[输入校验]
+        OUT_GRD[输出过滤]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    IN[用户意图] --> GRD --> PL
+    OUT[响应] --> OUT_GRD --> USR[用户]
+    classDef core fill:#dbeafe,stroke:#2563eb
+    classDef cap fill:#ede9fe,stroke:#7c3aed
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    class PL,EX,OB core
+    class SK,TL,MM cap
+    class GRD,OUT_GRD guard
 ```
 
 Pi Agent 的核心设计哲学体现了一种彻底的极简主义：仅用三个抽象（Agent、Tools、Extensions）就撑起了整个框架，而把所有的复杂性都推到了扩展层。Agent 负责与大模型对话推理，Tools 定义 Agent 可调用的能力，Extensions 则是对外开放的扩展系统——没有工作流编排器、没有状态机图引擎、没有记忆检索层。这种"极度克制的核心"策略使得框架本身的学习曲线极低，同时将复杂性封装在可插拔的扩展中，让用户按需引入。

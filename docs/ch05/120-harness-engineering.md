@@ -1,26 +1,33 @@
 # Harness Engineering 四根支柱与四要素架构
 
 ```mermaid
-graph TD
-    subgraph "四根支柱"
-        S1["Observability<br/>可观测"]
-        S2["Guardrails<br/>护栏"]
-        S3["State Mgmt<br/>状态管理"]
-        S4["Context Mgmt<br/>上下文管理"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    subgraph "四要素 .harness/"
-        AG["agents/<br/>Application Owner<br/>编排中枢·400行"]
-        RU["rules/<br/>工程结构·开发流程·编码规范"]
-        SK["skills/<br/>9个Skill·8份分层编码规范"]
-        CH["changes/<br/>变更管理·完整Audit Trail"]
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    subgraph "10阶段Pipeline"
-        P1["1.需求分析"] --> P2["2.需求评审"] --> P3["3.编码实现"] --> P4["4.编码评审"] --> P5["5.单元测试"]
-        P5 --> P6["6.测试评审"] --> P7["7.代码推送"] --> P8["8.CI验证"] --> P9["9.部署验证"] --> P10["10.用户确认"]
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
     end
-    S1 & S2 & S3 & S4 --> AG
-    AG --> RU & SK & CH
-    style AG fill:#8b5cf6,stroke:#333,color:#fff
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 

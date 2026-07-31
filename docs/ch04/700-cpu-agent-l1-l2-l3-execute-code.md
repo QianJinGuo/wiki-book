@@ -53,23 +53,39 @@ mindmap
 - 5%+ 是稀疏长尾（the long tail）
 
 ```mermaid
-graph TD
-    subgraph L1["L1 常驻 · 80% 覆盖"]
-        L1C["系统提示·核心规则<br/>每次调用常驻·未命中: 1次廉价调用"]
+graph TB
+    subgraph "工作记忆"
+        CTX[上下文窗口<br/>当前对话]
+        ATTN[注意力机制<br/>关键信息加权]
     end
-    subgraph L2["L2 按需 · 15% 覆盖"]
-        L2C["规格文档·Skill文件<br/>一步发现加载·未命中: 搜索"]
+    subgraph "短期记忆"
+        SESSION[Session 存储<br/>对话历史]
+        CACHE[临时缓存<br/>中间结果]
     end
-    subgraph L3["L3 兜底 · 5%+ 覆盖"]
-        L3C["原始API全集·长尾<br/>3-6次grep定位·零常驻成本"]
+    subgraph "长期记忆"
+        VDB[(向量数据库<br/>语义检索)]
+        KG[(知识图谱<br/>关系存储)]
+        STRUCT[(结构化存储<br/>用户画像)]
     end
-    Task["用户任务分布"] --> L1C
-    L1C -- "未命中" --> L2C
-    L2C -- "未命中" --> L3C
-    exe["execute_code 单工具<br/>0工具税+编程语言表达力"]
-    L1C --- exe
-    L2C --- exe
-    L3C --- exe
+    CTX --> ATTN --> SESSION --> CACHE
+    CACHE --> VDB & KG & STRUCT
+    subgraph "记忆管理"
+        IMPORT[重要性评分]
+        COMPRESS[压缩摘要]
+        FORGET[遗忘策略]
+    end
+    VDB & KG & STRUCT --> IMPORT
+    IMPORT --> COMPRESS
+    IMPORT --> FORGET
+    COMPRESS -->|"注入"| CTX
+    classDef work fill:#fee2e2,stroke:#dc2626
+    classDef short fill:#fef3c7,stroke:#d97706
+    classDef long fill:#dbeafe,stroke:#2563eb
+    classDef mgmt fill:#ede9fe,stroke:#7c3aed
+    class CTX,ATTN work
+    class SESSION,CACHE short
+    class VDB,KG,STRUCT long
+    class IMPORT,COMPRESS,FORGET mgmt
 ```
 
 Agent 必须覆盖所有场景，但不可能把一切同时塞进上下文——那正是"提示词臃肿"的失败模式。**真正要解决的问题：在整条任务分布曲线上，最小化每个任务平均消耗的上下文开销**。

@@ -61,23 +61,34 @@ Claude Code 的源码揭示了一个核心趋势：**单Agent架构有其能力�
 ## 多Agent协作的核心架构模式
 
 ```mermaid
-graph TD
-    subgraph "1.父子层级 Parent-Child"
-        PO["Parent Orchestrator<br/>整体决策+上下文管理"]
-        PO --> WA1["Worker 1 调研<br/>只读不写"]
-        PO --> WA2["Worker 2 规划<br/>只设计不执行"]
-        PO --> WA3["Worker 3 执行<br/>代码修改"]
+graph TB
+    subgraph "编排层"
+        COORD[协调器<br/>Orchestrator]
+        QUEUE[消息队列]
     end
-    subgraph "2.水平分工 Horizontal"
-        HA1["代码Agent"] --- HA2["文档Agent"] --- HA3["测试Agent"]
-        HA1 & HA2 & HA3 --> SC["共享上下文/结果汇总"]
+    subgraph "Agent 团队"
+        W1["Worker A<br/>专项能力1"]
+        W2["Worker B<br/>专项能力2"]
+        W3["Worker C<br/>专项能力3"]
     end
-    subgraph "3.流水线 Pipeline"
-        PA1["Explore<br/>只读探索"] --> PA2["Plan<br/>对齐思路"] --> PA3["Act<br/>改代码"]
+    COORD --> QUEUE
+    QUEUE --> W1 & W2 & W3
+    W1 & W2 & W3 -->|"结果"| QUEUE
+    QUEUE -->|"汇总"| COORD
+    subgraph "共享层"
+        SHARED_MEM[共享记忆]
+        TOOL_BUS[工具总线]
     end
-    style PO fill:#8b5cf6,stroke:#333,color:#fff
-    style PA1 fill:#3b82f6,stroke:#333,color:#fff
-    style PA3 fill:#22c55e,stroke:#333,color:#fff
+    W1 & W2 & W3 --> SHARED_MEM
+    W1 & W2 & W3 --> TOOL_BUS
+    IN[任务输入] --> COORD
+    COORD --> OUT[结果输出]
+    classDef coord fill:#dbeafe,stroke:#2563eb
+    classDef worker fill:#ede9fe,stroke:#7c3aed
+    classDef shared fill:#fef3c7,stroke:#d97706
+    class COORD,QUEUE coord
+    class W1,W2,W3 worker
+    class SHARED_MEM,TOOL_BUS shared
 ```
 
 

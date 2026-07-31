@@ -77,24 +77,33 @@ AgentScope 通过 ToolCallStartEvent、ToolCallDeltaEvent、ToolCallEndEvent 流
 ## 四层工具架构
 
 ```mermaid
-graph TD
-    subgraph "四层工具架构"
-        T1["基础Tool<br/>Read/Write/Bash"]
-        T2["MCP接入<br/>远程工具"]
-        T3["Skills/Skill Loader<br/>Agent技能"]
-        T4["Tool Group<br/>动态分组"]
+graph TB
+    subgraph "Agent 内核"
+        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
+        EX --> OB[观察器<br/>Observer]
+        OB -->|"反馈"| PL
     end
-    T1 --> T2 --> T3 --> T4
-    subgraph "权限系统"
-        PM["DEFAULT<br/>所有操作确认"]
-        PA["ACCEPT_EDITS<br/>放行工作目录读写"]
-        PB["BYPASS<br/>跳过确认"]
+    subgraph "能力层"
+        SK[技能<br/>Skills]
+        TL[工具<br/>Tools]
+        MM[记忆<br/>Memory]
     end
-    USER["用户聊天"] --> MODEL["模型配置<br/>models.json切换"] --> REACT["ReAct循环"]
-    REACT --> TK["Toolkit"]
-    TK --> T1 & T2 & T3 & T4
-    TK --> PM & PA & PB
-    style TK fill:#8b5cf6,stroke:#333,color:#fff
+    PL --> SK
+    PL --> MM
+    EX --> TL
+    OB --> MM
+    subgraph "护栏"
+        GRD[输入校验]
+        OUT_GRD[输出过滤]
+    end
+    IN[用户意图] --> GRD --> PL
+    OUT[响应] --> OUT_GRD --> USR[用户]
+    classDef core fill:#dbeafe,stroke:#2563eb
+    classDef cap fill:#ede9fe,stroke:#7c3aed
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    class PL,EX,OB core
+    class SK,TL,MM cap
+    class GRD,OUT_GRD guard
 ```
 
 

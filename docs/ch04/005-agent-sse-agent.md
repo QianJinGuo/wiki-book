@@ -33,19 +33,33 @@ mindmap
 ## 核心要点
 
 ```mermaid
-sequenceDiagram
-    participant 前端
-    participant 后端
-    participant Agent
-    前端->>后端: POST /chat (fetch + ReadableStream)
-    后端->>Agent: 启动 generator
-    loop 事件流
-        Agent-->>后端: yield 事件 (token/tool_start/tool_result)
-        后端-->>前端: SSE data: 事件行
-        前端->>前端: buffer拼接 + 前缀分发
+graph TB
+    subgraph "Agent 内核"
+        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
+        EX --> OB[观察器<br/>Observer]
+        OB -->|"反馈"| PL
     end
-    Agent-->>后端: yield __done__
-    后端-->>前端: SSE data: __done__
+    subgraph "能力层"
+        SK[技能<br/>Skills]
+        TL[工具<br/>Tools]
+        MM[记忆<br/>Memory]
+    end
+    PL --> SK
+    PL --> MM
+    EX --> TL
+    OB --> MM
+    subgraph "护栏"
+        GRD[输入校验]
+        OUT_GRD[输出过滤]
+    end
+    IN[用户意图] --> GRD --> PL
+    OUT[响应] --> OUT_GRD --> USR[用户]
+    classDef core fill:#dbeafe,stroke:#2563eb
+    classDef cap fill:#ede9fe,stroke:#7c3aed
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    class PL,EX,OB core
+    class SK,TL,MM cap
+    class GRD,OUT_GRD guard
 ```
 
 - **事件驱动架构**：Agent 运行过程中不断 yield 事件（文本 token、推理片段、工具调用、工具结果），前端通过 SSE 流实时消费，而非等待完整响应

@@ -51,22 +51,33 @@ mindmap
 ### 核心组件
 
 ```mermaid
-graph TD
-    subgraph "Agent Room: 共享上下文场"
-        P["产品<br/>钉住核心边界和非目标"]
-        Q["QA<br/>提前设置发布前置·拒绝权"]
-        A["架构<br/>指出复用风险·要求可验证路径"]
-        D["全栈<br/>门禁不满足时停下补DAG"]
+graph TB
+    subgraph "Agent 内核"
+        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
+        EX --> OB[观察器<br/>Observer]
+        OB -->|"反馈"| PL
     end
-    DAG["DAG<br/>共识沉淀成依赖"]
-    MEM["Memory<br/>旧阻塞不污染新决策"]
-    RT["Runtime<br/>真实执行"]
-    ART["Artifacts<br/>留下证据"]
-    P & Q & A & D --> DAG
-    P & Q & A & D --> MEM
-    DAG --> RT --> ART
-    Q -.->|"拒绝验收<br/>协作涌现标志"| D
-    style Q fill:#ef4444,stroke:#333,color:#fff
+    subgraph "能力层"
+        SK[技能<br/>Skills]
+        TL[工具<br/>Tools]
+        MM[记忆<br/>Memory]
+    end
+    PL --> SK
+    PL --> MM
+    EX --> TL
+    OB --> MM
+    subgraph "护栏"
+        GRD[输入校验]
+        OUT_GRD[输出过滤]
+    end
+    IN[用户意图] --> GRD --> PL
+    OUT[响应] --> OUT_GRD --> USR[用户]
+    classDef core fill:#dbeafe,stroke:#2563eb
+    classDef cap fill:#ede9fe,stroke:#7c3aed
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    class PL,EX,OB core
+    class SK,TL,MM cap
+    class GRD,OUT_GRD guard
 ```
 
 

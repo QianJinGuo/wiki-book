@@ -77,28 +77,38 @@ nonstop 项目成果数据  ：
 ###  ** 三、核心问题：AI Coding在大型项目里为什么容易翻车？  **
 
 ```mermaid
-graph TD
-    subgraph "腾讯CDN LEGO挑战"
-        CODE["100万行核心代码<br/>300万行深度改造第三方库"]
-        DIM["维度组合爆炸<br/>13,824×N种理论路径"]
-        RISK["一行失误→全网事故"]
+graph TB
+    subgraph "攻击面"
+        PROMPT_INJ[提示注入]
+        DATA_LEAK[数据泄露]
+        SUPPLY[供应链攻击]
+        ADVERSARIAL[对抗样本]
     end
-    subgraph "Harness五层架构"
-        H1["1.知识层<br/>规则/规范/最佳实践"]
-        H2["2.工具层<br/>沙箱/权限/多模型"]
-        H3["3.流程层<br/>CR门禁/自动化验证"]
-        H4["4.对抗层<br/>多模型对抗式CR"]
-        H5["5.运行时层<br/>监控/回滚/灰度"]
+    subgraph "防御纵深"
+        WAF[应用防火墙]
+        INPUT_GUARD[输入护栏<br/>意图检测]
+        SANDBOX[沙箱隔离<br/>权限最小化]
+        OUTPUT_GUARD[输出审查<br/>PII过滤]
     end
-    CODE --> DIM --> RISK
-    RISK -->|"不是用AI而是驾驭AI"| H1
-    H1 --> H2 --> H3 --> H4 --> H5
-    subgraph "验证: Nonstop项目"
-        NS["20天·1人+AI<br/>Rust零人工代码<br/>42K QPS / 0错误"]
+    subgraph "检测响应"
+        IDS[入侵检测<br/>行为异常]
+        SIEM[安全事件中心]
+        AUTO_BLOCK[自动阻断]
+        FORENSIC[取证分析]
     end
-    NS --> H5
-    style RISK fill:#ef4444,stroke:#333,color:#fff
-    style H4 fill:#f97316,stroke:#333,color:#fff
+    PROMPT_INJ --> INPUT_GUARD
+    DATA_LEAK --> OUTPUT_GUARD
+    SUPPLY --> SANDBOX
+    ADVERSARIAL --> WAF
+    INPUT_GUARD & OUTPUT_GUARD --> IDS
+    WAF & SANDBOX --> IDS
+    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
+    classDef attack fill:#fee2e2,stroke:#dc2626
+    classDef defense fill:#dbeafe,stroke:#2563eb
+    classDef detect fill:#fef3c7,stroke:#d97706
+    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
+    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
+    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
 ```
 
 尽管nonstop  让我  们  探测  出  AI 编码的能力边界与行为特性  ，但在实际应用AI Coding的过程中，我们也发现了许多问题和挑战。

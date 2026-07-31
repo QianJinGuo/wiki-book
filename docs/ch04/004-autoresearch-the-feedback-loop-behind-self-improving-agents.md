@@ -28,39 +28,26 @@ Autoresearch is the paradigm where AI agents build feedback loops to improve the
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "ReAct 循环"
+        IN[用户输入] --> TH[思考<br/>Reasoning]
+        TH --> AC[行动<br/>Action]
+        AC --> OB[观察<br/>Observation]
+        OB -->|"新信息触发"| TH
+        TH -->|"推理完成"| OUT[最终回答]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "记忆"
+        WM[工作记忆<br/>上下文窗口]
+        SM[短期记忆<br/>会话存储]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    TH --> WM
+    OB --> SM
+    SM -->|"回忆"| TH
+    classDef think fill:#dbeafe,stroke:#2563eb
+    classDef act fill:#d1fae5,stroke:#059669
+    classDef mem fill:#fef3c7,stroke:#d97706
+    class TH,OUT think
+    class AC,OB act
+    class WM,SM mem
 ```
 
 1. Autoresearch extends the concept of agent loops from "agent doing work" to "agent improving how it does work"

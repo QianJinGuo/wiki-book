@@ -33,32 +33,36 @@ eBay 场景下传统召回方法面临三个主要挑战：
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "查询处理"
+        Q[用户查询] --> REWRITE[查询改写]
+        REWRITE --> EXPAND[查询扩展]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "多路召回"
+        BM25[BM25<br/>关键词检索]
+        VDB[向量检索<br/>语义相似度]
+        GRAPH[近邻图<br/>TF-IDF余弦]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    EXPAND --> BM25 & VDB & GRAPH
+    subgraph "重排序与融合"
+        RERANK[Reranker<br/>交叉编码器]
+        MERGE[分数融合<br/>RRF/加权]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    BM25 & VDB & GRAPH --> RERANK --> MERGE
+    subgraph "上下文工程"
+        INJECT[上下文注入]
+        COMPRESS[压缩/摘要]
+    end
+    MERGE --> INJECT --> COMPRESS
+    COMPRESS --> LLM[LLM 生成]
+    LLM --> ANS[回答]
+    classDef query fill:#dbeafe,stroke:#2563eb
+    classDef recall fill:#ede9fe,stroke:#7c3aed
+    classDef rerank fill:#fef3c7,stroke:#d97706
+    classDef ctx fill:#d1fae5,stroke:#059669
+    class Q,REWRITE,EXPAND query
+    class BM25,VDB,GRAPH recall
+    class RERANK,MERGE rerank
+    class INJECT,COMPRESS,LLM ctx
 ```
 
 

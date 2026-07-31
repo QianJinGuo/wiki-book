@@ -3,19 +3,40 @@
 ## Ch04.036 Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock
 
 ```mermaid
-sequenceDiagram
-    participant User as 用户
-    participant Policy as Policy Interceptor
-    participant Lambda as Lambda Interceptor
-    participant Agent as Bedrock Agent
-    User->>Policy: 请求
-    Policy->>Policy: 检查策略合规
-    Policy->>Lambda: 通过策略检查
-    Lambda->>Lambda: 执行预处理逻辑
-    Lambda->>Agent: 转发请求
-    Agent-->>Lambda: 返回结果
-    Lambda-->>Policy: 后处理
-    Policy-->>User: 响应
+graph TB
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
+    end
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 > 📊 Level ⭐⭐ | 32.4KB | `entities/secure-ai-agents-policy-lambda-interceptors-aws.md`

@@ -29,39 +29,31 @@ Dean Ball 是 AI 治理领域的重要思想家，其博客 *Hyperdimensional* �
 
 ```mermaid
 graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+    subgraph "法规要求"
+        GDPR[GDPR<br/>数据保护]
+        INDUSTRY[行业标准<br/>金融/医疗]
+        LOCAL[地方法规<br/>网安法/个保法]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "实施层"
+        MAP[合规映射<br/>要求→措施]
+        IMPL[技术实施<br/>加密/脱敏/审计]
+        TRAIN[人员培训<br/>意识提升]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    GDPR & INDUSTRY & LOCAL --> MAP
+    MAP --> IMPL & TRAIN
+    subgraph "审计层"
+        INTERNAL[内部审计<br/>自查自纠]
+        EXTERNAL[外部审计<br/>第三方认证]
+        REPORT[合规报告<br/>持续更新]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    IMPL --> INTERNAL --> EXTERNAL --> REPORT
+    REPORT -->|"法规变化"| MAP
+    classDef req fill:#fee2e2,stroke:#dc2626
+    classDef impl fill:#dbeafe,stroke:#2563eb
+    classDef audit fill:#d1fae5,stroke:#059669
+    class GDPR,INDUSTRY,LOCAL req
+    class MAP,IMPL,TRAIN impl
+    class INTERNAL,EXTERNAL,REPORT audit
 ```
 
 

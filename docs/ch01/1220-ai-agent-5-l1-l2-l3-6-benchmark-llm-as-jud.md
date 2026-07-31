@@ -62,28 +62,40 @@ mindmap
 ## 二、5 维 Agent 评测指标体系
 
 ```mermaid
-graph TD
-    subgraph "5维评测指标"
-        D1["① 任务完成度<br/>北极星指标<br/>L1严格/L2基本/L3失败"]
-        D2["② 工具使用质量<br/>选择准确率/参数准确率"]
-        D3["③ 规划与推理<br/>合理性/效率/死循环率/恢复率"]
-        D4["④ SubAgent协作<br/>创建时机/并行/整合质量"]
-        D5["⑤ 安全与效率<br/>危险操作率/幻觉率/成本"]
+graph TB
+    subgraph "输入处理"
+        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
+        EMB --> POS[位置编码<br/>RoPE/ALiBi]
     end
-    subgraph "L1/L2/L3准出分级"
-        L1["L1 ≥40% 代码Agent<br/>严格成功·零人工修正"]
-        L2["L2 ≥75% 基本成功<br/>少量人工修正"]
-        L3["L3 失败<br/>输出无法使用"]
+    subgraph "Transformer Block ×N"
+        ATT[Multi-Head Attention<br/>自注意力]
+        ADD1[残差连接+LayerNorm]
+        FFN[FFN / MoE<br/>前馈/混合专家]
+        ADD2[残差连接+LayerNorm]
+        POS --> ATT --> ADD1 --> FFN --> ADD2
     end
-    subgraph "LLM-as-Judge三模式"
-        J1["结果模式<br/>只判最终输出"]
-        J2["工具链模式<br/>判调用路径"]
-        J3["对比模式<br/>两Agent输出对比"]
+    subgraph "输出"
+        PROJ[输出投影]
+        SOFT[Softmax / Sampling]
+        NEXT[Next-Token]
     end
-    D1 --> L1 & L2 & L3
-    D1 & D2 & D3 --> J1 & J2 & J3
-    style D1 fill:#8b5cf6,stroke:#333,color:#fff
-    style L1 fill:#22c55e,stroke:#333,color:#fff
+    ADD2 --> PROJ --> SOFT --> NEXT
+    subgraph "优化技术"
+        KV[KV Cache<br/>PagedAttention]
+        QUANT[量化 INT4/8]
+        SPEC[投机解码]
+    end
+    ATT --> KV
+    FFN --> QUANT
+    SOFT --> SPEC
+    classDef input fill:#fef3c7,stroke:#d97706
+    classDef block fill:#dbeafe,stroke:#2563eb
+    classDef output fill:#d1fae5,stroke:#059669
+    classDef opt fill:#ede9fe,stroke:#7c3aed
+    class TOK,EMB,POS input
+    class ATT,ADD1,FFN,ADD2 block
+    class PROJ,SOFT,NEXT output
+    class KV,QUANT,SPEC opt
 ```
 
 

@@ -72,34 +72,33 @@ mindmap
 ### 3. 12 专家 Agent 体系
 
 ```mermaid
-graph TD
-    subgraph "规划层"
-        PA["product-analyst<br/>需求拆解"]
-        RA["requirement-analyst<br/>需求澄清+技术方案"]
-        TP["task-planner<br/>任务拆解+DAG编排"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    subgraph "执行层"
-        PE["proto-engineer<br/>Proto变更"]
-        BE["backend-developer<br/>Worktree开发"]
-        CF["code-fixer<br/>复用性修复"]
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    subgraph "验证层"
-        UT["unit-tester<br/>单测+覆盖率"]
-        IV["interface-verifier<br/>接口验证+根因"]
-        TC["test-case-designer<br/>用例设计"]
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
     end
-    subgraph "审查/集成层"
-        CR["code-reviewer<br/>Codar评审(只评不改)"]
-        PB["publisher<br/>发布+配置重启"]
-        GC["git-committer<br/>提交+MR"]
-    end
-    PA --> RA --> TP
-    TP --> PE & BE & CF
-    PE & BE & CF --> UT & IV & TC
-    UT & IV & TC --> CR
-    CR --> PB & GC
-    style TP fill:#8b5cf6,stroke:#333,color:#fff
-    style CR fill:#ef4444,stroke:#333,color:#fff
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 

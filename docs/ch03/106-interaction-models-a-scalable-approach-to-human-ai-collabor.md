@@ -30,40 +30,39 @@ Thinking Machines Lab 发布了交互模型（Interaction Models）的研究预�
 ## 核心要点
 
 ```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
+graph LR
+    subgraph "数据准备"
+        RAW[原始数据] --> CLEAN[清洗过滤]
+        CLEAN --> ANNOTATE[标注/质量筛选]
+        ANNOTATE --> SPLIT[训练/验证分割]
     end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
+    subgraph "训练阶段"
+        PRE[预训练<br/>Next-Token]
+        SFT[监督微调<br/>指令跟随]
+        ALIGN[对齐<br/>RLHF/DPO/GRPO]
     end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
+    SPLIT --> PRE --> SFT --> ALIGN
+    subgraph "高效训练"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DISTIL[知识蒸馏<br/>模型压缩]
+        DS[DeepSpeed<br/>分布式]
     end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
+    SFT --> LORA
+    ALIGN --> DISTIL
+    PRE --> DS
+    subgraph "评估"
+        AUTO[自动评测<br/>基准测试]
+        HUMAN[人工评测<br/>对抗测试]
     end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
+    ALIGN --> AUTO & HUMAN
+    classDef data fill:#fef3c7,stroke:#d97706
+    classDef train fill:#dbeafe,stroke:#2563eb
+    classDef eff fill:#ede9fe,stroke:#7c3aed
+    classDef eval fill:#d1fae5,stroke:#059669
+    class RAW,CLEAN,ANNOTATE,SPLIT data
+    class PRE,SFT,ALIGN train
+    class LORA,DISTIL,DS eff
+    class AUTO,HUMAN eval
 ```
 
 

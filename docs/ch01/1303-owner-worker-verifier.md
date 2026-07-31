@@ -28,32 +28,33 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
     subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+        COORD[协调器<br/>Orchestrator]
+        QUEUE[消息队列]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    subgraph "Agent 团队"
+        W1["Worker A<br/>专项能力1"]
+        W2["Worker B<br/>专项能力2"]
+        W3["Worker C<br/>专项能力3"]
+    end
+    COORD --> QUEUE
+    QUEUE --> W1 & W2 & W3
+    W1 & W2 & W3 -->|"结果"| QUEUE
+    QUEUE -->|"汇总"| COORD
+    subgraph "共享层"
+        SHARED_MEM[共享记忆]
+        TOOL_BUS[工具总线]
+    end
+    W1 & W2 & W3 --> SHARED_MEM
+    W1 & W2 & W3 --> TOOL_BUS
+    IN[任务输入] --> COORD
+    COORD --> OUT[结果输出]
+    classDef coord fill:#dbeafe,stroke:#2563eb
+    classDef worker fill:#ede9fe,stroke:#7c3aed
+    classDef shared fill:#fef3c7,stroke:#d97706
+    class COORD,QUEUE coord
+    class W1,W2,W3 worker
+    class SHARED_MEM,TOOL_BUS shared
 ```
 
 - Worker-Verifier 是对抗关系，非可选附加步骤

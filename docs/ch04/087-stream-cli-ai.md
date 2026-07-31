@@ -74,9 +74,35 @@ mindmap
 **MCP 默认 OAuth2 流程**：
 
 ```mermaid
-用户 → AI 请求 → 触发 MCP server → 返回 OAuth URL
-   → 用户浏览器打开 URL → 登录 → 授权 → 拿到 token
-   → token 传回 MCP server → 工具调用继续
+graph TB
+    subgraph "Agent 核心"
+        INT[意图理解] --> PLAN[任务规划]
+        PLAN --> EXEC[工具选择与调用]
+        EXEC --> VERIFY[结果验证]
+        VERIFY -->|"失败重试"| PLAN
+    end
+    subgraph "工具层"
+        direction LR
+        FT[Function<br/>自定义函数]
+        MT[MCP Server<br/>外部服务]
+        API[REST API<br/>HTTP调用]
+    end
+    EXEC --> FT
+    EXEC --> MT
+    EXEC --> API
+    subgraph "安全层"
+        AUTH[权限检查]
+        SANDBOX[沙箱隔离]
+        AUDIT[审计日志]
+    end
+    EXEC --> AUTH --> SANDBOX
+    SANDBOX --> AUDIT
+    classDef agent fill:#dbeafe,stroke:#2563eb
+    classDef tool fill:#d1fae5,stroke:#059669
+    classDef sec fill:#fee2e2,stroke:#dc2626
+    class INT,PLAN,EXEC,VERIFY agent
+    class FT,MT,API tool
+    class AUTH,SANDBOX,AUDIT sec
 ```
 
 **Docker 容器里的问题**：无浏览器，无法完成交互式授权。
