@@ -6,6 +6,26 @@
 
 # 前端如何消费 Agent 的 SSE 流 — Agent 前端工程实践
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("前端如何消费 Agent 的 SSE 流 — Agent…"))
+    关键技术实现
+      SSE 流解析
+      跨 chunk 拼接
+      多行 data 拼接
+      Store 中的事件时间线
+    深度分析
+      事件驱动架构在 Agent UI 中的必然性
+      流式缓冲作为 Agent UI 的基础设施
+      事件统一建模的设计价值
+      与 AI Agent 生态的对接模式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 在 mini-openclaw 框架实践中，前端通过 SSE（Server-Sent Events）消费 Agent 运行过程中的事件流，实现实时 Agent 聊天页面。Agent 只负责产出事件，外部消费者决定如何展示——CLI 打印到终端，Web 页面将事件转 SSE 后由前端逐帧渲染。前端通过 `fetch + ReadableStream` 代替原生 EventSource，自行实现流式解析、缓冲拼接和多类型事件分发。

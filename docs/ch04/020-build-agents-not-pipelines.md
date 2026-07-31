@@ -6,6 +6,20 @@
 
 # Build agents, not pipelines
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build agents, not pipelines"))
+    深入分析
+      Pipeline与Agent的本质区别
+      可预测性陷阱：Pipeline的成本下限
+      Context-Gathering：Pipel…
+      模型选择的灵活性矛盾
+    相关主题
+```
+
 ## 核心要点
 
 用库与框架的类比清晰区分LLM应用中的pipeline与agent架构，预测性与灵活性的权衡讨论有实用价值

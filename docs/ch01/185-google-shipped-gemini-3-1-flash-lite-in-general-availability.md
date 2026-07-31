@@ -7,6 +7,19 @@
 > -> 原文存档
 # Google shipped Gemini 3.1 Flash-Lite in General Availability
 source: 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google shipped Gemini 3.1 Fl…"))
+    摘录
+    深度分析
+    实践启示
+    标签
+    相关实体
+```
+
 ## 摘录
 > Title: Google shipped Gemini 3.1 Flash-Lite in General Availability
 URL Source: https://www.testingcatalog.com/google-launches-gemini-3-1-flash-lite-in-general-availability/

@@ -8,6 +8,18 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimum-viable-unit-saleable-software-brandur.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Minimum Viable Unit of S…"))
+    核心内容
+    Cheap != zerohttp://…
+      The build thresholdh…
+    The zone of viability…
+```
+
 ## 核心内容
 
 Markdown Content:

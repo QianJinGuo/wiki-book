@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐ | 7.2KB | `entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快手首个打工人Agent来了！工作秒变桌面软件：零代码、…"))
+    元数据
+    原始内容
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/7SKBhIUrxI1SD1_svAxvtQ
 

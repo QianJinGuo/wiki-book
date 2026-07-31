@@ -8,6 +8,24 @@
 
 Meta 超级智能实验室（MSL）于 2026 年 7 月发布首个图像生成模型 **Muse Image**，代号「芒果」（Mango），同时亮相视频模型 Muse Video（预览版）。Muse Image 在 Arena 文生图榜单上三项排名均位列第二，仅次于 OpenAI 的 GPT Image 2。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("小扎「芒果」生图只输GPT Image 2，没人教它改稿…"))
+    性能评估
+      Arena 榜单表现
+      自我修正消融实验
+    深度分析
+      从'生成模型'到'生成 Agent'的范式迁移
+      自我修正的涌现：RL 驱动的能力发现
+      测试时计算：Scaling Law 的新维度
+      社交图谱壁垒与隐私悖论
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 1. **自我修正能力是涌现行为而非预设功能**：Meta 表示 Muse Image 的自我修正（Self-Correction）行为并非通过直接编程或 Prompt 设计引入，而是在强化学习训练中**自然涌现**——模型发现改稿能获得更高奖励，于是学会了改稿。这一发现与 [注意力坍塌](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) 中讨论的 emergent behavior 机制本质相同。

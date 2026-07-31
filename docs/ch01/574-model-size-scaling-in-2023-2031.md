@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/model-size-scaling-in-2023-2031.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Model Size Scaling in 2023-2…"))
+    深度分析
+      数据墙：2027 年后的核心约束
+      2024 年：模型最受硬件约束的一年
+      Sparsity 作为参数放大器
+      预训练计算的增长轨迹
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文从 HBM（高带宽内存）带宽约束出发，系统性推演 2023-2031 年间 LLM 模型规模的可行上界。核心论点是：token 生成速度受限于 HBM 读取权重 + KV-cache 的时间，结合 pipeline 并行度和预训练计算量，可以推导出每年的模型参数天花板。研究发现，2027 年起预训练数据不足成为主约束，模型被迫比无限数据情景大 4 倍，与 Chinchilla scaling law 的"数据墙"预测一致。

@@ -5,6 +5,23 @@
 > 📊 Level ⭐ | 6.9KB | `entities/10x-is-a-lot.md`
 
 # 10x Is a Lot — Quarter Mile
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("10x Is a Lot"))
+    Homehttps://www.quar…
+    相关实体
+    10x 类比图谱：16 个具体场景
+    深度分析
+      1. 10x 不是 10%——量级差异颠覆直觉判断
+      2. 10x 改进要求的是范式重构，而非渐进优化
+      3. '10x'话术在科技行业被严重滥用，需要…
+      4. 10x 判断力是一种元技能——知道什么'…
+    实践启示
+```
+
 ## [Home](https://www.quarter--mile.com/) • [Subscribe](https://www.quarter--mile.com/subscribe) • [Contact](https://www.quarter--mile.com/contact) • [Writing Club](http://writingclub.world/) • [Questions](https://www.quarter--mile.com/Questions)
 You have probably heard people say things like "this product makes you 10x more effective."
 Here are a few examples of what things would look like if they were 10x faster/better/bigger:

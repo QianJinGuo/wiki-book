@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/microsoft-open-sources-rampart-clarity.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft Open-Sources RAMPA…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 - RAMPART and Clarity: Microsoft Open-Sources AI Security Tools

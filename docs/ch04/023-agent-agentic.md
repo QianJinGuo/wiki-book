@@ -8,6 +8,16 @@
 
 当数据消费主体从 “Human + Application” 扩张至千万级 AI Agent，传统数据库的能力边界已被彻底打破——海量 AI Agent 全天候自主检索、推理、协作、调度数据，传统数据底座已无法适配全新的业务逻辑。2026 火山引擎 FORCE 原动力大会·SUMMER，火山引擎数据库推出“**Agentic Data Management and Services** ”产品体系，并完成全栈产品升级。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从数据库到 Agent 原生数据底座，火山引擎发布 Ag…"))
+    核心观点
+    技术洞察
+```
+
 ## 核心观点
 
 > 本文通过article、agent、volcano-engine视角，分析了的技术进展和应用场景。

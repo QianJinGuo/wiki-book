@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/cursor-recall-anthropic-daily-release-cat-wu.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从Cursor返聘归来，90后华裔女高管带Claude开…"))
+    元信息
+    一句话摘要
+    核心洞察
+    关键引用
+    人物背景
+    团队结构（PM）
+    Anthropic 内部工具栈
+    深度分析
+      1. 日更发布机制的组织逻辑
+      2. 角色融合背后的能力模型变迁
+      3. 使命驱动 vs 产品驱动的决策层级
+      4. eval 驱动开发的方法论价值
+```
+
 ## 元信息
 | 字段 | 内容 |
 |------|------|

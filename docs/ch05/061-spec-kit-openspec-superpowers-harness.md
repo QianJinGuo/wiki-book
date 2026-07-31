@@ -8,6 +8,21 @@
 
 > 作者 CCC 在对比 Spec Kit、OpenSpec、Superpowers 三个框架后，选择各自取其精华，自建了一套更适合中大型团队棕地项目的三层 Harness 方案。核心思路：拿 OpenSpec 做底座骨架，补上 Superpowers 式的铁律纪律思维，再套一层自己的 Harness 约束层，形成「哈尼层 → Skill 层 → Spec 层」的分层架构。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Spec Kit / OpenSpec / Superp…"))
+    深度分析
+      框架选择的底层逻辑：棕地项目 vs 绿地的结构…
+      铁律纪律的深层价值：反 LLM 乐观偏好的封闭设计
+      规范累积机制的进化逻辑
+      与 Matt Pocock Skills 的对…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文记录了一个中大型前端团队在棕地项目中落地 AI Coding 工作流程的真实实践。作者在评估了 Spec Kit（宪法思维 + 阶段门控）、Superpowers（铁律纪律 + 14 Skill 全链）、OpenSpec（Delta Spec + 单目录收拢）三个主流框架后，发现没有一个能直接满足中大型棕地项目的需求——Spec Kit 太重、Superpowers 方向偏且成本高、OpenSpec 缺乏纪律约束。最终作者取三者的核心优势，自建了一套三层架构，经过四个月的实际验证，组件误用率下降 80%+。

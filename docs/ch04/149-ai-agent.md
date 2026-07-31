@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/ai-agent-engineer-capability-map.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent 工程师能力地图"))
+    核心判断
+    三种系统形态
+    六层能力体系
+    后端工程师机会
+    深度分析
+      范式转变的本质：从'调模型'到'建系统'
+      六层能力体系的内在逻辑
+      生产失败的根因分析
+    实践启示
+      对资深后端/大数据工程师的建议
+      企业落地的关键路径
+      技术选型的明确建议
+     相关实体
+    Related
+```
+
 ## 核心判断
 - **Workflow-first，Agent-second** 是最务实范式
 - **Context Engineering** 比 Prompt Engineering 更关键

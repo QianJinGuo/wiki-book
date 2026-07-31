@@ -6,6 +6,34 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-capital-agent-era-six-insights.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Foundation Capital Agent Era…"))
+    核心定位
+    三大拐点框架
+    六条洞察
+      洞察一：Agent 是主用户
+      洞察二：可插拔  微调
+      洞察三：上下文图谱 = 真正护城河
+      洞察四：反馈循环 = 产品
+    核心量化数据
+    深度分析
+      从'工具'到'用户'的范式转移
+      Harness 范式的持久性论证
+      上下文图谱的结构性含义
+      Agent 部署质量危机的深层原因
+    实践启示
+      对 AI 产品创始人的行动清单
+      对企业 Agent 落地的建议
+      对投资人的分析框架
+      个人工作者应对策略
+    相关概念
+    相关实体
+```
+
 ## 核心定位
 Foundation Capital 合伙人 Ashu Garg（2026-05-07）基于 Turing CEO Jonathan Siddharth + Arize CPO Aparna Dhinakaran 对谈的投资 thesis。核心命题：Agent 才是软件的主用户；上下文图谱是真正护城河；反馈闭环本身是产品。
 

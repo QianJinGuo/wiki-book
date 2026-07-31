@@ -45,6 +45,22 @@ graph TB
 
 > **核心问题**：AI endpoint 是 2026 年最高利润的攻击面之一。HTTP 请求成本 $2/million calls，AI prompt 成本 $2/call，**价差 1,000,000x**。攻击者用 residential proxy + 一次性账号即可绕过 session-level 验证，转售盗用的推理资源。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Inference Theft as AI Endpoi…"))
+    三条独有贡献（与同类安全 entity 区分）
+    攻击面分类
+    为什么 Web 防御不奏效
+    与同类安全实体的差异化
+    关键 takeaway
+    引用
+    深度分析
+    实践启示
+```
+
 ## 三条独有贡献（与同类安全 entity 区分）
 
 1. **推理资源盗窃经济学** — 给出具体的 $2/million vs $2/call 价差量化（其他 agent security entity 都没有这层经济分析） ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]

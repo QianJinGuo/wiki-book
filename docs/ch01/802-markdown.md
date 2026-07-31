@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/markdown-ai-era-ifanr-20260513.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Markdown 不会过时"))
+    Thariq 的 HTML 主张 vs Mar…
+    为什么 Markdown 最适合 AI
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## Thariq 的 HTML 主张 vs Markdown
 Claude Code 工程师 Thariq 提出新观点：不用 Markdown，HTML 才是未来。观点在 X 上获得千万次浏览，Karpathy 转发并评论。
 Karpathy 的看法：音频是大语言模型最好的输入，视觉是最好的输出；在 HTML 之后还有交互动画、神经网络直接生成的视频、以及最终某种人机之间真正的感知融合。

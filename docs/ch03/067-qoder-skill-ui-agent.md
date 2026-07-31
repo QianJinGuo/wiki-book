@@ -34,6 +34,37 @@ graph TB
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/qoder-skill-ui.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qoder Skill UI — Agent 与人类的协…"))
+    Overview
+    核心概念：Skill UI
+      问题：低效介入
+      解决：结构化配置面板
+      两种 Widget 模式
+    技术实现
+      HTML 沙箱路线
+      安全架构
+    实战案例
+      Frontend-design Skill ×…
+      输出端 Dashboard
+    与 Agent Skill Writing…
+    深度分析
+      '双形态'是软件界面的本质重构
+      低效介入的核心问题是'选项不同时呈现'
+      HTML 沙箱路线的工程优势
+      安全架构的分层设计
+    实践启示
+      Skill 双形态的设计清单
+      Widget 安全的实现要点
+      决策节点判断
+      渐进式增强策略
+    相关实体
+```
+
 ## Overview
 Qoder Quest 给 Agent Skill 补上了 GUI 层：Skill 不再只有 SKILL.md 文本指令，还包含**配置面板（输入端）**和**结果 Dashboard（输出端）**，使人机协作形成完整闭环。
 核心命题：软件正在被重构为「双形态」——给 Agent 用的 CLI，给人用的 GUI，不是替代而是各归其位。

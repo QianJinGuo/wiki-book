@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 17.8KB | `entities/martin-fowler-ai-rd-harness-nondeterminism-devnote.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Martin Fowler AI 研发提醒：Harnes…"))
+    核心洞察
+    关键论点
+      1. 非确定性进入研发链路
+      2. Vibe Coding 的边界
+      3. 测试和重构不是旧时代包袱
+      4. Harness 是非确定性适配层
+    与现有知识库关联
+    原始存档
+    元数据
+    相关实体
+    深度分析
+      1. 非确定性建模的本质意义
+      2. Harness 的三层结构与工程对等
+      3. 中间循环的工程角色重定义
+      4. 六件小事的系统性解读
+    实践启示
+      立即可落地的六件事
+      中期需要建立的能力
+      长期需要思考的方向
+```
+
 ## 核心洞察
 Martin Fowler 在 Pragmatic Engineer 播客访谈中指出：**软件工程过去几十年都建立在一台确定性机器上，现在我们把一个非确定性的协作者接进了研发链路。** 这个视角将 AI 研发的各种新概念（Vibe Coding、Agentic Engineering、Harness Engineering 等）统一到了一个核心问题下：当 AI 开始读仓库、改文件、调工具、跑测试、开 PR、查日志、修 CI 时，整个研发系统怎么消化这种非确定性。
 

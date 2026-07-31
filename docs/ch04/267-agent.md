@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ath-agent-trust-handshake-protocol.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("为了让agent更安全的工作，有多少人操碎了心"))
+    深度分析
+      三方权限交集：Agent 时代的安全范式转换
+      MCP 生态漏洞的深层启示
+      二次确认：从单一授权到按需授权
+      ATH 的标准化前景与现实约束
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文系统分析了 Agent 权限安全的核心矛盾——「单个权限无害，组合起来可能越界」，传统 RBAC 模型无法管控 LLM 非确定性决策下的权限组合涌现。在对比 MCP、A2A、CLI/GUI 自动化三类现有方案的缺陷后，详细介绍 2026 年 5 月由中国信通院联合腾讯、华为、中兴等发布的 ATH（Agent Trust Handshake）三方可信握手协议。ATH 的核心创新是引入用户作为独立第三方参与方，通过 Scope Intersection（三方权限交集）机制确保最终有效权限 = 服务方审批 ∩ 用户授权 ∩ 智能体请求。

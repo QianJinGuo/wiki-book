@@ -8,6 +8,16 @@
 
 > **来源**: [LLM-Driven Feature Discovery](https://www.alignmentforum.org/posts/WAZWA6FPQvH8okouJ/llm-driven-feature-discovery)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLM-Driven Feature Discovery"))
+    概述
+    A short summary of our …
+```
+
 ## 概述
 
 Published Time: 2026-06-22T22:26:51.599Z

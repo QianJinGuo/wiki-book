@@ -6,6 +6,21 @@
 
 # Greptile TREX：AI 代码审查的执行引擎与 Agent 嵌套架构
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Greptile TREX：AI 代码审查的执行引擎与 …"))
+    深度分析
+      从独立 Agent 到嵌套架构的演进
+      Artifact 即证据：从 bullet p…
+      模型无关性的工程实践
+      设计权衡
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Greptile 构建了 TREX（Test, Run, Execute）——一个嵌入代码审查流程的代码执行层。核心洞察：静态代码审查有天花板，只有运行代码才能发现需要特定状态序列才能触发的 bug。TREX 采用"Agent 内嵌 Agent"架构，由主编排 Agent 识别问题后并行启动专用 TREX 子 Agent 执行调查，并通过多模态 artifact（截图、日志、视频、执行脚本）提供可验证的证据链。

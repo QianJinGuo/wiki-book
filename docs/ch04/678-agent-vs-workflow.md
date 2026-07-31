@@ -10,6 +10,19 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-vs-workflow-control-continuum.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent vs Workflow：控制权连续谱与生产级…"))
+    自主性连续谱（Level 0-5）
+    核心对比
+    选型九问
+    三种混合架构
+    场景推荐
+```
+
 ## 自主性连续谱（Level 0-5）
 
 | 等级 | 名称 | 控制模式 |

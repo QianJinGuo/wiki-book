@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-deep-guide-prompt.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini 深度导读生成器 Prompt：让 AI 重…"))
+    深度分析
+      从'摘要'到'导读'的范式跃迁
+      六段 XML 标签的组织
+      Framework and Mindset：导读的…
+      模式切换：导读/清单/结论三态
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 作者一帆（微信公众号"山川和森林的回忆"，2026-01-19）从"V1 摘要"（脑过无痕）升级到"V2 深度导读"，给出一份针对 Gemini 优化的导读生成器 Prompt。核心约束是**永远不要高度浓缩**——保留论证过程，不替换为结论。Prompt 用 `<identity>` / `<core_principles>` / `<input_contract>` / `<thinking_or_output_modes>` / `<output_structure>` / `<constraints>` 六个 XML 标签组织，把"导读"与"摘要"在行为上彻底区分开。

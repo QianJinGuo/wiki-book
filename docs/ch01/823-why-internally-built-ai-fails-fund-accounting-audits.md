@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-fails-fund-accounting-audits.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Why Internally-Built AI Fail…"))
+    深度分析
+      审计标准的技术影响
+      架构五层控制模型
+      IT 接手 ≠ 合规转移
+      Build vs Buy 的真正问题
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 COSO 2026 年 2 月发布的《Achieving Effective Internal Control Over Generative AI》与 PCAOB AS 2201 审计标准共同抬高了基金会计领域 AI 系统的审计门槛。自建 AI 方案无法回答审计师必问的两个问题：「能否证明 AI 看到了什么」以及「能否证明它与上季度运行的是同一套系统」。文章提出的核心论点是：审计就绪的 AI 不是一个功能特性，而是一个架构决策——AI 在构建时生成经验证的逻辑，运行时执行确定性代码，配合防篡改审计追踪和平台级 maker/checker 机制。

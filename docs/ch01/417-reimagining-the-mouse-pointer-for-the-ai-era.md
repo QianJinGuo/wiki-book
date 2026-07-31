@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/deepmind-ai-pointer.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Reimagining the mouse pointe…"))
+    四项交互原则详解
+      1. 保持工作流连续（Maintain the…
+      2. 展示与讲述（Show and Tell）
+      3. 利用「这个/那个」的指代力量（Embra…
+      4. 将像素转化为可交互实体（Turn Pix…
+    深度分析
+      一、「Copy and Prompt」→「Po…
+      二、Spatial AI Interactio…
+      三、对「AI Native 应用」交互设计标准…
+      四、与传统 GUI 设计逻辑的根本性冲突
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Google DeepMind 在 2026 年 3 月提出了一种全新的人机交互范式：将传统的鼠标指针升级为具备「语义理解能力」的 AI 交互设备。其核心洞察是逆转当前的 AI 交互流向——不再要求用户将上下文「带入 AI 工具」，而是让 AI 主动进入用户当前的工作环境，理解像素级视觉上下文后提供智能化帮助。

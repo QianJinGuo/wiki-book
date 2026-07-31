@@ -6,6 +6,22 @@
 
 > 腾讯 DECO（Data Engineering Agent 引擎）的护栏层实践，用 Agent 框架的 Hook 切面在代码层确定性兜底三类问题：长文本偷懒、越权操作、上下文失忆。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DECO — 腾讯数据工程 Agent Hook 护栏层实践"))
+    三类治理问题
+    Hook 链护栏体系
+      长文本完整性护栏（读写两侧 Offload）
+      危险操作 HITL（beforeTool Gu…
+      上下文联动闭环（Hook → state → …
+    行业定位
+    关联条目
+    退出
+```
+
 ## 三类治理问题
 
 腾讯 DECO 团队识别出 prompt 无法管控的三类 LLM 行为：

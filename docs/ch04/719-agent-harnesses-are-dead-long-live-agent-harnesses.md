@@ -6,6 +6,25 @@
 
 # Agent Harnesses Are Dead. Long Live Agent Harnesses.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Harnesses Are Dead. Lo…"))
+    核心论点：Harness 的商品化周期
+      框架→脚手架→Harness 的术语轮回
+      模型提供商正在吸收整个栈
+      Garry Tan 的'Harness 即管道…
+    深度分析
+      1. 构建成本坍塌对 SaaS 的冲击
+      2. 真正能复利的事物
+      3. Entangled Software（纠…
+      4. '路，而不是车'——基础设施 vs 应用…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Agent Harness 正经历从"硬编码框架"到"声明式配置驱动"再到"纠缠式软件（Entangled Software）"的范式转变。CrewAI 创始人 João Moura 在 2026 年 4 月的深度分析中指出：构建层正在快速商品化，Harness 作为独立层正在"死亡"，但 Harness 的核心价值——约束、验证、编排——并未消失，而是被吸收到更高层级的平台能力中。

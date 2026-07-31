@@ -43,6 +43,40 @@ graph TB
 
 > -> [OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-skills-shell-compaction-agent-primitives.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI Skills/Shell/Compacti…"))
+    核心命题
+    三大原语定义
+      Skills（技能）：'按需加载'的程序
+      Shell 工具：智能体的'执行引擎'
+      压缩（Compaction）：保持长周期运行
+    十大非直观技巧
+      1. 技能描述 = 决策边界，而非营销文案
+      2. 负面示例 + 边缘情况覆盖减少误触发
+      3. 模板和示例放入技能内部（不使用时不占成本）
+      4. 及早针对长周期运行设计（容器复用 + 压缩）
+    三种构建模式
+      模式 A：安装 → 获取 → 写入 artif…
+      模式 B：技能 + Shell 处理可重复工作流
+      模式 C（高级）：技能作为企业工作流的载体
+    OpenAI vs OpenClaw 全方位对比
+    核心原则
+    深度分析
+      1. 三位一体原语解决的是不同层次的失败模式，…
+      2. Token 成本最优解与提示词工程直觉相…
+      3. 技能路由存在初期触发率下降的反直觉现象，…
+      4. /mnt/data 模式代表 Age…
+    实践启示
+      为每个技能编写'使用场景 × 禁用场景'描述块…
+      将负面示例和边缘情况覆盖作为技能发布的必要条件…
+      及早为长周期运行设计：容器复用 + Compa…
+      对于需要确定性的生产工作流，使用显式命令而非依…
+```
+
 ## 核心命题
 
 OpenAI 发布 Skills + Shell + Compaction 三位一体 Agent 原语，将 AI 从"陪你聊天的黑盒"重构为"为你干活的基础设施"。这组原语的核心价值在于：将稳定的程序和示例移入可重用包（Skills），提供完整的执行环境（Shell），并自动管理上下文窗口（Compaction）。三者组合使用，从根本上解决了"提示词乱炖"（Prompt spaghetti）、执行环境碎片化和上下文窗口限制三大痛点。

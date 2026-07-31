@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qy_zaCZTCs1Ql3BIFmBMgg.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Subagent 详解：把探索过…"))
+    深度分析
+      长会话为什么会变脏
+      Subagent 的三层价值
+      Subagent 文件结构
+      配置位置的优先级
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 来自微信公众号「架构师（JiaGouX）」的一篇译注文章，把 Claude Code 的 Subagent 机制放进 Agent Harness 上下文管理的整体框架里重新理解。核心论点是：Subagent 的价值不是"多一个 Agent 一起干活"，而是把那些"必须做、但做完不值得留在主窗口里"的探索过程隔离到独立工作区，主会话只回收结果。文章的副线呼应了 Kaxil Naik 的判断——「Harness matters more than the model」——并给出三层价值拆解：隔离、压缩、并行。

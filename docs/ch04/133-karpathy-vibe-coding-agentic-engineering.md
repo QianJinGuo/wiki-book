@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/karpathy-vibe-coding-to-agentic-engineering.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy 最新访谈：从 Vibe Coding …"))
+    核心论点
+    三个提醒
+    行业信号
+    深度分析
+      1. Vibe Coding 与 Agenti…
+      2. 可验证性：理解 LLM 自动化边界的核心框架
+      3. Software 3.0 的真正含义：程…
+      4. MenuGen 案例：两种范式的直接碰撞
+    实践启示
+      给开发者的建议
+      给团队管理者的建议
+      给创业者的建议
+    相关实体
+```
+
 ## 核心论点
 Karpathy 在 2026 年红杉 AI Ascent 访谈中提出 Agent 时代的关键转变：
 1. **Vibe Coding → Agentic Engineering** — 2025年"说需求看结果"的个人体验 → 2026年"可验证可审计"的专业工作方式

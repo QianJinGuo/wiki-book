@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sandworm Hackers Shift From …"))
+    技术洞察
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

@@ -8,6 +8,17 @@
 Semgrep security research: malicious Intercom PHP package spreading Mini-Shai-Hulud attack via Packagist/Composer. Attack chain, IOCs, code-level analysis.
 **Source**: [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semgrep-intercom-php-security.md) | **Review**: value=7 confidence=8
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Semgrep Intercom Php Supply …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

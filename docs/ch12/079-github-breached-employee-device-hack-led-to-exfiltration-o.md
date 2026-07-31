@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/github-investigating-teampcp-claimed-17cc77.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub Breached — Employee D…"))
+    标签
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

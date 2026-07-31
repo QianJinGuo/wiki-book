@@ -4,6 +4,42 @@
 
 > 📊 Level ⭐⭐ | 22.1KB | `entities/agent-reliability-engineering-skillify-continuous-improvement.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 可靠性的工程解法：从 Skillify 看持…"))
+    概述
+    两次失败的核心机制
+      失败 1：传感器失效
+      失败 2：'28 分钟'
+      共同本质
+    Skillify 10 步法
+      Step 1：SKILL.md——契约
+      Step 2：Deterministic co…
+      Step 3：Unit tests——确定性函…
+      Step 4：Integration test…
+    三个关键机制
+      机制 1：自举循环（Bootstrapping…
+      机制 2：从 'vibes-based' 到 …
+      机制 3：可验证性是改进的前提
+    三个关键权衡
+      权衡 1：灵活性 vs 确定性
+      权衡 2：Skill 数量 vs 系统复杂度
+      权衡 3：Skill 生命周期管理
+    相关概念
+    深度分析
+      自举循环的本质：智能制造约束，约束反过来限制智能
+      'structurally impossibl…
+      可验证性是改进的充要条件
+      熵增是 Agent 系统的内生力量
+    实践启示
+      立即可行的行动
+      中期系统建设
+      长期架构原则
+```
+
 ## 概述
 YC 总裁 Garry Tan 的 OpenClaw 一周内两次失败：日历查询和时区计算。两次都是 Agent 有现成工具却选择自己推理——该用脚本的地方用了模型。Garry Tan 的解法是 skillify：一套 10 步检查清单，将每次失败固化为确定性测试，让同样的错误结构上不可能再发生。
 

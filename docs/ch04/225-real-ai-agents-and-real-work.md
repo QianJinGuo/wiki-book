@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/real-ai-agents-and-real-work.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Real AI Agents and Real Work"))
+    深度分析
+      任务而非工作：Mollick 核心区分的深层含义
+      Agent 精度提升的指数效应：被低估的拐点
+      METR 指数曲线：五年一致性的信誉背书
+      判断与执行的分离：Agentic AI 重构认…
+    实践启示
+    关联实体
+```
+
 ## 摘要
 
 Ethan Mollick（One Useful Thing）2025 年 9 月的这篇文章记录了 AI agents "悄悄跨越门槛"的时刻 — 它们现在能执行真正有经济价值的工作。核心证据：OpenAI 的 GDPval 基准测试让有 14 年行业经验的人类专家与 AI 比赛完成 4-7 小时的实际工作任务，**人类专家赢了，但只赢一点点**，且差距因行业而剧烈变化。AI 输的主要原因不是幻觉和错误，而是**结果格式不佳或不严格遵循指令** — 这些都是快速改进中的领域。

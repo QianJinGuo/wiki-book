@@ -8,6 +8,21 @@
 
 > 原文链接：[原文链接](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google Agentic RAG 跨语料库框架：充分…"))
+    深度分析
+      1. '充分上下文'是 RAG 的范式转移
+      2. 跨语料库检索的工程价值
+      3. 'Sufficient Context'…
+      4. 与'循环 Agent'的本质区别
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Google Research 与 Google Cloud 联合发布的 **Agentic RAG 框架**（已上线 Gemini Enterprise Agent Platform）把 RAG 从"搜一次 + 生成一次"重写为「充分上下文」（Sufficient Context）驱动的迭代检索流程。新增的核心是 **充分上下文智能体** —— 它在生成答案前判断信息是否足够，**不够就明确指出缺什么并继续找**，而不是给出半截答案或承认"没找到"。在 FramesQA 多跳推理基准上，跨语料库设置下达到 90.1% 准确率，比 Vanilla RAG 提升最高 34%。

@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/task-queue-priority-and-fairness.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Task Queue Priority and Fair…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 ```mermaid

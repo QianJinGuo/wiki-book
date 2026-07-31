@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/co-existence-and-the-end-of-co-intelligence.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Co-Existence and the End of …"))
+    深度分析
+      1. 从 Co-Intelligence 到 …
+      2. 'AI 喜欢什么'作为新营销维度
+      3. 写作的'分层 AI 使用'模式
+      4. Prompt Injection 伦理的觉醒
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick 在 _Co-Intelligence_ 出版两年后宣布新作 _Co-Existence_。本文核心论点：从"co-intelligence"（人类与 AI 协作式对话）转向"co-existence"（与时而比人类强、时而更差的 AI 共生）是当前 AI 时代的根本范式转换。文章围绕他本人在写书与建站过程中的真实 AI 使用经验，论证了"AI 既是你的读者、批评者，又是守门人"这一新关系结构。

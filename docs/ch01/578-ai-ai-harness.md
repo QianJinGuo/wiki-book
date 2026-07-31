@@ -12,6 +12,21 @@
 
 **原文链接**: https://mp.weixin.qq.com/s/_XW3cbHtk_sEvbQMr6SuZQ
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("全球医疗榜第一，中国AI杀疯了！医疗AI迈入Harnes…"))
+    深度分析
+      医疗 AI 从回答能力到系统能力的跨越
+      WiseClaw 的三层架构设计
+      心跳引擎：从会话驱动到持续驱动
+      智诊科技的三层能力护城河
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Harness 架构——由 Mitchell Hashimoto 命名、OpenAI 验证、Martin Fowler 背书——终于在门槛最高的医疗健康行业落地。智诊科技发布 WiseClaw 2.0，一套面向医疗健康行业的 Agent OS 平台，融合了 Harness 的核心理念：让 Agent 在长时程、高风险、强合规的场景中可控、可追溯、可长期运行。平台在 DoctorBench 全球医学 AI 排行榜上超越 Google Gemini 和 OpenAI GPT-5.4 位居第一。

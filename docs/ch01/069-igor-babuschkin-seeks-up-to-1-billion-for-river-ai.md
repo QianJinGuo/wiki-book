@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Igor Babuschkin Seeks Up To …"))
+    深度分析
+      资本密集型竞争的现实
+      创始人背景与战略定位
+      对 AI 生态的影响
+      信息可靠性评估
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 xAI 联合创始人 Igor Babuschkin 正在洽谈为其新 AI 研究初创公司 River AI 融资高达 10 亿美元，目标估值最高 50 亿美元。VC 公司 General Catalyst 正洽谈领投此轮融资。Babuschkin 本人承诺投入最高 1 亿美元个人资金，River AI 于 2026 年 4 月 20 日在内华达州注册成立。Forbes 将 River AI 归入"neolabs"浪潮，与 Richard Socher 的 Recursive Intelligence 和 DeepMind 校友 David Silver 的项目并列。

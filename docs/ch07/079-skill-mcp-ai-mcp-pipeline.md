@@ -8,6 +8,22 @@
 
 > skill-mcp（GitHub: BeCrafter/skill-mcp）是一个开源项目，把 AI 技能当成有版本、有元数据、可权限控制的软件包来管理，再通过标准 MCP 协议暴露给任意 AI 客户端。定位：Cloud Skill File System & MCP Permission Gateway。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("skill-mcp — 把 AI 技能当软件包管理（MC…"))
+    核心理念：技能即软件包
+    三种部署场景
+    五个 MCP 工具
+    Pipeline：只调度、不执行（核心设计决策）
+    安全设计
+    与同类项目对比
+    技术栈
+    当前状态
+```
+
 ## 核心理念：技能即软件包
 
 每个技能是一个标准目录，含 manifest.json（name/version/entry/files）、SKILL.md、references/、templates/。skills 表维护 slug、version、category、tags、status、visibility、contentHash，带完整版本历史。

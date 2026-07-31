@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/fed-cash-use.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fed Data Shows Cash Use Hold…"))
+    深度分析
+      1. 现金使用量的结构性下降
+      2. 人口结构差异显著
+      3. 现金的'应急储备'功能
+      4. 现金的真正成本被严重低估
+    实践启示
+      对银行的启示
+      对支付行业的启示
+      对监管机构的启示
+    相关实体
+```
+
 ## 核心要点
 - 美联储"消费者支付选择日记"(Diary of Consumer Payment Choice) 2025 年度调查
 - 现金支付虽持续下降，但速度极慢，76% 消费者仍携带现金，90% 计划继续使用

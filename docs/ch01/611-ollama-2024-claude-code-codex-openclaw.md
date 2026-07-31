@@ -14,6 +14,21 @@
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Ollama 已经不是 2024 年那个了！一键配齐 C…"))
+    深度分析
+      从模型 Docker 到 AI 入口层：Oll…
+      GGUF 解锁的深层影响
+      ollama launch：从 API 到环境…
+      MLX 引擎与 LM Studio 的竞争分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ollama 在 2026 年上半年完成了三次关键升级——GGUF 生态解锁（v0.30.0）、ollama launch 工具集成、MLX 引擎预览——从"本地模型的 Docker"转变为"本地 AI 工具的入口层"。v0.30.0 让 HuggingFace 上数十万个 GGUF 模型可以直接通过 `ollama run hf.co/...` 使用，无需 Modelfile 转换；`ollama launch` 一键配齐 Claude Code/Codex/OpenCode/OpenClaw 四款 AI 开发工具，自动配置模型、API endpoint 和环境变量；MLX 引擎在 Apple Silicon 上相比 llama.cpp 后端提升约 20% 输出速度。Ollama 的战略是不参与推理性能战争，而是成为让"用模型干活"不再需要关心底层的中间层平台。

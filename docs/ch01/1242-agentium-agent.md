@@ -6,6 +6,25 @@
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentium-agent-framework.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentium — 从零实现 Agent 系统的开源框架"))
+    核心理念
+    三张架构读图尺子
+      1. 操作系统尺子
+      2. 控制论尺子
+      3. 容器思维尺子
+    分层架构
+    多平面设计
+    关键模块
+    与 demo 相比，上线还需要什么
+    相关框架对比
+    系列文章
+```
+
 ## 核心理念
 > 门面薄，线在中间，底子能换。
 Agentium 是一个的教学型开源 Agent 框架，用来演示「如何把 Chat 包装成一套可上线的多平面软件系统」。不是生产级框架，但架构分层思路值得借鉴。

@@ -38,6 +38,28 @@ graph TB
 
 > **架构概述**：AWS 中国博客 2026-06-11 发布的智能文档处理（IDP）参考架构，演示了 Amazon Bedrock 文档处理 pipeline 如何**同时支持 on-demand 与 batch 两种推理模式**，并通过 **Bedrock Prompt Management 实现每文档动态 prompt 选取**。真实场景：客户拥有数亿份扫描 PDF 地契文档，格式各异（列表/表格/图示），需要 LLM 抽取标准化数据。架构以 FIFO SQS 队列触发 Lambda 函数，按文档级别路由到不同 prompt 版本与模型，结构化结果存入 DynamoDB。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock Dynamic Document…"))
+    三条独有贡献
+    核心架构图
+    实现细节
+      1. On-demand 路径：SQS FIF…
+      2. Batch 路径：Bedrock Bat…
+      3. Prompt Management 模式
+    与现有实体的关系
+      Aws Bedrock Intelligen…
+      Process Financial Docu…
+      差异化
+    实践启示
+    与 agent / harness 主题的关联
+    引用
+    相关实体
+```
+
 ## 三条独有贡献
 
 1. **同一 pipeline 内部按延迟需求动态路由 on-demand vs batch** —— 不是两个独立 pipeline，而是同一个入口根据时间敏感性选择 on-demand（秒级响应）还是 Bedrock batch inference（异步、cost-optimized）。这与"批处理 vs 实时"二元切分不同，是真正的混合架构。

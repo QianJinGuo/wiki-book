@@ -8,6 +8,34 @@
 
 > **来源**：运维有术（术哥）"AI编程最佳实战「2026」"系列第 49 篇。基于 Trellis (mindfold-ai/Trellis, commit 2026-07-07) 和 superpowers (obra/superpowers, v6.1.1, commit 2026-07-05) 的本地源码静态分析。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Trellis vs Superpowers 源码对比：…"))
+    核心差异：不同抽象层
+    Trellis：重资产工程框架
+      .trellis/ 目录结构（7 类资产）
+      内部 3-Phase 状态机（workflow…
+      mem 子系统（被低估的杀手锏）
+      channel 子系统（多 worker 协作）
+    Superpowers：轻提示方法学
+      14 个 skill 清单（v6.1.1）
+      触发机制：description 强约束措辞
+      SDD v6.0 重写（2026-06-16）
+      v6.1.0 轻量化（2026-06-30）
+    设计哲学对比：物理注入 vs 行为约束
+    10 维决策框架
+    重要陷阱
+    选型建议
+    深度分析
+      抽象层设计的根本权衡：物理注入 vs 行为约束
+      Mem 子系统：跨会话记忆的工程化突破
+      文档与源码的偏差：Trellis 的状态机真相
+      20 Configurator：多平台适配的工…
+```
+
 ## 核心差异：不同抽象层
 
 | 维度 | Trellis | superpowers |

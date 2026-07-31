@@ -8,6 +8,21 @@
 
 > Kuikly 是腾讯开源的高性能跨端框架，基于 Kotlin Multiplatform 技术，覆盖 Android、iOS、HarmonyOS、H5、微信小程序、Mac 六大平台，支撑业务日活用户超 5 亿。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kuikly — 腾讯开源跨端框架（Kotlin Mul…"))
+    核心特性
+    AI 编程基础设施
+      Skills 和 Rules 的收益
+    效率数据
+    典型应用场景
+    生态
+    竞品对比
+```
+
 ## 核心特性
 
 - **一码多端**：一套 Kotlin 代码覆盖 Android、iOS、HarmonyOS、H5、微信小程序、Mac

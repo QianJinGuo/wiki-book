@@ -8,6 +8,30 @@
 
 > **背景**：本文档基于 AWS Machine Learning Blog 的 Verizon Connect 案例编写，探讨如何在生产环境中大规模部署 Agentic AI 系统。 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Verizon Connect Agentic AI: …"))
+    核心架构：两层 Agentic 设计
+    关键技术决策
+      异常检测：专用代码 vs LLM
+      AI Agent 执行环境
+      工具集
+      大语言模型演进
+    架构图
+    生成效果示例
+    深度分析
+      1. 分离数值分析与语义推理的设计哲学
+      2. 两层推理架构的工程必然性
+      3. 模型路由的成本优化策略
+      4. SQS 并发控制：保护下游配额的工程艺术
+    实践启示
+    相关实体
+    相关主题
+```
+
 ## 核心架构：两层 Agentic 设计
 
 Verizon Connect 的 Fleet Management Agentic AI 系统采用两层架构，每层使用 LLM 的不同推理能力：

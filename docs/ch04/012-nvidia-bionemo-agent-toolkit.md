@@ -6,6 +6,21 @@
 
 # NVIDIA BioNeMo Agent Toolkit — 加速科学发现的智能体工具包
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NVIDIA BioNeMo Agent Toolkit…"))
+    核心组件
+    深度分析
+      智能体在科学发现中的范式转变
+      生态集成策略的价值
+      博士级研究助理的能力定位
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 NVIDIA 发布的 BioNeMo Agent Toolkit 是一套面向生命科学领域的 AI 智能体工具包，整合了 NVIDIA 十多年来积累的科学计算库、开放模型和推理基础设施。该工具包使 AI 智能体能够执行蛋白质结构预测、分子对接、生成式化学、基因组分析等科研任务，已获得超过 50 家头部企业和研究机构的采用。

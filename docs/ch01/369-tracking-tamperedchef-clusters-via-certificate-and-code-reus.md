@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/trackingtamperedchefclustersviacertificateandcodereuse.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tracking TamperedChef Cluste…"))
+    深度分析
+      1. 威胁行为体的TTPs模式
+      2. 三大集群的差异化追踪
+      3. 代码签名证书滥用的关键洞察
+      4. AI在攻击中的应用
+    实践启示
+      对安全团队的指导
+      对威胁情报的启示
+    相关实体
+```
+
 ## 核心要点
 
 - Published Time: 2026-05-20T00:00:00+00:00

@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 12.7KB | `entities/在-rds-postgresql-中实现-rabitq-量化.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 RDS PostgreSQL 中实现 RaBitQ 量化"))
+    深度分析
+      向量检索成为 RDBMS 新标配
+      pgvector 在大规模场景下的三大瓶颈
+      为什么是 RaBitQ
+      核心原理：几何特性 + 随机旋转 + SQ4
+    实践启示
+    相关资源
+    相关实体
+```
+
 ## 核心要点
 阿里云 RDS PostgreSQL 在 pgvector 扩展中引入了 **RaBitQ（Random Binary Quantization）** 向量量化技术，实现 **32 倍压缩比**（float32 → 1bit/维度），同时通过理论误差界保证召回率。实测在 1024 维 100M 向量的业务数据集上，IVF-RaBitQ 索引空间仅 16GB（vs. HNSW 的 689GB），索引创建时间从 4 天缩短至 4 小时，P99 查询延迟在混合读写场景下降低至原来的约 1/4。
 

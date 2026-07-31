@@ -8,6 +8,35 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/repo-jacking-anthropics-claude-community-plugins.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Claude Community 插…"))
+    核心概念
+      什么是 Repo-jacking
+      Claude Code Community 插件
+    漏洞发现过程
+      受影响的插件
+      概念验证：deep-research-claude
+      攻击路径演示
+    安全机制分析
+      SHA 校验：安装路径的守护者
+      SHA 更新的潜在风险
+    披露与响应
+      负责任的披露
+      Anthropic 的回应
+    深度分析
+      AI 工具供应链安全的新挑战
+      插件生态系统的结构性风险
+      对比：VSCode 扩展市场的教训
+    实践启示
+      对组织的建议
+      对开发者的建议
+      对安全研究员的建议
+```
+
 ## 摘要
 
 安全研究员 John Stawinski IV 发现 Anthropic 官方维护的 Claude Code Community 插件市场存在多个 repo-jacking 漏洞。5 个插件指向的 GitHub 仓库所有者已改名或删除账户，导致这些命名空间可被攻击者认领。虽然 SHA 校验阻止了恶意代码的自动安装，但"查看插件主页"功能会将用户重定向到被劫持的仓库，形成社交工程攻击面。

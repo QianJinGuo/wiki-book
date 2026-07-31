@@ -8,6 +8,26 @@
 
 # AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentScope Builder 快速体验：用 Ha…"))
+    背景：Claw 的边界
+    AgentScope Builder 是什么
+    核心设计：workspace 是 Agent …
+    零代码 + 自我进化
+    核心机制：CompositeFilesystem
+    深度分析
+      1. 从「单人本机」到「多租户分布式」的架构跨越
+      2. 「静态 Agent」vs「自进化 Age…
+      3. 细粒度授权体系决定了 Agent 分享的…
+      4. 多副本一致性问题：分布式workspac…
+    实践启示
+    相关主题
+```
+
 ## 背景：Claw 的边界
 
 AgentScope Claw（MinQwenPaw）是 Harness 框架在「单人本机」场景的完整落地。但把它放到团队场景时，会遇到五个核心问题：

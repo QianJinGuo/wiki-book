@@ -6,6 +6,24 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cursor 复盘 Harness：模型决定能力上限，H…"))
+    深度分析
+      Harness 作为持续运营的软件产品
+      上下文管理范式转移：从静态塞入到动态拉取
+      模型变强后的「护栏拆除」问题
+      工具错误的上下文污染效应
+    实践启示
+      建立 Harness 持续运营闭环
+      多模型支持的真实复杂度
+      Keep Rate 作为真实质量代理指标
+    相关实体
+```
+
 ## 核心要点
 - **问题核心**：同一个模型放进不同 Coding Agent，体感差异巨大——核心在于 Harness 而非模型本身
 - **核心洞察**：模型决定能力上限，Harness 决定生产下限；Harness 是模型和真实交付之间那套运行系统

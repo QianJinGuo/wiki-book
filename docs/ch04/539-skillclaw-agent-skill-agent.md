@@ -10,6 +10,17 @@
 > 论文：https://arxiv.org/abs/2604.08377
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德 SkillClaw：让 Agent Skill 学…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)
 - [Ai Skill Skill Creator 源码拆解](ch04/319-skill-skill.html)

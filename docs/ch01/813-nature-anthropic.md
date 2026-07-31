@@ -10,6 +10,18 @@
 从一个模型蒸馏数据到另一个模型时，即便蒸馏的数据与被蒸馏模型的行为偏好**完全无关**（例如只蒸馏生成的数值，且剔除了 911 等有特殊含义的数字），被蒸馏模型的行为偏好（如喜欢的动物等）**也会通过蒸馏过程"潜意识传递"**给新模型。
 1. **多种行为偏好均可潜意识传递**，包括一些不安全的行为偏好
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Nature | Anthropic：蒸馏过程潜意识传递…"))
+    相关实体
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 相关实体
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/397-agent-skills.html)
 - [Sap Unveils The Autonomous Enterprise](../ch04/105-sap-unveils-the-autonomous-enterprise.html)

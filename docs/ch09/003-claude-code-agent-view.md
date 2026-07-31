@@ -9,6 +9,30 @@
 # Claude Code Agent View
 **Agent View** 是 Anthropic 在 Claude Code v2.1.139 中推出的多 Agent 可视化面板，被其工程 lead Thariq 称为「给 Claude Code 的 tmux」。它解决的不是 AI 能力问题，而是**人类在多 Agent 工作流中的注意力分配问题**——当同时运行 N 个 Claude Code 实例时，人的调度能力成为瓶颈。[^1]
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Agent View"))
+    核心设计
+      三层架构
+      关键能力
+      四个关键技术细节^1
+    与 Hermes 的关联
+    深度分析
+      多 Agent 协作的注意力经济学
+      平台化的必然性：Sherlocking 时刻
+      三层架构的认知价值
+      Worktree 隔离的工程哲学
+    实践启示
+      对个人用户
+      对工具设计者
+      对生态观察者
+    参考来源
+    相关实体
+```
+
 ## 核心设计
 ### 三层架构
 Claude Code 中有三个易混淆但本质不同的概念：[^1]

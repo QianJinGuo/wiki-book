@@ -10,6 +10,21 @@
 > **来源**: https://mp.weixin.qq.com/s/yH7-cbPDHNuzwuf9rxKcLA
 > **发布**: 叶小钗 (2026-07-22)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我给 WorkBuddy 加浏览器 Skill"))
+    深度分析
+      1. Agent 浏览器能力的'最后一公里'问题
+      2. 从'能读网页'到'会上网'的能力跃迁
+      3. Skill Forge 的深层意义：操作…
+      4. 与 PC Agent 生态的关系
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 桌面 AI Agent（如 WorkBuddy、Codex 等）在浏览器操作方面存在天然短板：自带的浏览器工具无法处理登录验证、动态加载内容、验证码扫码、多页面并行等真实场景。BrowserAct 是一套专为 AI Agent 设计的浏览器自动化 CLI 工具，可以作为 Skill 安装到 WorkBuddy 等桌面智能体中，赋予 Agent 操作真实浏览器、复用本地登录态、绕过反爬检测的能力。其 Skill Forge 功能还能将浏览器操作流程固化为可复用的 Skill，让一次性实验变成永久性工具。

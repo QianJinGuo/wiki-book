@@ -36,6 +36,17 @@ Customers who watch you fix bugs fast become advocates. Customers who accumulate
 
 How many paper cuts are your customers bleeding through right now, while you're busy shipping the next feature?
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Your defect backlog is a ret…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/662-garry-tan.html)

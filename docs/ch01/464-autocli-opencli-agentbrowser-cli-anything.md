@@ -8,6 +8,44 @@
 
 > **整理时间**：2026年4月24日
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AutoCLI / OpenCLI / AgentBro…"))
+    一、CLI-Anything — 让所有软件都…
+      核心定位
+      核心组件
+      支持的软件生态（部分）
+      与 OpenClaw/Agent 兼容
+    二、OpenCLI — 万物皆可 CLI 的 …
+      核心定位
+      核心特性
+      与 Agent 生态的关系
+    三、AutoCLI — 极速内存安全的网页信息…
+      核心定位
+      支持平台（55+）
+      autocli-skill 关联
+    四、AgentBrowser — AI Age…
+      elizaOS/agentbrowser 2…
+      zabarich/agentbrowser …
+      AshtonVaughan/agentbrow…
+      共同特征
+    五、横向对比
+    六、关键洞察
+      CLI-Anything 的野心（32.4k …
+      OpenCLI 的专注
+      AutoCLI 的垂直场景
+      AgentBrowser 的演进方向
+    深度分析
+      CLI 化的本质：Agent 与软件之间的接口…
+      规模效应与生态壁垒
+      Rust vs Python 的性能取舍
+      浏览器路线 vs CLI 路线
+    实践启示
+```
+
 ## 一、CLI-Anything — 让所有软件都变为 Agent 原生 ⭐32.4k
 
 **GitHub**：https://github.com/HKUDS/CLI-Anything

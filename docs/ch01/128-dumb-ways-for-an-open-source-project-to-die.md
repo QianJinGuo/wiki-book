@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 4.7KB | `entities/dumb-ways-for-an-open-source-project-to-die.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Dumb Ways for an Open Source…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - ...
 

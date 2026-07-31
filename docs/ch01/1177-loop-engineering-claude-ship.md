@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/loop-engineering-6-month-practice-claude-ship-peakstone.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering 半年实战拆解：clau…"))
+    核心概述
+    七 Agent 流水线
+      五大设计决策
+      编排层：/ship 状态机
+    进化循环 vs 代码循环
+    诚实缺陷
+    快速开始
+    相关实体
+```
+
 ## 核心概述
 
 Peakstone Labs（AI 原生量化研究实验室）开源的 claude-ship 系统（github.com/Peakstone-Labs/claude-ship），单人 AI 开发 Loop Engineering 半年实战总结。核心判断：Loop Engineering 的本质是设计一个会自我进化的开发系统——用工程约束对抗确认偏误和技术债，用记忆和校准让每一次循环都比上一次更强。

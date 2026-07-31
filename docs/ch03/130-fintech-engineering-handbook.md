@@ -8,6 +8,19 @@
 
 > Source: [Fintech Engineering Handbook](https://w.pitula.me/fintech-engineering-handbook) | Score: v*c=48
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fintech Engineering Handbook"))
+    Overview
+      For whom?http://w.pi…
+    Principleshttp://w.p…
+    Representing moneyht…
+      Precision handlinght…
+```
+
 ## Overview
 
 Markdown Content:

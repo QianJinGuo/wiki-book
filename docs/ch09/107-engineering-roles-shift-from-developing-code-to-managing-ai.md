@@ -6,6 +6,22 @@
 
 # Engineering roles shift from developing code to managing AI | CIO Dive
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Engineering roles shift from…"))
+    相关实体
+    深度分析
+      1. '看不见的工作'为什么让生产力指标失真
+      2. Engineering role 的三层…
+      3. 为什么测量框架成为最大瓶颈
+      4. 对企业的可执行建议
+    实践启示
+    关联实体
+```
+
 ## 相关实体
 
 - [scaling archunit with nebula archrules](../ch11/302-scaling-archunit-with-nebula-archrules.html)

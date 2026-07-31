@@ -10,6 +10,17 @@
 |------|------------|-----------|
 | 低代码 Agent | 先把东西跑起来 | 速度、协作、可视化 |
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("低代码 Agent、框架 Agent、自研 Agent，…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)

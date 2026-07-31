@@ -8,6 +8,26 @@
 
 Morphllm shows how to exploit the structure of code editing tasks for LLM inference acceleration. Core insight: code edits have high locality -- agents reread the same repo each turn, context overlaps heavily with the previous turn, and edits are mostly incremental copies of the file.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Optimizing Models to Be Fast…"))
+    Core Findings
+      1. Incremental Context …
+      2. Structural Propertie…
+      3. Inference Performanc…
+    Differentiation from Ge…
+    深度分析
+      推测解码的定制化是核心竞争力
+      前缀缓存命中率决定廉价 GPU 的可行性
+      跨机器 TCP 前缀缓存突破 NVLink 限制
+      Chinchilla 法则在推测解码场景下失效
+    实践启示
+    Related
+```
+
 ## Core Findings
 
 ### 1. Incremental Context Strategy

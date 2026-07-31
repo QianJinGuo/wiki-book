@@ -10,6 +10,21 @@
 
 NOVELQR（Novelty-aware Quote Recommendation）是一个两阶段引据推荐框架，核心贡献包括：**Agent驱动的深度语义标签**和**Token级新颖性估计**，用于破解LLM的自回归延续偏差（auto-regressive continuation bias）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NOVELQR — Token-Level Novelt…"))
+    核心发现
+    两阶段框架
+      阶段一：离线构建 — 生成式标签智能体（Lab…
+      阶段二：在线推理
+    核心技术：Token级新颖性估计
+    实验结果
+    意义
+```
+
 ## 核心发现
 
 用户系统性地偏好"意料之外，却合情合理"（unexpected yet rational）的引据。**新颖性（novelty）是独立于语义合理性（relevance）的质量维度**，用户愿意用少量恰当性换取更高新颖性。

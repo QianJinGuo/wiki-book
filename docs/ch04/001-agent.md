@@ -8,6 +8,21 @@
 
 > **来源**：深思圈 / 深思SenseAI（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始"))
+    深度分析
+      01 先画地图：按自主程度对工作分级
+      02 把记忆装进代码库：Context 是操作记忆
+      03 选最轻的那个：混合工具栈
+      04 什么叫做对了：Skills + Eval…
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 本文是深思圈对 cyber.fund 创始人 Stepan Gershuni 的《How to Build an AI-Native Startup》的系统梳理。核心论点：AI 原生创业的核心差距不是工具选择，而是组织学习速度——谁能用 AI 构建自我改进的操作系统，谁就能在几个月内建立不可逆的竞争优势。

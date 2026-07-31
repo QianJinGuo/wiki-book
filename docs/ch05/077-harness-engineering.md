@@ -8,6 +8,28 @@
 
 > **背景**：郭美青，2026年5月21日。本文从模型能力跃升的视角审视 Harness Engineering 的未来，提出"主权不可自生"作为划分可自动化与不可自动化工作的核心框架。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 的未来——什么会…"))
+    核心框架：主权线
+      '主权不可自生'原则
+      被取代的工作（回答'怎么做'）
+      不会消失的工作（回答'该不该做'）
+    三阶段演进路径
+      短期：Agent 架构师
+      中期：审核自动生成的 Harness
+      长期：治理工程
+    深度分析
+      与 Harness Engineering 概…
+      实际落地的张力
+      对从业者的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 随着模型能力持续跃升，Harness Engineering 中的部分工作将被内化到模型中——但治理层面的工作不仅不会消失，反而更加重要。本文提出"主权不可自生"（Sovereignty Cannot Self-Generate）作为分界线的本质：被取代的工作回答"怎么做"（how），不会被取代的工作回答"该不该做"（whether）。在此框架下，Harness Engineering 将经历三阶段演进：短期 Agent 架构师 → 中期审核自动生成的 Harness → 长期治理工程。

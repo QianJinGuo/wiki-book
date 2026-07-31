@@ -10,6 +10,23 @@
 > **来源**: https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation
 > **发布**: Interconnects (2026-07-20)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kimi K3: The Open-Weights Es…"))
+    Summary
+    Key Points
+    Deep Analysis
+      The Watershed Has Arrived
+      Capital Efficiency: The…
+      The Open-Closed Dance: …
+      The Policy Trilemma
+    Practical Insights
+    Related Entities
+```
+
 ## Summary
 
 Kimi K3, released by Moonshot AI on July 16, 2026, represents a watershed moment for open-weight AI models. At 2.8 trillion parameters (MoE architecture with 16/896 active experts), it ranks #2 on the Vals AI Index and #3 on Artificial Analysis's Intelligence Index — the strongest open model ever released, trailing only Claude Fable and GPT-5.6 Sol Max. Lambert's analysis examines five implications: China's recommitment to open-source AI (reinforced by Xi Jinping's WAIC keynote), the economic decelerationist effect of open models on frontier labs, China's capital efficiency advantage in model development, the growing ecosystem of frontier open models (including Alibaba's announced Qwen 3.8), and the urgent policy challenge of managing frontier open-weight capabilities.

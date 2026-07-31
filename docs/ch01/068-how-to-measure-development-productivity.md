@@ -27,6 +27,17 @@ I think that’s a worthwhile question, especially now that AI coding is making 
 
 But first, let’s start with the obvious wrong answers.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How To Measure Development P…"))
+    Measuring Work or Activ…
+    Measuring Output
+      Uncertainty
+```
+
 ## Measuring Work or Activity
 
 Early developer productivity metrics centered on work artifacts. Here’s a classic example: in the early 1980s, IBM contracted Microsoft to develop PC-DOS, an operating system for its new IBM personal computer. In [this video](https://www.youtube.com/watch?v=kHI7RTKhlz0) Steve Ballmer describes how perplexed Microsoft was at the metric IBM wanted to use: _1000s of lines of code_, or _KLOCs_. Ballmer points out the obvious fallacy: a good developer may create a better implementation with _fewer_ lines of code. More KLOCs isn’t necessarily better.

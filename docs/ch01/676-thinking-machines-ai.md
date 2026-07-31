@@ -12,6 +12,17 @@ Mira Murati的Thinking Machines Lab刚刚发布了新的研究成果：交互模
 核心思路：与其把实时交互功能拼接到原本按轮次工作的模型上，不如从头训练一个天生就能处理实时交互的模型。
 用过语音AI的人都有这种感受：你必须说完，它才开始听。它说完，你才能接话。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Thinking Machines 交互模型：离真正实时…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Thinking Machines Interaction Models](../ch04/255-thinking-machines-interaction-models.html)
 - [Interaction Models](../ch03/106-interaction-models-a-scalable-approach-to-human-ai-collabor.html)

@@ -7,6 +7,17 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thisisgoingtobebig-public-stealth.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thisisgoingtobebig-public-stealth.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Public Stealth Leaves Opport…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)

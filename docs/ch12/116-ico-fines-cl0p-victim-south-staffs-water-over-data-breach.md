@@ -6,6 +6,17 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ICO fines Cl0p victim South …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

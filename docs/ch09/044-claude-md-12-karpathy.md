@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/claude-code-12-rules-karpathy-extension.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CLAUDE.md 12 条规则：Karpathy 扩展模板"))
+    概述
+    核心设计原则
+    规则体系
+      基础层（Karpathy 4 条）——防写代码失败
+      扩展层（新增 8 条）——防 agent 编排失败
+    Karpathy 模板的 4 个失效点
+    数据
+    深度分析
+    实践启示
+    参考来源
+```
+
 ## 概述
 基于 Forrest Chang 整理的 Karpathy 4 条 CLAUDE.md 规则，扩展 8 条覆盖 2026 年 5 月 agent 驱动场景的新规则。6 周 30 个代码库实测，错误率从 41% 降至 3%，遵循率保持 76-78%。
 

@@ -8,6 +8,18 @@
 
 LangSmith Trajectory Evaluations 是一种评估 AI Agent 行为的方法，特别适合具有明确步骤流程和决策路径的复杂工作流 。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Langsmith Trajectory Evals"))
+    评估模式
+    为什么适合 wiki-evolver
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 - agent 的很多行为只会在真实 LLM 运行里暴露

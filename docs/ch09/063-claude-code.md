@@ -12,6 +12,22 @@ Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 七种自定义方法：官方全景指南"))
+    七种方法对比
+    CLAUDE.md：控制在 200 行以内
+    规则：路径作用域是关键
+    技能：流程型指令的归宿
+    子智能体：隔离是核心价值
+    钩子：确定性执行
+    输出风格：权重最高，谨慎使用
+    快速建议
+```
+
 ## 七种方法对比
 
 | 方法 | 何时加载 | 压缩行为 | 上下文成本 | 适用场景 |

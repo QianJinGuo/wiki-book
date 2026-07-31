@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Navigating EU AI Act Require…"))
+    关键要点
+    相关实体
+    深度分析
+      EU AI Act 合规框架的核心逻辑
+      FLOPs计量方法的技术解析
+      Fine-Tuning FLOPs Meter…
+      生产环境规模分析
+    实践启示
+      1. 将FLOPs追踪纳入ML工作流的标准化步骤
+      2. 建立模型能力分级与合规义务的映射表
+      3. 优先采用参数高效方法以降低合规风险
+      4. 构建跨次运行的合规状态监控面板
+```
+
 ## 摘要
 Title: Navigating EU AI Act requirements for LLM fine-tuning on Amazon SageMaker AI | Amazon Web Services
 URL Source: https://aws.amazon.com/blogs/machine-learning/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai/

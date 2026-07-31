@@ -10,6 +10,16 @@
 
 GraphPlanner 是 UIUC 提出的多智能体 LLM 路由框架，将传统的模型选择路由（LLM Router）升级为动态工作流生成（Agentic Workflow Generation）。其核心创新在于：Router 不仅决定调用哪个模型，还决定每个模型应承担的角色（Planner / Executor / Summarizer），并利用图结构记忆网络（GARNet）记录历史交互以指导决策。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GraphPlanner — 图记忆网络驱动多智能体 L…"))
+    核心架构
+    训练与实验
+```
+
 ## 核心架构
 
 **GARNet（Graph-based Agentic Router Network）**：一种异构图记忆网络，维护两类图记忆：

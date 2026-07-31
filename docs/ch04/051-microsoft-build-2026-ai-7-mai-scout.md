@@ -9,6 +9,36 @@
 
 **Microsoft Build 2026** 是微软的"AI 独立日"——从"AI 应用整合者"（依赖 OpenAI）转向**"全栈 AI 基础设施与模型提供者"**。核心发布：① **MAI-Thinking-1**（首个高级推理模型，350 亿活跃参数 / 1 万亿总参数 / SWE Bench Pro 与 Claude Opus 4.6 持平）② **6 款 MAI 系列模型**（Code / Image / Transcribe / Voice 等）③ **Scout**（基于 OpenClaw 框架的 365 智能体，可全天候自主运行）。**量子位补充全景视角**：④ **OpenClaw 登 Windows + MXC 沙箱** ⑤ **GitHub Copilot 独立桌面 App** ⑥ **Windows 开发者体验大升级** ⑦ **NVIDIA 合作 + Surface RTX Spark Dev Box**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft Build 2026：微软 AI 独…"))
+    相关实体
+    一句话定位
+    1. MAI-Thinking-1：微软首个高…
+      模型规格
+      性能基准
+      关键差异化：'独立训练'
+      推理赛道格局
+    2. MAI 模型家族：多模态生态系统
+    3. Scout：'升级版 OpenClaw'…
+      产品定位
+      集成范围
+      关键设计决策
+      微软对 OpenClaw 安全漏洞的应对
+    4. 微软 AI 战略定位的根本转变
+      转型前：'AI 应用整合者'
+      转型后：'全栈 AI 基础设施与模型提供者'
+    5. 核心断言 / 行业意义
+    与现有 wiki 实体的关系
+      vs OpenClaw../ch11/2…
+      vs Claude Code / Codex
+      vs Kimi Work../ch01/…
+      vs wow-harness v3../…
+```
+
 ## 相关实体
 - [Microsoft Build 2026 Qbitai Full Scope](../ch05/094-ai.html)
 

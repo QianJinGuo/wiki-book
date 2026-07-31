@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Airbyte Agents: A New Era fo…"))
+    核心定位
+    为什么 Agents 会失败
+    核心产品：Context Store
+    性能收益
+      与各 MCP Vendor 对比的 Token…
+    三种接入方式
+    上市状态
+    Airbyte 的战略定位
+    与 Airbyte Data Replicat…
+```
+
 ## 核心定位
 
 Airbyte Agents 是 Airbyte 推出的 AI Agent 上下文层（Context Layer），被誉为公司自六年前开源首个连接器以来「最大的一步」。

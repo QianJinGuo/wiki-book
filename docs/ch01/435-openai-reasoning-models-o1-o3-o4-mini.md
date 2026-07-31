@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/openai-reasoning-models.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI Reasoning Models (o1/…"))
+    模型系列概览
+    核心技术特征
+      Extended Chain-of-Thoug…
+      训练方法
+      与传统 GPT 系列的区别
+    能力表现
+      数学能力
+      代码能力
+      科学推理
+    成本考量
+    使用场景与局限
+      最佳适用场景
+      不适合场景
+    与其他推理模型的竞争
+    技术演进方向
+    参见
+```
+
 ## 模型系列概览
 
 | 模型 | 发布时间 | 定位 | 关键特点 |

@@ -8,6 +8,22 @@
 
 火山引擎 AI 搜索团队分享了其 Agent 架构从 ReAct 三节点演进到 Unified Policy Agent（UP-ReAct）的实践历程。该系统支持千万级并发用户，是生产级 Agent 架构设计的典型案例。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("火山引擎 AI 搜索千万级 Agent 架构演进 — 从…"))
+    核心问题
+    深度分析
+      从 Prompt Engineering 到 …
+      Workflow + Unified Poli…
+      Unified Policy：三合一决策中枢
+      三个统一：控制 + 行为 + 状态
+    实践启示
+    相关实体
+```
+
 ## 核心问题
 
 随着规模增长，ReAct 三节点架构暴露出三个关键问题：

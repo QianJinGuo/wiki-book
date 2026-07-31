@@ -8,6 +8,20 @@
 
 > **vxc score**: 72 | AWS 官方 GPT-5.6 部署指南，涵盖 Sol/Terra/Luna 三款模型的选型、推理配置、Prompt Caching、Codex 集成、配额管理
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI GPT-5.6 Sol/Terra/Lun…"))
+    深度分析
+      三模型分层策略：从'一个模型干所有事'到'按需…
+      Prompt Caching 的工程经济学
+      Bedrock 战略层分析：AWS 的模型中间…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

@@ -8,6 +8,29 @@
 
 > **Background**: Vincenzo Iozzo (security researcher) ran a controlled study with 5 open-weight LLMs against a single known bug to measure how much base-model architecture vs post-training (RLHF/instruction-tuning) drives vulnerability-finding capability. Result: post-training dominates — even small open models with good harness scaffolding match or beat larger base models.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How harnesses and post-train…"))
+    Core thesis
+    Empirical setup
+    Key findings
+      1. Post-training is the…
+      2. Harness scaffolding …
+      3. GLM-5.1's edge is po…
+      4. Failure modes are di…
+    Implications for the wiki
+      For Agent/Harness engin…
+      For Security research
+      For the open-weight vs …
+    Methodology strengths
+    Methodology caveats
+    Relation to existing wi…
+    Cross-link targets
+```
+
 ## Core thesis
 
 For vulnerability discovery on real code:

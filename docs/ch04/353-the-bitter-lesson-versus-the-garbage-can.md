@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Bitter Lesson versus The…"))
+    深度分析
+      1. Sutton 苦味教训的精确表述
+      2. Manus 的'工艺陷阱'与 ChatG…
+      3. 从 Garbage Can 到'Bitt…
+      4. '哪种问题'才是企业现实——未解之问
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick 借用 Richard Sutton 2019 年的"苦味教训"（Bitter Lesson）来挑战企业 AI 落地的传统路径。传统思路：先梳理混乱的组织流程（Garbage Can Model 描述的企业现实）→ 再让 AI 理解流程 → 再自动化。苦味教训暗示了相反路径：**跳过流程梳理，直接训练 AI 产出"好结果"**——AI 会找到自己的路径通过组织混乱。Manus（手工艺精心设计）与 ChatGPT agent（强化学习训练结果）的对比，是这一论点的实证。

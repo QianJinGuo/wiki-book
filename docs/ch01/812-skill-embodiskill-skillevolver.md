@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/tsinghua-self-evolving-skill-agent.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("清华自进化Skill双星：EmbodiSkill + S…"))
+    核心问题
+    EmbodiSkill：诊断层——先判断'哪里…
+      四种反思类型（关键创新）
+      技能结构
+      '执行→反思→更新'螺旋
+      性能
+    SkillEvolver：生成层——自动生成技…
+      核心定位
+      方案多样性（Population-based）
+      轨迹对比 + 机械检查
+      关键特性
+    深度分析
+      诊断层 vs 生成层的分工
+      为什么是'技能'而不是'模型'
+      与 OpenAI Codex /goal 的互补
+    实践启示
+    参考链接
+```
+
 ## 核心问题
 传统 Agent 依赖静态技能手册——遇到手册未覆盖的新情况就犯错，且每次犯同一个错，只能不断手动更新手册。核心矛盾：**Agent 能否自己识别技能缺陷并自动修复？**
 

@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Enable safe agentic payments…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments 涉及agent领域的核心技术议题。

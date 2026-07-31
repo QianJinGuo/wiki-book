@@ -6,6 +6,23 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Crypto Inflows Hit $858M as …"))
+    Summary
+    Key Points
+    Related
+    相关实体
+    深度分析
+      资金流向结构与市场情绪
+      宏观驱动因素：CLARITY Act 与监管情绪
+      盘中见利情绪与杠杆平仓
+    实践启示
+```
+
 ## Summary
 *(AI-generated summary - TODO: manually review)*
 

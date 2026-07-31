@@ -8,6 +8,22 @@
 > AWS China Blog 2026-06-12 架构指南：在 AWS 上以生产级标准部署 LiteLLM AI Gateway。两条路径：ECS Fargate（零运维、Serverless）与 EKS（K8s 原生、灵活），并结合 Control Plane / Data Plane 分离实现多区域高可用。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LiteLLM 生产级部署：AWS ECS/EKS 双方…"))
+    选型决策矩阵
+    方案一：ECS Fargate 部署
+    方案二：EKS 部署
+    Control Plane / Data Pl…
+    安全最佳实践
+    深度分析
+    实践启示
+    关键引用清单
+```
+
 ## 选型决策矩阵
 
 ```mermaid

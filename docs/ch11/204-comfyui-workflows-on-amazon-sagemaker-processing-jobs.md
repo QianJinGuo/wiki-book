@@ -8,6 +8,25 @@
 
 > 在 SageMaker Processing Jobs 上运行 ComfyUI 工作流，实现企业级自动化内容生成。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ComfyUI Workflows on Amazon …"))
+    核心问题
+    技术方案
+    实施步骤
+    技术亮点
+    深度分析
+      SageMaker Processing Jo…
+      工作流 JSON 是可版本化的内容生成配方
+      Z-Image Turbo 的 Early F…
+      三层 CDK Stack 架构体现了生产级安全设计
+    实践启示
+    与现有实体差异化
+```
+
 ## 核心问题
 
 ```mermaid

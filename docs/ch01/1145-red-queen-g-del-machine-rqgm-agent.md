@@ -8,6 +8,20 @@
 
 Cambridge + NVIDIA (2026-06-24) 提出的进化框架，解决自改进 Agent 的根本性局限：评估标准假设是固定的，但进化要求评估器也一起进化。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Red Queen Gödel Machine (RQG…"))
+    核心问题
+    历史脉络
+    核心机制：受控效用进化 Controlled…
+    实验结果
+    关键意义
+    相关实体
+```
+
 ## 核心问题
 
 现有自改进 Agent 假设评估标准是平稳的（stationary）：固定的 verifier、benchmark、标注数据集。但这违背了进化的核心规律：物种不是在静止环境中优化自己，而是和不断变化的环境一起改变。

@@ -6,6 +6,21 @@
 
 # CAMEL: 置信度门控反思机制用于奖励建模 — TikTok/NUS (ICML 2026)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CAMEL: 置信度门控反思机制用于奖励建模 — Tik…"))
+    深度分析
+      奖励建模的效率悖论
+      Log-Probability Margin …
+      Counterfactual 训练：让反思真正有效
+      训练中的 Confidence Shift 现象
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 CAMEL（Confidence-gAted RefLection for Reward Modeling）由 TikTok 与新加坡国立大学联合提出（ICML 2026），核心思想是将奖励建模改造为置信度门控反思机制：先以单 token 给出初判，置信度足够高直接输出，置信度低才触发 reflection 复核。 基于 Qwen3-14B 构建，在 RewardBench、RM-Bench、JudgeBench 三个主流奖励模型 benchmark 上取得平均准确率 82.9%，以 14B 参数超过多个 70B 级奖励模型。其关键发现——两个 verdict token 之间的 log-probability margin 与判断正确性强相关——为"样本难度"提供了无需额外置信度模型的零成本信号。

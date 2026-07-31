@@ -6,6 +6,21 @@
 
 # Temporary Cloudflare Accounts for AI agents
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Temporary Cloudflare Account…"))
+    深度分析
+      Agent 基础设施的「零配置」范式
+      安全模型分析
+      对 Agent 工作流的影响
+      与 auth.md 的互补关系
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Cloudflare 于 2026 年 6 月推出 Temporary Accounts for Agents 功能，允许 AI 编码代理通过 `wrangler deploy --temporary` 命令直接部署应用，无需预先注册账户。临时部署存活 60 分钟，在此期间用户可以认领（claim）该账户使其永久化。这一机制从根本上解决了 Agent 部署流程中「人类摩擦」的瓶颈问题。

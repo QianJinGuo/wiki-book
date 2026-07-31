@@ -8,6 +8,30 @@
 
 > **背景**：本文基于 OpenAI 官方 Cookbook 合作伙伴 SchemaFlow 的实战案例整理，提取其 staged agentic workflow 设计模式、SQL 生成的工程化护栏与评估范式。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SchemaFlow: OpenAI Cookbook …"))
+    SchemaFlow 是什么
+    五大核心设计模式
+      1. Staged agentic workf…
+      2. Pydantic schema 强类型约束
+      3. PDF RAG context
+      4. Promptfoo eval guard…
+    与现有 wiki 实体的差异化
+    实践启示（Actionable）
+    深度分析
+      1. Staged workflow 的可观测…
+      2. Generator-Evaluator …
+      3. RAG 是上下文窗口的成本优化策略
+      4. Pydantic schema 将 LL…
+    三个独有贡献（不应合并到现有 entity）
+    上线状态 / 链接
+    相关实体
+```
+
 ## SchemaFlow 是什么
 
 OpenAI Cookbook 在 2026 年推出的合作伙伴示例工程，演示**如何用 staged agentic workflow 完成企业数据库变更管理**——从 PDF schema 文档 RAG 检索、变更请求解析、影响分析、SQL 生成到 Promptfoo 评估护栏的完整 5 阶段流水线。是 OpenAI 在"agent harness engineering"上给出的**官方范本**。

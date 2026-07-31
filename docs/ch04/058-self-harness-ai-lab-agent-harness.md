@@ -8,6 +8,31 @@
 
 > 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)，并参考 Shanghai AI Lab 论文 *Self-Harness: Harnesses That Improve Themselves*（https://arxiv.org/abs/2606.09498 ）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Self-Harness：上海AI Lab 提出的 Ag…"))
+    一句话总结
+    范式定位：Harness 改进的第三条路
+    Harness 形式化定义
+    Self-Harness 三阶段闭环
+      阶段一：Weakness Mining（弱点挖掘）
+      阶段二：Harness Proposal（Ha…
+      阶段三：Proposal Validation…
+    实验：Terminal-Bench-2.0 +…
+    主结果：三个反直觉细节
+    进化轨迹：分支搜索与合并
+      MiniMax M2.5：42.2% → 53…
+      Qwen3.5：20.3% → 36.7%
+      GLM-5：46.1% → 57.0%
+    三个 Case Study：补丁如何改变真实执…
+      Case 1：GLM-5 + build-po…
+      Case 2：MiniMax M2.5 + c…
+      Case 3：Qwen3.5 + extrac…
+```
+
 ## 一句话总结
 
 **Self-Harness** 由上海人工智能实验室（Shanghai AI Lab）提出，核心是：**让固定权重的 LLM Agent 根据自己的执行轨迹挖掘弱点、提出 Harness 修改提案、再用 held-in/held-out 双重门控验证合并**。在 Terminal-Bench-2.0 上把 MiniMax M2.5、Qwen3.5-35B-A3B、GLM-5 三款模型的 held-out 通过率分别推到 **61.9%、38.1%、57.1%**；其中 Qwen3.5 held-in 集相对提升高达 **138%**，说明极简 Harness 对小模型能力的压制有多狠。

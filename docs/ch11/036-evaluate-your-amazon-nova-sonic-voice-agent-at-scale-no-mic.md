@@ -23,6 +23,20 @@ If you have 50 conversation scenarios across 3 user personas, you’re looking a
 
 In this post, we walk you through the [Nova Sonic Test Harness](<https://github.com/aws-samples/sample-amazon-nova-sonic-eval-harness>), an open source framework that we built to solve both problems. It serves as a rapid iteration tool for tuning system prompts and tool configurations (run a conversation, see results, adjust, repeat) and as a comprehensive evaluation framework for validating voice agent quality at scale. It runs complete multi-turn conversations with [Amazon Nova Sonic](<https://docs.aws.amazon.com/nova/latest/userguide/speech.html>) automatically, evaluates them using LLM-as-judge techniques, and can even detect cases where the model’s audio output doesn’t match its text output (audio hallucinations). No microphone required.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Evaluate your Amazon Nova So…"))
+    Why speech-to-speech te…
+    How the test harness wo…
+      Defining a test scenario
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## Why speech-to-speech testing is different
 
 ```mermaid

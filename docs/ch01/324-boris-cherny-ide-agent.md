@@ -11,6 +11,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/iqSixiNP9lxNKg7aVfHFCQ.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Boris Cherny 新访谈：开发工具正在从 IDE…"))
+    深度分析
+      1. 产品悬置（Product Pendulu…
+      2. 控制点迁移 —— 从编辑器交互到工作流控制
+      3. 'coding is solved'的前…
+      4. 印刷术类比的工程含义
+    实践启示
+      1. 重新评估 Agent 产品的成熟度
+      2. 重构开发流程以匹配新的控制点
+      3. 区分'代码生成'与'软件工程'
+      4. 拥抱 Loop 模式
+    相关实体
+```
+
 ## 摘要
 
 本文围绕 Boris Cherny（Claude Code 核心创建者之一）在 Sequoia AI Ascent 2026 上的访谈展开，关键论断是：**开发工具的中心正从 IDE 里的光标，逐步迁移到管理 Agent 工作流的那块控制台**。这不是"AI 写代码更快了"的简单话题，而是软件工程控制点的一次系统性迁移——人从"写代码的人"变成"管 Agent 的人"，从控制文件/函数/命令，转向控制目标/约束/权限/预算/验证/审查。

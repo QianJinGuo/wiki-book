@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/agent-workflows.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Workflows"))
+    深度分析
+      token 效率问题的本质
+      优化飞轮的设计
+      三种主要优化模式的工程含义
+      测量效率提升的困难
+    实践启示
+      1. 从可观测性开始
+      2. 建立优化飞轮
+      3. 先消除不必要的 LLM 调用
+      4. 用正确的指标
+    相关页面
+    相关实体
+```
+
 ## 核心要点
 - GitHub Agentic Workflows 运行在每个 PR 上，成本会悄然累积
 - 工作流的工作在 YAML 中完全指定，每次执行都会重复——这使得优化比交互式桌面会话更容易

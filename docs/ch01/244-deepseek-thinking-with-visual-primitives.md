@@ -9,6 +9,35 @@
 > Source: https://mp.weixin.qq.com/s/tz7Zdbv8KhHtG8fCGqQ5LQ
 > 官方论文：DeepSeek, "Thinking with Visual Primitives", 2026-04-30
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek Thinking with Visua…"))
+    发布背景
+    核心创新：视觉原语
+      解决的问题：Reference Gap（指代鸿沟）
+      三件不同的事
+      视觉原语的具体形式
+      范式转移
+    效率对比
+    压缩链路
+    Benchmark 详细结果
+      计数任务：和 Gemini-3-Flash 互…
+      空间推理 + 通用 VQA：DeepSeek …
+      拓扑推理（真正的差距所在）
+      为什么 frontier 模型集体在拓扑推理上翻车
+    5阶段训练管线
+      Stage 1: Pretraining（预训练）
+      Stage 2: Specialized SF…
+      Stage 3: Specialized RL…
+      Stage 4: Unified RFT（统一…
+    数据体量
+      Anti-cheat 数据设计
+    隐藏彩蛋：多语言能力
+```
+
 ## 发布背景
 - 2026-04-24：DeepSeek V4 论文发布（58页），提到多模态是 V5 方向
 - 2026-04-29：DeepSeek App 开始灰度内测识图模式

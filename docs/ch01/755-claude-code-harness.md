@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/claude-code-harness-deep-dive-founder-park.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Harness 深度分析"))
+    TAOR Loop：Orchestrator …
+    Context 管理
+    六层记忆系统
+    五档权限光谱
+    多 Agent 编排
+    Anti-Distillation and Und…
+    深度分析
+    实践启示
+```
+
 ## TAOR Loop：Orchestrator 越笨越稳定
 
 Claude Code 的核心是 Think-Act-Observe-Repeat（TAOR）循环：模型控制循环决策，运行时只是执行器。Orchestrator 仅约 50 行核心代码，暴露 4 种工具原语：Read/Write/Execute/Connect。Bash 是通用适配器。脚手架应随模型变强而变薄——这是 Claude Code 架构的核心理念 。

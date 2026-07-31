@@ -8,6 +8,28 @@
 
 # Trail of Bits: Skill Scanner Bypass 实证研究
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Trail of Bits: Skill Scanner…"))
+    一句话总结
+    攻击对象（4 个 scanner）
+    攻击技术（'standard tricks'）
+    为什么 skill 安全至关重要
+      1. Skill 是新形态的 dependency
+      2. 5 种 distribution cha…
+      3. Scanner 的根本局限：静态规则的对…
+    与现有实体的关系
+      与 Skill Design Pattern…
+      与 Skillclaw../ch04/4…
+      与 Agent Security Three…
+    关键实证数据
+    实践启示（对 skill marketplac…
+    实践启示（对 skill 开发者）
+```
+
 ## 一句话总结
 
 Trail of Bits 在 2026-06-03 公开实证：4 个公开的 agent skill scanner（ClawHub malicious skill detector、Cisco agent skill scanner、skills.sh 内置 3 个 scanner）**在不到 1 小时内被绕过**。攻击样本代码公开在 [trailofbits/overtly-malicious-skills](https://github.com/trailofbits/overtly-malicious-skills)，揭示 skill marketplace 的 supply chain 安全架构是 ship-first-secure-later 状态。

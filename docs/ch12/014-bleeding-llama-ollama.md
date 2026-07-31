@@ -36,6 +36,37 @@ graph TB
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Bleeding Llama：Ollama 未授权内存泄…"))
+    关键要点
+    相关实体
+    深度分析
+      漏洞根因分析
+      为什么影响如此之大
+      与其他 LLM 推理框架的类比
+    实践启示
+      立即行动
+      长期安全架构建议
+      风险排查
+    CVSS 评分详情
+    技术深度解析
+      漏洞代码路径详解
+      堆内存布局与数据泄漏机理
+      攻击者视角：3 步完成完整攻击链
+      数据外传协议解析
+    检测与威胁指标 IOC
+      网络层检测规则（Suricata）
+      主机层检测（auditd/syslog）
+      内存异常检测特征
+    变种与相关漏洞
+      GGUF 量化类漏洞模式
+      Ollama 历史安全事件
+```
+
 ## 摘要
 Title: Bleeding Llama: Critical Unauthenticated Memory Leak in Ollama | Cyera Research
 URL Source: https://www.cyera.com/research/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama

@@ -12,6 +12,21 @@
 
 **原文链接**: https://mp.weixin.qq.com/s/AwlzoIu4fFcZHxMQYqfeLA
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("别再手动复制 Skill 了：多 Agent 时代的 S…"))
+    深度分析
+      多 Agent 时代的 Skill 碎片化困境
+      软链接模式的技术取舍
+      从个人管理到团队协作
+      Skill 管理的未来形态
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 多 Agent 并行已经成为开发新常态——Cursor、Claude Code、Codex 轮番使用，通用 Agent 不断涌现。然而 Skill 却无法随工具自动迁移，同一份 Skill 在多个 Agent 中可以存在多个不同版本，造成碎片化的版本管理问题。Nacos Skill Sync 提供了一个系统级解决方案：将 Skill 收敛到一个中心仓库，再按需分发给各个 Agent。它提供 Local mode（本机软链接同步，零服务依赖）和 Registry mode（Nacos AI Registry 跨设备团队协作）两种模式，从根源消除多 Agent 环境的 Skill 冗余与版本不一致问题。

@@ -12,6 +12,34 @@
 > Published: 2026-04-30
 > Reference: Manthan Gupta — Fixes What OpenClaw Got Wrong
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent 记忆系统深度拆解"))
+    文章摘要
+    Hermes 四层记忆体系
+    核心设计原则
+      1. 不轻易改系统提示词
+      2. memory 工具设计
+      3. 压缩前的 memory flush
+      4. session_search：档案室不等…
+    Hermes vs OpenClaw 系统重心差异
+    给自研 Agent 的三个小问题
+    深度分析
+      记忆的本质：不是存储，是成本分配
+      Frozen Snapshot 机制：缓存友好…
+      Memory Flush 的真正意义：状态迁移…
+      session_search 的技术选型：FT…
+    实践启示
+      1. 先算成本，再设计记忆
+      2. 用字符限制而非 token 限制管理热记…
+      3. 保护 prompt cache 不要只靠…
+      4. 压缩节点是记忆设计的试金石
+    相关实体
+```
+
 ## 文章摘要
 核心论点：Hermes 没有做"更强大的记忆"，而是把记忆的**成本账**算得更细。它把不同类型的信息放入成本和用途完全不同的机制，避免把所有东西混在一个越来越大的 memory 口袋里。
 

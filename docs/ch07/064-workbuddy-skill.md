@@ -10,6 +10,21 @@
 > **来源**: https://mp.weixin.qq.com/s/DOyu93SYpOASofx8BzvGVw
 > **发布**: 叶小钗 (2026-07-15)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("WorkBuddy Skill 全拆解"))
+    深度分析
+      Skills 解决的问题：从静态知识到可执行能力
+      与 Agent 架构的继承与演进
+      渐进式披露的上下文经济学
+      自进化：从一次性技能到持续改进
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 WorkBuddy 的 Skill 体系是 Agent 工程化的重要实践，它将可复用的能力封装为标准化的「能力包」，使 Agent 能够在运行时动态加载和调用不同类型的技能。本实体详细拆解 WorkBuddy Skill 的核心三要素（元数据、指令、资源）、渐进式披露机制、创建流程、安装方式以及自进化闭环，揭示了 Skills 如何从静态方法论转变为 Agent 可调用的动态能力单元。

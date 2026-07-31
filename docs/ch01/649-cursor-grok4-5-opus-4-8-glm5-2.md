@@ -6,6 +6,21 @@
 
 # Cursor让马斯克的Grok4.5咸鱼翻身，追平Opus 4.8，成本比GLM5.2还低
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cursor让马斯克的Grok4.5咸鱼翻身，追平Opu…"))
+    深度分析
+      与 Cursor 联合训练：治好了'跑分强、实…
+      性价比革命：两重折扣的实际账单效应
+      编程基准的全面评估
+      算力基础与月更承诺
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 SpaceXAI（原 xAI）于 2026 年 7 月正式发布 Grok 4.5，这是更名后首款旗舰模型。基于 1.5 万亿参数 V9 基础模型，在数万张 NVIDIA GB300 GPU 上训练，并在 Cursor 注入真实开发者行为数据进行联合训练。在 DeepSWE、SWE Marathon、Terminal Bench、SWE-Bench Pro 等编程基准测试中与 Opus 4.8 互有胜负（三胜两负），输入 2 美元/百万 token、输出 6 美元/百万 token 的价格使其性价比突出。独立评测机构 Artificial Analysis 的 GDPval-AA v2 测试中，Grok 4.5 以 0.49 美元/任务的成本位列全球第四。

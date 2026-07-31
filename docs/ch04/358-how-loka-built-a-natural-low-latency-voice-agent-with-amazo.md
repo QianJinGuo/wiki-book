@@ -8,6 +8,23 @@
 
 > **Background**：AWS 官方博客 2026-06-24 发布的案例研究，详细介绍了 Loka 如何使用 Amazon Nova 2 Sonic 构建低延迟、自然对话的语音 Agent。文章包含具体的性能基准测试数据（Big Bench Audio 87.0 分）、架构设计细节和 Prompt 工程迭代过程。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Loka Built a Natural, Lo…"))
+    深度分析
+      Speech-to-Speech vs STT…
+      Prompt 工程的工程化
+      架构的可扩展性
+    实践启示
+      对语音 Agent 开发者的建议
+      对 Agent 架构师的启示
+      对企业客户的建议
+    相关实体
+```
+
 ## 摘要
 
 Loka 为汽车经销商构建了一个基于 Amazon Nova 2 Sonic 的语音 Agent，解决了传统语音助手"机器人感强、延迟高、客户挂断"的核心痛点。通过 speech-to-speech 端到端处理，系统实现了 1.39 秒的首音延迟，Big Bench Audio 推理得分 87.0（超越 Gemini 2.5 Flash 的 71.0 和 GPT Realtime 的 83.0），成本仅 $0.27/小时。通过迭代 Prompt 工程，整体评分从 2.7 提升到 3.8/5.0。

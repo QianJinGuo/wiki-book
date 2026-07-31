@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hands-free first notice of l…"))
+    深度分析
+      浏览器推理 vs 传统 RPA 的范式差异
+      证据标记的复利效应
+      人在环路的位置重置
+      合规性内建于执行轨迹
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 Strands Agents SDK 的领域推理能力与 AgentCore Browser Tool + Nova Act 的浏览器自动化相结合，实现免手动操作的多模态证据（照片、视频、音频）结构化摄入。系统将理赔员从重复性的门户操作中解放，使其从验证工作转向判断工作——证据在进入系统的瞬间就被标记、关联和分类。

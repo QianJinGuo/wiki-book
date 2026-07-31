@@ -8,6 +8,27 @@
 
 论文：Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration（Tencent + HKUST(GZ)，arXiv:2604.18131v1）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("World Knowledge：Agent推理前先探索环…"))
+    核心问题
+    World Knowledge
+    两阶段框架
+      阶段一：Native Evolution Ph…
+      阶段二：Knowledge-Enhanced …
+    训练：SFT + RFT 两阶段
+      SFT
+      RFT（两轮）
+      Outcome-Based Reward
+    核心数据
+    关键工程结论
+    局限性
+    启发
+```
+
 ## 核心问题
 
 当前 Agent 范式的问题：依赖人类预先设计的任务、奖励和工作流。一旦脚手架去掉，Agent 无法自我成长。

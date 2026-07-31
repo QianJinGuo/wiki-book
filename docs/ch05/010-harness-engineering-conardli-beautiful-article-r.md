@@ -4,6 +4,35 @@
 
 > 📊 Level ⭐⭐ | 25.9KB | `entities/harness-engineering-comprehensive-guide-conardli.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 综合性指南（Co…"))
+    核心定义
+    三次工程重心的演进
+      Prompt Engineering 的本质
+      Context Engineering 的本质
+    Harness 的六层架构
+      第一层：上下文管理
+      第二层：工具系统
+      第三层：执行编排
+      第四层：状态与记忆
+    头部公司实践
+      Anthropic 的实践
+      OpenAI 的实践
+      LangChain 的实践
+    关键结论
+    相关实体
+    第 2 来源：Beautiful Articl…
+      8 个 Phase 流程
+      Reacticle 组件协议（核心创新）
+      Reacticle vs Skill 关系
+      三视角终审
+    深度分析
+```
+
 ## 核心定义
 
 **Harness Engineering** 是 AI 工程领域的第三次重心迁移，专注于如何在真实执行过程中持续监督、约束、纠正和验收模型行为。

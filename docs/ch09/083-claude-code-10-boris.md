@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-team-10-tips-boris.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code团队10个使用技巧（Boris二刷）"))
+    核心命题
+    10 个团队技巧速览
+      1. 并行处理：git worktree + …
+      2. Plan Mode：复杂任务先打磨计划
+      3. CLAUDE.md：大刀阔斧迭代规则
+      4. 自定义 Skill 并提交 Git 复用
+    深度分析
+      1. worktree 并行模式本质上是'上下…
+      2. Plan Mode 的价值在于'认知节流…
+      3. CLAUDE.md 的迭代是'集体学习'…
+      4. Skill 复用生态揭示了'Agent …
+    实践启示
+      1. 立即配置 worktree 别名切换系统
+      2. 为每个项目建立 CLAUDE.md 迭代清单
+      3. 构建'一天一次'的 Skill 封装习惯
+      4. 用 Subagents 解耦多线程任务的…
+    相关主题
+```
+
 ## 核心命题
 
 Claude Code 创始人 Boris Cherny 第二次公开技巧——这次是来自 Claude Code **团队内部**的 10 个使用技巧，与年初 Boris 个人的使用习惯不同，代表了团队多样化实践。

@@ -8,6 +8,33 @@
 
 > 2026-06-07 引用自 Interconnects《Latest open artifacts (#19): Qwen 3.5, GLM 5, MiniMax 2.5》，2026-03-03。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Latest Open Artifacts #19：Qw…"))
+    背景
+    Relative Adoption Metri…
+    Our Picks 重点模型
+      Qwen3.5-397B-A17B
+      Step-3.5-Flash
+      GLM-5
+      MiniMax-M2.5
+    深度分析
+      1. 中国 AI 实验室的开源模型竞争态势
+      2. RAM 指标的价值：超越绝对下载量的相对评估
+      3. Qwen 3.5 的全面升级与 over…
+      4. MiniMax-M2.5 的效率突破
+    实践启示
+      1. 模型选型：用 RAM 评估社区采纳而非只…
+      2. Qwen 3.5 小模型用户：默认关闭推…
+      3. 关注 Step-3.5-Flash 的数…
+      4. OpenThinker-Agent-v1…
+    整体观察
+    相关实体
+```
+
 ## 背景
 
 本月是顶级开源权重 AI 的繁忙月份：Qwen、MiniMax、Z.ai、Ant Ling、StepFun 都有新旗舰模型发布。所有目光都在 DeepSeek V4 的即将发布， rumors 持续加速。

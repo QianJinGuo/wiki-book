@@ -8,6 +8,20 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notnotp-k8s-interviews-non-technical.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What Job Interviews Taught M…"))
+    内容提炼
+    Why?
+      Uniformity
+    关键洞察
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **来源**: https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/

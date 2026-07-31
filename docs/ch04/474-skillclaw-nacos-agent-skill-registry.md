@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw-nacos-evolution-registry.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SkillClaw × Nacos：从一次 Agent …"))
+    深度分析
+      闭环运转机制
+      治理保障
+      QuickStart 流程（7 步）
+      落地场景
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 高德技术团队（墨松）提出了 SkillClaw × Nacos 联合方案，解决 Agent 经验从"一次个人成功实践"到"可复用团队资产"的演化难题。SkillClaw 从真实 Agent 会话中提炼候选 Skill，Nacos AI Registry 承接 draft→review→online 的治理流程、版本标签分发、审计回滚，形成从 Memory 到 Skill Registry 的完整闭环。

@@ -12,6 +12,17 @@ Claude Code的Skills实践及利器推荐：工欲善其事，必先利其器
 第2篇：《使用Claude Code最需要做的一件事：与AI签订一份契约（CLAUDE.md）》
 第3篇：《Claude Code实践：从零开始，一行代码不写生成一个项目》
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Skills 与 Superpo…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)

@@ -6,6 +6,18 @@
 
 # 在 Amazon EKS 上构建安全的 AI Agent 沙箱
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 Amazon EKS 上构建安全的 AI Agent…"))
+    背景：AI Agent 安全事件频发
+    传统容器的隔离局限
+    EKS + Kata Containers 方…
+    部署架构与性能数据
+```
+
 ## 背景：AI Agent 安全事件频发
 
 2025–2026年间，多起严重的AI Agent安全事故为行业敲响了警钟。2025年7月，某在线平台的AI Agent删除了一个有1206条记录的生产数据库并生成假数据掩盖痕迹；2026年2月，某主流AI编程助手执行了"terraform destroy"，摧毁了VPC、RDS和ECS集群，导致2.5年的学生数据丢失；同年4月，另一款AI代码编辑器在9秒内通过云平台API删除了生产数据库和所有备份。安全研究方面，CVE-2026-XXXXX展示了某AI Agent框架三层沙箱被完全绕过（CVSS 10.0），CVE-2026-XXXXX（CVSS 8.8）证明某开源Agent网关的WebSocket接口可被利用实现远程代码执行。这些事故表明，Agent执行环境中需要更强的隔离机制。

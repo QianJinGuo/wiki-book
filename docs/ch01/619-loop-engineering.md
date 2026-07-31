@@ -36,6 +36,20 @@ publish_date: 2026-06-17
 
 就
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("《Loop Engineering橙皮书》发布！免费，开源"))
+    详细信息
+    loop engineering是怎么火的？
+    又一个「XX 工程」？
+    那一个「循环」到底长啥样
+    全文我最想让你记住的一点
+    原文
+```
+
 ## 核心要点
 
 > 本文为微信公众号文章，由 WeChat backfill 收录。

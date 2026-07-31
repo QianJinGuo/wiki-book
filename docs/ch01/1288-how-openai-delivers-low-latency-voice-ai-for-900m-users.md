@@ -6,6 +6,21 @@
 
 # How OpenAI Delivers Low-Latency Voice AI for 900M Users
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How OpenAI Delivers Low-Late…"))
+    深度分析
+      WebRTC 与 Kubernetes 的固有矛盾
+      ICE ufrag 路由的巧妙之处
+      用户态 Go 的性能之道
+      架构的局限性
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ByteByteGo 对 OpenAI 实时语音 AI 基础设施的深度技术分析揭示了其为 900M 周活用户提供低延迟语音体验的架构设计。核心架构将 WebRTC 协议处理拆分为**无状态中继层**（Stateless Relay）和**有状态收发层**（Stateful Transceiver）两部分，利用 ICE ufrag 字段作为路由密钥，在 Kubernetes 的弹性基础设施上实现了传统上需要固定 IP/端口的 WebRTC 部署。架构覆盖了从全球边缘中继（Global Relay）、用户态 Go 实现、SO_REUSEPORT 优化，到 Redis 缓存恢复的全链路设计。

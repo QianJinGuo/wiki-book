@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/amazon-nova-act-is-now-hipaa-eligible.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Nova Act is now HIPAA…"))
+    技术规格
+    使用前提
+    深度分析
+      HIPAA 合规资质对 AI Agent 领域…
+      技术架构层面的关键设计
+      AWS 共享责任模型的落地实践
+      市场竞争格局
+    实践启示
+      快速启动路径
+      优先自动化场景推荐
+      安全与合规 checklist
+      集成架构建议
+    相关实体
+```
+
 ## 核心要点
 
 - Amazon Nova Act 新增 HIPAA 合规资质，支持医疗保健机构在处理受保护电子健康信息（ePHI）时部署自主浏览器 AI Agent

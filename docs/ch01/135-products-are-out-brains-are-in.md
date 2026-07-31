@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/products-are-out-brains-are-in.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Products are out, brains are…"))
+    深度分析
+    实践启示
+    关联阅读
+    相关实体
+```
+
 ## 核心要点
 - （待补充）
 

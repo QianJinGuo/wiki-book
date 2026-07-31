@@ -8,6 +8,23 @@
 
 > **Background**：本文基于美团技术团队公众号报道 [Meituan Longcat 2 0 Official Release Wechat 2026](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-longcat-2-0-official-release-wechat-2026.md) 整理。美团于 2026 年 6 月 30 日正式发布新一代万亿参数大模型 LongCat-2.0，并对外开源。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("美团 LongCat-2.0：万亿参数大模型"))
+    概述
+    核心亮点
+      1.6T 总参数 / 动态激活
+      五万卡国产算力集群
+      OpenRouter 全球前三
+      Agentic Coding 优化
+    性能表现
+    相关链接
+    补充信息
+```
+
 ## 概述
 
 美团 LongCat-2.0 是业界首个在 **五万卡国产算力集群**上完成全流程训练与推理的万亿参数模型，**总参数 1.6T**，平均激活约 48B（动态范围 33B~56B），从零开始预训练，原生支持 1M 超长上下文。

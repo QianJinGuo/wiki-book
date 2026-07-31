@@ -8,6 +8,17 @@
 
 企业场景下的 Agent 编排挑战：权限隔离、审计合规、多租户、资源配额、故障隔离。与开源场景相比更强调可控性和可观测性。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("企业级 Agent 编排"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 本页作为知识图谱锚点，连接了以下关键实体：[CLI、MCP 和 CLI+Skill，应该如何选？](ch04/271-skill.html)。 相关主题通过 [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/035-agent.html) 延伸。

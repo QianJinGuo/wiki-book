@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Jury dismisses all claims in…"))
+    相关实体
+    深度分析
+      诉讼时效作为核心法律争点
+      OpenAI 治理结构变迁的时间线
+      双方辩护逻辑的对比
+      诉讼时效策略的博弈
+    实践启示
+      AI 治理的结构性教训
+      投资人与创始人的期望管理
+      竞争利益与诉讼动机的关联
+```
+
 ## 核心要点
 - 陪审团在不到 2 小时内一致裁定：Musk 的诉讼超过诉讼时效
 - 主审法官 Yvonne Gonzalez Rogers 同意陪审团裁决，驳回案件

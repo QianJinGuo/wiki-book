@@ -24,6 +24,24 @@
 
 从 M5 芯片开始，苹果还在每个 GPU 核心里嵌入了专门的矩阵乘法单元 Neural Accelerator，通过 Metal 4 的 TensorOps API 来调用，这是苹果首次在 GPU 层面提供可编程的、专属于 AI 推理的硬件加速。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("国产双开源：让Mac成为你的私人AI工作站"))
+    Cider：为 Apple Silicon 补…
+    Mano-P：让 Mac 长出「手」
+    Cider + Mano-P = Privat…
+    深度分析
+      Apple Silicon + MLX 生态的…
+      Cider 的关键技术突破：补齐 MLX 的量…
+      端侧 GUI Agent 的生产力革命
+      硬件限制的现实：内存瓶颈与自动进化
+    实践启示
+    相关实体
+```
+
 ## Cider：为 Apple Silicon 补齐端侧 AI 生态
 
 Cider 是明略科技自研并开源的端侧推理加速框架，构建于 MLX 之上，专为 macOS 与 Apple Silicon 设计。

@@ -8,6 +8,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kuaishou-worker-agent-desktop-software.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快手首个打工人Agent"))
+    深度分析
+      1. 四个老问题的一次性解决
+      2. '应用固化'作为 Agent 落地的工程范式
+      3. 主动规划：Agent 决策能力的关键升级
+      4. browser-use 能力：Agent…
+    实践启示
+      1. 企业 AI 落地应从场景切入
+      2. 关注 ROI 可见性
+      3. 用户体验优先
+      4. 本土化适配
+    相关实体
+```
+
 ## 摘要
 
 快手上线的 **KroWork** 是一款面向普通职场人的桌面 Agent 工具——用户通过自然语言描述需求，KroWork 帮你把活儿干完，并把整个流程固化为一个可以直接打开的本地桌面应用。 与通用 Agent 产品相比，KroWork 的核心创新在于"应用固化 + 本地托管"——第一次生成消耗 token，之后每次打开都是零成本的本地执行。这一产品形态同时回应了 Agent 落地的四个老问题：**提示词疲劳、成功率赌博、省 token、数据不出域**。

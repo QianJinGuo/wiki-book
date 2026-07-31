@@ -8,6 +8,23 @@
 
 Amazon Bedrock 现支持 MiniMax M2 系列三款开源权重模型（M2、M2.1、M2.5），推理完全运行在 AWS 托管基础设施上，用户的提示和完成数据不用于训练任何模型，也不与模型提供商共享。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 Amazon Bedrock 上运行 MiniMax…"))
+    MiniMax M2 系列
+    部署选项
+    深度分析
+      MiniMax M2.5 的 Agent-Na…
+      MoE 架构的推理成本经济学
+      Bedrock 的双端点设计：开发者体验的工程取舍
+      伸缩与稳速：on-demand 推理的实践模式
+    实践启示
+    相关实体
+```
+
 ## MiniMax M2 系列
 
 ```mermaid

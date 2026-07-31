@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/ibm-forward-deployed-units-ai-deployment.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("IBM Forward Deployed Units (…"))
+    背景：企业 AI 交付的痛点
+    核心概念：Forward Deployed U…
+      团队结构
+      与传统咨询模式的区别
+    Forward Deployed Engine…
+    技术支撑：IBM Consulting Adv…
+    客户案例
+    行业意义
+    深度分析
+      从'人力扩张'到'智能交付'的范式转变
+      '运营化'取代'项目化'：Agentic AI…
+      FDE 角色崛起：技术-商业的跨界融合
+      平台+交付模型的协同效应
+    实践启示
+      对企业决策者的启示
+      对技术领导者的启示
+      对 AI 行业观察者的启示
+```
+
 ## 背景：企业 AI 交付的痛点
 
 ```mermaid

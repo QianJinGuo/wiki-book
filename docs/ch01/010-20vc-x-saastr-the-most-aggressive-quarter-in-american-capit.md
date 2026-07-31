@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐ | 11.6KB | `entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("20VC x SaaStr: The Most Aggr…"))
+    深度分析
+      超大规模资本支出的结构性逻辑
+      隐藏在增长背后的结构性风险
+      Palantir 的护城河：唯一能交付企业级 …
+      AI 采购的 COVID 式压缩
+    实践启示
+      对投资人
+      对 operator / 高管
+      对创始人和 CEO
+      对分析师和策略师
+    相关实体
+```
+
 ## 核心要点
 - 20VC x SaaStr 对话，关于美国资本主义的投资动态
 - Palantir 的投资策略和 Brian Armstrong 的观点

@@ -6,6 +6,22 @@
 
 > 本文基于 Matt Pocock 的 "writing-great-skills" 与 AI Engineer World's Fair 2026 Keynote，由公众号"架构师"（若飞）深度解读，系统梳理了 Agent Skill 从设计、触发、执行、维护到安全审计的工程方法论。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Skill Hell：Agent Skill 工程方法论"))
+    核心概念：Skill Hell
+    信息分层（Progressive Disclo…
+    description 路由设计
+    Completion Criterion（完成…
+    Steps
+    Leading Words（语义压缩）
+    Skill 维护与删除
+    安全审计
+```
+
 ## 核心概念：Skill Hell
 
 Matt Pocock 提出的 **Skill Hell** 概念：当 Skill 越来越容易下载、复制和安装后，团队开始缺一套评估、路由、验证和修剪的方法。与 **Tutorial Hell**（教程多但项目没长出来）、**Framework Hell**（框架多但系统边界没稳定）并列，是 Agent 工程时代的治理困境。

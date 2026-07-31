@@ -6,6 +6,17 @@
 
 # Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Why Use App-Level Auth When …"))
+    相关实体
+    实战启示
+    上线状态 / 链接
+```
+
 ## 相关实体
 - [microsoft is quietly shopping for an openai replacement](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [vietnam to develop domestic cloud](ch01/1116-opd.html)

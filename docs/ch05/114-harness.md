@@ -8,6 +8,20 @@
 
 规格驱动开发（Spec-Driven Development）与 Harness 工程的结合：以结构化规格为 Agent 的输入源，Harness 负责规格解析、任务分解、执行验证。减少 Vibe Coding 的不确定性。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("规格驱动开发与 Harness"))
+    深度分析
+      规格驱动开发的核心假设
+      Harness 在 Spec 循环中的三层角色
+      Spec-Driven vs Vibe Cod…
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### 规格驱动开发的核心假设

@@ -8,6 +8,20 @@
 
 > **来源**: [https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/](https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Consistency, But in Excellen…"))
+    深度分析
+      Design Systems 的系统性困境
+      从软件设计到更广泛的启示
+      对 AI 生成设计的隐含批判
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Jim Nielsen 以 Apple 应用图标的三个时代演变为切入点，提出了一个反直觉的设计命题：过度追求视觉一致性会成为个体卓越的天花板。Original 时代的图标（拟物风格）在彼此之间缺乏视觉统一性，但每一个都是标志性的（iconic）；Creator Studio 时代的图标高度一致——圆角矩形、克制的渐变、简化形式——但没有任何一个是真正标志性的。Nielsen 的核心论点是：如果将卓越作为每个个体元素的目标，卓越本身就成为一致性的母题（motif），这比形状和渐变的一致性更有深度。

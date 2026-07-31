@@ -8,6 +8,25 @@
 
 XG-Guard（eXplainable and fine-Grained safeGuarding framework）是首个面向多智能体系统（MAS）的无监督、可解释、细粒度安全防护框架，已被 ACL 2026 Main Conference 接收。核心思路是将 MAS 交互建模为图结构，通过图异常检测（Graph Anomaly Detection, GAD）识别恶意 Agent，并在精准定位后阻断其信息传播。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ACL 2026 | XG-Guard：用图异常检测抓出…"))
+    核心内容
+      背景与动机
+      XG-Guard 四阶段架构
+      实验结果
+    深度分析
+      1. 无监督防御是 MAS 安全的实用起点
+      2. 细粒度检测发现「隐藏于长文本」的恶意信号
+      3. 可解释性作为安全审计的基础设施
+      4. 主题原型的对抗稳健性需要关注
+    实践启示
+    相关实体
+```
+
 ## 核心内容
 
 ### 背景与动机

@@ -8,6 +8,22 @@
 
 Amazon SageMaker AI 推出多轮强化学习（Multi-Turn RL, MTRL）能力，为需要多步推理和工具调用的 AI Agent 提供训练基础设施。本文系统总结了多轮 RL 训练的最佳实践，涵盖训练环境构建、外部评估配置、奖励函数设计、长程训练管理及监控指标五个维度。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Best Practices for Multi-Tur…"))
+    核心架构
+    最佳实践要点
+    深度分析
+      1. MTRL 的核心挑战：多步依赖与奖励信号处理
+      2. 环境模拟的三层架构：从录播回放到隔离执行
+      3. 奖励函数设计的陷阱：从 Reward H…
+      4. 评估独立性：训练成功的关键监测机制
+    实践启示
+```
+
 ## 核心架构
 
 SageMaker AI MTRL 提供模块化 Agent-Environment 接口，支持低代码集成。Agent 可运行在 Amazon Bedrock AgentCore、EKS、EC2、Fargate 等基础设施上，通过轻量适配层暴露工具接口给 rollout server。训练采用无服务器执行模式，以 per-token 定价提供生产级 agentic RL，无需管理 GPU 集群。

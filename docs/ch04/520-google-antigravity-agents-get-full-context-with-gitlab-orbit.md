@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gitlab-orbit-google-antigravity.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google Antigravity agents ge…"))
+    深度分析
+      MCP 作为 Agent 工具生态的标准协议
+      知识图谱 vs 文件系统
+      幻觉减少 45 倍的机制
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 GitLab Orbit 是 GitLab 的生命周期上下文图谱引擎，现已通过 [MCP（Model Context Protocol）](https://modelcontextprotocol.io/) 集成到 [Google Antigravity](https://antigravity.google/docs/mcp) 平台。该集成使 Antigravity Agent 能够结构化查询 GitLab 实例中的项目、流水线、合并请求、漏洞和源代码，解决了编码 Agent 缺乏全局上下文的核心痛点。在早期内部测试中，接入 Orbit 的 Agent 响应速度快 11 倍、token 消耗减少 4.5 倍、幻觉减少 45 倍。

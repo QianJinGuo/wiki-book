@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/prompting-amazon-nova-2-for-content-moderation.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Prompting Amazon Nova 2 for …"))
+    相关实体
+    深度分析
+      AILuminate 分类体系：12 类危害T…
+      两种 Prompt 策略的本质差异
+      基准测试结果的关键解读
+      多模态扩展的战略价值
+    实践启示
+      1. 先定义 Policy，再选 Prompt…
+      2. Structured 为默认，Free-…
+      3. 生产部署务必测试 Reasoning v…
+      4. 建立三级置信度路由
+```
+
 ## 核心要点
 - Amazon Nova 2 内容审核实战指南
 - Prompt engineering 在内容审核中的应用

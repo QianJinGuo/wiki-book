@@ -7,6 +7,24 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
 Published Time: 2026-05-10T17:22:13.590Z
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI tool poisoning exposes a …"))
+    深度分析
+      根本性缺陷：元数据与指令边界的崩塌
+      攻击向量分类
+      核心论点：artifact integrity…
+      MCP 验证代理架构分析
+    实践启示
+      分阶段实施路径
+      企业评估清单
+      战略风险警示
+    相关实体
+```
+
 ## 深度分析
 ### 根本性缺陷：元数据与指令边界的崩塌
 文章揭示了一个企业 AI Agent 架构中的根本性设计漏洞：Agent 的工具选择引擎（tool selection reasoning engine）将注册表中的自然语言描述直接作为语义输入处理。这意味着工具发布者提供的描述文本，实际上会成为影响 Agent 决策的指令。

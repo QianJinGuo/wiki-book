@@ -6,6 +6,29 @@
 
 # OpenAI models and Codex on Amazon Bedrock are now generally available
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI models and Codex on A…"))
+    Key takeaways
+    **What's  next**
+    **Get started**
+    About the author
+      Bharat Sandhu
+    深度分析
+      1. 多云 AI 战略格局的重塑
+      2. Durable State：生产级推理的…
+      3. 定价策略与 Daybreak 安全蓝图
+    实践启示
+      1. 生产级 Agentic 任务优先选 Be…
+      2. 利用现有 AWS 合约覆盖 OpenAI…
+      3. 平行评估 Codex 与 Claude …
+      4. 关注 Bedrock Managed A…
+    相关实体
+```
+
 ## Key takeaways
 
   * GPT-5.5, the most advanced frontier model from OpenAI, is generally available on Amazon Bedrock. Pricing matches OpenAI first-party rates.

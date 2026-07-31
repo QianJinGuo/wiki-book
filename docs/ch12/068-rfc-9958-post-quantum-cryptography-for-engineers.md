@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rfc9958.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("RFC 9958: Post-Quantum Crypt…"))
+    深度分析
+      Mosca 模型与过渡时间线
+      PQ/T 混合方案的工程挑战
+      受限设备与网络的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

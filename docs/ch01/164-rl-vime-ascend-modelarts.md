@@ -8,6 +8,16 @@
 
 大模型RL后训练，正在从”能跑起来”走向稳定可训、高效可推、云端可及。vLLM社区推出的Vime，将slime的训练范式与vLLM的推理引擎整合为统一流水线；华为云ModelArts与昇腾计算在此基础上联合共建vime-ascend，让该流水线在昇腾NPU上同样实现可运行、可复现、可规模化部署。本文首先介绍Vime的核心架构与ascend分支的增强特性，随后以Qwen3-4B的GRPO训练为例，展示NPU上的实际验证效果，最后梳理基于ModelArts的完整实践流程。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("全新开源RL框架Vime-Ascend介绍及ModelA…"))
+    核心观点
+    技术洞察
+```
+
 ## 核心观点
 
 > 本文通过article、llm、rl视角，分析了的AI/ML技术动态。

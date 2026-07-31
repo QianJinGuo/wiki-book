@@ -6,6 +6,29 @@
 
 # Claude Code SKILL.md 写作指南
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code SKILL.md 写作指南"))
+    核心概念
+    文件结构
+    Frontmatter 元数据
+      name 规范
+      description 写法
+    正文写法
+      三层模型（渐进式披露）
+      上下文管理原则
+    提取 PDF 文本
+    自由度把控
+    工作流与反馈循环
+      RED - Write Failing Test
+      Verify RED - Watch It F…
+      GREEN - Minimal Code
+    常见坑
+```
+
 ## 核心概念
 
 Skill 是一份可被 Agent 发现、按需加载的任务说明。把"老员工脑子里的规矩"写进 SKILL.md，再交给 Agent 在合适的任务里调用。

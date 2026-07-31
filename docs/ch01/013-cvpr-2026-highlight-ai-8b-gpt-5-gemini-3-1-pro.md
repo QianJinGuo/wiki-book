@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐ | 10.4KB | `entities/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CVPR 2026 Highlight｜让AI像电影人一…"))
+    相关实体
+    文章摘要
+    深度分析
+      从'数据规模'到'数据质量'的范式转移
+      专业领域知识在 AI 训练中的不可替代性
+      'AI-专家-AI'三段式协作的结构性价值
+      批改质量作为模型能力的瓶颈
+    实践启示
+      数据工程层面
+      人机协作设计层面
+      反馈质量优化层面
+      模型选择策略层面
+```
+
 ## 核心要点
 - CMU × 哈佛大学联合研究，CVPR 2026 Highlight 论文（Top 3%）
 - 团队提出 CHAI（Critique-based Human-AI Oversight），一整套从标注体系、可扩展监督到后训练方法再到视频生成的完整方案

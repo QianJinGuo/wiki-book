@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS DevOps Agent × MCP Serve…"))
+    文章摘要
+    深度分析
+      MCP 协议在 AI Agent 运维场景的结…
+      Private Connection 的安全模…
+      从'相关性推理'到'因果性推理'的跨越
+      Tool Docstring 作为 Agent…
+    实践启示
+      架构设计层面
+      安全防护层面
+      工具开发层面
+      可扩展性层面
+    相关实体
+```
+
 ## 核心要点
 - AWS 技术实践
 - AWS DevOps Agent × MCP Server：

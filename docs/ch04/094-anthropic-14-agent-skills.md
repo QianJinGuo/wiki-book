@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 17.4KB | `entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 官方技能最佳实践：14 个可复用的 …"))
+    相关实体
+    深度分析
+      1. 模式分类的内在逻辑
+      2. 两类技能的分工与边界
+      3. 描述设计的核心矛盾
+      4. 上下文经济的核心原则
+    实践启示
+      层面一：技能发现与定位
+      层面二：内容架构与 token 经济
+      层面三：指令风格选择
+      层面四：流程防错机制
+```
+
 ## 相关实体
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/383-anthropic-google-agent-skills.html)

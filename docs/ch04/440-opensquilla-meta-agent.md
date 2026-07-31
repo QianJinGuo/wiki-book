@@ -6,6 +6,28 @@
 
 → [原文存档 — Meta Skill](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenSquilla：Meta 开源 Agent 框架"))
+    Key Research
+      OpenSquilla Launches Op…
+      Meta Skill 时代：Skill 之上的…
+    深度分析
+      1. 路由决策的分层复杂性
+      2. 四层认知架构的工程对标
+      3. 本地 embedding 的隐私-成本平衡
+      4. Syscall 隔离的容器替代方案
+    实践启示
+      1. 构建本地 Token 监控看板
+      2. 混合检索强制对齐
+      3. 三层工具执行策略落地
+      4. 热记忆自动晋升机制
+    关联阅读
+```
+
 ## Key Research
 ### OpenSquilla Launches Open-Source AI Agent
 An open-source tool that helps reduce token costs for AI agent deployments.

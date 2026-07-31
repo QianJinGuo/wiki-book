@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-architecture-800lines.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("800行代码实现 Open Claw 的 Tool、消息…"))
+    深度分析
+      架构哲学：反中间件的确定性追求
+      数据流全景与并发安全
+      设计取舍的代价
+      与主流 Agent 框架的对比
+    实践启示
+    架构图
+    相关实体
+```
+
 ## 摘要
 
 Open Claw 是一个用约 800 行 TypeScript 代码实现的 Agent 运行时，涵盖了 Tool 调用、消息总线和子 Agent 管理三大核心模块。该项目的核心设计理念是**薄抽象、显式控制流、贴近模型 API**——拒绝引入多层中间件，而是直接基于 Anthropic SDK 构建，以获得最大的工程确定性和可调试性。

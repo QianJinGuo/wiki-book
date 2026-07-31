@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/anthropic-mcp-revisited.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic MCP 重新定义：Tool Sear…"))
+    核心命题
+    关键结论
+    MCP 三问题与解法
+    工具设计原则
+    深度分析
+      MCP 的范式转变：从「工具超市」到「代码编排」
+      Token 成本：从 32 倍到 7 倍的压缩
+      Skills 与 MCP 的分工终于清晰
+      发展图景的三层分工
+    实践启示
+      给 MCP 服务器开发者的建议
+      给 Agent 开发者的建议
+      工具选择的决策树
+      生态信号
+    交叉引用
+    相关实体
+```
+
 ## 核心命题
 Anthropic 官方回应社区对 MCP 的三大批评（贵、schema 臃肿、不可组合），明确 MCP 的真正地盘：**云端 Agent 标准化接入层**。
 

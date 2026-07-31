@@ -6,6 +6,21 @@
 
 # Microsoft / GitHub / AWS AI 算力承压事件分析（RuntimeWire 2026-06）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft / GitHub / AWS AI …"))
+    深度分析
+      收购叙事如何被 agent 负载曲线击穿
+      Agentic 浪潮带来的非线性需求
+      可靠性事件的产品级影响
+      高信号维护者的退出风险
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

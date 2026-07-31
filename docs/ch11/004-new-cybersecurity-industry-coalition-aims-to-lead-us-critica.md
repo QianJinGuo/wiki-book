@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 5.1KB | `entities/new-cybersecurity-coalition-us-policy.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("New cybersecurity industry c…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

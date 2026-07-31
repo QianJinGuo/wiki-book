@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 17.6KB | `entities/openclaw-hermes-source-code-agent-architecture-review.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenClaw与Hermes源码架构对比"))
+    核心洞察
+    OpenClaw四大设计亮点
+      解决的三个核心痛点
+    Gateway微内核哲学
+      Session Key路由机制
+      与Hermes的关键区别
+    OpenClaw架构五层
+    Channel Plugin核心价值
+    Dreaming三阶段加权晋升
+    Hermes的补充设计
+      核心定位
+    两者的局限
+```
+
 ## 核心洞察
 
 OpenClaw和Hermes都还在路上——各自回答了4个重要问题，但都有局限。源码级对比揭示了每个"不完美"背后的工程取舍。

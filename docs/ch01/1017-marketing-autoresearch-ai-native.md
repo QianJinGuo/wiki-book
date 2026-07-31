@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-marketing-growth-amap-ai-native.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德 Marketing AutoResearch：AI…"))
+    深度分析
+    从工具调优到决策智能：AutoResearch…
+      本期导读
+      核心观点
+      内容结构
+      技术要点
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ## 从工具调优到决策智能：AutoResearch在营销增长中的AI Native实践

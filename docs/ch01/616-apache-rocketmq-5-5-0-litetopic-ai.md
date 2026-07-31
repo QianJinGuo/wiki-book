@@ -8,6 +8,26 @@
 
 Apache RocketMQ 5.5.0 社区提案 RIP-83 定义的全新消息模型 LiteTopic 进入开源版本，面向 AI Agent、异步任务和海量轻量会话场景。本文综合阿里云云原生官方报道和老周聊架构深度分析，还原 RocketMQ for AI 的技术全景。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Apache RocketMQ 5.5.0 开源 Lit…"))
+    AI 应用的三大致命挑战
+    LiteTopic：AI 时代的核心创新
+      Session-as-Topic 模型
+      RocksDB 索引层：百万 LiteTopi…
+      Event-Driven Pull：网络开销从…
+      消费位点持久化与会话续传
+    Suspend 三态消费模型
+    多 Agent 异步协作架构
+    MCP Server：Agent 直接操作消息队列
+    生产验证
+    五分钟跑通 Multi-Agent 异步通信
+    实践启示
+```
+
 ## AI 应用的三大致命挑战
 
 传统消息中间件的设计假设是「消息是轻量的、处理是快速的」。当消息变成 MB 级的大上下文、处理变成分钟级的长任务时，传统架构的几乎所有假设都失效了。

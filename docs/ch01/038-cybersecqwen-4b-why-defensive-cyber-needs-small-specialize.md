@@ -7,6 +7,28 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)
 来自 newsletter 文章 [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md) 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CyberSecQwen-4B: Why Defensi…"))
+    核心内容
+      主要章节
+      关键性能数据
+      训练配方
+    深度分析
+      1. 小专项模型 vs 大通用模型的 trad…
+      2. 数据主权与隐私边界成为选购模型的硬指标
+      3. LoRA 微调 + 专项数据的 reci…
+      4. AMD ROCm 生态正在补齐 AI 训…
+    实践启示
+      给网络安全团队
+      给 AI/ML 工程师
+      给企业安全决策者
+    相关实体
+```
+
 ## 核心内容
 CyberSecQwen-4B 是一个 4B 参数的专项网络安全模型，在 CTI-Bench 基准上以 4B 参数量超越了 Cisco 8B 通用安全模型 Foundation-Sec-Instruct-8B（CTI-MCQ 58.68% vs 49.96%，+8.7pp），同时参数减半。模型可运行于单张 12GB 消费级 GPU，数据全程不离本地，适合 SOC、MDR、威胁情报、漏洞分析等敏感场景。
 

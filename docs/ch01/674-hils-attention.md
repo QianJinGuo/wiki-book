@@ -10,6 +10,26 @@
 > **来源**：Hyman的杂货铺 | [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/腾讯混元开源hils注意力.md)
 > **Github**：https://github.com/Tencent-Hunyuan/HiLS-Attention
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯混元 HiLS-Attention：可学习层级稀疏注…"))
+    核心创新
+      可学习 chunk 质量代理
+      层级 softmax 分解
+    训练策略
+    关键实验数据
+    价值评估
+    深度分析
+      HiLS 解决的核心理论缺口
+      可学习 chunk 表示 vs 均值池化的本质差异
+      8K→4M 外推能力的工程意义
+      轻量改造成本的战略价值
+    实践启示
+```
+
 ## 核心创新
 
 HiLS-Attention（Hierarchical Learnable Sparse Attention）将"选哪些历史片段参与注意力"做成可端到端训练的层级路由，解决了稀疏注意力中长期存在的训练闭环缺口：路由分数不参与最终前向权重，LM loss 无法教会"该选谁"。

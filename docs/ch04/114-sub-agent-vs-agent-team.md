@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/sub-agent-vs-agent-team-selection-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sub-Agent vs Agent Team 选型指南"))
+    核心判断准则
+    Sub-Agent vs Agent Team…
+    最大的坑：按'岗位'拆而不是按'上下文边界'拆
+    Sub-Agent 硬约束
+    Agent Team 适用场景
+    五种编排原语
+    判断框架表
+    隐藏成本
+```
+
 ## 核心判断准则
 > 多智能体架构里，最先该判断的不是"要拆几个"，而是这些子任务之间是否共享同一段上下文。能干净切开的用 Sub-Agent，必须共享状态的才上 Agent Team。
 

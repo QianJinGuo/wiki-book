@@ -10,6 +10,19 @@
 
 OpenRouter 于 2026 年 6 月发布了《The Open-Weight Models That Matter》报告，整理出截至 2026 年 6 月最值得关注的 4 个开源模型（"开源 F4"）——DeepSeek V4 Flash、GLM 5.2、MiniMax M3、NVIDIA Nemotron 3 Ultra。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenRouter 2026 开源 F4：DeepSe…"))
+    DeepSeek V4 Flash：性价比之王
+    GLM 5.2：开源质量铁王座
+    MiniMax M3：多模态长文本专精
+    NVIDIA Nemotron 3 Ultra…
+    总体评估
+```
+
 ## DeepSeek V4 Flash：性价比之王
 
 DeepSeek V4 Flash 是第一个被开发团队直接塞进智能体工作流的开源模型。2820 亿总参数 / 130 亿激活的 MoE 架构，SWE-bench Verified 得分 79.0%（Pro 版 80.6%）。采用 MIT 协议，支持百万 token 上下文。

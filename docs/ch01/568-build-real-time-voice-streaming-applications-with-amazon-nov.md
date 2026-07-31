@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build real-time voice stream…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - Amazon Nova Sonic 实时语音流应用
 - WebRTC 集成方案

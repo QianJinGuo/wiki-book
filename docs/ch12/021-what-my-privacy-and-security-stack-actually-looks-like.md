@@ -6,6 +6,21 @@
 
 # What My Privacy and Security Stack Actually Looks Like
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What My Privacy and Security…"))
+    深度分析
+      为什么'情绪直觉'被列为第一位
+      '996 张发票'的地址保护经验
+      认证体系的层级降级策略
+      为什么同时用两个密码管理器
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

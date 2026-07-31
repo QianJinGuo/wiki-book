@@ -6,6 +6,27 @@
 
 # SkillOpt — 微软训练 Skill 文档的方法论
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SkillOpt — 微软训练 Skill 文档的方法论"))
+    核心思想
+    训练循环：深度学习 → 文本空间
+    两个模型分工
+    关键设计
+      克制的学问（textual learning …
+      rejected-edit buffer
+      slow/meta update
+    实验结果
+      6 个 benchmark 相比直怼 GPT-…
+    学到的规则特点
+      规则示例
+    跨模型跨环境迁移
+    训练成本
+```
+
 ## 核心思想
 
 SkillOpt 的核心洞察：**Agent 的模型参数是冻结的，但 Skill 文档是纯文本，可以随便改**。既然如此，为什么不能像训练神经网络一样，用一套完整的优化流程来迭代优化这份文档呢？

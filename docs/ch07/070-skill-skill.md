@@ -8,6 +8,21 @@
 
 > **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/steipete-skill-cleaner-liangzide.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("龙虾之父教你省钱：开源Skill给你的Skill减肥"))
+    深度分析
+      核心主张：Skill 是路标，不是说明书
+      skill-cleaner 工具设计
+      三步工作流
+      Token 成本思维
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 本文报道 OpenClaw 创始人 Peter Steinberger（@steipete，「龙虾之父」）开源的 skill-cleaner 工具——一个用于审计和优化 Skill 描述、降低 Agent 运行时 token 成本的技能系统分析工具。

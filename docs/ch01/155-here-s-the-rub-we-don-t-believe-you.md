@@ -8,6 +8,18 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/randsinrepose-we-dont-believe-you-rub.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Here's The Rub: We Don't Bel…"))
+    内容提炼
+    关键洞察
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **来源**: https://randsinrepose.com/archives/heres-the-rub-we-dont-believe-you/

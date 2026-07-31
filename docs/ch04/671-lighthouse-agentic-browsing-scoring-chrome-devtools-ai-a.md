@@ -8,6 +8,22 @@
 
 Chrome DevTools 团队在 Lighthouse 中新增了 **Agentic Browsing** 评估类别，用于衡量网站对 AI Agent 交互的友好程度。这不是一个 0-100 的加权评分，而是一组确定性审计信号，旨在为"Agent-ready Web"标准提供数据基础。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Lighthouse Agentic Browsing …"))
+    核心评估维度
+      WebMCP 集成
+      Agent 导向的可访问性（A11y Tree）
+      稳定性与可发现性
+    评分机制（非传统模式）
+    开发者改进路径
+    战略意义
+    相关主题
+```
+
 ## 核心评估维度
 
 ### WebMCP 集成

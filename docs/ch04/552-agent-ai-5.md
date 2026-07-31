@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 5.0KB | `entities/fanling-company-as-agent-ai-org-reflection.md`
 
 # AI 时代组织的 5 个反思 — 范凌访谈
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("当公司变成Agent：AI 时代组织的 5 个反思 — …"))
+    核心洞察
+    组织变革关键
+    GEA Generative Enterpr…
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心洞察
 1. **AI 不是提效工具，是资源分配器** — AI 让产品经理用 Cursor 直接拿到研发资源，跨越角色边界
 2. **Pod + Community 双轨制** — 3-10人跨职能小队闭环交付 + 横向社区补齐跨界能力

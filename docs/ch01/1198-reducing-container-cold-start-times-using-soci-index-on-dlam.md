@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reducing-container-cold-start-times-using-soci-index-on-dlam.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Reducing container cold star…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 Reducing container cold start times using SOCI index on DLAMI and DLC 涉及architecture领域的核心技术议题。

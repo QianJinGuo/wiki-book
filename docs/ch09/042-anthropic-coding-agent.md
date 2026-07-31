@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 13.1KB | `entities/anthropic-coding-agents-social-science-survey-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Coding Agent 社会科学家…"))
+    背景与方法
+    核心发现
+    采用率分布
+    性别鸿沟（p0.05显著）
+    用途与产出悖论
+    社会性隐忧
+    学科差异深层分析
+    性别鸿沟机制（p0.05显著）
+```
+
 ## 背景与方法
 
 - **调查方**：Anthropic Research

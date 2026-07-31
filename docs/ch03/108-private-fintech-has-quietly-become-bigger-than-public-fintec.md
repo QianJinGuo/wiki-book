@@ -6,6 +6,20 @@
 
 # Private Fintech Has Quietly Become Bigger Than Public Fintech
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Private Fintech Has Quietly …"))
+    深度分析
+    **Why the biggest compa…
+    **The “category of one”…
+    **The secondaries marke…
+    **The uncomfortable mid…
+    相关实体
+```
+
 ## 深度分析
 
 Published Time: 2026-05-28T21:28:52+00:00

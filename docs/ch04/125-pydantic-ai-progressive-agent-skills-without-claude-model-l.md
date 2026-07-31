@@ -6,6 +6,25 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Pydantic AI: Progressive Age…"))
+    深度分析
+      Claude Skills 的商业价值与技术限制
+      Claude 官方《Building Effe…
+      Pydantic AI 的四个核心能力
+      Pydantic AI 的三个局限性
+    实践启示
+      对使用 Claude Skills 的团队
+      对选择 Agent 框架的架构师
+      对 Pydantic AI 选型
+      对 Agent 框架设计者
+    相关实体
+```
+
 ## 摘要
 
 AutomatorRunner 在 WeChat 发表的技术文章，记录了从 Claude Skills 迁移到 Pydantic AI 的实战经验。核心结论：**Claude Skills 的设计哲学（渐进式加载、capability 组合、依赖注入）值得借鉴，但其模型绑定 Claude SDK 带来的成本和厂商锁定问题，可以通过 Pydantic AI 这种模型无关的框架以更灵活的方式实现**。文章给出了完整的 6 个 Skills → 5 个 Capabilities 迁移步骤和迁移后一个月的真实生产效果。

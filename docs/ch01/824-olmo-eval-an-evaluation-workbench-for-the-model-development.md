@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/olmo-eval.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("olmo-eval: An evaluation wor…"))
+    深度分析
+      评估工具的定位差异
+      对开源模型生态的影响
+      与 OLMES 的关系
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 olmo-eval 是 Allen AI (Ai2) 发布的开源 LLM 评估工作台，构建于此前的 OLMES（Open Language Model Evaluation Standard）之上，专为**模型开发过程中的反复评估**而设计。与传统的"跑一次出排行榜"不同，olmo-eval 面向的是每天都在变化的模型——每次数据调整、架构修改、超参搜索都需要重新跑评估循环。它通过 Task/Suite/Harness 三层抽象将评估逻辑与运行时策略解耦，支持 agentic 和多轮评估，并提供逐题对比的 pairwise 分析能力。

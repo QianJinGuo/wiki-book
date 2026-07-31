@@ -8,6 +8,19 @@
 
 阿里开源的通用 sandbox 平台，解决云端 Agent 安全执行代码的问题。提供 SDK、CLI、MCP、统一生命周期 API，以及 Docker / Kubernetes 两套 runtime。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenSandbox：阿里开源的云端 Agent 安全…"))
+    定位：执行面，不是完整 Agent 产品
+    凭据设计（核心亮点）
+    云端 Agent 接入架构
+    适用场景与前置条件
+    相关实体
+```
+
 ## 定位：执行面，不是完整 Agent 产品
 
 ```mermaid

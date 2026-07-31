@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/lightfield-introducing-skills.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Lightfield Skills 系统介绍"))
+    技术洞察
+      Skills 系统与传统模型的关键差异
+      从「通用 AI」到「专业化 AI 代理」的范式转变
+    深度分析
+      一、Skills 系统的工程挑战：灾难性遗忘与…
+      二、「技能即资产」——对企业 AI 战略的深远影响
+      三、与 Agent 生态的关系：Skill 标…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Lightfield 推出的 Skills 系统是 AI Agent 从「通用工具」走向「专业化助手」的重要里程碑。Skills 允许 AI 代理在多次会话间持久化地积累和保留专业技能，无需完整的模型重新训练。这一创新解决了传统 AI「每次会话从零开始」的根本性局限，使代理能够在持续交互中逐步精通特定领域。

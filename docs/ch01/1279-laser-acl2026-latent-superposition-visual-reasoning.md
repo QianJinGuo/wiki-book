@@ -13,6 +13,24 @@
 **会议：** ACL 2026 Main Conference
 **代码：** https://github.com/ybb6/laser
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Laser Acl2026 Latent Superpo…"))
+    一句话总结
+    核心问题
+    解决方案：Laser
+      核心机制
+      ScanPath 数据集
+    实验结果
+    关键洞察
+    延伸概念
+    深度分析
+    实践启示
+```
+
 ## 一句话总结
 Laser 用"概率叠加"在隐空间实现多模态推理，Token 消耗降低 97%，ACL 2026 接收。
 

@@ -8,6 +8,22 @@
 
 > **Background**: RecycleBin.zip 2026-05-25 长文，介绍其开源的 `bagel` 工具如何把 secret scanning 从 CI 边界检查升级为开发机 file system daemon 级实时防护，并针对 2026 年新出现的 AI 编程助手 IDE plugin 风险做专门覆盖。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("bagel — Fleet 级 Secret Scann…"))
+    核心定位
+    bagel 工具架构
+    Fleet 级部署
+    集成 GitHub Actions + SARIF
+    与 AI 编程助手的交互风险
+    实战数据 + 部署建议
+    与现有 secret scanning 工具对比
+    三个独有贡献
+```
+
 ## 核心定位
 
 ```mermaid

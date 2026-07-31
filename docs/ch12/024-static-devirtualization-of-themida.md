@@ -10,6 +10,22 @@
 
 > **Note**: 实体 slug 为 `2026` 是源 URL 路径中日期生成的产物，内容实际是 Back Engineering Labs (IDontCode, naci) 发表的 Themida/CodeVirtualizer 静态去虚拟化技术深度分析。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Static Devirtualization of T…"))
+    深度分析
+      1. '通用优化打败 VM 特定知识'是去虚拟…
+      2. SSA + Pass-feeding-p…
+      3. '可配置内存范围'是把通用方法安全化的关键
+      4. 为什么作者怀疑 LLVM-based 框架
+    实践启示
+    关联实体
+    相关链接
+```
+
 ## 摘要
 
 ```mermaid

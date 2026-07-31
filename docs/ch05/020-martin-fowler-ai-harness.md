@@ -41,6 +41,29 @@ graph TB
 
 > 📊 Level ⭐⭐ | 18.2KB | `entities/martin-fowler-ai-rd-harness-nondeterminism.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Martin Fowler AI 研发 Harness：…"))
+    核心洞察
+    关键论点
+    深度分析
+      1. 从确定性机器到非确定性协作者的根本范式转移
+      2. Vibe Coding 的边界：学习循环…
+      3. 小切片的工程逻辑已经改变
+      4. Harness 的本质：非确定性适配层
+    实践启示
+      对于个人工程师
+      对于团队
+      对于组织
+    与现有知识库内容的关联
+    原始存档
+    元数据
+    相关实体
+```
+
 ## 核心洞察
 Martin Fowler 在 Pragmatic Engineer 播客访谈中提出：AI 进入研发链路本质上是将非确定性协作者引入了一个过去几十年都建立在确定性机器上的工程体系。这使得 Harness 从"辅助工具"升级为真正的承重层（Load-Bearing Layer）。
 

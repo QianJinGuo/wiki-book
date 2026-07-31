@@ -13,6 +13,21 @@
 **Tags:** newsletter, ai, model, liquid-ai, alignment, reasoning, preference-optimization
 **Ingested:** 2026-07-09 18:59 UTC
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Reducing Doom Loops with Fin…"))
+    深度分析
+      1. Doom Loop 的深层成因与理论分析
+      2. FTPO 与 DPO 的关键差异及优势
+      3. 训练数据构造的工程挑战
+      4. 对齐与安全的方法论启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Doom Loop（毁灭循环）是推理模型在推理过程中常见的退化失败模式：模型生成一段文本（如 "Wait, let me reconsider…"）后不断重复同一段落，直到耗尽上下文窗口。Liquid AI 提出的 **Antidoom** 方法通过 **Final Token Preference Optimization（FTPO）** 精确打击触发循环的单个 token，在不对整体分布造成显著影响的前提下，将 LFM2.5-2.6B 早期检查点的 doom loop 率从 10.2% 降至 1.4%，将 Qwen3.5-4B 的 doom loop 率从 22.9% 降至 1%。该方法识别循环的首个 token，构造偏好对（chosen/rejected pairs），仅对循环触发位置进行针对性训练，使用 LoRA（rank=128-256）单 epoch 微调即可取得优异效果。

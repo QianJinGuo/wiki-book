@@ -11,6 +11,17 @@
 
 - 发布渠道：GIS极客公众号（2026-04-10）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("清华大学：驾驭工程 (Harness Engineeri…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Harness Engineering Reliable Long Term Agent](ch05/120-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/120-harness-engineering.html)

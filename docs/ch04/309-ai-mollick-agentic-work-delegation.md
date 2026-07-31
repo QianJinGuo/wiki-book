@@ -8,6 +8,30 @@
 
 > 2026-06-07 引用自 Ethan Mollick《Management as AI superpower》，One Useful Thing，2026-01-27。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("管理作为 AI 超级能力：Mollick 的 Agent…"))
+    沃顿 MBA 四天创业挑战赛
+    Agentic Work  delegatio…
+    让 delegation 更有价值的三个杠杆
+    管理文档就是 AI Prompt
+    管理 101 = AI Agent 协作技能
+    GDPval 数据支持
+    深度分析
+      1. '管理 AI'作为核心能力的范式确认
+      2. 72% 击败人类专家的实验设计意义
+      3. 管理技能的可迁移性
+      4. '超级能力'隐喻的双重含义
+    实践启示
+      1. 管理者：将 AI 管理技能纳入绩效评估
+      2. 技术专家：学习管理 AI 而非只学技术
+      3. 组织：重新定义'AI 素养'
+      4. 招聘：重视 AI 管理经验而非 AI 编…
+```
+
 ## 沃顿 MBA 四天创业挑战赛
 
 Mollick 在 Penn 教授一门实验课：MBA 学生（大多数没写过代码）四天内从零开始构建创业公司原型。使用工具：Claude Code + Google Antigravity（构建原型）+ ChatGPT/Claude/Gemini（市场调研/竞品分析/pitch/财务模型）。

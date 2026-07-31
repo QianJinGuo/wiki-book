@@ -8,6 +8,24 @@
 
 Meta 发布了首个 Agent 驱动的图像生成模型，将 LLM 作为图像生成的核心控制器（LLM controlled generation），以 agent 范式重新定义文生图的技术路线。模型上线后空降竞技场第二名。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Meta 首个 Agent 生图模型：LLM contr…"))
+    模型概述：Muse Image
+      技术架构
+      推理时间扩展
+      多轮编辑与社交集成
+    深度分析
+      1. LLM Controlled Gener…
+      2. 「思考越久越好」的深层意义
+      3. 社交图谱作为「上下文」的 AI 产品设计
+      4. Muse Spark 的协同联动
+    实践启示
+```
+
 ## 模型概述：Muse Image
 
 Muse Image 是 Meta Superintelligence Labs（前 FAIR 的一部分）推出的图像生成模型，已接入 Meta AI 应用、网页端以及部分地区的社交平台。其核心差异在于引入了 **智能体机制**——不再是简单的文本到像素转换，而是像 AI 智能体一样工作：先拆解需求、调用工具、自我修正，最终交付成品。

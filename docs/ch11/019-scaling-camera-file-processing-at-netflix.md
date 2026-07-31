@@ -16,6 +16,29 @@ updated: '2026-06-08'
 type: entity
 # Scaling Camera File Processing at Netflix
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scaling Camera File Processi…"))
+    相关实体
+      Introduction to Content…
+      Why We Built MPS
+      The Right Tool for the …
+      The Media Processing En…
+    深度分析
+      战略合作而非盲目自建：Buy over Bui…
+      云原生约束如何反向驱动架构优化
+      开放标准作为多供应商生态的粘合剂
+      弹性扩展范式对媒体处理架构的启示
+    实践启示
+      1. 在评估自建与外购决策时，明确'核心竞争力…
+      2. 从云平台约束条件出发重新设计工作流，而非…
+      3. 投资开放标准并积极参与标准制定，获取生态…
+      4. 将工作负载的弹性特征纳入架构设计，使用按…
+```
+
 ## 相关实体
 
 ```mermaid

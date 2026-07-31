@@ -10,6 +10,22 @@
 
 > **Core insight**: Netflix 的 Metadata Service (MDS) 通过 AIP URI 统一寻址、Kafka 事件摄取、enrichment workers 和 Datomic+Elasticsearch 双存储，构建跨域 Model Lifecycle Graph，使"该模型被哪些 A/B 测试使用"这类跨系统查询从不可能变为单次 GraphQL 查询。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix Metadata Service and…"))
+    问题：碎片化的 ML 景观
+    核心抽象：AIP URI 词汇体系
+    技术架构：从事件到图谱
+    图谱构建示例：连接模型到 A/B 测试
+    AIP Portal：探索而非仅搜索
+    关键数据/实践启示
+    深度分析
+    实践启示
+```
+
 ## 问题：碎片化的 ML 景观
 
 ```mermaid

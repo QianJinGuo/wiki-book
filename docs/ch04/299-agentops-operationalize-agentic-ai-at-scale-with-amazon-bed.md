@@ -6,6 +6,31 @@
 
 # AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentOps: Operationalize age…"))
+    Conclusion
+    About the authors
+      Anastasia Tzeveleka
+      Anna Grüebler Clark
+      Antonio Rodriguez
+      Sergio Garces Vitale
+    深度分析
+      1. AgentOps 是 MLOps/Dev…
+      2. 四层评估体系是防止'隐形失败'的关键机制
+      3. 可观测性四层模型填补了框架级盲区
+      4. Memory 的多账户部署模式是数据隔离…
+    实践启示
+      1. 从多账户架构起步，按 pillar 渐进落地
+      2. 将 agent、tool、memory …
+      3. 构建四级评估体系并嵌入 CI/CD 作为…
+      4. 实施四层可观测性，用 OpenTelem…
+    相关实体
+```
+
 ## Conclusion
 
 Building production-grade agentic AI is hard. Agents make autonomous decisions, call external tools, and collaborate in ways that are difficult to anticipate and harder to debug. In this post, we have shared the practices we have seen work in production across the four pillars: governance and security, build and operations, evaluation, and observability.

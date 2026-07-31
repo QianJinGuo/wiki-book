@@ -6,6 +6,31 @@
 
 # MobileGym：中科院开源浏览器内安卓仿真平台，Mobile Agent 训练与评测基础设施
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MobileGym：中科院开源浏览器内安卓仿真平台，Mo…"))
+    概述
+    核心命题
+    训练/评测手机 Agent 的两大困境
+      困境 1：安卓模拟器
+      困境 2：真机
+      共同的死结
+    破局思路：交互保真
+      「四两拨千斤」的脑回路转换
+      核心洞察
+    MobileGym 架构
+      浏览器内仿真实现
+      28 个 App 覆盖
+    一份 JSON 解决三大难题
+    一鱼两吃：考、练通吃
+      与 AndroidWorld、MobileWo…
+    轻量到能单机大规模并行
+      VLM-as-Judge vs MobileG…
+```
+
 ## 概述
 
 中科院自动化所模式识别实验室开源 **MobileGym**（mobilegym.dev）—— 跑在浏览器里的高并发安卓仿真平台。核心命题：**Mobile GUI Agent 真正瓶颈不在模型，而在"地"——既没有靠谱的考场，也没有便宜的训练场。**MobileGym 通过**交互保真（interaction fidelity）** + **JSON 结构化状态**破局，第一次把"可验证的考练一体"延伸到微信、支付宝等高频日常 App；并通过 **USE（意外副作用）**指标首次捕获 Agent"顺手作恶"。**真机迁移率 95.1%**——在模拟世界里练的功夫真机真能用。

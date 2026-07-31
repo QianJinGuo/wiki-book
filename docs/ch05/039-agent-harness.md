@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/agent-production-harness-engineering.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent生产级Harness工程指南"))
+    核心定位
+    行业失败率
+    Demo型 vs 生产型代码库
+      判别法（10分钟读代码可辨）
+    Claude Code 退化事故复盘（2026…
+    四支柱审查框架
+      支柱一：构建——工具契约约束模型
+      支柱二：记忆——可信/隔离/可追溯
+      支柱三：运行框架——循环即基础设施
+      支柱四：编排——明确契约 + 可恢复状态机
+    优先级建议
+    推荐阅读体系
+    相关页面
+```
+
 ## 核心定位
 **工程赤字（Engineering Deficit）**：大多数 Agent 项目失败，不是因为模型能力不够，而是模型周围的工程（Harness）不够扎实。
 > 边界要建，输入要校验，状态要隔离，循环要打点，暴露面要测试。

@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 15.9KB | `entities/pi-openclaw-coding-harness.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Coding Harness 工程本质：从 Pi 到 O…"))
+    核心定义
+    Pi 分层架构
+    Harness 补齐的八个能力
+    五个可复用的工程模式
+      1. Context 像投影，不像容器
+      2. Transcript 是账本，worki…
+      3. 权限要进运行时管线
+      4. Runtime kernel 小，产品 …
+    Pi → OpenClaw 的演进
+      session 需要两层状态
+      工具策略需要动态化
+    稳定路线
+    Harness 会被模型内化吗
+    深度分析
+      工程的北极是运行时语义，不是提示词
+      Pi → OpenClaw 揭示的不仅是演进，…
+      durable history 和 worki…
+      权限进运行时管线是安全架构，不是功能特性
+```
+
 ## 核心定义
 Coding harness 是模型从"建议你怎么修"走到"自己去修"所必须的那套工程外壳。Pi 在 coding-agent README 里把自己称为 minimal terminal coding harness——它先给模型一组很小的身体能力：read、write、edit、bash。再往外，才是 session、context files、compaction、skills、extensions、TUI、RPC、SDK。
 **Pi 这个顺序把 Agent 的底层工程暴露得很清楚：能力不会从概念里自动长出来，它靠一层层工程边界托住。**

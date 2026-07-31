@@ -7,6 +7,27 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
 从微信文章 [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md) 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Redis之父下场，给DeepSeek V4单独造了一台…"))
+    核心内容
+      主要章节
+    相关实体
+    深度分析
+      1. 项目定位：专有推理引擎的回归
+      2. 全栈本地推理的产品思路
+      3. AI辅助开发的坦诚实践
+      4. antirez的技术哲学延续
+    实践启示
+      给模型厂商的启示
+      给MLOps工程师的启示
+      给开源社区的启示
+      给个人开发者的启示
+```
+
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 

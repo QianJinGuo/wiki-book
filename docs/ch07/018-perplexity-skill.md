@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/perplexity-internal-skill-design-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Perplexity 内部 Skill 设计指南：四维体…"))
+    核心框架：Skill 的四个维度
+      1. Skill 是目录（hub-and-sp…
+      2. Skill 是格式
+      3. Skill 是可调用的
+      4. Skill 是渐进式的（三层 token…
+    什么时候需要 Skill？
+      ✅ 需要 Skill
+      ❌ 不需要 Skill
+    每个 Skill 都是一份「税」
+    如何构建 Skill（五步法）
+      Step 0：先写评测（Evals）
+      Step 1：写好描述（Description）
+      Step 2：编写正文（Body）
+      Step 3：利用层级结构
+    如何维护 Skill：Gotchas 飞轮
+    评测套件（Eval Suites）
+    深度分析
+    实践启示
+```
+
 ## 核心框架：Skill 的四个维度
 ### 1. Skill 是目录（hub-and-spoke）
 Skill 不仅仅是一个 SKILL.md 文件，而是包含多个文件的目录结构：

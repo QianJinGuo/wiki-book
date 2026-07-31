@@ -10,6 +10,30 @@
 
 > **来源**：CrewAI Blog（blog.crewai.com），发布于 2026-01-29。原文链接：[Your First AI Agent Should Do One Thing Badly](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/your-first-ai-agent-should-do-one-thing-badly.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 开发应小步快跑：第一个 Agent 只需做一…"))
+    背景：POC 墓地现象
+    高风险领域的'小步快跑'实证：医疗人员资质核验
+    'If I Were Starting Tod…
+      1. Narrow scoped agents…
+      2. Human in the loop is…
+      3. Make failure satisfy…
+      4. Weekly iteration vs …
+    为什么这种反直觉的方法有效
+    与 wiki 现有实体的差异化
+    实践启示（5 条可执行项）
+    与相关 entity 的关系
+    深度分析
+      1. Crawl-Walk-Run：AI ag…
+      2. 与 How We Built Cogn…
+      3. 迭代开发的核心：从失败中学习
+      4. 'Walk'阶段是关键过渡点
+```
+
 ## 背景：POC 墓地现象
 
 工程师训练要求预先考虑边界情形、为规模化设计。但这套传统思路在 Agent 系统上**反向生效**：

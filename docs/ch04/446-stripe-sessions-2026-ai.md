@@ -10,6 +10,17 @@
 Stripe Sessions 2026 announcements: Stripe Agents (AI agents for payments), Stripe Elevate fraud, new SDK features for AI-native payment development. 
 **Source**: [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stripe-sessions-2026-ai-agents.md) | **Review**: value=7 confidence=8
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stripe Sessions 2026 AI"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 **1. Stripe 定位升维：从"支付基础设施"到"AI 经济金融层"** 
 Sessions 2026 的 288 个新功能背后有一个统一的战略叙事：Stripe 在将自己从"互联网支付通道"重新定义为"AI Agent 的金融操作界面"。关键证据包括 Machine Payments Protocol（MPP）、Link Agent Wallet、Issuing for agents 等功能的推出，这些都不是功能迭代，而是定位跃迁。Stripe 实际上在说：未来的 AI Agent 需要一个原生支持机器支付的金融基础设施，而 Stripe 正在成为那个基础设施。 

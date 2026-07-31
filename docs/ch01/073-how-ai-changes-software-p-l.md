@@ -6,6 +6,25 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gptomics-com-how-ai-changes-software-p-l.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How AI changes software P&L"))
+    相关概念
+    相关实体
+    深度分析
+      传统软件 vs AI 软件：两种 PandL 模式…
+      为什么 AI 功能缺乏规模效益
+      竞争动态：软件护城河的侵蚀
+      套利机会的框架
+    实践启示
+      对 SaaS 公司和产品经理
+      对创业者和投资人
+      对企业战略和运营
+```
+
 ## 摘要
 （本页为 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gptomics-com-how-ai-changes-software-p-l.md) 的摘要合成页）
 GPTomics 文章揭示了一个关键洞察：AI 能力正在从根本上重构软件的成本结构。传统 SaaS 的边际成本递减模式（COGS 随用户增加而下降）将被打破——AI 个性化推理的成本与用户数成线性关系，导致 AI-heavy 产品的利润率趋近于消费品公司，而非传统软件公司。

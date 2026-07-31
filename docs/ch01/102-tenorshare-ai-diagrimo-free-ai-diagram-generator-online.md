@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐ | 5.9KB | `entities/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tenorshare AI Diagrimo​ - Fr…"))
+    产品概述
+      核心功能
+      使用场景
+      定价模式
+      技术特点
+    深度分析
+      技术定位
+      市场差异化
+      用户价值
+      多语言支持
+    实践启示
+      适用人群
+      使用建议
+      注意事项
+    相关实体
+```
+
 ## 核心要点
 
 - Tenorshare AI Diagrimo 是一款基于 AI 技术的在线图表生成工具，能够将文本快速转换为结构化的可视化图表 

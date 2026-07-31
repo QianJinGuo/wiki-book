@@ -13,6 +13,21 @@
 **Tags:** newsletter, ai, alignment, anthropic, safety, ai-governance, modularity
 **Ingested:** 2026-07-09 18:59 UTC
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("An off switch for dual use k…"))
+    深度分析
+      1. GRAM 的技术设计深度
+      2. 与数据过滤和 Unlearning 的对比
+      3. 安全边界上的开放挑战
+      4. 与 AI Agent 安全的关联
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 GRAM（Gradient-Routed Auxiliary Modules）是 Anthropic 与 AE Studio 合作开发的一种新型模型对齐技术，用于对 AI 模型中的双重用途知识（Dual-Use Knowledge）进行精确的模块化管理。其核心思想是在 Transformer 的每一层添加额外的神经元组（模块），每个模块对应一个双重用途类别。训练时，当模型遇到双重用途类别的文本（如病毒学），仅对应模块被允许学习，通用权重保持冻结。训练完成后，模块可以直接被删除，相应的能力随之消失——从而实现"一次性训练，多种配置"的效果。在实验中，GRAM 在从 50M 到 5B 的七个模型规模上均与数据过滤方法效果相当，且模块删除后能力移除的程度与从未在该数据上训练等效。相比于训练后"遗忘"（unlearning）方法——后者可以通过少量微调轻易恢复被抑制的知识——GRAM 提供了更鲁棒的保护。

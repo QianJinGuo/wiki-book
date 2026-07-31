@@ -10,6 +10,21 @@ Ethan Mollick（One Useful Thing）关于 AI 评估方法论的深度文章。�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/giving-your-ai-a-job-interview.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Giving your AI a Job Interview"))
+    深度分析
+      1. AI 评估的'效度危机'——我们在测什么？
+      2. Vibes 式测试的隐性价值：探测模型的…
+      3. GuacaDrone 实验揭示的'态度偏…
+      4. '面试'类比的力量与局限
+    实践启示
+      相关实体
+```
+
 ## 摘要
 
 ```mermaid

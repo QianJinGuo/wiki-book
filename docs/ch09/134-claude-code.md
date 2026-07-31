@@ -12,6 +12,21 @@
 - `resume`：恢复之前的会话，减少重复铺垫
 - `rewind`：回退到之前的节点，精细化回退而非全盘重开）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 命令使用指南"))
+    相关实体
+    深度分析
+      1. 上下文管理是 Claude Code 高…
+      2. 权限系统是 Claude Code 安全…
+      3. fewer-permission-pr…
+      4. skills vs memory…
+    实践启示
+```
+
 ## 相关实体
 - [Claude Code Openclaw Usage Ettin](ch09/033-claude-code-openclaw-usage-ettin.html)
 - [Obsidian Claude Code Integration Guide](ch09/140-obsidian-claude-code-integration-guide.html)

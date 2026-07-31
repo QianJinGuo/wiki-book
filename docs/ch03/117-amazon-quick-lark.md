@@ -6,6 +6,21 @@
 
 # 零代码快速体验 Amazon Quick 操作飞书/Lark
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("零代码快速体验 Amazon Quick 操作飞书/Lark"))
+    深度分析
+      MCP 协议驱动的跨平台办公自动化
+      配置流程的工程化设计
+      典型应用场景和实际价值
+      MCP 生态的扩展性
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Amazon Quick 通过远程 MCP Connector 能力接入飞书（Feishu）与 Lark 的 MCP Server，使用户能够通过自然语言对话直接操作飞书/Lark 的文档读取/创建、消息发送/读取、日程管理等核心办公功能。本文详解了从飞书 MCP 配置平台的远程 MCP 服务创建，到 Quick 网页端与桌面端的集成配置全过程，提供了一种零代码的 AI 办公自动化方案。

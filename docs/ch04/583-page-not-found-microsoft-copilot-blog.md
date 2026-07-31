@@ -8,6 +8,17 @@
 [Skip to content](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp/#mainContent)
 [Skip to main content](javascript:void(0))
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Page not found | Microsoft C…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Microsoft Agent Framework Python Full Guide Zizhi](ch04/617-python.html)
 - [Servicenow Ui Is Dead Agent](../ch03/035-agent.html)

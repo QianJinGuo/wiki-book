@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Grafana GitHub Token Breach …"))
+    事件概要
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 事件概要
 
 ```mermaid

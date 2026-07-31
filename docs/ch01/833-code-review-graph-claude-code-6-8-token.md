@@ -10,6 +10,17 @@
 > SHA-256：`3efa514c6791a5bc44b0c186003c2b6d9be9c903b246a859254c0b9ff563a0f5`
 code-review-graph 是一个本地知识图谱工具，专为 Claude Code 等 AI 编码助手设计。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("code-review-graph：Claude Cod…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Code Review Graph Upper Intermediate Guide 20260513](ch01/913-20.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)

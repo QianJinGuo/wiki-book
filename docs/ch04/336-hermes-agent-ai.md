@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/hermes-agent-getting-started-guide-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent 保姆级教程：一句话组建你的 A…"))
+    你能做到什么
+    阶段一：装好 Hermes
+    阶段二：用 /goal 让 agent 自己跑
+    阶段三：用 Kanban 组多 agent 团队
+    阶段四：进阶玩法
+    容易踩的坑
+    深度分析
+    实践启示
+```
+
 ## 你能做到什么
 - 用一句话设定目标，让 Hermes 自己跑到完成
 - 用三行命令，组一个多 agent 小团队并行干活

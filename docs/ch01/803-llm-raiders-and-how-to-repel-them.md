@@ -6,6 +6,24 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-raiders-how-to-repel.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLM raiders and how to repel…"))
+    深度分析
+      LLMjacking 的本质与盈利模式
+      攻击链分析：从发现到利用
+      为什么传统安全措施失效
+    实践启示
+      网络层防御
+      身份与访问管理
+      监控与响应
+      部署最佳实践
+    相关实体
+```
+
 ## 核心要点
 - value=8, confidence=7, product=56
 - Kaspersky blog on AI server security

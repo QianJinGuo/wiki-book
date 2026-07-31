@@ -8,6 +8,20 @@
 
 Vibe Coding 作为 AI 软件工程的入门范式：以自然语言意图驱动代码生成，优势是极速原型，风险是缺乏工程约束。从 Vibe Coding 到 Loop Engineering 的进化路径。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vibe Coding 与 AI 软件工程"))
+    深度分析
+      Vibe Coding 的适用边界
+      缺乏工程约束的风险放大机制
+      Vibe Coding → Loop Engi…
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### Vibe Coding 的适用边界

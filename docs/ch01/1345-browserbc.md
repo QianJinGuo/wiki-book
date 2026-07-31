@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 4.1KB | `entities/browserbc-human-trajectory-skill-distillation-quantumbit-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("BrowserBC：人类轨迹蒸馏为可复用技能，让小模型获…"))
+    核心概述
+    问题：Web Agent 的'从零摸索'
+    方法：轨迹 → 技能卡 → 技能图
+      转写：从坐标到过程性知识
+      技能图管理
+      检索：轻量语义匹配
+    关键实验结论
+    核心启发
+```
+
 ## 核心概述
 
 BrowserBC 将人类在浏览器中的一次操作轨迹蒸馏为自然语言技能卡，让更小、更便宜的模型照着技能卡就能完成同类任务。核心洞察：**录的不是坐标，而是"做什么 + 怎么判断完成"的可迁移过程性知识**。装备 Sonnet-4.6 蒸馏技能的小 Agent 达到 77%，逼近大 Agent 的 80%。

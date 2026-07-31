@@ -15,6 +15,26 @@ provenance_state: inferred
 > **作者**：Hermes Agent 技术实现团队
 > **核心命题**：**SkillOpt 真正难落地的不是"让模型提出 skill patch"，而是更底层的问题："你怎么证明一个 agent 真的变好了？"** 本文给出 Hermes Agent Eval Harness 的 **7 模块闭环** + **6 类 Verifier** + **3 类 Regression** + **6 阶段落地路径**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent Eval Harness：可验…"))
+    一、定位：从 SkillOpt 学术到 Eva…
+    二、为什么 Agent 不能只看'这次成功了'
+    三、Eval Harness 最小闭环：7 模块
+    四、任务集不是 prompt 列表，而是环境快照
+      4.1 代码修改任务 TaskSet
+      4.2 文档任务 TaskSet
+      4.3 Skill patch 任务 Task…
+    五、TrajectoryStore：Agent…
+    六、Verifier 不是函数，而是一组判定器…
+    七、Selection Gate：Skill …
+      7.1 三个细节
+    八、Regression Gate：让 Age…
+```
+
 ## 一、定位：从 SkillOpt 学术到 Eval Harness 工程
 
 [Skillopt](../ch05/043-skillopt.html)（Microsoft + SJTU SkillOpt 论文 arxiv 2605.23904）提出了"把 SKILL.md 当成冻结模型之外的可训练状态"——通过 rollout、bounded edits 和 held-out validation gate 优化 agent skills。但 SkillOpt 学术框架在生产环境落地需要完整的工程实施：

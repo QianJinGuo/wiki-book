@@ -8,6 +8,18 @@
 
 由UIUC、UT Austin、CMU、NYU、UC Berkeley、Northeastern University等多校研究团队联合提出的position paper，系统性论证了在Agentic时代，个性化推荐将从平台中心范式转向用户主导个性化（User-Governed Personalization）的结构性变化。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic时代用户主导个性化推荐范式"))
+    平台中心范式的结构性限制
+    LLM Agent作为用户侧数据理解与决策代理
+    实验验证
+    推荐系统Agent化路径
+```
+
 ## 平台中心范式的结构性限制
 
 论文指出，平台无法获得完整用户画像不是因为推荐算法不够强，而是面临四重结构性data barrier：竞争壁垒（用户数据是平台核心护城河，平台间无动机共享）、监管壁垒（DMA/GDPR限制跨服务数据合并）、隐私壁垒（用户不愿意将所有数据交给单一平台）、以及认知壁垒（平台看到行为但看不到动机）。平台只能记录**what**，却很难知道**why**。

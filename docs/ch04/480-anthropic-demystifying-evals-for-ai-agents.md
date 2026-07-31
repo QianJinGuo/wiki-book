@@ -11,6 +11,17 @@
 - grader: 对 agent 某个方面打分的评分逻辑
 - transcript / trace / trajectory: 完整执行轨迹
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Demystifying Evals…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Anthropic Claude Managed Agents Platform Launch](../ch01/212-anthropic-claude-managed-agents.html)
 - [Anthropic Managed Agents Scaling](../ch01/989-anthropic.html)

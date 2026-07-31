@@ -103,6 +103,19 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 
 这是把 RM 从「模型」变成「评估基础设施」的关键一步。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里Qwen提出Skill-RM：把奖励模型做成可复用A…"))
+    工程启示
+    实践启示
+    与已有实体的差异化
+    上手资源
+    相关实体
+```
+
 ## 工程启示
 
 - **RL管线已有 reference/verifier 的**：**封装成 Skill 接口，别直接 append 进 prompt**——消融已经证明会降分

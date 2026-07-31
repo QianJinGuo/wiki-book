@@ -6,6 +6,23 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-framework.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLM-as-a-Verifier: A General…"))
+    深度分析
+      验证精度 vs 评判精度的本质差异
+      评分粒度扩展的数学原理
+      竞赛式轨迹选择的工程价值
+    实践启示
+      对 AI 研究者
+      对 Agent 开发者
+      对工程团队
+    相关实体
+```
+
 ## 核心要点
 - **验证 vs 评判的区别**：传统 LLM-as-a-Judge 输出离散分数（如 1-8），存在粗粒度评分问题；LLM-as-a-Verifier 通过细粒度评分、重复验证、Criteria 分解提供细粒度反馈 
 - **三大核心机制**：评分粒度扩展（1→20 token）、重复验证（1→16次）、Criteria 分解（Specification/Output/Errors 三维度）

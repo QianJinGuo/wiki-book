@@ -11,6 +11,31 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-role-plugins-sites-annotations.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex 三件套：6 职位插件 + Sites + A…"))
+    关键数据
+    6 个职位插件（62 应用 + 110 技能）
+      后续将推出
+    Sites：Codex 生成可交互网站 + 直…
+    Annotations：精准批注，不动其余
+    范式判断
+      1. Codex 从开发工具 → 工作台
+      2. 职位插件 = Skill 2.0 具象化
+      3. '会写代码' → '会组织工具'
+      4. Sites 挑战独立建站工具
+    启示
+    相关对照
+    深度分析
+      1. 职位插件是 Agent 商业化的结构性突破
+      2. 非开发者增速超开发者 3 倍，标志产品进…
+      3. Sites 托管能力将 AI 输出物从'…
+      4. Annotations 的'局部编辑'范…
+```
+
 ## 关键数据
 - **每周 500 万+ 人在用 Codex**
 - **非开发者用户已占 20%**，增速超开发者 **3 倍**

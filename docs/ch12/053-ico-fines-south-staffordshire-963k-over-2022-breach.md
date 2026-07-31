@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/ico-fines-south-staffordshire-2022-breach.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ICO fines South Staffordshir…"))
+    事件时间线
+    深度分析
+      一、从「数据控制者」到「关键基础设施守护者」—…
+      二、「预防不足」重于「响应迟缓」——合规重心的转变
+      三、供应链安全短板——第三方软件即攻击面
+      四、罚款减免机制的设计逻辑
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

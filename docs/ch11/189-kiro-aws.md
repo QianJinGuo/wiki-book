@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/use-kiro-specification-driven-development-to-accelerate-data-quality-construction.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

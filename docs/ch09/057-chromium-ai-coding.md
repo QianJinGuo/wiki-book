@@ -9,6 +9,30 @@
 > [!summary] 核心洞察
 > Chromium（3500 万行 C++ 代码）在源码仓库中构建了完整的 AI Agent 基础设施：AI Policy（人类全责）+ 四层 Prompt 分层组合 + 18+ Skills 按需激活 + 三层 Agentic RAG（静态路由表+动态搜索+MCP）+ Eval 回归测试 + Projects 大规模自动化。跨工具复用（Gemini CLI、Claude Code、GitHub Copilot）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Chromium AI Coding 开发体系"))
+    AI Policy：责任边界
+    Prompts：四层分层组合架构
+      四层结构
+      8 步标准工作流
+      Prompt 维护机制
+      Task Prompts 自定义命令
+    Skills：按需激活的专业模块
+    Knowledge Base：三层 Agent…
+      第一层：knowledge_base.md —…
+      第二层：chromium-docs Skill…
+      第三层：MCP 扩展
+      与传统 RAG 对比
+    Eval：AI Agent 的回归测试
+    Projects：AI 驱动的大规模代码改造
+    三大机制的协同关系
+    历史积淀
+```
+
 ## AI Policy：责任边界
 
 `agents/ai_policy.md` 定义了人与 AI 的责任边界：

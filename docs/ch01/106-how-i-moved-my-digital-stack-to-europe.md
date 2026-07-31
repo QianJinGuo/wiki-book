@@ -6,6 +6,20 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How I Moved My Digital Stack…"))
+    相关实体
+    深度分析
+      核心洞察：数字主权不是口号，而是基础设施决策
+      迁移策略：分层方法与例外管理
+      欧洲云生态系统的成熟度验证
+      权衡与局限
+```
+
 ## 相关实体
 
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1268-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)

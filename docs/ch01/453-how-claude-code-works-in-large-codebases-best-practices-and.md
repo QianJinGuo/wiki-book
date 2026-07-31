@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Claude Code works in lar…"))
+    相关实体
+    深度分析
+      RAG vs Agentic Search的本…
+      Harness 的五层扩展点模型
+      三种配置模式的应用边界
+      Subagents 的设计模式
+    实践启示
+      第一步：建立 CLAUDE.md 层级
+      第二步：评估 LSP 需求
+      第三步：设计 Hook 反馈循环
+      第四步：建立 Skills 的 Progres…
+```
+
 ## 核心要点
 - 评分：v=7 × c=8 = 56
 - The article is a well-structured, informative piece on deploying Claude Code at scale. It provides practical patterns, clear explanations of technical concepts (harness, extension points, LSP integrat

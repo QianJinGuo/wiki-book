@@ -8,6 +8,32 @@
 
 > 2026-06-07 引用自 Ethan Mollick《GPT-5: It Just Does Stuff》，One Useful Thing，2025-08-07。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5：It Just Does Stuff — M…"))
+    核心原语：'It Just Does Stuff'
+    两大常见 AI 使用问题的解决
+      问题一：选错模型
+      问题二：不知道让 AI 做什么
+    案例：Vibecoding 的极致体验
+    GPT-5 Thinking vs autoG…
+    主动式 AI 的意义
+    关键引用
+    深度分析
+      1. 模型路由器：交互范式的底层重构
+      2. 主动性作为相变：从工具到同事
+      3. Doom Loop 消失的含义：错误修复…
+      4. 人类还在 loop 中，但意愿将成为问题
+    实践启示
+      1. 对复杂任务加 'think hard' 后缀
+      2. 直接选用 GPT-5 Thinking，…
+      3. 用'鼓励迭代'代替'详细规格'
+      4. 错误修复：直接 paste 错误文本
+```
+
 ## 核心原语："It Just Does Stuff"
 
 Mollick 用 GPT-5 写 intro paragraph 时只给了一句指令"do something very dramatic"，GPT-5 写出了藏头诗（首字母拼出"This is a Big Deal"）+ 每句比前一句多一个词 + 每词首字母相同 + 风格连贯——这是模型自己想到的创意并精确执行。

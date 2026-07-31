@@ -41,6 +41,27 @@ graph TB
 
 > 📊 Level ⭐⭐ | 23.4KB | `entities/long-running-agent-ralph-loop-handover-harness-ruofei.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("长周期 Agent 详解：从 Ralph Loop 到可…"))
+    5 张卡治理框架（若飞 2026-06 续篇）
+      5 张卡清单
+      Level 1 准入流程（先反着看四层 set…
+      记忆预算观
+      Skill 准入 + 退场
+    总结：若飞 long-running-agen…
+    背景与问题定义
+    三类漂移：长周期 Agent 的核心陷阱
+    Ralph Loop 的结构性问题
+      Jarrod Watts 的'模糊性复利'
+    长周期 Agent 的证据链：三层工程抓手
+    Subagent 架构与多 Agent 质量治理
+    可接管的标准：从'能继续'到'能被接管'
+```
+
 ## 5 张卡治理框架（若飞 2026-06 续篇）
 
 若飞 2026-06-01 续篇将"可接管"标准升级为团队 Agent 工作流的**5 张卡治理框架**。核心 thesis 是引用 Shann 转述 Teknium 的话——**"don't automate slop"**：流程还没跑明白，先别急着让 Agent 把它自动化。一个松散的流程接上 Agent 不会自动变严谨，只会跑得更快、产物更多、问题更容易被推到后面。

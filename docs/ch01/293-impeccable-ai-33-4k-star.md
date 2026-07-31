@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Impeccable：把 AI 前端设计变成可检查的工作…"))
+    深度分析
+      1. 一句话定位：harness 之上的'设计…
+      2. 安装与运行
+      3. 架构四层
+      4. 23 个命令的 5 阶段分工
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Impeccable 是 VibeCoder 整理的 33.4k Star 开源项目（pbakaus/impeccable），把 Claude Code / Codex / Cursor / OpenCode 等 harness 之上叠加一层"前端设计能力层"。它由 4 层架构组成（知识层/命令层/检测层/分发层）、23 个分阶段命令、41 条确定性 UI 反模式检测规则，以及一个浏览器↔源码的 Live 协作协议。核心借鉴价值是把"AI 前端设计"从"相信模型有品味"改成"给模型上下文、给用户命令、给代码检测、给浏览器反馈"四件套。

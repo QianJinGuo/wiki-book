@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/anthropic-pm-jess-yan-managed-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic PM Jess Yan 的三个 Cl…"))
+    核心观点
+    PM 自己开的三个 Agent
+    Claude Managed Agents 核…
+    Memory for Managed Agents
+    定价
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心观点
 **PM 的手艺回来了。** 过去大半时间花在协调（跨部门会议、汇报、backlog），真正的手艺（craft）反而被挤掉。借助 Claude，压缩协调时间，把时间还给手艺。
 **API 设计：从文档评审 → 先跑原型。** 不写 spec 写原型，在 Claude Code 里直接拿 pre-production API spec 跑 agent，一个下午从 hello world 到端到端原型。产品发布前就把 API abstraction 和 Claude Console UX 改了几轮。

@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 10.9KB | `entities/self-evolving-agents-survey.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Self-Evolving Agents 系统性综述"))
+    核心贡献
+    技术框架
+    关键判断
+    论文信息
+    与 Wiki 现有页面的关系
+    深度分析
+      三条进化路线的内在逻辑与局限性
+      为什么 Co-Evolution 是未来关键方向
+      Static vs Dynamic Exper…
+    实践启示
+      对 Agent 系统设计者的建议
+      对 Agent 训练实践者的建议
+      对 Agent 平台/基础设施建设的建议
+    相关实体
+```
+
 ## 核心贡献
 **统一 taxonomy**：将 Self-Evolving Agents 划分为三大范式——
 1. **Model-Centric Self-Evolution**：推理时（Inference-Based）或训练时（Training-Based）自进化

@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A recent experience with Cha…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [GPT-5.5来了！我撤回了退订ChatGPT的决定](ch01/738-chatgpt.html)
 

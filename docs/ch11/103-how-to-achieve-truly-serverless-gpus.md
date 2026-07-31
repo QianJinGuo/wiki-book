@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/modal-truly-serverless-gpus.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to achieve truly serverl…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

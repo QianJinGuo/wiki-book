@@ -5,6 +5,30 @@
 > 📊 Level ⭐ | 8.4KB | `entities/offensive-security-blog.md`
 
 > -> [offensive-security-blog](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/offensive-security-blog.md)
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Offensive Security Blog"))
+    相关实体
+    近期热门文章
+      Otto-Support: Supply Ch…
+      Introducing Joro: Using…
+      Otto Support - The Conf…
+      Deep Dive into Arista N…
+    深度分析
+      1. MCP 安全风险——AI 工具链的新盲点
+      2. AI 辅助安全工具的工业化
+      3. Confused Deputy 问题在 …
+      4. 渗透测试行业的范式转变
+    实践启示
+      给安全工程师的建议
+      给开发团队的建议
+      给企业管理者的建议
+    主题导航
+```
+
 ## 相关实体
 
 ```mermaid

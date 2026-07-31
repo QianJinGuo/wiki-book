@@ -9,6 +9,18 @@
 # Claude Managed Agents 官方平台发布
 Anthropic Claude Managed Agents 官方平台发布，Harness 架构 + 企业级安全 + 多智能体编排
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Managed Agents Official"))
+    深度分析
+    实践启示
+    相关资源
+    相关实体
+```
+
 ## 摘要
 [](https://claude.com) * [Claude](/product/overview)
 

@@ -7,6 +7,19 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-10-个开发者常用的-ai-智能体技能agent-skills.md)
 从微信文章 [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-10-个开发者常用的-ai-智能体技能agent-skills.md) 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("精选 10 个开发者常用的 AI 智能体技能（Agent…"))
+    核心内容
+      主要章节
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 

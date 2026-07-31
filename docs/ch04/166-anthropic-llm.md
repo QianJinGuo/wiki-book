@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/anthropic-llm-introspection-awareness-mechanisms.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic最新论文：检测LLM内省意识的方法"))
+    核心摘要
+    关键数据
+    深度分析
+      '内省意识'的现象学定义
+      DPO 作为内省能力的分水岭
+      两阶段电路机制的计算含义
+      检测的分布式本质
+    实践启示
+      1. 内省能力可以通过后训练定向增强
+      2. 区分检测与识别是理解模型自我认知的第一步
+      3. 现有的 RLHF 可能削弱了模型的自我监控
+      4. 用 steering vector 做实…
+    相关链接
+    相关研究
+    相关实体
+```
+
 ## 核心摘要
 Anthropic + MIT 联合研究，首次从机械可解释性角度系统揭示 LLM「内省意识」的运作机制：通过 steering vector 注入实验发现，LLM 能检测到自己被操控，这并非预训练产物，而是 DPO 后训练阶段涌现的能力。
 **五大核心发现：**

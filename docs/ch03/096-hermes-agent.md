@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/hermes-agent-tool-system-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent 工具系统架构分析"))
+    核心结论
+    4 层架构
+    ToolEntry 数据结构
+    自注册机制
+    注册安全
+    工具调度流程
+    check_fn 30s TTL 缓存
+    Toolset 组合
+```
+
 ## 核心结论
 
 Hermes Agent 的工具系统核心是**单例注册表 + import 即自注册 + AST 扫描**的组合：新增工具文件不需要修改任何注册逻辑，只要文件里有 `registry.register()` 调用就会被自动发现和加载。

@@ -8,6 +8,19 @@
 
 > **背景**：本文基于 AWS China Blog 的系列文章第二篇，聚焦 DevOps Agent 在中国区的多账号 Hub-Spoke 架构部署、跨云接入（阿里云）的工程取舍，以及 IAM Roles Anywhere 凭证治理实践。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS DevOps Agent 接入中国区（二）：多账…"))
+    深度分析
+      多账号 Hub-Spoke 架构
+      跨云接入的工程取舍
+      踩坑记录
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

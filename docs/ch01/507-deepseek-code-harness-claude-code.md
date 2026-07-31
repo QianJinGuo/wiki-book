@@ -6,6 +6,21 @@
 
 # DeepSeek Code Harness：对标 Claude Code 的中国方案
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek Code Harness：对标 Cla…"))
+    深度分析
+      DeepSeek 的战略逻辑
+      从 Harness Engineering…
+      与 Claude Code 内部机制..…
+      飞轮效应的竞争壁垒
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Claude Code 定义了当前 AI 编程工具的上限，但它不对中国开发者开放。这个缺口就是 DeepSeek 的机会。2026 年 5 月，DeepSeek 公开组建 Harness 团队，从零开始构建对标 Claude Code 的代码智能体产品。本文（作者 Tina）深度分析了这一战略选择的技术背景、行业逻辑和竞争格局，核心命题是：**Model + Harness = Agent**——只做模型远远不够，必须掌握 Harness 工程能力。

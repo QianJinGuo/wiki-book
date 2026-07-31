@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-guide-to-which-ai-to-use-in-the-agentic-era.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A Guide to Which AI to Use i…"))
+    深度分析
+      Models / Apps / Harness…
+      各厂商的 Harness 策略对比
+      'AI 做事' vs 'AI 说话' 的范式转移
+      NotebookLM 的独特价值
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick（沃顿商学院教授、AI 应用领域的权威声音）发布了他自 ChatGPT 以来的第八版 AI 使用指南，但这次代表了一个重大转折点：**"使用 AI"的含义已经从"与聊天机器人对话"转变为"让 AI 作为 Agent 完成任务"**。文章系统梳理了当前 AI 生态的三个关键维度——Models（模型）、Apps（应用）和 Harnesses（驾驭系统），并给出了面向不同用户层次的实操建议。

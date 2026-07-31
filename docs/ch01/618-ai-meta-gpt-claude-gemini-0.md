@@ -33,6 +33,17 @@ publish_date: 2026-05-06
 
 给你一份F
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("刷榜AI全挂了！Meta斯坦福地狱级测试，GPT/Cla…"))
+    详细信息
+      --- 新智元报道
+    原文
+```
+
 ## 核心要点
 
 > 本文为微信公众号文章，由 WeChat backfill 收录。

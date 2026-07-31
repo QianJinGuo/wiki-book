@@ -6,6 +6,22 @@
 
 > 火山引擎存储团队提出"从 Data Lake 到 State Lake"的范式转变，围绕 Sandbox Store、Artifact Store、Agent 观测&评测三大方向重新组织存储能力，支撑 Agent 时代的真实业务。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("State Lake：火山引擎面向 Agent 时代的存…"))
+    存储范式演进
+    Storage Agent Infra 三大方向
+      Sandbox Store
+      Artifact Store
+      Agent 观测 and 评测
+    Storage Agent Family
+    关联条目
+    退出
+```
+
 ## 存储范式演进
 
 AI Workload 三阶段驱动存储从 Content Storage → State Storage → State Lake：

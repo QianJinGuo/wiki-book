@@ -8,6 +8,20 @@
 
 > **来源**: [https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel](https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Accelerating Transformers Fi…"))
+    深度分析
+      MoE 微调的核心挑战
+      Expert Parallelism vs 传…
+      与推理框架的互操作
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 NVIDIA NeMo AutoModel 是 Mixture-of-Experts (MoE) 模型微调领域的重大性能突破。它构建在 HuggingFace Transformers v5 之上，通过添加 Expert Parallelism (EP)、DeepEP 融合 all-to-all 调度和 TransformerEngine 内核，实现了相比原生 v5 **3.4-3.7x 的训练吞吐提升**和 **29-32% 的 GPU 内存节省**。最关键的是，这一切只需要更改一行 import——`from_pretrained()` API 完全兼容。对于 550B 参数的 Nemotron 3 Ultra 模型，EP 使得在 16 节点（128 GPU）上进行全参数微调成为可能，而 v5 在此规模下直接 OOM。

@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/milvus-segment-lifecycle-delete-4-states-shuge-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("拆解 Milvus Segment 生命周期：L0/L1…"))
+    核心概述
+    三级分层演进
+    L1 状态机
+    L0 删除机制
+    L2 的尴尬定位
+    设计取舍
+    相关实体
+```
+
 ## 核心概述
 
 Milvus 向量数据库的 Segment 是数据的物理组织单位，也是 compaction 的操作对象。本文基于 Milvus 源码（`internal/datacoord/`）和官方 design docs，深入拆解 Segment 的 L0/L1/L2 三级分层体系、Growing→Sealed→Flushed→Dropped 四状态生命周期，以及专为删除数据设计的阻塞机制。

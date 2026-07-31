@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 9.1KB | `entities/ai-graviton-migration-kiro-power-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI 驱动的 Graviton 迁移评估：Kiro Po…"))
+    概述
+    核心技术
+    来源
+    深度分析
+      1. Graviton 迁移的经济学逻辑：从成…
+      2. SIMD 架构差异的本质：指令集哲学的根…
+      3. AI 驱动迁移的技术架构：MCP 协议与…
+      4. 分阶段扫描策略的工程必要性：规避上下文窗…
+    实践启示
+      1. 建立 Graviton 迁移的量化评估框架
+      2. 优先识别架构耦合度最高的代码模块
+      3. 采用'本地 Docker + 分层扫描'…
+      4. 利用容器镜像检查工具前置识别依赖问题
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

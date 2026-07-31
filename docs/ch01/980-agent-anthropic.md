@@ -50,6 +50,15 @@ LLM 系统真正卡住的地方，往往不是“岗位不够齐”，而是上�
 
 多 Agent 架构不是组织架构，首先是信息架构。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("多 Agent 不是虚拟公司：从 Anthropic 五…"))
+    太长不看版
+```
+
 ## 太长不看版
 
 - • Anthropic 总结了五种多 Agent 协调模式：生成-验证、编排-子 Agent、Agent 团队、消息总线、共享状态。

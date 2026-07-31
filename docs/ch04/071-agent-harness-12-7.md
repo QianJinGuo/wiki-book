@@ -11,6 +11,26 @@
 Agent = Model + Harness。模型负责智能，Harness 负责把智能变成能持续工作的系统。
 LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 从榜外跳到第 5 名。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一篇看懂 Agent Harness 的结构！ — 12…"))
+    相关实体
+    核心主张
+    三层工程
+    生产级 Harness 12 组件
+      1. 编排循环
+      2. 工具
+      3. 记忆
+      4. 上下文管理
+    7 个关键决策
+    框架对比
+    脚手架隐喻
+    深度分析
+```
+
 ## 相关实体
 - [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)

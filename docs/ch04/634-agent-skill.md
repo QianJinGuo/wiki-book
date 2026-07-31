@@ -8,6 +8,23 @@
 
 基于 Anthropic Agent Skills 规范、Skill-Creator 方法论、Superpowers Writing-Skills 框架及 Google ADK 设计模式的系统性总结。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Skill 规范、构建与设计模式"))
+    核心概念
+      SKILL.md 格式标准（Anthropic…
+      命名规则
+    三层渐进式加载机制
+      触发机制
+    Skill-Creator（Anthropic…
+      三大核心思想
+      三 Agent 专业化评估链
+    五大设计模式（Google ADK）
+```
+
 ## 核心概念
 
 **Skill ≠ Prompt**：Skill 是围绕任务、工具、流程和输出边界的结构化行为设计，是可复用的 Prompt 增强包。

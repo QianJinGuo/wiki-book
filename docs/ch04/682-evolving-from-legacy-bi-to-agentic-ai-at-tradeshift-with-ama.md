@@ -8,6 +8,19 @@
 
 > **Background**：本文由 Tradeshift 与 AWS 联合撰写，介绍了 Tradeshift 如何从自研 BI 工具迁移到 Amazon Quick（原 Amazon QuickSight）的 agentic AI 平台。记录了完整的迁移路线、架构设计、量化指标和经验教训。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Evolving from legacy BI to a…"))
+    迁移背景
+    解决方案架构
+      安全四层
+    量化成果
+    关键创新
+```
+
 ## 迁移背景
 
 Tradeshift 面临自研 BI 工具的严重限制：

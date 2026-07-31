@@ -6,6 +6,21 @@
 
 # Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("新智源：OpenAI Tax AI 自改进 Codex …"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [claude skill 质检工具 skill craft](ch01/976-claude.html)

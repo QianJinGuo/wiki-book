@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 22.0KB | `entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gene/GEP — EvoMap×清华 提出的「策略基…"))
+    核心定位
+    反直觉的「Agent 玄学」
+    Gene / Capsule / Event …
+    GEP（Gene Evolution Prot…
+    Skill vs Gene 受控实验：输的不是…
+      算术对比
+      关键数据（Gemini 3.1 Pro / F…
+      预算对齐实验：剪短 Skill 仍打不过 Gene
+      渐进式构造：strategy 层不可省
+    鲁棒性边界：结构宽容，语义挑剔
+    失败经验的最优形态：AVOID 警告
+      对照一：失败放在不同载体里
+      对照二：失败和策略的混合形态
+    一个真实的 Gene 是什么样（UV-vis …
+```
+
 ## 核心定位
 
 EvoMap 团队（**Infinite Evolution Lab × 清华大学**）在 **arXiv 2604.15097** 提出的 **Gene (策略基因) + GEP (Gene Evolution Protocol)** 经验对象框架 —— 用约 **230 token 的紧凑控制对象** 替代**约 2,500 token 的传统 Skill 文档**，在 **45 个科学代码场景、4,590 次受控实验** 和 **CritPt benchmark** 上验证 Gene **稳定战胜**完整 Skill 包（甚至战胜**截短到同长度的 Skill**）。

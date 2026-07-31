@@ -44,6 +44,29 @@ graph TB
 > 花叔：AI 编程进入多 Agent 阶段后，真正稀缺的不是执行力，而是人类的注意力、判断力和调度力。
 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-view-huashu.md) · 作者花叔（huashu）是 AI 编程领域的资深实践者，2024-2025 年在 Twitter/微信社区以深度技术写作著称。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("花叔的 Claude Code 多 Agent 用量画像"))
+    花叔的多 Agent 用量画像
+    一、Agent View 是什么
+    二、Agent View 解决的是人的问题，不…
+    三、Agent View 的诞生路径：从内部工…
+    四、关键技术细节
+    花叔的使用建议
+    深度分析
+      注意力经济视角下的 Agent 基础设施
+      Sherlocking 模式的双重意涵
+      Git Worktree 隔离机制的工程权衡
+    实践启示
+      对于个人开发者
+      对于团队和工作流设计者
+      对于工具生态参与者
+      长期趋势
+```
+
 ## 花叔的多 Agent 用量画像
 花叔公开了自己连续 4 个月的 Claude Code 使用数据，这是理解 Agent View 价值的最有说服力的背景：
 

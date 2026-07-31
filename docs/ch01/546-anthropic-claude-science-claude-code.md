@@ -6,6 +6,21 @@
 
 # Anthropic推出Claude Science——科研界的Claude Code
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic推出Claude Science——科…"))
+    深度分析
+      Claude Science 的产品定位：从「…
+      AI in Science 的三巨头路线对比
+      与 Claude Code 的架构类比
+      科研 Agent 的可复现性与治理挑战
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Claude Science 是 Anthropic 面向科研人员推出的 AI 平台，定位为「科研界的 Claude Code」。它不是新模型，而是一个将科研工作流——文献检索、数据处理、环境配置、分析执行、图表生成、手稿撰写、结果校验——整合为一条可控、可复现的「科研流水线」的产品。Claude Science 支持 macOS 和 Linux，面向 Pro、Max、Team、Enterprise 用户开放，无须内测申请。

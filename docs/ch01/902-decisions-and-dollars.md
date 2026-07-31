@@ -8,6 +8,22 @@
 
 > **Background**：Nikunj Kothari 基于 Cloudflare agent traffic 超越 human traffic 的事实、Cursor $60B 收购案、以及 Harvey/Legora/Rogo 等垂直 AI 公司的实践，系统分析了 AI 应用公司在 agent 经济时代的商业模式转型逻辑。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Decisions and Dollars"))
+    核心论点
+    Context - Harness - J…
+    Cursor $60B 收购案的数据护城河逻辑
+    纠正即数据（Corrections as Sc…
+    垂直 AI 公司的实践
+    实验室购买 Judgment 的趋势
+    与现有实体的差异化
+    三个独有贡献（不应合并到现有 entity）
+```
+
 ## 核心论点
 
 Agent 正在成为软件的主要用户。Cloudflare 数据显示 agent traffic 已超过 human traffic。当一千名员工运行十万 agent 时，per-seat 定价彻底失效。Agent 留下两样值得计量的东西：**决策**（数据）和**资金流动**（金融科技）。

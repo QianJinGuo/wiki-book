@@ -6,6 +6,37 @@
 
 # 为什么 2026 年真正重要的是 Harness Engineering？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("为什么 2026 年真正重要的是 Harness Eng…"))
+    核心概念
+      Agent = Model + Harness
+      操作系统类比
+    五种核心 Harness 工件
+      1. AGENT.md / CLAUDE.md…
+      2. JSON 功能列表（进度追踪器）
+      3. 会话初始化例程
+      4. Sprint 合约
+    三大实践阵营
+      OpenAI：环境优先
+      Anthropic：执行与评审分离
+      ThoughtWorks：2×2 分类框架
+    五条普适原则
+    Harness 衰减悖论
+      构建是为了删除
+      成本演化
+    深度分析
+      1. Harness Engineering …
+      2. '环境比模型更重要'的隐含前提
+      3. 从'强模型'到'强系统'的范式迁移
+      4. Harness 衰减的深层次含义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 年 AI 工程的核心范式正在从"更强的模型"转向"更可靠的系统"。Harness Engineering——即 AI agent 的系统化工程约束与安全壳层设计——被 ThoughtWorks、Anthropic、OpenAI 和 Hugging Face 等组织独立认定为 2026 年最重要的工程学科。其核心公式为：**Agent = Model + Harness**。Harness 是模型之外的一切——约束、反馈回路、上下文文档和工具边界。本文系统阐述了 Harness Engineering 的五大工件、三个实践阵营、五条普适原则，以及"构建是为了删除"的反直觉设计哲学。

@@ -8,6 +8,16 @@
 
 > source: wechat source_url: https://mp.weixin.qq.com/s/WBoogEyqUhiVrmciSBGKgA ingested: 2026-07-24 source_published: 2026年7月9日 10:02 --- # Utopai Studios模型PAI 2.0爆火出圈！全球顶流AI导演PJ Ace借助PAI 2.0「复活」真实的美国独立日 > 【花叔注】我最近一直在美国旅行，正好赶上他们的250周年独立日，美国人对这事还真挺重视，到处都是各种庆典活动。也是这几天，我注意到X上有个好莱坞导演PJ Ace，发了个特别惊艳的用AI创作的美
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("UtopAI Studios 模型 PAI 2.0 爆火…"))
+    PJ表示，「单片生成」的时代已经过去，故事的时…
+    Utopai Studios是谁？
+```
+
 ## 摘要
 
 source: wechat

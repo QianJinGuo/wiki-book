@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("让 AI 理解你的组件库：新一代智能 D2C架构 — 基…"))
+    概述
+    核心技术
+    深度分析
+      1. 知识工具化：从'喂文档'到'调接口'的范…
+      2. 三层架构的职责分离与协同机制
+      3. 组件选择：从规则引擎到语义对齐
+      4. 自主执行模式与人工审核的边界划分
+    实践启示
+      1. 构建企业组件库时，优先采用 Skill …
+      2. 在 Steering 文件中强制声明'组…
+      3. 设计组件选择 Skill 时，采用'专用…
+      4. 利用 MCP 协议实现工具的动态发现机制
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

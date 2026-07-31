@@ -6,6 +6,21 @@
 
 # 第 08 篇 · MCP：让 Agent 跟外部生态对接
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("第 08 篇 · MCP：让 Agent 跟外部生态对接"))
+    深度分析
+      MCP 在 Agent 工具调用体系中的定位
+      MCP 的三大核心抽象能力解构
+      本地 Tools vs MCP：选择策略
+      MCP Transport 选择：stdio …
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 MCP（Model Context Protocol）是 Anthropic 于 2024 年 11 月开源的一项协议，旨在以统一、标准的方式将外部系统的能力、数据和上下文暴露给 AI 模型使用。本文深入解析 MCP 与本地 Tools 的核心区别：Tools 是模型可调用能力的形态，MCP 是把这些能力跨进程、跨项目、跨生态暴露出来的协议。MCP 解决了 Agent 生态中「外部能力复用与标准化」这一关键问题，让 Agent 从只能调用本地 Python 函数，进化为能够发现并连接任何外部服务。

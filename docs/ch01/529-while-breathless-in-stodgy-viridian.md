@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/while-breathless-in-stodgy-viridian.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("While Breathless in Stodgy V…"))
+    三个关键洞察
+      1. 绿色AI的商业逻辑
+      2. 能源效率的权衡
+      3. 可持续AI的长期趋势
+    深度分析
+      语言模型的本质：行为即语料的镜像
+      隐喻的Pull与Jabberwocky的启示
+      Stochastic Parrot假说：魔力源…
+      无意义中的偶然 coherence
+    实践启示
+      1. 数据质量审计应先于模型架构选择
+      2. 构建领域专用模型时，语料选择比预训练更重要
+      3. 警惕训练数据中的隐性偏见
+      4. 合成数据生成需保持语义一致性
+    与知识库的连接
+    相关实体
+```
+
 ## 三个关键洞察
 ### 1. 绿色AI的商业逻辑
 能源成本已成为AI基础设施的主要成本项，绿色AI不只是环保责任，更是降低运营成本的商业驱动。PUE优化、异构计算、绿色能源采购都是手段。

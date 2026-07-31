@@ -9,6 +9,21 @@
 > 文章核心论点：当 AI 把软件生产的摩擦降到趋近于零时，应用本身开始像模因（meme）一样被生产、消费、传播与遗忘——作者把这一阶段命名为 **Code-as-Content Era**。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-code-as-content-era-20260606.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Code-as-Content Era"))
+    深度分析
+      一、code 与 meme 的同构临界点
+      二、camera-era 类比
+      三、Meta × Gizmo：超大型科技公司正…
+      四、行为层而非技术层
+    实践启示
+    关联实体
+```
+
 ## 摘要
 
 作者 dead.online 在 2026 年 6 月撰写的 Substack 短文，把当前 vibe coding 工具栈（Cursor / Claude / Codex 等）所催生的"周末造物—病毒传播—几天内被收购"循环，对比 2010 年代末 memecoin 借助 pump.fun 把代币变成互联网文化的同构过程。文章提出核心命题：code 已经跨过了"基础设施"的临界点，开始按"社交媒体"的节奏运作——**软件不再只是 Software-as-a-Service，而是 Software-as-an-Expression**。其商业含义是：未来十年定义行业的公司将围绕 "drops、taste、cultural timing" 组织，而不是 roadmaps 与 dashboards。

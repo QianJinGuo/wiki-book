@@ -8,6 +8,21 @@
 
 > **来源**：啊镒opc实验基地（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-ai-agents-mcp-cli-skills-stack-ayi.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("如何构建生产准备的AI代理：MCP、CLI与技能——适合…"))
+    深度分析
+      连接技术栈三层模型
+      MCP 的 Token 开销问题与解决
+      程序化工具调用（代码模式）
+      2026 MCP 路线图
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 本文系统梳理了 2026 年 AI Agent 生产部署的连接技术栈：Skills（领域知识）、MCP（模型上下文协议）、CLI（命令行执行）。核心论点是三者不是互斥选择，而是互补层——顶级 Agent 使用所有三层。

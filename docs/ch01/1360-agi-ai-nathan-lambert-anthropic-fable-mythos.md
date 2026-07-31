@@ -8,6 +8,19 @@
 
 > **Background**：本文基于 Nathan Lambert（Interconnects）2026-06-14 发布的深度分析文章。Lambert 从内部视角（刚离开 Ai2 的研究员）剖析了美国政府强制 Anthropic 暂停 Claude Fable/Mythos 对外国公民访问权限这一标志性事件，并提出了 6 点核心论点。这是第一篇从"AGI 时代治理范式转换"角度系统分析该事件的 wiki 实体。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("欢迎来到 AGI 时代的 AI 治理 — Nathan …"))
+    事件背景
+    Lambert 的 6 点核心论点
+    AGI 时代的治理范式转换
+    与现有实体的关系
+    实践启示
+```
+
 ## 事件背景
 
 2026 年 6 月，美国行政部门直接联系 Anthropic，要求其暂停 Claude Fable/Mythos 模型向任何外国公民或海外用户的访问权限。该事件的触发因素是 Amazon（Anthropic 最大的财务和技术合作伙伴）向白宫报告了 Fable 模型存在越狱漏洞的安全担忧。

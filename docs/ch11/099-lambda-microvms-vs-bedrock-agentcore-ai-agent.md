@@ -6,6 +6,29 @@
 
 # Lambda MicroVMs vs Bedrock AgentCore：AI Agent 开发者该怎么选？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Lambda MicroVMs vs Bedrock A…"))
+    概述
+    核心差异：计算原语 vs Agent 框架
+      定位差异
+      关键差异深度解析
+    选择决策指南
+      选择 Lambda MicroVMs 的场景
+      选择 Bedrock AgentCore 的场景
+      组合架构模式
+    深度分析
+      砖头 vs 精装房：抽象层次的选择决定了架构自由度
+      Firecracker 的统一底层的战略意义
+      代码沙箱：AI Agent 安全架构的关键组件
+      Agent 的'运行时环境'正在成为新的云原语
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

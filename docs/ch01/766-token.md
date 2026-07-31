@@ -12,6 +12,20 @@
 
 **原文链接**: https://mp.weixin.qq.com/s/XN7L__mVssYFKioGQPDupA
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Token不经济"))
+    深度分析
+      Token 定价市场结构性抬升
+      Agent 架构的五重系统性浪费
+      Token 应用的结构性鸿沟
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 "Token不经济"是腾讯研究院李刚提出的概念，指企业在大模型应用中的 token 消耗与实际产出不成比例的现象。微软收回内部 Claude Code 许可、Uber 仅 4 个月耗尽全年 AI 编程预算、Meta 撤下 Tokenmaxxing 排行榜——这些事件共同指向一个结构性困境：人人都在拥抱 AI，但只看到越来越长的账单，没看到对应的收益。Token 不经济是定价策略、Agent 架构损耗、应用场景局限三重因素叠加的结果。

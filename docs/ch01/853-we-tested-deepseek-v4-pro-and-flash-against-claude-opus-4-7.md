@@ -6,6 +6,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-pro-vs-claude.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("We Tested DeepSeek V4 Pro an…"))
+    相关实体
+    深度分析
+      评测方法论的价值
+      核心问题模式
+      成本效益分析
+      恢复机制是最难的部分
+    相关查询
+    实践启示
+      对于 AI 应用开发者的建议
+      对于模型选择决策者
+      对于 AI 工程团队
+```
+
 ## 核心要点
 - value=8, confidence=9, product=72
 - Well-structured technical benchmarking

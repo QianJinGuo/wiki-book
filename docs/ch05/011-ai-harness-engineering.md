@@ -9,6 +9,21 @@
 > 来源：code 秘密花园（ConardLi），2026-04-03，公众号一文读懂 Harness Engineering
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一文带你弄懂 AI 圈爆火的新概念：Harness En…"))
+    深度分析
+      一、三次重心迁移的内在逻辑
+      二、Harness 的六层构成
+      三、业界三家代表性实践
+      四、Harness Engineering 的…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 文章从三次重心迁移（Prompt → Context → Harness）+ 六层 Harness 构成 + OpenAI/Anthropic/LangChain 一线实践三个角度系统阐释 Harness Engineering 概念。**核心断言**："真正决定 AI 产品上限的是模型，但真正决定 AI 产品能否落地的，往往是 Harness。"

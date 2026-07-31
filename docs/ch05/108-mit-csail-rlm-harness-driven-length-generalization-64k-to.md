@@ -8,6 +8,18 @@
 
 MIT CSAIL researchers propose using the **`harness`** as an explicit variable for compositional generalization in recursive language models (RLMs). By training only on **64K-token tasks**, the system generalizes to **~2M token evaluations** — a **32× length extrapolation** — outperforming transformer baselines by approximately 10× in long-task evaluation gains.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MIT CSAIL RLM: Harness-Drive…"))
+    Core Insight: Harness a…
+    Locally In-Distribution…
+    Results
+    Implications for Agent …
+```
+
 ## Core Insight: Harness as a Generalization Variable
 
 The key innovation is repositioning the harness from a peripheral engineering framework to a carrier of **high-level inductive biases**. When tasks share similar decomposition structures (even with different domains and text surfaces), the harness can produce approximately isomorphic model trajectories — the root model learns reusable organizational strategies across tasks. This is formalized through the concept of **task equivalence classes**.

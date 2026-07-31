@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 15.9KB | `entities/harness-engineering-90-percent-ai-coding-rate.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 实战：AI Co…"))
+    核心结论
+    背景：为什么需要 Harness Engine…
+      AI Coding 的现状与挑战
+      企业级 Java 项目的特殊性
+      Agent 的四种典型失败模式（Anthrop…
+    三次范式跃迁
+    四根支柱（OpenAI + Anthropic…
+      支柱一：上下文架构（Context Archi…
+      支柱二：Agent 专业化（Agent Spe…
+      支柱三：持久化记忆（Persistent Me…
+      支柱四：结构化执行（Structured Ex…
+    子页面
+    相关页面
+    相关实体
+    深度分析
+      从「能力」到「可信赖产出」的系统性鸿沟
+      四种典型失败模式的系统性根因
+      三次范式跃迁的核心驱动力
+      十阶段 Pipeline 与四要素架构的协同机制
+```
+
 ## 核心结论
 在企业级 Java 应用（10 万+行代码，技术栈：Java 1.8 / Spring Boot / LiteFlow / HSF / Diamond / Tair）中，通过构建完整 Harness 体系，AI 代码率从 **24.86% 提升至 90.54%**，个人维度从 14.24% 跃升至 87.85%。构建耗时约一周。
 > **高 AI 代码率本身不是目标，在质量可控前提下的高 AI 代码率才有意义。** 这 90% 的 AI 代码经过完整的需求分析、编码评审、单元测试和 CI 验证流程，每一行都通过了 Harness 体系的质量门禁。

@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 10.9KB | `entities/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Disgruntled researcher relea…"))
+    深度分析
+      1. 报复性披露模式：从单个漏洞到持续性零日 …
+      2. YellowKey 的战术价值：BitL…
+      3. 内部人威胁的特殊风险：Microsoft…
+      4. GreenPlasma 的武器化路径：从…
+    实践启示
+      对企业安全团队
+      对个人用户
+      对安全产品开发者
+      对安全行业的结构反思
+    评分
+    关联阅读
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

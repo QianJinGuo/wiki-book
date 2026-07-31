@@ -8,6 +8,17 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Frontier post-training recip…"))
+    与现有实体的差异化
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 1. **AI2 post-training framework (RLHF + SFT 配方)** — Finbarr Timbers 公开了 Ai2 的 post-training recipe，强调 SFT（supervised fine-tuning）与 RLHF 的协同配方，包含 reward model 的训练数据构成与对齐策略。

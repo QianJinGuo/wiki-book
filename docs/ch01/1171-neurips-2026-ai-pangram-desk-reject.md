@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/neurips-2026-pangram-desk-reject-controversy.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NeurIPS 2026 使用闭源 AI 检测器 Pan…"))
+    深度分析
+      核心观点
+    一句话定位
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 NeurIPS 2026 使用闭源 AI 检测器 Pangram 批量 desk-reject 论文事件 涉及data领域的核心技术议题。

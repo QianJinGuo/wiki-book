@@ -8,6 +8,22 @@
 
 > 2026 年 6-7 月，AWS（$1B）、微软（$2.5B/6000 人）、OpenAI（$2.95亿收购 Tomoro）、Google Cloud、Anthropic 五巨头同时重注 FDE。腾讯研究院邀请 Cresta AI 的钟钱杰（Jove）和 Ventus AI 的陆骁鹏（Vincent）一线对话，拆解 FDE 的本质、打法与本土化可能。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FDE（Field Deployment Enginee…"))
+    什么是 FDE — 三种不同形态
+    FDE 与外包/实施/SA 的本质分野
+    从 Demo 到生产：复杂度被严重低估
+    「蒸馏」— FDE 商业模式成立的前提
+    Palantir 的 FDE vs 今天的 F…
+    什么样的企业才能推得动 AI
+    中国能跑通 FDE 吗？
+    招人：7000 份简历 → 20+ offer…
+```
+
 ## 什么是 FDE — 三种不同形态
 
 同一个岗位名背后是三种截然不同的运转逻辑：

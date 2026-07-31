@@ -44,6 +44,33 @@ graph TB
 # gstack
 > YC总裁Garry Tan开源的AI协作开发工作流工具，把Claude Code变成可管理的虚拟工程团队。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("gstack — AI协作开发工作流 & 复杂度棘轮"))
+    基本信息
+    核心设计
+    复杂度棘轮（Complexity Ratchet）
+      核心定义
+      90% 测试覆盖率
+      TTY 行为测试
+      GBrain v0.31 演进案例
+    与本文相关
+    相关实体
+    深度分析
+      1. 棘轮机制的本质：从'努力'到'系统'
+      2. 90%覆盖率拐点的深层含义
+      3. TTY行为测试：跨越'意图'与'行为'的鸿沟
+      4. 角色扮演工作流的工程化价值
+    实践启示
+      启示1：建立自动化的质量棘轮，而非依赖人工Co…
+      启示2：用反向依赖追溯替代排除法思维
+      启示3：AI Agent系统的测试必须覆盖'意…
+      启示4：并行Sprint的规模化应用
+```
+
 ## 基本信息
 - **作者**: Garry Tan（Y Combinator总裁兼CEO）
 - **GitHub**: https://github.com/garrytan/gstack

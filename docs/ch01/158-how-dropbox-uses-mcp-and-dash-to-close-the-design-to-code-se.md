@@ -8,6 +8,18 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dropbox-mcp-dash-design-code-security.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Dropbox uses MCP and Das…"))
+    内容提炼
+    关键洞察
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **来源**: https://dropbox.tech/security/dropbox-mcp-dash-design-code-security

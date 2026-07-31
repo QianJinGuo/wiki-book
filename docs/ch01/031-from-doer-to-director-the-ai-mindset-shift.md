@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("From Doer To Director: The A…"))
+    相关实体
+    文章摘要
+    深度分析
+      从'做工作'到'管理工作'的认知跨越
+      AI burnout：被忽视的新型职业倦怠
+      微观管理 AI 的诱惑与陷阱
+      流程基础是 AI 发挥价值的先决条件
+    实践启示
+      个人工作流程层面
+      心理调适层面
+      团队管理层面
+      职业发展层面
+```
+
 ## 相关实体
 - [独家对话罗福莉：AI范式已然巨变！](../ch05/094-ai.html)
 - [agentic code review](ch01/171-agentic-code-review.html)

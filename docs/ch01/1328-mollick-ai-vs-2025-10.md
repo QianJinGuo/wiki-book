@@ -8,6 +8,29 @@
 
 > 2026-06-07 引用自 Ethan Mollick《An Opinionated Guide to Using AI Right Now》，One Useful Thing，2025-10-19。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Mollick 的 AI 实用指南：免费 vs 付费·模…"))
+    背景数据
+    免费 vs 付费决策
+    模型选择（具体操作）
+      GPT-5 系列（最多选择）
+      Claude
+      Gemini
+    Deep Research 是核心被低估功能
+    Quick Tips（Mollick 实用建议）
+    关键引用
+    相关主题
+    深度分析
+      1. 免费与付费的分水岭：不是价格，而是使用场景
+      2. Agent Model 的崛起：从对话工…
+      3. Deep Research：被大众忽视的…
+      4. Prompt Engineering 的…
+```
+
 ## 背景数据
 
 - 全球约 **10% 人类每周使用 AI**（截至 2025 年 10 月）

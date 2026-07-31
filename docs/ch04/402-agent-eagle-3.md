@@ -11,6 +11,17 @@
 ![](https://mmbiz.qpic.cn/mmbiz_gif/1kYDdPrxHSoWHXVf9t3PR0ZcocQiafYCOt5uciat7FVHcLCeJAFbVibTrAHEwES7JwDLocENUaj2hIFgLXmoZZt7bOZtNhYanJ9uMiaibJkMxv7E/640?wx_fmt=gif&from=appmsg)
 **2.1 从 Chat 到 Agent：推理延迟会被"复合放大"**
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("多轮 Agent 场景下，滴滴的 EAGLE-3 训推加…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Ai Skill Skill Creator 源码拆解](ch04/319-skill-skill.html)
 - [Harness Engineering Systematic Explainer](../ch05/120-harness-engineering.html)

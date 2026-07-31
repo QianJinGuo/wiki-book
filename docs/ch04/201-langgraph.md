@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/langgraph-state-machine.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LangGraph 状态机执行引擎深度解析"))
+    Overview
+    核心概念解析
+      StateGraph 三要素
+      StateGraph 内部核心数据结构
+      compile 的意义
+    Reducer 机制
+    调度器：事件循环
+      条件边（Conditional Edge）
+    Fan-out / Fan-in 并行模式
+    CompiledGraph 四大接口
+    与 Agent Skill Writing…
+    深度分析
+      状态机模型对 Agent 架构的根本性影响
+      Reducer 机制的设计意图
+      条件边是 ReAct 的本质
+      Fan-out/Fan-in 的工程意义
+```
+
 ## Overview
 LangGraph 通过**状态机**机制让 LLM 实现「想一步、停一步、判断一步」的能力。核心是将 Agent 行为建模为 State + Node + Edge 的图结构，由调度器驱动循环执行。
 与 LangChain 早期线性 Chain 的根本区别：LangChain 控制流固定，LangGraph 支持**带状态的循环控制流**，能根据运行时状态动态决策下一步。

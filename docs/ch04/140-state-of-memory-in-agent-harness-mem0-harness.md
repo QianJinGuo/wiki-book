@@ -9,6 +9,24 @@
 > 出处: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-memory-in-agent-harness-mem0-2026.md) · 作者 mem0 · 2026-06-11
 > 原帖: x.com/mem0ai/status/2061822612398014782
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("State of Memory in Agent Har…"))
+    TL;DR
+    Memory 三层分类法
+    九大 Harness 横评
+      设计模式对照表
+      几个真正的亮点
+    Benchmark 批判
+    共同短板与 harness boundary 论点
+    研究层未解决的三个坑
+    Mem0 的定位
+    价值与局限
+```
+
 ## TL;DR
 
 mem0 团队系统横评了 9 个主流 [agent harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的 memory 机制（Claude Code、Anthropic Managed Agents、OpenAI Codex、GitHub Copilot、OpenClaw、`Hermes Agent`、AWS Bedrock AgentCore、Windsurf、Devin），得出三个结论：（1）memory 已经是 harness 的核心能力；（2）大多数实现停留在"本地、有限、关键词式、难共享"阶段；（3）这些限制本质上是 **harness boundary 的限制**，因此 mem0 把自己定位为 cross-harness 的基础设施层。

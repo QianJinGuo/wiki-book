@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI 写前端 ≠ 设计 —— Anomaly 创始人对 …"))
+    深度分析
+      核心观点
+    一句话定位
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判 涉及agent领域的核心技术议题。

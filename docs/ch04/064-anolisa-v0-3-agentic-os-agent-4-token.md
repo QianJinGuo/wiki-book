@@ -14,6 +14,30 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anolisa-v03-alibaba-agentic-os.md)
 → [GitHub 开源](https://github.com/alibaba/anolisa) · [阿里云产品文档](https://help.aliyun.com/zh/alinux/agentic-os-getting-started)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ANOLISA v0.3：阿里 Agentic OS —…"))
+    一句话定位
+    1. 三大用户痛点
+    2. 亮点一：AgentSecCore 4 层防护
+      场景示例
+      4 层防护（从输入端到执行端到运行环境）
+    3. 亮点二：SkillFS Token 节省…
+    4. 亮点三：工作区快照（ws-ckpt 后悔药）
+      场景
+      ANOLISA 方案
+    5. ANOLISA v0.3 全部新功能速览
+    6. 体验教程（3 个场景）
+      准备工作（4 步）
+      场景一：节省 Token
+      场景二：安全防护（亲眼看一次'注入拦截'）
+      场景三：操作回滚（改坏了？一句话回到改之前）
+    7. 关键组件全景
+```
+
 ## 一句话定位
 
 **"放权焦虑" 三件套解法**：① 安全（防护 + 拦截 + 告警）② Token（节省 + 可见）③ 错误（快照 + 回滚）= **敢放手**

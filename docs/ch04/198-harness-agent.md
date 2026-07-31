@@ -6,6 +6,25 @@
 
 # Harness 工程实践：如何让 Agent 完成自主迭代
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 工程实践：如何让 Agent 完成自主迭代"))
+    技术架构
+      Harness 工程的研发流程重定义
+      三大关卡的解决方案
+      Agent 优化实例：从做加法到做减法
+    深度分析
+      1. Harness 工程的核心不是 AI 代…
+      2. Reward Hacking 是 Age…
+      3. 父子 Agent 模式是解决长上下文任务…
+      4. 评测集的「Signal Quality」…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 阿里技术团队深度复盘了 Harness 工程实践：如何让 AI Agent 在 Harness 框架下完成自主迭代——从 badcase 触发到 Harness 定义、验证、集成、部署的完整闭环。文章提出了 Harness 工程需要补齐的三项关键能力（研发工具 Agent 可调用化、长程任务防早停与上下文管理、评测闭环防 reward hacking），并详细举例了 AI Agent 如何在 17 小时内自主完成 16 轮迭代实验，最终有一轮改进通过人工复核成功上线。

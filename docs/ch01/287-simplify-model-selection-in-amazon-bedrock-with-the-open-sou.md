@@ -12,6 +12,26 @@ But choice comes with complexity. Comparing models across capabilities, pricing,
 
 The [Amazon Bedrock Model Profiler](https://github.com/aws-samples/sample-bedrock-migration-and-modernization-tools/tree/main/bedrock-model-profiler) addresses this gap. This open source tool aggregates model metadata from multiple AWS APIs and external sources into a single, searchable interface. With advanced filtering, side-by-side comparisons, and detailed model cards, teams can explore the full Amazon Bedrock catalog and make informed, data-driven decisions by easing the manual search effort across various documents and model cards.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Simplify model selection in …"))
+    Solution Overview
+      Data Sources
+      Data Pipeline Architect…
+      Key Features
+      Deployment Options
+    Deep Analysis
+      The Model Selection Pro…
+      Architectural Excellenc…
+      Business Impact: Real-W…
+      Position in the AWS AI …
+    Practical Insights
+    Related Entities
+```
+
 ## Solution Overview
 
 The Model Profiler is a web application that lets you browse, filter, and compare every foundation model available on Amazon Bedrock in one place. Instead of navigating multiple console pages and documentation sites, you get a single interface with model cards, side-by-side comparisons, regional availability maps, and pricing breakdowns updated daily.

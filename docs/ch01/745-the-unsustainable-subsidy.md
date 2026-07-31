@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/tomtunguz-ai-model-inflation.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Unsustainable Subsidy"))
+    分析
+    深度分析
+      1. AI 模型定价通胀的结构性根源
+      2. 三大厂商定价策略的分叉路径
+      3. 定价策略反转的触发条件
+      4. 市场结构的竞争动态
+    实践启示
+      1. 对 AI 应用开发者的建议
+      2. 对 AI 创业公司的战略建议
+      3. 对企业采购 AI 服务的建议
+    相关实体
+```
+
 ## 核心要点
 
 - AI 模型价格每年三倍增长，经济学上不可持续

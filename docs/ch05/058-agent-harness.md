@@ -8,6 +8,22 @@
 
 > **Background**：本文基于叶小钗为某企业进行的 6 场系统性培训整理，覆盖 Agent 架构、Harness 工程、AI 原生组织与人才三个维度，提供了一个从架构到组织再到人才的完整闭环框架。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("生产级 Agent 全景：架构、Harness 工程、组…"))
+    Agent 在企业中的定位
+    Coding Agent 作为早期优势场景
+    Workflow vs Agent 决策框架
+    Agent 产品形态
+    稳定性设计
+    多 Agent 设计
+    Agent 技术架构八层
+    Harness 的核心职责
+```
+
 ## Agent 在企业中的定位
 
 传统企业软件的核心职责是 System of Record——记录系统（CRM、ERP、项目管理等）。Agent 增加了一个新的软件层：**认知与行动层**。用户直接提交任务，Agent 理解意图、组织上下文、判断工具、调用系统、检查结果并写回业务系统。

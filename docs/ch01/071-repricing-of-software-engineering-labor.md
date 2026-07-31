@@ -15,6 +15,19 @@ I started my career in the late 2010s, and I have had a front-row seat to the gr
 
 Looking back over the last decade, I have mixed feelings about some of the calls I made. And I am seeing the same patterns play out again now. So for engineers who are confused about where this is headed and how to navigate it, here is how I think about it.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Repricing of Software Engine…"))
+    Generalist SWEs were a …
+    LLMs Changed The Dynamics
+    Repricing of the Middle…
+    Expertise is getting mo…
+    Where I think this goes
+```
+
 ## Generalist SWEs were a product of cheap money
 
 The late 2010s, I saw an huge amount of startup funding, globally. Flipkart, Snapdeal, Jugnoo, and hundreds of others were scaling hard and one hiring pattern I saw was that: everyone wanted generalist software engineers. People who could easily get upto speed across the stack.- backend, frontend, infra, deployment and simply ship.

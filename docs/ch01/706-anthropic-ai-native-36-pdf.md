@@ -13,6 +13,17 @@ The Founder's Playbook
 
 **本译本仅供个人学习与内部研究使用，不做商业发行。**原版下载请到 claude.com/blog/the-founders-playbook。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic创始人行动手册：打造一家AI-Nati…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Introducing Claude Platform On Aws](ch01/150-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)

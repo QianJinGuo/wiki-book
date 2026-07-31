@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI科研超越人类 — Prime Intellect递归…"))
+    Event Overview
+    Key Behavioral Observat…
+    Paradigm Shift: From Ca…
+    60 Steps Significance
+    深度分析
+    实践启示
+    Links
+    See Also
+```
+
 ## Event Overview
 **实验方：** Prime Intellect 实验室（14,000 H200 GPU-hours，~10,000次迭代，239亿Token思考轨迹）   ^["[Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prime-intellect-auto-nanogpt-opus-2930.md)"]
 **参赛模型：**   ^["[Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prime-intellect-auto-nanogpt-opus-2930.md)"]

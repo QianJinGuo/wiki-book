@@ -8,6 +8,18 @@
 
 > Source: [POSIX Is Not A Shell](https://alganet.github.io/blog/2026-06-28-12-POSIX-Is-Not-A-Shell.html) | Score: v*c=72
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("POSIX Is Not A Shell"))
+    Overview
+    alganethttps://algan…
+      The Problem With Dialects
+      What Validation Actuall…
+```
+
 ## Overview
 
 Published Time: Sun, 28 Jun 2026 20:39:31 GMT

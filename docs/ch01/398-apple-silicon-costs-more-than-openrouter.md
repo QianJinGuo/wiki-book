@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/apple-silicon-costs-more-than-openrouter.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Apple Silicon costs more tha…"))
+    核心发现：本地推理成本是云端的 3~10 倍
+      电力成本极低
+      硬件折旧主导成本
+      Token 生成效率受限
+      成本区间对比
+    为什么本地推理仍然有吸引力
+    关键变量：折旧期与利用率
+    深度分析：与专用推理引擎的技术路线对比
+      Apple Silicon 的定位
+      专用引擎 vs 通用引擎的成本结构
+      量化策略对成本的影响
+    与 OpenRouter 的战略差异
+    成本计算框架：IER 视角
+    推理优化技术对本地部署的启示
+    实践启示
+```
+
 ## 核心发现：本地推理成本是云端的 3~10 倍
 
 文章通过四个维度的详细计算，揭示了 Apple Silicon 本地推理的真实成本结构 ：

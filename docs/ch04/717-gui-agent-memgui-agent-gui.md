@@ -6,6 +6,21 @@
 
 # 让GUI Agent不再「边做边忘」：快手、浙大提出MemGUI-Agent，攻克长程GUI任务
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("让GUI Agent不再「边做边忘」：快手、浙大提出Me…"))
+    深度分析
+      从'被动追加'到'主动管理'的范式转变
+      ConAct 不是 Prompt Trick—…
+      与 Context Management 领域…
+      8B 模型泛化到分布外场景的意义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 MemGUI-Agent 是由浙江大学 APRIL 实验室和快手主站技术部联合提出的面向长程手机 GUI 任务的端到端 Agent。其核心创新是 **ConAct（Context-as-Action）** 范式——将上下文管理提升为和 UI 点击、输入、滑动同级的"第一类动作"，让 Agent 在执行操作的同时主动决定如何管理自己的工作记忆。配合全链路开源的数据集 **MemGUI-3K**（平均步数 28.8 步，为业界最长），MemGUI-8B-SFT 刷新了 MemGUI-Bench 和 MobileWorld 两个长程评测基准上 open-data 模型的最好成绩。

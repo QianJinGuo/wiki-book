@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐ | 8.2KB | `entities/gemini-ai.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini AI (Google)"))
+    Overview
+    名称澄清
+    Gemini 的学习相关功能
+      1. Gemini in Google Wor…
+      2. Gemini Chat（gemini.g…
+      3. Gemini 与 NotebookLM …
+      4. Gemini 是否有'Study Mod…
+    Pricing
+    Strengths
+    Weaknesses
+    深度分析
+    实践启示
+```
+
 ## Overview
 Gemini 是 Google 的多模态 AI 助手，集成在 Google Workspace for Education、Google Classroom、以及独立 gemini.google.com 网站中。Gemini 本身是通用 AI 助手，不是专门的笔记或知识管理工具，但其学习功能散见于多个 Google 产品中。
 

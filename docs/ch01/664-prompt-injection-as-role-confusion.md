@@ -8,6 +8,22 @@
 
 > **Background**：将 prompt injection 重新定义为**角色混淆（Role Confusion）**问题的研究论文配套博客。提供了形式化的理论框架来理解为什么 LLM 容易受到 prompt injection 攻击，并提出了基于角色感知的防御方向。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Prompt Injection as Role Con…"))
+    深度分析
+      对 Agent 安全的深远影响
+      与 Agent Security Threat…
+      '潜意识'效应的启示
+    实践启示
+      对 Agent 开发者的建议
+      对 AI 安全研究者的建议
+    相关实体
+```
+
 ## 摘要
 
 这篇文章提出了一个关于 prompt injection 的新理论框架：**prompt injection 本质上是 LLM 的角色感知失败**。LLM 通过角色标签（system、user、think、tool）来理解输入的不同部分，但这些角色边界可以被攻击者利用来注入恶意指令。作者开发了"角色探针"来测量 LLM 内部对每个 token 的角色归属判断，发现 LLM 在区分不同角色时存在系统性弱点。

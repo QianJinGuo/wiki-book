@@ -8,6 +8,27 @@
 
 基于兔兔AGI（技术极简主义）的 Loop Engineering 实战指南，系统讲解如何设计让工作自己推进的循环系统。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Loop Engineering…"))
+    核心观点
+    演进三阶段
+    Loop 三种形态
+      1. 单 Agent 循环
+      2. 多 Agent 舰队循环（Fleet L…
+      3. Open-loop vs Closed-…
+    理论基础
+      ReAct：推理 + 行动
+      Reflexion：失败即燃料
+    Claude Code 内置 Loop 工具
+    双层结构
+    「5+1」工程组件（Addy Osmani）
+    四个设计原则
+```
+
 ## 核心观点
 
 Boris Cherny （Claude Code 负责人）：

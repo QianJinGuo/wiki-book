@@ -6,6 +6,20 @@
 
 # Agentic Abstention—Agent 能及时停止吗？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Abstention—Agent 能及时…"))
+    核心问题
+    与 LLM Abstention 的关键区别
+    三类典型失败模式
+    基准结果（28000+ 任务）
+    方法：CONVOLVE
+    对工程实践的意义
+```
+
 ## 核心问题
 
 华盛顿大学与 Allen AI 等机构提出 **Agentic Abstention（智能体弃权）**问题：在多轮工具调用中，Agent 不仅需要会「答」和「做」，还需要在证据表明任务不可行时**主动弃权（ABSTAIN）**——停止进一步行动并说明原因或请求澄清。

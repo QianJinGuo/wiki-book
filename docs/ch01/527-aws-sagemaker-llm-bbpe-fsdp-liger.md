@@ -10,6 +10,30 @@
 
 > **Core insight**: 低资源、高形态复杂度语言（如阿塞拜疆语）的 LLM 训练需解决三个相互依赖的瓶颈：编码效率（BBPE 自定义分词器将 fertility 从 3.22 降至 1.59 tokens/word）、GPU 内存利用率（FSDP 将梯度/优化器状态分片，Liger Kernel 融合算子减少中间内存分配）和参数高效微调（两阶段 CPT + LoRA）。三阶段流水线 tokenizer→CPT→LoRA 可复用于任何低资源语言
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS SageMaker 阿塞拜疆语 LLM 训练：B…"))
+    自定义 BBPE 分词器设计
+    阶段二：FSDP + Liger 的 CPT …
+    两阶段 CPT 配置
+    阶段三：LoRA 参数高效微调
+    关键数据/实践启示
+    深度分析
+      1. 低资源语言 LLM 的分词器困境
+      2. FSDP + Liger Kernel …
+      3. 低资源语言模型的经济价值
+      4. 数据收集是低资源语言的最大瓶颈
+    实践启示
+      1. 低资源语言 LLM：优先投资数据而非模型架构
+      2. 分词器选择：BBPE 对低资源语言更优
+      3. 分布式训练：FSDP + Liger 是…
+      4. 不要低估文化适配的难度
+    相关实体
+```
+
 ## 自定义 BBPE 分词器设计
 阿塞拜疆语形态丰富，单词通过后缀编码语法含义，标准英语优化分词器将其拆解为多个子词碎片。BBPE（Byte-Level Byte-Pair Encoding）从原始字节而非预定义字符集开始迭代合并最频繁字节对，完全覆盖阿塞拜疆语特殊字符。实验了 50k-100k 词汇量，100k 最终选中。评估指标采用 BPB（Bits-Per-Byte）而非 perplexity，因 BPB 以字节级归一化消除词汇差异影响：自定义 tokenizer BPB 0.5795 vs baseline 0.6830，证明效率提升未牺牲建模质量。
 

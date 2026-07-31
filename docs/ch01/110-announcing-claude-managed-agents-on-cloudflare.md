@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 5.4KB | `entities/announcing-claude-managed-agents-on-cloudflare.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Announcing Claude Managed Ag…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Cloudflare 与 Anthropic 合作，将 Claude Managed Agents 集成到 Cloudflare Sandboxes 环境 
 - Claude Agent 的核心推理循环运行在 Anthropic 平台（"大脑"），代码执行等基础设施运行在 Cloudflare（"手"），实现"脑手分离"架构 

@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/steering-mechanism-evaluation-easyedit2-zju-alibaba.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("大模型可控新突破：Steering 机制、评估体系与开源落地"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 大模型可控新突破：Steering 机制、评估体系与开源落地 涉及code领域的核心技术议题。

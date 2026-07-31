@@ -9,6 +9,21 @@
 > 腾讯技术工程 2026-04-28 发布，作者 dorian。2026-04-24 DeepSeek 突然上线 V4 预览版并同步开源——技术报告「DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence」。本文系统解读 V4 在 attention、residual、kernel 三个层面的架构创新，是中文社区最完整的 V4 深度解读之一。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/读完这篇你就搞懂-deepseek-v4-了-v2.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("读完这篇你就搞懂 DeepSeek v4 了"))
+    深度分析
+      一、为什么 1M 上下文是'必须'而不是'军备…
+      二、mHC：多流约束残差连接——万亿参数训练稳…
+      三、CSA / HCA：把 1M 上下文从理论…
+      四、Muon 优化器
+    实践启示
+    关联实体
+```
+
 ## 摘要
 
 DeepSeek-V4 包含两个独立预训练的 MoE 模型：V4-Pro（1.6T 总参数，稀疏激活 49B，1M 默认上下文）和 V4-Flash（284B 总参数，稀疏激活 13B，1M 默认上下文）。两者都默认 1M 上下文，服务端不再区分"长/短"模型。在编程、数学、Agent、长文本四个维度同时刷进第一梯队，接近 GPT-5.4 / Claude 4.6 / Gemini 3.1。但真正硬核的不是 1.6T 参数 + 1M 上下文，而是从 **attention 到 kernel 的系统级重构**——三项核心架构创新：**mHC（Manifold-Constrained Hyper-Connections）** 解决万亿参数深度网络的残差稳定性、**CSA / HCA 混合注意力** 把 1M 上下文的计算量压到工程可承受、**Muon 优化器** 加速大规模训练收敛。

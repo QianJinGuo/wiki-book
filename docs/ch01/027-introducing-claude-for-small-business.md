@@ -6,6 +6,23 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-for-small-business.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Claude for Small…"))
+    深度分析
+      产品定位：填补 SMB AI 市场的结构性空白
+      生态战略：从工具到社区的纵向延伸
+      潜在挑战与不确定性
+    实践启示
+      对小型企业主的直接价值
+      对 AI 行业从业者的启示
+      对创业者和独立开发者的机会
+    相关实体
+```
+
 ## 核心要点
 - Anthropic 推出 Claude for Small Business，目标客群为美国小型企业主 
 - 小型企业贡献美国 GDP 的 44%，雇用近半数私营部门劳动力，但 AI 采用率大幅落后于大企业 

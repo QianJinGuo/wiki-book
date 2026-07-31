@@ -10,6 +10,17 @@ OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 ** GPT-Realtime-2  ** ：首款具备GPT-5级别推理能力的语音模型，能处理更复杂的请求，并自然地推进对话。
 ** GPT-Realtime-Translate  ** ：实时翻译模型，支持70多种输入语言翻译成13种输出语言，翻译速度与说话者同步。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI发布新一代实时语音模型，能够像人说话一样进行…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 - [Aliyun Agentrun 2Line Integration](../ch04/003-agentrun.html)

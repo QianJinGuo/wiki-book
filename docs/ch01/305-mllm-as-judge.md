@@ -10,6 +10,30 @@
 
 随着企业软件向多模态迁移，Gartner 预测到2030年80%的企业软件将具备多模态能力，而2024年这一比例还不到10%。在没有自动化多模态评估的情况下，企业只能在昂贵的人工审查和不可靠的纯文本代理之间做出选择。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("多模态评估器：MLLM-as-Judge 图文评估"))
+    背景与动机
+    四种评估器
+    技术实现
+    关键设计发现
+      Q1: Judge 需要看到图像吗？
+      Q2: 选择哪个 Bedrock 模型？
+      Q3: Prompt 设计要点
+      Reference 的使用
+    与现有技术的关系
+    实用建议
+    未来方向
+    深度分析
+      1. MLLM-as-Judge 填补了多模态…
+      2. '先推理后评分'是提升 judge-to…
+      3. Reference-based 与 Re…
+      4. Mid-tier reasoning-c…
+```
+
 ## 核心要点
 
 - AWS Amazon Bedrock 上的 Strands Evals 框架提出用 MLLM 作为 image-to-text 任务的自动评估器

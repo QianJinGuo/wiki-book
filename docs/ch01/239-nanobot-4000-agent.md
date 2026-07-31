@@ -8,6 +8,27 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nanobot-agent-framework-architecture-deep-dive.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("nanobot：4000行极简 Agent 框架架构解析"))
+    wttr.in primary
+      记忆系统：'grep beats RAG'
+      Subagent：消息总线重注入
+      MCP 集成：标准协议桥接
+    深度分析
+      1. '控制面集中化'是工程取舍而非教条
+      2. Markdown-as-Config 是…
+      3. Progressive Loading …
+      4. '错误恢复委托给 LLM'是健壮性的范式转移
+    实践启示
+    适用与不适用场景
+    关联实体
+    相关链接
+```
+
 ## 摘要
 
 香港大学数据科学实验室（HKUDS）的 **nanobot**，2026-02 开源，30 天内即获 **28,500+ GitHub Stars**，但核心代码仅 **3,935 行**——对比 LangChain 核心代码 430,000+ 行。它通过 **ReAct 循环 + Markdown 技能定义 + Grep 记忆 + 子 Agent 委托 + MCP 工具集成** 五大决策，证明 Agent 框架不需要过度工程化。本条目拆解每一个设计取舍及其在工程实践中的可借鉴模式。

@@ -8,6 +8,22 @@
 
 > 2026-06-07 引用自 Ethan Mollick《Claude Dispatch and the Power of Interfaces》，One Useful Thing，2026-03-31。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Dispatch + 接口力量：AI 从 …"))
+    核心论点：接口是 AI 能力的真正瓶颈
+    接口类型 1：专业化工具
+    接口类型 2：个人 Agent
+    接口类型 3：按需生成
+    结论
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心论点：接口是 AI 能力的真正瓶颈
 
 AI 能力已远超大众实际使用水平。能力过剩的根源不在模型，而在**人机接口**。大部分人通过 chatbot 访问 AI（通常还是免费版），这对快速问答 OK，但对真实工作是个糟糕的方式。

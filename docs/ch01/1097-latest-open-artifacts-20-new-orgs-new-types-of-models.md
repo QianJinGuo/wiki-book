@@ -6,6 +6,21 @@
 
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Latest open artifacts (#20):…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/1091-deepseek.html)

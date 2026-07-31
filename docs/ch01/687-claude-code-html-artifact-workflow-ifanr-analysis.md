@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-html-artifact-workflow-ifanr.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code HTML Artifact Wo…"))
+    深度分析
+      '人审 Agent'的带宽问题
+      从'格式偏好'到'工作流基础设施'
+      最该使用 HTML artifact 的场景
+      可直接使用的 Prompt 模板
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 这篇文章是对 Anthropic 2026 年 5 月博客《Using Claude Code: The unreasonable effectiveness of HTML》的深度解读。文章的表层观点是 Claude Code 团队越来越喜欢用 HTML 替代长篇 Markdown，但真正的核心命题是：**当 Agent 做的事越来越复杂之后，人怎么继续看懂它、审它、接住它的中间成果。** 文章提出了"HTML artifact 作为人机协作中间层"的工作流模式，以及"Agent 输出会越来越像界面"的趋势判断。

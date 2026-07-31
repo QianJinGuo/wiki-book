@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/hiclaw-v110-k8s-hermes-worker.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("HiClaw v1.1.0 — Kubernetes 集…"))
+    核心变化
+      Kubernetes 原生架构（重大重构）
+      Hermes Worker 运行时
+      企业级 Helm Chart 部署
+      可插拔 Provider 架构
+    架构改进
+    关键技术细节
+    修复亮点
+    深度分析
+      1. Controller-Reconcile…
+      2. Hermes Worker 定位：自主编…
+      3. CRD 化资源管理：kubectl 原生…
+      4. Provider 接口与 Sidecar…
+    实践启示
+    关联概念
+    相关实体
+```
+
 ## 核心变化
 
 ```mermaid

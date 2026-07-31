@@ -18,6 +18,17 @@ Anthropic宣布与SpaceX达成合作协议，将大幅提升算力储备。
 在本次SpaceX合作协议中，双方还就开发数GW规模的轨道AI算力表达了合作意向。
 在国际布局方面，Anthropic的企业客户尤其是金融、医疗和政府等受监管行业，对本地基础设施的需求日益增加，以满足合规和数据驻留要求。与亚马逊的合作中，已包含在亚洲和欧洲新增推理算力的安排。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("突发！Anthropic拿下马斯克Colossus 1全…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Opus 47](ch01/976-claude.html)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)

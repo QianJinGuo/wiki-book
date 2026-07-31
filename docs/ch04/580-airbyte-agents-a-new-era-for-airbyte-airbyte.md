@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/airbyte-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Airbyte Agents: A New Era fo…"))
+    **The Real Reason Agent…
+    相关实体
+    深度分析
+      核心问题：模型不是瓶颈，上下文才是
+      Context Store：面向代理的数据索引
+      性能收益显著
+      产品定位：数据移动公司的进化而非转型
+    实践启示
+      1. 重新审视代理的数据架构
+      2. 关注读写双向能力
+      3. 三种集成路径按需选择
+      4. 连接器生态是核心竞争力
+```
+
 ## **The Real Reason Agents Fail**
 Until recently, the complaints about AI have always been about the models. That is no longer the case. Frontier models have improved dramatically, and keep getting better with each release. The real problem is the data feeding into these models.
 Agents are powerful, but they are not wise. To operate at their best, they need fresh context delivered in the right format and at the right time. From our experience, current ways of moving data simply aren't enough:

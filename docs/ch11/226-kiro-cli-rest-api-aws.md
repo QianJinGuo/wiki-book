@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/kiro-cli-rest-api-architecture-practice.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("将 Kiro CLI 封装为 REST API：双通道架…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 概述
 
 ```mermaid

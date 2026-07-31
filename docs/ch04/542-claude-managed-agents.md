@@ -10,6 +10,17 @@
 Anthropic's official Claude managed agents: persistent sessions, tool use, memory across conversations, enterprise SSO, agent patterns and API details.
 **Source**: [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-official.md) | **Review**: value=8 confidence=9
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Managed Agents"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude Managed Agents 官方 Harness 平台指南](../ch01/212-anthropic-claude-managed-agents.html)
 - [claude managed agents official](ch04/603-claude-managed-agents-official.html)

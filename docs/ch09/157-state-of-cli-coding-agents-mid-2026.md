@@ -6,6 +6,21 @@
 
 > **Background**: 本文基于社区博客对 2026 年中 CLI 编码代理生态系统的全面调查，涵盖 35 个活跃维护的 CLI 编码代理以及市场格局分析。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("State of CLI Coding Agents, …"))
+    概览
+    深度分析
+      终端意外胜出：IDE vs CLI 的范式反转
+      标准化阶段的战略意义
+      35 个项目的生态密度与分化方向
+    实践启示
+    历史演进
+```
+
 ## 概览
 
 截至 2026 年 7 月，已有 35 个活跃维护的 CLI 编码代理（CLI coding agents）。终端（terminal）成为了意外的赢家——2024 年的赌注在 IDE（Copilot、Cursor），但到 2026 年中，重度使用场景从 CI、SSH 和无 GUI 的机器上运行。

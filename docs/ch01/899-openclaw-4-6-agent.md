@@ -50,6 +50,15 @@ OpenClaw 的工具层设计可以用一个词概括：克制。
 
 OpenClaw 选择站在巨人肩上，而不是从头造一个更矮的巨人。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("拆解 OpenClaw 架构（五）：4 个工具原语 + …"))
+    Semantic Snapshots：浏览器交…
+```
+
 ## Semantic Snapshots：浏览器交互的数量级突破
 
 工具层里最有技术独创性的不是 Bash，而是浏览器工具。

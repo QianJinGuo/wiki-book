@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/dream-dense-retrieval-autoregressive-modeling-challengehub-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DREAM：用冻结 LLM 的自回归预测训练稠密检索器，…"))
+    核心概述
+    问题：检索器训练的标注瓶颈
+    核心方法
+      直觉
+      关键设计：注意力拆分
+      训练目标
+    为什么冻结大模型更好
+    实验结果
+    核心贡献
+```
+
 ## 核心概述
 
 DREAM (Dense Retrieval Embeddings via Autoregressive Modeling) 证明了**不需要任何人工标注的正负样本**，只凭"一篇文档能不能帮冻结大模型预测出正确答案"这一个信号，就能把稠密检索器训得很强。关键诀窍：把检索器的相似度分数注入到冻结大模型的 query-focused retrieval attention heads 中，让 NTP 损失沿注意力路径反向传播调教检索器。0.5B-8B 全规模领先。

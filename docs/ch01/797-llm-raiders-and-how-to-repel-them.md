@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-raiders-and-how-to-repel-them.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLM raiders and how to repel…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - LLMjacking 攻击趋势：23% 的恶意请求针对 AI 服务器的 LLM 能力
 - 攻击者利用被盗 API 密钥访问第三方 LLM 服务，成本比直接运行模型低 10 倍

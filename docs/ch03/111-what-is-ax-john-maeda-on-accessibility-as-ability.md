@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-11-what-is-ax.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What is AX? John Maeda on Ac…"))
+    深度分析
+      从 UX 到 AX 的范式转移
+      Erika Hall 的'对话是最古老的界面'
+      对 AI/Agent 产品设计的启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 John Maeda 在这篇文章中提出 **AX（Agent Experience / Accessibility Experience）** 概念，将"无障碍"从"为残障人士提供便利"重新定义为"面向所有人的通用能力设计"。文章通过个人体验——法兰克福对话博物馆的全黑导览、与盲人同事共事的经历——论证了一个核心命题：在 Agent 时代，传统 UX 的"驾驶舱"范式正在被 AX 的"判断界面"范式取代。这篇文章不是一篇技术文档，而是一篇设计哲学宣言，它重新定义了人机交互的核心假设。

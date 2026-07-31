@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building Blocks for Foundati…"))
+    核心摘要
+    深度分析
+      三重扩展定律的基础设施含义
+      通信瓶颈的关键性
+      Slurm vs Kubernetes 的架构取舍
+      推理框架的分化趋势
+    实践启示
+      基础设施选型决策框架
+      存储层次设计
+      资源编排选型
+      分布式训练框架选择
+    相关实体
+```
+
 ## 核心摘要
 
 ```mermaid

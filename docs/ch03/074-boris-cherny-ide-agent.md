@@ -34,6 +34,32 @@ graph TB
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/boris-cherny-ide-to-agent-console.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Boris Cherny — 从 IDE 到 Agent…"))
+    人物背景
+    核心洞察
+      1. 'coding is solved' 需…
+      2. 控制点迁移
+      3. Loop = 长驻 Agent 工作进程
+      4. SaaS 入口重排
+    Boris 原话
+    深度分析
+      从工具到范式的根本转移
+      'coding is solved' 的条件性
+      Loop 作为核心竞争力
+      Anthropic 的护城河是组织设计
+    实践启示
+      给工程师的建议
+      给组织的建议
+      给 SaaS 行业的提示
+    关联条目
+    相关实体
+```
+
 ## 人物背景
 Boris Cherny，Claude Code 创始人，Anthropic Agent 产品负责人。在 Sequoia AI Ascent 2026 上发表访谈，主题与 Karpathy 的 Software 3.0 演讲形成呼应——Karpathy 从概念层定义 Agentic Engineering，Boris 从工程实践层给出具体注脚。
 

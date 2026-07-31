@@ -6,6 +6,27 @@
 
 # 750B MoE PD 分离推理：AWS EFA vs 自建 RoCE 通信架构实战对比
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("750B MoE PD 分离推理：AWS EFA vs …"))
+    概述
+    测试配置（2P2D 分离推理）
+    Prefill 与 Decode 的通信模式差异
+      Prefill：所有高频通信走 NVLink
+      Decode：唯一高频通信是跨节点 MoE A…
+    端到端性能对比（AWS EFA vs 客户自建…
+    为什么 EFA 在 Mean 上慢 31%：U…
+      DeepEP 在 IB 上的 IBGDA（In…
+      UCCL-EP 在 EFA 上的 CPU Pr…
+      延迟量化
+    为什么 EFA 的 Max ITL 低 73%…
+    AWS 网络拓扑保障机制
+    EKS 软件栈分层实践（内核态在 AMI，用户…
+```
+
 ## 概述
 
 AWS China Blog 2026-06-12 发布的工程实战案例：将 750B GLM-5.1-FP8（256 Expert, top-k=8）MoE 模型的 PD 分离推理（2 Prefill + 2 Decode 节点，每节点 8×H200 GPU）从客户自建 ConnectX+RoCE 集群迁移到 AWS P5en+EFA，**在相同模型/架构/负载下系统对比两种高性能网络的设计哲学与端到端性能差异**。

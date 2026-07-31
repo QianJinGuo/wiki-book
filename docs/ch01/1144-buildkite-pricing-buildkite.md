@@ -6,6 +6,17 @@
 
 → 原文存档
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Buildkite Pricing | Buildkite"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Buildkite 是 CI/CD 平台，提供管道编排、测试并行化、部署自动化能力
 - 定价基于并发任务数（agents 数量）和存储/网络使用量

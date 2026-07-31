@@ -6,6 +6,21 @@
 
 # Business intelligence at scale: Key obstacles
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Business intelligence at sca…"))
+    深度分析
+    Business intelligence a…
+    Solution overview
+      Automated narrative gen…
+      Conversational AI
+    相关实体
+    相关主题
+```
+
 ## 深度分析
 
 ---

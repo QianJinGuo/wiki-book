@@ -6,6 +6,20 @@
 
 # Product Hunt 日榜第一！把任何网站变成可被 Agent 复用的技能
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Product Hunt 日榜第一！把任何网站变成可被 …"))
+    深度分析
+      从'页面操作界面'到'浏览器执行层'的抽象跃迁
+      浏览器自动化的'技能化'范式
+      与现有自动化方案的差异化定位
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 BrowserAct 是一个专门面向 AI Agent 的浏览器自动化 CLI 工具，在 2026 年 6 月冲上 Product Hunt 日榜第一。与传统的浏览器自动化方案（Playwright、Selenium、RPA）不同，BrowserAct 将"浏览器环境"本身作为 Agent 工作流的一部分，提供隐身浏览器、代理管理、Cookie/Session 隔离、人工接力点等能力，并配套 `browser-act`（执行向导）和 `browser-act-skill-forge`（技能铸造）两个 Skill 层，让 Agent 能把跑通的网站操作流程沉淀为可复用的 Skill。

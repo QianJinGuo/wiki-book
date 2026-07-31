@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/ai-can-write-code-cios-operating-model.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI can write code, but the C…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 - AI Can Write Code but CIOs Own the Operating Model

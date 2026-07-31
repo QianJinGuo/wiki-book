@@ -6,6 +6,24 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-2-12-release-blog.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("PyTorch 2.12 Release Blog – …"))
+    相关实体
+    深度分析
+      从研究框架到生产平台的演变
+      ROCm：AMD GPU 的第一等公民地位
+      torch.cond 进入 CUDA Grap…
+      torchcomms：分布式训练的重大变革即将到来
+    实践启示
+      对 AI 基础设施团队
+      对 ML 研究工程师
+      对框架开发者和贡献者
+```
+
 ## 核心要点
 - PyTorch 2.12 包含 2,926 commits from 457 contributors
 - **重大性能提升**：Batched `linalg.eigh` on CUDA 提升高达 100x

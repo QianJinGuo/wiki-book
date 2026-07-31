@@ -14,6 +14,15 @@ Building an AI agent that edits images based on natural language requires an orc
 
 This post walks through building a serverless image editor where users upload a photo, describe an edit in plain English, and receive the result in seconds. The agent runs on AgentCore harness without custom orchestration code. We deploy the full solution, including authentication, encrypted storage, three image editing tools, and a React frontend, with a single deployment command. The infrastructure is defined using [AWS Cloud Development Kit (AWS CDK)](<https://aws.amazon.com/cdk/>).
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build a serverless image edi…"))
+    Image editing application
+```
+
 ## Image editing application
 
 The application accepts prompts like “change the car color to blue” or “extend the image 200 pixels to the right.” An agent powered by [Claude Sonnet 4.6](<https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4-6.html>) breaks the requirement into a series of steps and orchestrates the tool calling, each associated with a different [Stability AI](<https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-stability-ai.html>) model. Then it executes the edit, applies a watermark using a shell command on the microVM (no token cost), and returns the result.

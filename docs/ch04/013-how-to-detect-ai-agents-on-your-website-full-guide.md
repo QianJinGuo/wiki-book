@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/detect-ai-agents-website.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Detect AI Agents on Y…"))
+    深度分析
+      从'bot or not'到意图分类的范式转变
+      隐身浏览器与本地化部署的挑战
+      CAPTCHA 已失效
+      浏览器仍是关键检测窗口
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 随着 AI Agent 大规模渗透 Web 生态，网站面临前所未有的自动化流量挑战。传统 bot 检测手段已无法有效识别基于浏览器的智能 Agent，因为它们的行为模式越来越接近真实用户。本文系统梳理了四层检测体系（身份、网络、浏览器、行为），并指出从"是否为 bot"到"意图分类"的范式转变。cside 内部测试显示，81% 的 AI Agent 可绕过传统 bot 检测平台。

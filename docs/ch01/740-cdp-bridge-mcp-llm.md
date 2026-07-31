@@ -7,6 +7,22 @@
 # CDP Bridge MCP：让 LLM 操作真实浏览器
 > CDP Bridge MCP 是一个连接 MCP 客户端与真实浏览器会话的桥接服务。它通过配套的 Chromium 扩展接入浏览器页面，让大模型客户端可以读取标签页、扫描页面、执行 JavaScript、截图、导航和读取 Cookie。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CDP Bridge MCP：让 LLM 操作真实浏览器"))
+    核心理念
+    可用工具
+    安装与配置
+    注意事项
+    项目信息
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心理念
 不同于 Playwright MCP 或 Chrome DevTools MCP 的"新开浏览器实例"模式，CDP Bridge MCP 关注的是让 LLM **直接接管用户正在使用的真实浏览器会话**：
 

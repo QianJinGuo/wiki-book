@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lessons-from-2-billion-agentic-workflows.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Lessons From 2 Billion Agent…"))
+    深度分析
+      '信任梯度'作为系统设计原则
+      确定性骨架 + Agent 判断的分离架构
+      'Intelligence is table …
+      20 亿次执行的规模信号
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 CrewAI 创始人 João Moura 基于 20 亿次 Agentic 工作流执行和多家世界 500 强企业（PepsiCo、Johnson & Johnson、PwC、AB InBev、DocuSign 等）的实战部署总结的核心经验：信任是在生产中赢得的，而非在原型中设计的；架构选择会快速复合——将可预测的确定性流程与不可预测的 Agent 推理分离是规模化关键；速度来自完整技术栈（可观测性 + 人在环路 + K8s 部署），而非更聪明的模型。

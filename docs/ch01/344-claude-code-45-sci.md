@@ -12,6 +12,21 @@
 
 该方法源自「从 Vibe Coding 到 Vibe Researching」的思路——将 coding agent 的工作流范式迁移到学术研究中。Claude Code 输出结构化论证、自动引用覆盖，展示了 AI 编程工具在非编程场景（学术写作）中的跨域能力。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 学术文献综述：45 页 SCI …"))
+    深度分析
+      1. 工具跨域迁移：从 Code Genera…
+      2.「Vibe Researching」的方法…
+      3. 文献综述是 AI 科研助手的理想切入点
+      4. 45 页产出的工程化实现路径
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### 1. 工具跨域迁移：从 Code Generation 到 Knowledge Synthesis

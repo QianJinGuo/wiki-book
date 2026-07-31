@@ -6,6 +6,22 @@
 
 # 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("让 Amazon Quick 操作飞书：构建远程 MCP…"))
+    相关实体
+    深度分析
+      核心观点
+    **一、概述**
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](../ch11/222-amazon-quick.html)

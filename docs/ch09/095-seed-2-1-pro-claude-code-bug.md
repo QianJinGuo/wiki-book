@@ -8,6 +8,21 @@
 
 本文是一次极具启发性的实战记录：作者将字节跳动最新发布的 Seed 2.1 Pro 模型（开源，主打编程能力）与 [Claude Code](../ch03/070-claude-code-agent.html) 工具结合，让该模型直接修复自己产品中的真实 bug。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("我把Seed 2.1 Pro塞进Claude Code，…"))
+    深度分析
+      模型混用的工程路径与行业意义
+      Coding Agent 场景下的模型评估方法论
+      代码风格一致性的深层价值
+      视频理解在 Coding Agent 中的潜在应用
+    实践启示
+    关联实体
+```
+
 ## 核心要点
 
 - **模型混用实践**：通过火山方舟兼容 Anthropic 协议的端点，仅需配置三个环境变量（`ANTHROPIC_BASE_URL`、`ANTHROPIC_AUTH_TOKEN`、`ANTHROPIC_MODEL`）即可在 Claude Code 框架中替换底层模型为 Seed 2.1 Pro，实现零成本模型切换

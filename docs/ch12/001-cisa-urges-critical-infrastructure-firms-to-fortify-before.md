@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐ | 11.9KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CISA urges critical infrastr…"))
+    深度分析
+      1. CI Fortify 指南的战略背景
+      2. Volt Typhoon 行动的深远影响
+      3. 隔离（Isolation）战略的核心要素
+      4. 恢复（Recovery）战略的核心要素
+    实践启示
+      对关键基础设施运营商的建议
+      对 OT 安全团队的启示
+      对政策制定者的建议
+      对安全厂商的机遇
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

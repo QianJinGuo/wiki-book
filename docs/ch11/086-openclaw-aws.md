@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/enterprise-openclaw-security-deploy-architecture-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("企业级OpenClaw安全部署架构指南 | 亚马逊AWS…"))
+    概述
+    核心技术
+    来源
+    深度分析
+      1. AI Agent 安全的范式转移：从边界…
+      2. 威胁态势的量化警示：数字背后的安全紧迫性
+      3. 纵深防御七层模型的协同逻辑
+      4. 提示注入的架构性解决方案：隔离 + 结构…
+    实践启示
+      1. 立即执行：凭证管理从'裸奔'到 Secr…
+      2. 1 个月内：建立企业私有 ClawHub…
+      3. 1 个月内：实现 3-Leg OAuth…
+      4. 立即执行：隔离执行环境——每个 Agen…
+    架构图
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

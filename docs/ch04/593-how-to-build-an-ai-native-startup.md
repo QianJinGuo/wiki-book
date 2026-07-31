@@ -6,6 +6,21 @@
 
 # How to Build an AI-Native Startup
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Build an AI-Native St…"))
+    深度分析
+      核心框架：AI 原生公司的操作系统
+      七步操作系统
+      关键洞察
+      护城河再思考
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### 核心框架：AI 原生公司的操作系统

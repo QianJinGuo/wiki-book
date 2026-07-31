@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/habby-game-aws-devops-agent.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Habby 游戏借助 AWS DevOps Agent …"))
+    深度分析
+      游戏行业 AI 运维的特殊性
+      双通道集成架构的价值
+      GitHub 集成：解决变更根因定位的最后一公里
+      多账户统一管理的架构设计
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Habby（海彼游戏）运营《弓箭传说》《弹壳特攻队》《GO！卡皮巴拉》等全球知名休闲游戏，全球数亿玩家，AWS 后端按游戏多账户管理 
 - 三大运维挑战：流量波动剧烈（版本更新、限时活动形成 24 小时波浪式负载）；多账户多服务复杂架构（EKS、Lambda、DynamoDB、ElastiCache、API Gateway 等数十种服务）；团队规模有限（数人 SRE 支撑全球运营） 

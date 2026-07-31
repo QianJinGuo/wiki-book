@@ -8,6 +8,27 @@
 
 > **Background**: 本文是 Asana 2026-06-04 发布「Agentic Work Management Platform」的产品深度报道(来源 The Letter Two),对 Asana CPO Arnab Bose 进行了独家访谈。这是 SaaSpocalypse 时代 Asana 市值腰斩后,以「work graph + 共享记忆 + 治理审计」四个支柱试图重新定义自己为「人-代理 OS」的关键产品转折。Asana 2.0 预计 2026 年夏天全面上线,所有现有客户自动获得 AI Teammate 执行配额和 Dash 访问。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Asana Agentic Work Managemen…"))
+    三个独有贡献不应合并到现有 entity
+    核心定位与背景
+      为什么做 Agentic Work Manag…
+      四个结构性优势Asana 自述,需对照竞品验证
+    产品矩阵三层架构
+      第一层:个人助理 — Asana Dash
+      第二层:下一代 AI Teammates
+      第三层:垂直应用Asana 2.0 的高价值…
+    商业背景:SaaSpocalypse 中的 A…
+    与竞品的差异化对照表
+    三个值得跟踪的开放问题
+    与现有 wiki 实体的关联
+    深度分析
+```
+
 ## 三个独有贡献(不应合并到现有 entity)
 
 1. **Work Graph 作为 context graph 的具体形态** — 不是文档/向量/KV cache,而是 18 年项目管理基础设施沉淀的「who does what, by when, why」组织记忆;Glean/Slack/ServiceNow/Atlassian 都在 2025-2026 大谈 agent context,但 Asana 的差异化是它已经把这个 context graph 提前建好了,代理只是后来者。

@@ -8,6 +8,20 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-github-aws-ai-capacity-crunch.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub + AWS 多云转折：AI 编码激增 14…"))
+    概述
+    关键数据
+    关键贡献
+    含义
+    相关主题
+    一句话定位
+```
+
 ## 概述
 
 ```mermaid

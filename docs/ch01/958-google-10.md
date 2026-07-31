@@ -10,6 +10,17 @@
 只要是订阅了 Gemini 会员的，通通可以领取，没其他要求，
 https://developers.google.com/program/my-benefits
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google 开发者福利，每月免费领取 10 美金，别忘…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Pi Mono Github](ch01/834-pi-mono-github.html)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)

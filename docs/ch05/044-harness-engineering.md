@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/harness-engineering-framework.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 概念框架"))
+    核心方程
+    Anthropic 实践
+      上下文焦虑：Compaction vs Reset
+      自评失真：Generator + Evalua…
+    OpenAI 实践
+      渐进式披露
+    LangChain 案例
+    深度分析
+    实践启示
+    第二来源: 2026 Rahul 综述 学科…
+      学科确立时间线 90 天
+      5 种 Harness 工件 Rahul 框架
+      操作系统类比 Philipp Schmid
+      3 阵营对比 撞同一堵墙, 搭出三种梯子
+    相关实体
+```
+
 ## 核心方程
 
 - Agent = Model + Harness

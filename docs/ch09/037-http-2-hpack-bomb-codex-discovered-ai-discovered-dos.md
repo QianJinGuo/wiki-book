@@ -8,6 +8,24 @@
 
 > **Source**: Calif.io disclosure 2026-06-02 by Quang Luong, Jun Rong, Duc Phan. Attack discovered by OpenAI Codex from public fix commits. Affects nginx, Apache httpd, Microsoft IIS, Envoy, Cloudflare Pingora in default configuration. 880,000+ vulnerable websites per Shodan.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("HTTP/2 HPACK Bomb — Codex Di…"))
+    三个独有贡献（不应合并到现有 entity）
+    Attack Anatomy
+      Component 1: HPACK Inde…
+      Component 2: HTTP/2 Win…
+    Why the Classic Defense…
+    Impact
+    Disclosure Timeline
+    Mitigations
+    Historical Lineage
+    Significance: AI-Driven…
+```
+
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **AI-as-vulnerability-discoverer (Codex)** — First major security disclosure where the attack chain was discovered end-to-end by an AI coding model reading public fix commits. Signals a regime change in commit-to-exploit windows (weeks → minutes).

@@ -6,6 +6,18 @@
 
 # Intelligence Per Dollar
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Intelligence Per Dollar"))
+    概要
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概要
 
 Published Time: 2026-06-03T00:00:00Z

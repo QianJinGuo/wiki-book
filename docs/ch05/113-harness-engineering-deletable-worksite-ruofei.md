@@ -6,6 +6,21 @@
 
 # Harness Engineering Deletable Worksite Ruofei
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering Deletabl…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [harness engineering 的未来——什么会消失，什么不会](ch05/120-harness-engineering.html)

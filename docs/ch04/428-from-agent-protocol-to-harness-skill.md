@@ -6,6 +6,21 @@
 
 → （无原始来源）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("From Agent Protocol to Harne…"))
+    核心内容
+      协议层：MCP 与 A2A
+      技能层：Harness Skill Archi…
+      演进路径
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心内容
 ### 协议层：MCP 与 A2A
 **MCP (Model Context Protocol)**

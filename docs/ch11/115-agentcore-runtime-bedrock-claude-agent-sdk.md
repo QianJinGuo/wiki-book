@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/easy-deployment-of-claude-agent-sdk-in-production.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快时尚电商行业智能体设计思路与应用实践（五）借助 Age…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+      1. AgentCore Runtime 的 …
+      2. Claude Agent SDK 的生产…
+      3. Bedrock 跨区域推理的全球化部署策略
+      4. 从本地到生产的无缝迁移路径与最小改造成本
+    实践启示
+      1. 优先采用 Global CRIS 进行全…
+      2. 利用 8 小时执行窗口设计长时任务架构
+      3. 利用框架无关性进行渐进式技术选型
+      4. 使用 AgentCore Starter…
+```
+
 ## 概述
 
 ```mermaid

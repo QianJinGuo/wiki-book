@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 10.7KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google's Gemini Omni video m…"))
+    事件经过
+      意外泄露与 A/B 测试
+      初步用户反馈
+    产品定位分析
+      Nano Banana 模式的视频复刻
+      分级发布策略
+      作为 Agent 的定位
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Google Gemini Omni 视频模型在 2026 年 5 月 I/O 大会前夕意外泄露，Reddit 用户截获了更新后的 Gemini 界面中的模型卡片
 - 核心定位：**视频编辑能力**而非纯生成质量——去水印、对象替换、场景重写等编辑功能是其差异化重点

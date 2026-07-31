@@ -10,6 +10,17 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 > “  我现在相信，我们正生活在 AI 研究将被端到端自动化的时代。
 这篇文章发在他的 Newsletter「Import AI」第 455 期，标题直接挑明了主题：  ** AI 系统即将开始自我构建。  **
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 联创：2028 年实现 AI 自我构…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)

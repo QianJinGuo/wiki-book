@@ -6,6 +6,22 @@
 
 # DeepSeek V4 Flash & Pro: Million-Token Context and Trillion-Parameter Inference
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek V4 Flash & Pro: Mil…"))
+    相关实体
+    深度分析
+      1. 混合注意力机制：CSA + HCA 的双…
+      2. mHC：万亿规模训练的稳定性保障
+      3. Muon 优化器：二阶梯度信息的复兴
+      4. 1M 上下文的工程含义：从'炫耀性参数'…
+    实践启示
+    关联实体
+```
+
 ## 相关实体
 
 - [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](../ch03/035-agent.html)

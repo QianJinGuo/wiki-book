@@ -8,6 +8,17 @@
 
 > **Background**: Based on the AWS ML Blog article "Deploying Kimi K3 on AWS" (2026-07-27), covering the deployment of Moonshot AI's 2.8T parameter MoE model on AWS infrastructure via SageMaker HyperPod and EKS.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Deploying Kimi K3 on AWS"))
+    Model Overview
+    Infrastructure Requirem…
+    Relationship to Other K…
+```
+
 ## Model Overview
 
 ```mermaid

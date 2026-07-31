@@ -8,6 +8,24 @@
 
 > **Background**: Poolside 发布了 Laguna XS 2.1，一个 33B 总参数（3B 激活/词元）的 MoE 模型，专为 Agentic Coding 和长周期本地编码任务设计。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Poolside Laguna XS 2.1: 33B …"))
+    架构与基准
+    部署与生态
+    深度分析
+      1. MoE 架构的高效激活比是本地编码代理的…
+      2. 专注 Agentic Coding 基准…
+      3. 开源 DFlash Speculator…
+      4. 完全宽松许可与差异化定价策略
+    实践启示
+    wiki 定位
+    相关实体
+```
+
 ## 架构与基准
 
 - 33B 总参数，3B 激活参数/词元（MoE）

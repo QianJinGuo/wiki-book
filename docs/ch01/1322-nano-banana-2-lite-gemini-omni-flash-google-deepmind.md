@@ -10,6 +10,19 @@
 
 > ⚠️ 产品公告：本文基于 Google DeepMind 官方产品发布博客整理，内容以产品能力和平台可用性为主，包含 benchmarks 和架构改进信息。作为产品方自报数据，未独立验证 benchmark 结果。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Nano Banana 2 Lite 与 Gemini …"))
+    Nano Banana 2 Lite
+    Gemini Omni Flash
+    平台可用性
+    与 Gemini Omni 系列的关系
+    安全
+```
+
 ## Nano Banana 2 Lite
 
 Nano Banana 2 Lite（gemini-3.1-flash-lite-image）是 Nano Banana 家族中最快、最具成本效益的图像模型，专为高吞吐、高速度和规模化设计。相比 Nano Banana 2，推理速度提升 2 倍以上，成本降低 50%。

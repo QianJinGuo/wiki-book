@@ -6,6 +6,21 @@
 
 # Stealing Passwords via HTML Injection Under a Strict CSP
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stealing Passwords via HTML …"))
+    深度分析
+      CSP 的安全边界被重新定义
+      密码管理器的设计缺陷
+      Referer 策略规范的实现不一致
+      对 Web 安全评估的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

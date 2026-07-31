@@ -10,6 +10,19 @@
 
 Novel research/architecture for GPT-5.6 model family with detailed system card including safety evaluations, capability benchmarks (cybersecurity, biological risk), and mitigation strategies. High technical depth with specific claims, data, and verifiable sources (OpenAI Deployment Safety Hub). Value*confidence=81 >= 49 and stars=5, so ingest is true.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5.6 Preview System Card …"))
+    Content Summary
+    1. Introduction
+    第 2 来源 — 夕小瑶科技说：GPT-5.6…
+    第 3 来源 — AGI Hunt：GPT-5…
+    第 4 来源 — 夕小瑶科技说：实测 GPT-…
+```
+
 ## Content Summary
 
 Markdown Content:

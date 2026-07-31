@@ -8,6 +8,30 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent Skill 互优化实验：Ski…"))
+    背景：为什么需要 Skill 互优化
+    核心实验设计
+      三框架 Skill 接口对齐
+      交叉变异策略
+      闭环反馈机制
+    深度分析
+      三种 Skill 范式的根本差异
+      交叉适配层的设计原则
+      互优化带来的涌现能力
+      与 Skill Hub 治理的关联
+    实践启示
+      1. 跨框架 Skill 互操作是可行的，但需…
+      2. 异构交叉比同构交叉更容易产生涌现能力
+      3. 闭环适应度评估是互优化的核心
+      4. 互优化结果应纳入 Skill Hub 的…
+    相关实体
+```
+
 ## 摘要
 
 本文报道了 Hermes Agent 生态中一项跨框架 Skill 互优化实验：将 **SkillEvolver**（自适应 Skill 演进框架）、**Darwin Skill**（ Darwin 架构衍生的结构化 Skill 范式）与 **EmbodiSkill**（具身技能规范）三类不同来源的 Skill 置于同一闭环系统中进行交叉优化。实验旨在验证不同设计哲学的 Skill 之间能否通过统一接口实现互操作，以及互优化是否能产生单框架内无法达成的涌现能力。核心发现：三类 Skill 在工具调用模式、上下文边界处理和失败恢复策略上存在显著差异，但通过交叉适配层可实现 23% 的综合任务质量提升。

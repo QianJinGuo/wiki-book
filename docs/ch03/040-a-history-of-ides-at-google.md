@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐ | 5.5KB | `entities/a-history-of-ides-at-google.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A History of IDEs at Google"))
+    A fragmented ecosystem
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## A fragmented ecosystem
 Like in many companies, engineers at Google have been able to pick their IDE of choice, and this resulted in a lot of fragmentation. In 2011, some of the most senior engineers were asked a question: "Is there a way to get a good uniform IDE for all Googlers?" The answer was essentially "No". Among others, [Jeff Dean](https://en.wikipedia.org/wiki/Jeff_Dean) replied:
 

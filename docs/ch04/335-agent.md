@@ -8,6 +8,21 @@
 从微信文章 [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-开发范式演进从环境工程出发简化多源实时上下文.md) 提取。
 source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 开发范式演进：从环境工程出发，“简化”多源实…"))
+    相关实体
+    深度分析
+      信息完备性 → 感知层基建
+      统一 Catalog → 消费层治理
+      知识 Wiki → 对账层机制
+      制品化发布 → 变更治理层
+    实践启示
+```
+
 ## 相关实体
 > ai agent platforms topic map（已删除）
 

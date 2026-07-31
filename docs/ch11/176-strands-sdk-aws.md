@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于Strands SDK 构建的企业智能问数解决方案实…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 概述
 
 ```mermaid

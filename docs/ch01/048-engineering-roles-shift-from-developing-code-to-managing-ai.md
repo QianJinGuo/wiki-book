@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐ | 8.1KB | `entities/engineering-roles-shift-from-developing-code-to-ma.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Engineering roles shift from…"))
+    深度分析
+      一、从「代码生产者」到「AI 产出管理者」——…
+      二、「看不见的工作」——度量体系的盲区
+      三、绩效评价的信任危机
+      四、AI 工程作为独立工种的形成
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 年 Harness《The State of Engineering Excellence 2026》报告揭示了 AI 辅助编程对工程团队的深远影响：81% 的工程领导者表示 AI 节约的时间被重新用于审查 AI 生成的代码，工程师近三分之一的工作日消耗在「不可见工作」上——这些产出并不体现在传统的生产力指标中。报告指出，工程角色正在从「写代码」向「管理 AI 系统」发生结构性转变。

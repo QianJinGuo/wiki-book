@@ -10,6 +10,17 @@ Consider the following thought experiment. Imagine you have access to a large co
 Now, let's consider two training scenarios:
 1. The first scenario involves training a standard LLM on this corpus through the typical autoregressive next-word prediction method used by contemporary models.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stochastic Parrot Thought Ex…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Stochastic Parrot Thought Experiment](ch01/915-stochastic-parrot-thought-experiment.html)
 - [While Breathless In Stodgy Viridian](ch01/529-while-breathless-in-stodgy-viridian.html)

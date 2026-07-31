@@ -8,6 +8,18 @@
 
 > **Background**：本文基于 AWS Machine Learning Blog 的一篇技术指南，介绍了在 AWS 上构建可解释的下一个最佳产品（NBP）推荐系统的架构设计和实现。内容涵盖数据管道、模型架构、训练推理全链路。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build an explainable next-be…"))
+    核心架构
+    技术栈
+    数据管道
+    关键设计决策
+```
+
 ## 核心架构
 
 ```mermaid

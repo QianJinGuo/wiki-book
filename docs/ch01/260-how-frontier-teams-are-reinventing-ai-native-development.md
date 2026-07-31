@@ -8,6 +8,33 @@
 
 > **TL;DR**：AWS 副总裁 Swami Sivasubramanian（Agentic AI）总结亚马逊内部数百个工程团队实验，提炼出 **3 条 AI-native 路径**（pathfinder / structured sprint / in-situ）和 **5 条 frontier team 共同实践**。核心论点是：AI 编码工具普及后真正分胜负的是 **workflow 重构**——不是工具，而是「降低 agent 获得上下文的门槛、扩大 agent 独立工作的覆盖面」。代表性数据：6 工程师 76 天交付原计划 30 人 12-18 个月的项目，commit velocity 从 2/周提升到 40/周，25/50 团队实施新工具+新实践比仅添加工具的生产率增益高 4.5-10x。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Frontier Teams Are Reinv…"))
+    三个独有贡献（不应合并到现有 entity）
+    三条 AI-native 开发路径
+      1. Pathfinder Initiativ…
+      2. Structured Sprint（结构…
+      3. In-situ Experiment（原…
+    五步 Frontier Team 共同实践
+      1. 投资 agent context
+      2. 慢下来才能加速（slow down to…
+      3. Feed agents not baby…
+      4. Make intent explicit…
+    与现有 entities 的差异化
+    深度分析
+      核心洞察：工具不是瓶颈，workflow 才是
+      技术要点：3 因子乘法模型是 frontier…
+      技术要点：In-situ 对照实验揭示 pra…
+      技术要点：Agent context inve…
+    实践启示
+    局限与未覆盖
+    上线状态 / 链接
+```
+
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **亚马逊内部 pathfinder / structured sprint / in-situ 三种结构化实验路径**——这是首次在公开 AWS 博客中给出 **完整 3 路径 + 真实数据** 的对比，每条路径都有 Amazon 内部团队名（Bedrock inference engine / Prime Video Financial Systems / Amazon Stores / Perfect Order Experience / WW Grocery）。与现有 entities（如 [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/295-amazon-bedrock.html) 偏技术产品、`long-running-agent-*` 偏长时执行）形成**互补**：本文偏 **组织级 AI 重构**，不是产品或 agent loop。

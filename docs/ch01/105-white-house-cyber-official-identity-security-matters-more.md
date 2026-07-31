@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/white-house-federal-identity-security-ai.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("White House cyber official: …"))
+    相关实体
+    深度分析
+      核心论点：身份安全仍是 AI 时代的底层逻辑
+      AI 带来的攻击范式转变
+      防御启示：从防入侵到容灾重建
+    实践启示
+      对联邦机构
+      对企业组织
+      技术判断
+```
+
 ## 核心要点
 - AI 攻击工具花样翻新，但突破口仍是薄弱的身份认证与凭证管理
 - 即使进入 AI 时代，攻击者仍需先获取网络入口，身份安全是第一道防线

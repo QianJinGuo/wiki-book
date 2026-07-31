@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nemotron-3-5-content-safety-multimodal.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Nemotron 3.5 Content Safety:…"))
+    深度分析
+      1. '可定制'为什么是企业级内容安全的核心命题
+      2. 推理轨迹：把'黑盒分类器'变成'可审计决…
+      3. 多模态融合：内容安全的下一道战线
+      4. 多语言覆盖：全球化部署的工程现实
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 NVIDIA 与 Hugging Face 联合发布 Nemotron 3.5 Content Safety 模型——一套面向全球企业的多模态（文本 + 图像）内容安全解决方案。核心差异化在于**可定制策略**、**多语言覆盖**、**推理轨迹（reasoning traces）输出**与**企业级延迟基准**。模型托管在 Hugging Face，并通过 NVIDIA NIM 提供企业级部署通路。

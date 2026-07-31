@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentEval：YAML驱动的Agent评测框架"))
+    核心问题
+    关键指标：pass@k vs pass^k
+    评分器体系
+    CI/CD 集成
+    缓存机制
+    A/B 对比
+    扩展接口
+    实现细节
+```
+
 ## 核心问题
 传统测试金字塔（单元测试 → 集成测试 → E2E 测试）覆盖不了 Agent 的核心质量问题：
 1. **非确定性**：同一 prompt 跑两次结果可能不同，无法用断言判定

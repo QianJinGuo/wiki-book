@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("把 OpenClaw 从个人助手变成客服：一次信任模型的…"))
+    概述
+    核心技术
+    来源
+    深度分析
+      信任模型的根本性翻转
+      四层隔离机制的协同设计
+      软约束与硬约束的互补关系
+      知识注入的静态-动态分离架构
+    实践启示
+      对 AI Agent 开发者
+      对企业安全团队
+      对架构师
+      对产品经理
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

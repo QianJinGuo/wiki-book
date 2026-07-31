@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/garry-tan-yc-ceo.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Garry Tan"))
+    核心经历
+    核心概念
+      Token Maxxing（Token 极大化）
+      Thin Harness, Fat Skills
+      Claude + Codex 双AI协作
+      400倍代码产出
+    未来判断
+    深度分析
+      Token经济学的范式转变
+      '时间亿万富翁'背后的生产关系重构
+      Thin Harness的工程哲学
+      双AI协作的认知分工
+    实践启示
+      1. 建立Token预算意识
+      2. 实践'薄框架、厚技能'
+      3. 采用双AI评审机制
+      4. 设定明确的测试覆盖率标准
+    相关实体
+```
+
 ## 核心经历
 - 2008年创立 **Posterous**（邮件博客，全球前200网站），被Twitter以约$20M收购
 - 2025年1月重写Posterous第三次（改名Garry's List），花费$200（Claude Code Max账号）+ 5天 vs 原来$4M + 6人 + 18个月

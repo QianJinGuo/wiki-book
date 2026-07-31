@@ -6,6 +6,27 @@
 
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy's Autoresearch foun…"))
+    概述
+    正文要点
+    深度分析
+      1. Autoresearch 的领域迁移：从…
+      2. Campaign-Lane-Hypoth…
+      3. toTimeZone 导致 Cl…
+      4. AI Agent 作为'去偏见探测器'：…
+    实践启示
+      1. 为 Autoresearch 性能调查准…
+      2. 用 Campaign-Lane 结构将开…
+      3. 将 EXPLAIN PLAN inde…
+      4. 构建从 system.query_lo…
+    相关实体
+```
+
 ## 概述
 
 Newsletter 评分 8×9=72，stars=4，来源 URL: https://posthog.com/blog/karpathy-autoresearch-query-engine-bug

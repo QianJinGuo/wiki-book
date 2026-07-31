@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/forward-networks-predict-network-verification.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Forward launches Predict to …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 ```mermaid

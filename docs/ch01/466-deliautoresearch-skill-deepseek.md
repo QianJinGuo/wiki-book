@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 9.1KB | `entities/deli-auto-research-skill-deepseek.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeliAutoResearch SKILL：DeepS…"))
+    核心价值
+    核心贡献一：三轴统一分类框架
+    核心贡献二：五大方法类别系统分析
+    核心贡献三：自我改进收敛条件形式化
+    核心贡献四：六个开放挑战
+    与其他自主研究框架的关系
+    深度分析
+    实践启示
+```
+
 ## 核心价值
 
 DeliAutoResearch SKILL 是 DeepSeek 研究员陈德里（Deli Chen）搭建的**自主科研智能体框架**。第二篇论文（2026-05）验证了框架的自我进化能力：随着 SKILL 迭代，交互轮数下降、总 token 消耗上升、同行评审分数从 6 分升至 8 分。这是自动科研工作流走向更高自主性的信号。

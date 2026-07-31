@@ -10,6 +10,21 @@
 > **来源**: https://mp.weixin.qq.com/s/6QgldL0W5kMDTLj-lq28Vg
 > **发布**: 阿里技术 (2026-07-13)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("上交 x 阿里：闭眼先学动作 VLA"))
+    深度分析
+      解耦式学习的理论基础：为什么「闭眼先学动作」有效？
+      语言-动作先验的跨场景可迁移性
+      LA pretraining 与 VLA pr…
+      视觉扰动鲁棒性的突破
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 LA4VLA（Learning to Act without Seeing via Language-Action Pretraining）由上海交通大学与阿里巴巴联合提出，核心思想是将 Language-Action Pretraining 从标准 VLA（Vision-Language-Action）Pretraining 中显式解耦出来，作为一种独立的预训练信号。研究诊断发现：标准 VLA 训练中语言监督被视觉-动作信号淹没，模型看似在根据语言执行指令，实则高度依赖视觉-动作捷径。LA4VLA 在无视觉输入设置下让模型先学习语言指令如何约束连续动作轨迹，再结合标准 VLA 训练。在 MetaWorld 上达 87.53% 成功率（+17.8%），LIBERO 上达 96.28%（+3.4%），真实机器人平均成功率从 38.3% 提升至 83.3%（+45%），视觉扰动下从 27.5% 提升至 70.0%（+42.5%）。项目开源在 github.com/MINT-SJTU/LA4VLA。

@@ -8,6 +8,28 @@
 
 阿里云开发者王砚舒系统总结了 SDD（Spec-Driven Development）方法论，包含5人7天交付案例、四阶段模型、三文件体系、好Spec六要素、工具生态对比及硬数据验证。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Spec-Driven Development (SDD…"))
+    核心案例：5人7天干完20人数周的活
+    什么是 SDD
+    SDD 四阶段模型
+    三文件体系（GitHub Spec Kit）
+      好 Spec 六要素
+      粒度检验标准
+    工具生态对比
+    数据验证
+    深度分析
+      SDD 与 Vibe Coding 的本质差异…
+      Spec 作为共享心智模型（Shared Me…
+      SDD 在 Agent Teams 中的扩展
+      为什么 Vibe Coding 仍然不可替代
+    实践启示
+```
+
 ## 核心案例：5人7天干完20人数周的活
 
 团队使用 Qoder 与 SDD 方法，在 7 天内交付了 QoderWork 产品，完成了传统需要 20 人数周的工作量。核心洞察是 **DAY 0 的 Spec 编写决定了整个项目的成败**——Spec 是锚点，效率源于 Spec 约束下的人机协作没有失控。

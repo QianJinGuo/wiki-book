@@ -6,6 +6,21 @@
 
 # The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The 2026 State of AI Traffic…"))
+    深度分析
+      1. AI-Powered Bot Traff…
+      2. Credential Stuffing …
+      3. Ad Fraud 的 AI 复杂度升级
+      4. Defense Automation：A…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 HUMAN Security 于 2026 年 6 月 2 日发布的《2026 年 AI 流量与网络威胁基准报告》（The 2026 State of AI Traffic & Cyberthreat Benchmark Report）是首份系统性分析 AI 技术如何重塑网络攻防格局的研究报告。报告基于 100+ 组织的基准测试数据，揭示了四个核心趋势：AI 驱动的 Bot 流量能够借助大语言模型规避传统检测、凭证填充攻击借助 AI 变得更加精准和个性化、AI 生成虚假用户行为使广告欺诈达到新复杂度水平，以及防御侧同步出现 AI 驱动的自动化安全系统。该报告为 CISOs 和反欺诈团队提供了可操作的威胁情报与防御建议，标志着网络安全行业正式进入 AI vs. AI 的对抗时代。

@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 15.3KB | `entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Managed Agents 新更新\"专…"))
+    架构边界：brain 与 hands 的分离
+    Self-Hosted Sandboxes 的…
+    MCP Tunnels：私有工具的网络可达性
+    与 5 月 6 日更新的互补关系
+    社区质疑的回应进度
+    与其他 Agent 工具的定位差异
+    验证框架：不要先看功能够不够多
+    深度分析
+      1. Brain/Hands 分离架构正在成为…
+      2. Self-hosted Sandbox …
+      3. MCP Tunnel 将工具治理问题从隐…
+      4. Anthropic 的两次更新揭示了企业…
+```
+
 ## 架构边界：brain 与 hands 的分离
 
 2026 年 4 月 8 日 Anthropic 工程博客文章 *Scaling Managed Agents: Decoupling the brain from the hands* 已经阐明了这个方向——将 Claude Managed Agents 拆解为 session、harness、sandbox 三个抽象层次。5 月 18 日的更新把这个架构真正产品化：

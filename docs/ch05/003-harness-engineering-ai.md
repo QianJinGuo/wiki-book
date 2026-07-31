@@ -34,6 +34,25 @@ graph TB
 
 > 📊 Level ⭐⭐ | 37.1KB | `entities/harness-engineering.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering：AI 从"聪明"…"))
+    核心命题
+    三大工程缺陷
+    AI 工程三代进化
+    六层架构
+      信息层
+      执行层
+      反馈层
+    核心运营逻辑：用错误喂养规则库
+    七大反模式
+    分级决策树
+    成本模型
+```
+
 ## 核心命题
 **AI 不缺能力，缺的是一套让它不翻车的系统。**
 核心公式：`Agent = Model + Harness`

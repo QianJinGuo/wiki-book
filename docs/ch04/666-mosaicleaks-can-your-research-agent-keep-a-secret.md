@@ -6,6 +6,20 @@
 
 # MosaicLeaks: Can your research agent keep a secret?
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MosaicLeaks: Can your resear…"))
+    核心问题
+    MosaicLeaks Benchmark
+    PAPO：隐私感知策略优化
+    与现有 Agent 安全实体的关联
+    独特价值
+    元信息
+```
+
 ## 核心问题
 
 深度研究 Agent（Deep Research Agents）在执行多步查询时，会将用户的私密信息暴露在查询链路中。MosaicLeaks 研究首次系统量化了这一隐私风险。

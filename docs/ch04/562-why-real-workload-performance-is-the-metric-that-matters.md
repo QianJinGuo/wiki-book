@@ -8,6 +8,17 @@
 
 > Source: [Why Real Workload Performance is the Metric that Matters](https://www.snowflake.com/en/blog/engineering/measuring-real-workload-performance) | Score: v*c=56
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Why Real Workload Performanc…"))
+    Overview
+    Defining the problem: W…
+    Four questions to ask a…
+```
+
 ## Overview
 
 Published Time: 2026-06-25T16:39:29.676Z

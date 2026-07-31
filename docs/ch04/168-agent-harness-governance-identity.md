@@ -10,6 +10,25 @@
 
 > **来源**：CrewAI Blog（blog.crewai.com），发布于 2026-04-02，原文链接：[You're building agent security in the wrong order](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/youre-building-agent-security-in-the-wrong-order.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 安全三步法：先 Harness、再 Gove…"))
+    现象：所有人都在解第 3 步
+    错位序列：Fortune 500 的典型失败
+    正确序列：三步依次
+      第 1 步：Harness（基础）
+      第 2 步：Governance（架构而非合规…
+      第 3 步：Identity and Auth…
+    为什么大家把顺序搞反了
+    给客户的建议（来自 CrewAI）
+    与 wiki 现有实体的差异化
+    实践启示（5 条可执行项）
+    与相关 entity 的关系
+```
+
 ## 现象：所有人都在解第 3 步
 
 2 周内 Agent 安全市场爆发：

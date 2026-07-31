@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/funnel-builder-flaw-under-active-exploitation-enables-woocom.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Funnel Builder 漏洞正被利用于 WooCo…"))
+    事件概述
+    技术细节
+      攻击向量
+      攻击手法
+    处置建议
+    相关实体
+    时间线
+    深度分析
+    实践启示
+```
+
 ## 事件概述
 
 ```mermaid

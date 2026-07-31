@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinkst-package-proxy-supply-chain-security.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Thinkst Package Proxy: Suppl…"))
+    深度分析
+      10 天窗口的安全博弈论
+      代理模式 vs 包装器模式
+      Agent 时代的供应链风险放大
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

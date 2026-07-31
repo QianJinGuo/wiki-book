@@ -13,6 +13,21 @@
 **Tags:** newsletter, ai, model, cognition, reinforcement-learning, coding, agent
 **Ingested:** 2026-07-09 18:59 UTC
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SWE-1.7: Frontier Intelligen…"))
+    深度分析
+      1. RL 训练稳定性的关键突破
+      2. 跨洲多集群 RL 训练架构
+      3. 容错设计的工程智慧
+      4. 自压缩与交替长度惩罚
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 SWE-1.7 是 Cognition 公司基于 Kimi K2.7 基座训练的最新编程智能模型，专注于在较低成本下实现前沿级代码智能。该模型通过大规模强化学习（RL）训练，在编码基准 FrontierCode 1.1 Main 上达到 42.3% 的通过率，接近 GPT-5.5（43.0%）和 Opus 4.8（46.5%），显著超越其基座模型 Kimi K2.7 Code（30.1%）。SWE-1.7 的核心创新包括：通过 top-p 采样重放（Sampling Distribution Replay）保持熵值稳定、跨三大洲的多集群训练架构、用于长周期任务的智能自压缩（Self-Compaction）机制，以及严格的数据质量流水线。模型现已集成到 Devin 平台，通过 Cerebras 以 1000 TPS 提供服务。

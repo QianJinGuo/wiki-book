@@ -8,6 +8,28 @@
 
 > **Background**: Google Blog, 2026-06-25. Google introduces native computer use capabilities in Gemini 3.5 Flash, enabling the model to interact with UI elements, click buttons, type text, and navigate applications autonomously.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing computer use in …"))
+    Core Capabilities
+      What Is Computer Use?
+      Architecture
+      Key Technical Details
+      Use Cases
+    Comparison with Other C…
+    Implications for Agent/…
+    深度分析
+      原生多模态 vs 工具化的 Computer …
+      从 API 优先到 UI 自动化的 Agent…
+      错误恢复能力的关键性
+      安全沙箱的必要性
+    实践启示
+    Related
+```
+
 ## Core Capabilities
 
 ### What Is Computer Use?

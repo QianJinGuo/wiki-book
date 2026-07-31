@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schemaflow-agentic-database-sql-generation-openai-cookbook.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SchemaFlow: Agentic Database…"))
+    深度分析
+      五阶段流水线架构
+      PDF RAG Context
+      Promptfoo 评估护栏
+      与单 Prompt 范式的对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 OpenAI 官方 Cookbook 的 SchemaFlow 合作伙伴案例，展示了一个**生产级 agentic workflow 的完整架构**：从 PDF 文档 RAG 检索、5 阶段 staged 任务拆分、SQL 生成、变更影响分析到 Promptfoo 评估护栏。这是 OpenAI 在 agent harness engineering 上的范本演示——不是单次 LLM 调用，而是 5 个独立 stage 串起来的工程化系统，每个 stage 有独立的 Pydantic 强类型输出校验和可观测性。

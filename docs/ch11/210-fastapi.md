@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/fastapi-auth-rate-limit-zero-downtime.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FastAPI 生产级认证与限流实战"))
+    核心洞察
+    关键要点
+    与现有知识库内容的关联
+    原始存档
+    相关实体
+    元数据
+    深度分析
+      认证架构的核心矛盾
+      限流算法的工程权衡
+      零停机部署的三层保障
+    实践启示
+      立即可落地的行动项
+      架构演进建议
+      常见陷阱清单
+```
+
 ## 核心洞察
 
 ```mermaid

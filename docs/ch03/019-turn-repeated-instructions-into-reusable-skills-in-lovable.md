@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐ | 8.0KB | `entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Turn repeated instructions i…"))
+    深度分析
+      1. Skills 的本质价值：消除重复摩擦
+      2. Description 设计是技能系统的…
+      3. Skills 的可组合性与'聚焦优于大而全'
+      4. 渐进式细节加载架构
+    实践启示
+    典型 Skill 示例解析
+      design-system
+      fresh-eyes-review
+      landing-page-copy
+    相关实体
+```
+
 ## 核心要点
 - **AI agent 的记忆缺失问题**：当前 AI agents 都是通才（generalists），每次打开 Lovable 都不记得用户的工作方式、 conventions 和风格，需要反复解释相同内容
 - **Skills 是可复用的指令集**：Skills 解决"重复解释"问题——写一次，AI 在相关任务时自动调用，用户停止重复自己

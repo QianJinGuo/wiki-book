@@ -8,6 +8,25 @@
 
 > **背景**：2026-06-17 AWS 发布 AgentCore 平台更新，引入三大知识层接入（组织/世界/付费）与持续学习能力，是 AgentCore 从"managed harness"向"agent economy infrastructure"演进的里程碑。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock AgentCore: 知识…"))
+    三大知识层架构
+      组织知识层：Bedrock Managed K…
+      世界知识层：Web Search on Age…
+      付费知识层：AgentCore payment…
+    三个独有贡献（不应合并到现有 entity）
+    持续学习与生产可观测性
+      最危险的失败模式
+      修复策略
+    与现有 AgentCore Harness…
+    关键引用
+    相关主题
+```
+
 ## 三大知识层架构
 
 AgentCore 通过三层知识架构扩展 agent 的可达性：

@@ -12,6 +12,34 @@
 >
 > **架构判断**: 正确问题不是 "Claude Code or Hermes", 而是 "你的问题的**生命周期单元**是什么?"
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code vs Hermes — Sess…"))
+    6 维对比表 核心
+    Claude Code: 工程师, 不是员工
+      关键特性
+      Routines: 触发方式扩展, 不改根本生…
+      强项场景 希望系统有明确边界
+    Hermes: Runtime, 不是助手
+      关键架构
+      关键组件 源码视角
+      /goal 命令 哲学差异最显著功能
+      Runtime 能力栈
+    容易踩的坑: 错配思维
+      错配 1: 用 Claude Code 思维用…
+      错配 2: 用 Hermes 思维用 Clau…
+      Operating Contract 模板 …
+    '土问题' 选型决策 可立即应用
+    Harness 系列 → Persistent…
+      Harness 系列 单 repo / 单 …
+      Persistent Runtime 系列 …
+    结尾: 先问生命周期, 再问工具
+    与其他对比实体的关系
+```
+
 ## 6 维对比表 (核心)
 
 | 维度 | Claude Code | Hermes |

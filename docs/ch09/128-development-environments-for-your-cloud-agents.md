@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/development-environments-for-your-cloud-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Development environments for…"))
+    深度分析
+      云端 Agent 环境的核心价值
+      多 Repo 环境：企业级开发的关键基础设施
+      Dockerfile 配置化的安全与效率平衡
+      Agent 主导的环境配置流程
+    实践启示
+      对开发团队
+      对平台/基础设施团队
+      对 Agent 开发/调试场景
+    相关实体
+```
+
 ## 核心要点
 - Sentry Seer Agent：利用 LLM 在 Sentry 内直接回答开发者问题
 - 将调试工作流从人工排查转变为自然语言问答

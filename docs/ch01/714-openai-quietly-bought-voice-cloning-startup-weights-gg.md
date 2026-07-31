@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/openai-quietly-bought-voice-cloning-star.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI Quietly Bought Voice-…"))
+    深度分析
+      1. 交易本质：不是 acqui-hire，是…
+      2. 能力已商品化，约束力在目录
+      3. IPO 前的 IP 风险管理
+      4. Realtime API 的合规包装
+    实践启示
+      对 AI 从业者
+      对法律/政策观察者
+      对内容创作者和艺人
+    相关实体
+```
+
 ## 核心要点
 - OpenAI 收购了语音克隆初创 Weights.gg（6人团队 + 全部知识产权），交易金额未披露 
 - Weights.gg 的 Replay 目录曾托管 Taylor Swift、Samuel L. Jackson、Trump 等名人语音模型，服务已于 2026 年 3 月 31 日关闭 

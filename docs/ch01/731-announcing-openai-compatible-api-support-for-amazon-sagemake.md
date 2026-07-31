@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Announcing OpenAI-compatible…"))
+    相关实体
+    深度分析
+      技术架构层面
+      Bearer Token 认证机制
+      多模型托管的 Inference Compon…
+      与现有生态的集成路径
+    实践启示
+      迁移策略建议
+      安全实施要点
+      成本优化考量
+      适用场景判断
+```
+
 ## 核心要点
 
 - AWS SageMaker AI Endpoints 新增 OpenAI 兼容 API，支持直接迁移现有 LLM 应用

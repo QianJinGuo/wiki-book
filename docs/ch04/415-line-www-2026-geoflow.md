@@ -9,6 +9,26 @@
 > **来源**：机器之心。唐建博士 2015 LINE 论文获 WWW 2026 Test of Time Award，其技术路径从网页图嵌入一路演进至 AI 蛋白质设计平台 GeoFlow。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/line-www-test-of-time-award-jiantang-geoflow-机器之心.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LINE 论文 WWW 2026 时间检验奖与 GeoF…"))
+    核心人物
+    技术演化路径
+    GeoFlow 三代进化
+      V3 多步推理
+    商业落地
+    背景
+    深度分析
+      从图嵌入到蛋白质设计的统一理论线索
+      GeoFlow V3 多步推理的范式突破
+      AI 制药的商业化拐点信号
+      WWW 时间检验奖的历史坐标
+    实践启示
+```
+
 ## 核心人物
 
 **唐建博士**：北京大学博士 → MSRA → CMU/UMich 博士后 → Mila 华人终身教授 → 百奥几何（BioGeometry）创始人。2014 ICML 最佳论文奖。

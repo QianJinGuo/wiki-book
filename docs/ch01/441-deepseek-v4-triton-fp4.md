@@ -6,6 +6,22 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-triton-fp4-optimization.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek V4 Triton FP4 优化实战"))
+    核心贡献
+    关键数据
+    SM121 vs SM100 关键差异
+    核心洞察
+    深度分析
+    实践启示
+    与现有知识关联
+    相关实体
+```
+
 ## 核心贡献
 1. **SM121 FP4 kernel 反面案例**：Marlin 在 SM121 上不是"精度低"而是"数据布局解释错误"，导致静默算错
 2. **Triton 反量化 + cuBLAS 混搭**：避开 SM121 FP4/FP8 tensor core 残缺问题

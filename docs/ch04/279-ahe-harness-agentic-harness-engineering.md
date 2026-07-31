@@ -11,6 +11,21 @@
 
 Harness Engineering 迭代依赖人工经验，但模型以月为单位进化、任务场景往长尾分布发展——如何让 Harness 自动从经验中学习并改进？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("复旦 AHE：让 Harness 自进化的 Agenti…"))
+    深度分析
+      核心问题：Harness 迭代速度跟不上模型进化
+      三角色流水线
+      三层可观测性
+      关键洞察 1：事实比策略更可迁移
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 复旦大学、北京大学与上海奇绩智峰联合提出的 Agentic Harness Engineering（AHE），把 Harness 的迭代从"工程师调 prompt/工具"升级为"Agent 自身在结构化环境里演化"。AHE 由三个角色组成（Coding Agent / Agent Debugger / Evolve Agent），建立三层可观测性（NexAU 组件级、轨迹级、决策级），并通过"证据驱动修改 + 变更清单"约束演化过程。在 Terminal-Bench 2 上把 GPT-5.4 从 69.7% 提到 77.0%（+7.3 点，相对 +10.5%），全球排名第三。

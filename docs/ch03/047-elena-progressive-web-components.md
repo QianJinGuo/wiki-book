@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/Elena-Progressive-Web-Components.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Elena | Progressive Web Comp…"))
+    相关实体
+    深度分析
+      '渐进增强'理念的回归
+      Shadow DOM 的放弃与可访问性
+      跨框架兼容的实际代价
+      2.9kB 的设计立场
+    实践启示
+      何时考虑 Elena
+      何时可能不适合
+      开发者体验考量
+```
+
 ## 核心要点
 - Elena：由 @arielle 创建的"Progressive Web Components"轻量库
 - 理念：HTML 和 CSS 优先加载，JavaScript 渐进增强

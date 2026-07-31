@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/anthropic-agent-skills-design-patterns-14.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 14 个 Agent Skills …"))
+    核心洞察
+    关键要点
+    与现有知识库内容的关联
+    原始存档
+    元数据
+    相关实体
+    深度分析
+      14个模式的设计哲学
+      两类技能的本质差异
+      上下文经济的核心矛盾
+      指令校准的连续光谱
+    实践启示
+      技能作者 checklist
+      优先级矩阵
+      常见的反模式
+      工具链建议
+```
+
 ## 核心洞察
 Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文来自 WeChat data-flow 频道。
 

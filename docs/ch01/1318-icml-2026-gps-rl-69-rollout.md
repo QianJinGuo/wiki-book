@@ -8,6 +8,18 @@
 
 GPS（Generalizable Predictive Prompt Selection）是清华大学与腾讯在 ICML 2026 上提出的方法，通过训练一个小型 Prompt Predictive Model（PPM）预测 prompt 难度，从而在 RL 后训练中减少无效 rollout，降低训练成本。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ICML 2026: GPS — 小模型「指挥」大模型R…"))
+    核心问题
+    方法：GPS
+    实验结果
+    关键信息
+```
+
 ## 核心问题
 
 RLVR（Reinforcement Learning with Verifiable Rewards）已经成为提升大模型推理能力的重要后训练路线，但存在一个很现实的问题：每个训练 step 都需要大量 rollout，而这些 rollout 往往需要反复调用大模型生成长答案，计算和显存开销都很大。

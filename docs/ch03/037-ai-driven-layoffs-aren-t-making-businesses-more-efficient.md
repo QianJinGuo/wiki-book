@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/www.cio-4171054-ai-driven-layoffs-arent-making-bus.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI-Driven Layoffs Aren't Mak…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 CIO.com 的一篇分析文章探讨了企业通过 AI 驱动裁员来提升效率的趋势，但指出这种做法并未真正带来预期的业务改善。文章的核心观点是：单纯通过 AI 替代人力来降低成本是一种短视策略，真正的效率提升需要将 AI 与人力结合进行业务重构。
 

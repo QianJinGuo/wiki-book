@@ -16,6 +16,24 @@ updated: '2026-06-08'
 type: entity
 # The distillation panic
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The distillation panic"))
+    相关实体
+    深度分析
+      术语污名化的系统性风险
+      监管连锁反应的非对称伤害
+      技术定义的边界模糊地带
+      中国实验室行为的正确归类
+    实践启示
+      对政策制定者的具体建议
+      对AI实验室的合规指引
+      对开源社区的行动框架
+```
+
 ## 相关实体
 - [05 11 The Great Memory Panic Of 2026](ch01/876-the-great-memory-panic-of-2026.html)
 

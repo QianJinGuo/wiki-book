@@ -4,6 +4,36 @@
 
 > 📊 Level ⭐⭐⭐ | 18.9KB | `entities/harness-generator-evaluator-anthropic.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Harness 设计：Generator-…"))
+    概述
+    两种失效模式
+      Context Anxiety 与 Conte…
+      自我评估偏差
+    Generator-Evaluator 架构
+      前端设计实验
+      全栈三代理架构
+    量化对照
+      复古游戏制作器（Opus 4.5）
+      DAW（Opus 4.6，去掉 sprint …
+    迭代原则
+    核心洞察
+    深度分析
+      1. GAN 启发的双代理结构解决的是「自我评…
+      2. Context reset vs com…
+      3. Sprint Contract 解决的是…
+      4. 四维度评分标准中高权重维度的选择揭示了模…
+    实践启示
+      1. 当 generator 自我评价偏正面时…
+      2. 用四维度评分标准时，先用低权重维度做健康…
+      3. Sprint contract 在每个 …
+      4. Context reset 的必要性用「…
+```
+
 ## 概述
 Anthropic 工程师 Prithvi Rajasekaran 系统阐述**长时间运行 Agent 应用**中的 Harness 设计方法论。核心贡献：①受 GAN 启发的 Generator-Evaluator 双代理结构解决自我评估偏差；②三代理架构（Planner/Generator/Evaluator）+ sprint contract 实现全栈自主开发；③context reset vs compaction 的取舍决策框架；④Opus 4.5→4.6 演进中 scaffold 简化规律。附 20 分钟/$9（单代理）vs 6 小时/$200（完整 harness）的对照数据。
 

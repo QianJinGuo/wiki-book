@@ -8,6 +8,23 @@
 
 > 阿里技术团队在数据研发领域通过知识工程 + Harness Engineering 实现 NL2SQL 多 Agent 工作流，涵盖 7 Agent 协同、幻觉防控、心跳自迭代等完整工程化方案。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里数据研发 Harness Engineering：N…"))
+    深度分析
+      数据研发领域特有的挑战
+      DSL 作为语义约束层
+      Harness vs CI/CD Pipeli…
+      以 Agent 养 Agent 的自我迭代闭环
+    实践启示
+    相关实体
+    第 2 来源 — 1688数据中心 Multi…
+      核心增量
+```
+
 ## 摘要
 
 阿里技术团队在数据研发领域的 AI 化实践中，构建了一套从「自然语言 → DSL → SQL」的全链路多 Agent 工作流。核心思路是将数据研发专家的碎片化知识转化为结构化知识体系（知识工程），再通过 Harness Engineering 的工作流编排、Gate 审批、幻觉防控和心跳自迭代机制，让 AI 稳定可靠地完成数据研发任务。最终愿景是从「只做选择，不做配置」——数研同学从写代码的人转变为做设计的人。

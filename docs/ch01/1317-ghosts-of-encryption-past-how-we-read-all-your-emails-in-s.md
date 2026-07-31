@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/slcyber-io-research-center-ghosts-of-encryption-past-salesforce-exacttarget.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Ghosts of Encryption Past – …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTarget）在邮件加密实现上的历史遗留漏洞。研究的核心发现是：尽管企业付费使用 Salesforce 的营销云服务发送Transactional 和 Marketing 邮件，但 Salesforce 自身保留了解密这些邮件的能力——这意味着"加密"在服务提供商的架构层面并非真正的端到端加密。
 **加密架构的两种模式**：研究中区分了两种常见的邮件加密实现方式——一种是传输层加密（TLS），仅保护邮件在网络传输过程中的安全；另一种是内容加密（如 S/MIME 或 PGP），确保只有持有私钥的收件人能解密内容。Salesforce Marketing Cloud 的加密实现更接近前者，而非后者。

@@ -8,6 +8,23 @@
 
 > **Background**: 本文基于量子位对蚂蚁开源 AI 安全框架的报道建立。该框架包括面向智能体行为的 SingGuard-NSFA 和面向多模态大模型安全的 SingGuard 两个组件。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Ant SingGuard-NSFA: 蚂蚁开源AI A…"))
+    概述
+    SingGuard-NSFA: 智能体行为安全护栏
+      风险分类体系
+      双模推理机制
+      原生可扩展设计
+      评测表现
+    SingGuard: 多模态安全框架
+    蚂蚁AI安全体系脉络
+    相关实体
+```
+
 ## 概述
 
 2026年7月，蚂蚁集团开源了两套AI安全框架：**SingGuard-NSFA**（智能体安全）和 **SingGuard**（多模态安全），旨在将AI安全的焦点从传统的"内容审核"转向"行为安全"。

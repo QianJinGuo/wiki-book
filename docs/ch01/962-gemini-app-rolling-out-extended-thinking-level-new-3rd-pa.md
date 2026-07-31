@@ -11,6 +11,17 @@ In the model picker, you'll see a new "Thinking level" menu at the bottom of the
 So far, Thinking level is seeing a limited rollout. This matches how Google AI Studio offers Low, Medium, and High thinking levels.
 Meanwhile, the Gemini app is preparing to add more integrations with third-party apps. At the moment, third-party apps include @GitHub, @OpenStax, @Spotify, and @WhatsApp.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini app rolling out 'Exte…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 1. **"Extended"思维层级标志Google在推理深度上推出标准化产品分层**。"Extended"（扩展）模式位于"Standard"和"Thinking excluded"之间，与Google AI Studio的Low/Medium/High三档设计一致 。这表明Google正在将深度推理能力从实验性功能转变为面向消费者的可分级产品。

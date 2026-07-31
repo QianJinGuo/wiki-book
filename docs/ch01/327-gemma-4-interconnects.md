@@ -10,6 +10,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-and-what-makes-an-open-model-succeed.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemma 4 与开源模型成功标准 —— Interco…"))
+    1. 核心论点：开源模型不是'benchmar…
+    2. 5B/8B/26B/31B 四尺寸 + …
+    3. 工具链成熟度：Qwen 3.5 / Ne…
+    4. 微调可行性：被忽视的'暗物质'问题
+    5. 美国开源生态的复兴信号
+    6. Gemma 4 成功概率判断（作者观点）
+    7. 与现有 entity 的关系
+    8. 实践启示
+```
+
 ## 1. 核心论点：开源模型不是"benchmark 一锤定音"
 
 > "Especially with open models, the benchmarks at release are an extremely incomplete story."

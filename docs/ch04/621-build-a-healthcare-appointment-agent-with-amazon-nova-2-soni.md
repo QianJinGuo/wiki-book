@@ -6,6 +6,21 @@
 
 # Build a Healthcare Appointment Agent with Amazon Nova 2 Sonic
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build a Healthcare Appointme…"))
+    核心洞察
+    架构设计
+    7 个医疗工具（Strands @tool 装…
+    对话流程（4 阶段）
+    关键设计决策
+    部署
+    与现有 Agent 实体的差异化
+```
+
 ## 核心洞察
 
 Amazon Nova 2 Sonic 的 speech-to-speech 模型 + Bedrock AgentCore 无服务器 runtime + Strands Agents SDK 的 `BidiAgent` 类，构成一个完整的**端到端语音 Agent 部署方案**。核心价值：传统方案是 STT->LLM->TTS 三段式链路（每步丢上下文），Nova 2 Sonic 直接在单一模型内处理语音，保留语调、犹豫、紧迫感等声学特征。

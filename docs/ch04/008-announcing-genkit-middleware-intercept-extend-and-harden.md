@@ -42,6 +42,24 @@ graph TB
 > 📊 Level ⭐ | 8.6KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`
 
 > -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Announcing Genkit Middleware…"))
+    深度分析
+      1. 为什么 Agentic 应用需要中间件
+      2. 三层 Hook 架构的设计意图
+      3. Pre-built 中间件的战略布局
+      4. 自定义中间件的合约设计
+    实践启示
+      给框架开发者
+      给企业 AI 应用开发者
+      给 DevOps / ML Platform 团队
+    相关实体
+```
+
 ## 核心要点
 - Genkit 是用于构建全栈 AI 应用和 Agentic 应用的开源框架，支持 TypeScript、Go、Dart 和 Python
 - v=8, c=8

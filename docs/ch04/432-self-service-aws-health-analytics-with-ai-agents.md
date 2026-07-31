@@ -6,6 +6,21 @@
 
 # Self-Service AWS Health Analytics with AI Agents
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Self-Service AWS Health Anal…"))
+    深度分析
+      多 Agent 架构的设计哲学
+      成本优化策略
+      与 AWS DevOps Agent 的集成愿景
+      实际查询示例
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AWS 官方博客展示了一个名为 **Chaplin**（Customer Health and Planned Lifecycle Intelligence Nexus）的开源解决方案，通过 [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 工具将 AWS Health API 封装为 AI Agent 可调用的能力，让运维团队通过自然语言查询健康事件、获取影响分析和运维建议。该方案解决了传统 AWS Health 事件管理中依赖 TAM（技术客户经理）分析、缺乏自助分析能力的痛点。

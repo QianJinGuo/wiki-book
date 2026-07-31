@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-agent-runtime-sdk.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cline releases open-source a…"))
+    深度分析
+      1. 重构动机：为什么'叠加'行不通
+      2. 分层 TypeScript 栈：单一职责…
+      3. Harness 升级带来的可恢复性与可迁移性
+      4. Agent Teams / Subage…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Cline 在 2026-05-13 发布 `@cline/sdk`，将原本耦合在 IDE 内的 Agent 运行时重构为一套独立的、可移植的分层 TypeScript 栈（`@cline/shared` / `@cline/llms` / `@cline/agents` / `@cline/core`）。CLI、VS Code 与 JetBrains 插件均迁移到这套运行时之上；Terminal Bench 2.0 上 Cline CLI + claude-opus-4.7 取得 74.2%（vs Claude Code 同模型 69.4%），在 open-weight 模型 kimi-k2.6 上达到 55.1%（vs OpenCode 37.1%）。SDK 原生支持 agent teams / subagents、plugins、CRON jobs、checkpointing、MCP connector，以及 `cline connect` 一键接入 Telegram、WhatsApp、Slack。

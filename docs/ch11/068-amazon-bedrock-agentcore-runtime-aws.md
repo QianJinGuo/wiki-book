@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快时尚电商行业智能体设计思路与应用实践（七）Amazon…"))
+    概述
+    核心技术
+    深度分析
+      运行时架构：Lambda-like micro…
+      三协议体系：HTTP / MCP / A2A
+      会话隔离模型
+      异步处理与长时间运行任务
+    实践启示
+      协议选择决策矩阵
+      多 Agent 架构设计建议
+      记忆策略配置最佳实践
+      会话管理要点
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

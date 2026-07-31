@@ -23,6 +23,21 @@ Skill让Agent不必每次都从零开始摸索，而是可以复用已有的任�
 
 这也是继SwarmSkill、SwarmFlow之后，openJiuwen在Skill工程化方向上的又一次快速迭代。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("让Skill"有图可依"：openJiuwen首发多模态…"))
+    要点
+    深度分析
+      多模态Skill的本质：从'指令'到'参照系'…
+      按需读取：多模态上下文管理的工程范式
+      从Markdown到Multimodal：Sk…
+      视觉知识工程化：从'人类可读'到'Agent可…
+    实践启示
+```
+
 ## 要点
 
 - 这在代码生成、文档处理等任务中足够有用；可一旦Agent开始处理视觉任务、GUI任务，局限立刻显现——**有些任务，本来就不是"说清楚"的，而是"看明白"的。**

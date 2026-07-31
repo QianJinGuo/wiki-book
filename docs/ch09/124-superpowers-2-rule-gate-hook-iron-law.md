@@ -8,6 +8,22 @@
 
 Superpowers 第二篇深度解读：聚焦 Rule/Gate/Hook 核心哲学、Iron Law、TDD 应用到 prompt engineering、SDLC 范式映射。开元大咖说/原作者。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Superpowers 深度解读（2）：Rule/Gat…"))
+    一句话
+    互补角度（vs 百度Geek说版）
+    Rule vs Gate vs Hook
+    1% Rule
+    Iron Law（TDD）
+    systematic-debugging Ph…
+    writing-skills：把 TDD 应用…
+    Cialdini 说服原则（PUA Skill）
+```
+
 ## 一句话
 
 **Rule 可绕开（rationalize 借口）/ Gate 不可绕开（先满足条件才允许下一步）/ Hook 是确定性触发——Superpowers 把每个关键转换都做成互锁 gate，构成 LLM 时代的工业级 SDLC。**

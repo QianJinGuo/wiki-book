@@ -8,6 +8,26 @@
 
 > 2026-06-07 引用自 Ethan Mollick《Using AI Right Now: A Quick Guide》，One Useful Thing，2025-06-23。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Mollick 实用 AI 选型指南：模型选择·Deep…"))
+    三大系统选哪个
+    模型分层
+    Deep Research（关键功能）
+    Voice Mode
+    制作输出：图片/视频/代码/文档
+    Prompting 已死？
+    相关实体
+    深度分析
+      1. 从「选模型」到「选系统」的范式转移
+      2. $20 月费作为专业功能分水岭
+      3. Deep Research 与 Voic…
+      4. Prompt Engineering 的…
+```
+
 ## 三大系统选哪个
 
 **ChatGPT**（OpenAI）、**Claude**（Anthropic）、**Gemini**（Google）三选一，都提供：高级+快速模型、语音模式、图像/文档处理、代码执行、移动 App、图片/视频生成（Claude 缺）、Deep Research。

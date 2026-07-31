@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("数据级 Harness：架构师 JiaGouX 解读 A…"))
+    深度分析
+      1. 95% 这个数字到底在说什么
+      2. 错得很安静：false sense of…
+      3. Data is not software…
+      4. 反直觉边界：检索 ≠ 用对
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 架构师 JiaGouX 对 Anthropic 6 月 3 日发布的《How Anthropic enables self-service data analytics with Claude》做了一次结构性解读。文章把那个吸睛的 "95% 准确率" 拆解成 5 个反直觉边界：信息存在 ≠ 用对、SQL 写对 ≠ 答案对、RAG 解决"有没有"但不解决"权威性"、Skills 是规程不是模板、Agent 错起来比人错更危险。核心结论是企业级 AI 数据分析需要 **数据级 Harness**：把语义层、血缘图、Skill 工作流、对抗性评测、来源页脚、人审纠错封装进 Agent 运行环境。

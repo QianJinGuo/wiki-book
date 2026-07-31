@@ -10,6 +10,22 @@
 > 原始链接：[原始链接](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)
 > 日期：2026-05-18
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用好 Claude 的 18 个动作：搭一个个人 AI …"))
+    一句话
+    深度分析
+      1. Personal Harness 是 H…
+      2. 六层结构对应软件工程的成熟分层
+      3. 「流程卡片」是最被低估的资产
+      4. 上下文治理 = 最难的工程问题
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 若飞（架构师 JiaGouX）提出的 **Personal Harness 范式**：把 Claude 用得好不好定位为「**环境工程问题**」而非「提示词技巧问题」。核心洞察 —— **给 Claude 一个稳定的工作现场，比优化每次的提示词更重要**。通过 18 个具体动作和六层工作台结构（Workspace / Identity / Behavior Contract / Task Entry / Output Standards / Context Governance），把 Claude Projects + Custom Instructions + Memory 三大工具组合成可治理的个人 AI 工作环境。

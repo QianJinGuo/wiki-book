@@ -8,6 +8,27 @@
 
 > **Core insight**: 2026 春季 Qwen 3.5 / Kimi Linear / Nemotron 3 Nano / IBM Granite 4 / Olmo Hybrid 集体采用 Transformer + RNN 混合架构 — Allen AI 的 Olmo Hybrid 7B 用 Gated DeltaNet (GDN) 3:1 层比实现**预训练效率 2x 提升**，并提供**严格理论证明 hybrid > transformer**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Olmo Hybrid and the Hybrid A…"))
+    Hybrid 架构浪潮的 2026 春季清单
+    历史脉络：从 Mamba 到 Hybrid
+    Olmo Hybrid 模型规格
+    关键理论：Hybrid  Transformer
+      缩放实验的明确排序
+      预训练效率具体数字
+    Post-training 的挑战
+      1. Benchmark 性能
+      2. 开源工具支持的现实
+      关键 inference flags
+    与现有 Generalization Dyn…
+    与 Notes From Inside Ch…
+    三个独到洞察
+```
+
 ## Hybrid 架构浪潮的 2026 春季清单
 
 - **Qwen 3.5**（previewed by Qwen3-Next）

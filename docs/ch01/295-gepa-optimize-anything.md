@@ -11,6 +11,26 @@
 **发布时间：** 2026-02-18
 **代码：** https://github.com/gepa-ai/gepa
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gepa Optimize Anything"))
+    一句话总结
+    核心问题
+    核心方案
+      声明式 API
+      三种优化模式
+      关键机制 1：ASI（Actionable S…
+      关键机制 2：Pareto 前沿搜索
+    实验结果
+    延伸概念
+    相关框架对比
+    5th source: Hermes Agen…
+    相关概念
+```
+
 ## 一句话总结
 GEPA `optimize_anything` 通过 ASI + Pareto 前沿搜索，用一个声明式 API 优化任何文本制品（代码/prompt/Agent 架构/配置），8 个领域验证 SOTA。
 

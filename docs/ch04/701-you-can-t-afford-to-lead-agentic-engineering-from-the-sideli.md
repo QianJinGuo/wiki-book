@@ -80,6 +80,17 @@ The best thing I did as a leader was spend enough time with the tools to become 
 
 So let the work correct your assumptions, because you cannot afford to lead agentic engineering from the sidelines.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("You can't afford to lead age…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/1089-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
 - [Google Io 2026 Agentic Gemini Era](ch04/237-agentic.html)

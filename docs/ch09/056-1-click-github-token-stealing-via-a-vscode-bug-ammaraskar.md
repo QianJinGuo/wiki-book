@@ -8,6 +8,22 @@
 
 > **Background**：本文档基于对 [ammaraskar 博客原文](https://blog.ammaraskar.com/github-token-stealing/) 的直接抓取与提炼，原始研究由独立安全研究员 Ammar Askar 在 2026 年发布。文章披露了 VSCode / github.dev 的一个 webview + postMessage 跨域访问控制缺陷，允许攻击者通过构造恶意 URL 一次性窃取受害者的 GitHub Personal Access Token（PAT），并进一步获得仓库、PR、CI 完整访问权限。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("1-Click GitHub Token Stealin…"))
+    漏洞核心
+    攻击链拆解
+    影响范围
+    责任披露时间线
+    防御建议
+    与本 wiki 其他实体的关联
+    相关实体
+    深度分析
+```
+
 ## 漏洞核心
 
 VSCode 在 webview 与扩展 host 之间使用 `postMessage` API 通信。ammaraskar 发现，github.dev（VSCode for the Web）在某些路径下没有正确实施 cross-origin policy，恶意页面可以通过 iframe + postMessage 把 GitHub PAT 发送回攻击者控制的服务器。整个攻击链只需要受害者点一次链接。

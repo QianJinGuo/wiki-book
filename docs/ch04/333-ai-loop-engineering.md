@@ -8,6 +8,21 @@
 
 > **Source**：技术极简主义，发布于 2026-06-12。Loop Engineering 是 AI 编程从「写好提示词」升级为「设计可持续运转的智能体工作系统」的核心范式——围绕 AI 编程智能体设计一个可重复、可观察、可验证、可修正的工作循环。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一文看懂 AI 编程智能体工程化新范式：Loop Eng…"))
+    深度分析
+      从 Prompt Engineering 到 …
+      Six Core Components 的工程…
+      Worktrees：一个被低估的关键组件
+      Sub-agents 的 maker/chec…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 技术极简主义系统介绍了 Loop Engineering——AI 编程工程化的新范式。核心命题是：AI 编程的关键能力正在从「写好提示词」（Prompt Engineering）升级为「设计可持续运转的智能体工作系统」（Loop Engineering）。文章定义了 Loop 的六大核心构件（Automations、Worktrees、Skills、Plugins/Connectors、Sub-agents、Memory），并用一个从 CI 失败检测到 PR 生成的全流程示例展示了 Loop 的真实运作方式。

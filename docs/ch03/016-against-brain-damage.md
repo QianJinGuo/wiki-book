@@ -10,6 +10,28 @@
 
 > **Core insight**: Ethan Mollick 的"反 Brain Damage"框架：AI 本身不会破坏大脑，但不加思索地使用会损害思维能力。关键区分是 AI 作为 shortcut（替代思考）vs scaffold（推动思考）——Penn/Turkey 研究显示无指导的 ChatGPT 使考试分数下降 17%，而 World Bank/Nigeria 的教师引导 AI 辅导效果超过"一些最有效的教育干预"。核心原则：先思考、先写作、先开会。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Against \"Brain Damage\"))
+    MIT 'Your Brain on Chat…
+    学习脑：AI 作为 tutor vs shor…
+    创意脑：AI 的可预测性与多样性
+    集体脑：AI 对社会过程的影响
+    关键数据/实践启示
+    深度分析
+      1. '必要难度'原理与学习心理
+      2. Scaffold vs Shortcut…
+      3. 锚定效应与认知架构
+    实践启示
+      1. '先卡住、再提问'确保心理努力优先
+      2. '100 ideas'流程强制 AI 跨…
+      3. 会议前'独思'仪式建立认知隔离
+    相关实体
+```
+
 ## MIT "Your Brain on ChatGPT" 研究的正确解读
 
 人们经常询问"AI 是否会损害大脑？"这个问题本身揭示了对 AI 能力的深刻恐惧。MIT Media Lab 的"Your Brain on ChatGPT"研究被广泛误解——该研究只有一小群大学生，被分配单独写作、使用 Google 或使用 ChatGPT 写论文。使用 ChatGPT 的学生参与度更低、记得的内容更少，四个月后重新写作时表现更差，脑电图活动也减少。但研究并没有显示任何"脑损伤"—— Plato 曾认为写作会削弱智慧，手机出现时有人担心不记住电话号码会让我们变蠢，技术焦虑并非新事物。

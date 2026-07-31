@@ -6,6 +6,19 @@
 
 → 原文存档
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Buildkite Pricing | Buildkite"))
+    摘录
+    深度分析
+    实践启示
+    标签
+    相关实体
+```
+
 ## 摘录
 > Title: Buildkite Pricing
 URL Source: https://buildkite.com/pricing

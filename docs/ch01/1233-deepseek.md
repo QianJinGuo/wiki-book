@@ -5,6 +5,38 @@
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/deepseek-vision-primitives.md`
 
 # DeepSeek视觉原语论文：视觉指代精度新范式
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek视觉原语论文：当所有人在堆图像分辨率时，…"))
+    核心观点
+    背景时间线
+    关键创新
+      1. 视觉原语作为思考媒介
+      2. 指代精度 vs 分辨率
+      3. 效率对比
+      4. 拓扑推理突破
+    技术解读
+      视觉原语格式
+      压缩链路
+      训练管线：5阶段专家化
+      密集奖励设计
+    深度分析
+      Perception Gap vs Refer…
+      为什么 DeepSeek 是最后一个但选择反共…
+      5阶段训练管线的工程哲学
+      视觉原语让模型更接近人类认知
+    实践启示
+      1. 视觉理解对 Coding Agent 是…
+      2. 堆指代精度可能比堆分辨率更高效
+      3. Grounding 应作为思考媒介而非验…
+      4. Coding Agent 视觉的新评判维度
+    局限
+    相关实体
+```
+
 ## 核心观点
 DeepSeek 2026年4月30日发布论文 *Thinking with Visual Primitives*，提出「视觉原语」概念——将坐标和边界框作为视觉推理的最小单元，让模型一边推理一边「用手指着图说话」。这是 DeepSeek 补齐多模态能力的核心动作，同时也是一种反共识的技术路线选择：主流在堆图像分辨率，DeepSeek 在堆指代精度。
 

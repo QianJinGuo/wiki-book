@@ -6,6 +6,34 @@
 
 # Codex AGENTS.md 项目说明书完整指南
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex AGENTS.md 项目说明书完整指南"))
+    概述
+    AGENTS.md 的定位
+    Codex 发现链（全局层 → 项目层 → 合并）
+      第一步：全局层（Global scope）
+      第二步：项目层（Project scope）
+      第三步：合并
+    AGENTS.override.md：Code…
+    该写什么 vs 不该写什么
+      该写的五类
+      不该写的
+      大小红线
+    两个配置旋钮
+      project_doc_fallback_fi…
+      project_doc_max_bytes
+    验证流程
+    深度分析
+      AGENTS.md 是「上下文工程」的核心实践载体
+      发现链设计中的「Unix 哲学」基因
+      AGENTS.override.md：从「配置…
+      字节上限 vs 行数上限：两种上下文管理哲学
+```
+
 ## 概述
 
 AGENTS.md 是 Codex 的「项目说明书」——每次启动会话前必读的持久指令文件，相当于 Claude Code 的 CLAUDE.md。但 Codex 的发现机制、覆写规则、字节上限自成一套，与 Claude Code 有显著差异。

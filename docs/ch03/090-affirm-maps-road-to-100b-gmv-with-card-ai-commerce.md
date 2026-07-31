@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Affirm Maps Road to $100B GM…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Affirm 在 2026 年投资者论坛上披露了覆盖支付网络、消费者产品、国际市场和 $100B 年 GMV 中期目标的完整增长战略 
 - CEO Max Levchin 强调 Affirm 已构建"封闭循环、信息保留"的网络——作为发卡行、收单方、信用信息传递方和风险管理方同时运作，展现出"非常真实的网络效应" 

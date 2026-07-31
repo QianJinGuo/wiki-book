@@ -6,6 +6,18 @@
 
 # Introducing Vercel Connect
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Vercel Connect"))
+    Overview
+    Link to headinghttp:…
+    深度分析
+    实践启示
+```
+
 ## Overview
 
 Published Time: 2026-06-17T09:17:12.380Z

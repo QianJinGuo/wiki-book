@@ -8,6 +8,23 @@
 
 > 文章 "76%的性能提升与模型无关？Karpathy 700次 Loop 实验揭开 Agent 最大误区" (四月, 2026-07-07) 的实体整理。综合了 Hugging Face Joel Niklaus 的 Harness 优化实验、Karpathy AutoResearch 项目 (Loop Cycle)、以及 Codila 的 Loop Engineering 方法论。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy AutoResearch Loop C…"))
+    核心发现：Benchmark 测的是'模型 +…
+    什么是 Harness？
+    Karpathy AutoResearch …
+      实验结果
+      Loop 三要素
+      Loop 适用标准（四项全能）
+    Bilevel Autoresearch（双层…
+    隐性代价
+    与已有实体的关系
+```
+
 ## 核心发现：Benchmark 测的是"模型 + Harness"组合能力
 
 Hugging Face 工程师 Joel Niklaus 的实验《Don't Train the Model, Evolve the Harness》证明：使用同一个 DeepSeek-V4-Pro，**不改模型权重，只优化外层执行机制 (Harness)**，就能让 Agent 在专业任务中的表现大幅提升：

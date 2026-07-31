@@ -8,6 +8,22 @@
 
 > **TL;DR**：AWS 在 re:Invent 2025 预览后正式发布 M9g 实例 + 新增 M9gd（本地 NVMe SSD 版），均由 Graviton5 处理器驱动。192 核、DDR5-8800、PCIe Gen6，相比 Graviton4 计算性能 +25%、Web 应用 +35%、ML 推理 +35%、数据库 +30%。Meta 部署数千万核 Graviton 用于代理 AI 工作负载；ClickHouse / Honeycomb / HubSpot 公布对比 M8g 的实测收益。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Graviton5 M9g/M9gd 实例 GA…"))
+    三个独有贡献
+    关键架构升级（vs Graviton4）
+    网络与存储带宽
+    M9g 实例规格（部分）
+    M9gd 实例（本地 NVMe SSD）
+    Nitro Isolation Engine（…
+    客户案例
+    适用工作负载
+```
+
 ## 三个独有贡献
 
 ```mermaid

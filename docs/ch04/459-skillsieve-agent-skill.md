@@ -10,6 +10,17 @@
 **来源：** 模安局（微信公众号），2026-04-27 20:08 北京
 在 Agent 生态里，Skill 正在变成一个很现实的新攻击面。一个 Skill 往往既包含 SKILL.md 里的自然语言说明，也可能带着脚本、依赖和权限声明。它看起来像一个"小插件"，但实际拿到的是 Agent 的执行能力、环境变量访问能力、文件系统访问能力，甚至网络请求能力。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SkillSieve：Agent Skill 安全检测三…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)

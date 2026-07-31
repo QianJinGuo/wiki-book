@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/memento-skills-let-agents-design-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Memento-Skills — 技能外部记忆让 Age…"))
+    背景问题：冻结大模型的成长困境
+    Memento-Skills 五步闭环
+    技能路由器：行为对齐而非语义相似
+    实验结果
+      GAIA（高度异质任务）
+      HLE（同学科结构任务）
+      技能库增长
+    论文真正有价值的地方
+    不足与局限
+    未来改进方向
+    与同类工作的关联
+```
+
 ## 背景问题：冻结大模型的成长困境
 
 大模型部署后通常是"冻结"的——预训练代价高昂，微调难以稳定运维。Agent 的适应能力只能来自**上下文学习（in-context learning）**和**外部记忆（external memory）**。传统 memory 方案（记录历史轨迹、检索类似样本）本质上只是"查旧账"，而不是"长本事"。

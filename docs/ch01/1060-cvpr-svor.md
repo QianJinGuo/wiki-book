@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CVPR冠军代码开源：小米SVOR破解视频消除三大顽疾，…"))
+    Summary
+    Key Points
+    相关实体
+    深度分析
+      技术架构：从单点优化到系统协同
+      研究动机：真实场景的'不完美'才是真正的难题
+      开源策略的行业意义
+      与其他工作的差异化
+    实践启示
+      对于视频创作者
+      对于开发者
+      对于行业
+```
+
 ## Summary
 小米SVOR视频消除技术，CVPR冠军代码开源。
 

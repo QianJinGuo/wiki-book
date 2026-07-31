@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/programbench-swe-agent-benchmark.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Programbench Swe Agent Bench…"))
+    相关资源
+    深度分析
+    实践启示
+```
+
 ## 摘要
 [Leaderboard](/) [Paper](https://arxiv.org/abs/2605.03546) [GitHub](https://github.com/facebookresearch/ProgramBench) [Team](/team/) [Blog](/blog/) [H...
 

@@ -11,6 +11,25 @@
 
 吴恩达（Andrew Ng）详细阐述了"循环工程"（Loop Engineering）这一 AI Agent 开发热门概念，介绍了构建 0-to-1 产品的三个关键循环：Agentic 编码循环（分钟级）、开发者反馈循环（小时级）和外部反馈循环（天级），并配以循环示意图。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代"))
+    三层循环架构
+      1. Agentic Coding Loop（…
+      2. Developer Feedback L…
+      3. External Feedback Lo…
+    深度分析
+      Loop Engineering 的理论框架化
+      循环加速与工程师角色重塑
+      人类上下文优势的工程化路径
+      与 Boris Cherny 和 Peter …
+    实践启示
+    相关实体
+```
+
 ## 三层循环架构
 
 ### 1. Agentic Coding Loop（分钟级）

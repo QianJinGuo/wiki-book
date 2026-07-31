@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/user-interviews-guide-pro.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("User Interviews Guide: How t…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - 用户访谈是获取定性洞察的核心方法，帮助团队理解用户需求、痛点和行为动机 
 - 用户访谈与客户访谈的关键区别在于：前者聚焦产品使用体验（UX），后者关注用户与公司的整体关系 

@@ -10,6 +10,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/figma-make-now-on-your-local-code-3e6a33.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Figma Make, Now on Your Loca…"))
+    深度分析
+      1. 行业判断：代码工具停留在 2016 协作水平
+      2. 直接编辑 + 标注的混合交互模式
+      3. Git 流程是生产代码的「质量门槛」
+      4. 画布与代码库的双向同步是「闭环」
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026-05-28 Figma 推出 Make 的新能力——在桌面端 Beta 应用中支持直接对接本地生产代码库做可视化编辑。核心定位是「设计 vs 代码」是假二元对立：Figma 不强迫用户在设计画布、原型 playground、生产代码之间二选一，而是提供 Agent 驱动的「直接编辑 + 标注 + Git 流程 + 跨画布和代码库的协作」完整工作流。Beta 期间不消耗 credits。

@@ -12,6 +12,21 @@
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 实践：将任何文字编辑成精美的文章"))
+    深度分析
+      组件协议作为 AI 输出控制的核心模式
+      主题 token 系统：AI 时代的「设计规范…
+      渐进加载上下文 vs 全量注入
+      最小切片修复与文件化记忆
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 code秘密花园（ConardLi）延续视频 Skill 的 Harness 骨架，为「将任意文字编辑成精美网页文章」构建了 Beautiful Article Skill。核心创新是 **Reacticle 组件协议**，将文章排版从 AI 的自由生成转变为受约束的组件组合，同时通过 11 套主题系统（Tufte、Sottsass、Bayer 等）实现视觉多样性。该实践验证了「好的 Harness 是可以迁移的」这一核心命题。

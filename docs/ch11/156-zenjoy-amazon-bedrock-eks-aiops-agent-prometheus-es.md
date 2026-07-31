@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Zenjoy 基于 Amazon Bedrock 和 E…"))
+    深度分析
+      1. 算法与 LLM 的职责解耦架构
+      2. 多窗口分层分析机制的技术意图
+      3. 周期检测的工程化演进
+      4. Token 治理与 LLM 幻觉防护
+    实践启示
+      工程化要点
+      技术选型建议
+      架构演进路径
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

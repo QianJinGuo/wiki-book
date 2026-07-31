@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 16.9KB | `entities/salesforce-headless-software-losing-head-a16z.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Salesforce 主动砍掉了界面，a16z 合伙人说…"))
+    核心命题
+    旧世界：界面曾经就是产品
+    护城河五维评估框架
+    Agent 时代：肌肉记忆正在消失
+    三条路径
+    数据护城河的新逻辑
+    动作层与闭环数据
+    最后那一公里：现实世界的执行
+```
+
 ## 核心命题
 
 Salesforce 宣布开放 API，推出"无头产品"（headless product），把底层数据库暴露给外部调用。a16z 合伙人 Seema Amble 发文分析：软件的价值到底在界面层还是数据层？**Agent 时代的护城河逻辑发生了什么变化？**

@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic RL 六框架实践地图：从算法到系统的长程…"))
+    核心概述
+    从单轮 MDP 到多轮环境交互
+    六大框架
+    新型失稳模式（RAGEN）
+    八条实践原则
+    工程架构补充：三循环 + 环境契约
+      三循环架构
+      任务筛选启发
+      环境契约设计
+      训练评分与生产权限分离
+```
+
 ## 核心概述
 
 Cameron R. Wolfe 系统梳理了 Agentic RL 方向：当 LLM 从静态问答模型变成能与环境交互的智能体，RL 训练必须从单轮文本采样升级为多轮轨迹优化、可扩展环境执行、异步 rollout 和稳定性控制。本文覆盖 6 个代表框架（ToRL / AgentGym-RL / Agent-R1 / AgentRL / AutoForge / RAGEN），提炼 8 条实践原则，揭示 echo trap / template collapse 等新型失稳模式。

@@ -8,6 +8,23 @@
 
 > **背景**：本篇整理自 Meta AI 的论文 "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents"（arXiv:2607.08716），提出了一种独立运行的记忆 Agent 架构，通过在长程任务中实施选择性干预来对抗「行为状态衰减」（behavioral state decay）问题。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Proactive Memory Agent — Met…"))
+    核心发现：Behavioral State D…
+    架构设计：双阶段记忆干预
+      Phase 1：记忆管理（Memory Man…
+      Phase 2：干预选择（Interventi…
+    选择性干预  被动检索
+    与现有记忆架构的关系
+    开放权重训练
+    评价与局限
+    相关实体
+```
+
 ## 核心发现：Behavioral State Decay
 
 长程 Agent 任务中存在一种隐藏失效模式——随着轨迹（trajectory）的持续增长，任务需求、环境事实、先前的尝试记录、诊断结论以及未完成的子目标等信息会逐渐被埋没在上下文窗口中，最终无法影响决策。论文将此称为 **behavioral state decay**（行为状态衰减）。

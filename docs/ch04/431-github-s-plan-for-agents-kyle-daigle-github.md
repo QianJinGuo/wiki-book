@@ -10,6 +10,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-latent-space-p-github.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub's plan for Agents — K…"))
+    深度分析
+      Former Developers in Le…
+      微技能架构的设计哲学
+      AI 对开源治理的根本性挑战
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 这篇 Latent Space 播客访谈中，GitHub COO Kyle Daigle 分享了 GitHub 在 AI Agent 时代的全方位思考。核心主题包括：Coding Agent 带来的 1400% 提交量增长对基础设施的冲击、GitHub 内部的 AI 工作流实践（WorkIQ、MCP、微技能架构）、开源社区面临的 AI 生成代码洪水挑战、以及 Copilot 从代码补全到 CLI、桌面应用、云 Agent 的完整演进。

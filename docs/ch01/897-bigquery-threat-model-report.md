@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/google-bigquery-threat-model.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("BigQuery Threat Model Report"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 BigQuery 威胁模型覆盖了完整的 STRIDE 分类（Spoofing、Tampering、Repudiation、Information Disclosure、Denial of Service、Elevation of Privilege），共 14 个威胁，其中信息泄露类威胁占比最高（Threat 4、7、9、10、11、13），达到 6 个，反映了数据仓库平台作为集中化数据存储的核心风险：一旦权限控制不当，最大的损失来自数据被不该看到的人看到，而不是系统被破坏。这与传统的网络安全思维不同——在 BigQuery 的威胁模型里，"谁能查数据"比"谁能攻击系统"更关键 。

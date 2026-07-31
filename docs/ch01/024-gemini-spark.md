@@ -6,6 +6,21 @@
 
 # 谷歌风雨飘摇，市值蒸发数千亿美元！Gemini Spark能救场吗？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("谷歌风雨飘摇，市值蒸发数千亿美元！Gemini Spar…"))
+    深度分析
+      谷歌悖论：最该赢的公司为何起了大早赶了晚集
+      Gemini Spark 的产品架构与竞品对比
+      行业趋势：AI 从「副驾驶」到「司机」
+      人才流失背后的深层信号
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026年6月，谷歌经历了一周内四位核心人才接连流失的震荡：Transformer 八子之一 Noam Shazeer 离开去 OpenAI（谷歌曾花约 27 亿美元将其请回），AlphaFold 主导者、诺贝尔化学奖得主 John Jumper 去 Anthropic，Gemini 预训练核心 Jonas Adler 和 Alexander Pritzel 同样准备去 Anthropic。资本市场的反应直接而猛烈——Alphabet 股价两天跌 5%～6%，市值蒸发数千亿美元。

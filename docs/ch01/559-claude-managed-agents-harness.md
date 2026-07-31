@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/anthropic-claude-managed-agents-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Managed Agents 官方 Har…"))
+    核心洞察
+    关键要点
+    与现有知识库内容的关联
+    原始存档
+    深度分析
+      架构定位：从 API 调用到平台即服务的范式跃迁
+      四元组核心模型的设计逻辑
+      多智能体编排的当前限制与设计意图
+      定价结构的双因素模型
+    实践启示
+      何时选型 Managed Agents
+      何时考虑替代方案
+      MCP 服务器集成的实际价值
+      成本优化建议
+    元数据
+    相关实体
+```
+
 ## 核心洞察
 Claude Managed Agents官方Harness平台完整手册。本文来自 WeChat data-flow 频道。
 

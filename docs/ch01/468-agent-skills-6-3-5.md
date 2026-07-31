@@ -8,6 +8,28 @@
 
 基于 Anthropic 发起的 Agent Skills 官方规范（agentskills.io）和参考实现源码（skills-ref）的系统性开发指南。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Skills 开发指南：6 字段规范、3 级…"))
+    核心概念
+    渐进式披露（Progressive Discl…
+    6 字段规范
+      字段约束表
+      name 校验细节
+    目录结构
+    开发流程
+      第一步：先真实地完成一次任务
+      第二步：搭目录结构
+    最佳实践原则
+    高价值指令模式
+    Description 优化方法论
+      四条原则
+      触发 eval
+```
+
 ## 核心概念
 
 Agent Skills 是一种轻量、开放的文件夹格式规范，把过程性知识和项目特有的 context 打包成可移植、可版本化、按需加载的资产。它不是框架，也不是 SaaS，而是一个格式规范。

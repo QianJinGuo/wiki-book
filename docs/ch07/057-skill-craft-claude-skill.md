@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-skill-quality-tool-skill-craft.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Skill Craft：Claude Skill 质量工…"))
+    深度分析
+      1. Skill 质量问题的根因：缺乏工程化治理
+      2. 三层评估体系的设计哲学
+      3. 约束衰减：Skill 系统的阿喀琉斯之踵
+      4. 从单 Skill 到多 Skill 系统…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Skill Craft 是面向 Claude Skill 的质量工程工具（GitHub: [3stoneBrother/skill-craft](https://github.com/3stoneBrother/skill-craft)），由微信公众号"三石随笔录"作者开发。它解决 Skill 系统中"不触发、乱触发、越用越跑偏"三类典型问题，核心洞察是：**大多数 Skill 的问题不在"有没有功能"，而在"有没有质量防护"——本质上没有把 Skill 当成需要工程化治理的对象**。

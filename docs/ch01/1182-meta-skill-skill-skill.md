@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Meta Skill：Skill 之上编排 Skill …"))
+    深度分析
+      核心观点
+    一句话定位
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Meta Skill：Skill 之上编排 Skill 的抽象层 涉及agent领域的核心技术议题。

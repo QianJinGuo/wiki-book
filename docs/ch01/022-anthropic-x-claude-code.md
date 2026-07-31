@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐ | 9.8KB | `entities/anthropic-founders-playbook-huashu-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic创始人行动手册 — 花叔x Claud…"))
+    核心框架
+      AI为精益创业三大基础设施
+      创业生命周期四阶段
+      想法阶段退出标准（三问）
+      MVP阶段PMF验证
+    深度分析
+      方法论范式转移：从'快速试错'到'智能验证'
+      Agentic编程重塑工程边界
+      三阶段退出标准的递进逻辑
+      AI工具选择的隐性前提
+    实践启示
+      想法阶段：建立证据驱动的验证流程
+      MVP阶段：CLAUDE.md是第一天就写的工…
+      发布阶段：用Claude Cowork做'创始…
+      规模化阶段：护城河建设的优先级
+    相关资源
+    相关实体
+```
+
 ## 核心框架
 ### AI为精益创业三大基础设施
 1. **对话式智能与研究**：竞品分析、财务建模、pitch deck、PRD文档、战略思考伙伴（反方代言人分析） ^[https://mp.weixin.qq.com/s/_IuT9RX6WC34J_Js2sAl4Q]

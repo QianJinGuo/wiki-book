@@ -6,6 +6,21 @@
 
 # LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLMReaper - DOM Based AI Con…"))
+    深度分析
+      为什么 LLM 对话特别脆弱
+      供应链攻击的持续重演
+      PoC 架构与实现
+      MutationObserver 与响应完…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 LLMReaper 是 thewhiteh4t 发布的概念验证（PoC），演示恶意 Chrome 扩展如何在用户毫不知情的情况下实时读取 ChatGPT、Claude、Gemini 等 LLM 聊天界面上的提示词与回答。攻击核心是利用浏览器标准的 `MutationObserver` API 监听 DOM 变化，配合合理的扩展权限（"read and change all your data on websites you visit"），再经由 service worker 把数据 POST 到攻击者控制的服务器。该项目映射到 MITRE ATT&CK 框架的多个 technique，是企业安全意识教育的实用工具。

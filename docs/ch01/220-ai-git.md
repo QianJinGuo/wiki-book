@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 21.0KB | `entities/ai-era-git-version-control-agentic-coding-practices.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI 时代的 Git 版本管理最佳实践"))
+    核心信息
+    一、新范式下的核心挑战
+      AI Coding Agent 打破的假设
+    二、核心痛点
+      2.1 Git 只记录 diff，不记录意图与…
+      2.2 脏工作区难以管控，变更噪声大
+      2.3 Git merge 只是文本校验，不保…
+      2.4 巨型提交让审查、回滚与定位全部失效
+    三、最佳实践
+      3.1 建立 Agent-Aware 的 Co…
+      3.2 小步提交：Checkpoint Com…
+      3.3 使用 Interactive Reba…
+      3.4 Atomic Commit：以原子粒度…
+    Task Description
+    What Changed
+    Key Design Decisions
+    Alternatives Considered
+```
+
 ## 核心信息
 
 - **主题**：AI 时代 Git 版本管理最佳实践（Agentic Coding 场景）

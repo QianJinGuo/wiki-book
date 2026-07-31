@@ -8,6 +8,27 @@
 
 # Netflix In-House LLM Serving Platform
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix In-House LLM Serving…"))
+    一句话
+    架构概览
+    四个核心设计决策
+      1. 引擎选型：vLLM 作为 Paved-P…
+      2. Triton 集成：vLLM Backe…
+      3. API 前端：OpenAI-Compat…
+      4. 部署策略：Red-Black vs Ve…
+    运营细节
+      Boot 序列
+      统一 Metrics 端点
+    约束解码（Constrained Decodi…
+    下一步投资方向
+    相关实体
+```
+
 ## 一句话
 
 Netflix AI Platform 团队自建了完整的 LLM Serving 平台——从模型部署到推理全栈自营，核心栈是 **vLLM (paved-path engine) + Triton Inference Server (compute backend) + OpenAI-compatible API (frontend)**，在生产中暴露了引擎选型、模型打包、部署策略和约束解码等环节的设计权衡。

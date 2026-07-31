@@ -30,6 +30,15 @@
 
 针对这一瓶颈，西安交通大学研究团队提出了 Fast LeWorldModel（Fast-LeWM），试图从根本上改变世界模
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("世界模型太慢？西交大提出Fast LeWorldMode…"))
+    要点
+```
+
 ## 要点
 - 型的预测方式：从 step-by-step rollout 变成 trajectory-level parallel prediction。
 - * 代码：https://github.com/Yuntian-Gao/Fast-LeWorldModel

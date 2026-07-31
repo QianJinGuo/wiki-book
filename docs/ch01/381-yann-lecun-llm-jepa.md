@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yann-lecun-llm-not-intelligence-jepa.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Yann LeCun 谈 LLM 不是智能与世界模型 J…"))
+    深度分析
+      四岁孩子 vs LLM：训练数据量的反差
+      LLM 为什么不是智能：根本性的架构缺陷
+      生成式架构的十年失败
+      JEPA 的核心创新：抽象状态而非像素
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Yann LeCun（杨立昆）2026 年关于 LLM 本质局限性的核心论述：LLM 只是"会思考的系统的接口"，真正的智能需要世界模型——能预测后果、能规划、能模拟现实的系统。LeCun 提出的替代方案是 **JEPA**（Joint Embedding Predictive Architecture，联合嵌入预测架构），通过预测抽象状态而非像素，绕过物理世界不可压缩噪声的难题。

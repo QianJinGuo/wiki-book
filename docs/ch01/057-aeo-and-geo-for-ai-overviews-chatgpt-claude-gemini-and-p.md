@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 7.7KB | `entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AEO and GEO for AI Overviews…"))
+    相关实体
+    深度分析
+      AEO vs GEO：概念溯源与实际差异
+      多表面爬取生态：被忽视的基础设施
+      内容被引用的核心逻辑：不可合成性
+      Agentic 体验：被低估的下一个表面
+    实践启示
+      立即可执行
+      内容策略层面
+      长期布局
+```
+
 ## 核心要点
 - AEO（Answer Engine Optimization）和 GEO（Generative Engine Optimization）本质上是 SEO 的延伸，而非独立学科 
 - 内容能否被引用取决于模型是否能从训练数据中合成——独特的第一手数据、具体的案例、真实的测试结果是关键 

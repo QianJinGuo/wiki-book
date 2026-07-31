@@ -6,6 +6,24 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vietnam to develop domestic …"))
+    深度分析
+      1. 数据主权与合规压力交织
+      2. 全球主权云浪潮的亚洲样本
+      3. 境外大厂的越南布局与政府诉求之间的结构性矛盾
+      4. 2030/2035 双时间表的战略意图
+    实践启示
+      对政府与技术决策者
+      对云服务商与 IT 厂商
+      对研究者与政策分析师
+    相关实体
+```
+
 ## 核心要点
 - 来源：www.theregister.com
 - 评分：v=8, c=8, product=64

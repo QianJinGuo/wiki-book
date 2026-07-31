@@ -6,6 +6,17 @@
 
 # Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic's Zero Trust for A…"))
+    相关实体
+    实战启示
+    上线状态 / 链接
+```
+
 ## 相关实体
 - [microsoft is quietly shopping for an openai replacement](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [vietnam to develop domestic cloud](ch01/1116-opd.html)

@@ -8,6 +8,22 @@
 
 > **Background**: This entity synthesizes the industry analysis from Semiconductor Engineering's June 2026 article on Wi-Fi 7/8 + edge AI convergence, with expert commentary from Synaptics, Infineon, and Keysight Technologies. The synthesis distills technical requirements, market dynamics, and emerging use cases into a reusable reference for edge AI infrastructure planning.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Edge AI Networking — Wi-Fi 7…"))
+    三个独有贡献
+    Technical Requirements …
+    Wi-Fi 7/8 Capabilities
+    Market Dynamics
+      Wi-Fi vs 5G/6G mmWave f…
+      Three Emerging Use Cases
+    Vendor Ecosystem
+    Source
+```
+
 ## 三个独有贡献
 
 1. **Wi-Fi 7/8 + edge AI 收敛分析** — Wi-Fi 在室内 edge AI 部署中胜出的具体技术原因（determinism、低延迟、PSA Level 3 安全）

@@ -6,6 +6,22 @@
 
 # Tapered Language Models：锥形参数分配的免费午餐
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tapered Language Models：锥形参数…"))
+    深度分析
+      实验验证
+      原因解释：深层冗余假说
+      与相关技术的对比
+    实践启示
+      工程落地建议
+      局限性
+      与现有知识库的关联
+```
+
 ## 摘要
 
 Mila（魁北克人工智能研究所）、康奈尔大学、蒙特利尔大学的联合研究，提出 Tapered Language Models（TLMs）：沿深度方向对 FFN 宽度进行余弦递减分配，前段 1.5x、后段 0.5x，平均宽度不变，总参数量和计算量完全不变。在 440M Transformer 上实现困惑度从 16.28 到 14.44 的改善（-1.84 点），零额外参数和 FLOPs。

@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 4.1KB | `entities/code-simulation-for-enterprise-engineering-playerz.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Code Simulation for Enterpri…"))
+    深度分析
+      Code Review 与 Code Simu…
+      Sim-1 的技术实现路径
+      与传统可观测性工具的关系
+      跨服务追踪的竞争优势
+    实践启示
+      引入模拟而非替换测试
+      落地时间线参考
+      评估自身适用性
+    相关实体
+```
+
 ## 核心要点
 - 来源：https://hs.playerzero.ai/ai-code-review
 - 评分：v=7 × c=8 = 56

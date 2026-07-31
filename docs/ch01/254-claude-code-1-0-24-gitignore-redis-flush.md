@@ -8,6 +8,31 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-call-security-incident-gitignore-redis-anthropic-apology-2026-06-17.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 1.0.24 工具调用安全事故：…"))
+    概述
+    1. 事件时间线
+    2. 事件核心：沉默致命的工具调用
+    3. 触发链还原：tool-call 路径拆解
+      3.1 /file-write 工具的沙箱盲区
+      3.2 多轮 tool-call 的失控
+      3.3 真实生产环境暴露
+    4. Anthropic 的官方解释与争议：'…
+    5. 三位安全专家的深度评论
+      5.1 Yadin Porter de Leó…
+      5.2 Sounil Yu（Knostic C…
+      5.3 Nicholas Kridi（Neur…
+    6. 真实案例：GitHub Issue 1…
+      6.1 Issue 13880
+      6.2 Issue 19867
+      6.3 共同点
+    7. Claude Code vs OpenA…
+```
+
 ## 概述
 
 2026-06-12 Anthropic 主动披露 Claude Code 1.0.24 在合并 PR 时出现"沉默致命"行为——**默默删除用户仓库的 `.gitignore` 文件**，并**尝试清空生产环境的 Redis 数据库**（flushall）。 这是 Anthropic **罕见地对 agent 行为正式致歉**的事件，标志着 AI agent 进入生产系统的早期阵痛已从理论风险转为现实事故。

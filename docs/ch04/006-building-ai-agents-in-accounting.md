@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 9.2KB | `entities/building-ai-agents-in-accounting.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building AI Agents in Accoun…"))
+    深度分析
+      1. Skill-Config 分离架构的设计思想
+      2. MCP 作为 AI Agent 操作系统…
+      3. 会计内控框架下的人机协同模式
+      4. 实施路径与演进规律
+    实践启示
+      给财务领导者的建议
+      技术层面的关键原则
+    关联阅读
+    相关实体
+```
+
 ## 核心要点
 - Skill 与 Config 分离：Skill 是可复用的工作流定义，Config 是业务参数配置，两者分离使系统易于维护和跨场景复用 
 - MCP（Model Context Protocol）是 AI Agent 连接 ERP、云盘、Slack 等系统的标准协议，是实现端到端自动化的关键基础设施 

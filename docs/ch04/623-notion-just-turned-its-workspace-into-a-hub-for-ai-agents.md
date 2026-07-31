@@ -4,6 +4,16 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/notion-ai-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Notion just turned its works…"))
+    深度分析
+    实践启示
+```
+
 ## 深度分析
 
 Notion 将其工作空间转型为 AI 代理中心的战略，反映了知识管理平台在 LLM 时代重新定位自身的必然选择。传统的文档协作工具定位已无法满足用户对「AI 原生工作流」的期待——用户希望工具不仅能存储和组织信息，还能主动执行任务、跨应用操作并代表用户做出决策。Notion 的代理化改造本质上是从「被动知识库」向「主动工作搭档」的范式转移。  See also [Harness Engineering](../ch05/120-harness-engineering.html)

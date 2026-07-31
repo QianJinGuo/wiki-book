@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-taxonomy-chengzihong-chengzihong.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AutoResearch 分类法：四种 Agent 循环…"))
+    深度分析
+      一、为什么'Agent Loop 设计'是研究…
+      二、四种循环的工程取舍
+      三、四维分析框架的实战价值
+      四、与'传统 AutoML'的本质区别
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 "白白小白"（陈子弘）系统性整理 AutoResearch（自动机器学习研究）领域的四种主流 Agent 循环设计：线性 Keep-or-Discard、树搜索、遗传进化池、异步多 Agent 进化。文章核心价值在于给出一个**通用四维分析框架**（搜索拓扑、反馈信号、记忆架构、决策主体），可解构任何新的 AutoResearch 方法并直接评估其优劣势。当基模固定时，**Agent 循环设计就是研究效率竞争的本质**——这正是 [Yann Dubois 强调的"AutoResearch = 基模 + Agent Loop"](../ch01/390-openai.html)。

@@ -19,6 +19,17 @@ Building a PyTorch training loop is fairly straightforward, but getting everythi
 
 The sections below will go through each operation in sequence, explaining exactly how to write each section, and all the common mistakes to watch out for. Distributed training, FSDP, and multi-GPU setups are out of scope here, but we'll come back to that in a future essay. _(The animation above was produced by running the loop on synthetic data and capturing the decision boundary at each epoch.)_
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The annotated PyTorch traini…"))
+    The complete loop
+    TL;DR Where the order r…
+    The data
+```
+
 ## The complete loop
 
 Let's look, first of all, at the complete training loop. You don't need to understand or memorise it yet, just get a feel for the structure.

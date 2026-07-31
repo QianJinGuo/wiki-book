@@ -6,6 +6,36 @@
 
 # DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek 成本迁移：从 KV Cache 到 H…"))
+    核心论点
+    技术主线：成本如何从模型侧搬到系统层
+      V2→V4 效率演进
+      成本分层策略
+      KV Cache 不是边角料
+      Engram 的信号
+    Harness 层：成本入口
+      Agent Harness Engineeri…
+      Harness 承担的实际成本
+    核心判断：DeepSeek 能不能定义工作负载
+    五大后续观察信号
+    深度分析
+      成本转移的实质是一场硬件分工重构
+      Jevons Paradox 在 AI 成本里…
+      Harness 是模型和真实工作现场的中间层
+      TileLang/TileKernels 的工…
+    实践启示
+      重新设计上下文策略
+      用缓存思维重新审视工作流
+      把 Harness 成本纳入 TCO 计算
+      关注 Engram 生态的成熟度
+    架构图
+```
+
 ## 核心论点
 
 DeepSeek 值得看的地方，已经越过模型便宜本身，落到了"模型之外"的系统层。

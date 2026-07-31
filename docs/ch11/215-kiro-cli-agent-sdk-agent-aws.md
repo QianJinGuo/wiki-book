@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/use-kiro-cli-as-agent-sdk-build-your-agent-app-with-one-click-subscription.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("把 Kiro CLI 当作 Agent SDK：一键订阅…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

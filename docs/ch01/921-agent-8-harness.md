@@ -22,6 +22,21 @@
 
 作者 sysls（@systematicls）是 OpenForage 创始人，曾在多家顶级对冲基金负责管理系统化投资流程。目前专注于 AI agent 工程，致力于构建长时自主系统和定制 harness 框架，帮助代理克服上下文焦虑、规划偏差等常见问题。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("长时自主Agent，先解决这8个Harness核心问题"))
+    引言
+    agent 会怎么犯蠢
+      1. 任务前：上下文没吃够 Pre-Task
+      2. 规划阶段：上下文不完整 Plannin…
+      3. 规划阶段：短期思维 Planning …
+    任务执行阶段的陷阱
+      4. 任务阶段：上下文焦虑 Task — C…
+```
+
 ## 引言
 
 如果你想给真正长时运行的自主系统设计一套 Harness，就得把下面这些问题想透。

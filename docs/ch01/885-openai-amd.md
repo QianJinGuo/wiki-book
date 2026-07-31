@@ -28,6 +28,15 @@ OpenAI，这次又真·Open了一下。
 
 有网友表示，把这些厂商聚在一起合作制定标准，简直比实现AGI还难以协调。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI公开大规模稳定训练的秘密，英伟达AMD英特尔…"))
+    大规模集群，也要通讯稳定
+```
+
 ## 大规模集群，也要通讯稳定
 
 这套MRC（Multipath Reliable Connection）协议，是OpenAI联合英伟达、AMD、英特尔、微软和博通，花了两年时间做出来的，上周通过Open Compute Project向全行业开放。

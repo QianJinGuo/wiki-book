@@ -8,6 +8,26 @@
 
 > **Core insight**: Ethan Mollick（One Useful Thing）2026-01 对 Claude Code 的端到端实测：单条 prompt "Develop a startup that makes $1000/month" 触发 **1 小时 14 分钟自主工作**，创建数百文件 + 部署真实可售卖网站。背后是 **compaction / Skills / subagents / MCP 四个 magic trick** 的组合。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Ethan Mollick: Claude Code a…"))
+    现象级实测
+    能力突变的两个关键
+    Claude Code 的四个 Magic T…
+      1. Compaction（Memento 比喻）
+      2. Skills（Matrix 比喻）
+      3. Subagents
+      4. Model Context Protoc…
+    对非程序员的实战指南
+    Mollick 自己的例子：历史世界模拟器
+    风险与警告
+    与 Opus 4 7 Launch Clau…
+    三个独到洞察
+```
+
 ## 现象级实测
 
 Mollick 给 Claude Code 一条 prompt：

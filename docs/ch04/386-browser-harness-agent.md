@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/browser-harness.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Browser Harness — 自愈型浏览器 Age…"))
+    Overview
+    架构
+    核心创新：自愈机制（Self-Healing）
+    Domain-Skills 自动沉淀
+    与同类方案对比
+    安全边界
+    深度分析
+      自愈机制的架构意义
+      去框架化的代价与收益
+      与 AgentBrowser 的路线对比
+    实践启示
+      何时选择 Browser Harness
+      自愈机制的使用技巧
+      安全使用的最佳实践
+```
+
 ## Overview
 Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是**去框架化**：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。
 与 [AgentBrowser](../ch09/071-agent-browser-claude-code-qoderwork.html)、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互。

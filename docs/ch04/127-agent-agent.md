@@ -6,6 +6,41 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ai-companion-agent-architecture.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德伴行Agent：空间智能高可用Agent架构"))
+    核心架构：Supervisor驱动的双内核Ag…
+      双内核设计
+      架构收益
+    ReAct推理引擎优化
+      业界方案对比
+      四大首创优化
+      训练效果
+    Skill动态注入系统
+      问题：全量Prompt注入的三重困境
+      三层筛选机制
+      核心效果
+    时空上下文体系
+      统一时空状态
+      五层时空粒度 × 四类记忆表征
+      检索：KV精确 + 向量语义 + 置信度门控
+    端到端评测结论
+    深度分析
+      双内核架构的本质：可控自由度优先，而非最大自由度
+      ReAct优化的本质：推理轮次压缩就是用户体验
+      Skill动态注入的三层筛选：分层决策的工程价值
+      PRISM框架的多智能体增益分解：可证的方向
+    实践启示
+      构建垂直Agent的第一步：定义'可控自由度'
+      ReAct优化的实战检查清单
+      Skill注入的最小有效配置
+      垂直场景模型训练的'合成+真实'双路径
+    与Hermes Agent的关系
+```
+
 ## 核心架构：Supervisor驱动的双内核Agent
 伴行Agent的本质是**空间智能内核 + 行动引擎**：以用户的实时位置和空间任务为中心，持续理解"人在哪里、要去哪、周围有什么、接下来怎么行动"。
 

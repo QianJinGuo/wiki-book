@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Mini Shai-Hulud Strikes Agai…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 2026年5月11日，TeamPCP 发动协同供应链攻击，同时入侵 npm 和 PyPI 生态系统
 - 受影响命名空间：@tanstack（含 @tanstack/react-router，1200万周下载量）、@uipath、@mistralai

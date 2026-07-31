@@ -177,6 +177,25 @@ OWL的工具组件在camel/camel/toolkits路径下实现，大致可分为以下
     You are a helpful planning agent that can assist users in planning complextasks which need multi-step browser interaction.=============================================中文翻译分割线=============================================你是一个实用的规划助手，能够帮助用户规划需要多步浏览器交互的复杂任务。
 除此之外，在交互流程上，BrowserToolkit使用了ReAct框架，主流程中的user agent和assistant agent都没有实现的这么复杂。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent框架OWL原理详解"))
+    深度分析
+      1. 多Agent协作的架构优势
+      2. System Prompt的双重锚定作用
+      3. 记忆管理的设计权衡
+      4. 工具生态的护城河效应
+    实践启示
+      1. 何时使用OWL架构
+      2. 记忆策略选择建议
+      3. 工具集成的最佳实践
+      4. System Prompt设计要点
+    相关实体
+```
+
 ## 深度分析
 ### 1. 多Agent协作的架构优势
 OWL采用的多Agent架构体现了"分而治之"的设计思想。将复杂的任务分解为用户监督者(User Agent)和任务执行者(Assistant Agent)两个角色，通过role-play的方式让两个LLM进行对话协作。这种设计的精妙之处在于：

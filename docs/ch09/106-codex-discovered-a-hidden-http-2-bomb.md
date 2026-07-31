@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/califio-codex-http2-hpack-bomb-880k-servers.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex Discovered a Hidden HT…"))
+    深度分析
+      '放大率不来自解码量'是新型 bomb 的本质
+      RFC 9113 §8.2.3 自身的'友好性…
+      '压到 swap 但不让 OOM' 是更阴险的…
+      Codex 这次发现是 AI 安全研究范式的分水岭
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Calif.io 2026-06-02 公开披露"HTTP/2 Bomb"——一种利用 HPACK 索引引用 + 零字节流控窗口组成的远程 DoS 攻击，影响 nginx/Apache/IIS/Envoy/Pingora 五大主流 web 服务器的默认配置。Shodan 扫描发现 **880,000+** 暴露站点存在风险。该攻击链由 OpenAI Codex 编码模型发现，是 AI 作为漏洞发现者的首批公开重大披露之一。

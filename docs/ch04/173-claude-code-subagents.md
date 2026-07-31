@@ -8,6 +8,26 @@
 # Claude Code Subagents 深度指南：上下文卫生实战
 > Source: https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Subagents 深度指南：上…"))
+    核心论点
+    三层价值
+    长会话为什么会变脏
+    内置 Explore 和 Plan
+    fresh vs fork
+    context-timeline 钩子
+    四类高频自定义 Subagent
+      1. 代码审查
+      2. 影响面分析
+      3. 测试诊断
+      4. 文档一致性检查
+    Subagent 模板示例
+```
+
 ## 核心论点
 Subagent 的本质不是"多一个 Agent 帮忙"，而是把**必须发生但留在主窗口就是污染的探索过程**，隔离到独立工作区，主窗口只拿回结果。
 

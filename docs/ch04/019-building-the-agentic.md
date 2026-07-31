@@ -8,6 +8,24 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-the-agentic-future-developer-highlights-from-io-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building the agentic"))
+    深度分析
+      1. Gemini 3.5 Flash：面向 …
+      2. Antigravity 平台：Googl…
+      3. Managed Agents in Ge…
+      4. AI Studio 移动端 + Andr…
+    实践启示
+      对于个人开发者
+      对于企业技术负责人
+      对于 AI/ML 研究者
+    相关实体
+```
+
 ## 核心要点
 
 - Google 在 I/O 2026 正式推出 Gemini 3.5 Flash，性能超越 Gemini 3.1 Pro 且速度提升 4 倍

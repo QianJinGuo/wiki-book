@@ -8,6 +8,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-14-code-intelligence-1778979927.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Linear Code Intelligence: Co…"))
+    深度分析
+      从 Issue Tracking 到 Code…
+      谁是受益者——三种角色三种价值
+      GitHub 集成作为访问控制层
+      Linear Agent 的整体演化路径
+    实践启示
+      对使用 Linear 的团队
+      对构建 AI Agent 的工程师
+      对 AI 产品架构师
+    相关实体
+```
+
 ## 摘要
 
 Linear 在 2026-05-14 发布 Code Intelligence 功能，给 Linear Agent 提供对其连接代码仓库的受控访问权限。这把仓库转化为整个团队可用的"共享产品上下文"，让 Agent 不仅能基于 issue/project/doc 推理，还能理解产品的实际实现细节。功能以 Public Beta 形式向 Business 与 Enterprise 计划开放，beta 期间免费。

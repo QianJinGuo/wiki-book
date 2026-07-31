@@ -4,6 +4,16 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/openclaw-agent-observability-session-logs-otel-sls.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("你的 AI Agent 真的在受控运行吗？"))
+    深度分析
+    实践启示
+```
+
 ## 深度分析
 
 **1. 城墙与哨兵：重新理解 AI Agent 安全模型**

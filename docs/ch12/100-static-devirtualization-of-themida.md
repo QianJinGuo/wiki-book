@@ -6,6 +6,18 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Static Devirtualization of T…"))
+    关键要点
+    深度分析
+      实践启示
+    相关实体
+```
+
 ## 关键要点
 
 ```mermaid

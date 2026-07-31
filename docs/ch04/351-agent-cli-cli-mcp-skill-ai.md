@@ -9,6 +9,26 @@
 > **来源**：阿里技术（郭小成）。从历史演进和结构性优势分析 CLI 在 Agent 时代复兴的根本原因，提出 CLI/MCP/SKILL 三层分层模型和 AI 友好设计四原则。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-cli-agent-era-alibaba-tech-郭小成.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("为什么 Agent 时代大家都在做 CLI——CLI/M…"))
+    核心框架：CLI / MCP / SKILL …
+    Agent + CLI 五大结构性优势
+    AI 友好产品设计四原则
+    人机协作可观测性
+    Agent First 设计范式（类比 Mob…
+    历史视角
+    深度分析
+      CLI 在 Agent 时代复兴的结构性原因
+      自描述性作为 Agent 系统的核心设计原则
+      CLI/MCP/SKILL 三层模型的能力栈逻辑
+      Unix 管道的即兴编排 vs. MCP 的标…
+    实践启示
+```
+
 ## 核心框架：CLI / MCP / SKILL 三层模型
 
 三个工具不是竞争关系，是能力栈的不同层级：

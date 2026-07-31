@@ -6,6 +6,22 @@
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-architecture.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent 记忆系统"))
+    概述
+    三层架构
+    冻结快照模式（核心设计）
+    双轨记忆
+    单 Provider 约束
+    上下文围栏（Context Fencing）
+    安全扫描
+    原子写入
+```
+
 ## 概述
 Nous Research 在 2025 年末开源的 Hermes Agent，其记忆系统是当前最具工程深度的 Agent 记忆方案之一。核心特点：三层架构、八种可插拔后端、冻结快照保护 prefix cache、上下文围栏防注入。
 仓库：github.com/NousResearch/hermes-agent

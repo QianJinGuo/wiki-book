@@ -8,6 +8,27 @@
 
 阿里云开发者分享钉钉AI招聘场景的Agent Harness工程实践，从范式理论到真实落地的完整案例。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("给野马套上缰绳：Agent Harness 工程实践 —…"))
+    一句话
+    核心内容
+      业务背景
+      Harness设计
+      落地经验
+    深度分析
+      1. Agent = Model + Harn…
+      2. 四条反直觉铁律是 Harness Eng…
+      3. 从'全能 Agent'到'2 Agent…
+      4. 六种工程模式构成 Harness 的'设…
+    实践启示
+    相关实体
+    标签
+```
+
 ## 一句话
 
 **钉钉AI招聘的Agent Harness实践案例，从理论到生产的完整落地路径。**

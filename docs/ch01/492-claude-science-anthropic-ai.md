@@ -6,6 +6,21 @@
 
 # Claude Science — Anthropic 推出面向科研的 AI 工作台
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Science — Anthropic 推…"))
+    深度分析
+      科研 Agent 的'前台-后台'协作模式
+      科研 Agent 面临的三大核心挑战
+      AI 三巨头的科研路线分化
+      行业验证与争议
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Anthropic 推出的 Claude Science 是一款面向科研人员的 AI 工作台，被誉为"科研界的 Claude Code"。它并非一个新的基础模型，而是一个面向科研工作流的完整平台——整合了文献检索、数据分析、代码执行、图表生成、报告撰写等科研全流程能力。支持 macOS 和 Linux，面向 Pro、Max、Team、Enterprise 用户开放，预置 60+ 科学技能和连接器，直连 UniProt、PDB、Ensembl 等数百个权威科研数据库。

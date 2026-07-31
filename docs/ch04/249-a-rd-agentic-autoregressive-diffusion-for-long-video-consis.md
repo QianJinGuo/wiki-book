@@ -6,6 +6,32 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ard-agentic-autoregressive-diffusion-for-long-video-consistency.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A²RD: Agentic Autoregressive…"))
+    Summary
+    核心架构解析
+      Multimodal Video Memory…
+      Adaptive Segment Genera…
+      Hierarchical Test-Time …
+    工作流程：两阶段闭环
+    LVBench-C 基准：非线性的实体与环境转换
+    术语澄清
+    深度分析
+      A²RD 的设计哲学：解耦与闭环
+      训练免费的代价与收益
+      HITS 的创新意义：测试时学习的范式延伸
+      与竞争方案的差异化
+    实践启示
+      对于视频生成研究社区
+      对于工业应用
+      对于 Agent 系统设计
+    相关实体
+```
+
 ## Summary
 > Score: 8×8=64
 A²RD (Agentic Autoregressive Diffusion) 是 Google Cloud AI Research 与新加坡国立大学联合提出的长视频生成架构，通过"检索-合成-精炼-更新"闭环Cycle实现分钟级视频的自一致性。核心创新包括 Multimodal Video Memory（多模态视频记忆）、Adaptive Segment Generation（自适应片段生成）和 Hierarchical Test-Time Self-Improvement（分层测试时自改进），在 1-10 分钟视频上较 SOTA 提升 30% 一致性、20% 叙事连贯性。

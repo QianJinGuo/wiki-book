@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/owner-worker-verifier-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Owner-Worker-Verifier 架构"))
+    三角色
+    核心原则
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 三角色
 | 角色 | 职责 | 特点 | 
 |------|------|------| 

@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt-ever-says-curl-creat.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic's bug-hunting Myth…"))
+    Summary
+    Notes
+    相关实体
+    深度分析
+      神话破灭：Mythos 的实际能力边界
+      营销叙事 vs 工程现实
+      AI 安全工具的生态位：增量辅助而非范式颠覆
+      cURL 作为测试基准的代表性
+    实践启示
+      对 AI 安全工具开发者
+      对开源项目维护者
+      对安全研究员
+      对企业安全团队
+```
+
 ## Summary
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt-ever-says-curl-creat.md)
 

@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 17.7KB | `entities/2028-two-scenarios-for-global-ai-leadership.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("2028: Two scenarios for glob…"))
+    核心观点
+    背景与紧迫性
+    算力优势的复利效应
+    中国AI竞争力的两大漏洞
+      漏洞一：非法获取算力
+      漏洞二：蒸馏攻击（Distillation A…
+    四个竞争前沿
+    '齐头并进'风险是AI安全领域最被低估的威胁
+    Mythos Preview：'觉醒时刻'
+    AI作为'加速器'的级联效应
+```
+
 ## 核心观点
 
 民主国家必须主导AI的发展和部署。这些国家和政治体制能够塑造管理这些系统的规则和规范。

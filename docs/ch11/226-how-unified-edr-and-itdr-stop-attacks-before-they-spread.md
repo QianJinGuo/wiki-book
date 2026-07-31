@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/huntress-edr-itdr-unified-detection.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Unified EDR and ITDR Sto…"))
+    技术细节
+      EDR + ITDR 关联分析
+      MITRE ATTandCK 映射
+    相关实体
+    深度分析
+      1. 端点与身份融合的技术必然性
+      2. 日志延迟是身份安全的核心瓶颈
+      3. Infostealer 驱动的身份安全新范式
+      4. 从'检测'到'响应'的范式转变
+    实践启示
+      对安全团队的启示
+      对安全产品选型的启示
+      对企业安全架构的启示
+```
+
 ## 核心要点
 
 ```mermaid

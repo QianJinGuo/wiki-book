@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/anthropic-claude-managed-agents-platform-launch.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Claude 托管 Agent 平台发布"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 Anthropic 此次发布的意义远不止功能更新，而是清晰定义了"AI Agent 基础设施供应商"这一角色。与 OpenAI、Google 侧重模型能力不同，Anthropic 选择从工程化角度切入——把 Agent 运行所需的上下文管理、容器环境、任务编排、质量评估全部变成托管服务。这一战略选择有几个深意：
 **平台化 vs 模型化**：当业界还在比拼模型智商时，Anthropic 已经把竞争维度拉到了"谁能让 Agent 跑得更稳"。这是从"智力竞争"到"基础设施竞争"的升维。

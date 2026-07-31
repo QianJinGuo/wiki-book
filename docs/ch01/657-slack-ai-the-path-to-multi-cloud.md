@@ -6,6 +6,21 @@
 
 # Slack AI: The Path to Multi-Cloud
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Slack AI: The Path to Multi-…"))
+    深度分析
+      四阶段演进的工程动因
+      智能路由层的架构深度
+      多云的真实代价
+      '零事故迁移'方法论
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Slack AI 从单云 AWS SageMaker 到多云 LLM 推理的演进历程跨越三年四个阶段。从最初的 SageMaker 自托管（面临扩缩容延迟、GPU 稀缺、过度预置三大痛点），到迁移至 Amazon Bedrock 获得模型访问速度和运维简化，再到引入 Bedrock On-Demand 模式解决空闲容量问题，最终扩展到 GCP Vertex AI 实现真正的多云架构。核心创新在于构建了**智能路由层**（Intelligent Routing Layer）——基于实时遥测指标（TTFT、错误率、P90 延迟）自动在跨云、跨模型间分发请求，并实现熔断恢复机制。

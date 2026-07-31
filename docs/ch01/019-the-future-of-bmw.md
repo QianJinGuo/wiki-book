@@ -8,6 +8,24 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Future of BMW"))
+    相关实体
+    深度分析
+      1. Neue Klasse 的设计策略：渐进…
+      2. '魔法比例'：跨文化的通用设计语言
+      3. 车内技术整合：分层设计思维
+      4. 硬件架构革命：20 倍算力与三分之一布线
+    实践启示
+      对汽车制造商的启示
+      对设计师的启示
+      对技术战略的启示
+```
+
 ## 核心要点
 
 - **人物背景**：Max Missoni 曾任职于 Polestar，现为 BMW 副总裁，负责中型和大型车辆设计 

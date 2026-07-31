@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/agentic-harness-engineering-ahe.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AHE：Agentic Harness Engineer…"))
+    核心问题
+    论文信息
+    方法：三角色 × 三层可观测
+      三角色
+      三层可观测性
+    实验结果
+      修改分布
+    关键洞察
+      '事实比策略更可迁移'
+      人工先验的陷阱
+      核心启示
+    深度分析
+      AHE 的工程哲学：从直觉迭代到假说-验证闭环
+      三层可观测性的递进价值
+      '事实比策略更可迁移'的深层含义
+      人工先验的双刃剑效应
+    相关链接
+    实践启示
+      对 Harness 工程团队
+      对 AI  工程平台设计者
+```
+
 ## 核心问题
 Harness Engineering 迭代依赖人工经验，模型以月为单位进化、任务场景往长尾分布发展——如何让 Harness 自动从经验中学习并改进？
 

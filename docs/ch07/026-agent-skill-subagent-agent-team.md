@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/baidu-netdisk-three-layer-agent-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("三层 Agent 架构：Skill / SubAgent…"))
+    三层职责分层
+    Skill：执行稳定性的核心
+    SubAgent：上下文隔离与 Memory 传递
+    Agent Team：四路并行与 Mailbo…
+    核心设计原则
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 三层职责分层
 | 层级 | 定位 | 解决的问题 | 适用场景 | ].md]
 |------|------|-----------|---------| ].md]

@@ -6,6 +6,17 @@
 
 # Gemini 3.5: frontier intelligence with action
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini 3.5: frontier intelli…"))
+    深度分析
+    相关实体
+    相关主题
+```
+
 ## 深度分析
 
 ---

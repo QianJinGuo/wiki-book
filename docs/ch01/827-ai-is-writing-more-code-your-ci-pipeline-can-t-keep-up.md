@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/ai-is-writing-more-code-your-ci-pipeline.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Is Writing More Code. You…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - AI 工具正加速代码生成，CI 流水线面临吞吐量压力
 - 测试覆盖率与安全扫描需要重新设计以适应 AI 生成代码

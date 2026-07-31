@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/offline-llm-energy-use-html.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Apple Silicon costs more tha…"))
+    深度分析
+      成本结构解构
+      Memory-bound 的本质
+      本地推理的真正价值主张
+      消费级设备的能力跃迁
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文通过详细的成本核算，揭示了一个反直觉的事实：在 Apple Silicon（M5 MacBook Pro）上运行本地 LLM 推理的单位 token 成本，实际上是通过 OpenRouter 调用云端同等模型的约 3 倍。硬件折旧而非电力成本是主导因素，推理速度的差距进一步放大了这一劣势。

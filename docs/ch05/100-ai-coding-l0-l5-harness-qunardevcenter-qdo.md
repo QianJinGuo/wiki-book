@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/qunar-ai-coding-platform-practice-l0-l5-harness.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("去哪儿网 AI Coding 研发平台实践：L0-L5 …"))
+    核心概述
+    AI Coding L0-L5 自动化分级
+    Harness 四把锁
+    度量体系
+    QunarDevCenter
+    天弦 QDO
+    关键经验
+    相关实体
+```
+
 ## 核心概述
 
 去哪儿旅行（Qunar）基础架构负责人李佳奇的技术大会分享，完整还原一个数千人研发组织全面落地 AI Coding 的路径。核心框架包括：AI Coding L0-L5 自动化分级体系、Harness 四把锁控制模型、QunarDevCenter 数据采集平台、天弦 QDO 编排引擎。

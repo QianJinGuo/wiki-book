@@ -8,6 +8,16 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-06-Anthropic让AI先读员工手册再上岗-失控率从54-降到7--新智元.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic让AI先读员工手册再上岗：失控率从54…"))
+    技术分析
+      --- 新智元报道
+```
+
 ## 核心要点
 
 Anthropic让AI先读员工手册再上岗：失控率从54%降到7%

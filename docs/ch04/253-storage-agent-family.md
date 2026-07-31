@@ -10,6 +10,21 @@
 > **来源**: https://mp.weixin.qq.com/s/tEDiv1KjsQvKO4Ffm41aOg
 > **发布**: 字节跳动技术团队 (2026-07-20)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Storage Agent Family: 云存储人机交…"))
+    深度分析
+      从'功能可用'到'体验可用'的产品思维跃迁
+      家族架构的深层逻辑：避免'中央 Agent'的…
+      安全模型的核心创新：凭证贯穿而非权限放大
+      TLS Agent 的 LLMWiki：超越传…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Storage Agent Family 是火山引擎（Volcano Engine）推出的面向云存储产品的 AI Agent 家族体系。不同于传统的"统一大 Agent"方案，该体系让每款存储产品（TOS、TLS、vePFS、EFS、EBS、MQ 等）各自拥有独立的 Agent，并共同遵守一套家族约定——包括一致的操作节奏、一致的安全底线、一致的用户记忆机制。每个 Agent 由对应的产品团队独立打造，但对外呈现统一的"家族式"交互体验。其核心价值在于将过去需要跨多个控制台页面、甚至写脚本才能完成的存储管理操作，简化为一句自然语言描述意图，Agent 自主规划并逐步执行。

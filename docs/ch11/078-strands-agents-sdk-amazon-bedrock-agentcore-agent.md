@@ -10,6 +10,21 @@ AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Age
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/product-ad-review-agent-with-strands-sdk-bedrock.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Strands Agents SDK 和 Amaz…"))
+    深度分析
+      Agents as Tools 是企业级 Ag…
+      模型分层选型是被严重低估的工程实践
+      Bedrock AgentCore Runti…
+      OCR 提示词的「负面清单」工程
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

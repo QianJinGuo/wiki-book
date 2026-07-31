@@ -7,6 +7,24 @@
 # Hermes Agent — /goal 目标管理与 Kanban 多 agent 协作
 > Hermes Agent v0.13.0 的两个核心功能： `/goal` 目标管理和 `Kanban` 多 agent 团队协作。本教程来自「AI赋能说」，十分钟跑通。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent v0.13 — /goal 目…"))
+    核心功能
+      /goal — 让单个 agent 自主跑目标
+      Kanban — 多 agent 团队协作
+    常见坑
+    深度分析
+    实践启示
+    安装
+    相关链接
+    Related
+    相关实体
+```
+
 ## 核心功能
 ### /goal — 让单个 agent 自主跑目标
 ```
