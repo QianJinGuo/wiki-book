@@ -1,6 +1,6 @@
 ---
 title: 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
-type: article
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/Bz1XiZrXeYlGGuE6UBdq5A
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

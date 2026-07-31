@@ -4,56 +4,10 @@
 
 > 📊 Level ⭐⭐ | 17.6KB | `entities/triton-l2缓存命中优化矩阵乘法fp16int8详解及性能测试.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Triton L2缓存命中优化矩阵乘法fp16int8详解及性能测试"))
-    文章概要
-    基础概念
-    L2缓存命中优化矩阵乘法
-      分组计算 利用 L2 Cache 的关键
-    int8精度下的Triton Matmul
-    性能测试结论
-    L2 Cache 命中优化的本质 数据访问模式
-    Triton 的抽象层次 平衡易用性与性能
-    int8 量化 精度与性能的博弈
-```
-
 ## 文章概要
 "L2缓存命中优化矩阵乘法"是Triton官方提供的第三个教程，本文将结合硬件特性对此部分内容进行详解。同时笔者也简单的做了下int8 matul的魔改，并进行了量化/非量化性能测试及分析。
 
 ## 基础概念
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 Triton虽然是python前端，但是编程思维和python还是有比较大的区别的，更倾向于cuda编程。但和cuda编程相比，Triton开发不需要手动管理线程块、网格、线程束等结构。此外，Triton 编译器会自动对代码进行优化，包括内存访问模式优化、指令调度、并行性优化等。Triton编译器能够根据不同的 GPU 硬件架构和输入数据大小，生成高效的机器代码，减少了开发者手动优化的工作量。
 使用Triton编程最主要的目标是用来做 **算子融合** 。模型在训练时候，除了gpu的计算时间外，从显存（HBM）把数据搬运到SRAM也占用了很多时间。举个例子，算一个最简单的标准化(x-mean)/var，需要涉及到如下步骤：1.读x+读mean 2.写x-mean 3.读x-mean，读var 4.写(x-mean)/var，看起来十分的啰嗦，并且要保存中间的临时变量，占用额外显存。如果想让线程块端到端的计算结果（只读一次写一次），就需要做算子融合了。flash attention本质上就是一种算子融合，加速效果和显存节约量都比较显著，尤其是在长序列的时候。之前在训练Steel-LLM（https://github.com/zhanshijinwat/Steel-LLM）的时候，笔者专门消融过算子融合带来的训练加速效果，可以看我的往期文章（https://zhuanlan.zhihu.com/p/694223107），即使仅对RMSNorm做算子融合，训练也有10%左右的吞吐提升，显存节约了4g。
 接下来，了解一点GPU相关的基础知识（具体数值是A100显卡的），以便后边更好的理解Triton编程。先来看看GPU SM（Streaming Multiprocessor，流式多处理器），其是GPU上的基础硬件单元，由如下几部分组成：
@@ -146,7 +100,7 @@ int8 量化在矩阵乘法中的应用揭示了一个深刻的工程矛盾：**�
 3. **性能测试要覆盖多种矩阵规模**：文章中 M > 15000 时的性能骤降提醒我们，性能特性可能随输入规模非线性变化。在做性能基准测试时，应该覆盖各种可能的输入规模，而不仅仅是常用的那几个。
 ## 相关实体
 
-- [ai芯片架构：从逻辑门到矩阵乘法](../ch05/094-ai.html)
+- [ai芯片架构：从逻辑门到矩阵乘法](../ch05/095-ai.html)
 
 ---
 

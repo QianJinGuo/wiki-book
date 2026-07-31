@@ -8,53 +8,16 @@
 
 > **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=8×8=64。
 
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 演示浏览器扩展通过 DOM 访问静默窃取 LLM 对话的安全研究，涵盖 MutationObserver 攻击向量和已知供应链事件
 
 ---
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch04/296-aws-security-agent.html)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch04/298-aws-security-agent.html)
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/033-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
-- [Novee Security How To Get A 100 Conference Acceptance Rate The No](../ch01/1243-0.html)
+- [Novee Security How To Get A 100 Conference Acceptance Rate The No](../ch01/1248-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
 

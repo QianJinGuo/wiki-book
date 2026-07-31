@@ -3,7 +3,7 @@ title: "pi mono github"
 source_url: https://github.com/badlogic/pi-mono
 ingested: 2026-05-01
 sha256: d3dfc4ad8b3fda50cdbc3fbd3d64a04f3790321d766ec953763865e018b4586e
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [github]

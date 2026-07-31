@@ -2,7 +2,7 @@
 title: "Introducing Claude Sonnet 5 on AWS: Anthropic’s most capable Sonnet model"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: db64204bb2ebd13f7ae0561fbb122a3368cc0cccde6bb0515e5d4b17a6476346
 ---

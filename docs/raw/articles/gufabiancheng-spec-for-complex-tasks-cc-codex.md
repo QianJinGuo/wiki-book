@@ -5,7 +5,7 @@ title: "复杂任务的 Spec 怎么写"
 author: 古法程序员
 publisher: cc-codex实践
 date: 2026-05-25
-type: article
+type: raw-article
 ingested: 2026-06-18
 review_value: 8
 review_confidence: 8

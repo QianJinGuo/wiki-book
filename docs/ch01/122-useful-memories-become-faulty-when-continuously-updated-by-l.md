@@ -6,7 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
 
-
 ## 深度分析
 这篇来自 UIUC Dylan Zhang 的研究是 2026 年最具实践意义的 AI Agent 基础研究之一，其核心发现对当前主流的 Agent 记忆架构提出了根本性质疑：
 **1. 核心发现：迭代生成导致知识漂移**
@@ -24,43 +23,6 @@
 对于所有依赖长期记忆进行 self-improving 的 AI Agent 系统——无论是客服 Agent、编码 Agent 还是研究 Agent——这项研究意味着"让 Agent 不断从经验中学习"的设计可能正在积累错误而非提升性能。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 - **不要强制要求 Agent 在每次任务后进行记忆抽象**：强制 consolidation（当前多数系统的默认值）会主动破坏记忆质量。让 Agent 选择性地保留或删除 raw episodes，禁用自动抽象。
 - **评估 Agent 记忆系统时，用"有记忆 vs 无记忆"的 baseline 对比是不够的**：必须测试"新问题 vs 相邻变体 vs 相同问题"三种场景的准确率。如果记忆只在 exact repeat 上有效，在变体上反而造成干扰，则该记忆系统是净负担。
 - **Consolidator 的 schedule 至关重要**：如果必须进行 abstraction，Static-Group（按任务族分组后一次性抽象）远优于 Stream（增量式）。批次越大、越异质，抽象质量越低。
@@ -70,7 +32,7 @@ graph TB
 ## 相关实体
 
 - [Build Live Translation Apps with gpt-realtime-translate](ch01/151-build-live-translation-apps-with-gpt-realtime-translate.html)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/738-chatgpt.html)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/951-chatgpt.html)
 
 ---
 

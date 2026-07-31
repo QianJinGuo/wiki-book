@@ -6,18 +6,6 @@
 
 # 谷歌风雨飘摇，市值蒸发数千亿美元！Gemini Spark能救场吗？
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("谷歌风雨飘摇 市值蒸发数千亿美元 Gemini Spark能救场吗"))
-    谷歌悖论 最该赢的公司为何起了大早赶了晚集
-    Gemini Spark 的产品架构与竞品对比
-    行业趋势 AI 从「副驾驶」到「司机」
-    人才流失背后的深层信号
-```
-
 ## 摘要
 
 2026年6月，谷歌经历了一周内四位核心人才接连流失的震荡：Transformer 八子之一 Noam Shazeer 离开去 OpenAI（谷歌曾花约 27 亿美元将其请回），AlphaFold 主导者、诺贝尔化学奖得主 John Jumper 去 Anthropic，Gemini 预训练核心 Jonas Adler 和 Alexander Pritzel 同样准备去 Anthropic。资本市场的反应直接而猛烈——Alphabet 股价两天跌 5%～6%，市值蒸发数千亿美元。
@@ -25,46 +13,6 @@ mindmap
 就在这场人才失血的同时，谷歌端出了酝酿已久的产品：Gemini Spark——一款运行在谷歌云专用虚拟机上的持久化 Agent，可以跨 Gmail、Calendar、Docs、Sheets、Drive 等工具自主执行多步骤任务，被视为谷歌在 Agent 产品化方向的「最关键一张牌」。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "数据源"
-        API[API 接口]
-        DB_SRC[(数据库)]
-        STREAM[流式数据]
-        FILES[文件/日志]
-    end
-    subgraph "采集层"
-        INGEST[数据摄入<br/>Kafka/Flink]
-        CDC[变更捕获<br/>CDC]
-    end
-    API & DB_SRC --> INGEST
-    DB_SRC --> CDC
-    STREAM & FILES --> INGEST
-    subgraph "处理层"
-        CLEAN[清洗/去重]
-        TRANSFORM[转换/计算]
-        QUALITY[质量校验]
-    end
-    INGEST & CDC --> CLEAN --> TRANSFORM --> QUALITY
-    subgraph "存储层"
-        LAKE[数据湖<br/>Iceberg/Delta]
-        WH[数据仓库<br/>ClickHouse]
-        FEAT[特征存储<br/>Feast]
-    end
-    QUALITY --> LAKE
-    QUALITY --> WH
-    QUALITY --> FEAT
-    classDef src fill:#fef3c7,stroke:#d97706
-    classDef ing fill:#dbeafe,stroke:#2563eb
-    classDef proc fill:#ede9fe,stroke:#7c3aed
-    classDef sto fill:#d1fae5,stroke:#059669
-    class API,DB_SRC,STREAM,FILES src
-    class INGEST,CDC ing
-    class CLEAN,TRANSFORM,QUALITY proc
-    class LAKE,WH,FEAT sto
-```
-
 
 - **人才流失的四条神经线**：Noam Shazeer（架构）、John Jumper（科学/AlphaFold）、Jonas Adler（预训练）、Alexander Pritzel（编程）——分别踩在大模型最核心的几条神经线上，引发市场对谷歌「能否留人」的深层担忧。
 - **Gemini 3.5 Pro 跳票**：I/O 2026 上承诺的 Gemini 3.5 Pro 从 6 月推至 7 月，两百万 token 上下文和 Deep Think 深度推理空有纸面规格，迟迟不到用户手中，加剧市场焦虑。
@@ -112,7 +60,7 @@ Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对�
 
 一周内四位核心人才同时离开，反映的是比薪酬更深层的组织问题。Noam Shazeer 曾被谷歌以约 27 亿美元请回，不到两年又离开——这说明谷歌在 AGI 层面的愿景和执行力可能未能匹配这些顶尖人才对技术前沿的追求。
 
-相似的情况也出现在 [Anthropic 的人才吸引力](ch01/989-anthropic.html) 和 OpenAI 的人才竞争中——AI 顶尖人才的流动性极高，他们追逐的是技术愿景的实现空间，而非薪酬或头衔。
+相似的情况也出现在 [Anthropic 的人才吸引力](ch01/1004-anthropic.html) 和 OpenAI 的人才竞争中——AI 顶尖人才的流动性极高，他们追逐的是技术愿景的实现空间，而非薪酬或头衔。
 
 ## 实践启示
 
@@ -128,8 +76,8 @@ Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对�
 
 ## 相关实体
 
-- [Agent Teams 对比](../ch03/078-claude-code.html) — 三家 Agent 产品路线对比
-- [Claude Science](../ch03/078-claude-code.html) — Anthropic 的 Agent 平台化路径
+- [Agent Teams 对比](../ch03/077-claude-code.html) — 三家 Agent 产品路线对比
+- [Claude Science](../ch03/077-claude-code.html) — Anthropic 的 Agent 平台化路径
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Agent 控制面板的系统方法论
 - [Agent落地真相](../ch03/035-agent.html) — Agent 从演示到投产的核心挑战
 - [Agent Harness 招聘实践](../ch05/058-agent-harness.html) — Agent 在企业场景的工程实践

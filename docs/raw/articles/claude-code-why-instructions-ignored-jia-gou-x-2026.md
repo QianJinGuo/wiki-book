@@ -12,7 +12,7 @@ date: 2026-06-28
 created: 2026-06-29
 updated: 2026-06-29
 tags: [claude-code, claude-md, agent-harness, context-engineering, prompt-engineering, instruction-following]
-type: article
+type: raw-article
 provenance_state: extracted
 sha256: 5d6e651debf02674b472eda23894512796090b9a8c87e20fe8a7a3a5a00d70ff
 ---

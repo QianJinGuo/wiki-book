@@ -4,7 +4,7 @@ source: "机器之心"
 source_url: "https://mp.weixin.qq.com/s/c8xIwgeulISyyuQee7cwnA"
 ingested: 2026-06-16
 sha256: "dd1cf5f344e4a32eeb90dcc5895b630541eaa95d75d4eb41391dcaf2c661f1ed"
-type: raw
+type: raw-article
 tags: [agivar, screen-recording-teaching, desktop-agent, computer-use, brain-cerebellum, jittor, tsinghua-university, fittentech, fitten-code, fde, forward-deployment-engineer, three-layer-determinism, multi-agent-validation, 2026, machine-spirit]
 review_value: 8
 review_confidence: 8

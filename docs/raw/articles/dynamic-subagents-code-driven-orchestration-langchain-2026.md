@@ -4,7 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/aiJs5CC8Gb6qa_xDRNEjTA"
 author: "AGI Hunt"
 created: 2026-07-02
 updated: 2026-07-02
-type: raw
+type: raw-article
 tags: [dynamic-subagents, subagent, orchestration, deep-agents, langchain, code-interpreter, agent-patterns]
 ingested: 2026-07-02
 sha256: 956eda9e7f3f0a293c89de5fa99b6d6c275533e5f8207d0517e37f8453a6c523

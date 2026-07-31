@@ -6,7 +6,7 @@ author: 叶小钗
 ingested: 2026-05-18
 sha256: b1e574b4f0e43d6e1059a2ea68d4964eae675202e36c271fbcad31c5931f4d68
 tags: [ai-native, organization, team-building, ai-transformation, management, skills, knowledge-management, digital-employee]
-type: article
+type: raw-article
 ---
 AI 原生团队的构建方法论，包含7层AI参与模型和6步演进路线。
 核心问题：个人提效≠团队提效≠组织提效。AI需要进入组织的运行结构才算AI原生。

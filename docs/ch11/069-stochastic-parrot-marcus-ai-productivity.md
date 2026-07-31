@@ -19,46 +19,7 @@ There may be that there is a huge cost in promoting AI when it's basic functiona
 .
 Stochastic Parrot is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Marcus 和 Bjarnason 的批评模式值得警惕：两人仅引用了 Upwork 报告中的三组统计数据—— 47% 的 AI 使用者不知道如何实现预期的生产力提升、 77% 表示 AI 工具降低了生产力、 71% 感到倦怠——就得出" Gen AI 本身存在问题"的结论。这种引用方式在逻辑上存在典型的"摘樱桃"谬误：用支持预设结论的局部数据替代完整研究的整体语境，忽略了 Upwork 报告同时呈现的积极指标（ 81% 已部署 AI 的公司报告生产力提升）以及管理层与员工之间关于 AI 价值的认知鸿沟。
 
@@ -81,15 +42,15 @@ Marcus 和 Bjarnason 将 AI 工具本身作为批评对象，而 Upwork 报告�
 4. **缩小管理层与员工对 AI 价值认知的鸿沟**：当 37% 使用 AI 的管理层认为员工已熟练掌握 AI 工具，而实际只有 17% 的员工认同时，这意味着高管对 AI 落地进展的判断与一线现实之间存在严重失真。应在组织内建立定期的 AI 使用体验反馈机制，而非仅依赖管理层的自我评估。
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](../ch01/915-stochastic-parrot-thought-experiment.html)
-- [Stochastic Parrot Deep Mystery Llms](../ch01/774-stochastic-parrot-deep-mystery-llms.html)
-- [While Breathless In Stodgy Viridian](../ch01/529-while-breathless-in-stodgy-viridian.html)
-- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01/1274-llm.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/419-aws-sagemaker-ai-agent.html)
+- [Stochastic Parrot Thought Experiment](../ch01/928-stochastic-parrot-thought-experiment.html)
+- [Stochastic Parrot Deep Mystery Llms](../ch01/787-stochastic-parrot-deep-mystery-llms.html)
+- [While Breathless In Stodgy Viridian](../ch01/532-while-breathless-in-stodgy-viridian.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01/637-llm.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/423-aws-sagemaker-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-marcus-ai-productivity.md)
 - [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1-sensetime.md)
-- [thinking-machines-interaction-models-ai-cold](../ch04/255-thinking-machines-interaction-models.html)
+- [thinking-machines-interaction-models-ai-cold](../ch04/258-thinking-machines-interaction-models.html)
 - trump media
 
 ---

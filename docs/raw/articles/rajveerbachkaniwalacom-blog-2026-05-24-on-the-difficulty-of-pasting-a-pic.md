@@ -4,7 +4,7 @@ source_url: https://rajveerbachkaniwala.com/blog/2026/05/24/on-the-difficulty-of
 source: newsletter
 created: 2026-06-01
 updated: 2026-06-01
-type: article
+type: raw-article
 tags: [newsletter, article]
 sha256: a95771540aec2b49
 ---

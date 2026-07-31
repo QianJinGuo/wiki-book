@@ -1,6 +1,6 @@
 ---
 title: Back up and restore your Amazon EKS cluster resources using Velero | Amazon Web Services
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://aws.amazon.com/blogs/containers/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero/
 tags: [aws-china-blog, agentic-ai, context-engineering]

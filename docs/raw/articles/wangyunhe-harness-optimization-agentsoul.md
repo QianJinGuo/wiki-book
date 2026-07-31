@@ -11,7 +11,7 @@ review_confidence: 8
 review_recommendation: strong
 review_stars: 5
 tags: ["harness-engineering", "agent-architecture", "multi-model", "optimization", "agi"]
-type: article
+type: raw-article
 ---
 # 王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战
 作者：王云鹤（华为诺亚方舟实验室）

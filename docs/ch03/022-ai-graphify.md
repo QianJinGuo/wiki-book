@@ -2,66 +2,15 @@
 
 ## Ch03.022 开源 AI 编程可查询的软件工程知识图谱：Graphify 完整上手攻略
 
-> 📊 Level ⭐ | 7.6KB | `entities/graphify-software-engineering-knowledge-graph.md`
+> 📊 Level ⭐ | 7.7KB | `entities/graphify-software-engineering-knowledge-graph.md`
 
 # Graphify：可查询的软件工程知识图谱
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("开源 AI 编程可查询的软件工程知识图谱 Graphify 完整上手攻略"))
-    解决的核心问题
-    三层处理架构
-    关系置信度标签体系
-    核心命令
-    与传统代码搜索工具的对比
-    tree-sitter 的技术优势
-    团队协作工作流
-    局限性与风险
-```
 
 ## 摘要
 
 Graphify 是一个将代码仓库、文档、PDF、图片、视频等异构项目资料整合为可查询知识图谱的开源工具。其核心思路是：AI 编程助手每次理解项目都像「临时上岗」，而 Graphify 通过结构化图谱让项目知识「沉淀」下来，使 AI 能通过关系查询而非全文扫描来理解代码库。代码文件通过 tree-sitter 进行本地 AST 解析（不调用 API），文档/多媒体则通过 AI 模型语义抽取，最终合并为一张带置信度标签的关系图谱。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 解决的核心问题
 
@@ -188,8 +137,8 @@ graphify-out/cost.json
 
 ## 相关实体
 
-- [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/271-skill.html)
-- [Mattpocock Skills Grill Me Grill With Docs Caveman](../ch04/659-mattpocock-skills.html)
+- [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/273-skill.html)
+- [Mattpocock Skills Grill Me Grill With Docs Caveman](../ch04/667-mattpocock-skills.html)
 - [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/237-claude-md.html)
 - [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/075-openai-codex.html)
 - [Rag技术框架的演进方向](../ch01/223-rag.html)

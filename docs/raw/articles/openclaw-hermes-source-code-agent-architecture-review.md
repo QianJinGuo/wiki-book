@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/49dxdMXEUoWIYlIh8fFqMQ"
 feed_name: "腾讯技术工程"
 author: "rianli"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [agent, openclaw, hermes, architecture, source-code, local-first, channel, gateway, memory, sandbox]
 sha256: "7d6bac01bade4e075ad712daecca998b3165033bb4b305d08b2357fb6941ae67"
 ---

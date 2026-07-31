@@ -4,7 +4,7 @@ author: "技术极简主义"
 source: "兔兔AGI"
 source_url: "https://mp.weixin.qq.com/s/yG2JXr3AWFIdRzNDG7a70w"
 created: 2026-05-24
-type: raw
+type: raw-article
 tags: [article]
 sha256: 496b63a65b6efc4eee39c5a8d90692e792a4de9edd2aee8c417ad7e6d64dc5f1
 ---

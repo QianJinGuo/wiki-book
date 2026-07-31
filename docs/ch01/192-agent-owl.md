@@ -177,22 +177,6 @@ OWL的工具组件在camel/camel/toolkits路径下实现，大致可分为以下
     You are a helpful planning agent that can assist users in planning complextasks which need multi-step browser interaction.=============================================中文翻译分割线=============================================你是一个实用的规划助手，能够帮助用户规划需要多步浏览器交互的复杂任务。
 除此之外，在交互流程上，BrowserToolkit使用了ReAct框架，主流程中的user agent和assistant agent都没有实现的这么复杂。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent框架OWL原理详解"))
-    多Agent协作的架构优势
-    System Prompt的双重锚定作用
-    记忆管理的设计权衡
-    工具生态的护城河效应
-    何时使用OWL架构
-    记忆策略选择建议
-    工具集成的最佳实践
-    System Prompt设计要点
-```
-
 ## 深度分析
 ### 1. 多Agent协作的架构优势
 OWL采用的多Agent架构体现了"分而治之"的设计思想。将复杂的任务分解为用户监督者(User Agent)和任务执行者(Assistant Agent)两个角色，通过role-play的方式让两个LLM进行对话协作。这种设计的精妙之处在于：
@@ -238,37 +222,6 @@ User Agent <-> Assistant Agent
 这种嵌套结构使得高层Agent可以调用低层Agent，形成了一种**Agent递归组合**的模式。这种设计在处理复杂任务时可以展现涌现能力，但也带来了调试和可解释性的挑战。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 1. 何时使用OWL架构
 OWL适合以下场景：
 
@@ -314,10 +267,10 @@ OWL适合以下场景：
 - **优化Critic机制**：使用更精细的评估标准提升输出质量
 ## 相关实体
 - [Agent Framework Owl Principles](../ch03/035-agent.html)
-- [Karpathy Ai Agent 7 Bits Value Decline](../ch04/164-karpathy-ai.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Gepa Optimize Anything](ch01/295-gepa-optimize-anything.html)
-- [Tmall Marketing Ai Workflow Best Practices](../ch05/094-ai.html)
+- [Karpathy Ai Agent 7 Bits Value Decline](../ch04/163-karpathy-ai.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Gepa Optimize Anything](ch01/296-gepa-optimize-anything.html)
+- [Tmall Marketing Ai Workflow Best Practices](../ch05/095-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

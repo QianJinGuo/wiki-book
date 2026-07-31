@@ -4,30 +4,6 @@
 
 > 📊 Level ⭐⭐ | 17.0KB | `entities/skill-system-design-three-way-comparison.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Agent 架构设计 七 Skills 系统设计"))
-    Skills 的本质 Agent 的专业经验
-    OpenClaw 赌社区集体智慧
-      ClawHub Agent 界的 npm
-      社区赌注的代价 供应链攻击
-    Claude Code 赌个人经验沉淀
-      Skills 的来源 你自己写
-      渐进式披露 经验越多 成本越低
-      Compaction 后 Skills 的持续性
-    Hermes Agent 赌 Agent 能自我进化
-      颠覆前提 经验为什么要人来写
-      这个赌注难在哪里
-      Skills 的共享 跨 Agent 的经验传播
-    三种赌注 三种取舍
-    三种架构理念的根本分歧
-    渐进式披露的工程意义
-    安全模型的深层矛盾
-```
-
 ## Skills 的本质：Agent 的专业经验
 语言模型是通才。它懂很多，但不懂你的公司、你的项目、你的工作方式。
 你想让 Agent 按你团队的代码规范写代码，按你的模板写周报，用你摸索出来的方法处理某类任务——这些都需要把你的专业经验"装进"Agent。Skills 就是这个装载机制。
@@ -39,39 +15,6 @@ mindmap
 - **Hermes 赌 Agent 能自我进化** ——执行过程本身就是最好的经验来源，为什么要人来整理
 
 ## OpenClaw：赌社区集体智慧
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### ClawHub：Agent 界的 npm
 OpenClaw 的 Skills 来自 **ClawHub**——一个开放的技能市场。任何人发布，任何人安装。
 规模已经相当大：超过 **31,000 个 Skills**，覆盖邮件处理、CRM 管理、代码审查、数据分析……这个逻辑和 npm 一样：让社区里最懂某个场景的人来写这个场景的 Skill。
@@ -183,11 +126,11 @@ Hermes 的模型在信任方面处于中间地带——Skills 由你的 Agent �
 **强制结构化**。即使框架不要求，也应该用统一的格式组织 Skill 内容：问题描述（什么情况下用）、执行步骤（怎么做）、约束条件（什么情况下不要用）、预期输出（做完后应该是什么样）。
 **定期淘汰**。Skills 库需要新陈代谢。当某个 Skill 长期未被调用，或者它描述的工作流程已经被 Agent 熟练掌握时，应该将其归档或删除。低质量的 Skills 积累会降低 Agent 的判断效率。
 ## 相关实体
-- [Openclaw Agent Loop Design Patterns](ch01/1036-openclaw-agent.html)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/235-openclaw.html)
+- [Openclaw Agent Loop Design Patterns](ch01/1049-openclaw-agent.html)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/237-openclaw.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/120-harness-engineering.html)
-- [Claude Code Source Architecture](../ch03/078-claude-code.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
+- [Claude Code Source Architecture](../ch03/077-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-system-design-three-way-comparison.md)
 

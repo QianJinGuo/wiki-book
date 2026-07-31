@@ -3,7 +3,7 @@ source: newsletter
 source_url: https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/
 ingested: 2026-05-10
 title: Improving token efficiency in GitHub Agentic Workflows
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [github, copilot, pricing, llm]

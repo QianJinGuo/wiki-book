@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/new-ai-lock-in.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The new AI lock-in"))
-    锁定的三层迁移结构
-    MCP 的局限 一个协议不是平台
-    失败率的真正含义
-    战略决策的层次性
-    针对 Enterprise IT 决策者
-    针对 AI 平台工具开发者
-    相关实体
-```
-
 ## 核心要点
 - **Published Time**: 2026-05-16T22:36:49-06:00
 - **核心命题**: AI 供应商锁定（lock-in）并未消失，而是从模型层向上迁移到了编排层（Orchestration）、工作流表面（Workflow Surface）和服务层（Services Layer）
@@ -26,39 +11,6 @@ mindmap
 - **战略重点**: Enterprise IT 应关注编排框架承诺、工作流表面和服务合作伙伴关系，而非点解决方案的模型替换
 
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 随着模型替换成本持续下降，AI 供应商锁定正在发生结构性迁移。真正的锁定不在模型层——那里替换越来越容易——而在模型周围的工作流、治理和运营层面。编排框架积累的粘性、工作流管理平面的锁定、以及嵌入运营深处的服务关系，才是构成新一代 AI 锁定的核心。
 
 ## 深度分析
@@ -68,7 +20,7 @@ graph TB
 Claude Code、Codex、Gemini 和本地模型之间的切换成本正在下降。API 层的抽象持续改善，开放标准逐步建立。这一层是供应商最喜欢宣传的战场——因为它最容易替代，也最不需要真正的锁定。
 **第二层：编排层（Orchestration Layer，核心锁定点）**
 LangGraph 本身是中性工具，但编排逻辑会积累粘性。当 Klarna、Replit、Elastic、Ally 等企业在 LangGraph 上投入一年时间构建 agent 行为、评估、恢复逻辑和可观测性追踪后，它们不会因为竞品发布更快/更便宜的模型就拆除这套系统。关键是：**模型容易换，编排逻辑不容易换**。
-这个观察与 [Langgraph State Machine](../ch04/201-langgraph.html) 的分析形成呼应——LangGraph 的状态机模型让工作流逻辑得以持久化，同时也让这些逻辑成为替换成本最高的层面。
+这个观察与 [Langgraph State Machine](../ch04/202-langgraph.html) 的分析形成呼应——LangGraph 的状态机模型让工作流逻辑得以持久化，同时也让这些逻辑成为替换成本最高的层面。
 **第三层：工作流表面（Workflow Surface，Anthropic 的主战场）**
 Anthropic 的 Claude Cowork 战略真正发力的地方是管理平面：私有插件市场、per-user 配置、预构建 HR/金融/投行/设计 agents。企业 IT 不希望 400 个随机 agents 接入合同系统、HR 数据和客户记录——因此**围绕 agent 的管理平面成为产品本身**。
 这与 [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) 中关于「管理表面成为产品」的论述高度一致。两者都指向同一个结论：在 agent 时代，**控制平面的所有权等于生态锁定的所有权**。
@@ -136,7 +88,7 @@ MIT NANDA 报告显示 95% 企业 genAI pilot 未能交付可衡量的业务影�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-ai-lock-in.md)
 
 ## ## 相关实体
-- [柚漫剧 AI 全流程提效拆解](../ch05/094-ai.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/095-ai.html)
 
 ---
 

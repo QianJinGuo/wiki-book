@@ -10,59 +10,7 @@
 
 Apple Security Engineering and Architecture (SEAR) 联合 Hardware Technologies Formal Verification 团队发布的第一方技术披露，详细介绍了 Apple 如何在 iMessage 部署 PQ3 协议栈（ML-KEM/ML-DSA，FIPS 203/204）时对 corecrypto 核心实现进行**形式化验证**。这是大型科技公司公开其核心密码学代码形式化验证方法论的少数案例之一，对安全工程、Harness Engineering、Post-Quantum 迁移都有借鉴价值。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Apple corecrypto formal"))
-    三个独有贡献 不应合并到现有 entity
-    形式化验证的工程栈
-    关键方法论
-      Spec extraction
-      Montgomery multiplication 证明
-      Constant-time 证明
-    关键术语
-    链接到现有实体
-```
-
 ## 三个独有贡献（不应合并到现有 entity）
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 1. **核心密码学代码的形式化验证 pipeline**（不是 TLA+ 系统建模）— 与现有 [antfly 博客](../ch03/035-agent.html)（AI agent 在 TLA+/Coq 证明上 hill-climb）属于**不同技术层**。前者是 *软件工程层*（让 AI 写出可验证代码），后者是 *密码学实现层*（用 ACL2/Sawmill 等证明助手验证汇编级恒定时间 + 正确性）。
 2. **Post-quantum 算法（ML-KEM/ML-DSA）的工业级验证方法** — FIPS 203/204 标准算法的 reference implementation 形式化验证，包含 Montgomery reduction、polynomial multiplication、NTT 等核心子程序证明。

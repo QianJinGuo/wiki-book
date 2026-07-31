@@ -8,22 +8,6 @@
 
 > **Background**：本文档基于微信公众号文章《用两个 Git 仓库 + AI 编码助手做项目管理（2026版）》提取。该文来自匿名团队实践分享，介绍了他们如何用 Git 仓库 + AI 编码助手 + Shell 脚本替代传统项目管理的 80% 人肉操作。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Git仓库 AI 编码助手做项目管理"))
-    核心范式
-    决策 1 Git 是唯一的 Source of Truth
-    决策 2 降低输入门槛 降低处理成本
-    决策 3 静态 HTML 是最好的 Dashboard
-    决策 4 定性和定量分离
-    数据单测机制
-    Skill 作为隐性知识编码
-    AI 参与项目管理的三个层次
-```
-
 ## 核心范式
 
 **AI Native 项目管理 = Git 作为 Source of Truth + AI 作为语义整合引擎 + 静态 HTML 作为可视化载体**
@@ -37,35 +21,6 @@ mindmap
 | SKILL.md | 工作流定义（可版本化 SOP） | 隐性知识编码 |
 
 ## 关键设计决策
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 ### 决策 1：Git 是唯一的 Source of Truth
 
@@ -227,9 +182,9 @@ Git 作为 Source of Truth 的选择看似朴素，实则精妙。Git 的内容�
 
 ## 相关实体
 - [Ai Native Project Management Git](../ch05/018-ai-native.html)
-- [P Ai Pms Guide To Claude](../ch01/976-claude.html)
+- [P Ai Pms Guide To Claude](../ch01/1022-claude.html)
 - [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](../ch05/009-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html)
 - [Building Ai Agents In Accounting](ch04/006-building-ai-agents-in-accounting.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/git-repo-based-pm-automation.md)

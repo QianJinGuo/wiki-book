@@ -8,21 +8,6 @@
 
 > **Background**: This entity synthesizes the industry analysis from Semiconductor Engineering's June 2026 article on Wi-Fi 7/8 + edge AI convergence, with expert commentary from Synaptics, Infineon, and Keysight Technologies. The synthesis distills technical requirements, market dynamics, and emerging use cases into a reusable reference for edge AI infrastructure planning.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Edge AI Networking Wi-Fi 78"))
-    Technical Requirements for Edge
-    Wi-Fi 78 Capabilities
-    Market Dynamics
-      Wi-Fi vs 5G6G mmWave for Edge AI
-      Three Emerging Use Cases
-    Vendor Ecosystem
-    Source
-```
-
 ## 三个独有贡献
 
 1. **Wi-Fi 7/8 + edge AI 收敛分析** — Wi-Fi 在室内 edge AI 部署中胜出的具体技术原因（determinism、低延迟、PSA Level 3 安全）
@@ -30,42 +15,6 @@ mindmap
 3. **工业机器人/国防/预测性维护三场景驱动** — Wi-Fi 7/8 edge AI 落地的三个具体行业应用案例 + 安全/可靠性要求
 
 ## Technical Requirements for Edge AI Networking
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 **Determinism** — bounded latency, no packet loss under load. Edge AI workloads cannot tolerate best-effort delivery.
 

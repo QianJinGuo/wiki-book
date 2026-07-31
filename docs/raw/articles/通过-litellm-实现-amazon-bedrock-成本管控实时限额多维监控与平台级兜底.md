@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/litellm-implement-amazon-bedro
 ingested: 2026-06-12
 feed_name: AWS China Blog
 source_published: 2026-06-12
-type: article
+type: raw-article
 source_type: rss
 sha256: "b9f88861e61bdbb640127e465b1d72203b2a0050807208bfe75fbf8f44aefc49"
 ---

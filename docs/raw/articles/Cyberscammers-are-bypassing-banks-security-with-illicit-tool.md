@@ -4,7 +4,7 @@ source_url: "https://www.technologyreview.com/cyberscammers-bypassing-banks-secu
 author: ""
 publish_time: ""
 ingested: 2026-06-02
-type: article
+type: raw-article
 tags: [article]
 sha256: ""
 ---

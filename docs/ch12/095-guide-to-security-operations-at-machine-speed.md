@@ -4,44 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/arctic-wolf-security-operations-machine-speed.md`
 
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - AI/机器学习正在变革安全运营（SOC），实现机器级速度的威胁检测与响应
 - 成熟度评估框架：评估组织安全运营成熟度的关键维度
 - 自动化在安全运营中的应用场景：检测工程、事件响应、威胁情报
@@ -63,8 +26,8 @@ graph TB
 
 ## 相关实体
 - [The It And Security Field Guide To Ai Adoption Tines](ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)
-- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch01/517-codex.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch01/520-codex.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)

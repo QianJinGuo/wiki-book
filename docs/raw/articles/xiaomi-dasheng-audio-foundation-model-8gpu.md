@@ -6,7 +6,7 @@ author: "Xiaomi Dasheng 团队"
 pub_date: "2026-06-12"
 ingested: "2026-06-12"
 sha256: "35e3807266161d7b0f150f4eec2b78e1040791f49707c3b752f7da475beff5ac"
-type: source
+type: raw-article
 tags: ["xiaomi-dasheng", "audio-foundation", "mae-audio", "audio-pretrain", "universal-audio", "midashenglm", "dashengtokenizer", "audio-caption", "knowledge-distillation", "ced", "self-supervised"]
 ---
 

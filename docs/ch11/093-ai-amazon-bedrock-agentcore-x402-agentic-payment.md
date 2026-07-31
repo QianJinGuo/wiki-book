@@ -2,67 +2,13 @@
 
 ## Ch11.093 让 AI 代理自己付钱：基于 Amazon Bedrock AgentCore 与 x402 的 Agentic Payment
 
-> 📊 Level ⭐⭐ | 10.0KB | `entities/agentic-payment-x402-bedrock-agentcore.md`
+> 📊 Level ⭐⭐ | 10.1KB | `entities/agentic-payment-x402-bedrock-agentcore.md`
 
 # 让 AI 代理自己付钱：基于 Amazon Bedrock AgentCore 与 x402 的 Agentic Payment
 
 > **Background**: 当 AI 代理需要消费付费 API、付费 MCP 服务器或付费内容时，传统人工审批和包月订阅模式跟不上代理按调用、按内容结算的节奏。本文结合 Bedrock AgentCore Payments (Preview) 与 x402 协议，设计端到端 agentic 支付方案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让 AI 代理自己付钱 基于 Amazon Bedrock"))
-    x402 协议
-    Bedrock AgentCore Payments 解决什么
-    业务场景示例
-    架构组件
-    风险与控制
-    支付协议与托管服务的职责边界
-    最小权限身份模型在代理支付中的实现
-    服务端强制预算约束的安全价值
-```
-
 ## 核心问题
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 - 信用卡/对公汇款/包月订阅是为人设计的，单笔手续费常超过代理实际要付的金额
 - 代理需要"机器间直接谈"的支付协议
@@ -130,13 +76,13 @@ AgentCore Payments 把这些打包到托管服务：原本数月工程量 → �
 
 ## 相关实体
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/295-amazon-bedrock.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
 - [Bedrock Agentcore Coding Agent Hosting](ch11/050-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-payment-x402-bedrock-agentcore.md)
-- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch05/094-ai.html)
+- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch05/095-ai.html)
 
 ## 深度分析
 

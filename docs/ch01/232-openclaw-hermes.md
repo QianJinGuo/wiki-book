@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 17.6KB | `entities/openclaw-hermes-source-code-agent-architecture-review.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw与Hermes源码架构对比"))
-    OpenClaw四大设计亮点
-      解决的三个核心痛点
-    Gateway微内核哲学
-      Session Key路由机制
-      与Hermes的关键区别
-    OpenClaw架构五层
-    Channel Plugin核心价值
-    Dreaming三阶段加权晋升
-    Hermes的补充设计
-    两者的局限
-    第22章 七大未覆盖落地难题
-```
-
 ## 核心洞察
 
 OpenClaw和Hermes都还在路上——各自回答了4个重要问题，但都有局限。源码级对比揭示了每个"不完美"背后的工程取舍。
@@ -32,43 +13,6 @@ OpenClaw和Hermes都还在路上——各自回答了4个重要问题，但都�
 **四大发现**：OpenClaw 回答了4个重要问题，多协议可插拔契约、LLM上下文资源预算、记忆自动沉淀不退化、凭证失败与业务失败分治。Hermes 补充另4个：经验自动复用、安全审批先LLM分诊再叫人、执行隔离覆盖本地到云端。
 
 ## OpenClaw四大设计亮点
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 | 设计 | 解决的问题 | 核心机制 |
 |------|---------|---------|
@@ -264,14 +208,14 @@ Hermes的Smart Approval是**分诊导向**：先用LLM判断危险等级，再�
 
 ## 相关实体
 - [Hermes Agent Vs Openclaw Comparison](../ch03/096-hermes-agent.html)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/235-openclaw.html)
-- [Skill System Design Three Way Comparison](../ch04/271-skill.html)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/237-openclaw.html)
+- [Skill System Design Three Way Comparison](../ch04/273-skill.html)
 - [Hermes Agent Memory System Vs Openclaw](../ch03/096-hermes-agent.html)
-- [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
+- [Openclaw Prompt Context Harness](../ch11/237-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-hermes-source-code-agent-architecture-review.md)
 
-- [Openclaw Architecture 800Lines](../ch11/235-openclaw.html)
+- [Openclaw Architecture 800Lines](../ch11/237-openclaw.html)
 - [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](../ch03/035-agent.html)
 
 ---

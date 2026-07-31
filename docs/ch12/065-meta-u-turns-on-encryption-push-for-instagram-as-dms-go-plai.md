@@ -16,38 +16,7 @@ Swiss privacy outfit Proton also questioned what exactly happens to existing cha
 
 Meta has become increasingly aggressive about monetizing and analyzing user interactions. Last year, the company confirmed that interactions with Meta AI tools, including those inside private conversations, could be used for ad targeting. The company has not publicly said whether ordinary Instagram messages could eventually feed into similar systems now that encryption is gone.
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 **1. Meta 的"加密优先"叙事与商业利益存在根本矛盾**
 
@@ -92,11 +61,11 @@ Meta 发言人建议用户转向 WhatsApp（同样由 Meta 拥有但保留 E2EE�
 Meta 将用户引向 WhatsApp，但其整体商业模式持续向 AI 监控和广告定向演进。WhatsApp 虽保留 E2EE，但与 Meta AI 的交互已被用于广告定向，且 WhatsApp 的元数据收集和其他数据实践与 Instagram 存在整合可能。
 
 ## 相关实体
-- [Weve Been Here Before Ai Vulnerability Research](../ch05/094-ai.html)
+- [Weve Been Here Before Ai Vulnerability Research](../ch05/095-ai.html)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
 - [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/223-rag.html)
-- [Us Bank Aws Ai Migration](../ch05/094-ai.html)
-- [Deerflow Hermes Openclaw Comparison](../ch04/494-deerflow-hermes-openclaw.html)
+- [Us Bank Aws Ai Migration](../ch05/095-ai.html)
+- [Deerflow Hermes Openclaw Comparison](../ch04/500-deerflow-hermes-openclaw.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5235705.md)

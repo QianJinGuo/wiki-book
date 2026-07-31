@@ -6,36 +6,6 @@
 
 # PromptQueue + OpenGorilla 集成 — AI-Native 异步任务引擎与自进化认知层
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("PromptQueue OpenGorilla 集成"))
-    一 立项背景 Purpose
-      解决的 3 个核心痛点
-      目标用户
-    二 整体架构 4 层分离
-      4 层职责
-      Monorepo 4 包结构
-    三 核心功能矩阵
-      任务生命周期 7 状态机
-      Tool Loop Worker-owned 核心差异化
-      Human-in-the-Loop 基础设施级
-    四 OpenGorilla 集成 AI-Native 知识层
-      4 大集成能力
-      自进化闭环
-    五 5 大核心 Insight
-      Insight 1 LLM 调用本质是队列问题
-      Insight 2 Tool 的治理权必须在 Worker
-      Insight 3 HITL 不是 feature 是基础设施
-    六 竞品差异化
-    七 量化价值
-    八 测试 工程纪律
-      测试策略
-      Git 纪律
-```
-
 ## 一句话
 
 > **PromptQueue = "BullMQ meets AI"** — 把消息队列的可靠性带入 LLM 调用；**OpenGorilla** = 认知记忆层 — 让每一次任务执行都成为自进化数据
@@ -43,51 +13,13 @@ mindmap
 由 **jinguo** 独立设计开发，**2 天 38 commits 完成 7,760 行 TypeScript**，Monorepo 4 包架构（Hono API + Worker + Next.js 15 Dashboard + CLI），测试覆盖率 ~33%。OpenGorilla 集成让系统"越用越聪明"。
 
 ## 架构图
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 → [C4 架构图](assets/c4/promptqueue-async-task-queue-opengorilla-integration-c4.html)
 
 ## 相关实体
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](../ch04/237-agentic.html)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](../ch04/648-agentic.html)
 - [Prompt Context Harness Three Evolutions](../ch05/009-harness.html)
 - [From Prompt To Harness Claude Official](../ch05/009-harness.html)
-- [Claude Code Large Codebase Harness Configuration](../ch03/078-claude-code.html)
+- [Claude Code Large Codebase Harness Configuration](../ch03/077-claude-code.html)
 - [Openai Skills Shell Compaction Agent Primitives](../ch05/025-openai-skills-shell-compaction-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)

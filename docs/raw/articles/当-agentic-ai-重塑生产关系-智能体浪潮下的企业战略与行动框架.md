@@ -5,7 +5,7 @@ ingested: 2026-06-13
 feed_name: AWS China Blog
 source_published: 2026-06-12
 sha256: "336f8b51db38dd85707a434b6455e4e0ee377fe8ad83a4fc6f9e60921b39594f"
-type: article
+type: raw-article
 ---
 
 # 当 Agentic AI 重塑生产关系 – 智能体浪潮下的企业战略与行动框架

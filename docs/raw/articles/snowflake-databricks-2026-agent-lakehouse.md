@@ -3,7 +3,7 @@ title: "Snowflake vs Databricks 2026 Summit：Agent 时代湖仓的三层架构�
 source_url: "https://mp.weixin.qq.com/s/m6KZ7kd0cyqXW9UHdEmnaA"
 ingested: 2026-06-30
 sha256: 871f775c36d32dc6391fd2ebb4980e53c4a3349388f659412fb180d3e758eba2
-type: raw
+type: raw-article
 tags: [lakehouse, agent, snowflake, databricks, architecture, data-plane, context-plane, agent-control-plane]
 author: 吴炳锡
 ---

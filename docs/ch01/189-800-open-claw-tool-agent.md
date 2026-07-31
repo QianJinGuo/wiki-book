@@ -166,22 +166,6 @@ REPL 场景下，  ` sendCallback  ` 直接输出到终端：
 ** ExecTool 安全边界  ** 。  正则黑名单只是最低防线。LLM 可以通过变量展开、别名、管道组合等方式绕过正则检测。生产环境应该使用容器沙箱或受限用户执行。
 ** REPL 并发模型  ** 。  布尔锁在单用户场景下足够。Node.js 的单线程模型保证  了  ` processing  ` 标志不会出现竞态。但如果扩展到多用户（如 Bot 同时处理多个  会话），需要每个会话独立的 history 和更完整的队列/锁机制。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("行代码实现 Open Claw 的 Tool 消息总线"))
-    架构哲学 薄抽象层的工程价值
-    ToolRegistry 的 exclude 设计 能力隔离的模式样本
-    MessageBus 的有无订阅者二分路由
-    互斥锁驱动的并发控制 单进程的妥协
-    从零构建 Agent 框架时 优先选择贴近模型 API 的薄抽象
-    exclude 是控制子 Agent 能力边界的有效模式
-    MessageBus 的方向分离 出站入站 是解耦的关键
-    布尔锁在单进程场景足够 但需要为多用户扩展预留架构
-```
-
 ## 深度分析
 ### 架构哲学：薄抽象层的工程价值
 Open Claw 选择直接基于 Anthropic SDK 而非 LangChain 等中间件框架，这一决策背后有清晰的工程逻辑。Agent 系统的核心挑战在于「不确定性」——LLM 的输出不稳定、工具调用的结果不稳定、多组件协作的路径不稳定。当问题发生时，工程师需要能在最短路径内定位根因。中间件层每多一层，调试时需要穿透的调用栈就深一层，对 API 行为的控制就少一分。
@@ -200,37 +184,6 @@ MessageBus 的路由规则非常明确：有订阅者走回调，无订阅者入
 这是一个已知的能力边界。框架当前的并发模型是「单用户 + 子 Agent 异步」的组合，而不是「多用户 + 子 Agent 异步」的组合。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 1. 从零构建 Agent 框架时，优先选择贴近模型 API 的薄抽象
 当团队需要自建 Agent 基础设施时，常见的选择有两种：一种是引入 LangChain 等成熟框架获取完整能力，另一种是从 SDK 开始手写所有逻辑。Open Claw 提供了第三种思路——用薄抽象覆盖核心场景（Tool、MessageBus、Subagent），在关键位置保持对 API 的直接控制，在非核心位置接受能力上限（比如无 Zod 校验、无精确 cron）。这种折中对于快速原型和中等复杂度的 Agent 系统是务实的。
 

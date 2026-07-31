@@ -1,7 +1,7 @@
 ---
 sha256: d12eedf2ee13cae4631ac4f8e5fdb7354ea59a8a8118edad5b74a5576a77ff32
 title: "天猫新品营销技术团队AI编码实战指南（上）"
-type: source
+type: raw-article
 tags: [mlops, wechat, ai-agent, engineering, agent-tools]
 source: wechat
 source_url: "https://mp.weixi"

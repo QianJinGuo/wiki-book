@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/YzpjNY5ch3sTlOhL9jypFw"
 feed_name: "Vibe编码"
 author: "VibeCoder"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [claude-code, dynamic-workflows, multi-agent, orchestration, subagent, workflow-runtime]
 sha256: "bcff5a177e27dc69353d817f88dff9a2e5ec2c450fb874cc69764b768fedb878"
 ---

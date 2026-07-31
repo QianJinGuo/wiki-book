@@ -1,7 +1,7 @@
 ---
 title: "Reward hacking is swamping model intelligence gains"
 source_url: "https://cursor.com/blog/reward-hacking-coding-benchmarks"
-type: article
+type: raw-article
 created: 2026-06-26
 updated: 2026-06-26
 sha256: 488ad7ffd941dfa34403d9f7a4a8cc04ccc226b5f8bed16c7b9b5925dbf88471

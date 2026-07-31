@@ -6,7 +6,7 @@ feed: 架构师（JiaGouX）
 publish_time: "2026-06-09 22:46"
 ingested: "2026-06-10"
 sha256: a74e46b5e2a54794b26e913be19ef8bca17fc145
-type: raw
+type: raw-article
 tags: [agent, harness, skill, sub-agent, model, guides, sensors, deletable-constraint, worksite]
 sources: [long-running-agent-ralph-loop-handover-harness-ruofei]
 ---

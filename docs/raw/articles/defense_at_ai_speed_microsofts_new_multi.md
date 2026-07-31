@@ -1,7 +1,7 @@
 ---
 
 title: "Defense at AI speed: Microsoft's new multi-model agentic security system"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/
 tags: [microsoft, ai]

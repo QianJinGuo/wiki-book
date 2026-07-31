@@ -4,7 +4,7 @@ title: "NVIDIA ASPIRE：机器人技能库与持续学习新范式"
 source_url: "https://mp.weixin.qq.com/s/WLOTHCiWI4LgK4GwVpyc6w"
 author: ""
 ingested: 2026-07-02
-type: raw
+type: raw-article
 tags: [nvidia, robot, skill-library, embodied-ai, code-as-policy, continual-learning, jim-fan]
 ---
 

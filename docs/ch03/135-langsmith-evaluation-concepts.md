@@ -11,55 +11,16 @@
 - offline evaluation 适合 benchmarking / regression / backtesting
 - online evaluation 适合生产监控与异常发现
 
-
 ## 相关实体
 - [Cursor Harness Model Production Floor](../ch01/265-cursor-harness-model-production-floor.html)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch03/035-agent.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
-- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/121-agent-memory.html)
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/098-agent-memory.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langsmith-evaluation-concepts.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "实验管理"
-        TRACK[实验追踪<br/>MLflow/W&B]
-        HP[超参调优<br/>Optuna]
-        REG[模型注册<br/>版本管理]
-    end
-    subgraph "评估流水线"
-        BENCH[基准测试<br/>自动评测]
-        HUMAN[人工评估<br/>LLM-as-Judge]
-        DRIFT[漂移检测<br/>数据/概念漂移]
-    end
-    subgraph "部署流水线"
-        PACKAGE[模型打包<br/>ONNX/TensorRT]
-        TEST[Integration测试<br/>回归检测]
-        DEPLOY[灰度发布<br/>A/B测试]
-    end
-    TRACK --> HP --> REG
-    REG --> BENCH & HUMAN
-    BENCH & HUMAN --> DRIFT
-    DRIFT --> PACKAGE --> TEST --> DEPLOY
-    subgraph "监控"
-        PERF[性能监控<br/>延迟/吞吐]
-        ALERT[告警规则<br/>异常检测]
-        RETRAIN[触发再训练]
-    end
-    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
-    classDef exp fill:#dbeafe,stroke:#2563eb
-    classDef eval fill:#ede9fe,stroke:#7c3aed
-    classDef deploy fill:#fef3c7,stroke:#d97706
-    classDef mon fill:#d1fae5,stroke:#059669
-    class TRACK,HP,REG exp
-    class BENCH,HUMAN,DRIFT eval
-    class PACKAGE,TEST,DEPLOY deploy
-    class PERF,ALERT,RETRAIN mon
-```
-
 
 LangSmith 的评估体系揭示了 agent 评估的核心挑战：与传统 ML 评估不同，agent 的输出具有多维性——不仅包含最终答案，还涉及检索过程、工具调用序列和完整轨迹。这种多维度特性使得简单的输出比对无法满足评估需求，必须对每个关键组件进行独立评估。
 

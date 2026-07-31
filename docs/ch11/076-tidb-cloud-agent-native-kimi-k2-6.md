@@ -4,57 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/tidb-cloud-agent-database.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("TiDB Cloud Agent-native 数据库与 Kimi"))
-    核心概念
-      Agent-native 时代的数据 Infra 竞争逻辑
-      Kimi K26 为什么选 TiDB Cloud
-    架构核心 虚拟数据库层
-    三大战略决策 Kimi K26 能做成的关键
-      最小化 Agent 使用 Infra 工具时的摩擦
-      统一技术栈
-      极致低成本
-    行业收敛 one agent one sandbox one
-    上半场 vs 下半场
-    虚拟数据库层 Agent-native 数据库的核心架构突破
-    竞争逻辑的根本转变
-    one agent one database 范式的行业收敛意义
-```
-
 ## 核心概念
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 ### Agent-native 时代的数据 Infra 竞争逻辑
 过去 30 年：比单点性能（TPS、延迟、单库容量）。
 现在比的是当以下四件事**同时发生时**，谁能提供最顺畅的体验：

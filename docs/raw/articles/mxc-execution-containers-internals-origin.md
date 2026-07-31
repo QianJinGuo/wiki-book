@@ -3,7 +3,7 @@ title: "Mxc Execution Containers Internals Origin"
 source_url: "https://www.originhq.com/research/mxc-execution-containers-internals"
 date_ingested: "2026-06-10"
 sha256: "6e9b296ac319f1b2a34193562f53324a55443039618e6dc39df2a204f04c98e5"
-type: article
+type: raw-article
 ---
 
 > **Note**: This is a raw source archive. The synthesized wiki page is at [[entities/mxc-execution-containers-internals-origin]].

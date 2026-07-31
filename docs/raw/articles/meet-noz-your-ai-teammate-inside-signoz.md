@@ -2,7 +2,7 @@
 title: "Meet Noz, your AI teammate inside SigNoz"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 7a607a16adf540b77102b2fa7d6492a569b3ec6b3520b5fc9fb8a674f861b304
 ---

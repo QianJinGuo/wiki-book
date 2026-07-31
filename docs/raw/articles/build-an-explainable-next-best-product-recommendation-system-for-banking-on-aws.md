@@ -1,6 +1,6 @@
 ---
 title: "build an explainable next best product recommendation system for banking on aws"
-type: source
+type: raw-article
 created: "2026-07-27"
 updated: "2026-07-27"
 sha256: "333361c5747ee6268d4d5cb5ce7687caae802b1cf4ca12286afdeb7e4e3fc0e5"

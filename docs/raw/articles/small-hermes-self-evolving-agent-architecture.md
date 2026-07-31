@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/DUupcx6ztDwNiedilbRWHg"
 feed_name: "老码小张"
 author: "小张"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [agent, self-evolution, memory-system, reflection, hermes, rust]
 sha256: "185655244fac1e2049a2923444808d50a14f0d71d030b73a651cd7bba5e6099a"
 ---

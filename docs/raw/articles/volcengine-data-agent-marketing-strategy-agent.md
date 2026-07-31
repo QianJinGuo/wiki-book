@@ -4,7 +4,7 @@ source_url: https://www.volcengine.com/docs/85637/1587862?lang=zh
 author: 火山引擎
 date: 2026-05-25
 title: "使用营销策略助手--数据智能体-火山引擎"
-type: raw
+type: raw-article
 tags: [volcengine, data-agent, marketing-agent, enterprise, ai-agent, cdp]
 review_value: 8
 review_confidence: 9

@@ -1,7 +1,7 @@
 ---
 title: "Build a self-improving AI PM OS with Claude Code"
 sha256: 8606175b258470d27a9d0ea663c3aa9518aa7c7460fc57d4ed136d3bd1eeb463
-type: source
+type: raw-article
 source: newsletter
 source_url: "https://www.news.aakashg.com/p/ai-pms-guide-to-claude"
 review_value: 7

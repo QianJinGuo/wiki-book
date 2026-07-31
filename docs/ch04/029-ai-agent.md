@@ -425,21 +425,6 @@ Goal-Driven 是它的下一站：让系统不只是等你派活，而是围绕�
 **真正的跃迁，不是让 AI 多做几个步骤，而是让人退出微观调度。**
 **增强自我，而非取代自我。共勉。**
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("十年老技术开发的 AI Agent 探索之路"))
-    核心矛盾的本质 注意力稀缺 vs 并发需求
-    层级决策体系 最重要的原则性框架
-    Vibe Coding 的教训 省事路径的必然代价
-    自举的前提是架构约束
-    立即可执行
-    中期建设
-    长期演进
-```
-
 ## 深度分析
 ### 1. 核心矛盾的本质：注意力稀缺 vs 并发需求
 文章的底层逻辑非常清晰：作者撞到的核心瓶颈不是 AI 能力不足，而是**人的注意力资源有限**。4-6 个终端并发是上限，这不是一个技术问题，而是人脑的「并发模型」天然决定的。这解释了为什么市面上大量"AI 提效"工具实际上并不提效——它们把更多终端塞给同一个人，反而放大了上下文切换的损耗。
@@ -470,39 +455,8 @@ Task-Driven 系统的问题不是执行不稳定，而是**任务仍需人持续
 对个人开发者的实际意义：**选技术栈时优先看是否兼容这些正在收敛的协议**。自己造的胶水层越多，未来迁移成本越高。协议层是长期资产，框架是短期工具。
 
 ## Related entities
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
 
 ## 实践启示
 ### 立即可执行

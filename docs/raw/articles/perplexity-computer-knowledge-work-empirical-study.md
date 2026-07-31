@@ -6,7 +6,7 @@ publish_date: 2026-06-08
 ingested: 2026-06-10
 sha256: c324d1f07bdbe2270aefbfb47f471f8189df5210d9172ed6d35663c6526ef9a1
 source: perplexity-research-articles
-type: article
+type: raw-article
 tags: [agent, perplexity, perplexity-computer, empirical-study, hbs, productivity, autonomy, knowledge-work, harness, evaluation]
 ---
 

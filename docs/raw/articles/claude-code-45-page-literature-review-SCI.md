@@ -5,7 +5,7 @@ source_site: "AI编程实验室"
 author: "鲁工"
 ingested: "2026-07-08"
 sha256: "aa7c88497b761346bdfd15288a9069db23012f67f5c82c256c02104dc6bdf9d0"
-type: raw
+type: raw-article
 tags:
   - claude-code
   - academic

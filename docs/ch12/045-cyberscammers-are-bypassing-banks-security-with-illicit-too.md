@@ -8,53 +8,7 @@
 
 > **来源**: [原文链接](https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cyberscammers are bypassing banks"))
-    威胁机制
-    与现有实体对比
-```
-
 ## 核心发现
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
  Published Time: 2026-04-15T07:26:12-04:00 Markdown Content: From inside a money-laundering center in Cambodia, an employee opens a popular Vietnamese banking app on his phone. The app asks him to upload a photo associated with the account, so he clicks on a picture of a 30-something Asian man. Next, the app requests to open the camera for a video "liveness" check. The scammer holds up a static image of a woman bearing no resemblance to the man who owns the account. After a 90-second wait—as the...
 
@@ -89,10 +43,10 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 - **相关实体**: 浏览器安全与隐私
 
 ## 相关实体
-- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/Cyberscammers-are-bypassing-banks-security-with-illicit-tool.md)
+- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](ch12/120-cyberscammers-are-bypassing-banks-security-with-illicit-too.html)
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
-- [Ai_Threat_Readiness_Framework](../ch05/094-ai.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Ai_Threat_Readiness_Framework](../ch05/095-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cyberscammers-bypassing-bank-telegram.md)

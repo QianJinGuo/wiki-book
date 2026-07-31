@@ -2,7 +2,7 @@
 title: "AutoResearch 下一阶段：异步大规模多 Agent 协作"
 created: 2026-05-28
 updated: 2026-05-28
-type: raw
+type: raw-article
 tags: [autoresearch, multi-agent, karpathy, async-collaboration, AGI]
 sources:
   - https://mp.weixin.qq.com/s/ThK4Kn54UN6cHDkX6JgkGg

@@ -1,7 +1,7 @@
 ---
 
 title: "Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限"
-type: source
+type: raw-article
 tags: [ai-agent, engineering, wechat]
 source: wechat
 source_url: "https://mp.weixi"

@@ -10,7 +10,7 @@ review_value: 8
 review_confidence: 8
 review_recommendation: "strong"
 review_stars: 4
-type: raw
+type: raw-article
 tags: [enterprise-agent, eventhouse, context-engineering, alibaba-cloud, knowledge-catalog, change-governance, dikw, ai-coding]
 sources: []
 created: 2026-05-10

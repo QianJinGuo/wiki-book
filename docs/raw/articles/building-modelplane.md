@@ -2,7 +2,7 @@
 title: "Building Modelplane on Crossplane"
 source_url: "https://blog.crossplane.io/building-modelplane/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 74c78ee48f2b126003f1d219c91b7448d72c565fa44eb83ef50a3966ee14752d
 ---

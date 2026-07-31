@@ -5,7 +5,7 @@ source: "cohere"
 author: "Cohere Team"
 publish_date: "2026-06-09"
 ingested: "2026-06-11"
-type: article
+type: raw-article
 sha256: "6ad1a033693f4b46608ca31e90fe904524eee2d2d1f528da417f5535b768dd5a"
 tags: [cohere, north-mini-code, agentic-coding, open-source, moe, sovereign-ai, apache-2.0, code-model]
 source_type: rss

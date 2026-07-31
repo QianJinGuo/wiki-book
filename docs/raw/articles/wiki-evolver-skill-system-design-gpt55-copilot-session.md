@@ -4,7 +4,7 @@ source_url: file:///Users/jinguo/wiki/copilot/copilot-conversations/copilot-sess
 tags: [wechat, article, claude, openai]
 ingested: 2026-05-01
 sha256: local-copilot-session-export
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

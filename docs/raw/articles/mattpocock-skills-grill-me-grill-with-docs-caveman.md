@@ -1,6 +1,6 @@
 ---
 title: "Matt Pocock Skills：AI编程技能集合（grill-me/grill-with-docs/caveman）"
-type: raw
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/sSpaBEcClrB04JqDgBu0TQ
 fetcher: curl_direct

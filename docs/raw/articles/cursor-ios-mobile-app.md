@@ -2,7 +2,7 @@
 title: "cursor ios mobile app"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 82bd74e0eb03e42f13cf720777f0d3c60cef65df996d9ee1f03af454619a3bc1
 ---

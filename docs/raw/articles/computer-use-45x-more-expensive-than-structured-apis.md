@@ -9,7 +9,7 @@ review_recommendation: strong
 review_stars: 4
 source_feed: TLDR AI (newsletter)
 source_published: 2026-04-27
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: []

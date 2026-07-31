@@ -3,7 +3,7 @@ title: "Google DESIGN.md 科普：给 AI 写一份风格说明书"
 source_url: "https://mp.weixin.qq.com/s/OV8hDXQ7gl-zcjRFjjBHNA"
 ingested: 2026-06-30
 sha256: 5298729db7508db4ebcb719ac9af40ba40377c6351345e30553d0f0687e500e6
-type: raw
+type: raw-article
 tags: [design-md, google, style-guide, ai-prompting, personal-brand, ai-tools]
 author: 灵儿讲AI
 ---

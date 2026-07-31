@@ -4,32 +4,6 @@
 
 > 📊 Level ⭐⭐ | 17.9KB | `entities/openai-symphony-codex-orchestration-linear-control-plane.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI Symphony Linear 即 Codex"))
-    背景 从「agent 写代码」到「管理一群 agent」
-    核心机制 把 Linear 变成 Agent 编排器
-      一 Issue Agent Workspace 一一映射
-      二 抽象层 Ticket 承载更大的工作单元
-      三 Agent 也能创造新工作
-    产出与组织变化
-      PR 增长 前三周
-      PM 设计师直接参与
-      PR 护送到 Merging 状态
-    边界与设计教训
-      不适合所有任务
-      不要把 agent 当成状态机里的死板节点
-    技术底座
-      极简仓库结构
-      Codex App Server headless JSON-RPC
-    普通团队的落地建议
-    与本 Wiki 其他编排方案的关系
-    关键参考资源
-```
-
 ## 核心论点
 
 Symphony 是 OpenAI 在 2026-06 前后开源的 **Codex 编排规范**：把 **Linear 这种任务管理系统**变成 **coding agent 的控制平面**，让每一个开放任务都自动对应到一个独立 agent workspace，**从「人盯 session 干活」范式跃迁到「任务系统驱动 agent 干活」**。
@@ -39,41 +13,6 @@ Symphony 是 OpenAI 在 2026-06 前后开源的 **Codex 编排规范**：把 **L
 > For every open task, guarantee that an agent is running in its own workspace.
 
 ## 背景：从「agent 写代码」到「管理一群 agent」
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 OpenAI 半年前做了一次激进实验：一个生产力工具项目里**仓库每一行代码都必须由 Codex 生成**。这件事跑通后，新的瓶颈出现——当 AI 已经能写代码时，**卡住团队效率的变成了「人类如何管理这些 AI」**。
 
@@ -186,7 +125,7 @@ OpenAI 还使用 **dynamic tool calls** 暴露 `linear_graphql` 这类能力，�
 | 工程流程 | **显式 WORKFLOW.md 文档驱动** | 内置节点模板 | 内置 worker 模板 | harness 模板 |
 
 - 对话流主导（Coze 3）→ 任务系统主导（Symphony）→ Kanban 调度（Hermes）→ 云端沙箱（Oz）的演进，是「**从编排对话到编排工作流**」的范式递进
-- Symphony 强调的「**任务系统驱动 agent 干活**」与 [agent orchestration](../ch04/518-agent-orchestration.html) 的核心一致，但**控制平面从代码 session 切到了任务管理系统**
+- Symphony 强调的「**任务系统驱动 agent 干活**」与 [agent orchestration](../ch04/523-agent-orchestration.html) 的核心一致，但**控制平面从代码 session 切到了任务管理系统**
 
 ## 深度分析
 

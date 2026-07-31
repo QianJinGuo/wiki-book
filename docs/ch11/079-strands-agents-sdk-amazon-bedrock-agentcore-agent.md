@@ -10,57 +10,7 @@ AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Age
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/product-ad-review-agent-with-strands-sdk-bedrock.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 Strands Agents SDK 和 Amazon"))
-    Agents as Tools 是企业级 Agent 的「微服务化」
-    模型分层选型是被严重低估的工程实践
-    Bedrock AgentCore Runtime 的定位
-    OCR 提示词的「负面清单」工程
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 电商详情页中每个商品可能包含数十张广告图，每张图里的营销文案都要逐一过法务审核才能上架——传统人工流程慢、易遗漏、标准不一致。本案例展示厨房家电品类的自动化方案：浏览器登录 → Cognito 拿 JWT → STS 取临时凭证 → 直传 S3 → 后端调用 Agent → manager agent 调度两个专家 Agent → 提取广告词 → 对照知识库做合规分析 → 按 `- text: suggestion` 格式逐条输出。整套系统体现了「[多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) + 多模态 OCR + RAG 合规检索」的典型组合。
 
@@ -110,7 +60,7 @@ manager agent 通过 `tools=[run_text_extraction, review_advertisement_text]` �
 - 工具调用链的可观测性
 - 多租户隔离
 
-对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 [AgentCore Managed Harness](../ch04/224-agentcore-managed-harness.html) 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
+对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 [AgentCore Managed Harness](../ch04/225-agentcore-managed-harness.html) 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
 
 ### OCR 提示词的「负面清单」工程
 
@@ -139,17 +89,17 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 
 ## 相关实体
 
-- [Agentcore Harness](../ch04/689-agentcore-harness.html) — AgentCore Harness 综述
-- [Agentcore Managed Harness](../ch04/224-agentcore-managed-harness.html) — Managed Harness 定位与权衡
-- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/561-amazon-bedrock-agentcore.html) — AgentCore Runtime 深度分析
-- [Agentcore Payments X402 Agentic Commerce](ch11/066-agentcore-payments.html) — AgentCore 在支付场景的应用
-- [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](../ch04/237-agentic.html) — Strands + AgentCore 调度案例
+- [Agentcore Harness](../ch04/690-agentcore-harness.html) — AgentCore Harness 综述
+- [Agentcore Managed Harness](../ch04/225-agentcore-managed-harness.html) — Managed Harness 定位与权衡
+- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/566-amazon-bedrock-agentcore.html) — AgentCore Runtime 深度分析
+- [Agentcore Payments X402 Agentic Commerce](ch11/065-agentcore-payments.html) — AgentCore 在支付场景的应用
+- [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](../ch04/648-agentic.html) — Strands + AgentCore 调度案例
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/295-amazon-bedrock.html) — Bedrock Agent 运维
 - [Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多 Agent 协作模式
 - [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略
-- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/518-agent-orchestration.html)
-- [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](../ch04/561-amazon-bedrock-agentcore.html)
+- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/523-agent-orchestration.html)
+- [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](../ch04/566-amazon-bedrock-agentcore.html)
 
 ---
 

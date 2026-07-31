@@ -8,25 +8,6 @@
 > 原文：Akshay Pachaar @x.com
 > 编译：宝玉AI
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("深度拆解 AI 智能体 Harness 的构造 译"))
-    三个层次
-    个核心组件
-      编排循环 Orchestration Loop
-      工具 Tools
-      记忆 Memory
-    个关键架构决策
-    Harness 作为操作系统的类比深化
-    笨循环哲学的深意
-    上下文腐烂的量化证据
-    验证循环为何是生产级和应用级的分水岭
-    从抱怨模型转向检查 Harness
-```
-
 ## 核心命题
 **问题不在模型，而在模型外围的基础设施。**
 LangChain 仅通过改变包裹 LLM 的底层架构，让 TerminalBench 2.0 排名从第 30 名飙升至第 5——模型没变，参数没变。
@@ -34,37 +15,6 @@ LangChain 仅通过改变包裹 LLM 的底层架构，让 TerminalBench 2.0 排�
 > "如果你不是模型本身，那你就是 Harness。"
 
 ## 三个层次
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 层次 | 范围 |
 |------|------|
 | 提示词工程 | 精心设计模型接收到的指令 |
@@ -347,10 +297,10 @@ OpenAI SDK 的三层护栏（输入→工具→输出）体现了**纵深防御*
 - 原文：https://x.com/akshay_pachaar/status/2041146899319971922
 - 中文编译：宝玉AI
 ## 相关实体
-- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/298-ai-agent.html)
-- [Claude Code Large Codebase Enterprise Deployment](../ch03/078-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
-- [Claude Code Routines Proactive Agent](../ch03/078-claude-code.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/030-ai-agent.html)
+- [Claude Code Large Codebase Enterprise Deployment](../ch03/077-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/286-anthropic-claude-code.html)
+- [Claude Code Routines Proactive Agent](../ch03/077-claude-code.html)
 - [From Prompt To Harness Claude Official](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 

@@ -2,7 +2,7 @@
 title: "Building Jaeger’s ClickHouse backend: 8.6× compression on 10 million spans"
 source_url: "https://cncf.io/blog/2026/06/23/building-jaegers-clickhouse-backend-8-6x-compression-on-10-million-spans/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 6e0581dc17cedadb17cf5d51b3edfb360b46a493aa5a486f470b339a330fe3f6
 ---

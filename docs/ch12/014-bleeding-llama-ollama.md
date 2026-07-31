@@ -2,63 +2,9 @@
 
 ## Ch12.014 Bleeding Llama：Ollama 未授权内存泄漏漏洞
 
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 > 📊 Level ⭐⭐ | 20.7KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Bleeding Llama Ollama 未授权内存泄漏漏洞"))
-    漏洞根因分析
-    为什么影响如此之大
-    与其他 LLM 推理框架的类比
-    立即行动
-    长期安全架构建议
-    风险排查
-    CVSS 评分详情
-    技术深度解析
-      漏洞代码路径详解
-      堆内存布局与数据泄漏机理
-      攻击者视角 3 步完成完整攻击链
-```
 
 ## 摘要
 Title: Bleeding Llama: Critical Unauthenticated Memory Leak in Ollama | Cyera Research

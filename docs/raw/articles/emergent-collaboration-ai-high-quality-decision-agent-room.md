@@ -6,7 +6,7 @@ feed_name: "阿里技术"
 author: "吕若凡"
 published: 2026-05-27
 created: 2026-05-27
-type: raw
+type: raw-article
 tags: [agent-room, emergent-collaboration, multi-agent, decision-making, emergence, alibaba]
 sha256: cdf5ee4ba6d2dc2a211ecc653c6119a01b863cf2e6d8ef07723622e6af545e95
 ---

@@ -4,29 +4,6 @@
 
 > 📊 Level ⭐⭐ | 20.9KB | `entities/how_claude_code_works_in_large_codebases.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How Claude Code works in large"))
-    Claude Code 如何导航大型代码库
-      Agentic Search vs RAG
-      局限性
-    Harness 与模型同等重要
-      扩展点层次
-      CLAUDEmd 文件
-      Hooks
-    成功部署的三个配置模式
-      使代码库在大规模下可导航
-      随着模型智能发展主动维护 CLAUDEmd 文件
-      为 Claude Code 管理和 adoption 分配所有权
-    Agentic Search 的本质优势与结构性代价
-    扩展点层次的依赖顺序不是技术约束而是认知约束
-    三模式配置的隐含假设
-    适用场景与局限性
-```
-
 ## 核心要点
 - Claude Code 采用**主动搜索（agentic search）**而非 RAG，在本地运行，直接读取实时代码库，无集中式索引延迟
 - **Extension layer 是关键**：CLAUDE.md → Hooks → Skills → Plugins → MCP Servers → LSP/Subagents，五层叠加决定实际表现
@@ -34,41 +11,6 @@ mindmap
 - 组织层面：需要 **agent manager** 或 DRI 集中管理配置，防止知识部落化
 
 ## Claude Code 如何导航大型代码库
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Claude Code 导航代码库的方式与软件工程师相同：遍历文件系统、读取文件、使用 grep 精确查找、跟踪跨代码库的引用。它在开发者本地运行，**不需要构建、维护或上传代码库索引到服务器**。
 
 ### Agentic Search vs RAG
@@ -167,11 +109,11 @@ Claude Code 围绕传统软件工程环境设计：工程师是主要的代码�
 
 ## 相关概念
 ## 相关实体
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/453-how-claude-code-works-in-large-codebases-best-practices-and.html)
-- [Claude Code Large Codebase Harness Configuration](../ch03/078-claude-code.html)
-- [Claude Code Best Practices](../ch03/078-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment](../ch03/078-claude-code.html)
-- [Oneusefulthing Claude Code What Comes Next](../ch03/078-claude-code.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/454-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [Claude Code Large Codebase Harness Configuration](../ch03/077-claude-code.html)
+- [Claude Code Best Practices](../ch03/077-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment](../ch03/077-claude-code.html)
+- [Oneusefulthing Claude Code What Comes Next](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how_claude_code_works_in_large_codebases.md)
 

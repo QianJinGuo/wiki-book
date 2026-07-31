@@ -6,7 +6,7 @@ ingested: 2026-06-09
 sha256: pending
 author: Phil Miller (Black Hills Information Security)
 tags: [security, gitlab, ci-cd, supply-chain, audit, kill-chain, devsecops]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 9
 review_recommendation: strong

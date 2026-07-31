@@ -6,61 +6,7 @@
 
 # Scaling Camera File Processing at Netflix
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Scaling Camera File Processing at"))
-    为什么构建 MPS
-    FilmLight API 的角色
-    云原生架构的关键约束
-    弹性扩缩容应对生产负载
-    「构建不如合作」的工程哲学
-    从 GPU 到 CPU 的架构逆向选择
-    开放标准的战略价值
-    影响力的「缺席」表现
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Netflix 的 Media Production Suite (MPS) 通过集成 FilmLight API (FLAPI) 实现了云端原生的相机文件处理管线，覆盖元数据解析、VFX 素材生成和弹性扩缩容。 该系统每天处理数百小时、TB 级的摄影机素材，采用「构建不如合作」的策略，将 FilmLight 的行业级图像处理引擎作为后端 API，部署在 Netflix 的 Cosmos 计算平台上。文章展示了如何将传统需要本地 GPU 集群的电影后期处理工作流迁移到 CPU-only 的云函数架构中，实现按需弹性扩缩容。
 

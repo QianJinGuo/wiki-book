@@ -8,19 +8,6 @@
 
 > 2026-06-07 引用自 Ethan Mollick《Claude Dispatch and the Power of Interfaces》，One Useful Thing，2026-03-31。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Dispatch 接口力量 AI 从 Chatbot"))
-    核心论点 接口是 AI 能力的真正瓶颈
-    接口类型 1 专业化工具
-    接口类型 2 个人 Agent
-    接口类型 3 按需生成
-    结论
-```
-
 ## 核心论点：接口是 AI 能力的真正瓶颈
 
 AI 能力已远超大众实际使用水平。能力过剩的根源不在模型，而在**人机接口**。大部分人通过 chatbot 访问 AI（通常还是免费版），这对快速问答 OK，但对真实工作是个糟糕的方式。
@@ -28,41 +15,6 @@ AI 能力已远超大众实际使用水平。能力过剩的根源不在模型�
 研究证据：金融专业人士用 GPT-4o 做复杂估值任务时，AI 呈现的信息格式（大片文字、离题内容、混乱讨论）造成认知过载，完全压倒了 AI 带来的生产力提升。Chatbot 接口本身就是障碍，不是工作本身。
 
 ## 接口类型 1：专业化工具
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 最完整的专业化 AI 接口在**编程**领域（Codex、Claude Code、Antigravity）。但这些工具假设用户懂 Python 和 Git，界面像 1980 年代电脑教室，对 99% 非开发者知识工作者不友好。
 
@@ -112,11 +64,11 @@ AI 能力一直领先于 AI 可及性。Chatbot 格式在主动对抗用户。�
 5. **为"AI失望"做结构性归因——先改接口再弃AI**：当团队反映AI"不好用"时，应首先识别是否是接口问题（输入方式、输出格式、交互流程），而非直接判定AI能力不足。往往是接口错了，而非AI
 
 ## 相关实体
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/235-openclaw.html)
-- [Skill System Design Three Way Comparison](../ch04/271-skill.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1036-openclaw-agent.html)
-- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/604-anthropic-claude.html)
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/298-ai-agent.html)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/237-openclaw.html)
+- [Skill System Design Three Way Comparison](../ch04/273-skill.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1049-openclaw-agent.html)
+- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1354-anthropic-claude.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/030-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
 

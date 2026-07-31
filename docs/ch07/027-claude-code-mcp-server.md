@@ -4,59 +4,11 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-mcp-server.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code MCP Server"))
-    MCP 实现机制
-      配置与连接
-      API 两个位置
-      执行流程 真正的 RPC 调用
-    MCP 祛魅 很多场景下一条 Bash 就够了
-    MCP 真正不可替代的场景
-    MCP Server 的 instructions 字段
-```
-
 ## 核心洞察
 **MCP（Model Context Protocol）是 Anthropic 提出的开放协议，让 Claude Code 能调用外部服务提供的工具。它是 `tool_use` 最直接的应用——模型触发后，客户端向外部 MCP Server 进程发起 RPC 调用，拿到真实结果。**
 MCP 在 Claude Code 中占据两个 API 位置：`tools[]` 注册工具 + `system` 动态区域注入 Server 级 instructions。这是 Claude Code 四个被分析框架（Codex、OpenCode、Gemini-CLI）中**唯一对 MCP 有完整原生实现**的。
 
 ## MCP 实现机制
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 配置与连接
 MCP 服务器定义在 `~/.claude.json`（user scope）或项目根目录的 `.mcp.json`（project scope）中。连接建立后，Claude Code 通过 MCP SDK 与 Server 完成 `initialize` 握手，获取工具列表和 Server 返回的 **instructions 字段**。
 
@@ -129,31 +81,31 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/006-claude-code-skills-mcp-rules.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code 源码深度解析（13 核心机制）](../ch03/078-claude-code.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
-- [AgentCore Runtime 部署 Apache Doris MCP Server](../ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code 源码深度解析（13 核心机制）](../ch03/077-claude-code.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
+- [AgentCore Runtime 部署 Apache Doris MCP Server](../ch11/177-apache-doris-mcp-server-quick-suite-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
 - [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](ch07/006-claude-code-skills-mcp-rules.html)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/078-claude-code.html)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
-- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

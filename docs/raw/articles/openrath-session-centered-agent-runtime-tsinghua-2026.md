@@ -5,7 +5,7 @@ author: "Hyman的杂货铺"
 published: 2026-06-28
 ingested: 2026-06-28
 language: zh
-type: raw
+type: raw-article
 sha256: "06acc1b425e3353a1739b57db3c1156e00d5fd8a955344c2a703b259ab57a618"
 ---
 

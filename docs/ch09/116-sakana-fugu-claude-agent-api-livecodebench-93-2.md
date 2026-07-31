@@ -8,60 +8,11 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sakana-fugu-livecodebench-93-2.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Sakana Fugu 发布 Claude 禁令后的多 Agent"))
-    技术架构 可交换 Agent 池与协调器模型
-    基准测试的可信度争议
-    商业定位与市场影响
-```
-
 ## 摘要
 
 Sakana AI 在 Anthropic 因美国政府指令暂停 Claude Fable 5 和 Mythos 5 访问后，发布了商业多 Agent 编排 API——Fugu 和 Fugu Ultra。Fugu Ultra 在 LiveCodeBench 上以 93.2 分超越 Fable 5 的 89.8 分，在 SWE-Bench Pro 上以 73.7 分领先 Claude Opus 4.8（69.2）和 GPT-5.5（58.6）。然而，Fugu 的黑盒路由器设计——用户无法知晓底层使用了哪些模型——引发了行业对可信度和透明度的广泛质疑。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **多 Agent 编排即服务**：Fugu 本质上是"一个被训练用来调用其他语言模型的语言模型"，能够自主决定何时委派、验证和组合工作，基于 ICLR 2026 论文 TRINITY 和 Conductor 的协调器架构。
 - **定价分层明确**：Fugu Ultra 起价 $5/百万输入 token、$30/百万输出 token；上下文超过 272K token 时升至 $10/$45。标准 Fugu 采用可变定价，按请求中最高 tier 模型计费。

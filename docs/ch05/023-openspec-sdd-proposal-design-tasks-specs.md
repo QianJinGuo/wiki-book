@@ -6,31 +6,6 @@
 
 # OpenSpec 规范驱动开发（SDD）框架
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenSpec 规范驱动开发 SDD 框架"))
-    OpenSpec 是什么
-    目录结构 两大核心模块
-    四类核心文档 核心方法论
-      proposalmd 提案文档
-      designmd 技术设计文档
-      tasksmd 实施任务清单
-    ADDED
-      能力 work-log
-    MODIFIED
-      能力 既有 X
-    REMOVED
-      能力 废弃 Y
-    Trae IDE 安装配置 5 分钟
-    实操案例 Trae OpenSpec 开发日报生成工具
-      步骤 1 创建变更
-      步骤 2 审阅规划文档 人在回路
-      步骤 3 实施变更
-```
-
 ## 核心问题
 
 **AI 编程的"翻车"模式**：
@@ -42,37 +17,6 @@ mindmap
 
 ## OpenSpec 是什么
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-
 **轻量级规范驱动开发（Spec-Driven Development, SDD）开源框架，专门为 AI 编程助手设计**。
 
 **核心理念**：
@@ -81,10 +25,10 @@ graph TB
 
 ## 相关实体
 - [Openspec 四步法深度复盘 流程完整不等于代码正确](ch05/050-openspec.html)
-- [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1016-spec.html)
+- [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1034-spec.html)
 - [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](../ch03/035-agent.html)
 - [24H Worker Agent](../ch03/035-agent.html)
-- [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/298-ai-agent.html)
+- [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/030-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openspec-spec-driven-development-trae-solo.md)
 

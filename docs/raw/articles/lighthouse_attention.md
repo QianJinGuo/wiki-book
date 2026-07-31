@@ -1,6 +1,6 @@
 ---
 title: Lighthouse Attention
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://nousresearch.com/lighthouse-attention
 fetcher: jina

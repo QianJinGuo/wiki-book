@@ -3,7 +3,7 @@ title: "RL训练一层就够了！单层RL超越全参数训练，跨任务跨�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/u6-CbyiQ-uhXi6cwyNlomA"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 81
 tags: [raw]
 sha256: "4419b97e35226fa05baa88a7e7a128a769596c926dfeaf30a4184e7492ee905a"

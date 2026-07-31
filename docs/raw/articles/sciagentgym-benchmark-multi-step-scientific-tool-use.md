@@ -4,7 +4,7 @@ title: "SciAgentGym：多步科学工具使用的 LLM Agent 评测基准"
 source_url: "https://mp.weixin.qq.com/s/7d0hdiNAXorHS7LgqYRDzw"
 author: ""
 ingested: 2026-07-02
-type: raw
+type: raw-article
 tags: [agent, benchmark, scientific-computing, llm-agent, tool-use, evaluation]
 ---
 

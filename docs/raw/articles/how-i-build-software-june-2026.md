@@ -2,7 +2,7 @@
 title: "How I Build Software in June 2026"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 773f617f892a27e0fb6cd5262d4619e08c14781d597db5f4a628da499770c213
 ---

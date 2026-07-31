@@ -8,50 +8,9 @@
 
 多 Agent 编排的核心问题：任务分解、角色分配、通信协议、冲突消解。主流模式包括层级编排（Orchestrator-Worker）、对等协作（Peer-to-Peer）、市场竞争（Auction-based）等。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("多 Agent 编排系统"))
-    四种编排模式的设计哲学
-    任务分解粒度的核心权衡
-    通信协议的核心设计选择```
-
 ## 深度分析
 
 ### 四种编排模式的设计哲学
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 四种主流多 Agent 编排模式对应不同的设计哲学。层级编排（Orchestrator-Worker）强调"分治"——中央协调者负责任务分解和结果合并。对等协作（Peer-to-Peer）强调"自主"——各 Agent 通过消息传递自行协调，没有中心节点。市场竞争（Auction-based）强调"择优"——多个 Agent 根据能力和报价竞标任务。投票/共识模式强调"民主"——多个 Agent 独立判断，通过加权投票确定最终输出。
 
@@ -72,8 +31,8 @@ graph TB
 ## 相关实体
 
 - [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/162-factory-missions.html)
-- [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/896-agent-ai.html)
-- [Anthropic Multi Agent Research System](ch04/576-anthropic-multi-agent-research-system.html)
+- [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/909-agent-ai.html)
+- [Anthropic Multi Agent Research System](ch04/580-anthropic-multi-agent-research-system.html)
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
 - [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/219-self-evolving-agents.html)
 

@@ -11,7 +11,7 @@ review_value: 7
 review_confidence: 7
 review_recommendation: worth-reading
 review_stars: 3
-type: article
+type: raw-article
 tags: [testing, automation, e2e, ai-coding, aliyun, dataworks]
 ---
 基于浏览器请求录制与AI代码生成的E2E接口自动化测试实践

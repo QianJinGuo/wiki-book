@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((研究前沿))
-    AGI路径
-      扩展假说
-      架构创新
-      自我改进
-    新范式
-      世界模型
-      因果推理
-      神经符号
-    科学发现
-      AI4Science
-      药物发现
-      材料设计
-    理论基础
-      缩放定律
-      涌现现象
-      可解释性
-    长期挑战
-      对齐问题
-      意识与理解
-      价值学习
-    跨学科
-      认知科学
-      神经科学
-      哲学
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -49,34 +18,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph TB
-    subgraph "前沿方向"
-        AGI[AGI 路径] --> EMB[具身智能]
-        AGI --> NEU[神经符号]
-        AGI --> SELF[自我改进]
-    end
-    subgraph "理论"
-        SCAL[Scaling Laws]
-        EME[涌现能力]
-        COMP[复杂性理论]
-    end
-    SELF --> SCAL & EME
-    subgraph "挑战"
-        ALIGN[对齐]
-        INT[可解释性]
-        SAF[安全]
-    end
-    AGI --> ALIGN & INT & SAF
-    classDef dir fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef theory fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef challenge fill:#fef3c7,stroke:#d97706,color:#78350f
-    class AGI,EMB,NEU,SELF dir
-    class SCAL,EME,COMP theory
-    class ALIGN,INT,SAF challenge
-```
-
 
 这一章属于那些想知道"AI 的边界在哪里"的人。
 
@@ -387,7 +328,7 @@ Recursive 团队在三个 SOTA benchmark 上同时取得突破，且没有 DeepM
 
 ## Ch19.004 Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
-> 📊 Level ⭐⭐ | 8.2KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
+> 📊 Level ⭐⭐ | 8.3KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
 
 # Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 

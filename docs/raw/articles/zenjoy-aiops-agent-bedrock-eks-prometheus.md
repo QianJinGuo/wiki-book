@@ -1,6 +1,6 @@
 ---
 title: Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战
-type: raw
+type: raw-article
 source: rss
 source_url: https://aws.amazon.com/cn/blogs/china/zenjoy-based-on-strands-amazon-bedrock-agentcore-build-eks
 fetcher: rss-to-wiki

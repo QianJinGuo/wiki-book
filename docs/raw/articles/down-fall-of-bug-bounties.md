@@ -1,6 +1,6 @@
 ---
 title: The down fall of bug bounties
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://shubs.io/the-down-fall-of-bug-bounties
 fetcher: jina

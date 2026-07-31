@@ -1,6 +1,6 @@
 ---
 title: Building AI Agents in Accounting
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.onlycfo.io/p/building-ai-agents-in-accounting
 tags: [finance, ai]

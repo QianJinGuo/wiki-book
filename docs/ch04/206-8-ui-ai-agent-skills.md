@@ -6,22 +6,6 @@
 
 [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("精选 8 个 UI 设计师必备的 AI 智能体技能 Agent"))
-    技能生态的分层架构
-    设计系统的持久化价值
-    工作流的收敛性
-    值得关注的限制
-    立即可用的行动项
-    团队推广建议
-    相关参考
-    为什么要关注安装顺序
-```
-
 ## 深度分析
 这篇文章系统性地解决了 **AI 生成代码与设计语言之间的断层** 问题^。作者的核心观点是：Claude Code 默认偏开发者思维，需要通过安装特定技能（Skills）来补齐设计感知能力。
 
@@ -44,39 +28,6 @@ mindmap
 文章在 FAQ 中明确指出^：这些技能只能在 **Claude Code CLI 或 OpenClaw** 这类环境使用，网页版不支持。这意味着企业部署场景需要考虑 CLI 环境的可访问性。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 立即可用的行动项
 1. **优先安装 `ui-ux-pro-max` + `frontend-design`**^——这两个覆盖了设计方向和代码规范，是最小可用集
 2. **新项目先用设计系统生成**^——把输出保存为 `MASTER.md`，后续页面直接复用
@@ -89,8 +40,8 @@ graph TB
 
 ### 相关参考
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
-→ [frontend-design 实体对比](../ch01/719-skills-anthropic-openai-comparison-frontend-design.html)
-→ [开发者技能清单](ch04/397-agent-skills.html)
+→ [frontend-design 实体对比](../ch01/735-skills-anthropic-openai-comparison-frontend-design.html)
+→ [开发者技能清单](ch04/401-agent-skills.html)
 
 # 精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）
 如果你在用 Claude Code 做设计，大概率遇到过这种情况，而且还不止一次。它写代码确实很强，但默认的思路更偏开发者，而不是设计师。让它做个落地页，功能是能跑的，但视觉上常常停留在「把  ` <h1> ` 做得比  ` <h2> ` 大一点」的水平。

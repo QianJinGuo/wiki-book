@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/skill-design-patterns-anthropic.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 官方 14 种 Skill 设计模式"))
-    Anthropic 官方 14 种设计模式 5 大类
-      第一类 发现与选择 Discovery Selection
-      第二类 上下文经济 Context Economy
-      第三类 指令校准 Instruction Calibration
-    系统性视角 5 类模式的内在逻辑
-    核心张力 自由度 vs 确定性
-    渐进式披露 vs 上下文预算 一个优化两个方向
-    Anthropic 模式 vs 社区模式 互补而非竞争
-    按问题域对号入座
-    description 的三层结构
-    ALL CAPS 检查表
-```
-
 ## Anthropic 官方 14 种设计模式（5 大类）
 > **来源：** Anthropic 官方技能编写最佳实践，[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-14-skill-patterns-best-practices.md)
 与上面 5+1 种社区模式（提炼自顶级 Skill 仓库）互补，这 14 种模式来自 Anthropic **官方**的最佳实践文档，按 **技能生命周期**组织：从触发到执行到校准。
@@ -126,42 +107,9 @@ mindmap
 | 互补 | 偏「选哪种」 | 偏「怎么写好」 |
 | 重叠 | 循环迭代 ↔ 自纠正循环（类似） | 渐进式披露两者都有 |
 最佳实践：用社区模式的**决策树**选型，用 Anthropic 模式的**编写原则**指导具体实现。
-→ [返回总览](../ch04/271-skill.html)
+→ [返回总览](../ch04/273-skill.html)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 系统性视角：5 类模式的内在逻辑
 Anthropic 的 14 种模式并非孤立的技巧，而是一条从「触发」到「执行」再到「校准」的完整链路。
 
@@ -242,12 +190,12 @@ Anthropic 强调 description 是「最关键的信号」，实践中最有效的
 | 调试/修复已有技能 | 模式 6（解释 Why）+ ALL CAPS 扫描 |
 
 ## 相关实体
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/257-anthropic-agent.html)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/383-anthropic-google-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/260-anthropic-agent.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/517-anthropic-google-agent-skills.html)
 
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/719-skills-anthropic-openai-comparison-frontend-design.html)
-- [Claude Design 系统提示词 → web-design-engineer Skill](ch01/1150-claude-design-skill.html)
-- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/989-anthropic.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/735-skills-anthropic-openai-comparison-frontend-design.html)
+- [Claude Design 系统提示词 → web-design-engineer Skill](ch01/1143-claude-design-skill.html)
+- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/1004-anthropic.html)
 
 ---
 

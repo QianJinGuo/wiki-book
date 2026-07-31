@@ -6,7 +6,6 @@
 
 # LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
 
-
 ## 核心内容
 
 本文深度评测了LibTV Agent——哩布哩布（Liblib）旗下专业AI视频创作平台的智能Agent功能。作者通过三个真实项目的完整创作过程，展现了LibTV Agent的核心创新：
@@ -21,39 +20,6 @@
 作者验证了三类场景：照片转皮克斯风格动画（选Skill型）、已有剧本的品牌宣传片制作（自带剧本型）、旅行照片集锦影像诗（从零到Skill型）。
 
 ## 分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 本文具有多重意义：
 

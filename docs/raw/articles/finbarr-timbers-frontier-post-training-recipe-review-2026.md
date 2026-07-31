@@ -2,7 +2,7 @@
 source: rss
 source_url: https://www.interconnects.ai/p/frontier-post-training-recipe-review
 ingested: 2026-06-17
-type: article
+type: raw-article
 sha256: c8e20c6a56d7bfef1ec837f4120f8bc2c81b56ad4eeff4c61959cad136ac933c
 feed_name: Interconnects
 source_published: 2026-06-17

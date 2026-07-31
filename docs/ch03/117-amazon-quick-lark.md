@@ -6,56 +6,11 @@
 
 # 零代码快速体验 Amazon Quick 操作飞书/Lark
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("零代码快速体验 Amazon Quick 操作飞书Lark"))
-    MCP 协议驱动的跨平台办公自动化
-    配置流程的工程化设计
-    典型应用场景和实际价值
-    MCP 生态的扩展性
-```
-
 ## 摘要
 
 Amazon Quick 通过远程 MCP Connector 能力接入飞书（Feishu）与 Lark 的 MCP Server，使用户能够通过自然语言对话直接操作飞书/Lark 的文档读取/创建、消息发送/读取、日程管理等核心办公功能。本文详解了从飞书 MCP 配置平台的远程 MCP 服务创建，到 Quick 网页端与桌面端的集成配置全过程，提供了一种零代码的 AI 办公自动化方案。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 - **远程 MCP 集成**：利用飞书/Lark 开放平台的远程 MCP Server，通过 Streamable HTTP 协议连接 Amazon Quick，实现跨平台 AI 办公协作
 - **零代码配置**：无需编写代码，只需在飞书 MCP 配置平台上创建 MCP 服务并授权，在 Quick 中配置 Connector 即可使用
@@ -104,11 +59,11 @@ MCP（Model Context Protocol）作为 AI 模型与外部工具之间的标准化
 
 ## 相关实体
 
-- [Amazon Quick 加速企业数据到 AI 决策](../ch11/222-amazon-quick.html)
-- [Amazon Quick + Bedrock AgentCore FinOps 实践](../ch11/131-amazon-quick-bedrock-agentcore-finops.html)
+- [Amazon Quick 加速企业数据到 AI 决策](../ch11/224-amazon-quick.html)
+- [Amazon Quick + Bedrock AgentCore FinOps 实践](../ch11/129-amazon-quick-bedrock-agentcore-finops.html)
 - [Figma 的 MCP Server 四种用法](https://github.com/QianJinGuo/wiki/blob/main/entities/4-ways-were-using-our-mcp-server-at-figma.md)
 - [AI 网关 vs MCP 网关安全对比](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
-- [Amazon Quick + Cisco Webex MCP 会议助理](../ch11/222-amazon-quick.html)
+- [Amazon Quick + Cisco Webex MCP 会议助理](../ch11/224-amazon-quick.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/零代码快速体验-amazon-quick-操作飞书lark.md)
 

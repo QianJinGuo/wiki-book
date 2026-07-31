@@ -15,7 +15,7 @@ tags:
   - failure-postmortem
   - management
   - wechat
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 7
 review_recommendation: worth-reading

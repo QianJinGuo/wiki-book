@@ -4,27 +4,6 @@
 
 > 📊 Level ⭐⭐ | 22.0KB | `entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GeneGEP EvoMap清华 提出的「策略基因」经验对象框架"))
-    反直觉的「Agent 玄学」
-    Gene Capsule Event 三件套
-    GEP Gene Evolution Protocol 六阶段循环
-    Skill vs Gene 受控实验 输的不是质量 是形态
-      算术对比
-      关键数据 Gemini 31 Pro Flash T005 max
-      预算对齐实验 剪短 Skill 仍打不过 Gene
-    鲁棒性边界 结构宽容 语义挑剔
-    失败经验的最优形态 AVOID 警告
-      对照一 失败放在不同载体里
-      对照二 失败和策略的混合形态
-    一个真实的 Gene 是什么样 UV-vis 场景 约 230
-    CritPt benchmark 端到端验证
-```
-
 ## 核心定位
 
 EvoMap 团队（**Infinite Evolution Lab × 清华大学**）在 **arXiv 2604.15097** 提出的 **Gene (策略基因) + GEP (Gene Evolution Protocol)** 经验对象框架 —— 用约 **230 token 的紧凑控制对象** 替代**约 2,500 token 的传统 Skill 文档**，在 **45 个科学代码场景、4,590 次受控实验** 和 **CritPt benchmark** 上验证 Gene **稳定战胜**完整 Skill 包（甚至战胜**截短到同长度的 Skill**）。
@@ -32,39 +11,6 @@ EvoMap 团队（**Infinite Evolution Lab × 清华大学**）在 **arXiv 2604.15
 **核心反直觉结论**：经验复用的关键不是给模型更多内容性提示，而是把经验做成一个**紧凑、面向控制、可持续进化的对象** —— "**经验回到模型那一刻，长什么形状**"决定了 Agent 能进化成什么样。
 
 ## 反直觉的「Agent 玄学」
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 把任务背景、流程、常见坑、API 用法、示例代码、注意事项都塞进 Skill 文档，下次同类任务模型还是可能在同一个地方犯错。
 
@@ -256,35 +202,35 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 
 1. **strategy 层是 Gene 的不可省略内核**：渐进式构造实验（keywords + summary → 无指导基线）证明，同等 token 预算下，组织成"摘要"毫无作用，组织成"策略"才能把表现拔起来。**AVOID 警告单独使用时甚至强于策略本体**——这揭示了经验对象的核心价值不是"告诉模型怎么做"，而是"告诉模型什么不能做"。
 
-2. **结构宽容 + 语义挑剔的鲁棒性边界**：stale_paradigm（过时算法范式）比 clean Gene 更高（56.6% vs 54.0%），但换错领域/换错算法立刻掉分。这说明 Gene 的有效条件是"**保留任务相关的控制框架**"，而非"写最新的方法"。过期框架只要结构对仍然有效；新方法如果框架错则直接拖累——这对 [GEPA 通用文本优化](../ch01/295-gepa-optimize-anything.html) 的"内容质量优先"前提是一个直接挑战。
+2. **结构宽容 + 语义挑剔的鲁棒性边界**：stale_paradigm（过时算法范式）比 clean Gene 更高（56.6% vs 54.0%），但换错领域/换错算法立刻掉分。这说明 Gene 的有效条件是"**保留任务相关的控制框架**"，而非"写最新的方法"。过期框架只要结构对仍然有效；新方法如果框架错则直接拖累——这对 [GEPA 通用文本优化](../ch01/296-gepa-optimize-anything.html) 的"内容质量优先"前提是一个直接挑战。
 
-3. **GEP 协议是经验对象从"Prompt 片段"到"持久策略接口"的升格层**：没有协议，Gene 只是另一段 prompt——边界不稳、字段无法比较、不能累积。协议化后 Gene 变成可匹配、可替换、可修订、可组合的对象——这为 [OpenClaw Agent Loop 设计范式](../ch01/1036-openclaw-agent.html) 中多 Agent 之间的经验交换提供了标准化的接口规范。
+3. **GEP 协议是经验对象从"Prompt 片段"到"持久策略接口"的升格层**：没有协议，Gene 只是另一段 prompt——边界不稳、字段无法比较、不能累积。协议化后 Gene 变成可匹配、可替换、可修订、可组合的对象——这为 [OpenClaw Agent Loop 设计范式](../ch01/1049-openclaw-agent.html) 中多 Agent 之间的经验交换提供了标准化的接口规范。
 
 4. **"经验回到模型那一刻，长什么形状"是 Gene 最本质的命题**：这个问题的答案决定了 Agent 在测试时能进化成什么样。[Harness 7 层](../ch05/120-harness-engineering.html)框架中，Gene 对应的是"控制对象层"——而这一层在之前的 harness 设计中几乎被完全忽视，所有设计努力都集中在 context 填充和 memory 系统上。
 
 **实践价值**：对于 Agent 系统开发者，Gene 的最大启示是"**把写给同事的 Skill 文档和运行时注入给模型的控制信号分开**"——这是几乎没有成本、见效极快的优化。只需把已有的 Skill 文档中程序性内容（workflow/pitfalls/constraints）提取出来，重新组织成 strategy + AVOID 结构，就能显著提升控制密度。
 
-[Agent Skill 编写指南](../ch04/269-agent-skill.html)的渐进式披露设计（分阶段加载 Skill 内容）在这里是一个互补视角——Gene 解决的是"注入后是什么形态"，渐进式披露解决的是"何时加载"，两者结合才能构建完整的经验复用系统。
+[Agent Skill 编写指南](../ch04/271-agent-skill.html)的渐进式披露设计（分阶段加载 Skill 内容）在这里是一个互补视角——Gene 解决的是"注入后是什么形态"，渐进式披露解决的是"何时加载"，两者结合才能构建完整的经验复用系统。
 
 ## 实践启示
 
 1. **将 Skill 文档中的程序性内容提取为 Gene 结构**：把 workflow / pitfalls / constraints / AVOID 从 Skill 文档中独立出来，重新组织成 `keywords + strategy + AVOID` 的紧凑控制对象——这是从 Skill 到 Gene 的最小可行迁移路径
 2. **失败经验的最优沉淀形态是 AVOID 警告而非 trajectory log**：把失败经验写成一个一个独立的"AVOID xxx"警告，比保留完整的失败日志或反思摘要更能提升控制信号质量——[Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)中的 SKILL.md 自迭代设计可以借鉴这一原则
-3. **强模型（Pro 级）上长 Skill 会压住固有能力**：在部署 Gene 时，对强模型优先使用 Gene 而非完整 Skill 包——这与 [Skill 高级实践](../ch04/269-agent-skill.html) 中"根据模型能力梯度选择注入内容"的设计原则一致
+3. **强模型（Pro 级）上长 Skill 会压住固有能力**：在部署 Gene 时，对强模型优先使用 Gene 而非完整 Skill 包——这与 [Skill 高级实践](../ch04/271-agent-skill.html) 中"根据模型能力梯度选择注入内容"的设计原则一致
 4. **GEP 协议是 A2A 群体智能的基础设施**：若计划让多个 Agent 之间交换经验，传输结构化 Gene 对象（而非 Skill 文档）才能实现可匹配、可验证、可累积的群体进化——[Darwin Skill 互优化](../ch01/332-hermes-agent-skill.html)的跨 Agent 经验交换实验可作为参考实现
 5. **结构宽容意味着 Gene 可以跨版本复用**：过时 Gene 只要控制框架对仍可用——在更新 Gene 池时优先更新 strategy 层和 AVOID 警告，而非推翻重来
 
-- [Agent Skill Writing](../ch04/269-agent-skill.html) — Agent Skill 编写指南（渐进式披露三阶段）
-- [Agent Skill Writing Advanced](../ch04/269-agent-skill.html) — Skill 高级实践
-- [Agent Skill Writing Evaluation](../ch04/269-agent-skill.html) — Skill 评估方法
-- [Agent Skill Writing Guide](../ch04/269-agent-skill.html) — Skill 编写完整指南
-- [Agent Skill Writing Practices](../ch04/269-agent-skill.html) — Skill 最佳实践
-- [Anthropic Agent Skills Design Patterns 14](../ch04/257-anthropic-agent.html) — Anthropic 官方 14 个 Skill 设计模式
-- [Darwin Skill 2 Huashu](../ch04/271-skill.html) — Darwin Skill 互优化
+- [Agent Skill Writing](../ch04/271-agent-skill.html) — Agent Skill 编写指南（渐进式披露三阶段）
+- [Agent Skill Writing Advanced](../ch04/271-agent-skill.html) — Skill 高级实践
+- [Agent Skill Writing Evaluation](../ch04/271-agent-skill.html) — Skill 评估方法
+- [Agent Skill Writing Guide](../ch04/271-agent-skill.html) — Skill 编写完整指南
+- [Agent Skill Writing Practices](../ch04/271-agent-skill.html) — Skill 最佳实践
+- [Anthropic Agent Skills Design Patterns 14](../ch04/260-anthropic-agent.html) — Anthropic 官方 14 个 Skill 设计模式
+- [Darwin Skill 2 Huashu](../ch04/273-skill.html) — Darwin Skill 互优化
 - [Hermes Agent Skill Crossover Optimization](../ch01/332-hermes-agent-skill.html) — Hermes Agent Skill 互优化（达尔文闭环）
-- [Openclaw Agent Loop Design Patterns](../ch01/1036-openclaw-agent.html) — OpenClaw Agent Loop 设计范式
+- [Openclaw Agent Loop Design Patterns](../ch01/1049-openclaw-agent.html) — OpenClaw Agent Loop 设计范式
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/120-harness-engineering.html) — Harness 7 层 (OpenClaw/Hermes/Claude Code)
-- [Gepa Optimize Anything](../ch01/295-gepa-optimize-anything.html) — GEPA 通用文本优化（与 Gene 不同的优化路径）
+- [Gepa Optimize Anything](../ch01/296-gepa-optimize-anything.html) — GEPA 通用文本优化（与 Gene 不同的优化路径）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md)
 

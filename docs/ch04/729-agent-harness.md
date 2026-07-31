@@ -8,18 +8,6 @@
 
 生产级 Agent Harness 的工程要求：高可用、可观测、成本控制、安全沙箱、渐进式披露。区别于 Demo 级 Harness，生产级需处理长时运行、状态恢复、并发隔离、失败回滚等真实工程挑战。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 生产级 Harness 工程实践"))
-    生产级 Harness 的核心工程约束
-    可观测性 生产运行的仪表盘
-    安全沙箱与隔离机制
-    成本控制的多层策略
-```
-
 ## 深度分析
 
 ### 生产级 Harness 的核心工程约束
@@ -39,37 +27,6 @@ mindmap
 生产级运行意味着 Token 消耗不再是实验费用而是持续运营成本。成本控制需要从多个层面实施：模型路由（简单任务用轻量模型）、上下文窗管理（避免无意义历史累积）、预算旋钮（为不同场景设定 Token 上限）、子 Agent 隔离（长任务分解后独立计费）。成本控制与运行质量之间需要显式权衡，最优解取决于具体业务场景。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 1. **从可观测性开始建设**：不要让"先跑起来再说"成为借口——在部署第一天就打通日志、指标、链路追踪三条管线，事后补可观测性的成本远高于一开始就设计进去。
 2. **渐进式安全策略**：安全沙箱的粒度应从环境变量白名单开始，逐步扩展到网络策略和文件系统隔离，避免过早的过度约束阻碍迭代速度。

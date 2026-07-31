@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: LLM-as-judge替代generic RFT / 6步法官设计方法论 / Nova 2 Lite+RFT最优
 sha256: 0f8c9f0b188d

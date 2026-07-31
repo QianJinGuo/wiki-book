@@ -9,7 +9,7 @@ review_value: 8.5
 review_confidence: 8
 review_recommendation: "strong"
 review_stars: 4
-type: raw
+type: raw-article
 tags:
   - "claude-code"
   - "subagent"

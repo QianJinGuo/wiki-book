@@ -7,7 +7,7 @@ publish_date: 2026-06-24
 created: 2026-07-05
 ingested: 2026-07-05
 tags: [ai-coding, harness-engineering, enterprise, qunar, maturity-model, qdo, devcenter, metrics, skills, l0-l5, wechat]
-type: article
+type: raw-article
 review_value: 9
 review_confidence: 9
 review_recommendation: strong

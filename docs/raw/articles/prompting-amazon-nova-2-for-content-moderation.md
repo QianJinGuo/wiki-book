@@ -1,6 +1,6 @@
 ---
 title: Prompting Amazon Nova 2 for content moderation
-type: raw
+type: raw-article
 tags: [aws-china-blog, agentic-ai, context-engineering]
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/prompting-amazon-nova-2-for-content-moderation/

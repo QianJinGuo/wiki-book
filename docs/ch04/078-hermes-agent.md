@@ -12,66 +12,10 @@
 > Published: 2026-04-30
 > Reference: Manthan Gupta — Fixes What OpenClaw Got Wrong
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 记忆系统深度拆解"))
-    文章摘要
-    Hermes 四层记忆体系
-    核心设计原则
-      不轻易改系统提示词
-      memory 工具设计
-      压缩前的 memory flush
-    Hermes vs OpenClaw 系统重心差异
-    给自研 Agent 的三个小问题
-    记忆的本质 不是存储 是成本分配
-    Frozen Snapshot 机制 缓存友好的设计
-    Memory Flush 的真正意义 状态迁移而非历史截断
-```
-
 ## 文章摘要
 核心论点：Hermes 没有做"更强大的记忆"，而是把记忆的**成本账**算得更细。它把不同类型的信息放入成本和用途完全不同的机制，避免把所有东西混在一个越来越大的 memory 口袋里。
 
 ## Hermes 四层记忆体系
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 | 层级 | 存储位置 | 默认容量 | 定位 |
 |------|---------|--------|------|
 | **热记忆** | MEMORY.md + USER.md | 2,200 + 1,375 字符 | 每轮都该知道的事实和偏好 |
@@ -207,19 +151,19 @@ OpenClaw 和 Hermes 代表了两种 Agent 架构思路：
 Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治理复杂度：用户知情权、数据删除权、跨设备同步的权限处理、provider 出错时的回滚机制。如果这些治理问题没有想清楚，深层画像宁可慢一点上，也不要留下用户信任和合规风险。
 
 ## 相关实体
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/237-openclaw.html)
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 - [17种Agent架构演进：控制流设计的完整演化史](ch04/699-17-agent.html)
-- [AIAIGC峰会嘉宾阵容](ch04/528-aiaigc.html)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/235-openclaw.html)
-- [Agent Memory 架构解析](ch04/121-agent-memory.html)
+- [AIAIGC峰会嘉宾阵容](ch04/533-aiaigc.html)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/237-openclaw.html)
+- [Agent Memory 架构解析](ch04/098-agent-memory.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/061-claude-code-prompt.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch03/096-hermes-agent.html)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/271-skill.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/273-skill.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/677-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/094-ai.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/095-ai.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
@@ -227,7 +171,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 ---
 

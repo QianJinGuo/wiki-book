@@ -8,17 +8,6 @@
 
 规格驱动开发（Spec-Driven Development）与 Harness 工程的结合：以结构化规格为 Agent 的输入源，Harness 负责规格解析、任务分解、执行验证。减少 Vibe Coding 的不确定性。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("规格驱动开发与 Harness"))
-    规格驱动开发的核心假设
-    Harness 在 Spec 循环中的三层角色
-    Spec-Driven vs Vibe Coding
-```
-
 ## 深度分析
 
 ### 规格驱动开发的核心假设
@@ -35,46 +24,15 @@ Vibe Coding 的不确定性来源于意图到代码的"单步映射"。Spec-Driv
 
 ## 实践启示
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
-
 1. **Spec 是契约不是文档**：规格的价值不在于记录需求，而在于作为 Agent 执行的可验证边界——每个规格条目都应对应明确的验收测试。
 2. **三层角色分步实施**：先实现规格解析层（让 Agent 能读懂结构化 spec），再添加验证反馈层（自动比对结果），最后才需要完整的任务编排层。
 3. **从高不确定性场景切入**：Spec-Driven 比 Vibe Coding 更适合需求明确但实现复杂的任务。
 
 ## 相关实体
 
-- [场景营销前端 AI Coding — 从问题到方案](ch05/111-ai-coding.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/111-ai-coding.html)
+- [场景营销前端 AI Coding — 从问题到方案](ch05/112-ai-coding.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/112-ai-coding.html)
 - [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch05/120-harness-engineering.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/120-harness-engineering.html)
 

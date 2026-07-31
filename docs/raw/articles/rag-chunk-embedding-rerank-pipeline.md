@@ -12,7 +12,7 @@ review_recommendation: strong
 review_stars: 4
 tags: [rag, embedding, chunking, rerank, agent, knowledge-base, llm, workflow]
 sha256: ""
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

@@ -3,7 +3,7 @@ title: "Loop Engineering：从 AutoResearch 到 Claude Code——循环设计的
 source_url: "https://mp.weixin.qq.com/s/kDNWMR3kU9MWN4nb6dRi8w"
 ingested: 2026-06-18
 sha256: pending
-type: raw
+type: raw-article
 ---
 
 最近学到个新词"Loop Engineering"，初看以为叒有啥新技术了，还有"Prompt已死，balabala ..."，真是语不惊人死不休啊。看了之后，第一时间就想到了AutoResearch和Claude Code的query loop，不是新技术，只是谷歌大佬Osmani的总结。想想也有道理，年初时大家都在关注Harness，现在看来Harness也是为了服务核心的Loop Engineering。

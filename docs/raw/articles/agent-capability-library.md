@@ -5,7 +5,7 @@ ingested: "2026-06-23"
 sha256: "73207a7acaabd517"
 created: 2026-06-23
 updated: 2026-06-23
-type: article
+type: raw-article
 tags: [agent, capability, architecture, engineering]
 ---
 

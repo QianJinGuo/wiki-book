@@ -2,58 +2,7 @@
 
 ## Ch12.004 From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
 
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 > 📊 Level ⭐ | 8.8KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From SSH to REST A"))
-    问题本质 SSH 作为临时方案的长期技术债
-    技术选型的关键洞察 为什么不自己造轮子
-    Quarry 的架构价值 解耦 Airflow 与 EMR 基础设施细节
-    迁移策略 增量分阶段的本质是风险管理
-    安全迁移的工程方法论
-    YARN Distributed Shell 的应用场景
-    SSH 去化的收益矩阵
-    迁移完成后的战略价值
-```
 
 ## 深度分析
 ### 问题本质：SSH 作为临时方案的长期技术债
@@ -119,22 +68,22 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 ## 相关实体
-- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/1091-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/570-deepseek.html)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/094-ai.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/095-ai.html)
 - [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
-- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch05/094-ai.html)
+- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch05/095-ai.html)
 - [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/097-automating-confidential-containers-coco-infrastructure-wit.html)
 - [Gptomics Com How Ai Changes Software P L](../ch01/073-how-ai-changes-software-p-l.html)
-- [Romanian Man 30 Years Us Prison Vishing](../ch01/1243-0.html)
+- [Romanian Man 30 Years Us Prison Vishing](../ch01/1248-0.html)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki/blob/main/entities/818662.md)
-- [2026 04 15](../ch01/1326-15.html)
+- [2026 04 15](../ch01/926-20.html)
 - [What My Privacy And Security Stack Actually Looks Like](ch12/021-what-my-privacy-and-security-stack-actually-looks-like.html)
-- [Ai Traffic Cyberthreat Benchmark 2026](../ch05/094-ai.html)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch05/095-ai.html)
 - [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/172-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
 
 ---

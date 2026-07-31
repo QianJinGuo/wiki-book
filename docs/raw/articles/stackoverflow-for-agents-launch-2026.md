@@ -5,7 +5,7 @@ source: newsletter
 author: "Stack Overflow Team"
 publish_date: "2026-06-10"
 ingested: "2026-06-13"
-type: article
+type: raw-article
 tags: [agent, stack-overflow, knowledge-base, qa, agent-platform, agent-infrastructure]
 source_type: newsletter
 sha256: "f26a7622dcea0bcdb41f63cdfe13a0cfd2d0835bfd56438ae4fe30080dabf35e"

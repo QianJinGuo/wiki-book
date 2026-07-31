@@ -4,70 +4,10 @@
 
 > 📊 Level ⭐⭐ | 34.2KB | `entities/ai-coding-入门指南-如何更好地让ai真正帮你干活-v2.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Coding 入门指南 - 如何更好地让AI真正帮你干活"))
-    核心摘要
-    AI 到底替代了什么
-    三个层面的收获
-      认知层理解 AI 工具核心概念
-      工具层掌握 Comate 语音输入
-      实战层标准开发流程 实用技巧
-    先过名词关 AI Coding 必知的概念体系
-      大模型基础概念
-      Agent 工程体系
-      三种编程范式辨析
-    工欲善其事 必先利其器 工具层全解
-      工具层 厂内计费体系
-      语音输入法 重点推荐
-      AI 编程配置层 RD 必知
-    技术栈约定
-    命名规范
-    代码质量要求
-```
-
 ## 核心摘要
 本文来自百度Geek说，作者网盘主端团队，从认知层、工具层、实战层三个层面系统讲解如何有效使用AI Coding。核心理念：**上下文是AI Coding的核心竞争力**——模型只是原材料，工具决定上下文质量，Harness Engineering决定团队规模化复用的能力。
 
 ## AI 到底替代了什么？
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 **AI 替代的是：** 机械重复的编码动作（样板代码、CRUD、格式转换）；低价值的信息检索（查 API 文档、查语法）；简单的逻辑拼接。
 **AI 没有替代的是：** 理解需求背后的业务意图；做架构决策和技术选型；组织上下文、识别边界条件；对生成结果的质量判断与把控。
 **谁能更快、更准确地组织上下文，谁的 AI 生产效率就越高。** 这是一项新的核心技能，而不是可选项。
@@ -541,7 +481,7 @@ Rules因为持续占用Context，必须精简——只保留「任何时候都�
 > AI Coding 不是让你少思考，而是让你 **思考更值钱的部分**。越早建立正确的协作方式，越早把生产力的杠杆握在自己手里。
 
 ## 相关实体
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/237-agentic.html)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/648-agentic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

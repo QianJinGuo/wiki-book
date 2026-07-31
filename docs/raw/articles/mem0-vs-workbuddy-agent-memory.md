@@ -5,7 +5,7 @@ source_site: "叶小钗"
 author: "叶小钗"
 ingested: "2026-07-08"
 sha256: "6e5b180d58b20a60d64fc18a29394771e1a930c260b2a198cb67afcc7ad9b693"
-type: raw
+type: raw-article
 tags:
   - agent-memory
   - mem0

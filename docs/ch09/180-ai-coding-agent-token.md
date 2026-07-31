@@ -8,56 +8,11 @@
 
 AI Coding Agent Token 成本优化的完整五层模型：使用习惯→模型路由→Context 工程→代码图谱→Agent 架构。devinyzeng/腾讯技术工程。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Coding Agent Token 成本控制五层模型"))
-    五层优化模型
-    成本结构 核心洞察
-    Prompt Cache 三推论
-    四个压缩工具对比
-    代码图谱实测
-    Orchestrator-Worker 成本对比
-    数据流转四原则
-    六大误区
-```
-
 ## 一句话
 
 **成本 = 重复上下文搬运，优化 = 减少重复 + 合理路由 + 精准检索 + 清晰分工。核心不是少问一句话，是让系统少重复做无效工作。**
 
 ## 五层优化模型
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 | 层级 | 解决什么 | 方法 |
 |------|---------|------|
@@ -122,7 +77,7 @@ graph TB
 - [Harness Engineering](../ch05/120-harness-engineering.html)
 - [Claw-SWE-Bench](../ch05/009-harness.html) — Pareto 成本分析
 - [快手 RCA Agent](../ch03/035-agent.html) — Workflow 快思考+Agent 慢思考
-- [Skill 版本对比](../ch04/271-skill.html) — Token/时延门禁
+- [Skill 版本对比](../ch04/273-skill.html) — Token/时延门禁
 - [12 Agent 设计模式](../ch03/035-agent.html) — 分层记忆+上下文隔离
 
 ---

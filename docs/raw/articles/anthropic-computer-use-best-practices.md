@@ -1,7 +1,7 @@
 ---
 title: "Anthropic 发布 Computer Use 最佳实践"
 sha256: 824205d412892dc01786aadccb3f87de1b69e31799638a1309d1b8e29fe9db81
-type: raw
+type: raw-article
 created: 2026-05-14
 updated: 2026-05-14
 source_url: "https://mp.weixin.qq.com/s/yNRNHiu2s8GAUcrAfZZLPA"

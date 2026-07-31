@@ -4,65 +4,11 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-team-10-tips-boris.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code团队10个使用技巧 Boris二刷"))
-    个团队技巧速览
-      并行处理 git worktree 35 个独立会话
-      Plan Mode 复杂任务先打磨计划
-      CLAUDEmd 大刀阔斧迭代规则
-    worktree 并行模式本质上是上下文隔离工程
-    Plan Mode 的价值在于认知节流而非计划本身
-    CLAUDEmd 的迭代是集体学习的具象化
-    Skill 复用生态揭示了Agent 工业化路线
-    立即配置 worktree 别名切换系统
-    为每个项目建立 CLAUDEmd 迭代清单
-    构建一天一次的 Skill 封装习惯
-```
-
 ## 核心命题
 
 Claude Code 创始人 Boris Cherny 第二次公开技巧——这次是来自 Claude Code **团队内部**的 10 个使用技巧，与年初 Boris 个人的使用习惯不同，代表了团队多样化实践。
 
 ## 10 个团队技巧速览
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. 并行处理：git worktree + 3–5 个独立会话
 
@@ -163,9 +109,9 @@ bq 命令行工具 + BigQuery Skill → 团队人人直接在 Claude Code 里跑
 
 ## 相关主题
 
-- [Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html) — Boris 第一次公开的个人技巧
-- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/078-claude-code.html) — Subagents 详解
-- [Claude Code Governance Soft Rules](../ch03/078-claude-code.html) — Claude Code 可控性设计
+- [Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html) — Boris 第一次公开的个人技巧
+- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/077-claude-code.html) — Subagents 详解
+- [Claude Code Governance Soft Rules](../ch03/077-claude-code.html) — Claude Code 可控性设计
 
 ---
 

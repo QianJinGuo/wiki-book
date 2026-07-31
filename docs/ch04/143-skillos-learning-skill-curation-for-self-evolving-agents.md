@@ -6,25 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-os-learning-skill-curation-self-evolving-agents.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SkillOS Learning Skill Curation"))
-    论文信息
-    核心贡献
-    系统架构
-    核心创新
-      任务分组训练
-      复合奖励设计
-      GRPO 优化
-    ALFWorld 多步交互任务
-    技能策展为何是自我进化的关键瓶颈
-    技能作为 Markdown 文件的工程哲学
-    InsertUpdateDelete 三元组的重要性
-```
-
 ## 论文信息
 - **作者**: Siru Ouyang, Jun Yan, Yanfei Chen 等
 - **发布**: 2026-05-08
@@ -32,39 +13,6 @@ mindmap
 - **PDF**: [pdf](https://arxiv.org/pdf/2605.06614.pdf)
 
 ## 核心贡献
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 SkillOS 提出了一种**技能策展学习**框架，使 agent 能够自主地从经验中学习和优化技能库，实现自我进化。该框架将技能策展问题形式化为一个强化学习问题，通过经验驱动的方式让 agent学会如何从长期延迟反馈中学习技能管理。
 
 ## 系统架构
@@ -166,9 +114,9 @@ SkillRepo 作为外部 Markdown 文件存在，带来了传统记忆系统不具
 ## 相关实体
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Self-Evolving Agents 系统性综述](ch04/219-self-evolving-agents.html)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化](ch04/417-memento-skills-agent.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化](ch04/421-memento-skills-agent.html)
 - [Hermes Agent 自进化机制源码解析](../ch03/096-hermes-agent.html)
-- [Native Parallel Reasoner: 原生并行推理](../ch01/913-20.html)
+- [Native Parallel Reasoner: 原生并行推理](../ch01/926-20.html)
 - [self-evolving agents 系统性综述（厦门大学等多机构联合）](ch04/219-self-evolving-agents.html)
 
 ---

@@ -1,7 +1,7 @@
 ---
 sha256: 0b8102e7c08b9972453133a533c07dcaeb30597c73e6d1c715543b35a89d5a61
 title: "你不知道的 Agent：原理、架构与工程实践"
-type: source
+type: raw-article
 tags: [mlops, wechat, llm, ai-agent, engineering]
 source: wechat
 source_url: "https://mp.weixi"

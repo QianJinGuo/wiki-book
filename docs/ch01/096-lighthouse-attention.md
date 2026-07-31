@@ -4,18 +4,6 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/lighthouse_attention.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Lighthouse Attention"))
-    设计哲学 对称性 vs 不对称性
-    选择机制 核外设计
-    两阶段训练 可恢复性保证
-    上下文并行 稀疏方法的关键优势
-```
-
 ## 核心要点
 - 选择性层级注意力（Selection-based Hierarchical Attention），通过对称 Q/K/V 池化在多分辨率金字塔中稀疏化注意力 
 - 前向+反向延迟比标准注意力快约 **17×**（512K 上下文，单卡 B200），端到端预训练提速 **1.4–1.7×**（98K 上下文）
@@ -24,43 +12,6 @@ mindmap
 ---
 
 ## 深度分析
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 ### 设计哲学：对称性 vs 不对称性
 大多数稀疏注意力方法（NSA、HISA、InfLLM-v2、DSA、MoBA）采用**非对称设计**：查询保持完整分辨率，只有键值被池化。这种方式将层级结构视为压缩的寻址内存，而非多尺度表示 。
 Lighthouse 选择了**对称池化**：Q、K、V 在金字塔每一层按相同因子池化。池化后的查询与池化后的键位于同一表示空间，使得在训练时可以将密集注意力调用从 $\mathcal{O}(N^2)$ 转换为 $\mathcal{O}(N \cdot K)$ 。这种对称性是方法的核心洞察——它让稀疏训练的权重能够在标准注意力下无缝复用。
@@ -96,10 +47,10 @@ Lighthouse 选择了**对称池化**：Q、K、V 在金字塔每一层按相同�
 
 ## 关联阅读
 ## 相关实体
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/094-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/095-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/799-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/766-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lighthouse_attention.md)
 

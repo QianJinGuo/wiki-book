@@ -4,7 +4,7 @@ author: 凜一
 source_url: https://mp.weixin.qq.com/s/FgGVPw0BOZEu5sH1FdrVoQ
 publish_date: 2026-05-18
 ingested: 2026-05-18
-type: article
+type: raw-article
 sha256: c328843fe1dd79a3
 tags: [skill, agent, aone, aliyun, tutorial]
 ---

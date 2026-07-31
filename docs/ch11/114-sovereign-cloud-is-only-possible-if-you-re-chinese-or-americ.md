@@ -6,52 +6,7 @@
 
 > -> **5237660.md**
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Sovereign cloud is only possible"))
-    Toombs 的核心论点 主权云的「不可能三角」
-    主权的悖论 美国云不是真正的「主权」
-    Wong 的「钟摆回摆」 云退出策略的回归
-    多云 韧性
-    对国家 监管者的判断
-    对跨国企业的判断
-    对 Agent AI 部署的判断
-    何时应该关注主权云
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 - Gartner 分析师 Douglas Toombs 在悉尼 IT Infrastructure, Operations & Cloud Strategies Conference 上的核心判断：完全主权的云（数据本地化、算力本地化）只有中美两国能实现
 - 原因：只有美国和中国生产主权云所需的所有技术。其他国家的买家无法避免与外国供应商的关系

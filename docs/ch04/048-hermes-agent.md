@@ -59,7 +59,6 @@ Skill 可能记着"修 bug 的一般流程"
 机制存储内容使用方式在 Self-Improving 中的角色Memory稳定事实（用户偏好、环境信息）每次会话自动注入 System Prompt；通过 memory 工具主动添加/修改避免重复询问已确认的信息Skill程序性知识（操作步骤、最佳实践）System Prompt 中显示索引（名称+描述），通过 skill_view 按需加载完整内容；通过 skill_manage 创建/修改/删除避免重复发明已验证的流程Session Search原始对话历史（完整思考轨迹）通过 session_search 工具主动搜索关键词，LLM 生成结构化摘要避免重复犯错已踩过的坑一个完整的self imporve流程如下，达到下一次任务的起点比上一次更高的效果：
 • 步骤 1：用户问"帮我把这周的 HN 头条整理成摘要发到 Telegram"• 步骤 2：Agent 启动会话，system prompt 自动包含： USER.md（"User prefers short summaries"）和 Skills 索引（发现 "weekly-digest" 技能相关）• 步骤 3：Agent 调用 skill_view("weekly-digest") 加载技能，按步骤执行• 步骤 4：执行中发现技能写的"RSS 抓取"过时了，用户实际用 HN API。Agent 调用 skill_manage(action='patch') 更新技能• 步骤 5：用户说"以后只要 5 条头条"。Agent 调用 memory(action='add', target='user', content='User wants HN digest capped at 5 headlines')• 步骤 6：磁盘更新，但本次会话 system prompt 不变• 步骤 7：下周用户再问同样的问题。启动时 system prompt 已经包含新记忆和修补后的技能。用户不需要重复"只要 5 条"、不需要纠正技能错误。
 
-
 ## 深度分析
 **1. Self-Improving的本质：显式知识沉淀而非隐式权重更新**
 Hermes Agent的自进化机制之所以值得关注，在于它选择了一条完全不同于模型微调的道路：不是通过RLHF或模型权重更新来实现能力提升，而是通过建立一套显式的知识沉淀系统，让模型通过工具主动记录经验并在后续会话中自动加载。这两种路径的本质区别在于：权重更新是全局的、不可逆的、难以撤回的；而显式知识沉淀是局部的、可审计的、可即时修补的。对于需要高度可靠性和可预测性的生产环境，显式知识沉淀的可控性远优于黑箱式的权重更新。此外，显式知识以结构化的skill和memory形式存在，使得人类可以直接检查、修改和删除，这为AI系统的可解释性和安全性提供了重要基础。
@@ -73,39 +72,6 @@ Hermes选择为skill机制设计专门的工具（skill_list/skill_view/skill_ma
 Hermes选择"写入memory时不更新当前会话的system prompt，而是等到下次会话启动时才应用新记忆"——这是一个在性能和正确性之间的务实权衡。如果每次memory写入都实时更新system prompt，可以保证即时性，但会破坏prefix cache（长会话成本翻倍）。选择牺牲即时性换取成本控制，意味着系统设计者认为"下次会话能用到正确的记忆"比"当前会话感知到记忆更新"更重要。这个权衡在多会话、长周期使用的场景下是合理的，但在单次长时间会话中可能导致用户体验的不连续感。设计self-improving系统时需要明确：目标使用模式是长单会话还是短多会话，这将直接影响是否采用类似的缓存保护策略。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 **1. 为agent构建知识沉淀系统时的三层分离原则**
 在设计自己的agent知识沉淀系统时，建议采用Memory/Skill/Session Search三层分离架构：Memory层存储用户偏好和环境配置等稳定事实，使用key-value或文档形式，会话启动时自动加载；Skill层存储标准操作流程和最佳实践，使用结构化文档形式，Agent主动按需加载；Session Search层使用FTS全文索引存储完整对话历史，支持按关键词检索和LLM摘要。三层分离的关键好处是：每层的存储格式、加载策略和更新频率可以独立优化，避免用单一机制处理所有类型的知识带来的系统性低效。
 **2. Skill的"自主创建+即时修复"机制的实现要点**
@@ -120,8 +86,8 @@ graph TB
 当某个操作模式在系统中出现频率高、步骤标准化、错误后果严重时，应当考虑将其专用工具化（而不是用通用工具的组合来替代）。判断标准：调用频率（每天多次 vs. 每月一次）、操作步骤是否标准化（高度标准化可以封装为单一工具，灵活多变的操作更适合通用工具）、错误成本（patch操作错误可能导致skill失效，需要专用工具提供更清晰的参数校验）。skill_manage是一个很好的参考案例——它的6种能力（create/patch/edit/delete/write_file/remove_file）如果拆成6个独立工具会增加工具数量，用统一的action参数调度则保持了工具定义的简洁性。
 
 ## 相关实体
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/094-ai.html)
-- [AI Coding Agent 记忆系统](ch04/330-ai-coding-agent.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/095-ai.html)
+- [AI Coding Agent 记忆系统](ch04/333-ai-coding-agent.html)
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
 - [Self-Evolving Agents 系统性综述](ch04/219-self-evolving-agents.html)
 - [Hermes Agent 记忆系统深度拆解](../ch03/096-hermes-agent.html)
@@ -129,12 +95,12 @@ graph TB
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-- [SkillClaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](ch04/479-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
 - [GBrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/913-20.html)
-- [OpenHuman: AI Agent 持久记忆框架](ch04/121-agent-memory.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/926-20.html)
+- [OpenHuman: AI Agent 持久记忆框架](ch04/098-agent-memory.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 

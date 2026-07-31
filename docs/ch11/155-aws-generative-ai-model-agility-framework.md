@@ -5,64 +5,7 @@
 > 📊 Level ⭐⭐ | 7.7KB | `entities/aws-generative-ai-model-agility-framework.md`
 
 # AWS Model Agility: 6步LLM跨代际迁移框架
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Generative AI Model Agility"))
-    三个关键洞察
-      自动化评估pipeline
-      路由层设计
-      迁移不是一次性事件
-    框架的系统性价值
-    提示词迁移的工程化难题
-    评估体系的分层设计
-    路由层作为可组合基础设施
-    立即可行动项
-    中期建设项
-    长期能力建设
-```
-
 ## 核心内容
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁移→验证→部署→监控，实现LLM在代际间（GPT-4→Claude/GPT-4o等）的自动化迁移与评估，降低模型更换成本。
 ## 三个关键洞察
 ### 1. 自动化评估pipeline
@@ -102,11 +45,11 @@ AWS Generative AI Model Agility Solution提供6步框架：评估→选择→迁
 *Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-generative-ai-model-agility-framework.md)*
 ## 相关实体
 - [MLflow v3.10：生成式AI开发新特性](ch11/040-aws-mlflow-v310-generative-ai-development.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/298-ai-agent.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/030-ai-agent.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch11/121-building-blocks-for-foundation-model-training-and-inference.html)
-- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](../ch03/072-skills.html)
+- [让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客](../ch03/071-skills.html)
 
 ---
 

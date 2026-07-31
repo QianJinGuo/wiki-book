@@ -8,60 +8,7 @@
 
 2026-06-16, JetBrains received security reports: 15 third-party plugins on JetBrains Marketplace were stealing developer-configured AI Provider API Keys. These plugins masqueraded as legitimate AI tools (text generation, unit testing) but executed unauthorized backend functions when users entered API keys and clicked "Apply".
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("JetBrains Marketplace Ecosystem"))
-    Attack Chain
-      Vector
-      Exfiltration Mechanism
-      Response
-    AI Agent Security Implications
-      Developer Tool Supply Chain Risk
-      API Key Management Best Practices
-      Marketplace Security Mechanisms
-    Related Supply Chain Incidents
-```
-
 ## Attack Chain
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### Vector
 15 malicious plugins distributed on JetBrains Marketplace, operated by 7 publisher accounts. Plugins functioned as advertised (low-visibility strategy) while hiding exfiltration logic.
@@ -96,8 +43,8 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 ## Related Supply Chain Incidents
 
 - [Semgrep Intercom PHP](ch12/117-semgrep-intercom-php-supply-chain.html) - malicious package via package manager
-- [Claude Code Malicious Skills](../ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html) - Agent/Skill ecosystem risk
-- [Checkmarx Jenkins Plugin](../ch01/348-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) - plugin marketplace attack
+- [Claude Code Malicious Skills](../ch01/857-skill-issues-compromising-claude-code-with-malicious-skills.html) - Agent/Skill ecosystem risk
+- [Checkmarx Jenkins Plugin](../ch01/349-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) - plugin marketplace attack
 
 ## 深度分析
 

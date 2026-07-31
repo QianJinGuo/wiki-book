@@ -3,7 +3,7 @@ title: "memento skills let agents design agents"
 source_url: https://mp.weixin.qq.com/s/nplUm1D6JFe45P_WEVgyIg
 tags: [wechat, article, claude, openai]
 sha256: cf692ef68cfd
-type: raw
+type: raw-article
 created: 2026-05-15
 updated: 2026-05-15
 review_value: 8

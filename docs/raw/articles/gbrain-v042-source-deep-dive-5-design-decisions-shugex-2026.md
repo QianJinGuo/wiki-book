@@ -4,7 +4,7 @@ source: "运维有术 / 术哥无界 (ShugeX)"
 source_url: "https://mp.weixin.qq.com/s/tbbjN0LrpBGISsLBOs6_Lg"
 ingested: 2026-06-16
 sha256: "7c86b7a24bbdf026872d03238cfd782157da7f5b8e610204a2d9bf2ed6b8a5f4"
-type: raw
+type: raw-article
 tags: [gbrain, garry-tan, knowledge-brain, knowledge-graph, agent-memory, rag, hybrid-search, zero-llm-graph, regex-extraction, postgres, pglite, type-safe-engine, four-pass-extraction, brain-source-orthogonal, engineering-reliability, source-analysis, shugex, 2026]
 review_value: 9
 review_confidence: 9

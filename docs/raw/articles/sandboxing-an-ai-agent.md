@@ -3,7 +3,7 @@ title: "Sandboxing an AI Agent"
 source_url: "https://sajalsharma.com/posts/sandboxing-an-ai-agent/"
 ingested: 2026-07-02T11:40:01Z
 sha256: placeholder
-type: raw
+type: raw-article
 tags: [newsletter, raw]
 ---
 

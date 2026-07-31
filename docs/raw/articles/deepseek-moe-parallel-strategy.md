@@ -5,7 +5,7 @@ author: 机器学习算法与自然语言处理
 published: 2026-05-17
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [deepseek, moe, expert-parallel, gpu-parallel, distributed-training, dualpipe, waved-ep]
 sha256: 334ed04ac662874b95c5b808db17d05eb7af65ba9c2239c84d14226b1ac4c095
 review_value: 8

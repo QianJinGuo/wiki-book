@@ -2,12 +2,11 @@
 
 ## Ch04.602 你不知道的 Agent：原理、架构与工程实践
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
+> 📊 Level ⭐⭐ | 4.2KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
 
 # 你不知道的 Agent：原理、架构与工程实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/你不知道的-agent原理架构与工程实践-v2.md)
-
 
 ## 深度分析
 
@@ -42,44 +41,13 @@ const messages: MessageParam[] = [{ role: "user", content: userInput }];while�
 ### 关联实体
 
 - [Harness 之后 状态边界与失败闭环 若飞](../ch05/009-harness.html)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/298-ai-agent.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/030-ai-agent.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.html)
 - [Headroom Context Compression Agent Vibecoder](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/973-ai-agent-harness.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/988-ai-agent-harness.html)
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
 2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量

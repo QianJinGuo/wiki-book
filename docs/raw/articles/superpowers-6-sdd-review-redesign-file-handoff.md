@@ -3,7 +3,7 @@ title: "Superpowers 6.0 深度解读：SDD 评审重写 + 文件交接 + 多平�
 source_url: "https://mp.weixin.qq.com/s/IEgncvDWNxTrYcUvmV8j8A"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # Superpowers 6.0 深度解读：SDD 评审重写 + 文件交接 + 多平台支持

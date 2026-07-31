@@ -4,73 +4,11 @@
 
 > 📊 Level ⭐⭐ | 27.0KB | `entities/business-agent-augmentation-layer-practitioner-methodology-20260606.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("业务 Agent 增强层架构 复用通用 Agent 基座"))
-    第一性原理 通用 Agent 已经在做的 团队不要重做
-      通用 Agent 擅长的 vs 团队要补的 6 维能力分工表
-      一句话总结取舍
-    立项前判断链 跑裸基座 看真实能力 决定补什么
-      三步立项方法 强烈推荐
-      任务筛选判断表 4 个评估项
-    增强层架构 6 层职责明确分工
-      各层建设重点
-    MVP 闭环 6 问清单 6 步执行协议
-      MVP 至少要回答的 6 件事
-      步执行协议
-    配置范例 businessagentprofile YAML
-    知识库 不是资料仓库 是给 Agent 用的判断材料
-      知识库最容易做偏的陷阱
-      类 Agent 典型缺口 需要沉淀的知识
-      知识块元数据 不要省
-    工具设计 让 Agent 少猜参数 少猜结果
-      知识 vs 工具的分工
-      工具设计 3 个验收项
-    评测 增量评测 baseline 保留
-      核心原则
-      评测集字段 不要只放输入和最终答案
-      上线门禁 6 项
-```
-
 ## 概述
 
 AI 小老六（WeChat MP）2026-06 提出的 **业务 Agent 落地方法论**——核心论点：**不要重复造通用 Agent，而是把通用 Agent 基座（Codex / Claude Code）当现成基座，业务团队精力集中在补"业务能力增强层"**：业务知识 / 内部工具 / 流程规则 / 权限边界 / 评测集 / 线上观测。文章用 **3 张判断表 + 1 张能力分工表 + 1 张 6 步执行协议 + 1 份 YAML 配置范例** 给出一线团队可立刻照搬的 MVP 落地路径——核心是"**跑裸基座 baseline → 补短板 → MVP 闭环 → 增量评测**"三步法。
 
 ## 第一性原理：通用 Agent 已经在做的，团队不要重做
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 通用 Agent 擅长的 vs 团队要补的（6 维能力分工表）
 | 能力域 | 通用 Agent 已经擅长 | 团队必须补上 |

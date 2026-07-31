@@ -2,7 +2,7 @@
 title: "重新定义Skill开发：保姆级教程&一站式开发助手发布"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: 阿里云开发者
 author: 凜一
 source_url:

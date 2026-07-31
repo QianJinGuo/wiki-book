@@ -1,6 +1,6 @@
 ---
 title: "Running an AI-native engineering org"
-type: article
+type: raw-article
 source_url: https://claude.com/blog/running-an-ai-native-engineering-org
 ingested: 2026-06-05
 sha256: pending

@@ -2,7 +2,7 @@
 title: "rl beyond the verifiable"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 742d99a034d4a1e00adebd2a22eec6a117bd9deeae5a5a7824a10bb166ae0290
 ---

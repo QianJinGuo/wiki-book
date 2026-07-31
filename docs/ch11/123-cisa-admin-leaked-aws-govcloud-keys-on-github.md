@@ -4,59 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CISA Admin Leaked AWS GovCloud"))
-    事件概述
-    人为失误与制度失效的叠加效应
-    GovCloud 凭证的极高价值
-    内部 artifactory 成为持久化攻击目标
-    弱密码实践放大风险
-    受影响系统与暴露资产
-    关键时间线
-    强制实施 GitHub 组织级策略
-```
-
 ## 事件概述
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 2026 年 5 月 15 日，网络安全研究员 Guillaume Valadon（GitGuardian 安全研究员）联系 KrebsOnSecurity，反映其公司扫描到 GitHub 上存在一个名为 **"Private-CISA"** 的公开仓库，其中暴露了大量 CISA（网络安全与基础设施安全局）内部敏感凭证。
 
@@ -162,13 +110,13 @@ Caturegli 分析认为，该仓库的使用模式显示个人将其作为工作�
 ## 外部参考
 
 ## 相关实体
-- [Github Copilot Individual Plans Flex Allotments](../ch01/782-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
-- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/820-github.html)
+- [Github Copilot Individual Plans Flex Allotments](../ch01/797-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
+- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/834-github.html)
 - [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/237-claude-md.html)
-- [Open Source Projects Leaving Github](../ch01/820-github.html)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/208-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Open Source Projects Leaving Github](../ch01/834-github.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/210-cost-effective-deployment-of-vision-language-models-for-pet.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cisa-admin-leaked-aws-govcloud-keys-on-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](../ch01/820-github.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cisa-admin-leaked-aws-govcloud-keys-on-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](../ch01/834-github.html)
 
 ---
 

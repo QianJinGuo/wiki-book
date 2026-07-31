@@ -6,7 +6,6 @@
 
 coach-author-vc]
 ---
-
 ## 核心要点
 - 创始人常犯的错误：用正式顾问协议弥补「关系缺口」，而非真正建立有意义的关系
 - 顾问结构被滥用：把应该是全职招聘的人变成「 fractional advisor」，以股权代替工资
@@ -14,35 +13,6 @@ coach-author-vc]
 - 股权不能替代真实的承诺和互动
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 Charlie O'Donnell 的这篇文章揭示了创业公司顾问制度的两个常见误区。
 
 **误区一：名字、网络或领域知识作为弥补**。创始人引入顾问是因为相信他们的背书可以弥补自身的某些不足。但这种「Gap」往往是关系缺口——与陌生人的正式协议无法弥补真实关系的缺失，它只是被放到了 cap table 上。
@@ -60,10 +30,10 @@ Charlie O'Donnell 的这篇文章揭示了创业公司顾问制度的两个常�
 4. **要求实际承诺**：看潜在顾问是否真正投入时间和精力，而不只是名字出现在名单上
 5. **避免「关系缺口」幻觉**：cap table 上的陌生名字不会带来真正的战略价值
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](../ch04/298-ai-agent.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
-- [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
+- [Amazon Turns Alexa Into Its Next Storefront](ch01/066-amazon-turns-alexa-into-its-next-storefront.html)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/098-code-simulation-for-enterprise-engineering-playerzero.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)

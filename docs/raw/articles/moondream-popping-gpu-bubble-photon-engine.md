@@ -3,7 +3,7 @@ title: "Popping the GPU Bubble — Moondream Photon Inference Engine"
 source_url: "https://moondream.ai/blog/popping-the-gpu-bubble"
 author: Moondream Engineering
 ingested: 2026-07-01
-type: raw
+type: raw-article
 sha256: b08185dbbee42a141433f46ee5b61cca218885b6c541031de207f270f23a9a88
 ---
 

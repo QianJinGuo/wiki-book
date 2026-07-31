@@ -2,7 +2,7 @@
 title: "Test-Driven Development Skill"
 created: 2026-06-15
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 857949ee167e2b0288796dfedb5e182ebc0c6e2cdcf828aa39446d234abfa62f
 ---

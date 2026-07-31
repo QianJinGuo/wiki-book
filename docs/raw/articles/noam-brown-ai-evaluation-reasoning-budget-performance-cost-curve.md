@@ -2,7 +2,7 @@
 title: "OpenAI科学家Noam Brown：AI的真正上限，可能根本没人测得起"
 created: 2026-06-09
 updated: 2026-06-09
-type: article
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/zHiPUI6oCTRxPr3JqYhidg"
 ingested: 2026-06-09
 sha256: "noam_brown_ai_evaluation_2026"

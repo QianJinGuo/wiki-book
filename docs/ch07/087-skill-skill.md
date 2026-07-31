@@ -10,19 +10,6 @@
 
 阿里云云原生团队提出了一套基于 Nacos AI Registry 的 Skill 治理方案，解决多 Agent 时代 Skill 散落、版本冲突、手动同步成本高的问题。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一份可信来源 终结 Skill 管理混乱 Skill 治理最佳实践"))
-    多 Agent Skill 管理的五大挑战
-    Nacos AI Registry 三步治理路径
-      第一步 本机统一 Local mode
-      第二步 进入 Registry 资产属性化
-      第三步 安全准入 治理闭环
-```
-
 ## 多 Agent Skill 管理的五大挑战
 
 当团队在多款 Agent（Codex、Claude Code、Cursor、Qoder）间共享 Skill 时，面临这些问题：
@@ -34,39 +21,6 @@ mindmap
 5. **共享缺少边界**：谁能改、谁能用、哪版稳定、出了问题怎么回退
 
 ## Nacos AI Registry 三步治理路径
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 第一步：本机统一 → Local mode
 

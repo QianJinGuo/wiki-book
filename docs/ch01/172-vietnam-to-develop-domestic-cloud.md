@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/vietnamtodevelopdomesticcloud.md`
 
-
 ## 核心要点
 - 越南政府宣布建设国内云平台，以摆脱对外国云服务商依赖
 - 目标：2030 年核心政府服务全部上线，2035 年成为"发达数字国家"
@@ -12,42 +11,6 @@
 - 主要云厂商（AWS、阿里云、华为云）均计划在越南建数据中心，但尚未落地
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 越南国内云建设是数字主权趋势的典型案例。与欧洲"去美化"类似，越南的动机是规避两个风险：其一，云厂商受本国司法管辖的政治风险；其二，现有越南政府工作负载实际上已违反本国数据本地化法律。Decision 808 的时间表极为激进——2030 年仅剩 4 年，要建成可替代 hyperscaler 的国家级云平台，技术挑战巨大。
 从全球云竞争格局看，越南本土云若成功，将成为继中国之后又一个主要经济体的"云主权"案例，为其他新兴市场提供模板。但 2030 年期限意味着越南必须依赖外国厂商（AWS、阿里云、华为）承担建设任务——这与"自主可控"目标形成悖论。最终可能出现"国际厂商建设、越南政府运营"的混合模式。
 20 项战略技术同步推进（大型越南语 LLM、下一代防火墙、量子抗加密、SIEM、机器人、半导体设计等），说明越南正在进行一次全面的技术自主化冲刺，资源分散风险值得关注的。
@@ -62,9 +25,9 @@ graph TB
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11/224-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
-- [Vietnam to develop domestic cloud](../ch11/196-vietnam-to-develop-domestic-cloud.html)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)- [anthropic](ch01/989-anthropic.html)- [inference cost at scale with napkin math](ch01/913-20.html)- [why use app-level auth when every database has auth? (splunk](ch01/175-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11/206-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam to develop domestic cloud](../ch11/198-vietnam-to-develop-domestic-cloud.html)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)- [anthropic](ch01/1004-anthropic.html)- [inference cost at scale with napkin math](ch01/926-20.html)- [why use app-level auth when every database has auth? (splunk](ch01/175-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
 
 ---
 

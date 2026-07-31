@@ -2,33 +2,11 @@
 
 ## Ch09.043 Claude Code 18个隐藏设置
 
-> 📊 Level ⭐⭐ | 12.9KB | `entities/claude-code-hidden-settings-18.md`
+> 📊 Level ⭐⭐ | 13.0KB | `entities/claude-code-hidden-settings-18.md`
 
 # Claude Code 18个隐藏设置
 
 原文：Mnimiy (@Mnilax)，2026-05-23。18个设置分为三组：Claude.ai(8个)、Claude Code(7个)、API/Console(3个)。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 18个隐藏设置"))
-    Claude Code 核心配置 settingsjson
-      enabledPlugins 禁用而非卸载
-      permissionsdeny 已知 bug 需 OS 层备份
-      hooksSessionStart 按分支加载 context
-    APIConsole 高杠杆设置
-      cachecontrol 断点位置 最大单一成本杠杆
-      inferencegeo 数据驻留溢价
-      Workspace 级别速率限制
-    Claudeai 关键设置
-    审计脚本
-    未入选设置 已排除
-    成本控制的层级思维
-    模型选择的成本经济学
-    Hook 机制的失控风险
-```
 
 ## Claude Code 核心配置（settings.json）
 
@@ -108,41 +86,6 @@ main 分支加载 context-main.md，feat/auth 加载 context-feat-auth.md，防�
 默认值 30 天，Dreaming 和过往对话搜索都依赖这些 transcript。改成 180 天有 6 倍信号可用，磁盘约 200MB。
 
 ## API/Console 高杠杆设置
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 8. cache_control 断点位置（最大单一成本杠杆）
 ```python
@@ -243,11 +186,11 @@ hooks.SessionStart 按分支加载 context 是聪明的设计，但它也是双�
 > **hook 机制是双刃剑**：强大的 context 加载能力伴随着失控风险，出问题时先切 `disableAllHooks: true` 定位。
 
 ## 相关实体
-- [Claude Code Performance Benchmarking](../ch03/078-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Claude Code Source Architecture](../ch03/078-claude-code.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
-- [Skill System Design Three Way Comparison](../ch04/271-skill.html)
+- [Claude Code Performance Benchmarking](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Claude Code Source Architecture](../ch03/077-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
+- [Skill System Design Three Way Comparison](../ch04/273-skill.html)
 
 ---
 

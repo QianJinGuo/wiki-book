@@ -5,7 +5,7 @@ source_platform: wechat
 author: "AI寒武纪"
 publish_date: 2026-05-19
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [claude-code, anthropic, enterprise-deployment, harness, claude.md]
 review_value: ★★★★☆
 review_confidence: ★★★★☆

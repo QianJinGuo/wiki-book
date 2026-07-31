@@ -5,7 +5,7 @@ title: "百型智能 OntoZ：企业本体论 + 群智能体协同体系，新一
 author: 新智元报道
 publisher: 新智元（秒追ASI）
 date: 2026-06-05
-type: article
+type: raw-article
 ingested: 2026-06-05
 review_value: 8
 review_confidence: 8

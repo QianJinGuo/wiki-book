@@ -5,7 +5,7 @@ source_site: "AI编程实验室"
 author: "鲁工"
 ingested: "2026-07-08"
 sha256: "35bd27aba7513cc419398be27d8d7b2acd18191949f367f194f9dcb504b1f3b2"
-type: raw
+type: raw-article
 tags:
   - matt-pocock
   - skills

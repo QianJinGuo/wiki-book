@@ -6,33 +6,6 @@
 
 [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("开源 AI 知识管理搭档 Obsidian Claude Code"))
-    核心痛点 文件分散与混乱
-    五大集成策略
-      策略 1 独立开发者 Vault 符号链接
-      策略 2 Vault Claude Code 工作目录
-      策略 3 MCP 桥接
-    解决文件混乱问题
-      步骤 1 通过 appjson 排除目录
-      步骤 2 用正则排除文件类型
-      步骤 3 用 File Explorer 做「硬过滤」
-    插件推荐
-      开发者 Vault 必备
-      Obsidian 内直接用 Claude Code 选一个
-      MCP 插件 远程访问
-    Dataview 查询技巧
-      给每个 CLAUDEmd 加 frontmatter
-      查询所有项目配置
-      列出所有 Claude 计划 按最近更新
-    Obsidian CLI 的突破性进展
-    社区最佳实践
-```
-
 ##  核心痛点：文件分散与混乱
 Claude Code 的配置分散在多个位置：^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:25]
 位置  |  用途
@@ -47,42 +20,6 @@ Claude Code 的配置分散在多个位置：^[开源-ai-知识管理搭档-obsi
 Obsidian 虽然提供了「排除文件」的设置（设置 > 文件与链接），但它只是  ** 软隐藏  ** ——文件看起来不见了，其实还是被索引着。对这个问题来说，帮助有限。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:39]
 
 ##  五大集成策略
-
-```mermaid
-graph TB
-    subgraph "项目生命周期"
-        INIT[项目创建<br/>License选择]
-        FORK[Fork/Clone<br/>本地开发]
-        CONTR[贡献代码<br/>PR流程]
-    end
-    subgraph "质量门禁"
-        CI[CI自动化<br/>测试+Lint]
-        REVIEW[Code Review<br/>同行评审]
-        MERGE[合并决策<br/>维护者审批]
-    end
-    CONTR --> CI --> REVIEW --> MERGE
-    subgraph "发布"
-        VERSION[版本管理<br/>SemVer]
-        REL[发布<br/>Changelog]
-        DIST[分发<br/>PyPI/npm]
-    end
-    MERGE --> VERSION --> REL --> DIST
-    subgraph "社区"
-        DISCUSS[讨论区<br/>Issue/Discord]
-        GOV[治理模型<br/>BDFL/委员会]
-    end
-    DIST --> DISCUSS --> GOV
-    GOV -->|"方向反馈"| INIT
-    classDef life fill:#dbeafe,stroke:#2563eb
-    classDef quality fill:#ede9fe,stroke:#7c3aed
-    classDef release fill:#fef3c7,stroke:#d97706
-    classDef community fill:#d1fae5,stroke:#059669
-    class INIT,FORK,CONTR life
-    class CI,REVIEW,MERGE quality
-    class VERSION,REL,DIST release
-    class DISCUSS,GOV community
-```
-
 ###  策略 1：独立开发者 Vault + 符号链接
 ** 适合场景  ** ：同时维护多个项目，希望统一搜索和管理信息。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:45]
 思路很简单：建一个独立的 Obsidian Vault，不放在任何代码仓库里，然后用符号链接把你关心的内容「拉」进来。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:47]
@@ -361,10 +298,10 @@ QMD 语义搜索的价值在于 token 成本控制。开发者反馈显示，使
 **自定义命令沉淀工作流**：`/my-world` 、 `/today` 、 `/close` 、 `/trace` 、 `/ghost` 这类命令将 Claude Code 融入了 Obsidian 的日常笔记生态，让 AI 不是孤立的生成工具，而是知识循环的一部分。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:356-362]
 ## 相关实体
 - [Obsidian Claude Code Integration Guide](../ch09/140-obsidian-claude-code-integration-guide.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](../ch03/078-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](../ch03/077-claude-code.html)
 
 ---
 

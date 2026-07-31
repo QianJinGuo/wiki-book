@@ -7,7 +7,7 @@ publish_date: 2026-07-23
 created: 2026-07-23
 ingested: 2026-07-23
 tags: [video-understanding, temporal-grounding, multimodal-llm, nju, shanghai-ai-lab]
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 6
 review_recommendation: strong

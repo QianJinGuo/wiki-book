@@ -6,7 +6,6 @@
 
 > -> [Book a Demo | See PlayerZero in Action](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/playerzero-request-demo.md)
 
-
 ## 深度分析
 **1. Cookie声明页暴露的追踪生态规模**
 整个 Demo 请求页加载了 48 个 Cookie，涵盖 13 家第三方服务商（Cloudflare、Google Analytics、HubSpot、LinkedIn、Meta、Twitter、Reddit、Amazon 等），另有 11 个"未分类"Cookie。这映射出一家 ToB SaaS 企业在营销归因、用户行为分析、CRM 集成和广告投放上的完整数据链路。对于安全/隐私团队而言，这个清单即是供应商风险评估的直接素材。
@@ -20,36 +19,6 @@
 传统 AI 编码工具聚焦开发侧（Code Review、PR 检查），而 PlayerZero 明确指向"L3 support engineering workflows"。L3 是技术支持最高级别，通常处理最复杂、耗时最长的工单。将 AI 能力嵌入这一环节，意味着在客户满意度影响最大的触点上产生价值——这与单纯提升开发效率的工具形成差异化竞争区间。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 1. **在采购 AI 工具时要求提供 Cookie/数据流清单**：PlayerZero 页面本身就是一个 48 个 Cookie 的风险披露样本。如果一个工具的追踪生态超过业务必要范围，合规团队应要求对方提供数据处理协议（DPA）并评估 GDPR/CCPA 影响。
 2. **用"预部署问题预防率"替代"代码扫描覆盖率"评估工具**：传统 SAST 工具强调漏洞检出率，但 PlayerZero 提出的"90% 问题在部署前被阻止"提供了另一个评估维度。采购评估时应同时要求工具在自身测试集上的 production-incident 预防率，而非仅依赖 CVEF 检出率。
 3. **将代码模拟纳入 CI/CD Gate**：基于 Sim-1 类技术的能力，团队可以在 PR 阶段引入模拟验证环节，而非仅依赖单元测试和人工 review。尤其是涉及跨服务状态变更的 PR（数据库 schema 迁移、消息队列协议调整），模拟层可以捕获集成风险。
@@ -58,11 +27,11 @@ graph TB
 
 ## 关联阅读
 ## 相关实体
-- [Hs.Playerzero Ai Code Review](../ch05/094-ai.html)
-- [Aws Reinvent Game Demo 2024 25](../ch11/251-aws-reinvent-game-demo-2024-25.html)
+- [Hs.Playerzero Ai Code Review](../ch05/095-ai.html)
+- [Aws Reinvent Game Demo 2024 25](../ch11/253-aws-reinvent-game-demo-2024-25.html)
 - [Claude For Small Business](../ch01/027-introducing-claude-for-small-business.html)
 - [Notebook Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)
-- [Kuse Junior Ai Employee](../ch05/094-ai.html)
+- [Kuse Junior Ai Employee](../ch05/095-ai.html)
 
 ---
 

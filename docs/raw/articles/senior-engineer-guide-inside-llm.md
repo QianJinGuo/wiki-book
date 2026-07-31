@@ -5,7 +5,7 @@ ingested: "2026-06-23"
 sha256: "0fa7b330cea0289e"
 created: 2026-06-23
 updated: 2026-06-23
-type: article
+type: raw-article
 tags: [llm, transformer, architecture, engineering]
 ---
 

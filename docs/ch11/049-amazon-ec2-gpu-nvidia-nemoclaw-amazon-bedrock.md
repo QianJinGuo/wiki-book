@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("在 Amazon EC2 GPU 实例上部署 NVIDIA"))
-    架构设计的本质 决策与代理的分离
-    NemoClaw 的安全模型 纵深防御而非单点信任
-    GPU 选型的工程权衡
-    成本模型的关键变量
-    评估混合架构是否适合你的场景
-    上生产的四项必做清单
-    从意图分类到神经网络路由的升级路径
-    dispatch 层规则覆盖的战术价值
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 - NVIDIA NemoClaw 安全沙箱架构（Landlock/seccomp/网络命名空间三层隔离）
 - AWS EC2 GPU 实例 + Amazon Bedrock 混合推理架构
@@ -67,17 +13,17 @@ graph TB
 
 ## 相关实体
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/561-amazon-bedrock-agentcore.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/566-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md)
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1175-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](https://github.com/QianJinGuo/wiki/blob/main/entities/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
-- [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](../ch01/1200-nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.html)
-- [miro-amazon-bedrock-bug-routing](ch11/179-miro-amazon-bedrock-bug.html)
+- [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](../ch01/1205-nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.html)
+- [miro-amazon-bedrock-bug-routing](ch11/181-miro-amazon-bedrock-bug.html)
 
 ## 深度分析
 

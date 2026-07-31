@@ -7,7 +7,7 @@ platform: wechat
 published: "2026-05-30"
 ingested: "2026-05-30"
 sha256: "6cdc72527bde26062c2e2c2b5f3c6f1dc839b1a8c5b01e509fce43e703c5f38b"
-type: article
+type: raw-article
 tags:
   - agent
   - deepseek

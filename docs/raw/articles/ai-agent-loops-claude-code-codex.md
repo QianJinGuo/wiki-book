@@ -5,7 +5,7 @@ ingested: "2026-06-23"
 sha256: "06fef9a05fe98a76"
 created: 2026-06-23
 updated: 2026-06-23
-type: article
+type: raw-article
 tags: [agent, claude-code, codex, harness, loop]
 ---
 

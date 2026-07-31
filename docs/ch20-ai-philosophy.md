@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((AI哲学))
-    本体论
-      AI是什么
-      意识问题
-      智能本质
-    认识论
-      知识边界
-      理解vs模拟
-      黑箱问题
-    伦理学
-      AI对齐
-      价值冲突
-      责任归属
-    社会影响
-      就业变革
-      权力结构
-      数字鸿沟
-    治理
-      全球协调
-      监管框架
-      开源vs闭源
-    未来学
-      技术奇点
-      人机共生
-      文明演化
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -50,34 +19,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph TB
-    subgraph "核心问题"
-        WHAT["AI是什么?"] --> CON["意识问题"]
-        CON --> VAL["价值对齐"]
-        VAL --> FUT["未来图景"]
-    end
-    subgraph "伦理框架"
-        UTI[功利主义] 
-        DEO[义务论]
-        VIR[美德伦理]
-    end
-    VAL --> UTI & DEO & VIR
-    subgraph "治理"
-        REG[监管]
-        OPEN[开源]
-        GLO[全球协作]
-    end
-    FUT --> REG & OPEN & GLO
-    classDef question fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef ethic fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef gov fill:#d1fae5,stroke:#059669,color:#064e3b
-    class WHAT,CON,VAL,FUT question
-    class UTI,DEO,VIR ethic
-    class REG,OPEN,GLO gov
-```
-
 
 最后一章，我们跳出技术，思考更大的问题。
 
@@ -101,7 +42,7 @@ graph TB
 Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反驳 [Karpathy 提出的 vibe coding 概念](https://entities/karpathy-vibe-coding-to-agentic-engineering.md) 在前端的适用性：**代码能编译 ≠ 设计完成**。这条边界划清后，AI 工具在前端赛道会进一步分化。
 
 ## 相关实体
-- [Elena Progressive Web Components](https://github.com/QianJinGuo/wiki/blob/main/entities/Elena-Progressive-Web-Components.md)
+- [Elena Progressive Web Components](https://github.com/QianJinGuo/wiki/blob/main/entities/elena-progressive-web-components.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
 
@@ -1239,9 +1180,9 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 - [GitLab Transcend 2026（6 月 10 日）](https://about.gitlab.com/events/gitlab-transcend)
 ## 相关实体
 - [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](https://github.com/QianJinGuo/wiki/blob/main/entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
 - [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
 - [Principals Ai Education](https://github.com/QianJinGuo/wiki/blob/main/entities/principals-ai-education.md)
 
 ---
@@ -1688,7 +1629,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ## Ch20.011 AI 生产力悖论：你变快了，公司没有
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/ai-productivity-paradox-cost-shifting-poischeme.md`
+> 📊 Level ⭐⭐ | 7.2KB | `entities/ai-productivity-paradox-cost-shifting-poischeme.md`
 
 # AI 生产力悖论：你变快了，公司没有
 

@@ -8,55 +8,7 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("微调 Amazon Nova 模型实现精准邮件数据提取"))
-    微调策略的技术细节
-    评估结果深度解读
-    幻觉抑制的关键发现
-    生产部署架构```
-
 ## 摘要
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 本文详细介绍了 Parcel Perform 与 AWS GenAIIC 合作，使用 Amazon SageMaker AI 对 Amazon Nova 模型进行参数高效微调（PEFT/LoRA），实现从电商邮件中精准提取结构化数据的完整方案。微调后的 Nova Micro 模型在测试集上达到 94.77% 的提取准确率，相比基线提升高达 16.6 个百分点，同时推理延迟降低 32%，成本降低 50%。这一案例证明了"小模型 + 领域微调"策略在生产场景中的巨大潜力。
 

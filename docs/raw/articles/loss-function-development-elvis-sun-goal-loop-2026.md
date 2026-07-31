@@ -6,7 +6,7 @@ author: "Elvis Sun (@elvissun)"
 pub_date: "2026-06-12"
 ingested: "2026-06-12"
 sha256: "f7c760238cc2b66c3321434b1bfc1f1f72aeb7e267b7b1a3741beb6d3a09da4a"
-type: source
+type: raw-article
 tags: ["loss-function-development", "lfd", "goal-loop", "harness-engineering", "spec-driven-development", "elvis-sun", "peter-steinberger", "distillation", "information-asymmetry", "forced-entropy", "cal-com"]
 ---
 

@@ -5,7 +5,7 @@ author: 深思圈
 published: 2026-05-17
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [ai, context-layer, enterprise-ai, knowledge-graph, agent]
 sha256: aa993a9c7b4d6df1677f1ad8267ccafd6869920773abca860d415eb53e2a3406
 review_value: 8

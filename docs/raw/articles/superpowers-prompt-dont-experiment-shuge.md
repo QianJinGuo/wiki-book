@@ -3,7 +3,7 @@ title: "Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条
 source_url: "https://mp.weixin.qq.com/s/4XTsfY8SzcjusCU6sUg7yg"
 created: 2026-07-01
 updated: 2026-07-01
-type: article
+type: raw-article
 tags: [wechat, prompt, superpowers, shuge, experiment]
 ingested: 2026-07-01
 sha256: 25a44db9f3c6dcf5835c2f6fd7ecf22d8cbb1f0b9e6f86590815ddf9794ac7f8

@@ -1,7 +1,7 @@
 ---
 
 title: "The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS applications"
-type: entity
+type: raw-article
 tags: [article]
 created: 2026-05-20
 updated: 2026-05-20

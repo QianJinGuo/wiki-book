@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: 9个模块化Agent技能封装微调全生命周期 / Kiro+Claude Code+SageMaker集成 / 自定义模型自动化
 sha256: 09da9f10cb70

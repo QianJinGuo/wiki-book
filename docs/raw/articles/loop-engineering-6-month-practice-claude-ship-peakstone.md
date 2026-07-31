@@ -7,7 +7,7 @@ publish_date: 2026-07-04
 created: 2026-07-05
 ingested: 2026-07-05
 tags: [loop-engineering, claude-code, slash-commands, review, memory, agent-orchestration, subagent, open-source, wechat]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

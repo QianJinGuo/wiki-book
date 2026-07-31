@@ -13,56 +13,7 @@ MLflow 3.10 introduces a set of targeted improvements to the MLflow ecosystem th
 Observability improvements include more granular trace filtering and search, richer metadata capture for debugging and root-cause analysis, and [pre-built performance dashboards](<https://mlflow.org/docs/latest/genai/tracing/observe-with-traces/dashboard/>) that surface workload level metrics—latency distributions, request counts, quality scores, and [token usage](<https://mlflow.org/docs/latest/genai/tracing/token-usage-cost/>)—at a glance without manual chart configuration, giving teams running production workloads clear visibility into operational costs while [MLflow workspaces](<https://mlflow.org/docs/latest/self-hosting/workspaces/>) provide a structured way to organize MLflow artifacts across teams and projects, as shown below.
 These improvements coupled with SageMaker AI provide an enterprise-grade generative AI infrastructure, making it straightforward to track experiments, monitor generative AI performance, and maintain governance across AI applications at scale.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Mlflow V310 Generative AI"))
-    Getting started with SageMaker AI
-      Prerequisites
-    Migration
-```
-
 ## Getting started with SageMaker AI MLflow App v3.10
-
-```mermaid
-graph TB
-    subgraph "实验管理"
-        TRACK[实验追踪<br/>MLflow/W&B]
-        HP[超参调优<br/>Optuna]
-        REG[模型注册<br/>版本管理]
-    end
-    subgraph "评估流水线"
-        BENCH[基准测试<br/>自动评测]
-        HUMAN[人工评估<br/>LLM-as-Judge]
-        DRIFT[漂移检测<br/>数据/概念漂移]
-    end
-    subgraph "部署流水线"
-        PACKAGE[模型打包<br/>ONNX/TensorRT]
-        TEST[Integration测试<br/>回归检测]
-        DEPLOY[灰度发布<br/>A/B测试]
-    end
-    TRACK --> HP --> REG
-    REG --> BENCH & HUMAN
-    BENCH & HUMAN --> DRIFT
-    DRIFT --> PACKAGE --> TEST --> DEPLOY
-    subgraph "监控"
-        PERF[性能监控<br/>延迟/吞吐]
-        ALERT[告警规则<br/>异常检测]
-        RETRAIN[触发再训练]
-    end
-    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
-    classDef exp fill:#dbeafe,stroke:#2563eb
-    classDef eval fill:#ede9fe,stroke:#7c3aed
-    classDef deploy fill:#fef3c7,stroke:#d97706
-    classDef mon fill:#d1fae5,stroke:#059669
-    class TRACK,HP,REG exp
-    class BENCH,HUMAN,DRIFT eval
-    class PACKAGE,TEST,DEPLOY deploy
-    class PERF,ALERT,RETRAIN mon
-```
-
 For new users, creating a SageMaker AI MLflow App is straightforward through the [SageMaker Studio console](<https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-launch.html>), AWS CLI, or API. The default configuration automatically provisions MLflow 3.10, giving you immediate access to all the latest capabilities.
 You can get started with fully managed MLflow 3.10 on Amazon SageMaker AI MLflow Apps through the [AWS Management Console](<https://aws.amazon.com/console/>), [AWS Command Line Interface](<https://aws.amazon.com/cli/>) (AWS CLI), or [API](<https://docs.aws.amazon.com/boto3/latest/reference/services/sagemaker/client/create_mlflow_app.html>).
 
@@ -130,9 +81,9 @@ MLflow 本身是云无关的开源框架，而 AWS 将其托管在 SageMaker 中
 ## 相关实体
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/012-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
 - [Aws Generative Ai Model Agility Framework](ch11/155-aws-generative-ai-model-agility-framework.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/419-aws-sagemaker-ai-agent.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/423-aws-sagemaker-ai-agent.html)
 - [Aws Bedrock Halliburton Seismic Workflow Genai](ch11/009-aws-bedrock.html)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/208-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/210-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-mlflow-v310-generative-ai-development.md)

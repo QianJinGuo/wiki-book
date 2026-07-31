@@ -2,7 +2,7 @@
 title: "Anthropic Economic Index report: Cadences"
 source_url: "https://www.anthropic.com/research/economic-index-june-2026-report"
 ingested: 2026-06-30
-type: article
+type: raw-article
 created: 2026-06-30
 sha256: pending
 ---

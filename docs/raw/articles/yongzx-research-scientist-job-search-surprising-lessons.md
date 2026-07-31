@@ -2,7 +2,7 @@
 title: "Surprising lessons from my research scientist job search"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 587bf1ad01cbfd6a68c7887224139aab36e82cb0cdad9d7580e5a8428edf51ac
 ---

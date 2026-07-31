@@ -4,64 +4,10 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/autoresearch-multi-agent-software.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AutoResearch 多 Agent 自动化软件开发"))
-    核心对比 AutoResearch vs 传统 Agentic
-    三大关键改进
-      多 Agent 交叉审核
-      5 维度加权评分
-      审核反馈驱动下一轮
-    系统架构 4 阶段
-    programmd Agent 宪法
-    与 Harness Engineering 的关系
-    新增洞察 2026-05-18 百度Geek说版本
-    新增洞察 2026-05-23 AutoResearch 方法论全景
-    AutoResearch 本质 量化目标驱动的自主循环
-```
-
 ## 核心命题
 Karpathy AutoResearch 把 ML 研究变成"写 train.py → 跑 5 分钟实验 → val loss 改善才保留"的自动循环。本项目将此方法迁移到软件开发：GitHub Issue → 多 Agent 交叉审核 → 5 维度量化评分达标 → 自动 PR + 合并。约 10 分钟完成中等复杂度 Issue，全程零人工干预。
 
 ## 核心对比：AutoResearch vs 传统 Agentic Coding
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 | 模式 | 循环方式 | 质量保证 | 人的参与 |
 |------|---------|---------|---------|
 | 传统 Vibe Coding | 单 Agent 自己写、自己改 | 测试 backpressure | 全程绑在循环里 |
@@ -186,22 +132,22 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 ## 相关主题
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — 自进化机制与 AutoResearch 的"只保留改进"思想同源
 -  — Harness Engineering 让 Agent 产出可预期、可衡量、可持续
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
 ## 相关实体
 - [快手首个打工人Agent](../ch03/035-agent.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/035-agent.html)
-- [factory mission multi agent architecture](../ch01/1235-factory-mission-multi-agent-architecture.html)
+- [factory mission multi agent architecture](../ch01/1240-factory-mission-multi-agent-architecture.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
-- [Claude Code 可控性：软规则无法变成硬约束](../ch03/078-claude-code.html)
+- [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html)
 - [claude-code-agent-view](ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)

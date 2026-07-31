@@ -3,7 +3,7 @@ title: "eBay 生成式检索（GR）工业实践：RQ-VAE 语义 ID + 20 亿商�
 source_url: "https://mp.weixin.qq.com/s/u_wfoniDxmY9MND6T67mQg"
 ingested: 2026-06-30
 sha256: d6c059c1f4641bfdb519fe10ebbfa39d0e52d9bffe9e2f50b4d390b06738b95e
-type: raw
+type: raw-article
 tags: [generative-retrieval, ebay, rq-vae, semantic-id, recommendation-system, ads-retrieval, cold-start, long-tail, transformer, encoder-decoder, beam-search, contrastive-learning]
 author: eBay 广告推荐团队
 ---

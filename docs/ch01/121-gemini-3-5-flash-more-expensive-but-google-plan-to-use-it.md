@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 4.9KB | `entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md`
 
-
 ## 核心要点
 - Google 在 I/O 大会上发布 Gemini 3.5 Flash，直接面向公众可用，跳过预览阶段 
 - 定价大幅上涨：3.5 Flash 是 3 Flash Preview 的 3 倍，是 3.1 Flash-Lite 的 6 倍 
@@ -13,44 +12,6 @@
 - 支持 1,048,576 输入 tokens 和 65,536 最大输出 tokens，知识截止 2025 年 1 月 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 **1. Flash 系列定价激进上涨，反映 AI 模型的通胀趋势**
 Gemini 3.5 Flash 的定价是 3.1 Flash-Lite 的 6 倍，达到 $1.50/百万输入、$9/百万输出。这并非孤立现象：GPT-5.5 是 GPT-5.4 的 2 倍价格，Claude Opus 4.7 相对 4.6 涨价约 1.46 倍。三大 AI 实验室均在同步探测 API 客户的价格容忍度，高端模型涨价趋势明确 。
 **2. Google 战略：用高性能模型覆盖全部产品线，免费产品也不例外**
@@ -70,9 +31,9 @@ Google 新推出 Interactions API（Beta），借鉴 OpenAI Responses 的服务�
 5. **将 1M 输入 tokens 纳入系统设计考量**：超长上下文窗口为 RAG 替代、多文档联合分析、大规模代码库理解等场景提供了新选择，但需注意输出 tokens 上限（65K）仍限制了单次生成的内容量 。
 ## 相关实体
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](ch01/057-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
-- [Google Debuts Gemini Focused Updates At Io 2026](ch01/913-20.html)
-- [Computer Use 45X More Expensive Than Structured Apis](../ch04/268-computer-use-45x-more-expensive-than-structured-apis.html)
-- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/094-ai.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](ch01/926-20.html)
+- [Computer Use 45X More Expensive Than Structured Apis](../ch04/270-computer-use-45x-more-expensive-than-structured-apis.html)
+- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/095-ai.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)

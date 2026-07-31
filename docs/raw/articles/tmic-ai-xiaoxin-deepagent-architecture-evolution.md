@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/XOejVumoe_-0v62i-FWUAg"
 feed_name: "大淘宝技术"
 author: "天猫新品营销技术"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [agent, deepagent, workflow, tmic, e-commerce, planning, context-engineering, architecture]
 sha256: "e49aeb87209d2773b1062dcab2b6bc64d537d621195b49d1a647f882f2bf96e5"
 ---

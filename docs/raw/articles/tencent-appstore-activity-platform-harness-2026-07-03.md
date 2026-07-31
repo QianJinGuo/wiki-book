@@ -2,7 +2,7 @@
 title: "tencent appstore activity platform harness 2026 07 03"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 8a91eb1a34c31903716e8a9b8c566ababb70b10ba137770f95853d93ec95a4b9
 ---

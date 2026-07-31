@@ -2,66 +2,11 @@
 
 ## Ch11.008 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
 
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 > 📊 Level ⭐⭐ | 39.8KB | `entities/firecracker-bedrock-agentcore-multi-tenant.md`
 
 # 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
 
 > 5 分钟部署、90 秒自愈、成本降至 1/8 的生产级多租户 AI Agent 方案，基于 Firecracker microVM 隔离 + Bedrock AgentCore。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 Firecracker microVM 与 Bedrock"))
-    亚马逊AWS官方博客
-    一 引言
-    二 多租户 OpenClaw 的挑战
-    三 方案概览
-      控制面 无服务器
-      接入层
-    四 部署架构
-    五 租户隔离机制
-    六 每个 OpenClaw 租户包含什么
-    七 Rootfs 管理与预装工具链
-```
 
 ## 核心内容
 
@@ -713,10 +658,10 @@ Host Agent（5 秒级）与 Lambda Watchdog（5 分钟级）的两级架构实�
 
 ## 相关实体
 - [Bedrock Agentcore Payment X402 Agent](ch11/050-bedrock-agentcore.html)
-- [Agentcore Payments X402 Agentic Commerce](ch11/066-agentcore-payments.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/561-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/561-amazon-bedrock-agentcore.html)
+- [Agentcore Payments X402 Agentic Commerce](ch11/065-agentcore-payments.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/566-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/566-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/firecracker-bedrock-agentcore-multi-tenant.md)
 

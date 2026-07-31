@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 9.7KB | `entities/claudes_next_enterprise_battle_is_not_mo.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claudes next enterprise battle is"))
-    从模型博弈到基础设施博弈的范式转移
-    模型易换 运行时难迁锁定效应的真实机制
-    Anthropic 的 57 为何战略意义大于数字本身
-    Microsoft 的分发优势与 OpenAI 的稳定跟随
-    对企业买家
-    对 AI 管理者和开发者
-    对供应商
-    相关实体
-```
-
 ## 核心要点
 - 模型竞争已不再是企业 AI 的唯一焦点；**agent 控制平面**正成为新的战略高地 
 - VB Pulse 调查：Microsoft Copilot Studio & Azure AI Studio 以 **38.6%** 领跑企业级 agent 编排平台，OpenAI 25.7% 排名第二，Anthropic 首次出现占 5.7% 
@@ -30,37 +14,6 @@ mindmap
 - MCP 协议层开放不等于运行时层开放；**运行时锁定风险依然存在** 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### 1. 从模型博弈到基础设施博弈的范式转移
 过去两年企业 AI 竞争被描述为"模型之战"，但本文揭示了一个更深刻的结构性转变：**竞争焦点正从模型能力层向 agent 运行环境层迁移**。这个迁移的背后逻辑并不复杂——当模型本身越来越同质化（Claude、GPT-4o、Gemini 在多数基准上差距缩小），企业开始意识到**真正的差异化在于 agent 如何被管理、监控和治理**。
 VB Pulse 数据印证了这一转移：安全与权限在 Q1 2026 连续两月成为编排平台选型首要标准，而"多模型多工具灵活性"则从 35.7% 跌至 25.7%。这说明市场正在从"可选性优先"向"治理优先"切换。一个可以 act 的 AI agent（发送邮件、修改文档、查询数据库、调用工作流）其"爆炸半径"远大于一个只生成文本的聊天机器人——企业的问题不再是"agent 够不够聪明"，而是"**谁来授权、触发了什么、能否回滚**"。
@@ -105,13 +58,13 @@ OpenAI 的 Assistants 和 Responses API 稳居第二（23.2% → 25.7%），这�
 
 ## 关联阅读
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claudes_next_enterprise_battle_is_not_mo.md)
-- [Agent Orchestration](../ch04/518-agent-orchestration.html)
+- [Agent Orchestration](../ch04/523-agent-orchestration.html)
 
 ## ## 相关实体
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch01/989-anthropic.html)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch01/1004-anthropic.html)
 
 ## ## 相关实体
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/095-ai.html)
 
 ## ## 相关实体
 - [Harness Engineering 三次范式跃迁与四根支柱](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)

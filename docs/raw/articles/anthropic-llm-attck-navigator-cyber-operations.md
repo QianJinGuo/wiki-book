@@ -4,7 +4,7 @@ source_url: "https://red.anthropic.com/2026/attack-navigator/"
 source: red.anthropic.com
 author: "Anthropic Red Team"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: [anthropic, red-team, security, agent, vulnerability, cyber, n-day]
 source_type: newsletter
 sha256: "7c73117e2d05e2a4f5d23278968c28c3cb2e3a6f368fd5b7c5055fa3ee526817"

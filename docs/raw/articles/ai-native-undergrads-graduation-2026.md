@@ -1,6 +1,6 @@
 ---
 title: 第一批「AI原生」本科生，要毕业了
-type: article
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/nH79AjQ7tIFTOXPohl8O_Q
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

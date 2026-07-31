@@ -4,7 +4,7 @@ source_url: https://deepmind.google/blog/alphaevolve-impact/
 tags: [deepmind, ai]
 ingested: 2026-05-10
 title: "AlphaEvolve: Gemini-powered coding agent scaling impact across fields"
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 sha256: 3e4c94d0e5e246d18b6b2abb192b71f20333475bdc0cd8663440dc0b52be5e90

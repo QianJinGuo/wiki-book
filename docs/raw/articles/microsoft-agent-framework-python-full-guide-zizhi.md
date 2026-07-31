@@ -2,7 +2,7 @@
 title: "微软 Agent Framework 全栈指南：从 Hello Agent 到生产托管（Python）"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: 智子AI社
 author: 智子AI社
 source_url: https://mp.weixin.qq.com/s/xocGtHMHtlzLkdIuGtvGfw

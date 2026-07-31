@@ -1,7 +1,7 @@
 ---
 title: "claude-research-agent-auto-newsletter-cyrilxbt"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: 01425779160057cfc4275882a2da52fffd46758f5b7dc868c20ed4f369101548
 ---
 source_url: https://mp.weixin.qq.com/s/KoNcaOlzzPtSU6PMetmb0A

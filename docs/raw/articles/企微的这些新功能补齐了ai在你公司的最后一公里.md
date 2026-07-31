@@ -1,6 +1,6 @@
 ---
 title: "企微的这些新功能，补齐了AI在你公司的最后一公里"
-type: source
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/lIj91GGx1SuLVeFOLHPKtw
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

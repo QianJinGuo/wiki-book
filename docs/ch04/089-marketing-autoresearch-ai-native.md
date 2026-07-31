@@ -8,30 +8,6 @@
 
 # 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("高德 Marketing AutoResearch 营销增长 AI"))
-    核心问题 营销系统的结构性断层
-    三大技术架构
-      业务协议 Business Protocol 给 Agent
-      Agent Team 多角色协作
-      真实反馈 让策略接受业务验证
-    五层解耦工程实现
-      可视化中枢 7 大模块展示
-      协作入口 5 类追问
-    实践验证 5 个真实脱敏案例
-      Case 1 极端波动下的自动修复
-      Case 2 外部事件不等于盲目加码
-      Case 3 节假日前的前置布局
-    与现有 AutoResearch 实体的差异化定位
-    与高德 AI Native 系列的内部一致性
-    与 高德 AI Companion Agent 架构 的层级关系
-    与 Harness Engineering 的深度共鸣
-```
-
 ## 一句话
 
 高德信息业务中心 2026-06-09 发布的 **Marketing AutoResearch**——面向"长期经营研究问题"的 AI Native 经营托管框架，由人定义**目标/约束/可行动空间/治理边界**，**Agent Team** 在业务协议边界内持续**假设→小步实验→真实反馈→经验沉淀**循环迭代。**3 层技术架构 + 5 层解耦工程实现**，5 个真实脱敏案例验证：年度化利润增量千万级，7 小时 5 次自主决策，零人工介入。
@@ -43,42 +19,6 @@ mindmap
 **核心场景**：营销发券 / 补贴分配 / 城市策略 / 人群分层 / 节假日节奏。**反馈每天更新、风险每天重评**——一次性分析/报告/调参无法支撑长期经营优化。
 
 ## 三大技术架构
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### 1. 业务协议 (Business Protocol) — 给 Agent 一块可安全研究的实验场
 
@@ -200,7 +140,7 @@ graph TB
 
 | 现有 entity | 应用域 | 核心方法 |
 |-------------|--------|---------|
-| [AI 自主科研 L0-L4](../ch05/094-ai.html) (6KB) | 科学发现 (AlphaFold / The AI Scientist) | L0-L4 五级自主性框架 |
+| [AI 自主科研 L0-L4](../ch05/095-ai.html) (6KB) | 科学发现 (AlphaFold / The AI Scientist) | L0-L4 五级自主性框架 |
 | [AutoResearch 多 Agent 软件开发](../ch03/035-agent.html) (14KB) | 软件开发 (Codex / Claude Code) | 多 Agent 异步 + 评审者回路 |
 | Karpathy AutoResearch (Query Engine Bug) | 个人研究循环 | Nightly research loop |
 
@@ -268,7 +208,7 @@ graph TB
 3. **反馈**变化：从"离线评估" → "线上实时反馈"
 4. **责任**变化：从"工具辅助" → "业务托管"
 
-这是 [高德 SDD Harness 团队 AI 编码范式](../ch05/111-ai-coding.html) 的**业务侧对应**——SDD 关注"代码的正确性"，AutoResearch 关注"决策的正确性"。
+这是 [高德 SDD Harness 团队 AI 编码范式](../ch05/112-ai-coding.html) 的**业务侧对应**——SDD 关注"代码的正确性"，AutoResearch 关注"决策的正确性"。
 
 ## 实践启示
 
@@ -280,11 +220,11 @@ graph TB
 
 ## 与已有实体的差异化定位
 
-- vs [AI 科研 L0-L4](../ch05/094-ai.html) — 科学发现域，本文是营销业务域
+- vs [AI 科研 L0-L4](../ch05/095-ai.html) — 科学发现域，本文是营销业务域
 - vs [多 Agent 软件开发](../ch03/035-agent.html) — 软件开发域，本文是营销业务域
 - vs [高德 7x24 Self-Healing Pipeline](../ch05/018-ai-native.html) — 同公司研发线，本文是营销业务线
 - vs [高德 AI Companion Agent](../ch03/035-agent.html) — C 端用户交互，本文是 B 端业务托管
-- vs [天猫营销 AI 工作流](../ch05/094-ai.html) — 营销自动化，本文是营销**研究**（研究 + 实验 + 反馈循环）
+- vs [天猫营销 AI 工作流](../ch05/095-ai.html) — 营销自动化，本文是营销**研究**（研究 + 实验 + 反馈循环）
 - vs 火山引擎营销策略 Agent — 营销决策支持，本文是**业务托管**（Agent 直接调整预算）
 
 ## 上线状态

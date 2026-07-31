@@ -7,7 +7,7 @@ publish_date: 2026-07-07
 created: 2026-07-07
 ingested: 2026-07-07
 tags: [program-as-weights, paw, fuzzy-functions, lora, neural-compilation, llm-optimization, edge-ai, waterloo]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

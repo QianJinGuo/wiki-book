@@ -3,7 +3,7 @@ title: "阿里云 AgentLoop：企业级智能体一站式自进化平台（4 环
 source_url: "https://mp.weixin.qq.com/s/x8b5_StemN9G-bGsV9tfAw"
 ingested: 2026-06-18
 sha256: 131bb12e0308e33f171e4810f0ddce6b60aca251fdd0f75f95a59cd33e9cd192
-type: raw
+type: raw-article
 tags: [agentloop, aliyun, enterprise-agent, self-evolution, flywheel, loongsuite, trajectory, agent-ontology, umodel, trace2dataset, agent-as-a-judge, episodic-memory, experience-library, langchain-22pct-no-eval, databricks-17pct, devai-90pct]
 ---
 

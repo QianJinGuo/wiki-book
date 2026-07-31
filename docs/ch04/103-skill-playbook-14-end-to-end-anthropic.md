@@ -10,27 +10,6 @@
 
 腾讯 jackjchou（2026-06-05）发布 **14 章节完整 Skill 写作 Playbook**——鹅厂一线团队踩坑经验 + Anthropic 官方做法整合。覆盖**从 0 入门到调试排错到团队管理**全流程，提供**5 大评估指标**（触发准确率 90% / 误报 5% / 一致性 85% / Token -30% / 完成 80%）和**Skill Creator 工程化评估 3 阶段**（触发评估 + 效果评估 + 综合报告）。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("鹅厂 Skill 写作完整 Playbook 14 章节"))
-    章节目录
-    Skill 本质
-    大痛点
-    渐进式加载 3 层 Anthropic 设计
-    大写作原则
-      开头说清三件事
-      祈使句下指令 解释为什么
-      BeforeAfter 对比 最关键
-    大评估指标 Anthropic 推荐
-    Skill Creator 工程化评估 3 阶段
-      步工作流
-      阶段评估
-    大安全风险 防御
-```
-
 ## 14 章节目录
 
 | 章节 | 主题 | 目标读者 |
@@ -51,39 +30,6 @@ mindmap
 | 14 | **附录**（术语速查 + 参考资源） | 全部 |
 
 ## Skill 本质
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 **Skill = 给 AI 编程助手"加装"的能力包 = 结构化 Prompt Engineering**。物理上看是**文件夹 + `SKILL.md`**。核心三样：
 - **指令（Instructions）**：告诉 AI 怎么干活
@@ -210,12 +156,12 @@ Skill 没触发
 **本实体关注"鹅厂一线 14 章节 end-to-end 完整 Playbook + 5 大评估指标 + Skill Creator 工程化评估 3 阶段"**。
 
 - [Anthropic 14 Skill Patterns Best Practices](../ch01/315-anthropic-14-skill.html) — 60KB，14 patterns 5 类（发现与选择/上下文经济/指令校准/工作流控制/可执行代码）。本实体是**鹅厂实战版完整 Playbook**（14 章节顺序结构），那个是**14 设计模式分类索引**。两者互补：patterns 提供分类视角，playbook 提供流程视角。
-- [Agent Skill Writing Guide](ch04/269-agent-skill.html) — 21KB，"从 0 到 1" 入门级（岗位职责说明书 + SOP + 避坑指南）。本实体是**进阶 + 团队管理 + 工程化评估**的扩展版。
-- [Ai Skill Skill Creator 源码拆解](ch04/319-skill-skill.html) — 28KB，skill-creator 源码深度拆解（3 Agent 评审）。本实体是 Skill Creator **5 步工作流 + 3 阶段评估的实战使用**视角，那个是**源码内部机制**视角。
-- [Ai Skill 四层验证体系](../ch01/452-ai-skill.html) — Skill 四层验证体系（已覆盖部分质量评估）。本实体是**5 大指标 + 工程化评估 3 阶段**的补充扩展。
-- [Ai Skill 测评指标体系](../ch01/452-ai-skill.html) / [Ai Skill 测评报告解读](../ch01/452-ai-skill.html) / [Ai Skill 测评体系进阶指南](../ch01/452-ai-skill.html) / [Ai Skill 测试用例设计](../ch01/452-ai-skill.html) / [Ai Skill 测评指标体系](../ch01/452-ai-skill.html) — AI Skill 测评系列（覆盖部分指标体系）。本实体是**腾讯视角的工程化评估**，与系列互补。
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html) — Anthropic 官方 14 patterns 译本。命名相似但内容不同。
-- [Agent Skill Writing Practices](ch04/269-agent-skill.html) / [Agent Skill Writing Advanced](ch04/269-agent-skill.html) / [Agent Skill Writing Evaluation](ch04/269-agent-skill.html) — 系列其他 skill 写作视角。本实体是**鹅厂完整 Playbook 视角**。
+- [Agent Skill Writing Guide](ch04/271-agent-skill.html) — 21KB，"从 0 到 1" 入门级（岗位职责说明书 + SOP + 避坑指南）。本实体是**进阶 + 团队管理 + 工程化评估**的扩展版。
+- [Ai Skill Skill Creator 源码拆解](ch04/321-skill-skill.html) — 28KB，skill-creator 源码深度拆解（3 Agent 评审）。本实体是 Skill Creator **5 步工作流 + 3 阶段评估的实战使用**视角，那个是**源码内部机制**视角。
+- [Ai Skill 四层验证体系](../ch01/453-ai-skill.html) — Skill 四层验证体系（已覆盖部分质量评估）。本实体是**5 大指标 + 工程化评估 3 阶段**的补充扩展。
+- [Ai Skill 测评指标体系](../ch01/453-ai-skill.html) / [Ai Skill 测评报告解读](../ch01/453-ai-skill.html) / [Ai Skill 测评体系进阶指南](../ch01/453-ai-skill.html) / [Ai Skill 测试用例设计](../ch01/453-ai-skill.html) / [Ai Skill 测评指标体系](../ch01/453-ai-skill.html) — AI Skill 测评系列（覆盖部分指标体系）。本实体是**腾讯视角的工程化评估**，与系列互补。
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/401-agent-skills.html) — Anthropic 官方 14 patterns 译本。命名相似但内容不同。
+- [Agent Skill Writing Practices](ch04/271-agent-skill.html) / [Agent Skill Writing Advanced](ch04/271-agent-skill.html) / [Agent Skill Writing Evaluation](ch04/271-agent-skill.html) — 系列其他 skill 写作视角。本实体是**鹅厂完整 Playbook 视角**。
 
 ## 深度分析
 
@@ -264,13 +210,13 @@ Skill 没触发
 
 ## 相关主题
 
-- Skill 系统综述 — [Agent Skills Comprehensive Survey](ch04/397-agent-skills.html)
+- Skill 系统综述 — [Agent Skills Comprehensive Survey](ch04/401-agent-skills.html)
 - Skill 元技能 — [Meta Skill](../ch07/025-meta-skill.html)
-- Skill vs Coze/Dify/n8n — [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](ch04/397-agent-skills.html)
-- Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](../ch03/072-skills.html)
-- Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/989-anthropic.html)
+- Skill vs Coze/Dify/n8n — [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](ch04/401-agent-skills.html)
+- Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](../ch03/071-skills.html)
+- Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/1004-anthropic.html)
 - AI 技能自动演进 — [Ai Skill Evolution Framework](../ch07/010-ai-skill-evolution.html)
-- Claude Code 架构 — [Claude Code Architecture](../ch03/078-claude-code.html)
+- Claude Code 架构 — [Claude Code Architecture](../ch03/077-claude-code.html)
 - AHE 通用 Harness — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 
 ---

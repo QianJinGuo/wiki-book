@@ -2,7 +2,7 @@
 title: "Tapered Language Models：锥形参数分配"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 7af9f72fdaf88e1f5009973c015b9830534a667098685481d4b2eee14c11d637
 ---

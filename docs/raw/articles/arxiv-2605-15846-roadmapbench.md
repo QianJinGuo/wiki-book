@@ -2,7 +2,7 @@
 title: "arxiv 2605 15846 roadmapbench"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 53e34faf1c47752a01df010b7fc6f795c735cae9ad2e218a0b032a6d6402fdc3
 ---

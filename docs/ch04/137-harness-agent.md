@@ -4,62 +4,12 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/harness-production-agent-engineering-deficit.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness如何支撑Agent在生产环境稳定运行"))
-    核心概念 工程赤字 Engineering Deficit
-    Demo 型 vs 生产型代码库四维判别
-    Claude Code 退化事故 2026年4月
-    四支柱审查框架
-      支柱一 构建工具契约必须约束模型
-      支柱二 记忆状态必须可信 隔离 可追溯
-      支柱三 运行框架智能体循环本身就是基础设施
-    哪些方向可以先放一放
-    工程赤字的结构性根源
-    工具契约的脆弱性
-    状态投毒与权限边界
-```
-
 ## 核心概念：工程赤字（Engineering Deficit）
 > "很多智能体能做出演示，却很难变成可靠产品。"
 行业数据：88% 的智能体项目没有进入生产环境；MIT 2025年8月报告显示企业 GenAI 试点失败率达 95%；1837名企业开发者中仅 5%（95人）真正把 AI 智能体跑在生产环境。
 **问题通常不在模型本身，而在模型周围工程——Harness。**
 
 ## Demo 型 vs 生产型代码库四维判别
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 | 维度 | Demo 型 | 生产型 |
 |------|---------|--------|
 | 工具 | 接受任意字符串，出错返回空列表 | 入口校验格式，结构化错误 |
@@ -161,23 +111,23 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 - **不是智能体框架**：DSPy（适合 prompt optimization，不适合作为运行框架）
 
 ## 相关实体
-- [Claude Code 可控性：软规则无法变成硬约束](../ch03/078-claude-code.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/078-claude-code.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/401-agent-skills.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 

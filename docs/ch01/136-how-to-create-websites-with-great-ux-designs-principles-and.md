@@ -6,53 +6,14 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-create-websites-with-great-ux-designs.md)
 
-
 ## 相关实体
 
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/223-rag.html)
 - [How we made WINDOW JOIN parallel and vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1268-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1273-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [how dropbox uses mcp and dash to close the design-to-code se](https://github.com/QianJinGuo/wiki/blob/main/entities/dropbox-mcp-dash-design-code-security.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 **UX 设计的六项核心原则是递进关系**：User first → Usability → Consistency → Accessibility → Hierarchy → Context，这六项原则并非并列关系，而是从"战略层"到"表现层"的递进。User first 是设计决策的出发点；Usability 是功能可用性的底线；Consistency 降低用户认知负担；Accessibility 扩展用户边界；Hierarchy 引导视觉注意力；Context 提供恰到好处的信息时机。一个网站如果只做到前三项，只能算"能用"；只有六项全部做到，才能算真正的好 UX。
 **好 UX 的本质是"减少用户认知摩擦"**：文章开篇引用"People tend to remember how a website made them feel, even if they forget how it looks"——这句话点出了 UX 的核心：情感记忆比视觉记忆更持久。用户不会记得你的配色方案，但会记得"用这个网站很顺畅"还是"被这个网站搞得很烦躁"。因此 UX 设计的终极目标不是"好看"，而是"让用户顺利完成任务后心情愉快"。
 **七个案例各有侧重，覆盖了不同业务场景的 UX 痛点**：Modash 的挑战是"复杂产品如何让人快速理解"，解决方案是工作流标签 + 多路径 CTA；Outseta 的挑战是"多工具产品如何清晰呈现"，解决方案是基于工作流的导航；January AI 的挑战是"技术/医疗内容如何不吓人"，解决方案是最小化设计 + 受众分割；MarqVision 的挑战是"高风险敏感问题如何建立信任"，解决方案是基于问题的导航 + 数据背书；Anrok 的挑战是"税务合规话题如何不无聊"，解决方案是实用工具优先的导航 + 动态地图；MA Quilts 的挑战是"视觉型产品如何让图片说话"，解决方案是最简布局 + 突出产品；Eleken 的挑战是"如何匹配用户意图和转化路径"，解决方案是情境化客户 Logo + 可衡量成果展示。

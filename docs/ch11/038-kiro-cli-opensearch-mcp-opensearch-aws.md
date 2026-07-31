@@ -4,57 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从手动到智能 用 Kiro CLI OpenSearch MCP"))
-    技术架构的本质 MCP 协议作为通用适配器的核心价值
-    Kiro CLI 的多层次 Agentic 能力解析
-    三大典型场景的技术深度分析
-    技术组合的战略意义 从工具到平台
-    立即可行的行动
-    中期建设方向
-    长期战略思考
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 by awschina on 12 1月 2026 in Artificial Intelligence Permalink Share 1. 背景介绍 随着云原生技术和分布式搜索引擎的广泛应用，OpenSearch 已成为企业构建搜索和分析解决方案的重要选择。然而，OpenSearch 的使用往往面临着诸多挑战： 在运维层面 ，复杂的集群配置、繁琐的索引管理、性能调优的专业门槛，以及故障排查时需要深厚的技术积累，使得许多运维人员在日常工作中感到力不从心，难以快速响应业务需求。 在应用层面 ，从海量数据中提取有价值的信息、优化搜索性能、调整向量检索参数等任务，同样需要深入理解 OpenSearch 的查询语法和底层机制，这对开发人员和数据分析师来说也是不小的挑战。为了降低 Op
 
 ## 核心技术
@@ -66,9 +16,9 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock ^[https://aws.amazon.com/
 ## 相关实体
 - [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](../ch03/035-agent.html)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/035-agent.html)
-- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
+- [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
 - [将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-rest-api-architecture-practice.md)
-- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1016-spec.html)
+- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1034-spec.html)
 - [用 Kiro CLI 自动搭建 FluentBit 日志采集方案：两种 EKS 埋点数据落地 S3 Parquet 的实战对比 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 
 ## 深度分析

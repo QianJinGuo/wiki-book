@@ -12,49 +12,17 @@
 
 - - |
 
-
 ## 相关实体
 - [Notion Dev Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-dev-platform.md)
-- [Pi Mono Github](../ch01/834-pi-mono-github.html)
+- [Pi Mono Github](../ch01/848-pi-mono-github.html)
 - [Cli Mcp Sdk Agent Tool Selection](ch03/035-agent.html)
 - [Openai Realtime Api Architecture](../ch01/107-openai-realtime-api.html)
-- [Browser Harness Github](../ch05/088-browser-harness-github.html)
+- [Browser Harness Github](../ch05/089-browser-harness-github.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crawler-vs-opencli-doubao.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 这篇文章揭示了网页数据采集领域一次根本性的范式转移。传统爬虫的核心运作逻辑是"伪装成浏览器"，通过 HTTP 请求模拟或无头浏览器逆向目标网站，这个过程本质上是与目标站点反爬机制持续对抗的零和博弈——每次页面改版、接口参数变化或反爬策略升级都需要人工迭代维护，成本极高。而 OpenCLI 通过复用浏览器内部原生会话直连网站后端 API，从根源上规避了反爬问题：所有请求与用户手动操作发起的请求完全一致，攻击面从"破解反爬规则"变成了"是否有权限操作自己的账号"。这是两种截然不同的安全模型——外部模拟 vs 内部复用。
 

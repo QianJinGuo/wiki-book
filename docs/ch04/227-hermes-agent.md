@@ -19,22 +19,6 @@ Hermes 的"Self-Improving"不一样。它说的是：Agent 自己能从工作中
 整个闭环不依赖人，也不依赖模型升级。
 这一篇我把这个闭环拆开讲清楚。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 自我改进机制概述"))
-    先给自进化做一个工程定义
-    自进化要靠 4 件事配合
-    闭环是怎么转起来的
-    为什么闭环必须包含主动触发
-    为什么复盘必须由独立 Agent 来做
-    进化速度不是越快越好
-    自进化的反例
-    自进化的加速度
-```
-
 ## 先给"自进化"做一个工程定义
 同一个用户，让同一个 Agent，在不同时间点做同类任务，后做的明显比先做的更准更快。
 三个关键词：
@@ -45,37 +29,6 @@ mindmap
 按这个标准，市面上 95% 的 Agent 不算自进化。Hermes 算。
 
 ## 自进化要靠 4 件事配合
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 第 1 件事：能记住事（Memory）— 事实级别的认知，写到 markdown 文件里，下次自动加载到 system prompt。
 第 2 件事：能沉淀做法（Skill）— 操作级别的经验，写成有 step 的 markdown 文件，下次按攻略执行。
 第 3 件事：能主动触发学习（Nudge Engine）— 到了某个时间点/事件/轮次，强制提醒"该学习了"。
@@ -137,9 +90,9 @@ Hermes 的设计哲学，不是 AI 哲学，是组织学。
 ## 关联阅读
 ## 相关实体
 - [Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)
-- [Hermes 9 Module Architecture Winty](../ch01/742-9.html)
+- [Hermes 9 Module Architecture Winty](../ch01/755-9.html)
 - [Hermes Agent Self Evolving Source Analysis](../ch03/096-hermes-agent.html)
-- [P Ai Pms Guide To Claude](../ch01/976-claude.html)
+- [P Ai Pms Guide To Claude](../ch01/1022-claude.html)
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)
 
 ---

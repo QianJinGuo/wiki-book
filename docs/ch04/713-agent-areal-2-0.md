@@ -6,18 +6,6 @@
 
 # Agent的自演进，被刚刚开源的AReaL 2.0按下了加速键
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent的自演进 被刚刚开源的AReaL 20按下了加速键"))
-    从执行闭环到学习闭环 Agent 自演进的范式转变
-    三根支柱的技术深度拆解
-    微服务架构 Online RL 的工程化落地
-    从 Hermes 到 Claude Code 可复用的
-```
-
 ## 摘要
 
 AReaL 2.0 是由蚂蚁集团联合香港科技大学、清华大学发布的开源 Agentic RL 训练底座，专注于解决 Agent 从「会使用工具并完成任务」向「在使用中学习并改进完成任务的方法」的关键跨越问题。它将在线强化学习基础设施从面向离线后训练的 RL 框架，延伸为连接 Agent 在线服务、轨迹采集、训练更新和运行时管理的可扩展系统。
@@ -41,43 +29,6 @@ AReaL 2.0 瞄准的正是这一薄弱环节，推动 Agent 从「执行闭环」
 这一趋势与 Anthropic 内部实践高度一致——Claude Code 创造者 Boris Cherny 透露，Anthropic 几乎 100% 的工程师都在同时运行 100 多个带有自我改进循环的 Agent，让它们在每次运行中不断变得更好。
 
 ### 三根支柱的技术深度拆解
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 **第一支柱：ATDP（Agent Trajectory Data Protocol）**
 
@@ -141,7 +92,7 @@ AReaL 2.0 在 Hermes Agent 上展示了低侵入式接入方式——把演示�
 
 - [Agent自我改进循环](../ch05/009-harness.html) — Agent 通过运行轨迹持续优化的核心理念
 - [Hermes Agent](../ch03/096-hermes-agent.html) — AReaL 2.0 的 Hermes 接入范例
-- [Claude Code 架构分析](../ch03/078-claude-code.html) — Claude Code 的 Agent RL 训练范例
+- [Claude Code 架构分析](../ch03/077-claude-code.html) — Claude Code 的 Agent RL 训练范例
 - [Agent落地真相](../ch03/035-agent.html) — Agent 从演示到投产的挑战
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Agent 控制平面的系统方法论
 

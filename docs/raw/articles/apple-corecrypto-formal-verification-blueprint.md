@@ -6,7 +6,7 @@ author: "Apple SEAR + Hardware Technologies Formal Verification"
 publish_date: "2026-06-08"
 ingested: "2026-06-08"
 sha256: "13f530b0a7e96400762906cb2f06d7b14848ef9117c3c5c95692754bdd42e681"
-type: article
+type: raw-article
 tags: [security, cryptography, formal-verification, post-quantum, apple, ml-kem, ml-dsa, side-channel]
 review_value: 8
 review_confidence: 8

@@ -8,61 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-54-is-a-big-step-for-codex.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GPT 54 是 Codex 的一次大跨越 四维评估视角与"))
-    一 四维评估框架取代单点正确性
-    二 Reasoning Efficiency 被低估的模型竞争维度
-    三 Claude vs GPT 的 Agent 哲学分歧
-    四 Agent 工具的下一形态 Slack
-```
-
 ## 摘要
 
 Interconnects（Nathan Lambert）从 agent-native 工作流视角评测 GPT 5.4 + Codex 组合：相比传统 benchmark 的"单点正确性"，真正的 agent 体验是"正确性、易用性、速度、成本"四维混合，GPT 5.4 在这四个维度上都比前代有实质提升，"硬棱角"消失，是首个让人感觉"扔什么都能干"的 OpenAI agent。文章同时给出 Claude 与 GPT 在 agent 哲学上的关键分野："Claude 推测你的意图，GPT 严格按你说的做"，并预言 agent 工具的形态会像 Slack——多个 agent 在用户视野下互相沟通。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **从单维到四维评估**：传统 benchmark 把模型压缩成"单一正确性分数"，但 agent 任务是正确性 × 易用性 × 速度 × 成本的混合，GPT 5.4 是首个在这四维都有意义提升的 OpenAI 模型。
 - **"硬棱角"消失**：之前 Codex 经常在 git 操作、文件管理等小任务上"切死"用户；GPT 5.4 这些边缘问题不再发生，"感觉不到死亡"是体验质变。
@@ -134,8 +84,8 @@ Nathan 报告了一个跨模型的共同问题：
 
 ## 相关实体
 
-- [Yann Dubois Openai Post Training Matt Turck Interview](ch01/390-openai.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Yann Dubois Openai Post Training Matt Turck Interview](ch01/391-openai.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - **Agent 评估方法**
 - **Reasoning Efficiency**

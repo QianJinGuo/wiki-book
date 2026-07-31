@@ -4,60 +4,10 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claw-chain-cyera-research-unveil-four-chainable-vulnerabilities-in-openclaw.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claw Chain Cyera Research Unveil"))
-    漏洞链条设计 AI Agent 作为攻击放大器
-    技术细节分解
-    攻击面分析
-    对于 OpenClaw 部署者
-    对于 AI Agent 平台设计者
-    对于安全研究社区
-```
-
 ## 核心要点
 - Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw
 
 ## 关键洞察
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw
 Vulnerability Class: Sandbox escape, privilege escalation, data exposure
 CVE IDs: CVE-2026-44112, CVE-2026-44115, CVE-2026-44118, CVE-2026-44113
@@ -111,7 +61,7 @@ Claw Chain 再次验证了一个趋势：**AI Agent 正在成为下一代攻击�
 - 来自 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 等框架的安全设计原则融入 Agent 开发工作流
 
 ## 相关实体
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1036-openclaw-agent.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1049-openclaw-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 ---

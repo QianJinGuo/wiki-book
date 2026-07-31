@@ -2,7 +2,7 @@
 title: "Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线（FramesQA 90.1%）"
 created: "2026-06-06"
 updated: "2026-06-06"
-type: raw
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/8PdVIubBGWKtMMyCb0pc3g"
 source_name: "AI 寒武纪 WeChat MP (YAR师)"
 author: "AI 寒武纪 / YAR师"

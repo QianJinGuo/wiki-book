@@ -3,7 +3,7 @@ title: "你缺的不是更好的 AI，而是一个&quot;装自己&quot;的系统
 source_url: "vayne-lw-personal-agent-system"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: bfafcb2de69f5d54a3fd69405b3fce41fad189c3075119c1004567a0eebb79e4
 ---
 ---

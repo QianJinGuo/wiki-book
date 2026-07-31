@@ -8,19 +8,6 @@
 
 OpenAI Codex（编程 Agent）的 SQLite 反馈日志 (`logs_2.sqlite`) 存在严重的写入放大问题。默认的 `Level::TRACE` 配置导致每 15 秒进行约 36,000 次数据库插入加删除操作，一年产生约 640TB 的硬盘写入量，足以耗干一块消费级固态硬盘的寿命。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一年吃掉一块固态硬盘 Codex日志bug被骂「劣质软件"))
-    修复状态
-    隐蔽性工程漏洞 资源无预算制度的设计之殇
-    系统性问题堆积而非单一Bug
-    硬件性能兜底掩盖软件质量退化
-    编程Agent的竞争已从模型能力蔓延到工程质量
-```
-
 ## 技术细节
 
 - **写入模式**：Codex 使用 SQLite WAL 模式，每 15 秒执行约 36,211 行 INSERT，同时删除等量旧行，始终保持数据库约 1.2GB 大小。这种 insert-and-prune 机制虽然表面文件大小不变，但每次写入都对存储介质产生实际磨损。
@@ -30,41 +17,6 @@ mindmap
 - **隐蔽性**：日志库始终只有 1.2GB 大小，表面无异常；但自增行 ID 冲到 55 亿，真正留存的行仅 50 万。硬盘损耗只计写入量，不计当前文件大小——55 亿行全都落过盘，删掉也退不回已经付出的写入。
 
 ## 修复状态
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Anthropic 在收到报告后进行了修复，削减了约 85% 的日志写入量。但用户无法自行修改（Codex 桌面端闭源）。该问题在 Hacker News 上被评论为典型的劣质软件（slopware）。
 
@@ -105,8 +57,8 @@ Anthropic 的三个修复 PR 合计削减约 85% 写入。但从年化 640TB 降
 ## 相关实体
 
 - `codex-log-bug-ssd-wear`：本文主角，Codex 日志 bug 的原始分析
-- [Codex HTTP/2 HPACK Bomb](../ch01/517-codex.html) — 另一个 Codex 工程问题
-- [Claude Code vs Codex 架构对比](../ch03/078-claude-code.html)
+- [Codex HTTP/2 HPACK Bomb](../ch01/520-codex.html) — 另一个 Codex 工程问题
+- [Claude Code vs Codex 架构对比](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一年吃掉一块固态硬盘codex日志bug被骂劣质软件.md)
 

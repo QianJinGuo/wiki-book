@@ -19,31 +19,12 @@ updated: '2026-06-08'
 type: entity
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Fundamentals Large Tabular Model"))
-    What is NEXUS
-    Why existing approaches fall short
-    How NEXUS works on Amazon
-    Get started with NEXUS on Amazon
-    Enterprise use cases transforming
-      Financial services
-      Healthcare
-      Manufacturing and supply chain
-    Why choose NEXUS on Amazon
-    Strategic AWS partnership
-    Next steps
-```
-
 ## 相关实体
 - [Openai Models Codex Amazon Bedrock Ga](../ch11/295-amazon-bedrock.html)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/731-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/744-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/671-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
-- [Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment](../ch05/094-ai.html)
+- [Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 
@@ -54,44 +35,6 @@ Today, we’re announcing support for Fundamental’s NEXUS model on [Amazon Sag
 In this post, we show you how to get started with NEXUS on [Amazon SageMaker JumpStart](<https://aws.amazon.com/sagemaker/ai/jumpstart/>), walk through the deployment process, and demonstrate how to run predictions against your enterprise datasets.
 
 ## What is NEXUS?
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 NEXUS is a foundation model developed by [Fundamental](<https://fundamental.tech/>) and built for tabular data prediction. Large language models (LLMs) are designed for text, and traditional machine learning (ML) approaches require extensive feature engineering and model training. NEXUS takes a different approach. It’s pre-trained on billions of real-world prediction tasks across structured datasets, so it arrives already knowing how to find signal in your data.
 

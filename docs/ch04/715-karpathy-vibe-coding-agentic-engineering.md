@@ -4,63 +4,10 @@
 
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/karpathy-vibe-coding-agentic-engineering-v2.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
-    Vibe Coding vs Agentic Engineering
-    -2026 演进里程碑
-    Software 30 的关键变化
-    三个提醒
-      跨越中间层
-      遵守工程纪律
-      别把理解力外包出去
-    关键人物与立场
-    可验证性的关键作用
-    关联条目
-```
-
 ## 摘要
 Karpathy 在红杉资本 AI Ascent 2026 访谈的核心观点深度解读。文章从 Vibe Coding 的起源（2025.2）到 Agentic Engineering 的定型（2026.2），系统梳理了 AI 辅助编程从"个人工具"到"工程体系"的范式转变，以及对中国技术管理者的现实启示。
 
 ## 核心论点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### Vibe Coding vs Agentic Engineering
 - **Vibe Coding** — 降低软件创造的门槛，释放长尾需求。适合原型、个人工具、一次性脚本、低风险场景。
 - **Agentic Engineering** — 围绕 Agent 执行工程任务的工作方式。关心：上下文边界、工具权限、文件修改权限、审批机制、测试验证、环境隔离、回滚审计。
@@ -100,7 +47,7 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 验证能力（测试、编译、静态扫描、安全审查、运行回放）决定了 Agent 在真实工程系统中能走多远。
 
 ## 关联条目
-- [同主题入库（宝玉解读、不同角度）](ch04/237-agentic.html)
+- [同主题入库（宝玉解读、不同角度）](ch04/648-agentic.html)
 - [Harness Engineering — Agent 工程化落地的实践体系](../ch05/120-harness-engineering.html)
 - [Vibe Coding 主题入库文章](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
 
@@ -120,14 +67,14 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 
 ## 相关实体
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/237-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/648-agentic.html)
 
 ---
 

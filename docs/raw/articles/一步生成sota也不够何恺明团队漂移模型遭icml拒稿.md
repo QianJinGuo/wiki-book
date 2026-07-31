@@ -3,7 +3,7 @@ title: "一步生成SOTA也不够，何恺明团队「漂移模型」遭ICML拒�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/OWmg4HbRsWsKtkAeQY1GlQ"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 56
 tags: [raw]
 sha256: "6df7cc3938bbbd95d9d00601d20fe0b652cbbec58f147283664c7ce3a3bdbddf"

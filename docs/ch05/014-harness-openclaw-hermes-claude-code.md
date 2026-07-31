@@ -2,68 +2,13 @@
 
 ## Ch05.014 Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
-> 📊 Level ⭐⭐ | 22.6KB | `entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md`
+> 📊 Level ⭐⭐ | 22.6KB | `entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md`
 
 # Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧
 > Source: https://mp.weixin.qq.com/s/p1aNuDIXXnZPLvU2D6MwXQ
 > Author: 叶小钗 (AI训练营)
 > Date: 2026-05-07
 > Collected: 2026-05-07
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 到底是什么 看看 OpenClaw Hermes"))
-    内容
-    模型与工程
-    什么是 Harness
-    三个框架对比
-      OpenClaw 先把 Agent 管住
-      Hermes 先让 Agent 长本事
-      Claude Code
-    Harness 七层模型
-      第一层 角色与规则
-      第二层 记忆系统
-      第三层 上下文加载机制
-    OpenClaw 中的 Harness 具体实现
-      MCP工具链
-      Skills
-      Runtime
-    结语
-    三种路线代表了三种工程哲学
-```
 
 ## 内容
 Harness 最近有些小火，但这东西跟 OpenClaw 和 Hermes 不一样，到现在都只有个框架性描述：为 Agent 的稳定执行而生。要了解 Harness 不仅要看大概念，最好借助现在实际运行的很好的 Agent 框架，比如 Claude Code、OpenClaw、Hermes。
@@ -231,7 +176,7 @@ OpenClaw 的约束设计最完善，但扩展性最差；Hermes 的扩展性最�
 ## 相关链接
 - [17 Agent Architectures Evolution](../ch04/699-17-agent.html)
 - [Hermes Agent Closed Learning Loop](../ch03/096-hermes-agent.html)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/078-claude-code.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/077-claude-code.html)
 
 ## 实践启示
 ### 对 Agent 开发者的行动指南

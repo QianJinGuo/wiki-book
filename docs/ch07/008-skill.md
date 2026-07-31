@@ -6,41 +6,6 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-linyi.md)（凜一 / 阿里云开发者，2026-05-18）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("重新定义Skill开发 保姆级教程一站式开发助手"))
-    一 Skill 的本质 结构化指令文档 而非代码
-      重新定义 Skill
-      类比 阿里开发操作手册
-      核心观点 Skill 会替代你吗
-    二 三级加载机制 控制上下文消耗的关键设计
-      渐进式加载策略
-      实践意义
-    三 Skill 平台生态全景图
-      外部 Skill 市场
-      内部 Skill 平台
-      Agent 平台中的 Skill 使用方式
-    四 Skill 创建 目录结构与 SKILLmd 编写
-      标准目录结构
-      SKILLmd 结构
-      Markdown 正文结构
-    五 Skill 管理 发布与版本控制
-      发布到 Aone 开放平台
-      更新 Skill
-    六 痛点与解决方案
-      痛点一 跨平台 跨模型一致性
-      痛点二 版本管理和更新分发
-      痛点三 开发和调试效率低
-    七 进阶 Skill 自我进化机制
-      四步反馈闭环
-      业内代表性方案
-      穷人版落地
-    自我进化机制
-```
-
 ## 一、Skill 的本质：结构化指令文档，而非代码
 
 ### 1.1 重新定义 Skill
@@ -83,39 +48,6 @@ Skill 更接近 **SOP（标准作业程序）**——是给 AI 看的操作手�
 ---
 
 ## 二、三级加载机制：控制上下文消耗的关键设计
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 2.1 渐进式加载策略
 
@@ -438,11 +370,11 @@ Skill 采用渐进式加载策略，而非一次性将所有内容塞入上下�
 
 ## 相关实体
 
-- [Anthropic 官方 14 种 Skill 设计模式](../ch01/989-anthropic.html)
-- [Skill 设计模式](../ch04/271-skill.html)
+- [Anthropic 官方 14 种 Skill 设计模式](../ch01/1004-anthropic.html)
+- [Skill 设计模式](../ch04/273-skill.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/719-skills-anthropic-openai-comparison-frontend-design.html)
-- [Claude Design 系统提示词 → web-design-engineer Skill](../ch01/1150-claude-design-skill.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/735-skills-anthropic-openai-comparison-frontend-design.html)
+- [Claude Design 系统提示词 → web-design-engineer Skill](../ch01/1143-claude-design-skill.html)
 
 ---
 

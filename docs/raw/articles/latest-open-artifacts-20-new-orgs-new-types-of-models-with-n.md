@@ -12,7 +12,7 @@ tags:
 - article
 title: 'Latest open artifacts (#20): New orgs! New types of models! With Nemotron
   Super, Sarvam, Cohere Transcribe, & others'
-type: source
+type: raw-article
 updated: '2026-06-07'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Introducing Composer 2.5
-type: entity
+type: raw-article
 tags: [article]
 created: 2026-05-20
 updated: 2026-05-20

@@ -2,7 +2,7 @@
 title: "Introducing AWS Continuum for security at machine speed"
 source_url: "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-continuum/"
 ingested: 2026-06-20
-type: article
+type: raw-article
 tags: [aws, security, agent-security, cloud-security]
 sha256: ""
 created: 2026-06-20

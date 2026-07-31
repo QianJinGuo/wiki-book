@@ -6,68 +6,11 @@
 
 # 为什么 2026 年真正重要的是 Harness Engineering？
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("为什么 2026 年真正重要的是 Harness Engineering"))
-    核心概念
-      Agent Model Harness
-      操作系统类比
-    五种核心 Harness 工件
-      AGENTmd CLAUDEmd 文件
-      JSON 功能列表 进度追踪器
-      会话初始化例程
-    三大实践阵营
-      OpenAI 环境优先
-      Anthropic 执行与评审分离
-      ThoughtWorks 22 分类框架
-    五条普适原则
-    Harness 衰减悖论
-      构建是为了删除
-      成本演化
-    Harness Engineering 的本质是信任但验证的系统化
-    环境比模型更重要的隐含前提
-    从强模型到强系统的范式迁移
-```
-
 ## 摘要
 
 2026 年 AI 工程的核心范式正在从"更强的模型"转向"更可靠的系统"。Harness Engineering——即 AI agent 的系统化工程约束与安全壳层设计——被 ThoughtWorks、Anthropic、OpenAI 和 Hugging Face 等组织独立认定为 2026 年最重要的工程学科。其核心公式为：**Agent = Model + Harness**。Harness 是模型之外的一切——约束、反馈回路、上下文文档和工具边界。本文系统阐述了 Harness Engineering 的五大工件、三个实践阵营、五条普适原则，以及"构建是为了删除"的反直觉设计哲学。
 
 ## 核心概念
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### Agent = Model + Harness
 

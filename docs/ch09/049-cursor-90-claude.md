@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/cursor-recall-anthropic-daily-release-cat-wu.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从Cursor返聘归来 90后华裔女高管带Claude开启日更模式"))
-    元信息
-    一句话摘要
-    关键引用
-    人物背景
-    团队结构 PM
-    Anthropic 内部工具栈
-    日更发布机制的组织逻辑
-    角色融合背后的能力模型变迁
-```
-
 ## 元信息
 | 字段 | 内容 |
 |------|------|
@@ -30,41 +14,6 @@ mindmap
 | **评分** | 价值9 × 置信度9 = **81** |
 
 ## 一句话摘要
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Anthropic Claude Code/Cowork 产品负责人 Cat Wu 访谈：日更发布机制、PM 与工程师角色融合、使命驱动决策模型、eval 驱动开发，以及 AI 原生产品经理的新能力模型。
 
 ## 核心洞察
@@ -162,7 +111,7 @@ eval 的核心价值不是衡量，而是**对齐团队认知**：当一个团�
 | **总分** | **81** | 强烈推荐入库 |
 
 ## 相关实体
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
 
 ---
 

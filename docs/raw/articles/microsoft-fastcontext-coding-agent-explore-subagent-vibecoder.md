@@ -5,7 +5,7 @@ title: "微软开源 FastContext，加速Coding Agent仓库探索"
 author: VibeCoder
 publisher: Vibe编码
 date: 2026-06-18
-type: article
+type: raw-article
 ingested: 2026-06-18
 review_value: 8
 review_confidence: 8

@@ -7,59 +7,10 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autobrowse-browserbase-persistent-skill-files.md)
 
 # Autobrowse — 浏览器 Agent 持久记忆：技能文件作为永久技能
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Autobrowse Browserbase Persistent"))
-    核心问题 探索税 Discovery Tax
-    核心架构 五步学习循环
-    关键设计 记忆 Markdown 技能文件
-    量化效果 Craigslist 基准
-    核心发现 JSON API 逆向
-    自批评 Agency 分层框架
-    复利与递归
-    记忆形式才是根本瓶颈
-```
-
 ## 核心定位
 Browserbase（Kyle Jeong, 2026-05-07）提出。核心命题：**让浏览器 Agent 的每次探索都变成可复用的永久技能**——不是向量，不是会话录像，而是任何人都能读懂的 markdown 技能文件。
 
 ## 核心问题：探索税（Discovery Tax）
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 **定义**：浏览器 Agent 每次会话结束后学到的一切都跟着蒸发，下次运行还得从零开始探索同一个网站。推理能力越来越强，但记忆没有改善。
 **凯恩斯思想实验**：没有海马体的天才，每次从零推导出同样精妙的结论，却无法在昨天的洞察上继续前进。
 **根本瓶颈**：不是推理能力，而是**记忆形式**——现有方案（会话录像、trace、embedding 向量）要么不可读、要么不可复用、要么两者兼有。
@@ -128,8 +79,8 @@ Objective → Run → Study → Iterate → Graduate (SKILL.md)
 ## 相关概念
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — self-improving 方向相通，但 Autobrowse 通过显式技能文件实现而非隐式记忆
 - [Browser Harness](../ch05/135-browser-use-v0-13-browser-harness.html) — Autobrowse 是 Browser Harness 持久记忆问题的具体答案
-- [Agent Skill 编写指南](../ch04/269-agent-skill.html) — SKILL.md 格式与 Skill 编写规范高度一致，Autobrowse 是这一原则在浏览器场景的工程化实践
-- [Factory Mission](../ch01/1235-factory-mission-multi-agent-architecture.html) — 两者都解决"历史探索知识无法积累"问题，但 Factory 侧重多 Agent 协作，Autobrowse 侧重单 Agent 的跨会话持久化
+- [Agent Skill 编写指南](../ch04/271-agent-skill.html) — SKILL.md 格式与 Skill 编写规范高度一致，Autobrowse 是这一原则在浏览器场景的工程化实践
+- [Factory Mission](../ch01/1240-factory-mission-multi-agent-architecture.html) — 两者都解决"历史探索知识无法积累"问题，但 Factory 侧重多 Agent 协作，Autobrowse 侧重单 Agent 的跨会话持久化
 - [Hermes Self-Improving Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md) — 理念高度一致：都通过 markdown 技能文件实现 Agent 持久记忆，强调人类可读性作为可审计性基础，支持版本控制和迭代改进
 
 ## 深度分析

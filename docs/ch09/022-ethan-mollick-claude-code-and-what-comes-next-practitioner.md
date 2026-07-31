@@ -8,25 +8,6 @@
 
 > **Core insight**: Ethan Mollick（One Useful Thing）2026-01 对 Claude Code 的端到端实测：单条 prompt "Develop a startup that makes $1000/month" 触发 **1 小时 14 分钟自主工作**，创建数百文件 + 部署真实可售卖网站。背后是 **compaction / Skills / subagents / MCP 四个 magic trick** 的组合。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Ethan Mollick Claude Code and"))
-    现象级实测
-    能力突变的两个关键
-    Claude Code 的四个 Magic Tricks
-      Compaction Memento 比喻
-      Skills Matrix 比喻
-      Subagents
-    对非程序员的实战指南
-    Mollick 自己的例子 历史世界模拟器
-    风险与警告
-    与 Opus 4 7 Launch Claude Code
-    三个独到洞察
-```
-
 ## 现象级实测
 
 Mollick 给 Claude Code 一条 prompt：
@@ -44,41 +25,6 @@ Mollick 给 Claude Code 一条 prompt：
 **重要**："very sketchy fake marketing claims" 表明 AI 没有自动阻止虚假营销 — **agent 时代的人类监督仍是必要**。
 
 ## 能力突变的两个关键
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Mollick 把这种"突然的能力跃升"归因于**两个独立进展的乘数效应**：
 
@@ -178,7 +124,7 @@ MCP 生态：
 - 用专用文件夹
 - 不要给它访问你不能承受丢失的东西
 
-## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html) 的关系
+## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html) 的关系
 
 | 维度 | 现有 entity | 本文 |
 |------|------------|------|

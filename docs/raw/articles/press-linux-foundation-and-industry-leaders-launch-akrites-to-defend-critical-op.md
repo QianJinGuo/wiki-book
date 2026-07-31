@@ -2,7 +2,7 @@
 title: "Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats"
 source_url: "https://linuxfoundation.org/press/linux-foundation-and-industry-leaders-launch-akrites-to-defend-critical-open-source-software-against-ai-enabled-cyber-threats"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: fd3c3f538342f6ffdf2b8f8ae5223283e4637928d278a7ed8941e4619f4234e3
 ---

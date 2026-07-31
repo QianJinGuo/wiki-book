@@ -1,6 +1,6 @@
 ---
 title: "Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats"
-type: article
+type: raw-article
 source_url: https://www.nextplatform.com/ai/2026/06/03/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats/5250406
 ingested: 2026-06-05
 sha256: pending

@@ -6,58 +6,11 @@
 
 # Thariq（Claude Code工程师）的Fable 5使用心法：地图≠领土，用未知消除法突破模型瓶颈
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thariq Claude Code工程师 的Fable"))
-    指令困境的深层根源
-    未知消除法 vs 传统需求工程
-    SOP 五招的设计理性
-    Fable 5 与 Agentic Coding 的新范式
-```
-
 ## 摘要
 
 Claude Code 团队核心工程师 Thariq 提出的 Fable 5 使用心法核心论点是：当模型能力足够强（如 Fable 5），瓶颈从"模型能不能做到"转变为"你能不能说清楚你到底要什么"。 他的核心比喻——prompt、skill、上下文是"地图"（给 Claude 的说明书），而代码库、真实世界约束是"领土"。地图和领土之间的差距即为"未知"（unknown unknowns）。基于此，他给出了四类未知的框架（已知已知、已知未知、未知已知、未知未知）和一套闭环 SOP（实施前五招→实施中一招→实施后两招），帮助开发者系统性地消除未知，最大化 Fable 5 级别模型的工作产出。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **地图≠领土**：prompt/技能/上下文是"地图"，代码库/真实世界是"领土"。地图与领土的差距即未知——Claude 每撞上一个未知，就只能按最佳猜测做决定。
 - **瓶颈迁移**：模型越强，人的价值从"写得多快"转移到"问得多准"。Thariq 原话：这是第一个让他觉得工作质量被"我澄清未知的能力"卡住的模型。
@@ -119,10 +72,10 @@ Thariq 自己的实践案例最具说服力：Fable 的发布视频完全是 Cla
 
 ## 相关实体
 
-- [Claude Code Deep Architecture Analysis](../ch03/078-claude-code.html) — Claude Code 的深度架构分析与使用模式
+- [Claude Code Deep Architecture Analysis](../ch03/077-claude-code.html) — Claude Code 的深度架构分析与使用模式
 - [Claude Code Skills Workflow Encapsulation Costa Long](../ch07/035-claude-code-skills.html) — Skill 工作流封装，与 Thariq 的未知消除法互补
 - [Fable 5 模型能力分析](../ch01/173-claude-fable-5.html) — Fable 5 模型能力分析
-- [Agentic Coding 方法论](../ch04/237-agentic.html) — Agentic Coding 方法论的整体框架
+- [Agentic Coding 方法论](../ch04/648-agentic.html) — Agentic Coding 方法论的整体框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/全网爆火claude-code核心工程师放出fable-5使用心法.md)
 

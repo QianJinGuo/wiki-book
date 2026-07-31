@@ -6,7 +6,7 @@ feed: "大模型智能"
 publish_time: "2026-06-11"
 ingested: 2026-06-11
 sha256: "9df9b76935cb159b7c81e8bb1a5fd3da74fe3f4a42aa7ddab5792f3dd506b6ba"
-type: raw
+type: raw-article
 tags: [icml-2026, prismatic-attention, prsm, linear-attention, gdn, ttt, sequence-model, recommendation, parallel-scan, memory-writing, mixed-architecture]
 review_value: 8
 review_confidence: 9

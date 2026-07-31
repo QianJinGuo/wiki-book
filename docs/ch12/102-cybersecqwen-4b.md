@@ -4,58 +4,7 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cybersecqwen-4b.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CyberSecQwen-4B"))
-    Key Capabilities
-    Performance
-    小专项 vs 大通用 参数效率的核心逻辑
-    AMD ROCm 生态的实战验证
-    微调配方的高度可迁移性
-    安全边界的清醒定位
-```
-
 ## Key Capabilities
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 - **CWE Classification**: Maps vulnerability descriptions (CVEs, advisories) to MITRE CWE categories
 - **CTI Q&A**: Structured question answering about cybersecurity concepts, attacks, controls
 - **Defensive triage assistance**: Supports human analysts triaging CVEs, prioritizing patches
@@ -104,8 +53,8 @@ Gemma4Defense-2B 采用完全相同的训练语料和超参数，仅更换基模
 >
 
 - [CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](../ch01/038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
-- [Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads](../ch01/390-openai.html)
-- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch05/094-ai.html)
+- [Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads](../ch01/391-openai.html)
+- [Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](../ch05/095-ai.html)
 
 ---
 

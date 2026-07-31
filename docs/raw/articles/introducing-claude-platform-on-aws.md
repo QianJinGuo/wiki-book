@@ -3,7 +3,7 @@ title: "Introducing Claude Platform on AWS: Anthropic’s native platform, throu
 source_url: "introducing-claude-platform-on-aws"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: 55250413fb90648708bc08c1316dec2dec2e43be77d0518a3e9edc135ddeebc5
 ---
 ---

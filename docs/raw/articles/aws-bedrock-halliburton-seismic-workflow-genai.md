@@ -6,7 +6,7 @@ tags: [aws-china-blog, agentic-ai]
 feed_name: "AWS ML Blog"
 source_published: "2026-05-08T13:20:30Z"
 ingested: 2026-05-09
-type: raw
+type: raw-article
 sha256: bdc028883e97
 created: 2026-05-10
 updated: 2026-05-10

@@ -10,57 +10,18 @@
 > **SHA256**: f60f5255f7c8d3b2438625f60daf1e1d2cb4792da5ac17e925ac9fa83d7e0284
 > **参考原文**: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/
 
-
 ## 相关实体
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/731-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/821-openai-gpt-realtime-voice-models-qbitai.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/003-agentrun.html)
-- [Pi Mono Github](ch01/834-pi-mono-github.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/744-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/835-openai-gpt-realtime-voice-models-qbitai.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/444-agentrun.html)
+- [Pi Mono Github](ch01/848-pi-mono-github.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-realtime-api-architecture.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch01/390-openai.html)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch01/391-openai.html)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 **relay + transceiver 的两层分离架构是整个系统设计的核心洞察**。OpenAI 将"路由转发"与"协议状态管理"解耦，前者（relay）完全无状态，后者（transceiver）持有完整会话状态。这使得 relay 可以极度轻量地水平扩展，而 transceiver 的复杂性被隔离在可预测的边界内。传统 SFU 方案之所以不适合 OpenAI 场景，正是因为 SFU 混淆了这两层职责——它在转发的同时还管理多方通话状态，在 1:1 低延迟场景下引入不必要的开销。
 

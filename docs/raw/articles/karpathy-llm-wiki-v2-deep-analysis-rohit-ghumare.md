@@ -3,7 +3,7 @@ title: "Karpathy LLM Wiki V2 深度分析：记忆生命周期 + 知识图谱 + 
 source_url: "https://mp.weixin.qq.com/s/Hgrj-5dxofZSD7c-ydjNAQ"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # Karpathy LLM Wiki V2 深度分析

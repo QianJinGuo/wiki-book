@@ -3,7 +3,7 @@ title: "Hermes Agent Eval Harness 深度解析：从执行轨迹到可验证的 
 source_url: "https://mp.weixin.qq.com/s/V_1HVbB74rhCgKkV1an46w"
 ingested: 2026-06-18
 sha256: 7caa494a16c0a569eca9689a4fa06e044b629875e90eee7210291206dc9c5886
-type: raw
+type: raw-article
 tags: [hermes-agent, eval-harness, trajectory, skillopt, selection-gate, regression-gate, verifier, task-set, harness-adapter, trajectory-store, report-replay, rejected-buffer, 7-modules, 6-verifier-types, 3-regression-types, 6-stage-rollout, exact-verifier, artifact-verifier, execution-verifier, trace-verifier, policy-verifier, judge-verifier, sota-ai, arxiv-2605-23904, agent-self-improvement, skill-crossover]
 ---
 

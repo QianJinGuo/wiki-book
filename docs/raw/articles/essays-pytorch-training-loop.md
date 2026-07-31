@@ -2,7 +2,7 @@
 title: "The annotated PyTorch training loop"
 source_url: "https://idlemachines.co.uk/essays/pytorch-training-loop"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 6e253e87da461598292d044ba42e5d7356b8d2ab02933e1a62baf7aabcb2e170
 ---

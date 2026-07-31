@@ -8,23 +8,6 @@
 
 2026年7月4日，Lilian Weng（翁荔）更新博客，系统梳理了从 ACE、Meta Context Engineering 到 Self-Harness、Darwin Gödel Machine 等一系列围绕 "Harness 自我优化" 的研究工作。文章核心问题：递归式自我提升（Recursive Self-Improvement, RSI）究竟会先发生在模型权重层面，还是先发生在这层「脚手架」上？
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("刚刚 翁荔博客又上新 通过Harness工程实现AI自我提升"))
-    Harness 设计模式
-    Harness 优化技术全景
-      上下文工程
-      工作流设计
-      自我提升型 Harness
-    Harness 工程正在从工程实践走向元方法论
-    Harness 层 vs 核心智能的辩证关系
-    评估者瓶颈是 RSI 的首要障碍
-    多样性坍缩与奖励作弊的系统性风险
-```
-
 ## 核心要点
 
 - **Harness 的定位**：介于原始模型与真实世界场景之间的系统层，负责编排执行流程、工具调用、上下文管理、结果评估。其重要性不亚于模型本身的原始智能。
@@ -34,37 +17,6 @@ mindmap
 - **七个关键挑战**：弱评估者、上下文与记忆生命周期、负面结果、多样性坍缩、奖励作弊、长期成功评估、人类角色定位。
 
 ## Harness 设计模式
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 Weng 在文章中归纳了 Harness 工程的三种核心设计模式：
 

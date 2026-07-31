@@ -4,67 +4,10 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/agent-memory-modular-framework.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Memory 模块化框架与评测 Memory in"))
-    统一框架 四组件
-      检索方法对比
-    实验发现
-      数据集
-      关键结论
-      新 SOTA
-    与 Agent Memory Architecture 的关系
-    框架本质 四组件是治理分工 不是功能切分
-    层次化架构的实验支撑与内在局限
-    蒸馏与记忆的边界被混淆
-    底层 LLM 决定上限的意义
-    优先投资 Management 层 而非存储层
-```
-
 ## 核心命题
 *Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework*（ICLR 2026 投稿，arXiv:2604.01707）提出：Agent Memory 的核心问题不是容量，而是**治理**——系统能否在正确时间取回正确信息。上下文窗口扩展解决的是带宽问题，不是建模问题。
 
 ## 统一框架：四组件
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 论文将 Agent Memory 拆解为四个核心组件，可统一刻画 10 种代表性方法：
 | 组件 | 职责 | 关键设计选择 |
 |------|------|-------------|
@@ -96,7 +39,7 @@ graph TB
 ### 新 SOTA
 组合 MemTree/MemOS 的树状组织能力与 MemoryOS 的分层存储架构，设计出低 token 开销新框架（lme-sota）。
 
-## 与 [Agent Memory Architecture](../ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html) 的关系
+## 与 [Agent Memory Architecture](../ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html) 的关系
  从**架构本质**层面探讨 Agent Memory 的治理命题（write–manage–read 闭环、四类建模对象、六维度记忆单元）。本文在此基础上提供**模块化抽象 + 实验验证**：四组件框架将的直觉概念分解为可评测的子系统，并量化了不同设计选择的效果。
 
 ## 相关主题
@@ -106,12 +49,12 @@ graph TB
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-in-the-llm-era-iclr2026.md)
 
 ## 相关实体
-- [memory agent systems cobanov](../ch04/604-memory-agent-systems-cobanov.html)
+- [memory agent systems cobanov](../ch04/608-memory-agent-systems-cobanov.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
 - [AI Agent 记忆系统架构](../ch04/156-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 
-- [ai agent memory systems](../ch04/121-agent-memory.html)
+- [ai agent memory systems](../ch04/098-agent-memory.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 ## 深度分析

@@ -2,7 +2,7 @@
 title: "What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 84e47fdfadefd06ee3684881410331dc5b2055765e5e5b01edf2ad15ff63435b
 ---

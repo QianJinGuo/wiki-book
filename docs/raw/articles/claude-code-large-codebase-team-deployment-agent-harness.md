@@ -6,7 +6,7 @@ feed_name: "技术极简主义"
 author: "兔兔AGI"
 published: 2026-05-27
 created: 2026-05-27
-type: raw
+type: raw-article
 tags: [claude-code, agent-harness, large-codebase, monorepo, team-deployment, claude]
 sha256: 5997fa3b20544d5f53648778742269dc8e874b45df6345e2ae87cb248b5d3be3
 ---

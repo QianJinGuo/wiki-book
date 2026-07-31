@@ -6,7 +6,7 @@ author: 辛嘉诚、钱海涛、何浩
 feed_name: AWS China Blog
 source_published: 2026-06-12
 ingested: 2026-06-12
-type: article
+type: raw-article
 tags: [agentcore, bedrock, aws, harness-engineering, multi-agent, devops, mcp, agent-as-service, production-case]
 sha256: "cf4e68547b19d0b9cc1365b2a4dc35d77dee26af5b8d49caa1387be911bc09cc"
 ---

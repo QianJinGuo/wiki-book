@@ -1,6 +1,6 @@
 ---
 title: Microsoft is quietly shopping for an OpenAI replacement
-type: source
+type: raw-article
 source: newsletter
 source_url: https://thenextweb.com/news/microsoft-startup-deals-life-after-openai
 review_value: 8

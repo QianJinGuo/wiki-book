@@ -11,7 +11,6 @@
 - **Karpathy 定义**：完全沉浸在 vibe 中，彻底忘记代码的存在。不是"AI 帮你写代码"，是"忘记代码的存在"。
 - **Schluntz 补充**：只要你还在逐行审查 AI 写的代码，你就没有在 vibe coding，你只是换了个更贵的 IDE。真正的 vibe coding 是：你跟 AI 说清楚要什么，它出结果，你只看结果对不对。代码长什么样你不关心。就像打车，你关心的是到没到目的地，不是司机怎么握方向盘。
 
-
 ## 深度分析
 
 Vibe Coding 本质上是一种**工程师主体性迁移**：从"代码执行者"转变为"结果验证者"。Karpathy 的定义揭示了一个深刻的隐喻——当 AI 的代码质量超越人类审读者时，坚持逐行审查反而成为系统瓶颈，如同坚持手写汇编的程序员被时代淘汰。
@@ -26,41 +25,6 @@ Schluntz 提出每 7 个月 AI 编程任务时长翻倍的增长曲线，意味�
 
 ## 实践启示
 
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
-
 1. **从一个叶子节点开始练习 Vibe Coding**：不要试图将整个项目交给 AI，先找一个不被其他模块依赖的末端功能模块，让 AI 实现，你只验证结果。关键是克服"必须审每一行"的心理惯性。
 
 2. **在每个任务开始前强制执行需求对齐**：让 AI 先探索项目背景、表达对任务的理解、共同制定计划，再给出完整上下文。这个 15-20 分钟的前置动作能指数级提升 AI 执行成功率。
@@ -73,10 +37,10 @@ graph TB
 
 ## 相关实体
 - [Anthropic Coding Agents Social Science Survey 2026](ch09/042-anthropic-coding-agent.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/451-vibe-coding-agentic-engineering.html)
-- [从Vibe Coding到Agentic Engineering重构后台开发全流程](../ch04/237-agentic.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/457-vibe-coding-agentic-engineering.html)
+- [从Vibe Coding到Agentic Engineering重构后台开发全流程](../ch04/648-agentic.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1004-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/erik-schluntz-vibe-coding-in-production.md)
 

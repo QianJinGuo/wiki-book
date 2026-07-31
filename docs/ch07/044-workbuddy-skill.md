@@ -10,56 +10,11 @@
 > **来源**: https://mp.weixin.qq.com/s/yH7-cbPDHNuzwuf9rxKcLA
 > **发布**: 叶小钗 (2026-07-22)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我给 WorkBuddy 加浏览器 Skill"))
-    Agent 浏览器能力的最后一公里问题
-    从能读网页到会上网的能力跃迁
-    Skill Forge 的深层意义 操作模式的知识固化
-    与 PC Agent 生态的关系
-```
-
 ## 摘要
 
 桌面 AI Agent（如 WorkBuddy、Codex 等）在浏览器操作方面存在天然短板：自带的浏览器工具无法处理登录验证、动态加载内容、验证码扫码、多页面并行等真实场景。BrowserAct 是一套专为 AI Agent 设计的浏览器自动化 CLI 工具，可以作为 Skill 安装到 WorkBuddy 等桌面智能体中，赋予 Agent 操作真实浏览器、复用本地登录态、绕过反爬检测的能力。其 Skill Forge 功能还能将浏览器操作流程固化为可复用的 Skill，让一次性实验变成永久性工具。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 - **核心痛点**：Agent 自带的浏览器工具只能获取静态 HTML，无法处理 JavaScript 动态渲染、登录验证、多页面交互等复杂浏览器操作
 - **BrowserAct 功能**：提供 50+ 标准化浏览器操作指令，支持三种浏览器模式（复用登录态、隐私模式、固定身份模式）

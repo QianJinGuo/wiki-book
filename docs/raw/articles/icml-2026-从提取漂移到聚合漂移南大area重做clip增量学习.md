@@ -3,7 +3,7 @@ title: "ICML 2026 | 从提取漂移到聚合漂移，南大AREA重做CLIP增量�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/TkoSd7Kg9eh_L3J5XNkkhg"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 72
 tags: [raw]
 sha256: "b0dc487907f618ab060ea50db9b1705f8353992ee610ac0b41ec4951a0d5a979"

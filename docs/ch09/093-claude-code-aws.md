@@ -4,55 +4,10 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/claude-code-open-source-model-enterprise-practice.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 接入自建开源模型 企业私有化与降本实践"))
-    企业级 AI 落地的双轮驱动架构
-    LiteLLM Proxy 作为企业级模型网管层的核心价值
-    任务分类驱动的动态路由实现机制
-    流式响应 Schema 对齐的技术挑战
-    采用渐进式私有化策略
-    基于特征匹配构建任务路由规则
-    重视流式响应兼容性适配
-    利用 SGLang SageMaker FTP 优化成本
-```
-
 ## 概述
 Claude Code 接入自建开源模型：企业私有化与降本实践 by awschina on 02 4月 2026 in Artificial Intelligence Permalink Share 摘要：企业使用 Claude Code 面临代码安全和成本压力双重挑战。本文介绍一套完整的解决方案：通过在 AWS SageMaker 上部署 Kimi/GLM 等开源模型，结合 LiteLLM Proxy实现智能路由，将支线任务分流到私有化模型处理。实测数据显示，单台 H200 部署成本约 $1000/天，相比等效 Claude API 调用成本降低约 70%，性价比提升 3.2倍。文章详细讲解架构设计、部署流程、动态路由策略及流式响应适配，提供可落地的企业级私有化方案 目录 01 一、问题背景 02 二、技术趋势观察 03 三、本文的解决方案 04 四、总结与展望 05 五、附录 一、问
 
 ## 核心技术
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 Claude Code、Amazon Bedrock、Kiro CLI
 
 ## 深度分析
@@ -104,11 +59,11 @@ LiteLLM Proxy 的审计日志 + CloudWatch 集成是基础，但企业还应关�
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [Claude Code 源码深度解析（13 核心机制）](../ch03/078-claude-code.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
+- [Claude Code 源码深度解析（13 核心机制）](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Claude Code Prompt 提示词体系源码解析](ch09/061-claude-code-prompt.html)
-- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/490-claude-code-skills-superpowers.html)
+- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/492-claude-code-skills-superpowers.html)
 
 ---
 

@@ -18,57 +18,9 @@
 | **反检测** | ❌ | ❌ | ❌ | ❌ | **✅ 18 项反检测全绿**（产品方自报，bot.sannysoft） |
 | **人机接力（验证码/2FA）** | ❌ | ❌ | ❌ | ❌ | **✅ Remote-assist 跨设备链接** |
 | **多身份隔离（多账号）** | ❌ | ❌ | ❌ | ❌ | **✅ 浏览器身份 × 静态代理绑定** |
-| **Skill Forge 流程打包** | ❌ | ❌ | ❌ | ❌ | ✅（注：与 [古法程序员 spec-as-code](../ch01/517-codex.html) 的 SKILL.md 模式重叠） |
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("五款浏览器自动化工具横向对比 browser-use"))
-    四层抽象
-    选型结论
-    决策树
-    技术栈选择的根本分歧
-    状态管理是隐性分水岭
-    依赖链复杂度影响 AI 集成可靠性
-    AI Coding 工作流首选 agent-browser
-    企业级 CICD 选 Playwright 仍是政治正确
-```
+| **Skill Forge 流程打包** | ❌ | ❌ | ❌ | ❌ | ✅（注：与 [古法程序员 spec-as-code](../ch01/520-codex.html) 的 SKILL.md 模式重叠） |
 
 ## 四层抽象
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
 
 - **chrome-devtools-mcp** → 暴露 CDP 原语，最底层
 - **Playwright** → 脚本化测试框架，人类写脚本

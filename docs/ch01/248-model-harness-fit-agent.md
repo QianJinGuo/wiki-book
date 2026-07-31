@@ -9,66 +9,12 @@
 > Author: Nicolas Bustamante (Cursor/前OpenAI)，编译自其博客
 > Score: value=7, confidence=7, product=49 ≥ 49 → PASS
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Model-Harness Fit Agent 脚手架适配模型"))
-    核心论点 Model-Harness-Fit
-    让人不舒服的榜单
-    为什么模型不是单独存在的
-    三种壳 三种完全不同的协议
-      Codex typed asynchronous protocol
-      Claude Code direct typed
-      GitHub Copilot CLI supervisor
-    工具表 模型的方言
-      Codex的工具差异化
-      Claude Code的工具
-      Copilot CLI的工具
-    Skill md文件格式一样 底下契约根本不一样
-    记忆层 最密集的碰撞面
-      oai-mem-citation 六个字符决定记忆生死
-    Copilot CLI的诚实做法 真正的路由
-```
-
 ## 核心论点：Model-Harness-Fit
 > "模型不是只针对API做post-training的，它是针对壳做的。"
 > "同一批权重跑在三个壳上，其实是三个不同的模型——权重byte-for-byte一样，本能却被post-training条件化了。"
 > — Nicolas Bustamante
 
 ## 让人不舒服的榜单
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 Terminal-Bench 2.0（2026年4月30日）前十名：
 | 排名 | Harness | 模型 | 分数 |
 |------|---------|------|------|
@@ -260,7 +206,7 @@ Rajasekaran 的案例极具说明性：为 Sonnet 4.5 精心设计的 context re
 - `Cursor Harness Model`
 
 ## 相关实体
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/298-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/030-ai-agent.html)
 - [Browser Use Runtime Harness](../ch05/009-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)

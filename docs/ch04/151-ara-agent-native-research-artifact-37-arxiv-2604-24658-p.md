@@ -6,22 +6,6 @@
 
 # ARA — Agent-Native Research Artifact
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ARA Agent-Native Research"))
-    论文与作者
-    37 作者的协作规模信号
-    Agent-native 的定义 从AI 辅助研究到AI 驱动研究
-    研究 artifact 的可复现性标准变化
-    从学术论文到工程实践的转移挑战
-    研究团队 评估哪些研究流程可以 agent-native 化
-    可复现性 记录 agent 的决策路径
-    学术-工程转化 提前设计工程化路径
-```
-
 ## 论文与作者
 
 **The Last Human-Written Paper: Agent-Native Research Artifacts** (arXiv: 2604.24658)
@@ -30,43 +14,6 @@ mindmap
 **作者团队 37 人**，含 MIT Alex Pentland、CMU Beidi Chen、Michigan Mosharaf Chowdhury、Stanford Chenglei Si（AI co-scientist 方向活跃）。一上 arXiv 就在 X 和小红书引发争论。
 
 ## 深度分析
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 ### 1. 37 作者的协作规模信号
 ARA（Agent-native Research Artifact）论文的 37 位作者规模反映了 AI agent 研究的跨团队协作特性——agent 研究需要 AI、HCI、安全、工程等多个领域的专业知识。这种大规模协作可能成为 AI agent 论文的常态。
@@ -103,9 +50,9 @@ ARA 类工作推动的是整个研究工具链的演进——从文献搜索到�
 ## 相关实体
 - [Kimi K2 6 Tidb Agent Database](../ch03/035-agent.html)
 - [Kimi K2 Tidb Agent Database Huangdongxu 20260513](../ch03/035-agent.html)
-- [Anthropic Multi Agent Research System](ch04/576-anthropic-multi-agent-research-system.html)
+- [Anthropic Multi Agent Research System](ch04/580-anthropic-multi-agent-research-system.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/018-ai-native.html)
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/003-agentrun.html)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/444-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ara-agent-native-research-artifact-37authors.md)
 

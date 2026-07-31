@@ -8,58 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-and-what-comes-next.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code and What Comes Next"))
-    能力跃迁的工程基础
-    上下文压缩突破 LLM 内存限制的关键
-    Skills按需加载的指令 工具
-    Subagents 的团队化模式
-```
-
 ## 摘要
 
 Ethan Mollick 用一个真实实验展示 Claude Code 的能力跃迁：给一句"开发一个能月入 $1000 的软件创业项目，你来做所有事"，Claude Code 自主工作 1 小时 14 分钟，生成了数百个代码文件、500 个 prompts、还部署了能收款的工作网站（已下线）。本文核心是揭示 Claude Code 背后**agentic harness 范式**的三个核心机制：**上下文压缩**（context compaction）、**Skills**（按需加载指令+工具）、**Subagents**（专项 AI 分包），以及把它们粘合起来的 **MCP** 协议。Karpathy 称"我从未感觉自己作为程序员这么落后"——本文是这一论断的实证。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **能力跃迁的两大支柱**：（1）最新 AI 自主工作时能自我修正（编程任务尤其明显）；（2）AI 被赋予"agentic harness"——工具与方法的组合。两大因素叠加让 big AI companies 的最新工具实现大跃迁。METR 数据显示 AI 能 50% 可靠完成的任务时长呈指数增长。
 - **上下文压缩（Compaction）机制**：当 Claude Code 上下文窗口填满时，它**主动停下**，做笔记记录当前状态，然后**清空上下文**，新 Claude 读笔记继续工作（"像 Memento 主角看纹身找回记忆"）。这是 Claude 能跑数小时的关键。
@@ -140,9 +93,9 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ### 与相邻观点的张力
 
-- 与 [苦味教训](../ch04/353-the-bitter-lesson-versus-the-garbage-can.html) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
+- 与 [苦味教训](../ch04/349-the-bitter-lesson-versus-the-garbage-can.html) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
 - 与 [CrewAI 迭代论](../ch04/398-your-first-ai-agent-should-do-one-thing-badly.html)的对照：Claude Code 体现了"小时级自治"，CrewAI 强调"周迭代"——节奏不同，原则相通（都是迭代式而非瀑布式）。
-- 与 [管理即超能力](ch01/499-management-as-ai-superpower.html) 的同源：Karpathy 编程工作"变成管理 AI agent"是 Mollick 商业观察在技术领域的镜像。
+- 与 [管理即超能力](ch01/497-management-as-ai-superpower.html) 的同源：Karpathy 编程工作"变成管理 AI agent"是 Mollick 商业观察在技术领域的镜像。
 
 ## 实践启示
 
@@ -155,23 +108,23 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/398-your-first-ai-agent-should-do-one-thing-badly.html)
-- [The Bitter Lesson Versus The Garbage Can](../ch04/353-the-bitter-lesson-versus-the-garbage-can.html)
-- [Management As Ai Superpower](ch01/499-management-as-ai-superpower.html)
+- [The Bitter Lesson Versus The Garbage Can](../ch04/349-the-bitter-lesson-versus-the-garbage-can.html)
+- [Management As Ai Superpower](ch01/497-management-as-ai-superpower.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Co Existence And The End Of Co Intelligence](ch01/639-co-existence-and-the-end-of-co-intelligence.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Co Existence And The End Of Co Intelligence](ch01/642-co-existence-and-the-end-of-co-intelligence.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Model Context Protocol](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)
 - [an opinionated guide to using ai right now](../ch09/098-an-opinionated-guide-to-using-ai-right-now.html)
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch01/976-claude.html)
-- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/742-9.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch01/1022-claude.html)
+- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/755-9.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

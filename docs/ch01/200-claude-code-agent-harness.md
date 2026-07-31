@@ -2,7 +2,7 @@
 
 ## Ch01.200 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
-> 📊 Level ⭐⭐ | 28.1KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md`
+> 📊 Level ⭐⭐ | 28.2KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md`
 
 # 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
@@ -12,62 +12,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("深入理解 Claude Code 源码中的 Agent"))
-    Agent Harness 作为围绕 LLM
-    上下文组装 缓存分层是性能的关键
-    CLAUDEmd 加载层级 配置文件就是知识层级
-    完整上下文包 用户消息只是冰山一角
-    构建 Agent Harness 的优先级
-    学习 Claude Code 的具体设计
-    Plan Mode 的设计原则
-    工具并发设计原则
-```
-
 ## 摘要
 
 本文基于 Claude Code 源码泄露事件，**逐行拆解一个请求从用户输入到 Agent 交付可工作的代码的完整生命周期**。核心论断是：**LLM 调用本身只是一行代码，真正让 Agent 可用的，是围绕这行代码精心设计的 Agent Harness**。整个 Agent 由 `query.ts` 中的 `query()` 异步生成器函数驱动，所有其他代码都为这个函数服务。文中详细剖析了上下文组装、API 调用、响应解析、权限检查、工具执行、结果反馈、上下文管理、终止恢复这 8 个核心步骤，以及 Plan Mode、Tasks 等高级特性。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **源码泄露事件**：Claude Code 因 npm 打包未排除 `.map` 映射文件，导致 1900+ TypeScript 文件、51 万行核心代码意外曝光；归档后数小时内收获 1100+ 星。这是迄今为止生产级 AI Agent 系统最完整的一次公开审视。
 - **核心循环 8 步**：用户输入 → 上下文组装 → 调用 Claude API → 解析响应 → 检查权限 → 执行工具 → 反馈结果 → 上下文检查（太大则压缩）→ 终止。**不断循环直到任务完成**。
@@ -119,7 +68,7 @@ CLAUDE.md 文件从根目录向下逐层加载：
 
 **@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
 
-这与 [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
+这与 [Claude Code Harness Deep Understanding](ch01/423-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
 
 ### 4. 完整上下文包：用户消息只是冰山一角
 
@@ -274,7 +223,7 @@ async function* queryLoop() {
 - **可暂停/继续**：中间可以随时暂停再继续
 - **State 对象传递**：每轮决策影响下轮行为
 
-这与 [Claude Code Harness Deep Dive](../ch05/073-claude-code-harness.html) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
+这与 [Claude Code Harness Deep Dive](../ch05/074-claude-code-harness.html) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
 
 ### 12. 工具调用的"上下文修改函数"
 
@@ -352,9 +301,9 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 
 ## 相关实体
 
-- [两万字详解 Claude Code 源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code Harness 深度解析](../ch05/073-claude-code-harness.html)
-- [Claude Code Harness 深度理解](ch01/422-claude-code-harness-deep-understanding.html)
+- [两万字详解 Claude Code 源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code Harness 深度解析](../ch05/074-claude-code-harness.html)
+- [Claude Code Harness 深度理解](ch01/423-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/035-agent.html)
 - [Harness Engineering Core Patterns](../ch05/120-harness-engineering.html)
@@ -362,10 +311,10 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [Factory Mission Multi-Agent 系统](../ch03/035-agent.html)
 - [Claude Managed Agents 企业自托管](../ch04/710-claude-managed-agents.html)
 - [OpenClaw 多 Agent 团队实践](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
-- [OpenClaw 完全指南](../ch11/235-openclaw.html)
-- [OpenClaw 多智能体团队搭建经验](../ch11/235-openclaw.html)
+- [OpenClaw 完全指南](../ch11/237-openclaw.html)
+- [OpenClaw 多智能体团队搭建经验](../ch11/237-openclaw.html)
 - [Headroom Context Compression](../ch03/035-agent.html)
-- [AI Agent Harness 构建](ch01/973-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/988-ai-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

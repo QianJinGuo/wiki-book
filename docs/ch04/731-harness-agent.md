@@ -8,17 +8,6 @@
 
 Harness 范式将 Agent 从单次对话提升为可持续运行的工程系统：上下文管理、工具编排、循环控制、安全边界、人机协作构成五大支柱。是 Agent 工程化的核心方法论。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 范式 Agent 的工程基座"))
-    五大支柱的层次关系
-    从单次对话到持续运行系统的范式转换
-    五大支柱的工程实现权衡
-```
-
 ## 深度分析
 
 ### 五大支柱的层次关系
@@ -35,37 +24,6 @@ Harness 范式的五大支柱存在结构性层次：上下文管理是底层基
 
 ## 实践启示
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
-
 1. **从上下文管理开始**：五大支柱中上下文管理是底层基础，优先解决"Agent 能看到什么"再谈"Agent 能做什么"。
 2. **状态外化优先于模型升级**：将状态从上下文窗口外化到持久化存储，比升级更强模型对系统可靠性的提升更大。
 3. **每层都做显式权衡**：在正文管理、工具编排等每层记录显式的设计决策和权衡理由，避免隐形假设导致后期重构。
@@ -74,7 +32,7 @@ graph TB
 
 - [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/009-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team](ch04/201-langgraph.html)
+- [逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team](ch04/202-langgraph.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/012-agent-ralph-loop-harness.html)
 

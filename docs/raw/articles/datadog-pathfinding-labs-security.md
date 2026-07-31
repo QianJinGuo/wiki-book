@@ -1,7 +1,7 @@
 ---
 
 title: "Pathfinding Labs: Deploy, test, and learn from 100+ intentional security bad code"
-type: raw
+type: raw-article
 tags: [datadog, security-testing, devsecops]
 source: newsletter
 source_url: https://securitylabs.datadoghq.com/articles/introducing-pathfinding-labs

@@ -2,7 +2,7 @@
 title: "腾讯混元AI Infra如何优化Hy3 Preview 一次大模型推理性能提升的 腾讯技术工程"
 created: 2026-06-26
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 763d0f0919d9ba1644d6ee5c2ca75b37d1824ccdd2aad6e0a781bbbe725d07ff
 ---

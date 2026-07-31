@@ -3,7 +3,7 @@ title: "AI Infra 全景图：Agent Framework、调度、编排、沙箱、记忆
 source_url: "https://mp.weixin.qq.com/s/dmlwqGylzG0eQVUlcZocUQ"
 created: 2026-06-30
 updated: 2026-07-02
-type: source
+type: raw-article
 tags: [ai-infra, agent-framework, production, architecture, infrastructure, llm-serving, agent-orchestration]
 source: wechat
 source_account: ThinkingAgent

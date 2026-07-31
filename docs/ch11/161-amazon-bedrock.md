@@ -8,56 +8,7 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Bedrock 构建货运物流双语命名实体识别系统"))
-    知识蒸馏的技术实现
-    双语 NER 的技术挑战与解决方案
-    项目时间线与团队配置
-    生产部署架构
-```
-
 ## 摘要
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 IBS Software 使用 Amazon Bedrock 的托管知识蒸馏能力，将 Amazon Nova Pro（教师模型）的知识蒸馏到 Nova Lite（学生模型），构建了面向货运物流的中英双语命名实体识别（NER）系统。蒸馏后的 Nova Lite 模型在 23 种实体类型上达到 95.085% 的 F1-Score，同时将运营成本降低 14 倍。此前团队尝试基于 PyTorch 和 TextBrewer 的开源蒸馏方案均因配置复杂度和基础设施不足而失败，最终 Amazon Bedrock 的托管蒸馏能力成为关键突破口。
 

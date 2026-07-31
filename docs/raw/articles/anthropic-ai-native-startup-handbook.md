@@ -4,7 +4,7 @@ author: 你说的完全正确
 source_url: https://mp.weixin.qq.com/s/PSnGB3ryAg_VlBkOtnhofw
 publish_date: 2026-05-18
 ingested: 2026-05-18
-type: article
+type: raw-article
 tags: [anthropic, startup, ai-native, handbook, claude-code, entrepreneurship]
 sha256: 826817e0196d9e95
 ---

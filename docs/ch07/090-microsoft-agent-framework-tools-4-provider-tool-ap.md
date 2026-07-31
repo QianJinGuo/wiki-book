@@ -6,25 +6,6 @@
 
 # Microsoft Agent Framework Tools 总览
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Microsoft Agent Framework Tools"))
-    类工具 按谁执行 谁托管划分
-      Function Tools 应用代码
-      Hosted Tools Provider 托管
-      MCP Tools Model Context Protocol
-    Provider 能力矩阵 Python 精简版
-    工程含义
-    Tool Approval 框架级统一闸门
-    Agent 作为 Tool 组合式多智能体
-    与系列其他文章衔接
-    选型检查清单 架构落地用
-    核心金句
-```
-
 ## 核心定位
 
 > "**工具不是'插件列表'，而是 Agent 对外的能力契约**"
@@ -36,47 +17,16 @@ mindmap
 
 ## 相关实体
 - [Microsoft Agent Framework Structured Output](../ch03/035-agent.html)
-- [Microsoft Agent Framework Python Zizhi](../ch04/617-python.html)
+- [Microsoft Agent Framework Python Zizhi](../ch04/623-python.html)
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](../ch03/035-agent.html)
 - [Open Claw Tool Bus Subagent Architecture](../ch03/035-agent.html)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix.md)
 
 ## 4 类工具（按"谁执行、谁托管"划分）
 
 ### 1. Function Tools（应用代码）
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **开发者用 `@tool` / `FunctionTool` 暴露的本地函数**，由框架的 function-invoking chat client 在**应用进程内调度**。
 

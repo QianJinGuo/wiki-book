@@ -6,7 +6,7 @@ url: https://www.testingcatalog.com/meta-to-release-muse-spark-in-voice-mode-and
 title: "Meta announced Muse Spark in Voice Mode and Meta Glasses"
 sha256: 3a34bb6ae6536dca085e87466f6e900d3d301ccdca2f23acbcea3e40e9554560
 date: 2026-05-13
-type: raw
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: neutral

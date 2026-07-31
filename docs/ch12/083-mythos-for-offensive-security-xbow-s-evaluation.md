@@ -4,44 +4,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/mythos-for-offensive-security-xbows-evaluation.md`
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 **Mythos Preview 的核心定位**：Anthropic 委托 XBOW 对其新模型进行独立安全评估，这是继 Opus 4.7 和 GPT 5.5 之后 XBOW 第三次系统性评估前沿模型。Mythos Preview 被定位为"重大能力飞跃"，尤其在源代码漏洞发现领域。
 **评测方法论亮点**：XBOW 组建了 10 人跨领域专家团队，采用"冻结漏洞版本 + 自动化 agent 对抗"的标准基准测试框架。与以往不同，本次额外考察了威胁建模判断力、源代码 vs  live-site 交互能力差异、以及原生应用漏洞发现等新维度。值得注意的是，评测区分了"裸模型 API"和"Claude Code 内嵌"两种使用形态，因为编排层、工具链和实时访问会实质性影响结果。
 **漏洞发现的核心数据**：相比 Opus 4.6，Mythos Preview 的漏报率下降 42%，提供源代码时进一步下降至 55%。token-for-token 精度上，其定位漏洞的效率达到"前所未有"的水平。这验证了一个反复出现的主题：**Mythos 擅长写代码，但更擅长读代码**。
@@ -59,9 +22,9 @@ graph TB
 ## 相关实体
 - [Mythos_Offensive_Security_Xbow_Evaluatio](ch12/030-mythos.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/441-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 - [Offensive Security Blog](ch12/006-offensive-security-blog.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
 ---
 

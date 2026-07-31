@@ -7,7 +7,7 @@ publish_date: 2026-07-05
 created: 2026-07-05
 ingested: 2026-07-05
 tags: [llm, rlvr, grpo, dapo, popo, off-policy, reinforcement-learning, training, efficiency, reasoning, tsinghua, wechat]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.9KB | `entities/claude-code-source-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 源码拆解 从启动到多 Agent 扩展层"))
-    八大模块
-    核心架构原则
-    关键设计对比
-    相关维度的深度分析
-    为什么复杂度必须安放在正确的位置
-    三条链路的分层价值
-    REPL 不是视图组件
-    子 Agent 先是任务对象 才是智能体
-```
-
 ## 八大模块
 1. **入口三段式**：分流→进程初始化→会话准备，进程/交互状态分离
 2. **REPL 控制台**：不是消息展示器，而是汇总能力面+归并事件流的运行时控制面
@@ -31,41 +15,6 @@ mindmap
 8. **总架构**：三条主干链路（控制链/执行链/任务链）+扩展层
 
 ## 核心架构原则
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - **复杂度分层**：边界→启动层，连续运行→Query Loop，行动协议→Tool Runtime，风险治理→Permission，长时执行→Task Runtime，平台增长→扩展层
 - **三条主干链路**：控制链（定边界+推理）、执行链（Tool→Permission→sandbox→副作用）、任务链（后台/子Agent/远程统一生命周期）
 - **外部可以热闹，内部必须收敛**
@@ -82,44 +31,44 @@ graph TB
 
 ## 相关维度的深度分析
 - **[Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)**（飞樰）侧重 Prompt 模块化/Harness 安全/多 Agent 体系
-- **[Claude Code Agent Engineering](../ch03/070-claude-code-agent.html)**（SooKool）侧重 StreamingToolExecutor/主循环/压缩/小模型/Hook
+- **[Claude Code Agent Engineering](../ch03/069-claude-code-agent.html)**（SooKool）侧重 StreamingToolExecutor/主循环/压缩/小模型/Hook
 - **[Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)**（800行轻量架构）与 Claude Code 同体系但更精简
-- **[Agent Skill Writing](../ch04/269-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
+- **[Agent Skill Writing](../ch04/271-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
 - **[Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)** Hermes 的 Self-Evolving 与 Claude Code 架构的关系
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/061-claude-code-prompt.html)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
-- [Claude Code 架构解析](../ch03/078-claude-code.html)
-- [Claude Code 源码深度解析（13 核心机制）](../ch03/078-claude-code.html)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
+- [Claude Code 架构解析](../ch03/077-claude-code.html)
+- [Claude Code 源码深度解析（13 核心机制）](../ch03/077-claude-code.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/094-ai.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/095-ai.html)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/096-hermes-agent.html)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/078-claude-code.html)
-- [Claude Code 架构深度解析](../ch03/078-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/422-claude-code-harness-deep-understanding.html)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/077-claude-code.html)
+- [Claude Code 架构深度解析](../ch03/077-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/423-claude-code-harness-deep-understanding.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 - [200人销售团队企业级 Agent 知识库问答系统架构设计](https://github.com/QianJinGuo/wiki/blob/main/queries/sales-team-agent-knowledge-base-architecture.md)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1022-claude.html)
 
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/078-claude-code.html)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [claude-code-7-layer-memory-architecture](../ch03/078-claude-code.html)
+- [claude-code-7-layer-memory-architecture](../ch03/077-claude-code.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)

@@ -4,27 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/codex-goal-six-hour-run.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex Goal Six Hour Run"))
-    核心机制
-      持久化目标状态
-      运行时续跑 Runtime Continuation
-      目标生命周期工具
-    实测案例 6 小时 44 分钟连续任务
-      任务背景
-      关键观察
-    与 Claude Code Ralph Wiggum Loop 的对比
-    持久化目标状态改变了 AI 运行的可用性边界
-    94 Cache Hit Rate 证明上下文积累有长期价值
-    从 supervisor 到 architect的范式转变将质量责任前移
-    自动续跑消除人工恢复的上下文断层
-    适用边界
-```
-
 ## 概述
 
 **`/goal`** 是 OpenAI Codex CLI v0.128.0（2026-04-30）中引入的持久化目标工作流特性，使 AI Agent 能够在数小时的暂停后无缝恢复执行，而无需人工重新输入提示词。
@@ -32,41 +11,6 @@ mindmap
 这一特性的核心价值在于将"长时间连续任务"从"需要人工盯守的会话"转变为"预先定义好成功合约的自主运行体"——任务启动后，工程师的职责从实时监控转向提前设计（目标定义、验收标准、反模式边界）。
 
 ## 核心机制
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 持久化目标状态
 
@@ -185,9 +129,9 @@ Old 范式下，工程师是 supervisor——监控 AI 运行，随时准备干�
 ## 相关实体
 
 - [Codex /goal：长任务Agent的目标运行时](../ch04/106-codex-goal-agent.html) — 若飞源码级拆解，目标状态机 + completion audit 协议 + budget_limit 收束模板
-- [Claude Code / OpenClaw Memory 对比](../ch03/078-claude-code.html) — 记忆架构与 Codex 的对比参考
-- [Anthropic Claude Code 大型代码库最佳实践](../ch01/598-anthropic-claude-code.html) — Claude Code 在大规模代码库中的实践
-- [Claude Code Session 管理 1M Context](../ch03/078-claude-code.html) — 长上下文会话管理
+- [Claude Code / OpenClaw Memory 对比](../ch03/077-claude-code.html) — 记忆架构与 Codex 的对比参考
+- [Anthropic Claude Code 大型代码库最佳实践](../ch01/286-anthropic-claude-code.html) — Claude Code 在大规模代码库中的实践
+- [Claude Code Session 管理 1M Context](../ch03/077-claude-code.html) — 长上下文会话管理
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 相关概念

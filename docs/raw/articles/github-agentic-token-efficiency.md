@@ -3,7 +3,7 @@ title: "github agentic token efficiency"
 source_url: https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/
 ingested: 2026-05-09
 sha256: 9ed5320a7d51
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [github, copilot, pricing, llm]

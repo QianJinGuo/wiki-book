@@ -8,22 +8,6 @@
 
 > **Source**: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Evaluating Netflix Show Synopses"))
-    Introduction
-    The Making of a Good Synopsis
-    评分理由
-    专用判官架构优于单提示词过载
-    人类-AI 校准循环是将主观专家知识迁移到模型的关键
-    推理时计算扩展是评估质量与可读性的杜杆
-    Tiered Rationales 重构了准确率-可读性之争
-    在构建 LLM 评估系统前先建立 Golden Set
-```
-
 ## 核心内容
 
 ---
@@ -84,50 +68,12 @@ Higher take fraction indicates more choosing, while lower abandonment suggests a
 
 ## 评分理由
 
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
-
 Solid industry application of LLM-as-a-Judge methodology with meaningful technical depth: per-criteria dedicated judges, zero-shot CoT prompting, Automatic Prompt Optimization, inference-time scaling (longer rationales, consensus scoring), and tiered rationale generation. Includes practical details on human-AI calibration (8 rounds, 80% agreement), golden set construction (~600 synopses with binary labels), and correlation of LLM scores with business metrics (take fraction, abandonment rate). Draws on relevant academic references (CoT, APO). The article is clearly written and well-structured, authored by named researchers/practitioners. However, the content is truncated mid-section (cuts off during 'tiered rationales' discussion), quantitative results in the excerpt are limited, no full comparison to baselines, and it is an industry blog rather than peer-reviewed research. Despite these issues, the methodology, calibration process, and integration of LLM evaluation with implicit feedback signals make it a useful case study for a technical AI/ML wiki.
 
 ## 相关实体
-- [Spotify Llm Evals Funnel Not Fork](ch01/1274-llm.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
-- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/1274-llm.html)
+- [Spotify Llm Evals Funnel Not Fork](ch01/637-llm.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/671-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/637-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 

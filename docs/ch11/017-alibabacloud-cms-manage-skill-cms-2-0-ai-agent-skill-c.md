@@ -10,60 +10,7 @@
 
 阿里云云原生团队 2026-06-07 发布 **`alibabacloud-cms-manage` Skill**——基于 Claude Code 的 AI Agent Skill 化方案，**将 6 步 CLI 接入流程封装为开箱即用的 Skill**，让用户用**一句自然语言**即可让 AI Agent 自动编排 CLI 命令完成可观测接入。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("alibabacloud-cms-manage Skill 阿里云"))
-    CMS 20 aliyun cms2 CLI 概览
-    步 CLI 接入流程
-    alibabacloud-cms-manage Skill 工作机制
-      Skill 链接
-      工作机制
-      安全机制 两阶段确认协议
-    K8s 自动接入演示 LangChain 应用的
-      场景设定
-      ack-onepilot 机制
-      完整交互过程
-    与现有实体差异化
-    与第 1 来源的呼应
-```
-
 ## 核心定位
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 **问题**：CMS 2.0 接入配置涉及一系列参数和步骤（账号 ID、workspace、region、LicenseKey、Endpoint、serviceName、serviceType、attributes 等），6 步操作多个参数传递，对**非高频使用 CLI 的运维人员门槛较高**。
 
@@ -224,25 +171,25 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 
 ## 与现有实体差异化
 
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.html) — **LoongSuite Pilot** 是 Agent 观测的**数据采集应用层**（OTel SemConv + 三类 Agent 形态 + 四大观测能力）。**alibabacloud-cms-manage Skill 是 Agent 接入层**（如何让 AI Agent 自己完成可观测接入）。**LoongSuite = 数据从 Agent 流出的标准化**；**alibabacloud-cms-manage = AI Agent 自动化完成接入编排**。两者**互补**：LoongSuite 让你能看到 Agent 行为，cms-manage Skill 让 Agent 自己接入观测。
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/046-coding-agent.html) — **LoongSuite Pilot** 是 Agent 观测的**数据采集应用层**（OTel SemConv + 三类 Agent 形态 + 四大观测能力）。**alibabacloud-cms-manage Skill 是 Agent 接入层**（如何让 AI Agent 自己完成可观测接入）。**LoongSuite = 数据从 Agent 流出的标准化**；**alibabacloud-cms-manage = AI Agent 自动化完成接入编排**。两者**互补**：LoongSuite 让你能看到 Agent 行为，cms-manage Skill 让 Agent 自己接入观测。
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md) — Hermes 装上显微镜的 ARMS 观测实践（**Hermes-specific**）。本实体是**通用 CMS 2.0 接入**（不绑定具体 Agent 框架），适用更广。
-- [Aliyun Agentrun](../ch04/003-agentrun.html) / [Aliyun Agentrun 5Min Quickstart](../ch04/003-agentrun.html) / [Aliyun Agentrun 2Line Integration](../ch04/003-agentrun.html) — **AgentRun** 是阿里云 AI Agent 运行时（运行 Agent 的平台）。**alibabacloud-cms-manage Skill 是观测接入工具**（为已部署的 AI Agent 接入 CMS 监控）。两者**关系**：Agent 跑在 AgentRun 上 → 通过 cms-manage Skill 接入 CMS 监控 → 通过 LoongSuite 上报 Agent 行为数据。
-- [Skill Development Guide Aliyun 2026](../ch04/271-skill.html) — Aliyun 团队发布的 **Skill 开发保姆级教程**（教你如何写 Skill）。**alibabacloud-cms-manage Skill 是 Skill 教程落地的一个具体生产 Skill 案例**——是 Skill 教程的"现身说法"。
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/072-skills.html) — 阿里云 **Skills Registry 公测**（企业私有 Skill 管理中心）。**alibabacloud-cms-manage** 是部署在 Skills Registry（`skills.aliyun.com`）上的官方 Skill，是 Registry 生态的具体产品实例。
+- [Aliyun Agentrun](../ch04/444-agentrun.html) / [Aliyun Agentrun 5Min Quickstart](../ch04/444-agentrun.html) / [Aliyun Agentrun 2Line Integration](../ch04/444-agentrun.html) — **AgentRun** 是阿里云 AI Agent 运行时（运行 Agent 的平台）。**alibabacloud-cms-manage Skill 是观测接入工具**（为已部署的 AI Agent 接入 CMS 监控）。两者**关系**：Agent 跑在 AgentRun 上 → 通过 cms-manage Skill 接入 CMS 监控 → 通过 LoongSuite 上报 Agent 行为数据。
+- [Skill Development Guide Aliyun 2026](../ch04/273-skill.html) — Aliyun 团队发布的 **Skill 开发保姆级教程**（教你如何写 Skill）。**alibabacloud-cms-manage Skill 是 Skill 教程落地的一个具体生产 Skill 案例**——是 Skill 教程的"现身说法"。
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/071-skills.html) — 阿里云 **Skills Registry 公测**（企业私有 Skill 管理中心）。**alibabacloud-cms-manage** 是部署在 Skills Registry（`skills.aliyun.com`）上的官方 Skill，是 Registry 生态的具体产品实例。
 阿里云 AI 工具链定位对照：本实体（CMS 观测接入）与阿里云 **MSE AI 网关** 90% 成本节约（任务调度 + Sandbox）属于阿里云 AI 工具链不同环节。
 - [Alibaba Eventhouse Enterprise Agent Context](../ch03/035-agent.html) — 阿里 EventHouse 企业 Agent 上下文。本实体是 CMS 接入（**事件**层）—— EventHouse 处理**状态上下文**，CMS 处理**可观测性**。
 阿里云 **API 网关（Gateway API 标准）** 是**网络层**接入；本实体是**观测层**接入，定位不同。
 - [Aliyun Cio Ai Rd Efficiency](../ch03/011-cio.html) — 阿里 CIO 视角的 AI 研发效率。本实体是具体工具（**Skill 化观测接入**），是该战略的工具落地。
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/035-agent.html) — Agent 演化的四个阶段六维度（阿里云视角）。本实体的 Skill + 自然语言接入模式属于该框架中"**降低接入门槛**"维度的具体实现。
-- [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/271-skill.html) — VibeCoder 的 **CLI vs MCP vs CLI+Skill** 架构决策指南。本实体是**CLI+Skill 模式**的具体生产案例（CMS CLI 6 步流程 → Skill 化），是该架构决策的真实落地示例。
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](../ch04/003-agentrun.html) / [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/035-agent.html) — 阿里云 AgentRun 生态。本实体与之是**同一厂商不同产品线**（AgentRun vs CMS Skill）—— 都是阿里云 AI 工具链。
+- [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/273-skill.html) — VibeCoder 的 **CLI vs MCP vs CLI+Skill** 架构决策指南。本实体是**CLI+Skill 模式**的具体生产案例（CMS CLI 6 步流程 → Skill 化），是该架构决策的真实落地示例。
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](../ch04/444-agentrun.html) / [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/035-agent.html) — 阿里云 AgentRun 生态。本实体与之是**同一厂商不同产品线**（AgentRun vs CMS Skill）—— 都是阿里云 AI 工具链。
 
 ## 相关主题
 
 —
-- Agent Skill 生态 — [Agent Skills Comprehensive Survey](../ch04/397-agent-skills.html)
+- Agent Skill 生态 — [Agent Skills Comprehensive Survey](../ch04/401-agent-skills.html)
 - 可观测性 — [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
-- OTel / APM 接入 — [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/047-coding-agent.html)
+- OTel / APM 接入 — [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/046-coding-agent.html)
 - K8s 自动注入 — [Higress Cncf Sandbox Ingress Nginx Replacement](https://github.com/QianJinGuo/wiki/blob/main/entities/higress-cncf-sandbox-ingress-nginx-replacement.md)
 
 ## 深度分析
@@ -326,7 +273,7 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 - **阿里云 CLI 安装指南**：https://help.aliyun.com/zh/cli/install-update-alibaba-cloud-cli
 ## 相关实体
 
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/913-20.html)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/926-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 ---

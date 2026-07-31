@@ -2,7 +2,7 @@
 title: "时间序列预测增强方法总结：频域、分解、patch"
 source_url: "https://mp.weixin.qq.com/s/Iu_5--O_MjSSux0Hs_nOzA"
 ingested: 2026-04-30
-type: raw
+type: raw-article
 tags: [time-series, data-augmentation, forecasting, frequency-domain, wavelet, patch-based, deephub]
 review_value: 7
 review_confidence: 7

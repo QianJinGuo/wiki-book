@@ -3,7 +3,7 @@ title: "百度提出 Unlimited OCR：用 Reference Sliding Window Attention 实�
 source_url: "https://mp.weixin.qq.com/s/0iBP0zGJlHFhyiObsdXDVQ"
 created: 2026-07-01
 updated: 2026-07-01
-type: article
+type: raw-article
 tags: [wechat, ocr, baidu, attention, deepseek-ocr]
 ingested: 2026-07-01
 sha256: ff528d65002b34fd1cd83b1564fa142ca0eaac534d33a21f11733ace7936c045

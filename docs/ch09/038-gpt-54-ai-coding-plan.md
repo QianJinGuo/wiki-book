@@ -9,69 +9,11 @@
 > [!summary]
 > 本文对比了阿里百炼、字节火山方舟、腾讯云、百度千帆、MiniMax、月之暗面 Kimi、智谱 GLM 七家国产 AI 云服务平台的 Coding Plan 定价与计量方式。作者发现四大云厂商定价高度一致，MiniMax 以无周限额突出重围，而智谱 GLM-5 在高峰时段有 3 倍扣量陷阱。最终建议先薅首月羊毛体验，再根据实际模型表现选择长期方案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("gpt-54-烧完额度后我把七家国产-ai-公司-coding-pl"))
-    背景 GPT-54 额度烧完后转向国产方案
-    七家平台横向对比
-      四大云厂商 定价策略惊人一致
-      独立模型厂商 定价逻辑各异
-    关键差异 计量方式才是重点
-      MiniMax 无周限额的连续开发优势
-      智谱 GLM 高岭 3 倍扣量陷阱
-    平台差异 阉割版模型的隐患
-    选购策略建议
-      短期 薅首月羊毛
-      长期 根据模型偏好选择
-      作者实践路径
-```
-
 ## 背景：GPT-5.4 额度烧完后转向国产方案
 
 作者使用 `OpenClaw` 运行 GPT-5.4 执行任务，效果显著但 token 消耗极快，Plus 账号周额度一两天即耗尽。面对高昂的续费成本，开始系统研究七家国产 AI 平台的 Coding Plan 方案 。
 
 ## 七家平台横向对比
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 阿里百炼、字节火山方舟、腾讯云、百度千帆四家平台的 Coding Plan 呈现出高度标准化的定价结构 。
 
@@ -167,9 +109,9 @@ graph TB
 **保持平台选择的灵活性，不要锁定单一渠道。** 文章最后提到「厂商政策变化比天气还快」是务实的市场判断。国产 AI 云服务市场仍处于高速变动期，模型能力、计费方式、限额政策都可能在几个月内发生大幅调整。建议不要做超长期的刚性购买决策，而是保持2-3个平台同时可用，以便在某一平台政策恶化时快速切换 。
 
 ## 相关实体
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html)
-- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch01/976-claude.html)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/235-openclaw.html)
+- [Pi Openclaw Coding Harness](../ch11/237-openclaw.html)
+- [2 小时0 行手写代码我用 Claude 做了一个生产级 Vscode 插件](../ch01/1022-claude.html)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/237-openclaw.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch03/096-hermes-agent.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/050-openspec.html)
 

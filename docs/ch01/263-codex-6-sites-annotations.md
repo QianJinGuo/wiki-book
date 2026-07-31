@@ -11,26 +11,6 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-role-plugins-sites-annotations.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex 三件套 6 职位插件 Sites Annotations"))
-    个职位插件 62 应用 110 技能
-      后续将推出
-    Sites Codex 生成可交互网站 直接托管
-    Annotations 精准批注 不动其余
-    范式判断
-      Codex 从开发工具 工作台
-      职位插件 Skill 20 具象化
-      会写代码 会组织工具
-    启示
-    相关对照
-    职位插件是 Agent 商业化的结构性突破
-    非开发者增速超开发者 3 倍 标志产品进入主流采用期
-```
-
 ## 关键数据
 - **每周 500 万+ 人在用 Codex**
 - **非开发者用户已占 20%**，增速超开发者 **3 倍**
@@ -38,41 +18,6 @@ mindmap
 - OpenAI 内部：切换到 Codex 后 Claude Code 使用大幅下降
 
 ## 6 个职位插件（62 应用 + 110 技能）
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | # | 插件 | 面向 | 接入应用 |
 |---|---|---|---|
@@ -137,12 +82,12 @@ graph TB
 
 ## 相关对照
 - [Codex Goal Agent Runtime](../ch04/106-codex-goal-agent.html)
-- [Codex Goal 实现拆解](../ch09/046-codex-goal.html)
+- [Codex Goal 实现拆解](../ch09/047-codex-goal.html)
 - [Codex Computer Use](../ch09/143-codex-can-now-control-other-desktop-devices-via-computer-use.html)
-- [Codex 自主赚钱](ch01/517-codex.html)
-- [Claude Code vs Codex 上下文架构](../ch03/078-claude-code.html)
+- [Codex 自主赚钱](ch01/520-codex.html)
+- [Claude Code vs Codex 上下文架构](../ch03/077-claude-code.html)
 - [Meta Skill](../ch07/025-meta-skill.html)（Skill 2.0 抽象）
-- [扣子 3.0 协作系统](ch01/694-3-0.html)（同类协作产品）
+- [扣子 3.0 协作系统](ch01/708-3-0.html)（同类协作产品）
 - [Embabel](../ch07/021-embabel.html)（可解释+类型系统集成）
 
 ## 深度分析

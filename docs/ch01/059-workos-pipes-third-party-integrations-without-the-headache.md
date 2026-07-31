@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 7.6KB | `entities/workos-pipes-third-party-integrations.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("WorkOS Pipes Third-party"))
-    市场定位 API Economy 的钻井平台思维
-    技术架构 三层抽象
-    关键洞察 授权与认证的解耦
-    共享凭证的双重用途
-    何时考虑使用 Pipes
-    集成架构建议
-    共享凭证的使用策略
-    安全注意事项
-```
-
 ## 核心要点
 - OAuth 集成基础设施（ token 管理、刷新、存储）是重复劳动，WorkOS Pipes 将其抽象为单 API 调用
 - Pipes 核心价值：用户授权与登录认证解耦，SSO 用户（如 Okta 登录）仍可独立授权 Google Calendar 等数据服务
@@ -28,35 +12,6 @@ mindmap
 - 与 WorkOS 既有 OAuth Provider 功能的区别：OAuth Provider 依赖用户登录方式（Google 登录 → Google 数据），Pipes 完全解耦
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 ### 市场定位：API Economy 的"钻井平台"思维
 WorkOS 将自己定位为 SaaS 产品的"公用设施层"——类似 Stripe 之于支付、Plaid 之于银行账户。Pipes 的核心逻辑是：第三方服务集成是所有 SaaS 的标配，但没有任何差异化价值，应该被外包而不是自建。
 这一判断在 2024-2025 年的 AI 应用浪潮中得到强化：AI 助手需要聚合多个数据源（Calendar、Gmail、GitHub、CRM），集成的数量和复杂度远超传统 SaaS。自建方案的成本从"几天"变成"几周"，且维护负担随提供商 API 变更持续叠加。
@@ -138,7 +93,7 @@ WorkOS Pipes 的差异化在于：面向开发者而非企业 IT、极简 API �
 ## 相关实体
 - [Pipes Workos Docs](ch01/129-pipes-workos-docs.html)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/094-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/095-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workos-pipes-third-party-integrations.md)

@@ -2,68 +2,12 @@
 
 ## Ch05.022 AI Friendly 架构设计：后端系统面向无人值守开发时代的标准与路径
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 > 📊 Level ⭐⭐ | 17.6KB | `entities/ai-friendly-architecture-design.md`
 
 # AI Friendly架构设计
 
 > [!summary] 核心洞察
 > AI Friendly架构不是对传统工程的全盘否定，而是为应对AI"不确定性"的精准升级——通过**三范式转变**（确定性→概率性、结构化→语义化、静态→动态）赋予传统工程驾驭不确定性的能力。并非所有AI工程都需要此架构，仅当业务涉及深层次AI应用（记忆管理、工具管理、上下文工程、Multi-Agent调度等）时才需要演进。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Friendly 架构设计"))
-    三范式框架
-      确定性 概率性
-      结构化 语义化
-      静态 动态
-    架构大图与核心能力层
-      基础依赖层
-      AI Friendly独有三层
-      质量和稳定性
-    实战案例 淘天秒杀业务
-      AI审核系统
-      CogentAI答疑系统
-    Context Engineering实践
-      审核场景的上下文工程
-      通用上下文工程能力
-    AI Friendly API设计
-    架构升级的边界
-    评测与可观测体系
-    补充
-```
 
 ## 三范式框架
 
@@ -250,8 +194,8 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 - [Agent Harness Context Management Working Set](ch05/058-agent-harness.html)（相关：上下文装载层是 Harness 第一层）
 - [Agent Harness Architecture](ch05/058-agent-harness.html)（相关：Harness 7 层是 agent-harness-architecture 的具体化）
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)（相关：Harness Engineering 综述与本文 Harness 7 层互补）
-- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](../ch01/1016-spec.html)（相关：Spec as AIOS 是 Spec 工程化的另一视角）
-- [Gaode Sdd Harness Team Ai Coding Paradigm Ibjfu](ch05/111-ai-coding.html)（相关：高德 Harness/SDD 体系演进同主题）
+- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](../ch01/1034-spec.html)（相关：Spec as AIOS 是 Spec 工程化的另一视角）
+- [Gaode Sdd Harness Team Ai Coding Paradigm Ibjfu](ch05/112-ai-coding.html)（相关：高德 Harness/SDD 体系演进同主题）
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)（相关：评测体系一脉相承）
 - [AI Friendly 架构设计（淘天久游）](ch05/022-ai-friendly.html)（同主题另一视角）
 

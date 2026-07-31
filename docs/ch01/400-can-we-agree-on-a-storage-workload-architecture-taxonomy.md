@@ -2,23 +2,11 @@
 
 ## Ch01.400 Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly
 
-> 📊 Level ⭐⭐ | 10.2KB | `entities/storage-workload-architecture-taxonomy-vanlightly.md`
+> 📊 Level ⭐⭐ | 10.3KB | `entities/storage-workload-architecture-taxonomy-vanlightly.md`
 
 # Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly
 
 Jack Van Lightly 提出的存储/工作负载架构分类法，系统化梳理数据库和存储系统的架构模式。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Can We Agree on a StorageWorkload"))
-    从 OLTPOLAP 到 HTAPLAP 的分类演化
-    Freshness-by-Composition vs
-    共享分层 Shared Tiering 作为 LTAP 的核心模式
-    数据模型差异的被忽视问题
-```
 
 ## 核心内容
 
@@ -79,41 +67,6 @@ Of course LTAP could potentially move towards the hypothetical category _Shared-
 One thing that the marketing material of unified OLTP-OLAP system commonly glosses over are the different data models used in each, such as Third Normal Form (3NF) common in OLTP and Kimball (star and snowflake 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 
 ### 从 OLTP/OLAP 到 HTAP/LAP 的分类演化
 

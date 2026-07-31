@@ -5,7 +5,7 @@ updated: 2026-05-08
 source_url: https://developer.nvidia.com/blog/building-for-the-rising-complexity-of-agentic-systems-with-extreme-co-design/
 ingested: 2026-05-08
 sha256: bfdfd585317771bd1ed3228a95512315ea272736c53d6b4e59683151f52f004f
-type: raw
+type: raw-article
 tags: [nvidia, agent-architecture, inference, harness-engineering, token-economics]
 review_value: 8
 review_confidence: 7

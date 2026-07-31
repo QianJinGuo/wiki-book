@@ -3,7 +3,7 @@ title: "维纳智能登上Nature通讯：AI不只会回答问题，开始生成�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/X-ZS8SVKSnkPBI1KeRn4eA"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "2a5978a69445196322d681edf563770c47128b3a4cb904cf42d3494370d16a1e"

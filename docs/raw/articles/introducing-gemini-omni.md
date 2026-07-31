@@ -1,6 +1,6 @@
 ---
 title: Introducing Gemini Omni
-type: article
+type: raw-article
 source: rss
 source_url: https://deepmind.google/blog/introducing-gemini-omni/
 tags: [deepmind]

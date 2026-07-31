@@ -14,7 +14,7 @@ tags:
   - skills
   - gepa
   - wechat
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

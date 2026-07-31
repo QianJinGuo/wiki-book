@@ -6,61 +6,7 @@
 
 # From silos to service topology: why Netflix built a real-time architecture
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From silos to service topology"))
-    The Puzzle with a Thousand Pieces
-    The Three Questions Every
-    Why This Matters More Than Ever
-    Building on What We Learned
-    多层图融合架构的核心洞察
-    中介层解析的三阶段工程价值
-    实时拓扑的活地图属性对可观测性范式的冲击
-    可观测性数据源的互补性三角
-```
-
 ## 核心内容
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 -2615bd06b42e---4
 ingested: 2026-05-29
@@ -335,7 +281,7 @@ Service Topology 同时服务于人类工程师（UI 探索）和自动化系统
 → [C4 架构图](assets/c4/netflix-real-time-service-topology-c4.html)
 
 ## 相关实体
-- [Serverless Langgraph Multi Agent Aws](ch11/238-multi-agent-aws.html)
+- [Serverless Langgraph Multi Agent Aws](ch11/240-multi-agent-aws.html)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/306-amazon-nova.html)
 - [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)

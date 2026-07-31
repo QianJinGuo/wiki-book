@@ -12,33 +12,6 @@
 >
 > **架构判断**: 正确问题不是 "Claude Code or Hermes", 而是 "你的问题的**生命周期单元**是什么?"
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code vs Hermes Session 工程师"))
-    维对比表 核心
-    Claude Code 工程师 不是员工
-      关键特性
-      Routines 触发方式扩展 不改根本生命周期
-      强项场景 希望系统有明确边界
-    Hermes Runtime 不是助手
-      关键架构
-      关键组件 源码视角
-      goal 命令 哲学差异最显著功能
-    容易踩的坑 错配思维
-      错配 1 用 Claude Code 思维用 Hermes
-      错配 2 用 Hermes 思维用 Claude Code
-      Operating Contract 模板 选型前
-    土问题 选型决策 可立即应用
-    Harness 系列 Persistent Runtime 系列
-      Harness 系列 单 repo 单 session 5 子系统
-      Persistent Runtime 系列 跨 session 跨
-    结尾 先问生命周期 再问工具
-    与其他对比实体的关系
-```
-
 ## 6 维对比表 (核心)
 
 | 维度 | Claude Code | Hermes |
@@ -57,41 +30,6 @@ mindmap
 ---
 
 ## Claude Code: 工程师, 不是员工
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 关键特性
 
@@ -282,9 +220,9 @@ IDE 是工程现场, 但不是人的全部工作现场. **Hermes 真正想解决
 | 实体 | 角度 | 互补性 |
 |------|------|------|
 | [Harness 7 Layers OpenClaw/Hermes/Claude Code](../ch05/120-harness-engineering.html) | 3 工具 × 7 层 harness 视角 | **互补** (本实体: 2 工具 × 6 维生命周期) |
-| [Hermes 9 Module 架构](ch01/742-9.html) | Hermes 源码级 | 互补 (本实体: 跨工具对比) |
-| [Claude Code Agentic Harness](../ch03/070-claude-code-agent.html) | CC 内部 harness 模式 | 互补 (本实体: CC vs Hermes 外部对比) |
-| [Hermes Goal Runtime 架构](../ch04/381-hermes-agent-goal.html) | Goal-in-loop 实现 | **直接相关** (本实体 Goal 概念的实现) |
+| [Hermes 9 Module 架构](ch01/755-9.html) | Hermes 源码级 | 互补 (本实体: 跨工具对比) |
+| [Claude Code Agentic Harness](../ch03/069-claude-code-agent.html) | CC 内部 harness 模式 | 互补 (本实体: CC vs Hermes 外部对比) |
+| [Hermes Goal Runtime 架构](../ch04/385-hermes-agent-goal.html) | Goal-in-loop 实现 | **直接相关** (本实体 Goal 概念的实现) |
 
 ## 深度分析
 

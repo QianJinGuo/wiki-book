@@ -2,7 +2,7 @@
 title: "Anthropic联创定下deadline 2028年AI实现自我进化 没有人类 机器之心"
 created: 2026-05-05
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 1be7adcd1af1ce1f9bf311a965ac77d9c6336fc0df933543e19857ab5fdb2b22
 ---

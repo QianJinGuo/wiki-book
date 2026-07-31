@@ -128,22 +128,6 @@ Session Search  |  原始对话历史（完整思考轨迹）  |  通过 session
   * • 步骤 6：磁盘更新，但本次会话 system prompt 不变 
   * • 步骤 7：下周用户再问同样的问题。启动时 system prompt 已经包含新记忆和修补后的技能。用户不需要重复"只要 5 条"、不需要纠正技能错误。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLM agent脚手架如何具备自进化能力 以hermes"))
-    自进化机制的本质 显式知识沉淀而非权重更新
-    三层记忆架构的协同逻辑
-    Skill 工具化的工程动机
-    Memory 写入的 Prompt 注入防护
-    为 Agent 设计工具时采用高频专用 低频通用原则
-    所有持久化写入都要考虑 Prompt Injection 防护
-    Prefix Cache 是长会话成本优化的关键
-    Skill 的生命周期需要被主动管理
-```
-
 ## 深度分析
 ### 自进化机制的本质：显式知识沉淀而非权重更新
 Hermes Agent 的 self-improve 并非传统意义上的模型微调或强化学习（尽管工具层面提供了 `rl_start_training` 等 RL 工具），而是一套**基于工具的显式知识沉淀与召回机制**。其核心思想是：将模型在完成任务过程中的经验转化为可持久化存储的结构化知识（Skill、Memory），在下一次相似任务启动时自动加载，使模型的"起点"持续抬升。
@@ -170,39 +154,6 @@ Memory 机制中嵌入的 `_MEMORY_THREAT_PATTERNS` 正则扫描是一个容易�
 Session Search 采用了"索引+生成"双层设计：FTS5 负责快速检索和相关性排序，LLM（低成本模型如 Gemini Flash）负责将原始对话转化为"问题→尝试→解法"的结构化摘要。这一设计的巧妙之处在于**不在检索层做生成，在生成层做聚合**——避免返回冗长的原始对话让模型上下文爆炸，也避免了简单返回匹配片段导致的缺失连贯性问题。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 1. 为 Agent 设计工具时采用"高频专用、低频通用"原则
 如果一个操作在 Agent 生命周期内会被频繁调用（如 Skill 管理、Memory 写入），不要用通用工具（如 Shell 执行文件系统命令）替代。专用工具能显著降低模型调用难度，减少构造错误命令的概率，同时方便在工具层加入权限控制、参数校验、副作用监控等机制。
 
@@ -224,10 +175,10 @@ Skill 不是一次性创建的静态资产，而是需要持续维护的演化�
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](ch01/358-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/397-agent-skills.html)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/078-claude-code.html)
-- [AI Skill 测评指标体系](ch01/452-ai-skill.html)
+- [Codeindex · 让大模型更好地理解你的代码](ch01/359-codeindex.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/401-agent-skills.html)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/077-claude-code.html)
+- [AI Skill 测评指标体系](ch01/453-ai-skill.html)
 
 ---
 

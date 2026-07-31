@@ -4,24 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/ai-skill-四层验证体系.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("为什么不能让 AI 自己评审自己 AI Skill 四层验证体系完整解析"))
-    问题 为什么不能让模型自己评审自己
-    四层验证体系总览
-    Layer 0 执行模式分发
-    Layer 1 Executor
-      文件系统隔离规则 P0 问题
-      transcript 双分离格式 P2 问题
-    toolcalls Step 5 saveExpenseDoc
-    agentnotes Step 5 草稿已保存
-    Layer 2a 字段精确校验 Ground Truth
-    Layer 2b 独立 Grader Agent
-```
-
 ## 问题：为什么不能让模型自己评审自己
 
 让模型自己评审自己的输出，会产生「自判卷偏差」——这是 AI Skill 四层验证体系要解决的核心问题。
@@ -35,39 +17,6 @@ mindmap
 这个问题本质上是 **执行者与评审者未分离** 导致的确认偏误（confirmation bias）。参见 [对抗式验证](https://github.com/QianJinGuo/wiki/blob/main/entities/adversarial-verification.md) 中关于 Worker-Verifier 对抗关系的论述——Verifier 若与 Worker 共享上下文，就会丧失独立校验能力。
 
 ## 四层验证体系总览
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ```
 Layer 0: 执行模式分发

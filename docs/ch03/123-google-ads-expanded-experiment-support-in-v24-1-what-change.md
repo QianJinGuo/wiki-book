@@ -4,65 +4,12 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/almcorp-google-ads-expanded-experiment-v24-1.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Google Ads Expanded Experiment"))
-    自动化与测量之间的结构性矛盾
-    三种实验类型的分层设计
-    报告层的统计化是重大进步
-    API-UI 对齐的战略意图
-    建立实验优先级矩阵
-    定义明确的成功标准再开始实验
-    重视异步操作的错误处理
-    连接外部数据做下游验证
-```
-
 ## 核心要点
 - Google Ads v24.1 扩展了 AI Max、视频、Demand Gen 和 Performance Max 的实验支持
 - 涵盖 AI Max 策略更新和实验配置变化
 - 对广告技术从业者有参考价值
 
 ## 深度分析
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 ### 1. 自动化与测量之间的结构性矛盾
 v24.1 的核心意义在于：Google 并没有减少自动化，而是**在增加自动化的同时提供更正式的验证路径**。这是一个重要的信号——Google 意识到"黑盒自动化"会失去广告主的信任，而"可测量的自动化"才能维持广告主的投入。
 AI Max、Demand Gen、Performance Max 这些 campaign 类型本身就是高度自动化的产物。传统 A/B 测试方法（复制 campaign、分割流量、对比结果）在这些新类型上几乎失效，因为平台在多个层面同时做决策，变量无法隔离。v24.1 的实验支持扩展本质上是在说：我们承认你们的测量需求，我们来帮你测量。
@@ -121,7 +68,7 @@ Google Ads 实验数据是平台级别的，但业务影响是全链路的。成
 - 建立实验库，记录所有历史实验和结论
 ## 相关实体
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/731-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/744-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](../ch01/057-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
 - [Building Blocks For Foundation Model Training And Inference On Aws](../ch11/121-building-blocks-for-foundation-model-training-and-inference.html)

@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.1KB | `entities/不用再学ai了生成结果包稳的agent来了.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("不用再学AI了 生成结果包稳的Agent来了"))
-    背景 AI 能力跃迁与使用门槛的悖论
-    核心产品主张 低提示词交付可用成果
-      实测场景一 行业研究 PPT 生成
-      实测场景二 视频生成
-    技术架构 SOP 驱动的 AI 技工体系
-      个性化智能引擎
-      胖鹅引擎 SOP 生成与优化
-    范式转换 意图驱动的第三代 AI 交互
-```
-
 ## 背景：AI 能力跃迁与使用门槛的悖论
 
 过去一年，AI 行业的主旋律是——模型参数越来越大，多模态越来越强，上下文窗口越来越长，能处理的任务也从写段文字、改段代码，扩展到做 PPT、剪视频、查资料、搭 Agent、调工具链。
@@ -29,37 +13,6 @@ mindmap
 这也解释了一个看似矛盾的现象：AI 热潮已经持续很久，但大量用户仍然停留在简单问答上，在工作上没有形成稳定使用习惯。不是没有需求，恰恰是门槛挡在了需求前面。
 
 ## 核心产品主张：低提示词交付可用成果
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 胖鹅 AI 打出的旗号很直接——**低提示词**（Low-Prompt）：不要求用户懂 ，不用配置  和 Skill，不用学 AI，就能产出和精通 AI 的人一样的产出结果。
 
@@ -138,7 +91,7 @@ SOP 概念源自企业管理：成熟公司都有 SOP，因为让员工自由发
 
 ## 相关实体
 
-- [NVIDIA Agentic Systems](ch04/237-agentic.html) — 英伟达在 Agent 系统层面的超大规模协同设计实践
+- [NVIDIA Agentic Systems](ch04/648-agentic.html) — 英伟达在 Agent 系统层面的超大规模协同设计实践
 - [Kimi K2 Agent 数据库](../ch03/035-agent.html) — 国产 Agent 在数据库场景的应用
 - [Claude Managed Agents](ch04/710-claude-managed-agents.html) — Claude 的托管 Agent 架构与 MCP 集成
 

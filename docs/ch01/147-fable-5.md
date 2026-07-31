@@ -18,7 +18,6 @@ Thariq 在文中表示：  Fable 5 的能力上限，取决于你能发现多少
 
 疆域，则是工作真正发生的地方：代码库，现实世界，以及它真实的约束条件。
 
-
 ## 核心观点
 
 > 本文通过article、llm、anthropic视角，分析了的AI/ML技术动态。
@@ -50,41 +49,6 @@ Thariq 在文中表示：  Fable 5 的能力上限，取决于你能发现多少
 01
 
 ##  四种「未知」
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 你的未知到底有哪些呢？当我带着一个问题来找 Claude 时，我倾向于从四个维度来拆解：
 

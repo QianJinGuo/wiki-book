@@ -4,7 +4,7 @@ source_url: https://www.anthropic.com/engineering/multi-agent-research-system
 tags: [anthropic, claude]
 ingested: 2026-05-01
 sha256: e3f2fc5fb0c31b286a0a7df7c0d1916372fe8352766ce5d9fe30da5b31329c55
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

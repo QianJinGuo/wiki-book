@@ -6,75 +6,11 @@
 
 # QQ音乐 Harness Engineering 实践（大仓多服务场景）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("QQ音乐 Harness Engineering 实践 大仓多服务场景"))
-    核心命题与核心公式
-      核心命题
-      核心公式 代码产出 AI 能力 上下文质量
-      上下文五类缺口
-    Harness 的语义 挽具的隐喻
-      Harness Engineering 四大标准组件
-    QQ音乐 Harness Engineering 框架
-      业务复杂度 50 微服务 三仓协同
-      四类约束必须进入框架
-      L5 治理层 vs L3L4 执行层 vs L1L2 体验层
-    五阶段 四门禁
-      错误代价递增曲线 门禁锚点
-    三层知识体系 三仓联动
-      三层知识架构
-      service-matrixdependenciesyaml 单一真相源
-      三仓联动 同一条 TAPD 单的三个分支
-    Skill Agent Command 三件套
-      三种能力原子的分工
-      按阶段组织的 Agent 体系 24 个
-      个 Slash Command
-    Self-Refinement 让 AI 从错误中沉淀经验
-      闭环流程
-      产物示例
-      Meta 案例 写文章本身就是 Self-Refinement
-    与 Claude Code Cursor Cline 的关系
-```
-
 ## 概述
 
 QQ音乐商业化团队（黄欣欣，2026-05-21）落地在 Monorepo Microservices 场景的开源工程框架。核心命题：当 AI 让"写代码"变快，真正的瓶颈变成"看不完、想不清、管不住"。本文**提出"代码产出 = AI 能力 × 上下文质量"核心公式**（乘法 vs 加法），把 Harness Engineering 从概念推进到 50+ 微服务 / 业务仓 + IDL 契约仓 + Harness 规范仓三仓协同的可执行工程体系。
 
 ## 核心命题与核心公式
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 1. 核心命题
 
@@ -493,7 +429,7 @@ Harness Engineering 对效率的定义更接近**软件工程的总成本**：�
 
 ## 相关实体
 - [Harness Engineering](ch05/120-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/120-harness-engineering.html)
 - [Harness Engineering Alibaba Java Case Study](ch05/120-harness-engineering.html)
 - [Tencent Cdn Lego Harness](ch05/009-harness.html)

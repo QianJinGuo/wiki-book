@@ -1,7 +1,7 @@
 ---
 
 title: "From Kubernetes Dev Setup to Production: What Actually Changes"
-type: raw
+type: raw-article
 tags: [newsletter]
 source: newsletter
 source_url: https://georg-schwarz.com/blog/from-kubernetes-demo-to-production-platform/

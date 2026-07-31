@@ -5,7 +5,7 @@ source: wechat
 author: Frank / Q马Q马
 published: 2026-06-02
 ingested: 2026-06-02
-type: raw-archive
+type: raw-article
 tags: [wechat, agent-memory, six-schools, wiki-compile, raw-data, quantumtransf-debate, hermes-agent, mnemon, letta, mem0, mcp]
 sha256: 0593729efe13d0d3e3a4ef313d5942dc045d05548cbe3d8f0e21a35903e20aa9
 ---

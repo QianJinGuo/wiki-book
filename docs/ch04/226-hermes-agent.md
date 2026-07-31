@@ -6,64 +6,11 @@
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-architecture.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 记忆系统"))
-    三层架构
-    冻结快照模式 核心设计
-    双轨记忆
-    单 Provider 约束
-    上下文围栏 Context Fencing
-    安全扫描
-    原子写入
-    八大 Provider
-```
-
 ## 概述
 Nous Research 在 2025 年末开源的 Hermes Agent，其记忆系统是当前最具工程深度的 Agent 记忆方案之一。核心特点：三层架构、八种可插拔后端、冻结快照保护 prefix cache、上下文围栏防注入。
 仓库：github.com/NousResearch/hermes-agent
 
 ## 三层架构
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 | 层级 | 名称 | 实现 | 容量 | 检索方式 |
 |------|------|------|------|----------|
 | Layer 1 | Built-in Memory | MEMORY.md + USER.md | 2200+1375 字符 | 会话启动时注入 |

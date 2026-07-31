@@ -4,64 +4,11 @@
 
 > 📊 Level ⭐⭐ | 15.9KB | `entities/harness-engineering-90-percent-ai-coding-rate.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 实战 AI Coding"))
-    背景 为什么需要 Harness Engineering
-      AI Coding 的现状与挑战
-      企业级 Java 项目的特殊性
-      Agent 的四种典型失败模式 Anthropic
-    三次范式跃迁
-    四根支柱 OpenAI Anthropic 经验总结
-      支柱一 上下文架构 Context Architecture
-      支柱二 Agent 专业化 Agent Specialization
-      支柱三 持久化记忆 Persistent Memory
-    子页面
-    相关页面
-    从「能力」到「可信赖产出」的系统性鸿沟
-    四种典型失败模式的系统性根因
-    三次范式跃迁的核心驱动力
-```
-
 ## 核心结论
 在企业级 Java 应用（10 万+行代码，技术栈：Java 1.8 / Spring Boot / LiteFlow / HSF / Diamond / Tair）中，通过构建完整 Harness 体系，AI 代码率从 **24.86% 提升至 90.54%**，个人维度从 14.24% 跃升至 87.85%。构建耗时约一周。
 > **高 AI 代码率本身不是目标，在质量可控前提下的高 AI 代码率才有意义。** 这 90% 的 AI 代码经过完整的需求分析、编码评审、单元测试和 CI 验证流程，每一行都通过了 Harness 体系的质量门禁。
 
 ## 背景：为什么需要 Harness Engineering
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### AI Coding 的现状与挑战
 - Anthropic《2026 Agentic Coding Trends Report》：开发者约 60% 时间使用 AI 辅助，但能"完全委托"给 Agent 的任务仅 0-20%
 - **核心矛盾**：模型原始能力足够强，但从"能力"到"可信赖的工程产出"之间存在系统性鸿沟
@@ -122,7 +69,7 @@ graph TB
 ## 相关页面
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 六层结构与核心方程
 - [Cursor Harness 复盘](../ch01/265-cursor-harness-model-production-floor.html) — 模型决定上限，Harness 决定生产下限
-- [字节跳动 TRAE Harness Engineering 指南](../ch01/658-trae-harness-engineering.html) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
+- [字节跳动 TRAE Harness Engineering 指南](../ch01/670-trae-harness-engineering.html) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
 
 ## 相关实体
 
@@ -131,7 +78,7 @@ graph TB
 - [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](ch05/120-harness-engineering.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/009-harness.html)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/271-skill.html)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/273-skill.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析

@@ -8,44 +8,7 @@
 
 > **Background**：本文基于 Vercel 发布的 DeepSecBench 基准测试。该基准评估了多个 AI 模型（Claude、GPT、Gemini 等）在自动化网络安全漏洞发现上的表现，并探讨了模型能力与安全扫描自动化之间的关系。
 
-
 ## 核心洞察
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 DeepSecBench 是一个评估 AI 模型在代码安全漏洞发现中性能的标准化基准。它通过构建受控的漏洞环境，测试模型识别、分析和利用安全漏洞的能力。与传统的安全扫描不同，DeepSecBench 关注的是模型在端到端漏洞发现流程中的表现，而非单纯的特征匹配。
 
@@ -63,8 +26,8 @@ DeepSecBench 使用受控的沙箱环境，在其中植入已知漏洞，然后�
 
 - [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [CyberSecQwen-4B](ch12/102-cybersecqwen-4b.html)
-- [拆解 OpenClaw 架构（七）：安全漏洞](../ch11/235-openclaw.html)
-- [Agentic Penetration Testing Legal Questions](../ch04/237-agentic.html)
+- [拆解 OpenClaw 架构（七）：安全漏洞](../ch11/237-openclaw.html)
+- [Agentic Penetration Testing Legal Questions](../ch04/648-agentic.html)
 - [Multimodal Evaluators：MLLM-as-Judge](../ch01/305-mllm-as-judge.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepsecbench-evaluating-model-performance-cybersecurity-vulnerabilities-vercel-2026.md)

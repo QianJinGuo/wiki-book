@@ -1,6 +1,6 @@
 ---
 title: Fed Data Shows Cash Use Holding Steady
-type: source
+type: raw-article
 tags: [payments, federal-reserve, cash, financial-inclusion]
 source: newsletter
 source_url: https://www.americanbanker.com/payments/news/fed-data-shows-cash-use-holding-steady

@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/ai-production-development-workflow-openspec-superpowers-gstack.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI 生产开发工作流 OpenSpec 规范驱动"))
-    三大痛点
-    三件套架构
-      OpenSpec 规范驱动开发 需求层
-      Superpowers 强制流程约束 AI 执行 执行层
-      gstack 执行工具封装 验证层
-    数据流与分工边界
-    相关页面
-    补充 1 核心 thesis 的不同措辞
-    补充 2 Vibe Coding 的具体反例
-    补充 3 5 个高频面试题标准答法
-    补充 4 什么时候该用决策规则
-```
-
 ## 三大痛点
 
 | 痛点 | 描述 |
@@ -32,37 +13,6 @@ mindmap
 | **缺乏真实环境验证** | 页面渲染、接口连通、部署后表现，AI 自己验证不了 |
 
 ## 三件套架构
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### OpenSpec — 规范驱动开发（需求层）
 
@@ -152,8 +102,8 @@ gstack → /browse 截图验证 → /qa 端到端测试 → /ship → /land-and-
 
 ## 相关页面
 
-- [三合一工具深度对比](ch05/111-ai-coding.html)
-- [Superpowers 实战](../ch01/490-claude-code-skills-superpowers.html)
+- [三合一工具深度对比](ch05/112-ai-coding.html)
+- [Superpowers 实战](../ch01/492-claude-code-skills-superpowers.html)
 
 ## 深度分析
 

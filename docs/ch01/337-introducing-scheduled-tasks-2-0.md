@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/introducing-scheduled-tasks-2-0.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing Scheduled Tasks 20"))
-    从时间驱动到上下文驱动的范式转变
-    在同一任务内继续执行
-    为 Web App 添加调度行为
-    增强可追踪性 侧边栏 日历视图和运行卡片
-    灵活的执行选项与高级设置
-    使用示例
-    技术架构要点
-```
-
 ## 核心要点
 
 - Scheduled Tasks 2.0 将周期性工作（任务、Project、Web App）的自动化升级为"上下文驱动"模式，而非简单的时钟驱动重复执行。
@@ -30,37 +15,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-scheduled-tasks-2-0.md)
 
 ## 从"时间驱动"到"上下文驱动"的范式转变
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 Scheduled Tasks 2.0 解决的核心问题是上一代调度系统的根本局限：基于时钟的调度（cron-style）假设每一次执行都是独立事件，任务的上下文在每次触发时都需要重建。
 

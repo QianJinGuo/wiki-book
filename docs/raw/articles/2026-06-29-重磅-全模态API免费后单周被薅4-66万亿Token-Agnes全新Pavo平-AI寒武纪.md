@@ -2,7 +2,7 @@
 title: "重磅 全模态API免费后单周被薅4 66万亿Token Agnes全新Pavo平 AI寒武纪"
 created: 2026-06-29
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: be498e23a3d10a6ef5e3d59f5a3973ac14df8eadad6731397543d792f53ec063
 ---

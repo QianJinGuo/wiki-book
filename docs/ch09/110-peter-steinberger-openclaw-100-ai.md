@@ -4,56 +4,10 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/peter-steinberger-openclaw-100-ai-agents.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Peter Steinberger OpenClaw"))
-    AI代理承担的工作
-    CodexBar
-    思考
-```
-
 ## 概述
 OpenClaw之父Peter Steinberger（@steipete）用3人团队+100个Codex AI agent运行软件开发流水线，30天花费$130万（OpenAI报销）。展示了token作为新生产资料的可能性。
 
 ## 关键数据
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - **团队规模**：3人
 - **AI agent数量**：约100个Codex实例
 - **30天成本**：$1,305,088.81（约900万人民币）
@@ -105,10 +59,10 @@ Peter Steinberger的100个AI Agent实验揭示了当前AI编程工具在工程�
 
 ## 相关实体
 - [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](ch09/078-claw-chain-cyera-research-unveil-four-chainable-vulnerabili.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1036-openclaw-agent.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1049-openclaw-agent.html)
 - [Autoresearch Multi Agent Software](../ch03/035-agent.html)
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1248-0.html)
+- [Pi Openclaw Coding Harness](../ch11/237-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 

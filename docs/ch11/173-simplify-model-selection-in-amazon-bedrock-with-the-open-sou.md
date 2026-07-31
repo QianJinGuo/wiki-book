@@ -2,63 +2,13 @@
 
 ## Ch11.173 Simplify model selection in Amazon Bedrock with the open source Model Router
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md`
+> 📊 Level ⭐⭐ | 7.2KB | `entities/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md`
 
 # Simplify model selection in Amazon Bedrock with the open source Model Router
 
 > 原文标题: Simplify model selection in Amazon Bedrock with the open source Model Profiler
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Simplify model selection in"))
-    模型选型的碎片化困境
-    数据管线架构的技术亮点
-    从工具到工作流 模型选型的结构化方法
-    对企业 AI 基础设施决策的影响
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Amazon Bedrock Model Profiler 是一个开源工具，帮助团队在 120+ 基础模型（FMs）中做出数据驱动的选型决策。该工具整合来自 7 个数据源（5 个 AWS API + 2 个公共 URL）的模型元数据，提供可搜索的模型浏览器、多模型对比、区域可用性矩阵和收藏夹功能。全自动无服务器数据流水线每日自动刷新，8–12 分钟完成全流程，缓存命中率达 97%。
 
@@ -147,6 +97,10 @@ AWS 选择将 Model Profiler 以 MIT-0 许可证开源，反映了其平台竞�
 - 无服务器数据管线架构
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

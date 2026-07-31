@@ -8,55 +8,7 @@
 
 阿里开源的通用 sandbox 平台，解决云端 Agent 安全执行代码的问题。提供 SDK、CLI、MCP、统一生命周期 API，以及 Docker / Kubernetes 两套 runtime。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenSandbox 阿里开源的云端 Agent 安全沙箱 凭据"))
-    定位 执行面 不是完整 Agent 产品
-    凭据设计 核心亮点
-    云端 Agent 接入架构
-    适用场景与前置条件
-```
-
 ## 定位：执行面，不是完整 Agent 产品
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 OpenSandbox 负责执行面：创建隔离环境、执行命令、处理文件、控制出站请求。调度、会话、记忆、任务语义等上层能力需要外部系统自己接。
 
@@ -104,7 +56,7 @@ OpenSandbox 负责执行面：创建隔离环境、执行命令、处理文件�
 ## 相关实体
 
 - [Claude Managed Agents](../ch04/710-claude-managed-agents.html) — 类似的 sandbox 架构
-- [LangChain Sandbox Architecture](../ch05/094-ai.html) — 另一种 sandbox 设计
+- [LangChain Sandbox Architecture](../ch05/095-ai.html) — 另一种 sandbox 设计
 - [Microsoft mxc Containers](../ch03/035-agent.html) — Microsoft 的 sandbox 方案
 
 ---

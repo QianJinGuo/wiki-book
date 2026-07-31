@@ -5,7 +5,7 @@ author: "数据派THU（清华数据科学）"
 published: 2026-06-30
 ingested: 2026-06-30
 language: zh
-type: raw
+type: raw-article
 sha256: "1ec070856448cc160124d957f2e94a93ffbead3b34fb10449fdd80063a4b5629"
 ---
 

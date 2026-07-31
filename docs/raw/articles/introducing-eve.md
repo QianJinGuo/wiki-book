@@ -3,7 +3,7 @@ title: "Introducing eve"
 source_url: "https://vercel.com/blog/introducing-eve"
 ingested: "2026-06-19"
 sha256: "36ba7ba3700b50c1"
-type: article
+type: raw-article
 tags: [article]
 ---
 

@@ -6,61 +6,7 @@
 
 # What You Need to Know About Lambda MicroVMs
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("What You Need to Know About"))
-    解决的核心问题
-    与传统 Lambda 的根本区别
-    Shell 访问与 Docker 支持
-    与 AgentCore Runtime 的对比
-    Agent Sandbox 的基础设施级解决方案
-    对 Agent Runtime 生态的影响
-    Firecracker 的战略价值
-    定价模型的隐含信号
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 AWS 于 2026 年 6 月推出 Lambda MicroVMs，解决了"如何安全运行 AI 生成或用户提供的代码"这一紧迫问题。它结合了 VM 级隔离（Firecracker）、快速启动（SnapStart 快照）和有状态会话（最长 8 小时），为 coding assistants、AI notebooks、agent sandboxes 等场景提供了理想的计算原语。与 AgentCore Runtime 的区别在于抽象层级：AgentCore 是托管 agent 平台，Lambda MicroVMs 是底层 VM 原语。
 

@@ -3,7 +3,7 @@ title: "小扎「芒果」生图只输GPT Image 2，没人教它改稿，它自�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/irCe_daqpc1KGqUZJ9LBHw"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "2ba66370cf328f9318683cc88c128dd006c2973e5fda1ee7c7bf2c5f71fd1084"

@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/RCEGqAvfJxbzaPJIJDOKwA
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, huggingface, ai-agent, glossary, terminology, model, agent, scaffolding, harness, context-engineering, policy, tool, skill, sub-agent, environment, rollout, reward, trainer]
 ---
 

@@ -12,7 +12,7 @@ tags:
 - article
 title: Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker
   JumpStart
-type: source
+type: raw-article
 updated: '2026-06-07'
 ---
 

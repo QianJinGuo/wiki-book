@@ -4,7 +4,7 @@ author: "心镜沉思"
 source: "bitkevin"
 source_url: "https://mp.weixin.qq.com/s/7zVSmiL8gmLfhbKVRhe5iQ"
 created: 2026-05-23
-type: raw
+type: raw-article
 tags: [article]
 sha256: 6afd6ceade5d29bfbffd27fd1298e66760b0f45142e127b9b318a0083697ebdf
 ---

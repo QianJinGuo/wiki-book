@@ -8,25 +8,6 @@
 
 Andrej Karpathy——现 Anthropic 预训练团队核心研究员，在一场面向 Agent 开发者的现场分享中，甩出一句让全场安静的暴论：**当前 AI 领域最大的错误，就是人们急着逼 Agent 干活，却根本没先把底层的大模型搞明白。**
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy最新开喷 一句话让全场Agent开发者安静了"))
-    真金白银烧出来的教训 World of Bits 的失败
-    Karpathy 的三步忠告
-      第一步 别再逼 Agent 什么都能干 先把底层模型做对
-      第二步 Demo 很容易 把它做成产品要花十年
-      第三步 Agent 不是产品 基础能力才是产品
-    向大脑偷师 神经科学对 Agent 设计的启示
-    真正的暴论 最前沿不在 OpenAI 在你手里
-    从失败到洞见 World of Bits 对 2026 年
-    神经科学的类比迁移 Agent 架构的下一个灵感来源
-    Demo 容易 产品十年技术成熟度曲线的 Agent 版本
-    独立开发者的不对称优势 一个被低估的结构性事实
-```
-
 ## 真金白银烧出来的教训：World of Bits 的失败
 
 Karpathy 用自己 2016 年在 OpenAI 的经历作为例证。当时他在 OpenAI 主导一个叫 **World of Bits** 的项目，目标与 2026 年的 Agent 创业公司如出一辙：让 Agent 学会用键盘鼠标操作电脑，去订机票、点外卖。结果呢？没做成。
@@ -40,43 +21,6 @@ Karpathy 说得很直白：当时他和 Tianlin Shi、Jim Fan 几个人一起干
 有意思的是，当年和 Karpathy 一起写论文的 Jim Fan，如今已是 NVIDIA 的高级研究科学家，搞出了 Voyager、MineDojo 等一系列项目，在 NeurIPS 拿了杰出论文奖。一个 2016 年的"失败项目"里的年轻实习生，十年后成了 AI Agent 领域的顶级玩家。但走的路，不是 2016 年那条。
 
 ## Karpathy 的三步忠告
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 ### 第一步：别再逼 Agent 什么都能干，先把底层模型做对
 

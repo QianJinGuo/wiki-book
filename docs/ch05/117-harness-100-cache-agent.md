@@ -6,27 +6,6 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclacky-harness-engineering-100-percent-cache-hit.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 工程实践复盘 100 Cache 命中的"))
-    背景与核心结论
-    两代失败教训
-      第一代 RAG 知识库
-      第二代 多 Agent 工作流
-    个关键工程决策
-      决策 1 双 Cache 标记
-      决策 2 System Prompt 字节冻结
-      决策 3 Skill 子 Agent 架构
-    核心原则
-    Cache 局部性是最核心的设计维度
-    固定工具列表是 cache 稳定性的保障
-    Skill 子 Agent 架构实现了真正的关注点分离
-    成本差距揭示了 Agent 工程化是差异化竞争的核心要素
-```
-
 ## 背景与核心结论
 
 ClackyAI 团队近期拿 4 家 Agent 做了一次横向测评，结果发现：同样的 prompt、同样的模型、同样的任务，成本最高可以相差 6 倍，且能与 Claude Code 保持同等能力。Harness 工程的水平，才是 Agent 产品真正拉开差距的地方。
@@ -48,41 +27,6 @@ Planner、Coder、Reviewer、Tester 各一个 agent，消息总线编排。结�
 **结论：不要做多 Agent 编排。人类的分工逻辑不适用于 AI——AI 不需要「一个人想、一个人写、一个人审」，一个足够好的 agent 加一套足够好的 harness 就够了。Benchmark 跑分也不重要，模型每半年跨一个台阶，用工作流堆出来的分数会被下一代模型 + 朴素 harness 直接抹平。**
 
 ## 7 个关键工程决策
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 
 ### 决策 1：双 Cache 标记
 
@@ -229,7 +173,7 @@ OpenClacky 16 个固定工具的设计背后是一个经过验证的经验值。
 ## 相关实体
 
 - [Harness Engineering 四根支柱与四要素架构](ch05/120-harness-engineering.html)
-- [AgentCore Harness](../ch04/689-agentcore-harness.html)
+- [AgentCore Harness](../ch04/690-agentcore-harness.html)
 - [Harness Production Agent 工程 deficit](ch05/009-harness.html)
 - [Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md)
 

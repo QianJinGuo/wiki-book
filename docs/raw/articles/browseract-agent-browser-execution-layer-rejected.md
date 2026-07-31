@@ -5,7 +5,7 @@ title: "发现一个神级开源项目，一句话让 AI Agent 无障碍接管�
 author: 丛林
 publisher: 极客之家
 date: 2026-06-18
-type: article
+type: raw-article
 ingested: 2026-06-18
 review_value: 5
 review_confidence: 5

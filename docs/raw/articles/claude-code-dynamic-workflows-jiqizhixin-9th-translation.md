@@ -6,7 +6,7 @@ author: Thariq Shihipar (Anthropic Claude Code 团队)
 publisher: 机器之心
 translator: 机器之心编辑部
 date: 2026-06-05
-type: article
+type: raw-article
 ingested: 2026-06-05
 review_value: 8
 review_confidence: 8

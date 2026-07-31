@@ -3,7 +3,7 @@
 title: "Anthropic首次揭秘下一代Claude怎么造！用户吐槽直接喂模型，连AI\"做梦\"都被训练"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: InfoQ
 author: InfoQ
 source_url:

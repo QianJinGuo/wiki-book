@@ -4,68 +4,11 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/codex-goal-implementation-breakdown.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex goal 实现拆解 长任务 Agent 不只是多跑几轮"))
-    文章背景
-    任务变大以后 问题会换一批
-    goal 的三层设计
-      第一层 目标持久化
-      第二层 运行时生命周期
-      第三层 完成审计和预算收束
-    Goal 和 Loop 的核心差别
-    工作现场六组件
-    从 goal 源码可以搬回去什么
-      第一个 把目标做成 thread 上的对象
-      第二个 把完成做成审计 不要做成开关
-      第三个 专门给停留一份模板
-    工程师的新杠杆
-    从工具调用到系统设计的范式转移
-```
-
 ## 文章背景
 书接上文《长周期 Agent 详解：从 Ralph Loop 到可接管 Harness》，这次从里面看 Codex `/goal` 的源码实现。
 核心论点：`/goal` 补的那块东西更靠底层——把一个长期目标放进了 Codex 的运行时里。目标有状态，过程有记账，完成要审计，预算到了要收束。
 
 ## 任务变大以后，问题会换一批
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Karpathy 在 Sequoia AI Ascent 2026 提到，2025年12月前后 agentic coding 出现明显变化：模型输出的代码块更大、更连贯、更可靠，任务单位从"局部补全"变成"一段流程"。
 **局部任务 vs 流程任务：**
 | 局部任务 | 流程任务 |

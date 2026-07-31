@@ -8,7 +8,7 @@ review_confidence: 7
 review_recommendation: strong
 review_stars: 4
 tags: [agent, architecture, harness, openclaw]
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 sha256: 7ebea7967755e40e46e552c36579a5f70a87b7785145ff461bfc97e547c9dd8e

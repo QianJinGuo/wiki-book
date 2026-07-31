@@ -2,7 +2,7 @@
 title: "AI and Liability"
 source_url: "https://schneier.com/blog/archives/2026/06/ai-and-liability.html"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 3b86e43d070b7cd33a3585191ee87076243fa9c2b318f59a6055e1add8cf3969
 ---

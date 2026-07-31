@@ -7,22 +7,6 @@
 # Harness进化论文
 > 微软M⋆（记忆Harness程序进化）和谷歌AutoHarness（代码Harness自动生成）两篇论文分析。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness进化论文 M记忆程序进化与AutoHarness动作约束"))
-    基本信息
-    M 微软记忆Harness进化
-    AutoHarness 谷歌动作约束Harness
-    与本文相关
-    记忆Harness的任务特异性 为何跨任务迁移失败
-    AutoHarness的三种模式 策略与成本的权衡
-    小模型Harness大模型 隐含的范式转移
-    两种Harness的趋同方向
-```
-
 ## 基本信息
 - **来源**: 数据派THU（背靠清华大学）
 - **日期**: 2026-04-25
@@ -30,37 +14,6 @@ mindmap
 - **相关实体**: [Minimax M2 7](../ch03/110-minimax-m2-7.html)（MiniMax的自我进化实践）
 
 ## M⋆ — 微软记忆Harness进化
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 **论文核心**：为每个任务自动进化专属记忆Harness程序。
 
 - **记忆程序三组件**：Schema（数据格式）+ Logic（后台操作）+ Instruction（交互提示词）

@@ -12,7 +12,7 @@ review_recommendation: strong
 review_stars: 4
 sha256: 31d3b5320a7a1a0fa4305e3b070fc7370a31294903f553525d53d78df43643ee
 tags: [agent, harness, orchestration, long-context, task-decomposition, cli, retry]
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

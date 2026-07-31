@@ -3,6 +3,7 @@ title: "Claude模型的上下文工程新规"
 source_url: "https://mp.weixin.qq.com/s/KgY_4cXCw5p8lG85hWou7Q"
 source_account: "若飞 / 架构师 (JiaGouX)"
 ingested: 2026-07-28
+sha256: "f5eb2dcd3ba25ccde7481c3ad679190cc5e98c8119b197246895a2b740f99978"
 type: raw-article
 tags:
   - context-engineering

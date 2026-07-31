@@ -1,6 +1,6 @@
 ---
 title: Scammers Send Physical Phishing Letters to Steal Ledger Wallet Seed Phrases
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://hackread.com/scammers-physical-phishing-letters-ledger-wallet-seed/
 tags: [hackread, mistral-ai, security, vulnerability, repository-attack]

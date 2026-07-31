@@ -6,7 +6,7 @@ publish_time: ""
 ingested: 2026-06-25
 sha256: c5fd7bdf2ece9718
 tags: ["llm", "software-engineering", "ai-future", "analysis"]
-type: article
+type: raw-article
 ---
 
 # What Is Software, and Will LLMs Replace It?

@@ -5,7 +5,7 @@ source_url: https://mp.weixin.qq.com/s/pTpBh1es9Mg2vbmNPg8ATg
 author: 大模型智能 (转载自机器之心)
 published: 2026-06-13
 ingested: 2026-06-13
-type: article-summary
+type: raw-article
 tags: [icml-2026, transformer, turing-completeness, context-management, formal-language, complexity-theory, scaling-family, fixed-system, context-manager, harness-theory]
 sha256: f20fceefe8e32a6181f2f8a0db72a31139a8d5d764d58c76c24b813c0a840d43
 ---

@@ -7,61 +7,10 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-developer-grants-local-ai.md)
 
 # Tether Developer Grants Program
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Tether launches developer grants"))
-    资助机制
-    技术方向
-    QVAC 平台背景
-    战略意图
-    市场影响
-```
-
 ## 概述
 Tether 于 2026 年 5 月 11 日推出开发者资助计划，资助在本地优先 AI（local-first AI）和自托管支付基础设施领域构建开源工具的项目。该计划的核心是 Tether 的 QVAC 平台——一个设备端 AI 推理平台，使 AI 模型能够直接在用户硬件上运行，而非每次响应都需访问远程服务器。
 
 ## 资助机制
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 | 项目 | 内容 |
 |------|------|
 | 单个交付物报酬 | $1,500 至 $4,000 |
@@ -100,7 +49,7 @@ QVAC 平台的定位尤其值得关注：Tether CEO Paolo Ardoino 将 local-firs
 
 ## 相关实体
 - [Tether launches developer grants program for local AI payments](../ch09/150-tether-launches-developer-grants-program-for-local-ai-paymen.html) — 同一事件的平行条目
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/212-tether-launches-developer-grants-program-for-local-first-ai.html) — 同一事件的平行条目
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/214-tether-launches-developer-grants-program-for-local-first-ai.html) — 同一事件的平行条目
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-developer-grants-local-ai.md)
 [^1]: 原文为"research into decentralization and edge AI"，此处译为"去中心化与边缘 AI 研究"。
 

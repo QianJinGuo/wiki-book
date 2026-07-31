@@ -10,7 +10,7 @@ review_value: 7
 review_confidence: 7
 review_recommendation: "worth-reading"
 review_stars: 3
-type: raw
+type: raw-article
 tags:
   - "agent-harness"
   - "langchain"

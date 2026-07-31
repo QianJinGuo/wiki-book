@@ -5,7 +5,7 @@ title: "AI 时代，实时入湖正在告别 ETL：从 Kafka 到 Iceberg 的架�
 author: 阿里云开发者
 publisher: 阿里云开发者
 date: 2026-06-18
-type: article
+type: raw-article
 ingested: 2026-06-18
 review_value: 9
 review_confidence: 9

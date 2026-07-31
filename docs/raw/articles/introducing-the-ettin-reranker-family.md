@@ -1,6 +1,6 @@
 ---
 title: Introducing the Ettin Reranker Family
-type: raw
+type: raw-article
 source: rss
 source_url: https://huggingface.co/blog/ettin-reranker
 tags: [newsletter, security]

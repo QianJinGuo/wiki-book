@@ -1,7 +1,7 @@
 ---
 sha256: 76b98c170ec20859e7aee1c3e8092e2285b549b2cfcfe108c45d15805a5174af
 title: "范凌：当公司变成Agent，关于 AI 时代组织的 5 个反思"
-type: source
+type: raw-article
 tags: [ai-agent, engineering, wechat]
 source: wechat
 source_url: "https://mp.weixi"

@@ -8,17 +8,6 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-case-for-an-accessibility-designer-vibe-coding-when-all-his-coworkers-are-also-vibe-coding.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("无障碍设计师 vibe coding 当所有同事都在用 AI 写代码时"))
-    Vibe coding 的真实定义 作者版本
-    实际产出 GitHub App 无障碍改进
-    关键贡献
-```
-
 ## 概述
 
 GitHub accessibility designer **Eric Bailey** 2026-06-15 发表的内部反思：当团队 100% 转向 LLM-first 工作流（GitHub 自家 app 也是 LLM-driven），且个人 token 使用被追踪排名时，**无障碍设计师也被结构性强制 vibe coding**。作者坦诚：作为详细 spec 写得好但 JS 写不好的人，借助 LLM 现在能直接做出产品级无障碍增强。
@@ -26,41 +15,6 @@ GitHub accessibility designer **Eric Bailey** 2026-06-15 发表的内部反思�
 文章核心张力：**Emotionally（"有人拿枪指着我的头"+ 三万亿柴油机碳排放）vs Professionally（必须用 LLM 才能贡献业务）**。这反映 LLM 在 2026 年企业内部已从"个人选择"变为"结构性要求"。
 
 ## "Vibe coding" 的真实定义（作者版本）
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 作者澄清：**vibe coding ≠ 简单英语提示词**。完整定义包括：
 - 简单的英语语言请求

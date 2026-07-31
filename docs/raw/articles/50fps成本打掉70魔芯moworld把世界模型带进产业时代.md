@@ -3,7 +3,7 @@ title: "50FPS、成本打掉70%，魔芯MoWorld把世界模型带进产业时代
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/ZrS_6TZj9d6dhqzmzb2SwQ"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 56
 tags: [raw]
 sha256: "42c780c58716fd7bec1835bc0cac4b7ce50347924a782ec21f434e3c3591aa48"

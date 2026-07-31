@@ -6,38 +6,6 @@
 
 # AI 原生团队的脏乱差：CEO 数字分身失败案例与 AI 销售线索分配的兴衰
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI 原生团队的脏乱差 CEO 数字分身失败案例与 AI"))
-    个核心问题
-      AI 时代 公司到底还需要多少人
-      AI 原生团队和传统团队的最大区别
-      你的团队处于哪个阶段
-    CEO 数字分身失败复盘 AI 10 时代
-      项目定位
-      失败的核心原因
-    AI 原生团队搭建案例 电销企业
-      个核心痛点
-      工期变化
-    AI 销售线索分配系统 最具体 case
-      问题背景
-      AI 系统的设计与结果
-      系统被停用的真正原因
-    AI 原生研发团队 更熟悉的角度
-      程序员是离 AI 最近的一批人
-      Spec-Kit 落地前提
-      闭环未完成
-    AI 原生团队的好坏标准
-      核心判断问题
-      L1-L2-L3 三个大类
-      判定层级
-    失败的根本原因 CEO 数字分身
-    与已有 AI 原生实体的关系
-```
-
 ## Overview
 
 一位 AI 咨询/创业教练（未具名）的实战总结。**作者三年前离开公司体系做 AI 创业，第一个产品《CEO 数字分身》亏了 100 多万**。现在做企业 AI 咨询 + AI 训练营。本文是他**从失败的 AI 创业 + 多年企业 AI 咨询**中提炼出的"AI 原生组织脏乱差"——**AI 原生本质是管理课题，不是 AI 课题**。
@@ -45,43 +13,6 @@ mindmap
 > **核心论点**：**不要试图用 AI 绕过管理**。管理是那些脏乱差，是不同的沟通、沟通、再沟通，对齐、对齐、再对齐。**这真的挺不 AI、也挺不酷的**。
 
 ## 3 个核心问题
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 ### 1. AI 时代，公司到底还需要多少人？
 

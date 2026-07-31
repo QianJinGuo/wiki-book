@@ -10,56 +10,11 @@
 
 术哥（ShugeX）源码级分析 Superpowers v6.0.3，翻 158 commits + 3 核心 prompt + 3 shell 脚本。核心结论：**6.0 不是性能调优，是围绕 reviewer 角色的结构性重写**——堵住 controller 被反复观测到的几条作弊路径，提速降本是结构改造的副产品。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Superpowers 60 反作弊重写 reviewer"))
-    六大技术杠杆
-      两个 reviewer 合并为一 一次 diff 出两个裁决
-      Reviewer 只读怀疑论者 三道硬闸门
-      文件替代粘贴 三个脚本的上下文经济学
-    诚实边界 术哥明确标注
-    Wiki 关联
-```
-
 ## 一句话定位
 
 > 把 reviewer 从一个可被辅导、可被绕过、可被静默升级到顶配模型的配角，重写成一个**只读、怀疑、独立、强制读文件**的裁决者。
 
 ## 六大技术杠杆
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 1. 两个 reviewer 合并为一：一次 diff 出两个裁决
 

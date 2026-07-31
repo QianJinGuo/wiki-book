@@ -10,33 +10,6 @@
 
 百型智能 2026-06-05 发布第三代企业级 AI 基础设施 **OntoZ**——以**企业本体**为底层基座 + **可动态自迭代的群智能体协同体系**，目标是为每一家出海企业构建"**全局共识大脑**"（Palantir 中国类比）。服务上千家中国出海企业，近千个智能体活跃在 160+ 国家，累计 700+ 万海外采购商 KP 建联 / 数十万笔采购询单 / 数十亿成交潜力。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("百型智能 OntoZ 企业本体论 群智能体协同体系"))
-    核心概念 企业本体 Enterprise Ontology
-    群智能体生态
-    核心技术 二阶控制论架构
-      智能体任务规划器 2024 验证
-      图神经网络算法 2024 验证
-      产业世界模型
-    认知基础设施 Cognition Infra
-      持续自我进化的本体
-      买卖行为的强结果信号
-    商业数据验证
-      规模指标
-      客户案例
-      商业化进展
-    市场机遇
-    长期布局 Agent 自主经济 A2A 生态
-      智能体自主经济判断
-      ERP BI 本体 三阶段演化
-      AR 替代 HR
-    三个层面准备
-```
-
 ## 核心概念：企业本体（Enterprise Ontology）
 
 **OntoZ** 跳出了传统单点 SaaS 与孤立智能体的产品逻辑：
@@ -48,37 +21,6 @@ mindmap
 **类比 Palantir**：Palantir 成为美国的数字大脑；百型想为**每一个出海企业构建一个全局共识大脑**，再让不同的智能体在这个共识框架下各司其职。
 
 ## 群智能体生态
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **Inbound 营销 + Outbound 触达 + 社媒运营 + 询盘回复 + 投流优化**——这些原本分散在不同工具里的能力，在 OntoZ 中被**重组为一个分层协同的群智能体生态**。
 
@@ -214,13 +156,13 @@ graph TB
 
 - **本体竞争取代工具竞争**：OntoZ 的核心命题是「2B AI 从工具辅助进入本体竞争新阶段」——企业间竞争的不再是谁买了更多 SaaS，而是谁的数字分身（企业本体）更懂业务、更能自迭代。这一判断与 [Rag Vector Knowledge Graph Ontology](../ch01/223-rag.html) 中知识图谱本体是数据驱动成交基础设施的观点高度一致。 
 
-- **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](ch04/576-anthropic-multi-agent-research-system.html) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
+- **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](ch04/580-anthropic-multi-agent-research-system.html) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
 
 - **RL + Reflection 的无人化知识蒸馏**：百型以「强化学习 + Reflection 架构」实现企业知识库的无人化、短时间蒸馏，形成 cognition infra。这与传统的知识工程（专家建模、RDF 本体）有本质区别——不是工程师将知识注入系统，而是系统在买卖交互中自主涌现结构。对照 [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html) 中企业 AI 落地依赖数据质量和结构化程度的前提，OntoZ 的冷启动能力直接绕过了这一瓶颈。 
 
 - **强结果信号驱动的飞轮效应**：买卖行为天然具备可量化的强结果信号（成交/不成交），是强化学习最理想的训练场景。系统通过持续捕获买家行为模式形成越用越准的飞轮，这与传统的显性知识学习（FAQ、产品手册）截然不同——行为数据比文本语料更能反映真实的决策逻辑。 
 
-- **Palantir 类比的战略含义**：百型明确将自身定位为「出海企业的 Palantir」——两者都以本体论为底层，以数据驱动为价值主张，但目标市场不同（政府/大型企业 vs. 长尾中小企业）。 [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/913-20.html) 揭示了 Palantir 在企业软件市场的强势地位，百型的差异化在于垂直于跨境 B2B 场景，并聚焦 97% 中小企业的长尾市场。 
+- **Palantir 类比的战略含义**：百型明确将自身定位为「出海企业的 Palantir」——两者都以本体论为底层，以数据驱动为价值主张，但目标市场不同（政府/大型企业 vs. 长尾中小企业）。 [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/926-20.html) 揭示了 Palantir 在企业软件市场的强势地位，百型的差异化在于垂直于跨境 B2B 场景，并聚焦 97% 中小企业的长尾市场。 
 
 ## 实践启示
 
@@ -237,19 +179,19 @@ graph TB
 ## 相关主题
 
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](ch04/047-openclaw-multi-agent-team-practice-v2.html)
-- 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/036-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/517-codex.html)
-- Claude Code 架构 — [Claude Code Architecture](../ch03/078-claude-code.html)
+- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/520-codex.html)
+- Claude Code 架构 — [Claude Code Architecture](../ch03/077-claude-code.html)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05/120-harness-engineering.html)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/035-agent.html)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/223-rag.html)
-- 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/576-anthropic-multi-agent-research-system.html)
-- Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/913-20.html)
+- 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/580-anthropic-multi-agent-research-system.html)
+- Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/926-20.html)
 - 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html)
 ## 相关实体
 
-- [how grab is using ai agents to boost team productivity](ch04/298-ai-agent.html)
+- [how grab is using ai agents to boost team productivity](ch04/030-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

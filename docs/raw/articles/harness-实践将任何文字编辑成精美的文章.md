@@ -2,7 +2,7 @@
 title: "harness 实践将任何文字编辑成精美的文章"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 75b2f4c492948b4203add24111ee9ac856e9a50bc79dae40eb2d97118999bb92
 ---

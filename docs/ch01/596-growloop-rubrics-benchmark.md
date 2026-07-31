@@ -2,65 +2,15 @@
 
 ## Ch01.596 GrowLoop：开放域对话的真人感评测 — 用种子+Rubrics自动生长Benchmark
 
-> 📊 Level ⭐⭐ | 7.6KB | `entities/growloop-dialogue-human-likeness-evaluation-benchmark.md`
+> 📊 Level ⭐⭐ | 7.7KB | `entities/growloop-dialogue-human-likeness-evaluation-benchmark.md`
 
 # GrowLoop：开放域对话的真人感评测 — 用种子+Rubrics自动生长Benchmark
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GrowLoop 开放域对话的真人感评测"))
-    隐性知识的外化机制
-    分歧合法性与评价空间的重新定义
-    评分细则与测试题目的双循环协进化
-    跨领域迁移潜力的结构性分析
-```
 
 ## 摘要
 
 GrowLoop 提出用少量种子样例 + Rubrics 自动生长机制来解决开放域对话的真人感评测难题。它把说不清的感性标准（"这对话像真人吗"）转化为理性的 Benchmark，让这种标准有了被自动化学习的机会。该方法也适用于艺术评价、教育评估、科研评审等难以制定客观标准的场景。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "实验管理"
-        TRACK[实验追踪<br/>MLflow/W&B]
-        HP[超参调优<br/>Optuna]
-        REG[模型注册<br/>版本管理]
-    end
-    subgraph "评估流水线"
-        BENCH[基准测试<br/>自动评测]
-        HUMAN[人工评估<br/>LLM-as-Judge]
-        DRIFT[漂移检测<br/>数据/概念漂移]
-    end
-    subgraph "部署流水线"
-        PACKAGE[模型打包<br/>ONNX/TensorRT]
-        TEST[Integration测试<br/>回归检测]
-        DEPLOY[灰度发布<br/>A/B测试]
-    end
-    TRACK --> HP --> REG
-    REG --> BENCH & HUMAN
-    BENCH & HUMAN --> DRIFT
-    DRIFT --> PACKAGE --> TEST --> DEPLOY
-    subgraph "监控"
-        PERF[性能监控<br/>延迟/吞吐]
-        ALERT[告警规则<br/>异常检测]
-        RETRAIN[触发再训练]
-    end
-    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
-    classDef exp fill:#dbeafe,stroke:#2563eb
-    classDef eval fill:#ede9fe,stroke:#7c3aed
-    classDef deploy fill:#fef3c7,stroke:#d97706
-    classDef mon fill:#d1fae5,stroke:#059669
-    class TRACK,HP,REG exp
-    class BENCH,HUMAN,DRIFT eval
-    class PACKAGE,TEST,DEPLOY deploy
-    class PERF,ALERT,RETRAIN mon
-```
-
 
 1. 真人感评测是开放域对话领域的开放难题 — 标准难以制定、难以量化、难以统一
 2. GrowLoop 通过有限的种子 + Rubrics 自动生长机制，将感性标准转化为理性 Benchmark

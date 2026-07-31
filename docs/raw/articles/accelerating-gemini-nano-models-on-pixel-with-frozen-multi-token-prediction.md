@@ -2,7 +2,7 @@
 title: "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: be8deceee3d6eeedf62f5b53e76f79cc0c2e4097d9c7398d16b06e6995a70c80
 ---

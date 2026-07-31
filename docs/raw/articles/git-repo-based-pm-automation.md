@@ -4,7 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/n4iqEWPfrok91b692nFTJw"
 authors: []
 created: 2026-05-28
 updated: 2026-05-28
-type: raw
+type: raw-article
 tags: [article, pm, git, ai-agent, workflow, automation]
 review_value: 8
 review_confidence: 8

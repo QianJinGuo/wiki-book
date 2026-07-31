@@ -2,7 +2,7 @@
 title: "Mnilax：CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条，Claude 错误率从 41% 降到 3%"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: fantoAGI
 author: Cf2019
 source_url:

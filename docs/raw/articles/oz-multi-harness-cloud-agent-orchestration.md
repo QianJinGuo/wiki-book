@@ -1,6 +1,6 @@
 ---
 title: A single pane of glass for managing all of your cloud agents
-type: source
+type: raw-article
 source: newsletter
 source_url: https://www.warp.dev/blog/multi-harness-cloud-agent-orchestration
 sha256: f0101c18c691

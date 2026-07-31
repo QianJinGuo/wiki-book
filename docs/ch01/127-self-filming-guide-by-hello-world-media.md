@@ -2,23 +2,7 @@
 
 ## Ch01.127 Self-Filming Guide by Hello World Media
 
-> 📊 Level ⭐ | 4.7KB | `entities/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Self-Filming Guide by Hello World"))
-    专业级手机拍摄的民主化趋势
-    灯光作为叙事语言
-    音频优先原则
-    表演张力 Mad Men 式的传递
-    设备配置清单 iPhone
-    布光五步法
-    设备推荐
-    自拍表演检查清单
-```
+> 📊 Level ⭐ | 4.7KB | `entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md`
 
 ## 核心要点
 - Hello World Media 是一家端到端视频创意工作室，为科技公司和消费品牌制作电影级商业视频
@@ -31,41 +15,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 专业级手机拍摄的民主化趋势
 本指南展示了消费级硬件（iPhone、Pixel）已足够支撑专业级视频输出，关键在于 Log 格式的合理运用。Log 录制通过保留高光和阴影的更多细节，为后期调色提供最大灵活性，这是传统"直出"视频无法实现的。
 
@@ -119,7 +68,7 @@ graph TB
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1268-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1273-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 
 - [World's first native color LiDAR gives machines human-like vision](https://github.com/QianJinGuo/wiki/blob/main/entities/technology-ouster-rev8-native-color-lidar.md)
 

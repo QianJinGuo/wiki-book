@@ -1,7 +1,7 @@
 ---
 
 title: "龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！"
-type: source
+type: raw-article
 tags: [mlops, wechat, llm, ai-agent, engineering]
 source: wechat
 source_url: "https://mp.weixi"

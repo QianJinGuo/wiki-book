@@ -3,7 +3,7 @@ title: "阿里数据团队 LLM Wiki 企业实践：用 LLM 编译思维构建结
 source_url: "https://mp.weixin.qq.com/s/6-xg2jJqIPbrqHcbjHBuTg"
 ingested: 2026-06-30
 sha256: 2bf74b315e6b0dbde8646715025dbaca508f137f3b616e71d704c96f14ee0afc
-type: raw
+type: raw-article
 tags: [llm-wiki, knowledge-base, data-warehouse, compiler, enterprise, alibaba, schema, graph, agent-orchestration, rag, provenance, lint, incremental-build]
 author: 阿里数据团队
 ---

@@ -2,7 +2,7 @@
 
 title: "CEOs of the classroom: Why principals are the key to the AI era"
 sha256: 2119f8f0268a1bcb0ba99f1f0c840083de0936a6eb10c308dd300b5668ccc7f8
-type: source
+type: raw-article
 source: newsletter
 source_url: https://www.salesforce.com/blog/principal-summit/
 review_value: 7

@@ -1,6 +1,6 @@
 ---
 title: Announcing Claude Managed Agents on Cloudflare
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://blog.cloudflare.com/claude-managed-agents/
 tags: [robotics, ai, ipo]

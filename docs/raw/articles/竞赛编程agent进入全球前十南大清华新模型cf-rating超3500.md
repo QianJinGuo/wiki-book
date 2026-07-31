@@ -3,7 +3,7 @@ title: "竞赛编程Agent进入全球前十！南大、清华新模型CF rating�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/_VaYlATQ9Ootfj2Q03sU7Q"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "fe39c5fd84fccff29655645e20916d11a79c1cf808eceacad832bb9421aa251a"

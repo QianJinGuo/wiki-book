@@ -1,6 +1,6 @@
 ---
 title: "How Inscribe uses Amazon Bedrock to stop document fraud in seconds"
-type: raw
+type: raw-article
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud-in-seconds
 ingested: 2026-07-03

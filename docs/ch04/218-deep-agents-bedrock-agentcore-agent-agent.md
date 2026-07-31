@@ -8,27 +8,6 @@
 
 > **Background**: 本文合成自 AWS ML Blog 2026-06-15 文章，作者 Sundar Raghavan（Sr Solutions Architect, Agentic AI Foundations）和 Saurav Das（AgentCore PM）。聚焦 LangChain Deep Agents 框架 + Amazon Bedrock AgentCore 基础设施的端到端集成，是"框架级 + 基础设施级"双层编排的最新官方参考实现。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Deep Agents Bedrock AgentCore 多"))
-    核心模式
-    实战架构
-      五个核心组件
-      工作流 4 步
-    关键工程细节
-      Browser MicroVM 隔离
-      Code Interpreter 隔离
-      Memory 配置
-    三层可观测性
-    部署到 Runtime
-    与已有实体的差异化
-    上手资源
-    应用场景 作者建议
-```
-
 ## 核心模式
 
 **两层分工**：
@@ -39,37 +18,6 @@ mindmap
 **关键收益**：coordinator 的 context window 不再被原始网页内容填满，每个 subagent 在自己的 MicroVM 中执行，**只返回简洁结构化结果**给 coordinator。
 
 ## 实战架构
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 五个核心组件
 
@@ -169,9 +117,9 @@ Runtime 关键能力：
 
 | 实体 | 关注点 | 本文差异 |
 |------|--------|---------|
-| [Agentcore Harness](ch04/689-agentcore-harness.html) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
-| [Agentcore Managed Harness](ch04/224-agentcore-managed-harness.html) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
-| [Langchain Harrison Chase Sandbox Architecture](../ch05/094-ai.html) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
+| [Agentcore Harness](ch04/690-agentcore-harness.html) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
+| [Agentcore Managed Harness](ch04/225-agentcore-managed-harness.html) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
+| [Langchain Harrison Chase Sandbox Architecture](../ch05/095-ai.html) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
 | [Production Harness 12 Components Framework Comparison](../ch05/034-harness-12.html) | 12 组件框架对比 | 偏理论框架，无 AWS 端到端代码 |
 
 **本文独特价值**：是 **LangChain Deep Agents + Bedrock AgentCore** 这一特定组合的**官方端到端实现**（含完整 Python 代码、IAM 权限、4 步部署、cleanup 流程）。

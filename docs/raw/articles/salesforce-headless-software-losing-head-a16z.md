@@ -3,7 +3,7 @@ title: "Salesforce 主动砍掉了界面，a16z 合伙人说：护城河从来�
 source_url: https://mp.weixin.qq.com/s/JtTKwoYqO_I2QYeakigJUg
 tags: [wechat, article, claude, openai]
 sha256: c7b9f57b5308
-type: raw
+type: raw-article
 created: 2026-05-15
 updated: 2026-05-15
 review_value: 9

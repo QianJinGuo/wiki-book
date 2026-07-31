@@ -6,66 +6,14 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Google and Amnesty International"))
-    执法-隐私的张力重构
-    商业间谍软件的攻防军备竞赛
-    平台厂商的安全责任边界
-    民间社会组织 CSO 的技术能力建设
-    对安全研究人员
-    对隐私倡导者
-    对企业安全团队
-    对政策制定者
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - 这是主流设备厂商首次推出专门用于法证检测高级威胁的功能
 - 针对商业间谍软件（如 NSO Group 的 Pegasus）提供持久化取证日志
 - 目前仅支持 Pixel 设备，需要 Android 16 和 Google 账户
 ## 相关实体
 - [Google Amnesty Spyware Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/google-amnesty-spyware-detection.md)
 - [Google And Amnesty International Teamed Up To Make Android S](ch12/067-google-and-amnesty-international-teamed-up-to-make-android-s.html)
-- [Shub Reaper Macos Stealer Attack Chain](../ch05/094-ai.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch05/095-ai.html)
 - [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
 

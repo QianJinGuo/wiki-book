@@ -6,7 +6,7 @@ author: AI小老六
 source: AI小老六
 date: 2026-05-14
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [agent, enterprise-ai, memory, knowledge-management, rag, knowledge-graph, organizational-memory]
 review_value: 7.5
 review_confidence: 7

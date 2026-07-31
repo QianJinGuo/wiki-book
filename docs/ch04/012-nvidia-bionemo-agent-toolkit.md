@@ -6,56 +6,11 @@
 
 # NVIDIA BioNeMo Agent Toolkit — 加速科学发现的智能体工具包
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("NVIDIA BioNeMo Agent Toolkit"))
-    核心组件
-    技术架构
-    覆盖领域
-    智能体在科学发现中的范式转变
-    生态集成策略的价值
-    博士级研究助理的能力定位
-```
-
 ## 摘要
 
 NVIDIA 发布的 BioNeMo Agent Toolkit 是一套面向生命科学领域的 AI 智能体工具包，整合了 NVIDIA 十多年来积累的科学计算库、开放模型和推理基础设施。该工具包使 AI 智能体能够执行蛋白质结构预测、分子对接、生成式化学、基因组分析等科研任务，已获得超过 50 家头部企业和研究机构的采用。
 
 ## 核心组件
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 BioNeMo Agent Toolkit 整合了多个 NVIDIA 核心技术组件：
 
@@ -121,7 +76,7 @@ BioNeMo Agent Toolkit 代表了 AI 在科学研究中的应用从"工具辅助"�
 
 - [NVIDIA Nemotron-3：Agent、RAG、语音与安全](../ch03/035-agent.html)
 - [NVIDIA NeMo AutoModel 微调](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemo-automodel-fine-tuning.md)
-- [NVIDIA 安全本地 Agent：NemoClaw 与 OpenClaw](ch04/411-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [NVIDIA 安全本地 Agent：NemoClaw 与 OpenClaw](ch04/414-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Hermes Agent 技能设计分析](../ch01/332-hermes-agent-skill.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 

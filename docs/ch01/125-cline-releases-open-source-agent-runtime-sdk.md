@@ -4,58 +4,12 @@
 
 > 📊 Level ⭐ | 4.7KB | `entities/clinereleasesopen-sourceagentruntimesdk.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cline releases open-source agent"))
-    SDK 架构的分层设计
-    Agent Runtime 的可移植性意义
-    Benchmark 表现与模型关联
-    Native Plugin 体系与生态扩展
-    选型评估要点
-    Plugin 设计的正确姿势
-    许可证注意事项
-```
-
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clinereleasesopen-sourceagentruntimesdk.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### SDK 架构的分层设计
 Cline SDK 采用了清晰的分层 TypeScript 架构： `@cline/shared` 提供基础类型和工具，`@cline/llms` 统一封装多模型提供商（Anthropic、OpenAI、Google、AWS Bedrock、Mistral、LiteLLM 及任意 OpenAI 兼容端点），`@cline/agents` 运行无状态的 agentic loop（迭代、工具编排、事件发射），`@cline/core` 管理有状态的编排（session 生命周期、持久化、配置发现）。这种分层使得切换模型提供商仅是配置变更，而非代码改动。
 
@@ -84,10 +38,10 @@ engine 采用 Elastic License 2.0，SDK 采用 Apache 2.0。内部研究、架�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Cline releases open-source agent runtime SDK](../ch04/487-cline-releases-open-source-agent-runtime-sdk.html)
+- [Cline releases open-source agent runtime SDK](../ch04/493-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](../ch03/035-agent.html)
 - [OpenSquilla launches open-source AI agent to cut token costs](ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
-- [ai gateway production index](../ch05/094-ai.html)
+- [ai gateway production index](../ch05/095-ai.html)
 
 ---
 

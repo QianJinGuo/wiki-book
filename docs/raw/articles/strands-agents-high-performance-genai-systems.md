@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/blogs/machine-learning/build-high-performance
 ingested: 2026-06-01
 feed_name: AWS
 source_published: 2026-05-26T17:39:46Z
-type: article
+type: raw-article
 sha256: 4253c59ea4bf61232d70fcae462ae9f1e8e505584bf347d51c32cbe3ff912217
 tags: ['strands-agents', 'aws', 'performance', 'genai', 'architecture']
 ---

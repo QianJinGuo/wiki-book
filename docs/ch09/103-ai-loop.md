@@ -11,22 +11,6 @@
 
 吴恩达（Andrew Ng）详细阐述了"循环工程"（Loop Engineering）这一 AI Agent 开发热门概念，介绍了构建 0-to-1 产品的三个关键循环：Agentic 编码循环（分钟级）、开发者反馈循环（小时级）和外部反馈循环（天级），并配以循环示意图。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("吴恩达最新思考 从分钟到天 AI产品如何靠三层Loop迭代"))
-    三层循环架构
-      Agentic Coding Loop 分钟级
-      Developer Feedback Loop 小时级
-      External Feedback Loop 天级
-    Loop Engineering 的理论框架化
-    循环加速与工程师角色重塑
-    人类上下文优势的工程化路径
-    与 Boris Cherny 和 Peter
-```
-
 ## 三层循环架构
 
 ### 1. Agentic Coding Loop（分钟级）
@@ -44,41 +28,6 @@ mindmap
 包括一系列广泛策略：请几位朋友反馈、发布给 alpha 测试者，或上线到生产环境配合 A/B 测试。时间尺度通常需要几天甚至几周。这些数据会影响开发者愿景，开发者愿景继续驱动详细产品规格，产品规格再驱动 coding agent。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### Loop Engineering 的理论框架化
 

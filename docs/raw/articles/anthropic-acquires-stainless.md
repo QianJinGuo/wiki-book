@@ -1,6 +1,6 @@
 ---
 title: Anthropic Acquires Stainless
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.anthropic.com/news/anthropic-acquires-stainless
 tags: [anthropic]

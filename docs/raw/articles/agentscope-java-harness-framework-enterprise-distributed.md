@@ -3,7 +3,7 @@ title: "首个 Java Harness Framework：AgentScope 把 OpenClaw 带到企业分�
 source_url: https://mp.weixin.qq.com/s/yBWOk-mpGih9bV4wqPnkOQ
 tags: [wechat, article, claude, openai]
 sha256: a1de7c7ed803
-type: raw
+type: raw-article
 created: 2026-05-15
 updated: 2026-05-15
 review_value: 9

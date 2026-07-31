@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((Agent记忆系统))
-    工作记忆
-      上下文窗口
-      注意力机制
-      上下文压缩
-    短期记忆
-      Session存储
-      对话历史
-      临时缓存
-    长期记忆
-      向量数据库
-      知识图谱
-      结构化存储
-    记忆检索
-      语义搜索
-      关键词匹配
-      混合检索
-    记忆管理
-      遗忘机制
-      重要性评分
-      压缩摘要
-    跨会话持久化
-      用户画像
-      偏好学习
-      知识积累
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -45,33 +14,6 @@ mindmap
 | ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 
 ---
-
-## 架构图
-
-```mermaid
-graph TB
-    subgraph "三种记忆范式"
-        WM[Working Memory<br/>工作记忆<br/>上下文窗口] --> SM[Short-term Memory<br/>短期记忆<br/>Session 级]
-        SM --> PM[Long-term Memory<br/>长期记忆<br/>跨 Session]
-    end
-    subgraph "实现方案"
-        C1[Letta Code<br/>Agent 绑定] 
-        C2[Hermes Skill<br/>技能提炼]
-        C3[Memory Files<br/>文件持久化]
-    end
-    PM --> C1 & C2 & C3
-    subgraph "核心命题"
-        INS[权重冻结下<br/>外部状态层积累能力]
-    end
-    PM --> INS
-    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef impl fill:#d1fae5,stroke:#059669,color:#064e3b
-    classDef insight fill:#fef9c3,stroke:#ca8a04,color:#713f12
-    class WM,SM,PM mem
-    class C1,C2,C3 impl
-    class INS insight
-```
-
 
 ## 导读
 
@@ -736,7 +678,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 ## Ch06.003 AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
 
-> 📊 Level ⭐⭐ | 21.3KB | `entities/agentmemory-source-analysis-coding-agent-local-memory.md`
+> 📊 Level ⭐⭐ | 21.4KB | `entities/agentmemory-source-analysis-coding-agent-local-memory.md`
 
 # AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
 
@@ -1335,7 +1277,7 @@ Claude Code 的六层记忆架构与软件工程中的权限模型高度对齐�
 ## 相关实体
 - [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-comparison.md)
 - [Claude Code Openclaw Usage Ettin](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-usage-ettin.md)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](https://github.com/QianJinGuo/wiki/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 
@@ -1759,7 +1701,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 ## 相关实体
 - [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
 - [Claude Code Openclaw Usage Ettin](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-usage-ettin.md)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](https://github.com/QianJinGuo/wiki/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 - [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-system-design-three-way-comparison.md)
 
@@ -4682,7 +4624,7 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ## Ch06.032 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/qoder-team-knowledge-engine-compiled-knowledge.md`
+> 📊 Level ⭐⭐ | 4.2KB | `entities/qoder-team-knowledge-engine-compiled-knowledge.md`
 
 # Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
 
@@ -4887,7 +4829,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ## Ch06.035 Headroom 是怎么省上下文的
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/headroom-context-compression-agent-vibecoder.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/headroom-context-compression-agent-vibecoder.md`
 
 # Headroom 是怎么省上下文的
 

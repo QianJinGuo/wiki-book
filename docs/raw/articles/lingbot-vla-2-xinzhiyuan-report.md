@@ -5,7 +5,7 @@ source_site: "新智元"
 author: "ASI启示录"
 ingested: "2026-07-08"
 sha256: "0461fd14aeef3f97c7ca9d90b82c5e0d88cc91c96d113d59c4cb0768cb1eec1a"
-type: raw
+type: raw-article
 tags:
   - lingbot-vla
   - ant-group

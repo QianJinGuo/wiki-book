@@ -6,62 +6,7 @@
 
 # 使用 Amazon CloudFront 和 AWS WAF 大规模交付 WordPress
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("使用 Amazon CloudFront 和 AWS WAF"))
-    概览
-    三个核心工程问题
-      缓存策略分层 公开登录Cookie
-      xmlrpcphp 攻击面防御
-      基于 Cookie 的缓存键问题
-    WAF 路径规则与速率限制
-    与其他 CloudFront 文档的差异化
-    Cookie 缓存键碎片化是 WordPress CDN 化的核心矛盾
-    三层缓存策略是可复用的会话型 CMS 模式
-    Count Label Custom Rule 模式是 WAF
-    Cache Tag 语义化失效将 CDN
-```
-
 ## 概览
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 AWS 官方博客发布的 WordPress 大规模交付工程实战文档，针对**高流量 + 强攻击面**场景，系统拆解 CloudFront 缓存分层、WAF 路径规则、Cookie 处理三个最棘手的工程问题。每个配置项都给出具体缓存键策略 + TTL 推荐 + WAF 规则模板。
 
@@ -132,7 +77,7 @@ wp-cron.php 依赖"有访客才触发"的机制在低流量时段造成任务漏
 - **上线前用 Rate-Based Statement 的干跑模式验证限速阈值**：AWS WAF 支持将规则设置为 Count（只记录不阻止），用生产流量验证后再切换为 Block
 
 ## 相关实体
-- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch05/094-ai.html)
+- [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](../ch05/095-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-amazon-cloudfront-和-aws-waf-大规模交付-wordpress.md)
 
 ---

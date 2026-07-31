@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.9KB | `entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 之父最新访谈 编程已经结束 harness"))
-    相关资源
-    关于 Boris Cherny
-    Claude Code 的诞生
-    编程已经解决了
-    手机就是工位
-    Loop 才是未来
-    人人都写代码
-    AI 时代的护城河
-```
-
 ## 核心要点
 - **Boris Cherny** 是 Claude Code 的创造者，2024 年 9 月加入 Anthropic Labs 孵化团队
 - 2025 年 10 月起模型已能写 100% 代码，Boris 本人从 2026 年起不再手写代码
@@ -29,41 +13,6 @@ mindmap
 - 未来趋势：人人都能编程，跨学科通才崛起，10 倍数量创业公司将颠覆现有格局
 
 ## 相关资源
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)
 
 ## 关于 Boris Cherny
@@ -144,21 +93,21 @@ Boris 预测将涌现 10 倍数量创业公司。小团队能做出大公司量�
 - [Claude Code](https://claude.ai/code)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1274-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/637-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/009-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/003-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/271-skill.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/444-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/273-skill.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/120-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/235-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/237-openclaw.html)
 
-- [Hermes Agent /goal 长任务运行时架构](../ch04/381-hermes-agent-goal.html)
+- [Hermes Agent /goal 长任务运行时架构](../ch04/385-hermes-agent-goal.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/096-hermes-agent.html)
-- [LoongSuite GenAI 可观测语义规范](../ch04/467-loongsuite-genai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/472-loongsuite-genai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/035-agent.html)
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/111-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/112-ai-coding.html)
 
 ---
 

@@ -2,7 +2,7 @@
 title: "让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠"
 source_url: "https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw"
 ingested: 2026-04-30
-type: raw
+type: raw-article
 tags: [token-economics, ai-productivity, model-routing, enterprise-ai, ai-pricing, tencent]
 review_value: 7
 review_confidence: 8

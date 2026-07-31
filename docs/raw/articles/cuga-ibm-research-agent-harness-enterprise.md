@@ -5,7 +5,7 @@ author: "IBM Research (Anupama Murthi, Hamid Adebayo, Sami Marreed, Praveen Venk
 publish_time: "2026-06-23"
 ingested: "2026-06-25"
 sha256: "placeholder"
-type: article
+type: raw-article
 tags: [agent, harness, ibm, enterprise, cuga]
 ---
 

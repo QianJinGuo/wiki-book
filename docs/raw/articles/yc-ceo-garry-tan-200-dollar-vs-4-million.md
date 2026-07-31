@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/mSb8J8laT-rqIEohW-6LEw
 author: 玉澄/51CTO技术栈
 date: 2026-05-11
 title: "200美元搞定400万美元的项目！YC总裁：同时调用15个Agent，每月交付数十万行代码，Claude Code和Codex协作开发，用Token换时间亿万富翁"
-type: raw
+type: raw-article
 tags: [agent, yc, claude-code, codex, token-maxxing, garry-tan, workflow]
 review_value: 9
 review_confidence: 8

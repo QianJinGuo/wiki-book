@@ -2,7 +2,7 @@
 title: "xai-grok-musk-training-new-model-wechat"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: wechat
 source_url: https://mp.weixin.qq.com/s/YUkp8vv_PR9-ema-I77OBw
 sha256: 95836201ac8d136df57c605843f6d3c465508cd8e7ca9db8ed2209be559c7828

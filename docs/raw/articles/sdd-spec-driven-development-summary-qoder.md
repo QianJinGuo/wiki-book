@@ -1,6 +1,6 @@
 ---
 title: "Spec-Driven Development (SDD) 全面总结: 从 \"5人7天\" 案例到方法论全集"
-type: source
+type: raw-article
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/hVizUucsy8rwFOUR-VZ6wA"
 sha256: 7f06952c9a79ead9c7718a48e38c3bf3d13c3c5ecf7738e79d8258644c2d82c1

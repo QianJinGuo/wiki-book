@@ -1,6 +1,6 @@
 ---
 title: BigQuery Threat Model Report
-type: raw
+type: raw-article
 tags: [google, bigquery, threat-model, security]
 source: newsletter
 source_url: https://docs.cloud.google.com/docs/security/threat-model/bigquery-threat-model

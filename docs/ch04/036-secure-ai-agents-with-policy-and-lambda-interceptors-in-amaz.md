@@ -2,73 +2,9 @@
 
 ## Ch04.036 Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock
 
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 > 📊 Level ⭐⭐ | 32.4KB | `entities/secure-ai-agents-policy-lambda-interceptors-aws.md`
 
 # Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Secure AI agents with Policy and"))
-    Prerequisites
-    Request flow
-    Policy enforcement in AgentCore
-      Design 1 Policy only
-      Policy evaluation results for
-      Benefits of policy-based enforcement
-    Interceptors for dynamic control
-      Design 2 Interceptor only
-      Call flow for the
-      Dynamic tool filtering with the
-    When to use Policy compared to
-    Combining Policy and Lambda
-      Design 3 Policy Interceptor
-      Policy evaluation results for
-    End-to-end implementation
-      Step 1 Pre-deploy generate
-      Step 2 CDK deploy
-      Step 3 Validate with test requests
-    Observability end-to-end
-```
 
 ## Prerequisites
 
@@ -468,10 +404,10 @@ Lambda 拦截器可以作为 AgentCore Gateway 的中间件——Gateway 负责�
 
 ## 相关实体
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/295-amazon-bedrock.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/566-amazon-bedrock-agentcore.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/566-amazon-bedrock-agentcore.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/074-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/281-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/279-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 

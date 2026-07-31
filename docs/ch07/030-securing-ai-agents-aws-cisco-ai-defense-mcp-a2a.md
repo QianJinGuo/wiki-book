@@ -8,56 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Securing AI Agents AWS Cisco AI"))
-    企业 AI Agent 部署的三盲区
-    AI Registry Cisco AI Defense 的三层防护
-    行业意义 企业 AI 安全的标准化时刻
-    与 U Of T Ai Worm Cleverhans
-```
-
 ## 摘要
 
 AWS 和 Cisco AI Defense 在 2026 年 5 月发布合作方案，针对 MCP（Model Context Protocol，2024-11 推出）、A2A（Agent-to-Agent Protocol，2025-04 推出）和新近兴起的 Agent Skills 在企业基础设施中的规模化部署提供安全护栏。核心交付物是 AWS 主导的开源项目 **AI Registry** 与 Cisco AI Defense 的扫描能力集成——在统一控制平面下完成可见性、供应链扫描、合规审计三件大事，把"人工数周评审"压缩为"自动扫描 + 必要时人工复核"。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 - **协议普及速度**：MCP 半年内被企业广泛采用，企业常管理数十到数百个 MCP servers
 - **三大安全缺口**：可见性盲区（不知道部署了哪些 Agent / Tools）、安全评审瓶颈（人工流程数周级）、合规审计缺位（无自主 Agent 审计踪迹）
@@ -118,7 +73,7 @@ AWS/Cisco 把企业 AI 部署的核心痛点归纳为三个盲区，每个盲区
 3. **"扫描 + 人工复核"成为合规基线**：企业 AI 部署的合规要求从"事后审计"升级为"事前扫描 + 事中标记 + 事后追溯"
 4. **MCP/A2A 从"开发者协议"升级为"企业协议"**：随着安全护栏的成熟，MCP/A2A 不再只是 Anthropic / Google 的实验性协议，而是企业级基础设施
 
-### 与 [U Of T Ai Worm Cleverhans Research](../ch05/094-ai.html) 的连接
+### 与 [U Of T Ai Worm Cleverhans Research](../ch05/095-ai.html) 的连接
 
 U of T CleverHans 团队展示的 AI Worm 揭示的威胁场景，与本文描述的"自服务开通 + 安全护栏"形成直接对照：
 
@@ -137,7 +92,7 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 - **审计日志**：所有调用留痕，支持合规审计
 - **策略执行**：统一的工具白名单、调用频率限制
 
-这与 [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki/blob/main/entities/qy_zaCZTCs1Ql3BIFmBMgg.md) 中 Claude Code Subagent 的 `description` 路由机制形成有趣对照——Subagent 是"agent → 工具"的小尺度路由，MCP Gateway Registry 是"agent → 工具"的企业级路由。两者本质上是同一种抽象在不同尺度的实现。
+这与 [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki/blob/main/entities/qy_zacztcs1ql3bifmbmgg.md) 中 Claude Code Subagent 的 `description` 路由机制形成有趣对照——Subagent 是"agent → 工具"的小尺度路由，MCP Gateway Registry 是"agent → 工具"的企业级路由。两者本质上是同一种抽象在不同尺度的实现。
 
 ## 实践启示
 
@@ -151,18 +106,18 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 
 ## 相关实体
 
-- [U Of T Ai Worm Cleverhans Research](../ch05/094-ai.html)
-- [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki/blob/main/entities/qy_zaCZTCs1Ql3BIFmBMgg.md)
-- [Claude Code Harness Deep Understanding](../ch01/422-claude-code-harness-deep-understanding.html)
+- [U Of T Ai Worm Cleverhans Research](../ch05/095-ai.html)
+- [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki/blob/main/entities/qy_zacztcs1ql3bifmbmgg.md)
+- [Claude Code Harness Deep Understanding](../ch01/423-claude-code-harness-deep-understanding.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/120-harness-engineering.html)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/298-ai-agent.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/030-ai-agent.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 - [Mcp Protocol Ecosystem](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 - [Llm Security Red Teaming](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-security-red-teaming.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](../ch05/094-ai.html)
+- [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](../ch05/095-ai.html)
 
 ---
 

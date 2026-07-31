@@ -4,66 +4,11 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/cli-anything.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CLI-Anything"))
-    Key Facts
-    Core Components
-      CLI-Hub
-      SKILL 格式
-      Agent Harness
-    Agent 兼容性
-      Blender 3D 无人机建模
-      FreeCAD 好奇号月球车
-      Drawio 完整 HTTPS 握手流程图
-    设计哲学 软件eating向的范式转换
-    技术架构 三层解耦
-    与 OpenCLI 的差异化定位
-    工具层战争的战略意义
-    工具封装的标准化的价值
-```
-
 ## Overview
 CLI-Anything 是由 HKUDS 实验室（香港大学数据科学实验室）开源的 Agent 工具扩展框架，Stars 32.4k（GitHub），核心目标是将**任意软件**转化为 AI Agent 可调用的标准化 CLI 工具。
 > "Today's Software Serves Humans👨‍💻. Tomorrow's Users will be Agents🤖."
 
 ## Key Facts
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | Fact | Detail |
 |------|--------|
 | GitHub | https://github.com/HKUDS/CLI-Anything |

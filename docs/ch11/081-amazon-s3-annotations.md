@@ -8,60 +8,7 @@
 
 Amazon S3 推出 Annotations 功能，允许直接在对象上附加大量结构化元数据，无需维护独立的元数据库。该功能面向 AI Agent 工作流设计——Agent 需要在无人干预的情况下发现、理解和处理数据。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon S3 Annotations 对象级丰富可查询元数据"))
-    与现有元数据机制对比
-    查询能力
-    跨行业使用场景
-    AI Agent 工作流集成
-    CLI 操作
-    定价与可用性
-    差异化分析
-```
-
 ## 核心能力
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 | 维度 | 规格 |
 |------|------|

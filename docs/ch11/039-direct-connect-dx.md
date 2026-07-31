@@ -8,63 +8,7 @@
 
 > AWS China Blog 2026-06-03 发布的中国区实战迁移指南，梳理 Direct Connect 节点搬迁的 6 步流程 + DX+VPN 备份 + DX+DX 备份两种典型冗余场景的差异化迁移路径。重点是 BGP 流量工程（BGP Community 标签、Local Preference）、BFD 故障检测秒级切换、维护窗口纪律。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Direct Connect DX 迁移最佳实践"))
-    一 设计考虑与最佳实践
-    二 迁移过程 6 步
-    三 场景一 DX VPN 备份 成本敏感型
-    四 场景二 DX DX 备份 高 QoS 要求型
-    关键技术细节
-      BGP 流量工程 核心
-      维护窗口纪律
-    核心概念参考表
-    双轨制冗余架构的设计哲学
-    BGP 流量工程的双向控制机制
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 ### 一、设计考虑与最佳实践
 - 选择新站点前参考 [Direct Connect 站点列表](https://aws.amazon.com/cn/directconnect/locations/)
@@ -213,11 +157,11 @@ BFD（Bidirectional Forwarding Detection）在其中的作用是将故障检测�
 ## 来源
 
 ## 相关实体
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch11/290-aws-devops-agent.html)
-- [Habby Game Aws Devops Agent](ch11/290-aws-devops-agent.html)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch11/292-aws-devops-agent.html)
+- [Habby Game Aws Devops Agent](ch11/292-aws-devops-agent.html)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/047-aws-devops-agent-mcp-server.html)
 - [Amazon Iot Core Kiro Industrial Data Pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-iot-core-kiro-industrial-data-pipeline.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/208-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/210-cost-effective-deployment-of-vision-language-models-for-pet.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/direct-connect-dx-迁移最佳实践.md)
 - [databricks storage ecosystem & opensharing：企业数据治理从 migrate e](../ch01/223-rag.html)

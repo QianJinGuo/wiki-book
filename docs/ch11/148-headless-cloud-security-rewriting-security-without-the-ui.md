@@ -4,59 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/sysdig-headless-cloud-security.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Headless cloud security Rewriting"))
-    要点
-    核心理念 从人类交互到机器原生安全
-    市场背景 AI 压缩攻击窗口 传统安全模型失效
-    技术架构 CNAPP 运行时遥测 Agent Skills
-    与传统 CNAPP 的本质区别
-    安全运营的架构重构是必选项 而非可选项
-    数据质量决定了 AI 安全的上限
-    Agent Skills 是安全 AI 落地的关键桥梁
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 （见原文）
 
 ## 要点
@@ -66,10 +14,10 @@ graph TB
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [CloudSectiDbits: Masso - Cognito SSO Bypass](ch11/252-cloudsectidbits.html)
-- [Vietnam to develop domestic cloud](../ch01/1116-opd.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [CloudSectiDbits: Masso - Cognito SSO Bypass](ch11/254-cloudsectidbits.html)
+- [Vietnam to develop domestic cloud](../ch01/1119-opd.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/376-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)
 ## 深度分析

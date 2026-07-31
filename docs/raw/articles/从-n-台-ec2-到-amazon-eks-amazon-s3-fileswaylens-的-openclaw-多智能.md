@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/n-ec2-amazon-eks-amazon-s3-fil
 ingested: 2026-06-12
 feed_name: AWS China Blog
 source_published: 2026-06-12
-type: article
+type: raw-article
 source_type: rss
 sha256: "a3c5e5f7eef60dc8deb64e7b2eac8fd826c9b4cf1de6f57bb2d37be597bcd09b"
 ---

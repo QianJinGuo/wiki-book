@@ -9,71 +9,14 @@
 
 **Kimi Work** 是**月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面**的通用 Agent 产品（2026-06 Beta 发布）。与 **OpenAI 把 Codex 并入 ChatGPT** 同一时间发布，标志 **"Vibe Working" 时代开启**——AI Agent 主战场从写代码迁移到**普通知识工作者的日常工作**。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Kimi Work 通用 Agent 战场从云端迁移到本地"))
-    三个关键事件
-      OpenAI Codex 周活 500 万 并入 ChatGPT
-      Anthropic 提前布局
-      Kimi 发布 Kimi Work Beta
-    大技术特性
-      Harness 搬到用户电脑上 核心架构决策
-      Agent 集群 默认并行 最多 300 个分身
-      Kimi WebBridge 浏览器桥接
-    大测试场景实测
-    长程连贯性的工程细节
-    Vibe Coding Vibe Working 范式转移
-    模型公司在通用 Agent 上的天然优势
-    Kimi Work 的局限 官方自评
-    核心断言
-```
-
 ## 相关实体
-- [Schemaflow Agentic Database Sql Generation Openai Cookbook](../ch04/237-agentic.html)
+- [Schemaflow Agentic Database Sql Generation Openai Cookbook](../ch04/648-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 
 - [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/221-agi.html)
 
 ## 一句话定位
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 **"AI 长任务的真正挑战，不再是上下文窗口有多长，而是 Harness 搭建得好不好。"**—— Harness 决定一切
 
@@ -221,7 +164,7 @@ graph TB
 - Kimi Work = Harness 从云端到本地（**部署层**架构）
 - 共同点：都在"防止上帝文件 / 防止环境割裂"层面做工程化
 
-### vs [Codex 6 职位插件](ch01/517-codex.html)
+### vs [Codex 6 职位插件](ch01/520-codex.html)
 - 之前 Codex 还在"加插件拓展能力"
 - 现在 OpenAI 直接把 Codex 并入 ChatGPT——**赛道战略转向**
 
@@ -250,7 +193,7 @@ graph TB
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层 harness 模型
 - [Rein](../ch03/035-agent.html) —— 4 模块代码架构
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html) —— 工作集视角
-- [Karpathy Vibe Coding → Agentic Engineering](../ch04/237-agentic.html) —— Vibe Coding 原始定义
+- [Karpathy Vibe Coding → Agentic Engineering](../ch04/648-agentic.html) —— Vibe Coding 原始定义
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 

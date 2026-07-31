@@ -2,7 +2,7 @@
 title: "深入理解 AI Agent 时代的驾驭工程 Harness Engineerin 技术极简主义"
 created: 2026-06-17
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 23bda2b7a6d60ab7fca2e79fa0dcc0e2f872f7ff559cdbe88e7eef0bd8bf24da
 ---

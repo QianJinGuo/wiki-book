@@ -5,7 +5,7 @@ source: wechat
 author: Cynthia / 极客公园
 published: 2026-06-02
 ingested: 2026-06-02
-type: raw-archive
+type: raw-article
 tags: [wechat, ai-hardware, cambrian-explosion, baidu-intelligent-cloud, three-player-classification, edge-ai, smart-glasses, ai-toys, smart-appliance]
 sha256: 3c3c73c2cc6b2d1c2e5519f916105a9a41844ac18d8d5bcb23efc229c636c086
 ---

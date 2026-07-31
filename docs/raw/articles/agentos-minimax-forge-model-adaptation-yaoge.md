@@ -2,7 +2,7 @@
 title: "MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战"
 created: 2026-05-28
 updated: 2026-05-28
-type: raw
+type: raw-article
 tags: [agentos, minimax, forge, model-training, context-management, prefix-tree-merging, windowed-fifo, composite-reward, openrouter, peter-steinberger, openclaw]
 sources:
   - https://mp.weixin.qq.com/s/0vAWHzlEZnhZYolHTvM1bg

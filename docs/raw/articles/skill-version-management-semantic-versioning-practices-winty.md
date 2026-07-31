@@ -2,7 +2,7 @@
 title: "Skill 改一版烂一版？少了版本号谁都救不了"
 created: 2026-06-09
 updated: 2026-06-09
-type: article
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/weA8CMZBI9B295tNft10WQ"
 ingested: 2026-06-09
 sha256: "skill_version_management_winty_2026"

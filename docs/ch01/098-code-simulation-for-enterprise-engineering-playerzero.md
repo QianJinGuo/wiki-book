@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 6.1KB | `entities/hs.playerzero-ai-code-review.md`
 
-
 ## 核心要点
 - **代码审查 vs 代码模拟的根本区别**：代码审查评估变更在隔离状态下是否正确，代码模拟则追踪变更进入真实系统后的行为——包括跨服务的数据流、系统状态变化、静待分析无法覆盖的集成风险 
 - **Sim-1模型**：PlayerZero的模拟引擎，结合代码嵌入、依赖图谱和生产遥测数据，在不需编译、部署或预发布环境的前提下预测变更行为，已执行超过75万次生产模拟 
@@ -12,41 +11,6 @@
 - **与观测工具的关系**：观测工具告诉你发生了什么，代码模拟告诉你什么可能出错——二者互补而非竞争 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 **代码审查的边界在哪里**
 这篇文章的核心命题是：传统AI代码审查（包括当前大多数工具）聚焦于文件级别的代码质量——能发现拼写错误、安全问题、提出更好的模式建议，但它无法回答一个关键问题：这个PR合并后会不会破坏结账流程、会不会让API慢40%。这是一个关于视角的根本差异：代码审查是静态的、局部的；代码模拟是动态的、全局的 。
 文章引用了一个非常精准的比喻："review tells you the code is written correctly, simulation tells you whether it'll work in production"（审查告诉你代码写得对不对，模拟告诉你代码在生产环境能不能用）。这类似于读地图和实际跑路线的区别。代码审查看到的是代码本身的逻辑，代码模拟看到的是代码在真实系统中的行为轨迹 。
@@ -67,9 +31,9 @@ Sim-1的模拟方法值得关注：它结合代码嵌入（code embeddings）、
 从文章描述来看，PlayerZero的核心差异化在于：（1）跨仓库/跨服务的全局系统建模能力；（2）不需要staging环境的预测能力；（3）75万次生产模拟积累的模型基础。对于拥有多个仓库、复杂微服务架构、且工程团队规模较大的企业，这种能力具有较高的实用价值。但对于单体应用或小规模团队，传统代码审查结合完善的测试套件可能已经足够 。
 ## 相关实体
 - [Code Simulation For Enterprise Engineering Playerz](ch01/098-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Engineering Roles Shift From Developing Code To Ma](../ch05/080-engineering-roles-shift-from-developing-code-to-managing-ai.html)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1148-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
-- [Low Code Api Integration](../ch03/075-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
+- [Engineering Roles Shift From Developing Code To Ma](../ch05/081-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1169-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Low Code Api Integration](../ch03/074-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](ch01/146-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hs.playerzero-ai-code-review.md)

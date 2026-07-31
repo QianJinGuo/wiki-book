@@ -3,7 +3,7 @@ title: "多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践"
 source_url: "taobao-smart-shopping-guide-agent-evaluation-pzmx"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: 731b19456d3b9092e06fda58733d2ff5905c4c525d5bdfa5260613204029d310
 ---
 ---

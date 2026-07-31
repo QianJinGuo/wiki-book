@@ -8,60 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-beta-foundation-model-company-advantage.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Kimi Work Beta 通用 Agent 一定来自模型公司"))
-    为什么通用 Agent 的壁垒在模型层而非应用层
-    模型公司做 Agent 的结构性优势
-    Vibe Working 意图驱动的任务执行范式
-    Kimi Work Beta 的技术架构
-```
-
 ## 摘要
 
 Kimi Work Beta 是 Moonshot AI（月之暗面）推出的通用 AI Agent 产品，其核心理念主张：**真正通用的 AI Agent 必须来自基础模型公司**。这一判断基于一个根本性的观察——Agent 的能力边界本质上是其底层模型能力的外延，而非独立构建的中间层应用。当模型公司直接掌控模型层与 Agent 层的协同设计（co-design）时，才能打通推理能力、工具调用、上下文管理、长期记忆与安全策略之间的全链路闭环。本文深度剖析这一论断背后的技术逻辑、工程约束与竞争格局，探讨为何通用 Agent 不是应用层创业的机会，而是一场基础模型公司的专属竞赛。
 
 ## 核心要点
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 1. **模型即 Agent 本体**：通用 Agent 的智能上限由底层模型决定，应用层无论堆叠多少工程技巧，都无法突破模型推理能力的硬天花板
 2. **Co-design 优势**：模型公司与 Agent 产品共享同一技术栈，能够在模型训练阶段就针对 Agent 场景进行专项优化（如工具调用、长时间推理、多轮对话记忆）
@@ -147,13 +98,13 @@ Kimi Work Beta 的整体架构可以划分为四层：
 
 ## 相关实体
 
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/517-codex.html) — Vibe Working 范式的详细解析
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html) — Claude Code 的工程实现深度解读
+- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/520-codex.html) — Vibe Working 范式的详细解析
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html) — Claude Code 的工程实现深度解读
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html) — Agent 记忆系统的架构设计
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html) — Agent 原理与工程实践全景
-- [Claude Code First Year Retrospective Boris Cat 2026](../ch03/078-claude-code.html) — Claude Code 一周年回顾，验证「模型公司做 Agent」路线
+- [Claude Code First Year Retrospective Boris Cat 2026](../ch03/077-claude-code.html) — Claude Code 一周年回顾，验证「模型公司做 Agent」路线
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Harness 工程与 Agent 能力的关系
-- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/989-anthropic.html) — 数据基础设施对 Agent 能力的制约
+- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/1004-anthropic.html) — 数据基础设施对 Agent 能力的制约
 
 ---
 

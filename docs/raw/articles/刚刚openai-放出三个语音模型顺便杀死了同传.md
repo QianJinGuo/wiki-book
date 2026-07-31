@@ -1,6 +1,6 @@
 ---
 title: "刚刚，OpenAI 放出三个语音模型，顺便杀死了「同传」"
-type: source
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/R7jRMttQJHoPnh0SZg1IVg
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

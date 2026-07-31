@@ -8,60 +8,11 @@
 
 # Understand-Anything：代码知识图谱
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("老代码克星 36k Star的 AI 神器"))
-    核心功能
-    安装
-    补充 1 README 的设计哲学Graphs that
-    补充 2 知识库分析能力 不只服务代码
-    补充 3 完整的多语言支持列表
-    补充 4 风险与边界的两个具体警示
-```
-
 ## 一句话
 
 Understand-Anything（36k stars）：Claude Code 插件，`/understand` 命令将代码库生成交互式知识图谱，MIT 开源。
 
 ## 核心功能
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **Guided Tours**：按调用链生成代码阅读路线
 - **Diff Impact Analysis**：改动影响分析，增量扫描
@@ -103,7 +54,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 ## 相关实体
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)
 - [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/035-agent.html)
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/330-ai-coding-agent.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/333-ai-coding-agent.html)
 - [Rag技术框架的演进方向](../ch01/223-rag.html)
 - [Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具

@@ -2,7 +2,7 @@
 title: "Disgruntled researcher releases two more Microsoft zero-days"
 created: 2026-05-18
 updated: 2026-05-18
-type: article
+type: raw-article
 platform: The Register
 source_url: https://www.theregister.com/security/2026/05/13/disgruntled-researcher-releases-two-more-microsoft-zero-days/5239758/
 tags: [vietnam, cloud-computing, government, data-sovereignty]

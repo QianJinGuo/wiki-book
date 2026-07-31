@@ -2,60 +2,9 @@
 
 ## Ch12.034 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南
 
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 > 📊 Level ⭐⭐ | 10.6KB | `entities/amazon-bedrock-api-security-guide.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-api-security-guide.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("别让你的 Amazon Bedrock 模型为他人打工API"))
-    要点
-    凭证管理的本质 信任边界的设计
-    Bedrock 的风险特征 为何它比 EC2S3 更脆弱
-    访问控制的层次 从 IAM Policy 到 SCP
-    监控的本质 异常识别的难点与解法
-    立即可落地的措施
-    架构设计建议
-    监控体系建设优先级
-```
 
 ## 摘要
 Amazon Bedrock 模型调用安全防护指南，涵盖凭证管理、访问控制、持续监控三个层面。
@@ -128,30 +77,30 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-api-security-guide.md)
 
 ## 相关实体
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/235-openclaw.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/237-openclaw.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/272-aws-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/054-prowler-genai.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11/137-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/306-amazon-nova.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/704-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Autonomous Vulnerability Hunting with MCP](../ch01/1274-llm.html)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Autonomous Vulnerability Hunting with MCP](../ch01/637-llm.html)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/671-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/306-amazon-nova.html)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](../ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
-- [LLM raiders and how to repel them](../ch01/1274-llm.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/094-ai.html)
+- [LLM raiders and how to repel them](../ch01/637-llm.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/095-ai.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/300-bedrock.html)
-- [LLM raiders and how to repel them](../ch01/1274-llm.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/561-amazon-bedrock-agentcore.html)
-- [CloudSectiDbits](../ch11/252-cloudsectidbits.html)
+- [LLM raiders and how to repel them](../ch01/637-llm.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/566-amazon-bedrock-agentcore.html)
+- [CloudSectiDbits](../ch11/254-cloudsectidbits.html)
 - [Schemata Dod Contractor Api Flaw Military Data Exposure](https://github.com/QianJinGuo/wiki/blob/main/entities/schemata-dod-contractor-api-flaw-military-data-exposure.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

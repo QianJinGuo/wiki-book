@@ -3,7 +3,7 @@ title: "langsmith trajectory evals"
 source_url: https://docs.smith.langchain.com/evaluation/how_to_guides/trajectory
 ingested: 2026-05-01
 sha256: c3bff4f0d77f0f6a8172f387c87f5d8c4b7806903292a2461d8158f0b20f7444
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: []

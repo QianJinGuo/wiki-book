@@ -2,7 +2,7 @@
 title: "业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层"
 created: "2026-06-06"
 updated: "2026-06-06"
-type: raw
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/qysRL9BeSLt_Zpmu889xeA"
 source_name: "AI 小老六 WeChat MP"
 author: "AI 小老六"

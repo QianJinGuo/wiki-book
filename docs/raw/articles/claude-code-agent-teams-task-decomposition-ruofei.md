@@ -12,7 +12,7 @@ date: 2026-05-27
 created: 2026-05-28
 updated: 2026-05-28
 tags: [claude, claude-code, agent, multi-agent, agent-teams, task-decomposition, permissions, workflow, architecture]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: ab8eeaeed73e7f47e6c2ad849781b978fecf3c26b16fb05e90e2467920c0ec64
 ---

@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/F2JcvwDDT99F_WZexowHGg"
 published_date: "2026-05-20"
 feed_name: "微信公众号"
 tags: [llm-wiki, knowledge-management, karpathy, rag, agent-memory]
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: "pass"

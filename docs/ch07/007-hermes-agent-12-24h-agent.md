@@ -6,24 +6,6 @@
 
 # Hermes Agent 满配 12 层配置完整指南
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 满配 12 层配置完整指南 从裸装到"))
-    核心定位 满配 装满
-    全文 20 章 4 部分结构
-    层配置清单 核心框架
-    L1 安装基线 先保证 Hermes 本体稳定
-    L2 输入系统 6 层协议栈 核心创新
-      SOULmd 不要写玄学人格 要写工作协议
-      USERmd vs MEMORYmd 核心区分
-      记忆初始化 让 Hermes 通过访谈帮你写
-    阶段路线图 核心方法论
-    核心金句
-```
-
 ## 核心定位：满配 ≠ 装满
 
 > "**很多人理解的满配，是装尽可能多的插件、接尽可能多的 MCP、开尽可能多的工具、配尽可能复杂的多 Agent，让它看起来像一个很酷的 AI 控制台。**"
@@ -43,44 +25,7 @@ mindmap
 
 ## 相关实体
 
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
-
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/742-9.html)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/755-9.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-12-layer-full-configuration-guide.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)

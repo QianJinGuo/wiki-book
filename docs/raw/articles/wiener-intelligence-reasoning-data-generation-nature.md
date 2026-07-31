@@ -5,7 +5,7 @@ source_site: "机器之心"
 author: "机器之心发布"
 ingested: "2026-07-08"
 sha256: "7a3dece45dd6ab41cb3730d262e7d4b7f2280391d21814250af67b23ebbfebe5"
-type: raw
+type: raw-article
 tags:
   - reasoning-data-generation
   - agent

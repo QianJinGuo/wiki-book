@@ -7,7 +7,7 @@ ingested: 2026-05-08
 feed_name: AWS China ML
 source_published: 2026-05-05T15:20:54Z
 sha256: 1a415bea1856
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

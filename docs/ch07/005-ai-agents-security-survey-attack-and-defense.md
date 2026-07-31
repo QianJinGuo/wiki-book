@@ -4,37 +4,6 @@
 
 > 📊 Level ⭐⭐ | 24.2KB | `entities/ai-agents-security-survey-attack-defense.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Agents Security Survey Attack"))
-    一 威胁格局概述
-      三大核心挑战
-      Agent vs 传统软件的安全差异
-    二 攻击向量分类
-      主要攻击向量矩阵
-      Tool Poisoning 企业 Agent 安全的核心缺陷
-      Bishop Fox AIMap 发现的互联网暴露问题
-    三 分层防御体系
-      全生命周期安全 清华大学方寸体系
-      Fangcun Observer 看见真实动作 守住安全边界
-      Fangcun Guard 8ms 安全审核变基础设施
-    四 MCP 协议的运行时验证层
-      三重验证机制
-      Behavioral Specification
-      分阶段 rollout 策略
-    五 攻击测试能力 AIMap
-      风险评分
-      攻击测试模块
-    六 Agent 生命周期各阶段威胁与缓解
-      按 Agent 生命周期阶段分类
-      分层防御矩阵
-    七 关键引述
-    八 相关概念
-```
-
 ## 一、威胁格局概述
 
 ### 1.1 三大核心挑战
@@ -60,42 +29,6 @@ AI 代理的凭证（如 API 密钥、服务账户令牌）一旦泄露，攻击
 ---
 
 ## 二、攻击向量分类
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### 2.1 主要攻击向量矩阵
 
@@ -322,10 +255,10 @@ Bishop Fox 的 AIMap 提供了互联网规模的 AI Agent 安全测试能力：
 ## 九、相关实体
 
 - [清华大学方寸跃迁团队](../ch03/035-agent.html) — 全链路安全体系
-- [VentureBeat 工具投毒报告](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — behavioral integrity vs artifact integrity
-- [Bishop Fox AIMap](../ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — AI Agent 安全测试框架
-- [AWS + Cisco AI Defense](../ch04/298-ai-agent.html) — 企业级 Agent 安全生态
-- [Amazon Bedrock AgentCore Identity Security](../ch11/270-aws-bedrock-agentcore.html) — AWS Bedrock 身份安全
+- [VentureBeat 工具投毒报告](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — behavioral integrity vs artifact integrity
+- [Bishop Fox AIMap](../ch04/441-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — AI Agent 安全测试框架
+- [AWS + Cisco AI Defense](../ch04/030-ai-agent.html) — 企业级 Agent 安全生态
+- [Amazon Bedrock AgentCore Identity Security](../ch11/272-aws-bedrock-agentcore.html) — AWS Bedrock 身份安全
 
 ---
 

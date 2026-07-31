@@ -4,58 +4,11 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/wiki-evolver.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Wiki Evolver"))
-    相关查询
-    为什么需要这一层
-    Core Contract
-    Operating Loop
-    Knowledge Ladder
-    与现有系统的分工
-    最值得落地的四个页面
-    定位的本质 元系统而非工具
-```
-
 ## 相关查询
 
 - [Wiki Evolver 工作流程与最佳实践](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-evolver-workflow-best-practices.md) — wiki-evolver cycle 机制、frontier 决策、evaluation harness 与回归测试
 
 ## 为什么需要这一层
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 当前 vault 已经有比较成熟的 ingest / index / log / lint 闭环，也已经有 `[Wiki Master Map](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)`、``、`` 这样的导航与治理面。但这些层更多解决的是"怎么把知识存进去、找出来、维护好"，还没有系统性解决"如何让知识库主动长出新的研究问题、论文候选、工程实践和下一代 Skill"。
 Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/120-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
 
@@ -68,7 +21,7 @@ Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness]
 5. 基于 vault 的 paper / practice 草稿
 6. 治理修复：index / log / lint / links
 7. 改进后的 Skill / checklist / playbook
-这比 `[Skill Craft](ch07/051-skill-craft-claude-skill.html)` 的关注点更上层：Skill Craft 关注 Skill 质量本身，Wiki Evolver 关注整个知识系统如何把价值不断向上提升。
+这比 `[Skill Craft](ch07/052-skill-craft-claude-skill.html)` 的关注点更上层：Skill Craft 关注 Skill 质量本身，Wiki Evolver 关注整个知识系统如何把价值不断向上提升。
 
 ## Operating Loop
 Wiki Evolver 的推荐循环是：

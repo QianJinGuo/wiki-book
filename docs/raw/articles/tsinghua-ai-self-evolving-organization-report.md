@@ -14,7 +14,7 @@ tags: [tsinghua, self-evolving-organization, ai-native-company, agent-runtime, c
 review_value:9
 review_confidence:8
 review_recommendation: strong
-type: raw
+type: raw-article
 sources: []
 provenance_state: archived
 ---

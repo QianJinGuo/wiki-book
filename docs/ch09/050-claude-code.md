@@ -4,60 +4,10 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/claude-code-hackathon-expertise-digitization.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 黑客松 技艺数字化六项目"))
-    六项目解析
-      MedKit 金奖 虚拟诊室
-      Wrench Board 银奖 电路板维修
-      Maieutic 铜奖 编程教学
-    共同内核
-    启示
-    相关
-```
-
 ## 概述
 Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code，一周时间）。六个项目覆盖医疗/维修/教育/创意/建筑/工业六个领域，共同内核：**把锁在少数人脑子里的专业知识，变成更多人能触及的工具**。
 
 ## 六项目解析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### MedKit（🇹🇷 金奖）——虚拟诊室
 **让医学生在 AI 病人身上练手。**
 
@@ -155,17 +105,17 @@ graph TB
    智利 28 万非正式建筑工人没有大学文凭因此在系统里"不存在"^；这类群体的知识一旦失传就无法重建，应该成为 AI 知识保存工作的最高优先级
 
 ## 相关
-- [Claude Code 架构](../ch03/078-claude-code.html)
-- [Anthropic PM Agentic 工作流](../ch04/477-anthropic-pm-agentic.html)
+- [Claude Code 架构](../ch03/077-claude-code.html)
+- [Anthropic PM Agentic 工作流](../ch04/483-anthropic-pm-agentic.html)
 - [AutoResearch 多 Agent 开发](../ch03/035-agent.html)
-- [Agent Memory 模块化框架](../ch04/121-agent-memory.html)
+- [Agent Memory 模块化框架](../ch04/098-agent-memory.html)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/078-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/076-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/089-claude-code-1.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/311-claude-code-subagent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code Subagent 上下文卫生](../ch04/313-claude-code-subagent.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 
 ---

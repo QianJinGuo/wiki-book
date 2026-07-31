@@ -6,59 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/top-10-design-gadgets-creative-professionals-2026.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Top 10 Design Gadgets for"))
-    十款装备一览
-    工具边界的消融 工作站 画板与智能控制器
-    摩擦削减指数作为创意工具的评估框架
-    e-Ink 色屏的实用临界点
-    XPPen 对 Wacom 的挑战 专业色彩工作的民主化
-    构建 2026 创意工具链的层次架构
-    按专业方向的优先级建议
-    采购优先级框架
-```
-
 ## 摘要
 2026 年创意专业工具市场迎来硬件生态的系统性成熟。本文评选的 10 款设计装备以"**摩擦削减指数**"（Friction Reduction Index）为核心评估标准——工具缩短创意意图与最终产出之间的距离，且随使用者技艺提升而增值。覆盖从 iPad Pro M5、MacBook Pro M5 到 reMarkable Paper Pro、Elgato Stream Deck + 等面向图形、UX、动态和品牌设计者的完整工具链。
 
 ## 十款装备一览
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | # | 设备 | 核心定位 | 价格参考 |
 |---|------|----------|----------|
 | 1 | Apple iPad Pro M5 | 便携专业创作Surface | 高 |
@@ -125,7 +76,7 @@ Acoustic        → Sony WH-1000XM6（声学环境管理）
 - **e-Ink 全彩化**：reMarkable Paper Pro 的后续产品可能在两个周期内提供接近完整的专业色彩支持
 
 ## 相关实体
-- [Self-Filming Guide by Hello World Media](../ch01/1243-0.html) — 自拍摄指南，含 Key Light MK.2 类似的打光建议
+- [Self-Filming Guide by Hello World Media](../ch01/127-self-filming-guide-by-hello-world-media.html) — 自拍摄指南，含 Key Light MK.2 类似的打光建议
 - [How Superset built the IDE for AI agents on Vercel](../ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ---

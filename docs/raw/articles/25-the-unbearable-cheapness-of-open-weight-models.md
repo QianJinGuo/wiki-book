@@ -2,7 +2,7 @@
 title: "The Unbearable Cheapness of Open Weight Models – James O'Claire"
 source_url: "https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 001643f68850fc0f47ade22bc0d42c85bb76da08602b9b55cf3821145a7cc366
 ---

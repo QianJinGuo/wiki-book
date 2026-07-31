@@ -8,63 +8,11 @@
 
 > 本文深度探讨 AI Native 编程范式下程序员效率提升的五个维度。不同于传统的 AI 辅助编程文章，本文从"少写代码"的逆向思维出发，重新定义了 AI 时代程序员的角色和核心竞争力。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Code is cheap Dont write anyAI"))
-    核心理念 Code is cheap Dont write any
-    五个效率提升维度
-      代码生成自动化的极限
-      从编码到设计的角色转型
-      AI 原生工具的深度整合
-    大模型的两个底层事实如何决定 Harness 方法论
-    水流理论 从挖水渠到修堤坝的协作范式转换
-    反 slop 与揉搓 实施前最关键的一步
-    多层 Safety Net 代码廉价化时代的工程底线
-```
-
 ## 核心理念：Code is cheap，Don't write any
 
 文章提出一个反直觉的核心观点：在 AI 时代，最好的代码是不需要写的代码。程序员的核心价值从"编写代码"转向"理解问题、设计系统、定义标准"。最近 20 天，作者使用 AI 提交了 70 万行代码、推进 10 个项目同时并行——不是 IDE 补全那种局部辅助，而是将完整任务整包交给 AI 自主完成（读地形、定方案、写实现、跑验证、修 bug）。
 
 ## 五个效率提升维度
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. 代码生成自动化的极限
 AI 代码生成已经从片段补全进化到模块级生成。关键不是写更多的提示词，而是用最少的描述让 AI 理解完整的业务上下文。

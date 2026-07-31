@@ -4,71 +4,11 @@
 
 > 📊 Level ⭐⭐⭐ | 15.2KB | `entities/tokenspeed-agentic-inference-engine.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Tokenspeed Agentic Inference Engine"))
-    Core Architecture
-      Compiler-Backed SPMD Parallelism
-      C FSM Control Plane Python
-      Pluggable Layered Kernel System
-    Performance Benchmarks
-    Agentic Workload Optimization
-      与传统推理场景的区别
-      TokenSpeed 的针对性优化
-      与其他推理引擎的关系
-    技术规格
-    Agentic 推理场景与传统推理场景的本质差异
-    编译器级 SPMD 并行 手动优化的天花板与自动化的差距
-    MLA kernel 的工程价值 从贡献 vLLM 看生态定位
-    PD 分离架构的深意 从资源效率到弹性扩展
-```
-
 ## Overview
 
 TokenSpeed 是由 Lightseek 团队开发的专为 **agentic workloads** 设计的 LLM 推理引擎，旨在为复杂多步 Agent 场景提供接近光速（speed-of-light）的推理性能。与传统推理引擎不同，TokenSpeed 从设计之初就将 Agent 场景的特殊需求——高并发、长上下文、多轮工具调用——纳入核心架构考量，而非作为事后优化点叠加。
 
 ## Core Architecture
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 ### Compiler-Backed SPMD Parallelism Modeling
 
@@ -211,9 +151,9 @@ TokenSpeed 的连续批处理针对 Agent 场景进行了专门调优，但实�
 
 ## 相关实体
 
-- [LightSeek TokenSpeed — TokenSpeed 的姐妹项目，专注于轻量级推理优化](../ch01/1189-lightseek-tokenspeed.html)
-- [GLM-5 Scaling Pain 推理优化 — 高并发 Coding Agent 场景的推理问题复盘](../ch01/551-scaling.html)
-- [AgentCore Managed Harness — AWS 的托管 Harness 平台，与推理引擎紧密配合](ch04/689-agentcore-harness.html)
+- [LightSeek TokenSpeed — TokenSpeed 的姐妹项目，专注于轻量级推理优化](../ch01/1202-lightseek-tokenspeed.html)
+- [GLM-5 Scaling Pain 推理优化 — 高并发 Coding Agent 场景的推理问题复盘](../ch01/557-scaling.html)
+- [AgentCore Managed Harness — AWS 的托管 Harness 平台，与推理引擎紧密配合](ch04/690-agentcore-harness.html)
 
 ## 延伸阅读
 

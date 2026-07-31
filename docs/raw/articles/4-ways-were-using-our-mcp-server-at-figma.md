@@ -3,7 +3,7 @@ title: "4 ways we’re using our MCP server at Figma"
 source_url: "https://www.figma.com/blog/4-ways-were-using-our-mcp-server-at-figma/"
 ingested: "2026-06-19"
 sha256: "a8926e56f7790f99"
-type: article
+type: raw-article
 tags: [article]
 ---
 

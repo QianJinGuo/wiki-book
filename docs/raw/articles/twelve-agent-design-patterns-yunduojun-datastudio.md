@@ -4,7 +4,7 @@ title: "一文读懂 12 个 Agent 工程设计底层逻辑"
 source: "数据派THU / 数据STUDIO / 云朵君"
 ingested: 2026-06-15
 sha256: "b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8091a2b3c4d5e6f7a8b9c0d1e2f3a4"
-type: raw
+type: raw-article
 tags: [agent-design-patterns, harness, claude-code, memory, context, workflow, permission, hooks, bilgin-ibryam, yunduojun]
 ---
 

@@ -5,7 +5,7 @@ source: "wechat|AI技术立文"
 author: "AI技术立文"
 publish_date: "2026-06-12"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: []
 source_type: wechat
 sha256: "bafc7641d7e11a59e665b401a0fc76dd994e2dbd25219d8c25d8d0d7f05535c3"

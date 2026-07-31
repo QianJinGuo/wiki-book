@@ -6,47 +6,11 @@
 
 # Autoresearch: The feedback loop behind self-improving agents
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Autoresearch The feedback loop"))
-    Inner Loop vs Outer Loop The Core
-    Agent Recipes as Knowledge
-    The Human-as-Signal-Source Design
-    From Agent Harnesses to Agent
-```
-
 ## 摘要
 
 Autoresearch is the paradigm where AI agents build feedback loops to improve their own systems, going beyond simple agentic loops. Roland Gavrilescu, co-founder and CEO of Introspection (ex-xAI), describes how the key challenge is designing reward functions for agent self-improvement rather than just building agent loops. The feedback loop design — what signals agents use to assess their own performance and how they act on that assessment — determines whether the system improves or degrades over time. Autoresearch shifts the focus from 'agent doing a task' to 'agent improving how it does tasks', enabling self-maintaining systems that can debug, optimize, and extend their own capabilities without human intervention.
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "ReAct 循环"
-        IN[用户输入] --> TH[思考<br/>Reasoning]
-        TH --> AC[行动<br/>Action]
-        AC --> OB[观察<br/>Observation]
-        OB -->|"新信息触发"| TH
-        TH -->|"推理完成"| OUT[最终回答]
-    end
-    subgraph "记忆"
-        WM[工作记忆<br/>上下文窗口]
-        SM[短期记忆<br/>会话存储]
-    end
-    TH --> WM
-    OB --> SM
-    SM -->|"回忆"| TH
-    classDef think fill:#dbeafe,stroke:#2563eb
-    classDef act fill:#d1fae5,stroke:#059669
-    classDef mem fill:#fef3c7,stroke:#d97706
-    class TH,OUT think
-    class AC,OB act
-    class WM,SM mem
-```
 
 1. Autoresearch extends the concept of agent loops from "agent doing work" to "agent improving how it does work"
 2. The key architectural insight is the split between an **inner loop** (primary system serving users) and an **outer loop** (meta-system that studies and improves the primary system)

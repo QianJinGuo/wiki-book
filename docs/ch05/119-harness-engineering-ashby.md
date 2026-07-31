@@ -6,68 +6,11 @@
 
 # Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 从理论到实战"))
-    Bckeler 理论框架 30 秒回顾
-      三句话核心
-    行为正确性 Harness 最大的缺口
-      真实场景 Agent 工作 3 小时
-      自我指涉的验证回路 结构性死结
-      头部公司不完美但有效的做法
-    上下文腐烂 长任务的隐形杀手
-      Anthropic 两段式架构
-    可驾驭性 被忽略的架构判决
-      高可驾驭性
-      低可驾驭性
-    Ashby 定律 模型越强 需要的纪律越多
-      Thoughtworks 技术雷达的精准表述
-    结语 Harness Engineering 的真正边界
-      对管理者的三件事
-      回到 Karpathy
-    个一手信息来源
-    与现有 harness-engineering 实体的差异化
-```
-
 ## 概述
 
 张海云Helen（AI原生探索者）2026-06-02 Harness Engineering **系列第 4 篇**。**前 3 篇讲理论框架，本文专攻实战区**——理论没覆盖的更深层工程难题：行为正确性自我指涉死结（Anthropic 独立评估官/变异测试/OpenAI 人类不可省）、上下文腐烂与 Anthropic 两段式架构、可驾驭性 4 个架构判决、Ashby 必要多样性定律（模型越强需要纪律越多）。**Böckeler 5 月传感器实验首次公开数据** + Karpathy Sequoia AI Ascent 六行工作模式首次系统化对接 Harness。核心判断：**Harness Engineering 是一门关于"控制的边界在哪里"的工程学科**——知道什么不能控制和知道什么能控制同样重要。
 
 ## 核心命题
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 **Karpathy 在 Sequoia AI Ascent 上的判断**：vibe coding 已过时，**agentic engineering 才是 Software 3.0 时代的专业范式**。
 
@@ -321,7 +264,7 @@ harness 是 AI 的"操作系统"——每个组件都应有单元测试和集成
 
 ## 相关实体
 - [Harness Engineering](ch05/120-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/120-harness-engineering.html)
 - [Harness Engineering Alibaba Java Case Study](ch05/120-harness-engineering.html)
 - [Tencent Cdn Lego Harness](ch05/009-harness.html)

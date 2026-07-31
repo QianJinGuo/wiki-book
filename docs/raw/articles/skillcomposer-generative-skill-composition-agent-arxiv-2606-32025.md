@@ -4,7 +4,7 @@ source_url: "https://mp.weixin.qq.com/s/h4TDzw-6YSc93DSi4hxzDg"
 author: "AGI Hunt"
 created: 2026-07-02
 updated: 2026-07-02
-type: raw
+type: raw-article
 tags: [skill-composition, agent-skills, skill-selection, generative-retrieval, arxiv]
 ingested: 2026-07-02
 sha256: 7ba5535a7d582327483b338f86417a9ad888eafce174e10437148ab708a42e60

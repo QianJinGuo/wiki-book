@@ -6,7 +6,7 @@ feed_name: "大淘宝技术"
 author: "雨一（直播&AI应用技术团队）"
 published: 2026-05-27
 created: 2026-05-27
-type: raw
+type: raw-article
 tags: [ai-sre, code-quality, agent-harness, automation, taobao, enterprise-ai]
 sha256: a5d6ab593988ac491de08a7eee8a9378d723f129878c8343bf6a71685a7e0f73
 ---

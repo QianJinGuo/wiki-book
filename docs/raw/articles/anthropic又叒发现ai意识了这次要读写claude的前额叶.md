@@ -3,7 +3,7 @@ title: "Anthropic又叒发现AI意识了，这次要读写Claude的前额叶"
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/AJEFlX2sg4fC4XpNT9WXhw"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 56
 tags: [raw]
 sha256: "717813dc5fb89c3cd460921b3572324abda268960fd09ee5b6ae94f506854313"

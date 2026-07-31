@@ -6,60 +6,11 @@
 
 # Wiki Evolver Skill System Design (GPT-5.5 Copilot Session)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Wiki Evolver Skill System Design"))
-    设计哲学 涌现层的缺失
-    Skill 目录结构
-    Core Contract 每次运行至少产出一个 durable
-    Operating Loop 六步循环
-    从采集器到操作系统
-    Knowledge Ladder 的层次设计
-    与现有 Skill 生态的关系
-    与 Agent 记忆系统 的关联
-```
-
 ## 摘要
 
 本文记录了一次 GPT-5.5 Copilot 会话中产出的 wiki-evolver Skill 系统设计。核心判断是：**不要再做一个「更强采集器」，而是做一个上层编排 Skill**——`wiki-evolver` 把已有的 `web-content-reviewer` 和 `llm-wiki` 变成一个长期自进化系统。知识库必须持续产生问题、连接、论文、工程实践和下一代 Skill，而不仅仅是被动积累来源。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 设计哲学：涌现层的缺失
 
@@ -189,11 +140,11 @@ wiki-evolver 的 Knowledge Ladder 本质上是一个记忆系统的层次模型�
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wiki-evolver-skill-system-design-gpt55-copilot-session.md)
 

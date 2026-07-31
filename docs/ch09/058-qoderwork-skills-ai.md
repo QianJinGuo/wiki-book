@@ -8,56 +8,11 @@
 
 > 大淘宝技术团队系统总结了QoderWork Skills开发的方法论与工程体系，提出了由编排层（SKILL.md）、参数层（config.yaml）、实现层（scripts/）和知识层（references/）构成的四层分离架构。通过用户洞察报告、AB实验分析等自研Skill的实战经验，提炼了Description定义、流程编排、配置模板化及渐进式披露等关键开发技巧，旨在通过工程化手段实现团队知识沉淀与标准化，释放人力聚焦高价值业务决策。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("QoderWork Skills 开发实践 从传统数科到 AI"))
-    四层分离架构的设计理性
-    Follow Builders vs Frontend
-    从Idealab RAG到QoderWork
-    测试驱动Skill开发的70-80法则
-```
-
 ## 摘要
 
 本文以作者从传统数据科学（数科）向AI数科转型的实践为背景，系统阐述了QoderWork Skills的开发方法论与工程体系。核心洞见是：Skill不是独立的工具或应用，而是给AI Agent的一份"领域专家手册"——将领域知识、标准流程及避坑指南封装为AI Agent可执行的"数字助手"。文章通过对比Follow Builders和Frontend Slides两个优秀Skill案例，以及用户洞察报告、AB实验分析两个自研Skill的实战经验，深入分析了SKILL.md的编排职责、config.yaml的模板化设计哲学、scripts/的确定性逻辑封装、references/的渐进式披露策略。特别值得一提的是，文章揭示了"Skill开发中70-80%的工作量在于测试而非编写"这一反直觉事实，以及"给代码不如给流程"的核心原则。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 1. **四层分离架构**：SKILL.md（编排层，只负责流程编排和决策指引，不嵌入大段实现代码）+ config.yaml（参数层，模板而非表单，用`auto`占位符让运行时填充）+ scripts/（实现层，封装确定性逻辑确保执行一致性）+ references/（知识层，渐进式披露详细原理和背景知识）
 2. **SKILL.md的核心原则**：控制在200行以内（实测170行和133行效果最佳），只回答四个问题——何时触发（触发条件）、有哪些步骤（步骤编排）、每一步调用哪个脚本的哪个函数（实现委托）、遇到异常如何决策（判定标准）
@@ -109,7 +64,7 @@ graph TB
 - 反复测试直到Agent在不同温度参数下都能稳定产出符合Schema的输出
 - 通过`find-skills`元Skill检索社区已有方案，避免重复造轮子
 
-这一数字与[Agent配置模型](../ch04/271-skill.html)中"配置需要反复调参"的经验高度一致——AI工程的测试成本远高于传统软件工程，因为概率性系统的行为空间远大于确定性系统。
+这一数字与[Agent配置模型](../ch04/273-skill.html)中"配置需要反复调参"的经验高度一致——AI工程的测试成本远高于传统软件工程，因为概率性系统的行为空间远大于确定性系统。
 
 ### 5. "给代码不如给流程"的深层含义
 
@@ -135,9 +90,9 @@ Agent不擅长的事情：把控商业数据分析流程、理解隐性业务约
 ## 相关实体
 
 - [Harness Engineering探索之旅](../ch05/120-harness-engineering.html)
-- [Agent配置模型](../ch04/271-skill.html)
+- [Agent配置模型](../ch04/273-skill.html)
 - [Agent落地真相](../ch03/035-agent.html)
-- [淘宝数字人Agentic架构](../ch04/237-agentic.html)
+- [淘宝数字人Agentic架构](../ch04/648-agentic.html)
 - [阿里巴巴NL2SQL Harness](../ch05/120-harness-engineering.html)
 - [AI友好后端标准](../ch05/022-ai-friendly.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

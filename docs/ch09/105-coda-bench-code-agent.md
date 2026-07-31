@@ -6,54 +6,11 @@
 
 # CoDA-Bench：Code Agent 数据智能基准
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CoDA-Bench Code Agent 数据智能基准"))
-    被基准设计隐藏的数据发现缺口
-    Kaggle 生态驱动的干扰设计哲学
-    Code Intelligence 与 Data
-    对 Code Agent 生产部署的启示
-```
-
 ## 摘要
 
 CoDA-Bench 是中国人民大学研究团队提出的 Code Agent 联合评估基准，首次同时评测 Code Agent 的 Code Intelligence（代码分析能力）与 Data Intelligence（数据发现能力）。该基准将 Agent 置于包含 1000+ 数据文件的复杂数据目录中，只给一句自然语言问题，不提供文件名、路径或 schema，要求 Agent 自主探索文件系统找到相关数据后再编写代码完成分析。实验发现，当前最佳系统在 CoDA-Bench 上执行准确率仅 61.1%，在更难的 CoDA-HARD 子集上最高为 49.6%，揭示了当前 Code Agent 的真实瓶颈不是"不会写代码"，而是"找不对数据"。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 - **双维度评测**：CoDA-Bench 将 Code Agent 能力拆分为两个正交维度——Code Intelligence（给定明确数据文件和查询时编写正确分析代码的能力）和 Data Intelligence（在复杂目录结构中自主探索文件系统、定位相关数据文件、理解数据 schema 的能力）。
 - **真实数据环境**：基准基于 Kaggle 生态构建数据环境，利用数据集的社区共现关系构建语义相关数据社区。Agent 面对的不是垃圾噪声文件，而是一批"看起来都合理的候选数据"——目标数据和干扰数据往往主题相近、结构相似。
@@ -103,11 +60,11 @@ CoDA-Bench 的发现与生产环境中 Code Agent 的部署经验高度吻合。
 
 ## 相关实体
 
-- [ProgramBench / SWE-agent Benchmark](../ch04/559-programbench-swe-agent-benchmark.html) — 传统 Agent 基准，主要关注代码修改能力
-- [VitaBench 2.0](../ch01/913-20.html) — 真实生活场景中长期动态用户建模基准，互补关注个性化维度
+- [ProgramBench / SWE-agent Benchmark](../ch04/564-programbench-swe-agent-benchmark.html) — 传统 Agent 基准，主要关注代码修改能力
+- [VitaBench 2.0](../ch01/926-20.html) — 真实生活场景中长期动态用户建模基准，互补关注个性化维度
 - [QoderWork 诊断](../ch03/035-agent.html) — 生产环境中 Agent 在复杂目录结构下的行为问题
-- [QoderWork Skills 实践](../ch03/072-skills.html) — 数据科学场景下 Agent 的工作流封装
-- [Agent AI 系统架构](../ch05/090-harness-skill.html) — Agent 系统的工程架构设计模式
+- [QoderWork Skills 实践](../ch03/071-skills.html) — 数据科学场景下 Agent 的工作流封装
+- [Agent AI 系统架构](../ch05/091-harness-skill.html) — Agent 系统的工程架构设计模式
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/raw-coda-bench-code-agent-data-benchmark-renmin-2026.md)
 

@@ -6,22 +6,6 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Native 时代 研发组织何去何从"))
-    组织为何存在 两千年的协调问题
-    组织的形态来自哪里 人的镜像
-    AI 不是新工具 是新协作主体
-    从 Org Chart 到 Execution Graph
-    人既是瓶颈 也是兜底
-    新瓶颈 信息形态的人形偏置
-    管理塌缩的真正含义
-    Platform 三柱架构的分工逻辑
-```
-
 ## 核心要点
 - AI 不是工具，是新的协作主体，其特点与人形成镜像反面：无限注意力、无情绪疲劳、无 context-switch 成本 
 - 组织最小单元正从"人 + 长期关系网"迁移到"任务 + 上下文 + 权限 + 工具"；核心问题从 ownership 变为 routing + governance 
@@ -34,37 +18,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)
 
 ## 组织为何存在：两千年的协调问题
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 把视角拉远来看，组织的演化已持续两千年，本质始终在解决同一个问题：信息如何路由 。
 罗马军团把军队拆成 8→80→480→5000 人的嵌套结构，这是把信息路由协议化——每一层都有人聚合下层、向上传递。1806 年普鲁士被拿破仑击败后重建的"总参谋部"，是中层管理的雏形：一群专门做信息整合和决策预演的人 。1840 年代美国铁路从军队借用这个结构，画出世界上第一张组织架构图——为了避免火车相撞 。Taylor 的科学管理把金字塔做到极致；战后矩阵组织、Spotify Squad、Holacracy、Valve 扁平化，都是各种修补 。
 这两千年里有一件事没变：组织演化的核心约束是人的"管理跨度"——一个人能直接管的下属在 3 到 8 之间 。这个数字不是文化决定的，是人这个生物的硬限制。所以所有组织的形状，本质上都是在这个限制上做的妥协 。
@@ -151,12 +104,12 @@ AI Native 转型最难的部分不是技术，是处理"被转型"的人 。组�
 
 ## 相关实体
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
-- [你不知道的 Agent 原理架构与工程实践](../ch04/355-agent-principle-architecture-engineering-practice.html)
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/357-agent-principle-architecture-engineering-practice.html)
 - [Design Patterns for AI Agents 2026](../ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 
 ---

@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: 6步LLM迁移框架：跨代际自动化评估 / 方案选择与路由 / 成本效益分析
 sha256: c440b749e527

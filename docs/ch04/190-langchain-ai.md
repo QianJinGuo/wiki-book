@@ -4,58 +4,11 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/langchain-harrison-chase-sandbox-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LangChain创始人解读 AI智能体两种沙盒架构"))
-    模式一 智能体在沙盒内运行
-      优势
-      挑战
-    模式二 沙盒作为工具
-      优势
-      挑战
-    选择建议
-    社区讨论要点
-```
-
 ## 核心命题
 
 LangChain 创始人 Harrison Chase 系统分析 AI 智能体与沙盒集成的两种架构模式：智能体在沙盒内运行 vs 智能体在外部运行、将沙盒作为工具调用。两种模式各有明确的优势与挑战，适用于不同场景。
 
 ## 背景
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 智能体需要执行代码、安装软件包、访问文件，必须与主机系统隔离以防止访问凭证、文件或网络资源。沙盒提供了这种隔离，但如何集成沙盒与智能体有两条路线。
 
@@ -124,9 +77,9 @@ graph TB
 5. **Nathan Flurry 的 Sandbox Agent SDK**：专门解决"智能体在沙盒内"模式复杂性，支持 Claude Code、Codex、OpenCode、Cursor、Amp、Pi 等多种智能体，提供统一的 HTTP API 来远程控制沙盒内的智能体  ^[https://mp.weixin.qq.com/s/1ts5cEe3qHN0w3-evQMzuQ]
 
 ## 相关主题
-- [Harness Generator Evaluator Anthropic](../ch01/989-anthropic.html) — Generator-Evaluator 架构
+- [Harness Generator Evaluator Anthropic](../ch01/1004-anthropic.html) — Generator-Evaluator 架构
 - [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) — Agent Harness 工程综述
-- [Pi Openclaw Coding Harness](../ch11/235-openclaw.html) — OpenClaw Coding Harness
+- [Pi Openclaw Coding Harness](../ch11/237-openclaw.html) — OpenClaw Coding Harness
 
 ## 深度分析
 
@@ -148,7 +101,7 @@ Ben Guo 提到的 GPU 机器需求暗示了一个深层趋势：持久沙盒和�
 
 **5. 智能体行为验证是两种模式共同面临的盲区** ^[https://mp.weixin.qq.com/s/1ts5cEe3qHN0w3-evQMzuQ]
 
-Adish Jain 的观点揭示了一个被忽视的问题：无论选择哪种架构，如何验证智能体在沙盒内实际执行的操作都是核心挑战。这与 [Harness Generator Evaluator Anthropic](../ch01/989-anthropic.html) 中 Anthropic 强调的"eval 优先"理念形成呼应——沙盒提供了隔离，但隔离不等于可控。两种模式都需要额外的行为验证层（如 trajectory logging、deterministic feedback sensors），这是当前架构讨论中缺失的关键维度。
+Adish Jain 的观点揭示了一个被忽视的问题：无论选择哪种架构，如何验证智能体在沙盒内实际执行的操作都是核心挑战。这与 [Harness Generator Evaluator Anthropic](../ch01/1004-anthropic.html) 中 Anthropic 强调的"eval 优先"理念形成呼应——沙盒提供了隔离，但隔离不等于可控。两种模式都需要额外的行为验证层（如 trajectory logging、deterministic feedback sensors），这是当前架构讨论中缺失的关键维度。
 
 ## 实践启示
 
@@ -173,7 +126,7 @@ Adish Jain 的观点揭示了一个被忽视的问题：无论选择哪种架构
 Adish Jain 强调的行为测试应该成为沙盒集成的标准环节，而非事后考虑。建议实现：工具调用轨迹记录、沙盒内文件变更审计、执行结果确定性校验。这与 [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) 中 Verification 层的最佳实践一致。
 
 ## 关联阅读
-- [Harness Generator Evaluator Anthropic](../ch01/989-anthropic.html) — Anthropic 的 Generator-Evaluator Harness 架构，提供了智能体评测闭环的设计思路，与沙盒行为验证问题直接相关
+- [Harness Generator Evaluator Anthropic](../ch01/1004-anthropic.html) — Anthropic 的 Generator-Evaluator Harness 架构，提供了智能体评测闭环的设计思路，与沙盒行为验证问题直接相关
 - [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) — Agent Harness 工程的系统性综述，包含沙盒（Execution environment）层的完整分类，对理解两种沙盒架构的行业上下文很有价值
 
 ---

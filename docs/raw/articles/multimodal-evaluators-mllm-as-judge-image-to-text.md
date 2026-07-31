@@ -1,6 +1,6 @@
 ---
 title: Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
-type: source
+type: raw-article
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/multimodal-evaluators-mllm-as-a-judge-for-image-to-text-tasks-in-strands-evals/
 sha256: 4ed014c02ab2

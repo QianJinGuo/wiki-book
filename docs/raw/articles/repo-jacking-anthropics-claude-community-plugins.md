@@ -2,7 +2,7 @@
 title: "Repo-jacking Anthropic's Claude Community Plugins (And the SHAs That Saved Them)"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 38b8b161dc2e231a59822afbc82a049d53a92ac3e3c4c723b1619b0cf44e3657
 ---

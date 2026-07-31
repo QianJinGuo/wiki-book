@@ -18,25 +18,6 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-practical-17ge-versus-6-subagent.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 模式 6-SubAgent 实战 17哥"))
-    Vibe Coding Harness 范式转变
-    单仓重构 Git Submodule 方案
-    6 Sub-Agent 全流程协作
-      两个问题 Anthropic 博客提到
-      个 Agent 拆分
-    Agent Handoff 协议
-      Bug 修复流程 hasbugs 状态
-    测试用例设计 test-case-designer
-    E2E 浏览器测试 Chrome DevTools MCP
-    文档与代码一致性 goal 自动化
-    局限性与教训
-```
-
 ## 1. Vibe Coding → Harness 范式转变
 
 **Vibe Coding = "AI 代写代码，人来统筹状态"**
@@ -52,37 +33,6 @@ mindmap
 **痛点**：Vibe Coding 模式下"调整页面元素"反复和 DUCC（豆包）沟通 2+ 小时，"越改越糟"问题严重。]
 
 ## 2. 单仓重构 — Git Submodule 方案
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 **已有结构**：`versus-fe`（React） + `versus-server`（Go）两个独立仓库 + 各自 `CLAUDE.md` + 跨仓库知识在"人脑中"
 

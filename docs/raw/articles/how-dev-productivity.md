@@ -2,7 +2,7 @@
 title: "How To Measure Development Productivity?"
 source_url: "https://itamargilad.com/how-dev-productivity/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: bf4a57c87a14a5fcb901190086c471205b4d852599517546e0fb767237fa7ef3
 ---

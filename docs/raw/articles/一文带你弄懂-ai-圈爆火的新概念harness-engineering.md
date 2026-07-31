@@ -1,7 +1,7 @@
 ---
 sha256: 6e81ba0dfaf497ef7af905c555fcaf3c9f19776ae88093e691cc1d131c3dfce8
 title: "一文带你弄懂 AI 圈爆火的新概念：Harness Engineering"
-type: source
+type: raw-article
 tags: [mlops, wechat, llm, ai-agent, engineering]
 source: wechat
 source_url: "https://mp.weixi"

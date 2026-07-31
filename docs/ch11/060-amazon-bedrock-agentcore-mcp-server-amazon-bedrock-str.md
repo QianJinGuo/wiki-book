@@ -4,56 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/design-and-practical-application-of-intelligent-agents-in-e-commerce-industry.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("快时尚电商行业智能体设计思路与应用实践 六 借助 Amazon"))
-    MCP Server 如何重塑智能体研发流程
-    三大核心能力支撑全生命周期开发
-    快时尚电商场景的独特挑战与 MCP 解决思路
-    Strands Agents 与 Kiro 的集成架构
-    采用 uv 作为包管理器简化 MCP Server 部署
-    通过 MCP 配置文件实现多服务统一管理
-    利用 MCP Server 覆盖智能体开发全生命周期
-    在大促前利用 MCP 加速问题定位
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 快时尚电商行业智能体设计思路与应用实践（六）借助 Amazon Bedrock AgentCore MCP Server，Amazon Bedrock，Strands Agents，Kiro 实现智能体极速研发 by awschina on 16 12月 2025 in Artificial Intelligence Permalink Share 概述 在快时尚电商行业， 产品生命周期短、上新节奏快、营销活动高频、用户咨询激增且多样化 。这对智能体的研发效率提出了极高要求，系统必须能 快速迭代、即时上线、稳定支撑大规模交互场景 。然而在实际开发中，智能体研发团队往往面临： 传统依赖大量查阅与理解产品文档的研发模式，会显著拉低迭代效率，难以满足快时尚电商对业务敏捷性的要求 集成多个服务（如模型、工具、知识库）时 部署与配置复杂、极易出错 为了保持业务敏捷性，团队需要第一时间获取最佳实践和产品更新，从而持续优化上线效率 在大促、上新节点前，调试与问题排查往往成为最大瓶颈 Amazon Bedrock AgentCore MCP Server 正是为此类高敏捷、高复杂度业务场景而生。它提供 实时文档查询、动态配置管理、部署指导、可观测辅助 ，让智能体研发从 "查文档 + 试错" 为主的低效流程，转向 "自动提示 + 即时验证 + 快速落地" 的工程体验。本文将以构建一个快时尚电商智能客服系统为例，展示如何借助 Amazon Bedrock AgentCore MCP Server、Amazon Bedrock、Strands Agents 与 Kiro，实现智能体的 极速构建与稳定交付 。 什么是 Amazon Bedrock AgentCore MCP Server 及其价值 Model Context Protocol (MCP) 是一个开放标准，用于连接AI模型与外部工具和数据源。Amazon Bedrock AgentCore MCP Server 提供三大核心能力： 智能文档检索 ：无需离开开发环境即可搜索和获取AgentCore文档 部署管理指导 ：提供运行时、Memory、网关的配置和部署最佳实践 实时问题解决 ：在开发过程中快速获取解决方案 传统开发流程 vs MCP加速流程对比： 开发环节 传统方式 使用MCP Server 查找API文档 打开浏览器搜索，切换窗口 在IDE中直接查询，秒级响应 配置参数 手动查阅文档，复制粘贴 MCP提供配置模板和示例 问题排查 搜索引擎查找，论坛提问 MCP提供针对性解决方案 学习最佳实践 阅读长篇文档 MCP提取关键信息，快速上手 Amazon Bedrock AgentCore MCP Server在整个开发流程中的作用 开发流程 MCP Server的加速作用 ───────────────────────────────────────────────── 1. 需求分析 → 搜索类似案例和最佳实践 2. 技术选型 → 获取框架对比和集成指南 3. 架构设计 → 查询配置选项和限制 4. 编码实现 → 获取代码模板和示例 5. 配置部署 → 部署检查清单和命令 6. 测试调试 → 问题排查和日志查看 7. 性能优化 → 优化建议和配置调整 8. 运维监控 → 监控指标和告警配置 接下来，我们将通过实际案例展示MCP Server如何加速开发。 第一部分：安装Amazon Bedrock AgentCore MCP Server 1.1 前置条件 在开始之前，请确保您的环境满足以下要求： Python 3.10或更高版本 AWS CLI 2.0或更高版本 ，并已配置有效的AWS凭证 uv包管理器 （用于运行MCP服务器） 1.2 安装uv包管理器 首先安装uv包管理器，这是运行MCP服务器的必要工具： # Windows (使用PowerShell) powershell -c "irm https://astral.sh/uv/install.ps1 | iex" # macOS/Linux curl -LsSf https://astral.sh/uv/install.sh | sh # 或使用pip安装 pip install uv 1.3 配置MCP服务器 创建或编辑MCP配置文件： Windows: %USERPROFILE%\.kiro\settings\mcp.json macOS/Linux: ~/.kiro/settings/mcp.json { "mcpServers": { "awslabs.amazon-bedrock-agentcore-mcp-server": { "command": "uvx", "args": ["awslabs.ama... [内容已截断]
 
 ## 深度分析
@@ -99,7 +50,7 @@ Amazon Web Services (AWS)
 
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch04/697-strands-agents.html)
 - [快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客](../ch03/035-agent.html)
-- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
+- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
 
 ---
 

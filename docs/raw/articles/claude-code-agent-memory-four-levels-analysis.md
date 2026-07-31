@@ -7,7 +7,7 @@ publish_date: 2026-07-07
 created: 2026-07-07
 ingested: 2026-07-07
 tags: [agent, memory, claude-code, mem0, letta, rag, agent-framework]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

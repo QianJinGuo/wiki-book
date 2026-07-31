@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/based-on-amazon-iot-core-kiro-
 ingested: 2026-06-01
 feed_name: AWS
 source_published: 2026-05-26T06:21:25Z
-type: article
+type: raw-article
 sha256: 52332fb9e3a07887672679073f74c6a435fee026037ad55c487834a5dd024b5b
 tags: ['iot', 'aws', 'kiro', 'industrial', 'data-pipeline']
 ---

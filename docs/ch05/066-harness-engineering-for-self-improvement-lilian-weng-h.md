@@ -8,60 +8,11 @@
 
 > Lilian Weng (翁荔) 博客最新文章，系统梳理了 Harness 工程在递归式自我提升（RSI）方向的研究全景，从 ACE、MCE、Meta-Harness 到 Self-Harness、Darwin Gödel Machine、SIA，涵盖 35+ 篇论文参考文献。[^1]
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering for"))
-    Harness 设计模式
-      模式一 工作流自动化
-      模式二 文件系统作为持久化记忆
-      模式三 子智能体与后台任务
-    Harness 优化演进路径
-      上下文工程谱系
-      工作流设计
-      自我提升型 Harness
-    大未来挑战
-    基准附录
-```
-
 ## 核心命题
 
 递归式自我提升（RSI）究竟会先发生在模型权重层面，还是先发生在 **Harness（脚手架）**层面？翁荔认为近期内 RSI 路径不太可能一上来就是模型改写自己的权重，更可行的路径是：**Harness 工程向「元方法论」演进**——改进获得更好答案的机制本身。[^1]
 
 ## 与已有实体的关系
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 - [Self-Harness 论文深度分析](ch05/009-harness.html) — 互补：该实体聚焦 Self-Harness 单篇论文的具体方法论（Weakness Mining → Proposal → Validation 三阶段），本实体覆盖 Harness 自我提升的**全部研究谱系**（ACE → MCE → Meta-Harness → STOP → Self-Harness → DGM → SIA）
 - [Harness Engineering](ch05/120-harness-engineering.html) — 上位框架：本实体是 Harness Engineering 在**自我提升**这一前沿子方向的研究全景

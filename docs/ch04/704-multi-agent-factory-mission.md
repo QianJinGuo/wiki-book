@@ -12,57 +12,9 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multi-agent-mission-factory-luke-aiengineer.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Multi-Agent 架构 Factory Mission"))
-    瓶颈转移 从模型智能到治理带宽
-    五种协作策略的工程取舍
-    Validation Contract 把正确性锚定在实现之前
-    串行优于并行的反直觉结论
-    Multi-Agent 系统的设计起点
-    串行优于并行的工程含义
-    Validation Contract 可迁移出 Coding 场景
-    Droid Whispering 的成本工程意义
-```
-
 ## 摘要
 
 Luke Alvoeiro 在 AI Engineer 大会上系统阐述了 Factory Mission 系统的设计哲学——当 Agent 需要完成比单个 Agent 难一两个数量级的任务时，组织方式比单点智能更重要。本文整合其演讲的核心内容：五种 Multi-Agent 协作策略、Orchestrator/Worker/Validator 三角架构、Validation Contract 与结构化 Handoff、"串行优于并行"的反直觉结论、Droid Whispering 模型选择策略，以及声明式编排逻辑。
-
-```mermaid
-graph TB
-    subgraph "编排层"
-        COORD[协调器<br/>Orchestrator]
-        QUEUE[消息队列]
-    end
-    subgraph "Agent 团队"
-        W1["Worker A<br/>专项能力1"]
-        W2["Worker B<br/>专项能力2"]
-        W3["Worker C<br/>专项能力3"]
-    end
-    COORD --> QUEUE
-    QUEUE --> W1 & W2 & W3
-    W1 & W2 & W3 -->|"结果"| QUEUE
-    QUEUE -->|"汇总"| COORD
-    subgraph "共享层"
-        SHARED_MEM[共享记忆]
-        TOOL_BUS[工具总线]
-    end
-    W1 & W2 & W3 --> SHARED_MEM
-    W1 & W2 & W3 --> TOOL_BUS
-    IN[任务输入] --> COORD
-    COORD --> OUT[结果输出]
-    classDef coord fill:#dbeafe,stroke:#2563eb
-    classDef worker fill:#ede9fe,stroke:#7c3aed
-    classDef shared fill:#fef3c7,stroke:#d97706
-    class COORD,QUEUE coord
-    class W1,W2,W3 worker
-    class SHARED_MEM,TOOL_BUS shared
-```
-
 
 ## 核心要点
 
@@ -118,7 +70,7 @@ Mission 的解法是**精准混合**：
 
 **整体原则：串行执行 + 定点内部并行**。纸面更慢，但错误率大幅下降，长任务里正确性不断复利。
 
-这与 [Claude Code Agent Teams 任务分解](../ch01/328-claude-code-agent-teams.html) 中"任务分解策略决定 Agent 协作模式"的判断相互印证——并行不是越多越好，而是要在不引入冲突的边界内最大化吞吐。
+这与 [Claude Code Agent Teams 任务分解](../ch01/329-claude-code-agent-teams.html) 中"任务分解策略决定 Agent 协作模式"的判断相互印证——并行不是越多越好，而是要在不引入冲突的边界内最大化吞吐。
 
 ### 5. Droid Whispering：用异构模型对抗同质偏见
 
@@ -129,7 +81,7 @@ Luke 的模型选择策略（"Droid Whispering"）遵循**角色 × 模型能力
 
 **更深一层**：刻意用**不同模型厂商**做验证，避免同一份训练数据带来的同向偏见。Luke 直接点出："你被某一家模型锁定，这个家族最弱的能力就是你系统的天花板。"
 
-这与 [AgentOps on Bedrock](ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
+这与 [AgentOps on Bedrock](ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
 
 ### 6. 声明式编排：用 Prompt 写逻辑而非代码
 
@@ -191,13 +143,13 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 ## 相关实体
 
 - [Factory Missions Multi-Agent Shipping](ch04/162-factory-missions.html)——同主题的姊妹篇
-- [Claude Code Agent Teams 任务分解](../ch01/328-claude-code-agent-teams.html)——任务分解策略的另一视角
+- [Claude Code Agent Teams 任务分解](../ch01/329-claude-code-agent-teams.html)——任务分解策略的另一视角
 - [Harness Engineering Core Patterns](../ch05/120-harness-engineering.html)——声明式编排的工程哲学
 - [OpenClaw 多 Agent 团队实践](ch04/047-openclaw-multi-agent-team-practice-v2.html)——多 Agent 落地的国内实践
 - [Claude Managed Agents 企业自托管](ch04/710-claude-managed-agents.html)——Multi-Agent 的企业部署形态
 - [Agent 记忆系统工程实践](../ch03/035-agent.html)——过程资产积累的方向
 - [Harness 状态边界与失败闭环](../ch05/009-harness.html)——边界即文档的工程哲学
-- [AgentOps on Bedrock](ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)——多模型编排降低单点故障
+- [AgentOps on Bedrock](ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)——多模型编排降低单点故障
 
 ---
 

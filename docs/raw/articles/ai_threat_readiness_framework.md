@@ -1,6 +1,6 @@
 ---
 title: A Framework for AI Threat Readiness
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.wiz.io/blog/ai-threat-readiness-framework
 tags: [security, wiz]

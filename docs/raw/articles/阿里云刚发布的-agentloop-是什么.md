@@ -3,7 +3,7 @@ title: "阿里云刚发布的 AgentLoop 是什么？"
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/lkrOh-XDX2e_iOMdN6NUGQ"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "9274cfe43802404595dd3092cbdbb3afe0e8b17a872dc750cdd1f58748cfc9b2"

@@ -5,7 +5,7 @@ tags: [wechat, article, claude, openai]
 sha256: e4ae6d53409fafcf094874e880a623831722f4db77290df25d9e84d948397dee "https://mp.weixin.qq.com/s/YUkp8vv_PR9-ema-I77OBw"
 date: 2026-05-18
 ingested_at: 2026-05-18T12:35:52+08:00
-type: wechat
+type: raw-article
 status: raw
 hash: 324c4c228682f9ceb6f499adf7a77aa2b231f67aaae8d2c69a54c239ca5eb4d4
 hash_alg: sha256-body-v1

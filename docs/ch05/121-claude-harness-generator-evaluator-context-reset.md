@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐⭐ | 18.9KB | `entities/harness-generator-evaluator-anthropic.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Harness 设计"))
-    两种失效模式
-      Context Anxiety 与 Context Reset
-      自我评估偏差
-    Generator-Evaluator 架构
-      前端设计实验
-      全栈三代理架构
-    量化对照
-      复古游戏制作器 Opus 45
-      DAW Opus 46 去掉 sprint 结构
-    迭代原则
-    GAN 启发的双代理结构解决的是「自我评估偏差」而非评估准确性
-    Context reset vs compaction
-    Sprint Contract
-    四维度评分标准中高权重维度的选择揭示了模型在「审美」上的结构性短板
-```
-
 ## 概述
 Anthropic 工程师 Prithvi Rajasekaran 系统阐述**长时间运行 Agent 应用**中的 Harness 设计方法论。核心贡献：①受 GAN 启发的 Generator-Evaluator 双代理结构解决自我评估偏差；②三代理架构（Planner/Generator/Evaluator）+ sprint contract 实现全栈自主开发；③context reset vs compaction 的取舍决策框架；④Opus 4.5→4.6 演进中 scaffold 简化规律。附 20 分钟/$9（单代理）vs 6 小时/$200（完整 harness）的对照数据。
 
@@ -53,37 +31,6 @@ Agent 评价自己作品时几乎总是偏正面。Generator-Evaluator 分离是
 Evaluator 接入 Playwright MCP，实际操作页面而非看静态截图，5-15 轮迭代。评分标准措辞本身就在塑造输出气质（如"museum quality"触发特定视觉风格收敛）。
 
 ### 全栈三代理架构
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ```
 Planner → Generator ↔ Evaluator
               ↓
@@ -221,15 +168,15 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 
 ## 相关实体
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/710-claude-managed-agents.html)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/973-ai-agent-harness.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/988-ai-agent-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/719-agent-harnesses-are-dead-long-live-agent-harnesses.html)
 - [Harness 之后 状态边界与失败闭环 若飞](ch05/009-harness.html)
 - [Agentscope Java 2.0 Enterprise Distributed Harness](ch05/009-harness.html)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](ch05/009-harness.html)
 - [Long Running Agent Ralph Loop Harness Takeover](ch05/012-agent-ralph-loop-harness.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/989-anthropic.html)
-- [Langgraph A2A Adversarial Agent Team](../ch04/201-langgraph.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/1004-anthropic.html)
+- [Langgraph A2A Adversarial Agent Team](../ch04/202-langgraph.html)
 
 ---
 

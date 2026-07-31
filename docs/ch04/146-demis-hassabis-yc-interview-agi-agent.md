@@ -2,70 +2,17 @@
 
 ## Ch04.146 Demis Hassabis YC Interview: AGI 时间线、记忆机制、Agent 未来
 
-> 📊 Level ⭐⭐ | 13.4KB | `entities/demis-hassabis-yc-interview-jiedaotixi.md`
+> 📊 Level ⭐⭐ | 13.5KB | `entities/demis-hassabis-yc-interview-jiedaotixi.md`
 
 # Demis Hassabis YC Interview: AGI 时间线、记忆机制、Agent 未来
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/demis-hassabis-yc-interview-jiedaotixi.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Demis Hassabis YC Interview AGI"))
-    AGI 时间线 2030 年与深科技创业的张力
-    当前架构的根本局限 记忆 推理 持续学习
-    锯齿状智能的具象案例 下棋走错路
-    AlphaGo 思想回归 从语言模型到搜索 推理
-    对 AI Agent 构建者
-    对深科技创业者
-    对 AI 产品架构师
-    对科学发现 AI 工具设计者
-```
 
 ## 摘要
 
 Google DeepMind CEO Demis Hassabis 与 YC 总裁 Garry Tan 的深度访谈，涵盖 AGI 时间线（2030 年）、当前大模型的局限（持续学习、长期推理、记忆）、AlphaGo 思想回归 Gemini、模型蒸馏的极限、Agents 的未来、AI 在基础推理上的"锯齿状智能"失败、以及对深科技创业者的建议。Hassabis 长期主义视角与对 AI 现状的冷静评估对构建 AGI 路径的工程团队极具参考价值。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 - AGI 时间线预期：2030 年——深科技创业者必须考虑 AGI 在 10 年周期中点出现的可能性
 - 当前大模型的核心局限：持续学习、长期推理、记忆仍未根本解决

@@ -2,67 +2,11 @@
 
 ## Ch11.309 GenPage: Netflix 端到端生成式首页构建
 
-> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/genpage-netflix-generative-homepage-construction.md`
+> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/genpage-netflix-generative-homepage-construction.md`
 
 # GenPage: Netflix 端到端生成式首页构建
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GenPage Netflix 端到端生成式首页构建"))
-    架构设计
-      自定义 Tokenization
-      训练三阶段
-      RL 训练细节
-    生产挑战与解决方案
-      冷启动
-      多节奏增量训练
-      业务规则约束解码
-    生产效果
-    与其他方案的差异化
-    可复用经验
-```
-
 ## 核心洞察
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 Netflix 用单一 decoder-only Transformer 模型替代传统的多阶段推荐流水线（候选生成 → 行级排序 → 实体级排序），将首页构建视为**自回归序列生成问题**：用户上下文作为 prompt，整页布局作为 response。
 

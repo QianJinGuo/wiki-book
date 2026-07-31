@@ -5,7 +5,7 @@ ingested: 2026-06-08
 feed_name: CrewAI Blog
 source_published: 2026-03-05
 title: "How we built Cognitive Memory for Agentic Systems"
-type: article
+type: raw-article
 sha256: 56b15c61145d52b8dbb913ec171a66b6f6c8d3bbd2cdc24a86a66fc7a04cff1c
 tags: [agent, memory, ai, cognitive-architecture]
 ---

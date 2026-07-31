@@ -1,6 +1,6 @@
 ---
 title: Tracking TamperedChef Clusters via Certificate and Code Reuse
-type: article
+type: raw-article
 tags: [apple, llm, malware, optimization, security, vision]
 source: newsletter
 source_url: https://unit42.paloaltonetworks.com/tracking-tampered-chef-clusters/

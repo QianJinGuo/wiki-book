@@ -17,21 +17,6 @@ This eventually [got resolved with the help of NPM support](https://x.com/andrii
 
 There was some confusion in the replies to the tweets, and since it's not the first time we've seen this issue crop up, we thought it might be interesting to explain what this limit is, how we got here and some steps you can take to avoid running into this.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Why Drizzle ORM couldnt publish"))
-    Manifests
-    Packuments
-    The 100 MB limit
-    Is my project at risk of hitting
-    How can I avoid large manifests
-    Fixing registry inefficiencies
-    What our registry does
-```
-
 ## Manifests
 
 When you run npm publish in your project and you've successfully authenticated, the client submits the package and its metadata to the registry.
@@ -49,37 +34,6 @@ The registry annotates that package.json with some extra meta-data for security 
 It mostly looks like a package.json file. Notably this is a pretty large example due to drizzle having a lot of individual ESM exports. It clocks in at **131 KB**, which is one of the bigger ones I've seen.
 
 ## Packuments
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 NPM was originally built on CouchDB, which is a document store (a kind of database that's more like a big key value store than a table with rows, columns and queries).
 

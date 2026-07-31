@@ -29,36 +29,6 @@ Harness 按自己的节奏重试，队列按自己的条件重试，HTTP 层管�
 **后端由三个基本元素组成：编排工作的 worker，调用这些服务的 trigger，以及服务内部真正执行工作的 function。**
 
 ### 抽象后端
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
 一旦我意识到这一点，我和我非常出色的团队就清楚了：我们可以用这个抽象来构建一个后端。这远不只是学术练习。我们发现，这个抽象在 agentic 世界以及更广泛的场景里都有非常实际的价值，因为它完整封装了"后端"的执行上下文。于是我们构建了 iii，让每个人都能使用这个抽象。
 iii 的工作方式正如上面所说：
 它把 **Function** 定义为一个带稳定标识符的工作单元，例如 orders::validate。Function 接收输入，并且可以选择返回输出。它可以存在于任何进程里，也可以用任何语言编写。
@@ -128,22 +98,6 @@ iii [2] 是开源项目。可以通过我们的 quickstart [3] 开始使用。
 3. quickstart: https://iii.dev/docs/quickstart
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent架构关键变化 Harness正在成为新后端"))
-    核心论点 Harness 与后端的二元分离是暂时状态
-    三原语抽象 Worker Trigger Function
-    范式转移的本质 类别坍缩
-    实时特性 发现 扩展 可观测性
-    重新思考Agent系统的集成边界
-    采用Worker-first架构思维
-    优先投资实时发现和可观测性基础设施
-    重新审视Harness的迭代成本
-```
-
 ## 深度分析
 ### 1. 核心论点：Harness 与后端的二元分离是暂时状态
 本文最核心的洞察是：行业普遍接受了一个未被审视的假设——harness（智能体编排层）和后端（执行基础设施）是两个独立的层。这个假设导致agent系统面临调试复杂性的根本挑战：harness重试逻辑、队列重试机制、HTTP层超时控制各自为政，trace无法跨越这些边界串联。当系统从1个agent扩展到4个agent，调试路径从5条激增至80条，概率空间的膨胀使得传统确定性调试方法完全失效。
@@ -198,18 +152,18 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 
 ## 相关实体
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/237-openclaw.html)
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [200人销售团队企业级 Agent 知识库问答系统架构设计](https://github.com/QianJinGuo/wiki/blob/main/queries/sales-team-agent-knowledge-base-architecture.md)
@@ -218,16 +172,16 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 - [AI Native 时代 —— 研发组织何去何从](../ch05/018-ai-native.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/094-ai.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/095-ai.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/058-agent-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html)
+- [From Agent Protocol to Harness Skill](ch04/431-from-agent-protocol-to-harness-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1-million-exposed-ai-services-hackernews.md)
 
-- [Agent Memory 架构解析](ch04/121-agent-memory.html)
+- [Agent Memory 架构解析](ch04/098-agent-memory.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

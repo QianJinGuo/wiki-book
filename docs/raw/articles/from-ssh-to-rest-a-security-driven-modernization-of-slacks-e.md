@@ -1,7 +1,7 @@
 ---
 
 title: "From SSH to REST: A Security-Driven Modernization of Slack’s EMR Data Pipelines"
-type: raw
+type: raw-article
 tags: [newsletter]
 source: newsletter
 source_url: https://slack.engineering/from-ssh-to-rest-a-security-driven-modernization-of-slacks-emr-data-pipeli

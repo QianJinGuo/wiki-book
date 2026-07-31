@@ -1,6 +1,6 @@
 ---
 title: How Unified EDR and ITDR Stop Attacks Before They Spread
-type: source
+type: raw-article
 tags: [cybersecurity, edr, itdr, identity-threat, detection]
 source: newsletter
 source_url: https://www.huntress.com/blog/edr-itdr-correlations

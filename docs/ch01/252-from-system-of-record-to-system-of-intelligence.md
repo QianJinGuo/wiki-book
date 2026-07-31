@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/from-system-of-record-to-system-of-intelligence.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From System of Record to System"))
-    背景 CRM 作为数据积累护城河的历史逻辑
-    核心论点 系统正在发生层级迁移
-    AI Agent 如何重新定义 CRM 的角色
-      Agent 视角下的 CRM 只是一个数据库
-      CRM 使用量不降反升 一个反直觉现象
-      从数据积累到编排层 护城河的本质变化
-    AI 原生 GTM 初创公司的特征
-      聚集于高频窄工作流
-      正在创造全新的工作类别
-      不削减人力 而是扩大总饼
-    更长远的影响 制度记忆的可装运化
-    新技术栈的核心与结论
-    数据积累护城河的局限性
-    System of Intelligence 的本质 多源上下文合成
-```
-
 ## 核心要点
 - CRM（系统 of Record）不会消失，但正在降级为"数据底层"，价值正在向之上的 System of Intelligence 层迁移
 - AI Agent 不需要拖拽式 Pipeline 视图，它需要的是可低摩擦读写结构化数据的数据库——CRM 从这个视角看就是一个数据库
@@ -36,37 +14,6 @@ mindmap
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-system-of-record-to-system-of-intelligence-1.md)
 
 ## 背景：CRM 作为"数据积累护城河"的历史逻辑
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 过去三十年，企业软件领域有一个普遍规律：谁拥有数据库，谁就拥有最大价值 。
 Salesforce 和 HubSpot 之所以能分别达到约 1400 亿美元和约 90 亿美元的估值，根本原因在于它们控制了核心数据资产 。每一次通话记录、每一个定价先例、每一个联系人、每一个关于交易停滞原因的偶然观察——都被录入系统，而离开这个系统的成本变得极其高昂 。一旦该数据库积累了数年的运营上下文，换系统的高昂成本使得用户成为 a16z 合伙人 Alex Rampell 所描述的"人质而非客户" 。
 Salesforce AppExchange 和 HubSpot Marketplace 上的每一个应用，本质上都在为接入他人数据库的权利支付"租金" 。随后，两家公司像每个时代的 dominant 平台所有者一样，向外扩张：添加营销、服务、分析、商务等功能模块，每个新模块都建立在相同的数据基础上，并进一步推高了离开的决策成本 。
@@ -149,8 +96,8 @@ GTM 软件的 TAM 正在从"软件支出"扩展到"软件+AI 驱动的工作流�
 - from-system-of-record-to-system-of-intelligence.md-intelligence
 - [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
 - [Enterprise Software Moats Agent Era](../ch03/035-agent.html)
-- [Is Software Losing Its Head](ch01/651-is-software-losing-its-head.html)
-- [Is Software Losing Its Head A16Z](ch01/651-is-software-losing-its-head.html)
+- [Is Software Losing Its Head](ch01/937-is-software-losing-its-head.html)
+- [Is Software Losing Its Head A16Z](ch01/937-is-software-losing-its-head.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-system-of-record-to-system-of-intelligence-1.md)
 

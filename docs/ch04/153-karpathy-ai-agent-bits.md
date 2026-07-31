@@ -14,66 +14,10 @@
 **来源**：架构师带你玩转AI
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy 怎么看 AI Agent 七 当程序员贡献的"))
-    一 bits这个词的精确含义
-    二 价值在下降的技能
-      下降最明显的 样板代码和标准实现
-      下降明显的 对特定语法和 API 的记忆
-      下降但不会消失的 纯执行层面的编码速度
-    三 价值在上升的技能 四个维度
-      维度一 问题定义能力
-      维度二 系统判断能力
-      维度三 Agent 编排能力
-    四 一个不够被讨论的维度 沟通能力
-    五 Karpathy 的判断和 2026 年就业市场的对照
-      已经清晰验证的
-      还在演化中的
-      一个值得注意的反直觉现象
-    六 一个他没有明说但隐含的警告
-    bits 的本质 程序员的贡献单位正在被重新定义
-    技能价值转移的结构性原因
-```
-
 ## 核心问题
 Karpathy 说程序员贡献的"bits"越来越少——这句话的精确含义是什么？在这个趋势下，哪些技能的价值在上升，哪些在下降？这个判断在 2026 年的就业市场和工程实践里，验证了多少？
 
 ## 一、"bits"这个词的精确含义
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 Karpathy 用"bits"描述程序员工作，暗含一个判断：
 **衡量程序员贡献的标准，一直以来被错误地锚定在"写了多少代码"上，而不是"解决了多少问题"或者"做出了多少正确判断"上。**
 
@@ -177,11 +121,11 @@ Karpathy 隐含的警告最容易被忽略的部分是时序：问题定义能�
 2. **建立 Agent 编排能力的岗位**：这是 2026 年最稀缺的新工程角色之一
 3. **技术深度的价值重估**：深度技术理解在 Agent 时代的价值不是更低了，而是以不同的方式体现了——从"生成价值"变成"评估价值"
 ## 相关实体
-- [Karpathy Ai Agent 7 Bits Value Decline](ch04/164-karpathy-ai.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Gepa Optimize Anything](../ch01/295-gepa-optimize-anything.html)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/820-github.html)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/078-claude-code.html)
+- [Karpathy Ai Agent 7 Bits Value Decline](ch04/163-karpathy-ai.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Gepa Optimize Anything](../ch01/296-gepa-optimize-anything.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/834-github.html)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md)
 

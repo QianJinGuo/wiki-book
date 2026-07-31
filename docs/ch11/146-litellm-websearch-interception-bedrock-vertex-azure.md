@@ -7,59 +7,7 @@
 > [!abstract] **WebSearch Interception 是 LiteLLM 在 1.84.0+ 引入的"代理自动加 web search"能力**：当上游 provider（Bedrock/Vertex/Azure）本身不暴露原生 web search 工具时，LiteLLM 中间层会拦截 LLM 的 tool call 调用，自动改走本地 SearXNG 实例执行搜索，把结果以 Anthropic `web_search_20250305` 工具的格式回传给模型。整篇文章是 AWS China Blog 2026-06-12 发布的一份"踩坑 + 配置 + 调用 + 引用实现"实操手册，价值在于把 LiteLLM 官方文档没写清楚的版本要求、env 变量命名、agentic loop 限制全部用实跑案例补齐。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LiteLLM WebSearch Interception"))
-    三个独有贡献 与现有 3 篇 LiteLLM entity 互补
-    WebSearch Interception 工作原理
-    完整 Docker Compose 部署 4 服务
-    踩坑记录 5 条实跑验证
-    与现有 LiteLLM 实体的差异化
-    引用与延伸
-```
-
 ## 三个独有贡献（与现有 3 篇 LiteLLM entity 互补）
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 1. **WebSearch Interception 的内部机制** — 不依赖 provider 原生 web search 能力，LiteLLM 在中间层劫持 tool call 并回填为 `web_search_20250305` 格式，3 家 provider（Bedrock/Vertex/Azure）通用
 2. **LiteLLM 1.83.x → 1.84.0 强制升级点** — v1.83.x 对 Bedrock Converse 路径**不支持** agentic loop，必须用 v1.84.0+ 才能完成"搜索 → 结果回传 → LLM 二次调用"的完整闭环
@@ -137,9 +85,9 @@ services:
 
 - **同类实体**：`building-web-search-enabled-agents-with-strands-and-exa` — Strands SDK + Exa 实现的 web search agent（不同技术栈对比）
 - **AWS China Blog 同期 LiteLLM 矩阵**：
-  - [LiteLLM 生产级部署](../ch01/1274-llm.html)
+  - [LiteLLM 生产级部署](../ch01/637-llm.html)
   - [LiteLLM Bedrock 成本管控](ch11/042-litellm-amazon-bedrock.html)
-  - [LiteLLM QuickSight 可视化](ch11/222-amazon-quick.html)
+  - [LiteLLM QuickSight 可视化](ch11/224-amazon-quick.html)
 - 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
 
 ---

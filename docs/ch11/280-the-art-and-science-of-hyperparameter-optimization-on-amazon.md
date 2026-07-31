@@ -2,52 +2,13 @@
 
 ## Ch11.280 The art and science of hyperparameter optimization on Amazon Nova Forge
 
-> 📊 Level ⭐⭐ | 3.5KB | `entities/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md`
+> 📊 Level ⭐⭐ | 3.6KB | `entities/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md`
 
 # The art and science of hyperparameter optimization on Amazon Nova Forge
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 The art and science of hyperparameter optimization on Amazon Nova Forge 涉及aws领域的核心技术议题。
 ### 核心观点
@@ -75,10 +36,10 @@ The art and science of hyperparameter optimization on Amazon Nova Forge 涉及aw
 ### 关联实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/633-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/708-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1164-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1175-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 
 ## 实践启示

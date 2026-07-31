@@ -2,7 +2,7 @@
 title: "Discretizing Reward Models"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 80bbbc437b13618a5dadbf44f14ced1cab642afbade5f2231abfbf61a25a5916
 ---

@@ -12,7 +12,7 @@ date: 2026-05-28
 created: 2026-05-28
 updated: 2026-05-28
 tags: [gemini, embedding, multimodal, vector-search, rag, text-image-audio-video, google, deepmind, model-soup]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: 04f57b8a690ee3bf57e5965a05fa4e5445949dc692d31604aedc387f7a88cc09
 ---

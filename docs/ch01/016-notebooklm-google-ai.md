@@ -4,69 +4,10 @@
 
 > 📊 Level ⭐ | 10.3KB | `entities/notebook-lm.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("NotebookLM Google AI 笔记本工具"))
-    Key Facts
-    Core Features
-      Audio Overviews 音频概览
-      Source Groundning
-      Notebook 笔记本
-    Pricing Usage Limits
-      具体额度限制
-      Google Workspace 教育账号
-    Strengths
-    Weaknesses
-    定位 垂直场景的极致深度 vs 通用工具的广度
-    音频概览 重新定义阅读这个动作
-    竞争态势 在知识管理工具谱系中的位置
-```
-
 ## Overview
 NotebookLM 是 Google Labs 开发的研究与笔记在线工具，基于 Google Gemini 大模型，帮助用户与文档进行 AI 交互。Google 将其描述为"虚拟研究助手"（Virtual Research Assistant）。
 
 ## Key Facts
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 | Fact | Detail |
 |------|--------|
 | 开发商 | Google Labs |
@@ -194,11 +135,11 @@ NotebookLM 的护城河在于：Google 拥有 Gemini 的模型能力 + Google Wo
 
 ## Related
 - [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
-- [Obsidian](ch01/957-claude-code-memory-setup-obsidian-graphify.html) — 本地离线笔记
-- [ChatGPT Memory](ch01/355-chatgpt-memory.html) — 对话式记忆
+- [Obsidian](ch01/970-claude-code-memory-setup-obsidian-graphify.html) — 本地离线笔记
+- [ChatGPT Memory](ch01/357-chatgpt-memory.html) — 对话式记忆
 ## 相关实体
 
-- [the interface is no longer the product](../ch05/094-ai.html)
+- [the interface is no longer the product](../ch05/095-ai.html)
 
 ---
 

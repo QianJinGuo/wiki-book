@@ -4,40 +4,10 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md`
 
-
 ## 核心要点
 - When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.
 
 ## 关键洞察
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.
 Jason Lemkin / SaaStr
 For most of B2B history, products were essentially static. Sales and marketing were the primary lever. A great VP of Sales could double revenue in 90 days without changing the product.
@@ -72,11 +42,11 @@ Lemkin 提供了系统的诊断框架来定位增长放缓的根本原因：
 **5. 将"产品速度"作为核心 KPI**
 除了收入指标，将产品发布速度、功能竞争力评分、AI 能力成熟度纳入核心管理层仪表盘。这些指标是收入的先行指标，而非滞后指标。
 ## 相关实体
-- [How To Encode Experience Into Skills](ch03/072-skills.html)
-- [P Ai Pms Guide To Claude](../ch01/976-claude.html)
+- [How To Encode Experience Into Skills](ch03/071-skills.html)
+- [P Ai Pms Guide To Claude](../ch01/1022-claude.html)
 - [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki/blob/main/entities/deels-accelerate-or-die-moment.md)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/149-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
-- [Asana Agentic Work Management Platform Lettertwo](../ch04/237-agentic.html)
+- [Asana Agentic Work Management Platform Lettertwo](../ch04/648-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

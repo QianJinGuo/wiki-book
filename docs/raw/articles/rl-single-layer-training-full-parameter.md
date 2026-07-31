@@ -5,7 +5,7 @@ source_site: "机器之心"
 author: "张子健等（明尼苏达大学、北京大学、Amazon）"
 ingested: "2026-07-08"
 sha256: "9aa384a3e721d92a0c20f657163c88b33fded731eb43fa6edb35e6de4ff516ab"
-type: raw
+type: raw-article
 tags:
   - rl
   - transformer

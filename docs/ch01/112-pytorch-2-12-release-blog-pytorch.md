@@ -4,52 +4,12 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/pytorch212releaseblogpytorch.md`
 
-
 ## 核心要点
 - AI product announcement
 - Technical release details
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch212releaseblogpytorch.md)
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
-    end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
-    end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
-    end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
-    end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
-```
-
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [PyTorch 2.12 Release Blog – PyTorch](ch01/203-pytorch-2-12-release-blog.html)

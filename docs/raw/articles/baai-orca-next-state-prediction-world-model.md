@@ -5,7 +5,7 @@ source_author: "允中"
 source_publisher: "量子位 (QbitAI)"
 ingested: 2026-07-08
 sha256: "fde9bd2e34bab8a4f620b7dee539d8629e817b4707ab5fea76862bcbfdad6da0"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [world-model, baai, orca, next-state-prediction, robobrain, state-representation, foundation-model]
 ---

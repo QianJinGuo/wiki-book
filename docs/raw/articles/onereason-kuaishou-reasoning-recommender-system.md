@@ -2,7 +2,7 @@
 title: "OneReason：当推荐系统学会思考"
 created: 2026-06-09
 updated: 2026-06-09
-type: article
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/-qZ_Z8RMm67tv0ciFbpSSA"
 ingested: 2026-06-09
 sha256: "onereason_kuaishou_2026"

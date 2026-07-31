@@ -6,61 +6,7 @@
 
 # 试用 Amazon Bedrock 中的新控制台体验
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("试用 Amazon Bedrock 中的新控制台体验"))
-    概览
-    五大新能力
-      模型目录 Model Catalog
-      并排比较 Side-by-side Comparison
-      基于项目的组织 Project-based Organization
-    区域可用性
-    与其他 Bedrock 文档的差异化
-    实践价值
-```
-
 ## 概览
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Amazon Bedrock 重新设计的控制台——**针对 OpenAI / Anthropic 兼容 API 优化**的新工作流，包括模型目录、并排比较、基于项目的组织、预填代码片段的项目感知文档。这是 AWS 在 2026 年 Q2 推进 Bedrock 平台化的核心 UI 升级。
 
@@ -160,7 +106,7 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 
 ### 相关实体
 
-- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/561-amazon-bedrock-agentcore.html) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
+- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/566-amazon-bedrock-agentcore.html) — Bedrock runtime 体系深度解析，与 bedrock-mantle 兼容端点互补
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/295-amazon-bedrock.html) — Bedrock 上 agent 的 production 化路径，包含 Guardrails / 知识库等安全机制
 
 ## 实践启示

@@ -1,6 +1,6 @@
 ---
 title: Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.
-type: entity
+type: raw-article
 tags: [article]
 created: 2026-05-20
 updated: 2026-05-20

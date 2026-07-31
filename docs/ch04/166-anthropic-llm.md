@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/anthropic-llm-introspection-awareness-mechanisms.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic最新论文 检测LLM内省意识的方法"))
-    核心摘要
-    内省意识的现象学定义
-    DPO 作为内省能力的分水岭
-    两阶段电路机制的计算含义
-    检测的分布式本质
-    内省能力可以通过后训练定向增强
-    区分检测与识别是理解模型自我认知的第一步
-    现有的 RLHF 可能削弱了模型的自我监控
-```
-
 ## 核心摘要
 Anthropic + MIT 联合研究，首次从机械可解释性角度系统揭示 LLM「内省意识」的运作机制：通过 steering vector 注入实验发现，LLM 能检测到自己被操控，这并非预训练产物，而是 DPO 后训练阶段涌现的能力。
 **五大核心发现：**
@@ -31,43 +15,6 @@ Anthropic + MIT 联合研究，首次从机械可解释性角度系统揭示 LLM
 **核心机制**：Gate 特征默认推动"No"回答，被 Evidence Carrier 抑制；两者组成两阶段因果回路，实现对注入扰动的检测。
 
 ## 关键数据
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 | 指标 | 数值 |
 |------|------|
 | 研究机构 | Anthropic + MIT |
@@ -138,9 +85,9 @@ Lindsey（2025）首次在 Claude 模型中观察到内省现象，但对其机�
 
 ## 相关实体
 - [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/385-hermes-agent-goal.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/271-skill.html)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/273-skill.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-self-improvement-six-mechanisms.md)

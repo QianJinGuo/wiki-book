@@ -8,60 +8,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentScope Java 20 企业级分布式 Harness 框架"))
-    背景 为什么企业需要专门的 Agent Harness 框架
-    核心架构设计
-      模块化 Middleware 架构
-      抽象文件系统 Abstract FileSystem
-      Workspace 模型
-    企业级特性
-      多租户权限模型
-      模型 Fallback 与降级链
-      事件流与可观测性
-    Builder Pattern 与流畅 API
-    与 Claude Code Harness 的架构对比
-    在 Java 生态中构建 Agent AgentScope
-    Sealed Class 是构建类型安全消息系统的好选择
-    Abstract FileSystem 是多租户 Agent 的必备抽象
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 AgentScope Java 2.0 是一个面向企业级 AI Agent 部署的分布式 Harness 框架，基于 Java/JVM 生态构建，核心设计目标是解决多租户环境下 Agent 的资源隔离、上下文管理、工具编排和故障恢复问题。该框架在架构上借鉴了微服务的设计哲学，将 Agent 的各个能力维度（记忆、工具、权限、路由）拆解为独立可插拔的 Middleware 组件，并通过统一的事件流总线实现组件间通信。在技术选型上，AgentScope Java 2.0 选择 Spring Boot + Kubernetes 作为基础设施层，利用 Builder Pattern 构建 Agent 实例，并通过 Sealed Class 区分不同类型的消息内容块（ContentBlock / DataBlock），在类型安全与灵活性之间取得平衡。
 
@@ -386,14 +333,14 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 ## 相关实体
 
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/058-agent-harness.html)
-- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/078-claude-code.html)
-- [Factory Mission Multi Agent Architecture](../ch01/1235-factory-mission-multi-agent-architecture.html)
+- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/077-claude-code.html)
+- [Factory Mission Multi Agent Architecture](../ch01/1240-factory-mission-multi-agent-architecture.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 - [Iii Dev Worker Trigger Function](../ch01/195-iii-dev-worker.html)
 - [AgentScope Java Harness Framework 42KB](../ch05/009-harness.html) — 同 AgentScope Java 2.0 早期综述
 - [AgentScope Builder](../ch05/058-agent-harness.html) — 同生态自进化视角
 - [Loop Engineering](../ch05/004-loop-engineering.html) — 同样强调"组织级流程约束"
-- [MXC Execution Containers](../ch05/094-ai.html) — 类似沙箱机制对比
+- [MXC Execution Containers](../ch05/095-ai.html) — 类似沙箱机制对比
 - [Agent Harness Engineering Survey](../ch05/120-harness-engineering.html) — Harness 行业全景
 
 ## 实践启示

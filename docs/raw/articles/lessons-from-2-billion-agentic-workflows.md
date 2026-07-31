@@ -5,7 +5,7 @@ ingested: "2026-06-11"
 feed_name: "CrewAI Blog"
 source_published: "2026-01-24"
 sha256: "4bb8074cb808d52a6657e4aa0383d868d8275e6ed94dd2e5d0e39689f1d617ea"
-type: "article"
+type: "raw-article"
 tags: "agent, ai, llm"
 ---
 

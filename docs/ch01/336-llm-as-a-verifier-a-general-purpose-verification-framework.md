@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/llm-as-a-verifierageneral-purposeverific.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLM-as-a-Verifier A"))
-    背景与动机
-      标准 LLM-as-a-Judge 的平局困境
-    三大扩展维度
-    轨迹选择的轮询赛制
-    Prompt 设计要点
-    主要性能指标
-    即插即用效果
-    扩展规律
-```
-
 ## 核心要点
 - 提出 LLM-as-a-Verifier 框架，通过三大维度提升验证精度：评分粒度扩展（G）、重复验证（K）、标准分解（C）
 - 在 Terminal-Bench 2.0 达到 86.4% 准确率（下游任务成功率），SWE-Bench Verified 达 77.8%
@@ -29,44 +13,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifierageneral-purposeverific.md)
 
 ## 背景与动机
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 ### 标准 LLM-as-a-Judge 的平局困境
 标准 LLM-as-a-Judge 方法 prompting 模型输出一个离散分数 token（如 1-8），然后选择最高概率 token 作为最终分数。然而，在比较复杂的长周期 Agent 轨迹时，这种粗粒度评分往往给两条轨迹打相同分数（如两条轨迹都得到 4 分），导致平局无法区分。实验数据显示，LLM-as-a-Judge 在 Terminal-Bench 上产生高达 27% 的平局率（ties）。这在需要精细选择最优轨迹的场景（如代码生成、终端操作）是致命的缺陷。
 LLM-as-a-Verifier 的核心思想是将"裁判"（Judge， 形成整体判断并给出决策）与"验证器"（Verifier， 确认某事的正确性，需要更细致的评估）区分开来 。验证器不是输出一个粗粒度分数，而是通过三个维度的扩展提供细粒度反馈：评分粒度、重复验证次数、评估标准分解。
@@ -141,18 +87,18 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1274-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/637-llm.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/336-llm-as-a-verifier-a-general-purpose-verification-framework.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/1071-llm-as-a-verifier-a-general-purpose-verification.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/556-llm-as-a-verifier-a-general-purpose-verification.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/096-hermes-agent.html)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [AI Skill 测评指标体系](ch01/452-ai-skill.html)
+- [AI Skill 测评指标体系](ch01/453-ai-skill.html)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/120-harness-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](ch01/358-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/397-agent-skills.html)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/078-claude-code.html)
+- [Codeindex · 让大模型更好地理解你的代码](ch01/359-codeindex.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/401-agent-skills.html)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/077-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---

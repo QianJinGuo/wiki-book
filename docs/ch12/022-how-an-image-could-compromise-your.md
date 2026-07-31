@@ -4,59 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How an image could compromise your"))
-    漏洞概述
-    漏洞定位 SetMacOSTags 函数中的 system 调用
-    攻击链分析
-    修复方案分析
-    漏洞根源 信任边界跨越与不安全编程范式
-    利用场景与攻击向量
-    架构级修复的示范意义
-    对开发者的启示
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 - **CVE 编号**: CVE-2026-3102
 - **影响版本**: ExifTool ≤ 13.49 (macOS)
@@ -186,8 +134,8 @@ ExifTool 13.50 的修复方案代表了处理此类漏洞的最佳实践：
 3. **不要依赖单一安全措施**: 组合使用多种安全实践（系统更新、安全软件、谨慎的上网习惯）才能获得最佳防护效果。
 
 ## 相关实体
-- [Exiftool Compromise Mac 592994](../ch01/742-9.html)
-- [Shub Reaper Macos Stealer Attack Chain](../ch05/094-ai.html)
+- [Exiftool Compromise Mac 592994](../ch01/755-9.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch05/095-ai.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](ch12/062-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
 - [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](../ch09/078-claw-chain-cyera-research-unveil-four-chainable-vulnerabili.html)

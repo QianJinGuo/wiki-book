@@ -2,7 +2,7 @@
 title: "别再亲自写Prompt了！OpenClaw与Claude Code创始人已经用'循环'让一堆Agent自动打工了"
 created: 2026-06-09
 updated: 2026-06-09
-type: article
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/5Hy4ctKOq8Iq7m2bqy45zQ"
 ingested: 2026-06-09
 sha256: "a1b2c3d4e5f67890"

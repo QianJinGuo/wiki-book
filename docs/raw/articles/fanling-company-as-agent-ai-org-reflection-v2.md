@@ -8,7 +8,7 @@ review_confidence: 6
 review_recommendation: strong
 review_stars: 3
 tags: [ai-org, management, agentic-ai, business]
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 sha256: c5f2085e8f47705c35a66b4d01264fc3b406b8736b221850fadd7bd7f78602fd

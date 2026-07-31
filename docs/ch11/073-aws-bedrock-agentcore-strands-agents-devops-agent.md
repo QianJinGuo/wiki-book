@@ -8,63 +8,7 @@
 
 > **Background**：本文为 AWS China Blog 2026-06-12 发布的生产案例（作者：辛嘉诚、钱海涛、何浩），介绍如何用 Bedrock AgentCore + Strands Agents SDK + CloudWatch + AWS DevOps Agent 构建多账户对话式运维系统。属于 `Agentcore Harness` 主题的"企业级生产落地"维度的具体案例。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Bedrock AgentCore 多账户对话式运维助手"))
-    核心叙事
-    方案与架构
-      三种访问方式
-      五条数据路径
-      技术选型
-    三个独有贡献 与现有 agentcore entity 差异化
-    三条可复用设计模式
-    核心功能与落地效果
-    AgentCore 如何支撑飞书对话式运维
-    多账户跨区域设计
-```
-
 ## 核心叙事
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 某客户接入多账户巡检后，系统识别出**超万美元/月**的 ElastiCache 缩容空间，最终处置约 50%。方案设计目标是"系统识别 + 人工决策"的协作模式，AI Agent 转化为日常自动化能力。
 
@@ -132,7 +76,7 @@ graph TB
 
 1. **四阶段漏斗流水线是降低 AI 调用成本的核心工程模式**：该方案将 CloudWatch API 成本控制在 $1/月（500 实例规模），关键在于"海选粗筛 → 精选细筛"的两阶段漏斗。先用少量基础指标（CPU、连接数）筛出不到 10% 的候选，再对候选采集深度指标（IOPS、网络、7 天峰值）。这与 [Harness Engineering](../ch05/120-harness-engineering.html) 中的"Harness 分层降本"原则一致——不是减少有用信息，而是用最小成本先做预判。
 
-2. **独立 Agent Space 是多账户 DevOps Agent 集成的最优解**：文章揭示了一个反直觉的设计决策——不使用集中式 Agent Space，而是每个业务账户独立部署。原因是当 Agent 将所有账户资源纳入统一拓扑时，跨账户的无关资源噪音会严重干扰根因调查准确性。独立 Agent Space 保证了每次调查仅聚焦单一账户范围，这是一条可在 [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/290-aws-devops-agent.html) 等类似案例中复用的设计原则。
+2. **独立 Agent Space 是多账户 DevOps Agent 集成的最优解**：文章揭示了一个反直觉的设计决策——不使用集中式 Agent Space，而是每个业务账户独立部署。原因是当 Agent 将所有账户资源纳入统一拓扑时，跨账户的无关资源噪音会严重干扰根因调查准确性。独立 Agent Space 保证了每次调查仅聚焦单一账户范围，这是一条可在 [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/292-aws-devops-agent.html) 等类似案例中复用的设计原则。
 
 3. **MCP-first 工具暴露策略代表了 Agent 工具集成的范式转变**：21 个内部工具不对外直接调用，全部经 MCP 标准化后暴露。这意味着外部 Agent 可以用统一协议做程序化调用，而非针对每个工具写死的集成代码。从 [Mcp Protocol Ecosystem](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md) 的角度看，该案例是 MCP 从"协议规范"到"生产级工具生态"落地的典型样本——工具数量和质量都达到生产级，而非 Demo 级别。
 

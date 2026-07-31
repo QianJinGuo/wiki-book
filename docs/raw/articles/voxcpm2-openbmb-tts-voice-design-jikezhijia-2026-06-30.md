@@ -5,7 +5,7 @@ author: "极客之家"
 published: 2026-06-30
 ingested: 2026-06-30
 language: zh
-type: raw
+type: raw-article
 sha256: "efea03b8e92c553a82aed6e4ee5405da7fc640ac84cf019bb9a4e020eb29c2ab"
 ---
 

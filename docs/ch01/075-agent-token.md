@@ -4,40 +4,10 @@
 
 > 📊 Level ⭐ | 7.2KB | `entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md`
 
-
 ## 摘要
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/7SKBhIUrxI1SD1_svAxvtQ
 
 ## 元数据
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 - **来源**: 微信 (WeChat)
 - **原始URL**: https://mp.weixin.qq.com/s/7SKBhIUrxI1SD1_svAxvtQ
 - **入库时间**: 2026-05-11
@@ -63,7 +33,7 @@ graph TB
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/094-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/095-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/035-agent.html)
 - [强化学习如何不用奖励模型提高通用问题推理能力](https://github.com/QianJinGuo/wiki/blob/main/entities/强化学习如何不用奖励模型提高通用问题推理能力.md)
 

@@ -3,7 +3,7 @@ title: "browser harness github"
 source_url: https://github.com/browser-use/browser-harness
 ingested: 2026-05-01
 sha256: 99a408dedffe6ecfd45b925eadabddda32c895c9bc7daee9fbc7522cb029cf34
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [github]

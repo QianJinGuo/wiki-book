@@ -7,7 +7,7 @@ feed: 阿里云开发者
 ingested: 2026-06-02
 sha256: pending
 tags: [article, dingtalk, mcp, cli-agent, qoder, claude-code, knowledge-evolution, devops, ai-assistant]
-type: article
+type: raw-article
 ---
 
 # 基于钉钉机器人的 Qoder CLI / Claude Code 双引擎 AI 助手实践

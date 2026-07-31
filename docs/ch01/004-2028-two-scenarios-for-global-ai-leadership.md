@@ -4,24 +4,6 @@
 
 > 📊 Level ⭐ | 17.7KB | `entities/2028-two-scenarios-for-global-ai-leadership.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Two scenarios for global AI"))
-    背景与紧迫性
-    算力优势的复利效应
-    中国AI竞争力的两大漏洞
-      漏洞一 非法获取算力
-      漏洞二 蒸馏攻击 Distillation Attacks
-    四个竞争前沿
-    齐头并进风险是AI安全领域最被低估的威胁
-    Mythos Preview 觉醒时刻
-    AI作为加速器的级联效应
-    场景一 民主国家保持 commanding and
-```
-
 ## 核心观点
 
 民主国家必须主导AI的发展和部署。这些国家和政治体制能够塑造管理这些系统的规则和规范。
@@ -29,42 +11,6 @@ mindmap
 民主国家在算力方面拥有 substantial lead，这是开发前沿AI模型最重要的因素。这一领先地位得益于美国和盟友的创新，以及两党合作的美国出口管制政策。但中国在模型智能方面并不落后。
 
 ## 背景与紧迫性
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 Anthropic发布了一篇新论文，阐述美中AI竞争的观点。AI即将变得足够强大，可用于前所未有地大规模镇压公民，甚至改变国家间的力量平衡。由于AI发展日新月异，我们只有有限的时间来设定竞争条件——决定这些威胁是否以及如何实现。
 
@@ -242,10 +188,10 @@ Mythos Preview让Firefox在一个月内修复的安全漏洞超过2025年全年�
 
 ## 相关实体
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/843-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
-- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/989-anthropic.html)
-- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/976-claude.html)
-- [Anthropic联创2028 Ai自我构建概率超60](ch01/989-anthropic.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/856-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/1004-anthropic.html)
+- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/1022-claude.html)
+- [Anthropic联创2028 Ai自我构建概率超60](ch01/1004-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2028-two-scenarios-for-global-ai-leadership.md)
 

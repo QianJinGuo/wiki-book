@@ -1,6 +1,6 @@
 ---
 title: "Rethinking Search as Code Generation"
-type: article
+type: raw-article
 source: rss
 source_url: https://research.perplexity.ai/articles/rethinking-search-as-code-generation
 tags: [agent, agentic-search, perplexity, search, code-generation]

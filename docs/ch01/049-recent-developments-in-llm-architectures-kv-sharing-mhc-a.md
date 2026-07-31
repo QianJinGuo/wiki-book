@@ -4,60 +4,10 @@
 
 > 📊 Level ⭐ | 8.0KB | `entities/recent_developments_in_llm_architectures.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Recent Developments in LLM"))
-    跨层KV复用 Gemma 4
-    分层嵌入参数化 PLE Gemma 4 E系列
-    分层注意力预算分配 Laguna XS2
-    压缩卷积注意力 CCA ZAYA1-8B
-```
-
 ## 核心要点
 -
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 2026年4月至5月间集中发布的新一代开源LLM架构，呈现出清晰的共同趋向：**在不影响模型质量的前提下，系统性降低长上下文场景下的KV-cache占用与计算成本**。这一转向的背景是推理模型（reasoning models）和Agent工作流需要保留大量token作为上下文，传统注意力机制的资源消耗已成为扩展瓶颈。
 当前主流的架构优化思路可归纳为四类：
 
@@ -89,10 +39,10 @@ DeepSeek V4引入两项关键创新：
 **mHC对系统设计的影响值得关注**：mHC的多残差流意味着hidden state维度在层间会动态变化（n倍展开），这对内存带宽、流水线调度和显存分配都提出新的要求。在设计训练或推理系统时，需要考虑这种非均匀残差流带来的复杂度。
 **数据质量仍是核心驱动力**：尽管架构调整贡献显著，Sebastian Raschka在文末强调，模型质量的主要驱动力仍然是数据质量和训练配方，而非架构本身。  这提示在关注架构演进的同时，不应低估数据工程和训练稳定性的基础价值。
 ## 相关实体
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/486-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
-- [Recent Developments In Llm Architectures Jiqizhixin](ch01/1274-llm.html)
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](ch01/1223-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
+- [Recent Developments In Llm Architectures Jiqizhixin](ch01/637-llm.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/517-microsoft-for-startups-microsoft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/recent_developments_in_llm_architectures.md)
 

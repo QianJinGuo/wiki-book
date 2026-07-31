@@ -4,52 +4,11 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/localmaxxing.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Localmaxxing 局部最优陷阱"))
-    本地模型的实用边界
-    延迟 本地模型的唯一真正优势
-    质量差异的感知阈值
-    Token 效率 被低估的优势
-```
-
 ## Summary
 > Score: 7×8=56
 作者五周的实践结论：在日常工作中，有约 50% 的任务可以完全由本地 35B 模型完成而无需调用云端大参数模型。在 1478 个任务中，Email & Inbound、Scheduling、Summarization、Admin 四类占 41.8%；Engineering 和 Market Research 各约 10%，各有一半属于简单任务。延迟是选择本地模型的唯一真正理由：Qwen 3.6 35B-A3B-4bit 在 MacBook Pro M5 上平均响应 2.8 秒，比 Opus 4.5 云端快 2.1 倍 。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 ### 本地模型的实用边界
 作者的数据清晰地划出了本地模型的实用边界：结构化程度低但模式简单的任务（邮件处理、日程安排、内容总结、行政管理）占据了本地模型任务的绝对主体。这些任务的共同特征是：输入输出格式相对固定、容错空间大、重复性高、不需要前沿推理能力 。
 Engineering 任务（占 9.9%，147 个）是一个有趣的混合：简单脚本修复、API 小改、CLI 任务可以在本地完成；但多源合成、架构决策等复杂工程任务仍然需要云端大参数模型。这种分化说明，即使在 Engineering 这一技术性最强的类别中，任务复杂度仍然是本地模型可用性的决定性因素 。
@@ -80,11 +39,11 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 ## 相关实体
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/localmaxxing.md)
 
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01/742-9.html)
-- [Ico Fines South Staffordshire 2022 Breach](../ch01/913-20.html)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](../ch01/755-9.html)
+- [Ico Fines South Staffordshire 2022 Breach](../ch01/926-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](ch03/106-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/094-ai.html)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/095-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/162-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 ---

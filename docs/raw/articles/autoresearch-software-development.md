@@ -2,7 +2,7 @@
 title: "我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了"
 source_url: "https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g"
 ingested: 2026-04-30
-type: raw
+type: raw-article
 tags: [autoresearch, multi-agent, code-review, karpathy, software-engineering, automated-development, codex, claude-code]
 review_value: 8
 review_confidence: 8

@@ -8,57 +8,11 @@
 
 > Cognition 推出的 Devin Fusion 是一种新型多模型路由 harness，在 FrontierCode 基准上以 35% 更低成本维持 Fable 5 级性能，核心思路是在不牺牲智能的前提下跨前沿模型智能路由。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Devin Fusion 多模型路由 Harness 实现 35"))
-    核心方法
-      Sidekick 架构 双 Agent 并行
-      Sidekick 解决三大问题
-      动态会话中路由 Dynamic Mid-Session Routing
-    模型路由的智能保留悖论
-    Sidekick 随模型变强而更优的反直觉特性
-    多模型 Harness 的兴起 单一模型时代的终结
-    缓存工程是模型路由的隐藏关键
-    基准表现
-```
-
 ## 摘要
 
 工程团队在模型成本上"烧钱"已成常态——对所有任务使用最贵模型不可持续，但现有模型混合工具在基准上表现好看，实际编码中却无法产出可合并的代码。Cognition 的 Devin Fusion 通过智能路由解决了这一矛盾：在 FrontierCode Extended 基准上，Fusion + Fable 5 得分 57.6（Fable 5 单独 57.0），但成本从 $5.12 降至 $3.00（降低 35%）。
 
 ## 核心方法
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 ### Sidekick 架构：双 Agent 并行
 
@@ -141,7 +95,7 @@ Cognition 的模型路由架构经历了三代演进：
 
 2. **缓存感知的 Agent 架构设计**：在构建多模型 Agent 系统时，缓存上下文管理应作为一等设计约束，而非事后优化。将模型切换与上下文压缩对齐是一个可复用的工程模式。
 
-3. **模型路由的成本优化杠杆**：与 [Token 成本优化五层模型](../ch09/047-coding-agent.html) 中的"模型路由"层直接对应。Devin Fusion 证明，在不牺牲智能的前提下实现 35-41% 的成本降低是可行的——这比提示工程或缓存优化的效果更显著。
+3. **模型路由的成本优化杠杆**：与 [Token 成本优化五层模型](../ch09/046-coding-agent.html) 中的"模型路由"层直接对应。Devin Fusion 证明，在不牺牲智能的前提下实现 35-41% 的成本降低是可行的——这比提示工程或缓存优化的效果更显著。
 
 4. **多模型 Harness 是未来-proof 的投资**：随着模型种类增加和智能差距缩小，多模型路由的价值只会增长。建议编码 Agent 平台从第一天就设计多模型路由能力，而非事后添加。
 
@@ -149,7 +103,7 @@ Cognition 的模型路由架构经历了三代演进：
 
 ## 相关实体
 
-- [AI Coding Agent Token 成本控制五层模型](../ch09/047-coding-agent.html)
+- [AI Coding Agent Token 成本控制五层模型](../ch09/046-coding-agent.html)
 - [Netflix Switchboard 模型路由](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [Cursor Reward Hacking 编码基准](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)
 - [Cursor Harness 模型生产](../ch01/265-cursor-harness-model-production-floor.html)

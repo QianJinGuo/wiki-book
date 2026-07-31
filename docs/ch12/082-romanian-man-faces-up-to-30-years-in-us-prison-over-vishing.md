@@ -6,58 +6,7 @@
 
 # Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Romanian Man Faces Up to 30 Years"))
-    犯罪链条的完整解构
-    Vishing 攻击的技术特征
-    跨境执法的漫长历程
-    法律后果
-    VOIP 安全漏洞的系统性问题
-    Money Mule 在网络犯罪中的角色
-    与 AI 时代 Vishing 的对比
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 53 岁的罗马尼亚籍男子 Gavril Sandu 于 2026 年 4 月 30 日被引渡至美国北卡罗来纳州夏洛特联邦法院，面临共谋罪和银行欺诈罪指控。该案涉及一个始于 2009 年的 VOIP vishing 犯罪团伙，该团伙劫持合法企业的 VOIP 电话系统，通过自动化脚本批量外呼，诱骗受害者泄露借记卡信息和 PIN 码，随后制作伪卡在 ATM 提现。该案于 2017 年 11 月由大陪审团起诉，Sandu 在罗马尼亚潜逃多年后于 2026 年 1 月被捕。
 
@@ -136,11 +85,11 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 
 ## 相关实体
 
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/348-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/349-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/romanian-man-30-years-us-prison-vishing.md)
 

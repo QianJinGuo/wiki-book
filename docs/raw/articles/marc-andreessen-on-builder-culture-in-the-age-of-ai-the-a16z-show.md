@@ -5,7 +5,7 @@ title: "Marc Andreessen on Builder Culture in the Age of AI  | The a16z Show"
 sha256: edda972d82cbab8994058506c9c00b09556326dfe649ab7d36c4adfa7b30da85
 created: 2026-05-14
 updated: 2026-05-14
-type: source
+type: raw-article
 tags: []
 review_value: 7
 review_confidence: 8

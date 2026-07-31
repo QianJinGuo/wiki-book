@@ -9,54 +9,11 @@
 > 来源：code 秘密花园（ConardLi），2026-04-03，公众号一文读懂 Harness Engineering
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一文带你弄懂 AI 圈爆火的新概念 Harness"))
-    一 三次重心迁移的内在逻辑
-    二 Harness 的六层构成
-    三 业界三家代表性实践
-    四 Harness Engineering 的本质重新定位
-```
-
 ## 摘要
 
 文章从三次重心迁移（Prompt → Context → Harness）+ 六层 Harness 构成 + OpenAI/Anthropic/LangChain 一线实践三个角度系统阐释 Harness Engineering 概念。**核心断言**："真正决定 AI 产品上限的是模型，但真正决定 AI 产品能否落地的，往往是 Harness。"
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 - **三次迁移对应三个本质问题**：(1) 模型是否听得懂你在说什么 (2) 模型是否拿到了足够且正确的信息 (3) 模型是否能在真实执行中持续做对
 - **LangChain 经典定义**：`Agent = Model + Harness` / `Harness = Agent - Model`
@@ -246,9 +203,9 @@ Harness Engineering 的核心信号：**AI 落地的核心挑战，正在从"让
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文是该概念的权威中文系统阐述
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 第二层重心迁移
 - [Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md) — 第一层重心迁移
-- [Claude Code 深度解析](ch05/073-claude-code-harness.html) — Anthropic Harness 的具体实现
+- [Claude Code 深度解析](ch05/074-claude-code-harness.html) — Anthropic Harness 的具体实现
 - [Claude Code Dynamic Workflows](../ch09/094-claude-code-dynamic-workflows.html) — Harness 第三层执行编排的 Dynamic Workflow 实现
-- [OpenClaw 完整指南](../ch11/235-openclaw.html) — OpenAI-style 渐进式披露 + Agent-first 工程环境
+- [OpenClaw 完整指南](../ch11/237-openclaw.html) — OpenAI-style 渐进式披露 + Agent-first 工程环境
 - [Agent Evolution 四阶段六维](../ch03/035-agent.html) — Harness 维度在六维框架中的对应
 - [Hermes Agent Operator](../ch03/096-hermes-agent.html) — 自进化 Agent 的 Harness 实现
 - [Agent YAML 评测](../ch03/035-agent.html) — Harness 第五层评估与观测的工程实现

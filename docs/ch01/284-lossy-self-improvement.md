@@ -10,22 +10,6 @@
 
 > **Core insight**: Nathan Lambert 提出"有损自我改进"（Lossy Self-Improvement, LSI）框架，对抗 AI 社区对递归自我改进（RSI）的流行叙事。LSI 核心论点是：模型确实成为研发循环的核心，但 friction 会打破 RSI 的三大假设——闭环、自放大和效率不减，导致进步曲线更接近线性而非指数。复杂性刹车（Complexity Brake）是 LSI 的理论基础。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Lossy self-improvement"))
-    RSI 的三大假设与 LSI 的提出
-    复杂性刹车 Complexity Brake
-    三大核心摩擦
-    LSI 时代 不是指数爆炸 而是线性爬坡
-    RSI 假设的结构性脆弱性
-    复杂性刹车的双重来源
-    AutoML 的警示寓言
-    Amdahl 定律的 AI 研究适配
-```
-
 ## RSI 的三大假设与 LSI 的提出
 
 递归自我改进（RSI）通常被描述为：AI 能够改进自身，进化的版本能更高效地改进自身，形成封闭放大循环，最终导致智能爆炸（奇点）。RSI 需要三个假设同时成立：闭环（模型能持续改进自身并产生更多模型）、自放大（下一代模型比当前版本产生更大的改进）和效率不减（指数曲线不被摩擦截断）。
@@ -33,43 +17,6 @@ mindmap
 Lambert 认为，尽管我们正经历由 AI 持续改进带来的社会动荡性变化，但进步轨迹在回望时将更接近线性而非指数。取而代之的是"有损自我改进"（LSI）——模型成为研发循环的核心，但摩擦会打破 RSI 的所有核心假设：你投入更多计算和 agents，问题中的 loss 和重复也会增加。
 
 ## 复杂性刹车（Complexity Brake）
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 LSI 的理论基础来自 Paul Allen 提出的复杂性刹车概念：科学越接近理解智能，进一步进步的难度就越大。对人类创造力的研究表明，专利数量并未呈现加速回报，实际上自 1850-1900 年间每千项专利达到峰值后便持续下降。复杂性增长最终是自我限制的，会导致"广义系统崩溃"。
 
@@ -143,10 +90,10 @@ AutoML 的历史教训是：自动化在明确定义的搜索空间内效果拔�
 
 ## 相关实体
 - [The Shape Of The Thing Mollick](ch01/213-the-shape-of-the-thing.html)
-- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/289-world-knowledge-agent.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
-- [Problem With Mathematically Proven Claims About Llms](ch01/334-problem-with-mathematically-proven-claims-about-llms.html)
-- [Deli Auto Research Skill Deepseek](ch01/1091-deepseek.html)
+- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/291-world-knowledge-agent.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
+- [Problem With Mathematically Proven Claims About Llms](ch01/335-problem-with-mathematically-proven-claims-about-llms.html)
+- [Deli Auto Research Skill Deepseek](ch01/570-deepseek.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lossy-self-improvement.md)

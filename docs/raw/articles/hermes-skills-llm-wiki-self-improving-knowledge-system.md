@@ -6,7 +6,7 @@ feed_name: "AI赋能说"
 author: "AI赋能说"
 published: 2026-05-08
 created: 2026-05-27
-type: raw
+type: raw-article
 tags: [hermes, skill, llm-wiki, karpathy, knowledge-management, agent]
 sha256: bbafddc74d38614876173af8437540c8f057fbc3f922ec65167729a3b2837dcb
 ---

@@ -8,21 +8,6 @@
 
 > 本文基于 Amplify Partners 合伙人 Lenny Pruss 的博客整理。文章提出在 AI Agent 时代，软件产品的最重要设计决策不再是"构建什么功能"，而是"暴露什么原语（primitive）"。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The Primitive is the Product AI"))
-    核心论点 AI 颠覆了软件产品逻辑
-    Tao of HashiCorp 原语设计哲学
-    原语思维 Primitive Thinking
-      产品即原语
-      典型案例
-      原语 vs 平台
-    对 AI Agent 时代的启示
-```
-
 ## 核心论点：AI 颠覆了软件产品逻辑
 
 传统软件经济学：**拥有更多工作流 = 捕获更多价值**。功能是软件的"货币"——每个新功能扩大产品面、增加切换成本。
@@ -34,37 +19,6 @@ AI 完全颠覆了这一逻辑。关键不是技术基础（模型）的变化�
 - Agent 只关心**能力（capabilities）**——输入、输出和显式约束，以及这些能否被可靠地调用和链式组合
 
 ## Tao of HashiCorp：原语设计哲学
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 HashiCorp 15 年前就明白了这个道理：
 

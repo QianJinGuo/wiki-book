@@ -10,7 +10,6 @@ Global Privacy Control Signal Detected
 ![Image 5](http://optro.ai/static/icons/close-gpc.svg)
 ![Image 6: Optro](http://optro.ai/static/images/logo-optro.svg)
 
-
 ## 相关实体
 - [五一活动来啦](https://github.com/QianJinGuo/wiki/blob/main/entities/五一活动来啦.md)
 - [升职那天我才明白自己是来填坑的](https://github.com/QianJinGuo/wiki/blob/main/entities/升职那天我才明白自己是来填坑的.md)
@@ -18,36 +17,6 @@ Global Privacy Control Signal Detected
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grcnow.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 GRC Now 2026 反映了企业治理、风险与合规领域正在经历的根本性范式转变。传统的 GRC 被视为"合规成本中心"，而本次会议主题"Govern AI with confidence"和"Reshape resilience"揭示了一个新趋势：企业开始将 GRC 能力视为竞争优势和战略资产。这种认知转变意味着 GRC 专业人士需要从被动合规转向主动风险管理，从成本中心思维转向价值创造思维。
 

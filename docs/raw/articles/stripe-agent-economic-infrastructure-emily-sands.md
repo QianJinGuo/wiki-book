@@ -5,7 +5,7 @@ title: "Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 �
 author: 深思圈
 publisher: 深思圈
 date: 2026-06-05
-type: article
+type: raw-article
 ingested: 2026-06-05
 review_value: 9
 review_confidence: 8

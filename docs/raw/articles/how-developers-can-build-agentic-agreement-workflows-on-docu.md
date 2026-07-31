@@ -1,6 +1,6 @@
 ---
 title: How Developers Can Build Agentic Agreement Workflows on Docusign IAM
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.docusign.com/blog/developers/momentum-26-agentic-agreement-workflows
 sha256: 8e246c7d0fdd

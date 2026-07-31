@@ -6,7 +6,7 @@ publisher: TechFarrari
 publish_time: 2026-06-15 10:30
 related_first_source: loop-engineering-addy-osmani-challengehub (2026-06-10)
 ingested: 2026-06-15
-type: raw
+type: raw-article
 sources: [entities/loop-engineering-addy-osmani-challengehub]
 review_value: 7
 review_confidence: 7

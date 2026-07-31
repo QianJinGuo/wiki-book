@@ -1,6 +1,6 @@
 ---
 title: Igor Babuschkin Seeks Up To $1 Billion For River AI
-type: source
+type: raw-article
 source: newsletter
 source_url: https://letsdatascience.com/news/igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09
 tags: [newsletter]

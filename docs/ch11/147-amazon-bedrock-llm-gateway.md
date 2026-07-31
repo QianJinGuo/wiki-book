@@ -8,56 +8,7 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/implementing-resilience-patterns-with-amazon-bedrock-and-llm.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Bedrock LLM Gateway"))
-    弹性模式的渐进式演进路径
-    LLM Gateway 的核心价值与选型考量
-    弹性设计的维度权衡
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 随着生成式 AI 工作负载从实验阶段进入生产规模化部署，LLM 推理的弹性成为关键挑战。本文系统梳理了在 Amazon Bedrock 上实现生产级推理弹性的五种渐进式模式，从原生跨区域推理到基于 LLM Gateway 的多模型编排，涵盖重试、回退、限流、断路器、多模型路由等核心策略。这些模式已在 AWS 官方博客中通过可运行的 GitHub 示例代码验证。
 

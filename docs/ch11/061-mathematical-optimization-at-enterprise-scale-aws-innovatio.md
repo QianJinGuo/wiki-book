@@ -8,64 +8,7 @@
 
 > 本文综合提炼自 AWS Generative AI Innovation Center 的企业级数学优化实践。AWS 团队将数学优化定位为 **prescriptive analytics（处方式分析）** —— 不同于 ML 的概率预测，数学优化给出"在约束条件下数学最优的决策"。3 个客户案例展示了 10%-46% 的具体业务收益，方法论 4 步框架可复用。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Mathematical Optimization at"))
-    核心定位 Prescriptive vs Predictive AI
-    四步方法论
-    三个客户案例 量化收益
-      BMW 工厂机器人路径排序
-      Delivery Hero 中程物流
-      Amazon EU 物流网络
-    可复用方法论产品
-    与 ML 的关系
-    参考链接
-    数学优化 被低估的企业 AI 应用
-    AWS 创新中心的行业解决方案模式
-```
-
 ## 核心定位：Prescriptive vs Predictive AI
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 **ML 是归纳式 AI（Inductive）**：从数据中学习模式，给出概率预测
 **数学优化是演绎式 AI（Deductive）**：把业务问题建模为数学形式，在约束条件下求解，给出**可证明最优**的决策
@@ -203,13 +146,13 @@ LLM 可以将自然语言业务描述翻译为初步的数学模型，但人类�
 用"优化前后的成本差异"量化优化项目的 ROI——这是说服管理层投资优化的最有效方式。
 
 ## 相关实体
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/298-ai-agent.html)
-- [Aws Quicksight Dataset Qa Tara Case](ch11/172-aws-quicksight-dataset-qa-tara-case.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/030-ai-agent.html)
+- [Aws Quicksight Dataset Qa Tara Case](ch11/174-aws-quicksight-dataset-qa-tara-case.html)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
 
-- [Aws Fundamentals Large Tabular Model Nexus Is Now Available On Amazon Sagemaker Jump](../ch05/094-ai.html)
+- [Aws Fundamentals Large Tabular Model Nexus Is Now Available On Amazon Sagemaker Jump](../ch05/095-ai.html)
 
 ---
 

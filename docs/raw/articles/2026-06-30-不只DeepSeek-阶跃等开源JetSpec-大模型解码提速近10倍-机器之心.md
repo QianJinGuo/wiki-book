@@ -2,7 +2,7 @@
 title: "不只DeepSeek 阶跃等开源JetSpec 大模型解码提速近10倍 机器之心"
 created: 2026-06-30
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: b603938fb5e7f328f680a9f334626fdc1c2ab024d131f5dead6e41414af5f543
 ---

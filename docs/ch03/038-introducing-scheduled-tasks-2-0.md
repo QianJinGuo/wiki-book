@@ -4,20 +4,6 @@
 
 > 📊 Level ⭐ | 5.7KB | `entities/manus.im-manus-schedules.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing Scheduled Tasks 20"))
-    从「时间触发」到「上下文感知」的范式转变
-    Project 作为调度容器的设计意义
-    Web 应用调度能力的战略意义
-    场景一 持续性研究工作流
-    场景二 项目管理与状态追踪
-    场景三 数据驱动型 Web 应用
-```
-
 ## 核心要点
 - **上下文感知调度**：Scheduled Tasks 2.0 将调度从单纯的时间触发进化为上下文感知的工作流，允许定时任务在同一任务内继续，保留指令、文件、对话和历史
 - **项目级复用**：定时任务可以复用 Project 中共享的设置（文件、技能、连接器、指令、输出标准），实现跨任务的一致性
@@ -25,37 +11,6 @@ mindmap
 - **执行环境透明**：支持选择 Agent、附加到 Project、使用云端计算资源
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 从「时间触发」到「上下文感知」的范式转变
 传统的定时任务系统本质上是**时间驱动**的——在设定的时间点触发某个操作，结果通常独立于之前的工作。这种设计在简单场景下足够用，但当工作流涉及多步骤、多文件、持续迭代时，问题就出现了：
 1. **上下文断裂**：每次运行生成独立任务，需要重新建立上下文，丢失了之前的工作进展
@@ -122,7 +77,7 @@ Project 在此版本中成为定时任务的「**上下文容器**」——定�
 5. **执行环境选择**：资源密集型任务使用云端计算资源，避免拖慢本地设备
 ## 相关实体
 - [Introducing Scheduled Tasks 2 0](ch03/038-introducing-scheduled-tasks-2-0.html)
-- [Skill Development Guide Aliyun 2026](../ch04/271-skill.html)
+- [Skill Development Guide Aliyun 2026](../ch04/273-skill.html)
 - [Openclaw Multi Agent Team Practice](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
 - [Strands Agents Cloud Cost Optimizer](../ch04/697-strands-agents.html)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)

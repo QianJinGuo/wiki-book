@@ -14,19 +14,6 @@
 - Score: Value=7 × Confidence=7 = 49
 - Tool: Routa Desktop v0.12.1 (https://github.com/phodal/routa/releases/tag/v0.12.1) See also [Harness Engineering](ch05/120-harness-engineering.html)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 工程可视化 Vibe Coding 中重建工程可控性"))
-    微信正文
-    第一 重新看见多层反馈环
-    第二 把分散治理对象组织成整体闭环
-    第三 把 Harness 理念从抽象原则变成工程界面
-    小结
-```
-
 ## 微信正文
 在最新的 Routa Desktop 中，我们引入了 Harness 工程可视化系统。它并不是一个展示"AI 写了多少代码"的界面，也不是为了给生成式开发增加一层炫目的仪表盘，而是试图回答一个更关键的问题：当 AI 逐渐成为软件交付链路中的执行者，团队如何依然保持对工程系统的理解、约束与控制？
 下载地址：https://github.com/phodal/routa/releases/tag/v0.12.1
@@ -36,37 +23,6 @@ mindmap
 这正是 Harness 工程可视化的意义。
 
 ## 第一，重新看见多层反馈环
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 我们最开始并没有先去设计什么"闭环模型"，而是从一个更简单的问题出发：工程里的反馈，到底在哪里？
 当你把软件交付链路完整展开，会发现反馈从来不是单一的。它至少存在于三个层次：
 1. **本地阶段**：编译、测试和 lint

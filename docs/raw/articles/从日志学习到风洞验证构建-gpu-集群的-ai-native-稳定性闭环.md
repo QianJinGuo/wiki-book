@@ -3,7 +3,7 @@ title: "从日志学习到风洞验证：构建 GPU 集群的 AI Native 稳定�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/vz5AUT8eqsedUeUu7VmIWQ"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 49
 tags: [raw]
 sha256: "09de1f4d27372c98ae94c9b75c2ceb44a8d6d50f10175ca1cf66863cdc0486b6"

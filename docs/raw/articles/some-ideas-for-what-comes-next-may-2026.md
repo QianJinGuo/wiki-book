@@ -5,7 +5,7 @@ source_url: https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may
 ingested: 2026-06-01
 feed_name: Interconnects
 source_published: 2026-05-26T15:39:02Z
-type: article
+type: raw-article
 sha256: 491b1ecb838025fa74edb5954bb13b678ae85eeae95de016481c0735538c1538
 tags: ['agi', 'forecasting', 'future-of-ai', 'analysis']
 ---

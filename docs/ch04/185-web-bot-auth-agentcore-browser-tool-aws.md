@@ -4,62 +4,10 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/intelligence-agent-driven-testing-transformation-making-agents-the-first-principle-of-testing.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("智能体驱动测试变革 让智能体成为测试第一性 之三 用 Web"))
-    测试自动化的发展历程与范式转变
-    Web Bot Auth 的技术架构
-    从绕过到合作的范式转变
-    对测试生态系统的深远影响
-    对测试工程师的建议
-    对安全团队的启示
-    对平台提供商的建议
-    场景化应用指南
-```
-
 ## 概述
 智能体驱动测试变革：让智能体成为测试第一性 之三 用 Web Bot Auth 为 AgentCore Browser Tool 打造可信身份 by awschina on 05 12月 2025 in Artificial Intelligence Permalink Share 序言 在自动化测试领域，我们正面临一个日益严重的矛盾：测试智能体越是智能，越容易被网站安全系统误判为"恶意机器人"。CAPTCHA、速率限制和访问阻断，这些防护措施本是用来抵御攻击，却意外成为了测试自动化的"拦路虎"。 测试智能体的困境 当你的AI助手尝试登录系统验证流程、模拟用户行为进行压力测试，或者爬取页面数据进行分析时，却频繁遭遇CAPTCHA拦截。本该自动化的测试流程被迫中断，需要人工介入，这完全违背了"测试第一性"的自动化愿景。 测试场景中的真实痛点 想象这些典型测试场景： 端到端流程验证 ：智能体模拟完整用户旅程，却在关键步骤卡在CAPTCHA 竞品分析测试 ：自动化收集竞品信息时被频繁阻断 安全测试 ：模拟异常行为时被误判为攻击而封禁 性能压测 ：多并发请求触发速率限制，影响测试准确性 传统解决方案要么脆弱（如OCR破解CAPTCHA），要么不具扩展性（如IP白名单），更重要的是，它们都在"绕过"防护，而非"合作"。 Web Bot Auth：测试智能体的"合法身份" 现在，Amazon Bedrock AgentCore Browser 推出的 Web Bot Auth 功能，为测试智能体提供了革命性的解决方案： 可验证的加密身份 。
 
 ## 核心技术
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 Amazon Web Services (AWS)
 
 ## 深度分析
@@ -112,13 +60,13 @@ WBA 的出现将对测试生态系统产生深远影响。CAPTCHA 提供商（�
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/intelligence-agent-driven-testing-transformation-making-agents-the-first-principle-of-testing/)
 
 ## 相关实体
-- [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/357-agent-principle-architecture-engineering-practice.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/441-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-intelligence-changelog.md)
 
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)
-- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](../ch05/094-ai.html)
+- [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](../ch05/095-ai.html)
 
 ---
 

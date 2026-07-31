@@ -5,7 +5,7 @@ source_url: https://aws.amazon.com/cn/blogs/china/leveraging-aws-budget-implemen
 ingested: 2026-06-01
 feed_name: AWS
 source_published: 2026-05-28T01:27:50Z
-type: article
+type: raw-article
 sha256: 1890821de5b46dc329d9dd2d64284bb252233ac3bf297fb83d70d6075b066369
 tags: ['aws-budget', 'bedrock', 'cost-governance', 'finops']
 ---

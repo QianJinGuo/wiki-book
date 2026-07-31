@@ -2,12 +2,11 @@
 
 ## Ch04.672 Kimi 决定，要用 300 个 Agent 解救非程序员们
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/kimi-work-300-agent-cluster-yin-john-agi-hunt.md`
+> 📊 Level ⭐⭐ | 3.4KB | `entities/kimi-work-300-agent-cluster-yin-john-agi-hunt.md`
 
 # Kimi 决定，要用 300 个 Agent 解救非程序员们
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-300-agent-cluster-yin-john-agi-hunt.md)
-
 
 ## 深度分析
 
@@ -18,37 +17,6 @@ Kimi 决定，要用 300 个 Agent 解救非程序员们 涉及agent领域的核
 > AGI Hunt 标语：关注AGI 的沿途风景！
 2. 前网易资深技术专家；AI 初创公司 CTO；佛系分享
 ## 核心断言
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 > "2026 年的 AI，已经忽略程序员了。
 3. "
 OpenAI Codex 增速最快的用户群体不是程序员（知识工作者增速 = 程序员 3 倍）。
@@ -73,11 +41,11 @@ OpenAI Codex 增速最快的用户群体不是程序员（知识工作者增速 
 ### 关联实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/235-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/235-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/237-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/237-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

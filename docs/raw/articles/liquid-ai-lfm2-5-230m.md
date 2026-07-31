@@ -1,7 +1,7 @@
 ---
 title: "LFM2.5-230M: Built to Run Anywhere"
 source_url: "https://www.liquid.ai/blog/lfm2-5-230m"
-type: article
+type: raw-article
 created: 2026-06-26
 updated: 2026-06-26
 sha256: 8e756a38f94c4e5c6949f76431b5378fcd3ec8fe5c144564be1190f455be7fbc

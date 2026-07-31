@@ -2,7 +2,7 @@
 title: "从 Spec 到损失函数 真正会用 AI Agent 的人 已经在设计循环 高可用架构"
 created: 2026-06-12
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 4ae20237f2a5ca4c81eab0b4751a42da9b034cdb002470a5535e8508231d9117
 ---

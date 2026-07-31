@@ -3,7 +3,7 @@ title: "langsmith evaluation concepts"
 source_url: https://docs.smith.langchain.com/evaluation-concepts
 ingested: 2026-05-01
 sha256: a1f5b3745e9ce0d62bbd1186d1b536ee6a1d2b459f21ad8d79a89c9b8d7c8f33
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: []

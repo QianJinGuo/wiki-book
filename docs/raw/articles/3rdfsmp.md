@@ -1,7 +1,7 @@
 ---
 title: "Archera • Insured cloud commitments for AWS, Azure, and Google"
 sha256: 42462b9d13af312134f9b0c017651631aa47b99b942376bbbe4049d5a9226461
-type: source
+type: raw-article
 source: newsletter
 source_url: "https://fandf.co/3RdfsMp"
 tags: [article]

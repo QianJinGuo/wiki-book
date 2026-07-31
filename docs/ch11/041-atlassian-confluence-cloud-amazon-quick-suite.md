@@ -4,66 +4,7 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/integrate-atlassian-confluence-cloud-with-amazon-quick.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Atlassian Confluence Cloud 与"))
-    核心概念
-      Knowledge Base 集成
-      Action 集成
-      Quick Spaces
-    前置要求
-    配置步骤
-      创建 Knowledge Base
-      创建 OAuth 20 应用
-      创建 Action 集成
-    使用场景
-      自然语言查询 Confluence 内容
-      执行 Confluence 操作
-    架构设计 双轨并行的知识流
-    ACL 粒度 从空间级到页面级的权限下沉
-    OAuth 20 3LO 的安全边界
-    Quick Space 作为聚合层的元认知价值
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 Amazon Quick 与 Atlassian Confluence Cloud 的集成旨在消除多系统切换带来的上下文丢失问题。当文档集中在 Confluence，而相关数据散布在其他系统时，团队需要频繁切换工具、重复检索、手动聚合信息——这些中断会拖慢决策速度，拉大「已有知识」与「可操作洞察」之间的差距。
 Quick 通过两种互补机制提供集成能力：
 
@@ -182,11 +123,11 @@ Knowledge Base 的 Sync Reports 是易被忽视的运维窗口。定期检查「
 - [Confluence Cloud Action 集成](https://docs.aws.amazon.com/quick/latest/userguide/confluence-action-integration.html)
 - [Confluence Knowledge Base ACL 配置](https://docs.aws.amazon.com/quick/latest/userguide/confluence-kb-acl.html)
 ## 相关实体
-- [Aderant Transforms Cloud Operations With Amazon Quick](ch11/203-aderant-transforms-cloud-operations-with-amazon-quick.html)
-- [Amazon Quick Research Agentic Multi Source Citation](ch11/222-amazon-quick.html)
+- [Aderant Transforms Cloud Operations With Amazon Quick](ch11/205-aderant-transforms-cloud-operations-with-amazon-quick.html)
+- [Amazon Quick Research Agentic Multi Source Citation](ch11/224-amazon-quick.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/295-amazon-bedrock.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
 
 ---
 

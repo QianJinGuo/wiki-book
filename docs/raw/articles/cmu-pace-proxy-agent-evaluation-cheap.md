@@ -7,7 +7,7 @@ publish_date: 2026-07-07
 created: 2026-07-07
 ingested: 2026-07-07
 tags: [agent, benchmark, evaluation, cmu, pace, proxy-evaluation, llm-evaluation]
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: strong

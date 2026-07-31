@@ -5,7 +5,7 @@ author: "TechMonitor"
 publish_time: "2026-06-17"
 ingested: "2026-06-22"
 sha256: "placeholder"
-type: article
+type: raw-article
 ---
 
 # Databricks targets AI-driven threat detection with Panther deal

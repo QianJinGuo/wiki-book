@@ -4,60 +4,7 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Nova Lite Fine-Tuning"))
-    微调策略的有效性验证
-    成本效益的核心优势
-    技术实施的关键发现
-    局限性与注意事项
-    何时选择微调而非提示词工程
-    微调实施的最佳实践
-    成本控制策略
-    场景化应用建议
-```
-
 ## 概述
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 by awschina on 07 1月 2026 in Artificial Intelligence Permalink Share 摘要 本文介绍了在 Amazon Bedrock 上对 Amazon Nova Lite 1.0进行微调的两个实际应用案例，展示了在专业计算机视觉任务中如何在保持成本效益的同时实现显著的性能提升。通过对航拍视角检测和低光照监控场景的系统性评估，我们以最小的训练成本实现了增强的指令遵循能力和更高的检测准确率。 背景介绍 Amazon Nova Lite 1.0作为 AWS 多模态基础模型系列的一部分，在通用视觉任务中提供了卓越的性价比。然而，专业应用场景往往需要增强的指令理解能力和特定领域的优化。本研究评估了微调技术在两个不同用例中的有效性： 航拍视角群组检测
 
 ## 核心技术
@@ -156,8 +103,8 @@ Amazon Nova、Nova Lite、Fine-tuning ^[https://aws.amazon.com/cn/blogs/china/am
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice/)
 
 ## 相关实体
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](ch11/208-cost-effective-deployment-of-vision-language-models-for-pet.html)
-- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/367-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](ch11/210-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/368-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/295-amazon-bedrock.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [AI Detection and Response (AIDR): A Zero-Impact Operating Model](../ch12/078-ai-detection-and-response-aidr-a-zero-impact-operating-model.html)

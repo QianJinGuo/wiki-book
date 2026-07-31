@@ -8,57 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-11-what-is-ax.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("What is AX John Maeda on"))
-    AX 重新定义了 Accessibility
-    UX 的驾驶舱正在失效
-    Norman 的两个海湾在 Agent 时代重新分配
-    双手隐喻 Chat Canvas
-    从 UX 到 AX 的范式转移
-    Erika Hall 的对话是最古老的界面
-    对 AIAgent 产品设计的启示
-```
-
 ## 摘要
 
 John Maeda 在这篇文章中提出 **AX（Agent Experience / Accessibility Experience）** 概念，将"无障碍"从"为残障人士提供便利"重新定义为"面向所有人的通用能力设计"。文章通过个人体验——法兰克福对话博物馆的全黑导览、与盲人同事共事的经历——论证了一个核心命题：在 Agent 时代，传统 UX 的"驾驶舱"范式正在被 AX 的"判断界面"范式取代。这篇文章不是一篇技术文档，而是一篇设计哲学宣言，它重新定义了人机交互的核心假设。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 1. AX 重新定义了 Accessibility
 
@@ -123,8 +77,8 @@ Maeda 引用了 Erika Hall 2018 年《Conversational Design》中的观点：没
 ## 相关实体
 
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
-- [Claude Code HTML Artifact Workflow](../ch01/687-claude-code-html-artifact-workflow-ifanr-analysis.html)
-- [Claude Dispatch and the Power of Interfaces](../ch01/518-claude-dispatch-and-the-power-of-interfaces.html)
+- [Claude Code HTML Artifact Workflow](../ch01/700-claude-code-html-artifact-workflow-ifanr-analysis.html)
+- [Claude Dispatch and the Power of Interfaces](../ch01/521-claude-dispatch-and-the-power-of-interfaces.html)
 - [MOC: Coding Agent Practice](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

@@ -1,7 +1,7 @@
 ---
 tags: [wechat, article, claude, openai]
 title: "multi agent mission factory luke aiengineer"
-type: raw
+type: raw-article
 url: https://mp.weixin.qq.com/s/Yxthv6KXRefxqcd_XUvGZg
 ingested: 2026-05-08
 sha256: 7a491c0b51e0ad3ccc55678d99d305eb8cda6ab77f4523e54645cdec5dc65d2b

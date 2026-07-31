@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 5.9KB | `entities/blog.tubikstudio.com-form-over-function-mistakes.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Form-Over-Function Mistakes or"))
-    UI 快餐模式的系统性风险
-    Windows 8 案例 功能模型错误 而非设计审美错误
-    Apple AI Summaries 信任侵蚀的隐蔽性
-    Twitter X 案例 品牌认知的不可强制转移性
-    建立设计前的功能签字机制
-    五项预警指标监测
-    原型测试的最小可行投入
-    IA 和用户旅程是最被低估的设计阶段
-```
-
 ## 核心要点
 - 评分：v=8, c=8
 - 核心论点：形式服务于功能，而不是替代功能
@@ -27,35 +11,6 @@ mindmap
 - 设计三步骤：先问题、后功能、再 UI
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 ### 1. "UI 快餐"模式的系统性风险
 文章提出的"UI 快餐"（UI fast food）概念精准描述了一种组织病理：**短期满足感驱动长期技术债务**。当团队"先做漂亮界面，功能以后再说"时，实际上是在做以下决策：
 
@@ -119,8 +74,8 @@ Information Architecture（信息架构）和用户旅程是设计阶段中 ROI 
 ## 相关实体
 - [Icon Pack Websites Designers Should Bookmark](ch03/131-icon-pack-websites-designers-should-bookmark.html)
 - [Designing Small Is Harder Than Designing Big Ux Magazine](ch03/097-designing-small-is-harder-than-designing-big-ux-magazine.html)
-- [Spotify Llm Evals Funnel Not Fork](../ch01/1274-llm.html)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
+- [Spotify Llm Evals Funnel Not Fork](../ch01/637-llm.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog.tubikstudio.com-form-over-function-mistakes.md)

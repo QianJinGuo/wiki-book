@@ -6,7 +6,7 @@ url: https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms
 title: "Reinforcing Recursive Language Models | alphaXiv"
 sha256: 86063279acf33d3c538444e0a70e8f1e55d0ae57da8be57202a3525d923e5918
 date: 2026-05-13
-type: raw
+type: raw-article
 review_value: 7
 review_confidence: 8
 review_recommendation: neutral

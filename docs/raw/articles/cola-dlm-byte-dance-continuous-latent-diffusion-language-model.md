@@ -1,6 +1,6 @@
 ---
 title: Cola DLM：字节跳动连续潜空间扩散语言模型
-type: raw
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/sSWrWvSQ8tw8yhFRip-aAw
 fetcher: curl_direct

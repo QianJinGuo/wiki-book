@@ -1,6 +1,6 @@
 ---
 title: OlmoEarth v1.1: A more efficient family of Earth observation models
-type: raw
+type: raw-article
 source: rss
 source_url: https://huggingface.co/blog/allenai/olmoearth-v1-1
 fetcher: jina

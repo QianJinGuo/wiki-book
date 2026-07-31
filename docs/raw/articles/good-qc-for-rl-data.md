@@ -2,7 +2,7 @@
 title: Good QC for RL Data
 created: 2026-05-09
 updated: 2026-05-09
-type: raw
+type: raw-article
 tags: [post-training, evaluation, rl-data, data-quality]
 source_url: https://www.seancai.com/philosophy/good_qc_rl_data
 review_value: 9

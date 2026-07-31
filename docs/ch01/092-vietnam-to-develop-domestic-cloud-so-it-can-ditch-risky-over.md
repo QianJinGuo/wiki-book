@@ -6,21 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Vietnam to develop domestic cloud"))
-    数据主权与合规压力交织
-    全球主权云浪潮的亚洲样本
-    境外大厂的越南布局与政府诉求之间的结构性矛盾
-    20302035 双时间表的战略意图
-    对政府与技术决策者
-    对云服务商与 IT 厂商
-    对研究者与政策分析师
-```
-
 ## 核心要点
 - 来源：www.theregister.com
 - 评分：v=8, c=8, product=64
@@ -30,44 +15,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 ### 1. 数据主权与合规压力交织
 越南当前存在一个结构性悖论：其本国法律要求个人数据本地存储，但政府工作负载却大规模运行在 Microsoft、Google、Tencent Cloud 等境外大厂之上。Decision 808 的出台直接揭示了这一合规黑洞——政府一边在法律上要求数据本地化，一边又不得不依赖外国云基础设施。这种张力是推动国内云建设的核心驱动力，而非单纯的技术自主愿景。
 
@@ -99,7 +46,7 @@ AWS 将在河内部署轻量级 Local Zones，阿里巴巴云和华为云也有�
 - **关注 Decision 808 的执行机制**：该决策由总理直接发布，列出 20 项战略技术——这种顶层设计模式与越南的政治体制高度匹配，但执行中的部门协调、预算分配和技术引进管理将是主要瓶颈。
 
 ## 相关实体
-- [Vietnam to develop domestic cloud](../ch11/196-vietnam-to-develop-domestic-cloud.html)
+- [Vietnam to develop domestic cloud](../ch11/198-vietnam-to-develop-domestic-cloud.html)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
 
 ---

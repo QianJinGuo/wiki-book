@@ -10,69 +10,10 @@
 **演讲者：** 何宇航（易点天下 中台研发总监）
 **主题：** 企业级 Agentic AI 的工程化落地：Context Engineering + 安全防御体系
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一点天下 Context Engineering 与"))
-    背景命题
-    一 底层支撑 多云共生的确定性架构
-    二 V1 V2 技术演进
-      V1 问题 低代码线性 Workflow
-      V2 方案 Agent Loop Context Engineering
-    三 六层上下文体系 L1L6
-    四 主动注入 Hook 化的主动推送
-      三类检索钩子
-    五 Token 预算治理
-      问题
-      三级内容分层 L0L1L2
-      动态注入策略
-    六 渐进式工具加载 Deferred Tool Registry
-    七 压缩续接 PreCompact Hook
-```
-
 ## 背景命题
 > "如何在一个确定性要求极高的复杂企业架构中，有效驯服 Agent 固有的'幻觉'与'遗忘'，让概率性的智能稳定地跑在确定性的生产系统之上？"
 
 ## 一、底层支撑：多云共生的确定性架构
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 易点天下核心业务覆盖全球 230+ 国家和地区，底层 **Cycor 平台**采用 Multi-cloud 战略：
 
 - 无缝接入 AWS、GCP、阿里云、腾讯云、华为云
@@ -211,10 +152,10 @@ graph TB
 ## Related
 
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai](ch04/258-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/451-vibe-coding-agentic-engineering.html)
+- [Yidian Tianxia Context Engineering Agentic Ai](ch04/261-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/457-vibe-coding-agentic-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering V4](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Agent Memory Architecture Ruofei](ch04/121-agent-memory.html)
+- [Agent Memory Architecture Ruofei](ch04/098-agent-memory.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yidian-tianxia-context-engineering-agentic-ai-qcon.md)

@@ -1,6 +1,6 @@
 ---
 title: Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.thehackernews.com/2026/05/funnel-builder-flaw-under-active.html
 tags: [security]

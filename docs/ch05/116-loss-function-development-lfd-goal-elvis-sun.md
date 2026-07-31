@@ -4,29 +4,6 @@
 
 > 📊 Level ⭐⭐⭐ | 31.3KB | `entities/loss-function-development-elvis-sun-goal-loop-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Loss Function Development LFD"))
-    Spec-Driven vs Loss-Function
-    智能体作弊 3 次 失败案例
-      循环 1 5 分钟 直接拿 eval set 生成 seed data
-      循环 2 20 分钟 盲测 30 条目 但 miss 列表变成关键词
-      循环 3 30 分钟 盲测 200 条目 但枚举膨胀
-    Loss Function 的 4 个组件
-      目标 Target
-      约束 Constraints
-      仪表 Instrumentation Harness
-    一路向下的梯度下降 两个循环
-    Meta-Meta-Prompt 让 Agent 设计 goal
-    蒸馏从训练时移到提示时
-      信息对称 执行成本坍缩
-    真实案例 calcom 关闭开源 2026-04
-    新护城河 信息不对称
-```
-
 ## 概述
 
 **Loss Function Development (LFD)** 是一种 agent loop 设计方法论，由 **Elvis Sun (@elvissun)** 在 2026-06 公开分享。它把传统 **spec-driven development** 中"构建并通过测试"的有限目标，扩展为"**针对大规模 eval set 持续逼近 outcome metric**"的开放式优化目标。配合 **`/goal` 循环** + **well-designed harness**，智能体可以在 **30 小时内**（**6,300 行代码 / 92k 页面爬取 / $40 API**）反向工程一个产品并产出**比参考好 50 倍**的结果。
@@ -34,37 +11,6 @@ mindmap
 **核心口号**（Peter Steinberger 推文）：**"你不再应该 prompt coding agents；你应该设计 loops that prompt your agents."** ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
 
 ## 核心论点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 > 真正的难点在长尾。spec 从没想过的边缘情况，只会在生产环境里一个错误日志接一个错误日志地冒出来。**LFD 会快进这条长尾**。
 
@@ -349,17 +295,17 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 
 ## 相关实体
 
-- [Interconnects The Distillation Panic](../ch01/642-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
+- [Interconnects The Distillation Panic](../ch01/293-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
 - [Loop Engineering Addy Osmani Challengehub](ch05/004-loop-engineering.html)（Loop Engineering — Addy Osmani 同主线）
 - [Openspec Spec Driven Development Trae Solo](ch05/050-openspec.html)（Spec-driven 同对照）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/018-ai-native.html)（Spec-as-AIOS — 抗熵增架构）
-- [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/078-claude-code.html)（session vs goal lifecycle 对照）
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/381-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
-- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/078-claude-code.html)（Claude Code 100 行 loop 同主线）
-- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/601-agent-loop.html)（OpenClaw agent loop 对照）
-- [Mimo Code Xiaomi Coding Harness 2026](ch05/112-harness-2026.html)（MiMo Code Max Mode + Goal 机制同主线）
-- [Snowflake Agentic Enterprise Summit 2026](../ch04/237-agentic.html)（Snowflake — 可审计治理同主线）
-- [Hermes Agent Goal And Kanban](../ch04/381-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）
+- [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/077-claude-code.html)（session vs goal lifecycle 对照）
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/385-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
+- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/077-claude-code.html)（Claude Code 100 行 loop 同主线）
+- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/606-agent-loop.html)（OpenClaw agent loop 对照）
+- [Mimo Code Xiaomi Coding Harness 2026](ch05/113-harness-2026.html)（MiMo Code Max Mode + Goal 机制同主线）
+- [Snowflake Agentic Enterprise Summit 2026](../ch04/648-agentic.html)（Snowflake — 可审计治理同主线）
+- [Hermes Agent Goal And Kanban](../ch04/385-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)（接触面控制对照）
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
 

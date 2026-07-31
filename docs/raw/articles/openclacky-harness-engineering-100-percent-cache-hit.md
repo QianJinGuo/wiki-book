@@ -4,7 +4,7 @@ title: "Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？"
 author: "ClackyAI 创始人李亚飞（经 Founder Park 发布）"
 published: 2026-05-19
 created: 2026-05-19
-type: article
+type: raw-article
 platform: wechat
 tags: [harness, OpenClacky, Cache, claude-code, LLM, Prompt-Cache, Multi-Agent, context-management, Ruby]
   - Harness

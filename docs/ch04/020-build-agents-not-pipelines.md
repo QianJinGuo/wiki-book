@@ -6,18 +6,6 @@
 
 # Build agents, not pipelines
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build agents not pipelines"))
-    Pipeline与Agent的本质区别
-    可预测性陷阱 Pipeline的成本下限
-    Context-Gathering Pipeline的隐形债务
-    模型选择的灵活性矛盾
-```
-
 ## 核心要点
 
 用库与框架的类比清晰区分LLM应用中的pipeline与agent架构，预测性与灵活性的权衡讨论有实用价值
@@ -29,36 +17,6 @@ mindmap
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=7, stars=4。
 
 ### Pipeline与Agent的本质区别
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
 
 作者用**库与框架的类比**来区分pipeline与agent两种架构：pipeline类似库，由开发者控制主流程、调用辅助函数；agent类似框架，由LLM主导控制流，框架在关键时刻调用开发者代码 。在简单场景下二者等价，但当context超出单次prompt限制或需要**反应式执行**（先行动再根据结果调整）时，二者表现差异显著 。
 
@@ -85,10 +43,10 @@ Pipeline并不比agent更安全：prompt injection在两种架构下攻击面相
 ## 相关主题
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seangoedeckecom-build-agents-not-pipelines.md)
-- [Claude Code Tool Design Evolution](../ch03/078-claude-code.html)
+- [Claude Code Tool Design Evolution](../ch03/077-claude-code.html)
 - [RAG Chunking Optimization 2025](../ch01/223-rag.html)
 - [Context Engineering: Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
-- [Karpathy: Vibe Coding to Agentic Engineering](ch04/237-agentic.html)
+- [Karpathy: Vibe Coding to Agentic Engineering](ch04/648-agentic.html)
 
 ---
 

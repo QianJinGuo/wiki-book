@@ -10,7 +10,6 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 **RL场景示例**：Agent自动完成文献调研→实验规格跟踪→数据流水线对接→启动实验→监控分析→日志读取→问题排查→指标分析→代码修复→MR提交→冒烟测试。
 > M2.7能够胜任30-50%的工作流。
 
-
 ## 相关实体
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)
@@ -21,37 +20,6 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-m2-7-self-evolution.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 M2.7的核心意义在于它标志着AI开发方法论的一次根本性转变：模型不再仅仅是开发对象，而是成为了开发过程的主动参与者。传统的AI开发依赖人类研究员构建Harness、编写训练脚本、设计评测基准，而M2.7展示了模型自行构建这些基础设施的可能性。Agent Harness覆盖数据流水线、训练环境、评测基础设施、跨团队协作、持久化记忆五个层面，研究员在每一层引导方向、模型在每一层负责构建，这意味着人机协作模式从"人做模型用"进化到了"人与模型共同建构"。
 

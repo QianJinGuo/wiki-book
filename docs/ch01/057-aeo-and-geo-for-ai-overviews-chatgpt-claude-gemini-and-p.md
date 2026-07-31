@@ -4,70 +4,17 @@
 
 > 📊 Level ⭐ | 7.7KB | `entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AEO and GEO for AI Overviews"))
-    AEO vs GEO 概念溯源与实际差异
-    多表面爬取生态 被忽视的基础设施
-    内容被引用的核心逻辑 不可合成性
-    Agentic 体验 被低估的下一个表面
-    立即可执行
-    内容策略层面
-    长期布局
-```
-
 ## 核心要点
 - AEO（Answer Engine Optimization）和 GEO（Generative Engine Optimization）本质上是 SEO 的延伸，而非独立学科 
 - 内容能否被引用取决于模型是否能从训练数据中合成——独特的第一手数据、具体的案例、真实的测试结果是关键 
 - 技术层面的可访问性（渲染、爬取、snippet 配置）是一切优化工作的前提 
 - AI surfaces 的爬取生态与传统的 SEO bot 完全不同，需要分别管理索引爬虫和训练爬虫 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Tether Launches Developer Grants Program For Local First Ai ](../ch11/212-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Anthropic_Cache_Tokenomics](ch01/989-anthropic.html)
+- [Tether Launches Developer Grants Program For Local First Ai ](../ch11/214-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Anthropic_Cache_Tokenomics](ch01/1004-anthropic.html)
 - [Introducing Claude For Small Business](ch01/027-introducing-claude-for-small-business.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/1091-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/570-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 

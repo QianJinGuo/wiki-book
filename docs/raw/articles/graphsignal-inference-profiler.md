@@ -6,7 +6,7 @@ publish_time: ""
 ingested: 2026-06-25
 sha256: b620b62b13d299ac
 tags: ["mlops", "profiling", "llm", "observability", "inference"]
-type: article
+type: raw-article
 ---
 
 # Graphsignal: LLM Inference Profiler

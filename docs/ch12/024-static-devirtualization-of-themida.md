@@ -10,59 +10,7 @@
 
 > **Note**: 实体 slug 为 `2026` 是源 URL 路径中日期生成的产物，内容实际是 Back Engineering Labs (IDontCode, naci) 发表的 Themida/CodeVirtualizer 静态去虚拟化技术深度分析。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Static Devirtualization of Themida"))
-    为什么不用模式匹配
-    Themida 与 VMProtect 的关键差异
-    核心方法 Guided Symbolic Evaluation
-    优化 Pass 套件
-    通用优化打败 VM 特定知识是去虚拟化范式的胜利
-    SSA Pass-feeding-pass 的复利效应
-    可配置内存范围是把通用方法安全化的关键
-    为什么作者怀疑 LLVM-based 框架
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 Back Engineering Labs 公开了对 **Themida/CodeVirtualizer** 这类基于虚拟机（VM-based）的二进制混淆器的静态去虚拟化技术。核心方法不依赖 VM 特定的模式匹配，而是通过 **Guided Symbolic Evaluation + SSA IR + 一套通用编译器优化 Pass** 把虚拟化的代码还原为可执行的原生代码。该方法对 VMProtect、Themida、vxlang、EagleVM 等多种 VM 混淆器都适用。配套引擎 **BLARE2** 支持 AMD64/ARM64 双架构 + 完整的 Pass 系统、优化器、指令选择器、寄存器分配器和链接器，能产出与原始函数近 1:1 的输出。
 

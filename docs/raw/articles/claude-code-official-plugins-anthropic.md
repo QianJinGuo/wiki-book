@@ -1,6 +1,6 @@
 ---
 title: "让你的 Claude Code 满血复活，Anthropic 在 GitHub 上开源了个插件"
-type: raw
+type: raw-article
 tags: [claude, agent, plugin, claude-code]
 source_url: "https://mp.weixin.qq.com/s/-g-JDq6PmcrcUTpGU-U1LA"
 ingested: 2026-05-28

@@ -2,7 +2,7 @@
 title: "frontend ai native visual reduction taobao 2026 06 24"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: dd1db53d961f7097cf5b25e47967f5732b44bc4386c04683eeffdc883e0ceaea
 ---

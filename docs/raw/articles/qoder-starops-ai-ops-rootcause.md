@@ -2,7 +2,7 @@
 title: "把运维能力装进 Qoder，一句话就能定位根因"
 created: 2026-07-02
 updated: 2026-07-02
-type: source
+type: raw-article
 tags: [qoder, starops, ai-ops, root-cause-analysis, alibaba-cloud, ops-llm]
 sha256: 9ebb6bba99023986b9e7243952e16a9c65010476e16d76de943506f913c85275
 source: wechat

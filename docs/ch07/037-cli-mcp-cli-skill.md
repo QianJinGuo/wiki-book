@@ -8,22 +8,6 @@
 
 # CLI、MCP 和 CLI+Skill：企业Agent架构选择指南
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CLI MCP 和 CLISkill 应该如何选"))
-    三个东西不是一层
-    决策矩阵
-    三层推荐架构
-    MCP 的 tools tax 问题
-    上线顺序
-    优先用 CLISkill 验证 再考虑 MCP
-    MCP 的工具 schema 要克制
-    用 Progressive Tool Discovery 处理工具爆炸
-```
-
 ## 三个东西不是一层
 
 | 概念 | 关注点 |
@@ -35,39 +19,6 @@ mindmap
 **组合原则**：Skill 写方法，MCP 管边界，CLI 做执行。
 
 ## 决策矩阵
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 | 场景 | 推荐方案 |
 |------|----------|
@@ -171,9 +122,9 @@ Skill 是组织经验和方法论的载体。不要把 Skill 看作"让 Agent �
 ## 关联阅读
 
 ## 相关实体
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/298-ai-agent.html)
-- [From Agent Protocol To Harness Skill](../ch04/428-from-agent-protocol-to-harness-skill.html)
-- [Claude Code Core Internals](../ch03/078-claude-code.html)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/030-ai-agent.html)
+- [From Agent Protocol To Harness Skill](../ch04/431-from-agent-protocol-to-harness-skill.html)
+- [Claude Code Core Internals](../ch03/077-claude-code.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/035-agent.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)

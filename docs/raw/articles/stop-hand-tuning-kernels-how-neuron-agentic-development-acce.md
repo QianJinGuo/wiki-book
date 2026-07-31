@@ -5,7 +5,7 @@ ingested: "2026-06-11"
 feed_name: "AWS China ML"
 source_published: "2026-06-10"
 sha256: "73f64020ff1a51cd022cf676bde569d4cbc55ca3e121c64c23b6263fcdfdef9a"
-type: "article"
+type: "raw-article"
 tags: "agent, ai, llm"
 ---
 

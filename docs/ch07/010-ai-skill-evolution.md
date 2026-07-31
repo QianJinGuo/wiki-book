@@ -13,28 +13,6 @@
 📌 一句话摘要：花两周写好的 AI Skill 上线就出 bug？本文拆解 AI Skill 测评的 3 个核心设计，帮你在发布前发现负向增益、随机失效、自判卷偏差这三类隐藏问题。
 🏷️ 推荐标签：AI Skill 测评 LLM 应用质量 Prompt 工程师 AI Agent 测试
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ai-skill-evolution底层逻辑"))
-    你有没有遇到过这种情况
-    什么是 AI Skill
-    为什么 Skill 需要专门的测评
-      问题一 自判卷偏差
-      问题二 随机性
-      问题三 负向增益
-    AI Skill 测评的三个核心设计
-      执行者和评审者分离 解决自判卷偏差
-      多次运行取均值 解决随机性
-      有 Skill vs 无 Skill 对比 解决负向增益
-    一个真实的踩坑案例
-    一个完整的测评流程长什么样
-    自判卷偏差的深层机制
-    随机性的统计本质
-```
-
 ## 你有没有遇到过这种情况
 你花了两周时间写了一个 AI 报销助手，规则写得很详细：
 
@@ -47,39 +25,6 @@ mindmap
 问题出在哪？规则写了，但没有系统地验证规则是否真的被执行了，也没有验证执行结果是否稳定。**这就是 AI Skill 测评要解决的问题。**
 
 ## 什么是 AI Skill
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 **AI Skill 是一种以 Markdown 编写的「给模型看的说明书」，是 LLM 应用质量的核心载体。** 它告诉大模型在特定场景下该怎么做，模型读懂了才能按规则执行；模型没读懂，规则就形同虚设。
 ```
 用户说「帮我报销」
@@ -224,11 +169,11 @@ Skill 规则只写「必须约束」的部分，不写「可以推断」的部�
 **Q：AI Skill 测评需要哪些前提条件？**
 在正式开跑测评之前，需要准备三类资产：测试账号（拥有对应权限，能触发 Skill 的目标流程）、测试数据（对应场景的发票、单据等，类型必须和测试用例匹配），以及对被测 Skill 的规则清单（测评工具可以自动从 SKILL.md 提炼，但人工确认一遍更准确）。如果测试资产不匹配，用例会进入 INCONCLUSIVE（无法验证）状态，不代表失败，但必须补充资产后重跑，不能忽略。
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/258-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Skill Formal Theory Survey 10Papers](../ch04/271-skill.html)
-- [Glm5 Scaling Pain Inference](../ch01/551-scaling.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Gepa Optimize Anything](../ch01/295-gepa-optimize-anything.html)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/261-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Skill Formal Theory Survey 10Papers](../ch04/273-skill.html)
+- [Glm5 Scaling Pain Inference](../ch01/557-scaling.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Gepa Optimize Anything](../ch01/296-gepa-optimize-anything.html)
 
 - [Auto Improving Agent Platform Ashpreetbedi Shensi](../ch03/035-agent.html)
 - [Hermes Skills Llm Wiki Self Improving Knowledge System](ch07/017-hermes-skill.html)

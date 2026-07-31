@@ -1,7 +1,7 @@
 ---
 title: CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini 3.1 Pro
 sha256: 3c2b86b18378d02bf50a768a35125e34cc850dcadbe069fec11359c7e46822ff
-type: source
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/SCk63tSurxEaVNxqgSkA
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

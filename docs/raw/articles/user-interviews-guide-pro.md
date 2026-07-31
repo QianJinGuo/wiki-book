@@ -1,7 +1,7 @@
 ---
 
 title: "User Interviews Guide: How to Interview Users Like a Pro"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://cms.greatquestion.co/blog/user-interviews-guide
 fetcher: jina-reader

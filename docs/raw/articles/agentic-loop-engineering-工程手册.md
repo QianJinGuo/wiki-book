@@ -1,5 +1,5 @@
 ---
-type: source
+type: raw-article
 title: "Agentic Loop Engineering 工程手册（附完整代码）"
 source: "数据STUDIO（微信公众号）"
 author: "云朵君"

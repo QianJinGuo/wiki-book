@@ -2,7 +2,7 @@
 source_url: http://www.straiker.ai/blog/nomshub-cursor-remote-tunneling-sandbox-breakout
 ingested: 2026-06-09
 sha256: 60971b14e9ceb432466f51e3fbe01ee3fbe935ee0fb3195e61cce5cda9c25173
-type: article
+type: raw-article
 author: Straiker (Sumit Agrawal, et al.)
 title: "NomShub: Weaponizing Cursor's Remote Tunnel Through Indirect Prompt Injection and Sandbox Breakout"
 created: 2026-06-09

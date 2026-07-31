@@ -5,63 +5,11 @@
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/better-harness-eval-trace-methodology.md`
 
 # Better-Harness：Agent Harness 自动优化方法论
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Better-Harness Agent Harness 自动优化方法论"))
-    六步法
-    关键机制
-      eval 方向信号 不只是验收表
-      优化集 留出集拆分
-      人工审核 防上线翻车
-    行为标签
-    行动节奏错误是主要失败模式
-    eval 生产飞轮
-      三种 eval 来源
-      维护机制
-    eval 是方向信号而非验收表
-    优化集留出集拆分是防作弊机制
-    行为标签将 eval 从题目升级为行为地图
-```
-
 ## 核心问题
 Karpathy Autoresearch 证明自动优化需要实验循环，但循环能跑起来的前提是：**评价信号必须足够清楚**。当指标本身错了，自动优化会把错误放大。 
 Better-Harness 补上了更难的一半——当评价信号错了，系统会沿着错误方向跑得更快。 
 
 ## 六步法
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ``` 
 ①收集标注 eval 
   ↓ 
@@ -163,7 +111,7 @@ LangChain 的大量实验揭示了一个反直觉事实：Agent 失败通常不�
 - [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/120-harness-engineering.html)
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](ch05/058-agent-harness.html)
-- [Agentscope Java Harness Framework](../ch03/053-agentscope-java-harness-framework-2-0-agent-harness.html)
+- [Agentscope Java Harness Framework](../ch03/052-agentscope-java-harness-framework-2-0-agent-harness.html)
 - [Browser Use Runtime Harness](ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

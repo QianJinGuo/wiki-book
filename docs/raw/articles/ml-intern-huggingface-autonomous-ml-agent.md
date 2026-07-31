@@ -8,7 +8,7 @@ sha256: da60fa1d
 github: https://github.com/huggingface/ml-intern
 license: Apache 2.0
 framework: smolagents (27K+ Stars)
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 tags: [github]

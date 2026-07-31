@@ -3,7 +3,7 @@ title: "提示词压缩竟成大模型新漏洞？港科大提出黑盒攻击框
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/CS4lWmpvOIHtKEwgc3wWdw"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "332321e6a6c8c43bd06e782e6e8f924e9badf735b7a6cc1adf70b0bbea03ed1e"

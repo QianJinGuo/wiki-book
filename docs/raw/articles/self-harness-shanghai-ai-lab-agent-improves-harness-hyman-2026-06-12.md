@@ -5,7 +5,7 @@ source: "wechat|Hyman的杂货铺"
 author: "Hyman的杂货铺"
 publish_date: "2026-06-12"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: []
 source_type: wechat
 sha256: "618adb3ff8fcc8a8c73cf099a2eb91b9891cd24793e5bacf4705706a785c5107"

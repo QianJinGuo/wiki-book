@@ -12,7 +12,7 @@ review_recommendation: strong
 tags: [openclaw, multi-agent, agent-harness, workflow]
 ingested: 2026-05-10
 sha256: 1e375a33c416b0bf
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

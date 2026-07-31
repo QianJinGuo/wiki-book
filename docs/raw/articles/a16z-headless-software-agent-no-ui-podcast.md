@@ -5,7 +5,7 @@ source_site: "深思圈"
 author: "深思圈"
 ingested: "2026-07-08"
 sha256: "e20e429354338308d6dc53818c271ea7deb03a68e817b2714613671b8041ee70"
-type: raw
+type: raw-article
 tags:
   - headless-software
   - agent-architecture

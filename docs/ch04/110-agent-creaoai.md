@@ -10,59 +10,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("云端 Agent 基础设施两条硬经验 CreaoAI 状态代码解耦"))
-    桌面 云端 Agent 的信任模型差异
-    第一版失败的根本原因是「变更节奏冲突」
-    借鉴操作系统「内核 vs 用户态」分离的工程价值
-    凭据隔离的「不可信代码 短期凭据」组合
-```
-
 ## 摘要
 
 CreaoAI 联合创始人在 2026 年 6 月分享了云端 Agent 基础设施的两条硬经验：① **把变化慢的和变化快的分开**——用户环境（包、文件、配置）冻结到用户主动改变为止，平台 Runner 代码则通过 hot-swap 热替换不依赖状态；② **把凭据隔离在执行边界之外**——长生命周期凭据绝不进入沙箱，沙箱通过 API bridge 桥接层 + IP 白名单 + 短期 JWT 三层校验发起外部调用。这两条经验的核心是判断标准：对于云平台上持久化的每一样东西，都要问清楚「谁控制它的变更节奏」。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 - **桌面 vs 云端 Agent 的根本差异**：桌面端一个用户一台机器一个进程，状态、密钥、生命周期都在同一受信边界里；云端 Agent 跑在每次全新启动的沙箱里，底下多租户共享硬件，触发源可能是定时任务/HTTP 请求/另一个 Agent，用户多半不在线。
 - **沙箱快照（sandbox snapshot）解决可复现性**：用户满意环境后冻结成快照，每次运行都从同一份快照启动，桌面框架做不到（pip install 装的版本六个月后不同）。
@@ -133,16 +85,16 @@ CreaoAI 给出的可推广设计原则是：「对于云平台上持久化的每
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/451-vibe-coding-agentic-engineering.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/457-vibe-coding-agentic-engineering.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Code Harness Deep Understanding](../ch01/422-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/235-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [Claude Code Harness Deep Understanding](../ch01/423-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/074-claude-code-harness.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/237-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

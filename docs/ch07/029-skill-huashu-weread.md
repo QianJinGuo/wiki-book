@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/weread-official-skill-huashu-critical-gap.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("微信读书官方skill与huashu-weread增强版"))
-    微信读书官方skill weread skill
-    huashu-weread 增强版
-      个核心workflow
-      核心方法论
-      alchemy亮点 读书主题演化
-    数据开放的结构性价值
-    能力与智能的本质差异
-    划线数据的第二曲线价值
-    增强生态的商业逻辑
-    给产品增长团队的启示
-    给个人知识管理爱好者的启示
-```
-
 ## 微信读书官方skill（weread skill）
 **官方链接**：https://weread.qq.com/r/weread-skills ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 **6件开放能力**：查阅书架、书籍搜索、阅读统计、书籍详情、笔记和划线、推荐好书 ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
@@ -30,39 +11,6 @@ mindmap
 **核心问题**：推荐书单时不查已读/笔记/书架历史，把读过的书当新书推回——本质是"自然语言包装的搜索接口"，能力之间没有"智能"
 
 ## huashu-weread 增强版
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 **GitHub**：https://github.com/alchaincyf/huashu-weread
 在官方weread skill能力之上加一层"读书顾问工作流"： ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 
@@ -132,11 +80,11 @@ huashu-weread证明了"在官方能力上做增强层"这一模式的可行性�
 2. **上下文注入决定推荐质量**：huashu-weread的核心技巧是把"已读/笔记/书架历史"作为context注入prompt，而不是让模型自由发挥——这是RAG思路在个性化推荐中的具体应用 ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 3. **数据聚合后做统计往往比做生成更有价值**：alchemy的洞察不是AI"生成"出来的，而是AI对5269条划线做分组统计后"呈现"出来的——有时候最好的AI产品不需要生成，只需要准确统计 + 可视化呈现 ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 ## 相关实体
-- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](../ch03/002-obsidian-claude-code.html)
-- [Ai Era What To Read World Book Day](../ch05/094-ai.html)
-- [Imclaw通过微信飞书操控Claude Code Coodex Gemini Clipi Agent蜂群](../ch03/078-claude-code.html)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/111-ai-coding.html)
-- [Skill Craft](ch07/051-skill-craft-claude-skill.html)
+- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](../ch03/076-obsidian-claude-code.html)
+- [Ai Era What To Read World Book Day](../ch05/095-ai.html)
+- [Imclaw通过微信飞书操控Claude Code Coodex Gemini Clipi Agent蜂群](../ch03/077-claude-code.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/112-ai-coding.html)
+- [Skill Craft](ch07/052-skill-craft-claude-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weread-official-skill-huashu-critical-gap.md)
 

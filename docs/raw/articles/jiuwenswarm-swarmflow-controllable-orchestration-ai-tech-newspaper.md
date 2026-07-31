@@ -5,7 +5,7 @@ mp: "AI技术立文"
 pub_date: "2026-06-12"
 ingested: "2026-06-12"
 sha256: "0f6d30060b218fffb31e648695d5e8b2769d4581283bb0202c4dbd56dc05f52a"
-type: source
+type: raw-article
 tags: ["multi-agent", "swarmflow", "openjiuwen", "jiuwenswarm", "orchestration", "coordinat-2026-06"]
 ---
 

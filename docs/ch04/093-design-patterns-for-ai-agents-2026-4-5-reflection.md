@@ -6,21 +6,6 @@
 
 → （无原始来源）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Design Patterns for AI Agents"))
-    主流架构模式
-    新兴模式
-    工程实践要点
-    步选型决策树
-    个关键阈值
-    AgentScope 3 完整 Demo
-    模式互补关系
-```
-
 ## 核心内容
 ### 主流架构模式
 2026 年 Agent 架构已经收敛到若干成熟模式：
@@ -52,37 +37,6 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 | Meta-Agent | 动态路由 | 路由震荡 |
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 1. **Harness 模式正在成为 Agent 架构的"操作系统层"**。传统的 Agent 实现将工具调用、知识检索、输出验证都耦合在 prompt 和代码中；Harness 模式将这些能力抽象为可配置组件，Agent 本身变成声明式描述而非过程式代码。这一转变使得 Agent 的能力升级可以从"重写 Agent"变为"更新 Harness 配置"，大幅提升迭代效率。
 2. **Multi-Agent 协作模式从"固定流水线"演进到"动态组织"**。2025 年的 Multi-Agent 主要是固定角色（研究员、写作、审核）的顺序 pipeline；2026 年的新模式允许 Agent 根据任务动态决定角色数量、协作拓扑和消息协议。这带来更高的灵活性的同时，也引入了协调复杂性和通信开销的新挑战。
 3. **Constitutional AI Guardrails 标志着"内置约束"取代"外部过滤"的范式转移**。传统的安全方案是在输出后加一层内容过滤器（被动防御）；Constitutional AI 将安全原则编码进 Agent 的推理过程本身（主动约束）。这不仅提升安全性，还减少了后置过滤器带来的延迟和假阳性问题。2026 年这一模式已从研究进入生产部署阶段。
@@ -100,23 +54,23 @@ graph TB
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/058-agent-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html)
-- [Agent Memory 架构解析](ch04/121-agent-memory.html)
+- [From Agent Protocol to Harness Skill](ch04/431-from-agent-protocol-to-harness-skill.html)
+- [Agent Memory 架构解析](ch04/098-agent-memory.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
 - [AI Native 时代 —— 研发组织何去何从](../ch05/018-ai-native.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/094-ai.html)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/1151-deepseek-v4.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/095-ai.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/710-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/357-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）

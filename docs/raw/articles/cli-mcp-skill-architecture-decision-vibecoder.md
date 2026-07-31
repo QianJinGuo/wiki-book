@@ -12,7 +12,7 @@ date: 2026-05-27
 created: 2026-05-28
 updated: 2026-05-28
 tags: [mcp, cli, skill, agent, tool, enterprise, architecture, governance, context-management]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: 2d94a9620caea6d9e62d0f6941eebbfa2301fcd1bc65987cddc8b31d63bc3c88
 ---

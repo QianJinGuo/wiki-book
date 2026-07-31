@@ -3,7 +3,7 @@ title: 让大模型学会「自己教自己」！京东&中科院信工所连发
 source_url: https://mp.weixin.qq.com/s/g46P5l_BM99M6T1U084lTg
 author: 大模型智能（来源：量子位）
 published: 2026-05-20
-type: raw
+type: raw-article
 tags:
   - rlvr
   - self-training

@@ -4,63 +4,12 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/designing-small-is-harder-than-designing-big-ux-magazine.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Designing Small Is Harder than"))
-    Notes
-    系统性思维与增量交付的张力
-    水平切片的陷阱
-    最小可用价值单元的定义
-    学习循环的构建机制
-    分解大型功能前先定义最小价值单元
-    按用户价值维度分解 避免按技术层分解
-    明确每次迭代需要验证的假设
-```
-
 ## Summary
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - [Icon Pack Websites Designers Should Bookmark](ch03/131-icon-pack-websites-designers-should-bookmark.html)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/913-20.html)
-- [Codex Role Plugins Sites Annotations](../ch01/517-codex.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/926-20.html)
+- [Codex Role Plugins Sites Annotations](../ch01/520-codex.html)
 - [The Future Of Bmw Design A Conversation With Max Missoni](../ch01/019-the-future-of-bmw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designing-small-is-harder-than-designing-big-ux-magazine.md)

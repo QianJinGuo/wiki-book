@@ -6,65 +6,7 @@
 
 ["Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例"](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-serverless-async-inference-multimodal.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Bedrock模型推理的Serverless异步架构"))
-    核心挑战
-    推理时间实测数据
-    架构核心
-      SQS Lambda 异步管道三原则
-      关键参数配置
-    压测验证结果
-      并发突发测试
-      大规模测试
-    异步架构的本质 解耦与缓冲
-    ESM 并发控制的精细价值
-    Timeout 链路的级联设计
-    多模态推理的 token 放大效应
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 当大模型应用从纯文本扩展到图片、PDF等多模态输入时，推理耗时长且不可预测、RPM/TPM限流频发成为生产落地的两大瓶颈。本文分享一套基于 Amazon SQS 与 AWS Lambda 的 Serverless 异步架构，在 Amazon Bedrock之上串起缓冲、控速、重试与结果入库的完整管道。
 
 ## 核心挑战
@@ -199,10 +141,10 @@ SQS 和 Lambda 的成本结构：
 - [Using AWS Lambda with Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
 ## 相关实体
 - [Aws Bedrock Serverless Async Inference Sqs Lambda](ch11/009-aws-bedrock.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/561-amazon-bedrock-agentcore.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/295-amazon-bedrock.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/566-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/295-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

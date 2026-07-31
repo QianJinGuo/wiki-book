@@ -4,7 +4,7 @@ source_url: https://www.volcengine.com/docs/85637/1563626?lang=zh
 author: 火山引擎
 date: 2026-05-25
 title: "什么是数据智能体Data Agent--数据智能体-火山引擎"
-type: raw
+type: raw-article
 tags: [volcengine, data-agent, nl2sql, multi-agent, enterprise, ai-agent]
 review_value: 8
 review_confidence: 9

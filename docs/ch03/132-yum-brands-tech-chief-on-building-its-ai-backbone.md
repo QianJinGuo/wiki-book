@@ -4,40 +4,10 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/yum-brands-ai-backbone-tech-chief.md`
 
-
 ## Summary
 *(AI-generated summary - TODO: manually review)*
 
 ## Key Points
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 -
 
 ## Related
@@ -56,7 +26,7 @@ graph TB
 关于 ROI 衡量，Dausch 说"customer/team member experience 是最难衡量的"，这透露了 AI 落地项目最常见的困境：最容易量化的是 top-line sales 和 margins/costs，但 AI 最直接影响的恰恰是体验这类软指标。企业如果只用财务指标衡量 AI ROI，会系统性地低估 AI 的真实价值。
 
 ## 相关实体
-- [819775](../ch01/742-9.html)
+- [819775](../ch01/755-9.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/819775.md)
 

@@ -5,7 +5,7 @@ author: 新智元
 published: 2026-05-17
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [蔚蓝科技, babyalpha, 机器狗, 具身智能, 异构计算, 国产芯片, 端侧推理]
 sha256: 5d7fe020c732fcfa29a06e09bd5bf930019e80d7f1e3511b483fd30be8bb1e11
 review_value: 7

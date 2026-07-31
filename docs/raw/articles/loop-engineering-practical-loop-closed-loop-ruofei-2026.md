@@ -12,7 +12,7 @@ date: 2026-06-27
 created: 2026-06-29
 updated: 2026-06-29
 tags: [loop-engineering, agent, state-machine, ci-pipeline, harness, engineering]
-type: article
+type: raw-article
 provenance_state: extracted
 sha256: 303e4e25e6323606754ae8ed4835cfd7accab30b2d81e8e788ad1b0743084238
 ---

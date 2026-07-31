@@ -1,7 +1,7 @@
 ---
 title: "SEO is a product, AEO is brand"
 sha256: 80fbee44132ddcda9f50b6a1e3b03a4aa0f913f08ed47b5c49cd149181898447
-type: source
+type: raw-article
 source: newsletter
 source_url: "https://www.productledseo.com/p/seo-is-a-product-aeo-is-brand"
 review_value: 7

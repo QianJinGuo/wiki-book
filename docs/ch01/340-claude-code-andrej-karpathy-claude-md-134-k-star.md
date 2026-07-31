@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/andrej-karpathy-claude-md-134k-stars-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("最佳 Claude Code 配置 Andrej Karpathy"))
-    四条规则精确对治四种结构性失败
-    复杂偏向是 RL 训练的内置偏见
-    顺手优化是独立的失败模式
-    行为准则本质是概率分布约束 而非确定性规则
-    为每个项目创建专属 CLAUDEmd
-    在 Prompt 中主动暴露歧义而非等待 AI 提问
-    用老工程师测试抵抗复杂化冲动
-    将验收标准强制转化为测试优先表述
-```
-
 ## 深度分析
 
 ### 1. 四条规则精确对治四种结构性失败
@@ -43,41 +27,6 @@ Karpathy 的四条规则并非随意组合，而是与 AI 编程中四种最常�
 文件跻身 GitHub 历史 Star Top 100，说明市场对结构化 AI 编程指南存在强烈需求。这与传统的 prompt engineering 不同——后者是优化提问方式，前者是明确约束行为边界。CLAUDE.md 类文件的流行，预示着 AI 编程正在从"如何问"向"如何约束"范式转移。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. 为每个项目创建专属 CLAUDE.md
 
@@ -213,11 +162,11 @@ Karpathy 做的事情是用准确的语言把这些挫败感说了出来，并�
 - 作者：ChallengeHub 小编
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/078-claude-code.html)
-- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/078-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
+- [Claude Code Harness Deep Understanding](ch01/423-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/074-claude-code-harness.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/077-claude-code.html)
+- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/077-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/286-anthropic-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/andrej-karpathy-claude-md-134k-stars-2026.md)

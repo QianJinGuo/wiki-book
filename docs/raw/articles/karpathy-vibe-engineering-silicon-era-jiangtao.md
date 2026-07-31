@@ -1,7 +1,7 @@
 ---
 title: "karpathy-vibe-engineering-silicon-era-jiangtao"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: e0847f79b6ac8b7159f0dbb570e666ee21557a63e41535b1227f4578610eb2b9
 ---
 source_url: https://mp.weixin.qq.com/s/BIxfYW9CO1m8L3qK-8XD3w

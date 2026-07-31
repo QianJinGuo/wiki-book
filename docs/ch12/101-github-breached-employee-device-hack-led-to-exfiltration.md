@@ -4,52 +4,15 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md`
 
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 - thehackernews.com 技术文章
 - 来源：https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
 
 ## 相关实体
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/820-github.html)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/869-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/565-score-by-collisions-patch-by-panic.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/834-github.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/883-google-adds-llms-txt-check-to-chrome-lighthouse.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/569-score-by-collisions-patch-by-panic.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/223-rag.html)
 

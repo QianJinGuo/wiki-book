@@ -4,58 +4,11 @@
 
 > 📊 Level ⭐ | 8.1KB | `entities/engineering-roles-shift-from-developing-code-to-ma.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Engineering roles shift from"))
-    一 从「代码生产者」到「AI 产出管理者」角色定义的重新校准
-    二 「看不见的工作」度量体系的盲区
-    三 绩效评价的信任危机
-    四 AI 工程作为独立工种的形成
-```
-
 ## 摘要
 
 2026 年 Harness《The State of Engineering Excellence 2026》报告揭示了 AI 辅助编程对工程团队的深远影响：81% 的工程领导者表示 AI 节约的时间被重新用于审查 AI 生成的代码，工程师近三分之一的工作日消耗在「不可见工作」上——这些产出并不体现在传统的生产力指标中。报告指出，工程角色正在从「写代码」向「管理 AI 系统」发生结构性转变。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **AI 编码成为新常态**：AI 辅助编码已被工程团队广泛采用，但团队普遍难以衡量 AI 引入后带来的实际生产力提升和 ROI
 - **产出指标的失效**：传统工程效能度量（代码行数、PR 数量、提交频率）无法反映 AI 时代的新工作形态——AI 自动生成代码缩短了周期时间，但「审查 AI 输出」这一隐形工作未进入度量体系
@@ -116,12 +69,12 @@ CIO Dive 的核心受众是技术管理者，因此报道着重于组织层面�
 
 ## 相关实体
 
-- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/080-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/081-engineering-roles-shift-from-developing-code-to-managing-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 - [Gbhackers Sandworm Shift From It Breaches](https://github.com/QianJinGuo/wiki/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md)
-- [Hs.Playerzero Ai Code Review](../ch05/094-ai.html)
+- [Hs.Playerzero Ai Code Review](../ch05/095-ai.html)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/098-code-simulation-for-enterprise-engineering-playerzero.html)
-- [DeepMind AI Pointer — 交互范式变革](../ch05/094-ai.html)
+- [DeepMind AI Pointer — 交互范式变革](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/engineering-roles-shift-from-developing-code-to-ma.md)
 

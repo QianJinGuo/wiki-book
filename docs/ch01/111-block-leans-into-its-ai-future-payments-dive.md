@@ -7,46 +7,16 @@
 # Block leans into its AI future | Payments Dive
 Opens in a new window Opens an external website Opens an external website in a new window
 
-
 ## 相关实体
-- [Notion Ai Agents](../ch04/298-ai-agent.html)
-- [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
+- [Notion Ai Agents](../ch04/030-ai-agent.html)
+- [Amazon Turns Alexa Into Its Next Storefront](ch01/066-amazon-turns-alexa-into-its-next-storefront.html)
 - Senators Query Credit Bureaus On Bnpl 1
 - [Openai Realtime Api Architecture](ch01/107-openai-realtime-api.html)
-- [Tencent Ai Infra Backend Engineer Huangrunpeng](ch01/772-ai-infra.html)
+- [Tencent Ai Infra Backend Engineer Huangrunpeng](ch01/785-ai-infra.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/block-leans-into-its-ai-future-payments-dive.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 **大规模裁员与 AI 转型协同并行的"替代悖论"。** Block 在 2026 年 2 月裁减约 40% 员工（4000 人），随后在 Q1 财报中展现出超预期的财务韧性——收入增长 5%、毛利润增长 27%。这一结果与此前"AI 替代人类工作"的担忧形成张力：裁员本身并未损害 Block 的执行力，反而因更小的团队、更扁平的结构加速了决策和 AI 工具的落地。这表明 AI 驱动的组织转型中，人力削减与技术增强并非零和博弈。
 

@@ -1,6 +1,6 @@
 ---
 title: "Simplify model selection in Amazon Bedrock with the open source Model Router"
-type: raw
+type: raw-article
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/simplify-model-selection-in-amazon-bedrock-with-the-open-source-model-router
 ingested: 2026-07-03

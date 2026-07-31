@@ -10,7 +10,7 @@ review_confidence: 7
 review_recommendation: strong
 review_stars: 4
 tags: ["multi-agent", "coordination-engineering", "openjiuwen", "jiuwenswarm", "harness", "agent-swarm"]
-type: article
+type: raw-article
 ---
 # 蜂群Agent来了！openJiuwen社区发布JiuwenSwarm，引领Coordination Engineering新范式
 作者｜openJiuwen

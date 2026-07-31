@@ -6,61 +6,11 @@
 
 # LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLMReaper - DOM Based AI"))
-    为什么 LLM 对话特别脆弱
-    供应链攻击的持续重演
-    PoC 架构与实现
-    MutationObserver 与响应完成检测
-```
-
 ## 摘要
 
 LLMReaper 是 thewhiteh4t 发布的概念验证（PoC），演示恶意 Chrome 扩展如何在用户毫不知情的情况下实时读取 ChatGPT、Claude、Gemini 等 LLM 聊天界面上的提示词与回答。攻击核心是利用浏览器标准的 `MutationObserver` API 监听 DOM 变化，配合合理的扩展权限（"read and change all your data on websites you visit"），再经由 service worker 把数据 POST 到攻击者控制的服务器。该项目映射到 MITRE ATT&CK 框架的多个 technique，是企业安全意识教育的实用工具。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **任何扩展都能读取 LLM 对话**：当用户给浏览器扩展授予站点权限时，扩展就可以读取该页面 DOM 的全部内容——包括用户提示词与 LLM 回答，因为这些内容正是通过 DOM 渲染的。
 - **历史供应链攻击持续重演**：2024 年 12 月 Cyberhaven 扩展供应链攻击波及 260 万用户；2025 年 2 月 GitLab 威胁情报团队发现 16 个恶意 Chrome 扩展影响 320 万用户；2026 年 4 月发现 100+ Chrome 扩展窃取 Google OAuth2 Bearer tokens 与 Telegram 会话。
@@ -168,10 +118,10 @@ LLMReaper 演示的技术完整对应到 MITRE ATT&CK：
 
 - [Harness Engineering 概念](../ch05/120-harness-engineering.html) — AI 工程实践
 - [Agent 记忆系统](../ch03/035-agent.html) — Agent 系统的工程实践
-- [Claude Code 源码机制](../ch03/078-claude-code.html) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](../ch04/237-agentic.html) — Agentic Engineering 范式
-- [OpenClaw 完整指南](../ch11/235-openclaw.html) — AI 工具教程
-- [天猫 AI 编码实战](../ch05/094-ai.html) — 企业 AI 编码案例
+- [Claude Code 源码机制](../ch03/077-claude-code.html) — AI 工具架构
+- [Karpathy Vibe Coding 访谈](../ch04/648-agentic.html) — Agentic Engineering 范式
+- [OpenClaw 完整指南](../ch11/237-openclaw.html) — AI 工具教程
+- [天猫 AI 编码实战](../ch05/095-ai.html) — 企业 AI 编码案例
 - [What My Privacy and Security Stack Actually Looks Like](../ch12/021-what-my-privacy-and-security-stack-actually-looks-like.html) — 个人安全栈案例
 - [Canvas Hackers ShinyHunters Domain Suspended](../ch12/037-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html) — 攻击者基础设施案例
 

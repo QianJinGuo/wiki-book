@@ -6,7 +6,7 @@ author: 古琦
 ingested: 2026-06-17
 sha256: 6635b30b080dad7db490715596a726bddf4985a43ac63f30cfd848d309b0023b
 tags: [ebpf, observability, opentelemetry, aliyun, open-source]
-type: raw
+type: raw-article
 ---
 
 # 装在内核里的透视镜：云监控 2.0 不改一行代码实现全栈可观测

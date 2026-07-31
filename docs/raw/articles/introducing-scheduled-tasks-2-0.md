@@ -1,6 +1,6 @@
 ---
 title: Introducing Scheduled Tasks 2.0
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://manus.im/blog/manus-schedules
 tags: [article]

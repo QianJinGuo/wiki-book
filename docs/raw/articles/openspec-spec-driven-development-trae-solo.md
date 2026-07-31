@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/YwzvXhYQlFOdHs4uBcc-2Q
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, openspec, spec-driven-development, sdd, trae-ide, solo-mode, proposal-design-tasks-specs, change-management, add-modify-removed, intent-locking]
 ---
 

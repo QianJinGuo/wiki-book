@@ -6,33 +6,6 @@
 
 # 滴滴 IBG 智能客服质检系统
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("滴滴 IBG 智能客服质检系统 3 管线 意图 86 合规 90"))
-    概览
-    大业务挑战
-    方案总览 3 条专用管线
-    意图管线 从不足 40 到 86 的 3 版架构演进
-      第一版 直接分类 失败
-      第二版 调用架构重构
-      第三版 提升标签定义质量 数据层优化
-    评估管线 一套模板覆盖所有语种 业务线
-      挑战 多种组合 如何不写多套规则
-      设计思路 配置外部化 动态组装
-      一次调用 多项同时完成
-    VOC 管线 从人工汇总到数分钟出报告
-      阶段 Pipeline
-      真实案例
-    大核心方法论总结
-      架构先于 Prompt
-      数据质量是上限
-      配置化是可维护性的基础
-    管线 vs 已有实体的核心区分
-```
-
 ## 概览
 
 **滴滴国际化事业群（IBG）客户体验部门构建了一套覆盖西班牙语和葡萄牙语、横跨出行、外卖、金融三大业务线的智能客服质检系统**。
@@ -45,39 +18,9 @@ mindmap
 - **VOC 管线** — 客户声音趋势聚合分析 — **数小时人工 → 数分钟自动报告**
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
-- [Multilingual Ai](../ch05/094-ai.html)
-- [Eagle 3 Speculative Decoding Optimization](ch01/1016-spec.html)
-- [Didi Eagle 3 Speculative Decoding Agents](../ch09/047-coding-agent.html)
+- [Multilingual Ai](../ch05/095-ai.html)
+- [Eagle 3 Speculative Decoding Optimization](ch01/1034-spec.html)
+- [Didi Eagle 3 Speculative Decoding Agents](../ch09/046-coding-agent.html)
 - [Be More Expressive To Close More Sales](ch01/085-be-more-expressive-to-close-more-sales.html)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 

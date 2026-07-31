@@ -2,7 +2,7 @@
 title: "Harness 即后端 当Agent基础设施消解于统一原语 unknown"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: cdfffca932d207092747c8d71f3c033004be302f0d306ef419ddc49b1555bbeb
 ---

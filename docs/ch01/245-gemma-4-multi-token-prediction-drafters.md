@@ -4,29 +4,6 @@
 
 > 📊 Level ⭐⭐ | 17.0KB | `entities/gemma-4-multi-token-prediction-drafters.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Gemma 4 Multi Token Prediction"))
-    问题背景 为什么 LLM 推理慢
-    MTP 核心技术
-      Speculative Decoding 原理
-      架构优化
-    性能提升
-      基准测试结果
-      适用模型
-      硬件适配细节
-    使用方法
-      支持框架
-      官方文档
-    技术溯源
-    相关资源
-    参见
-    引用
-```
-
 ## 概述
 
 **Gemma 4 Multi-Token Prediction (MTP) Drafters** 是 Google 于 2026年5月为 Gemma 4 系列模型发布的**推测解码**（Speculative Decoding）加速组件。该技术通过轻量级草稿模型（drafter）并行预测多个 token，再由目标大模型验证，实现最高 **3x 推理加速**，同时保持输出质量完全一致。 See also [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
@@ -34,44 +11,6 @@ mindmap
 MTP drafters 以 Apache 2.0 开源协议发布，兼容 vLLM、MLX、HuggingFace Transformers、SGLang、Ollama 等主流推理框架，并可通过 Google AI Edge Gallery 在 Android 或 iOS 设备上运行。
 
 ## 问题背景：为什么 LLM 推理慢？
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 LLM 推理的核心瓶颈是**内存带宽瓶颈**（Memory Bandwidth Bottleneck）：
 
@@ -272,8 +211,8 @@ MTP drafters 对 Apple Silicon 的适配揭示了 MoE（混合专家）模型在
 [^8]: 同上 — 官方技术文档链接 https://ai.google.dev/gemma/docs/mtp/overview?hl=zh-cn
 
 ## 相关实体
-- [Aws Fsx Lustre Gpudirect Sharded Llm Loading](ch01/1274-llm.html)- [tliveomni vllm 适配与量化方案](ch01/992-vllm.html)
-- [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](ch01/622-gemma-4.html)
+- [Aws Fsx Lustre Gpudirect Sharded Llm Loading](ch01/637-llm.html)- [tliveomni vllm 适配与量化方案](ch01/1007-vllm.html)
+- [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](ch01/632-gemma-4.html)
 
 ---
 

@@ -8,62 +8,11 @@
 
 > **Background**: Anthropic Claude Code 团队的 Thariq Shihipar 和 Sid Bidasaria 分享了 Dynamic Workflows 的实战经验——让 Claude 为每个任务临时编写专属 harness 的 JavaScript 协调机制。模型够强（Claude Opus 4.8）后，不再需要为每个用例写静态 harness，直接让 Claude 现场生成。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code Dynamic Workflows"))
-    动态工作流的运作机制
-    大失败模式
-    大基础模式
-    大实战用例
-    静态 vs 动态 Harness 的范式转变
-    锦标赛模式的工程洞察
-    隔离区模式的安全价值
-    Token 预算的工程必要性
-```
-
 ## 摘要
 
 Claude Code Dynamic Workflows 是一种让模型为每个任务动态生成执行框架（harness）的范式。核心机制是执行一个 JavaScript 文件，其中包含特殊函数来生成和协调多个 subagent——每个 subagent 有独立上下文窗口、目标聚焦和彼此隔离。文章系统介绍了 3 大失败模式（智能体惰性、自我偏好偏差、目标漂移）、6 大基础模式（分类执行、扇出汇总、对抗校验等）、11 个实战用例和 5 大构建技巧。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 动态工作流的运作机制
 
@@ -176,7 +125,7 @@ Dynamic Workflows 消耗更多 token——多个 subagent 各有独立上下文�
 
 - [Claude Code Dynamic Workflows（已有合并实体）](ch09/094-claude-code-dynamic-workflows.html)
 - [Embabel](../ch07/021-embabel.html)
-- [扣子 3.0](../ch01/694-3-0.html)
+- [扣子 3.0](../ch01/708-3-0.html)
 - [Meta Skill](../ch07/025-meta-skill.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

@@ -15,26 +15,6 @@ provenance_state: inferred
 > **作者**：Hermes Agent 技术实现团队
 > **核心命题**：**SkillOpt 真正难落地的不是"让模型提出 skill patch"，而是更底层的问题："你怎么证明一个 agent 真的变好了？"** 本文给出 Hermes Agent Eval Harness 的 **7 模块闭环** + **6 类 Verifier** + **3 类 Regression** + **6 阶段落地路径**。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent Eval Harness 可验证"))
-    一 定位 从 SkillOpt 学术到 Eval Harness 工程
-    二 为什么 Agent 不能只看这次成功了
-    三 Eval Harness 最小闭环 7 模块
-    四 任务集不是 prompt 列表 而是环境快照
-      代码修改任务 TaskSet
-      文档任务 TaskSet
-      Skill patch 任务 TaskSet
-    五 TrajectoryStore Agent Eval 的事实来源
-    六 Verifier 不是函数 而是一组判定器 6 类
-    七 Selection Gate Skill Patch 不能靠直觉合入
-      三个细节
-    八 Regression Gate 让 Agent 能长期进化 3 类
-```
-
 ## 一、定位：从 SkillOpt 学术到 Eval Harness 工程
 
 [Skillopt](../ch05/043-skillopt.html)（Microsoft + SJTU SkillOpt 论文 arxiv 2605.23904）提出了"把 SKILL.md 当成冻结模型之外的可训练状态"——通过 rollout、bounded edits 和 held-out validation gate 优化 agent skills。但 SkillOpt 学术框架在生产环境落地需要完整的工程实施：
@@ -50,37 +30,6 @@ mindmap
 > **Self-improving skills 的关键不是"self"，而是"verified improvement"。**
 
 ## 二、为什么 Agent 不能只看"这次成功了"
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 普通软件测试可以输入固定参数，断言返回值。Agent 不一样 — 输出不仅是 final answer，还包括中间决策：
 
@@ -307,18 +256,18 @@ regression_failures | rejection_reason | review_notes
 | [Skillopt Microsoft Train Skill Like Neural Network](../ch05/043-skillopt.html) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
 | [Skillopt Microsoft Train Skill Hyman'S Blog](../ch05/043-skillopt.html) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
 | [Hermes Agent Skill Crossover Optimization](../ch01/332-hermes-agent-skill.html) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
-| [Skill Self Evolution Three Approaches](ch04/271-skill.html) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
+| [Skill Self Evolution Three Approaches](ch04/273-skill.html) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
 | [Agent Self Improvement Six Mechanisms](../ch03/035-agent.html) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
-| [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/094-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
-| [Darwin Skill 2 Huashu](ch04/271-skill.html) | **Darwin Skill 2** | Darwin Skill 进化 |
+| [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/095-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
+| [Darwin Skill 2 Huashu](ch04/273-skill.html) | **Darwin Skill 2** | Darwin Skill 进化 |
 | [Embabel](../ch07/021-embabel.html) | **Embabel** | Embabel 自进化框架 |
 | [Pith Train Agent Native Moe Training Framework](../ch03/035-agent.html) | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](../ch03/096-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
-| [Hermes 9 Module Architecture](../ch01/742-9.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
+| [Hermes 9 Module Architecture](../ch01/755-9.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/120-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
-| [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/327-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
-| [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/271-skill.html) | **Deli Auto Research** | Continual learning + self-improvement |
-| [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/078-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
+| [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/236-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
+| [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/273-skill.html) | **Deli Auto Research** | Continual learning + self-improvement |
+| [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/077-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 
 ## 十四、关键金句
 

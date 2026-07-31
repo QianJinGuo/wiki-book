@@ -12,66 +12,12 @@
 <p><strong style="font-size: 18px;color: #333">目录</strong></p>
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ai agent 的迁移与现代化 使用 amazon"))
-    混合迁移策略的架构意义
-    多租户隔离的技术路径
-    成本模型的结构性变化
-    安全架构的升级路径
-    架构设计层面
-    工程实践层面
-    成本优化层面
-    扩展方向
-```
-
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 1](../ch04/561-amazon-bedrock-agentcore.html)
-- [Openclaw Multi 5](ch11/235-openclaw.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 1](../ch04/566-amazon-bedrock-agentcore.html)
+- [Openclaw Multi 5](ch11/237-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 

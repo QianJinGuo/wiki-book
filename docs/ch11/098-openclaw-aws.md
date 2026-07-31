@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("把 OpenClaw 从个人助手变成客服 一次信任模型的翻转"))
-    信任模型的根本性翻转
-    四层隔离机制的协同设计
-    软约束与硬约束的互补关系
-    知识注入的静态-动态分离架构
-    对 AI Agent 开发者
-    对企业安全团队
-    对架构师
-    对产品经理
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文探讨如何将 OpenClaw 从个人 AI 助手转型为面向客户的服务Agent。围绕五个核心问题展开：会话隔离（dmScope 配置实现多客户 session 独立）、多渠道接入（Web Widget 与消息平台的身份关联）、安全模型（tools.deny 硬约束 + Bedrock Guardrails 内容过滤的双层防护）、知识库注入（Bootstrap 文件 + Amazon Bedrock Knowledge Bases 的 RAG 检索）、以及客户记忆的局限与演进方向。部署架构基于 AWS，采用 ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计，通过
 
 ## 核心技术
@@ -110,7 +56,7 @@ ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计体现了云原�
 4. **跨渠道体验的一致性**：通过 identityLinks 实现 Telegram/WhatsApp/Web Widget 的 session 合并，但需评估隐私风险——某些场景下渠道间严格隔离（per-channel-peer）更合适。
 
 ## 相关实体
-- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/235-openclaw.html)
+- [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/237-openclaw.html)
 
 ---
 ## 关联

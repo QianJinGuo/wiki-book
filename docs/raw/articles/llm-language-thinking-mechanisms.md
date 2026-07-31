@@ -5,7 +5,7 @@ author: 李航, 张少华, 林苑
 published: 2026-05-17
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [llm, interpretability, feature-superposition, sae, circuit-analysis]
 sha256: ff24109e94a1819bfcc1ad59b7d3c696542205df127045e71ad87df5f8094111
 review_value: 8

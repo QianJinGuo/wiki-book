@@ -8,55 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Igor Babuschkin Seeks Up To 1"))
-    事件要素
-    Neolabs 浪潮的背景
-    Forbes 未披露的信息
-    资本密集型竞争的现实
-    创始人背景与战略定位
-    对 AI 生态的影响
-    信息可靠性评估
-```
-
 ## 摘要
 
 xAI 联合创始人 Igor Babuschkin 正在洽谈为其新 AI 研究初创公司 River AI 融资高达 10 亿美元，目标估值最高 50 亿美元。VC 公司 General Catalyst 正洽谈领投此轮融资。Babuschkin 本人承诺投入最高 1 亿美元个人资金，River AI 于 2026 年 4 月 20 日在内华达州注册成立。Forbes 将 River AI 归入"neolabs"浪潮，与 Richard Socher 的 Recursive Intelligence 和 DeepMind 校友 David Silver 的项目并列。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 ### 事件要素
 
@@ -90,9 +46,9 @@ Forbes 的报道**未披露** River AI 的技术路线图或产品计划。编�
 
 10 亿美元量级的初创融资反映了当前 AI 领域的几个深层趋势：
 
-**算力军备竞赛**：如此大规模融资的核心用途很可能是算力资源储备。这呼应了"算力即护城河"的行业逻辑——在 [模型规模推演](ch01/574-model-size-scaling-in-2023-2031.html) 中可以看到，从 2026 年的 10T 参数到 2031 年的 1.4 千万亿参数，所需的预训练计算量增长了 170 倍。没有充足的算力储备，任何研究实验室都将被排除在前沿竞争之外。
+**算力军备竞赛**：如此大规模融资的核心用途很可能是算力资源储备。这呼应了"算力即护城河"的行业逻辑——在 [模型规模推演](ch01/584-model-size-scaling-in-2023-2031.html) 中可以看到，从 2026 年的 10T 参数到 2031 年的 1.4 千万亿参数，所需的预训练计算量增长了 170 倍。没有充足的算力储备，任何研究实验室都将被排除在前沿竞争之外。
 
-**人才溢价**：顶级研究员的个人品牌本身就是稀缺资源。Igor Babuschkin 作为 xAI 联合创始人的背景，加上 DeepMind 的研究经历，使其天然具备吸引大额投资的能力。这与 [Jensen Huang 投资英国初创公司](../ch05/094-ai.html) 的逻辑一致——顶级人才是 AI 竞赛中最稀缺的资源。
+**人才溢价**：顶级研究员的个人品牌本身就是稀缺资源。Igor Babuschkin 作为 xAI 联合创始人的背景，加上 DeepMind 的研究经历，使其天然具备吸引大额投资的能力。这与 [Jensen Huang 投资英国初创公司](../ch05/095-ai.html) 的逻辑一致——顶级人才是 AI 竞赛中最稀缺的资源。
 
 **差异化路径**：不同于 OpenAI、Google 的通用 AI 路线，neolabs 可能开辟专业化研究的新价值赛道。Forbes 将 River AI 与 Recursive Intelligence 和 David Silver 的项目并列，暗示这一浪潮可能代表一种新的 AI 研究组织形态。
 
@@ -138,9 +94,9 @@ Forbes 的报道基于"多位知情人士"和"文件审查"（incorporation docu
 ## 相关实体
 
 - [Igor Babuschkin River AI 融资（另一版本）](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
-- [Jensen Huang 投资英国 AI 初创](../ch05/094-ai.html)
-- [Anthropic 计费变更](ch01/799-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html) — 推动 Knowledge Agent 等替代方案的经济因素
-- [模型规模推演](ch01/574-model-size-scaling-in-2023-2031.html) — 算力军备竞赛的技术背景
+- [Jensen Huang 投资英国 AI 初创](../ch05/095-ai.html)
+- [Anthropic 计费变更](ch01/766-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html) — 推动 Knowledge Agent 等替代方案的经济因素
+- [模型规模推演](ch01/584-model-size-scaling-in-2023-2031.html) — 算力军备竞赛的技术背景
 - [从执行者到导演的 AI 心态转变](ch01/031-from-doer-to-director-the-ai-mindset-shift.html) — AI 时代的人才战略思考
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md)

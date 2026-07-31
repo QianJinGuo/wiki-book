@@ -9,61 +9,10 @@
 # OpenAI秘密矩阵曝光！你的所有设备，被Codex连成一台超级电脑
 来源：新智元 / ASI启示录
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI秘密矩阵曝光 Codex将所有设备连成超级电脑"))
-    核心信息
-    Codex 将所有设备连接成巨大网络
-    开发者实例
-    终结「锁屏瘫痪」 Locked Use
-    多机上下文共享
-    Skills 生态爆发
-    相关实体
-    相关实体
-```
-
 ## 核心信息
 OpenAI 正在将 Codex 升级为掌控所有硬件设备的「超级控制平面」——所有 Mac Mini、台式机、旧电脑组成完全属于你个人的 Codex 网络，成为一整个算力系统，即使锁屏都不怕。
 
 ## Codex 将所有设备连接成巨大网络
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 **5月14日**，OpenAI 给 ChatGPT 手机 App 更新了远程控制功能：在外面可以查看家里/公司 Mac 上 Codex 的运行状态，审批命令，派发新任务。
 随后 TestingCatalog 创始人 Alexey Shabanov 爆料：OpenAI 正在为 Codex 秘密开发**跨设备控制能力**，彻底干掉 SSH 等传统连接方式。
 **设置界面入口**：`设置` -> `连接` -> `控制其他设备`
@@ -139,7 +88,7 @@ OpenAI 正在做的，是利用大模型作为通用的操作接口，把高不�
 - https://x.com/testingcatalog/status/2055708109343994335
 - https://x.com/op7418/status/2055561525633642762
 - https://x.com/gdb/status/2056046844921172243
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/095-ai.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/035-agent.html)
 
 ---

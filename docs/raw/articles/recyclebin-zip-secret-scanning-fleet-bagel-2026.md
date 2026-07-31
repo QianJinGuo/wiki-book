@@ -7,7 +7,7 @@ publish_date: 2026-05-25
 ingested: 2026-06-16
 tags: [security, secret-scanning, fleet-management, dev-workstation, bagel, devsecops]
 sha256: pending
-type: article
+type: raw-article
 review_value: 7
 review_confidence: 7
 review_recommendation: worth-reading

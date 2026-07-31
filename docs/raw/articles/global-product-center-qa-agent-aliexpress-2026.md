@@ -2,7 +2,7 @@
 title: "全球化商品中心智能答疑 Agent 实践"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 9028573f53335f1a64ef3c198de0865ef6763b863049298c816235f069a19b56
 ---

@@ -2,37 +2,12 @@
 
 ## Ch09.010 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）
 
-> 📊 Level ⭐⭐ | 32.5KB | `entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md`
+> 📊 Level ⭐⭐ | 34.1KB | `entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md`
 
 # 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
 
 > **作者**：望陶 / 太业 / 石木，阿里云云原生，2026-06-02
 > **核心命题**：**AI Agent 规模化落地带来"执行黑盒、行为难追溯、成本难度量"三大难题**。阿里云基于 OTel 标准，面向 **Coding Agent / 个人通用助理 / 框架型 Agent**，推出 **LoongSuite Pilot、插件及探针**等无侵入采集方案，让 Agent 实现"**可看见、可分析、可审计、可治理**"。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让 Coding Agent 从黑盒到透明 阿里云 Agent"))
-    系列定位
-    背景 3 大核心挑战
-    3 大 Agent 形态 阿里云对应方案
-      Coding Agent LoongSuite Pilot
-      个人通用助理 一行命令接入完整观测和审计
-      高低代码框架 Agent LoongSuite Python
-    4 大观测审计能力
-      全链路调用链视图
-      Token 消耗与成本追踪
-      会话与多轮对话追踪
-    在社区标准之上的扩展
-      为什么需要扩展
-      三大核心扩展
-      工程化落地 GenAI Utils
-    OTel SemConv 扩展路径 从社区标准到阿里云自定义规范
-    三层 Span 结构的设计逻辑 Entry Span 的元数据归集价值
-    三大采集方案的差异化架构 sidecar vs 插件 vs 零代码探针
-```
 
 ## 系列定位
 
@@ -45,41 +20,6 @@ mindmap
 | **解决问题** | 数据如何标准化 | 数据如何**采集 + 落地应用** |
 
 ## 2. 背景：3 大核心挑战
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 **AI Agent 规模化落地带来三大难题**：
 
@@ -386,9 +326,9 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 这一架构的另一个好处是**插桩库的可测试性**——插桩库只需要验证数据提取的准确性，而不需要关注遥测输出的正确性，大幅降低了单元测试的复杂度。
 
 ## 相关实体
-- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/467-loongsuite-genai.html)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/271-skill.html)
-- [Baidu Comate Coding Agent Feedback Loop Wanpeng](ch09/047-coding-agent.html)
+- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/472-loongsuite-genai.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/273-skill.html)
+- [Baidu Comate Coding Agent Feedback Loop Wanpeng](ch09/046-coding-agent.html)
 - [Harness Engineering Reliable Long Term Agent](../ch05/120-harness-engineering.html)
 - [Anthropic Coding Agents Social Science Survey 2026](ch09/042-anthropic-coding-agent.html)
 
@@ -448,6 +388,23 @@ Entry/Step/Skill 语义 → 事件事实表结构  →  SLS SQL 分析
 ```
 
 → [第 2 来源原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
+
+### 第 3 来源：Agent 审计判定方法论（2026-07-31）
+
+阿里云 AgentLoop 审计视角（第 3 来源）在采集链路之上补齐**审计判定与处置**环节，形成完整闭环：
+
+**审计核心链路**：行为事实统一采集 → 规则局部命中（低保真信号）→ 上下文语义判定（高保真风险事件）→ 落到可定位治理的对象。
+
+| 环节 | 对应第 1 来源概念 | 审计新增 |
+|------|------------------|---------|
+| 事实采集 | Entry/Step/Skill 语义 | LoongSuite Pilot 统一采集会话/轮次/模型请求/回复/工具调用/结果 → 可回放行为链 |
+| 信号分级 | Token/工具调用记录 | 低保真（局部命中：疑似 AK/敏感片段）vs 高保真（上下文语义判定：凭证同时出现在输出+上传目标） |
+| 判定 | — | 位置不同风险边界不同（提交到模型 38 次 vs 模型回复泄露 43 次 → 处置动作不同） |
+| 处置 | — | 凭证聚合下钻（同 AK 反复泄漏→轮换追源；多 AK 分散→系统性修复）+ 实体调查页（AK 反查应用/主机/用户/工具） |
+
+**核心设计原则**：低保真信号可以多、事实尽量全，但高危队列必须可解释、可复核、可处置——"准确不等于没有边界"，降低误报不代表没有漏报。
+
+→ [第 3 来源原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-audit-risk-noise-aliyun-agentloop-2026.md)
 
 ---
 

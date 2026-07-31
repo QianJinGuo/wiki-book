@@ -6,78 +6,11 @@
 
 # MobileGym：中科院开源浏览器内安卓仿真平台，Mobile Agent 训练与评测基础设施
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MobileGym 中科院开源浏览器内安卓仿真平台 Mobile"))
-    训练评测手机 Agent 的两大困境
-      困境 1 安卓模拟器
-      困境 2 真机
-      共同的死结
-    破局思路 交互保真
-      「四两拨千斤」的脑回路转换
-    MobileGym 架构
-      浏览器内仿真实现
-      个 App 覆盖
-    一份 JSON 解决三大难题
-    一鱼两吃 考 练通吃
-      与 AndroidWorld MobileWorld 的对比
-    轻量到能单机大规模并行
-      VLM-as-Judge vs MobileGym 成本对比
-    考场 MobileGym-Bench
-      个参数化任务模板
-      答题卡判定法
-      个顶尖 Agent 同台竞技
-    训练场 真机迁移 951 增益
-      资源对比
-      训练效果
-      误判率的人工复核
-```
-
 ## 概述
 
 中科院自动化所模式识别实验室开源 **MobileGym**（mobilegym.dev）—— 跑在浏览器里的高并发安卓仿真平台。核心命题：**Mobile GUI Agent 真正瓶颈不在模型，而在"地"——既没有靠谱的考场，也没有便宜的训练场。**MobileGym 通过**交互保真（interaction fidelity）** + **JSON 结构化状态**破局，第一次把"可验证的考练一体"延伸到微信、支付宝等高频日常 App；并通过 **USE（意外副作用）**指标首次捕获 Agent"顺手作恶"。**真机迁移率 95.1%**——在模拟世界里练的功夫真机真能用。
 
 ## 核心命题
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 > **Mobile GUI Agent 的真正瓶颈不在模型，而在"地"——既没有靠谱的考场，也没有便宜的训练场。**
 
@@ -366,7 +299,7 @@ MobileGym 证明了**浏览器内仿真**是实现高并发、低成本、移动
 
 ## 相关实体
 
-- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1295-icml-2026.html)
+- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1300-icml-2026.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mobilegym-cas-mobile-agent-benchmark.md)
 

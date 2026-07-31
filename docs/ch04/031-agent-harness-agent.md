@@ -4,41 +4,6 @@
 
 > 📊 Level ⭐⭐ | 39.2KB | `entities/agent-harness-architecture-design-production-guide.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Harness 架构设计与实现 生产级 Agent"))
-    核心定义与演进脉络
-      三次工程重心迁移
-      核心公式
-      三层关系的通俗理解 以客户拜访为例
-    七层金字塔架构总览
-    L1 核心执行引擎
-      双循环架构
-      Claude Code 的探索-规划-行动循环模式
-      多模型抽象层
-    L2 工具系统
-      五级风险分级
-      命令风险分类模式
-      单用途工具设计原则
-    L3 上下文工程
-      阶梯式上下文压缩
-      渐进式上下文压缩模式
-      作用域上下文组装模式
-    L4 记忆系统
-      三层记忆架构
-      分层记忆模式
-      记忆整合模式 Dream Consolidation
-    L5 自主决策引擎
-      目标管理
-      生成器评估器模式
-    L6 多 Agent 协作
-      分支-合并并行模式
-      上下文隔离子智能体模式
-```
-
 ## 1. 核心定义与演进脉络
 
 ### 三次工程重心迁移
@@ -67,43 +32,6 @@ Harness = Agent - Model
 - **Harness Engineering**：建立持续观测、纠偏、验收的机制（带 checklist 去、关键节点实时回报、会后核对纪要、按明确标准验收）
 
 ## 2. 七层金字塔架构总览
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 ||| 层级 | 名称 | 核心问题 |
 |||------|------|---------|
@@ -682,7 +610,7 @@ class RecoveryManager:
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Agent Harness Architecture](../ch05/058-agent-harness.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/091-harness-skill.html)
 - [Harness Production Agent Engineering Deficit](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
@@ -690,7 +618,7 @@ class RecoveryManager:
 → [Claude Code 12 个设计模式](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agentic-harness-design-patterns.md)
 → [ETCLOVG Survey (CMU 2026)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/619-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/616-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
 - [k-dense — the model is no longer the bottleneck](ch04/165-k-dense-the-model-is-no-longer-the-bottleneck.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

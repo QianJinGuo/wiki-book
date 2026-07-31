@@ -2,7 +2,7 @@
 title: "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: bcfb4b0ed9a7d5cd1b88549fc71c04cb43e6060c36fda40d2621dae3abb4463d
 ---

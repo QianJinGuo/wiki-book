@@ -5,7 +5,7 @@ source_author: "音视频技术"
 source_publisher: "大淘宝技术"
 ingested: 2026-07-08
 sha256: "3ae52bd0a26e95fcd256fde775a43deb88cfe3c210c56a458100970be28ed259"
-type: raw-source
+type: raw-article
 status: ingested
 tags: [iclr-2026, var, subject-driven-generation, image-generation, echo-gen]
 ---

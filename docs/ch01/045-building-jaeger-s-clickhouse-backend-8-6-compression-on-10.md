@@ -23,20 +23,6 @@ For those new to the project, Jaeger is a graduated Cloud Native Computing Found
 
 In this post, I’ll explain why ClickHouse is a strong choice for storing traces, how the schema is designed under the hood, and how you can start using it with Jaeger today.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building Jaegers ClickHouse"))
-    Why columnar storage wins
-      High-throughput ingest and
-      Compression that actually matters
-      Real-time analytics
-    Designing the schema
-      Trade-offs in primary key
-```
-
 ## Why columnar storage wins
 
 At its core, the tracing problem is twofold: storing massive volumes of semi-structured event data and then searching that data quickly across multiple dimensions—service, operation, tags, duration, time range, and trace ID. Cassandra and Elasticsearch have served the Jaeger community well, but they come with operational costs. Indexing overhead adds latency and expense. Scaling becomes complex. Retention decisions force painful tradeoffs.
@@ -56,41 +42,6 @@ We measured significant compression gains on trace data. Service names like “a
 ClickHouse also opens the door to more complex analytical queries on trace data. Because aggregations are highly efficient on columnar storage, Jaeger v2.18 includes native ClickHouse SPM methods to directly compute service-level latency, call rates, and error rates from your stored spans. This allows teams to generate core health and performance metrics for their microservices straight from their trace data, without needing an external metrics pipeline.
 
 ## Designing the schema
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 
 Schema design was where things got tricky. We needed to optimize for Jaeger’s core query patterns: trace lookup by trace ID, service, and operation; attribute filtering; time-range queries; and the aggregation powering the[Service Performance Monitoring (SPM)](https://www.jaegertracing.io/docs/2.17/architecture/spm/)feature. These constraints don’t all pull in the same direction.
 

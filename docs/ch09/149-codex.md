@@ -9,58 +9,11 @@
 > 来源：夕小瑶科技说 (WeChat) | 2026-07-13 | v×c=72
 > 核心观点：Codex 负责人 Tibo 公开教用户通过 CLIProxyAPI 将 GPT-5.6 Sol 接到 Claude Code 使用，反映了 AI 产品竞争进入「评论区即更新日志、社区即控制台」的新阶段。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("逆了个大天 负责人亲自下场 教大家反代Codex"))
-    反代的战略意义
-    产品运营的「评论区化」
-    额度战 AI 编程的新竞争维度
-    时间线
-```
-
 ## 摘要
 
 Codex 团队负责人 Tibo 在 2026 年 7 月公开转发教程，教用户使用 CLIProxyAPI 工具将 Codex 订阅中的 GPT-5.6 Sol 模型接入竞争对手 Claude Code 使用。教程仅需三步：安装 CLIProxyAPI、连接 Codex 账号、配置别名。Tibo 甚至承诺「如果这条路被封，欠大家一次额度重置」。事件随后发酵为 OpenAI 与 Anthropic 之间的额度战——Claude 延长促销、增加周用量，Codex 随即取消 5 小时限时并重置额度。文章揭示了 AI 编程产品的新竞争形态：产品版本日志藏进评论区，社区成为产品的野生控制台。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **CLIProxyAPI 反代**：开源代理工具（GitHub 41K+ Star）可将 Codex 订阅包装成标准 API 接口，接入其他 Harness Agent 使用
 - **Tibo 的态度**：Codex 团队负责人亲自转发教程、承诺翻车赔额度，表态「我们对框架没有限制」

@@ -1,7 +1,7 @@
 ---
 
 title: "Unitree's IPO Filing: The State of the Robotics Market"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.tanayj.com/p/unitrees-ipo-filing-the-state-of
 fetcher: jina-reader

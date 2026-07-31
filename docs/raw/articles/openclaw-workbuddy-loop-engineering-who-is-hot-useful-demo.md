@@ -3,7 +3,7 @@ title: "OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 D
 source_url: "https://mp.weixin.qq.com/s/kb2CPXeO-EJLwN1YudvXFQ"
 created: 2026-07-01
 updated: 2026-07-01
-type: article
+type: raw-article
 tags: [wechat, agent, classification, loop-engineering, digital-employee]
 ingested: 2026-07-01
 sha256: 5cb5e75d341889dedaf65cc24f7a9fa9025832a8474feae2cdba47ccdc16c3ee

@@ -2,7 +2,7 @@
 
 ## Ch01.030 Robostral Navigate: single-camera AI navigation | Mistral AI
 
-> 📊 Level ⭐ | 8.9KB | `entities/robostral-navigate.md`
+> 📊 Level ⭐ | 9.0KB | `entities/robostral-navigate.md`
 
 # Robostral Navigate: single-camera AI navigation | Mistral AI
 
@@ -13,65 +13,11 @@
 **Tags:** newsletter, ai, model, mistral, robotics, navigation, embodied-ai
 **Ingested:** 2026-07-09 18:59 UTC
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Robostral Navigate single-camera"))
-    纯视觉导航的 paradigm shift
-    前缀缓存 Prefix-Caching 训练效率的革命
-    从 VLM 到导航的自然演进
-    仿真到现实的迁移优势
-```
-
 ## 摘要
 
 Robostral Navigate 是 Mistral AI 推出的首个具身导航模型，规模为 8B 参数，仅依靠单一 RGB 摄像头即可让机器人在复杂环境中自主导航。该模型在 R2R-CE（Room-to-Room in Continuous Environments）验证集 unseen 上达到 76.6% 的成功率，超越所有使用深度传感器或多个摄像头的已有方案，比最佳单摄像头方案高出 9.7 个百分点。模型完全基于仿真数据训练（约 400,000 条轨迹、6,000 个场景），核心方法包括指向导航（Pointing-based Navigation）、基于前缀缓存的高效监督训练（Prefix-Caching，减少 22× token 量），以及在线强化学习（CISPO 算法）的进一步优化。Robostral Navigate 可跨轮式、腿式、飞行机器人泛化，对不同相机内参和真实世界的未知障碍物均表现出鲁棒性。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 
 - **Sensor 极简主义**：仅使用单目 RGB 摄像头，不依赖 LiDAR、深度传感器或多摄像头系统。在 R2R-CE unseen 上 76.6% 超越深度传感器/多摄像头方案（最佳约 72.1%），证明了纯视觉导航的可行性。
 - **指向导航（Pointing）**：模型通过推断目标位置在当前摄像头视角中的图像坐标以及到达时的期望朝向（Orientation）来导航。这种方法使策略对相机内参和世界尺度变化天然鲁棒。当目标超出视野时，模型回退到机器人局部坐标系中的位移命令（如"前进 2 米，左移 1.5 米，左转 25 度"）。
@@ -130,14 +76,14 @@ Mistral 的实践表明，**质量优先于数量的仿真数据策略**——40
 
 ## 相关实体
 
-- [Mistral AI](../ch05/094-ai.html) — 开发团队
+- [Mistral AI](../ch05/095-ai.html) — 开发团队
 - **Mistral VLM** — 用于 grounding 初始化的视觉语言模型（无独立实体页面）
 - [Embodied AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md) — 具身 AI 概念框架
 - **Behavior Cloning** — 行为克隆 vs RL 的对比（无独立概念页面）
 - [RLHF](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — CISPO 算法的基础框架
 - **Sim-to-Real Transfer** — 仿真到现实迁移（无独立概念页面）
 - **R2R-CE Benchmark** — 评测基准（无独立实体页面）
-- [Milvus](ch01/913-20.html) — 向量检索（对比：Robostral 是空间导航）
+- [Milvus](ch01/926-20.html) — 向量检索（对比：Robostral 是空间导航）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/robostral-navigate.md)
 

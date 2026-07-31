@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: AIDLC范式：Spec-first+shift-left DQ / 9天交付vs 3周 / Steering files作为AI可执行知识
 sha256: e7cc74f87afe

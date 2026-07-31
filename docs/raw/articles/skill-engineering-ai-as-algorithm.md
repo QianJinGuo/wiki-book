@@ -7,7 +7,7 @@ author: peihanyu
 publisher: 腾讯技术工程
 published: 2026-05-13
 created: 2026-05-14
-type: raw
+type: raw-article
 tags:
   - skill-engineering
   - agent-harness

@@ -2,7 +2,7 @@
 title: "token不经济"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 0011b683f23d43a8218114aab571032432a5a1b289643a0b83ece287eecdb7ae
 ---

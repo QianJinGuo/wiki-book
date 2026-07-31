@@ -1,7 +1,7 @@
 ---
 title: "LLM raiders and how to repel them"
 sha256: 06dc9727dde918c4fff36e98dc529f707e482b82a9a038f1f766f28be080c101
-type: entity
+type: raw-article
 tags: [llmjacking, ai-security, lvm-servers, threat-intel]
 created: 2026-05-14
 updated: 2026-05-14

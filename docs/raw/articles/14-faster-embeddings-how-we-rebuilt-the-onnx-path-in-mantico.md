@@ -2,7 +2,7 @@
 title: "14× faster embeddings: how we rebuilt the ONNX path in Manticore"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: b6bdc34328f97eee25950bb68039454eb7a6220b1866265d74f86589d0f7c820
 ---

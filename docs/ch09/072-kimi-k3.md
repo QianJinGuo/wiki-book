@@ -10,58 +10,11 @@
 > **来源**: https://mp.weixin.qq.com/s/S9L601L6j54ZvHAcuLr3Bg
 > **发布**: 花叔 (2026-07-17)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Kimi K3 实测 半天复刻录屏工具"))
-    从网页插件到原生系统级 AppAI 编程能力的重要跨越
-    规划 长程执行 当前 AI 编程模型的核心分水岭
-    许愿式编程的人机协作新模式
-    与 Opus 48 的竞争力对比
-```
-
 ## 摘要
 
 开发者使用 Kimi K3（Kimi Code 的内置模型）在不到一天的时间内完成了一个原生 macOS 录屏 App（HuaStudio）的全流程开发，从零到提交苹果审核。该 App 对标月费 29 美元的 ScreenStudio 录屏工具，实现了自动运镜、鼠标轨迹跟踪、壁纸背景、摄像头浮窗、时间轴剪辑等核心功能，最终 27 个文件、七千多行代码。Kimi K3 展现了接近 Opus 4.8 的编程手感，尤其在规划能力、长程执行能力和自我调试能力上表现突出，但也存在偶尔需要返工、输出速度较慢的不足。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **项目规模**：27 个文件、七千多行代码的原生 macOS App，从零到提交苹果审核不足一天
 - **对标产品**：ScreenStudio（月费 29 美元的专业录屏工具）——可自动剪辑、运镜、重绘鼠标轨迹、添加壁纸背景

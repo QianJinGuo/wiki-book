@@ -2,7 +2,7 @@
 title: "agent之间有互联网了"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 1fbf7322c335ec15c0db798ebc5e67dea134bb1d0f93f114532ec0bbd3fd48e6
 ---

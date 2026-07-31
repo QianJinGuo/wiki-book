@@ -4,79 +4,11 @@
 
 > 📊 Level ⭐⭐ | 34.4KB | `entities/harness不是目的知识才是护城河-一个ai工程交付团队的知识沉淀实践.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness不是目的 知识才是护城河"))
-    Harness Engineering 三支柱与知识的位置
-    核心认知 为什么知识沉淀比工作流更重要
-      工作流是可替换的 知识是可累积的
-      没有知识沉淀的工作流是一次性的
-      知识是团队的复利资产
-    知识分层架构 五层存储 五种类型 三级成熟度
-      知识体系的三个维度
-      五层存储架构
-      五种知识类型
-    团队知识库 独立 Git 仓库与共建共享
-      独立 Git 仓库 知识的单一事实来源
-      三种团队角色
-      贡献模式 贡献暂存 异步合并
-    工作流如何服务于知识沉淀
-      知识的完整生命周期 三通道沉淀
-      各阶段查询预算
-      冷启动导入 flow-import
-    知识的按需消费 三级索引 查询预算
-      从推送到主动查询的范式转变
-      三级渐进式索引
-      知识引用追踪闭环
-    突破人机交互瓶颈 随时随地保障工作流流转
-      问题 Harness 工作流的在场依赖
-      解法 远程操控 跨设备接管
-      与知识沉淀闭环的结合
-    落地经验与思考
-      历史项目引入 从 0 到 1 的冷启动挑战
-      知识膨胀治理 Lint 机制
-      Big Model vs Big Harness 务实立场
-```
-
 ## 核心论点
 本文的核心论断是：**Harness Engineering 的最终目的不是工作流本身，而是团队知识的沉淀**。工作流是管道，知识是流过管道的活水。模型会迭代，工具链会更新，工作流会重构，但团队在特定业务领域积累的领域模型、架构决策、最佳实践、已知陷阱、业务流程——这些知识是永恒的护城河。
 > **Skill、Agent、工具链会随模型迭代更新，但领域知识是永恒的。** 
 
 ## Harness Engineering 三支柱与知识的位置
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 Harness Engineering 的理论框架可归结为三个支柱：**上下文工程**、**架构约束**、**持续治理**。其中"上下文工程"包含知识检索注入和长/短期记忆，"持续治理"包含知识生命周期和自动衰减。这意味着**知识管理本身就是 Harness Engineering 的核心能力**，而不是附属品。
 三大标志性实践的对比：
 | 实践方 | 核心关注 | 关键动作 |
@@ -338,33 +270,33 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [Agent Architecture & Harness](../ch05/009-harness.html) — Agent 架构与 Harness 的关系
 - [Open-Claw Tool 消息总线](../ch03/035-agent.html) — 子 Agent 管理架构实践
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/035-agent.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/989-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1004-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-- [吴恩达：AI 将最先杀死前端](../ch05/094-ai.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/397-agent-skills.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/989-anthropic.html)
-- [你写的 Skill，及格了吗？](ch04/271-skill.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/976-claude.html)
+- [吴恩达：AI 将最先杀死前端](../ch05/095-ai.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/401-agent-skills.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1004-anthropic.html)
+- [你写的 Skill，及格了吗？](ch04/273-skill.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1022-claude.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [天猫新品营销技术团队AI编码实战指南（上）](../ch05/094-ai.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [天猫新品营销技术团队AI编码实战指南（上）](../ch05/095-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/237-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/648-agentic.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/096-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/009-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/003-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/444-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/120-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/235-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/237-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/120-harness-engineering.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/009-harness.html)- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/009-harness.html)
 
 ## Related
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 ---
 

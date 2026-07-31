@@ -10,19 +10,6 @@
 
 > **Core insight**: Mollick 观察到 AI 使用范式的根本转变——从"co-intelligence"（与 AI 作为共同工作者，引导、纠正、合作）到"wizard"（召唤 AI 执行任务，输出惊艳但过程不透明）。这不仅是工具能力提升，而是人类与 AI 关系性质的改变。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("On Working with Wizards AI"))
-    从共同工作者到巫师
-    Wizard 的力量 GPT-5 Pro 和 Claude 41
-    Wizard 的问题
-    我们如何与巫师相处
-    相关引用
-```
-
 ## 从共同工作者到巫师
 
 在 Mollick 的书《Co-Intelligence》中，他描述了一种人与 AI 合作的方式——把 AI 当作 intern 或 co-worker，纠正其错误、检查其工作、共同开发想法并引导其方向。过去几周他开始相信 co-intelligence 仍然重要，但 AI 的本质开始指向不同方向：从 partners 到 audience，从 collaboration 到 conjuring。
@@ -32,44 +19,6 @@ mindmap
 我们正在从塑造过程的共同工作者变为接收输出的 supplicants——从"与 co-intelligence 共同工作"转变为"与 wizard 共同工作"。魔法发生了，但我们并不总是知道如何处理结果。这种模式——令人印象深刻的输出、不透明的过程——在研究任务中变得更加明显。
 
 ## Wizard 的力量：GPT-5 Pro 和 Claude 4.1 Opus
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 最能体现 wizard 感觉的 AI 模型是 GPT-5 Pro（仅对付费用户开放）。Mollick 给它一个学术 paper，指示"批评这篇论文的方法，找出更好的方法并应用它们"。这不是随便的论文——这是他的 job market paper，花了一年多写成，被领域内最聪明的人仔细阅读后才在 major journal 发表。九分四十秒后，他收到了非常详细的 critique，包括 GPT-5 Pro 似乎运行了自己的实验（用代码验证结果，包括 Monte Carlo 分析和重新解释固定效应）。
 
@@ -122,9 +71,9 @@ Mollick 提出了三个应对策略。首先，发展新的 literacy：学习何
 - **失去 expertise 的风险**：每次把工作交给 wizard，就失去了发展自己判断力和专业知识的机会——这对教育影响深远
 
 ## 相关实体
-- [Oneusefulthing Claude Code What Comes Next](../ch03/078-claude-code.html)
-- [Openai Gdpval Real Ai Agents Threshold](ch04/298-ai-agent.html)
-- [Mass Intelligence](../ch01/524-mass-intelligence-ai.html)
+- [Oneusefulthing Claude Code What Comes Next](../ch03/077-claude-code.html)
+- [Openai Gdpval Real Ai Agents Threshold](ch04/030-ai-agent.html)
+- [Mass Intelligence](../ch01/527-mass-intelligence-ai.html)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 

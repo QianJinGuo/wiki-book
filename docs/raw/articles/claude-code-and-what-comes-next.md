@@ -2,7 +2,7 @@
 source: rss
 source_url: https://www.oneusefulthing.org/p/claude-code-and-what-comes-next
 ingested: 2026-06-07
-type: article
+type: raw-article
 sha256: 910c175f7c2c3343c28b5da4c6d305f02942e7960dc2027e80c5c942c9d13aee
 feed_name: One Useful Thing
 source_published: 2026-01-07

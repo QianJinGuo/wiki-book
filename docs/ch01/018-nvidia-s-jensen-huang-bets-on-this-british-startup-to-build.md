@@ -4,40 +4,10 @@
 
 > 📊 Level ⭐ | 10.1KB | `entities/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md`
 
-
 ## 核心要点
 - Published Time: 2026-05-13T13:00:01+0000
 
 ## 文章概要
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 Nvidia 宣布与英国 AI 创业公司 Ineffable Intelligence 建立战略合作伙伴关系，共同开发新一代 AI 系统。这家成立于 2025 年底的初创公司由前 Google DeepMind 强化学习团队负责人 David Silver 教授创立，专注于通过强化学习（reinforcement learning）让 AI 系统从经验中自主学习，而非依赖人类数据。
 2026 年 4 月，Ineffable Intelligence 宣布完成 11 亿美元种子轮融资，由红杉资本（Sequoia）和 Lightspeed 联合领投，Nvidia、Google、英国主权 AI 基金（U.K. Sovereign AI Fund）等参与跟投。
 Jensen Huang 表示：「AI 的下一个前沿是超级学习者（superlearners）—— 能够从经验中持续学习的系统。我们很高兴与 Ineffable Intelligence 合作，共同设计大规模强化学习的基础设施。」
@@ -69,9 +39,9 @@ LLM 公司的战略规划者需要正视文章中隐含的挑战：如果强化�
 ## 关联阅读
 ## 相关实体
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/799-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
-- [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/766-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Microsoft For Startups Microsoft](ch01/517-microsoft-for-startups-microsoft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
 

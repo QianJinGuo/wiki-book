@@ -5,31 +5,6 @@
 > 📊 Level ⭐⭐ | 13.5KB | `entities/hermes-skill-system-winty.md`
 
 # "Skill 系统：Agent 如何把经验沉淀成可复用能力"
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Skill 系统 Agent 如何把经验沉淀成可复用能力"))
-    Memory vs Skill 两种记忆的本质区别
-    为什么不能只用 Memory 三个坑
-      坑 1 Memory 给理解用的 不是给执行用的
-      坑 2 Memory 没办法版本化
-      坑 3 Memory 之间没有依赖关系
-    SKILLmd 五区块结构
-      第 1 块 元信息 trigger 是关键
-      第 2 块 适用场景
-      第 3 块 步骤清单 核心
-    Skill 检索四步流程
-      第 1 步 用户提需求
-      第 2 步 Skill 索引匹配 两层
-      第 3 步 命中候选 通常 13 个
-    Skill 修补哲学 patch 不是重写
-    Skill 生命周期五阶段
-    实操建议 5 条
-    相关页面
-```
-
 ## 核心命题
 **Memory 解决的是"我记得这件事是这样"。**
 **Skill 解决的是"我知道这件事该怎么做"。**
@@ -37,43 +12,6 @@ mindmap
 ---
 
 ## Memory vs Skill：两种记忆的本质区别
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 | | Memory | Skill |
 |--|--------|-------|
 | 本质 | 陈述性记忆：你**知道**什么 | 过程性记忆：你**会做**什么 |
@@ -184,24 +122,24 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 → [winty·Hermes Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
 
 ## 相关实体
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/269-agent-skill.html)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/094-ai.html)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/419-aws-sagemaker-ai-agent.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/271-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/271-agent-skill.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/095-ai.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/423-aws-sagemaker-ai-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/273-skill.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [GBrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/913-20.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/271-skill.html)
-- [SkillX — 层次化技能知识库](../ch07/056-skillx.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/926-20.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/273-skill.html)
+- [SkillX — 层次化技能知识库](../ch07/057-skillx.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/237-openclaw.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/260-anthropic-agent.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [OpenHuman: AI Agent 持久记忆框架](ch04/121-agent-memory.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/397-agent-skills.html)
+- [OpenHuman: AI Agent 持久记忆框架](ch04/098-agent-memory.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/401-agent-skills.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
-- [你写的 Skill，及格了吗？](ch04/271-skill.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
+- [你写的 Skill，及格了吗？](ch04/273-skill.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/677-llm-wiki-obsidian-wiki-gbrain.html)
 - [Hermes Agent](../ch03/096-hermes-agent.html)
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
@@ -212,7 +150,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 ---
 

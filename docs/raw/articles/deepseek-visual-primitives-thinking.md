@@ -10,7 +10,7 @@ review_value: 9
 review_confidence: 8
 review_recommendation: "strong"
 review_stars: 5
-type: raw
+type: raw-article
 tags:
   - "deepseek"
   - "multimodal"

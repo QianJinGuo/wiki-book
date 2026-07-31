@@ -2,7 +2,7 @@
 title: "How we built SmithDB’s inverted index for full-text search"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: e3817342d2de6c93db4d3230de448b94849b6eb3c85cbe07cf9ec48b35790c4a
 ---

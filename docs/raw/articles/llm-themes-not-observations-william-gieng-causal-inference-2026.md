@@ -6,7 +6,7 @@ author: "William Gieng（翻译：周梓溢）"
 pub_date: "2026-06-12"
 ingested: "2026-06-12"
 sha256: "d210ceba15b5377f421862dabce1a089814a8da6f47b5af79e8e8b39e3e6bc37"
-type: source
+type: raw-article
 tags: ["llm-themes", "causal-inference", "generated-variables", "selection-bias", "measurement-error", "post-treatment-bias", "dag", "ipw", "text-as-covariate", "william-gieng", "datapi-thu"]
 ---
 

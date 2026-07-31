@@ -3,7 +3,7 @@ title: "Claude Code /loop 工程现场：碎片化自动、状态文件、运行
 source_url: "https://mp.weixin.qq.com/s/JZzmhbuuc407bj-KttDJog"
 ingested: 2026-06-30
 sha256: 4088fd262a7e950d1cba0b88627a2cd10e434535ce8d5c32705c63fd6052982e
-type: raw
+type: raw-article
 tags: [claude-code, loop, loop-engineering, scheduled-tasks, goal, loop-md, state-file, running-card, jiagoux]
 author: 架构师（JiaGouX）
 ---

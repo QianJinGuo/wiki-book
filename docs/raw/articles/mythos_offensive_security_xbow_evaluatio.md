@@ -1,7 +1,7 @@
 ---
 
 title: "Mythos for Offensive Security: XBOW's Evaluation"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://xbow.com/blog/mythos-offensive-security-xbow-evaluation
 tags: [security]

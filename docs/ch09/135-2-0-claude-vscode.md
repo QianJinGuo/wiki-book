@@ -4,59 +4,11 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("小时 0 行手写代码 我用 Claude 做了一个生产级"))
-    核心摘要
-    AI 是陌生领域的知识倍增器 而非替代者
-    提供足够的上下文是 AI 辅助质量的决定性因素
-    AI 主动否定不可行方案是最高价值的贡献
-    承认局限并设计 fallback 是成熟工程的标志
-```
-
 ## 核心摘要
 
 作者在零 VSCode 插件开发经验、零 Chrome Cookie 加密知识、零 UUAP SSO 了解的前提下，用 Claude AI 辅助在 2 小时内完成了一个生产级 VSCode 插件的开发。该插件能自动读取浏览器登录态、实时监控 Comate 模型用量、支持三色告警和失效自动恢复。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. AI 是陌生领域的知识倍增器，而非替代者
 
@@ -94,9 +46,9 @@ Claude 主动承认"浏览器自动读取偶尔会因为 SSO 多域 cookie 处�
 
 ## 相关实体
 - [Claude Code Prompt Context Harness](ch09/061-claude-code-prompt.html)
-- [Claude Vscode Plugin Zero Code](../ch01/976-claude.html)
+- [Claude Vscode Plugin Zero Code](../ch01/1022-claude.html)
 - [Doubao Seed 2 Lite Agent Multimodal](../ch03/035-agent.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/078-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/077-claude-code.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md)

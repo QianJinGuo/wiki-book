@@ -3,7 +3,7 @@ title: "MRAgent：记忆是重建的，不是检索的——Cue-Tag-Content 图�
 source_url: "https://mp.weixin.qq.com/s/w6LbWyhlG9ZZxq4DCbDc7w"
 ingested: 2026-06-26
 sha256: ""
-type: raw
+type: raw-article
 ---
 
 # MRAgent：Memory is Reconstructed, Not Retrieved

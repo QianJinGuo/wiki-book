@@ -6,7 +6,7 @@ tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]
 source: 新智元
 authors: 新智元编辑部
 year: 2026
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 8
 review_recommendation: strong

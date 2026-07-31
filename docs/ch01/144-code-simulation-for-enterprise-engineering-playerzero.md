@@ -4,68 +4,11 @@
 
 > 📊 Level ⭐ | 4.1KB | `entities/code-simulation-for-enterprise-engineering-playerz.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Code Simulation for Enterprise"))
-    Code Review 与 Code Simulation 的本质差异
-    Sim-1 的技术实现路径
-    与传统可观测性工具的关系
-    跨服务追踪的竞争优势
-    引入模拟而非替换测试
-    落地时间线参考
-    评估自身适用性
-```
-
 ## 核心要点
 - 来源：https://hs.playerzero.ai/ai-code-review
 - 评分：v=7 × c=8 = 56
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 ### Code Review 与 Code Simulation 的本质差异
 Code review 在隔离环境下评估单个变更是否正确（静态分析），Code simulation 则建模变更进入真实系统后的行为——追踪数据流跨服务传播、预测状态变化、暴露静态分析无法看到的集成风险。两者的核心差异是"代码写对了没有"vs"代码在实际生产里会不会 work"。这是从被动观测到主动预测的方法论转变。
 
@@ -89,11 +32,11 @@ PlayerZero 以代码库为核心集成点，Jira、Datadog、Zendesk 等工具�
 Code simulation 对以下场景价值最大：多仓库/多服务的分布式系统（跨服务变更影响难以在单PR范围内评估）；高频部署、每次部署风险较高的团队（需要提前预测而非事后发现）；已有生产遥测数据但缺乏预测能力的团队。如果团队系统复杂度低、单体为主，模拟的边际收益有限。
 
 ## 相关实体
-- [Hs.Playerzero Ai Code Review](../ch05/094-ai.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
+- [Hs.Playerzero Ai Code Review](../ch05/095-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
-- [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](ch01/1243-0.html)
+- [Amazon Turns Alexa Into Its Next Storefront](ch01/066-amazon-turns-alexa-into-its-next-storefront.html)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](../ch05/095-ai.html)
 
 ---
 

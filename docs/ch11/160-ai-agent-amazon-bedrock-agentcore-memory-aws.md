@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("当 AI Agent 学会忘记 Amazon Bedrock"))
-    记忆哲学的根本转变
-    双层架构的设计优势
-    四种内置策略的差异化价值
-    三层自定义体系的工程意义
-    记忆策略选型决策树
-    预算更新场景的整合验证
-    会话连续性保障实践
-    进阶定制建议
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" by awschina on 04 3月 2026 in Case Study Permalink Share 摘要：AI Agent 的记忆管理面临"全记则爆、简删则丢"的困境。Amazon Bedrock AgentCore Memory 通过双层架构（短期事件 + 长期记忆）与 Intelligent Consolidation 机制，实现智能记忆、语义去重和冲突更新。本文解析其四种内置策略（Semantic、User Preference、Summary、Episodic）的工作原理，并通过实战场景验证记忆的智能合并能力。 目录 01 一、引言 02 二、双层架构：素材与知识的分离 03 三、长期记忆内置策略体系 04 四、实战：三个场景验证记忆智能 05 五、进阶能力
 
 ## 核心技术
@@ -68,12 +14,12 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、AgentCore
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy/)
 
 ## 相关实体
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/561-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/566-amazon-bedrock-agentcore.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/137-build-financial-document-processing-with-pulse-ai-and-amazon.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
 
 ## 深度分析
 ### 记忆哲学的根本转变

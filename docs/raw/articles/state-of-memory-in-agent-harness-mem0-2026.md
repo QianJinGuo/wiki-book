@@ -7,7 +7,7 @@ author: mem0
 published: 2026-06-11
 ingested: 2026-06-12
 sha256: 048fb1b6e6f477fa825e8049e76d57793032d6c3db24dac25eca791bfd3d4d1b
-type: source
+type: raw-article
 tags: [agent, harness, memory, mem0, comparison, landscape, survey]
 review_value: 9
 review_confidence: 9

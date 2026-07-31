@@ -1,7 +1,7 @@
 ---
 title: "Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads"
 sha256: 9a4593ae0ffda15c80088a6e9609183d5043099f6f9b28062c8748190fa77c5a
-type: entity
+type: raw-article
 tags: [vietnam, cloud-computing, government, data-sovereignty]
 created: 2026-05-14
 updated: 2026-05-14

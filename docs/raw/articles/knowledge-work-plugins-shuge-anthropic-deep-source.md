@@ -2,7 +2,7 @@
 title: "knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集"
 created:2026-06-10
 updated:2026-06-10
-type: article
+type: raw-article
 platform:京东云开发者
 author:术哥
 source_url: https://mp.weixin.qq.com/s/1kUy7_iRcAHik8e9g4D7sA

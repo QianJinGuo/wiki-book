@@ -2,67 +2,13 @@
 
 ## Ch12.072 NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines
 
-> 📊 Level ⭐⭐ | 6.9KB | `entities/nist-sp-800-213r1-iot-product-cybersecurity-guidelines.md`
+> 📊 Level ⭐⭐ | 7.0KB | `entities/nist-sp-800-213r1-iot-product-cybersecurity-guidelines.md`
 
 # NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines
 
 > **Background**：本文档基于 NIST Special Publication 800-213r1 初始公开草案（2026 年 6 月发布）的全文分析。该标准由 NIST 联邦网络安全研究团队（Michael Fagan, Katerina Megas 等）撰写，旨在为联邦政府机构建立 IoT 产品网络安全需求的系统框架。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("NIST SP 800-213r1 IoT Product"))
-    核心框架
-      IoT 产品安全能力 IoT Product
-      联邦政府 IoT 合规要求
-      与 SP 800-213 2020 的关键差异
-    对 AIML 安全的启示
-    从设备到产品的范式转移
-    系统元素视角下的风险重评估
-    能力模型的双层架构
-    与 NIST CSF 20 和 RMF 的对齐策略
-    相关标准与框架
-```
-
 ## 核心框架
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 NIST SP 800-213r1 定义了联邦政府采购和部署 IoT 产品时应遵循的**网络安全能力框架**，是 SP 800-213（2020）的修订版，反映了近年来 IoT 安全威胁态势的重大变化。
 

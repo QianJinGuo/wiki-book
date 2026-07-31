@@ -5,7 +5,7 @@ ingested: "2026-06-23"
 sha256: "90c046ea013e5282"
 created: 2026-06-23
 updated: 2026-06-23
-type: article
+type: raw-article
 tags: [llm, feature-discovery, alignment, interpretability]
 ---
 

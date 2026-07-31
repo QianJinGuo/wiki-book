@@ -12,7 +12,7 @@ date: 2026-01-26
 created: 2026-05-28
 updated: 2026-05-28
 tags: [claude, claude-code, ai-agent, vibe-coding, saas-disruption, social-trend]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: 2551f234d47f5c94799dbd8106a7f81746e84fbf0af1b981d559c0e40be5f1dc
 ---

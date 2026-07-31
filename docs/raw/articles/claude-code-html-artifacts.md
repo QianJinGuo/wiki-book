@@ -1,6 +1,6 @@
 ---
 title: Using Claude Code: The unreasonable effectiveness of HTML
-type: source
+type: raw-article
 source: newsletter
 source_url: https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html
 tags: [article]

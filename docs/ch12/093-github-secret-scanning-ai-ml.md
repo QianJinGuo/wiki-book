@@ -8,56 +8,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GitHub Secret Scanning AIML"))
-    信噪比决定安全工具的有效性
-    上下文感知验证的技术实现
-    两级架构的工程设计
-    与传统方法的对比
-    差异化对比
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "项目生命周期"
-        INIT[项目创建<br/>License选择]
-        FORK[Fork/Clone<br/>本地开发]
-        CONTR[贡献代码<br/>PR流程]
-    end
-    subgraph "质量门禁"
-        CI[CI自动化<br/>测试+Lint]
-        REVIEW[Code Review<br/>同行评审]
-        MERGE[合并决策<br/>维护者审批]
-    end
-    CONTR --> CI --> REVIEW --> MERGE
-    subgraph "发布"
-        VERSION[版本管理<br/>SemVer]
-        REL[发布<br/>Changelog]
-        DIST[分发<br/>PyPI/npm]
-    end
-    MERGE --> VERSION --> REL --> DIST
-    subgraph "社区"
-        DISCUSS[讨论区<br/>Issue/Discord]
-        GOV[治理模型<br/>BDFL/委员会]
-    end
-    DIST --> DISCUSS --> GOV
-    GOV -->|"方向反馈"| INIT
-    classDef life fill:#dbeafe,stroke:#2563eb
-    classDef quality fill:#ede9fe,stroke:#7c3aed
-    classDef release fill:#fef3c7,stroke:#d97706
-    classDef community fill:#d1fae5,stroke:#059669
-    class INIT,FORK,CONTR life
-    class CI,REVIEW,MERGE quality
-    class VERSION,REL,DIST release
-    class DISCUSS,GOV community
-```
-
 
 GitHub 与 Microsoft Security & AI Agents Offense 团队合作，在 secret scanning 系统中引入 LLM 驱动的上下文感知验证机制，将误报率降低 75.76%（目标 65%）。核心创新在于"更好的上下文"而非"更多的上下文"——通过提取代码中的使用信号（变量赋值、API 调用路径、认证头传递等）来判断疑似 secret 是否真正被用作凭证，而非仅依赖模式匹配。
 
@@ -120,7 +71,7 @@ GitHub 采用的是典型的"广度+深度"两级安全架构：
 ## 相关实体
 
 - [bagel Fleet 级 Secret Scanning](ch12/055-bagel-fleet-secret-scanning.html)
-- [Claude Code Security Incident](../ch03/078-claude-code.html)
+- [Claude Code Security Incident](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 

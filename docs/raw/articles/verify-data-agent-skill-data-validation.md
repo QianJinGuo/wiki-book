@@ -6,7 +6,7 @@ feed_name: "阿里云开发者"
 author: "晓莄"
 published: 2026-05-27
 created: 2026-05-27
-type: raw
+type: raw-article
 tags: [agent-skill, data-validation, verify-data, agent, data-engineering, alibaba]
 sha256: f236772f0c8909736c0abec25813d5cb1e78389f16b1d4fc26f58c062fdc663a
 ---

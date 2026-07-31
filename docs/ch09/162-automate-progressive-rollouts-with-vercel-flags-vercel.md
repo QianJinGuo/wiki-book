@@ -6,56 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Automate progressive rollouts"))
-    核心概念 渐进式发布 vs 加权拆分
-    为什么渐进式发布有价值
-    技术实现路径
-```
-
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Vercel Flags 是 Vercel 平台推出的 Feature Flag 解决方案，本次更新新增 **渐进式发布（Progressive Rollouts）** 功能，属于 Feature Flag 策略中的「时间基权重」类型。
 
 ### 核心概念：渐进式发布 vs 加权拆分

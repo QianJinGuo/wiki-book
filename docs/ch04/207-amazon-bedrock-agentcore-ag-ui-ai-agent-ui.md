@@ -8,62 +8,11 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcor.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Bedrock AgentCore AG-UI 协议"))
-    核心概念
-      什么是 AG-UI 协议
-      Amazon Bedrock AgentCore 的三协议架构
-    技术架构
-      FAST 全栈解决方案模板
-      AG-UI 事件流协议
-      双模式后端实现
-    生成式 UI 实战
-      CopilotKit FAST 增强方案
-      架构组件
-    部署建议
-    与相关技术的关系
-```
-
 ## 摘要
 
 AG-UI（Agent-User Interaction Protocol）是一个开放的 Agent-用户交互协议，它使 AI Agent 能够超越纯文本对话，动态渲染交互式图表、实时共享画布，并在执行过程中暂停以获取用户确认。Amazon Bedrock AgentCore 通过支持 AG-UI 协议，为开发者提供了构建生产级交互式 Agent 应用的完整解决方案。
 
 ## 核心概念
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 什么是 AG-UI 协议
 

@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/exploring-openclaw-use-cases-in-ecommerce-platforms.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw 在电商平台的应用场景探索 亚马逊AWS官方博客"))
-    编译型到解释型 Skill 范式的本质变革
-    多租户隔离的工程挑战与应对
-    成本优化路径 从 190 到 45商家月
-    安全边界的分层设计
-    从高频数据查询场景切入验证
-    平台化前期规划 EFS 扩展方案
-    高危操作采用业务 API 层二次确认机制
-    利用 AWS Secrets Manager 管理 OAuth2
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 OpenClaw 在电商平台的应用场景探索 by awschina on 09 3月 2026 in Artificial Intelligence Permalink Share 摘要：当 AI 助手不再只是”聊天机器人”，而是一个可以用 Markdown 文档扩展skill能力、嵌入多种工作渠道、主动推送运营洞察的智能网关——我们用 OpenClaw 在电商卖家场景做了一次从 0 到 1 的实验，讨论电商平台以大规模SaaS部署OpenClaw提供卖家助手的场景下，能够提供的开发便利、使用体验优势、部署模式和成本评估，以及使用体验 目录 01 1. 当前电商卖家助手的困境 02 2. OpenClaw：一种新的卖家助手构建范式 03 3. OpenClaw 作为电商卖家助手的价值 04 4. 从单机版个人助手到SaaS规模部署的挑战与应对 05 5. 从单机到平台：多租户实践 06 6
 
 ## 核心技术
@@ -70,9 +16,9 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
 ## 深度分析

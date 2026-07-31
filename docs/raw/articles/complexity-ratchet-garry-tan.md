@@ -6,7 +6,7 @@ author: 深思圈
 publisher: 深思SenseAI
 published: 2026-05-14
 created: 2026-05-14
-type: raw
+type: raw-article
 tags:
   - vibe-coding
   - testing

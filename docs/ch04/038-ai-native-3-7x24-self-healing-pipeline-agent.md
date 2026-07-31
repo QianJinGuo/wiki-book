@@ -11,39 +11,6 @@
 
 **高德地图** "超级应用的 AI 原生研发模式" 系列第 3 期——**从"AI 辅助写代码"到"AI 自主工业级交付"** 的 **7×24 永动生产线**。6 大核心架构：① AI 全托管（监督 Agent 监控 Coding Agent） ② AI 驱动的 CI/CD（从"规则引擎"→"Agent-aware 体系"） ③ 构建验收自闭环（Self-Healing 3 层） ④ 质量效率双飞轮 ⑤ Agent 自进化（Harness 反馈闭环） ⑥ Benchmark 评测体系（结果+结构+过程+控制四维）。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("高德 AI-Native 生产线 第 3 期 7x24"))
-    系列背景 三道鸿沟 三大挑战
-      三道鸿沟 超级应用层面
-      三大挑战 系列 3 期
-    范式转移 从人在环到人在环上
-    AI 全托管 从人盯 AI到AI 盯 AI
-      核心转变
-      运作方式
-      全托管的技术实现 自监控循环 Self-Monitoring Loop
-    AI 驱动的 CICD 流水线 从规则引擎到Agent-aware 体系
-      传统规则引擎的三个根本性缺陷
-      Agent-aware 体系三大设计原则
-      研发平台全面 Agent 化 4 大能力
-    构建验收自闭环 自检 自修复的质量保障
-      端到端测试的 Agent 化
-      自修复机制 Self-Healing 3 层
-    质量效率双飞轮
-      AI 质量门禁 3 层
-      聚类分析与诊断识别
-      自主修复与持续改进
-    Agent 自进化 知识沉淀与反馈闭环
-      经验的自动沉淀
-      反馈驱动的 Harness 进化 3 大维度
-    评测 Benchmark 体系
-      演进方向
-      大方向
-```
-
 ## 相关实体
 
 - [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](../ch05/009-harness.html)
@@ -52,36 +19,6 @@ mindmap
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 一句话定位
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
 
 **"Human on the Loop" 范式转移** —— 减少 Human in the Loop = 释放 AI 产能。**指数级（10x+）效率跃迁** = 时间解放（24h）× 注意力解放（决策审查）的乘法。
 
@@ -342,7 +279,7 @@ Coding Agent 干活
 - 高德 = **7×24 生产线层**（Self-Healing + Harness 反馈闭环 + Benchmark 体系）
 - 共同点：都强调"治理 + 自进化"是 AI Agent 长期可用的关键
 
-### vs [Kimi Work](../ch01/517-codex.html)
+### vs [Kimi Work](../ch01/520-codex.html)
 - Kimi Work = Harness 搬到本地桌面（**单用户本地**）
 - 高德 = 7×24 永动生产线（**企业级 R&D 链路**）
 - 共同点：都是"人定规则 + AI 永动"哲学的具体落地
@@ -410,7 +347,7 @@ Coding Agent 干活
 ## 相关对照
 - [晓斌 Agent-Oriented Infra](../ch03/035-agent.html) —— 哲学框架
 - [wow-harness v3](../ch05/009-harness.html) —— 跨 session 治理
-- [Kimi Work](../ch01/517-codex.html) —— 本地 Agent
+- [Kimi Work](../ch01/520-codex.html) —— 本地 Agent
 - [Rein](../ch03/035-agent.html) —— 单 agent 架构
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层模型
 - [Microsoft Build 2026](../ch03/035-agent.html) —— 全栈 AI

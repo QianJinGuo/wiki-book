@@ -8,7 +8,6 @@
 
 大模型RL后训练，正在从”能跑起来”走向稳定可训、高效可推、云端可及。vLLM社区推出的Vime，将slime的训练范式与vLLM的推理引擎整合为统一流水线；华为云ModelArts与昇腾计算在此基础上联合共建vime-ascend，让该流水线在昇腾NPU上同样实现可运行、可复现、可规模化部署。本文首先介绍Vime的核心架构与ascend分支的增强特性，随后以Qwen3-4B的GRPO训练为例，展示NPU上的实际验证效果，最后梳理基于ModelArts的完整实践流程。
 
-
 ## 核心观点
 
 > 本文通过article、llm、rl视角，分析了的AI/ML技术动态。
@@ -27,43 +26,6 @@
 vime沿用slime的核心架构思想，采用训推解耦的三段式架构，由三大模块协同驱动RL训练闭环：Training（Megatron-LM）：负责主训练流程，从DataBuffer读取数据后执行参数更新，训练完成后将权重同步至Rollout模块。Megatron-LM提供了业界最齐全的分布式训练优化——TP、PP、CP（序列并行/RingAttention）、EP、ETP以及灵活的重计算策略，让大规模Dense与MoE模型的训练效率有充分保障。Rollout（vLLM + vllm-router）：启动vLLM推理引擎并通过...
 
 ## 技术洞察
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 本文的核心技术价值在于：
 - 大模型RL后训练，正在从”能跑起来”走向稳定可训、高效可推、云端可及。vLLM社区推出的Vime，将slime的训练范式与vLLM的推理引擎整合为统一流水线；华为云ModelArts与昇腾计算在此基础...

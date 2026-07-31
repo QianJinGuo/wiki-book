@@ -8,7 +8,7 @@ published: 2026-06-07
 ingested: 2026-06-07
 sha256: c7130ccb3cb24bf129365c6c2c1e8d081a554c38974176a6e4569f25c72d094e
 tags: [agent-orchestration, codex, linear, task-system, ai-coding, control-plane, codegen]
-type: article
+type: raw-article
 ---
 
 # 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony

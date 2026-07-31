@@ -2,7 +2,7 @@
 title: "云端 Agent 基础设施两条硬经验：CreaoAI 联合创始人的状态/代码解耦 + 凭据隔离"
 created: "2026-06-06"
 updated: "2026-06-06"
-type: raw
+type: raw-article
 source_url: "https://mp.weixin.qq.com/s/dz7bA_0Ki--izCUKp_krUw"
 source_name: "AI 技术立文 WeChat MP (翻译 CreaoAI 联合创始人)"
 author: "AI 技术立文 / CreaoAI co-founder"

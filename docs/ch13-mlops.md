@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((MLOps与评估))
-    实验管理
-      超参调优
-      实验追踪
-      版本控制
-    评估体系
-      基准测试
-      人工评估
-      LLM-as-Judge
-    部署流水线
-      模型打包
-      A/B测试
-      灰度发布
-    监控
-      性能指标
-      数据漂移
-      概念漂移
-    CI/CD
-      自动化测试
-      回归检测
-      质量门禁
-    可观测性
-      日志聚合
-      告警规则
-      仪表盘
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -49,27 +18,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph LR
-    TRAIN[训练] --> EVAL[评估]
-    EVAL --> DEPLOY[部署]
-    DEPLOY --> MON[监控]
-    MON -->|"反馈"| EVAL
-    subgraph "工具链"
-        EXP[实验追踪<br/>MLflow/W&B]
-        CI[CI/CD]
-        OBS[可观测性]
-    end
-    EVAL --> EXP
-    DEPLOY --> CI
-    MON --> OBS
-    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class TRAIN,EVAL,DEPLOY,MON flow
-    class EXP,CI,OBS tool
-```
-
 
 你无法改进你无法测量的东西。
 
@@ -1392,7 +1340,7 @@ Stddev > 0.1 时，按以下顺序排查：
 
 ## Ch13.007 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
 
-> 📊 Level ⭐⭐ | 13.8KB | `entities/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md`
+> 📊 Level ⭐⭐ | 13.9KB | `entities/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md`
 
 # 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
 

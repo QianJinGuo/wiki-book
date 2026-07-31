@@ -1,6 +1,6 @@
 ---
 tags: [wechat, article, claude, openai]
-type: raw
+type: raw-article
 source: wechat
 url: https://mp.weixin.qq.com/s/h0y_B8J1jzQA32tJG4Ds4A
 title: 停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南

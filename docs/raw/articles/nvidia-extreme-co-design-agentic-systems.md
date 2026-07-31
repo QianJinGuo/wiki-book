@@ -11,7 +11,7 @@ review_confidence: 7
 review_recommendation: strong
 review_stars: 5
 sha256: b336723b2c4876eb
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

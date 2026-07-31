@@ -4,7 +4,7 @@ source_url: https://aws.amazon.com/blogs/machine-learning/extract-data-with-on-d
 ingested: 2026-06-12
 feed_name: AWS China ML
 source_published: 2026-06-11
-type: article
+type: raw-article
 title: "Extract Data with On-demand and Batch Pipelines Dynamically"
 author: "AWS Machine Learning Blog"
 tags: [aws, bedrock, document-processing, agent, prompt-management, serverless]

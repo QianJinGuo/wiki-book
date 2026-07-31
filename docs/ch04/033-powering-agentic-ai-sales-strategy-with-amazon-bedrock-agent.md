@@ -2,44 +2,7 @@
 
 ## Ch04.033 Powering agentic AI sales strategy with Amazon Bedrock AgentCore
 
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
-> 📊 Level ⭐⭐ | 35.7KB | `entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md`
+> 📊 Level ⭐⭐ | 35.8KB | `entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md`
 
 # Powering agentic AI sales strategy with Amazon Bedrock AgentCore
 source: rss
@@ -54,26 +17,6 @@ source_published: 2026-05-27T18:00:07Z
  
 
 As agent adoption scaled, we saw a common pattern emerge across enterprises, including our own sales organization: specialized agents deliver value, but without orchestration, users carry the cognitive load of choosing between them. At AWS Sales, this meant more than 20 domain-specific agents deployed across the global organization, with representatives context-switching between systems instead of focusing on customer conversations. In this post, we show you how we built Field Advisor on [Amazon Bedrock AgentCore](https://aws.amazon.com/bedrock/agentcore) to solve this, the architecture decisions we made, and the measurable results that we’ve seen.
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Powering agentic AI sales"))
-    The challenge Agent proliferation
-    Why Bedrock AgentCore Built for
-    What Field Advisor enables for
-    How Amazon Bedrock AgentCore
-      Key architecture components
-      Core architectural capabilities
-      Orchestration and model
-    Conclusion
-      Acknowledgements
-    About the authors
-    从定制基础设施到平台服务的范式转移
-    Supervisor 模式对认知负载管理的启示
-```
 
 ## **The challenge: Agent proliferation without orchestration**
 
@@ -305,11 +248,11 @@ AWS 明确建议从生产流量在线评估开始，而非先构建离线测试�
 构建跨 Agent 边界的 HITL 工作流时，Field Advisor 选择了纯粹基于 Strands Interrupt 的代码方案，而非独立服务+消息队列+轮询。这一决策的依据是：框架原生能力已足够，且状态持久化由 Session Manager 管理。对于企业 AI 系统，这意味着 HITL 的核心是"状态暂停/恢复"的语义，而非基础设施组件。团队应优先探索框架边界能力，而非默认构建独立服务。
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch04/296-aws-security-agent.html)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/094-ai.html)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch04/298-aws-security-agent.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/095-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/295-amazon-bedrock.html)
 - [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](../ch12/003-token.html)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/222-amazon-quick.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/224-amazon-quick.html)
 
 ---
 

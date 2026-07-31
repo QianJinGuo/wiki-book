@@ -3,7 +3,7 @@ title: "GrowLoop：开放域对话的真人感评测 — 用种子+Rubrics自动
 source_url: "https://mp.weixin.qq.com/s/KYePPNNaOX0CfL7qdrvmIQ"
 created: 2026-07-01
 updated: 2026-07-01
-type: article
+type: raw-article
 tags: [wechat, llm, evaluation, dialogue, benchmark, growloop]
 ingested: 2026-07-01
 sha256: 07425c61a81c3f585c276c59e46f4de02f453442d230061c8a467260ae4b6a94

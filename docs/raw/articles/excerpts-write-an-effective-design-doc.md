@@ -2,7 +2,7 @@
 title: "How to Write an Effective Software Design Document"
 source_url: "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 9689f0d021bae945808bfd070b25731b789f4be0feda6ea0487af37db027bde9
 ---

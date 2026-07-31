@@ -9,60 +9,11 @@
 > 来源：分析 LangChain LangSmith Engine 的工程化自改进路径——从线上 trace 自动发现问题并转化为 issue / evaluator / 回归测试
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langsmith-engine-self-improving-agent-trace-based.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LangSmith Engine Trace-Based"))
-    一 Agent 上线后的问题形态变化
-    二 Self-Improving Agent 的工程化路径
-    三 为什么 issue 比 trace 更重要
-    四 整体架构 Screener Investigator 沉淀
-    Agent Purpose
-    Expected Tools
-    Known Failure Modes
-    User Preferences
-      九 MVP 演进路径
-      十 核心飞轮
-```
-
 ## 摘要
 
 文章指出 Agent 工程化的关键问题：**上线后的持续改进机制**。区别于"让模型自己进化"的传统思路（Hermes Agent 的定时任务总结经验），LangSmith Engine 提供更工程化的路径——**让系统从线上失败中持续学习**。核心流程：失败 trace → trajectory 压缩 → Screener 粗筛 → Investigator 调查 → 归类成 issue → 生成 evaluator + regression assertions → 沉淀为长期记忆。核心产出不是 trace 而是 issue。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 - **核心认知反转**：Agent 上线后，团队真正需要的不是更多日志，而是**从失败中建立反馈闭环的系统**
 - **Agent 自改进的工程化路径**：线上 trace → 发现失败模式 → 归类成 issue → 生成 evaluator → 沉淀 regression example → 推动修复 → 进入下一轮测试
@@ -367,10 +318,10 @@ final_answer_mismatch
 - [Agent Evolution 四阶段六维](../ch03/035-agent.html) — 第四阶段"自进化 Agent"包含本文的系统侧自改进机制
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 第五层"评估与观测"对应本文的 trace 分析
 - [Agent YAML 评测](../ch03/035-agent.html) — YAML-driven evaluation 是 Evaluator 工程化的一种
-- [Claude Code 深度解析](../ch05/073-claude-code-harness.html) — Claude Code 的评估观测层工程实践
+- [Claude Code 深度解析](../ch05/074-claude-code-harness.html) — Claude Code 的评估观测层工程实践
 - [深入理解 Claude Code Harness](../ch05/058-agent-harness.html) — Plan Mode + Tasks 系统的"避免问题复发"机制
-- [OpenClaw 完整指南](../ch11/235-openclaw.html) — 开源 Agent 的故障处理与自我恢复机制
-- [Agent 记忆系统实践](../ch03/035-agent.html) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch05/094-ai.html)
+- [OpenClaw 完整指南](../ch11/237-openclaw.html) — 开源 Agent 的故障处理与自我恢复机制
+- [Agent 记忆系统实践](../ch03/035-agent.html) — Agent Overview 是 Memory 模块的诊断侧应用- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch05/095-ai.html)
 
 ---
 

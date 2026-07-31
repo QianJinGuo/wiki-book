@@ -5,7 +5,7 @@ date: 2026-06-04
 author: "The Letter Two"
 publisher: "The Letter Two"
 feed: "The Letter Two"
-type: article
+type: raw-article
 tags: [ai, agentic, agentic-work, asana, project-management, saas, product-launch]
 confidence: 0.85
 provenance_state: extracted

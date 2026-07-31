@@ -2,7 +2,7 @@
 title: "场景营销前端 AI Coding AI Native 的视觉稿还原 大淘宝技术"
 created: 2026-06-24
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 9b181cd9a4797192c3cf200cf9d8595deaa40fc93092265ec11b4e9bb760961d
 ---

@@ -2,7 +2,7 @@
 title: "1.前言"
 created: 2026-06-04
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 8d6b911aa460227bed85c8100253a74543ae449debc87cfe8097f436a5b508eb
 ---

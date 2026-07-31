@@ -6,64 +6,11 @@
 
 # Codex 五层架构：记忆/知识/护栏/委派/分发
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex 五层架构 记忆知识护栏委派分发"))
-    五层详解
-      L1 记忆层 AGENTSmd
-      L2 知识层 skills
-      L3 护栏层 hooks
-    层间交互机制
-    五层架构本质上是 AI 协作的企业治理模型
-    从提示词工程到环境工程的范式转变
-    Hooks 层的安全价值被低估
-    分发层缺失 团队级 AI 工程的最大瓶颈
-    参照
-```
-
 ## 摘要
 
 Codex 团队开发环境配置的五层架构：`AGENTS.md`（记忆层）→ `skills/`（知识层）→ `hooks/`（护栏层）→ `subagents/`（委派层）→ `plugins/`（分发层），形成一个从规则对齐到安全管控到多 Agent 协作的完整工程体系。
 
 ## 五层详解
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | 层 | 目录 | 核心价值 | 类比 |
 |----|------|---------|------|
@@ -185,11 +132,11 @@ Codex 的五层架构可以映射到人类组织的治理层级：
 
 ## 参照
 
-- [Codex AGENTS.md 配置实践](../ch01/517-codex.html)
-- [古法程序员 Codex 三层 Skill 架构](../ch01/517-codex.html)
+- [Codex AGENTS.md 配置实践](../ch01/520-codex.html)
+- [古法程序员 Codex 三层 Skill 架构](../ch01/520-codex.html)
 - [Harness Engineering 实践](../ch05/120-harness-engineering.html)
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
-- [Skill 驱动开发](../ch03/072-skills.html)
+- [Skill 驱动开发](../ch03/071-skills.html)
 
 ## 来源
 

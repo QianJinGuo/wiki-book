@@ -2,29 +2,13 @@
 
 ## Ch04.165 K-Dense — The Model Is No Longer the Bottleneck
 
-> 📊 Level ⭐⭐ | 12.5KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
+> 📊 Level ⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
 
 # K-Dense — The Model Is No Longer the Bottleneck
 
 > **Source**: [K-Dense AI Blog](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck) (2026-06, 9.7KB) by K-Dense team. 原始内容存于 `[K Dense The Model Is No Longer The Bottleneck](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/k-dense-the-model-is-no-longer-the-bottleneck.md)`。
 >
 > **核心论点**: 在 GPT-5 / Claude Opus 4.5 / Gemini 2.5 Pro 这代模型之后，**模型能力不再是科学 AI 应用的天花板**。真正的瓶颈是 **agentic workflow 设计** —— 如何让模型在多步推理中保持高质量上下文。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("K-Dense The Model Is No Longer"))
-    TLDR
-    四个 case 的核心数据
-      Case 1 材料科学 无机晶体生成
-      Case 2 药物发现 ADMET 预测
-      Case 3 气候模拟 区域降尺度
-    核心论点 Context Quality Model
-    与现有实体的关系
-    局限
-```
 
 ## TL;DR
 
@@ -37,37 +21,6 @@ mindmap
   4. **蛋白质设计** (binder 生成) — 反馈循环（dry-lab + wet-lab）harness 是关键
 
 ## 四个 case 的核心数据
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### Case 1: 材料科学（无机晶体生成）
 

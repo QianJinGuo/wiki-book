@@ -8,67 +8,13 @@
 
 > 来源：阿里云云原生 | 发布日期：2026-07-17
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("云效 AI Code Review GitLab"))
-    Architecture Integration
-      Security-First Design
-      Integration Workflow
-      VPC Private Network Access
-    Capabilities Beyond Token Review
-      Iterative Follow-up
-      Cross-File Context Understanding
-    The Private-Network AI Review
-    GitLab as the Critical
-    From Diff-Review to Context-Aware
-```
-
 ## 摘要
 
-云效 (Yunxiao) is [Alibaba Cloud](../ch04/347-agentic-cloud.html)'s DevOps platform. Its **AI Code Review** capability, previously available for Alibaba Cloud's Codeup, now officially supports **GitLab integration** — enabling enterprises to leverage AI-driven code review without moving their repositories out of private networks. The architecture is built around security-first principles: no public exposure required, no repository migration, and Personal Access Token based authentication.
+云效 (Yunxiao) is [Alibaba Cloud](../ch04/348-agentic-cloud.html)'s DevOps platform. Its **AI Code Review** capability, previously available for Alibaba Cloud's Codeup, now officially supports **GitLab integration** — enabling enterprises to leverage AI-driven code review without moving their repositories out of private networks. The architecture is built around security-first principles: no public exposure required, no repository migration, and Personal Access Token based authentication.
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/代码不出内网也能用上-ai-智能评审云效现已支持-gitlab.md)
 
 ## Architecture & Integration
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### Security-First Design
 
@@ -169,12 +115,12 @@ This mirrors the broader evolution in AI Code Review from pattern-matching to se
 
 ## Related Entities
 
-- [Alibaba Cloud Agentic Cloud](../ch04/347-agentic-cloud.html)
+- [Alibaba Cloud Agentic Cloud](../ch04/348-agentic-cloud.html)
 - [Open Code Review CLI](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)
 - AI Code Review
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - GitLab Enterprise DevOps
-- [Tencent AI Coding Practices](../ch05/111-ai-coding.html)
+- [Tencent AI Coding Practices](../ch05/112-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/代码不出内网也能用上-ai-智能评审云效现已支持-gitlab.md)
 

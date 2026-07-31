@@ -8,56 +8,11 @@
 
 > Agent 框架层出不穷——LangGraph、OpenAI Assistants、A2A、AG-UI、Deep Agents——名字越来越多，API 越来越像一套套独立世界观。但框架名词在变，底层问题始终围绕任务、上下文、步骤、事件、状态和产物展开。将这些名词往下拆，会发现它们都在回答同一个底层问题：**Agent Runtime 对外暴露的一组稳定对象、生命周期操作和状态迁移是什么？**
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Protocol 不变层 跨框架的 6 个稳定"))
-    核心框架 Agent Runtime Protocol 6 对象
-    三层概念 标准 对象 Runtime 能力
-    Runtime 与 Protocol 的关系
-    跨框架映射
-    核心洞见
-    与其他实体的关系
-```
-
 ## 核心框架：Agent Runtime Protocol 6 对象
 
 **Agent Protocol ≠ 某一个具体标准**（不等于 A2A、AG-UI、LangChain Agent Protocol 或任意单一规范）。它指的是 Agent Runtime 对外暴露的一组稳定对象、生命周期操作和状态迁移。具体协议标准和框架 API 是证据，不是主线。
 
 跨框架反复出现的 6 个稳定对象：
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 | 对象 | 人话解释 | 回答的问题 |
 |------|---------|-----------|
@@ -119,11 +74,11 @@ Agent Runtime 暴露给外部世界的契约回答的是：
 ## 与其他实体的关系
 
 - [Agent Runtime 7 大职责](../ch03/035-agent.html) — 从 Runtime 职责视角（状态持久化、工具编排、可观测性等）出发，与本文的 Protocol 视角互补
-- [From Agent Protocol to Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html) — 从 MCP/A2A 协议到 Harness Skill 的演进路径，与本文的 Runtime Protocol 抽象视角不同
+- [From Agent Protocol to Harness Skill](ch04/431-from-agent-protocol-to-harness-skill.html) — 从 MCP/A2A 协议到 Harness Skill 的演进路径，与本文的 Runtime Protocol 抽象视角不同
 - [Google Agent Executor](../ch03/035-agent.html) — 分布式 Runtime 实现案例
 - [Agent Harness 架构](../ch05/058-agent-harness.html) — Harness 作为 Runtime 的上层封装
 - [Agent 架构关键变化：Harness 成为新后端](../ch05/009-harness.html) — Harness 作为 Runtime 演进方向
-- [MCP · Skill · Agent · LLM · Harness](../ch05/090-harness-skill.html) — 高层架构关系图
+- [MCP · Skill · Agent · LLM · Harness](../ch05/091-harness-skill.html) — 高层架构关系图
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-protocol-unchanged-across-frameworks-aliyun-2026-07-02.md)
 

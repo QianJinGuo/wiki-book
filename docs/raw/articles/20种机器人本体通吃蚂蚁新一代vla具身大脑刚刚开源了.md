@@ -3,7 +3,7 @@ title: "20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源�
 source: wechat
 source_url: "https://mp.weixin.qq.com/s/fF9D9Vvx3PsFrdy94eKyVg"
 ingested: 2026-07-08
-type: raw
+type: raw-article
 vxc: 64
 tags: [raw]
 sha256: "a0538bd8164e3fca633059a5f61008f6c0ffcdae368ef315cbb1d90cc32119ef"

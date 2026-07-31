@@ -1,6 +1,6 @@
 ---
 title: CISA Admin Leaked AWS GovCloud Keys on Github
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/
 tags: [security]

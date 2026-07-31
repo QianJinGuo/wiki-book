@@ -7,7 +7,7 @@ publish_date: 2026-07-07
 created: 2026-07-07
 ingested: 2026-07-07
 tags: [agent, harness, loop-engineering, karpathy, auto-research, llm-optimization]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 7
 review_recommendation: strong

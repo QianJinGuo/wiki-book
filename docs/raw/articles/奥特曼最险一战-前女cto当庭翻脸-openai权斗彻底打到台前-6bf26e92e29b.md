@@ -1,6 +1,6 @@
 ---
 title: 奥特曼最险一战：前女CTO当庭翻脸，OpenAI权斗彻底打到台前
-type: source
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/AQ-7BEvUSLZc2qaGKs1wkQ
 tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]

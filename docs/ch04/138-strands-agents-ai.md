@@ -2,33 +2,11 @@
 
 ## Ch04.138 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手
 
-> 📊 Level ⭐⭐ | 14.0KB | `entities/strands-agents-cloud-cost-optimizer.md`
+> 📊 Level ⭐⭐ | 14.1KB | `entities/strands-agents-cloud-cost-optimizer.md`
 
 # 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手
 
 > 使用 Strands Agents 构建云成本分析与优化 AI 助手的实战教程，包含成本监控、自动化优化建议。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 Strands Agents"))
-    亚马逊AWS官方博客
-    一 背景与适用场景
-      云成本管理面临的挑战
-      方案能力概述
-      适用场景
-    二 方案架构
-      系统架构
-      请求流程
-      核心优势
-    技术架构 从聊天机器人到 FinOps 智能助手的演进
-    中国区适配 跨越REGION与ENDPOINT的差异
-    MCP 协议 云成本管理自动化的新范式
-    多账号与 SSO 企业级部署的安全考量
-    从单工具调用起步 逐步扩展 Agent 能力边界
-```
 
 ## 核心内容
 
@@ -42,35 +20,6 @@ sha256: 70061409c093a01f
 # 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 摘要：本文介绍如何基于 Strands Agents SDK 和 AWS 官方 MCP 工具，构建一个支持自然语言交互的云成本分析 AI 助手，实现费用查询、图表可视化和优化建议的端到端体验，并适配亚马逊云科技中国区部署。
 
@@ -218,13 +167,13 @@ S3 会话持久化是另一个关键的企业级特性。传统的对话助手�
 ## 参考来源
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/561-amazon-bedrock-agentcore.html)
-- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/258-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/566-amazon-bedrock-agentcore.html)
+- [Yidian Tianxia Context Engineering Agentic Ai Qcon](ch04/261-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [航班变更信息智能识别解决方案](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/strands-agents-cloud-cost-optimizer.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/913-20.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/strands-agents-cloud-cost-optimizer.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/926-20.html)
 
 ---
 

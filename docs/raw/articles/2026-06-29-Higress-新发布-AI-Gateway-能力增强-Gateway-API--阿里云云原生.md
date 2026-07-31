@@ -2,7 +2,7 @@
 title: "Higress 新发布 AI Gateway 能力增强 Gateway API  阿里云云原生"
 created: 2026-06-29
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 02c8cf2d5c77ed5d729c7a25dad6a5c6ef3c3779635c41ab1bc2d55c82621921
 ---

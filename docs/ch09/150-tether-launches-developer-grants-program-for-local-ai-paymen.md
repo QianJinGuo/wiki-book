@@ -8,53 +8,11 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-ai-paymen.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Tether launches developer grants"))
-    QVAC Tether 的平台锁定战略
-    端侧 AI 的可行性验证
-    自托管支付 绕过传统金融基础设施
-    与去中心化 AI 叙事的交叉
-```
-
 ## 摘要
 
 Tether 于 2026 年 5 月 11 日推出开发者资助计划，为基于 QVAC 平台构建端侧 AI 推理工具和自托管支付基础设施的开源项目提供每项 $1,500–$4,000 的资助，以 USDT 或比特币支付，无总额上限。这是 Tether 从稳定币发行商向去中心化基础设施平台转型的关键一步。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 - **资助规模与形式**：每项交付物 $1,500–$4,000，以 USDT 或 BTC 支付，无总额上限，面向全球独立开发者
 - **QVAC 平台**：Tether 自研的端侧 AI 推理平台，让 AI 模型直接在用户设备上运行，无需连接远程服务器
@@ -90,7 +48,7 @@ Tether 的布局同时踩中了两个趋势：**端侧 AI 推理**和**去中心
 
 ## 相关实体
 
-- [Tether launches developer grants program](../ch11/212-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Tether launches developer grants program](../ch11/214-tether-launches-developer-grants-program-for-local-first-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-ai-paymen.md)
 

@@ -4,56 +4,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/agentscope-java-harness-framework.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentScope Java Harness Framework"))
-    两大核心支柱
-      支柱一 Workspace 工作区
-      支柱二 AbstractFilesystem 抽象
-    与 vault 知识关联
-    在 Harness 工程体系中的坐标
-    AbstractFilesystem 的工程价值
-    双层记忆机制的成熟度
-    企业分布式场景的三个核心挑战
-    选型建议
-    落地检查清单
-```
-
 ## 核心定位
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 个人助手型 Agent 和企业级 Agent 是两种不同的工程形态。AgentScope Java Harness 的设计目标：**同一套逻辑，按需切换部署形态**（单机 → 多副本 → 隔离沙箱）。
 
 ## 两大核心支柱
@@ -74,8 +25,8 @@ workspace/
 对比 vault 中其他工作区方案：
 
 - [Agent Harness 架构](../ch05/058-agent-harness.html) — 7层金字塔模型，Harness 定位为 Agent 的"后台基础设施"
-- [OpenClaw Prompt/Harness](ch11/235-openclaw.html) — 个人单机假设，workspace 即本地目录
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html) — Thin Harness 理念：Harness 做薄（最小协调层），Skill 做厚（业务逻辑）
+- [OpenClaw Prompt/Harness](ch11/237-openclaw.html) — 个人单机假设，workspace 即本地目录
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html) — Thin Harness 理念：Harness 做薄（最小协调层），Skill 做厚（业务逻辑）
 
 ### 支柱二：AbstractFilesystem 抽象
 ```
@@ -102,7 +53,7 @@ Local      Remote     Sandbox
 
 ## 相关实体
 - [Harness Engineering 系统梳理](../ch05/120-harness-engineering.html)
-- [OpenHuman: AI Agent 持久记忆框架](../ch04/121-agent-memory.html)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04/098-agent-memory.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

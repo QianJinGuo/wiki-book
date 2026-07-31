@@ -1,6 +1,6 @@
 ---
 title: Code Simulation for Enterprise Engineering | PlayerZero
-type: source
+type: raw-article
 source: newsletter
 source_url: https://hs.playerzero.ai/ai-code-review
 review_value: 7

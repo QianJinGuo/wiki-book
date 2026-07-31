@@ -8,37 +8,6 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从零设计准生产级 LLM Agent ThinkingAgent"))
-    架构总览 五层垂直分离 Pipeline 星形拓扑
-      五层架构
-      核心设计方法
-      Pipeline 是唯一的上帝视角
-    推理框架 Plan-and-Execute ReAct
-      三段式循环 核心控制流
-    任务分析 让 Agent 真正理解任务
-    提示词工程 四个关键实践
-      从模型行为规律反推 Prompt 布局
-      工具选择的优先级提示 first match wins
-      为副作用设计提示词
-    检查点机制 长任务的生命线
-      保存时机 评估通过后
-      检查点内容
-    上下文管理 推理轨迹的托举
-      双缓冲设计
-      五步自动修复法
-      Token 预算管理 角色分配制
-    可靠性体系 Pillar-Layer 异常处理
-      六层异常矩阵
-      带行为的标准化异常
-      基于代价设计恢复策略
-    质量评估 三层体系
-```
-
 ## 概述
 
 **工程师与艺术家（Thinking）** 2026-06 发布的 **ThinkingAgent** 是从零独立构建的准生产级 LLM Agent 框架，**不依赖任何已有代码或架构**。本文是中文圈公开材料中**最完整、最底层、最有工程取舍判断**的 Agent 框架设计文档——覆盖从 Pipeline 架构到上下文压缩到 Benchmark 的完整链路。
@@ -48,44 +17,6 @@ mindmap
 **Benchmark 数据**：5 任务 × 40 次 = 200 次独立运行。推理轨迹正确率 99%、工具选择正确率 98%、JSON 解析成功率 100%、任务完成率 94%。
 
 ## 1. 架构总览：五层垂直分离 + Pipeline 星形拓扑
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 ### 1.1 五层架构
 
@@ -289,8 +220,8 @@ CLOSED → OPEN（连续失败超阈值）→ HALF_OPEN（冷却到期，允许�
 - [Harness Engineering Core Patterns](../ch05/120-harness-engineering.html)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）— ThinkingAgent 的 Pipeline 架构是 Harness 模式的完整实现
 - [Harness Engineering Paradigm Comprehensive 2026](../ch05/120-harness-engineering.html)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）— ThinkingAgent 验证了"可靠性设计前置"的核心论点
 - [Loop Engineering Feedback Control System](../ch05/004-loop-engineering.html)：Loop Engineering 4 来源合并 — ThinkingAgent 的三段式循环是 Loop Engineering 的工程实现
-- [Claude Code Tool Call Security Incident Gitignore Redis Anthropic Apology 2026 06 17](../ch03/078-claude-code.html)：Claude Code 安全事故 — ThinkingAgent 的 Safeguard 代理模式是直接应对方案
-- [Skills Driven Programming Taobao Enterprise 5 Phase Evolution 2026 06 17](../ch03/072-skills.html)：大淘宝 Skills 编程 — ThinkingAgent 的 Anti-Skills 立场与之形成互补视角
+- [Claude Code Tool Call Security Incident Gitignore Redis Anthropic Apology 2026 06 17](../ch03/077-claude-code.html)：Claude Code 安全事故 — ThinkingAgent 的 Safeguard 代理模式是直接应对方案
+- [Skills Driven Programming Taobao Enterprise 5 Phase Evolution 2026 06 17](../ch03/071-skills.html)：大淘宝 Skills 编程 — ThinkingAgent 的 Anti-Skills 立场与之形成互补视角
 - [Agent Loop Engineering Handbook 8 Questions Chen Jin Tencent Self 2026](../ch05/004-loop-engineering.html)：Agent Loop 8 个未解问题 — ThinkingAgent 对其中多个问题给出了工程答案
 
 ---

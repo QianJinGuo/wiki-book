@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/mythos_offensive_security_xbow_evaluatio.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Mythos for Offensive Security"))
-    测试方法论 专业团队 多维度评估
-    基准测试结果 漏洞发现能力大幅提升
-    Live-site 验证的固有挑战
-    判断力 精确但过于字面
-    给安全团队的启示
-    给 AI安全工具开发者的启示
-    给企业安全决策者的启示
-```
-
 ## 核心要点
 - **模型定位**：Anthropic 前沿模型，专为 offensive security 任务设计，在漏洞发现方面实现重大突破 
 - **核心优势**：源代码审计能力极强，漏洞候选发现效率大幅领先先代模型 
@@ -28,42 +13,6 @@ mindmap
 ---
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 ### 1. 测试方法论：专业团队 + 多维度评估
 XBOW 组建了来自公司不同部门的 **10 人专家团队**，从多个方向评估模型。测试沿用评估 Opus 4.7 和 GPT 5.5 的同一套内部基准系统：对已发现漏洞的开源应用冻结在漏洞版本，用 autonomous agent 运行测试 。
 本次评估还扩展到其他维度：
@@ -142,22 +91,22 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mythos_offensive_security_xbow_evaluatio.md)
 
 ## 相关实体
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1022-claude.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/989-anthropic.html)
-- [Agent Skill 设计模式](../ch04/397-agent-skills.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/095-ai.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/1004-anthropic.html)
+- [Agent Skill 设计模式](../ch04/401-agent-skills.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/035-agent.html)
 
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/1004-anthropic.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/212-anthropic-claude-managed-agents.html)
 
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/257-anthropic-agent.html)
-- [Anthropic Computer Use 最佳实践](ch01/937-anthropic-computer-use.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/260-anthropic-agent.html)
+- [Anthropic Computer Use 最佳实践](ch01/950-anthropic-computer-use.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 
 ---

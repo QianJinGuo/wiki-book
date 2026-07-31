@@ -3,7 +3,7 @@ title: "Hermes Agent 推出 Kanban 多 agent 调度"
 source_url: "https://www.xiaohongshu.com/explore/69f9a0df0000000038037336"
 created: 2026-07-02
 updated: 2026-07-02
-type: article
+type: raw-article
 tags: [xiaohongshu, hermes, kanban, multi-agent, scheduling]
 ingested: 2026-07-02
 sha256: a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8

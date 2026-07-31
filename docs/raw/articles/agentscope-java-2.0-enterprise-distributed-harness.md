@@ -2,7 +2,7 @@
 source_url: https://mp.weixin.qq.com/s/X2p4olp1gPzQlmIMVKN2rw
 ingested: 2026-06-04
 sha256: TBD
-type: raw-source
+type: raw-article
 tags: [article, agentscope, agentscope-java, harness-agent, harness-framework, enterprise-distributed, multi-tenant, abstract-filesystem, workspace, context-management, middleware, permission-system, model-fallback, event-stream, java, jvm, spring-boot, kubernetes, builder-pattern, contentblock, data-block, sealed-class]
 ---
 

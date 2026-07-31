@@ -5,7 +5,7 @@ author: "飞樰 (阿里技术)"
 published: 2026-06-16
 ingested: 2026-06-28
 language: zh
-type: raw
+type: raw-article
 sha256: "abfa307bf81fecaa44ea9da519676a1253101dc2c37673015846e71c821110fb"
 ---
 

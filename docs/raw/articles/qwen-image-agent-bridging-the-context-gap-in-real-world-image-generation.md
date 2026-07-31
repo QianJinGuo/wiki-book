@@ -2,7 +2,7 @@
 title: "Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: c99d9c2a51f5929648dcd8879a542b3bbf300b742adc3145758d00f0630a8689
 ---

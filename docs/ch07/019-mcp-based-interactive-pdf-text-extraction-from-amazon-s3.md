@@ -8,69 +8,11 @@
 
 AWS 推出的基于 Model Context Protocol (MCP) 的交互式 PDF 文本提取方案，让 AI Agent 能够实时从 Amazon S3 存储的 PDF 文档中提取文本内容，无需等待批量处理管道。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MCP-based Interactive PDF Text"))
-    实时文本提取
-    成本优化
-    最小化基础设施
-    技术实现
-      工作流程
-      MCP 服务器核心代码
-      部署步骤
-    适用场景对比
-      推荐使用 MCP 方案的场景
-      推荐使用 Amazon Textract 的场景
-      混合工作流
-    安全考虑
-    局限性与边界
-    真实用例
-      法律服务公司
-      金融服务合规
-      企业战略团队
-```
-
 ## 摘要
 
 该方案通过 MCP 服务器提供程序化文档访问能力，使 AI 助手能够直接查询存储在 S3 中的 PDF 文件。相比 Amazon Textract，在概念验证场景下成本降低约 90%，同时保持实时交互能力。适用于合规审查、法律咨询、财务分析等需要即时文档访问的场景。
 
 ## 核心能力
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 实时文本提取
 

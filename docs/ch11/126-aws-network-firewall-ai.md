@@ -6,61 +6,7 @@
 
 # AWS Network Firewall 规则冲突 AI 实时检测方案（部署小指南六）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Network Firewall 规则冲突 AI"))
-    代码负责发现冲突 AI 负责解释冲突 是核心设计原则
-    STRICTORDER 语义理解是 AI 集成中最关键的一环
-    端到端事件驱动架构 CloudFormation 一键部署是工程化亮点
-    多维冲突检测覆盖了 Suricata IP ACL Domain
-    用 CloudTrail EventBridge Lambda
-    让 LLM 做语义判断 让代码做确定性计算
-    STRICTORDER 优先级语义必须显式教给 LLM
-    Serverless 按需计费是中小规模运维工具的最佳架构
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 本文来自 AWS 中国博客，是 Network Firewall 部署小指南系列的第六篇。核心贡献是**为 AWS Network Firewall 这一无原生冲突检测能力的托管服务，构建了一套基于 CloudTrail + EventBridge + Lambda + Bedrock (Nova Pro) 的实时规则冲突检测与 AI 智能分析系统**。当用户编辑 Rule Group 保存时，系统会在 1-2 分钟内自动检测潜在的 CIDR 重叠、IP/端口冲突、域名策略冲突，并通过邮件通知管理员，同时附上 AI 生成的意图判断、风险评估和修复建议。
 
@@ -110,13 +56,13 @@ AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主
 
 ## 相关实体
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/281-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/279-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/054-prowler-genai.html)
 - [Aws Bedrock Serverless Async Inference Multimodal](ch11/009-aws-bedrock.html)
-- [Aws Bedrock Agentcore Identity Security](ch11/270-aws-bedrock-agentcore.html)
+- [Aws Bedrock Agentcore Identity Security](ch11/272-aws-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
-- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1016-spec.html)
+- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1034-spec.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

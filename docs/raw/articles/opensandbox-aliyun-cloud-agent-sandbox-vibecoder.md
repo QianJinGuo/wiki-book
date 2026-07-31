@@ -5,7 +5,7 @@ author: "VibeCoder (Vibe编码)"
 published: 2026-06-28
 ingested: 2026-06-28
 language: zh
-type: raw
+type: raw-article
 sha256: "b4b780185e8907498dfce7e0239013a6f609a28d7a846dd62da26876561e77e5"
 ---
 

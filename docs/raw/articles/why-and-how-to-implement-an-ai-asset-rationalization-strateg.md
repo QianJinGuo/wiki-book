@@ -1,7 +1,7 @@
 ---
 title: Why and how to implement an AI asset rationalization strategy
 sha256: 7158c390e4ac6c7dda03b04a3131588913aa8a06a094d3f4d67157e6d19a3f26
-type: source
+type: raw-article
 source: newsletter
 source_url: https://www.informationweek.com/machine-learning-ai/why-and-how-to-implement-an-ai-asset-rationalization-strategy
 ingested: 2026-05-15

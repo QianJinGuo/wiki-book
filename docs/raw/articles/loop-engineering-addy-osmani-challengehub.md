@@ -3,7 +3,7 @@ title: "Loop Engineering：不再写提示词，而是设计替你写提示词�
 source_url: "https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w"
 ingested: 2026-06-10
 sha256: 07178174a745ef5bb3c918c4ba1cac4e17c607ab6e15e202249fea6854ff591b
-type: source
+type: raw-article
 tags: [wechat, loop-engineering, harness, codex, claude-code, addy-osmani]
 ---
 

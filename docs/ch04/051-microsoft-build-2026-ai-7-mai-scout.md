@@ -9,85 +9,14 @@
 
 **Microsoft Build 2026** 是微软的"AI 独立日"——从"AI 应用整合者"（依赖 OpenAI）转向**"全栈 AI 基础设施与模型提供者"**。核心发布：① **MAI-Thinking-1**（首个高级推理模型，350 亿活跃参数 / 1 万亿总参数 / SWE Bench Pro 与 Claude Opus 4.6 持平）② **6 款 MAI 系列模型**（Code / Image / Transcribe / Voice 等）③ **Scout**（基于 OpenClaw 框架的 365 智能体，可全天候自主运行）。**量子位补充全景视角**：④ **OpenClaw 登 Windows + MXC 沙箱** ⑤ **GitHub Copilot 独立桌面 App** ⑥ **Windows 开发者体验大升级** ⑦ **NVIDIA 合作 + Surface RTX Spark Dev Box**。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Microsoft Build 2026 微软 AI 独立日 7"))
-    MAI-Thinking-1 微软首个高级推理模型
-      模型规格
-      性能基准
-      关键差异化 独立训练
-    MAI 模型家族 多模态生态系统
-    Scout 升级版 OpenClaw 企业级智能体
-      产品定位
-      集成范围
-    微软 AI 战略定位的根本转变
-      转型前 AI 应用整合者
-      转型后 全栈 AI 基础设施与模型提供者
-    核心断言 行业意义
-    与现有 wiki 实体的关系
-      vs OpenClaw
-      vs Claude Code Codex
-      vs Kimi Work
-    启示
-    量子位补充 Windows 生态 NVIDIA 合作 2nd
-      OpenClaw 正式登陆 Windows MXC 操作系统级安全沙箱
-      GitHub Copilot 独立桌面 App
-      Windows 开发者体验大升级
-```
-
 ## 相关实体
-- [Microsoft Build 2026 Qbitai Full Scope](../ch05/094-ai.html)
+- [Microsoft Build 2026 Qbitai Full Scope](../ch05/095-ai.html)
 
 → [原文存档（AI 前线版）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-build-2026-mai-models-scout-agent.md)
 → [原文存档（量子位全景版）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
 → [Microsoft Build 2026 MAI Keynote](https://microsoft.ai/news/microsoft-build-2026-mai-keynote-transcript/) · [Semafor 报道](https://www.semafor.com/article/06/02/2026/microsofts-ai-chief-on-the-greatest-game-of-catchup-ever-played)
 
 ## 一句话定位
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 
 **微软正式从"OpenAI 依赖者"转向"全栈 AI 提供者"**——同时掌握模型 + Foundry 平台 + MAI Playground + Scout 智能体 + Microsoft 365 应用层。
 
@@ -215,7 +144,7 @@ graph TB
 
 ## 与现有 wiki 实体的关系
 
-### vs [OpenClaw](../ch11/235-openclaw.html)
+### vs [OpenClaw](../ch11/237-openclaw.html)
 - OpenClaw = 开源 AI 编程框架，席卷 AI 圈
 - **Scout = "升级版 OpenClaw"**——基于 OpenClaw 框架构建，但加上微软企业级安全 / Entra 身份 / Intune 治理
 - **关键差异**：Scout 是"实验性 + opt-in"起步，微软承诺**向开源 OpenClaw 项目进行上游贡献**（与社区共生，非取代）
@@ -225,7 +154,7 @@ graph TB
 - Codex = OpenAI 自家 harness 跑在 GPT 模型
 - **Scout = 微软智能体（基于 OpenClaw）跑在 MAI 模型**（"全栈"闭环）
 
-### vs [Kimi Work](../ch01/517-codex.html)
+### vs [Kimi Work](../ch01/520-codex.html)
 - Kimi Work = 月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面
 - **Scout = 微软 MAI + OpenClaw 框架在 365 云端/桌面/网页** —— **"人本主义超级智能"** 哲学强调"支持人类而非取代"
 - **共同点**：都是模型公司 + 自家 Harness 的全栈组合
@@ -341,9 +270,9 @@ graph TB
 - **WSL Containers 公开时间表 / Intelligent Terminal GA 时间表** 未披露
 
 ## 相关对照
-- [Kimi Work](../ch01/517-codex.html) —— 本地桌面 Agent + Vibe Working
+- [Kimi Work](../ch01/520-codex.html) —— 本地桌面 Agent + Vibe Working
 - [wow-harness v3](../ch05/009-harness.html) —— 跨 session 事件时间线
-- [OpenClaw](../ch11/235-openclaw.html) —— 开源 AI 编程框架（Scout 基于它）
+- [OpenClaw](../ch11/237-openclaw.html) —— 开源 AI 编程框架（Scout 基于它）
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层 harness 模型
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html) —— 工作集视角
 

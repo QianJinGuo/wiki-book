@@ -7,7 +7,6 @@
 > -> 原文存档
 # Google shipped Gemini 3.1 Flash-Lite in General Availability
 source: 
-
 ## 摘录
 > Title: Google shipped Gemini 3.1 Flash-Lite in General Availability
 URL Source: https://www.testingcatalog.com/google-launches-gemini-3-1-flash-lite-in-general-availability/
@@ -25,44 +24,6 @@ Google shipped Gemini 3.1 Flash-Lite in General Availability
    MoreWeekly NewsletterFor Advertisers 
 [](https://www.facebook.com/testingcatalog "Faceboo...
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 **Flash-Lite 定位分析**：Gemini 3.1 Flash-Lite 是 Google 面向成本敏感场景推出的轻量级模型，主打高性价比推理。GA（General Availability）意味着该模型已通过生产环境验证，可用于正式业务场景。
 **Google 模型策略的层级分化**：从 Gemini 3.1 Flash-Lite 到 Ultra，Google 建立了覆盖不同需求层次的模型矩阵。Flash-Lite 面向日常应用和大规模调用场景，而更高规格模型面向复杂推理任务。这种分层策略与 OpenAI 的 GPT-4o mini/Plus/Pro 布局形成竞争。
 **GA 状态的技术含义**：模型进入 GA 阶段，表明 Google 对其稳定性、性能指标、安全性评估已达到生产级标准。对于构建在 Google AI 基础设施上的应用开发者而言，这是重要的可靠性信号。

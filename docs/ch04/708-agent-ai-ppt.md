@@ -8,33 +8,6 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-"))
-    沙龙概述
-    议题一 基于 HiClaw 实现企业级多 Agent 协作
-      HiClaw 核心架构
-      Matrix 协议与透明化协作
-      企业级安全与治理
-    议题二 QwenPaw 即刻加载你的专属智能搭档
-      产品定位
-      核心特性
-      多模型后端支持
-    议题三 基于 AgentScope-Java 的数据飞轮答疑
-      核心理念 代码即知识
-      四层架构设计
-      AgentLoop 闭环迭代机制
-    议题四 Nacos SkillWorker Registry
-      解决的核心问题
-      Worker 的定义与价值
-    现场实操环节
-    技术生态总结
-    相关资源
-```
-
 ## 沙龙概述
 
 群虾智能——AI 原生应用开源开发者沙龙·北京站圆满落幕，本场活动吸引了 **110+ 名技术从业者**深度参与。
@@ -51,42 +24,6 @@ mindmap
 ---
 
 ## 议题一：基于 HiClaw 实现企业级多 Agent 协作 & Harness 工程最佳实践
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 **分享人**：王泉力，HiClaw Maintainer，阿里云智能产品解决方案架构师
 
@@ -257,10 +194,10 @@ Nacos Skill/Worker Registry 将互联网公司久经考验的微服务治理体�
 ## 相关资源
 
 ## 相关实体
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
-- [Defense_At_Ai_Speed_Microsofts_New_Multi](../ch05/094-ai.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1248-0.html)
+- [Defense_At_Ai_Speed_Microsofts_New_Multi](../ch05/095-ai.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
-- [Ai Enhanced Data Solutions With Database 26Ai](../ch05/094-ai.html)
+- [Ai Enhanced Data Solutions With Database 26Ai](../ch05/095-ai.html)
 - [Rag技术框架的演进方向](../ch01/223-rag.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取.md)

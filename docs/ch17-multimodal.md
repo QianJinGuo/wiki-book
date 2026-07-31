@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((多模态AI))
-    视觉理解
-      图像识别
-      文档解析
-      视频理解
-    图像生成
-      扩散模型
-      文生图
-      图编辑
-    语音
-      TTS合成
-      ASR识别
-      实时翻译
-    编码器架构
-      视觉编码器
-      音频编码器
-      跨模态对齐
-    应用
-      VLM视觉语言
-      多模态Agent
-      内容创作
-    评估
-      图文对齐
-      生成质量
-      多模态基准
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -49,22 +18,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph LR
-    T[文本] --> ENC[多模态编码器]
-    I[图像] --> ENC
-    A[音频] --> ENC
-    V[视频] --> ENC
-    ENC --> FUS[融合层]
-    FUS --> DEC[解码器]
-    DEC --> OUT[输出]
-    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class T,I,A,V in
-    class ENC,FUS,DEC,OUT core
-```
-
 
 纯文本 Agent 只是起点——多模态让 Agent 能真正"感知世界"。
 
@@ -623,7 +576,7 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 - [Agentium Agent Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agentium-agent-framework.md)
 - [纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)
 - [800 行 OpenClaw tool 消息总线](https://github.com/QianJinGuo/wiki/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)
-- [Harness Engineering 7 层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md)
+- [Harness Engineering 7 层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md)
 - [A²RD 长视频一致性框架](https://github.com/QianJinGuo/wiki/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
 - [Anthropic 缓存 Token 经济](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic_cache_tokenomics.md)
 - [Google Gemini Omni 视频模型](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
@@ -1118,7 +1071,7 @@ LLaVA-OneVision-2 解决的是理解侧问题，而当前很多视频生成模�
 
 ## Ch17.010 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
 
-> 📊 Level ⭐⭐ | 8.9KB | `entities/小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow-xiaomi.md`
+> 📊 Level ⭐⭐ | 9.0KB | `entities/小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow-xiaomi.md`
 
 # 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
 
@@ -2083,7 +2036,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ## Ch17.022 Self-Filming Guide by Hello World Media
 
-> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md`
 
 ## 1. Camera Setup | 相机设置
 ### iPhone ProRes Log 设置（需调色时）
@@ -2203,8 +2156,8 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 ---
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
 ## 相关实体
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
-- [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](https://github.com/QianJinGuo/wiki/blob/main/entities/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md)
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md)
+- [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](https://github.com/QianJinGuo/wiki/blob/main/entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md)
 - [How To Build Audio Transcription Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-build-audio-transcription-agent.md)
 - [Stable Audio 3](https://github.com/QianJinGuo/wiki/blob/main/entities/stable-audio-3.md)
 
@@ -4133,8 +4086,8 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ## 相关实体
 - [How To Build Audio Transcription Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-build-audio-transcription-agent.md)
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md)
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki/blob/main/entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md)
 - [Ntm Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/ntm-normalizing-trajectory-models.md)
 - [Nvidia Gamma World Multi Agent World Model](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)
 

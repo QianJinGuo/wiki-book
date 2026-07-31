@@ -2,7 +2,7 @@
 title: "gpu kernel"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: aa76c5cf812c3648d3eaf2a62b9a369e1fc25a72f88d16091b0e1bf0017bf378
 ---

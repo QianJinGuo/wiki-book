@@ -6,7 +6,7 @@ author: "官亭（淘天集团-行业运营技术团队）"
 published: "2026-06-17"
 ingested: "2026-06-17"
 sha256: "e243af981ced29d0c56175cd2bce7b3aefbeb4a7c1c8e942e07132403d4ac665"
-type: raw
+type: raw-article
 tags:
   - skills-driven-programming
   - agent-skills

@@ -12,7 +12,7 @@ date: 2026-01-27
 created: 2026-01-27
 updated: 2026-01-27
 tags: [anthropic, mcp, claude, ai-operating-system, strategic-analysis]
-type: entity
+type: raw-article
 provenance_state: synthesized
 sources: [raw/articles/anthropic-ai-windows-mcp-strategy-geekpark-2026]
 sha256: e553d7a59f0cb11cb8c970bbb6e1068973b92aa383dd2b77f2dac9cf2a836666

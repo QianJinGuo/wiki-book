@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/sap-unveils-autonomous-enterprise.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SAP Unveils the Autonomous"))
-    核心架构 SAP Business AI Platform
-    SAP Autonomous Suite 50 领域专属助理
-    Joule Work 对话式工作体验
-    战略合作伙伴生态
-    市场进入 1 亿欧元合作伙伴基金
-    技术意义与行业影响
-    参考文献
-```
-
 ## 核心架构：SAP Business AI Platform
 
 SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Business Technology Platform](https://www.sap.com/products/business-technology-platform.html)（SAP BTP）、SAP Business Data Cloud 和 SAP Business AI 统一为单一托管环境，为企业 AI 提供安全、可扩展的部署底座 。
@@ -26,37 +11,6 @@ SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Busines
 该平台的核心是 **SAP Knowledge Graph**——一种结构化的业务知识图谱，为 AI Agent 提供企业 SAP 系统中业务实体、流程和关联关系的语义映射，使 Agent 能够理解业务上下文而非仅处理离散的命令 。在 Knowledge Graph 之上，**Joule Studio** 是 SAP 的 AI-first 开发环境，支持低代码、专业代码和 AI 框架多种开发模式，允许合作伙伴和客户在 SAP 托管的基础设施上构建定制化 Agent 。
 
 ## SAP Autonomous Suite：50+ 领域专属助理
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 SAP Autonomous Suite 是部署在 Business AI Platform 之上的自主运营层，赋予 SAP 现有业务应用执行端到端流程的 AI 能力 。该套件包含 **50+ 领域专属的 Joule Assistants**，覆盖财务（Finance）、供应链（Supply Chain）、采购（Procurement）、人力资源（HCM）和客户体验（CX）等核心职能，每个助理由 200+ 专业化 Agent 编排驱动，执行精确的任务分工 。
 
@@ -151,8 +105,8 @@ Autonomous Suite 的分阶段落地（从 RISE 客户第一年的 3 个 Assistan
 - [Sap Unveils The Autonomous Enterprise](ch04/105-sap-unveils-the-autonomous-enterprise.html)
 - [News Sap Com Sap Unveils The Autonomous Enterprise](ch04/105-sap-unveils-the-autonomous-enterprise.html)
 - [Enterprise Software Moats Agent Era](../ch03/035-agent.html)
-- [The Ui Is Dead Long Live The Agent](ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/222-amazon-quick.html)
+- [The Ui Is Dead Long Live The Agent](ch04/376-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/224-amazon-quick.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-unveils-autonomous-enterprise.md)
 

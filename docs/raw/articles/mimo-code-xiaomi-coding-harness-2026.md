@@ -6,7 +6,7 @@ author: "褚杏娟"
 pub_date: "2026-06-12"
 ingested: "2026-06-12"
 sha256: "f83b790344cb83b004fca200eec01a3b51ca31f648c7b285c7bef94e311580b0"
-type: source
+type: raw-article
 tags: ["mimo-code", "claude-code", "opencode", "coding-harness", "max-mode", "dynamic-workflow", "long-horizon", "xiaomi", "open-source", "oss-business-model"]
 ---
 

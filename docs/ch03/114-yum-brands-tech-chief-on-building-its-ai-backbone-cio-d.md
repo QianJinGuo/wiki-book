@@ -8,64 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/819775.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Yum Brands tech chief on building"))
-    数字化转型规模
-    统一数据模型 企业级 AI 的基础设施
-    AI 战略三维度框架
-    Byte by Yum 平台架构
-    技术供应商多元化
-    ROI 评估方法
-    战略定位 AI 是工具而非目的
-```
-
 ## 摘要
 
 Yum Brands（Taco Bell、KFC、Pizza Hut 母公司）首席数字与技术官 Jim Dausch 在 CIO Dive 虚拟活动上分享了公司 AI 战略。核心数据：Taco Bell 数字销售占比从 2019 年的 1% 飙升至 2026 年的近 70%。公司通过 Byte by Yum 平台统一了 60 年历史品牌的碎片化数据资产，建立通用数据模型，在 35,000 家餐厅、150 个国家部署。AI 战略覆盖三个维度：创新速度与企业生产力、客户生命周期 AI 嵌入、餐厅运营简化。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 ### 数字化转型规模
 
@@ -84,7 +31,7 @@ Dausch 强调："Digital has become an enormous part of our business. And so, of
 
 Dausch 的原话："The starting point was a very fragmented data estate. It was for us, not only getting all of the data in one place, but also that all of the data means the same things across all of our systems and all of our markets."
 
-这揭示了大型传统企业 AI 落地的关键前置条件——在 60 年历史的品牌上建立统一数据模型耗时巨大，但没有这个基础，AI 系统无法获得一致的训练信号。这与 [Netflix ML 平台建设](../ch11/289-democratizing-machine-learning-at-netflix-building-the-mode.html) 中讨论的数据治理挑战高度相似。
+这揭示了大型传统企业 AI 落地的关键前置条件——在 60 年历史的品牌上建立统一数据模型耗时巨大，但没有这个基础，AI 系统无法获得一致的训练信号。这与 [Netflix ML 平台建设](../ch11/286-democratizing-machine-learning-at-netflix-building-the-mode.html) 中讨论的数据治理挑战高度相似。
 
 ### AI 战略三维度框架
 
@@ -131,7 +78,7 @@ Dausch 强调衡量标准包括三个层次：
 
 Dausch 的关键提醒："AI, at the end of the day, in my view, is still just a tool, as is the rest of technology. We focus on delivering great food at great value with great service to our customers. That's the business that we're in."
 
-这与 [Platformer AI 就业影响讨论](../ch05/094-ai.html) 中 Box CEO 的观点形成呼应——技术是手段，业务价值才是目的。
+这与 [Platformer AI 就业影响讨论](../ch05/095-ai.html) 中 Box CEO 的观点形成呼应——技术是手段，业务价值才是目的。
 
 ## 实践启示
 
@@ -143,8 +90,8 @@ Dausch 的关键提醒："AI, at the end of the day, in my view, is still just a
 
 ## 相关实体
 
-- [Democratizing Machine Learning At Netflix Building The Model](../ch11/289-democratizing-machine-learning-at-netflix-building-the-mode.html)
-- [Platformer Ai Job Loss Levie](../ch05/094-ai.html)
+- [Democratizing Machine Learning At Netflix Building The Model](../ch11/286-democratizing-machine-learning-at-netflix-building-the-mode.html)
+- [Platformer Ai Job Loss Levie](../ch05/095-ai.html)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/146-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
 
 ---

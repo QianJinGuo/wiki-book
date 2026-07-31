@@ -1,6 +1,6 @@
 ---
 title: Apple Silicon costs more than OpenRouter
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://www.williamangel.net/blog/2026/05/17/offline-llm-energy-use.html
 tags: [apple]

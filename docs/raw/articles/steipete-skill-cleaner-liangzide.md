@@ -3,7 +3,7 @@ title: "龙虾之父教你省钱：开源Skill给你的Skill减肥"
 source_url: "https://mp.weixin.qq.com/s/l-6ub0r8g0ppKXSv-VD4QQ"
 author: "量子位"
 created: 2026-05-26
-type: article
+type: raw-article
 tags: [skill, agent, openclaw, steipete, token-optimization, skill-cleaner]
 sha256: ""
 ---

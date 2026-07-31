@@ -2,7 +2,7 @@
 source: rss
 source_url: https://www.interconnects.ai/p/my-bets-on-open-models-mid-2026
 ingested: 2026-06-07
-type: article
+type: raw-article
 sha256: e935f17618ac10ade741d54f0e7b3da409a52ceb4ac685da04ac4734424ce2c5
 feed_name: Interconnects
 source_published: 2026-04-15

@@ -1,7 +1,7 @@
 ---
 
 title: "White House cyber official: identity security matters more"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://cyberscoop.com/white-house-federal-identity-security-ai-risks/
 tags: [cyberscoop]

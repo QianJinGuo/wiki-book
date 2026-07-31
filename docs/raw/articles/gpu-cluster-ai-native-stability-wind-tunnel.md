@@ -5,7 +5,7 @@ source_site: "阿里云开发者"
 author: "影烽"
 ingested: "2026-07-08"
 sha256: "ae4355b7013b7eef5ac711cbd5a61980e045863b7f1524e55f6836a773b91be2"
-type: raw
+type: raw-article
 tags:
   - ai-native
   - gpu-cluster

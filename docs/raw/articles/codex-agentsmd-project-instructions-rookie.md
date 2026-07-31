@@ -2,7 +2,7 @@
 title: "codex agentsmd project instructions rookie"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: cfaea318d3ab016e7f8ac5630126935c51f3e33214119ba5a43949340225d055
 ---

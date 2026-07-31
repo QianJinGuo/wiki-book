@@ -2,7 +2,7 @@
 title: "Harness 工程之道：Skill 原理与最佳实践"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 9a105225e12af1ff1e263238fcc49deea6ca1a269157737fbdd0c7bc34b96bcd
 ---

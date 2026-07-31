@@ -3,7 +3,7 @@ title: "Meta’s AI Storage Blueprint at Scale"
 source_url: "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/"
 ingested: 2026-07-02T11:40:01Z
 sha256: placeholder
-type: raw
+type: raw-article
 tags: [newsletter, raw]
 ---
 

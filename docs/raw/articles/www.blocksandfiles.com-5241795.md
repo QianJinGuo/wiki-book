@@ -1,6 +1,6 @@
 ---
 title: Redis agentic AI flowers with Iris
-type: entity
+type: raw-article
 tags: [article]
 created: 2026-05-20
 updated: 2026-05-20

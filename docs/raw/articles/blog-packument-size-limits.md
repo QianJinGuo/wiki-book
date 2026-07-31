@@ -2,7 +2,7 @@
 title: "Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/"
 source_url: "https://vlt.io/blog/packument-size-limits"
 ingested: 2026-06-26
-type: article
+type: raw-article
 created: 2026-06-26
 sha256: 4898ec0f91a6adb2c437c6e20bd2362e8ed9eb6d41491386b87fc89549dba80c
 ---

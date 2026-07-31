@@ -6,20 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-framework.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLM-as-a-Verifier A"))
-    验证精度 vs 评判精度的本质差异
-    评分粒度扩展的数学原理
-    竞赛式轨迹选择的工程价值
-    对 AI 研究者
-    对 Agent 开发者
-    对工程团队
-```
-
 ## 核心要点
 - **验证 vs 评判的区别**：传统 LLM-as-a-Judge 输出离散分数（如 1-8），存在粗粒度评分问题；LLM-as-a-Verifier 通过细粒度评分、重复验证、Criteria 分解提供细粒度反馈 
 - **三大核心机制**：评分粒度扩展（1→20 token）、重复验证（1→16次）、Criteria 分解（Specification/Output/Errors 三维度）
@@ -27,44 +13,6 @@ mindmap
 - **消除平局**：标准 LLM-as-a-Judge 在 Terminal-Bench 上产生 27% 平局；LLM-as-a-Verifier 完全消除平局（0% Tie Rate）
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 ### 验证精度 vs 评判精度的本质差异
 LLM-as-a-Verifier 的核心洞察在于区分了「评判（Judge）」和「验证（Verifier）」的概念内涵。
 **Judge 的局限**：传统 LLM-as-a-Judge 将连续奖励压缩为单一离散分数（1-8），导致 quantization error。当比较两条复杂轨迹时，如果都得 4 分，验证器无法区分它们——这在竞赛评估中造成 27% 的平局率。
@@ -108,7 +56,7 @@ LLM-as-a-Verifier 的核心洞察在于区分了「评判（Judge）」和「验
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/336-llm-as-a-verifier-a-general-purpose-verification-framework.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/1071-llm-as-a-verifier-a-general-purpose-verification.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification](ch01/556-llm-as-a-verifier-a-general-purpose-verification.html)
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Development environments for your cloud agents
-type: article
+type: raw-article
 source: newsletter
 source_url: https://cursor.com/blog/cloud-agent-development-environments
 tags: [article]

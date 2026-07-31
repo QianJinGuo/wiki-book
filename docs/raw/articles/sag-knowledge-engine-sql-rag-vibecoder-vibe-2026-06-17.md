@@ -7,7 +7,7 @@ author: VibeCoder
 ingested: 2026-06-17
 sha256: 391eaf84ed2301db4fd98ad795196b85a767fd76c77f483ddb5b7541067b7d2f
 tags: [wechat, article, sag, sql-rag, sql-retrieval-augmented-generation, vibecoder, vibe-编码, mcp, mcp-server, agent-knowledge, source-code-review, two-path-recall, fast-mode, standard-mode, ablation-study, multi-hop-qa, project-scope-isolation, trace-debug, hyperedge, hypergraph]
-type: raw
+type: raw-article
 ---
 
 # SAG 知识引擎：用 SQL 做 RAG

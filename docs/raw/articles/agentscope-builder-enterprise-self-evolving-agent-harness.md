@@ -12,7 +12,7 @@ date: 2026-05-27
 created: 2026-05-28
 updated: 2026-05-28
 tags: [agent, harness, agentscope, java, enterprise, multi-tenant, workspace, builder, composite-filesystem]
-type: article
+type: raw-article
 provenance_state: synthesized
 sha256: 2d1481a8a5107ca10540d5b8ad2c37155a9346c018263fb29d53674d342c57af
 ---

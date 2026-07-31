@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/uv0Krg46FOJxLRp-qTk-8w
 author: 丛霄/阿里云云原生
 date: 2026-05-11
 title: 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
-type: raw
+type: raw-article
 tags: [agent, aliyun, agentrun, serverless, tutorial]
 review_value: 8
 review_confidence: 7

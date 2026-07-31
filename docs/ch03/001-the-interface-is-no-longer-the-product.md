@@ -52,53 +52,17 @@ The old tools will not vanish quickly. They have distribution, habits, enterpris
 
 The more interesting future is not only agents operating apps. It is applications designed so agents, humans, and existing tools can all work with the same underlying objects. Not because every app disappears but because the source of truth may move.
 
-
 ## 相关实体
 - [From System Of Record To System Of Intelligence](../ch01/252-from-system-of-record-to-system-of-intelligence.html)
 - [Notebook Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)
-- [Claude Code Founder Harness 100 Lines](ch03/078-claude-code.html)
+- [Claude Code Founder Harness 100 Lines](ch03/077-claude-code.html)
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/184-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
-- [Thehackernews Fake Openai Privacy Filter](../ch01/390-openai.html)
+- [Thehackernews Fake Openai Privacy Filter](../ch01/391-openai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interface-commoditization-ai-era.md)
 
 - [Playerzero Request Demo](https://github.com/QianJinGuo/wiki/blob/main/entities/playerzero-request-demo.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 **1. 软件类别的"界面史"真相：一切类别都是历史偶然**
 

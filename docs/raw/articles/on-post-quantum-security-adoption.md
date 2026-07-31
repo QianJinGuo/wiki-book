@@ -3,7 +3,7 @@ title: "On Post-Quantum Security Adoption"
 source_url: "https://brandonrozek.com/blog/post-quantum-security-adoption/"
 ingested: 2026-06-18
 sha256: ""
-type: article
+type: raw-article
 tags: [security, cryptography, post-quantum, ai]
 created: 2026-06-18
 ---

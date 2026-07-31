@@ -6,7 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
-
 ## 核心要点
 - Affirm 在 2026 年投资者论坛上披露了覆盖支付网络、消费者产品、国际市场和 $100B 年 GMV 中期目标的完整增长战略 
 - CEO Max Levchin 强调 Affirm 已构建"封闭循环、信息保留"的网络——作为发卡行、收单方、信用信息传递方和风险管理方同时运作，展现出"非常真实的网络效应" 
@@ -16,37 +15,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 **"封闭循环网络"作为竞争护城河的结构性优势**
 Affirm 的核心战略定位并非单纯的 BNPL（先买后付）贷款商，而是一个多角色整合的支付网络。Max Levchin 在投资者论坛上明确指出：Affirm 同时扮演发卡行（issuer）、收单方（acquirer）、信用信息传递方（credit information transmitter）和风险管理方（risk manager）四个角色，构成一个封闭循环的信息保留网络 。这一架构的战略意义在于：大多数竞争对手（如 Klarna、Afterpay）仅扮演贷款撮合方角色，并不拥有网络基础设施，而 Affirm 通过自持支付牌照实现了对交易数据全链路的掌控。
 数据资产的规模进一步强化了这一护城河。Libor 在演讲中透露，Affirm 在 14 年间积累了 $1500 亿交易量和 23 亿笔还款记录，这一数据规模为模型训练提供了显著的先发优势 。值得注意的是，Affirm 正在将 transformer-based AI 模型引入承销流程，实验数据显示新模型优于现有模型，这暗示着 AI 驱动的承销精度将在未来 1-2 年内进入一个新的性能拐点 。

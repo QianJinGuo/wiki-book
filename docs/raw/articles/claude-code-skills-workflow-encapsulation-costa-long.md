@@ -1,6 +1,6 @@
 ---
 title: "Skills：让 Claude 记住「怎么做」，告别重复教学"
-type: raw
+type: raw-article
 tags: [claude, skill, claude-code, workflow, prompt-engineering]
 source_url: "https://mp.weixin.qq.com/s/pHMLeSJkm1wZrozM0HpuTQ"
 ingested: 2026-05-28

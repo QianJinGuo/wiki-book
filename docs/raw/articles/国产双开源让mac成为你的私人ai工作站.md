@@ -2,7 +2,7 @@
 title: "国产双开源让mac成为你的私人ai工作站"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 95689c497afacf58b0b88e63740b11f1d76394acb0a02d6691a3a4b9842f9806
 ---

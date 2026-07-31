@@ -5,7 +5,7 @@ author: WalleZhang
 source: WalleZhang
 date: 2026-03-21
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [agent, evaluation, testing, benchmark, agentic-ai, golang, yaml]
 review_value: 7.5
 review_confidence: 8.5

@@ -2,7 +2,7 @@
 title: "Claude Code官宣下一版大升级！你在聊天，后台把活干完了"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 06fe6d2ad5202ca8b448fa4e3d1041ee36aac0d57f45bfb299e04bdbc38f2d27
 ---

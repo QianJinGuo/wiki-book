@@ -8,56 +8,7 @@
 
 > **vxc score**: 72 | AWS 官方 GPT-5.6 部署指南，涵盖 Sol/Terra/Luna 三款模型的选型、推理配置、Prompt Caching、Codex 集成、配额管理
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI GPT-56 SolTerraLuna on"))
-    三模型分层策略 从一个模型干所有事到按需选择
-    Prompt Caching 的工程经济学
-    Bedrock 战略层分析 AWS 的模型中间层策略
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 本文是 AWS 官方博客，于 2026 年 7 月发布，详细介绍 OpenAI GPT-5.6 家族（Sol/Terra/Luna）在 Amazon Bedrock 上的部署与使用指南。GPT-5.6 系列模型通过 Bedrock 的 `bedrock-mantle` 端点统一接入，支持文本和图像输入、文本输出、272K token 上下文窗口，以及从 `none` 到 `max` 六个等级的推理努力度调节。博客覆盖模型选型建议、Responses API 调用方法、Prompt Caching 降低成本的策略（显式和隐式两种模式）、Codex 编码 Agent 的集成方式，以及配额管理与扩缩容规划。所有推理运行在用户的 AWS 账户内，受 IAM 策略和 VPC 控制，并记录到 CloudTrail。
 
@@ -129,7 +80,7 @@ Amazon Bedrock 的 bedrock-mantle 端点是 AWS 在多模型时代战略布局�
 
 ## 相关实体
 
-- [GPT-5.6 定价层次与 Codex 合并](../ch01/517-codex.html)
+- [GPT-5.6 定价层次与 Codex 合并](../ch01/520-codex.html)
 - [OpenAI Models + Codex on Bedrock GA](ch11/295-amazon-bedrock.html)
 - **Amazon Bedrock Guardrails**
 - **Codex CLI 编码 Agent**

@@ -10,19 +10,6 @@
 
 TabFM is a foundation model for tabular data classification and regression, introduced by Google Research. By framing tabular prediction as an in-context learning (ICL) problem, TabFM eliminates the need for manual model training, hyperparameter tuning, and complex feature engineering — enabling zero-shot predictions on previously unseen tables in a single forward pass.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing TabFM A zero-shot"))
-    核心摘要
-    一 范式转变 从训练到上下文理解
-    二 核心技术 交替行-列注意力机制
-    三 与 TimesFM 的家族关系 从时序到表格的跨域迁移
-    四 对传统 ML 工作流的影响与局限
-```
-
 ## 核心摘要
 
 - **发布方**: Google Research
@@ -33,43 +20,6 @@ mindmap
 - **目标替代**: XGBoost、AdaBoost、Random Forest 等传统树模型的手动调优流程
 
 ## 深度分析
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 ### 一、范式转变：从"训练"到"上下文理解"
 

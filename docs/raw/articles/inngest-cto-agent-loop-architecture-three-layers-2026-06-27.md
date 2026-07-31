@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/0vELFAO3AM3Dw2YuZzSm8A
 author: Inngest CTO
 published: 2026-06-27
 ingested: 2026-06-27
-type: raw
+type: raw-article
 tags: [agent-loop, durable-execution, orchestration, skill, checkpoint, self-building-agent, inngest]
 review_value: 8
 review_confidence: 9

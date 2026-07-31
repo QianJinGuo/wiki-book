@@ -3,7 +3,7 @@ title: "Loop Engineering 综合实战（三层结构 + 五要素 + 解剖 6 组�
 source_url: "https://mp.weixin.qq.com/s/g41IfUrp1SP8fhosq9t1lA"
 ingested: 2026-06-18
 sha256: e9b36d03f4456a2aa1d3f73f5f1008c07743a46da360c282a52105636f735256
-type: raw
+type: raw-article
 tags: [loop-engineering, three-layer-structure, five-elements-model, six-anatomy-components, four-loop-patterns, token-cost-formula, claude-code-vs-codex-vs-opencode, ralph-loop, organization-readiness-table, comprehension-debt, cognitive-surrender, verification-gap, addy-osmani, boris-cherny, peter-steinberger, thrashing, retry-loop, plan-execute-verify, explore-narrow, human-in-the-loop, four-rounds-abstract-leaps, prompt-to-context-to-harness-to-loop]
 ---
 

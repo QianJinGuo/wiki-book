@@ -6,60 +6,11 @@
 
 # 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("企业级 Skill 8 块最小骨架 8 条 checklist 设计规范"))
-    第一原则
-    块最小骨架总览
-    When to use
-    Do not use when
-    Inputs
-    Steps
-    Verification
-    Failure handling
-```
-
 ## 概述
 
 winty（前端Q）2026-06-02 关于**企业级 Skill 设计规范**的完整论述（Hermes Agent 系列第 4 篇）。核心命题：**Skill 不是文档，是程序**——Agent 不会脑补，任何含糊都会导致执行偏离。系统提出 8 块最小骨架（frontmatter 元数据 / When to use / Do not use when / Inputs / Steps / Verification / Failure handling / Pitfalls & Examples）+ 8 条 checklist 评判标准 + 完整可复用 frontend-release-check 模板。
 
 ## 核心命题
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 > **Skill 不是文档，是程序。**
 
@@ -487,14 +438,14 @@ Pitfalls 不是设计时想象出来的警告，而是实际上线后沉淀下�
 ---
 
 ## 相关实体
-- [Skill Hub Organization Asset Winty](../ch04/271-skill.html)
+- [Skill Hub Organization Asset Winty](../ch04/273-skill.html)
 - [Openspec Spec Driven Development Trae Solo](../ch05/050-openspec.html)
-- [Skills Refiner Design Quality Evaluation Framework](../ch03/072-skills.html)
-- [Perplexity Internal Skill Design Guide](../ch04/271-skill.html)
+- [Skills Refiner Design Quality Evaluation Framework](../ch03/071-skills.html)
+- [Perplexity Internal Skill Design Guide](../ch04/273-skill.html)
 - [Hermes Skill System Winty](ch07/017-hermes-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-design-spec-8-block-checklist-winty.md)
-- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](../ch04/271-skill.html)
+- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](../ch04/273-skill.html)
 
 ---
 

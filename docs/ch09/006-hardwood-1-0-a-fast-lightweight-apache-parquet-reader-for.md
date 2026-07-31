@@ -8,16 +8,6 @@
 
 > Source: [Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM](https://www.morling.dev/blog/hardwood-1-0-fast-lightweight-apache-parquet-reader-for-the-jvm) | Score: v*c=72
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hardwood 10 A Fast Lightweight"))
-    Why
-    Whats in Hardwood
-```
-
 ## Overview
 
 Published Time: 2026-06-25T07:30:00+02:00
@@ -28,42 +18,6 @@ Hardwood is a new Parquet library for the JVM, written from scratch to do one th
 Today, **Hardwood reaches 1.0**. After five preview releases since the start of the year ([Alpha1](https://www.morling.dev/blog/hardwood-new-parser-for-apache-parquet/), [Beta1](https://www.morling.dev/blog/hardwood-reaches-beta-s3-predicate-push-down-cli/), [Beta2](https://www.morling.dev/blog/variant-support-interactive-parquet-file-tui-hardwood-1-0-0-beta2-is-out/), [CR1](https://www.morling.dev/blog/improved-column-reader-api-geospatial-support-hardwood-1-0-0-cr1-available/), [CR2](https://hardwood.dev/1.0.0.Final/release-notes/#100cr2-2026-06-7)), we now consider Hardwood ready for production, and its public API will evolve with a strong focus on backwards compatibility going forward. Hardwood targets Java 21 or newer, is open-source (Apache License 2.0), and is available from [Maven Central](https://central.sonatype.com/artifact/dev.hardwood/hardwood-core).
 
 ## Why Hardwood[](http://www.morling.dev/blog/hardwood-1-0-fast-lightweight-apache-parquet-reader-for-the-jvm#_why_hardwood)
-
-```mermaid
-graph TB
-    subgraph "项目生命周期"
-        INIT[项目创建<br/>License选择]
-        FORK[Fork/Clone<br/>本地开发]
-        CONTR[贡献代码<br/>PR流程]
-    end
-    subgraph "质量门禁"
-        CI[CI自动化<br/>测试+Lint]
-        REVIEW[Code Review<br/>同行评审]
-        MERGE[合并决策<br/>维护者审批]
-    end
-    CONTR --> CI --> REVIEW --> MERGE
-    subgraph "发布"
-        VERSION[版本管理<br/>SemVer]
-        REL[发布<br/>Changelog]
-        DIST[分发<br/>PyPI/npm]
-    end
-    MERGE --> VERSION --> REL --> DIST
-    subgraph "社区"
-        DISCUSS[讨论区<br/>Issue/Discord]
-        GOV[治理模型<br/>BDFL/委员会]
-    end
-    DIST --> DISCUSS --> GOV
-    GOV -->|"方向反馈"| INIT
-    classDef life fill:#dbeafe,stroke:#2563eb
-    classDef quality fill:#ede9fe,stroke:#7c3aed
-    classDef release fill:#fef3c7,stroke:#d97706
-    classDef community fill:#d1fae5,stroke:#059669
-    class INIT,FORK,CONTR life
-    class CI,REVIEW,MERGE quality
-    class VERSION,REL,DIST release
-    class DISCUSS,GOV community
-```
-
 
 Working with the [Apache Parquet](https://parquet.apache.org/) columnar file format on the JVM has traditionally come with a fairly heavyweight stack: a large number of dependencies on the classpath and a single-threaded reader at the core. Hardwood explores a different set of tradeoffs. The full rationale is in the [original project announcement](https://www.morling.dev/blog/hardwood-new-parser-for-apache-parquet/); in a nutshell, the goals are:
 

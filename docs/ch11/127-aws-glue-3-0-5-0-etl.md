@@ -32,61 +32,7 @@
 
 * * *
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Glue 30 到 50 版本升级实践 中国区大规模"))
-    一 引言
-    二 升级范围评估
-    三 中国区环境适配
-      Python 依赖离线化
-      JAR 依赖隔离
-      VPC 端点验证
-    四 分批部署
-    五 性能对比
-```
-
 ## **一、引言**
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 某大型零售企业在 AWS 中国区运行着一套基于 [AWS Glue](<https://aws.amazon.com/cn/glue/>) 构建的数据处理平台，承载了会员分析、渠道销售、门店运营及商品绩效等多个业务域的 ETL 工作负载。该平台日常运行约70个 Glue 作业，月度 DPU 消耗近4000 DPU-Hours，涵盖从轻量级数据同步到重型多表关联聚合等多种处理场景。
 

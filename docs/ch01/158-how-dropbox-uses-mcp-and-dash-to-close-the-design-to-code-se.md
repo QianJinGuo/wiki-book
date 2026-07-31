@@ -8,7 +8,6 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dropbox-mcp-dash-design-code-security.md)
 
-
 ## 核心要点
 
 - **来源**: https://dropbox.tech/security/dropbox-mcp-dash-design-code-security
@@ -16,42 +15,6 @@
 - **评估理由**: Solid technical case study from Dropbox addressing a real problem (design-to-code security gap) with concrete data (12% link-back rate, 54% delay >1 month). Provides actionable insights on using MCP and Dash to bridge threat models and code review. However, the article appears truncated mid-sentence
 
 ## 内容提炼
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 Markdown Content:
 Every security team knows the drill: a new feature goes through design review, a threat model is produced, mitigations are agreed upon, and then development begins. In many cases, by the time implementation reaches code review, the process where engineers review code changes before they go live, the original security requirements are no longer visible in the workflow. A threat model, which outlines potential security risks and the protections a feature should include, often lives in a separate document or system from the code itself.
@@ -75,7 +38,7 @@ That led us to build a system that combines three technologies: Model Context Pr
 - 与现有实体的差异化角度：本文来自 dropbox.tech 视角
 - 引用源：[Dropbox Mcp Dash Design Code Security](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dropbox-mcp-dash-design-code-security.md)
 ## 相关实体
-- [what is urban density design? a clear guide to how cities ge](ch01/1268-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [what is urban density design? a clear guide to how cities ge](ch01/1273-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [how to create websites with great ux designs: principles and](ch01/136-how-to-create-websites-with-great-ux-designs-principles-and.html)
 - [how we made window join parallel and vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 

@@ -4,60 +4,7 @@
 
 > 📊 Level ⭐⭐ | 21.5KB | `entities/hermes-agent-v014-core-architecture-shugex.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent v0140 核心架构与快速上手"))
-    System Prompt 三层架构
-    Agent Loop 思考-行动循环
-    工具自动发现机制
-    安装方式
-    源码目录结构
-    CLI 核心命令
-    AIAgent 核心接口
-    关键参数
-```
-
 ## 核心定位
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 Hermes Agent v0.14.0：一个**自进化 AI Agent 框架**。内置学习闭环，能从任务经验中提炼可复用的 skill，并在后续使用中自我修正。
 
 关键数字：30+ LLM 提供商、40+ 内置工具、7 种终端后端。
@@ -397,7 +344,7 @@ You optimize for truth, clarity, and usefulness over politeness theater.
 
 ## 相关主题
 - [Hermes Agent Tool System Architecture](../ch03/096-hermes-agent.html) — Hermes Agent 工具系统架构专篇（术哥，2026-05-23）— 工具注册/执行/生命周期管理
-- [Hermes Agent Goal And Kanban](../ch04/381-hermes-agent-goal.html) — Hermes Agent goal 与 Kanban 集成
+- [Hermes Agent Goal And Kanban](../ch04/385-hermes-agent-goal.html) — Hermes Agent goal 与 Kanban 集成
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes Agent 自进化机制
 
 ---

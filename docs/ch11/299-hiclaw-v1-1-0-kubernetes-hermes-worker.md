@@ -40,46 +40,7 @@ Manager 镜像不再打包 Higress、Tuwunel、MinIO 和 Element Web。基础设
 ####  省时迁移
 从 v1.0.9 升级时，会自动将  workers-registry.json  数据迁移为 CRD 资源。Worker 的运行时、模型、技能、MCP Server 和团队成员关系全部
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 HiClaw v1.1.0 是该项目从"单容器玩具"向"企业级 Cloud Native 产品"演进的关键里程碑。透过功能列表，可以识别出三个相互关联的架构决策：
 **CRD 化是 Kubernetes 原生的核心**：将 Worker/Team/Manager/Human 全部抽象为 CRD（Custom Resource Definition），配合内嵌 kube-apiserver + kine，使得 HiClaw 在无需真实 Kubernetes 集群的情况下（Embedded 模式）也能模拟完整的控制平面体验。这意味着开发测试阶段的体验与生产部署高度一致，降低了"在我机器上能跑"和"在集群上能跑"之间的摩擦。同时，在真实集群中运行时，运维人员可以用熟悉的 `kubectl` 管理所有资源，与现有 GitOps 流程无缝衔接。
 **Hermes Worker 的定位跃升**：Hermes Worker 的引入不只是增加了"又一个运行时"，而是代表了 HiClaw 对 Agent 能力的重新分类。原有的 agent（Node.js）和 QwenPaw（Python）运行时处理的是"对话+工具调用"型任务，而 Hermes 是"自主编程 Agent"，具备独立规划→执行→迭代的闭环能力。这两者并非替代关系，而是互补关系——在团队项目中，Hermes 负责代码生成和修改，agent 负责对话式交互，QwenPaw 负责特定领域任务，多运行时协作代表了 Multi-Agent 系统的一种实践路径。
@@ -92,11 +53,11 @@ HiClaw v1.1.0 是该项目从"单容器玩具"向"企业级 Cloud Native 产品"
 4. **Credential Provider Sidecar 是多租户安全的关键**：在共享集群环境中，per-worker `accessEntries` 限定对象存储路径 + `hiclaw-credential-provider` Sidecar 负责签发限时 STS Token，这套组合是防止租户间数据串访的技术保障。部署多租户实例时，必须正确配置 Sidecar 而非将存储凭据直接放入 Worker 环境变量。
 5. **升级前备份 workers-registry.json**：虽然 v1.1.0 提供了从 `workers-registry.json` 到 CRD 的自动迁移，但建议在执行升级前对原文件进行备份，以防迁移过程中出现意外中断导致数据丢失。
 ## 相关实体
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/381-hermes-agent-goal.html)
-- [Hermes 9 Module Architecture Winty](../ch01/742-9.html)
-- [Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移](../ch05/094-ai.html)
-- [Pi Agent Framework](../ch04/348-pi-agent.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1248-0.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/385-hermes-agent-goal.html)
+- [Hermes 9 Module Architecture Winty](../ch01/755-9.html)
+- [Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移](../ch05/095-ai.html)
+- [Pi Agent Framework](../ch04/350-pi-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
 

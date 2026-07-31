@@ -2,28 +2,11 @@
 
 ## Ch04.727 RocketMQ-A2A：会话级可重放事件流驱动的多智能体可靠协作
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/rocketmq-a2a-multi-agent-reliable-communication-fse.md`
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/rocketmq-a2a-multi-agent-reliable-communication-fse.md`
 
 # RocketMQ-A2A：会话级可重放事件流驱动的多智能体可靠协作
 
 阿里云消息团队发表的 Apache RocketMQ 创新论文《RocketMQ-A2A: Reliable Session-Level Replayable Event Streams for Large-Scale Multi-Agent Collaboration》入选 FSE 2026 Industry Papers Track（CCF-A 类软件工程顶级会议）。论文提出以"会话级可重放事件流"为核心的 A2A 交互范式，将消息队列作为多智能体通信基础设施。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("RocketMQ-A2A 会话级可重放事件流驱动的多智能体可靠协作"))
-    核心洞察 生产 MAS 的瓶颈不在模型层
-    LiteTopic 面向海量会话的轻量队列模型
-    RocketMQ-A2A 异步交互范式
-    性能数据
-    生产落地
-      百炼 阿里云大模型服务平台
-      Qoder Cloud Agents
-    开源与论文
-    与业界关系
-```
 
 ## 核心洞察：生产 MAS 的瓶颈不在模型层
 
@@ -36,38 +19,6 @@ mindmap
 这些不是 Prompt 或 Agent 角色能解决的问题——通信与状态语义需要被当作一等公民治理。
 
 ## LiteTopic：面向海量会话的轻量队列模型
-
-```mermaid
-graph TB
-    subgraph "编排层"
-        COORD[协调器<br/>Orchestrator]
-        QUEUE[消息队列]
-    end
-    subgraph "Agent 团队"
-        W1["Worker A<br/>专项能力1"]
-        W2["Worker B<br/>专项能力2"]
-        W3["Worker C<br/>专项能力3"]
-    end
-    COORD --> QUEUE
-    QUEUE --> W1 & W2 & W3
-    W1 & W2 & W3 -->|"结果"| QUEUE
-    QUEUE -->|"汇总"| COORD
-    subgraph "共享层"
-        SHARED_MEM[共享记忆]
-        TOOL_BUS[工具总线]
-    end
-    W1 & W2 & W3 --> SHARED_MEM
-    W1 & W2 & W3 --> TOOL_BUS
-    IN[任务输入] --> COORD
-    COORD --> OUT[结果输出]
-    classDef coord fill:#dbeafe,stroke:#2563eb
-    classDef worker fill:#ede9fe,stroke:#7c3aed
-    classDef shared fill:#fef3c7,stroke:#d97706
-    class COORD,QUEUE coord
-    class W1,W2,W3 worker
-    class SHARED_MEM,TOOL_BUS shared
-```
-
 
 LiteTopic 是基于 RocketMQ 设计的轻量队列模型，四个关键特性：
 - **动态创建与销毁**：无需预配置，TTL 到期自动回收
@@ -114,6 +65,11 @@ Supervisor 和 Worker 各自拥有独立状态机，通过 MQ 消息驱动转换
 ## 与业界关系
 
 本工作将消息队列从传统业务消息中间件升级为 AI Native MQ，与现有 Agent 框架（LangGraph、CrewAI 等）互补——框架关注 Agent 逻辑编排，RocketMQ-A2A 关注通信层可靠性。与 阿里云云原生 此前发表的 RocketMQ for AI（Entry #56）一脉相承，本论文提供了系统化的形式化定义和 FSE 级别学术验证。
+
+---
+**相关条目**
+- [Agent 评测精细化](../ch03/035-agent.html)
+- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocketmq-a2a-session-level-replayable-event-streams-fse-2026.md)
 
 ---
 

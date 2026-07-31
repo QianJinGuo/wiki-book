@@ -2,7 +2,7 @@
 title: "Debugging production agents with Amazon Bedrock AgentCore Observability"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 7f3d546cc1f43db20597f9ec903aa2fe157c0f221459f2d1ded09f3b1d2d797b
 ---

@@ -2,7 +2,7 @@
 title: "PDF Processing"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 22380bf7098be838ff7b28e691f15ace0aa1c80802251ca01676a1de3822e734
 ---

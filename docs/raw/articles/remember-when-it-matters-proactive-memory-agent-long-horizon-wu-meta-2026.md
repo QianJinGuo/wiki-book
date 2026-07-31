@@ -14,7 +14,7 @@ authors:
   - Zhuokai Zhao
 affiliation: Meta AI
 tags: [paper, arxiv, memory, agent, proactive-memory, long-horizon]
-type: raw
+type: raw-article
 sha256: acc2af632b198f3238df41ce73a77ebf63882549a77c670645a73e21c820034a
 ---
 

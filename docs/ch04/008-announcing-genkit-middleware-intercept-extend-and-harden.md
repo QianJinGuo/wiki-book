@@ -2,54 +2,9 @@
 
 ## Ch04.008 Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 > 📊 Level ⭐ | 8.6KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`
 
 > -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Announcing Genkit Middleware"))
-    为什么 Agentic 应用需要中间件
-    三层 Hook 架构的设计意图
-    Pre-built 中间件的战略布局
-    自定义中间件的合约设计
-    给框架开发者
-    给企业 AI 应用开发者
-    给 DevOps ML Platform 团队
-```
-
 ## 核心要点
 - Genkit 是用于构建全栈 AI 应用和 Agentic 应用的开源框架，支持 TypeScript、Go、Dart 和 Python
 - v=8, c=8
@@ -110,9 +65,9 @@ Genkit 明确指出中间件从左到右组合，第一个列出的在最外层�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/182-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/182-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Exaforce | Agentic SOC Platform and MDR](ch04/237-agentic.html)
+- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/184-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/184-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Exaforce | Agentic SOC Platform and MDR](ch04/648-agentic.html)
 
 ---
 

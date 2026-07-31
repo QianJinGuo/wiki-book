@@ -5,7 +5,7 @@ author: TecDeTec
 source: AI咖啡馆
 date: 2026-04-02
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [skills, skill-design, evaluation, agent, skill-refiner, context-engineering, skill-creator]
 review_value: 7.5
 review_confidence: 8

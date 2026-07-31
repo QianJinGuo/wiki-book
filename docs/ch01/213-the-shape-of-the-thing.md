@@ -10,22 +10,6 @@
 
 > 来源：One Useful Thing (Ethan Mollick)，2026-03-12。Mollick 在 2023 年写过一篇《The Shape of the Shadow of the Thing》推测 AI 的形态。三年后这篇《The Shape of the Thing》直接给出他对当下形势的判断：**「我们能比以前更清楚地看到那个 Thing 了，也能看到它带来的一些后果」**。文章核心论点：AI 进入了 agentic 阶段 + 指数级能力提升 + 工作形态被激进重写，这三件事正在组合成一种「rolling disruption」的环境，每一周都可能发生一夜之间的格局变化。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The Shape of the Thing"))
-    从 co-intelligence 到 managing AIs
-    指数曲线 Otter Test 与能力轨迹
-    四张指数曲线的多样性
-    Software Factory 激进组织实验
-    「Shape of the Thing」的三个轴
-    Software Factory 的工程边界
-    Rolling disruption 的工程含义
-    Recursive Self-Improvement 的真实含义
-```
-
 ## 摘要
 
 2023 年 10 月 Mollick 写过《The Shape of the Shadow of the Thing》推测 AI 接下来几年会变成什么样。三年后的这篇更新版判断 — 我们现在能比以前更清楚地看到那个 Thing 了。三件事让这次判断变得可能：能力曲线的指数形态、agentic AI 的成熟、组织形态开始被激进重写。
@@ -33,44 +17,6 @@ mindmap
 文章里 Mollick 把他对当下形势的判断总结成一句话：**「这是管理 AI 的时代，而不是和 AI 一起工作的时代」**。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 ### 1. 从 co-intelligence 到 managing AIs
 
@@ -255,16 +201,16 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Opus 48 The System Card B8460F](ch01/976-claude.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/235-openclaw.html)
+- [Claude Opus 48 The System Card B8460F](ch01/1022-claude.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/237-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 - [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html)
-- [Gpt 5 It Just Does Stuff](ch01/236-gpt-5-it-just-does-stuff.html)
+- [Gpt 5 It Just Does Stuff](ch01/235-gpt-5-it-just-does-stuff.html)
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/237-claude-md.html)
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - [Agentic Harness Engineering Ahe](../ch05/120-harness-engineering.html)

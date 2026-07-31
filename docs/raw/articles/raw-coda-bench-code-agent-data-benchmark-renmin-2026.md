@@ -2,7 +2,7 @@
 title: "raw coda bench code agent data benchmark renmin 2026"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 96caf9fc1d61866e7a49768b9596631b154021a87c5360616f229e05b854ed7e
 ---

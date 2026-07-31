@@ -5,7 +5,7 @@ author: Annelies Gamble
 published: 2026-05-12
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [yann-lecun, jepa, world-model, ami-labs, llm-critique, embodied-ai, agent]
 sha256: aca0987f2453e84673b9c2cb3217cd16f8ab4e31b3edff9ca713c149d247edc6
 review_value: 8

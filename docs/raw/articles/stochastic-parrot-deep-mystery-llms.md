@@ -7,7 +7,7 @@ ingested: 2026-05-09
 sha256: 0f4ff1638c4c51199de429b34345fc0fc62045a1c0355e3fd01eee7b4babc174
 feed_name: Stochastic Parrot
 source_published: 2025-09-25
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

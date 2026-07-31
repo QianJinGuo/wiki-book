@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 4.5KB | `entities/microsoft-for-startups-microsoft.md`
 
-
 ## 核心要点
 - 提供高达 $150,000 的 Azure 创业积分，用于构建、测试和扩展 AI 就绪的云基础设施 
 - 覆盖 Azure AI 服务、OpenAI 服务、Azure Machine Learning 等 AI 和数据服务 
@@ -13,48 +12,6 @@
 - 支持与现有云提供商并行使用，无需一次性迁移 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 Microsoft for Startups 是微软面向早期初创企业打造的综合性支持计划，核心差异化在于将云基础设施资源与技术赋能、市场通路深度整合。与传统云厂商仅提供积分补贴不同，微软的创业支持体系呈现出三层递进结构：
 **第一层：快速启动（Build Fast）**
 通过 Startup Credits 覆盖 Azure 核心开发资源，包括虚拟机、存储、网络，以及 GitHub 和 Azure DevOps 的开发者工作流。对于 AI 方向的初创，积分还可用于 Azure AI 服务、Azure OpenAI Service 和 Azure Machine Learning 。这意味着初创可以在极低成本下完成从创意到 MVP 的完整闭环。
@@ -76,8 +33,8 @@ Microsoft for Startups 是微软面向早期初创企业打造的综合性支持
 
 ## 关联阅读
 ## 相关实体
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [Microsoft For Startups Microsoft V2](https://github.com/QianJinGuo/wiki/blob/main/entities/Microsoft-for-Startups-Microsoft-v2.md)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/037-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [Microsoft For Startups Microsoft V2](ch01/517-microsoft-for-startups-microsoft.html)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 

@@ -1,6 +1,6 @@
 ---
 title: AI phishing attacks are on the rise — Are you prepared? | Bitwarden
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://bitwarden.com/blog/ai-phishing-attacks-are-on-the-rise/
 tags: [bitwarden, security]

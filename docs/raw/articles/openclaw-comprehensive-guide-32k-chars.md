@@ -8,7 +8,7 @@ review_confidence: 7
 review_recommendation: strong
 review_stars: 3
 tags: [openclaw, tutorial, best-practices, agent]
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 sha256: 9ff9d4329c5d21fe5951ce7c3a1a958fb8c192b1c759a5226c438b65293ba5ae

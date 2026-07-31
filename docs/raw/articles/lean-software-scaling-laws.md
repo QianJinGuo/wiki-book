@@ -2,7 +2,7 @@
 title: "Lean Software Scaling Laws"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 9fcdc6b50e1f216793ad896abbd02b00aa2e75e9fb5851aba70ad2e874f08ca9
 ---

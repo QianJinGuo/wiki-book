@@ -10,62 +10,11 @@
 > **作者**: Rohin Shah, Four Flynn (DeepMind)
 > **发布日期**: 2026-06-18
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Securing the future of AI agents"))
-    AI Control 框架的三层防御
-    威胁建模方法论
-    双维度安全等级体系
-    大规模轨迹分析实践
-    假设 misalignment 的安全哲学
-    Detection-Response 矩阵的工程意义
-    百万轨迹数据的启示
-```
-
 ## 摘要
 
 DeepMind 发布了 AI Control Roadmap，提出一套"纵深防御"(defense-in-depth) 框架来保障内部 AI Agent 系统安全。该框架超越传统 model alignment，引入系统级安全层——即使 alignment 不完美，也能提供安全保障。核心理念类似"双控驾驶"：信任 AI Agent 但保留随时接管的能力。预计到 2030 年，仅美国市场 AI Agent 就将创造 2.9 万亿美元经济价值，安全保障的紧迫性不言而喻。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### 1. AI Control 框架的三层防御
 
@@ -130,7 +79,7 @@ D1-D4 × R1-R3 的矩阵为不同风险等级的部署场景提供了明确的�
 
 ## 相关实体
 
-- [Agentic 渗透测试法律问题](ch04/237-agentic.html) — Agent 安全的法律维度
+- [Agentic 渗透测试法律问题](ch04/648-agentic.html) — Agent 安全的法律维度
 - [GlassWASM 恶意软件](https://github.com/QianJinGuo/wiki/blob/main/entities/glasswasm-webassembly-malware-open-vsx.md) — 供应链安全威胁案例
 - [CVE 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/getting-cve-without-shipping-slop.md) — 安全漏洞发现的实操视角
 - [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架

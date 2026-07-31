@@ -1,7 +1,7 @@
 ---
 title: ICO fines Cl0p victim South Staffs Water over data breach
 sha256: f6c431ed2b31a5db2236bd11e2085f88db66961665a7705a3e5bb7655be5c1b0
-type: source
+type: raw-article
 source: newsletter
 source_url: https://www.computerweekly.com/news/366642957/ICO-fines-Cl0p-victim-South-Staffs-Water-over-data-breach
 url: https://www.computerweekly.com/news/366642957/ICO-fines-Cl0p-victim-South-Staffs-Water-over-data-breach

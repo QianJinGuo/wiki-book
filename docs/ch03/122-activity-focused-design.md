@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/activity-focused-design.md`
 
-
 ## 核心要点
 
 - Activity-Focused Design 以用户**活动**（Activity）为中心设计，而非人口统计或功能列表
@@ -13,44 +12,6 @@
 - 该方法强调理解用户为达成目标而执行的活动，而非简单地按人口属性划分用户
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Activity-Focused Design 的核心价值在于将设计视角从"用户是谁"转向"用户做什么"。传统以人口统计或功能为中心的设计往往忽略用户达成目标的实际过程，而活动导向设计则将**活动**（Activity）作为分析的基本单元，关注人们为实现目标而采取的行动及其方式。
 
@@ -106,8 +67,8 @@ Activity-Focused Design 的核心价值在于将设计视角从"用户是谁"转
 - [Icon Pack Websites Designers Should Bookmark](ch03/131-icon-pack-websites-designers-should-bookmark.html)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
 - [Designing Small Is Harder Than Designing Big Ux Magazine](ch03/097-designing-small-is-harder-than-designing-big-ux-magazine.html)
-- [Deepmind Ai Pointer](../ch05/094-ai.html)
-- [Qoder Skill Ui](ch03/067-qoder-skill-ui-agent.html)
+- [Deepmind Ai Pointer](../ch05/095-ai.html)
+- [Qoder Skill Ui](ch03/066-qoder-skill-ui-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/activity-focused-design.md)
 

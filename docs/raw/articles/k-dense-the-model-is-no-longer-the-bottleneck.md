@@ -3,7 +3,7 @@ title: "K Dense The Model Is No Longer The Bottleneck"
 source_url: "https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck"
 date_ingested: "2026-06-10"
 sha256: "5c619cff6709bc45b8c36a188ab3b2754eae3e96465e71bd663e9d3a4d132f1c"
-type: article
+type: raw-article
 ---
 
 > **Note**: This is a raw source archive. The synthesized wiki page is at [[entities/k-dense-the-model-is-no-longer-the-bottleneck]].

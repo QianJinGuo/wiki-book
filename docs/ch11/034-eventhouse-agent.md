@@ -2,51 +2,7 @@
 
 ## Ch11.034 阿里云 EventHouse 企业级 Agent 上下文构建五维框架
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 > 📊 Level ⭐⭐ | 14.5KB | `entities/alibaba-eventhouse-enterprise-agent-context.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里云 EventHouse 企业级 Agent 上下文构建五维框架"))
-    为什么 AI Coding 先跑通 行业 Agent 落地难
-    五维框架详解
-      维度一 信息完备性让 Agent 看见真实业务世界
-      维度二 统一 Catalog信息的图书馆馆藏目录
-      维度三 知识对账 Knowledge Wiki 从 Data 到
-    核心判断与行业意义
-```
 
 ## 为什么 AI Coding 先跑通，行业 Agent 落地难
 
@@ -153,7 +109,7 @@ EventHouse 的定位是 AI 时代面向 Agent 的"标准插座"。
 ## 相关概念
 
 - [Agent Harness 上下文管理：工作集视角](../ch05/058-agent-harness.html)：从 Harness 视角看上下文工作集管理
-- [Agent Memory 架构本质](../ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)：记忆管理层
+- [Agent Memory 架构本质](../ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html)：记忆管理层
 - [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)：Agent 系统中的上下文管理框架
 - [智能体编排层中的上下文管理架构](../ch03/035-agent.html)：上下文管理架构模式
 

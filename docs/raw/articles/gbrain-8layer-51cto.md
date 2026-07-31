@@ -6,7 +6,7 @@ author: 林芯
 ingested: 2026-05-18
 sha256: 1212457ea31262946da1fa858785a90af1364d38062fdc2de4ebb75cb795c109
 tags: [gbrain, garry-tan, memory, agent, rag, knowledge-graph, 8layer, second-brain]
-type: article
+type: raw-article
 ---
 YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记住并进化"。
 传统RAG只有4层（分块→嵌入→索引→查询），检索完就结束了。GBrain扩展到8层：

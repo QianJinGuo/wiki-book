@@ -5,7 +5,7 @@ source_url: https://mp.weixin.qq.com/s/0N-RnpGVy_PLSDHMwAIFNg
 ingested: 2026-07-02
 feed_name: 阿里云开发者
 source_published: 2026-07-02
-type: raw
+type: raw-article
 sha256: 92e7a3463b98956d7775af5d23f88a5a2add488184d043fd4d5c8f86a713fb99
 ---
 

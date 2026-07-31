@@ -1,7 +1,7 @@
 ---
 sha256: 2aee069e5ff5764c0d5442e25ab590959e13989a47f4514dd3694b6f9a40dd66
 title: "OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）"
-type: source
+type: raw-article
 tags: [mlops, wechat, deepseek, ai-agent, llm]
 source: wechat
 source_url: "https://mp.weixi"

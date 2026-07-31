@@ -8,65 +8,11 @@
 
 > **Background**：本文档来自阿里技术官方公众号，由阿里巴巴工程师周志伟原创撰写，详细介绍了其团队如何用两个 Git 仓库 + AI 编码助手实现"零额外基建投入"的项目管理自动化实践。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让项目管理也AI Native 两个Git仓库干掉了周报 洞察和效能报表"))
-    关键设计原则
-      定性 定量分离 双仓库架构
-      Git 是唯一的 Source of Truth
-      降低输入门槛 降低处理成本
-    三层数据架构 业务跟踪仓库
-      mergesh 核心规则
-    三层度量体系 效能度量仓库
-      个 SQL 并行查询架构
-    问题挖掘 依赖协同 Skill
-    没有测试治具的迭代 在生产环境上做实验
-    AI 参与项目管理的三个层次
-    五个设计决策
-    成本清单
-```
-
 ## 核心命题
 
 **让 AI 做搬运工，人只做输入和决策。** 项目管理的本质是信息工程问题而非流程管理问题——一旦接受这个设定，用 Git 管状态、用 AI 做整合、用静态 HTML 做可视化就是顺理成章的选择。
 
 ## 关键设计原则
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 定性 × 定量分离：双仓库架构
 
@@ -215,7 +161,7 @@ Level 3（远期）: AI 做决策辅助
 - [Harness Engineering Jk Launcher Baijiajie](../ch05/120-harness-engineering.html)
 - [Harness Design Long Running Apps](../ch05/009-harness.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/035-agent.html)
-- [Alibaba Agentic Cloud](ch04/347-agentic-cloud.html)
+- [Alibaba Agentic Cloud](ch04/348-agentic-cloud.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-project-management-git.md)
 

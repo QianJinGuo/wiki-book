@@ -6,65 +6,11 @@
 
 # An Opinionated Guide to Using AI Right Now
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("An Opinionated Guide to Using AI"))
-    模型格局 九大 AI 系统
-    付费策略 20 vs 200
-    三种模型类型
-    ChatGPT 的模型选择陷阱
-    使用模式的结构性洞察
-    Agent 模型的范式转变
-    模型选择的战略意义
-    免费模型的合理使用
-```
-
 ## 摘要
 
 Ethan Mollick 基于 OpenAI 发布的实际使用数据，撰写了一份面向普通用户的 AI 使用指南。文章覆盖了模型选择、付费策略、模型类型区分、Deep Research、多模态输入、内容生成等关键维度，核心观点是：**约 10% 的人类每周使用 AI，但大多数人仍未找到正确的使用方式**。指南的核心建议是：选择一个你喜欢的系统，从真正重要的事情开始，然后通过实验建立直觉。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 ### 模型格局：九大 AI 系统
 
@@ -139,7 +85,7 @@ OpenAI 的使用数据揭示了一个重要事实：AI 的最大用途是**实�
 
 ### Agent 模型的范式转变
 
-Mollick 对 Chat/Agent/Wizard 三种模型的区分反映了 AI 产品设计的核心张力：**速度 vs 深度**。Agent 模型本质上是把 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的理念内置到了模型推理过程中——它不只是回答问题，而是自主执行多步骤工作流。这与 [Claude Code](../ch03/078-claude-code.html) 的自主循环异曲同工，但以更轻量的方式呈现在普通用户面前。
+Mollick 对 Chat/Agent/Wizard 三种模型的区分反映了 AI 产品设计的核心张力：**速度 vs 深度**。Agent 模型本质上是把 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的理念内置到了模型推理过程中——它不只是回答问题，而是自主执行多步骤工作流。这与 [Claude Code](../ch03/077-claude-code.html) 的自主循环异曲同工，但以更轻量的方式呈现在普通用户面前。
 
 ### 模型选择的战略意义
 
@@ -160,10 +106,10 @@ Mollick 明确指出：如果你的使用场景在图表中显示免费模型就
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
 

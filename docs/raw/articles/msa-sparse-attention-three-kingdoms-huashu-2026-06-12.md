@@ -5,7 +5,7 @@ source: "wechat|花叔"
 author: "花叔"
 publish_date: "2026-06-12"
 ingested: "2026-06-12"
-type: article
+type: raw-article
 tags: []
 source_type: wechat
 sha256: "71ba55ee91be9c4bd18c801d656de5843b22461b01256c822d37caedd5a0ad05"

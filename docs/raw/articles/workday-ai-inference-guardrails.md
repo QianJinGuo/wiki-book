@@ -2,7 +2,7 @@
 title: "Workday: Guardrails belong in the inference engine"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 9ecb5657262a6994a6b523fcff16e088e8dcea03eaed4125de89d434ee0e02a9
 ---

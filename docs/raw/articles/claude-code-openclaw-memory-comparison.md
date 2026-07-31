@@ -1,6 +1,6 @@
 ---
 title: "claude code openclaw memory comparison"
-type: raw
+type: raw-article
 source: wechat
 source_url: https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw
 tags: [wechat, article, claude, openai]

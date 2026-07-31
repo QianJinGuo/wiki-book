@@ -10,46 +10,7 @@ AI agents that perform well at launch don’t stay that way. As models evolve, u
 AgentCore is the platform to build, connect, and optimize agents at scale, with security enforced at the infrastructure layer. Thousands of developers already use AgentCore to build agents that reason, plan, and act across complex workflows. Today we are announcing new capabilities in AgentCore that complete the observe, evaluate, improve loop for agent performance and quality: recommendations and two ways to validate them.
 [Recommendations](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimization-recommendations.html>) analyze production traces and evaluation outputs to optimize your system prompt or tool descriptions for the evaluator you specify. [Batch evaluation](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-evaluations.html>) helps test the recommendation against a pre-defined test dataset and reports aggregate scores, catching regressions on cases you know matter. When hand-authored scenarios aren't enough, you can also [simulate a dataset](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/simulation.html>) using an LLM-backed actor to play the role of an end user. [A/B testing](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-testing.html>) runs a controlled comparison between versions of an agent through [AgentCore Gateway](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html>), splitting live production traffic at the percentage you configure and reporting results with confidence intervals and statistical significance. Recommendations propose changes, batch evaluation and A/B testing validate them, and together they replace the manual cycle of reading traces, guessing at fixes, and deploying blind.
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 AgentCore 的质量优化飞轮代表了一种从直觉驱动到数据驱动的根本范式转变。传统 AI agent 优化严重依赖开发者个人经验——阅读 trace、形成假设、重写 prompt、测试少量案例后部署。这种手动循环不仅效率低下，而且容易引入新的问题，尤其在没有自动反馈机制的情况下，每次修复都可能为另一类用户创造新的边缘案例。AgentCore 的新能力通过三个核心组件构建了完整的自动化优化闭环：Recommendations 从生产环境 trace 和评估输出中学习，自动生成针对特定 evaluator 的系统 prompt 或工具描述优化建议；Batch Evaluation 在离线环境中使用预定义测试数据集验证推荐质量；A/B Testing 则通过 AgentCore Gateway 在生产流量上进行统计显著的对照实验。这种"观察-评估-改进"的三阶段循环将优化周期从周级别缩短到天级别，同时确保每一步决策都有数据支撑而非主观臆断。
 
@@ -69,8 +30,8 @@ AgentCore 的质量优化飞轮代表了一种从直觉驱动到数据驱动的�
 
 ## 相关实体
 - [Sap Intelligent Procurement Assistant Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/sap-intelligent-procurement-assistant-solution.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)

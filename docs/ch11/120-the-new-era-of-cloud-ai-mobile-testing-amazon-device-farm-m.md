@@ -4,55 +4,7 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The New Era of Cloud AI Mobile"))
-    AI-SDLC 闭环中的移动测试断点
-    云端设备平台的核心优势
-    Amazon Device Farm MCP 的技术突破
-    效率提升的真实数据
-    立即可行的行动
-    中长期战略建议
-    关键风险与注意事项
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 The New Era of Cloud AI Mobile Testing: Amazon Device Farm MCP Server Practical Guide by awschina on 19 12月 2025 in Developer Tools Permalink Share English version | 中文版本 Introduction: The Mobile Automation Wave in the AI Era The Rise of AI Mobile Automation In today’s rapidly evolving artificial intelligence landscape, mobile automation testing is undergoing significant technological transformati
 
 ## 核心技术
@@ -138,14 +90,14 @@ Amazon Web Services (AWS)
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en/)
 
 ## 相关实体
-- [AgentCore Runtime部署Apache Doris MCP Server](ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
-- [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](../ch05/094-ai.html)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/237-agentic.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch11/177-apache-doris-mcp-server-quick-suite-ai.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](../ch04/441-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](../ch05/095-ai.html)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/648-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-agentcore-doris-mcp-server.md)
 
-- [Agent 时代架构师技能指南](../ch03/072-skills.html)
+- [Agent 时代架构师技能指南](../ch03/071-skills.html)
 
 ---
 

@@ -4,19 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("民生银行基于规格驱动开发 SDD 的 CodeAgent"))
-    背景与挑战
-    关于 SDD 的认知
-    开发实践
-    局限性思考
-    行动进阶
-```
-
 ## 背景与挑战
 银行私域研发环境中，AI 赋能研发在面向端到端交付任务时面临多重挑战：
 AI 对代码全局理解仍不足。银行系统复杂度高，单依靠长上下文能力进行工程理解存在隐性知识缺失导致 AI 生成偏差。
@@ -27,41 +14,6 @@ AI 辅助开发过程中关键信息停留在会话上下文中，难以形成�
 从"意图驱动"走向"规格驱动"是可实现企业私域规范化研发的路径之一。
 
 ## 关于 SDD 的认知
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 2025 年 9 月 GitHub 提出 Spec-Driven development 定义，认为 Spec 是一份代码行为准则的契约，成为工具和 AI 代理的代码生成、测试和验证所依赖的单一事实来源。
 ThoughtWorks 杰出工程师 Birgitta 提出 SDD 工具实践三种层次策略：规格优先（Spec-first）、规格锚定（Spec-anchored）、规格为源（Spec-as-source）。
 SDD 模式下的规格是一类具有明确性、可被验证、可演进、AI 可读的面向开发流程的技术性描述，是人类与 AI 之间的共同技术契约语言。规格核心内容包括企业级规格、领域级规格、项目级规格。
@@ -103,10 +55,10 @@ SDD 并非银行业的万能解，其适用性需要结合模型能力、私域�
 
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/009-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/003-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/444-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/120-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/235-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/237-openclaw.html)
 
 ---
 

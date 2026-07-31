@@ -6,7 +6,7 @@ publish_time: ""
 ingested: 2026-06-25
 sha256: cab30091a3d905c8
 tags: ["agent", "osint", "graph-analytics", "open-source"]
-type: article
+type: raw-article
 ---
 
 # Kipi: Open-source OSINT Investigation Platform with Autonomous Agent

@@ -2,53 +2,21 @@
 
 ## Ch04.639 Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
-> 📊 Level ⭐⭐ | 3.7KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
 
 # Agent核心技术概念与范式发生了哪些演变以及背后的思考
-
 
 ## 相关实体
 
 - [《从零实现 agent 系统》连载 01｜agent 系统是什么：问题空间与架构切片](../ch03/035-agent.html)
 - [cola dlm：字节跳动连续潜空间扩散语言模型](../ch01/341-cola-dlm.html)
-- [explicit vs. implicit in the age of intelligences — le secré](../ch05/094-ai.html)
+- [explicit vs. implicit in the age of intelligences — le secré](../ch05/095-ai.html)
 - [review agent：后台复盘 agent 如何判断什么值得保存](../ch03/035-agent.html)
 - [不用再学ai了！生成结果包稳的agent来了](../ch03/035-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 Agent核心技术概念与范式发生了哪些演变以及背后的思考 涉及agent领域的核心技术议题。
 ### 核心观点
@@ -77,9 +45,9 @@ System Prompt 从"单体大作文"到"System Prompt + 渐进式加载上下文�
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/235-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/237-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)

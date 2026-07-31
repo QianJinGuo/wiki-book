@@ -6,7 +6,7 @@ author: Alex Albert (Anthropic), Peter Yang (Roblox)
 ingested: 2026-05-18
 sha256: b31becfe50c69845d67410efe5ddf30af8baa37ec2656efa5ce4c5deb19cd3c6
 tags: [anthropic, claude, podcast, model-development, ai-product-management, character-training]
-type: article
+type: raw-article
 ---
 Alex Albert × Peter Yang · 从模型规划到性格训练的全流程揭秘
 Anthropic 的 Alex Albert 最近上了一期播客，聊了聊他们内部是怎么打造 Claude 的。

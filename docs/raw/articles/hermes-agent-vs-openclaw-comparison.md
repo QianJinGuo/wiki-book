@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/JgttAcSxQf0EF0Wf6SPHjQ
 author: doocs
 date: 2026-05-11
 title: Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比
-type: raw
+type: raw-article
 tags: [agent, hermes, openclaw, comparison]
 review_value: 8
 review_confidence: 8

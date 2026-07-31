@@ -8,22 +8,6 @@
 
 Anthropic 官方 Claude Code 插件体系，发布于 2026 年 5 月，GitHub 仓库已获 20K+ Stars。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 官方插件系统"))
-    插件系统架构
-    feature-dev 7阶段结构化功能开发
-    hookify 自然语言配置 Hooks
-    code-modernization 遗留代码现代化
-    claude-code-setup 项目一键配置分析
-    多智能体并行架构的意义
-    Hook 系统的安全防护边界
-    遗留代码现代化的行为不变性保证
-```
-
 ## 插件系统架构
 
 Claude Code 插件可以包含：
@@ -36,41 +20,6 @@ Claude Code 插件可以包含：
 安装命令：`/plugin install {插件名}@claude-plugins-official`
 
 ## feature-dev：7阶段结构化功能开发
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 核心价值：把功能开发变成严谨的结构化流程，避免盲目编码。
 
@@ -168,11 +117,11 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 - GitHub：https://github.com/anthropics/claude-plugins-official
 
 ## 相关实体
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/328-claude-code-agent-teams.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/329-claude-code-agent-teams.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
 - [Claude Code Agent View Huashu](ch09/003-claude-code-agent-view.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
-- [Claude Code 7 Layer Memory Architecture](../ch03/078-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/286-anthropic-claude-code.html)
+- [Claude Code 7 Layer Memory Architecture](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-official-plugins-anthropic.md)
 - [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention.md)

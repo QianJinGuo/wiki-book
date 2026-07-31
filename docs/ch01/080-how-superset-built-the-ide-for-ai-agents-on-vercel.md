@@ -6,60 +6,10 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How Superset built the IDE for AI"))
-    核心指标
-    并行基础设施是 Agent 产品成败的关键
-    Vercel 全栈的组合优势
-    自己吃自己的狗粮 作为产品验证
-    事件驱动型扩展能力的验证
-    对 Agent 平台开发者的建议
-    对 Vercel 平台能力的印证
-```
-
 ## 摘要
 Superset 是由三位前 YC CTO 联合创立的多 Agent 开发 IDE，旨在解决传统开发工具无法适配并行 Agent 工作流的问题。其核心价值在于：将串行开发范式转变为并行开发范式，使团队能够同时调度多个 AI Coding Agent 在各自独立的隔离环境中协同工作。
 
 ## 核心指标
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - 1,000–1,400 次部署/周 
 - ~600 次预览部署/天 
 - ~30 秒平均构建时间 
@@ -113,8 +63,8 @@ Hacker News "Show HN" 发布期间，用户数一夜间翻了三倍，Superset �
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch05/094-ai.html)
-- [How to Detect AI Agents on Your Website | Full Guide](../ch04/298-ai-agent.html)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch05/095-ai.html)
+- [How to Detect AI Agents on Your Website | Full Guide](../ch04/030-ai-agent.html)
 
 ---
 

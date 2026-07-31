@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/AHCXofxR_eGrdGvZQahvqg"
 feed_name: "AGI Hunt"
 author: "AGI Hunt"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [agent, coding-agent, adoption-gap, social-science, anthropic]
 sha256: "6a170c4e3dd18c92eaa8c1543b9e269b15d544c1a083b489d60632b094462a72"
 ---

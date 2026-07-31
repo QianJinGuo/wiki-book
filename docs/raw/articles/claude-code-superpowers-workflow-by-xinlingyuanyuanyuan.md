@@ -6,7 +6,7 @@ author: 新世界圆圆圆
 source: 赛博虾酱
 date: 2026-03-24
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [claude-code, superpowers, ai-coding, skills, agentic-workflow]
 review_value: 6
 review_confidence: 7

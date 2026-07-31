@@ -2,7 +2,7 @@
 title: "How we used DSPy to turn AI evaluations into better responses in Dash chat"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: cd6e9cbaf9f099a4a8caed2bf8a98012dc6a13580a869c5b5262e3bbdf2a98ce
 ---

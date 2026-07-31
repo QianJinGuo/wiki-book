@@ -5,7 +5,7 @@ tags: [ai, newsletter]
 ingested: 2026-05-09
 slug: notes-from-inside-chinas-ai-labs
 sha256: 620bab6d8eb6
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

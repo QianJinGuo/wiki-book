@@ -8,7 +8,7 @@ publication: "滴滴技术"
 published_date: 2026-05-14
 created: 2026-05-15
 updated: 2026-05-15
-type: raw
+type: raw-article
 tags: [speculative-decoding, eagle-3, agent, inference-optimization, didi, specforge, llm-inference, sequence-parallelism]
 review_value: 8
 review_confidence: 8

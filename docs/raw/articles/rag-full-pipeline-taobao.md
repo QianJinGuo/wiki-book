@@ -6,7 +6,7 @@ author: 驰海（淘天集团品牌行业架构团队）
 ingested: 2026-05-18
 sha256: 9b9c05c6f6749ba99ada5df4543baed0ee1568f7c563615c79b350d7873e80f9
 tags: [rag, pipeline, embedding, chunking, retrieval, rerank, graph-rag, ragas, evaluation, meta-chunking, hyde, agent]
-type: article
+type: raw-article
 ---
 在Agent的开发过程中，RAG技术的应用水平直接决定了Agent的业务上限。本文为RAG技术实战指南，聚焦Agent开发中的核心挑战：知识库构建不规范、检索召回不准、缺乏量化评测。
 全文覆盖RAG全链路——从文档加载（多格式解析+元数据提取）、智能切分（规则/语义/结构化方法，含Meta-Chunking原理）、索引构建（embedding模型选型与向量生成详解）、检索优化（Query改写、HyDE/Doc2Query、标签过滤、重排序）、生成调优（Prompt设计、参数控制、SFT微调），到进阶Graph RAG（多跳推理与全局摘要），最后落地Ragas自动化评估体系（Context Precision/Recall、Faithfulness、Answer Relevancy等指标及测试集生成）。强调"可测、可调、可信赖"的RAG工程化实践。

@@ -8,64 +8,10 @@
 # Claude Code Subagents 深度指南：上下文卫生实战
 > Source: https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code Subagents 深度指南 上下文卫生实战"))
-    三层价值
-    长会话为什么会变脏
-    内置 Explore 和 Plan
-    fresh vs fork
-    context-timeline 钩子
-    四类高频自定义 Subagent
-      代码审查
-      影响面分析
-      测试诊断
-    Subagent 模板示例
-    最容易踩的四个坑
-```
-
 ## 核心论点
 Subagent 的本质不是"多一个 Agent 帮忙"，而是把**必须发生但留在主窗口就是污染的探索过程**，隔离到独立工作区，主窗口只拿回结果。
 
 ## 三层价值
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 1. **隔离**：子代理在自己的上下文窗口里读20个文件、跑30次搜索，主会话完全不看见过程，只接收结论
 2. **压缩**：50次工具调用的过程被压成3行结论，噪音被自然丢弃
 3. **并行**：几条调查路径互不依赖时可以并行跑
@@ -214,11 +160,11 @@ Kaxil Naik 的判断"Harness matters more than the model"是本文最被低估�
 3. 逐步扩大子代理职责范围
 ---
 ## 相关实体
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/078-claude-code.html)
-- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/078-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Claude Code Source Architecture](../ch03/078-claude-code.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/077-claude-code.html)
+- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Claude Code Source Architecture](../ch03/077-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-subagents-context-hygiene.md)
 

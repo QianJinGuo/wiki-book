@@ -1,7 +1,7 @@
 ---
 
 title: "Tokenomics: the 62.5-minute rule for Claude's cache"
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://skids.dev/blog/anthropic-cache-tokenomics/
 tags: [claude]

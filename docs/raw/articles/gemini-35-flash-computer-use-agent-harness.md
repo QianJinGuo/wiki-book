@@ -5,7 +5,7 @@ author: "Mateo Quiros"
 published: "2026-06-24"
 ingested: "2026-06-25"
 sha256: "auto"
-type: article
+type: raw-article
 ---
 
 # Introducing computer use in Gemini 3.5 Flash

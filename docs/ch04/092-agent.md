@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 17.5KB | `entities/kamacoder-agent-context-drift-tool-hallucination.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("上下文漂移与工具调用幻觉 Agent 长对话可靠性两大核心问题"))
-    一 上下文漂移 Context Drift
-      现象描述
-      根因 从注意力机制理解漂移
-      漂移的三种模式
-    二 工具调用幻觉 Tool Hallucination
-      现象描述
-      根因 概率生成 vs 结构性约束
-      幻觉的三种类型
-    三 两大问题的共同框架
-    四 面试应答框架
-    两大问题的本质是同一个 概率生成模型缺乏显式任务约束机制
-    近因效应揭示了 Attention 机制的结构性盲点
-    工具调用幻觉的 Type 3 根因指向训练阶段的 Reward
-    三段式校验框架的局限 它不能防止 只能检测和补救
-```
-
 ## 概述
 
 大模型 Agent 在执行多步骤任务时，面临两条核心可靠性挑战：跑了多轮之后偏离原始目标（上下文漂移），以及在工具调用时产生错误匹配、参数错误或无意义调用（工具调用幻觉）。这两个问题在工业级 Agent 系统的线上表现中反复出现，是面试和工程实践中最常被追问的场景。
@@ -35,39 +13,6 @@ mindmap
 ---
 
 ## 一、上下文漂移（Context Drift）
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 1.1 现象描述
 
@@ -262,9 +207,9 @@ Type 3（无意义调用）的根因不在推理阶段，而在训练阶段—�
 ## 相关实体
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/035-agent.html)
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/035-agent.html)
-- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/617-python.html)
-- [Agent Reliability Engineering Skillify Continuous Improvement](ch04/271-skill.html)
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](ch04/298-ai-agent.html)
+- [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/623-python.html)
+- [Agent Reliability Engineering Skillify Continuous Improvement](ch04/273-skill.html)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](ch04/030-ai-agent.html)
 
 ---
 

@@ -5,7 +5,7 @@ author: 行小招
 source: 科技充电站
 date: 2026-05-19
 created: 2026-05-19
-type: raw
+type: raw-article
 tags: [browser-automation, computer-use, playwright, chrome-devtools-mcp, agent-browser, ai-coding, tool-comparison]
 review_value: 6
 review_confidence: 7

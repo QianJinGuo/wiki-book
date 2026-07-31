@@ -3,7 +3,7 @@ title: "Introducing Vercel Connect"
 source_url: "https://vercel.com/blog/introducing-vercel-connect"
 ingested: "2026-06-19"
 sha256: "7da4dbd325ba3f4b"
-type: article
+type: raw-article
 tags: [article]
 ---
 

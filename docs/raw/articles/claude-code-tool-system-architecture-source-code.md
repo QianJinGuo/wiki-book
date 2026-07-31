@@ -5,7 +5,7 @@ source_site: "架构师带你玩转AI"
 author: "AllenTang"
 ingested: "2026-07-08"
 sha256: "9ead27967daf3aee238ffdf85a25be63a41d6092549b60bc06c5129d483688cd"
-type: raw
+type: raw-article
 tags:
   - claude-code
   - tool-system

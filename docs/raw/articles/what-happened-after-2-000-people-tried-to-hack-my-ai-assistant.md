@@ -2,7 +2,7 @@
 title: "What happened after 2,000 people tried to hack my AI assistant"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: b0c7975b0ffdff0d96622bcdf44d614c53194e964454fbae92fcf0d8d44ab9c5
 ---

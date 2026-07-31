@@ -9,25 +9,6 @@
 > **作者**：Frank / Q马Q马，2026-06-02
 > **核心事件**：`@QuantumTransf`（Twitter）针对 `ai-memory` 项目（GitHub 467⭐）发出尖锐质疑：**"原始 session 本来就是结构化数据，直接放进 SQLite 就是一个很强的结构，编译成 markdown wiki 反而引入不必要的中间实体"**——引发 Agent 记忆领域最核心的设计分歧大讨论。本文综合 GitHub 数十个项目与最新行业实践，给出全景洞察。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 记忆存储方案深度洞察 6 大流派分歧 Wiki 编译"))
-    推文争论 Agent 记忆该是人浏览的 wiki 还是可查询的数据库
-    当前主流方案全景 6 大流派
-    记忆分层模型 行业共识
-    核心争论 信息压缩 vs 信息保真
-    检索策略五代演进
-    前沿趋势 4 条
-      知识图谱记忆
-      多 Agent 共享记忆
-      MCP 成为标准接口
-    对 Hermes Agent 的启示
-    总结判断 1-2 年趋势
-```
-
 ## 推文争论：Agent 记忆该是人浏览的 wiki 还是可查询的数据库？
 
 **@QuantumTransf 的核心质疑**：
@@ -41,43 +22,6 @@ mindmap
 **这个质疑触及了 Agent 记忆领域最核心的设计分歧**——**信息压缩 vs 信息保真**。
 
 ## 当前主流方案全景：6 大流派
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 GitHub 上数十个 Agent 记忆项目可归为 6 大流派，每个流派代表一种设计哲学：
 
@@ -197,11 +141,11 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - [Hermes Agent Memory System Three Layer Architecture](../ch03/096-hermes-agent.html)
 - [Hermes Agent Self Evolving](../ch03/096-hermes-agent.html)
 - [Hermes Skill System](ch07/017-hermes-skill.html)
-- [Hermes 9 Module Architecture](../ch01/742-9.html)
+- [Hermes 9 Module Architecture](../ch01/755-9.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/742-9.html)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/755-9.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 ## 深度分析

@@ -1,7 +1,7 @@
 ---
 
 title: "Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践"
-type: source
+type: raw-article
 tags: [ai-agent, engineering, agent-tools, wechat]
 source: wechat
 source_url: "https://mp.weixi"

@@ -8,60 +8,11 @@
 
 > **/checkup** 是 Claude Code 团队在 2026 年 7 月推出的新命令，用于对 Claude Code 环境进行全面体检（healthcheck），清理积灰的 Skills、MCP 服务器、插件和过度膨胀的 CLAUDE.md。由 Claude Code 之父 Boris Cherny 亲自宣布，旨在解决 Agent 工具生态快速膨胀带来的"配置腐烂"问题。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code checkup 功能 清理"))
-    配置腐烂 Configuration Rot 问题
-    Boris Cherny 的亲自验证
-    核心功能 七项体检清单
-    用户实测体验
-    配置腐烂是 Agent 原生开发环境的系统性挑战
-    K Tokens 的经济学意义
-    从手动维护到自动健康检查的范式转变
-    对 Agent 工具供应链的启示
-```
-
 ## 摘要
 
 重度使用 Claude Code 的用户通常会积累大量 Skills、MCP 工具、插件和 hooks。每次开启新 session 时，所有这些配置都会被加载，其中不少已经过时或不再使用。这些"数字灰尘"不仅拖慢启动速度，还可能导致冲突和意外行为。/checkup 命令正是为了解决这一系统性问题而设计的——它扫描完整环境，识别并帮助清理冗余配置，为每个 session 省下可观的上下文空间。
 
 ## 背景
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 配置腐烂（Configuration Rot）问题
 
@@ -140,7 +91,7 @@ Boris 清理出的 5.5K tokens 每个 session 的价值不应被低估。在 202
 
 - [Hermes Agent 上手](../ch03/096-hermes-agent.html)
 - [ConardLi Skills 开源项目](../ch07/036-skills-7k-star.html)
-- [MCP Tool Design Tradeoffs](../ch01/989-anthropic.html)
+- [MCP Tool Design Tradeoffs](../ch01/1004-anthropic.html)
 - [Agent Harness Context Management](../ch05/058-agent-harness.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - Agent Tools 生态系统

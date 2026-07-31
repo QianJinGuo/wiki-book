@@ -5,7 +5,7 @@ author: AllenTang
 published: 2026-05-17
 created: 2026-05-17
 updated: 2026-05-17
-type: article
+type: raw-article
 tags: [agent-architecture, tool-management, token-tax, anthropic, claude-code, openclaw, hermes-agent, mcp]
 sha256: d8471dde8c8c849e2cf8675a3860c5cd0d7b42a4bdc34921a10141fad4910018 
 review_value: 8

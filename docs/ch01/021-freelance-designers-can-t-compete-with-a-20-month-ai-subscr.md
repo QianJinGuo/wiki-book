@@ -6,63 +6,10 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/freelance-designers-cant-compete-ai-subscription.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Freelance Designers Cant Compete"))
-    数据验证 市场收缩是结构性的而非周期性
-    Creative Compression Model 的三层框架
-    Expertise Inversion Trap 违反直觉的风险分布
-    依然成立的五个可行定位
-    给独立设计师
-    给设计工作室或代理机构
-    给企业品牌负责人
-```
-
 ## 核心观点
 本文提出了**创意压缩模型（Creative Compression Model）**：自由设计师市场正在发生结构性分裂，商品化设计工作几乎完全被 AI 取代，而战略层设计依然由人类主导。处于两者之间的中间层——以执行为核心、缺乏战略深度的设计师——正在经历市场塌陷，且这一过程比直觉判断更快、更彻底。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 ### 1. 数据验证：市场收缩是结构性的而非周期性
 多项独立研究交叉验证了设计的商品层正在塌陷：Brookings Institution 研究发现，接触 AI 的自由职业者合同量下降 2%、收入下降 5%；Harvard 和 Imperial College 联合研究追踪 61 个国家 200 万个自由职业职位发布，ChatGPT 发布后 8 个月内图形设计工作减少 17%，写作减少 30%，软件开发减少 21%；Ramp「Payrolls to Prompts」研究显示，2022 年在自由职业平台上有支出的企业超过一半在 2025 年已完全停止使用自由职业者，同期自由职业平台支出占企业预算比例从 0.66% 降至 0.14%，而 AI 模型支出从零增长至 2.85%。
 三组数据的一致性指向一个核心结论：**客户并非不再需要创意工作——他们不再为 AI 已经能处理的那部分工作付钱给自由职业者**。
@@ -114,7 +61,7 @@ Freelancer Kompass 2026 报告显示，84% 的自由职业者现在定期使用 
 
 - [B2B Email Marketing: What Still Works?](ch01/157-b2b-email-marketing-what-still-works.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/223-rag.html)
-- [Wi-Fi 8 is closer than you think. Here's what you need to know](../ch03/069-wi-fi-8.html)
+- [Wi-Fi 8 is closer than you think. Here's what you need to know](../ch03/068-wi-fi-8.html)
 
 ---
 

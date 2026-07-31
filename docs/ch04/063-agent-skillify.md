@@ -4,71 +4,10 @@
 
 > 📊 Level ⭐⭐ | 22.1KB | `entities/agent-reliability-engineering-skillify-continuous-improvement.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 可靠性的工程解法 从 Skillify 看持续改进机制"))
-    两次失败的核心机制
-      失败 1 传感器失效
-      失败 2 28 分钟
-      共同本质
-    Skillify 10 步法
-      Step 1 SKILLmd契约
-      Step 2 Deterministic code脚本
-      Step 3 Unit tests确定性函数测试
-    三个关键机制
-      机制 1 自举循环 Bootstrapping Loop
-      机制 2 从 vibes-based 到 structurally
-      机制 3 可验证性是改进的前提
-    三个关键权衡
-      权衡 1 灵活性 vs 确定性
-      权衡 2 Skill 数量 vs 系统复杂度
-      权衡 3 Skill 生命周期管理
-    自举循环的本质 智能制造约束 约束反过来限制智能
-    structurally impossible比shouldnt
-    可验证性是改进的充要条件
-    熵增是 Agent 系统的内生力量
-```
-
 ## 概述
 YC 总裁 Garry Tan 的 OpenClaw 一周内两次失败：日历查询和时区计算。两次都是 Agent 有现成工具却选择自己推理——该用脚本的地方用了模型。Garry Tan 的解法是 skillify：一套 10 步检查清单，将每次失败固化为确定性测试，让同样的错误结构上不可能再发生。
 
 ## 两次失败的核心机制
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 失败 1：传感器失效
 3,146 个本地日历文件已索引，grep 100ms 内能找到答案。Agent 却绕了五分钟远路：调用 live calendar API → 被拒 → email search → 嘈杂无结论 → 再调 API → 再被拒 → 最后才搜本地。
 **根因**：工作分类错位。日历 grep 是确定性工作（deterministic work），同样输入同样输出，不需要模型。但 Agent 在判断空间（latent space）里完成这件事——启动推理、发起 API、解释结果，而一个三行脚本 100ms 就够了。
@@ -154,20 +93,20 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 每个 skill 都是对当前模型能力边界的假设。Anthropic 的演进经验：context reset 先被淘汰，sprint 分解随后被淘汰，evaluator 仍然有价值。正确的做法：**逐一移除旧组件，测试质量是否真的下降**，而不是继续叠加新组件。Skill 腐朽有 Context Rot 式、数据漂移式、架构错位式三种形态。
 
 ## 相关概念
-- [GBrain 自进化体系](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html) — skillify 是 gbrain 自演化的核心机制
+- [GBrain 自进化体系](../ch01/677-llm-wiki-obsidian-wiki-gbrain.html) — skillify 是 gbrain 自演化的核心机制
 - [Harness Engineering](../ch05/120-harness-engineering.html) — 传感器失效是 latent space 工作分类错位的体现
 - [Harness 从 Prompt 到工程体系](../ch05/009-harness.html) — 约束与自主权的辩证关系
-- [AIAIGC峰会嘉宾阵容](ch04/528-aiaigc.html)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/235-openclaw.html)
-- [从提需求到部署发布全AI全自动化后研发效能全面跃升](../ch05/094-ai.html)
+- [AIAIGC峰会嘉宾阵容](ch04/533-aiaigc.html)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/237-openclaw.html)
+- [从提需求到部署发布全AI全自动化后研发效能全面跃升](../ch05/095-ai.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch03/096-hermes-agent.html)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/271-skill.html)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/273-skill.html)
 - [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](../ch05/120-harness-engineering.html)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
-- [OpenCLAW 完全指南](../ch11/235-openclaw.html)
+- [OpenCLAW 完全指南](../ch11/237-openclaw.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1036-openclaw-agent.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1049-openclaw-agent.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 
 ## 深度分析

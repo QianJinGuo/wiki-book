@@ -8,28 +8,6 @@
 
 > **核心**: 花叔 (alchaincyf) 在 2 个月 16k+ star 之后, 把 Huashu-Design v1 推翻重写为 2.0. 关键问题不是模型能力, 而是 **"AI 自动收敛到安全极简 (Anthropic 官网味儿)"**. 2.0 用 3 套并行逻辑 (撞/借/请) + 图片前置 + 事实验证第 0 原则, 系统性解决 3 个真实坑.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Huashu-Design 20 Agent Skill 反收敛三套逻辑"))
-    关键定位 Skill vs 软件
-    个真实坑 工业级失败案例
-      坑一 设计收敛成安全极简
-      坑二 内容网站没有真图 空壳
-      坑三 AI 一本正经地瞎编产品事实
-    跨域可复用的 3 条原则
-      原则 1 撞借请 三套并行反收敛
-      原则 2 核心资产前置
-      原则 3 事实验证第 0 原则
-    项目元数据
-    PPT 范式转变 HTML deck 优于 pptx
-    与 17哥 vs 比较
-    核心观点 Skill 的反收敛问题是 AI 能力提升后的普遍矛盾
-    技术要点 3 套并行逻辑的设计原理
-```
-
 ## 关键定位: Skill vs 软件
 
 > **设计软件**: 画布 / 图层 / 工具栏 — 预设你是**动手的人**.
@@ -40,39 +18,6 @@ mindmap
 ---
 
 ## 3 个真实坑 (工业级失败案例)
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 坑一 · 设计收敛成"安全极简"
 
@@ -229,7 +174,7 @@ Huashu-Design 2.0 的 3 个真实坑（设计收敛成安全极简、内容网�
 
 ### 与 Agent Skill 设计的深层关联
 
-Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：**当 AI 作为"做决策的人"而非"动手的人"时，如何保证决策质量？** 这与 [Skill Design Patterns](ch04/271-skill.html) 中讨论的 skill 设计维度高度相关——skill 的设计者需要预判 AI 在哪些地方会"偷懒"或"自信地犯错"，并通过设计提前插入防护栏。
+Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：**当 AI 作为"做决策的人"而非"动手的人"时，如何保证决策质量？** 这与 [Skill Design Patterns](ch04/273-skill.html) 中讨论的 skill 设计维度高度相关——skill 的设计者需要预判 AI 在哪些地方会"偷懒"或"自信地犯错"，并通过设计提前插入防护栏。
 
 ### 跨工具可复用性的本质
 
@@ -239,7 +184,7 @@ Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：
 
 ### 对 Agent Skill 设计者
 
-1. **预设 AI 会"偷懒"到最安全的解法**：在设计 skill 时，主动考虑"AI 最可能收敛到哪个最保守的答案"，然后设计机制强制对抗这种收敛。参考 [Skill Design Patterns](ch04/271-skill.html) 中的"避免 AI 输出同质化"相关章节。
+1. **预设 AI 会"偷懒"到最安全的解法**：在设计 skill 时，主动考虑"AI 最可能收敛到哪个最保守的答案"，然后设计机制强制对抗这种收敛。参考 [Skill Design Patterns](ch04/273-skill.html) 中的"避免 AI 输出同质化"相关章节。
 
 2. **核心资产完整性检查应该是第 0 步**：在任何内容生成类 skill 中，先检查"完成这个任务所需的不可替代素材是否齐全"，再开始生成。这个检查点应该在 skill 流程的最前端，而非在生成过程中发现问题后才补救。
 
@@ -266,7 +211,7 @@ Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：
 ---
 
 **相关实体**：
-- [Skill Design Patterns](ch04/271-skill.html) — skill 设计维度的通用模式
+- [Skill Design Patterns](ch04/273-skill.html) — skill 设计维度的通用模式
 - [Harness Engineering Practical 17Ge Versus 6 Subagent](../ch05/120-harness-engineering.html) — 互补的 Harness 模式（决策者 vs 动手者）
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html) — Claude Code harness 架构参考
 - [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — AI 能力提升后的 harness 设计范式转移

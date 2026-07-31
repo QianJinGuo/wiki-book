@@ -1,7 +1,7 @@
 ---
 
 title: "Reasoning lift: What happens to AI visibility when AI thinks harder"
-type: raw
+type: raw-article
 tags: []
 source: newsletter
 source_url: https://www.growth-memo.com/p/reasoning-lift-what-happens-to-ai

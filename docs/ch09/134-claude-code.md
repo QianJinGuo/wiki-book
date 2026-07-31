@@ -12,63 +12,16 @@
 - `resume`：恢复之前的会话，减少重复铺垫
 - `rewind`：回退到之前的节点，精细化回退而非全盘重开）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 命令使用指南"))
-    上下文管理是 Claude Code 高效使用的第一道门槛
-    权限系统是 Claude Code 安全与效率的平衡器
-    fewer-permission-prompts
-    skills vs memory 的分层设计是知识管理的方法论体现
-```
-
 ## 相关实体
-- [Claude Code Openclaw Usage Ettin](ch09/033-claude-code-openclaw-usage-ettin.html)
+- [Claude Code Openclaw Usage Ettin](ch09/034-claude-code-openclaw-usage-ettin.html)
 - [Obsidian Claude Code Integration Guide](ch09/140-obsidian-claude-code-integration-guide.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-commands-usage-guide.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. 上下文管理是 Claude Code 高效使用的第一道门槛
 

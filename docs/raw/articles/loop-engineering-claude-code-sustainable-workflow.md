@@ -2,7 +2,7 @@
 title: "打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 991b891e2ad96cd862f0c83d555a68cfed75a5e0b67bffa42617ebb9ac3fadd1
 ---

@@ -4,59 +4,10 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/enterprise-software-moats-agent-era.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Enterprise Software Moats in the"))
-    旧世界护城河 五维评估框架
-    Agent 时代的护城河重塑
-      失效的旧护城河
-      变得更重要了
-    新护城河 三条路
-    新数据护城河逻辑
-    动作层护城河
-    最后那一公里
-    网络效应回归
-    Schema 重写需求
-```
-
 ## 核心问题
 当软件去掉界面，剩下的是什么？和 PostgreSQL + API 本质区别是什么？SaaS 时代让软件"难以被替换"的东西，在 Agent 时代还成立吗？
 
 ## 旧世界护城河：五维评估框架
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 | 维度 | 描述 |
 |------|------|
 | **访问频率** | 越频繁，习惯越深。低频如 ATS，高频如 CRM/ERP |
@@ -145,19 +96,19 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 ## 与 vault 知识关联
 - [Agent Harness 架构](../ch05/058-agent-harness.html) — Agent 与企业软件的交互层，Harness 是 Agent 执行时的"护城河"
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作世界里，跨 Agent 身份认证和授权是全新机会（深思SenseAI 补充）
-- [Agent Memory 模块化框架](ch04/121-agent-memory.html) — 数据排放（data exhaust）与记忆系统的关系
+- [Agent Memory 模块化框架](ch04/098-agent-memory.html) — 数据排放（data exhaust）与记忆系统的关系
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/salesforce-headless-software-losing-head-a16z.md)
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/035-agent.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [foundation capital agent era six insights](ch04/186-foundation-capital-agent-era-six-insights.html)
-- [Agent 时代架构师技能指南](../ch03/072-skills.html)
+- [Agent 时代架构师技能指南](../ch03/071-skills.html)
 - [快手首个打工人Agent](../ch03/035-agent.html)
 - [from](../ch01/252-from-system-of-record-to-system-of-intelligence.html)
 - [From System Of Record To System Of Intelligence](../ch01/252-from-system-of-record-to-system-of-intelligence.html)
-- [meet customers where they are: agentforce contact center now](ch04/622-meet-customers-where-they-are-agentforce-contact-center-now.html)
+- [meet customers where they are: agentforce contact center now](ch04/628-meet-customers-where-they-are-agentforce-contact-center-now.html)
 
 ---
 

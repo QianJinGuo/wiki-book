@@ -1,7 +1,7 @@
 ---
 title: "AI Native 时代 —— 研发组织何去何从"
 sha256: 8d395f88f15b47924cb6add51767caa2613469ddb0c12a90cb0104c700c7786b
-type: raw
+type: raw-article
 created: 2026-05-14
 updated: 2026-05-14
 source_url: "https://mp.weixin.qq.com/s/Xf3C60jCxR4ppMi4HuAnVA"

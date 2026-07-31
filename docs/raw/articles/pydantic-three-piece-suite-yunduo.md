@@ -3,7 +3,7 @@ title: "Pydantic早就不只是校验了——Rust引擎 + 可观测 + Agent 类
 source_url: "https://mp.weixin.qq.com/s/jg6lW3ObZooBsrWTGwIcRg"
 ingested:2026-06-10
 sha256:5a2d0bfcb789907f9258d684ff4f6a8e7c54499670353be077d8cc25dd04515a
-type: source
+type: raw-article
 tags: [wechat, pydantic, pydantic-core, logfire, pydantic-ai, rust, opentelemetry, otel, agent, type-safety, observability, yunduo, shujustudio]
 ---
 

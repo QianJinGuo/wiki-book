@@ -3,7 +3,7 @@ title: "Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水
 source_url: "james-multi-agent-collaboration-modes"
 tags: [wechat, article, claude, openai]
 ingested: "2026-05-20"
-type: raw
+type: raw-article
 sha256: bd7b92861f4829c43262c2ff61bb6f26ad122fa3d33609d8429c038757455315
 ---
 ---

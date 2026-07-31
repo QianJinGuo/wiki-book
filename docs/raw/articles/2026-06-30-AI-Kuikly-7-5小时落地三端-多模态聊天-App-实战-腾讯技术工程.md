@@ -2,7 +2,7 @@
 title: "AI Kuikly 7 5小时落地三端 多模态聊天 App 实战 腾讯技术工程"
 created: 2026-06-30
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 3650b538aadbd7e1132d06fd5cb9d59fe30b83aa94b8b8000a090ce392be170d
 ---

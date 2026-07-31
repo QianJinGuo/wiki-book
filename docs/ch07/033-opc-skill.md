@@ -6,59 +6,11 @@
 
 # 京东健康 OPC 团队产品全流程 Skill 探索
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("京东健康 OPC 团队产品全流程 Skill 探索"))
-    核心设计
-      个 Product Management Skill
-      产品全流程四阶段
-    OPC 模式的本质 产品判断力的技能化
-    Skill 作为决策框架而非自动化脚本
-    从快速交付到做正确的事的范式转变
-    七大常见错误与反模式
-```
-
 ## 摘要
 
 京东健康 OPC（One Person Company）团队在无专职产品角色的模式下，探索将产品全流程 Skill 化——从需求判断、方案设计到交付验证，构建完整的 Agent Skill 体系。基于 Anthropic 开源的 Product Management Skills，他们适配了 OPC 场景的 8 个核心 Skill，实现从问题发现到上线复盘的完整产品闭环。
 
 ## 背景
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 在 OPC 团队中，没有专职产品角色。团队不仅要关注"把需求做完"，还必须回答更前置的问题：这个问题是否真的值得做？证据来自用户、数据还是直觉？需求边界是否清楚？上线后如何判断成功或失败？Anthropic 开源的 Product Management Skills 正好可以承接这些问题——它本质上是一套产研共同决策框架，把从发现问题到上线复盘的过程拆成一组可重复使用的动作。
 
@@ -154,7 +106,7 @@ OPC（One Person Company）模式的核心理念是让小型团队拥有端到�
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent Harness Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 - [面向 Agent 的后端设计](../ch03/035-agent.html)
-- [企业 Agent 编排](../ch04/518-agent-orchestration.html)
+- [企业 Agent 编排](../ch04/523-agent-orchestration.html)
 
 ## 来源
 

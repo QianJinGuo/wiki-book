@@ -20,7 +20,7 @@ tags:
   - tool-reliability
   - multi-agent
   - sre
-type: raw
+type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
 ---

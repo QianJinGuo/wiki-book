@@ -2,7 +2,7 @@
 title: "DeepSeek做大 Mega MoE Tri Dao团队加快 SonicMoE 机器之心"
 created: 2026-05-04
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 1ab14506807b0e76c6b1d2183e744af5c84d8f0cefd1bdcb520e4238455040d9
 ---

@@ -1,6 +1,6 @@
 ---
 title: Elena | Progressive Web Components
-type: raw
+type: raw-article
 source: newsletter
 source_url: https://elenajs.com/
 fetcher: jina

@@ -12,64 +12,11 @@
 > date: 2026-04-23
 > tags: #MCP #Agent #Claude #Tool-Search #代码编排 #Cloudflare #Skills
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 最新博客 MCP 没死 它又来了"))
-    核心摘要
-    社区批评回顾
-    Anthropic 的回应 三条路各有地盘
-    Token 解法
-      解法一 Tool Search 按需加载
-      解法二 程序化工具调用
-      综合效果
-    Cloudflare 的实践 代码编排模式
-    Skills 转正
-    MCP 的真正地盘
-      三问题的 Anthropic 回答
-      发展图景
-```
-
 ## 核心摘要
 Anthropic 发布官方博客《Building agents that reach production systems with MCP》，回应社区对 MCP 三大批评（贵、schema 臃肿、不可组合），给出具体解法。核心结论：本地开发 → CLI + Skills；云端生产 → MCP + Skills；MCP 并未过时，正在成为云端 Agent 的标准化接入层。
 ---
 
 ## 01 社区批评回顾
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 过去一个多月社区对 MCP 的批评集中在三点：
 | 问题 | 数据 |
 |------|------|
@@ -175,13 +122,13 @@ Anthropic 明确定义了两者关系：
 - Anthropic 博客原文：https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp
 ## 相关实体
 - [Anthropic Mcp Revisited](ch07/016-anthropic-mcp.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/989-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/989-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/271-skill.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/989-anthropic.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/1004-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1004-anthropic.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/273-skill.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1004-anthropic.html)
 
-- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch05/094-ai.html)
-- [Cursor Recall Anthropic Daily Release Cat Wu](../ch01/989-anthropic.html)
+- [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch05/095-ai.html)
+- [Cursor Recall Anthropic Daily Release Cat Wu](../ch01/1004-anthropic.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

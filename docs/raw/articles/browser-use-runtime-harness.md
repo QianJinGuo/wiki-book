@@ -6,7 +6,7 @@ author: 无糖可乐
 publisher: 百度Geek说
 published: 2026-05-13
 created: 2026-05-14
-type: raw
+type: raw-article
 tags: [computer-use, browser-automation, cdp, chrome-devtools-protocol, agent-harness, runtime-verification, frontend-agent]
   - browser-use
   - browser-automation

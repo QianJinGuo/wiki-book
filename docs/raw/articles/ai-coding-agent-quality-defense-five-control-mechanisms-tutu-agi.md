@@ -5,7 +5,7 @@ source: wechat
 author: 兔兔AGI / 技术极简主义
 published: 2026-06-02
 ingested: 2026-06-02
-type: raw-archive
+type: raw-article
 tags: [wechat, ai-coding, code-quality, harness-engineering, five-mechanisms, feedback-sensors, semantic-evals, refactor-boundaries, provenance-trails, agent-surface-inventory]
 sha256: a0e637cf7a52a2ab61422353ac4b29b49c3f8caf335d731b172c4430de4909c3
 ---

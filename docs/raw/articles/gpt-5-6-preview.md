@@ -2,7 +2,7 @@
 title: "GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: 2ce4c47065b9eb18e636549ec5f9bad1240cf8b814673d33ff2070f513e912e3
 ---

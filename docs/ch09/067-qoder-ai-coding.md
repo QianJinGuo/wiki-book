@@ -8,22 +8,6 @@
 
 2026年7月8日，Qoder 全球站正式发布企业版，覆盖从 Credits 资源池化、按人按库的模型分发，到企业专属 Plugin/Skill 市场、十万级大库知识引擎，再到五层纵深防御安全体系，旨在将 AI Coding 从"个人研发工具"升级为"企业组织能力"。Qoder CN 和 Qoder 的企业版在国内、国际阿里云云市场同步开售。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Qoder 企业版全球发布 让 AI Coding"))
-    产品功能详解
-      共享 Credits 资源池
-      分级模型权限管控
-      企业专属 PluginSkill 市场
-    AI Coding 从效率提升到组织能力的范式跃迁
-    PluginSkill 市场作为组织知识资产管理的基础设施
-    模型权限按代码库分级是解决企业 AI 安全焦虑的关键设计
-    RepoWiki 解决了AI 理解大型代码库的工程瓶颈
-```
-
 ## 核心要点
 
 - **Credits 资源池化**：企业以共享资源包的方式持有 Credits，管理员可按需为成员或计费组动态分配额度，支持云市场兑换码席位管理。
@@ -33,42 +17,6 @@ mindmap
 - **五层纵深防御**：覆盖传输加密、身份与访问控制、AI 运行时、数据存储、审计合规五大领域，已通过 ISO/IEC 27001:2022 国际认证。
 
 ## 产品功能详解
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### 共享 Credits 资源池
 

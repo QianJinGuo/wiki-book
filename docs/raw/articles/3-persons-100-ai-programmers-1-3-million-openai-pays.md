@@ -4,7 +4,7 @@ source_url: https://mp.weixin.qq.com/s/5O0b8Q0xTKU6_jHq93IUwA
 author: 新智元
 date: 2026-05-17
 title: 3个人带100个AI程序员，一个月烧掉130万美元！OpenAI：钱我出
-type: raw
+type: raw-article
 tags: [openclaw, ai-agents, software-engineering, codex, peter-steinberger]
 review_value: 7
 review_confidence: 8

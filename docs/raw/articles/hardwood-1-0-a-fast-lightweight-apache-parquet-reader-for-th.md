@@ -2,7 +2,7 @@
 title: "Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: aaa8d885fd9ac0ff4466ede9625f70ecfbf00367f3d9e0b55123fb0188cee4c5
 ---

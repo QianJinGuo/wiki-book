@@ -2,7 +2,7 @@
 title: "devin fusion"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: cbbd438e2b3cac201dddd84bcda46c59f834f30259e0d2ac79d7e8733eb13fe3
 ---

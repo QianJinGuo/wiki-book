@@ -8,17 +8,6 @@
 
 Claude Code 创始人揭秘 Claude Tag 功能在团队协作中的实战应用，如何通过 Tag 系统实现团队级别的 AI 代码生成管理。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude code创始人最新揭秘 Claude"))
-    三级跳从补全一行代码到AI自己给自己排期
-    什么是Claude Tag
-    技术支撑更长的自主运行时间加上真正好用的记忆
-```
-
 ## 核心内容
 
 ↑阅读之前记得关注+星标⭐️，😄，每天才能第一时间接收到更新
@@ -57,41 +46,6 @@ Claude Tag  被Andrej karpathy称为一个LLM交互范式变革，可以看我�
 
 ---
 ## 关联
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

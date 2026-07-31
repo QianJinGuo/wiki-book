@@ -6,7 +6,7 @@ author: 月珩
 publisher: 阿里云开发者
 published: 2026-05-14
 created: 2026-05-14
-type: raw
+type: raw-article
 tags:
   - skill-system
   - skill-factory

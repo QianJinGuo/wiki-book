@@ -5,7 +5,7 @@ source_url: [ORIGINAL_URL]
 ingested: 2026-05-08
 created: 2026-05-08
 updated: 2026-05-08
-type: raw
+type: raw-article
 tags: [rss, aws, post-training]
 summary: Textract+Claude混合方案：79.7%→90.8%准确率 / 91%成本降低 / 每月330万次评估
 sha256: fa5c52979599

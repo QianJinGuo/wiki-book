@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/WZFHvVCil9GkQ-oTclS_Tw"
 published_date: "2026-05-20"
 feed_name: "微信公众号"
 tags: [hermes, agent-loop, agent-architecture, source-code, self-evolution]
-type: article
+type: raw-article
 review_value: 8
 review_confidence: 9
 review_recommendation: "pass"

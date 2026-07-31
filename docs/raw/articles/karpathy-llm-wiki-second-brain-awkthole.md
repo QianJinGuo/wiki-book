@@ -1,7 +1,7 @@
 ---
 title: "karpathy-llm-wiki-second-brain-awkthole"
 created: 2026-06-10
-type: raw
+type: raw-article
 sha256: 2400e20bdc3fcc6b1f30348859c594bccb494f1060df794d05697b0b20b0a332
 ---
 source_url: https://mp.weixin.qq.com/s/gbqMeYi2AEAKlxIRxkdM5Q

@@ -5,7 +5,7 @@ source_site: "ChallengeHub"
 author: "ChallengeHub"
 ingested: "2026-07-08"
 sha256: "467e9670bbf009649af7af85b7029d8e01ee52276df80cc113e87e4667732781"
-type: raw
+type: raw-article
 tags:
   - loop-engineering
   - prompt-engineering

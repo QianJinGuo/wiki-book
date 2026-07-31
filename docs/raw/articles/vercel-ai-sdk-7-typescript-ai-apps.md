@@ -2,7 +2,7 @@
 title: "AI SDK 7 is now available"
 created: 2026-05-01
 updated: 2026-07-24
-type: raw
+type: raw-article
 tags: [raw, article]
 sha256: afc9c44f9ffe6cb59e131602801554945ec57634a09facde6e2be4ab531726e1
 ---

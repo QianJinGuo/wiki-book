@@ -6,63 +6,13 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-i-moved-my-digital-stack-to-europe.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How I Moved My Digital Stack to"))
-    核心洞察 数字主权不是口号 而是基础设施决策
-    迁移策略 分层方法与例外管理
-    欧洲云生态系统的成熟度验证
-    权衡与局限
-```
-
 ## 相关实体
 
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1268-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1273-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [How we made WINDOW JOIN parallel and vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 ### 核心洞察：数字主权不是口号，而是基础设施决策
 这篇文章的核心价值在于将"数字主权"从一个模糊的概念具体化为一系列可执行的基础设施迁移决策。作者的动机并非意识形态驱动，而是务实地评估了风险：政策变化、收购、管理层决策都可能导致依赖的 SaaS 工具突然不可用。
 **数字主权的操作性定义**：知道数据在哪里、谁能访问、什么情况下会失去访问权。这个框架帮助作者在每个服务选择上做出具体判断。

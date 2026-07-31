@@ -5,7 +5,7 @@ source_url: "https://mp.weixin.qq.com/s/yFMOCrnWxyZF9EGw9Q0O9g"
 feed_name: "架构师"
 author: "若飞"
 ingested: "2026-05-29"
-type: article
+type: raw-article
 tags: [skill, agent, workflow-asset, process-layer, agent-runtime, engineering]
 sha256: "e522875f3737e1c7efd1691570661238a1bdd0bf02539fb1b8a501b74aba6f9e"
 ---

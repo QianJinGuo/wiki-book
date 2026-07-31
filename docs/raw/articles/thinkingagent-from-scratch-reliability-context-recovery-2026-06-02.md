@@ -6,7 +6,7 @@ author: "Thinking（工程师与艺术家）"
 published: "2026-06-02"
 ingested: "2026-06-17"
 sha256: "8acacf03ec2ddc37dbfec1cad4322909bf0e0a2dc79c5af497cee0163360cb88"
-type: raw
+type: raw-article
 tags:
   - agent-framework
   - thinkingagent
