@@ -6,6 +6,24 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    CAND[候选输出] -->|验证| VER[已验证动作]
+    VER -->|dry-run| EXEC[已执行动作]
+    EXEC -->|checkpoint| COMMIT[已提交状态]
+    
+    CAND -.->|跳过验证| ACCIDENT1[事故: 猜测当事实]
+    CAND -.->|跳过dry-run| ACCIDENT2[事故: 副作用不可逆]
+    VER -.->|跳过退场| ACCIDENT3[事故: 临时结论成长期偏好]
+    
+    COMMIT -->|失败回写| TRACE[Trace分析]
+    TRACE -->|修正验证规则| CAND
+    
+    style ACCIDENT1 fill:#fdd
+    style ACCIDENT2 fill:#fdd
+    style ACCIDENT3 fill:#fdd
+```
+
 若飞 2026-06-02 续篇把 Agent Harness Engineering 综述（[LLM-Harness Survey](https://picrew.github.io/LLM-Harness/)）从"组件清单"推到"**运行时闭环**"。核心论断：Harness 之后，Agent 可靠性的下一步是**状态边界**和**失败闭环**——模型可以给出可能性，但系统不能轻易把可能性当成事实。下一步拆成三件事：**运行时契约 / 状态提交闸门 / 失败回写闭环**。
 
 > 综述给的是 ETCLOVG 七层分类（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance），但**分类 ≠ 闭环**。一个系统可以有 memory、tools、sandbox、trace、eval、policy，仍然可能不可靠——关键是这些组件互相咬合、形成能恢复能复查的闭环。

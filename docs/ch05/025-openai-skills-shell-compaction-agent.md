@@ -2,6 +2,18 @@
 
 ## Ch05.025 OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语
 
+```mermaid
+graph TB
+    subgraph Trinity["三位一体 Agent 原语"]
+        SK[Skills: 可复用能力封装]
+        SH[Shell: 运行时环境接口]
+        CO[Compaction: 上下文压缩策略]
+    end
+    SK -->|定义| SH
+    SH -->|产生| CO
+    CO -->|释放空间| SK
+```
+
 > 📊 Level ⭐⭐ | 17.0KB | `entities/openai-skills-shell-compaction-agent-primitives.md`
 
 > -> [OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-skills-shell-compaction-agent-primitives.md)

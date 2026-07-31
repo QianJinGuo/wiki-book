@@ -2,6 +2,15 @@
 
 ## Ch05.029 万字干货！Harness Engineering如何工程化落地？
 
+```mermaid
+graph TB
+    subgraph Landing["Harness 落地路径"]
+        STEP1["1. 确定性边界<br/>测试/lint/类型"] --> STEP2["2. 受控执行<br/>沙箱/审批/回滚"]
+        STEP2 --> STEP3["3. 上下文管理<br/>压缩/检索/预算"]
+        STEP3 --> STEP4["4. 反馈闭环<br/>trace/评估/自改进"]
+    end
+```
+
 > 📊 Level ⭐⭐ | 16.1KB | `entities/harness-engineering-jk-launcher-baijiajie.md`
 
 # 万字干货！Harness Engineering如何工程化落地？

@@ -2,6 +2,22 @@
 
 ## Ch05.014 Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧
 
+```mermaid
+graph TB
+    subgraph OC["OpenClaw"]
+        O1[规则驱动] --> O2[确定性流程]
+    end
+    subgraph HM["Hermes"]
+        H1[Agent驱动] --> H2[自主决策+约束]
+    end
+    subgraph CC["Claude Code"]
+        C1[单线程循环] --> C2[有纪律的工具]
+    end
+    OC -->|薄harness| COMMON[Harness 共性: 编排+工具+记忆+上下文]
+    HM -->|中harness| COMMON
+    CC -->|厚harness| COMMON
+```
+
 > 📊 Level ⭐⭐ | 22.6KB | `entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md`
 
 # Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧

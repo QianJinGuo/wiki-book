@@ -2,6 +2,14 @@
 
 ## Ch03.074 Boris Cherny — 从 IDE 到 Agent 控制台
 
+```mermaid
+graph LR
+    subgraph Evolution["IDE → Agent 控制台"]
+        IDE["IDE<br/>人驱动工具"] --> COPILOT["Copilot<br/>人+AI协作"]
+        COPILOT --> AGENT3["Agent Console<br/>AI驱动+人审查"]
+    end
+```
+
 > 📊 Level ⭐⭐ | 11.6KB | `entities/boris-cherny-ide-to-agent-console.md`
 
 ## 人物背景
