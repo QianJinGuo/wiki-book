@@ -2,6 +2,20 @@
 
 ## Ch05.020 Martin Fowler AI 研发 Harness：非确定性承重层
 
+```mermaid
+graph TB
+    subgraph Control["控制二分法"]
+        FF_D[前馈×计算: 类型检查/CLI默认参数]
+        FF_S[前馈×语义: 架构说明/Skill准入]
+        FB_D[反馈×计算: 测试/lint/静态分析]
+        FB_S[反馈×语义: LLM judge/人工review]
+    end
+    FF_D -->|便宜稳定| EARLY[尽量前移]
+    FF_S --> EARLY
+    FB_D -->|关键节点| LATE[留给闸门]
+    FB_S --> LATE
+```
+
 > 📊 Level ⭐⭐ | 18.2KB | `entities/martin-fowler-ai-rd-harness-nondeterminism.md`
 
 ## 核心洞察

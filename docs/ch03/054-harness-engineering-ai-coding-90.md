@@ -2,6 +2,19 @@
 
 ## Ch03.054 Harness Engineering 详解：如何将 AI Coding 率提升至 90%
 
+```mermaid
+graph TB
+    subgraph Funnel["AI Coding 提升漏斗"]
+        A[AI Coding率 30%] --> B[+Spec规范 50%]
+        B --> C[+Harness约束 70%]
+        C --> D[+反馈闭环 90%]
+    end
+    subgraph Enablers["三大赋能"]
+        SPEC2[规范驱动] --> AUTO2[自动化验证]
+        AUTO2 --> FEED[反馈闭环]
+    end
+```
+
 > 📊 Level ⭐⭐ | 31.3KB | `entities/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md`
 
 > -> [harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)

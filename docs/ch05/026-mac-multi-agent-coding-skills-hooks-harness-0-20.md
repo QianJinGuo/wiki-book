@@ -2,6 +2,21 @@
 
 ## Ch05.026 MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法
 
+```mermaid
+graph TB
+    subgraph MAC["MAC 两层 Harness"]
+        subgraph Skills2["Skills 层: 能力定义"]
+            S1[触发条件] --> S2[执行步骤]
+            S2 --> S3[验证方式]
+        end
+        subgraph Hooks2["Hooks 层: 流程拦截"]
+            H1[Pre-hook: 审查] --> H2[Post-hook: 验证]
+            H2 --> H3[Error-hook: 恢复]
+        end
+    end
+    Skills2 -->|0-20% 人工| AUTO[完全委托区间]
+```
+
 > 📊 Level ⭐⭐ | 16.9KB | `entities/mac-multi-agent-coding-skills-hooks-harness.md`
 
 # MAC（multi-agent-coding）：Skills + Hooks 两层 Harness

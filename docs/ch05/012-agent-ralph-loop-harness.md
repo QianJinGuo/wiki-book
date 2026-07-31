@@ -2,6 +2,23 @@
 
 ## Ch05.012 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 
+```mermaid
+graph TB
+    subgraph Cards["5 张卡治理框架"]
+        ID[身份卡: Agent是谁] --> PROJ[项目卡: 怎么做事]
+        PROJ --> MEM[记忆卡: 下次自动带什么]
+        MEM --> SKILL[Skill卡: 按什么流程做]
+        SKILL --> RUN[运行卡: 怎么被看见和暂停]
+    end
+    subgraph Ralph["Ralph Loop 循环"]
+        START[启动任务] --> EXEC[Agent执行]
+        EXEC --> CHECK{检查点}
+        CHECK -->|需人工| HANDOFF[人类接管]
+        CHECK -->|可继续| EXEC
+        HANDOFF -->|交接回来| EXEC
+    end
+```
+
 > 📊 Level ⭐⭐ | 23.4KB | `entities/long-running-agent-ralph-loop-handover-harness-ruofei.md`
 
 ## 5 张卡治理框架（若飞 2026-06 续篇）

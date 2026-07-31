@@ -2,6 +2,22 @@
 
 ## Ch05.009 阿里工程师 Harness 工程化实践 (双案例合并)
 
+```mermaid
+graph TB
+    subgraph Case1["案例1: 编码 Agent"]
+        REQ1[需求输入] --> AG1[Agent 编码]
+        AG1 --> REV1[代码审查]
+        REV1 -->|通过| MERGE1[合并]
+        REV1 -->|失败| AG1
+    end
+    subgraph Case2["案例2: 运维 Agent"]
+        ALERT[告警触发] --> DIAG[Agent 诊断]
+        DIAG --> FIX[自动修复]
+        FIX --> VERIFY2[验证恢复]
+        VERIFY2 -->|失败| ESC[人工升级]
+    end
+```
+
 > 📊 Level ⭐⭐ | 26.3KB | `entities/harness-engineering-alibaba-java-case-study.md`
 
 ## 文章概要

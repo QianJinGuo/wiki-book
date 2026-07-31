@@ -2,6 +2,16 @@
 
 ## Ch03.067 Qoder Skill UI — Agent 与人类的协作界面层
 
+```mermaid
+graph LR
+    subgraph UI["Qoder Skill UI 协作层"]
+        HUMAN[人类] -->|指令| SKILL_UI[Skill UI]
+        AGENT2[Agent] -->|执行结果| SKILL_UI
+        SKILL_UI -->|状态展示| HUMAN
+        SKILL_UI -->|Skill调用| AGENT2
+    end
+```
+
 > 📊 Level ⭐⭐ | 13.0KB | `entities/qoder-skill-ui.md`
 
 ## Overview

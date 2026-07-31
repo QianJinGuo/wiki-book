@@ -2,6 +2,21 @@
 
 ## Ch03.063 gstack — AI协作开发工作流 & 复杂度棘轮
 
+```mermaid
+graph TB
+    subgraph Ratchet["复杂度棘轮"]
+        DEV[开发新功能] --> ADD[添加抽象]
+        ADD --> COUP[耦合增长]
+        COUP --> MAINT[维护成本上升]
+        MAINT -->|需要更多| DEV
+    end
+    subgraph Gstack["gstack 治理"]
+        SPEC3[规范约束] --> REVIEW[Review门禁]
+        REVIEW --> SIMPLIFY[简化推动]
+    end
+    Gstack -->|对抗| Ratchet
+```
+
 > 📊 Level ⭐⭐ | 14.1KB | `entities/gstack-ai-workflow.md`
 
 # gstack
