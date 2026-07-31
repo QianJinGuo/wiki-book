@@ -14,17 +14,16 @@
 ```mermaid
 mindmap
   root(("AWS China 企业级智能体评估方法论 ADLC 系列"))
-    核心命题：为什么 Agent 评估不同于传统 QA
-    ADLC：Agent Development …
-    评估方法论框架：两根支柱
-      支柱一：评什么（维度体系）
-      支柱二：怎么评（方法矩阵）
-    工程化落地：评估嵌入开发流程
+    核心命题 为什么 Agent 评估不同于传统 QA
+    ADLC Agent Development Lifecycle
+    评估方法论框架 两根支柱
+      支柱一 评什么 维度体系
+      支柱二 怎么评 方法矩阵
+    工程化落地 评估嵌入开发流程
       评估数据集管理
       工程纪律
       AgentCore Evaluations 工具
     与现有 Agent 评估实体差异化
-    来源
 ```
 
 ## 核心命题：为什么 Agent 评估不同于传统 QA

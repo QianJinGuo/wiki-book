@@ -7,18 +7,6 @@
 # Claude Fable 5 and new AI safety fables
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Fable 5 and new AI sa…"))
-    深度分析
-      技术要点
-      关联实体
-    实践启示
-    第 2 来源：AWS 中国官方博客 2026-…
-```
-
 ## 深度分析
 
 Claude Fable 5 与 AI 安全寓言新篇：通过寓言式叙事探讨 AI 安全的前沿挑战，以隐喻方式揭示对齐问题的深层困境

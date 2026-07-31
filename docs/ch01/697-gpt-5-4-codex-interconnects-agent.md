@@ -13,14 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("GPT 5.4 Codex 评测：Interconnec…"))
+  root(("GPT 54 Codex 评测 Interconnects 的"))
     Agent 评测的四个维度
     为什么之前离开 OpenAI Agent
-    GPT 5.4 vs Claude 的个性差异
+    GPT 54 vs Claude 的个性差异
     实际优势
     弱点
-    深度分析
-    实践启示
     结论
 ```
 

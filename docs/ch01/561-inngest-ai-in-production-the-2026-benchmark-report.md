@@ -9,23 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Inngest - AI in Production: …"))
-    关键发现
-      1. 信心悖论（The Confidence …
-      2. 可观测性缺口（The Observabi…
-      3. 可靠性税（The Reliability…
-      4. 信心团队的三个基础设施层
+  root(("Inngest - AI in Production The"))
+    信心悖论 The Confidence Paradox
+    可观测性缺口 The Observability Gap
+    可靠性税 The Reliability Tax
+    信心团队的三个基础设施层
     调研方法
-    相关实体
-    深度分析
-      信心悖论的根因
-      可观测性为何是最急迫痛点
-      可靠性税的结构性成因
-      三个层次的协同效应
-    实践启示
-      对基础设施选型的启示
-      对工程团队的启示
-      对组织规模的启示
+    信心悖论的根因
+    可观测性为何是最急迫痛点
+    可靠性税的结构性成因
 ```
 
 ## 核心要点

@@ -11,15 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("Agent Harness 实现对比 A3：SubAge…"))
-    深度分析
-      1. 导言：SubAgent 的三个核心目的
-      2. 综述：SubAgent 范式  古典 …
-      3. Claude Code：4 种互斥模式
-      4. Codex：3 种模式
-    实践启示
+  root(("Agent Harness 实现对比 A3 SubAgent 7"))
+    导言 SubAgent 的三个核心目的
+    综述 SubAgent 范式 古典 MultiAgent
+    Claude Code 4 种互斥模式
+    Codex 3 种模式
     相关页面
-    相关实体
 ```
 
 ## 摘要

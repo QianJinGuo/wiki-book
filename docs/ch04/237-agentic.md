@@ -13,17 +13,13 @@
 mindmap
   root(("火山引擎发布 Agentic 全栈数据管理服务"))
     技术架构
-      ContextSearch：从 RAG 到 A…
-      Mem0：Agent 长期记忆的「经验自进化循环」
-      Supabase：AI 原生 BaaS 平台的…
-      Milvus 向量数据库增强
-    深度分析
-      1. 数据基础设施从「被动存储」到「主动服务」…
-      2. Agent 负载特征对数据库架构的技术挑战
-      3. 「记忆」成为 Agent 数据基础设施的…
-      4. 安全可控是 Agent 数据库操作的核心前提
-    实践启示
-    相关实体
+      ContextSearch 从 RAG 到 Agentic
+      Mem0 Agent 长期记忆的「经验自进化循环」
+      Supabase AI 原生 BaaS 平台的创新设计
+    数据基础设施从「被动存储」到「主动服务」的角色转变
+    Agent 负载特征对数据库架构的技术挑战
+    「记忆」成为 Agent 数据基础设施的核心抽象层
+    安全可控是 Agent 数据库操作的核心前提
 ```
 
 ## 摘要

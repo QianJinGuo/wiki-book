@@ -5,18 +5,6 @@
 > 📊 Level ⭐⭐ | 4.3KB | `entities/cloudsectidbits.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CloudSecTidbits：云安全研究摘要"))
-    Key Research
-      Masso: Cognito SSO Bypass
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## Key Research
 
 ```mermaid

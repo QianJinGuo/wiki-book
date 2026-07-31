@@ -60,16 +60,6 @@ Skill 可能记着"修 bug 的一般流程"
 • 步骤 1：用户问"帮我把这周的 HN 头条整理成摘要发到 Telegram"• 步骤 2：Agent 启动会话，system prompt 自动包含： USER.md（"User prefers short summaries"）和 Skills 索引（发现 "weekly-digest" 技能相关）• 步骤 3：Agent 调用 skill_view("weekly-digest") 加载技能，按步骤执行• 步骤 4：执行中发现技能写的"RSS 抓取"过时了，用户实际用 HN API。Agent 调用 skill_manage(action='patch') 更新技能• 步骤 5：用户说"以后只要 5 条头条"。Agent 调用 memory(action='add', target='user', content='User wants HN digest capped at 5 headlines')• 步骤 6：磁盘更新，但本次会话 system prompt 不变• 步骤 7：下周用户再问同样的问题。启动时 system prompt 已经包含新记忆和修补后的技能。用户不需要重复"只要 5 条"、不需要纠正技能错误。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent 自进化源码分析"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 **1. Self-Improving的本质：显式知识沉淀而非隐式权重更新**
 Hermes Agent的自进化机制之所以值得关注，在于它选择了一条完全不同于模型微调的道路：不是通过RLHF或模型权重更新来实现能力提升，而是通过建立一套显式的知识沉淀系统，让模型通过工具主动记录经验并在后续会话中自动加载。这两种路径的本质区别在于：权重更新是全局的、不可逆的、难以撤回的；而显式知识沉淀是局部的、可审计的、可即时修补的。对于需要高度可靠性和可预测性的生产环境，显式知识沉淀的可控性远优于黑箱式的权重更新。此外，显式知识以结构化的skill和memory形式存在，使得人类可以直接检查、修改和删除，这为AI系统的可解释性和安全性提供了重要基础。

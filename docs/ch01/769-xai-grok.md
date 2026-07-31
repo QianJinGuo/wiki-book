@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xai-shutdown-grok-still-alive.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("xai解散但Grok还活着"))
-    关键要点
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘要
 xAI 解散但 Grok 还活着。2026年5月6日马斯克官宣 xAI 解散并入 SpaceX，更名 SpaceXAI。次日他把 Colossus 1 全部算力租给 Anthropic。第三天他发推反驳 Grok 死亡论，强调 Colossus 2 正在同时训练多款新 Grok。三天内三件事：xAI 公司解散，Colossus 1 的 Hopper 老卡折现，但 Grok 产品线没死。
 

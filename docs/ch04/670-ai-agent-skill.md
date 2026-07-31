@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("告别复杂接入流程：用 AI Agent Skill 驱动…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入 涉及agent领域的核心技术议题。

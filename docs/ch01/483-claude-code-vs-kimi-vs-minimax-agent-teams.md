@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code vs Kimi vs MiniM…"))
-    深度分析
-      「Agent Teams」的本质是 harne…
-      Claude Code Agent Teams…
-      Kimi K2.5 Agent Swarm：规…
-      MiniMax Mavis：状态机驱动的产品化…
-    实践启示
-    相关实体
+  root(("Claude Code vs Kimi vs MiniMax"))
+    「Agent Teams」的本质是 harness 工程 而非多
+    Claude Code Agent Teams 最像工程团队的协作范式
+    Kimi K25 Agent Swarm 规模化探索的并行引擎
+    MiniMax Mavis 状态机驱动的产品化工作流
 ```
 
 ## 摘要

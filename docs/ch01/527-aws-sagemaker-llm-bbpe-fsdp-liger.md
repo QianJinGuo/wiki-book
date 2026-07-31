@@ -15,23 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("AWS SageMaker 阿塞拜疆语 LLM 训练：B…"))
+  root(("AWS SageMaker 阿塞拜疆语 LLM 训练 BBPE"))
     自定义 BBPE 分词器设计
-    阶段二：FSDP + Liger 的 CPT …
+    阶段二 FSDP Liger 的 CPT 分布式训练
     两阶段 CPT 配置
-    阶段三：LoRA 参数高效微调
-    关键数据/实践启示
-    深度分析
-      1. 低资源语言 LLM 的分词器困境
-      2. FSDP + Liger Kernel …
-      3. 低资源语言模型的经济价值
-      4. 数据收集是低资源语言的最大瓶颈
-    实践启示
-      1. 低资源语言 LLM：优先投资数据而非模型架构
-      2. 分词器选择：BBPE 对低资源语言更优
-      3. 分布式训练：FSDP + Liger 是…
-      4. 不要低估文化适配的难度
-    相关实体
+    阶段三 LoRA 参数高效微调
+    低资源语言 LLM 的分词器困境
+    FSDP Liger Kernel 的分布式训练优化
+    低资源语言模型的经济价值
+    数据收集是低资源语言的最大瓶颈
 ```
 
 ## 自定义 BBPE 分词器设计

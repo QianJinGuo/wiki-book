@@ -13,18 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Demis Hassabis YC Interview:…"))
-    深度分析
-      AGI 时间线：2030 年与深科技创业的张力
-      当前架构的根本局限：记忆、推理、持续学习
-      '锯齿状智能'的具象案例：下棋走错路
-      AlphaGo 思想回归：从语言模型到搜索 +…
-    实践启示
-      对 AI Agent 构建者
-      对深科技创业者
-      对 AI 产品架构师
-      对科学发现 AI 工具设计者
-    相关实体
+  root(("Demis Hassabis YC Interview AGI"))
+    AGI 时间线 2030 年与深科技创业的张力
+    当前架构的根本局限 记忆 推理 持续学习
+    锯齿状智能的具象案例 下棋走错路
+    AlphaGo 思想回归 从语言模型到搜索 推理
+    对 AI Agent 构建者
+    对深科技创业者
+    对 AI 产品架构师
+    对科学发现 AI 工具设计者
 ```
 
 ## 摘要

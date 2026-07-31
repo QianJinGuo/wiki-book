@@ -31,15 +31,6 @@ publish_date: 2026-05-06
 这里面最核心的问题在于：r e
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里开源PromptEcho：用冻结多模态大模型为文生图…"))
-    详细信息
-    原文
-```
-
 ## 核心要点
 
 > 本文为微信公众号文章，由 WeChat backfill 收录。

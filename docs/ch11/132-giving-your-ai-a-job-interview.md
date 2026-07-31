@@ -16,13 +16,13 @@ Ethan Mollick（One Useful Thing）关于 AI 评估方法论的深度文章。�
 ```mermaid
 mindmap
   root(("Giving your AI a Job Interview"))
-    深度分析
-      1. AI 评估的'效度危机'——我们在测什么？
-      2. Vibes 式测试的隐性价值：探测模型的…
-      3. GuacaDrone 实验揭示的'态度偏…
-      4. '面试'类比的力量与局限
-    实践启示
-      相关实体
+    基准测试的三重问题
+    三种评估路径
+    GuacaDrone 实验 AI 的判断倾向差异
+    AI 评估的效度危机我们在测什么
+    Vibes 式测试的隐性价值 探测模型的世界观
+    GuacaDrone 实验揭示的态度偏差是规模化部署的系统性风险
+    面试类比的力量与局限
 ```
 
 ## 摘要

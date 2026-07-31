@@ -21,16 +21,13 @@ type: entity
 
 ```mermaid
 mindmap
-  root(("The inevitable need for an o…"))
-    深度分析
-      1. 开放模型联盟的必然性
-      2. 开放 ≠ 开源
-      3. 与 Linux 历史的类比
-    实践启示
-      1. 评估'开放'模型的实际许可条款
-      2. 关注开放模型联盟的治理进展
-      3. 多模型策略减少单一供应商风险
-    相关实体
+  root(("The inevitable need for an open"))
+    开放模型联盟的必然性
+    开放 开源
+    与 Linux 历史的类比
+    评估开放模型的实际许可条款
+    关注开放模型联盟的治理进展
+    多模型策略减少单一供应商风险
 ```
 
 ## 深度分析

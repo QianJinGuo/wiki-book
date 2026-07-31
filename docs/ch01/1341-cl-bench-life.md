@@ -12,16 +12,6 @@
 博客链接：https://hy.tencent.com/research/100039
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("腾讯混元 CL-Bench Life：让大模型读懂你的日…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)
 - [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/617-python.html)

@@ -14,15 +14,13 @@
 ```mermaid
 mindmap
   root(("中国用户安全高性能访问海外 Bedrock"))
-    核心问题
     三类场景识别
     三条路径解决方案
-      路径 1：专线（DX / SD-WAN）直连 …
-      路径 2：Client VPN 回传 — 场景 B
-      路径 3：海外 EC2 代理 TLS 透传 —…
+      路径 1 专线 DX SD-WAN 直连 场景 A
+      路径 2 Client VPN 回传 场景 B
+      路径 3 海外 EC2 代理 TLS 透传 场景 C 兜底
     关键架构要素
     与其他 AWS 网络方案的差异化
-    相关主题
 ```
 
 ## 核心问题

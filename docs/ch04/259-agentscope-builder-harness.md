@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("AgentScope Builder 快速体验：用 Ha…"))
-    背景：Claw 的边界
+  root(("AgentScope Builder 快速体验 用 Harness"))
+    背景 Claw 的边界
     AgentScope Builder 是什么
-    核心设计：workspace 是 Agent …
-    零代码 + 自我进化
-    核心机制：CompositeFilesystem
-    深度分析
-      1. 从「单人本机」到「多租户分布式」的架构跨越
-      2. 「静态 Agent」vs「自进化 Age…
-      3. 细粒度授权体系决定了 Agent 分享的…
-      4. 多副本一致性问题：分布式workspac…
-    实践启示
-    相关主题
+    核心设计 workspace 是 Agent 的资产
+    零代码 自我进化
+    核心机制 CompositeFilesystem
+    从「单人本机」到「多租户分布式」的架构跨越
+    「静态 Agent」vs「自进化 Agent」的本质差异
+    细粒度授权体系决定了 Agent 分享的天花板
 ```
 
 ## 背景：Claw 的边界

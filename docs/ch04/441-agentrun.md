@@ -12,18 +12,14 @@
 ```mermaid
 mindmap
   root(("深势科技携手阿里云AgentRun"))
-    关键要点
-    深度分析
-      1. AI4S 的特殊性：从'辅助工具'到'原…
-      2. 科研 Agent 的四大工程挑战
-      3. AgentRun 的技术解法
-      4. MCP 市场：工具链标准化的战略价值
-    实践启示
-      1. 科研 Agent 需要专门的架构设计，不…
-      2. Serverless 架构与 Agent…
-      3. 安全沙箱是 Agent 工程化的标配
-      4. MCP 生态是 Agent 能力扩展的关…
-    相关实体
+    AI4S 的特殊性 从辅助工具到原生范式
+    科研 Agent 的四大工程挑战
+    AgentRun 的技术解法
+    MCP 市场 工具链标准化的战略价值
+    科研 Agent 需要专门的架构设计 不能直接套用通用 Agent 框架
+    Serverless 架构与 Agentic AI 的结合是重要趋势
+    安全沙箱是 Agent 工程化的标配
+    MCP 生态是 Agent 能力扩展的关键基础设施
 ```
 
 ## 摘要

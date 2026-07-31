@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Pathfinding Labs: Deploy, te…"))
+  root(("Pathfinding Labs Deploy test and"))
     核心组成
     实验类型
     与 Stratus Red Team 的关系
     图思维与攻击链
     快速上手
     路线图
-    深度分析
-    实践启示
+    相关项目
 ```
 
 ## 核心组成

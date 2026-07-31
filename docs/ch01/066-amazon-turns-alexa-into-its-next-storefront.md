@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Turns Alexa Into Its …"))
-    相关实体
-    深度分析
-      从搜索框到语音：零售 AI 的范式转移
-      Alexa 的结构性护城河
-      Amazon vs Walmart：两种 AI…
-      代理式商务（Agentic Commerce）…
-    实践启示
-      对零售平台的启示
-      对品牌/商家的启示
-      对 AI/技术从业者的启示
+  root(("Amazon Turns Alexa Into Its Next"))
+    从搜索框到语音 零售 AI 的范式转移
+    Alexa 的结构性护城河
+    Amazon vs Walmart 两种 AI 零售战略的分野
+    代理式商务 Agentic Commerce 的临界点
+    对零售平台的启示
+    对品牌商家的启示
+    对 AI技术从业者的启示
 ```
 
 ## 核心要点

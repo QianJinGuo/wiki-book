@@ -11,20 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("A²RD: Agentic Autoregressive…"))
-    Summary
-    Key Points
-    深度分析
-      核心创新：解耦创作与一致性
-      三支柱架构
-      两阶段工作流
-      LVBench-C 基准测试
-    实践启示
-      对于视频生成研究者
-      对于 Agent 系统设计者
-      对于工程落地
+  root(("ARD Agentic Autoregressive"))
+    核心创新 解耦创作与一致性
+    三支柱架构
+    两阶段工作流
+    LVBench-C 基准测试
+    对于视频生成研究者
+    对于 Agent 系统设计者
+    对于工程落地
     相关
-    相关实体
 ```
 
 ## Summary

@@ -11,13 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Romanian Man Faces Up to 30 …"))
-    深度分析
-      VOIP 安全漏洞的系统性问题
-      Money Mule 在网络犯罪中的角色
-      与 AI 时代 Vishing 的对比
-    实践启示
-    相关实体
+  root(("Romanian Man Faces Up to 30 Years"))
+    犯罪链条的完整解构
+    Vishing 攻击的技术特征
+    跨境执法的漫长历程
+    法律后果
+    VOIP 安全漏洞的系统性问题
+    Money Mule 在网络犯罪中的角色
+    与 AI 时代 Vishing 的对比
 ```
 
 ## 摘要

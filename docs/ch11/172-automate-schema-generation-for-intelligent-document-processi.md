@@ -11,19 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Automate Schema Generation f…"))
-    关键要点
-    相关实体
-    深度分析
-      技术架构的核心创新
-      关键技术决策背后的权衡
-      Schema生成的评价机制
-      与IDP Accelerator的深度集成
-    实践启示
-      适用场景判断
-      部署与配置要点
-      质量优化策略
-      技术选型参考
+  root(("Automate Schema Generation for"))
+    技术架构的核心创新
+    关键技术决策背后的权衡
+    Schema生成的评价机制
+    与IDP Accelerator的深度集成
+    适用场景判断
+    部署与配置要点
+    质量优化策略
+    技术选型参考
 ```
 
 ## 摘要

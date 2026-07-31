@@ -11,14 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Claude Science — Anthropic 推…"))
-    深度分析
-      科研 Agent 的'前台-后台'协作模式
-      科研 Agent 面临的三大核心挑战
-      AI 三巨头的科研路线分化
-      行业验证与争议
-    实践启示
-    相关实体
+  root(("Claude Science Anthropic 推出面向科研的"))
+    产品定位
+    核心功能
+    实测表现
+    科研 Agent 的前台-后台协作模式
+    科研 Agent 面临的三大核心挑战
+    AI 三巨头的科研路线分化
+    行业验证与争议
 ```
 
 ## 摘要

@@ -13,14 +13,11 @@ MemSlides 是清华和上交联合提出的一种层级记忆驱动的 AI Slide 
 
 ```mermaid
 mindmap
-  root(("MemSlides — 层级记忆驱动的 AI Slide…"))
-    深度分析
-      层级记忆设计的范式意义
-      Three-Tier Memory 的生命周期差异
-      工具记忆：Agent 技能迁移的关键
-      Plan-Act-Guard 模式与 Safe…
-    实践启示
-    相关实体
+  root(("MemSlides 层级记忆驱动的 AI Slide 生成 Agent"))
+    层级记忆设计的范式意义
+    Three-Tier Memory 的生命周期差异
+    工具记忆 Agent 技能迁移的关键
+    Plan-Act-Guard 模式与 Safety 设计
 ```
 
 ## 核心要点

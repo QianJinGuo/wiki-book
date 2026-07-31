@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Cordon：Agent 工具调用的语义事务安全边界"))
-    深度分析
-      1. 问题：为什么'逐个工具审批'不够？
-      2. Cordon 核心：Semantic T…
-      3. 三步协议：Prepare → Valid…
-      4. 三个关键机制
-    实践启示
+  root(("Cordon Agent 工具调用的语义事务安全边界"))
+    问题 为什么逐个工具审批不够
+    Cordon 核心 Semantic Transaction
+    三步协议 Prepare Validate CommitAbort
+    三个关键机制
     相关页面
 ```
 

@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Deepgram SageMaker AI IAM Te…"))
-    深度分析
-      跨账户支持访问的安全-效率权衡
-      权限模板的设计哲学
-      与自托管部署策略的关系
-    实践启示
-    相关实体
+  root(("Deepgram SageMaker AI IAM"))
+    跨账户支持访问的安全-效率权衡
+    权限模板的设计哲学
+    与自托管部署策略的关系
 ```
 
 ## 摘要

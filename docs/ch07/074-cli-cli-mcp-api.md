@@ -9,17 +9,6 @@ CLI、MCP Server、SDK、Skills、Code Execution——这五个词看起来都�
 **核心问题：** 它应不应该有 CLI？还是 MCP Server 就够？或者它根本不该让 Agent 直接接触？
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CLI系列④·选型CLI、MCP还是API？"))
-    二、对人友好和对 Agent 友好？
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 二、对人友好和对 Agent 友好？
 Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任务）：
 

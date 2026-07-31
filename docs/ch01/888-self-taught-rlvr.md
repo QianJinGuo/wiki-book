@@ -11,12 +11,9 @@
 mindmap
   root(("Self-Taught RLVR 综述"))
     三种 Self 框架
-    RLSD：OPSD + RLVR 解耦
-    NPO：Near-Future Policy …
-    CoPD：协同进化蒸馏
-    深度分析
-    实践启示
-    相关实体
+    RLSD OPSD RLVR 解耦
+    NPO Near-Future Policy Optimization
+    CoPD 协同进化蒸馏
 ```
 
 ## 三种 Self 框架

@@ -21,14 +21,6 @@ By the end, you will have a working ecommerce MCP server that authenticates user
 To see the solution in action, watch the following demo. Then, explore the full post for a detailed guide on implementing your own production-ready MCP server and querying it from Vibe.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building and connecting a pr…"))
-    Prerequisites
-```
-
 ## Prerequisites
 
 You need an [AWS account](<https://aws.amazon.com/account/>) with permissions to create [Amazon DynamoDB](<https://aws.amazon.com/dynamodb/>) tables (NoSQL database), [Amazon Cognito](<https://aws.amazon.com/cognito/>) user pools (user identity, OAuth 2.1), A

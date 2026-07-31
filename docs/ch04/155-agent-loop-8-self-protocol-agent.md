@@ -13,27 +13,24 @@
 
 ```mermaid
 mindmap
-  root(("Agent Loop 工程手册 8 个未解问题 + SE…"))
-    一句话定位
+  root(("Agent Loop 工程手册 8 个未解问题 SELF"))
     Agent Loop 核心主张
     Agent Loop 7 件套
-    4 个核心设计法
-      ① Stopping Condition 优先…
-      ② Context 是'组装出来的'
-      ③ 失败是输入，不是终点
-      ④ 多 Agent 协作有 6 种'拓扑'
-    8 个未解问题（核心价值）
-      1. 软目标停止条件怎么办？
-      2. Maker-Checker 同病相怜
-      3. 护栏写在哪一层？
-      4. 记忆给多大？
-    SELF Protocol：30 天治理薄壳
-      是什么 / 不是什么
-      三大模块（被真实坑逼出来的）
-      30+ 天真实数据（单样本 · 公开邀拍砖）
-      Safe-Launch 安全承诺
-    SELF Protocol 对照 Loop 5…
+    个核心设计法
+      Stopping Condition 优先于 Prompt
+      Context 是组装出来的
+      失败是输入 不是终点
+    个未解问题 核心价值
+      软目标停止条件怎么办
+      Maker-Checker 同病相怜
+      护栏写在哪一层
+    SELF Protocol 30 天治理薄壳
+      是什么 不是什么
+      三大模块 被真实坑逼出来的
+      天真实数据 单样本 公开邀拍砖
+    SELF Protocol 对照 Loop 5 件套
     关键洞察提炼
+    与其他 LoopHarness 实体的关系
 ```
 
 ## 一句话定位

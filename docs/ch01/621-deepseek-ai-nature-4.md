@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek之后，中国AI「自己出题」杀进Natur…"))
-    深度分析
-      推理数据生成：从「教科书」到「习题集」的认知升级
-      「数据→Token→数据」大闭环：补齐Agen…
-      Agent三重困局的系统化解法
-      从Nature通讯到工业级Agent基础设施
-    实践启示
-    相关实体
+  root(("DeepSeek之后 中国AI「自己出题」杀进Nature通讯"))
+    推理数据生成 从「教科书」到「习题集」的认知升级
+    「数据Token数据」大闭环 补齐Agent进化的缺失链路
+    Agent三重困局的系统化解法
+    从Nature通讯到工业级Agent基础设施
 ```
 
 ## 摘要

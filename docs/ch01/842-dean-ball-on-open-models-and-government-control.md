@@ -11,14 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Dean Ball on open models and…"))
-    深度分析
-      AI 治理的两个阶段
-      '进入内部'的战略逻辑
-      独立性的制度保障
-      与开源模型政策的关联
-    实践启示
-    相关实体
+  root(("Dean Ball on open models and"))
+    三大核心直觉
+    Strategic Futures 团队定位
+    AI 治理的两个阶段
+    进入内部的战略逻辑
+    独立性的制度保障
+    与开源模型政策的关联
 ```
 
 ## 摘要

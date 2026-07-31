@@ -23,20 +23,15 @@ type: entity
 
 ```mermaid
 mindmap
-  root(("Latest open artifacts (#20):…"))
-    相关实体
-      **Our Picks**
-      **Models**
-    深度分析
-      1. 开源模型生态的结构性分散
-      2. LatentMoE 与 NVFP4：量化…
-      3. 主权 AI 的实证：Sarvam 的 I…
-      4. 从通用到专用：专用模型的功能域扩张
-    实践启示
-      1. 为特定任务域选择专用模型而非追求最大通用模型
-      2. 关注 LatentMoE + 低精度量化…
-      3. 在多语言或本土化场景中评估 Sarvam…
-      4. 利用 Chroma Context-1 …
+  root(("Latest open artifacts 20 New orgs"))
+    Our Picks
+    Models
+    开源模型生态的结构性分散
+    LatentMoE 与 NVFP4 量化预训练的新前沿
+    主权 AI 的实证 Sarvam 的 Indic 语言突破
+    从通用到专用 专用模型的功能域扩张
+    为特定任务域选择专用模型而非追求最大通用模型
+    关注 LatentMoE 低精度量化组合的实用价值
 ```
 
 ## 相关实体

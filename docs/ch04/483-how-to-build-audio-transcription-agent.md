@@ -11,13 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("How to Build Audio Transcrip…"))
-    核心内容
-      转录引擎选择
-      Agent 架构设计
-      实时 vs 批量
-    深度分析
-    实践启示
+  root(("How to Build Audio Transcription"))
+    转录引擎选择
+    Agent 架构设计
+    实时 vs 批量
 ```
 
 ## 核心内容

@@ -13,19 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Code is cheap. Don't write a…"))
-    核心理念：Code is cheap，Don'…
+  root(("Code is cheap Dont write anyAI"))
+    核心理念 Code is cheap Dont write any
     五个效率提升维度
-      1. 代码生成自动化的极限
-      2. 从编码到设计的角色转型
-      3. AI 原生工具的深度整合
-      4. 质量与效率的再平衡
-    深度分析
-      大模型的两个底层事实如何决定 Harness …
-      水流理论：从'挖水渠'到'修堤坝'的协作范式转换
-      反 slop 与'揉搓'：实施前最关键的一步
-      多层 Safety Net：代码廉价化时代的工…
-    实践启示
+      代码生成自动化的极限
+      从编码到设计的角色转型
+      AI 原生工具的深度整合
+    大模型的两个底层事实如何决定 Harness 方法论
+    水流理论 从挖水渠到修堤坝的协作范式转换
+    反 slop 与揉搓 实施前最关键的一步
+    多层 Safety Net 代码廉价化时代的工程底线
 ```
 
 ## 核心理念：Code is cheap，Don't write any

@@ -13,12 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("AWS DevOps Agent 接入中国区（二）：多账…"))
-    深度分析
-      多账号 Hub-Spoke 架构
-      跨云接入的工程取舍
-      踩坑记录
-    相关实体
+  root(("AWS DevOps Agent 接入中国区 二 多账号扩展与跨云接入"))
+    多账号 Hub-Spoke 架构
+    跨云接入的工程取舍
+    踩坑记录
 ```
 
 ## 深度分析

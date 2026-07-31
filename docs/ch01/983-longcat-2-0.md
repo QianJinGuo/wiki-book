@@ -15,11 +15,11 @@ API 平台：https://longcat.chat/platform/product
 
 ```mermaid
 mindmap
-  root(("美团 LongCat-2.0"))
+  root(("美团 LongCat-20"))
     核心参数
     架构亮点
-      LongCat Sparse Attentio…
-      零计算专家 + ScMoE
+      LongCat Sparse Attention LSA
+      零计算专家 ScMoE
       MOPD 多专家融合
     训练优化
     评测结果
@@ -28,7 +28,6 @@ mindmap
     市场表现
     应用场景示例
     与其他模型的关系
-    相关概念
 ```
 
 ## 核心参数

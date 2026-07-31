@@ -8,18 +8,6 @@
 从微信文章 [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md) 提取。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我把 Karpathy 的 AutoResearch 搬…"))
-    核心内容
-      主要章节
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g
 

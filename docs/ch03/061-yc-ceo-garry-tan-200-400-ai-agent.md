@@ -9,16 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("YC CEO Garry Tan：200美元重构400万…"))
+  root(("YC CEO Garry Tan 200美元重构400万美元项目"))
     人物背景
-    核心工作流：Token Maxxing
-    Thin Harness, Fat Skill…
-    Claude + Codex 双 AI 协作模式
-    GStack：并行 15 个 Agent 的开…
+    核心工作流 Token Maxxing
+    Thin Harness Fat Skills 架构理念
+    Claude Codex 双 AI 协作模式
+    GStack 并行 15 个 Agent 的开发框架
       Agent 脆弱性的容忍策略
     测试覆盖率与代码质量
-    效率对比：400 倍产出从何而来
-    '时间亿万富翁'概念与 AI 革命
+    效率对比 400 倍产出从何而来
+    时间亿万富翁概念与 AI 革命
 ```
 
 ## 人物背景

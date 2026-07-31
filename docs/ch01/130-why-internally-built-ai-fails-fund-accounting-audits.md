@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Why Internally-Built AI Fail…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - ...
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)

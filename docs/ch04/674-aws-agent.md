@@ -7,16 +7,6 @@
 # 基于 AWS 智能设备助手行业资产，构建社交渠道触达的消费级 Agent 交互应用
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 AWS 智能设备助手行业资产，构建社交渠道触达的消…"))
-    相关实体
-    与现有实体的差异化
-    实践启示
-```
-
 ## 相关实体
 - [habby 游戏借助 aws devops agent 实现智能运维最佳实践](../ch11/290-aws-devops-agent.html)
 - [agent-evalkit：aws 开源 cli agent 评测工具包](../ch03/035-agent.html)

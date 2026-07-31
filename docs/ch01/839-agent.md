@@ -9,23 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("存之有序，治之有矩——Agent 记忆系统的工程实践与演进"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    补充：Agent 经验变更系统视角（若飞/架构…
-      六层经验层级
-      读取链与写入链分离
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 # 存之有序，治之有矩——Agent 记忆系统的工程实践与演进

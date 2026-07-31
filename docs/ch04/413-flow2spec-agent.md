@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Flow2Spec：开发过程自然长出知识图谱的 Agen…"))
-    核心洞察
-      「上下文越多 Agent 越笨」悖论与 Flo…
-      知识路由协议：manifest→matcher…
-      渐进式读取四步：match → expand …
-      知识从开发过程中长出而非预先建设
+  root(("Flow2Spec 开发过程自然长出知识图谱的 Agent 工程框架"))
+    「上下文越多 Agent 越笨」悖论与 Flow2Spec 的解法
+    知识路由协议
+    渐进式读取四步 match expand verify act
+    知识从开发过程中长出而非预先建设
     与现有知识库的关联
-    深度分析
-      从「文件索引」到「知识路由」的范式转换
-      manifest-routing.json 的…
-      知识反哺循环：让 Agent 从消费者变成维护者
-    实践启示
-    原始存档
+    从「文件索引」到「知识路由」的范式转换
+    manifest-routingjson 的设计价值
+    知识反哺循环 让 Agent 从消费者变成维护者
 ```
 
 ## 核心洞察

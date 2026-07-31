@@ -11,12 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("State Lake：火山引擎面向 Agent 时代的存…"))
+  root(("State Lake 火山引擎面向 Agent 时代的存储基础设施重构"))
     存储范式演进
     Storage Agent Infra 三大方向
       Sandbox Store
       Artifact Store
-      Agent 观测 and 评测
+      Agent 观测 评测
     Storage Agent Family
     关联条目
     退出

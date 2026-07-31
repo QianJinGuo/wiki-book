@@ -13,10 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Agent 时代可观测性：ABA、统一上下文与 Guan…"))
+  root(("Agent 时代可观测性 ABA 统一上下文与 Guance AI"))
     核心转变
-    ABA（Agent Behavior Anal…
-    可观测平台 = 系统的统一上下文平台
+    ABA Agent Behavior Analytics
+    可观测平台 系统的统一上下文平台
     三层能力架构
     Builder 角色
 ```

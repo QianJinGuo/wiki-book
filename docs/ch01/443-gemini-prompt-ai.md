@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Gemini 深度导读生成器 Prompt：让 AI 重…"))
-    深度分析
-      从'摘要'到'导读'的范式跃迁
-      六段 XML 标签的组织
-      Framework and Mindset：导读的…
-      模式切换：导读/清单/结论三态
-    实践启示
-    相关实体
+  root(("Gemini 深度导读生成器 Prompt 让 AI 重写而非摘要"))
+    从摘要到导读的范式跃迁
+    六段 XML 标签的组织
+    Framework Mindset 导读的真正价值
+    模式切换 导读清单结论三态
 ```
 
 ## 摘要

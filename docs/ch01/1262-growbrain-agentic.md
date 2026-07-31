@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("淘宝内容生态：GrowBrain - 淘宝Agentic…"))
-    深度分析
-      从 ReactAgent 到 PES：架构演进…
-      PES 架构设计原则
-      三个「拆」的工程智慧
-      子 Agent 矩阵的协同设计
-    实践启示
-    相关实体
+  root(("淘宝内容生态 GrowBrain - 淘宝Agentic内容成长引擎"))
+    从 ReactAgent 到 PES 架构演进的真实驱动力
+    PES 架构设计原则
+    三个「拆」的工程智慧
+    子 Agent 矩阵的协同设计
 ```
 
 ## 摘要

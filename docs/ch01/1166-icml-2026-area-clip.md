@@ -35,14 +35,6 @@ AREA 首先利用主测地分析（Principal Geodesic Analysis，PGA）在 CLIP 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icml-2026-从提取漂移到聚合漂移南大area重做clip增量学习.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("ICML 2026 | 从提取漂移到聚合漂移，南大ARE…"))
-    第 2 Source — PaperWeekly
-```
-
 ## 第 2 Source — PaperWeekly
 
 > From WeChat MP PaperWeekly, supplemental coverage of the same topic.

@@ -13,13 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("GitHub + AWS 多云转折：AI 编码激增 14…"))
-    概述
-    关键数据
+  root(("GitHub AWS 多云转折 AI 编码激增 14B"))
     关键贡献
     含义
-    相关主题
-    一句话定位
 ```
 
 ## 概述

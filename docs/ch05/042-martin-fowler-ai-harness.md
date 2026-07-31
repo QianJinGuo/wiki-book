@@ -9,20 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Martin Fowler 的 AI 研发提醒：非确定性…"))
+  root(("Martin Fowler 的 AI 研发提醒"))
     太长不看版
-    核心观点
-      非确定性进入工程链路
-      Harness 是非确定性的适配层
-      Vibe Coding 的边界
-      测试和重构不是旧时代的包袱
-    深度分析
-      1. 非确定性协作者是软件工程范式的根本性变化
-      2. Harness 是非确定性进入工程系统的…
-      3. Vibe Coding 解决'怎么做出'…
-      4. 测试和重构不是旧时代包袱，而是 AI 时…
-    实践启示
-    参考来源
+    非确定性进入工程链路
+    Harness 是非确定性的适配层
+    Vibe Coding 的边界
+    测试和重构不是旧时代的包袱
+    非确定性协作者是软件工程范式的根本性变化
+    Harness 是非确定性进入工程系统的适配层 不是新包装词
+    Vibe Coding 解决怎么做出 Agentic
 ```
 
 ## 太长不看版

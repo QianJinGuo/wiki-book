@@ -15,19 +15,15 @@ AWS 2026-06-11 开源（Apache 2.0）的 Agent 评测工具包，定位是**"用
 
 ```mermaid
 mindmap
-  root(("Agent-EvalKit：AWS 开源 CLI Age…"))
-    核心问题
-    关键设计：CLI 形式 + AI 编码助手即引擎
+  root(("Agent-EvalKit AWS 开源 CLI Agent 评测工具包"))
+    关键设计 CLI 形式 AI 编码助手即引擎
     六阶段流水线
     三个核心评测维度
-    案例实证：旅行研究 Agent 评测结果
+    案例实证 旅行研究 Agent 评测结果
     与现有评测框架的差异化
     工程实践要点
-    实践启示
-      1. 从小范围开始，优先评测 Faithful…
-      2. 将评测集成到 CI/CD，用代码级修复建…
-      3. 充分利用 OTel 框架的自动检测能力
-      4. Apache 2.0 + CLI 形式使…
+    核心观点 AI 编码助手作为评测引擎是新范式
+    技术要点 Faithfulness 是隐藏的致命失败模式
 ```
 
 ## 核心问题

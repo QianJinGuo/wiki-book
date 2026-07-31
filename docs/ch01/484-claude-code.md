@@ -11,20 +11,16 @@
 mindmap
   root(("Claude Code 设计原则与对照分析"))
     五条系统设计原则
-      1. 先定边界，再开始执行
-      2. 把连续运行当状态机，不当函数调用
-      3. 把横切复杂度收敛到运行时层
-      4. 把多 Agent 设计成任务系统
-    与 Harness Engineering 的…
-    Claude Code、OpenClaw、He…
+      先定边界 再开始执行
+      把连续运行当状态机 不当函数调用
+      把横切复杂度收敛到运行时层
+    与 Harness Engineering 的对应关系
+    Claude Code OpenClaw Hermes 的位置差异
     核心启示
-    深度分析
-      从'函数调用'到'状态机'的范式转移
-      Tool Runtime 的收敛价值
-      多 Agent 的本质是任务系统
-      稳定性来源于内部抽象的收敛
-    实践启示
-    相关实体
+    从函数调用到状态机的范式转移
+    Tool Runtime 的收敛价值
+    多 Agent 的本质是任务系统
+    稳定性来源于内部抽象的收敛
 ```
 
 ## 五条系统设计原则

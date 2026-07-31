@@ -7,17 +7,6 @@
 # Workflow architecture
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Workflow architecture"))
-    深度分析
-    Workflow architecture
-    相关实体
-    相关主题
-```
-
 ## 深度分析
 
 ---

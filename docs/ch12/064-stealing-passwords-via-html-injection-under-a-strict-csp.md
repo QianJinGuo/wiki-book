@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Stealing Passwords via HTML …"))
-    深度分析
-      CSP 的安全边界被重新定义
-      密码管理器的设计缺陷
-      Referer 策略规范的实现不一致
-      对 Web 安全评估的影响
-    实践启示
-    相关实体
+  root(("Stealing Passwords via HTML"))
+    攻击原理三要素
+    浏览器差异对比
+    完整攻击链 单次点击
+    实际代码演示
+    CSP 的安全边界被重新定义
+    密码管理器的设计缺陷
+    Referer 策略规范的实现不一致
+    对 Web 安全评估的影响
 ```
 
 ## 摘要

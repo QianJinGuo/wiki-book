@@ -15,12 +15,11 @@ Novel research/architecture for GPT-5.6 model family with detailed system card i
 
 ```mermaid
 mindmap
-  root(("GPT-5.6 Preview System Card …"))
+  root(("GPT-56 Preview System Card"))
     Content Summary
-    1. Introduction
-    第 2 来源 — 夕小瑶科技说：GPT-5.6…
-    第 3 来源 — AGI Hunt：GPT-5…
-    第 4 来源 — 夕小瑶科技说：实测 GPT-…
+    Introduction
+    第 3 来源 AGI Hunt GPT-56 正式发布 10 个重点
+    第 4 来源 夕小瑶科技说 实测 GPT-56 跑分赢了却输给了
 ```
 
 ## Content Summary

@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("现在如何使用 AI：一份快速指南（Ethan Molli…"))
-    深度分析
-      一、模型选择的'车辆类比'框架
-      二、Deep Research 的真正价值在垂…
-      三、Voice Mode 的'视觉'才是 Ki…
-      四、Prompt Engineering 的科…
-    实践启示
-    相关实体
+  root(("现在如何使用 AI 一份快速指南 Ethan Mollick"))
+    一 模型选择的车辆类比框架
+    二 Deep Research 的真正价值在垂直专业领域
+    三 Voice Mode 的视觉才是 Killer Feature
+    四 Prompt Engineering 的科学结论
 ```
 
 ## 摘要

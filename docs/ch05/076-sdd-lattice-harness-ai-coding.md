@@ -9,21 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("从渐进式 SDD 到 Lattice Harness：A…"))
+  root(("从渐进式 SDD 到 Lattice Harness AI"))
     核心概述
     五大工程缺口
     Lattice 架构
       Context 工程
       Verification
       Drift 检测
-      Loop
-    深度分析
-      1. Spec Coding 的天花板：0→8…
-      2. '执行者不能做最终裁判'——独立 Ver…
-      3. Context 工程的三层结构：地图→知…
-      4. Loop 不是无限自修复，而是有边界的失…
-    实践启示
-    相关实体
+    Spec Coding 的天花板 080 之后还有 20 分
+    执行者不能做最终裁判独立 Verification 的工程哲学
+    Context 工程的三层结构 地图知识依据
+    Loop 不是无限自修复 而是有边界的失败分类机制
 ```
 
 ## 核心概述

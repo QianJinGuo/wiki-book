@@ -13,23 +13,20 @@
 
 ```mermaid
 mindmap
-  root(("Claude 代码能力的系统工程解析：Constitut…"))
-    一句话
-    核心论点
-    第一层引擎：代码是 RL 的完美训练场
-      可验证奖励：RL 最稀缺的燃料
+  root(("Claude 代码能力的系统工程解析 Constitutional"))
+    第一层引擎 代码是 RL 的完美训练场
+      可验证奖励 RL 最稀缺的燃料
       复杂推理的天然涌现场
       Sleeper Agents 反向证明 RL 效力
-    第二层引擎：Constitutional AI…
-      RLAIF 框架（2022-12）
-      多层级奖励塑形（推断）
-      Model Card and System Pro…
-    第三层引擎：产品即数据飞轮
-      用户行为 = 最精准的隐式标注
-      代码用户 = 最好的'免费标注员'
+    第二层引擎 Constitutional AI 为 RL 装上护栏
+      RLAIF 框架 2022-12
+      多层级奖励塑形 推断
+      Model Card System Prompt 为好代码立宪
+    第三层引擎 产品即数据飞轮
+      用户行为 最精准的隐式标注
+      代码用户 最好的免费标注员
       飞轮的马太效应
-      迭代闭环（Claude 2 论文）
-    反面观点（作者自述）
+    反面观点 作者自述
     行业趋势
     与现有知识的关联
 ```

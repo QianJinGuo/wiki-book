@@ -15,14 +15,11 @@ AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Age
 
 ```mermaid
 mindmap
-  root(("基于 Strands Agents SDK 和 Amaz…"))
-    深度分析
-      Agents as Tools 是企业级 Ag…
-      模型分层选型是被严重低估的工程实践
-      Bedrock AgentCore Runti…
-      OCR 提示词的「负面清单」工程
-    实践启示
-    相关实体
+  root(("基于 Strands Agents SDK 和 Amazon"))
+    Agents as Tools 是企业级 Agent 的「微服务化」
+    模型分层选型是被严重低估的工程实践
+    Bedrock AgentCore Runtime 的定位
+    OCR 提示词的「负面清单」工程
 ```
 
 ## 摘要

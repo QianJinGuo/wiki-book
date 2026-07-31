@@ -11,7 +11,7 @@
 
 ```mermaid
 mindmap
-  root(("百度 Unlimited OCR：R-SWA 参考滑动窗…"))
+  root(("百度 Unlimited OCR R-SWA"))
     核心创新
     R-SWA 机制
       两层注意力分离
@@ -21,7 +21,6 @@ mindmap
     与长上下文研究的关系
     与 DeepSeek OCR 的关系
     开源
-    相关实体
 ```
 
 ## 核心创新

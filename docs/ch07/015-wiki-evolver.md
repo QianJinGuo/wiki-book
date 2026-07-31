@@ -17,11 +17,7 @@ mindmap
     Knowledge Ladder
     与现有系统的分工
     最值得落地的四个页面
-    深度分析
-      1. 定位的本质：元系统而非工具
-      2. Operating Loop 的关键设计…
-      3. Knowledge Ladder 的涌现性质
-      4. 四个落地页面的战略价值
+    定位的本质 元系统而非工具
 ```
 
 ## 相关查询

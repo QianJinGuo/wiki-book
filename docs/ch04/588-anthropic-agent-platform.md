@@ -15,7 +15,7 @@ Anthropic 三位负责 Claude Platform 的高管——管理式智能体产品�
 
 ```mermaid
 mindmap
-  root(("Anthropic Agent Platform 进化：…"))
+  root(("Anthropic Agent Platform 进化 三位高管深度对谈"))
     身份与权限层的演化
     智能体间通信
     脚手架变薄

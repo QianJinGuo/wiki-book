@@ -13,8 +13,8 @@ OpenAI 为 Codex 上线 Record & Replay 功能：在 macOS 上演示一次 GUI w
 
 ```mermaid
 mindmap
-  root(("Codex Record & Replay：GUI 演示…"))
-    技术链路：录制 → 转译 → 回放
+  root(("Codex Record Replay GUI 演示到可复用"))
+    技术链路 录制 转译 回放
     生态定位
     适用场景与边界
     局限

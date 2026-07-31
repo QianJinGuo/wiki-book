@@ -13,19 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("DiScoFormer: 单一 Transformer …"))
+  root(("DiScoFormer 单一 Transformer"))
     核心方法
       架构设计
       注意力机制是 KDE 的严格泛化
       训练数据策略
-    深度分析
-      1. 从 KDE 到 Transformer：…
-      2. 跨分布泛化的理论意义
-      3. 对扩散模型的直接改进潜力
-      4. 科学计算中的共享依赖
+    从 KDE 到 Transformer 密度估计的范式转变
+    跨分布泛化的理论意义
+    对扩散模型的直接改进潜力
+    科学计算中的共享依赖
     性能特点
-    实践启示
-    相关实体
 ```
 
 ## 摘要

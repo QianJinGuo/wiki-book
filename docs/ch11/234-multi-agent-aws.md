@@ -5,19 +5,6 @@
 > 📊 Level ⭐⭐ | 5.0KB | `entities/multi-agent-architecture-retail-practice.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Multi-Agent 架构在零售供应链运营中的实践：贯…"))
-    概述
-    核心技术
-    来源
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 概述
 
 ```mermaid

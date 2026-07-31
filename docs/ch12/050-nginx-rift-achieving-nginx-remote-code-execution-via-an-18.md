@@ -13,16 +13,6 @@ NGINX is the most popular web server today, powering nearly a third of all [webs
 Internally, we have an autonomous system that specializes in analyzing low level software. Analyzing NGINX simply required a single click to onboard the repository and trigger the analysis. After six hours of scanning, the system identified 5 security issues including a high severity finding, which is a heap overflow issue when handling NGINX `rewrite` directive.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("NGINX Rift: Achieving NGINX …"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

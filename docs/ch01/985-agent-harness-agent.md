@@ -43,7 +43,7 @@
 
 ```mermaid
 mindmap
-  root(("Agent Harness 综述：同一个模型，为什么做出…"))
+  root(("Agent Harness 综述 同一个模型 为什么做出来的"))
     太长不看版
     Harness 不只是一层壳
 ```

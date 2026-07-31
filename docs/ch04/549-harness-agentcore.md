@@ -14,16 +14,6 @@
 3. **Harness Engineering** — 怎么让 Agent 真正跑起来（2026 年新风潮）
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness工程火遍硅谷，AgentCore今天交卷!"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)

@@ -21,14 +21,11 @@ Enter TLA+. It's a formal spec language for modeling complex systems with many m
 
 ```mermaid
 mindmap
-  root(("Cheap code means formal veri…"))
+  root(("Cheap code means formal"))
     introducing the hill
     how it works
     building confidence
     reflections
-    相关实体
-    深度分析
-    实践启示
 ```
 
 ## introducing the hill

@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Kimi Work Beta：通用 Agent 一定来自…"))
-    深度分析
-      1. 为什么通用 Agent 的壁垒在模型层而…
-      2. 模型公司做 Agent 的结构性优势
-      3. Vibe Working：意图驱动的任务…
-      4. Kimi Work Beta 的技术架构
-    实践启示
-    相关实体
+  root(("Kimi Work Beta 通用 Agent 一定来自模型公司"))
+    为什么通用 Agent 的壁垒在模型层而非应用层
+    模型公司做 Agent 的结构性优势
+    Vibe Working 意图驱动的任务执行范式
+    Kimi Work Beta 的技术架构
 ```
 
 ## 摘要

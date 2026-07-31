@@ -33,16 +33,6 @@ Which means the office, if there even is one anymore, probably looks more like t
 I am not sure what to call this. It is not a coworking space. It is not a coffee shop. It is not a corporate office. It is not a home office, which has its own problems. It might be closer to a private club, or a boutique hotel you live near, or something that does not have a word yet. What I keep coming back to is that the most valuable work in the world is now the work of direction, and the people doing it are working in environments built for a workload that no longer exists. There is something to build here. I do not know its full shape.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("It's Time to Walk"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [刚刚Openai 放出三个语音模型顺便杀死了同传](../ch01/390-openai.html)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)

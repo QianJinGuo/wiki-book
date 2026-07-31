@@ -9,15 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic PM Jess Yan 的三个 Cl…"))
-    核心观点
+  root(("Anthropic PM Jess Yan 的三个 Claude"))
     PM 自己开的三个 Agent
-    Claude Managed Agents 核…
+    Claude Managed Agents 核心能力
     Memory for Managed Agents
     定价
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心观点

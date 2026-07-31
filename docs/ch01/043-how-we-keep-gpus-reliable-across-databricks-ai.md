@@ -13,20 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("How we keep GPUs reliable ac…"))
-    背景
+  root(("How we keep GPUs reliable across"))
     GPU 训练负载下的三种故障模式
-      1. 任务崩溃（Crashed Jobs）
-      2. 静默降级（Silent Slowdowns）
-      3. 数值损坏（Numerical Corru…
-    深度分析
-      1. 三种故障模式的'可见性'与'危害性'的逆相关
-      2. NCCL 看门狗超时：症状的聚合器而非故…
-      3. GPU 硬件故障率 vs 传统硬件的显著差异
-      4. 多阶段健康检查体系的必要性
-    实践启示
-    相关实体
-    来源
+      任务崩溃 Crashed Jobs
+      静默降级 Silent Slowdowns
+      数值损坏 Numerical Corruption
+    三种故障模式的可见性与危害性的逆相关
+    NCCL 看门狗超时 症状的聚合器而非故障的定位器
+    GPU 硬件故障率 vs 传统硬件的显著差异
+    多阶段健康检查体系的必要性
 ```
 
 ## 摘要

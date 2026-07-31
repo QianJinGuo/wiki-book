@@ -9,15 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("Microsoft is quietly shoppin…"))
+  root(("Microsoft is quietly shopping for"))
     事件背景
-    Cursor 收购尝试：最具体的退却
-    Inception：正在进行的对话
-    MAI：内部自研路径
+    Cursor 收购尝试 最具体的退却
+    Inception 正在进行的对话
+    MAI 内部自研路径
     深层战略逻辑
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心要点

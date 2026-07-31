@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("生产级 Agent 全景：架构、Harness 工程、组…"))
+  root(("生产级 Agent 全景 架构 Harness 工程 组织与人才"))
     Agent 在企业中的定位
     Coding Agent 作为早期优势场景
     Workflow vs Agent 决策框架

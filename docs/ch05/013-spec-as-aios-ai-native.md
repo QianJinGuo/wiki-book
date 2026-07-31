@@ -43,28 +43,23 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Spec as AIOS：AI-Native 全栈交付的…"))
-    系列背景：从人机协作到 AI 高自治托管
-    一、背景与动因
-      1.1 AI 代码熵增：无约束生成的系统性风险
-      1.2 多 Agent 协同：一致性的必然要求
-    二、核心理念：规范即 AI 的操作系统
-      2.1 仓库唯一真源（Repository a…
-      2.2 规范驱动开发（Spec-Driven …
-      2.3 AI 执行一致性（AI Executi…
-    三、规范体系架构：三级分层模型
-      3.1 全局规范层（Global Specif…
-      3.2 项目规范层（Project Speci…
-      3.3 个人规范层（Personal Spec…
-      三级分层 vs 自动化门禁
-    四、端云一体的设计哲学
-    五、工程规范：为 AI 构建可导航的知识图谱
+  root(("Spec as AIOS AI-Native 全栈交付的抗熵架构"))
+    系列背景 从人机协作到 AI 高自治托管
+    一 背景与动因
+      AI 代码熵增 无约束生成的系统性风险
+      多 Agent 协同 一致性的必然要求
+    二 核心理念 规范即 AI 的操作系统
+      仓库唯一真源 Repository as Single
+      规范驱动开发 Spec-Driven Development
+      AI 执行一致性 AI Execution Consistency
+    三 规范体系架构 三级分层模型
+      全局规范层 Global Specifications
+      项目规范层 Project Specifications
+      个人规范层 Personal Specifications
+    四 端云一体的设计哲学
+    五 工程规范 为 AI 构建可导航的知识图谱
     关键判断
-    深度分析
-      1. AIOS 范式跃迁：从'文档驱动'到'可…
-      2. 三级分层模型的工程化价值：一致性 vs …
-      3. 仓库唯一真源与知识图谱导航的协同机制
-      4. 端云一体架构的工程实践：本地确定性 × …
+    AIOS 范式跃迁 从文档驱动到可执行操作系统
 ```
 
 ## 系列背景：从人机协作到 AI 高自治托管

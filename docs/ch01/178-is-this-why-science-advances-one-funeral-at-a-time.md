@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/is-this-why-science-advances-one-funeral-at.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Is This Why Science Advances…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 
 - [Why Internally-Built AI Fails Fund Accounting Audits](ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html)

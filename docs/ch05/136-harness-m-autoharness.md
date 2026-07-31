@@ -12,18 +12,15 @@
 
 ```mermaid
 mindmap
-  root(("Harness进化论文 — M⋆记忆程序进化与AutoH…"))
+  root(("Harness进化论文 M记忆程序进化与AutoHarness动作约束"))
     基本信息
-    M⋆ — 微软记忆Harness进化
-    AutoHarness — 谷歌动作约束Har…
-    核心洞察
+    M 微软记忆Harness进化
+    AutoHarness 谷歌动作约束Harness
     与本文相关
-    深度分析
-      记忆Harness的任务特异性：为何跨任务迁移失败
-      AutoHarness的三种模式：策略与成本的权衡
-      小模型+Harness大模型：隐含的范式转移
-      两种Harness的趋同方向
-    实践启示
+    记忆Harness的任务特异性 为何跨任务迁移失败
+    AutoHarness的三种模式 策略与成本的权衡
+    小模型Harness大模型 隐含的范式转移
+    两种Harness的趋同方向
 ```
 
 ## 基本信息

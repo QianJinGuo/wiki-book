@@ -52,32 +52,27 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Anthropic 官方技能最佳实践：14 个可复用的 …"))
-    一、发现与选择
-      1. 激活元数据模式（Activation M…
-      2. 排除条款模式（Exclusion Cla…
-    二、上下文经济
-      3. 上下文预算模式（Context Budg…
-      4. 渐进式披露模式（Progressive …
-    三、指令校准
-      5. 控制调优模式（Control Tunin…
-      6. 解释原因模式（Explain-the-W…
-      7. 模板脚手架模式（Template Sca…
-      8. 技能内示例模式（In-Skill Exa…
-    四、工作流控制
-      10. 执行清单模式（Execution Ch…
-      11. 自纠正循环模式（Self-Correc…
-      12. 计划-验证-执行模式（Plan-Val…
-    五、可执行代码
-      13. 实用工具包模式（Utility Bun…
-      14. 自主校准模式（Autonomy Cal…
+  root(("Anthropic 官方技能最佳实践 14 个可复用的 Agent"))
+    一 发现与选择
+      激活元数据模式 Activation Metadata pattern
+      排除条款模式 Exclusion Clause pattern
+    二 上下文经济
+      上下文预算模式 Context Budget pattern
+      渐进式披露模式 Progressive Disclosure
+    三 指令校准
+      控制调优模式 Control Tuning pattern
+      解释原因模式 Explain-the-Why pattern
+      模板脚手架模式 Template Scaffold pattern
+    四 工作流控制
+      执行清单模式 Execution Checklist pattern
+      自纠正循环模式 Self-Correcting Loop pattern
+      计划-验证-执行模式 Plan-Validate-Execute
+    五 可执行代码
+      实用工具包模式 Utility Bundle pattern
+      自主校准模式 Autonomy Calibration pattern
     总结
     参考资源
-    深度分析
-      模式分类的认知架构
-      触发机制的本质
-      上下文经济的深层矛盾
-      指令粒度的控制论
+    模式分类的认知架构
 ```
 
 ## 一、发现与选择

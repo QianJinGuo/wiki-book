@@ -15,17 +15,17 @@
 
 ```mermaid
 mindmap
-  root(("Agent 安全三步法：先 Harness、再 Gove…"))
-    现象：所有人都在解第 3 步
-    错位序列：Fortune 500 的典型失败
-    正确序列：三步依次
-      第 1 步：Harness（基础）
-      第 2 步：Governance（架构而非合规…
-      第 3 步：Identity and Auth…
+  root(("Agent 安全三步法 先 Harness 再"))
+    现象 所有人都在解第 3 步
+    错位序列 Fortune 500 的典型失败
+    正确序列 三步依次
+      第 1 步 Harness 基础
+      第 2 步 Governance 架构而非合规 checkbox
+      第 3 步 Identity and Auth zero
     为什么大家把顺序搞反了
-    给客户的建议（来自 CrewAI）
+    给客户的建议 来自 CrewAI
     与 wiki 现有实体的差异化
-    实践启示（5 条可执行项）
+    实践启示 5 条可执行项
     与相关 entity 的关系
 ```
 

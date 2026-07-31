@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("我把Seed 2.1 Pro塞进Claude Code，…"))
-    深度分析
-      模型混用的工程路径与行业意义
-      Coding Agent 场景下的模型评估方法论
-      代码风格一致性的深层价值
-      视频理解在 Coding Agent 中的潜在应用
-    实践启示
-    关联实体
+  root(("我把Seed 21 Pro塞进Claude Code"))
+    模型混用的工程路径与行业意义
+    Coding Agent 场景下的模型评估方法论
+    代码风格一致性的深层价值
+    视频理解在 Coding Agent 中的潜在应用
 ```
 
 ## 核心要点

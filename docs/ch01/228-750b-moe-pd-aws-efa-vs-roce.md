@@ -11,20 +11,20 @@
 
 ```mermaid
 mindmap
-  root(("750B MoE PD 分离推理：AWS EFA vs …"))
-    概述
-    测试配置（2P2D 分离推理）
+  root(("B MoE PD 分离推理 AWS EFA vs 自建 RoCE"))
+    测试配置 2P2D 分离推理
     Prefill 与 Decode 的通信模式差异
-      Prefill：所有高频通信走 NVLink
-      Decode：唯一高频通信是跨节点 MoE A…
-    端到端性能对比（AWS EFA vs 客户自建…
-    为什么 EFA 在 Mean 上慢 31%：U…
-      DeepEP 在 IB 上的 IBGDA（In…
-      UCCL-EP 在 EFA 上的 CPU Pr…
+      Prefill 所有高频通信走 NVLink
+      Decode 唯一高频通信是跨节点 MoE All-to-All
+    端到端性能对比 AWS EFA vs 客户自建 RoCE
+    为什么 EFA 在 Mean 上慢 31 UCCL-EP 的
+      DeepEP 在 IB 上的 IBGDA InfiniBand
+      UCCL-EP 在 EFA 上的 CPU Proxy 中转
       延迟量化
-    为什么 EFA 的 Max ITL 低 73%…
+    为什么 EFA 的 Max ITL 低 73 SRD 多路径 spray
     AWS 网络拓扑保障机制
-    EKS 软件栈分层实践（内核态在 AMI，用户…
+    EKS 软件栈分层实践 内核态在 AMI 用户态在容器
+    通信软件栈协同 NCCLMooncakeUCCL-EP
 ```
 
 ## 概述

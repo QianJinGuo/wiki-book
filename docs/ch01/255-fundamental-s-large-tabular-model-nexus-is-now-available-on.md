@@ -24,19 +24,18 @@ type: entity
 
 ```mermaid
 mindmap
-  root(("Fundamental’s Large Tabular …"))
-    相关实体
-    What is NEXUS?
-    Why existing approaches…
-    How NEXUS works on Amaz…
-    Get started with NEXUS …
-    Enterprise use cases tr…
+  root(("Fundamentals Large Tabular Model"))
+    What is NEXUS
+    Why existing approaches fall short
+    How NEXUS works on Amazon
+    Get started with NEXUS on Amazon
+    Enterprise use cases transforming
       Financial services
       Healthcare
-      Manufacturing and suppl…
-      Retail and ecommerce
-    Why choose NEXUS on Ama…
+      Manufacturing and supply chain
+    Why choose NEXUS on Amazon
     Strategic AWS partnership
+    Next steps
 ```
 
 ## 相关实体

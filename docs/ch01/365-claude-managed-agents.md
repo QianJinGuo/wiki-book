@@ -10,26 +10,21 @@
 ```mermaid
 mindmap
   root(("Claude Managed Agents 开发者指南"))
-    Overview
     四大核心概念
-      1. Agent（配置模板）
-      2. Environment（运行模板）
-      3. Session（运行实例）
-      4. Events（通信通道）
+      Agent 配置模板
+      Environment 运行模板
+      Session 运行实例
     扩展能力
-      自定义工具（JSON Schema）
+      自定义工具 JSON Schema
       MCP 服务器
-    多智能体编排（研究预览版）
-      协调器 + 工作者模式
+    多智能体编排 研究预览版
+      协调器 工作者模式
       与 Agent Teams 模式的区别
     产品定位对比
     定价
     与 PM 视角的关系
-    深度分析
-      1. Harness 编排引擎的产品哲学
-      2. 四层概念模型的语义层级
-      3. 多智能体架构的当前限制
-      4. 定价模型的双重成本结构
+    Harness 编排引擎的产品哲学
+    四层概念模型的语义层级
 ```
 
 ## Overview

@@ -20,19 +20,19 @@ provenance_state: inferred
 
 ```mermaid
 mindmap
-  root(("Hermes Agent Eval Harness：可验…"))
-    一、定位：从 SkillOpt 学术到 Eva…
-    二、为什么 Agent 不能只看'这次成功了'
-    三、Eval Harness 最小闭环：7 模块
-    四、任务集不是 prompt 列表，而是环境快照
-      4.1 代码修改任务 TaskSet
-      4.2 文档任务 TaskSet
-      4.3 Skill patch 任务 Task…
-    五、TrajectoryStore：Agent…
-    六、Verifier 不是函数，而是一组判定器…
-    七、Selection Gate：Skill …
-      7.1 三个细节
-    八、Regression Gate：让 Age…
+  root(("Hermes Agent Eval Harness 可验证"))
+    一 定位 从 SkillOpt 学术到 Eval Harness 工程
+    二 为什么 Agent 不能只看这次成功了
+    三 Eval Harness 最小闭环 7 模块
+    四 任务集不是 prompt 列表 而是环境快照
+      代码修改任务 TaskSet
+      文档任务 TaskSet
+      Skill patch 任务 TaskSet
+    五 TrajectoryStore Agent Eval 的事实来源
+    六 Verifier 不是函数 而是一组判定器 6 类
+    七 Selection Gate Skill Patch 不能靠直觉合入
+      三个细节
+    八 Regression Gate 让 Agent 能长期进化 3 类
 ```
 
 ## 一、定位：从 SkillOpt 学术到 Eval Harness 工程

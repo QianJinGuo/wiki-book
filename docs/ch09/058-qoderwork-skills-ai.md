@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("QoderWork Skills 开发实践：从传统数科到…"))
-    深度分析
-      1. 四层分离架构的设计理性
-      2. Follow Builders vs F…
-      3. 从Idealab RAG到QoderWo…
-      4. 测试驱动Skill开发的70-80%法则
-    实践启示
-    相关实体
+  root(("QoderWork Skills 开发实践 从传统数科到 AI"))
+    四层分离架构的设计理性
+    Follow Builders vs Frontend
+    从Idealab RAG到QoderWork
+    测试驱动Skill开发的70-80法则
 ```
 
 ## 摘要

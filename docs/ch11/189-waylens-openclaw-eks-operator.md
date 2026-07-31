@@ -9,15 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Waylens OpenClaw 多智能体平台 EKS+…"))
-    深度分析
-    痛点：agent 平台运维吃掉业务时间
-    方案：EKS + CRD + Operator…
+  root(("Waylens OpenClaw 多智能体平台"))
+    痛点 agent 平台运维吃掉业务时间
+    方案 EKS CRD Operator 三层架构
     改造成果
     一键部署
-    三个独有贡献
-    与现有实体的差异化
-    相关主题
 ```
 
 ## 深度分析

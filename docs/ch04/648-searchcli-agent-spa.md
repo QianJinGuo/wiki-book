@@ -15,7 +15,7 @@
 
 ```mermaid
 mindmap
-  root(("火山引擎 SearchCLI：Agent 驱动的搜索自迭…"))
+  root(("火山引擎 SearchCLI Agent 驱动的搜索自迭代与"))
     问题背景
     搜索自迭代闭环
     三层架构
@@ -23,10 +23,7 @@ mindmap
       Genome 编码
       初始种群
       多保真评测
-      多视角 Elite
-    实验结果
     工程特性
-    相关实体
 ```
 
 ## 问题背景

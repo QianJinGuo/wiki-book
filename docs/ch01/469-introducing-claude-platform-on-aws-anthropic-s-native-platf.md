@@ -9,17 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("Introducing Claude Platform …"))
-    Claude Platform experie…
-    Getting started with Cl…
-      Step 1: Create a worksp…
-      Step 2: Authenticate
-      Step 3: Make your first…
-    Claude Platform on AWS …
-    Conclusion
-    相关实体
-    深度分析
-    实践启示
+  root(("Introducing Claude Platform on"))
+    Claude Platform experience
+    Getting started with Claude
+      Step 1 Create a workspace
+      Step 2 Authenticate
+      Step 3 Make your first API call
+    Claude Platform on AWS in practice
 ```
 
 ## Claude Platform experience through AWS

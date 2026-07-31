@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("Storage Agent Family: 云存储人机交…"))
-    深度分析
-      从'功能可用'到'体验可用'的产品思维跃迁
-      家族架构的深层逻辑：避免'中央 Agent'的…
-      安全模型的核心创新：凭证贯穿而非权限放大
-      TLS Agent 的 LLMWiki：超越传…
-    实践启示
-    相关实体
+  root(("Storage Agent Family 云存储人机交互重构"))
+    从功能可用到体验可用的产品思维跃迁
+    家族架构的深层逻辑 避免中央 Agent的扩展瓶颈
+    安全模型的核心创新 凭证贯穿而非权限放大
+    TLS Agent 的 LLMWiki 超越传统 RAG 的知识探索
 ```
 
 ## 摘要

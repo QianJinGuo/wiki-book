@@ -13,14 +13,11 @@ Jack Van Lightly 提出的存储/工作负载架构分类法，系统化梳理�
 
 ```mermaid
 mindmap
-  root(("Can We Agree on a Storage/Wo…"))
-    核心内容
-    深度分析
-      从 OLTP/OLAP 到 HTAP/LAP …
-      Freshness-by-Compositio…
-      共享分层（Shared Tiering）作为 …
-      数据模型差异的被忽视问题
-    实践启示
+  root(("Can We Agree on a StorageWorkload"))
+    从 OLTPOLAP 到 HTAPLAP 的分类演化
+    Freshness-by-Composition vs
+    共享分层 Shared Tiering 作为 LTAP 的核心模式
+    数据模型差异的被忽视问题
 ```
 
 ## 核心内容

@@ -11,24 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("AgentOps: Operationalize age…"))
-    Conclusion
+  root(("AgentOps Operationalize agentic"))
     About the authors
       Anastasia Tzeveleka
-      Anna Grüebler Clark
+      Anna Grebler Clark
       Antonio Rodriguez
-      Sergio Garces Vitale
-    深度分析
-      1. AgentOps 是 MLOps/Dev…
-      2. 四层评估体系是防止'隐形失败'的关键机制
-      3. 可观测性四层模型填补了框架级盲区
-      4. Memory 的多账户部署模式是数据隔离…
-    实践启示
-      1. 从多账户架构起步，按 pillar 渐进落地
-      2. 将 agent、tool、memory …
-      3. 构建四级评估体系并嵌入 CI/CD 作为…
-      4. 实施四层可观测性，用 OpenTelem…
-    相关实体
+    AgentOps 是 MLOpsDevOps 的自然演进 而非全新范式
+    四层评估体系是防止隐形失败的关键机制
+    可观测性四层模型填补了框架级盲区
+    Memory 的多账户部署模式是数据隔离的关键保障
+    从多账户架构起步 按 pillar 渐进落地
+    将 agent tool memory 配置视为独立部署单元
+    构建四级评估体系并嵌入 CICD 作为质量门禁
 ```
 
 ## Conclusion

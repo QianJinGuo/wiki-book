@@ -13,20 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("后端架构 AI Friendly 的标准与路径：面向无人…"))
-    一句话
-    核心内容
-      AI Friendly架构特征
-      架构重构路径
-      无人值守支持
-    深度分析
-      1. 六类事实层：构建'AI 可理解底座'
-      2. Architecture Map 作为系…
-      3. SKILL + Harness：从经验沉…
-      4. 测试体系的角色转变：从守门员到交通信号灯
-    实践启示
-    相关实体
-    标签
+  root(("后端架构 AI Friendly 的标准与路径"))
+    AI Friendly架构特征
+    架构重构路径
+    无人值守支持
+    六类事实层 构建AI 可理解底座
+    Architecture Map 作为系统级方向感
+    SKILL Harness 从经验沉淀到执行轨道
+    测试体系的角色转变 从守门员到交通信号灯
 ```
 
 ## 一句话

@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("OpenAI GDPval and the Real A…"))
-    OpenAI GDPval：与众不同的基准
-    'AI 准备取代人类工作吗？'——Mollic…
-    'AI 现在能做的有极高价值任务'——学术 R…
-    关键论文：为什么 Agent 突然变强
-    METR 测试：5 年指数曲线
-    '如何用 AI 做有经济价值的事'
+  root(("OpenAI GDPval and the Real AI"))
+    OpenAI GDPval 与众不同的基准
+    AI 准备取代人类工作吗 Mollick 的关键反驳
+    AI 现在能做的有极高价值任务学术 Replication
+    关键论文 为什么 Agent 突然变强
+    METR 测试 5 年指数曲线
+    如何用 AI 做有经济价值的事
     三个独到洞察
-    与 Opus 4 7 Launch Clau…
+    与 Opus 4 7 Launch Claude Code
 ```
 
 ## OpenAI GDPval：与众不同的基准

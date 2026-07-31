@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("让 AI 代理自己付钱：基于 Amazon Bedroc…"))
-    核心问题
+  root(("让 AI 代理自己付钱 基于 Amazon Bedrock"))
     x402 协议
-    Bedrock AgentCore Payme…
+    Bedrock AgentCore Payments 解决什么
     业务场景示例
     架构组件
     风险与控制
-    待关注
-    相关实体
+    支付协议与托管服务的职责边界
+    最小权限身份模型在代理支付中的实现
+    服务端强制预算约束的安全价值
 ```
 
 ## 核心问题

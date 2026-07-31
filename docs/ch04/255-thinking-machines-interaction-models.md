@@ -9,15 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Thinking Machines 交互模型（Inter…"))
-    核心定位
+  root(("Thinking Machines 交互模型"))
     核心思路
-    系统架构：双模型协作
-    时间对齐微轮次（200ms Micro-Tur…
+    系统架构 双模型协作
+    时间对齐微轮次 200ms Micro-Turns
     无编码器早期融合
     推理优化
     基准测试
     安全设计
+    局限性
 ```
 
 ## 核心定位

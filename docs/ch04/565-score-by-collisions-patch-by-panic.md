@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.8KB | `entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("score by collisions, patch b…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 
 - blog.himanshuanand.com 技术文章

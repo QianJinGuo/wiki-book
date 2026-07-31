@@ -17,18 +17,14 @@
 ```mermaid
 mindmap
   root(("Gepa Optimize Anything"))
-    一句话总结
-    核心问题
     核心方案
       声明式 API
       三种优化模式
-      关键机制 1：ASI（Actionable S…
-      关键机制 2：Pareto 前沿搜索
-    实验结果
+      关键机制 1 ASI Actionable Side
     延伸概念
     相关框架对比
-    5th source: Hermes Agen…
-    相关概念
+    th source Hermes Agent skill
+    与 Hermes Agent Skill 互优化的关联
 ```
 
 ## 一句话总结

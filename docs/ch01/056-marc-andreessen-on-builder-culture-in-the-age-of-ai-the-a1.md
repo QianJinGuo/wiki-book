@@ -13,20 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Marc Andreessen on Builder C…"))
-    Summary
-    Key Points
-      1. AI Expands Work, Not…
-      2. The Rise of the 'AI-…
-      3. Narrative vs. Realit…
-      4. Organizational Restr…
+  root(("Marc Andreessen on Builder"))
+    AI Expands Work Not Eliminates It
+    The Rise of the AI-Native Builder
+    Narrative vs Reality in Public
+    Organizational Restructuring From
     Deep Analysis
-      The Builder Thesis in C…
-      The Capability-Expansio…
-      Organizational Implicat…
-      Critique and Limitations
+      The Builder Thesis in Context
+      The Capability-Expansion Paradox
+      Organizational Implications
     Practical Takeaways
-    Related Entities
 ```
 
 ## Summary

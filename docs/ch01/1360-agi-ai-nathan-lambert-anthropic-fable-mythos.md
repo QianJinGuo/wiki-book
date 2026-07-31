@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("欢迎来到 AGI 时代的 AI 治理 — Nathan …"))
+  root(("欢迎来到 AGI 时代的 AI 治理 Nathan Lambert"))
     事件背景
     Lambert 的 6 点核心论点
     AGI 时代的治理范式转换
     与现有实体的关系
-    实践启示
 ```
 
 ## 事件背景

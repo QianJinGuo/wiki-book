@@ -15,13 +15,14 @@
 
 ```mermaid
 mindmap
-  root(("GitHub's plan for Agents — K…"))
-    深度分析
-      Former Developers in Le…
-      微技能架构的设计哲学
-      AI 对开源治理的根本性挑战
-    实践启示
-    相关实体
+  root(("GitHubs plan for Agents Kyle"))
+    规模冲击 14x 提交增长
+    GitHub 内部 AI 工作流
+    开源生态的 AI 洪水
+    Copilot 演进路径
+    Former Developers in Leadership 的
+    微技能架构的设计哲学
+    AI 对开源治理的根本性挑战
 ```
 
 ## 摘要

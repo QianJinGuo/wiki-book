@@ -16,13 +16,13 @@
 
 ```mermaid
 mindmap
-  root(("Impeccable：大规模自动化测试框架"))
+  root(("Impeccable 大规模自动化测试框架"))
     它解决的问题
-    架构：四层叠加在 harness 之上
-    上下文门：init 强制先写 PRODUC…
-    23 个命令的 5 阶段分工
-    检测器：41 条 CI 友好规则
-    Live 模式：浏览器↔源码双向协议
+    架构 四层叠加在 harness 之上
+    上下文门 init 强制先写 PRODUCTmd DESIGNmd
+    个命令的 5 阶段分工
+    检测器 41 条 CI 友好规则
+    Live 模式 浏览器源码双向协议
     文档漂移
     在 harness 栈中的位置
 ```

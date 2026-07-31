@@ -15,25 +15,21 @@
 
 ```mermaid
 mindmap
-  root(("Claude Fable 5 — Ethan Molli…"))
-    三个独有贡献（不应合并到现有 entity）
-    核心发现：Fable 表现细节
-      游戏三件套：单 prompt + 反馈的极致杠杆
-      等时线地图：4-6 小时多智能体工作流
-      Concord：9.5 小时 19 页设计文档…
+  root(("Claude Fable 5 Ethan Mollick"))
+    三个独有贡献 不应合并到现有 entity
+    核心发现 Fable 表现细节
+      游戏三件套 单 prompt 反馈的极致杠杆
+      等时线地图 4-6 小时多智能体工作流
+      Concord 95 小时 19 页设计文档自主执行
     Patron vs Wizard 框架
-      Wizard 阶段（2025 年）
-      Patron 阶段（2026 年 Fable）
+      Wizard 阶段 2025 年
+      Patron 阶段 2026 年 Fable
       未来方向判断
-    三个独有贡献（'过程到结果'工作关系）
+    三个独有贡献 过程到结果工作关系
     Token 经济学与护栏细节
     与现有 Fable 5 entity 的差异化
-    深度分析
-      核心洞察：Patron vs Wizard 是…
-      技术要点：Black Box 是能力增长的必然代价
-      技术要点：9.5 小时 19 页设计文档揭示'…
-      实践价值：多智能体委派是 Fable 成本控制…
-    实践启示
+    核心洞察 Patron vs Wizard 是人类-AI
+    技术要点 Black Box 是能力增长的必然代价
 ```
 
 ## 三个独有贡献（不应合并到现有 entity）

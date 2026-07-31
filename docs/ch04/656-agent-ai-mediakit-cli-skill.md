@@ -7,14 +7,6 @@
 # 让 Agent 成为音视频工作台：AI MediaKit CLI + Skill 发布
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让 Agent 成为音视频工作台：AI MediaKit…"))
-    核心内容
-```
-
 ## 核心内容
 
 本文来自字节跳动技术团队，介绍了火山引擎在 2026 Force 源动力大会上正式发布的 **AI MediaKit CLI + Skill**——一套面向 AI Agent 的音视频工作台入口工具。

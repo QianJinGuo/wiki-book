@@ -18,14 +18,11 @@
 
 ```mermaid
 mindmap
-  root(("Reducing Doom Loops with Fin…"))
-    深度分析
-      1. Doom Loop 的深层成因与理论分析
-      2. FTPO 与 DPO 的关键差异及优势
-      3. 训练数据构造的工程挑战
-      4. 对齐与安全的方法论启示
-    实践启示
-    相关实体
+  root(("Reducing Doom Loops with Final"))
+    Doom Loop 的深层成因与理论分析
+    FTPO 与 DPO 的关键差异及优势
+    训练数据构造的工程挑战
+    对齐与安全的方法论启示
 ```
 
 ## 摘要

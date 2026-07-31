@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐⭐⭐⭐ | 10.1KB | `entities/consumer-confidence-us-economy-inflation-iran-war-trade-html.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Consumer Confidence"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - 2026 年 5 月，密歇根大学消费者信心指数（University of Michigan Consumer Sentiment Index）初值录得 48.2，创下历史最低记录，美国消费者信心较疫情前（2019 年）水平下跌超过 50% 
 - PNC 金融服务的数据分析表明，CPI 同比通胀率的回落对消费者信心的提振作用极为有限——消费者关注的是过去数年的累积价格涨幅，Cleveland Fed 主席 Beth Hammack 指出"相当于在半个十年内经历了十年的通胀" 

@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 一周年回顾：Boris Cher…"))
-    深度分析
-      一、两个赞的起点：AI 产品的早期反馈悖论
-      二、Self-Validating Loop：…
-      三、Routines：Agent 同步 → 异…
-      四、Auto Mode 的反直觉安全论点
-    实践启示
-    关联实体
+  root(("Claude Code 一周年回顾 Boris Cherny"))
+    一 两个赞的起点 AI 产品的早期反馈悖论
+    二 Self-Validating Loop Agent
+    三 Routines Agent 同步 异步的关键跃迁
+    四 Auto Mode 的反直觉安全论点
 ```
 
 ## 摘要

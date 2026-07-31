@@ -9,21 +9,19 @@
 
 ```mermaid
 mindmap
-  root(("Claude Opus 4.7 发布分析"))
+  root(("Claude Opus 47 发布分析"))
     核心升级
     Benchmark 跃进
     第三方验证
-    Claude Code 负责人 Boris C…
-      自动模式（Auto mode）= 告别权限弹窗
-      新技能 /fewer-permission-…
-      Recaps（回顾）
-      专注模式（Focus mode）
+    Claude Code 负责人 Boris Cherny 更新要点
+      自动模式 Auto mode 告别权限弹窗
+      新技能 fewer-permission-prompts
+      Recaps 回顾
     官方 Claude Code 搭配最佳实践
       交互式编码会话组织
       推荐 effort 设置
       自适应思考配合
-      值得注意的行为变化（4.6→4.7）
-    注意事项（Caveats）
+    注意事项 Caveats
     总结
     Cross-links
 ```

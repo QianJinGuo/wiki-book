@@ -9,32 +9,23 @@
 
 ```mermaid
 mindmap
-  root(("Atlassian Confluence Cloud 与…"))
-    概述
+  root(("Atlassian Confluence Cloud 与"))
     核心概念
       Knowledge Base 集成
       Action 集成
       Quick Spaces
     前置要求
     配置步骤
-      1. 创建 Knowledge Base
-      2. 创建 OAuth 2.0 应用
-      3. 创建 Action 集成
-      4. 创建 Quick Space
+      创建 Knowledge Base
+      创建 OAuth 20 应用
+      创建 Action 集成
     使用场景
       自然语言查询 Confluence 内容
       执行 Confluence 操作
-    深度分析
-      架构设计：双轨并行的知识流
-      ACL 粒度：从空间级到页面级的权限下沉
-      OAuth 2.0 3LO 的安全边界
-      Quick Space 作为聚合层的元认知价值
-    实践启示
-      1. 优先配置 Knowledge Base …
-      2. OAuth Scopes 遵循最小权限原则
-      3. 利用 Quick Space 的聚合特性…
-      4. 将 Quick Flows 与 Conf…
-    相关资源
+    架构设计 双轨并行的知识流
+    ACL 粒度 从空间级到页面级的权限下沉
+    OAuth 20 3LO 的安全边界
+    Quick Space 作为聚合层的元认知价值
 ```
 
 ## 概述

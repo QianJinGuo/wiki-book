@@ -15,25 +15,21 @@
 
 ```mermaid
 mindmap
-  root(("FrontierCode — Cognition AI …"))
-    一句话总结
-    三个独有贡献（不应合并到现有 entity）
-      1. **Mergeability 范式：第一…
-      2. **三种新颖评分方法**
-      3. **20+ 旗舰开源项目维护者亲建, 4…
-    实验结果（最 unsaturated）
+  root(("FrontierCode Cognition AI 的 PR"))
+    三个独有贡献 不应合并到现有 entity
+      Mergeability 范式 第一个测量PR 会被合并吗的基准
+      三种新颖评分方法
+      20 旗舰开源项目维护者亲建 40 小时任务
+    实验结果 最 unsaturated
     与现有 wiki 实体差异化
     关键技术细节
-      6 维度评分方法
+      维度评分方法
       Rubric Hardening Pipeline
       任务规模
-    上线状态
-    深度分析
-      1. Mergeability 范式代表编码评…
-      2. reverse-classical 是'…
-      3. mutagent 解决了 LLM-as-…
-      4. Maintainer-rubric 是'…
-    实践启示
+    Mergeability 范式代表编码评估的第二轴心转移
+    reverse-classical 是测试质量自动验证的认知突破
+    mutagent 解决了 LLM-as-judge 的严格性 vs
+    Maintainer-rubric 是code review
 ```
 
 ## 一句话总结

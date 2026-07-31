@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("PagePilot — PC端AI测试Skill设计与实战"))
+  root(("PagePilot PC端AI测试Skill设计与实战"))
     核心设计理念
     方案演进
     技术架构
-      四趟编译管线（Case 解析）
+      四趟编译管线 Case 解析
       组件查找优先链
-      Phase 0→6 门控
-      失败自学习
+      Phase 06 门控
     关键技术难点与解法
     业务成果
     组件生态

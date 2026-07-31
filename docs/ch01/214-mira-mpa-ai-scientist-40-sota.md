@@ -11,21 +11,21 @@
 
 ```mermaid
 mindmap
-  root(("MIRA + MPA：深度原理 AI Scientist…"))
-    概述
-    时代背景：递归自进化按下 AGI 加速键
+  root(("MIRA MPA 深度原理 AI Scientist"))
+    时代背景 递归自进化按下 AGI 加速键
       Jack Clark 与 OpenAI 的信号
       AI4S 领域 Nature 三连发
-    MPA 模型：40 项实验全面 SOTA
-    前 SOTA 的暴力美学：Suiren-1.0
+    MPA 模型 40 项实验全面 SOTA
+    前 SOTA 的暴力美学 Suiren-10
       Suiren 的结构性盲区
-    AutoResearch 架构：MIRA 的角色
-    自主重构：AI 改写 AI 的代码
-    自主清理：AI 的「科研直觉」
+    AutoResearch 架构 MIRA 的角色
+    自主重构 AI 改写 AI 的代码
+    自主清理 AI 的「科研直觉」
     三阶段训练框架
       预训练
-      物理对齐中间训练（MPA 核心创新）
+      物理对齐中间训练 MPA 核心创新
       后训练
+    最终战绩
 ```
 
 ## 概述

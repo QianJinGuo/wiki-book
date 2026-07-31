@@ -15,20 +15,17 @@
 
 ```mermaid
 mindmap
-  root(("改进 Agent：数据挖掘视角与 LangChain 实践"))
+  root(("改进 Agent 数据挖掘视角与 LangChain 实践"))
     核心框架
       Trace 是 Agent 改进的「货币」
       数据整合闭环
       Harness vs 微调三明治
-      核心公式
     LangChain 实践
     关键概念
-    深度分析
-      1. Trace 作为 Agent 改进的「货…
-      2. Harness → 微调 → Harne…
-      3. 评测集即训练数据：数据挖掘视角的统一框架
-      4. Trace Judge Model：用小…
-    实践启示
+    Trace 作为 Agent 改进的「货币」重新定义观测性
+    Harness 微调 Harness 的三明治改进策略
+    评测集即训练数据 数据挖掘视角的统一框架
+    Trace Judge Model 用小模型解决窄任务的成本效益
 ```
 
 ## 核心框架

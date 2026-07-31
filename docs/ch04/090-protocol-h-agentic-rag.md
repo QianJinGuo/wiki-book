@@ -18,14 +18,14 @@
 
 ```mermaid
 mindmap
-  root(("Protocol H：分层 Agentic RAG 企业架构"))
-    模态鸿沟问题：传统RAG为什么无能为力
-    分层Agentic解决方案：Protocol-…
+  root(("Protocol H 分层 Agentic RAG 企业架构"))
+    模态鸿沟问题 传统RAG为什么无能为力
+    分层Agentic解决方案 Protocol-H架构总览
     组件详解
-      Supervisor智能体：元认知编排器
-      SQL Worker：Schema感知查询引擎
-      Vector Worker：语义检索智能体
-    Reflective Retry机制：自主错误恢复
+      Supervisor智能体 元认知编排器
+      SQL Worker Schema感知查询引擎
+      Vector Worker 语义检索智能体
+    Reflective Retry机制 自主错误恢复
     实现与集成
       LangGraph StateGraph状态管理
       云中立的数据库适配器

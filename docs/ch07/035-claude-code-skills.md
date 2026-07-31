@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Skills 实战指南 — 发现…"))
+  root(("Claude Code Skills 实战指南 发现机制 编写与安全"))
     Skills 的核心设计理念
     发现机制
     执行流程
     安全限制
     与其他机制的配合
-    深度分析
-      Skill 的 Token 经济学
-      Skill 作为 Agent 的「肌肉记忆」
-      MCP Source 的安全隔离悖论
-      Skills 在 Agent Teams 中的角色
-    实践启示
-    相关实体
+    Skill 的 Token 经济学
+    Skill 作为 Agent 的「肌肉记忆」
+    MCP Source 的安全隔离悖论
 ```
 
 ## Skills 的核心设计理念

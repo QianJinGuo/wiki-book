@@ -26,18 +26,6 @@ With our latest minor release, Grafana 13.1, we're building on that foundation, 
 Below are just some of the highlights from Grafana 13.1. If you want to explore _all_ the latest updates, please refer to the [changelog](https://github.com/grafana/grafana/blob/main/CHANGELOG.md) or our [What’s New documentation](https://grafana.com/docs/grafana/latest/whatsnew/whats-new-in-v13-1/?pg=grafana-13-1-release-all-the-latest-features&plcmt=in-text).
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Grafana 13.1 release: observ…"))
-    http://grafana.com/b…
-      http://grafana.com/b…
-      http://grafana.com/b…
-      http://grafana.com/b…
-      http://grafana.com/b…
-```
-
 ## [](http://grafana.com/blog/grafana-13-1-release-all-the-latest-features/#managing-dashboards-as-code-whats-new-in-git-sync)Managing dashboards as code: what's new in Git Sync
 
 [Git Sync](https://grafana.com/docs/grafana/latest/as-code/observability-as-code/git-sync/?pg=grafana-13-1-release-all-the-latest-features&plcmt=in-text), a feature that brings native GitOps workflows into your Grafana instance, [reached general availability](https://grafana.com/blog/git-sync-grafana/?pg=grafana-13-1-release-all-the-latest-features&plcmt=in-text) with the release of Grafana 13. We added features to give you more flexibility and control when managing your dashboards as code, including GitHub App authentication and support for GitLab, BitBucket, and pure Git.

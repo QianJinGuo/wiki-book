@@ -11,13 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("GPT-5 Is Here and OpenAI Has…"))
-    核心内容
-      GPT-5 关键能力提升
-      OpenAI 官方建议
-    深度分析
-    实践启示
-    相关实体
+  root(("GPT-5 Is Here and OpenAI Has Some"))
+    GPT-5 关键能力提升
+    OpenAI 官方建议
 ```
 
 ## 核心内容

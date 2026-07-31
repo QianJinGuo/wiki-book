@@ -12,15 +12,12 @@
 
 ```mermaid
 mindmap
-  root(("CDP Bridge MCP：让 LLM 操作真实浏览器"))
+  root(("CDP Bridge MCP 让 LLM 操作真实浏览器"))
     核心理念
     可用工具
     安装与配置
     注意事项
     项目信息
-    相关实体
-    深度分析
-    实践启示
 ```
 
 ## 核心理念

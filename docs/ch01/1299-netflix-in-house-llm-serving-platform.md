@@ -13,20 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("Netflix In-House LLM Serving…"))
-    一句话
+  root(("Netflix In-House LLM Serving"))
     架构概览
     四个核心设计决策
-      1. 引擎选型：vLLM 作为 Paved-P…
-      2. Triton 集成：vLLM Backe…
-      3. API 前端：OpenAI-Compat…
-      4. 部署策略：Red-Black vs Ve…
+      引擎选型 vLLM 作为 Paved-Path
+      Triton 集成 vLLM Backend vs Python
+      API 前端 OpenAI-Compatible gRPC 双通道
     运营细节
       Boot 序列
       统一 Metrics 端点
-    约束解码（Constrained Decodi…
+    约束解码 Constrained Decoding 规模化
     下一步投资方向
-    相关实体
 ```
 
 ## 一句话

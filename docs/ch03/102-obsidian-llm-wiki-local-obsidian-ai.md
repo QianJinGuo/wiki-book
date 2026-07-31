@@ -9,15 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("obsidian-llm-wiki-local: Obs…"))
-    核心问题：笔记孤岛
-    obsidian-llm-wiki-local…
+  root(("obsidian-llm-wiki-local"))
+    核心问题 笔记孤岛
+    obsidian-llm-wiki-local 工作流
     实测效果
     可纠错反馈循环
     局限性与适用边界
     与 Karpathy LLM Wiki 的关系
     技术栈
-    深度分析
 ```
 
 ## 核心问题：笔记孤岛

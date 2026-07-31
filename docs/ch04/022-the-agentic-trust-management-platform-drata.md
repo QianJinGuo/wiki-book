@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-agentic-trust-management-platform-drata.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The Agentic Trust Management…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - 来源：drata.com
 - 评分：v=7, c=8, product=56

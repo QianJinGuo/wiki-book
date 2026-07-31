@@ -9,28 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("Bedrock AgentCore 多租户 Agent …"))
-    概述
+  root(("Bedrock AgentCore 多租户 Agent 构建实践"))
     十组件框架详解
-      1. Agent 运行时部署：专用 vs 共享
-      2. 模型策略：共享 / 分层 / 微调
-      3. 工作流：Silo、Pool、Bridge…
-      4. 多租户 RAG
+      Agent 运行时部署 专用 vs 共享
+      模型策略 共享 分层 微调
+      工作流 Silo Pool Bridge 三模式
     三种部署模型
       Silo 模型
       Pool 模型
       Bridge 模型
-    深度分析
-      架构选择的核心矛盾
-      AgentCore 的差异化价值
-      安全模型的演进意义
-      成本归因的技术债务
-    实践启示
-      架构选型决策树
-      从概念验证到生产的关键检查点
-      技术债务预警
-      未来演进方向
-    相关实体
+    架构选择的核心矛盾
+    AgentCore 的差异化价值
+    安全模型的演进意义
+    成本归因的技术债务
+    架构选型决策树
+    从概念验证到生产的关键检查点
 ```
 
 ## 核心要点

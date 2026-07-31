@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("微软 1000 行代码，把 Claude Opus 干翻…"))
-    深度分析
-      核心设计哲学：Terminal as Harn…
-      三大工程优势
-      Minimalist Harness 的实证意义
-      适用场景扩展
-    实践启示
-    相关实体
+  root(("微软 1000 行代码 把 Claude Opus 干翻了 15 分"))
+    核心设计哲学 Terminal as Harness
+    三大工程优势
+    Minimalist Harness 的实证意义
+    适用场景扩展
 ```
 
 ## 深度分析

@@ -13,21 +13,20 @@ Harness Engineering（驾御工程/运行约束工程）是在 LLM 外部设计�
 
 ```mermaid
 mindmap
-  root(("Harness Engineering 驾御工程：AI …"))
+  root(("Harness Engineering 驾御工程 AI Agent"))
     核心定义
     为什么需要 Harness
       Prompt 调优的局限性
-      典型的“捷径”行为
+      典型的捷径行为
     四大工程能力
-      1. 架构约束
-      2. 反馈回路
-      3. 工作流控制
-      4. 改进循环
+      架构约束
+      反馈回路
+      工作流控制
     实证效果
-      Can.ac 实验
-      LangChain Terminal Benc…
+      Canac 实验
+      LangChain Terminal Bench 20
       OpenAI 实践
-    落地建议（Claude Code 用户）
+    落地建议 Claude Code 用户
       组件分层
       最小可行 Harness 四步走
       最小 PostToolUse Hook 示例

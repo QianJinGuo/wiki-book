@@ -10,7 +10,6 @@
 ```mermaid
 mindmap
   root(("OpenClaw与Hermes源码架构对比"))
-    核心洞察
     OpenClaw四大设计亮点
       解决的三个核心痛点
     Gateway微内核哲学
@@ -20,8 +19,8 @@ mindmap
     Channel Plugin核心价值
     Dreaming三阶段加权晋升
     Hermes的补充设计
-      核心定位
     两者的局限
+    第22章 七大未覆盖落地难题
 ```
 
 ## 核心洞察

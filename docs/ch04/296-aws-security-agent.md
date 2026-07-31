@@ -11,22 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("使用 AWS Security Agent 构建应用安全…"))
+  root(("使用 AWS Security Agent 构建应用安全闭环"))
     概览
     三个生命周期阶段
-      1. 设计评审 Design Review
-      2. 代码审计 Code Audit
-      3. 渗透测试 Penetration Te…
-    Agent Space 创建 + GitHub…
+      设计评审 Design Review
+      代码审计 Code Audit
+      渗透测试 Penetration Testing
+    Agent Space 创建 GitHub 集成
     AWS Security Agent 能力对比表
     限制与陷阱
     与飞来汇案例的对比
-    实践启示
-    深度分析
-      1. 三阶段生命周期将安全评审从'上线后'迁移…
-      2. Agent Space 隔离是安全即代码…
-      3. LLM 推理 vs. 传统 SAST 的…
-      4. 渐进式集成路径是 DevSecOps 落…
+    三阶段生命周期将安全评审从上线后迁移到设计时
+    Agent Space 隔离是安全即代码的基础设施模型
 ```
 
 ## 概览

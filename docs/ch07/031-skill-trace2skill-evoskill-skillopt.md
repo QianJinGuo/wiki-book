@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Skill自进化三路线：Trace2Skill归纳法 /…"))
-    深度分析
-      三条路线的哲学差异
-      失败信号利用的差异
-      验证是进化的'奖励函数'
-      SkillOpt 的'模型训练'类比深度
-    实践启示
-    相关实体
+  root(("Skill自进化三路线 Trace2Skill归纳法"))
+    核心问题 Skill 自进化的过拟合
+    路线一 Trace2Skill 归纳法的聚合式进化
+    路线二 EvoSkill 自验证的自然选择
+    路线三 SkillOpt 将 Skill 进化对标为模型训练
+    三条路线的哲学差异
+    失败信号利用的差异
+    验证是进化的奖励函数
+    SkillOpt 的模型训练类比深度
 ```
 
 ## 摘要

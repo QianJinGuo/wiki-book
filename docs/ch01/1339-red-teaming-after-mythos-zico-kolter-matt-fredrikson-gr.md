@@ -11,15 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Red-Teaming after Mythos — Z…"))
-    深度分析
-      从 Jailbreak 到系统性安全评估的范式转移
-      Agent 安全的新威胁模型
-      AI 安全产业的演进方向
-    实践启示
-      对 Agent 开发者的建议
-      投资视角
-    相关实体
+  root(("Red-Teaming after Mythos Zico"))
+    Gray Swan 公司画像
+    AI 安全 传统网络安全
+    Prompt Injection 的系统性威胁
+    Shade AI 打败人类的 red-teaming
+    从 Jailbreak 到系统性安全评估的范式转移
+    Agent 安全的新威胁模型
+    AI 安全产业的演进方向
+    对 Agent 开发者的建议
 ```
 
 ## 摘要

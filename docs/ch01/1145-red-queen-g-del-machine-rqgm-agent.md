@@ -13,13 +13,10 @@ Cambridge + NVIDIA (2026-06-24) 提出的进化框架，解决自改进 Agent �
 
 ```mermaid
 mindmap
-  root(("Red Queen Gödel Machine (RQG…"))
-    核心问题
+  root(("Red Queen Gdel Machine RQGM 共进化"))
     历史脉络
-    核心机制：受控效用进化 Controlled…
-    实验结果
+    核心机制 受控效用进化 Controlled Utility
     关键意义
-    相关实体
 ```
 
 ## 核心问题

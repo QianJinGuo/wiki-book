@@ -13,15 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("AWS FSx for Lustre + GPUDire…"))
-    背景：Blackwell 时代的模型加载瓶颈
-    解决方案：FSx for Lustre + G…
-    Sharded Parallel Loadin…
-    性能结果（AWS 公开 benchmark）
-    TurboQuant：KV 缓存 6x 压缩
+  root(("AWS FSx for Lustre GPUDirect"))
+    背景 Blackwell 时代的模型加载瓶颈
+    解决方案 FSx for Lustre GDS 旁路 CPU
+    Sharded Parallel Loading 实现 4 阶段
+    性能结果 AWS 公开 benchmark
+    TurboQuant KV 缓存 6x 压缩
     与其他方案的对比
     实践要点
-    与现有实体的差异化
+    上线状态与资源
 ```
 
 ## 背景：Blackwell 时代的模型加载瓶颈

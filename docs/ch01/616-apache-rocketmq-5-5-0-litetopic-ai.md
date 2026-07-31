@@ -13,19 +13,17 @@ Apache RocketMQ 5.5.0 社区提案 RIP-83 定义的全新消息模型 LiteTopic 
 
 ```mermaid
 mindmap
-  root(("Apache RocketMQ 5.5.0 开源 Lit…"))
+  root(("Apache RocketMQ 550 开源 LiteTopic"))
     AI 应用的三大致命挑战
-    LiteTopic：AI 时代的核心创新
+    LiteTopic AI 时代的核心创新
       Session-as-Topic 模型
-      RocksDB 索引层：百万 LiteTopi…
-      Event-Driven Pull：网络开销从…
-      消费位点持久化与会话续传
+      RocksDB 索引层 百万 LiteTopics 的存储基础
+      Event-Driven Pull 网络开销从 ON 降到 O1
     Suspend 三态消费模型
     多 Agent 异步协作架构
-    MCP Server：Agent 直接操作消息队列
+    MCP Server Agent 直接操作消息队列
     生产验证
     五分钟跑通 Multi-Agent 异步通信
-    实践启示
 ```
 
 ## AI 应用的三大致命挑战

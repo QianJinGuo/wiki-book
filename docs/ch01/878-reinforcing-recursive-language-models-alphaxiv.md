@@ -7,18 +7,6 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Reinforcing Recursive Langua…"))
-    Summary
-    Notes
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## Summary
 7×8=56 - Article ingested from newsletter candidate pipeline.
 

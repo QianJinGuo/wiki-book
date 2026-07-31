@@ -13,16 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("How Loka Built a Natural, Lo…"))
-    深度分析
-      Speech-to-Speech vs STT…
-      Prompt 工程的工程化
-      架构的可扩展性
-    实践启示
-      对语音 Agent 开发者的建议
-      对 Agent 架构师的启示
-      对企业客户的建议
-    相关实体
+  root(("How Loka Built a Natural"))
+    传统语音助手的根本缺陷
+    Speech-to-Speech 端到端方案
+    Prompt 工程迭代 从 27 到 38
+    边缘场景测试
+    Speech-to-Speech vs STTLLMTTS
+    Prompt 工程的工程化
+    架构的可扩展性
+    对语音 Agent 开发者的建议
 ```
 
 ## 摘要

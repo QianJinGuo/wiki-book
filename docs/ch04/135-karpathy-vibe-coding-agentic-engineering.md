@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy 最新访谈：从 Vibe Coding …"))
-    深度分析
-      1. 任务粒度跃迁是 Agentic Engi…
-      2. Agentic Engineering …
-      3. 文档角色在 Software 3.0 里…
-      4. 锯齿状智能决定护栏必须默认开启
-    实践启示
-    相关实体
+  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
+    任务粒度跃迁是 Agentic Engineering 的真正起点
+    Agentic Engineering 是一种「控制面」重构
+    文档角色在 Software 30 里被重新定义
+    锯齿状智能决定护栏必须默认开启
 ```
 
 ## 摘要

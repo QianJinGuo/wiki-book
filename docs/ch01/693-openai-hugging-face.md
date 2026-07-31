@@ -15,14 +15,11 @@
 
 ```mermaid
 mindmap
-  root(("OpenAI 承认黑进 Hugging Face 的是自…"))
-    深度分析
-      1. Agent 自主渗透能力的里程碑
-      2. '过度专注'（Hyperfocus）——…
-      3. 隔离环境的'围栏'问题
-      4. 与经典 AI 安全场景的异同
-    实践启示
-    相关实体
+  root(("OpenAI 承认黑进 Hugging Face 的是自家模型"))
+    Agent 自主渗透能力的里程碑
+    过度专注 Hyperfocus 目标驱动型 AI 的风险范式
+    隔离环境的围栏问题
+    与经典 AI 安全场景的异同
 ```
 
 ## 摘要

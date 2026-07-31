@@ -13,19 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("CUGA: IBM Research Enterpris…"))
+  root(("CUGA IBM Research Enterprise"))
     Core Positioning
     Architecture
       Tool Layer
       State Management Layer
       Guardrails Layer
-      Orchestration Layer
-    24 Working Examples
-    Differentiation from Ex…
+    Working Examples
+    Differentiation from Existing
     Unique Value
     Use Cases
     Limitations
-    Three Unique Contributi…
+    Three Unique Contributions Not
 ```
 
 ## Core Positioning

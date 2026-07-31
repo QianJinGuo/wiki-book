@@ -13,12 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("Prompt Caching Engineering —…"))
-    核心矛盾：编码 Agent 的 Prompt …
+  root(("Prompt Caching Engineering"))
+    核心矛盾 编码 Agent 的 Prompt 增长模式
     KV Cache 基础设施两种模式
-    Tool Loadout 对缓存的破坏（关键洞察）
+    Tool Loadout 对缓存的破坏 关键洞察
     缓存生存期与中断
-    Pi 的缓存设计哲学：不激进修剪
+    Pi 的缓存设计哲学 不激进修剪
     缓存可见性
     缓存退化的常见原因
     与已知实体关系

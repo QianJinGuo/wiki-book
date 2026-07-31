@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Here Comes (Forward Deployed…"))
+  root(("Here Comes Forward Deployed"))
     文章背景
-    深度分析
-      1. 从'套装软件'到'原材料供应'的范式转移
-      2. 历史先例：Piggly Wiggly 与…
-      3. Clay Shirky 的预言与新一轮成…
-      4. 'Everybody'的分化：聚合与原子…
-    实践启示
-      给企业的建议
-      给个人的建议
-    相关实体
+    从套装软件到原材料供应的范式转移
+    历史先例 Piggly Wiggly 与自助服务革命
+    Clay Shirky 的预言与新一轮成本曲线
+    Everybody的分化 聚合与原子化的对立
+    给企业的建议
+    给个人的建议
 ```
 
 ## 核心要点

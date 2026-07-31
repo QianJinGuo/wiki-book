@@ -13,20 +13,18 @@ Andrej Karpathy——现 Anthropic 预训练团队核心研究员，在一场面
 
 ```mermaid
 mindmap
-  root(("Karpathy最新开喷：一句话让全场Agent开发者安静了"))
-    真金白银烧出来的教训：World of Bit…
+  root(("Karpathy最新开喷 一句话让全场Agent开发者安静了"))
+    真金白银烧出来的教训 World of Bits 的失败
     Karpathy 的三步忠告
-      第一步：别再逼 Agent 什么都能干，先把底…
-      第二步：Demo 很容易，把它做成产品要花十年
-      第三步：Agent 不是产品，基础能力才是产品
-    向大脑偷师：神经科学对 Agent 设计的启示
-    真正的暴论：最前沿不在 OpenAI，在你手里
-    深度分析
-      从失败到洞见：World of Bits 对 …
-      神经科学的类比迁移：Agent 架构的下一个灵…
-      'Demo 容易，产品十年'——技术成熟度曲线…
-      独立开发者的不对称优势：一个被低估的结构性事实
-    实践启示
+      第一步 别再逼 Agent 什么都能干 先把底层模型做对
+      第二步 Demo 很容易 把它做成产品要花十年
+      第三步 Agent 不是产品 基础能力才是产品
+    向大脑偷师 神经科学对 Agent 设计的启示
+    真正的暴论 最前沿不在 OpenAI 在你手里
+    从失败到洞见 World of Bits 对 2026 年
+    神经科学的类比迁移 Agent 架构的下一个灵感来源
+    Demo 容易 产品十年技术成熟度曲线的 Agent 版本
+    独立开发者的不对称优势 一个被低估的结构性事实
 ```
 
 ## 真金白银烧出来的教训：World of Bits 的失败

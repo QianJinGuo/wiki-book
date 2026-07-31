@@ -13,14 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Cyberscammers are bypassing …"))
-    核心发现
-    技术分析
-      威胁机制
+  root(("Cyberscammers are bypassing banks"))
+    威胁机制
     与现有实体对比
-    相关实体
-    深度分析
-    实践启示
 ```
 
 ## 核心发现

@@ -14,13 +14,10 @@
 ```mermaid
 mindmap
   root(("Management as AI superpower"))
-    深度分析
-      1. 从'prompting'到'delega…
-      2. '好交付文档'的结构共性
-      3. AI 时代稀缺性的反转
-      4. 软技能到硬技能的范式重估
-    实践启示
-    相关实体
+    从prompting到delegation的概念跃迁
+    好交付文档的结构共性
+    AI 时代稀缺性的反转
+    软技能到硬技能的范式重估
 ```
 
 ## 摘要

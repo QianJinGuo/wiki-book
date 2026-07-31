@@ -9,26 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering 实战：AI Co…"))
-    核心结论
-    背景：为什么需要 Harness Engine…
+  root(("Harness Engineering 实战 AI Coding"))
+    背景 为什么需要 Harness Engineering
       AI Coding 的现状与挑战
       企业级 Java 项目的特殊性
-      Agent 的四种典型失败模式（Anthrop…
+      Agent 的四种典型失败模式 Anthropic
     三次范式跃迁
-    四根支柱（OpenAI + Anthropic…
-      支柱一：上下文架构（Context Archi…
-      支柱二：Agent 专业化（Agent Spe…
-      支柱三：持久化记忆（Persistent Me…
-      支柱四：结构化执行（Structured Ex…
+    四根支柱 OpenAI Anthropic 经验总结
+      支柱一 上下文架构 Context Architecture
+      支柱二 Agent 专业化 Agent Specialization
+      支柱三 持久化记忆 Persistent Memory
     子页面
     相关页面
-    相关实体
-    深度分析
-      从「能力」到「可信赖产出」的系统性鸿沟
-      四种典型失败模式的系统性根因
-      三次范式跃迁的核心驱动力
-      十阶段 Pipeline 与四要素架构的协同机制
+    从「能力」到「可信赖产出」的系统性鸿沟
+    四种典型失败模式的系统性根因
+    三次范式跃迁的核心驱动力
 ```
 
 ## 核心结论

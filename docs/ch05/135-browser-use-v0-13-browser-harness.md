@@ -14,9 +14,9 @@
 
 ```mermaid
 mindmap
-  root(("browser-use v0.13 Browser Ha…"))
-    核心洞察：薄抽象胜过厚封装
-    Browser Harness 架构（~600…
+  root(("browser-use v013 Browser Harness"))
+    核心洞察 薄抽象胜过厚封装
+    Browser Harness 架构 600 行
     关键设计特性
     Benchmark 数据
     适用性

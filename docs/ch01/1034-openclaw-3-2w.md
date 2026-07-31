@@ -9,19 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw 完全指南：这可能是全网最新最全的系统化…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 深度分析
 
 2W字，建议收藏）

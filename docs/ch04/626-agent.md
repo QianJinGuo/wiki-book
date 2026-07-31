@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("小刘商业 Agent 增强层通用基座"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606 涉及agent领域的核心技术议题。

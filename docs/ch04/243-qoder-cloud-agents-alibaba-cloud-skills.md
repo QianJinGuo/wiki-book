@@ -17,14 +17,12 @@ Qoder 推出了 Cloud Agents 与 Alibaba Cloud Skills 的深度整合，开创�
 
 ```mermaid
 mindmap
-  root(("用云新范式：Qoder Cloud Agents × A…"))
+  root(("用云新范式 Qoder Cloud Agents Alibaba"))
     核心摘要
-    深度分析
-      一、云计算界面的四次代际跃迁
-      二、Alibaba Cloud Skills：…
-      三、四个场景的工程学解构
-      四、'人在环中'的设计精度
-    实践启示
+    一 云计算界面的四次代际跃迁
+    二 Alibaba Cloud Skills 把 API 升级为
+    三 四个场景的工程学解构
+    四 人在环中的设计精度
 ```
 
 ## 核心摘要

@@ -13,17 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Linear Code Intelligence: Co…"))
-    深度分析
-      从 Issue Tracking 到 Code…
-      谁是受益者——三种角色三种价值
-      GitHub 集成作为访问控制层
-      Linear Agent 的整体演化路径
-    实践启示
-      对使用 Linear 的团队
-      对构建 AI Agent 的工程师
-      对 AI 产品架构师
-    相关实体
+  root(("Linear Code Intelligence"))
+    从 Issue Tracking 到 Code-Aware Agent
+    谁是受益者三种角色三种价值
+    GitHub 集成作为访问控制层
+    Linear Agent 的整体演化路径
+    对使用 Linear 的团队
+    对构建 AI Agent 的工程师
+    对 AI 产品架构师
 ```
 
 ## 摘要

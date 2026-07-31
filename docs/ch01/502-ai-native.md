@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("高德工业级能力底座：AI-Native 的端云一体基建"))
-    深度分析
-      'AI 越写越快，系统却越来越乱'的悖论解析
-      五类结构性问题：AI 视角 vs 人视角
-      端云一体 vs 端云分离的架构选择
-      skillforge Pipeline：从源码…
-    实践启示
-    相关实体
+  root(("高德工业级能力底座 AI-Native 的端云一体基建"))
+    AI 越写越快 系统却越来越乱的悖论解析
+    五类结构性问题 AI 视角 vs 人视角
+    端云一体 vs 端云分离的架构选择
+    skillforge Pipeline 从源码到 Skill 的自动转译
 ```
 
 ## 摘要

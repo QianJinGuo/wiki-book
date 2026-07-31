@@ -11,15 +11,12 @@
 
 ```mermaid
 mindmap
-  root(("AI Infra 入门干货总结：大模型是如何高效推理的"))
-    深度分析
-      1. 批处理本质与 LLM 的核心矛盾
-      2. 连续批处理 Continuous Ba…
-      3. Paged Attention 的物理布…
-      4. Transformer Block 内部…
-    实践启示
-    相关实体
-      补充：HuggingFace Jobs 一键部…
+  root(("AI Infra 入门干货总结 大模型是如何高效推理的"))
+    批处理本质与 LLM 的核心矛盾
+    连续批处理 Continuous Batching 的 4 个硬性约束
+    Paged Attention 的物理布局与 Trade-off
+    Transformer Block 内部 6 步走
+    补充 HuggingFace Jobs 一键部署 vLLM
 ```
 
 ## 摘要

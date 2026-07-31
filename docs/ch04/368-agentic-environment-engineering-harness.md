@@ -11,8 +11,7 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Environment Engineer…"))
-    核心命题
+  root(("Agentic Environment Engineering"))
     工程链路分层
     中科院自动化所框架
     环境的五个基本问题
@@ -20,6 +19,7 @@ mindmap
     奖励带偏警告
     小环境契约模板
     与 Harness 的关系
+    线索合流
 ```
 
 ## 核心命题

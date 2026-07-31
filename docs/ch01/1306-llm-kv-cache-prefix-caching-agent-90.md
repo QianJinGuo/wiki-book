@@ -15,15 +15,12 @@ LLM 缓存技术的完整梳理，从 KV Cache 第一性原理到 Prefix Caching
 
 ```mermaid
 mindmap
-  root(("LLM 缓存原理与实践：从 KV Cache 到 Pre…"))
-    一句话
-    核心内容
-      KV Cache：推理地基
-      Prefix Caching 的两条铁律
-      缓存技术的四个方向
-      四家商用模型缓存落地对比
+  root(("LLM 缓存原理与实践 从 KV Cache 到 Prefix"))
+    KV Cache 推理地基
+    Prefix Caching 的两条铁律
+    缓存技术的四个方向
+    四家商用模型缓存落地对比
     本实体与现有 wiki 的关系
-    标签
 ```
 
 ## 一句话

@@ -9,17 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Enterprise Software Moats in…"))
-    核心问题
-    旧世界护城河：五维评估框架
+  root(("Enterprise Software Moats in the"))
+    旧世界护城河 五维评估框架
     Agent 时代的护城河重塑
       失效的旧护城河
       变得更重要了
-    新护城河：三条路
+    新护城河 三条路
     新数据护城河逻辑
     动作层护城河
     最后那一公里
     网络效应回归
+    Schema 重写需求
 ```
 
 ## 核心问题

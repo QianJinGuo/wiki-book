@@ -13,18 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("EDV：Execute-Distill-Verify 框…"))
-    核心问题：自我确认陷阱
-    EDV 框架：三阶段协同
-      1. Execute 执行阶段：异构并行探索
-      2. Distill 蒸馏阶段：第三方对比提炼
-      3. Verify 验证阶段：共识表决机制
+  root(("EDV Execute-Distill-Verify 框架"))
+    核心问题 自我确认陷阱
+    EDV 框架 三阶段协同
+      Execute 执行阶段 异构并行探索
+      Distill 蒸馏阶段 第三方对比提炼
+      Verify 验证阶段 共识表决机制
     推理阶段配套设计
       能力矩阵
       双层记忆体系
     实验验证
       记忆质量提升
-      关键发现
     深层启示
 ```
 

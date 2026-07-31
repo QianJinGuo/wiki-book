@@ -9,19 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 黑客松：技艺数字化六项目"))
-    概述
+  root(("Claude Code 黑客松 技艺数字化六项目"))
     六项目解析
-      MedKit（🇹🇷 金奖）——虚拟诊室
-      Wrench Board（🇫🇷 银奖）——电路…
-      Maieutic（🇨🇱 铜奖）——编程教学
-      Virtual Puppet Theater（…
+      MedKit 金奖 虚拟诊室
+      Wrench Board 银奖 电路板维修
+      Maieutic 铜奖 编程教学
     共同内核
     启示
-    深度分析
-    实践启示
     相关
-    相关实体
 ```
 
 ## 概述

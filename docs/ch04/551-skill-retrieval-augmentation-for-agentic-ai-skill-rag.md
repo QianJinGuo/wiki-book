@@ -11,16 +11,6 @@
 RAG改换换了！清华提出Skill-RAG
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Skill Retrieval Augmentation…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)

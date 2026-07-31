@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("The Shape of the Thing：AI 指数…"))
+  root(("The Shape of the Thing AI"))
     AI 能力指数曲线
-    StrongDM Software Facto…
+    StrongDM Software Factory 案例
     Rolling Disruption 模式
-    RSI：递归自我改进
+    RSI 递归自我改进
     我们仍在窗口期
     关键引用
-    相关主题
-    深度分析
-      指数曲线的含义：从'渐进'到'跨越'
-      StrongDM 软件工厂的组织创新含义
-      Rolling Disruption 的机制：…
-      RSI 的真实含义：不再是理论，而是工程路线图
+    指数曲线的含义 从渐进到跨越
+    StrongDM 软件工厂的组织创新含义
 ```
 
 ## AI 能力指数曲线

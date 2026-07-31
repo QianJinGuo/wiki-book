@@ -14,19 +14,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Harness Deep Und…"))
+  root(("Claude Code Harness Deep"))
     Agent Harness 的核心循环
-    相关实体
-    深度分析
-      1. Agent Harness 的本质：围绕…
-      2. 上下文工程：Agent 成败的关键因素
-      3. 权限控制：分层决策树
-      4. 工具执行的并发策略
-    实践启示
-      启示 1：上下文工程是 Agent 开发的核心战场
-      启示 2：权限系统需要'渐进式信任'
-      启示 3：工具执行应充分利用并发
-      启示 4：技能系统需要预算控制
+    Agent Harness 的本质 围绕 LLM调用的工程化包装
+    上下文工程 Agent 成败的关键因素
+    权限控制 分层决策树
+    工具执行的并发策略
+    启示 1 上下文工程是 Agent 开发的核心战场
+    启示 2 权限系统需要渐进式信任
+    启示 3 工具执行应充分利用并发
 ```
 
 ##  Agent Harness 的核心循环

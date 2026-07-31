@@ -13,16 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("场景营销前端 AI Coding — 从问题到方案"))
-    一句话
-    核心观点
-      1. 注意力坍塌（Attention Coll…
-      2. 真提效 vs 伪提效
-      3. 解决方案：外置DeepResearch型…
+  root(("场景营销前端 AI Coding 从问题到方案"))
+    注意力坍塌 Attention Collapse
+    真提效 vs 伪提效
+    解决方案 外置DeepResearch型Agent
     实践指南
       上下文管理三原则
-    相关实体
-    标签
 ```
 
 ## 一句话

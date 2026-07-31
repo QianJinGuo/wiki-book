@@ -13,19 +13,19 @@
 
 ```mermaid
 mindmap
-  root(("Dynamically Splitting Wide P…"))
-    背景：Wide Partition 的代价
-    基础策略：Time Slices × Time…
+  root(("Dynamically Splitting Wide"))
+    背景 Wide Partition 的代价
+    基础策略 Time Slices Time Buckets
     现有方法的局限
-    解决方案 1：Time Slice Re-Pa…
-      当 Partial ID 宽时，三个备选
-    解决方案 2：Dynamic Partitio…
-      Stage 1: Detection
-      Stage 2: Planning and Spl…
-      Stage 3: Serving Reads
-    三个独有贡献
-    适用场景
+    解决方案 1 Time Slice Re-Partitioning
+      当 Partial ID 宽时 三个备选
+    解决方案 2 Dynamic Partitioning per
+      Stage 1 Detection
+      Stage 2 Planning Splitting
+      Stage 3 Serving Reads
     关键概念参考
+    分层决策树的价值 从一刀切到精确匹配场景
+    Read-Path Detection 的反直觉设计
 ```
 
 ## 背景：Wide Partition 的代价

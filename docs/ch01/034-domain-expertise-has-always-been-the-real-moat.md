@@ -11,15 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Domain Expertise Has Always …"))
-    深度分析
-      后 AI 编码时代的价值转移
-      两种竞争者对垒：领域专家 vs. 通用工程师
-      '双层验证'——最稀缺的能力组合
-      AI 工具的能力边界
-    实践启示
-    相关实体
-    相关主题
+  root(("Domain Expertise Has Always Been"))
+    后 AI 编码时代的价值转移
+    两种竞争者对垒 领域专家 vs 通用工程师
+    双层验证最稀缺的能力组合
+    AI 工具的能力边界
 ```
 
 ## 摘要

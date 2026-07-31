@@ -9,13 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("一个文件让 AI Coding 效率翻倍：AGENTS.…"))
-    AGENTS.md 是什么
+  root(("一个文件让 AI Coding 效率翻倍 AGENTSmd 实践指南"))
+    AGENTSmd 是什么
       格式统一化历程
-    没有 AGENTS.md 的日子
-    核心理念：地图，而非手册
-    深度分析
-    实践启示
+    没有 AGENTSmd 的日子
+    核心理念 地图 而非手册
 ```
 
 ## AGENTS.md 是什么

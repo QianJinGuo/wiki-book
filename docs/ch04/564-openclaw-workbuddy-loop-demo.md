@@ -7,16 +7,6 @@
 # OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 Demo
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw、WorkBuddy、Loop 工程：谁…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 摘要
 
 叶小钗从工程实践角度对当前 AI Agent 市场进行系统分类，分析了哪些 Agent 品类真正有用（Coding Agent、AI 客服）、哪些还在验证（数字员工平台）、哪些概念大于实际（通用执行 Agent），并提出了 Agent 成功的三前提、工程四问题和 AI 原生的阶梯路径。

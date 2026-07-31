@@ -13,19 +13,15 @@ Zepto 的实时个性化系统：双序列排序器（Dual Sequence Ranker）在
 
 ```mermaid
 mindmap
-  root(("Real-Time Personalisation at…"))
-    核心内容
-    The Problem: One Screen…
-    What Came Before: And W…
-    System Overview: Archit…
-    Building Intuition: The…
-    1. Token Enrichment: Ri…
-    深度分析
-      双序列架构解决'静态用户画像'的根本性缺陷
-      Target-Aware Pooling 的候…
-      Token Enrichment 超越商品 ID
-      从协作过滤到深度排序的演化路径
-    实践启示
+  root(("Real-Time Personalisation at"))
+    The Problem One Screen Many Intents
+    What Came Before And Why It Was
+    System Overview Architecting the
+    Building Intuition The Full
+    Token Enrichment Richer Than a
+    双序列架构解决静态用户画像的根本性缺陷
+    Target-Aware Pooling 的候选级个性化
+    Token Enrichment 超越商品 ID
 ```
 
 ## 核心内容

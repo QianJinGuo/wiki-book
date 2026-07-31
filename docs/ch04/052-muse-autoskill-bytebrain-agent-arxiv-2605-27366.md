@@ -11,25 +11,21 @@
 
 ```mermaid
 mindmap
-  root(("MUSE-Autoskill：字节 ByteBrain …"))
-    概述
+  root(("MUSE-Autoskill 字节 ByteBrain 自进化"))
     时代背景
     核心痛点
     现有 Agent 四大致命缺陷
-    核心创新：软件工程最佳实践引入 Agent
+    核心创新 软件工程最佳实践引入 Agent
     MUSE-Autoskill 核心架构
-      技能定义（遵循 Anthropic Agent…
-      五阶段统一技能生命周期（核心贡献）
+      技能定义 遵循 Anthropic Agent Skills 开放标准
+      五阶段统一技能生命周期 核心贡献
       上下文管理系统
     三大创新点
-      创新一：软件工程最佳实践引入 Agent
-      创新二：技能级记忆，让经验真正可积累
-      创新三：外部化技能，实现跨 Agent 知识共享
-    实验结果
-      SkillsBench 基准测试
-      自动技能生成（最令人震惊）
-      跨 Agent 技能转移
-      成本分析
+      创新一 软件工程最佳实践引入 Agent
+      创新二 技能级记忆 让经验真正可积累
+      创新三 外部化技能 实现跨 Agent 知识共享
+    SkillsBench 基准测试
+    自动技能生成 最令人震惊
 ```
 
 ## 概述

@@ -13,15 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("火山引擎 AI 搜索千万级 Agent 架构演进 — 从…"))
-    核心问题
-    深度分析
-      从 Prompt Engineering 到 …
-      Workflow + Unified Poli…
-      Unified Policy：三合一决策中枢
-      三个统一：控制 + 行为 + 状态
-    实践启示
-    相关实体
+  root(("火山引擎 AI 搜索千万级 Agent 架构演进 从 ReAct"))
+    从 Prompt Engineering 到 System
+    Workflow Unified Policy Agent 的架构解耦
+    Unified Policy 三合一决策中枢
+    三个统一 控制 行为 状态
 ```
 
 ## 核心问题

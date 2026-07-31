@@ -9,8 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("Hermes-Agent Kanban 实测 — 商业 …"))
-    核心结论
+  root(("Hermes-Agent Kanban 实测 商业 CLI"))
     Kanban 技术架构
       数据库与状态机
       调度器 Tick 行为
@@ -20,15 +19,10 @@ mindmap
       为什么 Gateway 是本体
       开源框架的通病
     实操建议
-    深度分析
-      Gateway 本体论：Agent 架构的认知…
-      七条 Bug 的分类与根因
-      Claude Code / Kimi Code…
-    相关链接
-    实践启示
-      对 Hermes-Agent Kanban 使…
-      对 Agent 架构设计者的建议
-      对多框架组合架构的建议
+    Gateway 本体论 Agent 架构的认知层与执行层分离
+    七条 Bug 的分类与根因
+    Claude Code Kimi Code CLI 作为上层
+    对 Hermes-Agent Kanban 使用者的建议
 ```
 
 ## 核心结论

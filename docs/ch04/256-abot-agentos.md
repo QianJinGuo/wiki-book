@@ -11,21 +11,16 @@
 
 ```mermaid
 mindmap
-  root(("高德 ABot-AgentOS：面向机器人智能体的通用自…"))
-    一句话总结
+  root(("高德 ABot-AgentOS 面向机器人智能体的通用自进化操作系统"))
     核心贡献
-      1. 通用机器人 Agent OS 架构
-      2. Agent Harness：具身版的推理…
-      3. 多模态图记忆系统
-      4. Failure-driven Lifel…
+      通用机器人 Agent OS 架构
+      Agent Harness 具身版的推理-执行-验证闭环
+      多模态图记忆系统
     与现有 wiki 知识的关系
-    关键数据
-    深度分析
-      1. ABot-AgentOS 的核心洞察：具…
-      2. 多模态图记忆：从'文本检索'到'实体-事…
-      3. Failure-driven Self-…
-      4. EmbodiedWorldBench 填…
-    实践启示
+    ABot-AgentOS 的核心洞察 具身 AI
+    多模态图记忆 从文本检索到实体-事件-时空关联的记忆范式跃迁
+    Failure-driven Self-evolution
+    EmbodiedWorldBench 填补了长程具身 AI 评测的空白
 ```
 
 ## 一句话总结

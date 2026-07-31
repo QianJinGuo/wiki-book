@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("GPT-5.5：Sign of the Future —…"))
-    核心原语：Models / Apps / Ha…
-    GPT-imagegen-2 与 Otter …
-    4 提示 PhD 论文实验（最关键实证）
-    第二个组合实验：101 页 DandD 桌面 RPG
+  root(("GPT-55 Sign of the Future Mollick"))
+    核心原语 Models Apps Harnesses 三层独立推进
+    GPT-imagegen-2 与 Otter Test 跨越门槛
+    提示 PhD 论文实验 最关键实证
+    第二个组合实验 101 页 DD 桌面 RPG
     Jagged Frontier 的延伸边界
     与现有 Mollick 实体的差异化
-    实践启示（4 条）
-    深度分析
-      1. Models/Apps/Harnesse…
-      2. 4 提示 PhD 论文的'真实性陷阱'
-      3. Jagged frontier 的加速外推
-      4. Otter Test 与图像生成的'可用…
+    实践启示 4 条
+    ModelsAppsHarnesses 三层框架的系统性验证
 ```
 
 ## 核心原语：Models / Apps / Harnesses 三层独立推进

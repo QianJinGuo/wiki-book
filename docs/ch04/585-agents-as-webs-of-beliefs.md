@@ -11,15 +11,6 @@
 Synthesizes ideas from active inference, agent foundations, and ML into a 'belief webs' framework. Original synthesis but lacks empirical data or implementation details. Good conceptual depth for agent foundations, but confidence is moderate due to lack of verifiable benchmarks.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agents as Webs of Beliefs"))
-    Content Summary
-      Beliefs are held togeth…
-```
-
 ## Content Summary
 
 Published Time: 2026-06-27T21:45:29.440Z

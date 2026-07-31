@@ -13,10 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("Hardwood 1.0: A Fast, Lightw…"))
-    Overview
-    Why Hardwoodhttp://w…
-    What’s in Hardwood 1.0…
+  root(("Hardwood 10 A Fast Lightweight"))
+    Why
+    Whats in Hardwood
 ```
 
 ## Overview

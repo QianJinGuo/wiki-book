@@ -13,16 +13,6 @@
 - - |
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Crawler vs Opencli Doubao"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Notion Dev Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-dev-platform.md)
 - [Pi Mono Github](../ch01/834-pi-mono-github.html)

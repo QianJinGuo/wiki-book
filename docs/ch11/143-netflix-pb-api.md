@@ -15,23 +15,15 @@ Netflix 工程团队在 [Netflix Tech Blog](https://netflixtechblog.com/high-thr
 
 ```mermaid
 mindmap
-  root(("Netflix 高吞吐图抽象层：PB 级图数据的统一 A…"))
-    业务场景与 OLTP/OLAP 分流
+  root(("Netflix 高吞吐图抽象层 PB 级图数据的统一 API 与实时遍历"))
+    业务场景与 OLTPOLAP 分流
     三大核心业务图
-    架构：构建在已有抽象层之上
+    架构 构建在已有抽象层之上
     Property Graph 模型与强类型属性
-    深度分析
-      1. '构建在已有抽象层之上'的架构哲学
-      2. OLTP 图的遍历约束是刻意的设计权衡
-      3. Service Topology 的实时…
-      4. 强类型属性的性能与一致性双重价值
-    实践启示
-      1. 图系统选型：OLTP vs OLAP 先…
-      2. 构建在已有数据抽象之上而非从零开始
-      3. OLTP 图服务必须限制遍历深度
-      4. 强类型 schema 是图数据平台化的前提
-    相关实体
-    原文链接
+    构建在已有抽象层之上的架构哲学
+    OLTP 图的遍历约束是刻意的设计权衡
+    Service Topology 的实时根因分析价值
+    强类型属性的性能与一致性双重价值
 ```
 
 ## 业务场景与 OLTP/OLAP 分流

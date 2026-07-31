@@ -183,17 +183,14 @@ OWL的工具组件在camel/camel/toolkits路径下实现，大致可分为以下
 ```mermaid
 mindmap
   root(("Agent框架OWL原理详解"))
-    深度分析
-      1. 多Agent协作的架构优势
-      2. System Prompt的双重锚定作用
-      3. 记忆管理的设计权衡
-      4. 工具生态的护城河效应
-    实践启示
-      1. 何时使用OWL架构
-      2. 记忆策略选择建议
-      3. 工具集成的最佳实践
-      4. System Prompt设计要点
-    相关实体
+    多Agent协作的架构优势
+    System Prompt的双重锚定作用
+    记忆管理的设计权衡
+    工具生态的护城河效应
+    何时使用OWL架构
+    记忆策略选择建议
+    工具集成的最佳实践
+    System Prompt设计要点
 ```
 
 ## 深度分析

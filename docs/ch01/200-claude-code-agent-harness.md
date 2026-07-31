@@ -17,18 +17,15 @@
 
 ```mermaid
 mindmap
-  root(("深入理解 Claude Code 源码中的 Agent …"))
-    深度分析
-      1. Agent Harness 作为'围绕 …
-      2. 上下文组装：缓存分层是性能的关键
-      3. CLAUDE.md 加载层级：配置文件就…
-      4. 完整上下文包：用户消息只是冰山一角
-    实践启示
-      1. 构建 Agent Harness 的优先级
-      2. 学习 Claude Code 的具体设计
-      3. Plan Mode 的设计原则
-      4. 工具并发设计原则
-    相关实体
+  root(("深入理解 Claude Code 源码中的 Agent"))
+    Agent Harness 作为围绕 LLM
+    上下文组装 缓存分层是性能的关键
+    CLAUDEmd 加载层级 配置文件就是知识层级
+    完整上下文包 用户消息只是冰山一角
+    构建 Agent Harness 的优先级
+    学习 Claude Code 的具体设计
+    Plan Mode 的设计原则
+    工具并发设计原则
 ```
 
 ## 摘要

@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度-v2.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek视觉原语论文：当所有人在堆图像分辨率时，…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！ 涉及agent领域的核心技术议题。

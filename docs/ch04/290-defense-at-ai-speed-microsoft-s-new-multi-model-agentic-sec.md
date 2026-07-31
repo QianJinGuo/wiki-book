@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Defense at AI speed: Microso…"))
-    深度分析
-      背景：从 DARPA AI Cyber Cha…
-      MDASH 架构：多模型 Agentic Pi…
-      两类典型漏洞的单模型盲区分析
-      基准测试结果与局限
-    实践启示
-      对安全团队
-      对 AI/ML 工程师
-      对企业安全战略
-    相关实体
+  root(("Defense at AI speed Microsofts"))
+    背景 从 DARPA AI Cyber Challenge
+    MDASH 架构 多模型 Agentic Pipeline
+    两类典型漏洞的单模型盲区分析
+    基准测试结果与局限
+    对安全团队
+    对 AIML 工程师
+    对企业安全战略
 ```
 
 ## 核心要点

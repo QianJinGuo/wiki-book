@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("AutoResearch 分类法：四种 Agent 循环…"))
-    深度分析
-      一、为什么'Agent Loop 设计'是研究…
-      二、四种循环的工程取舍
-      三、四维分析框架的实战价值
-      四、与'传统 AutoML'的本质区别
-    实践启示
-    相关实体
+  root(("AutoResearch 分类法 四种 Agent"))
+    一 为什么Agent Loop 设计是研究效率竞争的本质
+    二 四种循环的工程取舍
+    三 四维分析框架的实战价值
+    四 与传统 AutoML的本质区别
 ```
 
 ## 摘要

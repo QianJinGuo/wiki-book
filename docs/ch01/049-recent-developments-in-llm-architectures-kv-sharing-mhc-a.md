@@ -9,15 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Recent Developments in LLM A…"))
-    深度分析
-      1. 跨层KV复用（Gemma 4）
-      2. 分层嵌入参数化（PLE，Gemma 4 …
-      3. 分层注意力预算分配（Laguna XS.2）
-      4. 压缩卷积注意力（CCA，ZAYA1-8B）
-    实践启示
-    相关实体
-    关联阅读
+  root(("Recent Developments in LLM"))
+    跨层KV复用 Gemma 4
+    分层嵌入参数化 PLE Gemma 4 E系列
+    分层注意力预算分配 Laguna XS2
+    压缩卷积注意力 CCA ZAYA1-8B
 ```
 
 ## 核心要点

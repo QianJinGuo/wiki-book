@@ -10,26 +10,24 @@
 
 ```mermaid
 mindmap
-  root(("Skill 系统：Agent 如何把经验沉淀成可复用能力"))
-    核心命题
-    Memory vs Skill：两种记忆的本质区别
-    为什么不能只用 Memory（三个坑）
-      坑 1：Memory 给'理解'用的，不是给'…
-      坑 2：Memory 没办法版本化
-      坑 3：Memory 之间没有依赖关系
-    SKILL.md 五区块结构
-      第 1 块：元信息（trigger 是关键）
-      第 2 块：适用场景
-      第 3 块：步骤清单（核心）
-      第 4 块：坑位记录（最妙的设计）
+  root(("Skill 系统 Agent 如何把经验沉淀成可复用能力"))
+    Memory vs Skill 两种记忆的本质区别
+    为什么不能只用 Memory 三个坑
+      坑 1 Memory 给理解用的 不是给执行用的
+      坑 2 Memory 没办法版本化
+      坑 3 Memory 之间没有依赖关系
+    SKILLmd 五区块结构
+      第 1 块 元信息 trigger 是关键
+      第 2 块 适用场景
+      第 3 块 步骤清单 核心
     Skill 检索四步流程
-      第 1 步：用户提需求
-      第 2 步：Skill 索引匹配（两层）
-      第 3 步：命中候选（通常 1~3 个）
-      第 4 步：注入完整 Skill 到 Prompt
-    Skill 修补哲学：patch 不是重写
+      第 1 步 用户提需求
+      第 2 步 Skill 索引匹配 两层
+      第 3 步 命中候选 通常 13 个
+    Skill 修补哲学 patch 不是重写
     Skill 生命周期五阶段
-    实操建议（5 条）
+    实操建议 5 条
+    相关页面
 ```
 
 ## 核心命题

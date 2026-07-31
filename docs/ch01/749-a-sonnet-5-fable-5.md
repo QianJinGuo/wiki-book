@@ -37,11 +37,9 @@ A社把它定位成迄今为止“最能干活”的Sonnet，能自己规划任�
 
 ```mermaid
 mindmap
-  root(("A社你解释下，啥叫Sonnet 5比Fable 5还贵？"))
-    详细信息
-    “Opus平替”
-    Sonnet 5，真的更便宜吗？
-    原文
+  root(("A社你解释下 啥叫Sonnet 5比Fable 5还贵"))
+    Opus平替
+    Sonnet 5 真的更便宜吗
 ```
 
 ## 核心要点

@@ -9,23 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("Triton L2缓存命中优化矩阵乘法(fp16&int…"))
+  root(("Triton L2缓存命中优化矩阵乘法fp16int8详解及性能测试"))
     文章概要
     基础概念
     L2缓存命中优化矩阵乘法
-      分组计算：利用 L2 Cache 的关键
+      分组计算 利用 L2 Cache 的关键
     int8精度下的Triton Matmul
     性能测试结论
-    深度分析
-      1. L2 Cache 命中优化的本质：数据访…
-      2. Triton 的抽象层次：平衡易用性与性能
-      3. int8 量化：精度与性能的博弈
-      4. Flash Attention 与算子融…
-    实践启示
-      对 GPU 性能优化的启示
-      对模型训练工程的启示
-      对 AI Infrastructure 工程的启示
-    相关实体
+    L2 Cache 命中优化的本质 数据访问模式
+    Triton 的抽象层次 平衡易用性与性能
+    int8 量化 精度与性能的博弈
 ```
 
 ## 文章概要

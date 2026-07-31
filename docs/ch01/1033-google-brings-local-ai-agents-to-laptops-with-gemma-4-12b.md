@@ -7,20 +7,6 @@
 # Google brings local AI agents to laptops with Gemma 4 12B
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Google brings local AI agent…"))
-    相关实体
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 - [interconnects ai p open and closed models are on different](../ch05/094-ai.html)

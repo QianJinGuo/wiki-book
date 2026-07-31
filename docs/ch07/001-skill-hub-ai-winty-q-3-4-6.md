@@ -11,24 +11,27 @@
 
 ```mermaid
 mindmap
-  root(("Skill Hub：企业级 AI 经验资产化的关键（组织…"))
-    概述
-    核心命题
+  root(("Skill Hub 企业级 AI 经验资产化的关键 组织能力视角"))
     企业 AI 落地的隐形 Tax
       三种典型路径
       隐形 AI Tax 概念
     为什么 Skill 才是真正的组织资产
       沉淀物的归属分法
-    Skill Hub 解决的不是写 Skill，…
-      真实问题清单（7 个治理问题）
+    Skill Hub 解决的不是写 Skill 而是治理 Skill
+      真实问题清单 7 个治理问题
       Skill Hub 治理五件事
-    真实场景：发版 Skill 三个阶段
-      起点：组织能力沉在个人脑子
-      第一阶段：让 AI 帮自己干活
-      第二阶段：写成 Skill
+    真实场景 发版 Skill 三个阶段
+      起点 组织能力沉在个人脑子
+      第一阶段 让 AI 帮自己干活
+      第二阶段 写成 Skill
     When to use
     Steps
-      第三阶段：进入 Skill Hub
+      第三阶段 进入 Skill Hub
+    没有 Skill Hub 的两个终态
+      状态一 Prompt 失控
+      状态二 能力孤岛
+    Skill Hub 不是大公司专属
+      中小团队最小可用 Skill Hub
 ```
 
 ## 概述

@@ -11,13 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Enterprise AI Agent Developm…"))
-    深度分析
-      企业 Agent 安全的真实差距
-      对 Agent 平台选型的影响
-      Low-code vs Pro-code 的安…
-    实践启示
-    相关实体
+  root(("Enterprise AI Agent Development"))
+    企业级 Agent 的定义
+    四大发现
+    报告方法论
+    企业 Agent 安全的真实差距
+    对 Agent 平台选型的影响
+    Low-code vs Pro-code 的安全悖论
 ```
 
 ## 摘要

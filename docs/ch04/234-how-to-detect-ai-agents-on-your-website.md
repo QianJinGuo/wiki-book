@@ -42,16 +42,6 @@ This guide covers AI agent detection through identity, network, browser, and beh
 [Share this post on X (Twitter)](https://x.com/intent/tweet?text=How%20to%20Detect%20AI%20Agents%20on%20Your%20Website%20%7C%20Full%20Guide&url=https%3A%2F%2Fcside.com%2Fblog%2Fguide-to-detect-ai-agent-traffic-on-your-website "Share this post on X (Twitter)")[Visit cside on Instagram](https://instagram.com/csideai "Visit cside on Instagram")[Share this post on LinkedIn](https://www.linkedin.com/feed/?shareActive=true&shareUrl=https%3A%2F%2Fcside.com%2Fblog%2Fguide-to-detect-ai-agent-traffic-on-your-website "Share this post on LinkedIn")Copy post link
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How to Detect AI Agents on Y…"))
-    TL;DR
-    深度分析
-    实践启示
-```
-
 ## TL;DR
 *   Commonly used methods to identify AI agent traffic are: Analyzing server logs, traditional bot detection tools (e.g. Cloudflare or Akamai), or specialized AI agent detection tools like cside.
 *   Specialized AI agent detection tools look at four categories of signals: identity, network, browser, and behavior.

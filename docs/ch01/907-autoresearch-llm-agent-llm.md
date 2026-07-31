@@ -14,15 +14,15 @@
 
 ```mermaid
 mindmap
-  root(("AutoResearch-LLM：让 Agent 接手 …"))
+  root(("AutoResearch-LLM 让 Agent 接手 LLM 训练优化"))
     核心贡献
     架构设计
       三阶段流水线
       实验隔离
     关键技术栈
     踩坑记录
-      PyTorch 2.6 + DeepSpeed…
-      Qwen3 thinking mode 让 B…
+      PyTorch 26 DeepSpeed loadbest 冲突
+      Qwen3 thinking mode 让 BLEU 掉到个位数
       OSS endpoint 因队列而异
     与现有工作对比
     已知不足

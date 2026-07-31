@@ -7,18 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building web search-enabled …"))
-    Summary
-    相关实体
-    深度分析
-    实践启示
-    关联实体
-```
-
 ## Summary
 See [source article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md) for full content.
 

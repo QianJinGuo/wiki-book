@@ -19,9 +19,9 @@
 
 ```mermaid
 mindmap
-  root(("【实践案例】我用Skills实现了个自媒体知识管理神器！"))
-    痛点：自媒体知识管理的低效困境
-    解决方案：Krawl 系统
+  root(("实践案例 我用Skills实现了个自媒体知识管理神器"))
+    痛点 自媒体知识管理的低效困境
+    解决方案 Krawl 系统
     认识 Claude Skills
       Skills 三要素与渐进式披露
       Skills 安装方式
@@ -29,14 +29,10 @@ mindmap
       核心设计思想
       核心实现
       完整交互流程
-      Skill 实现标准协议
-    深度分析
-      Skills 模式解决了什么问题？
-      渐进式披露的设计哲学
-      Dynamic Router + Lazy L…
-      从单点 Workflow 到系统化 Agent
-    实践启示
-    相关实体
+    Skills 模式解决了什么问题
+    渐进式披露的设计哲学
+    Dynamic Router Lazy Loading 的工程价值
+    从单点 Workflow 到系统化 Agent
 ```
 
 ## 痛点：自媒体知识管理的低效困境

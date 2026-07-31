@@ -13,17 +13,14 @@ Claude Code 官方工程师分享 Loop 工程在代码生成中的四个关键�
 
 ```mermaid
 mindmap
-  root(("Claude官方教你用 Loop：如何让Claude C…"))
+  root(("Claude官方教你用 Loop 如何让Claude"))
     四个交接点
-      交接点一：先交检查（Skill）
-      交接点二：交停止条件（/goal）
-      交接点三：交等待触发（/loop）
-      交接点四：交身份与权限（/schedule +…
-    深度分析
-      Loop 的委托阶梯：从对话质量到授权执行
-      Dynamic Workflows 的工程含义
-      成本与可靠性视角
-    实践启示
+      交接点一 先交检查 Skill
+      交接点二 交停止条件 goal
+      交接点三 交等待触发 loop
+    Loop 的委托阶梯 从对话质量到授权执行
+    Dynamic Workflows 的工程含义
+    成本与可靠性视角
     关联条目
     退出
 ```

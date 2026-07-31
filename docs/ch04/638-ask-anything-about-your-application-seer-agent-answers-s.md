@@ -5,15 +5,6 @@
 > 📊 Level ⭐⭐ | 3.7KB | `entities/seer-agent-workshop.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Ask anything about your appl…"))
-    深度分析
-    实践启示
-```
-
 ## 深度分析
 
 Sentry 的 Seer Agent 代表了**AI 原生可观测性**的重大跃迁：不是将 LLM 作为聊天界面叠加在现有监控工具之上，而是将自然语言查询直接嵌入遥测数据的语义层。Paul Jaffre 在这个 workshop 中展示的核心场景——用自然语言提问"端到端用户感知延迟是多少"并获得精确答案——意味着开发者无需理解 Sentry 的查询语法或 MetricsQL，直接用业务语言就能驱动调试流程 。 See also [Harness Engineering](../ch05/120-harness-engineering.html)

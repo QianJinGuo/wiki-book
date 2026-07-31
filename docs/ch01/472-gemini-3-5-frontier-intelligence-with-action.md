@@ -9,17 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("Gemini 3.5: frontier intelli…"))
+  root(("Gemini 35 frontier intelligence"))
     发布概览
     性能基准
       Agentic 与 Coding 表现
       速度优势
     Agentic 能力与用例
-      核心定位
       与 Antigravity 的协同
       多模态与图形生成
     商业落地与合作伙伴
-    Gemini Spark：个人 AI 智能体
+    Gemini Spark 个人 AI 智能体
       Search 中的增强
     安全框架
     技术架构要点

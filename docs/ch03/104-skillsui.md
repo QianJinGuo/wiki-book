@@ -10,23 +10,19 @@
 ```mermaid
 mindmap
   root(("SkillsUI"))
-    Overview
     Key Facts
-    核心问题：function calling 和…
+    核心问题 function calling 和 MCP 解决不了的那段路
     三层架构
-      1. Agent 调度层：Planning 和…
-      2. Skill 层：原子能力的'可执行规范'
-      3. AIUI 层：卡片化交互（非聊天框）
+      Agent 调度层 Planning 和 Skill 编排彻底分开
+      Skill 层 原子能力的可执行规范
+      AIUI 层 卡片化交互 非聊天框
     接入工程
-      路径一：OpenAPI/Swagger 半自动生成
-      路径二：业务嗅探（老旧系统）
+      路径一 OpenAPISwagger 半自动生成
+      路径二 业务嗅探 老旧系统
     四大工程决策
-    深度分析
-      1. 定位：企业 AI 落地的中间层赌注
-      2. 和 MCP 的互补关系
-      3. 卡片化 UI 的战略判断
-      4. 跨端状态一致性是 企业级 Agent 的…
-    实践启示
+    定位 企业 AI 落地的中间层赌注
+    和 MCP 的互补关系
+    卡片化 UI 的战略判断
 ```
 
 ## Overview

@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("Tencent Vibe Coding to Agent…"))
+  root(("Tencent Vibe Coding to Agentic"))
     Vibe Coding的问题
     Agentic Engineering的核心思路
     实践方案

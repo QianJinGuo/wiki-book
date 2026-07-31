@@ -13,27 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Spec Review Agent: Multi-Age…"))
-    问题：代码审查的'产品意图断层'
-    解决方案架构：多阶段多 agent 流水线
-    Amazon Bedrock AgentCor…
+  root(("Spec Review Agent Multi-Agent"))
+    问题 代码审查的产品意图断层
+    解决方案架构 多阶段多 agent 流水线
+    Amazon Bedrock AgentCore 的关键价值
     量化收益
-    关键设计模式（可复用）
-      1. **Code + Browser 双轨验…
-      2. **每个需求独立 Subagent**
-      3. **三源上下文融合（Spec + Cod…
-      4. **MCP 标准化集成**
-    实践启示
-      1. 在提交规格前先用 AI 审查
-      2. 多 agent  单 agent：每个…
-      3. AI 审查不能替代人类审查
-      4. 建立规格质量基线
+    关键设计模式 可复用
+      Code Browser 双轨验证
+      每个需求独立 Subagent
+      三源上下文融合 Spec Code Runtime
     相关参考
-    深度分析
-      1. Spec Review Agent：AI…
-      2. Bedrock AgentCore 作为…
-      3. 多 agent 审查的分工优势
-      4. 规格审查的可自动化程度
+    Spec Review Agent AI 驱动的规格审查
+    Bedrock AgentCore 作为多 agent 协作平台
 ```
 
 ## 问题：代码审查的"产品意图断层"

@@ -13,16 +13,6 @@ GitHub: https://github.com/Openbmb/edgeclaw
 - **本地模型派**：数据安全但能力受限
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("EdgeClaw：端云两栖龙虾框架"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [我用 Skillmd 做了一个简历生成器](ch04/271-skill.html)
 - [Aliyun Agentrun 2Line Integration](ch04/003-agentrun.html)

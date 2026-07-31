@@ -11,24 +11,29 @@
 
 ```mermaid
 mindmap
-  root(("MobileGym：中科院开源浏览器内安卓仿真平台，Mo…"))
-    概述
-    核心命题
-    训练/评测手机 Agent 的两大困境
-      困境 1：安卓模拟器
-      困境 2：真机
+  root(("MobileGym 中科院开源浏览器内安卓仿真平台 Mobile"))
+    训练评测手机 Agent 的两大困境
+      困境 1 安卓模拟器
+      困境 2 真机
       共同的死结
-    破局思路：交互保真
+    破局思路 交互保真
       「四两拨千斤」的脑回路转换
-      核心洞察
     MobileGym 架构
       浏览器内仿真实现
-      28 个 App 覆盖
+      个 App 覆盖
     一份 JSON 解决三大难题
-    一鱼两吃：考、练通吃
-      与 AndroidWorld、MobileWo…
+    一鱼两吃 考 练通吃
+      与 AndroidWorld MobileWorld 的对比
     轻量到能单机大规模并行
-      VLM-as-Judge vs MobileG…
+      VLM-as-Judge vs MobileGym 成本对比
+    考场 MobileGym-Bench
+      个参数化任务模板
+      答题卡判定法
+      个顶尖 Agent 同台竞技
+    训练场 真机迁移 951 增益
+      资源对比
+      训练效果
+      误判率的人工复核
 ```
 
 ## 概述

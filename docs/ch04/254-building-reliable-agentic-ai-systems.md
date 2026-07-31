@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Building Reliable Agentic AI…"))
-    深度分析
-      Harness Engineering 的教科…
-      Context Engineering 的实践模式
-      Researcher Agent 的层次化演进
-      与传统软件工程的映射
-    实践启示
-    相关实体
+  root(("Building Reliable Agentic AI Systems"))
+    PRINCE 系统的三阶段演进
+    系统架构
+    三层反思机制
+    上下文纪律 Context Discipline
+    Harness Engineering 的教科书实现
+    Context Engineering 的实践模式
+    Researcher Agent 的层次化演进
+    与传统软件工程的映射
 ```
 
 ## 摘要

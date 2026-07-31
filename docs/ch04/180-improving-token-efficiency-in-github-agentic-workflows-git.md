@@ -9,12 +9,11 @@
 
 ```mermaid
 mindmap
-  root(("Improving Token Efficiency i…"))
-    概述
+  root(("Improving Token Efficiency in"))
     核心优化技术
-      1. 消灭未使用的 MCP 工具注册
-      2. CLI 替代 MCP 工具调用
-      3. Auditor + Optimizer …
+      消灭未使用的 MCP 工具注册
+      CLI 替代 MCP 工具调用
+      Auditor Optimizer 元工作流
     度量方法论
       ET 公式
       三大混淆因素
@@ -24,11 +23,8 @@ mindmap
       核心价值
       局限
     知识库连接
-    深度分析
-      1. API Proxy 架构是 token …
-      2. '审计 Agent' 自举是正反馈系统的…
-      3. 工具冗余成本具有隐蔽的复利效应
-      4. CLI 替换 MCP 的本质是从'推理步…
+    API Proxy 架构是 token 可观测性的基础设施
+    审计 Agent 自举是正反馈系统的工程实例
 ```
 
 ## 概述

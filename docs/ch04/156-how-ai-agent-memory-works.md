@@ -11,20 +11,15 @@
 mindmap
   root(("How AI Agent Memory Works"))
     记忆的类型
-      Working Memory（工作记忆）
-      Long-term Memory（长期记忆）
-      Episodic Memory（情景记忆）
-      Semantic Memory（语义记忆）
+      Working Memory 工作记忆
+      Long-term Memory 长期记忆
+      Episodic Memory 情景记忆
     六种架构权衡
-      1. Buffer（缓冲区）
-      2. Rolling Summary（滚动摘要）
-      3. Vector Store（向量存储）
-      4. Knowledge Graph（知识图谱）
+      Buffer 缓冲区
+      Rolling Summary 滚动摘要
+      Vector Store 向量存储
     生产部署考量
     与相关概念的关系
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 记忆的类型

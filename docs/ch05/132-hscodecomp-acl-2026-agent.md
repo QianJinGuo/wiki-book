@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("HSCodeComp：阿里 ACL 2026 最佳资源论…"))
+  root(("HSCodeComp 阿里 ACL 2026"))
     核心贡献
       知识复杂度三层模型
       Benchmark 设计
-      关键发现
-    分层规则应用（Hierarchical Rul…
+    分层规则应用 Hierarchical Rule Application
     与现有 Agent 评测体系的关系
 ```
 

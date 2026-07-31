@@ -10,17 +10,6 @@
 Mert Cobanov: AI Agent Memory Systems 完整综述，向量DB/知识图谱/摘要/外部记忆模式
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Memory Agent Systems Cobanov"))
-    深度分析
-    实践启示
-    相关资源
-    相关实体
-```
-
 ## 摘要
 [](https://github.com/cobanov "GitHub")[](https://x.com/mertcobanov "Twitter") Language models forget the moment they finish replying. Memory is every...
 

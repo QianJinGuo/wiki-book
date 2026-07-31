@@ -13,20 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Olmo Hybrid and future LLM a…"))
-    Summary
-    Key Points
-      1. Hybrid Architecture:…
-      2. Why Hybrid? Compleme…
-      3. GDN vs. Mamba: The R…
-      4. Pretraining Gains: ~…
+  root(("Olmo Hybrid and future LLM"))
+    Hybrid Architecture The
+    Why Hybrid Complementary
+    GDN vs Mamba The RNN Layer Choice
+    Pretraining Gains 2x Efficiency
     Deep Analysis
       The Expressivity Argument
-      The KV-Cache Efficiency…
-      Are Frontier Models Alr…
-      The Distillation Resear…
+      The KV-Cache Efficiency Win
+      Are Frontier Models Already Hybrid
     Practical Implications
-    Related Entities
 ```
 
 ## Summary

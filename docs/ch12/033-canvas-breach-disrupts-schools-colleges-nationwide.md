@@ -15,17 +15,14 @@
 
 ```mermaid
 mindmap
-  root(("Canvas Breach Disrupts Schoo…"))
-    相关实体
-    深度分析
-      事件全貌
-      攻击时间线与演进
-      ShinyHunters组织特征
-      历史模式与战略升级
-    实践启示
-      对教育机构的启示
-      对企业的启示
-      对安全行业的启示
+  root(("Canvas Breach Disrupts Schools"))
+    事件全貌
+    攻击时间线与演进
+    ShinyHunters组织特征
+    历史模式与战略升级
+    对教育机构的启示
+    对企业的启示
+    对安全行业的启示
 ```
 
 ## 相关实体

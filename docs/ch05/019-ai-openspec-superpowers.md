@@ -9,22 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("AI 生产开发工作流：OpenSpec 规范驱动 + S…"))
+  root(("AI 生产开发工作流 OpenSpec 规范驱动"))
     三大痛点
     三件套架构
-      OpenSpec — 规范驱动开发（需求层）
-      Superpowers — 强制流程约束 AI…
-      gstack — 执行工具封装（验证层）
+      OpenSpec 规范驱动开发 需求层
+      Superpowers 强制流程约束 AI 执行 执行层
+      gstack 执行工具封装 验证层
     数据流与分工边界
-    关键要点
     相关页面
-    深度分析
-    实践启示
-    第 2 来源：代码随想录/程序员Carl 20…
-      补充 1：核心 thesis 的不同措辞
-      补充 2：Vibe Coding 的具体反例
-      补充 3：5 个高频面试题标准答法
-      补充 4：'什么时候该用'决策规则
+    补充 1 核心 thesis 的不同措辞
+    补充 2 Vibe Coding 的具体反例
+    补充 3 5 个高频面试题标准答法
+    补充 4 什么时候该用决策规则
 ```
 
 ## 三大痛点

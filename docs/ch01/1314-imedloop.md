@@ -13,13 +13,12 @@ iMedLoop 是德适科技（Deshi Tech）发布的全球医疗影像数据合规�
 
 ```mermaid
 mindmap
-  root(("德适科技iMedLoop：全球医疗影像数据平台"))
+  root(("德适科技iMedLoop 全球医疗影像数据平台"))
     平台构成
     运营数据
     数据与合规
     行业背景
     临床定位
-    相关实体
 ```
 
 ## 平台构成

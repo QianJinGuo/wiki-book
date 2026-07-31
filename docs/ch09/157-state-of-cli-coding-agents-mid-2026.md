@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("State of CLI Coding Agents, …"))
+  root(("State of CLI Coding Agents Mid-2026"))
     概览
-    深度分析
-      终端意外胜出：IDE vs CLI 的范式反转
-      标准化阶段的战略意义
-      35 个项目的生态密度与分化方向
-    实践启示
+    终端意外胜出 IDE vs CLI 的范式反转
+    标准化阶段的战略意义
+    个项目的生态密度与分化方向
     历史演进
 ```
 

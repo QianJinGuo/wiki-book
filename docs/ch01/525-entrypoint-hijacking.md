@@ -11,17 +11,6 @@ Markdown Content:
 The technique of EntryPoint Hijacking introduces a stealthier approach to code injection, as it doesn't rely on API calls that create a new thread within the process context, and it is independent of the attack chain. Arbitrary code is written to memory, but it executes only when the process legitimately creates a new thread. This enables threat actors to evade EDR defenses and extend their dwell time within the environment.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("EntryPoint Hijacking"))
-    Playbook
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## Playbook
 Windows processes dynamically load multiple modules (DLLs) into memory at runtime. Each module contains a **_DllMain()_**function that the operating system automatically invokes in response to process and thread creation or termination events. The Windows loader function (_**ntdll!Lrdp***_) maintains a record of each DLL loaded, with its properties to manage these invocations, including the **EntryPoint** address. Sophisticated threat actors can overwrite the _EntryPoint_ function of the targeted DLL to redirect the execution flow to attacker-controlled code whenever the loader function calls the _DllMain()_. However, hijacking the _EntryPoint_ introduces challenges for threat actors, such as process stability issues, race conditions and crashes.
 [Kurosh Dabbagh Escalante](https://x.com/_Kudaes_) released the [EPI](https://github.com/Kudaes/EPI) (EntryPoint Injection) proof of concept in 2023 and introduced a documented method to abuse the _EntryPoint_ property of a DLL. EPI patches the _EntryPoint_ of a loaded DLL (_kernelbase.dll_) and uses the _QueueUserWorkItem_ from inside the redirected _EntryPoint_. The malicious code is executed on a thread-pool thread. [Hugo Valette](https://x.com/RWXstoned) approached the same technique during x33fcon 2025, and released two proof-of-concepts examples called [LdrShuffle](https://github.com/RWXstoned/LdrShuffle), demonstrating EntryPoint Hijacking within the same and remote processes. It should be noted that _LdrShuffle_ handles the execution differently, even though both proof of concepts hijack the same property.

@@ -13,14 +13,11 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 
 ```mermaid
 mindmap
-  root(("From PDFs to insights: Archi…"))
-    背景：为什么传统 OCR 不够
-    4 层 IDP 架构
+  root(("From PDFs to insights"))
+    背景 为什么传统 OCR 不够
+    层 IDP 架构
     三件套技术栈
-    关键设计决策
-    适用场景
     与现有 wiki 实体的关联
-    原文链接
 ```
 
 ## 背景：为什么传统 OCR 不够

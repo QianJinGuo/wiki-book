@@ -11,14 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Overlays -- Retrofit…"))
-    深度分析
-      消息转换设计模式
-      A2A Spec 0.3 关键组件
-      两种实现模式
-      企业级价值
-    实践启示
-    相关实体
+  root(("Agentic Overlays -- Retrofit"))
+    REST vs A2A 范式差异
+    三种迁移路径对比
+    Agentic Overlay 核心特性
+    消息转换设计模式
+    A2A Spec 03 关键组件
+    两种实现模式
+    企业级价值
 ```
 
 ## 摘要

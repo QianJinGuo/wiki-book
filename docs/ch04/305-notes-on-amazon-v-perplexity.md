@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Notes on Amazon v. Perplexity"))
-    深度分析
-      Prompt Injection：Agenti…
-      User-Agent 伪装的行业语境
-      用户代理 vs 网站控制：Web 的根本张力
-      '谁在访问'的法律灰色地带
-    实践启示
-    相关实体
+  root(("Notes on Amazon v Perplexity"))
+    诉讼背景与核心指控
+    Agentic Browser 架构解析
+    Prompt Injection Agentic Browsing
+    User-Agent 伪装的行业语境
+    用户代理 vs 网站控制 Web 的根本张力
+    谁在访问的法律灰色地带
 ```
 
 ## 摘要

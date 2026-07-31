@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("SkillClaw × Nacos：从一次 Agent …"))
-    深度分析
-      闭环运转机制
-      治理保障
-      QuickStart 流程（7 步）
-      落地场景
-    实践启示
-    相关实体
+  root(("SkillClaw Nacos 从一次 Agent 会话到可治理"))
+    产生之困 共享之困
+    SkillClaw 与 Nacos 各解决什么问题
+    闭环运转机制
+    治理保障
+    QuickStart 流程 7 步
+    落地场景
 ```
 
 ## 摘要

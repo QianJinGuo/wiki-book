@@ -13,15 +13,14 @@ New Relic CTO Nic Benders 在 Software Engineering Daily 播客中深度讨论�
 
 ```mermaid
 mindmap
-  root(("New Relic CTO Nic Benders：Ob…"))
+  root(("New Relic CTO Nic Benders"))
     Observability 三大时代
     Dashboards 和 Alerts 的尽头
-    统计方法、ML 与 Neural Networ…
+    统计方法 ML 与 Neural Networks 三层
     LLM 在大规模系统理解中的角色
     告警疲劳的解决方案
     Observability for AI
     对新人开发者的建议
-    相关实体
 ```
 
 ## Observability 三大时代

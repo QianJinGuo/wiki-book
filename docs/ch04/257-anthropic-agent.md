@@ -9,25 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic 上线「做梦」功能，让 Agent 越…"))
+  root(("Anthropic 上线「做梦」功能 让 Agent 越睡越聪明"))
     核心功能
-      1. Dreaming（做梦）— 记忆整理
-      2. Outcomes（成果评估）
-      3. Multi-Agent（多 Agent …
+      Dreaming 做梦 记忆整理
+      Outcomes 成果评估
+      Multi-Agent 多 Agent 协作
     真实用户案例
     技术接入
-    深度分析
-      Memory 的本质：增量写入的问题
-      跨 Session 学习的可能性
-      Outcomes 的本质：把人工验收自动化
-      Multi-Agent 的隔离与共享边界
-    实践启示
-      何时使用 Dreaming
-      Outcomes 的适用场景
-      Multi-Agent 的设计建议
-      与现有系统的集成
-    关联概念
-    相关实体
+    Memory 的本质 增量写入的问题
+    跨 Session 学习的可能性
+    Outcomes 的本质 把人工验收自动化
+    Multi-Agent 的隔离与共享边界
+    何时使用 Dreaming
 ```
 
 ## 核心功能

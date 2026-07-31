@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 4.9KB | `entities/grafana-github-token-breach-led-to-html.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Grafana GitHub Token Breach …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 -
 ## 相关实体

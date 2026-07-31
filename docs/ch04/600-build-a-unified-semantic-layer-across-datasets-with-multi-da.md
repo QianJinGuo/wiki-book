@@ -17,14 +17,6 @@ Until now, organizations modeled their semantic layers by creating enriched data
 In this post, we walk through how multi-dataset Topics work, explain how the chat agent uses defined relationships to generate cross-dataset queries, and demonstrate an end-to-end implementation using a retail analytics scenario in Quick Sight.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build a unified semantic lay…"))
-    How multi-dataset Topic…
-```
-
 ## How multi-dataset Topics work
 
 A Topic in Quick is the semantic layer between raw data and business users. It encapsulates the metadata, business rules, relationships, and context that the AI-powered natural language query (NLQ) engine uses to interpret natural language questions and translate them into precise analytical queries.

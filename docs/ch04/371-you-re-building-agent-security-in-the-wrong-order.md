@@ -15,14 +15,14 @@ CrewAI 创始人提出的 Agent 安全建设顺序论：企业普遍先建安全
 
 ```mermaid
 mindmap
-  root(("You're building agent securi…"))
-    深度分析
-      1. '值得安全保护的东西'——Agent 安…
-      2. Harness Engineering …
-      3. 预算驱动 vs 问题驱动的建设顺序错位
-      4. Governance 作为架构而非合规
-    实践启示
-      相关实体
+  root(("Youre building agent security in"))
+    三步正确顺序
+    顺序错位的根本原因
+    CrewAI Flows 的 Harness 实践
+    值得安全保护的东西Agent 安全的本体论前提
+    Harness Engineering 是 Agent 安全的前置依赖
+    预算驱动 vs 问题驱动的建设顺序错位
+    Governance 作为架构而非合规
 ```
 
 ## 摘要

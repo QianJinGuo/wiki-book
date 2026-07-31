@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 4.1KB | `entities/p-ai-pms-guide-to-claude.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build a self-improving AI PM…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - ...
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-ai-pms-guide-to-claude.md)

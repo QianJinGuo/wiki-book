@@ -34,20 +34,15 @@ When finished you will have a system that uses concrete-ml in SageMaker AI desig
 
 ```mermaid
 mindmap
-  root(("End-to-end encrypted ML infe…"))
-    Solution overview
+  root(("End-to-end encrypted ML inference"))
     Prerequisites
-    深度分析
-      1. 数学安全与硬件安全的根本性差异
-      2. 量化是 FHE 推理从'理论可行'走向'…
-      3. Concrete-ML 的 API 兼容…
-      4. S3 中转架构反映了 FHE 与云服务 …
-    实践启示
-      1. 量化是 FHE 推理的必选项，而非可选项
-      2. 采用异步推理模式并配置足够的等待超时
-      3. 妥善保管客户端解密后的数据——FHE 安…
-      4. 训练阶段无需 FHE——直接复用现有 s…
-    相关实体
+    数学安全与硬件安全的根本性差异
+    量化是 FHE 推理从理论可行走向工程落地的关键杠杆
+    Concrete-ML 的 API 兼容性大幅降低了 FHE 的应用门槛
+    S3 中转架构反映了 FHE 与云服务 API 约束的深层冲突
+    量化是 FHE 推理的必选项 而非可选项
+    采用异步推理模式并配置足够的等待超时
+    妥善保管客户端解密后的数据FHE 安全不覆盖端点侧明文
 ```
 
 ## Solution overview

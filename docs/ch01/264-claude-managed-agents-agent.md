@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Managed Agents 新更新\"专…"))
-    架构边界：brain 与 hands 的分离
-    Self-Hosted Sandboxes 的…
-    MCP Tunnels：私有工具的网络可达性
+  root(("Claude Managed Agents 新更新专属云模式"))
+    架构边界 brain 与 hands 的分离
+    Self-Hosted Sandboxes 的机制与价值
+    MCP Tunnels 私有工具的网络可达性
     与 5 月 6 日更新的互补关系
     社区质疑的回应进度
     与其他 Agent 工具的定位差异
-    验证框架：不要先看功能够不够多
-    深度分析
-      1. Brain/Hands 分离架构正在成为…
-      2. Self-hosted Sandbox …
-      3. MCP Tunnel 将工具治理问题从隐…
-      4. Anthropic 的两次更新揭示了企业…
+    验证框架 不要先看功能够不够多
+    BrainHands 分离架构正在成为企业 Agent 部署的标准模式
 ```
 
 ## 架构边界：brain 与 hands 的分离

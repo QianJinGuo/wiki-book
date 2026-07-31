@@ -12,11 +12,11 @@
 
 ```mermaid
 mindmap
-  root(("LiteLLM WebSearch Intercepti…"))
-    三个独有贡献（与现有 3 篇 LiteLLM …
-    WebSearch Interception …
-    完整 Docker Compose 部署（4 …
-    踩坑记录（5 条实跑验证）
+  root(("LiteLLM WebSearch Interception"))
+    三个独有贡献 与现有 3 篇 LiteLLM entity 互补
+    WebSearch Interception 工作原理
+    完整 Docker Compose 部署 4 服务
+    踩坑记录 5 条实跑验证
     与现有 LiteLLM 实体的差异化
     引用与延伸
 ```

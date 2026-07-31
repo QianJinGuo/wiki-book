@@ -9,31 +9,30 @@
 
 ```mermaid
 mindmap
-  root(("AI Agents Security Survey: A…"))
-    一、威胁格局概述
-      1.1 三大核心挑战
-      1.2 Agent vs 传统软件的安全差异
-    二、攻击向量分类
-      2.1 主要攻击向量矩阵
-      2.2 Tool Poisoning：企业 A…
-      2.3 Bishop Fox AIMap 发现…
-    三、分层防御体系
-      3.1 全生命周期安全：清华大学方寸体系
-      3.2 Fangcun Observer：看见…
-      3.3 Fangcun Guard：8ms 安…
-      3.4 Skill Ward：三阶段检测，真实蜜罐
-    四、MCP 协议的运行时验证层
-      4.1 三重验证机制
-      4.2 Behavioral Specific…
-      4.3 分阶段 rollout 策略
-    五、攻击测试能力（AIMap）
-      5.1 风险评分
-      5.2 攻击测试模块
-    六、Agent 生命周期各阶段威胁与缓解
-      6.1 按 Agent 生命周期阶段分类
-      6.2 分层防御矩阵
-    七、关键引述
-    八、相关概念
+  root(("AI Agents Security Survey Attack"))
+    一 威胁格局概述
+      三大核心挑战
+      Agent vs 传统软件的安全差异
+    二 攻击向量分类
+      主要攻击向量矩阵
+      Tool Poisoning 企业 Agent 安全的核心缺陷
+      Bishop Fox AIMap 发现的互联网暴露问题
+    三 分层防御体系
+      全生命周期安全 清华大学方寸体系
+      Fangcun Observer 看见真实动作 守住安全边界
+      Fangcun Guard 8ms 安全审核变基础设施
+    四 MCP 协议的运行时验证层
+      三重验证机制
+      Behavioral Specification
+      分阶段 rollout 策略
+    五 攻击测试能力 AIMap
+      风险评分
+      攻击测试模块
+    六 Agent 生命周期各阶段威胁与缓解
+      按 Agent 生命周期阶段分类
+      分层防御矩阵
+    七 关键引述
+    八 相关概念
 ```
 
 ## 一、威胁格局概述

@@ -13,30 +13,25 @@
 
 ```mermaid
 mindmap
-  root(("Hermes Agent 与 Agent Skill 设…"))
-    一、Hermes Agent：自进化的开源 A…
-      背景
+  root(("Hermes Agent 与 Agent Skill 设计解析"))
+    一 Hermes Agent 自进化的开源 Agent
       核心亮点
       功能特性
-    二、Self-Evolving：双路径驱动的自进化
-      路径一：动态 Skill 生成（'记笔记'）
-      路径二：RL 训练闭环（'练内功'）
-    三、Agent Skills 详解
-      什么是 Skill？
-      核心设计哲学：渐进式披露
-      SKILL.md 结构
-    Triggers（触发条件）
-    Steps（执行步骤）
-    Pitfalls（避坑指南）
+    二 Self-Evolving 双路径驱动的自进化
+      路径一 动态 Skill 生成 记笔记
+      路径二 RL 训练闭环 练内功
+    三 Agent Skills 详解
+      什么是 Skill
+      核心设计哲学 渐进式披露
+      SKILLmd 结构
+    Triggers 触发条件
+    Steps 执行步骤
+    Pitfalls 避坑指南
       Skill vs Prompt 对比
-    四、总结
+    四 总结
       Hermes 的自进化全景
       核心认知
-    深度分析
-      双路径自进化的设计哲学：短期记忆 vs 长期能力
-      渐进式披露：上下文管理的范式创新
-      后台审查 Agent 的设计权衡
-      RL 训练闭环的工程挑战
+    双路径自进化的设计哲学 短期记忆 vs 长期能力
 ```
 
 ## 一、Hermes Agent：自进化的开源 Agent

@@ -13,14 +13,10 @@
 mindmap
   root(("Anthropic 首次揭秘下一代 Claude 怎么造"))
     核心信号
-    深度分析
     详细解读
-      模型即产品：规格定义驱动的开发模式
-      Adaptive Thinking：主动判断思…
-      Dreaming 机制：后台记忆整理
-      AI 改变产品开发流程
-    实践启示
-    相关实体
+      模型即产品 规格定义驱动的开发模式
+      Adaptive Thinking 主动判断思考深度
+      Dreaming 机制 后台记忆整理
 ```
 
 ## 核心信号

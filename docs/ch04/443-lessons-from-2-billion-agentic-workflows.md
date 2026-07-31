@@ -13,14 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Lessons From 2 Billion Agent…"))
-    深度分析
-      '信任梯度'作为系统设计原则
-      确定性骨架 + Agent 判断的分离架构
-      'Intelligence is table …
-      20 亿次执行的规模信号
-    实践启示
-    相关实体
+  root(("Lessons From 2 Billion Agentic"))
+    为什么很多 Agent 永远无法上线
+    三个核心模式
+    信任梯度作为系统设计原则
+    确定性骨架 Agent 判断的分离架构
+    Intelligence is table stakes的深层含义
+    亿次执行的规模信号
 ```
 
 ## 摘要

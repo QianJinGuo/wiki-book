@@ -13,11 +13,9 @@ Perplexity 开源 Numbat——一个 agent 安全套件，用于帮助防御者�
 
 ```mermaid
 mindmap
-  root(("Perplexity Numbat: Agent Sec…"))
-    核心能力
+  root(("Perplexity Numbat Agent Security"))
     设计理念
     技术特点
-    相关实体
 ```
 
 ## 核心能力

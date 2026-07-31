@@ -5,18 +5,6 @@
 > 📊 Level ⭐⭐ | 4.3KB | `entities/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI buys AI consultancy t…"))
-    Summary
-    Notes
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## Summary
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
 

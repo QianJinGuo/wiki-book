@@ -13,21 +13,20 @@
 
 ```mermaid
 mindmap
-  root(("How harnesses and post-train…"))
+  root(("How harnesses and post-training"))
     Core thesis
     Empirical setup
     Key findings
-      1. Post-training is the…
-      2. Harness scaffolding …
-      3. GLM-5.1's edge is po…
-      4. Failure modes are di…
+      Post-training is the dominant axis
+      Harness scaffolding 14-16x lift
+      GLM-51s edge is post-training not
     Implications for the wiki
-      For Agent/Harness engin…
+      For AgentHarness engineering
       For Security research
-      For the open-weight vs …
+      For the open-weight vs
     Methodology strengths
     Methodology caveats
-    Relation to existing wi…
+    Relation to existing wiki entities
     Cross-link targets
 ```
 

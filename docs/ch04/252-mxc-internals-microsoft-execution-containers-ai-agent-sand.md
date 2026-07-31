@@ -15,18 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("MXC Internals — Microsoft eX…"))
-    TL;DR
+  root(("MXC Internals Microsoft eXecution"))
+    TLDR
     三层隔离架构
-      1. Hyper-V micro-VM（强边界）
-      2. Syscall Policy（agent…
-      3. 临时 home + overlayfs
+      Hyper-V micro-VM 强边界
+      Syscall Policy agent 工作负载特化
+      临时 home overlayfs
     与现有 sandbox 方案对比
     与 agent 安全研究的关系
-    深度分析
-    实践启示
     局限
-    上线状态
 ```
 
 ## TL;DR

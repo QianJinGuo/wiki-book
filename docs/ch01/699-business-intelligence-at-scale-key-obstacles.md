@@ -11,14 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("Business intelligence at sca…"))
-    深度分析
-    Business intelligence a…
-    Solution overview
-      Automated narrative gen…
-      Conversational AI
-    相关实体
-    相关主题
+  root(("Business intelligence at scale"))
+    Business intelligence at scale
+    Automated narrative generation
+    Conversational AI
 ```
 
 ## 深度分析

@@ -13,28 +13,24 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic Claude Community 插…"))
+  root(("Anthropic Claude Community"))
     核心概念
       什么是 Repo-jacking
       Claude Code Community 插件
     漏洞发现过程
       受影响的插件
-      概念验证：deep-research-claude
+      概念验证 deep-research-claude
       攻击路径演示
     安全机制分析
-      SHA 校验：安装路径的守护者
+      SHA 校验 安装路径的守护者
       SHA 更新的潜在风险
     披露与响应
       负责任的披露
       Anthropic 的回应
-    深度分析
-      AI 工具供应链安全的新挑战
-      插件生态系统的结构性风险
-      对比：VSCode 扩展市场的教训
-    实践启示
-      对组织的建议
-      对开发者的建议
-      对安全研究员的建议
+    AI 工具供应链安全的新挑战
+    插件生态系统的结构性风险
+    对比 VSCode 扩展市场的教训
+    对组织的建议
 ```
 
 ## 摘要

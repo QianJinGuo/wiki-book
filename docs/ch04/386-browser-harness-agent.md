@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Browser Harness — 自愈型浏览器 Age…"))
-    Overview
+  root(("Browser Harness 自愈型浏览器 Agent 框架"))
     架构
-    核心创新：自愈机制（Self-Healing）
+    核心创新 自愈机制 Self-Healing
     Domain-Skills 自动沉淀
     与同类方案对比
     安全边界
-    深度分析
-      自愈机制的架构意义
-      去框架化的代价与收益
-      与 AgentBrowser 的路线对比
-    实践启示
-      何时选择 Browser Harness
-      自愈机制的使用技巧
-      安全使用的最佳实践
+    自愈机制的架构意义
+    去框架化的代价与收益
+    与 AgentBrowser 的路线对比
 ```
 
 ## Overview

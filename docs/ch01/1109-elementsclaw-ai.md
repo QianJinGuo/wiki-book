@@ -11,7 +11,7 @@
 
 ```mermaid
 mindmap
-  root(("ElementsClaw：AI驱动超导材料发现"))
+  root(("ElementsClaw AI驱动超导材料发现"))
     核心数据
     技术架构
     四种发现路径

@@ -9,21 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/factory-missions-multi-agent-shipping-for-days-luke.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一个 Mission 跑 16 天、烧 7.78 亿 T…"))
-    深度分析
-      核心观点
-    TL;DR
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学 涉及agent领域的核心技术议题。

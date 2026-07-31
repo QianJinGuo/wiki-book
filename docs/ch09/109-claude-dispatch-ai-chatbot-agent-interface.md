@@ -13,15 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("Claude Dispatch + 接口力量：AI 从 …"))
-    核心论点：接口是 AI 能力的真正瓶颈
-    接口类型 1：专业化工具
-    接口类型 2：个人 Agent
-    接口类型 3：按需生成
+  root(("Claude Dispatch 接口力量 AI 从 Chatbot"))
+    核心论点 接口是 AI 能力的真正瓶颈
+    接口类型 1 专业化工具
+    接口类型 2 个人 Agent
+    接口类型 3 按需生成
     结论
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 核心论点：接口是 AI 能力的真正瓶颈

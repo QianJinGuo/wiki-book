@@ -13,17 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Agent Browser 僵尸进程排查与定时清理（Cl…"))
+  root(("Agent Browser 僵尸进程排查与定时清理 Claude"))
     问题发现
     QoderWork 诊断
-    解决方案
-    深度分析
-      Agent 工具的进程生命周期管理挑战
-      AI 自愈循环（Self-Healing Lo…
-      峰谷 Token 经济与夜间 Agent 编排
-      Agent OS 形态的收敛
-    实践启示
-    相关实体
+    Agent 工具的进程生命周期管理挑战
+    AI 自愈循环 Self-Healing Loop 的原型
+    峰谷 Token 经济与夜间 Agent 编排
+    Agent OS 形态的收敛
 ```
 
 ## 问题发现

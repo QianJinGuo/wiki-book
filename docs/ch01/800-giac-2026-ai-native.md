@@ -9,14 +9,6 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/giac-2026-圆满落幕ai-native-进入深水区技术组织如何重构.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GIAC 2026 圆满落幕：AI Native 进入深…"))
-    技术分析
-```
-
 ## 核心要点
 
 GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？

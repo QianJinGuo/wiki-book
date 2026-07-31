@@ -39,18 +39,15 @@ It is important to remind yourself that there have been no walls in progress to 
 
 ```mermaid
 mindmap
-  root(("What comes next with open mo…"))
-    The balance of power in…
-    Open weights as part of…
-    Still looking for open …
-    Open models that are sp…
-    Models vs. ecosystems.
-    深度分析
-      三层模型架构的战略意涵
-      蒸馏困境与护城河重塑
-      垂直整合与开放系统的张力
-      生态构建 vs. 单点突破
-    实践启示
+  root(("What comes next with open models"))
+    The balance of power in open vs
+    Open weights as part of an AI system
+    Still looking for open model
+    Open models that are specific
+    Models vs ecosystems
+    三层模型架构的战略意涵
+    蒸馏困境与护城河重塑
+    垂直整合与开放系统的张力
 ```
 
 ## The balance of power in open vs. closed models

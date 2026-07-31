@@ -133,18 +133,15 @@ Session Search  |  原始对话历史（完整思考轨迹）  |  通过 session
 
 ```mermaid
 mindmap
-  root(("LLM agent脚手架如何具备自进化能力？——以her…"))
-    深度分析
-      自进化机制的本质：显式知识沉淀而非权重更新
-      三层记忆架构的协同逻辑
-      Skill 工具化的工程动机
-      Memory 写入的 Prompt 注入防护
-    实践启示
-      1. 为 Agent 设计工具时采用'高频专用…
-      2. 所有持久化写入都要考虑 Prompt I…
-      3. Prefix Cache 是长会话成本优…
-      4. Skill 的生命周期需要被主动管理
-    相关实体
+  root(("LLM agent脚手架如何具备自进化能力 以hermes"))
+    自进化机制的本质 显式知识沉淀而非权重更新
+    三层记忆架构的协同逻辑
+    Skill 工具化的工程动机
+    Memory 写入的 Prompt 注入防护
+    为 Agent 设计工具时采用高频专用 低频通用原则
+    所有持久化写入都要考虑 Prompt Injection 防护
+    Prefix Cache 是长会话成本优化的关键
+    Skill 的生命周期需要被主动管理
 ```
 
 ## 深度分析

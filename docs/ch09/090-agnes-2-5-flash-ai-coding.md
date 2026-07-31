@@ -15,16 +15,12 @@ Agnes AI 于 2026 年 7 月发布新一代文本模型 Agnes-2.5-Flash，定位�
 
 ```mermaid
 mindmap
-  root(("Agnes-2.5-Flash：免费AI Coding模…"))
-    深度分析
-      免费策略的市场扰动效应
-      Coding 能力的竞争定位
-      Agnes Harness 的技术架构启示
-      与旗舰模型的分层定位
-    实践启示
-    相关实体
-    第 2 来源 — 新智元报道：Codex 封号…
-      互补角度
+  root(("Agnes-25-Flash 免费AI Coding模型杀入全球第一梯队"))
+    免费策略的市场扰动效应
+    Coding 能力的竞争定位
+    Agnes Harness 的技术架构启示
+    与旗舰模型的分层定位
+    互补角度
 ```
 
 ## 核心要点

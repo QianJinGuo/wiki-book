@@ -108,12 +108,10 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 
 ```mermaid
 mindmap
-  root(("阿里Qwen提出Skill-RM：把奖励模型做成可复用A…"))
+  root(("阿里Qwen提出Skill-RM 把奖励模型做成可复用Agent"))
     工程启示
-    实践启示
     与已有实体的差异化
     上手资源
-    相关实体
 ```
 
 ## 工程启示

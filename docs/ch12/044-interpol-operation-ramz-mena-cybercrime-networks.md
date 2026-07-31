@@ -9,24 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("INTERPOL Operation Ramz MENA…"))
+  root(("INTERPOL Operation Ramz MENA"))
     行动背景与规模
     各国执法行动详情
-      阿尔及利亚 — 摧毁钓鱼即服务（Phishin…
+      阿尔及利亚 摧毁钓鱼即服务 Phishing-as-a-Service
     私营部门参与
       Group-IB
     技术与战术特征
     全球执法背景
     行动意义
-    深度分析
-      PhaaS 商业模式的区域扩散
-      人口贩运与网络犯罪的交织
-      公私情报协作的成熟度验证
-      基础设施层面的脆弱性
-    实践启示
-      对执法机构的建议
-      对企业的建议
-      对个人用户的建议
+    PhaaS 商业模式的区域扩散
+    人口贩运与网络犯罪的交织
 ```
 
 ## 核心要点

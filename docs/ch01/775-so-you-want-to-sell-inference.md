@@ -12,13 +12,13 @@
 ```mermaid
 mindmap
   root(("So You Want to Sell Inference"))
-    深度分析
-      推理市场的结构性变化
-      Harness 的价值与陷阱
-      对 AI Infra 投资的启示
-      Sierra 和 Devin 的定价模式
-    实践启示
-    相关实体
+    三种定价策略
+    Bring Your Own Key 的影响
+    董事会应该问的问题
+    推理市场的结构性变化
+    Harness 的价值与陷阱
+    对 AI Infra 投资的启示
+    Sierra 和 Devin 的定价模式
 ```
 
 ## 摘要

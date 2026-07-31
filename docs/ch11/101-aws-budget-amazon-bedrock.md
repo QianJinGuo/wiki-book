@@ -13,18 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("利用 AWS Budget 实现 Amazon Bedr…"))
+  root(("利用 AWS Budget 实现 Amazon Bedrock"))
     三大需求
     三个核心 AWS 服务
     完整流程
     关键设计
-      1. 双 Policy 切换模式
-      2. 硬约束（服务端强制）
-      3. 每月自动重置
+      双 Policy 切换模式
+      硬约束 服务端强制
+      每月自动重置
     局限性
     优势
-    适用场景
     可推广到
+    注意事项
 ```
 
 ## 三大需求

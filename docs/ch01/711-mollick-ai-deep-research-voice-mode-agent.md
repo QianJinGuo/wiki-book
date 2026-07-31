@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Mollick 实用 AI 选型指南：模型选择·Deep…"))
+  root(("Mollick 实用 AI 选型指南 模型选择Deep"))
     三大系统选哪个
     模型分层
-    Deep Research（关键功能）
+    Deep Research 关键功能
     Voice Mode
-    制作输出：图片/视频/代码/文档
-    Prompting 已死？
-    相关实体
-    深度分析
-      1. 从「选模型」到「选系统」的范式转移
-      2. $20 月费作为专业功能分水岭
-      3. Deep Research 与 Voic…
-      4. Prompt Engineering 的…
+    制作输出 图片视频代码文档
+    Prompting 已死
+    从「选模型」到「选系统」的范式转移
+    20 月费作为专业功能分水岭
 ```
 
 ## 三大系统选哪个

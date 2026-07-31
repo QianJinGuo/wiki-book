@@ -8,17 +8,6 @@
 💡 TL;DR: AI 模型天然具有三个工程缺陷（概率性输出/短时记忆/幻觉倾向）。Harness Engineering 是专门用来填补这三个坑的系统工程学。Model 决定 AI 有多聪明，Harness 决定 AI 有多可靠。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering：AI 从\"聪明…"))
-    什么是 Harness Engineering？
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 什么是 Harness Engineering？
 **Harness = 环绕 AI 模型的完整控制基础设施**
 Agent = Model + Harness

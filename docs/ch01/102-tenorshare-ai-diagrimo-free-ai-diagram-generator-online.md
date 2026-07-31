@@ -9,22 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Tenorshare AI Diagrimo​ - Fr…"))
+  root(("Tenorshare AI Diagrimo - Free AI"))
     产品概述
       核心功能
       使用场景
       定价模式
-      技术特点
-    深度分析
-      技术定位
-      市场差异化
-      用户价值
-      多语言支持
-    实践启示
-      适用人群
-      使用建议
-      注意事项
-    相关实体
+    技术定位
+    市场差异化
+    用户价值
+    多语言支持
+    适用人群
+    使用建议
+    注意事项
 ```
 
 ## 核心要点

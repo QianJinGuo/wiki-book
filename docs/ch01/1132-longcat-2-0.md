@@ -13,15 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("美团 LongCat-2.0：万亿参数大模型"))
-    概述
+  root(("美团 LongCat-20 万亿参数大模型"))
     核心亮点
-      1.6T 总参数 / 动态激活
+      T 总参数 动态激活
       五万卡国产算力集群
       OpenRouter 全球前三
-      Agentic Coding 优化
     性能表现
-    相关链接
     补充信息
 ```
 

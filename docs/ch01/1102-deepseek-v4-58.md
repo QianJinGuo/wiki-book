@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek V4是怎么训练出来的？58页论文深入解读"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 DeepSeek V4是怎么训练出来的？58页论文深入解读 涉及agent领域的核心技术议题。

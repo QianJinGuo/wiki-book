@@ -11,16 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("SSD Spec 驱动开发实战：从四条约束到 ASD H…"))
-    深度分析
-      1. 两个前提：重新理解 AI Coding …
-      2. 四条设计约束（工程判据）
-      3. SSD 工程方案：五个设计内核
-      4. ASD Harness：三层开源架构
+  root(("SSD Spec 驱动开发实战 从四条约束到 ASD"))
+    两个前提 重新理解 AI Coding 的成本结构
+    四条设计约束 工程判据
+    SSD 工程方案 五个设计内核
+    ASD Harness 三层开源架构
     核心金句
-    实践启示
     相关页面
-    相关实体
 ```
 
 ## 摘要

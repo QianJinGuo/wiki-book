@@ -18,14 +18,11 @@
 
 ```mermaid
 mindmap
-  root(("Robostral Navigate: single-c…"))
-    深度分析
-      1. 纯视觉导航的 paradigm shift
-      2. 前缀缓存（Prefix-Caching）…
-      3. 从 VLM 到导航的自然演进
-      4. 仿真到现实的迁移优势
-    实践启示
-    相关实体
+  root(("Robostral Navigate single-camera"))
+    纯视觉导航的 paradigm shift
+    前缀缓存 Prefix-Caching 训练效率的革命
+    从 VLM 到导航的自然演进
+    仿真到现实的迁移优势
 ```
 
 ## 摘要

@@ -13,14 +13,11 @@ NVIDIA 推出 BioNeMo Agent Toolkit，这是一个汇集了 NVIDIA 十多年生�
 
 ```mermaid
 mindmap
-  root(("NVIDIA BioNeMo Agent Toolkit…"))
-    深度分析
-      科学发现领域的 Agent 化拐点
-      'NVIDIA 做生态，不抢饭碗'的平台战略
-      Agent 技能（Skills）的标准化工件
-      科学 Agent 与传统 AI 的区别
-    实践启示
-    相关实体
+  root(("NVIDIA BioNeMo Agent"))
+    科学发现领域的 Agent 化拐点
+    NVIDIA 做生态 不抢饭碗的平台战略
+    Agent 技能 Skills 的标准化工件
+    科学 Agent 与传统 AI 的区别
 ```
 
 ## 核心要点

@@ -13,13 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("逆天的架构：用 Harness+LangGraph+A2…"))
-    深度分析
-      核心观点
-      LangGraph 角色
-      A2A 协议（Google 2025.
-      内容结构
-    实践启示
+  root(("逆天的架构 用 HarnessLangGraphA2A 写一个"))
+    LangGraph 角色
+    A2A 协议 Google 2025
 ```
 
 ## 深度分析

@@ -13,13 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("How Smartsheet built a remot…"))
-    Overview
+  root(("How Smartsheet built a remote MCP"))
     Architecture
     Deployment and Scaling
-    Security and Governance
+    Security Governance
     Observability
-    Testing Non-Determinist…
+    Testing Non-Deterministic AI
     AI Optimizations
     Future Directions
 ```

@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("gzip 作为语言模型：压缩-预测等价性的信息论探索"))
-    深度分析
-      压缩即预测的数学基础
-      DEFLATE 的工作机制与预测能力
-      Beam Search 的必要性
-      Tail 截断的精妙设计
-    实践启示
-    相关实体
+  root(("gzip 作为语言模型 压缩-预测等价性的信息论探索"))
+    压缩即预测的数学基础
+    DEFLATE 的工作机制与预测能力
+    Beam Search 的必要性
+    Tail 截断的精妙设计
 ```
 
 ## 摘要

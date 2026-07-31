@@ -11,10 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("MosaicLeaks: Can your resear…"))
-    核心问题
+  root(("MosaicLeaks Can your research"))
     MosaicLeaks Benchmark
-    PAPO：隐私感知策略优化
+    PAPO 隐私感知策略优化
     与现有 Agent 安全实体的关联
     独特价值
     元信息

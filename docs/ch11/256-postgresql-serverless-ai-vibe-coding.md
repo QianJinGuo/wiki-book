@@ -15,7 +15,7 @@
 
 ```mermaid
 mindmap
-  root(("火山引擎 PostgreSQL Serverless 为…"))
+  root(("火山引擎 PostgreSQL Serverless 为 AI"))
     设计背景
     关键特性
       Serverless 弹性

@@ -13,24 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("面向复杂算法任务的 AI Agent：高德 Long-R…"))
-    一句话
+  root(("面向复杂算法任务的 AI Agent 高德"))
     五层架构
     三个核心能力
-      能力 1: 不知疲倦，不丢进度
-      能力 2: 能审稿自己，能修自己的错
-      能力 3: 能跟企业平台对话，卡住会等人
-    完整迭代案例（时间线）
+      能力 1 不知疲倦 不丢进度
+      能力 2 能审稿自己 能修自己的错
+      能力 3 能跟企业平台对话 卡住会等人
+    完整迭代案例 时间线
     整体工程指标
     业界范式对齐与企业实践
-      10 个 harness primitives…
+      个 harness primitives 实现对照
       企业平台典型痛点与补丁
       Audit 驱动落地的三项能力
     与已有实体的关联
-    核心论点
-      test-time compute alloc…
-      企业 AI vs Kaggle 沙盒
-      从模型能力到平台接缝
+    test-time compute allocation per
+    企业 AI vs Kaggle 沙盒
 ```
 
 ## 一句话

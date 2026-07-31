@@ -13,21 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("AI-Infra-Auto-Driven-SKILLS …"))
-    一句话
+  root(("AI-Infra-Auto-Driven-SKILLS v010"))
     核心价值
-    10 个 Core Skills
-    深度分析
-      1. 工程纪律转化为可执行工作流
-      2. SOTA Humanize Loop 的…
-      3. skill 工件的具体结构
-      4. 与传统 Agent 工作流的区别
-    实践启示
-      对 AI Infra 开发者的启示
-      对 Agent 开发者的启示
-      对框架开发团队的启示
-    关联阅读
-    相关实体
+    个 Core Skills
+    工程纪律转化为可执行工作流
+    SOTA Humanize Loop 的设计逻辑
+    skill 工件的具体结构
+    与传统 Agent 工作流的区别
+    对 AI Infra 开发者的启示
+    对 Agent 开发者的启示
 ```
 
 ## 一句话

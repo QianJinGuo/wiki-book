@@ -9,29 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("Claude Harness 设计：Generator-…"))
-    概述
+  root(("Claude Harness 设计"))
     两种失效模式
-      Context Anxiety 与 Conte…
+      Context Anxiety 与 Context Reset
       自我评估偏差
     Generator-Evaluator 架构
       前端设计实验
       全栈三代理架构
     量化对照
-      复古游戏制作器（Opus 4.5）
-      DAW（Opus 4.6，去掉 sprint …
+      复古游戏制作器 Opus 45
+      DAW Opus 46 去掉 sprint 结构
     迭代原则
-    核心洞察
-    深度分析
-      1. GAN 启发的双代理结构解决的是「自我评…
-      2. Context reset vs com…
-      3. Sprint Contract 解决的是…
-      4. 四维度评分标准中高权重维度的选择揭示了模…
-    实践启示
-      1. 当 generator 自我评价偏正面时…
-      2. 用四维度评分标准时，先用低权重维度做健康…
-      3. Sprint contract 在每个 …
-      4. Context reset 的必要性用「…
+    GAN 启发的双代理结构解决的是「自我评估偏差」而非评估准确性
+    Context reset vs compaction
+    Sprint Contract
+    四维度评分标准中高权重维度的选择揭示了模型在「审美」上的结构性短板
 ```
 
 ## 概述

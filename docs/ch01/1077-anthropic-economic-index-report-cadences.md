@@ -13,13 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Anthropic Economic Index rep…"))
+  root(("Anthropic Economic Index report"))
     方法论升级
-    Chapter 1：外部世界节奏对 AI 使用…
-    Chapter 2：会话产出分析
-    Chapter 3：用户预期调查（首次发布）
-    核心洞察
-    相关主题
+    Chapter 1 外部世界节奏对 AI 使用的影响
+    Chapter 2 会话产出分析
+    Chapter 3 用户预期调查 首次发布
 ```
 
 ## 方法论升级

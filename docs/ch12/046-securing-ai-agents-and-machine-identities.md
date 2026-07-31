@@ -9,23 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Securing AI Agents and Machi…"))
+  root(("Securing AI Agents and Machine"))
     可视化
-      架构图（Excalidraw / 推荐使用 ✨）
-      架构图（Mermaid / 知识源 / 可嵌入）
-      封面图（AI 生成 / 装饰参考，仅供参考）
-      三种可视化对比
+      架构图 Excalidraw 推荐使用
+      架构图 Mermaid 知识源 可嵌入
+      封面图 AI 生成 装饰参考 仅供参考
     背景与问题
-    深度分析
-      非人类身份的风险特征
-      传统 IAM 的局限性
-      1Password 的解决思路
+    非人类身份的风险特征
+    传统 IAM 的局限性
+    Password 的解决思路
     与其他安全方案的关联
-    实践启示
-      对于安全团队
-      对于开发团队
-      对于组织
-    相关实体
+    对于安全团队
+    对于开发团队
 ```
 
 ## 可视化

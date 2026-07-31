@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("What is AX? John Maeda on Ac…"))
-    深度分析
-      从 UX 到 AX 的范式转移
-      Erika Hall 的'对话是最古老的界面'
-      对 AI/Agent 产品设计的启示
-    实践启示
-    相关实体
+  root(("What is AX John Maeda on"))
+    AX 重新定义了 Accessibility
+    UX 的驾驶舱正在失效
+    Norman 的两个海湾在 Agent 时代重新分配
+    双手隐喻 Chat Canvas
+    从 UX 到 AX 的范式转移
+    Erika Hall 的对话是最古老的界面
+    对 AIAgent 产品设计的启示
 ```
 
 ## 摘要

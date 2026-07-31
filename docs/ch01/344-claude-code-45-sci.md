@@ -17,14 +17,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 学术文献综述：45 页 SCI …"))
-    深度分析
-      1. 工具跨域迁移：从 Code Genera…
-      2.「Vibe Researching」的方法…
-      3. 文献综述是 AI 科研助手的理想切入点
-      4. 45 页产出的工程化实现路径
-    实践启示
-    相关实体
+  root(("Claude Code 学术文献综述 45 页 SCI 一区级产出"))
+    工具跨域迁移 从 Code Generation 到
+    「Vibe Researching」的方法论定位
+    文献综述是 AI 科研助手的理想切入点
+    45 页产出的工程化实现路径
 ```
 
 ## 深度分析

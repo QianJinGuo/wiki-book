@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Extending MCP support for Am…"))
-    深度分析
-      流式传输、会话管理与 Elicitation
-      OAuth 2.0 On-Behalf-Of …
-      安全架构
-    实践启示
-    相关实体
+  root(("Extending MCP support for Amazon"))
+    为什么需要 AgentCore Gateway
+    三大 MCP 原语统一
+    动态列表 Dynamic Listing
+    流式传输 会话管理与 Elicitation
+    OAuth 20 On-Behalf-Of Token Exchange
+    安全架构
 ```
 
 ## 摘要

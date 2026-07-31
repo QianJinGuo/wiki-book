@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing OS Level Actions…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 摘要
 <p>AI agents that automate web workflows operate within the browser’s web layer, the DOM that Playwright and the Chrome DevTools Protocol (CDP) expose. AgentCore Browser provides a secure, isolated browser environment for this, and it works well for the vast majority of automation: navigating pages,...
 

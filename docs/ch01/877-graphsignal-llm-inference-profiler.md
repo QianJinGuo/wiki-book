@@ -11,15 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Graphsignal: LLM Inference P…"))
-    深度分析
-      推理可观测性 vs 传统 APM
-      在 MLOps 工具链中的定位
-      关键差异化
-    实践启示
-      适用场景
-      局限性
-    相关实体
+  root(("Graphsignal LLM Inference Profiler"))
+    功能矩阵
+    安装与集成
+    推理可观测性 vs 传统 APM
+    在 MLOps 工具链中的定位
+    关键差异化
+    局限性
 ```
 
 ## 摘要

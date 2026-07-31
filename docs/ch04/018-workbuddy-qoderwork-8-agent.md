@@ -14,11 +14,10 @@
 
 ```mermaid
 mindmap
-  root(("豆包、WorkBuddy、QoderWork怎么选？我用…"))
-    深度分析
-      桌面 Agent 的分化趋势
-      关键能力缺口
-      Skill 生态的三种模式
+  root(("豆包 WorkBuddy QoderWork怎么选"))
+    桌面 Agent 的分化趋势
+    关键能力缺口
+    Skill 生态的三种模式
     评测分数对比
 ```
 

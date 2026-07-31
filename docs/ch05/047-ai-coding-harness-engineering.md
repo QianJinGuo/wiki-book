@@ -17,14 +17,11 @@
 
 ```mermaid
 mindmap
-  root(("从AI Coding到Harness Engineeri…"))
-    深度分析
-      从'对话式 AI Coding'到'Harne…
-      知识库工程：'AI 生产 + 人工补充 + A…
-      设计原则体系：'AI 负责认知，脚本负责执行'
-      冲突治理与 Fork-Join 模式
-    实践启示
-    关联实体
+  root(("从AI Coding到Harness"))
+    从对话式 AI Coding到Harness
+    知识库工程 AI 生产 人工补充 AI 消费的闭环
+    设计原则体系 AI 负责认知 脚本负责执行
+    冲突治理与 Fork-Join 模式
 ```
 
 ## 核心要点

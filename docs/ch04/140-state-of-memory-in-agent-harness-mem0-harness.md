@@ -14,8 +14,8 @@
 
 ```mermaid
 mindmap
-  root(("State of Memory in Agent Har…"))
-    TL;DR
+  root(("State of Memory in Agent Harness"))
+    TLDR
     Memory 三层分类法
     九大 Harness 横评
       设计模式对照表

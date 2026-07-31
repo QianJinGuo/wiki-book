@@ -11,13 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("How to Get a 100% Conference…"))
-    深度分析
+  root(("How to Get a 100 Conference"))
     What you need to know
     The Setup
     Inside the Vulnerability
-    相关实体
-    相关主题
 ```
 
 ## 深度分析

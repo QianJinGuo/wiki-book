@@ -39,18 +39,18 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Harness Engineering：AI 从"聪明"…"))
-    核心命题
+  root(("Harness Engineering AI"))
     三大工程缺陷
     AI 工程三代进化
     六层架构
       信息层
       执行层
       反馈层
-    核心运营逻辑：用错误喂养规则库
+    核心运营逻辑 用错误喂养规则库
     七大反模式
     分级决策树
     成本模型
+    核心评估三指标
 ```
 
 ## 核心命题

@@ -13,11 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Python 3.15 Beta 实测：实战视角的技术特…"))
+  root(("Python 315 Beta 实测 实战视角的技术特性评估"))
     核心特性
-      1. lazy import — 惰性导入
-      2. frozendict + sent…
-      3. 进程附加调试（attach to run…
+      lazy import 惰性导入
+      frozendict sentinel 冻结字典与哨兵值
+      进程附加调试 attach to running process
     实战评估
 ```
 

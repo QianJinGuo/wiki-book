@@ -15,16 +15,12 @@
 
 ```mermaid
 mindmap
-  root(("6 Months to Live for Open Mo…"))
-    Summary
-    Key Points
+  root(("Months to Live for Open Models"))
     Deep Analysis
-      The Policy Landscape: T…
-      The Regulatory Capture …
+      The Policy Landscape Two Fronts
+      The Regulatory Capture Mechanism
       The API Security Fallacy
-      The Practical Impossibi…
     Practical Insights
-    Related Entities
 ```
 
 ## Summary

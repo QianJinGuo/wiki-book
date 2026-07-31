@@ -11,16 +11,6 @@
 模型本身只是能力的来源，只有通过 Harness 把状态、工具调用、反馈循环和约束机制串起来，它才真正变成一个 Agent。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The Anatomy of an Agent Harn…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)

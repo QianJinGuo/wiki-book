@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("AWS API MCP Server + Quick S…"))
-    相关实体
-    深度分析
-      技术架构与设计理念
-      身份认证与安全模型
-      MCP 协议的实践价值
-      成本考量与商业可行性
-    实践启示
-      架构选型建议
-      安全生产要点
-      扩展方向
-      与 Agentic AI 发展的关联
+  root(("AWS API MCP Server Quick Suite"))
+    技术架构与设计理念
+    身份认证与安全模型
+    MCP 协议的实践价值
+    成本考量与商业可行性
+    架构选型建议
+    安全生产要点
+    扩展方向
+    与 Agentic AI 发展的关联
 ```
 
 ## 核心要点

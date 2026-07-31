@@ -13,23 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Co-Existence vs Co-Intellige…"))
-    核心论点：从 Co-Intelligence …
-    三个独有贡献（不应合并到现有 entity）
-    「for-AI Page」模式（web 设计新…
+  root(("Co-Existence vs Co-Intelligence"))
+    核心论点 从 Co-Intelligence 到
+    三个独有贡献 不应合并到现有 entity
+    「for-AI Page」模式 web 设计新兴模式
     「拒绝 AI 帮助」的合法性
     与现有 entity 的差异化
     关键引用
-    深度分析
-      1. 范式命名的学术价值
-      2. AI-as-reader 问题的内容策略革命
-      3. 80%/8x 数据的双源验证方法论
-      4. '拒绝 AI'的合法性边界正在移动
-    实践启示
-      1. 内容创作者：为 AI 读者设计内容
-      2. 管理者：从'监督 AI'转向'审核 AI…
-      3. 研究者：用双源验证建立 AI 影响基线
-      4. 产品团队：评估你的产品是否需要'AI 喜…
+    范式命名的学术价值
+    AI-as-reader 问题的内容策略革命
 ```
 
 ## 核心论点：从 Co-Intelligence 到 Co-Existence 的范式跃迁

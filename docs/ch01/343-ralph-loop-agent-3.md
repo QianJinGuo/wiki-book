@@ -9,26 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("Ralph Loop 不够用：长时间 Agent 还缺这…"))
+  root(("Ralph Loop 不够用 长时间 Agent 还缺这 3 件事"))
     Codex Goals工作原理解析
       Ralph Loop的技术本质
       模糊性的复利效应
     Jarrod Watts的优化工作流
-      Phase 1：前期澄清（Interview阶段）
-      Phase 2：多Agent编排架构
-      Phase 3：跨上下文记忆维护
-    深度分析
-      Ralph Loop的根本局限
-      多Agent架构的认知科学依据
-      持久化记忆的工程价值
-      模糊性前置的成本收益分析
-    实践启示
-      1. 避免单独依赖Ralph Loop
-      2. 投资前期需求澄清
-      3. 至少采用双Agent评审机制
-      4. 设计可审计的记忆系统
-    相关资源
-     相关实体
+      Phase 1 前期澄清 Interview阶段
+      Phase 2 多Agent编排架构
+      Phase 3 跨上下文记忆维护
+    Ralph Loop的根本局限
+    多Agent架构的认知科学依据
+    持久化记忆的工程价值
+    模糊性前置的成本收益分析
+    避免单独依赖Ralph Loop
+    投资前期需求澄清
 ```
 
 ## 核心要点

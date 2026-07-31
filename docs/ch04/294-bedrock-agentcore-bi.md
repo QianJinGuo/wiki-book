@@ -10,26 +10,19 @@
 ```mermaid
 mindmap
   root(("Bedrock AgentCore 构建 BI 智能体"))
-    相关实体
     案例概述
     技术架构
       核心组件
       部署与运维
     三大 AI Agent 详解
-      Deal Analyzer Agent：每日管…
-      Sales Coach Agent：实时验证与…
-      Lead Insight Agent：自动化潜…
-    深度分析
-      为什么此案例具有行业代表性
-      三大 Agent 的设计哲学
-      RAG 在业务规则解释中的关键作用
-      数据质量的'防晚治'
-    实践启示
-      企业引入 AI Agent 的切入点选择
-      技术选型建议
-      可观测性建设
-      成本优化思路
-    关联阅读
+      Deal Analyzer Agent 每日管道质量报告
+      Sales Coach Agent 实时验证与任务自动化
+      Lead Insight Agent 自动化潜在客户研究
+    为什么此案例具有行业代表性
+    三大 Agent 的设计哲学
+    RAG 在业务规则解释中的关键作用
+    数据质量的防晚治
+    企业引入 AI Agent 的切入点选择
 ```
 
 ## 核心要点

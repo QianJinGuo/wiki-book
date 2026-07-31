@@ -15,13 +15,10 @@
 mindmap
   root(("如何利用 Harness 一句话交付产品功能"))
     核心模式
-    深度分析
-      从 Vibe Coding 到 Harness…
-      单仓重构：AI-First 架构的基础设施前提
-      Agent Handoff 协议：分布式协作的…
-      E2E 测试的局限与 Harness 的边界认知
-    实践启示
-    相关实体
+    从 Vibe Coding 到 Harness 的必然跃迁
+    单仓重构 AI-First 架构的基础设施前提
+    Agent Handoff 协议 分布式协作的 状态总线
+    E2E 测试的局限与 Harness 的边界认知
 ```
 
 ## 核心模式

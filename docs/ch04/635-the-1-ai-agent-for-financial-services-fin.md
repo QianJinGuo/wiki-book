@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The #1 AI Agent for financia…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - AI Agent 解决方案，专为金融服务设计
 - 评分：value=7, confidence=8, product=56

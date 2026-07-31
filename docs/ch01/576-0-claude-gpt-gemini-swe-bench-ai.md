@@ -35,15 +35,6 @@ Claude Opus 4.7、GPT-5.4、GPT-5 mini、Gemini 3.1 Pro、Gemini 3 Flash——�
 没有一个模型，能够真正完整重建一个软件项目。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("0%完成率！Claude、GPT、Gemini 全灭，S…"))
-    详细信息
-    原文
-```
-
 ## 核心要点
 
 > 本文为微信公众号文章，由 WeChat backfill 收录。

@@ -9,22 +9,16 @@
 
 ```mermaid
 mindmap
-  root(("Computer Use 45x More Expens…"))
+  root(("Computer Use 45x More Expensive"))
     Benchmark 数据详解
     核心洞察解析
     架构启示
       何时选择 Computer Use
       何时选择 API Agent
       混合策略
-    深度分析
-      关键洞察
-      与行业整体趋势的关联
-    实践启示
-    相关实体
-    相关概念
-    实践建议
-      对于 Agent 开发者的建议
-      对于平台/基础设施团队的启示
+    与行业整体趋势的关联
+    对于 Agent 开发者的建议
+    对于平台基础设施团队的启示
 ```
 
 ## 核心要点

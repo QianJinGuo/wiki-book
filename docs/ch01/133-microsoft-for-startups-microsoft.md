@@ -5,17 +5,6 @@
 > 📊 Level ⭐ | 4.5KB | `entities/microsoft-for-startups-microsoft.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Microsoft for Startups | Mic…"))
-    深度分析
-    实践启示
-    关联阅读
-    相关实体
-```
-
 ## 核心要点
 - 提供高达 $150,000 的 Azure 创业积分，用于构建、测试和扩展 AI 就绪的云基础设施 
 - 覆盖 Azure AI 服务、OpenAI 服务、Azure Machine Learning 等 AI 和数据服务 

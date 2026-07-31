@@ -13,7 +13,7 @@ Amazon Bedrock AgentCore 提供了**三种持久化文件系统方案**，覆盖
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock AgentCore 数据持…"))
+  root(("Amazon Bedrock AgentCore"))
     三种方案对比
     使用场景
     性能测试

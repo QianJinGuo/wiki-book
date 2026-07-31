@@ -15,20 +15,18 @@
 ```mermaid
 mindmap
   root(("Chromium AI Coding 开发体系"))
-    AI Policy：责任边界
-    Prompts：四层分层组合架构
+    AI Policy 责任边界
+    Prompts 四层分层组合架构
       四层结构
-      8 步标准工作流
+      步标准工作流
       Prompt 维护机制
-      Task Prompts 自定义命令
-    Skills：按需激活的专业模块
-    Knowledge Base：三层 Agent…
-      第一层：knowledge_base.md —…
-      第二层：chromium-docs Skill…
-      第三层：MCP 扩展
-      与传统 RAG 对比
-    Eval：AI Agent 的回归测试
-    Projects：AI 驱动的大规模代码改造
+    Skills 按需激活的专业模块
+    Knowledge Base 三层 Agentic RAG
+      第一层 knowledgebasemd 静态路由表
+      第二层 chromium-docs Skill 本地文档检索
+      第三层 MCP 扩展
+    Eval AI Agent 的回归测试
+    Projects AI 驱动的大规模代码改造
     三大机制的协同关系
     历史积淀
 ```

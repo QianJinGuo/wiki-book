@@ -13,10 +13,9 @@
 
 ```mermaid
 mindmap
-  root(("What happened after 2,000 pe…"))
-    Overview
+  root(("What happened after 2000 people"))
     The setup
-      Anti-Prompt-Injection R…
+      Anti-Prompt-Injection Rules
     The attacks
     What went wrong
 ```

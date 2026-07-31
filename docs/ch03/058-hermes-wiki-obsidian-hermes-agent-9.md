@@ -46,22 +46,17 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Hermes-Wiki 实战 — Obsidian + …"))
-    概述
-    范式定位：3 个本质变化
-    文件夹结构：节点类型分离
-    三个核心文件：规则/入口/日志
-      1. SCHEMA.md：规则文件（Agent…
-      2. index.md：总入口
-      3. log.md：更新日志（可追溯性基础）
-    9 步可执行搭建法
-      步骤 1 — 建文件夹
-      步骤 2 — 写 3 个核心文件
-      步骤 3 — Obsidian 打开
-      步骤 4 — 设置 WIKI_PATH
-    深度分析
-    实践启示
-    与现有实体的差异化
+  root(("Hermes-Wiki 实战 Obsidian Hermes"))
+    范式定位 3 个本质变化
+    文件夹结构 节点类型分离
+    三个核心文件 规则入口日志
+      SCHEMAmd 规则文件 Agent 行为约束
+      indexmd 总入口
+      logmd 更新日志 可追溯性基础
+    步可执行搭建法
+      步骤 1 建文件夹
+      步骤 2 写 3 个核心文件
+      步骤 3 Obsidian 打开
 ```
 
 ## 概述

@@ -15,13 +15,10 @@
 ```mermaid
 mindmap
   root(("The Code-as-Content Era"))
-    深度分析
-      一、code 与 meme 的同构临界点
-      二、camera-era 类比
-      三、Meta × Gizmo：超大型科技公司正…
-      四、行为层而非技术层
-    实践启示
-    关联实体
+    一 code 与 meme 的同构临界点
+    二 camera-era 类比
+    三 Meta Gizmo 超大型科技公司正式入场
+    四 行为层而非技术层
 ```
 
 ## 摘要

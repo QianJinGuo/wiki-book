@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("LLMReaper - DOM Based AI Con…"))
-    深度分析
-      为什么 LLM 对话特别脆弱
-      供应链攻击的持续重演
-      PoC 架构与实现
-      MutationObserver 与响应完…
-    实践启示
-    相关实体
+  root(("LLMReaper - DOM Based AI"))
+    为什么 LLM 对话特别脆弱
+    供应链攻击的持续重演
+    PoC 架构与实现
+    MutationObserver 与响应完成检测
 ```
 
 ## 摘要

@@ -15,21 +15,17 @@ Superpowers 6.0（2026-06-16 发布，06-18 v6.0.3 修补）的核心主线不�
 
 ```mermaid
 mindmap
-  root(("Superpowers 6.0 SDD 评审重写：文件交…"))
+  root(("Superpowers 60 SDD 评审重写 文件交接 多平台支持"))
     SDD 评审重写
       旧版问题
-      6.0 解法：单一 Task Reviewer…
+      解法 单一 Task Reviewer 双 Verdict
     文件交接降低上下文成本
     多平台 Harness 映射
     Visual Brainstorming 安全补强
     效率收益
     升级检查清单
-    深度分析
-      评审的价值来自发现缺陷，不来自仪式感
-      文件交接是上下文经济学的关键实践
-      '任务窄审'与'最终宽审'的边界设计
-      多平台 Harness 映射的方法论价值
-    实践启示
+    评审的价值来自发现缺陷 不来自仪式感
+    文件交接是上下文经济学的关键实践
 ```
 
 ## SDD 评审重写

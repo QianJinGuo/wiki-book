@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("A Missing Layer in Agentic S…"))
-    深度分析
-      90/10 法则的架构意义
-      Human-in-the-loop vs Hu…
-      装饰器模式的工程效率
-      监管驱动的采纳时间线
-    实践启示
-    相关实体
+  root(("A Missing Layer in Agentic Systems"))
+    HITL 扩展而非限制部署面
+    三层架构模型
+    两种 HITL 模式
+    AB InBev 的规模化实践
+    法则的架构意义
+    Human-in-the-loop vs
+    装饰器模式的工程效率
+    监管驱动的采纳时间线
 ```
 
 ## 摘要

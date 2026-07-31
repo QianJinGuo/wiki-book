@@ -227,14 +227,11 @@ LASTNAME
 
 ```mermaid
 mindmap
-  root(("Canvas Hackers ShinyHunters …"))
-    Baltimore' 911 CAD sys…
-    Scammers using voicema…
-    Cloudflare Mitigates M…
-    Kubernetes Clusters Ta…
-    深度分析
-    实践启示
-    相关实体
+  root(("Canvas Hackers ShinyHunters Say"))
+    Baltimore 911 CAD system hacked
+    Scammers using voicemail email
+    Cloudflare Mitigates Massive 56
+    Kubernetes Clusters Targeted by
 ```
 
 ## [Baltimore' 911 CAD system hacked; remained suspended for 17 hours](https://hackread.com/baltimore-911-cad-system-hacked-suspended/)

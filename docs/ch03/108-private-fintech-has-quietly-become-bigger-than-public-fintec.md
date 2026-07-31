@@ -11,13 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Private Fintech Has Quietly …"))
-    深度分析
-    **Why the biggest compa…
-    **The “category of one”…
-    **The secondaries marke…
-    **The uncomfortable mid…
-    相关实体
+  root(("Private Fintech Has Quietly"))
+    Why the biggest companies are
+    The category of one question
+    The secondaries market is no
+    The uncomfortable middle
 ```
 
 ## 深度分析

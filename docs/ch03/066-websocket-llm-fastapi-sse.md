@@ -9,26 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("还在用WebSocket做LLM流式传输？FastAPI…"))
-    核心结论
-    SSE vs WebSocket vs 长轮询…
-    核心实现：FastAPI StreamingR…
+  root(("还在用WebSocket做LLM流式传输 FastAPI"))
+    SSE vs WebSocket vs 长轮询 对比表
+    核心实现 FastAPI StreamingResponse 异步生成器
     生产环境6大避坑指南
-      1. 代理缓冲毁掉流式效果
-      2. 超时问题
-      3. 客户端断开检测
-      4. 多进程共享状态
-    Redis Pub/Sub 广播通知架构
+      代理缓冲毁掉流式效果
+      超时问题
+      客户端断开检测
+    Redis PubSub 广播通知架构
     核心回顾
-    深度分析
-      1. SSE 的本质是 HTTP 分块传输的协议化
-      2. LLM 流式输出的核心矛盾：生成速度 v…
-      3. 心跳机制是生产环境的生死线
-      4. Redis Pub/Sub 的局限性与替…
-    实践启示
-      针对 FastAPI 开发者
-      针对架构师
-      针对运维/DevOps
+    SSE 的本质是 HTTP 分块传输的协议化
+    LLM 流式输出的核心矛盾 生成速度 vs 传输效率
+    心跳机制是生产环境的生死线
 ```
 
 ## 核心结论

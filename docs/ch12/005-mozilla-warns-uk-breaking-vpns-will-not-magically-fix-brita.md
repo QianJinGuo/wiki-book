@@ -9,26 +9,22 @@
 
 ```mermaid
 mindmap
-  root(("Mozilla warns UK: Breaking V…"))
+  root(("Mozilla warns UK Breaking VPNs"))
     背景与事件
-    政策背景：Online Safety Act …
+    政策背景 Online Safety Act 与 age
       政策演进
       VPN 使用量飙升
     Mozilla 的核心论点
-      1. VPN 是基本安全基础设施，非青少年禁品
-      2. 阻断 VPN 的逻辑悖论
-      3. 实证证据：儿童实际绕过方式
-      4. 错误的监管目标
-    技术困境：监管 VPN 的执行难题
+      VPN 是基本安全基础设施 非青少年禁品
+      阻断 VPN 的逻辑悖论
+      实证证据 儿童实际绕过方式
+    技术困境 监管 VPN 的执行难题
       对商业 VPS 提供商的要求
       浏览器内置 VPN 的趋势
-    深度分析
-      监控基础设施的悖论
-      政策效果的实证缺失
-      全球监管趋势与地域差异
-      对行业的长远影响
-    相关事件
-    相关实体
+    监控基础设施的悖论
+    政策效果的实证缺失
+    全球监管趋势与地域差异
+    对行业的长远影响
 ```
 
 ## 背景与事件

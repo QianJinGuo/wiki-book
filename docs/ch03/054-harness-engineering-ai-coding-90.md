@@ -41,14 +41,11 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Harness Engineering 详解：如何将 A…"))
-    深度分析
-      1. 范式跃迁：从 Prompt 到 Cont…
-      2. 为什么不能只靠模型本身
-      3. 四根支柱：Harness Enginee…
-      4. 企业级 AI Coding 的四大挑战
-    实践启示
-    相关实体
+  root(("Harness Engineering 详解 如何将 AI"))
+    范式跃迁 从 Prompt 到 Context 到 Harness
+    为什么不能只靠模型本身
+    四根支柱 Harness Engineering 的设计要素
+    企业级 AI Coding 的四大挑战
 ```
 
 ## 摘要

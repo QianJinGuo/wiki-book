@@ -9,17 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Microsoft Agent Framework 结构…"))
-    核心问题
+  root(("Microsoft Agent Framework 结构化输出"))
     两种声明方式
-      方式一：Pydantic 类
-      方式二：JSON Schema dict
-    response.value vs respo…
+      方式一 Pydantic 类
+      方式二 JSON Schema dict
+    responsevalue vs responsetext
     配置时机
-    流式 + 结构化
+    流式 结构化
     能力边界
     生产注意点
-    Pydantic vs JSON Schema…
+    Pydantic vs JSON Schema 怎么选
+    结构化输出是 Agent 进入业务系统的门槛
 ```
 
 ## 核心问题

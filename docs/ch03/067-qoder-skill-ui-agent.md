@@ -41,30 +41,22 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Qoder Skill UI — Agent 与人类的协…"))
-    Overview
-    核心概念：Skill UI
-      问题：低效介入
-      解决：结构化配置面板
+  root(("Qoder Skill UI Agent 与人类的协作界面层"))
+    核心概念 Skill UI
+      问题 低效介入
+      解决 结构化配置面板
       两种 Widget 模式
     技术实现
       HTML 沙箱路线
       安全架构
     实战案例
-      Frontend-design Skill ×…
+      Frontend-design Skill
       输出端 Dashboard
-    与 Agent Skill Writing…
-    深度分析
-      '双形态'是软件界面的本质重构
-      低效介入的核心问题是'选项不同时呈现'
-      HTML 沙箱路线的工程优势
-      安全架构的分层设计
-    实践启示
-      Skill 双形态的设计清单
-      Widget 安全的实现要点
-      决策节点判断
-      渐进式增强策略
-    相关实体
+    与 Agent Skill Writing 的关系
+    双形态是软件界面的本质重构
+    低效介入的核心问题是选项不同时呈现
+    HTML 沙箱路线的工程优势
+    安全架构的分层设计
 ```
 
 ## Overview

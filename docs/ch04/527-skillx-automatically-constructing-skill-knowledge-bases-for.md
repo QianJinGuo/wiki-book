@@ -11,16 +11,6 @@
 1. 经验学习孤立化，不同任务间重复探索，效率低下
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SkillX: Automatically Constr…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Skill Os Learning Skill Curation Self Evolving Agents](ch04/219-self-evolving-agents.html)

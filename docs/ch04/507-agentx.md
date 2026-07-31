@@ -20,13 +20,11 @@ mindmap
       Brainstorm Agent
       Developing Agent
       Evaluation Agent
-      Harness Evolution SGPO
     实验数据
     自加速特性
     模型研究拓展
     与相关概念的关系
-    第 2 来源 — 快手技术公众号 2026-…
-      互补角度
+    互补角度
 ```
 
 ## 架构组成

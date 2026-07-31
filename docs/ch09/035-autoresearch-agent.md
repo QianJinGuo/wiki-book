@@ -9,18 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("AutoResearch：多 Agent 自动化软件开发"))
-    核心命题
-    核心对比：AutoResearch vs 传统…
+  root(("AutoResearch 多 Agent 自动化软件开发"))
+    核心对比 AutoResearch vs 传统 Agentic
     三大关键改进
-      1. 多 Agent 交叉审核
-      2. 5 维度加权评分
-      3. 审核反馈驱动下一轮
-    系统架构：4 阶段
-    program.md：Agent 宪法
+      多 Agent 交叉审核
+      5 维度加权评分
+      审核反馈驱动下一轮
+    系统架构 4 阶段
+    programmd Agent 宪法
     与 Harness Engineering 的关系
-    新增洞察：2026-05-18 百度Geek说版本
-    新增洞察：2026-05-23 AutoRes…
+    新增洞察 2026-05-18 百度Geek说版本
+    新增洞察 2026-05-23 AutoResearch 方法论全景
+    AutoResearch 本质 量化目标驱动的自主循环
 ```
 
 ## 核心命题

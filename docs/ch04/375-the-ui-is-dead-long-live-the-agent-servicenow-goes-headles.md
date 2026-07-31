@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The UI is dead, long live th…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - 来源：newsletter (kilo.ai/blog.kilo.ai)
 - 评分：v=7 × c=8 = 56 (strong)

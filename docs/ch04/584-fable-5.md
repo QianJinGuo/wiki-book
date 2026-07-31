@@ -11,7 +11,7 @@
 
 ```mermaid
 mindmap
-  root(("Fable 5 使用硬核指南：搞定未知盲区"))
+  root(("Fable 5 使用硬核指南 搞定未知盲区"))
     地图 vs 疆域框架
     四类未知数
     与 Fable 5 协作的迭代工作流

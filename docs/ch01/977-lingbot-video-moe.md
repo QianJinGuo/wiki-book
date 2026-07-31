@@ -13,13 +13,12 @@
 
 ```mermaid
 mindmap
-  root(("LingBot-Video：全球首个具身专属MoE视频模型"))
+  root(("LingBot-Video 全球首个具身专属MoE视频模型"))
     架构设计
     数据策略
     强化学习与物理约束
     评测表现
     价值分层应用
-    第 2 来源 — 量子位（2026-07-09）
 ```
 
 ## 架构设计

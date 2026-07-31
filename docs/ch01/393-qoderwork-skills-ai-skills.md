@@ -21,26 +21,22 @@
 
 ```mermaid
 mindmap
-  root(("QoderWork Skills 开发实践：从传统数科到…"))
+  root(("QoderWork Skills 开发实践 从传统数科到 AI"))
     Skills 的本质
     四层分离架构
-      SKILL.md（编排层）
-      config.yaml（参数层）
-      scripts/（实现层）
-      references/（知识层）
+      SKILLmd 编排层
+      configyaml 参数层
+      scripts 实现层
     优秀 Skill 案例分析
       Follow Builders
       Frontend Slides
     自研 Skill 实战
-      用户洞察报告生成（user-insight-r…
-      AB 实验分析（ab-experiment-a…
-    深度分析
-      四层分离：Agent 时代的'关注点分离'架构
-      '反模式清单'与负向约束的设计模式
-      从 Idealab RAG 到 Skills：…
-      配置即模板：参数化设计的哲学转变
-    实践启示
-    相关实体
+      用户洞察报告生成 user-insight-report
+      AB 实验分析 ab-experiment-analysis
+    四层分离 Agent 时代的关注点分离架构
+    反模式清单与负向约束的设计模式
+    从 Idealab RAG 到 Skills 领域知识注入的路径进化
+    配置即模板 参数化设计的哲学转变
 ```
 
 ## Skills 的本质

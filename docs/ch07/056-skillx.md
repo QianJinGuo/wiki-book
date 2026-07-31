@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("SkillX — 层次化技能知识库"))
-    概述
-    三层技能设计（Multi-Level Skil…
+  root(("SkillX 层次化技能知识库"))
+    三层技能设计 Multi-Level Skills
     三大核心模块
-      1. Multi-Level Skills D…
-      2. Iterative Skills Ref…
-      3. Exploratory Skills E…
+      Multi-Level Skills Design
+      Iterative Skills Refinement
+      Exploratory Skills Expansion
     实验数据
-    核心洞察
     相关页面
-    深度分析
-    实践启示
+    相关页面
 ```
 
 ## 概述

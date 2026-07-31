@@ -10,18 +10,15 @@
 ```mermaid
 mindmap
   root(("Skill 设计模式"))
-    Overview
-    5 种核心设计模式
-      模式 1：线性流程（Linear）
-      模式 2：决策树 + 按需加载（Decisio…
-      模式 3：循环迭代（Iterative Loop）
-      模式 4：接力棒循环（Baton / Cros…
-    Anthropic 14 种实现模式（5 大类）
-      发现与选择（2 模式）
-      上下文经济（2 模式）
-      指令校准（4 模式）
-      工作流控制（3 模式）
-    Anthropic 14 模式与 5+1 框架…
+    种核心设计模式
+      模式 1 线性流程 Linear
+      模式 2 决策树 按需加载 Decision Tree
+      模式 3 循环迭代 Iterative Loop
+    Anthropic 14 种实现模式 5 大类
+      发现与选择 2 模式
+      上下文经济 2 模式
+      指令校准 4 模式
+    Anthropic 14 模式与 51 框架的对应关系
     通用写作技巧
       防止 LLM 偷懒的 4 种武器
       教学的 3 种有效方式
@@ -29,6 +26,7 @@ mindmap
     模式选择决策树
     参考 Skill 仓库
     子页面
+    模式演进的内在逻辑
 ```
 
 ## Overview

@@ -11,32 +11,23 @@
 
 ```mermaid
 mindmap
-  root(("Enable safe agentic payments…"))
-    The challenge: Safety r…
+  root(("Enable safe agentic payments with"))
+    The challenge Safety risks in
       Runaway spend
-      Lack of end user consen…
-      Compromise of developer…
-      Exposure of the end use…
-    Using AgentCore service…
-      Payment limits and poli…
-      User control, funding, …
-      AgentCore Identity and …
-      Out-of-band top-up keep…
-    Conclusion
+      Lack of end user consent and
+      Compromise of developer keys and
+    Using AgentCore services and
+      Payment limits and policy for
+      User control funding and delegation
+      AgentCore Identity and Secrets
     About the authors
       Joshua Smith
       Guy Bachar
-    深度分析
-      1. 基础设施层强制执行：比模型层更可靠的安全范式
-      2. 四层身份安全模型：纵深防御的完整实践
-      3. PCI 合规范围极小化：架构设计而非政策声明
-      4. 控制平面与数据平面分离：职责分离原则在云…
-    实践启示
-      1. 初始预算从严，逐步放宽
-      2. 资金充值与授权委托必须保持操作上的独立性
-      3. 使用 Cedar Policy + Ag…
-      4. 借助钱包提供商的 PCI scope 而…
-    相关实体
+    基础设施层强制执行 比模型层更可靠的安全范式
+    四层身份安全模型 纵深防御的完整实践
+    PCI 合规范围极小化 架构设计而非政策声明
+    控制平面与数据平面分离 职责分离原则在云原生支付中的落地
+    初始预算从严 逐步放宽
 ```
 
 ## The challenge: Safety risks in agentic payments

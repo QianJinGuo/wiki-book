@@ -42,16 +42,6 @@ graph TB
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Postmortem: TanStack npm sup…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/759-scarcruft.html)
 - [Semis Memo: Supply Chain Inheritance](../ch01/641-semis-memo-supply-chain-inheritance.html)

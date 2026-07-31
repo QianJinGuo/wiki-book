@@ -15,16 +15,13 @@ ByteDance Seed 于 2026 年 6 月发布了 Seed2.0 模型系列 Model Card，标
 
 ```mermaid
 mindmap
-  root(("Seed2.0 Model Card: Towards …"))
+  root(("Seed20 Model Card Towards"))
     关键能力
     模型系列架构
-    深度分析
-      从 Lite 到旗舰：Seed2.0 的路线图演进
-      评估驱动开发：从标准 Benchmark 到真…
-      三项核心技术挑战
-      Model Card 范式：透明度与实用性的平衡
-    实践启示
-    相关实体
+    从 Lite 到旗舰 Seed20 的路线图演进
+    评估驱动开发 从标准 Benchmark 到真实场景抽象
+    三项核心技术挑战
+    Model Card 范式 透明度与实用性的平衡
 ```
 
 ## 关键能力

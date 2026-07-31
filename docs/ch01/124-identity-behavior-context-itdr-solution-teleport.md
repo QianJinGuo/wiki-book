@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Identity Behavior & Context:…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - 来源：fandf.co
 - 评分：v=7, c=8, product=56

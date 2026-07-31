@@ -19,14 +19,11 @@
 
 ```mermaid
 mindmap
-  root(("4000行代码撑起一个Agent框架？nanobot架构…"))
-    深度分析
-      极简架构的约束与取舍
-      Tool 系统：统一 str 返回类型的深层逻辑
-      Skill 系统的懒加载模式：文件系统即 co…
-      Subagent 消息总线重注入模式
-    实践启示
-    相关实体
+  root(("行代码撑起一个Agent框架 nanobot架构深度解析"))
+    极简架构的约束与取舍
+    Tool 系统 统一 str 返回类型的深层逻辑
+    Skill 系统的懒加载模式 文件系统即 context 管理
+    Subagent 消息总线重注入模式
 ```
 
 ## 摘要

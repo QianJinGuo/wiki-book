@@ -13,14 +13,12 @@ Outpost VFX 与 AWS Generative AI Innovation Center 合作，通过多 GPU 分�
 
 ```mermaid
 mindmap
-  root(("Outpost VFX: Multi-GPU AI Tr…"))
+  root(("Outpost VFX Multi-GPU AI Training"))
     挑战背景
     解决方案架构
       硬件升级
       软件优化
     性能成果
-    技术要点
-    行业意义
 ```
 
 ## 挑战背景

@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 6.0KB | `entities/cloudsectidbits-masso-cognito-sso.html.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CloudSectiDbits: Masso - Cog…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

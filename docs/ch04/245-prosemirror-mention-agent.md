@@ -16,18 +16,18 @@
 
 ```mermaid
 mindmap
-  root(("ProseMirror @文档 mention：知识库 …"))
-    核心命题
+  root(("ProseMirror 文档 mention 知识库 Agent"))
     为什么不用 DOM 方案
     三个关键设计决策
-      决策 1：Schema 拆成三件套（不是两件套）
-      决策 2：原子 + 不可变 = docref …
-      决策 3：临时态用 Decoration，**…
-    交互三阶段（事务边界内可控）
-    Suggestion = '插件中的插件'
-    5 条工程教训
+      决策 1 Schema 拆成三件套 不是两件套
+      决策 2 原子 不可变 docref 的安全边界
+      决策 3 临时态用 Decoration 不进 schema
+    交互三阶段 事务边界内可控
+    Suggestion 插件中的插件
+    条工程教训
     主链路闭环 vs 经验修补
-    适用场景
+    通用启示 harness agent 输入层
+    相关对照
 ```
 
 ## 核心命题

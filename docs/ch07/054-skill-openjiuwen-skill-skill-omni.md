@@ -28,14 +28,12 @@ Skill让Agent不必每次都从零开始摸索，而是可以复用已有的任�
 
 ```mermaid
 mindmap
-  root(("让Skill"有图可依"：openJiuwen首发多模态…"))
+  root(("让Skill有图可依"))
     要点
-    深度分析
-      多模态Skill的本质：从'指令'到'参照系'…
-      按需读取：多模态上下文管理的工程范式
-      从Markdown到Multimodal：Sk…
-      视觉知识工程化：从'人类可读'到'Agent可…
-    实践启示
+    多模态Skill的本质 从指令到参照系的范式升维
+    按需读取 多模态上下文管理的工程范式
+    从Markdown到Multimodal Skill工程化的三个阶段
+    视觉知识工程化 从人类可读到Agent可执行
 ```
 
 ## 要点

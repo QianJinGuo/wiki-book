@@ -9,14 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("拆解 Milvus Segment 生命周期：L0/L1…"))
+  root(("拆解 Milvus Segment 生命周期 L0L1L2"))
     核心概述
     三级分层演进
     L1 状态机
     L0 删除机制
     L2 的尴尬定位
     设计取舍
-    相关实体
 ```
 
 ## 核心概述

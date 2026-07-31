@@ -15,14 +15,12 @@ TabFM is a foundation model for tabular data classification and regression, intr
 
 ```mermaid
 mindmap
-  root(("Introducing TabFM: A zero-sh…"))
+  root(("Introducing TabFM A zero-shot"))
     核心摘要
-    深度分析
-      一、范式转变：从'训练'到'上下文理解'
-      二、核心技术：交替行-列注意力机制
-      三、与 TimesFM 的家族关系：从时序到表…
-      四、对传统 ML 工作流的影响与局限
-    实践启示
+    一 范式转变 从训练到上下文理解
+    二 核心技术 交替行-列注意力机制
+    三 与 TimesFM 的家族关系 从时序到表格的跨域迁移
+    四 对传统 ML 工作流的影响与局限
 ```
 
 ## 核心摘要

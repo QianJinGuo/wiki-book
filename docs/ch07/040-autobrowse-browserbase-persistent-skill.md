@@ -12,15 +12,15 @@
 
 ```mermaid
 mindmap
-  root(("Autobrowse Browserbase Persi…"))
-    核心定位
-    核心问题：探索税（Discovery Tax）
-    核心架构：五步学习循环
-    关键设计：记忆 = Markdown 技能文件
-    量化效果：Craigslist 基准
-    核心发现：JSON API 逆向
-    自批评：Agency 分层框架
+  root(("Autobrowse Browserbase Persistent"))
+    核心问题 探索税 Discovery Tax
+    核心架构 五步学习循环
+    关键设计 记忆 Markdown 技能文件
+    量化效果 Craigslist 基准
+    核心发现 JSON API 逆向
+    自批评 Agency 分层框架
     复利与递归
+    记忆形式才是根本瓶颈
 ```
 
 ## 核心定位

@@ -14,33 +14,24 @@
 
 ```mermaid
 mindmap
-  root(("让 Coding Agent 从黑盒到透明：阿里云 Ag…"))
+  root(("让 Coding Agent 从黑盒到透明 阿里云 Agent"))
     系列定位
-    2. 背景：3 大核心挑战
-    3. 3 大 Agent 形态 + 阿里云对应方案
-      3.1 Coding Agent：LoongS…
-      3.2 个人通用助理：一行命令接入完整观测和审计
-      3.3 高低代码框架 Agent：LoongS…
-    4. 4 大观测审计能力
-      4.1 全链路调用链视图
-      4.2 Token 消耗与成本追踪
-      4.3 会话与多轮对话追踪
-      4.4 工具调用审计
-    5. 在社区标准之上的扩展
-      5.1 为什么需要扩展
-      5.2 三大核心扩展
-      5.3 工程化落地：GenAI Utils
-    深度分析
-      1. OTel SemConv 扩展路径：从社…
-      2. 三层 Span 结构的设计逻辑：Entr…
-      3. 三大采集方案的差异化架构：sidecar…
-      4. 安全审计作为企业级采纳门槛：高风险会话追…
-    实践启示
-      1. 建立 Agent 可观测的分层数据模型：…
-      2. 用 OTel 属性扩展而非 Span 类…
-      3. Coding Agent 采纳可观测方案…
-      4. 安全审计需前置到 Agent 执行层，而…
-    相关实体
+    背景 3 大核心挑战
+    3 大 Agent 形态 阿里云对应方案
+      Coding Agent LoongSuite Pilot
+      个人通用助理 一行命令接入完整观测和审计
+      高低代码框架 Agent LoongSuite Python
+    4 大观测审计能力
+      全链路调用链视图
+      Token 消耗与成本追踪
+      会话与多轮对话追踪
+    在社区标准之上的扩展
+      为什么需要扩展
+      三大核心扩展
+      工程化落地 GenAI Utils
+    OTel SemConv 扩展路径 从社区标准到阿里云自定义规范
+    三层 Span 结构的设计逻辑 Entry Span 的元数据归集价值
+    三大采集方案的差异化架构 sidecar vs 插件 vs 零代码探针
 ```
 
 ## 系列定位

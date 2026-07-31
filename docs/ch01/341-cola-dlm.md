@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Cola DLM：字节跳动连续潜空间扩散语言模型"))
-    深度分析
-      为什么'Token ≠ 语义'是一个暴论
-      Cola DLM 的生成模型分两段
-      关键创新一：Text VAE——latent …
-      关键创新二：block-causal DiT …
-    实践启示
-    相关实体
+  root(("Cola DLM 字节跳动连续潜空间扩散语言模型"))
+    为什么Token 语义是一个暴论
+    Cola DLM 的生成模型分两段
+    关键创新一 Text VAElatent 不是 embedding
+    关键创新二 block-causal DiT Flow Matching
 ```
 
 ## 摘要

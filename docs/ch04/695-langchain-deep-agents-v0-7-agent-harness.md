@@ -13,7 +13,7 @@ LangChain 发布 Deep Agents v0.7，简化了 base harness，在同等性能下�
 
 ```mermaid
 mindmap
-  root(("LangChain Deep Agents v0.7: …"))
+  root(("LangChain Deep Agents v07 精简"))
     核心改进
       更精简的 Base Harness
       Context Engineering 原则

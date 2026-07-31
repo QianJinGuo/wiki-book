@@ -7,18 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-muse-spark-voice-mode-meta-glasses.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Meta announced Muse Spark in…"))
-    Summary
-    Key Points
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## Summary
 Meta announced Muse Spark in Voice Mode and Meta Glasses — covering AI-powered voice interaction and smart glasses hardware.
 

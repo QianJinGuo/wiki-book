@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 7.2KB | `entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Apache Doris MCP Server + Qu…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 ```mermaid

@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Apple Silicon costs more tha…"))
-    深度分析
-      成本结构解构
-      Memory-bound 的本质
-      本地推理的真正价值主张
-      消费级设备的能力跃迁
-    实践启示
-    相关实体
+  root(("Apple Silicon costs more than"))
+    电力成本 几乎可以忽略
+    硬件折旧 真正的成本大头
+    Token 经济学 速度决定一切
+    速度差距的隐性成本
+    成本结构解构
+    Memory-bound 的本质
+    本地推理的真正价值主张
+    消费级设备的能力跃迁
 ```
 
 ## 摘要

@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Lambda MicroVMs vs Lambda Fu…"))
-    深度分析
-      隔离级别的范式转变：从共享内核到独立 VM
-      挂起/恢复机制的经济学意义
-      Image-then-Launch 对比传统冷启动
-      架构模式：Functions 做控制面，Mic…
-    实践启示
-    相关实体
+  root(("Lambda MicroVMs vs Lambda"))
+    隔离级别的范式转变 从共享内核到独立 VM
+    挂起恢复机制的经济学意义
+    Image-then-Launch 对比传统冷启动
+    架构模式 Functions 做控制面 MicroVMs 做数据面
 ```
 
 ## 摘要

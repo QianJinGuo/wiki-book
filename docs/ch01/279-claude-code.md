@@ -11,18 +11,14 @@
 mindmap
   root(("Claude Code 大型代码库最佳实践"))
     核心导航机制
-    Harnes：与模型同等重要
-      CLAUDE.md 文件
+    Harnes 与模型同等重要
+      CLAUDEmd 文件
       Hooks
       Skills
-      Plugins
     三种成功部署的配置模式
       使代码库可大规模导航
-      积极维护 CLAUDE.md 文件
+      积极维护 CLAUDEmd 文件
       分配 Claude Code 管理和采用的所有权
-    深度分析
-    相关实体
-    实践启示
 ```
 
 ## 核心导航机制

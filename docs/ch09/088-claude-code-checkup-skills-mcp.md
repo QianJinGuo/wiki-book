@@ -13,19 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code /checkup 功能：清理 S…"))
-    背景
-      配置腐烂（Configuration Rot）问题
-      Boris Cherny 的亲自验证
-    核心功能：七项体检清单
+  root(("Claude Code checkup 功能 清理"))
+    配置腐烂 Configuration Rot 问题
+    Boris Cherny 的亲自验证
+    核心功能 七项体检清单
     用户实测体验
-    深度分析
-      '配置腐烂'是 Agent 原生开发环境的系统…
-      5.5K Tokens 的经济学意义
-      从'手动维护'到'自动健康检查'的范式转变
-      对 Agent 工具供应链的启示
-    实践启示
-    相关实体
+    配置腐烂是 Agent 原生开发环境的系统性挑战
+    K Tokens 的经济学意义
+    从手动维护到自动健康检查的范式转变
+    对 Agent 工具供应链的启示
 ```
 
 ## 摘要

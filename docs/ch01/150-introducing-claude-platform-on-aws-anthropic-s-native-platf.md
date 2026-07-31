@@ -10,17 +10,6 @@ Today, we’re excited to announce the general availability of Claude Platform o
 In this post, we explore how Claude Platform on AWS works and how you can start using it today.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing Claude Platform …"))
-    Claude Platform experie…
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## Claude Platform experience through AWS
 
 ## 相关实体

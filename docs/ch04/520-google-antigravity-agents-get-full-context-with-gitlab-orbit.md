@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Google Antigravity agents ge…"))
-    深度分析
-      MCP 作为 Agent 工具生态的标准协议
-      知识图谱 vs 文件系统
-      幻觉减少 45 倍的机制
-    实践启示
-    相关实体
+  root(("Google Antigravity agents get"))
+    Agent 上下文缺失问题
+    GitLab Orbit 技术架构
+    三大关键用户旅程
+    集成方式
+    MCP 作为 Agent 工具生态的标准协议
+    知识图谱 vs 文件系统
+    幻觉减少 45 倍的机制
 ```
 
 ## 摘要

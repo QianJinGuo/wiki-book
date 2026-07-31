@@ -12,23 +12,17 @@
 
 ```mermaid
 mindmap
-  root(("Agent Skills vs Workflow低代码平…"))
+  root(("Agent Skills vs Workflow低代码平台 选型分析"))
     两种实现路径对比
-      Workflow（Coze/Dify）
-      Skills（Agent Skills）
-    核心洞察
+      Workflow CozeDify
+      Skills Agent Skills
     Knowhow的核心性
-    深度分析
-      平台进化路径：双向奔赴与能力边界
-      Skills的工程价值：稳定性与职责边界
-      竞争本质再提炼：KnowHow的可操作性层级
-      企业落地路径的隐含风险
-    实践启示
-      1. 选型决策框架：先验KnowHow成熟度，…
-      2. 警惕'平台换马'陷阱
-      3. Skills落地的最小工程化清单
-      4. Workflow升级方向：让业务人员参与…
-    相关实体
+    平台进化路径 双向奔赴与能力边界
+    Skills的工程价值 稳定性与职责边界
+    竞争本质再提炼 KnowHow的可操作性层级
+    企业落地路径的隐含风险
+    选型决策框架 先验KnowHow成熟度 再定工具形态
+    警惕平台换马陷阱
 ```
 
 ## 两种实现路径对比

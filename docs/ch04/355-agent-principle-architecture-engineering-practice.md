@@ -15,18 +15,15 @@ Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
 
 ```mermaid
 mindmap
-  root(("Agent Principle Architecture…"))
-    深度分析
-      1. Harness 工程比模型选择更决定系统…
-      2. 上下文分层是防止 Context Rot…
-      3. 工具设计必须从 API 封装演进到 AC…
-      4. 多 Agent 协作必须协议先于协作、隔…
-    实践启示
-      1. 优先构建高质量的 Harness 基础设施
-      2. 按使用频率和稳定性分层管理上下文
-      3. 用 ACI 原则重新审视工具设计
-      4. 多 Agent 协作前先建立协议和隔离边界
-    相关实体
+  root(("Agent Principle Architecture"))
+    Harness 工程比模型选择更决定系统成功率
+    上下文分层是防止 Context Rot 的关键
+    工具设计必须从 API 封装演进到 ACI 原则
+    多 Agent 协作必须协议先于协作 隔离先于并行
+    优先构建高质量的 Harness 基础设施
+    按使用频率和稳定性分层管理上下文
+    用 ACI 原则重新审视工具设计
+    多 Agent 协作前先建立协议和隔离边界
 ```
 
 ## 深度分析

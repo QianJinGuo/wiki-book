@@ -9,21 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Claude思考黑箱终结了！Anthropic 祭出AI…"))
-    背景：为什么需要 NLAs
-    NLAs 与'深度思考模式'的区别
-    核心技术：激活说明器（AV）+ 激活重建器（AR）
-    应用场景一：可解释性 — 理解 Claude …
-    应用场景二：模型审计（Auditing Task）
+  root(("Claude思考黑箱终结了 Anthropic 祭出AI读心术"))
+    背景 为什么需要 NLAs
+    NLAs 与深度思考模式的区别
+    核心技术 激活说明器 AV 激活重建器 AR
+    应用场景一 可解释性 理解 Claude 没有说出口的想法
+    应用场景二 模型审计 Auditing Task
     两大关键局限
-      1. 幻觉问题
-      2. 成本高
-    核心结论
-    深度分析
-      NLAs 的技术路线为什么值得关注
-      重建保真度作为'真实性代理'的巧妙设计
-      从'意识检测'数据看 NLAs 的实际效用
-      幻觉问题在 interpretability …
+      幻觉问题
+      成本高
+    NLAs 的技术路线为什么值得关注
+    重建保真度作为真实性代理的巧妙设计
 ```
 
 ## 背景：为什么需要 NLAs

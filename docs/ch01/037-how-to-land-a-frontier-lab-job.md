@@ -11,20 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("How to Land a Frontier Lab J…"))
-    核心结论
+  root(("How to Land a Frontier Lab Job"))
     三项底层特质
     LLM边缘工作
     具体练习路径
-    深度分析
-      为什么这三项特质缺一不可
-      Kernel工作的战略价值
-      Agentic Loop的探索性质
-    实践启示
-      对应届生的建议
-      对转行者的建议
-      对已经在行业中的研究者的建议
-    相关实体
+    为什么这三项特质缺一不可
+    Kernel工作的战略价值
+    Agentic Loop的探索性质
+    对应届生的建议
+    对转行者的建议
 ```
 
 ## 核心结论

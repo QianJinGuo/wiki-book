@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("What Is Urban Density Design…"))
-    深度分析
-      巴黎悖论：密度 ≠ 高度
-      Missing Middle Housing …
-      TOD 的经济学逻辑
-      与 AI/Agent 话题的意外连接
-    实践启示
-    相关实体
+  root(("What Is Urban Density Design A"))
+    密度的三种度量方式
+    五大核心设计原则
+    密度化的五种物理形态
+    当代驱动力
+    巴黎悖论 密度 高度
+    Missing Middle Housing 的政策意义
+    TOD 的经济学逻辑
+    与 AIAgent 话题的意外连接
 ```
 
 ## 摘要

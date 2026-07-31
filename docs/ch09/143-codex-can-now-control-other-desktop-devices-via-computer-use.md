@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.2KB | `entities/codex-can-now-control-other-desktop-devices-via-computer-use.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex can now control other …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - 评分：v=7 × c=7 = 49
 - OpenAI 正在开发 Codex 远程控制功能，即使笔记本锁屏或休眠状态也能工作 

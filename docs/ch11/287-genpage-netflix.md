@@ -11,8 +11,7 @@
 
 ```mermaid
 mindmap
-  root(("GenPage: Netflix 端到端生成式首页构建"))
-    核心洞察
+  root(("GenPage Netflix 端到端生成式首页构建"))
     架构设计
       自定义 Tokenization
       训练三阶段

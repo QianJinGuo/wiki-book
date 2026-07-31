@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("快手 AgentX——推荐系统自我迭代的 Agent 驱…"))
+  root(("快手 AgentX推荐系统自我迭代的 Agent 驱动研发闭环"))
     四阶段架构
-      1. Brainstorm Agent
-      2. Developing Agent
-      3. Evaluation Agent
-      4. Harness Evolution（SG…
+      Brainstorm Agent
+      Developing Agent
+      Evaluation Agent
     生产级量化结果
     对 Agent 工程的意义
 ```

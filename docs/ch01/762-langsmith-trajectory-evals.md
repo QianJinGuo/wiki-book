@@ -15,10 +15,7 @@ LangSmith Trajectory Evaluations 是一种评估 AI Agent 行为的方法，特�
 mindmap
   root(("Langsmith Trajectory Evals"))
     评估模式
-    为什么适合 wiki-evolver
-    深度分析
-    实践启示
-```
+    为什么适合 wiki-evolver```
 
 ## 核心要点
 

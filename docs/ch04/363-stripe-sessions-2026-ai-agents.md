@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stripe-sessions-2026-ai-agents.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Stripe Sessions 2026 AI Agents"))
-    相关资源
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 摘要
 * [Pricing](/pricing) [Dashboard  ](https://dashboard.stripe.com/) [Sign in  ](https://dashboard.stripe.com/login)
 

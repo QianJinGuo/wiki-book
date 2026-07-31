@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("基于 Amazon EKS 和 Graviton 构建多…"))
-    概述
-    核心技术
-    深度分析
-      1. Kubernetes Operator …
-      2. Namespace-per-User 四…
-      3. Graviton + Karpenter…
-      4. 共享 IAM Role + Pod Id…
-    实践启示
-      1. 采用 CRD + Operator 模式…
-      2. 根据隔离需求选择运行时：默认 runc，…
-      3. 存储选型：EBS gp3 适合高 IOP…
-      4. 认证授权分离：Cognito 管用户，P…
-    来源
-    相关实体
+  root(("基于 Amazon EKS 和 Graviton 构建多租户 AI"))
+    Kubernetes Operator 模式实现声明式多租户生命周期管理
+    Namespace-per-User 四层隔离架构的安全价值
+    Graviton Karpenter Spot 实例的成本优化组合
+    共享 IAM Role Pod Identity 的 O1 授权架构
+    采用 CRD Operator 模式管理 AI Agent 生命周期
+    根据隔离需求选择运行时 默认 runc 高安全场景用 Kata
+    存储选型 EBS gp3 适合高 IOPS 场景 EFS
+    认证授权分离 Cognito 管用户 Pod Identity 管资源
 ```
 
 ## 概述

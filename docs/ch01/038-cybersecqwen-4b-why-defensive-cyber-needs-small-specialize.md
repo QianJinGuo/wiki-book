@@ -12,21 +12,15 @@
 
 ```mermaid
 mindmap
-  root(("CyberSecQwen-4B: Why Defensi…"))
-    核心内容
-      主要章节
-      关键性能数据
-      训练配方
-    深度分析
-      1. 小专项模型 vs 大通用模型的 trad…
-      2. 数据主权与隐私边界成为选购模型的硬指标
-      3. LoRA 微调 + 专项数据的 reci…
-      4. AMD ROCm 生态正在补齐 AI 训…
-    实践启示
-      给网络安全团队
-      给 AI/ML 工程师
-      给企业安全决策者
-    相关实体
+  root(("CyberSecQwen-4B Why Defensive"))
+    主要章节
+    关键性能数据
+    训练配方
+    小专项模型 vs 大通用模型的 trade-off 重新被审视
+    数据主权与隐私边界成为选购模型的硬指标
+    LoRA 微调 专项数据的 recipe 可迁移性得到验证
+    AMD ROCm 生态正在补齐 AI 训练最后一公里
+    给网络安全团队
 ```
 
 ## 核心内容

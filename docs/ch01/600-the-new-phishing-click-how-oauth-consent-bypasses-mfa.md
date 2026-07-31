@@ -16,16 +16,6 @@ The operator never needed a password, never tripped an MFA prompt, and never pro
 Security researchers call the resulting condition consent phishing or OAuth grant abuse. The phishing click that mattered last decade handed over a password. The phishing click that matters now hands over a refresh token, and it sits structurally below the identity controls most organizations still treat as the perimeter.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The New Phishing Click: How …"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 EvilTokens 展示了一种根本性的安全范式转移。传统的凭证钓鱼依赖窃取密码并在下游重放，这留下了可被 SIEM 关联的登录事件痕迹，而现代多因素认证正是针对这种攻击模式构建的防御层。然而 OAuth 同意授权完全在合法身份提供者上完成，攻击者获取的是由微软官方签发的刷新令牌， MFA 挑战已在合法域上成功完成。这意味着传统的"边界"思维——将认证视为防线——已无法覆盖新型攻击面，因为令牌本身是系统正常运作的产物而非异常行为。

@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("IMClaw：通过微信/飞书操控ClaudeCode/C…"))
-    深度分析
-      1. ACP 协议：多 Agent 集成的标准…
-      2. IMClaw 架构：网关模式的工程取舍
-      3. 多 Agent 集成的现状与挑战
-      4. 安全模型的权衡
-    实践启示
-      给平台开发者/工具链工程师
-      给安全团队
-      给 AI Agent 研究者
-      给企业 IT 团队
-    相关实体
+  root(("IMClaw"))
+    ACP 协议 多 Agent 集成的标准化尝试
+    IMClaw 架构 网关模式的工程取舍
+    多 Agent 集成的现状与挑战
+    安全模型的权衡
+    给平台开发者工具链工程师
+    给安全团队
+    给 AI Agent 研究者
+    给企业 IT 团队
 ```
 
 ## 核心要点

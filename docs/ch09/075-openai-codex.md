@@ -14,15 +14,15 @@
 
 ```mermaid
 mindmap
-  root(("OpenAI秘密矩阵曝光：Codex将所有设备连成超级电脑"))
+  root(("OpenAI秘密矩阵曝光 Codex将所有设备连成超级电脑"))
     核心信息
     Codex 将所有设备连接成巨大网络
     开发者实例
-    终结「锁屏瘫痪」：Locked Use
+    终结「锁屏瘫痪」 Locked Use
     多机上下文共享
     Skills 生态爆发
-     相关实体
-    安全隐患
+    相关实体
+    相关实体
 ```
 
 ## 核心信息

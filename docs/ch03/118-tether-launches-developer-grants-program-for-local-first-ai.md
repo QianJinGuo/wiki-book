@@ -12,15 +12,12 @@
 
 ```mermaid
 mindmap
-  root(("Tether launches developer gr…"))
-    概述
+  root(("Tether launches developer grants"))
     资助机制
     技术方向
     QVAC 平台背景
     战略意图
     市场影响
-    深度分析
-    实践启示
 ```
 
 ## 概述

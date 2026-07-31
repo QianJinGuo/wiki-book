@@ -10,14 +10,11 @@
 ```mermaid
 mindmap
   root(("在 RDS PostgreSQL 中实现 RaBitQ 量化"))
-    深度分析
-      向量检索成为 RDBMS 新标配
-      pgvector 在大规模场景下的三大瓶颈
-      为什么是 RaBitQ
-      核心原理：几何特性 + 随机旋转 + SQ4
-    实践启示
+    向量检索成为 RDBMS 新标配
+    pgvector 在大规模场景下的三大瓶颈
+    为什么是 RaBitQ
+    核心原理 几何特性 随机旋转 SQ4
     相关资源
-    相关实体
 ```
 
 ## 核心要点

@@ -11,27 +11,20 @@
 
 ```mermaid
 mindmap
-  root(("kasra.blog LLM Agent 黑客能力实测:…"))
-    概述
+  root(("kasrablog LLM Agent 黑客能力实测 USD"))
     测试设计
-    核心数据: 14 模型解决率与成本
+    核心数据 14 模型解决率与成本
       全 10 次运行 核心 9 模型
-      部分运行 成本太高, 未跑满
+      部分运行 成本太高 未跑满
     关键观察
-      1. 中文模型对 DB 攻击更 '舒适'
-      2. 成本/能力帕累托: DeepSeek V…
-      3. Claude 模型 '晚期拒答' 现象
-      4. Gemini 早期立即拒答
+      中文模型对 DB 攻击更 舒适
+      成本能力帕累托 DeepSeek V4 Pro 是性价比之王
+      Claude 模型 晚期拒答 现象
     三个独有贡献 不应合并到现有 entity
-    实践启示
-      1. 定期对 agent 系统做红队测试
-      2. 分层防御：不依赖单一安全机制
-      3. 红队测试结果反馈到 harness 设计
     与现有 entity 差异化
-    深度分析
-      1. LLM hacking 的实证测试
-      2. 与 Xz Utils Backdoor…
-      3. 红队测试的必要性
+    LLM hacking 的实证测试
+    与 Xz Utils Backdoor Maintainer
+    红队测试的必要性
 ```
 
 ## 概述

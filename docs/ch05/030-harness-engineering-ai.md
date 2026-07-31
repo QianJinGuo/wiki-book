@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 15.9KB | `entities/harness-engineering-three-evolutions.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering：AI工程的三次进化"))
-    概述
-    深度分析
-    相关实体
-```
-
 ## 概述
 Prompt Engineering（说对）、Context Engineering（给对）、Harness Engineering（系统可靠）构成AI工程能力的三个维度。三层嵌套、相互依存，缺一不可。核心公式：`Agent = LLM + Harness`。
 | 阶段 | 核心问题 | 本质 |

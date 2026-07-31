@@ -17,18 +17,15 @@
 
 ```mermaid
 mindmap
-  root(("Multi-Agent 架构：Factory Missi…"))
-    深度分析
-      1. 瓶颈转移：从'模型智能'到'治理带宽'
-      2. 五种协作策略的工程取舍
-      3. Validation Contract：…
-      4. '串行优于并行'的反直觉结论
-    实践启示
-      1. Multi-Agent 系统的设计起点
-      2. 串行优于并行的工程含义
-      3. Validation Contract …
-      4. Droid Whispering 的成本…
-    相关实体
+  root(("Multi-Agent 架构 Factory Mission"))
+    瓶颈转移 从模型智能到治理带宽
+    五种协作策略的工程取舍
+    Validation Contract 把正确性锚定在实现之前
+    串行优于并行的反直觉结论
+    Multi-Agent 系统的设计起点
+    串行优于并行的工程含义
+    Validation Contract 可迁移出 Coding 场景
+    Droid Whispering 的成本工程意义
 ```
 
 ## 摘要

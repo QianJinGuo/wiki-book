@@ -13,19 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("ML Agent Predict-Before-Exec…"))
-    核心问题：ML Agent 的执行瓶颈
-    核心洞察：执行前预测
-      Data-centric Solution P…
-      Verified Data Analysis …
+  root(("ML Agent Predict-Before-Execute"))
+    核心问题 ML Agent 的执行瓶颈
+    核心洞察 执行前预测
+      Data-centric Solution Preference
+      Verified Data Analysis Report
     实验验证
       数据集
       主实验结果
-      关键发现
-    FOREAGENT：Predict-then-…
+    FOREAGENT Predict-then-Verify
     与 Loop Engineering 的连接
     边界与启示
-    相关实体
 ```
 
 ## 核心问题：ML Agent 的执行瓶颈

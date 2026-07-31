@@ -15,20 +15,17 @@
 
 ```mermaid
 mindmap
-  root(("应用宝活动平台 Harness 工程实践——从对话式 A…"))
-    一句话
-    从对话式 AI Coding 到 Harnes…
+  root(("应用宝活动平台 Harness 工程实践从对话式 AI"))
+    从对话式 AI Coding 到 Harness 工程化
     独特贡献
-      1. 知识库工程子系统
-      2. 状态文件驱动
-      3. 12 专家 Agent 体系
-      4. DAG 编排 + Fork-Join 并…
+      知识库工程子系统
+      状态文件驱动
+      12 专家 Agent 体系
     七条核心原则
     开放性思考
       TDD 在 AI 时代
       AI 工程架构分层
-      代码还重要吗？
-    标签
+      代码还重要吗
 ```
 
 ## 一句话

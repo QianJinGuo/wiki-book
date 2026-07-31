@@ -9,23 +9,20 @@
 
 ```mermaid
 mindmap
-  root(("Hermes-Agent 官方 Kanban 深度实测：…"))
-    核心结论
+  root(("Hermes-Agent 官方 Kanban 深度实测 让商业"))
     Kanban 架构设计
       数据库与并发控制
       任务状态机
-      调度器（Dispatcher）
-      Worker 启动命令
+      调度器 Dispatcher
     七条实测踩坑记录
-      Bug 1：终端超时与 Kanban 运行时长…
-      Bug 2：默认断路器过于激进
-      Bug 3：Auto-maintain 脚本查…
-      Bug 4：Worker 进程僵死
+      Bug 1 终端超时与 Kanban 运行时长的断层
+      Bug 2 默认断路器过于激进
+      Bug 3 Auto-maintain 脚本查询了不存在的列
     为什么 Gateway 才是本体
     上层 Orchestrator 选型对比
     推荐工程架构
     实操建议
-    深度分析
+    相关框架
 ```
 
 ## 核心结论

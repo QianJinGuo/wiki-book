@@ -11,16 +11,6 @@
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里SkillClaw：让 Agent 技能在真实使用中…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Skillclaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)

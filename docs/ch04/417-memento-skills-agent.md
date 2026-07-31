@@ -11,16 +11,6 @@ LLM 部署后无法继续学习——预训练依赖海量算力，微调成本�
 将状态从 `s_t`（当前任务）扩展为 `x_t = (s_t, M_t)`（任务状态 + 技能内存），**重新获得马尔可夫性**，保证系统收敛性。
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Memento-Skills：让 Agent 通过技能外…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/397-agent-skills.html)
 - [Agent Skills Comprehensive Survey](ch04/397-agent-skills.html)

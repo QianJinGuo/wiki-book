@@ -9,21 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Improving token efficiency i…"))
-    Overview
-    Key Points
-    深度分析
-      1. API代理层的统一Token可见性
-      2. 自优化工作流：审计器与优化器的循环设计
-      3. MCP工具裁剪：8-12KB/Call的…
-      4. CLI替代MCP：从LLM推理循环中移除…
-    实践启示
-      1. 从Day 1建立Token监控，而非事后补救
-      2. 优化高频工作流的优先级高于低频高消耗工作流
-      3. 用确定性步骤替代LLM推理循环中的数据获取
-      4. 定期审计并裁剪未使用的MCP工具
-    Related Topics
-    References
+  root(("Improving token efficiency in"))
+    API代理层的统一Token可见性
+    自优化工作流 审计器与优化器的循环设计
+    MCP工具裁剪 8-12KBCall的上下文压缩
+    CLI替代MCP 从LLM推理循环中移除数据获取
+    从Day 1建立Token监控 而非事后补救
+    优化高频工作流的优先级高于低频高消耗工作流
+    用确定性步骤替代LLM推理循环中的数据获取
+    定期审计并裁剪未使用的MCP工具
 ```
 
 ## Overview

@@ -13,14 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("From Silos to Service Topolo…"))
-    深度分析
-      实时性的工程权衡
-      时间旅行能力
-      规模挑战与设计教训
-      未来方向
-    实践启示
-    相关实体
+  root(("From Silos to Service Topology"))
+    问题定义 三个工程师必问的问题
+    三源互补架构 No Single Source Tells the
+    从流日志到图 数据管道架构
+    实时性的工程权衡
+    时间旅行能力
+    规模挑战与设计教训
+    未来方向
 ```
 
 ## 摘要

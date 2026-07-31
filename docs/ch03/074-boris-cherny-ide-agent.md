@@ -43,25 +43,15 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("Boris Cherny — 从 IDE 到 Agent…"))
+  root(("Boris Cherny 从 IDE 到 Agent 控制台"))
     人物背景
-    核心洞察
-      1. 'coding is solved' 需…
-      2. 控制点迁移
-      3. Loop = 长驻 Agent 工作进程
-      4. SaaS 入口重排
+    coding is solved 需要拆开理解
+    控制点迁移
+    Loop 长驻 Agent 工作进程
+    SaaS 入口重排
     Boris 原话
-    深度分析
-      从工具到范式的根本转移
-      'coding is solved' 的条件性
-      Loop 作为核心竞争力
-      Anthropic 的护城河是组织设计
-    实践启示
-      给工程师的建议
-      给组织的建议
-      给 SaaS 行业的提示
-    关联条目
-    相关实体
+    从工具到范式的根本转移
+    coding is solved 的条件性
 ```
 
 ## 人物背景

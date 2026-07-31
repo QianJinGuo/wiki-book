@@ -31,14 +31,6 @@ source_published: 2026年7月8日 11:45
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/竞赛编程agent进入全球前十南大清华新模型cf-rating超3500.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("竞赛编程Agent进入全球前十！南大、清华新模型CF r…"))
-    第 2 Source — 新智元
-```
-
 ## 第 2 Source — 新智元
 
 > From WeChat MP 新智元, supplemental coverage of the same topic.

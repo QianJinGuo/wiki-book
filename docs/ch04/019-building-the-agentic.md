@@ -14,16 +14,13 @@
 ```mermaid
 mindmap
   root(("Building the agentic"))
-    深度分析
-      1. Gemini 3.5 Flash：面向 …
-      2. Antigravity 平台：Googl…
-      3. Managed Agents in Ge…
-      4. AI Studio 移动端 + Andr…
-    实践启示
-      对于个人开发者
-      对于企业技术负责人
-      对于 AI/ML 研究者
-    相关实体
+    Gemini 35 Flash 面向 Agentic 工作流的速度优化
+    Antigravity 平台 Google 的 Agent
+    Managed Agents in Gemini API 降低
+    AI Studio 移动端 Android 集成 Vibe
+    对于个人开发者
+    对于企业技术负责人
+    对于 AIML 研究者
 ```
 
 ## 核心要点

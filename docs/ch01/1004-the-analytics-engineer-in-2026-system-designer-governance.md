@@ -12,9 +12,9 @@ Markdown Content:
 
 ```mermaid
 mindmap
-  root(("The analytics engineer in 20…"))
-    What analytics engineer…
-    The three new responsib…
+  root(("The analytics engineer in 2026"))
+    What analytics engineering looked
+    The three new responsibilities of
 ```
 
 ## What analytics engineering looked like in 2023

@@ -15,22 +15,14 @@ mindmap
     文章概要
     核心机制
       系统架构三层
-      闭环学习飞轮（Self-Improving F…
+      闭环学习飞轮 Self-Improving Flywheel
       两个 Nudge 触发机制
-      核心代码：spawn_background_r…
     与 OpenClaw 的核心差异
-    关键要点
-    相关链接
-    深度分析
-      闭环学习架构的设计哲学
-      Fork 模式的工程权衡
-      Memory 与 Skills 的知识表示分离
-      与 OpenClaw 的范式对比
-    实践启示
-      对于 Agent 系统开发者
-      对于企业部署者
-      对于 AI 研究者
-    相关实体
+    闭环学习架构的设计哲学
+    Fork 模式的工程权衡
+    Memory 与 Skills 的知识表示分离
+    与 OpenClaw 的范式对比
+    对于 Agent 系统开发者
 ```
 
 ## 文章概要

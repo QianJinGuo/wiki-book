@@ -13,26 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("How Frontier Teams Are Reinv…"))
-    三个独有贡献（不应合并到现有 entity）
+  root(("How Frontier Teams Are"))
+    三个独有贡献 不应合并到现有 entity
     三条 AI-native 开发路径
-      1. Pathfinder Initiativ…
-      2. Structured Sprint（结构…
-      3. In-situ Experiment（原…
+      Pathfinder Initiative 先锋项目
+      Structured Sprint 结构化冲刺
+      In-situ Experiment 原位实验
     五步 Frontier Team 共同实践
-      1. 投资 agent context
-      2. 慢下来才能加速（slow down to…
-      3. Feed agents not baby…
-      4. Make intent explicit…
+      投资 agent context
+      慢下来才能加速 slow down to speed up
+      Feed agents not babysit 投喂而非看护
     与现有 entities 的差异化
-    深度分析
-      核心洞察：工具不是瓶颈，workflow 才是
-      技术要点：3 因子乘法模型是 frontier…
-      技术要点：In-situ 对照实验揭示 pra…
-      技术要点：Agent context inve…
-    实践启示
-    局限与未覆盖
-    上线状态 / 链接
+    核心洞察 工具不是瓶颈 workflow 才是
+    技术要点 3 因子乘法模型是 frontier team 状态的诊断工具
+    技术要点 In-situ 对照实验揭示 practice 比
+    技术要点 Agent context investment
 ```
 
 ## 三个独有贡献（不应合并到现有 entity）

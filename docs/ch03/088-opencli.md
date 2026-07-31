@@ -10,18 +10,14 @@
 ```mermaid
 mindmap
   root(("OpenCLI"))
-    Overview
     Key Facts
     Core Features
     工作原理
     Directory Structure
     与 Agent 生态的关系
-    深度分析
-      1. 与爬虫的本质差异：模拟 vs 原生
-      2. 数据获取路径：反向解析 vs 原生直连
-      3. AI Agent 适配性：额外封装 vs…
-      4. 能力边界：读为主 vs 读写全覆盖
-    实践启示
+    与爬虫的本质差异 模拟 vs 原生
+    数据获取路径 反向解析 vs 原生直连
+    AI Agent 适配性 额外封装 vs 原生设计
 ```
 
 ## Overview

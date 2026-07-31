@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("World Knowledge：Agent推理前先探索环…"))
-    核心问题
+  root(("World Knowledge Agent推理前先探索环境生成可迁移知识"))
     World Knowledge
     两阶段框架
-      阶段一：Native Evolution Ph…
-      阶段二：Knowledge-Enhanced …
-    训练：SFT + RFT 两阶段
+      阶段一 Native Evolution Phase 推理时训练时均执行
+      阶段二 Knowledge-Enhanced Execution
+    训练 SFT RFT 两阶段
       SFT
-      RFT（两轮）
+      RFT 两轮
       Outcome-Based Reward
     核心数据
     关键工程结论

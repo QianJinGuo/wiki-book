@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 9.5KB | `entities/claude-code-20000-char-source-analysis.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("两万字详解Claude Code源码核心机制"))
-    关键洞察
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 关键洞察
 本页分析了 两万字详解Claude Code源码核心机制 的核心内容。
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-20000-char-source-analysis.md)

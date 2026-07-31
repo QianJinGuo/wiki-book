@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 6.2KB | `entities/starfilm-ai-agent-ai-short-film-platform.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI短漫剧的Netflix来了！恒星AI推出全球首个影视…"))
-    技术评估
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 - 恒星AI推出全球首个影视级AI Agent「Starfilm」，定位AI短漫剧制作平台

@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.5KB | `entities/p-seo-is-a-product-aeo-is-brand.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SEO is a product, AEO is brand"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - ...
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-seo-is-a-product-aeo-is-brand.md)

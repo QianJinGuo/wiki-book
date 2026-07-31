@@ -13,16 +13,6 @@ Patrick T. Fallon | AFP | Getty Images
 In 2026, the pace of deals has kicked into overdrive, with Nvidia already topping $40 billion in commitments and expanding its portfolio to include more public equities.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Nvidia embraces role of AI i…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 **1. 供应链金融化：AI 时代的新型生态控制**

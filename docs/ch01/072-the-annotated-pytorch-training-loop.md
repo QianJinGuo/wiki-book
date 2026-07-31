@@ -24,9 +24,9 @@ The sections below will go through each operation in sequence, explaining exactl
 
 ```mermaid
 mindmap
-  root(("The annotated PyTorch traini…"))
+  root(("The annotated PyTorch training loop"))
     The complete loop
-    TL;DR Where the order r…
+    TLDR Where the order really matters
     The data
 ```
 

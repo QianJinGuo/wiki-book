@@ -13,11 +13,10 @@ Kiro 是一个 AI 原生开发环境。在一项为期 5 天、实际编码约�
 
 ```mermaid
 mindmap
-  root(("用 Kiro 构建行业专业软件：Spec vs Vibe…"))
-    核心论点：Spec vs Vibe Codin…
+  root(("用 Kiro 构建行业专业软件 Spec vs Vibe"))
+    核心论点 Spec vs Vibe Coding 的分层适用边界
     行业专业软件的 AI 赋能路径
     算法实现验证
-    相关实体
 ```
 
 ## 核心论点：Spec vs Vibe Coding 的分层适用边界

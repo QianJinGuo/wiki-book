@@ -17,14 +17,11 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek点燃大模型效率之争，阶跃火速接棒：Jet…"))
-    深度分析
-      投机解码的效率边界
-      DSpark：吞吐量优先的调度方案
-      JetSpec：低延迟场景的因果并行草稿
-      从推理效率到 Agent 规模化
-    实践启示
-    相关实体
+  root(("DeepSeek点燃大模型效率之争 阶跃火速接棒"))
+    投机解码的效率边界
+    DSpark 吞吐量优先的调度方案
+    JetSpec 低延迟场景的因果并行草稿
+    从推理效率到 Agent 规模化
 ```
 
 ## 摘要

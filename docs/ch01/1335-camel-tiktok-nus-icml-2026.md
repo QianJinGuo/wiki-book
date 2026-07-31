@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("CAMEL: 置信度门控反思机制用于奖励建模 — Tik…"))
-    深度分析
-      奖励建模的效率悖论
-      Log-Probability Margin …
-      Counterfactual 训练：让反思真正有效
-      训练中的 Confidence Shift 现象
-    实践启示
-    相关实体
+  root(("CAMEL 置信度门控反思机制用于奖励建模 TikTokNUS"))
+    奖励建模的效率悖论
+    Log-Probability Margin 作为零成本置信度信号
+    Counterfactual 训练 让反思真正有效
+    训练中的 Confidence Shift 现象
 ```
 
 ## 摘要

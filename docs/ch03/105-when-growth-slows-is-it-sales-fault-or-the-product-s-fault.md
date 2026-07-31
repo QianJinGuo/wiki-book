@@ -5,18 +5,6 @@
 > 📊 Level ⭐⭐ | 7.2KB | `entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("When Growth Slows, Is It Sal…"))
-    关键洞察
-    深度分析
-    实践启示
-    相关实体
-    关联阅读
-```
-
 ## 核心要点
 - When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.
 

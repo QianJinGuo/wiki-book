@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 3.5KB | `entities/chime-earnings-q1-2026-ai-upmarket.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Chime Turns a Profit as Memb…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - Chime 首次实现盈利，Q1 2026
 - 会员数达 10.2 百万

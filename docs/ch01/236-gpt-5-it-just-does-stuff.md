@@ -15,14 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("GPT-5: It Just Does Stuff"))
-    深度分析
-      「Just doing stuff」的真实含义
-      路由器不是免费的抽象
-      「Proactive」的边界在哪里
-      Doom loop 消失对 Agent 工程的含义
-    实践启示
-    相关实体
+  root(("GPT-5 It Just Does Stuff"))
+    GPT-5 不是单一模型 而是一个开关
+    Proactive 是这次变化的关键
+    编程场景 3D 城市生成器的「无 doom loop」演示
+    持续协作可能不需要 doom loop 防护
+    「Just doing stuff」的真实含义
+    路由器不是免费的抽象
+    「Proactive」的边界在哪里
+    Doom loop 消失对 Agent 工程的含义
 ```
 
 ## 摘要

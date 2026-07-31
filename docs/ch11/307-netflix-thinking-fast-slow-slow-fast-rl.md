@@ -11,14 +11,13 @@
 
 ```mermaid
 mindmap
-  root(("Netflix 分层通知系统：Thinking Fast…"))
-    深度分析
-      与 Kahneman 理论的对应关系
-      频率与质量解耦的工程价值
-      稀疏负反馈的处理策略
-      实验结果
-    实践启示
-    相关实体
+  root(("Netflix 分层通知系统 Thinking Fast Slow"))
+    旧系统的根本局限
+    Slow-Fast 分层架构
+    Pacing 策略
+    与 Kahneman 理论的对应关系
+    频率与质量解耦的工程价值
+    稀疏负反馈的处理策略
 ```
 
 ## 摘要

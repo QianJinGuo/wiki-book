@@ -19,17 +19,16 @@
 
 ```mermaid
 mindmap
-  root(("从入门到精通：彻底讲懂Agent的Skill，不做“炫技…"))
+  root(("从入门到精通 彻底讲懂Agent的Skill 不做炫技式浪费"))
     写在前面
-    一、为什么必须讲透Skill？
-    二、Skill到底是怎么来的？
-      阶段1：只有Prompt
-      阶段2：Tool调用
-      阶段3：Agent出现
-      阶段4：Skill诞生（关键）
-    三、一个比喻讲透：Skill到底是什么？
-      核心区别（一定要记住）
-    四、一个合格Skill，必须满足这9
+    一 为什么必须讲透Skill
+    二 Skill到底是怎么来的
+      阶段1 只有Prompt
+      阶段2 Tool调用
+      阶段3 Agent出现
+    三 一个比喻讲透 Skill到底是什么
+      核心区别 一定要记住
+    四 一个合格Skill 必须满足这9
 ```
 
 ## 写在前面

@@ -13,16 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Loop Engineering 概念解析：Agent …"))
-    Agent Loop vs Loop Engi…
+  root(("Loop Engineering 概念解析 Agent Loop"))
+    Agent Loop vs Loop Engineering
     演进路径
     六大核心框架
-    实践案例：文本分类 Loop
-    关键洞见：Loop 不是银弹
-    第 2 来源 — 阿里云开发者（实战篇）
-      核心指标
-      互补角度
-    相关实体
+    实践案例 文本分类 Loop
+    关键洞见 Loop 不是银弹
+    核心指标
+    互补角度
 ```
 
 ## Agent Loop vs Loop Engineering

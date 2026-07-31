@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Amazon Bedrock AgentCore Har…"))
-    核心设计：两个 API 调用覆盖全部 Agen…
-    模型切换：mid-session provid…
-    工具集成：声明式 tools 配置
-    Memory：三模式可选
-    Skills：四种来源的 Agent 专业知识
+  root(("Amazon Bedrock AgentCore Harness"))
+    核心设计 两个 API 调用覆盖全部 Agent 基础设施
+    模型切换 mid-session provider 无感切换
+    工具集成 声明式 tools 配置
+    Memory 三模式可选
+    Skills 四种来源的 Agent 专业知识
     环境与文件系统
     与现有 wiki 实体的差异化
-    相关主题
 ```
 
 ## 核心设计：两个 API 调用覆盖全部 Agent 基础设施

@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Self-Filming Guide by Hello …"))
-    深度分析
-      专业级手机拍摄的民主化趋势
-      灯光作为叙事语言
-      音频优先原则
-      表演张力：Mad Men 式的传递
-    实践启示
-      设备配置清单（iPhone）
-      布光五步法
-      设备推荐
-      自拍表演检查清单
-    相关实体
+  root(("Self-Filming Guide by Hello World"))
+    专业级手机拍摄的民主化趋势
+    灯光作为叙事语言
+    音频优先原则
+    表演张力 Mad Men 式的传递
+    设备配置清单 iPhone
+    布光五步法
+    设备推荐
+    自拍表演检查清单
 ```
 
 ## 核心要点

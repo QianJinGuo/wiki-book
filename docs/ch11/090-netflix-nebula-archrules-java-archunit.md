@@ -15,23 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Netflix Nebula ArchRules: 跨越…"))
+  root(("Netflix Nebula ArchRules 跨越数千个"))
     为什么选择 ArchUnit
-    ArchRules 架构：规则库插件 + 运行插件
-    案例：API Lifecycle 注解追踪
+    ArchRules 架构 规则库插件 运行插件
+    案例 API Lifecycle 注解追踪
     规模与效果
-    关键数据/实践启示
-    深度分析
-      1. ArchRules：架构决策的代码化执行
-      2. 架构治理的规模化需求
-      3. 与 Netflix Real Time…
-      4. 误报率是架构规则系统的关键挑战
-    实践启示
-      1. 微服务 50 个时：引入自动化架构治理
-      2. 从最关键的 3-5 条规则开始
-      3. 将架构规则纳入 CI 流水线
-      4. 定期审查规则的误报率
-    相关实体
+    ArchRules 架构决策的代码化执行
+    架构治理的规模化需求
+    与 Netflix Real Time Service
+    误报率是架构规则系统的关键挑战
 ```
 
 ## 为什么选择 ArchUnit

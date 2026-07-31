@@ -13,22 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("Mountpoint S3 vs S3 Files：EK…"))
-    核心问题
+  root(("Mountpoint S3 vs S3 Files EKS 上"))
     方案对比
-      Mountpoint S3（2024-2025…
-      S3 Files（2026-04-07 GA，…
+      Mountpoint S3 2024-2025 主流
+      S3 Files 2026-04-07 GA AWS 创新
       关键差异表
     选型决策树
-    性能对比维度（实测结论待补）
-    深度分析
-      1. 设计哲学的根本分歧：吞吐量优先 vs. …
-      2. 混合部署是 EKS 上的最优解
-      3. FUSE 用户态文件系统的内在限制
-      4. S3 Files 的缓存策略是'按需优化…
-    实践启示
+    性能对比维度 实测结论待补
+    设计哲学的根本分歧 吞吐量优先 vs POSIX 完整性
+    混合部署是 EKS 上的最优解
+    FUSE 用户态文件系统的内在限制
+    S3 Files 的缓存策略是按需优化思维的典范
     与已有实体的差异化
-    上手资源
 ```
 
 ## 核心问题

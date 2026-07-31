@@ -13,8 +13,7 @@ Amazon S3 推出 Annotations 功能，允许直接在对象上附加大量结构
 
 ```mermaid
 mindmap
-  root(("Amazon S3 Annotations：对象级丰富可…"))
-    核心能力
+  root(("Amazon S3 Annotations 对象级丰富可查询元数据"))
     与现有元数据机制对比
     查询能力
     跨行业使用场景

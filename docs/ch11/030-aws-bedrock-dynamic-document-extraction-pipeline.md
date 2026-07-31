@@ -50,21 +50,19 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("AWS Bedrock Dynamic Document…"))
+  root(("AWS Bedrock Dynamic Document"))
     三条独有贡献
     核心架构图
     实现细节
-      1. On-demand 路径：SQS FIF…
-      2. Batch 路径：Bedrock Bat…
-      3. Prompt Management 模式
+      On-demand 路径 SQS FIFO Lambda
+      Batch 路径 Bedrock Batch Inference
+      Prompt Management 模式
     与现有实体的关系
-      Aws Bedrock Intelligen…
-      Process Financial Docu…
+      Aws Bedrock Intelligence Message
+      Process Financial Documents Using
       差异化
-    实践启示
-    与 agent / harness 主题的关联
+    与 agent harness 主题的关联
     引用
-    相关实体
 ```
 
 ## 三条独有贡献

@@ -13,13 +13,10 @@ CLI Agent 的设计模式：基于 MCP 协议的工具调用、Shell 级别的�
 
 ```mermaid
 mindmap
-  root(("CLI Agent 模式：MCP 与 Shell Agent"))
-    深度分析
-      MCP 协议：工具调用的标准化接口
-      Shell 级进程编排：超越简单工具调用
-      管道组合的设计模式
-    实践启示
-    相关实体
+  root(("CLI Agent 模式 MCP 与 Shell Agent"))
+    MCP 协议 工具调用的标准化接口
+    Shell 级进程编排 超越简单工具调用
+    管道组合的设计模式
 ```
 
 ## 深度分析

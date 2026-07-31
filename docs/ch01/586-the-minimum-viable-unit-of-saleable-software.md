@@ -13,11 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("The Minimum Viable Unit of S…"))
-    核心内容
-    Cheap != zerohttp://…
-      The build thresholdh…
-    The zone of viability…
+  root(("The Minimum Viable Unit of"))
+    Cheap zero
+      The build threshold
+    The zone of viability
 ```
 
 ## 核心内容

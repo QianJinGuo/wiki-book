@@ -12,13 +12,9 @@
 ```mermaid
 mindmap
   root(("AWS Reinvent Game Demo 2024-25"))
-    核心内容
-      云游戏与渲染技术
-      生成式 AI 在游戏中的应用
-      Bedrock 集成的游戏场景
-    深度分析
-    实践启示
-    相关实体
+    云游戏与渲染技术
+    生成式 AI 在游戏中的应用
+    Bedrock 集成的游戏场景
 ```
 
 ## 核心内容

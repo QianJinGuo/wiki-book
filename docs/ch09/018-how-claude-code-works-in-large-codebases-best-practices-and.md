@@ -9,27 +9,22 @@
 
 ```mermaid
 mindmap
-  root(("How Claude Code works in lar…"))
+  root(("How Claude Code works in large"))
     Claude Code 如何导航大型代码库
       Agentic Search vs RAG
       局限性
     Harness 与模型同等重要
       扩展点层次
-      CLAUDE.md 文件
+      CLAUDEmd 文件
       Hooks
-      Skills
     成功部署的三个配置模式
-      1. 使代码库在大规模下可导航
-      2. 随着模型智能发展主动维护 CLAUDE.…
-      3. 为 Claude Code 管理和 ad…
-    深度分析
-      Agentic Search 的本质优势与结构…
-      扩展点层次的依赖顺序不是技术约束而是认知约束
-      三模式配置的隐含假设
-    实践启示
+      使代码库在大规模下可导航
+      随着模型智能发展主动维护 CLAUDEmd 文件
+      为 Claude Code 管理和 adoption 分配所有权
+    Agentic Search 的本质优势与结构性代价
+    扩展点层次的依赖顺序不是技术约束而是认知约束
+    三模式配置的隐含假设
     适用场景与局限性
-    相关概念
-    相关实体
 ```
 
 ## 核心要点

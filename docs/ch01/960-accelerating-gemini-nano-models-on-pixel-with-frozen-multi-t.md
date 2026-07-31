@@ -15,9 +15,9 @@ Specific technique (frozen Multi-Token Prediction) with implementation details f
 
 ```mermaid
 mindmap
-  root(("Accelerating Gemini Nano mod…"))
+  root(("Accelerating Gemini Nano models"))
     Content Summary
-    A 'late exit' strategy
+    A late exit strategy
 ```
 
 ## Content Summary

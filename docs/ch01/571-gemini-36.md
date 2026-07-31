@@ -15,14 +15,11 @@
 mindmap
   root(("突发gemini-36-来了智力直接原地踏步速度立刻翻倍"))
     模型详解
-      Gemini 3.6 Flash
-      Gemini 3.5 Flash-Lite
-      Gemini 3.5 Flash Cyber
-    深度分析
-      Google 的'效率优先'策略意味着什么
-      从'性能竞赛'到'效率竞赛'的范式转换
-    实践启示
-    相关实体
+      Gemini 36 Flash
+      Gemini 35 Flash-Lite
+      Gemini 35 Flash Cyber
+    Google 的效率优先策略意味着什么
+    从性能竞赛到效率竞赛的范式转换
 ```
 
 ## 摘要

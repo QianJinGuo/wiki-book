@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("The recent history of AI in …"))
-    深度分析
-      「水獭基准」的方法论价值
-      开源模型的追赶速度
-      「无法分辨真假」的临界点
-      与「Sparks of AGI」论文的对话
-    实践启示
-    相关实体
+  root(("The recent history of AI in 32"))
+    三种图像生成技术路线
+    扩散模型的演进时间线 Midjourney otter on a
+    多模态生成的范式转变
+    TikZ 代码绘图 测试空间推理
+    「水獭基准」的方法论价值
+    开源模型的追赶速度
+    「无法分辨真假」的临界点
+    与「Sparks of AGI」论文的对话
 ```
 
 ## 摘要

@@ -11,13 +11,14 @@
 
 ```mermaid
 mindmap
-  root(("Open Defense Initiative | de…"))
-    深度分析
-      安全 AI 的 '军备不对称'
-      Harness 优于模型的安全范式
-      开源安全的治理激励
-    实践启示
-    相关实体
+  root(("Open Defense Initiative depthfirst"))
+    时间窗口论
+    成本效率突破
+    技术架构理念
+    计划机制
+    安全 AI 的 军备不对称
+    Harness 优于模型的安全范式
+    开源安全的治理激励
 ```
 
 ## 摘要

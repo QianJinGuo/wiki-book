@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("Affirm Maps Road to $100B GM…"))
-    相关实体
-    深度分析
-      网络效应的飞轮模型
-      AI 驱动风控的范式转变
-      Card 作为线下渗透的战略支点
-      生态位扩张：从 BNPL 到 Agentic …
-    实践启示
-      对金融科技从业者
-      对 AI/ML 工程师
-      对投资者
-      对电商平台
+  root(("Affirm Maps Road to 100B GMV With"))
+    网络效应的飞轮模型
+    AI 驱动风控的范式转变
+    Card 作为线下渗透的战略支点
+    生态位扩张 从 BNPL 到 Agentic Commerce
+    对金融科技从业者
+    对 AIML 工程师
+    对投资者
+    对电商平台
 ```
 
 ## 核心要点

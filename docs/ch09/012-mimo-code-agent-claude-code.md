@@ -9,26 +9,25 @@
 
 ```mermaid
 mindmap
-  root(("小米 MiMo Code — 长程编程 Agent 三大…"))
-    概述
+  root(("小米 MiMo Code 长程编程 Agent 三大主线"))
     与 Claude Code 对比
-    VILA 实验室的 Claude Code 源…
+    VILA 实验室的 Claude Code 源码分析
     MiMo Code 三大主线
-      主线一：计算（Compute）— 解决 '做对'
-      主线二：记忆（Memory）— 让逻辑会话无限延伸
-      主线三：进化（Evolution）— 跨 se…
-    Dynamic Workflow：编排从 pr…
+      主线一 计算 Compute 解决 做对
+      主线二 记忆 Memory 让逻辑会话无限延伸
+      主线三 进化 Evolution 跨 session 经验沉淀
+    Dynamic Workflow 编排从 prompt 转为代码
       与 Claude Code 编排对比
-      为什么把流程代码化？
-    关键 bug 教训：自动删除全局 npm 包
+      为什么把流程代码化
+    关键 bug 教训 自动删除全局 npm 包
     Coding Harness 开源的商业模式之争
       社区一派观点
       反方观点
-      核心争议：coding harness 是否有…
-      Anthropic 商业模式深度解析
+      核心争议 coding harness 是否有护城河
     工程重点分化的本质
       共同基础
       关键分化
+    工程不是 AI 的极端化体现
 ```
 
 ## 概述

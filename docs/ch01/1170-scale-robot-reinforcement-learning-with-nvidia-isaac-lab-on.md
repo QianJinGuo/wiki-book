@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Scale Robot Reinforcement Le…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      与现有知识体系的关联
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI 涉及agent领域的核心技术议题。基于原文内容的深入分析：

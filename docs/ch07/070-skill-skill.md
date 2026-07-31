@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("龙虾之父教你省钱：开源Skill给你的Skill减肥"))
-    深度分析
-      核心主张：Skill 是路标，不是说明书
-      skill-cleaner 工具设计
-      三步工作流
-      Token 成本思维
-    实践启示
-    相关实体
+  root(("龙虾之父教你省钱 开源Skill给你的Skill减肥"))
+    核心主张 Skill 是路标 不是说明书
+    skill-cleaner 工具设计
+    三步工作流
+    Token 成本思维
 ```
 
 ## 深度分析

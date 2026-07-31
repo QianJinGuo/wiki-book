@@ -15,15 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Harness 工程搭建式业务 Agent 评测方案：C…"))
-    核心洞察
-    三层指标框架（L1 / L2 / L3）
+  root(("Harness 工程搭建式业务 Agent 评测方案 Claude"))
+    三层指标框架 L1 L2 L3
     Harness 五步搭建法
     与传统评测工程的对照
-    加速比（6 个 Agent 实战数据）
-    评测 Agent 调被测 Agent 的 4 …
+    加速比 6 个 Agent 实战数据
+    评测 Agent 调被测 Agent 的 4 个常见踩坑
     评测集设计四原则
     LLM-as-Judge Rubric 设计心得
+    可复用资产 沉淀模板
 ```
 
 ## 核心洞察

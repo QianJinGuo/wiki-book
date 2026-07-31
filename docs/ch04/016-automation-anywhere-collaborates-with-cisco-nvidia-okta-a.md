@@ -9,17 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Automation Anywhere Collabor…"))
-    深度分析
-      1. Claw-Style AI Agent …
-      2. 四方合作的战略意图
-      3. Process Reasoning En…
-      4. 自主企业（Autonomous Ente…
-    实践启示
-      企业采纳建议
-      技术团队关注点
-      行业观察
-    相关实体
+  root(("Automation Anywhere Collaborates"))
+    Claw-Style AI Agent 的企业化挑战
+    四方合作的战略意图
+    Process Reasoning Engine PRE 与
+    自主企业 Autonomous Enterprise 的愿景
+    企业采纳建议
+    技术团队关注点
+    行业观察
 ```
 
 ## 核心要点

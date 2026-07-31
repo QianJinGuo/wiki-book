@@ -10,15 +10,12 @@
 ```mermaid
 mindmap
   root(("Yann LeCun JEPA世界模型与AMI Labs"))
-    核心论点
     关键计算
     JEPA架构
     AMI Labs
     世界模型竞争
     机器人两道墙
-    与现有知识的链接
-    深度分析
-```
+    与现有知识的链接```
 
 ## 核心论点
 **"说话不等于理解"**：

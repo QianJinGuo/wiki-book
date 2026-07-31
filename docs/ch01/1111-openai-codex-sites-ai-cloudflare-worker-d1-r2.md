@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI Codex Sites：AI 一句话建站部…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 OpenAI Codex Sites：AI 一句话建站部署，Cloudflare Worker + D1 + R2 全套（极客之家译介） 涉及code领域的核心技术议题。

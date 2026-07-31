@@ -11,29 +11,29 @@
 
 ```mermaid
 mindmap
-  root(("PromptQueue + OpenGorilla 集成…"))
-    一句话
-    架构图
-    相关实体
-    一、立项背景（Purpose）
-      1.1 解决的 3 个核心痛点
-      1.2 目标用户
-    二、整体架构（4 层分离）
-      2.1 4 层职责
-      2.2 Monorepo 4 包结构
-    三、核心功能矩阵
-      3.1 任务生命周期（7 状态机）
-      3.2 Tool Loop — Worker-…
-      3.3 Human-in-the-Loop（*…
-      3.4 Provider 架构（Plugin …
-    四、OpenGorilla 集成（**AI-N…
-      4.1 4 大集成能力
-      4.2 自进化闭环
-    五、5 大核心 Insight
-      Insight 1: LLM 调用本质是队列问题
-      Insight 2: Tool 的治理权必须在…
-      Insight 3: HITL 不是 feat…
-      Insight 4: 经验即资产
+  root(("PromptQueue OpenGorilla 集成"))
+    一 立项背景 Purpose
+      解决的 3 个核心痛点
+      目标用户
+    二 整体架构 4 层分离
+      4 层职责
+      Monorepo 4 包结构
+    三 核心功能矩阵
+      任务生命周期 7 状态机
+      Tool Loop Worker-owned 核心差异化
+      Human-in-the-Loop 基础设施级
+    四 OpenGorilla 集成 AI-Native 知识层
+      4 大集成能力
+      自进化闭环
+    五 5 大核心 Insight
+      Insight 1 LLM 调用本质是队列问题
+      Insight 2 Tool 的治理权必须在 Worker
+      Insight 3 HITL 不是 feature 是基础设施
+    六 竞品差异化
+    七 量化价值
+    八 测试 工程纪律
+      测试策略
+      Git 纪律
 ```
 
 ## 一句话

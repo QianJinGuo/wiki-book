@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Exaforce | Agentic SOC Platf…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 - 来源：www.exaforce.ai
 - 评分：v=7, c=9, product=63

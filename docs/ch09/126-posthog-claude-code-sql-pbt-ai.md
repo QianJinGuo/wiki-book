@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("PostHog 用 Claude Code 重写 SQL…"))
-    深度分析
-      验证闭环是 LLM 代码生成的核心模式
-      脆弱修复的识别与约束
-      代码覆盖率的非传统用法
-      新常态的预测
-    实践启示
-    相关实体
+  root(("PostHog 用 Claude Code 重写 SQL 解析器"))
+    验证闭环是 LLM 代码生成的核心模式
+    脆弱修复的识别与约束
+    代码覆盖率的非传统用法
+    新常态的预测
 ```
 
 ## 摘要

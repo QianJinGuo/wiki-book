@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("DeepSeek做大→Mega MoE，Tri Dao团…"))
-    深度分析
-      细粒度 MoE 的双重瓶颈与 SonicMoE…
-      软件层面的架构可迁移性
-      算法与硬件的协同设计
-      Mega MoE vs SonicMoE：两种思路
-    实践启示
-    相关实体
+  root(("DeepSeek做大Mega MoE Tri"))
+    细粒度 MoE 的双重瓶颈与 SonicMoE 的系统级解法
+    软件层面的架构可迁移性
+    算法与硬件的协同设计
+    Mega MoE vs SonicMoE 两种思路
 ```
 
 ## 摘要

@@ -15,15 +15,12 @@
 
 ```mermaid
 mindmap
-  root(("On Working with Wizards: AI …"))
+  root(("On Working with Wizards AI"))
     从共同工作者到巫师
-    Wizard 的力量：GPT-5 Pro 和 …
+    Wizard 的力量 GPT-5 Pro 和 Claude 41
     Wizard 的问题
     我们如何与巫师相处
-    深度分析
-    实践启示
-    关键数据/实践启示
-    相关实体
+    相关引用
 ```
 
 ## 从共同工作者到巫师

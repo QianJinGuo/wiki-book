@@ -48,18 +48,13 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("LLMReaper - DOM Based AI Con…"))
-    核心发现
-    技术分析
-      威胁机制
+  root(("LLMReaper - DOM Based AI"))
+    威胁机制
     与现有实体对比
-    相关实体
-    深度分析
-      攻击链的端到端博弈
-      MutationObserver 的双重性：合…
-      浏览器权限模型的系统性失效
-      检测与缓解的现实困境
-    实践启示
+    攻击链的端到端博弈
+    MutationObserver 的双重性 合法功能如何成为隐蔽通道
+    浏览器权限模型的系统性失效
+    检测与缓解的现实困境
 ```
 
 ## 核心发现

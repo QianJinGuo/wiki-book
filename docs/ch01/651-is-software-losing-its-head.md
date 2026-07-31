@@ -9,18 +9,14 @@
 
 ```mermaid
 mindmap
-  root(("Is Software Losing Its Head?"))
-    技术洞察
-    深度分析
-      1. Headless 架构范式的兴衰
-      2. LLM 集成对架构分层的影响
-      3. 性能与延迟的新挑战
-      4. 成本模型的范式转移
-    实践启示
-      对架构师的建议
-      对产品团队的建议
-      技术选型考量
-    相关实体
+  root(("Is Software Losing Its Head"))
+    Headless 架构范式的兴衰
+    LLM 集成对架构分层的影响
+    性能与延迟的新挑战
+    成本模型的范式转移
+    对架构师的建议
+    对产品团队的建议
+    技术选型考量
 ```
 
 ## 核心要点

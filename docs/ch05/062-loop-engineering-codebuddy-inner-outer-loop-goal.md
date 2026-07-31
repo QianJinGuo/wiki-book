@@ -15,17 +15,17 @@
 
 ```mermaid
 mindmap
-  root(("Loop Engineering 实践指南：CodeBu…"))
-    Inner/Outer Loop 概念模型
-    ReAct 四大局限 → Loop Engin…
+  root(("Loop Engineering 实践指南 CodeBuddy"))
+    InnerOuter Loop 概念模型
+    ReAct 四大局限 Loop Engineering 四大补位
     五阶段循环机制
     六要素构建体系
     CodeBuddy 三种循环驱动模式
-      /goal — 条件驱动的持续工作
-      /loop — 时间驱动的循环任务
-      Automations — 跨会话定时任务
+      goal 条件驱动的持续工作
+      loop 时间驱动的循环任务
+      Automations 跨会话定时任务
     范式演进链
-    三大风险（与 Loop Engineering…
+    三大风险 与 Loop Engineering 综合实战来源共享框架
     实践案例
 ```
 

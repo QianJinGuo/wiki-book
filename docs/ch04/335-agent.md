@@ -13,14 +13,11 @@ source_url: https://mp.weixin.qq.com/s/kNZE9fzCvOi3Em6JlueB0g
 
 ```mermaid
 mindmap
-  root(("Agent 开发范式演进：从环境工程出发，“简化”多源实…"))
-    相关实体
-    深度分析
-      信息完备性 → 感知层基建
-      统一 Catalog → 消费层治理
-      知识 Wiki → 对账层机制
-      制品化发布 → 变更治理层
-    实践启示
+  root(("Agent 开发范式演进 从环境工程出发 简化多源实时上下文"))
+    信息完备性 感知层基建
+    统一 Catalog 消费层治理
+    知识 Wiki 对账层机制
+    制品化发布 变更治理层
 ```
 
 ## 相关实体

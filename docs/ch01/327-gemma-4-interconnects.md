@@ -15,15 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Gemma 4 与开源模型成功标准 —— Interco…"))
-    1. 核心论点：开源模型不是'benchmar…
-    2. 5B/8B/26B/31B 四尺寸 + …
-    3. 工具链成熟度：Qwen 3.5 / Ne…
-    4. 微调可行性：被忽视的'暗物质'问题
-    5. 美国开源生态的复兴信号
-    6. Gemma 4 成功概率判断（作者观点）
-    7. 与现有 entity 的关系
-    8. 实践启示
+  root(("Gemma 4 与开源模型成功标准 Interconnects"))
+    核心论点 开源模型不是benchmark 一锤定音
+    5B8B26B31B 四尺寸 Apache 20 是 Gemma
+    工具链成熟度 Qwen 35 Nemotron 3 走过的路
+    微调可行性 被忽视的暗物质问题
+    美国开源生态的复兴信号
+    Gemma 4 成功概率判断 作者观点
+    与现有 entity 的关系
+    实践启示
 ```
 
 ## 1. 核心论点：开源模型不是"benchmark 一锤定音"

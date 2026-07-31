@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("NeurIPS 2026 Rebuttal Skill …"))
-    深度分析
-      从审稿经验到可复用 Skill 的知识工程
-      P0-P3 优先级框架的决策逻辑
-      '先判断，再行事'的原则
-      Agent Skill 作为学术工作流的新范式
-    实践启示
-    相关实体
+  root(("NeurIPS 2026 Rebuttal Skill"))
+    从审稿经验到可复用 Skill 的知识工程
+    P0-P3 优先级框架的决策逻辑
+    先判断 再行事的原则
+    Agent Skill 作为学术工作流的新范式
 ```
 
 ## 摘要

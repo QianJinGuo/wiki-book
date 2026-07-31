@@ -13,17 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Meta’s AI Storage Blueprint …"))
-    背景：AI 存储的挑战
+  root(("Metas AI Storage Blueprint at Scale"))
+    背景 AI 存储的挑战
     核心挑战
-    深度分析
-      1. 存储是 AI 基础设施的隐形瓶颈
-      2. Tectonic：Meta 的存储基石
-      3. 从文件系统到 BLOB 存储的架构迁移
-      4. AI 工作负载的独特 I/O 模式
-    实践启示
-    相关实体
-    来源
+    存储是 AI 基础设施的隐形瓶颈
+    Tectonic Meta 的存储基石
+    从文件系统到 BLOB 存储的架构迁移
+    AI 工作负载的独特 IO 模式
 ```
 
 ## 摘要

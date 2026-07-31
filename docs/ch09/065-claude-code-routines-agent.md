@@ -9,28 +9,24 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Routines：从工具到队友的…"))
-    背景案例：Sarah 的文档困境
-    以前在 Claude Code 上跑定时任务的…
+  root(("Claude Code Routines 从工具到队友的主动"))
+    背景案例 Sarah 的文档困境
+    以前在 Claude Code 上跑定时任务的三道坎
     Routines 的三个能力
-      1. 始终在线（云端基础设施）
-      2. 灵活触发方式
-      3. 非黑盒（透明可干预）
+      始终在线 云端基础设施
+      灵活触发方式
+      非黑盒 透明可干预
     设计 Routine 需想清楚的三件事
-      Trigger（触发时机）
-      Context（可用信息）
-      Steerability（引导质量）
+      Trigger 触发时机
+      Context 可用信息
+      Steerability 引导质量
     使用方式
     场景示例
       部署验证器
       值班事件处理器
       积压工单清理
-    实时介入演示（关键点）
-    深度分析
-      从工具到队友的范式转变
-      三道坎的解决对应关系
-      Context 天花板悖论
-      Steerability 的两种路径对比
+    实时介入演示 关键点
+    从工具到队友的范式转变
 ```
 
 ## 背景案例：Sarah 的文档困境

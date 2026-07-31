@@ -13,11 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("Agentic Robot Policy Self-Im…"))
-    核心内容
-    ENPIRE: Agentic Robot P…
+  root(("Agentic Robot Policy"))
+    ENPIRE Agentic Robot Policy
     Abstract
-    Learned Manipulation Po…
+    Learned Manipulation Policy
     ENPIRE System
 ```
 

@@ -12,14 +12,9 @@ AWS Bedrock AgentCore 是 AWS 推出的 Agent 基础设施平台，旨在为开�
 ```mermaid
 mindmap
   root(("AWS Bedrock AgentCore"))
-    核心能力
-    相关实体
-    深度分析
-      六大原语的设计哲学
-      与 MCP 生态的关系
-      企业级部署的权衡
-    实践启示
-    应用场景
+    六大原语的设计哲学
+    与 MCP 生态的关系
+    企业级部署的权衡
 ```
 
 ## 核心能力

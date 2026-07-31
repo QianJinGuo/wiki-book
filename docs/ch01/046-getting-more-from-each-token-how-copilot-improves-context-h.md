@@ -35,10 +35,10 @@ We are working on both: improving the Copilot harness so more of each session go
 
 ```mermaid
 mindmap
-  root(("Getting more from each token…"))
-    Increased prompt cachin…
-    Where GitHub Copilot au…
-    How Auto selects the ri…
+  root(("Getting more from each token How"))
+    Increased prompt caching and
+    Where GitHub Copilot auto model
+    How Auto selects the right model
 ```
 
 ## Increased prompt caching and deferred tools

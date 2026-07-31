@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 6.8KB | `entities/tracking-tampered-chef-clusters-aef374.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Tracking TamperedChef Cluste…"))
-    标签
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 Comprehensive threat intelligence report on TamperedChef malware clusters. Documents 4000+ samples across 100 variants, technical analysis of malware behavior, C2 methods, and persistence mechanisms. Valuable IOC and detection guidance.

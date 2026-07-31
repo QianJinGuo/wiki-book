@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Agent的自演进，被刚刚开源的AReaL 2.0按下了…"))
-    深度分析
-      从执行闭环到学习闭环：Agent 自演进的范式转变
-      三根支柱的技术深度拆解
-      微服务架构：Online RL 的工程化落地
-      从 Hermes 到 Claude Code：…
-    实践启示
-    相关实体
+  root(("Agent的自演进 被刚刚开源的AReaL 20按下了加速键"))
+    从执行闭环到学习闭环 Agent 自演进的范式转变
+    三根支柱的技术深度拆解
+    微服务架构 Online RL 的工程化落地
+    从 Hermes 到 Claude Code 可复用的
 ```
 
 ## 摘要

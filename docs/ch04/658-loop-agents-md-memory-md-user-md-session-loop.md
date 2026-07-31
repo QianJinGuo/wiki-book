@@ -13,10 +13,10 @@ Loop Engineering 的一个致命问题：一次会话结束，Loop 就"死了"�
 
 ```mermaid
 mindmap
-  root(("意识×Loop：AGENTS.md/MEMORY.md/…"))
+  root(("意识Loop AGENTSmdMEMORYmdUSERmd"))
     意识层三件套
     三层对齐体系
-    MEMORY→AGENTS 升格机制：人肉阀门
+    MEMORYAGENTS 升格机制 人肉阀门
     Loop 六大框架的落地映射
     核心判断
     与其他实体的关系

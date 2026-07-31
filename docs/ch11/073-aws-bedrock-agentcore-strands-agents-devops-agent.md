@@ -13,18 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("AWS Bedrock AgentCore 多账户对话式…"))
+  root(("AWS Bedrock AgentCore 多账户对话式运维助手"))
     核心叙事
     方案与架构
       三种访问方式
       五条数据路径
       技术选型
-    三个独有贡献（与现有 agentcore en…
+    三个独有贡献 与现有 agentcore entity 差异化
     三条可复用设计模式
     核心功能与落地效果
     AgentCore 如何支撑飞书对话式运维
     多账户跨区域设计
-    深度分析
 ```
 
 ## 核心叙事

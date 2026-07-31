@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code Loop 四档控制权：自检→目标…"))
+  root(("Claude Code Loop 四档控制权 自检目标定时工作域"))
     控制权升级四档
     核心工程原则
       愿望句 vs 条件句

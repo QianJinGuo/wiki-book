@@ -9,27 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("Personal AI 工作台：Claude 18 动作框架"))
+  root(("Personal AI 工作台 Claude 18 动作框架"))
     核心立场
     六层工作台结构
-    18 个动作映射到六层
-      工作区（边界）
+    个动作映射到六层
+      工作区 边界
       身份
       行为契约
-      任务入口
     关键设计原则
-      Project 是边界，不是万能记忆
-      Custom Instructions = 行…
-      流程卡片 = 过程资产，而非一次性提示词
-      上下文隔离：新话题开新 chat
+      Project 是边界 不是万能记忆
+      Custom Instructions 行为契约 而非人格设定
+      流程卡片 过程资产 而非一次性提示词
     与 Harness 工程化的对应关系
     最小可行版本
     边界注意事项
-    深度分析
-      框架定位：Personal Harness 的…
-      18 个动作的设计逻辑
-      与官方框架的缺口
-      核心洞察评估
+    框架定位 Personal Harness 的最小化实现
 ```
 
 ## 核心立场

@@ -13,21 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("云效 AI Code Review — GitLab I…"))
-    Architecture and Integrat…
+  root(("云效 AI Code Review GitLab"))
+    Architecture Integration
       Security-First Design
       Integration Workflow
-      VPC Private Network Acc…
-      Token Authentication
-    Capabilities Beyond Tok…
+      VPC Private Network Access
+    Capabilities Beyond Token Review
       Iterative Follow-up
-      Cross-File Context Unde…
-    深度分析
-      The Private-Network AI …
-      GitLab as the Critical …
-      From Diff-Review to Con…
-    实践启示
-    Related Entities
+      Cross-File Context Understanding
+    The Private-Network AI Review
+    GitLab as the Critical
+    From Diff-Review to Context-Aware
 ```
 
 ## 摘要

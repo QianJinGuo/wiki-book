@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("CoDA-Bench：Code Agent 数据智能基准"))
-    深度分析
-      被基准设计隐藏的'数据发现'缺口
-      Kaggle 生态驱动的干扰设计哲学
-      Code Intelligence 与 Dat…
-      对 Code Agent 生产部署的启示
-    实践启示
-    相关实体
+  root(("CoDA-Bench Code Agent 数据智能基准"))
+    被基准设计隐藏的数据发现缺口
+    Kaggle 生态驱动的干扰设计哲学
+    Code Intelligence 与 Data
+    对 Code Agent 生产部署的启示
 ```
 
 ## 摘要

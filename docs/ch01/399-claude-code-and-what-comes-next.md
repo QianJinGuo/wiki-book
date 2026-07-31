@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code and What Comes N…"))
-    深度分析
-      1. 能力跃迁的工程基础
-      2. 上下文压缩——突破 LLM 内存限制的关键
-      3. Skills——按需加载的指令 + 工具
-      4. Subagents 的'团队化'模式
-    实践启示
-    相关实体
+  root(("Claude Code and What Comes Next"))
+    能力跃迁的工程基础
+    上下文压缩突破 LLM 内存限制的关键
+    Skills按需加载的指令 工具
+    Subagents 的团队化模式
 ```
 
 ## 摘要

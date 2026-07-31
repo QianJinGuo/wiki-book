@@ -11,18 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("**一、关于 Kollab**"))
-    深度分析
-    **一、关于 Kollab**
-      1.1 近千个 Connector连机外部生态…
-    **二、架构设计：Agent产品的稳定性**
-    **三、架构设计：真值源**
-      3.1 Amazon S3 存工作空间的真值
-      3.2 核心机制：工作空间Runtime与S3…
-    **四．真实工作流**
-      4.1 定时任务 ，让 Agent 在同一 s…
-    相关实体
-    相关主题
+  root(("一 关于 Kollab"))
+    一 关于 Kollab
+      近千个 Connector连机外部生态 把团队工具接进来
+    二 架构设计 Agent产品的稳定性
+    三 架构设计 真值源
+      Amazon S3 存工作空间的真值
+      核心机制 工作空间Runtime与S3双向同步
+    四．真实工作流
+      定时任务 让 Agent 在同一 session 中持续累积
 ```
 
 ## 深度分析

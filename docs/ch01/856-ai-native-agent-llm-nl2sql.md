@@ -13,15 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("高德AI Native数据Agent：LLM + 知识工…"))
-    技术选型：知识工程路径
-    整体架构：三个专域 Agent
-    查数 Agent：4 步漏斗选表
+  root(("高德AI Native数据Agent LLM 知识工程"))
+    技术选型 知识工程路径
+    整体架构 三个专域 Agent
+    查数 Agent 4 步漏斗选表
     评测体系
       评测集标准化
       自动化评测工具
-      6 大类根因分类
-      准确性迭代路径
+      大类根因分类
     波动归因 Agent
       异常检测方法决策树
     找资产 Agent

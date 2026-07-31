@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("An Opinionated Guide to Usin…"))
-    深度分析
-      使用模式的结构性洞察
-      Agent 模型的范式转变
-      模型选择的战略意义
-      免费模型的合理使用
-    实践启示
-    相关实体
+  root(("An Opinionated Guide to Using AI"))
+    模型格局 九大 AI 系统
+    付费策略 20 vs 200
+    三种模型类型
+    ChatGPT 的模型选择陷阱
+    使用模式的结构性洞察
+    Agent 模型的范式转变
+    模型选择的战略意义
+    免费模型的合理使用
 ```
 
 ## 摘要

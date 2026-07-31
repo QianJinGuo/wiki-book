@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 3.8KB | `entities/deepseek-v4-flash-means-llm-steering-is-interesting-again.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek-V4-Flash means LLM …"))
-    相关实体
-    深度分析
-    实践启示
-    关联阅读
-```
-
 ## 核心要点
 - 评分：v=7 × c=8 = 56
 - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele

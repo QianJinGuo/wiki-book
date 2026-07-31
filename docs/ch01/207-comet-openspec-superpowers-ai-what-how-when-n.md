@@ -13,29 +13,27 @@
 
 ```mermaid
 mindmap
-  root(("三器合一（Comet + OpenSpec + Supe…"))
-    一、核心论点：AI 编程的瓶颈是工程纪律，不是…
-    二、三器分工：WHAT / HOW / WHE…
-    三、Superpowers：57 行 Shel…
+  root(("三器合一 Comet OpenSpec Superpowers"))
+    一 核心论点 AI 编程的瓶颈是工程纪律 不是模型能力
+    二 三器分工 WHAT HOW WHEN-NEXT
+    三 Superpowers 57 行 Shell 脚本的自举魔法
       核心反直觉点
       session-start 脚本核心逻辑
       平台适配三层逻辑
-      Skill 依赖链路（软件工程流程的 Skil…
-    四、OpenSpec：Delta Spec +…
-      Delta Spec — 增量规格（brown…
+    四 OpenSpec Delta Spec Artifact Graph
+      Delta Spec 增量规格 brownfield-first
     ADDED Requirements
-      Requirement: Two-Factor…
+      Requirement Two-Factor
     MODIFIED Requirements
-      Requirement: Session Ex…
+      Requirement Session Expiration
     REMOVED Requirements
-      Requirement: Remember Me
-      Artifact Graph — 制品依赖图
-      26 个平台适配器
-    五、Comet：YAML 状态机的工程纪律
+      Requirement Remember Me
+      Artifact Graph 制品依赖图
+      个平台适配器
+    五 Comet YAML 状态机的工程纪律
       五阶段状态机
-      合法的转换事件（5 种）
+      合法的转换事件 5 种
       阶段检测 first-match-wins 链路
-      Guard 守卫：脚本强制纪律
 ```
 
 ## 一、核心论点：AI 编程的瓶颈是工程纪律，不是模型能力

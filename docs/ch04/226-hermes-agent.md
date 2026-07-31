@@ -12,14 +12,14 @@
 ```mermaid
 mindmap
   root(("Hermes Agent 记忆系统"))
-    概述
     三层架构
-    冻结快照模式（核心设计）
+    冻结快照模式 核心设计
     双轨记忆
     单 Provider 约束
-    上下文围栏（Context Fencing）
+    上下文围栏 Context Fencing
     安全扫描
     原子写入
+    八大 Provider
 ```
 
 ## 概述

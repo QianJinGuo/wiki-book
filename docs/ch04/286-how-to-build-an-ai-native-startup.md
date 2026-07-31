@@ -11,14 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("How to Build an AI-Native St…"))
-    深度分析
-      Context 即护城河
-      Harness 的必要性
-      评估驱动的复利增长
-      评论者的补充
-    实践启示
-    相关实体
+  root(("How to Build an AI-Native Startup"))
+    一 先画地图 频率胜过重要性
+    二 把记忆装进代码库
+    三 选最轻的工具
+    四 什么叫做对了 Skills 与 Evals
+    Context 即护城河
+    Harness 的必要性
+    评估驱动的复利增长
+    评论者的补充
 ```
 
 ## 摘要

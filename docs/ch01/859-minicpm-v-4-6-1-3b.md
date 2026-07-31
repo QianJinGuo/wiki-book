@@ -19,14 +19,11 @@
 
 ```mermaid
 mindmap
-  root(("MiniCPM-V 4.6 (1.3B) 面壁智能"))
+  root(("MiniCPM-V 46 13B 面壁智能"))
     概要
     核心性能
     架构创新
     商业落地
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 概要

@@ -13,20 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("Inference cost at scale with…"))
-    Summary
-    Key Points
-      1. Two Numbers Define G…
-      2. KV-Cache Transforms …
-      3. Optimal Batch Size: …
-      4. Real-World Constrain…
+  root(("Inference cost at scale with"))
+    Two Numbers Define GPU Inference
+    KV-Cache Transforms the
+    Optimal Batch Size 331 Users
+    Real-World Constraints VRAM Budget
     Deep Analysis
-      Memory-Bandwidth: The U…
-      The Batch Size vs. Cont…
-      Implications for Produc…
-      Connection to Local Inf…
+      Memory-Bandwidth The Universal
+      The Batch Size vs Context Length
+      Implications for Product Pricing
     Practical Implications
-    Related Entities
 ```
 
 ## Summary

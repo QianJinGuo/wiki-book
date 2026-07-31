@@ -15,11 +15,10 @@ AWS China Blog（2026-07-14）发表了一篇深度文章，介绍如何用 **BM
 
 ```mermaid
 mindmap
-  root(("AWS BMad + AIDLC：用 BMAD Meth…"))
-    核心架构：AIDLC 三阶段 + Review…
+  root(("AWS BMad AIDLC 用 BMAD Method 在"))
+    核心架构 AIDLC 三阶段 Review Gate
     BMAD 的 Agent 约束机制
     TDD 作为 AI 验证机制
-    与现有实体的差异化
     局限性
 ```
 

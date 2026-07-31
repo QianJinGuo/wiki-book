@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 4.0KB | `entities/openai-buys-ai-consultancy-enterprises.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI buys AI consultancy t…"))
-    关键要点
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 摘要
 Title: OpenAI buys AI consultancy to sell enterprises on its models
 URL Source: https://www.theregister.com/ai-ml/2026/05/11/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/5238213/

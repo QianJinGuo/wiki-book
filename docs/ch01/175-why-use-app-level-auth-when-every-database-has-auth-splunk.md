@@ -11,10 +11,9 @@
 
 ```mermaid
 mindmap
-  root(("Why Use App-Level Auth When …"))
-    相关实体
+  root(("Why Use App-Level Auth When Every"))
     实战启示
-    上线状态 / 链接
+    上线状态 链接
 ```
 
 ## 相关实体

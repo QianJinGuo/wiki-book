@@ -13,19 +13,17 @@
 
 ```mermaid
 mindmap
-  root(("OpenClaw 深度架构分析：Agent 引擎、多源 …"))
+  root(("OpenClaw 深度架构分析 Agent 引擎 多源 Skill"))
     架构分层
     Agent 执行引擎
     Skill 机制详解
-      多源加载（6 来源按优先级合并）
+      多源加载 6 来源按优先级合并
       过滤与资格
       数量限制
-      菜单注入与自主选择
     子 Agent 架构
-      创建参数（sessions_spawn 工具）
+      创建参数 sessionsspawn 工具
       创建流程
       生命周期与注册表
-      推送式结果返回
     五层容错体系
     工具权限策略
     与已有 OpenClaw 实体的互补

@@ -14,7 +14,7 @@
 
 ```mermaid
 mindmap
-  root(("Qwen-RobotWorld Technical Re…"))
+  root(("Qwen-RobotWorld Technical Report"))
     评估理由
     相关
 ```

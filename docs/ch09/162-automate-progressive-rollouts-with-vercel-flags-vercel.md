@@ -11,13 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("Automate progressive rollout…"))
-    相关实体
-    深度分析
-      核心概念：渐进式发布 vs 加权拆分
-      为什么渐进式发布有价值
-      技术实现路径
-    实践启示
+  root(("Automate progressive rollouts"))
+    核心概念 渐进式发布 vs 加权拆分
+    为什么渐进式发布有价值
+    技术实现路径
 ```
 
 ## 相关实体

@@ -26,10 +26,10 @@ That's the part that keeps catching our attention. Many teams, many versions of 
 
 ```mermaid
 mindmap
-  root(("Every Team is Building the S…"))
+  root(("Every Team is Building the Same"))
     The shape of the problem
-    Why does it keep happen…
-    What we're working on
+    Why does it keep happening
+    What were working on
 ```
 
 ## The shape of the problem

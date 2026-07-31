@@ -7,18 +7,6 @@
 # Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cyberscammers are bypassing …"))
-    内容摘要
-    相关实体
-    相关主题
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 
 ```mermaid

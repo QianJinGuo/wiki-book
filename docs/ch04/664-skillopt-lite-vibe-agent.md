@@ -15,13 +15,12 @@
 
 ```mermaid
 mindmap
-  root(("SkillOpt-Lite：一行Vibe指令加速Agen…"))
+  root(("SkillOpt-Lite 一行Vibe指令加速Agent技能自进化"))
     核心创新
       零阶优化统一视角
-      HarnessOpt：技能饱和后改脚手架
+      HarnessOpt 技能饱和后改脚手架
     关键实验结果
     边界条件
-    实践启示
 ```
 
 ## 核心创新

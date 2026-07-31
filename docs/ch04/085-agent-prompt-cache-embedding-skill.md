@@ -13,22 +13,21 @@
 
 ```mermaid
 mindmap
-  root(("Agent 记忆系统工程税：写入纪律·Prompt Ca…"))
-    核心立场：记忆系统的'工程税'框架
-    2026 新地形
-    五个工程考量（生产环境的真实痛点）
-    四条写入/失效路径（业界哲学分叉）
-      路径一：LLM 判官（Mem0 范式）
-      路径二：公式打分（OpenClaw Dream…
-      路径三：托管策略（AgentCore Memo…
-      路径四：Workload-Feedback A…
-    记忆写入与 Prompt Cache 的冲突（…
+  root(("Agent 记忆系统工程税 写入纪律Prompt Cache"))
+    核心立场 记忆系统的工程税框架
+    新地形
+    五个工程考量 生产环境的真实痛点
+    四条写入失效路径 业界哲学分叉
+      路径一 LLM 判官 Mem0 范式
+      路径二 公式打分 OpenClaw Dreaming 范式
+      路径三 托管策略 AgentCore Memory 范式
+    记忆写入与 Prompt Cache 的冲突 最隐蔽的运行时陷阱
       冲突本质
       三种处理思路
-    跨模型的容量上限：字符 vs Token
-    Embedding 迁移：记忆工程的最大数据税
-      四阶段迁移方法论（生产环境验证）
-    Agent 自产程序性记忆的治理（2026 最…
+    跨模型的容量上限 字符 vs Token
+    Embedding 迁移 记忆工程的最大数据税
+      四阶段迁移方法论 生产环境验证
+    Agent 自产程序性记忆的治理 2026 最显著新变量
 ```
 
 ## 核心立场：记忆系统的"工程税"框架

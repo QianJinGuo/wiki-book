@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-software-supply-chain-security-well-architected.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Well-architected best practi…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 Well-architected best practices for software supply chain security 涉及architecture领域的核心技术议题。

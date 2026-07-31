@@ -7,21 +7,6 @@
 # What happens in the log when an app crashes as it starts up?
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("What happens in the log when…"))
-    深入分析
-    扩展内容
-      日志捕获的时间窗口技巧
-      代码签名错误的级联验证链
-      应用 translocation 的双重证据模式
-      偏好设置问题的 XPC 连接追踪
-    相关实体
-    相关主题
-```
-
 ## 核心要点
 
 Practical and specific macOS debugging guide from a trusted source, with actionable techniques and concrete error codes for diagnosing startup crashes.

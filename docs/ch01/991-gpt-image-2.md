@@ -15,16 +15,6 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 也可以提供主题，比如，主题:女孩，沙滩，海水
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GPT -Image 2神级提示词分享"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Gpt Image 2完全指南](ch01/1258-gpt-image-2.html)
 - [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](ch01/1258-gpt-image-2.html)

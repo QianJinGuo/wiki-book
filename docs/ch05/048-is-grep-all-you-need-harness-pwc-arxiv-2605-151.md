@@ -11,18 +11,18 @@
 
 ```mermaid
 mindmap
-  root(("Is Grep All You Need? — 检索 ×…"))
+  root(("Is Grep All You Need 检索 Harness"))
     论文与作者
-    相关实体
     三个核心实验发现
-      1. Inline 交付时 grep 10/1…
-      2. 改成交付到磁盘（read）后 vecto…
-      3. 同样 Claude Opus 换 har…
+      Inline 交付时 grep 1010 赢 vector
+      改成交付到磁盘 read 后 vector 反超
+      同样 Claude Opus 换 harness 准确率差 16pp
     核心概念定义
     主实验结论
     论文深层主张
     论文标题的精确答案
     论文呼吁的研究方向
+    对 Agent 工程师的核心借鉴
 ```
 
 ## 论文与作者

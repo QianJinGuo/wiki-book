@@ -13,18 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("NIST SP 800-213r1 — IoT Prod…"))
+  root(("NIST SP 800-213r1 IoT Product"))
     核心框架
-      IoT 产品安全能力（IoT Product …
+      IoT 产品安全能力 IoT Product
       联邦政府 IoT 合规要求
-      与 SP 800-213（2020）的关键差异
-    对 AI/ML 安全的启示
-    深度分析
-      从'设备'到'产品'的范式转移
-      系统元素视角下的风险重评估
-      能力模型的双层架构
-      与 NIST CSF 2.0 和 RMF 的对…
-    实践启示
+      与 SP 800-213 2020 的关键差异
+    对 AIML 安全的启示
+    从设备到产品的范式转移
+    系统元素视角下的风险重评估
+    能力模型的双层架构
+    与 NIST CSF 20 和 RMF 的对齐策略
     相关标准与框架
 ```
 

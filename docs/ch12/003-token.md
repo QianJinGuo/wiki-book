@@ -12,21 +12,17 @@
 ```mermaid
 mindmap
   root(("Token 撤销触发设备擦除的安全漏洞"))
-    相关实体
     事件概述
     攻击路径深度解析
-      入口：pull_request_target …
-      载荷行为：凭证窃取与 P2P 中继
-      SIGIL 的双重功能：死亡开关 + P2P …
-    深度分析
-      供应链攻击的范式跃迁
-      pull_request_target 漏洞的…
-      密码学实现的安全隐患
-      OSS 供应链安全生态的系统性脆弱性
-    实践启示
-      对于开发者与维护者
-      对于安全团队
-      对于 npm 生态治理
+      入口 pullrequesttarget 与 Actions 缓存污染
+      载荷行为 凭证窃取与 P2P 中继
+      SIGIL 的双重功能 死亡开关 P2P 令牌中继
+    供应链攻击的范式跃迁
+    pullrequesttarget 漏洞的广泛影响
+    密码学实现的安全隐患
+    OSS 供应链安全生态的系统性脆弱性
+    对于开发者与维护者
+    对于安全团队
 ```
 
 ## 核心要点

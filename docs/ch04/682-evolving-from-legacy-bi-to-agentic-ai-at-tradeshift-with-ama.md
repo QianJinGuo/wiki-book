@@ -13,7 +13,7 @@
 
 ```mermaid
 mindmap
-  root(("Evolving from legacy BI to a…"))
+  root(("Evolving from legacy BI to"))
     迁移背景
     解决方案架构
       安全四层

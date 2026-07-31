@@ -13,17 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code 安全审查的隐性盲点：Model …"))
-    概述
+  root(("Claude Code 安全审查的隐性盲点 Model"))
     Claude Code 三种安全审查机制
-    三个种子漏洞（按复杂度排序）
+    三个种子漏洞 按复杂度排序
     四个测试
-    核心发现
-      H1 验证（Model Bias 真实存在）
-      H2 验证（Diff 范围审查的天然盲点）
-    三个独有贡献
+    H1 验证 Model Bias 真实存在
+    H2 验证 Diff 范围审查的天然盲点
     工程启示
-    相关主题
 ```
 
 ## 概述

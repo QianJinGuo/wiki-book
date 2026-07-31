@@ -13,20 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("给野马套上缰绳：Agent Harness 工程实践 —…"))
-    一句话
-    核心内容
-      业务背景
-      Harness设计
-      落地经验
-    深度分析
-      1. Agent = Model + Harn…
-      2. 四条反直觉铁律是 Harness Eng…
-      3. 从'全能 Agent'到'2 Agent…
-      4. 六种工程模式构成 Harness 的'设…
-    实践启示
-    相关实体
-    标签
+  root(("给野马套上缰绳 Agent Harness 工程实践"))
+    业务背景
+    Harness设计
+    落地经验
+    Agent Model Harness 范式跃迁的核心公式
+    四条反直觉铁律是 Harness Engineering 的理论基石
+    从全能 Agent到2 Agent N Skill的架构重构
+    六种工程模式构成 Harness 的设计模式手册
 ```
 
 ## 一句话

@@ -10,15 +10,12 @@
 
 ```mermaid
 mindmap
-  root(("Ai True Moat Organizational …"))
-    核心论点
+  root(("Ai True Moat Organizational"))
     组织发明
     身份认同竞争
     情绪价值
     被选中 vs 被看见
     AI 时代的新护城河
-    深度分析
-    实践启示
 ```
 
 ## 核心论点

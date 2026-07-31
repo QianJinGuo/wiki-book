@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.1KB | `entities/netflix-is-building-an-ai-animation-studio.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Netflix is building an AI an…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 核心要点
 
 ```mermaid

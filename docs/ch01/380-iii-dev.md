@@ -9,19 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("iii.dev"))
-    概述
+  root(("iiidev"))
     创始人
     核心原语
-    关键洞察
     技术实现
-    代码示例（TypeScript SDK）
+    代码示例 TypeScript SDK
     与 Harness 框架对比
-    深度分析
-      类别坍缩：Primitives 的设计哲学
-      Harness 的定位重估
-      可观测性的根本改变
-      Sandbox Worker 的递归性
+    类别坍缩 Primitives 的设计哲学
+    Harness 的定位重估
+    可观测性的根本改变
 ```
 
 ## 概述

@@ -13,23 +13,20 @@
 
 ```mermaid
 mindmap
-  root(("啊？我刚开源的 Skills 已经 7K Star 了？！"))
+  root(("啊 我刚开源的 Skills 已经 7K Star 了"))
     项目背景
     核心经验
       Skills 的设计原则
       社区驱动的增长
       与主流 Agent 框架的集成
     三大核心 Skill 详解
-      1. 视频制作 Skill（web-video…
-      2. 网页设计 Skill（web-desig…
-      3. 图片生成 Skill（gpt-image…
-    深度分析
-      Skills 生态的范式意义
-      中文 Agent 社区的独特生态位
-      '用 Skill 封装工作流'的模式创新
-      从 Demo 到生产的关键桥梁
-    实践启示
-    相关实体
+      视频制作 Skill web-video-presentation
+      网页设计 Skill web-design-engineer
+      图片生成 Skill gpt-image-2
+    Skills 生态的范式意义
+    中文 Agent 社区的独特生态位
+    用 Skill 封装工作流的模式创新
+    从 Demo 到生产的关键桥梁
 ```
 
 ## 项目背景

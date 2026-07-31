@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Thariq（Claude Code工程师）的Fable…"))
-    深度分析
-      指令困境的深层根源
-      未知消除法 vs 传统需求工程
-      SOP 五招的设计理性
-      Fable 5 与 Agentic Codin…
-    实践启示
-    相关实体
+  root(("Thariq Claude Code工程师 的Fable"))
+    指令困境的深层根源
+    未知消除法 vs 传统需求工程
+    SOP 五招的设计理性
+    Fable 5 与 Agentic Coding 的新范式
 ```
 
 ## 摘要

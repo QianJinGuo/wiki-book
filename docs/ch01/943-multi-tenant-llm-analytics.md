@@ -13,16 +13,14 @@ PAR Technology 为餐饮行业 300+ 企业构建生产级多租户 Text-to-SQL A
 
 ```mermaid
 mindmap
-  root(("Multi-tenant LLM Analytics 三…"))
-    核心问题：为什么不能依赖 LLM 做行级安全
+  root(("Multi-tenant LLM Analytics 三层安全架构"))
+    核心问题 为什么不能依赖 LLM 做行级安全
     三层架构
-      Layer 1: 完整性保护的请求签名（API…
-      Layer 2: 语义输入验证（认证后、数据访…
-      Layer 3: Split-Plane SQ…
+      Layer 1 完整性保护的请求签名 API 入口
+      Layer 2 语义输入验证 认证后 数据访问前
+      Layer 3 Split-Plane SQL 架构 SQL 生成阶段
     生产验证
-    三个独有贡献
     差异化对比
-    Related
 ```
 
 ## 核心问题：为什么不能依赖 LLM 做行级安全

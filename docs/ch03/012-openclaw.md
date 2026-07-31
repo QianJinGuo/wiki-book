@@ -8,16 +8,6 @@
 大家好，欢迎来到 code秘密花园，我是花园老师（ConardLi）
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("龙虾装上了，可以用来干啥？分享下我的 OpenClaw …"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Skill Development Guide Aliyun 2026](../ch04/271-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)

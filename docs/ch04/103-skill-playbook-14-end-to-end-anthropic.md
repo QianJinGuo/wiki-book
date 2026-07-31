@@ -15,21 +15,20 @@
 
 ```mermaid
 mindmap
-  root(("鹅厂 Skill 写作完整 Playbook：14 章节…"))
-    14 章节目录
+  root(("鹅厂 Skill 写作完整 Playbook 14 章节"))
+    章节目录
     Skill 本质
-    5 大痛点
-    渐进式加载 3 层（Anthropic 设计）
-    4 大写作原则
-      4.1 开头说清三件事
-      4.2 祈使句下指令 + 解释'为什么'
-      4.3 Before/After 对比（最关键）
-      4.4 Few-Shot 3-5 个示例
-    5 大评估指标（Anthropic 推荐）
+    大痛点
+    渐进式加载 3 层 Anthropic 设计
+    大写作原则
+      开头说清三件事
+      祈使句下指令 解释为什么
+      BeforeAfter 对比 最关键
+    大评估指标 Anthropic 推荐
     Skill Creator 工程化评估 3 阶段
-      5 步工作流
-      3 阶段评估
-    4 大安全风险 + 防御
+      步工作流
+      阶段评估
+    大安全风险 防御
 ```
 
 ## 14 章节目录

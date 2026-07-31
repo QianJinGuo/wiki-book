@@ -13,14 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Build an AI-Powered Equipmen…"))
-    深度分析
-      AgentCore Runtime 的单端点架…
-      RAG 在垂直领域的知识工程实践
-      记忆分层的工程意义
-      扩展性设计的 @tool 模式
-    实践启示
-    相关实体
+  root(("Build an AI-Powered Equipment"))
+    架构设计
+    关键技术实现
+    请求流程
+    AgentCore Runtime 的单端点架构价值
+    RAG 在垂直领域的知识工程实践
+    记忆分层的工程意义
+    扩展性设计的 tool 模式
 ```
 
 ## 摘要

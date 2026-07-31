@@ -11,8 +11,8 @@
 mindmap
   root(("Sub-Agent vs Agent Team 选型指南"))
     核心判断准则
-    Sub-Agent vs Agent Team…
-    最大的坑：按'岗位'拆而不是按'上下文边界'拆
+    Sub-Agent vs Agent Team 本质区别
+    最大的坑 按岗位拆而不是按上下文边界拆
     Sub-Agent 硬约束
     Agent Team 适用场景
     五种编排原语

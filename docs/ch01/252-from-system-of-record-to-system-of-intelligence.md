@@ -9,29 +9,21 @@
 
 ```mermaid
 mindmap
-  root(("From "System of Record" to "…"))
-    背景：CRM 作为'数据积累护城河'的历史逻辑
-    核心论点：系统正在发生层级迁移
+  root(("From System of Record to System"))
+    背景 CRM 作为数据积累护城河的历史逻辑
+    核心论点 系统正在发生层级迁移
     AI Agent 如何重新定义 CRM 的角色
-      Agent 视角下的 CRM：只是一个数据库
-      CRM 使用量不降反升：一个反直觉现象
-      从数据积累到编排层：护城河的本质变化
+      Agent 视角下的 CRM 只是一个数据库
+      CRM 使用量不降反升 一个反直觉现象
+      从数据积累到编排层 护城河的本质变化
     AI 原生 GTM 初创公司的特征
       聚集于高频窄工作流
       正在创造全新的工作类别
-      不削减人力，而是扩大总饼
-    更长远的影响：制度记忆的可装运化
+      不削减人力 而是扩大总饼
+    更长远的影响 制度记忆的可装运化
     新技术栈的核心与结论
-    深度分析
-      '数据积累'护城河的局限性
-      System of Intelligence …
-      对 Salesforce/HubSpot 的战…
-      Agent 作为'数据丰富化引擎'的新发现
-    实践启示
-      对于 GTM 销售组织
-      对于 Salesforce/HubSpot 等…
-      对于 AI 原生 GTM 初创公司
-      对于企业 IT 和采购决策者
+    数据积累护城河的局限性
+    System of Intelligence 的本质 多源上下文合成
 ```
 
 ## 核心要点

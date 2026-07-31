@@ -11,17 +11,15 @@ LangChain 团队（2026）提出的 Agent 循环工程 4 层栈框架，将「lo
 
 ```mermaid
 mindmap
-  root(("Loop Engineering 四层循环栈：从 Age…"))
-    理论基础：Loopcraft 与 Agent …
+  root(("Loop Engineering 四层循环栈 从 Agent"))
+    理论基础 Loopcraft 与 Agent 的辛辣教训
     四层循环栈
-      第一层：Agent 循环（模型 + 工具）
-      第二层：验证循环（Agent + 评分器）
-      第三层：事件驱动循环（验证 + 系统）
-      第四层：爬坡循环（系统 + Engine）
+      第一层 Agent 循环 模型 工具
+      第二层 验证循环 Agent 评分器
+      第三层 事件驱动循环 验证 系统
     人类监督
     四层汇总表
     深度分析与实践启示
-    相关实体
 ```
 
 ## 理论基础：Loopcraft 与 Agent 的"辛辣教训"

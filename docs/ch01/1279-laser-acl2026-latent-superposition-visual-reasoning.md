@@ -18,17 +18,11 @@
 
 ```mermaid
 mindmap
-  root(("Laser Acl2026 Latent Superpo…"))
-    一句话总结
-    核心问题
-    解决方案：Laser
+  root(("Laser Acl2026 Latent"))
+    解决方案 Laser
       核心机制
       ScanPath 数据集
-    实验结果
-    关键洞察
     延伸概念
-    深度分析
-    实践启示
 ```
 
 ## 一句话总结

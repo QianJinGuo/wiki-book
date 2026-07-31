@@ -20,14 +20,13 @@
 mindmap
   root(("SkillOpt"))
     它要解决什么
-    四步训练循环（mini training lo…
-    实验结果
-      迁移性（值得重视的工程能力）
-    工程意义：Agent 时代的新型资产
-    5 条局限
+    四步训练循环 mini training loop
+    迁移性 值得重视的工程能力
+    工程意义 Agent 时代的新型资产
+    条局限
     成本权衡
     与现有范式对照
-    对 harness/agent 团队的启示
+    对 harnessagent 团队的启示
 ```
 
 ## 它要解决什么

@@ -13,23 +13,16 @@
 
 ```mermaid
 mindmap
-  root(("LangChain × Fireworks 100x C…"))
-    背景
-    核心概念：Perceived Error（感知…
+  root(("LangChain Fireworks 100x Cheaper"))
+    核心概念 Perceived Error 感知错误
       定义
       通用性主张
       信号来源
-      输出格式
     数据集构建
-      来源
       多样性保证
-    100x Cheaper 关键
+    x Cheaper 关键
       微调策略
       通用化验证
-    实践启示
-    适用场景
-    原文链接
-    相关实体
 ```
 
 ## 背景

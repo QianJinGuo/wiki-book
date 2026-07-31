@@ -13,17 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("TRAE SOLO Work 模式 + 飞书多维表格 5…"))
-    深度分析
-      TRAE SOLO Work 模式的定位
-      飞书多维表格作为 Agent 数据底座
-      5 步管道设计
-      增量同步的技术挑战
-    实践启示
-      适用场景
-      局限性
-      扩展方向
-    相关实体
+  root(("TRAE SOLO Work 模式 飞书多维表格 5 步教程"))
+    TRAE SOLO Work 模式的定位
+    飞书多维表格作为 Agent 数据底座
+    步管道设计
+    增量同步的技术挑战
+    局限性
+    扩展方向
 ```
 
 ## 摘要

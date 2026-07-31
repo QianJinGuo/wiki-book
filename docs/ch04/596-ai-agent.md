@@ -9,22 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Agent 工程师学习路线：面向资深后端/大数据工…"))
-    深度分析
-      核心观点
-    核心判断
-      2.
-      3.
-      4.
-      内容结构
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图 涉及agent领域的核心技术议题。

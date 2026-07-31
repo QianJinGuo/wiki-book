@@ -14,12 +14,9 @@
 ```mermaid
 mindmap
   root(("Introducing the MDN MCP server"))
-    三个独有贡献（不应合并到现有 entity）
+    三个独有贡献 不应合并到现有 entity
     MDN MCP server 的核心能力
     与现有 MCP 实体的差异化
-    实践启示
-    相关主题
-    References
 ```
 
 ## 三个独有贡献（不应合并到现有 entity）

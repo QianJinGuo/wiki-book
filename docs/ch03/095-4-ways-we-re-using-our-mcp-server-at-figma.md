@@ -7,17 +7,6 @@
 # 4 ways we’re using our MCP server at Figma
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("4 ways we’re using our MCP s…"))
-    Overview
-    1. Create and refresh …
-    深度分析
-    实践启示
-```
-
 ## Overview
 
 Published Time: 2026-06-16T12:00:00.000Z

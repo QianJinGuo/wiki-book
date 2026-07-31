@@ -9,15 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("AgentEval：YAML驱动的Agent评测框架"))
-    核心问题
-    关键指标：pass@k vs pass^k
+  root(("AgentEval YAML驱动的Agent评测框架"))
+    关键指标 passk vs passk
     评分器体系
-    CI/CD 集成
+    CICD 集成
     缓存机制
-    A/B 对比
+    AB 对比
     扩展接口
     实现细节
+    passk 与 passk 的双指标哲学
 ```
 
 ## 核心问题

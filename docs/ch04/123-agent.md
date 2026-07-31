@@ -9,7 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("Agent演化：三条路线汇聚框架"))
+  root(("Agent演化 三条路线汇聚框架"))
     核心框架
     三层体系的架构映射
     短期分化原因

@@ -7,17 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-language-models-and-meaning.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Language Models and Meaning"))
-    Key Insights
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## Key Insights
 - Traditional semantics links language to extralinguistic reality (world, thought, social practice) - links that LLMs lack
 - LLMs learn only statistical regularities between words, not word-to-world connections

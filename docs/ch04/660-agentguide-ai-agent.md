@@ -9,22 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-guide-core-concepts-overview.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentGuide AI Agent 核心概念速查"))
-    深度分析
-      核心观点
-    13个核心概念速览
-      1.
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 AgentGuide AI Agent 核心概念速查 涉及agent领域的核心技术议题。

@@ -5,16 +5,6 @@
 > 📊 Level ⭐ | 4.9KB | `entities/agent-orchestration.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent orchestration"))
-    深度分析
-    实践启示
-    关联阅读
-```
-
 ## 核心要点
 - **控制平面缺失是 Agent 网络失效的根本原因**：状态丢失、人为审批缺失、单点故障导致静默级联失败
 - **AWS Step Functions** 提供确定性工作流编排，支持状态管理、重试逻辑、分支与并行执行

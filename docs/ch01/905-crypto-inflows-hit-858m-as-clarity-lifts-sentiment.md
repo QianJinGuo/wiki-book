@@ -11,16 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("Crypto Inflows Hit $858M as …"))
-    Summary
-    Key Points
-    Related
-    相关实体
-    深度分析
-      资金流向结构与市场情绪
-      宏观驱动因素：CLARITY Act 与监管情绪
-      盘中见利情绪与杠杆平仓
-    实践启示
+  root(("Crypto Inflows Hit 858M as"))
+    资金流向结构与市场情绪
+    宏观驱动因素 CLARITY Act 与监管情绪
+    盘中见利情绪与杠杆平仓
 ```
 
 ## Summary

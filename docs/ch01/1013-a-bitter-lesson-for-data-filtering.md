@@ -5,17 +5,6 @@
 > 📊 Level ⭐⭐ | 4.3KB | `entities/a-bitter-lesson-for-data-filtering-e8807d.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("A Bitter Lesson for Data Fil…"))
-    标签
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 
 Academic paper with novel empirical finding that large models benefit from unfiltered data. Unique insight challenging common data filtering assumptions in ML. Abstract provides direction; full paper needed for complete assessment.

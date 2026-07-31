@@ -9,22 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("AgentScope Java Harness Fram…"))
-    核心定位
+  root(("AgentScope Java Harness Framework"))
     两大核心支柱
-      支柱一：Workspace 工作区
-      支柱二：AbstractFilesystem 抽象
+      支柱一 Workspace 工作区
+      支柱二 AbstractFilesystem 抽象
     与 vault 知识关联
-    相关实体
-    深度分析
-      在 Harness 工程体系中的坐标
-      AbstractFilesystem 的工程价值
-      双层记忆机制的成熟度
-      企业分布式场景的三个核心挑战
-    实践启示
-      选型建议
-      落地检查清单
-      当前局限性
+    在 Harness 工程体系中的坐标
+    AbstractFilesystem 的工程价值
+    双层记忆机制的成熟度
+    企业分布式场景的三个核心挑战
+    选型建议
+    落地检查清单
 ```
 
 ## 核心定位

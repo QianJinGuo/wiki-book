@@ -13,13 +13,13 @@
 
 ```mermaid
 mindmap
-  root(("阿里云 Agent Native Cloud — Inf…"))
-    Three-Layer Architectur…
+  root(("阿里云 Agent Native Cloud"))
+    Three-Layer Architecture Infra -
       Agent Infra
       Agent Platform
       Agent Desktop
     Key Platform Products
-    The Five Dimensions of …
+    The Five Dimensions of Agent Native
     Dogfooding Results
 ```
 

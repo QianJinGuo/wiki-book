@@ -13,26 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("OpenClaw + Amazon Bedrock + …"))
-    核心内容
-    **1、前言**
-    **2、业务背景与客户痛点**
-      2.1 客户场景介绍
-      2.2 核心痛点分析
-      2.3 技术方案选型
-    **3、系统架构详细设计**
-    深度分析
-      3.1 Skill vs RAG vs Fin…
-      3.2 VPC Endpoint SG 动态性陷阱
-      3.3 Skill 注册与召回的上下文盲区
-      3.4 版本锁定与容器化 Agent 运维纪律
-    实践启示
-      4.1 VPC Endpoint SG 必须覆…
-      4.2 生产环境必须用 IRSA 而非 Lon…
-      4.3 Skill 安装后必须同步到 AGEN…
-      4.4 生产部署必须固定 OpenClaw 版…
-    参考来源
-    相关实体
+  root(("OpenClaw Amazon Bedrock Amazon"))
+    前言
+    业务背景与客户痛点
+      客户场景介绍
+      核心痛点分析
+      技术方案选型
+    系统架构详细设计
+    Skill vs RAG vs Fine-tune 方法论边界
+    VPC Endpoint SG 动态性陷阱
+    Skill 注册与召回的上下文盲区
+    版本锁定与容器化 Agent 运维纪律
+    VPC Endpoint SG 必须覆盖整个 VPC CIDR
 ```
 
 ## 核心内容

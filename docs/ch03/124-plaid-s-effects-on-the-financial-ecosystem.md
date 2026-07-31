@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 5.1KB | `entities/plaid-effects.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Plaid's Effects on the Finan…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 核心要点
 - Plaid 主办的年度金融科技峰会，聚焦 AI 与金融服务的融合
 - 2026 年主题：智能金融（Intelligent Finance），围绕 AI 在信用风险、反欺诈、支付创新中的应用

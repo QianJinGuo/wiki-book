@@ -14,21 +14,17 @@
 
 ```mermaid
 mindmap
-  root(("Coze 3.0 本地 Agent 项目编排"))
-    coze-bridge：本地 Agent 接入
+  root(("Coze 30 本地 Agent 项目编排"))
+    coze-bridge 本地 Agent 接入
     项目内多 Agent 接力
-      实测流水线：AI4S 研究项目（6 Agent）
+      实测流水线 AI4S 研究项目 6 Agent
       行业技能包
     跨设备远程操控
     两种路径对比
     尚未完善
-    深度分析
-      1. 云端与本地 Agent 混合架构的意义
-      2. '@点名'人机协作范式 vs 脚本编排
-      3. 上下文连续性：消除窗口切换的体验红利
-      4. 模糊指令处理与本地文件系统的耦合
-    实践启示
-    相关实体
+    云端与本地 Agent 混合架构的意义
+    点名人机协作范式 vs 脚本编排
+    上下文连续性 消除窗口切换的体验红利
 ```
 
 ## coze-bridge：本地 Agent 接入

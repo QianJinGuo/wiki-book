@@ -5,16 +5,6 @@
 > 📊 Level ⭐⭐ | 6.5KB | `entities/拿下1亿美元种子轮SGLang团队创立RadixArk打造下一代开放AI基础设施.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("拿下1亿美元种子轮sglang团队创立radixark打…"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 **1. SGLang 的 Day-0 支持能力是推理引擎竞争的核心壁垒**

@@ -11,19 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("AWS Network Firewall 规则冲突 AI…"))
-    概述
-    深度分析
-      1. '代码负责发现冲突，AI 负责解释冲突'…
-      2. STRICT_ORDER 语义理解是 A…
-      3. 端到端事件驱动架构 + CloudFor…
-      4. 多维冲突检测覆盖了 Suricata /…
-    实践启示
-      1. 用 CloudTrail + Event…
-      2. 让 LLM 做语义判断，让代码做确定性计算
-      3. STRICT_ORDER / 优先级语义…
-      4. Serverless + 按需计费是中小…
-    相关实体
+  root(("AWS Network Firewall 规则冲突 AI"))
+    代码负责发现冲突 AI 负责解释冲突 是核心设计原则
+    STRICTORDER 语义理解是 AI 集成中最关键的一环
+    端到端事件驱动架构 CloudFormation 一键部署是工程化亮点
+    多维冲突检测覆盖了 Suricata IP ACL Domain
+    用 CloudTrail EventBridge Lambda
+    让 LLM 做语义判断 让代码做确定性计算
+    STRICTORDER 优先级语义必须显式教给 LLM
+    Serverless 按需计费是中小规模运维工具的最佳架构
 ```
 
 ## 概述

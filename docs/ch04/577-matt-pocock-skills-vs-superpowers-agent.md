@@ -17,12 +17,12 @@
 
 ```mermaid
 mindmap
-  root(("Matt Pocock Skills vs Superp…"))
+  root(("Matt Pocock Skills vs Superpowers"))
     核心哲学对比
     工程流水线
     三个精巧设计
     量化对比
-    四大支柱框架（源码深度解析）
+    四大支柱框架 源码深度解析
     Writing-Great-Skills 元方法论
 ```
 

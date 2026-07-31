@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Tokenomics: the 62.5-minute …"))
-    核心结论
-    深度分析
-      1. 定价结构的数学本质
-      2. 缓存刷新的经济学含义
-      3. 美元金额的规模敏感性
-      4. Compaction（压缩）的成本收益分析
-    实践启示
-      1. 实现缓存计时器
-      2. 根据前缀规模选择策略
-      3. Compaction 的触发条件
-      4. Opus 4.7 迁移检查清单
+  root(("Tokenomics the 625-minute rule"))
+    定价结构的数学本质
+    缓存刷新的经济学含义
+    美元金额的规模敏感性
+    Compaction 压缩 的成本收益分析
+    实现缓存计时器
+    根据前缀规模选择策略
+    Compaction 的触发条件
+    Opus 47 迁移检查清单
 ```
 
 ## 核心结论

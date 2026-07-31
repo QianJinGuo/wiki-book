@@ -11,13 +11,10 @@
 
 ```mermaid
 mindmap
-  root(("How Inscribe uses Amazon Bed…"))
-    深度分析
-      Agentic AI 为何更适合文档欺诈检测
-      多模型编排的经济学
-      基础设施架构的工程启示
-    实践启示
-    相关实体
+  root(("How Inscribe uses Amazon Bedrock"))
+    Agentic AI 为何更适合文档欺诈检测
+    多模型编排的经济学
+    基础设施架构的工程启示
 ```
 
 ## 摘要

@@ -15,23 +15,15 @@
 
 ```mermaid
 mindmap
-  root(("Headless Software：Agent 时代软件…"))
-    核心观点
-      Agent 能力三分法（Steven Sino…
-      软件粘性的本质
-      SAP 的业务逻辑壁垒
-      例外处理才是核心
-    深度分析
-      1. 从'为人设计'到'为机器设计'的范式转换
-      2. Agent 三分法的战略优先级翻转
-      3. 业务逻辑即护城河：SAP 案例的泛化意义
-      4. 软件粘性在 Agent 时代的重塑
-    实践启示
-      1. API-first 不是可选项，是 Ag…
-      2. Agent 设计需要优先考虑合规与权限
-      3. 不要低估非技术工作流的价值
-      4. 界面消失不代表 UX 消失
-    相关实体
+  root(("Headless Software Agent 时代软件界面何去何从"))
+    Agent 能力三分法 Steven Sinofsky
+    软件粘性的本质
+    SAP 的业务逻辑壁垒
+    例外处理才是核心
+    从为人设计到为机器设计的范式转换
+    Agent 三分法的战略优先级翻转
+    业务逻辑即护城河 SAP 案例的泛化意义
+    软件粘性在 Agent 时代的重塑
 ```
 
 ## 核心观点

@@ -10,20 +10,20 @@
 ```mermaid
 mindmap
   root(("GLM-5 Scaling Pain 推理复盘"))
-    概述
     三类异常现象
-    根因一：PD 分离架构下 KV Cache 竞态
+    根因一 PD 分离架构下 KV Cache 竞态
       问题机制
       修复方案
-    根因二：HiCache 加载时序缺失
+    根因二 HiCache 加载时序缺失
       问题机制
       修复方案
-    优化：LayerSplit KV Cache …
+    优化 LayerSplit KV Cache 分层存储
       核心思路
       效果
     关键工程洞察
-    相关链接
     相关页面
+    PD 分离架构的根本矛盾
+    投机采样指标的双重用途
 ```
 
 ## 概述

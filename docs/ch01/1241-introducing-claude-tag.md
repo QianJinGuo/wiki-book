@@ -14,21 +14,14 @@
 ```mermaid
 mindmap
   root(("Introducing Claude Tag"))
-    深度分析
-      Agent 协作模式的演进
-      与 Claude Cowork Task Bo…
-      65% 代码创建率的意义
-      对 Agent 基础设施的需求
-    实践启示
-      对企业 Agent 采用的建议
-      对 Agent 产品设计的启示
-      对 Agent 安全的考量
-    相关实体
-    第 2 来源 — 新智元报道：Claude T…
-    第 3 来源 — 架构师 JiaGouX 报道…
-      核心增量
-      与已有来源的衔接
-      关键独到判断
+    多人协作的 Agent 模式
+    上下文学习与积累
+    主动行为与异步工作
+    权限与安全模型
+    Agent 协作模式的演进
+    与 Claude Cowork Task Boundary 的关系
+    代码创建率的意义
+    对 Agent 基础设施的需求
 ```
 
 ## 摘要

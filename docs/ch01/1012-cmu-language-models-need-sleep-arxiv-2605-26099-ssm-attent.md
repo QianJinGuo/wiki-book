@@ -9,20 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CMU Language Models Need Sle…"))
-    深度分析
-      核心观点
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制 涉及agent领域的核心技术议题。

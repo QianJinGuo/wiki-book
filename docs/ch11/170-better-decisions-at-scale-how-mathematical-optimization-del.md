@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Better decisions at scale: H…"))
-    深度分析
-      数学优化 vs 机器学习：演绎 vs 归纳
-      四步优化框架的工程实践
-      关键案例深度解析
-      可复用解决方案的抽象
-    实践启示
-    相关实体
+  root(("Better decisions at scale How"))
+    数学优化 vs 机器学习 演绎 vs 归纳
+    四步优化框架的工程实践
+    关键案例深度解析
+    可复用解决方案的抽象
 ```
 
 ## 摘要

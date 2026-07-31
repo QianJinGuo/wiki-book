@@ -9,21 +9,17 @@
 
 ```mermaid
 mindmap
-  root(("Reference Board — Moodboard …"))
-    核心定位
+  root(("Reference Board Moodboard App for"))
     主要功能
-      无限画布（Infinite Canvas）
-      视觉搜索（Visual Search）
+      无限画布 Infinite Canvas
+      视觉搜索 Visual Search
       OCR 文字识别
-      自动组织（Automatic Organiza…
     跨设备体验
-      小组件（Widgets）
+      小组件 Widgets
       浏览器扩展
     定价与隐私
     与同类工具对比
     技术特性
-    相关实体
-    深度分析
 ```
 
 ## 核心定位

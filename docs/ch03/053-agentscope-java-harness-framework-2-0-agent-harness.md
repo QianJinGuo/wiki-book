@@ -9,13 +9,13 @@
 
 ```mermaid
 mindmap
-  root(("AgentScope Java Harness Fram…"))
-    背景：个人助手型 Agent 与企业级 Age…
-    AgentScope Java 1.1.0 四…
+  root(("AgentScope Java Harness Framework"))
+    背景 个人助手型 Agent 与企业级 Agent 是两种工程形态
+    AgentScope Java 110 四项核心能力
     架构总览
-    核心支柱一：Workspace 作为唯一事实来源
-      Workspace 与 OpenClaw 的本…
-    核心支柱二：AbstractFilesyste…
+    核心支柱一 Workspace 作为唯一事实来源
+      Workspace 与 OpenClaw 的本质区别
+    核心支柱二 AbstractFilesystem 统一抽象
       AbstractFilesystem 接口规范
       三种模式的注册策略
     三大工程能力

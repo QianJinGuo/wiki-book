@@ -7,22 +7,6 @@
 # Network Firewall 部署小指南 (六) 利用 Amazon Bedrock AI 实现Network Firewall规则冲突的实时检测与智能分析
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Network Firewall 部署小指南 (六) 利…"))
-    相关实体
-    深度分析
-      核心观点
-    **1\.
-      1.
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-```
-
 ## 相关实体
 
 ```mermaid

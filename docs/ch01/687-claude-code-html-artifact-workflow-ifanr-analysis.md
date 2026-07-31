@@ -13,14 +13,15 @@
 
 ```mermaid
 mindmap
-  root(("Claude Code HTML Artifact Wo…"))
-    深度分析
-      '人审 Agent'的带宽问题
-      从'格式偏好'到'工作流基础设施'
-      最该使用 HTML artifact 的场景
-      可直接使用的 Prompt 模板
-    实践启示
-    相关实体
+  root(("Claude Code HTML Artifact"))
+    Markdown 的天花板
+    HTML 的价值 把线性输出变成可导航工作界面
+    Artifact 循环工作流
+    Claude Code 的上下文优势
+    人审 Agent的带宽问题
+    从格式偏好到工作流基础设施
+    最该使用 HTML artifact 的场景
+    可直接使用的 Prompt 模板
 ```
 
 ## 摘要

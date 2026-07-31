@@ -11,19 +11,19 @@
 
 ```mermaid
 mindmap
-  root(("Hermes Agent Skill 互优化：Skill…"))
-    一句话
+  root(("Hermes Agent Skill 互优化"))
     三个主角
-      1. Darwin-skill — AI 的'…
-      2. SkillEvolver — AI 的'…
-      3. EmbodiSkill — '裁判'
+      Darwin-skill AI 的质检员
+      SkillEvolver AI 的进化器
+      EmbodiSkill 裁判
     互优化 4 轮迭代过程
-      准备：双向注入核心机制
-    大发现：AI 不需要更强的模型
+      准备 双向注入核心机制
+    大发现 AI 不需要更强的模型
     工程化参数与最佳实践
     核心金句
-    与已有实体的关系
     概念对比
+    终极断言
+    与 GEPA optimizeanything 的关联
 ```
 
 ## 一句话

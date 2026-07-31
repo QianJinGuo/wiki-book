@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("AnySearch — Agent专用搜索引擎，登顶Pr…"))
-    深度分析
-      Agent 时代搜索的'重新定义'
-      与传统 AI 搜索的本质差异
-      三大排序算法的工程智慧
-      Agent 原生设计的工程落地
-    实践启示
-    相关实体
+  root(("AnySearch Agent专用搜索引擎 登顶Product Hunt"))
+    Agent 时代搜索的重新定义
+    与传统 AI 搜索的本质差异
+    三大排序算法的工程智慧
+    Agent 原生设计的工程落地
 ```
 
 ## 摘要

@@ -9,8 +9,7 @@
 
 ```mermaid
 mindmap
-  root(("Openclaw Multi Agent Team Pr…"))
-    核心观点
+  root(("Openclaw Multi Agent Team"))
     为什么不做全能 Agent
       上下文污染
       技能冲突
@@ -22,15 +21,15 @@ mindmap
       人设文件体系
       记忆系统
     多 Agent 配置三要素
-      1. 工作环境隔离
-      2. 路由规则
-      3. 通信机制
+      工作环境隔离
+      路由规则
+      通信机制
     各专精 Agent 详解
       花园生图助手
       花园资讯助手
       花园投资助手
-      花园开发助手
     多智能体协作示例
+    相关资源
 ```
 
 ## 核心观点

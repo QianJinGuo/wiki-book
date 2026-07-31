@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("How Claude Code works in lar…"))
-    相关实体
-    深度分析
-      RAG vs Agentic Search的本…
-      Harness 的五层扩展点模型
-      三种配置模式的应用边界
-      Subagents 的设计模式
-    实践启示
-      第一步：建立 CLAUDE.md 层级
-      第二步：评估 LSP 需求
-      第三步：设计 Hook 反馈循环
-      第四步：建立 Skills 的 Progres…
+  root(("How Claude Code works in large"))
+    RAG vs Agentic Search的本质差异
+    Harness 的五层扩展点模型
+    三种配置模式的应用边界
+    Subagents 的设计模式
+    第一步 建立 CLAUDEmd 层级
+    第二步 评估 LSP 需求
+    第三步 设计 Hook 反馈循环
+    第四步 建立 Skills 的 Progressive
 ```
 
 ## 核心要点

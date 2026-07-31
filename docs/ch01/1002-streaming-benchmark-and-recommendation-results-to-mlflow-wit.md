@@ -19,15 +19,6 @@ In this post, you learn how to use the new MLflow integration with [Amazon SageM
 This integration streams metrics, parameters, and charts into your serverless [Amazon SageMaker MLflow App](<https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-app-setup.html>) in real time and you get a unified experiment tracking experience.
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Streaming benchmark and reco…"))
-    Solution overview
-    Benefits of this implem…
-```
-
 ## Solution overview
 
 With this release, when you submit an optimized inference recommendation job or a benchmarking job, Amazon SageMaker AI automatically streams results into a SageMaker MLflow app of your choice. Submit multiple jobs to the same MLflow experiment, and you can select them in the MLflow experiment view to compare side by side, with no manual data wrangling required.

@@ -5,17 +5,6 @@
 > 📊 Level ⭐ | 5.0KB | `entities/qoder-1-0-release-ai-ide-agent-workbench.md`
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Qoder 1.0正式发布！从AI IDE迈向智能体自主…"))
-    相关实体
-    深度分析
-    实践启示
-    关联阅读
-```
-
 ## 核心要点
 -
 ## 相关实体

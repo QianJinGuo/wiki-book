@@ -9,28 +9,18 @@
 
 ```mermaid
 mindmap
-  root(("Memory in the LLM Era: Modul…"))
-    概述
-      论文信息
+  root(("Memory in the LLM Era Modular"))
+    论文信息
     背景问题
-    核心贡献：四组件统一框架
-      1. Information Extracti…
-      2. Memory Management（记忆…
-      3. Memory Storage（记忆存储）
-      4. Information Retrieva…
+    核心贡献 四组件统一框架
+      Information Extraction 信息提取
+      Memory Management 记忆管理
+      Memory Storage 记忆存储
     实验设计与评估
-    关键发现
-      1. 层次化方法显著领先
-      2. 粗粒度处理降低 Token 消耗
-      3. 上下文扩展脆弱性
-      4. 证据位置敏感性
-    新 SOTA 算法：lme-sota
-    框架本质：治理分工而非功能切分
-    深度分析
-      1. 四组件框架的理论意义：从功能分解到信息生…
-      2. 层次化优于扁平化的深层原因：认知负荷的工…
-      3. 上下文窗口扩展的失败揭示的根本性限制
-      4. Extraction 策略的选择决定系统…
+    层次化方法显著领先
+    粗粒度处理降低 Token 消耗
+    上下文扩展脆弱性
+    证据位置敏感性
 ```
 
 ## 概述

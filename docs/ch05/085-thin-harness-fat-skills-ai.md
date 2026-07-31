@@ -9,15 +9,12 @@
 
 ```mermaid
 mindmap
-  root(("Thin Harness, Fat Skills：AI工…"))
-    核心理念：Latent vs Determin…
-    Thin Harness, Fat Skill…
-      Fat Skills（Markdown 技能文件）
-      Fat Code（确定性逻辑）
-      Thin Harness（~200行轻量框架）
-    深度分析
-    实践启示
-    相关实体
+  root(("Thin Harness Fat Skills AI工程架构的本质"))
+    核心理念 Latent vs Deterministic 空间分离
+    Thin Harness Fat Skills 架构
+      Fat Skills Markdown 技能文件
+      Fat Code 确定性逻辑
+      Thin Harness 200行轻量框架
 ```
 
 ## 核心理念：Latent vs Deterministic 空间分离

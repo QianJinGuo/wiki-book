@@ -9,21 +9,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-autoresearch-software-development-niaowo.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我把 Karpathy 的 AutoResearch 搬…"))
-    深度分析
-      核心观点
-    02 什么是 Karpathy AutoRes…
-      内容结构
-      技术要点
-      关联实体
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 
 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了 涉及agent领域的核心技术议题。

@@ -33,13 +33,10 @@ Cohere 于2026-06-09 发布 North Mini Code（`North-Mini-Code-1.0`），是公�
 
 ```mermaid
 mindmap
-  root(("Cohere North Mini Code -30B …"))
+  root(("Cohere North Mini Code -30B MoE"))
     Agentic 工作流能力
-    三件独特贡献（与同 size 开源 codin…
+    三件独特贡献 与同 size 开源 coding 模型差异
     对标对比
-    深度分析
-    实践启示
-    来源
 ```
 
 ## Agentic 工作流能力

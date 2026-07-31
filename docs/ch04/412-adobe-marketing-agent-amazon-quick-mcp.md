@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("Adobe Marketing Agent 与 Amaz…"))
-    深度分析
-      架构设计
-      五大营销工具详解
-      配置流程实战
-      安全与治理要点
-    实践启示
-    相关实体
+  root(("Adobe Marketing Agent 与 Amazon"))
+    架构设计
+    五大营销工具详解
+    配置流程实战
+    安全与治理要点
 ```
 
 ## 摘要

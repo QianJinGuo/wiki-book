@@ -15,10 +15,7 @@
 mindmap
   root(("The Oracle and the Firm"))
     内容提炼
-    OpenAI: the oracle
-    关键洞察
-    实践启示
-    相关实体
+    OpenAI the oracle
 ```
 
 ## 核心要点

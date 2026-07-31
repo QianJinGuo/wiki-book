@@ -13,12 +13,12 @@ xHC (Expanded Hyper-Connections) is a neural architecture that extends `DeepSeek
 
 ```mermaid
 mindmap
-  root(("xHC: Expanded Hyper-Connecti…"))
+  root(("xHC Expanded Hyper-Connections"))
     Motivation
     Key Design
-      Dense Read, Sparse Update
-      Multi-Scale Temporal Fe…
-      Extensibility Beyond 4 …
+      Dense Read Sparse Update
+      Multi-Scale Temporal Feature
+      Extensibility Beyond 4 Streams
     Results
 ```
 

@@ -11,19 +11,15 @@
 
 ```mermaid
 mindmap
-  root(("在 Amazon EKS 上使用 NVIDIA GPU …"))
-    三个独有贡献（不应合并到现有 entity）
-    相关实体
-    深度分析
-      1. 核心问题：平台团队的 GPU 运维边界不清
-      2. GPU Operator 的本质：在 h…
-      3. 关键踩坑：driver 兼容性不只是 C…
-      4. 节点组架构：managed vs sel…
+  root(("在 Amazon EKS 上使用 NVIDIA GPU"))
+    三个独有贡献 不应合并到现有 entity
+    核心问题 平台团队的 GPU 运维边界不清
+    GPU Operator 的本质 在 host 节点上安装 driver
+    关键踩坑 driver 兼容性不只是 CUDA 兼容矩阵
+    节点组架构 managed vs self-managed
     生产推荐组合
-    实践路径（6 步）
+    实践路径 6 步
     关键结论表
-    与现有相关实体的差异化
-    相关主题
 ```
 
 ## 三个独有贡献（不应合并到现有 entity）

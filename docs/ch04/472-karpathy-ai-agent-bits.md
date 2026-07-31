@@ -17,17 +17,13 @@
 
 ```mermaid
 mindmap
-  root(("Karpathy AI Agent（七）：bits 与程…"))
+  root(("Karpathy AI Agent 七 bits 与程序员价值"))
     概要
     核心框架
       价值解耦
       价值下降的技能
       价值上升的技能
-      隐含的第五维度：沟通能力
     相关篇章
-    深度分析
-    实践启示
-    相关实体
 ```
 
 ## 概要

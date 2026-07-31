@@ -9,18 +9,15 @@
 
 ```mermaid
 mindmap
-  root(("Introducing Composer 2.5"))
-    深度分析
-      1. Targeted RL with Tex…
-      2. 合成数据与 Reward Hacking…
-      3. Sharded Muon + Dual …
-      4. 'Same intelligence, …
-    实践启示
-      1. RL 训练中的局部信用分配是关键工程问题
-      2. 合成数据需要配套的 Reward Hac…
-      3. 分布式训练中的'分离策略'设计原则
-      4. Effort Calibration 是…
-    相关实体
+  root(("Introducing Composer 25"))
+    Targeted RL with Textual Feedback
+    合成数据与 Reward Hacking 的猫鼠游戏
+    Sharded Muon Dual Mesh HSDP
+    Same intelligence faster
+    RL 训练中的局部信用分配是关键工程问题
+    合成数据需要配套的 Reward Hacking 检测机制
+    分布式训练中的分离策略设计原则
+    Effort Calibration 是生产级 AI Agent
 ```
 
 ## 核心要点

@@ -41,15 +41,15 @@ graph TB
 
 ```mermaid
 mindmap
-  root(("万字干货！Harness Engineering如何工程…"))
-    核心结论
+  root(("万字干货 Harness Engineering如何工程化落地"))
     六大核心概念
-    Rule（软约束工程规矩）
-    Skill（标准操作手册）
-    Sub Agent（多角色分工）
-    Workflow（接力赛规则）
-    Scripts（最硬门禁）
-    MCP（外接能力接口）
+    Rule 软约束工程规矩
+    Skill 标准操作手册
+    Sub Agent 多角色分工
+    Workflow 接力赛规则
+    Scripts 最硬门禁
+    MCP 外接能力接口
+    六层串联
 ```
 
 ## 核心结论

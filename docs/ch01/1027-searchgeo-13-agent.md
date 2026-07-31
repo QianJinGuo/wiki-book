@@ -13,12 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("SearchGEO：13个大模型检索Agent可信度评测"))
+  root(("SearchGEO 13个大模型检索Agent可信度评测"))
     研究动机
     SearchGEO 评测框架
       攻击分层
     关键实验结果
-      关键发现
     安全启示
 ```
 

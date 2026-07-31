@@ -10,16 +10,16 @@
 ```mermaid
 mindmap
   root(("Harness Engineering 系统梳理"))
-    概述
-    Prompt / Context / Harn…
-    量化证据：1.6% AI 决策 vs 98.4…
+    Prompt Context Harness 三层区分
+    量化证据 16 AI 决策 vs 984 工程基础设施
       OpenAI Frontier 团队的极限实验
       Stripe Minions
-    Harness 不是 AGENTS.md
+    Harness 不是 AGENTSmd
     七环节控制回路
     渐进披露原则
-    Generator / Evaluator 模式
+    Generator Evaluator 模式
     核心动作
+    相关
 ```
 
 ## 概述

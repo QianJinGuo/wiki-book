@@ -11,11 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("Harness Engineering 实践指南：10 …"))
+  root(("Harness Engineering 实践指南 10 步路线图"))
     核心定义
-    10 步从零构建 Harness
-    8 种常见失败模式速查表
-    Harness 设计 Checklist（5 …
+    步从零构建 Harness
+    种常见失败模式速查表
+    Harness 设计 Checklist 5 大类 18 项
     三个新技能
     三个趋势
     系列三件最重要的事

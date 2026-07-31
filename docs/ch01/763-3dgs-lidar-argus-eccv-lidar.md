@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("谁说3DGS必须靠LiDAR？如视Argus入选ECCV…"))
-    深度分析
-      1. 3DGS 的位姿瓶颈与 Argus 的解…
-      2. 精度对比分析
-      3. '设备驱动→模型驱动'的范式转变
-      4. 对 3DGS 产品化路径的影响
-    实践启示
-    相关实体
+  root(("谁说3DGS必须靠LiDAR 如视Argus入选ECCV"))
+    3DGS 的位姿瓶颈与 Argus 的解决方案
+    精度对比分析
+    设备驱动模型驱动的范式转变
+    对 3DGS 产品化路径的影响
 ```
 
 ## 摘要

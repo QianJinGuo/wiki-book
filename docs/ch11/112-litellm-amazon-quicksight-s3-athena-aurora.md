@@ -13,21 +13,18 @@
 
 ```mermaid
 mindmap
-  root(("LiteLLM + Amazon QuickSight …"))
+  root(("LiteLLM Amazon QuickSight 数据可视化配置"))
     数据源选型决策树
     三层数据源架构
-      路径 1：S3 + Athena（解耦方案）
-      路径 2：Aurora PostgreSQL（…
-      路径 3：混合（生产推荐）
+      路径 1 S3 Athena 解耦方案
+      路径 2 Aurora PostgreSQL 内嵌方案
+      路径 3 混合 生产推荐
     QuickSight 配置 5 步
     安全最佳实践
-    深度分析
-      跨工具数据建模的权衡
-      QuickSight SPICE 引擎 vs …
-      IAM 数据库认证与 VPC 私有连接的隐性复杂度
-      多源 JOIN 是成本归因的基础
-    实践启示
-    关键引用清单
+    跨工具数据建模的权衡
+    QuickSight SPICE 引擎 vs 实时直查的权衡
+    IAM 数据库认证与 VPC 私有连接的隐性复杂度
+    多源 JOIN 是成本归因的基础
 ```
 
 ## 数据源选型决策树

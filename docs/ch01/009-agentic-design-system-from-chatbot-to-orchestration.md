@@ -7,16 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-design-system-from-chatbot-to-orchestration.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agentic Design System - From…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](../ch04/049-nvidia-extreme-co-design-agentic-systems.html)
 - [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/237-agentic.html)

@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("ModelExpress: Distributing M…"))
-    深度分析
-      冷启动瓶颈的重新定义
-      三层优化栈
-      与推理框架的关系
-    实践启示
-    相关实体
+  root(("ModelExpress Distributing Model"))
+    冷启动瓶颈的重新定义
+    三层优化栈
+    与推理框架的关系
 ```
 
 ## 摘要

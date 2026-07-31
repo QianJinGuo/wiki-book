@@ -12,16 +12,6 @@
 - **GPT-Realtime-Whisper**：流式转写
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Openai GPT Realtime Voice Mo…"))
-    相关实体
-    深度分析
-    实践启示
-```
-
 ## 相关实体
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/151-build-live-translation-apps-with-gpt-realtime-translate.html)
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/390-openai.html)

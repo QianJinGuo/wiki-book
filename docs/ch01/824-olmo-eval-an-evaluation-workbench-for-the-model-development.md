@@ -13,13 +13,10 @@
 
 ```mermaid
 mindmap
-  root(("olmo-eval: An evaluation wor…"))
-    深度分析
-      评估工具的定位差异
-      对开源模型生态的影响
-      与 OLMES 的关系
-    实践启示
-    相关实体
+  root(("olmo-eval An evaluation workbench"))
+    评估工具的定位差异
+    对开源模型生态的影响
+    与 OLMES 的关系
 ```
 
 ## 摘要

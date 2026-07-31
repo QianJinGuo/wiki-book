@@ -13,14 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Yum Brands' tech chief on bu…"))
-    深度分析
-      Byte by Yum 平台架构
-      技术供应商多元化
-      ROI 评估方法
-      战略定位：AI 是工具而非目的
-    实践启示
-    相关实体
+  root(("Yum Brands tech chief on building"))
+    数字化转型规模
+    统一数据模型 企业级 AI 的基础设施
+    AI 战略三维度框架
+    Byte by Yum 平台架构
+    技术供应商多元化
+    ROI 评估方法
+    战略定位 AI 是工具而非目的
 ```
 
 ## 摘要

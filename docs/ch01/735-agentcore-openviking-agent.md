@@ -13,14 +13,11 @@
 
 ```mermaid
 mindmap
-  root(("如何利用 AgentCore + OpenViking …"))
-    深度分析
-      1. Agent 记忆系统的核心矛盾与解决思路
-      2. AgentCore Memory 与 O…
-      3. 两种集成方案的适用场景
-      4. 记忆系统选型的四个决策维度
-    实践启示
-    相关实体
+  root(("如何利用 AgentCore OpenViking"))
+    Agent 记忆系统的核心矛盾与解决思路
+    AgentCore Memory 与 OpenViking
+    两种集成方案的适用场景
+    记忆系统选型的四个决策维度
 ```
 
 ## 摘要

@@ -11,14 +11,11 @@
 
 ```mermaid
 mindmap
-  root(("How OpenAI Delivers Low-Late…"))
-    深度分析
-      WebRTC 与 Kubernetes 的固有矛盾
-      ICE ufrag 路由的巧妙之处
-      用户态 Go 的性能之道
-      架构的局限性
-    实践启示
-    相关实体
+  root(("How OpenAI Delivers Low-Latency"))
+    WebRTC 与 Kubernetes 的固有矛盾
+    ICE ufrag 路由的巧妙之处
+    用户态 Go 的性能之道
+    架构的局限性
 ```
 
 ## 摘要

@@ -15,16 +15,16 @@
 
 ```mermaid
 mindmap
-  root(("Agent Harness Skill 系统实战指南 —…"))
+  root(("Agent Harness Skill 系统实战指南"))
     Skill 的本质
-    两种类型：Reference vs Action
-    动态上下文注入：! 反引号语法
+    两种类型 Reference vs Action
+    动态上下文注入 反引号语法
       PR Summary Skill 示例
     Pull request context
     Your task
     Frontmatter 字段参考
       三组关键开关
-    $ARGUMENTS 占位符
+    ARGUMENTS 占位符
     Skill 目录结构
 ```
 

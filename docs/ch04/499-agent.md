@@ -10,16 +10,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-时代我们架构师应该学什么.md)
 
 
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 时代，我们架构师应该学什么？"))
-    深度分析
-    实践启示
-    关联阅读
-```
-
 ## 深度分析
 
 **1. 筛选能力比学习路线图更耐用**

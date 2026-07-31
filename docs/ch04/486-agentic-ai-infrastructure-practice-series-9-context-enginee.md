@@ -13,13 +13,14 @@
 
 ```mermaid
 mindmap
-  root(("Agentic AI Infrastructure Pr…"))
-    深度分析
-      上下文工程 ≠ RAG 的升级
-      AWS 的解决方案框架
-      对 Agent 架构的启示
-    实践启示
-    相关实体
+  root(("Agentic AI Infrastructure"))
+    从聊天到 Agent 上下文的质变
+    上下文增长的量级
+    四大核心挑战
+    性能衰减的隐性陷阱
+    上下文工程 RAG 的升级
+    AWS 的解决方案框架
+    对 Agent 架构的启示
 ```
 
 ## 摘要
