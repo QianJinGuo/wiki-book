@@ -17,6 +17,40 @@
 
 ---
 
+## 架构图
+
+```mermaid
+graph TB
+    subgraph "多 Agent 协作模式"
+        S[Single Agent<br/>单体] --> O[Orchestrator<br/>编排者]
+        O --> T[Team<br/>团队协作]
+        T --> SW[Swarm<br/>群体智能]
+    end
+    subgraph "通信协议"
+        A2A[Agent-to-Agent<br/>Google A2A]
+        MPC[MCP<br/>工具调用]
+        MSG[Message Queue<br/>异步消息]
+    end
+    O & T --> A2A
+    T & SW --> MPC
+    SW --> MSG
+    subgraph "典型架构"
+        Claude[Claude Code<br/>Dynamic Workflows]
+        OpenClaw[OpenClaw<br/>多 Agent 团队]
+        AgentRun[AgentRun<br/>A2A 协议]
+    end
+    O --> Claude
+    T --> OpenClaw
+    SW --> AgentRun
+    classDef mode fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef proto fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef arch fill:#d1fae5,stroke:#059669,color:#064e3b
+    class S,O,T,SW mode
+    class A2A,MPC,MSG proto
+    class Claude,OpenClaw,AgentRun arch
+```
+
+
 ## 导读
 
 一个 Agent 能完成简单任务，但复杂任务需要团队。

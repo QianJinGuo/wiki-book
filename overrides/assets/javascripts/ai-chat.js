@@ -103,13 +103,14 @@
             var line = lines[i].trim();
             if (!line || line === "data: [DONE]") continue;
             if (!line.startsWith("data: ")) continue;
-            try {
-              var data = JSON.parse(line.substring(6));
-              var delta = data.choices && data.choices[0] && data.choices[0].delta;
-              if (delta && delta.content) {
-                fullText += delta.content;
-                onChunk(fullText);
-              }
+           try {
+             var data = JSON.parse(line.substring(6));
+             var delta = data.choices && data.choices[0] && data.choices[0].delta;
+             if (delta && (delta.content || delta.reasoning_content)) {
+               if (delta.content) fullText += delta.content;
+               if (delta.reasoning_content) fullText += delta.reasoning_content;
+               onChunk(fullText);
+             }
             } catch(e) {}
           }
           return read();
