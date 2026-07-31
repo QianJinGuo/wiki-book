@@ -253,8 +253,8 @@ Claude-Opus-4.7 在通用基准上顶级但在空间领域表现最差，DeepSee
 高德在原生 ReAct 基础上增加了：轮数硬上限、格式异常熔断、幻觉循环检测、信息增量检测。这些保护机制确保 ReAct 循环不会在异常情况下失控。实现 ReAct 时，判停机制的设计优先级应该高于推理循环本身。
 
 ## 相关实体
-- [Claude Code Tool Design Evolution Anthropic](../ch03/077-claude-code.html)
-- [Claude Code Memory Setup Token 71X楠楠自瑜](../ch03/077-claude-code.html)
+- [Claude Code Tool Design Evolution Anthropic](../ch03/078-claude-code.html)
+- [Claude Code Memory Setup Token 71X楠楠自瑜](../ch03/078-claude-code.html)
 - [Codex Goal Implementation Breakdown](../ch09/046-codex-goal.html)
 - [Elf Embedded Language Flows Hekaiming 105M](../ch01/1259-elf-embedded-language-flows.html)
 - [2026 05 06 2201](../ch01/913-20.html)

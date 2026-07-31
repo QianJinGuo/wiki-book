@@ -10,8 +10,8 @@
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Skill System Design Three Way Comparison](../ch04/271-skill.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.html)
-- [Claude Code Skill Writing Guide](../ch03/077-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Claude Code Skill Writing Guide](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 

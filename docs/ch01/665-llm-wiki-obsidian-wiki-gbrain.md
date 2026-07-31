@@ -15,8 +15,8 @@
 ## 相关实体
 - [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)
-- [Hermes Agent Deep Dive Alibaba](../ch03/095-hermes-agent.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
+- [Hermes Agent Deep Dive Alibaba](../ch03/096-hermes-agent.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 - [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)

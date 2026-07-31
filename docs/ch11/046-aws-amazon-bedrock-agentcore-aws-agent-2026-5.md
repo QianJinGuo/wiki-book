@@ -63,12 +63,12 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/235-openclaw.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/270-aws-bedrock-agentcore.html)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/294-amazon-bedrock.html)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/295-amazon-bedrock.html)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/009-aws-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/058-amazon-bedrock-claude-prompt-cache.html)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/294-amazon-bedrock.html)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/913-20.html)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/913-20.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/295-amazon-bedrock.html)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/913-20.html)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/913-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

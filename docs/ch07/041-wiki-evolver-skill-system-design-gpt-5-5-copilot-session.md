@@ -144,7 +144,7 @@ wiki-evolver 的 Knowledge Ladder 本质上是一个记忆系统的层次模型�
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wiki-evolver-skill-system-design-gpt55-copilot-session.md)
 

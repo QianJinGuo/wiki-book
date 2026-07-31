@@ -63,7 +63,7 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [Claude Code Harness Deep Understanding](../ch01/422-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/073-claude-code-harness.html)

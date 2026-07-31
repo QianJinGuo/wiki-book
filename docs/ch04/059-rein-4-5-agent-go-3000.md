@@ -230,7 +230,7 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 与现有 wiki 实体的关系
 
-### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](../ch03/077-claude-code.html)）
+### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](../ch03/078-claude-code.html)）
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
@@ -292,7 +292,7 @@ WithWorkingDir(cwd)            // 工作目录
 - **评估框架时关注流式等价性保证**：如果一个 provider 声称支持流式但无法保证 Stream() 和 Complete() 产出完全一致的 Message，这个 provider 就不满足 Rein 的 invariants。流式和非流式路径必须等价——这是 session 回放确定性的基础，也是你选型时最重要的技术指标之一 
 
 ## 相关对照
-- [Claude Code 20000 字符源码分析](../ch03/077-claude-code.html)
+- [Claude Code 20000 字符源码分析](../ch03/078-claude-code.html)
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html) —— 工作集视角
 - [wow-harness v3](../ch05/009-harness.html) —— 事件溯源 + 概念图
 - [PilotDeck](../ch03/035-agent.html) —— 白盒记忆

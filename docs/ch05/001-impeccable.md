@@ -103,7 +103,7 @@ npx impeccable detect --json .
 - [Agent Skill 编写指南](../ch04/269-agent-skill.html) —— 通用 skill 格式 + 渐进式披露
 - [Agent Harness 架构](ch05/058-agent-harness.html) —— 7 层 harness 模型
 - [Agent Skills 综合调研](../ch04/397-agent-skills.html) —— skill 系统全景
-- [Skills Refiner 设计质量评估框架](../ch03/071-skills.html)
+- [Skills Refiner 设计质量评估框架](../ch03/072-skills.html)
 - [Agentic Design System 演化](../ch01/009-agentic-design-system-from-chatbot-to-orchestration.html)
 
 ## 关键启示（harness 设计层面）

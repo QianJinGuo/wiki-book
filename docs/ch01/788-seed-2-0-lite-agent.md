@@ -15,8 +15,8 @@
 - [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/035-agent.html)
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
-- [Hermes Agent Newbie Guide Dotta](../ch03/095-hermes-agent.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
+- [Hermes Agent Newbie Guide Dotta](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
 

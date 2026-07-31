@@ -129,7 +129,7 @@ graph TB
 - **两层天花板**：Big Model 决定理论上限，Big Harness 决定实际达到的高度
 
 ## 与现有 Wiki 的关联
-与 [Hermes Agent Deep Dive](../ch03/095-hermes-agent.html) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
+与 [Hermes Agent Deep Dive](../ch03/096-hermes-agent.html) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
 与 [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
 与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
 与 [Agent Engineering Principles Architecture Practice](../ch03/035-agent.html) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
@@ -140,7 +140,7 @@ graph TB
 
 ## 相关实体
 - [foundation capital agent era six insights](ch04/186-foundation-capital-agent-era-six-insights.html)
-- [Hermes Agent 自进化机制源码解析](../ch03/095-hermes-agent.html)
+- [Hermes Agent 自进化机制源码解析](../ch03/096-hermes-agent.html)
 - [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/417-memento-skills-agent.html)
 - [AI Coding Agent 记忆系统](ch04/330-ai-coding-agent.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
@@ -150,11 +150,11 @@ graph TB
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
-- [hermes-agent-self-evolving-source-analysis](../ch03/095-hermes-agent.html)
+- [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Memory 架构解析](ch04/121-agent-memory.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)

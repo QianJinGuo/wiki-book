@@ -69,7 +69,7 @@ All API handlers must validate input with Zod before processing.
 
 上下文成本低——配置位于主上下文之外。PreToolUse hook 可以用退出码 2 拒绝工具调用。
 
-→ [Claude Code Hooks 完整指南](../ch03/077-claude-code.html)
+→ [Claude Code Hooks 完整指南](../ch03/078-claude-code.html)
 
 ## 输出风格：权重最高，谨慎使用
 
@@ -123,9 +123,9 @@ Claude Code 中，钩子是唯一能保证"确定性触发、确定性执行"的
 
 - 原文：https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
 - → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- → [Claude Code 治理：软规则与硬约束](../ch03/077-claude-code.html)
+- → [Claude Code 治理：软规则与硬约束](../ch03/078-claude-code.html)
 - → [Claude Code 子智能体上下文卫生](../ch04/173-claude-code-subagents.html)
-- → [Claude Code Hooks 完整指南](../ch03/077-claude-code.html)
+- → [Claude Code Hooks 完整指南](../ch03/078-claude-code.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
 ---

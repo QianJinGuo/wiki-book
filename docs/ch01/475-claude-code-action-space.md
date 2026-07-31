@@ -14,9 +14,9 @@
 ## 相关实体
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
 - [Claude Code Agent Teams Task Decomposition Ruofei](ch01/328-claude-code-agent-teams.html)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/077-claude-code.html)
-- [Claude Code Tool Design Evolution Anthropic](../ch03/077-claude-code.html)
-- [Claude Code Hackathon Winners 2026](../ch03/077-claude-code.html)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
+- [Claude Code Tool Design Evolution Anthropic](../ch03/078-claude-code.html)
+- [Claude Code Hackathon Winners 2026](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-core-developer-lessons-action-space-design.md)
 

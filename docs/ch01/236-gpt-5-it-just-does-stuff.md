@@ -145,7 +145,7 @@ Mollick 结尾那句 Premonition 特别值得抄下来：**「我们会搞清楚
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](ch01/738-chatgpt.html)

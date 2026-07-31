@@ -133,7 +133,7 @@ DeepSeek 把比赛维度换了：之前大家比的是「我的视觉模型能�
 ## 相关实体
 ## 相关实体
 - [Personavlm Personalized Memory](ch01/817-vlm.html)
-- [Bedrock Image Content Precise Analysis](../ch11/299-bedrock.html)
+- [Bedrock Image Content Precise Analysis](../ch11/300-bedrock.html)
 - [Redis之父下场给Deepseek V4单独造了一台推理引擎](ch01/1151-deepseek-v4.html)
 - [Ds4C Deepseek V4 Antirez](ch01/515-ds4c-deepseek-v4-antirez.html)
 - [Deepseek Moe Parallel Strategy](ch01/1091-deepseek.html)

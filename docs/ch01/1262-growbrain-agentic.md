@@ -59,7 +59,7 @@ GrowBrain 没有用一个 LLM 端到端解决所有问题，而是拆成三个�
 - **流量分配 Agent**：采用 CoT Distillation 策略，让大模型（数据分析师）学习规则定义的冷启分配策略，再蒸馏给轻量级模型（策略官）。策略框架全部内嵌于 prompt，修改指令即可实时调整策略
 - **流量诊断 Agent**：从召回、粗排、精排、混排、曝光日志构建全链路漏斗，将结构化数据直接写进推理链，实现逐层归因
 
-这种「职责分离 + 能力互补」的子 Agent 设计模式，与 [Marvis Multi-Agent 架构](../ch03/088-marvis.html) 中的多 Agent 分工协作理念高度一致，代表了生产级 Agent 系统的标准设计范式。
+这种「职责分离 + 能力互补」的子 Agent 设计模式，与 [Marvis Multi-Agent 架构](../ch03/089-marvis.html) 中的多 Agent 分工协作理念高度一致，代表了生产级 Agent 系统的标准设计范式。
 
 ### 双 Pipeline 的工程创新
 
@@ -77,7 +77,7 @@ SystemPipeline 和 ChatPipeline 共享同一套 Agent 矩阵和底层能力底�
 
 - [Agent 配置组合](../ch04/271-skill.html)
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
-- [Marvis 多智能体桌面助手](../ch03/088-marvis.html)
+- [Marvis 多智能体桌面助手](../ch03/089-marvis.html)
 - [AgentCore Trip Allocation](../ch04/689-agentcore-harness.html)
 - [Agent 评测方法论](../ch03/035-agent.html)
 - [Harness Engineering Survey 2026](../ch05/120-harness-engineering.html)

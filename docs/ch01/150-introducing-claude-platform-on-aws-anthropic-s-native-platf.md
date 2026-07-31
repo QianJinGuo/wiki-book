@@ -21,7 +21,7 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-platform-on-aws.md)
 
 - [Anthropic出手Ai的内心独白曝光了](ch01/989-anthropic.html)
-- [Claude Code Context Engineering Anthropic Thariq](../ch03/077-claude-code.html)
+- [Claude Code Context Engineering Anthropic Thariq](../ch03/078-claude-code.html)
 - [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](../ch05/018-ai-native.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

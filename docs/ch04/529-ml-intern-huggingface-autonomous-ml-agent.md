@@ -13,8 +13,8 @@
 ## 相关实体
 - [Anthropic Multi Agent Research System](ch04/576-anthropic-multi-agent-research-system.html)
 - [Deerflow Hermes Openclaw Comparison](ch04/494-deerflow-hermes-openclaw.html)
-- [Hermes Agent Getting Started Guide 2026](../ch03/095-hermes-agent.html)
-- [Hermes Agent Deep Dive Alibaba](../ch03/095-hermes-agent.html)
+- [Hermes Agent Getting Started Guide 2026](../ch03/096-hermes-agent.html)
+- [Hermes Agent Deep Dive Alibaba](../ch03/096-hermes-agent.html)
 - [Claude Opus 47](../ch01/976-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ml-intern-huggingface-autonomous-ml-agent.md)

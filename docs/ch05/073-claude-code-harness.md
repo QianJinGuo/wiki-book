@@ -31,7 +31,7 @@
 ## 相关实体
 - [Claude Code Harness Deep Understanding](../ch01/422-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](ch05/073-claude-code-harness.html)
-- [Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html)
+- [Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
 - [From Prompt To Harness Claude Official](ch05/009-harness.html)
 

@@ -105,7 +105,7 @@ Memory 和 Tool 的语义是事实性的——"这里有一段可复用代码"�
 
 ## 相关链接
 - [Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html)
-- [Hermes Agent Closed Learning Loop](../ch03/095-hermes-agent.html)
+- [Hermes Agent Closed Learning Loop](../ch03/096-hermes-agent.html)
 
 ## 实践启示
 ### 对 Harness 工程团队

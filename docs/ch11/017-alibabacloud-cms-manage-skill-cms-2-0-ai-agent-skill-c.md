@@ -175,7 +175,7 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md) — Hermes 装上显微镜的 ARMS 观测实践（**Hermes-specific**）。本实体是**通用 CMS 2.0 接入**（不绑定具体 Agent 框架），适用更广。
 - [Aliyun Agentrun](../ch04/003-agentrun.html) / [Aliyun Agentrun 5Min Quickstart](../ch04/003-agentrun.html) / [Aliyun Agentrun 2Line Integration](../ch04/003-agentrun.html) — **AgentRun** 是阿里云 AI Agent 运行时（运行 Agent 的平台）。**alibabacloud-cms-manage Skill 是观测接入工具**（为已部署的 AI Agent 接入 CMS 监控）。两者**关系**：Agent 跑在 AgentRun 上 → 通过 cms-manage Skill 接入 CMS 监控 → 通过 LoongSuite 上报 Agent 行为数据。
 - [Skill Development Guide Aliyun 2026](../ch04/271-skill.html) — Aliyun 团队发布的 **Skill 开发保姆级教程**（教你如何写 Skill）。**alibabacloud-cms-manage Skill 是 Skill 教程落地的一个具体生产 Skill 案例**——是 Skill 教程的"现身说法"。
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/071-skills.html) — 阿里云 **Skills Registry 公测**（企业私有 Skill 管理中心）。**alibabacloud-cms-manage** 是部署在 Skills Registry（`skills.aliyun.com`）上的官方 Skill，是 Registry 生态的具体产品实例。
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/072-skills.html) — 阿里云 **Skills Registry 公测**（企业私有 Skill 管理中心）。**alibabacloud-cms-manage** 是部署在 Skills Registry（`skills.aliyun.com`）上的官方 Skill，是 Registry 生态的具体产品实例。
 阿里云 AI 工具链定位对照：本实体（CMS 观测接入）与阿里云 **MSE AI 网关** 90% 成本节约（任务调度 + Sandbox）属于阿里云 AI 工具链不同环节。
 - [Alibaba Eventhouse Enterprise Agent Context](../ch03/035-agent.html) — 阿里 EventHouse 企业 Agent 上下文。本实体是 CMS 接入（**事件**层）—— EventHouse 处理**状态上下文**，CMS 处理**可观测性**。
 阿里云 **API 网关（Gateway API 标准）** 是**网络层**接入；本实体是**观测层**接入，定位不同。

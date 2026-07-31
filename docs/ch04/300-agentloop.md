@@ -53,9 +53,9 @@ AgentLoop 回答了 Agent 时代观测的核心命题：**观测的对象变了�
 
 这一差异决定了 Agent 观测需要全新的方法论维度：推理步骤的合理性、工具调用的准确性、检索结果的相关性、token 消耗的合理性等——这些在传统 APM 中完全不存在的指标，成为 Agent 评估的核心度量。
 
-### 与 [Hermes Agent](../ch03/095-hermes-agent.html) 和 [Agent Harness 生产化](../ch05/058-agent-harness.html) 的关系
+### 与 [Hermes Agent](../ch03/096-hermes-agent.html) 和 [Agent Harness 生产化](../ch05/058-agent-harness.html) 的关系
 
-AgentLoop 的出现填补了 Agent 生产化链路中一个关键空白——**生产环境的持续评估与进化循环**。多数 Agent 开发框架（LangChain、AgentScope、[Hermes Agent](../ch03/095-hermes-agent.html) 等）提供了构建 Agent 的工具链，但缺乏将生产数据反哺到 Agent 能力的闭环机制。
+AgentLoop 的出现填补了 Agent 生产化链路中一个关键空白——**生产环境的持续评估与进化循环**。多数 Agent 开发框架（LangChain、AgentScope、[Hermes Agent](../ch03/096-hermes-agent.html) 等）提供了构建 Agent 的工具链，但缺乏将生产数据反哺到 Agent 能力的闭环机制。
 
 AgentLoop 的"Agent + Harness → 观测 → 评估 → 优化"链路，与 [Harness Engineering 2026 全景](../ch05/120-harness-engineering.html) 中描述的"可观测性是 Harness 的核心支柱"完全一致。AgentLoop 通过 MVP 五环将 Harness 工程的观测侧做实，使 Agent 能够在生产环境中自我进化。
 
@@ -73,7 +73,7 @@ AgentLoop 的"Agent + Harness → 观测 → 评估 → 优化"链路，与 [Har
 
 ## 相关实体
 
-- [Hermes Agent](../ch03/095-hermes-agent.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
 - [Agent Harness 生产化](../ch05/058-agent-harness.html)
 - [Harness Engineering 2026 全景](../ch05/120-harness-engineering.html)
 - [Agent 评测方法论与体系设计](../ch03/035-agent.html)

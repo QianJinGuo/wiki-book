@@ -85,7 +85,7 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 ### 相关实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
 - [Tencentdb Agent Memory Context Offloading](../ch04/121-agent-memory.html)

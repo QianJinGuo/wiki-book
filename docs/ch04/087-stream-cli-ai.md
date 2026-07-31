@@ -257,7 +257,7 @@ L0-L4 模型虽然在文章靠后位置描述，但它的实现复杂度不高�
 Stream 模式的多实例冲突问题（消息重复处理）是典型的"开发环境正常、生产环境异常"场景。解决方案是环境开关 `dingtalk.stream.enabled` 配合 antx/diamond 注入，生产/预发设 `false`，只有日常开发环境才开启。这个模式可以推广到所有有状态的长连接组件。
 
 ## 相关实体
-- [Claude Code Core Internals](../ch03/077-claude-code.html)
+- [Claude Code Core Internals](../ch03/078-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/989-anthropic.html)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.html)

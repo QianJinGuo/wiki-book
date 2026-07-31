@@ -129,8 +129,8 @@ Hermes 的模型在信任方面处于中间地带——Skills 由你的 Agent �
 - [Openclaw Agent Loop Design Patterns](ch01/1036-openclaw-agent.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/235-openclaw.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/120-harness-engineering.html)
-- [Claude Code Source Architecture](../ch03/077-claude-code.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
+- [Claude Code Source Architecture](../ch03/078-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-system-design-three-way-comparison.md)
 

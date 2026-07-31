@@ -38,7 +38,7 @@ Datawhale 编译自 Anthropic 官方博客。Anthropic 内部把 Claude Code Ski
 - [Skill 设计模式](../ch04/271-skill.html) — 5 种核心结构模式（线性、Tool Wrapper、Generator 等），补充了 9 类分类中的生成/验证/运维类如何组织
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/397-agent-skills.html) — Google 5 Agent Skill 设计模式 vs Anthropic 视角
 - [Perplexity 内部 Skill 设计指南](../ch04/271-skill.html) — 另一家的 Skill 工程方法论对比
-- [Hermes Agent](../ch03/095-hermes-agent.html) — Hermes 的 Skill 系统实现参考
+- [Hermes Agent](../ch03/096-hermes-agent.html) — Hermes 的 Skill 系统实现参考
 
 ## 深度分析
 

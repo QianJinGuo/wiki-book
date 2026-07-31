@@ -48,8 +48,8 @@ Strands Agents 的 Tool Calling 将语音 Agent 从"回答问题"升级为"直�
 - [你缺的不是更好的 AI，而是一个"装自己"的系统](../ch03/035-agent.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/383-anthropic-google-agent-skills.html)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/095-hermes-agent.html)
-- [深度拆解 Hermes Agent 记忆系统](../ch03/095-hermes-agent.html)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 
 ---

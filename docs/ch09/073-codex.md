@@ -136,7 +136,7 @@ Codex 的五层架构可以映射到人类组织的治理层级：
 - [古法程序员 Codex 三层 Skill 架构](../ch01/517-codex.html)
 - [Harness Engineering 实践](../ch05/120-harness-engineering.html)
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
-- [Skill 驱动开发](../ch03/071-skills.html)
+- [Skill 驱动开发](../ch03/072-skills.html)
 
 ## 来源
 

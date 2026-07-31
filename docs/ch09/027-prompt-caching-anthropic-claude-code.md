@@ -144,12 +144,12 @@ Prompt Cache 命中率应该进监控，且告警阈值要严格。如果团队�
 ## 相关实体
 - [Claude Code Prompt 提示词体系源码解析](ch09/061-claude-code-prompt.html)
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](ch09/061-claude-code-prompt.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/076-obsidian-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/078-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/089-claude-code-1.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

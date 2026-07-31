@@ -148,7 +148,7 @@ LLM微调的总成本主要由以下几部分组成：
 
 ### 7.1 Amazon Nova Lite 微调案例
 
-根据 [Amazon Nova Lite Fine-Tuning案例](../ch11/305-amazon-nova.html)：
+根据 [Amazon Nova Lite Fine-Tuning案例](../ch11/306-amazon-nova.html)：
 
 - **训练成本**：约$0.02（10K tokens级别）
 - **推理成本**：与基础模型相同，无增量成本

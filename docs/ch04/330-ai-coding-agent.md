@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 8.5KB | `entities/ai-coding-agent-memory-system.md`
 
 ## 相关实体
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/095-hermes-agent.html)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
 - [Agent 记忆架构](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agent 记忆模块化框架](ch04/121-agent-memory.html)
 - [AI Agent 记忆系统](ch04/121-agent-memory.html)
@@ -23,7 +23,7 @@
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
 - [AI Context Layer 框架](../ch05/094-ai.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
-- [hermes-agent-self-evolving-source-analysis](../ch03/095-hermes-agent.html)
+- [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
 

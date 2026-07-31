@@ -66,7 +66,7 @@ related:
 
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/009-harness.html)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/095-hermes-agent.html)
+- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/096-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/009-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/003-agentrun.html)

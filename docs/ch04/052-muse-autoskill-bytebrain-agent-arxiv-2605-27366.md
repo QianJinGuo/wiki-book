@@ -251,7 +251,7 @@
 
 ## 相关实体
 - [Ara Agent Native Research Artifact 37Authors](../ch03/035-agent.html)
-- [Memento Skills Let Agents Design Agents](../ch03/071-skills.html)
+- [Memento Skills Let Agents Design Agents](../ch03/072-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md)
 

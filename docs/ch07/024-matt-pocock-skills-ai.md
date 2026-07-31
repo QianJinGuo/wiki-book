@@ -116,7 +116,7 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 - [Graphify Software Engineering Knowledge Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
 - [Stepan Gershuni Ai Native Startup Guide](../ch05/018-ai-native.html)
-- [Matt Pocock Skills vs Superpowers](../ch03/071-skills.html)
+- [Matt Pocock Skills vs Superpowers](../ch03/072-skills.html)
 
 ## 顾旭东解读：Agent 开发的四类失控模型
 

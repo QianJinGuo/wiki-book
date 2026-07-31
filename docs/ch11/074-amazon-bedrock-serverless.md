@@ -144,7 +144,7 @@ SQS 和 Lambda 的成本结构：
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/561-amazon-bedrock-agentcore.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/294-amazon-bedrock.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](ch11/295-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

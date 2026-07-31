@@ -84,7 +84,7 @@ retrieve(query) → read(task_context, belief_graph)
 - 已被更高层抽象吸收的底层 event
 **洞察：** 死的不是经验本身，而是那些失去了更新机制的经验。
 
-## 与 [Hermes Agent Deep Dive](../ch03/095-hermes-agent.html) 的关系
+## 与 [Hermes Agent Deep Dive](../ch03/096-hermes-agent.html) 的关系
 Hermes Agent 深度解析中提到的 **Self-Evolving / 动态 Skill 沉淀** 与 Memory 系统的"修正 + 遗忘"机制有协同：Agent 的自我进化依赖于 Memory 子系统的有效治理。
 
 ## 深度分析
@@ -153,9 +153,9 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 ## 相关实体
 - [Agent Memory 架构解析](ch04/121-agent-memory.html)
 - [memory agent systems cobanov](ch04/604-memory-agent-systems-cobanov.html)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/095-hermes-agent.html)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/096-hermes-agent.html)
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
-- [深度拆解 Hermes Agent 记忆系统](../ch03/095-hermes-agent.html)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 - [ai agent memory systems](ch04/121-agent-memory.html)
 - [Personal AI 工作台：Claude 18 动作框架](../ch05/094-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)

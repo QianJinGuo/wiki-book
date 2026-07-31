@@ -60,7 +60,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 ## 相关实体
 
-- [Matt Pocock Skills vs Superpowers](../ch03/071-skills.html) — 同一作者（鲁工/AI编程实验室）的实操分享系列，讨论了 Agent 技能工程的两条路线
+- [Matt Pocock Skills vs Superpowers](../ch03/072-skills.html) — 同一作者（鲁工/AI编程实验室）的实操分享系列，讨论了 Agent 技能工程的两条路线
 - [Claude Science：AI 科研工作台](ch01/976-claude.html) — Anthropic 面向科研的 AI 工作台，将 AI 能力嵌入科研全流程，与 Claude Code 的学术综述实践互补
 - [Claude Code KAIROS 范式](ch01/310-claude-code-kairos.html) — Claude Code 从同步问答器向常驻代理的范式跃迁，为长期学术写作工作流提供基础设施
 - [AI 自主科研 L0-L4 框架](../ch05/094-ai.html) — 52 页综述定义的 AI 科研自主度分级，Vibe Research 属于 L1-L2 级别

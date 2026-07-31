@@ -106,8 +106,8 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/707-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch05/094-ai.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/094-ai.html)
-- [private fintech has quietly become bigger than public fintec](../ch03/107-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
-- [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/107-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [private fintech has quietly become bigger than public fintec](../ch03/108-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/108-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [the inevitable need for an open model consortium](ch01/1188-the-inevitable-need-for-an-open-model-consortium.html)
 
 ---

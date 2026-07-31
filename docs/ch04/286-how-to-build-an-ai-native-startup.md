@@ -79,7 +79,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 ### Harness 的必要性
 
-文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](../ch03/077-claude-code.html) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
+文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](../ch03/078-claude-code.html) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
 
 ### 评估驱动的复利增长
 
@@ -107,7 +107,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-startup-cyberfund-2026.md)
 

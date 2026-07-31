@@ -51,7 +51,7 @@ Agent Teams（并行 + 共享 Context）
 
 ## 与 Wiki 已有内容的关系
 - 补充 [Agent 工程实践](../ch03/035-agent.html)的"架构演进路径"章节（增加量化数据）
-- 补充 [Hermes Agent 深度解析](../ch03/095-hermes-agent.html)的 Multi-Agent 协作部分（Google 论文 5 条结论）
+- 补充 [Hermes Agent 深度解析](../ch03/096-hermes-agent.html)的 Multi-Agent 协作部分（Google 论文 5 条结论）
 - 补充 [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)的错误放大效应数据
 - 补充 [Anthropic MCP 重新定义](../ch07/016-anthropic-mcp.html)的 Skills 机制解析
 ---
@@ -69,7 +69,7 @@ Agent Teams（并行 + 共享 Context）
 - **入库日期**：2026-04-28
 
 ## 相关实体
-- [Agent 时代架构师技能指南](../ch03/071-skills.html)
+- [Agent 时代架构师技能指南](../ch03/072-skills.html)
 - [factory mission multi agent architecture](../ch01/1235-factory-mission-multi-agent-architecture.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/397-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/035-agent.html)

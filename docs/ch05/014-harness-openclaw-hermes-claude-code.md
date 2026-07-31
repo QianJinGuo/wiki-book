@@ -175,8 +175,8 @@ OpenClaw 的约束设计最完善，但扩展性最差；Hermes 的扩展性最�
 
 ## 相关链接
 - [17 Agent Architectures Evolution](../ch04/699-17-agent.html)
-- [Hermes Agent Closed Learning Loop](../ch03/095-hermes-agent.html)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/077-claude-code.html)
+- [Hermes Agent Closed Learning Loop](../ch03/096-hermes-agent.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/078-claude-code.html)
 
 ## 实践启示
 ### 对 Agent 开发者的行动指南

@@ -37,7 +37,7 @@ Claude Science 是 Anthropic 从通用编程助手向领域专用 Agent 扩展�
 
 ### 科研 Agent 的"前台-后台"协作模式
 
-Claude Science 的产品设计体现了科研 Agent 中一个重要的架构模式：前台负责交互与可视，后台负责计算与推理。用户在前台通过自然语言描述科研需求，后端的智能体系统则自主完成数据抓取、代码生成、计算执行和结果整理。这种模式在 [Claude Code 的系统工程能力](../ch03/077-claude-code.html) 中已经得到验证，Claude Science 将其迁移到了科研场景。
+Claude Science 的产品设计体现了科研 Agent 中一个重要的架构模式：前台负责交互与可视，后台负责计算与推理。用户在前台通过自然语言描述科研需求，后端的智能体系统则自主完成数据抓取、代码生成、计算执行和结果整理。这种模式在 [Claude Code 的系统工程能力](../ch03/078-claude-code.html) 中已经得到验证，Claude Science 将其迁移到了科研场景。
 
 ### 科研 Agent 面临的三大核心挑战
 
@@ -77,12 +77,12 @@ Anthropic 的策略是最"轻量"的——不依赖独占的科学模型或数�
 
 ## 相关实体
 
-- [Claude Code 系统工程能力](../ch03/077-claude-code.html)
+- [Claude Code 系统工程能力](../ch03/078-claude-code.html)
 - [Anthropic Claude Code 安全争议](ch01/598-anthropic-claude-code.html)
 - [Agent Skill 设计模式](../ch04/269-agent-skill.html)
 - [Hermes Agent 技能设计分析](ch01/332-hermes-agent-skill.html)
 - [NVIDIA BioNeMo Agent Toolkit](../ch04/326-nvidia-bionemo-agent-toolkit.html)
-- [Claude Code 系统工程指南](../ch03/077-claude-code.html)
+- [Claude Code 系统工程指南](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic推出claude-science科研界的claude-code来了附实测.md)
 

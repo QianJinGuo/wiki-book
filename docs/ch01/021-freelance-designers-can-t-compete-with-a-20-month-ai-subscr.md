@@ -61,7 +61,7 @@ Freelancer Kompass 2026 报告显示，84% 的自由职业者现在定期使用 
 
 - [B2B Email Marketing: What Still Works?](ch01/157-b2b-email-marketing-what-still-works.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/223-rag.html)
-- [Wi-Fi 8 is closer than you think. Here's what you need to know](../ch03/068-wi-fi-8.html)
+- [Wi-Fi 8 is closer than you think. Here's what you need to know](../ch03/069-wi-fi-8.html)
 
 ---
 

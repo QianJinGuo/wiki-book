@@ -153,10 +153,10 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 - [AgentCore Managed Harness](../ch04/689-agentcore-harness.html)
 - [Agent Harness 解析：智能体架构深度拆解](ch05/058-agent-harness.html)
 - [From Agent Protocol to Harness Skill](../ch04/428-from-agent-protocol-to-harness-skill.html)
-- [Claude Code 架构深度解析](../ch03/077-claude-code.html)
+- [Claude Code 架构深度解析](../ch03/078-claude-code.html)
 - [Agent Memory 架构解析](../ch04/121-agent-memory.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
-- [claude-code-7-layer-memory-architecture](../ch03/077-claude-code.html)
+- [claude-code-7-layer-memory-architecture](../ch03/078-claude-code.html)
 - [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
 
 ---

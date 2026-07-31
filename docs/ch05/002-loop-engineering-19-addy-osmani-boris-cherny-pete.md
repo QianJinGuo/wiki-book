@@ -56,7 +56,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 ## 相关实体
 
 - [Agent Harness Architecture](ch05/058-agent-harness.html)
-- [Claude Code 深度分析](../ch03/077-claude-code.html)
+- [Claude Code 深度分析](../ch03/078-claude-code.html)
 - [Harness Engineering](ch05/120-harness-engineering.html)
 - [Agent Self-Improvement](../ch03/035-agent.html)
 

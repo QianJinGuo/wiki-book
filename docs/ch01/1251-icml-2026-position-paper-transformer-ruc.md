@@ -65,7 +65,7 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 - [GSD Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — 工具实践
 - [Headroom 上下文压缩 + 缓存稳定化](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-cache-stabilization.md) — 压缩算法
 - [Codex Context Engineering](ch01/517-codex.html)
-- [Claude Code Context Engineering (Anthropic Thariq)](../ch03/077-claude-code.html)
+- [Claude Code Context Engineering (Anthropic Thariq)](../ch03/078-claude-code.html)
 - [Claude Fable 5 提示词泄漏](ch01/173-claude-fable-5.html) — 同样指出 "系统 = 模型 + 上下文管理"
 - [LLM Post-Training 全景指南](ch01/1274-llm.html) — 可学习性维度对照
 

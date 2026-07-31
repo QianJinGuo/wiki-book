@@ -79,7 +79,7 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 本文与以下页面形成呼应：
 
 - [高德伴行Agent](../ch03/035-agent.html)（工作现场六组件）
-- [Hermes Agent](../ch03/095-hermes-agent.html)（Karpathy 观点被多次引用）
+- [Hermes Agent](../ch03/096-hermes-agent.html)（Karpathy 观点被多次引用）
 - [Agent Memory Architecture](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)（状态为什么得落在模型外面）
 
 ## 相关页面

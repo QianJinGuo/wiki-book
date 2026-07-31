@@ -85,7 +85,7 @@ npm i -g @aws/agentcore@preview   # 安装CLI
 | 成本 | 用多少算多少 | 固定人力成本 |
 
 ## 关联分析
-本文与 [Claude Code 架构解析](../ch03/077-claude-code.html) 高度相关：
+本文与 [Claude Code 架构解析](../ch03/078-claude-code.html) 高度相关：
 
 - Claude Code 拆解的七大模块（Tool Runtime / Permission / Query Loop / Task System / 扩展层）本质都是 **Harness 的一部分**
 - AgentCore 是云厂商对"每个团队都在重复造轮子"这一痛点的**平台化回应**
@@ -148,7 +148,7 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/235-openclaw.html)
 - [柚漫剧 AI 全流程提效拆解](../ch05/094-ai.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/270-aws-bedrock-agentcore.html)
-- [Amazon Bedrock模型推理的Serverless异步架构](../ch11/294-amazon-bedrock.html)
+- [Amazon Bedrock模型推理的Serverless异步架构](../ch11/295-amazon-bedrock.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/120-harness-engineering.html)

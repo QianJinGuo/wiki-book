@@ -53,8 +53,8 @@ Subagent 的核心价值不是"多一个助手"，而是**上下文隔离**。�
 ## 关联
 
 - [CLAUDE.md 12 条规则](../ch01/237-claude-md.html) — 本文解决"写什么规则"，本文解决"规则放哪里"
-- [Claude Code 大型代码库 Harness 配置](../ch03/077-claude-code.html) — CLAUDE.md 作为 Harness 五扩展点之一
-- [Claude Code 七种自定义方法](../ch03/077-claude-code.html) — Anthropic 官方全景指南
+- [Claude Code 大型代码库 Harness 配置](../ch03/078-claude-code.html) — CLAUDE.md 作为 Harness 五扩展点之一
+- [Claude Code 七种自定义方法](../ch03/078-claude-code.html) — Anthropic 官方全景指南
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 规则分层是 Harness 工程的核心设计决策
 
 ---

@@ -11,9 +11,9 @@
 Review Agent 解决的就是这个问题。它换了个角色、换了个 prompt、换了套判断标准，专门干"复盘 + 决定该记什么"这一件事。
 
 ## 相关实体
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/071-skills.html)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/072-skills.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 - [Openclaw Prompt Context Harness](../ch11/235-openclaw.html)
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)
 

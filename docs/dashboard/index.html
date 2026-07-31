@@ -347,6 +347,51 @@ function doMigrateToEntityKeys(){
   localStorage.setItem(MIGRATED_KEY, '1');
 }
 
+// Migrate file→entity keys in all data stores (after D1 pull or localStorage load)
+function migrateStaleKeys(){
+  if(!DATA || !DATA.articles) return;
+  // Build file→entity map from current articles
+  const f2e = {};
+  // Also build slug→entity map for old file keys (ch04/NNN-slug.md)
+  const slug2e = {};
+  for(const a of DATA.articles){
+    if(a.entity){
+      f2e[a.file] = a.entity;
+      // Extract slug after chXX/NNN- for matching old keys
+      const m = a.file.match(/ch\d+\/\d+-(.+)/);
+      if(m) slug2e[m[1]] = a.entity;
+    }
+  }
+  const resolveKey = (k) => {
+    // Already an entity
+    if(f2e[k] === k || slug2e[k]) return k;
+    // Current file path
+    if(f2e[k]) return f2e[k];
+    // Try slug match for old file keys
+    const m = k.match(/ch\d+\/\d+-(.+)/);
+    if(m && slug2e[m[1]]) return slug2e[m[1]];
+    return k; // Can't resolve
+  };
+  const migrate = (obj) => {
+    const keys = Object.keys(obj);
+    let changed = false;
+    for(const k of keys){
+      const ek = resolveKey(k);
+      if(ek !== k){
+        if(!obj[ek]){ obj[ek] = obj[k]; }
+        delete obj[k];
+        changed = true;
+      }
+    }
+    return changed;
+  };
+  let c = false;
+  if(migrate(done)){ c = true; save(); }
+  if(migrate(feynmanData)){ c = true; saveFeynmanStorage(); }
+  if(migrate(recallData)){ c = true; saveRecall(); }
+  if(c) localStorage.setItem(MIGRATED_KEY, '1');
+}
+
 // Look up article by entity (stable) or file (fallback)
 function findArticle(key){
   if(!DATA) return null;
@@ -415,6 +460,7 @@ async function pullFromCloud(){
       }
       saveRecall();
     }
+    migrateStaleKeys();
     render(); renderRecallPanel();
     const total = Object.keys(result.progress||{}).length + Object.keys(result.feynman||{}).length + Object.keys(result.recall||{}).length;
     setSyncStatus('✓ 已拉取 '+total+' 条从云端', true);
@@ -435,9 +481,28 @@ function saveRecall(){ localStorage.setItem(RECALL_KEY, JSON.stringify(recallDat
 
 function getLevel(file){
   const d = done[file];
-  if(!d) return null;
-  if(typeof d === 'object') return d.level;
-  return 'read'; // legacy boolean format
+  if(d) return typeof d === 'object' ? d.level : 'read';
+  if(DATA && done && Object.keys(done).length > 0){
+    const article = DATA.articles.find(a => a.entity === file);
+    if(article){
+      const df = done[article.file];
+      if(df) return typeof df === 'object' ? df.level : 'read';
+    }
+    for(const [sk, sv] of Object.entries(done)){
+      const a = DATA.articles.find(a => a.file === sk || a.entity === sk);
+      if(a && a.entity === file) return typeof sv === 'object' ? sv.level : 'read';
+      // Try slug matching for old file keys
+      const sm = sk.match(/ch\d+\/\d+-(.+)/);
+      if(sm){
+        const b = DATA.articles.find(a => {
+          const am = a.file.match(/ch\d+\/\d+-(.+)/);
+          return am && am[1] === sm[1];
+        });
+        if(b && b.entity === file) return typeof sv === 'object' ? sv.level : 'read';
+      }
+    }
+  }
+  return null;
 }
 
 function setLevel(file, level){
@@ -510,6 +575,26 @@ function removeFromRecallQueue(file){
   saveRecall();
 }
 function handleRecall(file, remembered){
+  // Reverse entity lookup for recallData
+  if(!recallData[file] && DATA && recallData && Object.keys(recallData).length > 0){
+    const article = DATA.articles.find(a => a.entity === file);
+    if(article && recallData[article.file]) file = article.file;
+    else {
+      for(const [sk] of Object.entries(recallData)){
+        const a = DATA.articles.find(a => a.file === sk || a.entity === sk);
+        if(a && a.entity === file){ file = sk; break; }
+        // Try slug matching for old file keys
+        const sm = sk.match(/ch\d+\/\d+-(.+)/);
+        if(sm){
+          const b = DATA.articles.find(a => {
+            const am = a.file.match(/ch\d+\/\d+-(.+)/);
+            return am && am[1] === sm[1];
+          });
+          if(b && b.entity === file){ file = sk; break; }
+        }
+      }
+    }
+  }
   const r = recallData[file];
   if(!r) return;
   r.totalReviews++;
@@ -695,7 +780,27 @@ let currentFeynmanFile = null;
 
 function saveFeynmanStorage(){ localStorage.setItem(FEYNMAN_KEY, JSON.stringify(feynmanData)); }
 
-function getFeynmanNote(key){ return feynmanData[key] || null; }
+function getFeynmanNote(key){
+  if(feynmanData[key]) return feynmanData[key];
+  if(DATA && feynmanData && Object.keys(feynmanData).length > 0){
+    const article = DATA.articles.find(a => a.entity === key);
+    if(article && feynmanData[article.file]) return feynmanData[article.file];
+    for(const [sk, sv] of Object.entries(feynmanData)){
+      const a = DATA.articles.find(a => a.file === sk || a.entity === sk);
+      if(a && a.entity === key) return sv;
+      // Try slug matching for old file keys
+      const sm = sk.match(/ch\d+\/\d+-(.+)/);
+      if(sm){
+        const b = DATA.articles.find(a => {
+          const am = a.file.match(/ch\d+\/\d+-(.+)/);
+          return am && am[1] === sm[1];
+        });
+        if(b && b.entity === key) return sv;
+      }
+    }
+  }
+  return null;
+}
 
 function openFeynmanModal(key, event){
   if(event) event.stopPropagation();
@@ -1081,7 +1186,6 @@ function render(){
             <span class="card-words" style="margin-left:.5rem">${formatWords(a.words)}字</span>
           </div>
           <div class="card-actions">
-            <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.file}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
             <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.entity}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
             ${lv ? (() => { 
               const fn = getFeynmanNote(a.entity); 

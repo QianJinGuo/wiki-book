@@ -92,7 +92,7 @@ Anthropic 团队系统性地将 J-space 与人脑全局工作空间理论的五�
 
 2. **全局工作空间理论具有跨架构的普适性**。无论是人脑的循环神经网络结构，还是 Transformer 的前向传播结构，在需要灵活多步推理时，都会收敛到「容量有限、全局广播的中枢」这一设计模式。这为 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的系统架构设计提供了参考：在 Agent 架构中识别和隔离「工作空间」层，可以让推理与自动化执行分离，提高系统的可调试性。
 
-3. **反事实训练是对齐技术的有力补充**。通过在假想反思场景上微调而非直接修改行为数据，可以更根本地改变模型的内在表征。这比 RLHF 式的行为约束更接近人类道德教育的本质——不是训练行为，而是塑造价值观。对于 [Hermes Agent](../ch03/095-hermes-agent.html) 等生产系统中的 safety guardrails，可以借鉴反事实训练机制，在「想象场景」中注入安全约束，而非仅在真实交互中施加惩罚。
+3. **反事实训练是对齐技术的有力补充**。通过在假想反思场景上微调而非直接修改行为数据，可以更根本地改变模型的内在表征。这比 RLHF 式的行为约束更接近人类道德教育的本质——不是训练行为，而是塑造价值观。对于 [Hermes Agent](../ch03/096-hermes-agent.html) 等生产系统中的 safety guardrails，可以借鉴反事实训练机制，在「想象场景」中注入安全约束，而非仅在真实交互中施加惩罚。
 
 4. **表征层面的可干预性是 AI 安全的重要保证**。实验证明，从 J-space 中删除伦理方向后行为立即退化，说明模型的「思维」可以被物理性地修改。这意味着未来 AI 系统应该设计可审计的「思维接口」，使得安全团队可以在表征层面而非仅输出层面进行监控和干预。
 
@@ -100,11 +100,11 @@ Anthropic 团队系统性地将 J-space 与人脑全局工作空间理论的五�
 
 ## 相关实体
 
-- [Hermes Agent](../ch03/095-hermes-agent.html) — Agent 系统中的可解释性与安全对齐实践
-- [Claude Code 深度架构分析](../ch03/077-claude-code.html) — Claude 模型架构的全面分析
-- [AI 安全与对齐](../ch03/077-claude-code.html) — 表征层面的 AI 对齐方法
+- [Hermes Agent](../ch03/096-hermes-agent.html) — Agent 系统中的可解释性与安全对齐实践
+- [Claude Code 深度架构分析](../ch03/078-claude-code.html) — Claude 模型架构的全面分析
+- [AI 安全与对齐](../ch03/078-claude-code.html) — 表征层面的 AI 对齐方法
 - [机械可解释性](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md) — 理解神经网络内部机制的研究领域
-- AI 意识辩论（参见 [安全与对齐](../ch03/077-claude-code.html)） — AI 是否可能具备意识的哲学与技术讨论
+- AI 意识辩论（参见 [安全与对齐](../ch03/078-claude-code.html)） — AI 是否可能具备意识的哲学与技术讨论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚anthropic切开claude大脑ai自发长出类人意识器官.md)
 

@@ -66,9 +66,9 @@ Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些
 7. 评估测 recall + 更新 + 拒答 + 遗忘 + 偏好漂移
 
 ## 关联实体
-- [Hermes Agent 记忆系统](../ch03/095-hermes-agent.html) — 本文的 memory 管理理念与 Hermes 实现直接对应
+- [Hermes Agent 记忆系统](../ch03/096-hermes-agent.html) — 本文的 memory 管理理念与 Hermes 实现直接对应
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html) — Memory 是 Harness 控制面的一层
-- [Claude Code Agent 工程化](../ch03/069-claude-code-agent.html) — CLAUDE.md / AGENTS.md 工作区文件实践
+- [Claude Code Agent 工程化](../ch03/070-claude-code-agent.html) — CLAUDE.md / AGENTS.md 工作区文件实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化控制面
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-architecture-past-influence-future-ruofei.md)
 
@@ -149,7 +149,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [memory agent systems cobanov](ch04/604-memory-agent-systems-cobanov.html)
 
 - [AI Agent 记忆系统架构](ch04/156-how-ai-agent-memory-works.html)
-- [深度拆解 Hermes Agent 记忆系统](../ch03/095-hermes-agent.html)
+- [深度拆解 Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 - [ai agent memory systems](ch04/121-agent-memory.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
@@ -161,10 +161,10 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
-- [Hermes Agent 记忆系统深度拆解](../ch03/095-hermes-agent.html)
+- [Hermes Agent 记忆系统深度拆解](../ch03/096-hermes-agent.html)
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [harness-engineering-systematic-explainer](../ch05/120-harness-engineering.html)
-- [claude-code-7-layer-memory-architecture](../ch03/077-claude-code.html)
+- [claude-code-7-layer-memory-architecture](../ch03/078-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

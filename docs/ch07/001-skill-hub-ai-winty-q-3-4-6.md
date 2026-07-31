@@ -253,7 +253,7 @@ winty 将 Skill 定位在"个人侧"与"工具侧"之间，并称之为"组织�
 
 文章的核心比喻——"新人入职那天，AI 就已经知道怎么帮他发版了"——揭示了一个被大多数企业 AI 落地策略忽略的**新人上手问题的元问题**：不是 AI 不会，而是 AI 没有继承组织的积累。
 
-这个问题在 [How To Encode Experience Into Skills](../ch03/071-skills.html) 中有更系统的讨论：Skill 的价值不在于它能执行某个动作，而在于它编码了"在这个组织里，这个场景的标准做法是什么"。当 Skill 进入 Hub 后，新人不必再依赖"问老张"这种不可扩展的知识传递方式——组织智慧已经被结构化地编码进了 Skill Hub，被所有 Agent 共享。这与 [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch04/271-skill.html) 中的"技能复用闭环"是同一个逻辑在不同粒度上的表达。
+这个问题在 [How To Encode Experience Into Skills](../ch03/072-skills.html) 中有更系统的讨论：Skill 的价值不在于它能执行某个动作，而在于它编码了"在这个组织里，这个场景的标准做法是什么"。当 Skill 进入 Hub 后，新人不必再依赖"问老张"这种不可扩展的知识传递方式——组织智慧已经被结构化地编码进了 Skill Hub，被所有 Agent 共享。这与 [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch04/271-skill.html) 中的"技能复用闭环"是同一个逻辑在不同粒度上的表达。
 
 ### 5. 平台型与业务型的张力：Skill Hub 的权力结构
 

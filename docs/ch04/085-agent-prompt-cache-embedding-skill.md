@@ -177,7 +177,7 @@ AWS 中国团队在 agent memory 工程上的实践反映了中国的特殊情�
 → [Agent Memory 过去-现在-未来](ch04/121-agent-memory.html)
 → [Agent-Memory 评测全景（淘天综述）](ch04/121-agent-memory.html)
 → [AgentCore Harness 架构](ch04/689-agentcore-harness.html)
-→ [Hermes Agent 记忆系统](../ch03/095-hermes-agent.html)
+→ [Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 
 ## 相关实体
 

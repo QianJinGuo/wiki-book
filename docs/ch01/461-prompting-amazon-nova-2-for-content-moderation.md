@@ -10,9 +10,9 @@
 - Structured（XML/JSON）与 Free-form 两种 prompt 策略对比
 - Nova 2 Lite 三项公开基准测试平均 F1 75.70%，优于同期对照模型
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/021-build-an-enterprise-observability-solution-for-amazon-quick.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 

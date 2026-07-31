@@ -8,13 +8,13 @@
 
 Anthropic 的 Claude Science 上线不到一周，YC 孵化的 AI 科研团队发布「Claude Science 开源平替版」OpenScience。
 
-OpenScience 覆盖文献检索、假设生成、代码实验到论文撰写的全流程 AI 科研工作台，不绑定任何单一模型厂商，支持 DeepSeek、GLM 等多种模型。与 [Claude Science](../ch03/077-claude-code.html) 形成开源替代方案。
+OpenScience 覆盖文献检索、假设生成、代码实验到论文撰写的全流程 AI 科研工作台，不绑定任何单一模型厂商，支持 DeepSeek、GLM 等多种模型。与 [Claude Science](../ch03/078-claude-code.html) 形成开源替代方案。
 
 ## 核心功能对比
 
 ### Claude Science 的定位与限制
 
-[Claude Science](../ch03/077-claude-code.html) 是 Anthropic 推出的面向科学家的 AI 工作平台，提供研究人员常用的工具链集成：文献检索、Jupyter 代码执行、R 统计分析、SSH 集群任务提交、论文撰写等。其核心集成包括：
+[Claude Science](../ch03/078-claude-code.html) 是 Anthropic 推出的面向科学家的 AI 工作平台，提供研究人员常用的工具链集成：文献检索、Jupyter 代码执行、R 统计分析、SSH 集群任务提交、论文撰写等。其核心集成包括：
 
 - **数据库与工具链**：内置 60+ 科学数据库连接器和预配置技能包，覆盖基因组学、单细胞分析、蛋白质组学、结构生物学、化学信息学等常见科研领域。用户用自然语言提问，专业 Agent 自动跨库查询 UniProt、PDB、Ensembl、ChEMBL、GEO 等数据库
 - **执行架构**：多智能体架构——主 Agent 负责整体规划，子 Agent 并行处理不同任务，Reviewer Agent 负责事实核查（检查引用、验证计算结果、标注潜在错误）

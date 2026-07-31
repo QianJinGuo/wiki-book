@@ -38,15 +38,15 @@ OS Level Actions 的发布标志着**浏览器自动化能力的最后一次关�
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: 背景与架构概览](../ch11/235-openclaw.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/235-openclaw.html)
-- [Amazon Bedrock模型推理的Serverless异步架构](../ch11/294-amazon-bedrock.html)
+- [Amazon Bedrock模型推理的Serverless异步架构](../ch11/295-amazon-bedrock.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/561-amazon-bedrock-agentcore.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/305-amazon-nova.html)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/306-amazon-nova.html)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/299-bedrock.html)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/300-bedrock.html)
 - [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](../ch11/290-aws-devops-agent.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/561-amazon-bedrock-agentcore.html)
 - [Agent orchestration](ch04/518-agent-orchestration.html)
@@ -58,7 +58,7 @@ OS Level Actions 的发布标志着**浏览器自动化能力的最后一次关�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11/294-amazon-bedrock.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11/295-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

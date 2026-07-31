@@ -40,7 +40,7 @@ Claude Code Dynamic Workflows 第 7 译本（架构师 JiaGouX 视角：任务�
 ### 关联实体
 
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)

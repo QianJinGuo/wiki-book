@@ -78,7 +78,7 @@ RLVR 的结果更可复现、更难刷榜，是评估模型真实能力的更好
 - [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/473-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch04/237-agentic.html)
 - [Ai Job Interview Model Evaluation Mollick](../ch05/094-ai.html)
-- [Claude Code Performance Benchmarking](../ch03/077-claude-code.html)
+- [Claude Code Performance Benchmarking](../ch03/078-claude-code.html)
 - [Mythos_Offensive_Security_Xbow_Evaluatio](../ch12/030-mythos.html)
 
 ## 相关引用

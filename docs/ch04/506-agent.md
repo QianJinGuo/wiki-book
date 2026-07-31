@@ -12,7 +12,7 @@
 ## 相关实体
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
 - [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12/033-canvas-breach-disrupts-schools-colleges-nationwide.html)
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/071-skills.html)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/072-skills.html)
 - [Aws Bedrock Agentcore Identity Security](../ch11/270-aws-bedrock-agentcore.html)
 - [Github Investigating Teampcp Claimed 17Cc77](../ch01/820-github.html)
 

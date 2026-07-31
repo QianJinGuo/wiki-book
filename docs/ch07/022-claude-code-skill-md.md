@@ -204,8 +204,8 @@ Skill 写完后，不要直接投入生产使用。验证方式：
 - [Claude Design Skill Web Design Engineer](../ch01/1150-claude-design-skill.html)
 - [Claude Design Skill](../ch01/1150-claude-design-skill.html)
 - [Claude Code Prompt Source Analysis](../ch09/061-claude-code-prompt.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
-- [using claude](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
+- [using claude](../ch03/078-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

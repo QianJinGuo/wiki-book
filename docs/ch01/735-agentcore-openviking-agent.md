@@ -73,7 +73,7 @@ AgentCore 适合快速 PoC 和生产级多租户 SaaS，OpenViking 在 Token 效
 ## 相关实体
 
 - [AI Agent 记忆系统](../ch04/121-agent-memory.html)
-- [Hermes Agent 记忆系统](../ch03/095-hermes-agent.html)
+- [Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 - [Agent 记忆模块化框架](../ch04/121-agent-memory.html)
 - [Agent 记忆架构](../ch04/121-agent-memory.html)
 - [Amazon Bedrock AgentCore MCP 扩展](../ch04/561-amazon-bedrock-agentcore.html)

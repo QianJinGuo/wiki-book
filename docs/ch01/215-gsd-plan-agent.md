@@ -214,7 +214,7 @@ GSD 的实践数据表明，"discuss-phase 是最值得投入的一步"。这个
 ## Related
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
 
-- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
 
 ---
 

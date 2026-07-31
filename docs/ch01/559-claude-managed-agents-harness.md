@@ -92,7 +92,7 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.html)
 - [Xero Announces Integration with Anthropic's Claude](ch01/989-anthropic.html)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/604-anthropic-claude.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
 - [Anthropic Computer Use 最佳实践](ch01/937-anthropic-computer-use.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 

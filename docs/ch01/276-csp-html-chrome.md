@@ -181,7 +181,7 @@ Content-Security-Policy:
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/742-9.html)
 - [Ico Fines South Staffordshire 2022 Breach](ch01/913-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Interaction Models](../ch03/105-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
+- [Interaction Models](../ch03/106-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/094-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/162-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 

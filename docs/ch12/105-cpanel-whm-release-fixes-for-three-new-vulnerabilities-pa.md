@@ -15,7 +15,7 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/1089-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
 - [Airbyte Agents A New Era For Airbyte Airbyte](../ch04/580-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
 - [Airbyte Agents](../ch04/580-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
-- [5 Years And 5M Later Inventing A New](../ch03/075-5-years-and-5m-later-inventing-a-new-programming-language.html)
+- [5 Years And 5M Later Inventing A New](../ch03/076-5-years-and-5m-later-inventing-a-new-programming-language.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 

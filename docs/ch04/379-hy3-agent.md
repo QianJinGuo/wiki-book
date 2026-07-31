@@ -42,7 +42,7 @@ Hy3 采用 MoE（Mixture of Experts）架构，总参数 295B 但每次推理仅
 
 ### 与 Coding Agent 的定位差异
 
-与 [Claude Code](../ch03/077-claude-code.html) 等面向开发者的 Coding Agent 不同，元宝 Agent 的目标用户是微信生态内的普通用户——他们不需要注册新账号、不需要熟悉新软件、无需复杂调试配置，在对话框内直接完成整套任务。
+与 [Claude Code](../ch03/078-claude-code.html) 等面向开发者的 Coding Agent 不同，元宝 Agent 的目标用户是微信生态内的普通用户——他们不需要注册新账号、不需要熟悉新软件、无需复杂调试配置，在对话框内直接完成整套任务。
 
 这种"零门槛"定位是一种务实的差异化策略。Coding Agent 追求代码质量和工程集成深度，而元宝 Agent 追求的是"用完即走"的便捷性和文档格式的普适性。两者面向不同的用户场景和能力水平。
 
@@ -71,11 +71,11 @@ Hy3 采用 MoE（Mixture of Experts）架构，总参数 295B 但每次推理仅
 
 ## 相关实体
 
-- [Claude Code 治理软规则](../ch03/077-claude-code.html) — Coding Agent vs 普通用户 Agent 的治理对比
+- [Claude Code 治理软规则](../ch03/078-claude-code.html) — Coding Agent vs 普通用户 Agent 的治理对比
 - [Agent Harness 架构](../ch05/058-agent-harness.html) — Agent 系统的架构设计模式
 - [Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) — Agent 评测方法论
 - [Agent 评测框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) — 行业 Agent 评测实践
-- [Claude Code 系统工程指南](../ch03/077-claude-code.html) — 对比 Coding Agent 能力
+- [Claude Code 系统工程指南](../ch03/078-claude-code.html) — 对比 Coding Agent 能力
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hunyuan-hy3-agent-benchmark-yaoshunyu-2026.md)
 

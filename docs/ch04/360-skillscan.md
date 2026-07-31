@@ -94,7 +94,7 @@ SkillScan 的供应链风险检测涵盖许可证合规、已知 CVE 漏洞和�
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [SkillScan 字节跳动版](ch04/269-agent-skill.html)
 - [SkillSieve Agent 技能安全](ch04/459-skillsieve-agent-skill.html)
-- [Claude Code 安全审查偏见分析](../ch03/077-claude-code.html)
+- [Claude Code 安全审查偏见分析](../ch03/078-claude-code.html)
 - [Claude Code 遥测安全争议](../ch01/598-anthropic-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文了解skillscan-智能体技能安全扫描最佳实践.md)

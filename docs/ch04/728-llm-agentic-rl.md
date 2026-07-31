@@ -46,7 +46,7 @@
 ## 相关实体
 
 - [2026 年面向 LLM 的 RL 方法总结](../ch01/1274-llm.html)
-- [Amazon Nova 多轮 RL 推理基础设施](../ch11/304-deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-am.html)
+- [Amazon Nova 多轮 RL 推理基础设施](../ch11/305-deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-am.html)
 - [Harness 工程实践：如何让 Agent 完成自主迭代](../ch05/009-harness.html)
 - Agentic Loop Engineering 工程手册
 

@@ -64,7 +64,7 @@ Fable 5 在 Continual Learning Bench 的 SQL 问答任务中表现出清晰的�
 4. **提炼**（④）：将验证结果转化为通用规则。
 5. **查阅**（⑤）：读取规则，而不是重新推导。Fable 5 能完成这个递进——验证覆盖率达 73%（30 个问题中的 22 个）。
 
-这个递进模式揭示了一个关键的 AI 系统设计原则：**记忆系统的价值不在于存储，而在于知识的抽象层级提升**。低级别模型把记忆当作"笔记"（事实存储），高级模型把记忆当作"规则"（知识抽象）。这也是 [Hermes Agent](../ch03/095-hermes-agent.html) 中"技能"（Skills）概念的设计初衷——将可复用的行为模式从上下文中提炼出来，实现跨会话的知识复用。
+这个递进模式揭示了一个关键的 AI 系统设计原则：**记忆系统的价值不在于存储，而在于知识的抽象层级提升**。低级别模型把记忆当作"笔记"（事实存储），高级模型把记忆当作"规则"（知识抽象）。这也是 [Hermes Agent](../ch03/096-hermes-agent.html) 中"技能"（Skills）概念的设计初衷——将可复用的行为模式从上下文中提炼出来，实现跨会话的知识复用。
 
 ### 循环的三种层次
 
@@ -92,7 +92,7 @@ Fable 5 在 Continual Learning Bench 的 SQL 问答任务中表现出清晰的�
 
 ## 相关实体
 
-- [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/077-claude-code.html) — Agent 产品对比分析
+- [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/078-claude-code.html) — Agent 产品对比分析
 - [Agent的自演进被刚刚开源的Areal 20按下了加速键](../ch03/035-agent.html) — Agent 自我进化与循环
 - [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/035-agent.html) — Agent 落地工程实践
 - [Agent 评测方法论与体系设计](../ch03/035-agent.html) — Agent 评测体系设计

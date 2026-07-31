@@ -18,7 +18,7 @@
 - **最后产出一份能继续编辑的文件**
 
 ## 相关实体
-- [Cat Wu Claude Code Pm](../ch03/077-claude-code.html)
+- [Cat Wu Claude Code Pm](../ch03/078-claude-code.html)
 - [Anthropic Founders Playbook Huashu 2026](ch01/989-anthropic.html)
 - [Cat Wu Anthropic Pm Interview](ch01/989-anthropic.html)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)

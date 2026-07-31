@@ -182,7 +182,7 @@
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/035-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/517-codex.html)
-- Claude Code 架构 — [Claude Code Architecture](../ch03/077-claude-code.html)
+- Claude Code 架构 — [Claude Code Architecture](../ch03/078-claude-code.html)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05/120-harness-engineering.html)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/035-agent.html)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/223-rag.html)

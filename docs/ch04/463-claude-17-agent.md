@@ -94,8 +94,8 @@ Chrome、Cowork、Connectors、Claude Code 一旦接到真实网页、本地文�
 
 ## 相关实体
 - [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/328-claude-code-agent-teams.html)
-- [Claude Code Agent Engineering](../ch03/069-claude-code-agent.html)
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/077-claude-code.html)
+- [Claude Code Agent Engineering](../ch03/070-claude-code-agent.html)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
 - [Claude Code Agent View Huashu](../ch09/003-claude-code-agent-view.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
 

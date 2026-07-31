@@ -80,9 +80,9 @@
 ## 相关实体
 - [qoder skills](ch07/034-qoder-skills.html)
 - [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/238-agent-skills-teams.html)
-- [Agent 时代架构师技能指南](../ch03/071-skills.html)
+- [Agent 时代架构师技能指南](../ch03/072-skills.html)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/269-agent-skill.html)
-- [Hermes Agent](../ch03/095-hermes-agent.html)
+- [Hermes Agent](../ch03/096-hermes-agent.html)
 - [你写的 Skill，及格了吗？](../ch04/271-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04/419-aws-sagemaker-ai-agent.html)

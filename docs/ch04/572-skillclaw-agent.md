@@ -15,7 +15,7 @@
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)
 - [Skillclaw Hyman Nightly Evolution Alibaba](ch04/271-skill.html)
 - [Skill Rag Tsinghua Sra](ch04/271-skill.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw-alibaba-paperagent.md)
 

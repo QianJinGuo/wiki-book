@@ -87,7 +87,7 @@ jdk-upgrade-lessons Skill 的设计将一次性的升级经验转化为可复用
 
 ### 4. 反馈闭环是 AI 可靠性的最后一公里
 
-本案例中最具实践价值的洞察之一是：AI 在执行复杂工程任务时，天然的"乐观偏差"需要通过工程机制来对抗。测试前置驱动验证将测试从"验证手段"提升为"合约执行器"——AI 在升级前就被告知"我会用这些测试来判定你是否成功"，这改变了 AI 的行为模式，使其更谨慎地执行修改。[Regression Tax 研究](../ch03/071-skills.html) 表明，缺乏闭环验证的 AI 技能会随使用次数增加而退化，而本案例中的反馈闭环正是对抗这种退化的有效手段。
+本案例中最具实践价值的洞察之一是：AI 在执行复杂工程任务时，天然的"乐观偏差"需要通过工程机制来对抗。测试前置驱动验证将测试从"验证手段"提升为"合约执行器"——AI 在升级前就被告知"我会用这些测试来判定你是否成功"，这改变了 AI 的行为模式，使其更谨慎地执行修改。[Regression Tax 研究](../ch03/072-skills.html) 表明，缺乏闭环验证的 AI 技能会随使用次数增加而退化，而本案例中的反馈闭环正是对抗这种退化的有效手段。
 
 ### 5. 开发者角色的根本性转变
 
@@ -123,7 +123,7 @@ AI 的上下文窗口有限，一次性输入所有约束和参考信息会导�
 - → [腾讯 Harness Engineering 团队实践](ch05/120-harness-engineering.html) — 同一方法论在不同组织的实践对比
 - → [ScarfBench：企业 Java 框架迁移 AI 评测](../ch04/298-ai-agent.html) — 企业级迁移场景的基准评测，与本案例互补
 - → [技能治理与 AI 注册中心](../ch04/271-skill.html) — Skill 的注册发现与版本管理机制
-- → [Regression Tax：技能如何损害 LLM Agent](../ch03/071-skills.html) — 缺乏反馈闭环导致的技能退化问题，与本案例的闭环设计形成对照
+- → [Regression Tax：技能如何损害 LLM Agent](../ch03/072-skills.html) — 缺乏反馈闭环导致的技能退化问题，与本案例的闭环设计形成对照
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe-coding-to-harness-engineering-jdk-upgrade-xiaomi.md)
 
 ---
