@@ -8,6 +8,29 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 记忆注入实战：5 维框架（选什么/放哪里/怎…"))
+    一句话定位
+    4 个常见问题
+    4 篇前沿论文
+    5 维框架详解
+      维度 1：选什么（记忆选择）— MemGuid…
+      维度 2：放哪里（注入位置）— Lost-in…
+      维度 3：怎么放（注入格式）— Section…
+      维度 4：放多少（数量控制）— 宁缺毋滥
+    ACE 框架：把记忆当作策略手册
+      记忆观转变
+      策略手册结构
+    STRATEGIES（成功经验）
+    COMMON MISTAKES（失败教训）
+      3 角色协作
+    完整流程整合
+```
+
 ## 一句话定位
 
 **「Agent技术笔记」第 9 篇** — 5 维记忆注入框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 篇前沿论文综合（MemGuide 意图驱动 / STITCH 上下文过滤 / ACE 策略手册 / Lost-in-the-Middle 位置效应），解决"存好了怎么用"的实战问题。

@@ -6,6 +6,22 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-environment-engineering-jiagoux-2026-06-27.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Environment Engineer…"))
+    核心命题
+    工程链路分层
+    中科院自动化所框架
+    环境的五个基本问题
+    环境评估四维度
+    奖励带偏警告
+    小环境契约模板
+    与 Harness 的关系
+```
+
 ## 核心命题
 
 Agent 工程的焦点正在从 Harness 向 Environment 外移。

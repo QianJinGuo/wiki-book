@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 20.9KB | `entities/how_claude_code_works_in_large_codebases.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Claude Code works in lar…"))
+    Claude Code 如何导航大型代码库
+      Agentic Search vs RAG
+      局限性
+    Harness 与模型同等重要
+      扩展点层次
+      CLAUDE.md 文件
+      Hooks
+      Skills
+    成功部署的三个配置模式
+      1. 使代码库在大规模下可导航
+      2. 随着模型智能发展主动维护 CLAUDE.…
+      3. 为 Claude Code 管理和 ad…
+    深度分析
+      Agentic Search 的本质优势与结构…
+      扩展点层次的依赖顺序不是技术约束而是认知约束
+      三模式配置的隐含假设
+    实践启示
+    适用场景与局限性
+    相关概念
+    相关实体
+```
+
 ## 核心要点
 - Claude Code 采用**主动搜索（agentic search）**而非 RAG，在本地运行，直接读取实时代码库，无集中式索引延迟
 - **Extension layer 是关键**：CLAUDE.md → Hooks → Skills → Plugins → MCP Servers → LSP/Subagents，五层叠加决定实际表现

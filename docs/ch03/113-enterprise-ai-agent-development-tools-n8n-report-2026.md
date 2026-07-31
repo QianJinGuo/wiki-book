@@ -6,6 +6,20 @@
 
 # Enterprise AI Agent Development Tools (n8n Report 2026)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Enterprise AI Agent Developm…"))
+    深度分析
+      企业 Agent 安全的真实差距
+      对 Agent 平台选型的影响
+      Low-code vs Pro-code 的安…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 n8n 发布的 2026 年企业 AI Agent 开发工具报告（第二版），由独立分析师 Andrew Green 主导。评估 workflow-based 自动化工具在构建企业级 agentic 系统中的能力。报告的核心发现是：**大多数工具的安全能力严重不足**——agent 身份认证几乎普遍缺失，安全护栏流于表面，代码沙箱能力薄弱。MCP 已成为标配，但 A2A 仅少数平台支持。

@@ -10,6 +10,17 @@
 OpenHuman 这个开源项目就是冲着这个缺口去的，开源短时间内收获1.6万 Star，AI Agent又一匹黑马诞生。
 GitHub 描述写的是 "Your Personal AI super intelligence. Private, Simple and extremely powerful."。听起来像是产品页面的广告词，但我看完实现细节之后，觉得这话没夸大。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("1.6万 Star，AI Agent 赛道又杀出一匹黑马！"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Claude 17 Capabilities Workflow Checklist Ruofei](../ch01/976-claude.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/078-claude-code.html)

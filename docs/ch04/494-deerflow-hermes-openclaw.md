@@ -10,6 +10,17 @@
 | **GitHub Stars** | ~28K | ~61K | ~315K |
 | **定位** | Super Agent Harness | 自进化 AI Agent | 自托管 AI 网关 |
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeerFlow · Hermes · OpenClaw…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](../ch03/096-hermes-agent.html)
 - [Openclaw Hermes Source Code Agent Architecture Review](../ch01/232-openclaw-hermes.html)

@@ -6,6 +6,28 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy 最新访谈：从 Vibe Coding …"))
+    核心洞察
+    要点
+    来源
+    深度分析
+      Vibe Coding 与 Agentic E…
+      Software 3.0 的工程含义
+      可验证性决定自动化上限
+      '幽灵'隐喻对工程设计的影响
+    实践启示
+      1. 先建验证体系，再上 Agent
+      2. 用任务可验证性作为引入 Agent 的决…
+      3. 构建 Agent Control Plane
+      4. 投资过程资产而非聊天记录
+    相关实体
+```
+
 ## 核心洞察
 Vibe Coding 拉低下限，Agentic Engineering 解决真实交付问题；可验证性决定 Agent 自动化上限；上下文/工具/测试/运行环境成为 Software 3.0 的核心设计对象。
 

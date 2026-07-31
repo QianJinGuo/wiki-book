@@ -4,6 +4,15 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/loop-engineering应该赞成还是反对.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering，应该赞成还是反对？"))
+    相关实体链接
+```
+
 ## 摘要
 
 本文系统讨论了 Loop Engineering（循环工程）的赞成与反对立场——即 Agent 自主触发、执行、验证和重试的自动化循环是否值得在生产环境中推广。作者持"有条件地赞成"立场：低风险、可验证、容易回滚的工作可以交给 Loop，但目标定义、证据选择、权限扩大和规则修改不应由同一个闭环自行决定。

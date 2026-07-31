@@ -10,6 +10,25 @@ _ ** AgentRun 平台优势已立，开发者侧补位  ** _
 在上一篇文章  《  [ 托管 Agent 执行循环只是起点——AgentRun 托管的更是企业 AI 生产全链路  ](<https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247583492&idx=1&sn=d6ce0429f03fb1042bfc377d38301685&scene=21#wechat_redirect>) 》  中，我们将阿里云 AgentRun 与 Claude Managed Agents (CMA) 进行了正面对比。结论非常清晰：托管式 Agent 已成为行业共识。
 AgentRun 是以高代码为核心、生态开放、灵活组装的一站式 Agentic AI 基础设施平台，为企业级 Agent 提供开发、调试、部署、运维的全生命周期管理。助力企业和开发者专注于 AI 业务创新，无需自建和管理底层基础设施，让 Agentic AI 真正进入企业生产环境。从定位上来讲，  ** AgentRun 是阿里云提供的 Managed Agents 平台  ** ，  与 CMA 相比具备企业级、无厂商锁定两大差异化优势。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentRun CLI v0.1.0 正式开源：一行命…"))
+    相关实体
+    深度分析
+      托管 Agent 的工程化拐点
+      CLI 与 SDK 的分层架构设计
+      声明式 API 的 GitOps 实践
+      多 Agent 编排的平台化趋势
+    实践启示
+      1. 本地开发调试流程优化
+      2. CI/CD 流水线集成
+      3. 多环境 Profile 管理
+      4. SDK 与 CLI 的选型决策
+```
+
 ## 相关实体
 - [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/096-hermes-agent.html)
 - [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/298-ai-agent.html)

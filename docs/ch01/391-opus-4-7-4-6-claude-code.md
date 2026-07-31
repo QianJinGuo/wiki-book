@@ -6,6 +6,22 @@
 
 # Opus 4.7 发布：相比 4.6 核心变化与 Claude Code 搭配最佳实践
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Opus 4.7 发布：相比 4.6 核心变化与 Cla…"))
+    相关实体
+    深度分析
+      1. 自我验证：从'生成工具'到'工程助手'的…
+      2. xhigh effort 与 adapt…
+      3. Auto mode：告别'权限弹窗' 的…
+      4. 视觉能力的战略价值：computer-u…
+    实践启示
+    关联实体
+```
+
 ## 相关实体
 
 - [claude opus 4.8 系统卡片深度分析](ch01/976-claude.html)

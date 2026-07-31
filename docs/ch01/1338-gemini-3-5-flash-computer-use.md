@@ -8,6 +8,21 @@
 
 > **Background**: Google DeepMind 宣布将 Computer Use 能力从独立的 Gemini 2.5 Computer Use 模型升级为 Gemini 3.5 Flash 的原生内置工具。这意味着 Computer Use 不再是独立产品线，而是与 Function Calling、Search、Maps Grounding 并列的模型原生能力，开发者可直接通过 Gemini API 构建跨浏览器、移动、桌面的 Agent。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemini 3.5 Flash 内置 Computer…"))
+    深度分析
+      '模型原生'的架构意义
+      与竞争方案的差异化定位
+      安全方案的完整性评估
+      信息缺口
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Gemini 3.5 Flash 将 Computer Use 作为模型原生能力（而非独立模型或工具层）集成，这是一个重要的架构决策：开发者无需在独立 Computer Use 模型和主模型之间切换，Computer Use 与 Function Calling 共享同一推理引擎，理论上可获得更好的推理-操作协调。在安全方面，Google 采用了对抗性训练 + 用户确认 + 自动中断的三层纵深防御。

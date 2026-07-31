@@ -6,6 +6,20 @@
 
 # Netflix Kueue 迁移：百万级 Batch Job 从 CMB 到 Kubernetes 原生调度
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix Kueue 迁移：百万级 Batch J…"))
+    深度分析
+      迁移架构设计
+      Fair Sharing 与 Preempti…
+      迁移中的工程挑战
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

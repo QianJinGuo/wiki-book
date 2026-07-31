@@ -6,6 +6,21 @@
 
 # An Opinionated Guide to Using AI Right Now
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("An Opinionated Guide to Usin…"))
+    深度分析
+      使用模式的结构性洞察
+      Agent 模型的范式转变
+      模型选择的战略意义
+      免费模型的合理使用
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick 基于 OpenAI 发布的实际使用数据，撰写了一份面向普通用户的 AI 使用指南。文章覆盖了模型选择、付费策略、模型类型区分、Deep Research、多模态输入、内容生成等关键维度，核心观点是：**约 10% 的人类每周使用 AI，但大多数人仍未找到正确的使用方式**。指南的核心建议是：选择一个你喜欢的系统，从真正重要的事情开始，然后通过实验建立直觉。

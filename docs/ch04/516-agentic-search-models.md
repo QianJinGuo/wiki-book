@@ -6,6 +6,21 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-search-models-softwaredoug.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic search models"))
+    Summary
+    Notes
+    相关实体
+    深度分析
+      前沿模型的 80/20 困境
+      Agentic Search Models 的崛起
+    实践启示
+```
+
 ## Summary
 7×8=56 - Article ingested from newsletter candidate pipeline.
 

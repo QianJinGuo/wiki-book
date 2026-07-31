@@ -7,6 +7,35 @@
 # Review Agent 机制深度解析
 来源：[前端Q/winty](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)（2026-05-18），评分 56；同系列有 [Hermes Self-Improving Loop 详解](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)（2026-05-12）覆盖四组件全貌
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Review Agent 机制深度解析（winty）"))
+    核心定位
+    为什么复盘必须独立（独立 Agent 设计）
+      两个根本问题
+      独立 Agent 的三新
+    Review Agent 一次复盘的 4 步流程
+      第 1 步：收集这一轮的素材
+      第 2 步：分类信息类型
+      第 3 步：判断写入价值（3 把尺子）
+      第 4 步：选择目标和写入方式
+    3 类典型失误（Review Agent 也会…
+      失误 1：过度抽象，丢了上下文
+      失误 2：抽得太细，等于流水账
+      失误 3：拟人化，把用户随口的话当偏好
+    实践观察
+      观察 1：写入率应该很低，才是健康信号
+      观察 2：失败任务比成功任务更值得 Review
+      观察 3：Patch 比新建多得多
+      观察 4：偶尔人工 review Review…
+    核心哲学
+    深度分析
+    实践启示
+```
+
 ## 核心定位
 Review Agent = Hermes 的"心智"。独立于执行 Agent 之外，专门负责复盘和判断什么值得沉淀为长期记忆。
 与执行 Agent 的本质区别：执行 Agent 有"已完成任务"的执念，Review Agent 没有。它只看快照，不看情绪。

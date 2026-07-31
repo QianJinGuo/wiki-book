@@ -10,6 +10,19 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evermind-raven-self-evolving-agent-harness.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("EverMind Raven：自进化 Agent Har…"))
+    数字生命四阶段框架
+    EverOS 记忆系统
+      学术成果
+    Raven 自我进化能力
+    全栈生态
+```
+
 ## 数字生命四阶段框架
 
 EverMind 提出的 AI 智能体发展四阶段划分：

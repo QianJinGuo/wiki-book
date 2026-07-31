@@ -8,6 +8,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("下一代企业数字化架构：系统CLI化、流程Skill化、员…"))
+    深度分析
+      核心观点
+    核心命题
+    一、三层架构
+      第一层：业务系统CLI化
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化 涉及agent领域的核心技术议题。

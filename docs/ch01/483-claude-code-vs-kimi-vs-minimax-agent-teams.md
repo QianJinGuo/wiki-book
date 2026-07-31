@@ -6,6 +6,21 @@
 
 # Claude Code vs Kimi vs MiniMax：Agent Teams 到底拼的是什么？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code vs Kimi vs MiniM…"))
+    深度分析
+      「Agent Teams」的本质是 harne…
+      Claude Code Agent Teams…
+      Kimi K2.5 Agent Swarm：规…
+      MiniMax Mavis：状态机驱动的产品化…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Agent Teams 概念近期持续升温——Claude Code 在推 agent teams，Kimi K2.5 把 Agent Swarm 做成了模型能力，MiniMax Mavis 则将 Owner、Worker、Verifier 机制嵌入产品。本文从第一性原理出发，分析三家产品的核心差异：真正有价值的 Agent Teams 拼的不是 agent 数量，而是外层 harness——模型负责聪明，harness 负责管住聪明。

@@ -35,6 +35,25 @@
     const occurrences = content.split(oldText).length - 1;if (occurrences === 0) {  return `Error: old_text not found in ${filePath}`;}if (occurrences > 1) {  return `Warning: old_text found ${occurrences} times in ${filePath}. Please provide a more unique text snippet. No changes made.`;}const updated = content.replace(oldText, newText
 ", "total_lines": 75
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("800行代码实现 Open Claw 的 Tool、消息…"))
+    深度分析
+      薄抽象层策略的工程价值
+      ToolRegistry.exclude …
+      MessageBus 的双模式消费设计
+      并发模型与历史记录一致性
+    实践启示
+      1. 从薄框架开始，保持可替换性
+      2. 能力边界用排除而非授予
+      3. 消息总线的消费模式要匹配运行时特征
+      4. 并发控制从简单方案开始
+    相关实体
+```
+
 ## 深度分析
 ### 薄抽象层策略的工程价值
 Open Claw 选择直接基于 Anthropic SDK 构建，拒绝 LangChain 等中间层，这一决策背后有深刻的工程逻辑。

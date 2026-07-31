@@ -8,6 +8,37 @@
 
 > **Summary**: 使用Amazon Bedrock构建企业业务支持AI Agent的架构与实现指南
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building AI agents for busin…"))
+    核心内容
+    Commuting allowance agent
+      Challenge
+      Solution overview
+      Architecture
+      Results and impact
+    Browser operation agent
+      Challenge
+      Solution overview
+      Architecture
+      Results and impact
+    关键要点
+    深度分析
+      1. LangGraph 到 Strands …
+      2. 成本削减 97% 的三层优化框架
+      3. 浏览器操作智能体的稳定性挑战
+      4. 企业级 Agent 部署的网络隔离与访问…
+    实践启示
+      1. 模型分层降本：从 Haiku 到 Son…
+      2. 浏览器操作 Agent 的三步骤工作流设计
+      3. 提示词缓存的适用条件与实施边界
+      4. 访问受限系统时的固定 IP 方案
+    相关实体
+```
+
 ## 核心内容
 
 # Building AI agents for business support using Amazon Bedrock AgentCore

@@ -6,6 +6,26 @@
 
 # Microsoft Agent Framework Tools 总览
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft Agent Framework To…"))
+    核心定位
+    相关实体
+    4 类工具（按'谁执行、谁托管'划分）
+      1. Function Tools（应用代码）
+      2. Hosted Tools（Provide…
+      3. MCP Tools（Model Cont…
+      4. Foundry 扩展工具（项目级连接）
+    Provider 能力矩阵（Python，精简版）
+    工程含义
+    Tool Approval：框架级统一闸门
+    Agent 作为 Tool：组合式多智能体
+    与系列其他文章衔接
+```
+
 ## 核心定位
 
 > "**工具不是'插件列表'，而是 Agent 对外的能力契约**"

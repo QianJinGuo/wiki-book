@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐ | 7.2KB | `entities/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Coinbase Becomes Hyperliquid…"))
+    事件背景
+    关键角色分工
+      Coinbase——收益共享型 Treasur…
+      Circle——技术部署方
+      Native Markets——过渡期支持
+      Hyper Foundation——生态资助
+    深度分析
+      稳定币格局的马太效应
+      交易所与稳定币发行商的权力博弈
+      Circle 的战略卡位
+      HYPE 代币的即时暴涨
+    实践启示
+      对 DeFi 协议而言
+      对稳定币发行商而言
+      对交易员和投资者而言
+    相关实体
+```
+
 ## 核心要点
 - Coinbase 取代 USDH（Native Markets 发行的 Hyperliquid 原生稳定币）成为 Hyperliquid 官方 USDC  treasury deployer，在 AQAv2（Aligned Quote Asset v2）框架下运营 
 - Coinbase 将与协议共享绝大部分 USDC 储备收益（reserve yields），同时 Circle 作为技术部署方提供跨链转账协议服务 

@@ -11,6 +11,29 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embabel-rod-johnson-framework-era-interview.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Embabel"))
+    核心命题
+    关键设计选择
+      为什么不用状态机（LangGraph 风格）
+      GOAP 两大特点
+      规划过程（A* 本质）
+    与同类框架对比
+    5 大核心优势
+    Rod Johnson 的 8 大核心观点
+      1. 语言之争基本结束 → 邻接性原则
+      2. Coding Agent 正在毁掉代码库…
+      3. Alien Stack 双向伤害
+      4. 对 MCP 持相对怀疑
+    关键金句
+    现状
+    启示（对 agent/harness 团队）
+```
+
 ## 核心命题
 **企业 AI 应用需要规划** — 不是"扔 30 工具给模型循环跑"。业务流程要一致性、可预测性、可解释性。**LLM 只是动作步骤里的一次 HTTP 调用**，不应该是整个控制流。
 

@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-taught-rlvr-jd-cii-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("让大模型学会「自己教自己」！京东&中科院信工所连发三篇论…"))
+    深度分析
+      核心观点
+    核心命题
+    01 RLSD：让'看见答案的自己'来教自己
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义Self-TaughtRLVR 涉及code领域的核心技术议题。

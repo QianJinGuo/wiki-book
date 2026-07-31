@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/E9FFy3r5KWA1Ja5pyWBBrg.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS re:Invent 2026 Agent 技术要点"))
+    深度分析
+      核心观点
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 一、Claude打通Adobe等8大创意软件，三所艺术院校同步试点

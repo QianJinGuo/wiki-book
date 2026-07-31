@@ -8,6 +8,24 @@
 
 > **已评分** | v*c=56 | value=8 | confidence=7 | stars=4
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Meta’s AI Storage Blueprint …"))
+    背景：AI 存储的挑战
+    核心挑战
+    深度分析
+      1. 存储是 AI 基础设施的隐形瓶颈
+      2. Tectonic：Meta 的存储基石
+      3. 从文件系统到 BLOB 存储的架构迁移
+      4. AI 工作负载的独特 I/O 模式
+    实践启示
+    相关实体
+    来源
+```
+
 ## 摘要
 
 Meta 工程博客详细介绍了其面向 AI 训练的大规模 BLOB 存储架构演进。随着模型能力和训练数据集规模呈指数级增长，存储瓶颈已成为 GPU 训练的主要制约因素。Meta 基于 Tectonic 基础块存储层构建了全球统一的 BLOB 存储架构，以最大化 GPU 利用率和研究迭代速度为核心目标。

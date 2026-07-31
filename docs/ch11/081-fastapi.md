@@ -7,6 +7,27 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md)
 从微信文章 [FastAPI上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md) 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FastAPI上线实战：认证、限流、零停机，一套代码搞定"))
+    核心内容
+      主要章节
+    相关实体
+    深度分析
+      1. 认证的本质：信任链的建立而非简单的tok…
+      2. 限流的工程哲学：从'拒绝服务'到'平滑降级'
+      3. 零停机部署的三个支柱
+      4. 数据库迁移的Expand/Contrac…
+    实践启示
+      对后端工程师
+      对DevOps/基础设施团队
+      对技术负责人/架构师
+      快速上手清单
+```
+
 ## 核心内容
 
 ```mermaid

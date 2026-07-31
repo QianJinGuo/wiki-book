@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Bedrock AgentCore 构建 BI 智能体"))
+    相关实体
+    案例概述
+    技术架构
+      核心组件
+      部署与运维
+    三大 AI Agent 详解
+      Deal Analyzer Agent：每日管…
+      Sales Coach Agent：实时验证与…
+      Lead Insight Agent：自动化潜…
+    深度分析
+      为什么此案例具有行业代表性
+      三大 Agent 的设计哲学
+      RAG 在业务规则解释中的关键作用
+      数据质量的'防晚治'
+    实践启示
+      企业引入 AI Agent 的切入点选择
+      技术选型建议
+      可观测性建设
+      成本优化思路
+    关联阅读
+```
+
 ## 核心要点
 
 - 技术主题：Bedrock Agentic AI 应用实践

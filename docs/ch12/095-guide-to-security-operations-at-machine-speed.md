@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/arctic-wolf-security-operations-machine-speed.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Guide to Security Operations…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

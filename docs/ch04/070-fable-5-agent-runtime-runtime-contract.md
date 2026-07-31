@@ -11,6 +11,22 @@
 
 2026-06-14 22:46,架构师 JiaGouX 公众号(若飞)在 Claude Fable 5 提示词泄漏(CL4R1T4S 1585 行)+ Anthropic 2026-06-12 因美国政府指令暂停 Fable 5/Mythos 5 访问 这一连串事件后,发表了**标志性的"Agent 拼 Runtime"工程拆解**。文章主轴不是事件本身,而是借势提问:**强模型开始接长任务后,系统到底要补哪一层?**
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fable 5 的信号:Agent 开始拼 Runtim…"))
+    核心概念 1:Runtime ≠ 模型背后的基…
+    核心概念 2:Runtime Contract…
+    核心概念 3:Task Brief 9 字段模板
+    核心概念 4:能力路由 8 维度
+    核心概念 5:执行状态 — 账本而非聊天记录
+    核心概念 6:长任务适配判断表
+    核心概念 7:设计对象变了 — 8 维度 Ru…
+    核心洞察:Prompt 可复制 vs Prom…
+```
+
 ## 核心概念 1:Runtime ≠ 模型背后的基础设施
 
 > Runtime 不只是模型背后的基础设施。它更像一套 **Agent 运行协议**。

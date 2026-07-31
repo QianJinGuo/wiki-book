@@ -9,6 +9,29 @@
 
 **Kimi Work** 是**月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面**的通用 Agent 产品（2026-06 Beta 发布）。与 **OpenAI 把 Codex 并入 ChatGPT** 同一时间发布，标志 **"Vibe Working" 时代开启**——AI Agent 主战场从写代码迁移到**普通知识工作者的日常工作**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kimi Work：通用 Agent 战场从云端迁移到本地"))
+    相关实体
+    一句话定位
+    三个关键事件
+      ① OpenAI：Codex 周活 500 万…
+      ② Anthropic 提前布局
+      ③ Kimi 发布 Kimi Work（Beta）
+    5 大技术特性
+      ① Harness 搬到用户电脑上（核心架构决策）
+      ② Agent 集群：默认并行（最多 300 …
+      ③ Kimi WebBridge（浏览器桥接）
+      ④ 内置专业金融数据源
+    5 大测试场景实测
+    长程连贯性的工程细节
+    Vibe Coding → Vibe Work…
+    模型公司在通用 Agent 上的天然优势
+```
+
 ## 相关实体
 - [Schemaflow Agentic Database Sql Generation Openai Cookbook](../ch04/237-agentic.html)
 

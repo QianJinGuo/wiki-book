@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/introducing-claude-platform-on-aws-anthropics-native-platfor.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Claude Platform …"))
+    Claude Platform experie…
+    Getting started with Cl…
+      Step 1: Create a worksp…
+      Step 2: Authenticate
+      Step 3: Make your first…
+    Claude Platform on AWS …
+    Conclusion
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## Claude Platform experience through AWS
 With Claude Platform on AWS, you work with the same APIs, features, and console experience available through Anthropic directly. This includes the [Messages API](https://platform.claude.com/docs/en/build-with-claude/working-with-messages), [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview) (beta), [advisor tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool) (beta), [web search](https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool) and [web fetch](https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-fetch-tool), [MCP connector](https://platform.claude.com/docs/en/agents-and-tools/mcp-connector) (beta), [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) (beta), [code execution](https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool), [files API](https://platform.claude.com/docs/en/build-with-claude/files) (beta). For the full list of capabilities, see the [Claude Platform documentation](https://platform.claude.com/docs/en/home).
 You access Claude Platform on AWS through familiar AWS features:

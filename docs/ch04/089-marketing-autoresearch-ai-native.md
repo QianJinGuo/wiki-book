@@ -8,6 +8,35 @@
 
 # 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德 Marketing AutoResearch：营销…"))
+    一句话
+    核心问题：营销系统的'结构性断层'
+    三大技术架构
+      1. 业务协议 Business Proto…
+      2. Agent Team — 多角色协作
+      3. 真实反馈 — 让策略接受业务验证
+    五层解耦工程实现
+      可视化中枢（7 大模块展示）
+      协作入口（5 类追问）
+    实践验证（5 个真实脱敏案例）
+      Case 1: 极端波动下的自动修复
+      Case 2: 外部事件不等于盲目加码
+      Case 3: 节假日前的前置布局
+      Case 4: 从失败维度中重新发现机会
+    深度分析
+      与现有 AutoResearch 实体的差异化定位
+      与高德 AI Native 系列的内部一致性
+      与 高德 AI Companion Agen…
+      与 Harness Engineering…
+    实践启示
+    与已有实体的差异化定位
+```
+
 ## 一句话
 
 高德信息业务中心 2026-06-09 发布的 **Marketing AutoResearch**——面向"长期经营研究问题"的 AI Native 经营托管框架，由人定义**目标/约束/可行动空间/治理边界**，**Agent Team** 在业务协议边界内持续**假设→小步实验→真实反馈→经验沉淀**循环迭代。**3 层技术架构 + 5 层解耦工程实现**，5 个真实脱敏案例验证：年度化利润增量千万级，7 小时 5 次自主决策，零人工介入。

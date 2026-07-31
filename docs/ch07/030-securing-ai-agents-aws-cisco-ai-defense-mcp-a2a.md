@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Securing AI Agents: AWS × Ci…"))
+    深度分析
+      企业 AI Agent 部署的'三盲区'
+      AI Registry + Cisco AI …
+      行业意义：企业 AI 安全的'标准化时刻'
+      与 U Of T Ai Worm Cleve…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AWS 和 Cisco AI Defense 在 2026 年 5 月发布合作方案，针对 MCP（Model Context Protocol，2024-11 推出）、A2A（Agent-to-Agent Protocol，2025-04 推出）和新近兴起的 Agent Skills 在企业基础设施中的规模化部署提供安全护栏。核心交付物是 AWS 主导的开源项目 **AI Registry** 与 Cisco AI Defense 的扫描能力集成——在统一控制平面下完成可见性、供应链扫描、合规审计三件大事，把"人工数周评审"压缩为"自动扫描 + 必要时人工复核"。

@@ -8,6 +8,24 @@
 
 SciAgentGym 是复旦大学 NLP 实验室提出的专为多步科学工具使用而设计的智能体环境，涵盖评测（SciAgentBench）和训练（SciForge）两大模块。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SciAgentGym：多步科学工具使用的 LLM Ag…"))
+    环境设计
+    SciAgentBench 评测集
+    实验结果
+    深度分析
+      长流程任务的指数级难度增长
+      工具调用数量不等于工具使用能力
+      SciForge 的数据哲学：过程比结果重要
+      多模态与多学科交织的评测设计
+    实践启示
+    SciForge 训练
+```
+
 ## 环境设计
 
 SciAgentGym 提供可交互、可执行、可反馈的科学环境，由四类基础设施组成：

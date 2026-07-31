@@ -9,6 +9,25 @@
 > **来源**：阿里云开发者（吉梦林）。本文是 1688 团队 LLM 微调 AutoResearch 的落地实战，基于 TuningFactory（LLaMA-Factory 内部 Fork）+ 星云平台，覆盖电商场景（Query 改写 / 同款判定 / 重排打分）下 Qwen3 系列模型的三阶段自动化调优框架。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-llm-agent-llm-training-optimization-1688-阿里云开发者.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AutoResearch-LLM：让 Agent 接手 …"))
+    核心贡献
+    架构设计
+      三阶段流水线
+      实验隔离
+    关键技术栈
+    踩坑记录
+      PyTorch 2.6 + DeepSpeed…
+      Qwen3 thinking mode 让 B…
+      OSS endpoint 因队列而异
+    与现有工作对比
+    已知不足
+```
+
 ## 核心贡献
 
 将 Karpathy 的 AutoResearch 思想首次落地到 1688 的 LLM 微调场景，核心创新点：

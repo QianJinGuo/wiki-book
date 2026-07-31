@@ -6,6 +6,25 @@
 
 # Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Is Grep All You Need? — 检索 ×…"))
+    论文与作者
+    相关实体
+    三个核心实验发现
+      1. Inline 交付时 grep 10/1…
+      2. 改成交付到磁盘（read）后 vecto…
+      3. 同样 Claude Opus 换 har…
+    核心概念定义
+    主实验结论
+    论文深层主张
+    论文标题的精确答案
+    论文呼吁的研究方向
+```
+
 ## 论文与作者
 
 **论文**：*Is Grep All You Need?*（来自普华永道，arXiv 2605.15184）

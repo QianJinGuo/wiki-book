@@ -6,6 +6,24 @@
 
 # Claude Code 多 Agent Harness 源码拆解
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 多 Agent Harness …"))
+    核心结论
+    四个源码级机制
+      1. 通信 = 互相留小纸条（pendingM…
+      2. 隔离 = 一项一项手工抠（createS…
+      3. 省钱 = 抠到一个标点都不差（Fork …
+      4. 并行 = 捆住主 agent 的手脚（C…
+    设计模式提炼
+    与 Harness Engineering 理…
+    关键洞察
+    相关实体
+```
+
 ## 核心结论
 
 多 Agent 协作不是 AI 协作出来的，是 harness 用土得掉渣的工程手段在模型外面硬搭出来的脚手架。决定多 agent 系统好不好用的，从来不是里面的 agent 有多聪明，而是外面这层脚手架搭得有多结实。

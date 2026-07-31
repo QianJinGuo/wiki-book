@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The New Era of Cloud AI Mobi…"))
+    概述
+    核心技术
+    深度分析
+      AI-SDLC 闭环中的移动测试断点
+      云端设备平台的核心优势
+      Amazon Device Farm + MC…
+      效率提升的真实数据
+    实践启示
+      立即可行的行动
+      中长期战略建议
+      关键风险与注意事项
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

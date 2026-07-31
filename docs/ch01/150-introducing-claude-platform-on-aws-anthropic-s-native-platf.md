@@ -9,6 +9,18 @@
 Today, we’re excited to announce the general availability of Claude Platform on AWS. Claude Platform on AWS is a new service that gives customers direct access to Anthropic’s native Claude Platform experience through their AWS account, with no separate credentials, contracts, or billing relationships required. AWS is the first cloud provider to offer access to the native Claude Platform experience.
 In this post, we explore how Claude Platform on AWS works and how you can start using it today.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Claude Platform …"))
+    Claude Platform experie…
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## Claude Platform experience through AWS
 
 ## 相关实体

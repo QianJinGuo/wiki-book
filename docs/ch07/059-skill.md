@@ -6,6 +6,30 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-aliyun-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("重新定义Skill开发：保姆级教程&一站式开发助手发布"))
+    核心价值
+    关键知识点
+      Skill 定义与加载机制
+      Skill 平台生态
+      Agent 平台 Skill 使用
+      SKILL.md 规范
+    深度分析
+      跨平台一致性的工程挑战
+      版本管理的流水线设计
+      自我进化机制的战略价值
+    实践启示
+      开发阶段
+      发布阶段
+      运维阶段
+    相关页面
+    相关实体
+```
+
 ## 核心价值
 阿里内部工程师分享的 **Skill（技能）开发完整教程**，从概念定义到一站式开发助手，覆盖 Skill 整个生命周期。
 

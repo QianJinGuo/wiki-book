@@ -6,6 +6,24 @@
 
 # AI-powered BI with Snowflake and Amazon QuickSight
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI-powered BI with Snowflake…"))
+    深度分析
+      语义层架构的范式意义
+      LLM 幻觉的技术机制
+      与 Agent 生态的交叉
+      Open Semantic Interchan…
+    实践启示
+      适用场景
+      实施注意事项
+      局限性
+    相关实体
+```
+
 ## 摘要
 
 AWS 与 Snowflake 联合发布的端到端 AI-powered BI 集成方案。核心创新：通过 Snowflake Semantic Views 在数据层统一业务语义，让 Cortex Analyst（自然语言查询）和 Amazon QuickSight（可视化仪表盘）共享同一套语义定义，从根本上解决"多个看板数字不一致"的信任危机。这一方案将语义层从 BI 工具下沉到数据平台，是 LLM 时代数据治理架构的重要演进。

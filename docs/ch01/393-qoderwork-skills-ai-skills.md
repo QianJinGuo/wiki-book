@@ -16,6 +16,33 @@
 
 > 本文以作者从传统数科向 AI 数科转型的实践为背景，系统阐述了 QoderWork Skills 的开发方法论与工程体系。文章指出 Skill 本质是将领域知识、标准流程及避坑指南封装为 AI Agent 可执行的"数字助手"，并提出了由编排层（SKILL.md）、参数层（config.yaml）、实现层（scripts/）和知识层（references/）构成的四层分离架构，强调通过结构化指令而非单纯代码注入来提升分析效率与输出稳定性。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("QoderWork Skills 开发实践：从传统数科到…"))
+    Skills 的本质
+    四层分离架构
+      SKILL.md（编排层）
+      config.yaml（参数层）
+      scripts/（实现层）
+      references/（知识层）
+    优秀 Skill 案例分析
+      Follow Builders
+      Frontend Slides
+    自研 Skill 实战
+      用户洞察报告生成（user-insight-r…
+      AB 实验分析（ab-experiment-a…
+    深度分析
+      四层分离：Agent 时代的'关注点分离'架构
+      '反模式清单'与负向约束的设计模式
+      从 Idealab RAG 到 Skills：…
+      配置即模板：参数化设计的哲学转变
+    实践启示
+    相关实体
+```
+
 ## Skills 的本质
 
 Skill 本质上是一份清晰、可执行的指令文档，用于明确告诉模型在什么条件下、按什么步骤产出结果。它不是一个独立的工具或应用，而是给 AI Agent 的一份"领域专家手册"：

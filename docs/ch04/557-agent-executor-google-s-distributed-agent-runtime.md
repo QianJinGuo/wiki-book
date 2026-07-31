@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/agent-executor-googles-distributed-agent-runtime-da1bb4.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Executor, Google's dis…"))
+    标签
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 Detailed technical overview of Google's Agent Executor runtime with substantial architectural concepts. Covers durable execution, secure isolation, session consistency, connection recovery, and trajectory branching - all unique insights for distributed agent systems.

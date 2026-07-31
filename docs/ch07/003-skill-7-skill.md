@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 24.6KB | `entities/skill-writing-patterns-best-practices.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("工作流的 Skill 怎么写？从 7 个顶级 Skill…"))
+    一、Skill 是什么
+    二、Frontmatter：决定 Skill …
+      2.1 必填字段
+      2.2 Description 的写法决定加载率
+      2.3 可选扩展字段
+    三、5 种核心设计模式
+      模式 1：线性流程
+    Prerequisites（前置条件）
+    Quick Start（主流程：Step 1 …
+    Fallback（降级方案）
+    Troubleshooting（故障排除）
+      模式 2：决策树 + 按需加载
+    Authentication（认证前置）
+```
+
 ## 一、Skill 是什么
 Skill 是一个文件夹，核心是 `SKILL.md` 文件，使用 YAML frontmatter + Markdown 正文的格式。当 LLM 判断需要某个 Skill 时，会调用 `skill` 工具加载它，SKILL.md 的全部内容会作为 tool-result 注入到对话上下文中，LLM 读到后自主决定怎么执行。
 ```

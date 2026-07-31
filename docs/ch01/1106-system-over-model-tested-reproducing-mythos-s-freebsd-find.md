@@ -6,6 +6,20 @@
 
 # System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("System Over Model, Tested: R…"))
+    相关实体
+    深度分析
+      核心观点
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 - [unexpected lessons from an ai-assisted prototyping experimen](../ch05/094-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)

@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/valkey-why-valkey-performance.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Valkey 为什么这么快？盘点 Valkey 中提升性…"))
+    深度分析
+      从 Redis fork 到独立生态
+      性能优化的工程哲学
+      GLIDE 客户端的战略意义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Valkey 是 Redis 的开源 fork，作为 Amazon ElastiCache 的核心引擎，单节点吞吐量可达 119 万 RPS，集群规模可扩展至 2000 节点实现 10 亿级 RPS。Valkey 9.0 发布后 Pipeline 吞吐量再提升 40%。其性能突破源于五层架构的系统性优化：从网络 I/O 层的异步并发多线程、CPU 层的单线程命令执行 + 流水线批处理、数据结构层的缓存行优化哈希表和 Fenwick 树、到集群层的 Gossip 协议和自动故障转移。

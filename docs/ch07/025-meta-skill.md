@@ -11,6 +11,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Meta Skill"))
+    它解决了什么
+    三大要素组合
+    典型实现：meta-kid-project-p…
+    真实成本
+    解决方案：个人 × 社区索引协议
+    范式：Skill 2.0
+    三条线交点（为什么现在出）
+    与多 Agent 团队的关系
+```
+
 ## 它解决了什么
 **SOP 已梳理清楚，但每个蓝色方块都要在对话框单独调 Skill** —— 像戳一下动一下，全程 Human in the loop，光翻 Skill 列表就够忙活半天。
 

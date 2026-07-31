@@ -6,6 +6,20 @@
 
 # Dockerless: 免环境补丁验证器
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Dockerless: 免环境补丁验证器"))
+    深度分析
+      验证器瓶颈的工程意义
+      与现有验证器的对比
+      关键技术细节
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Dockerless 是上海交通大学与抖音集团提出的免环境（environment-free）补丁验证器，通过 Agent 式两阶段流水线（并行子 Agent 代码库探索 + 综合判决）评估 Coding Agent 补丁的正确性。在 SWE-bench Verified/Multilingual/Pro 三项基准上，Dockerless-RL-9B 分别达到 62.0%/50.0%/35.2%，与依赖 Docker 测试的 oracle 方案仅差 0.4-1.3 个百分点。验证器 AUC 81.0，比最强开源 DeepSWE Verifier 高 14.3 点。

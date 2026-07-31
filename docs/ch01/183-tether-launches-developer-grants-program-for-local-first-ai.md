@@ -7,6 +7,17 @@
 > -> 原文存档
 # Tether launches developer grants program for local-first AI and payments infrastructure
 > 来源：原文存档
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tether launches developer gr…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Tether 推出开发者资助计划，$1,500–$4,000/项，无总额上限
 - 资助方向：QVAC 平台（端侧 AI 推理）+ 自托管钱包基础设施

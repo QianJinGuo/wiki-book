@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/hermes-agent-goal-runtime-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent /goal 长任务运行时架构"))
+    元信息
+    核心洞察
+    四大运行时部件
+    GoalState 设计要点
+    Judge 判定策略：保守优先
+    fail-open 异常保护
+    与 Codex CLI / Claude Co…
+    深度分析
+```
+
 ## 元信息
 - **作者**：AI 小老六（微信公众号）
 - **日期**：2026-05-19

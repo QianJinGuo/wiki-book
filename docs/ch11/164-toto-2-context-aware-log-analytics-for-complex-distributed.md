@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Toto 2: Context-aware log an…"))
+    深度分析
+      背景：时间序列基础模型的演进节点
+      核心技术特性
+      训练数据与架构
+      未来方向
+    实践启示
+      对于可观测性平台团队
+      对于ML工程师
+      对于AI研究社区
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

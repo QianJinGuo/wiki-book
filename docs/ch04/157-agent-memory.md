@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/agent-memory-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Memory 架构本质"))
+    Overview
+    核心命题
+    边界划定
+    蒸馏 ≠ 记忆
+    四类建模对象
+    基本记忆单元：六维度
+    三条链路
+      写入 = 预算分配
+      管理 = 防止垃圾堆化
+      读取 = 任务约束驱动
+    进化 = 修正 + 遗忘
+      自我修正
+      有策略的遗忘
+```
+
 ## Overview
 Agent Memory 不是"把聊天记录存起来"，而是一个完整的 **write–manage–read 闭环**，决定什么信息被允许持续影响未来决策。核心问题不是容量，而是**治理**——谁被允许持续影响未来。
 

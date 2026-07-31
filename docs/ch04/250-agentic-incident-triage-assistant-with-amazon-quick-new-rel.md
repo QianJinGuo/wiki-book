@@ -8,6 +8,23 @@
 
 > AWS 官方博客实战教程（Ebbey Thomas / Muthuvelan Swaminathan），2026-06-09 发布。展示 Amazon Quick chat agent 如何通过 native MCP 集成编排 New Relic 推理工具 + Asana 任务系统，从单次 prompt 端到端完成 incident triage + RCA brief + handoff task 自动化。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Incident Triage Assi…"))
+    相关实体
+    深度分析
+      1. Agentic 编排架构：Chat Ag…
+      2. New Relic 5 个推理工具的 T…
+      3. RCA Brief 标准格式：Cross…
+      4. 异步补全 vs 实时编排的对比
+    与现有 wiki 实体的差异化
+    实践启示
+    相关主题
+```
+
 ## 相关实体
 
 - [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](../ch11/222-amazon-quick.html)

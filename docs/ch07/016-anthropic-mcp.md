@@ -12,6 +12,27 @@
 > date: 2026-04-23
 > tags: #MCP #Agent #Claude #Tool-Search #代码编排 #Cloudflare #Skills
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 最新博客：MCP 没死，它又来了"))
+    核心摘要
+    01 社区批评回顾
+    02 Anthropic 的回应：三条路各有地盘
+    03 Token 解法
+      解法一：Tool Search（按需加载）
+      解法二：程序化工具调用
+      综合效果
+    04 Cloudflare 的实践：代码编排模式
+    05 Skills 转正
+    06 MCP 的真正地盘
+      三问题的 Anthropic 回答
+      发展图景
+    深度分析
+```
+
 ## 核心摘要
 Anthropic 发布官方博客《Building agents that reach production systems with MCP》，回应社区对 MCP 三大批评（贵、schema 臃肿、不可组合），给出具体解法。核心结论：本地开发 → CLI + Skills；云端生产 → MCP + Skills；MCP 并未过时，正在成为云端 Agent 的标准化接入层。
 ---

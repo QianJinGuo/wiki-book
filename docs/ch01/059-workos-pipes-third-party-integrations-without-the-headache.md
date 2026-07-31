@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐ | 7.6KB | `entities/workos-pipes-third-party-integrations.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("WorkOS Pipes: Third-party in…"))
+    深度分析
+      市场定位：API Economy 的'钻井平台…
+      技术架构：三层抽象
+      关键洞察：授权与认证的解耦
+      共享凭证的双重用途
+    实践启示
+      何时考虑使用 Pipes
+      集成架构建议
+      共享凭证的使用策略
+      安全注意事项
+    相关资源
+    相关实体
+```
+
 ## 核心要点
 - OAuth 集成基础设施（ token 管理、刷新、存储）是重复劳动，WorkOS Pipes 将其抽象为单 API 调用
 - Pipes 核心价值：用户授权与登录认证解耦，SSO 用户（如 Okta 登录）仍可独立授权 Google Calendar 等数据服务

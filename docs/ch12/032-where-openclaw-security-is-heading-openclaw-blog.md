@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/where-openclaw-security-is-heading-openclaw-blog.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Where OpenClaw Security Is H…"))
+    深度分析
+      1. 从'验证'到'执行'：安全控制点的重新定位
+      2. Agent 供应链的结构性风险：Claw…
+      3. Prompt Fatigue 与上下文感…
+      4. 静态分析即可持续安全：GHSA 到 Op…
+    实践启示
+      对 Agent 系统开发者
+      对 Agent 用户
+      对安全研究者
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

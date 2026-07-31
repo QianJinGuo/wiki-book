@@ -8,6 +8,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-ai-chat-llmreaper.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLMReaper - DOM Based AI Con…"))
+    深度分析
+      攻击面的根本问题：浏览器扩展模型设计
+      MutationObserver 的滥用与防御困境
+      服务 Worker 的 Same Origin…
+      LLM 对话作为新的'凭证泄露通道'
+    实践启示
+      对个人用户
+      对企业安全团队
+      对 LLM 平台厂商
+      对安全研究社区
+    相关实体
+```
+
 ## 摘要
 
 LLMReaper 是由安全研究员 thewhiteh4t 发布的 PoC 项目，演示了恶意浏览器扩展如何在用户完全无感知的情况下，实时窃取 ChatGPT、Claude、Gemini 三大主流 LLM 平台上的对话内容。它利用浏览器标准 API `MutationObserver` 监听 DOM 变化，结合 Manifest V3 服务 worker 完成跨域外传，整个过程无需任何额外权限请求即可工作。

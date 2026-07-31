@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐⭐ | 10.5KB | `entities/icml-2026-position-turing-completeness-context-management-ruc-wei-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ICML 2026 Position Paper — T…"))
+    概述
+    深度分析
+    实践启示
+    5 上下文管理模式 → 复杂度层级谱系
+    缩放族假设 vs 固定系统对照
+    相关实体
+```
+
 ## 概述
 
 ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive Transformers Relies Heavily on Context Management"** (崔冠宇/魏哲巍/何昆, 人大高瓴 AI 学院) 形式化证明：**真实 LLM 是三元组 (T, D, C)**（固定 Transformer + 固定解码规则 + 上下文管理器）；**T 不变、只换 C，系统的计算能力从正则语言 (REG) 跨越到图灵完备**，横跨 3 个复杂度层级。论文同时澄清：刷屏的"Transformer 图灵完备证明"实际是**缩放族假设**（scaling family），与"固定部署 LLM" 不是同一对象。论文最后对 Harness 工业实践给出明确呼应："**上下文管理这类 Harness，乃至把能力沉淀、复用为可调用单元的 skill，都是模型系统的一种实现方式**"。

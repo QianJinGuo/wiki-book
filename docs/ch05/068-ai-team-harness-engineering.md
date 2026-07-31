@@ -5,6 +5,29 @@
 > 📊 Level ⭐⭐ | 8.2KB | `entities/tencent-ai-team-knowledge-harness.md`
 
 # 腾讯 AI Team 知识沉淀体系
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯 AI Team 知识沉淀体系（Harness En…"))
+    概述
+    核心贡献
+    核心原则
+    来源
+    深度分析
+      核心命题：Harness Engineerin…
+      三维正交知识体系的工程价值
+      知识生命周期三通道设计的巧思
+      三级渐进式索引的工程意义
+    实践启示
+      知识沉淀的冷启动路径
+      独立 Git 仓库的工程理由
+      知识贡献的共识机制
+      自动衰减的实操配置
+    相关实体
+```
+
 ## 概述
 腾讯 AI 工程交付团队（AI Team）提出的完整知识沉淀实践体系，核心主张：**Harness 不是目的，知识才是护城河**。工作流只是管道，知识才是流过管道的活水。
 

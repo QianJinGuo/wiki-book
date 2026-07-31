@@ -8,6 +8,18 @@
 
 > **Background**: This entity documents Elliot Smith's Autoresearch experiment, where Claude Code was used autonomously to develop a file compression algorithm over 10 iterations. The work is in the tradition of Karpathy's "Autoresearch" concept — using AI agents to autonomously explore and solve constrained engineering problems.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Autoresearch: AI Agent-Drive…"))
+    实验设计
+    结果
+    方法论意义
+    与同类工作的关系
+```
+
 ## 实验设计
 
 Smith 选择了文件压缩作为测试问题，因为其目标函数简单（文件体积越小越好）且约束明确（位完美往返 + 压缩/解压不超过 300 秒）。使用 Claude Code (Sonnet 4.6) 默认设置，Rust 语言（类型系统自动强制执行签名约束）。

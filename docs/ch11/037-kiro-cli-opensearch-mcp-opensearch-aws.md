@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从手动到智能：用 Kiro CLI + OpenSear…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+      1. 技术架构的本质：MCP 协议作为'通用适…
+      2. Kiro CLI 的多层次 Agenti…
+      3. 三大典型场景的技术深度分析
+      4. 技术组合的战略意义：从工具到平台
+    实践启示
+      立即可行的行动
+      中期建设方向
+      长期战略思考
+```
+
 ## 概述
 
 ```mermaid

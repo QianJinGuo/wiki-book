@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/agent-harness-architecture-deep-dive-aksahy.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Harness 解析：智能体架构深度拆解"))
+    核心定义
+    三层工程模型
+    12 个生产级组件
+    7 个设计决策
+    主流框架对比
+    关键洞察
+    深度分析
+      Harness 的本质：计算系统的自然抽象
+      上下文腐烂：被低估的核心瓶颈
+      '笨循环'哲学的战略价值
+      框架战争的实质
+    实践启示
+```
+
 ## 核心定义
 **Agent Harness** = 包裹 LLM 的完整软件基础设施：编排循环、工具、记忆、上下文管理、状态持久化、错误处理、安全护栏。
 关键区分：

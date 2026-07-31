@@ -6,6 +6,19 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/citriniresearch-supply-chain-inheritance.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Semis Memo: Supply Chain Inh…"))
+    Summary
+    Notes
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## Summary
 7×7=49 - Article ingested from newsletter candidate pipeline.
 

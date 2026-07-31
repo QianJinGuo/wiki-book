@@ -8,6 +8,26 @@
 
 > **/checkup** 是 Claude Code 团队在 2026 年 7 月推出的新命令，用于对 Claude Code 环境进行全面体检（healthcheck），清理积灰的 Skills、MCP 服务器、插件和过度膨胀的 CLAUDE.md。由 Claude Code 之父 Boris Cherny 亲自宣布，旨在解决 Agent 工具生态快速膨胀带来的"配置腐烂"问题。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code /checkup 功能：清理 S…"))
+    背景
+      配置腐烂（Configuration Rot）问题
+      Boris Cherny 的亲自验证
+    核心功能：七项体检清单
+    用户实测体验
+    深度分析
+      '配置腐烂'是 Agent 原生开发环境的系统…
+      5.5K Tokens 的经济学意义
+      从'手动维护'到'自动健康检查'的范式转变
+      对 Agent 工具供应链的启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 重度使用 Claude Code 的用户通常会积累大量 Skills、MCP 工具、插件和 hooks。每次开启新 session 时，所有这些配置都会被加载，其中不少已经过时或不再使用。这些"数字灰尘"不仅拖慢启动速度，还可能导致冲突和意外行为。/checkup 命令正是为了解决这一系统性问题而设计的——它扫描完整环境，识别并帮助清理冗余配置，为每个 session 省下可观的上下文空间。

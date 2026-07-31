@@ -8,6 +8,18 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-skills-workflow-encapsulation-costa-long.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Skills：让 Claude 记住「怎么做」，告别重复教学"))
+    深度分析
+    实践启示
+    关联实体
+    相关实体
+```
+
 ## 摘要
 
 CostaLong 月影 2026 年 5 月的这篇文章系统介绍 Claude Code 的 Skills 机制 — **把常用工作流封装成可复用的技能，一次定义多次使用**。核心配置项包括 `context: fork`（隔离 Subagent 运行，不污染主 session）和 `disable-model-invocation: true`（防止自动触发，适合有副作用的操作）。Skills 是 Claude Code 相比 prompt 的关键升级：可跨项目持久、可链式组合、可分级权限管控。

@@ -6,6 +6,32 @@
 
 # StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("StarAgent/Drogo WebTerminal …"))
+    Overview
+    4 层职责分离
+    黑屏模式更新（wsh/wcp）
+      3 个关键体验提升
+      遗憾
+    会话设计：复用已登录浏览器上下文
+      4 个直接收益
+    命令执行：动态闭环而非固定 suite
+      三份证据文件
+    文件传输：协议化，告别 DOM 自动化
+      5 个文件 API
+      下载路径
+      上传路径
+    交互式调试：默认接口应该像普通 shell
+      HTTP 控制面（默认）
+      状态保持
+      Playwright 单线程教训
+    验收案例：Emacs + eshell + g…
+```
+
 ## Overview
 
 阿里基础设施团队（阿里妹导读，2026-06-01）发布的工程实践：**StarAgent/Drogo WebTerminal CLI**（仓库 `foundation_models/webterminal-cli`）。把企业内部 WebTerminal 抽象成稳定的 CLI 执行面 `wt` + `wsh` + `wcp`，让 Agent 远程排障不再"隔着 DOM 猜命"。

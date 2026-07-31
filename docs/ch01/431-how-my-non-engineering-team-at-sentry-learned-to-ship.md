@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How my non-engineering team …"))
+    深度分析
+      触发点：CMS 不对称成为 velocity 杀手
+      迁移战果
+      增量产出（迁移后 4 个月）
+      关键基础设施：page-type Skills
+    实践启示
+    原文链接
+    相关实体
+```
+
 ## 摘要
 
 Sentry 增长团队成员 Matt 2026 年 6 月在 "Technically" newsletter 发表的实战复盘：原本被 CMS 锁住的市场营销站点，在接入 Claude Code 后被一个非工程团队（作者本人 4 个月前还不会写代码）在 2.5 名开发者的 2 个月内把约 2500 个页面迁移为 Git 仓库中的 Markdown 与代码，并同时把框架从 Gatsby 换成 Astro。真正的驱动力不是降本，而是"让 agent 能完整地操作整个站点"——CMS 把站点切成两半，一半能被 agent 秒级更新，另一半完全触不可及，这种不对称日益难以忍受。文章是 CMS + agent 时代组织级 web 团队转型的典型案例。

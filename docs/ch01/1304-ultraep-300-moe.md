@@ -10,6 +10,28 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ultaep-moe-expert-load-balancing-300us.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("UltraEP：300微秒实时 MoE 专家负载均衡"))
+    问题
+    核心设计
+      GPU-native 在线求解器
+      通信 Kernel
+      共享冗余 Slot
+    结果
+    深度分析
+      从'预测'到'实时求解'的范式转变
+      Quota 机制的联合优化价值
+      通信 Kernel 的双缓冲与中继架构
+      跨层共享冗余 Slot 的空间效率
+    实践启示
+    相关实体
+    开源
+```
+
 ## 问题
 
 MoE 热点专家导致负载倾斜，实际吞吐与理想状态可达 2 倍差距。热点难提前猜准——随输入/网络层/routing bias 快速变化。

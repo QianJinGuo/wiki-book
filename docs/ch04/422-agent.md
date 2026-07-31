@@ -15,6 +15,17 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-era-architect-skills-guide.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 时代，我们架构师应该学什么？"))
+    深度分析
+    实践启示
+    相关阅读
+```
+
 ## 深度分析
 
 1. **筛选比路线图更耐用——用"半衰期"思维过滤 Agent 新工具**

@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 10.3KB | `entities/p-ic-work-is-the-new-career-flex.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("IC work is the new career flex"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 传统晋升路径：从 IC（个人贡献者）晋升为 Manager → Director → VP，被视为"成功"的标志
 - 新趋势：真正的 career flex 是从管理岗位**回归 IC 角色**，尤其是 High-Impact IC（HI-C）

@@ -8,6 +8,27 @@
 
 > **Background**：Liquid AI 发布其最小模型 LFM2.5-230M，专为边缘设备和 Agent 工作流设计。基于 LFM2 架构，在 Galaxy S25 Ultra 上达到 213 tok/s 解码速度，是当前同参数量级中推理速度最快的模型之一。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LFM2.5-230M: Built to Run An…"))
+    核心指标
+    训练与微调
+      机器人端部署验证
+    Benchmark 表现
+    推理性能
+      CPU 推理
+      GPU 推理
+    生态系统支持
+    深度分析
+      对边缘 Agent 生态的意义
+      技术路线意义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 LFM2.5-230M 是 Liquid AI 发布的 230M 参数基础模型，定位于边缘设备部署和 Agentic 工作流。该模型在 19T tokens 上预训练，包含 32K 上下文扩展阶段，采用三阶段后训练配方（SFT 蒸馏 → DPO → 多领域 RL）。尽管参数量极小，它在工具调用、数据提取等任务上表现出色，且可在 Raspberry Pi 5 等低成本 CPU 上实时运行。

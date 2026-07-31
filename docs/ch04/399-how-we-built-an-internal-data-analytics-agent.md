@@ -8,6 +8,20 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-internal-data-analytics-agent-copilot.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How we built an internal dat…"))
+    核心内容
+    How Qubot works
+      User interface
+      Context layer
+      Context agent
+      Evaluation framework
+```
+
 ## 核心内容
 
 Published Time: 2026-06-19T09:00:00-07:00

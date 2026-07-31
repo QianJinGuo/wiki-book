@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于Bedrock Agentcore 实现智能成本分析…"))
+    概述
+    核心技术
+    深度分析
+      架构创新：单Agent双模式设计
+      技术栈选型分析
+      核心Tools设计
+      定时监控与告警机制
+    实践启示
+      架构设计层面
+      开发实践层面
+      运维实践层面
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

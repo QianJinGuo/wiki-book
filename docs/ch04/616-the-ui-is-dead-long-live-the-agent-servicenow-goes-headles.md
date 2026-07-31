@@ -6,6 +6,17 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-ui-is-dead-agent.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The UI is dead, long live th…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - **Action Fabric**：ServiceNow 在 Knowledge 2026 推出的架构层，使整个 ServiceNow 平台（workflows、playbooks、业务流程）可通过 MCP Server 向所有 AI Agent 开放
 - **Anthropic 首家设计合作伙伴**：Claude Cowork 已直接接入 ServiceNow 受治理的行动系统，员工可通过 Claude 在 Cowork 中直接请求 ServiceNow 访问权限并触发审批链

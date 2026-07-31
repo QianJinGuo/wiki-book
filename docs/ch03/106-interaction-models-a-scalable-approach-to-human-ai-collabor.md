@@ -8,6 +8,21 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Interaction Models: A Scalab…"))
+    深度分析
+      当前 AI 交互的瓶颈：回合制限制
+      微回合架构的技术创新
+      双层架构：实时响应 + 深度推理
+      新交互维度的基准测试
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Thinking Machines Lab 发布了交互模型（Interaction Models）的研究预览——一种将交互能力内置于模型本身而非外部脚手架的新型 AI 架构。核心创新是"时间对齐的微回合"（time-aligned micro-turns）设计：模型以 200ms 为单位持续交错处理输入和生成输出，实现音频、视频、文本的全双工实时交互。其 TML-Interaction-Small 模型（276B MoE，12B active）在 FD-bench 交互质量基准上大幅领先 GPT Realtime 和 Gemini Live。

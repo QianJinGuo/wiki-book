@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐⭐ | 18.5KB | `entities/llm-self-improvement-system-survey-zesearch-nlp-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLM 自我提升系统综述 — Yang 等 113 页四…"))
+    概述
+    触发背景：Anthropic 'When AI…
+    核心框架：四阶段闭环 + 一控制层
+      1. 数据获取（Data Acquisitio…
+      2. 数据筛选（Data Selection）…
+      3. 模型优化（Model Optimizat…
+      4. 推理细化（Inference Refin…
+    六大风险
+    六大应用场景
+    四大未来方向
+    与现有实体的差异化定位
+    深度分析
+```
+
 ## 概述
 
 纽约州立大学石溪分校 Zesearch NLP Lab（Haoyan Yang、Jiawei Zhou 等）发布 113 页、涵盖 500+ 前沿文献的 LLM 自我提升（Self-Improvement）全景综述（arXiv 2603.25681，GitHub `Zesearch/self-improvement-llm`），提出 **LLM 自我提升系统**这一系统级闭环框架：四阶段（数据获取 → 数据筛选 → 模型优化 → 推理细化）+ 一贯穿控制层（自动评估）。与既有"自我演化智能体（Self-Evolving Agents）"研究关注 agent 行为层不同，这篇综述**从模型自身能力出发**，整合分散在数据/训练/推理/评估的方法为核心问题——**如何在不同阶段利用模型自身能力推动持续且自主的改进**。

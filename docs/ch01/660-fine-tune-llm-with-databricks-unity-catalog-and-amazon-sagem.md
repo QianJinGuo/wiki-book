@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Fine-tune LLM with Databrick…"))
+    相关实体
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 核心要点
 - Databricks Unity Catalog + Amazon SageMaker AI 微调方案
 - 使用 Nova Micro 微调

@@ -10,6 +10,21 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-first-year-retrospective-agi-hunt.md)
 > 视频原片：[YouTube](https://www.youtube.com/watch?v=Hth_tLaC2j8)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 一周年回顾：Boris Cher…"))
+    深度分析
+      一、两个赞的起点：AI 产品的早期反馈悖论
+      二、Self-Validating Loop：…
+      三、Routines：Agent 同步 → 异…
+      四、Auto Mode 的反直觉安全论点
+    实践启示
+    关联实体
+```
+
 ## 摘要
 
 文章是 Boris Cherny + Cat Wu 在 Claude Code 一周年时录制的视频文字稿，主题是回顾产品形态如何从"终端聊天工具"演化为"AI 编程基础设施"。覆盖 10 个章节：起点（两个赞）、验证机制（self-validating loop）、人人写代码（PM/设计师/数据科学家都在用）、Routines（同步 → 异步）、Auto Mode（用另一个模型做安全审查）、Loop 与手机编程、Context 极简主义、源码泄露风波（v2.1.88 npm source map 事件）、一年时间线、下一年展望。

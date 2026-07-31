@@ -10,6 +10,20 @@
 > **作者**: Richard Hanstock FBCS (Barrister, Deeptech Legal 创始人)
 > **发布日期**: 2026-06-02
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("New legal questions: agentic…"))
+    深度分析
+      1990 年法律框架 vs 2026 年技术现实
+      Agent 身份的'非人类身份爆炸'
+      渗透测试作为 Agent 法律问题的'试验场'
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 BCS 发表深度分析文章，探讨 AI Agent 自动化渗透测试带来的四个全新法律问题：prompt injection through target、authorisation delegation、cross-engagement contamination 和 non-determinism。文章指出当前法律框架（如英国 Computer Misuse Act 1990）是为人类决策者设计的，无法直接适用于自主 Agent 的实时决策场景。行业正在通过合同条款"papering over"这些法律空白，但尚未经过司法检验。

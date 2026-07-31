@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/fudan-peking-ahe-agentic-harness-engineering.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("复旦北大 AHE：Agentic Harness Eng…"))
+    1. 被忽视的「Harness Enginee…
+    2. AHE 核心设计：三大可观测性支柱
+      2.1 组件可观测性：文件级解耦 Harness
+      2.2 经验可观测性：分层蒸馏轨迹证据
+      2.3 决策可观测性：可证伪的编辑契约
+    3. 实验结果
+      3.1 AHE 能否超越人类与自动化基线？
+      3.2 进化结果是否过拟合？
+      3.3 增益从哪来？自归因可靠性
+    深度分析
+      可观测性驱动的范式转移
+      进化 Agent 的能力边界
+      组件非加性交互
+      任务饱和效应与跨模型迁移
+    实践启示
+      可观测性基础设施建设优先
+      极简种子设计原则
+      硬约束与自声明预测
+      预测-验证闭环
+    相关实体
+```
+
 ## 1. 被忽视的「Harness Engineering」瓶颈
 
 Coding Agent 的进展不只取决于 Base Model 的智商，更取决于它外围的工程架构——Harness。Harness 是模型与外部世界之间的「中介层」，包括：System Prompt、Tools、Middleware、Skills/Sub-agents、Long-term Memory。

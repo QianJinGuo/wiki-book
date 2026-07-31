@@ -6,6 +6,22 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multica-managed-agents-platform.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Multica — 开源 Managed Agents 平台"))
+    核心定位
+    关键技术参数
+    核心概念
+    与现有知识关联
+    关键洞察
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心定位
 开源 Managed Agents 平台。不提供 Agent 智能本身，而是给 Agent 一个"工作环境"——把 Agent 从对话窗口拉到项目看板上，变成为有名字、有任务、会汇报进度的团队成员。
 

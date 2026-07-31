@@ -8,6 +8,22 @@
 
 > **Background**：本文基于 AWS 官方博客 2026-06-18 发布的 AgentCore harness GA 公告，系统分析其 Harness 架构设计、API 表面、工具集成模式、Memory 管理、Skills 体系和生产环境基础设施。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock AgentCore Har…"))
+    核心设计：两个 API 调用覆盖全部 Agen…
+    模型切换：mid-session provid…
+    工具集成：声明式 tools 配置
+    Memory：三模式可选
+    Skills：四种来源的 Agent 专业知识
+    环境与文件系统
+    与现有 wiki 实体的差异化
+    相关主题
+```
+
 ## 核心设计：两个 API 调用覆盖全部 Agent 基础设施
 
 AgentCore harness 的核心主张是：**生产级 Agent 不需要编排代码，只需要配置**。两个 API 调用即可完成：

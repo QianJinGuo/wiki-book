@@ -8,6 +8,20 @@
 
 > **Background**: 本文基于机器之心的报道，系统梳理了清华大学团队提出的 SEAGym 评测环境。该工作与翁荔关于 Harness Engineering for Self-Improvement 的论述相呼应，但聚焦于检测基础设施层面。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SEAGym: 自进化Agent评测环境 — 清华大学"))
+    核心动机
+    SEAGym 框架
+    多视角评测体系
+    关键实验结果
+    论文信息
+    相关实体
+```
+
 ## 核心动机
 
 现有 Agent benchmark 大多面向静态系统：给定一个固定 Agent，在一组独立任务上运行，然后报告最终成功率。这种评测方式无法回答 harness evolution 中更关键的问题：一次更新到底改进了什么？提升是否能迁移到未见任务？是否只是过拟合近期反馈？是否遗忘了旧能力？是否引入了更高成本或运行时不稳定？

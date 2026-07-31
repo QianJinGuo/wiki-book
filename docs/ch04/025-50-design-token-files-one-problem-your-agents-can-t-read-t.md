@@ -8,6 +8,22 @@
 
 > **Background**: Based on learn.thedesignsystem.guide analysis of 50 real design system token files, exploring how AI Agents consume structured design data.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("50 design token files, one p…"))
+    Core Problem
+    Three-Layer Analysis
+      1. Format Layer: Parsea…
+      2. Semantic Layer: Nami…
+      3. Constraint Layer: In…
+    Practical Insights
+    Unique Contributions
+    Related
+```
+
 ## Core Problem
 
 Design tokens are the atomic variables of design systems -- colors, spacing, fonts, shadows. When AI Agents need to operate design systems, a key obstacle emerges: **token file semantics are opaque to agents**.

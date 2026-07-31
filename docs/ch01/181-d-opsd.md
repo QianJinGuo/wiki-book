@@ -8,6 +8,18 @@
 
 d-OPSD（On-policy Self-distillation for Diffusion LLMs）是由马普所联合清华大学提出的第一个针对扩散语言模型（dLLMs）的在线自蒸馏（OPSD）学习范式。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("d-OPSD —— 扩散语言模型的在线自蒸馏框架"))
+    核心动机
+    关键问题：参考解幻觉
+    四大创新
+    实验结果
+```
+
 ## 核心动机
 
 在线自蒸馏（OPSD）作为新兴后训练手段，凭借密集监督信号的优势，展现出超越RL的后训练效果和远超RL的训练效率。但对于扩散大语言模型（dLLMs），OPSD此前仍是空白。

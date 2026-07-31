@@ -6,6 +6,20 @@
 
 # Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Romanian Man Faces Up to 30 …"))
+    深度分析
+      VOIP 安全漏洞的系统性问题
+      Money Mule 在网络犯罪中的角色
+      与 AI 时代 Vishing 的对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

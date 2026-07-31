@@ -10,6 +10,21 @@ AWS 发布的 AgentOps 参考架构，将 Agent 运维拆解为四大支柱（�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentOps: Operationalize age…"))
+    深度分析
+      1. AgentOps 是 GenAIOps …
+      2. 确定性策略 + 非确定性执行的二元治理
+      3. 记忆的账号级隔离是安全刚需，也是运维负担
+      4. 评估门控从'发布前快照'变为'持续质量流'
+    实践启示
+      相关实体
+```
+
 ## 摘要
 
 AgentOps 是 GenAIOps 在 Agentic AI 领域的自然延伸。与传统的 MLOps/DevOps 不同，Agent 的非确定性决策、跨 Agent 调用链、以及工具与记忆的动态组合，使得运维复杂度呈指数级增长。AWS 基于 Bedrock AgentCore 提出了四支柱参考架构，覆盖从用例注册到生产监控的全生命周期。核心观点：**Agent 的运维不是一个技术问题，而是一个组织+流程+技术的系统工程问题。**

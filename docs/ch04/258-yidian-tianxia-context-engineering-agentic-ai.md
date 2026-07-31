@@ -5,6 +5,22 @@
 > 📊 Level ⭐⭐ | 10.1KB | `entities/yidian-tianxia-context-engineering-agentic-ai.md`
 
 # 易点天下 Context Engineering — 企业级 Agentic AI 工程化实践
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Yidian Tianxia Context Engin…"))
+    核心定位
+    六层上下文体系（L1–L6）
+    主动注入三钩子
+    Token 预算治理：L0/L1/L2 三级分层
+    渐进式工具加载（Deferred Tool R…
+    五道纵深安全防线
+    V1 → V2 演进
+    核心方法论
+```
+
 ## 核心定位
 易点天下 QCon 2026 演讲，核心命题：**如何驯服 Agent 的"幻觉"与"遗忘"，让概率性 AI 稳定运行在确定性企业生产系统上**。
 

@@ -4,6 +4,41 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/claude-code-performance-benchmarking.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 性能基准评测"))
+    概述
+    一、核心性能指标体系
+      1.1 吞吐量指标
+      1.2 延迟指标
+      1.3 Token 效率指标
+    二、工具系统性能
+      2.1 工具并发模型
+      2.2 延迟加载机制
+      2.3 工具结果大小控制
+    三、缓存策略与 Token 效率
+      3.1 Prefix Cache 优化
+      3.2 Prompt Caching 策略
+      3.3 上下文注入策略对比
+    四、上下文管理性能
+      4.1 Compact 机制
+      4.2 Subagent 上下文隔离
+    五、性能优化实践
+      5.1 环境变量调优
+      5.2 Hooks 性能影响
+      5.3 任务分解策略
+    六、行业基准对比
+      6.1 SWE-bench 性能
+      6.2 成本效率对比
+    七、深度分析
+      7.1 性能天花板
+      7.2 评测方法论挑战
+      7.3 未来优化方向
+```
+
 ## 概述
 
 Claude Code 性能基准评测涵盖**吞吐量、延迟、Token 效率、上下文利用率**四大维度。与传统基准测试不同，Claude Code 作为 Agent 框架，其性能不仅取决于底层模型，还受 **Harness 设计、工具并发模型、缓存策略**的综合影响。

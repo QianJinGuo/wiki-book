@@ -12,6 +12,22 @@
 本质上，每个用户都在独立地"重新发现"同样的解决方案，系统层面的知识无法累积。
 这正是 SkillClaw 要解决的问题：**如何让 Agent 技能在真实使用中持续进化，并将一个用户的经验转化为全系统的共享能力？**
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里SkillClaw：让 Agent 技能在真实使用中…"))
+    相关实体
+    深度分析
+    实践启示
+    SkillClaw × Nacos 团队共享闭环
+      核心问题
+      治理流水线
+      7 步 QuickStart
+      未来方向
+```
+
 ## 相关实体
 - [Skillclaw Alibaba Paperagent](ch04/271-skill.html)
 - [Skillclaw Collective Intelligence](ch04/271-skill.html)

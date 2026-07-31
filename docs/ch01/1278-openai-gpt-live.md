@@ -8,6 +8,22 @@
 
 2026年7月，OpenAI 正式发布 GPT-Live，一个采用**前台/后台分解架构（front-end/back-end delegation）**的实时语音 AI 系统。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI 发布 GPT-Live：实时语音的前台/后…"))
+    架构创新：委派（Delegate）模式
+    深度分析
+      前台/后台分解：语音 AI 架构的分水岭
+      '快'不是唯一目标——对话节奏感才是
+      分级模式：一个模型服务所有场景的幻觉终结
+      实时语音 Agent 的未来形态
+    实践启示
+    关联实体
+```
+
 ## 架构创新：委派（Delegate）模式
 
 GPT-Live 的核心架构创新是将实时语音对话拆分为两个独立模型：

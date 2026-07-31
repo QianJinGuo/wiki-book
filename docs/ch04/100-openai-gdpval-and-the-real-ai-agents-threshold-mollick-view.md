@@ -8,6 +8,22 @@
 
 > **Core insight**: 2025-09 OpenAI 发布 **GDPval**——一个**由 14 年经验行业专家**设计的真实任务基准（每任务 4-7 小时），AI 几乎追平人类（**略输但差距很小**）。Mollick 用 Claude Sonnet 4.5 实测**学术 replication 危机**可被 AI 自动化解决——这不止节省时间，而是**改变整个学术领域**的可能。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI GDPval and the Real A…"))
+    OpenAI GDPval：与众不同的基准
+    'AI 准备取代人类工作吗？'——Mollic…
+    'AI 现在能做的有极高价值任务'——学术 R…
+    关键论文：为什么 Agent 突然变强
+    METR 测试：5 年指数曲线
+    '如何用 AI 做有经济价值的事'
+    三个独到洞察
+    与 Opus 4 7 Launch Clau…
+```
+
 ## OpenAI GDPval：与众不同的基准
 
 **特点**（vs 传统 math/trivia benchmark）：

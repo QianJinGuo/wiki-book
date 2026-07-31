@@ -6,6 +6,23 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("将 AWS DevOps Agent 智能运维能力延伸到…"))
+    标签
+    相关实体
+    深度分析
+      分区隔离是架构级硬约束，非配置问题
+      MCP 'USB 接口' 模式将跨分区认证转化…
+      凭证出境是数据合规的核心争议点
+      READ_OPERATIONS_ONLY …
+    实践启示
+    关联阅读
+```
+
 ## 标签
 
 ```mermaid

@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-vs-openclaw-comparison.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent 为什么火了？和 OpenCla…"))
+    一句话格局定位
+    名字先赢一半：爱马仕 vs 龙虾
+    定位差异：通用助手 vs 自成长框架
+      OpenClaw：什么都能干的万能助手
+      Hermes：越用越聪明的成长型框架
+    Hermes 在中国社区特别火的原因
+    Hermes 的核心能力（五个层面）
+    技能系统与安全边界
+    客观横向对比
+    深度分析
+      1. 命名策略影响了社区传播和用户心理锚点
+      2. 两条路线代表了 AI Agent 的两种…
+      3. 架构设计哲学反映了不同的工程价值观
+      4. 中国社区的'二创'生态是 Hermes …
+```
+
 ## 一句话格局定位
 
 现在 AI Agent 圈的格局，用一句话概括：**OpenClaw 负责开疆拓土，Hermes 负责精细耕作**。

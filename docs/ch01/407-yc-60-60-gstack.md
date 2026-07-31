@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/gstack-garry-tan-600k-lines-60-days.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("YC掌门人60天写了60万行代码：gstack开源"))
+    核心数据
+    gstack是什么
+      15个角色
+    一次典型Sprint
+    并行运行10-15个Sprint
+    亮点能力
+    深度分析
+    实践启示
+```
+
 ## 核心数据
 
 - **60天**写了60万+行代码，其中35%测试代码

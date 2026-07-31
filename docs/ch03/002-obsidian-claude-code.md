@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐ | 14.7KB | `entities/obsidian-claude-code-integration.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Obsidian + Claude Code 集成指南"))
+    概述
+    核心痛点
+    五种集成策略
+      策略 1：独立开发者 Vault + 符号链接
+      策略 2：Vault = Claude Cod…
+      策略 3：MCP 桥接
+      策略 4：每个仓库一个 Vault
+    文件混乱问题解决路径
+    必备插件生态
+    Obsidian CLI 突破性进展
+    社区最佳实践原则
+    深度分析
+      五种策略背后的哲学分歧
+      工具选择矩阵
+      Obsidian CLI 的深远影响
+      「AI 负责读取」原则的深层含义
+```
+
 ## 概述
 系统性整理 Claude Code 与 Obsidian 集成的五种策略及配套插件工具链，来源为中文社区实战经验的汇总文章。核心价值在于帮助开发者根据自身场景（多项目 vs 单项目 vs 个人知识管理）选择最适合的集成路径。
 

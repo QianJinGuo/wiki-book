@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 25.5KB | `entities/skill-design-patterns.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Skill 设计模式"))
+    Overview
+    5 种核心设计模式
+      模式 1：线性流程（Linear）
+      模式 2：决策树 + 按需加载（Decisio…
+      模式 3：循环迭代（Iterative Loop）
+      模式 4：接力棒循环（Baton / Cros…
+    Anthropic 14 种实现模式（5 大类）
+      发现与选择（2 模式）
+      上下文经济（2 模式）
+      指令校准（4 模式）
+      工作流控制（3 模式）
+    Anthropic 14 模式与 5+1 框架…
+    通用写作技巧
+      防止 LLM 偷懒的 4 种武器
+      教学的 3 种有效方式
+      知识组织的 3 层架构
+    模式选择决策树
+    参考 Skill 仓库
+    子页面
+```
+
 ## Overview
 从 7 个顶级 Skill 仓库（OpenAI/anthropic/Google Labs/Dean Peters/Trail of Bits）中提炼出的 5 种核心设计模式 + 1 种特殊模式。为 Agent Skill 开发提供系统性框架选择指南，告别"怎么写都行"的随意性。
 **核心价值：** Skill 本质是"知识注入"——不生成新工具，而是把指令文本注入 LLM 上下文，让 LLM 用已有工具执行指令。模式选择决定了知识如何组织、触发条件如何声明、执行流程如何控制。

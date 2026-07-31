@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-evolution-four-stages-six-dimensions-aliyun.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Evolution: Four Stages…"))
+    深度分析
+      四阶段范式演进
+      六维技术概念演变
+      核心哲学：构建确定性承载不确定性
+      与本文观察的对应关系
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 阿里云技术实践文章对 2023–2026 年 Agent 演化进行结构化梳理：**四阶段范式演进**（被动式 ReAct → 工作流 Agent → 自主 Agent → 自进化 Agent）与**六维技术概念演变**（Prompt / Planning / Memory / Tools / Workflow / Environment）。核心观点："形未变，神已变"——经典模块组合未变，但每个模块的运行逻辑发生了内核级重构。

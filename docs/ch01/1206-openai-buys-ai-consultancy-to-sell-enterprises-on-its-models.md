@@ -6,6 +6,21 @@
 
 # OpenAI buys AI consultancy to sell enterprises on its models
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI buys AI consultancy t…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [the inevitable need for an open model consortium](ch01/1188-the-inevitable-need-for-an-open-model-consortium.html)

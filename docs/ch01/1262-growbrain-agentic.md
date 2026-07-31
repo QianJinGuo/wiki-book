@@ -8,6 +8,21 @@
 
 > **核心价值**：v×c=64，stars=4，来自 阿里云开发者
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("淘宝内容生态：GrowBrain - 淘宝Agentic…"))
+    深度分析
+      从 ReactAgent 到 PES：架构演进…
+      PES 架构设计原则
+      三个「拆」的工程智慧
+      子 Agent 矩阵的协同设计
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 GrowBrain 是淘宝构建的以 LLM Agent 为决策中枢的全自动内容成长引擎，通过 Planning-Execute-Summarize（PES）三段式编排范式调度潜力预估、流量分配、流量诊断三个子 Agent，实现内容从冷启到成长的全周期智能决策。该系统验证了 Agentic 范式在内容成长主链路上的可行性，并通过双 Pipeline 物理隔离设计同时服务线上中控和产运对话场景。在线效果：流量投资 ROI 提升 8.67%。

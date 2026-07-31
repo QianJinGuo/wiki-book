@@ -6,6 +6,20 @@
 
 # Open Defense Initiative | depthfirst
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Open Defense Initiative | de…"))
+    深度分析
+      安全 AI 的 '军备不对称'
+      Harness 优于模型的安全范式
+      开源安全的治理激励
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 depthfirst 于 2026 年 5 月发布 **Open Defense Initiative**（开放防御计划），向关键开源项目提供高达 **500 万美元**的深度安全扫描额度。核心论点：Frontier AI（Mythos、GPT-5.5 Cyber）已具备自主漏洞发现和利用能力，开源模型正在快速追赶——防御者面临一个狭窄的时间窗口来加固关键软件。depthfirst 的技术差异化在于**成本效率**：仅花 $1,000 计算成本便检测到 Anthropic 用 $10,000 报告的 FFmpeg 12 个内存损坏漏洞。其核心理念是 "模型强度本身不够"——安全场景需要专用 harness、上下文理解和可利用性验证的系统级优化。

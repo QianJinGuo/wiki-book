@@ -9,6 +9,28 @@
 # Claude Code 源码深度解析（13 核心机制）
 > 22,873 字源码深度拆解，每节均与 Codex/OpenCode/Gemini-CLI 横向对比
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 源码深度解析（13 核心机制）"))
+    13 个核心模块
+    关键设计决策
+    与现有知识关联
+    深度分析
+      System Prompt 动态组装的工程价值
+      工具并发调度的隐性约束
+      deferred_tools_delta：Pr…
+      microCompact 的注意力屏蔽原理
+    实践启示
+      1. 设计工具时声明并发安全性
+      2. 用 delay loading 降低首次…
+      3. 用 Hooks 构建安全护栏
+      4. 用 CLAUDE.md 建立项目级工程契约
+    相关实体
+```
+
 ## 13 个核心模块
 | # | 模块 | 核心亮点 |
 |---|------|---------|

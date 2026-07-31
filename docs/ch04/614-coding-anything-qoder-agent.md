@@ -6,6 +6,23 @@
 
 > 2026 AICon 上海站专题分享，阿里巴巴 Qoder 与慧博科技四位实践者完整呈现了 AI 工作流重构路径：从 Coding 出发，通过多 Agent 协作、桌面 Agent、托管运行时，走向更广泛的 Anything 场景。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从 Coding 到 Anything：Qoder 多 …"))
+    核心观点：Coding → Anything
+    四大分享主题
+      1. Qoder Desktop：多 Agen…
+      2. 桌面 Agent：从 IDE 到桌面
+      3. 零售全域 Agent
+      4. 托管运行时（Hosted Runtime）
+    竞争重心迁移
+    人的位置重构
+    与 wiki 已有知识的关联
+```
+
 ## 核心观点：Coding → Anything
 
 Coding Agent 之所以能走向 Anything，是因为 Coding 场景已验证出一组通用能力——沙箱执行、文件系统、工具调用、MCP 连接、长任务循环、人机确认、权限控制和可观测性。一旦这层运行时成立，从 Coding 扩展到 Anything，改变的主要是技能和工具，而不是底层架构。

@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/harness-engineering-long-term-agent-tasks.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering：让 Coding…"))
+    核心定义
+    三大困难点
+    关键技巧
+      任务粒度
+      子任务 CLI 化与并发调度
+      File As Progress
+      任务状态机
+    真实落地案例
+      全量 Code Review
+      JS to TS 迁移
+    Meta-Skill：Skill for Sk…
+    核心理念
+    深度分析
+      1. 3000 行经验上限的精确推导：Toke…
+      2. CLI 化的核心价值不在并发，而在 Pr…
+      3. File As Progress 的双通…
+      4. IN_PROGRESS 残留处理的判断依…
+    实践启示
+```
+
 ## 核心定义
 **Harness Engineering**：为 AI Coding Agent 构建「缰绳」，使其在安全边界内被稳定地约束、引导和复用。核心目标是让 Agent 能够可靠完成涉及成百上千文件、跨越多个会话、消耗数千万 Token 量级的**长程任务**。
 四大核心原则：

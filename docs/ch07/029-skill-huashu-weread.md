@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/weread-official-skill-huashu-critical-gap.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("微信读书官方skill与huashu-weread增强版"))
+    微信读书官方skill（weread skill）
+    huashu-weread 增强版
+      4个核心workflow
+      核心方法论
+      alchemy亮点：读书主题演化
+    关键洞察
+    深度分析
+      1. 数据开放的结构性价值
+      2. '能力'与'智能'的本质差异
+      3. 划线数据的第二曲线价值
+      4. 增强生态的商业逻辑
+    实践启示
+      给产品/增长团队的启示
+      给个人知识管理爱好者的启示
+      给AI/Skill开发者的启示
+    相关实体
+    相关工具
+```
+
 ## 微信读书官方skill（weread skill）
 **官方链接**：https://weread.qq.com/r/weread-skills ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 **6件开放能力**：查阅书架、书籍搜索、阅读统计、书籍详情、笔记和划线、推荐好书 ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]

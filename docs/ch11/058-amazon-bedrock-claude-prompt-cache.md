@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/amazon-bedrock-claude-prompt-cache-strategy.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 Amazon Bedrock 上为 Claude 应…"))
+    深度分析
+      20-block 回看限制的几何含义
+      三 CP 布局的工程代价与收益
+      Claude Thinking 与 Cache…
+      模型支持与 TTL 选择策略
+    实践启示
+      策略选择决策树
+      上线后必建监控指标
+      常见陷阱与规避
+      代码实现关键函数
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

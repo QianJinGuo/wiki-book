@@ -6,6 +6,21 @@
 
 # Anthropic knowledge-work-plugins 源码拆解：4 种组件、3 级加载、2 层记忆、岗位型插件市场
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic knowledge-work-plu…"))
+    深度分析
+      1. 岗位级封装：从'工具'到'角色'的范式转变
+      2. 三层渐进式披露的工程意义
+      3. 两层记忆系统的认知工程
+      4. 工具无关抽象与双模设计
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Anthropic 官方开源的 `knowledge-work-plugins` 仓库是一个面向企业知识工作的 AI 插件集合，2026 年 1 月底创建，5 个月内获得近 2 万 Stars。与大多数 AI 框架或模型不同，它由纯 Markdown 文件和 JSON 配置组成——没有编译、没有依赖，非技术人员也能定制。19 个官方岗位插件 + 5 个合作伙伴插件（Slack/Salesforce、Apollo、Brand Voice 等），覆盖销售、客服、产品、法务、金融、数据、营销、HR、工程等领域。

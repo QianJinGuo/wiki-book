@@ -6,6 +6,20 @@
 
 → （无原始来源）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5 Is Here and OpenAI Has…"))
+    核心内容
+      GPT-5 关键能力提升
+      OpenAI 官方建议
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心内容
 ### GPT-5 关键能力提升
 GPT-5 在多个维度相比前代有显著提升：

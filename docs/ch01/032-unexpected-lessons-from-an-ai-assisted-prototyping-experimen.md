@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Unexpected lessons from an A…"))
+    深度分析
+      出发点：传统设计流程的'翻译损耗'
+      实验设置：4 人 pod + 真实代码库 + …
+      核心洞见一：邻近性放大了什么
+      核心洞见二：设计师的时间分配被重写
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adobe Firefly 团队内部进行的"AI 辅助原型设计"实验。小组由 1 名 PM、3 名工程师和 1 名设计师组成，仅用 8 个工作日就把两个新功能（Precision Flow、Markup）交付到生产构建。文章最有价值的洞见不是速度，而是"邻近性（proximity）"重塑了设计-工程-产品的协作形态——距离消失，约束被前置，但协作不仅没有弱化反而被强化。

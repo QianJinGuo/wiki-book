@@ -6,6 +6,32 @@
 
 # Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 从理论到实战：行…"))
+    概述
+    核心命题
+    Böckeler 理论框架 30 秒回顾
+      三句话核心
+    行为正确性：Harness 最大的缺口
+      真实场景（Agent 工作 3 小时）
+      自我指涉的验证回路（结构性死结）
+      头部公司不完美但有效的做法
+    上下文腐烂：长任务的隐形杀手
+      Anthropic 两段式架构（cwc-lon…
+    可驾驭性：被忽略的架构判决
+      ✅ 高可驾驭性
+      ❌ 低可驾驭性
+    Ashby 定律：模型越强，需要的纪律越多
+      Thoughtworks 技术雷达的精准表述
+    结语：Harness Engineering …
+      对管理者的三件事
+      回到 Karpathy
+```
+
 ## 概述
 
 张海云Helen（AI原生探索者）2026-06-02 Harness Engineering **系列第 4 篇**。**前 3 篇讲理论框架，本文专攻实战区**——理论没覆盖的更深层工程难题：行为正确性自我指涉死结（Anthropic 独立评估官/变异测试/OpenAI 人类不可省）、上下文腐烂与 Anthropic 两段式架构、可驾驭性 4 个架构判决、Ashby 必要多样性定律（模型越强需要纪律越多）。**Böckeler 5 月传感器实验首次公开数据** + Karpathy Sequoia AI Ascent 六行工作模式首次系统化对接 Harness。核心判断：**Harness Engineering 是一门关于"控制的边界在哪里"的工程学科**——知道什么不能控制和知道什么能控制同样重要。

@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 10.1KB | `entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("开源 AI 知识管理搭档 Obsidian + Clau…"))
+    相关实体
+    深度分析
+      1. 核心矛盾：两个工具的原生设计目标不同
+      2. 五种策略的本质分类
+      3. 文件混乱问题的技术本质
+      4. 'AI 负责读取，人负责书写'原则的深层含义
+    实践启示
+      选型建议
+      文件混乱处理的优先级
+      Dataview frontmatter 模板
+      自定义命令的实用组合
+    相关资源
+```
+
 ## 相关实体
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch03/078-claude-code.html)
 - [obsidian claude code integration guide](../ch09/140-obsidian-claude-code-integration-guide.html)

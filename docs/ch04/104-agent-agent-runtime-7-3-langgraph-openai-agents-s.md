@@ -11,6 +11,30 @@
 
 2026-06-05 21:50,公众号「工程师的第二曲线」(作者: 二曲线工程师)发布 Agent 工程系列第 4 篇《Agent 的骨架:一文讲透 Agent Runtime》。前 3 篇已发布(Agent Loop / Context Engineering / Tool Calling),后续 9 篇待发(Memory / Trace / HITL / Eval / Multi-Agent / Planning / RAG / Prompt Engineering / 安全 Guardrail)。本文定位**通用 Agent Runtime 概念入门视角**,以 7 大职责框架 + 3 主流框架对比 + 有/无 Runtime 对比,搭建 Agent Runtime 的完整知识图谱。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 的骨架:Agent Runtime 7 大职…"))
+    核心定位:Runtime 是 Agent 的'…
+    Runtime 7 大职责 + 1 复杂 Ag…
+      1. 工具管理 ToolRegistry
+      2. 上下文组装 Context Engin…
+      3. 状态管理 State
+      4. 终止判断 Termination
+    3 主流框架对比
+    Runtime 价值的核心洞察
+    与现有实体的交叉对比
+    深度分析
+      1. 七职责是通用'契约清单',不是某一框架的…
+      2. 状态管理 + 终止判断 = 运行时'自控…
+      3. Router 是复杂度的分水岭:简单 A…
+      4. Trace ↔ 可观测性 是同一数据流的…
+    实践启示5 条 actionable
+    局限性 / 需关注的边界
+```
+
 ## 核心定位:Runtime 是 Agent 的"底盘"
 
 **无 Runtime 的 Agent 困境**(真实痛点):

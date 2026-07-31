@@ -8,6 +8,27 @@
 
 > **Background**: Håvard Tveit Ihle 用 17 个 benchmark (8 private + 9 public, ~110 数据点) 量化开源 vs 闭源模型能力差距。结论：private benchmark 上开源落后 8-10 个月，public benchmark 落后 4-6 个月，且差距在 DeepSeek R1 之后正在扩大。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How far behind are open mode…"))
+    核心发现
+      1. 当前差距（2026-05）
+      2. 差距时间趋势
+      3. Provider degradation…
+    数据来源
+    方法论
+    反向/前瞻视角
+    与中国模型
+    启示
+      对 AI 行业
+      对开发者
+    与 Interconnects 洞察的呼应
+    待关注
+```
+
 ## 核心发现
 
 ### 1. 当前差距（2026-05）

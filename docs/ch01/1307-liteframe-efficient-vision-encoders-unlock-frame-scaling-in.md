@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐⭐ | 5.6KB | `entities/liteframeefficientvisionencodersunlockframescalinginvideollms.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LiteFrame: Efficient Vision …"))
+    深度分析
+      问题本质：两阶段瓶颈迁移
+      核心技术路径：CTD + LMA
+      架构设计哲学
+      性能-延迟 Pareto 前沿的重定义
+    实践启示
+      对 Video LLM 系统设计的启示
+      对算力规划的启示
+      研究方向建议
+    相关实体
+```
+
 ## 核心要点
 
 - Published Time: Tue, 19 May 2026 02:24:46 GMT

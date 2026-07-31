@@ -9,6 +9,24 @@
 > 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/msa-sparse-attention-three-kingdoms-huashu-2026-06-12.md)，并参考 MiniMax M3 论文 *MiniMax Sparse Attention*（https://github.com/MiniMax-AI/MSA/blob/main/docs/MiniMaxSparseAttention.pdf ）。
 > 这是一份把 2026 年稀疏注意力赛道 4 份方案 (NSA / DSA / MoBA / MSA) 摆到一张桌上的完整对比。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MSA 稀疏注意力三国杀：NSA / DSA / MoB…"))
+    一句话总结
+    为什么大家都奔向稀疏
+    MSA 架构：粗筛 + 精算
+      第一步：粗筛
+      第二步：精算
+    索引分支训练：KL 对齐
+    Kernel 创新：Outer Gather Q
+    MSA 性能数据（109B 实验模型，1M 上…
+    MSA 能力不掉：3T token 对照实验
+    附录最有意思：head 涌现的三种模式
+```
+
 ## 一句话总结
 
 2026 年稀疏注意力已成国产长上下文模型的"标配动作"——DeepSeek NSA (2025-02 论文) + DSA (2025-09 V3.2 落地)、Kimi MoBA (2025-02)、MiniMax MSA (2026-06 M3 配套)。**四份方案表面相似，骨子里在三个分歧轴 (颗粒度 / KV 压缩 / 辅助分支) 上分道扬镳**，外加一条正在收敛的暗线（训练配方从端到端 → 蹭信号 → KL 对齐）。背后是两种信念：DeepSeek 押"信息禁得起压"，MiniMax 押"要省就省在挑选上"。

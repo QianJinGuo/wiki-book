@@ -6,6 +6,38 @@
 
 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-observability-aliyun.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("给 Hermes 装上显微镜：Agent 执行全知道"))
+    背景
+    要解决的四个核心问题
+    技术方案：OpenTelemetry 链路追踪
+      五大优势
+    可观测内容
+      ReAct 结构化 Trace
+      模型调用（chat span）
+      工具调用（execute_tool span）
+      Agent 级汇总
+    接入部署
+      前提条件
+      部署步骤
+      日志接入
+      验证
+    总结与展望
+    深度分析
+      1. Agent 可观测性的本质挑战
+      2. OpenTelemetry + GenA…
+      3. TTFT 单独记录的工程意义
+      4. 安全审计的滞后性风险
+    实践启示
+      给 AI Infra 团队的落地建议
+      给 Agent 开发者的日常洞察
+      给平台/风控团队的治理视角
+```
+
 ## 背景
 Hermes 是 Nous Research 打造的一套自治式 AI Agent 运行框架。它不是单次问答式的模型封装，而是一个能够持续运行、调用工具、积累经验、并随着使用过程不断成长的 Agent Runtime。
 当一个 AI Agent 真正开始解决问题，无论它是正确完成，还是出现偏差，真正困难的问题往往都不是结果对不对，而是它到底做了什么。

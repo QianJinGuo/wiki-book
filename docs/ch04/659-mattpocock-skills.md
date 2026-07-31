@@ -12,6 +12,25 @@ MattPocock Skills 是 Total TypeScript 创始人 Matt Pocock 开源的 AI Agent 
 > 版本：v1.1.0
 > 定位：小、可改、可组合，不接管流程，跨 Agent（Claude Code、Codex 等）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MattPocock Skills"))
+    核心架构
+      两层调用分层
+      主线流程：idea → ship
+    关键技能
+      wayfinder（v1.1.0）
+      diagnosing-bugs
+      writing-great-skills
+      CONTEXT.md
+    与同类比较
+    安装
+    相关链接
+```
+
 ## 核心架构
 
 ### 两层调用分层

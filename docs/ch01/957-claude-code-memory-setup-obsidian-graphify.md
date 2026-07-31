@@ -13,6 +13,21 @@
 **入库日期**：2026-05-13
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Memory Setup (Ob…"))
+    概要
+    技术背景
+    价值分析
+    深度分析
+    实践启示
+    相关项目
+    相关实体
+```
+
 ## 概要
 通过组合 Obsidian（声明性记忆）+ Graphify（结构性记忆）为 Claude Code 建立持久化记忆系统，将查询 token 成本从 20,000+ 降至约 280，实现 71.5 倍效率提升。
 

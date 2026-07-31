@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐ | 22.9KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("🧠 The Token Economy pt2: The…"))
+    背景与核心论点
+    AI Adoption 分层理论
+    竞争层级与 AI 运营模型
+    三条部署路径详解
+      路径一：DIY——内部转型
+      路径二：与 Lab/FDE 合作——外部安装
+      路径三：PE 股东强制执行
+      路径四：什么都不做
+    小团队，更大产出
+    结构性顺风：Token 价格持续下跌
+    Fintech 4 公司速览
+      Shift Markets — 白标预测市场基…
+      Pmtbox — 电商支付编排 + 收入优化
+      Shiprazor — 南非电商物流
+      Chord — 商务运营 AI Agent
+    CLARITY Act 与监管动态
+```
+
 ## 核心要点
 - **核心公式**：Outcome = Tokens × Intelligent Operating Model（有效运营模型 = 可观测性 × 自主性 × 部署速度 × 问责制）
 - **AI adoption 分层理论**：Level 0（AI theater）→ Level 5（self-driving organization），大多数公司停留在 Level 1，Ramp 和 Anthropic 达到 Level 4，Level 5 尚不存在 

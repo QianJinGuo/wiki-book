@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/kiro-quick-deploy-agent-deploy-amazon-bedrock-agentcore.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("以Kiro快速部署云上Agent：只需几个小时，从业务需…"))
+    概述
+    核心技术
+    来源
+    深度分析
+      Spec驱动开发：Kiro IDE的核心竞争力
+      AI驱动开发的范式转变
+      Bedrock AgentCore的架构优势
+      从业务价值出发的技术决策框架
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

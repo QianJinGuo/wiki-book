@@ -8,6 +8,25 @@
 
 > **Background**：本文档基于 Anthropic 官方博客 2026-07-16 发布的文章建立，总结了 Anthropic 内部使用 Claude Code 进行大规模代码迁移（Bun Zig→Rust、Mike Krieger Python→TypeScript）的六步方法论。参考了 Anthropic 官方博客多个来源。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 大规模代码迁移方法论 — Claud…"))
+    核心洞见
+    两个关键案例
+      Bun Zig→Rust（Jarred Sum…
+      Python→TypeScript（Mike …
+    六步方法论
+      前置：构建强 Judge
+      Step 1: 创建 Rulebook + D…
+      Step 2: 压力测试规则
+      Step 3: 并行翻译所有文件
+    最佳实践
+    与其他实体的关系
+```
+
 ## 核心洞见
 
 "You don't fix the code. You fix the process (loop) that produced the code."

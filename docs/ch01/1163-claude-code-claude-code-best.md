@@ -8,6 +8,22 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-best-community-fork-evolution-vibecoder.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 泄露后的漏网之鱼 claude-…"))
+    深度分析
+      核心观点
+    项目背景
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么 涉及agent领域的核心技术议题。

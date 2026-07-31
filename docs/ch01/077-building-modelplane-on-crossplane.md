@@ -22,6 +22,17 @@ If the inference part interests you, the [Modelplane docs](https://modelplane.ai
 
 I want to cover the problem we set out to solve with Crossplane, the parts of the framework we leaned on hardest, and the edges we hit and fixed upstream.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building Modelplane on Cross…"))
+    The problem, in Crosspl…
+    What made it buildable:…
+    Designing the API
+```
+
 ## The problem, in Crossplane terms
 
 Strip away the inference vocabulary and Modelplane's job is one Crossplane users will recognize: take a declarative description of what someone wants, and turn it into composed infrastructure spanning cloud accounts, many Kubernetes clusters, and the workloads on them. Provision an EKS or GKE cluster with the right GPUs. Install an inference stack onto it. Decide which cluster each model runs on, and how many copies. Keep it all converged as clusters come and go and people's inference needs change.

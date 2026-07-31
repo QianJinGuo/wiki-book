@@ -8,6 +8,21 @@
 
 > **Background**: Amazon.com Services LLC v. Perplexity AI, Inc. 是首例大型电商平台起诉 AI agentic browser 厂商的案件，核心争议在于：AI agent 以用户身份自主浏览和操作网站是否构成 CFAA 下的"未授权访问"，以及网站 ToS 能否约束用户的浏览器选择。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Notes on Amazon v. Perplexity"))
+    深度分析
+      Prompt Injection：Agenti…
+      User-Agent 伪装的行业语境
+      用户代理 vs 网站控制：Web 的根本张力
+      '谁在访问'的法律灰色地带
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文从法律和技术双重视角深入分析 Amazon 诉 Perplexity 案。Perplexity 的 Comet 浏览器内置 AI agent，能自主在 Amazon 上购物、比价、操作用户账户。Amazon 指控 Comet 伪装成 Chrome、绕过封锁、威胁用户安全。文章系统拆解了三大争议点——安全风险、用户体验控制权、UA 伪装——并将其置于"用户代理 vs 网站控制"的长期张力中审视，最终论证 agentic browsing 是 Web 用户代理传统的自然延伸。

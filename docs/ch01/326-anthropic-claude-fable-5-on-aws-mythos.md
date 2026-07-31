@@ -8,6 +8,35 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-fable-5-on-aws内置保护措施的-mythos-级功能现已推出.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Claude Fable 5 on …"))
+    核心能力解析
+      1. 长周期异步任务执行
+      2. 高级视觉解析能力
+      3. 主动自我验证
+    安全保护机制：Fable 与 Mythos 的…
+      安全限制的技术原理
+      数据留存与合规
+    技术接入指南
+      Amazon Bedrock 接入
+      AWS SDK Boto3 接入
+    与同类产品的定位对比
+    深度分析
+      安全-能力联合设计的工程范式
+      企业 Agent 部署的影响
+      数据合规的隐性成本
+    实践启示
+      1. 长周期任务场景优先评估 Fable 5
+      2. 高风险领域的合规评估不可跳过
+      3. 利用视觉能力构建端到端自动化
+      4. 监控系统需要区分 Fable 5 和 O…
+    相关实体
+```
+
 ## 摘要
 
 Anthropic 于 2026 年 6 月 10 日在 AWS 中国博客宣布 **Claude Fable 5** 正式登陆 Amazon Bedrock 和 AWS 云端 Claude Platform。Fable 5 是 Anthropic 发布的第三代旗舰模型，定位为"Mythos 级功能 + 内置安全保护"的组合：提供与旗舰级模型 Mythos 5 相当的强大能力，同时内置针对高风险领域的自动安全限制，使模型能够安全地面向更广泛的客户群体部署。Fable 5 在几乎所有基准测试中达到行业顶尖水平，尤其在工程任务、知识密集型工作、视觉解析和长周期异步任务方面表现突出。企业客户现在可以通过 AWS 现有的基础设施直接调用 Claude Fable 5，无需改变现有的云端架构。

@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/cursor.com-composer-2-5.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Composer 2.5"))
+    深度分析
+      1. Targeted RL with Tex…
+      2. 合成数据与 Reward Hacking…
+      3. Sharded Muon + Dual …
+      4. 'Same intelligence, …
+    实践启示
+      1. RL 训练中的局部信用分配是关键工程问题
+      2. 合成数据需要配套的 Reward Hac…
+      3. 分布式训练中的'分离策略'设计原则
+      4. Effort Calibration 是…
+    相关实体
+```
+
 ## 核心要点
 - Composer 2.5 是基于 Moonshot's Kimi K2.5 的重大升级
 - 三大改进方向：长任务稳定性、复杂指令遵循、协作体验

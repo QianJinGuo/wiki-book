@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 11.7KB | `entities/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CI&amp;T基于 Amazon Bedrock Ag…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+      Multi-Agent 协作架构的核心设计逻辑
+      Skills 层的设计价值
+      从'被动响应'到'主动发现'的关键转变
+      Amazon Bedrock AgentCor…
+    实践启示
+      架构设计层面
+      技术选型层面
+      组织流程层面
+```
+
 ## 概述
 
 ```mermaid

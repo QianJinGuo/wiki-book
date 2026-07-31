@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Automation Anywhere Collabor…"))
+    深度分析
+      1. Claw-Style AI Agent …
+      2. 四方合作的战略意图
+      3. Process Reasoning En…
+      4. 自主企业（Autonomous Ente…
+    实践启示
+      企业采纳建议
+      技术团队关注点
+      行业观察
+    相关实体
+```
+
 ## 核心要点
 
 - Automation Anywhere 联合 Cisco、NVIDIA、Okta 和 OpenAI 发布 EnterpriseClaw，将 claw-style AI agents 引入企业级运营

@@ -10,6 +10,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/57U6XeKCGtVkQXnNqg9DJQ.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Obsidian + Claude Code 完整集成指…"))
+    深度分析
+      五种策略的本质：「同步语义」vs「访问语义」的…
+      Obsidian 1.12 CLI 是结构性转折点
+      QMD + 会话同步：把对话本身变成可检索资产
+      文件混乱治理：四层防线
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`（全局指令）、`~/.claude/plans/`（计划）、`~/.claude/projects/`（每个项目的记忆）、`~/.claude/skills/`（可复用技能）、以及每个仓库内的 `{repo}/CLAUDE.md`。当你同时维护多个仓库时，这些文件迅速变得难以统一搜索与管理。Obsidian 自带的「排除文件」只是软隐藏，不解决根本问题。这篇指南把社区五种集成策略并排比较，每一种都给出具体的目录结构、命令行示例和取舍说明。

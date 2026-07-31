@@ -18,6 +18,15 @@ High level overview of Claude apps gateway for AWS
 
 In this post, we show how to set up and run Claude apps gateway for AWS with Amazon Bedrock and Claude Platform on AWS.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Claude apps gate…"))
+    How the Claude apps gat…
+```
+
 ## How the Claude apps gateway works
 
 ```mermaid

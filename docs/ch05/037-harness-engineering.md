@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 15.0KB | `entities/harness-engineering-systematic-explainer.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 系统性解读"))
+    核心主线
+    Prompt / Context / Harn…
+    Harness 不是 AGENTS.md
+    Harness 的本质：七环节控制回路
+     相关实体
+    为什么'更多上下文'不是答案
+    Generator / Evaluator 模式
+    核心动作
+```
+
 ## 核心主线
 李宏毅老师课程核心：有时候语言模型不是不够聪明，只是缺少人类为它设计好的行动环境。
 > 一个模型会写代码，不代表它知道文件在哪里；一个测试脚本存在，不代表它会主动运行；规则写在文档里，不代表它会稳定遵守。

@@ -6,6 +6,36 @@
 
 # 严格 CSP 下的密码窃取：HTML 注入 + Chrome 自动填充攻击
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("严格 CSP 下的密码窃取：HTML 注入 + Chro…"))
+    概述
+    攻击技术栈
+      1. 严格 CSP 下的 HTML 注入
+      2. Chrome 自动填充触发
+      3. Referer 头外泄
+    浏览器特定测量
+    CSP 失效场景示例
+    防御建议
+      应用开发者
+      用户
+      安全团队
+    与现有 entity 差异化
+    深度分析
+      1. Referer 头处理的不一致性：Chr…
+      2. meta 重定向的双重滥用：强制…
+      3. 密码管理器行为设计缺陷：Chrome 的…
+      4. 严格 CSP 下的单点登录：为什么 fo…
+    实践启示
+      1. 将 Referrer-Policy 纳入…
+      2. 对所有反射型参数进行上下文 HTML 编…
+      3. 登录页面禁用密码管理器的自动填充提示
+      4. 将敏感操作页面纳入 CSP frame-…
+```
+
 ## 概述
 
 AFINE 安全研究团队发布原创攻击研究：在**严格 CSP (Content Security Policy)** 环境下，通过 HTML 注入 + Chrome 自动填充行为 + Referer 头，实现用户密码外泄。

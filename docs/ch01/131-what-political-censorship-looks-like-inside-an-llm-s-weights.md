@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/what-political-censorship-looks-like-inside-an-llm-s-weights.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What political censorship lo…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - **可定位的审查电路**：Qwen3.5-9B 的政治审查是一个可定位、可读取、可关闭的小型电路。三层方向向量（d_prc/d_refuse/d_style）在 Writer 层（L11-L20）计算，Reader 层（L20-L31）负责文本渲染
 - **知识与行为分离**：预训练知识本身完整保留，Qwen3.5-9B-Base 在原始文本补全下对所有 PRC 话题给出准确答案。审查是"路由绕过"而非"知识删除"

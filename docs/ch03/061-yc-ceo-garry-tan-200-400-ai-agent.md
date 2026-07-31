@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 16.7KB | `entities/yc-ceo-garry-tan-200-dollar-vs-4-million.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("YC CEO Garry Tan：200美元重构400万…"))
+    人物背景
+    核心工作流：Token Maxxing
+    Thin Harness, Fat Skill…
+    Claude + Codex 双 AI 协作模式
+    GStack：并行 15 个 Agent 的开…
+      Agent 脆弱性的容忍策略
+    测试覆盖率与代码质量
+    效率对比：400 倍产出从何而来
+    '时间亿万富翁'概念与 AI 革命
+```
+
 ## 人物背景
 
 Garry Tan 是 Y Combinator（YC）的现任 CEO，同时也是一位连续创业者和投资人。他曾联合创办了 Posterous（一个博客平台，后被 Twitter 收购）。在 2010 年代初，Posterous 的开发成本高达 400 万美元，团队规模 6 人，历时 18 个月才完成。

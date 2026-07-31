@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/anthropic-acquires-stainless.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Acquires Stainless"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Markdown Content: The frontier of AI is shifting from models that answer to agents that act—and agents are only as capab...
 

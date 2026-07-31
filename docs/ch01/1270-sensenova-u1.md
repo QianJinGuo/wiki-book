@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/sensnova-u1.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SenseNova-U1 — 商汤原生统一多模态模型"))
+    核心架构：NEO-Unify
+      三组核心矛盾与解法
+      其他架构要点
+    四步训练策略
+    核心 benchmark 成绩
+    推理系统：LightLLM + LightX2…
+    模型规格
+    开源生态
+    技术演进判断
+    深度分析
+      架构创新的本质：消解模态之间的「异构墙」
+      三组核心矛盾的设计启示
+      开源战略的市场意义
+```
+
 ## 核心架构：NEO-Unify
 NEO-Unify 完全去掉 VE 和 VAE，图像直接转化为 token，理解和生成在同一表示空间协同建模。
 

@@ -10,6 +10,24 @@
 
 与 [Claude Code Skills 实战指南](../ch07/035-claude-code-skills.html) 互补——该实体聚焦 Claude Code 的 Skill 发现机制与安全限制，本实体聚焦 **Agent Harness** 框架的 Skill 系统（类型体系、frontmatter 字段、动态注入、Agent Teams、执行上下文控制）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Harness Skill 系统实战指南 —…"))
+    Skill 的本质
+    两种类型：Reference vs Action
+    动态上下文注入：! 反引号语法
+      PR Summary Skill 示例
+    Pull request context
+    Your task
+    Frontmatter 字段参考
+      三组关键开关
+    $ARGUMENTS 占位符
+    Skill 目录结构
+```
+
 ## Skill 的本质
 
 Skill = **可复用指令单元**。不是"工具"，是"知识的打包"[^1]。

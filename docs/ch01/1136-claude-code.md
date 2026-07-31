@@ -8,6 +8,23 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-superpowers-workflow-by-xinlingyuanyuanyuan.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("给 Claude Code 装上'超能力' — 它干活比…"))
+    深度分析
+      核心观点
+    核心洞察
+    GitHub
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 给 Claude Code 装上'超能力' — 它干活比我还靠谱 涉及agent领域的核心技术议题。

@@ -9,6 +9,18 @@
 > **背景**：从 newsletter candidates 提取，2026-06-18 v×c=56 stars=4 通过评分门槛。
 > URL: https://sunilpai.dev/posts/never-waste-a-token/
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("never waste a token"))
+    the problem that’s easy…
+    the move: stop tying th…
+    评估理由
+    相关
+```
+
 ## 核心要点
 
 Published Time: 2026-06-15T00:00:00.000Z

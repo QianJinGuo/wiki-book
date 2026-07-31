@@ -7,6 +7,19 @@
 # EdgeClaw
 > 面壁智能联合清华大学、OpenBMB社区开源的Agent框架，"端云两栖"架构。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("EdgeClaw — 端云两栖龙虾框架"))
+    基本信息
+    核心设计
+    深度分析
+    实践启示
+    与本文相关
+```
+
 ## 基本信息
 - **开源地址**: https://github.com/Openbmb/edgeclaw
 - **发布**: 2026年3月19日

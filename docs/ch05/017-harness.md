@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 19.8KB | `entities/harness-design-long-running-apps.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("长时间运行应用的 Harness 设计"))
+    正文
+    为什么'天真实现'行不通
+    前端设计：让主观质量变得可评分
+    扩展到全栈编码
+    架构设计
+    运行结果对照
+    迭代与简化
+    关键经验
+```
+
 ## 正文
 在过去几个月里，我一直在同时处理两个彼此关联的问题：如何让 Claude 产出高质量的前端设计，以及如何让它在无人干预的情况下构建完整应用。这项工作起源于我们更早之前在 frontend design skill 和 long-running coding agent harness 上的探索。当时，我和同事们已经通过提示工程与 harness 设计，让 Claude 的表现明显超越了 baseline，但这两条路线最终都碰到了天花板。
 为了突破这些上限，我开始寻找能够同时适用于两个差异很大的领域的 AI 工程方法：一个领域由主观审美主导，另一个则由可验证的正确性与可用性定义。受生成对抗网络（Generative Adversarial Networks, GANs）的启发，我设计了一个由 generator（生成器） 和 evaluator（评估器） 组成的多代理结构。要构建一个既能稳定打分、又具备"品味"的评估器，前提是先建立一套标准，把"这个设计好吗？"这种主观判断转化为具体、可评分的条目。

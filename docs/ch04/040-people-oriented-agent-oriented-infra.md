@@ -14,6 +14,39 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
 → 阅读时间：约 30 分钟 · 6 大节 + 1 节致谢 + 3 篇参考资料
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("晓斌：从 People-Oriented 到 Agent…"))
+    一句话定位
+    0. 从一个周报系统说起
+    1. 统一观察：软件一直是'意图驱动 + 代码…
+      传统研发的循环
+      Agent 研发的循环
+      两个案例
+    2. 三个核心推论
+      推论一：Agent 不是革命，是加速
+      推论二：静态沉淀不会消失
+      推论三：模式没变，但模式对基础设施的要求彻底变了
+    3. 三个关键变量（从传统研发到 agent …
+      变量 1：桥梁带宽 —— 从人到 agent
+      变量 2：沉淀粒度 —— 持久代码与瞬态代码的分化
+      变量 3：循环频率 —— 从发布周期到运行时反馈
+    4. 三个实践案例：agent 与 infra…
+      案例一：多角色 agent 研发系统
+      案例二：配置推送——agent 的自主程度取决…
+      案例三：身份与鉴权的碎片化
+    5. 设计原则：从 People-Orient…
+      传统 People-Oriented infra
+      Agent-Oriented infra
+      四层递进设计
+    6. 行业趋势与我们可以做什么
+      行业在做什么
+      4 大高杠杆行动方向
+```
+
 ## 一句话定位
 
 ```mermaid

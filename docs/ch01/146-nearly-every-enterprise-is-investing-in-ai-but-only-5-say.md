@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 4.0KB | `entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Nearly every enterprise is i…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 这个调查结果揭示了企业AI转型中的一个核心悖论：投资热情与数据成熟度之间的巨大鸿沟。
 

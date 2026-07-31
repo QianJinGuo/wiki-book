@@ -26,6 +26,18 @@ LangChain 证明了这一点：他们只改了 LLM 外围的基础设施（同�
 
 这套基础设施，现在有个专门的名字： Agent Harness 。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("超级AI背后的秘密武器：Agent Harness深度解析"))
+    什么是 Agent Harness？
+    工程三层论
+    生产级 Harness 的 11 个核心组件
+      1. 编排循环
+```
+
 ## 什么是 Agent Harness？
 
 这个术语是 2026 年初正式提出的，但概念早就存在了。Harness 是包裹 LLM 的完整软件基础设施：编排循环、工具、记忆、上下文管理、状态持久化、错误处理和防护机制。

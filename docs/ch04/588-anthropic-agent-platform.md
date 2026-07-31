@@ -10,6 +10,21 @@
 
 Anthropic 三位负责 Claude Platform 的高管——管理式智能体产品经理 Jess Yann、Platform 工程负责人 Katelyn Lesse、Platform 产品负责人 Angela Jiang——在半年的时间点上总结了智能体基础设施的变化方向。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Agent Platform 进化：…"))
+    身份与权限层的演化
+    智能体间通信
+    脚手架变薄
+    ROI 衡量
+    工程团队变化
+    失败模式
+    未来方向
+```
+
 ## 身份与权限层的演化
 
 智能体的身份未来可能会和具体工作流本身分开，智能体自己拥有一份独立身份。趋势是智能体先听清楚用户想要的结果，然后说明自己需要访问哪些权限，用户在确认范围内授权，智能体给自己开一个服务账号去执行，用户可以随时审计。

@@ -8,6 +8,26 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-qat-models-optimizing-compression.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemma 4 QAT Models: Quantiza…"))
+    概述
+    关键技术：移动端特殊 QAT Schema
+    Q4_0 标准 vs 移动端 Schema 性…
+    工具链支持（部署生态）
+    与 Gemma 4 完整生态的关系
+    实践启示
+      1. 边缘部署：优先选择 QAT 模型而非自行量化
+      2. 评估量化影响：在你的任务上跑基准测试
+      3. INT8 量化通常是安全的起点
+      4. 关注推理加速而非仅模型体积
+    与现有 Gemma 实体差异化
+    上线状态
+```
+
 ## 概述
 
 Google 2026-06-05 发布 Gemma 4 QAT（Quantization-Aware Training）检查点，专门为移动端、笔记本和消费级 GPU 上的本地推理设计。两个核心交付：

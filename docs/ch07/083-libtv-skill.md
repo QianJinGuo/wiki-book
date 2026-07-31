@@ -6,6 +6,16 @@
 
 # LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LibTV把导演的手艺装进了Skill商店，我拿三支片子…"))
+    核心内容
+    分析
+```
+
 ## 核心内容
 
 本文深度评测了LibTV Agent——哩布哩布（Liblib）旗下专业AI视频创作平台的智能Agent功能。作者通过三个真实项目的完整创作过程，展现了LibTV Agent的核心创新：

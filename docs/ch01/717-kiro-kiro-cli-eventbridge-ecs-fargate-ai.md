@@ -6,6 +6,22 @@
 
 # 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("构建无服务器Kiro调度平台：用Kiro CLI + E…"))
+    相关实体
+    深度分析
+      核心观点
+    **一、背景：从交互式到自动化**
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [xz, two years on: what scanners still cannot catch](ch01/659-xz.html)

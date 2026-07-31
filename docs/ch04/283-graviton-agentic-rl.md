@@ -8,6 +8,23 @@
 
 本文系统分析了 Agentic RL 训练中常被忽视的沙箱层（sandbox layer）——策略网络产出的每条 rollout 必须在真实环境中执行（Python 沙盒、Mock 工具 API、Headless 浏览器、SQL 仓库等），这一层是 CPU bound、fan-out 重的 fleet，GPU 经常等待其完成。通过将沙盒层迁移到 Graviton5（m9g）实例，可降低成本多达 43%。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Graviton 优化 Agentic RL 沙箱层：架…"))
+    核心发现
+    架构分析
+    延伸意义
+    深度分析
+      1. 沙箱层：Agentic RL 训练中被忽…
+      2. 沙盒负载的四个关键特征
+      3. Graviton vs Intel 的实…
+      4. 成本模型的复利效应：单价优势 × 性能优势
+    实践启示
+```
+
 ## 核心发现
 
 使用可复现的 benchmark suite（`agentic-rl-bench`），覆盖 6 个 Agentic RL 训练的真实 workload archetype 加一个端到端混合 rollout：

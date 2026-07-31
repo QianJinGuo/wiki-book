@@ -8,6 +8,21 @@
 
 PixelRAG 是 UC Berkeley 的开源项目，提出一种**纯视觉原生的 RAG 方案**——完全抛弃 HTML 文本解析链路，直接用无头浏览器渲染截图 + 视觉大模型编码进行检索。配套论文《Web Screenshots Beat Text for Retrieval-Augmented Generation》。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("PixelRAG：用截图替代文本解析的视觉 RAG 范式"))
+    核心流程
+    技术架构
+    关键数据
+    核心优势
+    与经典 RAG 的对比
+    论文参考
+    实践启示
+```
+
 ## 核心流程
 
 传统 RAG：页面/文档 → HTML 转纯文本 → 文本切块 → 向量检索

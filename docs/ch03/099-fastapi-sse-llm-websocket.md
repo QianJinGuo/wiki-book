@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/fastapi-sse-llm-streaming.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FastAPI SSE — LLM流式传输的WebSoc…"))
+    核心结论
+    SSE vs WebSocket vs 长轮询
+    FastAPI StreamingRespon…
+      异步生成器模式
+    生产环境6大避坑
+    Redis Pub/Sub 广播通知架构
+    性能调优
+    适用场景判断
+    相关实体
+```
+
 ## 核心结论
 **SSE（Server-Sent Events）是LLM流式传输的更优选择**，而非 WebSocket。SSE 基于普通 HTTP，浏览器原生支持 EventSource，连接断开时自动重连，服务器可指定事件 ID 实现断点续传。   ^[https://mp.weixin.qq.com/s/7FWjN0GDBgVyvEDiaC1AMQ]
 

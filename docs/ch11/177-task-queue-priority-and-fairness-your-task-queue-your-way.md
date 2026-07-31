@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/task-queue-priority-and-fairness-your-task-queue-your-way.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Task Queue Priority and Fair…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

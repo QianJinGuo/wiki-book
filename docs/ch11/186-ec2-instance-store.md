@@ -28,6 +28,19 @@
 
 * * *
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("如何保护 EC2 实例存储（Instance Store…"))
+    **一、为什么需要关注 Instance St…
+    **二、Instance Store 数据丢失…
+      2.1 关键发现
+    **三、纵深防御方案**
+      3.1 方案 A：API 层保护（防人为误操作…
+```
+
 ## **一、为什么需要关注 Instance Store 数据保护？**
 
 ```mermaid

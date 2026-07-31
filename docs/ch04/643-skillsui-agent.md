@@ -6,6 +6,23 @@
 
 # SkillsUI 企业 Agent 中间层
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SkillsUI 企业 Agent 中间层"))
+    相关实体
+    深度分析
+      核心观点
+    Overview
+    背景问题：function calling 和…
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 - [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch05/094-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillsui-enterprise-agent-middle-layer.md)

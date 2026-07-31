@@ -10,6 +10,16 @@
 
 Specific technique (frozen Multi-Token Prediction) with implementation details for mobile deployment. Includes architectural innovations, references to prior work, and real-world deployment (Pixel 9/10). High technical depth and verifiability.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Accelerating Gemini Nano mod…"))
+    Content Summary
+    A 'late exit' strategy
+```
+
 ## Content Summary
 
 Markdown Content:

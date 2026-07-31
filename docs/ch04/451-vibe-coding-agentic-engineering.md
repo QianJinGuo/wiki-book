@@ -6,6 +6,17 @@
 
 # 从Vibe Coding到Agentic Engineering：重构后台开发全流程
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从Vibe Coding到Agentic Enginee…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Karpathy Vibe Coding To Agentic Engineering](ch04/237-agentic.html)

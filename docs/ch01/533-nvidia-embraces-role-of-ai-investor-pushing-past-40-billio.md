@@ -12,6 +12,17 @@ Patrick T. Fallon | AFP | Getty Images
 [Nvidia](https://www.cnbc.com/quotes/NVDA/) stepped on the gas last year, putting cash into companies up and down the AI infrastructure stack and helping to fund businesses that could turn around and buy the chipmaker's technology. It's been a lucrative endeavor, as the company's $5 billion [bet](https://www.cnbc.com/2025/09/18/intel-nvidia-investment.html) on [Intel](https://www.cnbc.com/quotes/INTC/) is now worth over $25 billion, a historic return in a matter of months.
 In 2026, the pace of deals has kicked into overdrive, with Nvidia already topping $40 billion in commitments and expanding its portfolio to include more public equities.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Nvidia embraces role of AI i…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 **1. 供应链金融化：AI 时代的新型生态控制**

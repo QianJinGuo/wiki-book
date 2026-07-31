@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI GPUs probably live longer…"))
+    深度分析
+      '三年寿命'说法的溯源：匿名 → 推特 → 媒…
+      反向证据一：厂商公开声明与第三方案例
+      反向证据二：超算级硬数据
+      区分'物理寿命'与'经济寿命'
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Sean Goedecke 2026 年发表的反主流分析：被 AI 怀疑论者反复引用的"AI 推理 GPU 至多三年寿命"说法源于一条匿名推文及其后续传播链条，并无可靠实证。文章从来源溯源、硬件厂商公开声明、超算集群存活统计三层证据反推，得出结论：AI GPU 在高负载下的物理寿命显著长于 3 年；真正可能短的是"经济寿命"，但即使在经济寿命内，AI 推理仍可在"AI 寒冬"中维持可负担成本。

@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/aws-agent-orchestration-workshop.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent orchestration"))
+    Select your cookie pref…
+    Customize cookie prefer…
+      Essential
+      Performance
+      Functional
+      Advertising
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - AWS Marketplace 举办的 Agent Orchestration Workshop 技术研讨会
 - 聚焦 Agent 编排（orchestration）实战

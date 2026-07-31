@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐ | 7.4KB | `entities/gbhackers-sandworm-shift-from-it-breaches.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sandworm Hackers Shift From …"))
+    深度分析
+      从 IT 到 OT：攻击范式的战略性转变
+      LOTL 战术的演进与危险
+      老旧漏洞链的持续价值
+      43 天警告窗口：被忽视的黄金干预期
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 ```mermaid

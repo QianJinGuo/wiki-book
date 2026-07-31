@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/obsidian-llm-wiki-local-kytmanov.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("obsidian-llm-wiki-local: Obs…"))
+    核心问题：笔记孤岛
+    obsidian-llm-wiki-local…
+    实测效果
+    可纠错反馈循环
+    局限性与适用边界
+    与 Karpathy LLM Wiki 的关系
+    技术栈
+    深度分析
+```
+
 ## 核心问题：笔记孤岛
 
 大多数人的 Obsidian 图谱视图是"孤岛"——剪藏容易（点一下），整理难（大脑满负荷）。输入和整理成本差 100 倍，系统天然失衡。

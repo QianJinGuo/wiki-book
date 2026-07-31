@@ -8,6 +8,18 @@
 
 Amazon Bedrock AgentCore 提供了**三种持久化文件系统方案**，覆盖不同的 Agent 持久化需求：Managed Session Storage、Amazon EFS、Amazon S3 Files。这三种方案在私有性、共享范围、访问方式上有各有侧重——从按用户私有、到多方共享、再到文件与对象两端访问。会话结束也不会丢失数据。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock AgentCore 数据持…"))
+    三种方案对比
+    使用场景
+    性能测试
+    与相关实体
+```
+
 ## 三种方案对比
 
 | 特性 | Managed Session Storage | Amazon EFS | Amazon S3 Files |

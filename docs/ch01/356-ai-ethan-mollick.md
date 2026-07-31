@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-ai-right-now-a-quick-guide.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("现在如何使用 AI：一份快速指南（Ethan Molli…"))
+    深度分析
+      一、模型选择的'车辆类比'框架
+      二、Deep Research 的真正价值在垂…
+      三、Voice Mode 的'视觉'才是 Ki…
+      四、Prompt Engineering 的科…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick（One Useful Thing / Wharton Generative AI Lab）每几个月更新一次的 AI 使用指南。本文核心论点：**选型的关键不再只是"最好的模型"，而是"对大多数人最好的整体系统"**——Claude、Gemini、ChatGPT 三家各有优势，但共同点比差异更重要。文章系统介绍了模型分级、Deep Research、语音模式、内容生成、prompt 工程、幻觉处理等日常使用关键决策，对刚入门的重度用户有完整指导。

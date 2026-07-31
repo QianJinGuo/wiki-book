@@ -8,6 +8,18 @@
 
 > **核心洞察**：SGLang 开发正从孤立的代码变更演变为由 Agent 辅助的工作流——将开发经验编码为可执行的 `SKILL.md` 文件、脚本、基准合约和审查循环。这代表了 AI 基础设施开发中"过程即技能"的新范式。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent-Assisted SGLang 开发：AI …"))
+    背景与动机
+    现有的 SGLang Agent Skill 生态
+    核心论点：Agent 的价值在于过程知识
+    与 Agent Skill Engineeri…
+```
+
 ## 背景与动机
 
 SGLang 仓库已从单一的 LLM serving 项目扩展到 LLM serving、分布式运行时、GPU 内核、扩散 pipelines、模型特定执行路径和生产事故处理的复杂生态系统。过去这些工作流依赖开发者个人记忆：如何启动某个模型、如何读取 profile trace、调试 CUDA crash 时先加哪个日志、性能 PR 应包含哪些基准测试。

@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 18.7KB | `entities/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 从 Demo 到产线 · 企业 …"))
+    核心定位
+    8 道关卡总览
+    第一关：读懂巨型代码库
+    第二关：控制幻觉
+    第三关：经验复用（Skill 渐进式披露）
+    第四关：Token 经济学
+      三层模型路由
+      反向选型（受限模型下的模式选择）
+      Talker-Reasoner 双系统
+    第五关：约束与放手
+    第六关：编排载体四方图
+```
+
 ## 核心定位
 
 黄佳（咖哥）在 CSDN「AI 进化论」分享的 **Harness 工业化 8 道关卡**，是面向"百万行级代码库 + 多系统编排 + 长周期任务"的企业级 Agent 落地清单。每关给出"痛点 → 解法 → 工程模板"三段式。

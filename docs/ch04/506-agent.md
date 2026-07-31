@@ -9,6 +9,18 @@
 > **SHA256**: ec62655e1642b8058f8882e5e92f2062d4c5fb2ef1ac38f9820ed1d40d8eba2e
 来自**清华大学人工智能学院、交叉信息研究院**的方寸跃迁团队，提出一套面向 Agent 运行全生命周期的多层安全体系，覆盖事前（Skill Ward）× 事中（Guard × Observer）× 事后（审计）完整链路。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路…"))
+    相关实体
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 相关实体
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
 - [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12/033-canvas-breach-disrupts-schools-colleges-nationwide.html)

@@ -8,6 +8,28 @@
 
 > **Background**: 智慧工厂跨账户迁移实战。从"手动步骤指南" → 幂等 boto3 编排脚本 → Kiro 包装为 AI Agent 可调用的工作流。配套源码：`mildone82/iot-migration`。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Amazon IoT Core 与 Kiro 构建…"))
+    场景
+    数据链路
+    三阶段演进
+      1. 手动步骤指南（基线）
+      2. 幂等 boto3 编排脚本（改进）
+      3. Kiro 包装工作流（AI Agent …
+    各层选择的关键原因
+    关键工程细节
+      1. IoT Policy IP 白名单
+      2. Firehose 5 MiB / 5 m…
+      3. 为什么 Kinesis Data Str…
+    价值
+    配套资源
+    待关注
+```
+
 ## 场景
 
 ```mermaid

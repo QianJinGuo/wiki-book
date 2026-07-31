@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/news-bonsai-image-4b.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing 1-bit and Ternar…"))
+    深度分析
+      量化的'帕累托前沿'被显著外推
+      端侧激活内存比部署体积更关键
+      低比特路径必须在硬件栈里实现才有意义
+      推理 PaaS 化的反向趋势
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 PrismML 发布 Bonsai Image 4B——基于 FLUX.2 Klein 4B 架构的两种极低比特扩散 Transformer 实现（1-bit 二值化与 Ternary 三值化）。在保持 88-95% 原模型生成质量的前提下，把扩散 Transformer 体积压缩 6.4-8.3 倍，让 4B 级图像生成首次能够本地运行在 iPhone 上。

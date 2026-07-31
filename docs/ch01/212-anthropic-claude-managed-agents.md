@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 23.1KB | `entities/anthropic-claude-managed-agents-platform-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Claude Managed Age…"))
+    概述
+    四大新功能
+      1. Managed Agents 四核心概念
+      2. Multiagent Sessions（…
+      3. Outcomes Loop（结果驱动自我…
+      4. Webhooks（异步通知机制）
+    战略判断
+    技术细节
+    深度分析
+      平台定位：从'模型供应商'到'Agent 基础…
+      核心创新：Outcomes Loop 的质量保…
+      Multiagent Sessions：智能体…
+      Dreams：持续优化的差异化路径
+    实践启示
+      1. 评估你的工作流是否适合迁移到 Manag…
+      2. 设计好你的 Rubric 是使用 Out…
+      3. 从单 Agent 场景开始，逐步引入 M…
+      4. 利用 Webhooks 构建事件驱动的 …
+    相关产品/人物
+    架构图
+```
+
 ## 概述
 本文介绍 Anthropic 正式开放 Claude Managed Agents 平台，系统性拆解其四大新功能模块：Managed Agents（四核心抽象）、Multiagent Sessions（多 Agent 协作）、Outcomes Loop（结果驱动自我评估）、Webhooks（异步通知）、Dreams（记忆整理）。Anthropic 的战略意图是将 Claude 从"调用模型"转变为"能代你把事情做完的系统"。
 

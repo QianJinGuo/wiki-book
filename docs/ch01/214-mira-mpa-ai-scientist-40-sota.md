@@ -6,6 +6,28 @@
 
 # MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MIRA + MPA：深度原理 AI Scientist…"))
+    概述
+    时代背景：递归自进化按下 AGI 加速键
+      Jack Clark 与 OpenAI 的信号
+      AI4S 领域 Nature 三连发
+    MPA 模型：40 项实验全面 SOTA
+    前 SOTA 的暴力美学：Suiren-1.0
+      Suiren 的结构性盲区
+    AutoResearch 架构：MIRA 的角色
+    自主重构：AI 改写 AI 的代码
+    自主清理：AI 的「科研直觉」
+    三阶段训练框架
+      预训练
+      物理对齐中间训练（MPA 核心创新）
+      后训练
+```
+
 ## 概述
 
 深度原理团队（DeepPrinciple）发布 **Materials Property Axiom（MPA）材料基座模型**，由自研 **AI Scientist 平台 MIRA** 通过**递归自训练**产出。**40 项实验性质预测任务全面刷新 SOTA**：平均 MAE 降低 10%，最高 51.1%。**击败 Suiren-1.0（前 SOTA，1.8B 参数 + 7000 万量子化学数据 + 320 张 H800）正面对决赢下 35/40 端点**。分布外泛化（MPA 退化 25.7% vs Suiren 31.8%）。这是 \"**AI for AI**\" 概念迄今最具说服力的一次落地。

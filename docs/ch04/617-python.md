@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/一次构建随处复用python-泛型仓库模式.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一次构建随处复用python-泛型仓库模式"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 > ai agent platforms topic map（已删除）
 

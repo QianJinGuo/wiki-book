@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-ecommerce-brand-com-vs-marketplace-founder-park.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI 没把更多流量导向 Amazon，利好品牌官网 — …"))
+    五大核心观点
+      1. AI 导流 4-8 倍偏向品牌官网
+      2. Shopify 的护城河是基础设施栈，不…
+      3. AI 是导流渠道（referral ch…
+      4. 消费者并不想让 AI 自动购物
+    关键引用
+    与现有知识的关系
+```
+
 ## 摘要
 
 Founder Park 发布的对谈记录。股票分析师 Michael Morton（MoffettNathanson）与 Ben Thompson（Stratechery）深入讨论 AI 对电商格局的影响。核心论点：AI 并未像市场担心的那样成为新的交易平台，反而像升级版 Google Search，将流量 4-8 倍地导向品牌官网而非 Amazon 等市场平台。

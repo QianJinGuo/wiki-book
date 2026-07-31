@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AutoResearch 迁移到软件开发：多 Agent…"))
+    深度分析
+      从 ML 研究自动化到软件开发自动化的迁移逻辑
+      多 Agent 交叉审核的工程价值
+      5 维度加权评分的工程取舍
+      审核反馈驱动 vs 盲循环：信息流的本质改进
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 鸟窝（smallnest）2026 年开源的 `autoresearch` 项目：把 Karpathy 的 AutoResearch（ML 研究自动化）思路迁移到软件开发领域，核心创新是用 Codex 和 Claude 交叉审核 + 5 维度加权评分 + 审核反馈驱动下一轮，实现"Issue 自动实现+审核+合并"的完整闭环。

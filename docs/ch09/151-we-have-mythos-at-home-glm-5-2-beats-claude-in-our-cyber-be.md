@@ -8,6 +8,16 @@
 
 > Source: [We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks](https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks) | Score: v*c=64
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("We have Mythos at Home: GLM …"))
+    Overview
+    **Introducing GLM-5.2**…
+```
+
 ## Overview
 
 Markdown Content:

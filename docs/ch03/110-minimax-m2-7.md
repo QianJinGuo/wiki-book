@@ -10,6 +10,17 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 **RL场景示例**：Agent自动完成文献调研→实验规格跟踪→数据流水线对接→启动实验→监控分析→日志读取→问题排查→指标分析→代码修复→MR提交→冒烟测试。
 > M2.7能够胜任30-50%的工作流。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MiniMax M2.7：开启模型的自我进化"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)

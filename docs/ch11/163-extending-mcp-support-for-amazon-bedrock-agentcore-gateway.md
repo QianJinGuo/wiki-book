@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Extending MCP support for Am…"))
+    深度分析
+      流式传输、会话管理与 Elicitation
+      OAuth 2.0 On-Behalf-Of …
+      安全架构
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

@@ -8,6 +8,33 @@
 
 > 2026-06-07 引用自 Ethan Mollick《A Guide to Which AI to Use in the Agentic Era》，One Useful Thing，2026-02-18。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent 时代选型指南：模型·应用· Harne…"))
+    核心框架：Models · Apps · Ha…
+    模型选型（2026 年初现状）
+    Harness 深度对比
+      Claude Code / OpenAI Co…
+      Claude Cowork
+      NotebookLM
+    AI 使用建议（Mollick）
+    关键引用
+    深度分析
+      1. Models-Apps-Harnesse…
+      2. '同模型不同 harness'现象的工程根因
+      3. 付费模型的隐性分层与 auto 模式的欺骗性
+      4. Claude Cowork 的产品定位突破
+    实践启示
+      1. AI 选型：优先选 harness 而非模型
+      2. $20 付费版用户：永远手动选高级模型
+      3. 非技术用户：从 NotebookLM →…
+      4. 组织 AI 策略：投资 harness …
+    相关主题
+```
+
 ## 核心框架：Models · Apps · Harnesses
 
 Mollick 提出 AI 选型三维框架，将 AI 生态分为三层：

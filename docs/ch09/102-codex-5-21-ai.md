@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-codex-521-update-appshots-goal-computer-use.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex 5.21 更新：AI 编程助手开始变成电脑工…"))
+    深度分析
+      四块拼图不是简单功能叠加，而是'端到端代理闭环…
+      /goal 四要素是 LLM 长任务工程的…
+      'Appshots 降低上下文成本'的隐性价值
+      锁屏执行的安全模型：必须在边界内做
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Codex 5.21 把 Appshots（Mac 窗口截图直传）、`/goal` 目标模式、浏览器标注增强、锁屏后继续工作四块拼图连成完整链路。AI 编程助手的角色从"代码生成器"切换到"电脑工作代理"——人从"逐步指挥"变成"设目标和把关"，AI 负责执行、试错、长任务推进。

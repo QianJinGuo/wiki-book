@@ -8,6 +8,20 @@
 
 北京大学 DCAI 团队联合上海算法创新研究院、北京中关村学院于 2026 年 7 月发布 DataFlow-Harness（arXiv 2607.16617），上线后登上 HuggingFace Papers 当日榜第 2。DataFlow-Harness 建立在 DataFlow 开源生态之上（7000+ Stars），通过 Harness 工程约束让 Code Agent 在真实平台的能力边界内完成数据处理流水线构建。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DataFlow-Harness — 北大 Code A…"))
+    NL2Pipeline Gap
+    核心消融发现
+    Harness 工程约束
+    输出产物
+    资源链接
+    相关实体
+```
+
 ## NL2Pipeline Gap
 
 DataFlow-Harness 论文将用户自然语言意图到生产平台原生流水线之间的距离定义为 **NL2Pipeline gap**：用户口头描述的工作流意图需要转换成一条可检查、可编辑、可复用的平台原生 DAG 流水线。

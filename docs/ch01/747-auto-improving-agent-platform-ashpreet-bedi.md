@@ -16,6 +16,25 @@
 **入库日期**：2026-05-13
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Auto-Improving Agent Platfor…"))
+    概要
+    五工作流
+    三架构原则
+    核心洞察
+    Improve 工作流
+    Hill Climb vs Improve
+    局限与反思
+    深度分析
+      为什么自动改进在 Agent 平台率先成立
+      Improve vs Hill Climb：向…
+      提示词文件化：被低估的底层前提
+```
+
 ## 概要
 Ashpreet Bedi 的 Auto-Improving Agent 平台五工作流：Create→Improve→Extend→Hill Climb→Review；三原则（API化/数据同地/日志优先）；核心洞察——5秒反馈循环改变"值得做"边界；INSTRUCTIONS 驱动自动测试生成；Agent 行为天然可自动评分；反思：优化符合规格 ≠ 真正有用，提示词文件化是底层前提。
 

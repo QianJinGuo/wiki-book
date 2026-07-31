@@ -19,6 +19,17 @@ There may be that there is a huge cost in promoting AI when it's basic functiona
 .
 Stochastic Parrot is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stochastic Parrot Marcus AI …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

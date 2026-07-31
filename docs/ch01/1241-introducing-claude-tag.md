@@ -8,6 +8,29 @@
 
 > **Background**：Anthropic 官方 2026-06-24 发布的产品公告，介绍 Claude Tag——一种在 Slack 中以团队成员身份工作的 Agent 协作机制。Anthropic 内部 65% 的产品代码由 Claude Tag 创建，展示了 Agent 在企业协作场景中的实际采用程度。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Claude Tag"))
+    深度分析
+      Agent 协作模式的演进
+      与 Claude Cowork Task Bo…
+      65% 代码创建率的意义
+      对 Agent 基础设施的需求
+    实践启示
+      对企业 Agent 采用的建议
+      对 Agent 产品设计的启示
+      对 Agent 安全的考量
+    相关实体
+    第 2 来源 — 新智元报道：Claude T…
+    第 3 来源 — 架构师 JiaGouX 报道…
+      核心增量
+      与已有来源的衔接
+      关键独到判断
+```
+
 ## 摘要
 
 Claude Tag 是 Anthropic 推出的 Agent 协作框架，允许 Claude 以团队成员身份加入 Slack 频道。用户通过 @Claude 标签来委派任务，Claude 在后台异步工作并返回结果。关键特性包括多人协作、上下文学习、主动行为和异步工作。Anthropic 内部 65% 的产品代码由 Claude Tag 创建，证明了 Agent 在企业环境中的高采用率。

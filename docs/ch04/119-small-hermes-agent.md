@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 15.3KB | `entities/small-hermes-self-evolving-agent-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Small Hermes 自我进化 Agent 架构"))
+    核心洞察
+    七重困境 → 设计决策映射
+    三层上下文架构
+    反思机制设计
+    单向数据流约束
+    反模式警示
+    成熟度模型
+    深度分析
+      七重困境的相互纠缠性
+      三层上下文架构的工程价值
+      双轨反思的成本控制逻辑
+      不可变核心的哲学意义
+```
+
 ## 核心洞察
 
 Agent自我进化之所以难，是因为七个维度的困难相互纠缠，而非某个单独技术问题。Small Hermes（Rust）的解法是一组相互支撑的设计决策，缺一不可。

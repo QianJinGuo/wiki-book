@@ -8,6 +8,21 @@
 
 > 大淘宝技术团队系统总结了QoderWork Skills开发的方法论与工程体系，提出了由编排层（SKILL.md）、参数层（config.yaml）、实现层（scripts/）和知识层（references/）构成的四层分离架构。通过用户洞察报告、AB实验分析等自研Skill的实战经验，提炼了Description定义、流程编排、配置模板化及渐进式披露等关键开发技巧，旨在通过工程化手段实现团队知识沉淀与标准化，释放人力聚焦高价值业务决策。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("QoderWork Skills 开发实践：从传统数科到…"))
+    深度分析
+      1. 四层分离架构的设计理性
+      2. Follow Builders vs F…
+      3. 从Idealab RAG到QoderWo…
+      4. 测试驱动Skill开发的70-80%法则
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文以作者从传统数据科学（数科）向AI数科转型的实践为背景，系统阐述了QoderWork Skills的开发方法论与工程体系。核心洞见是：Skill不是独立的工具或应用，而是给AI Agent的一份"领域专家手册"——将领域知识、标准流程及避坑指南封装为AI Agent可执行的"数字助手"。文章通过对比Follow Builders和Frontend Slides两个优秀Skill案例，以及用户洞察报告、AB实验分析两个自研Skill的实战经验，深入分析了SKILL.md的编排职责、config.yaml的模板化设计哲学、scripts/的确定性逻辑封装、references/的渐进式披露策略。特别值得一提的是，文章揭示了"Skill开发中70-80%的工作量在于测试而非编写"这一反直觉事实，以及"给代码不如给流程"的核心原则。

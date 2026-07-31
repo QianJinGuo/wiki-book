@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐ | 8.5KB | `entities/rag-vs-llm-wiki-enterprise-knowledge-base.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("RAG vs LLM Wiki 深度对比：企业知识库架构…"))
+    评分
+    与现有 wiki 的关系
+    核心框架
+      RAG 五大真实痛点
+      LLM Wiki 三层架构
+      成本核心差异
+      场景选型矩阵
+    趋势判断
+    深度分析
+      1. Chunking 矛盾揭示 RAG 的架…
+      2. 无状态记忆使 RAG 在知识复用上存在系…
+      3. 文档质量是 RAG 的隐性瓶颈，往往被低估
+      4. LLM Wiki 的核心优势在于知识的有…
+    实践启示
+      1. 高频变更知识场景优先选 RAG，配合主动…
+      2. 垂直领域术语密集场景优先考虑 LLM W…
+      3. 稳定知识+高查询量场景用 LLM Wik…
+      4. 复杂多文档分析任务采用 RAG+LLM …
+    相关实体
+```
+
 ## 评分
 - **价值**：9/10 — 系统性对比 RAG 五大痛点的根因分析 + 场景选型决策矩阵 + 趋势预判，对该 wiki 自身建设有直接参考价值
 - **置信度**：8/10 — 源自 Karpathy/微软 GraphRAD/公开工程案例，作者有独立判断

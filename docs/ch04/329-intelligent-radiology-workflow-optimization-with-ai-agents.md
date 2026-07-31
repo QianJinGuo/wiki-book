@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/intelligent-radiology-workflow-optimization-with-ai-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Intelligent radiology workfl…"))
+    相关实体
+    深度分析
+      核心问题：传统放射科工作流调度为什么失效
+      多智能体架构的协同逻辑
+      双层记忆系统：短时 + 长时 + 情节记忆
+      安全架构的双层 Guardrails 设计
+    实践启示
+      1. 从'规则引擎'到'智能体编排'的迁移路径
+      2. 数据集成是最大难点，API 设计决定上限
+      3. 记忆系统的工程实现是关键差异化因素
+      4. PII 保护需要双向 Guardrail…
+```
+
 ## 核心要点
 
 - v×c = 7×8 = 56，stars = 4

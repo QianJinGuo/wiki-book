@@ -6,6 +6,19 @@
 
 # Cursor AI 蜂群：规划器+Worker 架构与多模型经济学的突破
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cursor AI 蜂群：规划器+Worker 架构与多…"))
+    深度分析
+      树状结构：一个动脑子，一群人干活
+      每秒千次提交的工程挑战
+      迹象引导与 Field Guide
+      实验结果与成本分析
+```
+
 ## 深度分析
 
 ```mermaid

@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("还在用WebSocket做LLM流式传输？FastAPI…"))
+    核心结论
+    SSE vs WebSocket vs 长轮询…
+    核心实现：FastAPI StreamingR…
+    生产环境6大避坑指南
+      1. 代理缓冲毁掉流式效果
+      2. 超时问题
+      3. 客户端断开检测
+      4. 多进程共享状态
+    Redis Pub/Sub 广播通知架构
+    核心回顾
+    深度分析
+      1. SSE 的本质是 HTTP 分块传输的协议化
+      2. LLM 流式输出的核心矛盾：生成速度 v…
+      3. 心跳机制是生产环境的生死线
+      4. Redis Pub/Sub 的局限性与替…
+    实践启示
+      针对 FastAPI 开发者
+      针对架构师
+      针对运维/DevOps
+```
+
 ## 核心结论
 
 绝大多数 LLM 流式传输场景**根本不需要 WebSocket**。SSE（Server-Sent Events）基于普通 HTTP，浏览器原生支持，还能自动重连——更简单、更稳定、生产环境少踩一半坑。

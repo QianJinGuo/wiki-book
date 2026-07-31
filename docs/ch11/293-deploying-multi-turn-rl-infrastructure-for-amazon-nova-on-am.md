@@ -6,6 +6,21 @@
 
 # Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Deploying Multi-Turn RL Infr…"))
+    深度分析
+      多轮 RL 的企业级意义
+      基础设施架构的工程智慧
+      与 agent-harness 训练的关系
+      训练数据与奖励设计
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

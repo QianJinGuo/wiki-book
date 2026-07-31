@@ -8,6 +8,21 @@
 
 MemSlides 是清华和上交联合提出的一种层级记忆驱动的 AI Slide 生成 Agent 框架，在 HuggingFace 获得日榜第一（GitHub 400+ stars）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MemSlides — 层级记忆驱动的 AI Slide…"))
+    深度分析
+      层级记忆设计的范式意义
+      Three-Tier Memory 的生命周期差异
+      工具记忆：Agent 技能迁移的关键
+      Plan-Act-Guard 模式与 Safe…
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 1. **三层级记忆架构**：User Profile（用户偏好画像）、Working Memory（当前编辑上下文）、Episodic/Tool Memory（历史操作与工具执行经验）——三类记忆的生命周期和更新策略各不相同，协同支撑多轮编辑中的一致性与个性化。

@@ -6,6 +6,24 @@
 
 # Making Claude a chemist
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Making Claude a chemist"))
+    深度分析
+      1. Claude 作为化学家：专业领域 AI…
+      2. 领域 AI vs 通用 AI 的路线分歧
+      3. 评估标准需要领域定制
+    实践启示
+      1. 领域 AI 的落地速度更快
+      2. 领域评估是领域 AI 的关键
+      3. 领域 AI + 通用 AI 的组合策略
+    相关实体
+    Claude vs. ChemDraw on …
+```
+
 ## 深度分析
 
 ### 1. Claude 作为化学家：专业领域 AI 的里程碑

@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 12.1KB | `entities/github-agentic-token-efficiency.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Improving Token Efficiency i…"))
+    概述
+    核心优化技术
+      1. 消灭未使用的 MCP 工具注册
+      2. CLI 替代 MCP 工具调用
+      3. Auditor + Optimizer …
+    度量方法论
+      ET 公式
+      三大混淆因素
+    初步结果
+    未来方向
+    观点评析
+      核心价值
+      局限
+    知识库连接
+    深度分析
+      1. API Proxy 架构是 token …
+      2. '审计 Agent' 自举是正反馈系统的…
+      3. 工具冗余成本具有隐蔽的复利效应
+      4. CLI 替换 MCP 的本质是从'推理步…
+```
+
 ## 概述
 
 Landon Cox（Microsoft Research）和 Mara Kiefer（GitHub）分享 GitHub 内部对 Copilot Agentic Workflows 的 Token 使用优化实践。核心思路：通过在 API proxy 层统一收集 Token 数据 → 用 Agent 审计 Agent（Auditor/Optimizer 双 workflow）→ 发现并自动修复效率问题。

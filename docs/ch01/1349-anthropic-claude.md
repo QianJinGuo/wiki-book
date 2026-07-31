@@ -6,6 +6,23 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-next-gen-alex-infoq.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 首次揭秘下一代 Claude 怎么造"))
+    核心信号
+    深度分析
+    详细解读
+      模型即产品：规格定义驱动的开发模式
+      Adaptive Thinking：主动判断思…
+      Dreaming 机制：后台记忆整理
+      AI 改变产品开发流程
+    实践启示
+    相关实体
+```
+
 ## 核心信号
 
 1. **模型开发彻底产品化**：每一代 Claude 在训练前都有清晰规格定义、目标能力、评测路线，像正式产品一样"培育"

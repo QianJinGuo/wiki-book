@@ -34,6 +34,29 @@ graph TB
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/hermes-wiki-9-step-auto-growing-knowledge-network.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes-Wiki 实战 — Obsidian + …"))
+    概述
+    范式定位：3 个本质变化
+    文件夹结构：节点类型分离
+    三个核心文件：规则/入口/日志
+      1. SCHEMA.md：规则文件（Agent…
+      2. index.md：总入口
+      3. log.md：更新日志（可追溯性基础）
+    9 步可执行搭建法
+      步骤 1 — 建文件夹
+      步骤 2 — 写 3 个核心文件
+      步骤 3 — Obsidian 打开
+      步骤 4 — 设置 WIKI_PATH
+    深度分析
+    实践启示
+    与现有实体的差异化
+```
+
 ## 概述
 
 超级猛 2026-05-05（修改 2026-05-19）"我又把 Obsidian 知识库升级了"——本文是该作者 Obsidian + AI 知识库系列**第 3 篇**（前 2 篇：Hermes Agent 接 Obsidian / Obsidian + Codex 持续进化），核心命题：**让 Agent 通过 Obsidian 的 wikilink 能力，把一篇文章自动编译成互相关联的知识节点，在知识库里自己长出网络**。文章给出 9 步可执行搭建法（建文件夹 / 3 个核心文件 / Obsidian 打开 / WIKI_PATH / 只读验证 / 收录首篇 / 5 点验收 / 本质变化 / 5 条安全规则），把 Karpathy "LLM Wiki" 抽象理念落地为 Hermes Agent 上的可操作工程方案。核心范式转换：从"存 + 搜"线性流程 → "文章 → Agent 拆解 → 概念页/实体页/比较页/MOC → wikilink 互链 → 图谱网络"。

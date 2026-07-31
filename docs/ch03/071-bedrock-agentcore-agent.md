@@ -4,6 +4,35 @@
 
 > 📊 Level ⭐⭐ | 12.3KB | `entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Bedrock AgentCore 多租户 Agent …"))
+    概述
+    十组件框架详解
+      1. Agent 运行时部署：专用 vs 共享
+      2. 模型策略：共享 / 分层 / 微调
+      3. 工作流：Silo、Pool、Bridge…
+      4. 多租户 RAG
+    三种部署模型
+      Silo 模型
+      Pool 模型
+      Bridge 模型
+    深度分析
+      架构选择的核心矛盾
+      AgentCore 的差异化价值
+      安全模型的演进意义
+      成本归因的技术债务
+    实践启示
+      架构选型决策树
+      从概念验证到生产的关键检查点
+      技术债务预警
+      未来演进方向
+    相关实体
+```
+
 ## 核心要点
 
 - 技术主题：Bedrock Agentic AI 应用实践

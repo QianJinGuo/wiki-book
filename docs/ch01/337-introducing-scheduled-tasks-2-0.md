@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/introducing-scheduled-tasks-2-0.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Scheduled Tasks …"))
+    从'时间驱动'到'上下文驱动'的范式转变
+    在同一任务内继续执行
+    为 Web App 添加调度行为
+    增强可追踪性：侧边栏、日历视图和运行卡片
+    灵活的执行选项与高级设置
+    深度分析
+    实践启示
+    使用示例
+```
+
 ## 核心要点
 
 - Scheduled Tasks 2.0 将周期性工作（任务、Project、Web App）的自动化升级为"上下文驱动"模式，而非简单的时钟驱动重复执行。

@@ -7,6 +7,25 @@
 # Harness进化论文
 > 微软M⋆（记忆Harness程序进化）和谷歌AutoHarness（代码Harness自动生成）两篇论文分析。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness进化论文 — M⋆记忆程序进化与AutoH…"))
+    基本信息
+    M⋆ — 微软记忆Harness进化
+    AutoHarness — 谷歌动作约束Har…
+    核心洞察
+    与本文相关
+    深度分析
+      记忆Harness的任务特异性：为何跨任务迁移失败
+      AutoHarness的三种模式：策略与成本的权衡
+      小模型+Harness大模型：隐含的范式转移
+      两种Harness的趋同方向
+    实践启示
+```
+
 ## 基本信息
 - **来源**: 数据派THU（背靠清华大学）
 - **日期**: 2026-04-25

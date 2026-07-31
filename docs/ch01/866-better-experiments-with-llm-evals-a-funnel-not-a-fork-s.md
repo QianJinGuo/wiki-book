@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/spotify-llm-evals-funnel-not-fork.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Better Experiments with LLM …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 - LLM Evaluation: A Funnel Not a Fork

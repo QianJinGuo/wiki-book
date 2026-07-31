@@ -10,6 +10,20 @@
 > **作者**: Rohin Shah, Four Flynn (DeepMind)
 > **发布日期**: 2026-06-18
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Securing the future of AI ag…"))
+    深度分析
+      '假设 misalignment' 的安全哲学
+      Detection-Response 矩阵的工…
+      百万轨迹数据的启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 DeepMind 发布了 AI Control Roadmap，提出一套"纵深防御"(defense-in-depth) 框架来保障内部 AI Agent 系统安全。该框架超越传统 model alignment，引入系统级安全层——即使 alignment 不完美，也能提供安全保障。核心理念类似"双控驾驶"：信任 AI Agent 但保留随时接管的能力。预计到 2030 年，仅美国市场 AI Agent 就将创造 2.9 万亿美元经济价值，安全保障的紧迫性不言而喻。

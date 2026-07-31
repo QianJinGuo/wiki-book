@@ -6,6 +6,33 @@
 
 [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-harness-12-components-framework-comparison.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("生产级 Harness 的 12 大组件以及主流框架对比"))
+    1. 为什么问题通常不在模型
+    2. 什么是 Agent Harness
+      2.1 不只是 prompt 外壳，更是一整套…
+      2.2 Agent 是行为，Harness 是…
+      2.3 把它理解成操作系统
+    3. 生产级 Harness 的 12 个组件
+      3.1 编排循环（Orchestration …
+      3.2 工具系统（Tools）
+      3.3 记忆系统（Memory）
+      3.4 上下文管理（Context Manag…
+    4. 一次完整循环
+      4.1 七个步骤
+      4.2 文件系统纳入 Harness
+    5. 主流框架对比
+    6. 脚手架隐喻
+      6.1 好的 Harness 应该随模型增强而变薄
+      6.2 模型和 Harness 已经开始共同进化
+    7. 每个 Harness 架构师的 7 个选择
+    8. 作者的结论
+```
+
 ## 1. 为什么问题通常不在模型
 Demo 级 chatbot 没问题，但一进入生产环境：模型忘掉三步之前做了什么，tool call 失败了没人知道，上下文窗口被噪声塞满。
 **关键证据**: LangChain 只调整 LLM 外层的 infrastructure，不改模型权重，TerminalBench 2.0 排名从 30 名外跳到第 5。还有研究项目让 LLM 反过来优化基础设施本身，通过率超过人工设计系统。

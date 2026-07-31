@@ -10,6 +10,21 @@
 
 OBI（OpenTelemetry eBPF Instrumentation）的做法是：**在 Linux 内核里装一台全天候取证摄像头**——不改一行业务代码，自动识别并解析所有 AI 相关网络调用，把关键证据完整记录进 OpenTelemetry 标准的 trace 和 metrics。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("不改一行代码，看透 AI Agent 的每一次调用"))
+    深度分析
+      为什么 GenAI 语义约定埋点如此困难
+      eBPF 无侵入观测的技术架构
+      跨语言协程追踪
+      SSE 流式响应与 MCP 协议追踪
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### 为什么 GenAI 语义约定埋点如此困难

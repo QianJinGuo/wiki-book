@@ -4,6 +4,41 @@
 
 > 📊 Level ⭐⭐ | 18.6KB | `entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering: 让 Codin…"))
+    相关实体
+    核心定义
+    核心关注点
+      效果
+      速度
+      成本
+    三大核心困难
+      上下文耗尽
+      中断要重来
+      规模大了行为不可控
+    四大核心原则
+      任务拆解
+      并行执行
+      可续传
+      有完成条件
+    理念
+      任务边界清晰
+      错误在最小范围内解决
+      允许局部失败
+    关键技巧
+      任务粒度
+      子任务的 CLI 化与并发调度
+      File As Progress
+      任务状态设计
+    示例
+      全量 Code Review
+      JS to TS 迁移
+```
+
 ## 相关实体
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)

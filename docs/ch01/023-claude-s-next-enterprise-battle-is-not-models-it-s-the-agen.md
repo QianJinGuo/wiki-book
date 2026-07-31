@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐ | 9.7KB | `entities/claudes_next_enterprise_battle_is_not_mo.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude's next enterprise bat…"))
+    深度分析
+      1. 从模型博弈到基础设施博弈的范式转移
+      2. 模型易换，运行时难迁——锁定效应的真实机制
+      3. Anthropic 的 5.7% 为何战…
+      4. Microsoft 的分发优势与 Ope…
+    实践启示
+      对企业买家
+      对 AI 管理者和开发者
+      对供应商
+    关联阅读
+     相关实体
+```
+
 ## 核心要点
 - 模型竞争已不再是企业 AI 的唯一焦点；**agent 控制平面**正成为新的战略高地 
 - VB Pulse 调查：Microsoft Copilot Studio & Azure AI Studio 以 **38.6%** 领跑企业级 agent 编排平台，OpenAI 25.7% 排名第二，Anthropic 首次出现占 5.7% 

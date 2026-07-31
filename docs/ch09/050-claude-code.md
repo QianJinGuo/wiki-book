@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/claude-code-hackathon-expertise-digitization.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 黑客松：技艺数字化六项目"))
+    概述
+    六项目解析
+      MedKit（🇹🇷 金奖）——虚拟诊室
+      Wrench Board（🇫🇷 银奖）——电路…
+      Maieutic（🇨🇱 铜奖）——编程教学
+      Virtual Puppet Theater（…
+    共同内核
+    启示
+    深度分析
+    实践启示
+    相关
+    相关实体
+```
+
 ## 概述
 Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code，一周时间）。六个项目覆盖医疗/维修/教育/创意/建筑/工业六个领域，共同内核：**把锁在少数人脑子里的专业知识，变成更多人能触及的工具**。
 

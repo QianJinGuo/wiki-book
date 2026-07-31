@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-boris-cherny-agent-loop-design-patterns.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("别再亲自写Prompt了！OpenClaw与Claude…"))
+    深度分析
+      五级跃迁史
+      Boris 的循环实操五条技巧
+      循环管控的三个硬性约束
+      循环增值的关键：可复用技能
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 OpenClaw 创始人 Peter Steinberger 的推文引发 AI Coding 圈热议（阅读量 650 万），Claude Code 创始人 Boris Cherny 表示自己已经不再手动编写提示词，而是编写「循环」——小程序自动向 Agent 发出指令、读取输出、判断完成状态并决定下一步。文章梳理了从 2022 年 ReAct 论文到 2026 年多 Agent 编排循环的五级跃迁史，并指出：当模型编写代码的成本趋近于零时，最昂贵的不再是 token，而是循环管控——迭代上限、无进展检测、预算限制。

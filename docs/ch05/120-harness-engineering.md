@@ -30,6 +30,39 @@ graph TD
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-90-percent-pillars.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 四根支柱与四要素架构"))
+    实战：四要素架构
+      Application Owner Agent…
+      上下文分层加载策略（L1/L2/L3）
+      10 阶段开发流程（10-Stage Pipe…
+      技能体系：将隐性知识显性化
+    关键经验
+      1. Harness 本身需要 Dry Run
+      2. 质量门禁必须可程序化验证
+      3. 分离执行与评判是关键杠杆
+      4. 流程一致性优先于流程效率
+    效果对比
+      质量维度
+      AI 代码率跃迁
+      更深层收益
+    深度分析
+      四根支柱的协同逻辑
+      分离执行与评判的关键洞察
+      可程序化验证约束的工程价值
+      AI 代码率跃迁的本质含义
+    实践启示
+      从虚拟需求 Dry Run 开始
+      规范即失败案例的编码化
+      质量门禁设计的检查清单
+      知识显性化的工程优先级
+    相关实体
+```
+
 ## 实战：四要素架构
 基于四根支柱，构建四个核心要素：
 ```

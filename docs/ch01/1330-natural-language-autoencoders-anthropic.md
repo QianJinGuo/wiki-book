@@ -6,6 +6,22 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-nla-natural-language-autoencoders-interpretability.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Natural Language Autoencoder…"))
+    核心定位
+    核心技术架构：AV + AR 双模块闭环（NL…
+    核心指标
+    安全应用一：可解释性 — 检测未口头化的评估意识
+    安全应用二：模型审计（Auditing Task）
+    两大关键局限
+    发布资源
+    技术演进路径
+```
+
 ## 核心定位
 Anthropic 2026 年可解释性研究突破。核心命题：**将 AI 内部激活值翻译为人类可读语言**，从而读取模型"不会主动展示"的隐藏想法。论文发表于 transformer-circuits.pub，代码与 Neuronpedia 前端已开源。
 

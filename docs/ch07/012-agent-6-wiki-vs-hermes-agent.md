@@ -9,6 +9,26 @@
 > **作者**：Frank / Q马Q马，2026-06-02
 > **核心事件**：`@QuantumTransf`（Twitter）针对 `ai-memory` 项目（GitHub 467⭐）发出尖锐质疑：**"原始 session 本来就是结构化数据，直接放进 SQLite 就是一个很强的结构，编译成 markdown wiki 反而引入不必要的中间实体"**——引发 Agent 记忆领域最核心的设计分歧大讨论。本文综合 GitHub 数十个项目与最新行业实践，给出全景洞察。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 记忆存储方案深度洞察：6 大流派分歧、Wik…"))
+    推文争论：Agent 记忆该是人浏览的 wik…
+    当前主流方案全景：6 大流派
+    记忆分层模型：行业共识
+    核心争论：信息压缩 vs 信息保真
+    检索策略五代演进
+    前沿趋势 4 条
+      1. 知识图谱记忆
+      2. 多 Agent 共享记忆
+      3. MCP 成为标准接口
+      4. 零 LLM 模式
+    对 Hermes Agent 的启示
+    总结判断（1-2 年趋势）
+```
+
 ## 推文争论：Agent 记忆该是人浏览的 wiki 还是可查询的数据库？
 
 **@QuantumTransf 的核心质疑**：

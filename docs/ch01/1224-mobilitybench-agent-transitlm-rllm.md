@@ -8,6 +8,30 @@
 
 > 高德 AMAP-ML 团队（机器学习研发部）2026-06-16 发布的技术战略文章，揭示路线规划从"工业引擎"演进到"端到端时空基座"的两条并行路线。两篇论文同时发表：**MobilityBench** (KDD 2026 Oral) + **TransitLM**（业界首个 RLLM）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德路线规划双路线：MobilityBench（Agen…"))
+    核心命题
+    双路线战略
+    第一路线：MobilityBench（Agen…
+      问题：Agent 范式没有'考卷'
+      解法：MobilityBench 三大创新
+      三个关键发现
+    第二路线：TransitLM（端到端 RLLM）
+      挑衅性问题
+      解法：TransitLM 三大设计
+      三个关键发现
+    双路线辩证：两条都会赢，只是节奏不同
+      Agent 路线（对应 MobilityBen…
+      端到端路线（对应 TransitLM）
+    时空基座模型愿景
+    三步未来
+    关键资源
+```
+
 ## 核心命题
 
 > **当 LLM 是新一代运行时，路线规划是不是也可以从"借力工业引擎"走向"模型即系统"？**

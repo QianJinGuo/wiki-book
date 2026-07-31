@@ -8,6 +8,21 @@
 
 2026年7月，Databricks 联合创始人兼 CEO Ali Ghodsi 率领团队，基于公司3000多名工程师的真实 Pull Request，做了一次大规模编码 Agent 基准测试，覆盖多家模型和编码框架的实际表现。测试结果揭示了一个核心发现：**调用模型的框架（Harness）选择，对成本和质量的综合影响不亚于模型本身的选型**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Databricks CEO用3000名程序员真实任务测…"))
+    测试方法论
+    核心发现
+      1. GLM 5.2 逼近 Opus 4.8，…
+      2. Token 单价 ≠ 任务成本
+      3. Harness 对效率的决定性影响
+      4. 模型分类呈现能力梯队
+    Omnigent 智能路由
+```
+
 ## 测试方法论
 
 测试基于 Databricks 真实业务代码库（含 Scala、Go、Rust、Java、Bazel 等多种语言和工具链），从最近的 Pull Request 中抽取出包含独立测试的任务，经过人工校准后构建基准测试集。团队利用 Unity AI Gateway 收集了所有编码交互日志以分析任务复杂度分布。

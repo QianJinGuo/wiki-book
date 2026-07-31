@@ -6,6 +6,22 @@
 
 # OpenAgents Workspace：多 Agent 协作平台
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAgents Workspace：多 Agent…"))
+    深度分析
+      架构设计理念
+      共享浏览器的技术挑战
+      与 Hermes Agent V014 Ar…
+      与 Building Web Search …
+    局限与风险
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 OpenAgents（3.3k Star, Apache 2.0）定位不是 Agent 框架，而是 **多 Agent 协作平台**——解决多个编码 Agent（Claude Code、Codex CLI、Cursor 等）之间上下文隔离、只能手动复制粘贴的问题。它由三个核心组件构成：Workspace（浏览器端协作空间）、Launcher（统一管理编码 Agent 的终端仪表盘）和 Network SDK（开发者扩展层）。OpenAgents 的独特价值在于跨 Agent 协作、共享浏览器、Tunnels 暴露本地服务等能力，以及不绑定供应商的开源架构。

@@ -6,6 +6,30 @@
 
 # 卡帕西"LLM Wiki"，到底是什么？——用 Claude + Obsidian 给自己造一个第二大脑的完整拆解
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("卡帕西\"LLM Wiki\"，到底是什么？——用 Cl…"))
+    核心结论
+    Karpathy三判断
+    Context Window工程分析
+    Markdown Token经济学
+    Obsidian不可替代性
+    协议栈（LLM as OS对位）
+    深度分析
+      为什么'第二大脑'这个比喻成立
+      'LLM as OS'的真实含义
+      为什么RAG在这个场景下是次优解
+      Markdown作为'LLM母语'的更深层含义
+    实践启示
+      如何开始构建自己的LLM Wiki
+      Obsidian使用建议（非必须，但值得）
+      Wiki内容组织的实践原则
+      防坑指南
+```
+
 ## 核心结论
 
 - Karpathy主张：用markdown维护个人wiki，喂给Claude——LLM时代的"第二大脑"

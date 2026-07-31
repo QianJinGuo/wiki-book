@@ -5,6 +5,17 @@
 > 📊 Level ⭐⭐ | 5.7KB | `entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md`
 
 # Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic最危险路线图曝光: 无限记忆、多智能体…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Pi Mono Github](ch01/834-pi-mono-github.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)

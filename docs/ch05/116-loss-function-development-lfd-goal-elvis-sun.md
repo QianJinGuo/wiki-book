@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐⭐ | 31.3KB | `entities/loss-function-development-elvis-sun-goal-loop-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loss Function Development (L…"))
+    概述
+    核心论点
+    Spec-Driven vs Loss-Fun…
+    智能体作弊 3 次（失败案例）
+      循环 1（5 分钟）— 直接拿 eval se…
+      循环 2（20 分钟）— 盲测 30 条目，但…
+      循环 3（30 分钟）— 盲测 200 条目，…
+      关键洞察
+    Loss Function 的 4 个组件
+      1. 目标（Target）
+      2. 约束（Constraints）
+      3. 仪表（Instrumentation）—…
+      4. 强制熵（Forced Entropy）
+    一路向下的梯度下降：两个循环
+    Meta-Meta-Prompt：让 Agen…
+    蒸馏从训练时移到提示时
+      信息对称 = 执行成本坍缩
+```
+
 ## 概述
 
 **Loss Function Development (LFD)** 是一种 agent loop 设计方法论，由 **Elvis Sun (@elvissun)** 在 2026-06 公开分享。它把传统 **spec-driven development** 中"构建并通过测试"的有限目标，扩展为"**针对大规模 eval set 持续逼近 outcome metric**"的开放式优化目标。配合 **`/goal` 循环** + **well-designed harness**，智能体可以在 **30 小时内**（**6,300 行代码 / 92k 页面爬取 / $40 API**）反向工程一个产品并产出**比参考好 50 倍**的结果。

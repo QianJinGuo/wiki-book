@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amap-ai-native-end-to-end-infrastructure.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("高德工业级能力底座：AI-Native 的端云一体基建"))
+    深度分析
+      'AI 越写越快，系统却越来越乱'的悖论解析
+      五类结构性问题：AI 视角 vs 人视角
+      端云一体 vs 端云分离的架构选择
+      skillforge Pipeline：从源码…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 高德技术 2026 年提出的 AI-Native 端云一体基建：在超级应用场景（数亿用户、数百万行代码、数十团队协同）下，通过代码+知识规范+Skills 三层结构和服务端 skillforge Pipeline，把每一个后端服务从源码自动转译为 Agent 可消费、可验证、可持续演进的标准 Skill，破解"AI 越写越快，系统却越来越乱"的悖论。

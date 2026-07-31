@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 13.3KB | `entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Harness Engineering: A…"))
+    Overview
+    ETCLOVG Taxonomy
+    Three Engineering Phases
+    Cross-Layer Synthesis …
+    Ecosystem Findings
+    5 Open Problems
+    Unique Contributions v…
+    Links
+```
+
 ## Overview
 Academic survey (2026, preprint) proposing **agent harness engineering as an independent system layer**, not merely a wrapper around a model. Authors from 9 institutions (CMU, Yale, Johns Hopkins, etc.) with Amazon affiliation. ^[agent-harness-engineering-survey-2026.md]
 **Core claim**: Real-world agent reliability depends more on the infrastructure harness than on the underlying model. The survey names this discipline, proposes a taxonomy, and maps 138 open-source projects onto it. ^["[Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)"]

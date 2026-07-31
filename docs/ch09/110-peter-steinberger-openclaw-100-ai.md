@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/peter-steinberger-openclaw-100-ai-agents.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Peter Steinberger / OpenClaw…"))
+    概述
+    关键数据
+    AI代理承担的工作
+    CodexBar
+    思考
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 OpenClaw之父Peter Steinberger（@steipete）用3人团队+100个Codex AI agent运行软件开发流水线，30天花费$130万（OpenAI报销）。展示了token作为新生产资料的可能性。
 

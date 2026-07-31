@@ -12,6 +12,21 @@
 
 深度技术文章，值得深入分析。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Exploring Self-Distilled Rea…"))
+    深度分析
+      SDR 的理论基础：自蒸馏作为正则化机制
+      SDR 与模型合并的对比
+      推理数据覆盖率的'悬崖效应'
+      推理启用 vs 禁用的不对称影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Self-Distilled Reasoning (SDR) 是一种零额外标注成本的 SFT 训练方法，通过在非推理数据集上回填基座模型自身的 CoT 推理轨迹，同时提升目标任务性能并缓解灾难性遗忘。该方法在 Amazon Nova 2 Lite 上的三项 benchmark（MedMCQA、CoCoHD、Invoice-OCR）验证中，平均目标任务性能比最佳模型合并方案提升 6.5% 以上，同时将数学通用能力从几乎归零恢复至 68% 左右的基线水平。

@@ -6,6 +6,22 @@
 
 # Evaluating AI Agents: A Production Blueprint with Strands and AgentCore
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Evaluating AI Agents: A Prod…"))
+    Overview
+    Three-Layer Build-Time …
+    strands-agents-evals Fr…
+    Handling Non-Determinism
+    Production Monitoring w…
+    Deployment Pipeline wit…
+    Results
+    Source
+```
+
 ## Overview
 
 AWS blog post (2026-07-23) by Amit Deol, Hin Yee Liu, and Ryan Cormack presenting a production evaluation blueprint for AI agents using the Strands Agents SDK (`strands-agents-evals`) for build-time testing and Amazon Bedrock AgentCore Evaluations for production monitoring. Uses Motorway's dealer stock search agent as a worked example.

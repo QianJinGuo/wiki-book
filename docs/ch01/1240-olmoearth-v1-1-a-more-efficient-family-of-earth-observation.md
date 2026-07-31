@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐⭐ | 12.0KB | `entities/olmoearth-v1-1-efficiency.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OlmoEarth v1.1: A more effic…"))
+    概述
+    核心创新：Token 序列长度优化
+    Sentinel-2 数据的 Token 设计
+      传统方案：分辨率分块（Resolution-b…
+      新方案：合并分辨率 Token
+      性能挑战与解决方案
+    效率提升效果
+    模型规格
+    学术价值
+    技术背景
+      核心问题
+    资源链接
+```
+
 ## 概述
 
 OlmoEarth v1.1 是 AllenAI 于 2026 年 5 月 19 日发布的地球观测模型家族，是 2025 年 11 月发布的 OlmoEarth v1 的升级版本。该版本在保持 v1 性能水平的前提下，将计算成本降低至多 **3 倍**，显著提升了模型的经济性和可部署性。

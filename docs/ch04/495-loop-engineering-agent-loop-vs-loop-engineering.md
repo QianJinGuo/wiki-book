@@ -8,6 +8,23 @@
 
 阿里技术（飞樰）的概念解析文章，核心贡献是**清晰区分了 Agent Loop 和 Loop Engineering**，并提出了从 Coding → Vibe Coding → Loop Engineering 的演进路径。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering 概念解析：Agent …"))
+    Agent Loop vs Loop Engi…
+    演进路径
+    六大核心框架
+    实践案例：文本分类 Loop
+    关键洞见：Loop 不是银弹
+    第 2 来源 — 阿里云开发者（实战篇）
+      核心指标
+      互补角度
+    相关实体
+```
+
 ## Agent Loop vs Loop Engineering
 
 **Agent Loop**：Agent 本身就是一个 Loop。核心逻辑：输入 → 大模型输出 → Function Call → 执行工具 → 再次输入 → Response → 结束。无论 Agent 有多复杂，底层都是基于这个原理构建的。这是默认的基础设施，没必要单独强调。

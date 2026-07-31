@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Nova Lite Fine-Tuning…"))
+    概述
+    核心技术
+    深度分析
+      1. 微调策略的有效性验证
+      2. 成本效益的核心优势
+      3. 技术实施的关键发现
+      4. 局限性与注意事项
+    实践启示
+      1. 何时选择微调而非提示词工程
+      2. 微调实施的最佳实践
+      3. 成本控制策略
+      4. 场景化应用建议
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

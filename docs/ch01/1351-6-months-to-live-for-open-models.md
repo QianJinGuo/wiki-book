@@ -10,6 +10,23 @@
 > **来源**: https://www.interconnects.ai/p/6-months-to-live-for-open-models
 > **发布**: Interconnects (2026-07-12)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("6 Months to Live for Open Mo…"))
+    Summary
+    Key Points
+    Deep Analysis
+      The Policy Landscape: T…
+      The Regulatory Capture …
+      The API Security Fallacy
+      The Practical Impossibi…
+    Practical Insights
+    Related Entities
+```
+
 ## Summary
 
 This piece by Nathan Lambert (Interconnects) argues that open-weight AI models face their most serious existential threat as two converging policy debates — distillation regulation and frontier capability controls — create a "death spiral" that could lead to a ban on open models within six months. The analysis examines how the campaign against Chinese AI labs (led notably by Anthropic) risks becoming an instrument of regulatory capture, the insecurity of current model APIs relative to open-weight models, and the urgent need for coalition-building among open-source advocates. Lambert contends that open models increase safety through broad access and understanding, and that banning them would kneecap positive actors while failing to stop bad actors.

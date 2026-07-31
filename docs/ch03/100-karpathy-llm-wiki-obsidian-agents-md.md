@@ -6,6 +6,24 @@
 
 # Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Karpathy LLM Wiki 搭建实战——Obsi…"))
+    核心洞察：维护成本外部化
+    三层架构
+    三大操作
+    RAG vs LLM Wiki 对比
+    深度分析
+      维护成本外部化的经济原理
+      三层架构的职责分离与安全边界
+      Ingest 操作的系统性影响
+      LLM Wiki vs RAG 的范式差异
+    实践启示
+```
+
 ## 核心洞察：维护成本外部化
 
 Andrej Karpathy 的 LLM Wiki 方法论根基：**维护知识库累人的地方不是读和想，而是"记账"**——更新交叉引用、保持摘要不过时、标注矛盾、跨页面维持一致性。这正是人类放弃维护 wiki 的原因——维护成本增长比价值增长快。

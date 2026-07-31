@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/hermes-agent-kanban-deep-test.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes-Agent Kanban 实测 — 商业 …"))
+    核心结论
+    Kanban 技术架构
+      数据库与状态机
+      调度器 Tick 行为
+      Worker 隔离机制
+    七条实测 Bug
+    关键架构洞察
+      为什么 Gateway 是本体
+      开源框架的通病
+    实操建议
+    深度分析
+      Gateway 本体论：Agent 架构的认知…
+      七条 Bug 的分类与根因
+      Claude Code / Kimi Code…
+    相关链接
+    实践启示
+      对 Hermes-Agent Kanban 使…
+      对 Agent 架构设计者的建议
+      对多框架组合架构的建议
+```
+
 ## 核心结论
 1. **Gateway（端口 8642）是 Hermes-Agent 的本体**，Chat 和 TUI 只是两个不同的前端载体
 2. **2026 年 agent 架构主流共识**：把「不确定的认知层」和「确定的执行层」拆开

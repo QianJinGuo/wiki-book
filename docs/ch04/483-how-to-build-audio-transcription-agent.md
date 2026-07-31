@@ -6,6 +6,20 @@
 
 → （无原始来源）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Build Audio Transcrip…"))
+    核心内容
+      转录引擎选择
+      Agent 架构设计
+      实时 vs 批量
+    深度分析
+    实践启示
+```
+
 ## 核心内容
 ### 转录引擎选择
 主流音频转录方案对比：

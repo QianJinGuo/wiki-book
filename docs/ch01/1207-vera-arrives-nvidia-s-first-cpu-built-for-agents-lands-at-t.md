@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vera Arrives: NVIDIA’s First…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Published Time: 2026-05-18T21:48:17+00:00 Ian Buck hand-delivers the first NVIDIA Vera CPU systems to Anthropic, OpenAI, Oracle Cloud Infrastructure and SpaceXAI — marking the moment agentic CPUs move
 

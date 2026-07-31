@@ -8,6 +8,30 @@
 
 > 2026-06-05 引用自 Ethan Mollick 《Co-Existence and the End of Co-Intelligence》, One Useful Thing, 2026-06-04. 原文为 Mollick 新书《Co-Existence》pre-order 配套文章。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Co-Existence vs Co-Intellige…"))
+    核心论点：从 Co-Intelligence …
+    三个独有贡献（不应合并到现有 entity）
+    「for-AI Page」模式（web 设计新…
+    「拒绝 AI 帮助」的合法性
+    与现有 entity 的差异化
+    关键引用
+    深度分析
+      1. 范式命名的学术价值
+      2. AI-as-reader 问题的内容策略革命
+      3. 80%/8x 数据的双源验证方法论
+      4. '拒绝 AI'的合法性边界正在移动
+    实践启示
+      1. 内容创作者：为 AI 读者设计内容
+      2. 管理者：从'监督 AI'转向'审核 AI…
+      3. 研究者：用双源验证建立 AI 影响基线
+      4. 产品团队：评估你的产品是否需要'AI 喜…
+```
+
 ## 核心论点：从 Co-Intelligence 到 Co-Existence 的范式跃迁
 
 Ethan Mollick（沃顿商学院教授、One Useful Thing 作者）2024 年出版的《Co-Intelligence》描述了**以人类为中心、AI 为助手的协作模式**——prompting chatbot 反复迭代、人类注入自身知识与怀疑、人类居于决策中心。两年后（2026-06）他承认这个范式**从来不是 AI 公司的长期愿景**：OpenAI 章程的目标是"在大多数经济价值工作中超越人类的高度自主系统"。

@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/ai-skill-四层验证体系.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("04—为什么不能让 AI 自己评审自己？AI Skill…"))
+    问题：为什么不能让模型自己评审自己
+    四层验证体系总览
+    Layer 0：执行模式分发
+    Layer 1：Executor
+      文件系统隔离规则（P0 问题）
+      transcript 双分离格式（P2 问题）
+    tool_calls Step 5: sa…
+    agent_notes Step 5: 草…
+    Layer 2a：字段精确校验（Ground …
+    Layer 2b：独立 Grader Agent
+```
+
 ## 问题：为什么不能让模型自己评审自己
 
 让模型自己评审自己的输出，会产生「自判卷偏差」——这是 AI Skill 四层验证体系要解决的核心问题。

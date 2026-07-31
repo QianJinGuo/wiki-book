@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/code-as-agent-harness-survey.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Code as Agent Harness 综述"))
+    核心框架
+    关键洞察
+      代码作为 Harness 的三个自然属性
+      PEV 控制循环
+      AHE（Agentic Harness Eng…
+      多 Agent 协作模式
+    代表系统
+    开放问题
+    工程实践原则
+    深度分析
+      Harness 作为认知架构
+      PEV 循环与确定性验证的深层含义
+      AHE 的工程哲学
+      多 Agent 协作的核心矛盾
+    实践启示
+      对 Agent 开发者的建议
+      对 AI 工程基础设施的启示
+    关联阅读
+```
+
 ## 核心框架
 论文（102页，UIUC+Meta+斯坦福）提出三层结构：
 | 层级 | 内容 |

@@ -6,6 +6,24 @@
 
 # What Is Software, and Will LLMs Replace It?
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What Is Software, and Will L…"))
+    深度分析
+      新分层架构：LLM → 编排层 → 确定性内核
+      Agent 架构验证了这一分层
+      软件工程师角色的转变
+      对 'Vibe Coding' 的隐含回应
+    实践启示
+      对产品设计的指导
+      对 Agent 开发的指导
+      对职业发展的指导
+    相关实体
+```
+
 ## 摘要
 
 Federico Tomassetti（Software Language Consulting 创始人）对"LLM 是否会取代软件"这一命题的深度分析。核心论点：LLM 正在吞噬软件的**接口层**（UI、API 文档、配置逻辑），但软件的**确定性内核**（数据组织、一致性约束、流程引导）仍然不可替代。文章通过 CRM 这一"无聊但必要"的软件类型，论证了软件在 LLM 时代的持续价值。

@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 5.1KB | `entities/building-is-just-the-beginning-introducing-discove.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building is just the beginni…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 来源：lovable.dev
 - 评分：v=5 c=12 (56分)

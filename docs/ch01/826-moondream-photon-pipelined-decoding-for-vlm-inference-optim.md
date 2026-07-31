@@ -8,6 +8,23 @@
 
 Moondream 的 Photon 推理引擎通过 **pipelined decoding** 技术消除 GPU bubble（GPU 空转），在 NVIDIA B200 上实现 VLM 推理约 33ms 延迟，decode 吞吐提升高达 35%。这项技术的核心洞察是：当 GPU 等待 CPU 完成 token 提交/规划/启动工作（housekeeping）时，GPU 处于空闲状态，这就是 GPU bubble。Photon 通过重叠 CPU 和 GPU 工作来消除这个气泡。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Moondream Photon: Pipelined …"))
+    GPU Bubble 的根因
+    三个核心机制
+      1. Ping-Pong Slots（双缓冲槽）
+      2. Forward Now, Sample …
+      3. Zombies（僵尸序列）
+    Prefill 共享同一 Pipeline
+    性能效果
+    与现有推理优化技术的区别
+    相关实体
+```
+
 ## GPU Bubble 的根因
 
 在典型的 autoregressive decode 循环中：GPU 执行大量数学运算产生下一个 token，但 CPU 也要做不少管理工作——选择下一个请求、设置 GPU 所需的元数据、从模型输出中选择实际 token 并记录等。问题是单个 token 的 GPU 工作量很小，而 CPU 的 housekeeping 是每次循环的固定开销。如果 GPU 必须等待 CPU 完成这些工作才能开始下一个 token，GPU 就会在每个循环中部分空闲。

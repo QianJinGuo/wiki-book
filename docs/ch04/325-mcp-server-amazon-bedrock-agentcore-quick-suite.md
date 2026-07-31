@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/mcp-serveramazon-bedrock-agentcorequick-suite.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("自己的工具自己控：MCP Server、Amazon B…"))
+    要点
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 摘要
 （见原文）
 

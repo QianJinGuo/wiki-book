@@ -6,6 +6,33 @@
 
 [Hermes Agent Closed Learning Loop](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-closed-learning-loop.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent 闭环学习机制"))
+    文章概要
+    核心机制
+      系统架构三层
+      闭环学习飞轮（Self-Improving F…
+      两个 Nudge 触发机制
+      核心代码：spawn_background_r…
+    与 OpenClaw 的核心差异
+    关键要点
+    相关链接
+    深度分析
+      闭环学习架构的设计哲学
+      Fork 模式的工程权衡
+      Memory 与 Skills 的知识表示分离
+      与 OpenClaw 的范式对比
+    实践启示
+      对于 Agent 系统开发者
+      对于企业部署者
+      对于 AI 研究者
+    相关实体
+```
+
 ## 文章概要
 Hermes Agent 是 Nous Research 于 2025 年 2 月开源的自托管智能体框架，GitHub 50.6K star，被认为是 OpenClaw 的首个真正竞争对手。其核心差异在于内置**闭环学习循环**（A Closed Learning Loop），通过"触发 → review → 写回 → 再注入"把 self-improving 飞轮真正跑通。
 

@@ -8,6 +8,21 @@
 
 阿里云 Agent Native Cloud is `Alibaba Cloud`'s three-layer architecture for making agents a native enterprise capability. Presented by Zhou Qi (简志), head of Alibaba Cloud's cloud-native application platform, at the World AI Conference, it defines how enterprises can evolve from building individual agent demos to operating agents as **controllable, reusable, collaborative, and evolving organizational assets**.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里云 Agent Native Cloud — Inf…"))
+    Three-Layer Architectur…
+      Agent Infra
+      Agent Platform
+      Agent Desktop
+    Key Platform Products
+    The Five Dimensions of …
+    Dogfooding Results
+```
+
 ## Three-Layer Architecture: Infra - Platform - Desktop
 
 ```mermaid

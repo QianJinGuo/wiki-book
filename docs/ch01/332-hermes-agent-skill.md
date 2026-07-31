@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/hermes-skill-system.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent Skill 系统深度解析"))
+    核心定位
+    三个不能单用 Memory 的坑
+      坑 1：执行 vs 理解
+      坑 2：版本化需求
+      坑 3：依赖关系
+    SKILL.md 五区块设计
+    Skill 检索匹配四步
+    修补哲学：patch 不是重写
+    生命周期五阶段
+    实操建议（winty 总结）
+    深度分析
+      1. 过程性知识 vs 陈述性知识的认知科学分野
+      2. SKILL.md 五区块设计的工程意图
+      3. 双层检索匹配：工程折中与信息检索原理
+      4. Patch 增量修补的版本化哲学
+```
+
 ## 核心定位
 **Skill = 过程性知识 = 菜谱 ≠ 便签**
 Hermes Agent 的 Skill 系统与 Memory 系统解决的是完全不同的问题：

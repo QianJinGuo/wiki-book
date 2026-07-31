@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/05-11-the-great-memory-panic-of-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The great memory panic of 2026"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 内存价格从 BOM 的 15% 跳升至 40%，本质是边际生产成本的结构性飙升，而非全面短缺
 - Apple 的规模（数亿台设备）使其能在基线量上锁定供应商，而小厂只能承受边际高价

@@ -8,6 +8,25 @@
 
 AWS China Blog 2026-07-29 发布的深度技术文章，系统地介绍了使用 Amazon Bedrock AgentCore 构建企业级 MCP 服务器的四种架构模式及其渐进式迁移路径。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用 Amazon Bedrock AgentCore …"))
+    四种架构模式
+      Method 1：直接 Lambda 调用（演…
+      Method 2：用户认证 + AgentCo…
+      Method 3：OAuth2 + Agent…
+      Method 4：API Key + API …
+    核心架构设计
+      AgentCore Gateway 模式
+      多身份验证路径
+      云原生无状态化
+    渐进式迁移路径
+    与相关实体的关联
+```
+
 ## 四种架构模式
 
 ```mermaid

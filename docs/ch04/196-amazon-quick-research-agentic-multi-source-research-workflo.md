@@ -8,6 +8,30 @@
 
 > 本文综合提炼自 AWS 的 **Amazon Quick Research** 在 rare cancer research（罕见癌症研究）的应用案例。核心是 agentic research workflow：**自然语言目标 → 拆解子主题 → 多源数据采集（web/PubMed/ClinicalTrials.gov/file uploads/Spaces）→ LLM 合成 → 带 inline 引用 + 可追溯 evidence chain 的报告 → 版本化修订**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Quick Research: Agent…"))
+    核心问题：科研数据整合瓶颈
+    Amazon Quick Research 核…
+    Spaces：数据组织层
+    端到端 walkthrough（罕见癌症研究案例）
+    关键设计模式（可复用）
+      1. **Plan Before Run**
+      2. **Inline Citation + …
+      3. **Statement-level Re…
+      4. **Spaces as Indexed …
+    实践启示
+    深度分析
+      1. Agentic Workflow 将'研…
+      2. Citation Provenance …
+      3. 'Plan Before Run' 是降…
+      4. Statement-level Revi…
+    相关链接
+```
+
 ## 核心问题：科研数据整合瓶颈
 
 罕见癌症研究需要整合**异构数据**：

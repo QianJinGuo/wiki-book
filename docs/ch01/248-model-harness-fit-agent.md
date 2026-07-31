@@ -9,6 +9,29 @@
 > Author: Nicolas Bustamante (Cursor/前OpenAI)，编译自其博客
 > Score: value=7, confidence=7, product=49 ≥ 49 → PASS
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Model-Harness Fit：Agent 脚手架适…"))
+    核心论点：Model-Harness-Fit
+    让人不舒服的榜单
+    为什么模型不是单独存在的
+    三种壳，三种完全不同的协议
+      Codex：typed asynchronou…
+      Claude Code：direct type…
+      GitHub Copilot CLI：supe…
+    工具表：模型的方言
+      Codex的工具差异化
+      Claude Code的工具
+      Copilot CLI的工具
+    Skill：md文件格式一样，底下契约根本不一样
+    记忆层：最密集的碰撞面
+      oai-mem-citation：六个字符…
+    Copilot CLI的诚实做法：真正的路由
+```
+
 ## 核心论点：Model-Harness-Fit
 > "模型不是只针对API做post-training的，它是针对壳做的。"
 > "同一批权重跑在三个壳上，其实是三个不同的模型——权重byte-for-byte一样，本能却被post-training条件化了。"

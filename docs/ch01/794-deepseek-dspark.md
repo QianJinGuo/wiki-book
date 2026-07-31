@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-dspark-speculative-decoding-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek DSpark：推测性解码工程落地"))
+    深度分析
+      工程落地优先于模型能力
+      与 MoE 架构的互补性
+      38 TB 数据准备的工程含义
+      对 Agent 推理的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 DSpark 是 DeepSeek-V4-Pro 的推测性解码模块，**重点在工程落地而非模型能力迭代**。已部署在 DeepSeek-V4（Flash 和 Pro）线上流量中。三大核心创新：半自回归生成架构（并行草稿 + 串行依赖建模）、置信度调度验证（硬件感知动态验证长度）、异步零开销调度（兼容 ZOS + 连续 CUDA 图回放）。配套开源全栈工具链 [DeepSpec](https://github.com/deepseek-ai/DeepSpec)，内置 DSpark、DFlash、Eagle3 三种草稿模型。

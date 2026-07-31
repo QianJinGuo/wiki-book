@@ -8,6 +8,21 @@
 
 > **v×c = 72**，来自 rss 频道。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("mtp 加速推理最佳实践在亚马逊云科技中国区使用 lla…"))
+    深度分析
+      1. MTP 技术的适用边界与硬件依赖性
+      2. 量化技术是 CPU 推理的基石
+      3. AWS 中国区的特殊生态位
+      4. llama.cpp 在边缘场景的独特定位
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文在亚马逊云科技中国区（宁夏）使用 llama.cpp 部署 Qwen3.6 系列大语言模型（27B Dense 和 35B-A3B MoE），对比了 Graviton4 ARM CPU、Intel x86 CPU 和 NVIDIA A10G GPU 三种硬件平台上 MTP (Multi-Token Prediction) 投机解码的实际加速效果，并给出了各芯片架构下的部署最佳实践。

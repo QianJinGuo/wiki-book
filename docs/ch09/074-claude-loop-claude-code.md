@@ -8,6 +8,26 @@
 
 Claude Code 官方工程师分享 Loop 工程在代码生成中的四个关键交接点：需求理解→方案设计→代码生成→验证修复，以及如何让 Claude Code 在无人值守下持续工作。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude官方教你用 Loop：如何让Claude C…"))
+    四个交接点
+      交接点一：先交检查（Skill）
+      交接点二：交停止条件（/goal）
+      交接点三：交等待触发（/loop）
+      交接点四：交身份与权限（/schedule +…
+    深度分析
+      Loop 的委托阶梯：从对话质量到授权执行
+      Dynamic Workflows 的工程含义
+      成本与可靠性视角
+    实践启示
+    关联条目
+    退出
+```
+
 ## 摘要
 
 Claude Code 团队 2026 年 6 月 30 日发布官方博客 "Getting started with loops"，将 loop 分为四类：turn-based、goal-based、time-based、proactive。本文以"人从哪一步退出来，退出来之前留下些什么"为主线，解读四种 loop 对应的人机协作交接点：先把检查写成 Skill，再用 `/goal` 定义停止条件，用 `/loop` 处理短期等待，最后用 `/schedule` 和 routine 完成长期任务编排。

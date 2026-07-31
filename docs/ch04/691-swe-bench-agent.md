@@ -8,6 +8,20 @@
 
 SWE-bench 作为 Agent 编码能力评估的事实标准：任务设计原理、Harness 影响、防止过拟合、成本-性能 Pareto 分析。Claw-SWE-Bench 进一步隔离了 Harness 变量。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SWE-bench Agent 评估方法论"))
+    深度分析
+      SWE-bench 作为事实标准的意义与局限
+      Harness 作为独立变量的重要性
+      成本-性能 Pareto 分析的实践意义
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### SWE-bench 作为事实标准的意义与局限

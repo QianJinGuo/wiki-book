@@ -8,6 +8,20 @@
 
 > **Background**：本文基于 ByteByteGo 对 Microsoft Foundry VP Marco Casalaina 的深度访谈。涵盖 Microsoft Foundry 平台在 80,000+ 企业客户规模下运行生产级 AI Agent 的工程经验，重点关注 Harness 设计与模型演化的适配关系、Retrieval-as-a-subagent 模式、Agent 身份与审计、Rubric 评估系统等核心理念。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft Foundry 生产级 Agent …"))
+    核心命题：Harness = Model
+    从 Chatbot 到 Agent 的范式跃迁
+    三大工程设计理念
+    生产 Agent 的失效模式
+    规模数据
+    相关实体
+```
+
 ## 核心命题：Harness = Model
 
 Microsoft Foundry 团队从大规模生产运行中学到的最大教训是：**"the harness matters as much as the model"**。

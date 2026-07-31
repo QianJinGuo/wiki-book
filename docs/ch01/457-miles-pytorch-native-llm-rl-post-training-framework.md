@@ -8,6 +8,24 @@
 
 Miles 是 RadixArk 推出的开源 LLM RL 后训练框架，以 PyTorch 为核心，组合 SGLang（rollout）、NVIDIA Megatron-LM（训练）和 Ray（编排）构建可组合的大规模 RL 训练流水线。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Miles: PyTorch-Native LLM RL…"))
+    背景：为什么需要 Miles
+    架构亮点
+    关键技术特性
+    深度分析
+      RL 后训练的分布式系统本质
+      组合性（Composability）vs 一体…
+      MoE-aware Alignment 的关键性
+      可观测性作为 RL 训练的关键基础设施
+    实践启示
+    相关实体
+```
+
 ## 背景：为什么需要 Miles
 
 强化学习已成为 LLM 后训练的核心环节，但随着模型从密集架构向混合专家（MoE）过渡，并在 NVIDIA Blackwell/Hopper 等分布式专用硬件上运行，RL 后训练已不再只是一个训练循环——它是一个分布式系统问题。

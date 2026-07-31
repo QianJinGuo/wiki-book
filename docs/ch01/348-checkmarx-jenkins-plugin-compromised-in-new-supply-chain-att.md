@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 11.7KB | `entities/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Checkmarx Jenkins plugin com…"))
+    深度分析
+      1. 攻击者对 CI/CD 生态的精准定向
+      2. 高危 CVE 与快速响应的重要性
+      3. 'Dune 主题'——攻击者的署名标识与…
+      4. 供应链攻击的'多触角'特性
+    实践启示
+      1. 插件生态的安全风险
+      2. 秘密轮换的紧迫性
+      3. 识别 Dune 主题恶意代码
+      4. 应对持续性供应链威胁
+    相关实体
+```
+
 ## 深度分析
 此次 Checkmarx Jenkins AST 插件供应链攻击事件揭示了多个值得深入剖析的安全问题，以下从技术、战术和战略三个层面进行解读。
 

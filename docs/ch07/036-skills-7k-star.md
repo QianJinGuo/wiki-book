@@ -8,6 +8,30 @@
 
 > **背景**：本文是 ConardLi（code秘密花园）分享其开源 Skills 项目 garden-skills 获得 7K Star 的经验复盘。Skills 是一系列可复用的 AI Agent 能力模块，旨在降低开发者构建 AI Agent 的门槛。项目涵盖视频制作、网页设计、图片生成三大核心 Skill，每个 Skill 都针对 Agent 在复杂任务中的稳定性问题提供了结构化解决方案。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("啊？我刚开源的 Skills 已经 7K Star 了？！"))
+    项目背景
+    核心经验
+      Skills 的设计原则
+      社区驱动的增长
+      与主流 Agent 框架的集成
+    三大核心 Skill 详解
+      1. 视频制作 Skill（web-video…
+      2. 网页设计 Skill（web-desig…
+      3. 图片生成 Skill（gpt-image…
+    深度分析
+      Skills 生态的范式意义
+      中文 Agent 社区的独特生态位
+      '用 Skill 封装工作流'的模式创新
+      从 Demo 到生产的关键桥梁
+    实践启示
+    相关实体
+```
+
 ## 项目背景
 
 作者连续写了多篇 AI Agent 教程后，将自己积累的 Skills 项目开源。Skills 是一系列可复用的 AI Agent 能力模块，旨在降低开发者构建 AI Agent 的门槛。项目的核心理念是：Agent 默认接到的是一个"任务"，但复杂产物需要的是一条"生产线"——包含明确的工作流程、质量标准和迭代接口。

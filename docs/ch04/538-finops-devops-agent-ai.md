@@ -8,6 +8,26 @@
 
 > **Background**：本文基于 AWS China Blog 2026-06-29 发布的实战案例，由亚马逊云科技客户解决方案经理倪晓峻和李刚撰写。案例展示 FinOps Agent（Preview）与 DevOps Agent（GA）通过结构化交接协议实现端到端云成本优化。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FinOps + DevOps 双Agent 协作：AI…"))
+    三个独有贡献（不应合并到现有 entity）
+    双Agent 协作架构
+      关注点分离
+      结构化交接清单
+      设计哲学
+    案例详情
+      问题发现
+      根因分析
+      DevOps Agent 验证与清理
+    SageMaker Canvas 隐性成本陷阱
+    提示词设计技巧
+    与现有 FinOps 实体差异化
+```
+
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **双Agent 结构化交接协议** — FinOps Agent 识别能力边界后自动生成排查清单（含 CLI 命令、决策条件、风险提示），作为 FinOps→DevOps 的协作桥梁

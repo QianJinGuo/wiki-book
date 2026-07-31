@@ -8,6 +8,25 @@
 
 > **Background**：本文基于 Zvi（thezvi.wordpress.com）对 OpenAI GPT-5.6 Sol 的全面分析，整合官方基准测试、社区反馈、基准验证、安全评估和实际使用模式，聚焦 Sol 作为"Workhorse"定位与 Claude Fable 作为"Architect"定位的范式对比。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5.6 Sol：Workhorse vs Arc…"))
+    核心定位：Workhorse vs Archi…
+    基准测试对比
+    定价与分层
+    实际应用模式
+    相关实体
+    深度分析
+      Workhorse vs Architect：…
+      定价策略背后的产品哲学
+      基准测试揭示了什么
+      实际应用中的协同模式
+    实践启示
+```
+
 ## 核心定位：Workhorse vs Architect
 
 Zvi 的核心框架将 Sol 和 Fable 定位为互补而非竞争对手：

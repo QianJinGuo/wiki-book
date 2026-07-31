@@ -10,6 +10,22 @@
 > **评分**：v=8, c=8, v×c=64
 > **概述**：从技术、经济、组织三维度回顾 2026 Q2 Agent 产业发展，覆盖入口争夺、垂直行业入侵、Tokenmaxxing 失败、多 Agent 合作瓶颈、自进化 AI 和 CPU 重归算力中心等八大趋势。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯研究院 2026 Q2 Agent 产业回顾——Ag…"))
+    一、Agent 成为通用入口
+    二、垂直行业批量装配
+    三、Tokenmaxxing 运动的教训
+    四、组织瓶颈取代技术瓶颈
+    五、技能严重重复
+    六、Multi-Agent 合作瓶颈
+    七、Loop Engineering 与自进化
+    八、CPU 重归算力中心
+```
+
 ## 一、Agent 成为通用入口
 
 2025 年行业曾押宝"AI 浏览器"（Google Mariner / OpenAI Operator / Perplexity Comet），但 2026 年趋势逆转：Google 关闭 Mariner 并入 Gemini Agent，Operator 并入 ChatGPT Agent。Codex、Claude Code、Cowork 等直接接入文件/终端/代码仓库的工具使用量涨得更快。

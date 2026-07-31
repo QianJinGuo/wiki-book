@@ -6,6 +6,25 @@
 
 # Kipi: Open-source OSINT Investigation Platform with Autonomous Agent
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kipi: Open-source OSINT Inve…"))
+    深度分析
+      Agent 架构在情报分析中的应用
+      Graph RAG 的结构化知识组织
+      开源 OSINT 的安全伦理
+      技术栈推测
+    实践启示
+      适用场景
+      快速上手
+      局限性
+      与同类工具对比
+    相关实体
+```
+
 ## 摘要
 
 kipi 是一个开源、自托管的 OSINT（开源情报）调查平台，其核心创新在于将**文档智能**与**自主调查 Agent** 结合：用户输入文档（PDF、截图、电子表格、笔记），kipi 提取实体和关系构建图谱，然后自主 Agent 在开放网络上展开调查，实时扩展图谱。这是目前唯一将文档实体提取与图分析（中心性、社区发现、路径查找）整合在同一调查画布上的 OSINT 平台。

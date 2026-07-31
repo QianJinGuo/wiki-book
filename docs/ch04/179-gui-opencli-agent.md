@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opencli-browser-automation-jingxing.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("浏览器自动化：从 GUI 到 OpenCLI — Age…"))
+    深度分析
+      1. 为什么 Agent 操控浏览器路不好走
+      2. 快速上手
+      3. AI Agent 探索工作流
+      4. 懒加载机制：必须主动探索
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 大淘宝技术明径 2026-05-22 文章。文章提出放弃不稳定的前端 UI 自动化操作，转而解析并复现底层 API 请求。配套开源 `@jackwener/opencli` 提供了 5 级认证策略（public/cookie/header/store-action/ui）和 6 步 Agent 探索工作流（打开 → 观察 → 抓包 → 模拟交互 → 二次抓包 → 验证 API）。核心观点：未来的软件竞争维度不只是界面好不好看，更是谁更容易被 Agent 理解、调用、验证，再接进工作流。

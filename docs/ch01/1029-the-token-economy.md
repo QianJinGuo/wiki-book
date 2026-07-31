@@ -6,6 +6,19 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-token-economy-pt2-the-intelligence-company-gets-built.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("the token economy"))
+    摘录
+    标签
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 摘录
 > Title: 🧠 The Token Economy: Tokenmaxxing Is Stupid Until It Isn't
 URL Source: https://www.fintechbrainfood.com/p/the-token-economy

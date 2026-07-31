@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐ | 8.3KB | `entities/www-referenceboard-app.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Reference Board — Moodboard …"))
+    核心定位
+    主要功能
+      无限画布（Infinite Canvas）
+      视觉搜索（Visual Search）
+      OCR 文字识别
+      自动组织（Automatic Organiza…
+    跨设备体验
+      小组件（Widgets）
+      浏览器扩展
+    定价与隐私
+    与同类工具对比
+    技术特性
+    相关实体
+    深度分析
+```
+
 ## 核心定位
 
 Reference Board 定位为「私人灵感库」，强调不追踪用户数据、不出售信息，所有灵感素材通过 iCloud 在用户自有设备间加密同步。 这与 Pinterest 等云端社交平台形成鲜明对比——Reference 是一款**纯本地、私有化**的视觉收藏工具。

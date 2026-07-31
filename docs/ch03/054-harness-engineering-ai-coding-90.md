@@ -43,6 +43,21 @@ graph TB
 
 > -> [harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness Engineering 详解：如何将 A…"))
+    深度分析
+      1. 范式跃迁：从 Prompt 到 Cont…
+      2. 为什么不能只靠模型本身
+      3. 四根支柱：Harness Enginee…
+      4. 企业级 AI Coding 的四大挑战
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 阿里云开发者发布的一篇 Harness Engineering 实战复盘：在一个 10 万+行、技术栈为 Java 1.8 / Spring Boot / LiteFlow / HSF / Diamond / Tair 的企业级存量应用中，作者用一周时间从零构建 Harness 体系，将 AI 代码率从 **24.86%** 提升至 **90.54%**（个人维度 14.24% → 87.85%）。核心论点是：AI Coding 率提升的瓶颈不在模型，而在 **Harness Engineering**——围绕 AI Agent 设计的约束机制、反馈回路、工作流控制与持续改进循环的系统工程。

@@ -4,6 +4,35 @@
 
 > 📊 Level ⭐⭐ | 26.6KB | `entities/openclaw-multi-agent-team-practice-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Openclaw Multi Agent Team Pr…"))
+    核心观点
+    为什么不做全能 Agent
+      上下文污染
+      技能冲突
+      人设冲突
+    花园多智能体团队概览
+    Agent 核心要素
+    OpenClaw Agent 架构
+      Workspace 结构
+      人设文件体系
+      记忆系统
+    多 Agent 配置三要素
+      1. 工作环境隔离
+      2. 路由规则
+      3. 通信机制
+    各专精 Agent 详解
+      花园生图助手
+      花园资讯助手
+      花园投资助手
+      花园开发助手
+    多智能体协作示例
+```
+
 ## 核心观点
 
 OpenClaw（龙虾）的价值不在于"它能做什么"，而在于"你需要它为你做什么"。  从单一 Agent 上线到搭建六专精智能体加一主管的七人团队，作者实现了从 AI 日报生成、股票分析、图片创作到代码开发的日常任务自动化、零人工干预。

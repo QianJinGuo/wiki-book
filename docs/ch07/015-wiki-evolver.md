@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/wiki-evolver.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Wiki Evolver"))
+    相关查询
+    为什么需要这一层
+    Core Contract
+    Operating Loop
+    Knowledge Ladder
+    与现有系统的分工
+    最值得落地的四个页面
+    深度分析
+      1. 定位的本质：元系统而非工具
+      2. Operating Loop 的关键设计…
+      3. Knowledge Ladder 的涌现性质
+      4. 四个落地页面的战略价值
+```
+
 ## 相关查询
 
 - [Wiki Evolver 工作流程与最佳实践](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-evolver-workflow-best-practices.md) — wiki-evolver cycle 机制、frontier 决策、evaluation harness 与回归测试

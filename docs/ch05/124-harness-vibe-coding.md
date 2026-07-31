@@ -14,6 +14,22 @@
 - Score: Value=7 × Confidence=7 = 49
 - Tool: Routa Desktop v0.12.1 (https://github.com/phodal/routa/releases/tag/v0.12.1) See also [Harness Engineering](ch05/120-harness-engineering.html)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 工程可视化：Vibe Coding 中重…"))
+    微信正文
+    第一，重新看见多层反馈环
+    第二，把分散治理对象组织成整体闭环
+    第三，把 Harness 理念从抽象原则变成工…
+    小结
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 微信正文
 在最新的 Routa Desktop 中，我们引入了 Harness 工程可视化系统。它并不是一个展示"AI 写了多少代码"的界面，也不是为了给生成式开发增加一层炫目的仪表盘，而是试图回答一个更关键的问题：当 AI 逐渐成为软件交付链路中的执行者，团队如何依然保持对工程系统的理解、约束与控制？
 下载地址：https://github.com/phodal/routa/releases/tag/v0.12.1

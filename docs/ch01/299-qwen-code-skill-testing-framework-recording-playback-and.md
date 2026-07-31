@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 13.6KB | `entities/qwen-code-skill-testing-framework-issue-2447.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qwen Code Skill Testing Fram…"))
+    背景与动机
+    核心架构
+    测试文件 Schema
+    回归指标
+    MVP 阶段
+    与现有工具的差异
+    深度分析
+      1. 从'测试工具'到'回归框架'的范式跃迁
+      2. 执行与验证分离的架构价值
+      3. ASK User Question 的建…
+      4. DSL 可编辑的工程考量
+    实践启示
+      架构设计
+      工程实现
+      场景扩展
+      成熟度评估
+```
+
 ## 背景与动机
 qwen-code 代码库管理数百个 Skill，缺少自动化测试机制。PR 提交时无法验证：回归/Token 消耗/对话轮次/ASK User Question 异常。
 Issue 最初提出 JUnit-like Skill 测试框架，后续讨论扩展为**通用场景回归测试框架**（scenario-based），覆盖 Skill 测试、模型升级验证、CLI 改动验证。

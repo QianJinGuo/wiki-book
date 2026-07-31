@@ -6,6 +6,17 @@
 
 # Software After AI
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Software After AI"))
+    深度分析
+    相关实体
+    相关主题
+```
+
 ## 深度分析
 
 URL Source: https://tomtunguz.com/harnessing-ai/

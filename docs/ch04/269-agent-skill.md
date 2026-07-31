@@ -41,6 +41,29 @@
 ### 5. "坑点（Gotchas）"章节——最有价值的内容
 ```markdown
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent Skill 高质量编写规范"))
+    坑点（Gotchas）
+      6. 提供输出模板和检查清单
+    报告结构
+    执行摘要
+    主要发现
+    建议
+    表单处理工作流
+    scripts/ 编写规范
+      自包含脚本依赖声明
+      Agentic 脚本设计原则
+    深度分析
+      渐进式披露架构的设计意图
+      边界设计：函数隐喻的价值与局限
+      Gotchas 章节的核心价值
+      评估体系的设计缺陷
+```
+
 ## 坑点（Gotchas）
 - `users` 表使用软删除。所有查询必须包含 `WHERE deleted_at IS NULL`，否则会包含已注销账户。
 - 用户ID在数据库中是 `user_id`，在认证服务中是 `uid`，在计费API中是 `accountId`。

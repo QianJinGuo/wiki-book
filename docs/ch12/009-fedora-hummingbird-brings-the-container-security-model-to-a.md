@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐ | 5.6KB | `entities/fedora-hummingbird-brings-the-container-security-model-to-li.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("fedora hummingbird brings th…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

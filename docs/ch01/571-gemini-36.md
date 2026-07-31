@@ -8,6 +8,23 @@
 
 > 来源：夕小瑶科技说 | 发布日期：2026-07-22
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("突发gemini-36-来了智力直接原地踏步速度立刻翻倍"))
+    模型详解
+      Gemini 3.6 Flash
+      Gemini 3.5 Flash-Lite
+      Gemini 3.5 Flash Cyber
+    深度分析
+      Google 的'效率优先'策略意味着什么
+      从'性能竞赛'到'效率竞赛'的范式转换
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026年7月，Google 正式发布 Gemini 3.6 系列模型，主角是 Gemini 3.6 Flash，同步推出 Gemini 3.5 Flash-Lite 和面向网络安全场景的 Gemini 3.5 Flash Cyber。这次发布的最大特征是"智力原地踏步，速度立刻翻倍"——Gemini 3.6 Flash 的综合智能水平与上一代基本持平（Intelligence Index 均 50 分），但单任务平均用时从 2.7 分钟降至 1.3 分钟，输出速度达到 304 token/秒，token 消耗减少约 17%。这标志着 Google 在大模型竞争中选择了"效率优先"路线，而非继续追逐跑分提升。

@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 官方生产级 Agent 最佳实践：1…"))
+    深度分析
+      工具交互面三模式
+      交互语义三模式
+      认证凭证两模式
+      上下文经济两模式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文基于 Anthropic 官方文章《Building agents that reach production systems with MCP》，系统拆解了生产级 Agent 集成中的 12 个可复用 MCP 设计模式，分为工具交互面、交互语义、认证凭证、上下文经济和打包分发五组。核心观点：生产级 Agent 的难点不是「能不能调用工具」，而是「能不能安全、稳定、低成本地连接真实系统」。

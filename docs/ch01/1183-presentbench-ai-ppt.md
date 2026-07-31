@@ -8,6 +8,18 @@
 
 > **Background**：华为云行业大模型多模态智能团队开发的 AI PPT 系统（hwc-mmi-aippt）在清华大学 PresentBench 细粒度幻灯片生成评测基准中取得总榜第一（70.8 分），在五大场景中斩获四项第一。该系统覆盖从材料解析到成品交付的全流程智能创作。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("华为云 PresentBench AI PPT 评测登顶"))
+    PresentBench 评测基准
+      五维评测体系
+    hwc-mmi-aippt 系统架构
+    评测成绩
+```
+
 ## PresentBench 评测基准
 
 PresentBench（A Fine-Grained Rubric-Based Benchmark for Slide Generation）由清华大学团队发布，是一个细粒度的、基于评分量表的幻灯片生成评测基准。与传统仅依据整体观感打分不同，PresentBench 关注的是系统是否真正完成了一项真实的演示文稿创作任务。

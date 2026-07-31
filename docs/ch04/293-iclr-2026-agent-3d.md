@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/iclr-agent-3d-generation.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ICLR 2026 | 英伟达×普渡大学：用Agent闭…"))
+    Summary
+    Key Points
+    深度分析
+      背景：大模型时代的具身智能挑战
+      Scenethesis的核心思路
+      四阶段Agent系统详解
+      实验结果与核心指标
+    实践启示
+      对于具身智能与机器人研究
+      对于3D内容生成与虚拟现实
+      对于多模态AI研究
+    相关实体
+```
+
 ## Summary
 Agent闭环文生3D研究，英伟达与普渡大学合作。
 

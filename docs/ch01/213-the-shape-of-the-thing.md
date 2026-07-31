@@ -10,6 +10,21 @@
 
 > 来源：One Useful Thing (Ethan Mollick)，2026-03-12。Mollick 在 2023 年写过一篇《The Shape of the Shadow of the Thing》推测 AI 的形态。三年后这篇《The Shape of the Thing》直接给出他对当下形势的判断：**「我们能比以前更清楚地看到那个 Thing 了，也能看到它带来的一些后果」**。文章核心论点：AI 进入了 agentic 阶段 + 指数级能力提升 + 工作形态被激进重写，这三件事正在组合成一种「rolling disruption」的环境，每一周都可能发生一夜之间的格局变化。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Shape of the Thing"))
+    深度分析
+      「Shape of the Thing」的三个轴
+      Software Factory 的工程边界
+      Rolling disruption 的工程含义
+      Recursive Self-Improvem…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2023 年 10 月 Mollick 写过《The Shape of the Shadow of the Thing》推测 AI 接下来几年会变成什么样。三年后的这篇更新版判断 — 我们现在能比以前更清楚地看到那个 Thing 了。三件事让这次判断变得可能：能力曲线的指数形态、agentic AI 的成熟、组织形态开始被激进重写。

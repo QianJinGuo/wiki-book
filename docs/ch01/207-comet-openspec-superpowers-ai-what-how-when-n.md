@@ -8,6 +8,36 @@
 
 > **来源说明**：本文基于术哥（ShugeX / 运维有术）2026-06-17 发布的深度源码分析整理（《AI 编程总失控？Comet + OpenSpec + Superpowers 用文件系统管住 AI》，术哥无界系列第 142 篇 / AI 编程最佳实战「2026」系列第 42 篇）。作者显式声明「源码分析基于本地仓库版本，尚未在生产环境中完成全场景验证」，按 web-content-reviewer `honest-second-hand-interpretation-scoring` 自觉的局限性披露提高 c 评分。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("三器合一（Comet + OpenSpec + Supe…"))
+    一、核心论点：AI 编程的瓶颈是工程纪律，不是…
+    二、三器分工：WHAT / HOW / WHE…
+    三、Superpowers：57 行 Shel…
+      核心反直觉点
+      session-start 脚本核心逻辑
+      平台适配三层逻辑
+      Skill 依赖链路（软件工程流程的 Skil…
+    四、OpenSpec：Delta Spec +…
+      Delta Spec — 增量规格（brown…
+    ADDED Requirements
+      Requirement: Two-Factor…
+    MODIFIED Requirements
+      Requirement: Session Ex…
+    REMOVED Requirements
+      Requirement: Remember Me
+      Artifact Graph — 制品依赖图
+      26 个平台适配器
+    五、Comet：YAML 状态机的工程纪律
+      五阶段状态机
+      合法的转换事件（5 种）
+      阶段检测 first-match-wins 链路
+      Guard 守卫：脚本强制纪律
+```
+
 ## 一、核心论点：AI 编程的瓶颈是工程纪律，不是模型能力
 
 术哥通过拆解三个 GitHub 开源项目的源码得出结论：

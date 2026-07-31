@@ -6,6 +6,21 @@
 
 # 深入浅出 Harness Engineering 之核心模式与理念
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("深入浅出 Harness Engineering 之核心…"))
+    相关实体
+    深度分析
+      核心观点
+      1.
+      内容结构
+      技术要点
+    实践启示
+```
+
 ## 相关实体
 
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch05/058-agent-harness.html)

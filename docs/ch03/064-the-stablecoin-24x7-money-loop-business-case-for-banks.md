@@ -8,6 +8,22 @@
 
 > **Source**: Fintech Brainfood Weekly Rant (2026-05-31) by Jason Mikula. Available at https://www.fintechbrainfood.com/p/stablecoin-business-case. Jina fetched 2026-06-05.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The stablecoin 24x7 money lo…"))
+    核心论点（Core Thesis）
+    银行业务对比矩阵（Business Trade…
+    大行（G-SIB）双轨布局
+    行业关键数据点
+    监管框架
+    Cash App 集成案例
+    三层洞察（Why this matters f…
+    深度分析
+```
+
 ## 核心论点（Core Thesis）
 
 **"Tokenized deposits are money that rests. Stablecoins are money that moves."**

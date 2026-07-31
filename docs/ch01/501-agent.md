@@ -10,6 +10,21 @@ CLI-Anything 是香港大学数据科学实验室（HKUDS）的开源项目，�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cli-anything-wechat-demo.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("让 Agent 自主完成任务"))
+    深度分析
+      1. CLI 作为 Agent 与 GUI 软…
+      2. SKILL.md 是 Agent 的'工…
+      3. 元技能（Meta-Skill）：Agen…
+      4. REPL 模式 + undo/redo：…
+    实践启示
+      相关实体
+```
+
 ## 摘要
 
 当前 AI Agent 的根本局限：文本进文本出，遇到带 GUI 的专业软件就只能绕道。要么手写 wrapper（工作量随深度指数增长），要么靠截图点击的 RPA（换个系统主题就崩溃）。CLI-Anything 的解法是**自动生成 CLI 层**——把"人用的鼠标+键盘接口"转换为"Agent 用的命令行接口"。一条命令 `/cli-anything ./gimp` 跑完 7 阶段流水线，就能 pip install 一个可用的 CLI 包。已覆盖 Blender、GIMP、FreeCAD、QGIS、Godot、LibreOffice 等 20+ 软件。

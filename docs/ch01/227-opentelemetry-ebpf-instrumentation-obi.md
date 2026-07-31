@@ -8,6 +8,30 @@
 
 > **来源说明**：本文基于阿里云云原生 2026-06-16 发布的 OBI 深度技术长文（《装在内核里的透视镜：云监控 2.0 不改一行代码实现全栈可观测》，作者古琦）整理。文章前 80% 内容为 OBI 上游项目（[opentelemetry-ebpf-instrumentation](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation)）的内核机制与工程实现深度解读；末段为阿里云云监控 2.0 的产品方自报接入流程，已标注。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenTelemetry eBPF Instrumen…"))
+    一、为什么需要 eBPF 零代码可观测性
+    二、OBI 三大支柱
+    三、协议识别：三级瀑布式匹配
+      防误判细节
+    四、语言深度集成：不止于网络层
+      Go：内核里重建 goroutine 父子血缘
+      Python asyncio：4 组 upro…
+      跨进程传播：内核态统一完成
+    五、数据管线：DAG + 死锁探测 + 对象池
+      顶层骨架：三条独立 Agent + errgr…
+      swarm：两阶段启动
+      msg.Queue：带死锁探测的扇出队列
+      应用可观测完整 DAG
+    六、CUDA/GPU 追踪
+    七、日志增强的工程取舍
+    八、产品方自报：阿里云云监控 2.0 中的 O…
+```
+
 ## 一、为什么需要 eBPF 零代码可观测性
 
 云原生与微服务架构下，一套生产系统往往横跨 Go、Java、Python、Node.js 等多种语言运行时，部署形态又散落在容器、Kubernetes、Serverless 之间。传统可观测性做法是为每种语言挂载侵入式 Agent 或 SDK——改代码、装包、对齐版本、重新发布，每接入一个新服务都是一次工程项目。

@@ -8,6 +8,20 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expa.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("开放模型生态快报 #22：Zyphra、Cohere、P…"))
+    深度分析
+      开放模型生态的三类参与者模型
+      本期重点模型技术分析
+      开放模型生态的禁令免疫性
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Interconnects 第 22 期开放模型生态快报揭示了开放模型生态系统的结构性转变：模型制造者从少数中国玩家主导演变为全球多元化格局。本期重点包括 Zyphra 的 ZAYA1 系列（74B-A4B MoE 和 8B-A0.6B MoE）在 AMD GPU 上训练的独特架构选择、Cohere 将旗舰模型 Command A+（218B-A25B MoE）以 Apache 2.0 开源、Poolside 的 Laguna-M.1 也转向 Apache 2.0 并承诺未来开放发布。同时，GLM-5.2 成为本期最大亮点，在日常工作中已接近最佳闭源模型的可用性。

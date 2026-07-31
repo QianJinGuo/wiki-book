@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/skill-design-patterns-anthropic.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 官方 14 种 Skill 设计模式"))
+    Anthropic 官方 14 种设计模式（5…
+      第一类：发现与选择（Discovery and S…
+      第二类：上下文经济（Context Econo…
+      第三类：指令校准（Instruction Ca…
+      第四类：工作流控制（Workflow Cont…
+    深度分析
+      系统性视角：5 类模式的内在逻辑
+      核心张力：自由度 vs 确定性
+      渐进式披露 vs 上下文预算：一个优化两个方向
+      Anthropic 模式 vs 社区模式：互补…
+    实践启示
+      1. 按问题域对号入座
+      2. description 的三层结构
+      3. ALL CAPS 检查表
+      4. 渐进式披露的执行信号
+    相关实体
+```
+
 ## Anthropic 官方 14 种设计模式（5 大类）
 > **来源：** Anthropic 官方技能编写最佳实践，[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-14-skill-patterns-best-practices.md)
 与上面 5+1 种社区模式（提炼自顶级 Skill 仓库）互补，这 14 种模式来自 Anthropic **官方**的最佳实践文档，按 **技能生命周期**组织：从触发到执行到校准。

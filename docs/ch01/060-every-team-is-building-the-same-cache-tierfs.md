@@ -21,6 +21,17 @@ We've talked to engineers at several different neocloud and AI infrastructure te
 
 That's the part that keeps catching our attention. Many teams, many versions of the same thing, none of them confident their version is good enough to share. Meanwhile every new team starting up does the same thing again, because they have to.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Every Team is Building the S…"))
+    The shape of the problem
+    Why does it keep happen…
+    What we're working on
+```
+
 ## The shape of the problem
 
 The actual problem is simple enough to state in a sentence: compute is fast, networks are slow, and the same data gets read many times.

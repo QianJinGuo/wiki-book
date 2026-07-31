@@ -8,6 +8,29 @@
 
 > **Source**: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evaluating-netflix-show-synopses-with-llm-as-a-judge.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Evaluating Netflix Show Syno…"))
+    核心内容
+      Introduction
+      The Making of a “Good” …
+    评分理由
+    相关实体
+    深度分析
+      1. 专用判官架构优于单提示词过载
+      2. 人类-AI 校准循环是将主观专家知识迁移…
+      3. 推理时计算扩展是评估质量与可读性的杜杆
+      4. Tiered Rationales 重构…
+    实践启示
+      1. 在构建 LLM 评估系统前先建立 Gol…
+      2. 对每个评估维度使用独立判官而非复合判官
+      3. 优先使用 APO 而非手动迭代提示词
+      4. 将共识评分作为推理长度超过临界点后的主要…
+```
+
 ## 核心内容
 
 ---

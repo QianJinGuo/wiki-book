@@ -8,6 +8,21 @@
 
 Jefferies（全球全服务投资银行）在 AWS 上构建了 Agentic AI Trade Assistant，将实时数据分析能力直接赋予交易员。该方案使用 Strands Agents、Amazon Bedrock 和 MCP 协议，将过去需要数天至数周的分析流程压缩到实时。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Jefferies 构建 Agentic AI Trad…"))
+    深度分析
+      1. Agentic AI 在投行交易场景中的…
+      2. Strands Agents + MCP…
+      3. 混合架构中的关键工程决策
+      4. AI 幻觉缓解的前瞻性设计
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 在投资银行交易前台桌面场景中，交易员需要从海量数据中获得客户行为、交易模式和市场趋势的实时洞察，以做出分秒必争的决策。然而，交易员通常缺乏编码能力，传统方式依赖领域专家分析和 IT 团队构建自定义仪表板，流程需要数天到数周。Jefferies 通过在 AWS 上构建 Agentic AI Trade Assistant，将端到端流程压缩到实时，使交易员能够通过自然语言交互获得可操作的交易洞察。

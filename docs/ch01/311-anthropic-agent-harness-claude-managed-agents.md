@@ -19,6 +19,32 @@ review_confidence: 8
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
 从微信文章 [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md) 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 官方 Agent Harness 平…"))
+    核心内容
+      主要章节
+    深度分析
+      架构哲学：从'模型调用'到'平台托管'
+      四层抽象的价值锚点
+      多智能体编排的工程意义
+      定价模型的隐含逻辑
+    实践启示
+      迁移路径建议
+      最佳实践场景
+      运营注意事项
+      风险与局限
+    相关实体
+    第 2 来源：claude.com 官方 bl…
+      平台演进时间线
+      官方对 Managed Agents 6 大生…
+      核心架构创新：Brain-Hands-Sess…
+      与现有实体的互补
+```
+
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/A_ksLCNmIL4lXLcZeVSPsQ
 

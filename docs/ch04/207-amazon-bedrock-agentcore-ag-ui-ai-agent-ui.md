@@ -8,6 +8,28 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcor.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock AgentCore AG-…"))
+    核心概念
+      什么是 AG-UI 协议
+      Amazon Bedrock AgentCor…
+    技术架构
+      FAST 全栈解决方案模板
+      AG-UI 事件流协议
+      双模式后端实现
+    生成式 UI 实战
+      CopilotKit + FAST 增强方案
+      架构组件
+    实践启示
+      适用场景
+      部署建议
+      与相关技术的关系
+```
+
 ## 摘要
 
 AG-UI（Agent-User Interaction Protocol）是一个开放的 Agent-用户交互协议，它使 AI Agent 能够超越纯文本对话，动态渲染交互式图表、实时共享画布，并在执行过程中暂停以获取用户确认。Amazon Bedrock AgentCore 通过支持 AG-UI 协议，为开发者提供了构建生产级交互式 Agent 应用的完整解决方案。

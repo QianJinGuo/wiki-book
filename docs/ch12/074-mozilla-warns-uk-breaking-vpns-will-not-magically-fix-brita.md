@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Mozilla warns UK: Breaking V…"))
+    相关实体
+    深度分析
+      安全工具被政治化的危险性
+      年龄核查政策的系统性失效
+      VPN 监管的逻辑困境
+      监管与平台演进的竞赛
+    实践启示
+      对隐私倡导者的策略参考
+      技术政策讨论中的框架竞争
+      对浏览器/隐私工具开发者的商业启示
+```
+
 ## 核心要点
 
 ```mermaid

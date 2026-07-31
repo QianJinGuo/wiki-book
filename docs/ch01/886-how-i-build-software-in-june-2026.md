@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-i-build-software-june-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How I Build Software in June…"))
+    深度分析
+      从 CLI 到 UI 的编排演进
+      Token 经济学与并行化
+      持续改进的不变性
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Stafford Williams 在 2026 年 6 月分享了他当前的软件开发工作流——几乎所有工作都通过自研的 **assist** 编排器发起和管理。从 2025 年 12 月开始构建 assist，到 2026 年 4 月实现完整编排能力，他的开发方式已从「人写代码 + AI 辅助」演变为「AI 执行 + 人做决策」的范式。核心理念是：通过精心定义 backlog、自动化验证、并行管理多个 Agent session，将人机交互瓶颈最小化，从而实现高速软件交付。

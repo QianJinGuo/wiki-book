@@ -10,6 +10,27 @@
 >
 > 原文：→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NomShub — Cursor 远程隧道利用链：She…"))
+    一句话总结
+    三个独有贡献（不应合并到现有 entity）
+      1. **Shell Builtin 沙箱逃逸…
+      2. **Microsoft Dev Tunn…
+      3. **AI Agent 作为'攻击放大器'…
+    与现有 wiki 实体差异化
+    严重性评估 Microsoft SDL Bu…
+    时间线
+    实操建议
+      给 AI 编码助手用户
+      给 AI 编码助手开发者
+    上线状态
+    原文链接
+```
+
 ## 一句话总结
 
 **NomShub = "单行 prompt injection → 7 步 AI 自主 exploit → 持久化反向 shell"**。Cursor 的 `shouldBlockShellCommand` 解析器只跟踪外部可执行文件，对 shell builtin（`export` / `cd` / `source` / `eval`）完全盲目，导致沙箱 + 应用层两道防御同时失效；攻击链末端利用 Cursor 自带的 `cursor-tunnel` 工具（合法 Microsoft 签名 Azure 隧道）建立持久化 C2。

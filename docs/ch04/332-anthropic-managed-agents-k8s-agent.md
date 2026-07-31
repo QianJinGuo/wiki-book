@@ -13,6 +13,25 @@
 - Claude 工作环境硬编码 → 无法对接客户自有 VPC
 - Prompt injection 攻击面大：不可信代码和凭证在同一环境
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic Managed Agents：用 K…"))
+    相关实体
+    深度分析
+      从宠物到牛群：Agent 架构范式转移
+      脑手分离的工程哲学
+      Session 外部化对 Agent 持久化的启示
+      对行业的影响
+    实践启示
+      在既有项目中应用脑手分离
+      实现 Cattle 文化的工程实践
+      安全架构的具体实现建议
+      避免常见误区
+```
+
 ## 相关实体
 - [Anthropic Pm Jess Yan Managed Agents](../ch01/989-anthropic.html)
 - [Anthropic Claude Managed Agents Platform 2026](../ch01/212-anthropic-claude-managed-agents.html)

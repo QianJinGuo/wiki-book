@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AutoResearch 异步多 Agent AI 寒武…"))
+    深度分析
+      核心观点
+      AutoResearch 当前状态
+      下一阶段：异步大规模 Agent 协作
+      内容结构
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Autoresearch Next Phase Async Multi Agent Ai寒武纪 涉及agent领域的核心技术议题。

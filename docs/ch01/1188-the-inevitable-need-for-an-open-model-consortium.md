@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-inevitable-need-for-an-open-model-consortium.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The inevitable need for an o…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 The inevitable need for an open model consortium 涉及agent领域的核心技术议题。

@@ -9,6 +9,23 @@
 > **Background**<br>
 > 本文来自阿里云开发者公众号，作者结合真实工程化项目 trade-ab-skill，系统性讲解了 Agent Skill 的结构规范、触发机制、作用域优先级以及最佳实践。Skill 格式已被 Claude Code、Cursor、GitHub Copilot、Gemini CLI 等 40+ 主流 Agent 产品采纳。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 工程之道：Skill 原理与最佳实践"))
+    Skill 的定义
+    核心理念：渐进性披露（Progressive …
+      三阶段模型
+    System Prompt 与 Skill 的区别
+    目录结构规范
+    SKILL.md 文件结构
+      frontmatter 元信息
+      其他关键字段
+    与现有实体的关系
+```
+
 ## Skill 的定义
 
 > "Agent Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows."

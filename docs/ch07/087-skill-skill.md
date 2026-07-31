@@ -10,6 +10,20 @@
 
 阿里云云原生团队提出了一套基于 Nacos AI Registry 的 Skill 治理方案，解决多 Agent 时代 Skill 散落、版本冲突、手动同步成本高的问题。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一份可信来源，终结 Skill 管理混乱：Skill 治…"))
+    多 Agent Skill 管理的五大挑战
+    Nacos AI Registry 三步治理路径
+      第一步：本机统一 → Local mode
+      第二步：进入 Registry → 资产属性化
+      第三步：安全准入 → 治理闭环
+    核心架构
+```
+
 ## 多 Agent Skill 管理的五大挑战
 
 当团队在多款 Agent（Codex、Claude Code、Cursor、Qoder）间共享 Skill 时，面临这些问题：

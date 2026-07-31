@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/your-first-ai-agent-should-do-one-thing-badly.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Your First AI Agent Should D…"))
+    深度分析
+      1. 为什么 Agentic 系统不能'先设计…
+      2. POC 墓地的具体形态
+      3. 医疗人员验证案例的'单点切入'模式
+      4. 'Crawl, Walk, Run' 与…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 CrewAI 团队的核心论断：最有效的 agentic 系统都起步于"丢人的简单"——更少的 agent、更窄的任务、做得更糟。Agentic 系统的开发周期与软件工程传统开发周期存在根本差异，必须**迭代式构建**（crawl, walk, run）。本文用 healthcare staffing POC 案例与五条具体原则，论证"POC 墓地"陷阱与"先做一个糟糕的 agent"作为起点的反直觉优势。

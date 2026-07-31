@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("U of T AI Worm：CleverHans La…"))
+    深度分析
+      威胁的本质：从'静态恶意软件'到'会思考的蠕虫'
+      为什么'免费模型'就够了
+      攻击链推演
+      防御侧的根本挑战
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

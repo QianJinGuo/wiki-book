@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/when-impressive-performance-gains-do-not-matter.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("When Impressive Performance …"))
+    深度分析
+      阈值思维 vs 百分比思维
+      人因工程的隐性约束
+      非线性投资回报
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Colin Breck 以三个真实案例阐述了一个反直觉的工程洞察：**数量级的性能提升可能完全不影响用户体验或业务结果**。根本原因在于存在不易察觉的约束——人类注意力阈值、整数倍工作流约束、流水线反压机制。文章的核心教训是：性能优化的价值不在于百分比提升，而在于是否突破了关键阈值。

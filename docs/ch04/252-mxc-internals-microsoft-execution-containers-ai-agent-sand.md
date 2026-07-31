@@ -10,6 +10,25 @@
 >
 > **核心定位**: MXC 是 Microsoft 2026 年开源的 **AI agent 专用沙箱**，与传统的 Docker / gVisor / firecracker 不同——它针对 agent 工作负载（长时间运行、动态网络、可执行任意代码）做了三层收紧。这是当前公开方案中**最严格的 agent-side 隔离**之一。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("MXC Internals — Microsoft eX…"))
+    TL;DR
+    三层隔离架构
+      1. Hyper-V micro-VM（强边界）
+      2. Syscall Policy（agent…
+      3. 临时 home + overlayfs
+    与现有 sandbox 方案对比
+    与 agent 安全研究的关系
+    深度分析
+    实践启示
+    局限
+    上线状态
+```
+
 ## TL;DR
 
 - **What**: Microsoft eXecution Containers (MXC) — 基于 **Hyper-V 强隔离 micro-VM** 的 agent 代码执行沙箱

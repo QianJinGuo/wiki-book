@@ -9,6 +9,24 @@
 > **来源**: AWS Machine Learning Blog · Veda Raman, Kalyan Garimella · 2026-06-19
 > 2nd Source: AWS 中国区博客 · 杨探, 王文巍, 裴秋利 · 2026-07-22
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock AgentCore Web…"))
+    深度分析
+      技术架构
+      接入方式
+      响应格式
+      与自建方案和第三方工具的对比
+    第 2 来源 — AWS 中国区博客实战教程 …
+      核心新增内容
+      互补角度
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent 提供实时网页搜索能力。底层是 Amazon 自建的数百亿文档索引，持续分钟级刷新，查询流量不离开 AWS。定价 $7/1,000 次查询。

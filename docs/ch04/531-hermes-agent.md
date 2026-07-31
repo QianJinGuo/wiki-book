@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/hermes-agent.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent"))
+    Overview
+    Key Facts
+    核心架构
+      Self-Evolution（自进化）
+      记忆机制
+      Skill 机制
+    生态位
+    Related
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## Overview
 Hermes Agent 是 **Nous Research** 开源的自主演式 AI Agent 框架，GitHub **10 万+ Stars**（2026 年 4 月）。
 核心思路：一个部署在你自己设备上的 AI Agent，**用得越久越强**，拥有自我进化的学习循环、记忆机制、40+ 聊天平台接入。

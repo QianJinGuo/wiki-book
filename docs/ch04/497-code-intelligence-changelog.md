@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/code-intelligence-changelog.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Code Intelligence – Changelog"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - **Code Intelligence定义**：Linear Agent获得对代码库的受控访问，将代码仓库转化为整个团队可共享的产品上下文，使Agent能够推理产品实际如何运作，而不仅仅是issue、project和文档中记录的内容 
 - **适用场景**：PM撰写更精准的spec、支持和销售回答技术问题、工程快速调查bug和回归、团队任何成员了解不熟悉系统部分 

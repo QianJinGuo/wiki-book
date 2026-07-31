@@ -14,6 +14,28 @@
 > Interpreter: Hyman 的杂货铺 (微信公众号转载解读)
 > Date: 2026-06-16
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("APPO (Agentic Procedural Pol…"))
+    一句话总结
+    痛点：奖励只给终点，中间决策谁负责？
+    APPO 核心：把「过程」当作信用分配的基本单位
+    Branching Score：熵 + 未来价…
+    过程级 Advantage：双组估计 + 未来…
+    实验：13 项基准，三类任务全覆盖
+    主结果：全面领先，深度搜索尤其亮眼
+      数学 + 知识推理（10 项基准）
+      深度搜索（GAIA / WebWalkerQA…
+      Pass@K 分析
+    消融与训练动态
+      组件消融（Qwen2.5-7B，知识推理 5 …
+      分支预算
+      训练曲线
+```
+
 ## 一句话总结
 
 中科大与阿里高德联合提出 **APPO（Agentic Procedural Policy Optimization）**，用 **Branching Score** 把 Agent 强化学习的分支点从工具调用边界下沉到序列中的**细粒度决策点**，在 13 项基准上相对强基线平均提升近 4 分，**工具调用次数基本持平**。

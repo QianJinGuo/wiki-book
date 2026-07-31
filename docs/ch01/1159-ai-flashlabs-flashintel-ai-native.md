@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flashlabs-vertical-ai-startup-pivot.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("垂类 AI 创企的自救：FlashLabs 从 Flas…"))
+    深度分析
+      核心观点
+      危机触发
+      内容结构
+      技术要点
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native 涉及agent领域的核心技术议题。

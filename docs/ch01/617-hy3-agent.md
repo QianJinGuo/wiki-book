@@ -9,6 +9,25 @@
 > **来源**：腾讯技术工程。腾讯混元 Hy3 正式发布（较 4 月 preview 版本），MoE 295B/21B/256K，Apache 2.0 开源，多产品线 Agent 能力显著提升。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-full-release-agent-product-腾讯技术工程.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯混元 Hy3 正式版：Agent 能力跃升与多产品落地"))
+    架构
+    关键评测数据
+    产品接入
+    定价与开源
+    与已有 wiki 实体关系
+    深度分析
+      Hy3 Agent 能力跃升的结构性原因
+      '快慢思考融合'的多场景适应性
+      内生商业模式：模型即服务
+      从 preview 到 full releas…
+    实践启示
+```
+
 ## 架构
 
 MoE，总参 295B，激活 21B，256K 上下文。快慢思考融合模型。

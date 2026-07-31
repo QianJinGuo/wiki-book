@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 17.0KB | `entities/gemma-4-multi-token-prediction-drafters.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemma 4 Multi Token Predicti…"))
+    概述
+    问题背景：为什么 LLM 推理慢？
+    MTP 核心技术
+      Speculative Decoding 原理
+      架构优化
+    性能提升
+      基准测试结果
+      适用模型
+      硬件适配细节
+    应用场景
+    使用方法
+      支持框架
+      官方文档
+    技术溯源
+    相关资源
+```
+
 ## 概述
 
 **Gemma 4 Multi-Token Prediction (MTP) Drafters** 是 Google 于 2026年5月为 Gemma 4 系列模型发布的**推测解码**（Speculative Decoding）加速组件。该技术通过轻量级草稿模型（drafter）并行预测多个 token，再由目标大模型验证，实现最高 **3x 推理加速**，同时保持输出质量完全一致。 See also [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)

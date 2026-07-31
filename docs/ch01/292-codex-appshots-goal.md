@@ -6,6 +6,23 @@
 
 # Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex 重磅升级：Appshots / Goal 毕…"))
+    相关实体
+    深度分析
+      1. Appshots 解决的是'上下文获取的…
+      2. /goal 毕业意味着 Agent 从'…
+      3. Locked Use 是 Compute…
+      4. '50% 用户不写代码'是 Codex …
+    实践启示
+    关联实体
+    信号判断
+```
+
 ## 相关实体
 
 - [agent资本市场：自主agent融资框架与批判](../ch03/035-agent.html)

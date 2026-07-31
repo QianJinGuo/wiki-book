@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 9.6KB | `entities/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Announcing Genkit Middleware"))
+    核心架构：三层拦截体系
+    预置中间件分析
+      Retry — 瞬态故障弹性
+      Fallback — 多模型韧性
+      Tool Approval — 人工在环（Hu…
+      Skills — 动态技能注入
+    深度分析
+      1. Middleware 组合顺序语义
+      2. 与传统 Web Middleware 的…
+      3. 中间件的跨语言一致性
+      4. 与主流 Agent 框架的对比
+    实践启示
+      1. 生产级应用的 Middleware 堆栈建议
+      2. 自定义 Middleware 设计原则
+      3. 调试与可观测性
+      4. 安全考量
+    相关资源
+    相关实体
+    标签
+```
+
 ## 核心架构：三层拦截体系
 Genkit 的 tool loop 每次迭代经历：模型生成输出 → 工具执行 → 结果反馈新模型调用 → 循环直到模型结束。Middleware 在此循环的三层注入钩子：
 | 层级 | 触发频率 | 设计意图 |

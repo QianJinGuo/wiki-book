@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/autocli.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AutoCLI"))
+    Overview
+    Key Facts
+    Supported Platforms 55+
+    Technical Highlights
+    autocli-skill
+    深度分析
+      定位与优势
+      在 Agent 工具栈中的位置
+      autocli-skill 的设计
+    实践启示
+    Related
+```
+
 ## Overview
 AutoCLI 是一个用 Rust 实现的高速、内存安全的命令行网页信息获取工具，Stars 2.4k。专注于让 AI Agent 能够用一条命令从任意网站获取信息。
 > "Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command"

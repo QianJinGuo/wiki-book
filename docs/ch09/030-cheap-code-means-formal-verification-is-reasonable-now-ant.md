@@ -16,6 +16,21 @@ This is why comprehensive conformance test suites can be so valuable. If they're
 
 Enter TLA+. It's a formal spec language for modeling complex systems with many moving parts, with a model checker that exhaustively searches all possible states which are implied by the spec. It's perfect for finding the kinds of gnarly bugs like race conditions which can be hard to find other ways.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cheap code means formal veri…"))
+    introducing the hill
+    how it works
+    building confidence
+    reflections
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## introducing the hill
 
 TLA+ is a way to formally model systems to check whether it's possible to reach certain states. For example, you could model an escape room and check whether it's possible for players to ever become stuck. You define possible starting points and transitions, like players discovering the Red Key in Room 1. If it's possible for some other part of the escape room to close access to the Red Key before players discover it, and the Red Key is necessary to progress, the TLA+ checker should discover that. Or you model participants in a distributed data storage system and check that it is impossible for data to be lost due to unresolved intents (ask me how I know).

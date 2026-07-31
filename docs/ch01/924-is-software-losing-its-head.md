@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/is-software-losing-its-head.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Is Software Losing Its Head?"))
+    深度分析
+    相关链接
+    实践启示
+```
+
 ## 核心要点
 - Newsletter 技术洞察
 → [（来源：raw）]

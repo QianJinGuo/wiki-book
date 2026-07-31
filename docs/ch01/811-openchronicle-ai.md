@@ -10,6 +10,17 @@
 GitHub: https://github.com/Einsia/OpenChronicle
 > "OpenAI的Chronicle指向了一个重要的未来。但AI的记忆，不应该被锁在100美元/月的付费墙之后。所以，我们把它开源了。"
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenChronicle：把AI记忆变成可复用的基础设施"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Agent Self Improvement Six Mechanisms](../ch03/035-agent.html)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/221-agi.html)

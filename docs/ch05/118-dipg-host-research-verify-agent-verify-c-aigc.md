@@ -6,6 +6,33 @@
 
 # DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DIPG 蚂蚁保 Host-Research-Verif…"))
+    Overview
+    为什么 C 端 AIGC 不能让实时直出
+    两条链路：离线主路径 + 实时兜底
+    3 个 Agent 三角分工
+      Host Agent — 总编排 + 精准修正
+      Research Agent — 只负责从零生成
+      Verify Agent — 只负责校验、不改…
+      调用次数的不对称分工
+    LangGraph 三层物理嵌套
+      task 工具：SubAgent 注入机制
+      task 内部三件事
+    state'files' 与 /audit…
+      双层数据通道
+    两类致命错误的真实 badcase
+      渲染类：孤儿 /div 让页面塌掉
+      幻觉类：惠民保'优于市场 85%' 骗人
+    Verify Agent 两层校验
+      structural_check（程序化校验）
+      llm_verify（语义 + 事实校验）
+```
+
 ## Overview
 
 DIPG（Deep Interpretation Page Generator）是蚂蚁保保险快查的 C 端 AIGC 深度解读页面生成系统。晓灰 @antgroup.com 2026-06-01 在公众号发表的这篇文章，是蚂蚁集团 Harness Engineering 系列的第 2 篇（前一篇是 HelixVerify）。

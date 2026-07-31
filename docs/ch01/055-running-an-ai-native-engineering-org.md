@@ -8,6 +8,28 @@
 
 URL: https://claude.com/blog/running-an-ai-native-engineering-org
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Running an AI-native enginee…"))
+    深度分析
+      1. AI-native 工程组织：从'用 A…
+      2. 工程经理的新角色：AI 产出的质量守门人
+      3. 代码审查的规模化瓶颈
+    实践启示
+      1. 引入 AI 审查作为第一道防线
+      2. 重新定义工程师角色
+      3. 投资审查基础设施
+    相关实体
+    The processes that quie…
+      Planning: shift roadmap…
+      Context gathering: ask …
+      Code review: trust but …
+      Team makeup: blurring r…
+```
+
 ## 深度分析
 
 ### 1. AI-native 工程组织：从"用 AI"到"围绕 AI 组织"

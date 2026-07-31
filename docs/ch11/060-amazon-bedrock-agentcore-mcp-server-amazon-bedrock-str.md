@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/design-and-practical-application-of-intelligent-agents-in-e-commerce-industry.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快时尚电商行业智能体设计思路与应用实践（六）借助 Ama…"))
+    概述
+    深度分析
+      1. MCP Server 如何重塑智能体研发流程
+      2. 三大核心能力支撑全生命周期开发
+      3. 快时尚电商场景的独特挑战与 MCP 解决思路
+      4. Strands Agents 与 Kir…
+    实践启示
+      1. 采用 uv 作为包管理器简化 MCP S…
+      2. 通过 MCP 配置文件实现多服务统一管理
+      3. 利用 MCP Server 覆盖智能体开…
+      4. 在大促前利用 MCP 加速问题定位
+    核心技术
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

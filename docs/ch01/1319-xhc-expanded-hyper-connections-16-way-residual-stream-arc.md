@@ -8,6 +8,20 @@
 
 xHC (Expanded Hyper-Connections) is a neural architecture that extends `DeepSeek`'s mHC (Multi-path Hyper-Connections) to support **16 residual streams** with **sparse updates and multi-scale temporal feature enhancement**. Developed by researchers from Shanghai Jiao Tong University and Xiaohongshu, xHC addresses the saturation problem that arises when scaling mHC beyond 4 residual paths.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("xHC: Expanded Hyper-Connecti…"))
+    Motivation
+    Key Design
+      Dense Read, Sparse Update
+      Multi-Scale Temporal Fe…
+      Extensibility Beyond 4 …
+    Results
+```
+
 ## Motivation
 
 The original Hyper-Connection (HC) expanded single residual streams to multiple paths; mHC added constrained cross-stream mixing via Sinkhorn normalization for training stability. However, scaling from 4 to 16 paths in mHC incurred a **32% increase in training FLOPs** for only **0.006 loss reduction** — indicating that additional streams lacked sufficiently diverse write-back signals while bearing growing dynamic mixing costs.

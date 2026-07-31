@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐ | 4.4KB | `entities/anthropic_cache_tokenomics.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tokenomics: the 62.5-minute …"))
+    相关实体
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 核心要点
 -
 ## 相关实体

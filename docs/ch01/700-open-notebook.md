@@ -8,6 +8,30 @@
 
 Open Notebook 是一个开源的 AI 知识管理工具，定位为 Google [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) 的自托管替代品。由 lfnovo 在 GitHub 上开源，MIT 协议，2025 年 10 月发布首个正式版。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Open Notebook"))
+    核心差异
+    技术架构
+    功能矩阵
+      多模型支持
+      播客生成
+      RAG 聊天
+      双层搜索
+    已知局限
+    与 NotebookLM 对比
+    深度分析
+      自托管知识工具的数据主权价值
+      Esperanto 抽象层的工程价值
+      播客生成的差异化竞争
+      MCP 集成打开了自动化工作流
+    实践启示
+    相关链接
+```
+
 ## 核心差异
 
 与 NotebookLM 相比，Open Notebook 解决了三个关键限制：

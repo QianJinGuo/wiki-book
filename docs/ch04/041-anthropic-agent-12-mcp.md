@@ -14,6 +14,34 @@
 - Score: Value=8 × Confidence=8 = 64
 - Original: [Claude Code源码泄露分析](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-source-leak-lifecycle-analysis.md) 同系列
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 官方生产级 Agent 最佳实践：1…"))
+    微信正文
+    背景：MCP 的定位
+    五组12模式
+      第一组：工具交互面（Tool Surface）
+      第二组：交互语义（Interaction Se…
+      第三组：认证与凭证流（Auth and Cre…
+      第四组：上下文经济（Context Econo…
+    结语
+    参考资源
+    深度分析
+      一、模式结构的全局视角
+      二、Tool Surface 设计的三层决策
+      三、交互语义模式的深层逻辑
+      四、上下文经济的核心矛盾
+    Related entities
+    实践启示
+      1. 从模式1开始，先想清楚分发形态
+      2. 工具粒度决策先用「意图探测」方法
+      3. Form Mode 设计优先考虑「不打断…
+      4. 凭证托管是生产级集成的门槛
+```
+
 ## 微信正文
 在 Claude Code 源代码泄露事件之后，我们从源码里整理出了 12 种 Agentic Harness 模式。后来又结合 Anthropic 官方的 Agent Skills 构建指南，继续拆解出 14 种 Skill 编写模式。这次再往前走一步，问题就变得更现实了：当 Agent 真正进入生产系统，它到底应该怎么连接那些真实的业务工具、权限系统和数据源？
 Anthropic 官方最近那篇关于 MCP 的文章《 Building agents that reach production systems with MCP 》，讨论的正是这个问题。文章比较了直接 API 调用、CLI 和 MCP 的差异，并解释为什么生产级 Agent 越来越倾向于使用 MCP。

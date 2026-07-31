@@ -8,6 +8,20 @@
 
 阿里云 ARMS 团队推出的 Node.js 探针方案，基于 OpenTelemetry 扩展 AI Agent 语义，自动埋点 LLM 调用、工具执行和 Agent 决策链路。解决 AI Agent 性能监控的三大难题：模型调用黑盒、工具调用碎片化、端到端追踪缺失。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent Node.js ARM 探针 — 通过…"))
+    深度分析
+      一、AI Agent 可观测性的'三层黑盒'困境
+      二、OpenTelemetry 扩展的技术路径
+      三、从'能监控'到'能诊断'：性能基线数据的价值
+      四、与同类方案的技术对比
+    实践启示
+```
+
 ## 核心要点
 
 - 来源：阿里云云原生公众号，2026年7月5日

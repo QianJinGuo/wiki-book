@@ -8,6 +8,21 @@
 
 > 基于造物手稿的 claude-apprentice v1.0 发布日志，深入讲解 32 个核心文件的设计取舍与背后踩坑。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("claude-apprentice v1.0：32 文件…"))
+    深度分析
+      5 层架构的设计哲学：从'提问'到'记忆'的分…
+      CLAUDE.md 压缩：知识下沉的量化收益
+      Spec 驱动工作流：软件工程方法论在 AI …
+      错题本机制：系统化的经验积累
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 claude-apprentice 是一个提升 Claude Code 协作效率的开源工具，其 v1.0 版本包含 32 个核心文件，按 5 层架构组织：Prompt/L1 → Context/L2 → Harness/L3 → Loop/L4 → Memory/L5。 核心设计包括 CLAUDE.md 从 200 行压缩到 53 行的知识下沉策略、PROPOSE→APPLY→SHIP→ARCHIVE 的四阶段 Spec 驱动工作流、8 条种子错题本机制，以及 6 维度代码评审体系。 该工具已在 GitHub 和 npm 公开发布，v1.1 已增加 SSOT 治理和双版本号策略。

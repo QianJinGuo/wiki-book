@@ -13,6 +13,28 @@
 > 摘要: Protocol-H 分层supervisor-worker架构，解决企业RAG模态鸿沟(SQL+向量)+Reflective Retry幻觉率↓60%(28.5%→7.1%)+EntQA基准84.5%准确率+LangGraph StateGraph确定性编排+Adapter模式云中立数据库抽象
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Protocol H：分层 Agentic RAG 企业架构"))
+    模态鸿沟问题：传统RAG为什么无能为力
+    分层Agentic解决方案：Protocol-…
+    组件详解
+      Supervisor智能体：元认知编排器
+      SQL Worker：Schema感知查询引擎
+      Vector Worker：语义检索智能体
+    Reflective Retry机制：自主错误恢复
+    实现与集成
+      LangGraph StateGraph状态管理
+      云中立的数据库适配器
+      专用Worker智能体ReAct循环
+    基准测试结果
+    Schema漂移处理
+    并行执行优化
+```
+
 ## 模态鸿沟问题：传统RAG为什么无能为力
 传统 RAG 系统通常是线性流水线：向量化用户问题→检索文档→交给LLM→生成答案。它在文档中心型问题上表现尚可，但在企业多模态数据环境中无能为力。
 以客户流失分析为例："哪些客户群体流失率最高？结合工单看常见原因是什么？"

@@ -8,6 +8,23 @@
 
 > **Background**：基于 AWS China Blog 原创技术文章（2026-06-26），系统梳理中国用户访问海外 Amazon Bedrock 的三类场景与端到端私有化接入架构。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("中国用户安全高性能访问海外 Bedrock"))
+    核心问题
+    三类场景识别
+    三条路径解决方案
+      路径 1：专线（DX / SD-WAN）直连 …
+      路径 2：Client VPN 回传 — 场景 B
+      路径 3：海外 EC2 代理 TLS 透传 —…
+    关键架构要素
+    与其他 AWS 网络方案的差异化
+    相关主题
+```
+
 ## 核心问题
 
 ```mermaid

@@ -8,6 +8,37 @@
 
 > 2026-06-08 Perplexity AI Research 与 Harvard Business School 联合发布的第一份全面 Perplexity Computer 真实部署实证研究。arXiv 技术报告 2606.07489。在 Computer 上线后仅约 105 天内 (2026-02-25 → 2026-06-08) 即拿出 HBS 学术严格度的生产数据。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Perplexity Computer Empirica…"))
+    深度分析
+      1. 知识工作的实证研究
+      2. Computer use vs stru…
+      3. 知识工作者的行为变化
+    实践启示
+      1. 追踪 AI 对知识工作的行为影响
+      2. 验证技能比生成技能更重要
+      3. 用实证数据驱动 AI 采用策略
+    相关实体
+    三个独有贡献 不应合并到现有 entity
+    核心研究问题与三维分析框架
+    Autonomy 自主执行时长与质量
+      自主时长差距
+      不会变成放弃率
+      Pause-for-user 检查点
+      跨服务 tool chain
+    Efficiency 87% 时间 / 94…
+      三种独立估计法
+      主要结果
+      Robustness
+    Scope 任务范围扩张 — 跨职业 + 认…
+      横向扩张 Cross-Occupation
+      纵向扩张 Cognitive Complex…
+```
+
 ## 深度分析
 
 ### 1. 知识工作的实证研究

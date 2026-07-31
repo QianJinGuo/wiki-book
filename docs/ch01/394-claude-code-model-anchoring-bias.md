@@ -8,6 +8,24 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-security-review-bias-brainoverflow-2026-06.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 安全审查的隐性盲点：Model …"))
+    概述
+    Claude Code 三种安全审查机制
+    三个种子漏洞（按复杂度排序）
+    四个测试
+    核心发现
+      H1 验证（Model Bias 真实存在）
+      H2 验证（Diff 范围审查的天然盲点）
+    三个独有贡献
+    工程启示
+    相关主题
+```
+
 ## 概述
 
 brainoverflow 2026-06-01 对 Anthropic 2026-05 发布的 Claude Code Security Guidance Plugin 进行的实证实验，揭示 AI 编码助手安全审查工具的**结构性盲点**：model anchoring bias 在 same-session 审查中显著抑制漏洞发现（Fail-open 认证问题 F1 整轮被静默），diff 范围 plugin 漏掉跨 commit 漏洞链（Write + scoped python3 组合 F3）。

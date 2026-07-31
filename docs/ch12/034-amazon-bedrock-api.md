@@ -43,6 +43,27 @@ graph TB
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-api-security-guide.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("别让你的 Amazon Bedrock 模型为他人打工—…"))
+    要点
+    深度分析
+      凭证管理的本质：信任边界的设计
+      Bedrock 的风险特征：为何它比 EC2/…
+      访问控制的层次：从 IAM Policy 到 …
+      监控的本质：异常识别的难点与解法
+    实践启示
+      立即可落地的措施
+      架构设计建议
+      监控体系建设优先级
+      常见误区
+    相关
+    相关实体
+```
+
 ## 摘要
 Amazon Bedrock 模型调用安全防护指南，涵盖凭证管理、访问控制、持续监控三个层面。
 

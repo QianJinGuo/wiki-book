@@ -8,6 +8,30 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思"))
+    一句话总结
+    K 型分化开篇核心洞察,本实体独家
+    14 节核心观点本实体独家
+      1. Skill 是能力商品，不只是提示词
+      2. Skill 的核心：把人的经验外化
+      3. 用户不关心概念,用户关心结果
+      4. 好 Skill 的架构：中心短,辐射厚
+    4 个真实爆款 Skill 案例
+      案例 1: PPT Skill演讲分享
+      案例 2: 社交媒体卡片 Skill3:4 …
+      案例 3: Logo Generator Sk…
+      案例 4: AI Desk Card物理环境…
+    与已有 Skill 实体的关系本实体定位
+    关键独到判断本实体独家
+    实践启示本实体补全
+    相关实体
+```
+
 ## 一句话总结
 
 歸藏做了 **4 个爆款 Skill**(PPT / 社交媒体卡片 / Logo Generator / AI Desk Card)后的 **产品哲学反思** —— **K 型分化** / **能力商品** / **把品味变成约束** / **中心短辐射厚** / **盗用靠持续分发** 等 14 节独家洞察，填补 wiki 中"Skill **产品哲学视角**"的空白(与现有"设计模式/工程教程/写作规范"视角互补)。

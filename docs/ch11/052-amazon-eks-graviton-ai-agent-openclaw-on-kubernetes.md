@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Amazon EKS 和 Graviton 构建多…"))
+    概述
+    核心技术
+    深度分析
+      1. Kubernetes Operator …
+      2. Namespace-per-User 四…
+      3. Graviton + Karpenter…
+      4. 共享 IAM Role + Pod Id…
+    实践启示
+      1. 采用 CRD + Operator 模式…
+      2. 根据隔离需求选择运行时：默认 runc，…
+      3. 存储选型：EBS gp3 适合高 IOP…
+      4. 认证授权分离：Cognito 管用户，P…
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

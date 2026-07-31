@@ -8,6 +8,21 @@
 
 > 原文标题: Simplify model selection in Amazon Bedrock with the open source Model Profiler
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Simplify model selection in …"))
+    深度分析
+      1. 模型选型的碎片化困境
+      2. 数据管线架构的技术亮点
+      3. 从工具到工作流：模型选型的结构化方法
+      4. 对企业 AI 基础设施决策的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

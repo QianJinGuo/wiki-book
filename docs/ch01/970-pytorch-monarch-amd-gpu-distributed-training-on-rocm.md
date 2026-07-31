@@ -6,6 +6,22 @@
 
 > **Background**: 本文基于 PyTorch 官方博客分析 PyTorch Monarch 在 AMD Instinct GPU 上通过 ROCm 实现的单控制器分布式训练框架，涵盖容错、弹性扩展和多 GPU 通信。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("PyTorch Monarch: AMD GPU Dis…"))
+    背景
+    技术架构
+    深度分析
+      从'检查点容错'到'架构级容错'的范式转变
+      零拷贝通信与 ROCm 生态的关键跨越
+      弹性扩展的实际意义
+    实践启示
+    与传统检查点的对比
+```
+
 ## 背景
 
 大规模 LLM 训练需要在数百上千 GPU 上进行分布式训练，硬件故障不再是异常事件而是预期中的常态。PyTorch Monarch 提供了一个解决此问题的单控制器（single-controller）运行时架构。

@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/discord-e2e-encryption.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Discord 全平台端到端加密"))
+    技术实现
+    安全特性
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 ```mermaid

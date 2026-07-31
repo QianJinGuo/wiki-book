@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claw-SWE-Bench：首个独立测量Harness…"))
+    核心贡献
+    适配器设计
+    横扫实验关键发现
+      固定 harness（OpenClaw），换模型
+      固定模型，换 harness
+    答案泄露修复
+    资源链接
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心贡献
 
 Claw-SWE-Bench 是由基元律动（TokenRhythm，创始人王云鹤，原华为诺亚方舟实验室主任）联合无问芯穹、清华大学、北京大学、SEE 基金等机构发布的编程 Agent 评测基准，**首次让 harness 作为可独立测量的变量加以控制**。

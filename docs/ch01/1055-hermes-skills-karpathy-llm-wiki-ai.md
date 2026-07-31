@@ -8,6 +8,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skills-llm-wiki-self-improving-knowledge-system.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("手把手：用 Hermes Skills + Karpat…"))
+    深度分析
+      核心观点
+    整体结构：三层互相喂养
+    第二步：理解 SKILL.
+    When to Use
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你 涉及agent领域的核心技术议题。

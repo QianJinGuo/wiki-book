@@ -13,6 +13,21 @@
 **Tags:** newsletter, ai, model, mistral, robotics, navigation, embodied-ai
 **Ingested:** 2026-07-09 18:59 UTC
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Robostral Navigate: single-c…"))
+    深度分析
+      1. 纯视觉导航的 paradigm shift
+      2. 前缀缓存（Prefix-Caching）…
+      3. 从 VLM 到导航的自然演进
+      4. 仿真到现实的迁移优势
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Robostral Navigate 是 Mistral AI 推出的首个具身导航模型，规模为 8B 参数，仅依靠单一 RGB 摄像头即可让机器人在复杂环境中自主导航。该模型在 R2R-CE（Room-to-Room in Continuous Environments）验证集 unseen 上达到 76.6% 的成功率，超越所有使用深度传感器或多个摄像头的已有方案，比最佳单摄像头方案高出 9.7 个百分点。模型完全基于仿真数据训练（约 400,000 条轨迹、6,000 个场景），核心方法包括指向导航（Pointing-based Navigation）、基于前缀缓存的高效监督训练（Prefix-Caching，减少 22× token 量），以及在线强化学习（CISPO 算法）的进一步优化。Robostral Navigate 可跨轮式、腿式、飞行机器人泛化，对不同相机内参和真实世界的未知障碍物均表现出鲁棒性。

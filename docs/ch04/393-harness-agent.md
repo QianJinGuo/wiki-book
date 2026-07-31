@@ -6,6 +6,23 @@
 
 # Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 之后：Agent 可靠性的关键，是状态边…"))
+    相关实体
+    深度分析
+      核心观点
+    太长不看
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+      补充：State/View/Control 三…
+```
+
 ## 相关实体
 
 - [how to build an ai-native startup](../ch05/018-ai-native.html)

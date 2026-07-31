@@ -16,6 +16,23 @@ updated: '2026-06-07'
 type: entity
 # The inevitable need for an open model consortium
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The inevitable need for an o…"))
+    深度分析
+      1. 开放模型联盟的必然性
+      2. 开放 ≠ 开源
+      3. 与 Linux 历史的类比
+    实践启示
+      1. 评估'开放'模型的实际许可条款
+      2. 关注开放模型联盟的治理进展
+      3. 多模型策略减少单一供应商风险
+    相关实体
+```
+
 ## 深度分析
 
 ### 1. 开放模型联盟的必然性

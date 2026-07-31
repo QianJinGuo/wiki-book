@@ -8,6 +8,21 @@
 
 NVIDIA 推出 BioNeMo Agent Toolkit，这是一个汇集了 NVIDIA 十多年生命科学库、工具和开放模型的智能体工具包，使 AI Agent、科研人员和实验室能够协同工作，加速科学发现。Anthropic 和 OpenAI 也在集成该工具包，旨在为研究人员提供智能体驱动的生命科学工作流。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NVIDIA BioNeMo Agent Toolkit…"))
+    深度分析
+      科学发现领域的 Agent 化拐点
+      'NVIDIA 做生态，不抢饭碗'的平台战略
+      Agent 技能（Skills）的标准化工件
+      科学 Agent 与传统 AI 的区别
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 1. **覆盖全生命科学生态**：工具包涵盖 NVIDIA Nemotron、NemoClaw、OpenShell 和 BioNeMo 等组件，为 AI Agent 提供加速生命科学研究的技能，覆盖生物学、化学、基因组学及药物研发等领域。

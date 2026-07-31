@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/this-redesign-of-stokes-coffee-is-a-masterclass-in-change-everything-but-don-t-c.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("This redesign of Stokes Coff…"))
+    概述
+    项目背景：Stokes Coffee 的传承挑战
+    Eat Marketing 的策略方法
+      从人出发，而非从视觉出发
+      Stokes People 角色系统
+      字体与语调
+      色彩方案
+    核心启示
+    相关实体
+    相关概念
+    深度分析
+    实践启示
+```
+
 ## 概述
 
 本文由 Creative Boom 撰稿人 Tom May 于 2026 年 5 月 7 日发表，深入分析了 Eat Marketing 为百年咖啡品牌 Stokes Coffee 进行的品牌重塑项目。该 rebrand 获得了高度评价，被认为是在传承与现代化之间取得精妙平衡的典范。

@@ -6,6 +6,21 @@
 
 # AI Teammates: How monday.com Runs Production AI Agents on Amazon Bedrock
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Teammates: How monday.com…"))
+    Overview
+    Three Levels of AI Engi…
+    Architecture: Sphera Ag…
+    State, Memory and Sessions
+    Five Production Retrofits
+    Morphex: Fully Autonomo…
+    Source
+```
+
 ## Overview
 
 AWS blog post (2026-07-22) by Claudio Mazzoni, Ofek Dayan, Netanel Abergel, Moran Zilberstein, and Erez Drutin sharing monday.com's production architecture for running AI agents on Amazon Bedrock at scale. Nine in ten Builders use AI coding tools monthly; per-engineer PR throughput is up by more than half.

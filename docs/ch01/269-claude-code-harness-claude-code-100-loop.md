@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 14.9KB | `entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 之父最新访谈：编程已经结束、ha…"))
+    相关资源
+    关于 Boris Cherny
+    Claude Code 的诞生
+    编程已经解决了
+    手机就是工位
+    Loop 才是未来
+    人人都写代码
+    AI 时代的护城河
+```
+
 ## 核心要点
 - **Boris Cherny** 是 Claude Code 的创造者，2024 年 9 月加入 Anthropic Labs 孵化团队
 - 2025 年 10 月起模型已能写 100% 代码，Boris 本人从 2026 年起不再手写代码

@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cola DLM：字节跳动连续潜空间扩散语言模型"))
+    深度分析
+      为什么'Token ≠ 语义'是一个暴论
+      Cola DLM 的生成模型分两段
+      关键创新一：Text VAE——latent …
+      关键创新二：block-causal DiT …
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 字节跳动 Seed 团队发布的 **Cola DLM（Continuous Latent Diffusion Language Model）** 是 2026 年 LLM 架构探索的标志性工作。其核心主张是「**Token ≠ 语义，表征（Representation）才是主角**」——把语言生成从"恢复 token"升级为"transport latent prior"。在 ~2B 参数、约 2000 EFLOPs 的严格对照实验中，Cola DLM 展现出比自回归模型和主流离散 DLM **更稳定的 scaling 趋势**。项目以"开源到底"方式释出论文、代码、模型权重和中文博客。

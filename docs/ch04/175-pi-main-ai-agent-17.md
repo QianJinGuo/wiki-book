@@ -6,6 +6,33 @@
 
 [Pi Main Agent Engineering 17 Dimensions](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-main-agent-engineering-17-dimensions.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从 pi-main 源码拆解：顶尖 AI Agent 的…"))
+    核心设计原则：轻核心、重扩展
+    17 个工程维度
+      1. 任务规划：单体优先
+      2. 核心主循环：双层 while
+      3. 反思纠错：isError 统一返回结构
+      4. 工具系统三件事
+    设计对照表
+    深度分析
+      双层 while 架构：分离'会话终止'与'本…
+      isError 统一返回：让 LLM 自己驱动纠错
+      JSONL 事件流是工程可靠性的基石
+      记忆压缩的迭代更新比全量重写节省 50%+ T…
+    实践启示
+      Agent 工程设计的最小必要集合
+      从第一天就要建立 Golden Set
+      Token 费用追踪的最小实现
+      多模态优雅降级的检查清单
+    相关页面
+    相关实体
+```
+
 ## 核心设计原则：轻核心、重扩展
 pi 的设计哲学很简单：**核心引擎只做最小必要的事情，复杂能力通过 Extension API 交给插件。** 把核心做轻，稳定性才有保障；把扩展口留足，未来演进不需要重构。
 

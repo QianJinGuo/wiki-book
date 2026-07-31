@@ -8,6 +8,30 @@
 
 > 南京大学 NLP 实验室的 ICML 2026 论文《Recognize Your Orchestrator: An Entropy Dynamics Perspective for LLM Multi-Agent Systems》揭示了多智能体系统中的核心瓶颈并非执行器（Executor）的能力不足，而是调度中枢（Orchestrator）在长链路任务中逐步失去对任务的掌控。论文提出了 Mean-Field Entropy Dynamics 框架和 IWG（Inverse Workflow Generation）方法，为多智能体系统的过程级评估提供了理论视角和可验证数据基础。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ICML 2026｜如何对Multi-Agent系统进行…"))
+    研究背景：多智能体系统评估的盲区
+      Orchestrator-Executor 架…
+      传统评估的局限
+    方法论
+      调度熵：量化 Orchestrator 的不确定性
+      IWG：让过程变得可检查
+    核心发现
+      发现一：System-Level 与 Orch…
+      发现二：不同模型有不同的调度风格
+      发现三：Reasoning Trap
+    深度分析
+      从'执行能力'到'调度能力'的范式转移
+      Reasoning Trap 的深层启示
+      熵动力学作为系统健康指标
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 多智能体系统正成为大模型应用的主流范式，但"AI 团队真的会协作吗"这一问题长期缺乏系统性的评估方法。这篇来自南京大学的 ICML 2026 论文得出了一个反直觉的核心结论：**多智能体系统的失败并非首先来自某个执行器不会干活，而是来自负责全局调度的 Orchestrator 逐渐失去对任务的掌控**。论文引入"调度熵"概念，用熵动力学刻画 Orchestrator 的行为退化过程，并提出了 IWG 方法——一种从目标答案反向构造可验证交互环境的评估技术。此外，论文还发现了 Reasoning Trap 现象：重推理模型在多智能体调度场景中未必占优势，思考越长反而可能调度越不稳定。

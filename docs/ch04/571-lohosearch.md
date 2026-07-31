@@ -10,6 +10,19 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-lohosearch-search-agent-benchmark-knowledge-graph-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LoHoSearch — 下一代搜索智能体评测基准"))
+    背景：基准饱和与知识图谱出题
+    构建流程
+    关键发现
+    意义与开源
+    相关实体
+```
+
 ## 背景：基准饱和与知识图谱出题
 
 在 BrowseComp 等现有评测上，顶尖模型准确率已从最初的 30% 区间迅速攀升至 90% 以上，区分度持续递减。BrowseComp 题目由人工设计，局限在于只能基于标注者已知的实体和关系构思，无法从全局知识网络判断题目的真实难度。

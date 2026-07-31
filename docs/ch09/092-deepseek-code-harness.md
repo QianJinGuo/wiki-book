@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/deepseek-code-harness.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek Code Harness"))
+    Overview
+    背景：Claude Code 定义上限，但中国…
+    DeepSeek 招聘详情
+    核心公式：Model + Harness = …
+    关键数据：Harness 的决定性作用
+    Anthropic 模型+Harness 共同…
+    长时运行能力：区分'会写代码'和'能完成任务'
+    DeepSeek 的机会与挑战
+```
+
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
 

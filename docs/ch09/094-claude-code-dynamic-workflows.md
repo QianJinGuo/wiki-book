@@ -8,6 +8,21 @@
 
 > **Background**: Anthropic Claude Code 团队的 Thariq Shihipar 和 Sid Bidasaria 分享了 Dynamic Workflows 的实战经验——让 Claude 为每个任务临时编写专属 harness 的 JavaScript 协调机制。模型够强（Claude Opus 4.8）后，不再需要为每个用例写静态 harness，直接让 Claude 现场生成。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code Dynamic Workflow…"))
+    深度分析
+      静态 vs 动态 Harness 的范式转变
+      锦标赛模式的工程洞察
+      隔离区模式的安全价值
+      Token 预算的工程必要性
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Claude Code Dynamic Workflows 是一种让模型为每个任务动态生成执行框架（harness）的范式。核心机制是执行一个 JavaScript 文件，其中包含特殊函数来生成和协调多个 subagent——每个 subagent 有独立上下文窗口、目标聚焦和彼此隔离。文章系统介绍了 3 大失败模式（智能体惰性、自我偏好偏差、目标漂移）、6 大基础模式（分类执行、扇出汇总、对抗校验等）、11 个实战用例和 5 大构建技巧。

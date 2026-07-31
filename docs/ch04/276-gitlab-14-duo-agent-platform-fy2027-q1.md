@@ -6,6 +6,30 @@
 
 # GitLab 14% 裁员 + Duo Agent Platform 扩张
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitLab 14% 裁员 + Duo Agent Pl…"))
+    概览
+    深度分析
+      1. 裁员+AI 平台扩张的信号矛盾
+      2. DevOps 平台的 AI 化是结构性趋势
+      3. Agent 治理框架的早期信号
+      4. 裁员对开源社区的影响
+    实践启示
+      1. DevOps 从业者：评估你的工作可自动…
+      2. 组织：不要只裁员不加 AI 能力
+      3. GitLab 用户：评估 Duo Age…
+      4. 开源社区：关注 GitLab CE 的维…
+    相关实体
+    重组 4 项调整
+    智能体倒逼基础设施
+    '精神失常的实习生' — 行业金句
+    GitLab Duo Agent Platform
+```
+
 ## 概览
 
 GitLab 裁减约 14% 员工（~350 人），同时宣布 FY2027 Q1 营收同比 +23% 远超预期。**重组不是为了利润率，是被"智能体"逼到极限**。

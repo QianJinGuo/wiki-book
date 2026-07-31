@@ -6,6 +6,21 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-token-degradation-jiqia.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Token 退化问题：分词器与后训练数据分布失配"))
+    核心概念
+    深度分析
+      退化本质：lm_head 而非 embedding
+      向量空间挤压机制详解
+      日语退化 29.7% 的根因分析
+      SEO 垃圾词的 token 退化：预训练广度…
+    来源
+```
+
 ## 核心概念
 Token 退化（Token Degradation）：大模型在后训练阶段，由于 SFT 数据对词表覆盖不足，导致部分 token 的 lm_head 输出参数发生显著漂移，模型丧失生成这些 token 的能力。
 

@@ -8,6 +8,23 @@
 
 Stack Overflow 文章，将制造业的约束理论（Theory of Constraints）应用于 AI 编程工具时代。核心论点：当代码生成不再是瓶颈时，组织流程中的其他环节成为新的约束。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The New Bottleneck: Theory o…"))
+    核心框架：从代码生成到流程瓶颈
+      1. 需求与构思（Ideation and Req…
+      2. 设计交接（Design Handoffs）
+      3. 审查与判断（Review and Judgm…
+      4. 跨职能协调（Cross-function…
+    为什么流程变革如此困难
+    实践建议
+    与 Harness Engineering 的关联
+    相关实体
+```
+
 ## 核心框架：从代码生成到流程瓶颈
 
 **旧约束**：代码编写是软件开发的主要瓶颈。敏捷、冲刺、故事点、速度跟踪——所有这些组织基础设施都是为管理这一约束而设计的。

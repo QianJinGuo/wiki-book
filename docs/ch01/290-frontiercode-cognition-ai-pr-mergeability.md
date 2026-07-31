@@ -10,6 +10,32 @@
 >
 > 原文：→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/frontier-code-cognition-mergeability-benchmark.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FrontierCode — Cognition AI …"))
+    一句话总结
+    三个独有贡献（不应合并到现有 entity）
+      1. **Mergeability 范式：第一…
+      2. **三种新颖评分方法**
+      3. **20+ 旗舰开源项目维护者亲建, 4…
+    实验结果（最 unsaturated）
+    与现有 wiki 实体差异化
+    关键技术细节
+      6 维度评分方法
+      Rubric Hardening Pipeline
+      任务规模
+    上线状态
+    深度分析
+      1. Mergeability 范式代表编码评…
+      2. reverse-classical 是'…
+      3. mutagent 解决了 LLM-as-…
+      4. Maintainer-rubric 是'…
+    实践启示
+```
+
 ## 一句话总结
 
 **FrontierCode = "20+ 旗舰开源项目维护者共建的 PR mergeability 评估基准"**。与 SWE-Bench Pro 关注"功能正确"不同, FrontierCode 测的是"maintainer 看完你的 PR 会不会合并"——六维度评分 (correctness / regression / cleanliness / test quality / scope / code quality), 维护者亲自写 rubric 40+ 小时/任务, 实证误判率比 SWE-Bench Pro **低 81%**。

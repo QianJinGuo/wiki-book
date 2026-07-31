@@ -6,6 +6,24 @@
 
 # Loop Engineering 会是 AI 的下个关键词吗？
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering 会是 AI 的下个关键…"))
+    深度分析
+      从 Harness 到 Loop：工程范式转移…
+      Loop Engineering 的「非共识」…
+      Token 经济学的核心矛盾
+      可观测性的丧失与恢复
+    实践启示
+    延伸：Graph Engineering — …
+      四类边
+      窄图落地路径
+    相关实体
+```
+
 ## 摘要
 
 2026 年上半年，Harness Engineering 完成行业普及后，业界开始将目光转向更为激进的工程范式——**Loop Engineering**。与 Harness 强调的 Agent 系统构建不同，Loop Engineering 关注的是通过持续反馈闭环实现 Agent 自主迭代运行的能力。Anthropic Claude Code 负责人 Boris Cherny、NVIDIA CEO 黄仁勋、DeepLearning.AI 创始人吴恩达等核心人物在 2026 年 6 月密集发声，推动该概念快速破圈。然而，业界对其是否构成实质性技术进步仍存在激烈争议。

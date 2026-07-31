@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/agentcore-harness.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentCore Managed Harness"))
+    Overview
+    核心概念：Harness Engineering
+    相关查询
+    AgentCore Managed Harne…
+      1. 模型随便换
+      2. 工具即插即用
+      3. Skills 按需加载
+      4. 自定义执行环境
+    三步开始
+    AgentCore vs 自建 Harness
+    关联分析
+    深度分析
+      1. 为什么 Harness Engineer…
+      2. Firecracker microVM …
+      3. Strands Agents 开源策略的…
+      4. 按用量计费的经济逻辑
+```
+
 ## Overview
 亚马逊云科技 2026 年 4 月 24 日正式发布的托管 Harness 平台。核心理念：**你告诉 Agent 做什么，平台托管其余一切**。
 

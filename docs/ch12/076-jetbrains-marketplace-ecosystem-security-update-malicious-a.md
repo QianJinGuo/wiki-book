@@ -8,6 +8,25 @@
 
 2026-06-16, JetBrains received security reports: 15 third-party plugins on JetBrains Marketplace were stealing developer-configured AI Provider API Keys. These plugins masqueraded as legitimate AI tools (text generation, unit testing) but executed unauthorized backend functions when users entered API keys and clicked "Apply".
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("JetBrains Marketplace Ecosys…"))
+    Attack Chain
+      Vector
+      Exfiltration Mechanism
+      Response
+    AI Agent Security Impli…
+      Developer Tool Supply C…
+      API Key Management Best…
+      Marketplace Security Me…
+    Related Supply Chain In…
+    深度分析
+    实践启示
+```
+
 ## Attack Chain
 
 ```mermaid

@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/kimi-attention-residuals-preNorm-dilution-block-attnres.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kimi Attention Residuals（Att…"))
+    一句话总结
+    核心洞察
+      问题：PreNorm 稀释
+      解法：AttnRes
+      工程折中：Block AttnRes
+    关键数据
+    技术要点
+    深度分析
+      PreNorm 稀释的数学本质
+      AttnRes 的选择性路由机制
+      Block 折中的边界效益分析
+      与既有工作的对比
+    实践启示
+    与既有知识库内容的互补
+    相关实体
+```
+
 ## 一句话总结
 Kimi 提出 Attention Residuals 机制：用注意力机制让每层自己选择关注哪些前驱层，替代残差连接的固定等权累加，解决 PreNorm 稀释问题，实现 **1.25x 算力节省**，48B 模型 12 个 benchmark 全部提升。
 ---

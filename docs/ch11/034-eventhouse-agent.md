@@ -41,6 +41,26 @@ graph TB
 
 > 📊 Level ⭐⭐ | 14.5KB | `entities/alibaba-eventhouse-enterprise-agent-context.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里云 EventHouse 企业级 Agent 上下文…"))
+    为什么 AI Coding 先跑通，行业 Ag…
+    五维框架详解
+      维度一：信息完备性——让 Agent 看见真实…
+      维度二：统一 Catalog——信息的'图书馆…
+      维度三：知识对账（Knowledge Wiki…
+      维度四：变更治理——CI/CD 思维管 Age…
+    核心判断与行业意义
+    深度分析
+    实践启示
+    相关概念
+    第 2 来源 — 阿里云 EventHouse…
+    相关实体
+```
+
 ## 为什么 AI Coding 先跑通，行业 Agent 落地难
 
 AI Coding 能率先在生产环境奏效，原因是程序员的整个工作流本身就是高度数字化的——PRD、设计文档、技术方案、代码、Issue、日志全部以数字形式存在，Agent 输入端有充足且高质量的上下文，输出端直接完成 Design/Coding/Test/Deploy 的闭环。

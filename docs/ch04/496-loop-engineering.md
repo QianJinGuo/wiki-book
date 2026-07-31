@@ -8,6 +8,27 @@
 
 > 文章 "Loop Engineering 实战：实现从日志扫描到预发部署的全自主闭环" (阿里云开发者, 2026-07-07) 的实体整理。阿里云 AI 云诊断系统的完整 Loop Engineering 实现。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("阿里云 Loop Engineering 实战：日志扫描…"))
+    核心数据
+    三大主线
+      1. 日志分析自主挖 Bug
+      2. Bug 自主修复闭环
+      3. 一条指令触发全流程
+    收益总结
+    深度分析
+      Loop Engineering 的本质：生成…
+      四代 AI 工程化范式演进
+      生产级落地的六层独立验证体系
+      Connectors 建设是 Loop 的先决条件
+    实践启示
+    与已有实体的关系
+```
+
 ## 核心数据
 
 | 指标 | Before | After | 变化 |

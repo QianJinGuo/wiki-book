@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐ | 4.7KB | `entities/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Self-Filming Guide by Hello …"))
+    深度分析
+      专业级手机拍摄的民主化趋势
+      灯光作为叙事语言
+      音频优先原则
+      表演张力：Mad Men 式的传递
+    实践启示
+      设备配置清单（iPhone）
+      布光五步法
+      设备推荐
+      自拍表演检查清单
+    相关实体
+```
+
 ## 核心要点
 - Hello World Media 是一家端到端视频创意工作室，为科技公司和消费品牌制作电影级商业视频
 - 自拍视频两大最关键要素：**灯光（lighting）和音频（audio）**，story 之外最重要的质量因素

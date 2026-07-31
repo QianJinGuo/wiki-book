@@ -34,6 +34,25 @@ It is important to remind yourself that there have been no walls in progress to 
 
 [Share](<https://www.interconnects.ai/p/the-next-phase-of-open-models?utm_source=substack&utm_medium=email&utm_content=share&action=share>)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What comes next with open mo…"))
+    The balance of power in…
+    Open weights as part of…
+    Still looking for open …
+    Open models that are sp…
+    Models vs. ecosystems.
+    深度分析
+      三层模型架构的战略意涵
+      蒸馏困境与护城河重塑
+      垂直整合与开放系统的张力
+      生态构建 vs. 单点突破
+    实践启示
+```
+
 ## The balance of power in open vs. closed models
 
 The fair assessment of the open-closed gap is that [open models have always been 6-18 months behind the best closed models](<https://www.interconnects.ai/p/open-models-in-perpetual-catch-up>). It is a remarkable testament to the open labs, operating on far smaller budgets, that this has stayed so stable. Many top analysts like myself are bewildered by the way the gap isn't bigger. Distillation helps a bit in quality, benchmaxing more than closed labs helps perceptions, but the progress of the leading open models is flat out remarkable. 

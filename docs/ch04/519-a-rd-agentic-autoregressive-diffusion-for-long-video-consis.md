@@ -6,6 +6,27 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a2rd-agentic-autoregressive-diffusion-long-video.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A²RD: Agentic Autoregressive…"))
+    Summary
+    Key Points
+    深度分析
+      核心创新：解耦创作与一致性
+      三支柱架构
+      两阶段工作流
+      LVBench-C 基准测试
+    实践启示
+      对于视频生成研究者
+      对于 Agent 系统设计者
+      对于工程落地
+    相关
+    相关实体
+```
+
 ## Summary
 *A²RD (Agentic Autoregressive Diffusion) — a method for long video consistency using agentic autoregressive diffusion models.*
 

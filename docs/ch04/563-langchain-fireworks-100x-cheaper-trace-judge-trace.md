@@ -8,6 +8,30 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LangChain × Fireworks 100x C…"))
+    背景
+    核心概念：Perceived Error（感知…
+      定义
+      通用性主张
+      信号来源
+      输出格式
+    数据集构建
+      来源
+      多样性保证
+    100x Cheaper 关键
+      微调策略
+      通用化验证
+    实践启示
+    适用场景
+    原文链接
+    相关实体
+```
+
 ## 背景
 
 LangChain 与 Fireworks 合作，**针对 trace 评估场景对 Qwen judge 模型进行微调，实现 100x 成本降低**。文章 2026-06-16 发布于 LangChain Blog。

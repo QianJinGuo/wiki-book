@@ -4,6 +4,36 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/blogs.nvidia.com-vera-cpu-delivery.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vera Arrives: NVIDIA's First…"))
+    背景与定位
+    技术规格与设计理念
+    首批交付详情
+      Anthropic
+      OpenAI
+      SpaceXAI
+      Oracle Cloud Infrastruc…
+    在 NVIDIA 平台中的位置
+    行业意义
+    深度分析
+      架构创新的市场逻辑
+      合作伙伴选择的战略意图
+      竞争格局与市场信号
+      技术护城河分析
+    实践启示
+      对 AI 基础设施选型的启示
+      对云厂商战略的参考
+      对 AI 代理架构设计的建议
+    第 2 来源 — Vera Rubin 平台性…
+      芯片与系统架构
+      网络与互联
+      开放生态与部署
+```
+
 ## 核心要点
 - **发布背景**：NVIDIA 创始人兼 CEO Jensen Huang 在 2026 年 3 月 GTC San Jose 上正式发布 Vera CPU，这是 NVIDIA 首个独立 CPU 产品线，被定位为下一个数十亿美元业务
 - **首批交付对象**：Anthropic（旧金山）、OpenAI（Mission Bay）、SpaceXAI（帕洛阿尔托）、Oracle Cloud Infrastructure（圣克拉拉），均由 NVIDIA VP Ian Buck 亲自送货上门

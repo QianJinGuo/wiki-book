@@ -14,6 +14,21 @@
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("FastAPI 之父的 PydanticAI 是真的夯！"))
+    深度分析
+      类型合约：从'建议'到'执行'的范式转变
+      ModelRetry 作为控制流信号
+      provider 抽象的层次与取舍
+      与 CrewAI/LangGraph 的边界对照
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 PydanticAI 是 FastAPI 创始人 Samuel Colvin 打造的 Agent 框架，核心思想是将类型系统引入 Agent 输出校验。不同于传统方法用 prompt 引导模型输出结构化数据，PydanticAI 通过声明输出类型（Pydantic model）让框架自动校验并强制重试，从根本上解决 LLM 输出字段漂移和类型不稳定的问题。该框架基于三节点有向图（UserPromptNode → ModelRequestNode → CallToolsNode）执行，支持 25+ LLM provider，并提供 UsageLimits 硬截断保护。对于需要可靠结构化输出的单 Agent 场景，PydanticAI 是目前最务实的选择。

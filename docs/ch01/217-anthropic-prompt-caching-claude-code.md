@@ -10,6 +10,22 @@
 Anthropic 的工程师们写了篇技术博客，标题是：构建 Claude Code 的经验教训：Prompt Caching 就是一切。
 Claude Code 是目前最受欢迎的 AI 编程工具之一，而支撑它流畅运行的底层秘密，其实就藏在「缓存」这两个字里。这篇博客一共讲了 7 条经验，条条都是踩坑踩出来的。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 最新博客：Prompt Cachin…"))
+    01 缓存即基建
+    02 排好队形
+    03 别动 Prompt
+    04 别换模型
+    05 别碰工具
+    06 Plan Mode
+    07 延迟加载
+    08 压缩的学问（Cache-Safe For…
+```
+
 ## 01 缓存即基建
 Anthropic 内部把 Prompt Cache 的命中率当作基础设施级别的指标来监控，地位跟服务器 uptime 差不多。一旦命中率下降，就会触发 oncall 告警，工程师得像处理线上事故一样去排查。
 换句话说，缓存在 Claude Code 里，并非锦上添花的优化，而是整个系统能跑起来的前提。

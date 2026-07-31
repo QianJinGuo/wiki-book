@@ -18,6 +18,15 @@ The [Amazon Bedrock Model Profiler](<https://github.com/aws-samples/sample-bedro
 
 In this post, you’ll learn what the Model Profiler provides, the real-world scenarios it supports, and how to deploy it in your own environment in under five minutes.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Simplify model selection in …"))
+    Solution overview
+```
+
 ## Solution overview
 
 ```mermaid

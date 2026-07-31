@@ -9,6 +9,25 @@
 
 **Rein** 是一个 Go agent 框架，用 **4 个模块 + 5 条类型边界 + 7 个不变量** 解决"agent.go 200 行 → 3000 行"的问题。核心思路：**模块之间的数据契约定义清楚 = 防止上帝文件**。每条数据流都对应一个**严格类型 + 单一职责 + 不可见字段**。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Rein：4 模块 + 5 类型边界防止 agent.g…"))
+    相关实体
+    一句话定位
+    核心问题
+    4 模块分工
+    5 条类型边界（数据契约）
+    7 个不变量（核心循环的'宪法'）
+    三大核心设计模式
+      1. ToolSpec vs Tool（安全边…
+      2. Provider 流式 = 同步（等价性…
+      3. 投影式压缩（Context 不改写历史）
+    18 个 Option 的安全默认
+```
+
 ## 相关实体
 - [Youre Building Agent Security In The Wrong Order](../ch03/035-agent.html)
 

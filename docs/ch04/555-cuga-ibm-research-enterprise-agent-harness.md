@@ -8,6 +8,26 @@
 
 > **Background**: Based on IBM Research's CUGA (Configurable Generalist Agent) technical blog published on HuggingFace, analyzing the framework's architecture, core components, and 24 practical examples.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CUGA: IBM Research Enterpris…"))
+    Core Positioning
+    Architecture
+      Tool Layer
+      State Management Layer
+      Guardrails Layer
+      Orchestration Layer
+    24 Working Examples
+    Differentiation from Ex…
+    Unique Value
+    Use Cases
+    Limitations
+    Three Unique Contributi…
+```
+
 ## Core Positioning
 
 CUGA (Configurable Generalist Agent) is IBM Research's **enterprise-grade Agent Harness**. Its positioning: a universal agent framework that works with a single `pip install`. Core philosophy: **building agents is mostly plumbing** — tool registration, state management, guardrail configuration, single-agent to multi-agent scaling — CUGA packages all of this, so developers only need to write a tool list and a prompt.

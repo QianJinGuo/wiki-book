@@ -6,6 +6,21 @@
 
 # Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix 分层通知系统：Thinking Fast…"))
+    深度分析
+      与 Kahneman 理论的对应关系
+      频率与质量解耦的工程价值
+      稀疏负反馈的处理策略
+      实验结果
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

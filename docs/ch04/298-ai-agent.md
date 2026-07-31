@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 9.1KB | `entities/十年老技术开发的-ai-agent-探索之路-v2.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("十年老技术开发的 AI Agent 探索之路"))
+    相关实体
+    深度分析
+      范式转移：人是瓶颈，但解决方式不是替代人
+      决策层级：代码优先于 Prompt，能在下层解…
+      Vibe Coding 的陷阱：先易后难，以十…
+      脚手架重于模型：投入回报的实证结论
+    实践启示
+      工程建议汇总
+      核心认知一句话
+```
+
 ## 相关实体
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)

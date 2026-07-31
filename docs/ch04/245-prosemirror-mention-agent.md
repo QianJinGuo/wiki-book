@@ -11,6 +11,25 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ProseMirror @文档 mention：知识库 …"))
+    核心命题
+    为什么不用 DOM 方案
+    三个关键设计决策
+      决策 1：Schema 拆成三件套（不是两件套）
+      决策 2：原子 + 不可变 = docref …
+      决策 3：临时态用 Decoration，**…
+    交互三阶段（事务边界内可控）
+    Suggestion = '插件中的插件'
+    5 条工程教训
+    主链路闭环 vs 经验修补
+    适用场景
+```
+
 ## 核心命题
 **@文档 表面是"输入 @ 后选一个文档"，实则是编辑器稳定性的工程问题**。当交互从"插得进去"变成"一直稳定"，抽象层级必须从裸 `contenteditable` 提升到 ProseMirror 这类不可变文档模型。
 

@@ -6,6 +6,22 @@
 
 # AI Infra 入门干货总结：大模型是如何高效推理的
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Infra 入门干货总结：大模型是如何高效推理的"))
+    深度分析
+      1. 批处理本质与 LLM 的核心矛盾
+      2. 连续批处理 Continuous Ba…
+      3. Paged Attention 的物理布…
+      4. Transformer Block 内部…
+    实践启示
+    相关实体
+      补充：HuggingFace Jobs 一键部…
+```
+
 ## 摘要
 
 腾讯工程师 binnnliu 深入阅读 vLLM 源码后的总结文章，以 Llama 3 为例追踪推理过程中每步 Tensor 维度变化。文章拆解了 LLM 推理的 6 个阶段（Tokenize → Embedding → Transformer Block → FFN → LM Head → Sampling）和两大高性能推理支柱（Continuous Batching + Paged Attention），并解释了 FlashAttention / RoPE / GQA 等关键优化的物理实现。

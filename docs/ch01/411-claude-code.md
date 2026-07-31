@@ -6,6 +6,34 @@
 
 [Claude Code 工具设计复盘（官方）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-design-evolution-anthropic.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 工具设计复盘（官方）"))
+    相关查询
+    文章核心
+    一、AskUserQuestion 工具：三次迭代
+      第一次尝试：ExitTool 加参数
+      第二次尝试：修改输出格式（Markdown b…
+      第三次尝试：AskUserQuestion 独…
+    二、TodoWrite → Task：从线性清…
+      TodoWrite 时代
+      Task 工具（替代 TodoWrite）
+    三、上下文构建：RAG → Grep（让 Cl…
+      RAG 时代的问题
+      Grep 工具：Claude 自己构建上下文
+      延伸原则
+    核心设计原则
+      1. 工具必须适配模型当前能力
+      2. 只支持少量能力相近的模型
+      3. Claude 喜欢调用是成功的关键
+      4. 工具的最终形态不是永久的
+    深度分析
+    实践启示
+```
+
 ## 相关查询
 
 - [Claude Code 生态系统研究](https://github.com/QianJinGuo/wiki/blob/main/queries/claude-code-ecosystem-research.md) — Claude Code 核心组件、Skill 系统、MCP 协议与企业级扩展路径

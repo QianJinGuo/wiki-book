@@ -8,6 +8,21 @@
 
 > **来源**: [https://penpot.app/blog/designing-with-ai-why-claude-design-is-not-the-future-of-enterprise-design/](https://penpot.app/blog/designing-with-ai-why-claude-design-is-not-the-future-of-enterprise-design/)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Designing with AI: Why Claud…"))
+    深度分析
+      AI 设计工具的光谱
+      MCP 作为设计-开发桥梁
+      对 Jim Nielsen 设计哲学ht…
+      开放 vs 封闭的生态之争
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Penpot 的这篇分析文章系统性地拆解了 Claude Design 作为企业设计工具的局限性。Claude Design 是一款基于 Anthropic 模型的 prompt 驱动界面生成工具，在快速原型和早期概念化方面表现出色，但在四个关键维度上无法满足企业需求：数据归属（数据存储在 Anthropic 的专有生态中）、供应商锁定（设计层而非仅 SaaS 层的锁定）、开发流程互操作性差、缺乏专业设计深度（无法创建组件库、design tokens 和系统治理）。Penpot 的立场是：AI 应作为现有设计基础设施之上的集成层，而非替代品——通过开放标准和 MCP 协议实现 AI 与设计系统的双向连接。

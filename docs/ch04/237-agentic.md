@@ -6,6 +6,26 @@
 
 # 火山引擎发布 Agentic 全栈数据管理服务
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("火山引擎发布 Agentic 全栈数据管理服务"))
+    技术架构
+      ContextSearch：从 RAG 到 A…
+      Mem0：Agent 长期记忆的「经验自进化循环」
+      Supabase：AI 原生 BaaS 平台的…
+      Milvus 向量数据库增强
+    深度分析
+      1. 数据基础设施从「被动存储」到「主动服务」…
+      2. Agent 负载特征对数据库架构的技术挑战
+      3. 「记忆」成为 Agent 数据基础设施的…
+      4. 安全可控是 Agent 数据库操作的核心前提
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 火山引擎 FORCE 原动力大会 SUMMER 上，火山引擎正式发布「Agentic Data Management and Services」产品体系，将传统数据库能力扩展至 AI Agent 时代的数据底座。核心产品升级涵盖 ContextSearch 智能检索、Mem0 任务记忆与图记忆、Supabase AI 原生 BaaS 平台 GA、Milvus 向量数据库增强以及 DBCopilot 智能数据库助手五大方向，标志着数据库基础设施正从「Human + Application」消费主体全面迈向「AI + Agent + Application + Human」四元消费结构。

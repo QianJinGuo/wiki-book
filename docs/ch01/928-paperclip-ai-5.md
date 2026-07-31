@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/hermes-agent-newbie-guide-dotta.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Paperclip · AI 公司操作系统 · 第 5 …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 本文的核心洞见在于厘清了一个常见误解：Hermes 不是另一个 AI 模型，而是一个 Agent 容器系统。 作者用"模型是大脑，Hermes 是工作台"这一类比精妙地描述了二者的关系——模型（Claude、GPT、DeepSeek）负责推理和生成，而 Hermes 负责将这些模型接入长期运行的 Agent 系统。这个认知框架对于理解 Agent 架构的本质至关重要：模型是能力层，Harness 是调度层。

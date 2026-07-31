@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/four-sub-agent-patterns-2026.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 如何管理其他 Agent：四种 Sub Ag…"))
+    深度分析
+      '由低到高'的本质是控制粒度，而非能力升级
+      模式 1（内联工具）应当是默认起点
+      模式 2 的'启动-等待分离'是真正的并发范式
+      模式 3（Agent Pool）的关键是'跨轮…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 主 Agent 调度子 Agent 的四种模式，按对子 Agent 生命周期的控制程度由低到高：**内联工具**（call_agent，函数调用语义）→ **Fan-Out**（spawn + wait，批量并行）→ **Agent Pool**（spawn + send_message + list + kill，跨轮次持久）→ **Teams**（Agent 间直接互发消息，主 Agent 退到监督位）。每升一级对模型能力、工程复杂度、Debug 难度都显著抬升。

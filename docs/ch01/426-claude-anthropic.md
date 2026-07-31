@@ -6,6 +6,21 @@
 
 # 全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("全网骂Claude变笨，Anthropic下场揭秘：坑你…"))
+    深度分析
+      Effort 机制的技术本质
+      模型能力与 Effort 的协同效应
+      2026 年 3 月'变笨'危机的深层教训
+      从'模型排行榜'到'调度能力'的范式转变
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 年 3 月，大量 Claude Code 用户报告模型"变笨"——该读的文件不读、该跑的测试不跑、任务干到一半就撂挑子。AMD AI 负责人 Stella Laurenzo 分析 6852 个会话日志发现 Claude 的思考量较 2 月之前下降了 67%。Anthropic 官方事后澄清：问题根源不在模型能力退化，而是 **Effort（努力度）的默认设置从 high 被降到了 medium**。Anthropic 提出了 Model（模型 = 大脑/能力）与 Effort（态度/投入度）的核心区分框架，并指出：小模型开高 Effort 完全可能干翻大模型开低 Effort。

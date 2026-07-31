@@ -6,6 +6,19 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The UI is dead, long live th…"))
+    技术细节
+    行业意义
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - ServiceNow 正在转型为 headless、agentic 架构
 - 将核心能力通过 API 暴露，支持第三方开发者嵌入

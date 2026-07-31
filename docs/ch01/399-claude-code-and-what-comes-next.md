@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-and-what-comes-next.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code and What Comes N…"))
+    深度分析
+      1. 能力跃迁的工程基础
+      2. 上下文压缩——突破 LLM 内存限制的关键
+      3. Skills——按需加载的指令 + 工具
+      4. Subagents 的'团队化'模式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Ethan Mollick 用一个真实实验展示 Claude Code 的能力跃迁：给一句"开发一个能月入 $1000 的软件创业项目，你来做所有事"，Claude Code 自主工作 1 小时 14 分钟，生成了数百个代码文件、500 个 prompts、还部署了能收款的工作网站（已下线）。本文核心是揭示 Claude Code 背后**agentic harness 范式**的三个核心机制：**上下文压缩**（context compaction）、**Skills**（按需加载指令+工具）、**Subagents**（专项 AI 分包），以及把它们粘合起来的 **MCP** 协议。Karpathy 称"我从未感觉自己作为程序员这么落后"——本文是这一论断的实证。

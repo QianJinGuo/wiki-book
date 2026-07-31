@@ -8,6 +8,21 @@
 
 > 本文来源：AWS China Blog
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("如何利用 AgentCore + OpenViking …"))
+    深度分析
+      1. Agent 记忆系统的核心矛盾与解决思路
+      2. AgentCore Memory 与 O…
+      3. 两种集成方案的适用场景
+      4. 记忆系统选型的四个决策维度
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文来自 AWS 官方博客，详细介绍了如何利用 AWS Bedrock AgentCore 结合开源上下文数据库 OpenViking 快速搭建具备高效记忆的 Agent。方案覆盖 Agent 记忆系统的选型分析、两种集成架构（Token 效率优先 vs Agent 自进化优先），并提供了完整的核心代码实现。Agent 记忆系统的核心挑战是：在有限的 Context 窗口中注入最相关的历史信息，以最小 Token 成本获得最高的任务执行成功率。

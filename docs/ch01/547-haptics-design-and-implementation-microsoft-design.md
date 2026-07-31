@@ -6,6 +6,20 @@
 
 # Haptics Design and Implementation — Microsoft Windows 11
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Haptics design and implement…"))
+    深度分析
+      技术实现架构
+      代码实现模式
+      与游戏触觉的对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 微软在 Windows 11 中引入了系统级触觉反馈支持，通过 `InputHapticsManager` API 为应用提供一致的触觉体验。文章定义了一套标准化的「触觉语言」（Haptic Language），基于波形参数（强度、衰减、锐度）建立了一套可跨设备复用的交互反馈体系。这是数字交互设计中长期被忽视的「第三感知通道」——在视觉和听觉之外，触觉终于有了系统级的设计规范和实现路径。

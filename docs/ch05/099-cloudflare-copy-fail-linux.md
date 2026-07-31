@@ -6,6 +6,24 @@
 
 # Cloudflare Copy Fail Linux 内核漏洞应急响应
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cloudflare Copy Fail Linux 内…"))
+    概述
+    漏洞机制
+      AF_ALG + Page Cache 交互缺陷
+      攻击链
+    Cloudflare 应急响应 Harness
+      时间线（48 小时闭环）
+      三层防御架构
+      Harness 工程亮点
+    对 Harness Engineering 的启示
+    相关主题
+```
+
 ## 概述
 
 CVE-2026-31431（代号 "Copy Fail"）是一个 Linux 内核本地提权漏洞，2026-04-29 公开披露。Cloudflare 安全团队在 48 小时内完成了从检测到全量缓解的闭环，展示了大规模基础设施的安全运维 harness。

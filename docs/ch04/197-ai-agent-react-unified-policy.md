@@ -6,6 +6,22 @@
 
 # 火山引擎 AI 搜索千万级 Agent 架构演进与实践：从 ReAct 三节点到 Unified Policy
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("火山引擎 AI 搜索千万级 Agent 架构演进与实践：…"))
+    深度分析
+      ReAct 架构的三重原罪：企业级生产环境的照妖镜
+      Workflow + Agent 分层的哲学：…
+      Unified Policy 的设计哲学：从议…
+      Context Manager：被低估但最硬核…
+    实践启示
+    相关实体
+    第 1 来源 — 30 分钟搞定个人情报站：V…
+```
+
 ## 摘要
 
 火山引擎 AI 搜索团队在应对千万级并发企业级生产环境时，发现传统 ReAct 架构暴露出节点臃肿、延迟极高、状态管理混乱的致命缺陷。他们提出了 **Workflow + Unified Policy Agent（UP-ReAct）** 架构，将系统一分为二：确定性归 Workflow（风控校验、意图路由、基础检索等固定流程），动态决策归 Agent（仅基于收敛后的上下文决定下一步动作）。核心创新是 Unified Policy 节点——将 Thought、Action、Iteration 三个散装节点统一收敛为单一 Policy 节点，单次前向传递即可完成全局规划、动作选择与终止判定。实测结果显示：首字返回时间（TTFT）从 14.0s 骤降至 9.8s（降幅 30.22%），对话综合评分提升 14.78%。

@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/sdd-practice-lattice-harness-team-ai-coding.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从渐进式 SDD 到 Lattice Harness：A…"))
+    核心概述
+    五大工程缺口
+    Lattice 架构
+      Context 工程
+      Verification
+      Drift 检测
+      Loop
+    深度分析
+      1. Spec Coding 的天花板：0→8…
+      2. '执行者不能做最终裁判'——独立 Ver…
+      3. Context 工程的三层结构：地图→知…
+      4. Loop 不是无限自修复，而是有边界的失…
+    实践启示
+    相关实体
+```
+
 ## 核心概述
 
 Individual SDD（Spec-Driven Development）向团队级 Harness 演进的完整实践指南。核心论点：Spec 只能解决 0→80，剩下 20 分需要 Context Engineering、独立 Verification、Drift Check、Evidence 系统和 Loop。提出了 Lattice——一个 repo-local AI Coding control plane，把交付控制点变成仓库内可版本化的 contracts。

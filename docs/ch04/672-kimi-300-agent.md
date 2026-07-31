@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-300-agent-cluster-yin-john-agi-hunt.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Kimi 决定，要用 300 个 Agent 解救非程序员们"))
+    深度分析
+      核心观点
+    核心断言
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 Kimi 决定，要用 300 个 Agent 解救非程序员们 涉及agent领域的核心技术议题。

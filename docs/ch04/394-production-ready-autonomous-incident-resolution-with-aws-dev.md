@@ -6,6 +6,21 @@
 
 # AWS DevOps Agent × Datadog MCP Server: 生产级自主事件解决
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Production-Ready Autonomous …"))
+    深度分析
+      MCP 协议在生产监控中的实际应用
+      从被动响应到主动预防的范式转移
+      Harness Engineering 视角
+      早期采用者数据
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AWS DevOps Agent 正式 GA（Generally Available），与 Datadog MCP Server 深度集成，实现了从事件检测到根因分析再到修复建议的全自主闭环。DevOps Agent 作为「始终在线的运维队友」，能够自动关联 Datadog 的日志、指标、链路追踪与 AWS 的遥测、代码和部署数据，在分钟级别完成传统需要数小时的事件调查。GA 版本新增了 Slack/PagerDuty/ServiceNow 集成、主动预防建议、以及多云和混合环境支持。

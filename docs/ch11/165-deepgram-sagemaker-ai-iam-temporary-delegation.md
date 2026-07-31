@@ -8,6 +8,20 @@
 
 > Deepgram 为其自托管语音 AI 模型在 SageMaker AI 上集成了 AWS IAM Temporary Delegation 能力，使客户可以授予 Deepgram 支持工程师临时、范围限定、可审计的访问权限，解决跨账户支持访问的安全与效率问题。传统方案需要数天协调屏幕共享，新方案在 IAM 控制台批准后数分钟即可开始排查。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Deepgram SageMaker AI IAM Te…"))
+    深度分析
+      跨账户支持访问的安全-效率权衡
+      权限模板的设计哲学
+      与自托管部署策略的关系
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

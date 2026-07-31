@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/what-marketing-can-learn-from-it-about-running-complex-technology.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What marketing can learn fro…"))
+    相关实体
+    深度分析
+      能力增长与运营成熟度的失衡
+      项目思维 vs. 服务思维的根本矛盾
+      IT  discipline 的核心价值
+      架构与编排的战略地位
+    实践启示
+      1. 建立服务所有权而非项目所有权
+      2. 将架构决策提升为战略优先级
+      3. 培养混合型技术角色
+      4. 建立营销与 IT 的联合运营模式
+```
+
 ## 核心要点
 
 - 营销技术（Martech）系统的复杂性已堪比企业级 IT 环境，但营销团队仍采用项目制思维而非服务制思维来管理技术栈 

@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/mythos-for-offensive-security-xbows-evaluation.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Mythos for Offensive Securit…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

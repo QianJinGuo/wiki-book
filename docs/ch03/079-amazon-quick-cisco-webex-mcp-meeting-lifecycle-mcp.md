@@ -10,6 +10,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-a-meeting-prep-and-follow-up-assistant-with-amazon-quick-and-cisco-webex-mcp-servers.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Quick + Cisco Webex M…"))
+    深度分析
+      与现有 Amazon Quick 实体的差异化
+      3 个 Cisco Webex MCP ser…
+      OAuth Scope 分层防御（read v…
+      Meeting-lifecycle 闭环的 4…
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - **核心问题**：recurring meeting 在会前需要 dig 通过上次 summary、transcript、recording + 拉相关 Vidcast 上下文 + 查 Webex 消息线程中的 unresolved follow-up——会后又要 draft 跟进消息。多个工具间切换是 productive time 的最大 leak

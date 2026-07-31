@@ -6,6 +6,31 @@
 
 # AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Native 公司 Dan Shipper 30 …"))
+    概述
+    核心故事：30 人 = 100 人产出
+    核心论断：「Automation is a l…
+    认知翻转：把浏览器嵌入 AI
+      范式成立的三层硬逻辑
+    三道墙：为什么你还没过上？
+      墙 1：安全政策
+      墙 2：采购惯性
+      墙 3：管理层激励
+      三道墙在变薄
+    「每个人一个 AI 助手」翻转为「公司级超级 …
+    SaaS 为什么还不死？四层推理
+      Dan 的反向回答
+      第一层：Agent 是 SaaS 的「新增用户…
+      第二层：Token 经济学倒转，SaaS 利润…
+      第三层：Agent 的两个天然缺陷恰好是 Sa…
+    二十年护城河怎么塌的？
+```
+
 ## 概述
 
 WalkerYu（一起walkwalk）2026-05-27 **深度解读 Lenny's Newsletter Dan Shipper 访谈**。Dan Shipper 是 Every 公司创始人，**30 人靠 AI 员工（Codex + Claude Code 默认界面）做出 100 人产出**。核心论断：**「Automation is a lie」**——AI 倍增你已有的判断力；层次化思维 + SaaS 6 维 Agent 友好能力框架是核心方法论。原文链接 lennysnewsletter.com/p/the-ai-paradox-dan-shipper。

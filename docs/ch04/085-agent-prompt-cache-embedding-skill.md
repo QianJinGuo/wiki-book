@@ -8,6 +8,29 @@
 
 > **背景**：本文是 [AWS China Blog](https://aws.amazon.com/cn/blogs/china/agent-system-engineering-practice/) 2026-06-05 发布的"解决 Agentic AI 应用 Token 爆炸问题"系列第三篇，由 AWS 中国架构师团队撰写。系统讨论 Agent 记忆系统在生产环境的"工程税"（每一次写入/迁移/切换/淘汰时被隐性征收的成本），并给出在 S3 Files / S3 Vectors / Bedrock AgentCore Memory 上的具体落地路径。本文与系列前两篇（《取之有度，用之有节——从 Harness 视角破解 Agent 应用 Token 爆炸难题》/《相得益彰 — 亚马逊云科技向量存储选型推荐》）形成完整覆盖：选型 → 落地 → 运行工程议题。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent 记忆系统工程税：写入纪律·Prompt Ca…"))
+    核心立场：记忆系统的'工程税'框架
+    2026 新地形
+    五个工程考量（生产环境的真实痛点）
+    四条写入/失效路径（业界哲学分叉）
+      路径一：LLM 判官（Mem0 范式）
+      路径二：公式打分（OpenClaw Dream…
+      路径三：托管策略（AgentCore Memo…
+      路径四：Workload-Feedback A…
+    记忆写入与 Prompt Cache 的冲突（…
+      冲突本质
+      三种处理思路
+    跨模型的容量上限：字符 vs Token
+    Embedding 迁移：记忆工程的最大数据税
+      四阶段迁移方法论（生产环境验证）
+    Agent 自产程序性记忆的治理（2026 最…
+```
+
 ## 核心立场：记忆系统的"工程税"框架
 
 本文提出"工程税"作为组织生产环境记忆系统议题的统一视角：**架构已定、运行才开始的问题**——选型阶段看不出，上线半年后才集中显形。五个工程考量（写入纪律/Prompt Cache 冲突/跨模型容量/Embedding 迁移/自产 Skill 治理）都满足这一特征。

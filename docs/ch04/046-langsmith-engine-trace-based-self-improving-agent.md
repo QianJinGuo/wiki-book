@@ -9,6 +9,27 @@
 > 来源：分析 LangChain LangSmith Engine 的工程化自改进路径——从线上 trace 自动发现问题并转化为 issue / evaluator / 回归测试
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langsmith-engine-self-improving-agent-trace-based.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LangSmith Engine: Trace-Base…"))
+    深度分析
+      一、Agent 上线后的问题形态变化
+      二、Self-Improving Agent …
+      三、为什么 issue 比 trace 更重要
+      四、整体架构：Screener → Inves…
+    Agent Purpose
+    Expected Tools
+    Known Failure Modes
+    User Preferences
+      九、MVP 演进路径
+      十、核心飞轮
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 文章指出 Agent 工程化的关键问题：**上线后的持续改进机制**。区别于"让模型自己进化"的传统思路（Hermes Agent 的定时任务总结经验），LangSmith Engine 提供更工程化的路径——**让系统从线上失败中持续学习**。核心流程：失败 trace → trajectory 压缩 → Screener 粗筛 → Investigator 调查 → 归类成 issue → 生成 evaluator + regression assertions → 沉淀为长期记忆。核心产出不是 trace 而是 issue。

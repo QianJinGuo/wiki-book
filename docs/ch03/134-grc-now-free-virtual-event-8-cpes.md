@@ -10,6 +10,17 @@ Global Privacy Control Signal Detected
 ![Image 5](http://optro.ai/static/icons/close-gpc.svg)
 ![Image 6: Optro](http://optro.ai/static/images/logo-optro.svg)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GRC Now | Free virtual event…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [五一活动来啦](https://github.com/QianJinGuo/wiki/blob/main/entities/五一活动来啦.md)
 - [升职那天我才明白自己是来填坑的](https://github.com/QianJinGuo/wiki/blob/main/entities/升职那天我才明白自己是来填坑的.md)

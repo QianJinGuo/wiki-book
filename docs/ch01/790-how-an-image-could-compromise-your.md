@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/exiftool-compromise-mac-592994.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How an image could compromis…"))
+    标签
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 In-depth security research on ExifTool vulnerability enabling Mac compromise. Detailed technical analysis of attack vector, CVE specifics, and remediation guidance. High practical utility for security professionals.

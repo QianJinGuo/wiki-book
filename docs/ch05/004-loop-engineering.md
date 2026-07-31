@@ -47,6 +47,36 @@ graph TB
 
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Loop Engineering: 把反馈循环放进工程现场"))
+    范式核心：从 Prompt 到 Loop 的跃迁
+    范式细节
+      Loop 的五样必备 + 一条状态记忆
+      单 Agent 循环 vs Fleet 循环
+      反馈闭环：Loop 不是 cron
+      成本结构：被忽视的隐形障碍
+    现实案例
+      Claude Code /loop
+      OpenAI Codex /goal
+      Hermes Agent cronjob
+    局限与反对声音
+      第 4 来源补强：Samuel McDonne…
+    与相邻概念的区分
+    深度分析
+      1. Loop Engineering 是 P…
+      2. 人 → Agent 循环的反转：控制流从…
+      3. 本质是控制论：反馈回路比循环本身更重要
+      4. Loop 与 Harness 是层次关系…
+    实践启示
+      第 5 来源补强：5 决策框架 + 3 重陷阱…
+      第 6 来源补强：AIE World's Fa…
+    时间线与生态
+```
+
 ## 范式核心：从 Prompt 到 Loop 的跃迁
 
 旧模式（人驱动循环）：

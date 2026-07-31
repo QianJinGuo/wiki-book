@@ -6,6 +6,34 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/low-code-api-integration.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Build Low-Code API In…"))
+    核心摘要
+    What are API Integratio…
+    Benefits of low-code AP…
+    构建步骤概览
+      Step 1: Create your OIN…
+      Step 2: Configure authe…
+      Step 3: Build your low-…
+    How to test your API in…
+      Create a test instance
+      Update a test instance
+    深度分析
+      1. 从'构建 SCIM 服务器'到'低代码映…
+      2. 低代码集成的适用边界
+      3. Workflows 作为集成编排层的价值
+      4. OIN 的生态战略意义
+    实践启示
+      给 ISV 开发者的行动清单
+      给企业安全团队的启示
+      给低代码平台设计者的参考
+    相关实体
+```
+
 ## 核心摘要
 API Integration Actions 是 Okta Integration Network (OIN) 的一项新功能，允许 ISV（独立软件供应商）使用 Okta Workflows（低代码构建器）构建 Provisioning、Entitlements 和 Universal Logout 应用。无需构建和维护 SCIM 服务器，直接将现有 API 映射到 Okta 动作契约，大幅降低企业身份集成门槛。
 

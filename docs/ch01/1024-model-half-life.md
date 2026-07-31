@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/model-half-life-aifoc.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("model half-life"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 
 - AI 模型的性能随时间衰减（model half-life 现象）

@@ -6,6 +6,39 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclacky-harness-engineering-100-percent-cache-hit.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Harness 工程实践复盘：100% Cache 命中…"))
+    背景与核心结论
+    两代失败教训
+      第一代：RAG / 知识库
+      第二代：多 Agent 工作流
+    7 个关键工程决策
+      决策 1：双 Cache 标记
+      决策 2：System Prompt 字节冻结
+      决策 3：Skill 子 Agent 架构
+      决策 4：固定 16 个工具
+    核心原则
+    关键洞察
+      Cache 局部性是最核心的设计维度
+      固定工具列表是 cache 稳定性的保障
+      Skill 子 Agent 架构实现了真正的关…
+    深度分析
+      1. 成本差距揭示了 Agent 工程化是差异…
+      2. 两代失败揭示了 Agent 工程中的'能…
+      3. 双 Cache 标记设计体现了'最小化冗…
+      4. System Prompt 字节冻结揭示…
+    实践启示
+      1. 将 cache 命中率作为 Agent …
+      2. 优先实现 System Prompt 字…
+      3. 用 Skill 子 Agent 架构替代…
+      4. 上下文压缩应在用户空闲时主动执行，而非被…
+    相关实体
+```
+
 ## 背景与核心结论
 
 ClackyAI 团队近期拿 4 家 Agent 做了一次横向测评，结果发现：同样的 prompt、同样的模型、同样的任务，成本最高可以相差 6 倍，且能与 Claude Code 保持同等能力。Harness 工程的水平，才是 Agent 产品真正拉开差距的地方。

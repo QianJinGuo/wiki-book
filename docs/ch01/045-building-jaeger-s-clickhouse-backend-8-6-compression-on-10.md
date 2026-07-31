@@ -23,6 +23,20 @@ For those new to the project, Jaeger is a graduated Cloud Native Computing Found
 
 In this post, I’ll explain why ClickHouse is a strong choice for storing traces, how the schema is designed under the hood, and how you can start using it with Jaeger today.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building Jaeger’s ClickHouse…"))
+    Why columnar storage wins
+      High-throughput ingest …
+      Compression that actual…
+      Real-time analytics
+    Designing the schema
+      Trade-offs in primary key
+```
+
 ## Why columnar storage wins
 
 At its core, the tracing problem is twofold: storing massive volumes of semi-structured event data and then searching that data quickly across multiple dimensions—service, operation, tags, duration, time range, and trace ID. Cassandra and Elasticsearch have served the Jaeger community well, but they come with operational costs. Indexing overhead adds latency and expense. Scaling becomes complex. Retention decisions force painful tradeoffs.

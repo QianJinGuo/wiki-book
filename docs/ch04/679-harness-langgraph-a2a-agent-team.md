@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langgraph-a2a-adversarial-agent-team.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("逆天的架构：用 Harness+LangGraph+A2…"))
+    深度分析
+      核心观点
+      LangGraph 角色
+      A2A 协议（Google 2025.
+      内容结构
+    实践启示
+```
+
 ## 深度分析
 
 逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team 涉及agent领域的核心技术议题。

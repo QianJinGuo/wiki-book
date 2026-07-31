@@ -8,6 +8,22 @@
 
 做后台开发的同事应该都有这个体会：从接到需求到最终发布，我们要在 PM、GitPlatform、编辑器、DevOps 平台、Galileo 之间来回横跳。每次切换都在丢上下文——刚在 PM 看完需求描述，切到编辑器就忘了某个细节；部署完测试环境去查日志，又得回忆刚才改了哪几行代码。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tencent Vibe Coding to Agent…"))
+    Vibe Coding的问题
+    Agentic Engineering的核心思路
+    实践方案
+    全流程概览
+    工具体系架构
+    关键设计原则
+    传统方式 vs Claude Code 方式
+    核心理念
+```
+
 ## Vibe Coding的问题
 
 你可能听过 **Vibe Coding** 这个说法——打开 AI 对话框，用自然语言描述需求，让模型直接生成代码，跑通就算完。原型验证很爽，但一旦要上生产，问题就来了：生成的代码质量不可控、没有审查流程、改完了 commit message 也是乱的。说到底，Vibe Coding 是"提示即祈祷"（prompt-and-pray），你把需求扔给 AI，然后祈祷它别出错。

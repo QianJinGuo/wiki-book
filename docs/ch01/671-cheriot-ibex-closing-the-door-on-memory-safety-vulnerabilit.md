@@ -4,6 +4,19 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/cheriot-ibex-memory-safety-hardware-enforcement.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CHERIoT-Ibex: Closing the do…"))
+    深度分析
+    实践启示
+    Azure Infrastructure Blog
+    Blog Post
+    相关实体
+```
+
 ## 深度分析
 CHERIoT-Ibex 是微软于 2023 年开源的 CHERIoT 平台的核心实现，首次将 CHERI（Capability Hardware Enhanced RISC Instructions）能力模型落地为生产级开源硬件。 CHERI 架构通过**能力指针（Capability）** 取代传统 flat pointer，从硬件层面强制约束每个内存区域的访问权限——包括空间边界（spatial）和有效期（temporal），从根源上堵死 buffer overflow 和 use-after-free 两类最高发漏洞。
 CHERIoT 在 CHERI 基础上专为嵌入式 / IoT 场景做了轻量化适配，底层选用 LowRISC 的 32 位 RISC-V 核心 Ibex。CHERIoT-Ibex 通过 CHERI Alliance 认证，验证其提供**空间安全 + 时间安全 + 细粒度隔离**三重保障，且硅成本与低功耗微控制器相当——打破了"安全必付溢价"的传统假设。

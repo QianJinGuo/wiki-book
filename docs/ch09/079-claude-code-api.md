@@ -8,6 +8,22 @@
 
 > Claude Code 通过 ANTHROPIC_BASE_URL 静默检测自定义 API 路由，针对中国代理和时区嵌入隐藏标记。v=7 c=8 s=4 vxc=56
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 静默识别中国 API 路由"))
+    深度分析
+      技术机制详解
+      隐蔽性设计分析
+      Anthropic 的动机分析
+      信任与透明度问题
+    实践启示
+    相关实体
+    参考来源
+```
+
 ## 摘要
 
 Vincent Schmalbach 通过逆向工程发现，Claude Code 从 v2.1.91 开始嵌入了一个隐蔽的 API 路由检测机制。当用户通过 `ANTHROPIC_BASE_URL` 环境变量配置自定义端点时，Claude Code 会将请求的目标域名与一个包含 147 条中国相关域名的编码列表和 11 个中国 AI 服务商关键词进行匹配，同时检查本地时区是否为 `Asia/Shanghai` 或 `Asia/Urumqi`。基于这些信号，Claude Code 会在模型上下文的日期行中嵌入不可见的标记——通过替换英文撇号为不同 Unicode 变体（`'` / `'` / `ʼ` / `ʹ`）和改变日期分隔符（`-` → `/`）来编码路由信息。该机制隐蔽、未经文档说明，且自 v2.1.91 起历经多个版本保持存在。

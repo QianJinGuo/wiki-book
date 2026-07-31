@@ -11,6 +11,17 @@
 - **50/50 判断**：现有技术路线（大规模预训练+RLHF+思维链）通过持续创新能否扩展到 AGI vs 还需要 1-2 个真正的大突破，两种可能性各占一半
 - 不存在的问题：他不认为几年后会有人说当前路线走错了
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Demis Hassabis YC 专访：Agent 才…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)

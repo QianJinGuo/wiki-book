@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/how-to-avoid-ai-code-slop.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Avoid AI Code Slop"))
+    相关实体
+    深度分析
+      从'审代码'到'审意图'范式转移
+      测试的局限性
+    实践启示
+    关联阅读
+```
+
 ## 核心要点
 - 来源：eng-leadership
 - 评分：v=7 × c=8

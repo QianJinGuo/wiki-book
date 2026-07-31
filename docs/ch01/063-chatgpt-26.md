@@ -6,6 +6,18 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-26-future-stars.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ChatGPT官宣26位未来之星"))
+    关键要点
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 ChatGPT官宣26位未来之星
 

@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/agentmemory-coding-agent-local-memory.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentMemory：Coding Agent 本地记…"))
+    概述
+    核心架构
+    数据模型
+    检索机制
+    对外接口
+    竞品对比
+    适用场景
+    深度分析
+```
+
 ## 概述
 AgentMemory（rohitg00/agentmemory，npm: @agentmemory/agentmemory@0.9.20）不是又一个向量数据库包装器，而是一个**本地 Agent 记忆运行时**：把 hook 捕获、隐私过滤、观察记录、压缩、索引、检索、上下文注入、MCP 工具、REST API、viewer、审计和多 Agent 协作都放进了一个可启动的本地服务里。
 

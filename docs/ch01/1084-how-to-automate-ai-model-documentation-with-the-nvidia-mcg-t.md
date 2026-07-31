@@ -6,6 +6,21 @@
 
 # How to Automate AI Model Documentation with the NVIDIA MCG Toolkit
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Automate AI Model Doc…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)

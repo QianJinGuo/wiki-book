@@ -8,6 +8,34 @@
 > Cline 发布开源 Agent 运行时 SDK（`@cline/sdk`），采用分层 TypeScript 架构，解耦 Provider、Agent Loop 和 Core Runtime。支持 Agent Teams、插件系统、原生 MCP 连接器。Terminal Bench 2.0 测试中优于 Claude Code。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-open-source-agent-runtime-sdk.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cline releases open-source a…"))
+    技术架构
+      各层职责详解
+    核心特性
+      1. Agent Teams and Subage…
+      2. 插件系统（Plugin System）
+      3. 原生内置能力
+      4. 连接器通道（Connector Chan…
+    性能基准
+    产品背景
+    开发者资源
+    相关实体
+    深度分析
+      SDK 分层架构的设计哲学
+      Session 持久性与长程任务的意义
+      基准测试的方法论问题
+      插件系统的安全边界
+    实践启示
+      对 Agent SDK 开发者的建议
+      对企业集成团队的建议
+      对 Agent 评测设计者的建议
+```
+
 ## 核心要点
 - **开源许可**：Apache 2.0，基于自身编码 Agent 实践经验构建
 - **模型无关架构**：通过 `@cline/llms` 层统一抽象，支持 Anthropic、OpenAI、Google、AWS Bedrock、Mistral、LiteLLM 及任何 OpenAI兼容端点

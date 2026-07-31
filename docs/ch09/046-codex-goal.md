@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-source-code-deep-dive.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Codex /goal 源码深度解析：状态表 + 续跑条…"))
+    深度分析
+      1. 核心结论：目标是数据库对象，不是 pro…
+      2. thread_goals 表（完整源码）
+      3. 三个 Goal 工具的权限设计
+      4. 自动续跑的 7 个前提条件
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 阿里技术麦艮廷 2026-05-23 的源码深度解析。Codex `/goal` 不是 Todo、不是 prompt、不是一句"继续做到完成"，而是一套 **thread_goals 表 + 状态机 + 预算账本 + 自动续跑机制**。它把"目标"工程化为一个数据库对象，带四态状态机（active/paused/budget_limited/complete）、三权分立（get/create/update）、七项自动续跑前置条件、多边界 token 记账、以及 `<untrusted_objective>` 防 prompt injection 的边界标签。

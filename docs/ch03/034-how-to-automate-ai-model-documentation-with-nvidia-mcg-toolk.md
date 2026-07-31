@@ -6,6 +6,19 @@
 
 # How to Automate AI Model Documentation with NVIDIA MCG Toolkit
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Automate AI Model Doc…"))
+    深度分析
+    Introducing the NVIDIA …
+    How the MCG toolkit wor…
+    Designed for flexibilit…
+    相关实体
+```
+
 ## 深度分析
 
 Published Time: 2026-05-29T16:00:00+00:00

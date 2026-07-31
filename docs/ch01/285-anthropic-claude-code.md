@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 博客：Claude Code 大型代…"))
+    核心结论
+    核心反常识：Agent式搜索 vs RAG
+    七层扩展体系（Harness）
+      1. CLAUDE.md：分层上下文文件
+      2. Hooks：自我进化机制
+      3. Skills：渐进式知识披露
+      4. Plugins：团队环境标准化
+    配置迭代：随模型进化
+    三个成功部署模式
+      模式1：让代码库对 Claude 可读
+      模式2：指定专人负责
+      模式3：治理先行
+    三步部署框架
+    适用边界
+    深度分析
+```
+
 ## 核心结论
 
 模型能力是地板，配置质量才是天花板。Anthropic 的核心观点是：Claude Code 在大型代码库中的表现，不取决于模型本身有多强，而取决于 harness 系统的配置质量。

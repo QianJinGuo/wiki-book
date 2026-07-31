@@ -6,6 +6,21 @@
 
 # Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Secure AI agents with Policy…"))
+    相关实体
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 相关实体
 
 ```mermaid

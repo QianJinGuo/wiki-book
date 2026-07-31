@@ -8,6 +8,23 @@
 
 > 百度 Geek 说团队在 AI Coding 场景下建立的全链路质量保障体系，将验证流程左移到 Agent 开发过程中。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("百度 AI Coding 质量关卡实践"))
+    核心链路
+      1. Agent Operating Rule…
+      2. Code Validation（开发期即…
+      3. Runtime Verify / Bro…
+      4. Figma To Verify（视觉走查）
+    应用案例
+      快捷回复功能的三轮验证
+      RSpack HMR 调试
+    沉淀机制
+```
+
 ## 核心链路
 
 百度的 AI Coding 质量保障体系由五道关卡组成，从开发期到提交后逐层递进：

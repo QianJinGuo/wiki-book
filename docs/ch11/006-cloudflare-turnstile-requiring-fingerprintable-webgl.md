@@ -6,6 +6,17 @@
 
 # Cloudflare Turnstile requiring fingerprintable WebGL
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cloudflare Turnstile requiri…"))
+    深入分析
+    相关实体
+    相关主题
+```
+
 ## 核心要点
 
 ```mermaid

@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/factory-missions-architecture.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Factory Missions：多智能体工程纪律"))
+    概述
+    深度分析
+    相关实体
+```
+
 ## 概述
 Factory 的 Missions 是一种**串行优先的多智能体软件工程执行架构**，核心理念是：多智能体系统的瓶颈不是智能，而是人类注意力。架构用纪律而非并行来解决问题。
 | 角色 | 职责边界 | 

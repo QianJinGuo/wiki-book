@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/pytorch212releaseblogpytorch.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("PyTorch 2.12 Release Blog – …"))
+    相关实体
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 核心要点
 - AI product announcement
 - Technical release details

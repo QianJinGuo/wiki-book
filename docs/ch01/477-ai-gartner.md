@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI 驱动的裁员没有商业意义 — Gartner 研究"))
+    深度分析
+      1. 裁员作为'简单答案'的组织行为学陷阱
+      2. 培训 vs 替代：两种 AI 战略的分水岭
+      3. 机构知识的不可替代性
+      4. IT 行业裁员的特殊性
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Gartner 2025 年底对大型企业的调查显示：80% 的大型企业在推出 AI 项目后进行了裁员（平均 1%-15%），但**裁员与 AI 投资回报率（ROI）之间没有相关性**。获得显著 ROI 的企业裁员比例与 ROI 微薄甚至为负的企业相当。真正的 ROI 驱动力是对员工的再投资——培训员工使用 AI、创建 AI 相关新角色（如 Agent 编排者），而非用自动化替代人力。

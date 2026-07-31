@@ -7,6 +7,19 @@
 > -> [（来源：raw）]
 从微信文章 [（来源：raw）] 提取。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-Image-2 完全指南！附大量玩法案例，顺便开…"))
+    核心内容
+      主要章节
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/0yVKN5cu8oOOBhRZHkyYPg
 

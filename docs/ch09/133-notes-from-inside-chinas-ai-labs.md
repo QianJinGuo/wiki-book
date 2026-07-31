@@ -8,6 +8,18 @@
 Staring out the window on a new, high-speed train from Hangzhou to Shanghai I'm gifted with views of dramatic ridgelines speckled with wind turbines that are silhouetted against the setting sun. The mountains cast a backdrop to a mix of spanning fields and clustered skyscrapers. I'm returning from China with great humility. It's a very warming, human experience to go somewhere so foreign and be so welcomed. I had the honor of meeting so many people in the AI ecosystem who I knew from afar, and they greeted me with big smiles and cheer, reminding me how global my work and the AI ecosystem is.
 Interconnects AI is a reader-supported publication. Consider becoming a subscriber.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Notes From Inside Chinas AI …"))
+    The mentality of Chines…
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## The mentality of Chinese researchers
 The Chinese companies building language models are set up as the perfect fast-followers for the technology, building on long-standing cultural traditions in education and work, along with subtly different approaches to building technology companies. When you look at the outputs, the latest, biggest models enabling agentic workflows, and the ingredients, excellent scientists, large-scale data, and accelerated computing, the Chinese and American labs look largely similar. The lasting differences emerge in how these are organized and conditioned.
 

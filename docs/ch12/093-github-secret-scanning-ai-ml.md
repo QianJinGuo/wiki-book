@@ -8,6 +8,22 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub Secret Scanning: AI/M…"))
+    深度分析
+      信噪比决定安全工具的有效性
+      上下文感知验证的技术实现
+      两级架构的工程设计
+      与传统方法的对比
+    差异化对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 ```mermaid

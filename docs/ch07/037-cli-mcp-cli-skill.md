@@ -8,6 +8,26 @@
 
 # CLI、MCP 和 CLI+Skill：企业Agent架构选择指南
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CLI、MCP 和 CLI+Skill，应该如何选？"))
+    三个东西不是一层
+    决策矩阵
+    三层推荐架构
+    MCP 的 tools tax 问题
+    上线顺序
+    深度分析
+    实践启示
+      1. 优先用 CLI+Skill 验证，再考虑…
+      2. MCP 的工具 schema 要克制
+      3. 用 Progressive Tool D…
+      4. 企业治理优先考虑 MCP Gateway
+    关联阅读
+```
+
 ## 三个东西不是一层
 
 | 概念 | 关注点 |

@@ -10,6 +10,26 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jd-haibo-ai-native-harness-dual-loop-knowledge.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("京东海博 AI-Native 研发工程体系：Harnes…"))
+    双层架构
+    三位一体 AI 体系
+    双循环工程质量保障
+    技能自迭代闭环
+    知识库
+    落地成果
+    深度分析
+      从'AI 适配工程'到'工程孕育 AI'的设计哲学
+      编审分离的 Agent 架构模式
+      双循环 TDD 的质量纵深
+      技能自迭代：从静态 Prompt 到动态进化
+    实践启示
+```
+
 ## 双层架构
 
 用户级（团队通用规范+AI技能）× 项目级（业务专属配置）。自研 AI 路径解析协议，按"项目优先、用户兜底"加载。

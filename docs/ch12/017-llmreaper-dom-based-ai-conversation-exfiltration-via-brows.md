@@ -21,6 +21,25 @@ sequenceDiagram
 
 > **来源**: [原文链接](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLMReaper - DOM Based AI Con…"))
+    核心发现
+    技术分析
+      威胁机制
+    与现有实体对比
+    相关实体
+    深度分析
+      攻击链的端到端博弈
+      MutationObserver 的双重性：合…
+      浏览器权限模型的系统性失效
+      检测与缓解的现实困境
+    实践启示
+```
+
 ## 核心发现
 
  Published Time: 2026-05-27T00:00:00.000Z Markdown Content: Every time someone pastes their code or config files into LLMs to debug something, or to review code, they assume the conversation stays between them and the AI. But it doesn't. Any extension installed in your browser can read that conversation. All of it and In real time without you knowing. *   In December 2024 , a supply chain attack on the [Cyberhaven Chrome extension](https://www.darktrace.com/blog/cyberhaven-supply-chain-attack-ex...) by a threat actor who injected a malicious update that was distributed to all users.*   In February 2025, [GitLab's threat intelligence](https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/malicious-browser-extensions-feb-2025/) team identified 16 malicious Chrome extensions impacting at least 3.2 million users*   In April 2026, a coordinated campaign of over 100 malicious Chrome extensions was [found stealing Google OAuth2](https://www.rescana.com/post/over-100-malicious-chrome-extensions-in-chrome-web-store-steal-google-and-telegram-data-create-pers) Bearer tokens and Telegram sessions

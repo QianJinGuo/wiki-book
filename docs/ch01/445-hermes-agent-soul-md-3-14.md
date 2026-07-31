@@ -8,6 +8,24 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-soul-md-personality-shugex.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes Agent SOUL.md：3 层提示词、…"))
+    深度分析
+      安全扫描：防注入第一道门
+      /personality 命令：14 个内置人…
+      SOUL.md vs AGENTS.md：职责分离
+      特殊执行模式：继承规则
+    实践启示
+      SOUL.md 写什么
+      不写什么
+      跨框架迁移对照表
+    相关实体
+```
+
 ## 摘要
 
 Hermes Agent（Nous Research 开发，GitHub Star 突破 60,000）用三层提示词架构解决 Agent 身份定义问题：SOUL.md 管身份、AGENTS.md 管项目、/personality 管临时风格切换。本文从源码层面深度分析了 `load_soul_md()` 函数链路、stable 层 14 部分分解、`_scan_context_content()` 安全扫描与截断机制、14 个内置 personality + overlay 机制、SOUL.md vs AGENTS.md 职责分离、Cron/子代理/多 Profile 场景下的继承规则，以及容器写入保护等完整设计。

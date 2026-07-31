@@ -6,6 +6,20 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Automate progressive rollout…"))
+    相关实体
+    深度分析
+      核心概念：渐进式发布 vs 加权拆分
+      为什么渐进式发布有价值
+      技术实现路径
+    实践启示
+```
+
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
 

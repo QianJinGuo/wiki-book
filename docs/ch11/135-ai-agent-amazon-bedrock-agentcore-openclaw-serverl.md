@@ -6,6 +6,31 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-6.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent 的迁移与现代化 — 使用 Amazon…"))
+    标签
+    相关实体
+    资源清理
+      删除顺序至关重要
+      RETAIN 保留策略
+    迁移前后对比
+    进一步探索方向
+    深度分析
+      1. Replatform + Refacto…
+      2. Per-Session microVM …
+      3. 数据迁移的隐性成本
+      4. 多区域部署的运维复杂度
+    实践启示
+      资源清理
+      成本优化实操
+      迁移检查点
+      架构演进路径
+```
+
 ## 标签
 
 ```mermaid

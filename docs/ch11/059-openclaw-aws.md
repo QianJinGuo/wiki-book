@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/openclaw-service-enterprise-share-system-design.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("当 OpenClaw 学会”团队记忆”：一个面向多客户服…"))
+    概述
+    核心技术
+    深度分析
+      核心问题框架
+      架构定位：叠加而非替代
+      关键技术设计
+      设计哲学
+    实践启示
+      分阶段采用路径
+      面客部署关键配置点
+      命名空间设计建议
+      运维实践
+    来源
+    架构图
+    相关实体
+    Related
+```
+
 ## 概述
 
 ```mermaid

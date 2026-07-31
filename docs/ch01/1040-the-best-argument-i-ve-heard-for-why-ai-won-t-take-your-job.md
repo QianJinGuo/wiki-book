@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/platformer-ai-job-loss-levie.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The best argument I’ve heard…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - value=7, confidence=8, product=56
 - Well-written Platformer article on AI job impact

@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/somethings-rotten-in-the-state-of-macos-icon-design.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Something's Rotten in the St…"))
+    相关实体
+    深度分析
+      设计标准的崩塌
+      Squircle 困境
+      生态系统的连锁反应
+      核心矛盾
+    实践启示
+      对平台拥有者的启示
+      对设计师的启示
+      对开发者的启示
+```
+
 ## 核心要点
 
 - Apple 的 macOS 图标设计正在经历一次令人担忧的退化

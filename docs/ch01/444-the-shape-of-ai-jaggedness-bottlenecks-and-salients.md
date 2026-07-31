@@ -8,6 +8,17 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-shape-of-ai-jaggedness-bottlenecks-and-salients.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The Shape of AI: Jaggedness,…"))
+    深度分析
+    实践启示
+    关联实体
+```
+
 ## 摘要
 
 Ethan Mollick（One Useful Thing）2025 年 12 月的这篇文章把 AI 能力的"形状"从抽象的"参差不齐的边界"（Jagged Frontier）延伸到两个工程概念：**Bottleneck**（瓶颈）— 即使 AI 在大部分子任务上超人，少数短板会卡住整个工作流；**Reverse Salient**（反向突出部）— 历史学家 Thomas Hughes 的术语，指那种"卡住整个系统、解决后能带来跳跃式进步"的关键短板。Mollick 用 Google 的 Nano Banana Pro（图像生成突破直接解锁了 NotebookLM 演示文稿生成）作为近期最典型的 reverse salient 案例。

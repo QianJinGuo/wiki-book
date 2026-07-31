@@ -22,6 +22,40 @@ sequenceDiagram
 
 > 实战教程：使用 Bedrock AgentCore Payment 构建支持 x402 协议的自主支付 AI Agent，包含完整代码示例。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Amazon Bedrock AgentCore P…"))
+    核心内容
+    **一、背景：为什么 Agent 需要支付能力**
+    **二、项目介绍与整体架构**
+      2.1 开源项目简介
+      2.2 整体架构
+      2.3 业务模块组成
+    **三、系统架构：支付流程与技术实现**
+      3.1 支付流程总览
+      3.2 阶段一：发起请求 and 402 挑战
+      3.3 阶段二：服务端签名（信任边界）
+      3.4 阶段三：结算 and 内容交付
+    **四、部署概要**
+      4.1 前置条件
+      4.2 准备 Coinbase CDP 凭证 …
+      4.3 部署步骤
+    **五、结语**
+    深度分析
+      1. 三层架构的解耦价值：为什么支付不能嵌入 …
+      2. EIP-3009 在 Web2 场景中的…
+      3. x402 v1/v2 双版本兼容的工程复杂性
+      4. 最小权限 IAM 模型在支付场景中的特殊…
+    实践启示
+      1. 优先使用 Gateway 的 MCP 工…
+      2. Payment Session 预算上限…
+      3. Lambda@Edge 的本地校验不能省
+      4. 收款钱包必须是 EOA，不能是智能钱包
+```
+
 ## 核心内容
 
 # 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent: x402 协议实战

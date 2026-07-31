@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/pinterest-intent-aware-ads-wersm.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Pinterest Is Making Ads More…"))
+    技术洞察
+    深度分析
+      意图 vs 兴趣的范式转变本质
+      实时信号集成的技术架构
+      平台定位的竞争分析
+    实践启示
+      对数字营销从业者
+      对广告平台产品经理
+      对数据科学家
+      对创业者和 ISV
+    相关实体
+```
+
 ## 核心要点
 - **意图 vs 兴趣区分** — 传统兴趣定向基于用户过去行为；意图感知广告捕捉实时搜索和计划行为
 - **实时信号集成** — Pinterest 新广告定向整合实时搜索查询、最近保存内容、活跃计划行为

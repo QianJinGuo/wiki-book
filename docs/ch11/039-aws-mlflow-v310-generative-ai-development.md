@@ -13,6 +13,21 @@ MLflow 3.10 introduces a set of targeted improvements to the MLflow ecosystem th
 Observability improvements include more granular trace filtering and search, richer metadata capture for debugging and root-cause analysis, and [pre-built performance dashboards](<https://mlflow.org/docs/latest/genai/tracing/observe-with-traces/dashboard/>) that surface workload level metrics—latency distributions, request counts, quality scores, and [token usage](<https://mlflow.org/docs/latest/genai/tracing/token-usage-cost/>)—at a glance without manual chart configuration, giving teams running production workloads clear visibility into operational costs while [MLflow workspaces](<https://mlflow.org/docs/latest/self-hosting/workspaces/>) provide a structured way to organize MLflow artifacts across teams and projects, as shown below.
 These improvements coupled with SageMaker AI provide an enterprise-grade generative AI infrastructure, making it straightforward to track experiments, monitor generative AI performance, and maintain governance across AI applications at scale.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Mlflow V310 Generative A…"))
+    Getting started with Sa…
+      Prerequisites
+    Migration
+    Conclusion
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## Getting started with SageMaker AI MLflow App v3.10
 
 ```mermaid

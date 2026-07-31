@@ -8,6 +8,30 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-anthropic-vs-dow-impacts-open-interconnects.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic vs DoW (Department…"))
+    背景
+    核心论点：开源是 5-10 年稳定均衡
+    关键论据
+      1. Anthropic 供应链风险指定的信号意义
+      2. 开源模型的商业模式困境
+      3. 全球主权 AI 需求
+      4. 开源模型生态现状
+    深度分析
+      1. 'not your weights, n…
+      2. '商品化互补品'策略的临界点：万亿成本 …
+      3. 双重视角的方法论价值：技术 + 政策 =…
+      4. 主权 AI 的'商业真空'风险
+    与现有实体的差异化
+    实践启示
+    局限性
+    相关实体
+```
+
 ## 背景
 
 2026 年 3 月 6 日，Nathan Lambert（Interconnects 主理人）与 Dean Ball（Hyperdimensional 政策 newsletter 作者）在 Substack Live 进行访谈，时机恰逢美国 DoW（Department of War，原 Department of Defense）**正式将 Anthropic 指定为供应链风险（supply chain risk）**。

@@ -8,6 +8,17 @@
 
 > Source: [Code is the easy part, or how we refactored half the business to fix a janky script | Swizec Teller](https://swizec.com/blog/code-is-the-easy-part-or-how-we-refactored-half-the-business-to-fix-a-janky-script) | Score: v*c=56
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Code is the easy part, or ho…"))
+    Overview
+    Some contexthttp://…
+    First make the proble…
+```
+
 ## Overview
 
 Markdown Content:

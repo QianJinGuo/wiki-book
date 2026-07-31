@@ -6,6 +6,20 @@
 
 # 大反转！马斯克牵手对手 Dario，Anthropic 与 SpaceX 罕见合作
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("大反转！马斯克牵手对手 Dario，Anthropic …"))
+    深度分析
+      AI 算力市场的范式转变
+      安全共识与商业利益的交汇
+      太空数据中心的战略意义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 年 5 月，Anthropic 与 SpaceX 官宣算力合作——Anthropic 将使用 SpaceX 位于孟菲斯的 Colossus 1 超算集群的**全部算力**，超过 22 万块 NVIDIA GPU（涵盖 H100、H200 和 GB200 加速器），新增算力超过 **300 兆瓦**，一个月内部署完毕。这是马斯克 AI 战略的重大转向——此前他公开抨击 Anthropic 并称其为 "MisAnthropic"，如今却将自家超算租给竞争对手。背后原因是 xAI 的 Colossus 1 GPU 利用率仅 11%，而训练已迁至 Colossus 2，闲置资源变现符合商业逻辑。

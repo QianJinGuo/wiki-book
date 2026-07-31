@@ -6,6 +6,29 @@
 
 [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("精选 8 个 UI 设计师必备的 AI 智能体技能（Ag…"))
+    深度分析
+      技能生态的分层架构
+      设计系统的持久化价值
+      工作流的收敛性
+      值得关注的限制
+    实践启示
+      立即可用的行动项
+      团队推广建议
+      相关参考
+    为什么要关注安装顺序
+    1\. ui-ux-pro-max — 你的设…
+      ** 三步工作流程  **
+      💡 进阶技巧：把设计系统存下来
+    2\. frontend-design — 官…
+    3\. shadcn-ui — 现代组件库
+```
+
 ## 深度分析
 这篇文章系统性地解决了 **AI 生成代码与设计语言之间的断层** 问题^。作者的核心观点是：Claude Code 默认偏开发者思维，需要通过安装特定技能（Skills）来补齐设计感知能力。
 

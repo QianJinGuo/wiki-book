@@ -9,6 +9,26 @@
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-llm-attck-navigator-cyber-operations.md)
 > Authors: Kyla Guru, Alex Moix, Jacob Klein (Anthropic Red Team, 2026-06-03)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic LLM ATT&CK Navigat…"))
+    概述
+    ARiES 风险评分方法
+    核心发现
+      1. 中-高风险行为者占比半年翻 1.7 倍
+      2. 技术复杂度不再是主要区分指标
+      3. Agentic Scaffolding …
+      4. ATTandCK 框架覆盖缺口
+    高频被滥用的技术
+    配套产品变更
+    与 N-days 研究的互补
+    实践启示
+    深度分析
+```
+
 ## 概述
 
 Anthropic 红队 2026-06-03 发布的**首份** LLM 威胁行为 ATT&CK 映射报告。研究将 2025-03 至 2026-03 期间因违反 Usage Policy 被封禁的 **832 个恶意账户**所产生的 13,873 次 AI-协助攻击行为，逐一映射到 MITRE ATT&CK V18 框架的 14 个战术 + 482 个子技术上。配套发布了交互式 LLM ATT&CK Navigator 工具，并提出 **ARiES (AI Risk Enablement Score)** 风险评分方法论。

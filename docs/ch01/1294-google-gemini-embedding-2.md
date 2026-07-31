@@ -8,6 +8,21 @@
 
 # Gemini Embedding 2：全模态统一向量空间
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google出手统一全模态检索：Gemini Embed…"))
+    一句话
+    核心价值
+    关键实验结果
+    深度分析
+    实践启示
+    关联阅读
+    相关实体
+```
+
 ## 一句话
 
 Google DeepMind 论文（arXiv 2605.27295）：一个原生多模态 embedding 模型，把文本/图片/音频/视频及混合输入统一压到同一 3072 维向量空间，在多模态检索、MTEB、代码检索上都达 SOTA。

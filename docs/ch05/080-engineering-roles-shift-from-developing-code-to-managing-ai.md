@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/engineering-roles-shift-from-developing-code-to-managing-ai.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Engineering roles shift from…"))
+    背景
+    关键数据
+    角色转变的具体表现
+    度量框架的失配
+    建议措施
+    相关趋势
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 AI 正在深刻重塑工程角色，承接组织部分编码责任的同时，将工作职责转向管理 AI 输出。
 

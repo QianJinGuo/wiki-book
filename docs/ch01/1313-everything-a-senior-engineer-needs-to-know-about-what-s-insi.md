@@ -8,6 +8,15 @@
 
 > **来源**: [Everything a Senior Engineer Needs to Know About What's Inside an LLM](https://www.pathtostaff.com/p/everything-a-senior-engineer-needs)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Everything a Senior Engineer…"))
+    概述
+```
+
 ## 概述
 
 Published Time: 2026-06-20T17:00:09+00:00

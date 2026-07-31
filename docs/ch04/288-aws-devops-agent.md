@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS DevOps Agent 实战：云网络故障自主调…"))
+    深度分析
+      混合云网络故障的特殊复杂性
+      DevOps Agent 的三大核心能力层次
+      5 阶段 Mitigation Plan 的工…
+      自建快指标的必要性
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - 混合云网络故障的根因散落在 CloudWatch、CloudTrail、VPC、TGW、DX、VIF 等多个控制面，人工调查耗时 30-60 分钟
 - AWS DevOps Agent 通过 webhook 接收 CloudWatch 告警事件，自主调用 AWS API 收集多源证据，生成 Investigation 报告

@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Qoder Skills 完全指南：从零开始，让 AI …"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行 涉及agent领域的核心技术议题。

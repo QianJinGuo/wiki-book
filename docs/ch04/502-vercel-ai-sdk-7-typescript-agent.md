@@ -8,6 +8,26 @@
 
 > **Background**：Vercel AI SDK 是 TypeScript 生态中最流行的 AI 应用开发 SDK（周下载量 1600 万+），AI SDK 7 是其重大版本更新，聚焦 Agent 开发的生产化能力。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Vercel AI SDK 7 — TypeScript…"))
+    核心定位
+    五大能力域
+      1. Develop Agents — 开发控制
+      2. Run Agents — 运行保障
+      3. Integrate Any Agent …
+      4. Observe Agents — 可观测性
+    技术架构洞察
+      Tool Context 隔离模型
+      WorkflowAgent 持久化模型
+      MCP Apps 集成模式
+    生态位分析
+    相关主题
+```
+
 ## 核心定位
 
 AI SDK 7 将自身定位为 **Agent 开发的统一抽象层**——在任意模型提供商之上提供标准化的 Agent 开发、运行、集成、观测和多模态能力。Vercel 的开源 Agent 框架 Eve 即构建于 AI SDK 之上。

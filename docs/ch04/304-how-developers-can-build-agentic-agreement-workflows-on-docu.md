@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/how-developers-can-build-agentic-agreement-workflows-on-docu.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Developers Can Build Age…"))
+    技术细节
+      Agentic Workflow 架构
+      API v2.1 关键端点
+      Webhook 与事件订阅
+      生产注意事项
+    深度分析
+      架构范式转变：从事件驱动到意图驱动
+      MCP 作为 Agent 协议层的战略定位
+      Agreement Manager API 的…
+      IAM Toolkit 的配置即代码意义
+    实践启示
+      立即可行动项
+      中期建设路径
+      架构决策建议
+      风险提示
+    相关实体
+```
+
 ## 核心要点
 
 - DocuSign Momentum 2026 大会上展示的 Agentic Agreement Workflows 将传统电子签名集成升级为**自主文档处理**

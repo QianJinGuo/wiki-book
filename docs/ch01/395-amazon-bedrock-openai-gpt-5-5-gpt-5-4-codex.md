@@ -8,6 +8,34 @@
 
 > AWS 与 OpenAI 的深度合作标志着跨平台模型调用成为主流。用户可在 AWS 生态内直接调用 OpenAI 最新模型，享受 Bedrock 的安全、合规与可观测性基础设施。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("开始在 Amazon Bedrock 上使用 OpenA…"))
+    背景与战略意义
+    接入方式
+      1. 通过 Bedrock API 直接调用
+      2. 通过 Bedrock AgentCore…
+      3. 作为 Codex Agent 的推理后端
+    模型对比与选型
+      GPT-5.5 的核心优势
+      选型建议
+    架构最佳实践
+      多模型路由策略
+      成本管控
+      安全合规
+    与 Anthropic 模型的混合使用
+    深度分析
+      云平台模型聚合是 AI 基础设施的商品化信号
+      多模型路由策略的工程经济学
+      模型混合编排的'比较优势'原则
+      Codex + Bedrock 的企业级价值
+    实践启示
+    相关实体
+```
+
 ## 背景与战略意义
 
 OpenAI 模型登陆 Amazon Bedrock 是 2026 年 AI 基础设施领域最重要的合作之一。在此之前，用户需要在 OpenAI 自有 API 和 AWS 生态之间维护两套调用栈、两套权限体系和两套成本管理方案。如今，GPT-5.5、GPT-5.4 和 Codex 作为 Bedrock 的一等公民（first-class citizens），可直接通过 Bedrock API 调用，这意味着：

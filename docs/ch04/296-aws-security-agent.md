@@ -6,6 +6,29 @@
 
 # 使用 AWS Security Agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用 AWS Security Agent 构建应用安全…"))
+    概览
+    三个生命周期阶段
+      1. 设计评审 Design Review
+      2. 代码审计 Code Audit
+      3. 渗透测试 Penetration Te…
+    Agent Space 创建 + GitHub…
+    AWS Security Agent 能力对比表
+    限制与陷阱
+    与飞来汇案例的对比
+    实践启示
+    深度分析
+      1. 三阶段生命周期将安全评审从'上线后'迁移…
+      2. Agent Space 隔离是安全即代码…
+      3. LLM 推理 vs. 传统 SAST 的…
+      4. 渐进式集成路径是 DevSecOps 落…
+```
+
 ## 概览
 
 AWS 官方发布的 **AWS Security Agent 应用安全生命周期指南**，系统性介绍从代码评审、代码审计到渗透测试三阶段的 AI 驱动闭环。这是**机制层**的官方文档，与 **飞来汇 跨境支付实战案例**（业务落地视角）形成互补——同一服务、不同维度。

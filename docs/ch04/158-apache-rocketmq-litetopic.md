@@ -8,6 +8,36 @@
 
 > **Background**：本文档基于阿里云消息团队官方公众号文章建立，系统梳理了 Apache RocketMQ 5.5.0 新增 LiteTopic 消息模型的设计动机、核心机制和 Multi-Agent 通信实战架构。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Apache RocketMQ LiteTopic 消息模型"))
+    背景：行业收敛到同一组基础设施需求
+    核心机制
+      双层结构：父 Topic + 动态子 Lite…
+      RocksDB 索引层
+      事件驱动 Ready Set
+      Broker 侧消费位点持久化
+    Multi-Agent 异步通信架构
+      典型场景
+      Java 示例
+    与 MCP 协议演进的关系
+    企业级增强：Consume Suspend
+    深度分析
+      设计哲学：从'共享消费'到'会话独占'
+      RocksDB 选型的工程权衡
+      事件驱动 Ready Set 的调度代价
+      与 Pop 模式的本质区别
+    实践启示
+      何时选择 LiteTopic
+      迁移路径建议
+      运维关注点
+      与现有 MCP/A2A 框架的集成策略
+    相关实体
+```
+
 ## 背景：行业收敛到同一组基础设施需求
 
 AI 行业的协议层和框架层（Anthropic MCP 2026 Roadmap、Google ADK Long Running Agent）正在收敛到三个核心需求：

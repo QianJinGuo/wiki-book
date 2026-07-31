@@ -8,6 +8,33 @@
 
 **SAP Autonomous Enterprise** 是 SAP 在 2026 年 5 月 12 日 SAP Sapphire 大会上正式发布的企业 AI 转型框架，旨在将 AI Agent 深度嵌入企业关键业务流程，实现 "human-AI collaboration" 的下一代企业运营模式。该框架以 **SAP Business AI Platform** 为基础设施，辅以 **SAP Autonomous Suite** 执行层和 **Joule Work** 交互界面，构成一套完整的企业级 AI 自治系统。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SAP Unveils the Autonomous E…"))
+    核心架构：三大支柱
+      SAP Business AI Platform
+      SAP Autonomous Suite
+      Joule Work：重新定义用户体验
+    生态加速：€1 亿合作伙伴基金
+    战略合作伙伴全景
+    战略意义
+    深度分析
+      1. 企业级 AI 的 '准确性陷阱' 与 S…
+      2. 平台化战略：SAP 的生态锁定机制
+      3. 基础模型多元化的风险对冲
+      4. Industry AI 的垂直深耕：数据…
+    实践启示
+      1. 评估企业 AI 供应商时，关注'业务上下…
+      2. 利用合作伙伴基金降低 AI 落地前期成本
+      3. 制定'模型组合战略'而非依赖单一基础模型
+      4. 将 Industry AI 视为行业数据…
+    相关链接
+    相关实体
+```
+
 ## 核心架构：三大支柱
 
 ### SAP Business AI Platform

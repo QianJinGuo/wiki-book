@@ -8,6 +8,20 @@
 
 > **v×c=56** | value=7 confidence=8 stars=3 | 2026-07-05
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NVIDIA 推理软件栈：如何助力实现更低 Token 成本"))
+    深度分析
+      推理成本的'复利效应'：软件栈的叠加优化
+      TensorRT LLM 的角色：从模型到硬件…
+      Dynamo 推理框架：从单机到集群的扩展
+      医疗 AI 案例：延迟约束下的吞吐量优化
+    实践启示
+```
+
 ## 摘要
 
 随着企业从 AI 试点转向生产型 AI 工厂，基础设施的决策核心已从芯片峰值规格转向每 Token 成本——即每美元、每瓦特以及在规定的延迟目标内能够交付多少有用的 Token。 NVIDIA 的全栈推理软件与 NVIDIA GPU、CPU、网络和系统协同设计，在 Blackwell 平台上仅一个月内就将 DeepSeek V4 模型的 Token 成本降低至原来的五分之一。 多家头部推理服务提供商（Baseten、Cognition、Deep Infra、Together AI 等）已通过 NVIDIA 推理软件栈获得显著的性能提升和成本优化。

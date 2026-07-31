@@ -4,6 +4,27 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Pwn2Own Berlin 2026, Day Thr…"))
+    事件概述
+    关键结果
+    最终排名
+    深度分析
+      DEVCORE 的统治性表现
+      AI 基础设施成为新焦点
+      企业基础设施持续承压
+      漏洞发现的经济动力学
+    实践启示
+      对安全研究社区
+      对企业安全团队
+      对 AI 基础设施提供商
+      对漏洞研究员
+```
+
 ## 核心要点
 
 ```mermaid

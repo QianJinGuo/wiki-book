@@ -8,6 +8,22 @@
 
 OpenAI 于 2026年7月10日正式发布 GPT-5.6 系列，同时将 Codex 整合进 ChatGPT 桌面应用，并推出新智能体工具 ChatGPT Work。三件事同日发生，核心变化不是新模型跑分，而是 OpenAI 将顶级 Agent 能力拆成了可按任务购买的多个价格档位。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5.6 Sol/Terra/Luna 分层定价，…"))
+    模型层级与定价
+    Benchmark 表现
+    架构变化
+    Amazon Bedrock Availabi…
+      Bedrock Inference Engine
+      Prompt Caching
+      Security
+      Regional Availability
+```
+
 ## 模型层级与定价
 
 GPT-5.6 系列分三个能力层级：旗舰 Sol、均衡 Terra 和轻量 Luna。API 标价分别为每百万 token 5 / 2.5 / 1 美元（输入）和 30 / 15 / 6 美元（输出）——Sol 的标价约为 Claude Fable 5 的一半。Sol、Terra、Luna 三档模型加上 medium / high / max / ultra 多级推理深度，同一模型体系下出现多个独立的价格-能力组合。显式缓存断点和多 Agent 并行进一步丰富了定价维度——单次任务的总成本不再由模型名称决定，而是由所选档位组合决定。

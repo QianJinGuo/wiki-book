@@ -8,6 +8,27 @@
 
 > **Background**: PaperMtn security research blog, 2026-06-11. Built a misuse detection system on top of Claude Enterprise Compliance API, catching prompt injection, jailbreak, and data exfiltration through content-layer analysis.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Detecting Misuse with the Cl…"))
+    Core Findings
+      Claude Compliance API O…
+      Key Finding: The Threat…
+      Detection Architecture
+      Real Detection Cases
+    Implications for Agent/…
+    深度分析
+      内容层检测 vs 系统提示保护的安全范式转移
+      双层检测架构的工程优势
+      LLM-as-Judge 的安全检测范式
+      Compliance API 作为企业 Age…
+    实践启示
+    Related
+```
+
 ## Core Findings
 
 ### Claude Compliance API Overview

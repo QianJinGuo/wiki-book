@@ -8,6 +8,17 @@
 
 AgentCompile is an LLM-guided compilation framework for `Transformer` inference optimization, proposed by researchers at City University of Hong Kong. It places a large language model in the role of "compilation advisor" rather than code generator, achieving an average **5.66× CUDA inference speedup** over PyTorch eager mode.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentCompile: LLM-Guided CUD…"))
+    Architecture
+    Performance
+    Significance
+```
+
 ## Architecture
 
 AgentCompile's core design principle is to keep the LLM strictly in a semantic decision-making role. The LLM suggests computation pattern recognition, candidate implementation priorities, and risk annotations — but the compiler always controls correctness-critical steps including candidate space construction, template generation, compilation, numerical validation, and fallback.

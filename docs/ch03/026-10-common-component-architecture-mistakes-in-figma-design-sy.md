@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐ | 7.1KB | `entities/component-architecture-mistakes-figma-zeroheight.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("10 common component architec…"))
+    技术洞察
+    深度分析
+      过度工程与工程不足的钟摆效应
+      命名作为系统可发现性的基础
+      状态变体的完整覆盖为什么重要
+      设计-开发不对齐的根因
+    实践启示
+      设计系统建设初期
+      规模化设计系统
+      可访问性不是后期添加
+    相关实体
+```
+
 ## 核心要点
 1. **过度工程** — 组件试图处理过多变体，导致复杂性拖慢设计和开发
 2. **工程不足** — 组件太简单，随着用例出现需要频繁创建新组件

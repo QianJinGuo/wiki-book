@@ -8,6 +8,21 @@
 
 > 2026 年 5 月，MoE 训练效率的竞技场上两条技术路线同时取得突破：DeepSeek 在 DeepGEMM 库中开源 Mega MoE（巨型 MoE），Tri Dao 领导的联合团队发布 SonicMoE（音速 MoE）——一个走"大"的路线，一个走"快"的路线，共同指向细粒度 MoE 训练的内存与带宽瓶颈。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DeepSeek做大→Mega MoE，Tri Dao团…"))
+    深度分析
+      细粒度 MoE 的双重瓶颈与 SonicMoE…
+      软件层面的架构可迁移性
+      算法与硬件的协同设计
+      Mega MoE vs SonicMoE：两种思路
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 混合专家模型（MoE）正在主导前沿 AI 架构——DeepSeek V3.2、Kimi K2.5、Qwen3、Mixtral 8x22B 等明星模型都是 MoE 架构。但随着专家粒度越来越细（两年间粒度提升 9 倍），训练面临两堵墙：**显存墙**（细粒度专家产生大量中间激活值）和**内存带宽墙**（每个专家处理的数据量太少，GPU 算力无法饱和）。SonicMoE 通过算法级重设计——激活内存与专家粒度解耦 + IO 感知的算子融合——在 Blackwell GPU 上实现前向传播比 DeepGEMM 平均高 54%、反向传播高 35% 的加速。同时 DeepSeek 的 Mega MoE 也在 DeepGEMM 库中开源，代表"更大参数规模"的技术路径。

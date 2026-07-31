@@ -6,6 +6,24 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI-powered honeypots: Turnin…"))
+    相关实体
+    深度分析
+      核心逻辑：AI 时代防御的范式转换
+      技术架构：三组件模型
+      系统提示词工程：欺骗的核心
+      战略价值：从检测到操控
+    实践启示
+      对于安全团队
+      对于 AI 安全研究者
+      对于组织的安全战略
+```
+
 ## 相关实体
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
 - [How to Detect AI Agents on Your Website | Full Guide](../ch04/298-ai-agent.html)

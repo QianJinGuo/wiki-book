@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/claude-code-why-instructions-ignored-jia-gou-x-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Code 为什么会忽略指令：四类失效原因 …"))
+    核心概述
+    指令失效的四类原因
+    五层规则框架
+    CLAUDE.md 的定位：入口卡而非总控台
+    实操：变胖的 CLAUDE.md 怎么收
+    Subagent 作为上下文卫生工具
+```
+
 ## 核心概述
 
 当 `CLAUDE.md` 越写越长后，Claude Code 会开始忽略某些指令。根本原因不是模型不行，而是我们把太多不同性质的规则塞进了同一个入口文件。本文提出四类失效原因和五层规则框架，将模糊的"没听话"问题拆解为可诊断、可工程化的系统设计问题。

@@ -9,6 +9,21 @@
 > 来源：技术极简主义，2026-04-08，基于 Claude Code 源码泄露事件（npm 打包未排除 .map 文件 → 1900+ TS 文件、51 万行核心代码意外曝光 → GitHub 数小时 1100+ star）
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("深入理解 Claude Code 源码中的 Agent …"))
+    深度分析
+      一、源码泄露事件背景
+      二、8 步核心循环详解
+      三、工具执行与权限
+      四、上下文管理的三层压缩策略
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 借助 Anthropic Claude Code 源码泄露事件，文章沿着一个请求的完整生命周期（用户输入消息 → Agent 交付可工作代码）拆解每个环节。**核心断言**："LLM 调用本身只是一行代码，真正让 Agent 可用的是围绕这行代码精心设计的 Agent Harness。" 整个系统由 `query()` 异步生成器函数驱动，循环 8 个步骤直到任务完成。

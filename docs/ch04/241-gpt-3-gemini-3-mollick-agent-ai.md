@@ -8,6 +8,29 @@
 
 > 2026-06-07 引用自 Ethan Mollick《Three Years from GPT-3 to Gemini 3》，One Useful Thing，2025-11-18。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("三年从 GPT-3 到 Gemini 3：Mollick…"))
+    三年的指数曲线
+    编码工具不只是程序员的工具
+    PhD 级智能测试
+    结论
+    深度分析
+      从'能说'到'能做'的范式跃迁
+      Agentic AI 的权力不对称
+      'PhD 级智能'的定义陷阱
+      'Human in the Loop'的语义迁移
+    实践启示
+      1. 用'任务'替代'问题'重构工作流
+      2. 建立'AI 团队成员'的管理心智
+      3. 投资'任务分解'而非'Prompt 工程'
+      4. 主动为 Agent 设置检查点
+    相关实体
+```
+
 ## 三年的指数曲线
 
 2022 年 11 月：AI 只能写一个关于 candy-powered FTL 飞船逃离水獭的**连贯段落**。

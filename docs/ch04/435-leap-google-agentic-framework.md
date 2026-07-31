@@ -6,6 +6,24 @@
 
 > Google Cloud AI Research 与 DeepMind 联合提出的 LEAP（Language-model Agentic Proof-framing）框架，用 Agentic 方式攻克形式化数学证明。核心洞察：LLM 在形式化证明上的弱点不是数学能力不足，而是缺少与验证器的结构化交互。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LEAP：Google Agentic Framewor…"))
+    核心创新
+    关键结果
+    方法论意义
+    与 wiki 已有知识的关联
+    深度分析
+      Agentic 循环：超越'一次生成'的范式突破
+      AND-OR DAG 作为推理骨架
+      '不用专用微调'的方法论启示
+      验证器即环境的架构设计
+    实践启示
+```
+
 ## 核心创新
 
 传统方法依赖专门的 prover model 微调，默认通用 LLM 不够适合 formal theorem proving。LEAP 证明了另一条路：**不改模型，改交互方式**。

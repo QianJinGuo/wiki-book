@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build an AI-Powered Equipmen…"))
+    深度分析
+      AgentCore Runtime 的单端点架…
+      RAG 在垂直领域的知识工程实践
+      记忆分层的工程意义
+      扩展性设计的 @tool 模式
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AWS 发布的官方教程，演示如何使用 Amazon Bedrock AgentCore 构建面向农业重型机械维修的 AI 助手。该方案将 Strands Agents SDK、Amazon Nova 2 Lite 基础模型、Bedrock Knowledge Base（RAG）和 AgentCore Memory 组合为端到端的维修诊断系统，使现场技术人员能通过自然语言获取基于制造商文档的精准诊断建议、零件识别和维修流程指导。

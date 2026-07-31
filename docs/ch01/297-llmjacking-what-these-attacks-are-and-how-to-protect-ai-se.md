@@ -7,6 +7,20 @@
 # LLMjacking: what these attacks are, and how to protect AI servers
 AI security covers more than just data theft prevention, restricting [rogue AI agents](https://www.kaspersky.com/blog/moltbot-enterprise-risk-management/55317/), or stopping assistants from giving harmful advice. A relatively simple but rapidly scaling threat has emerged: attempts to hijack computational power and exploit someone else's neural network for personal gain. This is known as LLMjacking. With AI compute costs widely predicted to [surge dramatically](https://oplexa.com/ai-inference-cost-crisis-2026/), the number of attackers driven by these motives is poised to grow. Consequently, when deploying proprietary AI servers and their supporting ecosystems like [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) or [MCP](https://en.wikipedia.org/wiki/Model_Context_Protocol), it's critical to establish rigorous security measures from day one.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LLMjacking: what these attac…"))
+    Statistics from a honey…
+    What are the attackers …
+    Conclusions and defense…
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## Statistics from a honeypot
 The speed and scale of these resource-hijacking attempts are best illustrated by an [experiment](https://web.archive.org/web/20260412230759/https:/www.reddit.com/r/ollama/comments/1sff7i0/30_days_of_an_llm_honeypot/?solution=64b4494d52a1506664b4494d52a15066&js_challenge=1&token=*** documented in detail in April 2026. The investigator configured a Raspberry Pi to masquerade as a high-performance private AI server, and made it accessible from the internet. When queried, it reported the availability of Ollama, LM Studio, AutoGPT, LangServe, and text-gen-webui servers — all tools commonly used as wrappers for locally hosted AI models. The server also appeared ready to accept API requests in the OpenAI format, which has become the industry standard.
 All these services were seemingly powered by a local instance of Qwen3-Coder 30B Heretic, one of the most powerful open-source models, with its safety alignment removed. To throw in a sweetener, the honeypot reported the presence of various RAG databases and an MCP server with tempting capabilities like *get_credentials *on board.

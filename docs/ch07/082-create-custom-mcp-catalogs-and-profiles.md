@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/create-custom-mcp-catalogs-and-profiles.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Create Custom MCP Catalogs a…"))
+    深度分析
+      企业 MCP 治理的结构性需求
+      Profiles 作为上下文隔离层
+      OCI 分发模型的安全含义
+      平台与个人的分工边界
+    实践启示
+    关联阅读
+    相关实体
+```
+
 ## 核心要点
 -
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/create-custom-mcp-catalogs-and-profiles.md)

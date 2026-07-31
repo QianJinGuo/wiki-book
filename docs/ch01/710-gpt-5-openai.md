@@ -6,6 +6,21 @@
 
 # GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GPT-5级推理能力塞进语音模型，OpenAI把同传翻译…"))
+    相关实体
+    深度分析
+      1. 语音模型正在从'听话回话'进化为'能干活…
+      2. 同声传译成本结构性崩塌：66倍价差背后的…
+      3. 推理强度5档可调是工程实用的精细化设计
+      4. Preambles 设计体现了对用户体验…
+    实践启示
+```
+
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/821-openai-gpt-realtime-voice-models-qbitai.html)
 - GPT-5.5 实测

@@ -8,6 +8,26 @@
 
 > **Background**: 本文档基于机器之心对浙江大学与蚂蚁集团联合实验室 ACL 2026 SAC Highlight 论文的报道建立。论文发现 LLM 可以不执行任何代码就预测机器学习方案的优劣，准确率达 61.5%，并将这一能力接入 Agent 后实现 6 倍搜索效率提升。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ML Agent Predict-Before-Exec…"))
+    核心问题：ML Agent 的执行瓶颈
+    核心洞察：执行前预测
+      Data-centric Solution P…
+      Verified Data Analysis …
+    实验验证
+      数据集
+      主实验结果
+      关键发现
+    FOREAGENT：Predict-then-…
+    与 Loop Engineering 的连接
+    边界与启示
+    相关实体
+```
+
 ## 核心问题：ML Agent 的执行瓶颈
 
 当前的机器学习 Agent 遵循 Generate-Execute-Feedback 循环：生成方案→执行→看反馈→改进。但机器学习方案的执行代价极高——一次完整的训练流程可能耗时数小时。Agent 能轻易生成十套方案，但执行预算只够跑一套。这形成了**执行时间瓶颈**：Agent 的探索空间被物理执行时间硬性限死。

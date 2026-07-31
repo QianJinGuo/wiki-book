@@ -14,6 +14,34 @@
 **来源**：MiniMax
 ---
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("一个 AI 还是不够的：MiniMax Agent Te…"))
+    背景
+    单 Agent 的四个痛点
+      痛点一：上下文焦虑
+      痛点二：注意力漂移
+      痛点三：IM 场景的延迟期望
+      痛点四：角色混淆
+    Agent Team 的核心认知
+    三个关键架构差异
+      差异一：对抗式验证
+      差异二：状态机管理
+      差异三：隔离上下文
+    Owner-Worker-Verifier 三角色
+      Owner（项目经理）
+      Worker（专业执行）
+      Verifier（对抗检查）
+    Task 派发 vs Agent Team
+    IM 场景落地
+    Verifier 在研究场景的具体工作
+      来源检查
+      时效检查
+```
+
 ## 背景
 MiniMax 将 Agent 产品升级，新名字：**Mavis — MiniMax as a Jarvis**。
 此次分享做 Agent Team 背后的思考：怎么设计 Agent team？为解决什么问题？付出什么成本？用户什么时候该用 Agent Team、什么时候没必要用？

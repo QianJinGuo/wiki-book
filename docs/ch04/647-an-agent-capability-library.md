@@ -8,6 +8,15 @@
 
 > **来源**: [An agent capability library](https://samihonkonen.com/posts/an-agent-capability-library/)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("An agent capability library"))
+    概述
+```
+
 ## 概述
 
 Published Time: 2026-06-22T12:00:00+03:00

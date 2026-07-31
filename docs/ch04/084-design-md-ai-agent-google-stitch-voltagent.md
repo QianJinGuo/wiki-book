@@ -6,6 +6,26 @@
 
 # DESIGN.md：AI 设计 Agent 的视觉约束对齐文件（Google Stitch × VoltAgent）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("DESIGN.md：AI 设计 Agent 的视觉约束对…"))
+    概述
+    核心命题
+    VoltAgent awesome 集合
+      思路有多简单
+      浏览站点
+    仓库已收集的 73 个网站
+    DESIGN.md 里写什么
+    怎么用
+      最简单的玩法
+      进阶玩法
+    核心洞察
+    与现有 entity 的差异化
+```
+
 ## 概述
 
 老章很忙（Ai学习的老章）2026-05-22 介绍 **Google Stitch 推出的 DESIGN.md 概念**——和 AGENTS.md 是兄弟文件。**编码 Agent 读 AGENTS.md**（怎么构建项目），**设计 Agent 读 DESIGN.md**（项目长什么样、什么感觉）。**VoltAgent 团队开源 `awesome-design-md` 仓库**，扒了市面上 73 个主流网站的 DESIGN.md，可直接 copy 到项目根目录用。AI Agent 读完即能产出风格一致的 UI——不用 Figma 导出、不用 JSON schema、不用任何特殊工具。

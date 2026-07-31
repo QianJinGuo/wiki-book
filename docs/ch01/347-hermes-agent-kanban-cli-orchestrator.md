@@ -4,6 +4,30 @@
 
 > 📊 Level ⭐⭐ | 11.7KB | `entities/hermes-agent-kanban-deep-test-by-wjjagi-2026.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hermes-Agent 官方 Kanban 深度实测：…"))
+    核心结论
+    Kanban 架构设计
+      数据库与并发控制
+      任务状态机
+      调度器（Dispatcher）
+      Worker 启动命令
+    七条实测踩坑记录
+      Bug 1：终端超时与 Kanban 运行时长…
+      Bug 2：默认断路器过于激进
+      Bug 3：Auto-maintain 脚本查…
+      Bug 4：Worker 进程僵死
+    为什么 Gateway 才是本体
+    上层 Orchestrator 选型对比
+    推荐工程架构
+    实操建议
+    深度分析
+```
+
 ## 核心结论
 
 Hermes-Agent 的真正核心是 **Gateway（端口 8642）**，Chat 和 TUI 只是两个不同的前端载体。 上层用商业 Code CLI 做 Orchestrator（认知/控制层），下层用 Hermes-Agent 做执行框架（执行层），中间用 Gateway API + MCP 协议打通。

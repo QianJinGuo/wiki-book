@@ -10,6 +10,30 @@
 
 > **Core insight**: CAISI V4 评估使用 IRT（Item Response Theory）方法论对开放模型进行 Elo 评分，但其结果受限于三个 benchmark 的异常值（CTF-Archive-Diamond、PortBench、ARC-AGI-2），且评估 harness（bash+for-loop）与模型实际训练环境（Claude Code/OpenCode）严重不匹配，导致能力对比系统性失真。Interconnects 两位作者对此持不同观点——Florian 认为开放前沿模型与闭源替代品的真实性能差距更小，Nathan 认为差距更大但基准测试同样不完美。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Latest open artifacts (#21):…"))
+    CAISI V4 IRT 评估的方法论缺陷
+    Harness 选择扭曲能力评估
+    开放模型生态的关键进展
+    关键数据/实践启示
+    深度分析
+      1. 21 期的模型密集度反映了开源加速趋势
+      2. Gemma 4 的 Google 战略定位
+      3. 项目反应理论（IRT）在模型评估中的应用
+      4. 开源模型的'长尾评测'问题
+    实践启示
+      1. 模型选型：关注 IRT 校准后的得分而非…
+      2. 追踪 Interconnects Lat…
+      3. Gemma 4 适合'易部署'场景
+      4. 评估框架：引入 IRT 或类似校准方法
+    相关实体
+    相关引用
+```
+
 ## CAISI V4 IRT 评估的方法论缺陷
 
 CAISI（Center for AI Standards and Innovation）使用 Item Response Theory 在 9 个不同 benchmark 上计算 Elo 分数，以评估 DeepSeek V4 等开放模型与美国前沿模型的差距。表面上这种 IRT 方法允许跨不同 benchmark 集进行比较，但实际结果显示 DeepSeek V4 在 CTF-Archive-Diamond、PortBench（CAISI 私有 benchmark）和 ARC-AGI-2 上得分异常低——其中 CTF-Archive-Diamond 仅运行了部分 benchmark 并通过 IRT 外推，PortBench 是闭源评估，ARC-AGI-2 的评分方法与公开 leaderboard 不同。这些 benchmark 特定的异常值对总体 Elo 产生了巨大影响，放大了能力差距的感知幅度。

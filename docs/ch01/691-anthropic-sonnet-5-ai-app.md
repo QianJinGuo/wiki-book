@@ -8,6 +8,18 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic深夜连放两弹sonnet-5全新ai科研app重磅上线.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic深夜连放两弹：Sonnet 5、全新A…"))
+    技术分析
+      一、Claude Sonnet 5
+      二、Claude Science：给科学家的A…
+    定价、Token 变更与安全评估
+```
+
 ## 核心要点
 
 Anthropic深夜连放两弹：Sonnet 5、全新AI科研App重磅上线

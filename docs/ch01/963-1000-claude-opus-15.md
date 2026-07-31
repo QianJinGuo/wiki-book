@@ -8,6 +8,21 @@
 
 > **来源**：前端Q / winty（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/webwright-microsoft-1000-lines.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("微软 1000 行代码，把 Claude Opus 干翻…"))
+    深度分析
+      核心设计哲学：Terminal as Harn…
+      三大工程优势
+      Minimalist Harness 的实证意义
+      适用场景扩展
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Webwright 是微软研究院 AI Frontiers 实验室于 2026 年 5 月开源的 Web Agent 项目，核心框架仅 ~1000 行 Python 代码（Runner ~450 行 + Playwright Environment ~570 行 + CLI ~150 行）。在 Odysseys benchmark 上，Webwright + GPT-5.4 达到 60.1%，超越 Claude Opus 4.6（44.5%）15.6 个百分点，相对基线 GPT-5.4 提升 79.4%。

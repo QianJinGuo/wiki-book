@@ -50,6 +50,16 @@ Below, I share my approach to creating effective design docs and explain what be
 
 *   [Driving Your Design Doc through Review](http://refactoringenglish.com/excerpts/write-an-effective-design-doc/#driving-your-design-doc-through-review)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to Write an Effective So…"))
+    An example design doc🔗…
+    When should you write a…
+```
+
 ## An example design doc[🔗](http://refactoringenglish.com/excerpts/write-an-effective-design-doc/#an-example-design-doc)
 
 The most common question I get about design docs is where to find a good one. I’ve never seen a public design doc that I consider high-quality. All of mine are hidden away at the companies that paid me to write them.

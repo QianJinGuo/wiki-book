@@ -9,6 +9,22 @@
 > **Background**<br>
 > 本文来自技术极简主义公众号的深度整理，引用 Claude Code 负责人 Boris Cherny 的 Loop Engineering 理念，系统讲解了从 Prompt Engineering 到 Multi-Agent 再到 Loop Engineering 的演进路径、三种 Loop 形态以及 Open/Closed-loop 的核心区分。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("打造 Claude Code 可持续推进的工作流：Loo…"))
+    核心引用
+    2024→2026 的演进路径
+    Loop 的三种形态
+      1. 单 Agent 循环
+      2. 多 Agent 舰队循环（Fleet L…
+      3. Open-loop vs Closed-…
+    实际应用建议
+    与现有实体的关系
+```
+
 ## 核心引用
 
 Claude Code 负责人 Boris Cherny：

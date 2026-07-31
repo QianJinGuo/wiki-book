@@ -8,6 +8,25 @@
 
 # Understand-Anything：代码知识图谱
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("老代码克星：36k Star的 AI 神器，跑一条命令就…"))
+    一句话
+    核心功能
+    安装
+    深度分析
+    实践启示
+    相关实体
+    第 2 来源：码途漫谈 2026-06-11 …
+      补充 1：README 的设计哲学——'Gra…
+      补充 2：知识库分析能力（不只服务代码）
+      补充 3：完整的多语言支持列表
+      补充 4：风险与边界的两个具体警示
+```
+
 ## 一句话
 
 Understand-Anything（36k stars）：Claude Code 插件，`/understand` 命令将代码库生成交互式知识图谱，MIT 开源。

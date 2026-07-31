@@ -6,6 +6,29 @@
 
 # AI Agent 的内核是 250 行 while 循环：从零搭建 CLI Agent 的 7 阶段教程
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent 的内核是 250 行 while 循环…"))
+    Overview
+    7 阶段渐进
+    Stage 1-2 核心代码与设计
+      Stage 1：15 行 while True…
+      Stage 2：工具调用协议
+    Stage 3-4：Skill + 斜杠命令
+      Stage 3：Skill 动态加载
+    角色
+    指令
+      Stage 4：斜杠命令（/skills, /…
+    Stage 5-6：持久化 + 自动压缩
+      Stage 5：JSON 持久化（最大坑）
+      Stage 6：上下文自动压缩
+    Stage 7：后台定时循环
+      两个关键设计决策
+```
+
 ## Overview
 
 微信公众号 2026-06-01 发表**实战教程**：用 Python + Ollama + qwen3.5:9b 从零搭建一个 250 行可运行的 CLI AI Agent，7 个阶段逐步递进。技术栈无需 GPU、无需 API Key，完全本地运行。

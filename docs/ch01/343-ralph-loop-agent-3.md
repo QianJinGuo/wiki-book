@@ -4,6 +4,33 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Ralph Loop 不够用：长时间 Agent 还缺这…"))
+    Codex Goals工作原理解析
+      Ralph Loop的技术本质
+      模糊性的复利效应
+    Jarrod Watts的优化工作流
+      Phase 1：前期澄清（Interview阶段）
+      Phase 2：多Agent编排架构
+      Phase 3：跨上下文记忆维护
+    深度分析
+      Ralph Loop的根本局限
+      多Agent架构的认知科学依据
+      持久化记忆的工程价值
+      模糊性前置的成本收益分析
+    实践启示
+      1. 避免单独依赖Ralph Loop
+      2. 投资前期需求澄清
+      3. 至少采用双Agent评审机制
+      4. 设计可审计的记忆系统
+    相关资源
+     相关实体
+```
+
 ## 核心要点
 - **Ralph Loop本质**：Codex /goal底层采用重复提示循环+SQLite跟踪，通过"Continue working toward the active thread goal"反复提示同一目标 
 - **三大缺陷**：模糊性随迭代复利增长（compounding ambiguity）、多agent架构优于单体agent、跨上下文记忆对长运行任务至关重要 

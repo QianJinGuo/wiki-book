@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/from-code-to-molecules-an-ai-driven-egfr-inhibitor-discovery-journey.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从代码到分子系列：一场由 AI 驱动的 EGFR 抑制剂…"))
+    概述
+    核心技术
+    深度分析
+      1. AI驱动的药物发现范式转变
+      2. 多工具链集成的技术架构
+      3. AWS Bedrock的平台化价值
+      4. 自然语言交互降低技术门槛
+    实践启示
+      1. 建立AI原生的药物发现工作流
+      2. 构建领域专用的Agent Skills资产
+      3. 重视数据格式标准化与互操作性
+      4. 采用云原生架构平衡成本与性能
+    来源
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

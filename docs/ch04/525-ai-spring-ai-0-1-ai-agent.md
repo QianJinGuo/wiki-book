@@ -11,6 +11,17 @@ Linux说过一句很经典的话：Talk is cheap, show me the code.
 最近在学习AI Agent开发的时候，填鸭式地被灌输了很多新知识，但是这些新知识就像是漂浮的"空中楼阁"，看得见但摸不着，只知道理论如此但是不知道具体实现为何物。计算机工程的事儿，往往真的听再多毫无体感，看一遍代码就基本一通百通，由此产生一个很神奇的想法："最好的学习资料是代码，既然我要学AI Agent开发，那就让AI Agent本身帮我生成学习资料。"于是乎，便有了这篇文章，即我本文的项目代码几乎是由AI生成，我在其中的角色只是指挥家与验收员。
 1、该项目本身纯作为学习用途的Demo，只是用作展示"理论背后看得见的代码"。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI实践｜基于 Spring AI 从0到1构建 AI …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)

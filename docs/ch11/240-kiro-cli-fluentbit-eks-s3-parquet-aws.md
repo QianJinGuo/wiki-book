@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Kiro CLI 自动搭建 FluentBit 日志…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

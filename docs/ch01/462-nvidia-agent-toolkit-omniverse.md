@@ -10,6 +10,21 @@
 > **来源**: https://mp.weixin.qq.com/s/tIuV2nOwA51qLsD0DDWAqw
 > **发布**: NVIDIA 英伟达 (2026-07-21)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NVIDIA Agent Toolkit + Omniv…"))
+    深度分析
+      Agent Toolkit + Omniver…
+      ovrtx、ovphysx、CAD-to-Si…
+      从'手动构建仿真场景'到'智能体自动准备仿真场…
+      '仿真就绪'作为 Agent 能力的可测量标准
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 NVIDIA 宣布将 Omniverse 库整合到 NVIDIA Agent Toolkit 中，为 AI 智能体赋予物理 AI 能力——包括 RTX 传感器仿真 (ovrtx)、GPU 加速物理仿真 (ovphysx) 和 CAD-to-SimReady 资产转换。这意味着 AI 智能体现在可以在开发者已有的 3D 工具（如 Blender、SideFX Houdini、PTC）中工作，自动检查 3D 场景、标记问题、准备可直接用于仿真的资产，从而加速机器人、工厂和自主系统在进入现实世界之前在仿真环境中的设计、测试和训练。黄仁勋在发布时表示："物理 AI 时代将始于在仿真中构建。"

@@ -6,6 +6,21 @@
 
 # Wiki Evolver Skill System Design (GPT-5.5 Copilot Session)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Wiki Evolver Skill System De…"))
+    深度分析
+      从采集器到操作系统
+      Knowledge Ladder 的层次设计
+      与现有 Skill 生态的关系
+      与 Agent 记忆系统../ch03/…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文记录了一次 GPT-5.5 Copilot 会话中产出的 wiki-evolver Skill 系统设计。核心判断是：**不要再做一个「更强采集器」，而是做一个上层编排 Skill**——`wiki-evolver` 把已有的 `web-content-reviewer` 和 `llm-wiki` 变成一个长期自进化系统。知识库必须持续产生问题、连接、论文、工程实践和下一代 Skill，而不仅仅是被动积累来源。
