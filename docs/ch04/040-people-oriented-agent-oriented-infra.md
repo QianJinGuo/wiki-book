@@ -17,20 +17,33 @@
 ## 一句话定位
 
 ```mermaid
-graph LR
-    subgraph Traditional["传统: People-Oriented"]
-        INT1[意图] -->|人翻译| CODE1[代码沉淀]
-        CODE1 -->|月级循环| INT1
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    subgraph Agent["Agent: Agent-Oriented"]
-        INT2[意图] -->|Agent理解| CODE2[代码生成+沉淀]
-        CODE2 -->|分钟级循环| INT2
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
     end
-    
-    subgraph Sawtooth["Agent 占比锯齿形"]
-        direction TB
-        UP[意图涌入 → Agent占比陡升] --> DOWN[逻辑固化 → 代码沉淀缓降]
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
     end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 **"软件一直是'意图驱动 + 代码沉淀'的进化体"**——这个模式从未改变，改变的只是**驱动和沉淀的速度与机制**。Agent 革命的本质是**把循环速度从月级压缩到分钟级**。

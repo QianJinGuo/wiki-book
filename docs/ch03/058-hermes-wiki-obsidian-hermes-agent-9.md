@@ -3,15 +3,33 @@
 ## Ch03.058 Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法
 
 ```mermaid
-graph LR
-    S1["1.安装Hermes"] --> S2["2.连接Obsidian"]
-    S2 --> S3["3.配置数据源"]
-    S3 --> S4["4.定义Ingest"]
-    S4 --> S5["5.构建概念图"]
-    S5 --> S6["6.设置Cron"]
-    S6 --> S7["7.验证产出"]
-    S7 --> S8["8.优化Skill"]
-    S8 --> S9["9.持续迭代"]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 > 📊 Level ⭐⭐ | 19.0KB | `entities/hermes-wiki-9-step-auto-growing-knowledge-network.md`

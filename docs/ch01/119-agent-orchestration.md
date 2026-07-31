@@ -14,11 +14,33 @@
 ## 深度分析
 
 ```mermaid
-graph LR
-    OBS[可观测性] --> GRD[护栏]
-    GRD --> ORC[编排]
-    ORC --> AG[Agent]
-    AG -->|"反馈"| OBS
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 Agent 编排（Agent Orchestration）是多 Agent 系统从「实验原型」走向「生产可靠」的关键跨越。当单个 Agent 独立运行时，问题相对可控——调用工具、执行任务、返回结果。但一旦将多个专业化 Agent 编织成网络，如果没有控制平面（Control Plane）来管理执行流程、状态持久化和审批门控，整个系统会在三个维度上暴露脆弱性。

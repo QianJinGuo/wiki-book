@@ -13,27 +13,39 @@
 
 ```mermaid
 graph TB
-    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
-    TB --> FT[Function Tool<br/>应用代码]
-    TB --> HT[Hosted Tool<br/>Provider托管]
-    TB --> MT[MCP Tool<br/>标准协议]
-    subgraph "MCP 协议"
-        MT --> MCS[MCP Server]
-        MCS --> RES[资源/提示/工具]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "审批"
-        AP[auto: 只读] 
-        MP[manual: 写操作]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    FT --> AP
-    HT --> AP
-    MT --> MP
-    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
-    class FT,HT,MT,TB tool
-    class MCS,RES mcp
-    class AP,MP appr
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 我们此前已经展示过，harness 设计会对长时间运行的 agentic coding 效果产生显著影响。在更早的一次实验中，我们使用了一个 initializer agent 把产品规格拆解成任务清单，再由一个 coding agent 按"每次实现一个功能"的方式完成任务，并通过工件交接在不同 session 之间延续上下文。更广泛的开发者社区也逐渐收敛到了类似的洞见，比如 Ralph Wiggum 方法，就是通过 hooks 或脚本让 agent 持续处于迭代循环中。

@@ -7,20 +7,33 @@
 ## 概述
 
 ```mermaid
-graph LR
-    D[数据] --> SFT[SFT]
-    SFT --> RL[RLHF/DPO]
-    RL --> EV[评估]
-    subgraph "高效方法"
-        L[LoRA] 
-        DS[蒸馏]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    SFT --> L
-    EV --> DS
-    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class D,SFT,RL,EV p
-    class L,DS m
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 by awschina on 07 1月 2026 in Artificial Intelligence Permalink Share 摘要 本文介绍了在 Amazon Bedrock 上对 Amazon Nova Lite 1.0进行微调的两个实际应用案例，展示了在专业计算机视觉任务中如何在保持成本效益的同时实现显著的性能提升。通过对航拍视角检测和低光照监控场景的系统性评估，我们以最小的训练成本实现了增强的指令遵循能力和更高的检测准确率。 背景介绍 Amazon Nova Lite 1.0作为 AWS 多模态基础模型系列的一部分，在通用视觉任务中提供了卓越的性价比。然而，专业应用场景往往需要增强的指令理解能力和特定领域的优化。本研究评估了微调技术在两个不同用例中的有效性： 航拍视角群组检测

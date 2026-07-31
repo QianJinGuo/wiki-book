@@ -16,15 +16,33 @@
 ## 错误二：将领域问题泛化为通用政策
 
 ```mermaid
-graph LR
-    ATK[攻击向量] --> WAF[防护层]
-    WAF --> IDS[检测]
-    IDS --> RSP[响应]
-    RSP --> AUD[审计]
-    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
-    class ATK t
-    class WAF,IDS,RSP,AUD d
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 Mythos 发布后社区迅速将其上升为"开源 AI 太危险"的宏观叙事，但 Lambert 认为这是 composition of issues 谬误：即便承认 Claude Mythos 在网络安全场景的滥用风险是真实的，将其上升为"全国范围内禁止开源模型"的建议仍然过于宽泛。任何此类通用禁令会立即剥夺该实体影响关键技术的全部能力，而其他国家会继续构建最强开源模型——你无法杀死开源，只能影响和引导它。

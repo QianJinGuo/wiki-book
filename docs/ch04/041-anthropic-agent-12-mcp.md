@@ -27,24 +27,39 @@ MCP = Model Context Protocol，不只是协议，而是**面向 Agent 的产品�
 
 ```mermaid
 graph TB
-    subgraph G1["工具交互面"]
-        R["1.远程优先服务器"] --> I["2.按意图组织工具"]
-        I --> T["3.薄交互面"]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph G2["交互语义"]
-        U["4.内联UI"] --> E["5.引导式输入"]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    subgraph G3["状态与上下文"]
-        S["6.结构化状态"] --> CTX["7.上下文注入"]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    subgraph G4["安全与治理"]
-        A["8.认证委托"] --> P["9.权限边界"]
-        P --> AU["10.审计日志"]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    subgraph G5["可靠性"]
-        RL["11.资源限制"] --> GR["12.优雅降级"]
-    end
-    G1 --> G2 --> G3 --> G4 --> G5
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 ---
 

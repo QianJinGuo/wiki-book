@@ -8,17 +8,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[API Gateway]
-    GW --> SVC[服务层]
-    SVC --> DB[数据层]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
-    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class LB,GW,SVC,DB i
-    class AGT,SB a
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 by awschina on 20 3月 2026 in Containers Permalink Share 摘要：随着生成式 AI 的快速普及，越来越多的企业需要为内部团队或外部客户提供 AI Agent 服务。如何在保障安全隔离的前提下，实现高效、低成本的多租户 AI Agent 部署，成为一项关键的技术挑战。本文介绍如何基于 Amazon EKS、AWS Graviton 和 Kubernetes Operator 模式，构建一个支持多租户、多模型的 OpenClaw AI Agent 平台，并通过 CloudFront + Cognito + ALB 的前端架构实现用户自助 Provisioning。 目录 01 一、引言 02 二、OpenClaw 简介与价值 03 三、多租户场景的挑战 04 四、方案设计思路 05 五、Amazon EKS + Graviton 的优势 06 六、架构介绍 07 七、运行时选项：标准容器 vs. Kata Containers microVM 08 八、支持的模型提供商 09 九、弹性扩展与存储方案 10 十、认证与授权方案 11 十一、Demo 演示 12 十二、总结与展望 13 十三、参考资料 一、引言 随着生成式 AI 的快速普及，越来越多的企业需要为内部团队或外部客户提供 AI Agent 服务。如何在保障安全隔离的前提下，实现高效、低成本的多租户 AI Agent 部署，成为一项关键的技术挑战。本文介绍如何基于 Amazon EKS 、 AWS Graviton 和 Kubernetes Operator 模式，构建一个支持多租户、多模型的 OpenClaw AI Agent 平台，并通过 CloudFront + Cognito + ALB 的前端架构实现用户自助 Provisioning 。 二、OpenClaw 简介与价值 OpenClaw 是一个开源的云原生 AI Agent 运行时平台，能够作为用户的个人 AI 助手，跨 Telegram、Discord、WhatsApp、Signal 等多个渠道提供服务。 它不仅仅是一个聊天机器人，更是一个具备记忆、技能系统、浏览器自动化和代码执行能力的智能 Agent 。 OpenClaw 的核心能力包括： 多 AI 提供商支持：Amazon Bedrock (Claude)、OpenAI、SiliconFlow 等 可扩展的技能系统：基于 MCP (Model Context Protocol) 的插件化架构 内置安全沙箱：安全的代码执行环境和浏览器自动化 声明式配置：通过 Kubernetes CRD 声明式管理 Agent 实例 持久化存储：支持 Agent 记忆和工作空间的持久化 对于企业用户而言，OpenClaw 提供了一种将 AI Agent 能力作为内部服务（Agent-as-a-Service）的可能性——每位员工或每个团队都可以拥有自己的专属 AI Agent，同时企业能够统一管控模型访问、成本和安全策略。 三、多租户场景的挑战 当我们尝试将 OpenClaw 扩展为一个服务多用户的平台时，面临以下核心挑战： 3.1 用户与模型多样性 不同用户可能需要访问不同的 AI 模型（如 Claude Sonnet、Claude Opus），甚至不同的模型提供商（ Amazon Bedrock 、SiliconFlow 等）。平台需要灵活支持多模型配置，同时统一管理模型访问凭证。 3.2 安全隔离保障 每个 AI Agent 实例拥有用户的个人数据、对话记录和工作空间文件。在多租户环境中，必须确保： 数据隔离：不同用户的数据完全隔离，无法互相访问 网络隔离： Agent 实例之间的网络流量严格受控 资源隔离：单个用户不能耗尽共享集群资源 运行时隔离：提供 VM 级别的隔离选项，防止容器逃逸 3.3 效率与性能 AI Agent 的交互是实时的，用户期望低延迟的响应。平台需要在保障隔离的同时，最小化性能开销，快速完成实例的创建和启动。 3.4 可扩展性设计 从 10 个用户扩展到 1000 甚至 10000 个用户，架构需要具备弹性伸缩能力，而不是线性增加管理复杂度和基础设施成本。 四、方案设计思路 基于上述挑战，我们设计了以下解决方案，围绕四个核心设计目标： 4.1 设计目标一：多用户、多模型支持 通过 Kubernetes Operator 模式，将每个用户的 AI Agent 抽象为一个 OpenClawInstance CRD（Custom Resource Definit...

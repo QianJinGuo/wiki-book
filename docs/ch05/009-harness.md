@@ -4,18 +4,39 @@
 
 ```mermaid
 graph TB
-    subgraph Case1["案例1: 编码 Agent"]
-        REQ1[需求输入] --> AG1[Agent 编码]
-        AG1 --> REV1[代码审查]
-        REV1 -->|通过| MERGE1[合并]
-        REV1 -->|失败| AG1
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph Case2["案例2: 运维 Agent"]
-        ALERT[告警触发] --> DIAG[Agent 诊断]
-        DIAG --> FIX[自动修复]
-        FIX --> VERIFY2[验证恢复]
-        VERIFY2 -->|失败| ESC[人工升级]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 > 📊 Level ⭐⭐ | 26.3KB | `entities/harness-engineering-alibaba-java-case-study.md`

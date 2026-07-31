@@ -7,15 +7,33 @@
 ## 概述
 
 ```mermaid
-graph LR
-    ATK[攻击向量] --> WAF[防护层]
-    WAF --> IDS[检测]
-    IDS --> RSP[响应]
-    RSP --> AUD[审计]
-    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
-    class ATK t
-    class WAF,IDS,RSP,AUD d
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 企业级OpenClaw安全部署架构指南 by awschina on 23 4月 2026 in Security, Identity, Compliance Permalink Share 摘要：本博客提供企业在亚马逊云科技上部署类OpenClaw智能体的综合安全方案指南，包括架构设计、缓解注入攻击、企业内部系统集中访问和细粒度授权等。 目录 01 引言 02 AI Agent 安全：一个全新的问题域 03 威胁全景：了解你的对手 04 安全架构总览：纵深防御七层模型 05 核心安全能力：Amazon Bedrock AgentCore 06 关键安全场景与解决方案 07 安全运营：12 项安全控制清单 08 参考资源 09 相关链接 1. 引言 在过去十年中，企业安全架构的演进经历了从边界防御到零信任的深刻转型。然而， Agent 的出现正在带来又一次范式级的挑战——这一次，威胁不再单

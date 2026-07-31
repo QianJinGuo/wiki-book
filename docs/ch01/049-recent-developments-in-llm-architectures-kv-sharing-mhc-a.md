@@ -11,16 +11,39 @@
 
 ```mermaid
 graph TB
-    IN[Token] --> EMB[嵌入]
-    EMB --> ATT[注意力]
-    ATT --> FFN[前馈]
-    FFN --> OUT[输出]
-    subgraph "优化"
-        KV[KV Cache]
-        Q[量化]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    ATT --> KV
-    FFN --> Q
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 2026年4月至5月间集中发布的新一代开源LLM架构，呈现出清晰的共同趋向：**在不影响模型质量的前提下，系统性降低长上下文场景下的KV-cache占用与计算成本**。这一转向的背景是推理模型（reasoning models）和Agent工作流需要保留大量token作为上下文，传统注意力机制的资源消耗已成为扩展瓶颈。

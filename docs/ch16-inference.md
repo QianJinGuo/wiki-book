@@ -6,6 +6,37 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((推理优化))
+    量化
+      INT4/INT8
+      GPTQ
+      AWQ
+    KV Cache
+      PagedAttention
+      KV共享
+      缓存淘汰
+    调度
+      Prefill/Decode分离
+      连续批处理
+      请求排队
+    投机解码
+      草稿模型
+      多Token预测
+      验证接受
+    架构优化
+      Flash Attention
+      稀疏注意力
+      MoE路由
+    部署
+      vLLM
+      TensorRT-LLM
+      SGLang
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

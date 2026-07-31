@@ -8,10 +8,39 @@
 
 ```mermaid
 graph TB
-    AG[Agent] --> TB[Tool Bus]
-    TB --> FT[Function]
-    TB --> MT[MCP]
-    MT --> MCS[Server]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
+    end
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 by awschina on 20 11月 2025 in Application Integration Permalink Share 1. Agentic AI落地面临的问题 当前，生成式 AI 技术正以破壁之势迅猛发展，大模型的能力迭代更是日新月异。在此浪潮下，Agentic AI 的应用边界持续拓宽，已深度渗透至金融、医疗、制造、教育、娱乐等多个领域，以前所未有的速度重构商业竞争格局，颠覆各行业传统生产方式 —— 它不再是简单的技术工具，更成为驱动企业业务创新、提升核心效率的 “智能引擎”。正是看到这一机遇，越来越多的企业渴望搭乘 Agentic AI 的技术快车，加速推进行业智能体或通用智能体平台的落地。 作为 AWS 核心级合作伙伴，小宿科技始终聚焦企业 AI 转型需求，凭借安全可靠、高效敏捷的

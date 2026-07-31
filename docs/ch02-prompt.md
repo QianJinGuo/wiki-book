@@ -6,6 +6,37 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((提示词工程))
+    基础范式
+      Zero-shot
+      Few-shot
+      Chain-of-Thought
+    高级技巧
+      Tree-of-Thought
+      Self-Consistency
+      ReAct提示
+    上下文工程
+      系统提示
+      上下文窗口管理
+      长上下文优化
+    结构化输出
+      JSON Schema
+      Function Calling
+      约束生成
+    提示词安全
+      注入攻击
+      越狱防御
+      红队测试
+    评估与优化
+      A/B测试
+      提示词版本管理
+      自动优化
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

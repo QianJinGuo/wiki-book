@@ -21,16 +21,33 @@ SkillOpt：把 Agent 技能文档变成可训练对象 涉及agent领域的核�
 ## 一句话定位
 
 ```mermaid
-graph LR
-    D[数据] --> SFT[SFT]
-    SFT --> RL[RLHF/DPO]
-    RL --> EV[评估]
-    subgraph "高效"
-        L[LoRA]
-        DS[蒸馏]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    SFT --> L
-    EV --> DS
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 **SkillOpt = 冻结模型参数，把 agent 外部技能文档当作可训练对象，用验证集门控每一次编辑。

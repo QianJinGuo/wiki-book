@@ -16,16 +16,33 @@
 ## 一句话
 
 ```mermaid
-graph LR
-    INT[意图] --> PLN[拆解]
-    PLN --> GEN[生成]
-    GEN --> VAL[验证]
-    VAL -->|"失败"| PLN
-    subgraph "上下文"
-        CM[配置]
-        SK[技能]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    INT --> CM & SK
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 把 Agent 的「技能文档」当作可训练状态，用轨迹反馈、受控文本编辑和验证集门控来优化技能，在不改模型权重、不增加部署期调用的前提下，让多个模型和执行环境稳定涨分。

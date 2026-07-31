@@ -27,16 +27,39 @@ Google shipped Gemini 3.1 Flash-Lite in General Availability
 
 ```mermaid
 graph TB
-    IN[Token] --> EMB[嵌入]
-    EMB --> ATT[注意力]
-    ATT --> FFN[前馈]
-    FFN --> OUT[输出]
-    subgraph "优化"
-        KV[KV Cache]
-        Q[量化]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    ATT --> KV
-    FFN --> Q
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 **Flash-Lite 定位分析**：Gemini 3.1 Flash-Lite 是 Google 面向成本敏感场景推出的轻量级模型，主打高性价比推理。GA（General Availability）意味着该模型已通过生产环境验证，可用于正式业务场景。

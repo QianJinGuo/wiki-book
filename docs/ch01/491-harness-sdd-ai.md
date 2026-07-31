@@ -23,20 +23,33 @@ source_url: https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ
 ## 深度分析
 
 ```mermaid
-graph LR
-    INT[意图] --> PLN[拆解]
-    PLN --> GEN[生成]
-    GEN --> VAL[验证]
-    VAL -->|"失败"| PLN
-    subgraph "上下文"
-        CM[CLAUDE.md]
-        SK[Skills]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    INT --> CM & SK
-    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class INT,PLN,GEN,VAL f
-    class CM,SK c
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 「氛围编程」（Vibe Coding）的本质是用自然语言模糊了需求和实现之间的边界，这在探索性、原型化阶段有巨大价值，但当系统进入存量维护和复杂需求阶段时，这种模糊性就成了风险本身。Harness Engineering 和 SDD 的提出，本质上是在说：AI 辅助开发需要一套结构化的「确定性承重层」（Deterministic Load-Bearing Layer），而不能把所有决策都推给模型的随机生成能力。

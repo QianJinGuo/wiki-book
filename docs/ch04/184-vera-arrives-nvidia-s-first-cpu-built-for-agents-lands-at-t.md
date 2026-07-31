@@ -14,15 +14,33 @@
 ## 背景与定位
 
 ```mermaid
-graph LR
-    OBS[可观测性] --> GRD[护栏]
-    GRD --> ORC[编排]
-    ORC --> AG[Agent]
-    AG -->|"反馈"| OBS
-    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class OBS,GRD,ORC h
-    class AG a
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 Agentic AI 对 CPU 有与传统数据中心完全不同的需求。NVIDIA CEO 黄仁勋在 GTC 上推出 Vera CPU 时，将其定位为 NVIDIA 下一个多亿美元业务线。随着 AI 模型从"回答问题"向"执行行动"演进，专门为这种工作负载设计的 CPU 成为必要。

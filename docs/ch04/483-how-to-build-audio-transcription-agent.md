@@ -49,10 +49,33 @@
 ## 深度分析
 
 ```mermaid
-graph LR
-    Q[量化] --> KV[KV Cache]
-    KV --> PD[Prefill/Decode]
-    PD --> SP[投机采样]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
+    end
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 1. **Whisper 的"蒸馏-预测"两阶段架构是理解其能力边界的关键**。Whisper 包含编码器（理解音频特征）和解码器（生成文本）两个阶段，解码器的自回归特性是延迟的主要来源。流式 Whisper（如 Faster-Whisper）通过限制解码步长和缓存 KV cache 实现低延迟，但会牺牲部分上下文连贯性。理解这一架构权衡，可以更准确地评估在精度-延迟敏感场景中 Whisper 是否适用。

@@ -8,17 +8,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[API Gateway]
-    GW --> SVC[服务层]
-    SVC --> DB[数据层]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
-    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class LB,GW,SVC,DB i
-    class AGT,SB a
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 by awschina on 20 11月 2025 in Artificial Intelligence Permalink Share 在人工智能和机器学习快速发展的今天，GPU资源已成为企业数字化转型的核心驱动力。然而，传统的GPU使用模式正面临着前所未有的挑战：资源利用率低下、成本居高不下、调度复杂度增加。NVIDIA Multi-Instance GPU (MIG) 技术的出现，为这些痛点提供了革命性的解决方案。本文将深入探讨如何在Amazon EKS环境中部署和管理MIG技术，实现GPU资源的最大化利用。 1. 背景介绍：GPU资源管理的新纪元 1.1 传统GPU使用模式的困境 在深入了解MIG技术之前，我们需要认识到当前GPU资源管理面临的核心挑战。在我多年的云原生架构实践中，发现企业在GPU资源使用上普遍存在以下问题： 资源利用率的"马太效应" 传统的GPU调度模式采用"一刀切"的整卡分配策略。一个典型的场景是：一个轻量级的推理任务占用了整张A100 GPU，但实际只使用了不到20%的计算能力和显存。这就像用一辆大卡车运送一个小包裹，造成了巨大的资源浪费。根据我们的生产环境统计，传统模式下GPU平均利用率仅为30-40%，而峰值利用率往往不超过60%。 成本压力的几何级增长 高端GPU的价格令人咋舌。一张NVIDIA H200的市场价格超过40,000美元，A100也在15,000美元左右。当企业需要构建大规模AI基础设施时，硬件投资往往占到总成本的70%以上。更令人担忧的是，由于资源利用率低下，实际的单位计算成本比理论值高出2-3倍。 调度复杂性的指数级增长 Kubernetes原生的GPU调度器只能以整卡为单位进行资源分配，这在多租户环境中带来了巨大的挑战。不同的AI工作负载对GPU资源的需求差异巨大：轻量级推理可能只需要2GB显存，而大模型训练可能需要80GB。传统调度器无法实现细粒度的资源匹配，导致资源碎片化严重。 1.2 MIG技术：硬件级虚拟化的突破 NVIDIA Multi-Instance GPU (MIG) 技术代表了GPU虚拟化领域的重大突破。与传统的软件虚拟化不同，MIG在硬件层面实现了真正的GPU分区，为每个实例提供了完全隔离的计算环境。 架构级的创新设计 MIG技术基于NVIDIA Ampere架构的全新设计理念。每个GPU被划分为多个GPU Instance (GI)，每个GI包含： 独立的Streaming Multiprocessors (SM)：专用的计算单元，确保计算性能的完全隔离 专用的显存分区：硬件级的内存隔离，防止不同实例间的内存冲突 独立的Copy Engines：专用的数据传输引擎，保证I/O性能的一致性 隔离的编解码器：独立的视频编解码单元，支持多媒体工作负载 这种硬件级的分区设计确保了每个MIG实例都拥有可预测的性能表现，不会因为其他实例的负载变化而受到影响。 灵活的配置策略 MIG技术支持多种配置模式，可以根据实际工作负载需求进行灵活调整： A100 GPU配置选项： 5gb配置：每个实例拥有1个GI和5GB显存，单卡可创建7个实例，适合轻量级推理 10gb配置：每个实例拥有2个GI和10GB显存，单卡可创建3个实例，适合中等规模推理 20gb配置：每个实例拥有3个GI和20GB显存，单卡可创建2个实例，适合大模型推理 40gb配置：完整GPU资源，适合大规模训练任务 H200 GPU配置选项： 18gb配置：7个实例，每个18GB显存，支持更大的轻量级模型 71gb配置：2个实例，每个71GB显存，完美适配70B参数模型 141gb配置：完整141GB显存，支持超大规模模型 1.3 EKS集成：云原生的完美融合 将MIG技术与Amazon EKS（托管的 Kubernetes 服务）结合，不仅解决了GPU资源管理的技术问题，更为企业带来了云原生架构的全部优势。 弹性伸缩的智能化 在EKS环境中，MIG实例可以根据工作负载的实际需求进行动态调整。通过Horizontal Pod Autoscaler (HPA) 和 Vertical Pod Autoscaler (VPA)，系统可以自动识别资源需求模式，智能地分配合适规格的MIG实例。这种智能化的资源管理机制，使得GPU利用率可以提升到85%以上。 统一的资源管理体验 通过Kubernetes的声明式API，开发者可以像请求CPU和内存资源一样请求MIG实例。这种统一的资源管理模式大大降低了学习成本，提高了开发效率。同时，Kubernetes的资源配额和限制机制也可以无缝应用到MIG资源上，实现精细化的资源管控。

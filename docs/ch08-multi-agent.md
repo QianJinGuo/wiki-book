@@ -6,6 +6,38 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((多Agent协作))
+    协作模式
+      编排者-执行者
+      对等协作
+      层级团队
+    通信机制
+      消息传递
+      共享状态
+      事件驱动
+    角色分配
+      Leader
+      Worker
+      Critic
+    框架
+      AutoGen
+      CrewAI
+      LangGraph
+      A2A协议
+    编排策略
+      串行
+      并行
+      条件分支
+    冲突解决
+      优先级
+      投票
+      仲裁者
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

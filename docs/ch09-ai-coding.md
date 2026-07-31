@@ -6,6 +6,39 @@
 
 ---
 
+## 概念全景
+
+```mermaid
+mindmap
+  root((AI编程))
+    编程范式
+      Vibe Coding
+      Agentic Coding
+      辅助编程
+    核心工具
+      Codex
+      Claude Code
+      Cursor
+      Windsurf
+    工作流
+      意图理解
+      代码生成
+      测试验证
+      迭代修复
+    代码质量
+      静态分析
+      自动测试
+      Code Review
+    最佳实践
+      提示词工程
+      上下文管理
+      版本控制
+    安全考量
+      代码注入
+      依赖安全
+      敏感信息泄露
+```
+
 ## 本章导航
 
 | Level | 含义 | 篇数 |

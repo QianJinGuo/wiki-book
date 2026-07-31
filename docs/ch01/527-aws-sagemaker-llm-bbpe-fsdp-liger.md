@@ -16,20 +16,33 @@
 ## 阶段二：FSDP + Liger 的 CPT 分布式训练
 
 ```mermaid
-graph LR
-    D[数据] --> SFT[SFT]
-    SFT --> RL[RLHF/DPO]
-    RL --> EV[评估]
-    subgraph "高效方法"
-        L[LoRA] 
-        DS[蒸馏]
+graph TB
+    subgraph "可观测性层"
+        LOG[日志采集] --> TRACE[链路追踪]
+        TRACE --> METRIC[指标聚合]
+        METRIC --> DASH[仪表盘/告警]
     end
-    SFT --> L
-    EV --> DS
-    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class D,SFT,RL,EV p
-    class L,DS m
+    subgraph "护栏层"
+        IN_CHK[输入校验<br/>提示注入检测]
+        RATE[速率限制<br/>成本控制]
+        OUT_CHK[输出过滤<br/>PII脱敏]
+    end
+    subgraph "编排层"
+        ORC[工作流引擎]
+        STATE[状态管理]
+        RETRY[错误恢复]
+    end
+    REQ[请求] --> IN_CHK --> ORC
+    ORC --> AGENT[Agent 执行]
+    AGENT --> OUT_CHK --> RES[响应]
+    DASH -->|"异常信号"| RATE
+    ORC --> STATE --> RETRY
+    classDef obs fill:#dbeafe,stroke:#2563eb
+    classDef guard fill:#fee2e2,stroke:#dc2626
+    classDef orch fill:#d1fae5,stroke:#059669
+    class LOG,TRACE,METRIC,DASH obs
+    class IN_CHK,RATE,OUT_CHK guard
+    class ORC,STATE,RETRY orch
 ```
 
 继续预训练（CPT）阶段主要瓶颈是 GPU 显存：DDP 在 ml.p4d.24xlarge 每 GPU 最高 batch_size=2，FSDP 将参数/梯度/优化器状态分片后降至每 GPU 1.17 GB 模型状态（从 9.23 GB），batch_size 可提升至 14。Liger Kernels 是 LinkedIn 开源的 Triton 实现融合核，将多层 fused 成单次 GPU kernel 发射，进一步减少中间显存分配，ml.p5.48xlarge 上峰值显存从 64GB 降至 27GB（-58%），每 GPU 吞吐量从 63,771 升至 78,319 tokens/s（+23%）。

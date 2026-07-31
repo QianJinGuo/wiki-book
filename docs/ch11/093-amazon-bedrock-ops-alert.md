@@ -14,17 +14,39 @@
 
 ```mermaid
 graph TB
-    LB[负载均衡] --> GW[API Gateway]
-    GW --> SVC[服务层]
-    SVC --> DB[数据层]
-    subgraph "Agent"
-        AGT[实例] --> SB[沙箱]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    SVC --> AGT
-    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class LB,GW,SVC,DB i
-    class AGT,SB a
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
+    end
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
+    end
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 Bedrock Ops Alert 部署后，Lambda 函数（Quota Calculator）在初始化时通过 Service Quotas API 查询当前 RPM/TPM 配额值，按配置百分比计算 CloudWatch 告警阈值并存入 Parameter Store。三层监控独立评估 Bedrock 发出的运行时指标（invocations、token counts、errors、throttles、latency）：Layer 1 监控 InvocationClientErrors / InvocationServerErrors / InvocationThrottles，发现客户端错误、服务器错误或限速立即告警；Layer 2 对比 Invocations / EstimatedTPMQuotaUsage / InvocationLatency 与动态阈值，超配额百分比时触发；Layer 3 使用 CloudWatch ML 异常检测识别 Invocations / InputTokenCount / OutputTokenCount / InvocationLatency 的异常模式。
