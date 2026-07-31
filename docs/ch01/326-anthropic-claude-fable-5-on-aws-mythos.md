@@ -14,6 +14,19 @@ Anthropic 于 2026 年 6 月 10 日在 AWS 中国博客宣布 **Claude Fable 5**
 
 ## 核心能力解析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 长周期异步任务执行
 
 Claude Fable 5 的首要差异化能力是**无需人工干预即可长时间执行复杂编码和知识任务**。这意味着企业可以将过去需要工程师持续监控的长程任务（代码库重构、文档生成、大规模代码审查）交给 Fable 5 处理，模型能够自主管理任务进度、中间状态和错误恢复。

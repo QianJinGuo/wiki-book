@@ -8,6 +8,26 @@
 Claude Code 源码拆解（by 无岳，阿里云开发者，2026-04-15）。核心论点：**真正决定 Agent 能不能长期活下去的，不是模型，而是围着模型搭起来的运行时。**
 
 ## 核心 Insight
+
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
 | # | Insight | 模块 |
 |---|---------|------|
 | 1 | 启动层决定架构寿命 | 启动链路 |

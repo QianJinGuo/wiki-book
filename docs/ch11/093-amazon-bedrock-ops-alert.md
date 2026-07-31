@@ -11,6 +11,22 @@
 > **Core insight**: Amazon Bedrock Ops Alert 通过三层独立监控层（Critical Error Detection / Usage Rate Monitoring / Anomaly Detection）实现生成式 AI 运维的"自动驾驶"——动态调整告警阈值、分类告警、自动创建支持工单，工单内容根据 14 天峰值用量验证后决定语气与紧迫度
 
 ## 三层监控架构设计
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 Bedrock Ops Alert 部署后，Lambda 函数（Quota Calculator）在初始化时通过 Service Quotas API 查询当前 RPM/TPM 配额值，按配置百分比计算 CloudWatch 告警阈值并存入 Parameter Store。三层监控独立评估 Bedrock 发出的运行时指标（invocations、token counts、errors、throttles、latency）：Layer 1 监控 InvocationClientErrors / InvocationServerErrors / InvocationThrottles，发现客户端错误、服务器错误或限速立即告警；Layer 2 对比 Invocations / EstimatedTPMQuotaUsage / InvocationLatency 与动态阈值，超配额百分比时触发；Layer 3 使用 CloudWatch ML 异常检测识别 Invocations / InputTokenCount / OutputTokenCount / InvocationLatency 的异常模式。
 
 ## 动态阈值自动管理

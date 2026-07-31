@@ -5,6 +5,22 @@
 > 📊 Level ⭐⭐ | 9.1KB | `entities/ai-graviton-migration-kiro-power-guide.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 by awschina on 25 3月 2026 in Business Productivity Permalink Share 摘要：本文将深入探讨如何利用 Kiro Power 加速 Graviton 迁移，从代码分析、依赖检查、容器适配的完整流程。 目录 01 1. 引言 02 2. Graviton 迁移的核心挑战 03 3. Kiro Graviton Migration Power：AI 驱动的解决方案 04 4. 准备 Kiro Powers 环境 05 5. 演示一：将基于 Java 语言开发的 Chatbot 应用迁移到 Graviton 06 6. 演示二：评估 Portry 管理的 Python 应用的依赖包 07 7. 其他使用说明 08 8. 结语 1. 引言 在云计算成本优化的浪潮中，
 
 ## 核心技术

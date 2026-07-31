@@ -7,6 +7,22 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
 ## 摘要
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 AI 网关（AI Gateway）与 MCP 网关（MCP Gateway）是两个被频繁混淆但本质不同的技术层。前者位于代理与大语言模型之间，专注推理路由、成本控制和可观测性；后者位于代理与 MCP 服务器（工具）之间，专注身份认证、工具注册和细粒度访问控制。两者都是 AI 安全架构的必要组件，但均无法独立构成完整的安全解决方案。
 
 ## 关键要点

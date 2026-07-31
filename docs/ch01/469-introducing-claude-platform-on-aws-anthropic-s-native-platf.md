@@ -14,6 +14,22 @@ You access Claude Platform on AWS through familiar AWS features:
 Claude Platform on AWS is operated by Anthropic, and the underlying requests and data are processed outside the AWS security boundary. This makes it well suited for teams without specific Regional data residency requirements, and complements Claude models on Amazon Bedrock, so you can access Claude through the approach that fits your needs.
 
 ## Getting started with Claude Platform on AWS
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 You can activate Claude Platform on AWS through the AWS Marketplace. For step-by-step instructions, see [Set up your account](https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html). After your account is activated, getting to your first API call takes three steps: create a workspace, authenticate, and call the API.
 
 ### Step 1: Create a workspace

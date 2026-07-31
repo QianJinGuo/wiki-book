@@ -14,6 +14,22 @@
 
 ## 背景
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 配置腐烂（Configuration Rot）问题
 
 2025-2026 年间，Skills、MCP、subagents 的生态膨胀速度极快。开发者见到有用的东西就安装，安装后很快遗忘。每个人的 Claude Code 配置都在悄悄"腐烂"——过时的 Skill 定义、不再使用的 MCP 服务器连接、重复加载的大型 CLAUDE.md、相互冲突的插件配置。每个新 session 都要原封不动地加载这些冗余配置，白白消耗上下文窗口。

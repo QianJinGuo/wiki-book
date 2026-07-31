@@ -15,6 +15,24 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 - **同构论证**：code 像 crypto 一样，从"金融工具/基础设施"转为"互联网文化载体"——一旦 token 化（memecoin）/生成式化（vibe coding）变得摩擦为零，其行为模式就脱离了原始设计意图。
 - **vibe coding 群体不是 founder 群体**：他们更像 SoundCloud 2013 时代的卧室制作人或 Tumblr 时代的 GIF 博主——生产—验证—复用的循环取代了 PMF / scale / churn 框架。
 - **Meta 收购 Gizmo 是分水岭事件**：Gizmo 是"短视频式竖滑 + 每个滑卡是工作软件"的 micro-app 平台，2026 年 3 月被 Meta 整建制纳入 Superintelligence Labs，是首个被超大型科技公司收购的"vibe coding 时代原生"产品。

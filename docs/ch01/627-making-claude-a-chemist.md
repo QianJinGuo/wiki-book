@@ -19,6 +19,18 @@ Anthropic 的研究让 Claude 在化学领域达到专家水平——不是通�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 ### 1. 领域 AI 的落地速度更快
 如果需要 AI 在特定领域达到专家水平，领域专精 AI 比通用 AI 更快、更经济。
 

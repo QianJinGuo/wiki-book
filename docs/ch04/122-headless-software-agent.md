@@ -55,6 +55,19 @@ Salesforce 推出的 Headless 360 将 headless 概念推向大众。Notion 也�
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 从"为人设计"到"为机器设计"的范式转换
 
 传统软件的设计原点是人：人要登录、点击、看完仪表盘、走完工作流。整个界面层实际上是一个**规范化引擎**——它强制用户按照特定格式录入数据，从而保证数据的结构化程度。

@@ -10,6 +10,24 @@
 所以 memory 正在从附加功能变成 Agent 架构的核心子系统——一个完整的 **write–manage–read 闭环**，而不是"有个存储层就算有记忆"。
 
 ## 先划边界：Memory vs State / Policy / Profile
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 **Memory vs State：** State 是当前 session 内的短期运行态（对话上下文、工具中间结果、规划器当前步骤），Session 结束即销毁。Memory 是跨 session 持续存在的、可影响未来决策的结构化历史。
 **Memory vs Policy：** Policy 管的是"允许与禁止"——权限边界、安全规则、合规约束。它是系统的外部规范，通常不应该被 memory 系统动态修改。
 **Memory vs Profile：** Profile 是用户模型的低维、显式快照层（名字、角色、偏好标签）。它是记忆的一个输出产物，不是记忆本身。

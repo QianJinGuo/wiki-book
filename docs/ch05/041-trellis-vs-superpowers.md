@@ -21,6 +21,24 @@
 
 ## Trellis：重资产工程框架
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### `.trellis/` 目录结构（7 类资产）
 
 ```

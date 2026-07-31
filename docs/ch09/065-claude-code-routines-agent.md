@@ -10,6 +10,19 @@ Claude Code 团队每周合并 PR 增长 200%，但负责两个产品文档的�
 2. **事件触发**：GitHub 有新 issue 时立刻响应，判断是否是文档问题，是则自动处理
 
 ## 以前在 Claude Code 上跑定时任务的三道坎
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 1. **在哪跑**：本机跑关机就断，自己搭主机/持久化/鉴权，工作量比提示词本身还大
 2. **什么时候触发**：cron 或 webhook 都要写 boilerplate，维护一个小系统
 3. **怎么知道它在干什么**：headless session 是黑盒，看不见过程，无法中途插手，无法恢复中断 session

@@ -18,6 +18,24 @@
 Karpathy 说程序员贡献的"bits"越来越少——这句话的精确含义是什么？在这个趋势下，哪些技能的价值在上升，哪些在下降？这个判断在 2026 年的就业市场和工程实践里，验证了多少？
 
 ## 一、"bits"这个词的精确含义
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 Karpathy 用"bits"描述程序员工作，暗含一个判断：
 **衡量程序员贡献的标准，一直以来被错误地锚定在"写了多少代码"上，而不是"解决了多少问题"或者"做出了多少正确判断"上。**
 

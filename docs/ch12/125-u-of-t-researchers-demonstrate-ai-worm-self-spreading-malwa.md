@@ -10,6 +10,19 @@
 
 ## 核心发现（Core Finding）
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 **首次实证**: publicly accessible open-weight AI models can power a **worm that adapts its strategy as it spreads from one device to the next** — self-learning, self-replicating malware that can:
 - 跨设备自适应攻击策略
 - 接管整个网络（seize control of an entire network）

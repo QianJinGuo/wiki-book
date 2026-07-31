@@ -22,6 +22,19 @@ Qoder 推出了 Cloud Agents 与 Alibaba Cloud Skills 的深度整合，开创�
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 一、云计算界面的四次代际跃迁
 
 Alibaba Cloud Skills 团队提出了一个清晰的云界面进化框架，值得深入拆解：

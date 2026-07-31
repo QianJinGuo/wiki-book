@@ -12,6 +12,18 @@
 > "Teams without evals get bogged down in reactive loops — fixing one failure, creating another." — Anthropic, *Demystifying Evals for AI Agents*
 
 ## 关键指标：pass@k vs pass^k
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
 | 指标 | 含义 | 衡量什么 |
 |------|------|---------|
 | **pass@k** | k 次里至少有一次通过的概率 | 能力上限 |

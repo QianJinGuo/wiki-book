@@ -46,6 +46,19 @@ It doesn’t take much introspection to see that commits, pull requests, and tok
 
 ## Measuring Output
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 In a traditional factory, _output_ is the most important metric. A production line able to produce a 1000 units per day is better than one that produces just 700 (assuming same costs and quality). So it only seems natural that we will measure software development in terms of output.
 
 And we do. We typically start by creating plans — for the year, the quarter, and the sprint — and then measure development progress against the plans.At sprint-level we track story points developed against the projection; On a quarterly basis we count how many features were shipped according to the plan/OKR. During the year, the company tracks progress on its bigger projects, often with metrics such _as percent completed_.

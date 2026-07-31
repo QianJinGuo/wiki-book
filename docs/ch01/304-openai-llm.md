@@ -14,6 +14,19 @@
 
 ## MRC是什么
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 MRC（Multipath Reliable Connection，多路径可靠连接）的目标，不只是快，还要做到性能可预期，即便面对故障也如此。
 
 OpenAI的Scaling团队与[AMD、Broadcom、英特尔、微软、英伟达](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai携手五巨头开源革命性超算协议一举解决超大集群llm训练不稳定和网络性能难题.md)合作，历时两年开发出了这个协议。MRC内置于最新的800Gb/s网络接口，可以把单次传输分散到数百条路径上，在微秒级别绕过故障，同时运行更简单的网络控制平面。

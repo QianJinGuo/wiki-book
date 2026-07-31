@@ -14,6 +14,19 @@ Thought-Aligner 是**上海创智学院 × 复旦大学**联合提出的智能�
 
 ## 范式转变：从内容安全到行为安全
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 | 维度 | 传统大模型 | 智能体 |
 |------|----------|--------|
 | 风险所在 | 输出内容 | 决策到执行的行为链条 |

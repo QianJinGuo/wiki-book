@@ -11,6 +11,22 @@ Claude Code 导航代码库的方式与软件工程师相同：遍历文件系�
 这种方法的权衡在于：当 Claude 有足够的起始上下文知道从哪里查找时，效果最佳。这意味着 Claude 的导航质量取决于代码库的设置——通过 CLAUDE.md 文件和 Skills 进行分层上下文。
 
 ## Harnes：与模型同等重要
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 关于 Claude Code 最常见的误解之一是其能力完全由使用的模型决定。团队关注模型的基准测试及其在测试任务上的表现。实际上，围绕模型构建的生态系统——harness——比单独的模型更能决定 Claude Code 的表现。
 Harness 由五个扩展点构建：CLAUDE.md 文件、hooks、skills、plugins 和 MCP servers，每个都服务于不同的功能。团队构建它们的顺序很重要，因为每一层都建立在前一层的基础上。另外两个能力——LSP 集成和 subagents——完善了整个设置。
 | 组件 | 是什么 | 何时加载 | 最适合 | 常见混淆 |

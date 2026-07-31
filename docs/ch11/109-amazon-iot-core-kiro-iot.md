@@ -10,6 +10,22 @@
 
 ## 场景
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 - 4 个 Advantech 网关（cnn7-gw01..04）通过 MQTT over TLS (8883, X.509 mTLS) 推送到 Amazon IoT Core
 - IoT Rule (SQL 2016-03-23) → Kinesis Data Streams (On-Demand) → Kinesis Data Firehose → S3
 - BI 系统从 S3 拉数进数仓

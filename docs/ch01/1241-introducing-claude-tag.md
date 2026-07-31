@@ -14,6 +14,24 @@ Claude Tag 是 Anthropic 推出的 Agent 协作框架，允许 Claude 以团队�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### 1. 多人协作的 Agent 模式
 
 Claude Tag 的核心创新在于**多人协作**：

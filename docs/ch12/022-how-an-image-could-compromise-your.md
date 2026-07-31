@@ -6,6 +6,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 - **CVE 编号**: CVE-2026-3102
 - **影响版本**: ExifTool ≤ 13.49 (macOS)
 - **修复版本**: ExifTool 13.50

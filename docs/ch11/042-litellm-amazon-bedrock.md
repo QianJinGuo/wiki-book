@@ -10,6 +10,22 @@
 
 ## 痛点：AI 投入不可控 + 资产被盗
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 企业接入 LLM API 后常遇到两个问题：
 
 1. **成本不可预测** —— 单个 prompt 跑超长上下文一夜烧掉月度预算

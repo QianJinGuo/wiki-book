@@ -8,6 +8,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 本文由火山引擎AI安全团队撰写，系统分析了Claude Mythos（Anthropic于2026年4月推出的机构级前沿模型）对企业安全架构的深远影响。Mythos将"自主发现并武器化漏洞"的能力提升到超越人类顶尖专家的水平，将漏洞从公开披露到被规模化利用的窗口从数月压缩到数分钟，倒逼安全运营从"人类节奏"切换到"机器速度"。文章提出了一套完整的安全架构应对方案：在治理维度推进AI原生零信任与智能体身份治理，在控制维度用AI实现"意图-行为对齐"，在韧性维度假设边界终将被穿透而建立快速响应机制。
 
 ## 核心要点

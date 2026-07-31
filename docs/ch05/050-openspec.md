@@ -8,6 +8,19 @@
 **流程完整 ≠ 代码正确。** OpenSpec 四步法（propose → apply → verify → archive）保证了需求对齐的文档链路，但无法保证 AI 实际输出的代码质量。
 
 ## 四步法各环节短板分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 环节 | 设计意图 | 实际短板 |
 |------|----------|----------|
 | Propose | 对齐需求，一次性生成 proposal + specs + design + tasks | Spec 质量无验证机制，格式错误静默忽略，来源不可靠的 Spec 导致下游全部偏离 |

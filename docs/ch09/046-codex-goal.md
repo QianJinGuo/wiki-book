@@ -14,6 +14,24 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 1. 核心结论：目标是数据库对象，不是 prompt
 
 `/goal` 最反直觉的设计是把"目标"当作**第一类持久对象**，而不是对话上下文里的一个变量：

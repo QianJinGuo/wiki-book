@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 设计哲学：涌现层的缺失
 
 现有基础设施已经具备了完整的单篇处理闭环（ingest → synthesize → index → log → lint）和导航/治理层（topic-map、review-queue、wiki-health-dashboard），但缺失的是**涌现层（emergence layer）**——一个能从知识库整体中发现模式、产生新问题、生成原创综合的系统。

@@ -12,6 +12,24 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 - **范式颠覆**：从传统「像素重建」转向「时空运动预测」，基于 V-JEPA 架构在潜空间进行运动预测，彻底摒弃像素级解码。
 - **全球最大数据集**：SurgMotion-15M — 3,658 小时手术视频、1500 万帧、50 个数据源、13 个解剖区域，涵盖腹腔镜、胸腔镜、神经外科、眼科、耳鼻喉科等多学科术式。
 - **10 亿参数**：首次突破手术视频基础模型的十亿参数规模，成功整合视频特征空间，实现器械-组织交互及复杂时空运动语义的深度建模。

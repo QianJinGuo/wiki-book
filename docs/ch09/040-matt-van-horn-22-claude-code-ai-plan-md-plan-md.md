@@ -12,6 +12,22 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 
 ## 核心反直觉
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **80% 计划 + 20% 执行**（传统相反）。思考过程全在 plan.md，执行是机械的
 - **强制生成 plan.md 是为了让智能体不偷懒** —— 写计划迫使它研究、承诺方法、列验收标准
 - **不读 plan.md** —— 扫一眼标题就 `/ce-work`，内联提问 TLDR / eli5

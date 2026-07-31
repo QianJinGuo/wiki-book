@@ -14,6 +14,19 @@ OpenAI Cookbook 在 2026 年推出的合作伙伴示例工程，演示**如何�
 
 ## 五大核心设计模式
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. Staged agentic workflow
 
 **核心思想**：把复杂任务拆成 5 个独立 stage，每个 stage 有明确的输入/输出/Pydantic schema：

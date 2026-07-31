@@ -43,6 +43,25 @@ I am not sure what to call this. It is not a coworking space. It is not a coffee
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 **1. 输入速度与人脑思考速度的缺口终于闭合**
 
 作者的核心论断之一是：口述现在跨过了质量门槛，成为比打字更好的知识工作输入方式。这不是渐进式改进，而是一个非线性跳跃——口述让人脑的思考速度与输出速度第一次实现同步。打字迫使人在思考尚未完成时就要线性化输出，导致思考被输出格式所限制（"我必须先想清楚才能写出来"）。口述打破了这一约束：想法以它自然的速度展开（混乱、循环、不符合句子形状），输出质量反而更高。这个变化的影响范围远超效率提升——它改变了知识工作的认知结构。

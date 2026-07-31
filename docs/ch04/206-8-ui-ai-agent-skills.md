@@ -28,6 +28,18 @@
 文章在 FAQ 中明确指出^：这些技能只能在 **Claude Code CLI 或 OpenClaw** 这类环境使用，网页版不支持。这意味着企业部署场景需要考虑 CLI 环境的可访问性。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
 ### 立即可用的行动项
 1. **优先安装 `ui-ux-pro-max` + `frontend-design`**^——这两个覆盖了设计方向和代码规范，是最小可用集
 2. **新项目先用设计系统生成**^——把输出保存为 `MASTER.md`，后续页面直接复用

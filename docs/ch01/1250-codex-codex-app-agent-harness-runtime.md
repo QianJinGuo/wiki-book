@@ -18,6 +18,24 @@ OpenAI 的 Codex 已从单一 CLI 工具演进为一套围绕 agent runtime 展�
 
 ## Codex 产品形态全景
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 Codex 的产品形态可拆解为八个端，各自针对不同使用场景：
 
 | 端 | 主要用途 | 定位 |

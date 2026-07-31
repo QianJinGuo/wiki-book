@@ -16,6 +16,19 @@
 
 ## Agent Loop 核心主张
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 **别再死磕 Prompt 怎么写了，去设计一个能让 AI 自己转起来的"循环（Loop）"。**
 
 - 过去用 AI 像手动挡：每路口换挡踩离合，一句句喂 Prompt

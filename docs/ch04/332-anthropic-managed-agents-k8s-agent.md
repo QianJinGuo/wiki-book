@@ -25,6 +25,19 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 从宠物到牛群：Agent 架构范式转移
 
 Anthropic 这篇文章揭示了 Agent 系统设计的根本性范式转移。传统 Agent 架构将 harness（决策循环）、sandbox（执行环境）、session（状态存储）耦合在同一个容器进程内，这种设计固然降低了初始复杂度，却也制造了一个"全或无"的故障模型——任何一个组件的失败都会导致整个系统不可用，如同养宠物：宠物死了，系统就死了。

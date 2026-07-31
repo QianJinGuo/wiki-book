@@ -12,6 +12,25 @@ Kimi K3 是月之暗面（Moonshot AI）于 2026 年 7 月发布的开源大模�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - K3 参数量 2.8 万亿，MoE 架构 896 专家激活 16 个，稀疏度极高
 - 基于 KDA（Kimi Delta Attention）混合线性注意力与注意力残差机制
 - 原生视觉理解，100 万 token 上下文窗口

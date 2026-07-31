@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - 世界模型浪潮的本质：AI 行业从"预测下一个词"向"预测下一种状态"的范式转移，底层密码是因果科学
 - Judea Pearl 的因果三级阶梯（观察→干预→反事实）是理解 AI 从统计拟合走向因果推理的理论框架
 - 零犀科技自 2020 年布局因果 AI，6 年后其"因果大模型"成为首家将因果 AI 与大模型进行系统性专利结合的中国公司

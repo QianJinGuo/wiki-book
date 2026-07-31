@@ -16,6 +16,24 @@ Amazon Bedrock Managed Knowledge Bases 新推出的 Agentic Retrieval（通过 A
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **核心改进**：将传统检索的"一次 embedding 相似度搜索"升级为"FM 驱动规划循环的多步检索"
 - **Trace 事件流**：SpeculativeRetrieval → Planning → Retrieval/FullDocumentExpansion → Result，每一步可见可审计
 - **多知识库路由**：支持最多 5 个 Managed KB，通过自然语言描述让规划器自动路由子查询

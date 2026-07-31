@@ -14,6 +14,22 @@
 
 ## 背景：为什么需要 Skill 互优化
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 当前 Agent 生态中，不同研究团队和框架各自发展出独立的 Skill 抽象：
 
 - **SkillEvolver**：强调 Skill 的自适应演进能力——Skill 能够根据任务反馈自动调整执行策略、更新内部参数、淘汰低效变体

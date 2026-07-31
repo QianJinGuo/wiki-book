@@ -8,6 +8,24 @@
 *Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework*（ICLR 2026 投稿，arXiv:2604.01707）提出：Agent Memory 的核心问题不是容量，而是**治理**——系统能否在正确时间取回正确信息。上下文窗口扩展解决的是带宽问题，不是建模问题。
 
 ## 统一框架：四组件
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 论文将 Agent Memory 拆解为四个核心组件，可统一刻画 10 种代表性方法：
 | 组件 | 职责 | 关键设计选择 |
 |------|------|-------------|

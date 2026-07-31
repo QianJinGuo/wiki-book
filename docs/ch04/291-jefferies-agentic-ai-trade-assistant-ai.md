@@ -14,6 +14,19 @@ Jefferies（全球全服务投资银行）在 AWS 上构建了 Agentic AI Trade 
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **8 步架构**：UI Widget → Authentication Service (EKS) → Bot Service → Query Agent (Strands) → Amazon Bedrock → Bedrock Knowledge Bases → Query Executor → Data Stores（内存网格 + SQL + FIX 消息）
 - **核心技术栈**：Strands Agents 提供 Agent 编排框架，MCP 协议连接多样化数据源，Bedrock 提供 LLM (Claude Sonnet) 推理能力
 - **安全设计**：Amazon Bedrock Guardrails 内容审核 + PII 过滤 + 行级数据权限 + 会话日志审计追踪

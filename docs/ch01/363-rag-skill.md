@@ -10,6 +10,24 @@
 RAG 完整流程：分块->向量化->召回->重排；知识蒸馏同事 Skill 的关键在召回质量而非生成质量。Skill 可以教 AI 怎么做，却不一定能让 AI 知道为什么这么做。
 
 ## 摘要
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 文章深入解析 RAG 全链路各环节，批判"蒸馏同事 Skill"现象。很多所谓蒸馏，蒸馏出来的是 Workflow 而非判断力/经验。Skill 的本质是教 AI 做事流程，而非赋予 AI 做判断的能力。RAG 各环节调优顺序：分块 -> 向量化 -> 召回 -> 重排。
 
 ## 要点

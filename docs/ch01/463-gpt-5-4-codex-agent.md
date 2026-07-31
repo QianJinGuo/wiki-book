@@ -14,6 +14,19 @@ Interconnects（Nathan Lambert）从 agent-native 工作流视角评测 GPT 5.4 
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **从单维到四维评估**：传统 benchmark 把模型压缩成"单一正确性分数"，但 agent 任务是正确性 × 易用性 × 速度 × 成本的混合，GPT 5.4 是首个在这四维都有意义提升的 OpenAI 模型。
 - **"硬棱角"消失**：之前 Codex 经常在 git 操作、文件管理等小任务上"切死"用户；GPT 5.4 这些边缘问题不再发生，"感觉不到死亡"是体验质变。
 - **Reasoning efficiency = 思考用更少 token 拿同样分**：OpenAI 每次发版都展示"达到 peak benchmark 所需 token 数显著下降"，这是 reasoning efficiency 指标。

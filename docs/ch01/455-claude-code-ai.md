@@ -38,6 +38,24 @@ MonkeyCode 是一款开源的企业级 AI 开发平台，内置了开发环境�
 
 ## 测试一下效果怎么样。
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 选用极致模型5.5,只是名字不同而已，模型还是我们熟悉的哪个5.5模型。
 
 ### 可视化数据分析任务。

@@ -23,6 +23,19 @@
 这正是 Harness 工程可视化的意义。
 
 ## 第一，重新看见多层反馈环
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 我们最开始并没有先去设计什么"闭环模型"，而是从一个更简单的问题出发：工程里的反馈，到底在哪里？
 当你把软件交付链路完整展开，会发现反馈从来不是单一的。它至少存在于三个层次：
 1. **本地阶段**：编译、测试和 lint

@@ -25,6 +25,19 @@ Each agent reaches its service through Vercel Connect, with its own scoped token
 
 ## [Link to heading](http://vercel.com/blog/introducing-vercel-connect#register-a-connector-once,-then-reuse-it-across-projects-and-environments)**Register a connector once, then reuse it across projects and environments**
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 A connector is a reusable connection between your Vercel team and a provider like Slack or GitHub. You create it once from the dashboard or the CLI, then attach it to the projects and environments that need it, with project-level access controls.
 
 `vercel connect create slack --name mybot`

@@ -20,6 +20,22 @@
 
 ## 解决方案：Krawl 系统
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 作者将繁琐的流程封装成了一个 Claude Skill，并进一步扩展为完整的 Krawl 系统——一个基于 Claude Skills 机制的知识库管理系统。
 
 ## 认识 Claude Skills

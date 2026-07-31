@@ -15,6 +15,25 @@ DeepSeek-V4 包含两个独立预训练的 MoE 模型：V4-Pro（1.6T 总参数�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **模型规格**：
   - DeepSeek-V4-Pro：1.6T 总参数，稀疏激活 49B，1M 上下文
   - DeepSeek-V4-Flash：284B 总参数，稀疏激活 13B，1M 上下文

@@ -21,6 +21,24 @@
 
 ## 三个独有贡献
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 1. **MTP head 一体两用** — 单一 Multi-Token Prediction head 同时承担预训练 auxiliary objective 和推理阶段 speculative decoding 的 draft model。这是把训练目标和推理加速器合并的工程化设计，避免单独 draft model 的训练/维护成本。
 2. **设计约束驱动消融** — "在 commodity GPU 上 inference efficiency" 作为 ablation 硬约束，验证每个架构选择。不是性能优先而是 **部署成本优先** 的设计哲学。
 3. **Thinking + Instruct 双 checkpoint** — 同一 base 出两版（直接回答 vs 显式 reasoning trace 后回答），让用户在 latency/cost/能力之间做 trade-off 而不必切换 vendor。

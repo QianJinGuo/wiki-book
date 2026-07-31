@@ -10,6 +10,24 @@
 *(See [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-model-building-blocks.md))*
 
 ## 深度分析
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 **三层扩展定律对基础设施的收敛效应。** 文章最核心的洞察是将扩展从单一曲线（pre-training only）重新定义为 NVIDIA 提出的三层扩展定律：pre-training compute scaling、post-training（SFT + RL）、以及 test-time compute（long-thinking、search/verification）。三者虽然 workload profile 不同，但对基础设施的需求却收敛到了同一组 building blocks：加速算力 + 高带宽低延迟网络 + 分布式存储。 这意味着 pre-training 集群和 inference 集群的设计逻辑正在融合——不再能单独优化 pre-training 效率而忽视 inference 或 post-training 的需求。
 **GPU 选型的本质是内存与带宽的权衡，而非单纯追求 throughput。** 文章的 GPU 规格表（H100 / H200 / B200 / B300）揭示了一个关键趋势：相邻代际间的 BF16/FP16 峰值算力几乎不变（如 H200 与 H100 同样是 0.9895 PFLOPS dense BF16），真正的代际差异体现在 HBM 容量（H100 80GB → H200 141GB → B200 180GB → B300 288GB）和 HBM 带宽（3.35 TB/s → 4.8 → 8 → 8 TB/s）。 对于 frontier LLM 这类 memory-bound workload，HBM 容量直接决定了是否能单卡跑动模型或需要 tensor parallelism；HBM 带宽则决定 step time 中 memory movement 阶段的核心瓶颈。FP8（以及未来的 FP4）的出现在计算侧提供了 2×-4× 的 throughput 提升，但这些收益的前提是内存层级能够跟上。
 **EFA 是 AWS GPU 集群的隐形脊柱，每代升级带来约 18% 的 collective communication 收益。** 从 EFAv2（P5）到 EFAv3（P5en，降低 35% 延迟）再到 EFAv4（P6，再提升 18% collective communication），AWS 在网络层的迭代速度甚至快于 GPU 代际更新。 这背后的机制是 OS-bypass RDMA（通过 libfabric/SRD 协议），使 NCCL collectives 可以直接与网络设备交互而无需经过内核协议栈。对于 MoE 模型中 expert parallelism 所依赖的 all-to-all 操作（每个 GPU 与组内所有其他 GPU 交换数据），EFA 带宽的提升直接影响模型扩展的通信效率上限。

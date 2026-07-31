@@ -14,6 +14,25 @@ Interconnects 第 19 期 "Latest open artifacts" 汇总了 2026 年 2-3 月中�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 1. **Qwen3.5-397B-A17B**：Qwen 团队发布跨多个尺寸的更新（dense 0.8B 到 27B，MoE 35B-A3B 到 397B-A17B），全部多模态、默认使用推理，基于 Qwen-Next 架构与 GDN 层；指令跟随、多语言、风格均有显著提升，但小模型仍存在"过度思考"问题。
 2. **Step-3.5-Flash**：StepFun 推出 196B-A11B MoE，跨多个基准表现强劲，尤其在数学任务上击败多个尺寸数倍于它的模型。
 3. **GLM-5**：智谱（Z.ai）发布 744B-A40B 模型，需求大增导致其编码计划（coding plan）价格上涨，并附有完整技术报告（arXiv:2602.15763）。

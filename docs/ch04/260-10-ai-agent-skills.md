@@ -28,6 +28,24 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 - ##  总结
 
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 **Skill 生态正在经历从"数量"到"质量"的筛选节点。** 文章开篇指出了一个关键判断：开发者面临的主要问题已从"工具不足"转变为"选择困难"。Skill 数量正在快速增长，但质量参差不齐，缺乏统一标准。这意味着 Skill 市场的竞争焦点正在从"谁有更多 Skill"转向"谁的 Skill 质量更高、更可落地"。未来 Skill 的核心竞争力不在于功能数量，而在于场景贴合度、执行可靠性和可维护性。
 **10个 Skill 分四类：前端开发、代码质量、测试/CI/CD、文档工具。** 前端开发类（frontend-design、cache-components、fullstack-developer）解决的是"快速生成 UI"的问题；代码质量类（frontend-code-review、code-reviewer）解决的是"审查标准化"的问题；测试/CI/CD 类（webapp-testing、pr-creator、fix）解决的是"交付流程自动化"的问题；文档工具类（update-docs、find-skills）解决的是"文档维护和 Skill 发现"的问题。这四类的共同特征是：都是高频、标准化、可重复的研发任务，而非创新性或设计类任务。
 **前端开发类 Skill 的价值在于设计感的标准化。** frontend-design（Anthropic 官方）解决了"快速出效果"的问题，适用于从零开始搭组件或完整 Web 页面；cache-components（Vercel/Next.js 官方）解决的是 Next.js Partial Prerendering 缓存策略的自动化优化，把开发者从手动配置缓存中解放出来；fullstack-developer 解决的是"原型快速搭建"的问题，React/Next.js + Node.js + 数据库 + API 全栈串联。这三个 Skill 的共同价值主张是：把前端开发中重复性最高的"搭架子"工作自动化。

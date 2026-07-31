@@ -48,6 +48,18 @@ Stripe 刻意将 Agent 与传统 ML 推理引擎分离，原因：
 
 ## LLM Proxy 架构
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 Stripe 不直接调用 Amazon Bedrock，而是通过 LLM Proxy 微服务：
 
 - **噪声隔离** — 防止多团队争抢 LLM 带宽

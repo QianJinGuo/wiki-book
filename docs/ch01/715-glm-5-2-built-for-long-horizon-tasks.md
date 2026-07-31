@@ -29,6 +29,25 @@ On standard coding benchmarks, GLM-5.2 is the strongest open-source model,
 
 ## 评估理由
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 - **value=8**: Genuinely technical: describes IndexShare sparse attention architecture (2.9× FLOPs reduction at 1M context), MTP layer improvements for speculative decoding (20% acceptance length increase), and deta
 - **confidence=8**: 详细程度与来源可信度
 - **stars=4**: 独特技术洞察评分

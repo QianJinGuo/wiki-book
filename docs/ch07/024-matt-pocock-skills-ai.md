@@ -9,6 +9,24 @@ Matt Pocock（TypeScript 类型系统专家，Total TypeScript 作者）整理�
 安装：`npx skills@latest add mattpocock/skills`
 
 ## Skill 分类
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 **工程类（10个）**：grill-with-docs、diagnose、tdd、improve-codebase-architecture、triage、to-prd、to-issues、zoom-out、prototype、setup
 **效率类（4个）**：grill-me、caveman、handoff、write-a-skill
 

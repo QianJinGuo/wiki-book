@@ -10,6 +10,22 @@
 Vibe Coding 拉低下限，Agentic Engineering 解决真实交付问题；可验证性决定 Agent 自动化上限；上下文/工具/测试/运行环境成为 Software 3.0 的核心设计对象。
 
 ## 摘要
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Karpathy 在红杉 AI Ascent 2026 访谈中提出 Software 3.0 概念，认为 Vibe Coding 将软件创造门槛拉低，但 Agentic Engineering 才能解决"更快之后能否可靠交付"的问题。当 Agent 读上下文、改文件、调工具、跑测试、配服务时，它已走进软件工程链路。Vibe Coding 解决"更快做出来"，可靠交付是另一类问题。
 
 ## 要点

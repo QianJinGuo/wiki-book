@@ -19,6 +19,19 @@ MiniMax 将 Agent 产品升级，新名字：**Mavis — MiniMax as a Jarvis**�
 此次分享做 Agent Team 背后的思考：怎么设计 Agent team？为解决什么问题？付出什么成本？用户什么时候该用 Agent Team、什么时候没必要用？
 
 ## 单 Agent 的四个痛点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 痛点一：上下文焦虑
 用户给了 7 件事，Agent 做完 3 个就停了，开始汇报"已经完成了 1、2、3，要不要继续做剩下的"。这是因为模型普遍存在**上下文焦虑**，模型本身对于"超长任务什么时候该停"的判断就是模糊的。
 

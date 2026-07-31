@@ -22,6 +22,25 @@
 
 ## 企业学习闭环的三大架构支柱
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 纳德拉把"Token 资本"的具体实现拆为**三个私有化构件**。这是把抽象概念落到工程动作的关键一步:
 
 - **私有评估体系**(Private Evaluation): 衡量模型是否真正改善**企业自身关切的业务结果**,**不**追随外部公开排行榜。

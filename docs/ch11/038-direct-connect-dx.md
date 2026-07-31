@@ -10,6 +10,22 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 一、设计考虑与最佳实践
 - 选择新站点前参考 [Direct Connect 站点列表](https://aws.amazon.com/cn/directconnect/locations/)
 - 必须先满足 [AWS Direct Connect 弹性建议和最佳实践](https://aws.amazon.com/cn/blogs/china/aws-direct-connect-highly-available-routing-design/) 的冗余网络连接

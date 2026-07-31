@@ -26,6 +26,22 @@ Verizon Connect 的 Fleet Management Agentic AI 系统采用两层架构，每�
 
 ## 关键技术决策
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 ### 异常检测：专用代码 vs LLM
 
 **问题**：要求 LLM 直接分析大规模原始表格数据是常见陷阱。

@@ -62,6 +62,22 @@ SQLite 存储：用户输入、每一步 reasoning、工具调用和返回值、
 
 ## 一次任务全链路
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 用户输入 → Prompt Assembly（拉 SOUL+Memory+USER+Skill 拼 system prompt）→ Agent Loop 调模型 → 模型决定调工具 → Tool/MCP 执行 → 喂回模型循环 → 写进 Session/Trajectory → Nudge 计数器跳一格 → 阈值触发 fork Review Agent → Review Agent 读 Trajectory 决定写 Memory/创建 Skill/Patch Skill → 落盘 → 下次任务 Prompt Assembly 拉到已更新内容。
 
 三条主线交织：执行链（Loop+Tool+Session）→ 学习链（Nudge+Review+Memory+Skill）→ 拼装链（Prompt Assembly+SOUL）。

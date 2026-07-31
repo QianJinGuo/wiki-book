@@ -8,6 +8,24 @@
 
 ## 概述
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 Amazon Nova Forge 是 AWS 提供的**自建前沿模型**定制服务，核心价值在于：从早期 checkpoint 起步、混合专有数据与 Amazon Nova 精选数据、在 AWS 上安全托管定制模型。**数据混合 (data mixing)** 能力是核心 — 让模型吸收领域知识同时保留通用推理与指令遵循能力，避免 catastrophic forgetting。
 
 ## 三大定制阶段

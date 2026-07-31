@@ -14,6 +14,19 @@ Loka 为汽车经销商构建了一个基于 Amazon Nova 2 Sonic 的语音 Agent
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 传统语音助手的根本缺陷
 
 传统语音助手采用**三步流水线**：

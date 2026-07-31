@@ -11,6 +11,26 @@
 - **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04/494-deerflow-hermes-openclaw.html) 互补（整体选型 vs Gateway 专深）
 
 ## 与现有 wiki 的关系
+
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**
 - **填补空白**：wiki 目前有 OpenClaw 源码拆解、Claude Code Prompt/Context/Harness 拆解、Hermes 深度解析，但缺少以 **Gateway 为分析轴的三框架横向对比**
 - **交叉引用**：与 [OpenClaw Prompt/Context/Harness](../ch11/235-openclaw.html)、[Claude Code Prompt/Context/Harness](../ch09/061-claude-code-prompt.html)、[Hermes Agent 深度解析](../ch03/096-hermes-agent.html) 互为补充

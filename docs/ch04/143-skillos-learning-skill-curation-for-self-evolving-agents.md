@@ -13,6 +13,24 @@
 - **PDF**: [pdf](https://arxiv.org/pdf/2605.06614.pdf)
 
 ## 核心贡献
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 SkillOS 提出了一种**技能策展学习**框架，使 agent 能够自主地从经验中学习和优化技能库，实现自我进化。该框架将技能策展问题形式化为一个强化学习问题，通过经验驱动的方式让 agent学会如何从长期延迟反馈中学习技能管理。
 
 ## 系统架构

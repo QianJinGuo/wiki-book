@@ -10,6 +10,19 @@ Zalando 在百万 RPS 级别的客户端负载均衡工程实践，从服务发�
 
 ## 核心内容
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ![Image 1: Client-Side Load Balancing](https://img01.ztat.net/engineering-blog/posts/2026/06/images/cslb-consistent-hash-load-balancing-after.png?imwidth=1320#previewimage)
 
 Our busiest API ran its high-volume internal traffic through the cluster's shared edge ingress load balancer. For years we could never be sure whether a latency spike came from our own code or from reusing that shared edge router internally.

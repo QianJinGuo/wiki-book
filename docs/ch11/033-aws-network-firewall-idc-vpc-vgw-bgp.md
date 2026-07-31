@@ -10,6 +10,19 @@
 
 ## 场景与挑战
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 **场景**：企业使用 DX（Direct Connect）专线连接 IDC 与 AWS，IDC 内业务系统需访问云上 VPC 中的资源。
 
 **挑战**：默认情况下，DX 流量通过 VGW（Virtual Private Gateway）**直接**进入 VPC 路由表，绕过任何中间防火墙。**这意味着 NFW（Network Firewall）默认不会审查 DX 流量**。

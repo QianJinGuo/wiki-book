@@ -12,6 +12,24 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **四元消费结构（A3H）**：数据消费主体从「Human + Application」扩展至 AI、Agent、Application、Human，其中 AI Agent 的体量呈指数级增长——IDC 预测活跃 Agent 将从 2025 年 2860 万暴涨至 2030 年 22.16 亿（CAGR 139%）。
 - **ContextSearch Agentic Search**：基于 ReAct 框架构建主动规划引擎，支持「感知→推理→执行」自主闭环，歧义场景准确率达 91.7%（基础 RAG 为 0%），整体搜索正确率提升 24%。
 - **Mem0 任务记忆与 Graph Memory**：新增基于任务的记忆沉淀 Agent 过往经验，实现任务成功率提升 10%、Token 消耗节省 44%、时延减少 39%；Graph Memory 支持多跳关联关系查询，LoCoMo 评测得分从 86 提升至 91。

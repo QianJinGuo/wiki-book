@@ -18,6 +18,19 @@ Gemini 3 发起挑战：用同一篇文章演示 AI 进步。收到"show how far
 
 ## 编码工具不只是程序员的工具
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Gemini 3 发布时同步推出 **Antigravity**（类似 Claude Code/OpenAI Codex 的编程 Agent）。Mollick 强调：**编程能力本质上是能够在电脑上做任何事情的能力**——构建仪表板、操作网站、创建 PowerPoint、读取文件。Agent 能编码 = Agent 能做任何人类用电脑能做的事。
 
 Antigravity 的 Inbox 概念：发送 AI 任务，Agent 在需要批准时 ping 你。Mollick 用 Antigravity 分析了自己所有 newsletter 文章、进行网络研究、创建网站、部署结果，全程像在管理队友而非操作 chatbot。

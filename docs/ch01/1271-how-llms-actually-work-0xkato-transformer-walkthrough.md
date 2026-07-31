@@ -27,6 +27,19 @@
 
 ## 关键内容精要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 1. Tokenization
 - **核心机制**：string → 整数 ID 序列，每个 ID 对应 vocabulary 中一个 entry
 - **现代 vocabulary size**：数万到数十万

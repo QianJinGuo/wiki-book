@@ -8,6 +8,24 @@
 阿里云 RDS PostgreSQL 在 pgvector 扩展中引入了 **RaBitQ（Random Binary Quantization）** 向量量化技术，实现 **32 倍压缩比**（float32 → 1bit/维度），同时通过理论误差界保证召回率。实测在 1024 维 100M 向量的业务数据集上，IVF-RaBitQ 索引空间仅 16GB（vs. HNSW 的 689GB），索引创建时间从 4 天缩短至 4 小时，P99 查询延迟在混合读写场景下降低至原来的约 1/4。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 向量检索成为 RDBMS 新标配
 随着大语言模型和多模态 AI 的普及，将非结构化数据（文本、图像、音频）编码为高维向量并在海量向量中快速检索，已成为 RAG、语义搜索、图像检索、推荐系统等场景的基础设施需求。pgvector 基于 PostgreSQL 内核的 Access Method 接口实现了 IVF-FLAT 和 HNSW 两种向量索引，让企业无需引入专用向量数据库即可获得 AI 能力。阿里云 RDS PostgreSQL 在跟进开源版本迭代的同时，针对生产场景做了性能和稳定性优化，RaBitQ 即为其中关键引入。
 

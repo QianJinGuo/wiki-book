@@ -20,6 +20,25 @@
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 1. **在评估 AI Coding Agent 能力时，应区分"有提示编程"和"无提示架构设计"两种难度。** 如果你的使用场景是让模型在给定项目结构内填充代码，SWE-bench 类基准更有参考价值；如果需要模型从零设计系统架构，ProgramBench 更接近真实难度。建议同时参考两类基准的结果，避免仅凭单一基准得出结论。
 
 2. **面对极低基准分数时，优先分析任务失败的具体环节（架构设计 vs 代码实现 vs 测试覆盖）。** ProgramBench 的任务难度分布极广（从 jq 的 90% 到 FFmpeg 的 5%），不同任务的瓶颈不同。详细查看各任务的 extended results，分析模型是在哪个阶段失败的，有助于定位改进方向。

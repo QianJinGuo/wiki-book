@@ -8,6 +8,24 @@
 Thinking Machines Lab（OpenAI 前 CTO Mira Murati 创办）发布的交互模型，旨在解决假实时问题——当前 AI 模型以轮次为单位工作，人必须等模型说完才能接话。
 
 ## 核心思路
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 **原生训练，而非外挂拼接**：将实时交互能力作为模型本身的一部分从头训练，而非在轮次模型上套 VAD 等控制框架。
 
 ## 系统架构：双模型协作

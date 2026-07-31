@@ -28,6 +28,18 @@ Nvidia 的自由现金流在上一财年达到 970 亿美元，使其有能力�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    PROB[问题] --> SOL[解决方案]
+    SOL --> MKT[市场验证]
+    MKT --> GROW[增长飞轮]
+    GROW --> REV[收入]
+    REV -->|"再投入"| SOL
+    classDef s fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class PROB,SOL,MKT,GROW,REV s
+```
+
+
 1. **AI 投资尽调须将" Nvidia 敞口"纳入核心风险指标**
    评估任何 AI 相关投资标的时，需穿透分析其与 Nvidia 的资本关联程度——来自 Nvidia 的投资、 Nvidia 客户身份、以及使用 Nvidia 租赁算力的比例，这些结构性依赖会放大 Nvidia 自身周期波动的影响。
 

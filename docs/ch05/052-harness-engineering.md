@@ -8,6 +8,24 @@
 Harness Engineering 系统梳理——基于李宏毅课程 + OpenAI/Anthropic/Martin Fowler 实践。核心命题：**当 AI 从聊天走向行动，工程的重点不再是写更好的提示词，而是设计一个能持续校正它的系统**。 ^[claude-code-engineering-truth-1.6-98.4.md]
 
 ## Prompt / Context / Harness 三层区分
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 层次 | 关心什么 | 本质 |
 |------|---------|------|
 | **Prompt Engineering** | 怎么去问 | 一句指令 |

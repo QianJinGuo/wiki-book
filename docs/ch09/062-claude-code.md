@@ -32,6 +32,24 @@ Ben Mann 说：「我爱它。它真的很棒，但它可以好得多。」问�
 
 ## Boris Cherny 的加入与 Claude Code 的诞生
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 ### 2024 年 9 月：两天的原型
 
 2024 年 9 月，Boris Cherny 加入 Anthropic Labs。Ben Mann 给他的任务是「agentic coding」，嘱托「不要为今天的模型构建，要为六个月后的模型构建」。Boris 没有被直接指派做 coding 产品，而是先熟悉 Anthropic API，快速用两天时间做一个极简终端（CLI）原型。Demo 里，它能截图 Apple Music，告诉你正在听什么歌。他发到 Slack，只收获了两三个点赞——没人懂，连他自己也不完全懂。

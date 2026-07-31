@@ -32,6 +32,19 @@ Crossplane v2 helped here too. Modelplane has two clear personas. Platform teams
 
 ## What made it buildable: Developer experience
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 What really unlocked this project was the new Crossplane CLI and the schemas it generates.
 
 Modelplane's functions are all written in Python. We chose Python because it's the lingua franca of the ML world. We hope it might help folks who aren't yet cloud native experts contribute to the project. Writing functions in Python used to mean giving up a lot of the tooling that makes a codebase feel like a proper project. The new `crossplane` CLI changed that. It scaffolds a project, generates an XRD from an example resource, and generates typed schema bindings for your APIs.

@@ -10,6 +10,25 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 本文是 AWS 官方博客，于 2026 年 7 月发布，详细介绍 OpenAI GPT-5.6 家族（Sol/Terra/Luna）在 Amazon Bedrock 上的部署与使用指南。GPT-5.6 系列模型通过 Bedrock 的 `bedrock-mantle` 端点统一接入，支持文本和图像输入、文本输出、272K token 上下文窗口，以及从 `none` 到 `max` 六个等级的推理努力度调节。博客覆盖模型选型建议、Responses API 调用方法、Prompt Caching 降低成本的策略（显式和隐式两种模式）、Codex 编码 Agent 的集成方式，以及配额管理与扩缩容规划。所有推理运行在用户的 AWS 账户内，受 IAM 策略和 VPC 控制，并记录到 CloudTrail。
 
 ## 核心要点

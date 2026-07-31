@@ -16,6 +16,19 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-for-small-business.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 从「对话窗口」到「任务执行」：SMB AI 采用的范式转变
 当前小企业 AI 采用的最大障碍，不是技术不够强大，而是使用场景与用户能力之间的错位。Anthropic 在公告中一针见血地指出，小企业主的 AI 使用「往往停留在聊天窗口」（use often stops at the chat window）——这并非因为他们不知道 AI 能做什么，而是现有工具要求用户具备「将业务问题翻译为 AI 问题」的能力，而大多数小企业主既没有这个时间，也没有这个技术背景 。
 Claude for Small Business 给出的答案是「工作流即产品」：不再让用户自己设计提示词，而是将最耗时的 15 类事务性任务封装为可直接点选执行的技能。这一策略在产品设计上与 Zapier、Make（Integromat）等工作流自动化工具的方向有交集，但核心差异在于集成的深度和质量——Claude 的工作流不是简单的「当 X 发生时执行 Y」，而是能够理解业务语境的多步骤推理与执行。

@@ -15,6 +15,22 @@
 - **Hermes 赌 Agent 能自我进化** ——执行过程本身就是最好的经验来源，为什么要人来整理
 
 ## OpenClaw：赌社区集体智慧
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### ClawHub：Agent 界的 npm
 OpenClaw 的 Skills 来自 **ClawHub**——一个开放的技能市场。任何人发布，任何人安装。
 规模已经相当大：超过 **31,000 个 Skills**，覆盖邮件处理、CRM 管理、代码审查、数据分析……这个逻辑和 npm 一样：让社区里最懂某个场景的人来写这个场景的 Skill。

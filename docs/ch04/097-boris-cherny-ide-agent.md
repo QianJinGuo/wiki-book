@@ -9,6 +9,22 @@
 Boris Cherny（Anthropic Claude Code 负责人）在 Sequoia AI Ascent 2026 访谈中，系统性地阐述了开发工具的范式转变：从 IDE（人类在画布上操作）到 Agent 控制台（AI 是主要执行者，人是审阅者和方向设定者）。这不仅是 Claude Code 一家的产品变化，而是软件工程控制点的一次整体迁移。
 
 ## 产品悬置：能力溢出后产品形态才成立
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Claude Code 的爆发不像传统 SaaS 逐步验证 PMF，而是先赌模型能力越过某个点，提前把产品形态放在那里。前半年不好用不代表方向错；等 Opus 4 之后模型能力上来，原来超前的交互突然就成立了。这种"产品悬置"策略要求团队对模型能力曲线有坚定预判，而非等待 PMF 信号。
 
 ## Claude Code 的成长路径

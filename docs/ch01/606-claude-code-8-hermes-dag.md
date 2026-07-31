@@ -15,6 +15,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **8 译本的定位**：这是 Thariq 系列的第 8 个中文译本，前 7 译本已覆盖单 Agent prompt 技巧、本地 skill 注册、`/init` 命令、permission 沙箱等议题；本译本开始涉及 multi-agent orchestration。
 - **原文核心**：Thariq 提出"提示 Claude 自己创建工作流（prompt claude to create workflow）"的反直觉用法——让 Claude 在 session 内临时组合工具，而不是预先用 YAML/JSON 写死工作流。
 - **行小招译注的差异点**：加入 Hermes DAG 对比，强调"save & share workflow" 与 "token budget" 在企业场景下的可复用性，而原文更偏向个人开发者的 ad-hoc 用法。

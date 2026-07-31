@@ -80,6 +80,24 @@ ExecTool 实现了正则黑名单 → 超时控制 → 输出截断的三层防�
 这个三层设计的启示是：安全防护需要分层，不同层次的防护解决不同维度的问题。纯靠正则黑名单无法防范所有攻击，但完全放弃黑名单也会让常规危险命令畅通无阻。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 1. 从薄框架开始，保持可替换性
 如果你的 Agent 系统需要深度定制 Tool 行为或调试困难的场景，考虑直接从模型 SDK 构建，而不是通过 LangChain 等框架。薄框架不意味着"没有架构"，而是让架构更显式、更容易追踪。
 同时，即使选择了薄框架，也要保持接入层的可替换性（MessageTool 的 `sendCallback` 设计是一个好示范）。今天跑在 REPL，明天可能要跑在 Bot 上，不应该为此重写核心逻辑。

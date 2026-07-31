@@ -15,6 +15,25 @@ Anthropic 此前已做过不少尝试：
 > X 网友评论："这似乎是迄今为止最大的进展！" See also [Claude Code Architecture](../ch03/078-claude-code.html)
 
 ## NLAs 与"深度思考模式"的区别
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 DeepSeek 等模型的"深度思考模式"本质上是**模型主动输出**给用户看的内容——这些推理步骤是模型愿意展示、并经过生成筛选后的文本。
 NLAs 则是**"读取"模型内部原本不会展示出来的隐藏活动**，再把这些内部状态翻译成人类语言。
 

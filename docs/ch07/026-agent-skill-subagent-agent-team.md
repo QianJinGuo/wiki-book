@@ -13,6 +13,24 @@
 整体方案的稳定性，最终由 Skill 的规范质量决定。SubAgent 和 Agent Team 提供的是调度骨架，骨架上每个节点能不能稳定输出，取决于 Skill 本身有没有真正约束执行过程，而不只是描述了执行目标。 ].md]
 
 ## Skill：执行稳定性的核心
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 Skill 把一类任务的执行方式写成可复用的规范文件，AI 调用时按规范走，不再每次重新理解。它是无状态的，没有对话历史，只做一件事——被调用时稳定输出。 ].md]
 **最有用的约束：Checklist** ].md]
 把每个步骤拆成可以逐项打勾的检查项。AI 在多步骤任务里很容易跳步，有了 Checklist，每完成一步对照一项，遗漏率明显下降。 ].md]

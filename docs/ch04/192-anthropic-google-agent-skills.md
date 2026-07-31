@@ -26,6 +26,22 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Google ADK 提出的 5 种 Skill 设计模式——Tool Wrapper、Generator、Reviewer、Inversion、Pipeline——并非简单的分类标签，而是一套经过实践验证的工作流结构化方案。这套模式的演进轨迹清晰地呈现出 Agent 工程的一个核心趋势：从"如何让模型理解指令"转向"如何让模型按正确顺序执行任务"。
 **设计模式本质上是 5 类失败模式的解决方案。** 每一模式都对应 Agent 在实际场景中的典型失败：
 Tool Wrapper 解决的是"领域知识缺失"问题。当 Agent 需要调用 FastAPI、Terraform、Pandas 或 React Server Components 等领域特定技术时，将其塞入系统提示词会迅速导致上下文膨胀。Tool Wrapper 的核心思想是将低频、领域明确的知识保留在 `references/` 目录，仅在触发时加载，实质上是将上下文窗口从"存储空间"转变为"检索入口"。

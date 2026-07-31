@@ -27,6 +27,25 @@
 | 13 | 预算管理 | 四维度：Token/成本(maxBudgetUsd)/工具结果/轮次 |
 
 ## 关键设计决策
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 1. **微压缩（microCompact）** — 利用 Anthropic API cache_edits 在服务端做注意力屏蔽，本地消息和 cache 都不变，解决压缩与 cache 的矛盾
 2. **延迟加载与 prefix cache** — 通过独立 attachment（deferred_tools_delta）而非修改消息流，避免工具发现状态变化破坏 cache
 3. **权限拒绝渐进升级** — 3次连续或20次累计→从自动切换到询问用户，防止分类器误判导致死锁

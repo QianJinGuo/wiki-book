@@ -12,6 +12,19 @@ Martin Fowler 和 Kent Beck 合作撰写的深度技术文章，以 Bayer 制药
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### PRINCE 系统的三阶段演进
 
 PRINCE 平台经历了三个清晰的发展阶段，反映了企业 AI 系统从简单到复杂的演进路径：

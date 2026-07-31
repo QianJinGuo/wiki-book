@@ -6,6 +6,19 @@
 
 ## 为什么 AI Coding 先跑通，行业 Agent 落地难
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 AI Coding 能率先在生产环境奏效，原因是程序员的整个工作流本身就是高度数字化的——PRD、设计文档、技术方案、代码、Issue、日志全部以数字形式存在，Agent 输入端有充足且高质量的上下文，输出端直接完成 Design/Coding/Test/Deploy 的闭环。
 
 相比之下，零售、制造、金融、物流等行业的 Agent 处于"半失明"状态：看不见货架摆放、标签信息、竞品动态、生鲜损耗率等真实业务状态。模型再强，如果输入端缺乏真实世界的感知能力，输出端的决策质量必然受限。

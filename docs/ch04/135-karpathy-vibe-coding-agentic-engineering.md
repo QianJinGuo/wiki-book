@@ -16,6 +16,24 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 - **概念漂移**：Vibe Coding ≠ Agentic Engineering。前者抬高「所有人做软件的下限」，后者守住「专业软件的质量门槛」。两个概念在 2025-2026 间已被 Google（Addy Osmani）、GLM-5 论文、Linus Torvalds 等多方独立呼应，不是 Karpathy 一家之言。
 - **任务粒度变化**：2025-12 是分水岭，模型从「补一个函数」升级到「接一段流程」：读上下文、改多个文件、调命令、跑测试、根据失败继续修、给出可 review 的结果。前者是工具，后者是工程系统。
 - **Software 3.0 的新坐标**：软件 1.0 控制代码、2.0 控制数据与模型权重、3.0 控制「上下文、工具、记忆、权限、验证、部署环境」这套 Agent 工作环境。架构师的重心要从模块、接口上移到 Agent 与系统的关系。

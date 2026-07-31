@@ -9,6 +9,22 @@
 
 ## 三个独有贡献（与现有 3 篇 LiteLLM entity 互补）
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 1. **WebSearch Interception 的内部机制** — 不依赖 provider 原生 web search 能力，LiteLLM 在中间层劫持 tool call 并回填为 `web_search_20250305` 格式，3 家 provider（Bedrock/Vertex/Azure）通用
 2. **LiteLLM 1.83.x → 1.84.0 强制升级点** — v1.83.x 对 Bedrock Converse 路径**不支持** agentic loop，必须用 v1.84.0+ 才能完成"搜索 → 结果回传 → LLM 二次调用"的完整闭环
 3. **5 大踩坑点**（searxng JSON 格式 / 端口 8888 / agentic loop 在 `/chat/completions` 不工作 / `web_search_20250305` 工具名 / Citation 实现）— 官方文档未提及，全部实跑验证

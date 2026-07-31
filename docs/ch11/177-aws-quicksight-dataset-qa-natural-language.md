@@ -12,6 +12,19 @@ While the industry has raced to ship text-to-SQL demos, the real challenge in en
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 QuickSight Dataset Q&A 的核心价值在于重新定义了什么叫做"BI 数据探索的边界"。传统 BI 范式中，分析师在仪表板上预设所有可能的分析维度，用户只能在预置框架内提问——这本质上是一种"语义受控"的查询模式。而 Dataset Q&A 试图打破这个约束，让用户能够直接用自然语言探索任意数据集字段，甚至跨数据集进行联合提问。
 
 这个设计选择背后的工程挑战远比表面看起来复杂。文本转 SQL 的 demo 满天飞，但企业级 BI 的真正难题从来不是生成 SQL 本身，而是**语义对齐**（semantic alignment）：用户说的"volume"在业务语境里到底是 GMV、出货量还是订单数？这个问题没有标准答案，只能靠上下文推断。QuickSight 的解决方案是构建企业级语义图谱（semantic graph），在查询前先根据用户问题中的实体关系定位到正确的数据源，然后再用字段描述、数据分布样本等信息做二次消歧。这个两阶段流程（先定位 → 再消歧）是整个系统的核心差异化能力。

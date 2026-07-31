@@ -18,6 +18,19 @@ Anthropic 整理的打造 **AI 原生创业公司**实用手册，针对 2026 �
 | **规模化** | 系统性增长 + 组织成熟 | 可持续盈利/IPO准备度/被收购 | 高管助手 |
 
 ## 关键洞察
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 创始人角色转变
 - 从"执行者" → "智能体编排者"
 - 注意力向上移动：专注"做什么"和"为什么做"

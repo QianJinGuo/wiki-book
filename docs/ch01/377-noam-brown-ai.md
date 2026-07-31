@@ -14,6 +14,24 @@ OpenAI 研究员 Noam Brown 提出的评估方法论：大模型表现不仅取�
 
 ## 核心论点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 ### 问题1: 传统成绩表低估新模型能力差距
 
 Brown 以 GPT-5.5 为例：发布初期基准分数与 GPT-5.4 相比提升有限，但实际使用中长链条推理、复杂问题处理表现出明显代际差异。

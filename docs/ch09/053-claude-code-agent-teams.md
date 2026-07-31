@@ -12,6 +12,19 @@ Claude Code Agent Teams 把多 agent 协作做成了一套**本地 runtime**：�
 
 ## 三种多 agent 形态的边界
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 | 形态 | 核心用途 | 通信方式 | 生命周期 | 适合场景 |
 |------|---------|---------|---------|---------|
 | **Subagent** | 单点委派 | 只回 parent | 任务完成即结束 | 查询、review、测试 |

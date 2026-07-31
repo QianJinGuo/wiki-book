@@ -12,6 +12,19 @@ Ethan Mollick 基于 OpenAI 发布的实际使用数据，撰写了一份面向�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 模型格局：九大 AI 系统
 
 当前前沿 AI 系统可分为两个梯队：

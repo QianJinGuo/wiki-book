@@ -12,6 +12,19 @@
 
 ## 背景：Netflix 的模型定义
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 在 Netflix，ML model 的定义与 typical inference 不同。Model inference 通常只关注 `infer(features) -> score` 能力，而 Netflix 的"model"是封装了 pre-processing、post-processing、feature computation logic 和 optional ML-trained component 的 self-contained workflow。端到端执行这个工作流被称为 model serving。
 
 这种更高层次的抽象意味着：调用服务只需提供标准请求上下文（如 userId、country、device）和相关领域上下文（如要排名的 titles 或 fraud detection 的支付交易），model 自己计算 features 并在执行流中执行 inference。客户端被屏蔽于 model selection 和 execution 之外，允许 model architecture 和 data inputs 演进而无需客户端协调。

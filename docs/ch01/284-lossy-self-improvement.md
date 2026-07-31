@@ -18,6 +18,25 @@ Lambert 认为，尽管我们正经历由 AI 持续改进带来的社会动荡�
 
 ## 复杂性刹车（Complexity Brake）
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 LSI 的理论基础来自 Paul Allen 提出的复杂性刹车概念：科学越接近理解智能，进一步进步的难度就越大。对人类创造力的研究表明，专利数量并未呈现加速回报，实际上自 1850-1900 年间每千项专利达到峰值后便持续下降。复杂性增长最终是自我限制的，会导致"广义系统崩溃"。
 
 Lambert 将这一理论应用于 AI 研发：构建前沿语言模型极度复杂且日益变得更复杂。Karpathy 的 autoresearch 等工具可以在特定测试损失或单一总体奖励的窄域内优化模型，但从纸面更准确的模型到用户觉得更有成效的模型之间存在长期差距。这个问题在预训练中尤为突出——扩展定律显示损失会持续下降，但我们不知道这是否经济上更有价值。

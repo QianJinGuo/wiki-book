@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **"变笨"的真实原因**：2026 年 3 月 4 日，Anthropic 为了压低延迟，将 Claude Code 的 Effort 默认档位从 high 降到了 medium。更新日志虽有记载，但多数用户未注意到这一变化。直到 4 月 7 日才调回默认值并给所有订阅用户重置用量额度。
 2. **Model vs Effort 的核心区分**：Model 换的是"脑子"——一套冻结的权重，决定模型"会不会"某项任务；Effort 换的是"态度"——决定 Claude 在这项任务上投入多少工作量（读几个文件、跑不跑测试、要不要额外验证）。
 3. **反直觉结论**：小模型开高 Effort 完全可能干翻大模型开低 Effort。Sonnet（全能型）开高 Effort，在不少活儿上能胜过 Opus（专家型）开低 Effort。

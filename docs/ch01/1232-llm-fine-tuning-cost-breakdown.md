@@ -18,6 +18,24 @@ LLM微调的总成本主要由以下几部分组成：
 
 ## 二、计算资源成本详解
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 ### 2.1 GPU类型与定价参考
 
 | GPU型号 | VRAM | 典型租用成本/小时 | 适用场景 |

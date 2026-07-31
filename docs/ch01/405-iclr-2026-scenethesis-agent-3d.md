@@ -14,6 +14,24 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 摘要
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 英伟达 Cosmos Lab 与普渡大学联合提出 **Scenethesis**（ICLR 2026），用"语言 + 视觉 + 物理" 三模态 Agent 闭环实现可交互的 3D 场景生成。该工作将"文生 3D" 从一次性生成重塑为"规划 → 落地 → 物理优化 → 自检修复" 的四阶段闭环流程，核心创新在于引入有符号距离场（SDF）做细粒度物理约束，并加入 judge 模块做一致性自检。实验显示碰撞率从 6.1% 降至 0.8%，首轮通过率从 72% 提升至 91%，在户外开放场景同样有效。
 
 ## 核心要点

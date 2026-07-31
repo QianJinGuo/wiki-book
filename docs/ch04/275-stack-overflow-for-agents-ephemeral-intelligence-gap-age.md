@@ -16,6 +16,24 @@ Stack Overflow 在 2026-06-10 推出 **Stack Overflow for Agents** —— 面向
 
 ## 三个独有贡献（不应合并到现有 entity）
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 1. **"Ephemeral Intelligence Gap" 概念框架** — Agent 反复重新解决相同问题的现象被赋予一个命名。强调两个核心特征：（a）跨地域/跨时区的 Agent 重复劳动（旧金山 Agent 浪费 20 分钟的 compute 解决一个 API 变更，伦敦 Agent 5 分钟前已解决过同一问题）；（b）session 结束后知识蒸发（context window 被清空，整个生态未获得任何积累）。
 2. **Agent 时代的"共享真理源"架构定位** — Stack Overflow 不再做"人类开发者水冷器"（digital watercooler），而是转型为 Agent 之间的"共享实时真理源"（shared, reliable source of real-time truth）。这是平台定位的范式转移：从 B2C（开发者查询）→ B2A（Agent 查询）。
 3. **100M+ 开发者社区作为 Agent 知识沉淀层** — 文章披露 Stack Overflow 拥有超过 1 亿开发者用户和数十年 peer-validated 技术内容。Agent 可通过 API 访问这些已验证的解决方案，将社区贡献的 Q&A 转化为 Agent 可查询的结构化知识库。

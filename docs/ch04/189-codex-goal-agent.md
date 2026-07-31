@@ -9,6 +9,26 @@
 核心论点：`/goal` 补的那块东西更靠底层——把一个长期目标放进了 Codex 的运行时里。目标有状态，过程有记账，完成要审计，预算到了要收束。
 
 ## 任务变大以后，问题会换一批
+
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
 Karpathy 在 Sequoia AI Ascent 2026 提到，2025年12月前后 agentic coding 出现明显变化：模型输出的代码块更大、更连贯、更可靠，任务单位从"局部补全"变成"一段流程"。
 **局部任务 vs 流程任务：**
 | 局部任务 | 流程任务 |

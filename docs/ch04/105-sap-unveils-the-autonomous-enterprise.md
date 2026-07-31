@@ -12,6 +12,20 @@ SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Busines
 
 ## SAP Autonomous Suite：50+ 领域专属助理
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 SAP Autonomous Suite 是部署在 Business AI Platform 之上的自主运营层，赋予 SAP 现有业务应用执行端到端流程的 AI 能力 。该套件包含 **50+ 领域专属的 Joule Assistants**，覆盖财务（Finance）、供应链（Supply Chain）、采购（Procurement）、人力资源（HCM）和客户体验（CX）等核心职能，每个助理由 200+ 专业化 Agent 编排驱动，执行精确的任务分工 。
 
 典型案例是 **Autonomous Close Assistant**：它可将财务月结流程从数周压缩至数天，通过自动化日记账分录、对账和跨流程误差解决实现端到端闭环 。另一个重要落地是 **Industry AI**——针对 7 个行业垂直领域的自主解决方案，嵌入行业特定的流程逻辑、数据模型和合规要求；SAP 在大会上展示了与德国能源巨头 [RWE](https://www.rwe.com/) 的合作，利用 Autonomous Asset Management 分析数千条历史故障记录，识别根本原因并自动生成包含正确工具和已验证修复方案的工作订单，以降低海上风电设备的非计划停机时间 。

@@ -8,6 +8,19 @@
 Claude Code 命令系统化指南——5 分类（会话/模型/权限/扩展/高阶）+ 分阶段优先级 + 速查表。核心理念：命令不是拿来背的，知道什么时候用、为什么用才关键。
 
 ## 五大类命令体系
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 第一类：会话与上下文管理
 最基础也最常用，直接决定日常体验。
 | 命令 | 用途 | 关键区别 |

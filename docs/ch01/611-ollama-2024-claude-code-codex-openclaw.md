@@ -20,6 +20,19 @@ Ollama 在 2026 年上半年完成了三次关键升级——GGUF 生态解锁�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **GGUF 生态解锁（v0.30.0）**：不再需要 Modelfile 转换，直接跑 HuggingFace 上任意 GGUF 模型，模型库从官方精选几百个变为数十万个
 - **ollama launch 工具集成**：一键配齐 Claude Code、OpenCode、Codex、OpenClaw，自动配置模型+API endpoint+环境变量
 - **MLX 引擎 preview**：Apple Silicon 专用引擎，利用统一内存减少 CPU-GPU 拷贝，输出速度相比 llama.cpp 后端提升约 20%

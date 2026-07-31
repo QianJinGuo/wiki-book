@@ -15,6 +15,22 @@
 8. **总架构**：三条主干链路（控制链/执行链/任务链）+扩展层
 
 ## 核心架构原则
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 - **复杂度分层**：边界→启动层，连续运行→Query Loop，行动协议→Tool Runtime，风险治理→Permission，长时执行→Task Runtime，平台增长→扩展层
 - **三条主干链路**：控制链（定边界+推理）、执行链（Tool→Permission→sandbox→副作用）、任务链（后台/子Agent/远程统一生命周期）
 - **外部可以热闹，内部必须收敛**

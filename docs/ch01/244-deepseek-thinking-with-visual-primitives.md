@@ -16,6 +16,24 @@
 - DeepSeek 是七大主流 coding agent（OpenAI/Anthropic/Google/Qwen/Kimi/GLM/DeepSeek）中最后一个把视觉接入主力产品的旗舰
 
 ## 核心创新：视觉原语
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 ### 解决的问题：Reference Gap（指代鸿沟）
 主流路径在解决 **Perception Gap（感知鸿沟）**：让模型"看得更清楚"，通过高分辨率切割把图切成更多 patch。代价是图像 token 暴涨，KV cache 跟着暴涨。
 DeepSeek 的论点是：**感知再强，指代不准也白搭**。

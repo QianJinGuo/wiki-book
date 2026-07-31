@@ -13,6 +13,19 @@
 4. **有完成条件** — 客观可程序化验证的子任务成功标准
 
 ## 三大困难点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 困难 | 根因 | 对应原则 |
 |------|------|----------|
 | 上下文耗尽 | 上下文窗口有限，压缩叠加导致细节丢失 | 任务拆解 |

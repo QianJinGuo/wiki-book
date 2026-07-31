@@ -10,6 +10,19 @@ CHERIoT 在 CHERI 基础上专为嵌入式 / IoT 场景做了轻量化适配，�
 微软数据显示其每年 CVE 中约 70% 源于内存安全漏洞（CISA 报告亦指出软件产品内存安全问题的紧迫性），CHERIoT-Ibex 的定位正是从硬件层消除这类缺陷的根因。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 **适用场景**：对安全有强制要求的嵌入式微控制器、IoT 端点、Azure 底层基础设施固件。
 **集成路径**：微软已开源完整 ISA + 工具链 + RTOS + RTL，开发者可通过 [microsoft/cheriot-ibex](https://github.com/microsoft/cheriot-ibex) 获取并参与生态。
 **架构决策**：CHERIoT-Ibex 体现 silicons-to-systems 战略——安全不从软件层打补丁，而是下沉至硬件基础设施，从设计之初即嵌入纵深防御。

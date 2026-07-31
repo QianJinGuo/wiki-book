@@ -37,6 +37,22 @@ Amazon Bedrock模型推理的Serverless 异步架构 – 处理在线多模态�
 八、总结
 
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
 - [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/561-amazon-bedrock-agentcore.html)
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/561-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Serverless Async Inference Multimodal](ch11/009-aws-bedrock.html)

@@ -26,6 +26,24 @@ SkillOS 来自 Google Cloud AI Research 与 UIUC 的联合研究，提出了一�
 - ## Trajectory
 
 ## 深度分析
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 **1. Executor 与 Curator 模块解耦是核心工程决策，直接影响系统可演进性**
 SkillOS 将 agent executor π_L 始终保持冻结状态，仅训练 skill curator π_S 这一设计具有深刻的工程含义。冻结 executor 意味着 curator 的所有学习信号必须通过写入 SkillRepo 来间接影响 executor 行为，这种约束强迫 curator 学会"以 executor 为中心的策展"——写出的 skill 必须是 executor 能理解并复用的，而非自己觉得有用的。这种模块化还带来了一个关键优势：**executor 可以独立演进**。当有新更强的基础模型可用时，只需更换冻结的 executor，训练好的 curator 及其 SkillRepo 可以直接迁移复用，无需重新训练 curator。实验验证了这一点：Qwen3-8B 作为 curator 配合 Gemini-2.5-Pro 作为 executor 仍然取得了优异成绩，说明 curator 学到的是可迁移的策展策略而非针对特定 executor 的 hack
 **2. 任务分组（Grouping）机制将延迟反馈转化为可学习的监督信号**

@@ -52,6 +52,19 @@ Claude的大脑里，竟然凭借本能长出了一个诡异的结构。
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### Jacobian Lens 的工作原理与创新
 
 Jacobian Lens（J-Lens）是一种新型机械可解释性工具，其核心创新在于通过计算模型输出词表的雅可比矩阵，将模型内部的高维表征投射到词表空间。具体而言，对词表中每一个词，J-Lens 计算模型在该词方向上的梯度，得到一组「方向向量」。这些方向向量反映了模型当前状态对每个输出词的「倾向程度」。

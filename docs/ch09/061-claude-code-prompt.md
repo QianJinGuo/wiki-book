@@ -18,6 +18,22 @@ Claude Code 的提示词体系分为六大模块：
 | Memory Prompts | 存储内容、存储方式 |
 
 ## Core System Prompt：静态/动态分离
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 整个系统提示词由**静态规则**和**动态 dynamicSections** 组成：
 
 - **静态规则**：做缓存（不变的部分反复使用）

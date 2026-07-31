@@ -10,6 +10,19 @@
 
 ## 数据源选型决策树
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 | 场景 | 推荐 | 理由 |
 |------|------|------|
 | 已有 LiteLLM 部署但未使用 Aurora | **S3 + Athena** | 解耦、无需引入新数据库 |

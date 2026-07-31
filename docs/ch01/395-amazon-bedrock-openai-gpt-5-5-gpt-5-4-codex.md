@@ -19,6 +19,19 @@ OpenAI 模型登陆 Amazon Bedrock 是 2026 年 AI 基础设施领域最重要�
 
 ## 接入方式
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 通过 Bedrock API 直接调用
 
 用户可通过 Bedrock 的 InvokeModel / Converse API 直接调用 OpenAI 模型：

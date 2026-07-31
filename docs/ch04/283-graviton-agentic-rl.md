@@ -17,6 +17,19 @@
 
 ## 架构分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 沙盒层天然适合 Graviton 的原因：CPU-bound 工作负载、高并发 fan-out 模式、对单核性能不敏感但对性价比敏感。文章提供了 7 个 workload 原型的详细 benchmark 数据，包括吞吐、p99 延迟和单位操作成本。
 
 ## 延伸意义

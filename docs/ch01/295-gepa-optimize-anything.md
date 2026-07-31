@@ -15,6 +15,21 @@
 GEPA `optimize_anything` 通过 ASI + Pareto 前沿搜索，用一个声明式 API 优化任何文本制品（代码/prompt/Agent 架构/配置），8 个领域验证 SOTA。
 
 ## 核心问题
+
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
 传统 LLM 进化框架（AlphaEvolve, OpenEvolve, ShinkaEvolve）的局限：
 
 - 只支持 Single-Task Search 模式

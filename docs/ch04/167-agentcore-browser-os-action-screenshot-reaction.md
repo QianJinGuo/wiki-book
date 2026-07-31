@@ -8,6 +8,22 @@
 Amazon Bedrock AgentCore引入OS-level Actions，允许Agent直接操控GUI界面——通过Action-Screenshot-Reaction闭环实现浏览器自动化。8个原子操作覆盖鼠标、键盘、截图等OS层交互，Agent通过视觉反馈（截图）感知环境状态并决定下一步操作。
 
 ## 三个关键洞察
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. 视觉反馈驱动的Agent循环
 与API工具调用不同，OS-level Actions通过截图获取环境状态（像素级反馈），Agent据此决策——这是"视觉优先"（Vision-first）的Agent架构，类似于人类操作电脑的方式。
 

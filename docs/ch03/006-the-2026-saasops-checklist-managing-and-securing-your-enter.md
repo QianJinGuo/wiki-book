@@ -14,6 +14,19 @@
 
 ## 九项检查清单详解
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ### 1. 构建或强化SaaSOps基础
 
 SaaSOps成熟度取决于组织与技术的匹配程度。清单要求：

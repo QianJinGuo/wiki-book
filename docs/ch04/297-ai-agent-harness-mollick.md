@@ -22,6 +22,25 @@ Mollick 提出 AI 选型三维框架，将 AI 生态分为三层：
 
 ## 模型选型（2026 年初现状）
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 三大前沿模型总体能力接近，但细节差异明显：
 
 - **GPT-5.2 Thinking Extended**（$20 订阅）：Mollick 最推荐复杂任务首选，手动选择而非 auto 模式

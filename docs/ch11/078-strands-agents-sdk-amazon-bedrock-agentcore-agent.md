@@ -12,6 +12,19 @@ AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Age
 
 ## 摘要
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 电商详情页中每个商品可能包含数十张广告图，每张图里的营销文案都要逐一过法务审核才能上架——传统人工流程慢、易遗漏、标准不一致。本案例展示厨房家电品类的自动化方案：浏览器登录 → Cognito 拿 JWT → STS 取临时凭证 → 直传 S3 → 后端调用 Agent → manager agent 调度两个专家 Agent → 提取广告词 → 对照知识库做合规分析 → 按 `- text: suggestion` 格式逐条输出。整套系统体现了「[多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) + 多模态 OCR + RAG 合规检索」的典型组合。
 
 ## 核心要点

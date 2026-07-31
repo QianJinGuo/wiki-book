@@ -22,6 +22,19 @@ Vanilla RAG 是 "retrieve-once-then-generate" 模式，面对需要跨数据源�
 
 ## 三个独有贡献
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 5-Phase 编排 with Persistence
 
 将 RAG pipeline 拆解为 5 个角色 + 5 个阶段：

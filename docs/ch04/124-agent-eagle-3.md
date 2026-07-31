@@ -14,6 +14,16 @@ LLM 的自回归生成是典型的 [memory-bound](https://github.com/QianJinGuo/
 
 ## 投机解码（Speculative Decoding）核心逻辑
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 ### 两阶段流程
 
 投机解码通过"Draft-Verify-Accept"三阶段实现加速：

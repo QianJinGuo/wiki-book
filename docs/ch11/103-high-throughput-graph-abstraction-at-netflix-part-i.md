@@ -10,6 +10,24 @@
 
 ## 核心问题
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Netflix 内部 1,500+ 微服务每日产生海量 ops 事件（service → service, service → DB, service → user），需要构建实时图抽象用于：
 - 故障定位（"哪些服务依赖此 down 的下游？"）
 - 影响半径分析（"X 服务 down 影响哪些客户路径？"）

@@ -5,6 +5,24 @@
 > 📊 Level ⭐ | 9.2KB | `entities/serverless-inference.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 - Newsletter article, source: https://try.digitalocean.com/serverless-inference/
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/serverless-inference.md)
 

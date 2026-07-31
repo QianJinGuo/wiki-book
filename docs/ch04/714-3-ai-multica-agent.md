@@ -14,6 +14,20 @@ AI让每个角色成为"超级个体"，但完整工作的推进并未因此变�
 
 ## 三条路径的权衡
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 团队权衡了三个方向。**路径A：造一个更强的超级Agent。** 端到端自行拆解执行，但可控性差、缺少干预点。**路径B：直接设计AI原生协作流程。** 最具想象空间，但缺少运行数据支撑。**路径C：将人类已验证的流程Agent化。** 把每个角色的执行者换成Agent，以工作流组织接力。团队最终选择了路径C——足够接近原有流程、容易对齐责任边界、能快速暴露协作系统的所有边界问题。
 
 ## 三根骨架：从个体能力到组织能力

@@ -10,6 +10,24 @@
 Harness 要解决的不是"怎样让模型回答得更漂亮"，而是：当一个概率模型要读文件、调用工具、修改代码、运行测试、观察日志、操作浏览器、跨会话推进任务时，怎样让它持续看见事实、执行动作、接收反馈、保存进度，并在失败后修正下一轮行动？
 
 ## Prompt / Context / Harness 三层区分
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 层次 | 关心什么 | 类比 |
 |------|---------|------|
 | **Prompt Engineering** | 怎么去问 | 一句指令 |

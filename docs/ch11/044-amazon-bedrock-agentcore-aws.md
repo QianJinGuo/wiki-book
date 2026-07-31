@@ -5,6 +5,22 @@
 > 📊 Level ⭐⭐ | 13.4KB | `entities/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 by Danilo Poccia on 02 12月 2025 in Amazon Bedrock , Amazon Machine Learning , Announcements , Artificial Intelligence , AWS re:Invent , Generative AI , Launch , News Permalink Share 今天，我们隆重宣布推出 Amazon Bedrock AgentCore 中的多项新功能，以进一步消除阻碍人工智能代理进行生产的障碍。各行各业的组织已经在 AgentCore 上构建各种解决方案，AgentCore 是最先进的平台，可以安全地构建、部署和运行任何规模的功能强大的代理。在自预览版推出以来的短短 5 个月内， AgentCore SDK 的下载量已超过 200 万次。例如： PGA TOUR 是体育领域的先驱和创新领导者，该公司已经建立一个多代理内容生成系统，为其数字平台撰写文章。构建于 AgentCore 基础上的全新解决方案通过将内容写作速度提高 1000%，同时将成本降低 95%，让 PGA TOUR 能够为该领域的每位运动员提供全面报道。 像 Workday 这样的独立软件供应商（ISV）正在 AgentCore 上开发未来的软件。AgentCore 代码解释器为 Workday 规划代理提供安全数据保护和用于财务数据探索的基本功能。用户可以通过自然语言查询分析财务和运营数据，使财务规划变得直观易懂、自主可控。此功能将花费在例行规划分析上的时间减少了 30%，每月可节省大约 100 个小时。 巴西分销商和零售商 Grupo Elfa 依靠 AgentCore 可观测性，实现了对其代理的完整审计可追溯性和实时指标监控，将被动流程转变为主动运营。借助这个统一平台，他们的销售团队每天可以处理成千上万次的报价，同时组织仍能全面了解代理决策，帮助对代理决策和互动实现 100% 的可追溯性，并将问题解决时间缩短 50%。 随着组织扩大代理部署规模，他们在实施正确的边界和质量检查以从容部署代理方面面临挑战。使代理变得强大的自主权也使他们难以从容地进行大规模部署，因为他们可能会不当访问敏感数据、作出未经授权的决策或采取意想不到的行动。开发团队必须在以下方面取得平衡：实现代理自主权的同时，确保他们在可接受的边界内运作，还必须达到将代理置于客户和员工面前所需的优异品质。 如今提供的各项新功能使这一过程无需猜测，可帮助您从容地构建和部署可信的人工智能代理： AgentCore 中的策略 （预览版）：使用具有细粒度权限的策略，在 AgentCore 网关工具调用运行之前拦截这些调用，从而为代理操作定义明确的界限。 AgentCore 评估 （预览版）：根据实际行为，使用内置评估器（针对正确性和有用性等维度）和自定义评估器（针对业务特定要求），监控代理的质量。 我们还推出了扩展代理可执行之操作的功能： AgentCore 内存中的情节性功能 ：一项新的长期策略，可帮助代理从经验中学习并在类似情况下调整解决方案，以提高在未来类似任务中的一致性和性能。 AgentCore 运行时中的双向流式传输 ：部署语音代理，其中的用户和代理都可以按照自然对话流程同时讲话。
 
 ## 核心技术

@@ -8,6 +8,19 @@
 Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文来自 WeChat data-flow 频道。
 
 ## 关键要点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 - **主题**: Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式
 - **原始发布**: 2026-05-09
 - **评分**: score=80

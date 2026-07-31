@@ -12,6 +12,19 @@ Murphy Trueman 从前端开发转型设计师的亲身经历出发，分析了 F
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### Figma 的核心创新：可见性（Visibility）
 
 Figma 没有发明组件概念——编程语言早已有 class/instance 模式。Figma 做的是将这个概念**可视化、可操作、可理解**：

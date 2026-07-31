@@ -12,6 +12,19 @@ Hajallie 的官方网站为 https://www.habibhajallie.com/，他目前在 Larkin
 
 ## 展览概述：Black & Blue
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Hajallie 的当前个展「Black & Blue」正在伦敦 Larkin Durey 画廊展出，展期至 2026 年 5 月 22 日。
 
 展览的核心主题是两层丧失：女儿的死产（stillbirth）以及四年前姐姐的离世。画廊描述这些作品呈现的是"indescribable emotions that sit beneath language"——无法用语言表达的、存在于语言之下的深层情感。

@@ -31,6 +31,24 @@ GStack 教 Agent 怎么写代码，GBrain 教 Agent 怎么记事和思考。
 如果你已经在用 GStack，装上 GBrain 基本就拼出 Garry Tan 自己那套完整工作流了：一个管手，一个管脑。
 
 ## 02 4 个核心亮点
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 ### 亮点一：25 个 Skill 即插即用
 GBrain 自带 25 个 Skill，装上就能用，按用途分了几类。
 里面有两个是永远在线的：

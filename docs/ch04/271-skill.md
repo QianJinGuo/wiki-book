@@ -24,6 +24,24 @@ Skill 是 Agent 能力的最小封装单元，它把领域知识、工作流程�
 - ##  https://github.com/sunxingboo/skill-evaluator
 
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 **Skill 评估框架的核心问题：能跑和好用之间隔着"可量化标准"。** 文章指出了 Skill 开发中的核心困境：description 写得太宽泛导致 Agent 不触发，工作流缺少分支导致复杂输入就翻车，需要脚本却硬塞 Markdown 导致重复执行同一段代码。这些问题写的时候不一定能看出来，只有真正使用时才会暴露（也可能不会暴露）。这意味着 Skill 的质量无法靠"看起来合理"来判断，必须有一套可量化的评估体系。
 **D1 元数据质量是唯一决定"生死"的维度。** 8个评估维度中，D1 元数据质量（description 是否精准描述功能、是否包含触发关键词、是否注明不该触发的场景）决定了一个 Skill 装好后 Agent 在每次对话中是否会被加载。如果 description 写得不好，Skill 根本不会被触发，后面 SKILL.md 写得再好也没有意义。其他7个维度影响的是"好不好用"，D1 决定的是"有没有机会被用到"。这是 Skill 设计中投入回报比最高的改进点。
 **8个维度分布在 Skill 生命周期的三个阶段。** 第一阶段（能不能被找到）：D1 元数据质量。第二阶段（用起来顺不顺）：D2 执行引导清晰度、D3 领域知识密度、D4 工作流完整性、D5 错误处理与恢复能力。第三阶段（能不能被信任和演进）：D6 脚本与自动化质量、D7 版本治理与可维护性、D8 社区反馈与实际效果。这是一个"发现 → 执行 → 演进"的完整生命周期，每个阶段都有明确的评估重点。

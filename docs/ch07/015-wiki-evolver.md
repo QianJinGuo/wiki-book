@@ -9,6 +9,19 @@
 - [Wiki Evolver 工作流程与最佳实践](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-evolver-workflow-best-practices.md) — wiki-evolver cycle 机制、frontier 决策、evaluation harness 与回归测试
 
 ## 为什么需要这一层
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 当前 vault 已经有比较成熟的 ingest / index / log / lint 闭环，也已经有 `[Wiki Master Map](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)`、``、`` 这样的导航与治理面。但这些层更多解决的是"怎么把知识存进去、找出来、维护好"，还没有系统性解决"如何让知识库主动长出新的研究问题、论文候选、工程实践和下一代 Skill"。
 Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/120-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
 

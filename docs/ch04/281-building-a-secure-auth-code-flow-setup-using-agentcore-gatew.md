@@ -19,6 +19,19 @@
 
 ## 技术要点
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 1. **OAuth Code Flow**：标准的 OAuth 2.0 授权码流程，用于安全的用户身份验证
 2. **AgentCore Gateway**：Bedrock AgentCore 的集中入口点，负责路由和保护 Agent 到工具的通信
 3. **MCP (Model Context Protocol)**：AI 助手与远程工具/服务交互的协议

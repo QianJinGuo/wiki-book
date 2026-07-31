@@ -14,6 +14,24 @@
 
 ## 2026 新地形
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 与 2025-09~11 月的 AWS 记忆系列前作相比，2026 年出现三个叠加变量：
 
 - **开源 Coding Agent 崛起**：OpenClaw（2025-11，Markdown 文件 + SQLite 索引 + Dreaming 整理）让"文件式记忆"成为实际工程选项；Hermes（2025-07，2026 初广泛采用）把"Agent 自主编写 Skill"从概念变成生产机制，并迭代出 Curator 后台生命周期治理。

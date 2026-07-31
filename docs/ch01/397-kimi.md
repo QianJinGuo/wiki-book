@@ -14,6 +14,25 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 1. **K3 发布引爆需求**：K3 性能对标 Opus 4.8 与 GPT-5.6 Sol，定价仅为竞品50%（输出15美元/百万token），导致用户涌入量逼近集群承载极限，四档会员齐刷刷显示售罄
 2. **马斯克公开认可**：继3月点赞K3底层架构后，马斯克再次肯定Kimi，同时宣布xAI正在训练2万亿参数新模型
 3. **"两万亿俱乐部"**：Kimi K3（2.8万亿）、Qwen3.8-Max（2.4万亿）、MiniMax M3 Pro（~2.7万亿）、Grok 4.6（2万亿）同台竞技，2万亿成为前沿门槛

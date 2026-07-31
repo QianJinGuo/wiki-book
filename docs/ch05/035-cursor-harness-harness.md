@@ -16,6 +16,24 @@
 - **多 Agent 方向**：重点不在角色数量，而在 Harness 能不能调度谁、怎么描述任务、怎么合并结果
 
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
 ### Harness 作为持续运营的软件产品
 Cursor 复盘最核心的洞察是把 **Harness 不当成「设计完就稳定存在」的架构层，而是当成持续运行、持续实验、持续修正的软件产品**。 每次调整都该有假设、有实验、有指标、有观测、有回滚。这个表述听着不新鲜，但放在 Agent 语境里其实挺扎眼——很多团队改 Prompt、加工具、换模型，确实还没有走到这套流程。
 这带来一个根本性的视角转变：**Agent 质量不能只看模型分数，更准确的发布单元是「模型 + Harness」的组合**。 当这些组件都开始承重，团队怎么持续运营它，才是真正的工程挑战。

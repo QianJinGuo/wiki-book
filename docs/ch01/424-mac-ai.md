@@ -43,6 +43,16 @@ Cider 是明略科技自研并开源的端侧推理加速框架，构建于 MLX 
 
 ## Mano-P：让 Mac 长出「手」
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+    classDef o fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class Q,KV,PD,SP o
+```
+
+
 Mano-P 是明略科技的 GUI-VLA 智能体模型，通过纯视觉理解让 AI 直接看懂屏幕并操作图形界面，不依赖 CDP 协议或 HTML 解析。
 
 **性能表现**：

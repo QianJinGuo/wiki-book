@@ -14,6 +14,26 @@ AWS 宣布 Neuron Agentic Development 能力——一套 AI Agent 和 Skills 集
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[意图输入] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察结果]
+    OB -->|"反思调整"| PL
+    PL --> OUT[交付]
+    subgraph "支撑"
+        M[记忆] 
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef sup fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB,OUT core
+    class M,S,T sup
+```
+
+
 ### 五大专项 Skills
 
 Neuron Agentic Development 提供五个专项 Skill，遵循内核开发的自然流水线：

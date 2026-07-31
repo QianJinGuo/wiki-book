@@ -10,6 +10,21 @@
 
 ## 场景
 
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
+
 - 输入：车后舱摄像头拍摄的控制台照片（含车速表、里程表、转速表干扰）
 - 输出：油表剩余百分比 → 用于计费/退费
 - 难点：油表和温度表相似，VL 模型难以定位

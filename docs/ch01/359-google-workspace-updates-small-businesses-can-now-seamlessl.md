@@ -14,6 +14,19 @@
 
 ## 背景与问题
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 随着企业协作工具竞争加剧，越来越多的组织在 Microsoft 365 和 Google Workspace 之间进行选择切换。对于小型企业和教育机构而言，以往从 Microsoft 迁移到 Google Workspace 的过程涉及大量手动操作，包括逐一创建用户账号、迁移邮件数据、导出日历等，耗时且容易出错。
 
 这一技术门槛导致许多小型企业在评估切换成本后放弃了迁移计划。Google 此次推出的自动化迁移工具旨在降低这一门槛，使小型企业能够更快速地完成从 Microsoft 到 Google Workspace 的过渡。

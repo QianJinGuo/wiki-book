@@ -19,6 +19,22 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - **核心问题**：SRE incident triage 是时间敏感工作，需要快速 collect evidence、assess user impact、create follow-up work——通常在多个工具间切换导致 handoff 延迟和 knowledge loss
 - **架构核心**：Amazon Quick chat agent 作为编排层，通过 native MCP 集成调用 New Relic 的 5 个推理工具 + Asana 的任务创建，单 prompt 触发完整 incident response 流程
 - **5 个 New Relic 推理工具的 tool routing 模式**：agent 根据 prompt 内容决定调用哪些 tool，展示了 agentic tool selection 在生产环境的实现

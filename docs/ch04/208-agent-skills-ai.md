@@ -12,6 +12,22 @@
 
 ## 工作流 AI 的定义与市场现状
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 所谓**工作流 AI**（Workflow AI）是指系统本身已存在或在实现过程中，AI 占比很低（一般 10%，最高不超过 20%）的 AI 系统类型。例如 HR 上传身份证的手抄流程 AI 化，整体系统 80% 精力在流程实现，AI 部分很少。
 
 从数据来看，70%+ 的企业 AI 功能都围绕工作流相关系统展开。OpenClaw 爆火后，其主要承载的工作也正是工作流场景。

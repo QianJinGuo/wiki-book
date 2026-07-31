@@ -12,6 +12,24 @@ Review Agent = Hermes 的"心智"。独立于执行 Agent 之外，专门负责�
 与执行 Agent 的本质区别：执行 Agent 有"已完成任务"的执念，Review Agent 没有。它只看快照，不看情绪。
 
 ## 为什么复盘必须独立（独立 Agent 设计）
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### 两个根本问题
 **问题 1：自我评价偏正面**
 让 Agent 自己反思自己刚做的事，它几乎永远写"任务顺利完成、流程合理、结果符合预期"。这不是模型偏心，是 prompt 角色冲突——"执行者 + 评价者"两个角色一冲突，评价就被"我已经尽力了"压住。

@@ -11,6 +11,25 @@
 **核心问题**：推荐书单时不查已读/笔记/书架历史，把读过的书当新书推回——本质是"自然语言包装的搜索接口"，能力之间没有"智能"
 
 ## huashu-weread 增强版
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 **GitHub**：https://github.com/alchaincyf/huashu-weread
 在官方weread skill能力之上加一层"读书顾问工作流"： ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 

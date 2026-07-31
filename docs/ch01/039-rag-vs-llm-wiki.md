@@ -11,6 +11,24 @@
 - **策略对齐**：与 [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) 互补（概念介绍 vs 系统对比）；本文 wiki 本身就是 LLM Wiki 实践案例
 
 ## 与现有 wiki 的关系
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 - **互补**： 介绍 LLM Wiki V2 的 5 项核心升级，本文是 RAG vs LLM Wiki 的全面对抗性对比
 - **填补空白**：wiki 缺乏 RAG 技术架构的系统性批评分析和场景选型框架
 - **实践关联**：本文 wiki 正是 LLM Wiki 范式的实例——实体页 + 概念页 + raw 三层 + AI 驱动的 Ingest/Query/Lint

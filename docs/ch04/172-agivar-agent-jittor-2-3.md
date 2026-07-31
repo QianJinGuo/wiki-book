@@ -18,6 +18,25 @@
 
 ## 序：AI 学着操作电脑
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 过去 AI 回答问题，现在它直接开始帮你干活。填表格、录系统、整理文件，Anthropic **Claude Cowork** / OpenAI **Codex 桌面版**——越来越多的 Agent 开始接管真实工作流。
 
 **核心矛盾**：AI 越来越会干活了，但普通人该怎么把自己的工作流程交给它？

@@ -14,6 +14,19 @@ VSCode 在 webview 与扩展 host 之间使用 `postMessage` API 通信。ammara
 
 ## 攻击链拆解
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 1. 攻击者构造一个恶意 URL，指向攻击者控制的 webview 内容
 2. URL 利用 VSCode 启动 github.dev 时 session cookie 携带的特性
 3. 受害者点击链接后，github.dev 在 iframe 中加载恶意内容

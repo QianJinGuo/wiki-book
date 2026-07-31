@@ -8,6 +8,19 @@
 高德地图 Proactive Agent：将传统"搜与推"升级为**会思考、会主动决策**的时空思考型 Agent，在用户开口之前就提供量身定制的贴心服务。
 
 ## 范式跃迁：RecSys → Proactive Agent
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | | 传统 RecSys | LLM-powered Proactive Agent |
 |--|-----------|---------------------------|
 | 本质 | 对用户行为的"有损压缩" | 对时空信号的"无损放大" |

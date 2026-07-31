@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 12.8KB | `entities/ibm-forward-deployed-units-ai-deployment.md`
 
 ## 背景：企业 AI 交付的痛点
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 IBM 在公告中指出，传统的 enterprise delivery model 依赖于劳动密集型（labor-intensive）的人力扩张模式——项目规模扩大意味着需要投入更多人力的线性增长。然而，随着 AI  adoption 加速，IBM 认为成功的关键已转向如何组织团队、协调 AI agents（[Agent](../ch03/035-agent.html)）、强化 governance（治理），以及将 AI 能力 operationalize（可操作化）为可量化的业务成果。
 这一判断呼应了 **Agentic AI** 落地过程中的核心矛盾：企业在 experiment（实验）阶段可以快速验证 POC，但将 AI 真正部署到 production（生产环境）时却困难重重。技术不是问题，operating model（运营模式）才是瓶颈。
 

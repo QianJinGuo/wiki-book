@@ -10,6 +10,22 @@
 
 ## 核心问题
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - 信用卡/对公汇款/包月订阅是为人设计的，单笔手续费常超过代理实际要付的金额
 - 代理需要"机器间直接谈"的支付协议
 - 代理需要"安全托管钱包"

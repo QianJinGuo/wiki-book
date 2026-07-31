@@ -9,6 +9,22 @@ OpenCLI 是一个开源的 AI Agent 工具网关框架，Stars 17.1k，核心目
 > "Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime."
 
 ## Key Facts
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 | Fact | Detail |
 |------|--------|
 | GitHub | https://github.com/jackwener/OpenCLI |

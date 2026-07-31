@@ -10,6 +10,18 @@ Google DeepMind 在 2026 年 3 月提出了一种全新的人机交互范式：�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 - **从「复制粘贴到 AI」到「AI 来到你面前」**：当前的 AI 工具（ChatGPT、Copilot 侧边栏）要求用户主动切换上下文，把内容复制进 AI 工具；AI Pointer 尝试逆转这个过程——AI 主动理解用户当前正在看的内容
 - **四项交互原则**：保持工作流连续（不打断）、视觉+语言混合示意（展示与讲述）、利用「这个/那个」自然指代、将像素转化为可交互的语义实体
 - **产品化进展**：Chrome 和 Googlebook（Google 的新笔记本电脑体验）已开始集成这些能力，标志着 Spatial AI Interaction 从研究进入产品阶段

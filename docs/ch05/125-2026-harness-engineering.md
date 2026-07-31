@@ -12,6 +12,19 @@
 
 ## 核心概念
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### Agent = Model + Harness
 
 Harness 的最简定义来自 ThoughtWorks：Agent 不仅仅是模型，而是模型与 Harness 的组合。Harness 包括让 agent 不偏离轨道的约束、捕捉错误的反馈回路、告诉 agent 自己身在何处的文档、以及它被允许使用的工具。拿掉 harness，就只剩一个原始语言模型，在代码库里"一路猜"。加上合适的 harness，就变成一个能交付生产代码的系统。

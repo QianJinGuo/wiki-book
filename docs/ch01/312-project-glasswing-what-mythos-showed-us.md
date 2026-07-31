@@ -12,6 +12,19 @@
 - 对安全团队而言，仅加快扫描/修补速度不够，架构层面的深度防御才是关键 
 
 ## 背景
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 Project Glasswing 是 Anthropic 推出的安全研究合作项目，邀请外部团队在其受控环境中测试 Mythos Preview 等安全专用 LLM 。Cloudflare 在过去数月对多种安全 LLM 进行了内部测试，随后获得邀请，将 Mythos Preview 用于扫描其五十余个代码仓库 。
 
 ## Mythos Preview 的核心能力跃升

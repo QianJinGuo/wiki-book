@@ -28,6 +28,19 @@ Karpathy 的四条规则并非随意组合，而是与 AI 编程中四种最常�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 1. 为每个项目创建专属 CLAUDE.md
 
 将四条规则作为起点，根据项目技术栈和代码规范进行裁剪。例如在测试驱动项目中强化规则 4 的验证条款，在遗留代码项目中严格化规则 3 的"不改动"边界。新项目直接放入根目录，已有项目在末尾叠加。

@@ -14,6 +14,19 @@ Sentry 增长团队成员 Matt 2026 年 6 月在 "Technically" newsletter 发表
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 触发点：CMS 不对称成为 velocity 杀手
 
 Matt 第一次打开 Claude Code，让 agent 扫描站点找"内链薄弱"页面并自动开 PR。几分钟内，agent 就开始批量修复——但随后撞上了 CMS 这堵墙："能直接看到代码的页面（GitHub 里的部分）可以 18 页一次 PR 一把搞定；锁在 CMS 里的页面（核心博客等）一行都动不了。"

@@ -14,6 +14,20 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-team-building-yexiaochai.md)
 
 ## 评分
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 | 维度 | 分数 |
 |------|------|
 | 知识价值 | 8 |

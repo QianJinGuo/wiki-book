@@ -41,6 +41,19 @@ Patrick 与 Stephen Buttolph 共同探索了 **Vena**——一种面向大规模
 - 设计目标：兼顾大型验证者集（>500）与强鲁棒性（liveness 和 safety 上限 f < n/3 拜占庭故障）
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 ### Route 66 的战略逻辑
 Route 66 反映了一个结构性问题的解决方案：区块链堆栈的日益专业化与基础设施层集成成本之间的矛盾。当应用链开始像专用应用而非通用智能合约平台运行时，传统的"大一统"集成模式（钱包支持所有链、所有功能）面临瓶颈。
 Coinbase 的参与是关键变量。作为美国最大的合规加密资产托管和交易平台，Coinbase 对接新型区块链的动机是商业驱动而非技术好奇。其战略投资部门 Coinbase Ventures 的介入表明，Route 66 不只是技术倡议，也是市场扩张策略的一部分——降低 Coinbase 生态接入新链的成本，从而捕获更多用户和资产流量。

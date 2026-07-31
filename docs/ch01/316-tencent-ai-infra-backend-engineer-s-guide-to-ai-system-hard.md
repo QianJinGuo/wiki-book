@@ -12,6 +12,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - AI Infra 视角：传统后台以 CPU 为核心，AI Infra 以 GPU 为核心，设计目标从逻辑事务处理转向高吞吐浮点计算
 - LLM 生成一个 token 需要读取全量模型参数，H20 单卡 96GB 显存 vs CPU 带宽无法满足计算密度
 - 从"去 IOE"（IBM/Oracle/EMC）到"AI 大型机"：硬件集中化趋势在 AI 时代重演

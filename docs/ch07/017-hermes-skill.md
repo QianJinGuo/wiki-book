@@ -16,6 +16,24 @@
 **进化发生的瞬间**：下次任务命中Skill直接复用 = 闭环跑一次系统稍微变强一点。 ^[https://mp.weixin.qq.com/s/NTsLyOrJqxfi0_m1RQTfJA]
 
 ## 真实案例：npm发包任务3次迭代
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 - **第1次**：12步，失败（忘了publish前build）。Skill 0.1产出
 - **第2次**：9步（命中Skill 0.1），成功但changelog遗漏。Skill 0.2 patch产出
 - **第3次**：6步（命中Skill 0.2），一次成功。Skill 1.0产出

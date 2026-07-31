@@ -8,6 +8,19 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - Gartner 分析师 Douglas Toombs 在悉尼 IT Infrastructure, Operations & Cloud Strategies Conference 上的核心判断：完全主权的云（数据本地化、算力本地化）只有中美两国能实现
 - 原因：只有美国和中国生产主权云所需的所有技术。其他国家的买家无法避免与外国供应商的关系
 - 美国云供应商虽声称产品能满足特定司法管辖区需求，但因为最终由美国公司所有，不可能保证完全主权

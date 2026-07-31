@@ -12,6 +12,19 @@ Hermes-Agent 的真正核心是 **Gateway（端口 8642）**，Chat 和 TUI 只�
 
 ## Kanban 架构设计
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 数据库与并发控制
 
 Kanban 采用 SQLite WAL 模式，数据库路径为 `~/.hermes/kanban.db`。 所有状态更新走 CAS（Compare-And-Swap）机制：读版本号 → 写更新 → 失败重试，这种设计有效避免了并发脏写问题。

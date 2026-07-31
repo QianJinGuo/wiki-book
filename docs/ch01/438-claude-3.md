@@ -13,6 +13,22 @@ Claude 官方发布事后分析报告，承认过去一个月 Claude Code 存在
 修复状态：v2.1.116+ 已全部修复。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 三重变更的叠加效应
 Anthropic 官方的事后分析揭示了一个典型的"一堆小问题叠加成大灾难"案例。三个独立变更分别作用于不同的流量切片，且生效时间各异：第一个变更在 3 月 4 日上线，第二个在 3 月 26 日，第三个在 4 月 16 日。这种非同步的变更节奏导致问题表现不一致、不广泛，用户反馈难以形成统一模式，连 Anthropic 内部的监控和评测都未能第一时间复现问题。
 这个案例清晰地展示了复杂 AI 产品在工程层面的脆弱性：即使每个变更单独看都经过人工审查、自动化测试、端到端测试和 dogfooding，仍然可能在组合时产生意外行为。尤其值得关注的是，第三个变更——system prompt 中限制响应长度的指令——在数周内部测试和评测中均未发现退化，直到 ablated 评测才暴露 3% 的性能下降。

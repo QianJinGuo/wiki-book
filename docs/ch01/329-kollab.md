@@ -36,6 +36,24 @@ source_published: 2026-05-29T10:05:24Z
 
 ## **一、关于 Kollab**
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 [Kollab](<https://kollab.im/product>) 以“团队”作为使用单位构建 AI 工作空间，让团队和 Agent 在同一个空间里一起跟踪、迭代、完成真实工作。项目、文档、知识库条目与 Agent 汇聚一处，团队的讨论、决策与产出都可复用。而反复出现的工作，像是调研、内容生产和项目计划这些，则可以沉淀为 Skills，由 Agent 稳定复跑。
 
 ### 1.1 近千个 Connector连机外部生态，把团队工具接进来

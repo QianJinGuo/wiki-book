@@ -14,6 +14,22 @@
 
 ## Agentic Engineering的核心思路
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 今年行业里逐渐形成了一个更成熟的概念：**Agentic Engineering**（智能体工程）。核心思路是——人负责定义目标、约束条件和质量标准，AI 作为自主智能体在 **结构化流程** 中执行规划、编码、测试和迭代，每个关键节点都有人工审核。它不是让 AI 随意发挥，而是把 AI 的能力嵌入到一套有纪律的工程体系里。
 
 ## 实践方案

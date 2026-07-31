@@ -19,6 +19,24 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 ### 一、AI Agent 可观测性的"三层黑盒"困境
 
 传统的 APM 工具（如 Prometheus、Datadog、SkyWalking）主要关注 HTTP 请求、数据库查询和微服务调用，但在 AI Agent 场景下暴露出根本性的缺口。ARMS 团队准确识别了三个独立的黑盒层：

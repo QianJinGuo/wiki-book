@@ -14,6 +14,19 @@
 - [快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客](../ch03/035-agent.html)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 **从工具到基础设施的范式转变**
 本文提出的核心命题是：设计系统正在经历从"人类专用资源"到"智能体可用基础设施"的根本性转变。传统设计系统的定位是供设计师和开发者查阅的文档库，其价值在于组件的数量、文档的完整性和视觉一致性。而 agentic design system 的价值衡量标准变成了：**智能体能否理解系统中的规则、意图和约束条件，并在人类监督下安全地执行操作**。
 这一转变的关键触发点是 Gartner 的预测数据：到 2026 年底，40% 的企业应用将嵌入任务专用 AI 智能体，而 2025 年这一比例还不足 5%。这种爆发式增长意味着设计系统团队必须重新思考其服务对象——不再仅仅是人或机器，而是人机协同的工作流。

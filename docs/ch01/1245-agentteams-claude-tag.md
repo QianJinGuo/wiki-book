@@ -21,6 +21,24 @@ Anthropic 在 Claude Tag 的博客中定义了 Agent 群聊的四项特征：
 
 ## AgentTeams：声明式多智能体治理
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 AgentTeams 采用更工程化的定义，将群聊抽象为一组声明式 CRD（Custom Resource Definition），每个 Agent 和真人被赋予一层明确身份：
 
 | 成员 | 身份 | 说明 |

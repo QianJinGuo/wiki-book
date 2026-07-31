@@ -8,6 +8,19 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 SANS Institute 作为全球最权威的网络安全培训机构之一，构建了系统化的 AI 安全培训体系，覆盖从防御到进攻、从应用安全到取证分析的完整 AI 安全技能谱。其核心产品包括 AI Security Maturity Model™（评估框架）、Secure AI Blueprint（战略指南）、Critical AI Security Guidelines（安全控制标准）、以及 9 门专业课程。SANS 的定位是帮助组织「安全地部署 AI」，而非仅「防御 AI 攻击」。
 
 ## 核心要点

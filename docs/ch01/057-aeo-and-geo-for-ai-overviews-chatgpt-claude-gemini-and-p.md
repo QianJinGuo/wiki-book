@@ -10,6 +10,25 @@
 - 技术层面的可访问性（渲染、爬取、snippet 配置）是一切优化工作的前提 
 - AI surfaces 的爬取生态与传统的 SEO bot 完全不同，需要分别管理索引爬虫和训练爬虫 
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Tether Launches Developer Grants Program For Local First Ai ](../ch11/212-tether-launches-developer-grants-program-for-local-first-ai.html)
 - [Anthropic_Cache_Tokenomics](ch01/989-anthropic.html)

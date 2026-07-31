@@ -22,6 +22,19 @@ Authors:[Jie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+J
 
 ## 评估理由
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **value=6**: Arxiv technical report on Qwen-RobotWorld for embodied world modeling via language-conditioned video generation. Strong topic relevance to AI/ML research (multimodal generation, world models, robotics
 - **confidence=4**: 详细程度与来源可信度
 - **stars=4**: 独特技术洞察评分

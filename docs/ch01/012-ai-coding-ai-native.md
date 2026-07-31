@@ -22,6 +22,22 @@ Tarot Pixel 是淘天集团提出的 AI Native 视觉还原方案，其核心理
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 - Tarot Pixel 不是 D2C 平台，而是 Coding Agent 的视觉感知层——它只负责提供干净、可查询、持续在线的视觉信息，代码生成完全交给 Agent
 - 采用 REST API 分层设计：overview 提供整体结构预览，d2c-context 提供节点级细节，composite 提供自动合图能力
 - 工程层与 AI 层严格分离：工程做精确的 CSS 提取、蒙版处理、布局推断；AI 做需要理解力的语义判断

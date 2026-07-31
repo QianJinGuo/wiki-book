@@ -51,6 +51,19 @@ Salesforce is integrating 3.5 Flash into Agentforce to reliably automate complic
 Xero is 
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/222-amazon-quick.html)
 - [Gemini 3 5 Frontier Intelligence](ch01/472-gemini-3-5-frontier-intelligence-with-action.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/094-ai.html)

@@ -8,6 +8,19 @@
 智能体驱动测试变革：让智能体成为测试第一性 之三 用 Web Bot Auth 为 AgentCore Browser Tool 打造可信身份 by awschina on 05 12月 2025 in Artificial Intelligence Permalink Share 序言 在自动化测试领域，我们正面临一个日益严重的矛盾：测试智能体越是智能，越容易被网站安全系统误判为"恶意机器人"。CAPTCHA、速率限制和访问阻断，这些防护措施本是用来抵御攻击，却意外成为了测试自动化的"拦路虎"。 测试智能体的困境 当你的AI助手尝试登录系统验证流程、模拟用户行为进行压力测试，或者爬取页面数据进行分析时，却频繁遭遇CAPTCHA拦截。本该自动化的测试流程被迫中断，需要人工介入，这完全违背了"测试第一性"的自动化愿景。 测试场景中的真实痛点 想象这些典型测试场景： 端到端流程验证 ：智能体模拟完整用户旅程，却在关键步骤卡在CAPTCHA 竞品分析测试 ：自动化收集竞品信息时被频繁阻断 安全测试 ：模拟异常行为时被误判为攻击而封禁 性能压测 ：多并发请求触发速率限制，影响测试准确性 传统解决方案要么脆弱（如OCR破解CAPTCHA），要么不具扩展性（如IP白名单），更重要的是，它们都在"绕过"防护，而非"合作"。 Web Bot Auth：测试智能体的"合法身份" 现在，Amazon Bedrock AgentCore Browser 推出的 Web Bot Auth 功能，为测试智能体提供了革命性的解决方案： 可验证的加密身份 。
 
 ## 核心技术
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 Amazon Web Services (AWS)
 
 ## 深度分析

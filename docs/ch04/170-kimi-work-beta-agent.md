@@ -14,6 +14,19 @@ Kimi Work Beta 是 Moonshot AI（月之暗面）推出的通用 AI Agent 产品�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 1. **模型即 Agent 本体**：通用 Agent 的智能上限由底层模型决定，应用层无论堆叠多少工程技巧，都无法突破模型推理能力的硬天花板
 2. **Co-design 优势**：模型公司与 Agent 产品共享同一技术栈，能够在模型训练阶段就针对 Agent 场景进行专项优化（如工具调用、长时间推理、多轮对话记忆）
 3. **K2.6 架构升级**：Kimi Work Beta 基于 K2.6 大幅提升了长程任务完成率，支持跨文档、跨工具、跨会话的协同推理

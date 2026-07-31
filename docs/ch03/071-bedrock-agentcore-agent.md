@@ -12,6 +12,24 @@
 
 ## 概述
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
+
 Amazon Bedrock AgentCore 是 AWS 提供的托管式无服务器服务，用于构建、部署和安全运营 Agentic 应用。该服务提供了一系列构造块，包括 Agent 部署、MCP 服务器托管、身份管理、Memory、Observability 和评估功能，专为多租户 Agent 架构设计。
 
 多租户 Agentic 应用面临十大架构挑战：隔离策略选择、运行时部署模式、模型选择、工作流模式、RAG 数据隔离、身份与令牌传播、MCP 工具访问控制、Memory 层级命名空间隔离、Agent 身份信任体系、以及成本追踪与可观测性。

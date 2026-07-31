@@ -10,6 +10,22 @@
 
 ## 三个独有贡献
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[API Gateway]
+    GW --> SVC[服务层]
+    SVC --> DB[数据层]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+    classDef i fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef a fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB i
+    class AGT,SB a
+```
+
+
 - **完整硬件规格表** — 这是 wiki 中**唯一**一份 Graviton5 处理器及 M9g/M9gd 全部实例大小的完整规格（vCPU、内存、网络带宽、EBS 带宽、本地 NVMe 存储）。
 - **官方客户验证数据** — ClickHouse（+36% vs M8g）、Honeycomb（+36% per-core throughput vs Graviton4）、HubSpot（MySQL 查询 -60% 时长）、Meta（千万级核部署代理 AI）。
 - **Nitro Isolation Engine** — 首个经形式验证的云虚拟机监控器，数学保证隔离性。

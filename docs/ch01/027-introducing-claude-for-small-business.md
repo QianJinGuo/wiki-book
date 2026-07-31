@@ -15,6 +15,19 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-for-small-business.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 ### 产品定位：填补 SMB AI 市场的结构性空白
 Claude for Small Business 的推出，本质上是对「AI 采用鸿沟」（AI Adoption Gap）的直接回应。Anthropic 在产品公告中引用数据指出，小型企业贡献了美国 GDP 的 44% 并雇用近半数私营部门劳动力，但其 AI 工具使用往往「停留在聊天窗口」（stops at the chat window）。这一判断揭示了一个核心矛盾：现有 AI 工具大多面向技术团队或大型企业设计，缺乏面向非技术型小企业主的端到端任务执行能力 。
 与微软 Copilot 或 Google Workspace AI 相比，Claude for Small Business 的差异化策略体现在三个维度：

@@ -16,6 +16,24 @@
 
 ## 什么是 SDD
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[CLAUDE.md]
+        SK[Skills]
+    end
+    INT --> CM & SK
+    classDef f fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef c fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLN,GEN,VAL f
+    class CM,SK c
+```
+
+
 Spec-Driven Development 的核心思想是将规格说明（Specification）作为唯一真实来源（Single Source of Truth），代码作为其派生产物。先定义 WHAT，再让 AI 做 HOW。
 
 SDD 是为 AI 编程时代量身定制的工程方法。在传统开发中，Spec 仅仅是影响沟通效率的文档；在 AI 时代，Spec 的质量直接决定代码质量——因为模型对模糊需求的理解偏差会通过快速代码生成被急剧放大。

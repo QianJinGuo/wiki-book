@@ -27,6 +27,24 @@ ZSTD在共享网络文件系统（5-10 GB/s）场景下表现优异，吞吐适�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 **1. 将检查点成本纳入训练预算的常规审计项**
 
 在启动大规模训练项目前，应使用nvCOMP或类似工具估算检查点存储与I/O成本，并将其作为项目预算的明确line item。建议每月跟踪实际检查点开销，识别优化机会。

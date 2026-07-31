@@ -60,6 +60,25 @@ RocketMQ 5.x 的 LiteTopic 三个关键特性正好对应上述三个痛点：
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 ### 1. 限流从「防御题」变成「资源调度题」
 
 大模型时代的限流本质上由 GPU 的物理稀缺性定义。传统限流面对的是 CPU 和带宽这类可以秒级弹起的资源，而 GPU 扩容以周甚至月为单位。这改变了限流的底层逻辑：不是「防刷」，而是「在有限池中做资源调度最优分配」。百炼网关的重构体现了这种认知转变。

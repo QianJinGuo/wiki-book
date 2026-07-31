@@ -12,6 +12,22 @@ Claude Code 性能基准评测涵盖**吞吐量、延迟、Token 效率、上下
 
 ## 一、核心性能指标体系
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 ### 1.1 吞吐量指标
 
 | 指标 | 说明 | 典型值 |

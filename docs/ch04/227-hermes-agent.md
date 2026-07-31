@@ -29,6 +29,24 @@ Hermes 的"Self-Improving"不一样。它说的是：Agent 自己能从工作中
 按这个标准，市面上 95% 的 Agent 不算自进化。Hermes 算。
 
 ## 自进化要靠 4 件事配合
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 第 1 件事：能记住事（Memory）— 事实级别的认知，写到 markdown 文件里，下次自动加载到 system prompt。
 第 2 件事：能沉淀做法（Skill）— 操作级别的经验，写成有 step 的 markdown 文件，下次按攻略执行。
 第 3 件事：能主动触发学习（Nudge Engine）— 到了某个时间点/事件/轮次，强制提醒"该学习了"。

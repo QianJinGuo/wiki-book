@@ -9,6 +9,24 @@
 > **高 AI 代码率本身不是目标，在质量可控前提下的高 AI 代码率才有意义。** 这 90% 的 AI 代码经过完整的需求分析、编码评审、单元测试和 CI 验证流程，每一行都通过了 Harness 体系的质量门禁。
 
 ## 背景：为什么需要 Harness Engineering
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 ### AI Coding 的现状与挑战
 - Anthropic《2026 Agentic Coding Trends Report》：开发者约 60% 时间使用 AI 辅助，但能"完全委托"给 Agent 的任务仅 0-20%
 - **核心矛盾**：模型原始能力足够强，但从"能力"到"可信赖的工程产出"之间存在系统性鸿沟

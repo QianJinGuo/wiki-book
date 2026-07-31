@@ -20,6 +20,25 @@
 
 ## Wizard 的力量：GPT-5 Pro 和 Claude 4.1 Opus
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 最能体现 wizard 感觉的 AI 模型是 GPT-5 Pro（仅对付费用户开放）。Mollick 给它一个学术 paper，指示"批评这篇论文的方法，找出更好的方法并应用它们"。这不是随便的论文——这是他的 job market paper，花了一年多写成，被领域内最聪明的人仔细阅读后才在 major journal 发表。九分四十秒后，他收到了非常详细的 critique，包括 GPT-5 Pro 似乎运行了自己的实验（用代码验证结果，包括 Monte Carlo 分析和重新解释固定效应）。
 
 GPT-5 Pro 发现了以前从未有人注意到的微小错误——涉及两个不同表格中以他未在论文中明确说明的方式关联的两组数字。魔法发生了，但他无法干预，也无法完全确定 AI 系统实际做了什么。

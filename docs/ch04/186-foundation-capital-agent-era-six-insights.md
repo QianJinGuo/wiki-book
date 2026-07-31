@@ -10,6 +10,19 @@
 Foundation Capital 合伙人 Ashu Garg（2026-05-07）基于 Turing CEO Jonathan Siddharth + Arize CPO Aparna Dhinakaran 对谈的投资 thesis。核心命题：Agent 才是软件的主用户；上下文图谱是真正护城河；反馈闭环本身是产品。
 
 ## 三大拐点框架
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 | 拐点 | 时间 | 核心 |
 |------|------|------|
 | ChatGPT 时刻 | 2022年底 | 预训练+RLHF 证明语言模型可做通用界面 |

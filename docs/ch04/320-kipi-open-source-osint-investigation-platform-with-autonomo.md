@@ -12,6 +12,19 @@ kipi 是一个开源、自托管的 OSINT（开源情报）调查平台，其核
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 ### 产品定位与差异化
 
 kipi 的独特价值主张：**文档 → 实体图谱 → 自主调查** 的端到端流程。

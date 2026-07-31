@@ -14,6 +14,19 @@
 | **评分** | 价值9 × 置信度9 = **81** |
 
 ## 一句话摘要
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 Anthropic Claude Code/Cowork 产品负责人 Cat Wu 访谈：日更发布机制、PM 与工程师角色融合、使命驱动决策模型、eval 驱动开发，以及 AI 原生产品经理的新能力模型。
 
 ## 核心洞察

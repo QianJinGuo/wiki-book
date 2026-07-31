@@ -11,6 +11,24 @@ _This post is co-authored with Philipp Pavlov, Dmytro Romantsov, Evgeny Mironenk
 [Miro](<https://miro.com/de/index/>) is an AI-powered innovation workspace that serves over 95 million users globally, helping teams transform unstructured ideas into organized workflows. To support this scale and continue enhancing their system, Miro’s developer experience team decided to create an innovation workspace for Miro itself, using modern technologies to boost developer productivity. One of the key challenges faced by the team is efficiently routing software bugs to the responsible teams. Quick and accurate bug routing removes unnecessary context-switching, reduces developer frustration, improves time-to-resolution, and ultimately leads to a better product and happier customers. At Miro, a significant percentage of bugs miss internal resolution SLAs primarily due to misrouting and repeated reassignments between teams. This issue results in an estimated 42 years of cumulative lost productivity annually from delays and redundant investigation efforts. To tackle this problem, Miro partnered with the AWS Prototyping and Cloud Engineering (PACE) team to develop BugManager, an AI-powered solution for automated bug triaging.
 
 ## 深度分析
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
 1. **Prompt-based 路由在动态组织中是微调模型的超替** — 文章明确指出，传统 fine-tuned BERT/GPT 模型在团队重组、产品迭代时必须重新训练，而 Miro 经验证明，基于优化提示词 + RAG 的方案可以将「组织结构变更」转化为「更新团队描述文档」这一简单操作，无需任何模型重训练。这对国内大型企业 IT 架构有直接参考价值：业务部门频繁调整时，训练数据的生命周期远短于模型本身。
 2. **多模态理解（Amazon Nova Pro）→ RAG 上下文补充 → LLM 分类的三段式 Pipeline 是处理「脏数据」的标准范式** — Bug 报告中的截图、视频若无语境会被 LLM 误读；Miro 的解法是先用 RAG 检索产品上下文（feature 所属团队），再将上下文注入 Nova Pro 的提示词，最后才让 LLM 做分类。这种「先检索后理解」的模式使附件解析特异性大幅提升。
 3. **Top-3 95% 准确率 + human-in-the-loop 是生产级分类系统的工程现实** — 100 团队的多分类场景下，Top-1 75% 已显著优于 fine-tuned GPT，但无法满足 SLA 要求；Top-3 95% 意味着只要呈现前三个选项供人确认，整体准确率接近完美。这揭示了一个重要工程原则：**在分类精度不足时，交互设计比模型调优更有效**。

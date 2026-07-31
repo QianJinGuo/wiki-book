@@ -8,6 +8,22 @@
 Apache Doris通过MCP协议部署在Amazon Bedrock AgentCore Runtime上，实现VPC内原生运行、Cognito OAuth认证、按需付费（$0.3/天）。Agent可直接通过MCP调用Doris执行SQL分析，无需数据迁移。
 
 ## 三个关键洞察
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. MCP协议作为Agent数据接口
 MCP（Model Context Protocol）让Agent以标准化的方式调用外部数据源。Doris作为MCP server，提供SQL查询能力，Agent用自然语言提问，Doris执行查询返回结构化结果。
 

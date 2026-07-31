@@ -23,6 +23,19 @@ But LLMs changed all of that. Suddenly it was quite possible to produce substant
 
 ## [Cheap != zero](http://brandur.org/minimum-viable-unit#cheap-ne-zero)
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 While LLMs have made software considerably cheaper to build, they haven’t brought it to zero. Good LLM-built systems still involve a feedback loop, where an operator has the model work for a while, makes adjustments based on results, asks for another pass, refines further, and so on, taking dozens of loops to get to a satisfactory result that’s an optimal compromise between time spent and quality.
 
 And like before, maintenance will be an ongoing cost. Especially for more complex packages, there’s always going to be a feature to add or bug to fix. LLMs will make those changes easier to make, but don’t make them free, with the most expensive element being the part-time labor of the human in the equation who oversees and verifies results.

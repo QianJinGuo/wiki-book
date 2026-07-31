@@ -8,6 +8,20 @@
 troyhua（卡内基梅隆大学博士）对 Claude Code 源码的深度分析，聚焦其 7 层渐进式记忆管理系统。该架构借鉴人脑记忆分层原理，从毫秒级轻量清理到"做梦机制"巩固长期记忆，层层递进，成本递增，能力递增。
 
 ## 核心问题：上下文窗口 = LLM 的"金鱼记忆"
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
 Claude Code 默认 200K token 上下文窗口（加 `[1m]` 后缀可达 1M）。一次真实 coding：读大文件 + grep 全仓库 + 几轮编辑 = 轻松超标。
 **Token 计数基础**：`tokenCountWithEstimation()` 函数：
 

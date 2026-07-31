@@ -21,6 +21,19 @@
 
 ## 错位序列：Fortune 500 的典型失败
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 **典型剧本**（CrewAI 2 年观察 + 数 B 执行量）：
 
 1. 团队拿到 mandate："部署 AI agents"

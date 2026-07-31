@@ -103,6 +103,22 @@ AI 原生创业公司每周改进一次自己的操作系统。
 
 ## 实践启示
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 1. **从画地图开始**：列出公司重复发生的所有工作，按 L1-L4 自主程度分级，优先找高频、低风险、路径可预设的环节实现闭环。
 2. **用 Git 管理 context**：从 CLAUDE.md + 5 个 context 文件开始，控制 40-60 行手写内容。原始数据和提炼数据分开，保证溯源。
 3. **混合工具栈**：不是所有工作都需要智能体。脚本处理确定性步骤，AI 辅助处理需判断的输出，智能体只处理路径无法预设的复杂任务。

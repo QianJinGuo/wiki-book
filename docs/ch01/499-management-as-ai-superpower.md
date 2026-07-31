@@ -14,6 +14,19 @@ Ethan Mollick 在宾大实验班的发现：非技术背景的 EMBA 学生用 Cl
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **GDPval 实证**：OpenAI 的 GDPval 研究让各领域（金融、医疗、政府）资深专家与最新 AI 对决——专家平均 7 小时完成任务，AI 几分钟出活但需 1 小时审核。GPT-5.2 Thinking/Pro 以 72% 概率打平或击败人类专家。
 - **委托决策的三个变量**：
   1. **Human Baseline Time**：自己做要多久？

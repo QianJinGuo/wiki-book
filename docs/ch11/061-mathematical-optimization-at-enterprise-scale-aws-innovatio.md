@@ -10,6 +10,25 @@
 
 ## 核心定位：Prescriptive vs Predictive AI
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    subgraph "学习"
+        RL[强化学习]
+        SIM[仿真训练]
+    end
+    DEC --> RL
+    RL --> SIM
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef l fill:#d1fae5,stroke:#059669,color:#064e3b
+    class PER,DEC,ACT,ENV c
+    class RL,SIM l
+```
+
+
 **ML 是归纳式 AI（Inductive）**：从数据中学习模式，给出概率预测
 **数学优化是演绎式 AI（Deductive）**：把业务问题建模为数学形式，在约束条件下求解，给出**可证明最优**的决策
 

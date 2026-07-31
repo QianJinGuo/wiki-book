@@ -22,6 +22,19 @@
 
 ## 高风险领域的"小步快跑"实证：医疗人员资质核验
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 Healthcare staffing 公司面对的核心问题：每次 onboarding 医生需要核验执照、查询医疗委员会、检查制裁清单、验证身份——多数据源、动辄数天，延误会有超越收入损失的后果。
 
 **CrewAI 推荐路径**（与传统相反）：

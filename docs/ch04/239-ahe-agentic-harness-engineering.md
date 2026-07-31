@@ -14,6 +14,22 @@ Coding Agent 的进展不只取决于 Base Model 的智商，更取决于它外�
 
 ## 2. AHE 核心设计：三大可观测性支柱
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 AHE 的核心洞察是：瓶颈不在 Agent 能力，而在可观测性（Observability）。整个闭环由三大支柱支撑：
 
 ### 2.1 组件可观测性：文件级解耦 Harness

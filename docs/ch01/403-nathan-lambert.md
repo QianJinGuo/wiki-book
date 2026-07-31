@@ -14,6 +14,19 @@
 主流叙事假设开源模型将永久落后于闭源前沿，但 Lambert 认为这在 general capabilities 层面可能成立（开源最佳模型以 6-18 个月延迟追赶闭源旗舰），然而在 narrow domains 如代码执行与网络安全，开源模型可能保持更近距离。网络安全能力可通过 GitHub 等公开数据大规模学习，这与需要私密领域知识的医学、法律任务不同，这构成了 Lambert 判断误差的主要来源。
 
 ## 错误二：将领域问题泛化为通用政策
+
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
 Mythos 发布后社区迅速将其上升为"开源 AI 太危险"的宏观叙事，但 Lambert 认为这是 composition of issues 谬误：即便承认 Claude Mythos 在网络安全场景的滥用风险是真实的，将其上升为"全国范围内禁止开源模型"的建议仍然过于宽泛。任何此类通用禁令会立即剥夺该实体影响关键技术的全部能力，而其他国家会继续构建最强开源模型——你无法杀死开源，只能影响和引导它。
 
 ## Mythos 规模与部署门槛的客观约束

@@ -35,6 +35,18 @@ It mostly looks like a package.json file. Notably this is a pretty large example
 
 ## Packuments
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 NPM was originally built on CouchDB, which is a document store (a kind of database that's more like a big key value store than a table with rows, columns and queries).
 
 For the NPM CLI to be able to find out about all versions of a package the decision was made to create a new kind of document that has metadata about the entire package and all its versions. This is called a 'packument'.

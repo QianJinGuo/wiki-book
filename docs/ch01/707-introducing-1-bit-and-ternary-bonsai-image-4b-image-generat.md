@@ -14,6 +14,21 @@ PrismML 发布 Bonsai Image 4B——基于 FLUX.2 Klein 4B 架构的两种极低
 
 ## 核心要点
 
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A in
+    class ENC,FUS,DEC,OUT core
+```
+
+
 - **两种变体各有所长**：1-bit Bonsai（1.125 有效比特/权重）追求极致压缩，三元 Bonsai（1.71 有效比特/权重）用 0 状态换更好视觉质量与提示词保真度
 - **关键工程改造集中在 Diffusion Transformer**：text encoder 与 VAE 仍保留 FP16/FP32，仅对反复运行的 transformer 权重做低比特化
 - **部署栈覆盖 Apple Silicon 与 CUDA**：用 MLX low-bit 路径跑 Apple 端，用 Gemlite low-bit GEMM kernel 跑 NVIDIA 端

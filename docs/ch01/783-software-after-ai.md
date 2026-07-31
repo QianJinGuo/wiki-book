@@ -58,6 +58,19 @@ GP at Theory Ventures. Former Google PM. Sharing data-driven insights on AI, web
 [Bloomberg](https://www.bloomberg.com/news/articles/2025-04-30/google-places-ads-inside-chatbot-conversations-with-ai-startups "Quoted on AI monetization strategies") • [WSJ](https://www.wsj.com/tech/tech-media-telecom-roundup-market-talk-f8f0355a "Featured in tech market analysis") • [Economist](https://www.economist.com/business/2023/07/25/next-generation-googles-run-a-tighter-ship "Quoted on next-generation tech leadership")
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 - [Novee Security How To Get A 100 Conference Acceptance Rate The No](ch01/1243-0.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/094-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/295-amazon-bedrock.html)

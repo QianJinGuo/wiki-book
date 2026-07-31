@@ -29,6 +29,19 @@ Agents today are where the web was before frameworks, with everyone hand-rolling
 
 ## [Link to heading](http://vercel.com/blog/introducing-eve#an-agent-is-a-directory)An agent is a directory
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 This is an eve agent.
 
 `agent/  agent.ts                   # the model it runs on  instructions.md            # who it is  tools/    run_sql.ts               # what it can do    post_chart.ts  skills/    revenue-definitions.md   # what it knows  subagents/    investigator/            # who it delegates to  channels/    slack.ts                 # where it lives  schedules/    monday-summary.ts        # when it acts on its own`

@@ -41,6 +41,25 @@ Joule Work 是 SAP 软件的新一代交互界面，核心变革从 " navigating
 
 ## 生态加速：€1 亿合作伙伴基金
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 为推动 Autonomous Enterprise 落地，SAP 宣布：
 
 - **€1 亿 SAP 合作伙伴基金**：支持合作伙伴帮助客户部署 SAP 构建的 AI 助手和 Agent，也面向在 Joule Studio 上构建新 partner agents 的开发者

@@ -14,6 +14,19 @@ Coding Agent 已经从"修复代码"进化到"开发产品"，但现有 Benchmar
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
+
 - **端到端产品开发评测**：从 PRD + Figma 设计稿到完整 Web 应用，模拟真实软件开发流程
 - **覆盖 10 类应用**：新闻、房产、招聘、论坛、旅行预订、聊天、云存储、电商、项目管理、音乐流媒体
 - **DOM-Grounded Evaluation**：定位分 × 行为分 = 最终得分，交互必须"位置对且行为对"

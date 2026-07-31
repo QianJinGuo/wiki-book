@@ -10,6 +10,19 @@
 
 ## 三大需求
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 1. **看得见** — 知道每个 IAM 用户花了多少钱
 2. **收得到** — 花费接近预算时收到告警邮件
 3. **拦得住** — 超预算时自动阻断该用户的 Bedrock 访问

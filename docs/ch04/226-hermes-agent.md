@@ -11,6 +11,24 @@ Nous Research 在 2025 年末开源的 Hermes Agent，其记忆系统是当前�
 仓库：github.com/NousResearch/hermes-agent
 
 ## 三层架构
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 | 层级 | 名称 | 实现 | 容量 | 检索方式 |
 |------|------|------|------|----------|
 | Layer 1 | Built-in Memory | MEMORY.md + USER.md | 2200+1375 字符 | 会话启动时注入 |

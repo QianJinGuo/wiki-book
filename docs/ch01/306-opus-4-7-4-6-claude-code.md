@@ -76,6 +76,22 @@ Opus 4.7 相比 4.6 的核心变化，本质上是 Anthropic 在 **Agent 自主�
 Anthropic 明确警告 4.6 优化的 Prompts 可能失效，这一点至关重要。"字面化"解读意味着模型会更严格地按指令执行，而非根据隐含意图做推断。这对 Prompt 工程提出了更高要求：需要更精确地表达意图，避免歧义。这既是挑战也是机会——更可预测的行为有助于构建更稳定的 Agent 工作流。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 1. 重新审视现有 Prompts 和 Harness
 对于已在生产环境中使用 Opus 4.6 的团队，**首要任务是审查和调优 Prompts**。建议优先检查以下类型：依赖模型隐式推断的 Prompts、包含模糊指令的 Prompts、基于 4.6 行为做过精细调校的测试框架。任何依赖"言外之意"的表达方式都需要重新评估，必要时改写为更明确的指令。
 

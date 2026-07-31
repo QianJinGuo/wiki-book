@@ -9,6 +9,19 @@
 腾讯 AI 工程交付团队（AI Team）提出的完整知识沉淀实践体系，核心主张：**Harness 不是目的，知识才是护城河**。工作流只是管道，知识才是流过管道的活水。
 
 ## 核心贡献
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+    classDef h fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef a fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC h
+    class AG a
+```
+
 - **三维正交知识体系**：五层存储（Layer 0-P/0-T/1/2/3）× 五种类型（model/decision/guideline/pitfall/process）× 三级成熟度（draft/verified/proven）
 - **团队知识库独立 Git 仓库**：跨项目共享、生命周期独立、权限独立
 - **工作流即知识沉淀闭环**：INIT 注入 → 各阶段按需查询 → ARCHIVE 自动提取

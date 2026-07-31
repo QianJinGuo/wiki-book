@@ -21,6 +21,22 @@
 - 工程主导型 → C 端复杂业务（高代码质量 + 视觉还原要求）
 
 ## 团队建设经验
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
 ### 小二端 — AI 主导的对话生码
 **特点：** 无视觉还原度要求，页面间独立性强，后端同学主要通过 AI 完成全部需求实现。
 

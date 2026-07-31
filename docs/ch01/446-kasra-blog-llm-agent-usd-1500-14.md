@@ -12,6 +12,19 @@
 
 ## 测试设计
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 **漏洞类型**: Broken Access Control / Missing Object-Level Authorization (OWASP API #1)
 - API 端严格鉴权, 无任何 IDOR
 - 但应用打包时 `google-services.json` 包含 Firebase 凭证

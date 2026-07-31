@@ -15,6 +15,22 @@
 
 ## 核心发现
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 Anthropic 2026年2-3月调查覆盖 **1260位量化社会科学家**，发现 **81%** 试过 AI 聊天工具，但只有 **20%** 在日常工作中真正用上 coding agent——试用到日常使用的转化率仅 25%，四倍鸿沟意味着 adoption gap 是真实的核心问题，而非技术成熟度。
 
 ## 采用率分布

@@ -64,6 +64,19 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击向量] --> WAF[防护层]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+    classDef t fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef d fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK t
+    class WAF,IDS,RSP,AUD d
+```
+
+
 ServiceNow 在 Knowledge 2026 大会上发布的 Action Fabric 代表了企业软件架构的一次范式转变——从以 UI 为核心的产品设计转向以 workflow、数据和治理为底层支撑的"无头化"平台。Action Fabric 通过 MCP（Model Context Protocol）服务器将整个 ServiceNow 平台暴露给外部 AI Agent，使第三方 Agent 能够直接调用平台内封装的数万条工作流和剧本，同时保证所有操作均经过 AI Control Tower 的身份验证、权限审核和审计追踪。这种"开放但可治理"的策略是 SaaS 厂商在 AI Agent 时代保持平台黏性的关键路径。
 
 文章揭示了一个深刻的战略逻辑：ServiceNow 并不追求成为唯一的 Agent 构建者，而是确保所有 Agent 都运行在 ServiceNow 平台之上。每一次通过 Action Fabric 执行的 Agent 操作都会产生运营数据并流回 CMDB 和 Context Engine，这些数据最终强化了平台的上下文理解能力和智能决策质量——即"平台越被使用，平台越智能"。Bill McDermott 在采访中的表述清晰地表明，ServiceNow 愿意接纳竞争对手的 Agent，因为任何 Agent 的接入都会为其数据生态产生正向贡献。这是一种典型的"柏林墙倒了但我成了中央车站"的平台战略。

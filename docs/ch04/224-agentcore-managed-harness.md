@@ -8,6 +8,24 @@
 亚马逊云科技 2026 年 4 月 24 日正式发布的托管 Harness 平台。核心理念：**你告诉 Agent 做什么，平台托管其余一切**。
 
 ## 核心概念：Harness Engineering
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 AI 工程三阶段：
 1. **Prompt Engineering** — 怎么跟模型说话
 2. **Context Engineering** — 怎么给模型喂信息

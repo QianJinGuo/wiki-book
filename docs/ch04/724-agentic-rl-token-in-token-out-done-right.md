@@ -25,6 +25,22 @@ The second is to design the training around one rule: **never re-encode tokens y
 
 ## [Train on the model’s own tokens](https://qgallouedec-tito.hf.space/#train-on-the-models-own-tokens)
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 tl;dr RL updates the model on the exact tokens it sampled, and nothing else. Simple now, load-bearing later.
 
 Reinforcement learning, in one breath: you sample a prompt, the model generates a completion, you score the completion, you backprop the gradient through the model’s generated tokens.

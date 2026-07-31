@@ -13,6 +13,25 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 DeepSeek 实验室于 2026-04-24 发布第四代旗舰模型 DeepSeek V4，包含 V4-Pro（极致推理/长文本）与 V4-Flash（高吞吐/低延迟）两个版本。V4 通过混合注意力架构（CSA + HCA）、流形约束超连接（mHC）、Muon 优化器三项架构创新，将 1M tokens 上下文窗口推入标准化生产阶段；在保持/超越硅谷闭源模型性能的同时实现推理成本数量级下降。V4-Pro 总参 1.6T（激活 49B），V4-Flash 总参 284B（激活 13B），均支持 FP4 + FP8 混合精度。
 
 ## 核心要点

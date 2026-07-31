@@ -10,6 +10,24 @@ Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 
 
 ## 核心机制
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效方法"
+        L[LoRA] 
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+    classDef p fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef m fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class D,SFT,RL,EV p
+    class L,DS m
+```
+
+
 - **Blueprint 字段定义（schema 形式）**: 
 - `type`: 数据类型（string/number/array 等）
 - `inferenceType`:

@@ -8,6 +8,20 @@
 
 ## 核心内容
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 --> MSG[消息总线]
+    W3 --> MSG
+    classDef l fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef w fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L l
+    class W1,W2,W3,MSG w
+```
+
+
 # Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore
 
 Generative AI has rapidly evolved from experimental prototypes into systems that are expected to operate reliably in production, at scale, and under real-world performance constraints. As organizations move beyond demos and proofs of concept, they increasingly encounter challenges related to inference latency, scalability, state management, and operational visibility. Building high-performance AI agents today requires more than powerful models and demands an implementation that can deliver consistent performance, preserve context across interactions, and provide deep observability into how agents reason and behave in production.

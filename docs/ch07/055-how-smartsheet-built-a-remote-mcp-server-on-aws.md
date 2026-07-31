@@ -14,6 +14,22 @@ Smartsheet, an enterprise work management platform, built a remote `Model Contex
 
 ## Architecture
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function Tool]
+    TB --> MT[MCP Tool]
+    subgraph "MCP"
+        MCS[Server] --> RES[资源/工具]
+    end
+    MT --> MCS
+    classDef t fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef m fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class AG,TB,FT,MT t
+    class MCS,RES m
+```
+
+
 One MCP layer serves both internal and external agents — Smartsheet's own Smart Assist and externally connected AI clients run on the same infrastructure with the same tools, optimizations, and intelligence stack. The key AWS services in the data path are:
 
 - **AWS Fargate for Amazon ECS** — stateless server containers for the MCP server

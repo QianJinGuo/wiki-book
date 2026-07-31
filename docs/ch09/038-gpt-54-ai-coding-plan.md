@@ -15,6 +15,25 @@
 
 ## 七家平台横向对比
 
+```mermaid
+graph TB
+    IN[输入Token] --> EMB[嵌入层]
+    EMB --> ATT[自注意力]
+    ATT --> FFN[前馈网络]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+    classDef c fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef o fill:#d1fae5,stroke:#059669,color:#064e3b
+    class IN,EMB,ATT,FFN,OUT c
+    class KV,Q o
+```
+
+
 阿里百炼、字节火山方舟、腾讯云、百度千帆四家平台的 Coding Plan 呈现出高度标准化的定价结构 。
 
 ### 四大云厂商：定价策略惊人一致

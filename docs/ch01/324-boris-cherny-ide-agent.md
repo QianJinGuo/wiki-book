@@ -17,6 +17,18 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    IN[输入] --> TH[思考<br/>Thought]
+    TH --> AC[行动<br/>Action]
+    AC --> OB[观察<br/>Observation]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class IN,TH,AC,OB,OUT core
+```
+
+
 - **"coding is solved"要拆开理解**：Boris 说对自己而言 coding 100% solved——但这句话的前提是 Claude Code 主栈 TypeScript/React 在模型最熟悉分布里、且他在 Anthropic 内部有最新工具链。换到 C++/银行核心/嵌入式固件，问题远不只是"代码能不能生成"。
 - **治理问题暴露得更早**：弱补全工具最多写坏几行；能读仓库、改文件、跑命令、连 Slack、查数据库、修 CI、开 PR 的 Agent 已不是普通插件，而是新的工程参与者。问题不再是"模型会不会写代码"，而是"它在什么边界里写、怎么知道写对、错了怎么停下来"。
 - **工具的中心位移**：Anthropic 对 Claude Code 的官方定位是 `agentic coding system`——它不是"猜下一行"，而是"在一个真实工作空间里行动"。

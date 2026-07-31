@@ -5,6 +5,24 @@
 > 📊 Level ⭐⭐ | 8.5KB | `entities/openclaw-leveraging-nova-mme-s3-vector-implement-skill.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[LLM生成]
+    subgraph "存储"
+        VDB[向量库] 
+        KB[知识库]
+    end
+    R --> VDB & KB
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef store fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,R,K,C,LLM flow
+    class VDB,KB store
+```
+
 给 Openclaw瘦身-利用Nova MME 和 S3 Vector实现Skill按需召回 by awschina on 19 3月 2026 in Artificial Intelligence Permalink Share 摘要：本文介绍一种针对 OpenClaw 的智能Skills召回方案，基于 Amazon Bedrock Nova Multimodal Embeddings 和 Amazon S3 Vector，通过向量语义检索实现skill按需召回，将每次对话注入的技能描述 Token 降低约 90%，并提升响应速度。 目录 01 一、背景概述 02 二、解决方案 03 三、模块设计详解 04 四、效果对比 05 五、总结 06 六、相关资源 一、背景概述 随着 OpenClaw 的生态日趋丰富，越来越多开发者为自己的 OpenClaw 实例配置了大量 Skills 来扩展能力边界。然而，一个容易被忽视的问题随之浮现：当skill数量从个位数增长到数十甚至上百个时，每次对话都将全部技能描述注入到 System Prompt 中，造成了显著的 Token 浪费和成本攀升。 1.1 OpenClaw 的 Skills 机制 OpenClaw 采用 AgentSkills 规范的技能目录结构。每个技能是一个包含 SKILL.md 文件的目录，通过 YAML frontmatter 定义名称、描述和元数据。OpenClaw 从三个位置加载技能，当同名技能存在时，按以下优先级覆盖（从高到低）： Workspace Skills：位于工作空间目录下的 skills/ 目录，优先级最高 Managed Skills：位于 ~/.openclaw/skills/，跨工作空间共享 Bundled Skills：随 OpenClaw 安装包内置 当存在可用技能时，OpenClaw 会在 System Prompt 中注入一段紧凑的 XML 列表： available_skills skill name feishu-doc /name description Feishu document read/write operations... /description location ~/.openclaw/extensions/feishu/skills/feishu-doc/SKILL.md /location /skill !-- 更多 skills... -- /available_skills 根据 OpenClaw 官方文档，这段列表的 Token 开销是确定性的，其计算公式为： 总字符数 = 195（基础开销）+ 每个 Skill 的（97 + name 长度 + description 长度 + location 长度） [图1] 模型在识别到相关技能后，通过 read 工具按需加载对应 SKILL.md 的完整内容来获取详细指令，当技能数量增长到 30、50 甚至更多时，仅技能列表本身就会产生可观的 Token 消耗。一个直观的例子：当用户说"帮我查飞书文档"时，System Prompt 中注入了天气查询、音乐播放、邮件管理等 50 个技能的描述，其中只有 feishu-doc、feishu-wiki、feishu-drive 这 3 个与请求相关。这意味着绝大部分技能描述 Token 被浪费了。 二、解决方案 本文介绍一种针对 OpenClaw 的智能Skills召回方案ISS (Intelligent Skill Selection)，基于 Amazon Bedrock Nova Multimodal Embeddings 和 Amazon S3 Vector，通过向量语义检索实现skill按需召回，将每次对话注入的技能描述 Token 降低约 90%，并提升响应速度。其中： Amazon Nova Multimodal Embeddings ：提供高质量的文本向量化能力，将技能描述和用户查询映射到 1024 维向量空间，支持语义级别的相似度计算。单次嵌入生成延迟约 150ms，按调用计费，无需维护独立的嵌入服务。 Amazon S3 Vector ：作为向量数据的持久化存储层，无需管理向量数据库实例或索引，S3 作为全托管对象存储自动处理可用性和持久性。每个技能的向量以 JSON 文件形式存储，包含技能元数据和 1024 维嵌入向量。客户端在运行时加载向量并在本地执行余弦相似度计算。 整体架构图如下： [图2] ISS Hook在 `message:preprocessed` 事件（消息预处理完成后、发给 Agent 前）拦截消息 Nova MME 模型将用户消息转为向量 检索skills，在客户端计算余弦... [truncated]
 
 ## 核心技术
