@@ -14,6 +14,25 @@
 
 ## 三家公司对照
 
+```mermaid
+graph TD
+    subgraph "共同工程原则"
+        ISO["隔离<br/>避免任务间互相污染"]
+        DIV["分工<br/>不让单个AI承担所有判断"]
+        VER["验证<br/>关键节点硬规定不能跳过"]
+        FAL["兜底<br/>失败有重试上限和人工介入"]
+    end
+    ST["Stripe Minions<br/>1300+任务/周·无人干预<br/>隔离工作台+工具按需+验证硬规定"]
+    BY["字节 DeerFlow 2.0<br/>GitHub全球热榜第一<br/>独立空间+多AI并行+中间压缩存档"]
+    AN["蚂蚁支小助<br/>4AI分工: 规划/执行/表达/评审"]
+    ST & BY & AN --> ISO & DIV & VER & FAL
+    style ISO fill:#8b5cf6,stroke:#333,color:#fff
+    style DIV fill:#3b82f6,stroke:#333,color:#fff
+    style VER fill:#22c55e,stroke:#333,color:#fff
+    style FAL fill:#f97316,stroke:#333,color:#fff
+```
+
+
 | 公司 | 系统 | 业务 | 关键数字 | 核心方法 |
 |------|------|------|---------|---------|
 | **Stripe** | Minions（2026-02 官方博客） | 1300+ 工程任务/周 | 全程无人干预 | 隔离工作台 + 工具按需 + 验证硬规定 + 重试上限 |

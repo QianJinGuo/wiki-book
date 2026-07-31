@@ -16,6 +16,25 @@
 
 Luke Alvoeiro 在 AI Engineer 大会上系统阐述了 Factory Mission 系统的设计哲学——当 Agent 需要完成比单个 Agent 难一两个数量级的任务时，组织方式比单点智能更重要。本文整合其演讲的核心内容：五种 Multi-Agent 协作策略、Orchestrator/Worker/Validator 三角架构、Validation Contract 与结构化 Handoff、"串行优于并行"的反直觉结论、Droid Whispering 模型选择策略，以及声明式编排逻辑。
 
+```mermaid
+graph TD
+    ORC["Orchestrator<br/>规划·拆解·验收<br/>慢模型·深度推理"]
+    W1["Worker 1<br/>Feature 实现<br/>快模型·广度优先"]
+    W2["Worker 2<br/>Feature 实现<br/>快模型·广度优先"]
+    V1["Validator: Scrutiny<br/>代码审查·对抗性<br/>最精确模型"]
+    V2["Validator: User Testing<br/>交互验证<br/>等待人类反馈"]
+    ORC -->|"Validation Contract<br/>正确性锚定在实现之前"| W1
+    ORC -->|"Validation Contract"| W2
+    W1 -->|"Structured Handoff<br/>完成项/未完成项/退出码/问题"| V1
+    W2 -->|"Structured Handoff"| V2
+    V1 -->|"通过/拒绝"| ORC
+    V2 -->|"通过/拒绝"| ORC
+    style ORC fill:#8b5cf6,stroke:#333,color:#fff
+    style V1 fill:#ef4444,stroke:#333,color:#fff
+    style V2 fill:#ef4444,stroke:#333,color:#fff
+```
+
+
 ## 核心要点
 
 - **核心判断**：今天软件工程的瓶颈不再是智能，而是人的注意力。一个工程师手头可能积压 50 个 feature，但每天真正能往前推的只有两三件——今天的模型已经聪明到足以搞定方案，真正缺的是监督它们落地所需的人力带宽。

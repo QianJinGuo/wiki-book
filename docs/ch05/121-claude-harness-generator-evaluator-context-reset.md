@@ -31,6 +31,27 @@ Agent 评价自己作品时几乎总是偏正面。Generator-Evaluator 分离是
 Evaluator 接入 Playwright MCP，实际操作页面而非看静态截图，5-15 轮迭代。评分标准措辞本身就在塑造输出气质（如"museum quality"触发特定视觉风格收敛）。
 
 ### 全栈三代理架构
+
+```mermaid
+graph TD
+    PL["Planner<br/>1-4句提示→完整产品规格"]
+    GN["Generator<br/>按Sprint工作·React/Vite/FastAPI"]
+    EV["Evaluator<br/>Playwright MCP操作真实应用<br/> skeptic tuning"]
+    SC["Sprint Contract<br/>生成前协商完成标准"]
+    PL -->|"产品规格"| GN
+    GN --> SC
+    EV --> SC
+    GN <-->|"迭代5-15轮"| EV
+    subgraph "Context策略"
+        CR["Context Reset<br/>清空+结构化交接<br/>给模型干净上下文"]
+        CP["Compaction<br/>原地压缩总结<br/>保留连续性"]
+    end
+    CR -.->|"Opus 4.5必须"| GN
+    CP -.->|"Opus 4.6可用"| GN
+    style EV fill:#ef4444,stroke:#333,color:#fff
+    style SC fill:#22c55e,stroke:#333,color:#fff
+```
+
 ```
 Planner → Generator ↔ Evaluator
               ↓

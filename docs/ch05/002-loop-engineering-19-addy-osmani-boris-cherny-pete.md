@@ -16,6 +16,28 @@ Addy Osmani 提出 Loop Engineering——比 Agent Harness Engineering 再高一
 
 ## 五模块 + 记忆（Codex / Claude Code 通用）
 
+```mermaid
+graph TD
+    subgraph "Loop > Harness > Prompt"
+        LP["Loop Engineering<br/>设计替你写提示词的循环"]
+        HS["Harness Engineering<br/>给单个智能体打造运行环境"]
+        PT["Prompt Engineering<br/>人写提示词"]
+    end
+    LP --> HS --> PT
+    subgraph "五模块+记忆"
+        AUTO["自动化任务<br/>cron/goal/loops<br/>心跳: 定时发现+分类"]
+        WT["工作树<br/>git worktree<br/>并行隔离"]
+        SKI["技能 SKILL.md<br/>项目知识固化<br/>认知复利"]
+        MCP["插件/连接器<br/>MCP连接器<br/>接真实工具"]
+        SUB["子智能体<br/>干活+检查分离"]
+        MEM["记忆<br/>跨会话状态<br/>Markdown/Linear"]
+    end
+    AUTO --> WT --> SKI --> MCP --> SUB --> MEM
+    style LP fill:#8b5cf6,stroke:#333,color:#fff
+    style AUTO fill:#22c55e,stroke:#333,color:#fff
+```
+
+
 | 零件 | 作用 | Codex | Claude Code |
 |------|------|-------|-------------|
 | 自动化任务 | 心跳：定时发现+分类 | Automations 标签页、`/goal` | cron、`/loop`、`/goal`、hooks |

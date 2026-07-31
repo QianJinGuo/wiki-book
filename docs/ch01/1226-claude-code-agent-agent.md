@@ -26,6 +26,27 @@ Claude Code 的源码揭示了一个核心趋势：**单Agent架构有其能力�
 
 ## 多Agent协作的核心架构模式
 
+```mermaid
+graph TD
+    subgraph "1.父子层级 Parent-Child"
+        PO["Parent Orchestrator<br/>整体决策+上下文管理"]
+        PO --> WA1["Worker 1 调研<br/>只读不写"]
+        PO --> WA2["Worker 2 规划<br/>只设计不执行"]
+        PO --> WA3["Worker 3 执行<br/>代码修改"]
+    end
+    subgraph "2.水平分工 Horizontal"
+        HA1["代码Agent"] --- HA2["文档Agent"] --- HA3["测试Agent"]
+        HA1 & HA2 & HA3 --> SC["共享上下文/结果汇总"]
+    end
+    subgraph "3.流水线 Pipeline"
+        PA1["Explore<br/>只读探索"] --> PA2["Plan<br/>对齐思路"] --> PA3["Act<br/>改代码"]
+    end
+    style PO fill:#8b5cf6,stroke:#333,color:#fff
+    style PA1 fill:#3b82f6,stroke:#333,color:#fff
+    style PA3 fill:#22c55e,stroke:#333,color:#fff
+```
+
+
 ### 1. 父子层级架构（Parent-Child Hierarchy）
 
 最常见的多Agent架构，由一个**Orchestrator（编排器）**负责协调多个**Worker Agent**工作。

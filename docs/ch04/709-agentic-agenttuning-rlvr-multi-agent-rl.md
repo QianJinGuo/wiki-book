@@ -16,6 +16,32 @@
 
 1. **原架构三大瓶颈**：新增1个意图需2个月迭代（灵活性差），无法联动多源信息且误判无法反思（上下文感知弱），无法处理高频多弹幕并发（并发调度缺失）。FAQ利用率不足2%
 2. **Agentic架构三域升级**：感知域从单维度匹配→全局上下文感知（融合弹幕+历史+商品信息）；决策域从单次分类→多次按需工具调用+自我纠错（反思机制）；执行域从单意图话术→多模态响应（调图、调顺序、融合讲解文案）
+
+```mermaid
+graph TD
+    subgraph "旧架构: 静态Workflow"
+        INT["意图识别<br/>单维度匹配"] --> RET["检索<br/>固定话术FAQ"] --> GEN["生成<br/>单意图话术"]
+    end
+    subgraph "新架构: Agentic 三域"
+        PER["感知域<br/>全局上下文感知<br/>弹幕+历史+商品"]
+        DEC["决策域<br/>多次工具调用+自我纠错"]
+        EXE["执行域<br/>多模态响应<br/>调图/调顺序/融合"]
+    end
+    subgraph "训练策略: 先蒸馏再强化"
+        DIST["AgentTuning蒸馏<br/>千亿→30B×2"] --> RLVR["RLVR<br/>回复质量优化"] --> MARL["Multi-Agent RL<br/>工具+回复分别优化"]
+        TA["工具调用Agent<br/>规则遵守·调用合理性"]
+        RA["回复生成Agent<br/>事实正确·帮助性"]
+    end
+    PER --> DEC --> EXE
+    DEC -->|"反思"| PER
+    RLVR --> MARL
+    MARL --> TA
+    MARL --> RA
+    style DEC fill:#f97316,stroke:#333,color:#fff
+    style TA fill:#3b82f6,stroke:#333,color:#fff
+    style RA fill:#22c55e,stroke:#333,color:#fff
+```
+
 3. **AgentTuning蒸馏**：千亿参数教师模型采样完整trajectory，蒸馏至两个Qwen3-30B-A3B小模型，剔除思考序列，单次工具调用仅0.3s
 4. **RLVR效果**：Agent平均端到端延迟降至1.79秒（下降1.36秒），多轮对话用户比例提升2.76%
 5. **Multi-Agent RL核心贡献**：工具调用模型与回复模型使用不同奖励信号协同优化，回复模型正确性+4.1pt/帮助性+23.6pt，工具调用合理性+18.2pt，消融实验验证了其对单Agent GRPO的显著优势

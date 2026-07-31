@@ -75,6 +75,32 @@ nonstop 项目成果数据  ：
 完成nonstop项目后，我们有惊喜更有疑问。惊喜的是AI能力确实很强，但  同时  也发现了很多问题：尤其是LEGO这样百万行级、高可靠的 C++ 系统，能不能"放心用"，会不会翻车？ 也是 Harness Engineering要解决的核心命题。
 
 ###  ** 三、核心问题：AI Coding在大型项目里为什么容易翻车？  **
+
+```mermaid
+graph TD
+    subgraph "腾讯CDN LEGO挑战"
+        CODE["100万行核心代码<br/>300万行深度改造第三方库"]
+        DIM["维度组合爆炸<br/>13,824×N种理论路径"]
+        RISK["一行失误→全网事故"]
+    end
+    subgraph "Harness五层架构"
+        H1["1.知识层<br/>规则/规范/最佳实践"]
+        H2["2.工具层<br/>沙箱/权限/多模型"]
+        H3["3.流程层<br/>CR门禁/自动化验证"]
+        H4["4.对抗层<br/>多模型对抗式CR"]
+        H5["5.运行时层<br/>监控/回滚/灰度"]
+    end
+    CODE --> DIM --> RISK
+    RISK -->|"不是用AI而是驾驭AI"| H1
+    H1 --> H2 --> H3 --> H4 --> H5
+    subgraph "验证: Nonstop项目"
+        NS["20天·1人+AI<br/>Rust零人工代码<br/>42K QPS / 0错误"]
+    end
+    NS --> H5
+    style RISK fill:#ef4444,stroke:#333,color:#fff
+    style H4 fill:#f97316,stroke:#333,color:#fff
+```
+
 尽管nonstop  让我  们  探测  出  AI 编码的能力边界与行为特性  ，但在实际应用AI Coding的过程中，我们也发现了许多问题和挑战。
 
 ###  3.1  AI Coding的常见问题

@@ -12,6 +12,34 @@
 
 ### 四种编排模式的设计哲学
 
+```mermaid
+graph TD
+    subgraph "层级编排 Orchestrator-Worker"
+        OW_O["Orchestrator<br/>任务分解+结果合并"] --> OW_W1["Worker 1"]
+        OW_O --> OW_W2["Worker 2"]
+    end
+    subgraph "对等协作 Peer-to-Peer"
+        P2P_A["Agent A"] <-->|"消息传递"| P2P_B["Agent B"]
+        P2P_A <--> P2P_C["Agent C"]
+        P2P_B <--> P2P_C
+    end
+    subgraph "市场竞争 Auction-based"
+        AU_T["任务发布"] --> AU_A1["Agent 1 竞标"]
+        AU_T --> AU_A2["Agent 2 竞标"]
+        AU_T --> AU_A3["Agent 3 竞标"]
+    end
+    subgraph "投票/共识 Voting"
+        VO_Q["问题"] --> VO_V1["Agent 1 判断"]
+        VO_Q --> VO_V2["Agent 2 判断"]
+        VO_Q --> VO_V3["Agent 3 判断"]
+        VO_V1 & VO_V2 & VO_V3 --> VO_R["加权投票"]
+    end
+    style OW_O fill:#8b5cf6,stroke:#333,color:#fff
+    style AU_T fill:#f97316,stroke:#333,color:#fff
+    style VO_R fill:#22c55e,stroke:#333,color:#fff
+```
+
+
 四种主流多 Agent 编排模式对应不同的设计哲学。层级编排（Orchestrator-Worker）强调"分治"——中央协调者负责任务分解和结果合并。对等协作（Peer-to-Peer）强调"自主"——各 Agent 通过消息传递自行协调，没有中心节点。市场竞争（Auction-based）强调"择优"——多个 Agent 根据能力和报价竞标任务。投票/共识模式强调"民主"——多个 Agent 独立判断，通过加权投票确定最终输出。
 
 ### 任务分解粒度的核心权衡

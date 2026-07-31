@@ -12,6 +12,25 @@
 
 两个核心目录对应 Agent 的两个侧面：
 
+```mermaid
+graph LR
+    subgraph "控制室 /root/vps-agents"
+        INV["inventory.md<br/>身份·职责·人找谁"]
+        ENV["env-map.md<br/>凭据·作用域·轮换"]
+        RUN["runbook.md<br/>恢复·启动·停止·重放"]
+        BAK["backup.md<br/>状态·备份·恢复演练"]
+        SEC["security.md<br/>边界·审批·不可信来源"]
+    end
+    subgraph "运行时 /srv/agent/data"
+        MEM["MEMORY.md + USER.md<br/>brain·稳定事实·偏好"]
+        SOU["SOUL.md<br/>personality·风格·边界"]
+        SKI["skills/<br/>skillset·反复出现的流程"]
+    end
+    INV & ENV & RUN & BAK & SEC -->|"5文件模板<br/>工程资产 vs 个人玩具"| RT["四道门<br/>原型→真实任务→收紧→VPS/cron"]
+    MEM & SOU & SKI -->|"先跑错再沉淀<br/>不要第一天写Skills"| RT
+```
+
+
 | 目录 | 定位 |
 |------|------|
 | `/root/vps-agents` | 控制室（Control Room）：文档、规则、Runbook、架构图 |
