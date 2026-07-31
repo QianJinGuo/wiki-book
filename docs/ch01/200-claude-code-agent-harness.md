@@ -18,6 +18,32 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 - **源码泄露事件**：Claude Code 因 npm 打包未排除 `.map` 映射文件，导致 1900+ TypeScript 文件、51 万行核心代码意外曝光；归档后数小时内收获 1100+ 星。这是迄今为止生产级 AI Agent 系统最完整的一次公开审视。
 - **核心循环 8 步**：用户输入 → 上下文组装 → 调用 Claude API → 解析响应 → 检查权限 → 执行工具 → 反馈结果 → 上下文检查（太大则压缩）→ 终止。**不断循环直到任务完成**。
 - **上下文组装的缓存分层**：通过 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 标记分隔——边界之前用全局缓存范围（所有用户共享），边界之后是会话特定。**MCP 指令**是唯一非缓存部分（因为可能动态变化）。

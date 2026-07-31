@@ -68,6 +68,21 @@ One thing that the marketing material of unified OLTP-OLAP system commonly gloss
 
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 ### 从 OLTP/OLAP 到 HTAP/LAP 的分类演化
 
 Vanlightly 的分类法揭示了存储架构从单维分类（OLTP vs OLAP）到多维分类（系统数 × 工作负载数 × 存储副本数）的演化路径。关键洞察是：当系统数和工作负载数同时增加时，数据一致性问题变得极其复杂——HTAP 在单系统内解决一致性（通过 dual-format 或 merge-on-read），LTAP 在跨系统间解决一致性（通过共享冷存储层）。 这种分类框架为评估新数据库产品提供了清晰的定位坐标。

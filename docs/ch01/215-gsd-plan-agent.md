@@ -20,6 +20,27 @@
 核心问题：它们偏向"将工作按角色拆分"，而不是"将上下文按依赖拆分"。面对庞大代码库，总是会丢失很多计划细节。
 
 ## GSD 是什么
+
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
 **GSD** (Get Shit Done) 是一个发布在 npm 上的 Claude Code 增强工具包，包名 `get-shit-done-cc`。
 安装：
 ```bash

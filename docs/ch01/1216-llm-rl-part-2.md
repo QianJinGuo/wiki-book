@@ -20,6 +20,28 @@ Part 1 讨论了如何防止熵坍塌——本文更进一步，探讨如何**�
 
 ## 方法一：在 Advantage 上增加熵相关项
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 ### 核心思想
 
 《REASONING WITH EXPLORATION: AN ENTROPY PERSPECTIVE》提出了一个直接的方法：在优势值 A 上增加一项关于熵的项 ψ(Ht)。

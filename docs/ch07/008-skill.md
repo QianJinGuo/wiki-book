@@ -49,6 +49,32 @@ Skill 更接近 **SOP（标准作业程序）**——是给 AI 看的操作手�
 
 ## 二、三级加载机制：控制上下文消耗的关键设计
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 ### 2.1 渐进式加载策略
 
 Skill 采用**渐进式加载**策略，而非一次性将所有内容塞入上下文。这解决了「丰富 Skill 内容」与「耗尽 Agent 上下文窗口」之间的根本矛盾。

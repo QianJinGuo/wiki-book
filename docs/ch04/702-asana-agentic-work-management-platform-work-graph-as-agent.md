@@ -16,6 +16,21 @@
 
 ## 核心定位与背景
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 ### 为什么做 Agentic Work Management
 
 Asana 用一组数据点出企业级代理部署的核心矛盾:75% 知识工作者用 AI,但**只有 5% 的组织报告了有意义的效率提升**。CPO Arnab Bose 解释根因:**代理在企业失败是因为缺乏组织记忆(organizational memory)**——不知道谁做什么、什么时候做、为什么做。

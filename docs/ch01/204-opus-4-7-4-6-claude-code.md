@@ -94,6 +94,27 @@ Opus 4.7 的 token 用量和行为表现，会因为你的部署方式不同而�
   * ** 为已完成任务设置通知。  ** 你可以让 Claude 在任务完成时播放提示音，它也能自己创建基于 hook 的通知。
 
 ##  Opus 4.7 推荐的 effort 设置
+
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
 Claude Code 中，Opus 4.7 现在的默认 effort 等级是  ` xhigh  ` 。这是一个位于  ` high  ` 和  ` max  ` 之间的新等级，让用户在处理困难问题时，能更细致地控制推理深度与延迟之间的权衡。我们推荐在大多数智能体编码任务中使用  ` xhigh  ` ，尤其是那些对智能水平敏感的任务，比如设计 API 和 schema、迁移遗留代码、以及审查大型代码库。
 下面是各个 effort 等级的额外建议：
 

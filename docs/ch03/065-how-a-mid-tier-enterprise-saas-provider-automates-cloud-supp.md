@@ -18,6 +18,28 @@ Mid-tier SaaS automates cloud support triage with a 5-agent workflow, boosting t
 
 ## The Ticket Triage Triangle That Slowed Cloud Support
 
+```mermaid
+graph TB
+    subgraph "协作模式"
+        L["Leader<br/>编排者"] --> W1["Worker 1"]
+        L --> W2["Worker 2"]
+        L --> W3["Worker 3"]
+    end
+    subgraph "通信"
+        MSG[消息队列<br/>异步]
+        A2A[A2A协议<br/>Agent间]
+        MCP[MCP<br/>工具调用]
+    end
+    W1 & W2 & W3 --> MSG
+    L --> A2A
+    W1 & W2 --> MCP
+    classDef role fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef proto fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L,W1,W2,W3 role
+    class MSG,A2A,MCP proto
+```
+
+
 Cloud support teams face a brutal bottleneck few talk about: the volume and complexity of incoming tickets overwhelm the system, both because of sheer numbers and due to three specific pitfalls we call the "Ticket Triage Triangle." Completeness breaks down as incoming tickets miss critical fields. Handoffs scramble because routing to Level 2 or 3 happens too slowly or inaccurately. Eventing gaps leave cloud operations blind to real-time updates. This costs precious minutes on every ticket and disrupts SLA adherence.
 
 For a mid-tier global enterprise SaaS provider processing 15,000+ alert tickets annually, these issues were urgent. First response times hovered around 20 minutes, close to the 45-minute contract SLA, but tight given ticket volumes projected to hit 20,000 per year soon. The team faced mounting manual triage workloads, inconsistent ticket quality, and slow communication.

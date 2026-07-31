@@ -14,6 +14,25 @@ Trail of Bits 在 2026-06-03 公开实证：4 个公开的 agent skill scanner�
 
 ## 攻击对象（4 个 scanner）
 
+```mermaid
+graph LR
+    subgraph "威胁模型"
+        ATK[攻击者] --> VEC[攻击向量]
+        VEC --> TGT[目标系统]
+    end
+    subgraph "防御层"
+        WAF[WAF/网关] --> IDS[入侵检测]
+        IDS --> RBAC[权限控制]
+        RBAC --> AUD[审计日志]
+    end
+    VEC --> WAF
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK,VEC,TGT threat
+    class WAF,IDS,RBAC,AUD defense
+```
+
+
 | Scanner | 提供方 | 类型 | 绕过时间 |
 |---------|--------|------|---------|
 | ClawHub malicious skill detector | OpenClaw | 在 scanner 代码内部 | < 1 小时 |

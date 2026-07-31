@@ -72,6 +72,32 @@ Hermes选择为skill机制设计专门的工具（skill_list/skill_view/skill_ma
 Hermes选择"写入memory时不更新当前会话的system prompt，而是等到下次会话启动时才应用新记忆"——这是一个在性能和正确性之间的务实权衡。如果每次memory写入都实时更新system prompt，可以保证即时性，但会破坏prefix cache（长会话成本翻倍）。选择牺牲即时性换取成本控制，意味着系统设计者认为"下次会话能用到正确的记忆"比"当前会话感知到记忆更新"更重要。这个权衡在多会话、长周期使用的场景下是合理的，但在单次长时间会话中可能导致用户体验的不连续感。设计self-improving系统时需要明确：目标使用模式是长单会话还是短多会话，这将直接影响是否采用类似的缓存保护策略。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 **1. 为agent构建知识沉淀系统时的三层分离原则**
 在设计自己的agent知识沉淀系统时，建议采用Memory/Skill/Session Search三层分离架构：Memory层存储用户偏好和环境配置等稳定事实，使用key-value或文档形式，会话启动时自动加载；Skill层存储标准操作流程和最佳实践，使用结构化文档形式，Agent主动按需加载；Session Search层使用FTS全文索引存储完整对话历史，支持按关键词检索和LLM摘要。三层分离的关键好处是：每层的存储格式、加载策略和更新频率可以独立优化，避免用单一机制处理所有类型的知识带来的系统性低效。
 **2. Skill的"自主创建+即时修复"机制的实现要点**

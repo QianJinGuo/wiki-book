@@ -16,6 +16,27 @@
 核心论点：Hermes 没有做"更强大的记忆"，而是把记忆的**成本账**算得更细。它把不同类型的信息放入成本和用途完全不同的机制，避免把所有东西混在一个越来越大的 memory 口袋里。
 
 ## Hermes 四层记忆体系
+
+```mermaid
+graph TB
+    subgraph "Agent 架构"
+        IN[输入/意图] --> PL[规划器<br/>Plan]
+        PL --> EX[执行器<br/>Execute]
+        EX --> OB[观察<br/>Observe]
+        OB -->|"反思"| PL
+    end
+    subgraph "基础设施"
+        MEM[记忆<br/>跨Session状态]
+        SKL[技能<br/>可复用能力]
+        TL[工具/MCP<br/>外部操作]
+    end
+    PL & EX --> MEM & SKL & TL
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef infra fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class IN,PL,EX,OB core
+    class MEM,SKL,TL infra
+```
+
 | 层级 | 存储位置 | 默认容量 | 定位 |
 |------|---------|--------|------|
 | **热记忆** | MEMORY.md + USER.md | 2,200 + 1,375 字符 | 每轮都该知道的事实和偏好 |

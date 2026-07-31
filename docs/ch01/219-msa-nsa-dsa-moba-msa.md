@@ -15,6 +15,26 @@
 
 ## 为什么大家都奔向稀疏
 
+```mermaid
+graph TB
+    subgraph "记忆分层"
+        WM[工作记忆<br/>上下文窗口] --> SM[短期记忆<br/>Session级]
+        SM --> LM[长期记忆<br/>跨Session]
+    end
+    LM --> VDB[向量数据库<br/>Embedding检索]
+    LM --> KB[知识库<br/>结构化存储]
+    subgraph "RAG 流程"
+        Q[查询] --> RET[检索] --> RK[重排序] --> CT[上下文注入]
+    end
+    VDB --> RET
+    KB --> RET
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef rag fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WM,SM,LM,VDB,KB mem
+    class Q,RET,RK,CT rag
+```
+
+
 Transformer full attention 计算量是 **O(n²)**——1M 上下文下算力直接吃满，KV cache 把显存也吃满。**稀疏注意力的核心思路：生成下一个词时，没必要真的回头看完前面 100 万个 token，挑出真正相关的一小撮来精算**。
 
 挑谁、怎么挑、挑多细——这就是三国杀的全部分歧。

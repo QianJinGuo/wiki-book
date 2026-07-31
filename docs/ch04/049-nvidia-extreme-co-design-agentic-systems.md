@@ -19,6 +19,27 @@ Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Desig
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
+
 **1. Agentic token消耗是"结构性概率"而非"线性可预测"——这是Serving Economics的根本挑战**
 
 从标准chat到tool-calling到agentic，token消耗模式发生了质变：标准chat线性可预测，tool-calling引入变量但仍有界，agentic则是"结构性概率"——每个session的形状可能截然不同（Anthropic数据显示达15x于标准chat）。这意味着服务于chat的静态资源配置（固定context长度、batch优化）在agentic场景下完全失效，需要全新的基础设施范式。

@@ -8,6 +8,25 @@
 
 ## 三个独有贡献（不应合并到现有 entity）
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 1. **GPU driver / CUDA runtime / CUDA Toolkit 三层职责清晰分离** — 节点只装 driver（GPU Operator 统一管理），业务容器镜像固定 CUDA runtime，**节点 AMI 不装 CUDA Toolkit**。这是平台团队可标准化、可审计、可复现部署的关键架构选择。
 2. **GPU Operator + Kiro + EKS MCP 的 AI 运维闭环** — 通过 MCP 把分散在 EKS / Kubernetes / 节点层 / driver 层的状态串联起来，自然语言巡检 + 只读模式生产巡检 + 知识沉淀。属于 GPU + AI Ops 的具体落地模式。
 3. **GPU Operator 26.3.1 + R535 + Ubuntu 22.04 + EKS 1.34 完整版本矩阵 + 失败模式实证** — 535.309.01 验证通过；535.15.04 ImagePullBackOff；CUDA 12.2 runtime 在 R535 上向后兼容。**driver 兼容 ≠ GPU Operator 支持矩阵 + NVIDIA Container Registry 中存在 tag**。这是大量 GPU 平台踩坑的真实门槛。

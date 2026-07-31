@@ -16,6 +16,28 @@ Kimi K3, released by Moonshot AI on July 16, 2026, represents a watershed moment
 
 ## Key Points
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 - **Kimi K3 is the strongest open-weight model ever released**: 2.8T parameter MoE, #2/#3 on major leaderboards, beating all open models and even some closed models like Gemini Flash 3.5 and Grok 4.5. Moonshot AI achieved this with "far, far fewer resources" than American labs.
 - **The open-to-closed performance gap has narrowed dramatically**: From the debated 6-9 months to something closer to 3-5 months. This compresses the timeline for policy action on frontier open-weight models.
 - **China's strategic commitment to open-source**: Xi Jinping's WAIC keynote directly committed China's AI ecosystem to open-source and global diffusion, signaling that open model releases are official policy — not just a temporary strategy for adoption.

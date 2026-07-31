@@ -125,6 +125,32 @@ Anthropic（薄）与 LangGraph（厚）的争论本质上是"在 harness 层编
 文章最超前的部分是 agent 可以创建 sandbox worker，而这个 sandbox 也是一个 worker。这创造了一个有趣的递归：agent（一个 worker）可以动态创建新的 workers（sandbox），新 workers 注册自己的 functions，其他 workers 立即可以发现并调用它们。这带来的结果不是"agent 有了更多能力"，而是"系统的能力边界可以在运行时扩展"。这比"agent 调用 API"强大得多——后者受限于预先定义的 API 集合，而前者可以动态创造全新的 function 集合。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 **1. 在设计 Agent 工具时，先问"这个工具是否应该是 function"**
 传统 Agent 开发中，"工具"是一个模糊的概念——它可能是一个 API、一个代码执行环境、一个文件读取操作。iii 的框架提供了一个清晰的判断标准：如果一个工具可以被多个不同的 trigger（HTTP、状态变化、队列、cron）触发，它就应该是一个 function 而非硬编码的 API。这个判断帮助避免"工具"概念的膨胀——很多所谓的"工具"其实只是 trigger 类型的不同，本质上是同一个 work unit。
 **2. 用"注册"而非"配置"来扩展系统**

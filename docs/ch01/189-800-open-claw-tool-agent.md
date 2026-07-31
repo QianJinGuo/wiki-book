@@ -184,6 +184,26 @@ MessageBus 的路由规则非常明确：有订阅者走回调，无订阅者入
 这是一个已知的能力边界。框架当前的并发模型是「单用户 + 子 Agent 异步」的组合，而不是「多用户 + 子 Agent 异步」的组合。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    subgraph "记忆分层"
+        WM[工作记忆<br/>上下文窗口] --> SM[短期记忆<br/>Session级]
+        SM --> LM[长期记忆<br/>跨Session]
+    end
+    LM --> VDB[向量数据库<br/>Embedding检索]
+    LM --> KB[知识库<br/>结构化存储]
+    subgraph "RAG 流程"
+        Q[查询] --> RET[检索] --> RK[重排序] --> CT[上下文注入]
+    end
+    VDB --> RET
+    KB --> RET
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef rag fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WM,SM,LM,VDB,KB mem
+    class Q,RET,RK,CT rag
+```
+
 ### 1. 从零构建 Agent 框架时，优先选择贴近模型 API 的薄抽象
 当团队需要自建 Agent 基础设施时，常见的选择有两种：一种是引入 LangChain 等成熟框架获取完整能力，另一种是从 SDK 开始手写所有逻辑。Open Claw 提供了第三种思路——用薄抽象覆盖核心场景（Tool、MessageBus、Subagent），在关键位置保持对 API 的直接控制，在非核心位置接受能力上限（比如无 Zod 校验、无精确 cron）。这种折中对于快速原型和中等复杂度的 Agent 系统是务实的。
 

@@ -15,6 +15,32 @@
 8. **MCP 完整原生实现** — 唯一完整实现 MCP 的框架。工具以 `mcp__server__tool` 格式注册，共享所有内置工具机制（并发/权限/预算）。支持资源访问和 OAuth。MCP 集成模式
 
 ## 跨框架对比总结
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 | 维度 | Claude Code | Codex | OpenCode | Gemini-CLI |
 |------|------------|-------|----------|------------|
 | System Prompt | 动态组装(6层) | 静态模板 | 静态文件 | 静态模板 |

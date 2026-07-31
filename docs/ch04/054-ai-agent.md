@@ -13,6 +13,32 @@
 4. **动态时空状态下的上下文建模挑战**：如何把 GPS、朝向、路线、POI、天气、用户记忆等分散信号，实时转化为模型可理解、可推理、可裁剪的时空上下文。既要补齐关键时空变量，又要避免信息无差别堆叠造成注意力稀释和上下文腐败。
 
 ## 二、整体架构设计
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 ### 2.1 业界参考
 #### Hermes Agent：学习型 Agent 与长期记忆
 Hermes Agent[17] 的核心特点是Self-Improving Agent。它强调 Agent 可以从经验中创建和改进 Skill，沉淀长期记忆，并支持跨 Session 回忆历史上下文；同时支持多平台入口、子 Agent 并行、任务自动化和工具链扩展。

@@ -10,6 +10,27 @@
 
 ## 背景：Blackwell 时代的模型加载瓶颈
 
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
+
 AWS 在 2026 年 6 月发布 P6e / P6 实例（Blackwell 架构），单 P6e UltraServer 集成 **72 颗 Blackwell GPU、130 TB/s bisection 带宽、13.4 TB HBM3e、360 PFLOPS FP8（720 PFLOPS FP4）**，用于万亿参数规模训练。但即便单节点 P5en / P6 实例，**模型加载仍是冷启动 TTFT 的核心瓶颈**。
 
 传统 CPU-based 路径下，Llama 3.1 405B（BF16 约 800 GB）单线程加载需要 **10-20 分钟**，期间 GPU 全部 idle。带来的连锁问题：

@@ -136,6 +136,28 @@ TDX 体系下，内存按地址属性分为私有内存和共享内存。Virtio 
 H2D/D2H 带宽因卡而异的特性，说明不同 GPU 型号对 PPCIe 的支持程度不同，用户需根据业务 I/O 模式选型。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
 ### 对云厂商的启示
 1. **机密计算的全链路化是必然趋势**：仅保护 CPU 侧是不够的，数据在 CPU-GPU、GPU-GPU 传输过程中的边界泄露同样需要封堵。PPCIe 模式的引入标志着机密计算从「单点 TEE」走向「全链路 TEE」。
 2. **vDPA 是云环境机密计算 I/O 的优选方案**：兼顾性能与弹性热迁移能力，但需要解决与 TDX 内存模型的兼容性问题。百度 TDVF 固件优化的实践可为参考。

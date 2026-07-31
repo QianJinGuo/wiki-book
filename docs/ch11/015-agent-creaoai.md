@@ -6,6 +6,25 @@
 
 ## 概述
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 **CreaoAI 联合创始人**总结的云端 Agent 基础设施两条**硬经验**——把桌面端 Agent 假设（用户 = 同一台机器 = 同一受信边界）搬到云端时踩出的两个核心设计原则：① **状态与代码解耦**（frozen snapshot + hot-swap Runner，类比 OS 内核 vs 用户 home 目录）② **凭据隔离在执行边界之外**（API bridge + IP 白名单 + 每次运行的短期 JWT）。这两条是云端 Agent 平台区别于桌面框架的**根本性架构差异**，而不是"加几个云服务就行"。
 
 ## 第一性原理：为什么桌面假设在云上失效

@@ -56,6 +56,25 @@ The profiler offers two deployment paths:
 
 ## Deep Analysis
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 ### The Model Selection Problem: Fragmentation as a Hidden Cost
 
 The Model Profiler addresses a pervasive but often underestimated challenge in enterprise AI adoption: **model discovery fragmentation**. With 120+ models across 18+ providers, each with different pricing tiers, regional availability, context windows, and latency profiles, the manual effort to find the right model for a specific workload is substantial.

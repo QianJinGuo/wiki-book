@@ -12,6 +12,25 @@
 
 ## 与 Claude Code 对比
 
+```mermaid
+graph LR
+    subgraph "MiMo Code Agent"
+        M["MiMo<br/>代码理解+生成"] --> R["RAG 增强上下文"]
+        R --> D["Diff 验证"]
+        D --> T["测试执行"]
+    end
+    subgraph "vs Claude Code"
+        C["Claude Code<br/>Agent式搜索"] --> S["Skills 扩展"]
+        S --> H["Hooks 生命周期"]
+    end
+    M -.->|"互补"| C
+    classDef mimo fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef claude fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class M,R,D,T mimo
+    class C,S,H claude
+```
+
+
 | 维度 | 数值 | 备注 |
 |------|------|------|
 | **离线 benchmark** | MiMo Code + MiMo-V2.5-Pro **优于** Claude Code + Claude Sonnet 4.6 | 单仓库级问题一次性解决能力 |

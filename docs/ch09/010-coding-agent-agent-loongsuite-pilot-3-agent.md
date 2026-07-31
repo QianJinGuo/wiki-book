@@ -21,6 +21,29 @@
 
 ## 2. 背景：3 大核心挑战
 
+```mermaid
+graph TB
+    subgraph "Coding Agent 架构"
+        PM["Prompt Manager<br/>意图解析"] --> PL["Planner<br/>任务拆解"]
+        PL --> EX["Executor<br/>代码生成/修改"]
+        EX --> VL["Validator<br/>测试/检查"]
+        VL -->|"不通过"| PL
+    end
+    subgraph "安全机制"
+        SB["沙箱执行<br/>隔离环境"]
+        RL["回滚机制<br/>Git worktree"]
+        HR["人工确认<br/>高风险操作"]
+    end
+    EX --> SB
+    VL --> RL
+    EX -.->|"高风险"| HR
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef safe fill:#fef3c7,stroke:#d97706,color:#78350f
+    class PM,PL,EX,VL core
+    class SB,RL,HR safe
+```
+
+
 **AI Agent 规模化落地带来三大难题**：
 
 1. **执行黑盒**——Agent 内部决策链路不可见

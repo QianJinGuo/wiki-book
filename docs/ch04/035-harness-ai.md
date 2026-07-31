@@ -9,6 +9,27 @@
 > **Skill、Agent、工具链会随模型迭代更新，但领域知识是永恒的。** 
 
 ## Harness Engineering 三支柱与知识的位置
+
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
 Harness Engineering 的理论框架可归结为三个支柱：**上下文工程**、**架构约束**、**持续治理**。其中"上下文工程"包含知识检索注入和长/短期记忆，"持续治理"包含知识生命周期和自动衰减。这意味着**知识管理本身就是 Harness Engineering 的核心能力**，而不是附属品。
 三大标志性实践的对比：
 | 实践方 | 核心关注 | 关键动作 |

@@ -154,6 +154,32 @@ Memory 机制中嵌入的 `_MEMORY_THREAT_PATTERNS` 正则扫描是一个容易�
 Session Search 采用了"索引+生成"双层设计：FTS5 负责快速检索和相关性排序，LLM（低成本模型如 Gemini Flash）负责将原始对话转化为"问题→尝试→解法"的结构化摘要。这一设计的巧妙之处在于**不在检索层做生成，在生成层做聚合**——避免返回冗长的原始对话让模型上下文爆炸，也避免了简单返回匹配片段导致的缺失连贯性问题。
 
 ## 实践启示
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 ### 1. 为 Agent 设计工具时采用"高频专用、低频通用"原则
 如果一个操作在 Agent 生命周期内会被频繁调用（如 Skill 管理、Memory 写入），不要用通用工具（如 Shell 执行文件系统命令）替代。专用工具能显著降低模型调用难度，减少构造错误命令的概率，同时方便在工具层加入权限控制、参数校验、副作用监控等机制。
 

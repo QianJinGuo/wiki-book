@@ -10,6 +10,25 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 AgentScope Java 2.0 是一个面向企业级 AI Agent 部署的分布式 Harness 框架，基于 Java/JVM 生态构建，核心设计目标是解决多租户环境下 Agent 的资源隔离、上下文管理、工具编排和故障恢复问题。该框架在架构上借鉴了微服务的设计哲学，将 Agent 的各个能力维度（记忆、工具、权限、路由）拆解为独立可插拔的 Middleware 组件，并通过统一的事件流总线实现组件间通信。在技术选型上，AgentScope Java 2.0 选择 Spring Boot + Kubernetes 作为基础设施层，利用 Builder Pattern 构建 Agent 实例，并通过 Sealed Class 区分不同类型的消息内容块（ContentBlock / DataBlock），在类型安全与灵活性之间取得平衡。
 
 ## 背景：为什么企业需要专门的 Agent Harness 框架

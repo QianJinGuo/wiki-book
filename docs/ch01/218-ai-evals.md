@@ -18,6 +18,32 @@
 **局限：需要校准；可能与应用 LLM 共享盲点（同模型家族）。** 一个经人工标注校准 + 基于代码检查兜底的 LLM 裁判可以可靠。 ^["Evals到底在评什么？一文拆解AI评估的三种方法 (Lotte Verheyden, Langfuse, 2026-05-20)"]
 
 ## 参考答案 vs 无参考答案
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 | | 参考答案 | 无参考答案 |
 |--|---------|---------|
 | 机制 | 与预定义期望输出比较 | 只评估输出本身 |

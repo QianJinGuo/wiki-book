@@ -20,6 +20,32 @@ Claude Code 的配置分散在多个位置：^[开源-ai-知识管理搭档-obsi
 Obsidian 虽然提供了「排除文件」的设置（设置 > 文件与链接），但它只是  ** 软隐藏  ** ——文件看起来不见了，其实还是被索引着。对这个问题来说，帮助有限。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:39]
 
 ##  五大集成策略
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 ###  策略 1：独立开发者 Vault + 符号链接
 ** 适合场景  ** ：同时维护多个项目，希望统一搜索和管理信息。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:45]
 思路很简单：建一个独立的 Obsidian Vault，不放在任何代码仓库里，然后用符号链接把你关心的内容「拉」进来。^[开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md:47]

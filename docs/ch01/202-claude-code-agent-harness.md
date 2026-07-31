@@ -15,6 +15,32 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 - **Harness 的核心循环**：`query()` 异步生成器函数 + 8 个步骤（上下文组装 → API 调用 → 解析响应 → 检查权限 → 执行工具 → 反馈结果 → 上下文检查 → 终止）
 - **上下文组装 = 多层叠加**：系统提示词（11 个分段 + 缓存边界 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY`）+ CLAUDE.md 4 级加载（系统 → 用户 → 项目 → 本地）+ 记忆 + 任务 + MCP 指令 + 技能发现 + 对话历史
 - **CLAUDE.md 4 级优先级 + @include 5 层深度**：从根目录向下遍历，最近文件最高优先级；`@include` 语法让一个 CLAUDE.md 拉入另一个文件

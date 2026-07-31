@@ -11,6 +11,32 @@
 - 组织层面：需要 **agent manager** 或 DRI 集中管理配置，防止知识部落化
 
 ## Claude Code 如何导航大型代码库
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 Claude Code 导航代码库的方式与软件工程师相同：遍历文件系统、读取文件、使用 grep 精确查找、跟踪跨代码库的引用。它在开发者本地运行，**不需要构建、维护或上传代码库索引到服务器**。
 
 ### Agentic Search vs RAG

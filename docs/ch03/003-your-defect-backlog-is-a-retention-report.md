@@ -47,6 +47,28 @@ How many paper cuts are your customers bleeding through right now, while you're 
 
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 **1. 成本可见性不对称：缺陷成本的承担者与决策者不同**
 
 文章揭示了一个经典的组织经济学问题：缺陷的隐性成本由客户（摩擦力、认知负荷、支持依赖）承担，而缺陷修复的可见成本由工程团队承担。组织天然倾向于优化可见的工程支出，而非不可见的客户摩擦力。这种不对称性导致即使数学上缺陷修复的 ROI 明显为正，团队仍然系统性地投入不足。AI Coding 时代的讽刺在于：快速生成代码的能力可能加剧这个问题——更多的功能产出意味着更多的缺陷被引入，而缺陷的隐性成本也随之扩大。

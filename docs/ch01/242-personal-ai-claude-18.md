@@ -9,6 +9,21 @@
 核心论点：给 Claude 一个稳定的工作现场（Personal Harness），比优化单次提示词更有复利价值。   ^[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)]
 
 ## 六层工作台结构
+
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
 | 层 | 核心问题 | 解决的痛点 |
 |----|---------|----------|
 | 工作区 | 不同任务放不同 Project | 上下文互相污染 |

@@ -26,6 +26,32 @@ So our question was: how much value could we get out of modeling some or all of 
 
 ## how it works
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 Here's the workflow I eventually settled on. At first, I kept everything in one SKILL.md file that I directed the agents to use, but eventually I wrote my own CLI to scaffold it better.
 
 Decide what we're actually focusing on. Generally the agent will have a list of hypotheses of problems we will be looking out for once I direct it to a section of the codebase we're interested in. I'll have it write up an assumptions.md and boundaries.md so it's forced to be clear about what is and is not in-bounds during the modeling step. This should exclude enough of the rest of the codebase so that we don't blow up the TLA checker (what actually checks all possible states of the system once we have written the spec) with a combinatorial number of pathways. We generally don't want to model third-party dependencies, operating system quirks, or cosmic rays hitting our VRAM, especially when the checker will happily write tens of gigabytes of system traces if your spec is sufficiently complicated. So it's worth getting clear on what we're _excluding_ from our model now.

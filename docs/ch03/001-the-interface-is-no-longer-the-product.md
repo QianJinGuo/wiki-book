@@ -64,6 +64,21 @@ The more interesting future is not only agents operating apps. It is application
 - [Playerzero Request Demo](https://github.com/QianJinGuo/wiki/blob/main/entities/playerzero-request-demo.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 **1. 软件类别的"界面史"真相：一切类别都是历史偶然**
 
 文章最深刻的命题是：软件类别（Slides、Spreadsheets、Documents、CRMs 等）不是自然规律，而是界面历史的事故。当工具被设计为围绕人类界面时，你自然会得到"人类形状的类别"。这个分析揭示了 SaaS 生态系统的深层结构：现有软件产品是围绕 UI 和人类交互模式设计的，它们将数据模型、渲染引擎、权限系统、合规功能等捆绑成单一产品边界。AI 时代的重构力在于：这种捆绑不再必要，因为结构化数据层可以同时服务于多个渲染视图和多个 agent，而非仅限于一个人类用户界面。
