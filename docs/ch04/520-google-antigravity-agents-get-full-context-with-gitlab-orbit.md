@@ -14,6 +14,20 @@ GitLab Orbit 是 GitLab 的生命周期上下文图谱引擎，现已通过 [MCP
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 ### Agent 上下文缺失问题
 
 没有 Orbit 的 Antigravity Agent 只能看到文件和终端，无法理解更广泛的系统：哪些服务依赖被修改的代码、其他地方是否标记了类似漏洞、谁审查过类似变更。这些上下文存在于 DevSecOps 平台中，此前需要自定义脚本或手动复制粘贴。

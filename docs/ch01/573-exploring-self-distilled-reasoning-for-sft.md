@@ -18,6 +18,20 @@ Self-Distilled Reasoning (SDR) 是一种零额外标注成本的 SFT 训练方�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 1. **推理抑制问题**：在非推理数据集上使用推理模式进行 SFT 训练会导致模型在推理时完全丧失逐步推理能力 —— 这是 shortcut learning 的直接表现。
 2. **SDR 的核心思想**：用基座模型（而非外部大模型）自身的推理轨迹回填训练数据中缺失的 CoT 步骤，无需人工标注或额外教师模型。
 3. **灾难性遗忘的显著缓解**：标准 SFT 使 Math 准确率从 70% 暴跌至 6%；SDR 使其恢复到约 68%，同时目标任务性能还提升了 6.5% 以上。

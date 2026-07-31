@@ -10,6 +10,15 @@
 - 来源：https://blog.himanshuanand.com/2026/05/score-by-collisions-patch-by-panic/
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/869-google-adds-llms-txt-check-to-chrome-lighthouse.html)
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/820-github.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/223-rag.html)

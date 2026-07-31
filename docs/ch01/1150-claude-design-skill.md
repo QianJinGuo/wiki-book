@@ -14,6 +14,15 @@
 ### 核心观点
 1. # 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
 ##  一、Claude Design 是什么？
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 2. 2026 年 4 月 17 日，Anthropic 发布了 Claude Design。
 3. 这个产品上线当天，Figma 股价大跌。
 4. Claude Design 由 Opus 4.

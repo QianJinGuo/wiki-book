@@ -15,6 +15,20 @@ DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又�
 1. # DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了
 机器之心编辑部 | 2026-05-30
 ## 论文背景
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 DeepSeek 研究员陈德里（Deli Chen）和 AI 合作的第二篇论文，聚焦 continual learning（持续学习）与 self-iteration（自我迭代）。
 2. 陈德里认为这是 AI 迈向 AGI 过程中极为关键的一步。
 3. 由于 arXiv 不允许将 AI 列为作者，论文 99% 工作量由 DeepSeek-V4-Pro（文字）和 GPT-Image-2（图像）承担，移至脚注说明。

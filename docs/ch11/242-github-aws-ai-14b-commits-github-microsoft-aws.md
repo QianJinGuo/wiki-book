@@ -10,6 +10,20 @@
 
 ## 概述
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 2026-06-16 报道（基于 Business Insider 原始信息）：Microsoft 在 AI 编码激增压垮 GitHub 容量后，被迫向最大云对手 **Amazon Web Services** 加购容量以维持 GitHub 运行。这逆转了 2018 年 75 亿美元收购 GitHub 时"开发者平台归顺 Azure"的承诺。Microsoft 发言人确认了"多云策略"扩张，但拒绝点名 AWS。
 
 核心信号：AI 编码代理（agentic coding）从 2025 年末开始呈指数增长，GitHub 平台本身的基础设施规划**完全跟不上**。

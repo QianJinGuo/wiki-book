@@ -14,6 +14,15 @@
 
 ## 三大落地关卡
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 第一关：工具 Agent 可调用化
 
 研发工具只有 GUI 界面，没有 MCP 或 CLI。解法：与平台团队合作，为 Agent 提供代码部署 + 评测调用 + 结果获取的 skill 接口，通过 system prompt 注入工具描述。

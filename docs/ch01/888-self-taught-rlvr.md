@@ -12,6 +12,20 @@
 | CoPD | parallel-self | 由走另一条路的自身教自己 |
 
 ## RLSD：OPSD + RLVR 解耦
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 **问题**：OPSD存在不可消除的mutual information gap——KL散度无法收敛，信息泄漏无法避免。
 **解决**：解耦"方向"和"幅度"：
 

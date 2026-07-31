@@ -8,6 +8,15 @@
 Anthropic PM Jess Yan 在 Claude Managed Agents 上构建的 agentic 工作流——PM 自己开多个 agent 完成任务，从"等排期"变为"直接交付"。
 
 ## 核心机制
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### Claude 三件套分工
 | 工具 | 用途 |
 |------|------|

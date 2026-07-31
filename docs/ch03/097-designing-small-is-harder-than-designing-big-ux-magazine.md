@@ -6,6 +6,20 @@
 
 ## Summary
 ## 相关实体
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 - [Icon Pack Websites Designers Should Bookmark](ch03/131-icon-pack-websites-designers-should-bookmark.html)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
 - [Top 10 Design Gadgets Creative Professionals 2026](../ch01/913-20.html)

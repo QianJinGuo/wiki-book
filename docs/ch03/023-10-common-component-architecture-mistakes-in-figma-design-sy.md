@@ -11,6 +11,20 @@
 
 ## 相关实体
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 - [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
 - [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](../ch04/237-agentic.html)
 - [What the design-to-code loop unlocks](../ch09/007-design-to-code.html)

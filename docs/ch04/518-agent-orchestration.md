@@ -10,6 +10,15 @@
 - 由 AWS 技术团队主持
 
 ## 摘要
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 Markdown Content:
 
 # Agent Orchestration Workshop | AWS Marketplace

@@ -18,6 +18,15 @@ source_url: https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ
 - ###  精选列表
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 Skill 的本质是「过程资产」（Process Asset）而非「提示词集合」，这是 7 个顶级 Skill 提炼出的核心范式转变。线性模式（最小可用 Skill）教会我们一个反直觉的道理：越简单的 Skill 越容易被 AI 正确调用，而过度设计的 Skill 往往因为参数过多而失灵。
 循环迭代 Skill 模板揭示了一个更重要的工程现实：AI 工作流不是一次性设计出来的，而是在多轮执行中逐步收敛的。这意味着 Skill 的作者需要设计「循环退出条件」和「重试策略」，而非仅仅描述最终目标。这与传统的程序化思维有根本差异——传统软件开发中我们设计函数签名和返回值，而 Skill 设计的是「在什么条件下认为这个 Skill 完成了任务」。
 官方规范的存在意味着 Skill 生态正在走向标准化。规范的价值不只是格式统一，而是建立了一个共享的语义契约：当 Skill A 说它产出 X 格式时，Skill B 可以信赖这个约定。缺乏这种契约是当前 Agent 系统中模块组合困难的根本原因。

@@ -11,6 +11,15 @@
 - **当前状态**：Business和Enterprise计划公开Beta，Beta期间免费使用 
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 **Code Intelligence的产品定位**
 Linear发布Code Intelligence的核心逻辑是将AI Agent能力从"处理结构化数据"（issues、projects、docs）扩展到"理解非结构化代码资产"。传统AI辅助工具在处理issue跟踪、项目管理等结构化数据方面已经相对成熟，但代码库作为最重要的产品知识载体，长期以来缺乏有效的AI接入层。Code Intelligence的本质是建立这个接入层，让Linear Agent能够像理解业务 context一样理解技术实现 context 。
 这个功能的战略意义在于组织内部的信息不对称问题解决。PM通常不了解代码如何实现，支持和销售也不具备深入的技术背景来回答客户关于"某个功能如何工作"的问题。在没有Code Intelligence之前，这些问题都需要打断工程师来获取答案。Code Intelligence让整个组织可以在不打扰工程师的情况下获得关于代码的技术答案 。

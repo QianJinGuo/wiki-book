@@ -14,6 +14,15 @@ Cambridge + NVIDIA (2026-06-24) 提出的进化框架，解决自改进 Agent �
 
 ## 历史脉络
 
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
+
 | 阶段 | 方案 | 局限 |
 |------|------|------|
 | Gödel Machine (2003, Schmidhuber) | 数学证明自修改有益 | 计算成本不可行 |

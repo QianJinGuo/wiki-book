@@ -19,6 +19,16 @@ WBench 对 20 个前沿模型（包括 Kling 3.0, HY-World 1.5, Genie 3 等）�
 
 ## 评测框架设计
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
+
 WBench 的核心设计理念是"舞台"与"剧本"分离：
 
 > 世界模型评测框架 = 世界定义 (World Definition) + 指令集 (Instruction Set) + 统一交互接口 (Unified Interaction Interface) + 评测套件 (Evaluation Suite)

@@ -28,6 +28,15 @@ source_url: https://mp.weixin.qq.com/s/LIjNSJOVlsYoqnzoxjRYaw
 - ###  核心内容
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 **重复 CRUD 是"复制粘贴综合症"的典型症状。** 文章指出了一个在 FastAPI/SQLAlchemy 项目中极其普遍的问题：每个实体（User、Product、Order）都维护一个 Repository 类，其中 save、get、update、delete 的实现几乎完全相同，唯一变化的是实体类型、ORM 模型类型和实体-模型映射三样东西。当业务逻辑需要修改时，开发者在8个仓库里改8遍，漏改一个就是 Bug。这是典型的 DRY（Don't Repeat Yourself）原则被忽视后的技术债累积。
 **泛型仓库模式的核心价值：类型安全 + 代码复用。** Python 的泛型（Generic Type）允许在 Repository 类级别定义与具体实体无关的 CRUD 逻辑，同时在实例化时通过类型参数保证类型安全。具体来说，BaseRepository 接受两个类型参数：实体类型（User、POrder 等）和 ORM 模型类型，实体-模型之间的映射通过 `_to_entity()` 和 `_to_model()` 方法注入。这使得 save、get、find_all、update、delete 这些逻辑只需写一次，在所有实体间共享。
 **"三个变化点"是整个模式的设计锚点。** 文章提炼出 Repository 层所有变化的来源只有三个：实体类型、ORM 模型类型、实体与模型的映射。这个三分法直接决定了泛型参数的数量（两个：Entity 和 Model）和抽象方法的数量（两个映射方法）。这是设计泛型系统时最重要的原则：先识别所有变化点，再把变化点作为参数暴露出来，不变化的部分作为共享逻辑保留。

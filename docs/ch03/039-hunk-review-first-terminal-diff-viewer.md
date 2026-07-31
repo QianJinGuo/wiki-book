@@ -12,6 +12,20 @@ Hunk 是 modem-dev 开源的终端 diff 查看器，专为 AI agent 生成的 ch
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### Review-first 设计理念
 
 Hunk 的核心差异化在于它不把 diff 当作纯文本来展示，而是当作一个 **review session**。这意味着：

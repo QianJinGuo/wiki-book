@@ -41,6 +41,21 @@ SSA 改变了这种扩展方式。
 这点非常重要，因为长上下文能力并不只是更大的提示词窗口。名义上的上下文窗口，告诉你模型最多能处理多少 token；而真正有效
 ## 相关链接
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)
 - [生产级 Agent 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md)
 

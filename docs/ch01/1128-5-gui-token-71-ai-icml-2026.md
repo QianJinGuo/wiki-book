@@ -50,6 +50,21 @@
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
 
 ## 实践启示
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
 2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
 3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现

@@ -9,6 +9,15 @@
 
 ## EmbodiSkill：诊断层——先判断"哪里"出了问题
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 四种反思类型（关键创新）
 Agent 失败后**先判断问题根源**，而不是无脑改技能 ：
 

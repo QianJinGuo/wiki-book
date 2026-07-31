@@ -12,6 +12,20 @@
 
 ## 技术架构
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 Monarch 将 PyTorch Monarch 引入 AMD Instinct GPU 的 ROCm 生态，扩展了单控制器模型到非 CUDA 环境。核心能力包括：
 
 - **弹性容错恢复**：动态从节点故障中恢复，无需停止整个训练任务

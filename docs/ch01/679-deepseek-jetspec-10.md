@@ -18,6 +18,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **DSpark**（DeepSeek）：面向高并发服务场景，通过因果递归状态的置信度调度验证，在 Qwen3-8B、AIME25 上将平均接受长度从 4.07 提升到 5.01
 - **JetSpec**（阶跃星辰）：面向低延迟场景，将因果性融入并行草稿头，在 MATH-500 上平均可接受 10.76 token，HumanEval 实现 7.12 倍加速，MT-Bench 实现 4.58 倍加速
 - **共同指向因果一致性**：当草稿生成足够便宜后，保留因果一致性让并行生成的 token 通过目标验证成为关键瓶颈

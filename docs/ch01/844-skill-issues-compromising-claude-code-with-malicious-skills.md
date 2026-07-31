@@ -7,6 +7,15 @@
 ## 核心要点
 - Published Time: Wed, 13 May 2026 16:58:06 GMT AI coding apps, such as Claude Code, codex, etc. are [becoming increasingly popular](https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Skill System Design Three Way Comparison](../ch04/271-skill.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.html)

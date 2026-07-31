@@ -16,6 +16,21 @@ Harness Handbook 的核心洞见：**问题不是缺少代码，而是缺少从 
 
 ## 三层结构（L1-L3）
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 | 层级 | 回答的问题 | 产出 |
 |------|-----------|------|
 | L1 · System Overview | 这个 harness 整体怎么运行？ | 架构、执行流、主要阶段、状态流 |

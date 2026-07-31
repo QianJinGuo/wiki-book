@@ -14,6 +14,15 @@ ModelExpress 是 NVIDIA Dynamo 团队开发的开源模型权重分发基础设�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **P2P RDMA 直连传输**：通过 NIXL (NVIDIA Inference Xfer Library) 实现 GPU 到 GPU 的直接权重传输，绕开对象存储、本地磁盘和主机内存，传输 DeepSeek-V4 Pro 权重 + JIT Kernel 缓存仅需 <10 秒
 - **运行时路径选择**：启动时探测可用能力，按 P2P RDMA → ModelStreamer → GPUDirect Storage → 默认加载器 的优先级自动选择最优路径，失败时安全回退
 - **VMM Arena 注册优化**：通过 CUDA Pluggable Allocator 将所有权重分配路由到单一 16 TiB 虚拟地址空间，NIXL 内存注册从每个 tensor 一次调用降为总共一次调用

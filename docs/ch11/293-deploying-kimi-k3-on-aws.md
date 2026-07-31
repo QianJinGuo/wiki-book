@@ -10,6 +10,18 @@
 
 ## Model Overview
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Kimi K3 is a 2.8 trillion parameter Mixture of Experts (MoE) model released by Moonshot AI on July 27, 2026. It features Kimi Delta Attention (KDA), Gated Multi Head Latent Attention (MLA), and a Stable LatentMoE framework. The model distributes its parameters across 896 specialist experts, activating only 16 per token (approximately 104B active parameters per forward pass). It supports a 1M token context window and native multimodal (text + vision) capabilities.
 
 ## Infrastructure Requirements

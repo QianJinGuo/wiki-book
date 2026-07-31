@@ -20,6 +20,21 @@
 
 ## 三大主线
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 1. 日志分析自主挖 Bug
 - 跨 3 个 Logstore 关联分析
 - 7 子命令 + git log 交叉验证

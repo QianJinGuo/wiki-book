@@ -8,6 +8,18 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - Gartner 分析师 Douglas Toombs 在悉尼 IT Infrastructure, Operations & Cloud Strategies Conference 上的核心判断：完全主权的云（数据本地化、算力本地化）只有中美两国能实现
 - 原因：只有美国和中国生产主权云所需的所有技术。其他国家的买家无法避免与外国供应商的关系
 - 美国云供应商虽声称产品能满足特定司法管辖区需求，但因为最终由美国公司所有，不可能保证完全主权

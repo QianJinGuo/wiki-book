@@ -28,6 +28,18 @@ User (终端用户: 医生 / 护士)
 
 ## 池模型 vs 专用模型
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 | 维度 | 池模型 (Pool) | 专用模型 (Dedicated) |
 |------|-------------|-------------------|
 | 资源共享 | 共享基础设施 | 每个租户独立资源 |

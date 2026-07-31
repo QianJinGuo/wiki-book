@@ -18,6 +18,15 @@ source:
 所以这周体验  「恒星AI旗下Starfilm」  的时候，我整个人是抱着"看你能整出什么花活"的心态上手的。结果……不夸张，从打开网页到生成一条带配乐的完整 AI 漫剧单集，我只用了不到1个小时。
 它给我的核心惊喜就一...
 ## 标签
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 - source/wechat
 ## 相关实体
 > 主题导航

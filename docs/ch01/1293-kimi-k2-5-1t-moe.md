@@ -10,6 +10,21 @@ Kimi K2.5（Moonshot AI）是 K2 之后的开源 1T MoE 升级版本，核心架
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 **1T MoE 的"一层路由"是与 DeepSeek-V3 路线完全不同的设计选择。** 传统 MoE（DeepSeek-V3 风格）路由发生在每一层，每个 token 独立选 expert，选中的子集被激活。K2.5 反其道而行：路由只发生在 attention 之后残差流出口的那一层，所有 1T 参数在 attention 阶段完整在线，残差流通过路由决定流向哪个 expert sub-network。这意味着 K2.5 物理上是稠密激活（1T 全在线），但语义上是稀疏路由（只有部分 expert sub-network 被残差流走通）。这是一个**用稠密计算换稀疏语义的架构选择**，推理成本不降但训练稳定性可能更好。
 
 **384 个 expert 是 k 均值聚类得到的簇，不是手工定义的 expert specialization。** 与 DeepSeek-V3 256 个 64 维 expert（每 token 选 top-k 个）不同，K2.5 把 token 表达聚成 384 簇，每簇对应一个 expert sub-network，路由本质上是 token → 簇的最近邻查询。这种设计的潜在优势：expert 边界由数据分布决定，不需要人为设定；专家之间互斥性更强（同一簇内 token 不会路由冲突）。潜在风险：聚类质量决定 expert specialization 上限，对冷门领域 token 可能被错分。

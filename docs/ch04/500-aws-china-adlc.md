@@ -20,6 +20,15 @@ Agent 与传统软件有三个本质差异，导致传统 QA 框架系统性失�
 
 ## ADLC：Agent Development Lifecycle
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 AWS 提出的六环节飞轮，核心原则是**"定义'好'排在动手构建之前"**：
 
 1. **定义评估标准** — 在写第一行 Prompt 之前，先明确"好"的定义

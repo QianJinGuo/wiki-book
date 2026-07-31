@@ -19,6 +19,15 @@
 > Factory 官方：https://factory.
 3. ai/news/missions-architecture
 ## TL;DR
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
 Factory 核心 agent 基础设施负责人 Luke Alvoeiro 的核心论点：**人类的注意力带宽已经成为软件工程的瓶颈**——前沿模型已经能并行处理 50 个任务，但即便最强的工程师同时也只能盯住 3-4 个 thread。
 4. Missions 是 Factory 针对这一不对称设计的多 agent 系统，目标是把工程师从「写代码」彻底搬到「项目管理 50 个 droid」。
 5. **值得抄作业的技术设计**：

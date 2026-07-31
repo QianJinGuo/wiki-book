@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 6.2KB | `entities/aderant-transforms-cloud-operations-with-amazon-quick.md`
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - Aderant 使用 Amazon Quick AI 能力统一搜索跨 6 个供应商系统的信息
 - 搜索时间加速 90%，文档处理加速 75-85%，研究时间减少 95%
 - 案例展示了 AWS Quick 在法律行业云运营中的实际应用

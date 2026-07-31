@@ -11,6 +11,16 @@ Today, we’re announcing a research preview of interaction models: models that 
 We train an interaction model from...
 
 ## Source
+
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
 - **URL**: https://thinkingmachines.ai/blog/interaction-models
 - **Author**: 
 - **Date**: 

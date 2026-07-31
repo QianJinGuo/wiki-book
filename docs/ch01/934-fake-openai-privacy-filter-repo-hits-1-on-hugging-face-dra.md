@@ -13,6 +13,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thehackernews-fake-openai-privacy-filter.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 这起事件是 AI 开源生态系统中供应链攻击的典型案例，具有多个值得深入剖析的维度：
 **1. Typosquatting + 信任溢出的组合攻击**
 攻击者使用了双重伪装策略：仓库名 `Open-OSS/privacy-filter` 与官方 `openai/privacy-filter` 仅一个字符之差，同时完整复制了官方 model card 的描述。这种攻击利用了 AI 社区对 OpenAI 品牌的信任溢出效应——用户在看到熟悉的产品名称和描述时，会默认通过安全审查。244,000 次下载量和 18 小时内的 #1 排名说明，Hugging Face 的Trending 算法本身助长了这一扩散。

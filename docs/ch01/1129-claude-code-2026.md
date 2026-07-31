@@ -24,6 +24,15 @@ Anthropic + Cerebral Valley 联合黑客松：用 Opus 4.7 + Claude Code，一�
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 **多 Agent 协作在医疗模拟领域的突破**：该项目展示了 Claude Managed Agents 在专业领域模拟的强大能力。通过将一个主治医师 Agent 与三个子 Agent（病人角色扮演/观察者评估/问诊复盘）协同工作，实现了复杂的医疗教学场景。
 
 **Opus 4.7 的临床推理能力**：选择 Opus 4.7 作为主治医师 Agent 的核心模型，体现了对模型在长程推理和临床判断能力上的信任。医疗场景需要精确的病史采集和临床推理，这对模型的思考链要求极高。

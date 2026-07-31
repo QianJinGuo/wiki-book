@@ -11,6 +11,15 @@
 - 第三方开发者被迫在 Apple 的"squircle"（圆角矩形）约束下工作 
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/913-20.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/094-ai.html)
 - [Www Referenceboard App](https://github.com/QianJinGuo/wiki/blob/main/entities/www-referenceboard-app.md)

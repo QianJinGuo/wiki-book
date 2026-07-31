@@ -15,6 +15,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？ 涉及agent领域的核心技术议题。
 ### 核心观点
 1. 0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？

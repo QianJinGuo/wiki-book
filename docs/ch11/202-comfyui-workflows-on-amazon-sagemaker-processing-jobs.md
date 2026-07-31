@@ -10,6 +10,18 @@
 
 ## 核心问题
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 企业多媒体资产创建（产品发布、季节性促销、营销素材）需要快速、可扩展的图像生成方案。ComfyUI 是强大的节点式 AI 图像生成工具，但本地运行无法满足企业规模化需求。
 
 ## 技术方案

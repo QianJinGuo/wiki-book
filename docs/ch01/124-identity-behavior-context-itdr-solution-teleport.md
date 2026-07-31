@@ -12,6 +12,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
 
 ## 相关实体
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 - [Identity Behavior & Context: ITDR Solution](ch01/124-identity-behavior-context-itdr-solution-teleport.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)

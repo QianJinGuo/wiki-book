@@ -12,6 +12,15 @@
 - 复用率低（没有利用项目已有的公共组件、工具函数、请求封装）
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [告别氛围编程基于 Harness 治理和 Sdd 的团队级 Ai 研发范式演进与实践](ch05/009-harness.html)
 - [Wow Harness V3 Governance Protocol](ch05/009-harness.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/050-openspec.html)

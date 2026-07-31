@@ -14,6 +14,15 @@ AI 辅助开发过程中关键信息停留在会话上下文中，难以形成�
 从"意图驱动"走向"规格驱动"是可实现企业私域规范化研发的路径之一。
 
 ## 关于 SDD 的认知
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 2025 年 9 月 GitHub 提出 Spec-Driven development 定义，认为 Spec 是一份代码行为准则的契约，成为工具和 AI 代理的代码生成、测试和验证所依赖的单一事实来源。
 ThoughtWorks 杰出工程师 Birgitta 提出 SDD 工具实践三种层次策略：规格优先（Spec-first）、规格锚定（Spec-anchored）、规格为源（Spec-as-source）。
 SDD 模式下的规格是一类具有明确性、可被验证、可演进、AI 可读的面向开发流程的技术性描述，是人类与 AI 之间的共同技术契约语言。规格核心内容包括企业级规格、领域级规格、项目级规格。

@@ -7,6 +7,15 @@
 ## 核心要点
 -
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/035-agent.html)
 - [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/738-chatgpt.html)
 - [Openai Three Voice Models Kill Simultaneous Translation](ch01/390-openai.html)

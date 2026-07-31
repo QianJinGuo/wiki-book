@@ -12,6 +12,15 @@
 
 ## 开源权重模型 vs 前沿模型策略
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Harrison Chase 披露 Nemotron-3-Ultra 在 DeepAgents 中加入 LangChain 优化后，内部基准达 **86% 准确率**（Claude Opus 87%），成本仅为 Opus 的十分之一。
 
 黄仁勋的策略：

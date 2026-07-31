@@ -12,6 +12,15 @@ LangChain Dynamic Subagents 让 Agent 通过编写 JavaScript 脚本（而非逐
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **核心替换**：Agent 用代码驱动 subagent 编排（写脚本 → 解释器执行 → 调度 subagent），替代逐轮工具调用
 2. **确定性保证**：循环不会漏项，分支不会走偏——编排逻辑固化到确定性代码，而非模型每步推理
 3. **六种编排模式**：Classify and Act / Fanout and Synthesize / Adversarial Verification / Generate and Filter / Tournament / Loop Until Done

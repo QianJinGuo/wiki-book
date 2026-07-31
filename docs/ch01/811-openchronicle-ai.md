@@ -21,6 +21,20 @@ GitHub: https://github.com/Einsia/OpenChronicle
 
 ## 深度分析
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 OpenChronicle 与 Chronicle 的本质分歧不在于"是否拥有记忆"，而在于**记忆的控制权属于平台还是用户**。Chronicle 将记忆锁在云端和付费墙之后，是产品能力层面的功能^。OpenChronicle 则将记忆视为数据层/基础设施——用户可以读、可以改、可以迁移，记忆边界不再受制于单一应用^。这一区分揭示了 AI Memory 赛道未来竞争的核心维度：不是"谁的记忆更好"，而是"谁拥有记忆的主权"。
 
 "记住你在干什么"比"记住你说了什么"具有指数级更高的上下文价值。传统 AI Memory 记住聊天内容，但 OpenChronicle 观察用户正在使用的应用（IDE/Notion/Figma），读取屏幕内容（代码/文档/界面），记录任务如何一步步推进^。实测中，全新对话里让 Claude 写 OpenChronicle 的 logo prompt——无记忆时 Claude 反问"OpenChronicle是什么"，有 OpenChronicle 时从其他软件的操作中直接检索项目信息一步给出结果^。这种任务级上下文重建能力，是对话级记忆无法提供的。

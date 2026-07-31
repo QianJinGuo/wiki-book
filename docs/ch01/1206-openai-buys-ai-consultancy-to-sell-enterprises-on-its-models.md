@@ -15,6 +15,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    TRAIN[训练] --> EVAL[评估]
+    EVAL --> DEPLOY[部署]
+    DEPLOY --> MON[监控]
+    MON -->|"回传"| EVAL
+```
+
+
 OpenAI buys AI consultancy to sell enterprises on its models 涉及agent领域的核心技术议题。
 ### 核心观点
 1. Title: OpenAI buys AI consultancy to sell enterprises on its models

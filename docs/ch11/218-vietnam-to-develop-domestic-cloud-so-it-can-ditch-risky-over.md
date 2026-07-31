@@ -7,6 +7,18 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads.md)
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - 越南政府发布 Decision 808/QD-TTg，要求建立国内云基础设施
 - 目标 2030 年实现政府工作负载全面迁移至国内云服务商
 - 减少对海外云运营商（AWS、Azure、GCP）的依赖，降低数据主权风险

@@ -12,6 +12,21 @@
 - 涉及公司：Cursor、Inception、GitHub Copilot→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
 
 ## 事件背景
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 据 Reuters 于周三报道，引用五位知情人士的消息，Microsoft 一直在悄悄接触 AI 初创公司，寻求收购或战略合作，以建立不依赖 OpenAI 的选择权。这一动向发生在 Microsoft 重写那份将两者绑定近十年合同的三周之后——该选择权已不再是理论可能。
 2026 年 4 月 27 日签署的修订协议产生了深远影响：结束了 Microsoft 对 OpenAI 模型的独家许可，允许 OpenAI 在 AWS 和任何其他云上销售，并取消了所谓的 AGI 条款——该条款原本会在 OpenAI 董事会宣布达到通用人工智能阈值时触发 Microsoft IP 权利的变更。
 Microsoft 保留了到 2032 年的 IP 许可、约价值 1350 亿美元的 27% 股份，以及新 OpenAI 产品的 Azure 优先部署条款。但它放弃的，用通俗的话说，是 OpenAI 将是 Microsoft 唯一需要的 frontier lab 这一隐含假设。

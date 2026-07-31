@@ -12,6 +12,20 @@
 
 ## 问题背景
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 在 GRPO 等组内归一化 RLVR 算法中，模型对同一 prompt 生成一组回答并计算相对优势。当组内全部正确或全部错误时，reward 方差为 0，优势消失——这些样本被称为 **ineffective samples**。这类问题在 RLVR 训练中非常普遍，简单题全部答对、难题全部答错，均消耗 rollout 成本却无学习信号。
 
 ## 核心设计

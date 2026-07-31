@@ -8,6 +8,15 @@
 AI 正在深刻重塑工程角色，承接组织部分编码责任的同时，将工作职责转向管理 AI 输出。
 
 ## 背景
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 根据软件平台 Harness 发布的《State of Engineering Excellence 2026》报告（调查了 700 名企业开发者和工程专业人员），AI 已默认成为工程工作流的组成部分，但团队在衡量生产力影响和技术投资回报方面面临挑战。
 
 ## 关键数据

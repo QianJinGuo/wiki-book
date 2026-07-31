@@ -41,6 +41,16 @@ Muse Image 支持多轮对话编辑，用户可以连续提出修改意见。例
 
 ## 深度分析
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 ### 1. LLM Controlled Generation：图像生成的技术范式转换
 
 Muse Image 的 Agentic 生成模式代表了图像生成领域从「模型中心」到「Agent 中心」的范式转换。传统扩散模型的工作流是文本编码 → 扩散采样 → 图像输出，整个过程对于用户来说是黑盒。而 Muse Image 的 LLM controlled generation 将图像生成变成了可解释的推理驱动过程：

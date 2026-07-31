@@ -14,6 +14,20 @@
 
 ## 核心内容
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### 视觉稿还原挑战
 
 - **设计意图理解** — AI需要理解设计师的创意和布局逻辑

@@ -21,6 +21,15 @@ SDB 是 LLM 随机输出与系统确定性写入之间的接口，论文将其�
 
 ## 三个正交维度
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 维度 | 核心问题 | 形式化来源 |
 |------|---------|-----------|
 | Coordination（协调） | 工作怎么拆分和组合？ | Hewitt Actor 模型 |

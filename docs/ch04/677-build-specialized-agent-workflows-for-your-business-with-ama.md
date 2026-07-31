@@ -20,6 +20,18 @@ In this post, we show how [Amazon Quick](<https://aws.amazon.com/quick>) can ser
 
 ## Solution overview
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 To address this challenge, we combine Amazon Quick and NVIDIA NeMo Relay. Amazon Quick gives business users a single conversational workspace for [structured data](<https://docs.aws.amazon.com/quick/latest/userguide/supported-data-sources.html>) and [unstructured enterprise knowledge](<https://docs.aws.amazon.com/quick/latest/userguide/knowledge-base-integrations.html>). Knowledge sources can include Amazon Simple Storage Service (Amazon S3), Google Drive, Microsoft SharePoint, Atlassian Confluence, and internal web content. In that workspace, users can connect to [over 100 pre-built action connectors](<https://docs.aws.amazon.com/quick/latest/userguide/supported-integrations.html>) to perform actions in [third-party systems](<https://docs.aws.amazon.com/quick/latest/userguide/action-connector-apis-supported-types.html>) such as Microsoft Outlook, Slack, Jira, and Asana. They can also invoke agentic workflow
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-specialized-agent-workflows-for-your-business-with-ama.md)

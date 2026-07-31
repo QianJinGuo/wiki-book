@@ -10,6 +10,20 @@
 OpenAI 发布官方 CLI 工具，允许开发者通过命令行直接调用 Codex 模型，无需 SDK。
 
 ## Key Points
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 - OpenAI Codex 团队发布官方 CLI，支持 `curl` 式命令行调用
 - 替代复杂的 SDK 包装，降低调用门槛
 - 适用于快速测试和脚本化工作流

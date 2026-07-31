@@ -14,6 +14,18 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore

@@ -10,6 +10,20 @@ DeliAutoResearch SKILL 是 DeepSeek 研究员陈德里（Deli Chen）搭建的**
 
 ## 核心贡献一：三轴统一分类框架
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 首个同时覆盖大语言模型持续学习与自我改进的分类框架，三个相互正交的维度：
 
 1. **更新什么**：知识、技能、对齐能力还是推理能力

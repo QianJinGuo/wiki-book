@@ -8,6 +8,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 **1. Daybreak 的市场定位：不是替代现有安全工具，而是「上车」企业的 AI 安全战略**
 文章引用 Gartner 分析师 John Watts 的关键判断：「我们相信它（Daybreak）将作为现有工具的补充，而非完全替代」。这个定性非常重要——OpenAI 推出 Daybreak 的目的不是做一个新的 Splunk 或 CrowdStrike，而是**将 AI 安全能力嵌入企业已有的安全工作流**。
 从市场竞争角度看，OpenAI 的核心优势不是安全工具的专业深度（这是 CrowdStrike、 SentinelOne 等专业厂商的领地），而是： (a) 能够利用 GPT-4o、Codex 等前沿模型的推理和代码能力；(b) 拥有与主流云平台（Cloudflare、Cisco）的合作伙伴关系，可以触达企业边界。这种「AI 原生 + 渠道合作」的模式，与 Anthropic 的 Mythos 形成直接竞争，但定位有所不同。

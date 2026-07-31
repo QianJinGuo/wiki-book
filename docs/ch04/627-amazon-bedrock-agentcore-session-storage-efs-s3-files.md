@@ -21,6 +21,20 @@ Managed Session Storage 适合需要按用户隔离的对话上下文和会话�
 
 ## 使用场景
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 AgentCore 的数据持久化文件系统在以下场景中尤为关键：
 
 - **长周期 Agent 任务**：跨多轮对话维护 Agent 的内部状态和进度，不会因会话中断而丢失数据

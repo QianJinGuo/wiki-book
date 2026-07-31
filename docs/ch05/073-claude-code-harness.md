@@ -18,6 +18,15 @@
 
 ## 实践启示
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **采用"Learning by Building"学习 Agent 开发**：与其被动阅读源码或文档，不如设定一个复刻目标，在实现过程中遇到的具体问题会倒逼你深入理解每个模块的设计原理。
 
 2. **优先掌握 Agentic Loop 和 Tool 接口设计**：这两个模块是 Agent Harness 的心脏，决定了 Agent 与外界交互的基本模式。建议在前几个功能点就聚焦于此，而非被周边功能（如 UI、配置系统）分散注意力。

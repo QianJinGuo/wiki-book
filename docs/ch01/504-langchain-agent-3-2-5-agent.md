@@ -14,6 +14,15 @@ LangChain 的 GTM Agent 案例展示了 Agent 落地的正确路径：从真实�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 痛点驱动：从真实业务问题出发
 
 LangChain 销售团队的日常工作流暴露了严重的效率瓶颈：

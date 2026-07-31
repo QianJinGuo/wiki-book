@@ -10,6 +10,18 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 随着生成式 AI 工作负载从实验阶段进入生产规模化部署，LLM 推理的弹性成为关键挑战。本文系统梳理了在 Amazon Bedrock 上实现生产级推理弹性的五种渐进式模式，从原生跨区域推理到基于 LLM Gateway 的多模型编排，涵盖重试、回退、限流、断路器、多模型路由等核心策略。这些模式已在 AWS 官方博客中通过可运行的 GitHub 示例代码验证。
 
 ## 核心要点

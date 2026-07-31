@@ -23,6 +23,21 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 LLM Wiki、Obsidian-Wiki 和 GBrain 代表了 Agent 时代知识管理的范式转变：从"静态知识库检索"到"动态知识自组织"的演进。传统 RAG 模式让模型"带着书本进考场"，每次查询都需要从海量文档中检索相关内容；而 Skillify 范式则让模型"把书读透并整理成笔记"，知识被编译为可累积、可复用、可自我进化的结构化资产。
 
 Andrej Karpathy 的 LLM Wiki 三层架构（Raw Sources → Wiki → Schema）实现了知识闭环：摄入阶段将原始资料转化为结构化页面并更新交叉引用；查询阶段先定位相关 Wiki 页面再综合出带引用的答案；维护阶段由 LLM 定期进行健康检查，识别矛盾、清理过时内容、补全缺失链接。这种设计将知识的"记账"工作（更新交叉引用、保持摘要最新）交给 LLM，避免了人类因维护负担增长而放弃 Wiki 的困境。

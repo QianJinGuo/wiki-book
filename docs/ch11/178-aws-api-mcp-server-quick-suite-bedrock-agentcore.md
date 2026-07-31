@@ -6,6 +6,18 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - 技术主题：Bedrock Agentic AI 应用实践
 - 平台：AWS Bedrock
 - 来源：AWS Machine Learning Blog

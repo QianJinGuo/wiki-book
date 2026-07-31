@@ -14,6 +14,15 @@ LLM 把记账接过去了，wiki 才能持续被维护。Karpathy 关联到 Vann
 
 ## 三层架构
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 | 层 | 角色 | 内容 |
 |---|------|------|
 | Schema | 行为配置 | AGENTS.md / CLAUDE.md：定义 wiki 组织方式、页面类型、工作流 |

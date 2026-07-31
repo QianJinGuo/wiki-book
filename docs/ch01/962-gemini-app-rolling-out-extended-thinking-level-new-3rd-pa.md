@@ -25,6 +25,21 @@ Meanwhile, the Gemini app is preparing to add more integrations with third-party
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **在Gemini App中使用Fast（Gemini 3 Flash）或3.1 Pro时，主动切换到Extended模式**验证复杂推理任务（如代码审查、多步骤比较分析）的质量差异，观察是否值得牺牲响应延迟。
 
 2. **创意团队应提前规划Canva+Gemini工作流**，例如将设计需求描述模板化，以便在正式上线时快速迁移现有创意请求到Gemini驱动的自动化流程。

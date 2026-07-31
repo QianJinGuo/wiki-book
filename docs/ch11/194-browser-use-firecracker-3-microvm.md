@@ -10,6 +10,18 @@ browser-use 团队通过 Firecracker microVM 在 EC2 上运行云端浏览器隔
 
 ## 核心架构决策
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 从传统容器方案迁移到 Firecracker unikernel 的关键原因：
 - **嵌套虚拟化性能**：EC2 上的 Firecracker 支持嵌套 VM，性能损耗可控
 - **安全隔离**：每个浏览器实例运行在独立 microVM 中，强隔离

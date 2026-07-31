@@ -7,6 +7,20 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)
 
 ## Summary
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 Amazon launched Supply Chain Services (ASCS), opening its logistics network to businesses of all sizes. The service allows any business to use Amazon's freight, warehousing, and delivery capabilities.
 
 ## Key Points

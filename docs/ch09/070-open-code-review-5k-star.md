@@ -17,6 +17,21 @@
 
 ## 架构设计
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 确定性工程层
 
 代码评审中存在多个「不能出错」的环节，由工程逻辑而非语言模型保证：

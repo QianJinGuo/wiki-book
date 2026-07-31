@@ -14,6 +14,18 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Amazon Bedrock AgentCore 优化推出的 Insights 功能填补了 AI Agent 生产环境可观测性的关键空白 —— 行为性静默故障。这类故障在基础设施层面没有报错，但导致业务逻辑执行错误（如订单未修改、库存误报、审批跳过）。Insights 通过 trace 聚类、根因分析和用户意图分析，将零散 trace 转化为可操作的故障模式排名，帮助开发者从被动排查转向主动预防。
 
 ## 核心要点

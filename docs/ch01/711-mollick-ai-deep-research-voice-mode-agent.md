@@ -16,6 +16,21 @@
 
 ## 模型分层
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 每个系统都有三层：
 - **快速模型**（Claude Sonnet/GPT-4o/Gemini Flash）：头脑风暴、快速问答
 - **强力模型**（Claude Opus/o3/Gemini Pro）：分析/写作/研究/编码等重要任务

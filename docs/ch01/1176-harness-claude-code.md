@@ -15,6 +15,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # 从 Harness 到动态工作流：Claude Code 多智能体任务编排的新范式

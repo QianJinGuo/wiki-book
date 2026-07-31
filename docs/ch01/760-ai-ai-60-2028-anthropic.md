@@ -14,6 +14,21 @@ AI自己造AI，概率60%，2028年底前！Anthropic联创坐不住了
 
 ## 技术分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ---
 title: AI自己造AI，概率60%，2028年底前！Anthropic联创坐不住了
 source: wechat

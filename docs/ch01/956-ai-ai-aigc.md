@@ -10,6 +10,21 @@
 - 量子位公众号发布
 
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - [腾讯员工公寓曝光 竟是这样的布置](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯员工公寓曝光-竟是这样的布置.md)
 - [Aiaigc Summit Guest Lineup](../ch04/528-aiaigc.html)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)

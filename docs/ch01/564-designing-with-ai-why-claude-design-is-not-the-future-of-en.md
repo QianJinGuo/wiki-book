@@ -14,6 +14,21 @@ Penpot 的这篇分析文章系统性地拆解了 Claude Design 作为企业设�
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### Claude Design 的能力边界
 
 Claude Design 擅长的场景：

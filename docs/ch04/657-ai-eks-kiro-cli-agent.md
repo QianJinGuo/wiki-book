@@ -16,6 +16,15 @@ AWS Kiro-cli 结合 Arm MCP Server 与 Kiro Powers，让 AI Agent 自主执行 E
 
 ## Kiro-cli 架构
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 Kiro-cli 是 AWS Kiro IDE 的命令行版本，结合 Arm MCP Server（嵌入 Arm 架构知识）和 Kiro Powers（专用工具包），提供：
 - **migrate_ease_scan**：扫描代码兼容性问题
 - **knowledge_base_search**：搜索 Arm 文档获取迁移指导

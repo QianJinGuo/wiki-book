@@ -18,6 +18,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **注意力机制瓶颈**：Transformer 的 O(n²) 计算复杂度导致长上下文时性能下降，Flash Attention、GQA 等优化只是缓解而非消除
 - **注意力坍塌**：上下文越长，模型注意力越集中在最近 token，早期上下文处于惰性状态，"Lost in the Middle" 现象普遍存在
 - **有效上下文天花板**：最大上下文长度与有效上下文长度是两回事，超过 180-200K 后输出质量明显下滑

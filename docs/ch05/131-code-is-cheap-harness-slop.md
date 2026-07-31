@@ -14,6 +14,21 @@
 
 ## 大模型的两个底层事实
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 无岳从第一性原理出发，指出两个 LLM 底层事实，Harness 方法论必须直接针对它们设计：
 
 ### 事实 1：大模型不是确定性函数

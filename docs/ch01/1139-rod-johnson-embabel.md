@@ -20,6 +20,20 @@ Rod Johnson 回归：Embabel 与「最后一波由人类选择的框架」 涉�
 3. v=UcvxYltiS7E
 > 编译：宇琪 · 策划：Tina
 ## 一句话定位
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 **Rod Johnson（Spring 创造者）2026 年再次创业，做 Embabel —— 一个面向企业 AI Agent 的 Kotlin/Java 开源框架（Apache 2.
 4. ** 核心用 **GOAP（Goal-Oriented-Action-Planning）算法**（来自游戏 NPC）做**确定性规划**，让 LLM 嵌入可控、可解释、可审计的业务流程。
 5. > "这可能已经是'最后一代由人类主动选择的框架'了。

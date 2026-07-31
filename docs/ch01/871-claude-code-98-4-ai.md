@@ -12,6 +12,15 @@
 Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）系统性分析了 Claude Code v2.1.88 版本 51.2 万行 TypeScript 源码：
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/237-claude-md.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/078-claude-code.html)
 - [Code Review Graph](ch01/833-code-review-graph-claude-code-6-8-token.html)

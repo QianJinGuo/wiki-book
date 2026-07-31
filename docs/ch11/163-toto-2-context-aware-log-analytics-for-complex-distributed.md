@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 7.4KB | `entities/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 - Toto 2 - 时间序列预测模型族（4M到2.5B参数）
 - Log analytics 领域创新 - 首个证明可扩展性的TSFM家族
 - 零样本泛化能力强 - 未在任何公共预测数据上训练，却主导多个基准测试

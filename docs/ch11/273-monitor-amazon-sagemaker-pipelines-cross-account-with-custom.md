@@ -8,6 +8,18 @@
 
 ## 核心内容
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 本文来自 AWS Machine Learning Blog，作者 Giorgio Pessot (AWS Professional Services ML Engineer)。文章介绍了一套用于跨 AWS 账户和区域集中监控 SageMaker Pipelines 的无服务器事件驱动解决方案，基于 CloudWatch 自定义仪表盘实现统一可观测性。
 
 核心架构采用 **Hub-and-Spoke（中心-辐射）模型**：

@@ -12,6 +12,18 @@
 - 开箱即用内置 Browser Run、Email、自定义工具扩展等能力 
 
 ## 深度分析
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 1. **"脑手分离"架构重新定义 Agent 基础设施边界** — Anthropic 将 Claude Managed Agents 的核心推理循环保留在自有平台，而将代码执行沙箱完全委托给 Cloudflare。这种"decoupling the brain from the hands"的模式让开发者既能利用 Claude 强大的推理能力，又可掌控执行环境的安全与合规策略。这标志着 AI Agent 基础设施开始走向专业化分工：模型层与运行时层分离各自优化。
 2. **轻量级 isolate 沙箱解决 Agent 大规模部署成本困境** — 传统 microVM 每个 Agent 都需要独立完整虚拟机，资源消耗大、启动慢、成本高。Cloudflare 的 V8 isolate 方案允许在单个 VM 上并发运行数千个隔离的 Agent 上下文，毫秒级启动。这为"每个客户运行数十个 Agent、每个员工同时运行数十个 Agent"的规模化场景提供了经济可行的技术路径。
 3. **零信任出站代理将安全边界延伸到 Agent 执行层** — 通过可定制的出站代理动态注入凭证（而非硬编码在 Agent 环境中），结合服务级别 Allowlist 和元数据驱动的细粒度策略，实现了对 Agent 外部交互的全程可观测与控制。这一设计将 Cloudflare 在网络安全领域积累的零信任能力首次系统性地引入 AI Agent 安全框架。

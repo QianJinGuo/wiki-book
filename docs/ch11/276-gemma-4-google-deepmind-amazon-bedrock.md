@@ -10,6 +10,18 @@
 
 ## 背景
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 2026-06-15 Amazon Bedrock 上线 Gemma 4 系列。Gemma 4 由 Google DeepMind 构建、Apache 2.0 许可发布，是"智能密度（intelligence-per-parameter）"导向的开源权重家族。
 
 ## 模型规格

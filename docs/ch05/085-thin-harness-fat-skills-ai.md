@@ -10,6 +10,15 @@ AI应用有两个完全不同的空间：Latent 空间和 Deterministic 空间�
 
 ## Thin Harness, Fat Skills 架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### Fat Skills（Markdown 技能文件）
 
 技能文件是永久升级资产，随使用自动复合进化。每次运行流程：运行 Skill 得到结果 → 判断质量 → 固化好的结果到 Skill 文件 → 下次使用时复合知识。新模型发布时，所有 Skill 自动受益，因为 Skill 是结构化知识而非硬编码判断。铁律：同一个问题问两次即失败——第一次问模型，第二次必须固化到 Skill 文件 。

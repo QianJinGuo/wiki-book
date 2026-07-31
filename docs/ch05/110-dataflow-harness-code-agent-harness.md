@@ -14,6 +14,15 @@ DataFlow-Harness 论文将用户自然语言意图到生产平台原生流水线
 
 ## 核心消融发现
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 | 配置 | 端到端通过率 | 成本 | 延迟 |
 |------|:----------:|:----:|:----:|
 | Free Script（自由脚本） | 91.7% | — | — |

@@ -14,6 +14,20 @@ LFM2.5-230M 是 Liquid AI 发布的 230M 参数基础模型，定位于边缘设
 
 ## 核心指标
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **参数量**：230M
 - **推理速度**：Galaxy S25 Ultra 213 tok/s（解码）, Raspberry Pi 5 42 tok/s
 - **架构**：基于 LFM2（SSM 混合架构）

@@ -18,6 +18,15 @@ Boris Cherny （Claude Code 负责人）：
 
 ## 演进三阶段
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 年份 | 范式 | 核心问题 |
 |------|------|----------|
 | 2024 | Prompt Engineering | 一句话怎么问得好 |

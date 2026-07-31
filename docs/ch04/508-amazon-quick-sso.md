@@ -79,6 +79,18 @@ IAM Identity Center 支持通过 SCIM 协议与外部 IdP 自动同步用户和�
 
 ## **一、Quick Web 接入飞书（概述）**
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Quick Web 使用 IAM Identity Center 原生集成方式，与飞书的对接分两部分：将飞书配置为 IAM Identity Center 的外部 IdP，以及将 Quick 账号与 IAM Identity Center 关联。
 
 **第一步：在 IAM Identity Center 中配置飞书为外部 IdP**

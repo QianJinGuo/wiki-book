@@ -8,6 +8,18 @@
 
 ## 概览
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 AWS 官方博客发布的 WordPress 大规模交付工程实战文档，针对**高流量 + 强攻击面**场景，系统拆解 CloudFront 缓存分层、WAF 路径规则、Cookie 处理三个最棘手的工程问题。每个配置项都给出具体缓存键策略 + TTL 推荐 + WAF 规则模板。
 
 ## 三个核心工程问题

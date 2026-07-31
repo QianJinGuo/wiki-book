@@ -9,6 +9,20 @@ Hermes Agent 是 **Nous Research** 开源的自主演式 AI Agent 框架，GitHu
 核心思路：一个部署在你自己设备上的 AI Agent，**用得越久越强**，拥有自我进化的学习循环、记忆机制、40+ 聊天平台接入。
 
 ## Key Facts
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 | Fact | Detail |
 |------|--------|
 | 开发商 | Nous Research |

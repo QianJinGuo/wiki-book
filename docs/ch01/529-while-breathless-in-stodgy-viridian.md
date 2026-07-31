@@ -15,6 +15,21 @@
 随着AI规模持续扩大，基础设施的可持续性将从nice-to-have变成regulatory requirement（监管要求）。
 
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 ### 语言模型的本质：行为即语料的镜像
 Chomsky在1957年提出"Colorless green ideas sleep furiously"这个句子，用以证明句法的合语法性与语义无关。任何英语母语者都能判断这句话合乎语法，尽管它完全不知所云——这与"Furiously sleep ideas green colorless"形成鲜明对比，后者在语法结构上是错误的。
 本文作者基于此设计了一个思想实验：用纯无意义句子组成的语料库训练语言模型。结果不出所料，模型只能生成符合语法但毫无意义的文本。这揭示了语言模型最根本的特征：**模型的行为是对其训练语料的映射**。

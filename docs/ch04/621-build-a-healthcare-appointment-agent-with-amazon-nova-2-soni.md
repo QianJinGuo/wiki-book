@@ -12,6 +12,21 @@ Amazon Nova 2 Sonic 的 speech-to-speech 模型 + Bedrock AgentCore 无服务器
 
 ## 架构设计
 
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
+
 - **前端**：React 浏览器界面，WebSocket 双向音频流
 - **认证**：Amazon Cognito + SigV4 签名
 - **Agent Runtime**：Amazon Bedrock AgentCore（无服务器容器部署）

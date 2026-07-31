@@ -8,6 +8,15 @@
 
 ## 相关实体
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch01/223-rag.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](../ch01/1091-deepseek.html)
 - We Tested DeepSeek V4 Pro and Flash Against Claude

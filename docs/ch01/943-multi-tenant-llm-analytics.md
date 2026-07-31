@@ -14,6 +14,15 @@ LLM 是概率生成器，不是确定性策略引擎。即使连续一万次正�
 
 ## 三层架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### Layer 1: 完整性保护的请求签名（API 入口）
 
 每个 API 调用通过 AWS SigV4 签名，将 Tenant ID、Business ID、Admin ID 加密绑定到调用者凭证。修改任何值立即失效签名。验证通过后，三个 ID 拼接为复合会话键，锚定后续所有操作。

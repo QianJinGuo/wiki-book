@@ -16,6 +16,20 @@
 
 ## 三层架构
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 算力风洞将 AI Native 的能力拆解为三个递进的层次，形成"学习—验证—进化"的完整闭环：
 
 ### 认知层：双源学习

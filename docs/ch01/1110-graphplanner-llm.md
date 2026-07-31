@@ -29,6 +29,15 @@ GARNet 将 query node、response node、LLM-role node 以及 accuracy-cost edge 
 
 ## 训练与实验
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 GraphPlanner 将 workflow generation 建模为 Markov Decision Process，使用 PPO 强化学习训练。奖励函数同时考虑 task utility（回答正确性）与 computational cost（每步调用成本），通过超参数 α 控制 accuracy-cost trade-off。学到的不是固定工作流模板，而是面对不同 query 时自适应决定规划深度的动态策略。
 
 实验覆盖 14 个任务、6 个领域（Math、Code、Commonsense Reasoning、World Knowledge 等），在 Phase 2（自由生成 workflow）中相比最强 baseline 提升约 9.3% 平均准确率。在 out-of-domain 任务（LogicGrid、MGSM、CommonGen）上取得 78% 平均准确率，优于 GraphRouter、RouterDC、Router-R1 等 baseline。同时支持 Inductive（不依赖历史交互，轻量部署）和 Transductive（利用历史 memory，更高性能）两种推理模式。

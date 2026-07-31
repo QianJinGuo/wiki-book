@@ -14,6 +14,21 @@
 
 ## Relative Adoption Metrics（RAM）
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Interconnects 用 RAM 追踪模型：标准化相对于同尺寸类中同类模型的下载量。RAM > 1 意味着有望成为历史下载量前 10 的模型。
 
 关键发现：

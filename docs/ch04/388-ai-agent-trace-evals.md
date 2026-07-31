@@ -12,6 +12,20 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 1. AI Agent 落地的三大难题：稳定性（相同输入不同输出）、成本归因（无法追踪 Token 去向）、效果评估（缺乏可复现的基准）
 2. "Trace 即 Evals" — Agent 的每次执行都应产生完整执行轨迹，轨迹本身就是评估数据
 3. Prompt Engineering → Context Engineering → Harness Engineering 的演进路径

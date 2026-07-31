@@ -21,6 +21,21 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ml-intern 的出现标志着 LLM Agent 从"辅助人类"向"自主完成完整工程任务"的质变。传统 AI 辅助工具大多聚焦于代码补全或单点建议，而 ml-intern 给定一个训练目标后，能够自主完成从文献调研到模型发布的完整 ML 工作流。这种端到端的自主能力意味着研究者和工程师可以将精力集中在问题定义和结果评估上，而把重复性的文献检索、数据集搜索、训练脚本编写、集群提交和结果诊断等工作交给 Agent 完成。
 
 三阶段工作流（Research → Plan & Validate → Implement）的设计体现了对 ML 工程任务的深刻理解。Research 阶段不只是简单的文献搜索，而是遍历引用图谱、阅读方法章节，构建对问题空间的系统性认知。Plan & Validate 阶段会同时考虑数据集质量、可用算力和任务可行性，而非盲目开始训练。Implement 阶段通过 HF Jobs 提交到 GPU 集群后，Agent 会持续监控 reward 曲线，诊断失败原因，并在必要时自动重训。这种持续闭环迭代的思路避免了"一次训练，结束"的一次性思维。

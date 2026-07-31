@@ -10,6 +10,21 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clinereleasesopen-sourceagentruntimesdk.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
 ### SDK 架构的分层设计
 Cline SDK 采用了清晰的分层 TypeScript 架构： `@cline/shared` 提供基础类型和工具，`@cline/llms` 统一封装多模型提供商（Anthropic、OpenAI、Google、AWS Bedrock、Mistral、LiteLLM 及任意 OpenAI 兼容端点），`@cline/agents` 运行无状态的 agentic loop（迭代、工具编排、事件发射），`@cline/core` 管理有状态的编排（session 生命周期、持久化、配置发现）。这种分层使得切换模型提供商仅是配置变更，而非代码改动。
 

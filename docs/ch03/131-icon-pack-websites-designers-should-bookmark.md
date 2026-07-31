@@ -8,6 +8,16 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icon-pack-websites-designers-should-bookmark.md)
 
 ## Notes
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
 - Value: 7/10, Confidence: 8/10
 
 ## 相关实体

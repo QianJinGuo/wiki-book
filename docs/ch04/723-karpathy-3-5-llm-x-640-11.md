@@ -13,6 +13,20 @@
 
 ## 课程结构
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 | 阶段 | 时长 | 核心内容 |
 |------|------|---------|
 | 预训练 Pretraining | 00:01→00:42 | 数据来源、Tokenization、神经网络结构、GPT-2 训练推理、Llama 3.1 基础模型 |

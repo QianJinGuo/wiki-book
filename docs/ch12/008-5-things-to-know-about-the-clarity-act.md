@@ -7,6 +7,15 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clarity-act-5-things.md)
 
 ## 核心要点
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - value=7, confidence=8, product=56
 - Timely overview of CLARITY Act
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clarity-act-5-things.md)

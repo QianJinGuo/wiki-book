@@ -15,6 +15,20 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 Claude Code Team 10 Tips Boris Data派Thu 涉及agent领域的核心技术议题。
 ### 核心观点
 1. 这是 Boris 在 X 上**第二次**公开的 Claude Code 使用技巧——这次是来自 Claude Code **团队内部**的 10 个技巧，干货满满。

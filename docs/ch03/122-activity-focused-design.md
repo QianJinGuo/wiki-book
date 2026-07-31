@@ -13,6 +13,15 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 Activity-Focused Design 的核心价值在于将设计视角从"用户是谁"转向"用户做什么"。传统以人口统计或功能为中心的设计往往忽略用户达成目标的实际过程，而活动导向设计则将**活动**（Activity）作为分析的基本单元，关注人们为实现目标而采取的行动及其方式。
 
 **Goal / Activity / Task 三层模型**是该方法的基础框架：

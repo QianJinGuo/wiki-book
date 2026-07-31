@@ -16,6 +16,20 @@
 > "能拿自己的产品做实验，这件事抬升了你能想象出来的下个版本的天花板。" 
 
 ## PM 自己开的三个 Agent
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 1. **数据分析 agent**（Adoption analytics）—— 接进内部数据库，配了理解数据 schema 的 skill，带 memory，跑过的发现沉淀，下一轮在上一轮基础上推进
 2. **开发者舆情监控 agent**（Developer sentiment monitoring）—— 带内置 web search，按域名清单扫开发者反馈，fan-out 到多个 agent 并行
 3. **Demo 构建 agent**（Demo building）—— 接进 GitHub 仓库、品牌素材、活动 deck，生成会议版/客户版 demo

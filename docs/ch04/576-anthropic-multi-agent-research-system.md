@@ -12,6 +12,15 @@
 
 ## Why it matters for this vault
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 `wiki-evolver` 虽然不是纯多 agent 系统，但它也是 orchestration system。它的评估要避免把"固定步骤完全一致"当成唯一正确性标准，而应允许不同路径得到同样有效的 durable outcome 。
 
 ## 深度分析

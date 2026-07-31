@@ -21,6 +21,15 @@ Browser Harness 是一个自愈型浏览器 Agent 框架，基于 Chrome DevTool
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 Browser Harness 的设计哲学体现了"最小化抽象"这一核心理念。传统浏览器自动化工具（如 Playwright、Selenium）构建了厚重的封装层，预设了严格的执行轨道（rails），这虽然在测试场景下提供了稳定性，但严重限制了 LLM 的推理自由度。Browser Harness 选择通过 WebSocket 直连 CDP（Chrome DevTools Protocol），只做最薄的桥接——Daemon 进程管理会话和通信，run.py 加载预置的 helpers 工具。这种架构让 Agent 能够获取页面的底层信息，甚至在需要时直接注入 JavaScript 执行原始 CDP 命令。
 
 自愈机制（Self-Healing）是 Browser Harness 最具颠覆性的创新。当 Agent 发现 helpers.py 中缺少某个函数（如 `upload_file()`）时，它不会报错退出或向用户求助，而是读取当前 helpers 代码，理解现有函数的编写模式，然后在文件中实时添加新函数并继续执行任务。这一机制使得 Browser Harness 本身成为一个可进化的基础设施——Agent 在完成目标的过程中同时扩展了工具箱。mid-task 编辑能力意味着框架的边界不再是固定的，而是随着任务需求动态生长的。

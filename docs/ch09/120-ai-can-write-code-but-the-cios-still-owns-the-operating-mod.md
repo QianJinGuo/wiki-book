@@ -9,6 +9,15 @@
 - AI Can Write Code but CIOs Own the Operating Model
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Ai Is Writing More Code Your Ci Pipeline](../ch01/827-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.html)
 - [From System Of Record To System Of Intelligence](../ch01/252-from-system-of-record-to-system-of-intelligence.html)
 - [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1148-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)

@@ -7,6 +7,15 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/temporarily-disabling-new-user-registrations.md)
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 来自 newsletter 的高质量技术文章
 
 ## 深度分析

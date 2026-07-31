@@ -10,6 +10,18 @@
 
 ## 核心问题
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 中国开发团队访问海外 Amazon Bedrock 时面临三大挑战：
 
 1. **网络体验不稳定** — 国际出口带宽、延迟、丢包不可控，流式补全和 Agent 多轮推理对链路质量敏感

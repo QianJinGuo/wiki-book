@@ -12,6 +12,21 @@ Mistral 于 2026 年 6 月发布 OCR 4 模型，在文档智能领域达到 SOTA
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 结构化文档理解，而非简单文字提取
 
 OCR 4 的根本性突破在于输出的是 **结构化文档表示**，而非纯文本：

@@ -14,6 +14,14 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 - **量化压缩**：Wafer 使用 AMD 自有的 Quark 工具，将 GLM 5.2 权重从 BF16 压缩为 MXFP4，GSM8K 精度仅从 96.5% 降至 95.5%，几乎无损
 - **引擎选择**：在 vLLM、ATOM、sglang 中选择了 sglang，因为前两者要么抵消量化收益，要么在长文本场景下输出走样
 - **投机解码修复**：MTP 头权重命名冲突导致单流吞吐低，修复后吞吐提升近 3 倍；另一个 CUDA 头文件引用问题通过一行编译保护解决

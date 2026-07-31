@@ -14,6 +14,20 @@ d-OPSD（On-policy Self-distillation for Diffusion LLMs）是由马普所联合�
 
 ## 关键问题：参考解幻觉
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 现有自回归LLM的OPSD采用将参考解作为特权信息加入教师模型prompt的范式，这会产生"参考解幻觉"——学生模型在蒸馏学习中默认"参考解"存在，无法给出正确答案。
 
 ## 四大创新

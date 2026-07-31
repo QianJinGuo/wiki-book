@@ -10,6 +10,15 @@
 
 ## 核心架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 该系统采用 **多塔神经网络（Multi-Tower NN）** 架构，包含四个专用塔：
 
 - **Sequence Tower**：使用 2 层 GRU 处理客户产品采用序列，捕捉时序模式

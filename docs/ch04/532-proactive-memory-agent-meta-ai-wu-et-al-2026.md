@@ -16,6 +16,20 @@
 
 ## 架构设计：双阶段记忆干预
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 论文提出了一个与 Action Agent 并行运行的独立 Memory Agent，核心架构分为两个阶段：
 
 ### Phase 1：记忆管理（Memory Management）

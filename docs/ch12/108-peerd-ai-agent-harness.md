@@ -10,6 +10,15 @@ peerd 是第一个完全运行在浏览器中的 [AI Agent Harness](https://gith
 
 ## 架构创新
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 peerd 的核心设计决策是**将浏览器本身作为运行时和安全模型**，而非在浏览器之上构建额外的隔离层：
 
 - **V8 isolates** 提供沙箱隔离

@@ -40,6 +40,15 @@ AI 智能体上线后最大的挑战是效果黑盒：它跑得好不好？哪�
 
 ## 第 3 来源 — 阿里云云原生（2026-07-13）
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 阿里云云原生公众号在 AgentTeams 正式发布后的深度架构解读，从企业级运行视角补充了如下架构细节：
 
 - **四层架构全景**：入口层（AgentTeams 客户端/IM 集成/HTTP 服务化接入）→ Agent Identity（IdP/SSO 用户体系透传）→ Agent Team（按职能编队，TL Agent 调度，引擎热插拔）→ 统一 AI 资产管理（Model/Skill/MCP Server/Worker Agent 模板，BYOC 自主可控）

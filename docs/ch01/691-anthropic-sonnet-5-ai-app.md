@@ -14,6 +14,15 @@ Anthropic深夜连放两弹：Sonnet 5、全新AI科研App重磅上线
 
 ## 技术分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ---
 source: wechat
 source_url: https://mp.weixin.qq.com/s/VbUpLI1cOHFooxYg0RuH7g

@@ -9,6 +9,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/create-custom-mcp-catalogs-and-profiles.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### 企业 MCP 治理的结构性需求
 Custom Catalogs 的出现回应了 MCP 生态中的一个核心矛盾：协议标准化了工具的接入方式，但工具的分发与审批仍然缺乏统一机制。在组织内部，不同团队可能需要不同的 MCP 服务器集合——研发需要 Playwright/GitHub，运营需要 Notion/Atlassian，而敏感岗位可能只允许使用经过安全审计的内部服务。Custom Catalogs 允许平台团队将这些约束封装成一个可分发的 OCI artifact，让开发者无需理解内部审批流程即可获得可信工具集。
 

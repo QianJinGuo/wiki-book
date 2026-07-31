@@ -11,6 +11,21 @@
 - **企业级聚焦** — 定价模型主要面向企业客户
 
 ## 技术洞察
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **AI 代理计费的范式转变**：
 这篇文章的核心洞察是：**从 token 计费到 agent-aware 计费的转变**。
 传统 AI API 定价：按输入/输出 token 计费

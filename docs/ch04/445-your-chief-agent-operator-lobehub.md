@@ -26,6 +26,15 @@ LobeHub 是一个协作式 Agent 平台，其核心产品"Your Chief Agent Opera
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 1. "Chief Agent"范式的设计哲学
 
 LobeHub CAO 的核心主张是**人类负责战略，Agent 负责执行**。这一定位与 Manus 等通用 Agent 产品不同——CAO 强调的是对**已有 Agent 团队**的编排与调度，而非替代用户完成单一任务。官网案例"I had 500 open issues. My CAO dispatched 50 agents. I went to bed"直白地传达了这一理念：用户定义任务边界，CAO 自主完成大规模执行。

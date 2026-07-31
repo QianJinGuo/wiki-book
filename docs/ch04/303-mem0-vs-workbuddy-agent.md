@@ -12,6 +12,20 @@ Agent 记忆层是解决大模型无状态问题的关键基础设施。Mem0 和
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 - **Agent 记忆层的本质**：将历史交互压缩为可检索、可追溯、可演化的长期上下文，而非简单记录聊天历史
 - **Mem0 的核心架构**：由 LLM（记忆抽取）、embedding_model（向量化）、vector_store（主记忆库）、SQLiteManager（变更历史）、entity_store（实体索引）和 reranker（可选重排序）六大组件构成
 - **ADD-only 写入策略**：新事实默认作为新记忆加入而非覆盖旧记忆，保留事实演化轨迹，支持时间推理和多跳检索

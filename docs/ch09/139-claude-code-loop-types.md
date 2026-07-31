@@ -19,6 +19,15 @@
 
 ## 代码质量五原则（第 2 来源独家）
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 1. **保持代码库本身干净**：Claude 会遵循已有的模式和约定
 2. **给 Claude 验证自身工作的方法**：通过 SKILL.md 记录团队认可的验证标准（如前端更改验证：启动开发服务器 → 交互验证 → 截图 → 控制台检查 → Chrome Devtools MCP 性能审计）
 3. **让文档易于获取**：框架和库的文档包含最新最佳实践

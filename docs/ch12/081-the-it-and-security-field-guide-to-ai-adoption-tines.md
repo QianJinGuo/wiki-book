@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 6.2KB | `entities/the-it-and-security-field-guide-to-ai-adoption-tines.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - IT与安全团队的AI采纳实用指南
 - 包含AI工具评估框架、生产就绪标准、供应商评估问题清单
 - 人工介入最佳实践

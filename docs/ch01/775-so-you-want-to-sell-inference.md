@@ -12,6 +12,20 @@ Tom Tunguz 深入分析 LLM 推理市场的商业经济学。核心论点：AI �
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 三种定价策略
 
 #### 1. Cost-plus Markup

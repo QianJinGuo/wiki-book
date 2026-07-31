@@ -8,6 +8,20 @@
 
 ## 相关实体
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 - [direct connect (dx) 迁移最佳实践](ch11/038-direct-connect-dx.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
 

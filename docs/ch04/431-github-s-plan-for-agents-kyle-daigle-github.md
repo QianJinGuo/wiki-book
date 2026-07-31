@@ -16,6 +16,15 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 1. 规模冲击：14x 提交增长
 
 2026 年 GitHub 的 coding agent 活动增长了 1400%。2025 年全年 10 亿次提交，2026 年按当前速度将达到每周 2.75 亿次、全年约 140 亿次。GitHub Actions 从 2023 年的 5 亿分钟/周增长到 2025 年的 10 亿分钟/周，当前仍在加速。这些数字背后是基础设施从「为人类开发者的人类速度设计」到「为 Agent 的机器速度运行」的根本性转变。

@@ -6,6 +6,18 @@
 
 # EC2 Capacity Blocks：GPU短期容量决策指南
 ## 三个关键洞察
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 ### 1. Capacity Blocks vs Training Plans
 Capacity Blocks for ML（最新服务）适合需要短期专用GPU容量的场景（Hackathon、突发训练任务），比Savings Plans更灵活但价格稍高。按需价格节省40-50%，Savings Plans节省70-75%但需要1-3年承诺。
 ### 2. 决策树

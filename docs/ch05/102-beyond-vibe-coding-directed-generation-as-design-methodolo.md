@@ -14,6 +14,15 @@
 
 ## Directed Generation: Three Phases
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Designers' interaction with AI is not passive acceptance but three **active** phases:
 
 1. **Directing**: Composing inputs, selecting references, setting constraints — before the first token is generated

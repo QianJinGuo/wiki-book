@@ -16,6 +16,15 @@ SGLang 仓库已从单一的 LLM serving 项目扩展到 LLM serving、分布式
 
 ## 现有的 SGLang Agent Skill 生态
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 围绕 SGLang Agent 开发已涌现出一组技能集合：
 
 - **SGLang `.claude/skills`**：维护在 SGLang 仓库内，涵盖 CUDA crash 调试、内核集成、测试、CI、profiling、生产 triage 和源码树约定等仓库级开发工作流

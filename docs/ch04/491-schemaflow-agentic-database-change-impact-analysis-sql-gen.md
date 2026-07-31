@@ -14,6 +14,15 @@ OpenAI 官方 Cookbook 的 SchemaFlow 合作伙伴案例，展示了一个**生�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **Harness = staged pipeline + 强类型 schema + 评估门**：生产级 Agent 不是单 prompt，而是多阶段流水线，每个阶段独立可观测、可重试、可失败隔离
 2. **官方 Cookbook 是 harness 范本**：Anthropic 和 OpenAI 都在用 staged agentic workflow 解决复杂任务，单 prompt 是 2024 范式
 3. **Eval guardrails 不是可选**：生产 SQL 生成必须配合 Promptfoo 之类的 evaluator，否则 hallucination 直接进生产库

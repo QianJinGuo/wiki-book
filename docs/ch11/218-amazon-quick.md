@@ -8,6 +8,18 @@
 
 ## 摘要
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Amazon Quick 是 AWS 推出的数据查询和分析工具，旨在简化日常数据处理工作流。它允许用户直接在 AWS 数据服务（S3、Athena、Redshift、RDS 等）上执行 SQL 查询和数据转换，无需搭建和维护 ETL 管道。对于数据分析师、工程师和开发者而言，Amazon Quick 代表了"数据工作平民化"的趋势——降低数据分析的技术门槛，让更多人能够直接从数据中获取价值。^[inferred]
 
 ## 核心要点

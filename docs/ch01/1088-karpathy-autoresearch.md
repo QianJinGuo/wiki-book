@@ -23,6 +23,20 @@
 - 通用化，可以应用于任意的github项目
 - 增加了opencode，可以实现1个到3个任意组合的Coding Agent交叉审核和代码实现
 ## 02 什么是 Karpathy AutoResearch？
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 4. 2026 年 3 月，AI 领域知名研究者 Andrej Karpathy 发布了 autoresearch 项目，短短几天内就在 GitHub 收获 5 万+ 星标，Karpathy 发布的介绍视频播放量达 860 万次。
 5. 这是一款开源 Python 工具，代码量约 600 行。
 

@@ -8,6 +8,15 @@
 - Markdown Content: The frontier of AI is shifting from models that answer to agents that act—and agents are only as capab...
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 **从"回答模型"到"行动代理"的范式转变**
 文章开篇即点明核心论点：AI前沿正在从"回答问题的模型"转向"能够行动的代理"。这一转变意味着，AI系统的价值不再仅取决于模型本身的智能程度，而取决于它能与多少外部系统、数据源和工具建立连接。Stainless的核心价值正是这种"连接能力"——它让开发者和AI代理能够便捷地调用各类API，将AI能力落地到真实的工作流中。
 **SDK生态的战略重要性**

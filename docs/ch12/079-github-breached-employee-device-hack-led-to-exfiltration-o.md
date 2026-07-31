@@ -6,6 +6,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 Significant security incident reporting on GitHub breach via compromised VS Code extension. Details attack vector, scope (~3800 repos), and response actions. Important supply chain security awareness with practical incident response insights.
 
 ## 标签

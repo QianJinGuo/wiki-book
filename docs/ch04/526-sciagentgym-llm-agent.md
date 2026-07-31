@@ -21,6 +21,21 @@ SciAgentGym 提供可交互、可执行、可反馈的科学环境，由四类�
 
 ## SciAgentBench 评测集
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 包含 **259 个任务、1,134 个子问题**，覆盖物理、化学、材料科学和生命科学四个领域。
 
 - **L1 基础任务**：≤3 步

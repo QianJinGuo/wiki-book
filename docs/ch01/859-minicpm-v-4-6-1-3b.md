@@ -18,6 +18,21 @@
 清华系面壁智能开源 1.3B 多模态模型 MiniCPM-V 4.6，LLaVA-UHD v4 架构（ViT 早期压缩 + 4x/16x 混合压缩），RTX 4090 可跑，3136² 图片首响 75.7ms，吞吐量 2624 token/s，智能密度同尺寸最高。
 
 ## 核心性能
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 | 指标 | 数值 |
 |------|------|
 | 参数规模 | 1.3B |

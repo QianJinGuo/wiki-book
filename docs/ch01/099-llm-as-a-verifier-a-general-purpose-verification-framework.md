@@ -13,6 +13,15 @@
 - **消除平局**：标准 LLM-as-a-Judge 在 Terminal-Bench 上产生 27% 平局；LLM-as-a-Verifier 完全消除平局（0% Tie Rate）
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### 验证精度 vs 评判精度的本质差异
 LLM-as-a-Verifier 的核心洞察在于区分了「评判（Judge）」和「验证（Verifier）」的概念内涵。
 **Judge 的局限**：传统 LLM-as-a-Judge 将连续奖励压缩为单一离散分数（1-8），导致 quantization error。当比较两条复杂轨迹时，如果都得 4 分，验证器无法区分它们——这在竞赛评估中造成 27% 的平局率。

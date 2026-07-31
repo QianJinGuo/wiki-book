@@ -38,6 +38,18 @@
 
 ## **一．背景：为什么要重新认识 NAT 网关**
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 NAT 网关（NAT Gateway）是 [Amazon VPC](<https://aws.amazon.com/cn/vpc/>) 中最常用的托管组件之一，它让私有子网中的实例可以主动访问互联网（下载补丁、调用外部 API 等），同时不允许互联网主动发起到这些实例的连接。长期以来，AWS 的 NAT 网关都是一种「可用区（Availability Zone，AZ）级」资源——每个 NAT 网关只存在于单个可用区中。
 
 2025 年 11 月，AWS 正式发布了 NAT 网关的全新「区域可用性模式」，即本文要讨论的 Regional NAT Gateway（区域 NAT 网关，简称 RNAT）。它不再绑定到单个子网或单个可用区，而是与整个 VPC 关联，并能根据工作负载自动跨可用区扩展，从而内建高可用能力。具体可以参考 [AWS What’s New 公告](<https://aws.amazon.com/about-aws/whats-new/2025/11/aws-nat-gateway-regional-availability/>) 与 [官方发布博客](<https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/>)。

@@ -13,6 +13,15 @@ Netflix 开源的 **oci-agent** 是一个面向观察性因果推断（Observati
 
 ## 核心架构：三角色 + Actor-Critic Loop
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 角色 | 职责 |
 |------|------|
 | **Principal**（人类） | 提供分析计划、指定 confounders、指定工具和数据模型 |

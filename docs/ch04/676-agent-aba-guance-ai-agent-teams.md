@@ -16,6 +16,15 @@ Gartner 预警到 2028 年公民开发者采用 Prompt-to-App 可能使软件缺
 
 ## ABA（Agent Behavior Analytics）
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 Agent 本身成为新的观测对象。运维团队需要看到 Agent 调用了哪些工具、访问了哪些数据、是否越过了权限边界、每步动作对业务系统的影响。
 
 最理想的观测入口是**统一的 AI 网关**——当模型调用、Token 收发和工具调用都经过网关，企业才能建立可追溯的行为链路。

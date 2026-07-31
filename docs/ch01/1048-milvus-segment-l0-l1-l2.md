@@ -12,6 +12,15 @@ Milvus 向量数据库的 Segment 是数据的物理组织单位，也是 compac
 
 ## 三级分层演进
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Segment 层级定义在 `pkg/proto/data_coord.proto`，包含 `Legacy=0`、`L0=1`、`L1=2`、`L2=3` 四个枚举值。`Legacy` 是 proto zero value，代表分层引入前的老 segment，按 L1 处理。
 
 | Level | 职责 | 初始状态 |

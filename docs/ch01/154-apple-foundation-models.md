@@ -16,6 +16,15 @@
 
 ## 内容提炼
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 Markdown Content:
 CLI, SDKs, and libraries Libraries and integrations
 

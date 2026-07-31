@@ -8,6 +8,15 @@
 从Dense切到MoE后MFU暴跌的原因不在于Expert切分维度小（实际≥1024），而在于**通信bound**。解决方法是设计合理的GPU并行策略，做好计算和通信的overlap。
 
 ## DeepSeek V3 并行策略
+
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
 - **硬件**: 2048 H800，8卡节点NVLink(900GB/s)，跨节点IB(50GB/s)
 - **策略**: `16-way PP × 64-way EP × ZeRO-1 DP`
 

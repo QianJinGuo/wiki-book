@@ -7,6 +7,15 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fedora-hummingbird-container-security.md)
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - value=8, confidence=7, product=56
 - Thorough Fedora Hummingbird technical overview
 ## 相关实体

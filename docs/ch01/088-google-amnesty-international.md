@@ -16,6 +16,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Google and Amnesty International teamed up to make Android spyware detectable](../ch12/067-google-and-amnesty-international-teamed-up-to-make-android-s.html)
 
 ## 深度分析

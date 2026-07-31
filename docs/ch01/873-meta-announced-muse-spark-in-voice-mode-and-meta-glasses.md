@@ -10,6 +10,16 @@
 Meta announced Muse Spark in Voice Mode and Meta Glasses — covering AI-powered voice interaction and smart glasses hardware.
 
 ## Key Points
+
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
 - Meta Muse Spark with Voice Mode
 - Meta Glasses hardware platform
 - AI-driven voice interaction capabilities

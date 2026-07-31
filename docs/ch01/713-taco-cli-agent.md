@@ -20,6 +20,15 @@ TACO（Terminal Agent Compression）是一个无需训练、即插即用的终�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **自进化规则引擎**：TACO 摒弃了人工预设截断或 LLM 实时总结的传统路径，构建了由触发条件、保留模式和剔除模式组成的函数式规则引擎
 - **任务内动态纠偏**：当当前规则无法处理某类高输出命令时，TACO 生成新规则加入 active rule set；检测到 over-compression 时降低相关规则权重
 - **全局跨域沉淀**：任务中验证有效的规则写回 Global Rule Pool，后续任务从池中检索相关规则初始化 active rules，跨任务复用压缩知识

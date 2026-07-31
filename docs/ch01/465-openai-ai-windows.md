@@ -14,6 +14,21 @@ Anthropic 通过 MCP（Model Context Protocol）协议和 Claude 桌面应用「
 
 ## MCP 是什么
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Model Context Protocol 是 Anthropic 在 2024 年提出的开放协议，旨在为 AI 模型访问外部资源定义一个统一的「插座」标准。
 
 - 开发者为任何工具编写符合 MCP 标准的「服务器」

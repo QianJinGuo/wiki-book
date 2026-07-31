@@ -16,6 +16,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-raiders-how-to-repel.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 ### LLMjacking 的本质与盈利模式
 LLMjacking（LLM 劫持）是一种新兴的网络攻击形态，攻击者通过扫描互联网上的私有 AI 服务器，将其算力据为己有以谋取经济利益。与传统的 cryptojacking（加密货币挖矿劫持）相比，LLMjacking 的核心区别在于目标资源——不是 CPU/GPU 算力用于挖矿，而是 AI 推理能力用于生成内容。
 这种攻击的盈利逻辑清晰：随着 AI API 调用成本持续攀升，企业和个人用户对本地化 AI 解决方案的需求激增。攻击者无需建立自己的 AI 基础设施，只需发现并劫持他人已部署的模型，即可免费使用高质量的 AI 能力。Kaspersky 指出，AI 推理成本的上涨趋势与 cryptojacking 市场 2025 年增长 20% 的数据形成呼应，预示 LLMjacking 即将进入爆发期。

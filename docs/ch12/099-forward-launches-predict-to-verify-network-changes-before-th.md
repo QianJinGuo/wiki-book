@@ -6,6 +6,15 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - Forward Networks Predict: Network Formal Verification
 
 ## 相关实体

@@ -2,6 +2,20 @@
 
 ## Ch11.247 GenPage: Towards End-to-End Generative Homepage Construction at Netflix
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 > 📊 Level ⭐⭐ | 4.0KB | `entities/genpage-towards-end-to-end-generative-homepage-construction-.md`
 
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix

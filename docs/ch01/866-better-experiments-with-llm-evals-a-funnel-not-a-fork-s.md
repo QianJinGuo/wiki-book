@@ -9,6 +9,15 @@
 - LLM Evaluation: A Funnel Not a Fork
 
 ## 相关实体
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/660-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/035-agent.html)
 - [Multimodal Evaluators Mllm As Judge Image To Text](ch01/305-mllm-as-judge.html)

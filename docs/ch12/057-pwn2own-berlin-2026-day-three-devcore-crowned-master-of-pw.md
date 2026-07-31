@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 8.0KB | `entities/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 来源：securityaffairs
 - 评分：v=7 × c=8
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md)

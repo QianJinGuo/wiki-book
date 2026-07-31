@@ -21,6 +21,15 @@ Tradeshift 面临自研 BI 工具的严重限制：
 
 ## 解决方案架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 采用 Amazon Quick 三层分析架构：
 
 1. **嵌入式 BI 仪表盘层**：16 个嵌入式 Quick Sight 仪表盘（iFrame），覆盖 9 个领域

@@ -12,6 +12,21 @@ DREAM (Dense Retrieval Embeddings via Autoregressive Modeling) 证明了**不需
 
 ## 问题：检索器训练的标注瓶颈
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 稠密检索器（dense retrieval embedding model）是 RAG/agentic search 的地基。主流训练靠对比学习（contrastive），需要正样本 + hard negative 标注。但构造样本是最大瓶颈：正样本需昂贵人工标注，hard negative 难可靠挖掘且常混入 false negative。
 
 反差：NTP（next-token prediction）已是 LLM 训练基石，监督信号可从"预测下一个 token"自然涌现。**能不能用 NTP 训练检索器？**

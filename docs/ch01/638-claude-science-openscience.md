@@ -33,6 +33,20 @@ OpenScience 由 YC 2026 冬季批次毕业的 Synthetic Sciences 团队（2025 �
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### 1. 「模型不可知」策略的竞争意义
 
 OpenScience 最核心的设计决策是模型不可知架构。这不仅降低了使用门槛（国内科研团队不需要购买 Claude 订阅），更在战略层面构建了对抗模型供应商锁定的护城河。当科学 AI 平台可以自由切换底层模型时，用户不会被任何单一模型厂商的定价、政策或能力变化所绑架。这与 [Backend for Agent](../ch03/035-agent.html) 强调的「基础设施抽象」理念一致——AI 科研工具的竞争正在从「模型能力」转向「平台生态」

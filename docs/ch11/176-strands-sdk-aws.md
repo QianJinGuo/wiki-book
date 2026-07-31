@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 7.1KB | `entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 基于Strands SDK 构建的企业智能问数解决方案实践 by awschina on 21 11月 2025 in Artificial Intelligence Permalink Share 引言 作为长期深耕数据智能的 AWS Partner，聚云立方在与众多客户共创数据问答场景时发现：传统 BI 的模板化与线性分析流程已难以支撑业务节奏。DecisionAI 基于最新的 Strands Agent 框架和 Amazon Bedrock 生态，面向 AWS 企业客户推出全新的问数 2.0 方案，希望把“问、思、判、行”全链路沉淀为可复制、可运营的智能资产。 企业问数痛点 配置穷尽困境 ：传统平台需要预设大量指标与看板，但对于“连续 3个月复购用户占比”“跨站点退货率”一类动态问题仍无法覆盖，陷入永远扩表的工程泥沼。 复杂查询失控 ：面对“旺季空调退货率为何上涨”这样的多维问题，人
 
 ## 核心技术

@@ -14,6 +14,21 @@ Skill Craft 是面向 Claude Skill 的质量工程工具（GitHub: [3stoneBrothe
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **7 类系统性失效模式**：约束衰减（对话越长规则越弱）、工具选择漂移（超时后换工具不回来）、输出膨胀（要简明给论文）、依赖链断裂（29 个对象只处理 20 个）、并行孤岛（子 Agent 结论矛盾不校验）、触发模糊（误判用户意图）、幻觉填充（没查到就编一个）。这些模式会**连锁触发**——输出膨胀挤满上下文 → 约束衰减 → 工具漂移/步骤跳过/幻觉填充。
 
 2. **四种模式覆盖完整生命周期**：`check`（评估单个 Skill）、`fix`（修复+回归验证）、`create`（从零生成合规 Skill）、`audit`（系统级审计多 Skill 路由边界和职责分工）。

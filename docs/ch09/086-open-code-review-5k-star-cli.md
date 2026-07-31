@@ -20,6 +20,21 @@ Open Code Review 的核心设计理念是将**确定性工程**与 **Agent** 结
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 为什么通用 Agent 做不好代码评审？
 
 Claude Code 等通用 Agent + Skills 方案做代码评审时面临三个核心问题：**覆盖不全**（变更较大时 Agent 选择性评审部分文件导致遗漏）、**位置漂移**（报告的问题与实际代码位置对不上）、**效果不稳定**（基于自然语言驱动的 Skills 难以调试，评审质量因提示词细微差异大幅波动）。

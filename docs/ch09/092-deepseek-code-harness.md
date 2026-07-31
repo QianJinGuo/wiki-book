@@ -8,6 +8,15 @@
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
 
 ## 背景：Claude Code 定义上限，但中国开发者被排除在外
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 Anthropic 官方明确禁止中国大陆访问 Claude。2025年9月更出台政策：任何由中国资本控制超过50%的公司，不管注册地在哪，都不准用。CEO 达里奥·阿莫迪本人也公开主张对中国实施技术制裁。
 Claude Code 的市场表现：
 

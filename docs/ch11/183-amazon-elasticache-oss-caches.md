@@ -36,6 +36,18 @@
 
 ## **1\. 引言**
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 说明：Redis 凭借其极致的内存访问性能，成为缓存、会话、排行榜、消息队列等高并发场景的首选。然而 KEYS、大 Key 上的 HGETALL、复杂 Lua 脚本、批量 MGET 等命令一旦阻塞单线程的 Redis，就可能引发整条调用链路的雪崩。本文介绍一套无需运行任何常驻代码、纯托管服务、可批量自动化部署的 ElastiCache for Redis 慢查询监控方案，帮助您在毫秒级问题积累成线上故障之前主动发现并告警。
 
 ## **2\. 背景与方案价值**

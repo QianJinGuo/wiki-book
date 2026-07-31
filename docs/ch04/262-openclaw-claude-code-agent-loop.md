@@ -43,6 +43,21 @@ Boris 和 Steinberger 所指的"循环"是真正全新的，不仅仅是改了�
 
 ## Boris Cherny 的循环实操指南
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Boris 提出了 5 条让 Opus 系统自动运行数小时或数天的技巧：
 
 1. **使用 auto mode**来处理权限问题，这样 Claude 就不会请求批准。

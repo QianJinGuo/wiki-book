@@ -16,6 +16,21 @@
 
 ## 方法：LAVE
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 LAVE 的核心思想是 **Lookahead-then-Verify**（先前瞻，再验证）：
 
 1. **前瞻补全**：利用扩散 LM 一次前向传播同时给出所有位置 token 概率分布的特性，为当前不完整前缀生成若干高概率的候选补全

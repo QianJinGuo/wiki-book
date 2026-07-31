@@ -10,6 +10,18 @@
 
 ## 背景
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 2026-06-15 AWS 发布 **WAF（Web Application Firewall）AI Traffic Monetization 能力**，让数字内容所有者和出版商可以直接在网络边缘向 AI bot / agent 收费。这是 AWS WAF Bot Control 的新扩展能力。
 
 ## 行业背景

@@ -23,6 +23,21 @@ CEO 盛颖是 LMSYS Org 发起者、SGLang 主要创始人之一，博士期间�
 
 ## 实践启示
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. **对于需要快速跟进新模型能力的团队，优先评估 SGLang 的 Day-0 支持状态而非自行实现适配**：SGLang 的 Day-0 支持能力意味着团队可以直接复用已有的基础设施，减少在新模型发布时重新适配的工程成本。每周跟踪 SGLang 的 GitHub release 可以第一时间获取新模型支持信息。
 
 2. **使用 Miles 框架进行领域专属模型的 RL 训练时，应设计好训练-推理的镜像构建流程**：Miles 打通 FP8 推理到 BF16 训练的完整 RL 管线，这意味着团队在定义 RL 训练任务时应同时规划推理服务的部署格式，避免训练产物与推理运行时的不匹配。

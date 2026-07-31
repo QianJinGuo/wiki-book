@@ -14,6 +14,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 - **细粒度 MoE 的显存墙**：训练时前向传播的中间结果必须缓存在 HBM 中用于反向传播，激活值与专家粒度成正比；粒度越细，显存占用越逼近 GPU 物理极限
 - **细粒度 MoE 的带宽墙**：专家越细，每个专家处理的数据量越少，GPU 算力大量时间花在 HBM 数据搬运上；Qwen3 细粒度 MoE 的单位计算量内存访问强度是等参数量的稠密模型的 12 倍
 - **SonicMoE 的双核心创新**：激活内存与专家粒度解耦（通过重排矩阵乘法收缩顺序，无需额外重计算）+ IO 感知算子融合（Gather 融合、SwiGLU 融入 epilogue、dH kernel 异步执行）

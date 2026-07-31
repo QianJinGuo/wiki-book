@@ -15,6 +15,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡

@@ -20,6 +20,15 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 **1. 总管（Commander）模式是多 Agent 协作的核心调度枢纽。** 整个工作流以"需求输入（飞书）→ 总管（commander）→ 市场调研 → 产品设计 → 架构设计 → 开发实现 → 测试验收"为主线，Commander 作为总控节点负责任务分发和流程推进。这种星型拓扑结构适合任务类型明确、流程顺序相对固定的企业研发场景，但单点故障风险需要关注。
 
 **2. Hermes 的四核心组件（Profiles/Gateway/Honcho/tmux）分别解决了多 Agent 系统的组织、通信、记忆和进程保活问题。** Profiles 类比"公司里的不同部门"负责角色化分工，Gateway 类比"前台/客服"负责消息收发，Honcho 作为"共享知识库"提供长期记忆，tmux 确保进程持续运行而非用于通信。这套分层设计将非功能性需求（进程保活、消息路由）与功能性需求（角色定义、任务执行）解耦，架构清晰度高。

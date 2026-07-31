@@ -17,6 +17,20 @@
 
 ## Methodology Innovation
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 Traditional AI market sizing has a severe **double-counting** problem: user pays Anthropic $1, Anthropic pays AWS $0.5, traditional methods report $1.5. Exponential View reports only **end-user actual spend** of $1.
 
 Approach:

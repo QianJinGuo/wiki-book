@@ -10,6 +10,20 @@
 7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
+
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
 
 ## 深度分析

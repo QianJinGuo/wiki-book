@@ -8,6 +8,15 @@
 Harness Engineering 方法论，让 Coding Agent 能够可靠地完成长程任务。
 
 ## 关键内容
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 ### Harness 工程化
 - **可靠性**: 长程任务的稳定执行
 - **可观测性**: 任务执行过程的透明化

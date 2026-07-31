@@ -8,6 +8,20 @@
 - Published Time: 2026-05-18T21:48:17+00:00 Ian Buck hand-delivers the first NVIDIA Vera CPU systems to Anthropic, OpenAI, Oracle Cloud Infrastructure and SpaceXAI — marking the moment agentic CPUs move
 
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 NVIDIA Vera 是全球首款专为 AI Agent 场景设计的 CPU，标志着芯片行业从"通用计算"向"Agent 原生计算"的战略转向。Ian Buck 亲自 hand-deliver 首批系统给 Anthropic、OpenAI、Oracle Cloud Infrastructure 和 SpaceXAI 四家机构，这一交付仪式本身就传递了明确的行业信号——头部实验室的认可比性能跑分更重要。
 从架构角度看，Vera 的设计理念与传统数据中心 CPU 存在本质差异。传统 CPU 优化的是单线程性能和指令级并行，而 Vera 针对的是**长周期、多跳推理任务**和**高并发 Agent 协作**场景。这意味着 Vera 在内存带宽、缓存一致性协议和线程调度上做了针对性设计，尤其适合需要维护超大上下文窗口（100K+ tokens）的 Agent 工作负载。
 生态影响层面，Vera 的出现补全了 NVIDIA 从 GPU（训练/推理）到 CPU（Agent 编排）的完整闭环。结合 NVIDIA 的 DRIVE Thor、Grace Hopper 和 BlueField DPU，NVIDIA 正在构建一个从芯片到软件栈的垂直整合 Agent 平台，对抗 AMD MI300X 和 Intel Gaudi 的竞争。

@@ -10,6 +10,21 @@ Academic paper with novel empirical finding that large models benefit from unfil
 
 ## 标签
 
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
+
 ai, agent, runtime
 
 ## 深度分析

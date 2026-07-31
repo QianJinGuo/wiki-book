@@ -18,6 +18,15 @@ Domino 由两部分组成：**parallel draft backbone** 为整个 draft block �
 
 ## 实验结果
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 在 Qwen3-4B 和 Qwen3-8B 上，Domino 在数学、代码、对话等任务中都取得稳定提升。在 greedy decoding 设置下，Qwen3-4B 上平均达到 5.47x 端到端加速，Qwen3-8B 上平均达 5.49x，GSM8K 等任务上最高可达 7.92x。消融实验显示，关闭 Domino head 后平均接受长度从 4.19 降到 3.49，平均速度从 3.31x 降到 2.84x，说明轻量 prefix-dependent correction 是 Domino 的关键来源。
 
 → [DeepSeek DSpark 投机解码](ch01/794-deepseek-dspark.html)

@@ -28,6 +28,20 @@ source_url: https://mp.weixin.qq.com/s/0yVKN5cu8oOOBhRZHkyYPg
 - ####  场景三：ChatGPT Web / Lovart / 任何有生图能力的对话界面
 
 ## 相关实体
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 - [gpt-image-2完全指南](ch01/1258-gpt-image-2.html)
 
 ## 深度分析

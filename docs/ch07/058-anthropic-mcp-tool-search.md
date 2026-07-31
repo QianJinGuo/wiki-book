@@ -8,6 +8,15 @@
 Anthropic 官方回应社区对 MCP 的三大批评（贵、schema 臃肿、不可组合），明确 MCP 的真正地盘：**云端 Agent 标准化接入层**。
 
 ## 关键结论
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 1. **MCP vs CLI 成本差距缩小**：Tool Search 减少 85% 工具定义 token，综合效果从 32 倍差距缩至约 7 倍
 2. **程序化调用**：工具返回结果在沙箱处理，Agent 循环/过滤/聚合，只返回最终结果，减少 37% token
 3. **Cloudflare 代码编排**：2,500 API 端点只暴露 search + execute 2 个工具，工具定义 1K tokens

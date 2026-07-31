@@ -11,6 +11,15 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 [__](javascript:void(0))
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/1089-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
 - [Airbyte Agents A New Era For Airbyte Airbyte](../ch04/580-airbyte-agents-a-new-era-for-airbyte-airbyte.html)

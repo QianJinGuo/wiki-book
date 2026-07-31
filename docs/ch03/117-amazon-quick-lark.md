@@ -12,6 +12,15 @@ Amazon Quick 通过远程 MCP Connector 能力接入飞书（Feishu）与 Lark �
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **远程 MCP 集成**：利用飞书/Lark 开放平台的远程 MCP Server，通过 Streamable HTTP 协议连接 Amazon Quick，实现跨平台 AI 办公协作
 - **零代码配置**：无需编写代码，只需在飞书 MCP 配置平台上创建 MCP 服务并授权，在 Quick 中配置 Connector 即可使用
 - **能力范围**：支持文档读取/创建、消息读取/发送、日程管理等飞书/Lark 核心功能

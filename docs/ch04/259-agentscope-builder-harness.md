@@ -22,6 +22,15 @@ AgentScope Claw（MinQwenPaw）是 Harness 框架在「单人本机」场景的�
 
 ## AgentScope Builder 是什么
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Builder 是 OpenClaw 的分布式版本 —— 同样的自我进化、同样的工作区驱动、同样的 Harness 运行时；只是从「一个人」变成「一个组织」，从「一台笔记本」变成「一组横向扩容的服务」。
 
 **核心能力**：

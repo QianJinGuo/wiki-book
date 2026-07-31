@@ -12,6 +12,15 @@ CLI、MCP Server、SDK、Skills、Code Execution——这五个词看起来都�
 Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任务）：
 
 ## 相关实体
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 - [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/271-skill.html)
 - [Aliyun Agentrun 2Line Integration](../ch04/003-agentrun.html)
 - [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/298-ai-agent.html)

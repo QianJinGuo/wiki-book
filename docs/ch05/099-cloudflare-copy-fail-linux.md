@@ -12,6 +12,15 @@ CVE-2026-31431（代号 "Copy Fail"）是一个 Linux 内核本地提权漏洞�
 
 ## 漏洞机制
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 ### AF_ALG + Page Cache 交互缺陷
 
 漏洞位于 Linux 内核的 `AF_ALG` 套接字加密 API 与页面缓存（page cache）的交互中：

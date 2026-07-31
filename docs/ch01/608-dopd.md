@@ -21,6 +21,20 @@ DOPD 的核心思想是：不是所有 token 都值得用同样的方式学习�
 
 ## 实验结果
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 在 LLM 设置下，DOPD 让学生模型平均提升 7.5 分，闭合了 89.8% 的初始师生差距；在 VLM 设置下提升 6.0 分。在师生模型尺寸差距最大时（8B→0.6B），DOPD 的提升幅度是 Vanilla OPD 的 4 倍。在持续学习和分布外泛化任务中，DOPD 同样表现优异。
 
 ## 深度分析

@@ -8,6 +8,15 @@
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/LLVZts-SRNo-Jh1GpV2BRA
 
 ## 元数据
+
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
 - **来源**: 微信 (WeChat)
 - **原始URL**: https://mp.weixin.qq.com/s/LLVZts-SRNo-Jh1GpV2BRA
 - **入库时间**: 2026-05-11

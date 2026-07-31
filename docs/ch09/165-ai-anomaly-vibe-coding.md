@@ -17,6 +17,20 @@ AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判 涉
 > 原文：https://mp.
 2. com/s/4_9q9TrkVyE5a4jCfTrNgg
 ## 一句话定位
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 **Anomaly Innovations 创始人（37 年设计 × AI 经验）公开撰文反驳 "vibe coding" 在前端的适用性**：代码能编译 ≠ 设计完成；vibe coding 适合软件工程，**不适合 design**——因为设计是定性的、主观的、上下文依赖的，AI 缺乏"判断"。
 3. 6 个 AI 前端常见失败类别
 1.

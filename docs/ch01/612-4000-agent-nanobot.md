@@ -20,6 +20,20 @@ nanobot 是香港大学数据科学实验室（HKUDS）开源的轻量级 Agent 
 
 ## 核心要点
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 - **控制面集中化**：所有决策路径穿过同一个 `while` 循环（AgentLoop），无 Chain/Runnable/LCEL/DAG 等编排层，极大降低理解成本
 - **ReAct 循环极简实现**：核心 loop 约 20 行代码，错误处理只有一行——把恢复责任全部交给 LLM
 - **Tool 系统最小接口**：工具实现只需继承 `Tool` 抽象类，定义 name/description/parameters/execute，execute 返回值强制为 str

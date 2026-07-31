@@ -12,6 +12,15 @@
 
 ## 传统容器的隔离局限
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 标准的Docker/runc容器通过Linux namespace做进程级隔离，但所有容器共享同一个宿主机内核。在多租户Agent场景下，如果一个用户的会话触发了内核漏洞或资源耗尽攻击（OOM、fork bomb），影响会跨越容器边界波及同节点上所有其他用户的会话。对于需要执行不可信代码的AI Agent平台来说，这种共享内核的隔离模型远远不够——会话之间需要VM级别的内核隔离，才能保证一个恶意或失控Agent不会影响同节点的其他租户。
 
 ## EKS + Kata Containers 方案核心

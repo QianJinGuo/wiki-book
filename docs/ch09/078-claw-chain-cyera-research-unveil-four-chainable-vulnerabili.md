@@ -8,6 +8,15 @@
 - Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw
 
 ## 关键洞察
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw
 Vulnerability Class: Sandbox escape, privilege escalation, data exposure
 CVE IDs: CVE-2026-44112, CVE-2026-44115, CVE-2026-44118, CVE-2026-44113

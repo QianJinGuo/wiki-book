@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 5.0KB | `entities/multi-agent-architecture-retail-practice.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
 Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 by awschina on 14 4月 2026 in Artificial Intelligence Permalink Share 摘要：供应链是零售企业最核心的竞争壁垒之一，而决策效率的瓶颈往往不在数据基础设施，而在从数据到洞察、从洞察到行动之间的链路。本文探讨如何通过 Agentic AI 系统性地打通这条链路——利用 Multi-Agent 架构、让供应链数据自动被查询、被理解、被转化为行动，实现从 data-informed 到 data-driven 的跨越。文章包含架构设计、关键技术选型，以及一个完整的渠道履约分析场景演示。 目录 01 一、供应链决策的全链路挑战 02 二、为什么是 Agentic AI——它改变了什么 03 三、参考方案架构与设计 04 四、场景演示：从提问到洞察的完整链路 0
 
 ## 核心技术

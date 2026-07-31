@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 5.6KB | `entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - 攻击方式：实体钓鱼信件，内含 QR 码链接到钓鱼网站
 - 骗局主题："Quantum Resistance"（量子抵抗）安全更新——利用量子计算威胁叙事
 - 目标：Ledger 硬件钱包用户的 24 字助记词（seed phrase）

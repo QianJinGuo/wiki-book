@@ -17,6 +17,15 @@
 
 ## 核心理念：渐进性披露（Progressive Disclosure）
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Skill 体系最核心的设计理念是渐进性披露，即只在需要时才加载需要的知识，而非一次性加载全部。
 
 ### 三阶段模型

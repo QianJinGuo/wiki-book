@@ -21,6 +21,20 @@ S3 作为最终归档层没有问题，但 Agent 运行时需要 POSIX 文件语
 
 ## Curvine：为 Agent 规模化设计的分布式缓存文件系统
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 OpenClaw 等 Agent 平台的文件系统需求（SOUL.md、AGENTS.md、MEMORY.md 等 Markdown 文件的密集随机读写）催生了 Curvine——一个用 Rust 编写的分布式缓存文件系统，核心思路是在云对象存储（S3）之上建立一层分布式缓存，向上提供完整 POSIX 语义，向下以对象存储作为持久化层。
 
 ### 核心架构

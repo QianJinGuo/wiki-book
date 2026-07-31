@@ -18,6 +18,18 @@
 - [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)
 
 ## 文章摘要
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 AI 正在从根本上改变我们工作的本质——不是让我们变得更快，而是改变工作的性质。作者 Paul Boag 认为 AI 正在将我们从"执行者"转变为"指挥者"，这需要一种完全不同的思维模式。从设计师到设计主管的转型与这一 AI 转型高度相似，那些能够提前适应这种思维转变的人将在 AI 增强的世界中脱颖而出。
 
 ## 深度分析

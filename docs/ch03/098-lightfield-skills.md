@@ -10,6 +10,15 @@ Lightfield 推出的 Skills 系统是 AI Agent 从「通用工具」走向「专
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 - **持久技能开发**：AI 代理可在会话间建立和保留专业知识，每次交互都在积累而非重置
 - **领域专业化**：组织可为其特定业务场景开发深度定制的 Skills，从通用 AI 走向专用 AI
 - **免灾难性遗忘学习**：核心工程挑战是学习新技能时不丢失已有能力——这是持续学习的核心难题

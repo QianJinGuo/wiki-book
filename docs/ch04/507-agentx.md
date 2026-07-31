@@ -34,6 +34,15 @@ AgentX 将推荐实验拆解为四个核心阶段：
 
 ## 实验数据
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 在快手 App 真实业务部署中：
 
 | 指标 | 数据 |

@@ -36,6 +36,18 @@
 
 ## **一句话理解**
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Lambda MicroVMs 是 [AWS Lambda](<https://aws.amazon.com/cn/lambda/>) 中一种全新的无服务器计算原语：为每个用户或会话提供一台专属的、有状态的、虚拟机级隔离的轻量执行环境——启动近乎瞬时，空闲自动挂起，完全无需管理基础设施。
 
 ## **一、痛点：不可能三角**

@@ -20,6 +20,15 @@ AWS 官方博客发布的一篇深度技术文章，演示如何将 LangGraph（
 
 ## 关键技术点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### AgentCore Memory 集成
 
 LangGraph 通过 `AgentCoreMemorySaver` 和 `AgentCoreMemoryStore` 类与 AgentCore 记忆集成，自动保存 checkpoint 到 AgentCore 记忆，实现有状态会话和工作流恢复——无需管理 DynamoDB 表或实现自定义序列化逻辑。

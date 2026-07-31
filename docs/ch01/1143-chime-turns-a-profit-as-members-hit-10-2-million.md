@@ -10,6 +10,15 @@
 - AI 驱动的高端化策略推动增长
 
 ## 摘要
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 Chime 通过 AI 技术推动高端化战略，首次实现盈利。
 
 ## 深度分析

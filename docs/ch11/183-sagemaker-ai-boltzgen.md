@@ -10,6 +10,15 @@
 
 ## 技术方案
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 BoltzGen 是一个专注于蛋白质设计的生成模型，通过在 SageMaker AI 上部署，可以利用 GPU 实例进行高效的推理和训练。文章详细介绍了如何配置 SageMaker 端点、管理 GPU 资源以及优化模型加载和缓存策略。
 
 ## 深度分析

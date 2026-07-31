@@ -22,6 +22,21 @@ GPT-5 的发布试图同时解决这两个问题。GPT-5 实际上是一个模�
 
 ## 强大的 AI 正在变得更易用
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 以前用好 AI 需要掌握 chain-of-thought 等技术来制作 prompt。但 Mollick 最近的系列实验发现，**这些技术现在不再真正有帮助**——强大的 AI 模型在理解你要求什么或甚至弄清楚你想要什么方面越来越擅长。
 
 不只是文本模型在变得更容易使用。Google 发布的 Gemini 2.5 Flash Image Generator（代号"nano banana"）不仅表现出色（编辑图像优于创建新图像），而且足够便宜免费用户也能访问，而且与之前的 AI 图像生成器不同，它能很好地遵循 plain language 指令。

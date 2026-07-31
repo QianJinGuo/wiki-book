@@ -22,6 +22,20 @@
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
 ## 深度分析
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 **1. 三种架构哲学代表三种不同的 Agent 设计世界观**
 
 DeerFlow 采用多代理并行调度，Hermes 采用自进化学习闭环，OpenClaw 采用中心化网关路由。这三种架构本质上是三种不同的 AI Agent 世界观：DeerFlow 把大任务拆成小任务分给并行代理完成；Hermes 只有一个代理但会越用越聪明；OpenClaw 则明确声明自己不是 Agent 而是所有 Agent 和渠道之间的"智能电话交换机"。这种哲学差异直接决定各自的技术实现路径。

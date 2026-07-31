@@ -14,6 +14,20 @@ Interconnects（Nathan Lambert）撰文分析 AI 模型生态的核心经济张�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### 闭源前沿模型的集成化指数
 
 **产品市场契合：Coding Agent 改变一切**

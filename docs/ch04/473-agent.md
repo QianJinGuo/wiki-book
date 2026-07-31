@@ -29,6 +29,20 @@ source_published: 2026-07-01
 
 ## 详细信息
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ---
 source: wechat
 source_url: https://mp.weixin.qq.com/s/qY75YeOY2Gnj-YfILEFuQg

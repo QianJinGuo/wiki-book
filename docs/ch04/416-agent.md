@@ -14,6 +14,15 @@
 
 ## 架构特点
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 百度搭子采用了分层 Agent 架构，将意图识别、任务分解、工具调用和结果验证等环节分离，提升整体系统的可维护性和扩展性。具体技术方案包括 Harness 引擎升级引入的环境路由机制，以及多端共享记忆实现的跨设备连续性。
 
 ## 深度分析

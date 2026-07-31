@@ -19,6 +19,20 @@ Brain 的记忆模型沿两个正交维度展开：
 
 ## Context Graph（上下文图）
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 Brain 构建一个动态的上下文图，追踪：
 - 用户最可能希望完成的任务模式
 - 历史会话中有效的策略和来源

@@ -12,6 +12,15 @@ AnySearch 是一款由中国团队开发的 Agent 专用搜索引擎，于 2026 
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **目标差异**：不是给人用的搜索，而是给 Agent 用的——交付结构化数据而非网页链接
 - **技术架构**：智能意图识别 → 垂直数据源路由 → 同源衰减+信息密度仲裁+混合排序 → 正文提取+内容清洗+Markdown 结构化输出
 - **基准表现**：Frames/FreshQA/WebwalkerQA 综合准确率 76.4%，领先 Parallel、Brave Search，延迟最优

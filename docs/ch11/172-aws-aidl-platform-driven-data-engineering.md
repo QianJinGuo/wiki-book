@@ -9,6 +9,18 @@
 07 七、落地路径：成熟度模型与五步实施建议
 
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/1326-anthropic.html)
 - [Introducing Claude Platform On Aws](../ch01/150-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 - [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/1235-claude.html)

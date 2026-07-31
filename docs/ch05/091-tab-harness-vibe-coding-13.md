@@ -14,6 +14,15 @@ Harness **主要不是给 AI 用的，是给团队用的**。目标是让 AI 在
 
 ## Harness 六层资产概览
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 层 | TAB 形态 | 关键数字 |
 |----|----------|----------|
 | Rule | 最少（能判定的全下沉） | ~0 独立 Rule |

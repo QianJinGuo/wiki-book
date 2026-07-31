@@ -8,6 +8,20 @@
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/Sfft58JM9dasu8LuB7NcYw
 
 ## 元数据
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 - **来源**: 微信 (WeChat)
 - **原始URL**: https://mp.weixin.qq.com/s/Sfft58JM9dasu8LuB7NcYw
 - **入库时间**: 2026-05-11

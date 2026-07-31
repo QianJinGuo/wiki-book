@@ -18,6 +18,15 @@ Google 的 5 个模式，本质上是在回答：团队经验进入 Agent 运行
 
 ## 实践启示
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 先判断任务形态，再决定 Skill 类型。写 Skill 时，先问一句：这个 Skill 主要是在注入知识、生成模板、审查结果、收集需求，还是跑流程？如果是知识注入，主体接近 Tool Wrapper；如果是输出格式稳定，接近 Generator；如果是质量门禁，接近 Reviewer；如果是模糊需求，前面先放 Inversion；如果有多阶段和验收点，再上 Pipeline ^。
 
 description 是路由契约，不是简介。触发范围太宽，Agent 会乱用；太窄，又可能用不上 ^。更清楚的写法，是说明具体场景：当用户要发布 Next.js 服务到 Vercel、检查预览环境、处理构建失败、回滚部署时使用 ^。

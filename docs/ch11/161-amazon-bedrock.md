@@ -10,6 +10,20 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 IBS Software 使用 Amazon Bedrock 的托管知识蒸馏能力，将 Amazon Nova Pro（教师模型）的知识蒸馏到 Nova Lite（学生模型），构建了面向货运物流的中英双语命名实体识别（NER）系统。蒸馏后的 Nova Lite 模型在 23 种实体类型上达到 95.085% 的 F1-Score，同时将运营成本降低 14 倍。此前团队尝试基于 PyTorch 和 TextBrewer 的开源蒸馏方案均因配置复杂度和基础设施不足而失败，最终 Amazon Bedrock 的托管蒸馏能力成为关键突破口。
 
 ## 核心要点

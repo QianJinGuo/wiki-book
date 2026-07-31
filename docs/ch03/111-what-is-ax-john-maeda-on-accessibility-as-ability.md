@@ -14,6 +14,16 @@ John Maeda 在这篇文章中提出 **AX（Agent Experience / Accessibility Expe
 
 ## 核心要点
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 ### 1. AX 重新定义了 Accessibility
 
 Maeda 的核心洞察：我们一直把 Accessibility 理解为"为少数人做的额外工作"，但它实际上是**为所有人的基础设计**。每个人都会经历能力受限的时刻——单手操作手机、嘈杂环境看视频、强光下看屏幕。AX 不是事后补丁，而是设计阶段就应该内建的决策。

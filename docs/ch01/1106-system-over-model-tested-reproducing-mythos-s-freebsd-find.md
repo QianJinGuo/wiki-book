@@ -14,6 +14,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models 涉及article领域的核心技术议题。
 ### 核心观点
 1. A week later, Stanislav Fort at AISLE published a counter-thesis and reproduced the same find with `gpt-5.

@@ -23,6 +23,15 @@ pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 pi-mono 的架构选择揭示了构建生产级 Agent 工具链的核心挑战：如何在保持灵活性的同时确保工程的健壮性。与 LangChain 的抽象基类+工厂模式不同，pi-mono 采用注册表+事件流的架构，这种设计更强调运行时的事件驱动能力和模块间的松耦合。事件流架构（stream/complete/streamSimple/completeSimple 四接口）让不同模块之间通过标准化事件进行通信，而非直接的方法调用，这大幅降低了模块间的依赖耦合度。
 
 TypeScript 编译时类型安全是 pi-mono 区别于其他 Agent 框架的重要特征。在构建复杂 Agent 系统时，运行时类型错误是主要的调试成本之一。pi-mono 使用 TypeBox schema 工具定义，实现编译时类型安全和运行时验证的双重保障。这意味着开发者能在 IDE 中获得完整的类型提示和检查，同时运行时也不会因为类型不匹配而崩溃。对于需要长期维护的 Agent 项目，这种工程上的严谨性至关重要。

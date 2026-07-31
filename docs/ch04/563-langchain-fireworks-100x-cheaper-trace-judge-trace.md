@@ -14,6 +14,15 @@ LangChain 与 Fireworks 合作，**针对 trace 评估场景对 Qwen judge 模�
 
 ## 核心概念：Perceived Error（感知错误）
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 定义
 
 > Perceived error is when the user thinks the assistant made a mistake or produced something that needed correction.

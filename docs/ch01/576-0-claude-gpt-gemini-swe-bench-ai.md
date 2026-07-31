@@ -40,6 +40,21 @@ Claude Opus 4.7、GPT-5.4、GPT-5 mini、Gemini 3.1 Pro、Gemini 3 Flash——�
 
 ## 详细信息
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ---
 title: 0%完成率！Claude、GPT、Gemini 全灭，SWE-Bench作者新作把AI圈干沉默了
 source: wechat

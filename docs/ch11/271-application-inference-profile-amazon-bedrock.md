@@ -10,6 +10,18 @@
 
 ## 痛点：Bedrock 成本可见性
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 企业使用 Amazon Bedrock 时，多个业务单元（BU）共享同一个模型订阅，成本难以拆分。常见方案各有取舍：
 
 - **基于账单的方式**（成本分配标签、AWS Budgets）：准确但有数小时延迟，无法实时告警

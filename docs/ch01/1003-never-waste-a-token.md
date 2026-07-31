@@ -28,6 +28,21 @@ it goes deep fast. tool calls that may or may not have fired. sub-agents. half-w
 
 ## the problem that’s easy to miss
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 your agent opens a streaming request to a model, and the model starts generating. you’re billed for those output tokens the moment they’re generated. then your process gets replaced. maybe a deploy, maybe an eviction, maybe an OOM.
 
 the usual reassurance is “don’t worry, the state is durable.” and sure, your conversation history survived. but the _in-flight HTTP request to the provider_ did not. it lived in the memory of the process that just died. so when you recover, your only option is to **make the call again**. you pay for those output tokens a second time.

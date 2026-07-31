@@ -16,6 +16,15 @@ GitHub accessibility designer **Eric Bailey** 2026-06-15 发表的内部反思�
 
 ## "Vibe coding" 的真实定义（作者版本）
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 作者澄清：**vibe coding ≠ 简单英语提示词**。完整定义包括：
 - 简单的英语语言请求
 - 更技术性的 plans

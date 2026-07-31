@@ -60,6 +60,21 @@ token 开销对比
 
 ## 不只是贵
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 拥有 20x Max 的你可能会想，多花点 token 也就是多花点钱嘛，反正我有的是不限量套餐。
 
 还真不是这么简单。

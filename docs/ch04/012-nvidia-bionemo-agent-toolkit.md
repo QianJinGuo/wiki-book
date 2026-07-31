@@ -12,6 +12,15 @@ NVIDIA 发布的 BioNeMo Agent Toolkit 是一套面向生命科学领域的 AI �
 
 ## 核心组件
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 BioNeMo Agent Toolkit 整合了多个 NVIDIA 核心技术组件：
 
 - **Nemotron**：NVIDIA 的基础模型系列，提供科学推理所需的基础能力

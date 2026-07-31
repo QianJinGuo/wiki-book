@@ -38,6 +38,16 @@ GS-Playground 的设计目标正是
 
 ---
 ## 关联
+
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

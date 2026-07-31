@@ -12,6 +12,15 @@ Netflix 工程团队在 [Netflix Tech Blog](https://netflixtechblog.com/high-thr
 
 ## 业务场景与 OLTP/OLAP 分流
 
+```mermaid
+graph LR
+    SRC[数据源] --> ING[采集]
+    ING --> PROC[处理]
+    PROC --> STO[存储]
+    STO --> SERV[服务]
+```
+
+
 Netflix 的图使用场景分为两大类：
 
 | 类型 | 特征 | 技术选型 |

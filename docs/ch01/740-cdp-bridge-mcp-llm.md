@@ -16,6 +16,21 @@
 - **启动链路轻量**：`uvx cdp-bridge@latest` 即可启动，浏览器加载扩展即可连接
 
 ## 可用工具
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 | 工具名 | 说明 |
 |--------|------|
 | `browser_get_tabs` | 获取已连接标签页列表 |

@@ -53,6 +53,20 @@ Meta 超级智能实验室 AI 对齐总监 Summer Yue 向 OpenClaw 下达「未�
 
 ## 实践启示
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 **1. 为每个 Agent 实例部署三条数据管道**
 
 不要只依赖「能用」的基础日志。从一开始就将 Session 审计日志、应用运行日志、OTEL 遥测三条管道全部接入。可观测性不是事后补救，是架构设计的必要组成部分。参考 OpenClaw 的 SessionManager 模式，将每轮对话的完整结构化数据持久化到 JSONL 文件。

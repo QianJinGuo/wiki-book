@@ -47,6 +47,15 @@ Claude Code 将子 Agent 定义为标准 `AgentTool`：
 
 ## 设计原则
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 1. **权限绑定工具而非用户/场景**：defaultPermission 是工具本身属性
 2. **运行时覆盖优于静态配置**：assessRisk() 根据实际输入动态调整
 3. **子 Agent 即工具**：复用工具抽象，无需特化框架

@@ -6,6 +6,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 - Discord 宣布全平台（语音、视频、文字消息）端到端加密（E2EE）
 - 使用 Signal 协议的双棘轮算法（Double Ratchet）实现前向保密
 - 密钥交换使用 X3DH（Extended Triple Diffie-Hellman）协议

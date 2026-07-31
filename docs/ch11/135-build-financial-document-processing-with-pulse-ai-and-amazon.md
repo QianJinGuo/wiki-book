@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 8.1KB | `entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md`
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - Pulse AI + Amazon Bedrock 金融文档处理方案
 - 使用 Nova Micro 微调进行文档提取
 - Source: https://aws.amazon.com/blogs/machine-learning/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock/

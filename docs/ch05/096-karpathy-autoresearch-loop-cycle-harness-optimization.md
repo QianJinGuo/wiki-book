@@ -24,6 +24,15 @@ Hugging Face 工程师 Joel Niklaus 的实验《Don't Train the Model, Evolve th
 
 ## 什么是 Harness？
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Harness = Agent 的外层执行机制，类比"操作系统"管理 LLM（CPU）的内存、I/O、驱动程序。包含 12 个核心组件：流程编排、工具调用、分层存储、上下文管理、错误处理等。
 
 "上下文腐烂"问题：模型将关键信息置于上下文窗口中间时，性能下降 30%+。成熟的 Harness 通过压缩历史记录、屏蔽旧输出、动态获取和代理摘要来解决。

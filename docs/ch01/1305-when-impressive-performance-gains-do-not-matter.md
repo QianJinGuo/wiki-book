@@ -14,6 +14,15 @@ Colin Breck 以三个真实案例阐述了一个反直觉的工程洞察：**数
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 约束一：注意力阈值（Attention Threshold）
 
 **案例**：数据库查询从 5-10 分钟优化到 30 秒-1 分钟——一个数量级的提升。

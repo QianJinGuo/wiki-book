@@ -18,6 +18,15 @@ Databricks 通过收购 Panther 构建 **AI-native Security Lakehouse**，核心
 
 ## 传统 SIEM vs Agentic SOC
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 | 维度 | 传统 SIEM | Databricks Agentic SOC |
 |------|----------|----------------------|
 | 数据摄入 | 手动配置映射 | 100+ 预建集成，开箱即用 |

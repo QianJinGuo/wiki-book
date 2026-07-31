@@ -10,6 +10,15 @@
 
 ## 关键工程洞察
 
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
+
 1. **DVFS 缩频**：Dynamic Voltage and Frequency Scaling 在高温时自动降频，实际 FLOPs 低于标称值
 2. **FLOPs 可用率**：液冷方案可维持更高时钟频率，实际可用 FLOPs 更接近标称值
 3. **集群级时钟管理**：大规模 GPU 集群中，单节点的热节流会影响整体训练效率

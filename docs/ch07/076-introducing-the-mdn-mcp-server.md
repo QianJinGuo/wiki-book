@@ -16,6 +16,15 @@
 
 ## MDN MCP server 的核心能力
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 **1. Resources（资源暴露）**
 - `https://mdn-mcp.example.com/{path}` 格式：暴露任意 MDN 文档 URL 为 MCP resource
 - agent 可以 resources/read 获取完整文档内容

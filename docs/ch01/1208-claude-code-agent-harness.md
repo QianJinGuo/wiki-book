@@ -14,6 +14,15 @@
 ### 核心观点
 1. # 面向大型代码库的 Claude Code 团队落地经验与扩展策略（Agent Harness）
 ## 核心问题
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 在大型代码库里，Claude Code 失误很多时候源自起点偏差：站错目录、读错模块、继承了过期规则，或者被大量噪音文件带偏。
 2. **Claude Code 在大型代码库里的表现，很大程度上取决于团队能不能让它快速进入正确上下文。
 3. **

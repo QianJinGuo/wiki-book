@@ -14,6 +14,21 @@ Superpowers 第二篇深度解读：聚焦 Rule/Gate/Hook 核心哲学、Iron La
 
 ## 互补角度（vs 百度Geek说版）
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 本文聚焦以下独特贡献：
 - Rule vs Gate vs Hook 哲学区分
 - 1% rule 详解

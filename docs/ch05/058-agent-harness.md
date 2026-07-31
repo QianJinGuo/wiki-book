@@ -16,6 +16,15 @@
 
 ## Coding Agent 作为早期优势场景
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Coding Agent 拥有四个天然优势：上下文相对清晰（代码、依赖、配置在仓库中）、工具天然存在（终端、文件系统、Git）、验证机制完整（编译、测试、运行可验证）、恢复成本低（Git 版本控制）。这使得 Coding Agent 成为观察通用 Agent 演化方向的重要窗口。
 
 ## Workflow vs Agent 决策框架

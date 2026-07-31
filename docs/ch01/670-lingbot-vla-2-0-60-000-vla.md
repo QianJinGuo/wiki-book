@@ -14,6 +14,16 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
+
 - **数据规模**：总计 60,000 小时真实物理数据（50,000 小时机器人轨迹 + 10,000 小时第一视角人类操作视频），覆盖 20 种机器人构型（Leju、Franka、AgileX、ARX Lift2、Galaxea R1Pro、Astribot S1、Unitree G1、Fourier GR-2、AgiBot A2 等）。
 - **动作空间扩展**：从 V1.0 的双臂操作扩展到头部、腰部、移动底盘、灵巧手等更完整的动作空间，适应多种机器人形态。
 - **空间理解增强**：融合 LingBot-Depth 2.0 深度模型，让机器人获得更强的三维空间理解能力。

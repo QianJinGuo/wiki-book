@@ -24,6 +24,15 @@ CLI Agent 的核心特征在于 Shell 级的进程编排能力：管道组合（
 
 ## 实践启示
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 1. **优先实现管道组合**：管道是 CLI Agent 最强大的抽象，让工具之间的数据流变得可预测、可测试。
 2. **进程管理是硬需求**：不要忽视超时控制、子进程清理和退出码处理——这些是 CLI Agent 稳定运行的基础。
 3. **利用 MCP 生态**：优先选择实现 MCP 协议的工具，避免为每个工具编写自定义适配器。

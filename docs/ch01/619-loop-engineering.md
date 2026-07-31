@@ -42,6 +42,15 @@ publish_date: 2026-06-17
 
 ## 详细信息
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ---
 title: 《Loop Engineering橙皮书》发布！免费，开源
 source: wechat

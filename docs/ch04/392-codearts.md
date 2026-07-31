@@ -20,6 +20,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 企业级 AI 编码的两大核心矛盾
 
 CodeArts 新版本的能力升级映射出企业级 AI 编码工具面临的两大核心矛盾：

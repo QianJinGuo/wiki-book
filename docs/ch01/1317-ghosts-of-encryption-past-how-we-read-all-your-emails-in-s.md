@@ -11,6 +11,15 @@ Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTar
 **"Ghosts of Encryption Past"的含义**：标题暗示这是一种历史上被忽视但持续存在的架构缺陷。随着数据隐私法规（GDPR、CCPA）的严格执行和，企业对数据控制权的关注度提升，这类架构设计开始被更严格地审视。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 1. **在评估邮件 SaaS 服务的安全合规性时，明确询问密钥管理架构**：如果服务提供商声称支持"加密"但保留解密能力，则该加密仅保护传输层，而非内容层。对于需要真正内容加密的场景（如医疗、金融行业的敏感通信），应选择客户自管理密钥的方案。
 2. **对已有 SaaS 邮件服务进行数据流审计**：检查哪些系统和服务有邮件内容的访问权限，即使是"仅用于故障排查"的技术访问也应纳入风险评估范围。
 3. **关注 Salesforce Marketing Cloud 的密钥管理选项更新**：如果你是 Salesforce Marketing Cloud 的用户，关注其是否提供客户自管理密钥（BYOK 或 CMK）功能，以及该功能下 Salesforce 是否在架构上被排除在解密路径之外。

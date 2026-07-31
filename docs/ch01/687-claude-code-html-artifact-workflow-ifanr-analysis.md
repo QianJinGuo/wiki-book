@@ -14,6 +14,20 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### 1. Markdown 的"天花板"
 
 Markdown 对短任务很好——写计划、解释函数、列 checklist。但当 Claude Code 开始生成更长的计划、方案、PR 说明、设计探索、研究报告时，Markdown 会变成一堵墙。

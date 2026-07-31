@@ -8,6 +8,18 @@
 - ... → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 CDK Mixins 的核心价值在于**解耦抽象与实现**，彻底解决了 CDK 传统 L1/L2/L3 架构中的根本性矛盾：团队必须在"快速获取新 AWS 特性"和"获得高级抽象"之间做出非此即彼的选择 。Mixin 模式让开发者可以在任意构造类型上组合所需能力，而无需继承不需要的行为。
 **通用兼容性是关键突破**。Mixin 可应用于 L1、L2 和自定义构造，实现了真正的基础设施代码复用 。这意味着企业可以基于 L1 构造构建自己的标准化抽象层，而不是等待官方 L2 支持。
 **跨服务抽象能力**使组织能够创建贯穿多个 AWS 服务的统一策略。官方示例中的 `MyDataRecovery` mixin 同时支持 S3 桶和 DynamoDB 表的版本控制/Point-in-Time恢复配置 。这种跨服务组合性在传统 L2 构造中几乎不可能实现。

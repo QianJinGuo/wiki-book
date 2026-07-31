@@ -22,6 +22,21 @@ Meta Skill：Skill 之上编排 Skill 的抽象层 涉及agent领域的核心技
 4. 0，Python
 > 团队：基元律动（创始人王云鹤）
 ## 一句话定位
+
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
 **Meta Skill = "Skill 的 Skill" = 多个原子 Skill 的"项目经理操作手册"。
 5. ** 把多步骤编排、并行/串行决策、产出物上下游衔接，**全部内嵌到一份 SKILL.
 

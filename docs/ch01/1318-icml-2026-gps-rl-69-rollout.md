@@ -16,6 +16,15 @@ RLVR（Reinforcement Learning with Verifiable Rewards）已经成为提升大模
 
 ## 方法：GPS
 
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
+
 GPS 的做法是：先训练一个小型、可泛化的 Prompt Predictive Model（PPM），让它预测不同 prompt 在当前模型下的难度；再根据难度和 batch 多样性选择训练样本，从而减少无效 rollout。
 
 与已有的方法相比：

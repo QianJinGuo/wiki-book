@@ -14,6 +14,21 @@
 
 ## 架构设计
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 新模型保留 Embedding 和 Sequence 层，将序列和非序列特征聚合后 concat，切割为指定维度的 Token，进入多层 RankMixer，最后接 MMCN Task Tower 分别预测 CTR、Item CTCVR 和 Shop CTCVR。
 
 每个 RankMixer Block 由两个核心组件构成：

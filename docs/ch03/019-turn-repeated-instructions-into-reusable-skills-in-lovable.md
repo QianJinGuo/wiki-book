@@ -13,6 +13,15 @@
 - **Skills 只是指令，不是脚本**：Skill 不执行操作、不扫描网站、不运行检查——只是 Lovable 读取并遵循的指南
 
 ## 深度分析
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ### 1. Skills 的本质价值：消除重复摩擦
 文章指出了 AI agents 当前的核心矛盾：通用性与个性化的张力。当前 agent 没有记忆，每次对话都是全新的上下文。用户被迫反复解释自己的 conventions、风格偏好和已有工作方式。这种"小摩擦累积"是 agent 采用率提升的主要障碍之一。
 Skills 的解决方案本质上是将"隐性知识显性化"——把用户头脑中对"这件事应该怎么做"的认知提取成文档，让 AI 可读取。这与传统的 prompt library 不同，Skills 是任务触发的可组合单元，而非静态的指令集合。

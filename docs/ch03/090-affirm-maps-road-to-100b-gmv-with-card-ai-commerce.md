@@ -15,6 +15,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 **"封闭循环网络"作为竞争护城河的结构性优势**
 Affirm 的核心战略定位并非单纯的 BNPL（先买后付）贷款商，而是一个多角色整合的支付网络。Max Levchin 在投资者论坛上明确指出：Affirm 同时扮演发卡行（issuer）、收单方（acquirer）、信用信息传递方（credit information transmitter）和风险管理方（risk manager）四个角色，构成一个封闭循环的信息保留网络 。这一架构的战略意义在于：大多数竞争对手（如 Klarna、Afterpay）仅扮演贷款撮合方角色，并不拥有网络基础设施，而 Affirm 通过自持支付牌照实现了对交易数据全链路的掌控。
 数据资产的规模进一步强化了这一护城河。Libor 在演讲中透露，Affirm 在 14 年间积累了 $1500 亿交易量和 23 亿笔还款记录，这一数据规模为模型训练提供了显著的先发优势 。值得注意的是，Affirm 正在将 transformer-based AI 模型引入承销流程，实验数据显示新模型优于现有模型，这暗示着 AI 驱动的承销精度将在未来 1-2 年内进入一个新的性能拐点 。

@@ -14,6 +14,15 @@
 
 ## 三层架构
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 第一层：Loop = cron + 决策者
 
 loop 按计划或触发器运行，评估状态，决定下一步。cron 是心跳，LLM 是决策者，步骤是耐久执行层用来 checkpoint 进度。

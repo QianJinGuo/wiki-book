@@ -35,6 +35,15 @@ GovDash CEO Sean Doherty 的引言值得单独拆解："Customers will be consum
 这揭示了一个关键的护城河逻辑转变：**在 Agent 时代，护城河不再是功能多少，而是每个产品表面作为特定任务 micro harness 的效率**。用户关心的不是「你的软件有多少功能」，而是「用你的软件完成任务，每 token 产出的质量」。这个框架与 [Harness Engineering](../ch05/120-harness-engineering.html) 实体高度互补。
 
 ## 实践启示
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 1. **立即行动而非等待清晰**：文章明确说"如果你不感到害怕，你已经落后了"。对于 Vertical SaaS 公司，这意味着现在就必须把 Agent 集成到产品路线图的核心位置，而不是放在实验层。
 2. **用独立定价验证 Agent 价值**：将 Agent 作为独立产品线定价，而非打包进订阅。这不仅是对客户的信号，也是对内部团队和投资人的诚实度量。
 3. **重新思考 SDLC**：用全 Agent 开发方式重建软件交付流程。Tidemark 的判断是「 dispersion 将越来越多地存在于能用 AI 速度交付和不能的公司之间」，这对工程组织是一个结构性要求。

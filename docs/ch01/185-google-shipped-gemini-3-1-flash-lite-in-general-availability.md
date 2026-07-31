@@ -24,6 +24,21 @@ Google shipped Gemini 3.1 Flash-Lite in General Availability
    MoreWeekly NewsletterFor Advertisers 
 [](https://www.facebook.com/testingcatalog "Faceboo...
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 **Flash-Lite 定位分析**：Gemini 3.1 Flash-Lite 是 Google 面向成本敏感场景推出的轻量级模型，主打高性价比推理。GA（General Availability）意味着该模型已通过生产环境验证，可用于正式业务场景。
 **Google 模型策略的层级分化**：从 Gemini 3.1 Flash-Lite 到 Ultra，Google 建立了覆盖不同需求层次的模型矩阵。Flash-Lite 面向日常应用和大规模调用场景，而更高规格模型面向复杂推理任务。这种分层策略与 OpenAI 的 GPT-4o mini/Plus/Pro 布局形成竞争。
 **GA 状态的技术含义**：模型进入 GA 阶段，表明 Google 对其稳定性、性能指标、安全性评估已达到生产级标准。对于构建在 Google AI 基础设施上的应用开发者而言，这是重要的可靠性信号。

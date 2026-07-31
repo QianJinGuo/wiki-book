@@ -9,6 +9,21 @@ AutoCLI 是一个用 Rust 实现的高速、内存安全的命令行网页信息
 > "Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command"
 
 ## Key Facts
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 | Fact | Detail |
 |------|--------|
 | GitHub | https://github.com/nashsu/AutoCLI |

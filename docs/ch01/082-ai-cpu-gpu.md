@@ -10,6 +10,15 @@
 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
 
 ## 关键要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
 
 ## 相关实体

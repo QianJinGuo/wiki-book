@@ -8,6 +8,15 @@
 - 评分：v=7, c=8（v×c=56）
 - 来源：The Guardian（Anthropic 安全漏洞披露）
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [Chinese Ai Lab Insights Nathan](../ch05/094-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/linn-fritz-looks-at-the-lighter-side-of-life.md)

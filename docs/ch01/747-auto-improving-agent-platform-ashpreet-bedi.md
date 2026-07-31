@@ -20,6 +20,15 @@
 Ashpreet Bedi 的 Auto-Improving Agent 平台五工作流：Create→Improve→Extend→Hill Climb→Review；三原则（API化/数据同地/日志优先）；核心洞察——5秒反馈循环改变"值得做"边界；INSTRUCTIONS 驱动自动测试生成；Agent 行为天然可自动评分；反思：优化符合规格 ≠ 真正有用，提示词文件化是底层前提。
 
 ## 五工作流
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 | 工作流 | 性质 | 核心功能 |
 |--------|------|---------|
 | Create | 从零搭 | 一句指令搭新 Agent，5-10 分钟 |

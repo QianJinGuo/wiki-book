@@ -12,6 +12,21 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-releases-open-source-agent-runtime-sdk.md)
 
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
 - [Cline releases open-source agent runtime SDK](../ch03/035-agent.html)
 - [腾讯混元Hy3-preview发布](../ch01/117-hy3-preview.html)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)

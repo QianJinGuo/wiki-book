@@ -12,6 +12,20 @@ DeepMind 论文《The Topological Trouble With Transformers》（arXiv:2604.1712
 
 ## 深度分析
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 1. 核心问题：Transformer 的状态追踪缺陷
 
 Transformer 的核心策略是把整个对话历史装进上下文窗口，通过注意力机制检索过去信息。这绕开了 RNN 难以记住远距离信息的问题，但有一个根本性缺陷——状态追踪（State Tracking）。

@@ -8,6 +8,20 @@
 - 来源：eng-leadership
 - 评分：v=7 × c=8
 ## 相关实体
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/330-ai-coding-agent.html)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/453-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Low Code Api Integration](../ch03/075-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)

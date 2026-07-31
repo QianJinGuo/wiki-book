@@ -15,6 +15,15 @@
 | Anthropic成功 | 使命对齐+专注，使命筛子过滤一切分散注意力的方向 |
 
 ## Claude Code三产品选型
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 - **CLI**：最新功能+多任务并行
 - **Desktop**：前端+图形化+不熟悉终端
 - **Cowork**：非代码产出（文档/邮件/PPT/Slack）

@@ -12,6 +12,18 @@ ByteByteGo 对 OpenAI 实时语音 AI 基础设施的深度技术分析揭示了
 
 ## 核心要点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - **架构拆分原则**：将 WebRTC 会话拆为无状态中继（边缘就近转发）和有状态收发器（持有 ICE/DTLS/SRTP 状态），解决 Kubernetes 环境下 WebRTC 的端口耗尽与状态粘性问题
 - **ICE ufrag 路由技巧**：在信令阶段生成服务器端 ufrag 并嵌入路由元数据，中继层解析首包的 ufrag 即可决定转发目标，无需查数据库或随机路由
 - **拒绝 SFU 的选择**：OpenAI 评估了标准 SFU（Selective Forwarding Unit）架构后选择自研中继模式，因为其流量模式以 1:1 对话为主，SFU 的多方会议设计反而带来不必要的开销

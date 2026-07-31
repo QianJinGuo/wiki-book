@@ -10,6 +10,15 @@
 
 ## 核心框架
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 NIST SP 800-213r1 定义了联邦政府采购和部署 IoT 产品时应遵循的**网络安全能力框架**，是 SP 800-213（2020）的修订版，反映了近年来 IoT 安全威胁态势的重大变化。
 
 ### IoT 产品安全能力（IoT Product Cybersecurity Capabilities）

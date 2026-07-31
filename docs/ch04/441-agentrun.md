@@ -10,6 +10,20 @@
 深势科技携手阿里云AgentRun，加速科研 AI Agent 全速运行
 
 ## 关键要点
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 - 深势科技是全球 AI4S（AI for Science）行业的开拓者和引领者
 - 阿里云 AgentRun 提供 Serverless + AI 原生基础设施
 - 科研 Agent 的核心挑战：长时异步任务、高精度要求、复杂安全

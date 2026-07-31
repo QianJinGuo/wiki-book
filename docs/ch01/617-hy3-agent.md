@@ -15,6 +15,15 @@ MoE，总参 295B，激活 21B，256K 上下文。快慢思考融合模型。
 
 ## 关键评测数据
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 产品 | 指标 | Hy3 表现 |
 |------|------|---------|
 | WorkBuddy Agent | 任务成功率 | **90%**（preview 72%，+18pp） |

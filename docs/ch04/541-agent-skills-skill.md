@@ -30,6 +30,21 @@ agent 启动时看到的 skill 清单是 `<available_skills>` 平铺列表，每
 
 ## 与四种体系的反差对比
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 | 维度 | Java import | 微服务调用 | MCP 工具 | Agent Skill |
 |------|------------|-----------|---------|------------|
 | 依赖声明 | 编译期硬依赖 | 服务注册/发现 | 接口 schema | **无** |

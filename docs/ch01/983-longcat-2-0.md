@@ -24,6 +24,21 @@ API 平台：https://longcat.chat/platform/product
 
 ## 架构亮点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### LongCat Sparse Attention (LSA)
 
 稀疏注意力机制，将计算量从平方级降至线性级，在 100 万 Token 的超长上下文中依然保持精准的信息定位与理解能力。

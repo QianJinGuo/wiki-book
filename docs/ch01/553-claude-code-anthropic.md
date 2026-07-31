@@ -12,6 +12,15 @@
 Claude Code正在被部署进数百万行代码的单体仓库、运行了数十年的遗留系统、跨几十个代码库的分布式架构，以及拥有数千名开发者的大型组织。
 
 ## 相关实体
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/598-anthropic-claude-code.html)
 - [Anthropic Founders Playbook Huashu 2026](ch01/989-anthropic.html)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)

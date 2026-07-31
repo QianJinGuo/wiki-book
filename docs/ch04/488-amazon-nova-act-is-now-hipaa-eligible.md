@@ -13,6 +13,18 @@
 
 ## 技术规格
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 - **服务类型**：HIPAA 合格服务（HIPAA Eligible Service）
 - **集成协议**：MCP、API 调用、Strand Agents
 - **适用行业**：医疗保健和生命科学（HCLS）组织

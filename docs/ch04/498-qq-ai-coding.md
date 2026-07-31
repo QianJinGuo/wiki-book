@@ -18,6 +18,20 @@ QQ 浏览器平台技术团队（腾讯 CSIG）基于 CodeBuddy Plugin 搭建了
 
 ## 核心设计：从 Agent 视角定义经验
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 判定标准：**被召回后，Agent 能否产生正向的行为变更**。
 
 ### 三镜头框架

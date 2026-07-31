@@ -18,6 +18,18 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 Hermes 的记忆系统之所以值得单独拆解，不在于它功能更全，而在于它对"记忆"这件事做了更彻底的工程化拆解。OpenClaw 的记忆方案本质上是一个更大的"口袋"——把所有历史、偏好、文件索引都扔进 memory plane，按需检索。这种做法有两个隐患：一是记忆边界模糊导致的管理困境，二是每次召回都可能冲击 prompt cache 成本模型。
 
 Hermes 的核心洞察是把"记忆"这个动词拆成四个完全不同的问题：

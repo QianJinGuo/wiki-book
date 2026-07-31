@@ -12,6 +12,21 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 - **两阶段工作流**：Stage 1 分析 review 拆解为独立问题并判断真实疑虑与严重程度；Stage 2 在作者提供真实结果后核实对应关系并组织回复
 - **优先级排序机制**：Stage 0 先评估本轮 rebuttal 的可操作空间，将实验按 P0-P3 分级排序，无法回应核心疑虑的实验标记为 `DO NOT RUN`
 - **多视角理解审稿意见**：rebuttal 应从审稿人和 AC 两个视角理解意见，而非逐条回复——多位审稿人共同关心的问题合并回答，核心问题放在前面

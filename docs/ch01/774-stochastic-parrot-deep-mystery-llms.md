@@ -21,6 +21,21 @@ A while back on [X](<https://x.com/emollick/status/1960919256452796440>), Ethan 
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 这篇文章的核心论点是：LLM 的"深度神秘感"并非来源于模型架构本身的某种魔法，而在于训练语料库的广度和深度。作者认为，当我们把注意力从模型的数学机制转向训练语料的本质时，神秘感就会消散。
 
 **关键洞察一：语料库不仅是知识库，更是思维结构库**

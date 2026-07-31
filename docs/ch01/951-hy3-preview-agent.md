@@ -23,6 +23,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升 涉及agent领域的核心技术议题。
 ### 核心观点
 1. # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升

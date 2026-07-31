@@ -19,6 +19,21 @@ Findings from 50 design systems:
 
 ## Three-Layer Analysis
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ### 1. Format Layer: Parseability of Token Files
 
 Different design systems export tokens in vastly different formats. JSON is most agent-friendly, but CSS variables and SCSS mixed formats require additional conversion layers.

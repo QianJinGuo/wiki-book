@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 3.4KB | `entities/drupal-core-security-drupal-to-release-urgent-core-security.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - Drupal 核心安全更新将于 2026 年 5 月 20 日 17:00-21:00 UTC 发布
 - 影响所有受支持的 Drupal 版本（11.3.x, 11.2.x, 10.6.x, 10.5.x）
 - Drupal 安全团队警告：漏洞严重，exploit 可能在数小时到数天内出现

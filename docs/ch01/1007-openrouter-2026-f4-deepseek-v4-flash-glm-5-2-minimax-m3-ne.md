@@ -22,6 +22,21 @@ DeepSeek V4 Flash 是第一个被开发团队直接塞进智能体工作流的�
 
 ## GLM 5.2：开源质量铁王座
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 GLM 5.2 于 2026 年 6 月中旬发布，在 Artificial Analysis 4.1 智力指数拿下 51 分排名开源第一，距离闭源 Claude Fable 5 仅差 5 分。MIT 协议，真实智能体基准测试中与 GPT-5.5 xhigh 打平。
 
 - **智力指数**：51（开源第一）

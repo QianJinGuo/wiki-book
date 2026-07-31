@@ -9,6 +9,15 @@
 - RAMPART and Clarity: Microsoft Open-Sources AI Security Tools
 
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/262-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/298-ai-agent.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/094-ai.html)

@@ -56,6 +56,15 @@
 
 ## Harness 不只是一层壳
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 我们先把三个词分开看。
 
 - •

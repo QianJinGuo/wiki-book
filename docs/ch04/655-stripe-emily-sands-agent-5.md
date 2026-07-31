@@ -21,6 +21,20 @@ Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础
 > 核心断言：**互联网上出现了新的经济主体。
 4. **
 ## 01 互联网上出现了新主体
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 Emily Sands 是 Stripe 的高管。
 5. 开头一句话很干脆：**互联网上出现了新的经济主体。
 

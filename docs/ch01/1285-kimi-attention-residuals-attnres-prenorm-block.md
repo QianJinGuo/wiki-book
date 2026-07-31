@@ -9,6 +9,21 @@ Kimi 提出 Attention Residuals 机制：用注意力机制让每层自己选择
 ---
 
 ## 核心洞察
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 ### 问题：PreNorm 稀释
 传统残差连接将前面所有层输出**等权相加**，导致：
 

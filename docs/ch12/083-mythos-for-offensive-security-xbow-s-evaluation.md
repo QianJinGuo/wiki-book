@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 6.0KB | `entities/mythos-for-offensive-security-xbows-evaluation.md`
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 **Mythos Preview 的核心定位**：Anthropic 委托 XBOW 对其新模型进行独立安全评估，这是继 Opus 4.7 和 GPT 5.5 之后 XBOW 第三次系统性评估前沿模型。Mythos Preview 被定位为"重大能力飞跃"，尤其在源代码漏洞发现领域。
 **评测方法论亮点**：XBOW 组建了 10 人跨领域专家团队，采用"冻结漏洞版本 + 自动化 agent 对抗"的标准基准测试框架。与以往不同，本次额外考察了威胁建模判断力、源代码 vs  live-site 交互能力差异、以及原生应用漏洞发现等新维度。值得注意的是，评测区分了"裸模型 API"和"Claude Code 内嵌"两种使用形态，因为编排层、工具链和实时访问会实质性影响结果。
 **漏洞发现的核心数据**：相比 Opus 4.6，Mythos Preview 的漏报率下降 42%，提供源代码时进一步下降至 55%。token-for-token 精度上，其定位漏洞的效率达到"前所未有"的水平。这验证了一个反复出现的主题：**Mythos 擅长写代码，但更擅长读代码**。

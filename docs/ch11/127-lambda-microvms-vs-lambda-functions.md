@@ -10,6 +10,15 @@
 
 ## 摘要
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 Lambda MicroVMs 的推出标志着 Serverless 计算从「函数即服务」（FaaS）向「隔离沙箱即服务」（Isolated Sandbox as a Service）的重要演进。与 Lambda Functions 的事件驱动无状态短任务模型不同，MicroVMs 为每个会话分配完全独立的 Firecracker VM——独立内核、独立内存空间、独立磁盘状态——专为需要 VM 级隔离、有状态长会话和完整生命周期控制的场景设计，特别是 AI 编程助手、多租户 SaaS 平台和安全代码执行环境。
 
 ## 核心要点

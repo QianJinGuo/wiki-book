@@ -10,6 +10,15 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 Starting from a sandboxed Python code block on Zapier's free tier, the Token Security research team walked a five-step chain that ended with node package manager (NPM) publishing rights to zapier-design-system, a private package that ships JavaScript into every authenticated Zapier user's browser.
 
 ### 核心观点

@@ -10,6 +10,18 @@ AWS 推出的 SES Sender 是构建于 Amazon SES 之上的自托管、开源邮�
 
 ## 核心痛点
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 运营和增长团队面临的邮件营销挑战：
 
 1. **可送达性**：邮件是否进入收件箱（而非垃圾箱）取决于发信信誉、模板质量、合规配置

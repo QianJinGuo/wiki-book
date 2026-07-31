@@ -12,6 +12,21 @@ Ethan Mollick（One Useful Thing）关于 AI 评估方法论的深度文章。�
 
 ## 摘要
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 AI 评估面临三重困境：(1) 基准测试的题目和答案公开，部分模型在训练中已见过；(2) 即便没见过，我们也不清楚这些测试到底在测什么（MMLU-Pro 中的"直立人平均颅容量"和"Cheap Trick 1979 年现场专辑"这类题目，答对意味着什么？）；(3) 测试往往未校准——从 84% 到 85% 和从 40% 到 41% 的难度可能完全不同。Mollick 提出三种互补的评估路径：Vibes 式测试（个人快速感知）、真实世界基准（如 GDPval）、系统性"面试"（组织级部署必做）。
 
 ## 核心要点

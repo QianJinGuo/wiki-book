@@ -14,6 +14,16 @@
 
 ## 解决方案：Agentic 测试编排
 
+```mermaid
+graph LR
+    T[文本] --> ENC[编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    ENC --> FUS[融合]
+    FUS --> OUT[输出]
+```
+
+
 核心洞察是 Agentic 测试需要三种不同能力，不应该混在一起：
 
 1. **智能层（Intelligence Layer）**—— Amazon Bedrock Claude，理解要做什么、规划测试步骤、验证结果

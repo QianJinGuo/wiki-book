@@ -23,6 +23,16 @@ What has followed is a slow, groundswell of hype for GLM-5.2. The official, MIT-
 
 ---
 ## 关联
+
+```mermaid
+graph LR
+    IN[输入] --> TH[思考]
+    TH --> AC[行动]
+    AC --> OB[观察]
+    OB -->|"循环"| TH
+    TH --> OUT[输出]
+```
+
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 

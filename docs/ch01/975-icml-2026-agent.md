@@ -45,6 +45,20 @@ ACL'26 两场及搜推 ASX 团队专场已结束，视频沉淀  见【美团技
 
 ##  ** 01  **
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 MemOCR: Layout-Aware Visual Memory for Efficient Long-Horizon Reasoning
 
 MemOCR：面向高效长程推理的版面感知视觉记忆机制

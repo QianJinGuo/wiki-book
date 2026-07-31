@@ -20,6 +20,36 @@
 
 ## 导读
 
+```mermaid
+graph TB
+    subgraph "LLM 基础"
+        TK[Tokenizer<br/>分词] --> EMB[Embedding<br/>嵌入]
+        EMB --> ATT[Attention<br/>注意力]
+        ATT --> FFN[FFN<br/>前馈]
+        FFN --> OUT[输出]
+    end
+    subgraph "关键能力"
+        GEN[生成] 
+        REA[推理]
+        COD[代码]
+        MM[多模态]
+    end
+    OUT --> GEN & REA & COD & MM
+    subgraph "演化"
+        GPT2["GPT-2"] --> GPT3["GPT-3"]
+        GPT3 --> GPT4["GPT-4"]
+        GPT4 --> GPT5["GPT-5"]
+    end
+    ATT --> GPT4
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef cap fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef evo fill:#d1fae5,stroke:#059669,color:#064e3b
+    class TK,EMB,ATT,FFN,OUT core
+    class GEN,REA,COD,MM cap
+    class GPT2,GPT3,GPT4,GPT5 evo
+```
+
+
 你每天都在用 ChatGPT、Claude、Gemini，但你知道它内部发生了什么吗？
 
 本章从最基础的概念开始：文字如何变成数字（Tokenization），数字如何获得语义（Embedding），模型如何理解上下文（Attention），以及它为什么能生成看似"智能"的回答（Next-Token Prediction）。

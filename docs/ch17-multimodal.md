@@ -19,6 +19,22 @@
 
 ## 导读
 
+```mermaid
+graph LR
+    T[文本] --> ENC[多模态编码器]
+    I[图像] --> ENC
+    A[音频] --> ENC
+    V[视频] --> ENC
+    ENC --> FUS[融合层]
+    FUS --> DEC[解码器]
+    DEC --> OUT[输出]
+    classDef in fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef core fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class T,I,A,V in
+    class ENC,FUS,DEC,OUT core
+```
+
+
 纯文本 Agent 只是起点——多模态让 Agent 能真正"感知世界"。
 
 本章覆盖多模态 AI 的核心领域：视觉理解（DeepSeek 的指代精度论文）、音频生成（Xiaomi Dasheng 通用声音基座模型）、视频质量评估（Netflix VMAF）、3D 生成（Gaussian Splatting）、以及文档解析（logics-parsing-v2）。

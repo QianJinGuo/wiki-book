@@ -12,6 +12,15 @@ Federico Tomassetti（Software Language Consulting 创始人）对"LLM 是否会
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 软件的四大不可替代功能
 
 Tomassetti 归纳了软件持续提供价值的四个维度：

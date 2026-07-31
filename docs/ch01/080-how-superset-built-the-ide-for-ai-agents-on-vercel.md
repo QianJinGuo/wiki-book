@@ -10,6 +10,18 @@
 Superset 是由三位前 YC CTO 联合创立的多 Agent 开发 IDE，旨在解决传统开发工具无法适配并行 Agent 工作流的问题。其核心价值在于：将串行开发范式转变为并行开发范式，使团队能够同时调度多个 AI Coding Agent 在各自独立的隔离环境中协同工作。
 
 ## 核心指标
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - 1,000–1,400 次部署/周 
 - ~600 次预览部署/天 
 - ~30 秒平均构建时间 

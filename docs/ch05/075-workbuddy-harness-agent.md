@@ -22,6 +22,15 @@ WorkBuddy 策略产品经理 Anne 提出产品视角的模型调用抽象：
 
 ## 四层能力体系
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 | 概念 | 核心问题 | 消费者 |
 |------|---------|--------|
 | **Tool Call (Function Call)** | 模型怎么请求执行动作 | 模型 + Agent |

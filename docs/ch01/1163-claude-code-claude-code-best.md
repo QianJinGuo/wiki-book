@@ -14,6 +14,21 @@ Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进�
 ### 核心观点
 1. # Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么
 ## 项目背景
+
+```mermaid
+graph TB
+    IN[意图] --> PL[规划器]
+    PL --> EX[执行器]
+    EX --> OB[观察]
+    OB -->|"反思"| PL
+    subgraph "支撑"
+        M[记忆]
+        S[技能]
+        T[工具]
+    end
+    PL & EX --> M & S & T
+```
+
 Claude Code 自 2.
 2. 88 版本泄露后，GitHub 做了全网清理，但 claude-code-best/claude-code 社区仓库留存了下来，基于泄露代码继续演进。
 3. 截至 2026年5月22日，已发到 v2.

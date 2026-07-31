@@ -18,6 +18,20 @@ Note: All Multi-Dataset relationships in the current release use inner join. Onl
 
 ## Supported patterns
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 The following seven scenarios are natively supported by Quick Sight Multi-Dataset Relationships. Each scenario maps to a common data modeling pattern, with concrete implementation guidance and sample SQL.
 
 ### Scenario 1: Simple star schema

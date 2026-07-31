@@ -13,6 +13,18 @@
 - [How we made WINDOW JOIN parallel and vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 
 ## 深度分析
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 ### 核心洞察：数字主权不是口号，而是基础设施决策
 这篇文章的核心价值在于将"数字主权"从一个模糊的概念具体化为一系列可执行的基础设施迁移决策。作者的动机并非意识形态驱动，而是务实地评估了风险：政策变化、收购、管理层决策都可能导致依赖的 SaaS 工具突然不可用。
 **数字主权的操作性定义**：知道数据在哪里、谁能访问、什么情况下会失去访问权。这个框架帮助作者在每个服务选择上做出具体判断。

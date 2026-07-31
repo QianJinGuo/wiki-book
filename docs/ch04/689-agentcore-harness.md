@@ -14,6 +14,15 @@
 
 ## 系统架构
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 系统基于 Amazon Bedrock 的 AgentCore harness 构建，利用 LLM 的语义理解能力解析复杂约束，同时结合运筹学求解器（OR-Tools）提供确定性优化。系统包含以下关键设计：
 
 - **Multilingual Agent Collaboration**：对每个出行人员使用独立的 Agent 实例，并行处理约束计算

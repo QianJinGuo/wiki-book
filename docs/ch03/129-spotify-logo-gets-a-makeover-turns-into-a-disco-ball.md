@@ -8,6 +8,15 @@
 - 来自 newsletter 推荐的优质文章
 - 评分: v×c = 49
 ## 相关实体
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - [P Seo Is A Product Aeo Is Brand](ch03/121-seo-is-a-product-aeo-is-brand.html)
 - [Amazon Turns Alexa Into Its Next Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md)
 - [Spotify Llm Evals Funnel Not Fork](../ch01/1274-llm.html)

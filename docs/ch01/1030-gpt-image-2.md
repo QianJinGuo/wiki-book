@@ -11,6 +11,20 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析
+
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
 GPT-Image-2 在 Arena.AI Text-to-Image 排行榜以 1512 分登顶，领先第二名谷歌 Nano-Banana-2 共 242 分，是迄今为止最强大的图像生成模型。
 **核心能力矩阵：**
 

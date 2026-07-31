@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 7.8KB | `entities/building-enterprise-level-with-bedrock-agentcore-and-strands.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 by awschina on 20 11月 2025 in Application Integration Permalink Share 1. Agentic AI落地面临的问题 当前，生成式 AI 技术正以破壁之势迅猛发展，大模型的能力迭代更是日新月异。在此浪潮下，Agentic AI 的应用边界持续拓宽，已深度渗透至金融、医疗、制造、教育、娱乐等多个领域，以前所未有的速度重构商业竞争格局，颠覆各行业传统生产方式 —— 它不再是简单的技术工具，更成为驱动企业业务创新、提升核心效率的 “智能引擎”。正是看到这一机遇，越来越多的企业渴望搭乘 Agentic AI 的技术快车，加速推进行业智能体或通用智能体平台的落地。 作为 AWS 核心级合作伙伴，小宿科技始终聚焦企业 AI 转型需求，凭借安全可靠、高效敏捷的
 
 ## 核心技术

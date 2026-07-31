@@ -10,6 +10,18 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
+
 本文是 AWS DevOps Agent 接入中国区系列的第二篇，在第一篇 MCP 桥接架构的基础上，进一步解决了三个关键工程问题：多账号扩展、跨云接入、长期凭证治理。
 
 ### 多账号 Hub-Spoke 架构

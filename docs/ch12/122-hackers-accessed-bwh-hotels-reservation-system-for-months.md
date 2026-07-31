@@ -8,6 +8,15 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securityaffairs-bwh-hotels-breach.md)
 
 ## 深度分析
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 **酒店业数据泄露的长期潜伏特征与影响**：
 1. **超长潜伏期**：攻击者在 2025 年 10 月至 2026 年 4 月（长达 6 个月）持续访问预订系统——如此长的 dwell time 表明这不是机会主义攻击，而是有组织的持续性入侵
 2. **数据类型的敏感组合**：被泄露的信息（姓名+联系方式+地址+特殊需求）组合后可被用于高可信度的社会工程攻击；特殊需求字段（如饮食禁忌、宗教需求）进一步暴露个人隐私

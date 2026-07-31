@@ -8,6 +8,15 @@
 - ...
 
 ## 深度分析
+
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
 Ouster Rev8 的核心创新在于将 color fusion 从后处理阶段提前到了 sensor 端。传统的 sensor fusion 路线（LiDAR + Camera 分别感知，然后用软件算法拼接）存在三个固有问题：calibration error（外部参数漂移）、latency（两套 sensing 路径的时间差）、spatial mismatch（不同 sensor 的视角差异）。这三个问题在低速场景下可接受，但在高速自动驾驶场景中会成为安全瓶颈。
 Rev8 的解法是在 L4 chip 层面嵌入 Fujifilm 的 color science，实现 hardware-level color processing——每个 point 在生成时就自带颜色信息，无需额外处理。这个架构转变带来的实际收益：一次 capture 即可同时得到几何信息（LiDAR 的长项）和颜色信息（Camera 的长项），且二者天然空间对齐。
 L4 chip 的性能参数也值得关注：42.9 GMACs 处理能力、20 trillion photons/second 探测速度、40 kHz 运作频率、picosecond 精度。这些数字意味着 OS1 Max 可以在 200m（@10% reflectivity）到 500m（最优条件）的范围内提供 256 通道的颜色点云，且能同时处理 1 lux（近乎全黑）到 2,000,000 lux（直射阳光）的光照条件。

@@ -9,6 +9,15 @@
 - review: v=7 × c=8 = 56
 
 ## 摘要
+
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
 ## 相关实体
 - [The New Ai Lock In](ch01/995-the-new-ai-lock-in.html)
 - [New Ai Lock In](ch01/995-the-new-ai-lock-in.html)

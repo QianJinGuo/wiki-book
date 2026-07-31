@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 3.2KB | `entities/shinyhunters-7-eleven-data-breach.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - ShinyHunters 黑客组织攻击了 7-Eleven 特许经营商，暴露了大量特许经营数据
 - 被泄露的数据包括 Salesforce 记录
 - ShinyHunters 以大规模数据泄露闻名，曾泄露多家公司数据

@@ -16,6 +16,15 @@ IRIS 的 multi-venue liquidity aggregation 机制具有重要的系统性意义�
 
 ## 实践启示
 
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
+
 - **在构建 DeFi 信贷产品时优先考虑 intent-based 范式**：相比传统的固定利率借贷池方案，以借款人财务意图为出发点的撮合模型能够实现更好的利率发现效率和用户体验，是下一代信贷协议的核心设计方向 。
 
 - **关注 solver 网络的监管合规性风险**：IRIS 模型中 solver 承担了类似银行的资产负债管理职能，在部分地区可能触发证券或期货交易监管，协议设计者和参与者需提前评估合规边界 。

@@ -19,6 +19,25 @@
 
 ## 导读
 
+```mermaid
+graph LR
+    Q[量化 INT4/8] --> KV[KV Cache优化]
+    KV --> PD[Prefill/Decode分离]
+    PD --> SP[投机采样]
+    subgraph "部署"
+        LOC[本地GPU]
+        CLD[云端API]
+        EDG[边缘设备]
+    end
+    Q --> LOC & CLD
+    SP --> EDG
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SP opt
+    class LOC,CLD,EDG deploy
+```
+
+
 模型训练好了，怎么高效地跑起来？
 
 本章覆盖推理优化的核心技术：投机解码（DFlash 4.3× 吞吐提升）、MoE 架构（DeepSeek V4 万亿参数只激活一小部分）、PD 分离（Prefill 与 Decode 分开部署）、量化（从 FP16 到 INT4 的精度-速度权衡）。

@@ -14,6 +14,20 @@ GPT-5.6 系列分三个能力层级：旗舰 Sol、均衡 Terra 和轻量 Luna�
 
 ## Benchmark 表现
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 启用最高推理强度的 Sol 在 Agents' Last Exam（55 个领域）上取得 53.6%，在 Coding Agent Index v1.1 上取得 80 分，在 Terminal-Bench 2.1 Ultra 模式下达到 91.9%——三个数字均为各自评测的当前最高或并列最高分，且均以低于 Fable 5 的 API 标价实现。SWE-Bench Pro 上 Sol 得分为 64.6%，而 Fable 5 为 80%，差距显著。OpenAI 官方对 SWE-Bench Pro 结果提出异议，声称约 30% 的评测实例存在结构性缺陷，但这一主张目前无独立裁决。
 
 GPT-5.6 在任务路径明确、步骤可拆分的场景（命令行操作、终端测试、浏览器自动化）表现突出，在开放式的仓库级代码修改上出现缺口。Fable 5 则相反——SWE-Bench Pro 80 分一骑绝尘，但 Terminal-Bench 2.1 上被 Sol 甩开近 9 个百分点。

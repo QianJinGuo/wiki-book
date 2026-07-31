@@ -14,6 +14,15 @@
 
 ## 核心内容
 
+```mermaid
+graph LR
+    IN[输入] --> ANALY[分析]
+    ANALY --> OPT[优化]
+    OPT --> MEAS[度量]
+    MEAS -->|"迭代"| ANALY
+```
+
+
 ### Harness Engineering理解
 
 Harness Engineering是一套用于规范和优化AI代码生成过程的工程方法论，核心目标是让AI在生产环境中更可靠、更可控。

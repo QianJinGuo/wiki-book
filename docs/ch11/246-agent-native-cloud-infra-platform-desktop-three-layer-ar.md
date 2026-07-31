@@ -10,6 +10,20 @@
 
 ## Three-Layer Architecture: Infra - Platform - Desktop
 
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
+
 ### Agent Infra
 The runtime foundation providing secure, elastic, low-cost execution environments. Core component is **Agent Sandbox**, with four capabilities:
 - **Ready-to-use templates** — Code Interpreter, Browser, AIO, OSWorld from open-source community images

@@ -20,6 +20,21 @@
 
 ## Chapter 1：外部世界节奏对 AI 使用的影响
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 报告发现 Claude 使用呈现出与外部世界高度同步的节奏模式：
 
 - **工作日/周末周期**：工作相关查询在周末显著下降，但高薪职业的下降幅度更小（周末仍需工作）

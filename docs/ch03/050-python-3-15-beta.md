@@ -47,6 +47,15 @@ path = Path(".")  # pathlib 在这里才真正 import
 
 ## 实战评估
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 文章的特色在于以"会不会真的塞进项目里"为标准对特性排序：
 - **最想用**：`lazy import` — 解决 CLI 工具启动慢的经典工程问题
 - **最实用**：`frozendict` — 替代十余年的土办法

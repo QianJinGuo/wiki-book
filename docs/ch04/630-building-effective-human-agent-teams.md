@@ -16,6 +16,15 @@
 
 ## 通信架构
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 多人多 Agent 团队面临的核心挑战是**通信开销**：
 
 - **N×M 问题**：N 个人 × M 个 Agent = N×M 条通信路径

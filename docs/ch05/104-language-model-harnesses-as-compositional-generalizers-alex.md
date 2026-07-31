@@ -18,6 +18,15 @@
 
 ## 实验结果
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 使用 Recursive Language Model（RLM）作为测试 harness，利用强化学习训练：
 
 - 仅在短任务上训练，可泛化到 8–32x 更长的 held-out 任务

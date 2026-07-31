@@ -14,6 +14,15 @@
 
 ## EDV 框架：三阶段协同
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 EDV 全称为 Execute-Distill-Verify，三阶段环环相扣，复刻了人类社会从个体实践到群体共识的认知沉淀过程。
 
 ### 1. Execute 执行阶段：异构并行探索

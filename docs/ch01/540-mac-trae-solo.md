@@ -25,6 +25,15 @@ review_stars: 3
 
 ## 深度分析
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 **1. AI Agent 的形态正在从「桌面工具」转向「随身劳动力」**
 
 过去三个月，Anthropic、Nous Research 等公司都在往同一方向走：让 AI Agent 离开必须坐在电脑前才能用的形态，变成随身能调度的东西。

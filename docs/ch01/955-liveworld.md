@@ -101,6 +101,16 @@ LiveWorld：视频世界模型新范式，让镜头之外的世界继续演化
 
 ## LiveWorld：解耦世界演化与观察渲染
 
+```mermaid
+graph TB
+    PER[感知] --> DEC[决策]
+    DEC --> ACT[执行]
+    ACT --> ENV[环境]
+    ENV --> PER
+    DEC --> RL[强化学习]
+```
+
+
 ## 
 
 ## 

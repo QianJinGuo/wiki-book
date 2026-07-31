@@ -14,6 +14,15 @@ Claude Code 源码泄露（50 万行 TypeScript）揭示了四个底层机制，
 
 ## 四个源码级机制
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### 1. 通信 = 互相留小纸条（pendingMessages）
 
 不是实时对话，是**异步信箱**：

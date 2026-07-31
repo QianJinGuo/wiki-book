@@ -20,6 +20,15 @@
 
 ## LiteTopic：面向海量会话的轻量队列模型
 
+```mermaid
+graph TB
+    L[Leader] --> W1[Worker 1]
+    L --> W2[Worker 2]
+    L --> W3[Worker 3]
+    W1 & W2 & W3 --> MSG[消息]
+```
+
+
 LiteTopic 是基于 RocketMQ 设计的轻量队列模型，四个关键特性：
 - **动态创建与销毁**：无需预配置，TTL 到期自动回收
 - **低成本隔离**：远低于普通 Topic 的创建维护成本

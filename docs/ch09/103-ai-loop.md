@@ -29,6 +29,20 @@
 
 ## 深度分析
 
+```mermaid
+graph LR
+    INT[意图] --> PLN[拆解]
+    PLN --> GEN[生成]
+    GEN --> VAL[验证]
+    VAL -->|"失败"| PLN
+    subgraph "上下文"
+        CM[配置]
+        SK[技能]
+    end
+    INT --> CM & SK
+```
+
+
 ### Loop Engineering 的理论框架化
 
 吴恩达的三层循环架构是 `Loop Engineering Feedback Control System` 和 `Loop Engineering Concept Analysis Feixue Ali 2026` 中讨论的 Loop Engineering 理念的**产品化版本**——将抽象的控制论反馈循环映射到具体的产品开发时间尺度上：

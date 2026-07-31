@@ -10,6 +10,15 @@ Claude Code 创始人 Boris Cherny 第二次公开技巧——这次是来自 Cl
 
 ## 10 个团队技巧速览
 
+```mermaid
+graph TB
+    AG[Agent] --> TB[Tool Bus]
+    TB --> FT[Function]
+    TB --> MT[MCP]
+    MT --> MCS[Server]
+```
+
+
 ### 1. 并行处理：git worktree + 3–5 个独立会话
 
 同时开启 3–5 个 git worktree，每个运行独立 Claude 会话并行工作。这是团队推荐的首要技巧。给 worktree 设置 Shell 别名（za/zb/zc），一键切换任务上下文。

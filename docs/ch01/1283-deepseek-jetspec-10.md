@@ -14,6 +14,14 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 - **JetSpec 的端到端加速**：在 Qwen3-8B 上，相比标准自回归解码，MATH-500 最高 9.64×、HumanEval 7.12×、LiveCodeBench 7.67×、MT-Bench 4.58×
 - **因果并行草稿头**：在并行草稿结构中引入路径条件化——更深层的节点依赖同一分支上更早生成的 token，使因果一致性接近自回归方法，同时保持并行成本
 - **接受率大幅提升**：在 AIME25 上，深度 1 的接受率约 99%，深度 8 仍保持约 50%；逐 token 有效接受率约 93%，显著高于 DFlash

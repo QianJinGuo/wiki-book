@@ -13,6 +13,21 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 OpenAI的Cookbook指南详细介绍了如何使用gpt-realtime-translate构建实时翻译应用。该功能基于GPT模型的实时语音处理能力，结合翻译管线实现流式口译。
 **核心技术路径**：构建实时翻译应用涉及多个技术环节——音频捕获、语音识别（STT）、实时翻译、语音合成（TTS）。gpt-realtime-translate提供了端到端的解决方案，开发者可以通过WebSocket或WebRTC连接实现低延迟的实时翻译。
 **API架构要点**：指南涵盖了OpenAI Realtime API的连接管理、会话控制、音频流处理和错误处理等关键环节。开发者需要处理音频缓冲、丢包补偿、时间戳同步等底层细节。

@@ -31,6 +31,20 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析
+
+```mermaid
+graph TB
+    Q[查询] --> R[检索]
+    R --> K[重排序]
+    K --> C[上下文注入]
+    C --> LLM[生成]
+    subgraph "存储"
+        VDB[向量库]
+        KB[知识库]
+    end
+    R --> VDB & KB
+```
+
 ### 1. 记忆的本质是分层成本管理
 AI Coding Agent 记忆系统的核心问题不是"记什么"，而是"以什么成本、在哪一层被召回"。这个思路把记忆从存储容量问题转化为召回路径设计问题。
 四层机制各有不同的延迟和成本特征：热记忆（MEMORY.md/USER.md）在每次会话开始时作为 frozen snapshot 注入系统提示词，延迟为零但持续占用 prompt token 预算；session_search 通过 FTS5 全文搜索走数据库查询，成本可控但依赖摘要质量；skills 是按需加载的索引，真正执行时才展开；外部用户模型走异步预取，不阻塞当前轮次。

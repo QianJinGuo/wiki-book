@@ -16,6 +16,15 @@
 
 ## 实战案例深度分析
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### Case 1：前端重构
 
 Seed-Evolving 被要求基于政策数据创建一个 React 单页应用（Vite + React），包含搜索、城市筛选和卡片展示功能：

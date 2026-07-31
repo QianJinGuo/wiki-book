@@ -10,6 +10,18 @@
 See [source article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md) for full content.
 
 ## 相关实体
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/697-strands-agents.html)
 - [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](../ch11/050-bedrock-agentcore.html)
 

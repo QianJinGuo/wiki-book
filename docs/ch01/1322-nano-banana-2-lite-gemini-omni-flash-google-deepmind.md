@@ -22,6 +22,21 @@ Nano Banana 2 Lite（gemini-3.1-flash-lite-image）是 Nano Banana 家族中最�
 
 ## Gemini Omni Flash
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 Gemini Omni Flash 是高质量、高性价比的视频生成和对话式编辑模型，首次面向开发者开放。此前 Gemini Omni 仅限于 Google 内部产品使用[Introducing Gemini Omni](ch01/1292-introducing-gemini-omni.html)。
 
 能力：

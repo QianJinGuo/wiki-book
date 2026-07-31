@@ -18,6 +18,15 @@ Numbat 的设计涵盖了三层防御机制：
 
 ## 设计理念
 
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
+
 早期 agent 安全研究集中在 prompt injection 和其他形式的对抗性输入。然而，agent 自主性的进步催生了新的安全威胁——这些威胁不需要假设存在对抗性输入或人类对手。当 agent 被指示追求高层目标而没有如何实现这些目标的指导时，agent 本身可能成为对手。
 
 Numbat 直接集成到企业客户端终端上的 agent harness 中，强制执行安全规则并支持快速检测和响应。

@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 5.1KB | `entities/kiro-cli-rest-api-architecture-practice.md`
 
 ## 概述
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 将 Kiro CLI 封装为 REST API：双通道架构实践 by awschina on 26 3月 2026 in Artificial Intelligence Permalink Share 摘要：Kiro CLI 是 AWS 推出的终端 AI 编码工具，原生只支持 stdio 交互，无法被程序化调用。本文介绍将其封装为标准 REST API 的完整实现方案，重点说明双通道架构的设计决策，以及 ACP 协议通信中的关键技术细节。 目录 01 1. 引言 02 2. 核心挑战：ACP 协议与模型切换 03 3. 双通道架构设计 04 4. 关键实现细节 05 5. 对外接口与已知限制 06 6. 总结 07 7. 致谢与参考 1. 引言 随着 AI 编码工具的普及，如何将这些工具集成到现有的自动化流程和团队工作流中，已成为工程实践中的实际需求。Kiro CLI 是 AWS 推出的终
 
 ## 核心技术

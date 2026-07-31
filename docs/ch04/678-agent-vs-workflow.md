@@ -25,6 +25,15 @@
 
 ## 核心对比
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **Workflow**：路径可枚举，质量可验收，成本稳定，异常可追踪
 - **Agent**：目标清楚，路径不确定，需根据环境反馈持续调整
 - **工程化后的 Agent** → 加入循环上限、白名单、权限、Retry、Checkpoint、Human Approval、State Machine、Budget Limit — 最终成为 **Agentic Workflow**

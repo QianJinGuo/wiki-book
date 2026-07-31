@@ -5,6 +5,18 @@
 > 📊 Level ⭐⭐ | 7.7KB | `entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md`
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - 基于 Amazon Bedrock + EKS 构建 AIOps Agent，整合 Prometheus、ElasticSearch、夜莺监控数据
 - 多窗口分析算法：Z-Score、IQR、线性回归
 - 解决企业级 AIOps 落地的工程化挑战

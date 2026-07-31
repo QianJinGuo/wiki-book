@@ -7,6 +7,18 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/task-queue-priority-and-fairness.md)
 
 ## 核心要点
+
+```mermaid
+graph TB
+    LB[负载均衡] --> GW[Gateway]
+    GW --> SVC[服务]
+    SVC --> DB[数据]
+    subgraph "Agent"
+        AGT[实例] --> SB[沙箱]
+    end
+    SVC --> AGT
+```
+
 - value=8, confidence=8, product=64
 - Well-structured technical Temporal article
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/task-queue-priority-and-fairness.md)

@@ -130,6 +130,21 @@ GPT-5.6能识别一份幻灯片的整体设计体系（布局、字体、间距�
 
 ## ChatGPT Work登场：把目标变成完成品
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 ChatGPT Work这次也同步上线。
 
 它由Codex和GPT-5.6驱动，可以跨应用和文件行动，必要时持续数小时，把目标变成完成品。

@@ -14,6 +14,14 @@ Moondream 的 Photon 推理引擎通过 **pipelined decoding** 技术消除 GPU 
 
 ## 三个核心机制
 
+```mermaid
+graph LR
+    Q[量化] --> KV[KV Cache]
+    KV --> PD[Prefill/Decode]
+    PD --> SP[投机采样]
+```
+
+
 ### 1. Ping-Pong Slots（双缓冲槽）
 
 Photon 维护两个 decode slot，交替使用。当 GPU 在 slot A 上执行当前 forward 时，CPU 在处理 slot B 的上一步结果。每个 slot 包含输入暂存区、模型输出区（logits）、采样 token 落地区、以及 KV cache 书签。这些缓冲区在启动时一次性分配，运行时不做 GPU 内存分配以避免设备同步。固定缓冲区地址也允许将 decode 步骤捕获为 CUDA graph 重放，减少 kernel launch 开销。

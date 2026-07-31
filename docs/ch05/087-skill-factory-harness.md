@@ -11,6 +11,21 @@
 | **模式二：OpenClaw/Claude Code** | 对话驱动，依赖 Prompt 技巧 | 高 | 随机性强 | 无自动化闭环 | 串行迭代 | 不可控 & 缺乏工程验证 |
 
 ## 相关实体
+
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
 - [Claude Code Prompt Context Harness](../ch09/061-claude-code-prompt.html)
 - [From Prompt To Harness Claude Official](ch05/009-harness.html)
 - [Claude Code Harness Deep Dive Founder Park](ch05/073-claude-code-harness.html)

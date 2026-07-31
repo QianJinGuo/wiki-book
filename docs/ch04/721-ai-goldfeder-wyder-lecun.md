@@ -14,6 +14,21 @@ Goldfeder、Wyder、LeCun 与 Shwartz-Ziv 在 2026 年的工作《AI Must Embrac
 
 ## 核心要点
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 1. 优化理论表明：任何算法在某一类任务上的最优性必然以其他任务上的次优性为代价（No Free Lunch Theorem）
 2. 演化生物学证明：专业化是适应度最大化的进化稳定策略，泛化只有在资源极度稀缺时才占优
 3. 竞争市场规律显示：市场分工深度与市场规模正相关——AI 市场越大，专业化程度越深

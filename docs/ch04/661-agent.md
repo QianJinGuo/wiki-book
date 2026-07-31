@@ -12,6 +12,15 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 ### Bad Case 归因的陷阱
 
 从用户 bad case 入手做评测归因是常见做法，但 bad case 有四个棘手特征：

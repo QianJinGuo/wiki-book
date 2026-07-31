@@ -5,6 +5,15 @@
 > 📊 Level ⭐⭐ | 5.5KB | `entities/huntress-edr-itdr.md`
 
 ## 核心要点
+
+```mermaid
+graph LR
+    ATK[攻击] --> WAF[防护]
+    WAF --> IDS[检测]
+    IDS --> RSP[响应]
+    RSP --> AUD[审计]
+```
+
 - Cybersecurity 相关技术分析
 - 内容来源：huntress
 ## 相关实体

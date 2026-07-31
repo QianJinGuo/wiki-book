@@ -14,6 +14,20 @@ Autodata 的核心思想是将数据科学家的全部工作流程——数据�
 
 ## 核心要点
 
+```mermaid
+graph LR
+    D[数据] --> SFT[SFT]
+    SFT --> RL[RLHF/DPO]
+    RL --> EV[评估]
+    subgraph "高效"
+        L[LoRA]
+        DS[蒸馏]
+    end
+    SFT --> L
+    EV --> DS
+```
+
+
 ### 1. 从合成数据到 Agentic 数据创建
 
 传统合成数据方法（如 Self-Instruct、Evol-Instruct）依赖固定的 prompt 模板和人类设计的数据生成管线。Autodata 提出了一个范式转变：**用 Agent 来替代人工设计的数据科学家角色**，让 Agent 自主决定如何收集、清洗、标注和验证数据。这一方法将增加的推理计算（inference compute）转化为更高质量的模型训练数据。

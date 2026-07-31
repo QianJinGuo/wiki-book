@@ -12,6 +12,21 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    IN[Token] --> EMB[嵌入]
+    EMB --> ATT[注意力]
+    ATT --> FFN[前馈]
+    FFN --> OUT[输出]
+    subgraph "优化"
+        KV[KV Cache]
+        Q[量化]
+    end
+    ATT --> KV
+    FFN --> Q
+```
+
+
 **"Model Half-Life"的概念批判**
 
 "Model half-life"是近期 AI 行业的高频热词，指的是新一代模型发布的时间间隔不断缩短的现象。支持者认为这一间隔正从数年压缩至数月，并暗示未来将进一步加速。然而，当作者真正梳理了 2022 年底至今主要美国前沿实验室（OpenAI、Anthropic、Google、xAI、Meta、Mistral）和中国实验室（DeepSeek、Qwen、Zhipu、MiniMax、Moonshot、ByteDance）的所有重磅模型发布数据后，得出一个反直觉的结论：**"model half-life"本质上是一个缺乏数据支撑的营销概念**。

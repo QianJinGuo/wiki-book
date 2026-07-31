@@ -14,6 +14,15 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 
 ## 核心要点
 
+```mermaid
+graph LR
+    OBS[可观测性] --> GRD[护栏]
+    GRD --> ORC[编排]
+    ORC --> AG[Agent]
+    AG -->|"反馈"| OBS
+```
+
+
 - **作者**: Veronica Peitong Chen (Adobe Design)
 - **来源**: [https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment](https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment)
 - **评分**: v=7, c=7, v×c=49, stars=4
