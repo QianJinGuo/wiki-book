@@ -6,50 +6,7 @@
 
 # Cursor AI 蜂群：规划器+Worker 架构与多模型经济学的突破
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cursor AI 蜂群 规划器Worker 架构与多模型经济学的突破"))
-    树状结构 一个动脑子 一群人干活
-    每秒千次提交的工程挑战
-    迹象引导与 Field Guide
-    实验结果与成本分析
-```
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 Cursor 研究团队在 2026 年 7 月发表了一项极具影响力的实验：仅凭一份 835 页的 SQLite 官方文档，不给源码、测试用例和网络权限，让 AI 智能体群用 Rust 从零重新实现 SQLite。结果验证了一套全新的多模型协作范式——**规划器（Planner）负责拆解任务，Worker 智能体负责执行**，在质量相当的前提下，成本差距可达 **15 倍**（最贵 $10,565 vs 最便宜 $1,339）。
 

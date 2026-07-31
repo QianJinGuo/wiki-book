@@ -10,72 +10,11 @@
 >
 > 原文：→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-mxc-execution-containers-agent-sandbox-origin.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Microsoft MXC 跨 OS 代理代码执行容器"))
-    个 Containment Backend 速查表
-    三个独有贡献 不应合并到现有 entity
-      AppContainer 三层 Fallback 设计
-      bubblewrap proxy 故意不设 NOPROXY
-      LXC fail-closed scoping
-    三个与其他 agent 安全实体的差异化对比
-    与现有 wiki 实体差异化
-    关键代码引用
-    上线状态 链接
-    OS 厂商入场安全层的范式意义
-    三层 fallback 揭示的 Windows 容器化演进路径
-```
-
 ## 一句话总结
 
 MXC 是 **dispatcher 模式**的跨 OS 沙箱：1 个 JSON 策略模型 + 1 个二进制 dispatcher (Windows `wxc-exec.exe` / Linux `lxc-exec` / macOS `mxc-exec-mac`) → 10 种 OS-原生 enforcement backend。**不是"一个 sandbox"而是"一个统一接口，调用各平台 native 的隔离原语"**。
 
 ## 10 个 Containment Backend 速查表
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 
 | Wire name | OS 原语 | 稳定性 | 关键策略翻译 |
 | --- | --- | :---: | --- |
@@ -211,7 +150,7 @@ Hyperlight 让 CPython 直接 library call 进 Unikraft micro-VM，每次 rewind
 - [Microsoft RAMPART/Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — 同期微软开源的 agent 红队 + 可观测性栈
 - **Cloud Agent Infrastructure** — 云端 agent state/凭据隔离
 - [CrewAI Agent Security 三步防护](../ch05/009-harness.html) — 应用层 guardrail 视角
-- [AI Tool Poisoning 调查](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — agent 工具被污染的攻击面
+- [AI Tool Poisoning 调查](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — agent 工具被污染的攻击面
 - **Harness Engineering** — 隔离是 harness 的关键支柱之一
 
 ---

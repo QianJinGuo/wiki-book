@@ -5,65 +5,10 @@
 > 📊 Level ⭐ | 8.4KB | `entities/offensive-security-blog.md`
 
 > -> [offensive-security-blog](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/offensive-security-blog.md)
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Offensive Security Blog"))
-    近期热门文章
-      Otto-Support Supply Chain Risks
-      Introducing Joro Using AI to
-      Otto Support - The Confused
-    MCP 安全风险AI 工具链的新盲点
-    AI 辅助安全工具的工业化
-    Confused Deputy 问题在 Agent 时代的复现
-    渗透测试行业的范式转变
-    给安全工程师的建议
-    给开发团队的建议
-    给企业管理者的建议
-```
-
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11/252-cloudsectidbits.html)
+- [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11/254-cloudsectidbits.html)
 
 ## 近期热门文章
 ### Otto-Support: Supply Chain Risks in MCP Servers（2026-05-13）

@@ -8,64 +8,7 @@
 > AWS China Blog 2026-06-12 教程：通过 LiteLLM AI Gateway 在 Amazon Bedrock 前面构建"事前限额 → 事中监控 → 事后兜底 → 安全纵深"四层成本治理体系。核心是用 **LiteLLM Virtual Key** 做 team/user/项目三层实时限额（token/dollar），**AWS Budgets** 做平台级兜底告警，**AWS 原生安全服务**（IAM + Secrets Manager + MFA）防 API Key 盗刷。覆盖"AI 投入可预测 + AI 资产不被盗"两个企业痛点。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LiteLLM 驱动的 Amazon Bedrock 成本治理"))
-    痛点 AI 投入不可控 资产被盗
-    方案 四层防护体系
-      第 1 层 LiteLLM Virtual Key 实时限额
-      第 2 层 LiteLLM 多维监控
-      第 3 层 AWS Budgets 平台级兜底
-    改造成果
-    核心观点 四层防护体系覆盖完整成本治理生命周期
-    技术要点 Virtual Key 是多租户成本治理的核心抽象
-    实践价值 AWS Budgets 自动联动是平台级兜底的关键
-    核心观点 Bedrock 多模型路由需要专属配额管理
-    成本治理必须分层设计 不能依赖单一工具
-```
-
 ## 痛点：AI 投入不可控 + 资产被盗
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 企业接入 LLM API 后常遇到两个问题：
 
@@ -183,7 +126,7 @@ LiteLLM Virtual Key 提供 team/user/project 三层粒度 + token/dollar 双维�
 
 ### 2. IAM Role 替换 Long-lived AK/SK 是企业 AI 安全的最低要求
 
-对于任何在 AWS 上部署 AI 应用的团队，用 IAM Role 替换 Long-lived AK/SK 是**必须完成的基础安全改造**。配合 Secrets Manager 集中托管 + 90 天自动轮转 + GitHub Secret Scanning，可以将 API Key 盗刷风险降到最低。参见 [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/561-amazon-bedrock-agentcore.html) 了解 Bedrock 场景下的安全最佳实践。
+对于任何在 AWS 上部署 AI 应用的团队，用 IAM Role 替换 Long-lived AK/SK 是**必须完成的基础安全改造**。配合 Secrets Manager 集中托管 + 90 天自动轮转 + GitHub Secret Scanning，可以将 API Key 盗刷风险降到最低。参见 [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/566-amazon-bedrock-agentcore.html) 了解 Bedrock 场景下的安全最佳实践。
 
 ### 3. Prometheus + Grafana 是 AI Gateway 可观测性的行业标准
 
@@ -200,7 +143,7 @@ LiteLLM 内置 `/metrics` 端点暴露 Prometheus 指标，配合 Grafana 看板
 ## 相关主题
 
 - `concepts/llm-cost-control`（LLM 成本控制，概念层，待创建）
-- [AWS Bedrock AgentCore Gateway MCP 扩展](../ch04/561-amazon-bedrock-agentcore.html)
+- [AWS Bedrock AgentCore Gateway MCP 扩展](../ch04/566-amazon-bedrock-agentcore.html)
 - [阿里云云原生 API Gateway Gateway API 指南](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 
 ---

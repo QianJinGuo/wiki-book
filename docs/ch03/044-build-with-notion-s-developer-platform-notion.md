@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 5.0KB | `entities/notion-dev-platform.md`
 
-
 ## 深度分析
 
 Notion 的 Developer Platform 设计理念突破了传统 CRUD API 的定位，转向「Agent-First」的基础设施思维。从已披露的文档来看，Notion 没有把 API 设计成给人类开发者使用的工具，而是针对 AI Agent 的操作模式进行了专门优化——包括结构化 schema 定义、declarative sync pattern、以及将外部数据源映射到 Notion Database 的持久化游标机制。这种设计选择背后的逻辑是：未来的 Notion 使用者将越来越多的是 AI Agent 而不是人类，因此 API 的原语（primitive）应该适配 AI 的认知方式（结构化输出、确定性状态）而不是人类的交互习惯。 See also [Harness Engineering](../ch05/120-harness-engineering.html)
@@ -16,39 +15,6 @@ External agents 的集成方式暗示了 Notion 正在将自己定位为企业 A
 从 Agent 工具设计的角度，Notion 的 MCP（Model Context Protocol）工具封装方式值得深入研究。AI Skill 需要通过 MCP 协议与外部系统交互，而 Notion 的 Developer Platform 提供了原生支持——这意味着开发者可以直接在 Notion 环境中注册和部署 Agent 工具，而不需要额外的中间层。这种「平台内置 Agent 工具支持」的模式可能代表了一种趋势：未来的 SaaS 平台不仅提供 API 给人类使用，还要原生支持 AI Agent 的调用模式，包括工具注册、权限管理、执行日志等基础设施。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 - **在设计面向 AI Agent 的数据平台时，优先考虑声明式接口**。Notion Workers 的 declarative schema 模式让 AI 可以更容易地理解和操作数据同步逻辑。当你的系统需要被 AI 调用时，声明式 API 比命令式 API 更适合 AI 的推理模式——它把「做什么」（what）从「怎么做」（how）中分离出来，降低了 AI 理解和修改同步行为的认知负担。
 

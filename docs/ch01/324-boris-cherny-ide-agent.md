@@ -2,7 +2,7 @@
 
 ## Ch01.324 Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
 
-> 📊 Level ⭐⭐ | 12.6KB | `entities/iqSixiNP9lxNKg7aVfHFCQ.md`
+> 📊 Level ⭐⭐ | 12.6KB | `entities/iqsixinp9lxnkg7avfhfcq.md`
 
 # Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
 
@@ -11,62 +11,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/iqSixiNP9lxNKg7aVfHFCQ.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Boris Cherny 新访谈 开发工具正在从 IDE 变成"))
-    产品悬置 Product Pendulum 不是 PMF 失败
-    控制点迁移 从编辑器交互到工作流控制
-    coding is solved的前提条件分析
-    印刷术类比的工程含义
-    重新评估 Agent 产品的成熟度
-    重构开发流程以匹配新的控制点
-    区分代码生成与软件工程
-    拥抱 Loop 模式
-```
-
 ## 摘要
 
 本文围绕 Boris Cherny（Claude Code 核心创建者之一）在 Sequoia AI Ascent 2026 上的访谈展开，关键论断是：**开发工具的中心正从 IDE 里的光标，逐步迁移到管理 Agent 工作流的那块控制台**。这不是"AI 写代码更快了"的简单话题，而是软件工程控制点的一次系统性迁移——人从"写代码的人"变成"管 Agent 的人"，从控制文件/函数/命令，转向控制目标/约束/权限/预算/验证/审查。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **"coding is solved"要拆开理解**：Boris 说对自己而言 coding 100% solved——但这句话的前提是 Claude Code 主栈 TypeScript/React 在模型最熟悉分布里、且他在 Anthropic 内部有最新工具链。换到 C++/银行核心/嵌入式固件，问题远不只是"代码能不能生成"。
 - **治理问题暴露得更早**：弱补全工具最多写坏几行；能读仓库、改文件、跑命令、连 Slack、查数据库、修 CI、开 PR 的 Agent 已不是普通插件，而是新的工程参与者。问题不再是"模型会不会写代码"，而是"它在什么边界里写、怎么知道写对、错了怎么停下来"。
@@ -149,7 +98,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - 传统调用：用户请求 → Agent 一次性回答 → 结束
 - Loop 模式：用户定义目标 → Agent 持续观察 → 执行任务 → 检测失败 → 自动修复 → 汇报进展 → 继续循环，直到目标达成或失败不可恢复
 
-这与 [Claude Code Harness 深度解析](../ch05/073-claude-code-harness.html) 中的 harness 设计哲学一致——harness 的核心价值就是为 Agent 提供持续运行的工程环境，而非一次性对话界面。
+这与 [Claude Code Harness 深度解析](../ch05/074-claude-code-harness.html) 中的 harness 设计哲学一致——harness 的核心价值就是为 Agent 提供持续运行的工程环境，而非一次性对话界面。
 
 ### 6. 治理边界问题的工程框架
 
@@ -173,7 +122,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - Karpathy（理论侧）：Software 3.0——执行层自动化后，方向层变得更重要
 - Boris（工程侧）：控制点迁移——人从写代码的人变成管 Agent 工作流的人
 
-这与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
+这与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
 
 ## 实践启示
 
@@ -223,17 +172,17 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 
 ## 相关实体
 
-- [两万字详解 Claude Code 源码核心机制](../ch03/078-claude-code.html)
-- [Claude Code Harness 深度解析](../ch05/073-claude-code-harness.html)
-- [Claude Code Harness 深度理解](ch01/422-claude-code-harness-deep-understanding.html)
+- [两万字详解 Claude Code 源码核心机制](../ch03/077-claude-code.html)
+- [Claude Code Harness 深度解析](../ch05/074-claude-code-harness.html)
+- [Claude Code Harness 深度理解](ch01/423-claude-code-harness-deep-understanding.html)
 - [深入理解 Claude Code Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/035-agent.html)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Anthropic 内部实践](ch01/742-9.html)
-- [DeepSeek V4 Flash Pro](ch01/1073-deepseek-v4-flash-pro.html)
-- [加速 LLM 模型加载与上下文窗口](ch01/1172-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
-- [大型表格模型基础](../ch05/094-ai.html)
+- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [Anthropic 内部实践](ch01/755-9.html)
+- [DeepSeek V4 Flash Pro](ch01/1074-deepseek-v4-flash-pro.html)
+- [加速 LLM 模型加载与上下文窗口](ch01/1176-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [大型表格模型基础](../ch05/095-ai.html)
 
 ---
 

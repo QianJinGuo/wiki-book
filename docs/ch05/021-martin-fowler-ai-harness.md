@@ -4,60 +4,10 @@
 
 > 📊 Level ⭐⭐ | 17.8KB | `entities/martin-fowler-ai-rd-harness-nondeterminism-devnote.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Martin Fowler AI 研发提醒 Harness 承重层"))
-    关键论点
-      非确定性进入研发链路
-      Vibe Coding 的边界
-      测试和重构不是旧时代包袱
-    与现有知识库关联
-    原始存档
-    非确定性建模的本质意义
-    Harness 的三层结构与工程对等
-    中间循环的工程角色重定义
-    六件小事的系统性解读
-    立即可落地的六件事
-```
-
 ## 核心洞察
 Martin Fowler 在 Pragmatic Engineer 播客访谈中指出：**软件工程过去几十年都建立在一台确定性机器上，现在我们把一个非确定性的协作者接进了研发链路。** 这个视角将 AI 研发的各种新概念（Vibe Coding、Agentic Engineering、Harness Engineering 等）统一到了一个核心问题下：当 AI 开始读仓库、改文件、调工具、跑测试、开 PR、查日志、修 CI 时，整个研发系统怎么消化这种非确定性。
 
 ## 关键论点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### 1. 非确定性进入研发链路
 - 软件工程建立在确定性机器上，LLM 是概率性系统，本质上是非确定性的
 - AI 同一目标可能用不同路径完成；解释失败可能看似合理却未经验证；改一处可能顺手改旁边多处

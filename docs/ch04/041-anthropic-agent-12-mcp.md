@@ -14,25 +14,6 @@
 - Score: Value=8 × Confidence=8 = 64
 - Original: [Claude Code源码泄露分析](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-source-leak-lifecycle-analysis.md) 同系列
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 官方生产级 Agent 最佳实践 12"))
-    微信正文
-    背景 MCP 的定位
-    五组12模式
-      第一组 工具交互面 Tool Surface
-      第二组 交互语义 Interaction Semantics
-      第三组 认证与凭证流 Auth and Credential Flow
-    结语
-    参考资源
-    一 模式结构的全局视角
-    二 Tool Surface 设计的三层决策
-    三 交互语义模式的深层逻辑
-```
-
 ## 微信正文
 在 Claude Code 源代码泄露事件之后，我们从源码里整理出了 12 种 Agentic Harness 模式。后来又结合 Anthropic 官方的 Agent Skills 构建指南，继续拆解出 14 种 Skill 编写模式。这次再往前走一步，问题就变得更现实了：当 Agent 真正进入生产系统，它到底应该怎么连接那些真实的业务工具、权限系统和数据源？
 Anthropic 官方最近那篇关于 MCP 的文章《 Building agents that reach production systems with MCP 》，讨论的正是这个问题。文章比较了直接 API 调用、CLI 和 MCP 的差异，并解释为什么生产级 Agent 越来越倾向于使用 MCP。
@@ -43,38 +24,6 @@ MCP = Model Context Protocol，不只是协议，而是**面向 Agent 的产品�
 > "好的 MCP Server，不是 API 的翻译层，而是 Agent 面向任务的产品接口。"
 
 ## 五组12模式
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
 ---
 
 ### 第一组：工具交互面（Tool Surface）
@@ -259,8 +208,8 @@ Anthropic 原文提到：Canva、Notion、Sentry 等已经在 Claude 中把 Skil
 这意味着未来 MCP Server 的竞争焦点从「连接能力」转向「使用指南」。Server 开发者不只需要实现 API 封装，还需要编写与自身能力配套的 Skill/Playbook，并通过 Server-Distributed Skills 模式分发出去。这是一个从基础设施层面向应用层面延伸的价值链扩展。
 
 ## Related entities
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
 
 ## 实践启示
 ### 1. 从模式1开始，先想清楚分发形态

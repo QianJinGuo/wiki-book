@@ -4,44 +4,7 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/drupal-core-security-drupal-to-release-urgent-core-security.md`
 
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - Drupal 核心安全更新将于 2026 年 5 月 20 日 17:00-21:00 UTC 发布
 - 影响所有受支持的 Drupal 版本（11.3.x, 11.2.x, 10.6.x, 10.5.x）
 - Drupal 安全团队警告：漏洞严重，exploit 可能在数小时到数天内出现
@@ -71,8 +34,8 @@ Drupal 此次安全更新的紧急程度体现在其发布的措辞中："exploi
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Funnel Builder Flaw Under Active Exploitation Enables Woocommerce Checkout Skimm](ch12/098-funnel-builder-flaw-under-active-exploitation-enables-woocom.html)
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](ch12/062-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/913-20.html)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/926-20.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch12/048-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/drupal-core-security-drupal-to-release-urgent-core-security.md)
 - new york design week is here, may 14–20 - core77

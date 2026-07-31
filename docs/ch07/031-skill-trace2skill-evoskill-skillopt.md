@@ -6,60 +6,11 @@
 
 # Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Skill自进化三路线 Trace2Skill归纳法"))
-    核心问题 Skill 自进化的过拟合
-    路线一 Trace2Skill 归纳法的聚合式进化
-    路线二 EvoSkill 自验证的自然选择
-    路线三 SkillOpt 将 Skill 进化对标为模型训练
-    三条路线的哲学差异
-    失败信号利用的差异
-    验证是进化的奖励函数
-    SkillOpt 的模型训练类比深度
-```
-
 ## 摘要
 
 Skill 自进化是 Agent 系统从"人工调优"走向"自主优化"的关键技术方向。本文深度解析三条代表性路线：阿里千问团队的 **Trace2Skill**（归纳法，从大量轨迹中聚合提炼 Skill）、Sentient Labs 的 **EvoSkill**（自然选择，构建→验证闭环）、微软联合上交/同济/复旦的 **SkillOpt**（将 Skill 文本类比为模型权重进行训练）。三条路线的核心差异在于：如何处理过拟合、如何利用失败信号、是否引入验证门控。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 核心问题：Skill 自进化的过拟合
 
@@ -178,10 +129,10 @@ SkillOpt 的类比映射：
 ## 相关实体
 
 - [SkillOpt: 像训练神经网络一样训练 Skill](../ch05/043-skillopt.html)
-- [Agent Skills 综合调查](../ch04/397-agent-skills.html)
+- [Agent Skills 综合调查](../ch04/401-agent-skills.html)
 - [Hermes Agent 自进化](../ch03/096-hermes-agent.html)
 - [Agent 自改进六机制](../ch03/035-agent.html)
-- [阿里 Agentic Cloud](../ch04/347-agentic-cloud.html)
+- [阿里 Agentic Cloud](../ch04/348-agentic-cloud.html)
 - [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---

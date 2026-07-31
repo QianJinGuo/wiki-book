@@ -2,60 +2,9 @@
 
 ## Ch12.090 Scammers Send Physical Phishing Letters to Steal Ledger Wallet Seed Phrases
 
-> 📊 Level ⭐⭐ | 5.6KB | `entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Scammers Send Physical Phishing"))
-    攻击维度的升级 从数字到物理
-    量子抵抗叙事的滥用
-    数据来源与 Global-e 泄露的关联
-    钓鱼攻击的完整杀伤链
-    硬件钱包用户的关键原则
-    已受害用户的紧急响应
-    供应链安全的更广泛教训
-```
+> 📊 Level ⭐⭐ | 5.6KB | `entities/scammers-send-physical-phishing-letters-to-steal-ledger-wall.md`
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - 攻击方式：实体钓鱼信件，内含 QR 码链接到钓鱼网站
 - 骗局主题："Quantum Resistance"（量子抵抗）安全更新——利用量子计算威胁叙事
 - 目标：Ledger 硬件钱包用户的 24 字助记词（seed phrase）
@@ -63,9 +12,9 @@ graph TB
 - 地区针对性：信件已在意大利用户中发现，多语言本地化版本
 - Ledger 官方确认：永远不会通过网站、QR 码、电话或实体信件要求用户透露 seed phrase
 ## 相关实体
-- [Ai Voice Cloning The Technology Behind It Whos Building It A](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-Voice-Cloning-The-Technology-Behind-It-Whos-Building-It-a.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch05/095-ai.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/104-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 

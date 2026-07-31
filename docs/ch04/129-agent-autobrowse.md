@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/autobrowse-browserbase-persistent-skill-files.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("浏览器 Agent 的失忆问题 Autobrowse"))
-    背景 探索税 Discovery Tax
-    Autobrowse 是什么
-    五步学习循环
-      第一步 目标 Objective
-      第二步 运行 Run
-      第三步 研究 Study
-    Craigslist 基准 022 012
-    哪些情况不该用 自批评
-    技能文件才是真正的交付物
-    技能库的复利效应
-    递归改进自身
-```
-
 ## 背景：探索税（Discovery Tax）
 浏览器 Agent 的核心缺陷：**没有记忆**——每次会话结束，它学到的一切都跟着蒸发。
 > "它是个有推理能力的健忘症患者：每次解决问题的方式都很优雅，但会话一关闭，醒来之后什么都记不住，一切归零。"
@@ -30,39 +11,6 @@ mindmap
 根本瓶颈不是推理，而是**记忆**——一种人类和 Agent 都能读懂、都能信任的记忆形式。
 
 ## Autobrowse 是什么
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 Autobrowse 是 Browserbase 内部工程师 Shubhankar 开发、后来开源的工作流——受 Andrej Karpathy 的 autoresearch harness 启发。
 **核心思路**：
 1. 给 Agent 一个真实任务，让它在真实网站上反复尝试
@@ -89,7 +37,7 @@ Agent 读自己的 trace，对自身行为做元认知反思：
 - 在哪里卡住了？
 - 在哪里靠猜测蒙混过关？
 - 哪些步骤消耗了不必要的 token？
-- 有没有可以用更轻量的确定性工具替代的步骤？ See also [Agent Memory Architecture](ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html)
+- 有没有可以用更轻量的确定性工具替代的步骤？ See also [Agent Memory Architecture](ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ### 第四步：迭代（Iterate）
 外层循环维护一个 `strategy.md` 文件——相当于 Agent 的学习笔记。每次迭代结束把观察写进去，下次迭代开始时 Agent 先读这份笔记，从上次的改进成果出发。**知识在迭代间叠加**，而不是每次从零归零。

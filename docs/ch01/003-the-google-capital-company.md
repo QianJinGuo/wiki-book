@@ -2,63 +2,15 @@
 
 ## Ch01.003 The Google Capital Company
 
-> 📊 Level ⭐ | 18.0KB | `entities/https-stratechery-com-2026-the-google-capital-company.md`
+> 📊 Level ⭐ | 18.1KB | `entities/https-stratechery-com-2026-the-google-capital-company.md`
 
 # The Google Capital Company
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The Google Capital Company"))
-    正文要点
-      Berkshire Hathaway and Productive
-      Google Clouds Runway
-      Berkshire Hathaway and Google Equity
-    Google Aggregator 模式 绝对价值优先于相对价值
-    SeesBNSF范式重现 Google Services 养
-    80B 股权融资 风险共担而非财务需求
-    从经济的一部分到整个经济 规模天花板的根本差异
-    识别现金牛业务的再投资天花板
-    高不确定性项目优先引入战略投资者共担风险
-    从经济的一部分向整个经济延伸的战略路径
-```
 
 ## 概述
 
 Newsletter 评分 7×7=49，stars=4，来源 URL: https://stratechery.com/2026/the-google-capital-company/
 
 ## 正文要点
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 Published Time: 2026-06-02T10:00:00+00:00
 
@@ -163,8 +115,8 @@ Stratechery 将 Google 描述为"most beautiful business model of all time"，�
 
 ## 相关实体
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/444-agentrun.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 

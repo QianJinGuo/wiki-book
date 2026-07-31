@@ -10,67 +10,11 @@
 >
 > 原文：→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("NomShub Cursor 远程隧道利用链 Shell"))
-    三个独有贡献 不应合并到现有 entity
-      Shell Builtin 沙箱逃逸 单行逃逸的全部机制
-      Microsoft Dev Tunnels 的 LOTL 武器化
-      AI Agent 作为攻击放大器的量化论证
-    与现有 wiki 实体差异化
-    严重性评估 Microsoft SDL Bug Bar
-    时间线
-    实操建议
-      给 AI 编码助手用户
-      给 AI 编码助手开发者
-    Shell 状态修改型 builtin 是命令过滤架构的根本性盲区
-    沙箱 命令解析器的双层失效揭示防御纵深的设计谬误
-    Dev Tunnels LOTL 武器化重新定义了合法工具的攻击面
-```
-
 ## 一句话总结
 
 **NomShub = "单行 prompt injection → 7 步 AI 自主 exploit → 持久化反向 shell"**。Cursor 的 `shouldBlockShellCommand` 解析器只跟踪外部可执行文件，对 shell builtin（`export` / `cd` / `source` / `eval`）完全盲目，导致沙箱 + 应用层两道防御同时失效；攻击链末端利用 Cursor 自带的 `cursor-tunnel` 工具（合法 Microsoft 签名 Azure 隧道）建立持久化 C2。
 
 ## 三个独有贡献（不应合并到现有 entity）
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1. **Shell Builtin 沙箱逃逸：单行逃逸的全部机制**
 
@@ -227,7 +171,7 @@ AI coding assistant 处理 repository 内容（README、代码注释、commit me
 
 - [Microsoft MXC](../ch03/035-agent.html) — 微软自家跨 OS 沙箱，提供 kernel 隔离，可作 NomShub 的防御侧
 - [CrewAI 三步防护](../ch05/009-harness.html) — 应用层 guardrail 视角
-- [AI Tool Poisoning](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具被污染的通用风险
+- [AI Tool Poisoning](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具被污染的通用风险
 - [Microsoft RAMPART/Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — 微软同源栈，检测类似 agent 行为
 - **LotL Attack** — Living-Off-The-Land 在 AI agent 时代的演化
 

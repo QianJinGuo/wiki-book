@@ -8,52 +8,7 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jane-street-formal-methods-future-programming.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Jane Street 形式化方法与编程的未来"))
-    核心论点 v7 c7 vc49
-    与其他工作的关联
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Jane Street 工程师在 2026-06 发表的一篇立场文章，**核心论点是 Agent 编码时代改变了形式化方法（formal methods）的成本/收益结构**：随着 LLM 编写代码越来越快、Agent 自动执行 build/test loop，人工写的代码量增加 vs 验证时间预算未变 → 形式化验证从"奢侈品"重新成为"必要安全网"。
 
@@ -85,7 +40,7 @@ Jane Street 工程师在 2026-06 发表的一篇立场文章，**核心论点是
 
 ## 与其他工作的关联
 
-- [Claude Code 大型代码库 Harness](../ch03/078-claude-code.html) — 同主题 AI 编程 vs 验证
+- [Claude Code 大型代码库 Harness](../ch03/077-claude-code.html) — 同主题 AI 编程 vs 验证
 - [AI Friendly 架构](../ch05/022-ai-friendly.html) — 形式化 spec 是 AI-friendly 的一种表达
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — spec 即 harness 的一种特殊形式
 

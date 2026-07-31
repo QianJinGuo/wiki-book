@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.3KB | `entities/martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Martin Fowler 的 AI 研发提醒"))
-    太长不看版
-    非确定性进入工程链路
-    Harness 是非确定性的适配层
-    Vibe Coding 的边界
-    测试和重构不是旧时代的包袱
-    非确定性协作者是软件工程范式的根本性变化
-    Harness 是非确定性进入工程系统的适配层 不是新包装词
-    Vibe Coding 解决怎么做出 Agentic
-```
-
 ## 太长不看版
 - Fowler 这次让我最受用的，不是"AI 带来更高抽象"这一层，而是他把变化压回到"软件工程第一次大规模面对一个非确定性协作者"这件事上。
 - Vibe Coding 的边界其实挺清楚：原型、一次性工具上很好用；一旦做成长期资产，难的就变成学习循环、代码所有权和系统可理解性。
@@ -29,37 +13,6 @@ mindmap
 - 团队这边可以先慢一点：与其急着搭"全自动 AI 团队"，不如先把六件小事补上——小切片、强验证、仓库内知识、权限边界、错误分类、持续清理。
 
 ## 核心观点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### 非确定性进入工程链路
 软件工程过去几十年都建立在一台确定性机器上。现在，我们把一个非确定性的协作者接进了研发链路。
 AI 研发主线从代码生成更快转向非确定性进入工程系统。

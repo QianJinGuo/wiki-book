@@ -6,27 +6,6 @@
 
 [Claude Code Agentic Harness Design Patterns](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agentic-harness-design-patterns.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("深度拆解 Claude Code 12 个可复用的 Agentic"))
-    记忆与上下文
-      持久化指令文件模式 Persistent Instruction
-      作用域上下文组装模式 Scoped Context
-      分层记忆模式 Tiered Memory Pattern
-    工作流与编排
-      探索-规划-行动循环模式 Explore-Plan-Act
-      上下文隔离子智能体模式 Context-Isolated
-    这 12 个模式本质是一个协同系统 不是独立技巧
-    系统兜底 vs 模型负责 的边界是贯穿全篇的核心张力
-    模式 4 Dream Consolidation 揭示了长程
-    分支-合并并行模式 模式 8 的实现复杂度被低估了
-    用生命周期钩子实现「强制门禁」 不要放在提示词里
-    渐进式工具扩展要从「最小可用集」开始 而不是「功能开关」
-```
-
 ##  记忆与上下文
 这五个模式其实是一条逐步演进的路径：一开始只是给 Agent 一份固定的  ** 规则文件  ** ，然后按目录去限制这些规则的  ** 作用范围  ** ，再把记忆做成  ** 分层结构  ** ，接着在后台  ** 做清理  ** ，最后在上下文快满的时候对对话本身  ** 做压缩  ** 。
 
@@ -65,43 +44,6 @@ mindmap
 ** 权衡点  ** ：压缩一定是有损的。信息在一轮轮总结中会丢失，如果后面又需要这些细节，Agent 可能会「编」而不是承认不知道。
 
 ##  工作流与编排
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 这一组模式的核心其实就是一个词：  ** 分离  ** 。
 把读取和写入拆开，把「查资料」和「改代码」的上下文拆开，把顺序执行和并行执行也拆开。这样做的好处是，随着任务变复杂，系统不会越来越乱。
 大多数 Agent 的默认做法是把这些事情混在一起，刚开始可能没问题，但任务一多，质量就很容易下降。
@@ -152,7 +94,7 @@ Bilgin Ibryam 能从 Claude Code 源码里提炼出这 12 个模式，说明生�
 模式 9 的关键不是「工具数量多不多」，而是「第一次给什么」。建议的做法是：统计过去 100 次任务中工具使用频率，把前 20% 设为默认，其余按需加载。这样 Agent 在大多数场景下不会被选择焦虑困扰，而罕见需求也能得到满足。一个反模式是：默认开启所有工具让 Agent 自己判断——这相当于让 Agent 做它不擅长的事情（风险评估）。
 
 ### 3. 在 Monorepo 中优先实现目录级的上下文组装，而不是全局指令文件
-模式 2（Scoped Context Assembly）比模式 1（Persistent Instruction File）更适合中大型项目。具体落地路径：先在项目根目录放一份全局 `.claude/instructions`，然后在 `packages/`、`tools/`、`docs/` 等子目录各放一份局部的。Agent 进入某目录时，系统自动 `import` 父目录的规则再加上本地覆盖。这样既保证全局一致性，又允许局部有合理差异。对比 [该文的另一个版本](../ch03/070-claude-code-agent.html) 中的 monorepo 实践，这条路径已经被验证过。
+模式 2（Scoped Context Assembly）比模式 1（Persistent Instruction File）更适合中大型项目。具体落地路径：先在项目根目录放一份全局 `.claude/instructions`，然后在 `packages/`、`tools/`、`docs/` 等子目录各放一份局部的。Agent 进入某目录时，系统自动 `import` 父目录的规则再加上本地覆盖。这样既保证全局一致性，又允许局部有合理差异。对比 [该文的另一个版本](../ch03/069-claude-code-agent.html) 中的 monorepo 实践，这条路径已经被验证过。
 
 ### 4. 对话超过 20 轮时主动触发渐进压缩，不要等窗口上限
 模式 5 的实现有一个细节陷阱：很多系统等到上下文快满了才开始压缩，结果压缩本身需要消耗上下文空间，导致压缩过程 itself 触发窗口上限。正确的做法是设置一个保守的触发阈值（比如上下文用了 60%），就开始对更早的内容做轻量总结。这个触发点应该由系统判断，而不是模型判断——模型没有能力在关键时刻主动承认自己「上下文快不够了」。

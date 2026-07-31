@@ -10,20 +10,6 @@
 
 Open Code Review 是一款 AI 驱动的代码评审 CLI 工具，前身是阿里集团内部官方 AI 代码评审助手，过去两年在内部服务了数万开发者，识别了数百万个代码缺陷。经过大规模验证后孵化为开源项目对社区开放。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里开源 Open Code Review 一周揽下 5k"))
-    核心设计 确定性工程 Agent 混合驱动
-    为什么通用 Agent 做不好代码评审
-    准确率 vs 召回率 代码评审的根本权衡
-    假阴性 漏报 的系统性应对
-    假阳性 误报 的控制机制
-    效果数据
-```
-
 ## 核心设计：确定性工程 × Agent 混合驱动
 
 Open Code Review 的核心设计理念是将**确定性工程**与 **Agent** 结合，各司其职：
@@ -33,41 +19,6 @@ Open Code Review 的核心设计理念是将**确定性工程**与 **Agent** 结
 **Agent**（负责动态决策）：将 Agent 的优势集中在动态决策和动态召回上下文上——场景化提示词调优、场景化工具集沉淀（基于大量线上数据中工具调用轨迹的分析，包括调用频率分布、单一工具重复调用率等）。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 为什么通用 Agent 做不好代码评审？
 

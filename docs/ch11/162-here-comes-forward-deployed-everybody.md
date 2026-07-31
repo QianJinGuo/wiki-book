@@ -4,51 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/here-comes-forward-deployed-everybody.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Here Comes Forward Deployed"))
-    文章背景
-    从套装软件到原材料供应的范式转移
-    历史先例 Piggly Wiggly 与自助服务革命
-    Clay Shirky 的预言与新一轮成本曲线
-    Everybody的分化 聚合与原子化的对立
-    给企业的建议
-    给个人的建议
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 - Forward Deployed Engineer (FDE) 概念成为 Salesforce Headless 360 发布的核心理念
 - 企业软件正在从套装走向模块化解耦
 - 头部客户对定制化需求推动"贴身工程团队"模式兴起
@@ -99,7 +55,7 @@ Pit Crew 不需要写品牌调性指南，营销人员不需要配置 MCP 服务
 - from-system-of-record-to-system-of-intelligence.md-intelligence
 - [Enterprise Software Moats Agent Era](../ch03/035-agent.html)
 - [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
-- [Ibm Forward Deployed Units Ai Deployment](../ch05/094-ai.html)
+- [Ibm Forward Deployed Units Ai Deployment](../ch05/095-ai.html)
 - from-system-of-record-to-system-of-intelligence.md-intelligence-1
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/here-comes-forward-deployed-everybody.md)

@@ -8,25 +8,6 @@
 
 > Perplexity 2026 研究文章，提出将 search 系统从 "agent 调用检索 tool" 重新建模为 "agent 生成可执行代码"：搜索查询被 LLM 编译为 TypeScript/Python 代码，代码作为中间表示，调用真实 search APIs 并合成答案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Rethinking Search as Code Generation"))
-    核心范式转换
-    SDK 基础原语 Primitives
-    三个独有贡献 不应合并到现有 entity
-    与现有 agentic-search 实体的差异化
-    技术细节深度分析
-      Code-as-IR 的工程优势
-      与传统 RAG 检索的对比
-      Production 部署的考量
-    传统搜索刚性的根本原因
-    controllability 瓶颈的技术本质
-    Search as Code 的架构创新
-```
-
 ## 核心范式转换
 
 传统 RAG/agentic search 范式：
@@ -42,44 +23,6 @@ User query → LLM agent → 生成 TypeScript/Python code (用 SDK primitives) 
 **关键差异**：把 search 从"调用函数"变成"生成程序"。每个 search query 是一个**可执行的、可调试的、可缓存的代码对象**，不是一次性的 prompt-engineering 决策。
 
 ## SDK 基础原语 (Primitives)
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 Perplexity 暴露给 LLM agent 的核心 primitives：
 
@@ -186,7 +129,7 @@ SaC 范式要求生成的代码在 sandboxed environment 中执行，这是生�
 
 ## 与现有实体/概念的链接
 
-→ [Agentic search models](../ch04/516-agentic-search-models.html) — 同主题概念层 vs 架构层互补
+→ [Agentic search models](../ch04/522-agentic-search-models.html) — 同主题概念层 vs 架构层互补
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-search-as-code-generation.md)
 
 ## 关键洞察总结

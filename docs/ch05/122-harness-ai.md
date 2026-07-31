@@ -12,31 +12,6 @@
 作者：stevenpxiao
 当 Harness Engineering 成为 2026 年最热门的 AI 工程话题，业界争论焦点集中在"该用多大的模型"还是"该搭多复杂的工作流"时，我们团队在落地实践中发现了一个被低估的事实——构建 Harness 工作流不是最终目的，私域和团队知识的沉淀才是真正的技术护城河。本文分享我们在 AI Team 工程交付编排系统中，如何设计知识分层架构、如何让团队知识库共建共享、如何让工作流成为知识沉淀的载体、如何突破人机交互瓶颈实现随时随地的工作流流转，以及我们的落地经验和思考。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness不是目的 知识才是护城河"))
-    一 从 Harness Engineering 热潮说起
-    二 Harness Engineering 本质 三支柱与知识的位置
-    三 核心论点 为什么知识沉淀比工作流更重要
-      工作流是可替换的 知识是可累积的
-      没有知识沉淀的工作流是一次性的
-      知识是团队的复利资产
-    四 知识分层架构 五层存储 五种类型 三级成熟度
-      三个维度
-      五层存储架构
-      五种知识类型 MECE 原则
-    五 团队知识库 如何共享和更新
-      独立 Git 仓库
-      三种团队角色
-      贡献模式 借鉴区块链思想
-    要点 1 知识沉淀是 Harness Engineering 的隐藏主线
-    要点 2 工作流一次性困境的本质是知识缺失闭环
-    要点 3 五层存储架构的层级跃迁机制
-```
-
 ## 一、从 Harness Engineering 热潮说起
 2025 年末至 2026 年初，AI 工程领域掀起了一场关于 **Harness Engineering** 的热烈讨论。这个术语源自"harness"（马具）的隐喻——就像骑师通过缰绳和马鞍来**引导**马的力量走正确的方向，而非增强马本身的体能，Harness Engineering 强调的是**引导和约束 AI 模型的能力**，而非提升模型本身。
 从三大标志性实践来看，不同团队对 Harness Engineering 的侧重各有不同：
@@ -50,37 +25,6 @@ mindmap
 > "将来的技术护城河不在模型，而在垂直领域知识的沉淀。"
 
 ## 二、Harness Engineering 本质：三支柱与知识的位置
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 Harness Engineering 三支柱：
 | 上下文工程 Context Eng. | 架构约束 Architecture | 持续治理 Governance |
 |------------------------|---------------------|---------------------|

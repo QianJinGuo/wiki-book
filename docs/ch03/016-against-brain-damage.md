@@ -10,22 +10,6 @@
 
 > **Core insight**: Ethan Mollick 的"反 Brain Damage"框架：AI 本身不会破坏大脑，但不加思索地使用会损害思维能力。关键区分是 AI 作为 shortcut（替代思考）vs scaffold（推动思考）——Penn/Turkey 研究显示无指导的 ChatGPT 使考试分数下降 17%，而 World Bank/Nigeria 的教师引导 AI 辅导效果超过"一些最有效的教育干预"。核心原则：先思考、先写作、先开会。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Against Brain Damage"))
-    MIT Your Brain on ChatGPT 研究的正确解读
-    学习脑 AI 作为 tutor vs shortcut
-    创意脑 AI 的可预测性与多样性
-    集体脑 AI 对社会过程的影响
-    必要难度原理与学习心理
-    Scaffold vs Shortcut 动态连续谱
-    锚定效应与认知架构
-    先卡住 再提问确保心理努力优先
-```
-
 ## MIT "Your Brain on ChatGPT" 研究的正确解读
 
 人们经常询问"AI 是否会损害大脑？"这个问题本身揭示了对 AI 能力的深刻恐惧。MIT Media Lab 的"Your Brain on ChatGPT"研究被广泛误解——该研究只有一小群大学生，被分配单独写作、使用 Google 或使用 ChatGPT 写论文。使用 ChatGPT 的学生参与度更低、记得的内容更少，四个月后重新写作时表现更差，脑电图活动也减少。但研究并没有显示任何"脑损伤"—— Plato 曾认为写作会削弱智慧，手机出现时有人担心不记住电话号码会让我们变蠢，技术焦虑并非新事物。
@@ -33,44 +17,6 @@ mindmap
 真正的问题不是 AI 造成 literal brain damage，而是如何使用 AI 决定它帮助还是损害你的心智。MIT 研究的关键发现是：当学生被要求使用 ChatGPT 而没有特别 prompting 时，他们走了捷径得到了答案，即使学生认为从 ChatGPT 的帮助中学到了很多东西，他们实际上学习得更少——期末考试成绩比不使用 ChatGPT 的同学低 17%。AI 训练的目的是提供帮助和回答问题，这种默认模式会绕过产生学习的（有时是不愉快的）心理努力。
 
 ## 学习脑：AI 作为 tutor vs shortcut
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 在教育领域，AI 使用损害学习的关键场景是试图学习或综合新知识时。如果你将思考外包给 AI 而不是自己做工作，就会错过学习机会。无指导的 ChatGPT 使用让土耳其高中生考试分数下降 17%，原因是 AI 默认给出答案而不是引导学生自己思考。但当 AI 在教师引导和良好教学原则下使用时，效果截然不同：World Bank 在尼日利亚为期六周的 ChatGPT 辅导计划（带教师引导）发现"效果超过一些最有效的教育干预"；哈佛在大型物理课实验中发现精心 prompting 的 AI tutor 优于主动课堂；斯坦福大型编程课研究发现 ChatGPT 使用带来成绩提升；马来西亚研究发现 AI 与教师引导和扎实教学法结合带来更多学习。
 
@@ -124,10 +70,10 @@ AI 虽是单一智能复制，其"多样性"输出被训练数据模式限制。
 
 ## 相关实体
 - [Choosing To Stay Human](ch03/008-choosing-to-stay-human.html)
-- [Lightfield Introducing Skills](ch03/072-skills.html)
-- [Claude Code Team 10 Tips Boris](ch03/078-claude-code.html)
+- [Lightfield Introducing Skills](ch03/071-skills.html)
+- [Claude Code Team 10 Tips Boris](ch03/077-claude-code.html)
 - [Learning Path To Senior](https://github.com/QianJinGuo/wiki/blob/main/entities/learning-path-to-senior.md)
-- [The Main Path To Truly Creative Ai](../ch01/1354-the-main-path-to-truly-creative-ai.html)
+- [The Main Path To Truly Creative Ai](../ch01/1359-the-main-path-to-truly-creative-ai.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/against-brain-damage.md)

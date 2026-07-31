@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/code-as-agent-harness-survey.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Code as Agent Harness 综述"))
-    核心框架
-    代码作为 Harness 的三个自然属性
-    PEV 控制循环
-    AHE Agentic Harness Engineering
-    多 Agent 协作模式
-    代表系统
-    开放问题
-    工程实践原则
-```
-
 ## 核心框架
 论文（102页，UIUC+Meta+斯坦福）提出三层结构：
 | 层级 | 内容 |
@@ -29,37 +13,6 @@ mindmap
 | **Scaling Harness** | 多智能体围绕共享代码协作 |
 
 ## 关键洞察
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### 代码作为 Harness 的三个自然属性
 1. **可执行**：能跑起来，能产生结果
 2. **可检查**：中间状态、错误、日志、diff、trace 都能被读取
@@ -159,12 +112,12 @@ Code as Agent Harness 可以被视为 Software 2.0（以神经网络替代手工
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/120-harness-engineering.html)
 
-- [Claude Code 架构深度解析](../ch03/078-claude-code.html)
+- [Claude Code 架构深度解析](../ch03/077-claude-code.html)
 - [Claude Code Prompt 提示词体系源码解析](ch09/061-claude-code-prompt.html)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/078-claude-code.html)
-- [AgentCore Managed Harness](../ch04/689-agentcore-harness.html)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/077-claude-code.html)
+- [AgentCore Managed Harness](../ch04/690-agentcore-harness.html)
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

@@ -8,54 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("数据级 Harness 架构师 JiaGouX 解读"))
-    95 这个数字到底在说什么
-    错得很安静 false sense of precision
-    Data is not software 执行层反馈对比
-    反直觉边界 检索 用对
-```
-
 ## 摘要
 
 架构师 JiaGouX 对 Anthropic 6 月 3 日发布的《How Anthropic enables self-service data analytics with Claude》做了一次结构性解读。文章把那个吸睛的 "95% 准确率" 拆解成 5 个反直觉边界：信息存在 ≠ 用对、SQL 写对 ≠ 答案对、RAG 解决"有没有"但不解决"权威性"、Skills 是规程不是模板、Agent 错起来比人错更危险。核心结论是企业级 AI 数据分析需要 **数据级 Harness**：把语义层、血缘图、Skill 工作流、对抗性评测、来源页脚、人审纠错封装进 Agent 运行环境。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 1. 95% 这个数字到底在说什么
 
@@ -200,16 +157,16 @@ JiaGouX 建议避开"公司级聊天查数入口"，更小一点反而更稳。�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/235-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/989-anthropic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/237-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1004-anthropic.html)
 - [Claude Code Dynamic Workflows Jiagoux Architect Perspective](../ch09/094-claude-code-dynamic-workflows.html)
-- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/271-skill.html)
-- [Agent Skill Writing Evaluation](../ch04/269-agent-skill.html)
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/273-skill.html)
+- [Agent Skill Writing Evaluation](../ch04/271-agent-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)

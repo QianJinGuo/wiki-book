@@ -36,20 +36,6 @@ Hy3 preview可以视为混元快速探索实用性大模型、解决真实世界
 在公众号  AI分身和 AI 客服的场景专项评测中，Hy3 preview 展现出相比 Hy  2  更全面的能力升级。新模型在用户意图理解、复杂上下文承接和知识信息组织方面表现更成熟，面对模糊提问、短句追问和多轮对话时，能够更准确地把握用户诉求，并输出更清晰、更稳定的回复。结合知识库、用户记忆与上下文生成回答时更贴合  AI 分身和 AI 客服的角色，过度脑补、主观代入和情绪化表达显著减少，使整体交互体验更贴近"可信、自然、高效"的回复目标。
 在  和平精英  AI NPC 场景评测  中  ，  和平精英  团队  第一时间在  Hy3 preview上线后基于  AI N
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("腾讯混元新里程碑 Hy3 preview 发布开源 Agent"))
-    技术创新的核心突破
-    战略意图解析
-    竞争格局影响
-    对 AI 开发团队的启示
-    对企业 AI 应用的启示
-    对 AI 行业的启示
-```
-
 ## 深度分析
 ### 技术创新的核心突破
 **快慢思考融合架构**：Hy3 preview 采用混合专家（MoE）架构实现快慢思考融合，总参数 295B、激活参数 21B，在保持高效推理的同时兼顾深度思考能力。这种架构设计使模型能够处理从快速问答到复杂推理的广泛任务谱系。
@@ -66,37 +52,6 @@ mindmap
 **性价比战争开启**：TokenHub 上输入价格最低 1.2 元/百万 tokens、输出 4 元/百万 tokens 的定价，结合 28 元/月的个人版套餐，将大模型使用成本推向新低。这种"智能密度最优"策略，将推动行业进入以性价比为核心竞争维度的阶段。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 对 AI 开发团队的启示
 1. **智能体能力是核心竞争力**：Hy3 preview 在 SWE-Bench、Terminal-Bench、ClawEval 等智能体基准上的表现说明，Agent 能力正在成为评估大模型实用价值的关键维度。开发团队应将智能体能力纳入模型选型的核心指标。
 2. **强化学习规模化是提升路径**：腾讯混元的实践经验表明，强化学习任务规模的系统性提升，是驱动智能体能力突破的有效路径。这为模型优化提供了明确的技术方向。
@@ -114,9 +69,9 @@ graph TB
 ## 相关实体
 - [Agent框架Owl原理详解](../ch03/035-agent.html)
 - [Agent Framework Owl Principles](../ch03/035-agent.html)
-- [Agent Memory Architecture Past Influence Future Ruofei](ch04/121-agent-memory.html)
+- [Agent Memory Architecture Past Influence Future Ruofei](ch04/098-agent-memory.html)
 - [Autobrowse Browserbase Persistent Skill](../ch07/040-autobrowse-browserbase-persistent-skill.html)
-- [Lightseek Tokenspeed](../ch01/1189-lightseek-tokenspeed.html)
+- [Lightseek Tokenspeed](../ch01/1202-lightseek-tokenspeed.html)
 
 - [Eva Bench Data 2 Voice Agent Evaluation](../ch03/035-agent.html)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch03/035-agent.html)

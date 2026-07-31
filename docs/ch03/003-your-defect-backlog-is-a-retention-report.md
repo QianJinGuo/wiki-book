@@ -36,10 +36,9 @@ Customers who watch you fix bugs fast become advocates. Customers who accumulate
 
 How many paper cuts are your customers bleeding through right now, while you're busy shipping the next feature?
 
-
 ## 相关实体
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/662-garry-tan.html)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/673-garry-tan.html)
 - [Against Brain Damage](ch03/016-against-brain-damage.html)
 - [Www.Cio 4171054 Ai Driven Layoffs Arent Making Bus](ch03/011-cio.html)
 - [Alibaba Cloud Cio Ai Productivity Reframe](ch03/011-cio.html)
@@ -47,41 +46,6 @@ How many paper cuts are your customers bleeding through right now, while you're 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/defect-backlog-retention-report.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 **1. 成本可见性不对称：缺陷成本的承担者与决策者不同**
 

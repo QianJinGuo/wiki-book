@@ -10,17 +10,6 @@
 
 本文整合六个强化学习训练框架的共识，归纳出训练 LLM 智能体的工程实践。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("训练LLM智能体的七条实战经验Agentic RL最佳实践"))
-    核心框架概览
-    七条实战清单
-    关键工业验证
-```
-
 ## 核心框架概览
 
 | 框架 | 核心贡献 |
@@ -33,43 +22,6 @@ mindmap
 | RAGEN / RAGEN-2 | Echo Trap → StarPO-S；Template Collapse → 互信息诊断 + 信噪比过滤 |
 
 ## 七条实战清单
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 1. **动作掩码（Action Mask）是底线**：损失只算模型自己生成的 token，避免对环境 token 的错误学习。进阶做法：环境 token 用 SFT 目标学。
 
@@ -93,7 +45,7 @@ graph LR
 
 ## 相关实体
 
-- [2026 年面向 LLM 的 RL 方法总结](../ch01/1274-llm.html)
+- [2026 年面向 LLM 的 RL 方法总结](../ch01/637-llm.html)
 - [Amazon Nova 多轮 RL 推理基础设施](../ch11/305-deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-am.html)
 - [Harness 工程实践：如何让 Agent 完成自主迭代](../ch05/009-harness.html)
 - Agentic Loop Engineering 工程手册

@@ -35,22 +35,6 @@
     const occurrences = content.split(oldText).length - 1;if (occurrences === 0) {  return `Error: old_text not found in ${filePath}`;}if (occurrences > 1) {  return `Warning: old_text found ${occurrences} times in ${filePath}. Please provide a more unique text snippet. No changes made.`;}const updated = content.replace(oldText, newText
 ", "total_lines": 75
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("行代码实现 Open Claw 的 Tool 消息总线"))
-    薄抽象层策略的工程价值
-    ToolRegistryexclude 的能力边界控制
-    MessageBus 的双模式消费设计
-    并发模型与历史记录一致性
-    从薄框架开始 保持可替换性
-    能力边界用排除而非授予
-    消息总线的消费模式要匹配运行时特征
-    并发控制从简单方案开始
-```
-
 ## 深度分析
 ### 薄抽象层策略的工程价值
 Open Claw 选择直接基于 Anthropic SDK 构建，拒绝 LangChain 等中间层，这一决策背后有深刻的工程逻辑。
@@ -96,37 +80,6 @@ ExecTool 实现了正则黑名单 → 超时控制 → 输出截断的三层防�
 这个三层设计的启示是：安全防护需要分层，不同层次的防护解决不同维度的问题。纯靠正则黑名单无法防范所有攻击，但完全放弃黑名单也会让常规危险命令畅通无阻。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 1. 从薄框架开始，保持可替换性
 如果你的 Agent 系统需要深度定制 Tool 行为或调试困难的场景，考虑直接从模型 SDK 构建，而不是通过 LangChain 等框架。薄框架不意味着"没有架构"，而是让架构更显式、更容易追踪。
 同时，即使选择了薄框架，也要保持接入层的可替换性（MessageTool 的 `sendCallback` 设计是一个好示范）。今天跑在 REPL，明天可能要跑在 Bot 上，不应该为此重写核心逻辑。
@@ -148,10 +101,10 @@ ExecTool 的三层防护说明了一个通用原则：安全设计不能依赖�
 
 ## 相关实体
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](../ch03/035-agent.html)
-- [Stripe Sessions 2026 Ai Agents](../ch04/363-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](../ch04/365-stripe-sessions-2026-ai-agents.html)
 - [Claude Code Prompt Source Analysis](../ch09/061-claude-code-prompt.html)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/212-anthropic-claude-managed-agents.html)
-- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/121-agent-memory.html)
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/098-agent-memory.html)
 
 ---
 

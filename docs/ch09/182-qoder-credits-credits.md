@@ -9,52 +9,11 @@
 > 来源：阿里云云原生 (WeChat) | 2026-07-24 | v×c=56
 > 核心观点：AI Coding Agent 的 Credits 优化重点是「验证过的产出 ÷ 花掉的 Credits」，而非单纯减少消耗。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("用好 Qoder Credits 优化的不是花费多少 而是单位"))
-    单位 Credits 产出的本质
-    上下文管理是最直接的杠杆
-    Harness Engineering 的前置意义
-    关键概念
-```
-
 ## 摘要
 
 Qoder Credits 优化的核心是提升「验证过的产出 ÷ 花掉的 Credits」比率，而非简单压缩总开销。文章提出三大杠杆：上下文与缓存管理（单 Session 单任务、精确指路、趁热追问、避免频繁切模型）、好设计与好验证（目标定义、最小充分测试、Harness Engineering 仓库改造）、模型分工（高级模型做决策→性价比模型做吞吐→测试做裁判）与时间调度（/schedule 夜间执行）。核心原则是「先保证做对，再谈省」。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 - **有效路径占比**：产生新证据或推进交付的调用占全部调用的比例，是比原始 Credits 更细粒度的效果指标
 - **上下文是真正的大头**：每轮请求的 System Prompt、工具定义、历史会话、已读代码等都要重新计费；真正该省的是「没用的那部分」在每一轮的重复计费

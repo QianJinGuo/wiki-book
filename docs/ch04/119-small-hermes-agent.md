@@ -4,64 +4,11 @@
 
 > 📊 Level ⭐⭐ | 15.3KB | `entities/small-hermes-self-evolving-agent-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Small Hermes 自我进化 Agent 架构"))
-    七重困境 设计决策映射
-    三层上下文架构
-    反思机制设计
-    单向数据流约束
-    反模式警示
-    成熟度模型
-    七重困境的相互纠缠性
-    三层上下文架构的工程价值
-```
-
 ## 核心洞察
 
 Agent自我进化之所以难，是因为七个维度的困难相互纠缠，而非某个单独技术问题。Small Hermes（Rust）的解法是一组相互支撑的设计决策，缺一不可。
 
 ## 七重困境 → 设计决策映射
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 | 困境 | 解法 |
 |------|------|
@@ -200,7 +147,7 @@ Small Hermes的核心贡献在于**同时给出七个解法，且七个解法相
 | 篇 | 关系 | 说明 |
 |----|------|------|
 | [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html) | 同系列 | Hermes官方Agent的self-improve机制源码解析，与small Hermes互相印证 |
-| [hermes-self-evolution-closed-loop-skill-reuse-winty](ch04/271-skill.html) | 补充 | 6阶段完整闭环的具体实现（npm发包案例） |
+| [hermes-self-evolution-closed-loop-skill-reuse-winty](ch04/273-skill.html) | 补充 | 6阶段完整闭环的具体实现（npm发包案例） |
 | [hermes-agent-deep-dive](../ch03/096-hermes-agent.html) | 扩展 | 阿里云飞樰的深度解析，包含RL训练闭环和Harness Engineering |
 | [acker-agent-evolution-three-routes-convergence](../ch03/035-agent.html) | 框架 | 三路线汇聚框架：small Hermes对应"学习层（进化）" |
 | [openclaw-hermes-source-code-agent-architecture-review](../ch01/232-openclaw-hermes.html) | 对比 | OpenClaw与Hermes架构对比，Channel契约和Gateway设计 |

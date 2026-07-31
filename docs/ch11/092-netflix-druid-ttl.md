@@ -10,65 +10,7 @@
 
 > **Core insight**: 滚动窗口仪表板的每次刷新只变化最后几分钟数据，其余"历史"数据已凝固。区间感知缓存将查询结果按时间粒度分桶存储，用指数递增 TTL（最近 2 分钟仅 5s，最远可达 1h）使 Druid 仅需扫描最fresh的未缓存数据，实验中 Druid 查询量降低 33%、P90 延迟改善 66%
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Netflix Druid 区间感知缓存 指数 TTL 分桶查询去重"))
-    问题背景 Druid 标准缓存在滚动窗口下的失效
-    核心设计 区间感知缓存拦截代理
-    指数 TTL 设计逻辑
-    负面缓存与空洞处理
-    实验结果与关键数据
-    滚动窗口查询的隐式 DDoS本质
-    指数 TTL 的信息论直觉
-    拦截代理 vs 原生集成的权衡
-```
-
 ## 问题背景：Druid 标准缓存在滚动窗口下的失效
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 Netflix Druid 集群每日处理 10T 行数据、15M events/sec 写入，26 个图表的热门仪表板每次加载产生 64 次查询，30 人同时查看、每 10 秒刷新，产生 192 qps。 Druid 内置的全结果缓存和段级缓存对滚动窗口失效：时间窗口轻微移动即构成不同的查询字符串导致缓存未命中；Druid 为保证查询正确性主动拒绝缓存含实时段的数据。这类近重复查询构成隐式 DDoS，在不扩容硬件的前提下无法简单解决。
 
 ## 核心设计：区间感知缓存拦截代理
@@ -130,7 +72,7 @@ Netflix 选择拦截代理而非修改 Druid 源码，这是一个务实的工�
 - [High Throughput Graph Abstraction At Netflix Part I](ch11/104-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
-- [Netflix Nebula Archrules](ch11/090-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](ch11/091-netflix-nebula-archrules-java-archunit.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/netflix-druid-interval-aware-caching.md)

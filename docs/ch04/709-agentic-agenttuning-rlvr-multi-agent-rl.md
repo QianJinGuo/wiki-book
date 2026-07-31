@@ -8,18 +8,6 @@
 
 > 淘天集团直播AIGC团队将数字人互动从传统静态Workflow架构升级为动态Agentic架构，融合AgentTuning蒸馏、RLVR和Multi-Agent RL三项技术。核心贡献在于提出Multi-Agent RL方法，将工具调用模型与回复模型分为两个独立Agent，使用不同奖励信号在线协同优化——相比单Agent GRPO解决多奖励混杂难收敛的问题，回复模型的帮助性提升23.6pt，工具调用合理性提升18.2pt。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("淘宝直播数字人 Agentic 架构升级 AgentTuning"))
-    从静态Workflow到Agentic架构数字人交互的范式转变
-    先蒸馏再强化的工程理性
-    Multi-Agent RL解决多奖励混杂问题的机制分析
-    仿真环境中的训练挑战
-```
-
 ## 摘要
 
 淘宝直播数字人团队（淘天集团-直播AIGC）针对原"意图识别—检索—生成"静态Workflow架构的三大瓶颈（灵活性差、上下文感知弱、并发调度缺失），基于30B MoE模型单卡H20部署吞吐达140 tokens/s的基座能力，实现了从感知域、决策域到执行域的全方位Agentic架构升级。技术路线上采用"先蒸馏再强化"的策略：先用千亿参数教师模型采样完整trajectory蒸馏至两个Qwen3-30B-A3B小模型（工具调用 + 回复生成），再分别进行强化学习优化。其中RLVR将端到端延迟降至1.79秒，Multi-Agent RL解决了单Agent GRPO中多奖励混杂导致收敛困难的问题，实现了工具调用和回复质量的协同提升。
@@ -28,43 +16,6 @@ mindmap
 
 1. **原架构三大瓶颈**：新增1个意图需2个月迭代（灵活性差），无法联动多源信息且误判无法反思（上下文感知弱），无法处理高频多弹幕并发（并发调度缺失）。FAQ利用率不足2%
 2. **Agentic架构三域升级**：感知域从单维度匹配→全局上下文感知（融合弹幕+历史+商品信息）；决策域从单次分类→多次按需工具调用+自我纠错（反思机制）；执行域从单意图话术→多模态响应（调图、调顺序、融合讲解文案）
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 3. **AgentTuning蒸馏**：千亿参数教师模型采样完整trajectory，蒸馏至两个Qwen3-30B-A3B小模型，剔除思考序列，单次工具调用仅0.3s
 4. **RLVR效果**：Agent平均端到端延迟降至1.79秒（下降1.36秒），多轮对话用户比例提升2.76%
 5. **Multi-Agent RL核心贡献**：工具调用模型与回复模型使用不同奖励信号协同优化，回复模型正确性+4.1pt/帮助性+23.6pt，工具调用合理性+18.2pt，消融实验验证了其对单Agent GRPO的显著优势
@@ -108,11 +59,11 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 - **Reward设计**：LLM Judge作为奖励模型引入的"评委不稳定性"使奖励更加模糊——同一个回复LLM Judge在不同次调用可能给出不同的打分
 - **稀疏奖励问题**：在长链工具调用中，只有最终结果才获得反馈，中间步骤的奖励信号极度稀疏
 
-这些挑战在[AgentCore旅行分配系统](ch04/689-agentcore-harness.html)的落地实践中也被反复提及——Agent训练的最大挑战往往不是算法创新，而是工程环境的可靠性。
+这些挑战在[AgentCore旅行分配系统](ch04/690-agentcore-harness.html)的落地实践中也被反复提及——Agent训练的最大挑战往往不是算法创新，而是工程环境的可靠性。
 
 ### 5. 从task-specific训练到通用模型+Skill的演进方向
 
-文章在"未来展望"中提到"从task-specific训练向通用模型 + Skill渐进式披露演进"，这一方向与[QoderWork Skills开发实践](../ch03/072-skills.html)中的四层分离架构形成了有趣的呼应：
+文章在"未来展望"中提到"从task-specific训练向通用模型 + Skill渐进式披露演进"，这一方向与[QoderWork Skills开发实践](../ch03/071-skills.html)中的四层分离架构形成了有趣的呼应：
 
 - **task-specific训练**：为每个任务训练专门的模型，精度高但成本高、扩展性差
 - **通用模型 + Skill**：一个底层模型通过不同的SKILL.md/配置适应不同任务，成本低、扩展性好
@@ -133,11 +84,11 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 
 ## 相关实体
 
-- [QoderWork Skills开发实践](../ch03/072-skills.html)
+- [QoderWork Skills开发实践](../ch03/071-skills.html)
 - [Harness Engineering探索之旅](../ch05/120-harness-engineering.html)
 - [Agent落地真相](../ch03/035-agent.html)
-- [AgentCore旅行分配系统](ch04/689-agentcore-harness.html)
-- [群聊Agent模式](../ch01/976-claude.html)
+- [AgentCore旅行分配系统](ch04/690-agentcore-harness.html)
+- [群聊Agent模式](../ch01/1022-claude.html)
 - [Agent评测方法论](../ch03/035-agent.html)
 - [AREAL-2.0 Agent自演进](../ch03/035-agent.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

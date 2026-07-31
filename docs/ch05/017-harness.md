@@ -4,59 +4,12 @@
 
 > 📊 Level ⭐⭐ | 19.8KB | `entities/harness-design-long-running-apps.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("长时间运行应用的 Harness 设计"))
-    正文
-    为什么天真实现行不通
-    前端设计 让主观质量变得可评分
-    扩展到全栈编码
-    架构设计
-    运行结果对照
-    迭代与简化
-    关键经验
-```
-
 ## 正文
 在过去几个月里，我一直在同时处理两个彼此关联的问题：如何让 Claude 产出高质量的前端设计，以及如何让它在无人干预的情况下构建完整应用。这项工作起源于我们更早之前在 frontend design skill 和 long-running coding agent harness 上的探索。当时，我和同事们已经通过提示工程与 harness 设计，让 Claude 的表现明显超越了 baseline，但这两条路线最终都碰到了天花板。
 为了突破这些上限，我开始寻找能够同时适用于两个差异很大的领域的 AI 工程方法：一个领域由主观审美主导，另一个则由可验证的正确性与可用性定义。受生成对抗网络（Generative Adversarial Networks, GANs）的启发，我设计了一个由 generator（生成器） 和 evaluator（评估器） 组成的多代理结构。要构建一个既能稳定打分、又具备"品味"的评估器，前提是先建立一套标准，把"这个设计好吗？"这种主观判断转化为具体、可评分的条目。
 随后，我把这些方法应用到了长时间自主编码（long-running autonomous coding）上，并继承了我们早期 harness 工作中的两个经验：第一，把构建任务拆解成可处理的小块；第二，使用结构化工件（structured artifacts）在不同会话之间交接上下文。最终结果是一个由 planner、generator 和 evaluator 组成的三代理架构，它能够在持续数小时的自主编码会话中产出内容丰富的全栈应用。
 
 ## 为什么"天真实现"行不通
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 我们此前已经展示过，harness 设计会对长时间运行的 agentic coding 效果产生显著影响。在更早的一次实验中，我们使用了一个 initializer agent 把产品规格拆解成任务清单，再由一个 coding agent 按"每次实现一个功能"的方式完成任务，并通过工件交接在不同 session 之间延续上下文。更广泛的开发者社区也逐渐收敛到了类似的洞见，比如 Ralph Wiggum 方法，就是通过 hooks 或脚本让 agent 持续处于迭代循环中。
 但有些问题始终没有消失。任务一旦复杂起来，agent 仍然很容易随着时间推移而逐渐偏航。在拆解这个问题时，我们观察到两种常见失效模式。
 第一种，是模型在上下文窗口逐渐被填满时，往往会在长任务中失去连贯性（参见我们关于 context engineering 的文章）。有些模型还会表现出"context anxiety（上下文焦虑）"：当它们接近自己认为的上下文上限时，就会过早开始收尾。context reset（上下文重置）——也就是彻底清空上下文窗口、重新启动一个新 agent，并配合一个结构化交接文档，把前一个 agent 的状态和下一步计划一起传过去——可以同时解决这两个问题。
@@ -145,9 +98,9 @@ Generator 在没有 sprint 拆解的情况下连续稳定运行了两小时以�
 4. **Evaluator 的调优优先级高于 Generator**：在同等工程时间内，优化 evaluator 的评分准确性（通过 few-shot examples、硬性阈值）带来的系统提升往往超过优化 generator 的提示词。
 ## 相关实体
 - [Anthropic 14 Skill Patterns Best Practices](../ch01/315-anthropic-14-skill.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/989-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/271-skill.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1004-anthropic.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/273-skill.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/1004-anthropic.html)
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/710-claude-managed-agents.html)
 
 ---

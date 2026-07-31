@@ -19,22 +19,6 @@ review_confidence: 8
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
 从微信文章 [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md) 提取。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 官方 Agent Harness 平台"))
-    主要章节
-    架构哲学 从模型调用到平台托管
-    四层抽象的价值锚点
-    多智能体编排的工程意义
-    定价模型的隐含逻辑
-    迁移路径建议
-    最佳实践场景
-    运营注意事项
-```
-
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/A_ksLCNmIL4lXLcZeVSPsQ
 
@@ -56,37 +40,6 @@ source_url: https://mp.weixin.qq.com/s/A_ksLCNmIL4lXLcZeVSPsQ
 - ##  可以构建什么
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### 架构哲学：从"模型调用"到"平台托管"
 Managed Agents 的核心转变在于将 Agent 的基础设施责任从用户转移到平台。这与 AWS 从 EC2 到 Lambda 的演进路径高度相似。
 传统 Agent 开发需要自行处理循环控制、工具调用、执行环境、上下文管理四大难题。Managed Agents 通过 Harness 引擎将这些封装为平台能力，开发者只需定义任务本身。
@@ -138,32 +91,32 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 ## 相关实体
 - [Claude Managed Agents 官方 Harness 平台指南](ch01/212-anthropic-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/212-anthropic-claude-managed-agents.html)
-- [claude managed agents official](../ch04/603-claude-managed-agents-official.html)
+- [claude managed agents official](../ch04/607-claude-managed-agents-official.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
 - [claude managed agents](../ch04/710-claude-managed-agents.html)
 - [Claude Managed Agents 开发者指南](../ch04/710-claude-managed-agents.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/397-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/401-agent-skills.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/035-agent.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/989-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/1004-anthropic.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
-- [吴恩达：AI 将最先杀死前端](../ch05/094-ai.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [天猫新品营销技术团队AI编码实战指南（上）](../ch05/094-ai.html)
+- [吴恩达：AI 将最先杀死前端](../ch05/095-ai.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [天猫新品营销技术团队AI编码实战指南（上）](../ch05/095-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/237-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/648-agentic.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/009-harness.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/009-harness.html)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/096-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/009-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/003-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/444-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/120-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/235-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/237-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/120-harness-engineering.html)
-- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](ch01/1274-llm.html)
+- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](ch01/637-llm.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 第 2 来源：claude.com 官方 blog 视角（2026-06-10，演进叙事）

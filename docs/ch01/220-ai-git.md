@@ -4,29 +4,6 @@
 
 > 📊 Level ⭐⭐ | 21.0KB | `entities/ai-era-git-version-control-agentic-coding-practices.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI 时代的 Git 版本管理最佳实践"))
-    核心信息
-    一 新范式下的核心挑战
-      AI Coding Agent 打破的假设
-    二 核心痛点
-      Git 只记录 diff 不记录意图与推理过程
-      脏工作区难以管控 变更噪声大
-      Git merge 只是文本校验 不保证语义正确
-    三 最佳实践
-      建立 Agent-Aware 的 Commit 规范
-      小步提交 Checkpoint Commit 策略
-      使用 Interactive Rebase 整理 Agent 历史
-    Task Description
-    What Changed
-    Key Design Decisions
-    Alternatives Considered
-```
-
 ## 核心信息
 
 - **主题**：AI 时代 Git 版本管理最佳实践（Agentic Coding 场景）
@@ -35,37 +12,6 @@ mindmap
 - **来源**：TRAE.ai 技术专家小夏，2026年4月28日
 
 ## 一、新范式下的核心挑战
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### AI Coding Agent 打破的假设
 
@@ -434,7 +380,7 @@ but branch -a feat/refresh-token feat/token-revocation
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](../ch03/035-agent.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [我用 Skillmd 做了一个简历生成器](../ch04/271-skill.html)
+- [我用 Skillmd 做了一个简历生成器](../ch04/273-skill.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
 

@@ -4,26 +4,6 @@
 
 > 📊 Level ⭐⭐ | 16.0KB | `entities/ai-agents-inside-perimeter-hackernews.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Your AI Agents Are Already Inside"))
-    背景 AI 代理部署速度超过治理成熟度
-    核心问题 身份黑暗物质 Identity Dark Matter
-      身份黑暗物质的技术根因
-    企业身份团队现在在问的三个关键问题
-      问题1 我们的环境中有哪些 AI 代理在运行
-      问题2 我们现在对 NIST 身份要求的合规性如何
-      问题3 我们是否有应立即轮换的静态凭证
-    Orchid Security 的解决路径
-      技术方法 全谱身份权威 Full-Spectrum
-      安全 AI 代理采用的五项原则
-    深度问题 身份黑暗物质正在加速
-    Gartner Market Guide for Guardian
-```
-
 ## 背景：AI 代理部署速度超过治理成熟度
 
 Gartner 在其首份 **Market Guide for Guardian Agents** 中指出："企业 AI 代理的采用正在加速，超过了治理策略控制的成熟度。"  这一判断与 Orchid Security 的市场观察一致——企业正在快速部署 AI 代理，但相应的安全管理框架仍处于早期阶段。
@@ -31,36 +11,6 @@ Gartner 在其首份 **Market Guide for Guardian Agents** 中指出："企业 AI
 Gartner 将 **Guardian Agents** 定义为：负责"管理 AI 代理身份/访问并以零信任策略进行治理"的供应商类别。 这是 Gartner 首次将该领域正式纳入研究体系，标志着 AI 代理安全已成为企业安全的独立赛道。
 
 ## 核心问题：身份黑暗物质（Identity Dark Matter）
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 传统 IAM 系统设计时假设身份主体是人类用户——登录、执行操作、登出。而 AI 代理的运作模式截然不同：
 
@@ -223,7 +173,7 @@ Orchid 的方法论建立在五个核心原则之上：
 
 ## 相关实体
 
-- [We Scanned 1 Million Exposed AI Services](../ch05/094-ai.html) — 同一来源的后续大规模 AI 安全扫描报道
+- [We Scanned 1 Million Exposed AI Services](../ch05/095-ai.html) — 同一来源的后续大规模 AI 安全扫描报道
 - [新型 OAuth 网络钓鱼](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md) — 身份黑暗物质与钓鱼攻击的关联
 - [AI 代理安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — AI 代理治理的安全架构原则
 - [AI 代理安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — 相关的威胁建模概念

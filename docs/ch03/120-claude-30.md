@@ -6,22 +6,6 @@
 
 # 我用Claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("我用Claude搭了个自动新闻简报 30天后比我刷了一年的信息还有用"))
-    四任务
-    技术架构
-    N8N五节点工作流
-    CLAUDEmd关键字段
-    反馈循环
-    信息过载的结构性解法
-    CLAUDEmd为什么是核心杠杆
-    MCP工具链的连接价值
-```
-
 ## 核心结论
 
 - 四任务：信息源监控→信号过滤→综合→交付（45分钟→5分钟）
@@ -29,39 +13,6 @@ mindmap
 - 复利：30天校准→60天模式揭示→90天专职分析师级输出
 
 ## 四任务
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 1. **信息源监控**：行业新闻/竞品/学术/newsletter/YouTube/播客文字稿/GitHub/Reddit
 2. **信号过滤**：基于标准识别重要内容，竞品发产品重要，重复包装不重要
@@ -138,10 +89,10 @@ Filesystem MCP + Brave Search MCP构建了一个完整的读写-搜索闭环。C
 
 ## 相关实体
 - [Harness Engineering Jk Launcher Baijiajie](../ch05/120-harness-engineering.html)
-- [New Ai Lock In](../ch01/995-the-new-ai-lock-in.html)
+- [New Ai Lock In](../ch01/907-the-new-ai-lock-in.html)
 - [Loop Engineering Addy Osmani Challengehub](../ch05/004-loop-engineering.html)
 - [Kiro Mcp Rds Mysql Upgrade](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-mcp-rds-mysql-upgrade.md)
-- [Yumanju Ai Full Flow Efficiency](../ch05/094-ai.html)
+- [Yumanju Ai Full Flow Efficiency](../ch05/095-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

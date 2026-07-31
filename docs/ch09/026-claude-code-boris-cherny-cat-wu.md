@@ -10,58 +10,11 @@
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-first-year-retrospective-agi-hunt.md)
 > 视频原片：[YouTube](https://www.youtube.com/watch?v=Hth_tLaC2j8)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 一周年回顾 Boris Cherny"))
-    一 两个赞的起点 AI 产品的早期反馈悖论
-    二 Self-Validating Loop Agent
-    三 Routines Agent 同步 异步的关键跃迁
-    四 Auto Mode 的反直觉安全论点
-```
-
 ## 摘要
 
 文章是 Boris Cherny + Cat Wu 在 Claude Code 一周年时录制的视频文字稿，主题是回顾产品形态如何从"终端聊天工具"演化为"AI 编程基础设施"。覆盖 10 个章节：起点（两个赞）、验证机制（self-validating loop）、人人写代码（PM/设计师/数据科学家都在用）、Routines（同步 → 异步）、Auto Mode（用另一个模型做安全审查）、Loop 与手机编程、Context 极简主义、源码泄露风波（v2.1.88 npm source map 事件）、一年时间线、下一年展望。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **起点的反常识信号**：2025-02 Research Preview 内部演示只收到 2 个赞，但团队持续投入；2025-05-22 Claude 4 发布同日 Claude Code 正式发布，"从那天起一切开始加速"。
 - **验证是 Agent 长时间自主运行的关键**：
@@ -86,7 +39,7 @@ Claude Code 2025-02 内部演示只收到 2 个赞。两年后（2026-06），�
 - **AI 产品的复合效应**——模型能力提升与用户工作流沉淀是两条独立曲线：模型每月升级（Claude 3.7 → 4.0 → 4.5 → 4.6 → 4.7 → 4.8），但 Skill / Routine / 验证回路是用户在使用中沉淀的资产，**两者叠加产生指数级复合**。
 - **AI 工具的反馈周期**——传统工具的反馈是"今天能干什么"；AI 工具的反馈是"今天 + 模型升级后 + 用户技能沉淀后"能干什么。早期反馈对长期价值预测力很弱。
 
-这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/237-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
+这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/648-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
 
 ### 二、Self-Validating Loop：Agent 长期自主的真正关键
 
@@ -191,8 +144,8 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Boris Cherny Interview 2026: 从 IDE 到 Agent Console](../ch03/035-agent.html)
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/035-agent.html)
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/078-claude-code.html)
-- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/601-agent-loop.html)
+- [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/077-claude-code.html)
+- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/606-agent-loop.html)
 - [Claude Code Prompt 源码分析](ch09/061-claude-code-prompt.html)
 - [Claude Code Prompt 源码分析 fanone](ch09/061-claude-code-prompt.html)
 - [Claude Code Prompt Context Harness](ch09/061-claude-code-prompt.html)
@@ -200,8 +153,8 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Anthropic Prompt Caching 与 Claude Code](../ch01/217-anthropic-prompt-caching-claude-code.html)
 - [24h Worker Agent](../ch03/035-agent.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/009-harness.html)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/237-agentic.html)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/648-agentic.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

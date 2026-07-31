@@ -4,61 +4,12 @@
 
 > 📊 Level ⭐⭐ | 16.4KB | `entities/gbrain.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GBrain YC CEO Garry Tan 的"))
-    与 GStack 的关系
-    Compiled Truth Timeline 知识模型
-    个 Skill 即插即用
-    混合搜索 实体自动升级
-    能打电话的脑子
-    部署方式
-    设计哲学
-    Thin Harness Fat Skill 哲学的完整实现
-```
-
 ## 概述
 GBrain 于 2026 年 4 月初开源，十几天内斩获 9K+ Star。其核心解决的是 AI Agent 的"金鱼脑"问题——每次开聊都从零开始，昨天告诉它的事今天就当没发生过。
 Garry Tan 本人用 GBrain 运行自己的日常 Agent：17888 个页面、4383 个人物、723 家公司、21 个定时任务全自动运转。
 整套项目仅用 12 天完成开发。
 
 ## 与 GStack 的关系
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 - **GStack**：教 Agent 怎么写代码（7 万+ Star，每天 3 万开发者使用）
 - **GBrain**：教 Agent 怎么记事和思考
 两个项目相互独立，可单独使用，也可组合。`hosts/gbrain.ts` 是连接两者的桥梁——GStack 的编码 Skill 在动手写代码前会先查 GBrain 脑子，确认之前是否讨论过或决定过什么。
@@ -184,28 +135,28 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 
 ## 相关实体
 - [AgentBrowser](../ch09/071-agent-browser-claude-code-qoderwork.html)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/094-ai.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/095-ai.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/913-20.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/926-20.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [SkillClaw](../ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/479-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
-- [OpenHuman: AI Agent 持久记忆框架](../ch04/121-agent-memory.html)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04/098-agent-memory.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 - [AutoCLI](../ch03/125-autocli.html)
 - [阿里巴巴 Aone 面向 Agent 的研发模式探索](../ch04/055-aone-agentic.html)
 - [CLI-Anything](../ch03/101-cli-anything.html)
-- [AgentRun](../ch04/003-agentrun.html)
+- [AgentRun](../ch04/444-agentrun.html)
 - [OpenCLI](../ch03/088-opencli.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [24h打工人](../ch03/035-agent.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/677-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
-- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
 
-- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/121-agent-memory.html)
+- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/098-agent-memory.html)
 
 ## 第 3 来源：术哥无界 v0.42.44.0 源码深度解析
 

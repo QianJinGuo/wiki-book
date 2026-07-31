@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/anthropic-puts-claude-agents-on-a-meter-across-its.md`
 
-
 ## 核心要点
 - 来源：infoworld.com
 - 评分：v=5 c=12 (56分)
@@ -13,40 +12,9 @@
 - Pro 用户 $20 积分，Max 5x $100，Max 20x $200
 - 之前程序化负载与交互式 Claude 使用共享同一订阅池
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-- [Anthropic Claude Agents Meter Infoworld](../ch04/406-anthropic-claude-agent.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/989-anthropic.html)
-- [Notion Ai Agents](../ch04/298-ai-agent.html)
+- [Anthropic Claude Agents Meter Infoworld](../ch04/410-anthropic-claude-agent.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1004-anthropic.html)
+- [Notion Ai Agents](../ch04/030-ai-agent.html)
 - [Announcing Claude Managed Agents On Cloudflare](ch01/110-announcing-claude-managed-agents-on-cloudflare.html)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/212-anthropic-claude-managed-agents.html)
 

@@ -14,69 +14,11 @@
 **来源**：MiniMax
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("一个 AI 还是不够的 MiniMax Agent Team Mavis"))
-    单 Agent 的四个痛点
-      痛点一 上下文焦虑
-      痛点二 注意力漂移
-      痛点三 IM 场景的延迟期望
-    Agent Team 的核心认知
-    三个关键架构差异
-      差异一 对抗式验证
-      差异二 状态机管理
-      差异三 隔离上下文
-    Owner-Worker-Verifier 三角色
-      Owner 项目经理
-      Worker 专业执行
-      Verifier 对抗检查
-    Task 派发 vs Agent Team
-    IM 场景落地
-    Verifier 在研究场景的具体工作
-      来源检查
-      时效检查
-    文档场景 能做 能交付
-```
-
 ## 背景
 MiniMax 将 Agent 产品升级，新名字：**Mavis — MiniMax as a Jarvis**。
 此次分享做 Agent Team 背后的思考：怎么设计 Agent team？为解决什么问题？付出什么成本？用户什么时候该用 Agent Team、什么时候没必要用？
 
 ## 单 Agent 的四个痛点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 痛点一：上下文焦虑
 用户给了 7 件事，Agent 做完 3 个就停了，开始汇报"已经完成了 1、2、3，要不要继续做剩下的"。这是因为模型普遍存在**上下文焦虑**，模型本身对于"超长任务什么时候该停"的判断就是模糊的。
 
@@ -176,10 +118,10 @@ MiniMax 的 Owner-Worker-Verifier 模型揭示了一个关键认知：多 Agent 
 
 ## 相关实体
 - [Minimax Agent Team Mavis](ch04/147-ai-minimax-agent-team-mavis.html)
-- [Gepa Optimize Anything](../ch01/295-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](../ch01/296-gepa-optimize-anything.html)
 - [Sub Agent Vs Agent Team Selection Guide](ch04/114-sub-agent-vs-agent-team.html)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/397-agent-skills.html)
-- [Memory Agent Systems Cobanov](ch04/604-memory-agent-systems-cobanov.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/401-agent-skills.html)
+- [Memory Agent Systems Cobanov](ch04/608-memory-agent-systems-cobanov.html)
 
 ---
 

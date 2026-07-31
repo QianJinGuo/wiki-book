@@ -11,22 +11,6 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Meta Skill"))
-    它解决了什么
-    三大要素组合
-    典型实现 meta-kid-project-planner
-    真实成本
-    解决方案 个人 社区索引协议
-    范式 Skill 20
-    三条线交点 为什么现在出
-    与多 Agent 团队的关系
-```
-
 ## 它解决了什么
 **SOP 已梳理清楚，但每个蓝色方块都要在对话框单独调 Skill** —— 像戳一下动一下，全程 Human in the loop，光翻 Skill 列表就够忙活半天。
 
@@ -35,39 +19,6 @@ mindmap
 > 关键转换：从"手动组合 Skill"到"Skill 自我编排"。
 
 ## 三大要素组合
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | 要素 | 角色 | 类比 |
 |---|---|---|
 | **Meta Skill** | "项目经理的操作手册"——决定哪些步骤并行/串行、产出物上下游衔接 | PM |
@@ -157,11 +108,11 @@ graph TB
 - [OpenSquilla](../ch01/011-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/043-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
-- [Agent Skill 编写指南](../ch04/269-agent-skill.html)
-- [10 篇论文看懂 AI Agent Skill](../ch04/271-skill.html)
-- [Agent Skills 系统性综述](../ch04/397-agent-skills.html)
-- [Skills 系统设计三路对比](../ch04/271-skill.html)
-- [Agent/Skills/Teams 架构演进](../ch04/238-agent-skills-teams.html)
+- [Agent Skill 编写指南](../ch04/271-agent-skill.html)
+- [10 篇论文看懂 AI Agent Skill](../ch04/273-skill.html)
+- [Agent Skills 系统性综述](../ch04/401-agent-skills.html)
+- [Skills 系统设计三路对比](../ch04/273-skill.html)
+- [Agent/Skills/Teams 架构演进](../ch04/241-agent-skills-teams.html)
 
 ## 深度分析
 - **流程知识资产化**：Meta Skill 将隐性的 SOP 流程转化为显性的可执行文档，赋予模型超越单步工具调用的宏观上下文理解能力 

@@ -8,25 +8,6 @@
 
 **SAP Autonomous Enterprise** 是 SAP 在 2026 年 5 月 12 日 SAP Sapphire 大会上正式发布的企业 AI 转型框架，旨在将 AI Agent 深度嵌入企业关键业务流程，实现 "human-AI collaboration" 的下一代企业运营模式。该框架以 **SAP Business AI Platform** 为基础设施，辅以 **SAP Autonomous Suite** 执行层和 **Joule Work** 交互界面，构成一套完整的企业级 AI 自治系统。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SAP Unveils the Autonomous"))
-    核心架构 三大支柱
-      SAP Business AI Platform
-      SAP Autonomous Suite
-      Joule Work 重新定义用户体验
-    生态加速 1 亿合作伙伴基金
-    战略合作伙伴全景
-    战略意义
-    企业级 AI 的 准确性陷阱 与 SAP 的解法
-    平台化战略 SAP 的生态锁定机制
-    基础模型多元化的风险对冲
-    Industry AI 的垂直深耕 数据护城河的构建
-```
-
 ## 核心架构：三大支柱
 
 ### SAP Business AI Platform
@@ -59,37 +40,6 @@ Joule Work 是 SAP 软件的新一代交互界面，核心变革从 " navigating
 这代表了企业软件从工具向协作者的范式转变。
 
 ## 生态加速：€1 亿合作伙伴基金
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 为推动 Autonomous Enterprise 落地，SAP 宣布：
 
@@ -178,11 +128,11 @@ SAP 的多基础模型策略值得借鉴。在企业内部，应尽早评估不�
 - [Sap Unveils The Autonomous Enterprise](ch04/105-sap-unveils-the-autonomous-enterprise.html)
 - [Sap Unveils Autonomous Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/sap-unveils-autonomous-enterprise.md)
 - [Enterprise Software Moats Agent Era](../ch03/035-agent.html)
-- [The Ui Is Dead Long Live The Agent](ch04/315-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/222-amazon-quick.html)
+- [The Ui Is Dead Long Live The Agent](ch04/376-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/224-amazon-quick.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/news-sap-com-sap-unveils-the-autonomous-enterprise.md)
-- [iii.dev](../ch01/380-iii-dev.html)
+- [iii.dev](../ch01/383-iii-dev.html)
 
 ---
 

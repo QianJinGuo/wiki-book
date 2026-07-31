@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Bedrock AgentCore"))
-    代理可信部署的核心矛盾 自主性与安全性的平衡
-    Cedar 策略语言 自然语言与形式化授权的融合
-    AgentCore Evaluations 数据驱动的连续质量监控
-    情节性记忆 从事件记录到经验学习的跃迁
-    建立代理治理的第一道防线 策略优先于开发
-    构建评估驱动的质量闭环 将监控嵌入部署生命周期
-    利用 MCP 协议实现开发工作流集成
-    挖掘情节性记忆的业务价值 个性化与效率的平衡
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 by Danilo Poccia on 02 12月 2025 in Amazon Bedrock , Amazon Machine Learning , Announcements , Artificial Intelligence , AWS re:Invent , Generative AI , Launch , News Permalink Share 今天，我们隆重宣布推出 Amazon Bedrock AgentCore 中的多项新功能，以进一步消除阻碍人工智能代理进行生产的障碍。各行各业的组织已经在 AgentCore 上构建各种解决方案，AgentCore 是最先进的平台，可以安全地构建、部署和运行任何规模的功能强大的代理。在自预览版推出以来的短短 5 个月内， AgentCore SDK 的下载量已超过 200 万次。例如： PGA TOUR 是体育领域的先驱和创新领导者，该公司已经建立一个多代理内容生成系统，为其数字平台撰写文章。构建于 AgentCore 基础上的全新解决方案通过将内容写作速度提高 1000%，同时将成本降低 95%，让 PGA TOUR 能够为该领域的每位运动员提供全面报道。 像 Workday 这样的独立软件供应商（ISV）正在 AgentCore 上开发未来的软件。AgentCore 代码解释器为 Workday 规划代理提供安全数据保护和用于财务数据探索的基本功能。用户可以通过自然语言查询分析财务和运营数据，使财务规划变得直观易懂、自主可控。此功能将花费在例行规划分析上的时间减少了 30%，每月可节省大约 100 个小时。 巴西分销商和零售商 Grupo Elfa 依靠 AgentCore 可观测性，实现了对其代理的完整审计可追溯性和实时指标监控，将被动流程转变为主动运营。借助这个统一平台，他们的销售团队每天可以处理成千上万次的报价，同时组织仍能全面了解代理决策，帮助对代理决策和互动实现 100% 的可追溯性，并将问题解决时间缩短 50%。 随着组织扩大代理部署规模，他们在实施正确的边界和质量检查以从容部署代理方面面临挑战。使代理变得强大的自主权也使他们难以从容地进行大规模部署，因为他们可能会不当访问敏感数据、作出未经授权的决策或采取意想不到的行动。开发团队必须在以下方面取得平衡：实现代理自主权的同时，确保他们在可接受的边界内运作，还必须达到将代理置于客户和员工面前所需的优异品质。 如今提供的各项新功能使这一过程无需猜测，可帮助您从容地构建和部署可信的人工智能代理： AgentCore 中的策略 （预览版）：使用具有细粒度权限的策略，在 AgentCore 网关工具调用运行之前拦截这些调用，从而为代理操作定义明确的界限。 AgentCore 评估 （预览版）：根据实际行为，使用内置评估器（针对正确性和有用性等维度）和自定义评估器（针对业务特定要求），监控代理的质量。 我们还推出了扩展代理可执行之操作的功能： AgentCore 内存中的情节性功能 ：一项新的长期策略，可帮助代理从经验中学习并在类似情况下调整解决方案，以提高在未来类似任务中的一致性和性能。 AgentCore 运行时中的双向流式传输 ：部署语音代理，其中的用户和代理都可以按照自然对话流程同时讲话。
 
 ## 核心技术
@@ -105,12 +51,12 @@ AgentCore 可作为 MCP 服务器使用，这意味着策略编写和验证可�
 AgentCore 支持任何开源框架（CrewAI、LangGraph、LlamaIndex、Strands Agents）和任何基础模型 。在设计策略和评估体系时，应保持框架无关性，使治理能力可跨项目复用。这一设计选择意味着组织可以先在试点项目验证治理框架的有效性，再逐步推广到其他代理应用，避免重复建设。
 
 ## 相关实体
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/561-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/566-amazon-bedrock-agentcore.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/137-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
 
 ---
 

@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 4.1KB | `entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md`
 
-
 ## 深度分析
 **You.com 这篇 API 延迟指南的核心论点是：基准测试表中的延迟数字是一个"演示指标"，而不是"生产指标"。这个认知差距正在导致大量错误的 AI API 采购决策。**
 文章提出的关键框架是 **Time-to-Useful-Result**（到达可操作结果的时间），而不是单纯看 API 响应延迟。这个重新定义非常重要，因为它把"API 多快返回"变成了"用户多快得到正确答案"。
@@ -14,45 +13,7 @@
 **Quality-adjusted latency 是最重要的指标。** 一个快速但错误的答案（幻觉）带来的成本，远高于一个稍慢但准确的答案。因为错误的答案需要用户重新查询、验证、纠错，这个成本在生产环境中会成倍放大。文章称之为"隐藏的延迟税"（hidden latency tax）：requeries、error recovery、ungrounded responses——这些都不会出现在基准表格里，但会在生产日志里准时出现。
 
 ## 相关链接
-
-```mermaid
-graph TB
-    subgraph "实验管理"
-        TRACK[实验追踪<br/>MLflow/W&B]
-        HP[超参调优<br/>Optuna]
-        REG[模型注册<br/>版本管理]
-    end
-    subgraph "评估流水线"
-        BENCH[基准测试<br/>自动评测]
-        HUMAN[人工评估<br/>LLM-as-Judge]
-        DRIFT[漂移检测<br/>数据/概念漂移]
-    end
-    subgraph "部署流水线"
-        PACKAGE[模型打包<br/>ONNX/TensorRT]
-        TEST[Integration测试<br/>回归检测]
-        DEPLOY[灰度发布<br/>A/B测试]
-    end
-    TRACK --> HP --> REG
-    REG --> BENCH & HUMAN
-    BENCH & HUMAN --> DRIFT
-    DRIFT --> PACKAGE --> TEST --> DEPLOY
-    subgraph "监控"
-        PERF[性能监控<br/>延迟/吞吐]
-        ALERT[告警规则<br/>异常检测]
-        RETRAIN[触发再训练]
-    end
-    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
-    classDef exp fill:#dbeafe,stroke:#2563eb
-    classDef eval fill:#ede9fe,stroke:#7c3aed
-    classDef deploy fill:#fef3c7,stroke:#d97706
-    classDef mon fill:#d1fae5,stroke:#059669
-    class TRACK,HP,REG exp
-    class BENCH,HUMAN,DRIFT eval
-    class PACKAGE,TEST,DEPLOY deploy
-    class PERF,ALERT,RETRAIN mon
-```
-
-- [Inngest Ai In Production The 2026 Benchmark Report](ch01/561-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest Ai In Production The 2026 Benchmark Report](ch01/567-inngest-ai-in-production-the-2026-benchmark-report.html)
 
 ## 实践启示
 **对 AI 应用开发者：** 在选型阶段，用真实并发量测试 API，而不是相信供应商提供的基准数字。写一个简单的压测脚本，模拟你的实际使用场景（并发数、重试逻辑、超时设置），然后测量 P99 延迟和错误率。这才是"像生产工程师一样测试"。

@@ -6,22 +6,6 @@
 
 > -> **Pydantic早就不只是校验了——Rust引擎 + 可观测 + Agent 类型约束**
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Pydantic 早就不只是校验了Rust 引擎 可观测"))
-    校验对象的范式转移 从「稳定」到「漂移」
-    三件套是三层独立栈 不是全家桶
-    TypeAdapter 同一份数据 不同严格度
-    三个零成本配置
-    渐进路线图 5 分钟 本周 下个项目
-    场景化决策
-    关键认知
-    真实痛点
-```
-
 ## 核心要点
 
 - Pydantic 已从「人填表单校验库」演化为三件套生态：pydantic-core（Rust 引擎）、Logfire（OTel 可观测）、Pydantic AI（Agent 框架）
@@ -32,37 +16,6 @@ mindmap
 - 三件套按场景按需添加：只校验 → 加 strict + forbid；排障慢 → 加 Logfire；多 tool Agent → 用 Pydantic AI
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 校验对象的范式转移：从「稳定」到「漂移」
 

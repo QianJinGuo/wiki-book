@@ -2,60 +2,17 @@
 
 ## Ch04.398 Your First AI Agent Should Do One Thing Badly
 
-> 📊 Level ⭐⭐ | 7.6KB | `entities/your-first-ai-agent-should-do-one-thing-badly.md`
+> 📊 Level ⭐⭐ | 7.7KB | `entities/your-first-ai-agent-should-do-one-thing-badly.md`
 
 # Your First AI Agent Should Do One Thing Badly
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/your-first-ai-agent-should-do-one-thing-badly.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Your First AI Agent Should Do One"))
-    为什么 Agentic 系统不能先设计再实现
-    POC 墓地的具体形态
-    医疗人员验证案例的单点切入模式
-    Crawl Walk Run 与 Karpathy 的 Vibe
-```
 
 ## 摘要
 
 CrewAI 团队的核心论断：最有效的 agentic 系统都起步于"丢人的简单"——更少的 agent、更窄的任务、做得更糟。Agentic 系统的开发周期与软件工程传统开发周期存在根本差异，必须**迭代式构建**（crawl, walk, run）。本文用 healthcare staffing POC 案例与五条具体原则，论证"POC 墓地"陷阱与"先做一个糟糕的 agent"作为起点的反直觉优势。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 - **POC 墓地陷阱**：技能娴熟的工程师设计"理想系统"——研究员 agent 给规划 agent 喂数据，规划 agent 协调执行 agent，质量 agent 验证结果。三个月后，仍停留在开发阶段，零生产流量。问题不是野心，是**在还没理解系统时就优化**。
 - **医疗人员资质验证案例**：一家医疗人员配置公司没有从自动化整个入职流水线开始，而是只做了一件事——背景调查工作流。第一个版本简单直接：收集人员数据、查询相关源、JSON 结构化输出、基于数据决策、推送结果到 Snowflake。几周交付，后续通过真实运行逐步加上护栏、人工审计、并行工作流。
@@ -83,7 +40,7 @@ graph TB
 
 ### 3. 医疗人员验证案例的"单点切入"模式
 
-医疗人员入职有多步：核实执照、查询医疗委员会、检查制裁名单、验证身份。每一步的延迟都影响收入。该团队选**背景调查**为切入点：数据源相对结构化、流程可单点优化、错误代价可量化（多查一次 vs 漏查一次）。从这一单点出发，逐步把流程从几天压缩到几小时。这个模式与 [Mollick 的"输出定义-让 AI 找路径"](ch04/353-the-bitter-lesson-versus-the-garbage-can.html) 相符——先把可衡量的结果锚定，再让系统找到实现路径。
+医疗人员入职有多步：核实执照、查询医疗委员会、检查制裁名单、验证身份。每一步的延迟都影响收入。该团队选**背景调查**为切入点：数据源相对结构化、流程可单点优化、错误代价可量化（多查一次 vs 漏查一次）。从这一单点出发，逐步把流程从几天压缩到几小时。这个模式与 [Mollick 的"输出定义-让 AI 找路径"](ch04/349-the-bitter-lesson-versus-the-garbage-can.html) 相符——先把可衡量的结果锚定，再让系统找到实现路径。
 
 ### 4. "Crawl, Walk, Run" 与 Karpathy 的 Vibe Coding 转向
 
@@ -95,8 +52,8 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 
 ### 与相邻观点的张力
 
-- 与 [苦味教训](ch04/353-the-bitter-lesson-versus-the-garbage-can.html)的张力：Sutton 派认为不要为人类理解编码；本文认为不要为未知架构编码——但前者鼓励**算力与训练**取代精心设计，后者鼓励**迭代与证据**取代预先架构。
-- 与 [管理即超能力](../ch01/499-management-as-ai-superpower.html)互补：Mollick 强调"管理能力"是新关键技能；本文强调"管理复杂度"是关键约束——少 agent、少功能、少优化。
+- 与 [苦味教训](ch04/349-the-bitter-lesson-versus-the-garbage-can.html)的张力：Sutton 派认为不要为人类理解编码；本文认为不要为未知架构编码——但前者鼓励**算力与训练**取代精心设计，后者鼓励**迭代与证据**取代预先架构。
+- 与 [管理即超能力](../ch01/497-management-as-ai-superpower.html)互补：Mollick 强调"管理能力"是新关键技能；本文强调"管理复杂度"是关键约束——少 agent、少功能、少优化。
 - 与 [Your First Ai Agent Should Do One Thing Badly](ch04/398-your-first-ai-agent-should-do-one-thing-badly.html) 的"crawl, walk, run"与 [Claude Code 现状评估](../ch01/399-claude-code-and-what-comes-next.html) 的"一小时跑完"形成节奏对比——前者周迭代，后者小时级自治。
 
 ## 实践启示
@@ -109,12 +66,12 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/237-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/648-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [The Bitter Lesson Versus The Garbage Can](ch04/353-the-bitter-lesson-versus-the-garbage-can.html)
+- [The Bitter Lesson Versus The Garbage Can](ch04/349-the-bitter-lesson-versus-the-garbage-can.html)
 - [Claude Code And What Comes Next](../ch01/399-claude-code-and-what-comes-next.html)
-- [Management As Ai Superpower](../ch01/499-management-as-ai-superpower.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Management As Ai Superpower](../ch01/497-management-as-ai-superpower.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)

@@ -12,72 +12,17 @@ Agent → LLM → Skill → MCP → External World
 逐层下沉：Agent（任务编排）→ LLM（认知推理）→ Skill（能力封装）→ MCP（连接协议）→ External（真实世界）
 External → MCP → Skill → Agent → Memory → LLM
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MCP Skill Agent LLM Harness 一张图讲清"))
-    核心架构 三层结构
-      能力执行主链
-      认知-行动-记忆闭环
-      横切全局的Runtime Harness
-    逐层拆解
-      L4 Agent 应用与编排层
-      L3 LLM 认知引擎
-      L2 Skill 能力SDK
-    Memory 分层
-    Harness 的六大职责
-    典型执行流程 闭环
-    关键认知
-    分层架构是 Agentic AI 系统从 Demo 走向生产的核心约束
-    Harness 作为操作系统类比 揭示了 Runtime
-```
-
 ## 相关实体
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)
-- [From Agent Protocol To Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html)
-- [Ai Skill Skill Creator 源码拆解](ch04/319-skill-skill.html)
+- [From Agent Protocol To Harness Skill](ch04/431-from-agent-protocol-to-harness-skill.html)
+- [Ai Skill Skill Creator 源码拆解](ch04/321-skill-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-ai-system-architecture-harness-skill-mcp.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 核心架构（三层结构）
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 1. 能力执行主链
 Agent → LLM → Skill → MCP → External World

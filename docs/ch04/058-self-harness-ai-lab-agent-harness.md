@@ -8,67 +8,11 @@
 
 > 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)，并参考 Shanghai AI Lab 论文 *Self-Harness: Harnesses That Improve Themselves*（https://arxiv.org/abs/2606.09498 ）。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Self-Harness 上海AI Lab 提出的 Agent"))
-    范式定位 Harness 改进的第三条路
-    Harness 形式化定义
-    Self-Harness 三阶段闭环
-      阶段一 Weakness Mining 弱点挖掘
-      阶段二 Harness Proposal Harness 提案
-      阶段三 Proposal Validation 提案验证 接受门极其保守
-    实验 Terminal-Bench-20 三个底座模型
-    主结果 三个反直觉细节
-    进化轨迹 分支搜索与合并
-      MiniMax M25 422 539
-      Qwen35 203 367
-      GLM-5 461 570
-    三个 Case Study 补丁如何改变真实执行轨迹
-      Case 1 GLM-5 build-pov-ray 探索型 工程型
-      Case 2 MiniMax M25
-      Case 3 Qwen35 extract-elf
-    Self-Harness 与 L6 Meta-Harness 的关系
-```
-
 ## 一句话总结
 
 **Self-Harness** 由上海人工智能实验室（Shanghai AI Lab）提出，核心是：**让固定权重的 LLM Agent 根据自己的执行轨迹挖掘弱点、提出 Harness 修改提案、再用 held-in/held-out 双重门控验证合并**。在 Terminal-Bench-2.0 上把 MiniMax M2.5、Qwen3.5-35B-A3B、GLM-5 三款模型的 held-out 通过率分别推到 **61.9%、38.1%、57.1%**；其中 Qwen3.5 held-in 集相对提升高达 **138%**，说明极简 Harness 对小模型能力的压制有多狠。
 
 ## 范式定位：Harness 改进的第三条路
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 | 范式 | 谁改进 Harness | 改进对象 | 依赖外部 |
 |------|---------------|---------|---------|
@@ -336,9 +280,9 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [AI 自我改进自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
-- [SGLang](ch04/631-agent-assisted-sglang-ai-llm.html) — Qwen3.5 部署用到的推理引擎
+- [SGLang](ch04/636-agent-assisted-sglang-ai-llm.html) — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](../ch03/035-agent.html) — 初始 Harness 基于 DeepAgent SDK
-- [ByteDance TRAE Harness Engineering Guide](../ch01/658-trae-harness-engineering.html)
+- [ByteDance TRAE Harness Engineering Guide](../ch01/670-trae-harness-engineering.html)
 - [复旦 AHE Agentic Harness Engineering](../ch05/120-harness-engineering.html)
 - [Harness Engineering 七层架构](../ch05/120-harness-engineering.html)
 - [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现

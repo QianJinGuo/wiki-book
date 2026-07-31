@@ -6,63 +6,11 @@
 
 # 扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("扣子 30 多 Agent 协同实战 指挥所有 Agent 的"))
-    两条 AI 趋势
-    Coze 25 30 演进
-    解决的核心痛点
-    四大特性
-    实战案例 1 开发小队 3 Agent 小试牛刀
-    实战案例 2 品牌设计 4 风格 进阶项目
-    实战案例 3 公众号自动化 5 人 6 步流水线 重头戏
-      人团队配置
-      步流水线
-    核心判断
-      AI 下半场
-      行业技能包
-      核心预言
-```
-
 ## 概述
 
 网黑哥（网罗灯下黑）2026-06-02 扣子 3.0 实战内测报告。**核心定位：指挥所有 Agent 的 Agent**——把散落在各终端、各平台的 Agent（Claude Code / Codex CLI / OpenClaw）一键收拢，拉在同一个项目里协同干活。3 个实战案例：开发小队 3 Agent、品牌设计 4 风格、公众号自动化 5 人 6 步流水线。**与 Coze 2.5 云设备定位形成纵向对比**（任务 → 组织）。核心预言：**"AI 的下半场，拼的不是谁更聪明，而是谁先被组织起来"**。
 
 ## 核心定位
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 两条 AI 趋势
 
@@ -251,10 +199,10 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 ---
 
 ## 相关实体
-- [Coze 3 0 Collaboration System](../ch01/694-3-0.html)
+- [Coze 3 0 Collaboration System](../ch01/708-3-0.html)
 - [Coze 3 0 Local Agent Project Orchestration](../ch03/035-agent.html)
-- [Oz Multi Harness Cloud Agent Orchestration](ch04/518-agent-orchestration.html)
-- [Agent Orchestration](ch04/518-agent-orchestration.html)
+- [Oz Multi Harness Cloud Agent Orchestration](ch04/523-agent-orchestration.html)
+- [Agent Orchestration](ch04/523-agent-orchestration.html)
 - [Baidu Netdisk Three Layer Agent Architecture](../ch03/035-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 

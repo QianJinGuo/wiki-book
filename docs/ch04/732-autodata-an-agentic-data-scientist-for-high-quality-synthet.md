@@ -8,63 +8,11 @@
 
 > **Background**：arxiv 论文 2606.25996（2026-06-24 首发，25 日 v2 修订），提出 Autodata——一种通用方法，使 AI Agent 充当数据科学家来构建高质量训练和评估数据。作者团队来自 Meta（Jason Weston、Sainbayar Sukhbaatar 等），属于 cs.AI / cs.CL / cs.LG 交叉领域。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Autodata An Agentic Data"))
-    从合成数据到 Agentic 数据创建
-    Meta-Optimization 框架
-    Agentic Self-Instruct
-    实验验证
-    为什么 Agentic 数据创建重要
-    与 Self-Instruct 和 Evol-Instruct 的区别
-    Agent 训练 Agent 的范式意义
-```
-
 ## 摘要
 
 Autodata 的核心思想是将数据科学家的全部工作流程——数据收集、清洗、标注、验证——Agent 化，并通过 **meta-optimization**（元优化）让数据科学家 Agent 学会创建更强的数据。论文提出了一个具体实现方案 **Agentic Self-Instruct**，在计算机科学研究任务、法律推理任务和数学对象推理任务上，均优于经典合成数据集创建方法。更重要的是，meta-optimizing 数据科学家 Agent 本身能带来更大的性能提升。
 
 ## 核心要点
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 ### 1. 从合成数据到 Agentic 数据创建
 
@@ -119,7 +67,7 @@ Autodata 代表了一种新兴范式：**用 Agent 系统生成 Agent 训练数�
 ## 相关实体
 
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
-- [Goodfire Predictive Data Debugging Post Training Anatomy 2026](../ch05/094-ai.html)
+- [Goodfire Predictive Data Debugging Post Training Anatomy 2026](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2606.25996.md)
 

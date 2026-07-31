@@ -4,27 +4,6 @@
 
 > 📊 Level ⭐⭐ | 24.6KB | `entities/skill-writing-patterns-best-practices.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("工作流的 Skill 怎么写 从 7 个顶级 Skill"))
-    一 Skill 是什么
-    二 Frontmatter 决定 Skill 是否被加载的门面
-      必填字段
-      Description 的写法决定加载率
-      可选扩展字段
-    三 5 种核心设计模式
-      模式 1 线性流程
-    Prerequisites 前置条件
-    Quick Start 主流程 Step 1 2 3
-    Fallback 降级方案
-    Troubleshooting 故障排除
-      模式 2 决策树 按需加载
-    Authentication 认证前置
-```
-
 ## 一、Skill 是什么
 Skill 是一个文件夹，核心是 `SKILL.md` 文件，使用 YAML frontmatter + Markdown 正文的格式。当 LLM 判断需要某个 Skill 时，会调用 `skill` 工具加载它，SKILL.md 的全部内容会作为 tool-result 注入到对话上下文中，LLM 读到后自主决定怎么执行。
 ```
@@ -38,39 +17,6 @@ my-skill/
 **关键机制：** Skill 本质是"知识注入"——它不会动态生成新工具，而是把指令文本注入到 LLM 的上下文中，LLM 用已有的工具（bash、read、edit 等）来执行这些指令。
 
 ## 二、Frontmatter：决定 Skill 是否被加载的"门面"
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 2.1 必填字段
 | 字段 | 作用 | 示例 |
 |------|------|------|
@@ -482,9 +428,9 @@ Audit-context-building 模式最独特的地方在于它不是告诉 LLM"做什�
 ### 9. 与 `Anthropic 14 Skill Patterns Best Practices` 的对比
  是 Anthropic 官方发布的 14 个生产级 Skill 设计模式，强调**可复用性和生产就绪**。本文的 5 种核心设计模式更偏向**分类框架**，而 Anthropic 的 14 个模式更偏向**具体场景模板**。在实际开发中，建议先用本文的决策树定位模式，再用 Anthropic 的模板细化实现。
 ## 相关实体
-- [Agent Skills Comprehensive Survey](../ch04/397-agent-skills.html)
-- [Ai Skill Skill Creator 源码拆解](../ch04/319-skill-skill.html)
-- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/258-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Agent Skills Comprehensive Survey](../ch04/401-agent-skills.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/321-skill-skill.html)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/261-yidian-tianxia-context-engineering-agentic-ai.html)
 - [Rag Chunking Vectorization Rerank Distillation](../ch01/223-rag.html)
 - [Ai Skill Evolution底层逻辑](ch07/010-ai-skill-evolution.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)

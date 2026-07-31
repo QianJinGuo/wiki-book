@@ -8,61 +8,11 @@
 
 Amazon SageMaker AI 推出多轮强化学习（Multi-Turn RL, MTRL）能力，为需要多步推理和工具调用的 AI Agent 提供训练基础设施。本文系统总结了多轮 RL 训练的最佳实践，涵盖训练环境构建、外部评估配置、奖励函数设计、长程训练管理及监控指标五个维度。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Best Practices for Multi-Turn"))
-    最佳实践要点
-    MTRL 的核心挑战 多步依赖与奖励信号处理
-    环境模拟的三层架构 从录播回放到隔离执行
-    奖励函数设计的陷阱 从 Reward Hacking 到梯度消失
-    评估独立性 训练成功的关键监测机制
-```
-
 ## 核心架构
 
 SageMaker AI MTRL 提供模块化 Agent-Environment 接口，支持低代码集成。Agent 可运行在 Amazon Bedrock AgentCore、EKS、EC2、Fargate 等基础设施上，通过轻量适配层暴露工具接口给 rollout server。训练采用无服务器执行模式，以 per-token 定价提供生产级 agentic RL，无需管理 GPU 集群。
 
 ## 最佳实践要点
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 1. **训练环境可信度**：构建可信任的训练环境，防止 reward hacking
 2. **外部评估**：设置独立于训练的评估 pipeline

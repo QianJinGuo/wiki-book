@@ -15,19 +15,6 @@ I started my career in the late 2010s, and I have had a front-row seat to the gr
 
 Looking back over the last decade, I have mixed feelings about some of the calls I made. And I am seeing the same patterns play out again now. So for engineers who are confused about where this is headed and how to navigate it, here is how I think about it.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Repricing of Software Engineering"))
-    Generalist SWEs were a product of
-    LLMs Changed The Dynamics
-    Repricing of the Middle Layer
-    Expertise is getting more valuable
-    Where I think this goes
-```
-
 ## Generalist SWEs were a product of cheap money
 
 The late 2010s, I saw an huge amount of startup funding, globally. Flipkart, Snapdeal, Jugnoo, and hundreds of others were scaling hard and one hiring pattern I saw was that: everyone wanted generalist software engineers. People who could easily get upto speed across the stack.- backend, frontend, infra, deployment and simply ship.
@@ -39,44 +26,6 @@ Companies fought over engineers who maximized feature throughput. Breadth was a 
 Pull up a resume from an engineer who started around that time and you will usually see the same shape: a long list of technologies and frameworks, broad and adaptable, but rarely deep in any one thing. There was no incentive to go deep.
 
 ## LLMs Changed The Dynamics
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 LLMs did not kill software engineering. It compressed the cost of implementation. The work that got hit first was the work that was already standardized: CRUD apps; API integration and glue code; Framework-heavy backend work; Frontend scaffolding; Standard architectural patterns.
 

@@ -6,34 +6,6 @@
 
 # Anthropic Claude Cowork 知识工作 Agent 任务边界
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic Claude Cowork 知识工作"))
-    核心定位 任务边界 模型能力
-    大入口对比
-    大任务筛选信号
-      信号 1 多个输入
-      信号 2 有文件输出
-      信号 3 会重复
-    阶段 Cowork 工作流
-      阶段 1 复述任务
-      阶段 2 读取上下文
-      阶段 3 拆计划
-    Prompt 不是第一问题
-    大企业控制点
-      权限边界要清楚
-      连接器要审查
-      审批门要明确
-    试点别铺太大
-      阶段 A 找高频交付物
-      阶段 B 跑两版对比
-      阶段 C 记录动作链路
-    终极总结
-```
-
 ## 核心定位：任务边界 > 模型能力
 
 > "**很多人刚开始用这类工具，会直接把 Chat 的用法搬过去：问一个问题，等一段回答，再自己复制到文档里。Cowork 的重点其实在另一个地方。**"
@@ -46,41 +18,10 @@ mindmap
 - **最后产出一份能继续编辑的文件**
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-- [Cat Wu Claude Code Pm](../ch03/078-claude-code.html)
-- [Anthropic Founders Playbook Huashu 2026](ch01/989-anthropic.html)
-- [Cat Wu Anthropic Pm Interview](ch01/989-anthropic.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)
+- [Cat Wu Claude Code Pm](../ch03/077-claude-code.html)
+- [Anthropic Founders Playbook Huashu 2026](ch01/1004-anthropic.html)
+- [Cat Wu Anthropic Pm Interview](ch01/1004-anthropic.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1004-anthropic.html)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/212-anthropic-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-cowork-task-boundary-5-signals-6-stages.md)

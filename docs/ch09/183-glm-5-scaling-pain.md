@@ -4,71 +4,10 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 11.3KB | `entities/glm5-scaling-pain.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GLM-5 Scaling Pain 推理复盘"))
-    三类异常现象
-    根因一 PD 分离架构下 KV Cache 竞态
-      问题机制
-      修复方案
-    根因二 HiCache 加载时序缺失
-      问题机制
-      修复方案
-    优化 LayerSplit KV Cache 分层存储
-      核心思路
-      效果
-    关键工程洞察
-    相关页面
-    PD 分离架构的根本矛盾
-    投机采样指标的双重用途
-```
-
 ## 概述
 智谱团队 2026 年披露 GLM-5 在高并发 Coding Agent 场景下遭遇的推理稳定性问题及修复方案。核心问题：乱码（garbled output）、复读（repetition）、生僻字（rare character）三类异常，根因分别定位到 PD 分离架构下 KV Cache 竞态和 HiCache 加载时序两个独立 Bug，以及 LayerSplit KV Cache 分层存储优化。
 
 ## 三类异常现象
-
-```mermaid
-graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
-    end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
-    end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
-    end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
-    end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
-```
-
 | 异常 | 特征 | 检测信号 |
 |------|------|---------|
 | 乱码 | 随机字符异常 | spec_accept_length 极低 |
@@ -123,7 +62,7 @@ Indexer 算子启动前引入与 Load Stream 的同步点，确保数据就绪�
 
 ## 相关页面
 [原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/glm5-scaling-pain-inference.md) — 完整正文
-[SGLang](../ch04/631-agent-assisted-sglang-ai-llm.html) — 本次 BugFix #2 修复代码已提交至 SGLang 开源社区
+[SGLang](../ch04/636-agent-assisted-sglang-ai-llm.html) — 本次 BugFix #2 修复代码已提交至 SGLang 开源社区
 [推理系统优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — LayerSplit 等推理效率优化技术
 
 ## 深度分析

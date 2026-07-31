@@ -6,22 +6,6 @@
 
 # Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy LLM Wiki 搭建实战Obsidian"))
-    核心洞察 维护成本外部化
-    三层架构
-    三大操作
-    RAG vs LLM Wiki 对比
-    维护成本外部化的经济原理
-    三层架构的职责分离与安全边界
-    Ingest 操作的系统性影响
-    LLM Wiki vs RAG 的范式差异
-```
-
 ## 核心洞察：维护成本外部化
 
 Andrej Karpathy 的 LLM Wiki 方法论根基：**维护知识库累人的地方不是读和想，而是"记账"**——更新交叉引用、保持摘要不过时、标注矛盾、跨页面维持一致性。这正是人类放弃维护 wiki 的原因——维护成本增长比价值增长快。
@@ -29,44 +13,6 @@ Andrej Karpathy 的 LLM Wiki 方法论根基：**维护知识库累人的地方�
 LLM 把记账接过去了，wiki 才能持续被维护。Karpathy 关联到 Vannevar Bush 1945 年的 Memex 设想——LLM 补上了"谁来做维护"这块拼图。
 
 ## 三层架构
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 | 层 | 角色 | 内容 |
 |---|------|------|
@@ -84,7 +30,7 @@ graph TB
 
 本文提供了结构化对比表：RAG 不累积/产物不可见/不发现矛盾/用户重新上传才能更新；LLM Wiki 持续累积/可读可编辑的 markdown/主动标注矛盾/维护成本趋近于零。
 
-这与 [LLM Wiki 架构](../ch01/1274-llm.html) 实体互补——该实体侧重概念框架，本文侧重具体实现。也与本 wiki 自身的运作模式一致（见 [Hermes Skills LLM Wiki](../ch07/017-hermes-skill.html)）。
+这与 [LLM Wiki 架构](../ch01/637-llm.html) 实体互补——该实体侧重概念框架，本文侧重具体实现。也与本 wiki 自身的运作模式一致（见 [Hermes Skills LLM Wiki](../ch07/017-hermes-skill.html)）。
 
 ## 深度分析
 
@@ -114,7 +60,7 @@ Consolidate（定期整合）是 Ingest 的补充，用于解决多次 Ingest �
 
 ### 与现有 LLM Wiki 方法论的协同
 
-本 wiki 的运作模式与 Karpathy 的 LLM Wiki 方法论高度一致：通过 [Hermes Skills LLM Wiki](../ch07/017-hermes-skill.html) 技能实现自动化的 Ingest 和 Consolidate；通过 AGENTS.md（即本文的 Schema 层）定义 wiki 的组织方式和编辑规范。[LLM Wiki 架构](../ch01/1274-llm.html) 实体则从更高维度描述了这一模式的理论基础。
+本 wiki 的运作模式与 Karpathy 的 LLM Wiki 方法论高度一致：通过 [Hermes Skills LLM Wiki](../ch07/017-hermes-skill.html) 技能实现自动化的 Ingest 和 Consolidate；通过 AGENTS.md（即本文的 Schema 层）定义 wiki 的组织方式和编辑规范。[LLM Wiki 架构](../ch01/637-llm.html) 实体则从更高维度描述了这一模式的理论基础。
 
 ## 实践启示
 

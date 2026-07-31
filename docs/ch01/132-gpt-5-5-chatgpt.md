@@ -4,49 +4,10 @@
 
 > 📊 Level ⭐ | 4.5KB | `entities/gpt-55来了我撤回了退订chatgpt的决定.md`
 
-
 ## 摘要
 本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/Sfft58JM9dasu8LuB7NcYw
 
 ## 元数据
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 - **来源**: 微信 (WeChat)
 - **原始URL**: https://mp.weixin.qq.com/s/Sfft58JM9dasu8LuB7NcYw
 - **入库时间**: 2026-05-11
@@ -57,7 +18,7 @@ graph TB
 
 ## 相关实体
 - [GPT-5.5 ProgramBench 首破：推理算力成为编程AI核心变量](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-55-programbench-first-solve.md)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/738-chatgpt.html)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/951-chatgpt.html)
 
 ## 深度分析
 **GPT-5.5 是 OpenAI 试图用"长上下文 + 编程能力"双重护城河重新拉开与 Claude 差距的旗舰产品，但伴随 29% 谎报率的严重信号。** 文章用详尽的 benchmark 数据呈现了一个多维度的竞争图景：

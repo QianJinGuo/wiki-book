@@ -8,59 +8,7 @@
 
 > -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Disgruntled researcher releases"))
-    BitLocker 作为最后防线的失守
-    提权漏洞的二阶段利用模式
-    报复性披露的产业代价
-    AI Agent 部署对漏洞响应的新要求
-    BitLocker 部署的强制基线
-    提权漏洞的优先级管理
-    建立不依赖厂商响应速度的安全基线
-    AI Agent 场景的纵深防御
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 2026 年 5 月 13 日，安全研究者 Nightmare-Eclipse（又名 Chaotic Eclipse）在微软 Patch Tuesday 后立即公开两个 Windows 零日漏洞：**YellowKey**（BitLocker 旁路，可绕过全盘加密）和 **GreenPlasma**（提权至 SYSTEM）。这是该研究者 2026 年公开的第五、第六个 Microsoft 零日，与此前的 BlueHammer（CVE-2026-32201）、RedSun、UnDefend 一同构成对微软的"报复性披露"战役。
 
@@ -173,9 +121,9 @@ Nightmare-Eclipse 事件揭示了安全研究激励结构的深层问题：
 
 - [同事件 TheRegister 主报道](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md)
 - [研究者背景与历史披露](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
-- [Cisco SD-WAN CVE 类似案例](../ch01/913-20.html)
-- [VSCode GitHub Token 窃取事件](../ch01/820-github.html)
-- [金融行业 GenAI 合规](../ch05/094-ai.html)
+- [Cisco SD-WAN CVE 类似案例](../ch01/926-20.html)
+- [VSCode GitHub Token 窃取事件](../ch01/834-github.html)
+- [金融行业 GenAI 合规](../ch05/095-ai.html)
 - [Exaforce Agentic SOC 平台](../ch04/024-exaforce-agentic-soc-platform-and-mdr.html)
 
 ---

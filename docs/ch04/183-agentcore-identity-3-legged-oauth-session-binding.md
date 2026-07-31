@@ -4,65 +4,10 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/aws-bedrock-agentcore-identity-security.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentCore Identity 3-legged"))
-    三个关键洞察
-      为什么AI Agent需要特殊身份管理
-      Session binding的审计价值
-      ECS与AgentCore Identity的集成
-    OAuth 20 Authorization Code
-    Session Binding防止的两类攻击
-    ALB OIDC与Microsoft Entra ID的兼容性挑战
-    Token Vault与自动刷新机制
-    架构设计层面
-    安全运营层面
-    故障排查要点
-```
-
 ## 核心内容
 Amazon Bedrock AgentCore Identity通过3-legged OAuth + session binding模式为ECS上的AI Agent提供企业级安全身份认证。Agent访问云资源时通过OAuth获取临时凭证并绑定到特定session，防止token泄露和权限滥用。
 
 ## 三个关键洞察
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 ### 1. 为什么AI Agent需要特殊身份管理
 传统 IAM user/service account不适用于AI Agent——Agent行为不可预测、可能越权访问敏感资源。3-legged OAuth让每次Agent任务获得最小权限的临时token，且绑定到特定session可审计和撤销。
 
@@ -110,31 +55,31 @@ AgentCore Identity的Token Vault存储access token和refresh token（当OAuth pr
 
 ## 相关实体
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/270-aws-bedrock-agentcore.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/272-aws-bedrock-agentcore.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/272-aws-bedrock-agentcore.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11/009-aws-bedrock.html)
-- [Hapag-Lloyd：1.5万反馈/月95%情感准确率](../ch11/188-aws-hapag-lloyd-bedrock-customer-feedback.html)
+- [Hapag-Lloyd：1.5万反馈/月95%情感准确率](../ch11/190-aws-hapag-lloyd-bedrock-customer-feedback.html)
 - [Halliburton Seismic Workflow with Amazon Bedrock and Generative AI](../ch11/009-aws-bedrock.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/054-prowler-genai.html)
-- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/235-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [OpenClaw多租户迁移: 背景与架构概览](../ch11/235-openclaw.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/235-openclaw.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/237-openclaw.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](../ch11/177-apache-doris-mcp-server-quick-suite-ai.html)
+- [OpenClaw多租户迁移: 背景与架构概览](../ch11/237-openclaw.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/237-openclaw.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/295-amazon-bedrock.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/561-amazon-bedrock-agentcore.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/566-amazon-bedrock-agentcore.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/704-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/306-amazon-nova.html)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](../ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [AgentCore Managed Harness](ch04/689-agentcore-harness.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/094-ai.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [AgentCore Managed Harness](ch04/690-agentcore-harness.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/095-ai.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/300-bedrock.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/561-amazon-bedrock-agentcore.html)
-- [CloudSectiDbits](../ch11/252-cloudsectidbits.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/566-amazon-bedrock-agentcore.html)
+- [CloudSectiDbits](../ch11/254-cloudsectidbits.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

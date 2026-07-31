@@ -4,38 +4,6 @@
 
 > 📊 Level ⭐⭐ | 24.5KB | `entities/gaode-ai-companion-agent-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI伴行技术解析 基于空间智能的高可用Agent架构实践"))
-    一 引言与背景
-    二 整体架构设计
-      业界参考
-      双内核 Agent 架构
-    三 ReAct推理引擎详解
-      行业难点与背景
-      核心循环架构
-      链路优化
-    四 Skill系统与动态Prompt注入
-      全量 Prompt 注入的现实瓶颈
-      Skill的按需筛选与动态注入
-      Skill化动态注入收益
-    五 时空上下文
-      统一时空状态 按需生成 Context View
-      四维上下文模型
-      Shared Memory 记忆的层次化管理
-    六 端到端评测
-      分层 Benchmark
-      横向对比结论
-      端到端体验优势
-    七 总结与展望
-      核心贡献
-      未来方向
-    双内核架构的深层逻辑 可控自由度
-```
-
 ## 一、引言与背景
 伴行 Agent 需要同时理解用户当前所处的位置、正在行进的状态、隐含的停留需求、对"顺路"的空间约束、对"能坐一会儿"的场景要求，以及"离地铁站近"所代表的后续动线意图。随后，它还需要组合调用周边检索、POI 详情、空间排序、步行路径、营业状态等能力，给出一个既真实可达、又符合用户当下意图的行动建议；最后通过图面展示路线及状态、持续导航、过程陪伴等行动能力，在真实世界中，和用户一起完成这个需求。
 **四大核心挑战：**
@@ -45,37 +13,6 @@ mindmap
 4. **动态时空状态下的上下文建模挑战**：如何把 GPS、朝向、路线、POI、天气、用户记忆等分散信号，实时转化为模型可理解、可推理、可裁剪的时空上下文。既要补齐关键时空变量，又要避免信息无差别堆叠造成注意力稀释和上下文腐败。
 
 ## 二、整体架构设计
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 2.1 业界参考
 #### Hermes Agent：学习型 Agent 与长期记忆
 Hermes Agent[17] 的核心特点是Self-Improving Agent。它强调 Agent 可以从经验中创建和改进 Skill，沉淀长期记忆，并支持跨 Session 回忆历史上下文；同时支持多平台入口、子 Agent 并行、任务自动化和工具链扩展。
@@ -316,11 +253,11 @@ Claude-Opus-4.7 在通用基准上顶级但在空间领域表现最差，DeepSee
 高德在原生 ReAct 基础上增加了：轮数硬上限、格式异常熔断、幻觉循环检测、信息增量检测。这些保护机制确保 ReAct 循环不会在异常情况下失控。实现 ReAct 时，判停机制的设计优先级应该高于推理循环本身。
 
 ## 相关实体
-- [Claude Code Tool Design Evolution Anthropic](../ch03/078-claude-code.html)
-- [Claude Code Memory Setup Token 71X楠楠自瑜](../ch03/078-claude-code.html)
-- [Codex Goal Implementation Breakdown](../ch09/046-codex-goal.html)
-- [Elf Embedded Language Flows Hekaiming 105M](../ch01/1259-elf-embedded-language-flows.html)
-- [2026 05 06 2201](../ch01/913-20.html)
+- [Claude Code Tool Design Evolution Anthropic](../ch03/077-claude-code.html)
+- [Claude Code Memory Setup Token 71X楠楠自瑜](../ch03/077-claude-code.html)
+- [Codex Goal Implementation Breakdown](../ch09/047-codex-goal.html)
+- [Elf Embedded Language Flows Hekaiming 105M](../ch01/1264-elf-embedded-language-flows.html)
+- [2026 05 06 2201](../ch01/926-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 

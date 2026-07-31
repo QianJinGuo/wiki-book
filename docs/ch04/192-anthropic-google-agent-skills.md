@@ -4,62 +4,28 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/anthropic-google-agent-skills-design-patterns.md`
 
-
 ## 相关实体
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)
-- [Anthropic 官方 14 种 Skill 设计模式](../ch01/989-anthropic.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/719-skills-anthropic-openai-comparison-frontend-design.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/397-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/260-anthropic-agent.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/401-agent-skills.html)
+- [Anthropic 官方 14 种 Skill 设计模式](../ch01/1004-anthropic.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/735-skills-anthropic-openai-comparison-frontend-design.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/401-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/035-agent.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01/212-anthropic-claude-managed-agents.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Anthropic Computer Use 最佳实践](../ch01/937-anthropic-computer-use.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Anthropic Computer Use 最佳实践](../ch01/950-anthropic-computer-use.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/989-anthropic.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/095-ai.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/1004-anthropic.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/035-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 Google ADK 提出的 5 种 Skill 设计模式——Tool Wrapper、Generator、Reviewer、Inversion、Pipeline——并非简单的分类标签，而是一套经过实践验证的工作流结构化方案。这套模式的演进轨迹清晰地呈现出 Agent 工程的一个核心趋势：从"如何让模型理解指令"转向"如何让模型按正确顺序执行任务"。
 **设计模式本质上是 5 类失败模式的解决方案。** 每一模式都对应 Agent 在实际场景中的典型失败：
 Tool Wrapper 解决的是"领域知识缺失"问题。当 Agent 需要调用 FastAPI、Terraform、Pandas 或 React Server Components 等领域特定技术时，将其塞入系统提示词会迅速导致上下文膨胀。Tool Wrapper 的核心思想是将低频、领域明确的知识保留在 `references/` 目录，仅在触发时加载，实质上是将上下文窗口从"存储空间"转变为"检索入口"。

@@ -8,27 +8,6 @@
 
 > **Background**：本文档基于阿里云消息团队官方公众号文章建立，系统梳理了 Apache RocketMQ 5.5.0 新增 LiteTopic 消息模型的设计动机、核心机制和 Multi-Agent 通信实战架构。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Apache RocketMQ LiteTopic 消息模型"))
-    背景 行业收敛到同一组基础设施需求
-    核心机制
-      双层结构 父 Topic 动态子 LiteTopic
-      RocksDB 索引层
-      事件驱动 Ready Set
-    Multi-Agent 异步通信架构
-      典型场景
-      Java 示例
-    与 MCP 协议演进的关系
-    企业级增强 Consume Suspend
-    设计哲学 从共享消费到会话独占
-    RocksDB 选型的工程权衡
-    事件驱动 Ready Set 的调度代价
-```
-
 ## 背景：行业收敛到同一组基础设施需求
 
 AI 行业的协议层和框架层（Anthropic MCP 2026 Roadmap、Google ADK Long Running Agent）正在收敛到三个核心需求：
@@ -45,37 +24,6 @@ AI 行业的协议层和框架层（Anthropic MCP 2026 Roadmap、Google ADK Long
 - Group 模型偏向共享消费 → 不适合会话级独占订阅
 
 ## 核心机制
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 双层结构：父 Topic + 动态子 LiteTopic
 
@@ -249,10 +197,10 @@ LiteTopic 适合以下场景：
 一个可行的集成路径：ADK Agent 作为 LiteTopic 的生产者，将任务分发写入父 Topic + 对应 LiteTopic；ADK 的回调机制接收来自另一个 LiteTopic 的结果。框架侧无需感知 LiteTopic 的存在，只需配置正确的 Topic 和回调地址。
 
 ## 相关实体
-- [Rocket Mq 5 Litetopic Ai Agent Async Cloudnative](ch04/298-ai-agent.html)
+- [Rocket Mq 5 Litetopic Ai Agent Async Cloudnative](ch04/030-ai-agent.html)
 - [Wow Harness V3 Governance Protocol](../ch05/009-harness.html)
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
-- [Agent Skills Teams Architecture Evolution Selection Guide](ch04/238-agent-skills-teams.html)
+- [Agent Skills Teams Architecture Evolution Selection Guide](ch04/241-agent-skills-teams.html)
 - [Hermes Agent K2 6 Multi Agent](../ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)

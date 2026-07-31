@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 18.7KB | `entities/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 从 Demo 到产线 企业 Harness"))
-    道关卡总览
-    第一关 读懂巨型代码库
-    第二关 控制幻觉
-    第三关 经验复用 Skill 渐进式披露
-    第四关 Token 经济学
-      三层模型路由
-      反向选型 受限模型下的模式选择
-      Talker-Reasoner 双系统
-    第五关 约束与放手
-    第六关 编排载体四方图
-    第七关 长任务状态漂移
-```
-
 ## 核心定位
 
 黄佳（咖哥）在 CSDN「AI 进化论」分享的 **Harness 工业化 8 道关卡**，是面向"百万行级代码库 + 多系统编排 + 长周期任务"的企业级 Agent 落地清单。每关给出"痛点 → 解法 → 工程模板"三段式。
@@ -32,37 +13,6 @@ mindmap
 > 黄佳："2025 年我们都在玩 Vibe Coding，而 2026 年，企业真正需要的是 Harness Engineering。"
 
 ## 8 道关卡总览
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 | # | 关卡 | 痛点 | 核心解法 |
 |---|------|------|----------|
@@ -226,7 +176,7 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 - [Agent Harness 12 Components 7 Decisions](../ch05/058-agent-harness.html) — 12 组件 + 7 决策框架
 - [Agent Production Harness Engineering](../ch05/120-harness-engineering.html) — 工程赤字 + Demo vs 生产型判别
 - [Harness Engineering Systematic Framework](../ch05/120-harness-engineering.html) — Harness 工程系统化
-- [Agent Skill Writing](../ch04/269-agent-skill.html) — Skill 编写实践（第三关深入）
+- [Agent Skill Writing](../ch04/271-agent-skill.html) — Skill 编写实践（第三关深入）
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/035-agent.html) — 漂移与幻觉的关联分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)
@@ -256,7 +206,7 @@ Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的
 
 ### 实践价值：ADPS 共同体将个人踩坑经验转化为组织资产
 
-[Agent Skill Writing](../ch04/269-agent-skill.html) 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
+[Agent Skill Writing](../ch04/271-agent-skill.html) 解决个人级经验复用，而 ADPS 共同体解决跨组织级经验沉淀。Harness Engineering 的坑多数是共通的（上下文压缩、Token 成本、状态漂移），但行业内缺乏共享词汇表。ADPS 的价值在于建立共同的工程语言，使"某团队已解决的第 7 关问题"能快速映射为"另一团队的启动手册"。
 
 ## 实践启示
 
@@ -264,7 +214,7 @@ Haiku 60% / Sonnet 30% / Opus 10% 的路由比例背后有数据支撑：41% 的
 
 2. **用 Stop Hook 将质量门禁自动化**：在 CI/CD pipeline 中嵌入 Stop Hook（`pnpm lint && pnpm test`，blocking=true），让每次 AI 交付都经过确定性检查。这是[Agent Reliability Context Drift Tool Hallucination](../ch03/035-agent.html) 中"反馈回路丢失"问题的最低成本解法，无需改模型，只要改 Harness 配置。
 
-3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应[Agent Skill Writing](../ch04/269-agent-skill.html) 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
+3. **三层模型路由是 token 成本控制的第一优先级**：先用 Haiku 做路由分类（41% 查询根本不需要 Sonnet），再考虑压缩上下文。对应[Agent Skill Writing](../ch04/271-agent-skill.html) 的渐进式披露原则——系统应该先判断"这个问题需要多少智能"，再分配对应算力。
 
 4. **HITL 人工审核不可省，特别是删除/部署/转账类操作**：第五关的爆炸半径分级是 Harness Engineering 的安全基线。[Agent Harness Engineering Survey 2026](../ch05/120-harness-engineering.html) 的 ETCLOVG 7 层框架中"安全层"与此呼应——高爆炸半径操作的 HITL 不是流程繁琐，而是防止不可逆损失的最后防线。
 

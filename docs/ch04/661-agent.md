@@ -2,55 +2,15 @@
 
 ## Ch04.661 Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/agent-eval-counterintuitive-insights-langfuse.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/agent-eval-counterintuitive-insights-langfuse.md`
 
 # Agent评测的反直觉感悟：质量优化与可规模化性的取舍
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent评测的反直觉感悟 质量优化与可规模化性的取舍"))
-    Bad Case 归因的陷阱
-    反直觉核心 质量优化破坏可规模化性
-    Tracing 的真正价值
-```
 
 ## 摘要
 
 基于 Langfuse 实战经验，揭示 Agent 评测中的核心反直觉现象：**质量优化可能破坏产品可规模化性**。Tracing 的价值不在调试，而在让成本-质量取舍成为产品评审中可讨论的线索。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 ### Bad Case 归因的陷阱
 

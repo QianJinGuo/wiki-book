@@ -8,22 +8,6 @@
 
 > 2026-06-08 Perplexity AI Research 与 Harvard Business School 联合发布的第一份全面 Perplexity Computer 真实部署实证研究。arXiv 技术报告 2606.07489。在 Computer 上线后仅约 105 天内 (2026-02-25 → 2026-06-08) 即拿出 HBS 学术严格度的生产数据。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Perplexity Computer Empirical"))
-    知识工作的实证研究
-    Computer use vs structured API 的效率差异
-    知识工作者的行为变化
-    追踪 AI 对知识工作的行为影响
-    验证技能比生成技能更重要
-    用实证数据驱动 AI 采用策略
-    三个独有贡献 不应合并到现有 entity
-    核心研究问题与三维分析框架
-```
-
 ## 深度分析
 
 ### 1. 知识工作的实证研究
@@ -36,37 +20,6 @@ Perplexity 的实证研究提供了 AI 对知识工作影响的量化数据—�
 AI 不只提升效率，还改变知识工作者的行为模式——从"搜索信息"转变为"验证 AI 提供的信息"，从"写初稿"转变为"编辑 AI 生成的初稿"。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 1. 追踪 AI 对知识工作的行为影响
 不只度量效率——还要度量行为变化（搜索→验证、写作→编辑）。

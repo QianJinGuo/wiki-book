@@ -6,53 +6,11 @@
 
 # 硅谷的尽头是编制：OpenAI要给白宫送5%的股权
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("硅谷的尽头是编制 OpenAI要给白宫送5的股权"))
-    绑匪被动还是棋手主动
-    四张牌桌的锚定博弈
-    监管独立性的根本矛盾
-    AI 治理的新范式
-```
-
 ## 摘要
 
 2026 年 7 月，英国《金融时报》报道 OpenAI 提议让白宫持有公司 5% 股权（按 8520 亿美元估值计约 426 亿美元）。Sam Altman 自 2025 年初便主动提出"政府持股 AI 公司"的概念，并逐步通过政策白皮书、基金会研究、公开造势等步骤推动。这一操作表面是交"保护费"应对国会提案和中期选举压力，实则是 Altman 通过先发报价在四张牌桌（国会、白宫、华尔街、同行）上设定锚点。该事件折射出 AI 巨头与政府在"利益绑定 vs 监管独立"之间的深层博弈。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 - **提议内容**：OpenAI 提议白宫无偿持有公司 5% 股权，按估值 8520 亿美元计算价值 426 亿美元，不进董事会、不投票、不干预经营的被动持股
 - **背景压力**：美参议员提出对大型 AI 公司征收 50% 股票税的法案；GPT-5.6 应白宫要求分批延迟发布；四个月后中期选举将带来更多针对 AI 的法案
@@ -105,10 +63,10 @@ Altman 的一口价同时作用于四个利益相关方：
 
 ## 相关实体
 
-- [Anthropic Claude Code Trojan 安全争议](ch01/598-anthropic-claude-code.html)
+- [Anthropic Claude Code Trojan 安全争议](ch01/286-anthropic-claude-code.html)
 - [禁止开源 AI 将是错误](ch01/028-banning-open-source-ai-would-be-a-mistake-interconnects.html)
-- [AI 伦理学家与对齐研究](ch01/989-anthropic.html)
-- [Anthropic Agent 平台演进](../ch04/588-anthropic-agent-platform.html)
+- [AI 伦理学家与对齐研究](ch01/1004-anthropic.html)
+- [Anthropic Agent 平台演进](../ch04/593-anthropic-agent-platform.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/硅谷的尽头是编制-openai要给白宫送5的股权.md)
 

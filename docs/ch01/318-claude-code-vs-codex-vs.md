@@ -4,30 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/claude-code-vs-codex-context-architecture-02.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code vs Codex 上下文架构 五层压缩管道"))
-    Claude Code 上下文窗口是一切的边界
-      CLAUDEmd 四层结构
-      Auto Memory LLM 驱动的记忆选取
-    Claude Code 五层压缩管道
-      第一层 Budget Reduction 预算削减
-      第二层 Snip 片段截断
-      第三层 Microcompact 微压缩
-    Codex Cloud Agent 文件系统即上下文
-      仓库快照注入
-      实际约束
-      没有 CLAUDEmd 等效物
-    两种策略关键差异
-    执行模型差异根源
-    五层管道的协同逻辑
-    读时投影的设计哲学
-    Codex 文件系统即上下文的隐含成本
-```
-
 ## 核心命题
 Claude Code 与 Codex 在"如何让模型看到需要的信息"上给出了方向完全相反的答案：
 
@@ -35,41 +11,6 @@ Claude Code 与 Codex 在"如何让模型看到需要的信息"上给出了方�
 - **Codex**：容器文件系统绕开上下文限制，按需读取，理论上无上限
 
 ## Claude Code：上下文窗口是一切的边界
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Claude 4.6 系列上下文窗口 100 万 token，但在实际软件工程任务（反复读取大文件、运行命令、解析输出）里比预想更快填满。
 
 ### CLAUDE.md 四层结构
@@ -213,9 +154,9 @@ Auto Memory 不用向量检索而用 LLM 驱动选取——这意味着你可以
 由于没有 CLAUDE.md 等效机制，Codex 高度依赖模型主动读取 README 和代码来推断项目约定。这意味着**高质量的 README 和代码注释的密度直接影响了 Codex 的执行质量**。在大型代码库中维护一份结构清晰的 ARCHITECTURE.md（说明关键文件位置和模块边界）是提高 Codex 准确率的最有效手段。
 
 ## 相关主题
-- [Claude Code 架构](../ch03/078-claude-code.html) — Claude Code 完整架构分析
+- [Claude Code 架构](../ch03/077-claude-code.html) — Claude Code 完整架构分析
 - [context window management comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md) — 多框架上下文管理对比（Aparna Dhinakura）
-- [Claude Code Harness Deep Dive](../ch05/073-claude-code-harness.html) — Founder Park 深度分析（含 Auto-compaction）
+- [Claude Code Harness Deep Dive](../ch05/074-claude-code-harness.html) — Founder Park 深度分析（含 Auto-compaction）
 
 ## 相关实体
 

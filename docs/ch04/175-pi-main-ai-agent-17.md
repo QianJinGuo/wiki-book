@@ -6,60 +6,10 @@
 
 [Pi Main Agent Engineering 17 Dimensions](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-main-agent-engineering-17-dimensions.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从 pi-main 源码拆解 顶尖 AI Agent 的工程设计"))
-    核心设计原则 轻核心 重扩展
-    个工程维度
-      任务规划 单体优先
-      核心主循环 双层 while
-      反思纠错 isError 统一返回结构
-    设计对照表
-    双层 while 架构 分离会话终止与本轮终止
-    isError 统一返回 让 LLM 自己驱动纠错
-    JSONL 事件流是工程可靠性的基石
-    记忆压缩的迭代更新比全量重写节省 50 Token
-    Agent 工程设计的最小必要集合
-```
-
 ## 核心设计原则：轻核心、重扩展
 pi 的设计哲学很简单：**核心引擎只做最小必要的事情，复杂能力通过 Extension API 交给插件。** 把核心做轻，稳定性才有保障；把扩展口留足，未来演进不需要重构。
 
 ## 17 个工程维度
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 1. 任务规划：单体优先
 pi 默认是单体 ReAct Agent，没有内置的 Planner/Router 节点。Extension API 开放任务规划能力——把"调用子 Agent"封装成一个普通工具插进工具列表，交给 LLM 自己决定。
 
@@ -199,10 +149,10 @@ pi 的扩展性验证了一个原则：**核心引擎只暴露最小必要接口
 
 ## 相关实体
 - [Ai 内容创作开始进入画布 Agent时代](../ch03/035-agent.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/565-score-by-collisions-patch-by-panic.html)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/271-skill.html)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/989-anthropic.html)
-- [Starfilm Ai Agent Ai Short Film Platform](ch04/343-ai-agent-ai.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/569-score-by-collisions-patch-by-panic.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/273-skill.html)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/1004-anthropic.html)
+- [Starfilm Ai Agent Ai Short Film Platform](ch04/344-ai-agent-ai.html)
 
 ---
 

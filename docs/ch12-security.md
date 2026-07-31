@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((AI安全))
-    威胁建模
-      提示注入
-      数据泄露
-      供应链攻击
-    防御层
-      输入过滤
-      输出审查
-      沙箱隔离
-    检测
-      异常检测
-      入侵检测
-      行为分析
-    响应
-      自动阻断
-      升级处理
-      取证分析
-    合规
-      GDPR
-      行业标准
-      审计要求
-    隐私保护
-      差分隐私
-      联邦学习
-      数据脱敏
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -49,35 +18,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph TB
-    subgraph "AI 安全防线"
-        ATK[威胁建模] --> DEF[防御层]
-        DEF --> DET[检测]
-        DET --> RSP[响应]
-    end
-    subgraph "威胁类型"
-        INJ[Prompt注入]
-        POI[工具投毒]
-        DAT[数据泄露]
-        ADV[对抗攻击]
-    end
-    ATK --> INJ & POI & DAT & ADV
-    subgraph "治理"
-        RBAC[权限控制]
-        AUD[审计日志]
-        CMP[合规]
-    end
-    RSP --> RBAC & AUD & CMP
-    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
-    classDef gov fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class ATK,INJ,POI,DAT,ADV threat
-    class DEF,DET,RSP defense
-    class RBAC,AUD,CMP gov
-```
-
 
 AI Agent 正在获得越来越多的权限——执行代码、访问数据库、发送邮件、操作文件系统。
 
@@ -134,19 +74,19 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [037. Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended](ch12/037-canvas-hackers-shinyhunters-say-their-official-domain-was-su)
 - [038. Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](ch12/038-adversaries-leverage-ai-for-vulnerability-exploitation-augm)
 - [039. 首篇VLA安全综述出炉：机器人听懂指令，安全评测也要升级](ch12/039-vla)
-- [040. Disgruntled researcher releases two more Microsoft zero-days](ch12/040-disgruntled-researcher-releases-two-more-microsoft-zero-days)
-- [041. Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation](ch12/041-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat)
+- [040. Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation](ch12/040-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat)
+- [041. Disgruntled researcher releases two more Microsoft zero-days](ch12/041-disgruntled-researcher-releases-two-more-microsoft-zero-days)
 - [042. How Amazon Bedrock catches AI-generated phishing](ch12/042-how-amazon-bedrock-catches-ai-generated-phishing)
 - [043. GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究](ch12/043-gitlab-ci-cd-kill-chain-audit-black-hills-infosec-2026)
 - [044. INTERPOL Operation Ramz MENA Cybercrime Networks](ch12/044-interpol-operation-ramz-mena-cybercrime-networks)
 - [045. Cyberscammers are bypassing banks' security with illicit tools sold on Telegram](ch12/045-cyberscammers-are-bypassing-banks-security-with-illicit-too)
-- [046. Securing AI Agents and Machine Identities](ch12/046-securing-ai-agents-and-machine-identities)
-- [047. A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens](ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
-- [048. U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁](ch12/048-u-of-t-ai-worm-cleverhans-lab-ai)
+- [046. U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁](ch12/046-u-of-t-ai-worm-cleverhans-lab-ai)
+- [047. Securing AI Agents and Machine Identities](ch12/047-securing-ai-agents-and-machine-identities)
+- [048. A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens](ch12/048-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
 - [049. Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向](ch12/049-canvas-lms-shinyhunters)
 - [050. NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst](ch12/050-nginx-rift-achieving-nginx-remote-code-execution-via-an-18)
-- [051. Fake Job Interview Apps Drop JobStealer Malware on Windows and macOS](ch12/051-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a)
-- [052. ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败](ch12/052-ico-south-staffordshire-96-3-2022-cl0p)
+- [051. ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败](ch12/051-ico-south-staffordshire-96-3-2022-cl0p)
+- [052. Fake Job Interview Apps Drop JobStealer Malware on Windows and macOS](ch12/052-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a)
 - [053. ICO fines South Staffordshire £963K over 2022 breach](ch12/053-ico-fines-south-staffordshire-963k-over-2022-breach)
 - [054. AI in Cybersecurity Training Resources | SANS Institute](ch12/054-ai-in-cybersecurity-training-resources-sans-institute)
 - [055. bagel — Fleet 级 Secret Scanning 守护开发工作站](ch12/055-bagel-fleet-secret-scanning)

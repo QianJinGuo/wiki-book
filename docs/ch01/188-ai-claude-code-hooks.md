@@ -6,42 +6,6 @@
 
 [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("打造可靠的 AI 编程环境 Claude Code Hooks"))
-    Claude Code Hooks 是什么
-      概率性问题
-      Hooks 如何解决这个问题
-    Hooks 工作原理 事件驱动的四步流程
-      事件 匹配器 Hook 退出码 4步流程
-      配置作用域 用户 项目和本地
-      if 字段 更细粒度的过滤
-    Hooks 事件类型 快速参考表
-    四种 Hook 类型详解
-      Command Hooks 主力军
-      HTTP Hooks 外部集成
-      Prompt Hooks AI 驱动的决策
-    个生产级 Hook 示例 开箱即用
-      自动格式化
-      保护敏感文件
-      完成通知
-    开箱即用的 Hooks 入门配置
-      完整配置
-      如何针对你的技术栈定制
-      验证 Hooks 是否生效
-    CICD 集成与实践
-      Headless 模式行为
-      GitHub Actions 集成
-      团队 Hook 管理
-    常见问题与故障排查
-      Hook 没有触发
-      Hook 运行但不阻止
-      无限循环
-```
-
 ##  Claude Code Hooks 是什么？
 Claude Code hooks 本质上就是一些你自己定义的操作，比如 shell 命令、HTTP 调用，或者额外的提示，它们会在 Claude Code 的不同阶段自动执行。
 和写在提示词里的约定不一样，hooks 是  ** 一定会触发的  ** ，不会被「忘掉」。这也意味着你可以更稳定地控制一些事情，比如代码格式化、安全检查、通知，或者整个开发流程里的自动化步骤。
@@ -63,41 +27,6 @@ Hooks 的思路很直接：不再依赖 LLM 的「记不记得」，而是直接
 实际用下来，大部分场景用 command 就够了，能覆盖 90% 的需求。
 
 ##  Hooks 工作原理：事件驱动的四步流程
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Claude Code hooks 的执行流程其实很简单：当某个事件触发（比如  ` PreToolUse(Write)  ` ）时，系统会先检查匹配规则，看有没有对应的 hook 需要执行。如果匹配上，就运行你的 hook 脚本，并通过 stdin 传入一段 JSON 数据。
 脚本执行完之后，会根据退出码决定下一步：
 
@@ -593,11 +522,11 @@ PostToolUse hook 如果修改了文件，会再次触发 PostToolUse，形成连
 对于高安全要求的团队，建议至少部署一个 PostToolUse 的 Bash 审计日志 hook。所有 Claude 执行的操作都会被记录到 `.claude/audit.log`，并附 UTC 时间戳。这在事后回溯「当时执行了什么」时非常有用，也满足了合规审计的基本要求。记得把 audit.log 加到 `.gitignore`。
 
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
-- [Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
+- [Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/077-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

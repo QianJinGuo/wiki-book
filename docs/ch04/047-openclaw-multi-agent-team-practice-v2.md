@@ -4,70 +4,11 @@
 
 > 📊 Level ⭐⭐ | 26.6KB | `entities/openclaw-multi-agent-team-practice-v2.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Openclaw Multi Agent Team"))
-    为什么不做全能 Agent
-      上下文污染
-      技能冲突
-      人设冲突
-    花园多智能体团队概览
-    Agent 核心要素
-    OpenClaw Agent 架构
-      Workspace 结构
-      人设文件体系
-      记忆系统
-    多 Agent 配置三要素
-      工作环境隔离
-      路由规则
-      通信机制
-    各专精 Agent 详解
-      花园生图助手
-      花园资讯助手
-      花园投资助手
-    多智能体协作示例
-    相关资源
-```
-
 ## 核心观点
 
 OpenClaw（龙虾）的价值不在于"它能做什么"，而在于"你需要它为你做什么"。  从单一 Agent 上线到搭建六专精智能体加一主管的七人团队，作者实现了从 AI 日报生成、股票分析、图片创作到代码开发的日常任务自动化、零人工干预。
 
 ## 为什么不做全能 Agent
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 上下文污染
 
@@ -354,10 +295,10 @@ subagents: {
 
 ## 相关实体
 - [Hermes Agent Memory System](../ch03/096-hermes-agent.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1036-openclaw-agent.html)
-- [Hiclaw V110 K8S Hermes Worker](../ch01/1243-0.html)
-- [Openclaw Multi 2](../ch11/235-openclaw.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch04/561-amazon-bedrock-agentcore.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1049-openclaw-agent.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/1248-0.html)
+- [Openclaw Multi 2](../ch11/237-openclaw.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch04/566-amazon-bedrock-agentcore.html)
 
 ---
 

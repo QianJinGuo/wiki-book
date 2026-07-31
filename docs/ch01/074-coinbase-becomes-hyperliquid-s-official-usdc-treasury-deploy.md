@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐ | 7.2KB | `entities/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Coinbase Becomes Hyperliquids"))
-    事件背景
-    关键角色分工
-      Coinbase收益共享型 Treasury Deployer
-      Circle技术部署方
-      Native Markets过渡期支持
-    稳定币格局的马太效应
-    交易所与稳定币发行商的权力博弈
-    Circle 的战略卡位
-    HYPE 代币的即时暴涨
-    对 DeFi 协议而言
-    对稳定币发行商而言
-```
-
 ## 核心要点
 - Coinbase 取代 USDH（Native Markets 发行的 Hyperliquid 原生稳定币）成为 Hyperliquid 官方 USDC  treasury deployer，在 AQAv2（Aligned Quote Asset v2）框架下运营 
 - Coinbase 将与协议共享绝大部分 USDC 储备收益（reserve yields），同时 Circle 作为技术部署方提供跨链转账协议服务 
@@ -30,44 +11,6 @@ mindmap
 - HYPE 代币涨至约 $44，日内涨幅 12% 
 
 ## 事件背景
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 2026 年 5 月 15 日，Coinbase 正式成为 Hyperliquid 的官方 USDC treasury deployer，并获得收购 USDH 品牌资产的权利。USDH 是 Native Markets 在 2025 年 9 月通过竞争性治理投票后发行的 Hyperliquid 原生稳定币，但未能获得足够的市场采用，在与 USDC 的竞争中彻底落败。
 Hyperliquid 是目前规模最大的链上永续期货交易所之一，其 USDC 供应量在过去一年翻倍至约 $50 亿，占平台上绝大部分稳定币活动。相比之下，USDH 供应量停滞在约 $1 亿，始终未能实现有意义的市场份额突破。
 
@@ -107,10 +50,10 @@ Circle 同时承担技术部署者角色并积极囤积 HYPE 代币，显示出�
 ### 对交易员和投资者而言
 HYPE 的即时暴涨说明 Coinbase 入场对代币价格具有显著的信号意义。但需注意，这种短期涨幅往往包含大量情绪成分，协议实际收益的改善需要时间验证。关注 AQAv2 收益分享机制的落地情况及 USDC 在 Hyperliquid 上的实际流动性指标，是评估后续价值的重要依据。
 ## 相关实体
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/094-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/095-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/799-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/766-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md)
 

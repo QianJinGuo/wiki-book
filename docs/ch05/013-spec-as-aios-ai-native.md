@@ -2,34 +2,6 @@
 
 ## Ch05.013 Spec as AIOS：AI-Native 全栈交付的抗熵架构（高德技术系列第二期）
 
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 > 📊 Level ⭐⭐ | 23.1KB | `entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md`
 
 # Spec as AIOS：AI-Native 全栈交付的抗熵架构
@@ -37,30 +9,6 @@ graph TB
 > **作者**：APP 平台业务中心 / 高德技术，2026-06-02
 > **系列定位**：「**超级应用的 AI 原生研发模式探索**」**第二期**（第一期：工业级能力底座；第三期：7x24 pipeline）
 > **核心命题**：当多元 Agent 在同一代码库高速并行时，将规范体系打造为 AI 的"**可执行操作系统**"——从源头构建对抗**代码熵增**的免疫屏障，让速度红利不再被债务成本吞噬。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Spec as AIOS AI-Native 全栈交付的抗熵架构"))
-    系列背景 从人机协作到 AI 高自治托管
-    一 背景与动因
-      AI 代码熵增 无约束生成的系统性风险
-      多 Agent 协同 一致性的必然要求
-    二 核心理念 规范即 AI 的操作系统
-      仓库唯一真源 Repository as Single
-      规范驱动开发 Spec-Driven Development
-      AI 执行一致性 AI Execution Consistency
-    三 规范体系架构 三级分层模型
-      全局规范层 Global Specifications
-      项目规范层 Project Specifications
-      个人规范层 Personal Specifications
-    四 端云一体的设计哲学
-    五 工程规范 为 AI 构建可导航的知识图谱
-    关键判断
-    AIOS 范式跃迁 从文档驱动到可执行操作系统
-```
 
 ## 系列背景：从人机协作到 AI 高自治托管
 
@@ -305,10 +253,10 @@ AIOS 范式的核心突破在于：**将规范从"文档"重构为"操作系统"
 - **vs `harness-engineering-90-percent-pillars`**：原 entity 是 **Harness 4 根支柱概念**，本文是 **AIOS 在规范体系维度的具体落地**
 
 ## 相关实体
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/330-ai-coding-agent.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/333-ai-coding-agent.html)
 - [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/035-agent.html)
 - [Ai Native Project Management Git](ch05/018-ai-native.html)
-- [Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html)
+- [Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)

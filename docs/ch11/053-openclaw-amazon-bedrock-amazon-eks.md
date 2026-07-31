@@ -2,70 +2,13 @@
 
 ## Ch11.053 OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战
 
-> 📊 Level ⭐⭐ | 12.3KB | `entities/openclaw-amazon-bedrock-eks-printer-qc.md`
+> 📊 Level ⭐⭐ | 12.4KB | `entities/openclaw-amazon-bedrock-eks-printer-qc.md`
 
 # OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战
 
 > 使用 OpenClaw + Amazon Bedrock + Amazon EKS 构建打印机包装质检 AI Agent 的实战教程，包含完整的代码示例和架构设计。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw Amazon Bedrock Amazon"))
-    前言
-    业务背景与客户痛点
-      客户场景介绍
-      核心痛点分析
-      技术方案选型
-    系统架构详细设计
-    Skill vs RAG vs Fine-tune 方法论边界
-    VPC Endpoint SG 动态性陷阱
-    Skill 注册与召回的上下文盲区
-    版本锁定与容器化 Agent 运维纪律
-    VPC Endpoint SG 必须覆盖整个 VPC CIDR
-```
-
 ## 核心内容
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 # OpenClaw + Amazon Bedrock + Amazon EKS联动实践：打印机包装质检助手实战
 
@@ -212,10 +155,10 @@ POC 可用 Long-term API Key 快速验证，但生产环境必须切换到 IRSA 
 
 ## 相关实体
 - [Bedrock Agentcore Payment X402 Agent](ch11/050-bedrock-agentcore.html)
-- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](../ch04/561-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/561-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/561-amazon-bedrock-agentcore.html)
+- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](../ch04/566-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/566-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/566-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-amazon-bedrock-eks-printer-qc.md)
 

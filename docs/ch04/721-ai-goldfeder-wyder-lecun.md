@@ -8,52 +8,11 @@
 
 > 从优化理论、演化生物学、竞争市场、机器学习四个学科论证 AI 专业化不可避免。v=9 c=9 s=5 vxc=81
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI 专业化不可避免 GoldfederWyderLeCun 多学科论据"))
-    优化理论 无免费午餐定理的现实含义
-    演化生物学视角 专业化作为进化稳定策略
-    市场竞争维度 Jevons 悖论与专业化的正反馈循环
-    跨学科论证的方法论价值
-```
-
 ## 摘要
 
 Goldfeder、Wyder、LeCun 与 Shwartz-Ziv 在 2026 年的工作《AI Must Embrace Specialization via Superhuman Adaptable Intelligence》从四个学科——优化理论、演化生物学、竞争市场、机器学习——构建了 AI 专业化不可避免的跨学科论证体系。Dharma AI 团队对此进行了解读与拓展。核心结论是：专业的模型并不会随着通用模型能力的提升而变得多余；相反，通用模型越强，专业化的价值和必要性反而越大。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 1. 优化理论表明：任何算法在某一类任务上的最优性必然以其他任务上的次优性为代价（No Free Lunch Theorem）
 2. 演化生物学证明：专业化是适应度最大化的进化稳定策略，泛化只有在资源极度稀缺时才占优

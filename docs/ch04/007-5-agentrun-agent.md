@@ -4,58 +4,11 @@
 
 > 📊 Level ⭐ | 9.0KB | `entities/aliyun-agentrun-5min-quickstart.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("分钟上手 AgentRun 从注册到第一个 Agent 运行"))
-    种创建模式
-    快速创建表单 4 步
-    详情页 8 个 Tab 覆盖全生命周期
-    平台自动处理的生产级能力
-    进阶能力
-    平台定位的战略意图
-    Serverless 运行时对 Agent 场景的价值
-    多模式并存的设计考量
-```
-
 ## 核心定位
 阿里云 AgentRun 的定位本质是**平台与用户职责重新分工**：平台承担容器、扩缩容、网络、监控、灰度、合规等基础设施负担，用户只需聚焦模型、提示词、工具三大核心要素。
 这一分工逻辑在产品层面的直接体现就是「快速创建」模式——通过可视化配置，无需编码即可上线一个运行在生产级 Serverless 运行时上的 Agent。
 
 ## 5 种创建模式
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 | 模式 | 定位 | 适合谁 |
 |---|---|---|
 | 快速创建 | 可视化配置，零编码 | 产品、业务、想先验证想法的人 |
@@ -135,14 +88,14 @@ graph TB
 
 ## 资源链接
 ## 相关实体
-- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/298-ai-agent.html)
-- [Aliyun Agentrun](ch04/003-agentrun.html)
-- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](ch04/003-agentrun.html)
-- [Skill Development Guide Aliyun 2026](ch04/271-skill.html)
+- [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](ch04/030-ai-agent.html)
+- [Aliyun Agentrun](ch04/444-agentrun.html)
+- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](ch04/444-agentrun.html)
+- [Skill Development Guide Aliyun 2026](ch04/273-skill.html)
 - [Strands Agents Cloud Cost Optimizer](ch04/697-strands-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-agentrun-5min-quickstart.md)
-- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](ch04/003-agentrun.html)
+- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](ch04/444-agentrun.html)
 
 ---
 

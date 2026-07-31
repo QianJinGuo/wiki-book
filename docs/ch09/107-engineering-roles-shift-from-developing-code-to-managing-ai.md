@@ -6,18 +6,6 @@
 
 # Engineering roles shift from developing code to managing AI | CIO Dive
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Engineering roles shift from"))
-    看不见的工作为什么让生产力指标失真
-    Engineering role 的三层重新定义
-    为什么测量框架成为最大瓶颈
-    对企业的可执行建议
-```
-
 ## 相关实体
 
 - [scaling archunit with nebula archrules](../ch11/302-scaling-archunit-with-nebula-archrules.html)
@@ -25,37 +13,6 @@ mindmap
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 CIO Dive 2026-05-14 报道 Harness 公司发布的《State of Engineering Excellence 2026》调研结果：在 700 名企业开发者与工程负责人中，**81% 表示 AI 节省下来的编码时间现在被用来审查 AI 的产出**；近三分之一的开发者工作时间被这种"看不见的工作"占据。该报告揭示了 AI 编码工具大规模落地后，工程角色正从"开发者"转向"AI 管理者"，但企业现有的生产力衡量框架仍然停留在上一个时代。
 
@@ -127,12 +84,12 @@ Harness 报告给出的建议可以归纳为四个层面：
 
 ## 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html) — Karpathy 关于 AI 时代工程师角色转变的访谈
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html) — Karpathy 关于 AI 时代工程师角色转变的访谈
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html) — Vibe Coding 到 Agentic Engineering 范式转变
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html) — Claude Code 源码机制详解
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html) — Claude Code 源码机制详解
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html) — Agent 原理架构与工程实践
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md) — 多智能体交易系统架构
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html) — OpenClaw 完全指南
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html) — OpenClaw 完全指南
 
 ---
 

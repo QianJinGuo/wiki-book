@@ -18,7 +18,6 @@ Fable 5 从发布之日起，[命运就像模型的名字一样玄幻](<https://
 
 到现在，风波逐渐归于平静。模型终归是要回归到生产力里去的。
 
-
 ## 核心观点
 
 > 本文通过article、llm、anthropic视角，分析了的AI/ML技术动态。
@@ -68,37 +67,6 @@ Thariq 的博客让人豁然开朗。简而言之：**人和模型之间存在 �
 所谓「地图」，是对待完成工作的表征，也就是我的提示词、技能和上下文，是我交给 Claude 的东西。所谓「疆域」，则是真正需要...
 
 ## 技术洞察
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 本文的核心技术价值在于：
 - 机器之心编辑部  

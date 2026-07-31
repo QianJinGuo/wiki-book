@@ -8,61 +8,7 @@
 
 > 系列第 7 篇。前 6 篇覆盖 EKS + K8s、AgentCore Serverless、单 Agent、Serverless 改造路径等；本篇为 **ECS Fargate 变体**——面向无 K8s 能力的 2-5 人小团队、几到几十人租户规模的轻量级方案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenClaw 多租户系列 7 基于 ECS Fargate"))
-    三个独有贡献 独立 entity 价值
-    核心方案定位
-    双 Agent 对比
-    四层隔离机制 核心实现
-    Graviton ARM64 选型关键理由
-    系列定位
-    OpenClaw 从单机到多租户的架构演进
-    Graviton 的成本效率对 AI 推理的意义
-```
-
 ## 三个独有贡献（独立 entity 价值）
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 1. **ECS Fargate + Graviton 变体的完整 IaC** — 与系列第 3 篇 EKS + K8s 变体形成 infra 选择双胞胎：前者托管无节点管理、后者 K8s 灵活可扩展。本文给出 Terraform 完整模板 + EFS Access Point 权限三件套 + ALB Path-Based Routing 的 per-tenant 动态生成。
 2. **OpenClaw + Hermes 双 Agent 并行部署模式** — 每用户 Slot 同时包含两个互补 Agent（OpenClaw 走多渠道+Web UI、Hermes 走自进化+持久记忆+操作 AWS/EKS），通过 EFS Access Point 的 uid/gid 差异（1000 vs 10000）实现文件级隔离。
@@ -161,7 +107,7 @@ ECS Fargate 消除了集群管理负担——不需要管理 EC2 实例、不需
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-7-ecs-fargate-graviton.md)
 
-相关 entity：[Openclaw Multi 4](ch11/235-openclaw.html)、[Openclaw Multi 1](ch11/235-openclaw.html)、[Openclaw Multi Agent Team Practice V2](../ch04/047-openclaw-multi-agent-team-practice-v2.html)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/561-amazon-bedrock-agentcore.html)、[Openclaw Comprehensive Guide](ch11/235-openclaw.html)、[Multi Agent Architecture Retail Practice](../ch03/035-agent.html)、[Agent Engineering Principles Architecture Practice](../ch03/035-agent.html)
+相关 entity：[Openclaw Multi 4](ch11/237-openclaw.html)、[Openclaw Multi 1](ch11/237-openclaw.html)、[Openclaw Multi Agent Team Practice V2](../ch04/047-openclaw-multi-agent-team-practice-v2.html)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/566-amazon-bedrock-agentcore.html)、[Openclaw Comprehensive Guide](ch11/237-openclaw.html)、[Multi Agent Architecture Retail Practice](../ch03/035-agent.html)、[Agent Engineering Principles Architecture Practice](../ch03/035-agent.html)
 
 相关 raw：[Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-6.md)
 

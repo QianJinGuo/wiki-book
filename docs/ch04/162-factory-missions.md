@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/factory-missions-architecture.md`
 
-
 ## 概述
 Factory 的 Missions 是一种**串行优先的多智能体软件工程执行架构**，核心理念是：多智能体系统的瓶颈不是智能，而是人类注意力。架构用纪律而非并行来解决问题。
 | 角色 | 职责边界 | 
@@ -25,38 +24,6 @@ Claude Managed Agents = **平台托管能力**（基础设施层）
 共同点：先定义成功标准，再独立评分器验证。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "编排层"
-        COORD[协调器<br/>Orchestrator]
-        QUEUE[消息队列]
-    end
-    subgraph "Agent 团队"
-        W1["Worker A<br/>专项能力1"]
-        W2["Worker B<br/>专项能力2"]
-        W3["Worker C<br/>专项能力3"]
-    end
-    COORD --> QUEUE
-    QUEUE --> W1 & W2 & W3
-    W1 & W2 & W3 -->|"结果"| QUEUE
-    QUEUE -->|"汇总"| COORD
-    subgraph "共享层"
-        SHARED_MEM[共享记忆]
-        TOOL_BUS[工具总线]
-    end
-    W1 & W2 & W3 --> SHARED_MEM
-    W1 & W2 & W3 --> TOOL_BUS
-    IN[任务输入] --> COORD
-    COORD --> OUT[结果输出]
-    classDef coord fill:#dbeafe,stroke:#2563eb
-    classDef worker fill:#ede9fe,stroke:#7c3aed
-    classDef shared fill:#fef3c7,stroke:#d97706
-    class COORD,QUEUE coord
-    class W1,W2,W3 worker
-    class SHARED_MEM,TOOL_BUS shared
-```
-
 Factory 选择"串行优先"不是技术限制，而是深思熟虑的工程判断。在软件工程领域，并行开发最大的问题是**协调成本**——当多个工人同时修改同一代码库时，冲突检测、上下文切换、合并冲突等成本往往抵消了并行带来的时间收益。人类工程师对此有丰富经验：两个人同时改同一个文件，往往比一个人单独改两次更慢。
 对多智能体系统来说，这个问题更加严重。LLM 的输出具有概率性——同一段代码，让同一个模型跑两次可能产生不同的结果。这种不确定性在并行场景下会指数级放大：两个 Agent 同时看到 V1 版本代码，各自修改后产生 V2a 和 V2b，两个版本可能存在无法自动合并的语义冲突。
 Factory 的解法是**外层串行、内层并行**：同一时间只有一个 Worker 在修改代码（避免冲突），但 Worker 内部可以并行执行只读任务（搜索、查文档、看接口）。这是对人类软件工程团队工作模式的精准抽象——一个程序员在写代码的时候，可以同时让另一个程序员去调研技术方案，但不能让两个人同时提交到同一个分支。

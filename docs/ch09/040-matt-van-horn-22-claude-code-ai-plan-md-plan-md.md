@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/matt-van-horn-claude-code-workflow-philosophy.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Matt Van Horn 的 22 个 Claude Code"))
-    核心反直觉
-    个黑客技巧 六大类别
-      A 计划循环 CE 系列
-      B 输入与并行
-      C 远程与权限
-    关键哲学提炼
-    工具栈速查
-    与现有实体的关系
-    工程可复现项
-    核心观点 80 计划 20 执行是 AI 时代人机协作的结构性反转
-    技术要点 让 AI 写 planmd 但不读
-```
-
 ## 摘要
 
 Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 个黑客技巧，**核心哲学**：让 AI 写 plan.md 但不读 plan.md；6 个 cmux 标签页并行；用 Agent Cookie 让 Agent 登录真实世界服务；彻底放弃 IDE。
@@ -30,41 +11,6 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 不只是一份技巧清单，而是一套**完整的 Agent 时代开发者工作流哲学** —— 人类 = 信号/品味/方向，智能体 = 执行/产量。
 
 ## 核心反直觉
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **80% 计划 + 20% 执行**（传统相反）。思考过程全在 plan.md，执行是机械的
 - **强制生成 plan.md 是为了让智能体不偷懒** —— 写计划迫使它研究、承诺方法、列验收标准
@@ -131,9 +77,9 @@ graph TB
 
 ## 与现有实体的关系
 
-- **与 [Claude Code 1 周年回顾](../ch03/078-claude-code.html)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
+- **与 [Claude Code 1 周年回顾](../ch03/077-claude-code.html)** 互补：1 周年是时间线 + 团队视角；本文是开发者工作流哲学
 - **与 [Harness Engineering 核心模式](../ch05/120-harness-engineering.html)** 互补：CE plan.md 循环是 harness engineering 的具体实现
-- **与 [工作流 Skill 模式](../ch04/271-skill.html)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
+- **与 [工作流 Skill 模式](../ch04/273-skill.html)** 呼应：「任何做超过 2 次的事 → 做成技能」是 SkillOS 哲学的实战版
 - **与 [Hermes 自进化](../ch03/096-hermes-agent.html)** 平行：Matt 用 OpenClaw + Hermes 跑远程工作
 - **与 [Agent 六机制](../ch03/035-agent.html)** 呼应：「先 plan 后 work」是六机制中"计划-执行分离"的具体实现
 
@@ -167,17 +113,17 @@ Agent Cookie（将真实浏览器会话交给 CLI）解决了 AI Agent 落地最
 
 ### 技术判断：成瘾是真实风险，而非边缘警告
 
-Matt 坦诚提到"成瘾是真实问题，不是休息"，这个判断值得认真对待。AI coding 的反馈循环（快速产出 → 即时满足 → 更大目标）在神经机制上与游戏/社交媒体类似，但产出的社会价值完全不同。这不是道德说教，而是可持续性问题。当"努力工作"变成了 Agent 代为执行、人类负责批准的状态时，职业身份的瓦解可能比工作效率的提升来得更快。这与 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/090-harness-skill.html) 中讨论的"AI 影子采纳率"问题（77.55% 管理者无法分辨 AI 使用）形成微观-宏观对应：成瘾是个人层面的影子采纳，影子采纳是组织层面的成瘾。
+Matt 坦诚提到"成瘾是真实问题，不是休息"，这个判断值得认真对待。AI coding 的反馈循环（快速产出 → 即时满足 → 更大目标）在神经机制上与游戏/社交媒体类似，但产出的社会价值完全不同。这不是道德说教，而是可持续性问题。当"努力工作"变成了 Agent 代为执行、人类负责批准的状态时，职业身份的瓦解可能比工作效率的提升来得更快。这与 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/091-harness-skill.html) 中讨论的"AI 影子采纳率"问题（77.55% 管理者无法分辨 AI 使用）形成微观-宏观对应：成瘾是个人层面的影子采纳，影子采纳是组织层面的成瘾。
 
 ## 实践启示
 
-1. **所有任务都从 /ce-plan 开始，哪怕只是"写一个脚本"**：计划不是给人类看的文档，而是强迫 Agent 做深度研究的机制。直接索要交付物 → 偷工减料版本；先 plan 如何生成交付物 → 每次都是深度版本。这个原则与 [Skill Writing Patterns Best Practices](../ch04/271-skill.html) 中"做超过 2 次的事 → 做成技能"的精神一致：都是将重复行为升级为系统性工程。
+1. **所有任务都从 /ce-plan 开始，哪怕只是"写一个脚本"**：计划不是给人类看的文档，而是强迫 Agent 做深度研究的机制。直接索要交付物 → 偷工减料版本；先 plan 如何生成交付物 → 每次都是深度版本。这个原则与 [Skill Writing Patterns Best Practices](../ch04/273-skill.html) 中"做超过 2 次的事 → 做成技能"的精神一致：都是将重复行为升级为系统性工程。
 
 2. **6 标签页并行是 Agent 时代的"多线程"**：设置 cmux 为 4-6 个标签页，分别运行 /ce-plan（研究）、/ce-work（构建）、/last30days（研究）、修 bug（调试）。用声音钩子区分完成信号（不同 tab 完成后播放不同声音）。这是分布式认知的物理实现，让人类同时"监控"多个 Agent 进程而不过载。
 
 3. **语音输入将瓶颈从打字速度切换到判断力**：Mac 上用 Monologue/Wispr Flow + 鹅颈麦，语音转文字 + LLM 纠错。核心洞察：LLM 能填补转录错误——这意味着语音输入的质量下限由 LLM 的容错能力决定，而非麦克风质量。这个模式将人类的竞争优势锁定在"判断力"而非"执行速度"，这正是 Agent 时代最稀缺的资源。
 
-4. **构建自己的技能库作为复利资产**：任何做超过 2 次的事 → 做成技能。[Skill Writing Patterns Best Practices](../ch04/271-skill.html) 是技能编写的最佳实践，Matt 的实践进一步说明：让 Agent 读优秀技能（如 CE 体系）模仿结构，是技能积累的正向飞轮。每一次技能封装都是可复用资产的下一次复利。
+4. **构建自己的技能库作为复利资产**：任何做超过 2 次的事 → 做成技能。[Skill Writing Patterns Best Practices](../ch04/273-skill.html) 是技能编写的最佳实践，Matt 的实践进一步说明：让 Agent 读优秀技能（如 CE 体系）模仿结构，是技能积累的正向飞轮。每一次技能封装都是可复用资产的下一次复利。
 
 5. **警惕"整个人消失在构建过程中"**：Matt 的警告值得每个 Agent 时代工程师认真对待：Agent 本该替人类工作，但相反所有人都在比以往更努力地工作。破解方法：有意识地保留"非 AI 时间"——与人的真实连接、线下的身体感知、离开屏幕的判断力训练。Agent 是强大的，但判断力只有在持续使用中才能保持锐度。
 

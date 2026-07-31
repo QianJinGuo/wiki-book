@@ -8,54 +8,11 @@
 
 > **Background**: Ethan Mollick 在 One Useful Thing 发表的深度分析，论述 AI 能力加速发展正推动行业从简单聊天机器人向自主 Agent 的范式转变。文章梳理了 AI 能力的三个关键转型信号和能力阶梯。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Twilight of the Chatbots"))
-    指数增长的感知困境
-    Agent 能力评估的三个关键基准
-    从外行聊天到专家委托的范式转换
-    Agent 化的工作模式变革
-```
-
 ## 摘要
 
 AI 行业正处于从"聊天机器人时代"向"自主 Agent 时代"转型的临界点。Mollick 认为，聊天机器人的交互模式（用户发一条指令 → AI 回复一条）正在被 Agent 模式（AI 自主规划和执行多步任务）所取代。这一转型不仅在技术层面发生，也在商业模式和用户预期层面同步推进。核心驱动力是 AI 能力的指数级增长——前沿模型在自主任务时长上从数小时扩展到 16 小时以上，使得"委托任务"而非"一步步指导"成为更高效的工作方式。
 
 ## 核心论点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 Mollick 认为 AI 正在经历一场从"协作智能"（Co-intelligence）到"委托管理"（Management by Delegation）的深刻转变。变革的驱动力来自三个层面：模型能力的持续加速突破传统基准、Agent 框架和工具的快速成熟（从概念验证到生产部署）、以及用户行为从"提问"到"委托任务"的转变。这些信号共同指向了一个未来：AI 不再是回答工具，而是执行工具。
 
@@ -77,7 +34,7 @@ Mollick 引用了三个关键评估框架来量化 AI 的 Agent 能力增长：
 2. **AISI 自主能力评估**：英国政府 AI 安全研究所对 AI 自主网络能力的官方测评
 3. **AA-Briefcase 测试**：模拟复杂的多周咨询任务，评估 AI 在多种分析任务中的综合表现
 
-值得注意的是，Mollick 将中国开源权重模型也纳入分析，发现它们在 AA-Briefcase 上呈现自己的指数曲线，落后美国闭源模型约 6-12 个月。这一框架与 [Mollick 的 Co-Existence 框架](../ch01/582-ai-mollick.html) 中的"能力阶梯"概念一脉相承。
+值得注意的是，Mollick 将中国开源权重模型也纳入分析，发现它们在 AA-Briefcase 上呈现自己的指数曲线，落后美国闭源模型约 6-12 个月。这一框架与 [Mollick 的 Co-Existence 框架](../ch01/591-ai-mollick.html) 中的"能力阶梯"概念一脉相承。
 
 ### 从"外行聊天"到"专家委托"的范式转换
 
@@ -109,8 +66,8 @@ Mollick 指出，Agent 的优势不仅来自底层模型的进步，还来自"�
 
 ## 相关实体
 
-- [Co-Existence：AI Agent 化范式的演变](../ch01/582-ai-mollick.html)
-- [使用 Mythos 的真实体验](ch04/321-what-it-feels-like-to-work-with-mythos.html)
+- [Co-Existence：AI Agent 化范式的演变](../ch01/591-ai-mollick.html)
+- [使用 Mythos 的真实体验](ch04/323-what-it-feels-like-to-work-with-mythos.html)
 - [Harness Engineering 探索之旅](../ch05/120-harness-engineering.html)
 - [Hermes Agent Skill 设计分析](../ch01/332-hermes-agent-skill.html)
 

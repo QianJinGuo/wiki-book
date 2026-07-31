@@ -6,72 +6,10 @@
 
 [Claude Code Source Leak Lifecycle Analysis](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-source-leak-lifecycle-analysis.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("CLAUDEmd"))
-    文章概要
-    核心循环 8步生命周期
-    步骤1 上下文组装
-      buildEffectiveSystemPrompt
-      系统提示词内容清单
-      CLAUDEmd 四级加载
-    步骤2 API调用与异步生成器
-      queryLoop 无限循环
-      State 对象的状态传递
-    步骤3 响应解析
-      text tooluse 块
-      个内置工具
-    步骤4 权限检查
-      四层判断机制
-      分类器判断逻辑
-      不同工具的通过路径
-    步骤5 工具执行
-      工具统一接口
-      并发串行执行策略
-      实际效果
-    Agent Harness 是真正的工程壁垒
-```
-
 ## 文章概要
 Anthropic Claude Code 源码泄露事件（.map 文件未排除，1900+ TypeScript 文件，51万+ 行代码）让外界首次完整审视生产级 AI Agent 系统。本文顺着请求完整生命周期拆解每个环节——LLM 调用只是一行代码，真正让 Agent 可用的是围绕它精心设计的 Agent Harness。
 
 ## 核心循环：8步生命周期
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ```
 用户输入消息
     ↓
@@ -347,8 +285,8 @@ Claude Code 泄露事件最反直觉的发现：**LLM API 调用只是一行代�
 - [Managed Agents Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md) — Anthropic Managed Agents 架构
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch01/989-anthropic.html)
-- [Anthropic 12 Mcp Production Patterns](ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch01/1004-anthropic.html)
+- [Anthropic 12 Mcp Production Patterns](ch01/1004-anthropic.html)
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/710-claude-managed-agents.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/058-agent-harness.html)
 - [Harness Design Long Running Apps](../ch05/009-harness.html)

@@ -8,58 +8,11 @@
 
 > Claude Code 通过 ANTHROPIC_BASE_URL 静默检测自定义 API 路由，针对中国代理和时区嵌入隐藏标记。v=7 c=8 s=4 vxc=56
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 静默识别中国 API 路由"))
-    技术机制详解
-    隐蔽性设计分析
-    Anthropic 的动机分析
-    信任与透明度问题
-    参考来源```
-
 ## 摘要
 
 Vincent Schmalbach 通过逆向工程发现，Claude Code 从 v2.1.91 开始嵌入了一个隐蔽的 API 路由检测机制。当用户通过 `ANTHROPIC_BASE_URL` 环境变量配置自定义端点时，Claude Code 会将请求的目标域名与一个包含 147 条中国相关域名的编码列表和 11 个中国 AI 服务商关键词进行匹配，同时检查本地时区是否为 `Asia/Shanghai` 或 `Asia/Urumqi`。基于这些信号，Claude Code 会在模型上下文的日期行中嵌入不可见的标记——通过替换英文撇号为不同 Unicode 变体（`'` / `'` / `ʼ` / `ʹ`）和改变日期分隔符（`-` → `/`）来编码路由信息。该机制隐蔽、未经文档说明，且自 v2.1.91 起历经多个版本保持存在。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 1. **检测触发条件**：`ANTHROPIC_BASE_URL` 被设置为非 `api.anthropic.com` 的自定义端点
 2. **三层信号融合**：域名匹配（147 条中国相关域名列表） + 关键词匹配（11 个中国 AI 服务商名称） + 时区检测（Asia/Shanghai 或 Asia/Urumqi）
@@ -118,9 +71,9 @@ Anthropic 有合理的商业和技术理由关注非官方 API 路由。影子 A
 
 ## 相关实体
 
-- [Anthropic Skill Stack 架构](../ch01/989-anthropic.html) — Anthropic 的 Agent 工程架构背景，帮助理解 Claude Code 的底层设计
-- [Claude Code 治理软规则](../ch03/078-claude-code.html) — 探讨 Claude Code 行为的治理与透明度
-- [OpenClaw 安全与功能增强实践](../ch11/235-openclaw.html) — AI 工具的安全实践案例
+- [Anthropic Skill Stack 架构](../ch01/1004-anthropic.html) — Anthropic 的 Agent 工程架构背景，帮助理解 Claude Code 的底层设计
+- [Claude Code 治理软规则](../ch03/077-claude-code.html) — 探讨 Claude Code 行为的治理与透明度
+- [OpenClaw 安全与功能增强实践](../ch11/237-openclaw.html) — AI 工具的安全实践案例
 - [AI Gateway vs MCP Gateway 安全须知](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — API 路由与安全网关的讨论，与本实体的 API 路由指纹识别直接相关
 - [组件过期模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md) — 探讨 AI 系统中的信任与安全性设计模式
 

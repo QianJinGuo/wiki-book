@@ -26,7 +26,6 @@
   * 需求即测试  ：  好的需求描述本身就包含了验收标准，这些标准可以直接转化为自动化测试用例，由AI自动验证实现是否符合预期 
 当 AI 可以直接从Spec开始生成可用代码时，传统的分工和协作模式就是效率的阻碍。
 
-
 ## 深度分析
 **核心悖论的本质：** 这篇文章揭示了 Agent 时代的根本性矛盾——AI 的能力边界在飞速扩展，但组织的协作模式仍停留在工业时代的分工逻辑中。传统软件工程中的前端/后端/测试分离、产品/开发/测试的阶段划分，本质上是人类认知局限和沟通带宽限制下的次优解。当 AI 的处理速度远超人类时，这些原本"合理"的分工反而成为了最大的效率瓶颈。
 **三大结构性障碍：**
@@ -36,37 +35,6 @@
 **文章的深层逻辑：** 作者认为问题的根源不在于 AI 能力不足，而在于组织的协作基础设施未为 AI 优化。这与 1920 年代电力时代的管理革命类似——仅仅是"替换引擎"是不够的，需要重构整个生产关系。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 **面向 Agent 的研发范式转换：**
 1. **All-in-Code 的信息管理**：将需求、代码、测试、文档、配置全部纳入统一的版本控制系统，消除信息孤岛。Agent 可以在单一上下文中访问所有相关信息，消除了跨系统切换的上下文丢失。
 2. **版本化一切以隔绝外部依赖**：外部 API 文档、SDK 版本、需求描述都应该被版本化并本地存储，确保 Agent 的行为可复现，不受外部系统变化的影响。
@@ -78,11 +46,11 @@ graph TB
 > [!contradiction] 参见 **持相反观点**：当前 AI 辅助编程范式（包括 vibe coding）已被广泛应用于生产环境，其可行性不应被全盘否定。
 > 关于 Vibe Coding 的生产可行性，另一种观点认为当前的 AI 能力尚未成熟，不应完全依赖 AI 生成代码。
 ## 相关实体
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/120-harness-engineering.html)
-- [Tmall Marketing Ai Workflow](../ch05/094-ai.html)
+- [Tmall Marketing Ai Workflow](../ch05/095-ai.html)
 - [Harness Engineering Alibaba Java Case Study](../ch05/120-harness-engineering.html)
-- [Skill Formal Theory Survey 10Papers](ch04/271-skill.html)
+- [Skill Formal Theory Survey 10Papers](ch04/273-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
 三、Agent 在交付和稳定性链路中的缺席

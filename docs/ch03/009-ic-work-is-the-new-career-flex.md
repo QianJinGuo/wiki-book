@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 10.3KB | `entities/p-ic-work-is-the-new-career-flex.md`
 
-
 ## 核心要点
 - 传统晋升路径：从 IC（个人贡献者）晋升为 Manager → Director → VP，被视为"成功"的标志
 - 新趋势：真正的 career flex 是从管理岗位**回归 IC 角色**，尤其是 High-Impact IC（HI-C）
@@ -15,35 +14,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-ic-work-is-the-new-career-flex.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 **1. HI-C 角色是 AI 原生组织的组织结构创新，而非简单的高级 IC 回归**
 文章将 HI-C 描述为"比过去的 Staff Engineer、Principal Designer 更进一步"的角色 。关键区别在于：传统高级 IC 的职责是"在某一领域深入钻研"，而 HI-C 是"独立运营一个业务功能，从头到尾"。这种角色的出现需要两个条件同时成立：① AI 填补了设计、工程、营销等各环节的平均水平技能缺口；② 信息传递不再经过层层 gatekeeping。传统高级 IC（如 Staff Engineer）的职能边界从未扩展到"独立跑通一个增长功能"，因为那需要跨设计、工程、营销、运营的协调能力——而这正是 AI 当前正在压缩的成本。AI 作为"平均智能"的定位在这里是关键使能因素，它让人得以专注于端到端的项目整合，而非每个环节都达到专家水平。
 **2. "平均智能"是 AI 赋能个体效率提升的核心框架——被严重低估**
@@ -69,7 +39,7 @@ graph TB
 ## 相关实体
 
 - [How Superset built the IDE for AI agents on Vercel](../ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/167-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/168-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Public Stealth Leaves Opportunity on the Table](https://github.com/QianJinGuo/wiki/blob/main/entities/thisisgoingtobebig-public-stealth.md)
 
 ---

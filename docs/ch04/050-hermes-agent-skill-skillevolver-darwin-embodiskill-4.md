@@ -6,26 +6,6 @@
 
 # Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent Skill 互优化"))
-    三个主角
-      Darwin-skill AI 的质检员
-      SkillEvolver AI 的进化器
-      EmbodiSkill 裁判
-    互优化 4 轮迭代过程
-      准备 双向注入核心机制
-    大发现 AI 不需要更强的模型
-    工程化参数与最佳实践
-    核心金句
-    概念对比
-    终极断言
-    与 GEPA optimizeanything 的关联
-```
-
 ## 一句话
 
 > "**AI 的能力提升，不一定需要更强的模型。有时候，只需要让 AI 学会自己改自己的'说明书'。**"
@@ -35,39 +15,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md)
 
 ## 三个主角
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 1. Darwin-skill — AI 的"质检员"
 
@@ -223,7 +170,7 @@ EmbodiSkill = 失败归因 (WHY it failed) + 技能体/附录分离
 
 ## 与 GEPA optimize_anything 的关联
 
-**[GEPA optimize_anything](../ch01/295-gepa-optimize-anything.html)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
+**[GEPA optimize_anything](../ch01/296-gepa-optimize-anything.html)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
 
 | 维度 | GEPA optimize_anything | 本互优化实验 |
 |---|---|---|

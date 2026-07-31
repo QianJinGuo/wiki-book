@@ -4,62 +4,13 @@
 
 > 📊 Level ⭐⭐ | 14.8KB | `entities/wangyunhe-harness-optimization-agentsoul.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("王云鹤眼中的Harness 复杂优化问题 AGI灵魂争夺之战"))
-    核心命题 Agent Models Harness
-    国内模型格局 七国八制与异构竞争
-    任务冲突 为什么统一模型难以胜任
-    多模型协同的必然性
-      Claude Code 的多模型实现
-    Harness Engineering 形式化优化框架
-    Model Parameters Harness
-    AI灵魂之争 核心哲学问题
-      为什么这个问题重要
-    参考文献
-```
-
 ## 核心命题：Agent = Models + Harness
 
 王云鹤（华为诺亚方舟实验室）提出 **Agent = Models + Harness** 的定义框架，其中 Models 特指多模型协作而非单一 Base Model。这一定义直接回应了 Agent 概念长期缺乏清晰边界的问题。
 
-Harness 在此语境下指围绕模型的所有高价值元素——包括 [prompt 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)、RAG（检索增强生成）、tools（工具调用）、memory（记忆）等——联动形成的有机系统。王云鹤强调，Harness 不会消亡：RAG 不是在消失而是在升级——当 RAG 加上 prompt、工具调用、知识后，它演变为 [skills](ch05/085-thin-harness-fat-skills-ai.html) 的核心组件。Harness 元素始终存在，并随模型能力和算法创新不断进化。
+Harness 在此语境下指围绕模型的所有高价值元素——包括 [prompt 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)、RAG（检索增强生成）、tools（工具调用）、memory（记忆）等——联动形成的有机系统。王云鹤强调，Harness 不会消亡：RAG 不是在消失而是在升级——当 RAG 加上 prompt、工具调用、知识后，它演变为 [skills](ch05/086-thin-harness-fat-skills-ai.html) 的核心组件。Harness 元素始终存在，并随模型能力和算法创新不断进化。
 
 ## 国内模型格局：七国八制与异构竞争
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 国内基础模型生态呈现高度异质性特征。不同厂商根据自身业务属性、训练数据和技术路线产生了显著特异化：
 
@@ -68,7 +19,7 @@ graph TB
 - **长序列处理**：长上下文窗口模型各有千秋
 - **价格分层**：从开源免费到商业 API 定价差异悬殊
 
-这种异构性格局意味着没有单一基座模型能垄断所有场景。值得注意的是，Benchmark 测试分数与具体任务表现之间的关联度可能很低——典型案例是 GPT 因过度安全校准而在量化交易任务中失利，而 [DeepSeek](../ch01/1151-deepseek-v4.html) 和通义千问反而表现优异。
+这种异构性格局意味着没有单一基座模型能垄断所有场景。值得注意的是，Benchmark 测试分数与具体任务表现之间的关联度可能很低——典型案例是 GPT 因过度安全校准而在量化交易任务中失利，而 [DeepSeek](../ch01/710-deepseek-v4.html) 和通义千问反而表现优异。
 
 Claude Code 的内部实现印证了多模型路线的有效性：通过调用 opus、sonnet、haiku 等多款模型实现综合最优效果。
 
@@ -202,7 +153,7 @@ Model Parameters 与 Harness Parameters 的联合优化代表着一个明确的�
 - [r7] Trivedi, Prashant, et al. "Align-Pro." AAAI 2025.
 
 ## 相关实体
-- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活 V2](ch05/111-ai-coding.html)
+- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活 V2](ch05/112-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wangyunhe-harness-optimization-agentsoul.md)
 

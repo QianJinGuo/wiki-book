@@ -2,23 +2,7 @@
 
 ## Ch09.042 Anthropic Coding Agent 社会科学家采用调查
 
-> 📊 Level ⭐⭐ | 13.1KB | `entities/anthropic-coding-agents-social-science-survey-2026.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic Coding Agent 社会科学家采用调查"))
-    背景与方法
-    采用率分布
-    性别鸿沟 p005显著
-    用途与产出悖论
-    社会性隐忧
-    学科差异深层分析
-    性别鸿沟机制 p005显著
-    产出悖论详解
-```
+> 📊 Level ⭐⭐ | 13.2KB | `entities/anthropic-coding-agents-social-science-survey-2026.md`
 
 ## 背景与方法
 
@@ -30,41 +14,6 @@ mindmap
 > 调查设计刻意区分了两个环节：是否接触过AI工具 vs. 是否在日常工作中真正用上 coding agent。差距发生在转化环节，而非接触机会本身。
 
 ## 核心发现
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Anthropic 2026年2-3月调查覆盖 **1260位量化社会科学家**，发现 **81%** 试过 AI 聊天工具，但只有 **20%** 在日常工作中真正用上 coding agent——试用到日常使用的转化率仅 25%，四倍鸿沟意味着 adoption gap 是真实的核心问题，而非技术成熟度。
 
@@ -224,10 +173,10 @@ Top 25 大学 +40%、博士生 >25%、终身教授 ~10%——这些数字背后�
 4. **关注机构不平等的社会责任**：如果工具设计不关注公平性，AI 加剧不平等的社会效应会在学术领域快速显现。开发者在设计功能时应考虑：我的工具是缩小还是扩大了使用者之间的差距？
 
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/989-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/989-anthropic.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/397-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/397-agent-skills.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1004-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1004-anthropic.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/401-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/401-agent-skills.html)
 - [Anthropic 14 Skill Patterns Best Practices](../ch01/315-anthropic-14-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

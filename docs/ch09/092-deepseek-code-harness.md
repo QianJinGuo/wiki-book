@@ -4,57 +4,10 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/deepseek-code-harness.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek Code Harness"))
-    背景 Claude Code 定义上限 但中国开发者被排除在外
-    DeepSeek 招聘详情
-    核心公式 Model Harness Agent
-    关键数据 Harness 的决定性作用
-    Anthropic 模型Harness 共同演化编年史
-    长时运行能力 区分会写代码和能完成任务
-    DeepSeek 的机会与挑战
-    Harness 正在成为新市场
-```
-
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
 
 ## 背景：Claude Code 定义上限，但中国开发者被排除在外
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 Anthropic 官方明确禁止中国大陆访问 Claude。2025年9月更出台政策：任何由中国资本控制超过50%的公司，不管注册地在哪，都不准用。CEO 达里奥·阿莫迪本人也公开主张对中国实施技术制裁。
 Claude Code 的市场表现：
 

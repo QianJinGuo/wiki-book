@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/fed-cash-use.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Fed Data Shows Cash Use Holding"))
-    现金使用量的结构性下降
-    人口结构差异显著
-    现金的应急储备功能
-    现金的真正成本被严重低估
-    对银行的启示
-    对支付行业的启示
-    对监管机构的启示
-```
-
 ## 核心要点
 - 美联储"消费者支付选择日记"(Diary of Consumer Payment Choice) 2025 年度调查
 - 现金支付虽持续下降，但速度极慢，76% 消费者仍携带现金，90% 计划继续使用
@@ -26,35 +11,6 @@ mindmap
 - 内容来源：American Banker，Shaun O'Brien（美联储经济学家）观点
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 ### 1. 现金使用量的结构性下降
 2025 年消费者平均每月进行 47 笔支付，其中信用卡 16 笔、借记卡 15 笔、现金仅 6 笔 。相比 2016 年的每月 14 笔现金支付，十年间下降约 57%，但并未归零。这说明数字支付替代是渐进式，而非颠覆式。美联储经济学家 Shaun O'Brien 指出："习惯改变缓慢，但从长远看，人们确实在向更数字化的支付形式迁移——只是这些转变需要很长时间才能实现。"
 
@@ -93,9 +49,9 @@ Crone Consulting 数据显示，现金的年度成本达 $124/人（ATM 费用�
 1. **GDP 1-2% 的现金成本**说明完全无现金化将带来巨大效率收益，但短期社会成本（金融排斥）不可忽视
 2. **低收入群体现金依赖**要求监管机构在推动数字支付转型时必须设计配套的普惠金融保护机制
 ## 相关实体
-- [Plaid Effects](../ch05/094-ai.html)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/094-ai.html)
-- [Tether Developer Grants Local Ai](../ch05/094-ai.html)
+- [Plaid Effects](../ch05/095-ai.html)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/095-ai.html)
+- [Tether Developer Grants Local Ai](../ch05/095-ai.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce](ch03/090-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/295-amazon-bedrock.html)
 

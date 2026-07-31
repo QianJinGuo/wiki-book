@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 10.9KB | `entities/self-evolving-agents-survey.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Self-Evolving Agents 系统性综述"))
-    核心贡献
-    技术框架
-    关键判断
-    论文信息
-    与 Wiki 现有页面的关系
-    三条进化路线的内在逻辑与局限性
-    为什么 Co-Evolution 是未来关键方向
-    Static vs Dynamic Experience
-```
-
 ## 核心贡献
 **统一 taxonomy**：将 Self-Evolving Agents 划分为三大范式——
 1. **Model-Centric Self-Evolution**：推理时（Inference-Based）或训练时（Training-Based）自进化
@@ -31,43 +15,6 @@ mindmap
 - **Active exploration**：通过内部推理或外部环境交互主动探索和改进
 
 ## 技术框架
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 | 范式 | 进化来源 | 代表方向 |
 |------|---------|---------|
 | Model-Centric | 模型内部（推理/训练） | Parallel Sampling, Self-Correction, Synthesis-Driven, Exploration-Driven |
@@ -84,9 +31,9 @@ graph LR
 
 ## 与 Wiki 现有页面的关系
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes 的自进化机制，侧重 Skill 生成 + RL 训练双路径
-- [Memento Skills Agent Self Evolving](ch04/417-memento-skills-agent.html) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
+- [Memento Skills Agent Self Evolving](ch04/421-memento-skills-agent.html) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
 - [Agent Self Improvement Six Mechanisms](../ch03/035-agent.html) — Agent 自我改进六条路，与本文 taxonomy 有重叠但视角不同
-- [Agent Memory Modular Framework](ch04/121-agent-memory.html) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
+- [Agent Memory Modular Framework](ch04/098-agent-memory.html) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-evolving-agents-survey-papersagent.md)
 
 ## 深度分析
@@ -133,11 +80,11 @@ Model-Environment Co-Evolution 的两个方向：
 - [基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客](../ch03/035-agent.html)
 - [GBrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/677-llm-wiki-obsidian-wiki-gbrain.html)
 - [17种Agent架构演进：控制流设计的完整演化史](ch04/699-17-agent.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
 ---
 

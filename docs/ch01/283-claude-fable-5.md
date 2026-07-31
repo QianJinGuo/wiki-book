@@ -4,57 +4,11 @@
 
 > 📊 Level ⭐⭐ | 14.2KB | `entities/aliyun-cloud-native-safety-guardrails-three-domains.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("安全护栏的三域演进 阿里云云原生从 Claude Fable 5"))
-    触发场景 Fable 5 把护栏从后端黑盒推到前端产品体验
-    三域演进 护栏约束对象的三次跃迁
-      域 1 云平台护栏 约束资源 确定性
-      域 2 AI 网关护栏 约束模型输出 概率性
-      域 3 Anthropic 护栏 约束模型间路由 决策性
-    五大共性设计原则 跨域抽象
-    与现有 Fable 5 实体的差异化
-```
-
 ## 概述
 
 阿里云云原生（王晨/望宸）以 Claude Fable 5 的运行时护栏行为为切口，**将"安全护栏"从单一模型特性抽象为可迁移的系统级设计模式**——三域演进（云资源约束 → AI 模型输出约束 → 模型间路由约束）+ 五大共性设计原则（声明式 / 旁路执行 / 梯度响应 / 可观测 / 分层继承）。文章核心命题：**护栏的约束对象在变化（资源 → 内容 → 路由），但设计思路一脉相承**。这是把"Fable 5 的具体特性"升维为"AI 系统护栏通用架构"的关键转换。
 
 ## 触发场景：Fable 5 把护栏从"后端黑盒"推到"前端产品体验"
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 X 用户 @amarjeet 测试 Claude Fable 5 时发现：当某些请求触发安全边界，系统**主动告知用户**——"我被护栏拦下了，换了一个备用模型给你回答"。
 
@@ -133,7 +87,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 **弹性机制 — Trusted Access Program**：经过审核的安全研究者可申请完整 Mythos 级能力访问。**护栏松紧度不是固定的，而是根据使用者的信任等级动态调整**——与阿里云 AI 网关"按消费者匹配"策略同设计思路。
 
-> 与 [Fable 5 AWS 中文译本](ch01/604-anthropic-claude.html) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
+> 与 [Fable 5 AWS 中文译本](ch01/1354-anthropic-claude.html) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
 
 ## 五大共性设计原则（跨域抽象）
 
@@ -173,19 +127,19 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 ## 相关实体
 
 - **同 Fable 5 主题**（互补不重叠）：
-  - [Fable 5 AWS 中文译本](ch01/604-anthropic-claude.html)（产品视角）
-  - [Claude Fable 5 Safety Fables (Lambert)](ch01/914-claude-fable-5-and-new-ai-safety-fables.html)（政策视角）
+  - [Fable 5 AWS 中文译本](ch01/1354-anthropic-claude.html)（产品视角）
+  - [Claude Fable 5 Safety Fables (Lambert)](ch01/927-claude-fable-5-and-new-ai-safety-fables.html)（政策视角）
   - [Fable 5 Mollick hands-on](ch01/173-claude-fable-5.html)（用户体验视角）
 - **同护栏 / 安全主题**：
   - [AI Gateway vs MCP Gateway 安全分析](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
   - [NVIDIA Nemotron 3 Agents RAG Voice Safety](../ch03/035-agent.html)
   - [Amazon Bedrock Agentic Payments Guardrails](../ch11/295-amazon-bedrock.html)
-  - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/646-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
-  - [Nemotron 3.5 Content Safety](ch01/479-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
-  - [阿里集团 AI 代码评审安全带](../ch05/094-ai.html)
+  - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/647-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
+  - [Nemotron 3.5 Content Safety](ch01/478-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+  - [阿里集团 AI 代码评审安全带](../ch05/095-ai.html)
 - **同阿里云生态**：
-  - [Aliyun AgentRun](../ch04/003-agentrun.html)
-  - [阿里云 CMS CLI 可观测](../ch04/271-skill.html)
+  - [Aliyun AgentRun](../ch04/444-agentrun.html)
+  - [阿里云 CMS CLI 可观测](../ch04/273-skill.html)
   - [阿里云 哈勃业务 Agent 评估](../ch05/009-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

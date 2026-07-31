@@ -6,50 +6,7 @@
 
 # Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Netflix 分层通知系统 Thinking Fast Slow"))
-    旧系统的根本局限
-    Slow-Fast 分层架构
-    Pacing 策略
-    与 Kahneman 理论的对应关系
-    频率与质量解耦的工程价值
-    稀疏负反馈的处理策略
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 Netflix 将 Daniel Kahneman 的"快慢思维"理论应用于通知系统设计，构建了 **Slow Policy + Fast Policy** 的分层强化学习架构。该系统每天处理数亿条个性化通知（push、email、in-app），解决了短期 engagement 优化与长期用户健康之间的根本矛盾。Slow 层做周级频率规划，Fast 层做实时消息选择，通过 feature store 异步通信。这一架构实现了 Netflix 有史以来最大的生产指标提升之一，尤其在低频观看用户群体中效果显著。
 

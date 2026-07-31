@@ -66,21 +66,6 @@
 * * *
 
 ###
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("使用Claude Code session管理与1M上下文"))
-    上下文窗口作为稀缺资源
-    分叉点框架 每个回复都是决策点
-    回退优于修正 一种认知模式的转变
-    压缩的有损性与信任问题
-    即刻可用的操作建议
-    子智能体的触发条件
-    与现有工程实践的整合
-```
-
 ## 深度分析
 ### 上下文窗口作为稀缺资源
 Claude Code 的 1M token 上下文窗口在表面上是一个"充裕"的上限，但文章揭示了一个反直觉的现实：上下文越多，模型性能反而越差。  这种现象被称为"上下文腐化"（Context Rot），其根本机制是注意力分散——当模型需要处理的信息量超过其最佳处理阈值时，有价值的信号被噪声淹没。
@@ -106,41 +91,6 @@ Claude Code 的 1M token 上下文窗口在表面上是一个"充裕"的上限�
 综合全文，Thariq 的建议指向一个共同主题：**上下文管理需要系统化、工程化的方法**，而不是依赖直觉或事后补救。这与 `Context Window Management` 中描述的"上下文工程"（Context Engineering）范式高度一致——将上下文视为需要主动管理的资源，而非被动累积的副作用。  1M 上下文的到来并没有消除管理的重要性，反而因为更大的绝对空间而更需要主动维护。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 即刻可用的操作建议
 1. **在每个回复后强制评估决策点**。当你准备发送下一条消息时，暂停并明确回答：我应该继续、回退、清除、压缩还是派生子智能体？这个习惯比任何工具层面的优化都更重要。
 2. **优先使用回退而非修正**。当 Claude 的方法行不通时，用 `/rewind` 回退到正确的节点重新开始，而不是追加"不要用 A 方法，用 B"这样的修正指令。
@@ -159,11 +109,11 @@ graph TB
 对于已经在使用  或  描述的系统进行上下文管理的团队，这篇文章提供了一个补充视角：它更侧重于**会话级别的即时决策**，而非整体架构层面的设计。在实际工程中，两者需要结合使用——在架构层面确保上下文质量，在会话层面确保决策及时。
 对于使用 Claude Code 进行日常开发的个人开发者，这篇文章的操作建议可以在下一次开发会话中立即实践，而不需要任何工具或流程的改变。
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment](../ch03/078-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment](../ch03/077-claude-code.html)
 - [Claude Code Agent View](ch09/003-claude-code-agent-view.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用claude-codesession管理与1m上下文.md)
 

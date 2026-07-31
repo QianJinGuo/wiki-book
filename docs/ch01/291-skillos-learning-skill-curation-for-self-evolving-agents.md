@@ -7,7 +7,6 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillos-learning-skill-curation-for-self-evolving-agents.md)
 来自 newsletter 文章 [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillos-learning-skill-curation-for-self-evolving-agents.md) 提取。
 
-
 ## 核心内容
 SkillOS 来自 Google Cloud AI Research 与 UIUC 的联合研究，提出了一个**经验驱动的强化学习训练方案**，用于让 self-evolving agents 学习技能策展（skill curation）能力。核心设计：将 agent executor（负责执行）冻结，仅训练 skill curator（负责更新 SkillRepo），形成 executor 与 curator 的模块化分离。训练时，将相关任务打包成组，早期任务更新 SkillRepo，后期任务评估更新质量，用 GRPO 算法优化 curator。实验覆盖 ALFWorld、WebShop 和数学推理任务，RL 训练的 8B curator 超越直接使用 Gemini-2.5-Pro 作为 curator 的版本
 
@@ -27,39 +26,6 @@ SkillOS 来自 Google Cloud AI Research 与 UIUC 的联合研究，提出了一�
 - ## Trajectory
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 **1. Executor 与 Curator 模块解耦是核心工程决策，直接影响系统可演进性**
 SkillOS 将 agent executor π_L 始终保持冻结状态，仅训练 skill curator π_S 这一设计具有深刻的工程含义。冻结 executor 意味着 curator 的所有学习信号必须通过写入 SkillRepo 来间接影响 executor 行为，这种约束强迫 curator 学会"以 executor 为中心的策展"——写出的 skill 必须是 executor 能理解并复用的，而非自己觉得有用的。这种模块化还带来了一个关键优势：**executor 可以独立演进**。当有新更强的基础模型可用时，只需更换冻结的 executor，训练好的 curator 及其 SkillRepo 可以直接迁移复用，无需重新训练 curator。实验验证了这一点：Qwen3-8B 作为 curator 配合 Gemini-2.5-Pro 作为 executor 仍然取得了优异成绩，说明 curator 学到的是可迁移的策展策略而非针对特定 executor 的 hack
 **2. 任务分组（Grouping）机制将延迟反馈转化为可学习的监督信号**
@@ -87,23 +53,23 @@ r = r_task + λ_f·r_fc + λ_u·r_cnt + λ_c·r_comp 这四个奖励项各有其
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/219-self-evolving-agents.html)
 - [基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客](../ch03/035-agent.html)
 - [Self-Evolving Agents 系统性综述](../ch04/219-self-evolving-agents.html)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](../ch04/417-memento-skills-agent.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](../ch04/421-memento-skills-agent.html)
 - [Hermes Agent 自进化机制源码解析](../ch03/096-hermes-agent.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1274-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/637-llm.html)
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/035-agent.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/096-hermes-agent.html)
-- [AI Skill 测评指标体系](ch01/452-ai-skill.html)
+- [AI Skill 测评指标体系](ch01/453-ai-skill.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/009-harness.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/003-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/444-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/120-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/235-openclaw.html)
-- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/237-openclaw.html)
+- [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
 - [self-evolving agents 系统性综述（厦门大学等多机构联合）](../ch04/219-self-evolving-agents.html)
 - [万级实时推理的商品领域agent实践思考和总结](../ch03/035-agent.html)
-- [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](../ch04/271-skill.html)
+- [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](../ch04/273-skill.html)
 
 ---
 

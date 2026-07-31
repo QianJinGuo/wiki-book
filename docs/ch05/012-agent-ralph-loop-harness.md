@@ -2,63 +2,7 @@
 
 ## Ch05.012 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 > 📊 Level ⭐⭐ | 23.4KB | `entities/long-running-agent-ralph-loop-handover-harness-ruofei.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("长周期 Agent 详解 从 Ralph Loop 到可接管"))
-    张卡治理框架 若飞 2026-06 续篇
-      张卡清单
-      Level 1 准入流程 先反着看四层 setup
-      记忆预算观
-    总结 若飞 long-running-agent 系列两篇视角融合
-    背景与问题定义
-    三类漂移 长周期 Agent 的核心陷阱
-    Ralph Loop 的结构性问题
-      Jarrod Watts 的模糊性复利
-    长周期 Agent 的证据链 三层工程抓手
-    Subagent 架构与多 Agent 质量治理
-    可接管的标准 从能继续到能被接管
-```
 
 ## 5 张卡治理框架（若飞 2026-06 续篇）
 

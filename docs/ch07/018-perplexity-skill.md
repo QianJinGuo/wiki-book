@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/perplexity-internal-skill-design-guide.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Perplexity 内部 Skill 设计指南 四维体系与维护方法论"))
-    核心框架 Skill 的四个维度
-      Skill 是目录 hub-and-spoke
-      Skill 是格式
-      Skill 是可调用的
-    什么时候需要 Skill
-      需要 Skill
-      不需要 Skill
-    每个 Skill 都是一份「税」
-    如何构建 Skill 五步法
-      Step 0 先写评测 Evals
-      Step 1 写好描述 Description
-      Step 2 编写正文 Body
-    如何维护 Skill Gotchas 飞轮
-    评测套件 Eval Suites
-```
-
 ## 核心框架：Skill 的四个维度
 ### 1. Skill 是目录（hub-and-spoke）
 Skill 不仅仅是一个 SKILL.md 文件，而是包含多个文件的目录结构：
@@ -66,39 +44,6 @@ Computer 中的加载过程：
 **进入索引层的门槛极高**——每一个 token 都至关重要，描述必须极其稠密精炼。
 
 ## 什么时候需要 Skill？
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### ✅ 需要 Skill
 - **纠正错误或不一致**：Agent 在没有特殊语境的情况下会出错，或需要极高一致性
 - **特定知识或流程**：知识耐用但不在模型训练数据中（如企业工作流）
@@ -193,21 +138,21 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - `Agent Skill Writing Evaluation` — Skill 评测相关
 
 ## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/273-lbs-intentbench.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/419-aws-sagemaker-ai-agent.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/271-skill.html)
-- [SkillX — 层次化技能知识库](ch07/056-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/257-anthropic-agent.html)
-- [AI Skill 测评指标体系](../ch01/452-ai-skill.html)
-- [SkillClaw](../ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/276-lbs-intentbench.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/423-aws-sagemaker-ai-agent.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/273-skill.html)
+- [SkillX — 层次化技能知识库](ch07/057-skillx.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/260-anthropic-agent.html)
+- [AI Skill 测评指标体系](../ch01/453-ai-skill.html)
+- [SkillClaw](../ch04/479-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
-- [Skills赏析：使用skills-refiner提升skill质量](../ch03/072-skills.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
+- [Skills赏析：使用skills-refiner提升skill质量](../ch03/071-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/401-agent-skills.html)
 
 - [Hermes Agent](../ch03/096-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/034-qoder-skills.html)
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/035-agent.html)
-- [你写的 Skill，及格了吗？](../ch04/271-skill.html)
+- [你写的 Skill，及格了吗？](../ch04/273-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)

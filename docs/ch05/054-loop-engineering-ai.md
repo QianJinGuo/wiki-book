@@ -6,57 +6,11 @@
 
 # Loop Engineering 会是 AI 的下个关键词吗？
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Loop Engineering 会是 AI 的下个关键词吗"))
-    从 Harness 到 Loop 工程范式转移的内在逻辑
-    Loop Engineering 的「非共识」 技术本质 vs 概念包装
-    Token 经济学的核心矛盾
-    可观测性的丧失与恢复
-    延伸 Graph Engineering Loop 之后的任务拓扑显式化
-      四类边
-      窄图落地路径
-```
-
 ## 摘要
 
 2026 年上半年，Harness Engineering 完成行业普及后，业界开始将目光转向更为激进的工程范式——**Loop Engineering**。与 Harness 强调的 Agent 系统构建不同，Loop Engineering 关注的是通过持续反馈闭环实现 Agent 自主迭代运行的能力。Anthropic Claude Code 负责人 Boris Cherny、NVIDIA CEO 黄仁勋、DeepLearning.AI 创始人吴恩达等核心人物在 2026 年 6 月密集发声，推动该概念快速破圈。然而，业界对其是否构成实质性技术进步仍存在激烈争议。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 - **Loop Engineering 定义**：以「任务执行—结果评估—状态更新—再次执行」闭环驱动 Agent 持续自治运行的工程范式
 - **行业背书**：Boris Cherny、Peter Steinberger、黄仁勋、吴恩达等核心人物在 2026 年 6 月集中发声
@@ -150,8 +104,8 @@ Loop Engineering 将系统运行从「单次交互」变成了「持续运行」
 ## 相关实体
 
 - [Harness Engineering 行业调研](ch05/120-harness-engineering.html)
-- [Claude Code 系统工程指南](../ch03/078-claude-code.html)
-- [Claude Loop 实践](../ch03/078-claude-code.html)
+- [Claude Code 系统工程指南](../ch03/077-claude-code.html)
+- [Claude Loop 实践](../ch03/077-claude-code.html)
 - [Agent Harness 上下文管理](ch05/058-agent-harness.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

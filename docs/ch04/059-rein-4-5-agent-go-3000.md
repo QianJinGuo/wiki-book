@@ -9,62 +9,12 @@
 
 **Rein** 是一个 Go agent 框架，用 **4 个模块 + 5 条类型边界 + 7 个不变量** 解决"agent.go 200 行 → 3000 行"的问题。核心思路：**模块之间的数据契约定义清楚 = 防止上帝文件**。每条数据流都对应一个**严格类型 + 单一职责 + 不可见字段**。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Rein 4 模块 5 类型边界防止 agentgo 膨胀到"))
-    模块分工
-    条类型边界 数据契约
-    个不变量 核心循环的宪法
-    三大核心设计模式
-      ToolSpec vs Tool 安全边界 不是封装好习惯
-      Provider 流式 同步 等价性约束
-      投影式压缩 Context 不改写历史
-    个 Option 的安全默认
-    Observation Envelope 一切失败回传模型
-    M1 最小工具集
-    Metadata 的三个默认值 纵深防御
-```
-
 ## 相关实体
 - [Youre Building Agent Security In The Wrong Order](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 
 ## 一句话定位
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **"agent loop 本身只关心流程——什么时候调 provider、什么时候 dispatch 工具、什么时候 commit session——每个具体决策都委托给注入的接口。"**——编排与实现分离
 
@@ -280,7 +230,7 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 与现有 wiki 实体的关系
 
-### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](../ch03/078-claude-code.html)）
+### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](../ch03/077-claude-code.html)）
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
@@ -342,14 +292,14 @@ WithWorkingDir(cwd)            // 工作目录
 - **评估框架时关注流式等价性保证**：如果一个 provider 声称支持流式但无法保证 Stream() 和 Complete() 产出完全一致的 Message，这个 provider 就不满足 Rein 的 invariants。流式和非流式路径必须等价——这是 session 回放确定性的基础，也是你选型时最重要的技术指标之一 
 
 ## 相关对照
-- [Claude Code 20000 字符源码分析](../ch03/078-claude-code.html)
+- [Claude Code 20000 字符源码分析](../ch03/077-claude-code.html)
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html) —— 工作集视角
 - [wow-harness v3](../ch05/009-harness.html) —— 事件溯源 + 概念图
 - [PilotDeck](../ch03/035-agent.html) —— 白盒记忆
 - [Agent Harness 架构](../ch05/058-agent-harness.html) —— 7 层 harness 模型
 - [17 种 agent 架构演进](ch04/699-17-agent.html) —— 类型边界视角
 - [Agent 工程原则](../ch03/035-agent.html) —— 模块化设计实践
-- [短期记忆压缩](ch04/121-agent-memory.html) —— 投影压缩对比
+- [短期记忆压缩](ch04/098-agent-memory.html) —— 投影压缩对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 

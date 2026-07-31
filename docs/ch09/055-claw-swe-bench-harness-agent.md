@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claw-SWE-Bench"))
-    核心贡献
-    适配器设计
-    横扫实验关键发现
-      固定 harness OpenClaw 换模型
-      固定模型 换 harness
-    答案泄露修复
-    资源链接
-```
-
 ## 核心贡献
 
 Claw-SWE-Bench 是由基元律动（TokenRhythm，创始人王云鹤，原华为诺亚方舟实验室主任）联合无问芯穹、清华大学、北京大学、SEE 基金等机构发布的编程 Agent 评测基准，**首次让 harness 作为可独立测量的变量加以控制**。
@@ -31,37 +16,6 @@ Claw-SWE-Bench 是由基元律动（TokenRhythm，创始人王云鹤，原华为
 4. **Lite-80 轻量版** — 8 种语言各 10 个实例，成本为 full-350 的 22.9%，Pass@1 偏差仅 0.4 个百分点
 
 ## 适配器设计
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 OpenClaw 式通用 Agent 无法原生进入 SWE-bench 评分流程的原因有三：
 
@@ -166,12 +120,12 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 ## 相关实体
 
 - [Harness Engineering](../ch05/120-harness-engineering.html)
-- [Coding Harness 工程本质](../ch11/235-openclaw.html)
-- [复旦北大 AHE Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
-- [OpenClaw Agent Loop Design Patterns](../ch01/1036-openclaw-agent.html)
+- [Coding Harness 工程本质](../ch11/237-openclaw.html)
+- [复旦北大 AHE Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
+- [OpenClaw Agent Loop Design Patterns](../ch01/1049-openclaw-agent.html)
 - [Harness Engineering 7 Layers](../ch05/120-harness-engineering.html)
 - [Agent Eval 框架](../ch03/035-agent.html)
-- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](../ch05/111-ai-coding.html)
+- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](../ch05/112-ai-coding.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

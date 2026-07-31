@@ -4,69 +4,11 @@
 
 > 📊 Level ⭐⭐ | 13.1KB | `entities/epiplexity-finite-compute-information-theory.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Epiplexity 有限算力信息论"))
-    核心定义
-    理论背景
-    核心洞见
-      三个不安事实的解释
-      关键数据对比
-    核心机制
-      细胞自动机揭示的计算创造结构
-      算力约束迫使涌现
-      逆序学习的禅意
-    对 AI 训练的实践意义
-    对人类认知的映射
-    Shannon 1948 的隐含假设 有限算力观察者的缺失
-    细胞自动机实验的三重含义
-```
-
 ## 核心定义
 **Epiplexity**（认知复杂度）：损失曲线中，loss 下降部分所代表的结构性信息——模型通过训练真正学到的、可复用的、可迁移的知识。
 与"时间有界熵"（time-bounded entropy）相对：loss 不再下降后的残余 = 不可预测的随机噪声。
 
 ## 理论背景
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 Shannon 1948 年信息论隐含假设：**观察者有无限算力**。这个假设在通信领域完全无害，但对 LLM 时代的核心问题"给定数据能学到多少"而言，"谁在学"变得至关重要。
 2026年1月，CMU/NYU 六位研究者（Finzi, Qiu, Jiang, Izmailov, Wilson, Kolter）在 arXiv:2601.03220 中正式提出 epiplexity 框架，补上了这个 78 年的缺口。
 
@@ -153,7 +95,7 @@ Chinchilla 论文告诉我们：给定模型尺寸，应该用多少 token 训�
 - 当必须使用低 epiplexity 数据时，需要更大的数据量来弥补
 
 ## 相关链接
-- [Epiplexity Finite Compute Information Theory](ch01/809-shannon-epiplexity-finite-compute-information-theory.html)
+- [Epiplexity Finite Compute Information Theory](ch01/823-shannon-epiplexity-finite-compute-information-theory.html)
 
 ## 实践启示
 ### 对 LLM 训练团队
@@ -183,7 +125,7 @@ GitHub: https://github.com/shikaiqiu/epiplexity
 - LLM训练数据选择 — epiplexity 对数据选择的指导意义（实体不存在，待创建）
 
 ## 相关实体
-- [Shannon Epiplexity Finite Compute Information Theory](ch01/809-shannon-epiplexity-finite-compute-information-theory.html)
+- [Shannon Epiplexity Finite Compute Information Theory](ch01/823-shannon-epiplexity-finite-compute-information-theory.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shannon-epiplexity-finite-compute-information-theory.md)
 

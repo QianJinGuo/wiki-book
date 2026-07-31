@@ -4,89 +4,40 @@
 
 > 📊 Level ⭐⭐ | 17.4KB | `entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 官方技能最佳实践 14 个可复用的 Agent"))
-    模式分类的内在逻辑
-    两类技能的分工与边界
-    描述设计的核心矛盾
-    上下文经济的核心原则
-    层面一 技能发现与定位
-    层面二 内容架构与 token 经济
-    层面三 指令风格选择
-    层面四 流程防错机制
-```
-
 ## 相关实体
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/383-anthropic-google-agent-skills.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/719-skills-anthropic-openai-comparison-frontend-design.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/260-anthropic-agent.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/517-anthropic-google-agent-skills.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/735-skills-anthropic-openai-comparison-frontend-design.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
-- [Agent Skill 设计模式](ch04/397-agent-skills.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
+- [Agent Skill 设计模式](ch04/401-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Claude Opus 4.7 发布分析](../ch01/349-claude-opus-4-7.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Claude Opus 4.7 发布分析](../ch01/350-claude-opus-4-7.html)
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01/212-anthropic-claude-managed-agents.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/298-ai-agent.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/030-ai-agent.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/478-anthropic-ai.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/484-anthropic-ai.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Anthropic Computer Use 最佳实践](../ch01/937-anthropic-computer-use.html)
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/078-claude-code.html)
+- [Anthropic Computer Use 最佳实践](../ch01/950-anthropic-computer-use.html)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 Anthropic 官方的 14 个 Agent Skills 设计模式并非零散技巧，而是一套覆盖技能**生命周期全链路**的系统性框架。从「如何被选中」到「如何被执行」，再到「如何被约束」，构成了一个完整的设计维度体系。
 
 ### 1. 模式分类的内在逻辑

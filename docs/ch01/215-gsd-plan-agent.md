@@ -15,66 +15,11 @@
 > 摘要: GSD (Get Shit Done) Claude Code 增强工具，四层上下文结构(ROADMAP→Phase→Plan frontmatter→Summary provides/affects)+context-budget 4档退化+6步phase流程，零工平台15天/638 commits/7 phase落地
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("GSD 上下文管理工具 用 Plan 约束 Agent 行为边界"))
-    上下文失控 才逼我找到 GSD
-    GSD 是什么
-    四层结构 让 agent 只看它该看的那部分
-      第一层 ROADMAP 项目层
-      第二层 Phase 边界显式定义
-      第三层 Plan frontmatter 机器可执行合约
-    相关实体
-    相关实体
-      第四层 Summary provides affects
-    context-budget 4档退化机制
-    Subagent 委派 orchestrator 本身不读大文件
-    六步走完一个 phase
-```
-
 ## 上下文失控，才逼我找到 GSD
 在遇到 GSD 之前，作者试过 Superpowers 和 gstack 两个 Claude Code 插件。两个工具的思路是"将通用大模型强行赋予角色，按企业架构划分工作"——架构师/开发者/测试者。在单个功能点上很顺，但面对零工平台这种体量的项目，代码跑着跑着 agent 开始"忘事"——字段命名丢了、模块依赖没接上、上下文里没有足够的 plan 细节。
 核心问题：它们偏向"将工作按角色拆分"，而不是"将上下文按依赖拆分"。面对庞大代码库，总是会丢失很多计划细节。
 
 ## GSD 是什么
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 **GSD** (Get Shit Done) 是一个发布在 npm 上的 Claude Code 增强工具包，包名 `get-shit-done-cc`。
 安装：
 ```bash
@@ -264,12 +209,12 @@ GSD 的实践数据表明，"discuss-phase 是最值得投入的一步"。这个
 **判断标准**：当你发现自己在向 agent 解释项目背景时，需要反复提到"之前那个模块"、"那个状态机"、"那个接口"——这些跨上下文引用说明项目的依赖关系已经超出了人脑的直接管理范围，这时 GSD 的价值就显现了。如果项目还在 POC 阶段，依赖关系还不稳定，frontmatter 的结构化约束反而会限制探索的灵活性。
 
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/035-agent.html)
-- [Personal AI 工作台：Claude 18 动作框架](../ch05/094-ai.html)
+- [Personal AI 工作台：Claude 18 动作框架](../ch05/095-ai.html)
 
 ## Related
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
 
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 
 ---
 

@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 21.5KB | `entities/snowflake-agentic-enterprise-summit-2026.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Snowflake Agentic Enterprise"))
-    核心叙事转换
-    CoCo CoWork 双引擎闭环
-      CoCo Cortex Code 改名
-      CoWork Snowflake Intelligence 改名
-    Cortex Sense 24 83 开箱准确率
-    标杆案例
-      Samsung SIA shoppers insight
-      Thomson Reuters CoCounsel
-    AI 时代没有慢数据 Datastream
-    Agentic Search 不是 Top-K 是精确提取
-    治理升维 从管数据到管行为
-      五大治理能力
-      Snowflake 对 Agent 治理边界的重新定义
-    语义上下文 Horizon Context
-```
-
 ## 概述
 
 Snowflake 在 **Summit 2026** 通过 Platform Keynote 发布 CoCo / CoWork 双引擎、Cortex Sense、Agent Identity、Data Movement Policies、Datastream、Agentic Search 等一系列产品，**核心主张是从 "can we" 走向 "shall we"**——大模型已证明能不能做，但企业真正要决定的是敢不敢用。Snowflake 把 AI 的复杂性收进底层，把可信度带到业务前台。
@@ -33,37 +11,6 @@ Snowflake 在 **Summit 2026** 通过 Platform Keynote 发布 CoCo / CoWork 双�
 **Benoit Dageville 的核心判断**："**最好的 Agent 平台，必须建立在最好的数据平台之上。**" 当 Agent 开始行动，企业 AI 的可信度，最终仍要回到数据平台本身。 ^["[InfoQ 奇遇旧金山: Snowflake 迈向 Agentic Enterprise 的关键一跃](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/snowflake-agentic-enterprise-summit-2026-infoq.md)"]
 
 ## 核心叙事转换
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 | 阶段 | 关心 | 状态 |
 |------|------|------|
@@ -286,14 +233,14 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.html)（Agent Identity 同源思路 — 治理协议层）
 - [Agentscope Builder Enterprise Self Evolving Agent Harness](../ch05/058-agent-harness.html)（企业级 Agent Harness 同主题）
-- [Asana Agentic Work Management Platform Lettertwo](ch04/237-agentic.html)（Asana — 另一个企业级 Agent 平台视角）
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)（AWS Bedrock AgentCore — 对比平台）
+- [Asana Agentic Work Management Platform Lettertwo](ch04/648-agentic.html)（Asana — 另一个企业级 Agent 平台视角）
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/566-amazon-bedrock-agentcore.html)（AWS Bedrock AgentCore — 对比平台）
 - [Anthropic 官方 Agent Harness 平台Claude Managed Agents 完整指南](ch04/710-claude-managed-agents.html)（Anthropic Managed Agents — 另一家厂商视角）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)（Spec-as-AIOS — 治理即架构同思路）
-- [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/1127-ai-sre.html)（数字员工治理 — 行业对照）
+- [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/1124-ai-sre.html)（数字员工治理 — 行业对照）
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/295-amazon-bedrock.html)（AgentOps — 智能体可观测性对照）
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)（企业 Agent 安全风险同主题）
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/222-amazon-quick.html)（Amazon Quick — 另一家企业数据分析平台）
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)（企业 Agent 安全风险同主题）
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/224-amazon-quick.html)（Amazon Quick — 另一家企业数据分析平台）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/snowflake-agentic-enterprise-summit-2026-infoq.md)
 

@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 8.0KB | `entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Turn repeated instructions into"))
-    Skills 的本质价值 消除重复摩擦
-    Description 设计是技能系统的关键工程点
-    Skills 的可组合性与聚焦优于大而全
-    渐进式细节加载架构
-    典型 Skill 示例解析
-      design-system
-      fresh-eyes-review
-      landing-page-copy
-```
-
 ## 核心要点
 - **AI agent 的记忆缺失问题**：当前 AI agents 都是通才（generalists），每次打开 Lovable 都不记得用户的工作方式、 conventions 和风格，需要反复解释相同内容
 - **Skills 是可复用的指令集**：Skills 解决"重复解释"问题——写一次，AI 在相关任务时自动调用，用户停止重复自己
@@ -29,39 +13,6 @@ mindmap
 - **Skills 只是指令，不是脚本**：Skill 不执行操作、不扫描网站、不运行检查——只是 Lovable 读取并遵循的指南
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 1. Skills 的本质价值：消除重复摩擦
 文章指出了 AI agents 当前的核心矛盾：通用性与个性化的张力。当前 agent 没有记忆，每次对话都是全新的上下文。用户被迫反复解释自己的 conventions、风格偏好和已有工作方式。这种"小摩擦累积"是 agent 采用率提升的主要障碍之一。
 Skills 的解决方案本质上是将"隐性知识显性化"——把用户头脑中对"这件事应该怎么做"的认知提取成文档，让 AI 可读取。这与传统的 prompt library 不同，Skills 是任务触发的可组合单元，而非静态的指令集合。
@@ -110,9 +61,9 @@ Skill 文件结构支持主文件和支撑文件的分离：主 SKILL.md 保持�
 
 - [Lovable Discoverability 介绍](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
 
-- [Claude Code Skills 超能力实战](../ch01/490-claude-code-skills-superpowers.html)
-- [Anthropic Agent Skills 设计模式14条](../ch04/257-anthropic-agent.html)
-- [Matt Pocock Skills Grill](../ch04/659-mattpocock-skills.html)
+- [Claude Code Skills 超能力实战](../ch01/492-claude-code-skills-superpowers.html)
+- [Anthropic Agent Skills 设计模式14条](../ch04/260-anthropic-agent.html)
+- [Matt Pocock Skills Grill](../ch04/667-mattpocock-skills.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md)
 
 ---

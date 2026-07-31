@@ -9,47 +9,16 @@
 **Pi Agent（badlogic/pi-mono）** 的设计哲学：**核心代码保持极简，把所有"可定制性"的维度全部交给扩展系统。**
 > 不是简单的"我们支持插件"的声明。扩展系统不是事后打补丁式的钩子集合，而是从架构第一天起就作为一等公民存在的能力注入层。
 
-
 ## 相关实体
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/009-harness.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/009-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/009-harness.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-agent-framework-event-bus-design.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
 
 Pi Agent 的核心设计哲学体现了一种彻底的极简主义：仅用三个抽象（Agent、Tools、Extensions）就撑起了整个框架，而把所有的复杂性都推到了扩展层。Agent 负责与大模型对话推理，Tools 定义 Agent 可调用的能力，Extensions 则是对外开放的扩展系统——没有工作流编排器、没有状态机图引擎、没有记忆检索层。这种"极度克制的核心"策略使得框架本身的学习曲线极低，同时将复杂性封装在可插拔的扩展中，让用户按需引入。
 

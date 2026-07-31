@@ -6,29 +6,6 @@
 
 # Claude Code SKILL.md 写作指南
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code SKILLmd 写作指南"))
-    核心概念
-    文件结构
-    Frontmatter 元数据
-      name 规范
-      description 写法
-    正文写法
-      三层模型 渐进式披露
-      上下文管理原则
-    提取 PDF 文本
-    自由度把控
-    工作流与反馈循环
-      RED - Write Failing Test
-      Verify RED - Watch It Fail
-      GREEN - Minimal Code
-    常见坑
-```
-
 ## 核心概念
 
 Skill 是一份可被 Agent 发现、按需加载的任务说明。把"老员工脑子里的规矩"写进 SKILL.md，再交给 Agent 在合适的任务里调用。
@@ -36,39 +13,6 @@ Skill 是一份可被 Agent 发现、按需加载的任务说明。把"老员工
 **不是**把长 Prompt 换个地方保存，也不是给 Agent 看的 README。SKILL.md 写得越长，不代表效果越好。
 
 ## 文件结构
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ```
 skill-name/
@@ -256,12 +200,12 @@ Skill 写完后，不要直接投入生产使用。验证方式：
 - [sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills)
 - [Anthropic 官方 Skills 仓库](https://github.com/anthropics/skills)
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)
-- [Claude Design Skill Web Design Engineer](../ch01/1150-claude-design-skill.html)
-- [Claude Design Skill](../ch01/1150-claude-design-skill.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/857-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Claude Design Skill Web Design Engineer](../ch01/1143-claude-design-skill.html)
+- [Claude Design Skill](../ch01/1143-claude-design-skill.html)
 - [Claude Code Prompt Source Analysis](../ch09/061-claude-code-prompt.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [using claude](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [using claude](../ch03/077-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

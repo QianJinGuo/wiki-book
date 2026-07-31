@@ -6,58 +6,11 @@
 
 # Why Ctrl+V won't paste images in Claude Code on WSL, with a fix
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Why CtrlV wont paste images in"))
-    三层故障链的工程启示
-    静默覆写的调试技巧
-    三组件架构的设计模式
-    上游修复的工程权衡
-```
-
 ## 摘要
 
 本文深入分析了一个典型的现代软件工程问题——在 WSL（Windows Subsystem for Linux）中使用 Claude Code 时，从 Windows 复制图片按 Ctrl+V 无法粘贴。作者追踪到三层独立的故障链：WSLg 的剪贴板同步只使用过时的 BMP 格式（Claude Code 无法读取）、WSLg 会静默覆盖手动修正、以及 Windows Terminal 拦截了 Ctrl+V 快捷键。文章提供了一个完整的工程解决方案：一个 Windows 端监听程序（clip-listener.exe）将图片编码为 PNG、一个 Linux 端脚本（wsl-clip-bridge）处理推送到 Linux 剪贴板并在被覆盖后重新断言、以及一个 Alt+V 替代快捷键绑定。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **三层故障链**：WSL 只转发 BMP 格式 → Claude Code 的 sharp WASM 构建不支持 BMP → Windows Terminal 拦截 Ctrl+V。每一层单独作用无害，叠加后导致粘贴完全失效。
 - **WSLg 的剪贴板限制**：WSLg 仅定义了 5 种 Windows→Linux 格式映射，其中唯一的图片映射是 `CF_DIB → image/bmp`。自 2022 年起就有上游 issue（microsoft/wslg#833）未解决。
@@ -120,9 +73,9 @@ clip-listener.exe + wsl-clip-bridge + Alt+V 的组合体现了一个重要的工
 
 ## 相关实体
 
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/094-ai.html) — 同一技术文章系列的领域工程讨论
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/095-ai.html) — 同一技术文章系列的领域工程讨论
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同为 TLDR AI Newsletter 推荐的技术深度分析
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/913-20.html) — 系统内部机制调试方法
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/926-20.html) — 系统内部机制调试方法
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/020-build-agents-not-pipelines.html) — 软件工程实践讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 跨平台工程问题分析
 

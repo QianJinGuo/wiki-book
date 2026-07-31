@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐ | 11.1KB | `entities/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The 2026 SaaSOps checklist"))
-    九项检查清单详解
-      构建或强化SaaSOps基础
-      掌握SaaS用户生命周期管理 ULM
-      全可视化 用户 文件 活动跨应用
-    SaaSOps从工具实践升格为组织能力
-    AI扩张攻击面是2026新增重点
-    Zero Trust与FinOps的融合
-    立即可执行的三条规则
-    建设路径建议
-    工具选型建议
-    关键问答
-```
-
 ## 核心要点
 
 - **2026年SaaSOps已进入平台优先、AI增强、零信任融合的新阶段**，70% IT领导者倾向统一SaaS管理平台（SMP）而非碎片化点解决方案
@@ -32,35 +13,6 @@ mindmap
 - **FinOps与安全策略深度整合**，90天规则（取消无活动app、回收未用license、续约提醒）成为成本优化基准线
 
 ## 九项检查清单详解
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 ### 1. 构建或强化SaaSOps基础
 
@@ -238,14 +190,14 @@ A: Shadow AI是Shadow IT的子集，专指未批准的AI工具使用。清单将
 A: 可以从ROI最高的项开始：用户生命周期管理自动化（#2）和SaaS可视化（#3）是最佳起点，成本节约和安全提升效果最明显。
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](../ch04/298-ai-agent.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/223-rag.html)
 - [The It And Security Field Guide To Ai Adoption Tines](../ch12/081-the-it-and-security-field-guide-to-ai-adoption-tines.html)
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](../ch01/262-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md)
-- [5 ways to curb ai sprawl without stifling innovation](../ch05/094-ai.html)
+- [5 ways to curb ai sprawl without stifling innovation](../ch05/095-ai.html)
 
 ---
 

@@ -2,25 +2,9 @@
 
 ## Ch01.292 Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
 
-> 📊 Level ⭐⭐ | 13.8KB | `entities/codex-major-update-appshots-goal-xinzhiyuan.md`
+> 📊 Level ⭐⭐ | 13.9KB | `entities/codex-major-update-appshots-goal-xinzhiyuan.md`
 
 # Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex 重磅升级 Appshots Goal 毕业 锁屏远程操控"))
-    Appshots 双击 Command 读懂所有屏
-    goal 模式正式毕业
-    Locked Use Mac 锁屏远程操控
-    应用内浏览器迭代
-    Appshots 解决的是上下文获取的物理边界
-    goal 毕业意味着 Agent 从反射模型升级为规划模型
-    Locked Use 是 Computer Use 的物理空间扩展
-    50 用户不写代码是 Codex 定位的根本转变
-```
 
 ## 相关实体
 
@@ -29,41 +13,6 @@ mindmap
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 OpenAI 在 2026 年 5 月对 **Codex** 进行了重大升级，标志着它从"代码助手"正式蜕变为**全天候 AI 队友平台**。五大能力同时上线：**Appshots**（双击 Command 截屏并读取屏幕外隐藏文本）、**/goal 毕业**（长周期自主编码）、**Locked Use**（Mac 锁屏状态下远程操控）、**应用内浏览器高级标注模式**、**插件共享与 Analytics 升级**。同日 ChatGPT 以插件形式杀入 PowerPoint，进一步扩张 OpenAI 在生产力领域的边界。
 
@@ -149,7 +98,7 @@ OpenAI 在 2026 年 5 月对 **Codex** 进行了重大升级，标志着它从"�
 - 产生大量难以审查的代码变更
 - 跨多个 commit 引入难以回滚的副作用
 
-参见 [天猫团队实战指南](../ch05/094-ai.html)中"AI 一直无法输出正确结果，在错误中不断循环"的"改不动"痛点——这在长周期任务中会被放大。
+参见 [天猫团队实战指南](../ch05/095-ai.html)中"AI 一直无法输出正确结果，在错误中不断循环"的"改不动"痛点——这在长周期任务中会被放大。
 
 ### 3. Locked Use 是 Computer Use 的物理空间扩展
 
@@ -177,7 +126,7 @@ OpenAI 的产品策略路径开始清晰：
 3. 用 Codex 的能力扩张到"所有需要操作电脑的知识工作"
 4. 用 ChatGPT for PowerPoint 这类插件回头反向渗透传统办公软件
 
-这与 [同期 a16z 对话 Roblox PM](../ch05/094-ai.html) "工具型 App 首当其冲被 Agent 入口替代" 的判断完全一致。
+这与 [同期 a16z 对话 Roblox PM](../ch05/095-ai.html) "工具型 App 首当其冲被 Agent 入口替代" 的判断完全一致。
 
 ### 5. 增长 hack：用 quota reset 强化用户增长
 
@@ -231,10 +180,10 @@ Appshots（屏幕感知） + /goal（长周期自主） + Locked Use（物理边
 ## 关联实体
 
 - [Nanobot Agent Framework Architecture Deep Dive](../ch03/035-agent.html) — subagent / 长周期任务的极简框架样本
-- [腾讯研究院Ai速递 20260506](../ch05/094-ai.html) — 同期 AI 行业全景，含"工具型 App 消亡"判断
-- [天猫新品营销技术团队Ai编码实战指南上](../ch05/094-ai.html) — AI 编码全流程工程化方法论
+- [腾讯研究院Ai速递 20260506](../ch05/095-ai.html) — 同期 AI 行业全景，含"工具型 App 消亡"判断
+- [天猫新品营销技术团队Ai编码实战指南上](../ch05/095-ai.html) — AI 编码全流程工程化方法论
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html) — 锯齿智能与 Codex 能力组合
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html) — 锯齿智能与 Codex 能力组合
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
 - [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) — Appshots 引发的 working set 管理新挑战
 

@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/cat-wu-anthropic-pm-interview.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cat Wu Anthropic Claude"))
-    速度来源 流程 使命 不只是 Mythos
-    Claude Code 源码泄露 流程漏洞
-    OpenClaw 不能用 Claude 订阅制不适配第三方
-    PM 核心职责 缩短创意到交付时间
-    流程作为竞争优势
-    角色融合的本质
-    自动化原则的深层含义
-    产品品味作为护城河
-```
-
 ## 核心洞察
 ### 速度来源 = 流程 + 使命，不只是 Mythos
 Anthropic 能保持极高发布速度的原因：
@@ -135,41 +119,6 @@ Cat 常用策略：问模型"你为什么这么做？"
 6. 接受发布有 Bug 的功能，快速获取反馈迭代
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 流程作为竞争优势
 Anthropic 的高发布速度并非源于 Mythos 模型的神秘力量，而是源于**流程精简**——移除一切发布障碍，让每个团队成员能在一天内把想法变成生产就绪的产品。这意味着他们建立了**信任架构**：相信员工会做正确的事，同时建立防护栏防止灾难。这种文化允许快速实验和快速失败。
 
@@ -216,11 +165,11 @@ Anthropic 的使命是"为全人类带来安全 AGI"。这个使命不仅是宣�
 2. **迭代直到 100%**：找到重复性工作 → 教给 AI → 迭代直到 100% 成功
 3. **接受快速失败**：Research Preview 格式降低发布压力，1-2 周就能出货
 ## 相关实体
-- [Cat Wu Claude Code Pm](../ch03/078-claude-code.html)
-- [Claude Code Large Codebase Enterprise Deployment](../ch03/078-claude-code.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/078-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
-- [Claude Code Openclaw Memory Comparison](../ch03/078-claude-code.html)
+- [Cat Wu Claude Code Pm](../ch03/077-claude-code.html)
+- [Claude Code Large Codebase Enterprise Deployment](../ch03/077-claude-code.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/077-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/286-anthropic-claude-code.html)
+- [Claude Code Openclaw Memory Comparison](../ch03/077-claude-code.html)
 
 ---
 

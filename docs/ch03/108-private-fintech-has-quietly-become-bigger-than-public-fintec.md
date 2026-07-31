@@ -6,18 +6,6 @@
 
 # Private Fintech Has Quietly Become Bigger Than Public Fintech
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Private Fintech Has Quietly"))
-    Why the biggest companies are
-    The category of one question
-    The secondaries market is no
-    The uncomfortable middle
-```
-
 ## 深度分析
 
 Published Time: 2026-05-28T21:28:52+00:00
@@ -28,46 +16,6 @@ The top 100 private fintech companies in the world are now worth $1.9 trillion, 
 For most of the last decade, the assumed endgame for a successful fintech was an IPO. That assumption is breaking down. The companies people most want to own, including Stripe, Revolut, and Ramp are private, growing fast, and showing no urgency to change that. When I sat down with Sahej Suri, founder of Blue Dot Investors and Steve McLaughlin, founder of FT Partners, to walk through the data, both made the same point in different ways: the private market is not the waiting room anymore. It’s the destination.
 
 ## **Why the biggest companies are choosing to stay home**
-
-```mermaid
-graph TB
-    subgraph "数据源"
-        API[API 接口]
-        DB_SRC[(数据库)]
-        STREAM[流式数据]
-        FILES[文件/日志]
-    end
-    subgraph "采集层"
-        INGEST[数据摄入<br/>Kafka/Flink]
-        CDC[变更捕获<br/>CDC]
-    end
-    API & DB_SRC --> INGEST
-    DB_SRC --> CDC
-    STREAM & FILES --> INGEST
-    subgraph "处理层"
-        CLEAN[清洗/去重]
-        TRANSFORM[转换/计算]
-        QUALITY[质量校验]
-    end
-    INGEST & CDC --> CLEAN --> TRANSFORM --> QUALITY
-    subgraph "存储层"
-        LAKE[数据湖<br/>Iceberg/Delta]
-        WH[数据仓库<br/>ClickHouse]
-        FEAT[特征存储<br/>Feast]
-    end
-    QUALITY --> LAKE
-    QUALITY --> WH
-    QUALITY --> FEAT
-    classDef src fill:#fef3c7,stroke:#d97706
-    classDef ing fill:#dbeafe,stroke:#2563eb
-    classDef proc fill:#ede9fe,stroke:#7c3aed
-    classDef sto fill:#d1fae5,stroke:#059669
-    class API,DB_SRC,STREAM,FILES src
-    class INGEST,CDC ing
-    class CLEAN,TRANSFORM,QUALITY proc
-    class LAKE,WH,FEAT sto
-```
-
 
 Steve put it as plainly as I’ve heard anyone say it: “You’re starting to see a world where there are going to be trillion-dollar fintech companies and they could be private. It’s a state of the world where you just don’t need to be a public company anymore. There’s plenty of capital available.”
 
@@ -97,8 +45,8 @@ Here’s where the report’s headline finding gets complicated. The top 10 are 
 
 ## 相关实体
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [Plaid Effects](../ch05/094-ai.html)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/094-ai.html)
+- [Plaid Effects](../ch05/095-ai.html)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/095-ai.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](../ch11/054-prowler-genai.html)
 - [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/079-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
 

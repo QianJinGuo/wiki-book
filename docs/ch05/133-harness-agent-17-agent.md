@@ -8,58 +8,11 @@
 
 > 肖汉松（阿里技术）分享的真实 Harness 工程落地案例：让一个 Coding Agent **自主运行 17 小时、完成 16 轮迭代**，优化线上业务 Agent 的 Prompt，最终第 4 轮通过人工复核上线。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里 Harness 工程实战 Agent 自主迭代 17"))
-    背景 Badcase 修复速度为瓶颈
-    三大落地关卡
-      第一关 工具 Agent 可调用化
-      第二关 长程任务防早停与上下文打爆
-      第三关 防止 Reward Hacking 与策略退化
-    迭代过程 做加法 做减法
-    与现有知识体系的关系
-    关键教训
-```
-
 ## 背景：Badcase 修复速度为瓶颈
 
 一个服务大规模用户的线上业务 Agent，团队每天只能跑一次迭代实验（修改 prompt → 评测 2-3 小时 → 分析 → 再修改），而 weekly badcase 涌入速度远超修复速度。虽然已用 AI 辅助分析 badcase，但中间步骤（代码发布、启动评测）仍需人工串联。
 
 ## 三大落地关卡
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 第一关：工具 Agent 可调用化
 
@@ -97,7 +50,7 @@ graph TB
 - 是 **Agent 用 Harness 循环改进另一个 Agent**（元 Harness），区别于 [Lilian Weng Harness Engineering Self Improvement](ch05/120-harness-engineering.html) 的理论框架
 - 实践了 [Loop Engineering Feedback Control System](ch05/004-loop-engineering.html) 的"小循环 → 大循环"演进路径
 - Champion-Challenger 机制与 improving-agents-data-mining-perspective-langchain 的多轮迭代实验设计互补
-- 父子 Agent 模式体现了 [Agent Vs Workflow Control Continuum Framework](../ch04/678-agent-vs-workflow.html) 中"控制权连续谱"的层级 delegation
+- 父子 Agent 模式体现了 [Agent Vs Workflow Control Continuum Framework](../ch04/681-agent-vs-workflow.html) 中"控制权连续谱"的层级 delegation
 
 ## 关键教训
 

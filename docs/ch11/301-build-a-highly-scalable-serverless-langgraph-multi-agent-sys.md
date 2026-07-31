@@ -2,65 +2,11 @@
 
 ## Ch11.301 Build a highly scalable serverless LangGraph multi-agent system
 
-> 📊 Level ⭐⭐⭐ | 8.8KB | `entities/serverless-langgraph-multi-agent-aws.md`
+> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/serverless-langgraph-multi-agent-aws.md`
 
 # Build a highly scalable serverless LangGraph multi-agent system
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Build a highly scalable"))
-    Serverless 与 LangGraph 的架构互补性
-    多 Agent 并行化的三层解耦架构
-    内存与可观测性解决生产环境核心挑战
-    Docker 容器化部署的权衡
-    优先采用显式图模型管理多 Agent 依赖
-    为 Agent 运行时配置多层次可观测性
-    利用 DynamoDB 实现 Persona Table 的跨会话持久化
-    设计时应考虑基础设施即代码
-```
-
 ## 核心内容
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 # Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore
 
@@ -126,7 +72,7 @@ Docker 容器化提供了移植性但引入了冷启动问题。在选择部署�
 
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Anthropic Multi Agent Research System](../ch04/576-anthropic-multi-agent-research-system.html)
+- [Anthropic Multi Agent Research System](../ch04/580-anthropic-multi-agent-research-system.html)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch11/306-amazon-nova.html)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)

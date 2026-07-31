@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 23.8KB | `entities/agent-self-improvement-six-mechanisms.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 自我改进的六条路"))
-    可视化
-      架构图 Excalidraw 推荐使用
-      架构图 Mermaid 知识源 可嵌入
-      封面图 AI 生成 装饰参考 仅供参考
-    六种机制详解
-      输出自审 Reflection
-      持久记忆
-      进化搜索
-    与现有 Wiki 的关联
-    六条路的层次结构
-    机制间的协同效应
-    自我修改的本质 HyperAgents 的突破
-    两层天花板的工程意义
-    选型建议
-```
-
 ## 概述
 J0hn/AGI Hunt 梳理 Agent 不重新训练就能变强的六种机制：输出自审、持久记忆、进化搜索、对抗训练、自我修改、编排自优化。核心命题：AI 学习正从训练阶段溢出到部署阶段——权重冻结下通过外部状态层积累知识是毕业后的自学能力。
 
@@ -45,38 +23,57 @@ Shareable link: https://excalidraw.com/#json=V1TZR8SVycPL0VJvBiYhU,bLOKZsFPtzVew
 
 ```mermaid
 graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
+    L1["L1 Reflection<br/>输出自审<br/><i>单次执行内 Critic 循环</i>"]
+    L2["L2 Persistent Memory<br/>持久记忆<br/><i>跨 session 状态层</i>"]
+    L3["L3 Evolutionary Search<br/>进化搜索<br/><i>轨迹级因果归因</i>"]
+    L4["L4 Adversarial Training<br/>对抗训练<br/><i>双 Agent 零数据动力学</i>"]
+    L5["L5 Self-Modification<br/>自我修改<br/><i>改进改进过程本身</i>"]
+    L6["L6 Meta-Harness<br/>编排自优化<br/><i>Big Harness &gt; Big Model</i>"]
+
+    L1 ==>|"持久化是基础"| L2
+    L2 ==>|"需要足够轨迹"| L3
+    L3 ==>|"需要压力测试"| L4
+    L4 ==>|"暴露改进过程"| L5
+    L5 ==>|"可优化 Harness"| L6
+
+    L6 -.feedback.-> L1
+    L2 -.feedback.-> L1
+    L5 -.feedback.-> L2
+
+    P1["LangGraph<br/>Reflection"]
+    P2["Letta Code<br/>Agent Zero<br/>Hermes Agent"]
+    P3["EvoAgentX<br/>AgentEvolver"]
+    P4["Agent0<br/>Qwen3-8B +18%"]
+    P5["HyperAgents<br/>autoresearch"]
+    P6["Stanford<br/>Meta-Harness"]
+
+    L1 --- P1
+    L2 --- P2
+    L3 --- P3
+    L4 --- P4
+    L5 --- P5
+    L6 --- P6
+
+    INS["💡 训练 = 上学<br/>六机制 = 毕业后的自学能力"]
+    L6 -.- INS
+
+    classDef layer1 fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef layer2 fill:#d1fae5,stroke:#059669,color:#064e3b
+    classDef layer3 fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef layer4 fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef layer5 fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef layer6 fill:#0f172a,stroke:#000,color:#fff
+    classDef project fill:#f3f4f6,stroke:#6b7280,color:#1f2937
+    classDef insight fill:#fef9c3,stroke:#ca8a04,color:#713f12
+
+    class L1 layer1
+    class L2 layer2
+    class L3 layer3
+    class L4 layer4
+    class L5 layer5
+    class L6 layer6
+    class P1,P2,P3,P4,P5,P6 project
+    class INS insight
 ```
 
 ### 封面图（AI 生成 / 装饰参考，仅供参考）
@@ -144,39 +141,39 @@ graph TB
 ## 相关实体
 - [foundation capital agent era six insights](ch04/186-foundation-capital-agent-era-six-insights.html)
 - [Hermes Agent 自进化机制源码解析](../ch03/096-hermes-agent.html)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/417-memento-skills-agent.html)
-- [AI Coding Agent 记忆系统](ch04/330-ai-coding-agent.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/421-memento-skills-agent.html)
+- [AI Coding Agent 记忆系统](ch04/333-ai-coding-agent.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/677-llm-wiki-obsidian-wiki-gbrain.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/096-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [Agent Memory 架构解析](ch04/121-agent-memory.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [Agent Memory 架构解析](ch04/098-agent-memory.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/237-openclaw.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/094-ai.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/095-ai.html)
 - [GBrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [SkillClaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](ch04/479-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
-- [OpenHuman: AI Agent 持久记忆框架](ch04/121-agent-memory.html)
+- [OpenHuman: AI Agent 持久记忆框架](ch04/098-agent-memory.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
-- [AI Agent 工程师能力地图](ch04/298-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/030-ai-agent.html)
 
-- [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](../ch01/1125-chatgpt-dreaming-v3.html)
-- [Chatgpt Dreaming V3 Long Term Memory Openai](../ch01/1125-chatgpt-dreaming-v3.html)
-- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](../ch01/1274-llm.html)
-- [recursive first steps toward automated ai research：sota 三基准自](../ch05/094-ai.html)
+- [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](../ch01/1128-chatgpt-dreaming-v3.html)
+- [Chatgpt Dreaming V3 Long Term Memory Openai](../ch01/1128-chatgpt-dreaming-v3.html)
+- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](../ch01/637-llm.html)
+- [recursive first steps toward automated ai research：sota 三基准自](../ch05/095-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 深度分析

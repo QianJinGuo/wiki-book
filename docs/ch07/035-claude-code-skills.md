@@ -8,22 +8,6 @@
 
 > 小 G (JavaGuide) 对 Claude Code Skills 的深度技术解析。与 [Claude Code Skills/MCP/Rules 源码分析](ch07/006-claude-code-skills-mcp-rules.html) 互补——该实体聚焦源码层实现，本实体聚焦用户层的发现机制、SKILL.md 编写、执行流程与安全限制。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code Skills 实战指南 发现机制 编写与安全"))
-    Skills 的核心设计理念
-    发现机制
-    执行流程
-    安全限制
-    与其他机制的配合
-    Skill 的 Token 经济学
-    Skill 作为 Agent 的「肌肉记忆」
-    MCP Source 的安全隔离悖论
-```
-
 ## Skills 的核心设计理念
 
 **按需加载的操作手册**：
@@ -37,39 +21,6 @@ mindmap
 此外，Skill 与 Subagent 的分工是正交的：Skill 定义了"怎么做"（流程），Subagent 定义了"谁来做"（执行者）。一个 Skill 可以由主 Agent 执行，也可以通过 `context: fork` 在 Subagent 中执行，两者互不排斥。这种正交设计使得 Skill 可以被不同角色复用。
 
 ## 发现机制
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 Claude Code 从 6 种来源加载 Skills：
 
@@ -158,9 +109,9 @@ MCP 来源的 Skill 跳过内嵌 shell 执行是一个合理的安全设计，�
 ## 相关实体
 
 - [Claude Code Skills/MCP/Rules 源码分析](ch07/006-claude-code-skills-mcp-rules.html) — 互补：该实体源码层（Rewrites/Loader/评分），本实体用户层（frontmatter/发现/安全）
-- [Claude Code Skill Writing 指南](../ch03/078-claude-code.html) — 互补：前者侧重编写方法，本实体侧重发现机制和执行原理
+- [Claude Code Skill Writing 指南](../ch03/077-claude-code.html) — 互补：前者侧重编写方法，本实体侧重发现机制和执行原理
 - [Hermes Skill System](ch07/017-hermes-skill.html)
-- [Claude Code 系统工程指南](../ch03/078-claude-code.html)
+- [Claude Code 系统工程指南](../ch03/077-claude-code.html)
 
 ## 参考
 

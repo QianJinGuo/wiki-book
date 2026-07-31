@@ -2,31 +2,11 @@
 
 ## Ch04.702 Asana Agentic Work Management Platform — Work Graph as Agentic OS
 
-> 📊 Level ⭐⭐⭐ | 16.9KB | `entities/asana-agentic-work-management-platform-lettertwo.md`
+> 📊 Level ⭐⭐⭐ | 17.0KB | `entities/asana-agentic-work-management-platform-lettertwo.md`
 
 # Asana Agentic Work Management Platform — Work Graph as Agentic OS
 
 > **Background**: 本文是 Asana 2026-06-04 发布「Agentic Work Management Platform」的产品深度报道(来源 The Letter Two),对 Asana CPO Arnab Bose 进行了独家访谈。这是 SaaSpocalypse 时代 Asana 市值腰斩后,以「work graph + 共享记忆 + 治理审计」四个支柱试图重新定义自己为「人-代理 OS」的关键产品转折。Asana 2.0 预计 2026 年夏天全面上线,所有现有客户自动获得 AI Teammate 执行配额和 Dash 访问。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Asana Agentic Work Management"))
-    三个独有贡献不应合并到现有 entity
-    核心定位与背景
-      为什么做 Agentic Work Management
-      四个结构性优势Asana 自述需对照竞品验证
-    产品矩阵三层架构
-      第一层个人助理 Asana Dash
-      第二层下一代 AI Teammates
-      第三层垂直应用Asana 20 的高价值场景
-    商业背景SaaSpocalypse 中的 Asana
-    与竞品的差异化对照表
-    三个值得跟踪的开放问题
-    与现有 wiki 实体的关联
-```
 
 ## 三个独有贡献(不应合并到现有 entity)
 
@@ -35,43 +15,6 @@ mindmap
 3. **垂直应用层打包(Asana Service Management / Command by Asana / Client Management)** — 不是只卖平台,而是 3 个开箱即用的高价值垂直场景(竞品直接对标 ServiceNow/Atlassian + 内部 IT 票务 + 代理商 client onboarding);Asana 明示会「displace 现有 ticketing 产品」而不是补充。
 
 ## 核心定位与背景
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 ### 为什么做 Agentic Work Management
 
@@ -189,7 +132,7 @@ Bose 公开表态:
 
 ## 与现有 wiki 实体的关联
 
-- 与 **[claude-code-large-codebase-harness-configuration](../ch03/078-claude-code.html)** 的关系:Command by Asana 试图用 workflow 框架而非 coding agent 实现「人+代理协作」,与 Claude Code 在 coding 场景的 agentic 思路形成对比(work-graph orchestration vs direct coding agent)
+- 与 **[claude-code-large-codebase-harness-configuration](../ch03/077-claude-code.html)** 的关系:Command by Asana 试图用 workflow 框架而非 coding agent 实现「人+代理协作」,与 Claude Code 在 coding 场景的 agentic 思路形成对比(work-graph orchestration vs direct coding agent)
 - 与 **[harness-engineering-framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)** 的关系:Asana 的「multiplayer interaction model + shared memory + audit trail」是 enterprise work graph 层的人类-代理协作 OS 案例(对比 Claude Code 是 coding 场景的 agent harness)
 - 引用 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/asana-agentic-work-management-platform-lettertwo.md) 作为唯一 source,做 enterprise agentic work platform 的产品定位基线
 

@@ -6,60 +6,10 @@
 
 > -> [Context不是免费的：长文档Agent性能天花板与架构优化](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-not-free-long-document-agent-architecture-raunak.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Context不是免费的 长文档Agent性能天花板与架构优化"))
-    核心问题 原始 API 响应并非为智能体输入而设计
-    解决方案 ContentMetadata 分离架构
-      三步后处理 约 20 行代码
-      编号块格式
-      按需查询架构
-    Prompt Pattern 修正
-    核心原则
-    其他可行方法 对比
-    解析 API 与智能体输入之间存在根本性的设计目标错位
-    按需查询架构将智能体从不必要的 token 消耗中解放出来
-    Prompt Pattern 的修正比模型能力更重要
-```
-
 ## 核心命题
 构建文档密集型 Agent 时，原始解析 JSON（坐标、置信度分数、边界框）塞满上下文窗口导致 Agent 无法工作。解决方案：将 Content（Markdown 编号块）和 Metadata（CSV/JSON 结构化文件）分离，让 Agent 用代码按需查询元数据，而非全部塞进上下文。
 
 ## 核心问题：原始 API 响应并非为智能体输入而设计
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **问题现象**：
 - 100 页变更单解析后产生 20 万行 JSON
@@ -176,8 +126,8 @@ Content/Metadata 分离的核心洞察是：智能体对待结构化元数据应
 
 ## 关联阅读
 - [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/130-why-internally-built-ai-fails-fund-accounting-audits.html) — AI 审计失败案例，文档处理是核心难点
-- [Amazon Bedrock Agentcore Browser Information Retrieval And Analysis Capabilities](ch04/561-amazon-bedrock-agentcore.html) — Agent 沙盒架构
-- [Claude Code Governance Soft Rules](../ch03/078-claude-code.html) — Agent 工具设计原则
+- [Amazon Bedrock Agentcore Browser Information Retrieval And Analysis Capabilities](ch04/566-amazon-bedrock-agentcore.html) — Agent 沙盒架构
+- [Claude Code Governance Soft Rules](../ch03/077-claude-code.html) — Agent 工具设计原则
 
 ---
 

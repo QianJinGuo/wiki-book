@@ -6,59 +6,11 @@
 
 # You Must Fix Your Asserts
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("You Must Fix Your Asserts"))
-    断言作为程序规范的形式化工具
-    禁用断言的三重危险
-    Assert 与 fuzz 的协同效应
-    Zig 与 CC 断言哲学的对比
-```
-
 ## 摘要
 
 本文深入探讨了断言（assert）在软件工程中的正确使用方式，以 Zig 语言为切入点，挑战了"生产环境禁用断言"这一常见实践。作者 kristoff 提出了一个核心论点：断言不仅是运行时检查工具，更是编译器优化的信息源。文章详细分析了 Zig 语言中基于 `unreachable` 的断言机制、不同构建模式下断言的行为差异、以及禁用断言可能带来的"自我欺骗"风险。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 - **断言是编译器优化信号**：在 Zig 中，断言通过 `unreachable` 实现，编译器能够利用断言信息进行非局部优化，甚至消除整个代码分支。
 - **"一条断言抵一千个单元测试"**（配合模糊测试时收益更大）：断言表达了程序的不变量，能在运行时捕获预期之外的状态，而单元测试只能覆盖已编写用例的场景。
@@ -117,11 +69,11 @@ graph TB
 
 ## 相关实体
 
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/094-ai.html) — 同一技术写作风格系列的领域专业知识讨论
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/913-20.html) — 同为深度技术实践分析的姊妹文章
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/095-ai.html) — 同一技术写作风格系列的领域专业知识讨论
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/926-20.html) — 同为深度技术实践分析的姊妹文章
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/020-build-agents-not-pipelines.html) — 软件工程方法论相关讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 技术深度分析系列
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/913-20.html) — 系统调试方法与实践
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/926-20.html) — 系统调试方法与实践
 
 ## 相关主题
 

@@ -8,28 +8,6 @@
 
 **Browser Use** 是百度工程师开源的运行时验证框架，旨在解决 Agent 生成前端代码后的「最后一公里」验证问题。核心洞察是：**代码正确 ≠ 界面正确**——前端最终结果是组件代码、CSS cascade、运行时数据、容器尺寸、异步状态等因素共同作用的组合结果，只有渲染出来才能确认是否正确。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Browser Use 为 Agent 构建 Runtime"))
-    背景 Agent 编码闭环的断裂
-    六维验证框架
-      内容 Contract 断言示例
-    技术实现 Chrome DevTools Protocol
-      CDP 作为核心通道
-      运行形态选择
-      CDP 接入流程
-    架构设计 让 Agent 掌握两条关键信息
-    与传统测试工具的差异
-    实际应用场景
-      场景一 表单验证
-      场景二 响应式布局
-    工具开源
-    本质 把「人类视觉反馈」转化为「机器可解析的信号」
-```
-
 ## 背景：Agent 编码闭环的断裂
 
 传统前端开发循环中，人类开发者写完代码后会「切到浏览器看效果」，通过视觉反馈快速发现问题。这个看似简单的动作完成了两个关键验证：
@@ -108,33 +86,7 @@ Browser Use 支持三种运行形态，适应不同场景：
 完整的工作流程：
 
 ```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
+Agent 决策 → CDP 命令 → Chrome 执行 → 截图/状态反馈 → Agent 解析 → 验证通过/失败
 ```
 
 ## 架构设计：让 Agent 掌握两条关键信息

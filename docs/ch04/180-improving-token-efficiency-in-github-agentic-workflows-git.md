@@ -4,68 +4,12 @@
 
 > 📊 Level ⭐⭐ | 12.1KB | `entities/github-agentic-token-efficiency.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Improving Token Efficiency in"))
-    核心优化技术
-      消灭未使用的 MCP 工具注册
-      CLI 替代 MCP 工具调用
-      Auditor Optimizer 元工作流
-    度量方法论
-      ET 公式
-      三大混淆因素
-    初步结果
-    未来方向
-    观点评析
-      核心价值
-      局限
-    知识库连接
-    API Proxy 架构是 token 可观测性的基础设施
-    审计 Agent 自举是正反馈系统的工程实例
-```
-
 ## 概述
 
 Landon Cox（Microsoft Research）和 Mara Kiefer（GitHub）分享 GitHub 内部对 Copilot Agentic Workflows 的 Token 使用优化实践。核心思路：通过在 API proxy 层统一收集 Token 数据 → 用 Agent 审计 Agent（Auditor/Optimizer 双 workflow）→ 发现并自动修复效率问题。
 文章提供了 **生产级 Agentic CI workflow 的 token 成本优化路线图**，是 [Token 经济学](../ch12/003-token.html) 在工程实践层面的具体落地案例。
 
 ## 核心优化技术
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 1. 消灭未使用的 MCP 工具注册
 
@@ -83,7 +27,7 @@ graph TB
 - **bash tool 内联 CLI**：直接在 bash 命令中调用 gh CLI
 - **Subagent 模式**：生成专门负责数据获取的子 agent，只返回结构化数据
   **效果**：将大部分 GitHub 数据获取移出 LLM 推理循环。
-  这与 [Claude Code Subagent 上下文卫生](ch04/311-claude-code-subagent.html) 中 Subagent 作为上下文隔离工具的理念相通。
+  这与 [Claude Code Subagent 上下文卫生](ch04/313-claude-code-subagent.html) 中 Subagent 作为上下文隔离工具的理念相通。
 
 ### 3. Auditor + Optimizer 元工作流
 
@@ -140,7 +84,7 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 - → ：Subagent 模式的上下文隔离与本文的 CLI subagent 策略互补
 - → [Prompt Caching 工程实践](../ch01/217-anthropic-prompt-caching-claude-code.html)：缓存策略是 token 优化的另一维度
 - → [Agent Harness 12 组件与 7 个关键决策](../ch05/058-agent-harness.html)：工具选择决策树与本文的 MCP vs CLI 选型呼应
-- → [Agentic Systems Extreme Co-Design（NVIDIA）](ch04/237-agentic.html)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
+- → [Agentic Systems Extreme Co-Design（NVIDIA）](ch04/648-agentic.html)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
 
 ## 深度分析
 ### 1. API Proxy 架构是 token 可观测性的基础设施
@@ -178,9 +122,9 @@ Auditor + Optimizer 的双 workflow 设计值得借鉴：每日扫描 → 标记
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-agentic-token-efficiency.md)
 
 ## 相关实体
-- [Improving token efficiency in GitHub Agentic Workflows](ch04/237-agentic.html)
+- [Improving token efficiency in GitHub Agentic Workflows](ch04/648-agentic.html)
 
-- [Token Efficiency](ch04/237-agentic.html)
+- [Token Efficiency](ch04/648-agentic.html)
 ````
 
 ---

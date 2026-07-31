@@ -6,65 +6,11 @@
 
 # DESIGN.md：AI 设计 Agent 的视觉约束对齐文件（Google Stitch × VoltAgent）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DESIGNmd AI 设计 Agent 的视觉约束对齐文件"))
-    VoltAgent awesome 集合
-      思路有多简单
-      浏览站点
-    仓库已收集的 73 个网站
-    DESIGNmd 里写什么
-    怎么用
-      最简单的玩法
-      进阶玩法
-    与现有 entity 的差异化
-    学术pro 续篇 71 套设计规范的 Skill 化整合
-      核心定位 Design MD Collection Skill
-      五大应用场景分类
-      实战 demo 验证
-    设计约束的协议化 从 Figma 到纯文本的范式转移
-    Stitch 的方法论 轻量接口 vs 重量平台的战略选择
-```
-
 ## 概述
 
 老章很忙（Ai学习的老章）2026-05-22 介绍 **Google Stitch 推出的 DESIGN.md 概念**——和 AGENTS.md 是兄弟文件。**编码 Agent 读 AGENTS.md**（怎么构建项目），**设计 Agent 读 DESIGN.md**（项目长什么样、什么感觉）。**VoltAgent 团队开源 `awesome-design-md` 仓库**，扒了市面上 73 个主流网站的 DESIGN.md，可直接 copy 到项目根目录用。AI Agent 读完即能产出风格一致的 UI——不用 Figma 导出、不用 JSON schema、不用任何特殊工具。
 
 ## 核心命题
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **AGENTS.md 大家都熟了**——告诉 AI 怎么构建项目。
 
@@ -279,8 +225,8 @@ VoltAgent awesome-design-md 集合仍在活跃更新中（学术pro 使用"71 �
 ---
 
 ## 相关实体
-- [Agentexecutorgooglesdistributedagentruntime](ch04/003-agentrun.html)
-- [Anthropic Google Agent Skills Design Patterns](ch04/383-anthropic-google-agent-skills.html)
+- [Agentexecutorgooglesdistributedagentruntime](ch04/444-agentrun.html)
+- [Anthropic Google Agent Skills Design Patterns](ch04/517-anthropic-google-agent-skills.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/330-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/035-agent.html)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/306-amazon-nova.html)

@@ -6,58 +6,11 @@
 
 # Hunk - Review-first Terminal Diff Viewer
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hunk - Review-first Terminal Diff"))
-    Review-first 设计理念
-    Agentic 工作流集成
-    多 VCS 支持
-    竞品对比
-    为什么 Agent 时代需要 Review-first Diff 工具
-    与其他 developer tools 的定位
-```
-
 ## 摘要
 
 Hunk 是 modem-dev 开源的终端 diff 查看器，专为 AI agent 生成的 changeset 设计。它不是传统的 diff 工具，而是一个 **review-first 的交互式 UI**，内置多文件导航、AI 注解、响应式布局和 watch 模式。基于 [OpenTUI](https://github.com/anomalyco/opentui) 构建，使用 [Pierre diffs](https://www.npmjs.com/package/@pierre/diffs) 作为 diff 引擎。2026-06-24 通过 TLDR newsletter 发现。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### Review-first 设计理念
 

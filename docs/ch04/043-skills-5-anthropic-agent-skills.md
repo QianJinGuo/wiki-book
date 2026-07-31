@@ -8,45 +8,6 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skills-driven-programming-taobao-enterprise-5-phase-evolution-2026-06-17.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("面向 Skills 编程 大淘宝企业购 5 阶段演进与"))
-    范式跃迁 从 DDD 配置化到面向 Skills 编程
-      传统范式的天花板
-      新范式 面向 Skills 编程
-      范式对比
-    业务背景 企业购客户对接场景
-      业务模式
-      三大业务域
-      四大典型特征
-    五阶段演进路径 20258 - 20262
-      阶段 1 Vibe Coding 20258
-      阶段 2 Prompt 模板 20259
-      阶段 3 SDD 规范驱动开发 202512
-    核心技术 三层架构 Skill 体系
-      三层架构 原子能力 模板 适配
-      为什么做垂直领域 Skills
-      Skill 构建思路
-    成功率 50 90 的攻破过程
-      评估报告阶段
-      技术方案阶段
-      代码生产阶段
-    经验总结 Skills 构建的核心原则
-      基础认知
-      质量控制四层防线
-    知识库体系 三级索引 kn-fetcher CLI
-      为什么需要知识库
-      三种存储载体协同
-      三级索引结构 借鉴 Anthropic 渐进式加载
-    核心金句 agent 视角提炼
-      质量瓶颈不在模型 在知识工程
-      确定性工程 不确定性 AI 可控的研发流水线
-      Skills 是 AI 研发的最小可复用单元
-```
-
 ## 概述
 
 **大淘宝技术（行业运营技术）官亭** 2026-06 发布的 **企业购端到端研发提效实战** 是中文圈公开材料中**最完整、最有数据、最有方法论沉淀**的"面向 Skills 编程"案例库——**5 阶段演进**（Vibe Coding → Prompt 模板 → SDD → Skill 沉淀 → 云端集成）+ **完整数据**（**50% → 90% 代码一次生成成功率** / **23.5 人日 → 8 人日交付周期 -65%** / 适配层代码量 -60% / 原子服务复用 90%+）+ **Anthropic Agent Skills 标准深度落地**（SKILL.md + references/ + scripts/）+ **三层架构**（原子能力/模板/适配）+ **ADJUSTMENT_PLAN 11 类高频问题闭环** + **三级索引知识库** + **kn-fetcher CLI 6 命令**。
@@ -56,39 +17,6 @@ mindmap
 **核心方法论**："**确定性工程 + 不确定性 AI = 可控的研发流水线**"——高精度环节用脚本（接口提取），模型不稳定的用架构拆分绕过（推拉分离、子 Skill），反复出错的沉淀为约束——三者配合把"不可控的对话"变成"可复现的流水线"。
 
 ## 1. 范式跃迁：从 DDD + 配置化到面向 Skills 编程
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 1.1 传统范式的天花板
 
@@ -344,25 +272,25 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 
 ### 9.1 Skill 主题相关
 
-- [Skill Hub Organization Asset Winty](ch04/271-skill.html)：**winty Skill Hub 系列**（3 来源合并 / 550 行 / Skill Hub 组织 + 质量门禁 + 生命周期 6 阶段）—— 与本文 **企业级 Skill 实战** 视角深度互补
-- [Agent Skills Comprehensive Survey](ch04/397-agent-skills.html)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
-- [Skill System Design Three Way Comparison](ch04/271-skill.html)：OpenClaw / Claude Code / Hermes Skills 系统设计对比
-- [Skill Craft](../ch07/051-skill-craft-claude-skill.html)：Skill Craft — Claude Skill 质量工程框架
-- [Skill Writing Patterns Best Practices](ch04/271-skill.html)：7 个顶级 Skill 提炼的模式与最佳实践
-- [Skill Development Guide Linyi](ch04/271-skill.html)：重新定义 Skill 开发保姆级教程
+- [Skill Hub Organization Asset Winty](ch04/273-skill.html)：**winty Skill Hub 系列**（3 来源合并 / 550 行 / Skill Hub 组织 + 质量门禁 + 生命周期 6 阶段）—— 与本文 **企业级 Skill 实战** 视角深度互补
+- [Agent Skills Comprehensive Survey](ch04/401-agent-skills.html)：Agent Skills 系统性综述（表示 → 获取 → 检索 → 进化）—— 与本文 Skills 体系完整图景
+- [Skill System Design Three Way Comparison](ch04/273-skill.html)：OpenClaw / Claude Code / Hermes Skills 系统设计对比
+- [Skill Craft](../ch07/052-skill-craft-claude-skill.html)：Skill Craft — Claude Skill 质量工程框架
+- [Skill Writing Patterns Best Practices](ch04/273-skill.html)：7 个顶级 Skill 提炼的模式与最佳实践
+- [Skill Development Guide Linyi](ch04/273-skill.html)：重新定义 Skill 开发保姆级教程
 
 ### 9.2 Harness / 工具 / 范式相关
 
 - [Harness Engineering Paradigm Comprehensive 2026](../ch05/120-harness-engineering.html)：Harness Engineering 综合论述（2026 年真正重要的是 Harness）
 - [Harness Engineering Core Patterns](../ch05/120-harness-engineering.html)：Harness Engineering 核心模式（持久化指令/分层记忆/Session-Harness-Sandbox/凭证安全）
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/006-claude-code-skills-mcp-rules.html)：Claude Code Skills/MCP/Rules 源码分析
-- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch05/111-ai-coding.html)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
+- [Three Tools Comet Openspec Superpowers Ai Coding Shuge 2026 06 17](../ch05/112-ai-coding.html)：OpenSpec 工具（本文阶段 3 SDD 直接使用）+ Superpowers 工程取舍
 
 ### 9.3 实战案例相关
 
 - `raw/articles/agent-skill-iterative-writing-taobao-logistics.md`：**同公司（淘天集团）不同团队（物流技术 其林 2026-06-12）** 的 Skill 迭代式编写实战——**孤儿 raw 无 entity**（建议后续批处理整合，本文仅标注，不合并避免 scope creep）
-- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/452-ai-skill.html)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
-- [Agent Memory Evaluation Landscape Taobao Survey](ch04/121-agent-memory.html)：淘天 Agent Memory 评测综述
+- [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/453-ai-skill.html)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
+- [Agent Memory Evaluation Landscape Taobao Survey](ch04/098-agent-memory.html)：淘天 Agent Memory 评测综述
 
 ## 10. 孤儿 raw 提示（pre-existing issue）
 

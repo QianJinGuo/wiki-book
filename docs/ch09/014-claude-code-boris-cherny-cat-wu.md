@@ -6,58 +6,11 @@
 
 # Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 一周年回顾 Boris Cherny"))
-    两个赞的起点 起点低不是坏事
-    验证才是关键 让 Agent 从错误中进化
-    人人都在写代码 新分工的浮现
-    Routines 的威力 Agent 从同步工具变成异步基础设施
-```
-
 ## 摘要
 
 2025 年 2 月，Claude Code 以 Claude 3.7 Sonnet 的附属 CLI 工具身份在 Slack 内部演示，只收到两个赞。2026 年 6 月一周年时，Claude Code 已经从一个终端对话工具演变为 AI 编程基础设施——PM 在写代码、工程师在手机上写代码、Agent 在自动修 bug。由 Boris Cherny（技术负责人）和 Cat Wu（产品负责人）共同录制的回顾视频，系统复盘了从 Research Preview 到 AI 编程平台的完整一年演进路径，涵盖 10 个核心章节：起点与验证机制的设计、Routines 和 Auto Mode 的工程哲学、Loop 和手机编程的认知跃迁、Context 极简主义的实践智慧，以及 2026 年 3 月源码泄露风波的完整内幕。这份回顾不仅是一份产品总结，更是一部关于 AI 原生产品开发的实战教科书。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 1. **验证比指令更重要**：Boris 学到的最重要经验——每次 Claude 犯错，不要告诉它下次怎么做，而是让它把经验写进 CLAUDE.md 或做成 Skill，「如果你能做到这点，Claude 就能一直跑下去」
 2. **自我验证是 Agent 超越工具的关键时刻**：Opus 4 刚发布时，Claude 已经能够打开 Claude CLI，在 bash 里自己测试自己写的功能——这标志着 Agent 从「执行单元」变成「自包含的执行系统」
@@ -258,13 +211,13 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 - [Loop Engineering Addy Osmani Challengehub](../ch05/004-loop-engineering.html) — Loop 架构的工程实践
 - [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](../ch03/035-agent.html) — Boris Cherny 对开发工具演进方向的判断
-- [Claude Opus 4 7 Launch](../ch01/349-claude-opus-4-7.html) — Opus 4.7 的能力跃升
-- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/989-anthropic.html) — Skills 系统的架构设计
+- [Claude Opus 4 7 Launch](../ch01/350-claude-opus-4-7.html) — Opus 4.7 的能力跃升
+- [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch01/1004-anthropic.html) — Skills 系统的架构设计
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch07/016-anthropic-mcp.html) — 工具调用与代码编排
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html) — Claude Code 源码的工程实现深度解读
-- [Kimi Work Beta Foundation Model Company Advantage](../ch01/397-kimi.html) — 模型公司做 Agent 的战略逻辑
-- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/989-anthropic.html) — 数据基础设施对 Agent 能力的影响
-- [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html) — Claude Code 源码的工程实现深度解读
+- [Kimi Work Beta Foundation Model Company Advantage](../ch01/398-kimi.html) — 模型公司做 Agent 的战略逻辑
+- [Anthropic Biology Agent Data Infrastructure Virbench](../ch01/1004-anthropic.html) — 数据基础设施对 Agent 能力的影响
+- [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/077-claude-code.html)
 
 ## 第 2 来源 — 2026-06-30：子智能体默认后台运行
 

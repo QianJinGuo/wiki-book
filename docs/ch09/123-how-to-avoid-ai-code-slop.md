@@ -4,59 +4,14 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/how-to-avoid-ai-code-slop.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How to Avoid AI Code Slop"))
-    从审代码到审意图范式转移
-    测试的局限性
-```
-
 ## 核心要点
 - 来源：eng-leadership
 - 评分：v=7 × c=8
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/330-ai-coding-agent.html)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/453-how-claude-code-works-in-large-codebases-best-practices-and.html)
-- [Low Code Api Integration](../ch03/075-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
-- [How_Claude_Code_Works_In_Large_Codebases](../ch01/976-claude.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/333-ai-coding-agent.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/454-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [Low Code Api Integration](../ch03/074-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
+- [How_Claude_Code_Works_In_Large_Codebases](../ch01/1022-claude.html)
 - [Karpathy Claude Md Rules](../ch01/237-claude-md.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-avoid-ai-code-slop.md)

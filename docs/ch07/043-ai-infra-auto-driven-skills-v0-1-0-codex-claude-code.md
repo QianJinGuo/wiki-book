@@ -8,60 +8,11 @@
 
 # AI-Infra-Auto-Driven-SKILLS：推理框架工作流编码
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI-Infra-Auto-Driven-SKILLS v010"))
-    核心价值
-    个 Core Skills
-    工程纪律转化为可执行工作流
-    SOTA Humanize Loop 的设计逻辑
-    skill 工件的具体结构
-    与传统 Agent 工作流的区别
-    对 AI Infra 开发者的启示
-    对 Agent 开发者的启示
-```
-
 ## 一句话
 
 BBuf 在 GiantPandaLLM 发文介绍 AI-Infra-Auto-Driven-SKILLS v0.1.0——将推理框架开发的 benchmark/profile/debug 流程整理成 SKILL.md，供 Codex / Claude Code 按步骤执行，遵循工程纪律。
 
 ## 核心价值
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 **问题**：性能优化不适合直接从现象进入源码修改，链条中任何一步缺失，后续结论都不可靠。
 
@@ -147,14 +98,14 @@ AI-Infra-Auto-Driven-SKILLS 的设计明确将**工程纪律编码为工作流�
 
 AI Infra 工程纪律正在变成可执行的 skill artifact——推理框架优化流程的最佳实践被编码为 Agent 工作流。
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/844-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/857-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Claude Code Skills Mcp Rules Source Analysis](ch07/006-claude-code-skills-mcp-rules.html)
-- [Skill System Design Three Way Comparison](../ch04/271-skill.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1036-openclaw-agent.html)
-- [Claude Code Vs Codex Context Architecture 02](../ch03/078-claude-code.html)
+- [Skill System Design Three Way Comparison](../ch04/273-skill.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1049-openclaw-agent.html)
+- [Claude Code Vs Codex Context Architecture 02](../ch03/077-claude-code.html)
 
-- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](../ch01/992-vllm.html)
-- [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](../ch03/078-claude-code.html)
+- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](../ch01/1007-vllm.html)
+- [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](../ch03/077-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

@@ -5,57 +5,10 @@
 > 📊 Level ⭐⭐ | 8.2KB | `entities/tencent-ai-team-knowledge-harness.md`
 
 # 腾讯 AI Team 知识沉淀体系
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("腾讯 AI Team 知识沉淀体系 Harness"))
-    核心贡献
-    核心原则
-    核心命题 Harness Engineering
-    三维正交知识体系的工程价值
-    知识生命周期三通道设计的巧思
-    三级渐进式索引的工程意义
-    知识沉淀的冷启动路径
-    独立 Git 仓库的工程理由
-```
-
 ## 概述
 腾讯 AI 工程交付团队（AI Team）提出的完整知识沉淀实践体系，核心主张：**Harness 不是目的，知识才是护城河**。工作流只是管道，知识才是流过管道的活水。
 
 ## 核心贡献
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 - **三维正交知识体系**：五层存储（Layer 0-P/0-T/1/2/3）× 五种类型（model/decision/guideline/pitfall/process）× 三级成熟度（draft/verified/proven）
 - **团队知识库独立 Git 仓库**：跨项目共享、生命周期独立、权限独立
 - **工作流即知识沉淀闭环**：INIT 注入 → 各阶段按需查询 → ARCHIVE 自动提取
@@ -95,7 +48,7 @@ graph TB
 Hapi 内网版的设计哲学——**状态持久化（文件系统即状态机）、断点恢复、异步审批、跨设备接管**——是对传统 Harness"在场依赖"问题的根本性回答。4 小时/8 小时的创始人有效时间约束，通过 24 小时待机 + 异步审批得到缓解。
 
 ### 与其他 Harness 实践的关系
-腾讯 AI Team 的知识沉淀体系，与 [系统化 Harness Engineering 框架](ch05/120-harness-engineering.html) 中的治理（Governance）支柱高度对齐，也与 [Thin Harness Fat Skills](ch05/085-thin-harness-fat-skills-ai.html) 的核心主张（工具链薄，知识技能厚）形成呼应。知识自动衰减机制与 LLM Wiki Pattern 的 Lint 机制一脉相承。
+腾讯 AI Team 的知识沉淀体系，与 [系统化 Harness Engineering 框架](ch05/120-harness-engineering.html) 中的治理（Governance）支柱高度对齐，也与 [Thin Harness Fat Skills](ch05/086-thin-harness-fat-skills-ai.html) 的核心主张（工具链薄，知识技能厚）形成呼应。知识自动衰减机制与 LLM Wiki Pattern 的 Lint 机制一脉相承。
 
 ## 实践启示
 ### 知识沉淀的冷启动路径
@@ -124,7 +77,7 @@ Hapi 内网版的设计哲学——**状态持久化（文件系统即状态机�
 → [AI Team 知识沉淀体系（概念页）](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md) — 详细架构说明
 →  — 三支柱架构对照
 →  — 知识 vs 工具链的务实立场
-→ [Agent Memory 架构本质](../ch04/430-perplexity-brain-self-improving-agent-memory-architecture.html) — 与知识层级的关联讨论
+→ [Agent Memory 架构本质](../ch04/433-perplexity-brain-self-improving-agent-memory-architecture.html) — 与知识层级的关联讨论
 
 ---
 

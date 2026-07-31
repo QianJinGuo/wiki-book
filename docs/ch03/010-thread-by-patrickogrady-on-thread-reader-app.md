@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 9.9KB | `entities/thread-patrickogrady.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thread by patrickogrady on Thread"))
-    Route 66 计划 2025-05-12
-    Tempo 共识机制 2025-12-09
-    关于 Loss-y 消息传递的共识研究提问 2024-11-14
-    Commonware 成立与框架发布 2024-08-08
-    Route 66 的战略逻辑
-    专业化趋势的本质
-    Tempo 的密码学创新
-    关于有损模型的研究空白
-```
-
 ## 核心内容
 ### Route 66 计划（2025-05-12）
 Commonware 与 Coinbase 联合宣布 **Route 66** 计划，旨在降低新型区块链的接入成本与集成难度。核心论断：
@@ -57,35 +41,6 @@ Patrick 与 Stephen Buttolph 共同探索了 **Vena**——一种面向大规模
 - 设计目标：兼顾大型验证者集（>500）与强鲁棒性（liveness 和 safety 上限 f < n/3 拜占庭故障）
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 ### Route 66 的战略逻辑
 Route 66 反映了一个结构性问题的解决方案：区块链堆栈的日益专业化与基础设施层集成成本之间的矛盾。当应用链开始像专用应用而非通用智能合约平台运行时，传统的"大一统"集成模式（钱包支持所有链、所有功能）面临瓶颈。
 Coinbase 的参与是关键变量。作为美国最大的合规加密资产托管和交易平台，Coinbase 对接新型区块链的动机是商业驱动而非技术好奇。其战略投资部门 Coinbase Ventures 的介入表明，Route 66 不只是技术倡议，也是市场扩张策略的一部分——降低 Coinbase 生态接入新链的成本，从而捕获更多用户和资产流量。
@@ -129,9 +84,9 @@ Coinbase Ventures 对 Route 66 的支持表明，其判断是：未来成功的�
 Patrick 关于"loss-y 模型"的问题指出了一个有价值的研究方向：在消息丢失率非零的 WAN 环境下，如何设计既保持安全性（safety）又保证活性（liveness）的共识协议，并进行严格的敏感性分析（不同丢包率下性能的渐变行为）。
 这与 Commonware 宣称的"tractable modification"哲学相契合——框架设计需要支持研究者快速修改共识参数和假设，而不是每次修改都需要从零开始证明。
 ## 相关实体
-- [Thread Openai Devs](../ch01/390-openai.html)
+- [Thread Openai Devs](../ch01/391-openai.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Thread 0Xcheeezzyyyy](../ch01/1243-0.html)
+- [Thread 0Xcheeezzyyyy](../ch01/1248-0.html)
 - 
 - Axie Infinity Ronin Ethereum Layer2 Migration
 

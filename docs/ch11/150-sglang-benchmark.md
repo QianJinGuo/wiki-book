@@ -8,68 +8,7 @@
 
 > **Background**：本文基于 AWS China Blog 发布的 LLM 推理部署实战文章，系统梳理了基于 SGLang 的大模型推理 Benchmark 方法论、三种部署方案（单机/多机 Non-PD/多机 PD 分离）的选型对比，以及性能调优与常见问题排查指南。原文由 AWS 资深工程师撰写，包含基于 DeepSeek-V3/V4-Pro 及 Kimi2.5 在 Amazon EFA 环境下的实测数据。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于SGLang的大模型推理部署实践Benchmark方法论"))
-    核心贡献
-    Benchmark 方法论
-      测试规划四问
-      关键坑点
-    部署方案对比
-      单机部署
-      多机 Non-PD 分离
-      多节点 PD 分离 2P2D
-    选型决策树
-    Debug 与调优
-      TTFT 高
-      TPOT 高
-      吞吐低于预期
-    与现有实体的关系
-```
-
 ## 核心贡献
-
-```mermaid
-graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
-    end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
-    end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
-    end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
-    end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
-```
-
 
 本文的核心价值在于提供了一套**可复现的大模型推理部署方法论**，而非单一的技术点：
 
@@ -157,7 +96,7 @@ PD 分离并不一定比 Non-PD 更好。以 DeepSeek-V4-Pro 在 120K input、1K
 
 ## 与现有实体的关系
 
-- → [SGLang](../ch04/631-agent-assisted-sglang-ai-llm.html)（主实体，本文提供了实践层面的深度补充）
+- → [SGLang](../ch04/636-agent-assisted-sglang-ai-llm.html)（主实体，本文提供了实践层面的深度补充）
 - → [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
 - → [LLM Benchmark 全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md)
 - → [模型推理对比](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-inference-comparison.md)

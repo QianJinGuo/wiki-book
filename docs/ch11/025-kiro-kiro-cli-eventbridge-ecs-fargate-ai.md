@@ -2,40 +2,6 @@
 
 ## Ch11.025 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
 
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 > 📊 Level ⭐⭐ | 17.0KB | `entities/kiro-job-scheduler-eventbridge-ecs-fargate.md`
 
 # 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
@@ -43,22 +9,6 @@ graph TB
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
 
 > **Core insight**: Kiro Job Scheduler 通过 EventBridge Scheduler 触发 Lambda 编排器，由 ECS Fargate 容器执行 Kiro CLI 非交互式任务，实现 AI 助手的 7×24 小时无人值守运行。核心创新在于将 Kiro 的 Steering 文件定义的 Agent 角色、MCP Server 工具扩展和 Skills 知识包组合成标准化 JSON 配置，通过容器化执行实现可复用的 AI 自动化工作流。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("构建无服务器Kiro调度平台 用Kiro CLI"))
-    背景 从交互式到自动化
-    三层无服务器架构
-    核心能力 自定义 Agent MCP Server Skills
-    Kiro CLI 非交互模式执行机制
-    安全设计
-    成本分析
-    架构分层解耦的无服务器设计哲学
-    MCP 协议 AI Agent 工具扩展的标准接口
-```
 
 ## 背景：从交互式到自动化
 
@@ -154,7 +104,7 @@ Kiro CLI 的非交互模式意味着结果完全由输出内容决定。建议�
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
 - [Using Kiro Cli Agent Client Protocol Build Ai Chat](../ch03/035-agent.html)
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
-- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch03/078-claude-code.html)
+- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch03/077-claude-code.html)
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 
 ## 相关引用

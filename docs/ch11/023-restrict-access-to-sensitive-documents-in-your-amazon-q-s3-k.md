@@ -4,70 +4,7 @@
 
 > 📊 Level ⭐⭐ | 18.7KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-q-s3-knowledge-bases.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Restrict Access to Sensitive"))
-    核心机制 ACL 评估在查询时而非索引时
-    两种 ACL 配置方法
-      Global ACL 文件
-      Document-level Metadata 文件
-    IAM Policy Assignments 的纵深防护
-      绕过风险与防护
-    QuickSight Flows 与 ACL 的集成
-    关键工程约束
-      不可逆性
-      身份匹配规则
-      ACL 文件本身的写权限管控
-    部署最佳实践
-      分层防护策略
-      配置验证流程
-      变更管理
-    查询时评估将权限控制从配置时转化为访问时
-    Deny-by-default 是企业级 RAG 的安全基线
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Amazon Q 的 S3 知识库文档级 ACL（Access Control List）功能是企业级 RAG（检索增强生成）系统在**权限收敛层**的关键工程实践。该功能解决了两个核心问题：知识库级别的粗粒度权限控制无法满足敏感文档的隔离需求，以及传统 S3 bucket 权限与 AI 查询层的联动缺失。
 
@@ -256,8 +193,8 @@ Fail-closed 行为（deny-by-default）不仅仅是一个技术特性，它代�
 ## 相关实体
 
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/094-ai.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/272-aws-bedrock-agentcore.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/095-ai.html)
 - [mountpoint s3 vs s3 files：eks 上 s3 数据接入的两种方案实战对比](../ch01/223-rag.html)
 
 ---

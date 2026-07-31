@@ -6,27 +6,6 @@
 
 # DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("DeepSeek 成本迁移 从 KV Cache 到"))
-    技术主线 成本如何从模型侧搬到系统层
-      V2V4 效率演进
-      成本分层策略
-      KV Cache 不是边角料
-    Harness 层 成本入口
-      Agent Harness Engineering 七层 ETCLOVG
-      Harness 承担的实际成本
-    核心判断 DeepSeek 能不能定义工作负载
-    五大后续观察信号
-    成本转移的实质是一场硬件分工重构
-    Jevons Paradox 在 AI 成本里的具象化
-    Harness 是模型和真实工作现场的中间层
-    TileLangTileKernels 的工程化意图
-```
-
 ## 核心论点
 
 DeepSeek 值得看的地方，已经越过模型便宜本身，落到了"模型之外"的系统层。
@@ -34,35 +13,6 @@ DeepSeek 值得看的地方，已经越过模型便宜本身，落到了"模型�
 当模型越来越便宜，贵的东西会搬到哪里：缓存、内存、存储、编译器、调度、硬件适配，以及让模型变成 Agent 的 Harness。
 
 ## 技术主线：成本如何从模型侧搬到系统层
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 ### V2→V4 效率演进
 - **V2 论文**：MLA（低秩潜在表示压缩 KV Cache）+ DeepSeekMoE（稀疏计算）
@@ -205,12 +155,12 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 - [Deepseek Code Harness](../ch09/092-deepseek-code-harness.html)
 - [Openclacky Harness Prompt Cache](ch05/009-harness.html)
 - [Deepseek V4 Ds4C Antirez Local Inference Qbitai](../ch09/045-deepseek-v4-ds4c-antirez.html)
-- [Deepseek Moe Parallel Strategy](../ch01/1091-deepseek.html)
-- [Deepseek V4 Triton Fp4 Optimization](../ch01/441-deepseek-v4-triton-fp4.html)
+- [Deepseek Moe Parallel Strategy](../ch01/570-deepseek.html)
+- [Deepseek V4 Triton Fp4 Optimization](../ch01/444-deepseek-v4-triton-fp4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](ch05/094-ai.html)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](ch05/095-ai.html)
 
 ## 相关链接
 

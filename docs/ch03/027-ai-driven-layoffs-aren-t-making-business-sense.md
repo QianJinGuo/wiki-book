@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐ | 6.9KB | `entities/ai-driven-layoffs-business-sense-cio.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI-driven layoffs arent making"))
-    生产力悖论的深层机制
-    AI 错误成本的几何级数效应
-    人才信号的双向作用
-    TCO 的三个隐形杀手
-    给企业决策者的建议
-    给 IT 和 HR 联合团队的行动指南
-    给 CIO 的技术路线图建议
-```
-
 ## 核心要点
 - **生产力悖论**：个人任务效率提升，但团队/部门整体生产力没有改善甚至下降
 - **隐性成本**：AI 实施需要培训、集成和持续维护的显著投资
@@ -26,35 +11,6 @@ mindmap
 - **文化与人才损害**：激进的 AI 优先裁员策略向现有员工传递不忠诚信号
 
 ## 技术洞察
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 这篇文章的核心洞察是：**AI 转型不能简单等同于劳动力替代**。企业在追求 AI 驱动效率的过程中，往往低估了以下因素：
 1. **知识网络的断裂** — 裁员不仅减少人数，还破坏了组织内的知识传递网络
 2. **AI 错误成本** — AI 生成内容需要人类审核，实际上是创造了新的工作类别而非消除工作

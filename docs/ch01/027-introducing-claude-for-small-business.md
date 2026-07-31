@@ -6,20 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-for-small-business.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Introducing Claude for Small"))
-    产品定位 填补 SMB AI 市场的结构性空白
-    生态战略 从工具到社区的纵向延伸
-    潜在挑战与不确定性
-    对小型企业主的直接价值
-    对 AI 行业从业者的启示
-    对创业者和独立开发者的机会
-```
-
 ## 核心要点
 - Anthropic 推出 Claude for Small Business，目标客群为美国小型企业主 
 - 小型企业贡献美国 GDP 的 44%，雇用近半数私营部门劳动力，但 AI 采用率大幅落后于大企业 
@@ -29,35 +15,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-for-small-business.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 ### 产品定位：填补 SMB AI 市场的结构性空白
 Claude for Small Business 的推出，本质上是对「AI 采用鸿沟」（AI Adoption Gap）的直接回应。Anthropic 在产品公告中引用数据指出，小型企业贡献了美国 GDP 的 44% 并雇用近半数私营部门劳动力，但其 AI 工具使用往往「停留在聊天窗口」（stops at the chat window）。这一判断揭示了一个核心矛盾：现有 AI 工具大多面向技术团队或大型企业设计，缺乏面向非技术型小企业主的端到端任务执行能力 。
 与微软 Copilot 或 Google Workspace AI 相比，Claude for Small Business 的差异化策略体现在三个维度：
@@ -106,15 +63,15 @@ Claude for Small Business 代表了一种新兴的「AI Native SMB 产品」范�
 
 ## 相关实体
 - [Introducing Claude for Small Business](ch01/027-introducing-claude-for-small-business.html)
-- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/406-anthropic-claude-agent.html)
-- [Xero Announces Integration with Anthropic's Claude](ch01/989-anthropic.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/604-anthropic-claude.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/410-anthropic-claude-agent.html)
+- [Xero Announces Integration with Anthropic's Claude](ch01/1004-anthropic.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1354-anthropic-claude.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/212-anthropic-claude-managed-agents.html)
 - [Claude Managed Agents 官方 Harness 平台指南](ch01/212-anthropic-claude-managed-agents.html)
-- [Anthropic Computer Use 最佳实践](ch01/937-anthropic-computer-use.html)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch01/989-anthropic.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/989-anthropic.html)
+- [Anthropic Computer Use 最佳实践](ch01/950-anthropic-computer-use.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](ch01/1004-anthropic.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/1004-anthropic.html)
 
 ---
 

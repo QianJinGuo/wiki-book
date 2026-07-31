@@ -8,60 +8,11 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Interaction Models A Scalable"))
-    当前 AI 交互的瓶颈 回合制限制
-    微回合架构的技术创新
-    双层架构 实时响应 深度推理
-    新交互维度的基准测试
-```
-
 ## 摘要
 
 Thinking Machines Lab 发布了交互模型（Interaction Models）的研究预览——一种将交互能力内置于模型本身而非外部脚手架的新型 AI 架构。核心创新是"时间对齐的微回合"（time-aligned micro-turns）设计：模型以 200ms 为单位持续交错处理输入和生成输出，实现音频、视频、文本的全双工实时交互。其 TML-Interaction-Small 模型（276B MoE，12B active）在 FD-bench 交互质量基准上大幅领先 GPT Realtime 和 Gemini Live。
 
 ## 核心要点
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 - **交互不应是事后考虑**：AI 实验室过度追求自主能力，忽略了人类在循环中（human-in-the-loop）的协作价值
 - **时间对齐微回合**：200ms 块交错处理输入/输出，消除人工回合边界，实现真正的全双工交互
@@ -132,8 +83,8 @@ Thinking Machines 提出了现有基准无法覆盖的新能力维度：
 
 ## 相关实体
 
-- [Thinking Machines 交互模型](../ch04/255-thinking-machines-interaction-models.html)
-- [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch05/094-ai.html)
+- [Thinking Machines 交互模型](../ch04/258-thinking-machines-interaction-models.html)
+- [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models.md)
 

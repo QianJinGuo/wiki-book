@@ -6,66 +6,12 @@
 
 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-observability-aliyun.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("给 Hermes 装上显微镜 Agent 执行全知道"))
-    要解决的四个核心问题
-    技术方案 OpenTelemetry 链路追踪
-      五大优势
-    可观测内容
-      ReAct 结构化 Trace
-      模型调用 chat span
-      工具调用 executetool span
-    接入部署
-      前提条件
-      部署步骤
-      日志接入
-    总结与展望
-    Agent 可观测性的本质挑战
-    OpenTelemetry GenAI Semantic
-    TTFT 单独记录的工程意义
-```
-
 ## 背景
 Hermes 是 Nous Research 打造的一套自治式 AI Agent 运行框架。它不是单次问答式的模型封装，而是一个能够持续运行、调用工具、积累经验、并随着使用过程不断成长的 Agent Runtime。
 当一个 AI Agent 真正开始解决问题，无论它是正确完成，还是出现偏差，真正困难的问题往往都不是结果对不对，而是它到底做了什么。
 Hermes 的一次运行并不是一次普通的模型调用。一次看似简单的交互，背后可能包含多轮推理、工具调用、结果回注、上下文膨胀，以及新的推理循环。如果系统只能提供最终回复、几条分散的日志，或者一次调用的 usage 汇总，那么 Hermes 依然是一个黑盒。
 
 ## 要解决的四个核心问题
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 **第一类：过程不可见**
 很多系统在接入大模型之后，依然只能看到用户输入、最终输出和一条 usage 汇总。Hermes 的真实运行远不止如此。没有调用链时，中间过程基本就是空白的。
 **第二类：成本不可归因**
@@ -239,7 +185,7 @@ Time To First Token 的单独记录是一个看似小但实际非常关键的 fe
 - [Hermes Agent Vs Openclaw Comparison](../ch03/096-hermes-agent.html)
 - [Hermes Agent Self Evolving Source Analysis](../ch03/096-hermes-agent.html)
 - [Small Hermes Self Evolving Agent Architecture](../ch03/035-agent.html)
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/913-20.html)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/926-20.html)
 
 ---
 

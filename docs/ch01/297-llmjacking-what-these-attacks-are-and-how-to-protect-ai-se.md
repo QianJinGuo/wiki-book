@@ -7,17 +7,6 @@
 # LLMjacking: what these attacks are, and how to protect AI servers
 AI security covers more than just data theft prevention, restricting [rogue AI agents](https://www.kaspersky.com/blog/moltbot-enterprise-risk-management/55317/), or stopping assistants from giving harmful advice. A relatively simple but rapidly scaling threat has emerged: attempts to hijack computational power and exploit someone else's neural network for personal gain. This is known as LLMjacking. With AI compute costs widely predicted to [surge dramatically](https://oplexa.com/ai-inference-cost-crisis-2026/), the number of attackers driven by these motives is poised to grow. Consequently, when deploying proprietary AI servers and their supporting ecosystems like [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) or [MCP](https://en.wikipedia.org/wiki/Model_Context_Protocol), it's critical to establish rigorous security measures from day one.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LLMjacking what these attacks are"))
-    Statistics from a honeypot
-    What are the attackers after
-    Conclusions and defense tips
-```
-
 ## Statistics from a honeypot
 The speed and scale of these resource-hijacking attempts are best illustrated by an [experiment](https://web.archive.org/web/20260412230759/https:/www.reddit.com/r/ollama/comments/1sff7i0/30_days_of_an_llm_honeypot/?solution=64b4494d52a1506664b4494d52a15066&js_challenge=1&token=*** documented in detail in April 2026. The investigator configured a Raspberry Pi to masquerade as a high-performance private AI server, and made it accessible from the internet. When queried, it reported the availability of Ollama, LM Studio, AutoGPT, LangServe, and text-gen-webui servers — all tools commonly used as wrappers for locally hosted AI models. The server also appeared ready to accept API requests in the OpenAI format, which has become the industry standard.
 All these services were seemingly powered by a local instance of Qwen3-Coder 30B Heretic, one of the most powerful open-source models, with its safety alignment removed. To throw in a sweetener, the honeypot reported the presence of various RAG databases and an MCP server with tempting capabilities like *get_credentials *on board.
@@ -26,44 +15,6 @@ According to the author, Shodan, a popular internet scanning service, discovered
 Requests to endpoints like */api/tags* and */v1/models* allow attackers to fingerprint which models are hosted on a server, while scanning for */.cursor/rules* typically precedes an attempt to exploit an AI agent. Similarly, checking */.well-known/mcp.json* serves as an inventory of the victim's MCP servers. While the author makes no mention of the total number of attacks that progressed beyond simple scanning, there were 175 active attempts to hijack the LLM during the final week of the experiment alone.
 
 ## What are the attackers after?
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 Based on the researcher's observations, none of those targeting the decoy server attempted to execute arbitrary code or gain root access. (Editorial note: this is surprising and may point to gaps in logging.) Almost all attacks were aimed at siphoning resources. For example, the following activities were logged during the experiment:
 
 - A well-structured attempt to parse technical documentation for a microprocessor
@@ -87,11 +38,11 @@ Key defensive measures for private AI infrastructure
 - Maintain detailed logs of LLM responses and requests made to the model and its supporting tools. Integrate these data sources with [your SIEM](https://www.kaspersky.com/enterprise-security/unified-monitoring-and-analysis-platform?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kasperskydaily_wpplaceholder____). Ensure logs are resilient against tampering or deletion.
 
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](../ch04/298-ai-agent.html)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Llm Raiders How To Repel](ch01/1274-llm.html)
-- [我用 Skillmd 做了一个简历生成器](../ch04/271-skill.html)
-- [Skill Engineering Ai As Algorithm](../ch04/271-skill.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/104-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [Llm Raiders How To Repel](ch01/637-llm.html)
+- [我用 Skillmd 做了一个简历生成器](../ch04/273-skill.html)
+- [Skill Engineering Ai As Algorithm](../ch04/273-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-raiders-private-ai-server.md)
 

@@ -11,42 +11,7 @@
 > SHA-256：`417c5764404afba03c0584973d3606b637c048f1c5628330d40ecae966b64035`
 Claude Code 源码泄露之后，Zhi.Yuan（SooKool）与 AI 一起分析，拆解 5 个核心工程设计。
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
 
 Claude Code 的设计哲学是「把失败一定会发生当成设计前提，而不是异常」。StreamingToolExecutor 的核心机制是：模型流式输出时，只要检测到 tool_use JSON block 就立即启动工具执行，不等模型说完 ^。只读操作最多 10 个并行，写操作排队串行 ^。更关键的是「墓碑消息」机制：API 中断时给每个孤儿工具调用生成错误占位，中断消息标记为 TombstoneMessage，保证消息流不断裂 ^。这种设计不追求消除失败，而是让系统在面对故障时仍能保持状态完整性和可调试性 ^。
 
@@ -71,11 +36,11 @@ Claude Code 的 Hook 系统用 AI 来审查 AI ^。Prompt Hook 调用 Claude Son
 用 AI 审查 AI 时，区分单步判断（Prompt Hook）和多步验证（Agent Hook）的适用场景 ^。单步风险判断用小模型（如 Sonnet）快速判断；复杂流程验证（如安全检查、权限审查）用更小的专注模型跑完整 Agent 流程 ^。Hook 适合语义理解类约束，但安全底线、权限控制、审计记录应下沉到确定性更强的机制 ^。
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/328-claude-code-agent-teams.html)
-- [Claude Code Source Architecture](../ch03/078-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
-- [Claude Code Tool Design Evolution Anthropic](../ch03/078-claude-code.html)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/077-claude-code.html)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/329-claude-code-agent-teams.html)
+- [Claude Code Source Architecture](../ch03/077-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/286-anthropic-claude-code.html)
+- [Claude Code Tool Design Evolution Anthropic](../ch03/077-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-engineering.md)

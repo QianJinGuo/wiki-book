@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/plaid-effects.md`
 
-
 ## 核心要点
 - Plaid 主办的年度金融科技峰会，聚焦 AI 与金融服务的融合
 - 2026 年主题：智能金融（Intelligent Finance），围绕 AI 在信用风险、反欺诈、支付创新中的应用
@@ -12,35 +11,6 @@
 - 参会方涵盖传统银行（FICO、TD Bank、Truist）、金融科技（Ramp、Affirm、Brex、Copilot）、Big Tech（Databricks）及支付/加密（MoonPay）等多元生态
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 **Plaid 的生态位：从 API 中间件到 AI 基础设施**
 Plaid 起家于银行账户数据连接（Auth、Identity、Transactions），但 Effects 大会的议题结构揭示了其战略跃迁：从「让应用连接银行」的工具层，演进为「为 AI 提供金融数据燃料」的基础设施层。整场活动的主线并非某一款具体产品更新，而是系统性传递一个信息——Plaid 的网络是 AI 在金融场景落地的数据地基。
 这一判断有三条证据支撑：
@@ -65,7 +35,7 @@ Effects 2026 传递的隐含信号是：开放银行（Open Banking）基础设�
 - **对于 AI/ML 工程师**：金融数据质量是模型效果的天花板——Plaid Income 新引擎解决的「存款噪声变信号」问题是一个典型特征工程挑战；收入稳定性、支出模式、多账户关联是构建金融 AI 模型的高价值特征
 - **对于投资者**：Plaid 生态的广度（从 Auth 到 LendScore、从个人理财到企业支付）使其成为金融 AI 赛道的事实观察窗口；Ramp、Affirm、Brex 等高频金融场景的规模化盈利路径值得关注
 ## 相关实体
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/094-ai.html)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch05/095-ai.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](ch03/094-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce](ch03/090-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)
 - Bnpl Walmart

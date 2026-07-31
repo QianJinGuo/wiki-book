@@ -6,27 +6,6 @@
 
 # 750B MoE PD 分离推理：AWS EFA vs 自建 RoCE 通信架构实战对比
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("B MoE PD 分离推理 AWS EFA vs 自建 RoCE"))
-    测试配置 2P2D 分离推理
-    Prefill 与 Decode 的通信模式差异
-      Prefill 所有高频通信走 NVLink
-      Decode 唯一高频通信是跨节点 MoE All-to-All
-    端到端性能对比 AWS EFA vs 客户自建 RoCE
-    为什么 EFA 在 Mean 上慢 31 UCCL-EP 的
-      DeepEP 在 IB 上的 IBGDA InfiniBand
-      UCCL-EP 在 EFA 上的 CPU Proxy 中转
-      延迟量化
-    为什么 EFA 的 Max ITL 低 73 SRD 多路径 spray
-    AWS 网络拓扑保障机制
-    EKS 软件栈分层实践 内核态在 AMI 用户态在容器
-    通信软件栈协同 NCCLMooncakeUCCL-EP
-```
-
 ## 概述
 
 AWS China Blog 2026-06-12 发布的工程实战案例：将 750B GLM-5.1-FP8（256 Expert, top-k=8）MoE 模型的 PD 分离推理（2 Prefill + 2 Decode 节点，每节点 8×H200 GPU）从客户自建 ConnectX+RoCE 集群迁移到 AWS P5en+EFA，**在相同模型/架构/负载下系统对比两种高性能网络的设计哲学与端到端性能差异**。
@@ -36,45 +15,6 @@ AWS China Blog 2026-06-12 发布的工程实战案例：将 750B GLM-5.1-FP8（2
 **核心结论**：EFA 在 Decode 阶段高频跨节点小消息上 TPOT 高 ~31%（来自 CPU Proxy 中转的 per-message 开销），但在极端尾延迟上改善 73%（SRD 多路径 spray 设计）。
 
 ## 测试配置（2P2D 分离推理）
-
-```mermaid
-graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
-    end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
-    end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
-    end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
-    end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
-```
-
 
 | 维度 | 配置 |
 |------|------|
@@ -223,11 +163,11 @@ EFA 在用户态暴露两套接口，这些通信库分别走不同路径：
 
 ## 相关主题
 
-- [AWS FSx Lustre GPUDirect 加载](ch01/1274-llm.html) — AWS 训练/推理数据加载栈
-- [AWS GRPO RLVR SageMaker](../ch11/101-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
+- [AWS FSx Lustre GPUDirect 加载](ch01/637-llm.html) — AWS 训练/推理数据加载栈
+- [AWS GRPO RLVR SageMaker](../ch11/102-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
 - [Foundation Model Building Blocks on AWS](../ch11/121-building-blocks-for-foundation-model-training-and-inference.html) — AWS 训练与推理基础组件
 - [Foundation Model Building Blocks](../ch03/092-foundation-model-building-blocks.html) — 通用基础组件
-- [GLM-5 Scaling Pain](ch01/551-scaling.html) — GLM 系列规模化的工程挑战
+- [GLM-5 Scaling Pain](ch01/557-scaling.html) — GLM 系列规模化的工程挑战
 
 > [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/750b-moe-model-roce-cluster-migration-aws-efa-prefill-decode-disaggregation.md)
 

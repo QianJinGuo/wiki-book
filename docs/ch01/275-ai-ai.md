@@ -6,55 +6,11 @@
 
 # 清华 AI 自进化组织研究报告：AI 业务资产化与公司形态重构
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("清华 AI 自进化组织研究报告 AI 业务资产化与公司形态重构"))
-    第一部分 AI 业务资产论 Pages 5-8
-    第二部分 Agent 组织革命 Pages 9-11
-    第三部分 资本市场重估 Pages 12-13
-    第四部分 AI 基础设施是下一轮工业资本开支周期 Pages 14-15
-    对企业决策者的建议
-    对投资人的建议
-    对 AI 基础设施从业者的建议
-```
-
 ## 摘要
 
 清华大学于 2026 年 6 月发布了一份 63 页的深度研究报告，系统性地提出了「AI 自进化组织」这一公司理论新范式。报告的核心命题是：AI 时代企业正在从「人类执行系统」演变为「AI 任务执行系统（Agent Runtime）」，公司的边界、资产定义、交易结构和治理逻辑都将被重构。报告从 AI 业务资产论、资本市场重估、人机权责体系三个维度展开了 10 大趋势、10 个核心命题和 10 个前沿假说，并提出五大新估值指标——智能流程覆盖率（Smart Process Coverage）、每 Agent 营收（RPA）、专有业务知识深度（PCI）、AI 服务毛利率（IGM）、AI 风险准备金（ARR）。报告的终极论断是：**AI 时代最大的红利不属于会用 AI 工具的人，而属于能重新定义公司、资产、交易、信用和治理结构的人。**
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 
 - **AI 业务资产论**：AI 投入不再是成本中心，而是需要用新估值指标衡量的业务资产
 - **硅基员工进入公司治理**：6 类 Agent（财务/法务/销售/投研/供应链/IR）进入正式治理架构

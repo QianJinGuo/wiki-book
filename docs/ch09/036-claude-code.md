@@ -4,40 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/claude-code-performance-benchmarking.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 性能基准评测"))
-    一 核心性能指标体系
-      吞吐量指标
-      延迟指标
-      Token 效率指标
-    二 工具系统性能
-      工具并发模型
-      延迟加载机制
-      工具结果大小控制
-    三 缓存策略与 Token 效率
-      Prefix Cache 优化
-      Prompt Caching 策略
-      上下文注入策略对比
-    四 上下文管理性能
-      Compact 机制
-      Subagent 上下文隔离
-    五 性能优化实践
-      环境变量调优
-      Hooks 性能影响
-      任务分解策略
-    六 行业基准对比
-      SWE-bench 性能
-      成本效率对比
-    七 深度分析
-      性能天花板
-      评测方法论挑战
-      未来优化方向
-```
-
 ## 概述
 
 Claude Code 性能基准评测涵盖**吞吐量、延迟、Token 效率、上下文利用率**四大维度。与传统基准测试不同，Claude Code 作为 Agent 框架，其性能不仅取决于底层模型，还受 **Harness 设计、工具并发模型、缓存策略**的综合影响。
@@ -45,41 +11,6 @@ Claude Code 性能基准评测涵盖**吞吐量、延迟、Token 效率、上下
 ---
 
 ## 一、核心性能指标体系
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 1.1 吞吐量指标
 
@@ -336,10 +267,10 @@ Claude Code 性能评测揭示了 Agent 编程工具的核心性能规律：**�
 
 ## 相关主题
 
-- [Claude Code 架构深度解析](../ch03/078-claude-code.html)
-- [12 个 Harness 设计模式](../ch03/070-claude-code-agent.html)
+- [Claude Code 架构深度解析](../ch03/077-claude-code.html)
+- [12 个 Harness 设计模式](../ch03/069-claude-code-agent.html)
 - [Prompt Caching 工程实践](../ch01/217-anthropic-prompt-caching-claude-code.html)
-- [Subagent 上下文卫生](../ch04/311-claude-code-subagent.html)
+- [Subagent 上下文卫生](../ch04/313-claude-code-subagent.html)
 - [上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-deep-architecture-analysis.md)

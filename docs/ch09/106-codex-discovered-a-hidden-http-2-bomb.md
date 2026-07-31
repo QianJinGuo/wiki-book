@@ -2,65 +2,17 @@
 
 ## Ch09.106 Codex Discovered a Hidden HTTP/2 Bomb
 
-> 📊 Level ⭐⭐ | 7.5KB | `entities/califio-codex-http2-hpack-bomb-880k-servers.md`
+> 📊 Level ⭐⭐ | 7.6KB | `entities/califio-codex-http2-hpack-bomb-880k-servers.md`
 
 # Codex Discovered a Hidden HTTP/2 Bomb
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/califio-codex-http2-hpack-bomb-880k-servers.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex Discovered a Hidden HTTP2 Bomb"))
-    放大率不来自解码量是新型 bomb 的本质
-    RFC 9113 823 自身的友好性被武器化
-    压到 swap 但不让 OOM 是更阴险的攻击策略
-    Codex 这次发现是 AI 安全研究范式的分水岭
-```
 
 ## 摘要
 
 Calif.io 2026-06-02 公开披露"HTTP/2 Bomb"——一种利用 HPACK 索引引用 + 零字节流控窗口组成的远程 DoS 攻击，影响 nginx/Apache/IIS/Envoy/Pingora 五大主流 web 服务器的默认配置。Shodan 扫描发现 **880,000+** 暴露站点存在风险。该攻击链由 OpenAI Codex 编码模型发现，是 AI 作为漏洞发现者的首批公开重大披露之一。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 - **影响范围极大**：nginx、Apache httpd、Microsoft IIS、Envoy、Cloudflare Pingora 五大主流服务器默认配置均受影响，Shodan 估测 880K+ 站点可被攻击
 - **两段已知技术被 AI 链成新攻击**：HPACK 索引引用放大（每 1 字节上行 → 70-4000 字节服务器分配）+ 零字节 WINDOW_UPDATE 持续占位
@@ -104,11 +56,11 @@ Cookie 头在 HTTP/2 中可拆成多个 crumb 字段（RFC 9113 §8.2.3 明文�
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/235-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/237-openclaw.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1175-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

@@ -8,22 +8,6 @@
 
 基于若飞（架构师 JiaGouX）对 Anthropic Claude Code/Cowork 负责人 Fiona Fung 访谈的深度分析，探讨 AI 放大代码吞吐后工程组织的瓶颈迁移。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 8x 产出复盘 从代码吞吐到验证协作接口"))
-    核心数据
-    与现有实体的关系
-    瓶颈迁移 从写代码到验证代码
-    Spec 即验证接口 TDD 在 AI 时代的复活
-    BadSad 质量框架 从二元判定到分级体验
-    Routines 反馈循环的工程化
-    未解决的工程问题
-    渐进式落地策略
-```
-
 ## 核心数据
 
 - 2026 Q2，Anthropic 工程师平均每天合入代码为 2024 年的 **8 倍**
@@ -31,41 +15,6 @@ mindmap
 - 但代码行数 ≠ 质量，8 倍可能高估真实生产率
 
 ## 与现有实体的关系
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 与 `Claude Code 27 Tips Engineering Upgrade Jiagoux 2026`（同作者若飞）互补——27 条技巧聚焦个体效率提升，本实体聚焦 Fiona Fung 访谈揭示的组织级变化：验证取代编写成为新瓶颈、Spec 即验证接口、Routines 重构反馈流程、Bad/Sad 质量框架、6 个协作接口（SPEC/STATE/EVIDENCE/IMPACT/PERMISSION/HANDOFF）。也与 `Claude Code Demo To Production 8 Gates Huang Jia Csdn 2026`（黄佳 8 关卡）互补——8 关卡聚焦企业门禁，本实体聚焦 Anthropic 内部的组织演进和未解问题。
 

@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/claude-code-agent-teams-architecture.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code Agent Teams 架构分析"))
-    三种多 agent 形态的边界
-    四大架构组件
-      Team Lead
-      Teammates
-      Task List 协作核心
-    Hooks 质量检查点
-    Context 隔离是最大价值
-    权限继承的坑
-    官方限制 不适合生产的原因
-    设计借鉴 混合架构
-    Task List 的设计哲学 从聊天协调到结构化协调
-```
-
 ## 核心结论
 
 Claude Code Agent Teams 把多 agent 协作做成了一套**本地 runtime**：一个 lead、多个独立 Claude Code session、一个共享 task list、一个 mailbox、再加 hooks 做质量检查点。
@@ -30,41 +11,6 @@ Claude Code Agent Teams 把多 agent 协作做成了一套**本地 runtime**：�
 **判断**：Agent Teams 目前是 experimental，不适合直接当生产级编排内核，但它把下一代 coding agent runtime 的骨架暴露得非常清楚。
 
 ## 三种多 agent 形态的边界
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | 形态 | 核心用途 | 通信方式 | 生命周期 | 适合场景 |
 |------|---------|---------|---------|---------|
@@ -256,11 +202,11 @@ Context 隔离不只是防止污染，还有另一层价值：**它让并行变�
 6. **成本控制要有硬性边界**。Agent Teams 的 token 开销是标准 session 的 7x（在 plan mode 下）。实现一个 `shouldUseAgentTeam()` 函数，在 spawn 前做判断——不是所有复杂任务都需要动态 team，固定状态机 + 按需拉 team 的混合架构更可持续。
 
 ## 相关实体
-- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/328-claude-code-agent-teams.html)
+- [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/329-claude-code-agent-teams.html)
 - [Claude Code Dynamic Workflows Multi Agent Orchestration](ch09/094-claude-code-dynamic-workflows.html)
 - [Claude Code Agent View](ch09/003-claude-code-agent-view.html)
 - [Claude Code Agent View Huashu](ch09/003-claude-code-agent-view.html)
-- [Claude Code Architecture](../ch03/078-claude-code.html)
+- [Claude Code Architecture](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-teams-xingxiaozhao.md)
 - [routa 多智能体协同交付平台](../ch03/035-agent.html)

@@ -4,40 +4,10 @@
 
 > 📊 Level ⭐ | 5.8KB | `entities/www.cio-4171054-ai-driven-layoffs-arent-making-bus.md`
 
-
 ## 摘要
 CIO.com 的一篇分析文章探讨了企业通过 AI 驱动裁员来提升效率的趋势，但指出这种做法并未真正带来预期的业务改善。文章的核心观点是：单纯通过 AI 替代人力来降低成本是一种短视策略，真正的效率提升需要将 AI 与人力结合进行业务重构。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 - AI 驱动的裁员并未显著提升企业运营效率
 - 单纯用 AI 替代人力是成本削减手段而非真正的效率提升
 - 成功的企业将 AI 作为员工能力的放大器，而非替代品
@@ -66,10 +36,10 @@ graph TB
 
 ## 相关实体
 - [Ai Driven Layoffs Business Sense Cio](ch03/011-cio.html)
-- [Ai Driven Layoffs Arent Making Business Sense](../ch05/094-ai.html)
+- [Ai Driven Layoffs Arent Making Business Sense](../ch05/095-ai.html)
 - [Enterprise Ai Investment Data Readiness Cio](ch03/011-cio.html)
 - [Aliyun Cio Ai Rd Efficiency](ch03/011-cio.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/094-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio-4171054-ai-driven-layoffs-arent-making-bus.md)
 

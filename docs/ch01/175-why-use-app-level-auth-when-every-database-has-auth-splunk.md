@@ -6,60 +6,14 @@
 
 # Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Why Use App-Level Auth When Every"))
-    实战启示
-    上线状态 链接
-```
-
 ## 相关实体
-- [microsoft is quietly shopping for an openai replacement](ch01/036-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [vietnam to develop domestic cloud](ch01/1116-opd.html)
-- [akamai acquires israeli ai browser security startup layerx f](../ch05/094-ai.html)
+- [microsoft is quietly shopping for an openai replacement](ch01/037-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [vietnam to develop domestic cloud](ch01/1119-opd.html)
+- [akamai acquires israeli ai browser security startup layerx f](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 1. **Pre-auth RCE via Splunk Enterprise search companion — CVE-2026-20253** — Splunk's `splunkd` management port (8089) exposed Python code paths (search assistant, deployment client) that didn't enforce app-level auth context. An unauthenticated attacker could trigger code execution by sending crafted JSON RPC calls.
 2. **The systemic anti-pattern: 'database has auth, so app can skip it'** — Many enterprise apps assume the underlying DB authenticates connections, so they don't re-validate user identity at the app layer. The Splunk CVE shows this is wrong: an attacker can issue RPC calls that bypass the DB layer entirely, hitting the app's internal API directly.

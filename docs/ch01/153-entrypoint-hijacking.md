@@ -4,49 +4,12 @@
 
 > 📊 Level ⭐ | 3.7KB | `entities/entrypointhijacking.md`
 
-
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/entrypointhijacking.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 EntryPoint Hijacking 是一种**无新建线程**的代码注入技术，核心创新在于将恶意代码写入内存后不立即执行，而是等待进程正常创建新线程时触发。这与传统的 Thread Injection（CreateRemoteThread）等技术的根本区别在于：不依赖 API 调用产生新线程，不在进程上下文留下明显的线程创建痕迹，从而大幅提升 EDR 规避能力。
 **技术原理解构**：Windows 加载器（ntdll!Ldrp）维护已加载 DLL 的 EntryPoint 地址记录。攻击者覆写 DLL 的 EntryPoint（如 kernelbase.dll），将执行流重定向到恶意代码。由于 Windows 通过 EntryPoint 属性识别 DllMain()，加载器在触发 DLL 事件时会自动调用被篡改的入口点。LdrShuffle 和 EPI 两个 PoC 在执行机制上有所不同：LdrShuffle 通过 QueueUserWorkItem 在线程池线程执行；EPI 通过 patch PEB + 进程线程池执行，但都利用了 EntryPoint 属性这一共同攻击面。
 **检测的核心挑战**：EntryPoint 被篡改后会立即恢复（LdrShuffle 在 DontCallForThreads 检查后快速恢复原始 EntryPoint），因此 EDR 的定时内存扫描只能捕捉到极短的 hijack 窗口。有效的检测必须依赖完整性检查（PEB loader structures）+ 内存属性变更监控（MEM_IMAGE → MEM_PRIVATE）+ WriteProcessMemory 遥测的组合。

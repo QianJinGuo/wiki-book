@@ -4,66 +4,7 @@
 
 > 📊 Level ⭐ | 8.6KB | `entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Mozilla warns UK Breaking VPNs"))
-    背景与事件
-    政策背景 Online Safety Act 与 age
-      政策演进
-      VPN 使用量飙升
-    Mozilla 的核心论点
-      VPN 是基本安全基础设施 非青少年禁品
-      阻断 VPN 的逻辑悖论
-      实证证据 儿童实际绕过方式
-    技术困境 监管 VPN 的执行难题
-      对商业 VPS 提供商的要求
-      浏览器内置 VPN 的趋势
-    监控基础设施的悖论
-    政策效果的实证缺失
-    全球监管趋势与地域差异
-    对行业的长远影响
-```
-
 ## 背景与事件
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 Mozilla 于 2026 年 5 月向英国科学、创新与技术部（Department for Science, Innovation and Technology）提交的"Growing up in the online world"consultation 提交了书面意见，反对对 VPS 提供商强制实施 VPN 阻断措施。
 Mozilla 在意见书中明确指出：VPN 是"essential privacy and security tools"，被全球数百万人用于日常网络安全需求，包括公共 Wi-Fi 防护、远程办公流量保护，以及记者、活动人士等弱势群体的安全通信。
 Svea Windwehr，Mozilla 政策经理，在意见书中引用了 Mozilla 长期坚持的立场：
@@ -134,8 +75,8 @@ Mozilla 测试浏览器内置 VPN 的事实表明，技术行业正在用集成�
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](ch12/074-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](ch12/074-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme
-- [Computerweekly Ico Fines Cl0P South Staffs Water](../ch01/1243-0.html)
-- [Nathan Lambert Claude Mythos Open Weights](../ch01/403-nathan-lambert.html)
+- [Computerweekly Ico Fines Cl0P South Staffs Water](../ch01/1248-0.html)
+- [Nathan Lambert Claude Mythos Open Weights](../ch01/404-nathan-lambert.html)
 
 ---
 

@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("三器合一 gstack Superpowers OpenSpec"))
-    元信息
-    核心概念
-    四个关键串联点
-      OpenSpec 产物 gstack 评审
-      Superpowers HARD-GATE 自动拦截
-      Superpowers TDD gstack review 质量提升
-    完整工作流示例 加暗色模式
-    避坑要点
-    三层架构的协同逻辑
-    HARD-GATE 的本质
-    TDD 与 review 的互补性
-```
-
 ## 元信息
 - **作者**：AgentBuff
 - **日期**：2026-05-12
@@ -31,37 +12,6 @@ mindmap
 - **关联工具**：OpenSpec、Superpowers、gstack
 
 ## 核心概念
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 三个工具在同一个 Claude Code 会话中串联整合，各管不同层次，互不干扰：
 | 工具 | 职责 | 存储位置 |
 |------|------|----------|
@@ -109,11 +59,11 @@ TDD 铁律（先写失败测试再写代码）作为 skill 文件规则自动执
 - gstack：执行层工具，Browse 引擎 + 7 阶段 Sprint 管线
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch05/120-harness-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](../ch01/358-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/397-agent-skills.html)
-- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/078-claude-code.html)
-- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](../ch04/355-agent-principle-architecture-engineering-practice.html)
+- [Codeindex · 让大模型更好地理解你的代码](../ch01/359-codeindex.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/401-agent-skills.html)
+- [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/077-claude-code.html)
+- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/357-agent-principle-architecture-engineering-practice.html)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/035-agent.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 

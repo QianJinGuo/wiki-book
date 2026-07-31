@@ -6,23 +6,6 @@
 
 # Claude Code 个人学习系统：从答案机到学习工作台
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 个人学习系统 从答案机到学习工作台的 5 步法"))
-    两种用法的对比
-    最小可用版 4 个文件
-    步法
-      Step 1 学习契约 把目标变成可检查对象
-      Step 2 控制资料 不要超过 5 个
-      Step 3 先让它做考官 答案不能提前出现
-    验收标准
-    边界与局限
-    与 Harness Engineering 的关系
-```
-
 ## 核心洞察
 
 > "当 AI 已经很会给答案，学习的关键就变成了：能不能给自己搭一个暴露问题的系统。"
@@ -30,41 +13,6 @@ mindmap
 Claude Code 不只是写代码工具——它是一个能读文件、改文件、跑命令的工作台，可以维护一个**学习项目**。核心转变：从"答案机"到"学习工作台"。
 
 ## 两种用法的对比
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | | 答案机模式 | 学习工作台模式 |
 |---|----------|--------------|
@@ -162,8 +110,8 @@ Bastani 等人(PNAS 2024)研究：无护栏 GPT-4 提高当场表现，但 AI �
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Harness Engineering 10 Step Practical Guide 2026](../ch05/120-harness-engineering.html)
-- [Karpathy Llm Wiki Second Brain Awkthole](../ch01/1274-llm.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/598-anthropic-claude-code.html)
+- [Karpathy Llm Wiki Second Brain Awkthole](../ch01/637-llm.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/286-anthropic-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-personal-learning-system-ruofei.md)
 

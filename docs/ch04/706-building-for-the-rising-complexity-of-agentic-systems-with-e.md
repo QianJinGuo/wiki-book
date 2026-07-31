@@ -4,29 +4,6 @@
 
 > 📊 Level ⭐⭐⭐ | 14.0KB | `entities/nvidia-agentic-systems-extreme-co-design.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building for the Rising"))
-    从 Chatbot 到 Agent 的演进
-      三种 AI 交互模式 按复杂度排序
-    Agentic 架构特性
-      Primary Sub-Agent 架构
-      真实 Trace Claude Code 33 分钟编码会话
-      Prompt Caching 系统级挑战
-    核心性能挑战 延迟与吞吐的根本矛盾
-    Extreme Co-Design NVIDIA 的解法思路
-      硬件架构全景
-      软件优化层
-      关键设计原则
-    Agentic 工作负载重新定义 AI 基础设施需求
-    上下文带宽成为新型 IO 瓶颈
-    Prompt Caching 的高命中率证明 Agentic
-    延迟 吞吐 上下文长度构成不可能三角 硬件专业化是必然
-```
-
 ## 概述
 
 NVIDIA 2026 年技术博客指出，生成式 AI 的第一章由「人类发请求、模型作响应」定义，第二章——**agentic 时代**——的本质截然不同：Agent 调用工具、生成子代理、在记忆中保留信息、管理自身上下文窗口，并自行判断任务完成时机。这种转变将 token 消耗量、上下文长度和延迟一并推向极高需求区域。
@@ -34,37 +11,6 @@ NVIDIA 2026 年技术博客指出，生成式 AI 的第一章由「人类发请�
 ## 从 Chatbot 到 Agent 的演进
 
 ### 三种 AI 交互模式（按复杂度排序）
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 博客将 AI 交互模式划分为三个递进层级：
 
@@ -223,10 +169,10 @@ NVIDIA 的 Extreme Co-Design 强调 Vera CPU 承担「长上下文检索操作�
 
 ## 相关实体
 - [Nvidia Extreme Co Design Agentic Systems](ch04/049-nvidia-extreme-co-design-agentic-systems.html)
-- [Lightseek Tokenspeed](../ch01/1189-lightseek-tokenspeed.html)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/078-claude-code.html)
+- [Lightseek Tokenspeed](../ch01/1202-lightseek-tokenspeed.html)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/077-claude-code.html)
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/295-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/566-amazon-bedrock-agentcore.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-systems-extreme-co-design.md)

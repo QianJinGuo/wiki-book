@@ -11,22 +11,6 @@
 
 2026-06-14 22:46,架构师 JiaGouX 公众号(若飞)在 Claude Fable 5 提示词泄漏(CL4R1T4S 1585 行)+ Anthropic 2026-06-12 因美国政府指令暂停 Fable 5/Mythos 5 访问 这一连串事件后,发表了**标志性的"Agent 拼 Runtime"工程拆解**。文章主轴不是事件本身,而是借势提问:**强模型开始接长任务后,系统到底要补哪一层?**
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Fable 5 的信号Agent 开始拼 Runtime"))
-    核心概念 1Runtime 模型背后的基础设施
-    核心概念 2Runtime Contract 而非 Prompt
-    核心概念 3Task Brief 9 字段模板
-    核心概念 4能力路由 8 维度
-    核心概念 5执行状态 账本而非聊天记录
-    核心概念 6长任务适配判断表
-    核心概念 7设计对象变了 8 维度 Runtime 清单
-    核心洞察Prompt 可复制 vs Prompt 难复制
-```
-
 ## 核心概念 1:Runtime ≠ 模型背后的基础设施
 
 > Runtime 不只是模型背后的基础设施。它更像一套 **Agent 运行协议**。
@@ -43,37 +27,6 @@ mindmap
 **这与模型能力并列,但分属不同层**。文章用一张图把主线收住(图 1:**Agent Runtime 四层**)——本文没有截图,但根据前后文,四层即: **任务协议层 / 能力路由层 / 执行状态层 / 治理层**。
 
 ## 核心概念 2:Runtime Contract 而非 Prompt
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **Fable 5 提示词的真正突破**是它在定义 **Agent Runtime 的运行契约**,而非简单的"让模型表现更好"。
 
@@ -222,8 +175,8 @@ graph TB
 
 **Fable 5 主题簇**(本文与 4 个现有 entity 全部为新视角):
 
-- vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](../ch01/604-anthropic-claude.html)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
-- vs **[Claude Fable 5 and new AI safety fables](../ch01/914-claude-fable-5-and-new-ai-safety-fables.html)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
+- vs **[Anthropic Claude Fable 5 on AWS:Mythos 级功能](../ch01/1354-anthropic-claude.html)** — 那是**AWS 官方产品介绍**(功能/部署/内置保护),本文是**架构师工程化拆解**(Runtime 协议层)。两者互补。
+- vs **[Claude Fable 5 and new AI safety fables](../ch01/927-claude-fable-5-and-new-ai-safety-fables.html)** — Nathan Lambert 的**政策分析**(数据保留/prompt 过滤/用户未告知模型修改),本文**不**涉及政策。
 - vs **[Claude Fable 5 — Mollick patron vs wizard](../ch01/173-claude-fable-5.html)** — Mollick 的**hands-on 用户体验视角**(4 用例 + patron vs wizard 框架),本文是**架构师工程视角**。两者对应"产品体验"vs"产品架构"。
 - vs **[Claude Fable 5 提示词泄漏 — Runtime Control Plane 安全工程启示](../ch01/173-claude-fable-5.html)** — 同样用"Runtime"概念,但**VibeCoder 重点在安全工程** (Prompt 不能当保险箱 / 攻击面像系统 / 分类器组合风险),**本文重点在工程协议** (Task Brief / 能力路由 / 状态账本 / 治理层)。两者**完全互补**: 一个看 Runtime 怎么被攻击,一个看 Runtime 怎么被设计。
 
@@ -231,9 +184,9 @@ graph TB
 
 - vs **[若飞 5 张卡治理 (Hermes)](../ch03/096-hermes-agent.html)** — 若飞把 Hermes Agent 长跑治理拆为 5 张卡,**侧重"治理框架"**;本文把 Fable 5 Runtime 拆为 9+8+5+8 维度,**侧重"运行时契约"**。两者是**"治理框架 vs 运行时协议"** 同主题不同切面。
 - vs **[若飞 long-running agent ralph loop 状态交接](../ch05/009-harness.html)** — 那是 **Ralph loop 状态交接**具体工程模式;本文是 **Runtime 协议**宏观框架。
-- vs **[Claude Code agent teams task decomposition ruofei](../ch01/328-claude-code-agent-teams.html)** — 那是**任务分解**(具体执行);本文是**任务协议** (前置契约)。
-- vs **[Harness Engineering Deletable Worksite](../ch05/113-harness-engineering-deletable-worksite-ruofei.html)** — 那是 **Harness 可删工作位**的精简原则;本文是 **Runtime 4 层**(包含 Harness 作为"工具路由层"的子集)。
-- vs **[若飞 agent memory architecture](ch04/121-agent-memory.html)** — 那是 **Memory 架构**;本文**执行状态账本** 5 类中包含 memory。
+- vs **[Claude Code agent teams task decomposition ruofei](../ch01/329-claude-code-agent-teams.html)** — 那是**任务分解**(具体执行);本文是**任务协议** (前置契约)。
+- vs **[Harness Engineering Deletable Worksite](../ch05/071-harness-engineering-deletable-worksite-ruofei.html)** — 那是 **Harness 可删工作位**的精简原则;本文是 **Runtime 4 层**(包含 Harness 作为"工具路由层"的子集)。
+- vs **[若飞 agent memory architecture](ch04/098-agent-memory.html)** — 那是 **Memory 架构**;本文**执行状态账本** 5 类中包含 memory。
 
 **Runtime / Agent 架构** 主题簇:
 
@@ -257,7 +210,7 @@ Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 T
 
 ### 4. 执行状态账本设计是长任务 Agent 的核心工程难题
 
-长任务 Agent 不能只靠聊天记录记住自己做过什么——这个判断来自 Anthropic 官方文档,被若飞拆解为 5 类状态账本(memory/Artifact storage/文件账本/工具历史/进度声明校验)。这与 [若飞 agent memory architecture](ch04/121-agent-memory.html) 中的"记忆架构决定 Agent 能否真正完成任务"高度相关。核心洞察是:**状态管理不只是"有没有 memory",而是"状态是否可以被验证和交接"**。进度声明必须回到本轮工具结果校验,这是一个朴素的工程原则,但在 AI Agent 场景下被放大——模型的"自信"可能掩盖实际的工具调用失败,而没有结构化账本,工程师无法事后重建真实执行路径。
+长任务 Agent 不能只靠聊天记录记住自己做过什么——这个判断来自 Anthropic 官方文档,被若飞拆解为 5 类状态账本(memory/Artifact storage/文件账本/工具历史/进度声明校验)。这与 [若飞 agent memory architecture](ch04/098-agent-memory.html) 中的"记忆架构决定 Agent 能否真正完成任务"高度相关。核心洞察是:**状态管理不只是"有没有 memory",而是"状态是否可以被验证和交接"**。进度声明必须回到本轮工具结果校验,这是一个朴素的工程原则,但在 AI Agent 场景下被放大——模型的"自信"可能掩盖实际的工具调用失败,而没有结构化账本,工程师无法事后重建真实执行路径。
 
 ### 5. Fable 5 事件是 Agent 治理从"产品内嵌"走向"显性协议"的拐点
 
@@ -286,13 +239,13 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-fable-5-agent-runtime-contract-ruofei-2026.md)
 - [Claude Fable 5 提示词泄漏 — Runtime Control Plane](../ch01/173-claude-fable-5.html)
-- [Anthropic Claude Fable 5 on AWS](../ch01/604-anthropic-claude.html)
-- [Claude Fable 5 and new AI safety fables](../ch01/914-claude-fable-5-and-new-ai-safety-fables.html)
+- [Anthropic Claude Fable 5 on AWS](../ch01/1354-anthropic-claude.html)
+- [Claude Fable 5 and new AI safety fables](../ch01/927-claude-fable-5-and-new-ai-safety-fables.html)
 - [Claude Fable 5 — Mollick patron vs wizard](../ch01/173-claude-fable-5.html)
 - [若飞 5 张卡治理](../ch03/096-hermes-agent.html)
 - [若飞 Ralph loop 状态交接](../ch05/009-harness.html)
-- [Claude Code agent teams task decomposition](../ch01/328-claude-code-agent-teams.html)
-- [Harness Engineering Deletable Worksite](../ch05/113-harness-engineering-deletable-worksite-ruofei.html)
+- [Claude Code agent teams task decomposition](../ch01/329-claude-code-agent-teams.html)
+- [Harness Engineering Deletable Worksite](../ch05/071-harness-engineering-deletable-worksite-ruofei.html)
 - [Agent 架构关键变化:Harness 正在成为新后端](../ch05/009-harness.html)
 - [Harness Engineering Framework](../ch05/120-harness-engineering.html)
 - [纳德拉「Token 资本」论](../ch12/003-token.html)

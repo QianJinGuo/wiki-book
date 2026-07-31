@@ -6,22 +6,6 @@
 
 > -> **knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集**
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("knowledge-work-plugins拆解"))
-    仓库定位 不是框架 是岗位封装
-    四种组件 Skills 是核心
-    渐进式披露 三级信息加载解决上下文瓶颈
-    占位符 工具无关抽象
-    落地优先级 参考 txtmixcom
-    对 Agent Builder 的可借鉴设计
-    关键判断
-    何时不要用
-```
-
 ## 核心要点
 
 - `anthropics/knowledge-work-plugins` 是 Anthropic 官方开源的插件集合，给 Claude 装上销售/客服/产品/法务/金融/数据/营销/HR/工程等不同岗位的专业技能
@@ -36,39 +20,6 @@ mindmap
 - Standalone + Supercharged 双模：没外部工具时独立工作，连接 MCP 后能力自动增强
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 ### 仓库定位：不是框架，是岗位封装
 

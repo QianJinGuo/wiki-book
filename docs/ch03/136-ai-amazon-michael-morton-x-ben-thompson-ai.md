@@ -8,54 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-ecommerce-brand-com-vs-marketplace-founder-park.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI 没把更多流量导向 Amazon 利好品牌官网 Michael"))
-    五大核心观点
-      AI 导流 4-8 倍偏向品牌官网
-      Shopify 的护城河是基础设施栈 不可被 Vibe
-      AI 是导流渠道 referral channel 不是分发平台
-    关键引用
-    与现有知识的关系
-```
-
 ## 摘要
 
 Founder Park 发布的对谈记录。股票分析师 Michael Morton（MoffettNathanson）与 Ben Thompson（Stratechery）深入讨论 AI 对电商格局的影响。核心论点：AI 并未像市场担心的那样成为新的交易平台，反而像升级版 Google Search，将流量 4-8 倍地导向品牌官网而非 Amazon 等市场平台。
 
 ## 五大核心观点
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 ### 1. AI 导流 4-8 倍偏向品牌官网
 
@@ -88,8 +45,8 @@ AI 并没有取代交易闭环——ChatGPT checkout 的失败证明了这一点
 
 ## 与现有知识的关系
 
-- [Amazon Alexa Storefront](https://github.com/QianJinGuo/wiki/blob/main/entities/Amazon-Turns-Alexa-Into-Its-Next-Storefront.md) — Amazon 自身的 AI 电商尝试，可对比本文的"AI 做不了交易平台"论点
-- [Thrive Capital Shopify AI 投资](../ch01/1243-0.html) — Shopify AI 战略的另一个视角
+- [Amazon Alexa Storefront](../ch01/066-amazon-turns-alexa-into-its-next-storefront.html) — Amazon 自身的 AI 电商尝试，可对比本文的"AI 做不了交易平台"论点
+- [Thrive Capital Shopify AI 投资](../ch05/095-ai.html) — Shopify AI 战略的另一个视角
 
 ---
 

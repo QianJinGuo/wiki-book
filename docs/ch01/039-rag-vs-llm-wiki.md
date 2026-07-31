@@ -4,25 +4,6 @@
 
 > 📊 Level ⭐ | 8.5KB | `entities/rag-vs-llm-wiki-enterprise-knowledge-base.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("RAG vs LLM Wiki 深度对比 企业知识库架构选型指南"))
-    评分
-    与现有 wiki 的关系
-    核心框架
-      RAG 五大真实痛点
-      LLM Wiki 三层架构
-      成本核心差异
-    趋势判断
-    Chunking 矛盾揭示 RAG 的架构性天花板
-    无状态记忆使 RAG 在知识复用上存在系统性缺陷
-    文档质量是 RAG 的隐性瓶颈 往往被低估
-    LLM Wiki 的核心优势在于知识的有状态化
-```
-
 ## 评分
 - **价值**：9/10 — 系统性对比 RAG 五大痛点的根因分析 + 场景选型决策矩阵 + 趋势预判，对该 wiki 自身建设有直接参考价值
 - **置信度**：8/10 — 源自 Karpathy/微软 GraphRAD/公开工程案例，作者有独立判断
@@ -30,41 +11,6 @@ mindmap
 - **策略对齐**：与 [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) 互补（概念介绍 vs 系统对比）；本文 wiki 本身就是 LLM Wiki 实践案例
 
 ## 与现有 wiki 的关系
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 - **互补**： 介绍 LLM Wiki V2 的 5 项核心升级，本文是 RAG vs LLM Wiki 的全面对抗性对比
 - **填补空白**：wiki 缺乏 RAG 技术架构的系统性批评分析和场景选型框架
 - **实践关联**：本文 wiki 正是 LLM Wiki 范式的实例——实体页 + 概念页 + raw 三层 + AI 驱动的 Ingest/Query/Lint
@@ -138,8 +84,8 @@ Schema 设计的失误在后期修正成本极高（需要重新 Ingest 全量�
 ## 相关实体
 - [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](ch01/223-rag.html)
 - [向量库·知识图谱·本体论：RAG知识系统演进](ch01/223-rag.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](ch01/665-llm-wiki-obsidian-wiki-gbrain.html)
-- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](ch01/913-20.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](ch01/677-llm-wiki-obsidian-wiki-gbrain.html)
+- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](ch01/926-20.html)
 - [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 

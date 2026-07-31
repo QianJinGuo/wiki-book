@@ -6,7 +6,6 @@
 
 > -> [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 
-
 ## 深度分析
 deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 LLM 直接扫描代码（幻觉率高、误报率难以控制），而是将安全发现流程拆解为 Scan → Investigate → Revalidate → Enrich → Export 的多 agent 协作流水线。
 **Scan 阶段**：纯 regex，仅定位 security-sensitive 区域，不做任何语义判断。这一步的作用是缩小后续 expensive agent 调查的范围——一个大仓库可能有数万文件，但 security-sensitive 区域往往集中在 auth、data-access、crypto、input-validation 等少数模块。
@@ -15,42 +14,6 @@ deepsec 的架构代表了一种新型 AI-native 安全扫描范式：不是用 
 **Vercel Sandboxes 的 fanout 能力**：对于超大型 monorepo（Vercel 自身跑出 1000+ concurrent sandboxes），并行化扫描解决了 agentic scanning 的时间瓶颈。但需要注意：fanout 到 Vercel Cloud Sandbox 意味着你的代码会离开你的基础设施——对于金融、医疗、政府等强合规要求的行业，这是一个需要评估的 data residency 问题。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - **适用场景判断**：deepsec 最适合应用层代码（web apps、后端 services），特别是有认证、数据访问、支付等高价值攻击面的系统。对于 library/framework 代码，需要自定义 scanner 和 prompt，效果可能不如应用层。
 - **集成到 SDLC**：建议将 deepsec 作为 CI 的 pre-merge gate，而非 post-deploy 扫描。越早发现安全漏洞，修复成本越低。但需要配置好 revalidate 阶段以避免阻断正常开发流程。
 - **自定义 scanner 是关键护城河**：开箱即用的 scanner 覆盖面有限。Vercel 自身在扫描自己代码库后专门开发了覆盖所有认证路径的 custom plugin。建议：用 initial scan 发现共性问题 → 让 coding agent 分析 pattern → 生成针对你 codebase 的 custom matchers。
@@ -60,7 +23,7 @@ graph TB
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [The best argument I've heard for why AI won't take your job](../ch05/094-ai.html)
+- [The best argument I've heard for why AI won't take your job](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cpanel-whm-patch-3-new-vulnerabilities.md)
 

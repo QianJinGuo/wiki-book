@@ -6,66 +6,11 @@
 
 # MUSE-Autoskill：字节 ByteBrain 自进化 Agent 五阶段技能生命周期，arXiv 2605.27366
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MUSE-Autoskill 字节 ByteBrain 自进化"))
-    时代背景
-    核心痛点
-    现有 Agent 四大致命缺陷
-    核心创新 软件工程最佳实践引入 Agent
-    MUSE-Autoskill 核心架构
-      技能定义 遵循 Anthropic Agent Skills 开放标准
-      五阶段统一技能生命周期 核心贡献
-      上下文管理系统
-    三大创新点
-      创新一 软件工程最佳实践引入 Agent
-      创新二 技能级记忆 让经验真正可积累
-      创新三 外部化技能 实现跨 Agent 知识共享
-    SkillsBench 基准测试
-    自动技能生成 最令人震惊
-```
-
 ## 概述
 
 字节跳动 ByteBrain 团队 2026-05-26 发布 arXiv 2605.27366 论文《MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation》。**全称 Memory-Utilizing Skill Evolution Agent**。核心创新：把技能管理抽象为五阶段统一生命周期（创建/记忆/管理/评估/改进），遵循 Anthropic Agent Skills 开放标准。**关键结果：SkillsBench 51 任务，自生成技能准确率 87.94% 显著超过人类技能 68.40%；MUSE 生成技能注入 Hermes，关闭 79% 与人类技能差距**。
 
 ## 时代背景
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 2026-05-26 字节 ByteBrain 团队发布 MUSE-Autoskill。**同一周**：
 - 开源 Agent 框架 DeerFlow 在 GitHub Trending 持续发酵
@@ -306,12 +251,12 @@ graph TB
 
 ## 相关实体
 - [Ara Agent Native Research Artifact 37Authors](../ch03/035-agent.html)
-- [Memento Skills Let Agents Design Agents](../ch03/072-skills.html)
+- [Memento Skills Let Agents Design Agents](../ch03/071-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md)
 
-- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](../ch01/742-9.html)
-- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](ch04/271-skill.html)
+- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](../ch01/755-9.html)
+- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](ch04/273-skill.html)
 
 ## 深度分析
 

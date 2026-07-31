@@ -9,25 +9,6 @@
 # Claude Code Agent View
 **Agent View** 是 Anthropic 在 Claude Code v2.1.139 中推出的多 Agent 可视化面板，被其工程 lead Thariq 称为「给 Claude Code 的 tmux」。它解决的不是 AI 能力问题，而是**人类在多 Agent 工作流中的注意力分配问题**——当同时运行 N 个 Claude Code 实例时，人的调度能力成为瓶颈。[^1]
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code Agent View"))
-    核心设计
-      三层架构
-      关键能力
-      四个关键技术细节1
-    与 Hermes 的关联
-    多 Agent 协作的注意力经济学
-    平台化的必然性 Sherlocking 时刻
-    三层架构的认知价值
-    Worktree 隔离的工程哲学
-    对个人用户
-    对工具设计者
-```
-
 ## 核心设计
 ### 三层架构
 Claude Code 中有三个易混淆但本质不同的概念：[^1]
@@ -50,41 +31,6 @@ Claude Code 中有三个易混淆但本质不同的概念：[^1]
 4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识
 
 ## 与 Hermes 的关联
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Agent View 解决的问题域与 Hermes 的 [Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 高度相关：
 
 - Hermes 通过 wiki-pipeline 编排多个 agent 协作
@@ -132,25 +78,25 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - Release v2.1.139: https://github.com/anthropics/claude-code/releases/tag/v2.1.139
 
 ## 相关实体
-- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
+- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/058-agent-harness.html)
-- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/078-claude-code.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/078-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
+- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/077-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/076-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/089-claude-code-1.html)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
-- [Claude Opus 4.7 发布分析](../ch01/349-claude-opus-4-7.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/298-ai-agent.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/478-anthropic-ai.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
+- [Claude Opus 4.7 发布分析](../ch01/350-claude-opus-4-7.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/030-ai-agent.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/484-anthropic-ai.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](../ch01/1326-15.html)
+- [2026年最值得关注的15款开发者工具深度解读](../ch01/926-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

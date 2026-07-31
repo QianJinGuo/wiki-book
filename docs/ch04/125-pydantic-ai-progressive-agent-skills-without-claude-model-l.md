@@ -6,60 +6,11 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Pydantic AI Progressive Agent"))
-    Claude Skills 的商业价值与技术限制
-    Claude 官方 Building Effective
-    Pydantic AI 的四个核心能力
-    Pydantic AI 的三个局限性
-    对使用 Claude Skills 的团队
-    对选择 Agent 框架的架构师
-    对 Pydantic AI 选型
-    对 Agent 框架设计者
-```
-
 ## 摘要
 
 AutomatorRunner 在 WeChat 发表的技术文章，记录了从 Claude Skills 迁移到 Pydantic AI 的实战经验。核心结论：**Claude Skills 的设计哲学（渐进式加载、capability 组合、依赖注入）值得借鉴，但其模型绑定 Claude SDK 带来的成本和厂商锁定问题，可以通过 Pydantic AI 这种模型无关的框架以更灵活的方式实现**。文章给出了完整的 6 个 Skills → 5 个 Capabilities 迁移步骤和迁移后一个月的真实生产效果。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 - Claude Skills 绑定 Claude SDK，月费成本高；想切换到 DeepSeek/Gemini 需要 litellm 转接，增加故障点
 - Progressive Loading 是设计哲学而非 Claude 专利——可应用于任何 Agent 框架
@@ -210,7 +161,7 @@ Pydantic AI：`RunContext[DepsType]` 依赖注入——IDE 自动补全，静态
 - `Tencent Ai Infra Backend Engineer Huangrunpeng` — Python-first AI 框架的另一视角
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化的更高层抽象
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pydantic-ai-progressive-agent-skills-automatorrunner.md)
-- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](../ch03/072-skills.html)
+- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](../ch03/071-skills.html)
 
 ---
 

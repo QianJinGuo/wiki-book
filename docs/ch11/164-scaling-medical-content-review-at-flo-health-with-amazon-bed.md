@@ -6,61 +6,7 @@
 
 # Scaling medical content review at Flo Health with Amazon Bedrock – Part 2
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Scaling medical content review at"))
-    关键技术架构
-      MACROS 架构适配
-      AI 内容生成管道
-      渐进式内容呈现
-    AI 在高信任度领域的边界设计哲学
-    多 Judge 架构的模块化价值
-    结构化反馈循环作为系统级学习机制
-    YAML 胜于 JSON 的工程启示
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Flo Health 工程团队基于 AWS Generative AI Innovation Center 的 PoC，构建了一套基于 Amazon Bedrock 的 AI 驱动的医疗内容审核与生成系统。该系统通过引入专门的 AI Judge（分别负责医疗准确性、法律合规、品牌风格等维度），结合 MACROS 架构和 Retrieval Augmented Generation (RAG)，将每篇内容的审核时间缩短了 60%，内容吞吐量翻了三倍，且无需扩大医疗团队。
 
@@ -134,7 +80,7 @@ Flo Health 案例展示了一个关键洞察：在医疗等高信任度领域，
 - [企业 AI Native 转型](../ch05/018-ai-native.html)
 - [后端 AI 友好架构](../ch05/022-ai-friendly.html)
 - [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md)
-- [企业 Agent 编排](../ch04/518-agent-orchestration.html)
+- [企业 Agent 编排](../ch04/523-agent-orchestration.html)
 - [AI Native 开发工作流](../ch05/018-ai-native.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flo-health-medical-content-review-bedrock.md)

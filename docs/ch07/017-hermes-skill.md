@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes自进化完整闭环 Skill创建复用修补链路"))
-    阶段完整闭环
-    真实案例 npm发包任务3次迭代
-    个数据容器 分层节流
-    个可观测指标
-    个亲测观察
-    闭环架构的工程价值
-    分层节流是系统能否长期运行的关键
-    从npm案例看版本演进的内在逻辑
-```
-
 ## 6阶段完整闭环
 | 阶段 | 零件 | 核心内容 |
 |------|------|----------|
@@ -32,39 +16,6 @@ mindmap
 **进化发生的瞬间**：下次任务命中Skill直接复用 = 闭环跑一次系统稍微变强一点。 ^[https://mp.weixin.qq.com/s/NTsLyOrJqxfi0_m1RQTfJA]
 
 ## 真实案例：npm发包任务3次迭代
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 - **第1次**：12步，失败（忘了publish前build）。Skill 0.1产出
 - **第2次**：9步（命中Skill 0.1），成功但changelog遗漏。Skill 0.2 patch产出
 - **第3次**：6步（命中Skill 0.2），一次成功。Skill 1.0产出

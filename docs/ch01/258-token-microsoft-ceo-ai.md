@@ -11,21 +11,6 @@
 
 2026-06-14,Microsoft CEO 萨提亚·纳德拉在 X 发布长文 "A frontier without an ecosystem is not stable",2026-06-15 由公众号"AI寒武纪"完整翻译引入中文语境。这篇**40.9M 浏览 / 27.7K 赞** 的战略宣言,首次在 Microsoft 官方层面把"Token 资本"作为企业战略概念提出,与既有的"人力资本"形成二元资本框架。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("纳德拉「Token 资本」论 Microsoft CEO 的 AI"))
-    核心概念框架
-    企业学习闭环的三大架构支柱
-    战略警告为什么前沿模型 价值
-    平台哲学价值创造在生态不在平台
-    与现有实体的交叉对比
-    工程启示实践可执行项
-    局限性 需关注的边界
-```
-
 ## 核心概念框架
 
 **人力资本 vs Token 资本**(纳德拉原文,2026-06-14 X 帖):
@@ -36,44 +21,6 @@ mindmap
 **关键反直觉点**:Token 资本增长**不会**削弱人力资本,**反而让**人力资本更珍贵 — 因为人的主动性是驱动 Token 资本增长的核心动力(设定目标、跨域连接、识别关键规律)。"没有人的引领,计算只不过是在原地打转"。
 
 ## 企业学习闭环的三大架构支柱
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 纳德拉把"Token 资本"的具体实现拆为**三个私有化构件**。这是把抽象概念落到工程动作的关键一步:
 
@@ -103,8 +50,8 @@ graph TB
 
 - vs **[Token 经济 Pt2:智能公司的搭建](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)** — Pt2 关注"智能公司"作为组织形态的工程化;纳德拉关注**资本形态**(二元资本)作为**经济学叙事**。两者互补不重叠。
 - vs **[腾讯 Token 经济 AI 生产力](../ch12/003-token.html)** — 腾讯讲**消费量纲**;纳德拉讲**资本形态**。前者是微观 ROI 视角,后者是宏观战略视角。
-- vs **[企业 AI 记忆底座 三层架构](../ch05/094-ai.html)** — 三层架构 = 知识底座的**工程实现**;纳德拉 Token 资本 = 知识底座背后的**经济学理由**。
-- vs **[Anthropic 缓存 Token 经济](ch01/989-anthropic.html)** — 缓存是**Token 成本优化**的具体技术杠杆;纳德拉说的是**Token 作为资本形态**的存在论层面。
+- vs **[企业 AI 记忆底座 三层架构](../ch05/095-ai.html)** — 三层架构 = 知识底座的**工程实现**;纳德拉 Token 资本 = 知识底座背后的**经济学理由**。
+- vs **[Anthropic 缓存 Token 经济](ch01/1004-anthropic.html)** — 缓存是**Token 成本优化**的具体技术杠杆;纳德拉说的是**Token 作为资本形态**的存在论层面。
 - vs **[Harness Engineering Long-Term Agent Tasks](../ch05/120-harness-engineering.html)** — Harness = 工程模式(让 agent 可控);Token 资本 = 经济模式(让企业 AI 资产可积累)。两者构成"Token 资本"的双侧实现。
 - vs **[Agent 时代我们架构师应该学什么](../ch03/035-agent.html)** — 架构师视角讲**技能升级**;纳德拉讲**企业层面**的资本积累路径。
 - vs **[Microsoft Build 2026 MAI Models Scout Agent](../ch03/035-agent.html)** — 同一作者(Microsoft)在 Build 2026 上主推的是**前沿模型**;本文(纳德拉 X 帖)则**明确警告"前沿模型 ≠ 价值"**。同一个公司的两套话语:产品层 vs 战略层。**这一矛盾本身**值得读者警惕。
@@ -176,8 +123,8 @@ AI 时代的企业主权 = 业务知识的所有权 + 可迁移性，**不等于
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nadella-token-capital-microsoft-ai-economy-2026.md)
 - [Token 经济 Pt2:智能公司搭建](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
 - [腾讯 Token 经济 AI 生产力](../ch12/003-token.html)
-- [企业 AI 记忆底座 三层架构](../ch05/094-ai.html)
-- [Anthropic 缓存 Token 经济](ch01/989-anthropic.html)
+- [企业 AI 记忆底座 三层架构](../ch05/095-ai.html)
+- [Anthropic 缓存 Token 经济](ch01/1004-anthropic.html)
 - [Harness Engineering Long-Term Agent Tasks](../ch05/120-harness-engineering.html)
 - [Harness Engineering 7 层架构](../ch05/120-harness-engineering.html)
 - [Agent 架构关键变化:Harness 正在成为新后端](../ch05/009-harness.html)

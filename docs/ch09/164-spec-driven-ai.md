@@ -8,62 +8,11 @@
 
 > 百人级互联网前后端团队半年 SDD 实践。核心洞察：**"有损管道"** 框架 + 三大工具的 **结构性代价** 对比 + **认知陷阱**。[^1]
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Spec-Driven AI 编程半年实战 有损管道"))
-    有损管道框架
-    Spec 的定义
-    三大工具结构性代价对比 实测 30 需求
-    三大认知陷阱
-      陷阱一 不能自动验证的 spec 注定会烂
-      陷阱二 Spec 是契约 不是蓝图
-      陷阱三 不是所有需求都上 SDD
-    Spec 的未来演化
-```
-
 ## 核心命题
 
 AI 时代软件开发的核心矛盾变了：不是写不出代码，是**没人能证明代码是对的**。意图持有者和代码编写者的分离，是所有 SDD 问题的第一因。[^1]
 
 ## 有损管道框架
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 所有开发范式都是同一条管道：**人有意图，机器产生行为。中间是一条有损管道。**
 

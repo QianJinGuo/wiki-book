@@ -4,57 +4,10 @@
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("给氛围编程系上安全带 阿里集团 AI 代码评审实践与"))
-    从工具进化到范式转变 AI 评审的发展阶段
-    人机协作新范式的核心逻辑
-    Vibe Coding 时代的评审危机
-    认知错位 AI Review 面临的核心瓶颈
-```
-
 ## 核心要点
 阿里集团自 2024 年初上线 AI 代码评审助手，历经一年半、数万亿 Token 真实场景打磨，已覆盖数万开发者，**每天超过一半的有效评审意见由 AI 产出**。在人工评审量小幅下降的情况下，总体有效评审量（含 AI 意见采纳）实现同比翻倍。核心升级为 Agent 架构，具备"动态召回上下文"能力，可像资深工程师一样执行"阅读理解 - 提出假设 - 寻找证据 - 判定结论"的完整思维闭环。更联合南京大学研发效能实验室开源了业界首个多语言、具备存储库上下文感知的 **AACR-Bench CodeReview Benchmark**，80 多位资深工程师交叉标注，问题覆盖率较原始 PR 评论提升 **285%**。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 从工具进化到范式转变：AI 评审的发展阶段
 阿里 AI 代码评审的演进经历了从辅助到自主的关键跨越。初期定位为辅助工具，主要完成简单的语法检查和模式匹配。随着 Agent 架构的引入，评审能力产生了质的飞跃：它不再局限于当前修改文件，而是能像资深工程师一样跨代码块、跨文件、跨变更进行深度问题发现。Agent 的核心优势是"动态召回上下文"——能自主判断何时需要调用工具，通过多轮"思考 - 行动"的迭代精准捕捉隐蔽隐患。
 文章通过一个经典的空指针异常（NPE）案例展示了这一能力：Agent 在评审一个新增的 `getCodeReviewAiRuleResult` 方法时，首先主动读取了方法附近的完整上下文理解业务逻辑；在发现潜在 NPE 风险后，没有止步于警告，而是调用全局搜索工具查证该方法的历史行为；搜索结果证实该方法在测试用例中明确存在返回 null 的场景；最终 Agent 提交了附带具体修复建议的评审意见。整个过程展现了 Agent 与传统静态分析工具的本质差异：不是规则匹配，而是模拟人类工程师的认知推理过程。
@@ -89,9 +42,9 @@ AACR-Bench 由南京大学与阿里巴巴 TRE 联合推出，具备三大核心�
 **4. 评测基准对技术迭代方向有决定性影响。** AACR-Bench 揭示了"上下文粒度和检索方法的选择对模型表现影响巨大"这一被此前评测误导的发现，说明评测数据的质量直接决定了模型优化的方向。企业在引入 AI 代码评审工具时，需要关注其评测方法论的科学性，而非仅看表面指标。
 **5. AI 评审的未来是交互式而非被动式。** 文章预测未来的代码评审不应是"提交 -> 等待报告"的黑盒，而应是"描述改动意图 -> 定义关注点 -> Agent 执行专项评审 -> 人类决策"的互动过程。开发者社群的共识正在从"AI 会替代评审"转向"AI 放大了评审体系的效能"，这意味着人类工程师的角色升级为"AI 训练师"和"最终决策者"，而非被动接受者。
 ## 相关实体
-- [从多智能体编排到Ai自主决策资损防控体系的架构演进](../ch05/094-ai.html)
+- [从多智能体编排到Ai自主决策资损防控体系的架构演进](../ch05/095-ai.html)
 - [Ai Native 时代 研发组织何去何从](../ch05/018-ai-native.html)
-- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/467-loongsuite-genai.html)
+- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/472-loongsuite-genai.html)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/035-agent.html)
 

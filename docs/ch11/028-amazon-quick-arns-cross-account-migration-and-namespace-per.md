@@ -18,62 +18,7 @@ These are real tasks that Amazon Quick administrators tackle regularly, and gett
 
 In this post, we cover the structure of Amazon Quick ARNs and provide a practical mental model for working with them. By the end, you can look at an ARN and immediately understand what it means for your migration strategy, diagnose permission issues faster, and design multi-tenant architectures with confidence.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Quick ARNs Cross-account"))
-    A note on naming
-    Think of ARNs as postal addresses
-    What this looks like in practice
-      Why permissions dont transfer
-      How the dependency chain works
-```
-
 ## A note on naming
-
-```mermaid
-graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
-    end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
-    end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
-    end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
-    end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
-```
-
 
 Amazon Quick is the service that you use today, but ARNs and API endpoints still use “quicksight” as the service identifier. We keep this for compatibility with existing AWS Identity and Access Management (IAM) policies, automation, and integrations across customer environments.
 
@@ -212,10 +157,10 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
 
 ## 相关实体
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/141-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Amazon Quick Research Agentic Multi Source Citation](ch11/222-amazon-quick.html)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [Amazon Quick Research Agentic Multi Source Citation](ch11/224-amazon-quick.html)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/295-amazon-bedrock.html)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/094-ai.html)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/095-ai.html)
 
 ---
 

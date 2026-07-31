@@ -6,68 +6,11 @@
 
 [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-harness-12-components-framework-comparison.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("生产级 Harness 的 12 大组件以及主流框架对比"))
-    为什么问题通常不在模型
-    什么是 Agent Harness
-      不只是 prompt 外壳 更是一整套运行时
-      Agent 是行为 Harness 是产出这种行为的机械结构
-      把它理解成操作系统
-    生产级 Harness 的 12 个组件
-      编排循环 Orchestration Loop
-      工具系统 Tools
-      记忆系统 Memory
-    一次完整循环
-      七个步骤
-      文件系统纳入 Harness
-    主流框架对比
-    脚手架隐喻
-      好的 Harness 应该随模型增强而变薄
-      模型和 Harness 已经开始共同进化
-    每个 Harness 架构师的 7 个选择
-    作者的结论
-```
-
 ## 1. 为什么问题通常不在模型
 Demo 级 chatbot 没问题，但一进入生产环境：模型忘掉三步之前做了什么，tool call 失败了没人知道，上下文窗口被噪声塞满。
 **关键证据**: LangChain 只调整 LLM 外层的 infrastructure，不改模型权重，TerminalBench 2.0 排名从 30 名外跳到第 5。还有研究项目让 LLM 反过来优化基础设施本身，通过率超过人工设计系统。
 
 ## 2. 什么是 Agent Harness
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 ### 2.1 不只是 prompt 外壳，更是一整套运行时
 Anthropic 在 Claude Code 文档里把 SDK 叫成"驱动 Claude Code 的 agent harness"。OpenAI 的 Codex 团队也把 "agent" 和 "harness" 放进同一个语境，指的都是那套让模型真正可用的非模型基础设施。
 LangChain 的 Vivek Trivedy: "If you're not the model, you're the harness."
@@ -189,11 +132,11 @@ Anthropic 和 OpenAI 都建议先把单 Agent 做到极限。过度设计多 Age
 ### 工具暴露需要克制
 按步骤懒加载工具、只暴露最小必要工具集，是控制复杂度最有效的手段。工具越多，参数校验、权限管理、出错处理的复杂度指数级上升。在没有看到具体需求之前，不要提前设计工具扩展机制。
 ## 相关实体
-- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/121-agent-memory.html)
-- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/078-claude-code.html)
-- [Memory Agent Systems Cobanov](../ch04/604-memory-agent-systems-cobanov.html)
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/098-agent-memory.html)
+- [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/077-claude-code.html)
+- [Memory Agent Systems Cobanov](../ch04/608-memory-agent-systems-cobanov.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/120-harness-engineering.html)
-- [Agentscope Java Harness Framework](../ch03/053-agentscope-java-harness-framework-2-0-agent-harness.html)
+- [Agentscope Java Harness Framework](../ch03/052-agentscope-java-harness-framework-2-0-agent-harness.html)
 
 ---
 

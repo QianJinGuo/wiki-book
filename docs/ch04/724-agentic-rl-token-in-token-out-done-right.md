@@ -2,19 +2,9 @@
 
 ## Ch04.724 Agentic RL: Token-In, Token-Out Done Right
 
-> 📊 Level ⭐⭐⭐ | 6.4KB | `entities/agentic-rl-token-in-token-out.md`
+> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/agentic-rl-token-in-token-out.md`
 
 # Agentic RL: Token-In, Token-Out Done Right
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agentic RL Token-In Token-Out"))
-    Train on the models own tokens
-    Decoding doesnt undo encoding
-```
 
 ## 深度分析
 
@@ -34,44 +24,6 @@ The first is to abstract the chat template behind a per-model interface. For eve
 The second is to design the training around one rule: **never re-encode tokens you’ve decoded.** Follow it, and the tricky edge cases vanish. You’re left with a single property to check on the chat template: it must be prefix-preserving for tool messages (we’ll explain). Turns out the vast majority of templates in the wild already satisfy it. This is Token-In, Token-Out done right, and that’s what this post is about.
 
 ## [Train on the model’s own tokens](https://qgallouedec-tito.hf.space/#train-on-the-models-own-tokens)
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 tl;dr RL updates the model on the exact tokens it sampled, and nothing else. Simple now, load-bearing later.
 
@@ -159,11 +111,11 @@ Most of the time you don’t think about it. You feed messages, you get tokens, 
 Multi-turn is where it starts to matter. When the assistant emits tokens, you d
 
 ## 相关实体
-- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/078-claude-code.html)
+- [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/077-claude-code.html)
 - [Skill Os Learning Skill Curation Self Evolving Agents](ch04/219-self-evolving-agents.html)
 - [Hermes Agent Deep Dive](../ch03/096-hermes-agent.html)
 - [Baixing Ontoz Enterprise Ontology Multi Agent](../ch03/035-agent.html)
-- [Yann Dubois Openai Post Training Interview](../ch01/390-openai.html)
+- [Yann Dubois Openai Post Training Interview](../ch01/391-openai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-rl-token-in-token-out.md)

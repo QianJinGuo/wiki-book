@@ -8,70 +8,11 @@
 
 > **背景**：本文是 [AWS China Blog](https://aws.amazon.com/cn/blogs/china/agent-system-engineering-practice/) 2026-06-05 发布的"解决 Agentic AI 应用 Token 爆炸问题"系列第三篇，由 AWS 中国架构师团队撰写。系统讨论 Agent 记忆系统在生产环境的"工程税"（每一次写入/迁移/切换/淘汰时被隐性征收的成本），并给出在 S3 Files / S3 Vectors / Bedrock AgentCore Memory 上的具体落地路径。本文与系列前两篇（《取之有度，用之有节——从 Harness 视角破解 Agent 应用 Token 爆炸难题》/《相得益彰 — 亚马逊云科技向量存储选型推荐》）形成完整覆盖：选型 → 落地 → 运行工程议题。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 记忆系统工程税 写入纪律Prompt Cache"))
-    核心立场 记忆系统的工程税框架
-    新地形
-    五个工程考量 生产环境的真实痛点
-    四条写入失效路径 业界哲学分叉
-      路径一 LLM 判官 Mem0 范式
-      路径二 公式打分 OpenClaw Dreaming 范式
-      路径三 托管策略 AgentCore Memory 范式
-    记忆写入与 Prompt Cache 的冲突 最隐蔽的运行时陷阱
-      冲突本质
-      三种处理思路
-    跨模型的容量上限 字符 vs Token
-    Embedding 迁移 记忆工程的最大数据税
-      四阶段迁移方法论 生产环境验证
-    Agent 自产程序性记忆的治理 2026 最显著新变量
-```
-
 ## 核心立场：记忆系统的"工程税"框架
 
 本文提出"工程税"作为组织生产环境记忆系统议题的统一视角：**架构已定、运行才开始的问题**——选型阶段看不出，上线半年后才集中显形。五个工程考量（写入纪律/Prompt Cache 冲突/跨模型容量/Embedding 迁移/自产 Skill 治理）都满足这一特征。
 
 ## 2026 新地形
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 与 2025-09~11 月的 AWS 记忆系列前作相比，2026 年出现三个叠加变量：
 
@@ -231,11 +172,11 @@ AWS 中国团队在 agent memory 工程上的实践反映了中国的特殊情�
 ## 相关阅读
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-→ [AI Agent Memory Systems（架构模式全景)](ch04/121-agent-memory.html)
-→ [Agent Memory 架构本质](ch04/121-agent-memory.html)
-→ [Agent Memory 过去-现在-未来](ch04/121-agent-memory.html)
-→ [Agent-Memory 评测全景（淘天综述）](ch04/121-agent-memory.html)
-→ [AgentCore Harness 架构](ch04/689-agentcore-harness.html)
+→ [AI Agent Memory Systems（架构模式全景)](ch04/098-agent-memory.html)
+→ [Agent Memory 架构本质](ch04/098-agent-memory.html)
+→ [Agent Memory 过去-现在-未来](ch04/098-agent-memory.html)
+→ [Agent-Memory 评测全景（淘天综述）](ch04/098-agent-memory.html)
+→ [AgentCore Harness 架构](ch04/690-agentcore-harness.html)
 → [Hermes Agent 记忆系统](../ch03/096-hermes-agent.html)
 
 ## 相关实体

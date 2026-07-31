@@ -8,20 +8,6 @@
 
 Cloud Use 是阿里技术提出的原创框架，系统性定义了 AI Agent 如何成为云上受治理、可审计的工作负载。与仅关注"模型如何调用工具"的 Tool Use 不同，Cloud Use 解决的是"云如何接纳 Agent 成为受治理的使用主体"的问题。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Cloud Use 框架 Agent 作为云上受治理主体的四层模型"))
-    Cloud Use 四层能力模型 依赖链
-    三类任务场景
-    工程实践 咖啡品牌 BI 案例的六道门槛
-    失败恢复模式
-    成熟度三阶段
-    与相关框架的关系
-```
-
 ## 核心论点
 
 Agent 是云计算迎来的**第三类使用者**——继人类操作者和确定性自动化程序（CI/CD/Terraform/K8s Controller）之后。Agent 同时具备人的目标理解能力和程序的执行速度与调用规模，但其运行需要完整的身份、权限、工具、运行时、状态管理、成本记录、失败恢复和审计链路。
@@ -29,36 +15,6 @@ Agent 是云计算迎来的**第三类使用者**——继人类操作者和确�
 仅具 Tool Use 的 Agent 站在人的影子里——借用人的账号、AK/SK、在线状态维持，缺乏独立身份、凭证、运行时和审计体系，无法成为稳定工作负载。
 
 ## Cloud Use 四层能力模型（依赖链）
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 | 层级 | 核心问题 | 关键能力 |
 |------|---------|---------|
@@ -104,8 +60,8 @@ Cloud Use 定义了 Agent 用云的成熟度路径：
 ## 与相关框架的关系
 
 - 与 **Harness Engineering** 的"人在环中"安全原则一致——Agent 能力范围随信任积累逐步扩展
-- Cloud Use 的 **四层模型 (Identity→Credential→Tool→Runtime)** 是 Agent 云工作负载的完整治理栈，补充了 [Qoder Cloud Agents 用云新范式](../ch03/072-skills.html) 中 Skills 层的底层基础设施视角
-- Cloud Use 的 **Credential Use 层**（Vault 注入、短期令牌、服务端代理）可视为 Agent 版本的 [阿里云 Agentic Cloud 战略](../ch04/347-agentic-cloud.html) 中任务级身份鉴权的具体实现
+- Cloud Use 的 **四层模型 (Identity→Credential→Tool→Runtime)** 是 Agent 云工作负载的完整治理栈，补充了 [Qoder Cloud Agents 用云新范式](../ch03/071-skills.html) 中 Skills 层的底层基础设施视角
+- Cloud Use 的 **Credential Use 层**（Vault 注入、短期令牌、服务端代理）可视为 Agent 版本的 [阿里云 Agentic Cloud 战略](../ch04/348-agentic-cloud.html) 中任务级身份鉴权的具体实现
 
 ## 关键洞察
 

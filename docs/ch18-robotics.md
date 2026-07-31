@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((具身智能与机器人))
-    感知
-      视觉感知
-      触觉传感
-      环境建图
-    决策规划
-      任务规划
-      运动规划
-      强化学习
-    执行控制
-      运动控制
-      灵巧操作
-      人机交互
-    仿真
-      仿真环境
-      Sim-to-Real
-      数字孪生
-    自主驾驶
-      感知融合
-      路径规划
-      安全决策
-    前沿
-      通用机器人
-      具身大模型
-      开源硬件
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -48,25 +17,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph TB
-    PER[感知] --> DEC[决策规划]
-    DEC --> ACT[动作执行]
-    ACT --> ENV[环境反馈]
-    ENV --> PER
-    subgraph "学习"
-        RL[强化学习]
-        SIM[仿真训练]
-        IMI[模仿学习]
-    end
-    DEC --> RL & SIM & IMI
-    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef learn fill:#d1fae5,stroke:#059669,color:#064e3b
-    class PER,DEC,ACT,ENV core
-    class RL,SIM,IMI learn
-```
-
 
 AI 最终要从屏幕走进物理世界。
 
@@ -272,7 +222,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ## Ch18.003 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
 
-> 📊 Level ⭐⭐ | 10.0KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代-xiaomi.md`
+> 📊 Level ⭐⭐ | 10.1KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代-xiaomi.md`
 
 # 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
 

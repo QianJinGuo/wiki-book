@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 4.0KB | `entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md`
 
-
 ## 深度分析
 这个调查结果揭示了企业AI转型中的一个核心悖论：投资热情与数据成熟度之间的巨大鸿沟。
 
@@ -28,46 +27,6 @@
 - 可访问性（Accessibility）：数据能否被需要的人及时获取
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "数据源"
-        API[API 接口]
-        DB_SRC[(数据库)]
-        STREAM[流式数据]
-        FILES[文件/日志]
-    end
-    subgraph "采集层"
-        INGEST[数据摄入<br/>Kafka/Flink]
-        CDC[变更捕获<br/>CDC]
-    end
-    API & DB_SRC --> INGEST
-    DB_SRC --> CDC
-    STREAM & FILES --> INGEST
-    subgraph "处理层"
-        CLEAN[清洗/去重]
-        TRANSFORM[转换/计算]
-        QUALITY[质量校验]
-    end
-    INGEST & CDC --> CLEAN --> TRANSFORM --> QUALITY
-    subgraph "存储层"
-        LAKE[数据湖<br/>Iceberg/Delta]
-        WH[数据仓库<br/>ClickHouse]
-        FEAT[特征存储<br/>Feast]
-    end
-    QUALITY --> LAKE
-    QUALITY --> WH
-    QUALITY --> FEAT
-    classDef src fill:#fef3c7,stroke:#d97706
-    classDef ing fill:#dbeafe,stroke:#2563eb
-    classDef proc fill:#ede9fe,stroke:#7c3aed
-    classDef sto fill:#d1fae5,stroke:#059669
-    class API,DB_SRC,STREAM,FILES src
-    class INGEST,CDC ing
-    class CLEAN,TRANSFORM,QUALITY proc
-    class LAKE,WH,FEAT sto
-```
-
 1. **AI投资前先做数据健康检查**：在启动任何AI项目前，系统性地评估数据的完整性、一致性、时效性和可访问性
 2. **采用"数据优先、AI其次"的推进策略**：优先解决数据孤岛和治理问题，再考虑AI能力的引入
 3. **建立企业级数据底座**：投资建设统一的数据目录、数据血缘追踪、以及数据质量监控体系
@@ -75,10 +34,10 @@ graph TB
 5. **数据治理成熟度评估**：将数据治理成熟度作为AI项目立项的前置条件
 ## 相关实体
 - [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1148-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
-- [Shinyhunters Canvas Domain Suspended](../ch05/094-ai.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1169-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Shinyhunters Canvas Domain Suspended](../ch05/095-ai.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/444-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 

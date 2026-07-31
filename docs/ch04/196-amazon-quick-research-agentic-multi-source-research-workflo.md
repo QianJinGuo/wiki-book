@@ -8,25 +8,6 @@
 
 > 本文综合提炼自 AWS 的 **Amazon Quick Research** 在 rare cancer research（罕见癌症研究）的应用案例。核心是 agentic research workflow：**自然语言目标 → 拆解子主题 → 多源数据采集（web/PubMed/ClinicalTrials.gov/file uploads/Spaces）→ LLM 合成 → 带 inline 引用 + 可追溯 evidence chain 的报告 → 版本化修订**。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Quick Research Agentic"))
-    核心问题 科研数据整合瓶颈
-    Amazon Quick Research 核心能力
-    Spaces 数据组织层
-    端到端 walkthrough 罕见癌症研究案例
-    关键设计模式 可复用
-      Plan Before Run
-      Inline Citation Evidence Chain
-      Statement-level Revision
-    Agentic Workflow 将研究从批次处理升级为可演进的知识系统
-    Citation Provenance 是对抗 LLM 幻觉的结构性防线
-    Plan Before Run 是降低 agentic
-```
-
 ## 核心问题：科研数据整合瓶颈
 
 罕见癌症研究需要整合**异构数据**：
@@ -44,43 +25,6 @@ mindmap
 - **通常需要数周才能开始任何分析**
 
 ## Amazon Quick Research 核心能力
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 
 **6 大能力**：
 
@@ -192,9 +136,9 @@ Amazon Quick Research 的核心设计不是一次性检索，而是将**研究�
 ## 相关实体
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/306-amazon-nova.html)
 - [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11/009-aws-bedrock.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/561-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/566-amazon-bedrock-agentcore.html)
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/021-build-an-enterprise-observability-solution-for-amazon-quick.html)
-- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/203-aderant-transforms-cloud-operations-with-amazon-quick.html)
+- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/205-aderant-transforms-cloud-operations-with-amazon-quick.html)
 
 ---
 

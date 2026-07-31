@@ -5,55 +5,12 @@
 > 📊 Level ⭐ | 6.9KB | `entities/10x-is-a-lot.md`
 
 # 10x Is a Lot — Quarter Mile
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("x Is a Lot"))
-    Home Subscribe Contact Writing
-    x 类比图谱 16 个具体场景
-    10x 不是 10量级差异颠覆直觉判断
-    10x 改进要求的是范式重构 而非渐进优化
-    10x话术在科技行业被严重滥用 需要可证伪的量化标准
-    10x 判断力是一种元技能知道什么听起来大其实很小
-```
-
 ## [Home](https://www.quarter--mile.com/) • [Subscribe](https://www.quarter--mile.com/subscribe) • [Contact](https://www.quarter--mile.com/contact) • [Writing Club](http://writingclub.world/) • [Questions](https://www.quarter--mile.com/Questions)
 You have probably heard people say things like "this product makes you 10x more effective."
 Here are a few examples of what things would look like if they were 10x faster/better/bigger:
 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
-- [Skill Development Guide Aliyun 2026](../ch04/271-skill.html)
+- [Skill Development Guide Aliyun 2026](../ch04/273-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)
 - [Openclaw Multi Agent Team Practice](../ch04/047-openclaw-multi-agent-team-practice-v2.html)
 - [Strands Agents Cloud Cost Optimizer](../ch04/697-strands-agents.html)

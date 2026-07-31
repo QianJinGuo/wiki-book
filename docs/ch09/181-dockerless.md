@@ -6,60 +6,11 @@
 
 # Dockerless: 免环境补丁验证器
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Dockerless 免环境补丁验证器"))
-    验证器瓶颈的工程意义
-    与现有验证器的对比
-    关键技术细节
-```
-
 ## 摘要
 
 Dockerless 是上海交通大学与抖音集团提出的免环境（environment-free）补丁验证器，通过 Agent 式两阶段流水线（并行子 Agent 代码库探索 + 综合判决）评估 Coding Agent 补丁的正确性。在 SWE-bench Verified/Multilingual/Pro 三项基准上，Dockerless-RL-9B 分别达到 62.0%/50.0%/35.2%，与依赖 Docker 测试的 oracle 方案仅差 0.4-1.3 个百分点。验证器 AUC 81.0，比最强开源 DeepSWE Verifier 高 14.3 点。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 1. **方法**：两阶段 Agent 流水线——(1) 从 Issue 提炼 2-4 个验证问题，派子 Agent 用只读 shell 工具搜代码库证据；(2) 综合判决输出 0-1 连续分数
 2. **训练**：GLM-5 教师生成轨迹 → 拒绝采样（只保留判对轨迹）→ Qwen3.5-9B 骨干端到端微调，共 3.7K Issue 数据
@@ -101,9 +52,9 @@ Dockerless 占据「免环境 + 有仓库 grounding」的独特生态位。
 
 ## 相关实体
 
-- [RLHF/GRPO 训练](../ch01/1325-trl.html)
-- [SWE-bench Agent 评测](../ch04/691-swe-bench-agent.html)
-- [Generator-Evaluator Harness](../ch01/989-anthropic.html)
+- [RLHF/GRPO 训练](../ch01/1330-trl.html)
+- [SWE-bench Agent 评测](../ch04/692-swe-bench-agent.html)
+- [Generator-Evaluator Harness](../ch01/1004-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dockerless-environment-free-verifier-coding-agent-arxiv-2606-28436.md)
 

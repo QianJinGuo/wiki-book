@@ -8,58 +8,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rfc9958.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("RFC 9958 Post-Quantum"))
-    CRQC 威胁模型 对称 vs 非对称
-    NIST 标准化 PQC 算法
-    PQC 三大类别
-    KEM vs 传统密钥交换的根本差异
-    Mosca 模型与过渡时间线
-    PQT 混合方案的工程挑战
-    受限设备与网络的影响
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 RFC 9958 是 IETF 于 2026 年 6 月发布的 Informational RFC，由 Banerjee 等人撰写，面向密码学工程师的后量子密码学（PQC）实施指南。该文档的核心论点是：PQC 过渡不是简单的算法替换（drop-in replacement），而是需要**协议级别的重新设计**。文档覆盖了 CRQC 威胁模型、NIST/ISO 标准化算法、KEM 与签名方案的工程差异、PQ/T 混合方案、以及从 Mosca 模型推导的过渡时间线。
 
@@ -153,7 +102,7 @@ PQC 过渡对受限设备（IoT、智能卡、嵌入式系统）的影响尤为�
 - [后量子安全采用分析](ch12/113-on-post-quantum-security-adoption.html) — PQC 采用策略和威胁评估框架
 - 以太坊 BLS 后量子替换 — 区块链场景的 PQC 迁移案例
 - 密码学敏捷性（Cryptographic Agility）是 PQC 过渡的底层设计原则
-- [Cisco SD-WAN 漏洞](../ch01/913-20.html) — 安全基础设施需要持续更新的例证
+- [Cisco SD-WAN 漏洞](../ch01/926-20.html) — 安全基础设施需要持续更新的例证
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rfc9958.md)
 

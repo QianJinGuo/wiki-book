@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 11.0KB | `entities/design-to-code-loop-figma.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("What the design-to-code loop unlocks"))
-    设计-代码循环的底层机制
-    为什么设计-代码循环创造了单独无法实现的价值
-    设计系统作为循环的基础设施
-    循环闭合对组织能力的要求
-    立即可行的落地步骤
-    设计系统建设的进阶建议
-    常见陷阱与规避
-    评估循环效益的指标
-```
-
 ## 核心要点
 - **双向翻译** — 现代工具使设计生成代码、代码反映回设计成为可能
 - **规模一致性** — 设计系统和代码组件直接对应，视觉和行为一致性自动达成
@@ -28,41 +12,6 @@ mindmap
 - **生产即设计** — 生产代码是设计意图的最真实表达
 
 ## 技术洞察
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 **设计-代码循环的价值创造**：
 这篇文章的核心洞察是：**设计-代码循环创造的价值，超越纯粹设计或纯粹代码单独能实现的**。
 关键机制：
@@ -133,7 +82,7 @@ graph TB
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Building is just the beginning: Introducing Discoverability](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
-- [柚漫剧 AI全流程提效拆解](../ch05/094-ai.html)
+- [柚漫剧 AI全流程提效拆解](../ch05/095-ai.html)
 - [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
 - [figma make, now on your local code: closing the design-to-co](ch03/048-figma-make.html)
 

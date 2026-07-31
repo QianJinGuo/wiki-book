@@ -7,74 +7,12 @@
 # "Postmortem: TanStack npm supply-chain compromise | TanStack Blog"
 URL Source: https://tanstack.com/blog/npm-supply-chain-compromise-postmortem
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Postmortem TanStack npm"))
-    TLDR
-    Impact
-      Packages affected
-      What the malware does
-    Timeline
-      Pre-attack cache poisoning phase
-      Detonation publish phase
-      Detection and response
-    Root cause
-      pullrequesttarget Pwn Request
-      GitHub Actions cache poisoning
-      OIDC token extraction from runner
-    Detection
-      How we found out
-      IOC fingerprints for downstream
-    攻击链的工程复杂度
-    信任边界的三重穿越
-    OIDC Trusted Publisher 的安全隐患
-```
-
 ## TL;DR
 On 2026-05-11 between 19:20 and 19:26 UTC, an attacker published 84 malicious versions across 42 @tanstack/* npm packages by combining: the pull_request_target "Pwn Request" pattern, GitHub Actions cache poisoning across the fork↔base trust boundary, and runtime memory extraction of an OIDC token from the GitHub Actions runner process. No npm tokens were stolen and the npm publish workflow itself was not compromised.
 The malicious versions were detected publicly within 20 minutes by an external researcher ashishkurmi working for stepsecurity. All affected versions have been deprecated; npm security has been engaged to pull tarballs from the registry. We have no evidence of npm credentials being stolen, but we strongly recommend that anyone who installed an affected version on 2026-05-11 rotate AWS, GCP, Kubernetes, Vault, GitHub, npm, and SSH credentials reachable from the install host.
 **Tracking issue:** [TanStack/router#7383](https://github.com/TanStack/router/issues/7383) **GitHub Security Advisory:** [GHSA-g7cv-rxg3-hmpx](https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx)
 
 ## Impact
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 ### Packages affected
 42 packages, 84 versions (two per package, published roughly 6 minutes apart). See the tracking issue for the full table. Confirmed-clean families: @tanstack/query*, @tanstack/table*, @tanstack/form*, @tanstack/virtual*, @tanstack/store, @tanstack/start (the meta-package, not @tanstack/start-*).
 
@@ -276,9 +214,9 @@ These need answers before we close the postmortem.
 See the GitHub Security Advisory for the full list of affected versions: [GHSA-g7cv-rxg3-hmpx](https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx)
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch01/348-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1092-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/759-scarcruft.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch01/349-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1108-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](ch01/772-scarcruft.html)
 - [Semgrep Intercom Php Supply Chain](../ch12/117-semgrep-intercom-php-supply-chain.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/npm-supply-chain-compromise-postmortem.md)

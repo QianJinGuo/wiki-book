@@ -4,50 +4,11 @@
 
 > 📊 Level ⭐ | 5.1KB | `entities/building-is-just-the-beginning-introducing-discove.md`
 
-
 ## 核心要点
 - 来源：lovable.dev
 - 评分：v=5 c=12 (56分)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 **1. "Later" 营销思维的终结** — 文章开篇即指出传统的「先做产品，SEO/品牌放到以后再说」模式已死 。在搜索渠道高度碎片化、AI 介入内容分发的时代，竞争优势窗口极短，发布即意味着需要被检索到。这对 AI 应用开发者的启示是：内容可发现性必须在架构层面而非运营层面解决。
 **2. 全员预渲染（Pre-rendering）覆盖存量市场** — 文中披露 Lovable 已有 4000 万应用构建量级，且所有存量应用无需任何操作即自动获得静态 HTML 快照生成能力 。这一机制将 SEO 基础能力变成了平台级默认基础设施，而非用户可选功能。对于 AI 代码生成平台而言，这意味着竞争门槛已从「能生成代码」演变为「生成的代码能否被索引」。
 **3. LLM 可读性与传统 SEO 并重** — 文章明确将 ChatGPT、Claude、Perplexity 与 Google 并列为企业需要覆盖的发现渠道 。这标志着 AI-native 内容可发现性（LLM discoverability）正式进入产品路线图，而非停留在学术讨论阶段。随着 AI 助手成为主要信息入口，应用的内容架构必须同时满足传统爬虫和 LLM 抓取的双重要求。
@@ -64,8 +25,8 @@ graph TB
 - [Lovable Discoverability Intro](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
 - [Building Is Just The Beginning Introducing Discoverability](../ch12/089-building-is-just-the-beginning-introducing-discoverability.html)
 - [Building The Agentic Future Developer Highlights From Io 2026](../ch04/019-building-the-agentic.html)
-- [Introducing The Ettin Reranker Family](ch01/406-introducing-the-ettin-reranker-family.html)
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch01/1089-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
+- [Introducing The Ettin Reranker Family](ch01/407-introducing-the-ettin-reranker-family.html)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](ch01/652-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-is-just-the-beginning-introducing-discove.md)
 

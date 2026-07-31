@@ -8,59 +8,7 @@
 
 > **Source**: University of Toronto News (2026-06-02). Research by Nicolas Papernot's [CleverHans Lab](https://cleverhans.io/) at U of T + Vector Institute. Published 2026-06-02.
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("U of T researchers demonstrate AI"))
-    核心发现 Core Finding
-    关键事实
-    攻击机制 Attack Mechanism
-    关键引文 Nicolas Papernot
-    与传统 Worm 的关键差异
-    防御建议 Defense Recommendations
-    论文链接
-    三层洞察 Why this matters for AI
-```
-
 ## 核心发现（Core Finding）
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 **首次实证**: publicly accessible open-weight AI models can power a **worm that adapts its strategy as it spreads from one device to the next** — self-learning, self-replicating malware that can:
 - 跨设备自适应攻击策略
@@ -160,14 +108,14 @@ graph TB
 ## 相关实体（Related Entities）
 
 - [Mythos For Offensive Security Xbows Evaluation](ch12/030-mythos.html) — Claude Mythos 攻防评估
-- [Llm Raiders Private Ai Server](../ch01/1274-llm.html) — LLM Raiders 私人 AI 服务器
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/298-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
+- [Llm Raiders Private Ai Server](../ch01/637-llm.html) — LLM Raiders 私人 AI 服务器
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/030-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/080-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI gateway 安全
 - [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/223-rag.html) — Linux 内核权限提升
 - [The Agentic Trust Management Platform Drata](../ch04/022-the-agentic-trust-management-platform-drata.html) — Drata agentic trust 平台
-- [Enterprise Openclaw Security Deploy Architecture Guide](../ch11/235-openclaw.html) — OpenClaw 部署安全
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/438-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox AI agent 安全测试
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/843-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html) — Anthropic Mythos 漏洞共享
+- [Enterprise Openclaw Security Deploy Architecture Guide](../ch11/237-openclaw.html) — OpenClaw 部署安全
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/441-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox AI agent 安全测试
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/856-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html) — Anthropic Mythos 漏洞共享
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — Microsoft Rampart/Clarity 开源
 
 ---

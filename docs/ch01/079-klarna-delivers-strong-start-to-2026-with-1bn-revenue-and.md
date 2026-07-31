@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐ | 7.0KB | `entities/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Klarna delivers strong start to"))
-    一 商业模式的「三重产品」协同效应
-    二 网络效应的复利增长逻辑
-    三 单位经济效率的质的飞跃
-    四 信用风险管控的护城河
-    对金融科技从业者的启示
-    对企业与商户的启示
-    对投资人与分析师的启示
-```
-
 ## 核心要点
 - GMV 达 337 亿美元（+33% YoY），美国市场 +39%、美国以外 +31%
 - 收入突破 10 亿美元大关（+44% YoY），调整后营业利润 6800 万美元，而去年同期仅 300 万美元
@@ -28,35 +13,6 @@ mindmap
 - Revenue per employee 近 140 万美元，是 2022 年的 4 倍，运营效率大幅提升
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 ### 一、商业模式的「三重产品」协同效应
 Klarna 的核心战略围绕三款产品展开，覆盖消费者钱包的不同场景：Pay Now（日常消费与储蓄）、Pay Later（相当于 0% 利息信用卡，适合中等价位消费）、Fair Financing（面向大额消费的分期付款）。 这种全钱包策略使 Klarna 能够在单一合同下于 26 个市场提供三种产品，形成极强的商户吸引力。 从数据看，Fair Financing GMV 同比增长 138%， 说明大额消费场景的分期需求正处于高速增长阶段，而 Klarna 的 20 年风控积累和 0.5 万亿美元承销经验在此发挥了关键作用。
 
@@ -86,7 +42,7 @@ Q1 最令人印象深刻的指标之一是 Revenue per employee 达到近 140 �
 1. **关注 TMD（Transaction Margin Dollars）而非单纯收入**：Klarna 使用 TMD 这一非 IFRS 指标来衡量核心业务盈利能力， 定义为收入减去处理和服务成本、信贷损失准备和资金成本。TMD Q1 达 3.89 亿美元（+44% YoY）， 与收入增速完全匹配，说明增长质量扎实。
 2. **Cohort 运营效率是长期价值指标**：2022 年加入的用户 cohort 年收入贡献从 12 美元增至 52 美元， 这种用户深耕能力是 Klarna 相较于单纯获客型金融科技公司的差异化优势，也是规模效应之外最值得关注的效率指标。
 ## 相关实体
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/094-ai.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/095-ai.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/223-rag.html)
 - [How To Create Websites With Great Ux Designs](ch01/136-how-to-create-websites-with-great-ux-designs-principles-and.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04/016-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)

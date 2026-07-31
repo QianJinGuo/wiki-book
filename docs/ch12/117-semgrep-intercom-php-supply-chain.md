@@ -8,44 +8,7 @@
 Semgrep security research: malicious Intercom PHP package spreading Mini-Shai-Hulud attack via Packagist/Composer. Attack chain, IOCs, code-level analysis.
 **Source**: [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semgrep-intercom-php-security.md) | **Review**: value=7 confidence=8
 
-
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 **PHP 供应链攻击的精细化演进**：
 1. **生态系统的精准定位**：攻击者选择 Intercom PHP 包（而非直接攻击框架本身），利用开发者对官方客户端库的信任——这类包名劫持（typosquatting/package renaming）是供应链攻击的低成本高回报路径
 2. **Composer 插件机制滥用**：通过 Composer 插件而非直接包投递实现持久化，这意味着恶意代码在 `composer install` 时即以安装者权限运行，而非依赖包的受限上下文
@@ -63,14 +26,14 @@ PHP 生态的供应链攻击揭示了一个深层问题：Composer 的插件机�
 
 ## 相关实体
 - [semgrep intercom php security](ch12/106-semgrep-intercom-php-security.html)
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/759-scarcruft.html)
-- [Semis Memo: Supply Chain Inheritance](../ch01/641-semis-memo-supply-chain-inheritance.html)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/772-scarcruft.html)
+- [Semis Memo: Supply Chain Inheritance](../ch01/633-semis-memo-supply-chain-inheritance.html)
 - [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch12/035-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/094-ai.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
-- [Semis Memo: Supply Chain Inheritance](../ch05/094-ai.html)
+- [Semis Memo: Supply Chain Inheritance](../ch05/095-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 ---

@@ -13,67 +13,7 @@
 一类是任务型技能（通常设置 disable-model-invocation: true），对应一整套步骤化流程，比如部署、提交或安全审查，用户一般通过 /skill-name 直接触发。
 另一类是参考型技能（用户不可直接调用），更像是背景知识，比如风格指南或领域术语，Claude 会在相关场景下自动应用。
 本文基于 Anthropic 官方的技能编写最佳实践，总结了 14 个可以复用的设计模式，分为五类：发现与选择、上下文经济、指令校准、工作流控制和可执行代码。
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
 ---
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 官方技能最佳实践 14 个可复用的 Agent"))
-    一 发现与选择
-      激活元数据模式 Activation Metadata pattern
-      排除条款模式 Exclusion Clause pattern
-    二 上下文经济
-      上下文预算模式 Context Budget pattern
-      渐进式披露模式 Progressive Disclosure
-    三 指令校准
-      控制调优模式 Control Tuning pattern
-      解释原因模式 Explain-the-Why pattern
-      模板脚手架模式 Template Scaffold pattern
-    四 工作流控制
-      执行清单模式 Execution Checklist pattern
-      自纠正循环模式 Self-Correcting Loop pattern
-      计划-验证-执行模式 Plan-Validate-Execute
-    五 可执行代码
-      实用工具包模式 Utility Bundle pattern
-      自主校准模式 Autonomy Calibration pattern
-    总结
-    参考资源
-    模式分类的认知架构
-```
 
 ## 一、发现与选择
 技能写出来没人用，写得好有什么意义？前两个模式要解决的，就是这个「怎么被用到」的问题。
@@ -329,11 +269,11 @@ description 决定技能会不会被用到；渐进式披露决定它会占多�
 ### 权限配置的防御性思维
 allowed-tools 的配置应该遵循「功能最小化」而非「先用后收紧」——后者容易导致权限蔓延。配置完成后，应该模拟一个恶意或者误用的场景，思考：如果这个技能被用于超出其设计目标的任务，现有的工具权限会造成多大风险？这个思维实验能够帮助发现潜在的安全盲点。
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/989-anthropic.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1004-anthropic.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/1004-anthropic.html)
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch04/710-claude-managed-agents.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)
-- [Anthropic Agent Skills Design Patterns 14](ch04/257-anthropic-agent.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/401-agent-skills.html)
+- [Anthropic Agent Skills Design Patterns 14](ch04/260-anthropic-agent.html)
 
 ---
 

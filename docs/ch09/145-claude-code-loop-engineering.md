@@ -8,27 +8,6 @@
 
 基于兔兔AGI（技术极简主义）的 Loop Engineering 实战指南，系统讲解如何设计让工作自己推进的循环系统。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code Loop Engineering 完整攻略"))
-    演进三阶段
-    Loop 三种形态
-      单 Agent 循环
-      多 Agent 舰队循环 Fleet Loop
-      Open-loop vs Closed-loop
-    理论基础
-      ReAct 推理 行动
-      Reflexion 失败即燃料
-    Claude Code 内置 Loop 工具
-    双层结构
-    「51」工程组件 Addy Osmani
-    四个设计原则
-    金句
-```
-
 ## 核心观点
 
 Boris Cherny （Claude Code 负责人）：
@@ -38,41 +17,6 @@ Boris Cherny （Claude Code 负责人）：
 身份转变：从「输入提示词的人」变成「设计提示词系统的人」。
 
 ## 演进三阶段
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | 年份 | 范式 | 核心问题 |
 |------|------|----------|

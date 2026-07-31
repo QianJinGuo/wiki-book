@@ -4,63 +4,16 @@
 
 > 📊 Level ⭐⭐ | 11.3KB | `entities/ai-native-team-building-yexiaochai.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Native 团队搭建 七层模型与六步演进路线"))
-    评分
-    AI 如何优化组织复杂度
-    AI 参与工作的七层模型
-    六步演进路线
-    三类核心资产
-    七层模型的递进逻辑与组织变革的关系
-    管理本质问题的 AI 解答
-    六步演进路线的陷阱 工具先行 vs 管理先行
-```
-
 ## 相关实体
 - [Ai Native Team Building Failures Ceo Digital Twin Case](../ch05/018-ai-native.html)
 - [Ai Native Rd Org Design](../ch05/018-ai-native.html)
 - [Ai Native 时代 研发组织何去何从](../ch05/018-ai-native.html)
 - [Ai Native Org Guide Slowdown](../ch05/018-ai-native.html)
-- [Fanling Company As Agent Ai Org Reflection](../ch01/896-agent-ai.html)
+- [Fanling Company As Agent Ai Org Reflection](../ch01/909-agent-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-team-building-yexiaochai.md)
 
 ## 评分
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 | 维度 | 分数 |
 |------|------|
 | 知识价值 | 8 |

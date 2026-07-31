@@ -12,22 +12,6 @@ Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 七种自定义方法 官方全景指南"))
-    七种方法对比
-    CLAUDEmd 控制在 200 行以内
-    规则 路径作用域是关键
-    技能 流程型指令的归宿
-    子智能体 隔离是核心价值
-    钩子 确定性执行
-    输出风格 权重最高 谨慎使用
-    快速建议
-```
-
 ## 七种方法对比
 
 | 方法 | 何时加载 | 压缩行为 | 上下文成本 | 适用场景 |
@@ -42,41 +26,6 @@ mindmap
 | 追加系统提示词 | 会话开始时，CLI flag 传入 | 永不压缩；只作用于本次调用 | 中（首次请求后缓存） | 语气、回复长度、格式偏好 |
 
 ## CLAUDE.md：控制在 200 行以内
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **根目录 CLAUDE.md**：始终加载，压缩后重新读取。适合构建命令、monorepo 结构、团队规范
 - **子目录 CLAUDE.md**：按需加载（读取该子目录文件时）。适合子目录专属约定
@@ -120,7 +69,7 @@ All API handlers must validate input with Zod before processing.
 
 上下文成本低——配置位于主上下文之外。PreToolUse hook 可以用退出码 2 拒绝工具调用。
 
-→ [Claude Code Hooks 完整指南](../ch03/078-claude-code.html)
+→ [Claude Code Hooks 完整指南](../ch03/077-claude-code.html)
 
 ## 输出风格：权重最高，谨慎使用
 
@@ -174,9 +123,9 @@ Claude Code 中，钩子是唯一能保证"确定性触发、确定性执行"的
 
 - 原文：https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
 - → [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- → [Claude Code 治理：软规则与硬约束](../ch03/078-claude-code.html)
+- → [Claude Code 治理：软规则与硬约束](../ch03/077-claude-code.html)
 - → [Claude Code 子智能体上下文卫生](../ch04/173-claude-code-subagents.html)
-- → [Claude Code Hooks 完整指南](../ch03/078-claude-code.html)
+- → [Claude Code Hooks 完整指南](../ch03/077-claude-code.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-seven-customization-methods-anthropic-official.md)
 
 ---

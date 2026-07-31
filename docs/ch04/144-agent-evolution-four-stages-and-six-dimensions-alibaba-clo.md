@@ -8,54 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-evolution-four-stages-six-dimensions-aliyun.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Evolution Four Stages and"))
-    四阶段范式演进
-    六维技术概念演变
-    核心哲学 构建确定性承载不确定性
-    与本文观察的对应关系
-```
-
 ## 摘要
 
 阿里云技术实践文章对 2023–2026 年 Agent 演化进行结构化梳理：**四阶段范式演进**（被动式 ReAct → 工作流 Agent → 自主 Agent → 自进化 Agent）与**六维技术概念演变**（Prompt / Planning / Memory / Tools / Workflow / Environment）。核心观点："形未变，神已变"——经典模块组合未变，但每个模块的运行逻辑发生了内核级重构。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 - 四阶段是**并存且互补**的，不是替代关系；不同阶段适合不同业务复杂度与稳定性要求
 - 六个技术维度的演化**同时发生**：Prompt 解耦、Planning 长程化、Memory 文件系统化、Tools CLI 原生化、Workflow Skill 封装、Environment Runtime 化
@@ -129,7 +86,7 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 ### 与本文观察的对应关系
 
 文中提及的代表性框架可对应到本仓库其他实体：
-- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](../ch05/073-claude-code-harness.html) / [OpenClaw](../ch11/235-openclaw.html) / Hermes Agent 等
+- **Cloud Code / Codex / OpenClaw / Hermes** → [Claude Code](../ch05/074-claude-code-harness.html) / [OpenClaw](../ch11/237-openclaw.html) / Hermes Agent 等
 - **Workflow 引擎 LangGraph / Dify** → Agent 编排基础设施
 - **Skills 体系（SKILL.md / CLAUDE.md / AGENTS.md）** → [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心载体
 - **LLM-Wiki / GBrain** → 本地知识库理念
@@ -147,8 +104,8 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 
 ## 相关实体
 
-- [Claude Code 深度解析](../ch05/073-claude-code-harness.html) — 自主 Agent 阶段（阶段三）代表
-- [OpenClaw 完整指南](../ch11/235-openclaw.html) — 自主 Agent 阶段（阶段三）代表
+- [Claude Code 深度解析](../ch05/074-claude-code-harness.html) — 自主 Agent 阶段（阶段三）代表
+- [OpenClaw 完整指南](../ch11/237-openclaw.html) — 自主 Agent 阶段（阶段三）代表
 - [Claude Code Dynamic Workflows](../ch09/094-claude-code-dynamic-workflows.html) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
 - [从氛围编程到智能体工程](ch04/126-karpathy-vibe-coding-agentic-engineering.html) — Agentic Engineering 范式演进
 - [Agent 记忆系统实践](../ch03/035-agent.html) — Memory 模块工程化
@@ -156,7 +113,7 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 - [Agent YAML 评测](../ch03/035-agent.html) — 自进化机制中的评估反馈环
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 阶段二到阶段四贯穿的核心工程化思想
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — Prompt 解耦与渐进式加载的方法论
-- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](../ch01/1326-15.html)
+- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](../ch01/926-20.html)
 
 ---
 

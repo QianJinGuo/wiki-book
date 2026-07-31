@@ -8,19 +8,6 @@
 
 > **Background**：本文基于 数据STUDIO 公众号对 Python 3.15 beta 1 的实测体验，从开发者实际项目的视角评估了该版本的关键改动：惰性导入、冻结字典与哨兵值、以及进程附加调试等特性。文章以"会不会真的塞进项目里"为排序标准，而非 Release Notes 的顺序。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Python 315 Beta 实测 实战视角的技术特性评估"))
-    核心特性
-      lazy import 惰性导入
-      frozendict sentinel 冻结字典与哨兵值
-      进程附加调试 attach to running process
-    实战评估
-```
-
 ## 核心特性
 
 ### 1. `lazy import` — 惰性导入
@@ -59,37 +46,6 @@ path = Path(".")  # pathlib 在这里才真正 import
 允许直接附加到正在运行的生产进程进行调试——对于排查生产环境偶发问题有重大实战价值。
 
 ## 实战评估
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 文章的特色在于以"会不会真的塞进项目里"为标准对特性排序：
 - **最想用**：`lazy import` — 解决 CLI 工具启动慢的经典工程问题

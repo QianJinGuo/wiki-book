@@ -4,57 +4,10 @@
 
 > 📊 Level ⭐⭐ | 15.6KB | `entities/sub-agent-vs-agent-team-selection-guide.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Sub-Agent vs Agent Team 选型指南"))
-    核心判断准则
-    Sub-Agent vs Agent Team 本质区别
-    最大的坑 按岗位拆而不是按上下文边界拆
-    Sub-Agent 硬约束
-    Agent Team 适用场景
-    五种编排原语
-    判断框架表
-    隐藏成本
-```
-
 ## 核心判断准则
 > 多智能体架构里，最先该判断的不是"要拆几个"，而是这些子任务之间是否共享同一段上下文。能干净切开的用 Sub-Agent，必须共享状态的才上 Agent Team。
 
 ## Sub-Agent vs Agent Team 本质区别
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 | 维度 | Sub-Agent | Agent Team |
 |------|-----------|------------|
 | 上下文 | 各有独立上下文 | 共享上下文 |
@@ -230,10 +183,10 @@ Agent Team 的隐性成本容易在概念阶段被低估：
 如果答案不确定，从简单结构开始，用监控数据说话，而不是用架构图说话。
 ## 相关实体
 - [Four Sub Agent Patterns](../ch03/035-agent.html)
-- [Minimax Agent Team Mavis Owner Worker Verifier](../ch01/1303-owner-worker-verifier.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
+- [Minimax Agent Team Mavis Owner Worker Verifier](../ch01/1308-owner-worker-verifier.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html)
 - [Sub Agent Vs Agent Team Selection](ch04/114-sub-agent-vs-agent-team.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/381-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/385-hermes-agent-goal.html)
 
 ---
 

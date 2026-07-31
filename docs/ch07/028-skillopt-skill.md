@@ -6,26 +6,6 @@
 
 # SkillOpt — 微软训练 Skill 文档的方法论
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SkillOpt 微软训练 Skill 文档的方法论"))
-    核心思想
-    训练循环 深度学习 文本空间
-    两个模型分工
-    关键设计
-      克制的学问 textual learning rate
-      rejected-edit buffer
-      slowmeta update
-    个 benchmark 相比直怼 GPT-55
-    学到的规则特点
-      规则示例
-    跨模型跨环境迁移
-    训练成本
-```
-
 ## 核心思想
 
 SkillOpt 的核心洞察：**Agent 的模型参数是冻结的，但 Skill 文档是纯文本，可以随便改**。既然如此，为什么不能像训练神经网络一样，用一套完整的优化流程来迭代优化这份文档呢？
@@ -33,39 +13,6 @@ SkillOpt 的核心洞察：**Agent 的模型参数是冻结的，但 Skill 文�
 把 Skill 文档当作神经网络的「权重」，用类似的训练循环来优化它。
 
 ## 训练循环：深度学习 → 文本空间
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 | 深度学习概念 | SkillOpt 对应操作 |
 |------------|-----------------|
@@ -187,11 +134,11 @@ SpreadsheetBench 从 77.5 暴跌到 55.0（-22.5 分）的实验揭示：跨 epo
 - 项目主页：https://microsoft.github.io/SkillOpt/
 
 ## 相关实体
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/271-skill.html)
-- [Claude Design Skill](../ch01/1150-claude-design-skill.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/273-skill.html)
+- [Claude Design Skill](../ch01/1143-claude-design-skill.html)
 - [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
-- [Ai Skill Skill Creator 源码拆解](../ch04/319-skill-skill.html)
-- [Qoder Skill Ui Agent Human Collaboration](../ch03/067-qoder-skill-ui-agent.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/321-skill-skill.html)
+- [Qoder Skill Ui Agent Human Collaboration](../ch03/066-qoder-skill-ui-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-microsoft-train-skill-like-neural-network.md)
 

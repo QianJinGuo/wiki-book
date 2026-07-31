@@ -6,52 +6,11 @@
 
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathys Autoresearch found a"))
-    正文要点
-    Autoresearch 的领域迁移 从模型训练到查询性能优化
-    Campaign-Lane-Hypothesis-Experimen
-    toTimeZone 导致 ClickHouse 主键失效的根因分析
-    AI Agent 作为去偏见探测器 认知惯性移除的价值
-    为 Autoresearch 性能调查准备独立的基准测试集群
-    用 Campaign-Lane 结构将开放优化问题转化为可管理的探索组合
-    将 EXPLAIN PLAN indexes1 json1
-```
-
 ## 概述
 
 Newsletter 评分 8×9=72，stars=4，来源 URL: https://posthog.com/blog/karpathy-autoresearch-query-engine-bug
 
 ## 正文要点
-
-```mermaid
-graph TB
-    subgraph "ReAct 循环"
-        IN[用户输入] --> TH[思考<br/>Reasoning]
-        TH --> AC[行动<br/>Action]
-        AC --> OB[观察<br/>Observation]
-        OB -->|"新信息触发"| TH
-        TH -->|"推理完成"| OUT[最终回答]
-    end
-    subgraph "记忆"
-        WM[工作记忆<br/>上下文窗口]
-        SM[短期记忆<br/>会话存储]
-    end
-    TH --> WM
-    OB --> SM
-    SM -->|"回忆"| TH
-    classDef think fill:#dbeafe,stroke:#2563eb
-    classDef act fill:#d1fae5,stroke:#059669
-    classDef mem fill:#fef3c7,stroke:#d97706
-    class TH,OUT think
-    class AC,OB act
-    class WM,SM mem
-```
-
 
 Published Time: Wed, 03 Jun 2026 11:24:08 GMT
 
@@ -126,8 +85,8 @@ PostHog 正在将 hackathon 手工喂入模式升级为全自动 pipeline：① 
 `toTimeZone()` 包裹被团队习惯化而失去质疑动机，最终靠 AI agent 才重见天日。实践启示：组织应建立机制，用 AI 定期重新审视历史决策——特别是那些被标记为"本来就应该这样"的核心基础设施代码。这类代码的隐性技术债往往比新引入的代码风险更高，因为没有人在寻找它们。Autoresearch 框架的价值不仅在于单次 hackathon 优化，更在于将其制度化为持续的质量保障基础设施。
 
 ## 相关实体
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch05/094-ai.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/003-agentrun.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/444-agentrun.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/069-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)

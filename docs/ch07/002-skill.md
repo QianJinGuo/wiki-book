@@ -4,69 +4,11 @@
 
 > 📊 Level ⭐⭐ | 25.5KB | `entities/skill-design-patterns.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Skill 设计模式"))
-    种核心设计模式
-      模式 1 线性流程 Linear
-      模式 2 决策树 按需加载 Decision Tree
-      模式 3 循环迭代 Iterative Loop
-    Anthropic 14 种实现模式 5 大类
-      发现与选择 2 模式
-      上下文经济 2 模式
-      指令校准 4 模式
-    Anthropic 14 模式与 51 框架的对应关系
-    通用写作技巧
-      防止 LLM 偷懒的 4 种武器
-      教学的 3 种有效方式
-      知识组织的 3 层架构
-    模式选择决策树
-    参考 Skill 仓库
-    子页面
-    模式演进的内在逻辑
-```
-
 ## Overview
 从 7 个顶级 Skill 仓库（OpenAI/anthropic/Google Labs/Dean Peters/Trail of Bits）中提炼出的 5 种核心设计模式 + 1 种特殊模式。为 Agent Skill 开发提供系统性框架选择指南，告别"怎么写都行"的随意性。
 **核心价值：** Skill 本质是"知识注入"——不生成新工具，而是把指令文本注入 LLM 上下文，让 LLM 用已有工具执行指令。模式选择决定了知识如何组织、触发条件如何声明、执行流程如何控制。
 
 ## 5 种核心设计模式
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 模式 1：线性流程（Linear）
 **适用：** 有明确步骤的操作（部署、安装、迁移）
 **结构：** Prerequisites → Quick Start（Step 1→2→3）→ Fallback → Troubleshooting
@@ -148,7 +90,7 @@ graph TB
 - 反幻觉规则：`"Never reshape evidence to fit earlier assumptions"`
 
 ## Anthropic 14 种实现模式（5 大类）
-> 详细解读参见 [Anthropic 官方 14 种设计模式](../ch01/989-anthropic.html)
+> 详细解读参见 [Anthropic 官方 14 种设计模式](../ch01/1004-anthropic.html)
 
 ### 发现与选择（2 模式）
 | 模式 | 核心问题 | 关键做法 |
@@ -395,7 +337,7 @@ Anthropic 的 Activation Metadata 模式指出：一个好的 description 必须
 - 对于真正「不能出错」的低自由度场景，直接命令式反而更合适
 
 ## Related
-- [Agent Skill 编写指南](../ch04/269-agent-skill.html) — Skill 格式、渐进式披露、编写规范、评估迭代的基础知识
+- [Agent Skill 编写指南](../ch04/271-agent-skill.html) — Skill 格式、渐进式披露、编写规范、评估迭代的基础知识
 - [Hermes Agent](../ch03/096-hermes-agent.html) — 支持 Skill 机制的核心开源 Agent
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — 内置 Skill 系统实现
 - [Anthropic 14 模式原始文章](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-14-skill-patterns-best-practices.md)

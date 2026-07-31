@@ -8,55 +8,11 @@
 
 > AI 自我改进短期内最先被改写的，可能不是模型权重，而是模型外层的 Harness。从 ACE 到 DGM，Agent 不只是在 Harness 里完成任务，也开始修改 Harness 本身。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("翁荔再写万字长文 AI自我改进 先从Harness开始"))
-    从上下文工程到 Harness 演化的递进逻辑
-    Self-Harness 让 Harness 本身成为优化对象
-    DGM 与进化搜索的可规模化路径
-    评估 始终是绕不开的瓶颈
-    第 2 Source PaperWeekly
-```
-
 ## 摘要
 
 2026 年 7 月 4 日，翁荔在 Lil'Log 发布《Harness Engineering for Self-Improvement》，系统性地梳理了 AI 自我改进的技术路径。文章的核心论点是：**短期内，AI 自我改进的现实起点不会是模型直接重写自身权重，而是先让外层运行系统（Harness）变得更稳定、更可验证。** 自动科研、自我改进 Agent、进化式程序搜索被放进同一条线索中重新审视，揭示出一条清晰的递进线：提示词 → 结构化上下文 → 工作流 → Harness 代码 → 优化器代码。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 - **Harness 即操作系统**：Harness 是围绕基础模型运行的一整套系统，负责任务编排、工具调用、上下文管理、产物存储和结果评估——类比操作系统的内核，复杂逻辑被封装在底层
 - **递进优化线**：提示词工程 → 结构化上下文（ACE） → 工作流自动化（AFlow） → Harness 代码修改（Self-Harness） → 优化器代码（AlphaEvolve、DGM）

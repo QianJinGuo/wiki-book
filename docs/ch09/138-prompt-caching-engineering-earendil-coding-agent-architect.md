@@ -8,22 +8,6 @@
 
 > **Background**：本文档基于 Earendil Engineering 发表的深度技术文章 "Prompt Caching In Agents"（2026-07-22），系统分析了 KV Cache 在编码 Agent 场景下的架构设计与工程权衡。Earendil 是 Pi（模块化 AI Agent 构建平台）的开发者。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Prompt Caching Engineering"))
-    核心矛盾 编码 Agent 的 Prompt 增长模式
-    KV Cache 基础设施两种模式
-    Tool Loadout 对缓存的破坏 关键洞察
-    缓存生存期与中断
-    Pi 的缓存设计哲学 不激进修剪
-    缓存可见性
-    缓存退化的常见原因
-    与已知实体关系
-```
-
 ## 核心矛盾：编码 Agent 的 Prompt 增长模式
 
 编码 Agent 每轮交互发送的 prompt 大部分内容与上一轮相同——system prompt、tool definitions、对话历史、工具调用结果都重复传输。session 增长到数万到数十万 token 后，每轮完全重算 prefill 变得缓慢且昂贵。
@@ -31,41 +15,6 @@ mindmap
 Prompt caching 使这变得经济，但极为脆弱：一个 tool definition 的变化、模型切换、provider 路由决策都可能将期望的"低成本增量请求"变成 full replay of context。缓存行为因此不只是实现细节或优化——它影响 latency、cost、tool design、session design，甚至 product features 的取舍。
 
 ## KV Cache 基础设施两种模式
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 | 模式 | 机制 | 优势 | 劣势 |
 |------|------|------|------|
@@ -110,9 +59,9 @@ Pi 在交互 footer 显示累计 cache reads/writes（R/W），以及最新请�
 ## 与已知实体关系
 
 - [Anthropic Prompt Caching (Claude Code)](../ch01/217-anthropic-prompt-caching-claude-code.html) — Claude Code 的 prompt caching 工程实践，侧重 Anthropic 生态
-- [Tokenomics of Claude's Cache](../ch01/989-anthropic.html) — Anthropic 62.5 分钟缓存规则的 Token 经济学分析
+- [Tokenomics of Claude's Cache](../ch01/1004-anthropic.html) — Anthropic 62.5 分钟缓存规则的 Token 经济学分析
 - [Bedrock Prompt Cache Strategy](../ch11/058-amazon-bedrock-claude-prompt-cache.html) — AWS Bedrock 上的 Prompt Cache 策略设计
-- [pi-mono — 模块化 AI Agent 构建平台](../ch03/073-pi-mono-ai-agent-openclaw.html) — Earendil/Pi 的模块化 Agent 平台
+- [pi-mono — 模块化 AI Agent 构建平台](../ch03/072-pi-mono-ai-agent-openclaw.html) — Earendil/Pi 的模块化 Agent 平台
 - [OpenClacky Harness Prompt Cache](../ch05/009-harness.html) — OpenClacky 的 Harness Prompt Cache 实践
 - [Headroom Context Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-cache-stabilization.md) — Headroom 上下文压缩与缓存稳定性
 

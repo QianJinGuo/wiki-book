@@ -9,30 +9,6 @@
 > [!summary] 核心洞察
 > Harness Engineering 的核心是**通过工程化手段构建确定性，以承载模型不确定性**。三个生产系统（Claude Code、Claude Managed Agents、Hermes）的共同模式：持久化指令分离、分层记忆、会话不可变事件流、执行环境隔离、凭证安全设计。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 核心模式"))
-    Claude Code 的八大模式
-      指令与上下文管理
-      工作流与编排
-      工具与权限
-    Claude Managed Agents 三件套解耦架构
-      宠物与牲畜哲学
-      三件套解耦
-      核心安全 凭证永不进沙盒
-    Hermes 五段式循环 五层记忆
-      五段式循环
-      五层记忆架构
-    三大系统的共性与差异
-    三件套解耦的本质是关注点分离
-    凭证永不进沙盒是结构性安全而非权限控制
-    做梦整理与做梦生产是一体两面
-    宠物与牲畜的哲学映射到 Agent 生命周期管理
-```
-
 ## Claude Code 的八大模式
 
 ### 指令与上下文管理
@@ -64,37 +40,6 @@ mindmap
 - **确定性生命周期钩子：** 在关键节点自动触发预设动作（格式化等），不依赖可能被遗忘的指令
 
 ## Claude Managed Agents：三件套解耦架构
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 宠物与牲畜哲学
 

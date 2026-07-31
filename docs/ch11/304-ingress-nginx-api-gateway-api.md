@@ -2,63 +2,13 @@
 
 ## Ch11.304 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md`
 
 # 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("告别 Ingress Nginx 云原生 API 网关"))
-    角色分层是 Gateway API 相对 Ingress 的根本优势
-    无 annotation 才是真正的标准化
-    GIE 是 Gateway API 面向 AI 工作负载的关键扩展
-    双模并行 注解兼容 迁移路径关键
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Gateway API 是 K8s 官方推出的下一代 Ingress 标准，通过 **GatewayClass / Gateway / HTTPRoute 三层资源模型**实现角色分层、表达力增强与跨控制器可移植。阿里云云原生 API 网关基于开源 Higress 提供 Ingress 与 Gateway API 双模并行、灰度切流与一键回滚能力，**配套兼容主流 Nginx Ingress 注解的迁移工具链**。
 
@@ -135,10 +85,10 @@ Gateway API 在跨命名空间路由上引入 **ReferenceGrant**——必须由�
 ## 相关实体
 
 - [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/223-rag.html)
-- [Aliyun Cloud Native Safety Guardrails Three Domains](../ch05/094-ai.html)
+- [Aliyun Cloud Native Safety Guardrails Three Domains](../ch05/095-ai.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/235-openclaw.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/237-openclaw.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1175-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 
 ---
 

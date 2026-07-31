@@ -13,54 +13,11 @@ Today I was setting up Hermes to see how it does with web research. I chose Deep
 
 What worries me about this is that Anthropic and OpenAI seem to have backed themselves into a corner of high costs. Can they reasonably decrease their prices by 20-50x to compete with DeepSeek or Xiaomi’s Mimo?
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The Unbearable Cheapness of Open"))
-    Open Weight vs Low Cost
-    How do you keep prices high for
-    Will Anthropic OpenAI lean on
-    Why not compete
-    True Open Source vs Open Weight
-    Bonus
-```
-
 ## Open Weight vs Low Cost
 
 Are these models cheap because they are open weight and having hundreds or people stress test running them on different hardware helped to lower the cost? Or is it that they are being provided as loss leaders to drive the prices down?
 
 ## How do you keep prices high for commodity products?
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 You manufacture scarcity. You sell luxury and premium branding. This is what OpenAI and Anthropic seem to be doing by gating ‘frontier’ model usage behind higher walls.
 

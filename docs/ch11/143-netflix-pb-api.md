@@ -10,61 +10,7 @@
 
 Netflix 工程团队在 [Netflix Tech Blog](https://netflixtechblog.com/high-throughput-graph-abstraction-at-netflix-part-i-e88063e6f6d5) 发表了生产级图抽象层的深度设计文章。系统处理接近 10M ops/sec 的图操作，覆盖 650TB 图数据集，为三个核心业务场景提供毫秒级遍历能力。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Netflix 高吞吐图抽象层 PB 级图数据的统一 API 与实时遍历"))
-    业务场景与 OLTPOLAP 分流
-    三大核心业务图
-    架构 构建在已有抽象层之上
-    Property Graph 模型与强类型属性
-    构建在已有抽象层之上的架构哲学
-    OLTP 图的遍历约束是刻意的设计权衡
-    Service Topology 的实时根因分析价值
-    强类型属性的性能与一致性双重价值
-```
-
 ## 业务场景与 OLTP/OLAP 分流
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Netflix 的图使用场景分为两大类：
 
@@ -133,7 +79,7 @@ Netflix 的 10M ops/sec + 毫秒级延迟 + 650TB 数据规模是特定业务需
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](ch11/090-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](ch11/091-netflix-nebula-archrules-java-archunit.html)
 
 ## 原文链接
 

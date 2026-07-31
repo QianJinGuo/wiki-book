@@ -8,58 +8,11 @@
 
 > PostHog 工程师使用多个并行 Claude Code 会话，将 C++ ANTLR 生成的 SQL 解析器重写为 Rust 手写递归下降解析器，生产环境平均快 454 倍。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("PostHog 用 Claude Code 重写 SQL 解析器"))
-    验证闭环是 LLM 代码生成的核心模式
-    脆弱修复的识别与约束
-    代码覆盖率的非传统用法
-    新常态的预测
-```
-
 ## 摘要
 
 PostHog 允许用户直接使用 SQL 访问数据，其 SQL 解析器是将用户 SQL 转译成 ClickHouse SQL 的入口点，也是访问控制、查询优化等所有下游操作的依赖。原有解析器使用 ANTLR（C++ 版本）生成，将语法规则编译为 ATN（带栈的非确定性有限自动机），运行时通过通用解释器遍历图——尽管优化程度极高，基于图遍历的解释器速度永远无法与手写递归下降解析器媲美。PostHog 团队使用 Claude Opus 4.7 在 Rust 中重新实现了整个解析器，最终产物为 16K 行解析器代码 + 5K 行工具代码。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **性能飞跃**：生产环境平均快 **454 倍**，笔记本电脑基准测试约 70 倍，所有实际查询与旧解析器完全等效
 - **双方法并行**：Claude 同时生成"性能优先"（递归下降 + Pratt 表达式循环）和"成功率优先"（尽可能遵循 ANTLR 行为，但用显式代码而非通用图遍历）两种实现，最终效果相近

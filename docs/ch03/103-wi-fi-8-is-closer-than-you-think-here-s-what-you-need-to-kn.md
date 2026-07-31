@@ -6,49 +6,12 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-closer-than-you-think.md)
 
-
 ## 核心要点
 - value=7, confidence=9, product=63
 - Technically informative Wi-Fi 8 article
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-closer-than-you-think.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 **1. Wi-Fi 8 代表从"更快"到"更可靠"的范式转变**
 David Coleman 在 Extreme Connect 2026 上将 Wi-Fi 8 定调为"Ultra High Reliability"，明确将技术目标从单纯追求 PHY 速率转向可预测的可靠性。核心技术指标包括：吞吐量提升 25%（rate over range）、延迟峰值降低 25%、丢包率降低约 25%。这意味着 Wi-Fi 8 的核心价值不在于峰值速率的营销宣传，而在于减少 Zoom 卡顿、视频流畅性和边缘一致性体验的改善。对于企业网络而言，这意味着 Wi-Fi 正从"尽力而为"的接入技术向"关键业务级"可靠连接演进。
 **2. 频谱效率智能化：非主信道接入与动态子带操作**
@@ -73,9 +36,9 @@ Wi-Fi 8 AP 由于集成 AI 硅片，即使芯片厂商当前乐观估计，功�
 将 Wi-Fi 8 刷新不仅视为 RF 升级，而是边缘计算部署。盘点潜在用例：医疗保健中的跌倒检测、智能 HVAC 和照明、零售互动、或集成 Wi-Fi  sensing 与摄像头的安全分析。与 OT、楼宇管理和应用团队讨论他们如何利用 AP 层的占用分析和本地化 AI 推理能力。这些对话现在就开始，因为 AI 能力将成为 Wi-Fi 8 RFP 中的差异化因素。
 
 ## 相关实体
-- [Wi-Fi 8 is closer than you think](ch03/057-wi-fi-8-is-closer-than-you-think.html)
-- [Wi-Fi 8 is closer than you think. Here's what you need to know](ch03/057-wi-fi-8-is-closer-than-you-think.html)
-- [Wi-Fi 8 is closer than you think](ch03/057-wi-fi-8-is-closer-than-you-think.html)
+- [Wi-Fi 8 is closer than you think](ch03/056-wi-fi-8-is-closer-than-you-think.html)
+- [Wi-Fi 8 is closer than you think. Here's what you need to know](ch03/056-wi-fi-8-is-closer-than-you-think.html)
+- [Wi-Fi 8 is closer than you think](ch03/056-wi-fi-8-is-closer-than-you-think.html)
 
 ---
 

@@ -6,54 +6,11 @@
 
 # Anthropic：生物学Agent的瓶颈不在模型，而在数据基础设施
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 生物学Agent的瓶颈不在模型 而在数据基础设施"))
-    生物学 Agent 为什么落后于 Coding Agent
-    Karpathy 的「浏览器点击税」与生物学 Agent 的共鸣
-    VirBench 系统化评估生物学 Agent 的数据访问能力
-    gget virus 为病毒数据检索构建确定性工具层
-```
-
 ## 摘要
 
 Anthropic 于 2026 年 6 月发表科学博客《为生物学智能体铺平道路》（Paving the way for agents in biology），由生物学家兼机器学习研究员 Laura Luebbert 撰写。博客的核心洞察颠覆了业界普遍预期：**阻碍生物学 AI Agent 爆发的瓶颈，根本不在于大模型底座的推理能力不够强，而在于人类现有的生物学数据基础设施实在是太落后了**。研究团队构建了 VirBench 基准测试，涵盖 120 个真实病毒序列查询任务，结果显示即便最先进的模型（GPT-5.5、Claude Opus 4.7）在原始检索中也仅有 16.9%–91.3% 的准确率，且同一模型重复运行结果波动剧烈。通过开发确定性工具 gget virus 规范数据访问路径后，所有 Agent 准确率均提升至 90% 以上，GPT-5.5 达到 99.7%。这一研究深刻揭示了科学 Agent 领域的一个根本性挑战：**在「混乱的老城」式数据基础设施上建造 Agent 系统，每一次都让模型重新发明流程是不可接受的**。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 1. **生物学 Agent 的瓶颈是数据基础设施，而非模型推理能力**：即便 GPT-5.5 和 Claude Opus 4.7 这类顶级模型，在面对混乱的生物数据接口时也表现堪忧
 2. **VirBench 基准测试揭示严重不稳定问题**：同一个模型在相同提示词下三次运行，埃博拉病毒检索分别返回 106 条、15 条和 5 条序列（标准答案是 266 条）
@@ -177,8 +134,8 @@ Laura Luebbert 在博客结尾提出的原则值得所有科学 Agent 建设者�
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](../ch07/016-anthropic-mcp.html) — Anthropic 的工具调用架构
 - [Harness Engineering](../ch05/120-harness-engineering.html) — Harness 工程与 Agent 可靠性的关系
 - [Agent Harness Context Management Working Set](../ch05/058-agent-harness.html) — 上下文管理在 Agent 执行中的作用
-- [Kimi Work Beta Foundation Model Company Advantage](../ch01/397-kimi.html) — 模型公司做 Agent 的路线对比
-- [Claude Code First Year Retrospective Boris Cat 2026](../ch03/078-claude-code.html) — Claude Code 验证了「工具层可靠性」的重要性
+- [Kimi Work Beta Foundation Model Company Advantage](../ch01/398-kimi.html) — 模型公司做 Agent 的路线对比
+- [Claude Code First Year Retrospective Boris Cat 2026](../ch03/077-claude-code.html) — Claude Code 验证了「工具层可靠性」的重要性
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html) — Agent 记忆与上下文管理
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 

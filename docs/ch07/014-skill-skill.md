@@ -8,64 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Skill 产品哲学 歸藏做了爆款 Skill 后的产品反思"))
-    K 型分化开篇核心洞察本实体独家
-    节核心观点本实体独家
-      Skill 是能力商品 不只是提示词
-      Skill 的核心 把人的经验外化
-      用户不关心概念用户关心结果
-    个真实爆款 Skill 案例
-      案例 1 PPT Skill演讲分享
-      案例 2 社交媒体卡片 Skill34 竖版图文
-      案例 3 Logo Generator Skill三层架构
-    与已有 Skill 实体的关系本实体定位
-    关键独到判断本实体独家
-    实践启示本实体补全
-```
-
 ## 一句话总结
 
 歸藏做了 **4 个爆款 Skill**(PPT / 社交媒体卡片 / Logo Generator / AI Desk Card)后的 **产品哲学反思** —— **K 型分化** / **能力商品** / **把品味变成约束** / **中心短辐射厚** / **盗用靠持续分发** 等 14 节独家洞察，填补 wiki 中"Skill **产品哲学视角**"的空白(与现有"设计模式/工程教程/写作规范"视角互补)。
 
 ## K 型分化(开篇核心洞察,本实体独家)
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 **核心命题**: Agent 不是抹平能力差距，而是**放大能力差距**。
 
@@ -275,11 +222,11 @@ graph TB
 
 ## 相关实体
 
-- [Skill Design Patterns](../ch04/271-skill.html) — 5 种核心设计模式(模式/结构视角)
-- [Skill Development Guide Linyi](../ch04/271-skill.html) — 工程教程/保姆级(工程实现视角)
-- [Agent Skill Writing Practices](../ch04/269-agent-skill.html) — 高质量编写规范(写作规范视角)
-- [Skill Writing Patterns Best Practices](../ch04/271-skill.html) — 7 个顶级 Skill 提炼模式
-- [Skill Design Spec 8 Block Checklist Winty](../ch04/271-skill.html) — 8 块检查清单
+- [Skill Design Patterns](../ch04/273-skill.html) — 5 种核心设计模式(模式/结构视角)
+- [Skill Development Guide Linyi](../ch04/273-skill.html) — 工程教程/保姆级(工程实现视角)
+- [Agent Skill Writing Practices](../ch04/271-agent-skill.html) — 高质量编写规范(写作规范视角)
+- [Skill Writing Patterns Best Practices](../ch04/273-skill.html) — 7 个顶级 Skill 提炼模式
+- [Skill Design Spec 8 Block Checklist Winty](../ch04/273-skill.html) — 8 块检查清单
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
 

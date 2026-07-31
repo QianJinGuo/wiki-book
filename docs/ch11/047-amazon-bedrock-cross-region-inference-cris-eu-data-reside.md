@@ -8,55 +8,7 @@
 
 > 本文综合提炼自 AWS 关于 Amazon Bedrock 跨区域推理（CRIS）的欧洲合规指南。核心：**Inference Profile** 抽象 region 路由，**Global CRIS** 跨所有商业 region（最高吞吐/折扣价）vs **EU Geo CRIS** 严格约束在 EU region 内（满足 GDPR 数据驻留）。**安全性**：AWS backbone 加密传输、IAM 显式选择 CRIS profile、CloudTrail + Model Invocation Logging 审计。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Amazon Bedrock Cross-Region"))
-    核心概念
-      个关键概念
-      两种 CRIS Scope
-    GDPR 对齐
-    安全性设计
-    透明性和审计性
-    代码示例 CRIS profile 调用
-    Geo CRIS 的静态性与 GDPR 动态合规的内在张力
-    Global CRIS 的成本优势实质上是跨区数据流的隐性风险溢价
-    IAM 的角色从访问控制延伸为数据治理的前置防线
-```
-
 ## 核心概念
-
-```mermaid
-graph TB
-    subgraph "法规要求"
-        GDPR[GDPR<br/>数据保护]
-        INDUSTRY[行业标准<br/>金融/医疗]
-        LOCAL[地方法规<br/>网安法/个保法]
-    end
-    subgraph "实施层"
-        MAP[合规映射<br/>要求→措施]
-        IMPL[技术实施<br/>加密/脱敏/审计]
-        TRAIN[人员培训<br/>意识提升]
-    end
-    GDPR & INDUSTRY & LOCAL --> MAP
-    MAP --> IMPL & TRAIN
-    subgraph "审计层"
-        INTERNAL[内部审计<br/>自查自纠]
-        EXTERNAL[外部审计<br/>第三方认证]
-        REPORT[合规报告<br/>持续更新]
-    end
-    IMPL --> INTERNAL --> EXTERNAL --> REPORT
-    REPORT -->|"法规变化"| MAP
-    classDef req fill:#fee2e2,stroke:#dc2626
-    classDef impl fill:#dbeafe,stroke:#2563eb
-    classDef audit fill:#d1fae5,stroke:#059669
-    class GDPR,INDUSTRY,LOCAL req
-    class MAP,IMPL,TRAIN impl
-    class INTERNAL,EXTERNAL,REPORT audit
-```
-
 
 ### 3 个关键概念
 
@@ -228,11 +180,11 @@ CloudWatch / CloudTrail / Model Invocation Logging 均**只在 source region 记
 - [Model Invocation Logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html)
 
 ## 相关实体
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Openai Models Codex Amazon Bedrock Ga](ch11/295-amazon-bedrock.html)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/298-ai-agent.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/561-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/030-ai-agent.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/566-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
 
 ---
 

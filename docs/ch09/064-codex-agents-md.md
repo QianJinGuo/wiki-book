@@ -2,74 +2,15 @@
 
 ## Ch09.064 Codex AGENTS.md 项目说明书完整指南
 
-> 📊 Level ⭐⭐ | 9.9KB | `entities/codex-agentsmd-project-instructions-rookie.md`
+> 📊 Level ⭐⭐ | 10.0KB | `entities/codex-agentsmd-project-instructions-rookie.md`
 
 # Codex AGENTS.md 项目说明书完整指南
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Codex AGENTSmd 项目说明书完整指南"))
-    AGENTSmd 的定位
-    Codex 发现链 全局层 项目层 合并
-      第一步 全局层 Global scope
-      第二步 项目层 Project scope
-      第三步 合并
-    AGENTSoverridemd Codex 独有的「临时盖章」
-    该写什么 vs 不该写什么
-      该写的五类
-      不该写的
-      大小红线
-    两个配置旋钮
-      projectdocfallbackfilenames
-      projectdocmaxbytes
-    验证流程
-    AGENTSmd 是「上下文工程」的核心实践载体
-    发现链设计中的「Unix 哲学」基因
-```
 
 ## 概述
 
 AGENTS.md 是 Codex 的「项目说明书」——每次启动会话前必读的持久指令文件，相当于 Claude Code 的 CLAUDE.md。但 Codex 的发现机制、覆写规则、字节上限自成一套，与 Claude Code 有显著差异。
 
 ## AGENTS.md 的定位
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 AGENTS.md 是你写给 Codex 的一份持久指令，它每次启动、动手干活之前都先读一遍，当成这个项目的背景装进脑子。没有 AGENTS.md，你就得每次重新解释一遍上下文。
 

@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((模型训练))
-    预训练
-      数据准备
-      分布式训练
-      检查点管理
-    监督微调
-      SFT数据
-      指令跟随
-      质量筛选
-    对齐
-      RLHF
-      DPO
-      GRPO
-    高效训练
-      LoRA/QLoRA
-      分布式策略
-      混合精度
-    蒸馏
-      知识蒸馏
-      数据蒸馏
-      模型压缩
-    评估
-      困惑度
-      下游任务
-      人工评测
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -48,26 +17,6 @@ mindmap
 ---
 
 ## 导读
-
-```mermaid
-graph LR
-    DATA[数据准备] --> SFT[SFT 监督微调]
-    SFT --> RL[RLHF/DPO 对齐]
-    RL --> EVAL[评估]
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA]
-        DS[知识蒸馏]
-        DIST[分布式训练]
-    end
-    SFT --> LORA
-    EVAL --> DS
-    SFT --> DIST
-    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef efficient fill:#d1fae5,stroke:#059669,color:#064e3b
-    class DATA,SFT,RL,EVAL pipeline
-    class LORA,DS,DIST efficient
-```
-
 
 通用模型很强，但你的场景需要专属模型。
 
@@ -832,57 +781,9 @@ Grok对马斯克而言有三个战略价值：X平台AI能力的核心支柱、�
 
 ---
 
-## Ch15.008 Notes on pretraining parallelisms and failed training runs.
+## Ch15.008 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
-> 📊 Level ⭐⭐ | 5.7KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
-
-## 核心要点
-- 评分：v=7 × c=9 = 63
-- 来源：dwarkesh
-## 相关实体
-- [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
-- [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notes-on-pretraining-parallelisms-and-failed-training-runs.md)
-
-## 深度分析
-### 因果性破坏（Causality Breaking）
-**专家路由中的因果破坏**是当前 MoE 训练失败的核心原因之一。在专家路由中，Token 分配本应在严格因果顺序下进行，但 Expert Choice 机制允许后续 Token 的路由决策反向影响先到 Token 的分配结果。这导致训练阶段看到的梯度分布与推理阶段实际运行时不一致。
-**Token Dropping 的危害**：某些专家在处理批次时忽略排名不强的 Token以节省计算资源，但这同样打破了因果性——后续更匹配的 Token 可能导致早期 Token 被忽略。这种偏差在大规模训练中会系统性累积。
-
-### 数值精度问题：比方差更危险的偏差
-FP16 在集合运算（All-Reduce）中的精度问题揭示了一个反直觉的事实：**偏差（Bias）比方差（Variance）危害更大**。方差不论正负，最终可以通过均值化消除；但偏差会系统性叠加，最终导致模型参数严重偏离真实值。
-GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数值较大时精度骤降，当多个小梯度累加到 1024 及以上时，相邻可表示间隔扩大到多个整数值，导致累加结果被截断回原值。这个 Bug 极难发现，因为梯度值在 1024 以下时表现完全正常。
-
-### 并行策略的权衡框架
- Horace He 的讲座提供了一个清晰的决策链条：
-
-- **FSDP 是默认首选**：因为 weight all-gather 与计算可完全 overlap，通信与计算可以隐藏
-- **FSDP 的通信开销**：看似昂贵的 all-gather（每层 forward + backward 各一次）实际只相当于 vanilla DP 50% 的额外开销，因为 all-gather 成本是 all-reduce 的一半
-- **FSDP 的失效场景**：
-  - 当 GPU 数量增加导致 compute time 下降速度快于 comms time 时，MFU 崩塌
-  - 当 batch size 过小（单序列 token 数 × 序列数低于临界值）时，无法充分利用数据并行
-
-### 流水线并行的新问题
-流水线并行在解决 FSDP 局限的同时引入了**气泡（Bubbles）**问题：由于梯度聚合与权重更新必须在下一批次开始前完成，前序层和后序层 GPU 在批次交接处必然存在空闲时间。此外，流水线打破了跨层的残差连接设计（如 Kimi 的 attention-to-residuals），限制了对模型架构的探索。
-
-### RL 推理与用户推理的本质差异
-在 RL 生成推理中，训练引擎与推理引擎之间的数值漂移会引入微妙的 Off-Policy 偏差，这对高质量训练影响巨大，但在纯用户推理场景中不成问题。这提示基础设施团队不能简单复用同一套推理优化。
-
-## 实践启示
-1. **建立严格的数值精度审计流程**：在所有 All-Reduce 和 All-Gather 关键路径上增加精度校验节点，特别是当梯度累加值跨越 1024 等 2 的幂次边界时。
-2. **MoE 训练优先选择 Token Routing 而非 Expert Choice**：虽然 Expert Choice 能保证专家间负载均衡，但因果破坏的代价远超预期。如需负载均衡，考虑在训练后期切换策略。
-3. **并行策略的切换阈值应公式化**：利用 MFU 公式计算 comms/compute crossover，批量大小和模型稀疏度都会影响切换点位置。盲目增加 GPU 而不调整并行策略会导致算力利用率断崖式下降。
-4. **内核工程不可完全依赖自动化**：即使是最好的 AI 辅助工具，在新硬件架构（如 Blackwell）上的内核优化仍需要顶级工程师的领域知识积累。RL 自动化方法可能在已有成熟架构上有效，但无法完全替代硬件特定优化。
-5. **多计算因子叠加时必须逐项校验**：累积多个 compute multiplier 时，每一步都需要独立验证偏差引入风险。系统性的 Process Discipline 是防止 subtle bias 累积的唯一防线。
-6. **RL 推理系统需独立于用户推理系统构建**：两者对数值漂移的敏感度完全不同，不应共用基础设施。
-
----
-
-## Ch15.009 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
-
-> 📊 Level ⭐⭐ | 5.7KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
+> 📊 Level ⭐⭐ | 5.8KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
 
 # 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
@@ -959,6 +860,54 @@ MiniCPM5-1B 的特殊之处：
 
 ---
 
+## Ch15.009 Notes on pretraining parallelisms and failed training runs.
+
+> 📊 Level ⭐⭐ | 5.7KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
+
+## 核心要点
+- 评分：v=7 × c=9 = 63
+- 来源：dwarkesh
+## 相关实体
+- [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
+- [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notes-on-pretraining-parallelisms-and-failed-training-runs.md)
+
+## 深度分析
+### 因果性破坏（Causality Breaking）
+**专家路由中的因果破坏**是当前 MoE 训练失败的核心原因之一。在专家路由中，Token 分配本应在严格因果顺序下进行，但 Expert Choice 机制允许后续 Token 的路由决策反向影响先到 Token 的分配结果。这导致训练阶段看到的梯度分布与推理阶段实际运行时不一致。
+**Token Dropping 的危害**：某些专家在处理批次时忽略排名不强的 Token以节省计算资源，但这同样打破了因果性——后续更匹配的 Token 可能导致早期 Token 被忽略。这种偏差在大规模训练中会系统性累积。
+
+### 数值精度问题：比方差更危险的偏差
+FP16 在集合运算（All-Reduce）中的精度问题揭示了一个反直觉的事实：**偏差（Bias）比方差（Variance）危害更大**。方差不论正负，最终可以通过均值化消除；但偏差会系统性叠加，最终导致模型参数严重偏离真实值。
+GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数值较大时精度骤降，当多个小梯度累加到 1024 及以上时，相邻可表示间隔扩大到多个整数值，导致累加结果被截断回原值。这个 Bug 极难发现，因为梯度值在 1024 以下时表现完全正常。
+
+### 并行策略的权衡框架
+ Horace He 的讲座提供了一个清晰的决策链条：
+
+- **FSDP 是默认首选**：因为 weight all-gather 与计算可完全 overlap，通信与计算可以隐藏
+- **FSDP 的通信开销**：看似昂贵的 all-gather（每层 forward + backward 各一次）实际只相当于 vanilla DP 50% 的额外开销，因为 all-gather 成本是 all-reduce 的一半
+- **FSDP 的失效场景**：
+  - 当 GPU 数量增加导致 compute time 下降速度快于 comms time 时，MFU 崩塌
+  - 当 batch size 过小（单序列 token 数 × 序列数低于临界值）时，无法充分利用数据并行
+
+### 流水线并行的新问题
+流水线并行在解决 FSDP 局限的同时引入了**气泡（Bubbles）**问题：由于梯度聚合与权重更新必须在下一批次开始前完成，前序层和后序层 GPU 在批次交接处必然存在空闲时间。此外，流水线打破了跨层的残差连接设计（如 Kimi 的 attention-to-residuals），限制了对模型架构的探索。
+
+### RL 推理与用户推理的本质差异
+在 RL 生成推理中，训练引擎与推理引擎之间的数值漂移会引入微妙的 Off-Policy 偏差，这对高质量训练影响巨大，但在纯用户推理场景中不成问题。这提示基础设施团队不能简单复用同一套推理优化。
+
+## 实践启示
+1. **建立严格的数值精度审计流程**：在所有 All-Reduce 和 All-Gather 关键路径上增加精度校验节点，特别是当梯度累加值跨越 1024 等 2 的幂次边界时。
+2. **MoE 训练优先选择 Token Routing 而非 Expert Choice**：虽然 Expert Choice 能保证专家间负载均衡，但因果破坏的代价远超预期。如需负载均衡，考虑在训练后期切换策略。
+3. **并行策略的切换阈值应公式化**：利用 MFU 公式计算 comms/compute crossover，批量大小和模型稀疏度都会影响切换点位置。盲目增加 GPU 而不调整并行策略会导致算力利用率断崖式下降。
+4. **内核工程不可完全依赖自动化**：即使是最好的 AI 辅助工具，在新硬件架构（如 Blackwell）上的内核优化仍需要顶级工程师的领域知识积累。RL 自动化方法可能在已有成熟架构上有效，但无法完全替代硬件特定优化。
+5. **多计算因子叠加时必须逐项校验**：累积多个 compute multiplier 时，每一步都需要独立验证偏差引入风险。系统性的 Process Discipline 是防止 subtle bias 累积的唯一防线。
+6. **RL 推理系统需独立于用户推理系统构建**：两者对数值漂移的敏感度完全不同，不应共用基础设施。
+
+---
+
 ## Ch15.010 untitled v2
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/untitled.md`
@@ -994,7 +943,7 @@ RL 与 OPD 之所以表现出更强的抗遗忘能力，关键在于两者的训
 
 ## Ch15.011 PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化可训练 mock Android 环境基础设施（机器之心解读）
 
-> 📊 Level ⭐⭐ | 4.3KB | `entities/phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan-arxiv-2605-29486.md`
+> 📊 Level ⭐⭐ | 4.4KB | `entities/phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan-arxiv-2605-29486.md`
 
 # PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化可训练 mock Android 环境基础设施（机器之心解读）
 
@@ -1051,7 +1000,7 @@ PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化�
 
 ## Ch15.012 面壁让AI写了训练框架ForgeTrain，然后它自己训出了最强1B模型
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/minicpm5-1b-forgetrain-agh-hunt.md`
+> 📊 Level ⭐⭐ | 3.7KB | `entities/minicpm5-1b-forgetrain-agh-hunt.md`
 
 # 面壁让AI写了训练框架ForgeTrain，然后它自己训出了最强1B模型
 
@@ -4088,7 +4037,7 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 - [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [Reinforcing Recursive Language Models Alphaxiv](https://github.com/QianJinGuo/wiki/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
-- [Skillos](https://github.com/QianJinGuo/wiki/blob/main/entities/skillOS.md)
+- [Skillos](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos.md)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
 ---
@@ -4954,7 +4903,7 @@ Allen Institute for AI的Nathan Lambert提出，随着AI系统复杂度增加，
 
 ## Ch15.045 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
-> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
+> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
 
 # Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
@@ -5196,7 +5145,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ## Ch15.050 SkillOS
 
-> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillOS.md`
+> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillos.md`
 
 ## Architecture
 - **Skill Curator (πS)**: Trainable component that updates SkillRepo via insert/update/delete operations

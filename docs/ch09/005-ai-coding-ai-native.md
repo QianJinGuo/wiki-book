@@ -8,61 +8,11 @@
 
 大淘宝技术团队分享AI Native视觉稿还原实践，探讨如何让AI理解设计意图并高保真度地转化为前端代码。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("场景营销前端 AI Coding AI Native 的视觉稿还原"))
-    视觉稿还原挑战
-    技术方案
-    业务价值
-    Agent-Native 设计的范式突破
-    工程层与 AI 层的精准分工
-    去中心化扩展 vs 中心化扩展
-    可对话迭代取代一次性完美
-```
-
 ## 一句话
 
 **大淘宝的AI Native视觉稿还原实践，让AI理解设计并高保真还原为前端代码。**
 
 ## 核心内容
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### 视觉稿还原挑战
 
@@ -115,7 +65,7 @@ Coding Agent 可以截图自己的实现页面，通过 node-map API 与设计�
 ## 相关实体
 
 - [Design to Code](ch09/007-design-to-code.html)
-- [Visual Reduction AI](../ch05/094-ai.html)
+- [Visual Reduction AI](../ch05/095-ai.html)
 - [大淘宝前端实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 
 ## 标签

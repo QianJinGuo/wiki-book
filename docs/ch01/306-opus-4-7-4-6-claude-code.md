@@ -62,22 +62,6 @@ Claude Code 负责人 Boris Cherny 也总结了关于  ** Opus 4.7  ** 的重磅
 ###  5/ 配置你的"努力程度"（Effort level）
 ** Opus 4.7 采
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("刚刚Opus 47发布 相比46核心变化 与Claude"))
-    核心能力跃升的本质
-    Token 消耗增加的深层含义
-    视觉能力对 Agent 架构的影响
-    指令遵循的字面化陷阱
-    重新审视现有 Prompts 和 Harness
-    Effort 等级的选择策略
-    充分利用 Auto mode 提升并行效率
-    建立验证闭环是提升效率的关键
-```
-
 ## 深度分析
 ### 核心能力跃升的本质
 Opus 4.7 相比 4.6 的核心变化，本质上是 Anthropic 在 **Agent 自主性** 方向上的重大推进。编程能力的提升不只体现在代码生成质量上，更体现在"自行验证输出"这一关键能力上——这意味着模型从单纯生成结果的工具，演进为能够主动闭环验证的自主 Agent。
@@ -92,41 +76,6 @@ Opus 4.7 相比 4.6 的核心变化，本质上是 Anthropic 在 **Agent 自主�
 Anthropic 明确警告 4.6 优化的 Prompts 可能失效，这一点至关重要。"字面化"解读意味着模型会更严格地按指令执行，而非根据隐含意图做推断。这对 Prompt 工程提出了更高要求：需要更精确地表达意图，避免歧义。这既是挑战也是机会——更可预测的行为有助于构建更稳定的 Agent 工作流。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 1. 重新审视现有 Prompts 和 Harness
 对于已在生产环境中使用 Opus 4.6 的团队，**首要任务是审查和调优 Prompts**。建议优先检查以下类型：依赖模型隐式推断的 Prompts、包含模糊指令的 Prompts、基于 4.6 行为做过精细调校的测试框架。任何依赖"言外之意"的表达方式都需要重新评估，必要时改写为更明确的指令。
 
@@ -165,11 +114,11 @@ Opus 4.7 的默认行为变化需要相应的架构调整：
 - **响应长度校准**：如果依赖特定长度的输出，需要在 Prompt 中明确风格和语气要求，提供正向示例而非否定式指令
 这些调整的目标是让 Agent 架构与 Opus 4.7 的新行为模式对齐，从而获得最佳性能。
 ## 相关实体
-- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html)
+- [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html)
 - [Anthropic Prompt Caching Claude Code Agihunt](ch01/217-anthropic-prompt-caching-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Claude Code Founder Harness 100 Lines](../ch03/078-claude-code.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/078-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Claude Code Founder Harness 100 Lines](../ch03/077-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/077-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md)
 

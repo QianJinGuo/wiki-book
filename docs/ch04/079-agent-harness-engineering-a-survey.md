@@ -61,7 +61,6 @@ Five questions remain open across the taxonomy. Each follows from the cross-laye
 4. Standard handoffs across agents, tools, and humans. Handoffs should transfer not only a text summary but intent, constraints, permissions, artifacts, provenance, budget state, risk level, trace history, and unresolved decisions. The open question is how to make such a protocol rich enough for safety and recovery while remaining simple enough for broad adoption.
 5. Adaptive simplification as models improve. Every wrapper encodes an assumption about what the model cannot do reliably on its own. As models improve, some interventions remain load-bearing while others become cost, latency, or operational overhead. Future harnesses need mechanisms for ablating, optimizing, and simplifying themselves under joint quality, latency, cost, and risk constraints.
 
-
 ## 深度分析
 **Harness 工程范式的独立地位**
 这篇 survey 最重要的贡献是确立了 harness engineering 作为独立系统层的地位。传统上，LLM 系统的可靠性被归因于模型本身的能力——参数规模、预训练数据质量、指令微调水平。然而 2025 年以来的部署实践表明，当模型能力越过某个阈值后，任务执行的可靠性越来越取决于 wrapping infrastructure 而非模型本身。这一洞察对工业界意义重大：提升系统可靠性不必等待下一个 GPT-5 级别的模型发布，通过优化 harness 的各层实现即可获得显著收益。
@@ -73,37 +72,6 @@ survey 指出一个值得注意的产业演化趋势：从 agent frameworks 到 
 五个 open problems 中，trace-native failure diagnosis 和 reliable state in long-running agents 具有最高的工程紧迫性。前者对应着当前 observability 工具虽然广泛部署但离线 evaluation 能力严重不足的现状，后者则是长程 agent 任务可靠性的核心瓶颈。adaptive simplification 作为第五个问题，虽然具有长期战略价值，但在当前模型能力仍在快速提升的阶段，其优先级相对较低。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 **对于 harness 设计者**：优先关注 Execution environment 和 Lifecycle & orchestration——这两个层次在开源生态中最为成熟，也是大多数 agent 系统首先遇到的工程瓶颈。Context & memory management 虽然关键，但建议优先考虑嵌入式方案而非独立组件，等待该层次的标准化接口成熟。
 **对于平台工程师**：以 cost-quality-speed trilemma 和 capability-control tradeoff 为核心度量维度设计系统。避免针对单一指标（如单纯降低 latency 或单纯提升 quality）的局部优化——harness 变更必须作为系统级变更进行测试。同时，在设计 pipeline 时预留 observability 和 governance 的接入点，而非事后补救。
 **对于评估和验证团队**：Verification & evaluation 当前在开源生态中已有 21 个主要项目，覆盖相对完整。但关键缺口在于 trace-native failure diagnosis——现有的评估方案多依赖事后 log 分析而非实时轨迹质量判断。建议投入资源建立以 trace 为核心对象的 evaluation 基础设施。
@@ -112,7 +80,7 @@ graph TB
 - [Harness Engineering Alibaba Java Case Study](../ch05/120-harness-engineering.html)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/120-harness-engineering.html)
 - [Harness Engineering Systematic Framework](../ch05/120-harness-engineering.html)
-- [Agentscope Java Harness Framework](../ch03/053-agentscope-java-harness-framework-2-0-agent-harness.html)
+- [Agentscope Java Harness Framework](../ch03/052-agentscope-java-harness-framework-2-0-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)
 

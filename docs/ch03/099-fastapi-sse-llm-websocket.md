@@ -4,65 +4,10 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/fastapi-sse-llm-streaming.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("FastAPI SSE LLM流式传输的WebSocket替代方案"))
-    SSE vs WebSocket vs 长轮询
-    FastAPI StreamingResponse 实现要点
-      异步生成器模式
-    生产环境6大避坑
-    Redis PubSub 广播通知架构
-    性能调优
-    适用场景判断
-    SSE 的技术本质与 HTTP 分块传输
-    断点续传的实现机制
-```
-
 ## 核心结论
 **SSE（Server-Sent Events）是LLM流式传输的更优选择**，而非 WebSocket。SSE 基于普通 HTTP，浏览器原生支持 EventSource，连接断开时自动重连，服务器可指定事件 ID 实现断点续传。   ^[https://mp.weixin.qq.com/s/7FWjN0GDBgVyvEDiaC1AMQ]
 
 ## SSE vs WebSocket vs 长轮询
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 | 特性 | 长轮询 | SSE | WebSocket |
 |------|--------|-----|-----------|
 | 方向 | 双向（低效） | **单向（服务器→客户端）** | 双向（全双工） |
@@ -126,8 +71,8 @@ async def event_generator():
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/306-amazon-nova.html)
-- [Thinking Machines 交互模型（Interaction Models）](../ch04/255-thinking-machines-interaction-models.html)
-- [SGLang](../ch04/631-agent-assisted-sglang-ai-llm.html)
+- [Thinking Machines 交互模型（Interaction Models）](../ch04/258-thinking-machines-interaction-models.html)
+- [SGLang](../ch04/636-agent-assisted-sglang-ai-llm.html)
 
 - [Fastapi Sse Llm Streaming Vs Websocket 5E4A458Abf18](../ch11/083-fastapi.html)
 ## 深度分析

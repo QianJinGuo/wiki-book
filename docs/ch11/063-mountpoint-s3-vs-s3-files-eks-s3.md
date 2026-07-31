@@ -8,64 +8,7 @@
 
 > **Background**: 本文合成自 AWS 中国官方博客 2026-06-15 文章。聚焦 **EKS 上 S3 数据挂载的两种主流方案（Mountpoint S3 CSI vs S3 Files + EFS CSI）的端到端实战对比**。两种方案非互斥，混合部署按场景选型是当前最佳实践。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Mountpoint S3 vs S3 Files EKS 上"))
-    方案对比
-      Mountpoint S3 2024-2025 主流
-      S3 Files 2026-04-07 GA AWS 创新
-      关键差异表
-    选型决策树
-    性能对比维度 实测结论待补
-    设计哲学的根本分歧 吞吐量优先 vs POSIX 完整性
-    混合部署是 EKS 上的最优解
-    FUSE 用户态文件系统的内在限制
-    S3 Files 的缓存策略是按需优化思维的典范
-    与已有实体的差异化
-```
-
 ## 核心问题
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 **S3 对象存储与 AI 框架期望的 POSIX 文件接口之间的根本鸿沟**：
 
@@ -191,8 +134,8 @@ S3 Files 采用 NFS close-to-open 一致性模型：当一个客户端 close 文
 |------|--------|---------|
 | [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md) | Kiro CLI + FluentBit 日志采集 + EKS S3 Parquet | 偏日志管道，非 S3 挂载方案 |
 | [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md) | EKS + GPU Operator + 自定义驱动 | 算力层，非存储层 |
-| [Openclaw Leveraging Nova Mme S3 Vector Implement Skill](ch11/235-openclaw.html) | S3 Vector + Nova MME 实现 Skill 按需召回 | S3 Vector 语义检索，非挂载方案 |
-| [Litellm Aws Ecs Eks Ai Gateway Architecture](../ch01/1274-llm.html) | LiteLLM AI 网关 + ECS/EKS | 推理网关，非存储 |
+| [Openclaw Leveraging Nova Mme S3 Vector Implement Skill](ch11/237-openclaw.html) | S3 Vector + Nova MME 实现 Skill 按需召回 | S3 Vector 语义检索，非挂载方案 |
+| [Litellm Aws Ecs Eks Ai Gateway Architecture](../ch01/637-llm.html) | LiteLLM AI 网关 + ECS/EKS | 推理网关，非存储 |
 
 **本文独特价值**：是 **Mountpoint S3 CSI vs S3 Files + EFS CSI** 这一**特定 S3 挂载方案对决**的**AWS 官方端到端实战**（含 PV/PVC YAML、架构图、性能数据、选型决策树）。
 

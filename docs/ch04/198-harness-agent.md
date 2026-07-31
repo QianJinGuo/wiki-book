@@ -6,58 +6,11 @@
 
 # Harness 工程实践：如何让 Agent 完成自主迭代
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness 工程实践 如何让 Agent 完成自主迭代"))
-    技术架构
-      Harness 工程的研发流程重定义
-      三大关卡的解决方案
-      Agent 优化实例 从做加法到做减法
-    Harness 工程的核心不是 AI 代劳 而是「人的杠杆率」提升
-    Reward Hacking 是 Agent 自主迭代的头号敌人
-    父子 Agent 模式是解决长上下文任务的实际工程选择
-    评测集的「Signal Quality」决定了迭代的上限
-```
-
 ## 摘要
 
 阿里技术团队深度复盘了 Harness 工程实践：如何让 AI Agent 在 Harness 框架下完成自主迭代——从 badcase 触发到 Harness 定义、验证、集成、部署的完整闭环。文章提出了 Harness 工程需要补齐的三项关键能力（研发工具 Agent 可调用化、长程任务防早停与上下文管理、评测闭环防 reward hacking），并详细举例了 AI Agent 如何在 17 小时内自主完成 16 轮迭代实验，最终有一轮改进通过人工复核成功上线。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 - **Agent 自主迭代核心矛盾**：一个人每天最多跑一次迭代实验，但每周上百个 badcase 需要处理。从人工驱动转变为 Agent 自主驱动是提升迭代效率的关键。
 - **研发工具 Agent 可调用化**：所有人类使用的研发工具（代码部署、评测、日志查询）都必须提供 CLI/MCP 接口，让 Agent 具备人所拥有的所有操作上下文。

@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/pipes-workos-docs.md`
 
-
 ## 核心要点
 - Pipes is an OAuth integration-as-a-service product by WorkOS 
 - 抽象掉了 token 刷新、凭证存储、OAuth 流程管理等工程负担 
@@ -12,44 +11,6 @@
 - 提供预构建的 Pipes Widget UI，降低前端集成成本 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 **定位与市场空间**
 WorkOS Pipes 属于 **OAuth aggregator** 赛道，本质上是把"连接用户第三方账户"这件事做成托管服务。类似的产品包括 Stitch Fix 的 auth-portal、Nango、以及一些开源方案如 NextAuth 的 provider 生态。Pipes 的差异化在于：(1) 预建的 Widget UI 让终端用户交互开箱即用；(2) WorkOS 本身的 SSO/JIT provisioning 产品矩阵提供了天然的交叉销售场景。
 **技术抽象层次**
@@ -77,7 +38,7 @@ Pipes 在 token 刷新上做了自动化处理，API 返回的始终是"新鲜"�
 ## 相关实体
 - [Workos Pipes Third Party Integrations](ch01/059-workos-pipes-third-party-integrations-without-the-headache.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/1010-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/517-microsoft-for-startups-microsoft.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pipes-workos-docs.md)

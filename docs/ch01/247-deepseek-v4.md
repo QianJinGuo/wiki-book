@@ -9,61 +9,11 @@
 > 腾讯技术工程 2026-04-28 发布，作者 dorian。2026-04-24 DeepSeek 突然上线 V4 预览版并同步开源——技术报告「DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence」。本文系统解读 V4 在 attention、residual、kernel 三个层面的架构创新，是中文社区最完整的 V4 深度解读之一。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/读完这篇你就搞懂-deepseek-v4-了-v2.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("读完这篇你就搞懂 DeepSeek v4 了"))
-    一 为什么 1M 上下文是必须而不是军备竞赛
-    二 mHC 多流约束残差连接万亿参数训练稳定性的根本解
-    三 CSA HCA 把 1M 上下文从理论推到工程
-    四 Muon 优化器
-```
-
 ## 摘要
 
 DeepSeek-V4 包含两个独立预训练的 MoE 模型：V4-Pro（1.6T 总参数，稀疏激活 49B，1M 默认上下文）和 V4-Flash（284B 总参数，稀疏激活 13B，1M 默认上下文）。两者都默认 1M 上下文，服务端不再区分"长/短"模型。在编程、数学、Agent、长文本四个维度同时刷进第一梯队，接近 GPT-5.4 / Claude 4.6 / Gemini 3.1。但真正硬核的不是 1.6T 参数 + 1M 上下文，而是从 **attention 到 kernel 的系统级重构**——三项核心架构创新：**mHC（Manifold-Constrained Hyper-Connections）** 解决万亿参数深度网络的残差稳定性、**CSA / HCA 混合注意力** 把 1M 上下文的计算量压到工程可承受、**Muon 优化器** 加速大规模训练收敛。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **模型规格**：
   - DeepSeek-V4-Pro：1.6T 总参数，稀疏激活 49B，1M 上下文
@@ -202,16 +152,16 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - 之前中国 LLM 的标签是"工程优化 + 性价比"
 - V4 之后中国 LLM 也有了自己的"架构创新"标签——mHC / CSA / HCA 都有理论贡献
 
-这与 [DeepSeek MoE 并行策略](ch01/1091-deepseek.html)、[DeepSeek 成本迁移系统层 KV Cache Harness](ch01/1091-deepseek.html)、[DeepSeek V4 Training 58-page Paper Deep Dive](ch01/1151-deepseek-v4.html) 等文章形成完整图景。
+这与 [DeepSeek MoE 并行策略](ch01/570-deepseek.html)、[DeepSeek 成本迁移系统层 KV Cache Harness](ch01/570-deepseek.html)、[DeepSeek V4 Training 58-page Paper Deep Dive](ch01/710-deepseek-v4.html) 等文章形成完整图景。
 
 ### 六、与其他 V4 解读的关系
 
-- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/1073-deepseek-v4-flash-pro.html) 关注产品侧
-- [DeepSeek V4 Flash/Pro v2](ch01/1073-deepseek-v4-flash-pro.html) 是上一条的更新版
-- [DeepSeek V4 Pro vs Claude](ch01/1151-deepseek-v4.html) 关注对比评测
-- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/1085-deepseek-v4-flash-means-llm-steering-is-interesting-again.html) 关注 V4 Flash 的"可控生成"能力
+- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/1074-deepseek-v4-flash-pro.html) 关注产品侧
+- [DeepSeek V4 Flash/Pro v2](ch01/1074-deepseek-v4-flash-pro.html) 是上一条的更新版
+- [DeepSeek V4 Pro vs Claude](ch01/710-deepseek-v4.html) 关注对比评测
+- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/1104-deepseek-v4-flash-means-llm-steering-is-interesting-again.html) 关注 V4 Flash 的"可控生成"能力
 - [DeepSeek V4 DS4C / Antirez 本地推理](../ch09/045-deepseek-v4-ds4c-antirez.html) 关注本地部署
-- [DeepSeek V4 Training 58-page Paper Deep Dive](ch01/1151-deepseek-v4.html) 关注训练侧
+- [DeepSeek V4 Training 58-page Paper Deep Dive](ch01/710-deepseek-v4.html) 关注训练侧
 - [DeepSeek Code Harness](../ch09/092-deepseek-code-harness.html) 关注 V4 在 Agent / Harness 场景的工程实践
 - [DeepSeek Code Harness 竞争者 Tina](../ch09/092-deepseek-code-harness.html) 关注竞品分析
 
@@ -227,14 +177,14 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 
 ## 关联实体
 
-- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/1073-deepseek-v4-flash-pro.html)
-- [DeepSeek V4 Flash/Pro v2](ch01/1073-deepseek-v4-flash-pro.html)
-- [DeepSeek V4 Pro vs Claude](ch01/1151-deepseek-v4.html)
-- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/1085-deepseek-v4-flash-means-llm-steering-is-interesting-again.html)
+- [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](ch01/1074-deepseek-v4-flash-pro.html)
+- [DeepSeek V4 Flash/Pro v2](ch01/1074-deepseek-v4-flash-pro.html)
+- [DeepSeek V4 Pro vs Claude](ch01/710-deepseek-v4.html)
+- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/1104-deepseek-v4-flash-means-llm-steering-is-interesting-again.html)
 - [DeepSeek V4 DS4C / Antirez 本地推理](../ch09/045-deepseek-v4-ds4c-antirez.html)
-- [DeepSeek V4 Training 58-page Paper Deep Dive](ch01/1151-deepseek-v4.html)
-- [DeepSeek MoE 并行策略](ch01/1091-deepseek.html)
-- [DeepSeek 成本迁移系统层 KV Cache Harness](ch01/1091-deepseek.html)
+- [DeepSeek V4 Training 58-page Paper Deep Dive](ch01/710-deepseek-v4.html)
+- [DeepSeek MoE 并行策略](ch01/570-deepseek.html)
+- [DeepSeek 成本迁移系统层 KV Cache Harness](ch01/570-deepseek.html)
 - [DeepSeek Code Harness](../ch09/092-deepseek-code-harness.html)
 - [DeepSeek Code Harness 竞争者 Tina](../ch09/092-deepseek-code-harness.html)
 - [17 种 agent 架构演进](../ch04/699-17-agent.html)

@@ -4,55 +4,7 @@
 
 > 📊 Level ⭐ | 7.4KB | `entities/gbhackers-sandworm-shift-from-it-breaches.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Sandworm Hackers Shift From IT"))
-    从 IT 到 OT 攻击范式的战略性转变
-    LOTL 战术的演进与危险
-    老旧漏洞链的持续价值
-    天警告窗口 被忽视的黄金干预期
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - 俄罗斯国家级 APT 组织 Sandworm（又称 APT44、Seashell Blizzard、Voodoo Bear）正在从传统 IT 网络入侵转向攻击运营技术（OT）环境
 - 攻击目标涵盖工业控制系统（ICS）、工程工作站、人机界面（HMI）、PLC 和 RTU 等现场控制器
 - 战术特征：横向移动激进（单台感染主机可 targeting 上百台内部系统）；依赖已泄露工具而非零日漏洞；被发现后不撤退反而升级攻击；利用 EternalBlue、DoublePulsar、WannaCry 等老旧漏洞链
@@ -93,8 +45,8 @@ DXGW + TGW 的混合云架构在本文多个场景中出现。关键启示：OT 
 - [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 - [From Doer To Director The Ai Mindset Shift](../ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 - [Cisa Urges Critical Infrastructure Firms To Fortify Before I](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.html)
-- [Engineering Roles Shift From Developing Code To Ma](../ch05/080-engineering-roles-shift-from-developing-code-to-managing-ai.html)
-- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/080-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Engineering Roles Shift From Developing Code To Ma](../ch05/081-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/081-engineering-roles-shift-from-developing-code-to-managing-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gbhackers-sandworm-shift-from-it-breaches.md)
 

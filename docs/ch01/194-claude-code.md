@@ -4,31 +4,6 @@
 
 > 📊 Level ⭐⭐ | 31.5KB | `entities/claude-code-core-internals.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 源码核心机制详解"))
-    核心设计亮点
-    跨框架对比总结
-    System Prompt 动态组装
-      默认 Prompt 写了什么
-      运行时动态注入
-    工具系统
-      并发调度 isConcurrencySafe
-      延迟加载 shouldDefer ToolSearch
-      工具结果大小控制
-    仓库目录树感知
-    Plan 模式
-    Context 压缩管理
-      动态触发阈值
-      五层压缩机制
-    Sub-Agent 系统
-      七种执行模式
-      内置 Agent 类型
-```
-
 ## 核心设计亮点
 1. **动态 System Prompt** — 运行时由 `buildEffectiveSystemPrompt` 函数动态组装，包含6层优先级：基础行为契约 → 工具描述（每个工具独立 prompt() 方法） → MCP 指令 → Skill 索引 → 环境信息 → ToolSearch 提示。禁用某个工具后其描述自动从 prompt 消失。动态 System Prompt 组装
 2. **多维度工具调度** — 每个工具声明 `isConcurrencySafe()` 决定是否能并发执行。调度层用 `partitionToolCalls()` 按并发安全性分批，只读工具合并为 `Promise.all` 并发，写操作单独串行。支持延迟加载（`shouldDefer` + `ToolSearch`），通过 `searchHint` 评分匹配。
@@ -40,39 +15,6 @@ mindmap
 8. **MCP 完整原生实现** — 唯一完整实现 MCP 的框架。工具以 `mcp__server__tool` 格式注册，共享所有内置工具机制（并发/权限/预算）。支持资源访问和 OAuth。MCP 集成模式
 
 ## 跨框架对比总结
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | 维度 | Claude Code | Codex | OpenCode | Gemini-CLI |
 |------|------------|-------|----------|------------|
 | System Prompt | 动态组装(6层) | 静态模板 | 静态文件 | 静态模板 |
@@ -309,30 +251,30 @@ Hooks 系统是 Claude Code 区别于其他框架最显著的能力，但它同�
 11. **预算管理要组合使用多个维度**：Token 预算、成本预算、工具结果预算、轮次预算四个维度各有用途。Token 预算适合控制单次响应长度；成本预算适合 CI 场景的支出上限；工具结果预算防止单个工具结果吞噬 context；轮次预算防止失控循环。四维组合才能覆盖真实的边界情况。
 
 ## 相关实体
-- [Lessons from Building Claude Code: Seeing like an Agent](../ch03/078-claude-code.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/078-claude-code.html)
+- [Lessons from Building Claude Code: Seeing like an Agent](../ch03/077-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/077-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/089-claude-code-1.html)
-- [Claude Code Subagent 上下文卫生](../ch04/311-claude-code-subagent.html)
-- [深度拆解 Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/070-claude-code-agent.html)
-- [Claude Code 架构深度解析](../ch03/078-claude-code.html)
-- [From Agent Protocol to Harness Skill](../ch04/428-from-agent-protocol-to-harness-skill.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [Claude Code Subagent 上下文卫生](../ch04/313-claude-code-subagent.html)
+- [深度拆解 Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/069-claude-code-agent.html)
+- [Claude Code 架构深度解析](../ch03/077-claude-code.html)
+- [From Agent Protocol to Harness Skill](../ch04/431-from-agent-protocol-to-harness-skill.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/423-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [claude-code-7-layer-memory-architecture](../ch03/078-claude-code.html)
+- [claude-code-7-layer-memory-architecture](../ch03/077-claude-code.html)
 - [17种Agent架构演进：控制流设计的完整演化史](../ch04/699-17-agent.html)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.html)
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [AgentMemory](../ch09/039-agentmemory-coding-agent.html)
-- [AI Agent 工程师能力地图](../ch04/298-ai-agent.html)
-- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch05/094-ai.html)
+- [AI Agent 工程师能力地图](../ch04/030-ai-agent.html)
+- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch05/095-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
 
 ---

@@ -2,7 +2,7 @@
 
 ## Ch01.044 Gemma 4 Technical Report
 
-> 📊 Level ⭐ | 8.2KB | `entities/2607.02770v1.md`
+> 📊 Level ⭐ | 8.3KB | `entities/2607.02770v1.md`
 
 # Gemma 4 Technical Report
 
@@ -13,62 +13,11 @@
 **Tags:** newsletter, ai, model, google, deepmind, llm, multimodal
 **Ingested:** 2026-07-09 18:59 UTC
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Gemma 4 Technical Report"))
-    从 Gemma 3 到 Gemma 4 的架构跃迁
-    无编码器架构的突破性设计
-    推理效率的多维度优化
-    开源生态的战略定位
-```
-
 ## 摘要
 
 Gemma 4 是 Google DeepMind 推出的新一代开源权重、原生多模态语言模型家族。该系列覆盖从 2.3B 到 31B 参数的密集（Dense）和混合专家（MoE）架构，在文本、图像和音频三种模态上实现前沿性能。相比 Gemma 3，Gemma 4 引入了思考模式（Thinking Mode）、无编码器统一架构（Encoder-Free Architecture）、长上下文效率优化（p-RoPE + KV Cache Sharing）、量化感知训练（QAT）以及多 Token 预测草稿头（MTP Drafter）等关键创新。Gemma 4 31B 在 Arena 文本评测中以 Elo 1451 成为领先的密集开源模型，以不到 1/10 的参数匹配或超越更大模型的表现。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
-    end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
-    end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
-    end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
-    end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
-```
-
 
 - **架构多样性**：包含 5 个版本——E2B（2.3B有效参数）、E4B（4.5B有效）、12B（密集）、26B-A4B（MoE，3.8B激活/26B总参）、31B（密集）。E2B 和 E4B 使用每层嵌入（Per-Layer Embeddings）设计。
 - **思考模式**：所有 IT 模型支持在回答前生成推理轨迹（Reasoning Trace），大幅提升数学和编程领域的表现。AIME 2026 无工具场景下 31B 达 89.2%，较 Gemma 3 27B 的 20.8% 提升超过 4 倍。
@@ -125,13 +74,13 @@ Gemma 4 以 Apache 2.0 协议发布，是 Google 在开源 AI 领域的战略布
 ## 相关实体
 
 - **Gemma 3 Technical Report** — 前代架构的基线对比（无独立实体页面）
-- [DeepSeek V4](ch01/1151-deepseek-v4.html) — 同期 MoE 开源模型竞品
-- [Kimi K2.5](ch01/397-kimi.html) — 同期视觉智能开源模型
+- [DeepSeek V4](ch01/710-deepseek-v4.html) — 同期 MoE 开源模型竞品
+- [Kimi K2.5](ch01/398-kimi.html) — 同期视觉智能开源模型
 - **Qwen 3.5 Omni** — 同期全模态开源模型（无独立实体页面）
 - [Mixture of Experts (MoE)](https://github.com/QianJinGuo/wiki/blob/main/concepts/moe-mixture-of-experts-2025.md) — MoE 架构概念
 - [Speculative Decoding](https://github.com/QianJinGuo/wiki/blob/main/concepts/speculative-decoding.md) — 投机解码原理
 - **Quantization-Aware Training (QAT)** — 量化感知训练方法论（无独立概念页面）
-- [Claude Opus 4.7](ch01/976-claude.html) — 闭源竞品参考
+- [Claude Opus 4.7](ch01/1022-claude.html) — 闭源竞品参考
 - **Gemma 3n** — 前代音频编码器架构对比（无独立实体页面）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2607.02770v1.md)

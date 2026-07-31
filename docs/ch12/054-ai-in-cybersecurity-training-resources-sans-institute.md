@@ -6,59 +6,7 @@
 
 # SANS Institute AI 安全培训体系
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI in Cybersecurity Training"))
-    AI Security Maturity Model
-    Secure AI Blueprint
-    Critical AI Security Guidelines
-    课程体系 9 门核心课程
-    SANS 的 AI 安全定位
-    GIAC 认证体系的 AI 扩展
-    AI 安全培训的技术趋势
-    与 wiki 知识体系的交叉
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 SANS Institute 作为全球最权威的网络安全培训机构之一，构建了系统化的 AI 安全培训体系，覆盖从防御到进攻、从应用安全到取证分析的完整 AI 安全技能谱。其核心产品包括 AI Security Maturity Model™（评估框架）、Secure AI Blueprint（战略指南）、Critical AI Security Guidelines（安全控制标准）、以及 9 门专业课程。SANS 的定位是帮助组织「安全地部署 AI」，而非仅「防御 AI 攻击」。
 
@@ -155,7 +103,7 @@ SANS 通过 GIAC（Global Information Assurance Certification）认证体系将 
 SANS 的 AI 安全培训体系与 wiki 中的多个概念和实体存在交叉：
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — SEC545 覆盖的 LLM 应用安全控制正是 harness 的安全层
-- [Cloudflare 临时账户](../ch04/298-ai-agent.html) — SEC411 覆盖的 AI 安全原则与 Agent 认证直接相关
+- [Cloudflare 临时账户](../ch04/030-ai-agent.html) — SEC411 覆盖的 AI 安全原则与 Agent 认证直接相关
 - [AFine CSP HTML Injection](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md) — SEC535 的攻击技术覆盖了类似的攻击向量
 
 ## 实践启示
@@ -169,9 +117,9 @@ SANS 的 AI 安全培训体系与 wiki 中的多个概念和实体存在交叉�
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — AI 安全控制作为 harness 的一部分
-- [Cloudflare 临时账户](../ch04/298-ai-agent.html) — Agent 认证安全
+- [Cloudflare 临时账户](../ch04/030-ai-agent.html) — Agent 认证安全
 - [AFine CSP HTML Injection](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md) — 安全漏洞案例
-- [Building Reliable Agentic AI Systems](../ch04/254-building-reliable-agentic-ai-systems.html) — AI 系统可靠性工程
+- [Building Reliable Agentic AI Systems](../ch04/257-building-reliable-agentic-ai-systems.html) — AI 系统可靠性工程
 - [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — SEC573 课程中涉及的协议
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md)

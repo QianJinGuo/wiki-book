@@ -4,61 +4,12 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS DevOps Agent MCP Server"))
-    文章摘要
-    MCP 协议在 AI Agent 运维场景的结构性价值
-    Private Connection 的安全模型 零信任思维的工程实践
-    从相关性推理到因果性推理的跨越
-    Tool Docstring 作为 Agent 决策的唯一依据
-    架构设计层面
-    安全防护层面
-    工具开发层面
-```
-
 ## 核心要点
 - AWS 技术实践
 - AWS DevOps Agent × MCP Server：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md)
 
 ## 文章摘要
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 混合云 BGP 故障的另一半证据往往在 on-premises 设备上。本文在真实 Direct Connect 环境上，通过 MCP Server 把 Cisco 路由器的只读命令暴露给 AWS DevOps Agent，用 Private Connection 把调用流量留在 AWS 骨干网，再用 EventBridge Scheduler + Lambda 把调查结论自动回推飞书群——完成"告警 → 自主调查 → 结论回到 Chat"的混合云 ChatOps 闭环。
 
 ## 深度分析
@@ -94,9 +45,9 @@ Tool 名字与 docstring 是 Agent 决策的唯一依据——这对工具开发
 飞书卡片采用"三秒决策"设计原则：Action 说明要改什么、Reasoning 说明为什么要改、Execution plan 只预览第一步 headline，需要细节再点按钮跳转。这种设计反映了一个重要的产品原则：ChatOps 的核心不是信息密度，而是信息层次——在聊天窗口内只展示决策所需的最低信息量，把详细的技术细节留给需要时再获取。对于任何计划在 IM 平台推送运维告警的团队，这种分层信息设计值得参考。
 
 ## 相关实体
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/290-aws-devops-agent.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
-- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11/290-aws-devops-agent.html)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/292-aws-devops-agent.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/272-aws-bedrock-agentcore.html)
+- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11/292-aws-devops-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

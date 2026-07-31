@@ -6,23 +6,6 @@
 
 # OpenAI models and Codex on Amazon Bedrock are now generally available
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI models and Codex on Amazon"))
-    Whats next
-    Get started
-    About the author
-      Bharat Sandhu
-    多云 AI 战略格局的重塑
-    Durable State 生产级推理的核心保障
-    定价策略与 Daybreak 安全蓝图
-    生产级 Agentic 任务优先选 Bedrock 而非直连
-    利用现有 AWS 合约覆盖 OpenAI 模型费用
-```
-
 ## Key takeaways
 
   * GPT-5.5, the most advanced frontier model from OpenAI, is generally available on Amazon Bedrock. Pricing matches OpenAI first-party rates.
@@ -56,44 +39,6 @@ Codex is the OpenAI coding agent for AI-powered software development. More than 
 > _– Ritesh Bansal, VP of Analytics Data, Agentic  AI and AI/ML Platform at Autodesk._
 
 ## **What's  next**
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 During our expanded partnership announcement, we introduced Amazon Bedrock Managed Agents, powered by OpenAI. Coming soon, it will let you deploy production-ready agents built on the OpenAI agent harness, delivering faster execution, sharper reasoning, and reliable steering of long-running tasks. Every agent will operate with its own identity, log every action for auditability, and run with all model inference on Amazon Bedrock. To stay up to date, sign up through the [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html).
 
@@ -133,7 +78,7 @@ GPT-5.5/5.4 在 Bedrock 上与 OpenAI 直连价格一致、不收额外费用 ^�
 
 ### 1. 生产级 Agentic 任务优先选 Bedrock 而非直连 OpenAI API
 
-对于需要多步骤推理和跨工具调用的复杂任务（代码生成流水线、自动化数据分析），Bedrock 的 Durable state capture 保证硬件故障不导致请求中断 ^。结合 Isolated Queue 可向业务方提供可量化的性能 SLA。建议将 [Agentcore Harness](../ch04/689-agentcore-harness.html) 和 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 纳入应用层架构设计参考。
+对于需要多步骤推理和跨工具调用的复杂任务（代码生成流水线、自动化数据分析），Bedrock 的 Durable state capture 保证硬件故障不导致请求中断 ^。结合 Isolated Queue 可向业务方提供可量化的性能 SLA。建议将 [Agentcore Harness](../ch04/690-agentcore-harness.html) 和 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 纳入应用层架构设计参考。
 
 ### 2. 利用现有 AWS 合约覆盖 OpenAI 模型费用
 
@@ -145,7 +90,7 @@ Codex 无座机、无按开发者收费的模式打破了 AI 编程工具的企�
 
 ### 4. 关注 Bedrock Managed Agents (Powered by OpenAI) 发布节奏
 
-即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/224-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
+即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/225-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
 
 ### 5. 追踪 Daybreak GA 并评估安全工程扩展路径
 

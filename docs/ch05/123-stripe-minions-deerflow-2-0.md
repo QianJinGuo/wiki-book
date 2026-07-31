@@ -6,25 +6,6 @@
 
 # 墙比模型更重要：三家公司独立得出同一结论
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("墙比模型更重要 Stripe Minions 字节"))
-    三家公司对照
-    Stripe Minions 4 个核心机制
-    字节 DeerFlow 20 从半途而废到 Super Agent
-      个真实失败模式
-      个工程化解法
-    蚂蚁支小助 金融场景的 4 AI 分工
-      个角色
-    为什么更强的模型解决不了
-    三阶段 AI 工程进化史
-    与已有 Harness Engineering 实体的关系
-    三家案例揭示的墙本质上是风险管理
-```
-
 ## Overview
 
 2026 年 6 月，微信公众号文章综合 Stripe、字节跳动、蚂蚁集团三家公司的实践，提出一个统一论断：**"墙比模型更重要"**（the wall matters more than the model）。三家分属支付、客服+内容+研发、金融行业的公司独立得出了同一个结论——**AI 的能力 × 运行环境的设计 = 实际产出，是乘法不是加法**。
@@ -32,37 +13,6 @@ mindmap
 > 这不是要让 AI 更聪明，是要让 AI 的力量被引导到有用的方向。
 
 ## 三家公司对照
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 | 公司 | 系统 | 业务 | 关键数字 | 核心方法 |
 |------|------|------|---------|---------|

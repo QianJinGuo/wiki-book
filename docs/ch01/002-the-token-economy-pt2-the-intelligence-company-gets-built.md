@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐ | 22.9KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("The Token Economy pt2 The"))
-    背景与核心论点
-    AI Adoption 分层理论
-    竞争层级与 AI 运营模型
-    三条部署路径详解
-      路径一 DIY内部转型
-      路径二 与 LabFDE 合作外部安装
-      路径三 PE 股东强制执行
-    小团队 更大产出
-    结构性顺风 Token 价格持续下跌
-    Fintech 4 公司速览
-      Shift Markets 白标预测市场基础设施
-      Pmtbox 电商支付编排 收入优化
-      Shiprazor 南非电商物流
-    CLARITY Act 与监管动态
-```
-
 ## 核心要点
 - **核心公式**：Outcome = Tokens × Intelligent Operating Model（有效运营模型 = 可观测性 × 自主性 × 部署速度 × 问责制）
 - **AI adoption 分层理论**：Level 0（AI theater）→ Level 5（self-driving organization），大多数公司停留在 Level 1，Ramp 和 Anthropic 达到 Level 4，Level 5 尚不存在 
@@ -35,44 +13,6 @@ mindmap
 - **CLARITY Act 进展**：2025 年数字资产市场澄清法案以 15-9 出委员会，Polymarket 定价 60% 概率年内通过，核心争议在 Section 404 的 yield 定义 
 
 ## 背景与核心论点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 本文是 Token Economy 系列的第二篇。`Part 1` 提出 tokens 本身不创造生产力，运营模型才是关键。本篇则回答：如果你的公司无法自建这套运营模型，会发生什么？
 **答案是：有人会替你建。**
 文章开篇列出四个标志性信号：
@@ -249,9 +189,9 @@ Anthropic-Blackstone $1.5B JV 模式展示 PE 作为 AI 转型加速器的潜力
 ## 相关实体
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Https Stratechery Com 2026 The Google Capital Company](ch01/003-the-google-capital-company.html)
-- [The Token Economy](ch01/1029-the-token-economy.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/843-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
-- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/989-anthropic.html)
+- [The Token Economy](ch01/1043-the-token-economy.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/856-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/1004-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-intelligence-changelog.md)
 

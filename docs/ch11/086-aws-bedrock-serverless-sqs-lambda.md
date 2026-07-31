@@ -5,64 +5,7 @@
 > 📊 Level ⭐⭐ | 10.3KB | `entities/aws-bedrock-serverless-async-inference-sqs-lambda.md`
 
 # SQS+Lambda异步管道：2000并发0%限流的工程细节
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Bedrock Serverless 异步推理 SQS"))
-    三个关键洞察
-      maxconcurrency计算公式
-      三层timeout链路
-      Partial Batch Failure
-    异步架构的本质 解耦与控速
-    maxconcurrency公式的物理意义
-    三层timeout的层级陷阱
-    Partial Batch Failure的实际价值
-    按输入类型配置Timeout 不要用一套参数跑所有场景
-    maxconcurrency的初始值用公式计算 不要靠经验拍脑袋
-    Bedrock SDK配置的关键点
-```
-
 ## 三个关键洞察
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 ### 1. max_concurrency计算公式
 mc = min(mc_rpm, mc_tpm)，其中 mc_rpm = RPM额度 × avg_time / 60，mc_tpm = TPM额度 × avg_time / (token_per_request × 60)。这个公式是控制限流的核心工程工具。
 ### 2. 三层timeout链路
@@ -127,19 +70,19 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 ## 相关实体
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/295-amazon-bedrock.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/272-aws-bedrock-agentcore.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch11/121-building-blocks-for-foundation-model-training-and-inference.html)
-- [Hapag-Lloyd：1.5万反馈/月95%情感准确率](ch11/188-aws-hapag-lloyd-bedrock-customer-feedback.html)
+- [Hapag-Lloyd：1.5万反馈/月95%情感准确率](ch11/190-aws-hapag-lloyd-bedrock-customer-feedback.html)
 - [Halliburton Seismic Workflow with Amazon Bedrock and Generative AI](ch11/009-aws-bedrock.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/704-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/306-amazon-nova.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/300-bedrock.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/054-prowler-genai.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/058-amazon-bedrock-claude-prompt-cache.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/295-amazon-bedrock.html)

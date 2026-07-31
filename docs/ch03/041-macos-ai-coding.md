@@ -4,48 +4,9 @@
 
 > 📊 Level ⭐ | 5.2KB | `entities/在-macos-上用-ai-coding-搭一个隐私优先的会议纪要助手.md`
 
-
 ## 标签
 #macos #ai #meeting-notes #privacy #aws #bedrock
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 **架构的核心洞察：操作系统层即采集层。** MeeTap 的设计哲学是"不引入任何第三方、不往会议里塞 bot"，而实现路径是直接利用 macOS 的音频分流能力在 OS 层面采集会议声音。这绕过了所有会议平台各自的 AI 能力壁垒——Teams 有自己的 AI，Zoom 有自己的 AI，但它们都无法跨平台统一工作。MeeTap 在操作系统层统一采集，一次开发，覆盖所有会议软件。
 **隐私优先的工程实现：数据不离开你的 AWS 账号。** 文章强调"全程只在你自己的 AWS 账号内流转"，没有中间商赚差价（no markup on AWS pricing）。这意味着录音文件用完即删，AWS 账号里不留痕迹。对于需要处理敏感会议内容（法律、医疗、金融咨询）的场景，这个架构设计消除了使用第三方会议助手最大的顾虑：数据控制权问题。
 **极简 UX 的工程含义：CLI 只有两条命令。** `meetap start` 和 `meetap stop` 是全部用户界面。这个 UX 极致简单的背后是极致的工程自信：不需要教程、不需要文档、不需要学习曲线，用户拿来就能用。这代表了 AI Coding 工具的一个成熟方向：不是把 AI 能力包装成复杂产品，而是用 AI 自身的力量把复杂性吸收掉，只留两条命令给用户。
@@ -59,7 +20,7 @@ graph TB
 4. **AI Coding 的真实价值是"串接已有云服务"的成本降低。** MeeTap 的核心不是深奥的算法，而是把 AWS Transcribe + Bedrock 串起来的外层胶水代码。AI Coding 工具在串联云服务（AWS、GCP、Azure）场景中的价值被严重低估：这个工作以前需要云架构师花一天，现在需要的是一个能读懂 SDK 文档的 AI Coding Agent，花一小时。
 
 ## 相关实体
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/237-agentic.html)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/648-agentic.html)
 
 ---
 ## 关联

@@ -10,26 +10,6 @@
 
 > **软文性质**：机器之心发布"非十科技 Agivar"产品。本文重点提取**架构创新 + 方法论**，软文部分批判性吸收。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agivar 录屏教学桌面 Agent 清华非十科技"))
-    序 AI 学着操作电脑
-    FDE Forward Deployment Engineer 现状
-    Agivar 核心能力 录屏教学
-      与按键精灵的本质区别
-    案例 广东省政务部门
-    大脑 小脑双层架构
-      底层 Jittor 计图 推理引擎
-      速度对比
-    三层确定性设计
-    全栈自研 清华团队底牌
-      同公司前作 Fitten Code
-    平台支持
-```
-
 ## 一句话定位
 
 **Agivar** 是清华大学计算机系博士团队创立的非十科技（fittentech.com）发布的桌面 Agent——核心能力是"**录屏教学**"（用户演示一次工作流程，AI 学习后自动执行），采用"**大脑 + 小脑**"双层架构，底层基于清华自研 **Jittor（计图）** 深度学习框架。同任务**2.3× 提速**（57 秒 vs 某主流 2 分 12 秒）+ **三层确定性设计**（训练收敛/多重校验/规则约束）。
@@ -37,37 +17,6 @@ mindmap
 > 区别于"按键精灵"的坐标记录，Agivar 学习的是**任务和逻辑**：为什么先打开这个页面？为什么填这个数字？什么情况下跳过这一步？
 
 ## 序：AI 学着操作电脑
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 过去 AI 回答问题，现在它直接开始帮你干活。填表格、录系统、整理文件，Anthropic **Claude Cowork** / OpenAI **Codex 桌面版**——越来越多的 Agent 开始接管真实工作流。
 
@@ -198,10 +147,10 @@ Jittor 已成国内主流深度学习框架之一。Agivar 对底层推理调度
 
 ## 关联引用
 
-→ [Anthropic Computer Use 最佳实践](../ch01/937-anthropic-computer-use.html) — 通用多模态大模型路径
-→ [Computer Use 45× 成本问题](ch04/268-computer-use-45x-more-expensive-than-structured-apis.html) — Computer Use 的成本痛点
-→ [IBM Forward Deployed Units (FDU)](../ch05/094-ai.html) — FDE 模式企业级 AI 部署
-→ [Agentic Future 竞赛 (Tidemark)](ch04/453-the-race-to-own-the-agentic-future-tidemark.html) — FDE 概念与投资视角
+→ [Anthropic Computer Use 最佳实践](../ch01/950-anthropic-computer-use.html) — 通用多模态大模型路径
+→ [Computer Use 45× 成本问题](ch04/270-computer-use-45x-more-expensive-than-structured-apis.html) — Computer Use 的成本痛点
+→ [IBM Forward Deployed Units (FDU)](../ch05/095-ai.html) — FDE 模式企业级 AI 部署
+→ [Agentic Future 竞赛 (Tidemark)](ch04/459-the-race-to-own-the-agentic-future-tidemark.html) — FDE 概念与投资视角
 → [原文存档（本篇）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
 
 ---

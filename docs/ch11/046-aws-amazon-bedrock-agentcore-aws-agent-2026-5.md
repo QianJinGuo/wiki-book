@@ -4,62 +4,7 @@
 
 > 📊 Level ⭐⭐ | 13.3KB | `entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS 一周综述 Amazon Bedrock AgentCore"))
-    Amazon Bedrock AgentCore 付款功能
-    上周发布的重要内容
-      适用于 AWS 的代理工具套件
-      AWS MCP 服务器正式发布
-      适用于人工智能代理的 Amazon WorkSpaces 预览版
-    其他重要更新
-      Valkey 迎来两周年
-      通过 SQL 查询十亿级向量数据
-      使用 AWS DevOps 代理构建端到端代理 SRE
-```
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 - AWS 技术实践，覆盖 2026 年 5 月 5 日至 11 日这一周的重要发布
 - 评分：v=8, c=9, 推荐级别 worth-reading，4 星
 - 重点内容：AgentCore 支付功能预览、MCP 服务器 GA、Agent Toolkit for AWS、EC2 M8idn/R8idn 新实例
@@ -108,22 +53,22 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 
 ## 相关实体
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/054-prowler-genai.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch11/270-aws-bedrock-agentcore.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/561-amazon-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: Phase 2&3部署](ch11/235-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: 背景与架构概览](ch11/235-openclaw.html)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/561-amazon-bedrock-agentcore.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch11/272-aws-bedrock-agentcore.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/566-amazon-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](ch11/237-openclaw.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch11/177-apache-doris-mcp-server-quick-suite-ai.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/272-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: 背景与架构概览](ch11/237-openclaw.html)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/566-amazon-bedrock-agentcore.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/034-amazon-bedrock-api.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/235-openclaw.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/270-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/237-openclaw.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/272-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/295-amazon-bedrock.html)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/009-aws-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/058-amazon-bedrock-claude-prompt-cache.html)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/295-amazon-bedrock.html)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/913-20.html)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/913-20.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/295-amazon-bedrock.html)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/926-20.html)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/926-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

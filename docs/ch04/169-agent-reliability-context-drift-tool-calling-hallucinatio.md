@@ -4,28 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/agent-reliability-context-drift-tool-hallucination.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Reliability Context Drift"))
-    一 上下文漂移
-      根因 注意力机制
-      三种漂移模式
-      检测信号
-    二 工具调用幻觉
-      根因 概率生成
-      三种幻觉类型
-      对应解法
-    与 vault 知识关联
-    上下文漂移的注意力机制深层根因
-    工具调用幻觉的概率生成本质
-    Context Drift 与 Tool
-    工程层面 上下文漂移的防御体系
-    工程层面 工具调用幻觉的校验体系
-```
-
 ## 核心问题
 Agent 运行多轮后可靠性的两个核心问题：
 1. **上下文漂移**（Context Drift）：Agent 执行方向偏离原始目标
@@ -33,39 +11,6 @@ Agent 运行多轮后可靠性的两个核心问题：
 ---
 
 ## 一、上下文漂移
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 根因：注意力机制
 | 机制 | 描述 |
 |------|------|
@@ -135,28 +80,28 @@ graph TB
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/035-agent.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/035-agent.html)
 - [Agent Harness 上下文管理：工作集视角](../ch05/058-agent-harness.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/035-agent.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
-- [AI Coding Agent 记忆系统](ch04/330-ai-coding-agent.html)
-- [柚漫剧 AI 全流程提效拆解](../ch05/094-ai.html)
-- [Agent Skill 设计模式](ch04/397-agent-skills.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/357-agent-principle-architecture-engineering-practice.html)
+- [AI Coding Agent 记忆系统](ch04/333-ai-coding-agent.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/095-ai.html)
+- [Agent Skill 设计模式](ch04/401-agent-skills.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
 ## 深度分析

@@ -8,63 +8,11 @@
 
 Claude Code 官方工程师分享 Loop 工程在代码生成中的四个关键交接点：需求理解→方案设计→代码生成→验证修复，以及如何让 Claude Code 在无人值守下持续工作。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude官方教你用 Loop 如何让Claude"))
-    四个交接点
-      交接点一 先交检查 Skill
-      交接点二 交停止条件 goal
-      交接点三 交等待触发 loop
-    Loop 的委托阶梯 从对话质量到授权执行
-    Dynamic Workflows 的工程含义
-    成本与可靠性视角
-    关联条目
-    退出
-```
-
 ## 摘要
 
 Claude Code 团队 2026 年 6 月 30 日发布官方博客 "Getting started with loops"，将 loop 分为四类：turn-based、goal-based、time-based、proactive。本文以"人从哪一步退出来，退出来之前留下些什么"为主线，解读四种 loop 对应的人机协作交接点：先把检查写成 Skill，再用 `/goal` 定义停止条件，用 `/loop` 处理短期等待，最后用 `/schedule` 和 routine 完成长期任务编排。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - Loop 工程的核心不是让 Agent 多跑几轮，而是**人从哪个位置退出来，每退一步系统都要补上一段更清楚的工程边界**
 - 四种 loop 类型对应四个工程交接点：检查（Skill）→ 停止（/goal）→ 等待（/loop）→ 决策（/schedule & routine）
@@ -145,8 +93,8 @@ Dynamic workflows 是官方博客中最容易被低估的部分。它把编排�
 
 - [Harness 即后端：当 Agent 基础设施消解于统一原语](../ch05/009-harness.html) — Loop Engineering 的底层架构视角
 - [Agent 落地真相](../ch03/035-agent.html) — Agent 从可用到可靠的生产化路径
-- [Skill Hub MVP 评估与发布](../ch04/271-skill.html) — Skill 生命周期管理的工程实践
-- [Skill 编排的六大依赖](../ch04/271-skill.html) — Skill 间的依赖与编排模式
+- [Skill Hub MVP 评估与发布](../ch04/273-skill.html) — Skill 生命周期管理的工程实践
+- [Skill 编排的六大依赖](../ch04/273-skill.html) — Skill 间的依赖与编排模式
 
 ## 退出
 

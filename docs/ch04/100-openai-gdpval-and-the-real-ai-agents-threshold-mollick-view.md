@@ -8,22 +8,6 @@
 
 > **Core insight**: 2025-09 OpenAI 发布 **GDPval**——一个**由 14 年经验行业专家**设计的真实任务基准（每任务 4-7 小时），AI 几乎追平人类（**略输但差距很小**）。Mollick 用 Claude Sonnet 4.5 实测**学术 replication 危机**可被 AI 自动化解决——这不止节省时间，而是**改变整个学术领域**的可能。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI GDPval and the Real AI"))
-    OpenAI GDPval 与众不同的基准
-    AI 准备取代人类工作吗 Mollick 的关键反驳
-    AI 现在能做的有极高价值任务学术 Replication
-    关键论文 为什么 Agent 突然变强
-    METR 测试 5 年指数曲线
-    如何用 AI 做有经济价值的事
-    三个独到洞察
-    与 Opus 4 7 Launch Claude Code
-```
-
 ## OpenAI GDPval：与众不同的基准
 
 **特点**（vs 传统 math/trivia benchmark）：
@@ -42,37 +26,6 @@ mindmap
 **预测**：如果当前模式持续，**下一代 AI 模型应能平均超过人类专家**在这个测试上。
 
 ## "AI 准备取代人类工作吗？"——Mollick 的关键反驳
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 **答案：不会（短期内）**。原因：**测的是任务不是工作**。
 
@@ -147,7 +100,7 @@ Mollick 的关键警告：
 
 3. **"17 PowerPoint 噩梦"** —— 用幽默捕捉了**任务自动化的隐性风险**：**AI 没有"够好"判断**，需要人类定义完成条件。这是组织使用 AI 的**核心新能力**。
 
-## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/078-claude-code.html) / the Claude Code what-comes-next analysis 的关系
+## 与 [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/077-claude-code.html) / the Claude Code what-comes-next analysis 的关系
 
 | 维度 | GDPval / Real Work (本文) | Claude Code What Comes Next | Opus 4.7 实战 |
 |------|--------------------------|---------------------------|----------------|

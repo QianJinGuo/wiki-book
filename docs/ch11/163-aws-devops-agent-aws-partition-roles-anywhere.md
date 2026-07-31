@@ -4,46 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/aws-devops-agent-mcp-china-partition-bridge.md`
 
-
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 - AWS DevOps Agent 原生不支持 aws-cn（中国区），需自建桥接
 - 单账号场景 MCP 桥接架构与端到端部署流程
@@ -85,10 +46,10 @@ graph TB
 
 ## 相关实体
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/047-aws-devops-agent-mcp-server.html)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch11/290-aws-devops-agent.html)
-- [Habby Game Aws Devops Agent](ch11/290-aws-devops-agent.html)
-- [Outlook Ai Agent Aws Fargate Claude Agent Sdk](../ch04/298-ai-agent.html)
-- [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/290-aws-devops-agent.html)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](ch11/292-aws-devops-agent.html)
+- [Habby Game Aws Devops Agent](ch11/292-aws-devops-agent.html)
+- [Outlook Ai Agent Aws Fargate Claude Agent Sdk](../ch04/030-ai-agent.html)
+- [将 Aws Devops Agent 智能运维能力延伸到中国区](ch11/292-aws-devops-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 → [原文存档（第一篇）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-mcp-china-partition-bridge.md)

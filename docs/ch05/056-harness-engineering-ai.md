@@ -9,10 +9,9 @@
 腾讯CDN LEGO项目就是这样一个系统。100万行核心代码、300万行深度改造的第三方库，服务亿级用户，承担流量调度、协议解析、安全防护、缓存加速等关键职责。它面对的不是确定性的输入输出，而是不可控的客户端、不可控的源站、多协议、多配置、公网全量攻击面——这些因素维度的叠加不是简单相加，而是乘积式的复杂度爆炸，理论组合路径高达 13,824 × N 种。在这样的复杂的系统里让 AI 写代码，一行失误就可能是一场全网事故。
 但正因为难，才值得做。  我们系统性地探索了 AI Coding 在高风险后端场景的落地路径：一方面，用 AI 零人工代码实现了一个 Rust 版 Nonstop 代理框架，以此探测 AI 编码的能力边界与行为特性；另一方面，在超大规模 C++ LEGO项目中构建了 Harness Engineering 五层架构和多模型对抗式CR，为 AI 产出的每一行代码建立从生成到上线的完整质量屏障。
 
-
 ## 相关实体
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/120-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/239-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/120-harness-engineering.html)
 - [Harness Engineering Reliable Long Term Agent](ch05/120-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](ch05/120-harness-engineering.html)
@@ -20,37 +19,6 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-cdn-lego-harness-engineering.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 腾讯 LEGO 项目的实践首次系统性地回答了"AI 能否在真正高风险后端系统中写代码"这个问题。答案是"能，但有严格条件"。LEGO 项目的 13,824 × N 组合复杂度是一个关键指标：它意味着在任何一次代码修改后，系统需要在如此多的维度组合中保持正确性，单靠人工 code review 几乎不可能覆盖完全。传统的开发流程（人写代码 → 人 review → 人测试）在面对这种复杂度时存在根本性的盲区——人类 reviewer 无法在有限时间内穷举所有可能的交互路径。AI 的价值恰恰在于：它可以对每一个变更进行穷举式风险分析，把"我漏查了什么"这个人类 reviewer 的终极局限，变成 AI 可以系统性解决的问题。然而 LEGO 的实践也揭示了前提条件：AI 必须被严格 harness 在"上下文、约束和反馈"的三要素框架内，否则其能力反而会成为风险的来源。
 

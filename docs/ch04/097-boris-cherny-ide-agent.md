@@ -5,61 +5,10 @@
 > 📊 Level ⭐⭐ | 16.9KB | `entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md`
 
 # Boris Cherny 新访谈：IDE → Agent 控制台
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Boris Cherny 新访谈 开发工具正在从 IDE 变成"))
-    产品悬置 能力溢出后产品形态才成立
-    Claude Code 的成长路径
-    从输入预测到自主代理的根本转变
-    Agent Loop 从一次 prompt 得到一次回答到持续工作进程
-    代码生成变便宜 但软件工程没有变简单
-    SaaS 从前台入口退到 Agent 后台能力层
-    以 Loop 而非会话为粒度设计工作流
-    重新定义开发工具的度量指标
-```
-
 ## 核心观点
 Boris Cherny（Anthropic Claude Code 负责人）在 Sequoia AI Ascent 2026 访谈中，系统性地阐述了开发工具的范式转变：从 IDE（人类在画布上操作）到 Agent 控制台（AI 是主要执行者，人是审阅者和方向设定者）。这不仅是 Claude Code 一家的产品变化，而是软件工程控制点的一次整体迁移。
 
 ## 产品悬置：能力溢出后产品形态才成立
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Claude Code 的爆发不像传统 SaaS 逐步验证 PMF，而是先赌模型能力越过某个点，提前把产品形态放在那里。前半年不好用不代表方向错；等 Opus 4 之后模型能力上来，原来超前的交互突然就成立了。这种"产品悬置"策略要求团队对模型能力曲线有坚定预判，而非等待 PMF 信号。
 
 ## Claude Code 的成长路径
@@ -133,32 +82,32 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/397-agent-skills.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
-- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/383-anthropic-google-agent-skills.html)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/401-agent-skills.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
+- [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/517-anthropic-google-agent-skills.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/030-mythos.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/298-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/030-ai-agent.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/478-anthropic-ai.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/484-anthropic-ai.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Claude Opus 4.7 发布分析](../ch01/349-claude-opus-4-7.html)
+- [Claude Opus 4.7 发布分析](../ch01/350-claude-opus-4-7.html)
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01/212-anthropic-claude-managed-agents.html)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/257-anthropic-agent.html)
-- [Anthropic Computer Use 最佳实践](../ch01/937-anthropic-computer-use.html)
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/078-claude-code.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/260-anthropic-agent.html)
+- [Anthropic Computer Use 最佳实践](../ch01/950-anthropic-computer-use.html)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
-- [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/078-claude-code.html)
+- [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/077-claude-code.html)
 
 ---
 

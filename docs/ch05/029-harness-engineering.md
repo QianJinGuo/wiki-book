@@ -2,55 +2,9 @@
 
 ## Ch05.029 万字干货！Harness Engineering如何工程化落地？
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 > 📊 Level ⭐⭐ | 16.1KB | `entities/harness-engineering-jk-launcher-baijiajie.md`
 
 # 万字干货！Harness Engineering如何工程化落地？
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("万字干货 Harness Engineering如何工程化落地"))
-    六大核心概念
-    Rule 软约束工程规矩
-    Skill 标准操作手册
-    Sub Agent 多角色分工
-    Workflow 接力赛规则
-    Scripts 最硬门禁
-    MCP 外接能力接口
-    六层串联
-```
 
 ## 核心结论
 
@@ -270,7 +224,7 @@ Harness Engineering的六层架构（Rule/Skill/Sub Agent/Workflow/Scripts/MCP�
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch05/120-harness-engineering.html)
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/120-harness-engineering.html)
-- [Baidu Comate Coding Agent Feedback Loop Wanpeng](../ch09/047-coding-agent.html)
+- [Baidu Comate Coding Agent Feedback Loop Wanpeng](../ch09/046-coding-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-jk-launcher-baijiajie.md)
 

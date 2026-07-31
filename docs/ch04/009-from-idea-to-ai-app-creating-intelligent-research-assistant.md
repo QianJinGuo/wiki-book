@@ -6,20 +6,6 @@
 
 # From idea to AI app: creating intelligent research assistants
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From idea to AI app creating"))
-    Why choose Strands Agents
-    模型驱动架构的核心价值
-    行代码的实现启示
-    Kiro Strands 的协同开发模式
-    生产级部署的关键考量
-    参考来源
-```
-
 ## 核心内容
 
 # From idea to AI app: Creating intelligent research assistants with Strands
@@ -33,41 +19,6 @@ Kiro is an AI-powered IDE that writes code so developers can focus on decisions.
 Strands Agents is an open source framework that directly addresses these development challenges by providing a straightforward way to create intelligent agents that can perform tasks like research, analysis, and content generation. Strands Agents combine the capabilities of large language models (LLMs) with custom logic and APIs through Python code.
 
 ## Why choose Strands Agents: Simplified AI development for AWS environments
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 Strands Agents addresses the core challenges you face when building AI applications through its model-driven approach. Instead of complex hardcoding, it uses LLMs for autonomous reasoning and planning, so you can create agents with only a prompt and tools list while the LLM handles the logic and tool usage.
 
@@ -116,7 +67,7 @@ Strands 的 @tool decorator 机制展示了工具增强型代理（Tool-Augmente
 - [Bedrock Agentcore Payment X402 Agent](../ch11/050-bedrock-agentcore.html)
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
 - [Firecracker Bedrock Agentcore Multi Tenant](../ch11/050-bedrock-agentcore.html)
-- [Serverless Langgraph Multi Agent Aws](../ch11/238-multi-agent-aws.html)
+- [Serverless Langgraph Multi Agent Aws](../ch11/240-multi-agent-aws.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-research-assistant-from-idea-to-app.md)
 

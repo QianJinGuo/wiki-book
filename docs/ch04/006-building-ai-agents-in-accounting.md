@@ -4,20 +4,6 @@
 
 > 📊 Level ⭐ | 9.2KB | `entities/building-ai-agents-in-accounting.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building AI Agents in Accounting"))
-    Skill-Config 分离架构的设计思想
-    MCP 作为 AI Agent 操作系统级的连接协议
-    会计内控框架下的人机协同模式
-    实施路径与演进规律
-    给财务领导者的建议
-    技术层面的关键原则
-```
-
 ## 核心要点
 - Skill 与 Config 分离：Skill 是可复用的工作流定义，Config 是业务参数配置，两者分离使系统易于维护和跨场景复用 
 - MCP（Model Context Protocol）是 AI Agent 连接 ERP、云盘、Slack 等系统的标准协议，是实现端到端自动化的关键基础设施 
@@ -25,39 +11,6 @@ mindmap
 - 实践效果：预付账款对账从约 2 小时压缩至约 5 分钟，跨多个对账项目可节省整天的月末结账时间 
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 1. Skill-Config 分离架构的设计思想
 文章中最核心的工程洞察是 Skill 与 Config 的严格分离。Skill（技能）是一个自包含的工作流，包含系统提示词（System Prompt）定义"做什么"、MCP 连接器定义"能操作哪些系统"、触发机制和驱动行为的配置。一个 Skill 一旦编写完成，就可以永久运行，无需每次手动调用。
 而 Config（配置）则是 YAML 文件，其中存放的是具体业务参数：预付账款 GL 账户代码、供应商编码映射表、重要性水平阈值、期末部分月 convention、以及路由规则（谁在哪个频道被呼叫）。当业务规则变化时，只需编辑 Config 文件，而不需要触碰 Skill 本体。
@@ -95,7 +48,7 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 ## 关联阅读
 ## 相关实体
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/223-rag.html)
-- [Create Custom Mcp Catalogs And Profiles](../ch07/082-create-custom-mcp-catalogs-and-profiles.html)
+- [Create Custom Mcp Catalogs And Profiles](../ch07/051-create-custom-mcp-catalogs-and-profiles.html)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03/019-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](ch04/016-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)

@@ -4,56 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/funnel-builder-flaw-under-active-exploitation-enables-woocom.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Funnel Builder 漏洞正被利用于"))
-    事件概述
-    攻击向量
-    攻击手法
-    处置建议
-    时间线
-```
-
 ## 事件概述
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 WordPress Funnel Builder 插件（FunnelKit 出品）存在一处高危安全漏洞，目前已在野被积极利用。攻击者通过该漏洞在 WooCommerce 结账页面注入恶意 JavaScript，窃取信用卡号、CVV 和账单地址等支付数据。漏洞影响所有 **40,000+** 使用该插件的 WooCommerce 商店，目前尚无官方 CVE 编号。厂商已于 **3.15.0.3** 版本发布修复补丁。
 ## 技术细节
 ### 攻击向量
@@ -94,7 +45,7 @@ Funnel Builder 包含一个公开暴露的结账端点，允许传入请求选�
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](ch12/061-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/913-20.html)
+- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/926-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/funnel-builder-flaw-under-active-exploitation-enables-woocom.md)
 

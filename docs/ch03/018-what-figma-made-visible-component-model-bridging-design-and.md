@@ -6,62 +6,11 @@
 
 # What Figma Made Visible
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("What Figma Made Visible Component"))
-    Figma 的核心创新 可见性 Visibility
-    「摩擦即学习」论点
-    「一次性 UI」问题
-    设计系统实践的代际差异
-    Figma 作为「认知脚手架」
-    与 Agent Harness 设计 的类比
-    对「AI 取代设计师」叙事的反驳
-    行业尚无定论
-```
-
 ## 摘要
 
 Murphy Trueman 从前端开发转型设计师的亲身经历出发，分析了 Figma 如何通过「让抽象结构可见」这一核心机制，将工程思维引入设计领域。文章的核心论点是：Figma 的真正创新不是效率工具，而是将组件模型、样式继承、设计系统这些抽象概念变成了「可以触摸和理解」的可视化实体。但文章的后半部分转向了一个更深层的忧虑——AI 设计工具正在抹平「摩擦」，而正是这些摩擦让设计师理解自己在做什么。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 ### Figma 的核心创新：可见性（Visibility）
 

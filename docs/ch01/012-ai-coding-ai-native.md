@@ -16,60 +16,11 @@
 
 传统D2C平台需大量人工配合（图层整理、切图、多状态识别），且视觉还原与业务逻辑脱节。Tarot Pixel 创新提出"不生成代码，让 Coding Agent 自己看懂设计稿"的理念。核心方案是将设计稿转为结构化视觉预览，提供 REST API 让 Agent 按需查询（而非全量推送），形成"实现→比对→修正"闭环。工程层负责精确数据提取与降噪，AI层专注语义理解。优势是无需手动选图层/切图，支持持续修正，人工干预大幅减少。本质是 Agent-Native 设计——工具为 AI 服务，提供精准上下文，减少干扰，让拥有完整项目上下文的 Agent 自主决策实现。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("场景营销前端 AI Coding AI Native 的视觉稿还原"))
-    D2C 的结构性局限与 Agent-Native 的设计哲学
-    分层信息架构 渐进式上下文的关键设计
-    工程层的降噪与蒙版处理 确定性问题不容 AI
-    Skill 驱动的能力扩展与去中心化扩展
-```
-
 ## 摘要
 
 Tarot Pixel 是淘天集团提出的 AI Native 视觉还原方案，其核心理念是「不替 Agent 生成代码，而是让拥有完整项目上下文的 Coding Agent 自己看懂设计稿」。方案通过将设计稿转化为结构化视觉预览系统，提供 REST API 供 Agent 按需查询，形成「实现 → 比对 → 修正」的持续闭环。与传统的 D2C（Design-to-Code）平台不同，Tarot Pixel 本质上是一个为 Agent 设计的「视觉感知层」，而非又一个代码生成平台。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 
 - Tarot Pixel 不是 D2C 平台，而是 Coding Agent 的视觉感知层——它只负责提供干净、可查询、持续在线的视觉信息，代码生成完全交给 Agent
 - 采用 REST API 分层设计：overview 提供整体结构预览，d2c-context 提供节点级细节，composite 提供自动合图能力
@@ -148,7 +99,7 @@ MCP 本质上是「人做预处理，AI 做翻译」的模式；Tarot Pixel 则�
 
 - Specflow Agent 任务规划（参见 [Coding Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md)） — Tarot Pixel 的协作搭档，负责业务上下文
 - [Hermes Agent](../ch03/096-hermes-agent.html) — 通用 Agent 系统中的上下文管理与工具设计
-- [Claude Code 深度架构分析](../ch03/078-claude-code.html) — Coding Agent 架构分析
+- [Claude Code 深度架构分析](../ch03/077-claude-code.html) — Coding Agent 架构分析
 - [Agent-Native 设计](../ch09/092-deepseek-code-harness.html) — 为 AI Agent 设计工具的方法论
 - [Coding Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md) — AI 编程代理技术与实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 系统架构与上下文管理

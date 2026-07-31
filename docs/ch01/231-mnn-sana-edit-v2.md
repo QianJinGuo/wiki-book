@@ -4,71 +4,10 @@
 
 > 📊 Level ⭐⭐ | 17.7KB | `entities/mnn-sana-edit-v2端侧运行的图像漫画风编辑大模型.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MNN-Sana-Edit-V2 端侧运行的图像漫画风编辑大模型"))
-    原始内容
-    技术架构
-    核心技术详解
-      Learnable Query 连接理解与生成的桥梁
-      Connector 模块 跨模态对齐
-      Deep Compression Autoencoder
-    训练策略
-      三阶段训练
-    MNN 端侧部署优化
-      模型转换
-      量化技术
-      真机速度测试
-    端侧 AI 图像编辑的技术突破
-    端云协同的新范式
-    量化策略的精细平衡
-```
-
 ## 摘要
 MNN-Sana-Edit-V2 是由淘宝 Meta 团队联合杭州电子科技大学研发的端侧图像漫画风编辑大模型，基于 Sana 和 MetaQuery 学术成果创新构建，采用 Qwen3-0.6B 作为冻结的预训练 LLM，通过 Learnable Query 和 Connector 模块桥接文本理解与图像生成，结合 Linear DiT、Deep Compression Autoencoder 等高效架构设计，并依托 MNN 框架实现 4/8bit 量化部署，使全部模型可在手机端本地运行；该模型在 iPhone 17 Pro 上仅需约 15 秒即可完成 512×512 图像的漫画风格转换，较云端方案提速 2.5 倍，同时保障用户隐私与推理效率，目前已集成至 MNN Chat 应用（支持 iOS/Android），相关代码与模型权重已在 GitHub、HuggingFace 及 ModelScope 全面开源。
 
 ## 元数据
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 - **来源**: 微信 (WeChat)
 - **原始URL**: https://mp.weixin.qq.com/s/w0V95DVBT_Bf3sGjI1JLrw
 - **入库时间**: 2026-05-11
@@ -196,7 +135,7 @@ MNN-Sana-Edit-V2 展现了端侧 AI 的独特价值主张：
 ## 相关实体
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/094-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/095-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/035-agent.html)
 
 ---

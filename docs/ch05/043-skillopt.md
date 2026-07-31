@@ -13,61 +13,12 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-skill-document-training-microsoft-sjtu.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SkillOpt"))
-    它要解决什么
-    四步训练循环 mini training loop
-    迁移性 值得重视的工程能力
-    工程意义 Agent 时代的新型资产
-    条局限
-    成本权衡
-    与现有范式对照
-    对 harnessagent 团队的启示
-```
-
 ## 它要解决什么
 主流 skill 生产方式（人工手写 / LLM 一次性生成 / 自修订）**没有验证机制**。人工写的改一行不知影响；LLM 生成的 quality 看那次 prompt；自修订"看起来更聪明"实际可能更差。
 
 > 论文原话：Agent skills are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, **none of which mirrors the reproducible, feedback-driven optimization loop that makes deep-learning training reliable**.
 
 ## 四步训练循环（mini training loop）
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | 步 | 动作 | 关键设计 |
 |---|---|---|
 | 1. **执行任务** | agent 携带 skill document 跑任务，记录完整 rollout 轨迹和得分 | |
@@ -149,16 +100,16 @@ SkillOpt 把 skill 文件变成**可训练 / 可验证 / 可审计的工程资�
 
 - **Prompt drift 监测是 agent 自我改进系统的标配**：任何引入模型自修订或 optimizer 的系统都需要类似验证门控的机制——没有验证的优化是在"看起来更聪明"的路上裸奔。参考 [Agent 自我改进的六条路](../ch03/035-agent.html) 中的验证机制设计。 
 
-- **Skill 资产化是 agent 团队工程成熟的标志**：将 skill 文件视为可训练/可验证/可审计的工程资产（而非随手改的文档）需要配套的工程实践：版本控制、审阅流程、部署前验证。参考 [Agent Skill 编写指南](../ch04/269-agent-skill.html) 建立规范化 skill 管理流程。 
+- **Skill 资产化是 agent 团队工程成熟的标志**：将 skill 文件视为可训练/可验证/可审计的工程资产（而非随手改的文档）需要配套的工程实践：版本控制、审阅流程、部署前验证。参考 [Agent Skill 编写指南](../ch04/271-agent-skill.html) 建立规范化 skill 管理流程。 
 
 ## 相关对照
-- [Agent Skill 编写指南](../ch04/269-agent-skill.html) —— 通用 skill 格式
-- [Agent Skill 进阶模式与治理](../ch04/269-agent-skill.html)
-- [Agent Skill 评估与迭代](../ch04/269-agent-skill.html) —— 评估正契合 SkillOpt gate 思想
-- [Agent Skill 高质量编写规范](../ch04/269-agent-skill.html)
-- [Agent 可靠性的工程解法：Skillify 持续改进](../ch04/271-skill.html)
+- [Agent Skill 编写指南](../ch04/271-agent-skill.html) —— 通用 skill 格式
+- [Agent Skill 进阶模式与治理](../ch04/271-agent-skill.html)
+- [Agent Skill 评估与迭代](../ch04/271-agent-skill.html) —— 评估正契合 SkillOpt gate 思想
+- [Agent Skill 高质量编写规范](../ch04/271-agent-skill.html)
+- [Agent 可靠性的工程解法：Skillify 持续改进](../ch04/273-skill.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html) —— SkillOpt 是一种新路径
-- [Agent Skills 系统性综述](../ch04/397-agent-skills.html)
+- [Agent Skills 系统性综述](../ch04/401-agent-skills.html)
 
 ## 第 2 来源 — 实战教程（@hooeem）
 

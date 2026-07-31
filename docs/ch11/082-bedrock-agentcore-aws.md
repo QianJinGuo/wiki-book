@@ -4,51 +4,7 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于Bedrock Agentcore 实现智能成本分析与告警系统"))
-    架构创新 单Agent双模式设计
-    技术栈选型分析
-    核心Tools设计
-    定时监控与告警机制
-    架构设计层面
-    开发实践层面
-    运维实践层面
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 基于Bedrock Agentcore 实现智能成本分析与告警系统 by awschina on 04 3月 2026 in Artificial Intelligence Permalink Share 摘要：在云原生时代，企业数字化转型的步伐不断加快，云基础设施已成为业务发展的核心支撑。云成本的有效监控与管理，已不再是可选项，而是企业数字化战略成功的关键要素。本文设计并实现了一套智能云成本监控与告警系统，使用者通过自然语言与智能体交互，获取与云成本相关的分析建议和优化方案，同时实现异常告警。 目录 01 1、引言 02 2、方案概述 03 3、核心功能实现 04 4、附录 05 5、结语 1、引言 在云原生时代，企业数字化转型的步伐不断加快，云基础设施已成为业务发展的核心支撑。然而，伴随着云服务使用规模的快速增长，云成本管理正成为企业面临的重大挑战。云成本的有效监控与管理，已不再是可选
 
 ## 核心技术
@@ -106,11 +62,11 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore/)
 
 ## 相关实体
-- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 

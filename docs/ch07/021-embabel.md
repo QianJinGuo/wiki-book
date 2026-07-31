@@ -11,70 +11,10 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embabel-rod-johnson-framework-era-interview.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Embabel"))
-    关键设计选择
-      为什么不用状态机 LangGraph 风格
-      GOAP 两大特点
-      规划过程 A 本质
-    与同类框架对比
-    大核心优势
-    Rod Johnson 的 8 大核心观点
-      语言之争基本结束 邻接性原则
-      Coding Agent 正在毁掉代码库 如果你放弃控制
-      Alien Stack 双向伤害
-    关键金句
-    现状
-    启示 对 agentharness 团队
-    相关对照
-```
-
 ## 核心命题
 **企业 AI 应用需要规划** — 不是"扔 30 工具给模型循环跑"。业务流程要一致性、可预测性、可解释性。**LLM 只是动作步骤里的一次 HTTP 调用**，不应该是整个控制流。
 
 ## 关键设计选择
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 ### 为什么不用状态机（LangGraph 风格）
 - 状态机需要提前定义 → 修改必须重新连线 → 难扩展

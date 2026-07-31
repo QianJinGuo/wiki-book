@@ -4,27 +4,6 @@
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Ralph Loop 不够用 长时间 Agent 还缺这 3 件事"))
-    Codex Goals工作原理解析
-      Ralph Loop的技术本质
-      模糊性的复利效应
-    Jarrod Watts的优化工作流
-      Phase 1 前期澄清 Interview阶段
-      Phase 2 多Agent编排架构
-      Phase 3 跨上下文记忆维护
-    Ralph Loop的根本局限
-    多Agent架构的认知科学依据
-    持久化记忆的工程价值
-    模糊性前置的成本收益分析
-    避免单独依赖Ralph Loop
-    投资前期需求澄清
-```
-
 ## 核心要点
 - **Ralph Loop本质**：Codex /goal底层采用重复提示循环+SQLite跟踪，通过"Continue working toward the active thread goal"反复提示同一目标 
 - **三大缺陷**：模糊性随迭代复利增长（compounding ambiguity）、多agent架构优于单体agent、跨上下文记忆对长运行任务至关重要 
@@ -33,37 +12,6 @@ mindmap
 - **推荐配置**：Codex App配合GPT 5.5 xHigh使用，前端设计用Claude Design 
 
 ## Codex Goals工作原理解析
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### Ralph Loop的技术本质
 Codex的goals功能于2026年5月1日进入Codex CLI 0.128.0，本质是让一个goal跨越多轮持续存在，在达成之前不停止 。
 Codex底层使用SQLite设计：创建`thread_goals`表存储每个goal的目标、ID、状态和可选token预算。通过`get_goal`和`update_goal`工具记录进展并更新数据库状态 。
@@ -148,16 +96,16 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 
 ## ## 相关实体
-- [Hermes Agent /goal 长任务运行时架构](../ch04/381-hermes-agent-goal.html)
+- [Hermes Agent /goal 长任务运行时架构](../ch04/385-hermes-agent-goal.html)
 
 ## ## 相关实体
-- [LoongSuite GenAI 可观测语义规范](../ch04/467-loongsuite-genai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/472-loongsuite-genai.html)
 
 ## ## 相关实体
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/035-agent.html)
 
 ## ## 相关实体
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/111-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/112-ai-coding.html)
 
 ---
 

@@ -4,57 +4,11 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/lightfield-introducing-skills.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Lightfield Skills 系统介绍"))
-    Skills 系统与传统模型的关键差异
-    从「通用 AI」到「专业化 AI 代理」的范式转变
-    一 Skills 系统的工程挑战 灾难性遗忘与渐进式学习
-    二 「技能即资产」对企业 AI 战略的深远影响
-    三 与 Agent 生态的关系 Skill 标准化与互操作性
-```
-
 ## 摘要
 
 Lightfield 推出的 Skills 系统是 AI Agent 从「通用工具」走向「专业化助手」的重要里程碑。Skills 允许 AI 代理在多次会话间持久化地积累和保留专业技能，无需完整的模型重新训练。这一创新解决了传统 AI「每次会话从零开始」的根本性局限，使代理能够在持续交互中逐步精通特定领域。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 - **持久技能开发**：AI 代理可在会话间建立和保留专业知识，每次交互都在积累而非重置
 - **领域专业化**：组织可为其特定业务场景开发深度定制的 Skills，从通用 AI 走向专用 AI
@@ -132,10 +86,10 @@ Lightfield 的挑战在于：如果 Skills 只在自家平台上可用，其网�
 
 ## 相关实体
 
-- [Memento-Skills — 技能外部记忆让 Agent 自进化](../ch04/417-memento-skills-agent.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化](../ch04/421-memento-skills-agent.html)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [SkillOS](../ch04/271-skill.html)
-- [Browser Act — Agent 技能工具](../ch04/269-agent-skill.html)
+- [SkillOS](../ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Browser Act — Agent 技能工具](../ch04/271-agent-skill.html)
 - [Hermes Agent — 技能系统与插件架构](ch03/096-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-introducing-skills.md)

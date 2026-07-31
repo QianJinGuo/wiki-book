@@ -8,62 +8,7 @@
 
 > **Background**: 某出行企业租车业务需自动识别车辆剩余油量计算差价。直接用 VL 大模型（含 Nova、Qwen）微调效果差（60-70% 准确率），改用 Amazon Rekognition 自定义标签定位 + VL 模型定量的两阶段方案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("对图像内容进行精确分析 Bedrock 多模态案例实践 汽车油表识别"))
-    场景
-    失败路径 验证后放弃
-    成功路径 两阶段方案
-      阶段 1 Amazon Rekognition 自定义标签定位油表
-      阶段 2 VL 模型 视觉模型定量
-    关键设计
-    工程价值
-    两阶段管道的设计哲学 任务解耦
-    VL 模型在细粒度视觉回归任务上的结构性局限
-    级联模型的误差累积问题与单阶段多对象检测的优势
-```
-
 ## 场景
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 
 - 输入：车后舱摄像头拍摄的控制台照片（含车速表、里程表、转速表干扰）
 - 输出：油表剩余百分比 → 用于计费/退费
@@ -113,9 +58,9 @@ graph TB
 
 ## 相关实体
 - [Aws Bedrock Serverless Async Inference Multimodal](ch11/009-aws-bedrock.html)
-- [Verizon Connect Agentic Ai 100K Users](../ch04/109-verizon-connect-agentic-ai-10.html)
-- [Deepseek Vision Primitives](../ch01/1091-deepseek.html)
-- [Agentcore Harness](../ch04/689-agentcore-harness.html)
+- [Verizon Connect Agentic Ai 100K Users](../ch04/108-verizon-connect-agentic-ai-10.html)
+- [Deepseek Vision Primitives](../ch01/570-deepseek.html)
+- [Agentcore Harness](../ch04/690-agentcore-harness.html)
 - [Aws Bedrock Ops Alert](ch11/009-aws-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-image-content-precise-analysis.md)

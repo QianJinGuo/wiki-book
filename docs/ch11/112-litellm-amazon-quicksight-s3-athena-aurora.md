@@ -8,64 +8,7 @@
 > AWS China Blog 2026-06-12 配置手册：把 LiteLLM AI Gateway 的请求日志与费用数据接入 Amazon QuickSight，构建运维监控 Dashboard。三条数据源路径：S3 日志 + Athena（Aurora 不可用的解耦方案）、Aurora PostgreSQL（内嵌数据源）、安全最佳实践。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-amazon-quicksight-数据可视化配置手册.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("LiteLLM Amazon QuickSight 数据可视化配置"))
-    数据源选型决策树
-    三层数据源架构
-      路径 1 S3 Athena 解耦方案
-      路径 2 Aurora PostgreSQL 内嵌方案
-      路径 3 混合 生产推荐
-    QuickSight 配置 5 步
-    安全最佳实践
-    跨工具数据建模的权衡
-    QuickSight SPICE 引擎 vs 实时直查的权衡
-    IAM 数据库认证与 VPC 私有连接的隐性复杂度
-    多源 JOIN 是成本归因的基础
-```
-
 ## 数据源选型决策树
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 | 场景 | 推荐 | 理由 |
 |------|------|------|
@@ -147,7 +90,7 @@ QuickSight 直连 S3 时只能解析一层嵌套 JSON 字段，深层嵌套字�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-amazon-quicksight-数据可视化配置手册.md)
 - [LiteLLM 成本治理四层防护](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底.md) — 姐妹篇（事前限额 → 事中监控 → 事后兜底）
 - [LiteLLM Bedrock 成本治理实体](ch11/042-litellm-amazon-bedrock.html) — 同一 AI Gateway 主题
-- [QuickSight Dataset Q&A](ch11/181-aws-quicksight-dataset-qa-natural-language.html) — QuickSight NL2SQL 能力
+- [QuickSight Dataset Q&A](ch11/183-aws-quicksight-dataset-qa-natural-language.html) — QuickSight NL2SQL 能力
 
 ---
 

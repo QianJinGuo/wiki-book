@@ -6,60 +6,7 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Building Blocks for Foundation"))
-    核心摘要
-    三重扩展定律的基础设施含义
-    通信瓶颈的关键性
-    Slurm vs Kubernetes 的架构取舍
-    推理框架的分化趋势
-    基础设施选型决策框架
-    存储层次设计
-    资源编排选型
-```
-
 ## 核心摘要
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 AWS 提供从 P5 (H100/H200) 到 P6 (B200/B300) 的 GPU 实例家族，配合 EFA v2/v3/v4 OS-bypass 网络和 FSx for Lustre 分层存储，构成基础模型训练和推理的完整基础设施层。
 资源编排层面，Slurm 和 Kubernetes 代表两种路线：Slurm 以作业级原子调度适合 HPC 风格的大规模训练；Kubernetes 以声明式 API 适合云原生部署，但需要 Kueue/Volcano/KAI Scheduler 补齐作业级调度和拓扑感知。
 ML 软件栈从内核驱动 → CUDA → NCCL( aws-ofi-nccl ) → PyTorch → 分布式训练框架（Transformers/Megatron/veRL）和推理框架（vLLM/SGLang），每一层都需正确配置才能高效运行。
@@ -106,12 +53,12 @@ DCGM-Exporter 暴露 GPU 指标中，SM activity (DCGM_FI_PROF_SM_ACTIVE) 比基
 - [AWS Model Agility: 6步LLM跨代际迁移框架](ch11/155-aws-generative-ai-model-agility-framework.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/009-aws-bedrock.html)
-- [EC2 Capacity Blocks：GPU短期容量决策指南](ch11/221-aws-ec2-capacity-blocks-gpu-ml.html)
-- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/335-aws-sagemaker-capacity-aware-inference-fallback.html)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/772-ai-infra.html)
+- [EC2 Capacity Blocks：GPU短期容量决策指南](ch11/223-aws-ec2-capacity-blocks-gpu-ml.html)
+- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/333-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/785-ai-infra.html)
 - [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](ch11/024-amazon-workspaces-applications.html)
 - [End To End Encrypted Ml Inference With Amazon Sagemaker Ai A](ch11/045-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.html)
-- [notes on pretraining parallelisms and failed training runs.](../ch05/094-ai.html)
+- [notes on pretraining parallelisms and failed training runs.](../ch05/095-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
 ---

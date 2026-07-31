@@ -8,61 +8,11 @@
 
 > **背景**：本文基于 OpenAI 官方 Cookbook 合作伙伴 SchemaFlow 的实战案例整理，提取其 staged agentic workflow 设计模式、SQL 生成的工程化护栏与评估范式。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("SchemaFlow OpenAI Cookbook"))
-    SchemaFlow 是什么
-    五大核心设计模式
-      Staged agentic workflow
-      Pydantic schema 强类型约束
-      PDF RAG context
-    与现有 wiki 实体的差异化
-    实践启示 Actionable
-    Staged workflow 的可观测性价值
-    Generator-Evaluator 分离是
-    RAG 是上下文窗口的成本优化策略
-    Pydantic schema 将 LLM
-```
-
 ## SchemaFlow 是什么
 
 OpenAI Cookbook 在 2026 年推出的合作伙伴示例工程，演示**如何用 staged agentic workflow 完成企业数据库变更管理**——从 PDF schema 文档 RAG 检索、变更请求解析、影响分析、SQL 生成到 Promptfoo 评估护栏的完整 5 阶段流水线。是 OpenAI 在"agent harness engineering"上给出的**官方范本**。
 
 ## 五大核心设计模式
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 1. Staged agentic workflow
 

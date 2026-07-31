@@ -6,60 +6,13 @@
 
 # 【揭秘】如何打造一支凌晨3点还在交付的AI军团——腾讯Multica Agent协作实践
 
-腾讯技术工程团队基于[Multica](../ch07/069-multica-managed-agents.html)平台，构建了一套组织级AI Agent协作体系。核心命题不再是"每个人会不会用AI"，而是"没有为AI的模式去设计一套新的工作方式"。 该实践展示了AI Agent从"超级个体"辅助到"组织级自动协作"的演进路径——真正的瓶颈不在个体AI使用能力，而在为AI设计新的组织工作方式。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("揭秘 如何打造一支凌晨3点还在交付的AI军团腾讯Multica"))
-    背景 AI进入岗位 但未进入协作链路
-    三条路径的权衡
-    三根骨架 从个体能力到组织能力
-    六类真实运行能力
-    三种协作设计模式
-    四种落地场景
-    人的位置变化
-    与Loop Engineering的关系
-```
+腾讯技术工程团队基于[Multica](../ch07/070-multica-managed-agents.html)平台，构建了一套组织级AI Agent协作体系。核心命题不再是"每个人会不会用AI"，而是"没有为AI的模式去设计一套新的工作方式"。 该实践展示了AI Agent从"超级个体"辅助到"组织级自动协作"的演进路径——真正的瓶颈不在个体AI使用能力，而在为AI设计新的组织工作方式。
 
 ## 背景：AI进入岗位，但未进入协作链路
 
 AI让每个角色成为"超级个体"，但完整工作的推进并未因此变快。旧模式下存在三处卡点：**工作推进依赖人的在线状态**——Agent的启动、衔接、推进仍靠人；**旧角色边界限制AI能力边界**——放大的个人能力被旧流程压回格子里；**关键上下文在角色交接中丢失**——Agent接力最需要的评审风险、分发理由、执行边界条件在转述中遗失。
 
 ## 三条路径的权衡
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 团队权衡了三个方向。**路径A：造一个更强的超级Agent。** 端到端自行拆解执行，但可控性差、缺少干预点。**路径B：直接设计AI原生协作流程。** 最具想象空间，但缺少运行数据支撑。**路径C：将人类已验证的流程Agent化。** 把每个角色的执行者换成Agent，以工作流组织接力。团队最终选择了路径C——足够接近原有流程、容易对齐责任边界、能快速暴露协作系统的所有边界问题。
 
@@ -136,7 +89,7 @@ graph TB
 
 ## 相关实体
 
-- [Multica 平台](../ch07/069-multica-managed-agents.html) — 本次实践的技术底座
+- [Multica 平台](../ch07/070-multica-managed-agents.html) — 本次实践的技术底座
 - [Loop Engineering 方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/loop-engineering-methodology.md) — 从个体Loop到组织级Loop的升维
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent编排的设计模式体系
 - [多 Agent 协作编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 协作编排的通用框架

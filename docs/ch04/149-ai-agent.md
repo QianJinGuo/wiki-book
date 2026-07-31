@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/ai-agent-engineer-capability-map.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Agent 工程师能力地图"))
-    核心判断
-    三种系统形态
-    六层能力体系
-    后端工程师机会
-    范式转变的本质 从调模型到建系统
-    六层能力体系的内在逻辑
-    生产失败的根因分析
-    对资深后端大数据工程师的建议
-```
-
 ## 核心判断
 - **Workflow-first，Agent-second** 是最务实范式
 - **Context Engineering** 比 Prompt Engineering 更关键
@@ -27,37 +11,6 @@ mindmap
 - 生产失败七大原因：工具随意、上下文无序、状态管理缺失、失败恢复缺失、评估集缺失、trace缺失、过度自治
 
 ## 三种系统形态
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 | 类型 | 特点 | 适用场景 |
 |------|------|---------|
 | Tool-Using Assistant | 工具调用+短链路 | 查数据/SQL助手 |
@@ -133,57 +86,57 @@ AI Agent不是"更高级的Prompt工程"，而是一套新的应用工程体系�
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/009-harness.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [四种 Sub Agent 模式](../ch03/035-agent.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/271-skill.html)
-- [SkillClaw](ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/273-skill.html)
+- [SkillClaw](ch04/479-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/017-hermes-skill.html)
 - [GBrain](../ch01/251-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/913-20.html)
-- [OpenHuman: AI Agent 持久记忆框架](ch04/121-agent-memory.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/926-20.html)
+- [OpenHuman: AI Agent 持久记忆框架](ch04/098-agent-memory.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/290-aws-devops-agent.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/313-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/292-aws-devops-agent.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/315-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
-- [Skills赏析：使用skills-refiner提升skill质量](../ch03/072-skills.html)
+- [Skills赏析：使用skills-refiner提升skill质量](../ch03/071-skills.html)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/143-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/078-claude-code.html)
-- [AI Skill 测评指标体系](../ch01/452-ai-skill.html)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
+- [AI Skill 测评指标体系](../ch01/453-ai-skill.html)
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [200人销售团队企业级 Agent 知识库问答系统架构设计](https://github.com/QianJinGuo/wiki/blob/main/queries/sales-team-agent-knowledge-base-architecture.md)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/120-harness-engineering.html)
-- [Claude Code Agent 工程设计](../ch03/070-claude-code-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/355-agent-principle-architecture-engineering-practice.html)
+- [Claude Code Agent 工程设计](../ch03/069-claude-code-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/357-agent-principle-architecture-engineering-practice.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/034-qoder-skills.html)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/094-ai.html)
-- [Agent Skill 设计模式](ch04/397-agent-skills.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/095-ai.html)
+- [Agent Skill 设计模式](ch04/401-agent-skills.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/035-agent.html)
-- [AI Coding Agent 记忆系统](ch04/330-ai-coding-agent.html)
+- [AI Coding Agent 记忆系统](ch04/333-ai-coding-agent.html)
 - [Self-Evolving Agents 系统性综述](ch04/219-self-evolving-agents.html)
 - [Hermes Agent 记忆系统深度拆解](../ch03/096-hermes-agent.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/561-amazon-bedrock-agentcore.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/272-aws-bedrock-agentcore.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/566-amazon-bedrock-agentcore.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Design Patterns for AI Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html)
-- [Agent 时代架构师技能指南](../ch03/072-skills.html)
+- [Agent 时代架构师技能指南](../ch03/071-skills.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [RAG 深度解析：分块向量化召回重排才是蒸馏同事 Skill 的关键](../ch01/223-rag.html)
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)
 - [17种Agent架构演进：控制流设计的完整演化史](ch04/699-17-agent.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/061-claude-code-prompt.html)
-- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/078-claude-code.html)
-- [AgentCore Managed Harness](ch04/689-agentcore-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/428-from-agent-protocol-to-harness-skill.html)
+- [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/077-claude-code.html)
+- [AgentCore Managed Harness](ch04/690-agentcore-harness.html)
+- [From Agent Protocol to Harness Skill](ch04/431-from-agent-protocol-to-harness-skill.html)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/009-harness.html)
 - [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/223-rag.html)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/120-harness-engineering.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/235-openclaw.html)
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/237-openclaw.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 - [Code as Agent Harness 综述](../ch09/051-code-as-agent-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/120-harness-engineering.html)
 

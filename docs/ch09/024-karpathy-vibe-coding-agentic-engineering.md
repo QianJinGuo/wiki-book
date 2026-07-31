@@ -6,22 +6,6 @@
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v3.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Karpathy 最新访谈 从 Vibe Coding 到"))
-    Vibe Coding vs Agentic
-    Software 30 的三层架构
-    Agent Control Plane 八层框架
-    可验证性决定自动化边界
-    范式转变的实质 从工具到系统
-    可验证性是 Agent 扩张的天花板
-    Software 30 的架构含义
-    幽灵比喻的工程推论
-```
-
 ## 核心观点
 ### Vibe Coding vs Agentic Engineering 的分工
 | 维度 | Vibe Coding | Agentic Engineering |
@@ -106,41 +90,6 @@ Karpathy 已不再记 PyTorch/NumPy/pandas 之间细碎的 API 差异，但仍�
 传统算法题测不出 Agentic Engineering 能力。替代评估方式：给候选人一个极大项目（如做一个给 Agent 用的 Twitter 仿盘，要求绝对安全），然后让 10 个 Cursor 作为红队去攻击。最终看的是：把模糊目标变成清晰规格、指挥多个 Agent 完成大规模实现、识别安全和架构风险、设置测试与验证、在模型生成的大量代码里保住质量判断。
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 ### 范式转变的实质：从工具到系统
 Karpathy 一年前提出 Vibe Coding，命名的是一种个人开发体验——用自然语言指挥 AI 生成代码、调整、迭代，核心关注点是「能否快速把想法跑起来」。一年后他转向 Agentic Engineering，这个命名重心从「开发体验」移到了「工程责任」。
 这个转变的实质不是术语更新，而是 Agent 在软件工程链路里的渗透深度发生了质变。2025 年底的转折点是可观测的：模型不再只补函数级代码块，开始能接住更大粒度的任务——读上下文、改多文件、调命令、跑测试、基于失败继续修。这意味着 Agent 从「开发工具」变成了「工程链路里的执行节点」。
@@ -186,11 +135,11 @@ Karpathy 的例子很具体：他不再记 NumPy 和 PyTorch 之间 API 的细�
 
 ## 相关实体
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/237-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/648-agentic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

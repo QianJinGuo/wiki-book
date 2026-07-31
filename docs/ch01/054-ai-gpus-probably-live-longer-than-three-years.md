@@ -8,61 +8,11 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI GPUs probably live longer than"))
-    三年寿命说法的溯源 匿名 推特 媒体放大
-    反向证据一 厂商公开声明与第三方案例
-    反向证据二 超算级硬数据
-    区分物理寿命与经济寿命
-```
-
 ## 摘要
 
 Sean Goedecke 2026 年发表的反主流分析：被 AI 怀疑论者反复引用的"AI 推理 GPU 至多三年寿命"说法源于一条匿名推文及其后续传播链条，并无可靠实证。文章从来源溯源、硬件厂商公开声明、超算集群存活统计三层证据反推，得出结论：AI GPU 在高负载下的物理寿命显著长于 3 年；真正可能短的是"经济寿命"，但即使在经济寿命内，AI 推理仍可在"AI 寒冬"中维持可负担成本。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **作者**: Sean Goedecke
 - **来源**: [https://www.seangoedecke.com/ai-gpus-live-longer-than-three-years/](https://www.seangoedecke.com/ai-gpus-live-longer-than-three-years/)
@@ -123,11 +73,11 @@ Oak Ridge Summit（27,000+ V100，2018-2024）和前代 Cray Titan（2012-2019�
 
 ## 相关实体
 
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/094-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/095-ai.html)
 - [system over model, tested: reproducing mythos's freebsd find](../ch12/030-mythos.html)
 - [from doer to director: the ai mindset shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [DDoSing Software Delivery Pipelines](ch01/913-20.html)
-- [Unexpected lessons from an AI-assisted prototyping experiment](../ch05/094-ai.html)
+- [DDoSing Software Delivery Pipelines](ch01/926-20.html)
+- [Unexpected lessons from an AI-assisted prototyping experiment](../ch05/095-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 

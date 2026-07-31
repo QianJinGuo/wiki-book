@@ -6,38 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((多Agent协作))
-    协作模式
-      编排者-执行者
-      对等协作
-      层级团队
-    通信机制
-      消息传递
-      共享状态
-      事件驱动
-    角色分配
-      Leader
-      Worker
-      Critic
-    框架
-      AutoGen
-      CrewAI
-      LangGraph
-      A2A协议
-    编排策略
-      串行
-      并行
-      条件分支
-    冲突解决
-      优先级
-      投票
-      仲裁者
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -48,40 +16,6 @@ mindmap
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
-
-## 架构图
-
-```mermaid
-graph TB
-    subgraph "多 Agent 协作模式"
-        S[Single Agent<br/>单体] --> O[Orchestrator<br/>编排者]
-        O --> T[Team<br/>团队协作]
-        T --> SW[Swarm<br/>群体智能]
-    end
-    subgraph "通信协议"
-        A2A[Agent-to-Agent<br/>Google A2A]
-        MPC[MCP<br/>工具调用]
-        MSG[Message Queue<br/>异步消息]
-    end
-    O & T --> A2A
-    T & SW --> MPC
-    SW --> MSG
-    subgraph "典型架构"
-        Claude[Claude Code<br/>Dynamic Workflows]
-        OpenClaw[OpenClaw<br/>多 Agent 团队]
-        AgentRun[AgentRun<br/>A2A 协议]
-    end
-    O --> Claude
-    T --> OpenClaw
-    SW --> AgentRun
-    classDef mode fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef proto fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef arch fill:#d1fae5,stroke:#059669,color:#064e3b
-    class S,O,T,SW mode
-    class A2A,MPC,MSG proto
-    class Claude,OpenClaw,AgentRun arch
-```
-
 
 ## 导读
 
@@ -331,7 +265,7 @@ Oz 给出的命题非常清晰：**「Agent 性能是 harness 和 model 的联�
 - **可插拔数据源**：文件（skills）、MCP、数据库、企业应用——把企业现有知识资产纳入 Agent 上下文
 - **可自托管**：「Warp 可以替你托管，但我们相信企业会想自己拥有 corpus」——这一句直接回应了企业对数据所有权的核心顾虑
 
-这套架构与 [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)和 [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)中讨论的「双向、长期、企业自有」三个理想性质完全对齐。它和 Obsidian + QMD 类型的本地方案（见 [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/57U6XeKCGtVkQXnNqg9DJQ.md)策略 5）属于同一思路的两个层级：QMD 是个人工作站方案，Oz Agent Memory 是企业方案。
+这套架构与 [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)和 [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)中讨论的「双向、长期、企业自有」三个理想性质完全对齐。它和 Obsidian + QMD 类型的本地方案（见 [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md)策略 5）属于同一思路的两个层级：QMD 是个人工作站方案，Oz Agent Memory 是企业方案。
 
 ### 「single pane of glass」对企业 AI 治理的真正含义
 
@@ -394,7 +328,7 @@ Oz 和 AWS [AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/age
 - [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) — Agent Harness 架构
 - [Agent Harnesses Are Dead Long Live Agent Harnesses](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harnesses-are-dead-long-live-agent-harnesses.md) — Harness 演进观察
 - [Agent Memory Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md) — Agent Memory 架构综述
-- [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki/blob/main/entities/57U6XeKCGtVkQXnNqg9DJQ.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
+- [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
 - [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
@@ -406,7 +340,7 @@ Oz 和 AWS [AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/age
 
 ## Ch08.004 Graph Engineering：从单循环到多节点编排
 
-> 📊 Level ⭐⭐ | 9.4KB | `entities/graph-engineering-loop-to-graph-tencent.md`
+> 📊 Level ⭐⭐ | 11.8KB | `entities/graph-engineering-loop-to-graph-tencent.md`
 
 # Graph Engineering：从单循环到多节点编排
 
@@ -534,11 +468,41 @@ Agent 从材料读到的只能先作为**候选主张（claim）**，经实体�
 → [原文存档（腾讯技术工程）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-tencent-lukiexing-2026.md)
 → [原文存档（若飞/架构师，Supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-agent-loop-fact-management-ruofei-2026.md)
 
+## 扩展：五层 Agent 工程定位 + 诊断与评审清单（若飞 2026-07-31 Supplementary）
+
+若飞将 Graph Engineering 放回五层框架（Prompt/Context/Harness/Loop/Graph）中定位：Graph 是第五层，管理跨工作单元的稳定关系，控制范围最大；各层处理对象不同、不能互相顶替。
+
+### Loop 与 Graph 的控制边界三问
+
+运行前能否写清依赖/分支/汇聚条件？失败是否昂贵（中断后需局部恢复、重试会重复扣款/写库/发布）？过程是否涉及审计/审批/预算/跨团队交接？信号弱用 Loop，任一信号强就上 Graph。
+
+### 系统不稳诊断定位表
+
+| 症状 | 先查层 |
+|------|--------|
+| 误解目标、输出格式跑偏 | Prompt |
+| 引用旧版本、漏文件、忘记状态 | Context |
+| 工具时好时坏、权限太大、无法复现 | Harness |
+| 反复绕路、停不下来 | Loop |
+| 单任务能做、一协作就乱 | Graph |
+
+### 从能跑到可恢复：补五件事
+
+记录真实路线（无运行数据，提前画的只是想象流程）→ 状态移出对话（task_id/input_version/stage/attempt/budget/artifact_uri）→ 验证器放明确的门上（模型评审不天然充当真值）→ 隔离副作用动作（幂等/审计/补偿，超时先查真实结果再决定重试）→ 证明独立后再并行（数据依赖/写集合/汇聚规则先说清）。
+
+### 评审 Graph 八问
+
+状态归属 / 节点结构 / 边的依据 / 验收证据 / 失败策略 / 副作用补偿 / 检查点恢复 / 可观测性——大半问题只能答"Agent 会自己处理"，说明图还停在示意层。
+
+### AutoResearch 作为五层最小完整例
+
+Karpathy AutoResearch（改 train.py→训练→读 val_bpb→保留/回退）沿五层分工清晰；关键经验：目标单一、指标可测、动作受限、失败可回滚时，单条 Loop 可稳定工作很久——**先补目标/尺子/权限/历史/回滚，单条 Loop 够用时不必提前改造成复杂的图**。
+
 ---
 
 ## Ch08.005 Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
 
-> 📊 Level ⭐⭐ | 8.0KB | `entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md`
+> 📊 Level ⭐⭐ | 8.1KB | `entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md`
 
 # Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
 
@@ -4118,7 +4082,7 @@ UnityMAS-O 与传统的提示词工程方法有本质区别。传统方法依赖
 
 ## Ch08.035 γ-World: 多 Agent 世界建模（NVIDIA Research）
 
-> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/nvidia-gamma-world-multi-agent-world-model.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/nvidia-gamma-world-multi-agent-world-model.md`
 
 # γ-World: 多 Agent 世界建模（NVIDIA Research）
 

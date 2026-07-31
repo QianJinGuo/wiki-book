@@ -16,36 +16,6 @@
 - Score: Value=8 × Confidence=8 = 64
 - References: 12篇（含Knowledge Activation、Blueprint First等arXiv论文）
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("篇论文看懂AI Agent Skill 表示 执行 评估与进化"))
-    技能的形式化定义
-      六元组定义
-      步骤计划 DAG建模
-      三种技能类型
-    执行机制
-      触发与匹配算法
-      上下文预算分配与渐进式加载
-      与计划优先工作流的耦合
-    多技能编排与并发执行
-      编排算法
-      失败回滚
-    评估框架
-      评估指标体系
-      基准测试方法
-    安全与治理
-      安全边界的形式化
-      技能完整性验证
-      知识衰减监测
-    技能的自动挖掘
-      三阶段管道
-    六元组设计的工程必然性
-    DAG执行模型的局限性
-```
-
 ## 摘要
 技能（Skills）正在成为支架工程中连接大语言模型智能体与结构化领域知识的关键抽象。不同于松散的提示词和原子化的工具调用，技能将复杂的多步操作固化为可组合、可复用、可验证的确定性流程，使智能体能够在遵守边界约束的前提下可靠地执行生产级任务。
 本文面向算法研究人员，从六个维度系统综述：
@@ -57,39 +27,6 @@ mindmap
 6. 自动挖掘
 
 ## 1. 技能的形式化定义
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 六元组定义
 技能被形式化为一个**六元组**：
 ```
@@ -316,11 +253,11 @@ PrefixSpan/CloSpan只能挖掘**行为模式**，无法挖掘**语义意图**。
 **技能的版本治理**：随着技能数量增长，版本管理、兼容性测试、废弃策略将成为运维的主要挑战。建议从第一个技能开始就建立版本号规范，并记录每个版本的breaking change。
 **自动挖掘的成熟度**：当前挖掘管道的局限（只能捕获行为模式，无法捕获语义意图）可能在未来通过LLM辅助的语义分析得到改善。但即便如此，专家审核这一环难以完全消除——技能的最终质量责任仍在人类专家手中。
 ## 相关实体
-- [Ai Skill Skill Creator 源码拆解](ch04/319-skill-skill.html)
+- [Ai Skill Skill Creator 源码拆解](ch04/321-skill-skill.html)
 - [Hermes Skill System Winty](../ch07/017-hermes-skill.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/120-harness-engineering.html)
-- [Agent Skill Writing Guide](ch04/269-agent-skill.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
+- [Agent Skill Writing Guide](ch04/271-agent-skill.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-formal-theory-survey-10papers.md)
 

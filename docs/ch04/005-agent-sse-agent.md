@@ -6,57 +6,11 @@
 
 # 前端如何消费 Agent 的 SSE 流 — Agent 前端工程实践
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("前端如何消费 Agent 的 SSE 流 Agent 前端工程实践"))
-    关键技术实现
-      SSE 流解析
-      跨 chunk 拼接
-      多行 data 拼接
-    事件驱动架构在 Agent UI 中的必然性
-    流式缓冲作为 Agent UI 的基础设施
-    事件统一建模的设计价值
-    与 AI Agent 生态的对接模式
-```
-
 ## 摘要
 
 在 mini-openclaw 框架实践中，前端通过 SSE（Server-Sent Events）消费 Agent 运行过程中的事件流，实现实时 Agent 聊天页面。Agent 只负责产出事件，外部消费者决定如何展示——CLI 打印到终端，Web 页面将事件转 SSE 后由前端逐帧渲染。前端通过 `fetch + ReadableStream` 代替原生 EventSource，自行实现流式解析、缓冲拼接和多类型事件分发。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
 
 - **事件驱动架构**：Agent 运行过程中不断 yield 事件（文本 token、推理片段、工具调用、工具结果），前端通过 SSE 流实时消费，而非等待完整响应
 - **fetch + ReadableStream 替代 EventSource**：因为聊天接口需要使用 POST 方法携带用户输入和 Agent ID，原生 EventSource 仅支持 GET，故采用 `fetch + response.body.getReader()` 自行实现流式解析
@@ -172,9 +126,9 @@ mini-openclaw 的 SSE 流设计遵循了 Agent Loop 的核心思想：Agent 只�
 ## 相关实体
 
 - [CLI Agent 模式与 MCP Shell Agent](../ch03/035-agent.html)
-- [多 Agent 编排系统](ch04/518-agent-orchestration.html)
+- [多 Agent 编排系统](ch04/523-agent-orchestration.html)
 - [Spec-Driven Development](../ch05/009-harness.html)
-- [Skill 编排与依赖管理](ch04/271-skill.html)
+- [Skill 编排与依赖管理](ch04/273-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/前端如何消费agent-sse流.md)
 

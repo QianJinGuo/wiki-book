@@ -6,57 +6,7 @@
 
 # 腾讯 K8s + Ray 超大规模 AI Workload 调度实践
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("腾讯 K8s Ray 超大规模 AI Workload 调度实践"))
-    K8s Ray 协同调度的设计哲学
-    从 Virtual Kubelet 到联邦架构的演进逻辑
-    RLHF 调度范式迁移的驱动因素
-    跨层弹性调度与容灾的未来方向
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 腾讯 TEG Ray 团队基于 QCon 分享，深度解析了 **K8s + Ray + PyTorch + vLLM** 黄金组合在超大规模 AI Workload 中的落地实践。核心贡献包括：从 Virtual Kubelet 到 KubeRay 联邦架构的演进路径、跨层弹性调度三级自调优体系、以及全方位的跨层自动化容灾机制。该方案支撑腾讯内部上百个 K8s 物理集群、单集群万卡以上的 AI 训练与推理任务。
 

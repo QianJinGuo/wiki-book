@@ -6,58 +6,11 @@
 
 # Domain Expertise Has Always Been the Real Moat
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Domain Expertise Has Always Been"))
-    后 AI 编码时代的价值转移
-    两种竞争者对垒 领域专家 vs 通用工程师
-    双层验证最稀缺的能力组合
-    AI 工具的能力边界
-```
-
 ## 摘要
 
 本文提出一个关于 AI 编码时代的关键洞察：软件开发的约束条件正在从"能否构建"转向"能否判断正确性"。随着 Agentic AI 工具将"将领域模型转化为代码"的能力变得廉价，真正的稀缺资源变成了对领域本身的深度理解——知道"正确的输出应该是什么样子"的能力。文章通过对比领域专家（无编程背景但有十年领域经验）与通用工程师（懂技术但不懂领域）在 AI 工具使用中的表现差异，论证了领域专业知识正在成为后 AI 编码时代最持久的护城河。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 - **编码不再是瓶颈**：Agentic AI 切断了"建立领域模型"与"产出软件"之间的纽带，使得没有领域模型的开发者也能生成代码。但这同时意味着——能判断"正确性"的人比能写出代码的人更稀缺。
 - **约束转移：从能否构建到能否判断正确性**：以前，限制因素是"你能不能写出这段代码"；现在，限制因素是"你能不能判断 AI 生成的代码是否正确"。
@@ -97,7 +50,7 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 - **能做**：转录（transcription）——将清晰的领域理解转化为代码
 - **不能做**：构建领域模型——理解一个行业的规则、约束、隐性知识
 
-这与 [真实的 AI Agent 与真实工作](../ch04/225-real-ai-agents-and-real-work.html) 中关于 AI 在生产环境中的"上半场 vs 下半场"论点形成呼应：AI 擅长的是"执行已知模式"的上半场，而"建立问题框架"的下半场仍然需要人类。
+这与 [真实的 AI Agent 与真实工作](../ch04/223-real-ai-agents-and-real-work.html) 中关于 AI 在生产环境中的"上半场 vs 下半场"论点形成呼应：AI 擅长的是"执行已知模式"的上半场，而"建立问题框架"的下半场仍然需要人类。
 
 ## 实践启示
 
@@ -114,9 +67,9 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 ## 相关实体
 
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/020-build-agents-not-pipelines.html) — 同一系列关于软件工程方法论的文章
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/913-20.html) — 同为 TLDR AI Newsletter 推荐的深度技术分析
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/926-20.html) — 同为 TLDR AI Newsletter 推荐的深度技术分析
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同一技术文章系列的姊妹篇
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/913-20.html) — 技术深度分析系列
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/926-20.html) — 技术深度分析系列
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 安全与工程实践交叉话题
 
 ## 相关主题

@@ -9,20 +9,6 @@
 > **来源**：数据STUDIO（云朵君）。browser-use v0.13.2 架构拆解——上万行 DOM 处理代码替换为约 600 行 CDP 直连的 Browser Harness，LLM 本来就懂 CDP 协议，厚封装反而阻碍其能力。
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/browser-use-v13-harness-thin-abstraction-数据STUDIO.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("browser-use v013 Browser Harness"))
-    核心洞察 薄抽象胜过厚封装
-    Browser Harness 架构 600 行
-    关键设计特性
-    Benchmark 数据
-    适用性
-    与已有 wiki 实体关系
-```
-
 ## 核心洞察：薄抽象胜过厚封装
 
 browser-use v0.13 的设计挑战了一个广泛假设：更好的 AI 工具 = 更完善的 API 封装。
@@ -30,37 +16,6 @@ browser-use v0.13 的设计挑战了一个广泛假设：更好的 AI 工具 = �
 **实验结果**：在 browser-use 范围内，抽象层越薄，LLM 表现越好。因为 LLM 的训练数据里有海量 CDP 协议文档（Page.navigate、DOM.querySelector、Runtime.evaluate、Input.dispatchMouseEvent），它"本来就懂"如何操控浏览器。给更厚的抽象层（Playwright、Selenium），LLM 反而要多一道"翻译"，增加出错可能。
 
 ## Browser Harness 架构（~600 行）
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 v0.13 将之前上万行 Python 代码（DOM 元素提取器、元素索引器、点击包装器、目标管理器、看门狗、跨域 iframe 处理器）替换为仅四文件：
 
@@ -102,7 +57,7 @@ ChatBrowserUse (bu-ultra) 78.0% > OSS+BU Hybrid 63.3% > Claude Opus 4.6 62.0% > 
 
 - 补充 [Browser Harness](ch05/135-browser-use-v0-13-browser-harness.html)：该实体覆盖 Browser Harness 早期版本概念（来自 GitHub 仓库），本文聚焦 v0.13.2 最新架构变化和设计哲学。
 - 关联 [Browser Use Runtime Harness](ch05/009-harness.html)：互补视角。
-- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](../ch01/913-20.html)：CDP 协议底层背景。
+- 关联 [Browser Internals Chromium Blink V8 Architecture Guide Jiagoux 2026](../ch01/926-20.html)：CDP 协议底层背景。
 
 ---
 

@@ -4,27 +4,6 @@
 
 > 📊 Level ⭐⭐ | 18.3KB | `entities/agent-开发范式演进从环境工程出发.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent 开发范式演进 从环境工程出发"))
-    为什么AI Coding先跑通了
-      数字化环境的天生优势
-      行业Agent的半失明困境
-    五大关键判断
-      信息完备性 先让Agent看见真实业务世界
-      感官管理 给Agent一本图书馆馆藏目录
-      知识对账 信息知识 知道如何取数用数才是关键
-    从模型能力竞争到环境能力竞争
-    信息完备性的工程化挑战
-    Catalog设计的认知负荷理论依据
-    知识对账的治理价值
-    企业Agent落地应先做环境评估
-    建设统一语义Catalog应成为基础设施优先级
-```
-
 ## 核心要点
 - **核心洞察**：软件工程Agent率先跑通的原因是工作环境本身已高度数字化、上下文天然在线化；行业Agent难以落地根本原因在上下文供给能力不足 
 - **五大维度**：信息完备性（让Agent看见真实业务）、感官管理（图书馆馆藏目录）、知识对账（信息→知识转化）、变更治理（CI/CD化发布）、普惠门槛（Serverless即插即用）
@@ -32,37 +11,6 @@ mindmap
 - **竞争分水岭**：从模型能力转向环境能力，谁能构建多源、实时、可信、可治理的上下文供给体系，谁能让Agent从"能演示"走向"能生产" 
 
 ## 为什么AI Coding先跑通了
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 数字化环境的天生优势
 2026年2月Anthropic平台数据显示，软件工程行业AI调用量占比高达49.7%，接近一半。这个结果说明Agent目前最容易跑通的场景是高度数字化、上下文天然在线化的领域 。
 程序员天然工作在一个数字世界中：输入端有PRD、交互设计、技术方案、代码、Issue、日志等；输出端可直接完成Design、Coding、Test、Deploy等工作。AI Coding能够快速嵌入的根本原因不是"代码更适合AI"，而是工作环境本身已完成数字化表达 。
@@ -183,11 +131,11 @@ Catalog的价值会随着Agent数量增加而指数增长。当只有一个Agent
 从长远看，企业Agent的成功不取决于是否自建了完整的环境工程能力，而取决于能否像"接电"一样快速接入AI能力。这意味着行业会走向分工：少数公司建设"标准插座"（如EventHouse），多数公司专注于业务逻辑和Prompt优化 。
 企业应该评估自身在"环境工程"上的投入产出比——如果这方面的投入无法形成核心竞争力，就应该考虑复用成熟平台，将资源集中在真正创造差异化的业务场景上 。
 ## 相关实体
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/003-agentrun.html)
-- [从多智能体编排到Ai自主决策资损防控体系的架构演进](../ch05/094-ai.html)
-- [Hermes Agent Goal Runtime Architecture](ch04/381-hermes-agent-goal.html)
-- [Gpt Image 2完全指南](../ch01/1258-gpt-image-2.html)
-- [一次构建随处复用Python 泛型仓库模式](ch04/617-python.html)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/444-agentrun.html)
+- [从多智能体编排到Ai自主决策资损防控体系的架构演进](../ch05/095-ai.html)
+- [Hermes Agent Goal Runtime Architecture](ch04/385-hermes-agent-goal.html)
+- [Gpt Image 2完全指南](../ch01/1006-gpt-image-2.html)
+- [一次构建随处复用Python 泛型仓库模式](ch04/623-python.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-开发范式演进从环境工程出发.md)

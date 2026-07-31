@@ -4,65 +4,11 @@
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/claude-code-large-codebase-enterprise-deployment.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 大型代码库最佳实践 Anthropic"))
-    核心判断
-    Agent 式搜索 vs RAG
-    七层扩展体系 Harness
-    三层部署路径
-    三个成功部署模式
-      模式1 让代码库对 Claude 可读
-      模式2 指定专人负责
-      模式3 治理先行
-    配置迭代 随模型进化
-    适用边界
-    Agent 式搜索为何优于 RAG 代码库动态性的根本矛盾
-```
-
 ## 核心判断
 **「模型能力是地板，配置质量才是天花板。」**
 Claude Code 的能力上限，取决于你怎么配它，模型本身有多强反倒是其次的。
 
 ## Agent 式搜索 vs RAG
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 | 方案 | 机制 | 大型代码库的问题 |
 |------|------|----------------|
 | **RAG** | embedding + 向量检索 | 索引更新速度跟不上工程师提交速度，可能查到过期内容且无提示 |
@@ -118,29 +64,29 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - ⚠️ **需要额外配置**：大量二进制资产的游戏引擎、非 Git 版本控制、非工程师贡献内容
 
 ## 相关实体
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/298-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/030-ai-agent.html)
 - [claude-code-agent-view](ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/478-anthropic-ai.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/484-anthropic-ai.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
-- [Claude Opus 4.7 发布分析](../ch01/349-claude-opus-4-7.html)
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
+- [Claude Opus 4.7 发布分析](../ch01/350-claude-opus-4-7.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
 - [Claude Managed Agents 官方 Harness 平台指南](../ch01/212-anthropic-claude-managed-agents.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [Claude Code 源码深度解析（13 核心机制）](../ch03/078-claude-code.html)
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
-- [柚漫剧 AI全流程提效拆解](../ch05/094-ai.html)
-- [Claude Code 可控性：软规则无法变成硬约束](../ch03/078-claude-code.html)
+- [Claude Code 源码深度解析（13 核心机制）](../ch03/077-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
+- [柚漫剧 AI全流程提效拆解](../ch05/095-ai.html)
+- [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html)
 - [Claude Managed Agents 开发者指南](../ch04/710-claude-managed-agents.html)
-- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/078-claude-code.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/077-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

@@ -2,23 +2,11 @@
 
 ## Ch04.001 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
 
-> 📊 Level ⭐ | 12.0KB | `entities/stepan-gershuni-ai-native-startup-guide.md`
+> 📊 Level ⭐ | 12.1KB | `entities/stepan-gershuni-ai-native-startup-guide.md`
 
 # 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
 
 > **来源**：深思圈 / 深思SenseAI（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("他的 Agent 昨晚替他把公司运转了一遍 你的早会才刚开始"))
-    先画地图 按自主程度对工作分级
-    把记忆装进代码库 Context 是操作记忆
-    选最轻的那个 混合工具栈
-    什么叫做对了 Skills Evals 是引擎
-```
 
 ## 深度分析
 
@@ -115,37 +103,6 @@ AI 原生创业公司每周改进一次自己的操作系统。
 
 ## 实践启示
 
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-
 1. **从画地图开始**：列出公司重复发生的所有工作，按 L1-L4 自主程度分级，优先找高频、低风险、路径可预设的环节实现闭环。
 2. **用 Git 管理 context**：从 CLAUDE.md + 5 个 context 文件开始，控制 40-60 行手写内容。原始数据和提炼数据分开，保证溯源。
 3. **混合工具栈**：不是所有工作都需要智能体。脚本处理确定性步骤，AI 辅助处理需判断的输出，智能体只处理路径无法预设的复杂任务。
@@ -156,10 +113,10 @@ graph TB
 
 ## 相关实体
 - [Ai Native Startup Cyberfund Guide](../ch05/018-ai-native.html)
-- [Ai Agent Harness Construction Akshay](../ch01/973-ai-agent-harness.html)
+- [Ai Agent Harness Construction Akshay](../ch01/988-ai-agent-harness.html)
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/009-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/298-ai-agent.html)
-- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/298-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/030-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
 

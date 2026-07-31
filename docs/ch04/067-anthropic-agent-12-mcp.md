@@ -13,25 +13,6 @@ Anthropic 官方最近那篇关于 MCP 的文章《  Building agents that reach 
 所以这篇文章不准备讲 MCP 协议细节，而是换一个角度：如果把 Anthropic 的实践抽象成工程模式，哪些设计可以被复用？
 我把它拆成 5 组、12 个模式。它们覆盖了  ** 工具交互面、交互语义、认证凭证、上下文经济，以及打包分发  ** 。理解这些模式，比单纯会写一个 MCP Server 更重要。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Anthropic 官方生产级 Agent 最佳实践 12"))
-    模式的本质分类
-    跨模式的内在联系
-    个模式与 Agent 工程成熟度的关系
-    从这 12 个模式里可以提炼出的工程原则
-    实际落地的建议路径
-    需要警惕的反模式
-    一个值得思考的问题
-    工具交互面 Tool surface
-      远程优先服务器模式 Remote-First Server
-      按意图组织工具模式 Intent-Grouped Tools
-      薄交互面模式 Thin Surface Pattern
-```
-
 ## 深度分析
 ### 模式的本质分类
 这 12 个模式不是平铺的技术点，而是一个从外到内的分层架构：
@@ -91,39 +72,6 @@ mindmap
 大多数团队在 L1-L2。有一些在 L3。L4-L5 是生产级 Agent 的真正门槛。
 
 ## 实践启示
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### 从这 12 个模式里可以提炼出的工程原则
 **原则一：先设计工具面，再写 Server**
 不要从「这个系统有哪些 API」出发，而要从「Agent 要完成哪些任务」出发。工具名称、参数结构、返回结果都要围绕 Agent 体验重新组织。这需要产品思维，不是代理思维。
@@ -219,8 +167,8 @@ Anthropic 原文提到  Cloudflare MCP Server  [2]  是典型案例：两个工�
 所以 Thin Surface 不是默认选择。它适合超大 API 面，不适合本来就能被清晰意图封装的小系统。
 
 ## Related entities
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/989-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1004-anthropic.html)
 
 ##  交互语义（Interaction Semantics）
 很多早期 Agent 工具，都默认工具返回文本或 JSON。

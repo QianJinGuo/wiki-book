@@ -2,60 +2,9 @@
 
 ## Ch12.104 AI phishing attacks are on the rise — Are you prepared? | Bitwarden
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI phishing attacks are on the"))
-    攻击规模的几何级增长
-    成本结构颠覆
-    攻击者情报能力的质变
-    人因漏洞的持续主导地位
-    个人防御层
-    组织防御策略
-    技术防御建议
-```
+> 📊 Level ⭐⭐ | 5.0KB | `entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md`
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 - 2024 年 FBI 数据：钓鱼诈骗为 top cybercrime，且随 AI 上升趋势加剧
 - 60% 的安全漏洞源于人为错误（Verizon）
 - 每次钓鱼攻击平均损失 $488 万（2024 Data Breach Report）
@@ -63,9 +12,9 @@ graph TB
 - AI 钓鱼比传统钓鱼有效性高 24%（Hoxhunt）
 - LLM 可将钓鱼成本降低 95% 以上，同时保持同等成功率（Harvard Business Review）
 ## 相关实体
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](../ch04/298-ai-agent.html)
-- [Llm Raiders Private Ai Server](../ch01/1274-llm.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/104-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/030-ai-agent.html)
+- [Llm Raiders Private Ai Server](../ch01/637-llm.html)
 - [Bluekit](ch12/088-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.html)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/149-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 

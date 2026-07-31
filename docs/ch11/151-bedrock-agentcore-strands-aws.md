@@ -4,60 +4,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/building-enterprise-level-with-bedrock-agentcore-and-strands.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于Bedrock"))
-    架构解耦 多层抽象的工程价值
-    AgentCore Memory 的千人千面机制
-    Gateway 的协议翻译与生态兼容
-    无服务器架构的运维简化
-    框架选型 模型驱动 vs 流程驱动
-    企业级部署的关键检查点
-    快速集成路径
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 by awschina on 20 11月 2025 in Application Integration Permalink Share 1. Agentic AI落地面临的问题 当前，生成式 AI 技术正以破壁之势迅猛发展，大模型的能力迭代更是日新月异。在此浪潮下，Agentic AI 的应用边界持续拓宽，已深度渗透至金融、医疗、制造、教育、娱乐等多个领域，以前所未有的速度重构商业竞争格局，颠覆各行业传统生产方式 —— 它不再是简单的技术工具，更成为驱动企业业务创新、提升核心效率的 “智能引擎”。正是看到这一机遇，越来越多的企业渴望搭乘 Agentic AI 的技术快车，加速推进行业智能体或通用智能体平台的落地。 作为 AWS 核心级合作伙伴，小宿科技始终聚焦企业 AI 转型需求，凭借安全可靠、高效敏捷的
 
 ## 核心技术
@@ -67,9 +14,9 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、Strands A
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/building-enterprise-level-with-bedrock-agentcore-and-strands/)
 
 ## 相关实体
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/561-amazon-bedrock-agentcore.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/270-aws-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/396-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/566-amazon-bedrock-agentcore.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/272-aws-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/400-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/060-agentic-ai.html)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/300-bedrock.html)

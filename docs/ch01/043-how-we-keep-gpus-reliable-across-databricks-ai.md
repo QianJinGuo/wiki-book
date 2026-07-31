@@ -8,64 +8,11 @@
 
 > **已评分** | v*c=72 | value=8 | confidence=9 | stars=4
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How we keep GPUs reliable across"))
-    GPU 训练负载下的三种故障模式
-      任务崩溃 Crashed Jobs
-      静默降级 Silent Slowdowns
-      数值损坏 Numerical Corruption
-    三种故障模式的可见性与危害性的逆相关
-    NCCL 看门狗超时 症状的聚合器而非故障的定位器
-    GPU 硬件故障率 vs 传统硬件的显著差异
-    多阶段健康检查体系的必要性
-```
-
 ## 摘要
 
 Databricks AI 团队分享了其在大规模 GPU 训练可靠性方面的实践经验。文章系统梳理了 GPU 在大规模训练负载下的三种故障模式（任务崩溃、静默降级、数值损坏），以及 Databricks 应对这些故障的多阶段健康检查体系。系列开篇聚焦于故障模式的分类和检测方法。
 
 ## 背景
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 分布式 GPU 训练已成为行业常规操作。团队现在训练基础模型、微调前沿模型、构建大规模视觉系统和运行深度推荐网络——规模之大曾是前沿实验室的专属。Databricks AI 每周运行大规模训练工作负载，故障持续出现在硬件、网络和软件层面。
 
@@ -103,7 +50,7 @@ Databricks 的分类揭示了一个重要的系统可靠性洞察：故障的可
 
 ### 5. 对 AI 基础设施运维的启示
 
-Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1) 监控体系必须覆盖从硬件传感器到应用层指标的全栈；(2) 静默故障的检测比显式崩溃更重要——这些是最隐蔽的成本漏洞；(3) GPU 的可靠性工程需要专门的工具和知识体系（如 DCGM、NCCL Flight Recorder），不同于传统服务器运维；(4) 故障恢复的自动化程度直接影响训练效率——从检查点恢复的速度和弹性训练的能力是核心竞争力。这些发现与 [Graviton 优化 Agentic RL Sandbox](../ch04/327-agentic-rl.html) 中讨论的算力成本优化互补——可靠性问题直接影响 GPU 的有效利用率和单位算力成本。
+Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1) 监控体系必须覆盖从硬件传感器到应用层指标的全栈；(2) 静默故障的检测比显式崩溃更重要——这些是最隐蔽的成本漏洞；(3) GPU 的可靠性工程需要专门的工具和知识体系（如 DCGM、NCCL Flight Recorder），不同于传统服务器运维；(4) 故障恢复的自动化程度直接影响训练效率——从检查点恢复的速度和弹性训练的能力是核心竞争力。这些发现与 [Graviton 优化 Agentic RL Sandbox](../ch04/236-agentic-rl.html) 中讨论的算力成本优化互补——可靠性问题直接影响 GPU 的有效利用率和单位算力成本。
 
 ## 实践启示
 
@@ -120,10 +67,10 @@ Databricks 的实践为大规模 AI 设施运维提供了几个重要参考：(1
 ## 相关实体
 
 - [Meta AI 存储架构](ch01/223-rag.html)
-- [Graviton 优化 Agentic RL Sandbox](../ch04/327-agentic-rl.html)
+- [Graviton 优化 Agentic RL Sandbox](../ch04/236-agentic-rl.html)
 - [AI Infrastructure & Cost Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md)
 - GPU 可靠性工程
-- [Lambda MicroVM 对比](../ch11/130-lambda-microvms-vs-lambda-functions.html)
+- [Lambda MicroVM 对比](../ch11/131-lambda-microvms-vs-lambda-functions.html)
 
 ## 来源
 

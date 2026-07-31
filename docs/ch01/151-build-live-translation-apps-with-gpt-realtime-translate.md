@@ -6,7 +6,6 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-live-translation-apps-with-gpt-realtime-translate.md)
 
-
 ## 相关实体
 - `Openai Gpt Realtime Voice Models Qbitai` — GPT Realtime Voice 模型的详细信息，与 gpt-realtime-translate 直接相关
 - `Openai Realtime Api Architecture` — OpenAI Realtime API 的架构说明
@@ -14,44 +13,6 @@
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 OpenAI的Cookbook指南详细介绍了如何使用gpt-realtime-translate构建实时翻译应用。该功能基于GPT模型的实时语音处理能力，结合翻译管线实现流式口译。
 **核心技术路径**：构建实时翻译应用涉及多个技术环节——音频捕获、语音识别（STT）、实时翻译、语音合成（TTS）。gpt-realtime-translate提供了端到端的解决方案，开发者可以通过WebSocket或WebRTC连接实现低延迟的实时翻译。
 **API架构要点**：指南涵盖了OpenAI Realtime API的连接管理、会话控制、音频流处理和错误处理等关键环节。开发者需要处理音频缓冲、丢包补偿、时间戳同步等底层细节。
@@ -65,10 +26,10 @@ OpenAI的Cookbook指南详细介绍了如何使用gpt-realtime-translate构建�
 4. **隐私合规是全球化部署的必要条件**：实时翻译涉及大量语音数据跨境处理，需严格遵守GDPR、CCPA及各地区数据本地化要求
 5. **fallback机制决定产品稳定性**：网络波动时如何保证用户体验——建议实现多级降级（WebRTC → WebSocket → REST API轮询）
 ## 相关实体
-- [Openai Gpt Realtime Voice Models Qbitai](ch01/821-openai-gpt-realtime-voice-models-qbitai.html)
+- [Openai Gpt Realtime Voice Models Qbitai](ch01/835-openai-gpt-realtime-voice-models-qbitai.html)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/122-useful-memories-become-faulty-when-continuously-updated-by-l.html)
-- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](ch01/738-chatgpt.html)
-- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/976-claude.html)
+- [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](ch01/951-chatgpt.html)
+- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](ch01/1022-claude.html)
 
 ---
 

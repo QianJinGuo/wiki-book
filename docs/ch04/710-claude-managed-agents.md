@@ -4,59 +4,10 @@
 
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/claude-managed-agents-self-hosted-sandbox-enterprise.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Managed Agents 企业边界更新"))
-    核心架构 混合控制平面
-    Self-hosted Sandboxes
-    MCP Tunnels
-    两次更新的完整图景
-    社区质疑回应情况
-    四象限验证框架
-    产品定位
-    工程哲学
-```
-
 ## 概述
 Anthropic 2026年5月18日更新 Claude Managed Agents，新增 self-hosted sandboxes 和 MCP tunnels 功能。本质是"brain Anthropic化、hand 企业侧化"的混合控制平面架构落地。 ^[https://mp.weixin.qq.com/s/dqg5rr2V073oloyAZVPB9Q]
 
 ## 核心架构：混合控制平面
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | 组件 | 归属 |
 |------|------|
 | agent loop、session、编排、模型调用、事件流、控制台 | Anthropic（平台） |
@@ -192,7 +143,7 @@ Outcomes grader 的有效性取决于 rubric 质量。建议 rubric 设计原则
 → （原始来源待补充，综合分析） ^[https://mp.weixin.qq.com/s/dqg5rr2V073oloyAZVPB9Q]
 ## 相关实体
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/710-claude-managed-agents.html)
-- [Claude Managed Agents Official](ch04/603-claude-managed-agents-official.html)
+- [Claude Managed Agents Official](ch04/607-claude-managed-agents-official.html)
 - [Claude Managed Agents](ch04/710-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform Launch](../ch01/212-anthropic-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform 2026](../ch01/212-anthropic-claude-managed-agents.html)

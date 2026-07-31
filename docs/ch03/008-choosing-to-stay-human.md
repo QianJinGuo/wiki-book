@@ -10,22 +10,6 @@
 
 > **Core insight**: Ethan Mollick 提出"认知投降"（cognitive surrender）概念：人类面对 AI 请求时倾向于停止思考、直接接受 AI 输出。台北 10 所高中 Python 课程的 RCT 显示，带教师引导的 AI tutor 产生 0.15 SD 效果量（= 6-9 个月额外学业进步），而简单 ChatGPT 使用则导致 17% 成绩下降——使用方式的微小差异导致结果的天壤之别。核心命题：决定什么保留给人类本身是一个需要主动做出的选择，而非默认。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Choosing to Stay Human"))
-    认知投降 Cognitive Surrender 的机制
-    SD 的巨大差异
-    AI 写作的隐性成本
-    Too Frictionless 工具设计的根本问题
-    主动选择保留什么给人类
-    认知投降 设计学陷阱而非懒惰
-    Scaffold vs Shortcut 的结构性不对称
-    AI 写作的三层成本与风格资产风险
-```
-
 ## 认知投降：Cognitive Surrender 的机制
 
 Wharton 的同事将此称为"认知投降"——人们会停止思考问题，直接让 AI 做工作，即使 AI 错了也会接受。Part of the problem 是这些工具的设计方式：当 AI 系统需要 elaborate back-and-forth 对话并经常出错时，人类必须在每一步都保持参与。Agentic 系统被设计为让生活更轻松，因为它们 just do stuff——这对于完成任务很棒，但对于学习任何东西、保持真实、或避免认知投降来说很糟糕。如果你提出了一个困难的请求并得到了答案，很容易就直接接受 AI 的回复。
@@ -33,35 +17,6 @@ Wharton 的同事将此称为"认知投降"——人们会停止思考问题，�
 在 BCG 咨询顾问实验中，758 名顾问半数获得 GPT-4 访问权限。使用 AI 的顾问在大多数任务上大幅超越没有 AI 的同行。但当加入一个 AI 会失败的特定问题时，使用 AI 的顾问显著不太可能得到正确答案——AI 给出了一个看起来很权威但实际上是错误的答案，大多数人（同样的精英顾问）在其他方面表现出色却没有 catch 这个错误。
 
 ## 0.15 SD 的巨大差异
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 教育领域是区分 AI 使用方式导致结果差异最清晰的地方。土耳其高中约 1000 名学生学习数学的实验中，一组使用 plain ChatGPT，另一组没有 AI。使用 ChatGPT 的学生作业做得更好并认为自己学得更多，但在不使用 AI 的情况下参加考试时，他们的表现不如没有使用 ChatGPT 的同学——因为 AI 旨在成为 helpful assistant，实际上只是给他们答案，而真正的学习需要心理努力。
 
@@ -131,7 +86,7 @@ ChatGPT 的 /learn、Gemini 的 Guided Learning、Claude 的 learning style sele
 - [Against Brain Damage](ch03/016-against-brain-damage.html)
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/662-garry-tan.html)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/673-garry-tan.html)
 - [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki/blob/main/entities/defect-backlog-retention-report.md)
 
 ## 相关引用

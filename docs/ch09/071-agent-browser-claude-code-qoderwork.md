@@ -8,20 +8,6 @@
 
 > **Background**: 作者使用 QoderWork（AI 编码工具）诊断 Mac 电脑的异常功耗和发热问题，发现根源是 Agent Browser 残留的 Chrome 僵尸进程在后台消耗 768% CPU。文章记录了完整的排查过程和自动化清理方案。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent Browser 僵尸进程排查与定时清理 Claude"))
-    问题发现
-    QoderWork 诊断
-    Agent 工具的进程生命周期管理挑战
-    AI 自愈循环 Self-Healing Loop 的原型
-    峰谷 Token 经济与夜间 Agent 编排
-    Agent OS 形态的收敛
-```
-
 ## 问题发现
 
 作者在 Claude Code 额度告急（$200 周额度耗尽 90%）后发现 Mac Mini 和 MacBook 出现异常：
@@ -32,41 +18,6 @@ mindmap
 值得注意的是，这些问题并非孤立现象。Agent Browser 作为 Claude Code TUI 中的浏览器自动化组件，在重度使用场景下极易产生孤儿进程。其根本原因在于 Agent Browser 在任务结束后，未能正确触发 Chrome 实例的关闭回调——这属于典型的**资源泄漏（Resource Leak）**模式，与数据库连接池泄漏、文件句柄未关闭等经典问题同源，但在 Agent 上下文中被放大，因为每次 Agent 任务可能生成多个独立的浏览器上下文。
 
 ## QoderWork 诊断
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 实际排查过程展示了 AI 编码工具在系统诊断中的独特价值：
 
@@ -159,7 +110,7 @@ Agent Browser、Playwright、Puppeteer 等浏览器自动化工具在 Agent 架�
 
 - [Agent Loop Engineering 手册](../ch05/004-loop-engineering.html)
 - [Agent Harness 生产可观测性](../ch05/058-agent-harness.html)
-- [Agent 事故分类实践](../ch11/222-amazon-quick.html)
+- [Agent 事故分类实践](../ch11/224-amazon-quick.html)
 - [Loop Engineering 反馈机制](../ch05/004-loop-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-browser-zombie-process-cleanup-mac-tool-2026.md)

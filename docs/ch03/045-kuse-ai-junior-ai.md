@@ -7,18 +7,6 @@
 # Kuse.ai Junior
 > 有独立身份、邮箱、Slack账号的AI员工，定位从"个人工具"升级为"团队成员"。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Kuseai Junior 全球第一个AI员工"))
-    基本信息
-    核心设计
-    两个AI员工
-    与本文相关
-```
-
 ## 基本信息
 - **厂商**: Kuse.ai
 - **产品定位**: 全球第一个真正意义上的AI员工
@@ -27,43 +15,6 @@ mindmap
 - **发布**: 2026年3月
 
 ## 核心设计
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 - **独立操作系统和浏览器环境**
 - **专属邮箱+手机号+Slack账号**，标准OAuth登录
 - **Org Memory**：组织记忆系统，包含沟通偏好、项目背景、历史决策、业务规则
@@ -107,7 +58,7 @@ Kuse内部案例中，客服端Junior发现投诉问题 → 传递给产品端Ju
 
 ## 与本文相关
 -  — OpenClaw生态（龙虾背景）
-- [Gstack Ai Workflow](ch03/063-gstack-ai.html) — YC的AI协作工作流
+- [Gstack Ai Workflow](ch03/062-gstack-ai.html) — YC的AI协作工作流
 -  — 企业级Agent落地对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)

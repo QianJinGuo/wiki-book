@@ -7,61 +7,7 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md)
 从微信文章 [FastAPI上线实战：认证、限流、零停机，一套代码搞定](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md) 提取。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("FastAPI上线实战 认证 限流 零停机 一套代码搞定"))
-    主要章节
-    认证的本质 信任链的建立而非简单的token验证
-    限流的工程哲学 从拒绝服务到平滑降级
-    零停机部署的三个支柱
-    数据库迁移的ExpandContract模式
-    对后端工程师
-    对DevOps基础设施团队
-    对技术负责人架构师
-```
-
 ## 核心内容
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 source_url: https://mp.weixin.qq.com/s/zYnWWSUptDtRMOelZMLkVw
 
 ### 主要章节
@@ -84,7 +30,7 @@ source_url: https://mp.weixin.qq.com/s/zYnWWSUptDtRMOelZMLkVw
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/397-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/401-agent-skills.html)
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/035-agent.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 

@@ -6,32 +6,6 @@
 
 # StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("StarAgentDrogo WebTerminal CLI"))
-    层职责分离
-    黑屏模式更新 wshwcp
-      个关键体验提升
-      遗憾
-    会话设计 复用已登录浏览器上下文
-      个直接收益
-    命令执行 动态闭环而非固定 suite
-      三份证据文件
-    文件传输 协议化 告别 DOM 自动化
-      个文件 API
-      下载路径
-      上传路径
-    交互式调试 默认接口应该像普通 shell
-      HTTP 控制面 默认
-      状态保持
-      Playwright 单线程教训
-    验收案例 Emacs eshell gdb coredump
-    GPU hang 现场
-```
-
 ## Overview
 
 阿里基础设施团队（阿里妹导读，2026-06-01）发布的工程实践：**StarAgent/Drogo WebTerminal CLI**（仓库 `foundation_models/webterminal-cli`）。把企业内部 WebTerminal 抽象成稳定的 CLI 执行面 `wt` + `wsh` + `wcp`，让 Agent 远程排障不再"隔着 DOM 猜命"。
@@ -42,41 +16,6 @@ mindmap
 > - **授权留在浏览器，执行交给 CLI**——不绕过治理链路，又给 Agent 稳定接口
 
 ## 4 层职责分离
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 
 | 层次 | 职责 | 不做什么 |
 |------|------|----------|
@@ -300,10 +239,10 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 本文是 **"Agent 远程执行能力"** 的工程化实现：
 
 - [CLI / MCP / SDK 选型](../ch03/035-agent.html) — 工具原语选择（理论层）
-- [AgentCore OpenClaw 多租户](../ch04/561-amazon-bedrock-agentcore.html) — AWS 视角的远程 Agent
-- [OpenClaw Security 部署](../ch11/235-openclaw.html) — OpenClaw 安全部署
+- [AgentCore OpenClaw 多租户](../ch04/566-amazon-bedrock-agentcore.html) — AWS 视角的远程 Agent
+- [OpenClaw Security 部署](../ch11/237-openclaw.html) — OpenClaw 安全部署
 - [DIPG](https://github.com/QianJinGuo/wiki/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
-- [250 行 CLI Agent 教程](../ch04/617-python.html) — minimal 教学
+- [250 行 CLI Agent 教程](../ch04/623-python.html) — minimal 教学
 
 本文的独特贡献：
 - **WebTerminal 而非 SSH**——企业内部治理链路的现实选择

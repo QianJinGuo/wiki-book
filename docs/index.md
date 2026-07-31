@@ -1,51 +1,16 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3504 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3509 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
 > **作者：AI 社区众创 | 编撰：Hermes Agent | 开源协议：CC BY-SA 4.0**
 
-
-## 全书概念全景
-
-```mermaid
-mindmap
-  root((AI工程全书))
-    基础篇
-      Ch01 LLM基础
-      Ch02 提示词工程
-    工具篇
-      Ch03 AI工具
-      Ch09 AI编程
-    Agent篇
-      Ch04 Agent核心
-      Ch05 Harness护栏
-      Ch06 记忆系统
-      Ch07 技能与工具
-      Ch08 多Agent
-    数据篇
-      Ch10 RAG
-      Ch14 数据工程
-    基础设施篇
-      Ch11 云基础设施
-      Ch12 安全
-      Ch13 MLOps
-    进阶篇
-      Ch15 训练
-      Ch16 推理优化
-      Ch17 多模态
-      Ch18 机器人
-    前沿篇
-      Ch19 研究前沿
-      Ch20 AI哲学
-```
-
 ## 全书结构
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1538 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1543 篇 |
 | 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1257 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 497 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 168 篇 |
@@ -55,20 +20,7 @@ mindmap
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-```mermaid
-graph LR
-    subgraph "五篇二十章"
-        P1["入门篇<br/>Ch01-03"] --> P2["工程师篇<br/>Ch04-10"]
-        P2 --> P3["专家篇<br/>Ch11-14"]
-        P3 --> P4["科学家篇<br/>Ch15-18"]
-        P4 --> P5["大师篇<br/>Ch19-20"]
-    end
-    classDef part fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    class P1,P2,P3,P4,P5 part
-```
-
-
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1362 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1367 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -79,7 +31,7 @@ graph LR
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ 快手首个打工人Agent
   - ⭐ 这个五一节我做了个总结，在 2 年多的创业里，我一共做了 25 个 AI 项目
-  - ... 共 **1362** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1367** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 39 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -107,7 +59,7 @@ graph LR
   - ⭐ Choosing to Stay Human
   - ... 共 **137** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1538 篇**
+> 📖 **本篇共 1543 篇**
 
 ---
 
@@ -278,7 +230,7 @@ graph LR
   - ⭐⭐ SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
   - ⭐⭐ 多轮Agent蒸馏终于不翻车！港中文x通义新方法成功率暴涨18点，训练还快32%
   - ⭐⭐ xai解散但grok还没死马斯克声称新模型正在训练
-  - ⭐⭐ Notes on pretraining parallelisms and failed training runs.
+  - ⭐⭐ 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
   - ... 共 **56** 篇 → [完整章节](ch15-training.md)
 
 ### [Ch16 推理优化与架构](ch16-inference.md) — 34 篇
@@ -356,6 +308,6 @@ graph LR
 
 ---
 
-**📊 全书收录：3504 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3509 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-07-31 | 来源: ~/wiki/entities/
+生成时间: 2026-08-01 | 来源: ~/wiki/entities/

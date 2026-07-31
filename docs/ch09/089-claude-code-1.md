@@ -6,21 +6,6 @@
 
 Claude Code Top 1% 用户指南：从"自动补全助手"升级为一支可编程的工程团队。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 前 1 用户指南 系统级架构与全栈工程化实践"))
-    Claude Code 分层架构
-    九大进阶领域
-    双 Claude 审查模式
-    基础设施思维的系统化复利效应
-    工具范围控制与最小权限原则
-    Skills 与 MCP 的合理分工
-    上下文管理的主动控制策略
-```
-
 ## 核心论点
 
 顶尖用户的差距不在于提示词技巧，而在于**基础设施思维**——通过精炼的 CLAUDE.md、自动化质量门禁、并行子代理与 MCP 集成，搭建出让 Claude 在最少监督下高效运行的系统。
@@ -28,41 +13,6 @@ mindmap
 高级用户的思维转变：从"我给 Claude 一个任务，看看它做得怎么样"到"我要设计一个系统，让 Claude 能够在最少监督下高效运行"。这种基础设施思维的前期投入会在每一次会话中持续复利。
 
 ## Claude Code 分层架构
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 
 1. **A - 基础设施层**: CLAUDE.md 系统提示 + 工具配置
 2. **B - 交互层**: 核心对话 + 代码生成（大多数开发者止步于此）
@@ -129,8 +79,8 @@ Skill 是教 Claude 如何做某事的 Markdown 文件（承载知识和指令�
 
 ## 相关实体
 
-- [Claude Code Governance Soft Rules](../ch03/078-claude-code.html)
-- [Claude Code 大代码库配置](../ch03/078-claude-code.html)
+- [Claude Code Governance Soft Rules](../ch03/077-claude-code.html)
+- [Claude Code 大代码库配置](../ch03/077-claude-code.html)
 - [Agent Harness 上下文管理](../ch05/058-agent-harness.html)
 - **MCP 服务器集成模式**
 

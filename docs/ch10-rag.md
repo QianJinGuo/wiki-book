@@ -6,37 +6,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((RAG检索增强))
-    检索层
-      关键词BM25
-      近邻图扩展
-      语义搜索
-    索引构建
-      向量化
-      TF-IDF
-      稀疏矩阵
-    重排序
-      Reranker
-      相关性融合
-      多路召回
-    上下文工程
-      注入策略
-      窗口管理
-      压缩摘要
-    存储后端
-      向量数据库
-      R2对象存储
-      SQLite FTS
-    降级策略
-      客户端优先
-      服务器兜底
-      空结果处理
-```
-
 ## 本章导航
 
 | Level | 含义 | 篇数 |
@@ -46,39 +15,6 @@ mindmap
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
-
-## 架构图
-
-```mermaid
-graph TB
-    subgraph "RAG 四层架构"
-        L1["Layer 1: 关键词<br/>BM25/FTS"] --> L2["Layer 2: 近邻图<br/>TF-IDF 余弦"]
-        L2 --> L3["Layer 3: 语义搜索<br/>Embedding + Vectorize"]
-        L3 --> L4["Layer 4: Reranker<br/>重排序"]
-    end
-    subgraph "索引构建"
-        IDX[61K 文档] --> TFIDF[TF-IDF 稀疏矩阵]
-        TFIDF --> GRAPH[57K 节点 × 20 近邻]
-    end
-    IDX --> L1
-    GRAPH --> L2
-    subgraph "部署"
-        BROWSER[浏览器 IndexedDB<br/>0ms]
-        SERVER[Pages Function<br/>~50ms]
-        CLOUD[讯飞 + Vectorize<br/>~300ms]
-    end
-    L1 --> BROWSER
-    L2 --> BROWSER
-    L3 --> CLOUD
-    L4 --> SERVER
-    classDef layer fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef idx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
-    class L1,L2,L3,L4 layer
-    class IDX,TFIDF,GRAPH idx
-    class BROWSER,SERVER,CLOUD deploy
-```
-
 
 ## 导读
 
@@ -96,7 +32,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 
 ## Ch10.001 为OpenClaw配置网盘空间的最佳实践
 
-> 📊 Level ⭐ | 6.1KB | `entities/PGpkC04XfF7ilMDb9vOcNQ.md`
+> 📊 Level ⭐ | 6.1KB | `entities/pgpkc04xff7ilmdb9vocnq.md`
 
 # 为OpenClaw配置网盘空间的最佳实践
 
@@ -107,7 +43,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 <span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;visibility: visible;">
 
 ## 相关实体
-- [Tcjndrk4Frmumngmboih W](https://github.com/QianJinGuo/wiki/blob/main/entities/tCjNDrk4fRMUmngmbOih-w.md)
+- [Tcjndrk4Frmumngmboih W](https://github.com/QianJinGuo/wiki/blob/main/entities/tcjndrk4frmumngmboih-w.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [Identity Behavior Context Itdr Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution.md)
 - [Openclaw Cloud Storage Config Guide Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-cloud-storage-config-guide-wechat.md)
@@ -157,7 +93,7 @@ FRAGMENTED AUDIT LOGS NO CROSS-SYSTEM CONTEXT MANUAL LOG CORRELATION AI SESSIONS
 ## 相关实体
 - [Identity Behavior Context Itdr Solution Teleport](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution-teleport.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/PGpkC04XfF7ilMDb9vOcNQ.md)
+- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/pgpkc04xff7ilmdb9vocnq.md)
 - [Openclaw Cloud Storage Config Guide Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-cloud-storage-config-guide-wechat.md)
 - [Microsoft Agent Framework Python Full Guide Zizhi](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-agent-framework-python-full-guide-zizhi.md)
 
@@ -1870,7 +1806,7 @@ Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这
 
 ## Ch10.013 花费 2 个星期写了 8 篇 OpenClaw 源码拆解文章，我发现90% 的人对龙虾的理解都太表面了，深层次的真相竟然是这个
 
-> 📊 Level ⭐⭐ | 9.0KB | `entities/tCjNDrk4fRMUmngmbOih-w.md`
+> 📊 Level ⭐⭐ | 9.0KB | `entities/tcjndrk4frmumngmboih-w.md`
 
 <section powered-by="werss" style='font-family: "PingFang SC", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif; font-size: 16px; line-height: 1.75; text-align: left; visibility: visible;'>
 <blockquote style="margin: 0px 0px 1em; font-style: normal; padding: 1em; border-left-width: 4px; border-left-style: solid; border-left-color: rgb(0, 152, 116); border-radius: 6px; color: rgb(63, 63, 63); background: rgb(247, 247, 247); visibility: visible;">
@@ -1897,7 +1833,7 @@ AI 时代，有两种行为：
 </blockquote>
 
 ## 相关实体
-- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/PGpkC04XfF7ilMDb9vOcNQ.md)
+- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/pgpkc04xff7ilmdb9vocnq.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
 - [New And Improved Agent Governance Intelligent Workflows Connected App Exp](https://github.com/QianJinGuo/wiki/blob/main/entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
 - [Skillopt](https://github.com/QianJinGuo/wiki/blob/main/entities/skillopt.md)
@@ -2536,7 +2472,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 5. **在 OpenClaw 中构建定期调研简报 Skill**：利用网盘的多模态检索能力（图片语义搜索、音视频内容理解），将"定期调研竞品功能并汇总报告"封装为一个可复用的 Skill，定期检索网盘内相关目录并自动生成更新报告。
 
 ## 相关实体
-- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/PGpkC04XfF7ilMDb9vOcNQ.md)
+- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/pgpkc04xff7ilmdb9vocnq.md)
 - [Identity Behavior Context Itdr Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution.md)
 - [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
 - Senators Query Credit Bureaus On Bnpl 1
@@ -2792,7 +2728,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ## Ch10.028 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
-> 📊 Level ⭐⭐ | 3.9KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
+> 📊 Level ⭐⭐ | 4.0KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
 # 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 

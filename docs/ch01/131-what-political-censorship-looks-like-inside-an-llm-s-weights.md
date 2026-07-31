@@ -4,56 +4,17 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/what-political-censorship-looks-like-inside-an-llm-s-weights.md`
 
-
 ## 核心要点
 - **可定位的审查电路**：Qwen3.5-9B 的政治审查是一个可定位、可读取、可关闭的小型电路。三层方向向量（d_prc/d_refuse/d_style）在 Writer 层（L11-L20）计算，Reader 层（L20-L31）负责文本渲染
 - **知识与行为分离**：预训练知识本身完整保留，Qwen3.5-9B-Base 在原始文本补全下对所有 PRC 话题给出准确答案。审查是"路由绕过"而非"知识删除"
 - **中文中间表示**：在 L24 左右，判决以中文 token 形式在模型内部"承诺"，后续层再翻译为英文输出
 - ** graded classifier 过泛化**：审查分类器按结构模式触发而非精确内容匹配，Kosovo、Arab Spring 等非 PRC 话题可能被错误映射
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 - [How We Made Window Join Parallel And Vectorized](ch01/033-how-we-made-window-join-parallel-and-vectorized.html)
 - [Products Are Out Brains Are In](ch01/135-products-are-out-brains-are-in.html)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Offline Llm Energy Use Html](ch01/1274-llm.html)
+- [Offline Llm Energy Use Html](ch01/637-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 

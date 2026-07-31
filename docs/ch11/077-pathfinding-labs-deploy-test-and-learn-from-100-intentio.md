@@ -8,58 +8,7 @@
 
 [Pathfinding Labs](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/datadog-pathfinding-labs-security.md) 是 DataDog Security Labs 于 2026 年 5 月发布的云安全实训平台，核心功能是允许用户在自有 AWS Sandbox 账户中一键部署**故意存在漏洞的 AWS 环境**，随后对其进行利用（red team）或检测验证（blue team）。项目包含超过 100 个 Terraform 编写的实验环境，通过一个 Go 语言编写的 CLI 工具 `plabs` 封装所有 Terraform 细节，用户无需直接接触 Terraform 即可完成完整的攻击链演练。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Pathfinding Labs Deploy test and"))
-    核心组成
-    实验类型
-    与 Stratus Red Team 的关系
-    图思维与攻击链
-    快速上手
-    路线图
-    相关项目
-```
-
 ## 核心组成
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 Pathfinding Labs 由三个部分构成，形成从学习到实战的完整闭环：
 
@@ -159,7 +108,7 @@ Pathfinding Labs 的核心创新在于将 Terraform 模块封装为可一键部�
 ## 相关实体
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/223-rag.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/054-prowler-genai.html)
-- [Aws Bedrock Agentcore Identity Security](ch11/270-aws-bedrock-agentcore.html)
+- [Aws Bedrock Agentcore Identity Security](ch11/272-aws-bedrock-agentcore.html)
 - [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-cognito-multi-region-replication.md)
 - [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](ch11/023-restrict-access-to-sensitive-documents-in-your-amazon-q-s3-k.html)
 

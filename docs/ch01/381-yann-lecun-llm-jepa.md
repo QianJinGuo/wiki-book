@@ -2,67 +2,17 @@
 
 ## Ch01.381 Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
 
-> 📊 Level ⭐⭐ | 10.6KB | `entities/yann-lecun-llm-not-intelligence-jepa.md`
+> 📊 Level ⭐⭐ | 10.7KB | `entities/yann-lecun-llm-not-intelligence-jepa.md`
 
 # Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yann-lecun-llm-not-intelligence-jepa.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Yann LeCun 谈 LLM 不是智能与世界模型 JEPA"))
-    四岁孩子 vs LLM 训练数据量的反差
-    LLM 为什么不是智能 根本性的架构缺陷
-    生成式架构的十年失败
-    JEPA 的核心创新 抽象状态而非像素
-```
 
 ## 摘要
 
 Yann LeCun（杨立昆）2026 年关于 LLM 本质局限性的核心论述：LLM 只是"会思考的系统的接口"，真正的智能需要世界模型——能预测后果、能规划、能模拟现实的系统。LeCun 提出的替代方案是 **JEPA**（Joint Embedding Predictive Architecture，联合嵌入预测架构），通过预测抽象状态而非像素，绕过物理世界不可压缩噪声的难题。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 - **核心论点**：LLM 只是一个接口，而不是智能本身。语言将会成为一个会思考的系统的接口，真正的核心是世界模型。
 - **关键计算**：四岁孩子醒着累计约 16000 小时，视神经每秒传输约 1 字节/纤维 × 100 万根纤维，四岁前视觉原始信息量约 10^14 字节——与现代主流 LLM 预训练语料量级相同。
@@ -142,23 +92,23 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 ## 相关实体
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1170-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1175-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [OpenClaw 多 Agent 协同开发](../ch11/235-openclaw.html)
+- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [OpenClaw 多 Agent 协同开发](../ch11/237-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
 - 
 - 
 -
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
-- [better decisions at scale: how mathematical optimization del](../ch11/174-better-decisions-at-scale-how-mathematical-optimization-del.html)
-- [farewell ai2](../ch05/094-ai.html)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/707-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
-- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch05/094-ai.html)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/094-ai.html)
+- [better decisions at scale: how mathematical optimization del](../ch11/176-better-decisions-at-scale-how-mathematical-optimization-del.html)
+- [farewell ai2](../ch05/095-ai.html)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/712-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
+- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch05/095-ai.html)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/095-ai.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/108-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/108-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
-- [the inevitable need for an open model consortium](ch01/1188-the-inevitable-need-for-an-open-model-consortium.html)
+- [the inevitable need for an open model consortium](ch01/1195-the-inevitable-need-for-an-open-model-consortium.html)
 
 ---
 

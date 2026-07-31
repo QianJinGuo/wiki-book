@@ -2,60 +2,11 @@
 
 ## Ch12.025 Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026
 
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 > 📊 Level ⭐⭐ | 13.1KB | `entities/vercel-inference-theft-ai-endpoint-economics-2026.md`
 
 # Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026
 
 > **核心问题**：AI endpoint 是 2026 年最高利润的攻击面之一。HTTP 请求成本 $2/million calls，AI prompt 成本 $2/call，**价差 1,000,000x**。攻击者用 residential proxy + 一次性账号即可绕过 session-level 验证，转售盗用的推理资源。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Inference Theft as AI Endpoint"))
-    三条独有贡献 与同类安全 entity 区分
-    攻击面分类
-    为什么 Web 防御不奏效
-    与同类安全实体的差异化
-    关键 takeaway
-    引用
-```
 
 ## 三条独有贡献（与同类安全 entity 区分）
 
@@ -160,9 +111,9 @@ Vercel 案例中，攻击导致流量达到 10x 正常量 。建议在 AI endpoi
 
 ## 关联阅读
 
-→ [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/820-github.html) — 另一个高利润 AI endpoint 攻击向量：通过 VS Code webview postMessage 实现的 1-click token stealing PoC。与本文的攻击经济学框架互补：ammaraskar 实体聚焦代码层漏洞（postMessage 处理缺陷），本文聚焦推理资源的经济学驱动因素和 per-request 防御架构。 ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]
+→ [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/834-github.html) — 另一个高利润 AI endpoint 攻击向量：通过 VS Code webview postMessage 实现的 1-click token stealing PoC。与本文的攻击经济学框架互补：ammaraskar 实体聚焦代码层漏洞（postMessage 处理缺陷），本文聚焦推理资源的经济学驱动因素和 per-request 防御架构。 ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]
 
-→ [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/330-ai-coding-agent.html) — 从 agent 使用方视角的系统性防御策略：5 种 control mechanisms 防止 AI coding agent 产出低质量代码。 inference theft 是攻击方利用 AI endpoint 经济价值的案例，该 entity 提供了 agent 使用方在接收方一侧的防御思路，两者共同构成 AI agent security 的攻防全景。 ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]
+→ [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/333-ai-coding-agent.html) — 从 agent 使用方视角的系统性防御策略：5 种 control mechanisms 防止 AI coding agent 产出低质量代码。 inference theft 是攻击方利用 AI endpoint 经济价值的案例，该 entity 提供了 agent 使用方在接收方一侧的防御思路，两者共同构成 AI agent security 的攻防全景。 ^["[Vercel Com Blog Protecting Against Token Theft](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-blog-protecting-against-token-theft.md)"]
 
 ---
 

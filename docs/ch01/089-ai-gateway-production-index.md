@@ -4,54 +4,12 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/aigatewayproductionindex.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Gateway production index"))
-    成本与音量的分歧映射不同的业务风险层级
-    Agentic Workload 正在重构 AI 的成本结构
-    多模型路由是规模化的标准架构 而非可选项
-    Provider Outage 的真实成本被 SLA 掩盖了
-    给 AI Gateway 使用者的行动建议
-```
-
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aigatewayproductionindex.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 ### 1. 成本与音量的分歧映射不同的业务风险层级
 Anthropic 在 spend 中占 61% 而 Google 在 volume 中占 38%，这种分歧不是市场统计噪音，而是反映了"容错成本"在其中的决定性作用：Claude Opus 这类高成本模型被部署在 Back Office（87% cost share, 71% token share）这类高风险场景，而 Gemini Flash 则占据了 Consumer 场景中 28% token 却仅占 15% cost 的位置。
 这意味着 **B2B 应用按 token 计费大约是 B2C 的两倍**，不是因为 B2B 用的模型更好，而是因为 B2B 的每一次错误输出的代价（法律风险、财务损失、运营中断）远远超过 B2C。个人助理类应用容错率高，可以用便宜模型跑大量 volume；后端工作流必须上贵的模型，因为错一个答案付出的代价远超节省的 token 费用。
@@ -84,7 +42,7 @@ Claude Sonnet 4.6 在发布后第一个完整月就吸收了 Sonnet 系列的大
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - AI Gateway production index
-- [AI Gateway production index](../ch05/094-ai.html)
+- [AI Gateway production index](../ch05/095-ai.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/223-rag.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

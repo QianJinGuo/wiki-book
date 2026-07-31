@@ -4,61 +4,7 @@
 
 > 📊 Level ⭐⭐ | 24.0KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-re.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Announcing AWS CDK Mixins"))
-    什么是 CDK Mixins
-    Mixins 和 Aspects
-    使用 CDK Mixins
-    创建自定义 Mixins
-    Mixin 行为控制
-    ECS ClusterSettings Mixin
-    S3 Mixins PublicAccessBlock 和
-    Vended Logs 和日志传递
-```
-
 ## 背景
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 AWS 云开发套件（AWS Cloud Development Kit，CDK）是一个开源软件开发框架，用于以代码方式定义云基础设施，并通过 AWS CloudFormation 进行配置。CDK 包含预构建、模块化且可重用的云组件，称为构造块（constructs）。构造块是代表一个或多个 AWS CloudFormation 资源及其配置的基本构建单元。 
 传统上，我们将 CDK 构造块组织为三个层级。L1 构造块直接映射到 CloudFormation 资源。L2 构造块提供更高级的抽象，包含便捷方法、安全默认配置和辅助函数。L3 构造块（也称为模式）组合多个资源以解决特定用例。然而，这种架构造成了一个根本性的权衡：你必须在即时访问新 AWS 功能（L1）和复杂抽象（L2/L3）之间做出选择。团队通常需要自定义 L2 构造块，重新构建整个构造块库以满足其特定需求。 
 CDK Mixins 通过将抽象与构造块实现解耦来解决这个问题。与其将所有功能捆绑到单一的 L2 构造块中，Mixins 允许你精确组合所需的功能，将其应用于任何构造块类型，并保持对底层 CloudFormation 属性的完全访问。
@@ -406,10 +352,10 @@ class PipelineStack extends cdk.Stack {
 - `Harness架构` — 云原生基础设施的抽象设计
 ## 相关实体
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](ch11/016-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/208-cost-effective-deployment-of-vision-language-models-for-pet.html)
-- [Us Bank Aws Ai Migration](../ch05/094-ai.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/210-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Us Bank Aws Ai Migration](../ch05/095-ai.html)
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/731-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/744-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 
 ---
 

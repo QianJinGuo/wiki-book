@@ -4,24 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.0KB | `entities/how-ai-agent-memory-works.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How AI Agent Memory Works"))
-    记忆的类型
-      Working Memory 工作记忆
-      Long-term Memory 长期记忆
-      Episodic Memory 情景记忆
-    六种架构权衡
-      Buffer 缓冲区
-      Rolling Summary 滚动摘要
-      Vector Store 向量存储
-    生产部署考量
-    与相关概念的关系
-```
-
 ## 记忆的类型
 
 当代 Agent 记忆系统通常由 **五个层次** 组成，每个层次解决不同的时间尺度和记忆需求。
@@ -47,43 +29,6 @@ Semantic Memory 存储抽象的事实知识和概念——不依附于特定事�
 Procedural Memory 编码"如何做"的知识——即执行特定任务的步骤和模式。例如"生成代码时先写测试"或"处理用户投诉的标准化流程"。在 Agent 架构中，这通常体现为 **System Prompt 模板**、**工具调用模式库** 或 **Agentic Workflow 的规则引擎**。Procedural Memory 使得 Agent 能够将重复性任务自动化，而无需每次重新学习流程。
 
 ## 六种架构权衡
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 从简单到复杂，Agent 记忆系统的架构可以分为 **六个层次**，每层在表达能力、延迟、存储成本和工程复杂度之间做不同取舍。
 

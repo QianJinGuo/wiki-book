@@ -2,61 +2,13 @@
 
 ## Ch12.049 Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
 
-> 📊 Level ⭐⭐ | 8.7KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md`
+> 📊 Level ⭐⭐ | 8.8KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md`
 
 # Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Canvas LMS 攻击者 ShinyHunters"))
-    Canvas LMS 攻击背景
-    域名暂停机制分析
-    暗网基础设施的优势
-    网络犯罪组织的典型响应模式
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 臭名昭著的黑客组织 ShinyHunters 在对 Instructure 的 Canvas LMS 平台发起大规模入侵和篡改攻击后，其官方明网（clearnet）域名 `shinyhunte.rs` 被域名注册局暂停。事件发生在 2026 年 5 月 11 日（周一），域名为塞尔维亚的 `.rs` ccTLD，由塞尔维亚国家互联网域名注册局（RNIDS）管理。ShinyHunters 在暗网（.onion）站点发布公告，警告未来该明网域名可能被未知行为者重新注册用于恶意活动，并宣布将"仅通过 onion 基础设施运营"。
 
@@ -127,7 +79,7 @@ ShinyHunters 在公告中特别警告：暂停的域名未来可能被未知行�
 - [Canvas 漏洞中断全国学校](ch12/033-canvas-breach-disrupts-schools-colleges-nationwide.html) — Canvas LMS 攻击的更早报道
 - [ShinyHunters 7-Eleven 数据泄露](https://github.com/QianJinGuo/wiki/blob/main/entities/shinyhunters-7-eleven-data-breach.md) — ShinyHunters 的另一起高调攻击
 - [ICO 对 South Staffordshire 处以 96.3 万英镑罚款](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5237875.md) — 同期另一重大勒索软件事件，体现勒索软件生态多样性
-- [OpenClaw 完全指南](../ch11/235-openclaw.html) — Agent 工具在攻防两面的双刃剑属性
+- [OpenClaw 完全指南](../ch11/237-openclaw.html) — Agent 工具在攻防两面的双刃剑属性
 - [Agent 记忆系统的工程实践](../ch03/035-agent.html) — 对 Agent 上下文与状态管理的进一步讨论
 
 ---

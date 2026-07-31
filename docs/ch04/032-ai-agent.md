@@ -213,20 +213,6 @@ _
 > ** 工程建议：  ** 自举的前提是 constitution.md（架构约束文件）。不需要写得多长，但至少要覆盖三件事：目录结构约定、模块边界、命名规则。有了它，AI 才能在"框架内工作"而不是"自由发挥"。 
 _ 你见过最惊艳的 AI 自举案例是什么？  _
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("十年老技术开发的 AI Agent 探索之路"))
-    从方法论演进看 AI Agent 开发的认知阶段
-    协议层演进的产业信号
-    Goal-Driven 的本质
-    这篇文章的局限与补充
-    针对 Agent 开发者的具体建议
-    评估你的 Agent 系统现在在哪一步
-    一个日常习惯的养成```
-
 ## 深度分析
 ### 从方法论演进看 AI Agent 开发的认知阶段
 这篇文章实际上勾勒了一条清晰的 AI Agent 开发认知进化路径，呈现四个递进层次：
@@ -257,39 +243,8 @@ Goal-Driven 的五个前提（目标清晰、边界清晰、状态可见、过�
 3. **脚手架 > 模型的结论是情境依赖的**：当模型能力成为瓶颈时（例如需要更复杂的推理），模型升级的优先级会上升。这不是一个绝对原则，而是资源分配的经验法则。
 
 ## Related entities
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路
 
 ## 实践启示
 ### 针对 Agent 开发者的具体建议

@@ -2,59 +2,7 @@
 
 ## Ch05.009 阿里工程师 Harness 工程化实践 (双案例合并)
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 > 📊 Level ⭐⭐ | 26.3KB | `entities/harness-engineering-alibaba-java-case-study.md`
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里工程师 Harness 工程化实践 双案例合并"))
-    文章概要
-    三次范式跃迁
-    Harness Engineering 四根支柱
-      支柱一 上下文架构 Context Architecture
-      支柱二 Agent 专业化 Agent Specialization
-      支柱三 持久化记忆 Persistent Memory
-    Anthropic 四类失败模式
-    企业级项目三大挑战
-      认知负担 Cognitive Load
-      质量控制的系统性缺失 Systematic Quality Gap
-      熵的累积 Entropy Accumulation
-    开发者角色范式转移
-    实战结果
-    为什么 Context Architecture 是最难攻克的壁垒
-```
 
 ## 文章概要
 阿里工程师在企业级 Java 应用（10万+行代码）上从零构建 Harness 体系，AI 代码率从 **24.86% 提升至 90.54%**。文章系统梳理三次范式跃迁（Prompt→Context→Harness）、四根支柱、四类失败模式，以及真实项目的完整实践路径。
@@ -328,12 +276,12 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 - [Agent Harness Engineering Survey 2026](ch05/120-harness-engineering.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](ch05/120-harness-engineering.html)
 - [Harness Engineering Systematic Framework](ch05/120-harness-engineering.html)
-- [Agentscope Java Harness Framework](../ch03/053-agentscope-java-harness-framework-2-0-agent-harness.html)
+- [Agentscope Java Harness Framework](../ch03/052-agentscope-java-harness-framework-2-0-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-alibaba-java-case-study.md)
 → [原文存档 (杜学友 6 层架构)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-alibaba-6-layer-architecture-duxueyou.md)
 - [协作涌现：agent room 的多智能体决策框架](../ch04/707-agent-room.html)
-- [programbench swe agent benchmark](../ch04/559-programbench-swe-agent-benchmark.html)
+- [programbench swe agent benchmark](../ch04/564-programbench-swe-agent-benchmark.html)
 - [harness 工程可视化：vibe coding 中重建工程可控性](ch05/120-harness-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

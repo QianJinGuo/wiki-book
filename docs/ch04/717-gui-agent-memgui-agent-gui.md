@@ -6,60 +6,11 @@
 
 # 让GUI Agent不再「边做边忘」：快手、浙大提出MemGUI-Agent，攻克长程GUI任务
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让GUI Agent不再「边做边忘」 快手"))
-    从被动追加到主动管理的范式转变
-    ConAct 不是 Prompt Trick需要训练才能习得
-    与 Context Management 领域的关联
-    B 模型泛化到分布外场景的意义
-```
-
 ## 摘要
 
 MemGUI-Agent 是由浙江大学 APRIL 实验室和快手主站技术部联合提出的面向长程手机 GUI 任务的端到端 Agent。其核心创新是 **ConAct（Context-as-Action）** 范式——将上下文管理提升为和 UI 点击、输入、滑动同级的"第一类动作"，让 Agent 在执行操作的同时主动决定如何管理自己的工作记忆。配合全链路开源的数据集 **MemGUI-3K**（平均步数 28.8 步，为业界最长），MemGUI-8B-SFT 刷新了 MemGUI-Bench 和 MobileWorld 两个长程评测基准上 open-data 模型的最好成绩。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 
 1. **长程 GUI 任务的两个核心瓶颈**：传统 ReAct 风格 Agent 在长程任务中面临"prompt explosion"（历史线性膨胀）和"information loss"（关键事实被噪声淹没）。几十步后，Agent 可能只记得"查过参数"但忘了具体数值。
 

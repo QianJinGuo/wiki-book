@@ -8,54 +8,11 @@
 
 > 作者 CCC 在对比 Spec Kit、OpenSpec、Superpowers 三个框架后，选择各自取其精华，自建了一套更适合中大型团队棕地项目的三层 Harness 方案。核心思路：拿 OpenSpec 做底座骨架，补上 Superpowers 式的铁律纪律思维，再套一层自己的 Harness 约束层，形成「哈尼层 → Skill 层 → Spec 层」的分层架构。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Spec Kit OpenSpec Superpowers 融合"))
-    框架选择的底层逻辑 棕地项目 vs 绿地的结构性差异
-    铁律纪律的深层价值 反 LLM 乐观偏好的封闭设计
-    规范累积机制的进化逻辑
-    与 Matt Pocock Skills 的对比视角
-```
-
 ## 摘要
 
 本文记录了一个中大型前端团队在棕地项目中落地 AI Coding 工作流程的真实实践。作者在评估了 Spec Kit（宪法思维 + 阶段门控）、Superpowers（铁律纪律 + 14 Skill 全链）、OpenSpec（Delta Spec + 单目录收拢）三个主流框架后，发现没有一个能直接满足中大型棕地项目的需求——Spec Kit 太重、Superpowers 方向偏且成本高、OpenSpec 缺乏纪律约束。最终作者取三者的核心优势，自建了一套三层架构，经过四个月的实际验证，组件误用率下降 80%+。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 - **三层架构**：Harness 层（CLAUDE.md 可验证约束 + 决策点 + 组件分层对照表）→ Skill 层（8 个 Skill，带硬门控的执行步骤，借鉴铁律纪律）→ Spec 层（Delta Spec，只写变化的规范）
 - **组件分层对照表**：L0 原始层（禁止直接使用）→ L1 封装层（优先使用）→ L2 业务层（搜到即用）→ L3 页面层（仅对应页面内）。自动维护：review 发现违规 → 判断规范缺失 → 自动补入 CLAUDE.md
@@ -107,7 +64,7 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 - Grilling 模式适合在既有约束下优化、需要精确执行的场景
 - CCC 的三层架构本质上是 grilling 模式的工作流工程化——将约束封装在 Harness 层和 Skill 层，让 AI 在 Spec 层的变化描述中自由发挥，但受上下层结构的约束
 
-这与 [Agent vs Workflow 控制权连续谱](../ch04/678-agent-vs-workflow.html)中描述的"受控自主"模式一致：不是完全信任 AI 的自主性，也不是完全剥夺 AI 的灵活性，而是在多层约束中给 AI 留出可控的自由度。
+这与 [Agent vs Workflow 控制权连续谱](../ch04/681-agent-vs-workflow.html)中描述的"受控自主"模式一致：不是完全信任 AI 的自主性，也不是完全剥夺 AI 的灵活性，而是在多层约束中给 AI 留出可控的自由度。
 
 ## 实践启示
 
@@ -123,9 +80,9 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 
 ## 相关实体
 
-- [Matt Pocock Skills vs Superpowers](../ch03/072-skills.html) — 同一路线对比的另一视角
-- [Superpowers 三器合一](ch05/111-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
-- [Agent vs Workflow 控制权连续谱](../ch04/678-agent-vs-workflow.html) — 架构选择的底层框架
+- [Matt Pocock Skills vs Superpowers](../ch03/071-skills.html) — 同一路线对比的另一视角
+- [Superpowers 三器合一](ch05/112-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
+- [Agent vs Workflow 控制权连续谱](../ch04/681-agent-vs-workflow.html) — 架构选择的底层框架
 - [Agent Harness 生产化](ch05/058-agent-harness.html) — 生产环境中的 Agent 约束与可观测性设计
 - [Spec-Driven Development Harness](ch05/009-harness.html) — 与 Spec 层配合的 Harness 方法论
 - [AI-Friendly 后端标准化路径](ch05/022-ai-friendly.html) — 另一视角的工程规范建设实践

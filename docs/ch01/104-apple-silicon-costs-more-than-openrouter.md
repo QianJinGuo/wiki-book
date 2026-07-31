@@ -8,56 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/offline-llm-energy-use-html.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Apple Silicon costs more than"))
-    电力成本 几乎可以忽略
-    硬件折旧 真正的成本大头
-    Token 经济学 速度决定一切
-    速度差距的隐性成本
-    成本结构解构
-    Memory-bound 的本质
-    本地推理的真正价值主张
-    消费级设备的能力跃迁
-```
-
 ## 摘要
 
 本文通过详细的成本核算，揭示了一个反直觉的事实：在 Apple Silicon（M5 MacBook Pro）上运行本地 LLM 推理的单位 token 成本，实际上是通过 OpenRouter 调用云端同等模型的约 3 倍。硬件折旧而非电力成本是主导因素，推理速度的差距进一步放大了这一劣势。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 ### 1. 电力成本：几乎可以忽略
 
@@ -127,7 +82,7 @@ OpenRouter 上的 Gemma 4 31B 可达 60-70 tokens/秒，而 M5 Max 本地仅 10-
 
 ## 相关实体
 
-- [Inference cost at scale with napkin math](ch01/913-20.html)
+- [Inference cost at scale with napkin math](ch01/926-20.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
 - [Running An Ai Native Engineering Org](ch01/055-running-an-ai-native-engineering-org.html)
 

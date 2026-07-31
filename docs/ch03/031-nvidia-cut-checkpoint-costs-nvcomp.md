@@ -7,7 +7,6 @@
 # Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP | NVIDIA Technical Blog
 Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Developer Tools &amp; Techniques English Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP Apr 09, 2026 By Wenqi Glantz , Eugene Zhidkov and Makan Taghavi Like Discuss (0) L T F R E AI-Generated Summary Like Dislike Synchronous checkpointing during large-scale LLM training leads to significant GPU idle costs, often exceeding $200,000 per month for 128 NVIDIA Blackwell GPUs on 405B models, with optimizer state (FP32) being the dominant component of checkpoint size. Integrating NVIDIA nvCOMP enables GPU-accelerated, lossless compression (ZSTD and gANS), reducing checkpoint sizes by 21-29% for dense and MoE models, reclaiming GPU idle time, and directly translating to monthly savings exceeding $56,000 for large-scale runs. Compression throughput becomes crucial as storage speed increases; ZSTD is preferred for shared network filesystems (5-10 GB/s), while ANS offers near-equivalent ratios at 10x throughput, making it optimal for high-speed GPUDirect Storage (15+ GB/s) and enabling further cost reductions at scale. AI-generated content may summarize information incompletely. Verify important information. Learn more Training LLMs requires periodic checkpoints. These full snapshots of model weights, optimizer states, and gradients are saved to storage so training can resume after interruptions. At scale, these checkpoints become massive (782 GB for a 70B model) and frequent (every 15-30 minutes), generating one of the largest line items in a training budget. Most AI teams chase GPU utilization, training throughput, and model quality. Almost none look at what checkpointing is costing them.&nbsp;&nbsp; This is an expensive oversight. The synchronous checkpoint overhead of a 405B model on 128 NVIDIA Blackwell GPUs alone can cost $200,000 a month. By introducing a loss... [truncated]
 
-
 ## 深度分析
 
 **1. 检查点成本在大规模训练中常被忽视，但其影响远超预期**
@@ -28,35 +27,6 @@ ZSTD在共享网络文件系统（5-10 GB/s）场景下表现优异，吞吐适�
 
 ## 实践启示
 
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
-
 **1. 将检查点成本纳入训练预算的常规审计项**
 
 在启动大规模训练项目前，应使用nvCOMP或类似工具估算检查点存储与I/O成本，并将其作为项目预算的明确line item。建议每月跟踪实际检查点开销，识别优化机会。
@@ -75,10 +45,10 @@ Optimizer state（FP32）通常是检查点体积的最大组成部分。在考�
 文章标题强调通过"约30行Python代码"即可完成集成，这大幅降低了工程门槛。建议将nvCOMP checkpoint compression作为标准训练流程的一部分，而非事后的优化项。
 
 ## 相关实体
-- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/617-python.html)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](../ch04/623-python.html)
 - [Nvidia Edge First Llms Av Robotics](../ch01/225-nvidia-edge-first-llms-av-robotics.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/411-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Nvidia Gemma 4 Edge Ai](../ch01/756-nvidia-gemma-4-edge-ai.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/414-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Gemma 4 Edge Ai](../ch01/769-nvidia-gemma-4-edge-ai.html)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 

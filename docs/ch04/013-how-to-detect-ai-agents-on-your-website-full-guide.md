@@ -8,62 +8,11 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/detect-ai-agents-website.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("How to Detect AI Agents on Your"))
-    四层检测信号体系
-    六类 AI Agent 流量分类
-    三种检测方法对比
-    从bot or not到意图分类的范式转变
-    隐身浏览器与本地化部署的挑战
-    CAPTCHA 已失效
-    浏览器仍是关键检测窗口
-```
-
 ## 摘要
 
 随着 AI Agent 大规模渗透 Web 生态，网站面临前所未有的自动化流量挑战。传统 bot 检测手段已无法有效识别基于浏览器的智能 Agent，因为它们的行为模式越来越接近真实用户。本文系统梳理了四层检测体系（身份、网络、浏览器、行为），并指出从"是否为 bot"到"意图分类"的范式转变。cside 内部测试显示，81% 的 AI Agent 可绕过传统 bot 检测平台。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 ### 四层检测信号体系
 
@@ -125,11 +74,11 @@ Google 发布了网站 agent-ready 指南，明确包含视觉 UI 优化（Agent
 
 ## 相关实体
 
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](ch04/561-amazon-bedrock-agentcore.html)
-- [Your AI Agents Are Already Inside the Perimeter](ch04/298-ai-agent.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](ch04/566-amazon-bedrock-agentcore.html)
+- [Your AI Agents Are Already Inside the Perimeter](ch04/030-ai-agent.html)
 - [Chrome Enterprise Policies on Amazon Bedrock AgentCore](../ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [AI-powered honeypots](../ch01/083-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
-- [Securing AI agents: AWS and Cisco AI Defense](ch04/298-ai-agent.html)
+- [AI-powered honeypots](../ch01/084-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
+- [Securing AI agents: AWS and Cisco AI Defense](ch04/030-ai-agent.html)
 
 ---
 

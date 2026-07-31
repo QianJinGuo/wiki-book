@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AgentEval YAML驱动的Agent评测框架"))
-    关键指标 passk vs passk
-    评分器体系
-    CICD 集成
-    缓存机制
-    AB 对比
-    扩展接口
-    实现细节
-    passk 与 passk 的双指标哲学
-```
-
 ## 核心问题
 传统测试金字塔（单元测试 → 集成测试 → E2E 测试）覆盖不了 Agent 的核心质量问题：
 1. **非确定性**：同一 prompt 跑两次结果可能不同，无法用断言判定
@@ -28,37 +12,6 @@ mindmap
 > "Teams without evals get bogged down in reactive loops — fixing one failure, creating another." — Anthropic, *Demystifying Evals for AI Agents*
 
 ## 关键指标：pass@k vs pass^k
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 | 指标 | 含义 | 衡量什么 |
 |------|------|---------|
 | **pass@k** | k 次里至少有一次通过的概率 | 能力上限 |
@@ -164,13 +117,13 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - 分布式执行
 
 ## 相关实体
-- [Anthropic Generator-Evaluator Harness](../ch01/989-anthropic.html) — 另一种评测闭环思路
-- [Superpowers](../ch01/490-claude-code-skills-superpowers.html) — Agent 工作流规范
-- [Skill Writing Patterns](ch04/271-skill.html) — Skill 质量评估相关
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/273-lbs-intentbench.html)
-- [AI Skill 测评指标体系](../ch01/452-ai-skill.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/271-skill.html)
-- [Skills赏析：使用skills-refiner提升skill质量](../ch03/072-skills.html)
+- [Anthropic Generator-Evaluator Harness](../ch01/1004-anthropic.html) — 另一种评测闭环思路
+- [Superpowers](../ch01/492-claude-code-skills-superpowers.html) — Agent 工作流规范
+- [Skill Writing Patterns](ch04/273-skill.html) — Skill 质量评估相关
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/276-lbs-intentbench.html)
+- [AI Skill 测评指标体系](../ch01/453-ai-skill.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/273-skill.html)
+- [Skills赏析：使用skills-refiner提升skill质量](../ch03/071-skills.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

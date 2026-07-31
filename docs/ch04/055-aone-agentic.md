@@ -4,32 +4,6 @@
 
 > 📊 Level ⭐⭐ | 24.0KB | `entities/alibaba-aone-agentic-rd-mode-xiangbangyu.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("阿里巴巴 Aone Agentic 研发模式变革"))
-    一 在 Agent 时代 传统的协作和分工是效率的阻碍
-      传统协作模式的结构性低效
-      研发阶段带来的信息断层
-      协作带来的沟通成本
-    二 在Agent时代 传统的研发资源组织形式也是效率的阻碍
-      代码和代码是分离的
-      代码和文档是分离的
-      文档的主要维护者还是人
-    三 Agent 在交付和稳定性链路中的缺席
-    四 让 Agent 更好工作的关键要素
-      All In Code 的信息管理方式
-      隔绝外部依赖 版本化一切
-      自学习和自我迭代能力
-    五 Aone 在面向 Agent 的研发模式升级上的探索
-      研发模式的变化
-      ALL In Code 的版本管理
-      Agent Teams
-    六 结语
-```
-
 ## 一、在 Agent 时代，传统的"协作"和"分工"是效率的阻碍
 2025 年，AI 编程助手已进化为"AI 软件工程师"，但"Vibe Coding"生产力悖论正在浮现：Agent 生成代码的速度呈指数级增长，组织的整体研发效率却提升有限。问题不在于 AI 的能力，而在于我们仍用工业时代的协作模式来组织 AI 时代的研发。
 
@@ -59,37 +33,6 @@ mindmap
 在采用AI编程助手的团队中，开发者报告的主要痛点不再是AI生成代码的速度和质量，而是"等待人类反馈"和"协调多人协作"，这说明协作本身已经成为了新的瓶颈。
 
 ## 二、在Agent时代，传统的"研发资源组织形式"也是效率的阻碍
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 ### 2.1 代码和代码是分离的
 当一个 Agent 需要实现一个端到端的功能时，它面临的第一个挑战不是"如何写代码"，而是"代码在哪里"。客户端代码在一个仓库，前端代码在另一个仓库，后端服务分散在多个微服务仓库，SDK 又有独立的版本管理。每个仓库都有自己的分支策略、CI 流程、代码规范。Agent 必须在这些仓库之间来回切换，每次切换都意味着上下文的丢失和重建。更关键的是，这些仓库之间的依赖关系往往没有显式声明，Agent 无法通过程序化的方式理解"修改这个 API 会影响哪些前端页面"。
 
@@ -216,9 +159,9 @@ ChangeSet 是一个存在于git版本库中的，把每次变更的过程都记�
 
 ## 相关实体
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Ai 编程的下一场架构迁移从代码检索到上下文操作](../ch05/094-ai.html)
-- [Ai Era Git Version Control Agentic Coding Practices](ch04/237-agentic.html)
-- [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/047-coding-agent.html)
+- [Ai 编程的下一场架构迁移从代码检索到上下文操作](../ch05/095-ai.html)
+- [Ai Era Git Version Control Agentic Coding Practices](ch04/648-agentic.html)
+- [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/046-coding-agent.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-aone-agentic-rd-mode-xiangbangyu.md)

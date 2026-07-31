@@ -9,19 +9,6 @@
 > **来源**：机器之心 | [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-时代的编程语言这次是来自中国的底层创新.md)
 > **语言**：由中国团队开发的编程语言，面向 Agent 协作、快速反馈和工程闭环设计
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("MoonBit 面向 Agent 协作的编程语言 语言即工具链"))
-    核心架构 语言即工具链
-      形式化验证
-    AI 原生部署 Wasm 沙箱
-    AI 友好性 低资源语言优势
-    启示
-```
-
 ## 核心架构：语言即工具链
 
 MoonBit 从设计之初同步构建了**编译器、构建系统、包管理器、测试框架、文档工具和 AI 编程助手**，没有在遗留工具链上打补丁的历史负担。
@@ -35,37 +22,6 @@ MoonBit 从设计之初同步构建了**编译器、构建系统、包管理器�
 AI 生成代码的"可检查性"通过三层架构提升：**模型写出代码 → 编译器检查类型 → 验证器检查性质**。以二分查找为例，MoonBit 可以完整验证（包括整数溢出预防），而 Java 标准库中同样的 bug 在生产环境运行了近十年才被发现。
 
 ## AI 原生部署：Wasm 沙箱
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 MoonBit 编译成 **Wasm 字节码**，通过 Mooncakes 包管理分发，实现可移植、可嵌入、可隔离的部署能力。同一份逻辑可进入云函数、边缘节点、浏览器、插件系统、Agent runtime。
 

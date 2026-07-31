@@ -8,64 +8,7 @@
 > AWS China Blog 2026-06-12 实验笔记：用 CloudFormation 搭建 VPC + 模拟 IDC 环境，开启 BGP 路由传播 + 手工配置高优先级路由条目，验证 IDC ↔ 云之间流量经 AWS Network Firewall 审查的完整方案。
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-network-firewall-服务审查-idc-和云上-vpc-间的流量-vgw-架构的设计和实验.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Network Firewall 审查 IDC-VPC"))
-    场景与挑战
-    关键技术点
-      BGP 路由传播
-      手工高优先级路由
-      NFW 路由配置
-    VGW vs TGW 场景选择
-    VGW NFW 架构 静态路由劫持流量的实现原理
-    BGP 路由传播是 AWS 跨网络互联的统一基础
-    主动拦截 vs 被动监听 NFW 的架构定位
-    双 AZ NFW 高可用 生产部署的必要条件
-    关键引用清单
-```
-
 ## 场景与挑战
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 **场景**：企业使用 DX（Direct Connect）专线连接 IDC 与 AWS，IDC 内业务系统需访问云上 VPC 中的资源。
 
@@ -220,8 +163,8 @@ AWS Network Firewall 是一个**内联（inline）状态检测设备**，而非�
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-network-firewall-服务审查-idc-和云上-vpc-间的流量-vgw-架构的设计和实验.md)
 - [AWS NFW 规则冲突 AI 检测](ch11/126-aws-network-firewall-ai.html) — 姐妹篇（AI 集成）
-- [LiteLLM ECS/EKS 部署](../ch01/1274-llm.html) — 同样部署在 VPC 中，受 NFW 保护
-- [QuickSight Dataset Q&A](ch11/181-aws-quicksight-dataset-qa-natural-language.html)
+- [LiteLLM ECS/EKS 部署](../ch01/637-llm.html) — 同样部署在 VPC 中，受 NFW 保护
+- [QuickSight Dataset Q&A](ch11/183-aws-quicksight-dataset-qa-natural-language.html)
 
 ## 相关实体
 

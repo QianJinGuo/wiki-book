@@ -4,21 +4,6 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/obsidian-llm-wiki-local-kytmanov.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("obsidian-llm-wiki-local"))
-    核心问题 笔记孤岛
-    obsidian-llm-wiki-local 工作流
-    实测效果
-    可纠错反馈循环
-    局限性与适用边界
-    与 Karpathy LLM Wiki 的关系
-    技术栈
-```
-
 ## 核心问题：笔记孤岛
 
 大多数人的 Obsidian 图谱视图是"孤岛"——剪藏容易（点一下），整理难（大脑满负荷）。输入和整理成本差 100 倍，系统天然失衡。
@@ -28,44 +13,6 @@ mindmap
 LLM Wiki 的思路是"管理员"：AI 主动读笔记，提炼概念，写成结构化 wiki 条目，建立双向链接。你只管往里扔，它负责整理。
 
 ## obsidian-llm-wiki-local 工作流
-
-```mermaid
-graph TB
-    subgraph "输入处理"
-        TOK[Tokenizer<br/>BPE分词] --> EMB[Embedding<br/>语义嵌入]
-        EMB --> POS[位置编码<br/>RoPE/ALiBi]
-    end
-    subgraph "Transformer Block ×N"
-        ATT[Multi-Head Attention<br/>自注意力]
-        ADD1[残差连接+LayerNorm]
-        FFN[FFN / MoE<br/>前馈/混合专家]
-        ADD2[残差连接+LayerNorm]
-        POS --> ATT --> ADD1 --> FFN --> ADD2
-    end
-    subgraph "输出"
-        PROJ[输出投影]
-        SOFT[Softmax / Sampling]
-        NEXT[Next-Token]
-    end
-    ADD2 --> PROJ --> SOFT --> NEXT
-    subgraph "优化技术"
-        KV[KV Cache<br/>PagedAttention]
-        QUANT[量化 INT4/8]
-        SPEC[投机解码]
-    end
-    ATT --> KV
-    FFN --> QUANT
-    SOFT --> SPEC
-    classDef input fill:#fef3c7,stroke:#d97706
-    classDef block fill:#dbeafe,stroke:#2563eb
-    classDef output fill:#d1fae5,stroke:#059669
-    classDef opt fill:#ede9fe,stroke:#7c3aed
-    class TOK,EMB,POS input
-    class ATT,ADD1,FFN,ADD2 block
-    class PROJ,SOFT,NEXT output
-    class KV,QUANT,SPEC opt
-```
-
 
 **三步流水线**（全程本地 Ollama）：
 
@@ -108,7 +55,7 @@ AI 第一版生成的概念页可能太泛（"这是一篇关于效率的文章"
 
 本文实践了 Karpathy LLM Wiki 的核心理念，具体实现为 Alexander Kytmanov 的 obsidian-llm-wiki-local 开源项目（60 次提交，活跃维护），100% 本地运行、不依赖任何云端 API。
 
-→ [Karpathy LLM Wiki 概念](../ch01/1274-llm.html)
+→ [Karpathy LLM Wiki 概念](../ch01/637-llm.html)
 → [RAG vs LLM Wiki 对比](../ch01/039-rag-vs-llm-wiki.html)
 
 ## 技术栈

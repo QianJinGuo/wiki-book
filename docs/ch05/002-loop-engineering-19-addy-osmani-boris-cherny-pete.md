@@ -2,7 +2,7 @@
 
 ## Ch05.002 Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）
 
-> 📊 Level ⭐⭐ | 134.4KB | `entities/loop-engineering-addy-osmani-challengehub.md`
+> 📊 Level ⭐⭐ | 138.6KB | `entities/loop-engineering-addy-osmani-challengehub.md`
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-addy-osmani-challengehub.md)
 
@@ -10,58 +10,11 @@
 
 Addy Osmani 提出 Loop Engineering——比 Agent Harness Engineering 再高一层的抽象：不再是人给智能体写提示词，而是**设计一套系统替你写提示词**。Peter Steinberger 和 Claude Code 负责人 Boris Cherny 均已实践此模式。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Loop"))
-    核心定义
-    五模块 记忆 Codex Claude Code 通用
-    goal 的验证者分离设计
-    Loop vs Harness 层级关系而非替代
-    技能的复利效应
-    三个循环搞不定的问题
-    核心创新 关键数据
-    对照表 两篇来源维度对比
-```
-
 ## 核心定义
 
 循环 = 递归式目标：你定义目的，AI 不断迭代直到完成。与 Harness 的关系：Harness 是给单个智能体打造运行环境；Loop 是定时跑的框架，会自己派生子智能体、自己喂自己。**Loop > Harness > Prompt**。
 
 ## 五模块 + 记忆（Codex / Claude Code 通用）
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 | 零件 | 作用 | Codex | Claude Code |
 |------|------|-------|-------------|
@@ -103,7 +56,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 ## 相关实体
 
 - [Agent Harness Architecture](ch05/058-agent-harness.html)
-- [Claude Code 深度分析](../ch03/078-claude-code.html)
+- [Claude Code 深度分析](../ch03/077-claude-code.html)
 - [Harness Engineering](ch05/120-harness-engineering.html)
 - [Agent Self-Improvement](../ch03/035-agent.html)
 
@@ -399,9 +352,9 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 
 ### 与其他实体的关系
 
-- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch05/111-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
+- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch05/112-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
 - **Evaluator 部件**与 [Harness 架构](ch05/058-agent-harness.html)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
-- **State 部件**与 [Hermes Loop 架构](../ch04/236-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
+- **State 部件**与 [Hermes Loop 架构](../ch04/239-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
 - **reviewer agent 不允许直接修复**与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)的"生成器-验证器分离"模式一致
 - **18 字段设计表**与 [agent-harness 12 components 7 decisions](ch05/058-agent-harness.html)的"Harness 完整部件清单"互补——Harness 是"环境内规则"，Loop 是"环境外循环节奏"
 
@@ -872,7 +825,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 > Author: Shubham Saboo (Google PM), 译/改编: AI技术立文
 > Date: 2026-06-24
 
-本来源是 Loop Engineering 主题的**第 13 来源** — 唯一从**产品经理视角**系统阐述 Loop Engineering 的文章。前 12 来源均面向工程师/架构师，本文将循环工程的方法论移植到 PM 工作流（PRD 评审、客户研究、产品信号、发布检查清单）。v×c=42（临界），但 PM 视角在前 12 来源中零覆盖，且同作者 Shubham Saboo 已有 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/396-pm-2026.html)` 实体，形成跨实体交叉。
+本来源是 Loop Engineering 主题的**第 13 来源** — 唯一从**产品经理视角**系统阐述 Loop Engineering 的文章。前 12 来源均面向工程师/架构师，本文将循环工程的方法论移植到 PM 工作流（PRD 评审、客户研究、产品信号、发布检查清单）。v×c=42（临界），但 PM 视角在前 12 来源中零覆盖，且同作者 Shubham Saboo 已有 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/397-pm-2026.html)` 实体，形成跨实体交叉。
 
 ### 核心贡献
 
@@ -913,7 +866,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **用已知案例校准评测**：3 好+3 差 PRD 测评审规则，不需要大规模基准
 - **PM 工作资产需要版本管理**：GitHub commit = 经验保存，diff = 变更追溯
 - **循环先赢得信任再提高自主度**：从帮助决策的循环开始，不要从能改变战略的循环开始
-- **跨实体关联**：同作者 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/396-pm-2026.html)` 覆盖 PM 技能进化，本文覆盖 PM 循环工程，两者互补
+- **跨实体关联**：同作者 `[Google Pm 2026 Five Developer Skills Shubham](../ch01/397-pm-2026.html)` 覆盖 PM 技能进化，本文覆盖 PM 循环工程，两者互补
 
 ---
 
@@ -1092,6 +1045,46 @@ v×c=72, 2026-07-03, 架构师(若飞)
 - ✅ **Loop 适用范围边界**：可验证短寿命任务优先，核心链路/权限/计费系统由人把关——与第 18 来源的 SRE 状态机视角互补
 
 → [第19原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wu-enda-three-layer-loop-agent-faster-slow-feedback-ruofei.md)
+
+## 第 20 来源：The Anthropic Playbook — 花叔橙皮书正文（2026-06, v260615 conference 重排版）
+
+PDF《Loop Engineering: The Anthropic Playbook》是花叔（HuaShu）开源橙皮书《Loop Engineering: Stop Asking Me What It Is》v260615 的 conference-style 重排版。系统化定义四层栈（Prompt→Context→Harness→Loop）、**五 moves**、**六 parts**，并提出既有来源未覆盖的四个增量维度：
+
+### 五 moves：单轮的形式化分解
+
+一轮 = discovery（找活，触发 skill 而非指令墙，设定质量天花板）→ handoff（每 finding 一个隔离 worktree）→ verification（换 agent 说"不"）→ persistence（结果落对话之外）→ scheduling（让一轮变成 loop）。
+
+### 五种失败模式（每个 = 一个 move 被跳过）
+
+| 失败 | 跳过 | 症状 |
+|------|------|------|
+| Nodding Loop | verification | 数百轮从未说过"不" |
+| Amnesiac Loop | persistence | 每天从同一起点开始 |
+| Manual Loop | scheduling | 最后运行日 = 演示日 |
+| Blind Loop | discovery | 人每天还在亲手递活 |
+| Tangled Loop | handoff | 并行 agent 改同目录，只在并行下暴露 |
+
+### Stripe's Minions：每周 1300+ PR
+
+企业级案例（Stripe 工程师 Steve Kaliski，How I AI 播客）：触发极轻（Slack @bot/emoji），可靠性来自**确定性 orchestrator 先组装上下文**（扫描链接/拉 Jira/Sourcegraph+MCP 定位代码）——一切确定性逻辑能解决的绝不进概率模型。Minions 是开源工具 Goose 的 fork，核心主张：**可靠性来自约束的质量而非模型尺寸**。确定性 gate（linter 无法跳过）与 LLM 步骤交错；沙箱 EC2 Devbox "cattle not pets"，1000+ agent 并行。1300 个 PR 仍由人审——"人没离开，只是换了桌子，从写变成审"。
+
+### 四种隐性成本（互相强化）
+
+**Verification debt**（未验证输出堆积，"能跑"与"正确"之间的缝隙）→ **Comprehension rot**（代码库增长而脑中地图停滞）→ **Cognitive surrender**（人停止持有意见）→ **Token blowout**（bug 空转整夜产生陌生账单）。四者互相喂养：未验证输出侵蚀理解→理解流失招致投降→投降让 loop 跑更久花更多→更多未验证输出。同一个失败戴四个面孔。
+
+### 判断经济学（Judgment Economics）
+
+loop 让 generation 几乎免费（代码/计划/PR 充裕），判断成为稀缺资源——"看起来合理"与"真的对"之间的缝隙正是工程所在。loop 是忠实放大器：带来理解就放大理解，带来懒惰就放大懒惰；坏决策被机器忠实批量执行一百次，且**没有慢档**（不能指望过程慢到中途发现错误）。
+
+### 三条操作纪律 + 首 loop 清单
+
+1. **永远读样本**（每天读代表性样本并强迫解释，无法解释 = 心智地图落后）
+2. **上线前设上限**（per-run/daily/max retries 是断路器，不是省钱工具——"没有上限的 loop 是把支出权委托给了自己的 bug"）
+3. **留一扇开着的门**（至少一个为人暂停的 checkpoint，保持"能够介入"的位置）
+
+首 loop 六步：`/loop` → morning-triage skill（discovery 进 skill 而非 schedule）→ state 文件 → `/goal` evaluator（v2.1.139+，新模型判定）→ `--worktree` 并行 → PR 永不自动合并 + 不确定进 inbox。安全增长顺序：**先增加 discovery，再增加 parallelism**——先证明 evaluator 能抓住真实错误，再信任它 gate 多个 agent；"loop 通过先展示它能停住一个坏 agent，来赢得跑更多 agent 的权利"。
+
+→ [第20来源原文存档（PDF）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-anthropic-playbook-orange-book-v260615-2026.md)
 
 ---
 

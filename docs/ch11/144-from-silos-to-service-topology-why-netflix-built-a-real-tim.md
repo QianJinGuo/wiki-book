@@ -8,60 +8,7 @@
 
 > **Background**: Netflix 构建了 Service Topology——一个实时更新的服务依赖拓扑图，整合三种互补数据源（eBPF 网络流、IPC 指标、分布式追踪），为数千微服务提供统一的依赖可视化和故障排查能力。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("From Silos to Service Topology"))
-    问题定义 三个工程师必问的问题
-    三源互补架构 No Single Source Tells the
-    从流日志到图 数据管道架构
-    实时性的工程权衡
-    时间旅行能力
-    规模挑战与设计教训
-    未来方向
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 Netflix 面对数千微服务组成的分布式基础设施，传统可观测性工具（metrics、logs、traces）各自只展示碎片信息，工程师在凌晨 3 点故障排查时需要在多个工具间手动拼接信息。Service Topology 通过三层互补数据源（eBPF 网络流提供全覆盖、IPC 指标提供应用上下文、分布式追踪提供实际请求路径）构建实时更新的服务依赖图，支持亚秒级多跳查询、时间旅行和 blast radius 分析。
 

@@ -4,72 +4,10 @@
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/claude-code-integration-other-tools.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Claude Code 集成其他工具指南"))
-    MCP 协议集成
-      MCP 是 Claude Code 的扩展基石
-      MCP 核心机制
-      MCP 工具调用流程
-    IM 平台操控 IMClaw
-      核心概念
-      典型应用场景
-      技术架构
-    Kiro AI IDE 协同
-      Kiro 与 Claude Code 的关系
-      典型集成场景
-    企业级部署集成
-      与 AWS Bedrock AgentCore 的集成
-      与 OpenClaw 的对比
-    Skills 系统集成
-      Claude Code Skills vs MCP
-      Skill 使用场景
-      Skill 安全风险
-    工具选择矩阵
-    MCP 与 Skills 的哲学差异
-    IM 操控 Agent 的适用边界
-```
-
 ## 概述
 本文系统性整理 Claude Code 与 **Obsidian 以外**的各种工具集成方案，涵盖 MCP 协议扩展、IM 平台操控、IDE 协同、企业级部署集成等多个维度。核心价值在于帮助开发者了解 Claude Code 的生态广度，根据自身场景选择最适合的集成路径。
 
 ## MCP 协议集成
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 ### MCP 是 Claude Code 的扩展基石
 **MCP（Model Context Protocol）是 Anthropic 提出的开放协议，让 Claude Code 能调用外部服务提供的工具**。通过 MCP，Claude Code 可以连接 GitHub、Slack、数据库、向量搜索等多种外部系统。
 
@@ -179,9 +117,9 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](ch09/140-obsidian-claude-code-integration-guide.html) — 知识管理工具集成
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html) — MCP 协议集成
-- [IMClaw](../ch03/078-claude-code.html) — IM 平台操控
-- [OpenClaw 安全增强](../ch11/235-openclaw.html) — 自托管 Agent 平台
-- [Kiro + Claude Code](../ch05/094-ai.html) — AI IDE 协同
+- [IMClaw](../ch03/077-claude-code.html) — IM 平台操控
+- [OpenClaw 安全增强](../ch11/237-openclaw.html) — 自托管 Agent 平台
+- [Kiro + Claude Code](../ch05/095-ai.html) — AI IDE 协同
 - [企业级 Agentic AI](../ch04/060-agentic-ai.html) — AWS 集成
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 > 本页整合来源：Claude Code 官方文档、Anthropic 源码分析、AWS China Blog、OpenClaw 社区实践

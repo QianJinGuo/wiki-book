@@ -4,59 +4,10 @@
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/microsoft-agent-framework-structured-output.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Microsoft Agent Framework 结构化输出"))
-    两种声明方式
-      方式一 Pydantic 类
-      方式二 JSON Schema dict
-    responsevalue vs responsetext
-    配置时机
-    流式 结构化
-    能力边界
-    生产注意点
-    Pydantic vs JSON Schema 怎么选
-    结构化输出是 Agent 进入业务系统的门槛
-```
-
 ## 核心问题
 传统方案：提示词要求"只输出 JSON" + `json.loads()` → 易夹杂 markdown、缺字段、类型漂移。Agent Framework 的解法：Schema 由 API 约束，框架负责解析 。
 
 ## 两种声明方式
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 方式一：Pydantic 类
 ```python

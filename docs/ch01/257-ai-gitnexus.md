@@ -12,28 +12,6 @@ AI 编码工具发展到今天，已经不只是帮你补全几行代码了。�
 GitNexus 想解决的，正是这个问题。它会先把代码库整理成一张「知识图谱」，提前分析依赖关系、调用链、功能聚类和执行流，再通过 MCP、CLI、Web UI 等方式交给 AI Agent 使用。
 换句话说，GitNexus 做的不是让模型「更会猜」，而是让它在动手改代码之前，先真正理解你的代码库。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("打造 AI 智能体专属的代码知识库 GitNexus 完整上手攻略"))
-    为什么需要代码知识库
-      AI 编码的真实瓶颈 不是不会写 而是看不全
-      GitNexus 是什么 AI Agent 的代码神经系统
-      普通搜索 通用 RAG 与 GitNexus 的区别
-    GitNexus 核心能力
-      技术原理
-      支持范围
-      MCP 工具一览
-    预计算关系智能是 GitNexus 与传统代码搜索的本质区别
-    代码图谱的冷启动代价与收益的不对称性
-    MCP 工具暴露的是项目理解接口而非普通命令
-    先问项目 再改代码将成为复杂项目中的 Agent 开发规范
-    在大型重构前强制使用 impact 工具进行影响评估
-    为团队维护一份基于图谱生成的模块依赖文档
-```
-
 ##  为什么需要代码知识库 
 ###  AI 编码的真实瓶颈：不是不会写，而是看不全 
 在小项目里，AI Agent 只要读几个文件，就能大致判断代码应该怎么改。但项目一旦变大，真正难的就不是「写出一段代码」，而是知道这段代码和整个系统之间的关系。
@@ -65,41 +43,6 @@ GitNexus 的核心思路，可以概括为一个词：  ** 预计算关系智能
 也就是先在索引阶段把代码结构、依赖关系、调用链、功能聚类、执行流都计算好。等 Agent 真正执行任务时，它拿到的不是一堆零散片段，而是一份经过结构化整理的项目上下文。
 
 ##  GitNexus 核心能力 
-
-```mermaid
-graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
-    end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
-    end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
-    end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
-    end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
-```
-
 ###  技术原理 
 GitNexus 之所以能提供这些结构化上下文，是因为它的索引流程不是简单扫文件。
 它大致会经历几个阶段：
@@ -178,11 +121,11 @@ GitNexus 的本地化架构（代码不离开机器）是其企业推广的关�
 ## 关联阅读
 →
 ## 相关实体
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/111-ai-coding.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/989-anthropic.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/078-claude-code.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/078-claude-code.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/989-anthropic.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/112-ai-coding.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1004-anthropic.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/077-claude-code.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/1004-anthropic.html)
 
 → [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
 → [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)

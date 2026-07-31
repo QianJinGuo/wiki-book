@@ -4,66 +4,10 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/hermes-agent-self-evolution-tengxun.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Hermes Agent自我进化机制与OpenClaw对比"))
-    与OpenClaw对比
-    三大核心机制
-      四维持久记忆
-      技能自动创造
-      KEPA
-    学习模式
-    与现有知识的链接
-    KEPA机制的本质
-    冻结快照的双刃剑效应
-    自驱动学习的边界
-    记忆分层设计
-```
-
 ## 核心观点
 > "所谓的'自动学习'，本质是Prompt Engineering + 文件持久化的一次精妙工程化实践。"
 
 ## 与OpenClaw对比
-
-```mermaid
-graph TB
-    subgraph "工作记忆"
-        CTX[上下文窗口<br/>当前对话]
-        ATTN[注意力机制<br/>关键信息加权]
-    end
-    subgraph "短期记忆"
-        SESSION[Session 存储<br/>对话历史]
-        CACHE[临时缓存<br/>中间结果]
-    end
-    subgraph "长期记忆"
-        VDB[(向量数据库<br/>语义检索)]
-        KG[(知识图谱<br/>关系存储)]
-        STRUCT[(结构化存储<br/>用户画像)]
-    end
-    CTX --> ATTN --> SESSION --> CACHE
-    CACHE --> VDB & KG & STRUCT
-    subgraph "记忆管理"
-        IMPORT[重要性评分]
-        COMPRESS[压缩摘要]
-        FORGET[遗忘策略]
-    end
-    VDB & KG & STRUCT --> IMPORT
-    IMPORT --> COMPRESS
-    IMPORT --> FORGET
-    COMPRESS -->|"注入"| CTX
-    classDef work fill:#fee2e2,stroke:#dc2626
-    classDef short fill:#fef3c7,stroke:#d97706
-    classDef long fill:#dbeafe,stroke:#2563eb
-    classDef mgmt fill:#ede9fe,stroke:#7c3aed
-    class CTX,ATTN work
-    class SESSION,CACHE short
-    class VDB,KG,STRUCT long
-    class IMPORT,COMPRESS,FORGET mgmt
-```
-
 | 维度 | OpenClaw 🦞 | Hermes Agent ☤ |
 |------|------------|----------------|
 | 核心哲学 | 全能助手，插件生态 | 自我进化，越用越强 |

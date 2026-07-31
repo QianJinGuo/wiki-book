@@ -12,68 +12,7 @@ source: rss
 feed_name: AWS China Blog
 ---
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 AWS 示例项目 展示如何将 OpenClaw 迁移为基于"))
-    亚马逊AWS官方博客
-    一 环境准备
-      第一步 设置 AWS 账号和区域环境变量
-      第二步 安装基础依赖
-      第三步 启动 Docker 服务
-    二 获取代码
-      第一步 克隆项目代码
-      第二步 设置部署区域
-      第三步 创建 Python 虚拟环境并安装依赖
-    三 CDK 初始化 Bootstrap
-      第一步 初始化 CDK 工作台
-      第二步 预览将要创建的资源
-      第三步 应用部署补丁
-    本篇作者
-    AWS 架构师中心 云端创新的引领者
-```
-
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第二篇：环境准备与代码获取，安装依赖工具、配置 AWS 环境、克隆项目代码、了解 cdk.json 配置项，以及初始化 CDK。
 **目录**
 01[一、环境准备](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/#section1)
@@ -371,22 +310,22 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
 
 ## 相关实体
-- [OpenClaw多租户迁移: Phase 2&3部署](ch11/235-openclaw.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](ch11/237-openclaw.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/306-amazon-nova.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/057-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/690-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/561-amazon-bedrock-agentcore.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/704-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/566-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/300-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/746-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/759-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
-- [AgentCore Runtime部署Apache Doris MCP Server](ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [OpenClaw多租户迁移: 背景与架构概览](ch11/235-openclaw.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/235-openclaw.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch11/177-apache-doris-mcp-server-quick-suite-ai.html)
+- [OpenClaw多租户迁移: 背景与架构概览](ch11/237-openclaw.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/237-openclaw.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/295-amazon-bedrock.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
-- [from pdfs to insights: architecting an intelligent document](ch11/248-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+- [from pdfs to insights: architecting an intelligent document](ch11/249-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 
 ---
 

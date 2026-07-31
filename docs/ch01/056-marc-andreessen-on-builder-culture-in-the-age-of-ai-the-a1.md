@@ -8,59 +8,11 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Marc Andreessen on Builder"))
-    AI Expands Work Not Eliminates It
-    The Rise of the AI-Native Builder
-    Narrative vs Reality in Public
-    Organizational Restructuring From
-    Deep Analysis
-      The Builder Thesis in Context
-      The Capability-Expansion Paradox
-      Organizational Implications
-    Practical Takeaways
-```
-
 ## Summary
 
 Erik Torenberg interviews Marc Andreessen on the a16z Show, covering AI's impact on jobs and productivity, the rise of "AI-native" builders, the changing media landscape, and why increased capability tends to expand work rather than eliminate it. The conversation offers a wide-ranging look at how technology is reshaping both systems and society.
 
 ## Key Points
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 ### 1. AI Expands Work, Not Eliminates It
 
@@ -123,10 +75,10 @@ Andreessen's perspective, while compelling, has notable blind spots:
 
 ## Related Entities
 
-- [Granola — The AI Notepad for back-to-back meetings](../ch05/094-ai.html)
+- [Granola — The AI Notepad for back-to-back meetings](../ch05/095-ai.html)
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/167-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/168-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
 
 ---
 

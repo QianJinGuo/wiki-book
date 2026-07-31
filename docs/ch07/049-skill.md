@@ -8,63 +8,11 @@
 
 Skill 版本管理是企业 AI 系统落地的硬骨头。与代码不同，Skill 是一段"自然语言指令"，它的"对不对"、"有没有变好"没有工具能直接告诉你。本文提出 Skill 版本管理的五大原则以及从 v1.0.0 到 v1.3.0 的真实演进案例。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Skill 版本管理五大原则 从越改越差到持续演进"))
-    为什么 Skill 比代码更危险
-    五大原则
-      原则一 每次改动必须有版本号
-      原则二 PR 必须包含动机和影响
-      原则三 版本之间的 diff 必须可读
-    真实案例 incident-triage 演进轨迹
-    反模式 越改越差的典型
-    与已有实体的关联
-    结论
-    Skill 语义化版本管理
-    与软件包管理的类比
-```
-
 ## 一句话
 
 **把 Skill 当软件管：**语义化版本 + PR 模板（动机/影响/评估）+ 结构化 diff + 跨版本评估对比 + 灰度发布。
 
 ## 为什么 Skill 比代码更危险
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 | 弱点 | 说明 |
 |------|------|
@@ -151,9 +99,9 @@ v1.2.0 → v1.3.0 diff:
 ## 与已有实体的关联
 
 - Hermes Agent Skill Authoring — Skill 规范与编写指南
-- [Claude Code Skill Writing Guide](../ch03/078-claude-code.html) — 另一套 Skill 编写范式
+- [Claude Code Skill Writing Guide](../ch03/077-claude-code.html) — 另一套 Skill 编写范式
 - [高德 Uplift Model Harness](../ch05/058-agent-harness.html) — 类似的版本演进思路
-- [阿里云 LoongSuite Pilot](../ch09/047-coding-agent.html) — 企业级 Agent 系统的质量保障
+- [阿里云 LoongSuite Pilot](../ch09/046-coding-agent.html) — 企业级 Agent 系统的质量保障
 
 ## 结论
 

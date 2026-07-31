@@ -4,67 +4,7 @@
 
 > 📊 Level ⭐⭐ | 26.8KB | `entities/cloud-agent-infrastructure-creaoai-state-code-credential-isolation-20260606.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("云端 Agent 基础设施两条硬经验 CreaoAI"))
-    第一性原理 为什么桌面假设在云上失效
-      桌面 Agent 假设 隐含的一次性都成立
-      云端 Agent 现实
-    教训一 把变化慢的和变化快的分开 状态代码解耦
-      第一版方案 粗鲁的全重建导致用户环境丢失
-      根因诊断
-      解决方案 借鉴 OS 的内核home 分离
-    教训二 把凭据隔离在执行边界之外
-      云端 Agent 的安全前提
-      核心原则
-      桥接层身份验证 两层校验 刻意叠加
-    底层设计模式 4 条铁律
-    与桌面框架的本质区别
-    对 Agent 平台建设
-    对 Agent 框架设计者
-    对 Agent 应用开发者
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
-    end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
-    end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
-    end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
-```
-
 
 **CreaoAI 联合创始人**总结的云端 Agent 基础设施两条**硬经验**——把桌面端 Agent 假设（用户 = 同一台机器 = 同一受信边界）搬到云端时踩出的两个核心设计原则：① **状态与代码解耦**（frozen snapshot + hot-swap Runner，类比 OS 内核 vs 用户 home 目录）② **凭据隔离在执行边界之外**（API bridge + IP 白名单 + 每次运行的短期 JWT）。这两条是云端 Agent 平台区别于桌面框架的**根本性架构差异**，而不是"加几个云服务就行"。
 
@@ -324,7 +264,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 - [Claude Managed Agents 企业边界更新](../ch04/710-claude-managed-agents.html) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
 
 ### 与多租户 / Serverless Agent
-- [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/561-amazon-bedrock-agentcore.html) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
+- [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/566-amazon-bedrock-agentcore.html) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
 - [AgentScope Builder](../ch05/058-agent-harness.html) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
 - [Stripe Agent 经济基础设施 5 套图谱](../ch03/035-agent.html) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
 
@@ -337,7 +277,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 - **本文 = 关注 execution boundary 内的多租户隔离**——**两者维度不同，但思想相通**："默认不可信 + 强制隔离 + 边界归一"
 
 ### 与阿里云 Agentic Cloud
-- [阿里云 Agentic Cloud](../ch04/347-agentic-cloud.html) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
+- [阿里云 Agentic Cloud](../ch04/348-agentic-cloud.html) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
 - **本文 = 关注平台对内的工程化**（snapshot + hot-swap + 凭据隔离）——**关注平台自身的建设**
 
 ## 实战检查清单（4 条铁律 → 9 项检查）

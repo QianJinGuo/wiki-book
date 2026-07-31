@@ -16,20 +16,6 @@
 
 为此，本文提出 **Agent-World**：一个通用智能体训练场，将"智能体环境探索"与"自进化训练"相结合，形成智能体与环境协同进化的闭环。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Agent-World 扩展真实世界环境 让智能体与环境协同进化"))
-    模块一 智能环境-任务探索
-    模块二 持续自进化训练
-    从环境扩展到协同进化 Agent-World 的方法论突破
-    数据工具任务的端到端质量保障
-    可扩展性规律 通往通用智能体的钥匙
-    Agent-World 在 Agent 训练方法论上的定位
-```
-
 ## 核心架构
 
 ### 模块一：智能环境-任务探索
@@ -53,43 +39,6 @@ mindmap
 4. **智能体-环境协同进化**：依据诊断结果，在弱点环境上合成更具挑战性的训练任务，驱动下一轮持续强化学习，形成"训练提升智能体→评估暴露弱点→诊断指引环境/任务扩展→新数据驱动智能体进一步进化"的训练飞轮。
 
 ## 实验结果
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 
 Agent-World 在 23 个挑战性基准上进行了全面评估，涵盖 5 大领域：
 
@@ -154,9 +103,9 @@ Agent-World 将三者融合：自动合成高质量环境 + 多环境 RL 训练 
 
 ## 相关实体
 
-- [Agent Config Model Tool Skill MCP Prompt Combination](ch04/271-skill.html) — Agent 配置与 MCP 工具调用模式
+- [Agent Config Model Tool Skill MCP Prompt Combination](ch04/273-skill.html) — Agent 配置与 MCP 工具调用模式
 - [Agent 评测方法论与体系设计](../ch03/035-agent.html) — Agent 评估体系设计讨论
-- [AgentCore Harness Trip Allocation](ch04/689-agentcore-harness.html) — 多 Agent 系统实践
+- [AgentCore Harness Trip Allocation](ch04/690-agentcore-harness.html) — 多 Agent 系统实践
 
 ---
 

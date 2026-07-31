@@ -8,60 +8,11 @@
 
 Superpowers 第二篇深度解读：聚焦 Rule/Gate/Hook 核心哲学、Iron Law、TDD 应用到 prompt engineering、SDLC 范式映射。开元大咖说/原作者。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Superpowers 深度解读 2 RuleGateHook 与"))
-    互补角度 vs 百度Geek说版
-    Rule vs Gate vs Hook
-    Rule
-    Iron Law TDD
-    systematic-debugging Phase 45
-    writing-skills 把 TDD 应用到 prompt
-    Cialdini 说服原则 PUA Skill
-    SDLC 范式映射
-```
-
 ## 一句话
 
 **Rule 可绕开（rationalize 借口）/ Gate 不可绕开（先满足条件才允许下一步）/ Hook 是确定性触发——Superpowers 把每个关键转换都做成互锁 gate，构成 LLM 时代的工业级 SDLC。**
 
 ## 互补角度（vs 百度Geek说版）
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 
 本文聚焦以下独特贡献：
 - Rule vs Gate vs Hook 哲学区分
@@ -155,10 +106,10 @@ Jesse 探索第二种 mode："iterative greenfield"——不走 spec-first，从
 
 ## 相关实体
 
-- [Superpowers 深度解析（1）：概率操控与负向收益](../ch05/092-superpowers-claude-code.html) — 第 1 来源
+- [Superpowers 深度解析（1）：概率操控与负向收益](../ch05/093-superpowers-claude-code.html) — 第 1 来源
 - [Harness Engineering](../ch05/120-harness-engineering.html)
 - [12 Agent 设计模式](../ch03/035-agent.html) — 同样强调"确定性从 LLM 剥离"
-- [AI Coding Agent Token 成本控制](ch09/047-coding-agent.html) — Superpowers 多阶段会大幅增加 token 成本
+- [AI Coding Agent Token 成本控制](ch09/046-coding-agent.html) — Superpowers 多阶段会大幅增加 token 成本
 
 ---
 

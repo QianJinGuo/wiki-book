@@ -10,25 +10,6 @@
 
 随着企业软件向多模态迁移，Gartner 预测到2030年80%的企业软件将具备多模态能力，而2024年这一比例还不到10%。在没有自动化多模态评估的情况下，企业只能在昂贵的人工审查和不可靠的纯文本代理之间做出选择。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("多模态评估器 MLLM-as-Judge 图文评估"))
-    背景与动机
-    四种评估器
-    技术实现
-    关键设计发现
-      Q1 Judge 需要看到图像吗
-      Q2 选择哪个 Bedrock 模型
-      Q3 Prompt 设计要点
-    与现有技术的关系
-    实用建议
-    未来方向
-    MLLM-as-Judge 填补了多模态 AI 评估的空白
-```
-
 ## 核心要点
 
 - AWS Amazon Bedrock 上的 Strands Evals 框架提出用 MLLM 作为 image-to-text 任务的自动评估器
@@ -37,43 +18,6 @@ mindmap
 - 默认使用 Claude Sonnet 4.6 作为 judge 模型
 
 ## 背景与动机
-
-```mermaid
-graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
-    end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
-    end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
-    end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
-    end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
-```
-
 
 随着企业软件向多模态迁移（Gartner 预测2030年80%企业软件将具备多模态能力），传统 LLM-as-a-Judge 只能评估文本流畅度，无法验证模型输出是否真正基于源图像。这种 text-only 评估的局限性导致：
 
@@ -221,10 +165,10 @@ Strands Evals 的多模态 judge 保持了与文本 judge 完全相同的 `Case`
 - Anthropic Claude 系列
 
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai Qcon](../ch04/258-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/561-amazon-bedrock-agentcore.html)
-- [Claude Code Harness Deep Understanding](ch01/422-claude-code-harness-deep-understanding.html)
-- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/1274-llm.html)
+- [Yidian Tianxia Context Engineering Agentic Ai Qcon](../ch04/261-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/566-amazon-bedrock-agentcore.html)
+- [Claude Code Harness Deep Understanding](ch01/423-claude-code-harness-deep-understanding.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/637-llm.html)
 - [Amazon Bedrock Api Security Guide](../ch12/034-amazon-bedrock-api.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multimodal-evaluators-mllm-as-judge-image-to-text.md)

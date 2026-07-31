@@ -2,25 +2,9 @@
 
 ## Ch01.266 [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
-> 📊 Level ⭐⭐ | 15.2KB | `entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md`
+> 📊 Level ⭐⭐ | 15.3KB | `entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md`
 
 # [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("亚马逊AWS官方博客"))
-    亚马逊AWS官方博客
-    一 关于滴滴国际化事业部
-    二 业务挑战
-    三 方案总览
-      意图管线 验证与分类分离架构
-      评估管线 动态组装覆盖多语种多业务线
-      VOC 管线 主动趋势发现
-    四 总结
-```
 
 ## 深度分析
 
@@ -35,44 +19,6 @@ source_published: 2026-05-26T05:25:20Z
 # 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 摘要：滴滴国际化事业部客户体验部门与 AWS 合作，基于 Amazon Bedrock 构建了一套覆盖西班牙语和葡萄牙语、横跨出行、外卖、金融三大业务线的智能客服质检系统，将客服质检能力从依赖第三方的黑盒方案迁移为透明可控的自研 AI 架构。系统包含三条核心管线——意图验证、合规评估和 VOC 聚合分析：进线原因验证准确率从 38% 大幅提升至 86%，合规评分准确率达 90% 以上，VOC 聚合分析则将原本耗费数小时的人工汇总工作缩短至数分钟完成。
 
@@ -175,10 +121,10 @@ VOC 管线采用三阶段 pipeline：并行提取 → 问题聚类 → 报告生
 * 
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/094-ai.html)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/222-amazon-quick.html)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/561-amazon-bedrock-agentcore.html)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/1274-llm.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/095-ai.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/224-amazon-quick.html)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/566-amazon-bedrock-agentcore.html)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/637-llm.html)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/295-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)

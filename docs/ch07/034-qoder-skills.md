@@ -4,26 +4,6 @@
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/qoder-skills-complete-guide.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Qoder Skills 完全指南"))
-    核心概念
-      Skill 的本质
-      跨平台兼容性
-    三大关键对比
-    三大使用场景
-      场景一 文档与资产创建
-      场景二 工作流自动化
-      场景三 MCP 能力增强
-    安装方式
-    进阶模式
-    测试与迭代
-    团队协作
-```
-
 ## 核心概念
 **Skill** 是 AI 世界里的菜谱（Recipe），是一个开放标准的文件夹，包含一套告诉 AI 如何处理特定任务或工作流的指令。
 
@@ -43,39 +23,6 @@ mindmap
 - ✅ Claude API（通过 `container.skills` 参数）
 
 ## 三大关键对比
-
-```mermaid
-graph TB
-    subgraph "Agent 核心"
-        INT[意图理解] --> PLAN[任务规划]
-        PLAN --> EXEC[工具选择与调用]
-        EXEC --> VERIFY[结果验证]
-        VERIFY -->|"失败重试"| PLAN
-    end
-    subgraph "工具层"
-        direction LR
-        FT[Function<br/>自定义函数]
-        MT[MCP Server<br/>外部服务]
-        API[REST API<br/>HTTP调用]
-    end
-    EXEC --> FT
-    EXEC --> MT
-    EXEC --> API
-    subgraph "安全层"
-        AUTH[权限检查]
-        SANDBOX[沙箱隔离]
-        AUDIT[审计日志]
-    end
-    EXEC --> AUTH --> SANDBOX
-    SANDBOX --> AUDIT
-    classDef agent fill:#dbeafe,stroke:#2563eb
-    classDef tool fill:#d1fae5,stroke:#059669
-    classDef sec fill:#fee2e2,stroke:#dc2626
-    class INT,PLAN,EXEC,VERIFY agent
-    class FT,MT,API tool
-    class AUTH,SANDBOX,AUDIT sec
-```
-
 | 维度 | Skill | Slash Command | MCP | Rules |
 |------|-------|---------------|-----|-------|
 | 触发方式 | AI 自主判断 + 可主动 `/` 调用 | 用户主动输入 `/xxx` | 工具调用时自动触发 | 始终在上下文中生效 |
@@ -132,23 +79,23 @@ graph TB
 
 ## 相关实体
 - [qoder skills](ch07/034-qoder-skills.html)
-- [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/238-agent-skills-teams.html)
-- [Agent 时代架构师技能指南](../ch03/072-skills.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/269-agent-skill.html)
+- [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/241-agent-skills-teams.html)
+- [Agent 时代架构师技能指南](../ch03/071-skills.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/271-agent-skill.html)
 - [Hermes Agent](../ch03/096-hermes-agent.html)
-- [你写的 Skill，及格了吗？](../ch04/271-skill.html)
+- [你写的 Skill，及格了吗？](../ch04/273-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/419-aws-sagemaker-ai-agent.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/271-skill.html)
-- [SkillX — 层次化技能知识库](ch07/056-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/257-anthropic-agent.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/271-skill.html)
-- [SkillClaw](../ch04/474-skillclaw-nacos-agent-skill-registry.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/423-aws-sagemaker-ai-agent.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/273-skill.html)
+- [SkillX — 层次化技能知识库](ch07/057-skillx.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/260-anthropic-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/273-skill.html)
+- [SkillClaw](../ch04/479-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/017-hermes-skill.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/397-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/401-agent-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/205-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Thin Harness Fat Skills](../ch05/085-thin-harness-fat-skills-ai.html)
-- [Code Intelligence Changelog](../ch04/497-code-intelligence-changelog.html)
+- [Thin Harness Fat Skills](../ch05/086-thin-harness-fat-skills-ai.html)
+- [Code Intelligence Changelog](../ch04/503-code-intelligence-changelog.html)
 
 ---
 

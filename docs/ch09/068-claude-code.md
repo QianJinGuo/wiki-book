@@ -4,47 +4,11 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/claude-code-20000-char-source-analysis.md`
 
-
 ## 关键洞察
 本页分析了 两万字详解Claude Code源码核心机制 的核心内容。
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-20000-char-source-analysis.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：不是依赖模型自身的推理能力来管理复杂任务，而是通过多层机制将不确定性转化为可控行为。与 OpenCode、Codex、Gemini-CLI 等竞品相比，Claude Code 在以下维度展现了更成熟的工程思考。
 **动态 System Prompt 机制**是理解 Claude Code 的第一个关键。传统框架使用静态 prompt，启动后不变；Claude Code 则通过 `buildEffectiveSystemPrompt` 函数在每次会话启动时动态组装内容，涵盖工具描述、MCP 服务器指令、Skill 索引、环境信息等六层优先级。这一设计使系统能够根据当前环境状态调整模型的行为契约，而非用一套固定规则应对所有场景。
 **并发调度与延迟加载**构成了工具层的核心创新。每个工具通过 `isConcurrencySafe` 声明并发安全性，调度层据此将工具调用分成批次——只读工具并行执行、写操作串行执行。更精妙的是 `shouldDefer + ToolSearch` 的延迟加载机制：非必需的复杂工具（如 Plan Mode）在初始请求中只携带空壳 schema，模型通过 `ToolSearch` 发现后才会注入完整描述。这套机制通过独立的 `deferred_tools_delta` attachment 发送，避免破坏 prompt cache 的前缀复用。Token 优化效果显著：对于接入十几个 MCP 服务器的企业场景，每次任务只注入实际用到的工具描述。
@@ -63,11 +27,11 @@ Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：�
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [Claude Code Prompt 提示词体系源码解析](ch09/061-claude-code-prompt.html)
-- [Claude Code 源码深度解析（13 核心机制）](../ch03/078-claude-code.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/078-claude-code.html)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/078-claude-code.html)
-- [Claude Code 设计原则与对照分析](../ch03/078-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/422-claude-code-harness-deep-understanding.html)
+- [Claude Code 源码深度解析（13 核心机制）](../ch03/077-claude-code.html)
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
+- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
@@ -75,22 +39,22 @@ Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：�
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
-- [Claude Code 可控性：软规则无法变成硬约束](../ch03/078-claude-code.html)
+- [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
 - [Agent Harness 架构](../ch05/058-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/397-agent-skills.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/078-claude-code.html)
-- [Claude Code 源码核心机制详解](../ch03/078-claude-code.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
+- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/078-claude-code.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/976-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
 
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/078-claude-code.html)
+- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)

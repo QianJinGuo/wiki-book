@@ -2,7 +2,7 @@
 
 ## Ch01.501 让 Agent 自主完成任务
 
-> 📊 Level ⭐⭐ | 8.6KB | `entities/cli-anything-wechat-demo.md`
+> 📊 Level ⭐⭐ | 8.7KB | `entities/cli-anything-wechat-demo.md`
 
 # 让 Agent 自主完成任务
 
@@ -10,58 +10,11 @@ CLI-Anything 是香港大学数据科学实验室（HKUDS）的开源项目，�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cli-anything-wechat-demo.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("让 Agent 自主完成任务"))
-    阶段全自动流水线
-    SKILLmd Agent 可读的工具说明书
-    CLI-Hub 社区驱动的 CLI 注册表
-    真实 Demo
-    CLI 作为 Agent 与 GUI 软件的接口协议层
-    SKILLmd 是 Agent 的工具使用手册范式
-    元技能 Meta-Skill Agent 自主发现工具的起点
-    REPL 模式 undoredo Agent 长流程任务的关键支撑
-```
-
 ## 摘要
 
 当前 AI Agent 的根本局限：文本进文本出，遇到带 GUI 的专业软件就只能绕道。要么手写 wrapper（工作量随深度指数增长），要么靠截图点击的 RPA（换个系统主题就崩溃）。CLI-Anything 的解法是**自动生成 CLI 层**——把"人用的鼠标+键盘接口"转换为"Agent 用的命令行接口"。一条命令 `/cli-anything ./gimp` 跑完 7 阶段流水线，就能 pip install 一个可用的 CLI 包。已覆盖 Blender、GIMP、FreeCAD、QGIS、Godot、LibreOffice 等 20+ 软件。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 7 阶段全自动流水线
 
@@ -132,13 +85,13 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 ### 相关实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/078-claude-code.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/237-agentic.html)
-- [Tencentdb Agent Memory Context Offloading](../ch04/121-agent-memory.html)
+- [两万字详解Claude Code源码核心机制](../ch03/077-claude-code.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/228-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/648-agentic.html)
+- [Tencentdb Agent Memory Context Offloading](../ch04/098-agent-memory.html)
 - [agent 开发范式演进：从环境工程出发](../ch03/035-agent.html)
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](../ch05/001-impeccable.html)
-- [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](../ch04/271-skill.html)
+- [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](../ch04/273-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

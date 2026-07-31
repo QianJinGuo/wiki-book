@@ -4,22 +4,6 @@
 
 > 📊 Level ⭐ | 11.6KB | `entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md`
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("VC x SaaStr The Most Aggressive"))
-    超大规模资本支出的结构性逻辑
-    隐藏在增长背后的结构性风险
-    Palantir 的护城河 唯一能交付企业级 AI 转型的公司
-    AI 采购的 COVID 式压缩
-    对投资人
-    对 operator 高管
-    对创始人和 CEO
-    对分析师和策略师
-```
-
 ## 核心要点
 - 20VC x SaaStr 对话，关于美国资本主义的投资动态
 - Palantir 的投资策略和 Brian Armstrong 的观点
@@ -30,35 +14,6 @@ mindmap
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md)
 
 ## 深度分析
-
-```mermaid
-graph TB
-    subgraph "发现"
-        PROB[问题定义<br/>用户痛点]
-        JTBD[任务理解<br/>JTBD框架]
-        SEG[市场细分<br/>目标用户]
-    end
-    subgraph "验证"
-        MVP[MVP构建<br/>最小可行]
-        PMF[产品市场匹配<br/>PMF验证]
-        ITER[快速迭代<br/>用户反馈]
-    end
-    PROB --> JTBD --> SEG --> MVP --> PMF --> ITER
-    ITER -->|"Pivot"| PROB
-    subgraph "增长"
-        FLYWHEEL[增长飞轮<br/>自增强循环]
-        UNIT_ECO[单位经济<br/>LTV/CAC]
-        SCALE[规模化<br/>渠道扩展]
-    end
-    PMF --> FLYWHEEL --> UNIT_ECO --> SCALE
-    classDef discover fill:#dbeafe,stroke:#2563eb
-    classDef validate fill:#ede9fe,stroke:#7c3aed
-    classDef growth fill:#d1fae5,stroke:#059669
-    class PROB,JTBD,SEG discover
-    class MVP,PMF,ITER validate
-    class FLYWHEEL,UNIT_ECO,SCALE growth
-```
-
 ### 超大规模资本支出的结构性逻辑
 本文揭示了当前 AI 时代的资本支出逻辑发生了根本性转变。五大科技公司（Google、Microsoft、Amazon、Meta、Apple）在同一周报告财报，合计季度收入 $540B，2026 年 AI 资本支出 $700B。正常情况下，应该是初创公司激进、巨头防御；但这一次，六家最大市值的公司同时宣布"我们也要押注"。这说明 AI 转型已经进入"必须参与"阶段——不是选择问题，而是生存问题。
 
@@ -111,9 +66,9 @@ Sierra 以 $150M ARR 估值 $15.8B，105x 收入倍数。Brett Taylor（OpenAI �
 ## 相关实体
 
 - [How Superset built the IDE for AI agents on Vercel](ch01/080-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/167-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/168-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Public Stealth Leaves Opportunity on the Table](https://github.com/QianJinGuo/wiki/blob/main/entities/thisisgoingtobebig-public-stealth.md)
-- [Https Posthog Com Blog Karpathy Autoresearch Query Engine Bug](../ch04/266-karpathy-autoresearch.html)
+- [Https Posthog Com Blog Karpathy Autoresearch Query Engine Bug](../ch04/269-karpathy-autoresearch.html)
 
 ---
 

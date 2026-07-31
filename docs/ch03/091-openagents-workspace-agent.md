@@ -6,58 +6,11 @@
 
 # OpenAgents Workspace：多 Agent 协作平台
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAgents Workspace 多 Agent 协作平台"))
-    问题定义 Agent 孤岛
-    三大核心组件
-    差异化定位
-    架构设计理念
-    共享浏览器的技术挑战
-    与 Hermes Agent V014 Architecture
-    与 Building Web Search Enabled
-    局限与风险
-```
-
 ## 摘要
 
 OpenAgents（3.3k Star, Apache 2.0）定位不是 Agent 框架，而是 **多 Agent 协作平台**——解决多个编码 Agent（Claude Code、Codex CLI、Cursor 等）之间上下文隔离、只能手动复制粘贴的问题。它由三个核心组件构成：Workspace（浏览器端协作空间）、Launcher（统一管理编码 Agent 的终端仪表盘）和 Network SDK（开发者扩展层）。OpenAgents 的独特价值在于跨 Agent 协作、共享浏览器、Tunnels 暴露本地服务等能力，以及不绑定供应商的开源架构。
 
 ## 核心要点
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
 
 ### 1. 问题定义：Agent 孤岛
 
@@ -161,7 +114,7 @@ OpenAgents 的架构遵循了"平台 vs 工具"的设计哲学：
 
 Hermes Agent 已经在 OpenAgents 的支持列表中。这意味着 Hermes Agent 用户可以通过 OpenAgents Workspace 与其他 Agent（如 Claude Code、Codex CLI）进行协作。这种互操作性对于 Agent 生态的健康发展至关重要。^[inferred]
 
-### 与 [Building Web Search Enabled Agents With Strands And Exa](../ch04/465-building-web-search-enabled-agents-with-strands-and-exa.html) 的互补
+### 与 [Building Web Search Enabled Agents With Strands And Exa](../ch04/471-building-web-search-enabled-agents-with-strands-and-exa.html) 的互补
 
 Web Search Agent 可以通过 OpenAgents 的 Mod 系统接入 Workspace，将搜索能力作为共享资源提供给其他 Agent。这种模式下，一个 Agent 专注于搜索，其他 Agent 专注于编码或分析，各司其职。^[inferred]
 
@@ -189,8 +142,8 @@ OpenAgents 的 Launch Partners 包括 Z.AI（智谱）、FastGPT、MiniMax 等�
 
 - [Code As Agent Harness Survey](../ch09/051-code-as-agent-harness.html)
 - [Hermes Agent V014 Architecture Shugex](ch03/096-hermes-agent.html)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04/465-building-web-search-enabled-agents-with-strands-and-exa.html)
-- [Claude Code Large Codebase Harness Configuration](ch03/078-claude-code.html)
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04/471-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Claude Code Large Codebase Harness Configuration](ch03/077-claude-code.html)
 - [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch03/035-agent.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openagents-workspace-multi-agent-collaboration-itech.md)
 

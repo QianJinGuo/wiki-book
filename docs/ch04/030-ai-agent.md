@@ -2,7 +2,7 @@
 
 ## Ch04.030 十年老技术开发的 AI Agent 探索之路
 
-> 📊 Level ⭐⭐ | 42.6KB | `entities/十年老技术开发的-ai-agent-探索之路.md`
+> 📊 Level ⭐⭐ | 42.7KB | `entities/十年老技术开发的-ai-agent-探索之路.md`
 
 [十年老技术开发的 Ai Agent 探索之路](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/十年老技术开发的-ai-agent-探索之路.md)
 
@@ -417,22 +417,6 @@ Goal-Driven 是它的下一站：让系统不只是等你派活，而是围绕�
 ** 真正的跃迁，不是让 AI 多做几个步骤，而是让人退出微观调度。  **
 ** 增强自我，而非取代自我。共勉。  **
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("十年老技术开发的 AI Agent 探索之路"))
-    核心命题的演进路径
-    技术路线的选择逻辑
-    自举的技术前提
-    行业协议层的信号意义
-    起步原则 先记录 再造系统
-    决策层级 自下而上评估
-    Vibe Coding 的止损点
-    h 系统的最小架子
-```
-
 ## 深度分析
 ### 1. 核心命题的演进路径
 这篇文章本质上是一个工程师的**认知迭代复盘**，展现了从直觉到系统思维的完整演进过程。作者的思考可以归纳为四个阶段：
@@ -474,41 +458,10 @@ Agent 修复自己的 bug 这一场景看似惊艳，但作者清醒地指出：
 Goal-Driven 本质上是一种**有限自治**：在清晰的目标、边界、状态、留痕和权限约束下，Agent 可以自主推进而不需要人实时介入。这代表了 AI Agent 从"工具"向"协作者"的转变。
 
 ## Related entities
-
-```mermaid
-graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
-    end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
-    end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
-    end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
-```
-
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
 - 十年老技术开发的 AI Agent 探索之路
-- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/030-ai-agent.html)
 
 ## 实践启示
 ### 起步原则：先记录，再造系统

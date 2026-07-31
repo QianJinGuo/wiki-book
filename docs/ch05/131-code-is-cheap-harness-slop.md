@@ -6,27 +6,6 @@
 
 # Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Code is cheap Harness 方法论水流理论"))
-    核心论点 代码正在变得非常廉价
-    大模型的两个底层事实
-      事实 1 大模型不是确定性函数
-      事实 2 上下文窗口有限 给得太多反而会腐烂
-    独特概念体系
-      反 slop Anti-Slop
-      水流理论 Water Flow Theory
-      最小混沌单元 Minimum Chaos Unit
-    实践方法论
-      Spec 是第一制品
-      new-chat skill 定期重启
-      Checkpoint 验证闭环
-    与现有 Harness 实体的关系
-```
-
 ## 核心论点：代码正在变得非常廉价
 
 无岳（阿里云开发者）基于过去 20 天 70 万行代码、10 个并行项目的实践，提出核心判断：**代码本身，正在从稀缺资源变成可以快速生成、快速验证、快速丢弃的过程产物**。
@@ -34,37 +13,6 @@ mindmap
 当模型可以整包接住"读地形、定方案、写实现、跑验证、修 bug"这一串动作，真正昂贵的不再是敲代码，而是读懂历史、找准边界、确认影响面、跑通验证、控制发布风险。
 
 ## 大模型的两个底层事实
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 无岳从第一性原理出发，指出两个 LLM 底层事实，Harness 方法论必须直接针对它们设计：
 

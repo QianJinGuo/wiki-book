@@ -1,66 +1,10 @@
 # Harness Engineering 四根支柱与四要素架构
 
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
-
 ## Ch05.120 Harness Engineering 四根支柱与四要素架构
 
 > 📊 Level ⭐⭐⭐ | 19.0KB | `entities/harness-engineering-90-percent-pillars.md`
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-90-percent-pillars.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Harness Engineering 四根支柱与四要素架构"))
-    实战 四要素架构
-      Application Owner Agent 编排中枢
-      上下文分层加载策略 L1L2L3
-      阶段开发流程 10-Stage Pipeline
-    关键经验
-      Harness 本身需要 Dry Run
-      质量门禁必须可程序化验证
-      分离执行与评判是关键杠杆
-    效果对比
-      质量维度
-      AI 代码率跃迁
-      更深层收益
-    四根支柱的协同逻辑
-    分离执行与评判的关键洞察
-    可程序化验证约束的工程价值
-    AI 代码率跃迁的本质含义
-    从虚拟需求 Dry Run 开始
-```
 
 ## 实战：四要素架构
 基于四根支柱，构建四个核心要素：
@@ -219,7 +163,7 @@ Anthropic 将"分离执行与评判"描述为"强杠杆"，背后有一个深刻
 ## 相关实体
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/120-harness-engineering.html)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/120-harness-engineering.html)
-- [Harness Engineering 指南（字节跳动TRAE）](../ch01/658-trae-harness-engineering.html)
+- [Harness Engineering 指南（字节跳动TRAE）](../ch01/670-trae-harness-engineering.html)
 - [清华大学 Harness Engineering 研究报告](ch05/120-harness-engineering.html)
 - [Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md)
 

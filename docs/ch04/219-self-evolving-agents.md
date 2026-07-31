@@ -6,64 +6,10 @@
 
 [Self Evolving Agents Survey Papersagent](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-evolving-agents-survey-papersagent.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Self-Evolving Agents 系统性综述"))
-    核心概念 Self-Evolving Agents 两个核心特征
-    为什么需要 Self-Evolving Agents
-    统一分类 三条自进化路线
-      路线一 Model-Centric Self-Evolution
-      路线二 Environment-Centric
-      路线三 Model-Environment
-    关键判断 论文核心观点
-    技术谱系图
-    论文信息
-```
-
 ## 摘要
 厦门大学、香港理工大学、马里兰大学、华盛顿大学圣路易斯分校、UIUC、新加坡管理大学等多机构联合发布系统性综述，系统回答：当 LLM Agent 能够主动探索、获得反馈、更新策略、积累经验时，如何理解其"自进化"？
 
 ## 核心概念：Self-Evolving Agents 两个核心特征
-
-```mermaid
-graph LR
-    subgraph "数据准备"
-        RAW[原始数据] --> CLEAN[清洗过滤]
-        CLEAN --> ANNOTATE[标注/质量筛选]
-        ANNOTATE --> SPLIT[训练/验证分割]
-    end
-    subgraph "训练阶段"
-        PRE[预训练<br/>Next-Token]
-        SFT[监督微调<br/>指令跟随]
-        ALIGN[对齐<br/>RLHF/DPO/GRPO]
-    end
-    SPLIT --> PRE --> SFT --> ALIGN
-    subgraph "高效训练"
-        LORA[LoRA/QLoRA<br/>参数高效]
-        DISTIL[知识蒸馏<br/>模型压缩]
-        DS[DeepSpeed<br/>分布式]
-    end
-    SFT --> LORA
-    ALIGN --> DISTIL
-    PRE --> DS
-    subgraph "评估"
-        AUTO[自动评测<br/>基准测试]
-        HUMAN[人工评测<br/>对抗测试]
-    end
-    ALIGN --> AUTO & HUMAN
-    classDef data fill:#fef3c7,stroke:#d97706
-    classDef train fill:#dbeafe,stroke:#2563eb
-    classDef eff fill:#ede9fe,stroke:#7c3aed
-    classDef eval fill:#d1fae5,stroke:#059669
-    class RAW,CLEAN,ANNOTATE,SPLIT data
-    class PRE,SFT,ALIGN train
-    class LORA,DISTIL,DS eff
-    class AUTO,HUMAN eval
-```
-
 1. **Strong autonomy with minimal human supervision**：尽量减少对外部人工监督的依赖
 2. **Active exploration through interaction**：通过内部推理或外部环境交互主动探索和改进
 
@@ -149,7 +95,7 @@ Agent 的进化不只来自参数更新，也来自它如何利用外部知识�
 - [Self Evolving Agents Survey](ch04/219-self-evolving-agents.html)
 - [Skill Os Learning Skill Curation Self Evolving Agents](ch04/219-self-evolving-agents.html)
 - [Hermes Agent Self Evolving Source Analysis](../ch03/096-hermes-agent.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/078-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/077-claude-code.html)
 
 ---
 

@@ -2,63 +2,13 @@
 
 ## Ch11.235 从一键部署到 AI 洞察 — 基于 Serverless 架构与 LLM 的压测与分析平台
 
-> 📊 Level ⭐⭐ | 4.9KB | `entities/从一键部署到-ai-洞察基于-serverless-架构与-llm-的压测与分析平台-load-testing-pilo.md`
+> 📊 Level ⭐⭐ | 5.1KB | `entities/从一键部署到-ai-洞察基于-serverless-架构与-llm-的压测与分析平台-load-testing-pilo.md`
 
 # 从一键部署到 AI 洞察 — 基于 Serverless 架构与 LLM 的压测与分析平台
 
 > 登录后的主控制台以统计卡片概览全部测试场景的运行状态，并提供快速HTTP测试、JMeter脚本上传和AI生成脚本三种快捷入口： [](<https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/07/21/deploy-ai-based-on-serverless-architecture-llm-analytics-platform-load-testing-pilot-2.png>) [图2 Load Testing Pilot主控制台——场景概览、运行状态统计与快捷操作入口] -
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("从一键部署到 AI 洞察 基于 Serverless 架构与"))
-    架构设计
-      整体架构
-    核心功能详解
-      多引擎压测支持
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 登录后的主控制台以统计卡片概览全部测试场景的运行状态，并提供快速HTTP测试、JMeter脚本上传和AI生成脚本三种快捷入口：
 
@@ -107,6 +57,11 @@ AI分析 | 浏览器 + LLM API | 浏览器直接调用LLM API，流式输出
 [](<https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从一键部署到-ai-洞察基于-serverless-架构与-llm-的压测与分析平台-load-testing-pilo.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

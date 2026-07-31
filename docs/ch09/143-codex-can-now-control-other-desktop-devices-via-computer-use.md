@@ -4,7 +4,6 @@
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/codex-can-now-control-other-desktop-devices-via-computer-use.md`
 
-
 ## 核心要点
 - 评分：v=7 × c=7 = 49
 - OpenAI 正在开发 Codex 远程控制功能，即使笔记本锁屏或休眠状态也能工作 
@@ -13,45 +12,10 @@
 - OpenAI 还在探索连接和控制运行 Codex 应用的其他桌面设备，如在 Mac Mini 上安装并从主设备直接操作 
 - Anthropic 于 2026 年 2 月推出了 Claude Code 的手机到设备控制功能，但同样受限于设备锁屏后的限制 
 ## 相关实体
-
-```mermaid
-graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
-    end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
-    end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
-    end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
-    end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
-```
-
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](../ch12/062-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
-- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/913-20.html)
+- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/926-20.html)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
-- [Computer Use 45X More Expensive Than Structured Apis](../ch04/268-computer-use-45x-more-expensive-than-structured-apis.html)
+- [Computer Use 45X More Expensive Than Structured Apis](../ch04/270-computer-use-45x-more-expensive-than-structured-apis.html)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-can-now-control-other-desktop-devices-via-computer-use.md)
