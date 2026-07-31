@@ -18,6 +18,27 @@
 
 ## 核心要点
 
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
+
 ### 1. 从 co-intelligence 到 managing AIs
 
 Mollick 把 ChatGPT 之后的人机协作形态定义为「co-intelligence」 — 人和 AI 通过 prompt 来回对话获得任务帮助。从 2025 年末开始，我们进入了一个新时代，得益于 Claude Code、OpenAI Codex、OpenClaw 这类 AI agent。

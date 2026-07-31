@@ -17,6 +17,25 @@ type: entity
 # Scaling Camera File Processing at Netflix
 
 ## 相关实体
+
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
 - [Netflix Nebula Archrules](ch11/090-netflix-nebula-archrules-java-archunit.html)
 

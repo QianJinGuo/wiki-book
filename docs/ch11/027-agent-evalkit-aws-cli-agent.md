@@ -12,6 +12,25 @@ AWS 2026-06-11 开源（Apache 2.0）的 Agent 评测工具包，定位是**"用
 
 ## 核心问题
 
+```mermaid
+graph LR
+    subgraph "威胁模型"
+        ATK[攻击者] --> VEC[攻击向量]
+        VEC --> TGT[目标系统]
+    end
+    subgraph "防御层"
+        WAF[WAF/网关] --> IDS[入侵检测]
+        IDS --> RBAC[权限控制]
+        RBAC --> AUD[审计日志]
+    end
+    VEC --> WAF
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK,VEC,TGT threat
+    class WAF,IDS,RBAC,AUD defense
+```
+
+
 传统 Agent 评测只看最终输出是否匹配期望，但 Agent 行为有以下隐藏失败模式：
 
 - **幻觉性输出**：Agent 返回结构良好、可读性高的响应，但工具返回空结果时，Agent 静默编造数据并呈现为真实查询结果

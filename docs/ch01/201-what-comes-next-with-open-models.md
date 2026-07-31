@@ -68,6 +68,28 @@ Interconnects AI is a reader-supported publication. Consider becoming a subscrib
 
 ## Open weights as part of an AI system
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 To start, consider what are the most impactful and impressive things that language models can do _without_ a suite of tools at their side. When was the last time that you were blown away by something that was _just_ autoregressive token outputs? Unless you're doing a substantial amount of work on mathematical proofs or competition code, it seems like that situation has changed little since GPT-4's release in 2023. The AI systems we use today are about far, far more than weights.
 
 In this world, closed models have a clear advantage. Closed models get to vertically integrate everything from the chips they run on, the inference software, the weights, the tools, and the user interface. Open models on the other hand need to work on every inference setup, with many tools, and in many use-cases. This vertical integration is best expressed today in the joy of using Claude Code with Opus 4.6 or OpenAI's Codex with GPT 5.4. Open models haven't passed this point. Some are starting to focus on specific interfaces, e.g. OpenCode, but there's an inherent tension in making an open model work only in your blessed product roadmap.

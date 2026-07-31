@@ -17,6 +17,30 @@
 
 ## 深度分析
 
+```mermaid
+graph TB
+    subgraph "Skill Stack 分层架构"
+        L1["基础层<br/>数据读取/清洗<br/>自动化: 95%"] --> L2["分析层<br/>统计/可视化<br/>自动化: 80%"]
+        L2 --> L3["推理层<br/>因果/预测<br/>自动化: 40%"]
+        L3 --> L4["判断层<br/>业务决策<br/>自动化: 5%"]
+    end
+    subgraph "覆盖率曲线"
+        C1["描述统计 95%"] --> C2["趋势分析 90%"]
+        C2 --> C3["异常检测 85%"]
+        C3 --> C4["因果推断 20%"]
+        C4 --> C5["业务判断 5%"]
+    end
+    L1 -.-> C1
+    L2 -.-> C2 & C3
+    L3 -.-> C4
+    L4 -.-> C5
+    classDef layer fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef curve fill:#d1fae5,stroke:#059669,color:#064e3b
+    class L1,L2,L3,L4 layer
+    class C1,C2,C3,C4,C5 curve
+```
+
+
 ### 1. 数据分析的 95% 自动化目标
 Anthropic 提出数据分析 95% 可由 AI 自动完成的假设——但这 95% 是"标准分析"（描述统计、趋势分析、异常检测），剩余 5%（因果推断、实验设计、业务判断）是最有价值的。
 

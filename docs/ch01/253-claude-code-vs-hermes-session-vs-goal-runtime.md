@@ -31,6 +31,21 @@
 
 ## Claude Code: 工程师, 不是员工
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 ### 关键特性
 
 - **设计中心**: repo-centric — 适合在已 checkout 代码库工作

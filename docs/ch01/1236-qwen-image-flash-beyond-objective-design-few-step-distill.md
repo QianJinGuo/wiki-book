@@ -22,6 +22,28 @@ Building on these three findings, the paper produces **Qwen-Image-Flash**, a 4-N
 
 ## 方法概述
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 The paper instantiates the study on the Qwen-Image-2.0 teacher using two well-established building blocks:
 
 - **Flow matching** (lipman2022flow) for the continuous-time generative framework. Linear interpolation path `\bm{z}_t = (1-t)\bm{x} + t\bm{\epsilon}` with a learned velocity field `\bm{v}_{\theta}(\bm{z}_t, t, \bm{c})`. Sampling is ODE integration from t=1 back to t=0.

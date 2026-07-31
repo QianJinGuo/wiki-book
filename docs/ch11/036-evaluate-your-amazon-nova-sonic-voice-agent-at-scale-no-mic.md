@@ -25,6 +25,25 @@ In this post, we walk you through the [Nova Sonic Test Harness](<https://github.
 
 ## Why speech-to-speech testing is different
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 If you’ve tested text-based large language models (LLMs) before, you might wonder why you can’t just adapt those tools. Here’s what makes voice agent testing fundamentally harder:
 
 **Bidirectional streaming.** Speech-to-speech models don’t use request-response. They maintain a persistent, full-duplex connection where audio and text flow in both directions simultaneously. Standard HTTP testing tools can’t interact with this protocol.

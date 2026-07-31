@@ -14,6 +14,25 @@
 - 支持 Function Calling 工具调用，可在对话中查询数据库、调用 API、触发工作流 
 
 ## 背景：构建语音 Agent 的挑战
+
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
 构建生产级语音 Agent 面临多重工程挑战：实时音频流基础设施管理、语音识别、LLM 集成、TTS 服务各有独立的延迟特征和故障模式。整个语音交互 pipeline 需在几百毫秒内完成才能让用户感觉自然，任何延迟都会打断对话节奏。
 传统架构将语音交互拆解为多个独立服务串联：麦克风采集 → STT 语音转文字 → LLM 处理语义 → TTS 文字转语音 → 播放。每个环节至少一次网络往返，累积延迟可达数秒。更糟糕的是，团队在重连逻辑、WebRTC 连接管理、边界情况处理上花费的时间往往超过实际 AI 能力开发。
 此外，生产语音应用还需处理网络不稳定、浏览器兼容性、会话超时、服务不可用时的优雅降级等现实问题。

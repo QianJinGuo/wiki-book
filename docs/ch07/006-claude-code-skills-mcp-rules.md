@@ -10,6 +10,32 @@
 
 ## Rules：项目级行为规范的被动注入机制
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 ### 什么是 Rules
 
 Rules 就是 `CLAUDE.md` 文件（及 `.claude/rules/*.md` 条件规则文件），本质上是**用自然语言写的指令文本**，告诉模型"在这个项目中应该遵循什么规范"。

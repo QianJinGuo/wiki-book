@@ -18,6 +18,26 @@
 
 ## 背景问题
 
+```mermaid
+graph TB
+    subgraph "记忆分层"
+        WM[工作记忆<br/>上下文窗口] --> SM[短期记忆<br/>Session级]
+        SM --> LM[长期记忆<br/>跨Session]
+    end
+    LM --> VDB[向量数据库<br/>Embedding检索]
+    LM --> KB[知识库<br/>结构化存储]
+    subgraph "RAG 流程"
+        Q[查询] --> RET[检索] --> RK[重排序] --> CT[上下文注入]
+    end
+    VDB --> RET
+    KB --> RET
+    classDef mem fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef rag fill:#d1fae5,stroke:#059669,color:#064e3b
+    class WM,SM,LM,VDB,KB mem
+    class Q,RET,RK,CT rag
+```
+
+
 LLM Agent 在多轮对话、长期任务中需要持续积累过去的交互、偏好、事实变化和任务状态。Naive long-context prompting（将历史全部放入 prompt）的问题：上下文窗口溢出、token 成本高、推理延迟增加、模型难以找到真正相关证据。
 
 核心洞察：**Context window 扩展解决的是带宽问题，不是建模问题。** benchmark 已经证实：拉到 35 个 session、300 个 turn 的尺度上，长上下文和 RAG 在时间推理、长程一致性上仍然明显落后于人类。

@@ -15,6 +15,32 @@
 
 ## 核心要点
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 - **核心认知反转**：Agent 上线后，团队真正需要的不是更多日志，而是**从失败中建立反馈闭环的系统**
 - **Agent 自改进的工程化路径**：线上 trace → 发现失败模式 → 归类成 issue → 生成 evaluator → 沉淀 regression example → 推动修复 → 进入下一轮测试
 - **核心产出不是 trace 而是 issue**：trace 是事实记录，issue 是工程对象（分配优先级、绑定证据、生成 evaluator、补测试样例、交给修复流程）

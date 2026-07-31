@@ -31,6 +31,32 @@
 
 ## Skill 本质
 
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
+
 **Skill = 给 AI 编程助手"加装"的能力包 = 结构化 Prompt Engineering**。物理上看是**文件夹 + `SKILL.md`**。核心三样：
 - **指令（Instructions）**：告诉 AI 怎么干活
 - **上下文（Context）**：给 AI 补课（项目背景、团队规范）

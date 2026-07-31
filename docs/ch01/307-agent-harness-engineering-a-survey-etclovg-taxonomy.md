@@ -9,6 +9,28 @@ Academic survey (2026, preprint) proposing **agent harness engineering as an ind
 **Core claim**: Real-world agent reliability depends more on the infrastructure harness than on the underlying model. The survey names this discipline, proposes a taxonomy, and maps 138 open-source projects onto it. ^["[Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)"]
 
 ## ETCLOVG Taxonomy
+
+```mermaid
+graph TB
+    subgraph "协作模式"
+        L["Leader<br/>编排者"] --> W1["Worker 1"]
+        L --> W2["Worker 2"]
+        L --> W3["Worker 3"]
+    end
+    subgraph "通信"
+        MSG[消息队列<br/>异步]
+        A2A[A2A协议<br/>Agent间]
+        MCP[MCP<br/>工具调用]
+    end
+    W1 & W2 & W3 --> MSG
+    L --> A2A
+    W1 & W2 --> MCP
+    classDef role fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef proto fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class L,W1,W2,W3 role
+    class MSG,A2A,MCP proto
+```
+
 The survey organizes the harness into **7 independent layers**: ^["[Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)"]
 | Layer | Name | Scope | Primary Projects |
 |-------|------|-------|-----------------|

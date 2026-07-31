@@ -21,6 +21,28 @@
 
 ## 三大技术栈
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 ### 1. 跨模态音视频记忆库（"不要忘"）
 
 **问题**：现有模型缺乏长期记忆能力，传统方案依赖上下文窗口保存历史信息，但随着视频长度增加，**早期内容会逐渐被后续信息稀释**——模型虽然能记住最近几个镜头，却很难稳定保存数分钟之前的人物特征。

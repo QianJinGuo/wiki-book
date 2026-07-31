@@ -455,6 +455,32 @@ Task-Driven 系统的问题不是执行不稳定，而是**任务仍需人持续
 对个人开发者的实际意义：**选技术栈时优先看是否兼容这些正在收敛的协议**。自己造的胶水层越多，未来迁移成本越高。协议层是长期资产，框架是短期工具。
 
 ## Related entities
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 - [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
 - [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/298-ai-agent.html)
 

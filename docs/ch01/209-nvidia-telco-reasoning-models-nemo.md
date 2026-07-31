@@ -21,6 +21,28 @@ Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDI
 
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 **1. NOC自动化从规则引擎向推理模型的范式转移**
 
 传统NOC自动化依赖规则脚本和开环触发机制，面对噪声信号、跨域依赖和动态变化的网络行为时束手无策。这正是当前50%运营商虽将自主网络列为最高ROI用例却难以落地的核心障碍。推理模型通过理解incident上下文和NOC信号来驱动多工具、多轮对话式的闭环工作流，将MTTR从小时级压缩到秒级，同时实现self-healing。

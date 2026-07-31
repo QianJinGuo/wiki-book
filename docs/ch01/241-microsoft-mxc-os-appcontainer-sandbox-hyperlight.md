@@ -16,6 +16,25 @@ MXC 是 **dispatcher 模式**的跨 OS 沙箱：1 个 JSON 策略模型 + 1 个�
 
 ## 10 个 Containment Backend 速查表
 
+```mermaid
+graph LR
+    subgraph "威胁模型"
+        ATK[攻击者] --> VEC[攻击向量]
+        VEC --> TGT[目标系统]
+    end
+    subgraph "防御层"
+        WAF[WAF/网关] --> IDS[入侵检测]
+        IDS --> RBAC[权限控制]
+        RBAC --> AUD[审计日志]
+    end
+    VEC --> WAF
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK,VEC,TGT threat
+    class WAF,IDS,RBAC,AUD defense
+```
+
+
 | Wire name | OS 原语 | 稳定性 | 关键策略翻译 |
 | --- | --- | :---: | --- |
 | `processcontainer` (Windows 默认) | AppContainer 或 BaseContainer，3 层 fallback | **Stable**（BaseContainer 除外） | Capability SID + LPAC + Win32k disable + Job Object UI limits + DACL ACEs |

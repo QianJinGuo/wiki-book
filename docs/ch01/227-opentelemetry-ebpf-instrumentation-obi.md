@@ -18,6 +18,25 @@ eBPF 提供了一条新路：在 Linux 内核里挂载安全沙箱化的探针�
 
 ## 二、OBI 三大支柱
 
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
+
 | 支柱 | 核心能力 | 关键覆盖 |
 |------|---------|---------|
 | **应用可观测性** | 分布式追踪 + RED Metrics + Trace-Log 关联 | Web/数据库/消息队列/GenAI/GPU 等 15+ 协议与场景 |

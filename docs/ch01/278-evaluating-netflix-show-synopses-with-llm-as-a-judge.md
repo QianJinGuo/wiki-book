@@ -68,6 +68,27 @@ Higher take fraction indicates more choosing, while lower abandonment suggests a
 
 ## 评分理由
 
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
+
 Solid industry application of LLM-as-a-Judge methodology with meaningful technical depth: per-criteria dedicated judges, zero-shot CoT prompting, Automatic Prompt Optimization, inference-time scaling (longer rationales, consensus scoring), and tiered rationale generation. Includes practical details on human-AI calibration (8 rounds, 80% agreement), golden set construction (~600 synopses with binary labels), and correlation of LLM scores with business metrics (take fraction, abandonment rate). Draws on relevant academic references (CoT, APO). The article is clearly written and well-structured, authored by named researchers/practitioners. However, the content is truncated mid-section (cuts off during 'tiered rationales' discussion), quantitative results in the excerpt are limited, no full comparison to baselines, and it is an industry blog rather than peer-reviewed research. Despite these issues, the methodology, calibration process, and integration of LLM evaluation with implicit feedback signals make it a useful case study for a technical AI/ML wiki.
 
 ## 相关实体

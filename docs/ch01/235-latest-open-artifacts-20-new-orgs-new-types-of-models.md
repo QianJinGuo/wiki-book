@@ -115,6 +115,28 @@ To encourage people to take a look at the diversity of models in this issue, the
 
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "训练流水线"
+        DATA[数据准备] --> SFT[监督微调 SFT]
+        SFT --> RL[对齐训练 RLHF/DPO]
+        RL --> EVAL[评估]
+    end
+    subgraph "高效方法"
+        LORA[LoRA/QLoRA<br/>参数高效]
+        DIST[知识蒸馏<br/>小模型]
+        RLBF[GRPO<br/>无Reward Model]
+    end
+    SFT --> LORA
+    RL --> RLBF
+    EVAL --> DIST
+    classDef pipeline fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef method fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class DATA,SFT,RL,EVAL pipeline
+    class LORA,DIST,RLBF method
+```
+
+
 ### 1. 开源模型生态的结构性分散
 
 本期 Artifacts Log 最显著的特征是模型发布者的高度分散化。与往常被 Qwen、DeepSeek、Kimi 等少数大厂主导的格局不同，本次覆盖的模型来自 NVIDIA、Cohere、Sarvam、Mistral、Zed Industries、IBM、Meituan、百度等二十余个不同的组织，其中不乏首次进入开源模型领域的参与者。这种分散化反映了 AI 模型能力正在从「少数超强模型统治一切」向「大量专用模型各司其职」的结构性转型。大型语言模型依然重要，但行业整体正在向「模型组合」而非「模型单选」的方向演进。

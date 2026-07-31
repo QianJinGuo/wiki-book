@@ -73,6 +73,27 @@ FlexAttention on AMD GPUs now uses two-stage pipelining in the Triton backend, d
 Apple Silicon binary wheels now ship with ahead-of-time-compiled Metal-4 shaders, built on macOS 26 with the metal-4 standard. This eliminates the runtime shader compilation overhead on first run, reducing startup latency for MPS workloads. A companion API (`torch._C._mps_loadMetalllib`) was also added for loading pre-compiled .metallib blobs directly, supporting the Triton Apple MPS backend's compile-time metallib workflow. Contributed by Isalia20 (Irakli Salia) (PR #179378).
 
 ## **Deprecations and Breaking Changes**
+
+```mermaid
+graph LR
+    subgraph "推理优化栈"
+        Q[量化 INT4/INT8<br/>精度换速度] --> KV[KV Cache优化<br/>减少重复计算]
+        KV --> PD[Prefill/Decode分离<br/>批处理]
+        PD --> SPEC[投机采样<br/>小模型草拟]
+    end
+    subgraph "部署方案"
+        LOC[本地 GPU]
+        CLOUD[云端推理 API]
+        EDGE[边缘/On-device]
+    end
+    Q --> LOC & CLOUD
+    SPEC --> EDGE
+    classDef opt fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class Q,KV,PD,SPEC opt
+    class LOC,CLOUD,EDGE deploy
+```
+
 #### **Distributed: Planned Breaking Changes for torchcomms**
 We've been working hard on integrating torchcomms directly into PyTorch Distributed so everyone can get the benefits out of the box. In an upcoming release (2.13+) we're planning on using torchcomms by default, which includes some breaking changes to how ProcessGroups operate. We aim to make these changes work automatically for most models and fix any incompatibilities in the ecosystem, but nevertheless, some models will be impacted.
 We're still polishing torchcomms but you can use it right now and get access to the new APIs, fault tolerance, window, scalability, and debuggability features. To get started, `pip install torchcomms` and set `TORCH_DISTRIBUTED_USE_TORCHCOMMS=1`.

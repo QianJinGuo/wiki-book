@@ -16,6 +16,21 @@ This piece by Nathan Lambert (Interconnects) argues that open-weight AI models f
 
 ## Key Points
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 - **Two converging policy threads**: Distillation regulation (targeting Chinese labs using U.S. frontier model outputs) and frontier capability controls (banning models above GPT-5.5/Claude Opus 4.8 capability thresholds) are creating momentum for a potential open-model ban within 6 months.
 - **Regulatory capture by Anthropic**: Anthropic's anti-distillation campaign — combining blog posts, letters to representatives, and limited technical evidence — is argued to be "the definition of regulatory capture," as the company would gain substantial economic security if Chinese model makers were banned.
 - **API insecurity is understated**: The article challenges the dichotomy that only open-weight models are insecure while APIs are safe, noting that even during Claude Mythos's most limited private beta, Discord sleuths gained unauthorized access. If a dangerous capability genuinely exists, the only coherent action would be to not host it in a directly queryable API.

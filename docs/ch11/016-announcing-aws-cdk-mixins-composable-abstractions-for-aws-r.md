@@ -5,6 +5,25 @@
 > 📊 Level ⭐⭐ | 24.0KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-re.md`
 
 ## 背景
+
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
 AWS 云开发套件（AWS Cloud Development Kit，CDK）是一个开源软件开发框架，用于以代码方式定义云基础设施，并通过 AWS CloudFormation 进行配置。CDK 包含预构建、模块化且可重用的云组件，称为构造块（constructs）。构造块是代表一个或多个 AWS CloudFormation 资源及其配置的基本构建单元。 
 传统上，我们将 CDK 构造块组织为三个层级。L1 构造块直接映射到 CloudFormation 资源。L2 构造块提供更高级的抽象，包含便捷方法、安全默认配置和辅助函数。L3 构造块（也称为模式）组合多个资源以解决特定用例。然而，这种架构造成了一个根本性的权衡：你必须在即时访问新 AWS 功能（L1）和复杂抽象（L2/L3）之间做出选择。团队通常需要自定义 L2 构造块，重新构建整个构造块库以满足其特定需求。 
 CDK Mixins 通过将抽象与构造块实现解耦来解决这个问题。与其将所有功能捆绑到单一的 L2 构造块中，Mixins 允许你精确组合所需的功能，将其应用于任何构造块类型，并保持对底层 CloudFormation 属性的完全访问。

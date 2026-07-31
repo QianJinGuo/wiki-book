@@ -91,6 +91,21 @@ So let the work correct your assumptions, because you cannot afford to lead agen
 
 ## 深度分析
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 **1. 领导力的时代错位：传统"脱离杂草"策略在工具变革期成为负债**
 
 传统的工程领导力模型要求管理者逐步脱离一线代码工作，专注于系统、流程和组织设计。但当工具本身发生根本性变革时，这种距离变成了理解力的盲区。作者的核心论点是：**当"杂草"本身在变化时，远离杂草意味着你无法理解正在发生的事**。在 Agentic Engineering 时代，"杂草"不再只是业务逻辑和代码实现，还包括 agent 的行为模式、harness 的设计选择、LLM 输出的可信赖度判断——这些都是需要亲身接触才能建立直觉的新领域。

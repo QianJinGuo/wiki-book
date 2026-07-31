@@ -42,6 +42,21 @@ while True:
 
 ## Runtime 7 大职责 + 1 复杂 Agent 扩展层
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 ### 1. 工具管理 (ToolRegistry)
 
 Runtime **统一注册和管理工具**,把当前可用工具的 schema 提供给模型。**模型只需要基于这些描述决定是否调用,不需要知道工具怎么实现的**。这是 LLM 与工具实现的**解耦层**。

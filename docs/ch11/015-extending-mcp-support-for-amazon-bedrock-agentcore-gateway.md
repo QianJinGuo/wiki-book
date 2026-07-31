@@ -8,6 +8,21 @@
 
 ## Unite MCP servers for enterprise through AgentCore Gateway
 
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
+
 Without a centralized gateway, every MCP server that your organization builds must independently handle credentials, policy enforcement, private connectivity, and logging. This means that your legal team’s contract review MCP server, your finance team’s data retrieval MCP server, and your operations team’s incident response MCP server each carry the same infrastructure burden. Security teams review each server individually, developers wait for approvals, and nobody has a unified view of how MCP infrastructure is being used across the organization.
 
 [AgentCore Gateway](<https://aws.amazon.com/blogs/machine-learning/transform-your-mcp-architecture-unite-mcp-servers-through-agentcore-gateway/>) helps avoid this duplication by establishing a single-entry point that MCP traffic flows through. The following diagram shows the main features for AgentCore Gateway that allow central governance and control.

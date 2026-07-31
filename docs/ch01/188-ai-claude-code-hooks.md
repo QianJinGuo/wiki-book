@@ -27,6 +27,21 @@ Hooks 的思路很直接：不再依赖 LLM 的「记不记得」，而是直接
 实际用下来，大部分场景用 command 就够了，能覆盖 90% 的需求。
 
 ##  Hooks 工作原理：事件驱动的四步流程
+
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
 Claude Code hooks 的执行流程其实很简单：当某个事件触发（比如  ` PreToolUse(Write)  ` ）时，系统会先检查匹配规则，看有没有对应的 hook 需要执行。如果匹配上，就运行你的 hook 脚本，并通过 stdin 传入一段 JSON 数据。
 脚本执行完之后，会根据退出码决定下一步：
 

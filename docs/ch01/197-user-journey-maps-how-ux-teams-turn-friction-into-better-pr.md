@@ -19,6 +19,32 @@ This guide covers everything from core components and types to a five-step creat
 *   The biggest mistake teams make is building maps from internal assumptions instead of real user research.
 
 ## What Is a User Journey Map?
+
+```mermaid
+graph TB
+    AG[Agent] -->|"tool_call"| TB[Tool Bus<br/>工具总线]
+    TB --> FT[Function Tool<br/>应用代码]
+    TB --> HT[Hosted Tool<br/>Provider托管]
+    TB --> MT[MCP Tool<br/>标准协议]
+    subgraph "MCP 协议"
+        MT --> MCS[MCP Server]
+        MCS --> RES[资源/提示/工具]
+    end
+    subgraph "审批"
+        AP[auto: 只读] 
+        MP[manual: 写操作]
+    end
+    FT --> AP
+    HT --> AP
+    MT --> MP
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mcp fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef appr fill:#fef3c7,stroke:#d97706,color:#78350f
+    class FT,HT,MT,TB tool
+    class MCS,RES mcp
+    class AP,MP appr
+```
+
 A user journey map is a visual representation of a user's complete interaction with a product or service over time. It decomposes the experience into discrete steps, revealing not just the actions users take but the thoughts and emotions they have along the way.
 Think of it as the difference between a floor plan and a walk-through video. Analytics give you the floor plan: traffic, drop-off points, click rates. A journey map gives you the walk-through: the confusion at the front door, the frustration at the broken elevator, the relief when the destination is finally clear.
 Journey maps typically follow a timeline structure. They start when a user first recognizes a need and continue through discovery, onboarding, active use, and sometimes exit. Each phase surfaces a new layer of insight that is invisible in a funnel chart alone.

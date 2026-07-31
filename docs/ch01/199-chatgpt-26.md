@@ -25,6 +25,21 @@ source_url: https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg
 - ##  第一代 AI 原住民
 
 ## 相关实体
+
+```mermaid
+graph LR
+    subgraph "Harness 层次"
+        OBS[可观测性<br/>日志/Trace] --> GRD[护栏<br/>审批/限制]
+        GRD --> ORC[编排<br/>任务分发]
+    end
+    ORC --> AG[Agent 执行]
+    AG -->|"结果反馈"| OBS
+    classDef harness fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef agent fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    class OBS,GRD,ORC harness
+    class AG agent
+```
+
 - [ChatGPT官宣26位未来之星](ch01/199-chatgpt-26.html)
 
 ## 深度分析

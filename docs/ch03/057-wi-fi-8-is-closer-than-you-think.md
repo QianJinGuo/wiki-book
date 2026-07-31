@@ -22,6 +22,25 @@ Coleman 指出："这全部关乎可靠性，延迟只是附加收益。"  这�
 
 ## 频谱效率增强
 
+```mermaid
+graph LR
+    subgraph "威胁模型"
+        ATK[攻击者] --> VEC[攻击向量]
+        VEC --> TGT[目标系统]
+    end
+    subgraph "防御层"
+        WAF[WAF/网关] --> IDS[入侵检测]
+        IDS --> RBAC[权限控制]
+        RBAC --> AUD[审计日志]
+    end
+    VEC --> WAF
+    classDef threat fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef defense fill:#d1fae5,stroke:#059669,color:#064e3b
+    class ATK,VEC,TGT threat
+    class WAF,IDS,RBAC,AUD defense
+```
+
+
 Wi-Fi 8 引入多项机制以充分挖掘现有频谱资源，而非简单加宽信道。这些机制在密集部署场景（企业级 Wi-Fi 的主要挑战）中有显著收益。
 
 - **非主信道访问（Non-primary channel access）**：在 80 MHz 信道上，AP 可忽略忙碌的主 20 MHz 信道（如仅被邻居 AP 的管理流量占用），而在更干净的次级信道上传输，提升密集部署效率。

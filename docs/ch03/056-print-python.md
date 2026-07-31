@@ -44,6 +44,25 @@ def process_order(order_id):
 **标准库 logging 的定位**：适合大型企业系统、有严格合规要求的场景、或者你无法引入第三方依赖的环境。
 
 ## Loguru：开发者体验的极致
+
+```mermaid
+graph TB
+    subgraph "基础设施"
+        LB[负载均衡/CDN] --> GW[API Gateway]
+        GW --> SVC[服务层<br/>Serverless/Container]
+        SVC --> DB[数据层<br/>RDS/KV/OSS]
+    end
+    subgraph "Agent 运行时"
+        AGT[Agent 实例] --> SANDBOX[沙箱/VM]
+        SANDBOX --> FS[隔离文件系统]
+    end
+    SVC --> AGT
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef runtime fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class LB,GW,SVC,DB infra
+    class AGT,SANDBOX,FS runtime
+```
+
 Loguru 是"开发者优先"的日志库，用最少的代码做最多的事。第一次用 Loguru 是在一个数据清洗脚本里，原本只是想"试一下"，结果那个脚本到现在还在线上跑，日志部分一行没改过。
 
 ### 零配置起步

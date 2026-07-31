@@ -12,6 +12,27 @@
 
 ## 时代背景：递归自进化按下 AGI 加速键
 
+```mermaid
+graph LR
+    subgraph "AI编程工作流"
+        INT[意图理解] --> PLAN[任务拆解]
+        PLAN --> GEN[代码生成]
+        GEN --> VAL[验证/测试]
+        VAL -->|"失败"| PLAN
+    end
+    subgraph "上下文来源"
+        CMD[CLAUDE.md]
+        SKL[Skills]
+        LSP[语言服务]
+    end
+    INT --> CMD & SKL & LSP
+    classDef flow fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef ctx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class INT,PLAN,GEN,VAL flow
+    class CMD,SKL,LSP ctx
+```
+
+
 ### Jack Clark 与 OpenAI 的信号
 
 - **Anthropic 联合创始人 Jack Clark**：到 2028 年底，**递归自进化（recursive self-improvement）发生的概率 60%**
