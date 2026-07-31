@@ -16,6 +16,39 @@
 
 ---
 
+## 架构图
+
+```mermaid
+graph TB
+    subgraph "RAG 四层架构"
+        L1["Layer 1: 关键词<br/>BM25/FTS"] --> L2["Layer 2: 近邻图<br/>TF-IDF 余弦"]
+        L2 --> L3["Layer 3: 语义搜索<br/>Embedding + Vectorize"]
+        L3 --> L4["Layer 4: Reranker<br/>重排序"]
+    end
+    subgraph "索引构建"
+        IDX[61K 文档] --> TFIDF[TF-IDF 稀疏矩阵]
+        TFIDF --> GRAPH[57K 节点 × 20 近邻]
+    end
+    IDX --> L1
+    GRAPH --> L2
+    subgraph "部署"
+        BROWSER[浏览器 IndexedDB<br/>0ms]
+        SERVER[Pages Function<br/>~50ms]
+        CLOUD[讯飞 + Vectorize<br/>~300ms]
+    end
+    L1 --> BROWSER
+    L2 --> BROWSER
+    L3 --> CLOUD
+    L4 --> SERVER
+    classDef layer fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef idx fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef deploy fill:#d1fae5,stroke:#059669,color:#064e3b
+    class L1,L2,L3,L4 layer
+    class IDX,TFIDF,GRAPH idx
+    class BROWSER,SERVER,CLOUD deploy
+```
+
+
 ## 导读
 
 模型的知识有截止日期，但 RAG 让它能访问实时信息。

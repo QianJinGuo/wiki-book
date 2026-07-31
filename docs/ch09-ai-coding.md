@@ -33,6 +33,36 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 
 ---
 
+
+## 架构图
+
+```mermaid
+graph LR
+    subgraph "AI 编程演进"
+        V1[Vibe Coding<br/>氛围编程] --> V2[Agentic Coding<br/>自主编程]
+        V2 --> V3[Autonomous Engineering<br/>自主工程]
+    end
+    subgraph "工具生态"
+        CC[Claude Code]
+        CX[Codex CLI]
+        CU[Cursor/Windsurf]
+        OT[Qoder/Trae]
+    end
+    V2 --> CC & CX & CU & OT
+    subgraph "核心能力"
+        ED[代码理解] --> GN[代码生成]
+        GN --> DBG[调试修复]
+        DBG --> TST[测试验证]
+    end
+    V2 --> ED
+    classDef stage fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef tool fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef cap fill:#d1fae5,stroke:#059669,color:#064e3b
+    class V1,V2,V3 stage
+    class CC,CX,CU,OT tool
+    class ED,GN,DBG,TST cap
+```
+
 ## 本章内容
 
 - [001. 视觉还原 AI 技术](ch09/001-ai)

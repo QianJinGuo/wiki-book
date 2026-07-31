@@ -77,6 +77,9 @@ markdown_extensions:
 extra_css:
   - styles.css
 
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
+
 extra:
   social:
     - icon: fontawesome/brands/github

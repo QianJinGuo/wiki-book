@@ -33,6 +33,30 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 
 ---
 
+
+## 架构图
+
+```mermaid
+graph LR
+    subgraph "Harness 五层架构"
+        L1[Observability<br/>可观测性] --> L2[Guardrails<br/>护栏]
+        L2 --> L3[Orchestration<br/>编排]
+        L3 --> L4[Memory<br/>持久记忆]
+        L4 --> L5[Self-Improvement<br/>自优化]
+    end
+    L5 -.feedback.-> L1
+    subgraph "部署形态"
+        D1[Docker<br/>本地开发]
+        D2[CF Pages<br/>边缘部署]
+        D3[GitHub Actions<br/>CI/CD]
+    end
+    L3 --> D1 & D2 & D3
+    classDef layer fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef deploy fill:#fef3c7,stroke:#d97706,color:#78350f
+    class L1,L2,L3,L4,L5 layer
+    class D1,D2,D3 deploy
+```
+
 ## 本章内容
 
 - [001. Impeccable：大规模自动化测试框架](ch05/001-impeccable)

@@ -13,4 +13,42 @@
 <script src="{{ 'assets/javascripts/rag-client.js' | url }}"></script>
 <script src="{{ 'assets/javascripts/ai-chat.js' | url }}"></script>
 <script src="{{ 'assets/javascripts/diagram-overlay.js' | url }}"></script>
+<script>
+document$.subscribe(function() {
+  if (typeof mermaid === 'undefined') return;
+  mermaid.initialize({startOnLoad: false, theme: 'default', securityLevel: 'loose'});
+
+  // Collect mermaid source code BEFORE replacing any DOM
+  var items = [];
+  document.querySelectorAll('pre.mermaid code').forEach(function(code, i) {
+    items.push({ idx: i, src: code.textContent, parent: code.closest('pre.mermaid') });
+  });
+  document.querySelectorAll('div.mermaid').forEach(function(div, i) {
+    var t = div.textContent.trim();
+    if (t && !div.querySelector('svg')) items.push({ idx: items.length, src: t, parent: div });
+  });
+  if (!items.length) return;
+
+  // Replace parents with placeholder divs, then render async
+  items.forEach(function(item) {
+    var ph = document.createElement('div');
+    ph.className = 'mermaid';
+    ph.id = 'mermaid-ph-' + item.idx;
+    ph.setAttribute('data-mermaid-src', item.src);
+    if (item.parent) item.parent.replaceWith(ph);
+  });
+
+  // Render each diagram
+  items.forEach(function(item) {
+    var ph = document.getElementById('mermaid-ph-' + item.idx);
+    if (!ph) return;
+    mermaid.render('mermaid-svg-' + item.idx, item.src).then(function(r) {
+      ph.innerHTML = r.svg;
+    }).catch(function(e) {
+      ph.textContent = item.src;
+      console.warn('[Mermaid] render error for #' + item.idx + ':', e.message || e);
+    });
+  });
+});
+</script>
 {% endblock %}
