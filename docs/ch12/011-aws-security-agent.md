@@ -2,6 +2,20 @@
 
 ## Ch12.011 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
 
+```mermaid
+graph TB
+    subgraph Security["AWS Security Agent 防线"]
+        AG[Security Agent] --> SCAN[实时扫描]
+        SCAN --> DET[威胁检测]
+        DET --> RESP[自动响应]
+        RESP --> AUD[审计日志]
+    end
+    subgraph Payment["跨境支付"]
+        TXN[交易请求] --> WAF[WAF 规则]
+        WAF --> AG
+    end
+```
+
 > 📊 Level ⭐⭐ | 33.9KB | `entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md`
 
 # 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线

@@ -2,6 +2,17 @@
 
 ## Ch04.034 Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行
 
+```mermaid
+graph TB
+    subgraph Skill["Skill 迭代流程"]
+        S1[编写 SKILL.md] --> S2[Agent 执行]
+        S2 --> S3{结果达标?}
+        S3 -->|否| S4[修正指令]
+        S4 --> S1
+        S3 -->|是| S5[固化标准]
+    end
+```
+
 > 📊 Level ⭐⭐ | 35.4KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
 
 ## 核心概念

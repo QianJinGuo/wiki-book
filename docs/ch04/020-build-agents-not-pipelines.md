@@ -18,6 +18,20 @@
 
 ### Pipeline与Agent的本质区别
 
+```mermaid
+graph LR
+    subgraph Pipeline["Pipeline — 库模式"]
+        P1[开发者控制流程] --> P2[调用辅助函数]
+        P2 --> P3[可预测成本]
+    end
+    subgraph Agent["Agent — 框架模式"]
+        A1[LLM 主导控制流] --> A2[框架调用开发者代码]
+        A2 --> A3[反应式执行]
+    end
+    Pipeline -.->|复杂度超出限制| X[放弃解决]
+    Agent -.->|扩展循环| Y[思考更久]
+```
+
 作者用**库与框架的类比**来区分pipeline与agent两种架构：pipeline类似库，由开发者控制主流程、调用辅助函数；agent类似框架，由LLM主导控制流，框架在关键时刻调用开发者代码 。在简单场景下二者等价，但当context超出单次prompt限制或需要**反应式执行**（先行动再根据结果调整）时，二者表现差异显著 。
 
 ### 可预测性陷阱：Pipeline的成本下限

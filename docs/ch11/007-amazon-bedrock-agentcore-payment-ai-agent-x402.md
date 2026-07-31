@@ -2,6 +2,20 @@
 
 ## Ch11.007 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
 
+```mermaid
+sequenceDiagram
+    participant Agent as AI Agent
+    participant GW as AgentCore Gateway
+    participant Pay as Payment Service
+    participant X402 as x402 Protocol
+    Agent->>GW: 发起支付请求
+    GW->>Pay: 路由到 Payment Tool
+    Pay->>X402: x402 协议结算
+    X402-->>Pay: 结算确认
+    Pay-->>GW: 支付结果
+    GW-->>Agent: 返回执行状态
+```
+
 > 📊 Level ⭐⭐ | 52.5KB | `entities/bedrock-agentcore-payment-x402-agent.md`
 
 # 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战

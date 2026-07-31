@@ -2,6 +2,25 @@
 
 ## Ch11.009 AWS Bedrock 多智能体协作指南
 
+```mermaid
+graph TB
+    subgraph Bedrock["AWS Bedrock 多智能体协作"]
+        CO[Supervisor Agent] --> WA[Worker Agent A]
+        CO --> WB[Worker Agent B]
+        CO --> WC[Worker Agent C]
+        WA <-->|消息传递| WB
+        WB <-->|消息传递| WC
+    end
+    subgraph Tools["共享工具层"]
+        KB[Knowledge Base]
+        CODE[Code Interpreter]
+        WEB[Web Search]
+    end
+    WA --> Tools
+    WB --> Tools
+    WC --> Tools
+```
+
 > 📊 Level ⭐⭐ | 35.9KB | `entities/aws-bedrock-multi-agent-collaboration-guide.md`
 
 ## 一、AWS Bedrock 多智能体核心架构

@@ -2,6 +2,18 @@
 
 ## Ch04.008 Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps
 
+```mermaid
+graph TB
+    REQ[请求] --> M1[Middleware 1: 日志]
+    M1 --> M2[Middleware 2: 认证]
+    M2 --> M3[Middleware 3: 限流]
+    M3 --> AG[Agent 执行]
+    AG --> R1[Middleware 3: 结果检查]
+    R1 --> R2[Middleware 2: 审计]
+    R2 --> R3[Middleware 1: 响应日志]
+    R3 --> RES[响应]
+```
+
 > 📊 Level ⭐ | 8.6KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`
 
 > -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)

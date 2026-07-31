@@ -2,6 +2,15 @@
 
 ## Ch11.025 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
 
+```mermaid
+graph LR
+    Kiro[Kiro CLI] -->|定义任务| EB[EventBridge]
+    EB -->|定时触发| ECS[ECS Fargate]
+    ECS -->|执行| Agent[AI Agent]
+    Agent -->|结果| S3[S3 存储]
+    Agent -->|通知| SNS[SNS 通知]
+```
+
 > 📊 Level ⭐⭐ | 17.0KB | `entities/kiro-job-scheduler-eventbridge-ecs-fargate.md`
 
 # 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务

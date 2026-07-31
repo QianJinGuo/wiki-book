@@ -13,6 +13,24 @@
 一类是任务型技能（通常设置 disable-model-invocation: true），对应一整套步骤化流程，比如部署、提交或安全审查，用户一般通过 /skill-name 直接触发。
 另一类是参考型技能（用户不可直接调用），更像是背景知识，比如风格指南或领域术语，Claude 会在相关场景下自动应用。
 本文基于 Anthropic 官方的技能编写最佳实践，总结了 14 个可以复用的设计模式，分为五类：发现与选择、上下文经济、指令校准、工作流控制和可执行代码。
+
+```mermaid
+graph TB
+    subgraph Skills["14 种 Skills 设计模式"]
+        D["发现与选择<br/>1.激活元数据 2.排除条款"]
+        C["上下文经济<br/>3.上下文预算 4.渐进式披露"]
+        I["指令校准<br/>5-8.校准类模式"]
+        W["工作流控制<br/>9-11.流程控制模式"]
+        E["可执行代码<br/>12-14.代码生成模式"]
+    end
+    D --> C --> I --> W --> E
+    
+    style D fill:#e8f5e9
+    style C fill:#e3f2fd
+    style I fill:#fff3e0
+    style W fill:#fce4ec
+    style E fill:#f3e5f5
+```
 ---
 
 ## 一、发现与选择

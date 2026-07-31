@@ -2,6 +2,19 @@
 
 ## Ch12.004 From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
 
+```mermaid
+graph LR
+    subgraph Before["迁移前: SSH 管道"]
+        SSH[SSH 隧道] --> EMR[EMR 集群]
+        EMR --> DATA1[数据输出]
+    end
+    subgraph After["迁移后: REST API"]
+        API[REST API + IAM] --> LAMBDA[Lambda 函数]
+        LAMBDA --> EMR2[EMR Serverless]
+        EMR2 --> DATA2[数据输出]
+    end
+```
+
 > 📊 Level ⭐ | 8.8KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
 
 ## 深度分析

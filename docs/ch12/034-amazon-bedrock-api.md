@@ -2,6 +2,20 @@
 
 ## Ch12.034 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南
 
+```mermaid
+graph TB
+    subgraph Threat["API 盗用威胁"]
+        LEAK[API Key 泄露] --> ABUSE[第三方盗用]
+        ABUSE --> COST[成本暴涨]
+        ABUSE --> DATA[数据泄露]
+    end
+    subgraph Defense["Bedrock API 防护"]
+        IAM[IAM 最小权限] --> IP[IP 白名单]
+        IP --> USAGE[用量监控]
+        USAGE --> ALERT[异常告警]
+    end
+```
+
 > 📊 Level ⭐⭐ | 10.6KB | `entities/amazon-bedrock-api-security-guide.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-api-security-guide.md)

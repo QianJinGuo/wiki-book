@@ -2,6 +2,17 @@
 
 ## Ch11.030 AWS Bedrock Dynamic Document Extraction Pipeline
 
+```mermaid
+graph LR
+    DOC[文档输入] --> CLS[分类器]
+    CLS -->|结构化| TPL[模板提取]
+    CLS -->|非结构化| LLM[LLM 提取]
+    TPL --> MERGE[合并结果]
+    LLM --> MERGE
+    MERGE --> VAL[验证]
+    VAL --> OUT[结构化输出]
+```
+
 > 📊 Level ⭐⭐ | 15.7KB | `entities/extract-data-with-on-demand-and-batch-pipelines-dynamically.md`
 
 # AWS Bedrock Dynamic Document Extraction Pipeline
