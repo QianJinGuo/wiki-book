@@ -3,7 +3,7 @@ type: source-card
 title: "Anthropic 博客：Claude Code 大型代码库最佳实践"
 source: "https://mp.weixin.qq.com/s/svqke7ZZPU4q5iemPiUMWA"
 author: "AGI Hunt（Anthropic）"
-source_url: "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start"
+source_url: "https://mp.weixin.qq.com/s/svqke7ZZPU4q5iemPiUMWA"
 published: "2026-05-15"
 collected: "2026-05-16"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

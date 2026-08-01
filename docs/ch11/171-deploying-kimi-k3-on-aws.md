@@ -8,6 +8,20 @@
 
 > **Background**: Based on the AWS ML Blog article "Deploying Kimi K3 on AWS" (2026-07-27), covering the deployment of Moonshot AI's 2.8T parameter MoE model on AWS infrastructure via SageMaker HyperPod and EKS.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Deploying Kimi K3 on AWS"))
+    深度分析
+      Model Specifications
+      Deployment Architecture…
+      Significance and Capaci…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 This entity synthesizes the official AWS deployment guide for Kimi K3, the first open-weight model to reach the 3-trillion-parameter class. It documents two production-grade deployment paths — Amazon SageMaker HyperPod (managed inference operator) and Amazon EKS (self-managed Kubernetes) — both requiring p6-b300 instances with NVIDIA B300 Blackwell Ultra GPUs. The deployment leverages a vLLM day-0 container, MXFP4 quantized weights, and tensor parallelism across 8 GPUs. This entity complements the wiki's existing coverage on Kimi K3's architecture, open-source release, and industry implications.

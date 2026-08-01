@@ -2,7 +2,7 @@
 
 ## Ch11.245 Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 
-> 📊 Level ⭐⭐ | 4.6KB | `entities/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md`
+> 📊 Level ⭐⭐ | 5.0KB | `entities/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md`
 
 # Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 
@@ -48,8 +48,11 @@ The most common and recommended pattern. A central fact dataset is related to mu
     
     
     SALES_FACT.CUSTOMER_ID → CUSTOMER_DIM.CUSTOMER_ID
+
     SALES_FACT.PRODUCT_ID → PRODUCT_DIM.PRODUCT_ID
+
     SALES_FACT.TIME_ID → TIME_DIM.TIME_ID
+
     SALES_FACT.STORE_ID → STORE_DIM.STORE_ID
 
   * All joins are single-hop (fact to dimension), with no chaining required.
@@ -58,9 +61,11 @@ The most common and recommended pattern. A central fact dataset is related to mu
 #### Sample queries
 
 Total sales by customer segment and region:
+
     
     
     SELECT c.segment, c.region,
+
         SUM
 
 ---

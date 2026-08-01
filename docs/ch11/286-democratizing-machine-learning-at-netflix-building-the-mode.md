@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Democratizing Machine Learni…"))
+    深度分析
+      核心观点
+      The Challenge: A Fragme…
+      内容结构
+      技术要点
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph 涉及code领域的核心技术议题。

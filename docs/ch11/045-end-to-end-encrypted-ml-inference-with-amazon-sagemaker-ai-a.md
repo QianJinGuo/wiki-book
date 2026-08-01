@@ -29,6 +29,27 @@ In this post, you will learn how to:
 
 When finished you will have a system that uses concrete-ml in SageMaker AI designed to perform end-to-end encrypted ML inference.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("End-to-end encrypted ML infe…"))
+    Solution overview
+    Prerequisites
+    深度分析
+      1. 数学安全与硬件安全的根本性差异
+      2. 量化是 FHE 推理从'理论可行'走向'…
+      3. Concrete-ML 的 API 兼容…
+      4. S3 中转架构反映了 FHE 与云服务 …
+    实践启示
+      1. 量化是 FHE 推理的必选项，而非可选项
+      2. 采用异步推理模式并配置足够的等待超时
+      3. 妥善保管客户端解密后的数据——FHE 安…
+      4. 训练阶段无需 FHE——直接复用现有 s…
+    相关实体
+```
+
 ## Solution overview
 
 Using concrete-ml in SageMaker AI works as follows:

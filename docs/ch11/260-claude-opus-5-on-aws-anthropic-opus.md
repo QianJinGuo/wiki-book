@@ -9,6 +9,18 @@
 > **vxc score**: 64 | Anthropic 第五代Opus模型发布详情，覆盖Agentic Coding、知识工作、视觉理解、长时间任务等改进
 > **发布**: Introducing Claude Opus 5 on AWS: Anthropic's most capable Opus model
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Opus 5 on AWS：Anthrop…"))
+    Summary
+    Key Points
+    Related Entities
+    第 2 来源 — 夕小瑶科技说 2026-0…
+```
+
 ## Summary
 
 本文是 AWS 官方博客，宣布 Claude Opus 5 在 Amazon Bedrock 和 Claude Platform on AWS 上正式可用。Claude Opus 5 是 Anthropic 第五代 Opus 模型，在 Agentic Coding、知识工作、视觉理解、长时间运行任务等多个生产工作负载上提供显著改进。它在许多领域匹配 Claude Fable 5 的顶级智能水平，同时保持 Opus 级别的定价，并在 Bedrock 上默认提供零数据保留 (ZDR)。

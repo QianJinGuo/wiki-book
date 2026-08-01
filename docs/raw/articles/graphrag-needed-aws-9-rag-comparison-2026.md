@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "GraphRAG 是不是智商税？AWS 实测 9 种 RAG 方案"
-source: "arxiv.org"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://arxiv.org/pdf/2606.25656"
+source_url: "https://mp.weixin.qq.com/s/dN2qDn-CFvaXYrz-qyWOiA"
 published: "2026-05-01"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

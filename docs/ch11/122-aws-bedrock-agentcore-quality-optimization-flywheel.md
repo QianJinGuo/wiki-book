@@ -10,6 +10,17 @@ AI agents that perform well at launch don’t stay that way. As models evolve, u
 AgentCore is the platform to build, connect, and optimize agents at scale, with security enforced at the infrastructure layer. Thousands of developers already use AgentCore to build agents that reason, plan, and act across complex workflows. Today we are announcing new capabilities in AgentCore that complete the observe, evaluate, improve loop for agent performance and quality: recommendations and two ways to validate them.
 [Recommendations](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimization-recommendations.html>) analyze production traces and evaluation outputs to optimize your system prompt or tool descriptions for the evaluator you specify. [Batch evaluation](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-evaluations.html>) helps test the recommendation against a pre-defined test dataset and reports aggregate scores, catching regressions on cases you know matter. When hand-authored scenarios aren't enough, you can also [simulate a dataset](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/simulation.html>) using an LLM-backed actor to play the role of an end user. [A/B testing](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-testing.html>) runs a controlled comparison between versions of an agent through [AgentCore Gateway](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html>), splitting live production traffic at the percentage you configure and reporting results with confidence intervals and statistical significance. Recommendations propose changes, batch evaluation and A/B testing validate them, and together they replace the manual cycle of reading traces, guessing at fixes, and deploying blind.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock Agentcore Qualit…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 AgentCore 的质量优化飞轮代表了一种从直觉驱动到数据驱动的根本范式转变。传统 AI agent 优化严重依赖开发者个人经验——阅读 trace、形成假设、重写 prompt、测试少量案例后部署。这种手动循环不仅效率低下，而且容易引入新的问题，尤其在没有自动反馈机制的情况下，每次修复都可能为另一类用户创造新的边缘案例。AgentCore 的新能力通过三个核心组件构建了完整的自动化优化闭环：Recommendations 从生产环境 trace 和评估输出中学习，自动生成针对特定 evaluator 的系统 prompt 或工具描述优化建议；Batch Evaluation 在离线环境中使用预定义测试数据集验证推荐质量；A/B Testing 则通过 AgentCore Gateway 在生产流量上进行统计显著的对照实验。这种"观察-评估-改进"的三阶段循环将优化周期从周级别缩短到天级别，同时确保每一步决策都有数据支撑而非主观臆断。

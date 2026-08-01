@@ -9,6 +9,29 @@
 > **Background**: AWS China 团队将开源的 Billing and Cost Management MCP Server 改造适配后，部署到 Amazon Bedrock AgentCore Runtime，通过 Cognito OAuth 2.0 保护，最终接入 Amazon Quick Chat Agent 让业务用户用中文对话式查询多账号 AWS 成本。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Amazon Quick + Bedrock Age…"))
+    概念导图
+    整体链路
+    三大组件
+      1. Amazon Quick Chat Ag…
+      2. Amazon Bedrock Agent…
+      3. Amazon Cognito
+    跨账号模式
+    适用场景
+    待关注
+    相关实体
+    深度分析
+      MCP协议架构：解耦与组合的灵活性
+      OAuth 2LO在M2M场景的安全边界
+      跨账号委托的最小权限设计
+      Serverless容器化MCP的运维边界
+```
+
 ## 概念导图
 
 ```mermaid

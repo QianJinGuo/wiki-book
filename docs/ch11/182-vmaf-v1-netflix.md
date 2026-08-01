@@ -6,6 +6,21 @@
 
 # VMAF v1: Netflix 视频质量度量的全面升级
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("VMAF v1: Netflix 视频质量度量的全面升级"))
+    深度分析
+      CSF 调制：统一多设备模型的突破
+      CAMBI 集成：带状伪影检测
+      Chroma 特征：色彩失真的感知
+      运动特征修正
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 VMAF（Video Multimethod Assessment Fusion）是 Netflix 与大学合作开发并开源的视频质量度量指标，已成为视频行业编码评估和优化的事实标准。VMAF v1 是一次全面升级，核心改进包括：基于 CSF 调制的统一多设备模型（替代 v0 的多项式映射）、CAMBI 带状伪影检测集成、chroma 通道特征提取、NEG（No-Enhancement Gain）默认启用、运动特征修正。在大多数主观数据集上，v1 匹配或超越 v0 的准确性，同时计算复杂度反而降低。

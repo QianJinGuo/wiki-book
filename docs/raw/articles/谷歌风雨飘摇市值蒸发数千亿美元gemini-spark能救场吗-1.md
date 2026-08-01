@@ -3,7 +3,7 @@ type: source-card
 title: "谷歌风雨飘摇，市值蒸发数千亿美元！Gemini Spark能救场吗？"
 source: "wechat"
 author: "未标注作者；来源机构见 source"
-source_url: "https://x.com/LuminaXspace/status/2069702715999998139"
+source_url: "https://mp.weixin.qq.com/s/FwgZHWWw-MBwLu1EZSJdJg"
 published: "未标注"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("U of T AI Worm：CleverHans La…"))
+    深度分析
+      威胁的本质：从'静态恶意软件'到'会思考的蠕虫'
+      为什么'免费模型'就够了
+      攻击链推演
+      防御侧的根本挑战
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 2026 年 6 月 2 日，多伦多大学（U of T）CleverHans Lab 与 Vector Institute 的 Nicolas Papernot 团队发布研究，首次证明**公开可访问的 AI 模型**可以被用于驱动一种新型蠕虫——这种蠕虫会随着从一个设备扩散到下一个设备而**自适应调整策略**。与传统需要顶尖 AI 能力和高额成本的高级威胁不同，这种 AI 蠕虫可以用免费的开源模型构建，攻击每一个联网设备，而当前的网络防御体系尚未准备好应对这种威胁。

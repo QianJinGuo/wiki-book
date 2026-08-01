@@ -2,7 +2,7 @@
 
 ## Ch01.068 How To Measure Development Productivity?
 
-> 📊 Level ⭐ | 7.3KB | `entities/how-dev-productivity.md`
+> 📊 Level ⭐ | 7.5KB | `entities/how-dev-productivity.md`
 
 # How To Measure Development Productivity?
 
@@ -14,6 +14,7 @@ Markdown Content:
 Last week I published this cartoon on LinkedIn. It went instantly viral:
 
 ![Image 1](https://itamargilad.com/wp-content/uploads/2026/06/Museum-of-meaningless-metrics-1024x1024.png)
+
 Tokens spent (as well as the other metrics shown) are of course not meaningless, but everyone got the joke:
 
 *   The current “AI-flex” culture where people and companies are trying to impress by how much they’re using the technology rather than by what it gains them.
@@ -36,6 +37,7 @@ Early developer productivity metrics centered on work artifacts. Here’s a clas
 Today we chuckle at the folly of measuring anything by lines of code; that is until we see headlines like these:
 
 ![Image 2](https://itamargilad.com/wp-content/uploads/2026/06/Microsfot-Lines-of-Code.jpg)
+
 Yes, with AI we’re back to measuring success by lines of code.
 
 Other work dev “productivity” metrics are _commits_ or _pull requests_. These measure _activity_ — how many changes happen in the codebase, but that too is a very weak signal of value (and may also be [negatively correlated](https://thenewstack.io/ai-generated-code-crisis/)).

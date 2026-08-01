@@ -6,6 +6,20 @@
 
 # Netflix Kueue 迁移：百万级 Batch Job 从 CMB 到 Kubernetes 原生调度
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix Kueue 迁移：百万级 Batch J…"))
+    深度分析
+      迁移架构设计
+      Fair Sharing 与 Preempti…
+      迁移中的工程挑战
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Netflix 将自研的 Compute Managed Batch (CMB) 系统迁移到 Kubernetes 原生的 [Kueue](https://kueue.sigs.k8s.io/)，实现了百万级 batch job 的调度队列替换。CMB 创建于 2018 年，随着 Kubernetes 生态的成熟，其自研的 fair sharing、容量管理等功能已被开源方案覆盖。Kueue 的引入不仅替代了 CMB 的队列和调度逻辑，还带来了 preemption、全生命周期 fair sharing、多维度资源管理等 CMB 无法实现的能力。整个迁移对终端用户完全透明，零改动完成，生产迁移仅耗时 4 周。

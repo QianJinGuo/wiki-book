@@ -6,6 +6,26 @@
 
 # 在 Amazon EKS 上使用 NVIDIA GPU Operator 管理自定义 GPU 驱动与 CUDA 工作负载
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 Amazon EKS 上使用 NVIDIA GPU …"))
+    三个独有贡献（不应合并到现有 entity）
+    相关实体
+    深度分析
+      1. 核心问题：平台团队的 GPU 运维边界不清
+      2. GPU Operator 的本质：在 h…
+      3. 关键踩坑：driver 兼容性不只是 C…
+      4. 节点组架构：managed vs sel…
+    生产推荐组合
+    实践路径（6 步）
+    关键结论表
+    与现有相关实体的差异化
+    相关主题
+```
+
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **GPU driver / CUDA runtime / CUDA Toolkit 三层职责清晰分离** — 节点只装 driver（GPU Operator 统一管理），业务容器镜像固定 CUDA runtime，**节点 AMI 不装 CUDA Toolkit**。这是平台团队可标准化、可审计、可复现部署的关键架构选择。

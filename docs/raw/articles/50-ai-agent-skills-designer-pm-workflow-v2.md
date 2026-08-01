@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "从需求到原型：50 个设计师与产品经理值得掌握的 AI 智能体技能"
-source: "github.com"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://github.com/Owl-Listener/designer-skills"
+source_url: "https://mp.weixin.qq.com/s/EUdbIkpMaVUXIMgtRuIWRw"
 published: "2026-05-01"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

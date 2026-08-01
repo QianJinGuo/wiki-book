@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Apache Doris MCP Server + Qu…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 **MCP 协议正在成为 AI 数据分析的标准接入层。** 业务人员希望"用自然语言就能查数据、看趋势、做归因"，而不是每次都找数据工程师、写 SQL 或打开 BI 工具。MCP（Model Context Protocol）作为 Anthropic 提出的开放协议，被 Amazon Q、Kiro、Cursor、Amazon Quick Suite 等主流 AI 产品广泛采纳，正成为大模型对接企业数据源的标准路径。 Apache Doris 社区维护的 `apache/doris-mcp-server` 提供了 25 个覆盖 SQL 执行、元数据查询、查询分析、集群监控、数据治理的原生工具集，是目前最权威的 Doris MCP 实现。这意味着 MCP 协议不只是一个技术协议，而是一个正在形成的数据分析入口标准。

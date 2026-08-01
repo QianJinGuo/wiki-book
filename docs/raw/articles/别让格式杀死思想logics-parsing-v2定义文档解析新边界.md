@@ -3,7 +3,7 @@ type: source-card
 title: "别让格式杀死思想logics-parsing-v2定义文档解析新边界"
 source: "wechat"
 author: "未标注作者；来源机构见 source"
-source_url: "https://huggingface.co/Logics-MLLM/Logics-Parsing-v2https://www.modelscope.cn/models/Alibaba-DT/Logics-Parsing-v2"
+source_url: "https://mp.weixin.qq.com/s/FBt7UJ-TZGdTHtVoXPzC8Q"
 published: "2026-05-17 10:05"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

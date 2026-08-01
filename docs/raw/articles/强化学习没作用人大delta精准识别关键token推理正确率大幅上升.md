@@ -3,7 +3,7 @@ type: source-card
 title: "强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升"
 source: "wechat"
 author: "未标注作者；来源机构见 source"
-source_url: "https://arxiv.org/pdf/2605.21467"
+source_url: "http://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247901276&idx=4&sn=1a793f76bb77e2c068d2403b1c220d2a&chksm=e8da172edfad9e3802bdea883d8efffc625a5b6541870e359f431aa17eeef275bdbbcfd6c853#rd"
 published: "未标注"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

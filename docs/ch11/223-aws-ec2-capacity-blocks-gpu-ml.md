@@ -5,6 +5,29 @@
 > 📊 Level ⭐⭐ | 5.7KB | `entities/aws-ec2-capacity-blocks-gpu-ml.md`
 
 # EC2 Capacity Blocks：GPU短期容量决策指南
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS EC2 Capacity Blocks GPU ML"))
+    三个关键洞察
+      1. Capacity Blocks vs T…
+      2. 决策树
+      3. 短期GPU容量的新选择
+    深度分析
+      GPU容量供需失衡的结构性原因
+      三层GPU短期方案的价值定位
+      EC2 vs SageMaker的决策边界
+      预订策略的经济学
+    实践启示
+      短期GPU容量决策流程
+      Capacity Blocks选型检查清单
+      大规模部署提前量
+      与知识库的连接
+    相关实体
+```
+
 ## 三个关键洞察
 ### 1. Capacity Blocks vs Training Plans
 Capacity Blocks for ML（最新服务）适合需要短期专用GPU容量的场景（Hackathon、突发训练任务），比Savings Plans更灵活但价格稍高。按需价格节省40-50%，Savings Plans节省70-75%但需要1-3年承诺。

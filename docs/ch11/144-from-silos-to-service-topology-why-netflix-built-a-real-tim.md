@@ -8,6 +8,21 @@
 
 > **Background**: Netflix 构建了 Service Topology——一个实时更新的服务依赖拓扑图，整合三种互补数据源（eBPF 网络流、IPC 指标、分布式追踪），为数千微服务提供统一的依赖可视化和故障排查能力。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("From Silos to Service Topolo…"))
+    深度分析
+      实时性的工程权衡
+      时间旅行能力
+      规模挑战与设计教训
+      未来方向
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Netflix 面对数千微服务组成的分布式基础设施，传统可观测性工具（metrics、logs、traces）各自只展示碎片信息，工程师在凌晨 3 点故障排查时需要在多个工具间手动拼接信息。Service Topology 通过三层互补数据源（eBPF 网络流提供全覆盖、IPC 指标提供应用上下文、分布式追踪提供实际请求路径）构建实时更新的服务依赖图，支持亚秒级多跳查询、时间旅行和 blast radius 分析。

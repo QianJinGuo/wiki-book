@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/agentscope-java-harness-framework.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentScope Java Harness Fram…"))
+    核心定位
+    两大核心支柱
+      支柱一：Workspace 工作区
+      支柱二：AbstractFilesystem 抽象
+    与 vault 知识关联
+    相关实体
+    深度分析
+      在 Harness 工程体系中的坐标
+      AbstractFilesystem 的工程价值
+      双层记忆机制的成熟度
+      企业分布式场景的三个核心挑战
+    实践启示
+      选型建议
+      落地检查清单
+      当前局限性
+```
+
 ## 核心定位
 个人助手型 Agent 和企业级 Agent 是两种不同的工程形态。AgentScope Java Harness 的设计目标：**同一套逻辑，按需切换部署形态**（单机 → 多副本 → 隔离沙箱）。
 

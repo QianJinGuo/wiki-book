@@ -8,6 +8,22 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-secret-scanning-ai-ml-false-positive-reduction.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub Secret Scanning: AI/M…"))
+    深度分析
+      信噪比决定安全工具的有效性
+      上下文感知验证的技术实现
+      两级架构的工程设计
+      与传统方法的对比
+    差异化对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 GitHub 与 Microsoft Security & AI Agents Offense 团队合作，在 secret scanning 系统中引入 LLM 驱动的上下文感知验证机制，将误报率降低 75.76%（目标 65%）。核心创新在于"更好的上下文"而非"更多的上下文"——通过提取代码中的使用信号（变量赋值、API 调用路径、认证头传递等）来判断疑似 secret 是否真正被用作凭证，而非仅依赖模式匹配。

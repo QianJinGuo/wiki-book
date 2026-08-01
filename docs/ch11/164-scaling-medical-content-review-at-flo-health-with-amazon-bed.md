@@ -6,6 +6,26 @@
 
 # Scaling medical content review at Flo Health with Amazon Bedrock – Part 2
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scaling medical content revi…"))
+    关键技术架构
+      MACROS 架构适配
+      AI 内容生成管道
+      渐进式内容呈现
+      具体案例优于抽象规则
+    深度分析
+      AI 在高信任度领域的边界设计哲学
+      多 Judge 架构的模块化价值
+      结构化反馈循环作为系统级学习机制
+      YAML 胜于 JSON 的工程启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Flo Health 工程团队基于 AWS Generative AI Innovation Center 的 PoC，构建了一套基于 Amazon Bedrock 的 AI 驱动的医疗内容审核与生成系统。该系统通过引入专门的 AI Judge（分别负责医疗准确性、法律合规、品牌风格等维度），结合 MACROS 架构和 Retrieval Augmented Generation (RAG)，将每篇内容的审核时间缩短了 60%，内容吞吐量翻了三倍，且无需扩大医疗团队。

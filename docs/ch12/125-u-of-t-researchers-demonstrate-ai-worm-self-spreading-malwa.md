@@ -8,6 +8,22 @@
 
 > **Source**: University of Toronto News (2026-06-02). Research by Nicolas Papernot's [CleverHans Lab](https://cleverhans.io/) at U of T + Vector Institute. Published 2026-06-02.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("U of T researchers demonstra…"))
+    核心发现（Core Finding）
+    关键事实
+    攻击机制（Attack Mechanism）
+    关键引文（Nicolas Papernot）
+    与传统 Worm 的关键差异
+    防御建议（Defense Recommenda…
+    论文链接
+    三层洞察（Why this matters f…
+```
+
 ## 核心发现（Core Finding）
 
 **首次实证**: publicly accessible open-weight AI models can power a **worm that adapts its strategy as it spreads from one device to the next** — self-learning, self-replicating malware that can:

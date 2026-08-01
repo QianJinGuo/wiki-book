@@ -10,6 +10,30 @@
 
 > **Core insight**: Netflix ML serving 的核心挑战是区分 model serving（端到端工作流执行）和 model inference（单一 scoring 函数），Switchboard 作为强制入口点处理 1M req/s 的上下文感知路由，但引入单点和延迟问题，最终演化为 Lightbulb（将路由元数据与实际请求路径解耦）+ Envoy 代理。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix Switchboard → Lightb…"))
+    背景：Netflix 的模型定义
+    Switchboard：集中式路由抽象
+    Switchboard 的挑战
+    Lightbulb：解耦式路由
+    Lightbulb + Envoy 数据平面
+    关键数据/实践启示
+    深度分析
+      1. Switchboard：Netflix …
+      2. Lightbulb 模型：请求复杂度的实…
+      3. 路由准确性的业务影响
+      4. 与 OpenAI auto 模式的对比
+    实践启示
+      1. 多模型环境：引入路由层而非手动选择
+      2. 路由策略应反映业务优先级
+      3. 用 A/B 测试验证路由策略
+      4. 监控路由准确率
+```
+
 ## 背景：Netflix 的模型定义
 
 在 Netflix，ML model 的定义与 typical inference 不同。Model inference 通常只关注 `infer(features) -> score` 能力，而 Netflix 的"model"是封装了 pre-processing、post-processing、feature computation logic 和 optional ML-trained component 的 self-contained workflow。端到端执行这个工作流被称为 model serving。

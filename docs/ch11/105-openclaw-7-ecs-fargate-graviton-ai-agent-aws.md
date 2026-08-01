@@ -9,6 +9,26 @@
 > 系列第 7 篇。前 6 篇覆盖 EKS + K8s、AgentCore Serverless、单 Agent、Serverless 改造路径等；本篇为 **ECS Fargate 变体**——面向无 K8s 能力的 2-5 人小团队、几到几十人租户规模的轻量级方案。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenClaw 多租户系列 #7 — 基于 ECS F…"))
+    概念导图
+    三个独有贡献（独立 entity 价值）
+    核心方案定位
+    双 Agent 对比
+    四层隔离机制（核心实现）
+    Graviton ARM64 选型关键理由
+    系列定位
+    实践启示
+      1. 评估开源 AI 工具时：检查多租户部署方案
+      2. AI 推理工作负载：考虑 Gravito…
+      3. 使用 Fargate 减少运维负担
+      4. 多租户隔离：从网络层做起
+```
+
 ## 概念导图
 
 ```mermaid

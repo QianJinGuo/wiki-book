@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/from-kubernetes-dev-setup-to-production-what-actually-change.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("From Kubernetes Dev Setup to…"))
+    技术洞察
+    深度分析
+      生产就绪的本质：能力的积累，而非配置的堆叠
+      变更风险的时间维度
+      备份验证的文化含义
+      工具链选择的工程哲学
+    实践启示
+      从'运行在 Kubernetes'到'生产就绪…
+      警惕'GitOps 速度幻觉'
+      告警治理：先减噪音，再建信号
+      Day-2 运维的持续性
+    相关实体
+```
+
 ## 核心要点
 - **在 Kubernetes 上运行 ≠ 生产就绪**：开发风格部署（local minikube、自签名证书、bundled 依赖、手动 Helm 序列）和生产平台的差距是系统性的，不是加几个配置项就能弥合
 - **时序很重要**：能力建设遵循一个顺序——先让构建块可用 → 再让产品端到端可用 → 再让变更加受控 → 最后让运维可恢复可观测

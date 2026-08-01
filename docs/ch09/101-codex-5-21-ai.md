@@ -2,7 +2,7 @@
 
 ## Ch09.101 Codex 5.21 更新：AI 编程助手开始变成电脑工作代理
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/openai-codex-521-update-appshots-goal-computer-use.md`
+> 📊 Level ⭐⭐ | 8.3KB | `entities/openai-codex-521-update-appshots-goal-computer-use.md`
 
 # Codex 5.21 更新：AI 编程助手开始变成电脑工作代理
 
@@ -82,13 +82,13 @@ Codex 5.21 让 Agentic Engineering 真正可行——之前所有"AI 代理"工�
 
 ## 相关实体
 
-- [Openai Codex Super Computer Network Xinzhiyuan](ch09/075-openai-codex.html)
-- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/520-codex.html)
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/237-claude-md.html)
+- [Openai Codex Super Computer Network Xinzhiyuan](ch09/083-openai-codex.html)
+- [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/737-codex.html)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/427-claude-md.html)
 - [Agent Self Improvement Six Mechanisms](../ch03/035-agent.html)
-- [Codex Goal Six Hour Run](ch09/059-codex-goal-six-hour-run.html)
+- [Codex Goal Six Hour Run](ch09/065-codex-goal-six-hour-run.html)
 - [Four Sub Agent Patterns](../ch03/035-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/120-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/126-harness-engineering.html)
 
 ---
 

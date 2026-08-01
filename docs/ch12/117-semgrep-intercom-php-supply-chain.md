@@ -8,6 +8,17 @@
 Semgrep security research: malicious Intercom PHP package spreading Mini-Shai-Hulud attack via Packagist/Composer. Attack chain, IOCs, code-level analysis.
 **Source**: [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semgrep-intercom-php-security.md) | **Review**: value=7 confidence=8
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Semgrep Intercom Php Supply …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 **PHP 供应链攻击的精细化演进**：
 1. **生态系统的精准定位**：攻击者选择 Intercom PHP 包（而非直接攻击框架本身），利用开发者对官方客户端库的信任——这类包名劫持（typosquatting/package renaming）是供应链攻击的低成本高回报路径

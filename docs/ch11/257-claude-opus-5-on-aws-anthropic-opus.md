@@ -10,6 +10,18 @@
 > **发布**: Introducing Claude Opus 5 on AWS: Anthropic's most capable Opus model
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Claude Opus 5 on AWS：Anthrop…"))
+    Summary
+    Key Points
+    Related Entities
+    第 2 来源 — 夕小瑶科技说 2026-0…
+```
+
 ## Summary
 
 ```mermaid

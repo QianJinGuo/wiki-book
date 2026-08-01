@@ -8,6 +8,26 @@
 
 > **核心论点**：CVE-2024-3094（xz-utils 后门）不是被 CVE scanner 发现的，是被 Andres Freund（PostgreSQL maintainer）注意到 SSH login 慢了 500ms 后追溯出来的。**整个攻击链是"maintainer 信任劫持"而非"代码漏洞"**——这意味着 CVE-driven scanner 结构性无法在攻击发生时检测，只能在 CVE 出现后告警。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("xz-utils Backdoor 2 Years On…"))
+    三条独有贡献
+    攻击时间线（Jia Tan）
+    CVE-Driven Scanner 的结构性盲区
+    三个 Practical Moves
+    与 supply chain 实体的差异化
+    AI Agent 时代的放大效应
+    引用
+    深度分析
+      1. 社会工程攻击供应链的新范式
+      2. 单一维护者项目的系统性风险
+      3. 与 AI agent 安全的交叉影响
+      4. 后门检测的技术局限
+```
+
 ## 三条独有贡献
 
 1. **Maintainer Trust Hijack Pattern 完整复盘** — Jia Tan 用 2 年（2021-2024）做"信任积累"路径：合理 patches + 响应 issue tracker + 友好协作 → 现有 maintainer 倦怠 → 被加为 co-maintainer → 提交带后门的 release。这套 social engineering 在 AI coding agent 时代被放大（agent 可批量生成"合理 patches"快速建立 commit history） ^["[Arcis Website Pages Dev Blog Posts Xz Utils And The Trust Shift](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arcis-website-pages-dev-blog-posts-xz-utils-and-the-trust-shift.md)"]

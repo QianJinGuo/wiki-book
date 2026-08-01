@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rfc9958.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("RFC 9958: Post-Quantum Crypt…"))
+    深度分析
+      Mosca 模型与过渡时间线
+      PQ/T 混合方案的工程挑战
+      受限设备与网络的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 RFC 9958 是 IETF 于 2026 年 6 月发布的 Informational RFC，由 Banerjee 等人撰写，面向密码学工程师的后量子密码学（PQC）实施指南。该文档的核心论点是：PQC 过渡不是简单的算法替换（drop-in replacement），而是需要**协议级别的重新设计**。文档覆盖了 CRQC 威胁模型、NIST/ISO 标准化算法、KEM 与签名方案的工程差异、PQ/T 混合方案、以及从 Mosca 模型推导的过渡时间线。

@@ -9,6 +9,26 @@
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ec2-nat-instance-deploy-practice-aws-china.md)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("EC2 NAT 实例选型与部署实践（AWS 中国宁夏区域）"))
+    概念导图
+    NAT 网关 vs NAT 实例 决策矩阵
+    关键概念：NAT 可用带宽 多流流量规则
+    实例类型建议（按流量档位）
+    高可用方案：ASG + CloudFormat…
+    深度分析
+      1. NAT 网关 vs NAT 实例：费用结…
+      2. 多流流量规则：NAT 带宽的隐形天花板
+      3. 基准带宽与 I/O 积分：持续带宽才是真带宽
+      4. 高可用 ASG 模式：分钟级恢复的工程权衡
+    实践启示
+    适用场景
+```
+
 ## 概念导图
 
 ```mermaid

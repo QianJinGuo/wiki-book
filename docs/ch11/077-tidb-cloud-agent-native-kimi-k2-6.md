@@ -5,6 +5,34 @@
 > 📊 Level ⭐⭐ | 10.7KB | `entities/tidb-cloud-agent-database.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("TiDB Cloud — Agent-native 数据…"))
+    概念导图
+    核心概念
+      Agent-native 时代的数据 Infr…
+      Kimi K2.6 为什么选 TiDB Cloud
+    架构核心：虚拟数据库层
+    三大战略决策（Kimi K2.6 能做成的关键）
+      1. 最小化 Agent 使用 Infra 工…
+      2. 统一技术栈
+      3. 极致低成本
+    行业收敛：one agent, one san…
+    上半场 vs 下半场
+    深度分析
+      虚拟数据库层：Agent-native 数据库…
+      竞争逻辑的根本转变
+      'one agent, one databas…
+      上半场到下半半场的竞争转移
+    实践启示
+      对 AI Agent 团队的基础设施选型建议
+      对数据库基础设施提供商的启示
+      行业趋势判断
+```
+
 ## 概念导图
 
 ```mermaid
@@ -29,30 +57,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 ### Agent-native 时代的数据 Infra 竞争逻辑

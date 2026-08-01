@@ -6,6 +6,34 @@
 
 ["Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例"](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-serverless-async-inference-multimodal.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock模型推理的Serverles…"))
+    核心挑战
+    推理时间实测数据
+    架构核心
+      SQS + Lambda 异步管道三原则
+      关键参数配置
+    压测验证结果
+      300并发突发测试
+      大规模测试
+    深度分析
+      1. 异步架构的本质：解耦与缓冲
+      2. ESM 并发控制的精细价值
+      3. Timeout 链路的级联设计
+      4. 多模态推理的 token 放大效应
+    实践启示
+      容量规划：从实测数据推导
+      Timeout 配置：宁可过量，不可短缺
+      DLQ 监控：不可忽视的告警盲区
+      分层限流：多租户场景的扩展方向
+    与 Agent 场景的关联
+    相关实体
+```
+
 ## 摘要
 当大模型应用从纯文本扩展到图片、PDF等多模态输入时，推理耗时长且不可预测、RPM/TPM限流频发成为生产落地的两大瓶颈。本文分享一套基于 Amazon SQS 与 AWS Lambda 的 Serverless 异步架构，在 Amazon Bedrock之上串起缓冲、控速、重试与结果入库的完整管道。
 

@@ -4,6 +4,36 @@
 
 > 📊 Level ⭐⭐ | 26.8KB | `entities/cloud-agent-infrastructure-creaoai-state-code-credential-isolation-20260606.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("云端 Agent 基础设施两条硬经验：CreaoAI 联…"))
+    概述
+    第一性原理：为什么桌面假设在云上失效
+      桌面 Agent 假设（隐含的'一次性都成立'）
+      云端 Agent 现实
+    教训一：把变化慢的和变化快的分开（状态/代码解耦）
+      第一版方案：粗鲁的'全重建'导致用户环境丢失
+      根因诊断
+      解决方案：借鉴 OS 的内核/home 分离
+      核心判断标准
+    教训二：把凭据隔离在执行边界之外
+      云端 Agent 的安全前提
+      核心原则
+      桥接层身份验证：两层校验，刻意叠加
+      边界归一：唯一双向通道
+    底层设计模式：4 条铁律
+    与桌面框架的本质区别
+    实践启示
+      对 Agent 平台建设
+      对 Agent 框架设计者
+      对 Agent 应用开发者
+      对安全架构师
+    核心命题
+```
+
 ## 概述
 
 **CreaoAI 联合创始人**总结的云端 Agent 基础设施两条**硬经验**——把桌面端 Agent 假设（用户 = 同一台机器 = 同一受信边界）搬到云端时踩出的两个核心设计原则：① **状态与代码解耦**（frozen snapshot + hot-swap Runner，类比 OS 内核 vs 用户 home 目录）② **凭据隔离在执行边界之外**（API bridge + IP 白名单 + 每次运行的短期 JWT）。这两条是云端 Agent 平台区别于桌面框架的**根本性架构差异**，而不是"加几个云服务就行"。

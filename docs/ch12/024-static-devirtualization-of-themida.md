@@ -10,6 +10,22 @@
 
 > **Note**: 实体 slug 为 `2026` 是源 URL 路径中日期生成的产物，内容实际是 Back Engineering Labs (IDontCode, naci) 发表的 Themida/CodeVirtualizer 静态去虚拟化技术深度分析。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Static Devirtualization of T…"))
+    深度分析
+      1. '通用优化打败 VM 特定知识'是去虚拟…
+      2. SSA + Pass-feeding-p…
+      3. '可配置内存范围'是把通用方法安全化的关键
+      4. 为什么作者怀疑 LLVM-based 框架
+    实践启示
+    关联实体
+    相关链接
+```
+
 ## 摘要
 
 Back Engineering Labs 公开了对 **Themida/CodeVirtualizer** 这类基于虚拟机（VM-based）的二进制混淆器的静态去虚拟化技术。核心方法不依赖 VM 特定的模式匹配，而是通过 **Guided Symbolic Evaluation + SSA IR + 一套通用编译器优化 Pass** 把虚拟化的代码还原为可执行的原生代码。该方法对 VMProtect、Themida、vxlang、EagleVM 等多种 VM 混淆器都适用。配套引擎 **BLARE2** 支持 AMD64/ARM64 双架构 + 完整的 Pass 系统、优化器、指令选择器、寄存器分配器和链接器，能产出与原始函数近 1:1 的输出。

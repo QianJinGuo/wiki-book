@@ -8,6 +8,28 @@
 
 > **Background**：本文基于 AWS China Blog 发布的 LLM 推理部署实战文章，系统梳理了基于 SGLang 的大模型推理 Benchmark 方法论、三种部署方案（单机/多机 Non-PD/多机 PD 分离）的选型对比，以及性能调优与常见问题排查指南。原文由 AWS 资深工程师撰写，包含基于 DeepSeek-V3/V4-Pro 及 Kimi2.5 在 Amazon EFA 环境下的实测数据。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于SGLang的大模型推理部署实践——Benchmar…"))
+    核心贡献
+    Benchmark 方法论
+      测试规划四问
+      关键坑点
+    部署方案对比
+      单机部署
+      多机 Non-PD 分离
+      多节点 PD 分离（2P2D）
+    选型决策树
+    Debug 与调优
+      TTFT 高
+      TPOT 高
+      吞吐低于预期
+    与现有实体的关系
+```
+
 ## 核心贡献
 
 本文的核心价值在于提供了一套**可复现的大模型推理部署方法论**，而非单一的技术点：

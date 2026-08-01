@@ -8,6 +8,22 @@
 
 Sebastian Cuadros 基于 LinkedIn 5306 人数据筛选出 1680 名 Anthropic 工程师的画像分析：不是"博士实验室"，而是高速扩张的基础设施公司。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Anthropic 工程团队 1680 人画像：不是博士…"))
+    一句话
+    核心数据
+    典型工程师画像
+    Infra  Research
+    薪酬亮点
+    人才来源 Top 10
+    学校来源 Top 5
+    职级压平
+```
+
 ## 一句话
 
 **Anthropic 工程团队 = 12 年经验资深工程师 + 10 个月任职中位数 + 40% Infra 背景 + 13.7% 博士 + 80% MoTS 平级 + Google 系第一大来源。**

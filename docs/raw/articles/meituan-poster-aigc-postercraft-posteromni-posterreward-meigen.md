@@ -3,7 +3,7 @@ type: source-card
 title: "美团海报生成 AIGC 技术创新与实践"
 source: "https://mp.weixin.qq.com/s/4ytSFiJa2q8inb5U-Au9Nw"
 author: "视觉智能（美团技术团队）"
-source_url: "https://github.com/MeiGen-AI（开源代码）"
+source_url: "https://mp.weixin.qq.com/s/4ytSFiJa2q8inb5U-Au9Nw"
 published: "2026-06-18"
 collected: "2026-06-18"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

@@ -9,6 +9,25 @@
 > **Background**: 纯 AWS 原生方案，无任何额外组件。利用 IAM Principal-Based Cost Allocation 追踪、Budgets 告警、Budget Actions 自动附加 Deny Policy 阻断超预算调用，每月自动重置。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("利用 AWS Budget 实现 Amazon Bedr…"))
+    概念导图
+    三大需求
+    三个核心 AWS 服务
+    完整流程
+    关键设计
+      1. 双 Policy 切换模式
+      2. 硬约束（服务端强制）
+      3. 每月自动重置
+    局限性
+    优势
+    适用场景
+```
+
 ## 概念导图
 
 ```mermaid

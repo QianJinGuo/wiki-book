@@ -11,6 +11,20 @@
 Couchbase 的 Capella iQ 是一个 AI-powered 开发者助手，能够生成 SQL++ 查询、推荐索引、支持多轮对话。随着企业采用增长，Couchbase 将其 AI 应用扩展为支持多个 Foundation Model（FM）提供商的**模型无关推理架构**，核心是使用 Amazon Bedrock。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Couchbase Capella iQ — 多模型 A…"))
+    概念导图
+    架构设计
+    模型评估框架
+    关键技术决策
+    未来规划
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

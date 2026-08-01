@@ -6,6 +6,25 @@
 
 > -> **5237660.md**
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sovereign cloud is only poss…"))
+    深度分析
+      Toombs 的核心论点：主权云的「不可能三角」
+      主权的悖论：美国云不是真正的「主权」
+      Wong 的「钟摆回摆」：云退出策略的回归
+      多云 ≠ 韧性
+    实践启示
+      对国家 / 监管者的判断
+      对跨国企业的判断
+      对 Agent / AI 部署的判断
+      何时应该关注主权云
+    相关实体
+```
+
 ## 核心要点
 
 - Gartner 分析师 Douglas Toombs 在悉尼 IT Infrastructure, Operations & Cloud Strategies Conference 上的核心判断：完全主权的云（数据本地化、算力本地化）只有中美两国能实现

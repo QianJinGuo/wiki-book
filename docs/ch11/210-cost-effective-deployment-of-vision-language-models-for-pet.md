@@ -6,6 +6,21 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Cost effective deployment of…"))
+    深度分析
+      从 GPU 到专用 AI 芯片的迁移动机
+      模块化编译策略
+      架构设计：双层 Auto Scaling
+      压测结果的关键洞察
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Tomofun（Furbo 智能宠物相机）将 VLM 推理从 GPU 实例迁移到 AWS Inferentia2
 - 使用 BLIP（Bootstrapping Language-Image Pre-training）模型进行宠物行为检测

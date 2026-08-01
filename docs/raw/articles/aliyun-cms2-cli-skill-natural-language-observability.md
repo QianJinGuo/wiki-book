@@ -3,7 +3,7 @@ type: source-card
 title: "告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入"
 source: "https://mp.weixin.qq.com/s/zsy5sCkqCGA5_vTs2Qvxpg"
 author: "铖朴、珂帆"
-source_url: "https://skills.aliyun.com/skills/alibabacloud-cms-manage"
+source_url: "https://mp.weixin.qq.com/s/zsy5sCkqCGA5_vTs2Qvxpg"
 published: "2026-06-07"
 collected: "2026-06-07"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

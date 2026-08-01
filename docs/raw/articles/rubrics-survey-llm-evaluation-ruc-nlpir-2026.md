@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "The Rules of the Game: A Survey of Rubrics for Large Language Models"
-source: "8421bcd.github.io"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://8421bcd.github.io/_pages/Rubrics_Survey.pdf"
+source_url: "https://mp.weixin.qq.com/s/fLqQmZRM_xt9Am7_favtUA"
 published: "2026-05-01"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

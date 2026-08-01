@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "清华发布智能体社会AgentSociety第二代：让社会科学研究真正「跑起来」"
-source: "agentsociety2.fiblab.net"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://agentsociety2.fiblab.net/paper/AgentSociety2.pdf"
+source_url: "https://mp.weixin.qq.com/s/kd859W3vsbMRjZ8-HRmHvg"
 published: "2026-05-01"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

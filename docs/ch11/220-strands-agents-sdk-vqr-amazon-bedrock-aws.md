@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/strands-agents-sdk-build-analytics-layer-vqr-amazon-bedrock-practice.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Strands Agents SDK 构建确定性数据…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 by awschina on 16 4月 2026 in Artificial Intelligence Permalink Share 摘要：企业数据分析中，LLM 直接生成 SQL 面临不可复现、不可审计、不可收敛三大挑战。本文提出基于 Strands Agents SDK 和 Amazon Bedrock 的三层确定性架构：语义层将业务术语映射为标准 SQL 片段（毫秒），VQR 知识库通过反馈飞轮缓存验证查询（零 LLM 调用），Agent 层处理长尾问题。明显降低高频查询响应。 目录 01 引言 02 问题与挑战：NL2SQL 的三个核心问题 03 方案概览 04 Strands Agents SDK——为什么选它 05 语义层深入——DynamoDB 存
 

@@ -9,6 +9,38 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentScope Java 2.0：企业级分布式 H…"))
+    概念导图
+    背景：为什么企业需要专门的 Agent Har…
+    核心架构设计
+      模块化 Middleware 架构
+      抽象文件系统（Abstract FileSys…
+      Workspace 模型
+      消息类型系统（Sealed Class）
+    企业级特性
+      多租户权限模型
+      模型 Fallback 与降级链
+      事件流与可观测性
+      Kubernetes 原生部署
+    Builder Pattern 与流畅 API
+    与 Claude Code Harness 的…
+    实践启示
+      1. 在 Java 生态中构建 Agent，A…
+      2. Sealed Class 是构建类型安全…
+      3. Abstract FileSystem …
+      4. 模型 Fallback 链需要在上线前充…
+    2nd Source：阿里云云原生 / Age…
+      关键架构决策：组织级 vs Cloud Age…
+      Open SWE vs AgentScope …
+      关键模式：工作区作为配置仓库
+      子 agent 用 markdown 文件声明
+```
+
 ## 概念导图
 
 ```mermaid
@@ -34,32 +66,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 

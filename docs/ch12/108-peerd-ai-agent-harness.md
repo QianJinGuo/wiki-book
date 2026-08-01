@@ -8,6 +8,22 @@
 
 peerd 是第一个完全运行在浏览器中的 [AI Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)——一个 Chrome/Firefox 扩展，在你现有的浏览器中运行完整的 agent loop，驱动你的标签页，启动沙箱化计算环境（JS Notebook、WASM Linux VM、客户端应用），并通过 WebRTC 网络实现 peer-to-peer 的 agent 间通信。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("peerd: 浏览器原生的 AI Agent Harness"))
+    架构创新
+    安全模型：双角色架构
+    计算沙箱
+    Peer-to-Peer Agent 通信（P…
+    BYOK 模式
+    与其他 Agent Harness 的差异化
+    当前状态
+    三个独有贡献（不应合并到现有 entity）
+```
+
 ## 架构创新
 
 peerd 的核心设计决策是**将浏览器本身作为运行时和安全模型**，而非在浏览器之上构建额外的隔离层：

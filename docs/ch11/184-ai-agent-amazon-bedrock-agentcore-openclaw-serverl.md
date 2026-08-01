@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 6.7KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-6.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent 的迁移与现代化 — 使用 Amazon…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

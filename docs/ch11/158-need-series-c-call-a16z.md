@@ -9,6 +9,17 @@ Published Time: 2026-05-19T14:00:52+00:00
 [![Image 1](https://substackcdn.com/image/fetch/$s_!caq-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdbebd7f6-23f4-4d1d-95f3-835ef2a1ff4e_1460x650.png)](https://substackcdn.com/image/fetch/$s_!caq-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdbebd7f6-23f4-4d1d-95f3-835ef2a1ff4e_1460x650.png)
 **[[America](https://www.a16z.news/t/america) | [Tech](https://www.a16z.news/t/technology) | [Opinion](https://www.a16z.news/t/opinion) | [Culture](https://www.a16z.news/t/culture) | [Charts](https://www.a16z.news/t/charts)]**
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Need Series C? Call a16z"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/210-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)

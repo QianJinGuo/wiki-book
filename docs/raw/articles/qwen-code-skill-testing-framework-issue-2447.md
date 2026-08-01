@@ -3,7 +3,7 @@ type: source-card
 title: "Qwen Code Skill Testing Framework Issue 2447"
 source: "github.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://github.com/xurik/dataworks-skill-evaluator"
+source_url: "https://github.com/QwenLM/qwen-code/issues/2447"
 published: "2026-05-20"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

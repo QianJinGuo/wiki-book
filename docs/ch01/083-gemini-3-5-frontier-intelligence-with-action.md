@@ -2,7 +2,7 @@
 
 ## Ch01.083 Gemini 3.5: frontier intelligence with action
 
-> 📊 Level ⭐ | 6.7KB | `entities/gemini-3-5-frontier-intelligence-with-action.md`
+> 📊 Level ⭐ | 7.0KB | `entities/gemini-3-5-frontier-intelligence-with-action.md`
 
 # Gemini 3.5: frontier intelligence with action
 
@@ -13,13 +13,17 @@ title: "Gemini 3.5: frontier intelligence with action"
 date: 2026-05-19
 source_url: https://deepmind.google/blog/gemini-3-5-frontier-intelligence-with-action/
 feed_name: Google DeepMind Blog
+
 fetched: 2026-05-24T00:58:30.206918
+
 fetcher: trafilatura
+
 ---
 
 # Gemini 3.5: frontier intelligence with action
 
 Gemini 3.5: frontier intelligence with action
+
 Today, we’re introducing Gemini 3.5, our latest family of models combining frontier intelligence with action. This represents a major leap forward in building more capable, intelligent agents. We’re kicking off the series by releasing 3.5 Flash. It delivers frontier performance for agents and coding, excelling at complex long-horizon tasks that deliver real-world utility.
 3.5 Flash is available today to billions of people globally:
 - For everyone via the Gemini app and AI Mode in Google Search
@@ -51,11 +55,11 @@ Salesforce is integrating 3.5 Flash into Agentforce to reliably automate complic
 Xero is 
 
 ## 相关实体
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/224-amazon-quick.html)
-- [Gemini 3 5 Frontier Intelligence](ch01/474-gemini-3-5-frontier-intelligence-with-action.html)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/095-ai.html)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/295-amazon-bedrock.html)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/295-amazon-bedrock.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/234-amazon-quick.html)
+- [Gemini 3 5 Frontier Intelligence](ch01/083-gemini-3-5-frontier-intelligence-with-action.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch01/437-aws.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/306-amazon-bedrock.html)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/306-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-3-5-frontier-intelligence-with-action.md)
 

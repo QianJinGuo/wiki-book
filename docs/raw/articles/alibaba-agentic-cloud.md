@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "alibaba-agentic-cloud"
-source: "qwen.cloud.alibaba.com"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://qwen.cloud.alibaba.com"
+source_url: "https://mp.weixin.qq.com/s/zYvl-XjdcW2Sx2XDNGJ2mQ"
 published: "2026-06-10"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

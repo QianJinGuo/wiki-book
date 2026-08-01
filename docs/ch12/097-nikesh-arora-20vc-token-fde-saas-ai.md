@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nikesh-arora-20vc-business-strategy.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Nikesh Arora 20VC 访谈：Token 定…"))
+    核心观点
+      1. Token 定价：长期将降至今天的十分之一
+      2. 模型能力严重过剩
+      3. FDE（前线部署工程师）是产品不成熟的代名词
+      4. SaaS 应用将让位于 AI 应用
+    关键引用
+    与现有知识的关系
+```
+
 ## 摘要
 
 Palo Alto Networks CEO Nikesh Arora 做客 20VC 播客，深入讨论 AI 行业的核心经济与战略议题。本文提炼六大主题：Token 定价趋势、FDE 的本质、SaaS→AI 应用转型、记忆/上下文作为护城河、分化模型世界、以及 AI 对网络安全的影响。

@@ -6,6 +6,21 @@
 
 # Stealing Passwords via HTML Injection Under a Strict CSP
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stealing Passwords via HTML …"))
+    深度分析
+      CSP 的安全边界被重新定义
+      密码管理器的设计缺陷
+      Referer 策略规范的实现不一致
+      对 Web 安全评估的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AFINE Security Research 于 2026 年 6 月披露了一种在**严格 CSP（Content-Security-Policy）**下通过 HTML 注入窃取浏览器保存密码的攻击技术。核心发现：即使 CSP 设置为 `script-src 'none'`、`default-src 'none'`（理论上阻止一切脚本执行），攻击者仍可通过**Chrome 密码自动填充**机制 + **Referer 头泄露**实现密码窃取，全程无需 JavaScript。攻击链为：HTML 注入伪造表单 → Chrome 自动填充密码 → `<meta>` 标签设置 `unsafe-url` referrer 策略 → `<meta>` 重定向到攻击者域名 → Referer 头携带明文密码。

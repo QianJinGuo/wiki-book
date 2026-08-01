@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/higress-cncf-sandbox-ingress-nginx-replacement.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ingress-nginx已退役higress如何平滑替代"))
+    事件概述
+    深度分析
+      Gateway API 三层资源模型与阿里云 …
+      为什么需要替代Ingress Nginx
+      AI原生网关的战略价值
+      CNCF Sandbox的战略意义
+    实践启示
+    相关实体
+```
+
 ## 事件概述
 近期，Higress已正式通过TOC投票表决，加入云原生计算基金会（CNCF）Sandbox项目，成为CNCF生态的一员。Higress是一款基于Envoy和Istio构建的AI原生、高性能API网关，将流量网关、微服务网关与AI网关统一于单一控制面。
 

@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinkst-package-proxy-supply-chain-security.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Thinkst Package Proxy: Suppl…"))
+    深度分析
+      10 天窗口的安全博弈论
+      代理模式 vs 包装器模式
+      Agent 时代的供应链风险放大
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Thinkst 推出了 [Package Proxy](https://packageproxy.dev/)——一个基于 Cloudflare Workers 的透明代理层，在 npm、pip、uv、cargo 等包管理器安装依赖前执行安全检查。核心机制是拦截包管理器的 index URL 请求，对每个包执行策略检查（包龄、上传方式、黑白名单），不合格的包返回 404。无需客户端软件，仅需配置变更即可部署。上线后已成功防御 TanStack、BitWarden、TeamPCP 等多起供应链攻击。

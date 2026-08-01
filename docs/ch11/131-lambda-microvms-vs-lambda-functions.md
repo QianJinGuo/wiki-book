@@ -8,6 +8,21 @@
 
 2026年6月22日 AWS 正式发布了 Lambda MicroVMs——一个基于 Firecracker 虚拟化技术的全新 Serverless 计算原语，与 Lambda Functions 同属 AWS Lambda 产品家族，但解决完全不同类别的问题。两者不是替代关系，而是互补关系，面向不同类别的计算需求。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Lambda MicroVMs vs Lambda Fu…"))
+    深度分析
+      隔离级别的范式转变：从共享内核到独立 VM
+      挂起/恢复机制的经济学意义
+      Image-then-Launch 对比传统冷启动
+      架构模式：Functions 做控制面，Mic…
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Lambda MicroVMs 的推出标志着 Serverless 计算从「函数即服务」（FaaS）向「隔离沙箱即服务」（Isolated Sandbox as a Service）的重要演进。与 Lambda Functions 的事件驱动无状态短任务模型不同，MicroVMs 为每个会话分配完全独立的 Firecracker VM——独立内核、独立内存空间、独立磁盘状态——专为需要 VM 级隔离、有状态长会话和完整生命周期控制的场景设计，特别是 AI 编程助手、多租户 SaaS 平台和安全代码执行环境。

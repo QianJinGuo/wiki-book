@@ -8,6 +8,19 @@
 
 > **Background**：本文基于 AWS China Blog 发布的 POC 实践总结，完整介绍从自建 Elasticsearch 8.17 迁移到 Amazon OpenSearch Service 的数据迁移方案选型、全量与增量同步策略，以及数据一致性验证。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从自建 Elasticsearch 迁移到 Amazon…"))
+    背景与迁移目标
+    迁移方案选型
+    向量索引迁移
+    架构与验证
+    相关实体
+```
+
 ## 背景与迁移目标
 
 自建 Elasticsearch 集群面临版本升级困难、跨云迁移复杂、向量搜索能力受限等挑战。典型案例场景：云上使用 ES 8.17 承载核心搜索业务，数据规模约 1TB，包含 k-NN 向量搜索（1024 维 Embedding），目标是将搜索服务迁移到 Amazon OpenSearch Service，同时将 Embedding 模型切换到 Amazon Bedrock Titan Text Embeddings V2。

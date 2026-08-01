@@ -3,7 +3,7 @@ type: source-card
 title: "吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代"
 source: "wechat"
 author: "未标注作者；来源机构见 source"
-source_url: "https://www.deeplearning.ai/the-batch/issue-359"
+source_url: "https://mp.weixin.qq.com/s/1M8zYkSIOdUaPkQl9d1Ywg"
 published: "未标注"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

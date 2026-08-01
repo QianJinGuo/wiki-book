@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "竞品统统瞎猜它拿53分！WAIC面壁1.5B模型硬核炸场，成本腰斩，国产机器人天花板再被捅破"
-source: "github.com"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://github.com/OpenBMB/MiniCPM-Robot"
+source_url: "https://mp.weixin.qq.com/s/dBzFYVNCm4gQzdb1-1S8mQ"
 published: "未标注"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-routing-in-model-serving.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("State of Routing in Model Se…"))
+    深度分析
+      Objective 模式的设计智慧
+      从 Switchboard 到 Lightbu…
+      与 Envoy 生态的整合
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Netflix 技术博客系列文章，详细介绍了其 ML 模型服务基础设施中的流量路由架构演进。核心挑战是：如何在保持客户端简单抽象的同时，将请求路由到正确的模型实例、正确的集群分片、为正确的用户和用例服务。文章介绍了从自研路由服务 Switchboard 到轻量级架构 Lightbulb 的演进过程，以及引入 Envoy 作为数据面路由层的决策。截至 2025 年，该平台服务数百种模型类型和版本，处理每秒 100 万次请求。

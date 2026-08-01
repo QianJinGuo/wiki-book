@@ -28,6 +28,15 @@ This paradigm shift brings several key advantages:
 In this post, we cover data modeling concepts, supported patterns, and best practices for designing your multi-dataset data model in Quick Sight. For a deep dive into each schema pattern with SQL examples and advanced workarounds, see the second post in this series: Data Modeling Patterns for Amazon Quick Sight Multi-Dataset Relationships [link].
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Data modeling best practices…"))
+    Why a runtime, relation…
+```
+
 ## Why a runtime, relationship-based model
 
 ```mermaid

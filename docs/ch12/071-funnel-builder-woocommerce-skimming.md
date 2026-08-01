@@ -4,6 +4,23 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/funnel-builder-flaw-under-active-exploitation-enables-woocom.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Funnel Builder 漏洞正被利用于 WooCo…"))
+    事件概述
+    技术细节
+      攻击向量
+      攻击手法
+    处置建议
+    相关实体
+    时间线
+    深度分析
+    实践启示
+```
+
 ## 事件概述
 WordPress Funnel Builder 插件（FunnelKit 出品）存在一处高危安全漏洞，目前已在野被积极利用。攻击者通过该漏洞在 WooCommerce 结账页面注入恶意 JavaScript，窃取信用卡号、CVV 和账单地址等支付数据。漏洞影响所有 **40,000+** 使用该插件的 WooCommerce 商店，目前尚无官方 CVE 编号。厂商已于 **3.15.0.3** 版本发布修复补丁。
 ## 技术细节

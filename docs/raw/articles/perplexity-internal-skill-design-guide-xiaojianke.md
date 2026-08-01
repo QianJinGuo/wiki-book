@@ -3,7 +3,7 @@ type: source-card
 title: "Perplexity 首次公开了内部 Skill 设计指南"
 source: "https://mp.weixin.qq.com/s/gf9QQRId0HYeo92Cp0BPnw"
 author: "xiaojianke（进化 AI 实验室）"
-source_url: "https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity"
+source_url: "https://mp.weixin.qq.com/s/gf9QQRId0HYeo92Cp0BPnw"
 published: "2026-05-19"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

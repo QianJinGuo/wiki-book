@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **22 篇**实体，按深度递增排列。
+> 本章收录 **23 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,6 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
+| ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 7 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 10 |
@@ -29,7 +30,22 @@
 
 ---
 
-## Ch19.001 NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
+## Ch19.001 斯坦福：失败轨迹是天然、高价值的监督信号
+
+> 📊 Level ⭐ | 1.0KB | `entities/learning-from-failure-cua-inference-time-self-improvement-xhs-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/learning-from-failure-cua-inference-time-self-improvement-xhs-2026.md)
+
+那些失败的轨迹去哪了？绝大多数工作都会直接丢弃。6月30日，斯坦福发表《Learning from Failure: Inference-Time Self-Improvement for Computer-Use Agents》新研究，提出失败并不是噪声，而是 Agent 最有价值的学习资源。
+
+## 来源
+
+- 原文: [斯坦福：失败轨迹是天然、高价值的监督信号](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/learning-from-failure-cua-inference-time-self-improvement-xhs-2026.md)
+- 原始链接: : "https://www.xiaohongshu.com/discovery/item/6a4799a600000000160269d4
+
+---
+
+## Ch19.002 NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/neurips-2026-pangram-controversy.md`
 
@@ -143,9 +159,9 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 
 ---
 
-## Ch19.002 美团海报生成 AIGC 技术创新与实践
+## Ch19.003 美团海报生成 AIGC 技术创新与实践
 
-> 📊 Level ⭐⭐ | 9.2KB | `entities/美团-海报生成-aigc-技术创新实践-2026.md`
+> 📊 Level ⭐⭐ | 9.7KB | `entities/美团-海报生成-aigc-技术创新实践-2026.md`
 
 # 美团海报生成 AIGC 技术创新与实践
 
@@ -204,6 +220,7 @@ PosterOmni 解决了从 Text-to-Poster 到 Image-to-Poster 的范式转变。真
 PosterReward 是首个专门面向海报质量评估的奖励模型，集成结构布局、文字渲染准确性和美学表达三个维度的统一评分能力。它在 PosterRewardBench-Advanced 上达到 86.0% 准确率，远超现有基线（大多在 40%–53% 之间）。
 
 PosterReward 采用**四阶段级联训练策略**：
+
 1. 联合监督微调（24.6 万单图分析样本 + 16 万配对偏好样本）
 2. 联合拒绝采样微调（每个 Prompt 三个回答，Gemini 筛选最高质量）
 3. 评分模块训练（Qwen3-VL-8B + 两层 MLP，Bradley-Terry 损失）
@@ -240,7 +257,7 @@ PosterReward 采用**四阶段级联训练策略**：
 
 ---
 
-## Ch19.003 Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统
+## Ch19.004 Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
 
@@ -326,9 +343,9 @@ Recursive 团队在三个 SOTA benchmark 上同时取得突破，且没有 DeepM
 
 ---
 
-## Ch19.004 Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
+## Ch19.005 Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
-> 📊 Level ⭐⭐ | 8.3KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
+> 📊 Level ⭐⭐ | 8.7KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
 
 # Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
@@ -353,6 +370,7 @@ Chat template tags（`<system>`、`<user>`、`<assistant>` 等）在 token 流�
 ### 3. 攻击机制：角色混淆
 
 Prompt injection 攻击可以理解为**角色混淆攻击**——通过精心构造的输入，让 LLM 将恶意指令误认为来自高信任角色（如 system 或 assistant）的内容。文章展示了如何利用这一机制：
+
 - 创建新的攻击向量
 - 解释已有的 mechanistic interpretability 实验结果
 - 预测攻击何时成功、何时失败
@@ -360,6 +378,7 @@ Prompt injection 攻击可以理解为**角色混淆攻击**——通过精心�
 ### 4. "角色科学"研究方向
 
 作者倡导建立一个专注于"角色"（roles）的子研究领域，涵盖：
+
 - LLM 如何在内部表示角色
 - Role tags 如何影响 attention 和信息流
 - 角色边界何时以及如何被突破
@@ -374,6 +393,7 @@ Prompt injection 攻击可以理解为**角色混淆攻击**——通过精心�
 ## 与 Agent/Harness 的关联
 
 本文的发现对 Agent 系统设计有直接启示：
+
 1. **多角色 Agent**（如 system/user/tool 轮转）的角色边界需要显式强化
 2. **Tool output injection** 是一种角色混淆攻击——工具返回的内容可能被误认为高信任来源
 3. **Harness 架构**中的 context isolation 可以理解为角色边界的工程化实现
@@ -428,7 +448,7 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 
 ---
 
-## Ch19.005 The Complexity of Simplicity | Jim Nielsen's Notes
+## Ch19.006 The Complexity of Simplicity | Jim Nielsen's Notes
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/2026-05-06-2201.md`
 
@@ -476,7 +496,7 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 
 ---
 
-## Ch19.006 Lean Software Scaling Laws
+## Ch19.007 Lean Software Scaling Laws
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/lean-scaling.md`
 
@@ -519,9 +539,9 @@ But this does not follow: being a popular language with a lot of training data o
 
 ---
 
-## Ch19.007 arXiv 脱离康奈尔，正式独立为非营利组织
+## Ch19.008 arXiv 脱离康奈尔，正式独立为非营利组织
 
-> 📊 Level ⭐⭐ | 3.4KB | `entities/arxiv-independent-spinout-2026.md`
+> 📊 Level ⭐⭐ | 3.5KB | `entities/arxiv-independent-spinout-2026.md`
 
 # arXiv 脱离康奈尔，独立为非营利组织
 
@@ -581,9 +601,9 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 
 ---
 
-## Ch19.008 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
+## Ch19.009 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
 
-> 📊 Level ⭐⭐⭐ | 22.9KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
+> 📊 Level ⭐⭐⭐ | 22.8KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
 
 # Visual Para-Thinker: 大规模 VLM 首个并行思考框架
 
@@ -908,91 +928,9 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 
 ---
 
-## Ch19.009 Count Anything - 文本引导的通用目标计数框架
-
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/arxiv-2605-30846-count-anything-2026.md`
-
-# Count Anything - 文本引导的通用目标计数框架
-
-> Source: [Raw](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2605-30846-count-anything-2026.md)
-
-## 摘要
-
-arXiv 2605.30846 提出了 **Count Anything** —— 一个文本引导的通用目标计数框架。它把计数任务从「单类别、特定数据集」的形式重新定义为「图像 + 自然语言查询 → 实例锚点集 + 计数」的统一形式。配套发布了 **CLOC**（Cross-domain Large-scale Object Counting）基准，覆盖六大视觉域 22 万张图像、619 类、1500 万个目标实例。
-
-## 核心要点
-
-1. **文本引导的计数公式**：给定图像 + 自然语言查询，模型返回一组实例锚点（instance-grounded set of target points），其基数即为计数。这种形式统一了「类别条件计数」与「可解释的空间定位」。
-2. **CLOC 基准**：跨域大规模目标计数数据集，整合六类视觉域（通用场景、遥感、病理切片、细胞显微、农业、微生物），约 22 万图、619 类、1500 万实例。
-3. **双粒度实例枚举**：抛弃主流的密度图（density-map）方法，采用离散实例点。一个 *Region-level Sparse Counter* 处理大而稀疏目标，一个 *Pixel-level Dense Counter* 处理小、密集、弱边界目标。
-4. **点中心监督策略**（point-centric supervision）：从异构标注中学习 —— 不同数据集的目标可能用点、框、mask 标注不同。
-5. **无参数融合**（Complementary Count Fusion）：把两个 Counter 的输出以无参数方式组合。
-
-## 深度分析
-
-### 1. 形式化重新定义：把"计数"变成"指代表达"
-
-传统目标计数是分类问题 —— 你先决定数「人」「车」「细胞」，再训练一个模型。结果是每增加一个类别就要重新收集数据、训练、部署。Count Anything 走的是「指代表达」（Referring Expression）的路子：用户用自然语言指定要数什么，模型既给出数字，也给出每个实例在图中的位置（点集）。
-
-这个改写带来三个实际收益：
-- **零样本类别扩展**：新类别（"数一下这片麦田里发黄的麦穗"）不需要重新训练。
-- **可解释性**：拿到数字同时拿到位置点，可以可视化、可以复核、可以二次过滤。
-- **统一接口**：所有下游任务（密度估计、目标检测、实例分割）可以共享同一套点集输出。
-
-### 2. 双粒度设计是真正的工程创新
-
-计数任务的最大痛点是 **尺度跨度极大** —— 同一张图里可能有占据画面 30% 的树，也有小到 3×3 像素的昆虫卵。单一架构无法同时兼顾两种情况。
-
-Count Anything 用两个 Counter 解决：
-- **Region-level Sparse Counter**：先生成候选区域锚点（类似检测框中心），再在每个区域里枚举。适合大目标、稀疏分布。
-- **Pixel-level Dense Counter**：对每个像素预测是否是某个目标点，密集预测。适合小目标、密集分布、边界模糊。
-
-两个 Counter 的输出通过 *Complementary Count Fusion*（无参数融合）合并 —— 简单说就是分别投票。这种双粒度思路在语义分割（HRNet）、目标检测（RetinaNet 的 FPN）里都出现过，但在计数领域还属首次。
-
-### 3. CLOC 基准的覆盖广度
-
-CLOC 把六个完全不同的视觉域合并成一个数据集：
-- **General Scene**：COCO、PASCAL VOC 类
-- **Remote Sensing**：DOTA、DIOR 类
-- **Histopathology**：细胞核计数
-- **Cellular Microscopy**：荧光显微
-- **Agriculture**：果实、病虫害
-- **Microbiology**：细菌、菌落
-
-这种跨域整合让"通用计数"有了可衡量的目标。CLOC 22 万图、1500 万实例的规模也接近 ImageNet 的标注量。
-
-### 4. 跟传统密度图方法的对比
-
-主流密度图方法（如 CSRNet、DM-Count）的核心假设是「学习一个像素到密度的回归函数」。这种方法的弱点：
-- **后处理依赖**：要把密度图积分成数字，需要选阈值。
-- **跨域泛化差**：训练集的人群密度分布和测试集相差大时性能骤降。
-- **无可解释性**：输出是密度图，看不出每个目标在哪。
-
-Count Anything 的点集输出天然规避了上述三个问题。
-
-## 实践启示
-
-1. **想做"通用 X"的任务，先把输入形式重写一遍**。Count Anything 没有提出新模型架构，只是把计数从「分类 + 回归」重写为「指代表达 + 集合输出」，但这一改写就让它支持了零样本类别扩展。这是 2026 年多模态基础模型时代最值得借鉴的方法论 —— **形式重写比架构升级更值**。
-2. **双粒度是处理尺度跨度的通用模式**。任何涉及"目标大小差几个数量级"的任务（计数、检测、分割、检索）都可以借鉴 Region + Pixel 的双路设计。
-3. **CLOC 跨域基准是这类工作的关键基础设施**。没有统一基准，"通用"就只是宣传话术。Cloc 的发布本身和模型一样重要 —— 它让后续工作有可比的目标。
-4. **点集输出比密度图更适合下游系统**。如果你的计数结果要进入决策系统（库存、报警、统计），点集比密度图易用得多 —— 每个点都是结构化数据，可以做空间查询、密度统计、轨迹跟踪。
-
-## 相关
-
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2605-30846-count-anything-2026.md)
-- 论文: https://arxiv.org/abs/2605.30846
-- 代码: https://github.com/Mengqi-Lei/count-anything
-## 相关实体
-- [visual para-thinker: 视觉并行思考框架 (arxiv 2602.13310)](https://github.com/QianJinGuo/wiki/blob/main/entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md)
-- [qwen-image-flash: beyond objective design — few-step distill](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-image-flash-beyond-objective-design.md)
-- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-image-content-precise-analysis.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
-
----
-
 ## Ch19.010 LoopWM (Looped World Models)
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/loopwm-looped-world-models.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/loopwm-looped-world-models.md`
 
 # LoopWM (Looped World Models)
 
@@ -1077,6 +1015,7 @@ EM 略低于 Claude（51.6% vs 53.0%），但 BLEU-4 四模型最高（71.6%）�
 v×c=56 的量子位文章（第 3 来源）与机器之心本篇同为大众科技媒体对 LoopWM 论文的二次解读，但切入角度不同。
 
 机器之心本篇（2026-06-30）的独特视角：
+
 1. **"人类闭环数据"视角**：强调 FaceMind 不仅做世界模型，还从人类操作数据中提取闭环训练信号，而非只依赖仿真环境
 2. **团队背景深挖**：陆弘远（95后清华博士）、韦怡然（前微软/阿里），团队技术路线从端侧全模态 → 世界模型的演进
 3. **融资与商业视角**：Pre-A 轮数千万，星连资本领投，360跟投，奇绩创坛参投
@@ -1109,7 +1048,89 @@ v×c=56 的量子位文章（第 3 来源）与机器之心本篇同为大众科
 
 ---
 
-## Ch19.011 GenCeption — 视频生成模型作为通用视觉学习器
+## Ch19.011 Count Anything - 文本引导的通用目标计数框架
+
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/arxiv-2605-30846-count-anything-2026.md`
+
+# Count Anything - 文本引导的通用目标计数框架
+
+> Source: [Raw](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2605-30846-count-anything-2026.md)
+
+## 摘要
+
+arXiv 2605.30846 提出了 **Count Anything** —— 一个文本引导的通用目标计数框架。它把计数任务从「单类别、特定数据集」的形式重新定义为「图像 + 自然语言查询 → 实例锚点集 + 计数」的统一形式。配套发布了 **CLOC**（Cross-domain Large-scale Object Counting）基准，覆盖六大视觉域 22 万张图像、619 类、1500 万个目标实例。
+
+## 核心要点
+
+1. **文本引导的计数公式**：给定图像 + 自然语言查询，模型返回一组实例锚点（instance-grounded set of target points），其基数即为计数。这种形式统一了「类别条件计数」与「可解释的空间定位」。
+2. **CLOC 基准**：跨域大规模目标计数数据集，整合六类视觉域（通用场景、遥感、病理切片、细胞显微、农业、微生物），约 22 万图、619 类、1500 万实例。
+3. **双粒度实例枚举**：抛弃主流的密度图（density-map）方法，采用离散实例点。一个 *Region-level Sparse Counter* 处理大而稀疏目标，一个 *Pixel-level Dense Counter* 处理小、密集、弱边界目标。
+4. **点中心监督策略**（point-centric supervision）：从异构标注中学习 —— 不同数据集的目标可能用点、框、mask 标注不同。
+5. **无参数融合**（Complementary Count Fusion）：把两个 Counter 的输出以无参数方式组合。
+
+## 深度分析
+
+### 1. 形式化重新定义：把"计数"变成"指代表达"
+
+传统目标计数是分类问题 —— 你先决定数「人」「车」「细胞」，再训练一个模型。结果是每增加一个类别就要重新收集数据、训练、部署。Count Anything 走的是「指代表达」（Referring Expression）的路子：用户用自然语言指定要数什么，模型既给出数字，也给出每个实例在图中的位置（点集）。
+
+这个改写带来三个实际收益：
+- **零样本类别扩展**：新类别（"数一下这片麦田里发黄的麦穗"）不需要重新训练。
+- **可解释性**：拿到数字同时拿到位置点，可以可视化、可以复核、可以二次过滤。
+- **统一接口**：所有下游任务（密度估计、目标检测、实例分割）可以共享同一套点集输出。
+
+### 2. 双粒度设计是真正的工程创新
+
+计数任务的最大痛点是 **尺度跨度极大** —— 同一张图里可能有占据画面 30% 的树，也有小到 3×3 像素的昆虫卵。单一架构无法同时兼顾两种情况。
+
+Count Anything 用两个 Counter 解决：
+- **Region-level Sparse Counter**：先生成候选区域锚点（类似检测框中心），再在每个区域里枚举。适合大目标、稀疏分布。
+- **Pixel-level Dense Counter**：对每个像素预测是否是某个目标点，密集预测。适合小目标、密集分布、边界模糊。
+
+两个 Counter 的输出通过 *Complementary Count Fusion*（无参数融合）合并 —— 简单说就是分别投票。这种双粒度思路在语义分割（HRNet）、目标检测（RetinaNet 的 FPN）里都出现过，但在计数领域还属首次。
+
+### 3. CLOC 基准的覆盖广度
+
+CLOC 把六个完全不同的视觉域合并成一个数据集：
+- **General Scene**：COCO、PASCAL VOC 类
+- **Remote Sensing**：DOTA、DIOR 类
+- **Histopathology**：细胞核计数
+- **Cellular Microscopy**：荧光显微
+- **Agriculture**：果实、病虫害
+- **Microbiology**：细菌、菌落
+
+这种跨域整合让"通用计数"有了可衡量的目标。CLOC 22 万图、1500 万实例的规模也接近 ImageNet 的标注量。
+
+### 4. 跟传统密度图方法的对比
+
+主流密度图方法（如 CSRNet、DM-Count）的核心假设是「学习一个像素到密度的回归函数」。这种方法的弱点：
+- **后处理依赖**：要把密度图积分成数字，需要选阈值。
+- **跨域泛化差**：训练集的人群密度分布和测试集相差大时性能骤降。
+- **无可解释性**：输出是密度图，看不出每个目标在哪。
+
+Count Anything 的点集输出天然规避了上述三个问题。
+
+## 实践启示
+
+1. **想做"通用 X"的任务，先把输入形式重写一遍**。Count Anything 没有提出新模型架构，只是把计数从「分类 + 回归」重写为「指代表达 + 集合输出」，但这一改写就让它支持了零样本类别扩展。这是 2026 年多模态基础模型时代最值得借鉴的方法论 —— **形式重写比架构升级更值**。
+2. **双粒度是处理尺度跨度的通用模式**。任何涉及"目标大小差几个数量级"的任务（计数、检测、分割、检索）都可以借鉴 Region + Pixel 的双路设计。
+3. **CLOC 跨域基准是这类工作的关键基础设施**。没有统一基准，"通用"就只是宣传话术。Cloc 的发布本身和模型一样重要 —— 它让后续工作有可比的目标。
+4. **点集输出比密度图更适合下游系统**。如果你的计数结果要进入决策系统（库存、报警、统计），点集比密度图易用得多 —— 每个点都是结构化数据，可以做空间查询、密度统计、轨迹跟踪。
+
+## 相关
+
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2605-30846-count-anything-2026.md)
+- 论文: https://arxiv.org/abs/2605.30846
+- 代码: https://github.com/Mengqi-Lei/count-anything
+## 相关实体
+- [visual para-thinker: 视觉并行思考框架 (arxiv 2602.13310)](https://github.com/QianJinGuo/wiki/blob/main/entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md)
+- [qwen-image-flash: beyond objective design — few-step distill](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-image-flash-beyond-objective-design.md)
+- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-image-content-precise-analysis.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+
+---
+
+## Ch19.012 GenCeption — 视频生成模型作为通用视觉学习器
 
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/genception-video-gen-models-general-purpose-vision-learners-arxiv-2607.md`
 
@@ -1165,9 +1186,9 @@ GenCeption 在以下任务上达到或超越专门模型：
 
 ---
 
-## Ch19.012 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
+## Ch19.013 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
-> 📊 Level ⭐⭐⭐⭐ | 23.8KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
+> 📊 Level ⭐⭐⭐⭐ | 23.7KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
 ## 概述
 
@@ -1422,7 +1443,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 ---
 
-## Ch19.013 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
+## Ch19.014 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
 > 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
@@ -1582,7 +1603,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 
 ---
 
-## Ch19.014 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
+## Ch19.015 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
 
 > 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/arxiv-2606-03979-language-models-need-sleep.md`
 
@@ -1694,7 +1715,7 @@ Mind Lab LoRA 持续学习 (mind-lab-lora-continual-learning-system) 与本文�
 
 ---
 
-## Ch19.015 Natural Language Autoencoders (Anthropic)
+## Ch19.016 Natural Language Autoencoders (Anthropic)
 
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/anthropic-natural-language-autoencoders.md`
 
@@ -1776,9 +1797,9 @@ NLA 证明了"让模型解释自己的思维过程"这一思路的可行性，�
 
 ---
 
-## Ch19.016 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
+## Ch19.017 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
-> 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
 
 # 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
@@ -1811,6 +1832,7 @@ MoWorld 基于过去在 3D/4D 重建领域的成果，构建了可扩展的数�
 **蒸馏阶段**：模型压缩到 4 步实时推理的自回归学生模型，引入结合全局锚点和相机稳定一致性的 Memory 机制保留历史关键信息，同时创新性地跳过传统蒸馏中计算开销巨大的教师轨迹采样初始化过程，显著降低蒸馏成本。
 
 **推理阶段**：将实时推理分解为三个层级协同优化：
+
 - **流水线层**：仅初始阶段完成一次条件编码，后续生成过程中复用已有结果
 - **并行层**：在多 NPU 部署上将解码与主干生成解耦，分散计算任务降低单设备压力
 - **算子层**：通过混合精度量化与高效注意力计算减少显存搬运与冗余计算
@@ -1828,6 +1850,7 @@ MoWorld 的出现可以被视为世界模型领域的「DeepSeek 时刻」，其
 ### 3. 国产 NPU 生态的突破意义
 
 MoWorld 在华为昇腾 NPU 上的全栈打通具有超越单产品的战略意义。它验证了：
+
 - 国产 NPU 可以完成世界模型的全流程训练（不仅仅是推理）
 - NPU 超节点可以支撑 14B 级别大模型的实时推理
 - 训练和推理的端到端自主可控路径已经走通
@@ -1865,9 +1888,9 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 
 ---
 
-## Ch19.017 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
+## Ch19.018 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
 
-> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/light-interaction-world-model-inference.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/light-interaction-world-model-inference.md`
 
 # Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
 
@@ -1894,6 +1917,7 @@ Light Interaction 的核心观察是：**交互状态决定了哪些历史信息
 交互式视频世界模型的上下文主要包括两类：近期时间上下文（维持短期运动连续）和检索得到的空间记忆（在相机回访旧区域时保持几何和外观一致）。
 
 Light Interaction 使用 **相机位姿相似度** 判断当前视角是否存在可靠历史参考：
+
 - 当最大位姿相似度低于阈值时，系统视为 **探索阶段**，丢弃可能误导生成的空间记忆
 - 当相似度达到阈值时，相关历史视角才被保留作为条件参与后续生成
 
@@ -1904,6 +1928,7 @@ Light Interaction 使用 **相机位姿相似度** 判断当前视角是否存�
 论文统计显示，回访阶段相邻去噪步之间的相对 L1 距离整体低于探索阶段，说明模型在有可靠历史参考时输出更稳定，更适合复用早期去噪结果。
 
 Light Interaction 只在 **存在可靠历史参考的回访状态** 下启用去噪缓存：
+
 - 第一步正常计算
 - 中间去噪步复用第一步模型输出
 - 最后一步仍正常计算，用于校正累计误差
@@ -1915,6 +1940,7 @@ Light Interaction 只在 **存在可靠历史参考的回访状态** 下启用�
 稀疏 attention 的难点在于，少算理论 FLOPs 不等于真实延迟下降。在自回归视频生成中，当前 chunk、历史 KV、文本 token 和因果布局交织在一起，Q/KV 长度高度不对称。
 
 Light Interaction 的做法更贴近自回归视频生成的实际结构：
+
 - **文本条件 KV 缓存和当前 chunk** 始终保留稠密计算
 - **只对历史视觉 KV** 做 3D block 稀疏选择
 - 通过 **Triton** 融合 Q preparation、KV preparation 和 untile scatter 等操作，减少中间张量和重复内存搬运
@@ -1957,9 +1983,9 @@ Light Interaction 的价值在于提出了一种更适合交互式生成的推�
 
 ---
 
-## Ch19.018 Qwen-AgentWorld: Language World Models for General Agents
+## Ch19.019 Qwen-AgentWorld: Language World Models for General Agents
 
-> 📊 Level ⭐⭐⭐⭐ | 6.8KB | `entities/qwen-agentworld-language-world-models.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/qwen-agentworld-language-world-models.md`
 
 # Qwen-AgentWorld: Language World Models for General Agents
 
@@ -2027,6 +2053,7 @@ Qwen-AgentWorld 展示了世界模型增强通用智能体的两种互补路径�
 - 关键优势：安全探索、可重复性、成本效率
 
 **范式二：统一 Agent 基础模型**
+
 - 世界模型训练作为高效的预热（warm-up），提升下游 7 个 agent 基准的表现
 - 通过学习环境动态，模型获得了对世界运作方式的深层理解
 - 这种理解迁移到下游任务，带来性能提升
@@ -2036,6 +2063,7 @@ Qwen-AgentWorld 展示了世界模型增强通用智能体的两种互补路径�
 ### 与 AI 中的世界模型 传统的关系
 
 世界模型的概念在 AI 研究中有深厚传统：
+
 - **Sutton & Barto** 的强化学习经典中，世界模型是 model-based RL 的核心
 - **Ha & Schmidhuber (2018)** 的 World Models 论文展示了神经网络学习环境模拟
 - **Dreamer 系列** 将世界模型与 RL 结合，实现了高效的机器人控制
@@ -2080,7 +2108,83 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ---
 
-## Ch19.019 From AGI to ASI
+## Ch19.020 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
+
+> 📊 Level ⭐⭐⭐⭐ | 6.7KB | `entities/neurips-in-icml-paper-title-tips.md`
+
+# 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
+
+## 摘要
+
+在 NeurIPS、ICML、ICLR 等顶会中，论文标题不仅是论文的"门面"，更是一种独特的科研软实力。本文系统总结了顶会论文标题的常见模式和策略，从"跨会名嵌套"（如 ICML 2026 上缩写为 NeurIPS 的论文）、"方法贡献型"结构到"对比突出型"框架，分析了哪些标题结构更容易吸引审稿人和读者的注意。同时涵盖了标题命名的心理学效应——一个好的标题能在几秒钟内决定读者是否会继续阅读。
+
+## 核心要点
+
+- **跨会名嵌套策略**：将顶级会议缩写嵌入论文方法名中（如"NeurIPS in ICML"、"ACL in CVPR"、"ICLR in AAAI"），利用品牌的认知杠杆提升辨识度
+- **问题驱动型标题**：以开放问题或挑战开场，吸引同领域研究者的好奇心和阅读欲
+- **方法贡献型标题**：突出方法创新点，如 "XXX: A Novel Framework for ..." 结构
+- **对比突出型标题**：强调"比 SOTA 好在哪里"或"提出了不同的思路"
+- **"原地闭环"型标题**：方法名缩写恰好等于会议名本身（如在 ICLR 发表 ICLR 论文、在 EMNLP 发表 EMNLP 论文），形成最强品牌锚定
+- **标题是科研软实力**：好的方法命名能在论文接收前就为工作带来关注度，影响力甚至不亚于实验效果
+
+## 深度分析
+
+### 跨会名嵌套：标题中的"品牌联盟"策略
+
+ICML 2026 上出现了一篇方法名为 "NeurIPS" 的论文——即标题缩写恰好是另一个顶会名称。这一现象并非孤例：此前已有 CVPR 2025 的 "ACL"（Activating Capability of Linear Attention for Image Restoration）、AAAI 2026 的 "ICLR"（Inter-Chrominance and Lumiance Interaction for Natural Color Restoration）。
+
+这种"跨会名嵌套"策略利用了审稿人和读者群体的认知共现效应：当读者看到"NeurIPS in ICML"时，会被两种顶级会议的认知锚点同时击中，产生更强的注意力和记忆点。本质上，这是一种学术品牌杠杆策略——将自己的工作与已有高信誉品牌进行关联，从而在信息过载的审稿环境中脱颖而出。
+
+### 标题模式的系统分类
+
+从数据中可以总结出以下几类高效的标题模式：
+
+1. **问题驱动型**：以研究问题或领域挑战为开头，例如"Can LLMs Design Industrial-Grade Optimization Algorithms?"。这种模式直接吸引对该问题感兴趣的研究者。
+2. **方法贡献型**：突出方法创新，常用结构为 "Acronym: Full Description"，在读者脑中先建立品牌记忆点。
+3. **对比突出型**：通过"超过 SOTA""新的视角"等对比词强调差异化。
+
+### 典型案例结构剖析
+
+论文标题中隐藏着精巧的结构工程。以跨会名嵌套的论文为例：
+
+- **NeurIPS in ICML**（脑解码）：论文提出基于神经解剖先验的球面脑解码方法。标题中的"N"对应 "Neuro-anatomical"——恰好拼出 NeurIPS。这一命名并非巧合，而是经过精心设计的缩写工程。
+- **ACL in CVPR**（图像复原）：用线性注意力替代 Mamba 中的状态空间模块。标题 "Activating Capability of Linear Attention" 的缩写恰好为 ACL。
+- **ICLR in AAAI**（低光图像增强）：关注亮度分支和色度分支的交互，"Inter-Chrominance and Lumiance Interaction" 缩写为 ICLR。
+
+### "原地闭环"型命名的极致效应
+
+更具话题性的是"原地闭环"型命名：方法名缩写恰好等于发表会议本身。例如 ICLR 2025 的 "ICLR: In-Context Learning of Representations" 和 EMNLP 2025 的 "EMNLP: Educator-role Moral and Normative Large Language Models Profiling"。
+
+这种命名方式使论文名称成为终身的记忆锚点——读者看到"EMNLP"就想起那篇论文。同时它传递了一种"元自信"的信号：作者对论文工作在会议上的匹配度有高度确信。
+
+### 标题的心理经济学
+
+在审稿流程中，标题往往在论文被阅读前就决定了能否进入"细读"区间。审稿人和 Area Chair 在论文筛选阶段的注意力是最稀缺的资源。一个好的标题，在其心理经济学意义上，是一种**注意力套利**——用极小的字符成本获得极大的认知回报。学会标题设计，相当于在学术传播中获得了一个杠杆。
+
+## 实践启示
+
+1. **标题设计应作为论文创作的一部分而非事后补充**：从论文构思阶段就开始思考方法缩写的可读性和记忆点，将命名策略融入研究定位中。
+
+2. **跨会名嵌套需要方法与方法名的有机统一**：强行缩写会适得其反。成功的案例都是方法名称的关键词恰好多对应会议缩写字母，而非生造。
+
+3. **不同的标题模式适用于不同的论文定位**：问题驱动型适合推翻共识的挑战性工作，方法贡献型适合系统性的工具/框架类工作，对比突出型适合增量改进工作。
+
+4. **标题策略本质上是一种学术品牌建设**：好的命名不仅帮助一篇论文被接收，更在整个学术生涯中建立辨识度——研究者会因一篇好命名的论文而被记住。
+
+5. **关注会议的文化和接收标准变化**：顶会接受的标题风格也在演变——从纯粹的技术性命名到更具故事性的标题。关注这些变化趋势有助于调整投稿策略。
+
+## 相关实体
+
+- [ICML 2026 获奖论文](https://github.com/QianJinGuo/wiki/blob/main/entities/icml-2026-award-papers-huanggao-a3c-time-test-2026.md)
+- [Claude Code 学术文献综述](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-academic-literature-review-sci.md)
+- [Agent 技能写作指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
+- [AI 科研助手从构思到应用](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-research-assistant-from-idea-to-app.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/neurips-in-icml-paper-title-tips-guidance-2026.md)
+
+---
+
+## Ch19.021 From AGI to ASI
 
 > 📊 Level ⭐⭐⭐⭐ | 6.5KB | `entities/arxiv-2606-12683-from-agi-to-asi.md`
 
@@ -2163,85 +2267,9 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.020 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
+## Ch19.022 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
-> 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/neurips-in-icml-paper-title-tips.md`
-
-# 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
-
-## 摘要
-
-在 NeurIPS、ICML、ICLR 等顶会中，论文标题不仅是论文的"门面"，更是一种独特的科研软实力。本文系统总结了顶会论文标题的常见模式和策略，从"跨会名嵌套"（如 ICML 2026 上缩写为 NeurIPS 的论文）、"方法贡献型"结构到"对比突出型"框架，分析了哪些标题结构更容易吸引审稿人和读者的注意。同时涵盖了标题命名的心理学效应——一个好的标题能在几秒钟内决定读者是否会继续阅读。
-
-## 核心要点
-
-- **跨会名嵌套策略**：将顶级会议缩写嵌入论文方法名中（如"NeurIPS in ICML"、"ACL in CVPR"、"ICLR in AAAI"），利用品牌的认知杠杆提升辨识度
-- **问题驱动型标题**：以开放问题或挑战开场，吸引同领域研究者的好奇心和阅读欲
-- **方法贡献型标题**：突出方法创新点，如 "XXX: A Novel Framework for ..." 结构
-- **对比突出型标题**：强调"比 SOTA 好在哪里"或"提出了不同的思路"
-- **"原地闭环"型标题**：方法名缩写恰好等于会议名本身（如在 ICLR 发表 ICLR 论文、在 EMNLP 发表 EMNLP 论文），形成最强品牌锚定
-- **标题是科研软实力**：好的方法命名能在论文接收前就为工作带来关注度，影响力甚至不亚于实验效果
-
-## 深度分析
-
-### 跨会名嵌套：标题中的"品牌联盟"策略
-
-ICML 2026 上出现了一篇方法名为 "NeurIPS" 的论文——即标题缩写恰好是另一个顶会名称。这一现象并非孤例：此前已有 CVPR 2025 的 "ACL"（Activating Capability of Linear Attention for Image Restoration）、AAAI 2026 的 "ICLR"（Inter-Chrominance and Lumiance Interaction for Natural Color Restoration）。
-
-这种"跨会名嵌套"策略利用了审稿人和读者群体的认知共现效应：当读者看到"NeurIPS in ICML"时，会被两种顶级会议的认知锚点同时击中，产生更强的注意力和记忆点。本质上，这是一种学术品牌杠杆策略——将自己的工作与已有高信誉品牌进行关联，从而在信息过载的审稿环境中脱颖而出。
-
-### 标题模式的系统分类
-
-从数据中可以总结出以下几类高效的标题模式：
-
-1. **问题驱动型**：以研究问题或领域挑战为开头，例如"Can LLMs Design Industrial-Grade Optimization Algorithms?"。这种模式直接吸引对该问题感兴趣的研究者。
-2. **方法贡献型**：突出方法创新，常用结构为 "Acronym: Full Description"，在读者脑中先建立品牌记忆点。
-3. **对比突出型**：通过"超过 SOTA""新的视角"等对比词强调差异化。
-
-### 典型案例结构剖析
-
-论文标题中隐藏着精巧的结构工程。以跨会名嵌套的论文为例：
-
-- **NeurIPS in ICML**（脑解码）：论文提出基于神经解剖先验的球面脑解码方法。标题中的"N"对应 "Neuro-anatomical"——恰好拼出 NeurIPS。这一命名并非巧合，而是经过精心设计的缩写工程。
-- **ACL in CVPR**（图像复原）：用线性注意力替代 Mamba 中的状态空间模块。标题 "Activating Capability of Linear Attention" 的缩写恰好为 ACL。
-- **ICLR in AAAI**（低光图像增强）：关注亮度分支和色度分支的交互，"Inter-Chrominance and Lumiance Interaction" 缩写为 ICLR。
-
-### "原地闭环"型命名的极致效应
-
-更具话题性的是"原地闭环"型命名：方法名缩写恰好等于发表会议本身。例如 ICLR 2025 的 "ICLR: In-Context Learning of Representations" 和 EMNLP 2025 的 "EMNLP: Educator-role Moral and Normative Large Language Models Profiling"。
-
-这种命名方式使论文名称成为终身的记忆锚点——读者看到"EMNLP"就想起那篇论文。同时它传递了一种"元自信"的信号：作者对论文工作在会议上的匹配度有高度确信。
-
-### 标题的心理经济学
-
-在审稿流程中，标题往往在论文被阅读前就决定了能否进入"细读"区间。审稿人和 Area Chair 在论文筛选阶段的注意力是最稀缺的资源。一个好的标题，在其心理经济学意义上，是一种**注意力套利**——用极小的字符成本获得极大的认知回报。学会标题设计，相当于在学术传播中获得了一个杠杆。
-
-## 实践启示
-
-1. **标题设计应作为论文创作的一部分而非事后补充**：从论文构思阶段就开始思考方法缩写的可读性和记忆点，将命名策略融入研究定位中。
-
-2. **跨会名嵌套需要方法与方法名的有机统一**：强行缩写会适得其反。成功的案例都是方法名称的关键词恰好多对应会议缩写字母，而非生造。
-
-3. **不同的标题模式适用于不同的论文定位**：问题驱动型适合推翻共识的挑战性工作，方法贡献型适合系统性的工具/框架类工作，对比突出型适合增量改进工作。
-
-4. **标题策略本质上是一种学术品牌建设**：好的命名不仅帮助一篇论文被接收，更在整个学术生涯中建立辨识度——研究者会因一篇好命名的论文而被记住。
-
-5. **关注会议的文化和接收标准变化**：顶会接受的标题风格也在演变——从纯粹的技术性命名到更具故事性的标题。关注这些变化趋势有助于调整投稿策略。
-
-## 相关实体
-
-- [ICML 2026 获奖论文](https://github.com/QianJinGuo/wiki/blob/main/entities/icml-2026-award-papers-huanggao-a3c-time-test-2026.md)
-- [Claude Code 学术文献综述](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-academic-literature-review-sci.md)
-- [Agent 技能写作指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
-- [AI 科研助手从构思到应用](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-research-assistant-from-idea-to-app.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/neurips-in-icml-paper-title-tips-guidance-2026.md)
-
----
-
-## Ch19.021 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
-
-> 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/baai-orca-next-state-prediction-world-model.md`
+> 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/baai-orca-next-state-prediction-world-model.md`
 
 # BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
@@ -2299,7 +2327,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.022 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
+## Ch19.023 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.4KB | `entities/tangjie-zhipu-asi-internal-letter-2026.md`
 

@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-shai-hulud-attack-1.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("TeamPCP Claims Sale of Mistr…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - TeamPCP 在黑客论坛上声称出售约 5GB 的 Mistral AI 内部代码库存档，标价 $25,000，威胁一周内公开泄露 
 - 存档据称包含约 450 个仓库，覆盖训练系统、微调项目、基准测试工具、仪表板、推理基础设施和实验性 AI 项目 

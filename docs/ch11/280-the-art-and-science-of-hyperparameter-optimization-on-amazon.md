@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The art and science of hyper…"))
+    深度分析
+      核心观点
+      内容结构
+      技术要点
+      关联实体
+    实践启示
+```
+
 ## 深度分析
 
 The art and science of hyperparameter optimization on Amazon Nova Forge 涉及aws领域的核心技术议题。

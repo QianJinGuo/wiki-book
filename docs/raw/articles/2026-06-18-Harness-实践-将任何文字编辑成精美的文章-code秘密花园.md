@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "Harness 实践 将任何文字编辑成精美的文章 code秘密花园"
-source: "github.com"
+source: "claude.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://github.com/ConardLi/reacticle"
+source_url: "https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html"
 published: "2026-06-18"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

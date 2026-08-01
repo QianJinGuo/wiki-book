@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 6.9KB | `entities/using-amazon-emr-serverless-storage-to-simplify-operations-and-reduce-costs.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用Amazon EMR Serverless Stor…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

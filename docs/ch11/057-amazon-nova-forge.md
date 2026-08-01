@@ -6,6 +6,35 @@
 
 # Amazon Nova Forge 域定制超参调优：艺术与科学
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Nova Forge 域定制超参调优：艺术…"))
+    概述
+    三大定制阶段
+    三大超参挑战
+      1. Catastrophic Forgett…
+      2. Learning Rate 学习率
+      3. RFT Baseline 约束
+    战略决策树
+      Checkpoint 选择 最影响决策
+      Training Mode 选择
+    关键数字锚点
+    实战推荐工作流
+    深度分析
+      1. 稳定性-灵活性权衡是超参调优的核心矛盾
+      2. 学习率对数据混合的强耦合性
+      3. RFT 基线性能的双向约束机制
+      4. Checkpoint 选择决定上限，超参…
+    实践启示
+      1. 始终从服务默认值起步，特别是使用数据混合时
+      2. 用 LoRA + post-traine…
+      3. SFT 必须包含 Reasoning-I…
+      4. 数据质量优先，混合比例以 50% 为实验起点
+```
+
 ## 概述
 
 Amazon Nova Forge 是 AWS 提供的**自建前沿模型**定制服务，核心价值在于：从早期 checkpoint 起步、混合专有数据与 Amazon Nova 精选数据、在 AWS 上安全托管定制模型。**数据混合 (data mixing)** 能力是核心 — 让模型吸收领域知识同时保留通用推理与指令遵循能力，避免 catastrophic forgetting。

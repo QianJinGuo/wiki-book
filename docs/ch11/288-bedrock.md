@@ -9,6 +9,24 @@
 > **Background**: 某出行企业租车业务需自动识别车辆剩余油量计算差价。直接用 VL 大模型（含 Nova、Qwen）微调效果差（60-70% 准确率），改用 Amazon Rekognition 自定义标签定位 + VL 模型定量的两阶段方案。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("对图像内容进行精确分析 — Bedrock 多模态案例实…"))
+    概念导图
+    场景
+    失败路径（验证后放弃）
+    成功路径（两阶段方案）
+      阶段 1：Amazon Rekognition…
+      阶段 2：VL 模型 / 视觉模型定量
+    关键设计
+    工程价值
+    待关注
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid
@@ -30,38 +48,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 

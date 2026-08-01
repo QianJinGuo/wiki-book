@@ -8,6 +8,20 @@
 
 > **Background**：Cloudflare 官方博客，宣布为所有开发者提供 OAuth 授权能力，使第三方应用能安全地访问 Cloudflare 平台资源。这是 Cloudflare 开发者平台战略的关键一步，尤其对 Agentic 工具的委托访问具有重要意义。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Unlocking the Cloudflare app…"))
+    技术实现深度分析
+      OAuth 引擎升级：Hydra 1.x → …
+      蓝绿部署的关键设计
+    对 Agent 生态的意义
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Cloudflare 服务着全球 20% 的网站，其 API 生态长期以来依赖手动准入的少量合作伙伴 OAuth 集成（如 Wrangler、PlanetScale）。此次"OAuth for All"发布将 OAuth 授权能力开放给所有开发者，支持自管理 OAuth 客户端创建。背后的技术升级涉及从 Hydra 1.x 到 2.x 的大规模迁移，采用了蓝绿部署策略和队列化撤销机制来确保零停机升级。

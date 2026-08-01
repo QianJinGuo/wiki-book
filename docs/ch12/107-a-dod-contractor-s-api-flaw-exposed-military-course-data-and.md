@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schemata-dod-contractor-api-flaw-military-data-exposure.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("A DOD contractor’s API flaw …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch01/223-rag.html)

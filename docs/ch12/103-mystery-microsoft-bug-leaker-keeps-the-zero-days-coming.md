@@ -9,6 +9,17 @@ Security pros warn YellowKey claim could make stolen laptops a much bigger probl
 ](https:&#x2F;&#x2F;www.theregister.com&#x2F;author&#x2F;connor-jones)
 Cybersecurity reporter
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Mystery Microsoft bug leaker…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Microsoft Zero Days Researcher Disgruntled Theregister](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md)
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)

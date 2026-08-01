@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 5.7KB | `entities/strands-agents-sdk-build-analytics-layer-vqr-amazon-bedrock-practice.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Strands Agents SDK 构建确定性数据…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 ```mermaid

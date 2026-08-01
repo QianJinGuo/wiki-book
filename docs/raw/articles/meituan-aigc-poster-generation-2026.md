@@ -3,7 +3,7 @@ type: source-card
 title: "美团海报生成 AIGC 技术创新与实践"
 source: "wechat"
 author: "未标注作者；来源机构见 source"
-source_url: "https://github.com/MeiGen-AI"
+source_url: "https://github.com/MeiGen-AI>"
 published: "未标注"
 collected: "2026-07-03"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

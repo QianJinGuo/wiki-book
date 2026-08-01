@@ -8,6 +8,22 @@
 
 > **Background**: 当 AI 代理需要消费付费 API、付费 MCP 服务器或付费内容时，传统人工审批和包月订阅模式跟不上代理按调用、按内容结算的节奏。本文结合 Bedrock AgentCore Payments (Preview) 与 x402 协议，设计端到端 agentic 支付方案。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("让 AI 代理自己付钱：基于 Amazon Bedroc…"))
+    核心问题
+    x402 协议
+    Bedrock AgentCore Payme…
+    业务场景示例
+    架构组件
+    风险与控制
+    待关注
+    相关实体
+```
+
 ## 核心问题
 
 - 信用卡/对公汇款/包月订阅是为人设计的，单笔手续费常超过代理实际要付的金额

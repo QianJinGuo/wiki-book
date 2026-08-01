@@ -7,6 +7,22 @@
 # Microsoft / GitHub / AWS AI 算力承压事件分析（RuntimeWire 2026-06）
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Microsoft / GitHub / AWS AI …"))
+    概念导图
+    深度分析
+      收购叙事如何被 agent 负载曲线击穿
+      Agentic 浪潮带来的非线性需求
+      可靠性事件的产品级影响
+      高信号维护者的退出风险
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid
@@ -22,43 +38,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "感知层"
-        VISION[视觉感知<br/>RGB-D/点云]
-        TOUCH[触觉传感<br/>力反馈]
-        PROPRIO[本体感受<br/>关节状态]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "认知层"
-        MAP[环境建图<br/>SLAM]
-        LOC[定位<br/>GPS+IMU]
-        UNDERSTAND[场景理解<br/>目标检测]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    VISION --> MAP & UNDERSTAND
-    TOUCH & PROPRIO --> LOC
-    subgraph "决策层"
-        PLAN[任务规划<br/>LLM/VLM]
-        MOTION[运动规划<br/>RRT/MPC]
-        RL[强化学习<br/>Sim-to-Real]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    MAP & UNDERSTAND --> PLAN
-    LOC --> MOTION
-    PLAN --> MOTION
-    MOTION --> RL
-    subgraph "执行层"
-        CTRL[运动控制<br/>PID/阻抗]
-        SAFETY[安全约束<br/>力限/避障]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    RL --> CTRL
-    CTRL --> SAFETY
-    SAFETY --> ENV[物理环境]
-    ENV --> VISION & TOUCH
-    classDef perc fill:#dbeafe,stroke:#2563eb
-    classDef cog fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#fef3c7,stroke:#d97706
-    classDef exec fill:#d1fae5,stroke:#059669
-    class VISION,TOUCH,PROPRIO perc
-    class MAP,LOC,UNDERSTAND cog
-    class PLAN,MOTION,RL dec
-    class CTRL,SAFETY exec
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 

@@ -7,6 +7,24 @@
 # SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SeedVR2 on Amazon SageMaker:…"))
+    概念导图
+    概述
+    核心技术
+      关键特性
+    AWS 三层架构
+      数据流
+    部署要点
+    应用场景
+    与现有 AI 视频工具的关系
+    开源资源
+```
+
 ## 概念导图
 
 ```mermaid

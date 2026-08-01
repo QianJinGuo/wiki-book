@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "Refund Verification"
-source: "github.com"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://github.com/mattpocock/skills/blob/main/skills/productivity/writing-great-skills/SKILL.md"
+source_url: "https://mp.weixin.qq.com/s/9E3KgwiXPWNp7ZNjZ7Wn9A"
 published: "2026-05-01"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

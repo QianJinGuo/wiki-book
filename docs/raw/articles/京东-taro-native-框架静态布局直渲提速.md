@@ -3,7 +3,7 @@ type: source-card
 title: "京东 Taro Native 框架静态布局直渲提速"
 source: "wechat"
 author: "未标注作者；来源机构见 source"
-source_url: "https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502303&idx=1&sn=742f307456c90f2846ed537d8675ebaf&scene=21#wechat_redirect"
+source_url: "http://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502331&idx=1&sn=0c09c9a4a81484c5386ff3d58037aab9&chksm=fbf47914cc83f00227ac695f474fb6be89c50f12bc4c5a3b6d827f08f1d05fd0b83f614b4a4f#rd"
 published: "未标注"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

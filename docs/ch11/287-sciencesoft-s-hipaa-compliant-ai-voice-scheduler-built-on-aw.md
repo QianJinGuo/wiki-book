@@ -8,6 +8,15 @@
 
 > [Healthcare organizations](<https://aws.amazon.com/health/gen-ai/>) need efficient scheduling solutions, and ScienceSoft’s AI voice assistant, powered by Amazon Nova Sonic and Amazon Bedrock Guardrails, shows how responsible AI can deliver that. The AI patient scheduling software market is one of he
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ScienceSoft's HIPAA-Complian…"))
+    Challenges in healthcar…
+```
+
 ## 摘要
 
 # ScienceSoft’s HIPAA-compliant AI voice scheduler built on AWS

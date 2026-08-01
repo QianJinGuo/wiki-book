@@ -5,6 +5,17 @@
 > 📊 Level ⭐⭐ | 8.0KB | `entities/sap-intelligent-procurement-assistant-solution.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于Strands框架和Bedrock AgentCor…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

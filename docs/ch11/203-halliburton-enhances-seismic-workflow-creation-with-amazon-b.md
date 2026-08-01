@@ -9,6 +9,17 @@ Seismic data analysis is an essential component of energy exploration, but confi
 (Halliburton Bedrock GenAI article content - 15,222 chars fetched from AWS)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Halliburton enhances seismic…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 
 ```mermaid

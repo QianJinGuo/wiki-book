@@ -2,7 +2,7 @@
 
 ## Ch03.078 Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now
 
-> 📊 Level ⭐⭐ | 10.3KB | `entities/zepto-real-time-personalisation-dual-sequence-ranker.md`
+> 📊 Level ⭐⭐ | 11.8KB | `entities/zepto-real-time-personalisation-dual-sequence-ranker.md`
 
 # Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now
 

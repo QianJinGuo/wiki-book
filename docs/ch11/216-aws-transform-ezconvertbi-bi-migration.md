@@ -8,6 +8,18 @@
 Migrating to Amazon Quick doesn't have to mean starting from scratch. Your dashboards encode hard-won domain knowledge: calculated fields your analysts perfected, layouts your executives rely on every Monday morning, security rules tuned to your org chart. You want AI-powered insights and serverless scale, but you're staring at hundreds of dashboards and a migration estimate measured in months. Now you can significantly accelerate your migration to Amazon Quick, potentially reducing timelines from months to days.
 In this post, we walk through the full journey, from setting up your migration workspace in AWS Transform to subscribing to partner agents through AWS Marketplace to unlocking Amazon Quick capabilities that change how your organization consumes data.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Transform Ezconvertbi BI…"))
+    The real cost of stayin…
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## The real cost of staying on legacy BI
 If you're running a legacy BI tool, you face compounding pressures that go beyond licensing fees:
 

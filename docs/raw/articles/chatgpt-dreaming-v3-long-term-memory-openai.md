@@ -3,7 +3,7 @@ type: source-card
 title: "ChatGPT 的\"失忆症\"终于被治好了！Dreaming V3 让大模型拥有长期记忆"
 source: "https://mp.weixin.qq.com/s/-k71aRS38kiZexsyFU3JGw"
 author: "大石"
-source_url: "https://openai.com/index/chatgpt-memory-dreaming/"
+source_url: "https://mp.weixin.qq.com/s/-k71aRS38kiZexsyFU3JGw"
 published: "2026-06-05"
 collected: "2026-06-05"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

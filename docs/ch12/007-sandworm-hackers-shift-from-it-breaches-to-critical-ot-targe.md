@@ -31,24 +31,29 @@ Sandworm 持续使用 EternalBlue、DoublePulsar、WannaCry 等老旧漏洞链�
 报告指出，2025 年底出现目标收缩期，可能与针对波兰电网的疑似攻击有关——资源集中投入单一高价值目标 。Sandworm 的活动与地缘政治事件高度关联，在某些案例中甚至先于军事行动发动网络攻击 。
 
 ## 实践启示
-**1. 对 OT/ICS 环境立即启动专项威胁狩猎**
+**1. 对 OT/ICS 环境立即启动专项威胁狩猎**^[].md]
+
 传统 IT 安全监控无法覆盖 OT 环境特性。建议：部署专门针对 ICS/SCADA 协议的异常流量检测；监控工程工作站与 OT 控制器之间的非预期通信；识别利用合法管理员工具（如 PsExec、WMI）的异常横向移动模式。Nozomi Networks 等 OT 安全平台可作为参考架构 。
-**2. 建立"43 天窗口"的主动检测机制**
+**2. 建立"43 天窗口"的主动检测机制**^[].md]
+
 43 天的警告窗口是真实的——但需要主动狩猎才能发现。关键告警应包括：同一源 IP 的渐进式横向移动（尤其是 engineering workstations 和 controllers）；异常的大规模内部扫描行为（如单台主机 targeting 数百台内部系统）；"低值"告警的累积模式（如同一主机反复出现 Cobalt Strike beacon 特征但未被隔离）。建议优先部署行为异常检测而非仅依赖签名匹配 。
-**3. 处置 EternalBlue/DoublePulsar/WannaCry 的残留风险**
+**3. 处置 EternalBlue/DoublePulsar/WannaCry 的残留风险**^[].md]
+
 老旧漏洞链仍在被国家级 APT 活跃使用，说明全球仍有大量未修复系统。OT 网络中这种情况更为严重（ICS 系统难以频繁打补丁）。优先行动：识别 OT 网络中暴露 SMB、RDP 等协议的设备；建立 OT 资产的完整清单（包括固件版本）；对无法打补丁的系统实施网络隔离和补偿性控制 。
-**4. 重新评估"被发现后撤退"的假设**
+**4. 重新评估"被发现后撤退"的假设**^[].md]
+
 传统网络犯罪在被发现后通常撤退以隐藏踪迹。Sandworm 的策略截然相反——被发现后会升级活动，转向 OT 资产 。这意味着针对 APT 的响应策略需要调整：检测到 Sandworm 活动不应被视为"成功驱逐"，而应视为"全面入侵响应的开始"，包括立即切断 IT/OT 互联通道、启动 OT 环境专项排查。
-**5. OT 网络分段与 IT/OT 边界强化**
+**5. OT 网络分段与 IT/OT 边界强化**^[].md]
+
 DXGW + TGW 的混合云架构在本文多个场景中出现。关键启示：OT 网络与 IT 网络之间的边界控制必须视为高优先级；TGW 路由表的静态路由覆盖动态路由的特性需要在架构层面做防护；建议对 IT/OT 互联通道实施零信任策略，持续验证而非一次性认证 （T3 场景中 TGW 静态路由覆盖 DXGW 传播路由的原理与 Sandworm 从 IT 横向进入 OT 的路径控制逻辑相通）。
 ## 相关实体
-- [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [From Doer To Director The Ai Mindset Shift](../ch01/031-from-doer-to-director-the-ai-mindset-shift.html)
-- [Cisa Urges Critical Infrastructure Firms To Fortify Before I](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.html)
-- [Engineering Roles Shift From Developing Code To Ma](../ch05/081-engineering-roles-shift-from-developing-code-to-managing-ai.html)
-- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/081-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [[entities/sandworm-hackers-shift-it-breaches-ot-gbhackers]
+- [[entities/from-doer-to-director-the-ai-mindset-shift]
+- [[entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i]
+- [[entities/engineering-roles-shift-from-developing-code-to-ma]
+- [[entities/engineering-roles-shift-from-developing-code-to-managing-ai]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gbhackers-sandworm-shift-from-it-breaches.md)
+→ [[raw/articles/gbhackers-sandworm-shift-from-it-breaches|原文存档]
 
 ---
 

@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **34 篇**实体，按深度递增排列。
+> 本章收录 **41 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 31 |
+| ⭐ 入门 | 零基础可读 | 8 |
+| ⭐⭐ 工程师 | 需编程基础 | 32 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -125,7 +125,94 @@ FRAGMENTED AUDIT LOGS NO CROSS-SYSTEM CONTEXT MANUAL LOG CORRELATION AI SESSIONS
 
 ---
 
-## Ch10.003 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.003 向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它
+
+> 📊 Level ⭐ | 0.9KB | `entities/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-3.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-3.md)
+
+RAG在网上已经死过很多遍了，谁用谁Low，但是实际上很多的企业知识库仍然在使用，并且依然是主流选择方案。
+
+## 来源
+
+- 原文: [向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-3.md)
+
+---
+
+## Ch10.004 向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它
+
+> 📊 Level ⭐ | 0.9KB | `entities/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-2.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-2.md)
+
+RAG在网上已经死过很多遍了，谁用谁Low，但是实际上很多的企业知识库仍然在使用，并且依然是主流选择方案。
+
+## 来源
+
+- 原文: [向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-2.md)
+
+---
+
+## Ch10.005 向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它
+
+> 📊 Level ⭐ | 0.9KB | `entities/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-1.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-1.md)
+
+RAG在网上已经死过很多遍了，谁用谁Low，但是实际上很多的企业知识库仍然在使用，并且依然是主流选择方案。
+
+## 来源
+
+- 原文: [向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它-1.md)
+
+---
+
+## Ch10.006 图灵平台：万亿级轨迹数据的秒级检索实战
+
+> 📊 Level ⭐ | 0.8KB | `entities/turing-platform-trillion-trajectory-retrieval-baidu-2026-07-22.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/turing-platform-trillion-trajectory-retrieval-baidu-2026-07-22.md)
+
+- 底库：近 10 万亿轨迹点（180 天长尾低级路历史轨迹）
+
+## 来源
+
+- 原文: [图灵平台：万亿级轨迹数据的秒级检索实战](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/turing-platform-trillion-trajectory-retrieval-baidu-2026-07-22.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/Nmgink4YE0KVu8dTuEplyg
+
+---
+
+## Ch10.007 高德广告工程的 AI Native 知识库体系
+
+> 📊 Level ⭐ | 0.8KB | `entities/gaode-ad-engineering-ai-native-knowledge-base-2026-07-22.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ad-engineering-ai-native-knowledge-base-2026-07-22.md)
+
+| 接入层 | 统一知识入口，以 Skill 形态嵌入各类研发 Agent |
+
+## 来源
+
+- 原文: [高德广告工程的 AI Native 知识库体系](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ad-engineering-ai-native-knowledge-base-2026-07-22.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/1d9LDoD2SOcEZ19mDwiE-Q
+
+---
+
+## Ch10.008 Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
+
+> 📊 Level ⭐ | 0.7KB | `entities/karpathy又封神掀翻rag把你的笔记变成第二大脑.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy又封神掀翻rag把你的笔记变成第二大脑.md)
+
+source_url: https://mp.weixin.qq.com/s/G7Fna5qK20lFji4Lqx8GMA
+
+## 来源
+
+- 原文: [Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy又封神掀翻rag把你的笔记变成第二大脑.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/G7Fna5qK20lFji4Lqx8GMA
+
+---
+
+## Ch10.009 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 49.6KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂.md`
 
@@ -488,7 +575,7 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 
 ---
 
-## Ch10.004 RAG → 知识图谱 → 本体论：三层知识架构
+## Ch10.010 RAG → 知识图谱 → 本体论：三层知识架构
 
 > 📊 Level ⭐⭐ | 28.7KB | `entities/rag-vector-knowledge-graph-ontology.md`
 
@@ -798,7 +885,7 @@ HippoRAG on AWS 提供了一个**经典的 GraphRAG 生产实现模板**，与 S
 
 ---
 
-## Ch10.005 Nvidia Multimodal RAG Knowledge Systems
+## Ch10.011 Nvidia Multimodal RAG Knowledge Systems
 
 > 📊 Level ⭐⭐ | 22.0KB | `entities/nvidia-multimodal-rag-knowledge-systems.md`
 
@@ -851,9 +938,9 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ---
 
-## Ch10.006 RAG 分块优化 2025：策略选择与工程实践
+## Ch10.012 RAG 分块优化 2025：策略选择与工程实践
 
-> 📊 Level ⭐⭐ | 17.9KB | `entities/rag-chunking-optimization-2025.md`
+> 📊 Level ⭐⭐ | 17.8KB | `entities/rag-chunking-optimization-2025.md`
 
 ## 相关实体
 
@@ -1012,9 +1099,9 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 
 ---
 
-## Ch10.007 Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
+## Ch10.013 Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
 
-> 📊 Level ⭐⭐ | 16.5KB | `entities/amazon-nova-manufacturing-intelligence.md`
+> 📊 Level ⭐⭐ | 17.0KB | `entities/amazon-nova-manufacturing-intelligence.md`
 
 ## 为什么制造业需要多模态检索
 
@@ -1155,7 +1242,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 ---
 
-## Ch10.008 RAG Chunk Embedding Rerank Pipeline
+## Ch10.014 RAG Chunk Embedding Rerank Pipeline
 
 > 📊 Level ⭐⭐ | 13.7KB | `entities/rag-chunk-embedding-rerank-pipeline.md`
 
@@ -1296,7 +1383,7 @@ RAG 项目需要**可观测性和飞轮系统**：回答需要有依据、可追
 
 ---
 
-## Ch10.009 RAG 全链路技术详解：从文档加载到 Ragas 评估
+## Ch10.015 RAG 全链路技术详解：从文档加载到 Ragas 评估
 
 > 📊 Level ⭐⭐ | 12.7KB | `entities/rag-full-pipeline-taobao.md`
 
@@ -1390,9 +1477,9 @@ Graph RAG 常常被误解为"知识图谱 + 向量检索"的简单组合。它�
 
 ---
 
-## Ch10.010 SIGIR 2026: RAD-DPO 生成式检索偏好对齐
+## Ch10.016 SIGIR 2026: RAD-DPO 生成式检索偏好对齐
 
-> 📊 Level ⭐⭐ | 10.9KB | `entities/sigir-2026oxygensearch-之生成式检索偏好对齐-rad-dpo-技术解析.md`
+> 📊 Level ⭐⭐ | 11.6KB | `entities/sigir-2026oxygensearch-之生成式检索偏好对齐-rad-dpo-技术解析.md`
 
 # SIGIR 2026: RAD-DPO 生成式检索偏好对齐
 
@@ -1489,9 +1576,9 @@ RAD-DPO 选择 DPO 路线而非 GRPO 或 PPO，有明确的技术考量：DPO �
 
 ---
 
-## Ch10.011 Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图
+## Ch10.017 Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图
 
-> 📊 Level ⭐⭐ | 10.3KB | `entities/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md`
+> 📊 Level ⭐⭐ | 11.5KB | `entities/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md`
 
 # Karpathy LLM Wiki V2：从复利启动到复利防烂
 
@@ -1646,9 +1733,9 @@ V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向
 
 ---
 
-## Ch10.012 MRAgent：记忆是重建的，不是检索的
+## Ch10.018 MRAgent：记忆是重建的，不是检索的
 
-> 📊 Level ⭐⭐ | 9.8KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
+> 📊 Level ⭐⭐ | 10.8KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
 
 # MRAgent：记忆是重建的，不是检索的
 
@@ -1804,7 +1891,7 @@ Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这
 
 ---
 
-## Ch10.013 花费 2 个星期写了 8 篇 OpenClaw 源码拆解文章，我发现90% 的人对龙虾的理解都太表面了，深层次的真相竟然是这个
+## Ch10.019 花费 2 个星期写了 8 篇 OpenClaw 源码拆解文章，我发现90% 的人对龙虾的理解都太表面了，深层次的真相竟然是这个
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/tcjndrk4frmumngmboih-w.md`
 
@@ -1867,9 +1954,9 @@ OpenClaw 的多 Agent 编排采用非阻塞子 Agent 生成 + 30 分钟心跳巡
 
 ---
 
-## Ch10.014 WWW 2026 | RAG黑箱被打开！OpenDecoder把文档质量写进解码
+## Ch10.020 WWW 2026 | RAG黑箱被打开！OpenDecoder把文档质量写进解码
 
-> 📊 Level ⭐⭐ | 8.0KB | `entities/www-2026-rag黑箱被打开opendecoder把文档质量写进解码.md`
+> 📊 Level ⭐⭐ | 8.7KB | `entities/www-2026-rag黑箱被打开opendecoder把文档质量写进解码.md`
 
 # WWW 2026 | RAG黑箱被打开！OpenDecoder把文档质量写进解码
 
@@ -1946,7 +2033,105 @@ OpenDecoder 代表了一种重要的范式转变：从"外部丰富上下文"转
 
 ---
 
-## Ch10.015 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
+## Ch10.021 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
+
+> 📊 Level ⭐⭐ | 8.2KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
+
+# Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
+
+## 摘要
+
+Instacart 详细阐述了其广告检索系统从传统 BERT 序列打分模型（Contextual Recommendations, CR）到生成式检索（token-by-token 生成产品 ID）的完整架构重构。这一迁移源于三大瓶颈：词汇表限制、冷启动偏差和结构漂移。新方案受 TIGER（Google DeepMind）启发，将产品 ID 编码为语义 token 序列，模型直接自回归生成相关产品，而非对候选集逐一打分。这是大规模生产系统中 generative retrieval 的真实工程案例，与 Spotify GLIDE/NEO、YouTube PLUM 等业界实践形成对照。
+
+## 核心要点
+
+### 旧方案：BERT 打分模型（Contextual Recommendations）
+
+Instacart 的 CR 系统将杂货购物视为语言建模任务：原子产品 ID 作为 token，目录子集作为「词汇表」。用户实时会话（浏览、访问商品页、加入购物车）构成产品 token 序列，BERT 类 Transformer 在数百万真实购物会话上训练，预测序列中的下一个 token。这一单层检索同时驱动广告和有机推荐，覆盖所有主要浏览界面。
+
+### 三大瓶颈
+
+**1. 词汇表瓶颈**（Vocabulary Bottleneck）
+
+CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解和预测的边界。扩大词汇表虽然增强了上下文理解能力，但同时带来：模型体积和延迟增加、低频商品数据稀疏、目录非平稳性（新产品不断上架导致覆盖缺口持续扩大）。仅靠词汇表扩展无法覆盖目录全貌，特别是专业零售商的特色产品。
+
+**2. 冷启动障碍**（Cold Start Hurdle）
+
+训练数据基于历史购物会话的产品 ID 序列，导致模型倾向于记忆共现关系而非学习基于用户意图的泛化关联。结果是高频商品被过度推荐，而更符合当前上下文的新品牌被忽视。例如用户正在组建烧烤购物车（牛肉饼+汉堡包+生菜），系统倾向于推荐通用杂货（牛奶）而非更符合意图的新品牌调味品（芥末酱）。
+
+**3. 结构漂移**（Structural Drift）
+
+模型通过在整个产品 ID 词汇表上预测概率分布来生成候选集，缺乏内置层级结构来保持推荐聚焦。这导致偶尔出现不协调的商品组合——例如早餐主题购物车（牛奶+鸡蛋+麦片）的推荐中混入洗衣液。如果后续排序模型对这些异常产品校准不当，不协调推荐就会被推送到用户面前。
+
+### 新方案：生成式检索
+
+受 TIGER（Google DeepMind, NeurIPS 2023）启发，Instacart 转向生成式检索范式：**模型不再对预定义候选集打分，而是直接生成下一个相关产品的语义 token**。这一范式已被 Spotify（GLIDE、NEO）和 YouTube（PLUM）在生产环境中采用。
+
+但 Instacart 的场景有独特挑战：
+
+- **意图多样性**：不同于音乐或视频平台的窄意图，Instacart 用户常在单次会话中管理高度多样的购物清单（从生鲜到清洁用品到宠物护理）
+- **意图漂移**：用户在购物过程中意图会动态变化
+- **多零售商**：用户跨多个零售商购物，每个零售商有独立的产品目录
+
+这些挑战要求模型超越历史购买记录，同时考虑活跃购物会话的实时动态。
+
+## 深度分析
+
+### 从打分到生成：范式转换的本质
+
+传统检索的「打分范式」本质上是一个判别式问题：给定查询和候选，输出相关性分数。其核心限制在于**候选集的构建先于相关性判断**——你只能从预定义的候选中选择，无法「创造」新的匹配。
+
+生成式检索将问题翻转为生成式问题：给定上下文，直接输出目标产品的 token 序列。这带来了两个根本性变化：
+
+1. **模型参数即索引**：不需要维护独立的向量索引或倒排索引，产品目录的知识编码在模型权重中。更新目录意味着微调模型，而非重建索引。
+2. **无候选集限制**：理论上可以检索训练数据中出现过的任何产品，不受 ANN 搜索的近似约束。
+
+### 权衡与工程挑战
+
+| 维度 | BERT 打分 | 生成式检索 |
+|------|----------|-----------|
+| 延迟特性 | 向量索引查找（O(log n) 或 O(1) ANN） | 自回归解码（O(seq_len)） |
+| 索引更新 | 重建索引 | 模型微调或增量学习 |
+| 可解释性 | 相对直接（相似度分数） | 需要额外机制 |
+| 新产品处理 | 添加向量即可 | 需要训练数据覆盖 |
+| 目录扩展性 | 索引规模线性增长 | 模型容量受限 |
+
+### Instacart 场景的特殊性
+
+杂货购物的独特性在于**意图的宽泛性和动态性**。用户可能同时在为晚餐、早餐和家庭清洁用品购物，且意图随购物车内容动态演变。这要求检索模型具备：
+
+- **多意图并行建模**：同时理解用户当前会话中的多个购物子任务
+- **实时上下文敏感性**：购物车的每次变化都应影响后续推荐
+- **跨零售商泛化**：同一意图在不同零售商目录下应映射到不同产品
+
+这些需求使得简单的序列到序列迁移变得复杂，需要在产品 token 编码、上下文注入和训练策略上做大量定制化工作。
+
+### 与业界实践的对照
+
+| 平台 | 方案 | 特点 |
+|------|------|------|
+| Google DeepMind | TIGER | 开创性工作，证明生成式检索可行性 |
+| Spotify | GLIDE/NEO | 音乐推荐，意图相对窄 |
+| YouTube | PLUM | 视频推荐，长序列挑战 |
+| Instacart | CR → Generative | 杂货购物，多意图+多零售商 |
+
+## 实践启示
+
+1. **架构迁移的触发条件**：当现有方案的三个以上结构性限制同时出现时（词汇表、冷启动、结构漂移），应考虑范式级重构而非渐进优化
+2. **生成式检索的适用边界**：在候选集动态变化、意图多样、需要上下文敏感匹配的场景下，生成式检索比传统打分模型更有优势
+3. **领域特化的重要性**：直接照搬 TIGER 等通用方案不足以应对杂货购物的独特挑战，需要在 token 编码、训练数据构建和推理策略上做深度领域适配
+4. **渐进式迁移策略**：Instacart 保持了与旧系统的兼容性，在生产环境中逐步验证和切换，这种策略对大规模系统重构至关重要
+
+## 相关实体
+
+- [RAG 与检索技术](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md)
+- [From Silos To Service Topology Why Netflix Built A Real Time](https://github.com/QianJinGuo/wiki/blob/main/entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/instacart-ads-retrieval-generative-token-by-token.md)
+
+---
+
+## Ch10.022 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
 
@@ -2041,104 +2226,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ---
 
-## Ch10.016 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
-
-> 📊 Level ⭐⭐ | 7.6KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
-
-# Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
-
-## 摘要
-
-Instacart 详细阐述了其广告检索系统从传统 BERT 序列打分模型（Contextual Recommendations, CR）到生成式检索（token-by-token 生成产品 ID）的完整架构重构。这一迁移源于三大瓶颈：词汇表限制、冷启动偏差和结构漂移。新方案受 TIGER（Google DeepMind）启发，将产品 ID 编码为语义 token 序列，模型直接自回归生成相关产品，而非对候选集逐一打分。这是大规模生产系统中 generative retrieval 的真实工程案例，与 Spotify GLIDE/NEO、YouTube PLUM 等业界实践形成对照。
-
-## 核心要点
-
-### 旧方案：BERT 打分模型（Contextual Recommendations）
-
-Instacart 的 CR 系统将杂货购物视为语言建模任务：原子产品 ID 作为 token，目录子集作为「词汇表」。用户实时会话（浏览、访问商品页、加入购物车）构成产品 token 序列，BERT 类 Transformer 在数百万真实购物会话上训练，预测序列中的下一个 token。这一单层检索同时驱动广告和有机推荐，覆盖所有主要浏览界面。
-
-### 三大瓶颈
-
-**1. 词汇表瓶颈**（Vocabulary Bottleneck）
-
-CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解和预测的边界。扩大词汇表虽然增强了上下文理解能力，但同时带来：模型体积和延迟增加、低频商品数据稀疏、目录非平稳性（新产品不断上架导致覆盖缺口持续扩大）。仅靠词汇表扩展无法覆盖目录全貌，特别是专业零售商的特色产品。
-
-**2. 冷启动障碍**（Cold Start Hurdle）
-
-训练数据基于历史购物会话的产品 ID 序列，导致模型倾向于记忆共现关系而非学习基于用户意图的泛化关联。结果是高频商品被过度推荐，而更符合当前上下文的新品牌被忽视。例如用户正在组建烧烤购物车（牛肉饼+汉堡包+生菜），系统倾向于推荐通用杂货（牛奶）而非更符合意图的新品牌调味品（芥末酱）。
-
-**3. 结构漂移**（Structural Drift）
-
-模型通过在整个产品 ID 词汇表上预测概率分布来生成候选集，缺乏内置层级结构来保持推荐聚焦。这导致偶尔出现不协调的商品组合——例如早餐主题购物车（牛奶+鸡蛋+麦片）的推荐中混入洗衣液。如果后续排序模型对这些异常产品校准不当，不协调推荐就会被推送到用户面前。
-
-### 新方案：生成式检索
-
-受 TIGER（Google DeepMind, NeurIPS 2023）启发，Instacart 转向生成式检索范式：**模型不再对预定义候选集打分，而是直接生成下一个相关产品的语义 token**。这一范式已被 Spotify（GLIDE、NEO）和 YouTube（PLUM）在生产环境中采用。
-
-但 Instacart 的场景有独特挑战：
-- **意图多样性**：不同于音乐或视频平台的窄意图，Instacart 用户常在单次会话中管理高度多样的购物清单（从生鲜到清洁用品到宠物护理）
-- **意图漂移**：用户在购物过程中意图会动态变化
-- **多零售商**：用户跨多个零售商购物，每个零售商有独立的产品目录
-
-这些挑战要求模型超越历史购买记录，同时考虑活跃购物会话的实时动态。
-
-## 深度分析
-
-### 从打分到生成：范式转换的本质
-
-传统检索的「打分范式」本质上是一个判别式问题：给定查询和候选，输出相关性分数。其核心限制在于**候选集的构建先于相关性判断**——你只能从预定义的候选中选择，无法「创造」新的匹配。
-
-生成式检索将问题翻转为生成式问题：给定上下文，直接输出目标产品的 token 序列。这带来了两个根本性变化：
-
-1. **模型参数即索引**：不需要维护独立的向量索引或倒排索引，产品目录的知识编码在模型权重中。更新目录意味着微调模型，而非重建索引。
-2. **无候选集限制**：理论上可以检索训练数据中出现过的任何产品，不受 ANN 搜索的近似约束。
-
-### 权衡与工程挑战
-
-| 维度 | BERT 打分 | 生成式检索 |
-|------|----------|-----------|
-| 延迟特性 | 向量索引查找（O(log n) 或 O(1) ANN） | 自回归解码（O(seq_len)） |
-| 索引更新 | 重建索引 | 模型微调或增量学习 |
-| 可解释性 | 相对直接（相似度分数） | 需要额外机制 |
-| 新产品处理 | 添加向量即可 | 需要训练数据覆盖 |
-| 目录扩展性 | 索引规模线性增长 | 模型容量受限 |
-
-### Instacart 场景的特殊性
-
-杂货购物的独特性在于**意图的宽泛性和动态性**。用户可能同时在为晚餐、早餐和家庭清洁用品购物，且意图随购物车内容动态演变。这要求检索模型具备：
-
-- **多意图并行建模**：同时理解用户当前会话中的多个购物子任务
-- **实时上下文敏感性**：购物车的每次变化都应影响后续推荐
-- **跨零售商泛化**：同一意图在不同零售商目录下应映射到不同产品
-
-这些需求使得简单的序列到序列迁移变得复杂，需要在产品 token 编码、上下文注入和训练策略上做大量定制化工作。
-
-### 与业界实践的对照
-
-| 平台 | 方案 | 特点 |
-|------|------|------|
-| Google DeepMind | TIGER | 开创性工作，证明生成式检索可行性 |
-| Spotify | GLIDE/NEO | 音乐推荐，意图相对窄 |
-| YouTube | PLUM | 视频推荐，长序列挑战 |
-| Instacart | CR → Generative | 杂货购物，多意图+多零售商 |
-
-## 实践启示
-
-1. **架构迁移的触发条件**：当现有方案的三个以上结构性限制同时出现时（词汇表、冷启动、结构漂移），应考虑范式级重构而非渐进优化
-2. **生成式检索的适用边界**：在候选集动态变化、意图多样、需要上下文敏感匹配的场景下，生成式检索比传统打分模型更有优势
-3. **领域特化的重要性**：直接照搬 TIGER 等通用方案不足以应对杂货购物的独特挑战，需要在 token 编码、训练数据构建和推理策略上做深度领域适配
-4. **渐进式迁移策略**：Instacart 保持了与旧系统的兼容性，在生产环境中逐步验证和切换，这种策略对大规模系统重构至关重要
-
-## 相关实体
-
-- [RAG 与检索技术](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md)
-- [From Silos To Service Topology Why Netflix Built A Real Time](https://github.com/QianJinGuo/wiki/blob/main/entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/instacart-ads-retrieval-generative-token-by-token.md)
-
----
-
-## Ch10.017 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.023 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
@@ -2183,9 +2271,9 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ---
 
-## Ch10.018 Notes on Amazon v. Perplexity
+## Ch10.024 Notes on Amazon v. Perplexity
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/amazon-perplexity-legal-analysis.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/amazon-perplexity-legal-analysis.md`
 
 # Notes on Amazon v. Perplexity
 
@@ -2262,7 +2350,7 @@ Agentic browsing 正是这种用户代理权的最新表达——它让用户无
 
 ---
 
-## Ch10.019 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.025 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮-v2.md`
 
@@ -2316,7 +2404,7 @@ AI 客服出问题不是传统意义的报错，而是意图识别错、问题�
 
 ---
 
-## Ch10.020 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
+## Ch10.026 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/gbrain-8layer-51cto.md`
 
@@ -2366,7 +2454,7 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 
 ---
 
-## Ch10.021 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+## Ch10.027 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
@@ -2437,54 +2525,9 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ---
 
-## Ch10.022 为OpenClaw配置网盘空间的最佳实践
+## Ch10.028 How we built SmithDB’s inverted index for full-text search
 
-> 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
-
-## 深度分析
-
-**1. PDS 网盘作为 OpenClaw 的云端工作空间层**
-
-PDS 为 OpenClaw 提供的核心价值不是存储本身，而是一个可挂载的工作空间抽象层。用户和 Agent 可以像访问本地文件一样访问云端文件，这消除了传统 RAG 场景下文件上传下载的手动环节。网盘的多端同步（Web、PC、手机）配合 OpenClaw 的多模态理解能力，使得"上传一个视频让 AI 总结"这类自然语言指令成为端到端自动化的闭环。
-
-**2. 权限架构：domain_id + 超级管理员绑定**
-
-PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机号验证后将 OpenClaw 绑定为最高权限身份，这与操作系统级的 sudo 机制类似。如果不希望 OpenClaw 拥有全局权限，官方推荐做法是新建一个权限受限的网盘子账户（仅预览/上传/下载），再将其绑定给 OpenClaw。这种"最小权限子账户"模式是在生产环境中安全集成 AI Agent 的关键参考。
-
-**3. 自然语言 → 文件操作管道的设计范式**
-
-五步配置流程（安装插件 → `openclaw pds login` → 浏览器认证 → 使用 Skills）完整展示了如何将一个外部云服务封装为 Agent 可调用的 Skill。核心设计原则是：命令式安装与声明式对话使用并存，用户既可以通过 CLI 手动配置，也可以让 OpenClaw 通过自然语言引导完成配置。这两种接口的并存降低了入门门槛，同时保留了进阶用户的灵活性。
-
-**4. 客户端安装的补充价值：文件级可见性与同步备份**
-
-可选的网盘客户端引入了挂载盘（将云端映射为本地驱动器）和同步备份功能。这意味着 OpenClaw 的工作成果可以无缝进入用户已有的桌面工作流，而不是形成一个新的"AI 隔离区"。客户端支持文件秒传、多任务并发上传和带宽限制控制，是在大规模文件进出场景下保持体验一致性的必要组件。
-
-## 实践启示
-
-1. **配置前先创建受限子账户**：不要用网盘超级管理员身份直接授权 OpenClaw。在 PDS 控制台创建一个仅拥有基础权限的新用户，将其绑定给 OpenClaw，可以在享受 AI 便利的同时实现权限最小化。
-
-2. **domain_id 必须在 PDS 控制台确认**：登录命令 `openclaw pds login <domain_id>` 中的 domain_id 不是域名，而是 PDS 实例的唯一标识符，需要在控制台获取后再使用，错误的 domain_id 将导致认证失败。
-
-3. **文件查询类任务优先使用网盘 Skills**：当任务涉及网盘中的视频、文档、图片时，直接用自然语言描述需求（"帮我总结这个视频"），比先下载再处理效率更高，也避免了本地磁盘与云端的双重管理开销。
-
-4. **通过 OpenClaw 对话完成插件卸载和升级**：使用 `openclaw plugins uninstall pds --force` 卸载前，建议先通过对话让 OpenClaw 确认当前网盘状态，避免误删导致工作文件丢失。升级流程同样支持对话触发，适用于不需要 SSH 登录的远程管理场景。
-
-5. **在 OpenClaw 中构建定期调研简报 Skill**：利用网盘的多模态检索能力（图片语义搜索、音视频内容理解），将"定期调研竞品功能并汇总报告"封装为一个可复用的 Skill，定期检索网盘内相关目录并自动生成更新报告。
-
-## 相关实体
-- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/pgpkc04xff7ilmdb9vocnq.md)
-- [Identity Behavior Context Itdr Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution.md)
-- [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
-- Senators Query Credit Bureaus On Bnpl 1
-- [看 Agentrun 如何玩转记忆存储最佳实践来了](https://github.com/QianJinGuo/wiki/blob/main/entities/看-agentrun-如何玩转记忆存储最佳实践来了.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-cloud-storage-config-guide-wechat.md)
-
----
-
-## Ch10.023 How we built SmithDB’s inverted index for full-text search
-
-> 📊 Level ⭐⭐ | 4.6KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
+> 📊 Level ⭐⭐ | 4.8KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
 
 # How we built SmithDB’s inverted index for full-text search
 
@@ -2533,9 +2576,54 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 
 ---
 
-## Ch10.024 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+## Ch10.029 为OpenClaw配置网盘空间的最佳实践
 
-> 📊 Level ⭐⭐ | 4.6KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
+> 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
+
+## 深度分析
+
+**1. PDS 网盘作为 OpenClaw 的云端工作空间层**
+
+PDS 为 OpenClaw 提供的核心价值不是存储本身，而是一个可挂载的工作空间抽象层。用户和 Agent 可以像访问本地文件一样访问云端文件，这消除了传统 RAG 场景下文件上传下载的手动环节。网盘的多端同步（Web、PC、手机）配合 OpenClaw 的多模态理解能力，使得"上传一个视频让 AI 总结"这类自然语言指令成为端到端自动化的闭环。
+
+**2. 权限架构：domain_id + 超级管理员绑定**
+
+PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机号验证后将 OpenClaw 绑定为最高权限身份，这与操作系统级的 sudo 机制类似。如果不希望 OpenClaw 拥有全局权限，官方推荐做法是新建一个权限受限的网盘子账户（仅预览/上传/下载），再将其绑定给 OpenClaw。这种"最小权限子账户"模式是在生产环境中安全集成 AI Agent 的关键参考。
+
+**3. 自然语言 → 文件操作管道的设计范式**
+
+五步配置流程（安装插件 → `openclaw pds login` → 浏览器认证 → 使用 Skills）完整展示了如何将一个外部云服务封装为 Agent 可调用的 Skill。核心设计原则是：命令式安装与声明式对话使用并存，用户既可以通过 CLI 手动配置，也可以让 OpenClaw 通过自然语言引导完成配置。这两种接口的并存降低了入门门槛，同时保留了进阶用户的灵活性。
+
+**4. 客户端安装的补充价值：文件级可见性与同步备份**
+
+可选的网盘客户端引入了挂载盘（将云端映射为本地驱动器）和同步备份功能。这意味着 OpenClaw 的工作成果可以无缝进入用户已有的桌面工作流，而不是形成一个新的"AI 隔离区"。客户端支持文件秒传、多任务并发上传和带宽限制控制，是在大规模文件进出场景下保持体验一致性的必要组件。
+
+## 实践启示
+
+1. **配置前先创建受限子账户**：不要用网盘超级管理员身份直接授权 OpenClaw。在 PDS 控制台创建一个仅拥有基础权限的新用户，将其绑定给 OpenClaw，可以在享受 AI 便利的同时实现权限最小化。
+
+2. **domain_id 必须在 PDS 控制台确认**：登录命令 `openclaw pds login <domain_id>` 中的 domain_id 不是域名，而是 PDS 实例的唯一标识符，需要在控制台获取后再使用，错误的 domain_id 将导致认证失败。
+
+3. **文件查询类任务优先使用网盘 Skills**：当任务涉及网盘中的视频、文档、图片时，直接用自然语言描述需求（"帮我总结这个视频"），比先下载再处理效率更高，也避免了本地磁盘与云端的双重管理开销。
+
+4. **通过 OpenClaw 对话完成插件卸载和升级**：使用 `openclaw plugins uninstall pds --force` 卸载前，建议先通过对话让 OpenClaw 确认当前网盘状态，避免误删导致工作文件丢失。升级流程同样支持对话触发，适用于不需要 SSH 登录的远程管理场景。
+
+5. **在 OpenClaw 中构建定期调研简报 Skill**：利用网盘的多模态检索能力（图片语义搜索、音视频内容理解），将"定期调研竞品功能并汇总报告"封装为一个可复用的 Skill，定期检索网盘内相关目录并自动生成更新报告。
+
+## 相关实体
+- [Pgpkc04Xff7Ilmdb9Vocnq](https://github.com/QianJinGuo/wiki/blob/main/entities/pgpkc04xff7ilmdb9vocnq.md)
+- [Identity Behavior Context Itdr Solution](https://github.com/QianJinGuo/wiki/blob/main/entities/identity-behavior-context-itdr-solution.md)
+- [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
+- Senators Query Credit Bureaus On Bnpl 1
+- [看 Agentrun 如何玩转记忆存储最佳实践来了](https://github.com/QianJinGuo/wiki/blob/main/entities/看-agentrun-如何玩转记忆存储最佳实践来了.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-cloud-storage-config-guide-wechat.md)
+
+---
+
+## Ch10.030 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+
+> 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
 # Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
@@ -2576,7 +2664,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 ---
 
-## Ch10.025 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
+## Ch10.031 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/guardoc-health-medical-document-processing-amazon-nova.md`
 
@@ -2639,7 +2727,7 @@ Guardoc 的部署效果量化案例：
 
 ---
 
-## Ch10.026 Task-Aware Knowledge Compression (TAKC)
+## Ch10.032 Task-Aware Knowledge Compression (TAKC)
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/task-aware-knowledge-compression-takc.md`
 
@@ -2696,7 +2784,7 @@ TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档
 
 ---
 
-## Ch10.027 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
+## Ch10.033 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
 
@@ -2726,7 +2814,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.028 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.034 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
@@ -2779,7 +2867,48 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.029 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
+## Ch10.035 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+
+> 📊 Level ⭐⭐ | 3.2KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
+
+# 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+
+# 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+---
+source: wechat
+source_url: https://mp.weixin.qq.com/s/e7sMz_eCK4IuCTbMyPM2Tg
+ingested: 2026-07-08
+
+source_published: 2026年7月8日 17:00
+
+---
+# 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+大模型持续推高内存存储需求与硬件成本，硬件成本正成为制约向量检索规模化的最大瓶颈之一；海量向量场景下，如何在固定预算内平衡**“吞吐、延迟、召回率与数据导入效率”** 等各项性能指标成为业务扩张核心难题。
+  
+火山 Milvus 上线之初即集成业界先进的 DiskANN + RaBitQ 算法。依托该能力，其性能版较开源版本性能提升 30%以上，磁盘版性能更是领先开源版本 5 倍以上，详情可参考[ 5 倍性能优于开源版，火山 Milvus 集成 DiskANN + RaBitQ](<https://mp.weixin.qq.com/s?__biz=MzkwNTIwNzc3OQ==&mid=2247493831&idx=1&sn=3fcff78592c77ed7bfd2a410b9963e76&scene=21#wechat_redirect>)。
+  
+本次，火山 Milvus 通过进一步优化向量检索算法与在线查询链路，再次刷新了性能上限：**在固定成本下，延续上次相比开源 Milvus 实现超过 5 倍性能提升外，本次更是达到了 VectorDBBench 榜首近 3 倍，让向量数据库在真实在线场景中的性价比持续领先。**
+  
+**超越 VectorDBBench 榜首的高性能**
+
+  
+作为向量数据库、
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md)
+
+## 第 2 Source — 字节跳动技术团队
+
+> From WeChat MP 字节跳动技术团队, supplemental coverage of the same topic.
+
+-> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度-2026-07-08.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch10.036 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/graphrag-needed-aws-9-rag-comparison-2026.md`
 
@@ -2833,7 +2962,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.030 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
+## Ch10.037 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
 
@@ -2881,45 +3010,7 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 
 ---
 
-## Ch10.031 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
-
-> 📊 Level ⭐⭐ | 2.9KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
-
-# 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
-
-# 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/e7sMz_eCK4IuCTbMyPM2Tg
-ingested: 2026-07-08
-source_published: 2026年7月8日 17:00
----
-# 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
-大模型持续推高内存存储需求与硬件成本，硬件成本正成为制约向量检索规模化的最大瓶颈之一；海量向量场景下，如何在固定预算内平衡**“吞吐、延迟、召回率与数据导入效率”** 等各项性能指标成为业务扩张核心难题。
-  
-火山 Milvus 上线之初即集成业界先进的 DiskANN + RaBitQ 算法。依托该能力，其性能版较开源版本性能提升 30%以上，磁盘版性能更是领先开源版本 5 倍以上，详情可参考[ 5 倍性能优于开源版，火山 Milvus 集成 DiskANN + RaBitQ](<https://mp.weixin.qq.com/s?__biz=MzkwNTIwNzc3OQ==&mid=2247493831&idx=1&sn=3fcff78592c77ed7bfd2a410b9963e76&scene=21#wechat_redirect>)。
-  
-本次，火山 Milvus 通过进一步优化向量检索算法与在线查询链路，再次刷新了性能上限：**在固定成本下，延续上次相比开源 Milvus 实现超过 5 倍性能提升外，本次更是达到了 VectorDBBench 榜首近 3 倍，让向量数据库在真实在线场景中的性价比持续领先。**
-  
-**超越 VectorDBBench 榜首的高性能**
-  
-作为向量数据库、
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md)
-
-## 第 2 Source — 字节跳动技术团队
-
-> From WeChat MP 字节跳动技术团队, supplemental coverage of the same topic.
-
--> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度-2026-07-08.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch10.032 知识库构建方法论
+## Ch10.038 知识库构建方法论
 
 > 📊 Level ⭐⭐ | 1.7KB | `entities/knowledge-base-construction.md`
 
@@ -2949,23 +3040,39 @@ AI 驱动的知识库构建方法论：从原始采集到结构化编目的完�
 
 ---
 
-## Ch10.033 RAG for Documents
+## Ch10.039 腾讯新研究：让Agent在语料中搜得更快、更准
 
-> 📊 Level ⭐⭐ | 0.4KB | `entities/rag-for-documents.md`
+> 📊 Level ⭐⭐ | 1.1KB | `entities/rarg-relevance-aware-ripgrep-search-agent-tencent-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rarg-relevance-aware-ripgrep-search-agent-tencent-2026.md)
+
+很多检索 Agent 的瓶颈，在于找到相关文档之后，能否尽快定位并组合真正有用的证据。传统 retrieval agent 依赖 top-k 文档召回，效率高，但复杂问题里的关键证据常常藏得更深；直接用 grep 式工具搜索原始语料虽然更细，但如果缺少相关性引导，线索往往来得太晚，搜索也更容易发散。
+
+## 来源
+
+- 原文: [腾讯新研究：让Agent在语料中搜得更快、更准](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rarg-relevance-aware-ripgrep-search-agent-tencent-2026.md)
+- 原始链接: : "https://www.xiaohongshu.com/discovery/item/6a6b20ab000000002402cf58
+
+---
+
+## Ch10.040 RAG for Documents
+
+> 📊 Level ⭐⭐ | 0.6KB | `entities/rag-for-documents.md`
 
 # RAG for Documents
 
-> 🚧 占位页面 — 内容待补充
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-nemotron-3-agents-rag-voice-safety.md)
 
-工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+## 概述
+
+## 来源
+
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-nemotron-3-agents-rag-voice-safety.md)
+- 原始链接: https://developer.nvidia.com/blog/building-nvidia-nemotron-3-agents-for-reasoning-multimodal-rag-voice-and-safety/
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
----
-
-## Ch10.034 Ettin Reranker Family
+## Ch10.041 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 

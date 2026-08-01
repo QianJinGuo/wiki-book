@@ -10,6 +10,26 @@
 
 AWS 2026-06-11 开源（Apache 2.0）的 Agent 评测工具包，定位是**"用 AI 编码助手本身做评测引擎"**——Claude Code / Kiro CLI / Kilo Code 通过 slash command (`/evalkit.*`) 直接驱动整个评测流程，无需独立评测平台。该工具包在 [GitHub awslabs/Agent-EvalKit](https://github.com/awslabs/Agent-EvalKit) 维护。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agent-EvalKit：AWS 开源 CLI Age…"))
+    核心问题
+    关键设计：CLI 形式 + AI 编码助手即引擎
+    六阶段流水线
+    三个核心评测维度
+    案例实证：旅行研究 Agent 评测结果
+    与现有评测框架的差异化
+    工程实践要点
+    实践启示
+      1. 从小范围开始，优先评测 Faithful…
+      2. 将评测集成到 CI/CD，用代码级修复建…
+      3. 充分利用 OTel 框架的自动检测能力
+      4. Apache 2.0 + CLI 形式使…
+```
+
 ## 核心问题
 
 传统 Agent 评测只看最终输出是否匹配期望，但 Agent 行为有以下隐藏失败模式：

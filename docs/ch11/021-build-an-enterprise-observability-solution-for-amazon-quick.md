@@ -8,6 +8,34 @@
 
 > **Summary**: 使用Amazon Bedrock AgentCore构建企业级可观测性解决方案，监控Amazon Quick服务的最佳实践
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build an enterprise observab…"))
+    核心内容
+    Solution overview
+    Prerequisites
+    Deploy the solution
+      Clone the repository
+      Set up vended logs
+      Deploy data pipeline
+      Set up data catalog
+    深度分析
+      1. 双重数据通道的架构权衡
+      2. 数据保护策略与合规边界的精确控制
+      3. KMS 统一加密策略与密钥轮换
+      4. Quick Sight + 自定义 Ch…
+    实践启示
+      1. 在启用 Chat Message Log…
+      2. 优先使用 Lake Formation …
+      3. 将数据湖扩展纳入长期可观测性规划
+      4. 建立 Dashboard 和 Chat …
+    关键要点
+    相关实体
+```
+
 ## 核心内容
 
 # Build an enterprise observability solution for Amazon Quick

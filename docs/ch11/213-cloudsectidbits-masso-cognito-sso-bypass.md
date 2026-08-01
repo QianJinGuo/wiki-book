@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/cloudsectidbits-masso-cognito-sso.html.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("CloudSectiDbits: Masso - Cog…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 **多租户Cognito User Pool的组合风险远超预期。** Doyensec团队在新加坡DEFCON DemoLabs分享的研究揭示了一个正在成为SaaS默认部署模式的架构：一个User Pool支撑多租户，每个租户自带外部IdP。这种组合将OIDC/SAML外部身份提供商注册、Cognito托管UI（或自定义登录页）、Lambda触发器链三个技术层叠加在一起，任何一层的配置疏漏都会在整个认证流程中产生连锁反应 。

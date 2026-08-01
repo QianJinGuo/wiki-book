@@ -2,7 +2,7 @@
 
 ## Ch04.021 告别「碎片化」记忆：中科院开源轻量级内存原生Agent记忆系统Mandol
 
-> 📊 Level ⭐ | 3.8KB | `entities/告别碎片化记忆中科院开源轻量级内存原生agent记忆系统mandol.md`
+> 📊 Level ⭐ | 4.6KB | `entities/告别碎片化记忆中科院开源轻量级内存原生agent记忆系统mandol.md`
 
 # 告别「碎片化」记忆：中科院开源轻量级内存原生Agent记忆系统Mandol
 

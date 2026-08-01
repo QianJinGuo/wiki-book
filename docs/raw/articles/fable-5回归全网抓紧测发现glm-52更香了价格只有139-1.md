@@ -3,7 +3,7 @@ type: source-card
 title: "Fable 5回归全网抓紧测！发现GLM-5.2更香了，价格只有1/39"
 source: "wechat"
 author: "未标注作者；来源机构见 source"
-source_url: "https://x.com/higgsfield/status/2072440129084629127?s=20"
+source_url: "https://mp.weixin.qq.com/s/MHGWFP98FqXpBRwwIZ-pjA"
 published: "未标注"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

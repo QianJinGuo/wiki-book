@@ -8,6 +8,18 @@
 
 > **Background**：本文基于 AWS China Blog 2026-06-22 的技术教程，介绍一种轻量、旁路、近实时的 Bedrock 成本告警方案：调用方直连 Bedrock（无代理），利用 Application Inference Profile 做分 BU 的用量归因，直接在 CloudWatch metric math 告警里把 token 数换算成估算成本，再通过通知 Lambda 转发到协作工具。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Application Inference Pro…"))
+    痛点：Bedrock 成本可见性
+    方案核心：Application Infere…
+    架构
+    与现有方案对比
+```
+
 ## 痛点：Bedrock 成本可见性
 
 企业使用 Amazon Bedrock 时，多个业务单元（BU）共享同一个模型订阅，成本难以拆分。常见方案各有取舍：

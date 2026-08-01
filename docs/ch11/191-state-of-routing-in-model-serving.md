@@ -9,6 +9,21 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-routing-in-model-serving.md)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("State of Routing in Model Se…"))
+    概念导图
+    深度分析
+      Objective 模式的设计智慧
+      从 Switchboard 到 Lightbu…
+      与 Envoy 生态的整合
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

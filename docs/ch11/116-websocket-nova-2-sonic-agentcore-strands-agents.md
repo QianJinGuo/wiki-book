@@ -5,6 +5,26 @@
 > 📊 Level ⭐⭐ | 9.0KB | `entities/fast-fashion-ecommerce-agent-design-8-websocket-voice-system.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快时尚电商行业智能体设计思路与应用实践（八）基于 Web…"))
+    概念导图
+    概述
+    核心技术
+    来源
+    深度分析
+      1. WebSocket 全双工通信架构：替代…
+      2. 三层解耦架构：Nova 2 Sonic …
+      3. Barge-in 实时中断机制：实现自然…
+      4. Tool Calling 打通语音与电商…
+    实践启示
+    架构图
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid
@@ -20,38 +40,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "编码器"
-        T_ENC[文本编码器<br/>Tokenizer+Embedding]
-        I_ENC[视觉编码器<br/>ViT/Patch Embedding]
-        A_ENC[音频编码器<br/>Whisper/Encodec]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "对齐层"
-        PROJ_T[文本投影]
-        PROJ_I[视觉投影]
-        PROJ_A[音频投影]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    T_ENC --> PROJ_T
-    I_ENC --> PROJ_I
-    A_ENC --> PROJ_A
-    subgraph "融合"
-        FUSE[跨模态注意力<br/>融合层]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    PROJ_T & PROJ_I & PROJ_A --> FUSE
-    subgraph "生成"
-        LLM[语言模型<br/>自回归解码]
-        DEC_I[图像解码<br/>扩散模型]
-        DEC_A[音频解码<br/>TTS]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    FUSE --> LLM
-    LLM --> DEC_I & DEC_A
-    classDef enc fill:#dbeafe,stroke:#2563eb
-    classDef align fill:#fef3c7,stroke:#d97706
-    classDef fuse fill:#ede9fe,stroke:#7c3aed
-    classDef dec fill:#d1fae5,stroke:#059669
-    class T_ENC,I_ENC,A_ENC enc
-    class PROJ_T,PROJ_I,PROJ_A align
-    class FUSE fuse
-    class LLM,DEC_I,DEC_A dec
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 by awschina on 04 1月 2026 in Artificial Intelligence Permalink Share 序言 在快时尚跨境电商行业，客服体验直接影响转化率、复购率与品牌口碑。随着业务全球化、SKU 爆炸式增长以及促销活动高频化（如黑五、圣诞、季中大促），传统人工客服与 基于 HTTP 的单向语音或文本机器人 已难以满足" 低延迟、可打断、强交互 "的实时服务需求。 本文以 快时尚电商实时语音智能客服 为背景，系统介绍一种基于 WebSocket 实时双向通信 的云原生语音 Agent 架构。该架构以 Amazon Bedrock Nova 2 Sonic 提供底层双向流式语音能力，以 Strands Agents（BidiAgent） 负责编排对话与中断逻辑，并运行在 AgentCore Runtime 提供的生产级托管与安全隔离环境之上。

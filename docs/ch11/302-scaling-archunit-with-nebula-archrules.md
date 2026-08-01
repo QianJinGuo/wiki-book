@@ -8,6 +8,21 @@
 
 > **来源**: Netflix Tech Blog · John Burns, Emily Yuan · 2026-05-08
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scaling ArchUnit with Nebula…"))
+    深度分析
+      背景：Polyrepo 的治理困境
+      为什么选择 ArchUnit
+      Nebula ArchRules 架构
+      报告系统
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Netflix JVM Ecosystem 团队通过 Nebula ArchRules 插件，将 ArchUnit 架构规则从单仓库 JUnit 测试扩展到跨 5,000+ 仓库的规模化治理。核心创新：规则库与业务代码解耦、通过 ServiceLoader 自动发现、Gradle Module Metadata 实现变体发布。当前已在生产环境运行 358 条规则，检测近 100 万个问题。

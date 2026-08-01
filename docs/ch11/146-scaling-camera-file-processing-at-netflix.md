@@ -7,6 +7,22 @@
 # Scaling Camera File Processing at Netflix
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scaling Camera File Processi…"))
+    概念导图
+    深度分析
+      「构建不如合作」的工程哲学
+      从 GPU 到 CPU 的架构逆向选择
+      开放标准的战略价值
+      影响力的「缺席」表现
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

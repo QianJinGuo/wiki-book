@@ -10,6 +10,21 @@ AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Age
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/product-ad-review-agent-with-strands-sdk-bedrock.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Strands Agents SDK 和 Amaz…"))
+    深度分析
+      Agents as Tools 是企业级 Ag…
+      模型分层选型是被严重低估的工程实践
+      Bedrock AgentCore Runti…
+      OCR 提示词的「负面清单」工程
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 电商详情页中每个商品可能包含数十张广告图，每张图里的营销文案都要逐一过法务审核才能上架——传统人工流程慢、易遗漏、标准不一致。本案例展示厨房家电品类的自动化方案：浏览器登录 → Cognito 拿 JWT → STS 取临时凭证 → 直传 S3 → 后端调用 Agent → manager agent 调度两个专家 Agent → 提取广告词 → 对照知识库做合规分析 → 按 `- text: suggestion` 格式逐条输出。整套系统体现了「[多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) + 多模态 OCR + RAG 合规检索」的典型组合。

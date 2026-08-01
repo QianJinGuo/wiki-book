@@ -8,6 +8,21 @@
 
 Outpost VFX 与 AWS Generative AI Innovation Center 合作，通过多 GPU 分布式训练将面部替换模型的训练速度提升 8 倍，显著缩短 VFX 制作周期。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Outpost VFX: Multi-GPU AI Tr…"))
+    挑战背景
+    解决方案架构
+      硬件升级
+      软件优化
+    性能成果
+    技术要点
+    行业意义
+```
+
 ## 挑战背景
 
 传统面部替换工作流需要 5 天以上合成时间才能获得导演初审版本。Outpost VFX 开发的 AI 模型受限于单 GPU 计算能力：

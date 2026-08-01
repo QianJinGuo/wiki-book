@@ -10,6 +10,21 @@ Ethan Mollick（One Useful Thing）关于 AI 评估方法论的深度文章。�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/giving-your-ai-a-job-interview.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Giving your AI a Job Interview"))
+    深度分析
+      1. AI 评估的'效度危机'——我们在测什么？
+      2. Vibes 式测试的隐性价值：探测模型的…
+      3. GuacaDrone 实验揭示的'态度偏…
+      4. '面试'类比的力量与局限
+    实践启示
+      相关实体
+```
+
 ## 摘要
 
 AI 评估面临三重困境：(1) 基准测试的题目和答案公开，部分模型在训练中已见过；(2) 即便没见过，我们也不清楚这些测试到底在测什么（MMLU-Pro 中的"直立人平均颅容量"和"Cheap Trick 1979 年现场专辑"这类题目，答对意味着什么？）；(3) 测试往往未校准——从 84% 到 85% 和从 40% 到 41% 的难度可能完全不同。Mollick 提出三种互补的评估路径：Vibes 式测试（个人快速感知）、真实世界基准（如 GDPval）、系统性"面试"（组织级部署必做）。

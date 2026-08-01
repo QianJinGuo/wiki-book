@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/the-it-and-security-field-guide-to-ai-adoption-tines.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The IT and security field gu…"))
+    相关实体
+    问题背景
+    深度分析
+      AI工具评估的核心挑战
+      复杂度递增问题
+      信任崩塌风险
+      风险与监督负担
+    实践启示
+      1. 建立超越Demo的评估框架
+      2. 生产就绪标准检查清单
+      3. 供应商评估关键问题
+      4. 人工介入最佳实践
+```
+
 ## 核心要点
 - IT与安全团队的AI采纳实用指南
 - 包含AI工具评估框架、生产就绪标准、供应商评估问题清单

@@ -9,6 +9,29 @@
 > **Background**：本文基于 AWS China Blog 发布的 LLM 推理部署实战文章，系统梳理了基于 SGLang 的大模型推理 Benchmark 方法论、三种部署方案（单机/多机 Non-PD/多机 PD 分离）的选型对比，以及性能调优与常见问题排查指南。原文由 AWS 资深工程师撰写，包含基于 DeepSeek-V3/V4-Pro 及 Kimi2.5 在 Amazon EFA 环境下的实测数据。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于SGLang的大模型推理部署实践——Benchmar…"))
+    概念导图
+    核心贡献
+    Benchmark 方法论
+      测试规划四问
+      关键坑点
+    部署方案对比
+      单机部署
+      多机 Non-PD 分离
+      多节点 PD 分离（2P2D）
+    选型决策树
+    Debug 与调优
+      TTFT 高
+      TPOT 高
+      吞吐低于预期
+    与现有实体的关系
+```
+
 ## 概念导图
 
 ```mermaid
@@ -34,40 +57,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "模型优化"
-        QUANT[量化<br/>INT4/GPTQ/AWQ]
-        PRUNE[剪枝<br/>稀疏化]
-        DISTIL[蒸馏<br/>小模型]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "运行时优化"
-        KV[KV Cache<br/>PagedAttention]
-        MQA[GQA/MQA<br/>注意力压缩]
-        SPEC[投机解码<br/>Draft→Verify]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    subgraph "调度策略"
-        PRE[Prefill<br/>首token计算]
-        DEC[Decode<br/>自回归生成]
-        CB[连续批处理<br/>Dynamic Batching]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    QUANT --> KV
-    PRUNE --> MQA
-    DISTIL --> SPEC
-    KV --> PRE & DEC
-    PRE & DEC --> CB
-    subgraph "部署架构"
-        DP[数据并行]
-        TP[张量并行]
-        PP[流水线并行]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    CB --> DP & TP & PP
-    classDef model fill:#dbeafe,stroke:#2563eb
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
     classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef sched fill:#fef3c7,stroke:#d97706
-    classDef deploy fill:#d1fae5,stroke:#059669
-    class QUANT,PRUNE,DISTIL model
-    class KV,MQA,SPEC runtime
-    class PRE,DEC,CB sched
-    class DP,TP,PP deploy
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 

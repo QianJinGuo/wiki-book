@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/sap-intelligent-procurement-assistant-solution.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于Strands框架和Bedrock AgentCor…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 **企业级 Agent 应用的核心架构范式：从 GUI 自动化到自然语言交互**。本文揭示了传统企业软件的深层次体验问题——采购人员需要在 SAP GUI 中手动切换多个事务码（ME41 查询询价单、ME47 查看报价、XK03 查询供应商、ME21N 创建订单），这种基于事务码的操作模式在 ERP 系统中极为普遍，代表了过去三十年企业软件的典型交互范式。SAP 智能采购助手通过引入自然语言对话层，将用户从"记住操作步骤"转变为"描述业务目标"，这是企业软件交互范式的一次根本性转变。

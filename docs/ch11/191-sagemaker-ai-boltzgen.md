@@ -8,6 +8,23 @@
 
 > **Background**: AWS ML Blog 发布的实践指南，详细介绍如何在 Amazon SageMaker AI 上部署和运行 BoltzGen —— 一个用于蛋白质设计的生成式 AI 模型。文章涵盖了 GPU 管理、模型缓存优化和推理部署的最佳实践。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 SageMaker AI 上使用 BoltzGen …"))
+    技术方案
+    深度分析
+      1. BoltzGen 的多步生成管线是科学 …
+      2. 两层缓存策略对科学计算成本优化的系统性影响
+      3. Multi-GPU 并行化与多实例扩展的…
+      4. 从'10 个设计'到'10000 个设计…
+    实践启示
+    操作指南
+    关联实体
+```
+
 ## 技术方案
 
 BoltzGen 是一个专注于蛋白质设计的生成模型，通过在 SageMaker AI 上部署，可以利用 GPU 实例进行高效的推理和训练。文章详细介绍了如何配置 SageMaker 端点、管理 GPU 资源以及优化模型加载和缓存策略。

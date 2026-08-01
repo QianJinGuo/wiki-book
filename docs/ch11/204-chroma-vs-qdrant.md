@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/vector-db-chroma-vs-qdrant.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("向量数据库选型：Chroma vs Qdrant"))
+    核心框架
+    选型决策矩阵
+    架构本质
+    关键阈值
+    过滤性能差异
+    实践原则
+    深度分析
+    相关链接
+```
+
 ## 核心框架
 **"Chroma 和 Qdrant 哪个更好"——这是错的。选型不是在比产品，是在比场景。** ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
 

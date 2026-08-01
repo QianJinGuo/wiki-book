@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 19.6KB | `entities/shub-reaper-macos-stealer-attack-chain.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SHub Reaper: macOS Stealer S…"))
+    相关实体
+    深度分析
+      攻击链分层伪装机制
+      免杀技术演进
+      地理封锁与目标筛选
+      投递管道与环境检测
+    实践启示
+    MITRE ATTandCK 映射
+    检测规则
+      Sigma 规则
+      YARA 规则
+      端点检测查询
+    技术指标
+      网络通信
+      文件系统路径
+      静态字符串与标识符
+    威胁归因与演化
+      SHub 恶意软件家族演化
+      相关 macOS 窃密木马
+    结论
+```
+
 ## 核心要点
 
 - SHub Reaper 是 SHub 窃密木马的变种，通过假冒 WeChat、Miro 等流行应用安装程序进行传播

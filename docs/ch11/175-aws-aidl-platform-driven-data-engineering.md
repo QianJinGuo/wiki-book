@@ -8,6 +8,17 @@
 摘要：本文阐述了数据工程正从”平台驱动”的数据中台范式向”AI 驱动”的 AIDLC 范式迁移，其核心在于控制面从平台功能转为知识资产、开发模式从过程式转为声明式、质量保障从后置扫描转为前置契约，并给出了落地成熟度模型与五步实施建议。
 07 七、落地路径：成熟度模型与五步实施建议
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("aws aidl 范式迁移 platform drive…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/1004-anthropic.html)
 - [Introducing Claude Platform On Aws](../ch01/150-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)

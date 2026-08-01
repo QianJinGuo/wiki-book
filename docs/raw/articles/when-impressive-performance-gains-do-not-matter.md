@@ -3,7 +3,7 @@ type: source-card
 title: "When Impressive Performance Gains Do Not Matter"
 source: "blog.colinbreck.com"
 author: "未标注作者；来源机构见 source"
-source_url: "http://blog.colinbreck.com/when-impressive-performance-gains-do-not-matter/#fnref10"
+source_url: "https://blog.colinbreck.com/when-impressive-performance-gains-do-not-matter/"
 published: "2026-05-01"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

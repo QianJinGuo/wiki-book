@@ -18,6 +18,17 @@ AI Detection and Response (AIDR) is the [operating model](https://www.mitiga.io/
 - What AIDR is – and what it is not
 - How Mitiga's Helios AIDR works
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Detection and Response Ai…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 AIDR 的核心命题是：在凭证或可信集成已被攻陷的情况下，防御的胜负手从预防转移到了可见性、调查保真度和响应速度。传统的"预防优先"安全模型假设边界可控、凭证不泄露，但在云和 SaaS 时代，凭证泄露和可信集成滥用已成常态而非异常。这不是某个厂商的话术，而是整个行业对原有安全假设被迫进行的重新校准。

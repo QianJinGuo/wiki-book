@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Kiro CLI 自动搭建 FluentBit 日志…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 用 Kiro CLI 自动搭建 FluentBit 日志采集方案：两种 EKS 埋点数据落地 S3 Parquet 的实战对比 by awschina on 24 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文将展示如何使用 Kiro CLI（AWS 推出的 AI 驱动命令行助手）配合 Amazon EKS MCP Server，通过自然语言对话，自动完成两种 FluentBit 日志采集方案的规划、搭建和验证。你将看到： • 两种方案的架构差异和适用场景 • Kiro CLI 如何一步步驱动整个搭建过程 • 搭建复杂度和运行成本的量化对比 • AI 辅助运维带来的效率提升 目录 01 一、引言：埋点数据采集的挑战 02 二、Kiro CLI：AI 驱动的云端运维助手 03 三、环境准备：配置 EKS MCP Server
 

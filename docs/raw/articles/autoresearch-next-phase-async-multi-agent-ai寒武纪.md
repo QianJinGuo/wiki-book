@@ -3,7 +3,7 @@ type: source-card
 title: "AutoResearch 下一阶段：异步大规模多 Agent 协作"
 source: "github.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://github.com/karpathy/autoresearch/discussions/43"
+source_url: "https://github.com/karpathy/autoresearch"
 published: "2026-05-28"
 collected: "2026-05-28"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

@@ -1,9 +1,9 @@
 ---
 type: source-card
 title: "Claude有「编制」了！Anthropic发的"
-source: "claude.com"
+source: "mp.weixin.qq.com"
 author: "未标注作者；来源机构见 source"
-source_url: "https://claude.com/blog/agent-identity-access-model"
+source_url: "https://mp.weixin.qq.com/s/5L5-c5RxcSG16akGD6JyFA"
 published: "2026-05-01"
 collected: "2026-07-24"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

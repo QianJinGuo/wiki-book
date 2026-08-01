@@ -6,6 +6,21 @@
 
 # Agentic Vision: Building Visual Intelligence with Amazon Bedrock and MCP Servers
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Agentic Vision: Building Vis…"))
+    Overview
+    Architecture
+    Two MCP Servers
+      CV Server
+      OpenSearch Server
+    Use Cases
+    Source
+```
+
 ## Overview
 
 AWS blog post (2026-07-15) by Kiowa Jackson, Jundong Qiao, Justin Kuskowski, and Nick Biso demonstrating how to converge Computer Vision, Strands Agents, and the Model Context Protocol (MCP) into a unified pipeline. The architecture bridges perception, decision-making, and action through standardized interfaces — allowing AI systems to see, understand, and respond in a coordinated way.

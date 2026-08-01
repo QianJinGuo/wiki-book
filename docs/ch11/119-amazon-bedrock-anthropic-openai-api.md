@@ -6,6 +6,28 @@
 
 # 试用 Amazon Bedrock 中的新控制台体验
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("试用 Amazon Bedrock 中的新控制台体验：该…"))
+    概览
+    五大新能力
+      1. 模型目录 Model Catalog
+      2. 并排比较 Side-by-side C…
+      3. 基于项目的组织 Project-bas…
+      4. 项目感知文档 Project-awar…
+    区域可用性
+    实践启示
+    与其他 Bedrock 文档的差异化
+    深度分析
+      核心观点
+      技术要点
+      实践价值
+      相关实体
+```
+
 ## 概览
 
 Amazon Bedrock 重新设计的控制台——**针对 OpenAI / Anthropic 兼容 API 优化**的新工作流，包括模型目录、并排比较、基于项目的组织、预填代码片段的项目感知文档。这是 AWS 在 2026 年 Q2 推进 Bedrock 平台化的核心 UI 升级。
