@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 3
 sha256: 695a8ef269c100a3848af509153d14381027f6d1703351a01e1634766aa9e6bd
+source_url: "https://mp.weixin.qq.com/s/2ABRYGcx0SHfSWCNZ8rvRg"
 ---
 
 # AI工作流在淘宝交易舆情巡检上的探索与实践

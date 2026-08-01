@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 7b1a0e77a669cb3a04e3571036ec31730120be3643ae34b8aa364d3fd6b14690
+source_url: "http://arxiv.org/abs/2604.19572"
 ---
 
 sha256: d6ce9078c19eed3a2de768d873a28809d5f4024e029e1872bc2e37937d24cf3c

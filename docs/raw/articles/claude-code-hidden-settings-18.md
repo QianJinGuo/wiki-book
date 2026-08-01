@@ -4,6 +4,7 @@ created: 2026-06-10
 type: raw-article
 sha256: 86a3d94ced2c03052915da7fc4b92f0593d5d868d5b3b2d2ef7f6f14062c4eea
 provenance_state: archived
+source_url: "https://mp.weixin.qq.com/s/VQmT6cwd2XByNgNKj55eJw"
 ---
 # 用了半年才发现：Claude默认配置一直在悄悄掏空我的钱包，分享18个Claude设置！
 

@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 56
 stars: 4
 sha256: 42bf466404e5d87582a16f126031a9c8f3e5ed5905fe418f25ee01aedebacd29
+source_url: "https://blog.bytebytego.com/p/how-openai-delivers-low-latency-voice"
 ---
 sha256: d4a6651f15162e0278fdb64eabb0d836081e43085d749d1747f1772576b0f0a4
 

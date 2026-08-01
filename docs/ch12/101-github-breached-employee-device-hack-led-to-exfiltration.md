@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub Breached — Employee D…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 - thehackernews.com 技术文章

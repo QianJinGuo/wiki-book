@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 626e261bb05eacc3d0606e9ba1e723baba54965d0dc609c41206cc9d3bff7a68
+source_url: "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks"
 ---
 
 sha256: 63951d50c99ab6826ad7d4282168ab505b3f25dd9d06bdcb31abd088ff63dee5

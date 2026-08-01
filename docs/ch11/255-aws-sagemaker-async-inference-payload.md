@@ -7,6 +7,22 @@
 # AWS SageMaker Async Inference 内联 Payload 支持
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS SageMaker Async Inferenc…"))
+    概念导图
+    核心变更
+    Before / After 对比
+    适用场景
+    Before 模式额外要求
+    可用区域
+    端点兼容性
+    错误处理
+```
+
 ## 概念导图
 
 ```mermaid

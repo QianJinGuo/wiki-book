@@ -8,6 +8,17 @@
 Seismic data analysis is an essential component of energy exploration, but configuring complex processing workflows has traditionally been a time-consuming and error-prone challenge. Halliburton's Seismic Engine, a cloud-native application for seismic data processing, is a powerful tool that previously required extensive manual configuration...
 (Halliburton Bedrock GenAI article content - 15,222 chars fetched from AWS)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Halliburton enhances seismic…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/224-amazon-quick.html)
 - [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](ch11/137-build-financial-document-processing-with-pulse-ai-and-amazon.html)

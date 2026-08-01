@@ -1,5 +1,4 @@
 ---
-
 title: "Anthropic 博客：Claude Code 大型代码库最佳实践"
 author: AGI Hunt（Anthropic）
 date: 2026-05-15
@@ -26,7 +25,7 @@ tags: [anthropic, claude-code, enterprise-deployment, large-codebase, harness, c
   - rag
   - configuration
   - 治理
-
+source_url: "unavailable"
 ---
 # Anthropic 博客：Claude Code 大型代码库最佳实践
 > 来源：Anthropic 官方博客《How Claude Code Works in Large Codebases: Best Practices and Where to Start》

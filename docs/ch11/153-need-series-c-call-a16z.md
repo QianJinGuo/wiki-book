@@ -10,6 +10,17 @@ Published Time: 2026-05-19T14:00:52+00:00
 **[[America](https://www.a16z.news/t/america) | [Tech](https://www.a16z.news/t/technology) | [Opinion](https://www.a16z.news/t/opinion) | [Culture](https://www.a16z.news/t/culture) | [Charts](https://www.a16z.news/t/charts)]**
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Need Series C? Call a16z"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 
 ```mermaid

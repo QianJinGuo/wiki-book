@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: db64204bb2ebd13f7ae0561fbb122a3368cc0cccde6bb0515e5d4b17a6476346
+source_url: "https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-on-aws-anthropics-most-capable-sonnet-model"
 ---
 
 sha256: 4ef5cf7f4ab12572046d288928b0e1315b769e72ed328525e001dd14156fe48c

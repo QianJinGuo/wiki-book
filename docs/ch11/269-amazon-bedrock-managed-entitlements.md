@@ -8,6 +8,20 @@
 
 > **Background**: 本文基于 AWS 官方博客，介绍 Managed Entitlements for Amazon Bedrock 的功能设计、适用场景和部署流程。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock Managed Entit…"))
+    核心问题
+    Managed Entitlements 方案
+      模型分类
+      四步部署流程
+      关键考虑
+    相关实体
+```
+
 ## 核心问题
 
 管理跨数十或数百个 AWS 账号的 AI 模型访问权限面临两难选择：要么广泛授予 AWS Marketplace 权限（治理风险），要么在每个账号手动启用订阅（运营开销）。对于使用 Anthropic Claude、Cohere 等第三方 AWS Marketplace 模型的组织，这一运营开销显著拖慢 AI 采用速度。

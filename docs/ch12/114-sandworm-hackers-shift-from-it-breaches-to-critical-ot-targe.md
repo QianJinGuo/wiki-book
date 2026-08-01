@@ -4,6 +4,18 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sandworm Hackers Shift From …"))
+    技术洞察
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Sandworm 是俄罗斯军事情报局 (GRU) 关联的知名黑客组织
 - 近期活动显示从传统 IT 网络转向工业控制系统 (ICS) 和操作技术 (OT)

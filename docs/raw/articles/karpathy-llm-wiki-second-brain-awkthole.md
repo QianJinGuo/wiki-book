@@ -3,6 +3,7 @@ title: "karpathy-llm-wiki-second-brain-awkthole"
 created: 2026-06-10
 type: raw-article
 sha256: 2400e20bdc3fcc6b1f30348859c594bccb494f1060df794d05697b0b20b0a332
+source_url: "https://mp.weixin.qq.com/s/gbqMeYi2AEAKlxIRxkdM5Q"
 ---
 source_url: https://mp.weixin.qq.com/s/gbqMeYi2AEAKlxIRxkdM5Q
 source_title: 卡帕西"LLM Wiki"，到底是什么？——用 Claude + Obsidian 给自己造一个第二大脑的完整拆解

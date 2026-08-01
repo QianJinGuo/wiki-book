@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 82bd74e0eb03e42f13cf720777f0d3c60cef65df996d9ee1f03af454619a3bc1
+source_url: "http://cursor.com/blog/ios-mobile-app"
 ---
 
 sha256: 9d7485d970079eba039c75cd4b2ab25db70050ad853c2b91e9236ed0183efeb4

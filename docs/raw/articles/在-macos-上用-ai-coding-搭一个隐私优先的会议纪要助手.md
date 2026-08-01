@@ -5,6 +5,7 @@ url: https://aws.amazon.com/cn/blogs/china/macos-ai-coding-assistant/
 source: rss
 feed_name: AWS China Blog
 sha256: cc66fff70e15e6bc5478283074dc42e6bbdc8fc28e3aa117c249ffb06c9cd05f
+source_url: "unavailable"
 ---
 <div style="line-height: 1.6;font-size: 16px"> 
  <p>

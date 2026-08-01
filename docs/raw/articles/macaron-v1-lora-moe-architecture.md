@@ -1,5 +1,6 @@
 ---
 sha256: d143421c571611c221b956b681c0349989ca3dea89fd06176822ac961eaced49
+source_url: "https://mp.weixin.qq.com/s/boUmwrrSP45leZzPh2a3Xw"
 ---
 # 200万上下文、外挂四大专家：Macaron V1把LoRA玩成了正式架构
 

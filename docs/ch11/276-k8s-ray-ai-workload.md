@@ -9,6 +9,24 @@
 > 腾讯 TEG Ray 团队实践：K8s + Ray 协同调度范式在超大规模 AI Workload 中的落地，涵盖多模态数据处理、RLHF 训推分离、KubeRay 联邦架构、跨层弹性调度与自动化容灾。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯 K8s + Ray 超大规模 AI Workloa…"))
+    概念导图
+    AI Infra 黄金组合
+    调度范式革新
+      Ray 核心优势 vs 其他引擎
+    K8s + Ray 协同调度
+    腾讯落地实践
+      KubeRay 联邦架构
+      跨层弹性调度
+      跨层自动化容灾
+    未来方向
+```
+
 ## 概念导图
 
 ```mermaid

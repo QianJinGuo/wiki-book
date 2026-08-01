@@ -4,6 +4,7 @@ source: "https://mp.weixin.qq.com/s/ObREWAzbx9znsfuz1r4ZuQ"
 tags: [harness-engineering, 复旦, ahe]
 created: 2026-05-20
 sha256: a6a2d39b22488dc088f2b3e9d55692b650b3e4ca2d1509691c2f82981793321c
+source_url: "https://mp.weixin.qq.com/s/ObREWAzbx9znsfuz1r4ZuQ"
 ---
 ---
 # 全球排名前三，复旦自进化Harness Engineering让GPT‑5.4再涨7个点

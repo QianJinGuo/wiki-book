@@ -2,7 +2,7 @@
 
 ## Ch05.069 Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/harness-engineering-10-step-practical-guide-2026.md`
+> 📊 Level ⭐⭐ | 8.5KB | `entities/harness-engineering-10-step-practical-guide-2026.md`
 
 「Agent Harness Engineering 技术连载」第 15 篇（收官篇），将前 14 篇理论提炼为可立即使用的实践指南——10 步从零到生产路线图、8 种常见失败模式速查表、Harness 设计 Checklist、给不同角色的具体建议。
 
@@ -45,9 +45,13 @@ Agent 面临的上下文腐烂、工具误用、成本失控、安全漏洞、�
 ## Harness 设计 Checklist（5 大类 18 项）
 
 **目标与边界**：任务可验证 / 禁止区域已定义 / 成功标准可计算
+
 **工具设计**：覆盖核心场景 / 有 Shell 后备 / 一句话描述 / 沙箱限制
+
 **上下文管理**：渐进式披露 / 输出卸载 / Prompt 缓存
+
 **安全护栏**：命令白名单/黑名单 / 破坏性操作审批 / 敏感路径限制
+
 **验证+可观测+成本**：自动测试 / Trace 接入 / 成本追踪 / 模型路由 / 预算硬顶
 
 ## 三个新技能
@@ -74,7 +78,7 @@ Agent 面临的上下文腐烂、工具误用、成本失控、安全漏洞、�
 
 **1. 10 步路线图 vs Hermes Agent 的实现映射**
 
-Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAUDE.md（目标边界）；Step 2 = tools/ 目录（原子工具）；Step 3 = context management + compaction；Step 4 = session persistence + memory tool；Step 5 = disallowed_tools + hooks；Step 6 = pre-commit hooks + wiki-lint；Step 7 = Langfuse integration；Step 8 = cron + kanban（长程执行）；Step 9 = model routing（OpenRouter）。Step 10 持续迭代通过 skill_manage 和 session_search 实现。 [Hermes Agent Skills Source Code Analysis Shuge](../ch04/442-hermes-agent-skills.html)
+Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAUDE.md（目标边界）；Step 2 = tools/ 目录（原子工具）；Step 3 = context management + compaction；Step 4 = session persistence + memory tool；Step 5 = disallowed_tools + hooks；Step 6 = pre-commit hooks + wiki-lint；Step 7 = Langfuse integration；Step 8 = cron + kanban（长程执行）；Step 9 = model routing（OpenRouter）。Step 10 持续迭代通过 skill_manage 和 session_search 实现。 [Hermes Agent Skills Source Code Analysis Shuge](../ch04/506-hermes-agent-skills.html)
 
 **2. Progress File 模式与 Hermes Memory/Cron 的对比**
 
@@ -90,12 +94,12 @@ Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAU
 
 ## 相关实体
 
-- [Harness Engineering Framework](ch05/120-harness-engineering.html)
-- [Production Harness 12 Components](ch05/034-harness-12.html)
-- [Harness Engineering 14 步路线图](ch05/120-harness-engineering.html)
-- [AI Agent Harness Construction — Akshay](../ch01/988-ai-agent-harness.html)
-- [Ralph Loop 长程执行](ch05/009-harness.html)
-- [Hermes Agent Skills 源码分析](../ch04/442-hermes-agent-skills.html)
+- [Harness Engineering Framework](ch05/126-harness-engineering.html)
+- [Production Harness 12 Components](ch05/035-harness-12.html)
+- [Harness Engineering 14 步路线图](ch05/126-harness-engineering.html)
+- [AI Agent Harness Construction — Akshay](../ch01/1161-ai-agent-harness.html)
+- [Ralph Loop 长程执行](ch05/017-harness.html)
+- [Hermes Agent Skills 源码分析](../ch04/506-hermes-agent-skills.html)
 - [Agent 记忆生命周期哲学](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
 - [Agent Engineering Guide MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-10-step-practical-guide-2026.md)

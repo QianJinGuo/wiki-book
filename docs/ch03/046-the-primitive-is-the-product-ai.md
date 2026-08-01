@@ -2,7 +2,7 @@
 
 ## Ch03.046 The Primitive is the Product — AI 时代的产品哲学：从功能到原语
 
-> 📊 Level ⭐ | 4.5KB | `entities/primitive-is-the-product-ai-native-product-philosophy.md`
+> 📊 Level ⭐ | 4.8KB | `entities/primitive-is-the-product-ai-native-product-philosophy.md`
 
 # The Primitive is the Product — AI 时代的产品哲学
 
@@ -54,17 +54,18 @@ VC 喜欢平台（网络效应、高切换成本、拥有整个品类）。原�
 如果软件越来越多由 agent 消费，那么每家软件公司最重要的产品决策不是"构建什么功能"而是**"暴露什么原语"**。
 
 这对产品策略、定价、分发和组织设计的深远影响：
+
 - **产品经理**需要像 API 设计师一样思考
 - **工程师**需要考虑可组合性和约束，而不仅是实现
 - **销售团队**需要以能力而非工作流来阐述价值
 
 ## 相关实体
 
-- [AI-Native 分层思维](../ch05/018-ai-native.html) — AI 时代的产品思维框架
+- [AI-Native 分层思维](../ch05/021-ai-native.html) — AI 时代的产品思维框架
 - [Stripe Agent 经济基础设施](ch03/035-agent.html) — Stripe 的 Agent-first 产品实践
 - [Stripe Agent 基础设施（Emily Sands）](ch03/035-agent.html) — 支付原语的 agent 生态扩展
-- [AI-Native 研发组织设计](../ch05/018-ai-native.html) — 组织如何适应 AI 时代
-- [AI-Native 组织指南](../ch05/018-ai-native.html) — AI 时代的组织原则
+- [AI-Native 研发组织设计](../ch05/021-ai-native.html) — 组织如何适应 AI 时代
+- [AI-Native 组织指南](../ch05/021-ai-native.html) — AI 时代的组织原则
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/primitive-is-the-product-amplify-partners.md)
 

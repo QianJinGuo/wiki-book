@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: dc6b4dd23c228bfe200e0113942091d181b6c54da9ce711a15eb9b94aa750e3c
+source_url: "https://mp.weixin.qq.com/s/_X_iaH_O__XMjpP4D-MRUg"
 ---
 
 # Claude 最歧视的，是印度三哥

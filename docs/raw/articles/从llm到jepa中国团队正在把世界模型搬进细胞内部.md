@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 3
 sha256: 7cda448b0c7ba6df4c05c153429735e353aa402717ec59f6695dc17146893192
+source_url: "https://mp.weixin.qq.com/s/ScFLbo9UlLnLK-GRTJtN4A"
 ---
 
 # 从LLM到JEPA，中国团队正在把“世界模型”搬进细胞内部

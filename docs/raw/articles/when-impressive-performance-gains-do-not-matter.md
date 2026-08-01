@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 735c7cb004398b128d37a8f1a764ad3f079b72a0b227732dd3098384e9cc7f7b
+source_url: "https://blog.colinbreck.com/when-impressive-performance-gains-do-not-matter/"
 ---
 
 sha256: c6f7793978d068e3a098454e5bb7746b07a015a1a2f6aeaa74d35f81de84afcd

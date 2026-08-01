@@ -8,6 +8,20 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Extending MCP support for Am…"))
+    深度分析
+      流式传输、会话管理与 Elicitation
+      OAuth 2.0 On-Behalf-Of …
+      安全架构
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Amazon Bedrock AgentCore Gateway 是 MCP 服务器与客户端之间的集中网关，统一管理凭证、可观测性和安全连接。本文覆盖其新扩展能力：MCP tool schema 扩展支持、MCP prompts 和 resources 作为一等原语、动态列表运行时发现、Streamable HTTP 流式传输、会话管理、elicitation 中途输入请求、以及 OAuth 2.0 on-behalf-of token exchange 委托认证。

@@ -14,6 +14,7 @@ review_stars: 5
 review_recommendation: neutral
 ingested: 2026-05-16
 updated: 2026-05-10
+source_url: "https://github.com/safety-research/introspection-mechanisms"
 ---
 大家好，我是PaperAgent，不是Agent！
 Anthropic&MIT等最新研究表明，LLM能够"感知"自己被注入的steering vector，这种"内省意识"并非预训练产物，而是在DPO（直接偏好优化）等后训练阶段涌现。

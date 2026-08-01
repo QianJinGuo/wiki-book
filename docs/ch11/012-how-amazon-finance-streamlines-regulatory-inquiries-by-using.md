@@ -18,6 +18,26 @@ Amazon's Finance Technology (FinTech) teams build and operate systems for Amazon
 Processing these regulatory inquiries involves reviewing documentation, extracting relevant information, retrieving supporting data from multiple systems within Amazon's infrastructure, and compiling responses within regulatory timeframes. As inquiry frequency and business complexity grew, Amazon needed a more scalable approach.
 In this post, we demonstrate how Amazon FinTech teams are using [Amazon Bedrock](<https://aws.amazon.com/bedrock/?nc2=type_a>) and other AWS services to build a scalable AI application to transform how regulatory inquiries are handled. Each team using this solution creates and maintains its own dedicated knowledge base, populated with that team's specific documents and reference materials.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Amazon Finance streamlin…"))
+    **Challenges**
+    **Solution overview**
+    **Knowledge base ingest…
+    **Chat Application**
+    **Multi-turn conversati…
+    **Observability**
+    **Conclusion**
+    About the authors
+      Balajikumar Gopalakrish…
+      Biswajit Mohapatra
+      Pramodh Korukonda
+      Jeff Rebacz
+```
+
 ## **Challenges**
 The scale and complexity of managing regulatory inquiries presented several interconnected challenges:
 **Knowledge fragmentation and retrieval complexity**

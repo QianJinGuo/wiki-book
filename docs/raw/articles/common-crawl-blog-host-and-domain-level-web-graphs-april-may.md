@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 373c39b0e83d2db24b8f762c370837c0e8db8a303b1188813bbc30c9e206297c
+source_url: "https://commoncrawl.org/blog/host--and-domain-level-web-graphs-april-may-and-june-2026"
 ---
 
 sha256: 3a44c5e99bb64ec1ab568170728c5ad7b85585cb73bddb4bab4e35c8e66fb0fa

@@ -19,6 +19,17 @@ There may be that there is a huge cost in promoting AI when it's basic functiona
 .
 Stochastic Parrot is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Stochastic Parrot Marcus AI …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 Marcus 和 Bjarnason 的批评模式值得警惕：两人仅引用了 Upwork 报告中的三组统计数据—— 47% 的 AI 使用者不知道如何实现预期的生产力提升、 77% 表示 AI 工具降低了生产力、 71% 感到倦怠——就得出" Gen AI 本身存在问题"的结论。这种引用方式在逻辑上存在典型的"摘樱桃"谬误：用支持预设结论的局部数据替代完整研究的整体语境，忽略了 Upwork 报告同时呈现的积极指标（ 81% 已部署 AI 的公司报告生产力提升）以及管理层与员工之间关于 AI 价值的认知鸿沟。

@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 72
 stars: 4
 sha256: 8f4314c1d4b1fe2d2f5ec5d19d2648c175e25c988e60d353913007ed4bb184fb
+source_url: "unavailable"
 ---
 
 # 美团 LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆

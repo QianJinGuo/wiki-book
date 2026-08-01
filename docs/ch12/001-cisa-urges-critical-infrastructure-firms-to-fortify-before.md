@@ -2,7 +2,7 @@
 
 ## Ch12.001 CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive
 
-> 📊 Level ⭐ | 11.9KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
+> 📊 Level ⭐ | 11.8KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
 
 ## 核心要点
 - **地缘政治驱动**：CISA 发布 CI Fortify 指南的核心背景是担忧中国可能在美国介入台海冲突时，对西方关键基础设施发动网络 sabotage
@@ -82,8 +82,8 @@ CI Fortify 是国际倡议，澳大利亚政府于2025年率先发布了类似�
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/095-ai.html)
-- [U.S. Bank shifts critical apps to AWS for AI push | CIO Dive](../ch05/095-ai.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/097-ai.html)
+- [U.S. Bank shifts critical apps to AWS for AI push | CIO Dive](../ch01/437-aws.html)
 
 ---
 

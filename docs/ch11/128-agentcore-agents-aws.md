@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于AgentCore构建自学习、可进化的文旅行业近似信…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 概述
 基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents by awschina on 22 1月 2026 in Artificial Intelligence Permalink Share 文旅行业存在大量需要精准抽取的文本内容，且近似文本占比极高。以酒店合同报价为例，它是OTA（在线旅游代理）平台的核心运营环节之一。OTA需要对接数以万计的酒店，但是绝大多数酒店不提供标准化的在线接口，报价信息通常以Word、Excel、PDF等非结构附件形式提供，包含房型说明、基础价格、促销政策、附加条款等多元内容。OTA收到后需要人工解析、校验后录入业务系统。然而，大型酒店集团的合同及报价单附件往往长达数十页，文本体量庞大且信息密度不均。不同酒店的文本还存在表述近似，但细节差异显著的问题。跟客户体验息息相关的促销规则、限制条款、时间约束等关键信息的精准抽取显得尤为重要。 长期以
 

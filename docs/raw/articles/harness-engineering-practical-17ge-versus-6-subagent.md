@@ -10,6 +10,7 @@ stars: 4
 confidence: 0.85
 value: 8
 description: 17哥 把 Vibe Coding 升级为 Harness 模式（OpenAI/Anthropic 思路）的工业实践：Git Submodule 整合前后端 + 6 Sub-Agent 全流程（需求→前后端→集成测试→E2E）+ Agent Handoff YAML 协议 + Chrome DevTools MCP 自动化 + 量化结果 1天→2小时（4x）
+source_url: "https://mp.weixin.qq.com/s/2vO99OlOInapWZSEbJau8A"
 ---
 
 # 我从 Vibe Coding 升级到 Harness 模式 — 大模型评测平台 6-SubAgent 工程实践

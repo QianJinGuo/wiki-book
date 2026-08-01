@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: c2a176d6eb0c3d092a82633392caa9dec5c68aee7b0dfd7cb129101ad46d74c9
+source_url: "https://mp.weixin.qq.com/s/pXmjnB3LD7RDpkH9W4blgw"
 ---
 
 # 降维打击！群体智能半价打平Fable 5，同款API已上线

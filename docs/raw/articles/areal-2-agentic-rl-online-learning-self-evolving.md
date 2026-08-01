@@ -6,6 +6,7 @@ source_account: 机器之心
 created: 2026-07-02
 fetched: 2026-07-02
 sha256: 72f04c62aef49da051fd7290fe6d360537507d5c6505601b8a50db64d7c0a715
+source_url: "https://arxiv.org/pdf/2607.01120"
 ---
 
 AReaL 2.0 由蚂蚁集团 + 香港科技大学 + 清华大学联合推出，面向真实部署中 Agent 的在线强化学习训练基础设施。

@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 64
 stars: 4
 sha256: eb88fca92d5d0072dbc056f4748ce38fe946d809ee5e836e64306f67baf5a934
+source_url: "https://slack.engineering/slack-ai-the-path-to-multi-cloud"
 ---
 sha256: 2f3ec3bc05198026d16b4ab286654c1ac81e94e3a94043f180e2917109e1771c
 

@@ -5,6 +5,39 @@
 > 📊 Level ⭐⭐ | 14.0KB | `entities/integrate-atlassian-confluence-cloud-with-amazon-quick.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Atlassian Confluence Cloud 与…"))
+    概念导图
+    概述
+    核心概念
+      Knowledge Base 集成
+      Action 集成
+      Quick Spaces
+    前置要求
+    配置步骤
+      1. 创建 Knowledge Base
+      2. 创建 OAuth 2.0 应用
+      3. 创建 Action 集成
+      4. 创建 Quick Space
+    使用场景
+      自然语言查询 Confluence 内容
+      执行 Confluence 操作
+    深度分析
+      架构设计：双轨并行的知识流
+      ACL 粒度：从空间级到页面级的权限下沉
+      OAuth 2.0 3LO 的安全边界
+      Quick Space 作为聚合层的元认知价值
+    实践启示
+      1. 优先配置 Knowledge Base …
+      2. OAuth Scopes 遵循最小权限原则
+      3. 利用 Quick Space 的聚合特性…
+      4. 将 Quick Flows 与 Conf…
+```
+
 ## 概念导图
 
 ```mermaid
@@ -32,36 +65,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "查询处理"
-        Q[用户查询] --> REWRITE[查询改写]
-        REWRITE --> EXPAND[查询扩展]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "多路召回"
-        BM25[BM25<br/>关键词检索]
-        VDB[向量检索<br/>语义相似度]
-        GRAPH[近邻图<br/>TF-IDF余弦]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    EXPAND --> BM25 & VDB & GRAPH
-    subgraph "重排序与融合"
-        RERANK[Reranker<br/>交叉编码器]
-        MERGE[分数融合<br/>RRF/加权]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    BM25 & VDB & GRAPH --> RERANK --> MERGE
-    subgraph "上下文工程"
-        INJECT[上下文注入]
-        COMPRESS[压缩/摘要]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    MERGE --> INJECT --> COMPRESS
-    COMPRESS --> LLM[LLM 生成]
-    LLM --> ANS[回答]
-    classDef query fill:#dbeafe,stroke:#2563eb
-    classDef recall fill:#ede9fe,stroke:#7c3aed
-    classDef rerank fill:#fef3c7,stroke:#d97706
-    classDef ctx fill:#d1fae5,stroke:#059669
-    class Q,REWRITE,EXPAND query
-    class BM25,VDB,GRAPH recall
-    class RERANK,MERGE rerank
-    class INJECT,COMPRESS,LLM ctx
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 Amazon Quick 与 Atlassian Confluence Cloud 的集成旨在消除多系统切换带来的上下文丢失问题。当文档集中在 Confluence，而相关数据散布在其他系统时，团队需要频繁切换工具、重复检索、手动聚合信息——这些中断会拖慢决策速度，拉大「已有知识」与「可操作洞察」之间的差距。

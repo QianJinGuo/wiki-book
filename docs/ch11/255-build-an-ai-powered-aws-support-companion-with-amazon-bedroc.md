@@ -14,6 +14,16 @@ Managing AWS infrastructure often means switching between consoles, searching do
 
 In this post, you build an AWS Support Companion using [Amazon Bedrock AgentCore](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html>). The agent uses [Strands Agents](<https://strandsagents.com/>) as the orchestration framework and connects to AWS services through the [Model Context Protocol (MCP)](<https://modelcontextprotocol.io/>). By the end, you have a working agent that can analyze CloudWatch logs, search AWS documentation, query community knowledge from [AWS re:Post](<https://repost.aws/>), and create support cases, all from a single conversational interface. The solution deploys with a single script using [AWS CloudFormation](<https://aws.amazon.com/cloudformation/>) and includes a web frontend built on [AWS Amplify](<https://aws.amazon.com/amplify/>) for interacting with the agent.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build an AI-powered AWS supp…"))
+    The incident investigat…
+    Solution overview
+```
+
 ## The incident investigation bottleneck
 
 AWS support and operations teams follow a repetitive pattern for every incident:

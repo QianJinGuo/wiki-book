@@ -2,7 +2,7 @@
 
 ## Ch07.068 NeurIPS 2026 Rebuttal Skill — 开源论文回复 Skill 工作流
 
-> 📊 Level ⭐⭐ | 6.1KB | `entities/neurips-2026-rebuttal-skill.md`
+> 📊 Level ⭐⭐ | 6.5KB | `entities/neurips-2026-rebuttal-skill.md`
 
 # NeurIPS 2026 Rebuttal Skill — 开源论文回复 Skill 工作流
 
@@ -27,6 +27,7 @@
 ### P0-P3 优先级框架的决策逻辑
 
 skill 的优先级排序依据不仅是实验难度，还包括三个维度：
+
 - **问题权重**：该问题是否被多位审稿人共同提出（共识越强，优先级越高）
 - **影响力度**：对最终决定的影响程度
 - **复用价值**：一项实验能否同时回应多个问题
@@ -36,6 +37,7 @@ skill 的优先级排序依据不仅是实验难度，还包括三个维度：
 ### "先判断，再行事"的原则
 
 Rebuttal Skill 与普通 rebuttal 写作工具最本质的区别在于：**先决定哪些问题值得投入、哪些实验应该优先、哪些任务可以放弃，再开始组织回复**。Stage 0 的 PROMISING / BORDERLINE / LOW EXPECTED RETURN 三级分类对应不同的投入策略：
+
 - PROMISING：以少量关键实验巩固正面信号
 - BORDERLINE：用关键实验或更准确的解释争取翻转
 - LOW EXPECTED RETURN：转向事实澄清、论文修改和重投准备
@@ -60,10 +62,10 @@ Rebuttal Skill 代表了一类新兴的工具范式：**将专家经验编码为
 
 ## 相关实体
 
-- [Skill 编排与依赖管理](../ch04/273-skill.html)
+- [Skill 编排与依赖管理](../ch04/338-skill.html)
 - [Agent Skill 系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [开源模型与学术生态](../ch09/072-kimi-k3.html)
-- [Hermes Agent Skill 设计分析](../ch01/332-hermes-agent-skill.html)
+- [开源模型与学术生态](../ch01/231-kimi-k3.html)
+- [Hermes Agent Skill 设计分析](../ch01/526-hermes-agent-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/neurips-2026-rebuttal-skill开源-ac开源.md)
 

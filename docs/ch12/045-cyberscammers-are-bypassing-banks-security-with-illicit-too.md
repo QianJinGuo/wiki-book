@@ -2,7 +2,7 @@
 
 ## Ch12.045 Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
 
-> 📊 Level ⭐⭐ | 9.4KB | `entities/cyberscammers-bypassing-bank-telegram.md`
+> 📊 Level ⭐⭐ | 9.6KB | `entities/cyberscammers-bypassing-bank-telegram.md`
 
 # Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
 
@@ -43,33 +43,33 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 - **相关实体**: 浏览器安全与隐私
 
 ## 相关实体
-- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](ch12/120-cyberscammers-are-bypassing-banks-security-with-illicit-too.html)
+- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](ch12/095-cyberscammers-are-bypassing-banks-security-with-illicit-too.html)
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
-- [Ai_Threat_Readiness_Framework](../ch05/095-ai.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
-- [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
+- [Ai_Threat_Readiness_Framework](../ch05/097-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/097-ai.html)
+- [Cloudflare Glasswing Mythos Security](ch12/031-mythos.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cyberscammers-bypassing-bank-telegram.md)
 
 ## 深度分析
 
-**1. 虚拟摄像头（VCam）攻击已成为 KYC 绕过的核心手段** 
+**1. 虚拟摄像头（VCam）攻击已成为 KYC 绕过的核心手段**
 
 攻击者通过虚拟摄像头替换真实视频流，使用静态图片或 deepfake 视频骗过活体检测。MIT Technology Review 调查发现 22 个中越英语言 Telegram 频道公开售卖此类工具，服务对象涵盖 Binance、西班牙 BBVA 等主流金融机构。这种攻击模式已经从技术概念演变为可规模化部署的地下产业。
 
-**2. KYC 绕过正在成为 pig-butchering 骗局的基础设施** 
+**2. KYC 绕过正在成为 pig-butchering 骗局的基础设施**
 
 Chainalysis 数据显示 2025 年加密货币诈骗损失达 170 亿美元，较 2024 年增长 31%。联合国毒品犯罪问题办公室警告亚洲诈骗集团在非洲和太平洋地区的扩张使其"快速规模化盈利"。KYC 绕过工具使诈骗集团能够快速开设 mule 账户，将赃款转入银行后立即通过 Tether 等稳定币洗白，整个过程可在秒级完成。
 
-**3. 金融机构面临"看不见的失败"困境** 
+**3. 金融机构面临"看不见的失败"困境**
 
 Sumsub 反欺诈产品负责人 Artem Popov 指出："重要的是我们看不到的部分"——存在大量未被检测到的攻击。虚拟摄像头攻击在 2024 年全球频率较 2023 年增长超过 25 倍，"复杂"或"多步"欺诈尝试（包括 VCam 绕过）在其客户群中几乎翻了三倍。金融机构往往在攻击发生很久后才意识到被突破。
 
-**4. 攻防博弈正在从应用层向操作系统层迁移** 
+**4. 攻防博弈正在从应用层向操作系统层迁移**
 
 Talsec CEO Sergiy Yakymchuk 介绍，早期仅需反编译银行 APP 即可完成绕过，现在需要 jailbreak 手机或向金融 APP 注入"挂钩框架"代码触发虚拟摄像头。攻击者同时 compromise 手机本身和金融机构 APP 代码，再向虚拟摄像头输入混合的盗窃生物特征和 deepfake。这种趋势意味着单一应用层防护已不足够，需要系统级防御思路。
 
-**5. 监管追赶速度滞后于攻击产业化速度** 
+**5. 监管追赶速度滞后于攻击产业化速度**
 
 泰国已立法增强 KYC 监控、限制每日交易金额、授权监管机构暂停账户；美国 FinCEN 于 2024 年底发布警告鼓励平台追踪更广泛的交易模式。但研究者 Ngo 认为："新安全或报告要求会让绕过变得更难，但不会阻止他们——这只是时间问题。"
 

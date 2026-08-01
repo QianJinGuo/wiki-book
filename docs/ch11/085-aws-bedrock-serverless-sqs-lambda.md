@@ -6,6 +6,31 @@
 
 # SQS+Lambda异步管道：2000并发0%限流的工程细节
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock Serverless 异步推理：…"))
+    概念导图
+    三个关键洞察
+      1. max_concurrency计算公式
+      2. 三层timeout链路
+      3. Partial Batch Failure
+    与知识库的连接
+    深度分析
+      异步架构的本质：解耦与控速
+      max_concurrency公式的物理意义
+      三层timeout的层级陷阱
+      Partial Batch Failure的实…
+    实践启示
+      1. 按输入类型配置Timeout，不要用一套…
+      2. max_concurrency的初始值用…
+      3. Bedrock SDK配置的关键点
+      4. SQS是at-least-once投递，…
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 98ea14252808fdbf162164dfc13bfc74a21b2bc0adcc6e051c7c1b66cdb55630
+source_url: "https://mp.weixin.qq.com/s/jrwLNOnoS_9O3R0ECp7IvA"
 ---
 
 # 【VLM】详解视觉语言模型原理及代码，以DeepSeek-VL为例

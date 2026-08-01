@@ -40,6 +40,17 @@ Manager 镜像不再打包 Higress、Tuwunel、MinIO 和 Element Web。基础设
 ####  省时迁移
 从 v1.0.9 升级时，会自动将  workers-registry.json  数据迁移为 CRD 资源。Worker 的运行时、模型、技能、MCP Server 和团队成员关系全部
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("HiClaw 发布 v1.1.0，提供 Kubernet…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 HiClaw v1.1.0 是该项目从"单容器玩具"向"企业级 Cloud Native 产品"演进的关键里程碑。透过功能列表，可以识别出三个相互关联的架构决策：
 **CRD 化是 Kubernetes 原生的核心**：将 Worker/Team/Manager/Human 全部抽象为 CRD（Custom Resource Definition），配合内嵌 kube-apiserver + kine，使得 HiClaw 在无需真实 Kubernetes 集群的情况下（Embedded 模式）也能模拟完整的控制平面体验。这意味着开发测试阶段的体验与生产部署高度一致，降低了"在我机器上能跑"和"在集群上能跑"之间的摩擦。同时，在真实集群中运行时，运维人员可以用熟悉的 `kubectl` 管理所有资源，与现有 GitOps 流程无缝衔接。

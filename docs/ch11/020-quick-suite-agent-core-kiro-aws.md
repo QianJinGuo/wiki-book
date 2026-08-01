@@ -4,6 +4,32 @@
 
 > 📊 Level ⭐⭐ | 21.7KB | `entities/quick-suite-agent-core-kiro-logistics-quote-assistant.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("三剑合璧Quick Suite + Agent Core…"))
+    概述
+    业务背景与客户痛点
+      客户场景
+      核心痛点
+    技术方案选型
+      SaaS 服务化交付模式
+      最小化 IT 研发介入
+      聚焦效率提升场景
+    系统架构
+      基于 Kiro 的 MCP 开发与部署
+      Excel MCP Server 架构设计
+      Amazon Quick Suite Flow…
+    经验总结与最佳实践
+      AgentCore 部署 MCP Server…
+      OAuth 2.0 认证配置注意事项
+    成本分析
+    结论
+    核心技术栈
+```
+
 ## 概述
 三剑合璧 Quick Suite + Agent Core + Kiro 联动实践：海外物流报价助手实战 是一篇 AWS 中国博客实战文章，演示如何利用 Amazon Kiro（AI 驱动开发环境）+ Amazon Bedrock AgentCore（企业级 AI 代理运行时）+ Amazon Quick Suite（AI 助手服务平台）构建一个跨境物流报价查询系统。
 核心场景是：某国内办公用品供应商的国际事业部需要每周处理大量海外仓库物流报价查询，传统 Excel 查表方式效率低、错误率高。通过 Kiro 快速生成 MCP 工具代码，部署到 AgentCore Runtime，Quick Suite Flows 编排业务流程，最终实现 AI 对话式报价查询与 Excel 报告自动生成。

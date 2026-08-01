@@ -4,6 +4,7 @@ source: "https://mp.weixin.qq.com/s/5F5kzLNBSzai9E2wl_CWVg"
 tags: [pi-agent, event-bus, framework-design]
 created: 2026-05-20
 sha256: 712357a8d808ffbc6bbe10d21f12096cb238931ccddb41a9d930739834138241
+source_url: "https://mp.weixin.qq.com/s/5F5kzLNBSzai9E2wl_CWVg"
 ---
 ---
 # 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍

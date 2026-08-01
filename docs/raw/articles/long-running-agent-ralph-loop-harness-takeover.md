@@ -12,6 +12,7 @@ review_confidence: 8
 review_recommendation: strong
 review_stars: 4
 tags: [agent, harness, context-engineering, long-running-agent, ralph-loop]
+source_url: "https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw"
 ---
 # 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 > 来源：[架构师（JiaGouX）](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw) | 作者：若飞 | 2026-05-10

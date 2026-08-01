@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 2001de04f8f629e0f0a7ae31221e457948c64d5176ccc0448a47b69116bed743
+source_url: "https://mp.weixin.qq.com/s/4N-w61GYUWzfS5RqacwPAg"
 ---
 
 # 分解一座冰山：后端系统「AI 知识库体系」建设实践（长文干货）

@@ -10,6 +10,7 @@ ingested: 2026-06-05
 review_value: 8
 review_confidence: 8
 review_recommendation: worth-reading
+source_url: "unavailable"
 ---
 
 # 鹅厂团队 14 章节完整 Skill 写作实战：踩坑经验 + 工程化评估

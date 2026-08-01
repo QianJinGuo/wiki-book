@@ -8,6 +8,23 @@
 
 Amazon Bedrock 现支持 MiniMax M2 系列三款开源权重模型（M2、M2.1、M2.5），推理完全运行在 AWS 托管基础设施上，用户的提示和完成数据不用于训练任何模型，也不与模型提供商共享。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 Amazon Bedrock 上运行 MiniMax…"))
+    MiniMax M2 系列
+    部署选项
+    深度分析
+      MiniMax M2.5 的 Agent-Na…
+      MoE 架构的推理成本经济学
+      Bedrock 的双端点设计：开发者体验的工程取舍
+      伸缩与稳速：on-demand 推理的实践模式
+    实践启示
+    相关实体
+```
+
 ## MiniMax M2 系列
 
 MiniMax 是一家全球性 AI 技术公司，专注于多模态基础模型的高效架构研究。其 M2 系列采用 Mixture-of-Experts（MoE）架构，每个 token 仅激活一小部分参数，以较低推理成本提供大容量密集模型的知识能力。

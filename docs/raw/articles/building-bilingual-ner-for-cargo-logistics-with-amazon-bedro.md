@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 1ad034116fa7f73f1d38c1729f5966cc98b8797c8e3e438dd7807373fa0b1824
+source_url: "https://aws.amazon.com/blogs/machine-learning/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock"
 ---
 
 sha256: b7190a26912257dd89d6bedde7f9c47e465ed825091e3e982f5624982973d622

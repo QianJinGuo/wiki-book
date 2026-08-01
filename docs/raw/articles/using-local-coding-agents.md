@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: ad8fc386b3c4d322bdcd1e9356b887d20dc64e63ffcec76053f7d26c3742a428
+source_url: "https://magazine.sebastianraschka.com/p/using-local-coding-agents"
 ---
 
 sha256: b0cdab766d924e82307d512dddb3e09f6f9da8e2c9fe6e900b9e2941e1dd1bb4

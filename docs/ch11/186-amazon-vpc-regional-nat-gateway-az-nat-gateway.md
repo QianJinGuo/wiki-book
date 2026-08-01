@@ -36,6 +36,18 @@
 
 * * *
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon VPC Regional NAT Gate…"))
+    **一．背景：为什么要重新认识 NAT 网关**
+    **二．两种 NAT 网关的工作原理**
+      2.1 AZ（可用区）NAT 网关——传统形态
+      2.2 Regional（区域）NAT 网关—…
+```
+
 ## **一．背景：为什么要重新认识 NAT 网关**
 
 NAT 网关（NAT Gateway）是 [Amazon VPC](<https://aws.amazon.com/cn/vpc/>) 中最常用的托管组件之一，它让私有子网中的实例可以主动访问互联网（下载补丁、调用外部 API 等），同时不允许互联网主动发起到这些实例的连接。长期以来，AWS 的 NAT 网关都是一种「可用区（Availability Zone，AZ）级」资源——每个 NAT 网关只存在于单个可用区中。

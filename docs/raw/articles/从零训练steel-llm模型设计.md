@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 8c15dd9db8586899b6356afc2549cb2ef653e0300ed866b0a9586c8997ec8872
+source_url: "https://mp.weixin.qq.com/s/JaZyf1jOEOtNDCcFqSj8TQ"
 ---
 
 # 【从零训练Steel-LLM】模型设计

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 67eea243d6fcf1d90da59893a84b581da2fa292b159880765c4872ab33d5f0eb
+source_url: "https://mp.weixin.qq.com/s/soGCMknejh725lJ6LiYVCg"
 ---
 
 # 从 Hy3 preview 看 AI 下半场：单位智能时代的一次工程答卷

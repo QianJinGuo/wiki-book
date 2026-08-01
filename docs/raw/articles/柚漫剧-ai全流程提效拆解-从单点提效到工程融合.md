@@ -3,7 +3,7 @@ tags: [wechat, article, claude, openai]
 
 title: "柚漫剧 AI全流程提效拆解"
 sha256: 61403471d49a680ac83c84fde43ba09b5170b43014aa83e3b0d863248f7c6b0a
-
+source_url: "unavailable"
 ---
 
 # 柚漫剧 AI全流程提效拆解---从单点提效到工程融合

@@ -4,6 +4,7 @@ source: "https://mp.weixin.qq.com/s/hRJu9iQWhvrKzERsbcV1bA"
 tags: [llava, onevision, vlm, video]
 created: 2026-05-20
 sha256: 7dbe035586df304c2d36adda888acbd36694c9d931b1e92b4a54188fa02df675
+source_url: "https://mp.weixin.qq.com/s/hRJu9iQWhvrKzERsbcV1bA"
 ---
 ---
 # 对话灵感实验室：全帧率 VLM、低成本与分层部署

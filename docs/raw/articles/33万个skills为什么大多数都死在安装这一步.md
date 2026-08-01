@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 72
 stars: 4
 sha256: a52af557a02b1b1a5132badecfced5388bb395c13f2e7953e134af6c7a4be8c3
+source_url: "https://mp.weixin.qq.com/s/ykOW66YzyPHveKpxNuY1ow"
 ---
 
 # 3.3万个Skills，为什么大多数都死在“安装”这一步？

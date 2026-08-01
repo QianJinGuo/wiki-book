@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 5ae84221bad36f33b26c178548e8d8a06cfbae522f308395c4a9a6eaf3fd89a3
+source_url: "https://mp.weixin.qq.com/s/FwKQ0QX29pikmIj4IV9pQg"
 ---
 
 # 实现复利工程：我是如何通过龙虾构建递归进化的 Agent 闭环

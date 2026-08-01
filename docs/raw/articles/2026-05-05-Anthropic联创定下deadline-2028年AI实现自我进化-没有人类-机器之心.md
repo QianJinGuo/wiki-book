@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 1be7adcd1af1ce1f9bf311a965ac77d9c6336fc0df933543e19857ab5fdb2b22
+source_url: "https://importai.substack.com/p/import-ai-455-automating-ai-research?r=1ds20&utm_campaign=post&utm_medium=email&triedRedirect=true"
 ---
 
 sha256: 7158d316e486e40c2fe76d198372a0a95333fb6c78de8bfcb84a8262a1fbcf64

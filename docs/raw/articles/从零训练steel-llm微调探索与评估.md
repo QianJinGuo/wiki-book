@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 72f235cd3e76cd4af4a4d3a07a745fd42f1e40e9b70f73e386d6558d262e89cc
+source_url: "https://mp.weixin.qq.com/s/KK0G0spNw0D9rPUESkHMew"
 ---
 
 # 【从零训练Steel-LLM】微调探索与评估

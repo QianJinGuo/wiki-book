@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 9fcdc6b50e1f216793ad896abbd02b00aa2e75e9fb5851aba70ad2e874f08ca9
+source_url: "https://gwern.net/lean-scaling"
 ---
 
 sha256: 7d18a440117de0f1a01d54b8555ff36660db0a8095620c987a516b8fda7125a4

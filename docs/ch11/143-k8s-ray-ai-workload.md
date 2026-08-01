@@ -7,6 +7,22 @@
 # 腾讯 K8s + Ray 超大规模 AI Workload 调度实践
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯 K8s + Ray 超大规模 AI Workloa…"))
+    概念导图
+    深度分析
+      K8s + Ray 协同调度的设计哲学
+      从 Virtual Kubelet 到联邦架构…
+      RLHF 调度范式迁移的驱动因素
+      跨层弹性调度与容灾的未来方向
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

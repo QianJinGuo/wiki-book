@@ -5,6 +5,7 @@ url: https://aws.amazon.com/cn/blogs/china/aws-devops-agent-intelligent-operatio
 source: rss
 feed_name: AWS China Blog
 sha256: c496cf12fa8a6af4a812bc1b28a6ccd78ebcc390e2ffe2312cb27675ae55a1b3
+source_url: "unavailable"
 ---
 <div style="line-height: 1.6;font-size: 16px"> 
  <p style="background-color: #fafafa;padding: 20px;border-radius: 8px;margin-bottom: 30px;font-size: 16px;color: #5f6368">摘要：AWS DevOps Agent 是 AI 驱动的智能运维助手，但目前仅在 AWS Commercial 分区（aws 分区）可用，不支持中国区（aws-cn 分区）。本文介绍一种基于 MCP（Model Context Protocol）协议的桥接方案，通过在 Commercial 分区部署 MCP Server 作为中间层，实现 DevOps Agent 对中国区资源的跨分区运维管理。</p> 

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 547cbde32dac238216ea3723aa83bcfe8ef586da5cb2c86d8b522c366d94dc91
+source_url: "https://mp.weixin.qq.com/s/ZcHtJH5eT76f8agSvo3HYQ"
 ---
 
 # 手把手教你撰写 Agent Skill.md

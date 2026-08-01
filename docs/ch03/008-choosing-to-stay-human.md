@@ -83,10 +83,10 @@ ChatGPT 的 /learn、Gemini 的 Guided Learning、Claude 的 learning style sele
 - **AI ≠ 代理**：主动选择使用 AI 而非被设计默认推向 frictionless use
 
 ## 相关实体
-- [Against Brain Damage](ch03/016-against-brain-damage.html)
+- [Against Brain Damage](ch03/018-against-brain-damage.html)
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/673-garry-tan.html)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/888-garry-tan.html)
 - [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki/blob/main/entities/defect-backlog-retention-report.md)
 
 ## 相关引用

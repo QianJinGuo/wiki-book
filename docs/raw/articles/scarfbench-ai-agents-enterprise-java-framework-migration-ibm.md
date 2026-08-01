@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 64
 stars: 4
 sha256: cc5cf9d182d89e6f63805fa123f92eae218cc4dca9e0c138fd5ae0094680d262
+source_url: "https://huggingface.co/blog/ibm-research/scarfbench"
 ---
 sha256: 58a652486655e5f3aded986ba30d12b0af3c3c89001e589b9f590915fc23941f
 

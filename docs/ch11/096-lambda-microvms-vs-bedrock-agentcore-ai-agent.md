@@ -2,68 +2,11 @@
 
 ## Ch11.096 Lambda MicroVMs vs Bedrock AgentCore：AI Agent 开发者该怎么选？
 
-> 📊 Level ⭐⭐ | 9.9KB | `entities/lambda-microvms-vs-bedrock-agentcore-ai-agent-comparison.md`
+> 📊 Level ⭐⭐ | 10.3KB | `entities/lambda-microvms-vs-bedrock-agentcore-ai-agent-comparison.md`
 
 # Lambda MicroVMs vs Bedrock AgentCore：AI Agent 开发者该怎么选？
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Lambda MicroVMs vs Bedrock"))
-    核心差异 计算原语 vs Agent 框架
-      定位差异
-      关键差异深度解析
-    选择决策指南
-      选择 Lambda MicroVMs 的场景
-      选择 Bedrock AgentCore 的场景
-      组合架构模式
-    砖头 vs 精装房 抽象层次的选择决定了架构自由度
-    Firecracker 的统一底层的战略意义
-    代码沙箱 AI Agent 安全架构的关键组件
-    Agent 的运行时环境正在成为新的云原语
-```
-
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 2026 年 6 月，AWS 同时拥有了两个能"安全运行 AI 生成代码"的 Serverless 产品——**Lambda MicroVMs** 和 **Bedrock AgentCore Runtime**。它们底层都基于 Firecracker microVM，却处在完全不同的抽象层。理解两者的定位差异对于 AI Agent 架构设计至关重要。
 
@@ -147,7 +90,7 @@ Bedrock AgentCore 提供的是"Agent 运行时"——一个假设你要跑 AI Ag
 - **Firecracker 的启动速度**（<125ms）使得按需创建 VM 成为可行选项
 - **统一底座**意味着 AgentCore 的 Session 和 MicroVM 的 VM 在安全模型上等价
 
-这种"统一底座 + 分层抽象"的策略——底层用同一套安全原语，上层暴露不同抽象级别的 API——是 AI 基础设施设计中的优秀实践，值得 [Harness 工程](../ch05/112-harness-engineering.html) 平台设计参考。
+这种"统一底座 + 分层抽象"的策略——底层用同一套安全原语，上层暴露不同抽象级别的 API——是 AI 基础设施设计中的优秀实践，值得 [Harness 工程](../ch05/126-harness-engineering.html) 平台设计参考。
 
 ### 代码沙箱：AI Agent 安全架构的关键组件
 
@@ -177,11 +120,11 @@ Lambda MicroVMs 和 Bedrock AgentCore 的出现标志着 AI Agent 运行时正�
 
 ## 相关实体
 
-- [Amazon Bedrock Agent](../ch04/549-amazon-bedrock-agentcore.html)
-- [Agent 代码沙箱安全](../ch04/401-sandboxing-an-ai-agent.html)
-- [AWS Lambda Serverless](ch11/161-what-you-need-to-know-about-lambda-microvms.html)
-- [Harness Engineering](../ch05/112-harness-engineering.html)
-- [Agent 上下文管理](../ch05/058-agent-harness.html)
+- [Amazon Bedrock Agent](../ch04/628-amazon-bedrock-agentcore.html)
+- [Agent 代码沙箱安全](../ch04/435-sandboxing-an-ai-agent.html)
+- [AWS Lambda Serverless](ch11/143-what-you-need-to-know-about-lambda-microvms.html)
+- [Harness Engineering](../ch05/126-harness-engineering.html)
+- [Agent 上下文管理](../ch05/062-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lambda-microvms-vs-bedrock-agentcore-ai-agent-comparison.md)
 

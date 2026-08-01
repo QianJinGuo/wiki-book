@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **40 篇**实体，按深度递增排列。
+> 本章收录 **44 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
+| ⭐ 入门 | 零基础可读 | 7 |
 | ⭐⭐ 工程师 | 需编程基础 | 35 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 
@@ -30,7 +30,7 @@
 
 ## Ch14.001 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
-> 📊 Level ⭐ | 7.2KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
+> 📊 Level ⭐ | 9.1KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
 
 # 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
@@ -38,7 +38,8 @@
 
 # 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
-摘要：某零售品牌因 Hudi 0.12.x 版本老化、并发冲突和全量覆盖场景低效，迁移至 Amazon S3 Tables。团队采用混合策略：DW 层用 S3 Tables 实现增量 MERGE，DM 层全量覆盖表直接写 Parquet。通过新旧并行分批迁移，最终核心作业性能提升最高 8 倍，ETL 月度成本降低 72%。  
+摘要：某零售品牌因 Hudi 0.12.x 版本老化、并发冲突和全量覆盖场景低效，迁移至 Amazon S3 Tables。团队采用混合策略：DW 层用 S3 Tables 实现增量 MERGE，DM 层全量覆盖表直接写 Parquet。通过新旧并行分批迁移，最终核心作业性能提升最高 8 倍，ETL 月度成本降低 72%。
+
   
 **目录**
 
@@ -91,20 +92,28 @@ S3 Tables 提供了一条低运维的迁移路径——无需自建 Hive Metasto
 
 我们并没有简单地将所有表”从 Hudi 换到 Iceberg”，而是根据每张表的实际写入模式做了差异化选择：
 
-数据层 | 写入模式 | 格式 | 理由  
+数据层 | 写入模式 | 格式 | 理由
+
 ---|---|---|---  
-DW 层 | 增量 MERGE（upsert） | Amazon S3 Tables | 需要 ACID、Time Travel、增量合并能力  
-DM 层 | 全量覆盖（overwrite） | Parquet 直写 + Glue Catalog | 无需 MERGE，极简高效，避免小文件  
-DM 层 | 增量 upsert | Amazon S3 Tables | 唯一需要增量合并的 DM 表  
-[](<https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/07/07/屏幕截图-2026-07-07-165114.png>)  
+DW 层 | 增量 MERGE（upsert） | Amazon S3 Tables | 需要 ACID、Time Travel、增量合并能力
+
+DM 层 | 全量覆盖（overwrite） | Parquet 直写 + Glue Catalog | 无需 MERGE，极简高效，避免小文件
+
+DM 层 | 增量 upsert | Amazon S3 Tables | 唯一需要增量合并的 DM 表
+
+[](<https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/07/07/屏幕截图-2026-07-07-165114.png>)
+
 ---
   
 ### 4.2 为什么选择 Amazon S3 Tables而非自建 Iceberg
 
-功能 | 自建 Iceberg | Amazon S3 Tables  
+功能 | 自建 Iceberg | Amazon S3 Tables
+
 ---|---|---  
-Catalog 管理 | 需自建 Hive Metastore 或配置 Glue Catalog 同步 | 原生集成，零配置  
-Athena 查询 | 需额外配置 | 直接 SQL 查询  
+Catalog 管理 | 需自建 Hive Metastore 或配置 Glue Catalog 同步 | 原生集成，零配置
+
+Athena 查询 | 需额外配置 | 直接 SQL 查询
+
 运维复杂度 | 自行管理版本、元数据一致性 | AWS 托管
   
 ### 4.3 迁移策略：新旧并行，30天稳定后切换
@@ -115,8 +124,10 @@ Athena 查询 | 需额外配置 | 直接 SQL 查询
 
 批次 | 范围 | 说明  
 ---|---|---  
-第一批 | 核心事实表 DW → 全部下游 DM | 风险最高、价值最大的链路先行验证  
-第二批 | 核心表上游 ODS 层 | 第一批稳定后接续  
+第一批 | 核心事实表 DW → 全部下游 DM | 风险最高、价值最大的链路先行验证
+
+第二批 | 核心表上游 ODS 层 | 第一批稳定后接续
+
 第三批起 | 其余业务链路 | 依前批验证结果逐步解锁
   
 ### 4.4 S3 tables 实践经验
@@ -130,10 +141,12 @@ Amazon S3 Tables 每次增量提交都会产生新数据文件。如果不加控
 1\. 调整分区粒度：从 year/month/day 改为 year/month，减少分区数量
 
 2\. 显式 repartition：写入前手动控制输出文件数量和大小
+
     
     
     # 写入前显式控制文件大小，目标 200-256 MB/文件
     partition_fields = ["year", "month"]
+
     df = df.repartition(*[col(f) for f in partition_fields])
 
 3\. 定期 Compaction：配置每周调度合并小文件
@@ -256,9 +269,68 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 
 ---
 
-## Ch14.004 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
+## Ch14.004 multi-dataset-topic-best-practices-for-amazon-quick-chat
 
-> 📊 Level ⭐⭐ | 35.4KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
+> 📊 Level ⭐ | 1.0KB | `entities/multi-dataset-topic-best-practices-for-amazon-quick-chat.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multi-dataset-topic-best-practices-for-amazon-quick-chat.md)
+
+**Note** : The topics referenced throughout this document refer to the new Topics experience (not legacy Topics). For details on the differences, see [Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick](<https://aws.amazon.com/blogs/machine-learning/build-a-unif
+
+## 来源
+
+- 原文: [multi-dataset-topic-best-practices-for-amazon-quick-chat](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multi-dataset-topic-best-practices-for-amazon-quick-chat.md)
+- 原始链接: : https://aws.amazon.com/blogs/machine-learning/multi-dataset-topic-best-practices-for-amazon-quick-chat
+
+---
+
+## Ch14.005 用数据说话贴吧-ai-cr小码哥落地-10-周bug密度下降-6687
+
+> 📊 Level ⭐ | 0.9KB | `entities/用数据说话贴吧-ai-cr小码哥落地-10-周bug密度下降-6687.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/用数据说话贴吧-ai-cr小码哥落地-10-周bug密度下降-6687.md)
+
+导读 introduction本文记录了贴吧 Server 团队将小码哥 AI CR 规模化落地的 10 周实践，将评审占比从 33% 提升至 84%，bug 密度下降；全套方法论与工作流可直接迁移，少走弯路。
+
+## 来源
+
+- 原文: [用数据说话贴吧-ai-cr小码哥落地-10-周bug密度下降-6687](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/用数据说话贴吧-ai-cr小码哥落地-10-周bug密度下降-6687.md)
+- 原始链接: : https://mp.weixin.qq.com/s/DHvak7m6Y_ogOXVB9ZEJGg
+
+---
+
+## Ch14.006 Kafka 原生消息入湖能力上线 一键打通实时流与数据湖 阿里云云原生
+
+> 📊 Level ⭐ | 0.9KB | `entities/2026-06-26-Kafka-原生消息入湖能力上线-一键打通实时流与数据湖-阿里云云原生.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-26-Kafka-原生消息入湖能力上线-一键打通实时流与数据湖-阿里云云原生.md)
+
+sha256: 77535e2953b7ea900e933077c9b2e617c0965e8d869d1e52ed93aa5b31b7aa4e
+
+## 来源
+
+- 原文: [Kafka 原生消息入湖能力上线 一键打通实时流与数据湖 阿里云云原生](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-26-Kafka-原生消息入湖能力上线-一键打通实时流与数据湖-阿里云云原生.md)
+
+---
+
+## Ch14.007 dataflow harness data pipeline agent pku 2026
+
+> 📊 Level ⭐ | 0.8KB | `entities/dataflow-harness-data-pipeline-agent-pku-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dataflow-harness-data-pipeline-agent-pku-2026.md)
+
+当前准备 AI-ready 数据集的常见方式：工程师手搓脚本，或 Code Agent 生成一次性脚本后拼接。两种方式在流程复用、平台审计、可视化编辑和长期治理上存在明显短板。
+
+## 来源
+
+- 原文: [dataflow harness data pipeline agent pku 2026](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dataflow-harness-data-pipeline-agent-pku-2026.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/Gah00ChUSnHItOnDMO6jBQ
+
+---
+
+## Ch14.008 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
+
+> 📊 Level ⭐⭐ | 35.2KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
 
 # Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 source: rss
@@ -752,7 +824,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 
 ---
 
-## Ch14.005 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
+## Ch14.009 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
 > 📊 Level ⭐⭐ | 24.3KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
 
@@ -1017,7 +1089,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 ---
 
-## Ch14.006 Good QC for RL Data
+## Ch14.010 Good QC for RL Data
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/good-qc-for-rl-data.md`
 
@@ -1182,7 +1254,7 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 
 ---
 
-## Ch14.007 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
+## Ch14.011 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/kimi-k2-6-tidb-agent-database.md`
 
@@ -1323,7 +1395,7 @@ one agent, one sandbox, one storage, one database
 
 ---
 
-## Ch14.008 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
+## Ch14.012 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md`
 
@@ -1422,7 +1494,7 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ---
 
-## Ch14.009 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
+## Ch14.013 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
 
 > 📊 Level ⭐⭐ | 11.5KB | `entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md`
 
@@ -1532,7 +1604,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ---
 
-## Ch14.010 具身数据产业格局：97家玩家与447亿融资
+## Ch14.014 具身数据产业格局：97家玩家与447亿融资
 
 > 📊 Level ⭐⭐ | 10.7KB | `entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md`
 
@@ -1634,7 +1706,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ---
 
-## Ch14.011 London's police asked Big Tech for comms data over 700,000 times last year
+## Ch14.015 London's police asked Big Tech for comms data over 700,000 times last year
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/london-met-police-big-tech-data-requests.md`
 
@@ -1751,7 +1823,7 @@ LycaMobile 请求量 500% 的增长和针对移民的新立法动向表明，移
 
 ---
 
-## Ch14.012 AI-Enhanced Data Solutions with Database 26ai
+## Ch14.016 AI-Enhanced Data Solutions with Database 26ai
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/ai-enhanced-data-solutions-with-database-26ai.md`
 
@@ -1865,7 +1937,7 @@ JSON Relational Duality 的创新在于重新定义文档与关系表的竞争�
 
 ---
 
-## Ch14.013 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
+## Ch14.017 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
 
@@ -1993,12 +2065,12 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 ---
 
-## Ch14.014 LiveKit Agents 语音 AI 框架工程解析
+## Ch14.018 LiveKit Agents 语音 AI 框架工程解析
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/livekit-agents-voice-ai-framework.md`
 
 ## 核心架构：四层流式级联管线
-**VAD → STT → LLM → TTS**
+**VAD → STT → LLM → TTS**^[].md]
 
 - 传统"接力赛"：每个环节等待上游完整结果，延迟 3-5 秒
 - LiveKit"流水线"：每个环节不等上游完成，拿到一点就往下传
@@ -2011,10 +2083,10 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 两层检测机制：
 1. **VAD**：基础音量检测，快但粗糙，假阳性高
 2. **语义打断检测器**：分析声学信号 + STT 转录文本，区分附和性回应（"嗯""对"）和真正打断（"等等不对"）
-**自适应打断（Adaptive Interruption）**：误判后自动从中断处恢复输出。
+**自适应打断（Adaptive Interruption）**：误判后自动从中断处恢复输出。^[].md]
 
 ## 多 Agent 交接（Handoff）
-通过函数工具返回值触发 Agent 切换。上一个 Agent 的 TTS 完成过渡语，新 Agent 无缝接管并携带已收集的上下文信息。
+通过函数工具返回值触发 Agent 切换。上一个 Agent 的 TTS 完成过渡语，新 Agent 无缝接管并携带已收集的上下文信息。^[].md]
 
 ## MCP + SIP 生产集成
 - **MCP**：外部 MCP Server 直接接入，Agent 自动发现和调用工具（数据库查询、CRM、日历等）
@@ -2040,14 +2112,18 @@ python myagent.py start     # 生产部署（自动 Worker 调度）
 
 ## 深度分析
 ### 流式级联管线的工程哲学
-LiveKit Agents 的四层流式级联架构（VAD → STT → LLM → TTS）体现了一个核心工程哲学：**流水线和并行化是压低延迟的关键**。
-传统"接力赛"模式的问题：每个环节必须等待上游完整结果才能开始。如果 STT 需要 500ms 完整转写，LLM 必须等到这 500ms 才能开始推理，引入 500ms 的串行等待。
-LiveKit 的流水线模式：**每个环节不等上游完成，拿到一点就开始处理**。VAD 检测到一小段音频就开始 STT，STT 输出部分转写就开始传给 LLM，LLM 根据部分输入"预判"意图并开始生成，TTS 收到前几个 token 就开始合成语音。
-这种模式的核心价值在于：**延迟不是各环节延迟的累加，而是最大环节的延迟**。只要流水线充分流水化，端到端延迟接近最慢环节的延迟，而非所有环节延迟之和。
+LiveKit Agents 的四层流式级联架构（VAD → STT → LLM → TTS）体现了一个核心工程哲学：**流水线和并行化是压低延迟的关键**。^[].md]
+
+传统"接力赛"模式的问题：每个环节必须等待上游完整结果才能开始。如果 STT 需要 500ms 完整转写，LLM 必须等到这 500ms 才能开始推理，引入 500ms 的串行等待。^[].md]
+
+LiveKit 的流水线模式：**每个环节不等上游完成，拿到一点就开始处理**。VAD 检测到一小段音频就开始 STT，STT 输出部分转写就开始传给 LLM，LLM 根据部分输入"预判"意图并开始生成，TTS 收到前几个 token 就开始合成语音。^[].md]
+
+这种模式的核心价值在于：**延迟不是各环节延迟的累加，而是最大环节的延迟**。只要流水线充分流水化，端到端延迟接近最慢环节的延迟，而非所有环节延迟之和。^[].md]
 
 ### 语义打断检测的双层架构
-LiveKit 的语义打断检测采用双层架构：
-**第一层：VAD（Voice Activity Detection）**
+LiveKit 的语义打断检测采用双层架构：^[].md]
+
+**第一层：VAD（Voice Activity Detection）**^[].md]
 
 - 基于音量阈值的声音检测
 - 优点：极快（实时帧级处理）
@@ -2058,18 +2134,20 @@ LiveKit 的语义打断检测采用双层架构：
 - 同时分析声学信号 + STT 转录文本
 - 输出用户发言完成概率
 - 能区分附和性回应（"嗯""对""好的"）和真正打断（"等等不对""停一下"）
-自适应打断（Adaptive Interruption）的设计尤其巧妙：误判后自动从中断处恢复。这意味着即使语义检测器偶尔误判（用户清了嗓子但没说话），用户体验仍然流畅——Agent 会自动继续输出而非僵在原地。
+自适应打断（Adaptive Interruption）的设计尤其巧妙：误判后自动从中断处恢复。这意味着即使语义检测器偶尔误判（用户清了嗓子但没说话），用户体验仍然流畅——Agent 会自动继续输出而非僵在原地。^[].md]
 
 ### 多 Agent 交接的上下文传递机制
-多 Agent 交接是 LiveKit Agents 的原生能力，通过函数工具返回值触发切换。
+多 Agent 交接是 LiveKit Agents 的原生能力，通过函数工具返回值触发切换。^[].md]
+
 设计要点：
 1. 交接由函数工具返回值触发，而非 Agent 自主决定
 2. 上一个 Agent 的 TTS 输出过渡语（"好的，为您转接订位专员！"）
 3. 新 Agent 无缝接管，携带已收集的上下文信息
-这个设计的工程价值在于：**交接的发起方是业务逻辑层，不是框架层**。业务逻辑判断"用户需求已明确，需要转接专员"，通过工具返回值告诉框架"请切换 Agent"。框架本身不感知业务，只负责执行切换。
+这个设计的工程价值在于：**交接的发起方是业务逻辑层，不是框架层**。业务逻辑判断"用户需求已明确，需要转接专员"，通过工具返回值告诉框架"请切换 Agent"。框架本身不感知业务，只负责执行切换。^[].md]
 
 ### MCP + SIP 的生产集成架构
-MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发工具"到"生产系统"的跨越。
+MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发工具"到"生产系统"的跨越。^[].md]
+
 **MCP 的价值**：
 
 - 外部 MCP Server 直接接入，Agent 自动发现和调用工具
@@ -2080,11 +2158,11 @@ MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发�
 - Agent 获得电话号码，可接入电话网络
 - 支持呼入、呼出、DTMF 按键、多方会议
 - 企业无需改造现有电话基础设施
-两者结合使 LiveKit Agents 能够同时服务 WebRTC 用户（在线客服）和电话用户（PSTN 呼叫），这是纯托管方案（如 Twilio Voice）难以实现的优势。
+两者结合使 LiveKit Agents 能够同时服务 WebRTC 用户（在线客服）和电话用户（PSTN 呼叫），这是纯托管方案（如 Twilio Voice）难以实现的优势。^[].md]
 
 ## 相关链接
-- [Livekit Agents Voice Ai Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/livekit-agents-voice-ai-framework.md)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
+- [[entities/livekit-agents-voice-ai-framework]
+- [[entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc]
 
 ## 实践启示
 ### 对语音 AI 产品经理
@@ -2118,11 +2196,11 @@ MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发�
 > 来源：[数有灵兮](https://mp.weixin.qq.com/s/SMqIYoWUlbr0B_OaWbXxNA)
 ## 相关实体
 
-- [livekit agents：给大模型接上麦克风，没你想的那么简单](https://github.com/QianJinGuo/wiki/blob/main/entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md)
+- [[entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection|livekit agents：给大模型接上麦克风，没你想的那么简单]
 
 ---
 
-## Ch14.015 Apache SeaTunnel AI CLI 模型评测
+## Ch14.019 Apache SeaTunnel AI CLI 模型评测
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
 
@@ -2201,9 +2279,9 @@ SeaTunnel AI CLI 面临的挑战是整个"AI for Data Engineering"领域的缩�
 
 ---
 
-## Ch14.016 Moneyball for Physical AI
+## Ch14.020 Moneyball for Physical AI
 
-> 📊 Level ⭐⭐ | 8.2KB | `entities/moneyball-for-physical-ai.md`
+> 📊 Level ⭐⭐ | 8.5KB | `entities/moneyball-for-physical-ai.md`
 
 # Moneyball for Physical AI
 
@@ -2312,9 +2390,9 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 ---
 
-## Ch14.017 Lightfield AI pipeline generation
+## Ch14.021 Lightfield AI pipeline generation
 
-> 📊 Level ⭐⭐ | 8.1KB | `entities/lightfield-ai-pipeline-generation.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/lightfield-ai-pipeline-generation.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-ai-pipeline-generation.md)
 
@@ -2370,9 +2448,138 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 
 ---
 
-## Ch14.018 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+## Ch14.022 verify-data：一个端到端的数据验数 Agent Skill
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
+> 📊 Level ⭐⭐ | 7.8KB | `entities/verify-data-agent-skill-data-validation.md`
+
+# verify-data：一个端到端的数据验数 Agent Skill
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verify-data-agent-skill-data-validation.md)
+
+## 摘要
+
+verify-data 是阿里云开发者社区（作者：晓莄）提出的一个端到端数据验数 Agent Skill。它将数据验数的全部流程——从信息收集、SQL 生成、执行到报告产出——编码成一套可复用、可迭代的 Agent 能力。核心特性包括 10 类标准化 SQL 模板、基准表自动发现与 4 种降级策略、17 步条件触发流程、5 大场景自动识别，将传统 2-4 小时的手工验数压缩到 30 分钟以内。
+
+## 核心要点
+
+### 1. 传统手工验数的五大痛点
+
+1. **覆盖度不够**：大多数开发者只跑总量对比 SQL，漏掉维度逐项对比、汇总行一致性、CUBE 完整性检查、关联膨胀检测等关键验证项
+2. **基准表选错**：凭感觉选"名字差不多"的表做基准，结果口径完全不同（如按买家 vs 按访客去重）
+3. **代码理解偏差**：没看懂研发代码的 JOIN 膨胀逻辑，验数 SQL 复刻了同样的 bug
+4. **结论无依据**：主观判断缺乏评审级证据链，业务方不信，评审过不去
+5. **沉淀成本高**：验数 SQL 散落各处，换人、换分区又要从头来
+
+### 2. verify-data 的技术架构
+
+verify-data 的核心是一个**条件触发流程**（Conditional Trigger Pipeline）：
+
+- **用户交互层**：自然语言对话触发，不需要手写 SQL
+- **核心引擎层**：场景识别 → 基准表发现 → SQL 生成 → 执行 → 分析 → 报告组装
+- **外部依赖**：计算引擎（Spark/Presto 等）、协作文档平台
+- **输出产物**：评审级验证报告（7 节标准格式、三档结论判定、完整 SQL 附录）
+
+### 3. 10 类标准化 SQL 模板
+
+verify-data 内置 10 类标准化 SQL 模板，确保验证覆盖度。其中最关键的是：
+
+- **SQL 9：关联膨胀检测**——检测 LEFT JOIN 等操作导致的行数膨胀，这是数据评审最高频退回原因之一
+- **SQL 10：日期维度关联校验**——验证日期维度的关联完整性
+
+这两项是手工验数时极易忽略但评审最关注的验证项。
+
+### 4. 基准表自动发现与降级策略
+
+基准表发现采用**两阶段策略**：
+1. **血缘（Data Lineage）分析**：通过表之间的上下游依赖关系定位候选基准表
+2. **维度/指标精排**：根据维度和指标的匹配度对候选表排序
+
+当找不到基准表时，提供 4 种降级策略：
+
+- 使用历史分区数据作为基准
+- 使用聚合逻辑进行自洽性校验
+- 使用外部参考数据源
+- 仅做内部一致性检查（单表验数）
+
+### 5. 17 步条件触发流程
+
+主流程 7-9 步，加上条件触发的子步骤实际可达 17 步。关键条件步骤包括：
+
+- **Step 3.6**：关联膨胀检测（当表涉及 JOIN 操作时自动触发）
+- **Step 3.7**：日期维度校验（当表包含日期维度时自动触发）
+- **Step 4.8**：汇总行一致性检查（当表为 CUBE 表时自动触发）
+
+这些步骤不是每次都执行，而是由对应的触发条件自动决定是否激活。
+
+### 6. 5 大场景识别
+
+Agent 根据用户输入自动识别验数场景：
+
+| 场景 | 名称 | 触发条件 |
+|------|------|---------|
+| S1 | 新模型上线 | 单研发表，无基准表 |
+| S2 | 迭代验数 | 双表对比（DEV vs PROD）或含迭代关键词 |
+| S3 | 日常监控 | "最近数据异常"类描述 |
+| S4 | 业务质疑 | "xx 指标对不对"类问题 |
+| S5 | 未知 | 模糊描述，需要进一步澄清 |
+
+不同场景决定不同的验数策略和 SQL 模板组合。
+
+### 7. 效率提升与证据链
+
+- **效率**：从 2-4 小时压缩到 30 分钟以内
+- **证据链**：7 节标准格式报告、三档结论判定（PASS/WARNING/FAIL）、完整可执行 SQL 附录、自动归档到协作文档
+- **资产沉淀**：每份报告自动归档，SQL 和报告成对保存，19 条踩坑记录沉淀在 Skill 定义中
+- **风险管控**：4 条不可逾越的红线从机制上防止 Agent 在边缘场景犯错
+
+## 深度分析
+
+### Agent Skill 作为可复用 SOP 的设计模式
+
+verify-data 展示了一种重要的 Agent 设计模式：**将领域专家的完整工作流程编码为可复用的 Agent Skill**。这不是简单的 prompt engineering，而是：
+
+- 将领域知识（数据分层体系、验数最佳实践）结构化编码
+- 将决策逻辑（场景识别、基准表选择、降级策略）条件化
+- 将质量标准（4 条红线、19 条踩坑记录）制度化
+
+这种模式可以推广到其他需要领域专业知识的重复性工作流程。
+
+### 数据质量作为 Agent 的一等公民
+
+verify-data 将数据验证从"上线前的人工 review 环节"提升为 Agent 能力的一等公民。这意味着：
+
+- 数据质量检查可以自动化、常态化，而非仅在上线前进行
+- 验证标准可以通过 Skill 定义持续迭代，而非依赖个人经验
+- 验证结果有结构化的证据链，可以追溯和审计
+
+### 与传统 Data Observability 工具的互补
+
+verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations）形成互补：
+
+- Data Observability 工具侧重**持续监控**（异常检测、schema 变更）
+- verify-data 侧重**发布前验证**（结构化验数、评审级报告）
+- 两者结合可以覆盖数据质量的全生命周期
+
+## 实践启示
+
+1. **Agent Skill 的价值在于领域知识编码**：不是让 LLM "自由发挥"，而是将专家经验结构化
+2. **条件触发是复杂流程的关键**：17 步流程中大部分是条件步骤，避免了不必要的计算开销
+3. **降级策略比完美方案更重要**：任何表都能给出有意义的结论，比"找不到基准表就放弃"更实用
+4. **证据链是企业级 Agent 的必备特性**：评审级报告、SQL 附录、自动归档，满足合规和审计需求
+5. **踩坑记录的持续沉淀**：19 条踩坑记录确保 Agent 不重复犯已知错误，这是 Agent 持续改进的工程实践
+
+## 相关实体
+
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verify-data-agent-skill-data-validation.md)
+
+---
+
+## Ch14.023 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+
+> 📊 Level ⭐⭐ | 7.8KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 
@@ -2414,129 +2621,7 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 
 ---
 
-## Ch14.019 verify-data：一个端到端的数据验数 Agent Skill
-
-> 📊 Level ⭐⭐ | 7.4KB | `entities/verify-data-agent-skill-data-validation.md`
-
-# verify-data：一个端到端的数据验数 Agent Skill
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verify-data-agent-skill-data-validation.md)
-
-## 摘要
-
-verify-data 是阿里云开发者社区（作者：晓莄）提出的一个端到端数据验数 Agent Skill。它将数据验数的全部流程——从信息收集、SQL 生成、执行到报告产出——编码成一套可复用、可迭代的 Agent 能力。核心特性包括 10 类标准化 SQL 模板、基准表自动发现与 4 种降级策略、17 步条件触发流程、5 大场景自动识别，将传统 2-4 小时的手工验数压缩到 30 分钟以内。
-
-## 核心要点
-
-### 1. 传统手工验数的五大痛点
-
-1. **覆盖度不够**：大多数开发者只跑总量对比 SQL，漏掉维度逐项对比、汇总行一致性、CUBE 完整性检查、关联膨胀检测等关键验证项
-2. **基准表选错**：凭感觉选"名字差不多"的表做基准，结果口径完全不同（如按买家 vs 按访客去重）
-3. **代码理解偏差**：没看懂研发代码的 JOIN 膨胀逻辑，验数 SQL 复刻了同样的 bug
-4. **结论无依据**：主观判断缺乏评审级证据链，业务方不信，评审过不去
-5. **沉淀成本高**：验数 SQL 散落各处，换人、换分区又要从头来
-
-### 2. verify-data 的技术架构
-
-verify-data 的核心是一个**条件触发流程**（Conditional Trigger Pipeline）：
-- **用户交互层**：自然语言对话触发，不需要手写 SQL
-- **核心引擎层**：场景识别 → 基准表发现 → SQL 生成 → 执行 → 分析 → 报告组装
-- **外部依赖**：计算引擎（Spark/Presto 等）、协作文档平台
-- **输出产物**：评审级验证报告（7 节标准格式、三档结论判定、完整 SQL 附录）
-
-### 3. 10 类标准化 SQL 模板
-
-verify-data 内置 10 类标准化 SQL 模板，确保验证覆盖度。其中最关键的是：
-- **SQL 9：关联膨胀检测**——检测 LEFT JOIN 等操作导致的行数膨胀，这是数据评审最高频退回原因之一
-- **SQL 10：日期维度关联校验**——验证日期维度的关联完整性
-
-这两项是手工验数时极易忽略但评审最关注的验证项。
-
-### 4. 基准表自动发现与降级策略
-
-基准表发现采用**两阶段策略**：
-1. **血缘（Data Lineage）分析**：通过表之间的上下游依赖关系定位候选基准表
-2. **维度/指标精排**：根据维度和指标的匹配度对候选表排序
-
-当找不到基准表时，提供 4 种降级策略：
-- 使用历史分区数据作为基准
-- 使用聚合逻辑进行自洽性校验
-- 使用外部参考数据源
-- 仅做内部一致性检查（单表验数）
-
-### 5. 17 步条件触发流程
-
-主流程 7-9 步，加上条件触发的子步骤实际可达 17 步。关键条件步骤包括：
-- **Step 3.6**：关联膨胀检测（当表涉及 JOIN 操作时自动触发）
-- **Step 3.7**：日期维度校验（当表包含日期维度时自动触发）
-- **Step 4.8**：汇总行一致性检查（当表为 CUBE 表时自动触发）
-
-这些步骤不是每次都执行，而是由对应的触发条件自动决定是否激活。
-
-### 6. 5 大场景识别
-
-Agent 根据用户输入自动识别验数场景：
-
-| 场景 | 名称 | 触发条件 |
-|------|------|---------|
-| S1 | 新模型上线 | 单研发表，无基准表 |
-| S2 | 迭代验数 | 双表对比（DEV vs PROD）或含迭代关键词 |
-| S3 | 日常监控 | "最近数据异常"类描述 |
-| S4 | 业务质疑 | "xx 指标对不对"类问题 |
-| S5 | 未知 | 模糊描述，需要进一步澄清 |
-
-不同场景决定不同的验数策略和 SQL 模板组合。
-
-### 7. 效率提升与证据链
-
-- **效率**：从 2-4 小时压缩到 30 分钟以内
-- **证据链**：7 节标准格式报告、三档结论判定（PASS/WARNING/FAIL）、完整可执行 SQL 附录、自动归档到协作文档
-- **资产沉淀**：每份报告自动归档，SQL 和报告成对保存，19 条踩坑记录沉淀在 Skill 定义中
-- **风险管控**：4 条不可逾越的红线从机制上防止 Agent 在边缘场景犯错
-
-## 深度分析
-
-### Agent Skill 作为可复用 SOP 的设计模式
-
-verify-data 展示了一种重要的 Agent 设计模式：**将领域专家的完整工作流程编码为可复用的 Agent Skill**。这不是简单的 prompt engineering，而是：
-- 将领域知识（数据分层体系、验数最佳实践）结构化编码
-- 将决策逻辑（场景识别、基准表选择、降级策略）条件化
-- 将质量标准（4 条红线、19 条踩坑记录）制度化
-
-这种模式可以推广到其他需要领域专业知识的重复性工作流程。
-
-### 数据质量作为 Agent 的一等公民
-
-verify-data 将数据验证从"上线前的人工 review 环节"提升为 Agent 能力的一等公民。这意味着：
-- 数据质量检查可以自动化、常态化，而非仅在上线前进行
-- 验证标准可以通过 Skill 定义持续迭代，而非依赖个人经验
-- 验证结果有结构化的证据链，可以追溯和审计
-
-### 与传统 Data Observability 工具的互补
-
-verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations）形成互补：
-- Data Observability 工具侧重**持续监控**（异常检测、schema 变更）
-- verify-data 侧重**发布前验证**（结构化验数、评审级报告）
-- 两者结合可以覆盖数据质量的全生命周期
-
-## 实践启示
-
-1. **Agent Skill 的价值在于领域知识编码**：不是让 LLM "自由发挥"，而是将专家经验结构化
-2. **条件触发是复杂流程的关键**：17 步流程中大部分是条件步骤，避免了不必要的计算开销
-3. **降级策略比完美方案更重要**：任何表都能给出有意义的结论，比"找不到基准表就放弃"更实用
-4. **证据链是企业级 Agent 的必备特性**：评审级报告、SQL 附录、自动归档，满足合规和审计需求
-5. **踩坑记录的持续沉淀**：19 条踩坑记录确保 Agent 不重复犯已知错误，这是 Agent 持续改进的工程实践
-
-## 相关实体
-
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verify-data-agent-skill-data-validation.md)
-
----
-
-## Ch14.020 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
+## Ch14.024 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md`
 
@@ -2631,7 +2716,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.021 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
+## Ch14.025 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/goodfire-predictive-data-debugging-post-training-anatomy-2026.md`
 
@@ -2693,7 +2778,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.022 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
+## Ch14.026 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
 
@@ -2772,7 +2857,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ---
 
-## Ch14.023 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
+## Ch14.027 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/agent-data-governance-crewai-credential-patterns.md`
 
@@ -2850,9 +2935,9 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.024 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
+## Ch14.028 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
 
-> 📊 Level ⭐⭐ | 6.7KB | `entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md`
+> 📊 Level ⭐⭐ | 6.6KB | `entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
 
@@ -2879,7 +2964,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.025 AI 驱动的大数据工程：从平台驱动到 AIDLC 的范式迁移
+## Ch14.029 AI 驱动的大数据工程：从平台驱动到 AIDLC 的范式迁移
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/ai-engineering-platform-aidlc-migration.md`
 
@@ -2921,129 +3006,9 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.026 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
+## Ch14.030 DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
-
-## 核心要点
-- AWS 技术实践
-- Amazon Redshift 推出带有集成数据湖查询引擎的
-## 相关实体
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](https://github.com/QianJinGuo/wiki/blob/main/entities/how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws.md)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)
-- [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)
-
-## 深度分析
-### 架构定位：Graviton 驱动的性价比跃升
-RG 实例是 Amazon Redshift 首次在数据仓库产品线中大规模采用 AWS Graviton 定制处理器。这一选择的底层逻辑与 AWS 近年来推动 Graviton 替代 Intel/AMD 实例的战略一脉相承——Graviton 基于 ARM 指令集，在并行批处理和内存密集型负载上实现了显著能耗比优势。官方标称数据仓库工作负载速度最高可达 RA3 实例的 2.2 倍，同时每个 vCPU 价格降低 30%，这一数字在性价比敏感的 analytical 场景中具有实际采购意义。
-
-### 集成数据湖查询引擎：Spectrum 的终点
-此次发布的另一个核心亮点是集成的数据湖查询引擎。在 RG 之前，Redshift 查询 S3 数据湖需要通过 Amazon Redshift Spectrum——一个独立的外部查询层，存在每 TB 扫描 5 美元的成本且查询延迟较高。现在 Redshift 在集群节点上直接执行数据湖查询，与数据仓库工作负载共用同一计算层。这一架构整合带来几个直接效果：无需重建外部表或修改应用代码，查询语法完全兼容现有 Spectrum 语法，且每 TB 扫描费用归零。对于同时运行数据仓库表和 Iceberg/Parquet 数据湖资产的混合工作负载，这是一个从"双引擎"到"单引擎"的架构简化。性能层面，对 Iceberg 格式可达 RA3 的 2.4 倍，对 Parquet 格式可达 1.5 倍。
-
-### 实例映射与迁移路径
-官方提供了从 RA3 到 RG 的明确映射关系：
-| 当前 RA3 实例 | 推荐的 RG 实例 | vCPU 变化 | 内存变化 |
-|---|---|---|---|
-| `ra3.xlplus` | `rg.xlarge` | — | — |
-| `ra3.4xlarge` | `rg.4xlarge` | 12 → 16（1.33:1） | 96 GB → 128 GB（1.33:1） |
-迁移路径支持两种模式：弹性调整大小（原地迁移，10-15 分钟停机）和快照恢复（从 RA3 快照创建 RG 集群）。这种设计降低了从既有 RA3 集群迁移的机会成本。
-
-### 代理式 AI 工作负载的针对性优化
-文章特别提及人工智能代理驱动的查询规模将远超人类典型用量，导致运营成本螺旋上升。RG 实例在 2026 年 3 月已将新查询速度提升最多 7 倍，结合本次发布的 Graviton 性价比优势，直接回应了这一痛点。近实时分析应用、BI 控制面板、ETL 管线、自主 AI 代理都被明确列为目标场景。
-
-## 实践启示
-### 对于已有 RA3 部署的用户
-如果当前运行的是 `ra3.4xlarge` 及以上规格，迁移到同等映射的 RG 实例在性价比上有明确收益。建议使用 AWS 定价计算器估算具体节省金额，并验证查询性能基准。迁移过程中的兼容性风险较低，因为外部表和查询语法无需变更。
-
-### 对于混合仓库+数据湖架构
-原来依赖 Spectrum 进行 S3 数据湖查询的场景，应优先考虑迁移到 RG 以消除每 TB 5 美元的 Spectrum 扫描费用并降低延迟。Iceberg 格式支持是这个集成引擎的差异化优势，对已有 Iceberg 数据湖资产的团队尤其值得关注。
-
-### 对于 AI 代理驱动的工作负载
-在评估 AI 代理对 Redshift 的查询频率和成本影响时，RG 实例的性价比改善提供了一个更具成本效益的基础设施选项。结合 2026 年 3 月的 7 倍查询加速，整体代理式 AI 工作负载的持有成本有望显著下降。
-
-### 区域就绪性
-RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中东和南美主要区域。中国区（北京和宁夏）尚未出现在首发列表中，有国内 AWS 需求的团队需关注后续区域扩展。
-
----
-
-## Ch14.027 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
-
-> 📊 Level ⭐⭐ | 6.0KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
-
-# SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
-
-深入剖析 SQL 中 `NOT IN` 子查询包含 NULL 值时返回空结果集的经典陷阱。从 SQL 标准的三值逻辑定义出发，经 De Morgan 定律推导，到 PostgreSQL 解析器的实际行为。
-
-## 核心问题
-
-```sql
-SELECT * FROM A WHERE id NOT IN (SELECT id FROM B);
--- 当 B.id 包含 NULL 时，结果为空！
-```
-
-## 为什么？
-
-SQL 的三值逻辑：任何与 NULL 的比较返回 UNKNOWN（不是 TRUE 也不是 FALSE）。
-
-`NOT IN` 等价于 `id != b1 AND id != b2 AND ... AND id != bn`。当某个 `bn` 是 NULL 时，`id != NULL` 返回 UNKNOWN。整个 AND 链中只要有一个 UNKNOWN，结果就是 UNKNOWN → 行被过滤。
-
-## De Morgan 视角
-
-`NOT IN` = `NOT (id = b1 OR id = b2 OR ... OR id = bn)`
-
-如果任何一个 `bn` 是 NULL，内层 OR 的结果可能是 TRUE 或 UNKNOWN（取决于是否有其他匹配）。NOT UNKNOWN = UNKNOWN → 行被排除。
-
-## 正确写法
-
-```sql
--- 方案1：排除 NULL
-SELECT * FROM A WHERE id NOT IN (SELECT id FROM B WHERE id IS NOT NULL);
-
--- 方案2：用 NOT EXISTS
-SELECT * FROM A a WHERE NOT EXISTS (SELECT 1 FROM B b WHERE b.id = a.id);
-
--- 方案3：用 EXCEPT
-SELECT id FROM A EXCEPT SELECT id FROM B;
-```
-
-## 实践价值
-
-这是每个 SQL 用户都会踩的坑，文章的解释从理论到实践层层递进，是该主题的最佳技术文档之一。
-
-## 深度分析
-
-**三值逻辑的隐蔽陷阱**：SQL 的三值逻辑（TRUE/FALSE/UNKNOWN）是 `NOT IN` 陷阱的根本原因。与其他编程语言不同，SQL 中 `NULL = NULL` 返回 UNKNOWN 而非 TRUE，这意味着 NULL 不等于任何值，包括它自身。当 `NOT IN` 的右侧子查询包含 NULL 时，整个表达式退化为 `x <> a AND x <> b AND ... AND UNKNOWN`，AND 链中只要有一个 UNKNOWN，结果就是 UNKNOWN，导致所有行被过滤。
-
-**解析器层面的实现细节**：PostgreSQL 的 `transformAExprIn` 函数中，`IN` 和 `NOT IN` 的区别仅在于一个 `useOr` 标志——`IN` 生成 `OR_EXPR`（`= ANY`），`NOT IN` 生成 `AND_EXPR`（`<> ALL`）。这个设计使得 NULL 的三值行为成为"涌现属性"而非显式特殊处理。从 EXPLAIN 输出可以直接验证：`NOT (1,2,3)` 编译为 `<> ALL ('{1,2,3}'::integer[])`，子查询形式则使用 `SubLink` 节点。
-
-**左右两侧 NULL 的对称问题**：不仅右侧子查询的 NULL 会导致问题，左侧表达式中的 NULL 同样会产生 UNKNOWN 结果。这意味着 `IN` 和 `NOT IN` 并非互补——一个行可以同时不满足 `IN` 和 `NOT IN` 条件。这是三值逻辑中"NULL 间隙"的体现，也是为什么 `NOT EXISTS` 通常更安全的原因。
-
-**性能与正确性的权衡**：`NOT IN` 在历史上比 `NOT EXISTS` 有更好的查询计划优化，但 PostgreSQL 近年来已经改进了 `NOT EXISTS` 的优化。在现代 PostgreSQL 中，两者性能差异已经很小，正确性应该优先于微小的性能差异。
-
-**防御性编程的工程实践**：在生产代码中，应该将 `NOT IN` 视为"需要审查"的模式。最佳实践是：(1) 永远使用 `WHERE id IS NOT NULL` 过滤子查询结果，或 (2) 直接使用 `NOT EXISTS`/`EXCEPT` 替代。这类陷阱在代码审查中容易被遗漏，建议通过 linter 规则自动检测。
-
-## 实践启示
-
-1. **优先使用 NOT EXISTS 替代 NOT IN**：`NOT EXISTS` 对 NULL 具有天然的鲁棒性，语义更清晰，且现代 PostgreSQL 的性能已经优化到与 `NOT IN` 相当。
-2. **子查询必须过滤 NULL**：如果必须使用 `NOT IN`，务必在子查询中添加 `WHERE id IS NOT NULL`，这是防御性编程的基本要求。
-3. **代码审查时重点关注 NOT IN**：将 `NOT IN` 模式加入代码审查 checklist，确保审查者检查子查询是否可能返回 NULL。
-4. **理解 EXPLAIN 输出**：学会阅读 PostgreSQL EXPLAIN 中的 `= ANY` 和 `<> ALL` 节点，这有助于理解查询的实际执行逻辑。
-5. **三值逻辑的系统性影响**：NULL 的三值行为不仅影响 `NOT IN`，还影响 `NOT EXISTS`、`EXCEPT`、`GROUP BY`、`DISTINCT` 等多个 SQL 操作。理解这一底层逻辑是成为高级 SQL 用户的必经之路。
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch14.028 DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
-
-> 📊 Level ⭐⭐ | 5.8KB | `entities/dataworks-copilot-skill-data-request-24h-delivery-taobao-2026-07-20.md`
+> 📊 Level ⭐⭐ | 6.2KB | `entities/dataworks-copilot-skill-data-request-24h-delivery-taobao-2026-07-20.md`
 
 # DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
 
@@ -3124,7 +3089,127 @@ specs/yyyymmdd_{任务名}/
 
 ---
 
-## Ch14.029 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
+## Ch14.031 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
+
+> 📊 Level ⭐⭐ | 6.0KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
+
+## 核心要点
+- AWS 技术实践
+- Amazon Redshift 推出带有集成数据湖查询引擎的
+## 相关实体
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](https://github.com/QianJinGuo/wiki/blob/main/entities/how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
+- [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-claude-platform-on-aws.md)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)
+- [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)
+
+## 深度分析
+### 架构定位：Graviton 驱动的性价比跃升
+RG 实例是 Amazon Redshift 首次在数据仓库产品线中大规模采用 AWS Graviton 定制处理器。这一选择的底层逻辑与 AWS 近年来推动 Graviton 替代 Intel/AMD 实例的战略一脉相承——Graviton 基于 ARM 指令集，在并行批处理和内存密集型负载上实现了显著能耗比优势。官方标称数据仓库工作负载速度最高可达 RA3 实例的 2.2 倍，同时每个 vCPU 价格降低 30%，这一数字在性价比敏感的 analytical 场景中具有实际采购意义。
+
+### 集成数据湖查询引擎：Spectrum 的终点
+此次发布的另一个核心亮点是集成的数据湖查询引擎。在 RG 之前，Redshift 查询 S3 数据湖需要通过 Amazon Redshift Spectrum——一个独立的外部查询层，存在每 TB 扫描 5 美元的成本且查询延迟较高。现在 Redshift 在集群节点上直接执行数据湖查询，与数据仓库工作负载共用同一计算层。这一架构整合带来几个直接效果：无需重建外部表或修改应用代码，查询语法完全兼容现有 Spectrum 语法，且每 TB 扫描费用归零。对于同时运行数据仓库表和 Iceberg/Parquet 数据湖资产的混合工作负载，这是一个从"双引擎"到"单引擎"的架构简化。性能层面，对 Iceberg 格式可达 RA3 的 2.4 倍，对 Parquet 格式可达 1.5 倍。
+
+### 实例映射与迁移路径
+官方提供了从 RA3 到 RG 的明确映射关系：
+| 当前 RA3 实例 | 推荐的 RG 实例 | vCPU 变化 | 内存变化 |
+|---|---|---|---|
+| `ra3.xlplus` | `rg.xlarge` | — | — |
+| `ra3.4xlarge` | `rg.4xlarge` | 12 → 16（1.33:1） | 96 GB → 128 GB（1.33:1） |
+迁移路径支持两种模式：弹性调整大小（原地迁移，10-15 分钟停机）和快照恢复（从 RA3 快照创建 RG 集群）。这种设计降低了从既有 RA3 集群迁移的机会成本。
+
+### 代理式 AI 工作负载的针对性优化
+文章特别提及人工智能代理驱动的查询规模将远超人类典型用量，导致运营成本螺旋上升。RG 实例在 2026 年 3 月已将新查询速度提升最多 7 倍，结合本次发布的 Graviton 性价比优势，直接回应了这一痛点。近实时分析应用、BI 控制面板、ETL 管线、自主 AI 代理都被明确列为目标场景。
+
+## 实践启示
+### 对于已有 RA3 部署的用户
+如果当前运行的是 `ra3.4xlarge` 及以上规格，迁移到同等映射的 RG 实例在性价比上有明确收益。建议使用 AWS 定价计算器估算具体节省金额，并验证查询性能基准。迁移过程中的兼容性风险较低，因为外部表和查询语法无需变更。
+
+### 对于混合仓库+数据湖架构
+原来依赖 Spectrum 进行 S3 数据湖查询的场景，应优先考虑迁移到 RG 以消除每 TB 5 美元的 Spectrum 扫描费用并降低延迟。Iceberg 格式支持是这个集成引擎的差异化优势，对已有 Iceberg 数据湖资产的团队尤其值得关注。
+
+### 对于 AI 代理驱动的工作负载
+在评估 AI 代理对 Redshift 的查询频率和成本影响时，RG 实例的性价比改善提供了一个更具成本效益的基础设施选项。结合 2026 年 3 月的 7 倍查询加速，整体代理式 AI 工作负载的持有成本有望显著下降。
+
+### 区域就绪性
+RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中东和南美主要区域。中国区（北京和宁夏）尚未出现在首发列表中，有国内 AWS 需求的团队需关注后续区域扩展。
+
+---
+
+## Ch14.032 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
+
+> 📊 Level ⭐⭐ | 5.9KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
+
+# SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
+
+深入剖析 SQL 中 `NOT IN` 子查询包含 NULL 值时返回空结果集的经典陷阱。从 SQL 标准的三值逻辑定义出发，经 De Morgan 定律推导，到 PostgreSQL 解析器的实际行为。
+
+## 核心问题
+
+```sql
+SELECT * FROM A WHERE id NOT IN (SELECT id FROM B);
+-- 当 B.id 包含 NULL 时，结果为空！
+```
+
+## 为什么？
+
+SQL 的三值逻辑：任何与 NULL 的比较返回 UNKNOWN（不是 TRUE 也不是 FALSE）。
+
+`NOT IN` 等价于 `id != b1 AND id != b2 AND ... AND id != bn`。当某个 `bn` 是 NULL 时，`id != NULL` 返回 UNKNOWN。整个 AND 链中只要有一个 UNKNOWN，结果就是 UNKNOWN → 行被过滤。
+
+## De Morgan 视角
+
+`NOT IN` = `NOT (id = b1 OR id = b2 OR ... OR id = bn)`
+
+如果任何一个 `bn` 是 NULL，内层 OR 的结果可能是 TRUE 或 UNKNOWN（取决于是否有其他匹配）。NOT UNKNOWN = UNKNOWN → 行被排除。
+
+## 正确写法
+
+```sql
+-- 方案1：排除 NULL
+SELECT * FROM A WHERE id NOT IN (SELECT id FROM B WHERE id IS NOT NULL);
+
+-- 方案2：用 NOT EXISTS
+SELECT * FROM A a WHERE NOT EXISTS (SELECT 1 FROM B b WHERE b.id = a.id);
+
+-- 方案3：用 EXCEPT
+SELECT id FROM A EXCEPT SELECT id FROM B;
+```
+
+## 实践价值
+
+这是每个 SQL 用户都会踩的坑，文章的解释从理论到实践层层递进，是该主题的最佳技术文档之一。
+
+## 深度分析
+
+**三值逻辑的隐蔽陷阱**：SQL 的三值逻辑（TRUE/FALSE/UNKNOWN）是 `NOT IN` 陷阱的根本原因。与其他编程语言不同，SQL 中 `NULL = NULL` 返回 UNKNOWN 而非 TRUE，这意味着 NULL 不等于任何值，包括它自身。当 `NOT IN` 的右侧子查询包含 NULL 时，整个表达式退化为 `x <> a AND x <> b AND ... AND UNKNOWN`，AND 链中只要有一个 UNKNOWN，结果就是 UNKNOWN，导致所有行被过滤。
+
+**解析器层面的实现细节**：PostgreSQL 的 `transformAExprIn` 函数中，`IN` 和 `NOT IN` 的区别仅在于一个 `useOr` 标志——`IN` 生成 `OR_EXPR`（`= ANY`），`NOT IN` 生成 `AND_EXPR`（`<> ALL`）。这个设计使得 NULL 的三值行为成为"涌现属性"而非显式特殊处理。从 EXPLAIN 输出可以直接验证：`NOT (1,2,3)` 编译为 `<> ALL ('{1,2,3}'::integer[])`，子查询形式则使用 `SubLink` 节点。
+
+**左右两侧 NULL 的对称问题**：不仅右侧子查询的 NULL 会导致问题，左侧表达式中的 NULL 同样会产生 UNKNOWN 结果。这意味着 `IN` 和 `NOT IN` 并非互补——一个行可以同时不满足 `IN` 和 `NOT IN` 条件。这是三值逻辑中"NULL 间隙"的体现，也是为什么 `NOT EXISTS` 通常更安全的原因。
+
+**性能与正确性的权衡**：`NOT IN` 在历史上比 `NOT EXISTS` 有更好的查询计划优化，但 PostgreSQL 近年来已经改进了 `NOT EXISTS` 的优化。在现代 PostgreSQL 中，两者性能差异已经很小，正确性应该优先于微小的性能差异。
+
+**防御性编程的工程实践**：在生产代码中，应该将 `NOT IN` 视为"需要审查"的模式。最佳实践是：(1) 永远使用 `WHERE id IS NOT NULL` 过滤子查询结果，或 (2) 直接使用 `NOT EXISTS`/`EXCEPT` 替代。这类陷阱在代码审查中容易被遗漏，建议通过 linter 规则自动检测。
+
+## 实践启示
+
+1. **优先使用 NOT EXISTS 替代 NOT IN**：`NOT EXISTS` 对 NULL 具有天然的鲁棒性，语义更清晰，且现代 PostgreSQL 的性能已经优化到与 `NOT IN` 相当。
+2. **子查询必须过滤 NULL**：如果必须使用 `NOT IN`，务必在子查询中添加 `WHERE id IS NOT NULL`，这是防御性编程的基本要求。
+3. **代码审查时重点关注 NOT IN**：将 `NOT IN` 模式加入代码审查 checklist，确保审查者检查子查询是否可能返回 NULL。
+4. **理解 EXPLAIN 输出**：学会阅读 PostgreSQL EXPLAIN 中的 `= ANY` 和 `<> ALL` 节点，这有助于理解查询的实际执行逻辑。
+5. **三值逻辑的系统性影响**：NULL 的三值行为不仅影响 `NOT IN`，还影响 `NOT EXISTS`、`EXCEPT`、`GROUP BY`、`DISTINCT` 等多个 SQL 操作。理解这一底层逻辑是成为高级 SQL 用户的必经之路。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch14.033 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
 
@@ -3239,62 +3324,61 @@ specs/yyyymmdd_{任务名}/
 
 ---
 
-## Ch14.030 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
+## Ch14.034 DataComp for Language Models
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
+> 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
 
-# Turning Scattered Data Into Queryable Segments at Scale: How Razorpay Built Its Customer Data…
+→ （无原始来源）
 
-> Source: [Turning Scattered Data Into Queryable Segments at Scale: How Razorpay Built Its Customer Data…](https://engineering.razorpay.com/turning-scattered-data-into-queryable-segments-at-scale-how-razorpay-built-its-customer-data-3937c4b012de) | Score: v*c=56
+## 核心内容
+### 数据质量基准
+DataComp 提供标准化的数据质量评估基准：
 
-## Overview
+- 文本质量评分体系（流畅度、信息量、原创性）
+- 去重指标（精确匹配、模糊匹配、语义相似度）
+- 毒性过滤与安全类别划分
+- 领域覆盖度与多样性测量 
 
-Published Time: 2026-06-26T08:06:32Z
+### 过滤策略对比
+DataComp 系统性地对比了多种数据过滤策略：
+| 策略 | 适用场景 | 效果 |
+|------|----------|------|
+| 启发式规则 | 快速清洗 | 中等效果，召回率高 |
+| 分类器过滤 | 精细筛选 | 依赖标注质量 |
+| 嵌入聚类 | 多样性保持 | 平衡质量与覆盖 |
+| LLM 裁判 | 高质量目标 | 成本较高 |
 
-Markdown Content:
-[![Image 1: Varun Meka](https://miro.medium.com/v2/resize:fill:32:32/1*msjyi7X8P8DOChFwnLC9Aw@2x.jpeg)](https://varun1010.medium.com/?source=post_page---byline--3937c4b012de---------------------------------------)
+### 开源工具链
+DataComp 配套开源数据处理工具：
 
-11 min read
+- 数据采样与配比工具
+- 质量评估脚本
+- 训练效果对比框架
 
-3 days ago
+## 深度分析
+1. **DataComp 的核心贡献是将"数据质量"从玄学变为可量化指标**。过去 LLM 训练数据的质量评估高度依赖人工直觉和事后效果反推，缺乏系统性的事前测量框架。DataComp 引入的多维度评分体系（流畅度、信息量、去重率、毒性）使得数据选择决策可以从经验驱动转向指标驱动。这是 AI 工程化走向成熟的重要标志。
+2. **嵌入聚类策略揭示了数据多样性对模型泛化能力的深层影响**。DataComp 的实验表明，基于语义嵌入的聚类去重相比简单字符串匹配，在保持数据多样性的同时去除冗余，能显著提升模型在分布外（OOD）测试集上的表现。这验证了信息论视角：重复样本带来的梯度更新收益递减，而多样化样本提供更强的泛化信号。
+3. **LLM 裁判策略的成本-效益权衡尚未解决**。DataComp 发现用 GPT-4/Claude 作为数据质量裁判可以显著提升筛选精度，但调用成本使得该策略难以扩展到十亿级网页语料。低成本替代方案（如 DistilBERT 分类器）的精度损失仍不可忽视。这一问题为专用数据质量小模型提供了研究机会。
+4. **数据配比（data ratio）比数据量更重要**。DataComp 的一组关键发现是：在固定计算预算下，精心筛选的 10B tokens 训练数据可以媲美甚至超过粗筛的 100B tokens。这意味着未来 LLM 训练的竞争将从"数据量"转向"数据工程深度"——包括清洗、过滤、配比和课程学习策略。
 
---
-
---
-
-_A consent-native CDP that serves audience segments across 500M+ user profiles in under 30ms, with PII isolated to the source systems._
-
-Press enter or click to view image in full size
-
-![Image 2](https://miro.medium.com/v2/resize:fit:700/1*LOAyanf4lVSDum5COfJAJA.png)
-
-## The Problem We Were Solving
-
-A customer opens her favourite online shopping app, adds a few items to her cart, and pays ₹1,200 via UPI, powered invisibly by Razorpay. A week later she returns and pays using a saved Visa card from her laptop. Later that month, she places a larger ₹8,500 order through net banking from work.
-
-Three transactions. Three different payment instruments. Three different devices. To the merchant’s engineering team, and to Razorpay’s data systems, these could look like three completely different people, unless you’ve done the hard work of figuring out they’re all the same customer.
-
-Now suppose this is a D2C fashion brand approaching their Diwali sale. The merchant’s growth team has a clear plan: _“Identify customers who have transacted at least once in the last 30 days, have spent more than ₹5,000 cumulatively this quarter, and haven’t enrolled in our loyalty programme. Send them an early-access nudge with a personalized discount 48 hours before the public sale opens.”_
-
-A year ago, answering that question at Razorpay meant filing a cross-team data request, waiting for an analyst to write a custom Spark job, and getting an answer in 2–3 days. By the time the merchant had the segment, the Diwali sale was already live. The early-access window had closed. The campaign got sent to a broader, less-targeted audience, wasting spend on customers who would have bought anyway and leaving cold customers untouched.
-
-Now multiply that pain by millions of merchants. Razorpay powers payments and growth for over 12 million merchants. From D2C fashion brands and SaaS startups to subscription platforms, ed-tech companies, and the 2 million+ local merchants accepting QR payments every day. Together, they process billions of transactions. Every one of those merchants is, in their own way, trying to grow. Running a sale, recovering an abandoned cart, nudging a churning customer, and identifying their next 1,000 high-value buyers.
-
-We knew this was a fundamental capability gap that needed structural solving. That’s what drove us to build the Customer Data Platform (CDP), an in-house platform that sits at the heart of Razorpay’s data-driven product decisions.
-
-DPDPA also reshaped what the platform had to be. India’s Digital Personal Data Protection Act introduced strict requirements around consent-scoped data processing, purpose-specific access, and the ability to honor user con
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/turning-scattered-data-into-queryable-segments-at-scale-how.md)
+## 实践启示
+1. **建立内部数据质量评估流程时，优先采用多维度评分而非单一指标**。DataComp 框架表明，文本质量+去重率+毒性三分开评估比综合分数更有诊断价值——可以精准定位数据管道的具体瓶颈。建议至少追踪流畅度（perplexity）、N-gram 去重率和安全分类三个独立指标。
+2. **在数据清洗早期阶段使用轻量级过滤，后期用高质量样本微调**。具体而言：第一轮用 FastText 分类器做粗筛（召回率优先），第二轮用 LLM 裁判对候选高质量样本做精选（精度优先），第三轮用人工抽检验证。这一pipeline在 DataComp 评估中表现最优，且成本可控。
+3. **在训练数据配比实验中，记录 domain shift 的敏感度**。DataComp 建议用小规模实验确定最佳 domain 配比（如 web text / academic / code / conversation 的比例），然后按比例放大。盲目复制其他模型的配比可能效果不佳，因为不同模型的预训练目标差异导致对各 domain 的利用效率不同。
+4. **对于垂直领域模型，数据来源的领域纯净度比总量更重要**。DataComp 的嵌入聚类分析表明，从目标领域高质量源（如医疗文献、法律判决）采样 1B tokens，远优于从通用网页采样 100B tokens 中检索出的相关片段。前者的领域信号密度更高，混入的噪声更少。
+## 相关实体
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](https://github.com/QianJinGuo/wiki/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
+- [Eva Bench Data 2 Voice Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/eva-bench-data-2-voice-agent.md)
+- [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
+- [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
+- [Reinforcing Recursive Language Models Alphaxiv](https://github.com/QianJinGuo/wiki/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
----
+## Ch14.035 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
 
-## Ch14.031 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
-
-> 📊 Level ⭐⭐ | 5.0KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
+> 📊 Level ⭐⭐ | 4.9KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
 
 # Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
 
@@ -3347,59 +3431,60 @@ So I ran some backlog drain tests to unders
 
 ---
 
-## Ch14.032 DataComp for Language Models
+## Ch14.036 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
 
-> 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
+> 📊 Level ⭐⭐ | 4.9KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
 
-→ （无原始来源）
+# Turning Scattered Data Into Queryable Segments at Scale: How Razorpay Built Its Customer Data…
 
-## 核心内容
-### 数据质量基准
-DataComp 提供标准化的数据质量评估基准：
+> Source: [Turning Scattered Data Into Queryable Segments at Scale: How Razorpay Built Its Customer Data…](https://engineering.razorpay.com/turning-scattered-data-into-queryable-segments-at-scale-how-razorpay-built-its-customer-data-3937c4b012de) | Score: v*c=56
 
-- 文本质量评分体系（流畅度、信息量、原创性）
-- 去重指标（精确匹配、模糊匹配、语义相似度）
-- 毒性过滤与安全类别划分
-- 领域覆盖度与多样性测量 
+## Overview
 
-### 过滤策略对比
-DataComp 系统性地对比了多种数据过滤策略：
-| 策略 | 适用场景 | 效果 |
-|------|----------|------|
-| 启发式规则 | 快速清洗 | 中等效果，召回率高 |
-| 分类器过滤 | 精细筛选 | 依赖标注质量 |
-| 嵌入聚类 | 多样性保持 | 平衡质量与覆盖 |
-| LLM 裁判 | 高质量目标 | 成本较高 |
+Published Time: 2026-06-26T08:06:32Z
 
-### 开源工具链
-DataComp 配套开源数据处理工具：
+Markdown Content:
+[![Image 1: Varun Meka](https://miro.medium.com/v2/resize:fill:32:32/1*msjyi7X8P8DOChFwnLC9Aw@2x.jpeg)](https://varun1010.medium.com/?source=post_page---byline--3937c4b012de---------------------------------------)
 
-- 数据采样与配比工具
-- 质量评估脚本
-- 训练效果对比框架
+11 min read
 
-## 深度分析
-1. **DataComp 的核心贡献是将"数据质量"从玄学变为可量化指标**。过去 LLM 训练数据的质量评估高度依赖人工直觉和事后效果反推，缺乏系统性的事前测量框架。DataComp 引入的多维度评分体系（流畅度、信息量、去重率、毒性）使得数据选择决策可以从经验驱动转向指标驱动。这是 AI 工程化走向成熟的重要标志。
-2. **嵌入聚类策略揭示了数据多样性对模型泛化能力的深层影响**。DataComp 的实验表明，基于语义嵌入的聚类去重相比简单字符串匹配，在保持数据多样性的同时去除冗余，能显著提升模型在分布外（OOD）测试集上的表现。这验证了信息论视角：重复样本带来的梯度更新收益递减，而多样化样本提供更强的泛化信号。
-3. **LLM 裁判策略的成本-效益权衡尚未解决**。DataComp 发现用 GPT-4/Claude 作为数据质量裁判可以显著提升筛选精度，但调用成本使得该策略难以扩展到十亿级网页语料。低成本替代方案（如 DistilBERT 分类器）的精度损失仍不可忽视。这一问题为专用数据质量小模型提供了研究机会。
-4. **数据配比（data ratio）比数据量更重要**。DataComp 的一组关键发现是：在固定计算预算下，精心筛选的 10B tokens 训练数据可以媲美甚至超过粗筛的 100B tokens。这意味着未来 LLM 训练的竞争将从"数据量"转向"数据工程深度"——包括清洗、过滤、配比和课程学习策略。
+3 days ago
 
-## 实践启示
-1. **建立内部数据质量评估流程时，优先采用多维度评分而非单一指标**。DataComp 框架表明，文本质量+去重率+毒性三分开评估比综合分数更有诊断价值——可以精准定位数据管道的具体瓶颈。建议至少追踪流畅度（perplexity）、N-gram 去重率和安全分类三个独立指标。
-2. **在数据清洗早期阶段使用轻量级过滤，后期用高质量样本微调**。具体而言：第一轮用 FastText 分类器做粗筛（召回率优先），第二轮用 LLM 裁判对候选高质量样本做精选（精度优先），第三轮用人工抽检验证。这一pipeline在 DataComp 评估中表现最优，且成本可控。
-3. **在训练数据配比实验中，记录 domain shift 的敏感度**。DataComp 建议用小规模实验确定最佳 domain 配比（如 web text / academic / code / conversation 的比例），然后按比例放大。盲目复制其他模型的配比可能效果不佳，因为不同模型的预训练目标差异导致对各 domain 的利用效率不同。
-4. **对于垂直领域模型，数据来源的领域纯净度比总量更重要**。DataComp 的嵌入聚类分析表明，从目标领域高质量源（如医疗文献、法律判决）采样 1B tokens，远优于从通用网页采样 100B tokens 中检索出的相关片段。前者的领域信号密度更高，混入的噪声更少。
-## 相关实体
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](https://github.com/QianJinGuo/wiki/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
-- [Eva Bench Data 2 Voice Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/eva-bench-data-2-voice-agent.md)
-- [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
-- [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
-- [Reinforcing Recursive Language Models Alphaxiv](https://github.com/QianJinGuo/wiki/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+--
+
+--
+
+_A consent-native CDP that serves audience segments across 500M+ user profiles in under 30ms, with PII isolated to the source systems._
+
+Press enter or click to view image in full size
+
+![Image 2](https://miro.medium.com/v2/resize:fit:700/1*LOAyanf4lVSDum5COfJAJA.png)
+
+## The Problem We Were Solving
+
+A customer opens her favourite online shopping app, adds a few items to her cart, and pays ₹1,200 via UPI, powered invisibly by Razorpay. A week later she returns and pays using a saved Visa card from her laptop. Later that month, she places a larger ₹8,500 order through net banking from work.
+
+Three transactions. Three different payment instruments. Three different devices. To the merchant’s engineering team, and to Razorpay’s data systems, these could look like three completely different people, unless you’ve done the hard work of figuring out they’re all the same customer.
+
+Now suppose this is a D2C fashion brand approaching their Diwali sale. The merchant’s growth team has a clear plan: _“Identify customers who have transacted at least once in the last 30 days, have spent more than ₹5,000 cumulatively this quarter, and haven’t enrolled in our loyalty programme. Send them an early-access nudge with a personalized discount 48 hours before the public sale opens.”_
+
+A year ago, answering that question at Razorpay meant filing a cross-team data request, waiting for an analyst to write a custom Spark job, and getting an answer in 2–3 days. By the time the merchant had the segment, the Diwali sale was already live. The early-access window had closed. The campaign got sent to a broader, less-targeted audience, wasting spend on customers who would have bought anyway and leaving cold customers untouched.
+
+Now multiply that pain by millions of merchants. Razorpay powers payments and growth for over 12 million merchants. From D2C fashion brands and SaaS startups to subscription platforms, ed-tech companies, and the 2 million+ local merchants accepting QR payments every day. Together, they process billions of transactions. Every one of those merchants is, in their own way, trying to grow. Running a sale, recovering an abandoned cart, nudging a churning customer, and identifying their next 1,000 high-value buyers.
+
+We knew this was a fundamental capability gap that needed structural solving. That’s what drove us to build the Customer Data Platform (CDP), an in-house platform that sits at the heart of Razorpay’s data-driven product decisions.
+
+DPDPA also reshaped what the platform had to be. India’s Digital Personal Data Protection Act introduced strict requirements around consent-scoped data processing, purpose-specific access, and the ability to honor user con
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/turning-scattered-data-into-queryable-segments-at-scale-how.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
-## Ch14.033 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
+## Ch14.037 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
@@ -3433,7 +3518,7 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 
 ---
 
-## Ch14.034 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
+## Ch14.038 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/databend-open-source-lakehouse-ai-agent.md`
 
@@ -3510,7 +3595,7 @@ Databend Cloud on AWS 架构:
 
 ---
 
-## Ch14.035 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
+## Ch14.039 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
 
@@ -3564,7 +3649,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ---
 
-## Ch14.036 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+## Ch14.040 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
@@ -3598,7 +3683,7 @@ Software is changing the world. QCon San Francisco empowers software development
 
 ---
 
-## Ch14.037 The Data Operating System for the Foundation Model Era — Data Juicer
+## Ch14.041 The Data Operating System for the Foundation Model Era — Data Juicer
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
@@ -3630,7 +3715,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ---
 
-## Ch14.038 Amazon Quick integration with time-series databases for market intelligence using MCP
+## Ch14.042 Amazon Quick integration with time-series databases for market intelligence using MCP
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
@@ -3686,7 +3771,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 ---
 
-## Ch14.039 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
+## Ch14.043 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
 > 📊 Level ⭐⭐⭐ | 14.5KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
 
@@ -3823,9 +3908,9 @@ AIDLC 转型对团队能力的要求发生根本变化：
 
 ---
 
-## Ch14.040 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
+## Ch14.044 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
 
-> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/shotstream-streaming-multi-shot-video-cuhk-kling-eccv2026.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/shotstream-streaming-multi-shot-video-cuhk-kling-eccv2026.md`
 
 # ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
 
@@ -3846,6 +3931,7 @@ ShotStream 打破了传统双向架构的限制，将多镜头合成定义为基
 传统多镜头视频生成采用"一次性投喂"模式：用户编写完整剧本，将全部分镜提示词一次输入，等待数十分钟后收获结果。一旦某个镜头效果不佳，整个生成过程必须从头开始——缺乏交互性且延迟极高。
 
 ShotStream 的核心洞察在于：**视频叙事本质上是序列决策过程**，而非一次性组合优化。将多镜头生成解耦为逐镜头生成任务，每个新镜头仅依赖历史上下文，使系统获得了两个关键能力：
+
 1. **实时交互**：用户可以在生成过程中根据已产出的镜头动态调整后续方向
 2. **逐步纠错**：某个镜头效果不理想时，只需修正当前及后续镜头，无需推倒重来
 
@@ -3858,6 +3944,7 @@ ShotStream 的核心洞察在于：**视频叙事本质上是序列决策过程*
 ### 与现有视频生成框架的关系
 
 ShotStream 与 `Joyai Echo Long Video Framework Jd` 和 `Pixelle Video Aidc Ali International 2026` 共同构成了 2026 年视频生成框架的三条技术路线：
+
 - **ShotStream**：强调流式交互和叙事控制，面向创作者实时导演场景
 - **JoyAI-Echo**：聚焦长视频一致性和音频同步，面向内容生产链路
 - **Pixelle-Video**：侧重全自动视频生成 pipeline 装配，面向批量化生产

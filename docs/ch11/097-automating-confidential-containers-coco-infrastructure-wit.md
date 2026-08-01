@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/automating-confidential-containers-coco-infrastructure-with-kyverno.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Automating Confidential Cont…"))
+    CoCo 工作负载的必备配置
+    实际部署挑战
+    Kyverno 解决方案
+      信任悖论：Kyverno 处于不可信控制平面
+    团队职责划分
+    部署与证明流程
+    相关实体
+    深度分析
+      1. 零信任安全模型的工程化代价
+      2. Policy as Code 的双重角色
+      3. 三团队分工模型的现实意义
+      4. 条件密钥分发（Conditional S…
+    实践启示
+      1. 优先建立策略库，再推广到应用团队
+      2. 将 initdata 配置的所有权明确归…
+      3. 利用 validate 策略做 admi…
+      4. 为应用团队提供 CoCo 声明式接口
+```
+
 ## CoCo 工作负载的必备配置
 在 CoCo 环境中运行的 Pod 通常需要在清单中注入以下元素：
 | 组件 | 必要性 | 作用 |

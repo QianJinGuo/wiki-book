@@ -41,6 +41,17 @@ Manager 镜像不再打包 Higress、Tuwunel、MinIO 和 Element Web。基础设
 从 v1.0.9 升级时，会自动将  workers-registry.json  数据迁移为 CRD 资源。Worker 的运行时、模型、技能、MCP Server 和团队成员关系全部
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("HiClaw 发布 v1.1.0，提供 Kubernet…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ```mermaid

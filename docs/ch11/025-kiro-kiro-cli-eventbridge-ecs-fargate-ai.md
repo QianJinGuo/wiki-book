@@ -10,6 +10,26 @@
 
 > **Core insight**: Kiro Job Scheduler 通过 EventBridge Scheduler 触发 Lambda 编排器，由 ECS Fargate 容器执行 Kiro CLI 非交互式任务，实现 AI 助手的 7×24 小时无人值守运行。核心创新在于将 Kiro 的 Steering 文件定义的 Agent 角色、MCP Server 工具扩展和 Skills 知识包组合成标准化 JSON 配置，通过容器化执行实现可复用的 AI 自动化工作流。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("构建无服务器Kiro调度平台：用Kiro CLI + E…"))
+    背景：从交互式到自动化
+    三层无服务器架构
+    核心能力：自定义 Agent + MCP Se…
+    Kiro CLI 非交互模式执行机制
+    安全设计
+    成本分析
+    关键数据/实践启示
+    深度分析
+      架构分层解耦的无服务器设计哲学
+      MCP 协议：AI Agent 工具扩展的标准接口
+      无服务器成本模型对 AI 任务的适配性
+      从交互式工具到 Autonomous Agen…
+```
+
 ## 背景：从交互式到自动化
 
 Kiro 是 AWS 推出的 AI 编程助手，提供 IDE 和 CLI 两种形态。它在大模型之上构建了一套高度可扩展的 Agent 框架：通过 Steering 文件定义 Agent 的角色与行为准则，通过 Skills 注入领域知识，通过 MCP（Model Context Protocol）Server 接入外部工具。实际工作中，许多 AI 任务具有重复性和定时性特征——每日新闻摘要、定期代码审计、竞品动态监控、基础设施合规检查——这类需求催生了将 Kiro 能力从本地终端延伸到无人值守运行环境的需求。

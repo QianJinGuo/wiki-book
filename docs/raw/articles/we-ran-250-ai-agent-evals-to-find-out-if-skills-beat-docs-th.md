@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 0f2ff97bd1fd688dac0f73c5b034206723e0227b974f30dd3693e31a4415ab10
+source_url: "https://www.wix.engineering/post/we-ran-250-ai-agent-evals-to-find-out-if-skills-beat-docs-the-answer-is-more-complicated-than-we-ex"
 ---
 
 sha256: 4907bd08b017b2ad7b197ae918d2595d6c1f4d2e114aa44fa090494e0cb4b286

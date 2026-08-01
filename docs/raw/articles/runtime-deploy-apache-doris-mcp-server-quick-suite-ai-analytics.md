@@ -5,6 +5,7 @@ url: https://aws.amazon.com/cn/blogs/china/runtime-deploy-apache-doris-mcp-serve
 source: rss
 feed_name: AWS China Blog
 sha256: 6b0b984a241b89c4c3e68d88d70163d440bdc8f9a0d35bee23c7b05a32ffdceb
+source_url: "https://github.com/lijingfz/doris-mcp-agentcore"
 ---
 基于 Amazon Bedrock AgentCore Runtime 部署 Apache Doris MCP Server为 Quick Suite 等 AI 客户端提供原生数据分析能力 | 亚马逊AWS官方博客
 Skip to Main Content

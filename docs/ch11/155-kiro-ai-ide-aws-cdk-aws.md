@@ -5,6 +5,28 @@
 > 📊 Level ⭐⭐ | 7.6KB | `entities/blog-03-kiro-ai-cdk-development.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用 Kiro AI IDE 开发 AWS CDK 部署…"))
+    概念导图
+    概述
+    核心技术
+    来源
+    深度分析
+      Kiro AI IDE 的核心能力
+      三层堆栈架构的演进逻辑
+      关键技术决策点
+    实践启示
+      1. 效率提升的关键路径
+      2. Spec 驱动开发的实施步骤
+      3. 常见问题处理
+      4. 人机协作最佳实践
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

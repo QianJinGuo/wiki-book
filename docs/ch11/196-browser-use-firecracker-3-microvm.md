@@ -8,6 +8,20 @@
 
 browser-use 团队通过 Firecracker microVM 在 EC2 上运行云端浏览器隔离，将成本从 $0.06/hr 降至 $0.02/hr，冷启动时间 <400ms。这是 Agent 浏览器自动化基础设施的工程实践案例。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Browser Use Firecracker：云端浏览…"))
+    核心架构决策
+    成本对比
+    工程洞察
+    深度分析
+    实践启示
+    与现有实体差异化
+```
+
 ## 核心架构决策
 
 从传统容器方案迁移到 Firecracker unikernel 的关键原因：

@@ -4,6 +4,22 @@
 
 > 📊 Level ⭐⭐ | 24.0KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-re.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Announcing AWS CDK Mixins: C…"))
+    背景
+    什么是 CDK Mixins？
+    Mixins 和 Aspects
+    使用 CDK Mixins
+    创建自定义 Mixins
+    Mixin 行为控制
+    ECS ClusterSettings Mixin
+    S3 Mixins: PublicAccess…
+```
+
 ## 背景
 AWS 云开发套件（AWS Cloud Development Kit，CDK）是一个开源软件开发框架，用于以代码方式定义云基础设施，并通过 AWS CloudFormation 进行配置。CDK 包含预构建、模块化且可重用的云组件，称为构造块（constructs）。构造块是代表一个或多个 AWS CloudFormation 资源及其配置的基本构建单元。 
 传统上，我们将 CDK 构造块组织为三个层级。L1 构造块直接映射到 CloudFormation 资源。L2 构造块提供更高级的抽象，包含便捷方法、安全默认配置和辅助函数。L3 构造块（也称为模式）组合多个资源以解决特定用例。然而，这种架构造成了一个根本性的权衡：你必须在即时访问新 AWS 功能（L1）和复杂抽象（L2/L3）之间做出选择。团队通常需要自定义 L2 构造块，重新构建整个构造块库以满足其特定需求。 

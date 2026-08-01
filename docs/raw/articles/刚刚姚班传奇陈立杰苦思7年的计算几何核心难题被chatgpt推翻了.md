@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 0df9d644968ab3e6a8a07a5a64b565c1ec4d463a78ee8ff86fa151f8a4f811fb
+source_url: "http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652709773&idx=2&sn=68bde762eb0070f5bd61518728971232&chksm=f12e577cc659de6ac3258fec78cc0d249adcacae64f0618e13bd71cceda2f528fe0932b29ffc#rd"
 ---
 
 # 刚刚，姚班传奇陈立杰苦思7年的计算几何核心难题，被ChatGPT推翻了

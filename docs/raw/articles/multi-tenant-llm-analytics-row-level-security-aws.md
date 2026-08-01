@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 65990d072a86d3ff26bdf4b5ad0bb4c2ec6bca13ebea850b4a062c3b20c885cb
+source_url: "https://aws.amazon.com/blogs/machine-learning/multi-tenant-llm-analytics-with-row-level-security-how-we-built-a-secure-agent-on-aws/"
 ---
 
 sha256: d563be2b62b768aed6df22493b0e90a22f66e396129c7680e6b71f6b06857a75

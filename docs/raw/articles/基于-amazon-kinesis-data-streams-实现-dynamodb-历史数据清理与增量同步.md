@@ -5,6 +5,7 @@ url: https://aws.amazon.com/cn/blogs/china/based-on-amazon-kinesis-data-streams-
 source: rss
 feed_name: AWS China Blog
 sha256: e7244f2bc03e124283777ac175b2d10d242c461b61a4824cf537bb2d83ab036e
+source_url: "unavailable"
 ---
 <div style="line-height: 1.6;font-size: 16px"> 
  <p style="background-color: #fafafa;padding: 20px;border-radius: 8px;margin-bottom: 30px;font-size: 16px;color: #5f6368">摘要：本文介绍了一种基于 Amazon Kinesis Data Streams、AWS Lambda、AWS Glue 和 Amazon S3 的完整方案，帮助企业客户在不停机的前提下，对 Amazon DynamoDB 表进行历史数据清理、TTL 自动过期配置，并通过 Kinesis 实现增量数据的无缝同步，最终将过期数据归档至 Amazon S3 智能分层存储以降低长期成本。</p> 

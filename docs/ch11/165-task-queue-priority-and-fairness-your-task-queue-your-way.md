@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/task-queue-priority-and-fairness-your-task-queue.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Task Queue Priority and Fair…"))
+    深度分析
+      从'自建调度'到'平台原生原语'
+      Priority 与 Fairness：两种互…
+      加权轮询与权重语义：Fairness 的工程实现
+      从多租户 SaaS 到 AI Agent 工作负载
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Temporal 于 2026 年 5 月宣布 Task Queue Priority 与 Fairness 两个特性全面可用（Generally Available），直接回应了用户规模增长后"单一 Task Queue 没有执行控制"的普遍痛点：此前团队不得不自建多套额外基础设施组件与自定义调度逻辑，才能获得基本的执行控制能力。Priority 控制哪些 Task 先被执行，Fairness 保证任何单个 Workflow、用户或租户都无法垄断 Worker 资源。两者组合让平台无需自定义基础设施，即可构建精细且公平的任务执行策略。

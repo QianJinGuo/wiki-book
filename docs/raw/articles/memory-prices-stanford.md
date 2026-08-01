@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 967d805555898b0cddd55a41e9b165bd671e758aa2ed7cd9cc71c9c0104622b8
+source_url: "https://dam.stanford.edu/memory-prices.html"
 ---
 
 sha256: 5314f4f101c46a5d08a63e58c8134df53e6317a753508100354e62d50a3d957b

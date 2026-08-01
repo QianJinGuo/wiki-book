@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/use-kiro-cli-as-agent-sdk-build-your-agent-app-with-one-click-subscription.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("把 Kiro CLI 当作 Agent SDK：一键订阅…"))
+    概述
+    核心技术
+    来源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 by awschina on 03 3月 2026 in Artificial Intelligence Permalink Share 摘要：Kiro CLI 的 ACP 支持为 Agent 应用开发提供了一条新路径：将命令行工具转变为可编程的 Agent 后端，通过标准化协议暴露完整能力。开发者可以跳过 AI 基础设施的前期投入，专注于应用本身的业务逻辑和用户体验。 目录 01 背景 02 核心思路：从调用 API 到对话 Agent 03 五步构建一个 ACP 应用 04 示例项目：KiroNotebook 05 总结 06 参考链接 1. 背景 你想给自己的应用加上 AI 能力。于是你开始调研：先要选一个模型提供商，注册账号，申请 API Key；然后比较各家 SDK，挑一个靠谱的装上；接着处理认证
 

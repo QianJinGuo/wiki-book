@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 66704bb62daef322bc28faaf14e4aff20b850f80686141e6fd1394465f6dcee5
+source_url: "unavailable"
 ---
 
 # 李飞飞署名具身新论文：Sim2Real烧不起，Real2Sim量大管饱

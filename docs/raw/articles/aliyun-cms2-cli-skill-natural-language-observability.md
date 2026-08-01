@@ -11,6 +11,7 @@ review_value: 8
 review_confidence: 9
 review_recommendation: strong
 review_stars: 4
+source_url: "unavailable"
 ---
 
 # 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入

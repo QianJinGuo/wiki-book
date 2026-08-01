@@ -11,6 +11,22 @@ The AWS Technical Field Communities (TFC) program supports hundreds of thousands
 While the data existed, it was often “trapped” behind rigid visualizations that couldn’t anticipate every nuance of a program leader’s needs. Furthermore, the presence of personally identifiable information (PII) meant that certain qualitative details, the very context that makes data actionable, remained restricted and difficult to surface safely.
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Quicksight Dataset QA Ta…"))
+    概念导图
+    深度分析
+      核心架构转变：从 Topics 到直接 Dat…
+      TARA 四层架构
+      核心性能指标
+      MCP 集成的战略意义
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

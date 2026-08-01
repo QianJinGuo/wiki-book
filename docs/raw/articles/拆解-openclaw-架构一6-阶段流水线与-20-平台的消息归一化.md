@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: a235af5461ed47e5f7e1c2b9d6dda0d0bc89dff7aa5ca33ff01a36efe9396dfc
+source_url: "https://mp.weixin.qq.com/s/MWB1iG1rZYpV5a4Ob1XWpg"
 ---
 
 # 拆解 OpenClaw 架构（一）：6 阶段流水线与 20+ 平台的消息归一化

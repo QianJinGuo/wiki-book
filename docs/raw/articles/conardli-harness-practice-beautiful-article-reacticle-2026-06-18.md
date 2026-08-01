@@ -17,6 +17,7 @@ series_parts:
   next: null
 related: "[raw/articles/harness-engineering-comprehensive-guide-conardli]"
 merge_target: "entities/harness-engineering-comprehensive-guide-conardli.md (第 2 来源)"
+source_url: "https://github.com/ConardLi/garden-skills"
 ---
 
 # Harness 实践：将任何文字编辑成精美的文章

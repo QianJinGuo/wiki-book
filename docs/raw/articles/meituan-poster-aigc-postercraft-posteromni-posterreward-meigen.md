@@ -11,6 +11,7 @@ review_value: 10
 review_confidence: 10
 review_recommendation: ultra-strong
 review_stars: 5
+source_url: "unavailable"
 ---
 
 # 美团海报生成 AIGC 技术创新与实践

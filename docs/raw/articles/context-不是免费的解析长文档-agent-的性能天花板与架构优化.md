@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 75c0711ba173aba5608a03393020b2358683a41b21671fd9fabbdbf702eb74cb
+source_url: "https://mp.weixin.qq.com/s/WrQ7LtUPuphZwRYngmyFuw"
 ---
 
 # Context 不是免费的：解析长文档 agent 的性能天花板与架构优化

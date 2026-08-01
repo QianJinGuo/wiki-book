@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: f1a8dacf88abc6abe7cde70d4abc7e5cabc31c61157efbdee6b88e5fa5a09189
+source_url: "http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652709592&idx=1&sn=67287b57a9e541025be9a34c4b272334&chksm=f12e5629c659df3fd18bb528ac44f471dd2c924090608caf0b5249b1a0eb0e3f7492c380e903#rd"
 ---
 
 # 英伟达年度「最危险」论文！AI自繁衍代码，无限刷级进化

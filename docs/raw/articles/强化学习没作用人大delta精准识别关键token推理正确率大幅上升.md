@@ -6,6 +6,7 @@ ingest_date: 2026-07-02
 vxc: 81
 stars: 5
 sha256: 92cc900bf11e26266d6658bded59546dd1a426a9888cc6d7d30fc6258470ff34
+source_url: "unavailable"
 ---
 
 # 强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升

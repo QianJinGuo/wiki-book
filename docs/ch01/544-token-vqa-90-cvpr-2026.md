@@ -2,7 +2,7 @@
 
 ## Ch01.544 只看图片就能学会压缩Token！浙大&阿里新框架多轮VQA压缩率90%，精度不掉｜CVPR 2026
 
-> 📊 Level ⭐⭐ | 8.2KB | `entities/2026-05-07-只看图片就能学会压缩Token-浙大-阿里新框架多轮VQA压缩率90-精度不掉--量子位.md`
+> 📊 Level ⭐⭐ | 11.7KB | `entities/2026-05-07-只看图片就能学会压缩Token-浙大-阿里新框架多轮VQA压缩率90-精度不掉--量子位.md`
 
 # 只看图片就能学会压缩Token！浙大&阿里新框架多轮VQA压缩率90%，精度不掉｜CVPR 2026
 
@@ -12,6 +12,7 @@ source: wechat
 url: https://mp.weixin.qq.com/s/uvLpXd_A2IUVAe7ynWwVYA
 mp_name: 量子位
 publish_date: 2026-05-07
+
 ---
 
 # 只看图片就能学会压缩Token！浙大&阿里新框架多轮VQA压缩率90%，精度不掉｜CVPR 2026
@@ -46,6 +47,7 @@ source: wechat
 url: https://mp.weixin.qq.com/s/uvLpXd_A2IUVAe7ynWwVYA
 mp_name: 量子位
 publish_date: 2026-05-07
+
 ---
 
 # 只看图片就能学会压缩Token！浙大&阿里新框架多轮VQA压缩率90%，精度不掉｜CVPR 2026

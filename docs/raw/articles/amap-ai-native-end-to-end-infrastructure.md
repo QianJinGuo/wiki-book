@@ -24,6 +24,7 @@ scored_by: MiniMax-M2.7
 v: 7
 c: 7
 sha256: bdbaaf03bb7263dc50e1a7161319ccca8d180012e83c8368278b5d46eb0a51a2
+source_url: "unavailable"
 ---
 
 # 高德工业级能力底座：AI-Native的端云一体基建

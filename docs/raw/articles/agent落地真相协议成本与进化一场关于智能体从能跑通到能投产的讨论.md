@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 64
 stars: 4
 sha256: 0acaf9d153d2cf567b71408b45c7a551ee117cb990c379438e98f41a8e02752b
+source_url: "unavailable"
 ---
 
 # Agent落地真相：协议、成本与进化——一场关于智能体从"能跑通"到"能投产"的讨论

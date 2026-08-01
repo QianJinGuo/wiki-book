@@ -14,6 +14,7 @@ source: 天猫新品团队（阿里巴巴）
 published: ~2026-05
 created: 2026-05-10
 updated: 2026-05-10
+source_url: "unavailable"
 ---
 # 天猫新品团队 AI 编码实战指南（下）
 **来源：** 天猫新品营销技术团队内部实践

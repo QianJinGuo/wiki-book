@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 7823b58b255d0b1799c99ba24243a95f68f92f8ce18fe12401b19d470306ff71
+source_url: "https://mp.weixin.qq.com/s/POUugkCNZTzmlKWZVVD1CQ"
 ---
 
 # 个人从零预训练1B LLM心路历程

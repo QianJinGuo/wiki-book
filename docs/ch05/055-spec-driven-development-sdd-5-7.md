@@ -2,7 +2,7 @@
 
 ## Ch05.055 Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集
 
-> 📊 Level ⭐⭐ | 9.8KB | `entities/sdd-spec-driven-development-summary-qoder.md`
+> 📊 Level ⭐⭐ | 10.4KB | `entities/sdd-spec-driven-development-summary-qoder.md`
 
 # Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集
 
@@ -21,6 +21,7 @@ Spec-Driven Development 的核心思想是将规格说明（Specification）作�
 SDD 是为 AI 编程时代量身定制的工程方法。在传统开发中，Spec 仅仅是影响沟通效率的文档；在 AI 时代，Spec 的质量直接决定代码质量——因为模型对模糊需求的理解偏差会通过快速代码生成被急剧放大。
 
 SDD 的行业共识在 2025 年从多个方向同时收敛：
+
 - Karpathy Vibe Coding（反面参照，暴露了无约束 AI 编程的致命问题）
 - GitHub Spec Kit（Agent-agnostic 工具链）
 - AWS Kiro（内置 SDD 工作流的 IDE）
@@ -91,6 +92,7 @@ SDD 的真正价值不在于文档本身，而在于 Spec 创建过程中建立�
 ### SDD 在 Agent Teams 中的扩展
 
 在多 Agent 协作场景（Agent Teams）中，SDD 的三文件体系提供了一个自然的通信协议：
+
 - **spec.md** 作为跨 Agent 的任务契约
 - **plan.md** 作为 Agent 间的分工文档
 - **tasks.md** 作为可并行的原子工作单元
@@ -101,6 +103,7 @@ SDD 的真正价值不在于文档本身，而在于 Spec 创建过程中建立�
 ### 为什么 Vibe Coding 仍然不可替代
 
 尽管 SDD 在生产级项目中具有明显优势，但 Vibe Coding 在以下场景仍然不可替代：
+
 1. **原型验证**：在不确定需求价值时，快速 Demo 优先于架构质量
 2. **个人小工具**：无长期维护需求的脚本和一次性工具
 3. **探索性数据分析**：在数据中寻找模式的非结构化任务
@@ -122,11 +125,11 @@ SDD 的真正价值不在于文档本身，而在于 Spec 创建过程中建立�
 
 ## 相关实体
 
-- [Vibe Coding 的局限性与 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Harness Engineering 实践指南](ch05/120-harness-engineering.html)
-- [Spec Kit & OpenSpec 混合 Harness](ch05/050-openspec.html)
-- [SDD 实践：Lattice Harness 团队 AI 编码](ch05/112-ai-coding.html)
-- [Codex 五层架构](../ch01/520-codex.html)
+- [Vibe Coding 的局限性与 Agentic Engineering](../ch04/774-karpathy-vibe-coding-agentic-engineering.html)
+- [Harness Engineering 实践指南](ch05/126-harness-engineering.html)
+- [Spec Kit & OpenSpec 混合 Harness](ch05/053-openspec.html)
+- [SDD 实践：Lattice Harness 团队 AI 编码](ch05/115-ai-coding.html)
+- [Codex 五层架构](../ch01/737-codex.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sdd-spec-driven-development-summary-qoder.md)
 

@@ -10,6 +10,7 @@ tags: [skills, skill-design, evaluation, agent, skill-refiner, context-engineeri
 review_value: 7.5
 review_confidence: 8
 sha256: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f
+source_url: "https://github.com/yknothing/skills-refiner"
 ---
 # Skills赏析：使用skills-refiner提升skill质量
 > 来源：AI咖啡馆，TecDeTec，2026-04-02

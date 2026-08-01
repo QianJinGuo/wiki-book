@@ -21,6 +21,7 @@ scored_by: MiniMax-M2.7
 v: 7
 c: 7
 sha256: a06dec7324022d51bae002486be66642c35acbb844b6b7ed0af1096a4d87bbee
+source_url: "unavailable"
 ---
 
 # 面壁让AI写了训练框架ForgeTrain，然后它自己训出了最强1B模型

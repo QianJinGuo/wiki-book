@@ -7,6 +7,21 @@
 # 用 Amazon Quick 加速日常数据工作
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Amazon Quick 加速日常数据工作"))
+    概念导图
+    深度分析
+      数据工作平民化的趋势
+      与传统 ETL 管道的互补
+      成本模型分析
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

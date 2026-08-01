@@ -10,6 +10,22 @@
 
 AI 编码助手生成的代码可能包含 unsafe code patterns。Amazon Bedrock Guardrails 提供内容过滤、prompt attack 检测（jailbreak、injection、leakage）、敏感信息过滤（PII、key、connection string）和安全主题拦截等功能。但代码生成工作流具有高吞吐特性——长流式输出、并发开发者会话、重复上下文评估——直接将 Guardrails 应用于这些场景会导致限流、成本增加和延迟问题。本文提出了六大架构模式来解决这些挑战。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock Guardrails 代码…"))
+    核心概念：Text Units
+    架构模式 1：Pre-commit Hook 模型
+    架构模式 2：Streaming Interv…
+    架构模式 3：解耦 ApplyGuardrai…
+    架构模式 4：Batch Output to …
+    架构模式 5：风险分级评估深度
+    架构模式 6：多阶段 Agent Pipeline
+    完整决策框架
+```
+
 ## 核心概念：Text Units
 
 Guardrail 消费按 text units 计算：1 text unit = 1,000 字符。每次 API 调用（无论是 1 字符还是 999 字符）都至少消耗 1 个 text unit。理解这一点是优化成本的基础。

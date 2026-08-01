@@ -10,6 +10,25 @@ The company's Digital Customer Experience and Engineering team, distributed betw
 Over the past years, the Digital Customer Experience and Engineering team has evolved from a delivery-focused channel into a true digital product driver, with strong customer focus, engineering excellence, and measurable business impact. We take end-to-end ownership of our digital products, combining customer-centric innovation with engineering craft to directly support growth and business outcomes. Building on a modern, independently owned tech stack and a high level of engineering maturity, we are committed to staying at the forefront of technology. Now, we are taking the next step by moving toward becoming AI-native, investing heavily in artificial intelligence as a core capability. This journey is about amplifying powerful engineering with AI to build smarter products, faster innovation, and greater customer value.
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Hapag Lloyd Bedrock Cust…"))
+    概念导图
+    **Understanding user im…
+    相关实体
+    深度分析
+      核心架构洞察
+      AI-Native 组织演进
+      反馈驱动的产品迭代闭环
+    实践启示
+      企业级 AI 应用的关键考量
+      复制路径建议
+      更新日期
+```
+
 ## 概念导图
 
 ```mermaid

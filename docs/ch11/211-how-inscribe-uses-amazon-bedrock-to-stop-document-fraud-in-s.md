@@ -6,6 +6,20 @@
 
 # How Inscribe uses Amazon Bedrock to stop document fraud in seconds
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Inscribe uses Amazon Bed…"))
+    深度分析
+      Agentic AI 为何更适合文档欺诈检测
+      多模型编排的经济学
+      基础设施架构的工程启示
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Inscribe 使用 Amazon Bedrock 构建 Agentic AI 系统，在 90 秒内检测篡改、伪造和 AI 生成的金融文档。传统人工审核需要 30 分钟/份，而 agentic 系统通过多 Agent 协作实现了 20 倍效率提升。系统采用多模型架构——Claude Haiku 负责快速解析与分类，Meta Llama 处理交易数据，Claude Sonnet 承担跨文档分析与协调——配合 Amazon SageMaker 上运行的自有专利检测模型，实现了深度防御式的欺诈检测体系。

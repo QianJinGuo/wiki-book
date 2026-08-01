@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: c6ad07fec145451221a3fa44a901308d669d4528b8baf4a1f30c53a00ba9da01
+source_url: "https://mp.weixin.qq.com/s/8bmDf4GJH5zHjscW-_SX6g"
 ---
 
 # 拒绝“感觉有效”：用数据证明 AI Coding 的真实团队价值【天猫AI Coding实践系列】

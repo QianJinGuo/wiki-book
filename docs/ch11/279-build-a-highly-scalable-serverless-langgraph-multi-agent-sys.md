@@ -7,6 +7,29 @@
 # Build a highly scalable serverless LangGraph multi-agent system
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build a highly scalable serv…"))
+    概念导图
+    核心内容
+    Solution overview
+    深度分析
+      1. Serverless 与 LangGra…
+      2. 多 Agent 并行化的三层解耦架构
+      3. 内存与可观测性解决生产环境核心挑战
+      4. Docker 容器化部署的权衡
+    实践启示
+      1. 优先采用显式图模型管理多 Agent 依赖
+      2. 为 Agent 运行时配置多层次可观测性
+      3. 利用 DynamoDB 实现 Perso…
+      4. 设计时应考虑基础设施即代码
+    参考来源
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: aed3af6c6a1dab6d9c88f96711014356a3964865650613ea575a519c9446270c
+source_url: "https://mp.weixin.qq.com/s/96cmhuymVdUUBDpG_C4p4Q"
 ---
 
 # 百度百舸 AI Infra 助力具身智能模型加速迭代

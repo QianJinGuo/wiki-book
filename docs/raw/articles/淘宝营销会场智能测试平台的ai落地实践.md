@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 6c348765260da60497f6b8f4e68c20e6de3ed46a6f11bdf909565544678c95a2
+source_url: "https://mp.weixin.qq.com/s/QVeetEguVAzGnfrAgWdP3w"
 ---
 
 # 淘宝营销会场智能测试平台的AI落地实践

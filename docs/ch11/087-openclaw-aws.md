@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/enterprise-openclaw-security-deploy-architecture-guide.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("企业级OpenClaw安全部署架构指南 | 亚马逊AWS…"))
+    概述
+    核心技术
+    来源
+    深度分析
+      1. AI Agent 安全的范式转移：从边界…
+      2. 威胁态势的量化警示：数字背后的安全紧迫性
+      3. 纵深防御七层模型的协同逻辑
+      4. 提示注入的架构性解决方案：隔离 + 结构…
+    实践启示
+      1. 立即执行：凭证管理从'裸奔'到 Secr…
+      2. 1 个月内：建立企业私有 ClawHub…
+      3. 1 个月内：实现 3-Leg OAuth…
+      4. 立即执行：隔离执行环境——每个 Agen…
+    架构图
+    相关实体
+```
+
 ## 概述
 企业级OpenClaw安全部署架构指南 by awschina on 23 4月 2026 in Security, Identity, Compliance Permalink Share 摘要：本博客提供企业在亚马逊云科技上部署类OpenClaw智能体的综合安全方案指南，包括架构设计、缓解注入攻击、企业内部系统集中访问和细粒度授权等。 目录 01 引言 02 AI Agent 安全：一个全新的问题域 03 威胁全景：了解你的对手 04 安全架构总览：纵深防御七层模型 05 核心安全能力：Amazon Bedrock AgentCore 06 关键安全场景与解决方案 07 安全运营：12 项安全控制清单 08 参考资源 09 相关链接 1. 引言 在过去十年中，企业安全架构的演进经历了从边界防御到零信任的深刻转型。然而， Agent 的出现正在带来又一次范式级的挑战——这一次，威胁不再单
 

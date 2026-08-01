@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/here-comes-forward-deployed-everybody.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Here Comes (Forward Deployed…"))
+    文章背景
+    深度分析
+      1. 从'套装软件'到'原材料供应'的范式转移
+      2. 历史先例：Piggly Wiggly 与…
+      3. Clay Shirky 的预言与新一轮成…
+      4. 'Everybody'的分化：聚合与原子…
+    实践启示
+      给企业的建议
+      给个人的建议
+    相关实体
+```
+
 ## 核心要点
 - Forward Deployed Engineer (FDE) 概念成为 Salesforce Headless 360 发布的核心理念
 - 企业软件正在从套装走向模块化解耦

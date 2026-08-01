@@ -9,6 +9,25 @@
 > **Background**: Netflix 内部维护一个跨服务的"图"用于描述服务依赖、客户连接、用户体验路径。Part I 介绍 10M ops/sec 规模、跨 650TB 数据量的生产级图抽象挑战与设计取舍。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("High-Throughput Graph Abstra…"))
+    概念导图
+    核心问题
+    规模指标
+    设计取舍
+      1. 写入路径
+      2. 存储抽象
+      3. 实时性 vs 准确性
+    创新点
+    与传统 Service Map 的差异
+    关键 trade-off
+    待续
+```
+
 ## 概念导图
 
 ```mermaid

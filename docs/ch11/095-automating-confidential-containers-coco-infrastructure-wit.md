@@ -5,6 +5,27 @@
 > 📊 Level ⭐⭐ | 9.9KB | `entities/automating-confidential-containers-coco-infrastructure-with-kyverno.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Automating Confidential Cont…"))
+    概念导图
+    CoCo 工作负载的必备配置
+    实际部署挑战
+    Kyverno 解决方案
+      信任悖论：Kyverno 处于不可信控制平面
+    团队职责划分
+    部署与证明流程
+    相关实体
+    深度分析
+      1. 零信任安全模型的工程化代价
+      2. Policy as Code 的双重角色
+      3. 三团队分工模型的现实意义
+      4. 条件密钥分发（Conditional S…
+```
+
 ## 概念导图
 
 ```mermaid

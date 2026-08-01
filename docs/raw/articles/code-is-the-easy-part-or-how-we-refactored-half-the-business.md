@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: c6ed17f127e3e2e9ea75d8fb4e6a27a56ca28826122d4dde507583f4b093aa52
+source_url: "https://swizec.com/blog/code-is-the-easy-part-or-how-we-refactored-half-the-business-to-fix-a-janky-script"
 ---
 
 sha256: dd3c69325e2c8b56f36ff4fefb7cc16d5b186d8e7e170745556dcc2d6d6718ce

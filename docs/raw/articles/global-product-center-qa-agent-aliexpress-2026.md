@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 9028573f53335f1a64ef3c198de0865ef6763b863049298c816235f069a19b56
+source_url: "https://mp.weixin.qq.com/s/NgXciynuSPq4ls02hp33xA"
 ---
 
 # 全球化商品中心智能答疑 Agent 实践

@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 57f0858db46d4e1375dde4c7e28df8b90c6d3bb6df71092a9c1c3b9b7bd93cfb
+source_url: "https://aws.amazon.com/blogs/machine-learning/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcore-with-the-ag-ui-protocol"
 ---
 
 sha256: 4ca3096e06b6d9f842b7da7de7a4eee05fc660200b2b96d543bec1554e75b076

@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 587bf1ad01cbfd6a68c7887224139aab36e82cb0cdad9d7580e5a8428edf51ac
+source_url: "https://yongzx.github.io/blog/2026/06/24/job-search"
 ---
 
 sha256: df51bbb2afbdc005b999afb2a0b88d57260e4fec2be932f9955a1e3a9f7c23f0

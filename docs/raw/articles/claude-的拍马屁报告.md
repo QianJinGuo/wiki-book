@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: debdd372567238423e3ca6e1a8c932d2dc68a5b788a9c6a6d5d0860ce8fd64ba
+source_url: "https://mp.weixin.qq.com/s/Y3nRhOfytQsUMYCFFZy6OA"
 ---
 
 # Claude 的拍马屁报告

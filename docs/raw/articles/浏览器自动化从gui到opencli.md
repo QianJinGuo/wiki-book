@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 79503d5dc01832fae139fa28486d50465cab1e229d8a29f727eed4d99a5a9414
+source_url: "https://mp.weixin.qq.com/s/-ARMTu_h7KbFMvVMnMJghA"
 ---
 
 # 浏览器自动化：从GUI到OpenCLI

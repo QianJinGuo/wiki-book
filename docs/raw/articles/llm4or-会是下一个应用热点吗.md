@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: b9d9283ddcd6dcafb373b322f76b80519f9cb214b44922db31e2bdd4ea1b681b
+source_url: "https://mp.weixin.qq.com/s/camUbRRf2bRdy1DroQEIfg"
 ---
 
 # LLM4OR 会是下一个应用热点吗？

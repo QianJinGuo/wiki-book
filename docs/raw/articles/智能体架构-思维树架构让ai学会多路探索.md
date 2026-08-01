@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 728729ddca19af7576ed16cdb0246031c56cafbd333f670bc2a652acb58fecd8
+source_url: "https://mp.weixin.qq.com/s/hQvhbIwI9nkIclCj5SxEAA"
 ---
 
 # 智能体架构 -- 思维树架构，让AI学会多路探索

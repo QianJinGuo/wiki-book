@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 1b22d7c88b2fc155ec9588fef2fca94006f983b387e9af59a049b14df653de25
+source_url: "https://mp.weixin.qq.com/s/Y0kRzN1DbX7My3cz4eVR1Q"
 ---
 
 # 超级AI背后的秘密武器：Agent Harness深度解析

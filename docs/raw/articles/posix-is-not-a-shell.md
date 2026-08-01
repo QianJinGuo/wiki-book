@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 0aee0dba439e3d346ae0be52b60d502196ee1b6f0b378b3deb1b89614d805393
+source_url: "https://alganet.github.io/blog/2026-06-28-12-POSIX-Is-Not-A-Shell.html"
 ---
 
 sha256: bb368efe10a81c052679b92e1a07f97cb9177ad6d7cb5750a94811fb5c53da0b

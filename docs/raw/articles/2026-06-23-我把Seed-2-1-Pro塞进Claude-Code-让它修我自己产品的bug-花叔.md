@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 900ff1441af2dd5b5d7008452c3a6999f8a011fa6ed35b34f2189c0ec81a068c
+source_url: "https://ark.cn-beijing.volces.com/api/compatible"
 ---
 
 sha256: 16c59e73ac4db124d173790ee2b373a1f50e89bc1793b1adc8829ebdf2fdfc49

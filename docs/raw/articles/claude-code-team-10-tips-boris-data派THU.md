@@ -9,6 +9,7 @@ sources:
 review_value: 7
 review_confidence: 7
 sha256: 058b9a2680697b755b4d40d49a58910e5e4b9138de61365d79f629093a320784
+source_url: "https://code.claude.com/docs/en/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees"
 ---
 
 ## 背景

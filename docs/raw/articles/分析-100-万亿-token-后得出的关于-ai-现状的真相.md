@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 140c08d9c984dcfa79fa5eae782a2c82b1e09af2a148f8dc7efa880c2e899c43
+source_url: "https://mp.weixin.qq.com/s/CyIEK7JtQvBS2_KGWhDEpg"
 ---
 
 # 分析 100 万亿 Token 后得出的关于 AI 现状的真相！

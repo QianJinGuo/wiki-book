@@ -18,6 +18,15 @@ High level overview of Claude apps gateway for AWS
 
 In this post, we show how to set up and run Claude apps gateway for AWS with Amazon Bedrock and Claude Platform on AWS.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Claude apps gate…"))
+    How the Claude apps gat…
+```
+
 ## How the Claude apps gateway works
 
 The gateway is delivered by Anthropic inside the same [Claude Code CLI](<https://code.claude.com/docs/en/quickstart>) binary your developers already use. You can run it in one stateless container on your infrastructure, backed by a [PostgreSQL](<https://www.postgresql.org/>) database that stores short-lived sign-in state and rate-limit counters. Because the gateway and the client are built together, the `/login` flow is gateway-aware. The client applies managed settings automatically at sign-in, and policy is enforced consistently on every request.

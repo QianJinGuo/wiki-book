@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 64
 stars: 4
 sha256: bd5983de8e1f1c9a333b11cbe4f9ba9c548abdb2043420f9772212d53169603a
+source_url: "unavailable"
 ---
 
 # 从月球漫步到赛博都市，WBench测出了世界模型的边界

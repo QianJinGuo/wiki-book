@@ -10,6 +10,7 @@ stars: 4
 confidence: 0.85
 value: 8
 description: LastWhisper 解读 OpenAI《Unrolling the Codex agent loop》：缓存友好 Prompt Layout + Append-only 状态管理（State is a projection of events）+ 两种 encrypted_content（reasoning vs compaction）+ 应用层 vs 基础设施层压缩能力不对称（Semantic vs Latent Compression）+ 教学开源工具 context-kit（Compress/Select/Memory）
+source_url: "https://zhuanlan.zhihu.com/p/2001069051741496397"
 ---
 
 # Thinking in Context: Codex 中的上下文工程

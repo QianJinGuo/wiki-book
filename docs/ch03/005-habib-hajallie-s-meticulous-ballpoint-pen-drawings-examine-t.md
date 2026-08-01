@@ -2,7 +2,7 @@
 
 ## Ch03.005 Habib Hajallie's Meticulous Ballpoint Pen Drawings Examine the Depths of Emotion
 
-> 📊 Level ⭐ | 12.7KB | `entities/habib-hajallie-s-meticulous-ballpoint-pen-drawings-examine-the-depths-of-emotion.md`
+> 📊 Level ⭐ | 12.6KB | `entities/habib-hajallie-s-meticulous-ballpoint-pen-drawings-examine-the-depths-of-emotion.md`
 
 ## 艺术家背景
 
@@ -119,8 +119,8 @@ Hajallie 选择在"philosophical and historical texts"（哲学与历史文献�
 - 艺术家 Instagram：https://www.instagram.com/habib_hajallie/
 
 ## 相关实体
-- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
-- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/009-harness.html)
+- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/192-amazon-ecs.html)
+- [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/017-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/habib-hajallie-s-meticulous-ballpoint-pen-drawings-examine-the-depths-of-emotion.md)
 

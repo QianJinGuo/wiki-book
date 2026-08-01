@@ -10,6 +10,7 @@ value: 8
 stars: 4
 description: "2026 年 Harness Engineering 学科正式确立的 canonical 综述：90 天内 OpenAI/Anthropic/ThoughtWorks/HuggingFace 共同命名, 5 种 artifact + 5 项普适原则 + 3 阵营对比 + 衰减论 + 为删除而构建"
 created: 2026-06-10
+source_url: "unavailable"
 ---
 
 ## Part 1: Harness 到底是什么

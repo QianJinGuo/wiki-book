@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: e68425ed05f4c46f1de1c1631166a0cfb9c462e0cdc0d8ee1b21bf66186381c8
+source_url: "https://mp.weixin.qq.com/s/t76fyXI8zT5G2U27W2_KEQ"
 ---
 
 # 淘宝跨端体验优化 AI 演进之路

@@ -9,6 +9,27 @@
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Gemma 4 模型发布 — Google DeepMi…"))
+    概念导图
+    背景
+    模型规格
+      三个变体
+      共同能力
+    关键基准
+    Bedrock 集成价值
+      数据保护
+      部署灵活性
+      应用场景
+    实践启示
+    上线状态
+    原文链接
+```
+
 ## 概念导图
 
 ```mermaid

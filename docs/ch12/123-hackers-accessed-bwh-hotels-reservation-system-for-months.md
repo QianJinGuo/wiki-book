@@ -7,6 +7,17 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securityaffairs-bwh-hotels-breach.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securityaffairs-bwh-hotels-breach.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Hackers accessed BWH Hotels …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 **酒店业数据泄露的长期潜伏特征与影响**：
 1. **超长潜伏期**：攻击者在 2025 年 10 月至 2026 年 4 月（长达 6 个月）持续访问预订系统——如此长的 dwell time 表明这不是机会主义攻击，而是有组织的持续性入侵

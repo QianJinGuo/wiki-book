@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 21ee45084b3f7b2ef4ab3c677f0cc66898586492c2bc8079cd4a98e23658efcd
+source_url: "https://mp.weixin.qq.com/s/y5ZfnqadTpDaG9cVQcU3Ig"
 ---
 
 # harness技术手册-会话管理与百万级上下文实战启示

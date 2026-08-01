@@ -5,6 +5,7 @@ url: "https://blog.doyensec.com/2026/05/05/cloudsectidbits-masso-cognito-sso.htm
 source: web
 date: 2026-05-17
 sha256: 34dd8efd6c5bddcdac84d8ee8a92bf4ac98742183967fe3c8e20bebdce5dfeb9
+source_url: "unavailable"
 ---
 ABOUT US
 We are security engineers who break bits and tell stories.

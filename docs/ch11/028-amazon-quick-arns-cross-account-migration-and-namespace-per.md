@@ -18,6 +18,22 @@ These are real tasks that Amazon Quick administrators tackle regularly, and gett
 
 In this post, we cover the structure of Amazon Quick ARNs and provide a practical mental model for working with them. By the end, you can look at an ARN and immediately understand what it means for your migration strategy, diagnose permission issues faster, and design multi-tenant architectures with confidence.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Quick ARNs: Cross-acc…"))
+    A note on naming
+    Think of ARNs as postal…
+    What this looks like in…
+      Why permissions don’t t…
+      How the dependency chai…
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## A note on naming
 
 Amazon Quick is the service that you use today, but ARNs and API endpoints still use “quicksight” as the service identifier. We keep this for compatibility with existing AWS Identity and Access Management (IAM) policies, automation, and integrations across customer environments.

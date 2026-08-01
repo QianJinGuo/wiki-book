@@ -1,62 +1,69 @@
-# 万字长文拆解 Agent 架构设计（二）：工具系统设计
+# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
-## Ch04.687 万字长文拆解 Agent 架构设计（二）：工具系统设计
+## Ch04.687 Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/claude-code-tool-system-architecture-deep-dive.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/agent-eval-counterintuitive-insights-langfuse.md`
 
-# Claude Code 工具系统架构深度拆解
+# Agent评测的反直觉感悟：质量优化与可规模化性的取舍
 
-> Claude Code 的工具系统不是简单的"函数注册表 + 调用分发器"，而是包含权限分级、运行时风险评估、子 Agent 递归和两阶段安全分类器的完整架构。
+## 摘要
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-system-architecture-source-code.md)
+基于 Langfuse 实战经验，揭示 Agent 评测中的核心反直觉现象：**质量优化可能破坏产品可规模化性**。Tracing 的价值不在调试，而在让成本-质量取舍成为产品评审中可讨论的线索。
 
-## 核心组件
+## 核心要点
 
-### AgentTool 接口
+### Bad Case 归因的陷阱
 
-每个工具的基础契约，核心字段：
+从用户 bad case 入手做评测归因是常见做法，但 bad case 有四个棘手特征：
 
-- **name/description**：注入系统提示，让模型知道何时调用
-- **inputSchema**：JSON Schema，模型按此格式输出参数
-- **defaultPermission**：权限等级（auto/confirm/block），工具自带属性
-- **execute()**：执行逻辑
-- **assessRisk()**：可选，运行前快速风险评估
+- **极端边界**：不代表典型用户场景
+- **模型幻觉**：随机性强，难以系统性修复
+- **技术修复 ROI 高**：修复单个 bad case 可能引入更大成本
+- **偶发性**：难以稳定复现，修复效果难以验证
 
-### 三档权限分级
+更关键的是：修好 bad case 后，token 成本可能反而上升。
 
-| 等级 | 说明 | 示例 |
-|------|------|------|
-| **auto** | 自动执行（只读/无副作用） | ReadFile |
-| **confirm** | 默认需用户确认 | WriteFile |
-| **block** | 默认拦截，需明确授权 | Bash |
+### 反直觉核心：质量优化破坏可规模化性
 
-运行时风险评估 `assessRisk()` 可动态覆盖默认权限。例如 Bash 对 `ls` 返回 auto，对 `rm -rf /` 返回 block。
+一个 Agent 如果每次做 8 次检索、3 次 rerank、5 次模型调用，demo 会显得很聪明，但线上变成不可承受的成本结构。这不是假设，而是 Langfuse Tracing 能直接暴露的现实。
 
-### 子 Agent 作为普通工具
+具体表现：
+- **更多上下文塞进 prompt** → 短期提升准确率，但 token 成本和 latency 上升
+- **引入更强 judge / 更多 self-check** → 体验等待变长
+- **增加检索和 rerank 次数** → 答案更稳，但每个请求的成本翻倍
 
-Claude Code 将子 Agent 定义为标准 `AgentTool`：
+这一洞察与 [Llm Observability 4 Layer Model](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-observability-4-layer-model.md) 中的成本监控层直接相关。
 
-- 和 ReadFile 在同一个工具列表里，父 Agent 通过 tool_use 调用
-- 子 Agent 的 `execute()` 内部是一个完整的 Agent 循环
-- 递归 Agent 没有增加额外的架构复杂度
+### Tracing 的真正价值
 
-### 两阶段安全分类器
+Trace 的价值不是"总成本高"或"整体慢"这类笼统结论，而是：
 
-1. **Phase 1（快速分类）**：轻量级规则匹配，拦截明显有害命令
-2. **Phase 2（LLM 分类）**：调用 LLM 分析意图，输出 SAFE/UNSAFE
+- **哪一个 Observation 让成本失控** — 精确定位成本热点
+- **哪一步阻塞了用户等待** — 精确定位延迟瓶颈
 
-## 设计原则
+Tracing 让成本-质量取舍不再停留在架构师脑中，而变成产品评审中可讨论的线索。这是将技术决策透明化的产品化实践。
 
-1. **权限绑定工具而非用户/场景**：defaultPermission 是工具本身属性
-2. **运行时覆盖优于静态配置**：assessRisk() 根据实际输入动态调整
-3. **子 Agent 即工具**：复用工具抽象，无需特化框架
-4. **安全 vs 效率的工程平衡**：先快速分类器过滤，再用 LLM 深度分析
-5. **默认安全**：block 级工具不会被绕过
+## 深度分析
 
+本文的核心价值在于提出了一个可操作的评估框架：**用 Tracing 驱动产品决策，而非仅用于调试**。传统 Agent 评测关注"答对没有"，而本文关注"答对的代价是什么"——这是一个从工程视角到产品视角的转换。
+
+与离线评测方法论互补：离线评测验证功能正确性，Tracing 验证生产可规模化性。
+
+## 实践启示
+
+1. **评测时同时关注正确性和成本**：每个 bad case 修复后，追踪 token 成本变化
+2. **用 Observation 级别而非 Task 级别分析成本**：定位具体哪一步消耗过多
+3. **在产品评审中引入 Tracing 数据**：让非技术人员也能理解成本-质量取舍
+4. **警惕"demo 聪明，线上昂贵"的陷阱**：8 次检索 + 3 次 rerank + 5 次模型调用可能是过度优化
+
+## 相关实体
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-eval-counterintuitive-insights-langfuse.md)
+
+---
 ## 关联
-
-- [AI Agent 工具数量陷阱](ch04/030-ai-agent.html) — 5 个边界清楚的工具胜过 20 个模糊工具，与 Claude Code 工具设计互补
-- [Agent Harness 架构设计与实现](../ch05/058-agent-harness.html) — 生产级 Agent 系统设计参考
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 

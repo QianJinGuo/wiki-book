@@ -10,6 +10,7 @@ review_confidence: true
 tags: [agent, anthropic, Claude, long-running, adversarial-architecture, evaluation]
 abstract: Anthropic 工程师分享长时运行 Agent 架构——三大失败根因（上下文焦虑/规划缺陷/自我评判）+ Agent SDK 结构化管理 + GAN 风格对抗式架构 + 合同谈判机制 + 审美量化 + 6小时 RetroForge 案例 + 5条实战建议。
 sha256: b14139792c51db9e2890e3d99b381ffa08a8b94bfd180d7d9d7289c069aa4d24
+source_url: "unavailable"
 ---
 ---
 # Anthropic 实战分享：如何让 AI Agent 持续工作几天？

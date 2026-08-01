@@ -6,6 +6,30 @@
 
 # Amazon Nova 2 Lite 视觉对象检测（自然语言驱动）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Nova 2 Lite 视觉对象检测（自然…"))
+    概述
+    核心架构
+    关键 Prompt 模板设计
+    成本与定位
+    应用场景
+    与现有 entity 差异化
+    深度分析
+      零训练检测的实现机制
+      归一化坐标系统的工程影响
+      Serverless 架构的成本经济学
+      三行业用例的泛化性分析
+    实践启示
+      快速验证优先于复杂架构
+      Prompt 模板是核心工程资产
+      生产部署优先考虑 Serverless 弹性
+      坐标转换是必须处理的实现细节
+```
+
 ## 概述
 
 Amazon Nova 2 Lite 是 AWS Bedrock 上的多模态基础模型，通过**自然语言 prompt** 实现零训练目标检测 —— 无需数据标注、无需训练、无需基础设施管理。给定图像和目标列表（如 "vehicle"、"person"、"dent"），模型返回结构化 JSON 的精确 bounding box 坐标。

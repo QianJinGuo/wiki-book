@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 030974d549f7617886308b8807281d43916b712681cef3467661182bc1f8c49f
+source_url: "https://mp.weixin.qq.com/s/q-YQp4LaUNzunupo4cnNhw"
 ---
 
 # Cursor如何把一个通用模型，训成顶级编程 Agent

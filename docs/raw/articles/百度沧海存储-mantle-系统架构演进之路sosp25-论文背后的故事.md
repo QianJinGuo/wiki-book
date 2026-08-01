@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 14b96297a58a712044c530c2f26baee9a609baf1b7f24eaef4ff268ce7985763
+source_url: "https://mp.weixin.qq.com/s/WeBt3XgsqbwnbTtciZooDg"
 ---
 
 # 百度沧海·存储 Mantle 系统架构演进之路，SOSP'25 论文背后的故事

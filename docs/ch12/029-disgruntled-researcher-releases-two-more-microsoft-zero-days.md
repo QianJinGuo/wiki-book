@@ -8,6 +8,25 @@
 
 > -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Disgruntled researcher relea…"))
+    深度分析
+      1. BitLocker 作为'最后防线'的失守
+      2. 提权漏洞的'二阶段利用'模式
+      3. '报复性披露'的产业代价
+      4. AI Agent 部署对漏洞响应的新要求
+    实践启示
+      1. BitLocker 部署的强制基线
+      2. 提权漏洞的优先级管理
+      3. 建立不依赖厂商响应速度的安全基线
+      4. AI Agent 场景的纵深防御
+    相关实体
+```
+
 ## 摘要
 
 2026 年 5 月 13 日，安全研究者 Nightmare-Eclipse（又名 Chaotic Eclipse）在微软 Patch Tuesday 后立即公开两个 Windows 零日漏洞：**YellowKey**（BitLocker 旁路，可绕过全盘加密）和 **GreenPlasma**（提权至 SYSTEM）。这是该研究者 2026 年公开的第五、第六个 Microsoft 零日，与此前的 BlueHammer（CVE-2026-32201）、RedSun、UnDefend 一同构成对微软的"报复性披露"战役。

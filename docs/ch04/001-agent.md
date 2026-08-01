@@ -2,7 +2,7 @@
 
 ## Ch04.001 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
 
-> 📊 Level ⭐ | 12.1KB | `entities/stepan-gershuni-ai-native-startup-guide.md`
+> 📊 Level ⭐ | 12.4KB | `entities/stepan-gershuni-ai-native-startup-guide.md`
 
 # 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
 
@@ -49,6 +49,7 @@ Context = AI 原生创业公司的操作记忆——公司对自己的一切了�
 - **路径真的无法预设时才请智能体**：排查生产 bug、调研市场、处理复杂客户案例
 
 **每个智能体必须套 Harness（防护层）六阶段**：
+
 1. **预检**：消耗 token 之前检查权限
 2. **计划**：拆解任务，暴露步骤
 3. **审批**：人或评判模型把关
@@ -85,6 +86,7 @@ Jack Dorsey 在 Block 围绕这些工具重组之前，每天早上花几个小�
 AI 原生创业公司每周改进一次自己的操作系统。
 
 **内环**：让现有工作更好——降低每次运行成本、缩短周期、减少事故、减少审查时间。
+
 **外环**：寻找下一步——新客户群、产品方向、竞争对手动态、流失风险。后台智能体全天候给外环输送候选项，人来决定追哪个。
 
 **硬规则**：任何代码都不能自动合并，没有智能体可以直接写入生产环境。就连 Cursor 在 2026 年初大规模跑云端自主智能体时，合并前仍保留了人工审查门槛。这个门槛是让其他一切能安全扩展的前提。
@@ -112,11 +114,11 @@ AI 原生创业公司每周改进一次自己的操作系统。
 7. **每周进化循环**：后台智能体全天候给外环输送候选项，人决定追哪个——保持学习和改进的系统性节奏。
 
 ## 相关实体
-- [Ai Native Startup Cyberfund Guide](../ch05/018-ai-native.html)
-- [Ai Agent Harness Construction Akshay](../ch01/988-ai-agent-harness.html)
-- [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/009-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html)
-- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/030-ai-agent.html)
+- [Ai Native Startup Cyberfund Guide](../ch05/021-ai-native.html)
+- [Ai Agent Harness Construction Akshay](../ch01/1161-ai-agent-harness.html)
+- [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/017-harness.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/237-ai-agent.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/237-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
 

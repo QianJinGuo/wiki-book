@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 9cfbf51d52dc6fab339519e3dfbc757b48c290e0904fb8f5992784cfedbef14f
+source_url: "https://mp.weixin.qq.com/s/iVfaAJx4DuFuzihf0TouHA"
 ---
 
 # 从 PRD 到代码：Ralph 驱动的自治 AI 智能体执行循环

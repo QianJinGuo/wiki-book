@@ -5,6 +5,7 @@ url: https://mp.weixin.qq.com/s/uqpkQ7VRXD80Tq5on-2MPg
 mp_name: 机器之心
 publish_date: 2026-05-07
 sha256: 55f274661b707c50dd07470399f3376fa901e8020593fbdcb0910d2a63e038a3
+source_url: "https://mp.weixin.qq.com/s/uqpkQ7VRXD80Tq5on-2MPg"
 ---
 
 # TACO: 让 CLI Agent 在自主迭代中学会丢掉无用上下文

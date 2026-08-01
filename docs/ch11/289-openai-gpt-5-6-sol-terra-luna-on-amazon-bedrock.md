@@ -10,6 +10,17 @@
 > **发布**: Get started with OpenAI GPT-5.6 Sol, Terra, and Luna on Amazon Bedrock
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI GPT-5.6 Sol/Terra/Lun…"))
+    Summary
+    Key Points
+    Related Entities
+```
+
 ## Summary
 
 ```mermaid

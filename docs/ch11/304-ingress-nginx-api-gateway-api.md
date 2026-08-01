@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("告别 Ingress Nginx：云原生 API 网关 …"))
+    深度分析
+      角色分层是 Gateway API 相对 In…
+      '无 annotation' 才是真正的标准化
+      GIE 是 Gateway API 面向 AI…
+      双模并行 + 注解兼容 = 迁移路径关键
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Gateway API 是 K8s 官方推出的下一代 Ingress 标准，通过 **GatewayClass / Gateway / HTTPRoute 三层资源模型**实现角色分层、表达力增强与跨控制器可移植。阿里云云原生 API 网关基于开源 Higress 提供 Ingress 与 Gateway API 双模并行、灰度切流与一键回滚能力，**配套兼容主流 Nginx Ingress 注解的迁移工具链**。

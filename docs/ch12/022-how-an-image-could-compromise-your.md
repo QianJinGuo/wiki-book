@@ -4,6 +4,29 @@
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How an image could compromis…"))
+    漏洞概述
+    技术分析
+      漏洞定位：SetMacOSTags 函数中的 …
+      攻击链分析
+      修复方案分析
+    深度分析
+      漏洞根源：信任边界跨越与不安全编程范式
+      利用场景与攻击向量
+      架构级修复的示范意义
+    实践启示
+      对开发者的启示
+      对安全研究人员的启示
+      对企业安全运营的启示
+      对普通用户的启示
+    相关实体
+```
+
 ## 核心要点
 
 - **CVE 编号**: CVE-2026-3102

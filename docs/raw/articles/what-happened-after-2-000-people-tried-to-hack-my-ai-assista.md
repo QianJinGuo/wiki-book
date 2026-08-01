@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 84e47fdfadefd06ee3684881410331dc5b2055765e5e5b01edf2ad15ff63435b
+source_url: "https://www.fernandoi.cl/posts/hackmyclaw"
 ---
 
 sha256: 19502cc2a4179419a6eac7e0e1720c8fcaa0ab5adf8c320e65fc976d106efc6d

@@ -13,6 +13,7 @@ review_confidence: 8
 review_recommendation: strong
 review_stars: 5
 tags: [aws, bedrock, serverless, async-inference, sqs, lambda, multimodal, agent]
+source_url: "https://aws.amazon.com/cn/blogs/china/amazon-bedrock-model-inference-serverless-architecture-case-study/"
 ---
 # Amazon Bedrock模型推理的Serverless异步架构
 > 来源：[亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-model-inference-serverless-architecture-case-study/) | 作者：Louisa Liu | 2026-05-08

@@ -4,6 +4,34 @@
 
 > 📊 Level ⭐⭐ | 18.5KB | `entities/amazon-workspaces-applications-quick-build.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Amazon WorkSpaces Applica…"))
+    场景与挑战
+    方案概述与核心优势
+    架构
+    部署流程
+      4.1 环境准备
+      4.2 部署前检查
+      4.3 基础设施部署（CloudFormati…
+      4.4 制作自定义镜像
+    脚本工具链
+    成本优化与最佳实践
+    深度分析
+      基础设施层的复用设计
+      ON_DEMAND 计费模式的深度解读
+      镜像兼容性约束的本质影响
+      预热策略的工程逻辑
+    实践启示
+      1. 将 Image Builder 纳入 C…
+      2. 建立培训生命周期的成本监控机制
+      3. 多地域灾备与低延迟接入
+      4. 与企业 SSO 集成的身份管理
+```
+
 ## 核心要点
 - **痛点**：50 人规模 GPU 培训手动配置需一整天，涉及 VPC、NAT Gateway、Image Builder、Fleet、Stack 等多个 AWS 服务协调
 - **方案**：WorkSpaces Applications + CloudFormation 自动化 + Shell 脚本工具链，端到端 1-2 小时交付，效率提升 90%

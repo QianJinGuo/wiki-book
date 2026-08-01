@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 3
 sha256: 5e3334d300eee165796504e4f20ae29e85b9393076b8de1c0f4d48a8dab3c355
+source_url: "https://mp.weixin.qq.com/s/GxCAP6SjYPQ-WOFseZzGKA"
 ---
 
 # 别再幻想用 Spec 替代写代码

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 894c041e0a2b1100dc1ccc4233148556f74ad1f4fcf23515bb176f7cf64d68fb
+source_url: "http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651041854&idx=2&sn=f4692aae52a0d94944f02784514af248&chksm=84e67440b391fd5602db879fcb90caaf425ee31aa51b7f56a116b3dfe344e5a21f1a1847c033#rd"
 ---
 
 # 给Transformer变个形，LLM竟能变得更聪明

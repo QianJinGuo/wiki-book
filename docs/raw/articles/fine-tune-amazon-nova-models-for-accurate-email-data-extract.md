@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 7efb226440e423dd6903ae0c3d48d0ab04043cf079ea967036c5c19c8ab934ee
+source_url: "https://aws.amazon.com/blogs/machine-learning/fine-tune-amazon-nova-models-for-accurate-email-data-extraction"
 ---
 
 sha256: ed7a6f61a34ab16f6fc5ac8427b01edeef9b428e0ca21cb9d9b64f7830cdfee0

@@ -12,6 +12,19 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-infra-panorama-9-layer-agent-framework-production.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Infra 全景图：9 层 Agent 生产架构"))
+    9 层架构全景
+    4 个横切能力
+    分阶段落地路线图
+    核心洞察
+    相关实体
+```
+
 ## 9 层架构全景
 
 | 层级 | 名称 | 核心问题 | 关键组件 |

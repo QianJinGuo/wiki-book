@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: b2af12b69836bdb474033255c1efab673c5b84e62335fbf4ffdb0146a7ce32fe
+source_url: "https://mp.weixin.qq.com/s/2ShsYOsEE1oKpjsX9_K8Yw"
 ---
 
 # 拆解 OpenClaw 架构（五）：4 个工具原语 + 6 层安全策略，一套 Agent 的放权与收权工程

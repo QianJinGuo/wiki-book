@@ -14,6 +14,7 @@ source: GEPA官方博客
 published: 2026-02-18
 created: 2026-05-10
 updated: 2026-05-10
+source_url: "https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/"
 ---
 # optimize_anything: A Universal API for Optimizing any Text Parameter
 **来源：** GEPA 官方博客

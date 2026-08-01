@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 507c6b184a062872bfed176d76a53436d220dfc6d932f0eb97abb3e657ffd830
+source_url: "https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html"
 ---
 
 sha256: e72946bb33e563e6bf2c377e03fc482f0c505b3a35695e4492ef68e18f70ee53

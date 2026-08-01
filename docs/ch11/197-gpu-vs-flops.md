@@ -8,6 +8,21 @@
 
 对数据中心 GPU 冷却方案的技术分析。核心论点：液冷不仅降低能耗，更重要的是提高 GPU 的实际可用 FLOPs——风冷方案因热节流（thermal throttling）导致标称性能打折。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("数据中心 GPU 液冷 vs 风冷：FLOPs 可用率与…"))
+    关键工程洞察
+    技术细节
+    冷却方案对比
+    适用性
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 关键工程洞察
 
 1. **DVFS 缩频**：Dynamic Voltage and Frequency Scaling 在高温时自动降频，实际 FLOPs 低于标称值

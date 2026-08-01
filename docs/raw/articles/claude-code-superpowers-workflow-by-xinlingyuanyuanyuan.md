@@ -1,5 +1,4 @@
 ---
-
 title: "给 Claude Code 装上\"超能力\" — 它干活比我还靠谱"
 url: https://mp.weixin.qq.com/s/HyAo0ieoj1LBD0z7iuTbPw
 author: 新世界圆圆圆
@@ -13,7 +12,7 @@ review_confidence: 7
 sha256: c7a8f2e3d4b1c9a0e8f7d2c6b4a3e1f0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4
 status: supplemental
 supplements: entities/claude-code-skills-superpowers-practice
-
+source_url: "https://mp.weixin.qq.com/s/HyAo0ieoj1LBD0z7iuTbPw"
 ---
 # 给 Claude Code 装上"超能力" — 它干活比我还靠谱
 > 来源：[新世界圆圆圆 - 赛博虾酱](https://mp.weixin.qq.com/s/HyAo0ieoj1LBD0z7iuTbPw)，2026-03-24

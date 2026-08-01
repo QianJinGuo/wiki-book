@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/drupal-core-security-drupal-to-release-urgent-core-security.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Drupal to Release Urgent Cor…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - Drupal 核心安全更新将于 2026 年 5 月 20 日 17:00-21:00 UTC 发布
 - 影响所有受支持的 Drupal 版本（11.3.x, 11.2.x, 10.6.x, 10.5.x）

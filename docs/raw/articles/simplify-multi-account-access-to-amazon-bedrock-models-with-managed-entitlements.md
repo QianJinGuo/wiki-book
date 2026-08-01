@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 6baa912ad7fe8cda2c993f8f5e77c22d8cbe22fdca4851b2f47824114fef662d
+source_url: "https://aws.amazon.com/blogs/machine-learning/simplify-multi-account-access-to-amazon-bedrock-models-with-managed-entitlements"
 ---
 
 sha256: c87650e36286604a71bd43abb7ba6aea1f14ea2d84d276f057fbd1f46140dc63

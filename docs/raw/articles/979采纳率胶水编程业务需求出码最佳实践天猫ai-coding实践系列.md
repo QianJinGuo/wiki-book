@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 6bb1007812fa761961005410c14be4c4d19592ac5b249cd5de9d8ac3b5948f9f
+source_url: "https://mp.weixin.qq.com/s/G3aKbzdGUyD2h1aVjvbr2g"
 ---
 
 # 97.9%采纳率，胶水编程：业务需求出码最佳实践【天猫AI Coding实践系列】

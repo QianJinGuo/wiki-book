@@ -4,6 +4,7 @@ type: raw-article
 source: wechat
 ingested: 2026-07-03
 sha256: 3ebb1329d8bbf78e91ed0d89d384be045e189809be2c4f047c7a02834024780b
+source_url: "https://www.youtube.com/watch?v=P3KDebPTUrw"
 ---
 
 # Codex 48小时两次被迫重置，token额度消耗太快的真相来了

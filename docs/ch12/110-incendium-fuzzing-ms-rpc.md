@@ -9,6 +9,18 @@
 # Incendium MS-RPC Fuzzing
 Incendium: Microsoft RPC 接口深度模糊测试，漏洞发现方法论
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Incendium Fuzzing Ms Rpc"))
+    深度分析
+    实践启示
+    相关资源
+    相关实体
+```
+
 ## 摘要
 [](/) [Remco van der Meer](/) Ethical Hacker, Security researcher
 

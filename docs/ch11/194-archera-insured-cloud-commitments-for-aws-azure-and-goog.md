@@ -4,6 +4,26 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/3rdfsmp.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Archera • Insured cloud comm…"))
+    产品机制
+    商业模式分析
+    市场定位
+    深度分析
+      保险机制的商业逻辑
+      客户价值分析
+      风险因素
+    实践启示
+      何时考虑 Archera 类型的产品
+      评估替代方案
+      实施建议
+    相关实体
+```
+
 ## 核心要点
 - Archera 提供一种新型云成本优化产品：「Insured Commitments」——保险背书的灵活期限云承诺
 - 核心价值主张：承诺云消费（Commitments）可以享受折扣，同时无需承担利用率不足（underutilization）风险

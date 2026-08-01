@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 56
 stars: 3
 sha256: 2b5ae23cbd84ef88b079332a3bb98fedd919de594b3f99e3901b76957596e0c6
+source_url: "unavailable"
 ---
 
 # Claude Sonnet 5 发布，性能接近 Opus 4.8，价格只有60%

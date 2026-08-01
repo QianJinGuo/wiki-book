@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: aaa8d885fd9ac0ff4466ede9625f70ecfbf00367f3d9e0b55123fb0188cee4c5
+source_url: "https://www.morling.dev/blog/hardwood-1-0-fast-lightweight-apache-parquet-reader-for-the-jvm"
 ---
 
 sha256: 8e03e789c756345136c85a66527719ffc2829cc0a36483f28241e8705b0d0c14

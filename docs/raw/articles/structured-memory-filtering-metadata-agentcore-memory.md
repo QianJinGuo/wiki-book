@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 2bd069b4ca60dec239dc3a2a5006ed108b053517ab80ff9bee7637e0e43d693b
+source_url: "https://aws.amazon.com/blogs/machine-learning/structured-memory-filtering-with-metadata-in-agentcore-memory"
 ---
 
 sha256: 901ef3b637f44e629676c78226a752b224c0980cfe00eb16b8d36f2746a901c3

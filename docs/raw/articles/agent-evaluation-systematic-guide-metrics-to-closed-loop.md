@@ -6,6 +6,7 @@ source_account: 内推/技术社区
 created: 2026-07-02
 fetched: 2026-07-02
 sha256: 464309647c5bf5ed31b5f4aaa4011804aa5d6eff378934c899d5edaca498962f
+source_url: "unavailable"
 ---
 
 Agent 评测是把"不稳定的智能行为"持续收敛成"可发布的工程质量"的系统化方法。

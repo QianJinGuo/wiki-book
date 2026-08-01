@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: e250b2398210ad0b60c30cd1a99e65a2f7d50605ee4272606b15cae175dba561
+source_url: "https://aws.amazon.com/blogs/machine-learning/building-a-serverless-a2a-gateway-for-agent-discovery-routing-and-access-control"
 ---
 
 sha256: 6d5ed28a20a3c1051e0c871d0eead2001e5b10c57bda920f83cc040d6859e7d6

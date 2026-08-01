@@ -2,25 +2,33 @@
 
 ## Ch03.051 Buildkite Pricing | Buildkite
 
-> 📊 Level ⭐ | 3.2KB | `entities/buildkite-pricing-buildkite-v2.md`
+> 📊 Level ⭐ | 3.3KB | `entities/buildkite-pricing-buildkite-v2.md`
 
 → 原文存档
 
 ## 摘录
 > Title: Buildkite Pricing
-URL Source: https://buildkite.com/pricing
-Published Time: Sun, 10 May 2026 19:08:21 GMT
+URL Source: https://buildkite.com/pricing^[].md]
+
+Published Time: Sun, 10 May 2026 19:08:21 GMT^[].md]
+
 Markdown Content:
-Buildkite Pricing | Buildkite
-   Platform### Capabilities
-Pipelines→ Build the CI/CD workflows you need.## Test Engine→ Remove flaky tests, split tests, optimize performance.## Package Registries→ Speed up builds, lock down security.## Mobile Delivery Cloud→ Supercharge your mobile app delivery.  ### Flexible compute
-Self-hosted agentsMac hosted agentsLinux hosted agents
+Buildkite Pricing | Buildkite^[].md]
+
+   Platform### Capabilities^[].md]
+
+Pipelines→ Build the CI/CD workflows you need.## Test Engine→ Remove flaky tests, split tests, optimize performance.## Package Registries→ Speed up builds, lock down security.## Mobile Delivery Cloud→ Supercharge your mobile app delivery.  ### Flexible compute^[].md]
+
+Self-hosted agentsMac hosted agentsLinux hosted agents^[].md]
 
 ## 深度分析
-Buildkite 的定价页面揭示了 CI/CD 平台在 2026 年的竞争格局已从单纯的"构建时长计费"演变为"能力模块化订阅"。其四大核心能力——Pipelines、Test Engine、Package Registries、Mobile Delivery Cloud——覆盖了从代码提交到生产发布的完整链路，这意味着 Buildkite 正在从纯粹的构建执行工具向端到端发布平台转型。
-**定价结构的分层逻辑**：页面突出"Flexible compute"，明确区分 self-hosted agents、Mac hosted agents 和 Linux hosted agents 三种计算环境。这种分层暗示了企业在 CI/CD 场景中的异构需求——iOS/macOS 开发需要 Apple 硬件，而 Web 服务通常跑在 Linux 上。Buildkite 不再要求所有工作负载使用同一套基础设施，客观上降低了迁移成本。
-**Test Engine 的定位值得注意**：页面将"Remove flaky tests, split tests, optimize performance"作为独立能力模块推广，说明 Buildkite 认定 flaky test 是企业级 CI/CD 的核心痛点之一。这与社区中大量关于 test flakiness 讨论的现状吻合——flaky tests 直接影响构建可靠性，进而影响团队对 CI 系统的信任度。
-**Mobile Delivery Cloud 的独立推广**：将移动端交付作为单独模块，说明 Buildkite 观察到移动应用发布的特殊性——签名、OTA、分发、版本管理——与 Web CI/CD 有本质区别，独立产品线有助于专门优化这一工作流。
+Buildkite 的定价页面揭示了 CI/CD 平台在 2026 年的竞争格局已从单纯的"构建时长计费"演变为"能力模块化订阅"。其四大核心能力——Pipelines、Test Engine、Package Registries、Mobile Delivery Cloud——覆盖了从代码提交到生产发布的完整链路，这意味着 Buildkite 正在从纯粹的构建执行工具向端到端发布平台转型。^[].md]
+
+**定价结构的分层逻辑**：页面突出"Flexible compute"，明确区分 self-hosted agents、Mac hosted agents 和 Linux hosted agents 三种计算环境。这种分层暗示了企业在 CI/CD 场景中的异构需求——iOS/macOS 开发需要 Apple 硬件，而 Web 服务通常跑在 Linux 上。Buildkite 不再要求所有工作负载使用同一套基础设施，客观上降低了迁移成本。^[].md]
+
+**Test Engine 的定位值得注意**：页面将"Remove flaky tests, split tests, optimize performance"作为独立能力模块推广，说明 Buildkite 认定 flaky test 是企业级 CI/CD 的核心痛点之一。这与社区中大量关于 test flakiness 讨论的现状吻合——flaky tests 直接影响构建可靠性，进而影响团队对 CI 系统的信任度。^[].md]
+
+**Mobile Delivery Cloud 的独立推广**：将移动端交付作为单独模块，说明 Buildkite 观察到移动应用发布的特殊性——签名、OTA、分发、版本管理——与 Web CI/CD 有本质区别，独立产品线有助于专门优化这一工作流。^[].md]
 
 ## 实践启示
 1. **选型评估时关注能力边界而非单一价格**：Buildkite 的定价模块化意味着同一团队可能需要 Pipeline + Test Engine + Package Registries 的组合，而非购买一个"全功能版本"。评估时应对照自身工作流，确认需要哪些模块。
@@ -31,11 +39,11 @@ Buildkite 的定价页面揭示了 CI/CD 平台在 2026 年的竞争格局已从
 - source/newsletter
 
 ## 相关实体
-- [Buildkite Pricing | Buildkite](ch03/051-buildkite-pricing-buildkite.html)
+- [[entities/buildkite-pricing-buildkite|Buildkite Pricing | Buildkite]
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [[concepts/harness-engineering-framework|Harness Engineering]
 
 ---
 

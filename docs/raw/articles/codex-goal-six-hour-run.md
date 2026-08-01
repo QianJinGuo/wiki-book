@@ -14,6 +14,7 @@ source: Tecton & Tide (Yannik Zuehlke)
 published: 2026-05-01
 created: 2026-05-10
 updated: 2026-05-10
+source_url: "https://tectontide.com/en/blog/codex-goal-six-hour-run/"
 ---
 # /goal: The Six-Hour Codex Run That Survived a Five-Hour Pause
 **来源：** Tecton & Tide Blog (Yannik Zuehlke)

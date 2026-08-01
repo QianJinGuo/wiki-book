@@ -10,6 +10,7 @@ ingested: 2026-06-05
 review_value: 8
 review_confidence: 8
 review_recommendation: worth-reading
+source_url: "unavailable"
 ---
 
 # AI 原生研发落地实践：我用 Spec-Kit 和 BMAD 跑了一遍 SDD

@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 56
 stars: 4
 sha256: 1eb55e1794436245ebd9277d6c20d54389a4559ac8e965ac8035c892930356bf
+source_url: "unavailable"
 ---
 
 # 京东 Taro Native 框架静态布局直渲提速

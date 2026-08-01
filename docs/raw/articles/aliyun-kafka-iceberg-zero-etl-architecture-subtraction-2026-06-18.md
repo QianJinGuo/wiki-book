@@ -11,6 +11,7 @@ review_value: 9
 review_confidence: 9
 review_recommendation: strong
 review_stars: 4
+source_url: "unavailable"
 ---
 
 # AI 时代，实时入湖正在告别 ETL：从 Kafka 到 Iceberg 的架构减法

@@ -9,6 +9,17 @@
 07 七、落地路径：成熟度模型与五步实施建议
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("aws aidl 范式迁移 platform drive…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 
 ```mermaid

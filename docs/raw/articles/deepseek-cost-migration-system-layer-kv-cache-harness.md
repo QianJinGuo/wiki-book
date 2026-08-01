@@ -3,6 +3,7 @@ title: "deepseek-cost-migration-system-layer-kv-cache-harness"
 created: 2026-06-10
 type: raw-article
 sha256: 4f2672301f0b9f2443eb3931ecca919e57af55dbfc1b9a3d2cd8876da7bbc41d
+source_url: "https://mp.weixin.qq.com/s/vlIMBcywGL7Xy9_Yc8iJQQ"
 ---
 # 从 KV Cache 到 Harness：DeepSeek 正在把成本搬到系统层
 

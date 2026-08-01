@@ -4,6 +4,21 @@
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/down-fall-of-bug-bounties.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("The down fall of bug bounties"))
+    相关实体
+    深度分析
+      AI slop 涌入：从信号噪声比恶化到平台信…
+      平台应对策略的局限：技术对抗 vs 信任重建
+      研究员动机退化：从经济激励到纯粹的研究热情
+      安全研究的自动化博弈：防御方的结构性劣势
+    实践启示
+```
+
 ## 核心要点
 - Published Time: 2026-05-18T12:32:41.000Z Markdown Content: May 18 2026 A few days ago, I was reading a post by Kabir Ach...
 

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: acd03bf03f2f9d94764af336a1144e79b8d1b918bfb4b1d7751799e9bc7a344d
+source_url: "https://mp.weixin.qq.com/s/t4OzcK0zHh3Toxs5V6EQQg"
 ---
 
 # 拆解 OpenClaw 架构（四）：70% 向量 + 30% 关键词，一套生产级记忆检索引擎

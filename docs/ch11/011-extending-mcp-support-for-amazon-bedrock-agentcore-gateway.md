@@ -6,6 +6,33 @@
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Extending MCP support for Am…"))
+    Unite MCP servers for e…
+    Surface your MCP server…
+    Dynamic listing for run…
+    Streaming, session mana…
+      Streamable HTTP
+      Session management
+      Elicitation
+    OAuth 2.0 on-behalf-of …
+    Conclusion
+    About the authors
+      Anagh Agrawal
+      Eashan Kaushik
+      Ke Ma
+      Kyungna Kim
+    第 2 来源 — MCP 2026-07-28…
+      MCP 无状态化
+      HTTP 标准化
+      扩展系统与授权升级
+      实践启示
+```
+
 ## Unite MCP servers for enterprise through AgentCore Gateway
 
 Without a centralized gateway, every MCP server that your organization builds must independently handle credentials, policy enforcement, private connectivity, and logging. This means that your legal team’s contract review MCP server, your finance team’s data retrieval MCP server, and your operations team’s incident response MCP server each carry the same infrastructure burden. Security teams review each server individually, developers wait for approvals, and nobody has a unified view of how MCP infrastructure is being used across the organization.

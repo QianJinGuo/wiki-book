@@ -11,6 +11,7 @@ review_value: 7
 review_confidence: 8
 review_recommendation: worth-reading
 sources: [entities/chatgpt-dreaming-v3-long-term-memory-architecture]
+source_url: "https://x.com/OpenAI/status/2062567556524003631"
 ---
 
 # ChatGPT记忆大升级，十亿人免费用！

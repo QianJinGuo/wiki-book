@@ -13,6 +13,22 @@
 有技术深度的文章。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Detecting Silent Agent Failu…"))
+    概念导图
+    深度分析
+      从基础设施可观测性到行为可观测性的范式跃迁
+      Trace 聚类的两层级架构
+      自治系统的可观测性枷锁
+      用户意图分析对 Agent 演进的价值
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

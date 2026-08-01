@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 7df3c0f491d6dc97e6545e7c5c483ba8163ffe9cbce296aa07d2b6aeda375027
+source_url: "https://mp.weixin.qq.com/s/w3cfFEvfQUAUSEG8F3VqOQ"
 ---
 
 # 长时自主Agent，先解决这8个Harness核心问题

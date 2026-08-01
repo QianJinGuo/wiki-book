@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 8a859c792c9a2ab7030a84a12f96d9ee5d26feaec913bc24628b40e9f40943d4
+source_url: "https://mp.weixin.qq.com/s/dKgn6ZCeI8qSTt1UueuDEg"
 ---
 
 # 丰饶之后：AI Coding 观察报告 2.0｜AI 透镜系列研究

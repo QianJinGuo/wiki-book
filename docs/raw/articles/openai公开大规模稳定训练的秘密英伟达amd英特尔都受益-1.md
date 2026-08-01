@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 1f17446d93ef2ad428c9bd3b701a107179dc1d40e2b1483ab3aac99532b7db66
+source_url: "https://mp.weixin.qq.com/s/QugylM-Bhdx785Gnxca84w"
 ---
 
 # OpenAI公开大规模稳定训练的秘密，英伟达AMD英特尔都受益

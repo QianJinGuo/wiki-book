@@ -4,6 +4,7 @@ title: "从 Autoresearch 到 Better-Harness：自动优化真正难在评价信�
 source: wechat
 ingested: 2026-05-20
 sha256: 0a2f5b0f08a2893fb004c1526242de7eb3dc97eff19d71c10a11a1fbfaad63d9
+source_url: "unavailable"
 ---
 
 ## 相关概念

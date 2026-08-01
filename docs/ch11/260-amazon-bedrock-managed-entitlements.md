@@ -9,6 +9,20 @@
 > **Background**: 本文基于 AWS 官方博客，介绍 Managed Entitlements for Amazon Bedrock 的功能设计、适用场景和部署流程。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock Managed Entit…"))
+    核心问题
+    Managed Entitlements 方案
+      模型分类
+      四步部署流程
+      关键考虑
+    相关实体
+```
+
 ## 核心问题
 
 ```mermaid

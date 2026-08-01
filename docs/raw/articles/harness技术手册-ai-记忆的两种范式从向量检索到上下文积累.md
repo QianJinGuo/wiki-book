@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 1bead103541828007aad573bf70c649cfde8ad077d59b796ef550b107da6584a
+source_url: "https://mp.weixin.qq.com/s/Zr4MPCWCNGV9hyYTBwguKQ"
 ---
 
 # harness技术手册-AI 记忆的两种范式：从向量检索到上下文积累

@@ -6,6 +6,7 @@ source_account: MiMo
 created: 2026-07-02
 fetched: 2026-07-02
 sha256: 287e075efa4ecf725dc5db6b30b5745606a767fbd43a4cb2e2aa8e865631c941
+source_url: "https://mimo.xiaomi.com/zh/blog/mimo-v2-5-inference"
 ---
 
 MiMo-V2.5 系列通过系统性重构推理栈，实现最高 99% 的 API 降价。本文是业内首篇全面覆盖 Hybrid SWA + MoE + 多模态组合架构的大规模工程落地方案。

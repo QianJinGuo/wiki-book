@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: c27fb528386074c49fc51db2e29b312263ee76dbcb35516311cce426f2db7a43
+source_url: "https://mp.weixin.qq.com/s/6kpzWl4pkZJe-oJluxgZjg"
 ---
 
 # AI Agent 应用精细化评测：评测体系设计与工程实践

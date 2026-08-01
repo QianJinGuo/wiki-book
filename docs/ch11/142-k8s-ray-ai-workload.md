@@ -6,6 +6,21 @@
 
 # 腾讯 K8s + Ray 超大规模 AI Workload 调度实践
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("腾讯 K8s + Ray 超大规模 AI Workloa…"))
+    深度分析
+      K8s + Ray 协同调度的设计哲学
+      从 Virtual Kubelet 到联邦架构…
+      RLHF 调度范式迁移的驱动因素
+      跨层弹性调度与容灾的未来方向
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 腾讯 TEG Ray 团队基于 QCon 分享，深度解析了 **K8s + Ray + PyTorch + vLLM** 黄金组合在超大规模 AI Workload 中的落地实践。核心贡献包括：从 Virtual Kubelet 到 KubeRay 联邦架构的演进路径、跨层弹性调度三级自调优体系、以及全方位的跨层自动化容灾机制。该方案支撑腾讯内部上百个 K8s 物理集群、单集群万卡以上的 AI 训练与推理任务。

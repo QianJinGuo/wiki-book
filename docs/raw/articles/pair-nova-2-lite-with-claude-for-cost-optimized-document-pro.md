@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 551e0f452914eabb05dad71d21303ce3dd0ea9ed4524ad6afd1ef2f731d55e52
+source_url: "https://aws.amazon.com/blogs/machine-learning/pair-nova-2-lite-with-claude-for-cost-optimized-document-processing/"
 ---
 
 sha256: c8851ea611bd9d2a9d198657d99d50af19600b6dbe436f61713a013c5ec51c94

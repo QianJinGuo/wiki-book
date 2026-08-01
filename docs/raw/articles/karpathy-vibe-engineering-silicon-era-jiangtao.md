@@ -3,6 +3,7 @@ title: "karpathy-vibe-engineering-silicon-era-jiangtao"
 created: 2026-06-10
 type: raw-article
 sha256: e0847f79b6ac8b7159f0dbb570e666ee21557a63e41535b1227f4578610eb2b9
+source_url: "https://mp.weixin.qq.com/s/BIxfYW9CO1m8L3qK-8XD3w"
 ---
 source_url: https://mp.weixin.qq.com/s/BIxfYW9CO1m8L3qK-8XD3w
 source_title: 连Karpathy都开始恐慌：AI正在重新定义「程序员」｜硅基时间

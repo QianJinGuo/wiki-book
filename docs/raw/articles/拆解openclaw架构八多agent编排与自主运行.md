@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 2b68a33e27a4417350b5d47a1f4f6c953de4e0fd0d10595b83f9c31321cca184
+source_url: "https://mp.weixin.qq.com/s/yLrwrkhhhSnHy0z6jWIPuQ"
 ---
 
 # 拆解OpenClaw架构（八）：多Agent编排与自主运行

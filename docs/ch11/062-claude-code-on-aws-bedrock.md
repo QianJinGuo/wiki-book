@@ -2,7 +2,7 @@
 
 ## Ch11.062 Claude Code on AWS Bedrock 配置指南
 
-> 📊 Level ⭐⭐ | 11.5KB | `entities/claude-code-aws-bedrock-guide.md`
+> 📊 Level ⭐⭐ | 12.2KB | `entities/claude-code-aws-bedrock-guide.md`
 
 # Claude Code on AWS Bedrock 配置指南
 
@@ -84,11 +84,11 @@ aws iam create-access-key --user-name claude-code-bedrock
 ## 参考来源
 
 ## 相关实体
-- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](../ch05/095-ai.html)
-- [Bedrock Agentcore Payment X402 Agent](ch11/050-bedrock-agentcore.html)
-- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch03/077-claude-code.html)
-- [Easy Deployment Of Claude Agent Sdk In Production](../ch01/1022-claude.html)
-- [Claude Code Open Source Model Enterprise Practice](../ch03/077-claude-code.html)
+- [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](../ch05/097-ai.html)
+- [Bedrock Agentcore Payment X402 Agent](ch11/059-bedrock-agentcore.html)
+- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch03/084-claude-code.html)
+- [Easy Deployment Of Claude Agent Sdk In Production](../ch01/1441-claude.html)
+- [Claude Code Open Source Model Enterprise Practice](../ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-aws-bedrock-guide.md)
 

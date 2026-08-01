@@ -5,6 +5,28 @@
 > 📊 Level ⭐⭐ | 14.4KB | `entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从手动到智能：用 Kiro CLI + OpenSear…"))
+    概念导图
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+      1. 技术架构的本质：MCP 协议作为'通用适…
+      2. Kiro CLI 的多层次 Agenti…
+      3. 三大典型场景的技术深度分析
+      4. 技术组合的战略意义：从工具到平台
+    实践启示
+      立即可行的行动
+      中期建设方向
+      长期战略思考
+```
+
 ## 概念导图
 
 ```mermaid
@@ -23,36 +45,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "意图理解"
-        NAT[自然语言描述] --> PARSE[意图解析]
-        PARSE --> CTX[上下文收集<br/>代码库/配置]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "代码生成"
-        PLAN[任务分解] --> GEN[代码生成]
-        GEN --> REVIEW[静态分析]
-        REVIEW -->|"问题"| GEN
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    subgraph "验证闭环"
-        TEST[运行测试]
-        LINT[风格检查]
-        FIX[自动修复]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    GEN --> TEST & LINT
-    TEST -->|"失败"| FIX --> GEN
-    subgraph "知识库"
-        SKILLS[技能/模板]
-        DOCS[文档/示例]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    CTX --> PLAN
-    PLAN --> SKILLS & DOCS
-    classDef intent fill:#dbeafe,stroke:#2563eb
-    classDef gen fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    classDef kb fill:#fef3c7,stroke:#d97706
-    class NAT,PARSE,CTX intent
-    class PLAN,GEN,REVIEW gen
-    class TEST,LINT,FIX verify
-    class SKILLS,DOCS kb
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 by awschina on 12 1月 2026 in Artificial Intelligence Permalink Share 1. 背景介绍 随着云原生技术和分布式搜索引擎的广泛应用，OpenSearch 已成为企业构建搜索和分析解决方案的重要选择。然而，OpenSearch 的使用往往面临着诸多挑战： 在运维层面 ，复杂的集群配置、繁琐的索引管理、性能调优的专业门槛，以及故障排查时需要深厚的技术积累，使得许多运维人员在日常工作中感到力不从心，难以快速响应业务需求。 在应用层面 ，从海量数据中提取有价值的信息、优化搜索性能、调整向量检索参数等任务，同样需要深入理解 OpenSearch 的查询语法和底层机制，这对开发人员和数据分析师来说也是不小的挑战。为了降低 Op

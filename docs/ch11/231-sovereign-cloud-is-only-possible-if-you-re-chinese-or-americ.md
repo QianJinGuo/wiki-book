@@ -8,6 +8,21 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5237660.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Sovereign cloud is only poss…"))
+    深度分析
+      主权云的技术结构性困境
+      欧洲主权云的历史教训
+      云退出策略被普遍忽视
+      多云策略的误区
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Gartner 副总裁分析师 Douglas Toombs 在悉尼 IT 基础设施、运营与云策略大会上指出，只有美国和中国具备构建完全主权云所需的全部技术栈，其他国家和地区无法脱离外国供应商实现真正的云主权。即便采用本地部署方案（AWS Outposts、Azure Local、Oracle Dedicated Cloud Regions），仍需"打电话回家"（phone home），无法实现真正独立。

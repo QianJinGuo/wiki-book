@@ -4,6 +4,7 @@ source: ""
 tags: [shannon, information-theory, epiplexity, finite-compute]
 created: 2026-05-20
 sha256: 0b2000fb1d14c8b4d9f04c9965cb6dfd8633131c16e8b85aaffe5ba5dd3422f1
+source_url: "https://mp.weixin.qq.com/s/YZkpBN1PECoVdVFZT-JYnA"
 ---
 ---
 # Shannon 没有想到的事——当信息论遇上有限算力

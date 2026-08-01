@@ -6,6 +6,7 @@ ingest_date: 2026-07-02
 vxc: 64
 stars: 4
 sha256: 74876143cbdf0eb438e13b02ce8ac1fc9af5383b222251fdc1f7e772fc58c1e3
+source_url: "unavailable"
 ---
 
 # 吴恩达最新思考：从分钟到天，AI产品如何靠三层Loop迭代

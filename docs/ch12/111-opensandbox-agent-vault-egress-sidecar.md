@@ -2,7 +2,7 @@
 
 ## Ch12.111 OpenSandbox：阿里开源的云端 Agent 安全沙箱（凭据 Vault + egress sidecar）
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/opensandbox-aliyun-cloud-agent-sandbox-vibecoder.md`
+> 📊 Level ⭐⭐ | 4.5KB | `entities/opensandbox-aliyun-cloud-agent-sandbox-vibecoder.md`
 
 # OpenSandbox：阿里开源的云端 Agent 安全沙箱（凭据 Vault + egress sidecar）
 
@@ -12,13 +12,14 @@
 
 OpenSandbox 负责执行面：创建隔离环境、执行命令、处理文件、控制出站请求。调度、会话、记忆、任务语义等上层能力需要外部系统自己接。
 
-与 [Claude Managed Agents](../ch04/710-claude-managed-agents.html) 的关系：OpenSandbox 更接近 Environment、Sandbox、Vault、Permission policy 里偏运行时的部分，Agent harness 那层不会替你做。
+与 [Claude Managed Agents](../ch04/612-claude-managed-agents.html) 的关系：OpenSandbox 更接近 Environment、Sandbox、Vault、Permission policy 里偏运行时的部分，Agent harness 那层不会替你做。
 
 ## 凭据设计（核心亮点）
 
 **问题**：最省事的做法是把 token 放到环境变量里，但 Agent 进程能读到，命令能打印出来，恶意代码也能转手带走。
 
 **方案：Credential Vault**：
+
 - 真实凭据写进 egress sidecar
 - 容器里只给 fake key 或空值
 - Agent 发 HTTPS 请求，sidecar 透明拦截检查目标 host/method/path
@@ -55,8 +56,8 @@ OpenSandbox 负责执行面：创建隔离环境、执行命令、处理文件�
 
 ## 相关实体
 
-- [Claude Managed Agents](../ch04/710-claude-managed-agents.html) — 类似的 sandbox 架构
-- [LangChain Sandbox Architecture](../ch05/095-ai.html) — 另一种 sandbox 设计
+- [Claude Managed Agents](../ch04/612-claude-managed-agents.html) — 类似的 sandbox 架构
+- [LangChain Sandbox Architecture](../ch01/351-langchain.html) — 另一种 sandbox 设计
 - [Microsoft mxc Containers](../ch03/035-agent.html) — Microsoft 的 sandbox 方案
 
 ---

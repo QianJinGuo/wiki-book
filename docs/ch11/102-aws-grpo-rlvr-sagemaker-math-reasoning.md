@@ -8,6 +8,26 @@
 Training large language models requires accurate feedback signals, but traditional reinforcement learning (RL) often struggles with reward signal reliability. The quality of these signals directly influences how models learn and make decisions. However, creating robust feedback mechanisms can be complex and error prone. Real-world training scenarios often introduce hidden biases, unintended incentives, and ambiguous success criteria that can derail the learning process, leading to models that behave unpredictably or fail to meet desired objectives.
 In this post, you will learn how to implement reinforcement learning with verifiable rewards (RLVR) to introduce verification and transparency into reward signals to improve training performance. This approach works best when outputs can be objectively verified for correctness, such as in mathematical reasoning, code generation, or symbolic manipulation tasks. You will also learn how to layer techniques like Group Relative Policy Optimization (GRPO) and few-shot examples to further improve results. You'll use the [GSM8K](<https://huggingface.co/datasets/openai/gsm8k/viewer/main/train?row=7294&views%5B%5D=main_train>) dataset (Grade School Math 8K: a collection of grade school math problems) to improve math problem solving accuracy, but the techniques used here can be adapted to a wide variety of other use cases.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS GRPO RLVR Sagemaker Math…"))
+    Technical overview
+    深度分析
+      RLVR双奖励机制的设计逻辑
+      GRPO的组内相对优化机制
+      QLoRA在RLVR训练中的角色
+      8-shot阈值的理论解释
+    实践启示
+      1. 何时选择RLVR而非DPO/RM
+      2. 奖励函数设计的最佳实践
+      3. GRPO超参数配置建议
+      4. 扩展到其他领域的路径
+    相关实体
+```
+
 ## Technical overview
 Before diving into implementation, it's helpful to understand the RL concepts that underpin this approach. RL addresses challenges in model training by establishing a structured feedback system through reward signals. This paradigm enables models to learn through interaction, receiving feedback that guides them toward optimal behavior. RL provides a framework for models to iteratively improve their responses based on clearly defined signals about the quality of their outputs, making it highly effective for training models that interact with users and must adapt their behavior based on outcomes. Traditional RL has highlighted an important consideration: the quality of the reward signal matters significantly. When reward functions are imprecise or incomplete, models can engage in "reward hacking," finding unintended ways to maximize scores without achieving the desired behavior. Recognizing this limitation has led to the development of more rigorous approaches that focus on creating reliable, well-defined reward functions.
 

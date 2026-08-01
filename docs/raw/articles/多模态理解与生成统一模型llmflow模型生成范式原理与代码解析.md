@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 38d2dfa180be948bbd2ed9b18083854ad4f78373e6440c182a9119456c482c05
+source_url: "https://mp.weixin.qq.com/s/dYV9VcajT5K6ofSI2Hr1jQ"
 ---
 
 # 【多模态理解与生成统一模型】LLM+flow模型生成范式原理与代码解析

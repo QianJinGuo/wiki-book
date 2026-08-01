@@ -6,6 +6,7 @@ date: 2026-01-19
 url: https://mp.weixin.qq.com/s/mbq266tCUjwwqW9n8M-7vg
 tags: [article, prompt-engineering]
 sha256: 8b8514b00ca43c9c5dc1fb35b33500610bb8403d5b7d4e4b74920df4fe7a2108
+source_url: "unavailable"
 ---
 
 # Gemini 深度导读生成器 Prompt
