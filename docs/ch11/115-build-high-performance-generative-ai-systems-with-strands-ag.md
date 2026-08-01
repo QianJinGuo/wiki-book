@@ -8,6 +8,26 @@
 
 > **Background**: AWS 官方博客展示如何用 NVIDIA NIM (GPU 加速推理) + Strands Agents (多 Agent 编排) + Bedrock AgentCore (托管 runtime / 共享 memory / 可观测性) 构建生产级多 Agent 内容审核系统。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Build high-performance gener…"))
+    核心问题
+    解决方案：四层架构
+    组件职责
+      NVIDIA NIM
+      Strands Agents
+      Bedrock AgentCore Runtime
+      AgentCore Memory
+    部署工具链
+    适用场景
+    部署优势
+    关键 trade-off
+    参考实现
+```
+
 ## 核心问题
 
 生产环境 Agent 系统的三大挑战：

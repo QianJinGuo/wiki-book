@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **23 篇**实体，按深度递增排列。
+> 本章收录 **25 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,6 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
+| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
@@ -28,7 +29,37 @@ AI 最终要从屏幕走进物理世界。
 
 ---
 
-## Ch18.001 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
+## Ch18.001 具身智能-家庭陪伴-机器人
+
+> 📊 Level ⭐ | 1.1KB | `entities/具身智能-家庭陪伴-机器人.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/具身智能-家庭陪伴-机器人.md)
+
+2026 年，具身智能走到一个耐人寻味的转折点。工厂人形机器人仍在逐条验证 ROI，聚光灯却已悄然转向家庭与消费场景：超仿生人形机器人预售订单以万计，挤满 CES 展台。当「进入家庭」第一次成为机器人产品的关键词，热闹之下，行业共识正在松动 —— 过去三年，具身公司都在回答「如何让机器人把活干好」；而当机器人真正走进家庭，另一道题几乎无人认真作答：机器人，真的懂它所服务的这个人吗？
+
+## 来源
+
+- 原文: [具身智能-家庭陪伴-机器人](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/具身智能-家庭陪伴-机器人.md)
+- 原始链接: : https://mp.weixin.qq.com/s/4GBZ307qPaS8oDXvFAf70g
+
+---
+
+## Ch18.002 具身智能高考难疯了人类100分最强模型128
+
+> 📊 Level ⭐ | 0.7KB | `entities/具身智能高考难疯了人类100分最强模型128.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/具身智能高考难疯了人类100分最强模型128.md)
+
+[ __](<javascript:;>)
+
+## 来源
+
+- 原文: [具身智能高考难疯了人类100分最强模型128](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/具身智能高考难疯了人类100分最强模型128.md)
+- 原始链接: : https://mp.weixin.qq.com/s/GzF9cX8uIJr_YlO9GTX7bQ
+
+---
+
+## Ch18.003 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md`
 
@@ -137,7 +168,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ---
 
-## Ch18.002 机器人为什么要拟人？终于有人正确回答了
+## Ch18.004 机器人为什么要拟人？终于有人正确回答了
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/机器人为什么要拟人终于有人正确回答了.md`
 
@@ -220,9 +251,9 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ---
 
-## Ch18.003 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
+## Ch18.005 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
 
-> 📊 Level ⭐⭐ | 10.1KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代-xiaomi.md`
+> 📊 Level ⭐⭐ | 10.8KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代-xiaomi.md`
 
 # 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
 
@@ -323,80 +354,9 @@ Xiaomi-Robotics-U0 最核心的设计决策是**用统一的自回归框架覆�
 
 ---
 
-## Ch18.004 LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
+## Ch18.006 小米机器人汽车工厂柔性操作与多机协同实战
 
-> 📊 Level ⭐⭐ | 9.2KB | `entities/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md`
-
-# LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
-
-蚂蚁灵波（Ant Lingbo）于 2026 年 7 月发布 LingBot-VA 2.0，全球首个**具身原生**（Embodiment-Native）预训练 VA（Video-Action）基座模型。与传统"先视觉预训练、后接入机器人"的级联方案不同，LingBot-VA 2.0 从架构、数据到训练目标均为机器人量身定制，采用因果 DiT（Causal Diffusion Transformer）+ 稀疏 MoE 主干，在单 GPU 上实现 150Hz 推理频率，双臂任务成功率达 93.6%。
-
-## 技术亮点
-
-- **因果 DiT + 稀疏 MoE 主干**：模型核心架构，结合因果注意力与扩散 Transformer，通过稀疏 MoE 降低推理成本
-- **单 GPU 150Hz 推理**：高效推理性能，适合实时机器人控制场景
-- **双臂任务成功率 93.6%**：在真实机器人实验中的任务完成率
-- **预判式控制**：模型基于对物理动态的预测（而非纯反应式）生成动作序列，在快速变化场景（如冰球对战）中表现显著优于反应式基线
-
-## 应用场景
-
-LingBot-VA 2.0 在多项真实机器人任务中得到验证，包括整理桌面、冰球对战等动态操控场景。研究团队通过端到端 VA 预训练，使机器人具备"预判未来"的能力，从"看到哪打到哪"的反应式操作升级为基于物理预测的主动控制。
-
-## 深度分析
-
-### 1. "具身原生"设计：从级联范式到原生预训练的范式转变
-
-传统的机器人 VLA（Vision-Language-Action）范式采用级联方案：先用互联网数据预训练视觉模型，再将视觉特征接入动作策略网络。LingBot-VA 2.0 的突破在于彻底抛弃了这一路线，从第一天起就采用因果架构从零训练整套模型。 原因在于：改造式路线（将双向注意力模型手术式改造成因果模型）存在天然的预训练知识磨损风险 — 机器人数据本就稀缺，改造过程容易抹掉预训练阶段学到的大规模先验知识。而是用原生因果架构，让模型天然按照"只能看过去、不能看未来"的时间线学习，恰好匹配闭环控制中"当下不能预知未来"的物理现实。
-
-### 2. 语义视觉-动作分词器：超越像素重建的表示学习
-
-LingBot-VA 2.0 的 VAE 分词器是整套系统的基础创新。 传统的视频 VAE 只追求像素重建质量（"压缩得像"），但 LingBot-VA 2.0 的语义视觉-动作分词器在像素重建的同时，额外向冻结的视觉基础模型对齐特征，把语义信息也编码进 latent 中。更重要的是，团队单独训练了一个隐动作模块 — 通过一对逆动力学模型和正向动力学模型，从连续两帧 latent 中反推出中间发生的动作类别。这意味着即使是完全未标注的网络视频，也能被模型学出与动作相关的监督信号。这种设计大幅扩展了可训练数据来源，使模型能从海量互联网视频中习得丰富的物理交互先验。
-
-### 3. 稀疏 MoE + Foresight Reasoning：实时闭环控制的两大工程突破
-
-实时机器人控制的最大挑战是模型计算延迟直接转化为动作延迟。LingBot-VA 2.0 通过两个正交的工程创新突破这一瓶颈。
-
-首先，**稀疏 MoE 架构**让模型总参数做大（视频主干约 13B，总训练参数量约 15.3B）而推理时仅激活其中一部分（每 token 约 2.5B）。经过一致性蒸馏、低精度编译执行、长程注意力优化和运行时开销削减后，推理时间从 965ms/chunk 降至 142ms/chunk，异步控制频率从 33Hz 提升至 225Hz。
-
-其次，**Foresight Reasoning 异步推理机制**让模型在机器人执行当前动作片段的同时，已经在并行脑补下一步。 模型先想象当前动作执行完后的画面状态，再基于这个想象结果提前准备下一步动作。为避免"脑补漂移"，在每次真实观测返回时用最新画面重新校准。本质上这是一套"预测-执行-纠偏"闭环，让计算与动作执行流水线并行。
-
-### 4. 三项真实任务验证与消融分析
-
-研究团队在三个真实维度验证了模型能力：
-
-- **整理桌面**：考验长程状态维持能力。高维 planner 做任务拆解（左臂回收垃圾、右臂复位文具），视频预测分支天然携带时序状态记忆，避免"断片"返工。
-- **传送带抓取**：考验动态目标的时间对齐能力。模型不只识别当前位置，而是预测抓取动作完成瞬间物体的所在位置，将动作执行的时间开销提前纳入计算。
-- **抓薯片**：考验精细操作的视觉伺服能力。既要精确把握夹爪与薄脆物体的相对位置，又不能捏碎目标。
-
-在 RoboTwin 2.0 仿真基准上，LingBot-VA 2.0 取得 Clean 93.8%、Randomized 93.4%、Avg 93.6% 的成绩，全面超越 π0.5、Motus 等基线模型。 消融实验验证了新分词器的价值：自研分词器在 50 个任务的 Easy/Hard 上取得 86.6%/83.1%，显著高于通用 WAN2.2 VAE（78.0%/76.0%）。MCP（多步预测）辅助目标带来了 2.3× 训练加速。
-
-### 5. "机器人大脑 2.0"全景：从感知到预测的完整链条
-
-LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系列的一部分。 LingBot-Depth 2.0 解决空间感知，LingBot-VLA 2.0 解决当下动作执行，LingBot-Video 补上视频生成推理效率短板，LingBot-VA 2.0 将所有能力汇聚到预测式控制。串起来看，这是一条从"看清楚世界"→"理解物理世界"→"在真实世界里连续行动"的完整链条。当机器人本体越来越成熟，行业竞争的关键正在从硬件的灵巧度转向"大脑是否从出生起就真正为物理世界而生"。
-
-## 实践启示
-
-1. **原生因果架构优于改造式迁移**：从 LingBot-VA 1.0 到 2.0 的演进证明，对于机器人这样的闭环控制任务，从零训练的因果架构优于从双向模型改造的迁移学习路线。如果需要在机器人场景部署视觉基座模型，建议优先考虑原生因果设计而非改造现有双向模型。
-
-2. **视频数据中的隐动作标签远超人工标注**：通过逆动力学模型从连续帧中自动提取动作信号，使得海量互联网无标注视频成为有效训练数据。建议具身智能团队在数据策略上将"自动提取隐动作标签"作为优先级高于人工标注的选项。
-
-3. **推理效率优化需要系统级设计**：LingBot-VA 2.0 的 225Hz 推理频率不是单一优化达成的，而是 MoE 稀疏激活 + 一致性蒸馏 + 低精度编译 + 长程注意力优化 + 异步推理机制的协同结果。对于实时机器人控制场景，建议将推理 pipeline 的延迟预算拆解到每个子模块，系统性地优化而非局部加速。
-
-4. **Foresight Reasoning 可推广至其他实时控制场景**："预测-执行-纠偏"异步机制不仅适用于机器人，也适用于自动驾驶、工业控制等需要低延迟闭环的场景。核心思路是用预测结果替代真实观测填充间歇期，用真实观测周期性校准以避免漂移。
-
-5. **构建"感知→理解→行动"的全栈能力而非单点突破**：蚂蚁灵波从 Depth → VLA → Video → VA 的发布序列表明，机器人智能的核心竞争力在于全栈能力而非单一基座模型。单点模型即使再强，如果缺乏空间感知、动作执行和推理效率的配套支持，也难以在真实场景中落地。建议具身智能团队在模型研发时同步规划感知、推理和控制的全链路优化。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch18.005 小米机器人汽车工厂柔性操作与多机协同实战
-
-> 📊 Level ⭐⭐ | 9.1KB | `entities/小米机器人汽车工厂柔性操作多机协同-2026.md`
+> 📊 Level ⭐⭐ | 9.5KB | `entities/小米机器人汽车工厂柔性操作多机协同-2026.md`
 
 # 小米机器人汽车工厂柔性操作与多机协同实战
 
@@ -480,7 +440,78 @@ LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系�
 
 ---
 
-## Ch18.006 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
+## Ch18.007 LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
+
+> 📊 Level ⭐⭐ | 9.2KB | `entities/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md`
+
+# LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
+
+蚂蚁灵波（Ant Lingbo）于 2026 年 7 月发布 LingBot-VA 2.0，全球首个**具身原生**（Embodiment-Native）预训练 VA（Video-Action）基座模型。与传统"先视觉预训练、后接入机器人"的级联方案不同，LingBot-VA 2.0 从架构、数据到训练目标均为机器人量身定制，采用因果 DiT（Causal Diffusion Transformer）+ 稀疏 MoE 主干，在单 GPU 上实现 150Hz 推理频率，双臂任务成功率达 93.6%。
+
+## 技术亮点
+
+- **因果 DiT + 稀疏 MoE 主干**：模型核心架构，结合因果注意力与扩散 Transformer，通过稀疏 MoE 降低推理成本
+- **单 GPU 150Hz 推理**：高效推理性能，适合实时机器人控制场景
+- **双臂任务成功率 93.6%**：在真实机器人实验中的任务完成率
+- **预判式控制**：模型基于对物理动态的预测（而非纯反应式）生成动作序列，在快速变化场景（如冰球对战）中表现显著优于反应式基线
+
+## 应用场景
+
+LingBot-VA 2.0 在多项真实机器人任务中得到验证，包括整理桌面、冰球对战等动态操控场景。研究团队通过端到端 VA 预训练，使机器人具备"预判未来"的能力，从"看到哪打到哪"的反应式操作升级为基于物理预测的主动控制。
+
+## 深度分析
+
+### 1. "具身原生"设计：从级联范式到原生预训练的范式转变
+
+传统的机器人 VLA（Vision-Language-Action）范式采用级联方案：先用互联网数据预训练视觉模型，再将视觉特征接入动作策略网络。LingBot-VA 2.0 的突破在于彻底抛弃了这一路线，从第一天起就采用因果架构从零训练整套模型。 原因在于：改造式路线（将双向注意力模型手术式改造成因果模型）存在天然的预训练知识磨损风险 — 机器人数据本就稀缺，改造过程容易抹掉预训练阶段学到的大规模先验知识。而是用原生因果架构，让模型天然按照"只能看过去、不能看未来"的时间线学习，恰好匹配闭环控制中"当下不能预知未来"的物理现实。
+
+### 2. 语义视觉-动作分词器：超越像素重建的表示学习
+
+LingBot-VA 2.0 的 VAE 分词器是整套系统的基础创新。 传统的视频 VAE 只追求像素重建质量（"压缩得像"），但 LingBot-VA 2.0 的语义视觉-动作分词器在像素重建的同时，额外向冻结的视觉基础模型对齐特征，把语义信息也编码进 latent 中。更重要的是，团队单独训练了一个隐动作模块 — 通过一对逆动力学模型和正向动力学模型，从连续两帧 latent 中反推出中间发生的动作类别。这意味着即使是完全未标注的网络视频，也能被模型学出与动作相关的监督信号。这种设计大幅扩展了可训练数据来源，使模型能从海量互联网视频中习得丰富的物理交互先验。
+
+### 3. 稀疏 MoE + Foresight Reasoning：实时闭环控制的两大工程突破
+
+实时机器人控制的最大挑战是模型计算延迟直接转化为动作延迟。LingBot-VA 2.0 通过两个正交的工程创新突破这一瓶颈。
+
+首先，**稀疏 MoE 架构**让模型总参数做大（视频主干约 13B，总训练参数量约 15.3B）而推理时仅激活其中一部分（每 token 约 2.5B）。经过一致性蒸馏、低精度编译执行、长程注意力优化和运行时开销削减后，推理时间从 965ms/chunk 降至 142ms/chunk，异步控制频率从 33Hz 提升至 225Hz。
+
+其次，**Foresight Reasoning 异步推理机制**让模型在机器人执行当前动作片段的同时，已经在并行脑补下一步。 模型先想象当前动作执行完后的画面状态，再基于这个想象结果提前准备下一步动作。为避免"脑补漂移"，在每次真实观测返回时用最新画面重新校准。本质上这是一套"预测-执行-纠偏"闭环，让计算与动作执行流水线并行。
+
+### 4. 三项真实任务验证与消融分析
+
+研究团队在三个真实维度验证了模型能力：
+
+- **整理桌面**：考验长程状态维持能力。高维 planner 做任务拆解（左臂回收垃圾、右臂复位文具），视频预测分支天然携带时序状态记忆，避免"断片"返工。
+- **传送带抓取**：考验动态目标的时间对齐能力。模型不只识别当前位置，而是预测抓取动作完成瞬间物体的所在位置，将动作执行的时间开销提前纳入计算。
+- **抓薯片**：考验精细操作的视觉伺服能力。既要精确把握夹爪与薄脆物体的相对位置，又不能捏碎目标。
+
+在 RoboTwin 2.0 仿真基准上，LingBot-VA 2.0 取得 Clean 93.8%、Randomized 93.4%、Avg 93.6% 的成绩，全面超越 π0.5、Motus 等基线模型。 消融实验验证了新分词器的价值：自研分词器在 50 个任务的 Easy/Hard 上取得 86.6%/83.1%，显著高于通用 WAN2.2 VAE（78.0%/76.0%）。MCP（多步预测）辅助目标带来了 2.3× 训练加速。
+
+### 5. "机器人大脑 2.0"全景：从感知到预测的完整链条
+
+LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系列的一部分。 LingBot-Depth 2.0 解决空间感知，LingBot-VLA 2.0 解决当下动作执行，LingBot-Video 补上视频生成推理效率短板，LingBot-VA 2.0 将所有能力汇聚到预测式控制。串起来看，这是一条从"看清楚世界"→"理解物理世界"→"在真实世界里连续行动"的完整链条。当机器人本体越来越成熟，行业竞争的关键正在从硬件的灵巧度转向"大脑是否从出生起就真正为物理世界而生"。
+
+## 实践启示
+
+1. **原生因果架构优于改造式迁移**：从 LingBot-VA 1.0 到 2.0 的演进证明，对于机器人这样的闭环控制任务，从零训练的因果架构优于从双向模型改造的迁移学习路线。如果需要在机器人场景部署视觉基座模型，建议优先考虑原生因果设计而非改造现有双向模型。
+
+2. **视频数据中的隐动作标签远超人工标注**：通过逆动力学模型从连续帧中自动提取动作信号，使得海量互联网无标注视频成为有效训练数据。建议具身智能团队在数据策略上将"自动提取隐动作标签"作为优先级高于人工标注的选项。
+
+3. **推理效率优化需要系统级设计**：LingBot-VA 2.0 的 225Hz 推理频率不是单一优化达成的，而是 MoE 稀疏激活 + 一致性蒸馏 + 低精度编译 + 长程注意力优化 + 异步推理机制的协同结果。对于实时机器人控制场景，建议将推理 pipeline 的延迟预算拆解到每个子模块，系统性地优化而非局部加速。
+
+4. **Foresight Reasoning 可推广至其他实时控制场景**："预测-执行-纠偏"异步机制不仅适用于机器人，也适用于自动驾驶、工业控制等需要低延迟闭环的场景。核心思路是用预测结果替代真实观测填充间歇期，用真实观测周期性校准以避免漂移。
+
+5. **构建"感知→理解→行动"的全栈能力而非单点突破**：蚂蚁灵波从 Depth → VLA → Video → VA 的发布序列表明，机器人智能的核心竞争力在于全栈能力而非单一基座模型。单点模型即使再强，如果缺乏空间感知、动作执行和推理效率的配套支持，也难以在真实场景中落地。建议具身智能团队在模型研发时同步规划感知、推理和控制的全链路优化。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch18.008 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/刚刚首个空间原生的具身视觉基模开源机器人更会看我们的世界了.md`
 
@@ -556,9 +587,9 @@ LingBot-Vision 和 LingBot-Depth 2.0 已通过奥比中光深度视觉实验室�
 
 ---
 
-## Ch18.007 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
+## Ch18.009 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
 # 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
@@ -648,9 +679,9 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ---
 
-## Ch18.008 啊？这是机器人的手？！
+## Ch18.010 啊？这是机器人的手？！
 
-> 📊 Level ⭐⭐ | 7.6KB | `entities/啊这是机器人的手.md`
+> 📊 Level ⭐⭐ | 7.5KB | `entities/啊这是机器人的手.md`
 
 # 啊？这是机器人的手？！
 
@@ -719,7 +750,7 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ---
 
-## Ch18.009 Unitree's IPO Filing: The State of the Robotics Market
+## Ch18.011 Unitree's IPO Filing: The State of the Robotics Market
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/unitree-ipo-robotics-market.md`
 
@@ -789,7 +820,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.010 蔚蓝BabyAlpha A3消费级机器狗
+## Ch18.012 蔚蓝BabyAlpha A3消费级机器狗
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/weilan-babyalpha-a3.md`
 
@@ -877,7 +908,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.011 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
+## Ch18.013 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
 
@@ -956,9 +987,9 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 ---
 
-## Ch18.012 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
+## Ch18.014 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
 
-> 📊 Level ⭐⭐ | 4.5KB | `entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md`
+> 📊 Level ⭐⭐ | 4.7KB | `entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md`
 
 # Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
 
@@ -995,6 +1026,7 @@ Xiaomi-Robotics-1 是小米于 2026 年 7 月发布的面向真实移动操作�
 ## 意义与影响
 
 Xiaomi-Robotics-1 验证了一条面向 [具身智能](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md) 的可规模化训练路径：
+
 1. 大规模预训练学习通用动作表征
 2. 跨本体后训练迁移到真实执行
 3. 少量下游微调快速适配新任务
@@ -1005,7 +1037,7 @@ Xiaomi-Robotics-1 验证了一条面向 [具身智能](https://github.com/QianJi
 
 ---
 
-## Ch18.013 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
+## Ch18.015 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/waic-minicpm-1-5b-model-2026.md`
 
@@ -1041,7 +1073,7 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 
 ---
 
-## Ch18.014 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
+## Ch18.016 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 
@@ -1105,7 +1137,7 @@ Physical AI is moving from research into production.
 
 ---
 
-## Ch18.015 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+## Ch18.017 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/weilan-babyalpha-a3-machine-dog.md`
 
@@ -1172,7 +1204,7 @@ Physical AI is moving from research into production.
 
 ---
 
-## Ch18.016 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
+## Ch18.018 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/lingbot-dm05-4b-embodied-foundation-model-zero-shot-2026.md`
 
@@ -1222,7 +1254,7 @@ DM0.5 将 VLA（视觉-语言-动作）模型从精心搭建的"剧本环境"推
 
 ---
 
-## Ch18.017 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
+## Ch18.019 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md`
 
@@ -1252,7 +1284,7 @@ Afford-VLA 包含三个关键步骤：
 
 ---
 
-## Ch18.018 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
+## Ch18.020 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/poxiaointelligent-tactile-robot-foundation-model-2026.md`
 
@@ -1282,7 +1314,7 @@ TouchWorld 的核心架构包含 Predictive（触觉目标预测）和 Reactive�
 
 ---
 
-## Ch18.019 具身智能空间视觉死穴，终于被最新顶会彻底解决！
+## Ch18.021 具身智能空间视觉死穴，终于被最新顶会彻底解决！
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/具身智能空间视觉死穴终于被最新顶会彻底解决.md`
 
@@ -1358,7 +1390,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.020 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+## Ch18.022 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/icra26-symskill-robot-long-horizon-manipulation.md`
 
@@ -1431,7 +1463,7 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 ---
 
-## Ch18.021 具身原生世界动作模型（Embodied World Action Model）
+## Ch18.023 具身原生世界动作模型（Embodied World Action Model）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/全球首个具身原生世界动作模型来了.md`
 
@@ -1494,7 +1526,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ---
 
-## Ch18.022 景烁科技 — 具身智能数据基础设施
+## Ch18.024 景烁科技 — 具身智能数据基础设施
 
 > 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
@@ -1564,13 +1596,13 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 
 ---
 
-## Ch18.023 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+## Ch18.025 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
-> 📊 Level ⭐⭐⭐⭐ | 5.7KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
+> 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 
 # NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
-NVIDIA 开源的 **ASPIRE**（Agentic Skill Programming through Iterative Robot Exploration）是一套让机器人通过代码执行、失败分析、修复沉淀实现持续学习的技能库系统。
+NVIDIA 开源的 **ASPIRE**（Agentic Skill Programming through Iterative Robot Exploration）是一套让机器人通过代码执行、失败分析、修复沉淀实现持续学习的技能库系统。^[nvidia-aspire-robot-skill-library-code-as-policy.md]
 
 ## ASPIRE 三阶段 Pipeline
 
@@ -1578,7 +1610,8 @@ NVIDIA 开源的 **ASPIRE**（Agentic Skill Programming through Iterative Robot 
 传统机器人程序失败时只返回"任务未完成"。ASPIRE 将每一次感知、规划、抓取、控制调用的输入、输出、视觉证据和错误日志都记录下来，就像人类工程师回放视频查问题。
 
 ### 2. Skill Library（技能库）
-Agent 修好程序后，将验证过的修复经验沉淀为可复用的 Skill。例如：
+Agent 修好程序后，将验证过的修复经验沉淀为可复用的 Skill。例如：^[nvidia-aspire-robot-skill-library-code-as-policy.md]
+
 - 「桌边物体需多角度接近」
 - 「抽屉把手过滤假检测」
 - 「平面物体推动时使用特定 motion primitive」
@@ -1586,7 +1619,7 @@ Agent 修好程序后，将验证过的修复经验沉淀为可复用的 Skill�
 Skill 本质上是一段供大模型参考的 Code Repair Pattern，让机器人遇到同类问题时无需重新试错。
 
 ### 3. Evolutionary Training（进化式训练）
-多 Agent 各自练习不同技能，将经验汇总进同一个技能库，实现分布式技能积累。
+多 Agent 各自练习不同技能，将经验汇总进同一个技能库，实现分布式技能积累。^[nvidia-aspire-robot-skill-library-code-as-policy.md]
 
 ## Jim Fan 的范式转变
 

@@ -6,6 +6,20 @@
 
 # 用 Amazon Quick 加速日常数据工作
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("用 Amazon Quick 加速日常数据工作"))
+    深度分析
+      数据工作平民化的趋势
+      与传统 ETL 管道的互补
+      成本模型分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Amazon Quick 是 AWS 推出的数据查询和分析工具，旨在简化日常数据处理工作流。它允许用户直接在 AWS 数据服务（S3、Athena、Redshift、RDS 等）上执行 SQL 查询和数据转换，无需搭建和维护 ETL 管道。对于数据分析师、工程师和开发者而言，Amazon Quick 代表了"数据工作平民化"的趋势——降低数据分析的技术门槛，让更多人能够直接从数据中获取价值。^[inferred]

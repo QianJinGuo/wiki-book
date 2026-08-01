@@ -7,6 +7,20 @@
 → （无原始来源）
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Enterprise Readiness Maturit…"))
+    概念导图
+    核心内容
+      五级成熟度定义
+      评估维度
+    深度分析
+    实践启示
+```
+
 ## 概念导图
 
 ```mermaid
@@ -20,39 +34,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "实验管理"
-        TRACK[实验追踪<br/>MLflow/W&B]
-        HP[超参调优<br/>Optuna]
-        REG[模型注册<br/>版本管理]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "评估流水线"
-        BENCH[基准测试<br/>自动评测]
-        HUMAN[人工评估<br/>LLM-as-Judge]
-        DRIFT[漂移检测<br/>数据/概念漂移]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    subgraph "部署流水线"
-        PACKAGE[模型打包<br/>ONNX/TensorRT]
-        TEST[Integration测试<br/>回归检测]
-        DEPLOY[灰度发布<br/>A/B测试]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    TRACK --> HP --> REG
-    REG --> BENCH & HUMAN
-    BENCH & HUMAN --> DRIFT
-    DRIFT --> PACKAGE --> TEST --> DEPLOY
-    subgraph "监控"
-        PERF[性能监控<br/>延迟/吞吐]
-        ALERT[告警规则<br/>异常检测]
-        RETRAIN[触发再训练]
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
     end
-    DEPLOY --> PERF --> ALERT --> RETRAIN --> TRACK
-    classDef exp fill:#dbeafe,stroke:#2563eb
-    classDef eval fill:#ede9fe,stroke:#7c3aed
-    classDef deploy fill:#fef3c7,stroke:#d97706
-    classDef mon fill:#d1fae5,stroke:#059669
-    class TRACK,HP,REG exp
-    class BENCH,HUMAN,DRIFT eval
-    class PACKAGE,TEST,DEPLOY deploy
-    class PERF,ALERT,RETRAIN mon
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 ### 五级成熟度定义

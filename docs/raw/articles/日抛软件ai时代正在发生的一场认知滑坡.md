@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: ec886132a35ebd21a75a60eae778d71c1a7a9e2d8309d871ea844dd22f3422e4
+source_url: "https://mp.weixin.qq.com/s/rWC-oBXzCLZdarnsajbSAA"
 ---
 
 # “日抛软件”：AI时代正在发生的一场认知滑坡

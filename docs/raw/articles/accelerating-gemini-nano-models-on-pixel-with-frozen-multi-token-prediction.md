@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: be8deceee3d6eeedf62f5b53e76f79cc0c2e4097d9c7398d16b06e6995a70c80
+source_url: "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction"
 ---
 
 sha256: 233a03ce4ae5ce97030be14168b6ad0ca02d8154704060ce323fecaf90e1db1d

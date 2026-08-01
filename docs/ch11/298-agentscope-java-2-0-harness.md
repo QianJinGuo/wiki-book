@@ -8,6 +8,42 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-2.0-enterprise-distributed-harness.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AgentScope Java 2.0：企业级分布式 H…"))
+    背景：为什么企业需要专门的 Agent Har…
+    核心架构设计
+      模块化 Middleware 架构
+      抽象文件系统（Abstract FileSys…
+      Workspace 模型
+      消息类型系统（Sealed Class）
+    企业级特性
+      多租户权限模型
+      模型 Fallback 与降级链
+      事件流与可观测性
+      Kubernetes 原生部署
+    Builder Pattern 与流畅 API
+    与 Claude Code Harness 的…
+    实践启示
+      1. 在 Java 生态中构建 Agent，A…
+      2. Sealed Class 是构建类型安全…
+      3. Abstract FileSystem …
+      4. 模型 Fallback 链需要在上线前充…
+    2nd Source：阿里云云原生 / Age…
+      关键架构决策：组织级 vs Cloud Age…
+      Open SWE vs AgentScope …
+      关键模式：工作区作为配置仓库
+      子 agent 用 markdown 文件声明
+    深度分析
+      责任链模式在 AI Agent 场景的工程化迁移
+      Sealed Class 作为消息类型系统的优…
+      Abstract FileSystem 的多租…
+      事件流架构的可观测性设计
+```
+
 ## 摘要
 
 AgentScope Java 2.0 是一个面向企业级 AI Agent 部署的分布式 Harness 框架，基于 Java/JVM 生态构建，核心设计目标是解决多租户环境下 Agent 的资源隔离、上下文管理、工具编排和故障恢复问题。该框架在架构上借鉴了微服务的设计哲学，将 Agent 的各个能力维度（记忆、工具、权限、路由）拆解为独立可插拔的 Middleware 组件，并通过统一的事件流总线实现组件间通信。在技术选型上，AgentScope Java 2.0 选择 Spring Boot + Kubernetes 作为基础设施层，利用 Builder Pattern 构建 Agent 实例，并通过 Sealed Class 区分不同类型的消息内容块（ContentBlock / DataBlock），在类型安全与灵活性之间取得平衡。

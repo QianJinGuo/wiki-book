@@ -9,6 +9,22 @@
 > **Background**：本文基于 AWS China Blog 的客户案例，介绍星合互娱（Xinghe Huyu）面对多游戏、多账号、小团队的运维压力，如何选择并落地 AWS DevOps Agent 的实践经验。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("星合互娱借助 AWS DevOps Agent 构建多游…"))
+    概念导图
+    业务挑战
+    选择 AWS DevOps Agent 的核心考量
+    落地实践
+      多账号统一管理
+      运维流程自动化
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

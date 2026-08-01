@@ -4,6 +4,24 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI phishing attacks are on t…"))
+    相关实体
+    深度分析
+      攻击规模的几何级增长
+      成本结构颠覆
+      攻击者情报能力的质变
+      人因漏洞的持续主导地位
+    实践启示
+      个人防御层
+      组织防御策略
+      技术防御建议
+```
+
 ## 核心要点
 - 2024 年 FBI 数据：钓鱼诈骗为 top cybercrime，且随 AI 上升趋势加剧
 - 60% 的安全漏洞源于人为错误（Verizon）

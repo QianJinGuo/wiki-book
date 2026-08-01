@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 00d0f5c41ad4c109601ea8751ac75a1090d1e9b939a77cfed5a6241f975a484f
+source_url: "https://w.pitula.me/fintech-engineering-handbook"
 ---
 
 sha256: 01cba4fdbae3acbcb13609d00d45772a0fce4d890a7e8153333bce65b8a795d0

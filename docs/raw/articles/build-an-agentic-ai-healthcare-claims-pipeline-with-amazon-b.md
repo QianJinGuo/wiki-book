@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: a7cb5a2e4f156c28e20418d58432083b237d1d3185cd7dc28e9857fd9280f475
+source_url: "https://aws.amazon.com/blogs/machine-learning/build-an-agentic-ai-healthcare-claims-pipeline-with-amazon-bedrock-and-aws-healthlake/"
 ---
 
 sha256: 661e4fc3ca640636f2e80281858344f1ad71587fdfc371fcdcf6001f250193cb

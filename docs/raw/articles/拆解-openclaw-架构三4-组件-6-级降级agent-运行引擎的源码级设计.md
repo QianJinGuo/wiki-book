@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: df8b396f8e95b557c50ef98bae3056fae2073c8802a36722433801dfca9318d4
+source_url: "https://mp.weixin.qq.com/s/Q2WbVA4w-QsaIaueTvTeAQ"
 ---
 
 # 拆解 OpenClaw 架构（三）：4 组件 + 6 级降级，Agent 运行引擎的源码级设计

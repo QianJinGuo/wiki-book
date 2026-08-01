@@ -6,6 +6,7 @@ ingest_date: 2026-07-05
 vxc: 49
 stars: 4
 sha256: 21f786ee25cfda8b4356bc7375ea5c98495ecd643cc42e579d6eedc18e7f82e6
+source_url: "https://mp.weixin.qq.com/s/9L7MXM2aNMbJ0UkcVI-uwg"
 ---
 
 # 第 07 篇 · Skills：方法论的标准化调用

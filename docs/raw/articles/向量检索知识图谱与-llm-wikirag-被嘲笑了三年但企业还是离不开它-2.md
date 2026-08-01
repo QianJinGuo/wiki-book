@@ -6,6 +6,7 @@ ingest_date: 2026-07-02
 vxc: 56
 stars: 4
 sha256: 9fe3b37a1427a5283657d9140723a621b9359e8e35574c150fe32ecdebe31994
+source_url: "unavailable"
 ---
 
 # 向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它

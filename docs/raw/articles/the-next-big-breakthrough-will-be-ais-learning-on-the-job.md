@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: a28c5e02f66d57511f003de1eb916fbfa43de9917ecbc107347444b09d22f73e
+source_url: "https://www.dwarkesh.com/p/the-next-paradigm"
 ---
 
 sha256: 8e20a931ea9cae9c14fd33ebda63509ca1feb3b54cc8c2160bfa3585ebead099

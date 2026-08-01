@@ -10,6 +10,7 @@ ingested: 2026-06-05
 review_value: 8
 review_confidence: 8
 review_recommendation: worth-reading
+source_url: "unavailable"
 ---
 
 # 基于顶级 Agent（Claude Code）的 Harness 工程搭建式业务 Agent 评测方案

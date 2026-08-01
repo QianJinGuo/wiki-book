@@ -2,7 +2,7 @@
 
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
-> 本章收录 **46 篇**实体，按深度递增排列。
+> 本章收录 **50 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 39 |
+| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐⭐ 工程师 | 需编程基础 | 41 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 
 ---
@@ -27,7 +28,37 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 
 ---
 
-## Ch06.001 Agent 记忆架构：先别急着把 Memory 当数据库
+## Ch06.001 追求-ai-记忆力的路线下rag-是否终将被抛弃
+
+> 📊 Level ⭐ | 1.5KB | `entities/追求-ai-记忆力的路线下rag-是否终将被抛弃.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/追求-ai-记忆力的路线下rag-是否终将被抛弃.md)
+
+在当前的 AI 技术讨论中，模型的信息记忆与深度理解能力已成为核心议题。扩展上下文窗口和检索增强生成（RAG）虽然在一定程度上缓解了模型信息获取的困境，但本质上仍是将记忆外置，而非让模型真正内化知识。这种外部化思路导致模型每次推理都要重复处理相同信息，既增加了算力消耗，也阻碍了深层理解的形成。RAG 的被动性进一步限制了模型在复杂任务中的主动联想与判断能力，这揭示了当前 AI 应用中的一个根本矛盾，即模型虽拥有广博的知识储备，却未能在具体工作场景中实现持续成长与直觉化运作。这引出了一个值得追问的问题，如果模型只能被动响应而无法在工作中持续积累经验，它离真正的理解还有多远。
+
+## 来源
+
+- 原文: [追求-ai-记忆力的路线下rag-是否终将被抛弃](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/追求-ai-记忆力的路线下rag-是否终将被抛弃.md)
+- 原始链接: : https://mp.weixin.qq.com/s/F4D1gKBF-W2oScWEQ1c8Fg
+
+---
+
+## Ch06.002 Mem0、Letta、Zep 和 VoltMem —— Agent记忆系统该选哪个？
+
+> 📊 Level ⭐ | 0.8KB | `entities/agent-memory-four-schools-comparison-2026-07-22.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-four-schools-comparison-2026-07-22.md)
+
+将文档 chunk → embedding → 向量数据库，用户提问时相似度匹配 top_k。
+
+## 来源
+
+- 原文: [Mem0、Letta、Zep 和 VoltMem —— Agent记忆系统该选哪个？](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-four-schools-comparison-2026-07-22.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/UA3xgiXmB7De7qp6MzIzDw
+
+---
+
+## Ch06.003 Agent 记忆架构：先别急着把 Memory 当数据库
 
 > 📊 Level ⭐⭐ | 31.3KB | `entities/agent-memory-architecture-past-influence-future-ruofei.md`
 
@@ -311,9 +342,9 @@ Plain markdown、git history、versioned memory store 这类朴素设计不一�
 
 ---
 
-## Ch06.002 深度拆解 Hermes Agent 记忆系统
+## Ch06.004 深度拆解 Hermes Agent 记忆系统
 
-> 📊 Level ⭐⭐ | 28.8KB | `entities/hermes-agent-memory-system-openclaw-comparison.md`
+> 📊 Level ⭐⭐ | 29.5KB | `entities/hermes-agent-memory-system-openclaw-comparison.md`
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-openclaw-comparison.md)
 
@@ -676,9 +707,9 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 ---
 
-## Ch06.003 AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
+## Ch06.005 AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
 
-> 📊 Level ⭐⭐ | 21.4KB | `entities/agentmemory-source-analysis-coding-agent-local-memory.md`
+> 📊 Level ⭐⭐ | 22.0KB | `entities/agentmemory-source-analysis-coding-agent-local-memory.md`
 
 # AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
 
@@ -1040,6 +1071,7 @@ curl "http://localhost:3111/agentmemory/get-memory?type=fact&limit=50"
 ### 在 MCP 工具链里集成记忆检索
 
 MCP 的退化机制（连不上 localhost:3111 时退回 InMemoryKV）是双刃剑：
+
 - 好：不会因为记忆服务挂了导致 MCP 工具完全不可用
 - 坏：开发者可能误以为 MCP tools = 完整功能，实际上只有 fallback 的 7 个工具
 
@@ -1065,7 +1097,7 @@ if (!health.ok) {
 
 ---
 
-## Ch06.004 Claude Code vs OpenClaw 记忆：向量数据库是否必要
+## Ch06.006 Claude Code vs OpenClaw 记忆：向量数据库是否必要
 
 > 📊 Level ⭐⭐ | 20.2KB | `entities/claude-code-openclaw-memory-vector-db-doubt.md`
 
@@ -1294,7 +1326,7 @@ Claude Code 的六层记忆架构与软件工程中的权限模型高度对齐�
 
 ---
 
-## Ch06.005 Agent-Memory 评测全景：基准、评估与记忆系统
+## Ch06.007 Agent-Memory 评测全景：基准、评估与记忆系统
 
 > 📊 Level ⭐⭐ | 20.1KB | `entities/agent-memory-evaluation-landscape-taobao-survey.md`
 
@@ -1531,9 +1563,9 @@ M3-Agent 的双重记忆设计（Episodic + Semantic）对视频/音频理解场
 
 ---
 
-## Ch06.006 Claude Code Openclaw Memory Comparison
+## Ch06.008 Claude Code Openclaw Memory Comparison
 
-> 📊 Level ⭐⭐ | 19.1KB | `entities/claude-code-openclaw-memory-comparison.md`
+> 📊 Level ⭐⭐ | 19.0KB | `entities/claude-code-openclaw-memory-comparison.md`
 
 ## 概述
 
@@ -1750,7 +1782,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 
 ---
 
-## Ch06.007 Context Window Management Comparison
+## Ch06.009 Context Window Management Comparison
 
 > 📊 Level ⭐⭐ | 15.8KB | `entities/context-window-management-comparison.md`
 
@@ -1956,7 +1988,7 @@ Agent harness 正在朝同一个方向移动。目标不是向模型展示一切
 
 ---
 
-## Ch06.008 Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
+## Ch06.010 Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
 
 > 📊 Level ⭐⭐ | 15.4KB | `entities/pyramid-kb-knowledge-context-layer-banya.md`
 
@@ -2123,7 +2155,7 @@ Karpathy 提出的知识库模式。三层架构：**Raw Sources**（人类策�
 
 ---
 
-## Ch06.009 Memory 不是 RAG：Agent 记忆的系统性框架
+## Ch06.011 Memory 不是 RAG：Agent 记忆的系统性框架
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/memory-vs-rag-agent-memory-systematic-framework.md`
 
@@ -2290,7 +2322,7 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 
 ---
 
-## Ch06.010 Hermes Agent 爱马仕的三级 memory，到底在记什么？
+## Ch06.012 Hermes Agent 爱马仕的三级 memory，到底在记什么？
 
 > 📊 Level ⭐⭐ | 13.5KB | `entities/hermes-agent-three-layer-memory-architecture-one.md`
 
@@ -2456,7 +2488,7 @@ FTS5 的关键词搜索 + SQLite 的 session 聚合 + parent_session_id 的关�
 
 ---
 
-## Ch06.011 上下文工程 - 三种Memory方案对比
+## Ch06.013 上下文工程 - 三种Memory方案对比
 
 > 📊 Level ⭐⭐ | 12.4KB | `entities/context-engineering-three-memory-paradigms-comparison.md`
 
@@ -2583,7 +2615,7 @@ D2L 看似优雅的"0 context 回答"实际上是以高幻觉率为代价的。�
 
 ---
 
-## Ch06.012 AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
+## Ch06.014 AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/jagged-ai-frontier-mollick.md`
 
@@ -2724,7 +2756,7 @@ Cochrane 案例的核心教训：追求 100% 自动化往往是错误的目标�
 
 ---
 
-## Ch06.013 MemOS Hermes 记忆插件
+## Ch06.015 MemOS Hermes 记忆插件
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/memos-hermes-plugin.md`
 
@@ -2859,7 +2891,7 @@ curl -fsSL https://raw.githubusercontent.com/MemTensor/MemOS/openclaw-local-plug
 
 ---
 
-## Ch06.014 Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通
+## Ch06.016 Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通
 
 > 📊 Level ⭐⭐ | 11.6KB | `entities/google-okf-open-knowledge-format-v0-1-2026.md`
 
@@ -3059,7 +3091,137 @@ OKF 不是要替代 Karpathy Wiki / Obsidian Wiki / GBrain，而是**给它们�
 
 ---
 
-## Ch06.015 CrewAI Cognitive Memory: 5 认知操作的工程化设计
+## Ch06.017 TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
+
+> 📊 Level ⭐⭐ | 10.9KB | `entities/tencentdb-agent-memory-hierarchical.md`
+
+# TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
+
+## 摘要
+
+腾讯开源的 TencentDB Agent Memory，解决长程 Agent 的记忆管理问题。核心设计：短期记忆用压缩索引结构（非简单摘要）卸载工具日志，长期记忆用 L0-L3 语义金字塔（Conversation→Atom→Scenario→Persona）实现跨会话用户理解。WideSearch 成功率 +17pp，Token 降 61%。
+
+## 现有方案的不足
+
+传统 Agent Memory 方案普遍将历史对话切片后丢进向量库，靠相似度召回。这种方案能跑 Demo，但在长任务场景中暴露致命问题：
+
+- 工具调用日志随着任务推进越来越长，上下文窗口迅速膨胀
+- 搜索结果不断累积，形成信息泥潭
+- 模型在大量过程性噪声中难以定位关键信息
+- 多会话场景中，跨会话的记忆碎片化严重，无法形成连贯的用户理解
+
+这些问题的根源在于：**向量相似度检索只解决了"找什么"，但没有解决"记住什么"和"忘记什么"**。Agent 记忆不仅仅是存储和检索，更关键的是遗忘策略——决定哪些信息值得长期保留，哪些可以丢弃。
+
+## 短期记忆：压缩索引而非简单摘要
+
+**非简单摘要**：简单摘要省 Token 但同时也丢失了关键证据。TencentDB 的设计是**压缩索引**（Compressed Index）结构：
+
+- 厚重工具日志卸载到外部文件，不在上下文窗口中保留原始内容
+- 中间层保留步骤摘要（JSONL 格式），以结构化方式记录关键操作
+- 最高层只给 Agent 一张轻量任务图（Task Graph），用 DAG 表示任务进度
+- Agent 平时只看任务结构，需要核对细节时再通过 ID 索引回到原始文件
+- 高层保留结构，底层保留证据，中间靠唯一 ID 打通
+
+**关键区别**：传统摘要压缩的是语义（Transform 到更短的表达），而压缩索引压缩的是访问路径（用指针替代内容）。前者可能导致信息失真（LLM 摘要可能遗漏关键细节），后者保留了完全的证据链，只是将其移出了立即关注的窗口。
+
+这种设计在工程上相当于在 Token 消耗和证据保留之间找到了帕累托最优——在保证 Agent 可追证的前提下，将活跃 Token 消耗降低 50-70%。
+
+## 长期记忆：L0-L3 语义金字塔
+
+| 层级 | 名称 | 内容 | 更新频率 | 存储格式 |
+|------|------|------|----------|----------|
+| L3 | **Persona**（用户画像） | 长期偏好、工作方式 | 低频（会话级） | 结构化 profile |
+| L2 | **Scenario**（场景块） | 场景级上下文 | 中频（场景级） | 场景摘要 |
+| L1 | **Atom**（结构化事实） | 关键事实原子 | 中高频（事实级） | 三元组/键值 |
+| L0 | **Conversation**（原始对话） | 完整原始记录 | 高频（消息级） | 原始文本 |
+
+**设计理念**：所有历史平铺成向量碎片 → 语义金字塔。平时用 L3 理解用户，需要具体事实时回溯到 L1/L0。
+
+这个金字塔结构解决的核心问题是 **记忆的层次化访问**：不是每次都需要全量记忆，而是根据任务需求从不同抽象层级获取信息。这与人类记忆系统的工作原理高度相似——我们不会在工作记忆中保留所有生活细节，而是根据当前任务提取最相关的记忆层级。
+
+## Benchmark 结果
+
+| Benchmark | 成功率提升 | Token 消耗降低 |
+|-----------|-----------|---------------|
+| WideSearch | 33% → **50%** (+17pp) | 221.31M → **85.64M** (-61%) |
+| SWE-bench | 58.4% → **64.2%** (+5.8pp) | 3474.1M → **2375.4M** (-32%) |
+| AA-LCR | 44.0% → **47.5%** (+3.5pp) | 112.0M → **77.3M** (-31%) |
+| PersonaMem | 48% → **76%** (+28pp) | — |
+
+**数据分析**：
+
+- **WideSearch（+17pp）**：最需要记忆的 Benchmark，提升最大，说明分层结构对需要大量搜索和引用的场景帮助显著
+- **SWE-bench（+5.8pp）**：提升较温和，因为代码修改任务对短期工作记忆的需求高于长期记忆
+- **PersonaMem（+28pp）**：提升最显著，验证了 L3 Persona 层的有效性——分层结构使得用户画像记忆准确率大幅提升
+
+值得注意的是，Token 消耗的大幅降低（-32% 到 -61%）是在**同时提升成功率**的前提下实现的——这是 Agent 记忆系统领域罕见的"帕累托改进"。
+
+## 系统类比
+
+TencentDB Agent Memory 更像一套**分层文件系统**：
+
+- **上层**：画像和任务图（类似文件系统的目录树）
+- **中层**：场景、步骤和索引（类似文件系统的 inode 表）
+- **底层**：原始证据（类似文件系统的数据块）
+- 平时压缩，必要时展开
+- 平时抽象，出问题时追证
+
+## 深度分析
+
+### 符号化 vs 向量化的权衡
+
+TencentDB Agent Memory 的核心设计选择是**符号化（Symbolic）记忆**而非纯向量化内存。向量化记忆（如 Mem0、MemGPT）将所有信息转化为 embedding 后语义检索，优点是灵活（无需预定义结构），缺点是检索精度受 embedding 质量影响大，且难以支持精确事实查找。
+
+TencentDB 选择了符号化路径：短期记忆用 JSONL 结构，长期记忆用金字塔层次，Persona 用结构化 Profile。符号化设计的优势在于：
+1. **精确性**：L1 Atom 是结构化事实，可以用精确查询而非语义近似检索
+2. **可解释性**：Each 记忆层级的结构和内容是可审计的，不像 embedding 碎片那样是黑盒
+3. **组合性**：不同层级的记忆可以基于 ID 组合和关联，形成更丰富的上下文
+
+这种权衡使得 TencentDB 在需要精确记忆的场景（如 PersonaMem +28pp）上表现突出，但在高度语义化、非结构化的记忆场景中可能不如纯向量方案灵活。
+
+### "遗忘"作为记忆系统的一等公民
+
+大多数 Agent 记忆系统只关注"如何记住"，而 TencentDB 通过分层结构巧妙地处理了"如何遗忘"：L0 数据随着时间自然沉降，不再被主动加载，而是退化到底层存储；L3 Persona 只有显著性信息才能持续存在。这种**渐进式遗忘**（Gradual Forgetting）机制使得 Agent 不会被长期运行的噪声信息淹没，同时保留了追证能力。
+
+这与认知科学中的**记忆固化**（Memory Consolidation）理论高度一致：短期记忆中的信息通过反复激活，逐渐固化到长期记忆中，而不重要的细节被自然遗忘。TencentDB 的压缩索引结构在工程上实现了类似的机制。
+
+### Agent 记忆系统的三层评估框架
+
+TencentDB 的 Benchmark 结果启示了一个 Agent 记忆系统的三层评估框架：
+
+1. **效率层**（Token 消耗）：记忆系统不能比无记忆系统消耗更多 token。TencentDB 的 -32% 到 -61% 通过了这一层。
+2. **效果层**（任务成功率）：记忆系统必须提升 Agent 的实际任务完成率。WideSearch +17pp、SWE-bench +5.8pp 通过了这一层。
+3. **体验层**（用户感知）：记忆系统必须让用户感觉 Agent 在"记住我"。PersonaMem +28pp 通过了这一层。
+
+大多数 Agent 记忆方案只评估第一层和第二层，忽略了第三层的用户体验维度。PersonaMem 的大幅提升表明，TencentDB 的分层设计在用户体验上的价值可能被低估了。
+
+## 实践启示
+
+1. **优先采用压缩索引而非简单摘要**：如果 Agent 的记忆面临 token 膨胀问题，不要简单地用 LLM 摘要来压缩历史。采用指针+索引的模式（将详细日志外存化，仅保留结构化的访问路径），可以在降低 token 消耗的同时保留完整的证据链。
+
+2. **为 Agent 设计 Persona 层**：大多数 Agent 记忆方案忽略了用户画像的持续学习。为 Agent 添加一个结构化用户 Profile（L3 Persona）并定期更新，可以显著提升用户体验。建议在每次会话结束后，提取用户的使用偏好、常见指令模式和工作方式，写入 Persona 层。
+
+3. **用 Benchmark 分层验证记忆系统的有效性**：不要只看总体的 Task Success Rate。分别测试记忆系统在搜索密集型任务（WideSearch）、代码修改任务（SWE-bench）、复杂指令遵循（AA-LCR）和用户画像记忆（PersonaMem）上的表现。不同任务类型对记忆系统的需求完全不同。
+
+4. **ID 打通是分层记忆的骨架**：压缩索引和语义金字塔能否真正工作，关键在于各层之间的 ID 关联是否完整。确保每个记忆片段都有唯一 ID，且低层记录都被高层索引正确引用。没有 ID 链的分层记忆只是多个独立的存储桶。
+
+5. **考虑 TencentDB Agent Memory 在生产中的适用性**：如果你的 Agent 系统面临以下挑战，推荐评估 TencentDB Agent Memory：(1) 长程 Agent 任务（> 10 轮工具调用）(2) 多会话场景中需要跨会话用户理解 (3) Token 成本成为瓶颈。如果 Agent 任务主要为短对话（< 5 轮），则简单的上下文缓存可能已经足够。
+
+## 相关实体
+
+- [Agent 记忆模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md)
+- [Agent 夜间任务编排](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-nightshift-cron-task-scheduling.md)
+- [注意力塌陷与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
+- [TencentDB Agent Memory 长期记忆金字塔](https://github.com/QianJinGuo/wiki/blob/main/entities/tencentdb-agent-memory-long-term-pyramid.md)
+- [Agent Harness 上下文管理工作集](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
+
+## 来源
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencentdb-agent-memory-hierarchical.md)
+
+---
+
+## Ch06.018 CrewAI Cognitive Memory: 5 认知操作的工程化设计
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/how-we-built-cognitive-memory-for-agentic-systems.md`
 
@@ -3169,136 +3331,7 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 
 ---
 
-## Ch06.016 TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
-
-> 📊 Level ⭐⭐ | 10.4KB | `entities/tencentdb-agent-memory-hierarchical.md`
-
-# TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
-
-## 摘要
-
-腾讯开源的 TencentDB Agent Memory，解决长程 Agent 的记忆管理问题。核心设计：短期记忆用压缩索引结构（非简单摘要）卸载工具日志，长期记忆用 L0-L3 语义金字塔（Conversation→Atom→Scenario→Persona）实现跨会话用户理解。WideSearch 成功率 +17pp，Token 降 61%。
-
-## 现有方案的不足
-
-传统 Agent Memory 方案普遍将历史对话切片后丢进向量库，靠相似度召回。这种方案能跑 Demo，但在长任务场景中暴露致命问题：
-
-- 工具调用日志随着任务推进越来越长，上下文窗口迅速膨胀
-- 搜索结果不断累积，形成信息泥潭
-- 模型在大量过程性噪声中难以定位关键信息
-- 多会话场景中，跨会话的记忆碎片化严重，无法形成连贯的用户理解
-
-这些问题的根源在于：**向量相似度检索只解决了"找什么"，但没有解决"记住什么"和"忘记什么"**。Agent 记忆不仅仅是存储和检索，更关键的是遗忘策略——决定哪些信息值得长期保留，哪些可以丢弃。
-
-## 短期记忆：压缩索引而非简单摘要
-
-**非简单摘要**：简单摘要省 Token 但同时也丢失了关键证据。TencentDB 的设计是**压缩索引**（Compressed Index）结构：
-
-- 厚重工具日志卸载到外部文件，不在上下文窗口中保留原始内容
-- 中间层保留步骤摘要（JSONL 格式），以结构化方式记录关键操作
-- 最高层只给 Agent 一张轻量任务图（Task Graph），用 DAG 表示任务进度
-- Agent 平时只看任务结构，需要核对细节时再通过 ID 索引回到原始文件
-- 高层保留结构，底层保留证据，中间靠唯一 ID 打通
-
-**关键区别**：传统摘要压缩的是语义（Transform 到更短的表达），而压缩索引压缩的是访问路径（用指针替代内容）。前者可能导致信息失真（LLM 摘要可能遗漏关键细节），后者保留了完全的证据链，只是将其移出了立即关注的窗口。
-
-这种设计在工程上相当于在 Token 消耗和证据保留之间找到了帕累托最优——在保证 Agent 可追证的前提下，将活跃 Token 消耗降低 50-70%。
-
-## 长期记忆：L0-L3 语义金字塔
-
-| 层级 | 名称 | 内容 | 更新频率 | 存储格式 |
-|------|------|------|----------|----------|
-| L3 | **Persona**（用户画像） | 长期偏好、工作方式 | 低频（会话级） | 结构化 profile |
-| L2 | **Scenario**（场景块） | 场景级上下文 | 中频（场景级） | 场景摘要 |
-| L1 | **Atom**（结构化事实） | 关键事实原子 | 中高频（事实级） | 三元组/键值 |
-| L0 | **Conversation**（原始对话） | 完整原始记录 | 高频（消息级） | 原始文本 |
-
-**设计理念**：所有历史平铺成向量碎片 → 语义金字塔。平时用 L3 理解用户，需要具体事实时回溯到 L1/L0。
-
-这个金字塔结构解决的核心问题是 **记忆的层次化访问**：不是每次都需要全量记忆，而是根据任务需求从不同抽象层级获取信息。这与人类记忆系统的工作原理高度相似——我们不会在工作记忆中保留所有生活细节，而是根据当前任务提取最相关的记忆层级。
-
-## Benchmark 结果
-
-| Benchmark | 成功率提升 | Token 消耗降低 |
-|-----------|-----------|---------------|
-| WideSearch | 33% → **50%** (+17pp) | 221.31M → **85.64M** (-61%) |
-| SWE-bench | 58.4% → **64.2%** (+5.8pp) | 3474.1M → **2375.4M** (-32%) |
-| AA-LCR | 44.0% → **47.5%** (+3.5pp) | 112.0M → **77.3M** (-31%) |
-| PersonaMem | 48% → **76%** (+28pp) | — |
-
-**数据分析**：
-
-- **WideSearch（+17pp）**：最需要记忆的 Benchmark，提升最大，说明分层结构对需要大量搜索和引用的场景帮助显著
-- **SWE-bench（+5.8pp）**：提升较温和，因为代码修改任务对短期工作记忆的需求高于长期记忆
-- **PersonaMem（+28pp）**：提升最显著，验证了 L3 Persona 层的有效性——分层结构使得用户画像记忆准确率大幅提升
-
-值得注意的是，Token 消耗的大幅降低（-32% 到 -61%）是在**同时提升成功率**的前提下实现的——这是 Agent 记忆系统领域罕见的"帕累托改进"。
-
-## 系统类比
-
-TencentDB Agent Memory 更像一套**分层文件系统**：
-
-- **上层**：画像和任务图（类似文件系统的目录树）
-- **中层**：场景、步骤和索引（类似文件系统的 inode 表）
-- **底层**：原始证据（类似文件系统的数据块）
-- 平时压缩，必要时展开
-- 平时抽象，出问题时追证
-
-## 深度分析
-
-### 符号化 vs 向量化的权衡
-
-TencentDB Agent Memory 的核心设计选择是**符号化（Symbolic）记忆**而非纯向量化内存。向量化记忆（如 Mem0、MemGPT）将所有信息转化为 embedding 后语义检索，优点是灵活（无需预定义结构），缺点是检索精度受 embedding 质量影响大，且难以支持精确事实查找。
-
-TencentDB 选择了符号化路径：短期记忆用 JSONL 结构，长期记忆用金字塔层次，Persona 用结构化 Profile。符号化设计的优势在于：
-1. **精确性**：L1 Atom 是结构化事实，可以用精确查询而非语义近似检索
-2. **可解释性**：Each 记忆层级的结构和内容是可审计的，不像 embedding 碎片那样是黑盒
-3. **组合性**：不同层级的记忆可以基于 ID 组合和关联，形成更丰富的上下文
-
-这种权衡使得 TencentDB 在需要精确记忆的场景（如 PersonaMem +28pp）上表现突出，但在高度语义化、非结构化的记忆场景中可能不如纯向量方案灵活。
-
-### "遗忘"作为记忆系统的一等公民
-
-大多数 Agent 记忆系统只关注"如何记住"，而 TencentDB 通过分层结构巧妙地处理了"如何遗忘"：L0 数据随着时间自然沉降，不再被主动加载，而是退化到底层存储；L3 Persona 只有显著性信息才能持续存在。这种**渐进式遗忘**（Gradual Forgetting）机制使得 Agent 不会被长期运行的噪声信息淹没，同时保留了追证能力。
-
-这与认知科学中的**记忆固化**（Memory Consolidation）理论高度一致：短期记忆中的信息通过反复激活，逐渐固化到长期记忆中，而不重要的细节被自然遗忘。TencentDB 的压缩索引结构在工程上实现了类似的机制。
-
-### Agent 记忆系统的三层评估框架
-
-TencentDB 的 Benchmark 结果启示了一个 Agent 记忆系统的三层评估框架：
-1. **效率层**（Token 消耗）：记忆系统不能比无记忆系统消耗更多 token。TencentDB 的 -32% 到 -61% 通过了这一层。
-2. **效果层**（任务成功率）：记忆系统必须提升 Agent 的实际任务完成率。WideSearch +17pp、SWE-bench +5.8pp 通过了这一层。
-3. **体验层**（用户感知）：记忆系统必须让用户感觉 Agent 在"记住我"。PersonaMem +28pp 通过了这一层。
-
-大多数 Agent 记忆方案只评估第一层和第二层，忽略了第三层的用户体验维度。PersonaMem 的大幅提升表明，TencentDB 的分层设计在用户体验上的价值可能被低估了。
-
-## 实践启示
-
-1. **优先采用压缩索引而非简单摘要**：如果 Agent 的记忆面临 token 膨胀问题，不要简单地用 LLM 摘要来压缩历史。采用指针+索引的模式（将详细日志外存化，仅保留结构化的访问路径），可以在降低 token 消耗的同时保留完整的证据链。
-
-2. **为 Agent 设计 Persona 层**：大多数 Agent 记忆方案忽略了用户画像的持续学习。为 Agent 添加一个结构化用户 Profile（L3 Persona）并定期更新，可以显著提升用户体验。建议在每次会话结束后，提取用户的使用偏好、常见指令模式和工作方式，写入 Persona 层。
-
-3. **用 Benchmark 分层验证记忆系统的有效性**：不要只看总体的 Task Success Rate。分别测试记忆系统在搜索密集型任务（WideSearch）、代码修改任务（SWE-bench）、复杂指令遵循（AA-LCR）和用户画像记忆（PersonaMem）上的表现。不同任务类型对记忆系统的需求完全不同。
-
-4. **ID 打通是分层记忆的骨架**：压缩索引和语义金字塔能否真正工作，关键在于各层之间的 ID 关联是否完整。确保每个记忆片段都有唯一 ID，且低层记录都被高层索引正确引用。没有 ID 链的分层记忆只是多个独立的存储桶。
-
-5. **考虑 TencentDB Agent Memory 在生产中的适用性**：如果你的 Agent 系统面临以下挑战，推荐评估 TencentDB Agent Memory：(1) 长程 Agent 任务（> 10 轮工具调用）(2) 多会话场景中需要跨会话用户理解 (3) Token 成本成为瓶颈。如果 Agent 任务主要为短对话（< 5 轮），则简单的上下文缓存可能已经足够。
-
-## 相关实体
-
-- [Agent 记忆模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md)
-- [Agent 夜间任务编排](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-nightshift-cron-task-scheduling.md)
-- [注意力塌陷与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [TencentDB Agent Memory 长期记忆金字塔](https://github.com/QianJinGuo/wiki/blob/main/entities/tencentdb-agent-memory-long-term-pyramid.md)
-- [Agent Harness 上下文管理工作集](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
-
-## 来源
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencentdb-agent-memory-hierarchical.md)
-
----
-
-## Ch06.017 企业级AI记忆基质三层架构：事实/交互/行动记忆
+## Ch06.019 企业级AI记忆基质三层架构：事实/交互/行动记忆
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/enterprise-ai-memory-substrate-three-layer-architecture.md`
 
@@ -3398,9 +3431,9 @@ Embedding 擅长文本相似度，但无法处理：
 
 ---
 
-## Ch06.018 Qoder 团队知识引擎
+## Ch06.020 Qoder 团队知识引擎
 
-> 📊 Level ⭐⭐ | 8.8KB | `entities/qoder-team-knowledge-engine.md`
+> 📊 Level ⭐⭐ | 8.9KB | `entities/qoder-team-knowledge-engine.md`
 
 # Qoder 团队知识引擎
 
@@ -3531,7 +3564,7 @@ Qoder 明确指出"团队规范混乱时，自动化会放大坏的习惯"。如
 
 ---
 
-## Ch06.019 Hermes Agent 记忆系统 vs OpenClaw 记忆观
+## Ch06.021 Hermes Agent 记忆系统 vs OpenClaw 记忆观
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/hermes-agent-memory-system.md`
 
@@ -3604,102 +3637,7 @@ Hermes 的记忆系统本质上是一套**分层成本治理**架构，而非单
 
 ---
 
-## Ch06.020 AI Context Layer 框架
-
-> 📊 Level ⭐⭐ | 7.9KB | `entities/ai-context-layer-kgc-2026.md`
-
-## 核心论点
-AI投资回报率为零的根本原因不是模型不够聪明，而是**Context（上下文）缺失**。即使Intelligence（智力）提升了多个数量级，Context为零导致乘积为零。
-
-## 核心公式
-$$P = f(I, C)$$
-
-- **P**: Performance（工作表现）
-- **I**: Intelligence（认知智力，大致固定）
-- **C**: Context（通过工作积累的知识、技能、工具）
-**关键洞察**：这个函数是乘法性质，不是加法。Context为零，无论Intelligence有多高，Performance就是零。
-
-## Maya Day 1 类比
-一个新员工Maya花了**四个月**积累Context才能高效工作：
-
-- Week 1: 读Wiki，背政策
-- Week 2: 系统培训，角色扮演
-- Week 4: 跟岗学习潜规则
-- Month 1-3: 从错误中学习，处理边缘case
-**结论**：AI Agent每次部署都是"Day 1"，带着超强能力、零Context上岗。
-
-## 四象限模型
-| | 低Context | 高Context |
-|---|---|---|
-| **高Intelligence** | 危险区域（confident hallucination at scale） | **目标区域**（有效AI） |
-| **低Intelligence** | 无用 | 可靠但受限（规则系统） |
-大多数企业被困在**右下角**：模型很强，但不知道业务定义、潜规则、例外情况。
-
-## 三堵墙
-### 1. Context Bootstrapping（冷启动）
-搭一个Agent只要五分钟，给它注入业务上下文要五个月。
-
-### 2. Context Management（不共享学习）
-一个Agent有记忆，一群Agent有失忆。每个Agent永远从零开始。
-
-### 3. Context Portability（语义冲突）
-多Agent对同一概念有不同解读，导致"有说服力的错误"。
-
-## 飞轮效应
-越过三堵墙后，Context会形成飞轮：
-1. 业务系统已有数据可生成Context草稿
-2. 每次精修建立在上次基础上，质量爬坡
-3. 每次交互的Trace（纠错、反馈）是金矿
-4. 需要像代码库一样维护：版本控制、测试、治理
-
-## 与现有知识的链接
-- → [Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Context作为Agent的工作集
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-context-layer-kgc-2026.md)
-
-## 核心价值
-这个框架的诊断价值大于产品价值。用P=f(I,C)、Maya on Day 1、四象限、三堵墙这些工具，可以诊断企业AI现在处于哪个象限、撞的是哪堵墙。
-> 第四堵墙（隐含）：没有人认领Context建设这件事——它不在任何人的KPI里。
-
-## 深度分析
-### 诊断框架的迁移：从"模型够不够好"到"给没给它可以用的东西"
-Prukalpa在演讲中观察到，问对问题本身就代表了企业AI战略的根本转向。大多数企业困在右下角（高Intelligence、低Context），不断换更强的模型，但每次部署仍是Day 1。这个困境不是技术问题，而是认知框架问题——直到P=f(I,C)这个乘法公式出现之前，没有框架能清晰说明为什么"模型更强"不等于"效果更好"。
-
-### 三堵墙的结构性解读
-**第一堵墙（冷启动）**的本质是：Context无法购买，只能积累。Intelligence按API调用次数计费，Context则需要业务人员时间投入。这两种成本的不对称决定了企业花钱的方向和实际缺口的方向不一致。
-**第二堵墙（不共享学习）**在架构上是一个信息流问题，但在治理上是一个优先级问题。作者在文中提出了一个反向观点：在Context质量验证机制建立之前，打通Agent间学习通道可能加速错误传播。这比"信息不流动"更深一层——"什么信息值得流动"这个元问题没有被解决。
-**第三堵墙（语义冲突）**的危险在于它的隐蔽性。当多个Agent各自以"有说服力的自信"输出不同版本的真相，在汇聚点对账之前，这个冲突不会被发现。Sierra、Writer、Google Agentspace、Snowflake Cortex都在经历这个过程。
-
-### 飞轮成立的隐含条件
-作者对飞轮持保留态度：对"业务系统已有数据可生成Context草稿"这一步骤的乐观，在现实中会遇到SQL过时、字段描述缺失、lineage不完整等问题。更根本的是，Context飞轮转起来需要三个前提——业务相对稳定、数据可信度高、组织愿意把潜规则说出来——而这三个条件在大多数仍在快速变化的公司里无法同时满足。
-
-### 第四堵墙：责任归属的空白
-Context建设落在数据工程、AI产品、治理三个团队的交叉地带，实际上是无人的KPI。这不是组织设计问题，而是企业还没真正认定Context是资产。
-
-## 实践启示
-**立即可用的诊断问题：**
-1. 你的AI现在处于哪个象限？做一次四象限评估。
-2. 你正在撞的是哪堵墙？三堵墙的优先级不同：冷启动需要领域专家时间，管理墙需要架构设计，语义墙需要治理协议。
-3. 有没有人认领Context建设？如果没有，这是比换模型更优先要解决的问题。
-**飞轮启动的条件判断：**
-在考虑Context基础设施之前，先评估：业务稳定性、数据可信度、组织对潜规则编码的意愿。如果这三个条件不满足，先让Context飞轮的概念在团队中形成共识，等到条件成熟再动手。
-**最小可行Context的起点：**
-不必等完美。先从高频、高价值的边缘case开始，把"没有人写下来"的那条潜规则编码进Context，比构建全面本体更重要。质量在精修中爬坡，不在一次性和盘托出。
-**多Agent团队的语义对齐：**
-在多个Agent投入生产之前，先建立跨Agent的概念字典——尤其"revenue"、"活跃用户"这类关键指标的定义。定义冲突的代价随Agent数量指数增长，但预防成本是线性的。
-> [!contradiction] 参见  — 持"Context作为Agent工作集"的不同实践路径
-> [!contradiction] 参见 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-context-layer-kgc-2026.md) — 持更乐观的飞轮预期
-
-## 相关实体
-- [OpenHuman: AI Agent 持久记忆框架](https://github.com/QianJinGuo/wiki/blob/main/entities/openhuman-ai-agent-memory-tree-tokenjuice.md)
-- [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-memory-system.md)
-- [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md)
-- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-agent-framework-event-bus-design.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
-
----
-
-## Ch06.021 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
+## Ch06.022 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/tencentdb-agent-memory-context-offloading.md`
 
@@ -3797,7 +3735,102 @@ AWS AgentCore Memory 的核心抽象是"actor + namespace + strategy"——按�
 
 ---
 
-## Ch06.022 Obsidian
+## Ch06.023 AI Context Layer 框架
+
+> 📊 Level ⭐⭐ | 7.9KB | `entities/ai-context-layer-kgc-2026.md`
+
+## 核心论点
+AI投资回报率为零的根本原因不是模型不够聪明，而是**Context（上下文）缺失**。即使Intelligence（智力）提升了多个数量级，Context为零导致乘积为零。
+
+## 核心公式
+$$P = f(I, C)$$
+
+- **P**: Performance（工作表现）
+- **I**: Intelligence（认知智力，大致固定）
+- **C**: Context（通过工作积累的知识、技能、工具）
+**关键洞察**：这个函数是乘法性质，不是加法。Context为零，无论Intelligence有多高，Performance就是零。
+
+## Maya Day 1 类比
+一个新员工Maya花了**四个月**积累Context才能高效工作：
+
+- Week 1: 读Wiki，背政策
+- Week 2: 系统培训，角色扮演
+- Week 4: 跟岗学习潜规则
+- Month 1-3: 从错误中学习，处理边缘case
+**结论**：AI Agent每次部署都是"Day 1"，带着超强能力、零Context上岗。
+
+## 四象限模型
+| | 低Context | 高Context |
+|---|---|---|
+| **高Intelligence** | 危险区域（confident hallucination at scale） | **目标区域**（有效AI） |
+| **低Intelligence** | 无用 | 可靠但受限（规则系统） |
+大多数企业被困在**右下角**：模型很强，但不知道业务定义、潜规则、例外情况。
+
+## 三堵墙
+### 1. Context Bootstrapping（冷启动）
+搭一个Agent只要五分钟，给它注入业务上下文要五个月。
+
+### 2. Context Management（不共享学习）
+一个Agent有记忆，一群Agent有失忆。每个Agent永远从零开始。
+
+### 3. Context Portability（语义冲突）
+多Agent对同一概念有不同解读，导致"有说服力的错误"。
+
+## 飞轮效应
+越过三堵墙后，Context会形成飞轮：
+1. 业务系统已有数据可生成Context草稿
+2. 每次精修建立在上次基础上，质量爬坡
+3. 每次交互的Trace（纠错、反馈）是金矿
+4. 需要像代码库一样维护：版本控制、测试、治理
+
+## 与现有知识的链接
+- → [Harness Context Management](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Context作为Agent的工作集
+- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-context-layer-kgc-2026.md)
+
+## 核心价值
+这个框架的诊断价值大于产品价值。用P=f(I,C)、Maya on Day 1、四象限、三堵墙这些工具，可以诊断企业AI现在处于哪个象限、撞的是哪堵墙。
+> 第四堵墙（隐含）：没有人认领Context建设这件事——它不在任何人的KPI里。
+
+## 深度分析
+### 诊断框架的迁移：从"模型够不够好"到"给没给它可以用的东西"
+Prukalpa在演讲中观察到，问对问题本身就代表了企业AI战略的根本转向。大多数企业困在右下角（高Intelligence、低Context），不断换更强的模型，但每次部署仍是Day 1。这个困境不是技术问题，而是认知框架问题——直到P=f(I,C)这个乘法公式出现之前，没有框架能清晰说明为什么"模型更强"不等于"效果更好"。
+
+### 三堵墙的结构性解读
+**第一堵墙（冷启动）**的本质是：Context无法购买，只能积累。Intelligence按API调用次数计费，Context则需要业务人员时间投入。这两种成本的不对称决定了企业花钱的方向和实际缺口的方向不一致。
+**第二堵墙（不共享学习）**在架构上是一个信息流问题，但在治理上是一个优先级问题。作者在文中提出了一个反向观点：在Context质量验证机制建立之前，打通Agent间学习通道可能加速错误传播。这比"信息不流动"更深一层——"什么信息值得流动"这个元问题没有被解决。
+**第三堵墙（语义冲突）**的危险在于它的隐蔽性。当多个Agent各自以"有说服力的自信"输出不同版本的真相，在汇聚点对账之前，这个冲突不会被发现。Sierra、Writer、Google Agentspace、Snowflake Cortex都在经历这个过程。
+
+### 飞轮成立的隐含条件
+作者对飞轮持保留态度：对"业务系统已有数据可生成Context草稿"这一步骤的乐观，在现实中会遇到SQL过时、字段描述缺失、lineage不完整等问题。更根本的是，Context飞轮转起来需要三个前提——业务相对稳定、数据可信度高、组织愿意把潜规则说出来——而这三个条件在大多数仍在快速变化的公司里无法同时满足。
+
+### 第四堵墙：责任归属的空白
+Context建设落在数据工程、AI产品、治理三个团队的交叉地带，实际上是无人的KPI。这不是组织设计问题，而是企业还没真正认定Context是资产。
+
+## 实践启示
+**立即可用的诊断问题：**
+1. 你的AI现在处于哪个象限？做一次四象限评估。
+2. 你正在撞的是哪堵墙？三堵墙的优先级不同：冷启动需要领域专家时间，管理墙需要架构设计，语义墙需要治理协议。
+3. 有没有人认领Context建设？如果没有，这是比换模型更优先要解决的问题。
+**飞轮启动的条件判断：**
+在考虑Context基础设施之前，先评估：业务稳定性、数据可信度、组织对潜规则编码的意愿。如果这三个条件不满足，先让Context飞轮的概念在团队中形成共识，等到条件成熟再动手。
+**最小可行Context的起点：**
+不必等完美。先从高频、高价值的边缘case开始，把"没有人写下来"的那条潜规则编码进Context，比构建全面本体更重要。质量在精修中爬坡，不在一次性和盘托出。
+**多Agent团队的语义对齐：**
+在多个Agent投入生产之前，先建立跨Agent的概念字典——尤其"revenue"、"活跃用户"这类关键指标的定义。定义冲突的代价随Agent数量指数增长，但预防成本是线性的。
+> [!contradiction] 参见  — 持"Context作为Agent工作集"的不同实践路径
+> [!contradiction] 参见 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-context-layer-kgc-2026.md) — 持更乐观的飞轮预期
+
+## 相关实体
+- [OpenHuman: AI Agent 持久记忆框架](https://github.com/QianJinGuo/wiki/blob/main/entities/openhuman-ai-agent-memory-tree-tokenjuice.md)
+- [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-coding-agent-memory-system.md)
+- [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-agent-engineering.md)
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](https://github.com/QianJinGuo/wiki/blob/main/entities/pi-agent-framework-event-bus-design.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+
+---
+
+## Ch06.024 Obsidian
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/obsidian.md`
 
@@ -3932,7 +3965,93 @@ iOS/Android 端体验弱于桌面端，优化方案：
 
 ---
 
-## Ch06.023 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地
+## Ch06.025 Your documentation is still in your Mum's filing cabinet
+
+> 📊 Level ⭐⭐ | 7.1KB | `entities/documentation-organisation-humans-ai.md`
+
+# Your documentation is still in your Mum's filing cabinet
+
+> **来源**: [https://gerireid.com/blog/organising-documentation-for-humans-and-ai/](https://gerireid.com/blog/organising-documentation-for-humans-and-ai/)
+
+## 摘要
+
+Gerí Reid 从一个简单的观察出发：大多数文档仍然按照 1970 年代 Xerox PARC 发明的桌面隐喻组织——文件夹套文件夹的树状结构。但知识很少服从这种层级关系。一个组件的无障碍决策可能同时影响设计、工程、内容和客服——你把它放在哪个文件夹里？AI 检索系统的出现使这一问题变得无可回避：AI 不关心你把东西存在哪里，它通过意义、上下文和关系来发现信息。文档的未来不是更大的文件柜和更好的标签，而是可以从多个方向发现的知识网络。
+
+## 核心要点
+
+### 文件柜隐喻的遗产
+
+现代 GUI 直接借用了物理办公室概念——文档、文件夹、归档系统——因为它们对办公室工作者来说很熟悉。但五十年后，30 岁以下的人中有多少真正使用过物理文件柜？Reid 记述了一位同事将所有文件直接保存在 Mac 桌面上，通过空间位置和肌肉记忆来导航——他甚至没有意识到文件实际上存储在桌面文件夹的目录结构中。这揭示了一个深层问题：我们的数字工具强加了一种用户可能并不自然的组织心智模型。
+
+### 信息觅食理论
+
+Peter Pirolli 和 Stuart Card 的 [Information Foraging](https://www.nngroup.com/articles/information-foraging/) 理论将人类描述为"信息觅食者"——像獾觅食小无脊椎动物一样，人类寻找有用信息可能在附近的线索，并不断决定是否继续搜索。这解释了为什么文档用户常常：
+
+- 优先搜索而非浏览
+- 探索几层后就停止
+- 直接问同事
+- 创建重复文档
+
+信息往往存在，但人们本能地找不到它的位置。对建档者来说合理的层级结构，对使用者来说可能深藏在"冬季毛衣和登山袜"之间。
+
+### AI 暴露了问题
+
+现代 AI 检索系统不依赖文件夹结构。一个 design token 页面可以因为它提到了颜色对比度而被检索到，而不是因为它位于 `Design System → Foundations → Accessibility → Colour` 路径下。AI 使一个早已存在但被人类习惯性绕过的问题变得无可回避：**文件夹是存储机制，不是知识架构**。
+
+### 无障碍设计的隐含智慧
+
+无障碍设计的一个反复出现的主题是：信息不应依赖单一路径。我们不单独依赖颜色、形状或视觉位置来传达意义。同样的原则适用于文档——当人们可以通过搜索、导航、链接、元数据和相关内容到达信息时，信息变得更容易发现。无障碍设计可能一直在指向文档组织的正确方向。
+
+## 深度分析
+
+### 从树到图：知识组织的范式转移
+
+Reid 引用了 Chase McCoy 的 [Design systems as knowledge graphs](https://chsmc.org/2021/08/systems-as-knowledge-graphs/) 一文，该文论证设计系统本质上是互联知识的集合，而非孤立资产的组合。理解概念之间的关系往往比知道任何单条信息存在哪里更有价值。
+
+这与 知识图谱 和 语义 Web 的理念一脉相承。1990 年代早期的 Semantic File Systems 研究就提出，信息应通过属性和意义（而非物理位置）来检索。三十年后，我们仍然在与同样的问题搏斗——只是现在有了 AI 作为催化剂。
+
+### Obsidian 与双链笔记的启示
+
+Reid 提到使用 Obsidian 做笔记的体验：标签和链接创建了一个关系图谱，而不是强迫笔记进入刚性层级结构。这比任何文件夹结构都更接近知识的实际运作方式。这与本 wiki 的设计理念高度一致——通过 wikilinks 和 tags 建立多向连接，而非依赖单一的目录层级。
+
+### 对 AI-native 文档系统的启示
+
+当前的 AI 检索（RAG）系统在语义搜索层面已经优于传统文件夹浏览，但文档的"AI 可发现性"仍需要人为优化：
+
+- **清晰的结构和有意义的标题**：AI 需要上下文信号来正确检索
+- **有用的元数据和描述**：frontmatter、tags、categories 为 AI 提供检索维度
+- **概念间的强关系**：wikilinks、双向链接、related content 构建了 AI 可遍历的知识图谱
+- **一致的语言**：术语一致性直接影响语义检索的准确率
+
+这些特性同时帮助人类和 AI 发现信息——这是文档组织中罕见的双赢。
+
+### 与 Design Systems 的交叉
+
+Reid 的 UX 背景使她自然地将文档问题与 design systems 联系起来。组件的无障碍决策同时属于设计、工程、内容和客服领域——这正是知识图谱优于树状结构的典型案例。每个组件应该是图谱中的一个节点，连接到所有相关领域，而非被困在某个单一文件夹中。
+
+## 实践启示
+
+- **文档架构师**：放弃"找到完美位置"的执念，转而投资多路径发现——搜索、元数据、标签、交叉引用、相关内容
+- **AI 工程师**：在构建 RAG 系统时，不仅依赖语义向量搜索，还应利用文档的结构化元数据（tags、links、hierarchy）作为检索信号
+- **设计系统团队**：将设计系统视为知识图谱而非资产库——组件之间的关系（依赖、替代、组合）与组件本身同样重要
+- **工具选择**：优先支持双向链接、标签系统和图谱可视化的工具（如 Obsidian、Logseq），而非仅提供文件夹结构的传统 wiki
+
+## 相关实体
+
+- 知识图谱 — 以关系为核心的知识表示方法
+- Design Systems — 设计系统的理论与实践
+- [Consistency, But in Excellence](https://github.com/QianJinGuo/wiki/blob/main/entities/consistency-excellence-jim-nielsen.md) — 系统化 vs 个体卓越的张力
+- RAG (Retrieval-Augmented Generation) — AI 检索增强生成
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/documentation-organisation-humans-ai.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch06.026 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ant-group-medical-agent-afu.md`
 
@@ -4028,7 +4147,7 @@ Speculative Decoding 的 SpecFog 方案将推理速度从 50 提升到 120 token
 
 ---
 
-## Ch06.024 上下文工程：三种 Agent Memory 方案对比实验
+## Ch06.027 上下文工程：三种 Agent Memory 方案对比实验
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/context-engineering-three-memory-paradigms.md`
 
@@ -4057,15 +4176,15 @@ Speculative Decoding 的 SpecFog 方案将推理速度从 50 提升到 120 token
 
 ## 深度分析
 ### 1. MSA 的信息有损根因
-MSA 的核心压缩机制是 **chunk-level mean pooling**（每 64 个 token 压缩为 1 个向量）。这在语义聚合类任务（如知识问答）上表现良好，因为全局主旨信息得以保留；但在需要精确回溯的任务（如小说情节中的时间线、人物关系、细节描写）上，pooling 过程丢失了：
+MSA 的核心压缩机制是 **chunk-level mean pooling**（每 64 个 token 压缩为 1 个向量）。这在语义聚合类任务（如知识问答）上表现良好，因为全局主旨信息得以保留；但在需要精确回溯的任务（如小说情节中的时间线、人物关系、细节描写）上，pooling 过程丢失了：^[].md]
 
 - **词序信息**：mean pooling 等概率混合所有 token 的 hidden state，词序被打平
 - **转折/修饰关系**：转折连词、程度副词、否定词等细粒度信号被稀释
 - **命名实体边界**：人名、地名、蛊虫名等关键实体的精确边界被模糊化
-MSA 论文原文消融实验印证了这一点：禁用原始文本注入后，DuReader 阅读理解任务下降 46.2%，说明压缩 KV 只能保留高层语义，底层细节必须依赖原始文本补充。
+MSA 论文原文消融实验印证了这一点：禁用原始文本注入后，DuReader 阅读理解任务下降 46.2%，说明压缩 KV 只能保留高层语义，底层细节必须依赖原始文本补充。^[].md]
 
 ### 2. D2L 失败的本质：权重空间的表达能力不足
-Doc-to-lora 的思路是"将文档编码为 LoRA 权重，附加到冻结的 LLM 上"，这在概念上很优雅——让模型"记住"文档内容而无需在 context 中输入。但实验结果揭示了一个根本矛盾：
+Doc-to-lora 的思路是"将文档编码为 LoRA 权重，附加到冻结的 LLM 上"，这在概念上很优雅——让模型"记住"文档内容而无需在 context 中输入。但实验结果揭示了一个根本矛盾：^[].md]
 
 - **LoRA rank=8 的表达能力上限**：rank-8 LoRA 的参数量约数十万，而一篇 8K tokens 的文档信息量（以 embedding 维度计）约为 `8192 × hidden_dim`，两者相差数个数量级
 - **信息压缩是单向有损的**：embedding → 权重 的映射必然丢失细粒度信息，模型只能学到"文档风格的概要"而非"文档内容的精确表述"
@@ -4077,7 +4196,7 @@ Doc-to-lora 的思路是"将文档编码为 LoRA 权重，附加到冻结的 LLM
 | MSA | ~9448ms | 两轮生成 + KV 跨层级传输 | 受限于压缩质量 |
 | D2L | ~4007ms | document→LoRA 编码 | 权重表达能力硬上限 |
 | RAG | ~2249ms | LLM 生成 | 只受 embedding 质量限制 |
-RAG 延迟最低的原因在于它将记忆存储外包给独立的向量数据库，LLM 只负责生成；延迟的主要来源是 LLM 生成本身，而非检索。MSA 延迟最高是因为需要两轮模型 forward pass（router + generator）且 KV 需要跨内存层级加载。
+RAG 延迟最低的原因在于它将记忆存储外包给独立的向量数据库，LLM 只负责生成；延迟的主要来源是 LLM 生成本身，而非检索。MSA 延迟最高是因为需要两轮模型 forward pass（router + generator）且 KV 需要跨内存层级加载。^[].md]
 
 ## 实践启示
 ### 场景选型决策树
@@ -4093,135 +4212,49 @@ RAG 延迟最低的原因在于它将记忆存储外包给独立的向量数据�
 ```
 
 ### MSA 的最佳实践：双路注入
-MSA 的信息有损问题有已验证的解法：**保留压缩 KV 用于路由检索，同时在推理时注入原始文本**。原论文消融实验显示此举可补回 37.1% 的性能损失。实现要点：
+MSA 的信息有损问题有已验证的解法：**保留压缩 KV 用于路由检索，同时在推理时注入原始文本**。原论文消融实验显示此举可补回 37.1% 的性能损失。实现要点：^[].md]
 
 - **Router Key 全量存 GPU**：用于快速 top-k 筛选
 - **压缩 K/V 存 CPU 内存**：按需加载到 GPU
 - **原始文本按 chunk 缓存**：与压缩 KV 联合检索，优先使用原始文本进行最终生成
 
 ### RAG 的优化方向
-当前 RAG 配置（Qwen3-Embedding-4B + top-5 + 1500 字截断）在小说 QA 上已经表现最佳，但仍有提升空间：
+当前 RAG 配置（Qwen3-Embedding-4B + top-5 + 1500 字截断）在小说 QA 上已经表现最佳，但仍有提升空间：^[].md]
 
 - **重排器（reranker）**：当前未使用，加入 reranker 可进一步提升多跳推理场景的 precision
 - **动态分块**：小说等叙事性文本建议按节或段落分块，而非固定长度切分，保留完整情节上下文
 - **混合检索**：结合 dense embedding + sparse（BM25），兼顾语义匹配和关键词精确命中
 
 ### D2L 的未来方向
-D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈是 **rank 不足**。未来可能的突破路径：
+D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈是 **rank 不足**。未来可能的突破路径：^[].md]
 
 - **rank 扩展**：LoRA rank 从 8 提升至 128+，但参数量同步增长，推理延迟需优化
 - **混合架构**：D2L 提供"知识风格"预热，RAG 提供精确事实补充
 - **专有模型**：针对文档编码任务训练专用 encoder-decoder，直接输出权重而非通过 hypernetwork 映射
 
 ## 相关实体
-- [AI Agent 记忆系统架构](https://github.com/QianJinGuo/wiki/blob/main/entities/how-ai-agent-memory-works.md)
-- [LLM Wiki 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-architecture.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
-- [hermes-agent-self-evolving-source-analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [[entities/how-ai-agent-memory-works|AI Agent 记忆系统架构]
+- [[entities/llm-wiki-architecture|LLM Wiki 架构]
+- [[entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution|深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"]
+- [[entities/hermes-agent-self-evolving-source-analysis|hermes-agent-self-evolving-source-analysis]
+- [[entities/ai-agent-engineer-capability-map|AI Agent 工程师能力地图]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-engineering-three-memory-paradigms-comparison.md)
+→ [[raw/articles/context-engineering-three-memory-paradigms-comparison.md|原文存档]
 
-- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
+- [[concepts/karpathy-llm-wiki-v2|Karpathy LLM Wiki V2]
 
-- [Agent Memory Storage Six Schools Quantumtransf Debate Frank](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
-
----
-
-## Ch06.025 Your documentation is still in your Mum's filing cabinet
-
-> 📊 Level ⭐⭐ | 6.8KB | `entities/documentation-organisation-humans-ai.md`
-
-# Your documentation is still in your Mum's filing cabinet
-
-> **来源**: [https://gerireid.com/blog/organising-documentation-for-humans-and-ai/](https://gerireid.com/blog/organising-documentation-for-humans-and-ai/)
-
-## 摘要
-
-Gerí Reid 从一个简单的观察出发：大多数文档仍然按照 1970 年代 Xerox PARC 发明的桌面隐喻组织——文件夹套文件夹的树状结构。但知识很少服从这种层级关系。一个组件的无障碍决策可能同时影响设计、工程、内容和客服——你把它放在哪个文件夹里？AI 检索系统的出现使这一问题变得无可回避：AI 不关心你把东西存在哪里，它通过意义、上下文和关系来发现信息。文档的未来不是更大的文件柜和更好的标签，而是可以从多个方向发现的知识网络。
-
-## 核心要点
-
-### 文件柜隐喻的遗产
-
-现代 GUI 直接借用了物理办公室概念——文档、文件夹、归档系统——因为它们对办公室工作者来说很熟悉。但五十年后，30 岁以下的人中有多少真正使用过物理文件柜？Reid 记述了一位同事将所有文件直接保存在 Mac 桌面上，通过空间位置和肌肉记忆来导航——他甚至没有意识到文件实际上存储在桌面文件夹的目录结构中。这揭示了一个深层问题：我们的数字工具强加了一种用户可能并不自然的组织心智模型。
-
-### 信息觅食理论
-
-Peter Pirolli 和 Stuart Card 的 [Information Foraging](https://www.nngroup.com/articles/information-foraging/) 理论将人类描述为"信息觅食者"——像獾觅食小无脊椎动物一样，人类寻找有用信息可能在附近的线索，并不断决定是否继续搜索。这解释了为什么文档用户常常：
-
-- 优先搜索而非浏览
-- 探索几层后就停止
-- 直接问同事
-- 创建重复文档
-
-信息往往存在，但人们本能地找不到它的位置。对建档者来说合理的层级结构，对使用者来说可能深藏在"冬季毛衣和登山袜"之间。
-
-### AI 暴露了问题
-
-现代 AI 检索系统不依赖文件夹结构。一个 design token 页面可以因为它提到了颜色对比度而被检索到，而不是因为它位于 `Design System → Foundations → Accessibility → Colour` 路径下。AI 使一个早已存在但被人类习惯性绕过的问题变得无可回避：**文件夹是存储机制，不是知识架构**。
-
-### 无障碍设计的隐含智慧
-
-无障碍设计的一个反复出现的主题是：信息不应依赖单一路径。我们不单独依赖颜色、形状或视觉位置来传达意义。同样的原则适用于文档——当人们可以通过搜索、导航、链接、元数据和相关内容到达信息时，信息变得更容易发现。无障碍设计可能一直在指向文档组织的正确方向。
-
-## 深度分析
-
-### 从树到图：知识组织的范式转移
-
-Reid 引用了 Chase McCoy 的 [Design systems as knowledge graphs](https://chsmc.org/2021/08/systems-as-knowledge-graphs/) 一文，该文论证设计系统本质上是互联知识的集合，而非孤立资产的组合。理解概念之间的关系往往比知道任何单条信息存在哪里更有价值。
-
-这与 知识图谱 和 语义 Web 的理念一脉相承。1990 年代早期的 Semantic File Systems 研究就提出，信息应通过属性和意义（而非物理位置）来检索。三十年后，我们仍然在与同样的问题搏斗——只是现在有了 AI 作为催化剂。
-
-### Obsidian 与双链笔记的启示
-
-Reid 提到使用 Obsidian 做笔记的体验：标签和链接创建了一个关系图谱，而不是强迫笔记进入刚性层级结构。这比任何文件夹结构都更接近知识的实际运作方式。这与本 wiki 的设计理念高度一致——通过 wikilinks 和 tags 建立多向连接，而非依赖单一的目录层级。
-
-### 对 AI-native 文档系统的启示
-
-当前的 AI 检索（RAG）系统在语义搜索层面已经优于传统文件夹浏览，但文档的"AI 可发现性"仍需要人为优化：
-
-- **清晰的结构和有意义的标题**：AI 需要上下文信号来正确检索
-- **有用的元数据和描述**：frontmatter、tags、categories 为 AI 提供检索维度
-- **概念间的强关系**：wikilinks、双向链接、related content 构建了 AI 可遍历的知识图谱
-- **一致的语言**：术语一致性直接影响语义检索的准确率
-
-这些特性同时帮助人类和 AI 发现信息——这是文档组织中罕见的双赢。
-
-### 与 Design Systems 的交叉
-
-Reid 的 UX 背景使她自然地将文档问题与 design systems 联系起来。组件的无障碍决策同时属于设计、工程、内容和客服领域——这正是知识图谱优于树状结构的典型案例。每个组件应该是图谱中的一个节点，连接到所有相关领域，而非被困在某个单一文件夹中。
-
-## 实践启示
-
-- **文档架构师**：放弃"找到完美位置"的执念，转而投资多路径发现——搜索、元数据、标签、交叉引用、相关内容
-- **AI 工程师**：在构建 RAG 系统时，不仅依赖语义向量搜索，还应利用文档的结构化元数据（tags、links、hierarchy）作为检索信号
-- **设计系统团队**：将设计系统视为知识图谱而非资产库——组件之间的关系（依赖、替代、组合）与组件本身同样重要
-- **工具选择**：优先支持双向链接、标签系统和图谱可视化的工具（如 Obsidian、Logseq），而非仅提供文件夹结构的传统 wiki
-
-## 相关实体
-
-- 知识图谱 — 以关系为核心的知识表示方法
-- Design Systems — 设计系统的理论与实践
-- [Consistency, But in Excellence](https://github.com/QianJinGuo/wiki/blob/main/entities/consistency-excellence-jim-nielsen.md) — 系统化 vs 个体卓越的张力
-- RAG (Retrieval-Augmented Generation) — AI 检索增强生成
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/documentation-organisation-humans-ai.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [[entities/agent-memory-storage-six-schools-quantumtransf-debate-frank]
+- [[moc/prompt-engineering-guide|MOC]
 
 ---
 
-## Ch06.026 TencentDB Agent Memory 短期记忆压缩方案
+## Ch06.028 TencentDB Agent Memory 短期记忆压缩方案
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/tencentdb-agent-memory-short-term-compression.md`
+> 📊 Level ⭐⭐ | 6.3KB | `entities/tencentdb-agent-memory-short-term-compression.md`
 
 ## 核心方案
 
-**短期记忆压缩 = 上下文卸载 + Mermaid 无限画布**
+**短期记忆压缩 = 上下文卸载 + Mermaid 无限画布**^[].md]
 
 - **上下文卸载**：完整信息保留于外部文件系统，上下文只留摘要和索引
 - **Mermaid 无限画布**：把任务执行过程转化为可导航的结构化记忆图
@@ -4252,7 +4285,7 @@ Reid 的 UX 背景使她自然地将文档问题与 design systems 联系起来�
 
 ## Mermaid vs StateDiagram
 
-Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适合严格状态机（订单、审批），Flowchart 适合 Agent 探索式执行（并行分支、交叉引用）。
+Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适合严格状态机（订单、审批），Flowchart 适合 Agent 探索式执行（并行分支、交叉引用）。^[].md]
 
 ## 层次化注意力
 
@@ -4272,25 +4305,25 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 
 ## 深度分析
 
-**从"上下文窗口焦虑"到"可达性设计"**
+**从"上下文窗口焦虑"到"可达性设计"**^[].md]
 
-这套方案的本质突破，是把记忆管理的核心问题从"上下文窗口大小"重新定义为"信息可达性"。传统思路是扩大窗口或压缩内容，都停留在"塞进去"的逻辑里。而腾讯云的方案承认上下文窗口有限，转而设计一套让信息在窗口外仍然"活着"的系统——不是让信息变小，而是让信息搬家后还能找回来。
+这套方案的本质突破，是把记忆管理的核心问题从"上下文窗口大小"重新定义为"信息可达性"。传统思路是扩大窗口或压缩内容，都停留在"塞进去"的逻辑里。而腾讯云的方案承认上下文窗口有限，转而设计一套让信息在窗口外仍然"活着"的系统——不是让信息变小，而是让信息搬家后还能找回来。^[].md]
 
 **四层折叠的递归压缩结构**
 
-四层记忆折叠不是简单分级，而是一个递归压缩的信息管道：原始 tool result → 工具调用级摘要 → 任务节点级摘要 → 上下文元数据。每一层都比上一层更抽象，同时保留指向更底层的引用指针。这与人类工作记忆中的"组块化"机制类似：不是删除细节，而是把细节打包成更高层次的单元，同时保留解压路径。
+四层记忆折叠不是简单分级，而是一个递归压缩的信息管道：原始 tool result → 工具调用级摘要 → 任务节点级摘要 → 上下文元数据。每一层都比上一层更抽象，同时保留指向更底层的引用指针。这与人类工作记忆中的"组块化"机制类似：不是删除细节，而是把细节打包成更高层次的单元，同时保留解压路径。^[].md]
 
-**Mermaid 为什么有效：结构先于内容**
+**Mermaid 为什么有效：结构先于内容**^[].md]
 
-论文指出 Mermaid 解决的是"结构丢失"问题而非"内容太长"问题。这一区分至关重要。传统压缩研究专注于让同样的信息用更少的 token 表达（内容压缩），而腾讯云关注的是：当信息被压缩后，推理链路是否能保持完整（结构压缩）。Mermaid Flowchart 通过节点+边+引用路径，让 Agent 保留了"从哪里来、到哪里去"的导航能力，这是线性 summary 做不到的。
+论文指出 Mermaid 解决的是"结构丢失"问题而非"内容太长"问题。这一区分至关重要。传统压缩研究专注于让同样的信息用更少的 token 表达（内容压缩），而腾讯云关注的是：当信息被压缩后，推理链路是否能保持完整（结构压缩）。Mermaid Flowchart 通过节点+边+引用路径，让 Agent 保留了"从哪里来、到哪里去"的导航能力，这是线性 summary 做不到的。^[].md]
 
 **符号设计三原则的本质**
 
-三个原则的底层逻辑是：压缩符号必须让模型能从结构推理语义，而不是依赖记忆特定符号。INTJ 式的记忆压缩不稳定，因为模型可能没训练过这个符号；但 Mermaid 节点的结构（node_id + summary + result_ref）是自解释的，模型可以从关系推理出含义。这与"形式化知识表示"的思路一致：不是编码更多知识，而是让知识以模型能推理的方式被表达。
+三个原则的底层逻辑是：压缩符号必须让模型能从结构推理语义，而不是依赖记忆特定符号。INTJ 式的记忆压缩不稳定，因为模型可能没训练过这个符号；但 Mermaid 节点的结构（node_id + summary + result_ref）是自解释的，模型可以从关系推理出含义。这与"形式化知识表示"的思路一致：不是编码更多知识，而是让知识以模型能推理的方式被表达。^[].md]
 
 ## 实践启示
 
-**对 Agent 开发者的实操建议**
+**对 Agent 开发者的实操建议**^[].md]
 
 1. **优先实现上下文卸载**：在 Agent 设计初期就把完整工具结果写入外部存储，不要等到上下文吃紧再补救。上下文卸载可以带来 ~15% Token 节省和 +5% 任务成功率，性价比最高。
 
@@ -4309,22 +4342,22 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 ## 关联阅读
 
 ## 相关实体
-- [Agent Memory Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
-- [Agent Memory Evaluation Landscape Taobao Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md)
-- [Ai Agent Memory Systems](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-memory-systems.md)
-- [Agent Memory Modular Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md)
-- [How Ai Agent Memory Works](https://github.com/QianJinGuo/wiki/blob/main/entities/how-ai-agent-memory-works.md)
+- [[entities/agent-memory-architecture]
+- [[entities/agent-memory-evaluation-landscape-taobao-survey]
+- [[entities/ai-agent-memory-systems]
+- [[entities/agent-memory-modular-framework]
+- [[entities/how-ai-agent-memory-works]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencentdb-agent-memory-context-offloading.md)
+→ [[raw/articles/tencentdb-agent-memory-context-offloading|原文存档]
 
 ---
 
-## Ch06.027 Hermes Agent 三级 Memory 架构解析（One掌柜视角）
+## Ch06.029 Hermes Agent 三级 Memory 架构解析（One掌柜视角）
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/hermes-agent-three-layer-memory-one.md`
 
 ## 与 VibeCoder 版本的关系
-本文与 VibeCoder 的《Hermes Agent Memory System 架构解析》是**同一源码的独立分析**，但切入角度不同：
+本文与 VibeCoder 的《Hermes Agent Memory System 架构解析》是**同一源码的独立分析**，但切入角度不同：^[].md]
 
 - VibeCoder 版本侧重框架源码结构和 MCP Tool 机制
 - 本文（One掌柜）侧重架构分层设计和 memory 流转逻辑
@@ -4338,9 +4371,11 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 | 额外 | Periodic Nudge | — | 每 300s | autonomous curation，什么值得写回 memory |
 
 ## 关键设计洞察
-**Mid-session frozen**：本轮 memory 变更不立即打乱 prefix cache，下轮才注入。说明 Hermes 在平衡：记忆写入 vs prompt 稳定性 vs prefix cache 成本。
-**Tier 1+2 独立于 Tier 3**：就算切换 semantic provider，Layer 1 和 Layer 2 的能力不受影响，Tier 3 是可选项。
-**Autonomous curation**：不是等用户手动喂记忆，而是系统周期性判断"什么值得留下"——Periodic Nudge 是主动式 memory 管理机制。
+**Mid-session frozen**：本轮 memory 变更不立即打乱 prefix cache，下轮才注入。说明 Hermes 在平衡：记忆写入 vs prompt 稳定性 vs prefix cache 成本。^[].md]
+
+**Tier 1+2 独立于 Tier 3**：就算切换 semantic provider，Layer 1 和 Layer 2 的能力不受影响，Tier 3 是可选项。^[].md]
+
+**Autonomous curation**：不是等用户手动喂记忆，而是系统周期性判断"什么值得留下"——Periodic Nudge 是主动式 memory 管理机制。^[].md]
 
 ## 相关框架对比
 | 框架 | Memory 方案 | 特点 |
@@ -4351,9 +4386,11 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 > 来源：[One掌柜](https://mp.weixin.qq.com/s/xWphR-dDs5c64FgEggRDmw)
 
 ## 深度分析
-**三层 Memory 架构的设计哲学**：Hermes 采用"成本优先、分层解耦"的架构思路。Layer 1 用纯文本 Markdown 做 system prompt 载体，利用 prefix cache 降低每次推理的 token 成本；Layer 2 用 SQLite FTS5 做结构化检索，10ms 级别响应万级文档；Layer 3 可插拔设计确保不绑定任何特定 semantic provider。这种分层使得每一层都可以独立演进和替换——当你需要升级 semantic memory 能力时，不需要重构整个 memory 系统。
-**Mid-session Frozen 的工程权衡**：本轮 memory 变更"下轮才生效"这个设计细节实际上是在刻意回避 prefix cache 失效问题。如果每次 memory 写入都立即反映到 system prompt，prefix cache 命中率会大幅下降，推理成本陡升。Hermes 选择容忍"本轮略微陈旧"来换取整体系统效率，这是一种典型的工程妥协——不是完美主义，但足够实用。
-**Autonomous Curation 的主动管理思路**：传统 RAG 系统是被动等待检索，而 Periodic Nudge 每 300s 主动判断"什么值得写回 memory"。这相当于给 LLM 增加了一个定期反思机制——不是用户指挥 AI 记住什么，而是 AI 自己决定什么值得沉淀。这个思路在 Hyperbolic Lab 等项目中也有类似实践，但 Hermes 将其做成了周期性后台任务而非实时拦截。
+**三层 Memory 架构的设计哲学**：Hermes 采用"成本优先、分层解耦"的架构思路。Layer 1 用纯文本 Markdown 做 system prompt 载体，利用 prefix cache 降低每次推理的 token 成本；Layer 2 用 SQLite FTS5 做结构化检索，10ms 级别响应万级文档；Layer 3 可插拔设计确保不绑定任何特定 semantic provider。这种分层使得每一层都可以独立演进和替换——当你需要升级 semantic memory 能力时，不需要重构整个 memory 系统。^[].md]
+
+**Mid-session Frozen 的工程权衡**：本轮 memory 变更"下轮才生效"这个设计细节实际上是在刻意回避 prefix cache 失效问题。如果每次 memory 写入都立即反映到 system prompt，prefix cache 命中率会大幅下降，推理成本陡升。Hermes 选择容忍"本轮略微陈旧"来换取整体系统效率，这是一种典型的工程妥协——不是完美主义，但足够实用。^[].md]
+
+**Autonomous Curation 的主动管理思路**：传统 RAG 系统是被动等待检索，而 Periodic Nudge 每 300s 主动判断"什么值得写回 memory"。这相当于给 LLM 增加了一个定期反思机制——不是用户指挥 AI 记住什么，而是 AI 自己决定什么值得沉淀。这个思路在 Hyperbolic Lab 等项目中也有类似实践，但 Hermes 将其做成了周期性后台任务而非实时拦截。^[].md]
 
 ## 实践启示
 1. **个人使用场景下，Layer 1+2 足够**：如果你用 Hermes 处理日常任务，Layer 1 的 MEMORY.md + USER.md 加上 Layer 2 的 SQLite FTS5 检索已经能覆盖 90% 的记忆需求。Layer 3 的 semantic provider 是锦上添花，不必强求。
@@ -4362,17 +4399,17 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 4. **本地模型 + 云端模型混合使用可行**：vmiss 用 RTX 4070 8GB 跑 Qwen 3.5 9B 量化模型处理健康咨询类任务，效果"最让人惊讶"。这说明对于特定垂直场景，本地小模型已经足够好用，而且零 API 成本。
 
 ## 相关实体
-- [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [AI Agent 记忆系统架构](https://github.com/QianJinGuo/wiki/blob/main/entities/how-ai-agent-memory-works.md)
-- [Hermes Agent 记忆系统深度拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
-- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [[queries/agent-memory-system-design|Agent Memory System 设计指南]
+- [[entities/how-ai-agent-memory-works|AI Agent 记忆系统架构]
+- [[entities/hermes-agent-memory-system-vs-openclaw|Hermes Agent 记忆系统深度拆解]
+- [[concepts/agent-memory-system-design|Agent Memory System Design]
 
-- [Hermes Agent Three Layer Memory Architecture One](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-three-layer-memory-architecture-one.md)
-- [Hermes Agent Core Architecture Self Evolution](https://github.com/QianJinGuo/wiki/blob/main/queries/hermes-agent-core-architecture-self-evolution.md)
+- [[entities/hermes-agent-three-layer-memory-architecture-one]
+- [[queries/hermes-agent-core-architecture-self-evolution]
 
 ---
 
-## Ch06.028 Building is just the beginning: Introducing Discoverability
+## Ch06.030 Building is just the beginning: Introducing Discoverability
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/lovable-discoverability-intro.md`
 
@@ -4420,7 +4457,7 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 
 ---
 
-## Ch06.029 OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
+## Ch06.031 OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/openjiuwen-autogenetic-memory-agent-2026-07-02.md`
 
@@ -4501,59 +4538,9 @@ JiuwenMemory 设计了四层记忆架构，让信息从原始对话逐级抽象�
 
 ---
 
-## Ch06.030 OpenChronicle — AI可复用记忆层
+## Ch06.032 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
 
-> 📊 Level ⭐⭐ | 4.3KB | `entities/openchronicle-memory-layer.md`
-
-# OpenChronicle
-> 00后团队Vida开源的AI记忆层项目，将"屏幕感知+持续记忆"从付费墙中拆解出来，变成可复用基础设施。
-
-## 基本信息
-- **GitHub**: https://github.com/Einsia/OpenChronicle
-- **发布**: 2026-04-23（OpenAI Chronicle发布后48小时）
-- **团队**: Vida（一群00后开发者）
-- **核心特性**: 本地运行 + 任意模型 + 多Agent共享
-
-## 核心设计
-- **存储**: Markdown
-- **检索**: SQLite
-- **结构**: AX Tree暴露，可读/可改/可迁移
-- **本地优先**: 数据不出设备，可暂停恢复
-
-## 核心洞察
-**AI记忆层的三种形态**：
-1. **Chronicle（闭源）**：记忆=产品能力，锁在应用中，控制权在平台
-2. **OpenChronicle（开源）**：记忆=数据层，可流动/可复用，控制权在用户
-3. **下一步命题**：当AI可长期记录行为/习惯/工作过程——这些数据归谁？
-
-## 与本文相关
--  — OpenClaw生态
-- [Gstack Ai Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/gstack-ai-workflow.md) — AI协作工作流
-- [Kuse Junior Ai Employee](https://github.com/QianJinGuo/wiki/blob/main/entities/kuse-junior-ai-employee.md) — AI员工（Org Memory对比）
--  — 详细报道（raw）
-
-## 深度分析
-OpenChronicle的出现揭示了AI记忆层的核心争议——记忆究竟应该是产品能力还是基础设施：
-**1. 从产品功能到数据层的范式转移**：OpenAI Chronicle将"屏幕感知+持续记忆"定位为Pro用户专属的产品能力（$100/月），OpenChronicle则将其开源为可复用的数据层基础设施。前者强调体验完整性，后者强调可组合性和用户控制权。这一分歧映射出AI应用层与基础设施层之间的根本矛盾。
-**2. 本地优先的技术价值**：完全本地运行意味着数据不出设备，这对隐私敏感场景至关重要。"可暂停/恢复"的设计允许用户控制记忆的连续性而非被动全程监控，提供了比云端方案更细粒度的控制。
-**3. 多Agent共享记忆的可能性**：当不同工具（IDE、飞书、浏览器）共享同一份用户上下文时，AI助手能准确解析跨应用的指代（如"那个bug"指向VS Code中的具体错误）。这种跨工具的上下文一致性是单点AI应用无法实现的。
-**4. 存储选择的工程哲学**：用Markdown存储（可读性优先） + SQLite检索（结构化查询）的组合，兼顾了人类可读性和机器可查询性。AX Tree暴露使得记忆结构完全可迁移，避免了供应商锁定。
-
-## 实践启示
-1. **记忆层可独立于模型存在**：OpenChronicle可接任意模型，这意味着记忆基础设施与模型选择可以解耦。企业可以先建设记忆基础设施，在模型能力迭代时保持上下文连续性。
-2. **本地优先是隐私与控制的平衡点**：对于涉及敏感业务信息的企业场景，本地部署的记忆层可以在保证数据控制权的同时提供跨会话上下文能力。
-3. **开源是打破AI记忆垄断的可行路径**：在Pro版发布后48小时内推出开源替代方案，证明了开源社区快速响应的能力。类似地，企业可以考虑在官方方案之外评估开源替代选项。
-4. **记忆边界与控制权是下一阶段核心议题**：当AI能持续记录用户行为习惯时，数据归属、访问权限、遗忘权等问题将变得迫切。OpenChronicle将记忆变为"数据层"而非"产品能力"，为这些问题的解决提供了技术基础。
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
-
----
-
-## Ch06.031 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
-
-> 📊 Level ⭐⭐ | 4.3KB | `entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md`
+> 📊 Level ⭐⭐ | 4.5KB | `entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md`
 
 ## 核心概述
 
@@ -4622,7 +4609,57 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ---
 
-## Ch06.032 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
+## Ch06.033 OpenChronicle — AI可复用记忆层
+
+> 📊 Level ⭐⭐ | 4.3KB | `entities/openchronicle-memory-layer.md`
+
+# OpenChronicle
+> 00后团队Vida开源的AI记忆层项目，将"屏幕感知+持续记忆"从付费墙中拆解出来，变成可复用基础设施。
+
+## 基本信息
+- **GitHub**: https://github.com/Einsia/OpenChronicle
+- **发布**: 2026-04-23（OpenAI Chronicle发布后48小时）
+- **团队**: Vida（一群00后开发者）
+- **核心特性**: 本地运行 + 任意模型 + 多Agent共享
+
+## 核心设计
+- **存储**: Markdown
+- **检索**: SQLite
+- **结构**: AX Tree暴露，可读/可改/可迁移
+- **本地优先**: 数据不出设备，可暂停恢复
+
+## 核心洞察
+**AI记忆层的三种形态**：
+1. **Chronicle（闭源）**：记忆=产品能力，锁在应用中，控制权在平台
+2. **OpenChronicle（开源）**：记忆=数据层，可流动/可复用，控制权在用户
+3. **下一步命题**：当AI可长期记录行为/习惯/工作过程——这些数据归谁？
+
+## 与本文相关
+-  — OpenClaw生态
+- [Gstack Ai Workflow](https://github.com/QianJinGuo/wiki/blob/main/entities/gstack-ai-workflow.md) — AI协作工作流
+- [Kuse Junior Ai Employee](https://github.com/QianJinGuo/wiki/blob/main/entities/kuse-junior-ai-employee.md) — AI员工（Org Memory对比）
+-  — 详细报道（raw）
+
+## 深度分析
+OpenChronicle的出现揭示了AI记忆层的核心争议——记忆究竟应该是产品能力还是基础设施：
+**1. 从产品功能到数据层的范式转移**：OpenAI Chronicle将"屏幕感知+持续记忆"定位为Pro用户专属的产品能力（$100/月），OpenChronicle则将其开源为可复用的数据层基础设施。前者强调体验完整性，后者强调可组合性和用户控制权。这一分歧映射出AI应用层与基础设施层之间的根本矛盾。
+**2. 本地优先的技术价值**：完全本地运行意味着数据不出设备，这对隐私敏感场景至关重要。"可暂停/恢复"的设计允许用户控制记忆的连续性而非被动全程监控，提供了比云端方案更细粒度的控制。
+**3. 多Agent共享记忆的可能性**：当不同工具（IDE、飞书、浏览器）共享同一份用户上下文时，AI助手能准确解析跨应用的指代（如"那个bug"指向VS Code中的具体错误）。这种跨工具的上下文一致性是单点AI应用无法实现的。
+**4. 存储选择的工程哲学**：用Markdown存储（可读性优先） + SQLite检索（结构化查询）的组合，兼顾了人类可读性和机器可查询性。AX Tree暴露使得记忆结构完全可迁移，避免了供应商锁定。
+
+## 实践启示
+1. **记忆层可独立于模型存在**：OpenChronicle可接任意模型，这意味着记忆基础设施与模型选择可以解耦。企业可以先建设记忆基础设施，在模型能力迭代时保持上下文连续性。
+2. **本地优先是隐私与控制的平衡点**：对于涉及敏感业务信息的企业场景，本地部署的记忆层可以在保证数据控制权的同时提供跨会话上下文能力。
+3. **开源是打破AI记忆垄断的可行路径**：在Pro版发布后48小时内推出开源替代方案，证明了开源社区快速响应的能力。类似地，企业可以考虑在官方方案之外评估开源替代选项。
+4. **记忆边界与控制权是下一阶段核心议题**：当AI能持续记录用户行为习惯时，数据归属、访问权限、遗忘权等问题将变得迫切。OpenChronicle将记忆变为"数据层"而非"产品能力"，为这些问题的解决提供了技术基础。
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
+
+---
+
+## Ch06.034 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/qoder-team-knowledge-engine-compiled-knowledge.md`
 
@@ -4681,7 +4718,7 @@ Agent 每次进入项目都要重新读代码、猜结构、问人。
 
 ---
 
-## Ch06.033 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
+## Ch06.035 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
 
@@ -4758,7 +4795,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ---
 
-## Ch06.034 Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
+## Ch06.036 Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-memory-main-contradiction-context-scheduling.md`
 
@@ -4827,7 +4864,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ---
 
-## Ch06.035 Headroom 是怎么省上下文的
+## Ch06.037 Headroom 是怎么省上下文的
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/headroom-context-compression-agent-vibecoder.md`
 
@@ -4884,7 +4921,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 
 ---
 
-## Ch06.036 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
+## Ch06.038 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/alibaba-complex-business-skills-architecture-evolution.md`
 
@@ -4935,7 +4972,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 
 ---
 
-## Ch06.037 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
+## Ch06.039 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/tencentdb-agent-memory-long-term-pyramid.md`
 
@@ -4996,9 +5033,9 @@ PersonaMem（人物画像记忆准确率）提升最显著（+28pp），说明�
 
 ---
 
-## Ch06.038 Skill 编排的 6 种依赖关系
+## Ch06.040 Skill 编排的 6 种依赖关系
 
-> 📊 Level ⭐⭐ | 2.9KB | `entities/skill-orchestration-6-dependencies.md`
+> 📊 Level ⭐⭐ | 3.0KB | `entities/skill-orchestration-6-dependencies.md`
 
 # Skill 编排的 6 种依赖关系
 
@@ -5037,7 +5074,7 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ---
 
-## Ch06.039 LLM Wiki 知识管理
+## Ch06.041 LLM Wiki 知识管理
 
 > 📊 Level ⭐⭐ | 1.8KB | `entities/llm-wiki-knowledge-management.md`
 
@@ -5067,7 +5104,38 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ---
 
-## Ch06.040 AI Memory Architecture: Deep Dive
+## Ch06.042 Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）
+
+> 📊 Level ⭐⭐ | 1.7KB | `entities/loop-engineering-anthropic-playbook-orange-book-v260615-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-anthropic-playbook-orange-book-v260615-2026.md)
+
+Loop Engineering 是 2026 年 6 月由 Peter Steinberger（OpenClaw 作者，800 万浏览帖）、Boris Cherny（Anthropic Claude Code 负责人）、Addy Osmani（Google Chrome 工程师，6 月 7 日命名并成文）**独立同周**浮出水面、由 Osmani 定名的第四层工程范式。与 prompt/context/harness engineering 不同：前三者教人把活干得更好，loop engineering **把人从干活的位置上移除**——不再逐行喂 agent，而是设计一个自动给 agent
+
+## 来源
+
+- 原文: [Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-anthropic-playbook-orange-book-v260615-2026.md)
+- 原始链接: : "local PDF: ~/.hermes/cache/documents/doc_45de9630867c_Loop Engineering.pdf"
+- PDF 存档: `assets/Loop_Engineering_Anthropic_Playbook_Field_Study.pdf`（11 页原版，2026-08-01 从 Feishu 附件归档）
+
+---
+
+## Ch06.043 别让Agent什么都记 上交×腾讯提出 AdaMem
+
+> 📊 Level ⭐⭐ | 0.9KB | `entities/admem-memory-policy-selective-memory-sjtu-tencent-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/admem-memory-policy-selective-memory-sjtu-tencent-2026.md)
+
+上海交大和腾讯合作的论文 AdaMem，解决一个被忽略的问题：LLM Agent 的记忆系统，是不是存得越多越好？答案是：不是。存太多反而会让 Agent 变笨。
+
+## 来源
+
+- 原文: [别让Agent什么都记 上交×腾讯提出 AdaMem](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/admem-memory-policy-selective-memory-sjtu-tencent-2026.md)
+- 原始链接: : "https://www.xiaohongshu.com/discovery/item/6a6b01c2000000000401e623
+
+---
+
+## Ch06.044 AI Memory Architecture: Deep Dive
 
 > 📊 Level ⭐⭐⭐ | 36.6KB | `entities/ai-memory-architecture-deep-dive.md`
 
@@ -5649,9 +5717,9 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 
 ---
 
-## Ch06.041 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
+## Ch06.045 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
 
-> 📊 Level ⭐⭐⭐ | 29.8KB | `entities/miroflow-deep-research-agent-harness-mirothinker.md`
+> 📊 Level ⭐⭐⭐ | 29.7KB | `entities/miroflow-deep-research-agent-harness-mirothinker.md`
 
 # MiroFlow：Deep Research Agent 脚手架
 > "**code 任务和 deep research 任务在认知模式、错误成本、信息来源、上下文需求上有很大区别，这必然导致脚手架在工具集、context 管理、错误恢复、answer 提取等环节都做出截然不同的取舍。**"
@@ -5980,9 +6048,9 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 
 ---
 
-## Ch06.042 Agent Harness 上下文管理：工作集视角
+## Ch06.046 Agent Harness 上下文管理：工作集视角
 
-> 📊 Level ⭐⭐⭐ | 23.5KB | `entities/agent-harness-context-management-working-set.md`
+> 📊 Level ⭐⭐⭐ | 24.6KB | `entities/agent-harness-context-management-working-set.md`
 
 ## 核心定位
 **上下文窗口 ≠ 聊天记录，而是工作集。**
@@ -5996,7 +6064,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 | 压缩是什么  | 总结历史      | 把稳定状态迁移到持久层   |
 | 管理主体   | 模型自己节制造   | Harness 系统性管理 |
 | 长任务表现  | 杂物间越堆越大   | 持续整理，只留最小可用集合 |
-**关键洞察**：上下文管理会直接改变 Agent 的行为，不只是性能优化。 ^["raw/articles/agent-harness-context-management-working-set"]
+**关键洞察**：上下文管理会直接改变 Agent 的行为，不只是性能优化。
 
 - 文件只给前 2000 行 → 模型学会用 offset 翻
 - grep 只给 preview → 模型学会先缩小搜索范围
@@ -6004,11 +6072,11 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 **设计哲学**：不要假设模型会天然节制。Harness 先把预算守住，再靠工具描述、错误消息和 hint 把模型教会怎么分段读。
 
 ### Harness 替模型管 vs 模型自己管
-这是一条光谱，没有绝对答案： ^["raw/articles/agent-harness-context-management-working-set"]
+这是一条光谱，没有绝对答案：
 
 - **Harness 多管**：实现重，但下限托得住
 - **模型自己管**：实现轻，但模型一旦贪心，整段会话就跑偏
-**分层下注策略**：底下硬限流，中间给提示和路径，上面留一点空间让模型自己决定。 ^["raw/articles/agent-harness-context-management-working-set"]
+**分层下注策略**：底下硬限流，中间给提示和路径，上面留一点空间让模型自己决定。
 
 ## 四框架文件读取策略对比
 | 系统 | 文件限制 | 特色 |
@@ -6019,24 +6087,26 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 | Letta Code | 10MB 以上拒绝；默认 2000 行窗口；超出的写到 overflow 文件 | overflow 文件机制 |
 
 ## 工具输出管理
-工具输出比对话历史更容易把窗口撑爆。 ^["raw/articles/agent-harness-context-management-working-set"]
-**标准做法**： ^["raw/articles/agent-harness-context-management-working-set"]
-1. 每类工具输出给字符/token 上限 ^["raw/articles/agent-harness-context-management-working-set"]
-2. 超大输出只留开头、结尾或 preview ^["raw/articles/agent-harness-context-management-working-set"]
-3. 完整内容写到磁盘或服务端 ^["raw/articles/agent-harness-context-management-working-set"]
-4. 给模型一个可继续访问的路径或检索工具 ^["raw/articles/agent-harness-context-management-working-set"]
-5. 幂等调用做去重 ^["raw/articles/agent-harness-context-management-working-set"]
+工具输出比对话历史更容易把窗口撑爆。
+
+**标准做法**：
+
+1. 每类工具输出给字符/token 上限
+2. 超大输出只留开头、结尾或 preview
+3. 完整内容写到磁盘或服务端
+4. 给模型一个可继续访问的路径或检索工具
+5. 幂等调用做去重
 **Claude Code pre-query optimization**：每次 API 调用前都处理工具输出——平时就整理工作集，不等窗口快满再救火。
 
 ## Compaction 四档策略光谱
 ### Level 1：确定性驱逐
-到阈值按比例丢最早一段消息，留尾巴。 ^["raw/articles/agent-harness-context-management-working-set"]
+到阈值按比例丢最早一段消息，留尾巴。
 
 - 优点：便宜稳定
 - 缺点：任务计划类老消息可能被冲走
 
 ### Level 2：LLM 总结
-要丢的部分交给模型压成一段摘要，再前置回去。 ^["raw/articles/agent-harness-context-management-working-set"]
+要丢的部分交给模型压成一段摘要，再前置回去。
 
 - 优点：质量高
 - 缺点：贵，对总结 prompt 设计挑剔
@@ -6048,7 +6118,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 - 缺点：实现复杂
 
 ### Level 4：结构化分维压缩（Claude Code）
-按维度分别保留： ^["raw/articles/agent-harness-context-management-working-set"]
+按维度分别保留：
 
 - primary request（用户原始需求）
 - technical concepts（技术概念）
@@ -6065,7 +6135,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 | OpenClaw | 默认 fresh isolated session，给子 Agent 过滤 AGENTS.md/TOOLS.md/SOUL.md |
 | Claude Code | typed-agent 空白对话，只把委派 prompt 当唯一用户消息；async agents 设工具 allowlist |
 | Letta Code | fork 和非 fork 两路；非 fork 也是 fresh headless instance |
-**本质**：隔离之后，最小必要上下文是什么？ ^["raw/articles/agent-harness-context-management-working-set"]
+**本质**：隔离之后，最小必要上下文是什么？
 
 ## 内存层级类比
 | 层级 | 计算系统 | Agent Harness |
@@ -6076,7 +6146,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 | 最大最慢 | 磁盘 | overflow 文件、memory repo、检索索引 |
 | 页面错误 | 找不到信息 | 模型说"找不到刚才读过的" |
 | Swap | 换入换出 | overflow 文件、结构化 summary |
-**核心类比**：不要把上下文窗口当成无限滚动的聊天记录。它更像一个由系统持续维护的工作区。 ^["raw/articles/agent-harness-context-management-working-set"]
+**核心类比**：不要把上下文窗口当成无限滚动的聊天记录。它更像一个由系统持续维护的工作区。
 
 ## Session / Harness / Sandbox 解耦
 | 概念 | 职责 |
@@ -6084,19 +6154,20 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 | **Session** | 持久事件日志，窗口外保存可恢复上下文 |
 | **Harness** | 决定每一轮把哪些事件切片、变换、组织好，放回模型窗口 |
 | **Sandbox** | 执行工具和代码 |
-三个绑在一起短期省事；任务一长，恢复/隔离/权限/调试都会变重。 ^["raw/articles/agent-harness-context-management-working-set"]
+三个绑在一起短期省事；任务一长，恢复/隔离/权限/调试都会变重。
+
 **Anthropic Managed Agents 的设计**：session 在 harness 外面，作为持久事件日志保存。这样 harness 本身可以失败、重启，再通过 session log 恢复；Claude 上下文窗口只是当下工作区，不背全部历史的保存责任。
 
 ## 九字工程自查表
-1. **硬上限**：可能返回大内容的工具，有没有硬上限？ ^["raw/articles/agent-harness-context-management-working-set"]
-2. **继续访问**：截断时有没有提供继续访问的路径？ ^["raw/articles/agent-harness-context-management-working-set"]
-3. **工具描述**：分页参数有没有写进工具描述？ ^["raw/articles/agent-harness-context-management-working-set"]
-4. **压缩维度**：会话压缩到底保留了什么？（目标/文件/修改/错误/计划/下一步） ^["raw/articles/agent-harness-context-management-working-set"]
-5. **工具边界**：压缩时有没有守住工具调用边界？（不能切掉 call 但留下 result） ^["raw/articles/agent-harness-context-management-working-set"]
-6. **子智能体隔离**：子智能体默认是否隔离？ ^["raw/articles/agent-harness-context-management-working-set"]
-7. **持久层**：有没有把稳定状态迁到持久层？ ^["raw/articles/agent-harness-context-management-working-set"]
-8. **可观测性**：系统有没有可观测性？（token 用量/截断/压缩/summary 维度） ^["raw/articles/agent-harness-context-management-working-set"]
-9. **解耦**：session、harness、sandbox 有没有解耦？ ^["raw/articles/agent-harness-context-management-working-set"]
+1. **硬上限**：可能返回大内容的工具，有没有硬上限？
+2. **继续访问**：截断时有没有提供继续访问的路径？
+3. **工具描述**：分页参数有没有写进工具描述？
+4. **压缩维度**：会话压缩到底保留了什么？（目标/文件/修改/错误/计划/下一步）
+5. **工具边界**：压缩时有没有守住工具调用边界？（不能切掉 call 但留下 result）
+6. **子智能体隔离**：子智能体默认是否隔离？
+7. **持久层**：有没有把稳定状态迁到持久层？
+8. **可观测性**：系统有没有可观测性？（token 用量/截断/压缩/summary 维度）
+9. **解耦**：session、harness、sandbox 有没有解耦？
 
 ## 三篇 Harness 文章的关联
 | 文章 | 核心议题 |
@@ -6104,7 +6175,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 || [Sub-Agent vs Agent Team](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sub-agent-vs-agent-team-selection-guide.md) | 多 Agent 架构先看上下文边界 |
 || [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-subagents-context-hygiene.md) | Subagent 是 Harness 的上下文卫生工具 |
 || [Harness Engineering 系统梳理](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md) | Harness 是把经验沉淀成下一轮默认存在的能力 |
-**上下文管理决定系统能不能持续协作。** ^["raw/articles/agent-harness-context-management-working-set"]
+**上下文管理决定系统能不能持续协作。**
 
 ## 深度分析
 ### 工作集模型的理论支撑
@@ -6112,7 +6183,8 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 传统 OS 内存管理的核心问题是"什么时候换出、换入什么"——这和 Agent 上下文压缩的决策完全同构。差异在于：OS 只能根据访问频率做统计推断，而 Agent Harness 知道**任务语义**——哪些是用户目标、哪些是探索过程、哪些是中间错误。这些语义信息让压缩决策远比 OS 页面替换更精准，但也意味着 Harness 需要更深的任务理解。
 
 ### Compaction 的核心矛盾：信息压缩 vs 任务可恢复性
-四档压缩策略代表了三代技术演进： ^["raw/articles/agent-harness-context-management-working-set"]
+四档压缩策略代表了三代技术演进：
+
 **第一代（确定性驱逐）**：简单但粗暴。最早的消息被丢掉，这在短对话里没问题，但在多轮任务里，早期消息往往包含用户原始目标和关键约束条件。一旦被驱逐，模型会"失忆"，需要用户重新说明上下文——这对用户体验是致命的。
 **第二代（LLM 总结）**：引入了语义理解，但引入了两个新问题：1）贵，每次 compaction 都是一次额外 API 调用；2）prompt 敏感——总结 prompt 设计得好不好，直接决定压缩质量。实践中发现，同样的总结 prompt 在不同任务类型上效果差异巨大。
 **第三代（Checkpoint + 记忆迁移）**：引入了状态可恢复性，但实现复杂度指数级上升。需要模型在压缩前主动"自整理"——这本身就消耗上下文窗口，且自整理 prompt 如何设计才能确保状态完整迁移，仍是开放问题。
@@ -6125,25 +6197,26 @@ OpenClaw 的做法最有代表性：子 Agent 拿到的是过滤后的 AGENTS.md
 
 ### Session/Harness/Sandbox 解耦的工程价值
 Anthropic Managed Agents 把 session 放在 harness 外面，这一看似微小的架构决策，实际上解决了长任务运行中的三个核心问题：
-1. **故障恢复**：harness 可以失败、重启，但 session log 记录了完整事件流。重启后的 harness 只需要从 session log 恢复状态，而不需要模型重新理解历史上下文。 ^["raw/articles/agent-harness-context-management-working-set"]
-2. **上下文预算独立**：Claude 上下文窗口只是"当下工作区"，不背全部历史的保存责任。这意味着窗口大小的选择可以专注于当前任务需求，而不需要为历史积累预留额外空间。 ^["raw/articles/agent-harness-context-management-working-set"]
-3. **并行化可能**：当 session 和 harness 解耦后，多个 harness 可以并发处理同一个 session 的不同阶段——比如一个 harness 负责当前任务的工具执行，另一个 harness 在后台预整理下一阶段可能用到的上下文。 ^["raw/articles/agent-harness-context-management-working-set"]
+1. **故障恢复**：harness 可以失败、重启，但 session log 记录了完整事件流。重启后的 harness 只需要从 session log 恢复状态，而不需要模型重新理解历史上下文。
+2. **上下文预算独立**：Claude 上下文窗口只是"当下工作区"，不背全部历史的保存责任。这意味着窗口大小的选择可以专注于当前任务需求，而不需要为历史积累预留额外空间。
+3. **并行化可能**：当 session 和 harness 解耦后，多个 harness 可以并发处理同一个 session 的不同阶段——比如一个 harness 负责当前任务的工具执行，另一个 harness 在后台预整理下一阶段可能用到的上下文。
 三个组件绑在一起时（session == harness == sandbox），任务一长，恢复/隔离/权限/调试都会变重。解耦后，每个组件可以独立演进和调试。
 
 ## 实践启示
 ### 设计原则 Checklist
-基于四框架对比和理论分析，一个高质量的 Agent 上下文管理系统应当满足： ^["raw/articles/agent-harness-context-management-working-set"]
-**硬约束层面**（必须实现，无法靠模型自我约束）： ^["raw/articles/agent-harness-context-management-working-set"]
+基于四框架对比和理论分析，一个高质量的 Agent 上下文管理系统应当满足：
+
+**硬约束层面**（必须实现，无法靠模型自我约束）：
 
 - 所有可能返回大内容的工具必须配置字符/token 硬上限
 - 工具输出超限时必须提供可继续访问的路径（文件路径、offset 参数、检索工具）
 - compaction 触发时必须守住工具调用边界（不能截断进行中的 tool call）
-**系统提示层面**（通过 prompt 引导模型自我管理）： ^["raw/articles/agent-harness-context-management-working-set"]
+**系统提示层面**（通过 prompt 引导模型自我管理）：
 
 - 工具描述必须包含分页参数的使用说明
 - 错误消息必须提示"信息被截断，请用 offset/检索继续访问"
 - compaction 策略必须在系统提示中明确说明，让模型知道什么会被保留、什么会被压缩
-**架构设计层面**（从系统层面保证可维护性）： ^["raw/articles/agent-harness-context-management-working-set"]
+**架构设计层面**（从系统层面保证可维护性）：
 
 - Session/Harness/Sandbox 三者建议解耦，session 作为持久事件日志在窗口外保存
 - 每个工作区应当有独立的可观测性埋点：token 用量、截断事件、压缩触发、summary 维度
@@ -6186,11 +6259,11 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 
 ### 5 大实战工程模式（Anthropic 官方清单）
 
-1. **Quarantined subagent（隔离区 subagent）** —— subagent 的本质 = 上下文隔离机制，把探索性读取丢进子 agent，主对话只看到摘要 ^["raw/articles/agent-harness-context-management-working-set"]
-2. **Auto-summarization（自动摘要）** —— 到阈值按比例丢最早一段消息，留尾巴 + 摘要前置 ^["raw/articles/agent-harness-context-management-working-set"]
-3. **Tool output budgeting（工具输出预算）** —— 每类工具输出给字符/token 上限，超大输出只留开头/结尾/preview，完整内容落盘 ^["raw/articles/agent-harness-context-management-working-set"]
-4. **State sharding（状态分舱）** —— 按维度分别保留：原始文档 / 工具输出 / 中间结论 / 决策日志 分舱 ^["raw/articles/agent-harness-context-management-working-set"]
-5. **Subagent 做 narrow read** —— 子 agent 只读相关文件范围，把"读到了什么"压缩回主 agent ^["raw/articles/agent-harness-context-management-working-set"]
+1. **Quarantined subagent（隔离区 subagent）** —— subagent 的本质 = 上下文隔离机制，把探索性读取丢进子 agent，主对话只看到摘要
+2. **Auto-summarization（自动摘要）** —— 到阈值按比例丢最早一段消息，留尾巴 + 摘要前置
+3. **Tool output budgeting（工具输出预算）** —— 每类工具输出给字符/token 上限，超大输出只留开头/结尾/preview，完整内容落盘
+4. **State sharding（状态分舱）** —— 按维度分别保留：原始文档 / 工具输出 / 中间结论 / 决策日志 分舱
+5. **Subagent 做 narrow read** —— 子 agent 只读相关文件范围，把"读到了什么"压缩回主 agent
 
 > 这 5 个模式与本实体上文"实践启示 / 避坑指南"中的工具输出预算、compaction、subagent 隔离、pre-query optimization **一一对应** —— Anthropic 文章是对已有分散实践的**官方命名 + 集大成**。
 
@@ -6202,8 +6275,8 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 
 ### 启示
 
-1. **"Context Engineering" 是新话术锚点** —— 未来讨论 LLM 工程时，"CE" 会取代"PE"成为主流框架 ^["raw/articles/agent-harness-context-management-working-set"]
-2. **subagent 的本质 = 隔离**（不是并行）—— Anthropic 官方视角值得被反复引用 ^["raw/articles/agent-harness-context-management-working-set"]
+1. **"Context Engineering" 是新话术锚点** —— 未来讨论 LLM 工程时，"CE" 会取代"PE"成为主流框架
+2. **subagent 的本质 = 隔离**（不是并行）—— Anthropic 官方视角值得被反复引用
 3. **CE 是已有实践的官方命名** —— 不要当成新发明，应被当作"已有 6 个框架的子学科标准化"
 
 ## 相关实体
@@ -6222,9 +6295,9 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 
 ---
 
-## Ch06.043 MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战
+## Ch06.047 MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战
 
-> 📊 Level ⭐⭐⭐ | 13.8KB | `entities/agentos-minimax-forge-model-adaptation-yaoge.md`
+> 📊 Level ⭐⭐⭐ | 13.7KB | `entities/agentos-minimax-forge-model-adaptation-yaoge.md`
 
 > -> [MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentos-minimax-forge-model-adaptation-yaoge.md)
 
@@ -6257,6 +6330,7 @@ Peter Steinberger 的 OpenClaw 核心设计理念：将智能体定义为磁盘�
 传统做法：上下文管理作为外部逻辑（预设死规则、硬性截断或调用便宜模型做历史摘要）——导致模型看到被阉割过的上下文，产生幻觉或逻辑不连贯。
 
 **当前实践**：将"上下文管理"内化为 Agent 内在行为：
+
 - **Letta/MemGPT**：通过 Paging 算法让 Agent 通过函数调用自主将旧记忆从上下文移动到外部存储，或根据当前需求提取特定历史
 - **Mem0**：用 LLM 提取结构化事实并与现有记忆冲突检测，转化为结构化记忆条目存入向量数据库
 
@@ -6401,22 +6475,22 @@ Agent 场景的关键特征是执行效率与结果质量同等重要。 复合�
 
 ---
 
-## Ch06.044 Claude Code Subagent 上下文卫生
+## Ch06.048 Claude Code Subagent 上下文卫生
 
-> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/claude-code-subagent-context-hygiene.md`
+> 📊 Level ⭐⭐⭐ | 10.2KB | `entities/claude-code-subagent-context-hygiene.md`
 
 ## 核心定位
 Subagent 不是"多一个 Agent 帮忙"，而是**Agent Harness 的上下文卫生工具**——把必须发生但留在主窗口就是污染的探索过程，隔离到独立工作区，主窗口只拿回结果。
 
 ## 关键原则
 ### 上下文边界优先
-**Design around context boundaries, not roles.**   ^["raw/articles/claude-code-subagents-context-hygiene"]
+**Design around context boundaries, not roles.**
 
 - 上下文边界的判断优先于角色划分
 - 能按上下文边界切开的，才适合交给 Subagent；切不开时，多一个 Agent 不见得是好事
 
 ### fresh Subagent（默认）
-子代理只拿到主 Agent 的任务描述，在**空白上下文**里完成工作。适合：   ^["raw/articles/claude-code-subagents-context-hygiene"]
+子代理只拿到主 Agent 的任务描述，在**空白上下文**里完成工作。适合：
 
 - 查找代码模式
 - 搜索影响面
@@ -6424,19 +6498,19 @@ Subagent 不是"多一个 Agent 帮忙"，而是**Agent Harness 的上下文卫�
 - 安全审查、性能审查、测试覆盖率检查（配合明确任务描述）
 
 ### fork Subagent（按需）
-继承父会话的完整上下文。适合：   ^["raw/articles/claude-code-subagents-context-hygiene"]
+继承父会话的完整上下文。适合：
 
 - 父窗口已经投入了大量上下文（项目理解、历史讨论、约束条件），子任务必须继承这些背景
 - 需要从同一个起点并行比较几个分支方案
 **注意事项**：fork 会继承噪音，不适合当默认选项；fork 出来的子代理与父代理共享 prompt cache 前缀，第二个之后 token 成本降低约 10 倍。
 
 ### 三层价值
-1. **隔离**：子代理在独立窗口里完成所有工具调用，主会话完全看不到中间过程   ^["raw/articles/claude-code-subagents-context-hygiene"]
-2. **压缩**：低密度探索过程（50次工具调用 → 3行结论）被自然压成高密度信号   ^["raw/articles/claude-code-subagents-context-hygiene"]
-3. **并行**：互不依赖的调查路径可以同时跑   ^["raw/articles/claude-code-subagents-context-hygiene"]
+1. **隔离**：子代理在独立窗口里完成所有工具调用，主会话完全看不到中间过程
+2. **压缩**：低密度探索过程（50次工具调用 → 3行结论）被自然压成高密度信号
+3. **并行**：互不依赖的调查路径可以同时跑
 
 ### 最脏的是什么
-**长任务里最"脏"的在探索阶段，不在执行阶段。**   ^["raw/articles/claude-code-subagents-context-hygiene"]
+**长任务里最"脏"的在探索阶段，不在执行阶段。**
 
 - 探索阶段产生大量临时路径：看过但无关的文件、试过但排除的方向、搜出来又没用的匹配项
 - 这些对当下探索有价值，对后续主任务价值很低
@@ -6445,16 +6519,17 @@ Subagent 不是"多一个 Agent 帮忙"，而是**Agent Harness 的上下文卫�
 ### 内置 Explore 和 Plan
 - **Explore**：只搜索理解代码库，不做修改，主会话只拿"相关结果"
 - **Plan**：在 plan mode 下做上下文调查，输出分步实施方案，中间过程主 Agent 完全不可见
-这两个内置子代理已经帮你把最脏的探索阶段挡在主窗口之外。   ^["raw/articles/claude-code-subagents-context-hygiene"]
+这两个内置子代理已经帮你把最脏的探索阶段挡在主窗口之外。
 
 ### description 是路由契约
-Claude Code 根据 description 决定什么时候调用哪个子代理。写法：   ^["raw/articles/claude-code-subagents-context-hygiene"]
+Claude Code 根据 description 决定什么时候调用哪个子代理。写法：
 
 - 这个子代理负责什么问题
 - 什么时候应该调用它
 - 它**不**负责什么
 **反面案例**：`description: "code reviewer"` → 太宽，什么都能接、什么都接不稳
-**正面案例**：   ^["raw/articles/claude-code-subagents-context-hygiene"]
+**正面案例**：
+
 ```
 description: "Review modified backend code for security, correctness, and maintainability. Use after implementation, not for planning or feature design."
 ```
@@ -6468,13 +6543,13 @@ description: "Review modified backend code for security, correctness, and mainta
 | 文档一致性 | README、AGENTS.md、配置说明、示例命令是否过期 | Read, Grep, Glob | Do not edit files |
 
 ## 最容易踩的四个坑
-1. **任务写得太含糊** → 子代理发散变成另一个会跑偏的聊天窗口   ^["raw/articles/claude-code-subagents-context-hygiene"]
-2. **返回太多过程** → 隔离价值归零，主 Agent 被无用信息淹没   ^["raw/articles/claude-code-subagents-context-hygiene"]
-3. **硬切需要共享状态的任务** → 拆分后花更多成本合并和纠偏   ^["raw/articles/claude-code-subagents-context-hygiene"]
-4. **fork 上瘾** → 长期依赖 fork 说明任务委派还不够清楚   ^["raw/articles/claude-code-subagents-context-hygiene"]
+1. **任务写得太含糊** → 子代理发散变成另一个会跑偏的聊天窗口
+2. **返回太多过程** → 隔离价值归零，主 Agent 被无用信息淹没
+3. **硬切需要共享状态的任务** → 拆分后花更多成本合并和纠偏
+4. **fork 上瘾** → 长期依赖 fork 说明任务委派还不够清楚
 
 ## 与其他 Harness 组件的关系
-Subagent 是 Agent Harness 在**上下文管理层**的具体机制之一：   ^["raw/articles/claude-code-subagents-context-hygiene"]
+Subagent 是 Agent Harness 在**上下文管理层**的具体机制之一：
 
 - [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的上下文管理理念：工作集 vs 聊天记录
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-framework.md) 的系统性框架：模型外的 harness 决定下限
@@ -6498,21 +6573,21 @@ Subagent的本质被广泛误解——它不是"多一个Agent帮忙"，而是�
 **四类高频自定义Subagent的设计模式**：代码审查（只读+分级输出）、影响面分析（只搜索不修改）、测试诊断（只给结论不写代码）、文档一致性（只检查不编辑）——它们共同遵守的原则是"限制工具集=限制越权可能"。
 **Kaxil Naik的判断"Harness matters more than the model"在Subagent语境下的含义**：Subagent是Harness在上下文管理层最重要的具体实现——模型能力决定上限，Harness决定能否稳定发挥这个上限。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qy_zaCZTCs1Ql3BIFmBMgg.md) ^["raw/articles/claude-code-subagents-context-hygiene"]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qy_zaCZTCs1Ql3BIFmBMgg.md)
 
 ## 实践启示
-1. **建立"上下文边界"思维而非"角色分工"思维**：判断任务是否适合Subagent的标准不是"谁来做"，而是"这个任务的探索过程留在主窗口会不会污染主会话"   ^["raw/articles/claude-code-subagents-context-hygiene"]
-2. **从三个高频场景开始**：代码审查、影响面分析、测试诊断——这三个场景边界清晰、收益稳定、不需要共享上下文，适合作为Subagent入门的起点   ^["raw/articles/claude-code-subagents-context-hygiene"]
-3. **description写作遵循"接口契约"原则**：明确子代理负责什么、不负责什么、使用条件——越清楚的接口定义，路由越稳定   ^["raw/articles/claude-code-subagents-context-hygiene"]
-4. **工具集限制是安全约束**：只给Read/Grep/Glob而非Write/Bash，从权限层面堵住越权执行的可能   ^["raw/articles/claude-code-subagents-context-hygiene"]
-5. **观察两个指标验证Subagent效果**：主会话是否减少了大量无用搜索和日志返回；子代理的结论主Agent能否直接使用无需回炉   ^["raw/articles/claude-code-subagents-context-hygiene"]
-6. **fork上瘾是任务委派不清的信号**：长期依赖fork说明任务设计本身需要重新审视，而非通过更多fork解决   ^["raw/articles/claude-code-subagents-context-hygiene"]
+1. **建立"上下文边界"思维而非"角色分工"思维**：判断任务是否适合Subagent的标准不是"谁来做"，而是"这个任务的探索过程留在主窗口会不会污染主会话"
+2. **从三个高频场景开始**：代码审查、影响面分析、测试诊断——这三个场景边界清晰、收益稳定、不需要共享上下文，适合作为Subagent入门的起点
+3. **description写作遵循"接口契约"原则**：明确子代理负责什么、不负责什么、使用条件——越清楚的接口定义，路由越稳定
+4. **工具集限制是安全约束**：只给Read/Grep/Glob而非Write/Bash，从权限层面堵住越权执行的可能
+5. **观察两个指标验证Subagent效果**：主会话是否减少了大量无用搜索和日志返回；子代理的结论主Agent能否直接使用无需回炉
+6. **fork上瘾是任务委派不清的信号**：长期依赖fork说明任务设计本身需要重新审视，而非通过更多fork解决
 
 ---
 
-## Ch06.045 Claude Code Session 管理与 1M 上下文最佳实践
+## Ch06.049 Claude Code Session 管理与 1M 上下文最佳实践
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/claude-code-session-management-1m-context.md`
+> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/claude-code-session-management-1m-context.md`
 
 ## 核心洞察：每轮对话都是一个分叉决策点
 每次 Claude 完成一轮对话，用户在发送下一条消息前，有五个选项构成上下文管理的核心工具集：
@@ -6583,7 +6658,7 @@ Claude Code团队成员Thariq揭示了1M上下文时代最核心的工程挑战�
 
 ---
 
-## Ch06.046 注意力塌缩与上下文管理
+## Ch06.050 注意力塌缩与上下文管理
 
 > 📊 Level ⭐⭐⭐ | 1.7KB | `entities/attention-collapse-context-management.md`
 

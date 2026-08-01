@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/exploring-openclaw-use-cases-in-ecommerce-platforms.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenClaw 在电商平台的应用场景探索 | 亚马逊A…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+      1. '编译型'到'解释型'：Skill 范式…
+      2. 多租户隔离的工程挑战与应对
+      3. 成本优化路径：从 $190 到 $45/…
+      4. 安全边界的分层设计
+    实践启示
+      1. 从高频数据查询场景切入验证
+      2. 平台化前期规划 EFS 扩展方案
+      3. 高危操作采用业务 API 层二次确认机制
+      4. 利用 AWS Secrets Manag…
+```
+
 ## 概述
 OpenClaw 在电商平台的应用场景探索 by awschina on 09 3月 2026 in Artificial Intelligence Permalink Share 摘要：当 AI 助手不再只是”聊天机器人”，而是一个可以用 Markdown 文档扩展skill能力、嵌入多种工作渠道、主动推送运营洞察的智能网关——我们用 OpenClaw 在电商卖家场景做了一次从 0 到 1 的实验，讨论电商平台以大规模SaaS部署OpenClaw提供卖家助手的场景下，能够提供的开发便利、使用体验优势、部署模式和成本评估，以及使用体验 目录 01 1. 当前电商卖家助手的困境 02 2. OpenClaw：一种新的卖家助手构建范式 03 3. OpenClaw 作为电商卖家助手的价值 04 4. 从单机版个人助手到SaaS规模部署的挑战与应对 05 5. 从单机到平台：多租户实践 06 6
 

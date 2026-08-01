@@ -2,7 +2,7 @@
 
 ## Ch01.183 Tether launches developer grants program for local-first AI and payments infrastructure
 
-> 📊 Level ⭐ | 2.8KB | `entities/tether-launches-developer-grants-program-for-local-first-ai-.md`
+> 📊 Level ⭐ | 2.9KB | `entities/tether-launches-developer-grants-program-for-local-first-ai-.md`
 
 > -> 原文存档
 # Tether launches developer grants program for local-first AI and payments infrastructure
@@ -23,8 +23,8 @@ QVAC MedPsy 医疗模型的意义在于验证端侧 AI 的可行性：性能可�
 - **AI 研究者**：端侧推理是明确的技术演进方向，QVAC 医疗模型的发布证明隐私敏感场景下本地模型的竞争力已接近云端。
 → 原文存档
 ## 相关实体
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/214-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Tether launches developer grants program for local AI payments](../ch09/150-tether-launches-developer-grants-program-for-local-ai-paymen.html)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/224-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Tether launches developer grants program for local AI payments](../ch09/158-tether-launches-developer-grants-program-for-local-ai-paymen.html)
 -
 
 ---

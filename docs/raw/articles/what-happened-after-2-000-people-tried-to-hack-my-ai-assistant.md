@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: b0c7975b0ffdff0d96622bcdf44d614c53194e964454fbae92fcf0d8d44ab9c5
+source_url: "https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant"
 ---
 
 sha256: e71e4707a00b9be2dc0821913c82be344348c046ee90abb322f68edca22e69e7

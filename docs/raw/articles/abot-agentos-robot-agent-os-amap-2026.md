@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 8982e44634dae5c212362eb3780ddb78c4464176655d54768999f05c01844ff1
+source_url: "https://mp.weixin.qq.com/s/cXqC1tiiU7EKFMQQohdJCg"
 ---
 
 # 高德 ABot-AgentOS：面向机器人智能体的通用自进化操作系统

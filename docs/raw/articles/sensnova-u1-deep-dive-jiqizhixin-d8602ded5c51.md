@@ -1,5 +1,4 @@
 ---
-
 title: 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 author: 机器之心（关注多模态的）
 date: 2026-05-14
@@ -24,7 +23,7 @@ tags:
   - flow-matching
   - 3d-rope
   - vision-language
-
+source_url: "unavailable"
 ---
 # 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 > 原创 机器之心，2026-05-14 北京 | 编辑：杜伟

@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 56
 stars: 4
 sha256: 875ebfcc0fde4c1dfa787f457bc6a4df0e8915c5d5bfa413a6dd791f68ce838b
+source_url: "https://www.latent.space/p/autoresearch-introspection"
 ---
 sha256: 459c08c26988fab0bca4ecef11d6a3b06f2a59f80e585b78eca48c5ad7ac7585
 

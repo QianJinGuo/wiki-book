@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: f463e6c6b14edb83aab8996bb6531830b45e364c50108bba156c48fc5d9394bb
+source_url: "https://mp.weixin.qq.com/s/IYAM85iK_HQUgQsPomqSqQ"
 ---
 
 # 700多个「坏模型」喂出AI测谎仪？Anthropic审计神器让AI自曝黑料

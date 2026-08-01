@@ -2,16 +2,18 @@
 
 ## Ch01.719 破解遥感目标的形状与尺度难题，PKINet二代推理提速近4倍！
 
-> 📊 Level ⭐⭐ | 6.8KB | `entities/破解遥感目标的形状与尺度难题pkinet二代推理提速近4倍.md`
+> 📊 Level ⭐⭐ | 8.7KB | `entities/破解遥感目标的形状与尺度难题pkinet二代推理提速近4倍.md`
 
 # 破解遥感目标的形状与尺度难题，PKINet二代推理提速近4倍！
 
 ---
 source: wechat
 source_url: https://mp.weixin.qq.com/s/KHflQ4IdAsd3RgyECsj-Zw
+
 ingested: 2026-07-01
 feed_name: 新智元
 wechat_mp_fakeid: MP_WXS_3271041950
+
 source_published: 2026-06-30
 ---
 
@@ -38,9 +40,11 @@ source_published: 2026-06-30
 ---
 source: wechat
 source_url: https://mp.weixin.qq.com/s/KHflQ4IdAsd3RgyECsj-Zw
+
 ingested: 2026-07-01
 feed_name: 新智元
 wechat_mp_fakeid: MP_WXS_3271041950
+
 source_published: 2026-06-30
 ---
 

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 363e84f77ecec0d88206595a4d18a8723fa9debe3d6a0966f5fec20c5e935bb8
+source_url: "https://mp.weixin.qq.com/s/yHy3vfASiMQ9S9g_1ao1kw"
 ---
 
 # 8天，4万行代码：一个递归进化的agent编排器是如何“手搓”出自己的?

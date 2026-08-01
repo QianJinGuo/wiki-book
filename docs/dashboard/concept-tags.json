@@ -1,0 +1,4655 @@
+{
+ "concepts": [
+  {
+   "name": "100-line-vs-managed-harness-tradeoff",
+   "title": "100 行 vs 托管 harness 权衡",
+   "tags": [
+    "harness",
+    "tradeoff",
+    "claude-code",
+    "agentcore",
+    "build-vs-buy"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "activation-engineering",
+   "title": "Activation Engineering",
+   "tags": [
+    "interpretability",
+    "mech-interp",
+    "activation-engineering"
+   ],
+   "articleCount": 6,
+   "entityCount": 6
+  },
+  {
+   "name": "agent-as-software-3-0-substrate",
+   "title": "Agent 作为 Software 3.0 基础设施",
+   "tags": [
+    "agent",
+    "software-3-0",
+    "substrate",
+    "infrastructure",
+    "karpathy"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "agent-backend-unification",
+   "title": "Agent 与后端统一架构",
+   "tags": [
+    "architecture",
+    "agent",
+    "backend",
+    "infrastructure"
+   ],
+   "articleCount": 18,
+   "entityCount": 18
+  },
+  {
+   "name": "agent-deployment-strategy",
+   "title": "Agent 部署策略",
+   "tags": [
+    "agent",
+    "security",
+    "claude-code",
+    "deployment",
+    "anthropic"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "agent-engineering-capability-map",
+   "title": "Agent Engineering 能力地图",
+   "tags": [
+    "agent-engineering",
+    "capability",
+    "skill",
+    "career",
+    "engineer"
+   ],
+   "articleCount": 9,
+   "entityCount": 13
+  },
+  {
+   "name": "agent-evaluation-benchmark-frameworks",
+   "title": "Agent Evaluation & Benchmark Frameworks",
+   "tags": [
+    "evaluation",
+    "benchmark",
+    "testing",
+    "agent",
+    "pass@k",
+    "quality",
+    "metrics"
+   ],
+   "articleCount": 5,
+   "entityCount": 5
+  },
+  {
+   "name": "agent-evaluation-benchmarks",
+   "title": "Agent 评估基准体系",
+   "tags": [
+    "agent",
+    "evaluation",
+    "benchmark",
+    "open-source",
+    "architecture"
+   ],
+   "articleCount": 9,
+   "entityCount": 12
+  },
+  {
+   "name": "agent-framework-comparison",
+   "title": "Agent 框架对比",
+   "tags": [
+    "agent",
+    "architecture",
+    "harness-engineering",
+    "context-management",
+    "harness"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "agent-harness-engineering-paradigm",
+   "title": "Agent Harness 工程范式",
+   "tags": [
+    "harness-engineering",
+    "agent",
+    "paradigm",
+    "architecture"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "agent-loop-design",
+   "title": "Agent 循环设计",
+   "tags": [
+    "agent",
+    "architecture",
+    "harness",
+    "memory",
+    "prompt"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "agent-memory-architecture",
+   "title": "Agent 记忆架构",
+   "tags": [
+    "agent",
+    "architecture",
+    "memory",
+    "llm",
+    "rag"
+   ],
+   "articleCount": 8,
+   "entityCount": 11
+  },
+  {
+   "name": "agent-memory-lifecycle-philosophies",
+   "title": "Agent Memory 生命周期与架构哲学",
+   "tags": [
+    "agent-memory",
+    "lifecycle",
+    "architecture-philosophies",
+    "governance"
+   ],
+   "articleCount": 7,
+   "entityCount": 9
+  },
+  {
+   "name": "agent-memory-substrate-three-layer",
+   "title": "Agent 记忆 substrate 三层架构",
+   "tags": [
+    "memory",
+    "substrate",
+    "architecture",
+    "agent",
+    "enterprise"
+   ],
+   "articleCount": 2,
+   "entityCount": 3
+  },
+  {
+   "name": "agent-memory-system-design",
+   "title": "Agent Memory System Design",
+   "tags": [
+    "agent",
+    "architecture",
+    "memory",
+    "context-management"
+   ],
+   "articleCount": 17,
+   "entityCount": 21
+  },
+  {
+   "name": "agent-memory-systematic-framework",
+   "title": "Agent Memory 系统性框架",
+   "tags": [
+    "ai-memory",
+    "rag",
+    "architecture",
+    "agent"
+   ],
+   "articleCount": 13,
+   "entityCount": 14
+  },
+  {
+   "name": "agent-observability",
+   "title": "Agent 可观测性",
+   "tags": [
+    "observability",
+    "agent",
+    "rl",
+    "data",
+    "code"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "agent-orchestration-patterns",
+   "title": "Agent Orchestration Patterns",
+   "tags": [
+    "orchestration",
+    "workflow",
+    "multi-agent",
+    "sub-agent",
+    "harness",
+    "patterns"
+   ],
+   "articleCount": 5,
+   "entityCount": 6
+  },
+  {
+   "name": "agent-planning-reasoning",
+   "title": "Agent 规划与推理",
+   "tags": [
+    "agent",
+    "planning",
+    "memory",
+    "claude-code",
+    "architecture"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "agent-role-specialization",
+   "title": "Agent 角色专业化",
+   "tags": [
+    "agent",
+    "role",
+    "specialization",
+    "multi-agent",
+    "prompt-engineering"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "agent-security-architecture",
+   "title": "Agent Security Architecture",
+   "tags": [
+    "security",
+    "agent",
+    "authentication",
+    "authorization",
+    "vault",
+    "privacy",
+    "trust"
+   ],
+   "articleCount": 11,
+   "entityCount": 11
+  },
+  {
+   "name": "agent-security-attack-defense",
+   "title": "Agent 安全攻防",
+   "tags": [
+    "security",
+    "agent",
+    "data",
+    "llm",
+    "prompt",
+    "attack-surface",
+    "defense-in-depth",
+    "threat-model",
+    "sandbox-escape",
+    "tool-call",
+    "supply-chain"
+   ],
+   "articleCount": 6,
+   "entityCount": 6
+  },
+  {
+   "name": "agent-security-full-lifecycle-system",
+   "title": "Agent Security 全生命周期安全体系（方寸跃迁）",
+   "tags": [
+    "agent-security-full-lifecycle-system"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "agent-security-threat-models",
+   "title": "Agent Security Threat Models",
+   "tags": [
+    "security",
+    "cybersecurity",
+    "ai-security",
+    "agent-security",
+    "threat-model",
+    "tool-poisoning",
+    "iam"
+   ],
+   "articleCount": 7,
+   "entityCount": 7
+  },
+  {
+   "name": "agent-self-improvement-loops",
+   "title": "Agent 自改进循环",
+   "tags": [
+    "self-improvement",
+    "agent",
+    "bootstrapping",
+    "feedback-loop",
+    "evolution"
+   ],
+   "articleCount": 1,
+   "entityCount": 2
+  },
+  {
+   "name": "agentic-engineering-paradigm",
+   "title": "agentic engineering 工程范式",
+   "tags": [
+    "agentic-engineering",
+    "karpathy",
+    "harness",
+    "verifier",
+    "paradigm"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "agentic-rag-patterns",
+   "title": "Agentic RAG 模式",
+   "tags": [
+    "agent",
+    "rag",
+    "llm",
+    "memory",
+    "mlops"
+   ],
+   "articleCount": 11,
+   "entityCount": 11
+  },
+  {
+   "name": "agentic-workflow-patterns",
+   "title": "Agentic Workflow Patterns",
+   "tags": [
+    "workflow",
+    "agent",
+    "automation",
+    "token-efficiency",
+    "optimization",
+    "patterns"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "ahe-agentic-harness-engineering",
+   "title": "AHE — Agentic Harness Engineering",
+   "tags": [
+    "harness-engineering",
+    "research",
+    "agent-evolution",
+    "observability",
+    "fudan",
+    "peking-university",
+    "autonomy-spectrum",
+    "failure-modes",
+    "oversight"
+   ],
+   "articleCount": 9,
+   "entityCount": 9
+  },
+  {
+   "name": "ai-agent-exploration-path",
+   "title": "AI Agent 探索之路：从 Task-Driven 到 Goal-Driven",
+   "tags": [
+    "agent",
+    "task-driven",
+    "goal-driven",
+    "sdd",
+    "observability",
+    "control-plane",
+    "mcp",
+    "a2a"
+   ],
+   "articleCount": 10,
+   "entityCount": 11
+  },
+  {
+   "name": "ai-agent-memory-types",
+   "title": "AI Agent 记忆类型",
+   "tags": [
+    "agent",
+    "memory",
+    "rag",
+    "llm",
+    "data"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "ai-agent-patterns",
+   "title": "AI Agent Patterns",
+   "tags": [
+    "agent",
+    "ai-agent",
+    "patterns",
+    "architecture",
+    "autonomous",
+    "goal-driven"
+   ],
+   "articleCount": 10,
+   "entityCount": 10
+  },
+  {
+   "name": "ai-code-review-automation",
+   "title": "AI 代码审查自动化",
+   "tags": [
+    "claude-code",
+    "agent",
+    "codex",
+    "ai",
+    "code"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "ai-coding-agent-from-helloworld-to-production",
+   "title": "AI Coding Agent：从 Hello World 到 Production",
+   "tags": [
+    "coding",
+    "agent",
+    "production",
+    "engineering",
+    "journey",
+    "architecture",
+    "harness",
+    "context",
+    "memory",
+    "evaluation"
+   ],
+   "articleCount": 8,
+   "entityCount": 8
+  },
+  {
+   "name": "ai-coding-paradigm-evolution",
+   "title": "AI 编码范式演进",
+   "tags": [
+    "ai-coding",
+    "paradigm",
+    "evolution",
+    "software-engineering"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "ai-cost-optimization-framework",
+   "title": "AI 成本优化框架",
+   "tags": [
+    "cost",
+    "optimization",
+    "framework",
+    "ai-infra",
+    "economics"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "ai-ethics-responsible-ai",
+   "title": "AI 伦理与负责任 AI",
+   "tags": [
+    "ethics",
+    "responsible-ai",
+    "ai",
+    "impact-assessment"
+   ],
+   "articleCount": 2,
+   "entityCount": 3
+  },
+  {
+   "name": "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness",
+   "title": "When AI Builds Itself：Anthropic Institute 报告解读——AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX）",
+   "tags": [
+    "anthropic-institute",
+    "when-ai-builds-itself",
+    "ai-r-and-d",
+    "ai-self-improvement",
+    "metr-time-horizon",
+    "claude-mythos",
+    "claude-code-76-percent",
+    "claude-80-percent-merge",
+    "automated-weak-to-strong",
+    "research-harness",
+    "r-d-harness",
+    "bottleneck-shift",
+    "execution-cheap-validation-expensive",
+    "brake-engineering",
+    "prepared-framework-v2",
+    "7-layer-task-admission",
+    "jiagoux"
+   ],
+   "articleCount": 8,
+   "entityCount": 8
+  },
+  {
+   "name": "ai-safety-governance",
+   "title": "AI 安全治理",
+   "tags": [
+    "governance",
+    "anthropic",
+    "agent",
+    "security",
+    "claude"
+   ],
+   "articleCount": 10,
+   "entityCount": 13
+  },
+  {
+   "name": "ai-security-landscape",
+   "title": "AI 安全全景图",
+   "tags": [
+    "security",
+    "ai",
+    "framework",
+    "agent-security",
+    "supply-chain"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "ai-self-improvement-bootstrapping",
+   "title": "AI 自我改进与自举",
+   "tags": [
+    "agent",
+    "self-improvement",
+    "llm",
+    "memory",
+    "recursive-self-improvement",
+    "data-flywheel",
+    "skill-evolution",
+    "lossy-improvement"
+   ],
+   "articleCount": 13,
+   "entityCount": 13
+  },
+  {
+   "name": "ai-task-scheduling-dynamic-hibernate-aliyun-mse",
+   "title": "AI 任务调度 + Agent Sandbox 动态休眠/唤醒：阿里云 MSE 让 Agent 成本下降 90% 的运行时方案",
+   "tags": [
+    "ai-task-scheduling",
+    "agent-sandbox",
+    "dynamic-hibernate",
+    "microvm",
+    "kubernetes",
+    "aliyun-mse",
+    "openclaw",
+    "hermes-agent",
+    "schedulerx",
+    "cost-optimization",
+    "runtime-decoupling",
+    "multi-agent-orchestration",
+    "prompt-self-evolution"
+   ],
+   "articleCount": 9,
+   "entityCount": 9
+  },
+  {
+   "name": "ai-team-knowledge-harness",
+   "title": "AI Team 知识沉淀体系",
+   "tags": [
+    "knowledge-management",
+    "harness-engineering",
+    "team-knowledge",
+    "knowledge-lifecycle",
+    "context-engineering",
+    "workflow-automation",
+    "karpathy-llm-wiki",
+    "knowledge-layering"
+   ],
+   "articleCount": 5,
+   "entityCount": 8
+  },
+  {
+   "name": "ai-testing-qa-pipeline",
+   "title": "AI 测试 QA 管线",
+   "tags": [
+    "agent",
+    "aws",
+    "ai",
+    "testing",
+    "evaluation"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "ai-ux-design-patterns",
+   "title": "AI UX 设计模式",
+   "tags": [
+    "agent",
+    "harness",
+    "claude-code",
+    "human-on-the-loop",
+    "anthropic"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "application-solidification",
+   "title": "应用固化（Application Solidification）",
+   "tags": [
+    "agent",
+    "application-solidification",
+    "local-deployment",
+    "desktop-agent",
+    "prompt-fatigue",
+    "data-sovereignty",
+    "workflow-persistence"
+   ],
+   "articleCount": 4,
+   "entityCount": 5
+  },
+  {
+   "name": "attention-mechanism",
+   "title": "Attention Mechanism",
+   "tags": [
+    "transformer",
+    "attention",
+    "deep-learning",
+    "mha",
+    "mqa",
+    "gqa",
+    "flashattention",
+    "lsh",
+    "linear-attention"
+   ],
+   "articleCount": 4,
+   "entityCount": 5
+  },
+  {
+   "name": "autonomous-agent-systems",
+   "title": "Autonomous Agent Systems",
+   "tags": [
+    "autonomous",
+    "agent",
+    "self-driving",
+    "automation",
+    "autonomy-level"
+   ],
+   "articleCount": 6,
+   "entityCount": 6
+  },
+  {
+   "name": "aws-ai-services",
+   "title": "AWS AI 服务生态",
+   "tags": [
+    "aws",
+    "openclaw",
+    "agent",
+    "bedrock-agentcore"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "catastrophic-forgetting",
+   "title": "灾难性遗忘（Catastrophic Forgetting）",
+   "tags": [
+    "catastrophic-forgetting"
+   ],
+   "articleCount": 2,
+   "entityCount": 7
+  },
+  {
+   "name": "claude-code-best-practices-prompt-engineering",
+   "title": "Claude Code Best Practices: Prompt Engineering",
+   "tags": [
+    "claude-code",
+    "prompt-engineering",
+    "best-practices",
+    "agent",
+    "harness",
+    "context"
+   ],
+   "articleCount": 3,
+   "entityCount": 7
+  },
+  {
+   "name": "claude-code-deep-architecture-analysis",
+   "title": "Claude Code 架构深度分析",
+   "tags": [
+    "claude-code",
+    "architecture",
+    "agent-harness"
+   ],
+   "articleCount": 7,
+   "entityCount": 7
+  },
+  {
+   "name": "claude-code-hiring-engineers",
+   "title": "Claude Code Hiring Engineers",
+   "tags": [
+    "claude-code",
+    "hiring",
+    "engineers",
+    "technical-interview",
+    "agentic-ai",
+    "workflow"
+   ],
+   "articleCount": 8,
+   "entityCount": 8
+  },
+  {
+   "name": "claude-code-source-leak-lifecycle",
+   "title": "Claude Code 源码级生命周期解析",
+   "tags": [
+    "claude-code",
+    "source-leak",
+    "agent-harness",
+    "query-loop",
+    "context-assembly",
+    "permission-system",
+    "tool-execution",
+    "async-generator"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "claude-code-tool-design-evolution",
+   "title": "Claude Code 工具设计演化",
+   "tags": [
+    "claude-code",
+    "tool-design",
+    "anthropic",
+    "agent-harness"
+   ],
+   "articleCount": 14,
+   "entityCount": 14
+  },
+  {
+   "name": "cloud-ai-infrastructure-design",
+   "title": "云端 AI 基础设施",
+   "tags": [
+    "agent",
+    "security",
+    "ai",
+    "infrastructure",
+    "aws"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "cloud-ai-infrastructure",
+   "title": "Cloud AI Infrastructure",
+   "tags": [
+    "cloud",
+    "ai-infrastructure",
+    "aws",
+    "azure",
+    "multi-tenant",
+    "workflow",
+    "genai"
+   ],
+   "articleCount": 5,
+   "entityCount": 6
+  },
+  {
+   "name": "code-generation-evaluation",
+   "title": "代码生成评估",
+   "tags": [
+    "evaluation",
+    "code",
+    "rl",
+    "agent",
+    "data"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "coding-agent-architecture",
+   "title": "Coding Agent Architecture",
+   "tags": [
+    "coding",
+    "agent",
+    "code-generation",
+    "programming",
+    "ide",
+    "developer-tools"
+   ],
+   "articleCount": 9,
+   "entityCount": 9
+  },
+  {
+   "name": "coding-agent-comparison",
+   "title": "编程 Agent 对比",
+   "tags": [
+    "agent",
+    "claude-code",
+    "openclaw",
+    "codex",
+    "coding"
+   ],
+   "articleCount": 8,
+   "entityCount": 12
+  },
+  {
+   "name": "coding-harness-engineering",
+   "title": "Coding Harness 工程本质",
+   "tags": [
+    "harness",
+    "agent",
+    "coding",
+    "engineering",
+    "pi",
+    "openclaw"
+   ],
+   "articleCount": 17,
+   "entityCount": 17
+  },
+  {
+   "name": "cognitive-architecture-ai",
+   "title": "AI 认知架构",
+   "tags": [
+    "agent",
+    "architecture",
+    "memory",
+    "evaluation",
+    "rag"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "computer-use-agent",
+   "title": "计算机使用 Agent",
+   "tags": [
+    "agent",
+    "search",
+    "tool-use",
+    "computer-use",
+    "code"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "context-engineering",
+   "title": "上下文工程",
+   "tags": [
+    "agent",
+    "harness",
+    "prompt-engineering",
+    "context-engineering",
+    "memory",
+    "context-window",
+    "context-compaction",
+    "prompt-caching",
+    "retrieval-augmented"
+   ],
+   "articleCount": 7,
+   "entityCount": 10
+  },
+  {
+   "name": "context-management-agent-systems",
+   "title": "Context Management in Agent Systems",
+   "tags": [
+    "context",
+    "memory",
+    "agent",
+    "working-set",
+    "context-management",
+    "token"
+   ],
+   "articleCount": 4,
+   "entityCount": 6
+  },
+  {
+   "name": "context-management-framework",
+   "title": "上下文管理框架",
+   "tags": [
+    "context-management",
+    "llm",
+    "agent",
+    "framework"
+   ],
+   "articleCount": 1,
+   "entityCount": 3
+  },
+  {
+   "name": "context-window-economics",
+   "title": "上下文窗口经济学",
+   "tags": [
+    "context-management",
+    "cost",
+    "llm",
+    "token-economics"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "continuous-integration-ai",
+   "title": "AI 驱动 CI/CD",
+   "tags": [
+    "llm",
+    "inference",
+    "agent",
+    "openai"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "data-agent-platform-architecture",
+   "title": "数据智能体平台架构",
+   "tags": [
+    "data-agent",
+    "nl2sql",
+    "multi-agent",
+    "code-interpreter",
+    "analytics",
+    "llm-gateway",
+    "architecture",
+    "enterprise"
+   ],
+   "articleCount": 7,
+   "entityCount": 7
+  },
+  {
+   "name": "data-pipeline-architecture",
+   "title": "数据管线架构",
+   "tags": [
+    "architecture",
+    "data",
+    "llm",
+    "agent",
+    "tool-use"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "data-quality-ai-pipelines",
+   "title": "数据质量与 AI 管线",
+   "tags": [
+    "agent",
+    "data",
+    "tool-use",
+    "llm",
+    "observability"
+   ],
+   "articleCount": 8,
+   "entityCount": 12
+  },
+  {
+   "name": "database-ai-integration",
+   "title": "数据库 AI 集成",
+   "tags": [
+    "agent",
+    "llm",
+    "data",
+    "database",
+    "mlops"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "diffusion-model-architecture",
+   "title": "扩散模型架构",
+   "tags": [
+    "architecture",
+    "code",
+    "fine-tuning",
+    "memory",
+    "mlops"
+   ],
+   "articleCount": 8,
+   "entityCount": 12
+  },
+  {
+   "name": "embodied-intelligence-frontier",
+   "title": "具身智能前沿",
+   "tags": [
+    "embodied",
+    "robotics",
+    "agent",
+    "frontier"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "enterprise-ai-adoption-patterns",
+   "title": "企业 AI 采用模式",
+   "tags": [
+    "agent",
+    "ai",
+    "enterprise-ai",
+    "enterprise",
+    "agentic-ai"
+   ],
+   "articleCount": 8,
+   "entityCount": 11
+  },
+  {
+   "name": "enterprise-ai-adoption",
+   "title": "Enterprise AI Adoption",
+   "tags": [
+    "enterprise",
+    "enterprise-ai",
+    "ai-strategy",
+    "data-infrastructure",
+    "adoption",
+    "poc",
+    "production"
+   ],
+   "articleCount": 6,
+   "entityCount": 8
+  },
+  {
+   "name": "episodic-vs-semantic-memory-agent",
+   "title": "Agent 情节记忆 vs 语义记忆",
+   "tags": [
+    "memory",
+    "episodic",
+    "semantic",
+    "cognitive-architecture",
+    "agent"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "evaluation-harness-design",
+   "title": "评估 Harness 设计",
+   "tags": [
+    "agent",
+    "evaluation",
+    "harness",
+    "architecture",
+    "memory"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "fine-tuning-techniques",
+   "title": "微调技术全景",
+   "tags": [
+    "fine-tuning",
+    "data",
+    "agent",
+    "code",
+    "observability"
+   ],
+   "articleCount": 6,
+   "entityCount": 12
+  },
+  {
+   "name": "game-ai-agents",
+   "title": "游戏 AI Agent",
+   "tags": [
+    "agent",
+    "aws",
+    "code",
+    "game",
+    "observability"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "gpu-optimization",
+   "title": "GPU 优化策略",
+   "tags": [
+    "aws",
+    "cuda",
+    "nvidia",
+    "llm",
+    "gpu"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "grpo-policy-optimization-2026",
+   "title": "GRPO 群组相对策略优化",
+   "tags": [
+    "rl",
+    "grpo",
+    "reinforcement-learning",
+    "training",
+    "llm",
+    "deepseek"
+   ],
+   "articleCount": 1,
+   "entityCount": 2
+  },
+  {
+   "name": "harness-as-product-surface",
+   "title": "harness 作为产品界面",
+   "tags": [
+    "harness",
+    "product",
+    "claude-code",
+    "agentcore",
+    "interface"
+   ],
+   "articleCount": 2,
+   "entityCount": 3
+  },
+  {
+   "name": "harness-component-expiry-and-build-to-delete",
+   "title": "Harness 组件保质期——Model-Harness Fit 与 Build to Delete 原则",
+   "tags": [
+    "harness-engineering",
+    "model-harness-fit",
+    "build-to-delete",
+    "co-evolution",
+    "architecture"
+   ],
+   "articleCount": 5,
+   "entityCount": 5
+  },
+  {
+   "name": "harness-component-expiry-build-to-delete",
+   "title": "Build to Delete 工程原则与开放问题",
+   "tags": [
+    "harness-engineering",
+    "build-to-delete",
+    "engineering-principles",
+    "open-problems",
+    "model-harness-fit"
+   ],
+   "articleCount": 5,
+   "entityCount": 5
+  },
+  {
+   "name": "harness-component-expiry-evidence",
+   "title": "Harness 组件保质期——证据链与 Build to Delete 原则",
+   "tags": [
+    "harness-engineering",
+    "model-harness-fit",
+    "build-to-delete",
+    "evidence"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "harness-context-window-management",
+   "title": "harness 上下文窗口管理",
+   "tags": [
+    "harness",
+    "context-management",
+    "working-set",
+    "agent",
+    "context-engineering"
+   ],
+   "articleCount": 6,
+   "entityCount": 8
+  },
+  {
+   "name": "harness-engineering-7-layers-framework",
+   "title": "Harness Engineering 七层框架",
+   "tags": [
+    "harness-engineering",
+    "openclaw",
+    "hermes",
+    "claude-code",
+    "framework"
+   ],
+   "articleCount": 6,
+   "entityCount": 9
+  },
+  {
+   "name": "harness-engineering-framework",
+   "title": "Harness Engineering 框架",
+   "tags": [
+    "agent",
+    "architecture",
+    "harness",
+    "prompt-engineering",
+    "context-engineering"
+   ],
+   "articleCount": 18,
+   "entityCount": 21
+  },
+  {
+   "name": "harness-engineering-paradigm-shift",
+   "title": "Harness Engineering 三次范式跃迁与四根支柱",
+   "tags": [
+    "harness-engineering",
+    "context-engineering",
+    "prompt-engineering",
+    "agentic-coding",
+    "anthropic",
+    "openai",
+    "four-pillars",
+    "failure-modes",
+    "enterprise"
+   ],
+   "articleCount": 9,
+   "entityCount": 10
+  },
+  {
+   "name": "harness-gate-evaluation",
+   "title": "Harness 门控评估",
+   "tags": [
+    "evaluation",
+    "agent",
+    "memory",
+    "architecture",
+    "code"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "harness-long-running-task",
+   "title": "harness 长程任务模式",
+   "tags": [
+    "harness",
+    "long-running",
+    "agent",
+    "persistence",
+    "resume"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "harness-loop-architecture",
+   "title": "harness 主循环架构",
+   "tags": [
+    "harness",
+    "agent-loop",
+    "architecture",
+    "react",
+    "claude-code"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "harness-tool-design-evolution",
+   "title": "harness 工具设计演化",
+   "tags": [
+    "harness",
+    "tool-use",
+    "claude-code",
+    "tool-design",
+    "evolution"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "hermes-agent-onboarding",
+   "title": "Hermes Agent 新手上手指南",
+   "tags": [
+    "hermes",
+    "agent",
+    "tutorial",
+    "workflow"
+   ],
+   "articleCount": 13,
+   "entityCount": 13
+  },
+  {
+   "name": "hermes-agent-skill",
+   "title": "Hermes Agent Skill",
+   "tags": [
+    "hermes",
+    "skill",
+    "agent",
+    "self-evolution",
+    "capability",
+    "skill-system"
+   ],
+   "articleCount": 8,
+   "entityCount": 9
+  },
+  {
+   "name": "hermes-agent",
+   "title": "Hermes-Agent",
+   "tags": [
+    "open-source",
+    "agent",
+    "nous-research",
+    "self-evolving",
+    "cron-scheduler",
+    "skill-system",
+    "memory",
+    "persistent-process",
+    "hermes",
+    "session-management",
+    "message-gateway"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "inference-optimization",
+   "title": "推理系统优化",
+   "tags": [
+    "inference",
+    "optimization",
+    "kv-cache",
+    "pd-separation",
+    "coding-agent",
+    "batching",
+    "speculative-decoding",
+    "quantization"
+   ],
+   "articleCount": 3,
+   "entityCount": 9
+  },
+  {
+   "name": "kairos-claude-code-paradigm",
+   "title": "KAIROS — Claude Code 常驻协作范式",
+   "tags": [
+    "claude-code",
+    "agent",
+    "paradigm-shift",
+    "claude",
+    "persistent-agent",
+    "memory",
+    "kairos"
+   ],
+   "articleCount": 16,
+   "entityCount": 17
+  },
+  {
+   "name": "karpathy-llm-wiki-v2",
+   "title": "Karpathy LLM Wiki V2",
+   "tags": [
+    "knowledge-base",
+    "rag-alternative",
+    "memory",
+    "agent",
+    "karpathy"
+   ],
+   "articleCount": 14,
+   "entityCount": 17
+  },
+  {
+   "name": "knowledge-base-output-flywheel",
+   "title": "知识库输出飞轮",
+   "tags": [
+    "knowledge-base",
+    "flywheel",
+    "drafts",
+    "llm-wiki",
+    "output"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "knowledge-graph-rag",
+   "title": "知识图谱 RAG",
+   "tags": [
+    "rag",
+    "agent",
+    "memory",
+    "llm",
+    "architecture"
+   ],
+   "articleCount": 8,
+   "entityCount": 12
+  },
+  {
+   "name": "knowledge-management-ai-systems",
+   "title": "知识管理 AI 系统",
+   "tags": [
+    "knowledge-management",
+    "agent",
+    "context-management",
+    "harness-engineering",
+    "memory"
+   ],
+   "articleCount": 8,
+   "entityCount": 12
+  },
+  {
+   "name": "knowledge-network-self-growth",
+   "title": "知识网络自生长",
+   "tags": [
+    "knowledge-base",
+    "self-growth",
+    "wikilink",
+    "obsidian",
+    "llm-wiki"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "legal-ai-compliance",
+   "title": "法律 AI 与合规",
+   "tags": [
+    "aws",
+    "compliance",
+    "governance",
+    "prowler",
+    "genai"
+   ],
+   "articleCount": 7,
+   "entityCount": 7
+  },
+  {
+   "name": "llm-artifact-optimization",
+   "title": "LLM Artifact Optimization — 文本/制品进化优化",
+   "tags": [
+    "llm-evolution",
+    "artifact-optimization",
+    "skill-evolution",
+    "self-improvement",
+    "asi",
+    "pareto-search",
+    "validation-gated",
+    "microsoft-research"
+   ],
+   "articleCount": 3,
+   "entityCount": 4
+  },
+  {
+   "name": "llm-benchmark-landscape",
+   "title": "LLM 评估基准全景",
+   "tags": [
+    "benchmark",
+    "llm",
+    "agent",
+    "ai",
+    "inference"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "llm-pretraining-vs-sft",
+   "title": "LLM Pretraining vs SFT — 预训练与后训练的数据分布差异",
+   "tags": [
+    "llm-pretraining-vs-sft"
+   ],
+   "articleCount": 3,
+   "entityCount": 5
+  },
+  {
+   "name": "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "title": "LLM RL 算法演进图谱：从 PPO 到 DPO 到 GRPO 再到 MARL（2026 综述）",
+   "tags": [
+    "rlhf",
+    "ppo",
+    "dpo",
+    "grpo",
+    "rlvr",
+    "marl",
+    "agent-rl",
+    "alignment",
+    "deepseek",
+    "prm",
+    "orm",
+    "agent-lightning",
+    "agent-r1",
+    "verl",
+    "openrlhf",
+    "trl",
+    "reinforcement-learning",
+    "instruction-tuning",
+    "r1",
+    "rlaif",
+    "rft",
+    "post-training"
+   ],
+   "articleCount": 4,
+   "entityCount": 7
+  },
+  {
+   "name": "llm-security-red-teaming",
+   "title": "LLM 安全与红队测试",
+   "tags": [
+    "security",
+    "llm",
+    "ai",
+    "agent",
+    "code"
+   ],
+   "articleCount": 9,
+   "entityCount": 11
+  },
+  {
+   "name": "llm-tokenizer",
+   "title": "LLM Tokenizer — 分词器训练与词表构建",
+   "tags": [
+    "llm-tokenizer"
+   ],
+   "articleCount": 2,
+   "entityCount": 3
+  },
+  {
+   "name": "llm-wiki-paradigm",
+   "title": "LLM Wiki 知识范式",
+   "tags": [
+    "llm-wiki",
+    "karpathy",
+    "knowledge-base",
+    "obsidian",
+    "paradigm"
+   ],
+   "articleCount": 3,
+   "entityCount": 4
+  },
+  {
+   "name": "local-vs-cloud-agent-deployment-strategy",
+   "title": "Agent 部署形态战略：当下选本地、终局云端——行小招的现场论与三阶段路径",
+   "tags": [
+    "agent-deployment",
+    "local-agent",
+    "cloud-agent",
+    "onsite-context",
+    "organization-context",
+    "context-engineering",
+    "harness",
+    "openclaw",
+    "manus",
+    "claude-code",
+    "hermes",
+    "xingxiaozhao",
+    "agent-strategy",
+    "three-phase-path",
+    "enterprise-agent",
+    "r-d-delivery"
+   ],
+   "articleCount": 9,
+   "entityCount": 9
+  },
+  {
+   "name": "long-context-techniques",
+   "title": "长上下文技术",
+   "tags": [
+    "agent",
+    "long-context",
+    "harness",
+    "agent-memory",
+    "harness-engineering"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "long-running-agent-architecture",
+   "title": "Long-Running Agent 架构：三大模式与演进路径",
+   "tags": [
+    "agent",
+    "harness",
+    "long-running-agent",
+    "adversarial-architecture",
+    "generator-evaluator",
+    "ralph-loop",
+    "context-management",
+    "drift-correction"
+   ],
+   "articleCount": 5,
+   "entityCount": 6
+  },
+  {
+   "name": "loop-engineering-methodology",
+   "title": "Loop Engineering 方法论",
+   "tags": [
+    "loop-engineering",
+    "agent",
+    "methodology",
+    "ai-coding"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "managed-agents-architecture",
+   "title": "Anthropic Managed Agents 架构：脑手分离设计",
+   "tags": [
+    "anthropic",
+    "managed-agents",
+    "agent-architecture",
+    "session-harness-sandbox",
+    "k8s-analogy",
+    "cattle-not-pet",
+    "prompt-injection",
+    "security",
+    "context-management",
+    "outcomes-loop",
+    "evaluation-harness",
+    "brain-hand-separation"
+   ],
+   "articleCount": 9,
+   "entityCount": 9
+  },
+  {
+   "name": "mcp-protocol-ecosystem",
+   "title": "MCP 协议生态",
+   "tags": [
+    "mcp",
+    "agent",
+    "aws",
+    "protocol",
+    "claude-code"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "mechanistic-interpretability",
+   "title": "Mechanistic Interpretability",
+   "tags": [
+    "interpretability",
+    "mech-interp",
+    "anthropic",
+    "circuit-analysis",
+    "superposition"
+   ],
+   "articleCount": 5,
+   "entityCount": 5
+  },
+  {
+   "name": "medical-ai-applications",
+   "title": "医疗 AI 应用",
+   "tags": [
+    "aws",
+    "sagemaker",
+    "amazon-quick",
+    "agentic-ai",
+    "research"
+   ],
+   "articleCount": 5,
+   "entityCount": 6
+  },
+  {
+   "name": "memory-consolidation-decay",
+   "title": "Agent 记忆 consolidation 与衰减",
+   "tags": [
+    "memory",
+    "consolidation",
+    "decay",
+    "sleep",
+    "biological-inspired"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "memory-source-provenance",
+   "title": "Agent 记忆 provenance 与可追溯",
+   "tags": [
+    "memory",
+    "provenance",
+    "trust",
+    "trace",
+    "agent"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "mlops-engineering-methodology",
+   "title": "MLOps 工程方法论",
+   "tags": [
+    "mlops",
+    "methodology",
+    "production",
+    "ai-infra"
+   ],
+   "articleCount": 1,
+   "entityCount": 1
+  },
+  {
+   "name": "model-context-protocol-mcp",
+   "title": "Model Context Protocol (MCP)",
+   "tags": [
+    "mcp",
+    "agent",
+    "tool",
+    "protocol",
+    "architecture",
+    "integration"
+   ],
+   "articleCount": 5,
+   "entityCount": 6
+  },
+  {
+   "name": "model-distillation-compression",
+   "title": "模型蒸馏与压缩",
+   "tags": [
+    "arxiv",
+    "model-compression",
+    "neuroscience",
+    "continual-learning",
+    "持续学习"
+   ],
+   "articleCount": 5,
+   "entityCount": 10
+  },
+  {
+   "name": "model-inference-comparison",
+   "title": "推理引擎对比",
+   "tags": [
+    "inference",
+    "vllm",
+    "inference-optimization",
+    "aws",
+    "llm"
+   ],
+   "articleCount": 8,
+   "entityCount": 12
+  },
+  {
+   "name": "moe-mixture-of-experts-2025",
+   "title": "MoE 混合专家架构",
+   "tags": [
+    "architecture",
+    "moe",
+    "mixture-of-experts",
+    "llm",
+    "scaling",
+    "inference"
+   ],
+   "articleCount": 1,
+   "entityCount": 1
+  },
+  {
+   "name": "msm-model-spec-midtraining-alignment",
+   "title": "Model Spec Midtraining (MSM): 对齐理解前置",
+   "tags": [
+    "alignment",
+    "msm",
+    "anthropic",
+    "safety"
+   ],
+   "articleCount": 4,
+   "entityCount": 5
+  },
+  {
+   "name": "multi-agent-collaboration-patterns",
+   "title": "Multi-Agent Collaboration Patterns",
+   "tags": [
+    "multi-agent",
+    "collaboration",
+    "orchestration",
+    "agent",
+    "coordination",
+    "swarm"
+   ],
+   "articleCount": 6,
+   "entityCount": 7
+  },
+  {
+   "name": "multi-agent-context-isolation",
+   "title": "多智能体上下文隔离",
+   "tags": [
+    "multi-agent",
+    "context",
+    "isolation",
+    "subagent",
+    "claude-code"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "multi-agent-orchestration",
+   "title": "多 Agent 协作编排",
+   "tags": [
+    "multi-agent",
+    "orchestration",
+    "agent",
+    "claude-code",
+    "coze"
+   ],
+   "articleCount": 9,
+   "entityCount": 12
+  },
+  {
+   "name": "multi-agent-systems",
+   "title": "Multi-Agent Systems",
+   "tags": [
+    "agent",
+    "multi-agent",
+    "orchestration",
+    "architecture",
+    "control-flow",
+    "task-decomposition",
+    "communication-protocols",
+    "evaluation"
+   ],
+   "articleCount": 10,
+   "entityCount": 13
+  },
+  {
+   "name": "multi-agent-team-coordination",
+   "title": "多智能体团队协作",
+   "tags": [
+    "multi-agent",
+    "team",
+    "coordination",
+    "openclaw",
+    "collaboration"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "nvidia-gpu-ecosystem",
+   "title": "NVIDIA GPU 生态",
+   "tags": [
+    "nvidia",
+    "aws",
+    "fine-tuning",
+    "llm",
+    "gpu"
+   ],
+   "articleCount": 9,
+   "entityCount": 12
+  },
+  {
+   "name": "observability-monitoring-ai",
+   "title": "AI 系统可观测性",
+   "tags": [
+    "agent",
+    "observability",
+    "data",
+    "llm",
+    "tool-use"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "open-source-agent-frameworks",
+   "title": "开源 Agent 框架",
+   "tags": [
+    "open-source",
+    "agent",
+    "architecture",
+    "observability",
+    "rl"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "open-source-ai-ecosystem",
+   "title": "Open Source AI Ecosystem",
+   "tags": [
+    "open-source",
+    "ecosystem",
+    "agent-framework",
+    "tooling",
+    "browser-automation",
+    "memory",
+    "cli"
+   ],
+   "articleCount": 14,
+   "entityCount": 15
+  },
+  {
+   "name": "open-source-llm-ecosystem",
+   "title": "开源 LLM 生态",
+   "tags": [
+    "llm",
+    "open-source",
+    "agent",
+    "architecture",
+    "data"
+   ],
+   "articleCount": 11,
+   "entityCount": 11
+  },
+  {
+   "name": "open-source-model-comparison",
+   "title": "开源模型对比",
+   "tags": [
+    "open-source",
+    "llm",
+    "agent",
+    "rag",
+    "data"
+   ],
+   "articleCount": 10,
+   "entityCount": 11
+  },
+  {
+   "name": "openai-model-evolution",
+   "title": "OpenAI 模型演进",
+   "tags": [
+    "openai",
+    "anthropic",
+    "agent",
+    "llm",
+    "model"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "openai-realtime-voice-architecture",
+   "title": "OpenAI Realtime API: relay + transceiver 架构",
+   "tags": [
+    "openai",
+    "realtime-api",
+    "voice",
+    "architecture",
+    "webrtc",
+    "inference-serving"
+   ],
+   "articleCount": 2,
+   "entityCount": 3
+  },
+  {
+   "name": "openclaw-architecture",
+   "title": "OpenClaw 架构解析（800行实现）",
+   "tags": [
+    "openclaw",
+    "architecture",
+    "tool",
+    "message-bus",
+    "subagent",
+    "typescript",
+    "anthropic",
+    "claude-api",
+    "agent-framework",
+    "replit",
+    "taobao"
+   ],
+   "articleCount": 9,
+   "entityCount": 13
+  },
+  {
+   "name": "orchestrator-worker-architecture",
+   "title": "Orchestrator-Worker 多智能体架构",
+   "tags": [
+    "orchestrator",
+    "worker",
+    "multi-agent",
+    "architecture",
+    "openclaw"
+   ],
+   "articleCount": 1,
+   "entityCount": 1
+  },
+  {
+   "name": "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan",
+   "title": "PhoneWorld 规模化 Mobile Agent 环境：腾讯混元+港中深+人大+武大 从真实 App 重建可训练 mock Android 世界（arxiv 2605.29486）",
+   "tags": [
+    "phoneworld",
+    "arxiv-2605-29486",
+    "mobile-agent",
+    "tencent-hunyuan",
+    "mock-android-app",
+    "gui-agent",
+    "androidworld",
+    "androidcontrol",
+    "hymobilebench",
+    "scaling-environments",
+    "agent-training-infrastructure",
+    "prd-generation",
+    "kotlin-jetpack-compose",
+    "agent-environment",
+    "mock-app-vs-real-app",
+    "hy3",
+    "real-trajectory-to-mock",
+    "task-verifier",
+    "kuaishou-prd"
+   ],
+   "articleCount": 4,
+   "entityCount": 5
+  },
+  {
+   "name": "production-agent-engineering",
+   "title": "Production Agent Engineering",
+   "tags": [
+    "production",
+    "agent",
+    "engineering",
+    "reliability",
+    "monitoring",
+    "deployment"
+   ],
+   "articleCount": 9,
+   "entityCount": 9
+  },
+  {
+   "name": "prompt-engineering-fundamentals",
+   "title": "Prompt Engineering Fundamentals",
+   "tags": [
+    "prompt",
+    "prompting",
+    "llm",
+    "engineering",
+    "instruction",
+    "context"
+   ],
+   "articleCount": 5,
+   "entityCount": 6
+  },
+  {
+   "name": "prompt-engineering-patterns",
+   "title": "Prompt 工程模式",
+   "tags": [
+    "agent",
+    "harness-engineering",
+    "memory",
+    "prompt-engineering",
+    "llm"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "prompt-injection-defense",
+   "title": "Prompt 注入防御",
+   "tags": [
+    "prompt-injection",
+    "agent-security",
+    "agent",
+    "security",
+    "hermes-agent",
+    "input-validation",
+    "sandbox-escape",
+    "indirect-injection"
+   ],
+   "articleCount": 10,
+   "entityCount": 11
+  },
+  {
+   "name": "rag-framework-comparison",
+   "title": "RAG 框架对比",
+   "tags": [
+    "agent",
+    "rag",
+    "memory",
+    "context-management",
+    "harness"
+   ],
+   "articleCount": 7,
+   "entityCount": 10
+  },
+  {
+   "name": "rag-retrieval-augmented-generation",
+   "title": "RAG 检索增强生成",
+   "tags": [
+    "rag",
+    "retrieval",
+    "llm",
+    "grounding",
+    "hallucination-reduction"
+   ],
+   "articleCount": 1,
+   "entityCount": 2
+  },
+  {
+   "name": "reasoning-models",
+   "title": "推理模型演进",
+   "tags": [
+    "openai",
+    "model",
+    "training",
+    "inference",
+    "agent"
+   ],
+   "articleCount": 9,
+   "entityCount": 9
+  },
+  {
+   "name": "reinforcement-fine-tuning-rft",
+   "title": "Reinforcement Fine-Tuning (RFT)",
+   "tags": [
+    "fine-tuning",
+    "reinforcement-learning",
+    "training",
+    "model",
+    "alignment",
+    "rft",
+    "rlaif"
+   ],
+   "articleCount": 5,
+   "entityCount": 9
+  },
+  {
+   "name": "retrieval-augmented-generation-advanced",
+   "title": "RAG 进阶技术",
+   "tags": [
+    "rag",
+    "llm",
+    "retrieval-augmented-generation",
+    "agent",
+    "agent-memory"
+   ],
+   "articleCount": 7,
+   "entityCount": 8
+  },
+  {
+   "name": "retrieval-augmented-generation-rag",
+   "title": "Retrieval-Augmented Generation (RAG)",
+   "tags": [
+    "rag",
+    "llm",
+    "knowledge-graph",
+    "retrieval",
+    "inference",
+    "architecture"
+   ],
+   "articleCount": 2,
+   "entityCount": 4
+  },
+  {
+   "name": "rlhf-dpo-grpo-alignment",
+   "title": "RLHF/DPO/GRPO 对齐",
+   "tags": [
+    "agent",
+    "llm",
+    "grpo",
+    "post-training",
+    "rlhf"
+   ],
+   "articleCount": 5,
+   "entityCount": 9
+  },
+  {
+   "name": "rlvr-reinforcement-learning-verified-reasoning",
+   "title": "RLVR 基于可验证奖励的强化学习",
+   "tags": [
+    "rl",
+    "rlvr",
+    "reinforcement-learning",
+    "training",
+    "llm",
+    "reasoning"
+   ],
+   "articleCount": 1,
+   "entityCount": 2
+  },
+  {
+   "name": "robotics-embodied-ai",
+   "title": "机器人与具身 AI",
+   "tags": [
+    "robotics",
+    "agent",
+    "data",
+    "llm",
+    "rag"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "routa-harness-visualization",
+   "title": "Routa Harness 可视化：Vibe Coding 时代的工程可控性",
+   "tags": [
+    "harness",
+    "routa",
+    "vibe-coding",
+    "engineering-governance",
+    "feedback-loop",
+    "lifecycle"
+   ],
+   "articleCount": 7,
+   "entityCount": 8
+  },
+  {
+   "name": "scaling-laws",
+   "title": "Scaling Laws",
+   "tags": [
+    "scaling",
+    "training",
+    "compute",
+    "llm",
+    "inference"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "scientific-method-ai-research",
+   "title": "AI 研究的科学方法论",
+   "tags": [
+    "science",
+    "methodology",
+    "evaluation",
+    "research"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "sdd-specification-driven-development-harness",
+   "title": "SDD + Harness 团队级 AI 研发范式",
+   "tags": [
+    "sdd",
+    "harness",
+    "aicoding",
+    "specificationdriven",
+    "高德",
+    "qoder"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "search-retrieval-agentic",
+   "title": "搜索与检索 Agent",
+   "tags": [
+    "agent",
+    "rag",
+    "search",
+    "llm",
+    "evaluation"
+   ],
+   "articleCount": 9,
+   "entityCount": 11
+  },
+  {
+   "name": "skill-acquisition-learning",
+   "title": "AI 技能获取与学习",
+   "tags": [
+    "agent",
+    "skill",
+    "llm",
+    "self-evolution",
+    "reinforcement-learning"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "skill-engineering-principles",
+   "title": "Skill 工程原则",
+   "tags": [
+    "skill",
+    "harness-engineering",
+    "agent",
+    "methodology"
+   ],
+   "articleCount": 4,
+   "entityCount": 4
+  },
+  {
+   "name": "skill-formal-theory-survey",
+   "title": "Skill 形式化理论：表示、执行、评估与进化",
+   "tags": [
+    "skill",
+    "formal-theory",
+    "dag",
+    "blueprint-skill",
+    "agent-gpa",
+    "skill-mining",
+    "harness-engineering"
+   ],
+   "articleCount": 6,
+   "entityCount": 6
+  },
+  {
+   "name": "skill-framework-writing-patterns",
+   "title": "Skill Framework & Writing Patterns",
+   "tags": [
+    "skill",
+    "agent",
+    "framework",
+    "writing",
+    "patterns",
+    "governance"
+   ],
+   "articleCount": 8,
+   "entityCount": 10
+  },
+  {
+   "name": "software-3-0-stack",
+   "title": "Software 3.0 技术栈",
+   "tags": [
+    "software-3-0",
+    "karpathy",
+    "llm",
+    "paradigm",
+    "stack"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "software-testing-ai",
+   "title": "软件测试 AI",
+   "tags": [
+    "harness",
+    "agent",
+    "harness-engineering",
+    "karpathy",
+    "software-engineering"
+   ],
+   "articleCount": 12,
+   "entityCount": 12
+  },
+  {
+   "name": "source-first-knowledge-compilation",
+   "title": "source-first 知识编译",
+   "tags": [
+    "source-first",
+    "provenance",
+    "knowledge-base",
+    "llm-wiki",
+    "trust"
+   ],
+   "articleCount": 9,
+   "entityCount": 10
+  },
+  {
+   "name": "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099",
+   "title": "SSM-Attention 睡眠巩固机制：CMU 让 LLM 在 N 次递归前向中「睡一觉「消化长上下文（arxiv 2605.26099）",
+   "tags": [
+    "ssm-attention",
+    "sleep-consolidation",
+    "fast-weights",
+    "arxiv-2605-26099",
+    "cmu",
+    "jet-nemotron",
+    "ouro",
+    "gsm-infinite",
+    "memory-consolidation",
+    "kv-cache",
+    "state-space-model",
+    "long-context",
+    "mamba-family",
+    "offline-computation",
+    "hippocampus-replay"
+   ],
+   "articleCount": 3,
+   "entityCount": 6
+  },
+  {
+   "name": "subagent-spawning-pattern",
+   "title": "subagent 派生模式",
+   "tags": [
+    "subagent",
+    "spawn",
+    "multi-agent",
+    "claude-code",
+    "openclaw"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "synthetic-data-generation",
+   "title": "合成数据生成",
+   "tags": [
+    "agent",
+    "memory",
+    "llm",
+    "data",
+    "prompt"
+   ],
+   "articleCount": 9,
+   "entityCount": 12
+  },
+  {
+   "name": "the-agency-model-dangers",
+   "title": "The Agency Model Dangers",
+   "tags": [
+    "agentic-ai",
+    "agency",
+    "autonomous-agents",
+    "risks",
+    "danger",
+    "failure-modes",
+    "alignment",
+    "security"
+   ],
+   "articleCount": 11,
+   "entityCount": 12
+  },
+  {
+   "name": "tool-use-patterns-ai-agents",
+   "title": "Tool Use Patterns in AI Agents",
+   "tags": [
+    "tool",
+    "agent",
+    "mcp",
+    "function-calling",
+    "api",
+    "integration"
+   ],
+   "articleCount": 5,
+   "entityCount": 7
+  },
+  {
+   "name": "tool-use-reasoning",
+   "title": "工具使用推理",
+   "tags": [
+    "tool-use",
+    "agent",
+    "search",
+    "code",
+    "data",
+    "function-calling",
+    "react",
+    "toolformer",
+    "mcp",
+    "tool-selection",
+    "tool-composition"
+   ],
+   "articleCount": 5,
+   "entityCount": 5
+  },
+  {
+   "name": "trading-quantitative-ai",
+   "title": "交易与量化 AI",
+   "tags": [
+    "agent",
+    "data",
+    "trading",
+    "llm",
+    "tool-use"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "transformer-architecture-2025",
+   "title": "Transformer 架构",
+   "tags": [
+    "architecture",
+    "transformer",
+    "attention",
+    "deep-learning",
+    "llm",
+    "foundation"
+   ],
+   "articleCount": 1,
+   "entityCount": 1
+  },
+  {
+   "name": "transformer-architecture",
+   "title": "Transformer Architecture",
+   "tags": [
+    "transformer",
+    "architecture",
+    "deep-learning",
+    "llm",
+    "attention",
+    "rope",
+    "flashattention",
+    "kv-cache",
+    "moe"
+   ],
+   "articleCount": 6,
+   "entityCount": 7
+  },
+  {
+   "name": "vector-search-embedding",
+   "title": "向量搜索与嵌入",
+   "tags": [
+    "vector-search",
+    "agent",
+    "rag",
+    "embedding",
+    "hybrid-search"
+   ],
+   "articleCount": 5,
+   "entityCount": 12
+  },
+  {
+   "name": "verifier-driven-development",
+   "title": "verifier 驱动开发",
+   "tags": [
+    "verifier",
+    "testing",
+    "agentic-engineering",
+    "harness",
+    "quality-gate"
+   ],
+   "articleCount": 2,
+   "entityCount": 2
+  },
+  {
+   "name": "vibe-coding-paradigm",
+   "title": "vibe coding 编程范式",
+   "tags": [
+    "vibe-coding",
+    "karpathy",
+    "software-3-0",
+    "ai-coding",
+    "paradigm"
+   ],
+   "articleCount": 3,
+   "entityCount": 3
+  },
+  {
+   "name": "video-generation-models",
+   "title": "视频生成模型",
+   "tags": [
+    "video-generation",
+    "world-model",
+    "ai",
+    "agentic-ai",
+    "robotics"
+   ],
+   "articleCount": 4,
+   "entityCount": 12
+  },
+  {
+   "name": "vision-language-models",
+   "title": "视觉语言模型",
+   "tags": [
+    "llm",
+    "aws",
+    "agent",
+    "vision",
+    "fine-tuning"
+   ],
+   "articleCount": 8,
+   "entityCount": 12
+  },
+  {
+   "name": "wiki-audit-skill",
+   "title": "Wiki Audit Skill",
+   "tags": [
+    "wiki",
+    "maintenance",
+    "analysis",
+    "skill"
+   ],
+   "articleCount": 1,
+   "entityCount": 3
+  },
+  {
+   "name": "wikilink-knowledge-graph",
+   "title": "wikilink 知识图谱",
+   "tags": [
+    "wikilink",
+    "knowledge-graph",
+    "obsidian",
+    "backlink",
+    "network-effect"
+   ],
+   "articleCount": 1,
+   "entityCount": 2
+  },
+  {
+   "name": "workflow-automation-ai",
+   "title": "工作流自动化 AI",
+   "tags": [
+    "agent",
+    "workflow",
+    "workflow-automation",
+    "automation",
+    "llm"
+   ],
+   "articleCount": 10,
+   "entityCount": 12
+  },
+  {
+   "name": "working-set-vs-long-term-memory",
+   "title": "Agent working set vs long-term memory",
+   "tags": [
+    "working-set",
+    "long-term-memory",
+    "context-window",
+    "agent",
+    "trade-off"
+   ],
+   "articleCount": 2,
+   "entityCount": 3
+  }
+ ],
+ "tagIndex": {
+  "harness": [
+   "100-line-vs-managed-harness-tradeoff",
+   "agent-framework-comparison",
+   "agent-loop-design",
+   "agent-orchestration-patterns",
+   "agentic-engineering-paradigm",
+   "ai-coding-agent-from-helloworld-to-production",
+   "ai-ux-design-patterns",
+   "claude-code-best-practices-prompt-engineering",
+   "coding-harness-engineering",
+   "context-engineering",
+   "evaluation-harness-design",
+   "harness-as-product-surface",
+   "harness-context-window-management",
+   "harness-engineering-framework",
+   "harness-long-running-task",
+   "harness-loop-architecture",
+   "harness-tool-design-evolution",
+   "local-vs-cloud-agent-deployment-strategy",
+   "long-context-techniques",
+   "long-running-agent-architecture",
+   "rag-framework-comparison",
+   "routa-harness-visualization",
+   "sdd-specification-driven-development-harness",
+   "software-testing-ai",
+   "verifier-driven-development"
+  ],
+  "tradeoff": [
+   "100-line-vs-managed-harness-tradeoff"
+  ],
+  "claude-code": [
+   "100-line-vs-managed-harness-tradeoff",
+   "agent-deployment-strategy",
+   "agent-planning-reasoning",
+   "ai-code-review-automation",
+   "ai-ux-design-patterns",
+   "claude-code-best-practices-prompt-engineering",
+   "claude-code-deep-architecture-analysis",
+   "claude-code-hiring-engineers",
+   "claude-code-source-leak-lifecycle",
+   "claude-code-tool-design-evolution",
+   "coding-agent-comparison",
+   "harness-as-product-surface",
+   "harness-engineering-7-layers-framework",
+   "harness-loop-architecture",
+   "harness-tool-design-evolution",
+   "kairos-claude-code-paradigm",
+   "local-vs-cloud-agent-deployment-strategy",
+   "mcp-protocol-ecosystem",
+   "multi-agent-context-isolation",
+   "multi-agent-orchestration",
+   "subagent-spawning-pattern"
+  ],
+  "agentcore": [
+   "100-line-vs-managed-harness-tradeoff",
+   "harness-as-product-surface"
+  ],
+  "build-vs-buy": [
+   "100-line-vs-managed-harness-tradeoff"
+  ],
+  "interpretability": [
+   "activation-engineering",
+   "mechanistic-interpretability"
+  ],
+  "mech-interp": [
+   "activation-engineering",
+   "mechanistic-interpretability"
+  ],
+  "activation-engineering": [
+   "activation-engineering"
+  ],
+  "agent": [
+   "agent-as-software-3-0-substrate",
+   "agent-backend-unification",
+   "agent-deployment-strategy",
+   "agent-evaluation-benchmark-frameworks",
+   "agent-evaluation-benchmarks",
+   "agent-framework-comparison",
+   "agent-harness-engineering-paradigm",
+   "agent-loop-design",
+   "agent-memory-architecture",
+   "agent-memory-substrate-three-layer",
+   "agent-memory-system-design",
+   "agent-memory-systematic-framework",
+   "agent-observability",
+   "agent-planning-reasoning",
+   "agent-role-specialization",
+   "agent-security-architecture",
+   "agent-security-attack-defense",
+   "agent-self-improvement-loops",
+   "agentic-rag-patterns",
+   "agentic-workflow-patterns",
+   "ai-agent-exploration-path",
+   "ai-agent-memory-types",
+   "ai-agent-patterns",
+   "ai-code-review-automation",
+   "ai-coding-agent-from-helloworld-to-production",
+   "ai-safety-governance",
+   "ai-self-improvement-bootstrapping",
+   "ai-testing-qa-pipeline",
+   "ai-ux-design-patterns",
+   "application-solidification",
+   "autonomous-agent-systems",
+   "aws-ai-services",
+   "claude-code-best-practices-prompt-engineering",
+   "cloud-ai-infrastructure-design",
+   "code-generation-evaluation",
+   "coding-agent-architecture",
+   "coding-agent-comparison",
+   "coding-harness-engineering",
+   "cognitive-architecture-ai",
+   "computer-use-agent",
+   "context-engineering",
+   "context-management-agent-systems",
+   "context-management-framework",
+   "continuous-integration-ai",
+   "data-pipeline-architecture",
+   "data-quality-ai-pipelines",
+   "database-ai-integration",
+   "embodied-intelligence-frontier",
+   "enterprise-ai-adoption-patterns",
+   "episodic-vs-semantic-memory-agent",
+   "evaluation-harness-design",
+   "fine-tuning-techniques",
+   "game-ai-agents",
+   "harness-context-window-management",
+   "harness-engineering-framework",
+   "harness-gate-evaluation",
+   "harness-long-running-task",
+   "hermes-agent-onboarding",
+   "hermes-agent-skill",
+   "hermes-agent",
+   "kairos-claude-code-paradigm",
+   "karpathy-llm-wiki-v2",
+   "knowledge-graph-rag",
+   "knowledge-management-ai-systems",
+   "llm-benchmark-landscape",
+   "llm-security-red-teaming",
+   "long-context-techniques",
+   "long-running-agent-architecture",
+   "loop-engineering-methodology",
+   "mcp-protocol-ecosystem",
+   "memory-source-provenance",
+   "model-context-protocol-mcp",
+   "multi-agent-collaboration-patterns",
+   "multi-agent-orchestration",
+   "multi-agent-systems",
+   "observability-monitoring-ai",
+   "open-source-agent-frameworks",
+   "open-source-llm-ecosystem",
+   "open-source-model-comparison",
+   "openai-model-evolution",
+   "production-agent-engineering",
+   "prompt-engineering-patterns",
+   "prompt-injection-defense",
+   "rag-framework-comparison",
+   "reasoning-models",
+   "retrieval-augmented-generation-advanced",
+   "rlhf-dpo-grpo-alignment",
+   "robotics-embodied-ai",
+   "search-retrieval-agentic",
+   "skill-acquisition-learning",
+   "skill-engineering-principles",
+   "skill-framework-writing-patterns",
+   "software-testing-ai",
+   "synthetic-data-generation",
+   "tool-use-patterns-ai-agents",
+   "tool-use-reasoning",
+   "trading-quantitative-ai",
+   "vector-search-embedding",
+   "vision-language-models",
+   "workflow-automation-ai",
+   "working-set-vs-long-term-memory"
+  ],
+  "software-3-0": [
+   "agent-as-software-3-0-substrate",
+   "software-3-0-stack",
+   "vibe-coding-paradigm"
+  ],
+  "substrate": [
+   "agent-as-software-3-0-substrate",
+   "agent-memory-substrate-three-layer"
+  ],
+  "infrastructure": [
+   "agent-as-software-3-0-substrate",
+   "agent-backend-unification",
+   "cloud-ai-infrastructure-design"
+  ],
+  "karpathy": [
+   "agent-as-software-3-0-substrate",
+   "agentic-engineering-paradigm",
+   "karpathy-llm-wiki-v2",
+   "llm-wiki-paradigm",
+   "software-3-0-stack",
+   "software-testing-ai",
+   "vibe-coding-paradigm"
+  ],
+  "architecture": [
+   "agent-backend-unification",
+   "agent-evaluation-benchmarks",
+   "agent-framework-comparison",
+   "agent-harness-engineering-paradigm",
+   "agent-loop-design",
+   "agent-memory-architecture",
+   "agent-memory-substrate-three-layer",
+   "agent-memory-system-design",
+   "agent-memory-systematic-framework",
+   "agent-planning-reasoning",
+   "ai-agent-patterns",
+   "ai-coding-agent-from-helloworld-to-production",
+   "claude-code-deep-architecture-analysis",
+   "cognitive-architecture-ai",
+   "data-agent-platform-architecture",
+   "data-pipeline-architecture",
+   "diffusion-model-architecture",
+   "evaluation-harness-design",
+   "harness-component-expiry-and-build-to-delete",
+   "harness-engineering-framework",
+   "harness-gate-evaluation",
+   "harness-loop-architecture",
+   "knowledge-graph-rag",
+   "model-context-protocol-mcp",
+   "moe-mixture-of-experts-2025",
+   "multi-agent-systems",
+   "open-source-agent-frameworks",
+   "open-source-llm-ecosystem",
+   "openai-realtime-voice-architecture",
+   "openclaw-architecture",
+   "orchestrator-worker-architecture",
+   "retrieval-augmented-generation-rag",
+   "transformer-architecture-2025",
+   "transformer-architecture"
+  ],
+  "backend": [
+   "agent-backend-unification"
+  ],
+  "security": [
+   "agent-deployment-strategy",
+   "agent-security-architecture",
+   "agent-security-attack-defense",
+   "agent-security-threat-models",
+   "ai-safety-governance",
+   "ai-security-landscape",
+   "cloud-ai-infrastructure-design",
+   "llm-security-red-teaming",
+   "managed-agents-architecture",
+   "prompt-injection-defense",
+   "the-agency-model-dangers"
+  ],
+  "deployment": [
+   "agent-deployment-strategy",
+   "production-agent-engineering"
+  ],
+  "anthropic": [
+   "agent-deployment-strategy",
+   "ai-safety-governance",
+   "ai-ux-design-patterns",
+   "claude-code-tool-design-evolution",
+   "harness-engineering-paradigm-shift",
+   "managed-agents-architecture",
+   "mechanistic-interpretability",
+   "msm-model-spec-midtraining-alignment",
+   "openai-model-evolution",
+   "openclaw-architecture"
+  ],
+  "agent-engineering": [
+   "agent-engineering-capability-map"
+  ],
+  "capability": [
+   "agent-engineering-capability-map",
+   "hermes-agent-skill"
+  ],
+  "skill": [
+   "agent-engineering-capability-map",
+   "hermes-agent-skill",
+   "skill-acquisition-learning",
+   "skill-engineering-principles",
+   "skill-formal-theory-survey",
+   "skill-framework-writing-patterns",
+   "wiki-audit-skill"
+  ],
+  "career": [
+   "agent-engineering-capability-map"
+  ],
+  "engineer": [
+   "agent-engineering-capability-map"
+  ],
+  "evaluation": [
+   "agent-evaluation-benchmark-frameworks",
+   "agent-evaluation-benchmarks",
+   "ai-coding-agent-from-helloworld-to-production",
+   "ai-testing-qa-pipeline",
+   "code-generation-evaluation",
+   "cognitive-architecture-ai",
+   "evaluation-harness-design",
+   "harness-gate-evaluation",
+   "multi-agent-systems",
+   "scientific-method-ai-research",
+   "search-retrieval-agentic"
+  ],
+  "benchmark": [
+   "agent-evaluation-benchmark-frameworks",
+   "agent-evaluation-benchmarks",
+   "llm-benchmark-landscape"
+  ],
+  "testing": [
+   "agent-evaluation-benchmark-frameworks",
+   "ai-testing-qa-pipeline",
+   "verifier-driven-development"
+  ],
+  "pass@k": [
+   "agent-evaluation-benchmark-frameworks"
+  ],
+  "quality": [
+   "agent-evaluation-benchmark-frameworks"
+  ],
+  "metrics": [
+   "agent-evaluation-benchmark-frameworks"
+  ],
+  "open-source": [
+   "agent-evaluation-benchmarks",
+   "hermes-agent",
+   "open-source-agent-frameworks",
+   "open-source-ai-ecosystem",
+   "open-source-llm-ecosystem",
+   "open-source-model-comparison"
+  ],
+  "harness-engineering": [
+   "agent-framework-comparison",
+   "agent-harness-engineering-paradigm",
+   "ahe-agentic-harness-engineering",
+   "ai-team-knowledge-harness",
+   "harness-component-expiry-and-build-to-delete",
+   "harness-component-expiry-build-to-delete",
+   "harness-component-expiry-evidence",
+   "harness-engineering-7-layers-framework",
+   "harness-engineering-paradigm-shift",
+   "knowledge-management-ai-systems",
+   "long-context-techniques",
+   "prompt-engineering-patterns",
+   "skill-engineering-principles",
+   "skill-formal-theory-survey",
+   "software-testing-ai"
+  ],
+  "context-management": [
+   "agent-framework-comparison",
+   "agent-memory-system-design",
+   "context-management-agent-systems",
+   "context-management-framework",
+   "context-window-economics",
+   "harness-context-window-management",
+   "knowledge-management-ai-systems",
+   "long-running-agent-architecture",
+   "managed-agents-architecture",
+   "rag-framework-comparison"
+  ],
+  "paradigm": [
+   "agent-harness-engineering-paradigm",
+   "agentic-engineering-paradigm",
+   "ai-coding-paradigm-evolution",
+   "llm-wiki-paradigm",
+   "software-3-0-stack",
+   "vibe-coding-paradigm"
+  ],
+  "memory": [
+   "agent-loop-design",
+   "agent-memory-architecture",
+   "agent-memory-substrate-three-layer",
+   "agent-memory-system-design",
+   "agent-planning-reasoning",
+   "agentic-rag-patterns",
+   "ai-agent-memory-types",
+   "ai-coding-agent-from-helloworld-to-production",
+   "ai-self-improvement-bootstrapping",
+   "cognitive-architecture-ai",
+   "context-engineering",
+   "context-management-agent-systems",
+   "diffusion-model-architecture",
+   "episodic-vs-semantic-memory-agent",
+   "evaluation-harness-design",
+   "harness-gate-evaluation",
+   "hermes-agent",
+   "kairos-claude-code-paradigm",
+   "karpathy-llm-wiki-v2",
+   "knowledge-graph-rag",
+   "knowledge-management-ai-systems",
+   "memory-consolidation-decay",
+   "memory-source-provenance",
+   "open-source-ai-ecosystem",
+   "prompt-engineering-patterns",
+   "rag-framework-comparison",
+   "synthetic-data-generation"
+  ],
+  "prompt": [
+   "agent-loop-design",
+   "agent-security-attack-defense",
+   "prompt-engineering-fundamentals",
+   "synthetic-data-generation"
+  ],
+  "llm": [
+   "agent-memory-architecture",
+   "agent-security-attack-defense",
+   "agentic-rag-patterns",
+   "ai-agent-memory-types",
+   "ai-self-improvement-bootstrapping",
+   "context-management-framework",
+   "context-window-economics",
+   "continuous-integration-ai",
+   "data-pipeline-architecture",
+   "data-quality-ai-pipelines",
+   "database-ai-integration",
+   "gpu-optimization",
+   "grpo-policy-optimization-2026",
+   "knowledge-graph-rag",
+   "llm-benchmark-landscape",
+   "llm-security-red-teaming",
+   "model-inference-comparison",
+   "moe-mixture-of-experts-2025",
+   "nvidia-gpu-ecosystem",
+   "observability-monitoring-ai",
+   "open-source-llm-ecosystem",
+   "open-source-model-comparison",
+   "openai-model-evolution",
+   "prompt-engineering-fundamentals",
+   "prompt-engineering-patterns",
+   "rag-retrieval-augmented-generation",
+   "retrieval-augmented-generation-advanced",
+   "retrieval-augmented-generation-rag",
+   "rlhf-dpo-grpo-alignment",
+   "rlvr-reinforcement-learning-verified-reasoning",
+   "robotics-embodied-ai",
+   "scaling-laws",
+   "search-retrieval-agentic",
+   "skill-acquisition-learning",
+   "software-3-0-stack",
+   "synthetic-data-generation",
+   "trading-quantitative-ai",
+   "transformer-architecture-2025",
+   "transformer-architecture",
+   "vision-language-models",
+   "workflow-automation-ai"
+  ],
+  "rag": [
+   "agent-memory-architecture",
+   "agent-memory-systematic-framework",
+   "agentic-rag-patterns",
+   "ai-agent-memory-types",
+   "cognitive-architecture-ai",
+   "knowledge-graph-rag",
+   "open-source-model-comparison",
+   "rag-framework-comparison",
+   "rag-retrieval-augmented-generation",
+   "retrieval-augmented-generation-advanced",
+   "retrieval-augmented-generation-rag",
+   "robotics-embodied-ai",
+   "search-retrieval-agentic",
+   "vector-search-embedding"
+  ],
+  "agent-memory": [
+   "agent-memory-lifecycle-philosophies",
+   "long-context-techniques",
+   "retrieval-augmented-generation-advanced"
+  ],
+  "lifecycle": [
+   "agent-memory-lifecycle-philosophies",
+   "routa-harness-visualization"
+  ],
+  "architecture-philosophies": [
+   "agent-memory-lifecycle-philosophies"
+  ],
+  "governance": [
+   "agent-memory-lifecycle-philosophies",
+   "ai-safety-governance",
+   "legal-ai-compliance",
+   "skill-framework-writing-patterns"
+  ],
+  "enterprise": [
+   "agent-memory-substrate-three-layer",
+   "data-agent-platform-architecture",
+   "enterprise-ai-adoption-patterns",
+   "enterprise-ai-adoption",
+   "harness-engineering-paradigm-shift"
+  ],
+  "ai-memory": [
+   "agent-memory-systematic-framework"
+  ],
+  "observability": [
+   "agent-observability",
+   "ahe-agentic-harness-engineering",
+   "ai-agent-exploration-path",
+   "data-quality-ai-pipelines",
+   "fine-tuning-techniques",
+   "game-ai-agents",
+   "observability-monitoring-ai",
+   "open-source-agent-frameworks"
+  ],
+  "rl": [
+   "agent-observability",
+   "code-generation-evaluation",
+   "grpo-policy-optimization-2026",
+   "open-source-agent-frameworks",
+   "rlvr-reinforcement-learning-verified-reasoning"
+  ],
+  "data": [
+   "agent-observability",
+   "agent-security-attack-defense",
+   "ai-agent-memory-types",
+   "code-generation-evaluation",
+   "data-pipeline-architecture",
+   "data-quality-ai-pipelines",
+   "database-ai-integration",
+   "fine-tuning-techniques",
+   "observability-monitoring-ai",
+   "open-source-llm-ecosystem",
+   "open-source-model-comparison",
+   "robotics-embodied-ai",
+   "synthetic-data-generation",
+   "tool-use-reasoning",
+   "trading-quantitative-ai"
+  ],
+  "code": [
+   "agent-observability",
+   "ai-code-review-automation",
+   "code-generation-evaluation",
+   "computer-use-agent",
+   "diffusion-model-architecture",
+   "fine-tuning-techniques",
+   "game-ai-agents",
+   "harness-gate-evaluation",
+   "llm-security-red-teaming",
+   "tool-use-reasoning"
+  ],
+  "orchestration": [
+   "agent-orchestration-patterns",
+   "multi-agent-collaboration-patterns",
+   "multi-agent-orchestration",
+   "multi-agent-systems"
+  ],
+  "workflow": [
+   "agent-orchestration-patterns",
+   "agentic-workflow-patterns",
+   "claude-code-hiring-engineers",
+   "cloud-ai-infrastructure",
+   "hermes-agent-onboarding",
+   "workflow-automation-ai"
+  ],
+  "multi-agent": [
+   "agent-orchestration-patterns",
+   "agent-role-specialization",
+   "data-agent-platform-architecture",
+   "multi-agent-collaboration-patterns",
+   "multi-agent-context-isolation",
+   "multi-agent-orchestration",
+   "multi-agent-systems",
+   "multi-agent-team-coordination",
+   "orchestrator-worker-architecture",
+   "subagent-spawning-pattern"
+  ],
+  "sub-agent": [
+   "agent-orchestration-patterns"
+  ],
+  "patterns": [
+   "agent-orchestration-patterns",
+   "agentic-workflow-patterns",
+   "ai-agent-patterns",
+   "skill-framework-writing-patterns"
+  ],
+  "planning": [
+   "agent-planning-reasoning"
+  ],
+  "role": [
+   "agent-role-specialization"
+  ],
+  "specialization": [
+   "agent-role-specialization"
+  ],
+  "prompt-engineering": [
+   "agent-role-specialization",
+   "claude-code-best-practices-prompt-engineering",
+   "context-engineering",
+   "harness-engineering-framework",
+   "harness-engineering-paradigm-shift",
+   "prompt-engineering-patterns"
+  ],
+  "authentication": [
+   "agent-security-architecture"
+  ],
+  "authorization": [
+   "agent-security-architecture"
+  ],
+  "vault": [
+   "agent-security-architecture"
+  ],
+  "privacy": [
+   "agent-security-architecture"
+  ],
+  "trust": [
+   "agent-security-architecture",
+   "memory-source-provenance",
+   "source-first-knowledge-compilation"
+  ],
+  "attack-surface": [
+   "agent-security-attack-defense"
+  ],
+  "defense-in-depth": [
+   "agent-security-attack-defense"
+  ],
+  "threat-model": [
+   "agent-security-attack-defense",
+   "agent-security-threat-models"
+  ],
+  "sandbox-escape": [
+   "agent-security-attack-defense",
+   "prompt-injection-defense"
+  ],
+  "tool-call": [
+   "agent-security-attack-defense"
+  ],
+  "supply-chain": [
+   "agent-security-attack-defense",
+   "ai-security-landscape"
+  ],
+  "agent-security-full-lifecycle-system": [
+   "agent-security-full-lifecycle-system"
+  ],
+  "cybersecurity": [
+   "agent-security-threat-models"
+  ],
+  "ai-security": [
+   "agent-security-threat-models"
+  ],
+  "agent-security": [
+   "agent-security-threat-models",
+   "ai-security-landscape",
+   "prompt-injection-defense"
+  ],
+  "tool-poisoning": [
+   "agent-security-threat-models"
+  ],
+  "iam": [
+   "agent-security-threat-models"
+  ],
+  "self-improvement": [
+   "agent-self-improvement-loops",
+   "ai-self-improvement-bootstrapping",
+   "llm-artifact-optimization"
+  ],
+  "bootstrapping": [
+   "agent-self-improvement-loops"
+  ],
+  "feedback-loop": [
+   "agent-self-improvement-loops",
+   "routa-harness-visualization"
+  ],
+  "evolution": [
+   "agent-self-improvement-loops",
+   "ai-coding-paradigm-evolution",
+   "harness-tool-design-evolution"
+  ],
+  "agentic-engineering": [
+   "agentic-engineering-paradigm",
+   "verifier-driven-development"
+  ],
+  "verifier": [
+   "agentic-engineering-paradigm",
+   "verifier-driven-development"
+  ],
+  "mlops": [
+   "agentic-rag-patterns",
+   "database-ai-integration",
+   "diffusion-model-architecture",
+   "mlops-engineering-methodology"
+  ],
+  "automation": [
+   "agentic-workflow-patterns",
+   "autonomous-agent-systems",
+   "workflow-automation-ai"
+  ],
+  "token-efficiency": [
+   "agentic-workflow-patterns"
+  ],
+  "optimization": [
+   "agentic-workflow-patterns",
+   "ai-cost-optimization-framework",
+   "inference-optimization"
+  ],
+  "research": [
+   "ahe-agentic-harness-engineering",
+   "medical-ai-applications",
+   "scientific-method-ai-research"
+  ],
+  "agent-evolution": [
+   "ahe-agentic-harness-engineering"
+  ],
+  "fudan": [
+   "ahe-agentic-harness-engineering"
+  ],
+  "peking-university": [
+   "ahe-agentic-harness-engineering"
+  ],
+  "autonomy-spectrum": [
+   "ahe-agentic-harness-engineering"
+  ],
+  "failure-modes": [
+   "ahe-agentic-harness-engineering",
+   "harness-engineering-paradigm-shift",
+   "the-agency-model-dangers"
+  ],
+  "oversight": [
+   "ahe-agentic-harness-engineering"
+  ],
+  "task-driven": [
+   "ai-agent-exploration-path"
+  ],
+  "goal-driven": [
+   "ai-agent-exploration-path",
+   "ai-agent-patterns"
+  ],
+  "sdd": [
+   "ai-agent-exploration-path",
+   "sdd-specification-driven-development-harness"
+  ],
+  "control-plane": [
+   "ai-agent-exploration-path"
+  ],
+  "mcp": [
+   "ai-agent-exploration-path",
+   "mcp-protocol-ecosystem",
+   "model-context-protocol-mcp",
+   "tool-use-patterns-ai-agents",
+   "tool-use-reasoning"
+  ],
+  "a2a": [
+   "ai-agent-exploration-path"
+  ],
+  "ai-agent": [
+   "ai-agent-patterns"
+  ],
+  "autonomous": [
+   "ai-agent-patterns",
+   "autonomous-agent-systems"
+  ],
+  "codex": [
+   "ai-code-review-automation",
+   "coding-agent-comparison"
+  ],
+  "ai": [
+   "ai-code-review-automation",
+   "ai-ethics-responsible-ai",
+   "ai-security-landscape",
+   "ai-testing-qa-pipeline",
+   "cloud-ai-infrastructure-design",
+   "enterprise-ai-adoption-patterns",
+   "llm-benchmark-landscape",
+   "llm-security-red-teaming",
+   "video-generation-models"
+  ],
+  "coding": [
+   "ai-coding-agent-from-helloworld-to-production",
+   "coding-agent-architecture",
+   "coding-agent-comparison",
+   "coding-harness-engineering"
+  ],
+  "production": [
+   "ai-coding-agent-from-helloworld-to-production",
+   "enterprise-ai-adoption",
+   "mlops-engineering-methodology",
+   "production-agent-engineering"
+  ],
+  "engineering": [
+   "ai-coding-agent-from-helloworld-to-production",
+   "coding-harness-engineering",
+   "production-agent-engineering",
+   "prompt-engineering-fundamentals"
+  ],
+  "journey": [
+   "ai-coding-agent-from-helloworld-to-production"
+  ],
+  "context": [
+   "ai-coding-agent-from-helloworld-to-production",
+   "claude-code-best-practices-prompt-engineering",
+   "context-management-agent-systems",
+   "multi-agent-context-isolation",
+   "prompt-engineering-fundamentals"
+  ],
+  "ai-coding": [
+   "ai-coding-paradigm-evolution",
+   "loop-engineering-methodology",
+   "vibe-coding-paradigm"
+  ],
+  "software-engineering": [
+   "ai-coding-paradigm-evolution",
+   "software-testing-ai"
+  ],
+  "cost": [
+   "ai-cost-optimization-framework",
+   "context-window-economics"
+  ],
+  "framework": [
+   "ai-cost-optimization-framework",
+   "ai-security-landscape",
+   "context-management-framework",
+   "harness-engineering-7-layers-framework",
+   "skill-framework-writing-patterns"
+  ],
+  "ai-infra": [
+   "ai-cost-optimization-framework",
+   "mlops-engineering-methodology"
+  ],
+  "economics": [
+   "ai-cost-optimization-framework"
+  ],
+  "ethics": [
+   "ai-ethics-responsible-ai"
+  ],
+  "responsible-ai": [
+   "ai-ethics-responsible-ai"
+  ],
+  "impact-assessment": [
+   "ai-ethics-responsible-ai"
+  ],
+  "anthropic-institute": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "when-ai-builds-itself": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "ai-r-and-d": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "ai-self-improvement": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "metr-time-horizon": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "claude-mythos": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "claude-code-76-percent": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "claude-80-percent-merge": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "automated-weak-to-strong": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "research-harness": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "r-d-harness": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "bottleneck-shift": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "execution-cheap-validation-expensive": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "brake-engineering": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "prepared-framework-v2": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "7-layer-task-admission": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "jiagoux": [
+   "ai-r-and-d-when-ai-builds-itself-bottleneck-shift-r-d-harness"
+  ],
+  "claude": [
+   "ai-safety-governance",
+   "kairos-claude-code-paradigm"
+  ],
+  "recursive-self-improvement": [
+   "ai-self-improvement-bootstrapping"
+  ],
+  "data-flywheel": [
+   "ai-self-improvement-bootstrapping"
+  ],
+  "skill-evolution": [
+   "ai-self-improvement-bootstrapping",
+   "llm-artifact-optimization"
+  ],
+  "lossy-improvement": [
+   "ai-self-improvement-bootstrapping"
+  ],
+  "ai-task-scheduling": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "agent-sandbox": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "dynamic-hibernate": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "microvm": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "kubernetes": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "aliyun-mse": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "openclaw": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse",
+   "aws-ai-services",
+   "coding-agent-comparison",
+   "coding-harness-engineering",
+   "harness-engineering-7-layers-framework",
+   "local-vs-cloud-agent-deployment-strategy",
+   "multi-agent-team-coordination",
+   "openclaw-architecture",
+   "orchestrator-worker-architecture",
+   "subagent-spawning-pattern"
+  ],
+  "hermes-agent": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse",
+   "prompt-injection-defense"
+  ],
+  "schedulerx": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "cost-optimization": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "runtime-decoupling": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "multi-agent-orchestration": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "prompt-self-evolution": [
+   "ai-task-scheduling-dynamic-hibernate-aliyun-mse"
+  ],
+  "knowledge-management": [
+   "ai-team-knowledge-harness",
+   "knowledge-management-ai-systems"
+  ],
+  "team-knowledge": [
+   "ai-team-knowledge-harness"
+  ],
+  "knowledge-lifecycle": [
+   "ai-team-knowledge-harness"
+  ],
+  "context-engineering": [
+   "ai-team-knowledge-harness",
+   "context-engineering",
+   "harness-context-window-management",
+   "harness-engineering-framework",
+   "harness-engineering-paradigm-shift",
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "workflow-automation": [
+   "ai-team-knowledge-harness",
+   "workflow-automation-ai"
+  ],
+  "karpathy-llm-wiki": [
+   "ai-team-knowledge-harness"
+  ],
+  "knowledge-layering": [
+   "ai-team-knowledge-harness"
+  ],
+  "aws": [
+   "ai-testing-qa-pipeline",
+   "aws-ai-services",
+   "cloud-ai-infrastructure-design",
+   "cloud-ai-infrastructure",
+   "game-ai-agents",
+   "gpu-optimization",
+   "legal-ai-compliance",
+   "mcp-protocol-ecosystem",
+   "medical-ai-applications",
+   "model-inference-comparison",
+   "nvidia-gpu-ecosystem",
+   "vision-language-models"
+  ],
+  "human-on-the-loop": [
+   "ai-ux-design-patterns"
+  ],
+  "application-solidification": [
+   "application-solidification"
+  ],
+  "local-deployment": [
+   "application-solidification"
+  ],
+  "desktop-agent": [
+   "application-solidification"
+  ],
+  "prompt-fatigue": [
+   "application-solidification"
+  ],
+  "data-sovereignty": [
+   "application-solidification"
+  ],
+  "workflow-persistence": [
+   "application-solidification"
+  ],
+  "transformer": [
+   "attention-mechanism",
+   "transformer-architecture-2025",
+   "transformer-architecture"
+  ],
+  "attention": [
+   "attention-mechanism",
+   "transformer-architecture-2025",
+   "transformer-architecture"
+  ],
+  "deep-learning": [
+   "attention-mechanism",
+   "transformer-architecture-2025",
+   "transformer-architecture"
+  ],
+  "mha": [
+   "attention-mechanism"
+  ],
+  "mqa": [
+   "attention-mechanism"
+  ],
+  "gqa": [
+   "attention-mechanism"
+  ],
+  "flashattention": [
+   "attention-mechanism",
+   "transformer-architecture"
+  ],
+  "lsh": [
+   "attention-mechanism"
+  ],
+  "linear-attention": [
+   "attention-mechanism"
+  ],
+  "self-driving": [
+   "autonomous-agent-systems"
+  ],
+  "autonomy-level": [
+   "autonomous-agent-systems"
+  ],
+  "bedrock-agentcore": [
+   "aws-ai-services"
+  ],
+  "catastrophic-forgetting": [
+   "catastrophic-forgetting"
+  ],
+  "best-practices": [
+   "claude-code-best-practices-prompt-engineering"
+  ],
+  "agent-harness": [
+   "claude-code-deep-architecture-analysis",
+   "claude-code-source-leak-lifecycle",
+   "claude-code-tool-design-evolution"
+  ],
+  "hiring": [
+   "claude-code-hiring-engineers"
+  ],
+  "engineers": [
+   "claude-code-hiring-engineers"
+  ],
+  "technical-interview": [
+   "claude-code-hiring-engineers"
+  ],
+  "agentic-ai": [
+   "claude-code-hiring-engineers",
+   "enterprise-ai-adoption-patterns",
+   "medical-ai-applications",
+   "the-agency-model-dangers",
+   "video-generation-models"
+  ],
+  "source-leak": [
+   "claude-code-source-leak-lifecycle"
+  ],
+  "query-loop": [
+   "claude-code-source-leak-lifecycle"
+  ],
+  "context-assembly": [
+   "claude-code-source-leak-lifecycle"
+  ],
+  "permission-system": [
+   "claude-code-source-leak-lifecycle"
+  ],
+  "tool-execution": [
+   "claude-code-source-leak-lifecycle"
+  ],
+  "async-generator": [
+   "claude-code-source-leak-lifecycle"
+  ],
+  "tool-design": [
+   "claude-code-tool-design-evolution",
+   "harness-tool-design-evolution"
+  ],
+  "cloud": [
+   "cloud-ai-infrastructure"
+  ],
+  "ai-infrastructure": [
+   "cloud-ai-infrastructure"
+  ],
+  "azure": [
+   "cloud-ai-infrastructure"
+  ],
+  "multi-tenant": [
+   "cloud-ai-infrastructure"
+  ],
+  "genai": [
+   "cloud-ai-infrastructure",
+   "legal-ai-compliance"
+  ],
+  "code-generation": [
+   "coding-agent-architecture"
+  ],
+  "programming": [
+   "coding-agent-architecture"
+  ],
+  "ide": [
+   "coding-agent-architecture"
+  ],
+  "developer-tools": [
+   "coding-agent-architecture"
+  ],
+  "pi": [
+   "coding-harness-engineering"
+  ],
+  "search": [
+   "computer-use-agent",
+   "search-retrieval-agentic",
+   "tool-use-reasoning"
+  ],
+  "tool-use": [
+   "computer-use-agent",
+   "data-pipeline-architecture",
+   "data-quality-ai-pipelines",
+   "harness-tool-design-evolution",
+   "observability-monitoring-ai",
+   "tool-use-reasoning",
+   "trading-quantitative-ai"
+  ],
+  "computer-use": [
+   "computer-use-agent"
+  ],
+  "context-window": [
+   "context-engineering",
+   "working-set-vs-long-term-memory"
+  ],
+  "context-compaction": [
+   "context-engineering"
+  ],
+  "prompt-caching": [
+   "context-engineering"
+  ],
+  "retrieval-augmented": [
+   "context-engineering"
+  ],
+  "working-set": [
+   "context-management-agent-systems",
+   "harness-context-window-management",
+   "working-set-vs-long-term-memory"
+  ],
+  "token": [
+   "context-management-agent-systems"
+  ],
+  "token-economics": [
+   "context-window-economics"
+  ],
+  "inference": [
+   "continuous-integration-ai",
+   "inference-optimization",
+   "llm-benchmark-landscape",
+   "model-inference-comparison",
+   "moe-mixture-of-experts-2025",
+   "reasoning-models",
+   "retrieval-augmented-generation-rag",
+   "scaling-laws"
+  ],
+  "openai": [
+   "continuous-integration-ai",
+   "harness-engineering-paradigm-shift",
+   "openai-model-evolution",
+   "openai-realtime-voice-architecture",
+   "reasoning-models"
+  ],
+  "data-agent": [
+   "data-agent-platform-architecture"
+  ],
+  "nl2sql": [
+   "data-agent-platform-architecture"
+  ],
+  "code-interpreter": [
+   "data-agent-platform-architecture"
+  ],
+  "analytics": [
+   "data-agent-platform-architecture"
+  ],
+  "llm-gateway": [
+   "data-agent-platform-architecture"
+  ],
+  "database": [
+   "database-ai-integration"
+  ],
+  "fine-tuning": [
+   "diffusion-model-architecture",
+   "fine-tuning-techniques",
+   "nvidia-gpu-ecosystem",
+   "reinforcement-fine-tuning-rft",
+   "vision-language-models"
+  ],
+  "embodied": [
+   "embodied-intelligence-frontier"
+  ],
+  "robotics": [
+   "embodied-intelligence-frontier",
+   "robotics-embodied-ai",
+   "video-generation-models"
+  ],
+  "frontier": [
+   "embodied-intelligence-frontier"
+  ],
+  "enterprise-ai": [
+   "enterprise-ai-adoption-patterns",
+   "enterprise-ai-adoption"
+  ],
+  "ai-strategy": [
+   "enterprise-ai-adoption"
+  ],
+  "data-infrastructure": [
+   "enterprise-ai-adoption"
+  ],
+  "adoption": [
+   "enterprise-ai-adoption"
+  ],
+  "poc": [
+   "enterprise-ai-adoption"
+  ],
+  "episodic": [
+   "episodic-vs-semantic-memory-agent"
+  ],
+  "semantic": [
+   "episodic-vs-semantic-memory-agent"
+  ],
+  "cognitive-architecture": [
+   "episodic-vs-semantic-memory-agent"
+  ],
+  "game": [
+   "game-ai-agents"
+  ],
+  "cuda": [
+   "gpu-optimization"
+  ],
+  "nvidia": [
+   "gpu-optimization",
+   "nvidia-gpu-ecosystem"
+  ],
+  "gpu": [
+   "gpu-optimization",
+   "nvidia-gpu-ecosystem"
+  ],
+  "grpo": [
+   "grpo-policy-optimization-2026",
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "rlhf-dpo-grpo-alignment"
+  ],
+  "reinforcement-learning": [
+   "grpo-policy-optimization-2026",
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "reinforcement-fine-tuning-rft",
+   "rlvr-reinforcement-learning-verified-reasoning",
+   "skill-acquisition-learning"
+  ],
+  "training": [
+   "grpo-policy-optimization-2026",
+   "reasoning-models",
+   "reinforcement-fine-tuning-rft",
+   "rlvr-reinforcement-learning-verified-reasoning",
+   "scaling-laws"
+  ],
+  "deepseek": [
+   "grpo-policy-optimization-2026",
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "product": [
+   "harness-as-product-surface"
+  ],
+  "interface": [
+   "harness-as-product-surface"
+  ],
+  "model-harness-fit": [
+   "harness-component-expiry-and-build-to-delete",
+   "harness-component-expiry-build-to-delete",
+   "harness-component-expiry-evidence"
+  ],
+  "build-to-delete": [
+   "harness-component-expiry-and-build-to-delete",
+   "harness-component-expiry-build-to-delete",
+   "harness-component-expiry-evidence"
+  ],
+  "co-evolution": [
+   "harness-component-expiry-and-build-to-delete"
+  ],
+  "engineering-principles": [
+   "harness-component-expiry-build-to-delete"
+  ],
+  "open-problems": [
+   "harness-component-expiry-build-to-delete"
+  ],
+  "evidence": [
+   "harness-component-expiry-evidence"
+  ],
+  "hermes": [
+   "harness-engineering-7-layers-framework",
+   "hermes-agent-onboarding",
+   "hermes-agent-skill",
+   "hermes-agent",
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "agentic-coding": [
+   "harness-engineering-paradigm-shift"
+  ],
+  "four-pillars": [
+   "harness-engineering-paradigm-shift"
+  ],
+  "long-running": [
+   "harness-long-running-task"
+  ],
+  "persistence": [
+   "harness-long-running-task"
+  ],
+  "resume": [
+   "harness-long-running-task"
+  ],
+  "agent-loop": [
+   "harness-loop-architecture"
+  ],
+  "react": [
+   "harness-loop-architecture",
+   "tool-use-reasoning"
+  ],
+  "tutorial": [
+   "hermes-agent-onboarding"
+  ],
+  "self-evolution": [
+   "hermes-agent-skill",
+   "skill-acquisition-learning"
+  ],
+  "skill-system": [
+   "hermes-agent-skill",
+   "hermes-agent"
+  ],
+  "nous-research": [
+   "hermes-agent"
+  ],
+  "self-evolving": [
+   "hermes-agent"
+  ],
+  "cron-scheduler": [
+   "hermes-agent"
+  ],
+  "persistent-process": [
+   "hermes-agent"
+  ],
+  "session-management": [
+   "hermes-agent"
+  ],
+  "message-gateway": [
+   "hermes-agent"
+  ],
+  "kv-cache": [
+   "inference-optimization",
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099",
+   "transformer-architecture"
+  ],
+  "pd-separation": [
+   "inference-optimization"
+  ],
+  "coding-agent": [
+   "inference-optimization"
+  ],
+  "batching": [
+   "inference-optimization"
+  ],
+  "speculative-decoding": [
+   "inference-optimization"
+  ],
+  "quantization": [
+   "inference-optimization"
+  ],
+  "paradigm-shift": [
+   "kairos-claude-code-paradigm"
+  ],
+  "persistent-agent": [
+   "kairos-claude-code-paradigm"
+  ],
+  "kairos": [
+   "kairos-claude-code-paradigm"
+  ],
+  "knowledge-base": [
+   "karpathy-llm-wiki-v2",
+   "knowledge-base-output-flywheel",
+   "knowledge-network-self-growth",
+   "llm-wiki-paradigm",
+   "source-first-knowledge-compilation"
+  ],
+  "rag-alternative": [
+   "karpathy-llm-wiki-v2"
+  ],
+  "flywheel": [
+   "knowledge-base-output-flywheel"
+  ],
+  "drafts": [
+   "knowledge-base-output-flywheel"
+  ],
+  "llm-wiki": [
+   "knowledge-base-output-flywheel",
+   "knowledge-network-self-growth",
+   "llm-wiki-paradigm",
+   "source-first-knowledge-compilation"
+  ],
+  "output": [
+   "knowledge-base-output-flywheel"
+  ],
+  "self-growth": [
+   "knowledge-network-self-growth"
+  ],
+  "wikilink": [
+   "knowledge-network-self-growth",
+   "wikilink-knowledge-graph"
+  ],
+  "obsidian": [
+   "knowledge-network-self-growth",
+   "llm-wiki-paradigm",
+   "wikilink-knowledge-graph"
+  ],
+  "compliance": [
+   "legal-ai-compliance"
+  ],
+  "prowler": [
+   "legal-ai-compliance"
+  ],
+  "llm-evolution": [
+   "llm-artifact-optimization"
+  ],
+  "artifact-optimization": [
+   "llm-artifact-optimization"
+  ],
+  "asi": [
+   "llm-artifact-optimization"
+  ],
+  "pareto-search": [
+   "llm-artifact-optimization"
+  ],
+  "validation-gated": [
+   "llm-artifact-optimization"
+  ],
+  "microsoft-research": [
+   "llm-artifact-optimization"
+  ],
+  "llm-pretraining-vs-sft": [
+   "llm-pretraining-vs-sft"
+  ],
+  "rlhf": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "rlhf-dpo-grpo-alignment"
+  ],
+  "ppo": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "dpo": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "rlvr": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "rlvr-reinforcement-learning-verified-reasoning"
+  ],
+  "marl": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "agent-rl": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "alignment": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "msm-model-spec-midtraining-alignment",
+   "reinforcement-fine-tuning-rft",
+   "the-agency-model-dangers"
+  ],
+  "prm": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "orm": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "agent-lightning": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "agent-r1": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "verl": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "openrlhf": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "trl": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "instruction-tuning": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "r1": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026"
+  ],
+  "rlaif": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "reinforcement-fine-tuning-rft"
+  ],
+  "rft": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "reinforcement-fine-tuning-rft"
+  ],
+  "post-training": [
+   "llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026",
+   "rlhf-dpo-grpo-alignment"
+  ],
+  "llm-tokenizer": [
+   "llm-tokenizer"
+  ],
+  "agent-deployment": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "local-agent": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "cloud-agent": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "onsite-context": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "organization-context": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "manus": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "xingxiaozhao": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "agent-strategy": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "three-phase-path": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "enterprise-agent": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "r-d-delivery": [
+   "local-vs-cloud-agent-deployment-strategy"
+  ],
+  "long-context": [
+   "long-context-techniques",
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "long-running-agent": [
+   "long-running-agent-architecture"
+  ],
+  "adversarial-architecture": [
+   "long-running-agent-architecture"
+  ],
+  "generator-evaluator": [
+   "long-running-agent-architecture"
+  ],
+  "ralph-loop": [
+   "long-running-agent-architecture"
+  ],
+  "drift-correction": [
+   "long-running-agent-architecture"
+  ],
+  "loop-engineering": [
+   "loop-engineering-methodology"
+  ],
+  "methodology": [
+   "loop-engineering-methodology",
+   "mlops-engineering-methodology",
+   "scientific-method-ai-research",
+   "skill-engineering-principles"
+  ],
+  "managed-agents": [
+   "managed-agents-architecture"
+  ],
+  "agent-architecture": [
+   "managed-agents-architecture"
+  ],
+  "session-harness-sandbox": [
+   "managed-agents-architecture"
+  ],
+  "k8s-analogy": [
+   "managed-agents-architecture"
+  ],
+  "cattle-not-pet": [
+   "managed-agents-architecture"
+  ],
+  "prompt-injection": [
+   "managed-agents-architecture",
+   "prompt-injection-defense"
+  ],
+  "outcomes-loop": [
+   "managed-agents-architecture"
+  ],
+  "evaluation-harness": [
+   "managed-agents-architecture"
+  ],
+  "brain-hand-separation": [
+   "managed-agents-architecture"
+  ],
+  "protocol": [
+   "mcp-protocol-ecosystem",
+   "model-context-protocol-mcp"
+  ],
+  "circuit-analysis": [
+   "mechanistic-interpretability"
+  ],
+  "superposition": [
+   "mechanistic-interpretability"
+  ],
+  "sagemaker": [
+   "medical-ai-applications"
+  ],
+  "amazon-quick": [
+   "medical-ai-applications"
+  ],
+  "consolidation": [
+   "memory-consolidation-decay"
+  ],
+  "decay": [
+   "memory-consolidation-decay"
+  ],
+  "sleep": [
+   "memory-consolidation-decay"
+  ],
+  "biological-inspired": [
+   "memory-consolidation-decay"
+  ],
+  "provenance": [
+   "memory-source-provenance",
+   "source-first-knowledge-compilation"
+  ],
+  "trace": [
+   "memory-source-provenance"
+  ],
+  "tool": [
+   "model-context-protocol-mcp",
+   "openclaw-architecture",
+   "tool-use-patterns-ai-agents"
+  ],
+  "integration": [
+   "model-context-protocol-mcp",
+   "tool-use-patterns-ai-agents"
+  ],
+  "arxiv": [
+   "model-distillation-compression"
+  ],
+  "model-compression": [
+   "model-distillation-compression"
+  ],
+  "neuroscience": [
+   "model-distillation-compression"
+  ],
+  "continual-learning": [
+   "model-distillation-compression"
+  ],
+  "持续学习": [
+   "model-distillation-compression"
+  ],
+  "vllm": [
+   "model-inference-comparison"
+  ],
+  "inference-optimization": [
+   "model-inference-comparison"
+  ],
+  "moe": [
+   "moe-mixture-of-experts-2025",
+   "transformer-architecture"
+  ],
+  "mixture-of-experts": [
+   "moe-mixture-of-experts-2025"
+  ],
+  "scaling": [
+   "moe-mixture-of-experts-2025",
+   "scaling-laws"
+  ],
+  "msm": [
+   "msm-model-spec-midtraining-alignment"
+  ],
+  "safety": [
+   "msm-model-spec-midtraining-alignment"
+  ],
+  "collaboration": [
+   "multi-agent-collaboration-patterns",
+   "multi-agent-team-coordination"
+  ],
+  "coordination": [
+   "multi-agent-collaboration-patterns",
+   "multi-agent-team-coordination"
+  ],
+  "swarm": [
+   "multi-agent-collaboration-patterns"
+  ],
+  "isolation": [
+   "multi-agent-context-isolation"
+  ],
+  "subagent": [
+   "multi-agent-context-isolation",
+   "openclaw-architecture",
+   "subagent-spawning-pattern"
+  ],
+  "coze": [
+   "multi-agent-orchestration"
+  ],
+  "control-flow": [
+   "multi-agent-systems"
+  ],
+  "task-decomposition": [
+   "multi-agent-systems"
+  ],
+  "communication-protocols": [
+   "multi-agent-systems"
+  ],
+  "team": [
+   "multi-agent-team-coordination"
+  ],
+  "ecosystem": [
+   "open-source-ai-ecosystem"
+  ],
+  "agent-framework": [
+   "open-source-ai-ecosystem",
+   "openclaw-architecture"
+  ],
+  "tooling": [
+   "open-source-ai-ecosystem"
+  ],
+  "browser-automation": [
+   "open-source-ai-ecosystem"
+  ],
+  "cli": [
+   "open-source-ai-ecosystem"
+  ],
+  "model": [
+   "openai-model-evolution",
+   "reasoning-models",
+   "reinforcement-fine-tuning-rft"
+  ],
+  "realtime-api": [
+   "openai-realtime-voice-architecture"
+  ],
+  "voice": [
+   "openai-realtime-voice-architecture"
+  ],
+  "webrtc": [
+   "openai-realtime-voice-architecture"
+  ],
+  "inference-serving": [
+   "openai-realtime-voice-architecture"
+  ],
+  "message-bus": [
+   "openclaw-architecture"
+  ],
+  "typescript": [
+   "openclaw-architecture"
+  ],
+  "claude-api": [
+   "openclaw-architecture"
+  ],
+  "replit": [
+   "openclaw-architecture"
+  ],
+  "taobao": [
+   "openclaw-architecture"
+  ],
+  "orchestrator": [
+   "orchestrator-worker-architecture"
+  ],
+  "worker": [
+   "orchestrator-worker-architecture"
+  ],
+  "phoneworld": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "arxiv-2605-29486": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "mobile-agent": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "tencent-hunyuan": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "mock-android-app": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "gui-agent": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "androidworld": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "androidcontrol": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "hymobilebench": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "scaling-environments": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "agent-training-infrastructure": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "prd-generation": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "kotlin-jetpack-compose": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "agent-environment": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "mock-app-vs-real-app": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "hy3": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "real-trajectory-to-mock": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "task-verifier": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "kuaishou-prd": [
+   "phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan"
+  ],
+  "reliability": [
+   "production-agent-engineering"
+  ],
+  "monitoring": [
+   "production-agent-engineering"
+  ],
+  "prompting": [
+   "prompt-engineering-fundamentals"
+  ],
+  "instruction": [
+   "prompt-engineering-fundamentals"
+  ],
+  "input-validation": [
+   "prompt-injection-defense"
+  ],
+  "indirect-injection": [
+   "prompt-injection-defense"
+  ],
+  "retrieval": [
+   "rag-retrieval-augmented-generation",
+   "retrieval-augmented-generation-rag"
+  ],
+  "grounding": [
+   "rag-retrieval-augmented-generation"
+  ],
+  "hallucination-reduction": [
+   "rag-retrieval-augmented-generation"
+  ],
+  "retrieval-augmented-generation": [
+   "retrieval-augmented-generation-advanced"
+  ],
+  "knowledge-graph": [
+   "retrieval-augmented-generation-rag",
+   "wikilink-knowledge-graph"
+  ],
+  "reasoning": [
+   "rlvr-reinforcement-learning-verified-reasoning"
+  ],
+  "routa": [
+   "routa-harness-visualization"
+  ],
+  "vibe-coding": [
+   "routa-harness-visualization",
+   "vibe-coding-paradigm"
+  ],
+  "engineering-governance": [
+   "routa-harness-visualization"
+  ],
+  "compute": [
+   "scaling-laws"
+  ],
+  "science": [
+   "scientific-method-ai-research"
+  ],
+  "aicoding": [
+   "sdd-specification-driven-development-harness"
+  ],
+  "specificationdriven": [
+   "sdd-specification-driven-development-harness"
+  ],
+  "高德": [
+   "sdd-specification-driven-development-harness"
+  ],
+  "qoder": [
+   "sdd-specification-driven-development-harness"
+  ],
+  "formal-theory": [
+   "skill-formal-theory-survey"
+  ],
+  "dag": [
+   "skill-formal-theory-survey"
+  ],
+  "blueprint-skill": [
+   "skill-formal-theory-survey"
+  ],
+  "agent-gpa": [
+   "skill-formal-theory-survey"
+  ],
+  "skill-mining": [
+   "skill-formal-theory-survey"
+  ],
+  "writing": [
+   "skill-framework-writing-patterns"
+  ],
+  "stack": [
+   "software-3-0-stack"
+  ],
+  "source-first": [
+   "source-first-knowledge-compilation"
+  ],
+  "ssm-attention": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "sleep-consolidation": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "fast-weights": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "arxiv-2605-26099": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "cmu": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "jet-nemotron": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "ouro": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "gsm-infinite": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "memory-consolidation": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "state-space-model": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "mamba-family": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "offline-computation": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "hippocampus-replay": [
+   "ssm-attention-sleep-consolidation-cmu-arxiv-2605-26099"
+  ],
+  "spawn": [
+   "subagent-spawning-pattern"
+  ],
+  "agency": [
+   "the-agency-model-dangers"
+  ],
+  "autonomous-agents": [
+   "the-agency-model-dangers"
+  ],
+  "risks": [
+   "the-agency-model-dangers"
+  ],
+  "danger": [
+   "the-agency-model-dangers"
+  ],
+  "function-calling": [
+   "tool-use-patterns-ai-agents",
+   "tool-use-reasoning"
+  ],
+  "api": [
+   "tool-use-patterns-ai-agents"
+  ],
+  "toolformer": [
+   "tool-use-reasoning"
+  ],
+  "tool-selection": [
+   "tool-use-reasoning"
+  ],
+  "tool-composition": [
+   "tool-use-reasoning"
+  ],
+  "trading": [
+   "trading-quantitative-ai"
+  ],
+  "foundation": [
+   "transformer-architecture-2025"
+  ],
+  "rope": [
+   "transformer-architecture"
+  ],
+  "vector-search": [
+   "vector-search-embedding"
+  ],
+  "embedding": [
+   "vector-search-embedding"
+  ],
+  "hybrid-search": [
+   "vector-search-embedding"
+  ],
+  "quality-gate": [
+   "verifier-driven-development"
+  ],
+  "video-generation": [
+   "video-generation-models"
+  ],
+  "world-model": [
+   "video-generation-models"
+  ],
+  "vision": [
+   "vision-language-models"
+  ],
+  "wiki": [
+   "wiki-audit-skill"
+  ],
+  "maintenance": [
+   "wiki-audit-skill"
+  ],
+  "analysis": [
+   "wiki-audit-skill"
+  ],
+  "backlink": [
+   "wikilink-knowledge-graph"
+  ],
+  "network-effect": [
+   "wikilink-knowledge-graph"
+  ],
+  "long-term-memory": [
+   "working-set-vs-long-term-memory"
+  ],
+  "trade-off": [
+   "working-set-vs-long-term-memory"
+  ]
+ },
+ "totalConcepts": 187
+}

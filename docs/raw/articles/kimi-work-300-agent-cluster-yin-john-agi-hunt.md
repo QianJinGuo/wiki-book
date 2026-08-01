@@ -10,6 +10,7 @@ ingested: 2026-06-05
 review_value: 8
 review_confidence: 8
 review_recommendation: worth-reading
+source_url: "unavailable"
 ---
 
 # Kimi 决定，要用 300 个 Agent 解救非程序员们

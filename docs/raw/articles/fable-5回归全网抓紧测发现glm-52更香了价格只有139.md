@@ -6,6 +6,7 @@ ingest_date: 2026-07-02
 vxc: 56
 stars: 4
 sha256: f60f0c4077a88ffd82dc772a76ba3f31682ad73a8ea6338f6b4976c2e07ec46f
+source_url: "unavailable"
 ---
 
 # Fable 5回归全网抓紧测！发现GLM-5.2更香了，价格只有1/39

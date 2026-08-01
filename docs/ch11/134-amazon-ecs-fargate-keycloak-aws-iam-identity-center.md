@@ -4,6 +4,20 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于 Amazon ECS Fargate 自建 Key…"))
+    概述
+    架构要点
+    技术价值
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 概述
 
 详细记录基于 Amazon ECS Fargate 自建 Keycloak 作为 AWS IAM Identity Center 外部身份提供者（IdP），为 Kiro 开发者平台提供企业级 SSO 登录的完整架构实践。

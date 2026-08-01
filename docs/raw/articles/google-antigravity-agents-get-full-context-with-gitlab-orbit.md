@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 4ae9a09a1372532d928f97c4eb1594fc1631fe00d96aa3bb0155a962f638ab63
+source_url: "https://about.gitlab.com/blog/gitlab-orbit-and-google-antigravity"
 ---
 
 sha256: 1f487eb918dcca1f8afa2f5a3166d7841f5908db7a240c50dd21407711c168db

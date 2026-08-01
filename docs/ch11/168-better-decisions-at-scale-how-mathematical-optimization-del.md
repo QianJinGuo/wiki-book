@@ -2,54 +2,13 @@
 
 ## Ch11.168 Better decisions at scale: How mathematical optimization delivers where intuition fails
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
+> 📊 Level ⭐⭐ | 7.8KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
 
 # 数学优化：在直觉失效的复杂决策中寻找确定性最优解
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Better decisions at scale How"))
-    数学优化 vs 机器学习 演绎 vs 归纳
-    四步优化框架的工程实践
-    关键案例深度解析
-    可复用解决方案的抽象
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "成本分析"
-        MEASURE[度量<br/>Token/延迟/存储]
-        PROFILE[剖析<br/>瓶颈定位]
-        COMPARE[对比<br/>方案ROI]
-    end
-    subgraph "优化手段"
-        MODEL_OPT[模型优化<br/>量化/蒸馏/剪枝]
-        INFRA_OPT[基础设施<br/>Spot/自动扩缩]
-        PROMPT_OPT[提示优化<br/>缓存/压缩]
-    end
-    MEASURE --> PROFILE --> COMPARE
-    COMPARE --> MODEL_OPT & INFRA_OPT & PROMPT_OPT
-    subgraph "效果验证"
-        A_B[A/B测试]
-        METRIC[指标对比<br/>成本vs质量]
-    end
-    MODEL_OPT & INFRA_OPT & PROMPT_OPT --> A_B --> METRIC
-    METRIC -->|"迭代"| MEASURE
-    classDef analysis fill:#dbeafe,stroke:#2563eb
-    classDef optimize fill:#ede9fe,stroke:#7c3aed
-    classDef verify fill:#d1fae5,stroke:#059669
-    class MEASURE,PROFILE,COMPARE analysis
-    class MODEL_OPT,INFRA_OPT,PROMPT_OPT optimize
-    class A_B,METRIC verify
-```
-
 
 AWS Generative AI Innovation Center 介绍了数学优化（Mathematical Optimization）作为 AI 的重要子领域——与机器学习互补的"演绎式 AI"。ML 从数据中归纳模式并给出概率预测，而数学优化在给定约束下寻找数学上可证明的最优决策。文章展示了多个真实案例：BMW 机器人路径优化（10% 周期时间改进）、Delivery Hero 中间里程物流（24% 成本节省）、Amazon 欧盟物流网络（数千万美元价值）、澳大利亚红交叉排班优化（7% 理论成本降低）。
 
@@ -97,6 +56,7 @@ AWS Innovation Center 的四步框架是将数学优化从学术概念转化为�
 ### 可复用解决方案的抽象
 
 最优秀的项目产出的不是一次性结果，而是可复用的方法论：
+
 - **ROaDS（Route Optimization and Dispatch Solution）**：源自 Delivery Hero 项目，可配置的车辆路线、物流优化和现场服务规划框架
 - **WISE（Workforce Intelligence and Scheduling Engine）**：源自 Lifeblood 方法论，可配置的跨行业排班和值班基础框架
 
@@ -117,9 +77,9 @@ Fidelity Center for Applied Technology（FCAT）的案例特别值得关注：ML
 
 ## 相关实体
 
-- [规模化机器人强化学习](../ch01/1154-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [规模化机器人强化学习](../ch01/1373-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [NVIDIA Isaac Lab 机器人 RL](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [AWS SageMaker AI Agent 工作流](../ch04/412-aws-sagemaker-ai-agent.html)
+- [AWS SageMaker AI Agent 工作流](../ch04/488-aws-sagemaker-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 

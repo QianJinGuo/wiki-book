@@ -4,6 +4,7 @@ type: raw-article
 source: wechat
 ingested: 2026-07-03
 sha256: 1a2d0d6b953c3a9c26a4f56d9bd79240be0d35e1f91561100a158656ddcbb905
+source_url: "unavailable"
 ---
 
 # Agent落地真相：协议、成本与进化——一场关于智能体从"能跑通"到"能投产"的讨论

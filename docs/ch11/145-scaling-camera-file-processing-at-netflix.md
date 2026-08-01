@@ -6,6 +6,21 @@
 
 # Scaling Camera File Processing at Netflix
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Scaling Camera File Processi…"))
+    深度分析
+      「构建不如合作」的工程哲学
+      从 GPU 到 CPU 的架构逆向选择
+      开放标准的战略价值
+      影响力的「缺席」表现
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Netflix 的 Media Production Suite (MPS) 通过集成 FilmLight API (FLAPI) 实现了云端原生的相机文件处理管线，覆盖元数据解析、VFX 素材生成和弹性扩缩容。 该系统每天处理数百小时、TB 级的摄影机素材，采用「构建不如合作」的策略，将 FilmLight 的行业级图像处理引擎作为后端 API，部署在 Netflix 的 Cosmos 计算平台上。文章展示了如何将传统需要本地 GPU 集群的电影后期处理工作流迁移到 CPU-only 的云函数架构中，实现按需弹性扩缩容。

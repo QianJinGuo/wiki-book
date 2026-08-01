@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: cefe272c8b0a49462ba792c5867705db88743e6d70d662cf9e3e9509d1b49795
+source_url: "https://mp.weixin.qq.com/s/rJQ8ubfhmQSfXLxI78pPYg"
 ---
 
 # AI First？不，这明明是软件工程 First！

@@ -10,6 +10,21 @@
 
 火山引擎云数据库 PostgreSQL Serverless 版是字节跳动面向 AI 时代重新设计的数据库服务，非传统 RDS 的简单 Serverless 化改造。其核心特点是**数据库随 AI 应用一起生成、一起伸缩、一起演化**，解决 Vibe Coding 场景下"AI 秒级写码、数据库分钟级就绪"的体验断点。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("火山引擎 PostgreSQL Serverless 为…"))
+    设计背景
+    关键特性
+      Serverless 弹性
+      Data as Git
+      AI Function
+    实际效果
+    与其他实体关系
+```
+
 ## 设计背景
 
 在飞书妙搭（Vibe Coding 驱动的 AI 原生应用搭建平台）的使用场景中，传统数据库暴露出三个核心问题：

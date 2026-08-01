@@ -5,6 +5,30 @@
 > 📊 Level ⭐⭐ | 10.3KB | `entities/aws-bedrock-serverless-async-inference-sqs-lambda.md`
 
 # SQS+Lambda异步管道：2000并发0%限流的工程细节
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock Serverless 异步推理：…"))
+    三个关键洞察
+      1. max_concurrency计算公式
+      2. 三层timeout链路
+      3. Partial Batch Failure
+    与知识库的连接
+    深度分析
+      异步架构的本质：解耦与控速
+      max_concurrency公式的物理意义
+      三层timeout的层级陷阱
+      Partial Batch Failure的实…
+    实践启示
+      1. 按输入类型配置Timeout，不要用一套…
+      2. max_concurrency的初始值用…
+      3. Bedrock SDK配置的关键点
+      4. SQS是at-least-once投递，…
+    相关实体
+```
+
 ## 三个关键洞察
 ### 1. max_concurrency计算公式
 mc = min(mc_rpm, mc_tpm)，其中 mc_rpm = RPM额度 × avg_time / 60，mc_tpm = TPM额度 × avg_time / (token_per_request × 60)。这个公式是控制限流的核心工程工具。

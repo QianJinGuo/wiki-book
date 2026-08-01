@@ -5,6 +5,27 @@
 > 📊 Level ⭐⭐ | 10.4KB | `entities/from-kubernetes-dev-setup-to-production-what-actually-change.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("From Kubernetes Dev Setup to…"))
+    概念导图
+    技术洞察
+    深度分析
+      生产就绪的本质：能力的积累，而非配置的堆叠
+      变更风险的时间维度
+      备份验证的文化含义
+      工具链选择的工程哲学
+    实践启示
+      从'运行在 Kubernetes'到'生产就绪…
+      警惕'GitOps 速度幻觉'
+      告警治理：先减噪音，再建信号
+      Day-2 运维的持续性
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: e5d3b5466901cc9d5b4e84c9095ce63a9c6e83a93517ee65fe849530de10ca50
+source_url: "https://mp.weixin.qq.com/s/MKWckXraK1irNvMgCIJXZw"
 ---
 
 # 技术教科书：顶级开发团队设计的Harness工程项目源码什么样

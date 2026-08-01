@@ -36,6 +36,20 @@
 
 * * *
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("如何轻量化的在亚马逊云科技中国区安全使用 Transfe…"))
+    **一、背景与挑战**
+    **二、方案架构**
+    **三、核心设计决策**
+    **四、前提条件**
+    **五、实施步骤**
+      5.1 第一步：创建基础资源
+```
+
 ## **一、背景与挑战**
 
 SFTP（SSH File Transfer Protocol）是企业间文件交换的常用协议。许多组织需要通过 SFTP 与合作伙伴、供应商进行安全的数据传输。[AWS Transfer Family](<https://www.amazonaws.cn/transfer-family/>) 提供了全托管的 SFTP 服务器，但在实际落地过程中，我们经常会遇到一些约束：

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 3
 sha256: ca9723061aa19049e1d20c579d1e93040719b293850a334198caefdfdb1c4f5f
+source_url: "https://mp.weixin.qq.com/s/pUE6XRTmbp-xjuBwdnh7OA"
 ---
 
 # 【RAG】如何炼成强大的向量召回模型

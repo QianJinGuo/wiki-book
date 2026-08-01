@@ -1,5 +1,6 @@
 ---
 sha256: 15800d7e99045e63e3304f063ad6dc5ab328c24265fcbf328958d6c8e37c1823
+source_url: "https://mp.weixin.qq.com/s/qsrPsunLgoyPG-XsTbcp7Q"
 ---
 # 爆改GLM-5.2！全球首款200万上下文混合LoRA开源，外挂四大专家彻底治愈技能冲突
 

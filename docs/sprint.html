@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚀 面试冲刺 · 6站21锚点学习路径</title>
+<style>
+:root{--bg:#0a0e1a;--surface:#111827;--surface2:#1e293b;--border:#334155;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--accent:#8b5cf6;--accent2:#a78bfa;--green:#22c55e;--yellow:#eab308;--orange:#f97316;--red:#ef4444;--cyan:#06b6d4;--pink:#ec4899;--blue:#3b82f6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'SF Pro','PingFang SC','Noto Sans SC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7}
+a{color:var(--accent2);text-decoration:none;transition:color .2s}
+a:hover{color:#fff;text-decoration:underline}
+
+.header{background:linear-gradient(135deg,#1e1b4b 0%,#0f172a 60%,#0a0e1a 100%);border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem}
+.header h1{font-size:1.7rem;background:linear-gradient(135deg,#818cf8,#c084fc,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.3rem}
+.header .sub{color:var(--text2);font-size:.88rem;margin-bottom:.8rem}
+.header .meta{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.78rem;color:var(--text3)}
+.header .meta span{background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.25);padding:.25rem .7rem;border-radius:8px}
+
+.timeline{max-width:900px;margin:2rem auto;padding:0 1.5rem}
+
+.station{position:relative;margin-bottom:2.5rem;padding:1.5rem 1.5rem 1.2rem;background:var(--surface);border:1px solid var(--border);border-radius:14px;transition:border-color .2s}
+.station:hover{border-color:var(--accent)}
+.station::before{content:'';position:absolute;left:-1.5rem;top:1.8rem;width:12px;height:12px;border-radius:50%;border:3px solid var(--accent);background:var(--bg)}
+.station::after{content:'';position:absolute;left:-.95rem;top:2.4rem;width:2px;height:calc(100% + 1.5rem);background:var(--border)}
+.station:last-child::after{display:none}
+
+.station-num{font-size:.72rem;font-weight:700;padding:.2rem .6rem;border-radius:6px;color:#fff;display:inline-block;margin-bottom:.5rem}
+.s0 .station-num{background:var(--blue)}
+.s1 .station-num{background:var(--red)}
+.s2 .station-num{background:var(--pink)}
+.s3 .station-num{background:var(--cyan)}
+.s4 .station-num{background:var(--green)}
+.s5 .station-num{background:var(--yellow);color:#000}
+
+.station-title{font-size:1.15rem;font-weight:700;margin-bottom:.3rem}
+.station-sub{font-size:.82rem;color:var(--text2);margin-bottom:1rem}
+.station-time{font-size:.72rem;color:var(--text3);margin-bottom:.8rem;display:flex;align-items:center;gap:.3rem}
+
+.article{display:flex;align-items:flex-start;gap:.7rem;padding:.7rem .8rem;margin-bottom:.5rem;background:var(--surface2);border:1px solid var(--border);border-radius:10px;transition:all .2s;cursor:pointer}
+.article:hover{border-color:var(--accent);transform:translateX(4px)}
+.article .idx{font-size:.7rem;font-weight:700;color:var(--text3);min-width:22px;padding-top:2px}
+.article .body{flex:1}
+.article .title{font-size:.88rem;font-weight:600;line-height:1.4}
+.article .title a{color:inherit}
+.article .title a:hover{color:var(--accent2)}
+.article .tags{display:flex;gap:.4rem;margin-top:.3rem;flex-wrap:wrap}
+.article .tag{font-size:.65rem;padding:.12rem .4rem;border-radius:4px;font-weight:600}
+.tag-lv3{background:rgba(34,197,94,.12);color:var(--green)}
+.tag-lv2{background:rgba(99,102,241,.12);color:var(--accent2)}
+.tag-lv1{background:rgba(245,158,11,.12);color:var(--yellow)}
+.tag-words{background:rgba(148,163,184,.1);color:var(--text3)}
+.tag-ch{background:rgba(6,182,212,.1);color:var(--cyan)}
+.tag-interview{background:rgba(249,115,22,.12);color:var(--orange)}
+.article .hint{font-size:.72rem;color:var(--text3);margin-top:.25rem;font-style:italic}
+
+.tip{background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.2);border-radius:10px;padding:1rem 1.2rem;margin:1.5rem 0;font-size:.82rem;color:var(--text2);line-height:1.7}
+.tip strong{color:var(--accent2)}
+
+.footer{text-align:center;padding:2rem;font-size:.72rem;color:var(--text3);border-top:1px solid var(--border);margin-top:2rem}
+
+@media(max-width:640px){
+  .header{padding:1.5rem 1rem}
+  .header h1{font-size:1.3rem}
+  .station{padding:1rem}
+  .station::before{left:-1rem}
+  .station::after{left:-.45rem}
+}
+
+/* ── Sprint surface polish ──────────────────────────────
+   Keep the existing six-station reading path, but make it easier to scan,
+   navigate, and use on a narrow screen. */
+:root{
+  --page-gutter:clamp(1rem,4vw,2.5rem);
+  --max-width:1120px;
+  --panel:rgba(15,23,42,.86);
+  --panel-raised:rgba(30,41,59,.86);
+  --border-soft:rgba(148,163,184,.18);
+  --focus-ring:0 0 0 3px rgba(167,139,250,.24);
+}
+
+html{scroll-behavior:smooth}
+body{background-color:#080d19;background-image:
+  radial-gradient(860px 420px at 4% -10%,rgba(99,102,241,.2),transparent 64%),
+  radial-gradient(720px 360px at 96% 4%,rgba(14,165,233,.08),transparent 62%)}
+button,a{font:inherit}
+a:focus-visible{outline:none;box-shadow:var(--focus-ring);border-radius:6px}
+
+.header{padding:clamp(1.6rem,4vw,3rem) var(--page-gutter) 1.6rem;border-bottom-color:rgba(148,163,184,.2)}
+.header > *{max-width:var(--max-width);margin-left:auto;margin-right:auto}
+.header h1{font-size:clamp(1.45rem,3vw,2.15rem);letter-spacing:-.035em;margin-bottom:.45rem}
+.header .sub{font-size:.94rem;max-width:var(--max-width);line-height:1.55}
+.header .meta{gap:.5rem;margin-top:1rem;max-width:var(--max-width)}
+.header .meta span{min-height:32px;display:inline-flex;align-items:center;padding:.3rem .7rem;border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.1)}
+.header .meta .route{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.station-nav{display:flex;gap:.45rem;overflow-x:auto;scrollbar-width:none;margin-top:1.15rem;padding-bottom:.2rem}
+.station-nav::-webkit-scrollbar{display:none}
+.station-nav a{flex:0 0 auto;color:var(--text2);font-size:.76rem;font-weight:700;text-decoration:none;padding:.38rem .65rem;border:1px solid var(--border-soft);border-radius:8px;background:rgba(15,23,42,.55);transition:all .2s}
+.station-nav a:hover{color:#fff;border-color:var(--accent2);background:rgba(139,92,246,.15);transform:translateY(-1px)}
+
+.timeline{max-width:var(--max-width);margin:2.25rem auto;padding:0 var(--page-gutter)}
+.station{scroll-margin-top:1rem;margin-bottom:2rem;padding:1.4rem 1.45rem 1.25rem;background:linear-gradient(145deg,rgba(17,24,39,.96),rgba(15,23,42,.8));border-color:rgba(71,85,105,.66);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+.station:hover{border-color:rgba(167,139,250,.58);box-shadow:0 14px 30px rgba(0,0,0,.18),0 0 22px rgba(139,92,246,.08)}
+.station::before{border-color:var(--accent2);box-shadow:0 0 0 4px rgba(139,92,246,.1)}
+.station::after{background:linear-gradient(var(--accent),var(--border));opacity:.6}
+.station-num{letter-spacing:.03em;margin-bottom:.6rem}
+.station-title{font-size:clamp(1.08rem,2vw,1.3rem);letter-spacing:-.015em}
+.station-sub{font-size:.84rem;max-width:70ch;line-height:1.55}
+.station-time{margin-bottom:1rem;padding:.32rem .55rem;width:max-content;border-radius:7px;background:rgba(100,116,139,.1);color:#8291aa}
+
+.article{gap:.85rem;padding:.78rem .9rem;margin-bottom:.55rem;background:rgba(30,41,59,.76);border-color:rgba(71,85,105,.72);border-radius:11px}
+.article:hover{border-color:rgba(167,139,250,.62);background:rgba(36,49,72,.9);transform:translateX(3px)}
+.article .idx{display:grid;place-items:center;min-width:26px;height:26px;padding:0;border-radius:8px;background:rgba(100,116,139,.14);color:#a9b5c7}
+.article .title{font-size:.91rem;line-height:1.45}
+.article .tags{gap:.35rem;margin-top:.45rem}
+.article .tag{padding:.16rem .45rem;border-radius:5px}
+.article .hint{font-size:.74rem;line-height:1.5;margin-top:.35rem;color:#8190a6}
+.tip{padding:1rem 1.1rem;margin:1.25rem 0;background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(15,23,42,.65));border-color:rgba(139,92,246,.3);border-radius:11px}
+.footer{padding:2.4rem var(--page-gutter);border-top-color:rgba(71,85,105,.5)}
+
+@media(max-width:640px){
+  .header{padding:1.45rem var(--page-gutter) 1.1rem}
+  .header h1{font-size:1.45rem;line-height:1.25}
+  .header .sub{font-size:.86rem;line-height:1.55}
+  .header .meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;margin-top:.9rem}
+  .header .meta span{min-width:0;font-size:.7rem;padding:.3rem .55rem}
+  .header .meta .route{grid-column:1/-1;display:block;line-height:1.35;white-space:normal;overflow:hidden;max-height:2.7em}
+  .station-nav{margin-top:.85rem}
+  .station-nav a{font-size:.7rem;padding:.34rem .55rem}
+  .timeline{margin:1.35rem auto;padding:0 calc(var(--page-gutter) + .25rem)}
+  .station{margin-bottom:1.5rem;padding:1rem .9rem .9rem}
+  .station::before{left:-.78rem;top:1.35rem;width:10px;height:10px}
+  .station::after{left:-.37rem;top:1.85rem}
+  .station-sub{font-size:.8rem}
+  .article{gap:.55rem;padding:.7rem .65rem}
+  .article .idx{min-width:23px;height:23px;font-size:.66rem}
+  .article .title{font-size:.84rem;line-height:1.4}
+  .article .tags{gap:.25rem}
+  .article .tag{font-size:.61rem;padding:.14rem .36rem}
+  .article .hint{font-size:.7rem}
+  .tip{font-size:.78rem;line-height:1.65}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🚀 面试冲刺 · 6 站 21 锚点</h1>
+  <div class="sub">沿章节依赖图走主干道，每站只取最能撑起面试回答的锚点文章</div>
+  <div class="meta">
+    <span>📐 9 天</span>
+    <span>🎯 21 篇锚点</span>
+    <span class="route">📚 路径: ch01→ch02→ch04→ch05→ch06→ch07/ch08→ch10→ch11/ch12</span>
+  </div>
+  <nav class="station-nav" aria-label="冲刺站点导航">
+    <a href="#station-0">01 · 地基</a>
+    <a href="#station-1">02 · Agent</a>
+    <a href="#station-2">03 · 记忆</a>
+    <a href="#station-3">04 · 协作</a>
+    <a href="#station-4">05 · RAG</a>
+    <a href="#station-5">06 · 云与安全</a>
+  </nav>
+</div>
+
+<div class="timeline">
+
+<!-- Station 0 -->
+<div class="station s0" id="station-0">
+  <div class="station-num">站 0</div>
+  <div class="station-title">地基 · LLM 全貌 + 术语 + 评测</div>
+  <div class="station-sub">ch01 → ch02 · 先过基础门，确保后续章节的前置知识到位</div>
+  <div class="station-time">⏱ 1 天</div>
+
+  <div class="article">
+    <div class="idx">1</div>
+    <div class="body">
+      <div class="title"><a href="ch01/1279-llm.html" target="_blank">从零构建 LLM 七阶段实战教程</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-words">4,704 字</span><span class="tag tag-ch">Ch01</span><span class="tag tag-interview">面试开场白素材</span></div>
+      <div class="hint">LLM 全生命周期地图 — 数据→预训练→微调→对齐→部署→评测→产品化</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">2</div>
+    <div class="body">
+      <div class="title"><a href="ch01/1225-ai-agent-5-l1-l2-l3-6-benchmark-llm-as-jud.html" target="_blank">AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级 + 评测集三层设计 + 6 大 Benchmark + LLM-as-Judge 三模式</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-words">12,255 字</span><span class="tag tag-ch">Ch01</span><span class="tag tag-interview">评测高频题一篇覆盖</span></div>
+      <div class="hint">评测是面试高频题，5维+3级准出+3层评测集，一篇抵十篇</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">3</div>
+    <div class="body">
+      <div class="title"><a href="ch02-prompt.html#ch02002-hugging-face-ai-agent-model-agent-scaffolding-harness-context-engineering-policy-tool-skill-sub-agent" target="_blank">Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-ch">Ch02</span><span class="tag tag-interview">术语关必过</span></div>
+      <div class="hint">Scaffolding / Harness / Context Engineering / Policy 的精确定义，面试第一关</div>
+    </div>
+  </div>
+</div>
+
+<!-- Station 1 -->
+<div class="station s1" id="station-1">
+  <div class="station-num">站 1</div>
+  <div class="station-title">Agent 核心 + Harness 工程</div>
+  <div class="station-sub">ch04 + ch05 · Phase 1 的 88% 文章集中在这两章，抓 7 个锚点</div>
+  <div class="station-time">⏱ 3 天</div>
+
+  <div class="article">
+    <div class="idx">4</div>
+    <div class="body">
+      <div class="title"><a href="ch04/699-17-agent.html" target="_blank">17 种 Agent 架构演进：控制流设计的完整演化史</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-words">14,628 字</span><span class="tag tag-ch">Ch04</span><span class="tag tag-interview">系统设计题总纲</span></div>
+      <div class="hint">从 ReAct → Plan-Execute → 分层，一条线讲完。面试系统设计题直接展开</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">5</div>
+    <div class="body">
+      <div class="title"><a href="ch04/700-cpu-agent-l1-l2-l3-execute-code.html" target="_blank">CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 execute_code 单工具设计</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-words">9,529 字</span><span class="tag tag-ch">Ch04</span><span class="tag tag-interview">架构隐喻讲故事</span></div>
+      <div class="hint">L1 上下文窗口 / L2 工作区文件 / L3 长期记忆 — 面试讲 Memory 架构的好框架</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">6</div>
+    <div class="body">
+      <div class="title"><a href="ch04/086-ai-agent-250-while-python-ollama-cli-agent-7.html" target="_blank">AI Agent 的内核是 250 行 while 循环：用 Python + Ollama 从零搭建 CLI Agent</a></div>
+      <div class="tags"><span class="tag tag-lv2">Lv2 理解</span><span class="tag tag-words">10,592 字</span><span class="tag tag-ch">Ch04</span><span class="tag tag-interview">白板编码题底座</span></div>
+      <div class="hint">Agent Loop 最小实现，白板编码/手撕 Agent 的起手式</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">7</div>
+    <div class="body">
+      <div class="title"><a href="ch04/031-agent-harness-agent.html" target="_blank">Agent Harness 架构设计与实现：生产级 Agent 系统落地指南</a></div>
+      <div class="tags"><span class="tag tag-lv2">Lv2 理解</span><span class="tag tag-words">16,938 字</span><span class="tag tag-ch">Ch04</span><span class="tag tag-interview">区分「只做过 demo」</span></div>
+      <div class="hint">生产级落地全链路，面试说「我了解 Agent 在生产环境怎么跑」</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">8</div>
+    <div class="body">
+      <div class="title"><a href="ch04/059-rein-4-5-agent-go-3000.html" target="_blank">Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行</a></div>
+      <div class="tags"><span class="tag tag-lv2">Lv2 理解</span><span class="tag tag-words">12,390 字</span><span class="tag tag-ch">Ch04</span><span class="tag tag-interview">工程治理 Staff 级</span></div>
+      <div class="hint">Agent 代码膨胀治理 — Staff 级别面试题，4 模块分层 + 5 类型边界</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">9</div>
+    <div class="body">
+      <div class="title"><a href="ch05/002-loop-engineering-19-addy-osmani-boris-cherny-pete.html" target="_blank">Loop Engineering：先写刹车再写循环（19 来源深度合并）</a></div>
+      <div class="tags"><span class="tag tag-lv2">Lv2 理解</span><span class="tag tag-words">60,075 字</span><span class="tag tag-ch">Ch05</span><span class="tag tag-interview">核心论点比框架名值钱</span></div>
+      <div class="hint">60K 字巨文不求全读 — 抓「先写刹车再写循环」「反馈栈」「成本公式」三个核心论点</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">10</div>
+    <div class="body">
+      <div class="title"><a href="ch05/120-harness-engineering.html" target="_blank">Harness Engineering 四根支柱与四要素架构</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-words">7,270 字</span><span class="tag tag-ch">Ch05</span><span class="tag tag-interview">面试直接画图</span></div>
+      <div class="hint">四根支柱 + 四要素，短文框架清晰，面试里直接在白板上画</div>
+    </div>
+  </div>
+</div>
+
+<!-- Station 2 -->
+<div class="station s2" id="station-2">
+  <div class="station-num">站 2</div>
+  <div class="station-title">记忆 · Agent 的大脑</div>
+  <div class="station-sub">ch06 · 466K 字 46 篇实体，面试追问高频区</div>
+  <div class="station-time">⏱ 1 天</div>
+
+  <div class="article">
+    <div class="idx">11</div>
+    <div class="body">
+      <div class="title"><a href="ch06-memory.html#ch06001-agent-memory" target="_blank">Agent 记忆架构：先别急着把 Memory 当数据库</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-ch">Ch06</span><span class="tag tag-interview">纠正常见误区</span></div>
+      <div class="hint">Memory 不是存储而是治理 — 先抛这个区分，面试谈 Memory 立刻上层次</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">12</div>
+    <div class="body">
+      <div class="title"><a href="ch06-memory.html#ch06002-hermes-agent" target="_blank">深度拆解 Hermes Agent 记忆系统</a></div>
+      <div class="tags"><span class="tag tag-lv2">Lv2 理解</span><span class="tag tag-words">28.8KB</span><span class="tag tag-ch">Ch06</span><span class="tag tag-interview">四层记忆体系</span></div>
+      <div class="hint">热记忆 → 会话检索 → 程序性记忆 → 深层用户建模，四层体系 + 成本账</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">13</div>
+    <div class="body">
+      <div class="title"><a href="ch06-memory.html#memory_2" target="_blank">一个最小可用的 Memory 设计</a></div>
+      <div class="tags"><span class="tag tag-ch">Ch06</span><span class="tag tag-interview">白板设计 starting point</span></div>
+      <div class="hint">7 条最小可用规则 — 面试让你白板设计 Memory 系统时的框架</div>
+    </div>
+  </div>
+</div>
+
+<!-- Station 3 -->
+<div class="station s3" id="station-3">
+  <div class="station-num">站 3</div>
+  <div class="station-title">工具 + 多 Agent 协作</div>
+  <div class="station-sub">ch07 + ch08 · Agent 的手脚和团队，两章并行</div>
+  <div class="station-time">⏱ 2 天</div>
+
+  <div class="article">
+    <div class="idx">14</div>
+    <div class="body">
+      <div class="title"><a href="ch07/090-microsoft-agent-framework-tools-4-provider-tool-ap.html" target="_blank">Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval</a></div>
+      <div class="tags"><span class="tag tag-lv3">Lv3 深度</span><span class="tag tag-words">14,195 字</span><span class="tag tag-ch">Ch07</span><span class="tag tag-interview">工具分类体系</span></div>
+      <div class="hint">4 类工具（检索/操作/确认/创作）+ Provider 矩阵 + 审批机制</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">15</div>
+    <div class="body">
+      <div class="title"><a href="ch07/003-skill-7-skill.html" target="_blank">工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践</a></div>
+      <div class="tags"><span class="tag tag-lv2">Lv2 理解</span><span class="tag tag-words">12,983 字</span><span class="tag tag-ch">Ch07</span><span class="tag tag-interview">Skill 设计最佳实践</span></div>
+      <div class="hint">7 个顶级 Skill 的共性模式提炼，面试问「你怎么设计 Skill」时直接用</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">16</div>
+    <div class="body">
+      <div class="title"><a href="ch08-multi-agent.html#ch08001-hermeskimi-k26-agent" target="_blank">Hermes+Kimi K2.6 多 Agent 军团实战教程</a></div>
+      <div class="tags"><span class="tag tag-ch">Ch08</span><span class="tag tag-interview">编排模式 Profile 体系</span></div>
+      <div class="hint">7×24h Agent 军团 — Profile 体系 + 任务调度 + 上下文管理实战</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">17</div>
+    <div class="body">
+      <div class="title"><a href="ch03/012-openclaw.html" target="_blank">OpenClaw 多智能体团队搭建实战经验</a></div>
+      <div class="tags"><span class="tag tag-lv1">Lv1 入门</span><span class="tag tag-words">4,044 字</span><span class="tag tag-ch">Ch03</span><span class="tag tag-interview">多 Agent 组织方式</span></div>
+      <div class="hint">7 Agent 花园团队 — 面试问「你怎么组织多 Agent」时直接拿来说</div>
+    </div>
+  </div>
+</div>
+
+<!-- Station 4 -->
+<div class="station s4" id="station-4">
+  <div class="station-num">站 4</div>
+  <div class="station-title">RAG · 知识检索</div>
+  <div class="station-sub">ch10 · 287K 字 34 篇实体，让 Agent 拥有外部知识</div>
+  <div class="station-time">⏱ 1 天</div>
+
+  <div class="article">
+    <div class="idx">18</div>
+    <div class="body">
+      <div class="title"><a href="ch10-rag.html#ch10-rag" target="_blank">向量库是 RAG 的前菜，知识图谱是答案，本体论是灵魂</a></div>
+      <div class="tags"><span class="tag tag-ch">Ch10</span><span class="tag tag-interview">RAG 天花板问题</span></div>
+      <div class="hint">一句话讲清 RAG 的天花板 — 向量检索→知识图谱→本体论，面试区分度极高</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">19</div>
+    <div class="body">
+      <div class="title"><a href="ch10-rag.html" target="_blank">Ch10 RAG 与知识检索 · 章节全览</a></div>
+      <div class="tags"><span class="tag tag-ch">Ch10</span><span class="tag tag-interview">RAG 分层架构概览</span></div>
+      <div class="hint">通读章节导图，掌握从向量检索到图谱到本体的完整分层架构</div>
+    </div>
+  </div>
+</div>
+
+<!-- Station 5 -->
+<div class="station s5" id="station-5">
+  <div class="station-num">站 5</div>
+  <div class="station-title">云部署 + 安全</div>
+  <div class="station-sub">ch11 + ch12 · 部署与成本是工程能力体现，安全是 Staff 级别必问</div>
+  <div class="station-time">⏱ 1 天</div>
+
+  <div class="article">
+    <div class="idx">20</div>
+    <div class="body">
+      <div class="title"><a href="ch11-infra.html" target="_blank">Ch11 云基础设施与部署 · 章节全览</a></div>
+      <div class="tags"><span class="tag tag-ch">Ch11</span><span class="tag tag-interview">部署与成本结构</span></div>
+      <div class="hint">1328 篇中挑 2-3 篇云部署/成本优化的 Phase 1 文章泛读，面试能说部署模式和成本</div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="idx">21</div>
+    <div class="body">
+      <div class="title"><a href="ch07/005-ai-agents-security-survey-attack-and-defense.html" target="_blank">AI Agents Security Survey: Attack and Defense</a></div>
+      <div class="tags"><span class="tag tag-lv2">Lv2 理解</span><span class="tag tag-words">11,529 字</span><span class="tag tag-ch">Ch07</span><span class="tag tag-interview">安全攻击面全貌</span></div>
+      <div class="hint">Agent 安全攻防全貌 — 提示注入→记忆投毒→工具滥用，面试问安全时一篇覆盖</div>
+    </div>
+  </div>
+</div>
+
+<!-- Tips -->
+<div class="tip">
+  <strong>执行要点：</strong><br>
+  ① 总计 9 天 21 锚点，每篇 6K-15K 字（Loop Engineering 只读核心论点）<br>
+  ② Dashboard 上筛选 Phase 1，先标完 ch01→ch04→ch05 进度，再推 ch06/ch07/ch08<br>
+  ③ 每站学完，用 Dashboard 费曼笔记写「面试官问我这个话题，3 分钟怎么说」<br>
+  ④ 间隔回忆从第 3 天启动，每天 15 分钟过 recall 列表<br>
+  ⑤ 倒计时设到面试日，最后 2 天只做 recall + 费曼复习，不读新文章
+</div>
+
+<div class="tip">
+  <strong>依赖图主干：</strong>
+  ch01 (根) → ch02 → ch04 → ch05 (Harness) / ch06 (记忆) → ch07 (工具) / ch08 (多Agent) → ch10 (RAG)<br>
+  每站的锚点文章都建立在前一站的基础上，跳站 = 后面讲不深
+</div>
+
+</div>
+
+<div class="footer">
+  📚 <a href="index.html" target="_blank">AI 工程 · jinguo.tech</a> &nbsp;|&nbsp;
+  🎯 <a href="dashboard/index.html" target="_blank">学习仪表盘</a> &nbsp;|&nbsp;
+  📖 <a href="PATH.html" target="_blank">完整学习路径</a>
+</div>
+
+</body>
+</html>

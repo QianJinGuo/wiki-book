@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/digitalocean-serverless-inference-55-models.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("55+ models, every modality. …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - Newsletter 技术洞察
 - DigitalOcean Serverless Inference 提供 55+ 模型的统一 API，兼容 OpenAI 和 Anthropic 格式

@@ -4,6 +4,7 @@ source: ""
 tags: [qwen, skill, testing, framework]
 created: 2026-05-20
 sha256: 2dba967fe3c4403da3c5259e97d6cc49530f85cfaaff5e15409bb5bf43a739c1
+source_url: "https://github.com/QwenLM/qwen-code/issues/2447"
 ---
 ---
 # Skill Testing Framework: Recording, Playback, and Assertions

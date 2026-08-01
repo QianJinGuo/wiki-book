@@ -1,5 +1,4 @@
 ---
-
 title: "告别\"失忆\"的组织：构建企业级AI记忆基质的工程思考"
 url: https://mp.weixin.qq.com/s/2QR2OT-WFUMPbhZQupQEnA
 author: AI小老六
@@ -11,7 +10,7 @@ tags: [agent, enterprise-ai, memory, knowledge-management, rag, knowledge-graph,
 review_value: 7.5
 review_confidence: 7
 sha256: e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4
-
+source_url: "unavailable"
 ---
 # 告别"失忆"的组织：构建企业级AI记忆基质的工程思考
 > 来源：AI 小老六，2026-05-14

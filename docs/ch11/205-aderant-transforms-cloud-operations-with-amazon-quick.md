@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/aderant-transforms-cloud-operations-with-amazon-quick.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Aderant transforms cloud ope…"))
+    深度分析
+    实践启示
+    关联阅读
+```
+
 ## 核心要点
 - Aderant 使用 Amazon Quick AI 能力统一搜索跨 6 个供应商系统的信息
 - 搜索时间加速 90%，文档处理加速 75-85%，研究时间减少 95%

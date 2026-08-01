@@ -8,6 +8,32 @@
 
 > 本文综合提炼自 AWS 关于 Amazon Bedrock 跨区域推理（CRIS）的欧洲合规指南。核心：**Inference Profile** 抽象 region 路由，**Global CRIS** 跨所有商业 region（最高吞吐/折扣价）vs **EU Geo CRIS** 严格约束在 EU region 内（满足 GDPR 数据驻留）。**安全性**：AWS backbone 加密传输、IAM 显式选择 CRIS profile、CloudTrail + Model Invocation Logging 审计。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock Cross-Region …"))
+    核心概念
+      3 个关键概念
+      两种 CRIS Scope
+    GDPR 对齐
+    安全性设计
+    透明性和审计性
+    代码示例（CRIS profile 调用）
+    深度分析
+      1. Geo CRIS 的静态性与 GDPR …
+      2. Global CRIS 的成本优势实质上…
+      3. IAM 的角色从访问控制延伸为数据治理的…
+      4. Source-region 日志集中是数…
+    实践启示
+    关键设计模式
+      1. **Profile 抽象解耦 regio…
+      2. **日志 source-region 中…
+      3. **IAM profile 级粒度**
+      4. **CloudTrail metadat…
+```
+
 ## 核心概念
 
 ### 3 个关键概念

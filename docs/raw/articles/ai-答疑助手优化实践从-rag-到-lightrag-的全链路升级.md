@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: a8b924844001b73215a1417b6b06c4c0bd9f39f601c8363e8f10e1086d0326e7
+source_url: "https://mp.weixin.qq.com/s/b7iygA6YIqFJ-b9Yr3EzHA"
 ---
 
 # AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级

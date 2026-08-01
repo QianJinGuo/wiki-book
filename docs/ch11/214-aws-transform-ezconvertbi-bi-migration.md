@@ -9,6 +9,18 @@ Migrating to Amazon Quick doesn't have to mean starting from scratch. Your dashb
 In this post, we walk through the full journey, from setting up your migration workspace in AWS Transform to subscribing to partner agents through AWS Marketplace to unlocking Amazon Quick capabilities that change how your organization consumes data.
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Transform Ezconvertbi BI…"))
+    The real cost of stayin…
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## The real cost of staying on legacy BI
 
 ```mermaid

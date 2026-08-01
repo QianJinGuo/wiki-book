@@ -4,6 +4,31 @@
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/ibm-forward-deployed-units-ai-deployment.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("IBM Forward Deployed Units (…"))
+    背景：企业 AI 交付的痛点
+    核心概念：Forward Deployed U…
+      团队结构
+      与传统咨询模式的区别
+    Forward Deployed Engine…
+    技术支撑：IBM Consulting Adv…
+    客户案例
+    行业意义
+    深度分析
+      从'人力扩张'到'智能交付'的范式转变
+      '运营化'取代'项目化'：Agentic AI…
+      FDE 角色崛起：技术-商业的跨界融合
+      平台+交付模型的协同效应
+    实践启示
+      对企业决策者的启示
+      对技术领导者的启示
+      对 AI 行业观察者的启示
+```
+
 ## 背景：企业 AI 交付的痛点
 IBM 在公告中指出，传统的 enterprise delivery model 依赖于劳动密集型（labor-intensive）的人力扩张模式——项目规模扩大意味着需要投入更多人力的线性增长。然而，随着 AI  adoption 加速，IBM 认为成功的关键已转向如何组织团队、协调 AI agents（[Agent](../ch03/035-agent.html)）、强化 governance（治理），以及将 AI 能力 operationalize（可操作化）为可量化的业务成果。
 这一判断呼应了 **Agentic AI** 落地过程中的核心矛盾：企业在 experiment（实验）阶段可以快速验证 POC，但将 AI 真正部署到 production（生产环境）时却困难重重。技术不是问题，operating model（运营模式）才是瓶颈。

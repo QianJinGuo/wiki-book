@@ -8,6 +8,23 @@
 
 xAI's Grok 4.3 is now generally available on Amazon Bedrock, marking xAI's entry as a model provider on the platform. Grok 4.3 runs on Mantle, Amazon Bedrock's next-generation inference engine, and uses OpenAI-compatible APIs.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Introducing Grok on Amazon B…"))
+    Key Capabilities
+      Configurable Reasoning …
+      Model Parameters
+      Mantle Inference Engine
+      Tool Calling and Structur…
+    Service Tiers and Regiona…
+    Comparison with Grok 4.5
+    Practical Guidance
+    Related Entities
+```
+
 ## Key Capabilities
 
 ### Configurable Reasoning Effort

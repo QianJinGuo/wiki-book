@@ -8,6 +8,23 @@
 
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock AgentCore Equipm…"))
+    背景
+    技术架构
+      核心组件
+      架构分段（Section A/B/C/D）
+    实践要点
+    上线状态
+    实践启示
+    原文链接
+    相关实体
+```
+
 ## 背景
 
 本文是 AWS 官方博客（2026-06-10 发布），介绍如何使用 Amazon Bedrock AgentCore 平台构建一个面向农业机械维修场景的 AI 诊断助手。场景痛点：重型农机维修经常因缺少合适零件导致多次现场访问、长时间停机，特别是在收获季造成巨大经济损失。

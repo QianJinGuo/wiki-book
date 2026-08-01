@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: ad4763c88c062a89412de6f1cd7acb9bcd24ff4a033120054ba3921595948d2b
+source_url: "https://engineering.razorpay.com/turning-scattered-data-into-queryable-segments-at-scale-how-razorpay-built-its-customer-data-3937c4b012de"
 ---
 
 sha256: fb2756ba4123c56c19769806eb424711b78d74727cdeed0fb9a46382c1a51df7

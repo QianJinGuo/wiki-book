@@ -6,6 +6,25 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Google and Amnesty Internati…"))
+    相关实体
+    深度分析
+      执法-隐私的张力重构
+      商业间谍软件的攻防军备竞赛
+      平台厂商的安全责任边界
+      民间社会组织（CSO）的技术能力建设
+    实践启示
+      对安全研究人员
+      对隐私倡导者
+      对企业安全团队
+      对政策制定者
+```
+
 ## 核心要点
 - 这是主流设备厂商首次推出专门用于法证检测高级威胁的功能
 - 针对商业间谍软件（如 NSO Group 的 Pegasus）提供持久化取证日志

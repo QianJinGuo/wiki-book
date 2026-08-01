@@ -1,5 +1,6 @@
 ---
 sha256: d8e523b49b054f8bda93bd418b5a550baa3bd5b1fba3cb662129f9e50bfadf23
+source_url: "https://mp.weixin.qq.com/s/dBzFYVNCm4gQzdb1-1S8mQ"
 ---
 # 竞品统统瞎猜它拿53分！WAIC面壁1.5B模型硬核炸场，成本腰斩，国产机器人天花板再被捅破
 

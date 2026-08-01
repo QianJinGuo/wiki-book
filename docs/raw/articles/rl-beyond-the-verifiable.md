@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 742d99a034d4a1e00adebd2a22eec6a117bd9deeae5a5a7824a10bb166ae0290
+source_url: "http://www.tanayj.com/p/rl-beyond-the-verifiable"
 ---
 
 sha256: d5d4a8206b01aa0acd8f5b78d0cd698bfcdb6cdae83b8dde12593bd3bce7b183

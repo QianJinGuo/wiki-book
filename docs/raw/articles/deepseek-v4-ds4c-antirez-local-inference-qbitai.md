@@ -14,6 +14,7 @@ source: 量子位 QbitAI
 published: ~2026-05-06
 created: 2026-05-10
 updated: 2026-05-10
+source_url: "unavailable"
 ---
 # DeepSeek V4 本地推理：antirez 的专属高速公路
 **来源：** 量子位 QbitAI（公众号）

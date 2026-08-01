@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 0b983cb7f9b470aef9fe13fa590f15aa665c34493d64a9e3376f129dbf93f05d
+source_url: "https://mp.weixin.qq.com/s/RcqccHL7POCHrB5MJAw-4w"
 ---
 
 # 昆仑芯大规模 LLM 推理优化，实现秒级扩缩容

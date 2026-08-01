@@ -1,5 +1,6 @@
 ---
 sha256: a15ced9b2ad67a1fd47bc18689800ba7bc50ca53766a61c47aeb3a1c50e8ca43
+source_url: "https://mp.weixin.qq.com/s/-Swjz2ySqJySX3EWXttFaw"
 ---
 # 给835页文档，还你一个数据库！Cursor重塑「大模型经济学」：AI蜂群化身终极廉价编译器
 

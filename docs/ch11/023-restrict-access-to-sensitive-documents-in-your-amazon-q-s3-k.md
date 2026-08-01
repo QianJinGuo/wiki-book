@@ -4,6 +4,36 @@
 
 > 📊 Level ⭐⭐ | 18.7KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-q-s3-knowledge-bases.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Restrict Access to Sensitive…"))
+    概述
+    核心机制：ACL 评估在查询时而非索引时
+    两种 ACL 配置方法
+      Global ACL 文件
+      Document-level Metadata…
+    IAM Policy Assignments …
+      绕过风险与防护
+    QuickSight Flows 与 ACL …
+    关键工程约束
+      1. 不可逆性
+      2. 身份匹配规则
+      3. ACL 文件本身的写权限管控
+      4. 同步延迟
+    部署最佳实践
+      分层防护策略
+      配置验证流程
+      变更管理
+    深度分析
+      查询时评估将权限控制从'配置时'转化为'访问时'
+      Deny-by-default 是企业级 RA…
+      Global ACL vs Metadata …
+      IAM Policy Assignment 与…
+```
+
 ## 概述
 
 Amazon Q 的 S3 知识库文档级 ACL（Access Control List）功能是企业级 RAG（检索增强生成）系统在**权限收敛层**的关键工程实践。该功能解决了两个核心问题：知识库级别的粗粒度权限控制无法满足敏感文档的隔离需求，以及传统 S3 bucket 权限与 AI 查询层的联动缺失。

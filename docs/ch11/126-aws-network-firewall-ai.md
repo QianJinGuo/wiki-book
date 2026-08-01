@@ -6,6 +6,26 @@
 
 # AWS Network Firewall 规则冲突 AI 实时检测方案（部署小指南六）
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Network Firewall 规则冲突 AI…"))
+    概述
+    深度分析
+      1. '代码负责发现冲突，AI 负责解释冲突'…
+      2. STRICT_ORDER 语义理解是 A…
+      3. 端到端事件驱动架构 + CloudFor…
+      4. 多维冲突检测覆盖了 Suricata /…
+    实践启示
+      1. 用 CloudTrail + Event…
+      2. 让 LLM 做语义判断，让代码做确定性计算
+      3. STRICT_ORDER / 优先级语义…
+      4. Serverless + 按需计费是中小…
+    相关实体
+```
+
 ## 概述
 
 本文来自 AWS 中国博客，是 Network Firewall 部署小指南系列的第六篇。核心贡献是**为 AWS Network Firewall 这一无原生冲突检测能力的托管服务，构建了一套基于 CloudTrail + EventBridge + Lambda + Bedrock (Nova Pro) 的实时规则冲突检测与 AI 智能分析系统**。当用户编辑 Rule Group 保存时，系统会在 1-2 分钟内自动检测潜在的 CIDR 重叠、IP/端口冲突、域名策略冲突，并通过邮件通知管理员，同时附上 AI 生成的意图判断、风险评估和修复建议。

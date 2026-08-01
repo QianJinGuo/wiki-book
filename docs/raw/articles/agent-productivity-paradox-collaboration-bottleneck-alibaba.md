@@ -5,6 +5,7 @@ url: https://mp.weixin.qq.com/s/GPoQnFsXnnNpKdefWWiKRw
 mp_name: 阿里云开发者
 publish_date: 2026-05-08
 sha256: c7dbda7f73e97183825be2d3f7c7ceaa761bbf6206785ed6862b60a783a68733
+source_url: "https://mp.weixin.qq.com/s/GPoQnFsXnnNpKdefWWiKRw"
 ---
 
 # Agent 时代的生产力悖论：当协作本身成为最大的瓶颈

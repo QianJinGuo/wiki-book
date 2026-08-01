@@ -10,6 +10,7 @@ value: 8
 stars: 4
 description: "Claude Code (Session 生命周期) vs Hermes (Goal 生命周期) 6 维对比 + 状态模型差异 + 常见错配模式 + Harness (执行层) vs Persistent Runtime (系统层) 上下层关系 + '土问题' 选型决策"
 created: 2026-06-10
+source_url: "https://claude.ai/install.sh"
 ---
 
 ## Claude Code: 工程师, 不是员工

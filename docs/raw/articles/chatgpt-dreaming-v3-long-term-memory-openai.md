@@ -10,6 +10,7 @@ ingested: 2026-06-05
 review_value: 8
 review_confidence: 8
 review_recommendation: worth-reading
+source_url: "unavailable"
 ---
 
 # ChatGPT 的"失忆症"终于被治好了！Dreaming V3 让大模型拥有长期记忆

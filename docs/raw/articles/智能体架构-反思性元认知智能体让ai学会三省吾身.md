@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 5e11cf7249634aa92d1833177ff5b4b74a23faa54e697f237c25fc615b8312e8
+source_url: "https://mp.weixin.qq.com/s/WkT365rM3athTzihll32cA"
 ---
 
 # 智能体架构 -- 反思性元认知智能体，让AI学会“三省吾身”

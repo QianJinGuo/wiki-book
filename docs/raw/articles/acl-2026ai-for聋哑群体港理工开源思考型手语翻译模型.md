@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 302d86c079de92f5ecb01d8e1c5a0321758d150e67b76018e487d69d0d8d10c1
+source_url: "https://mp.weixin.qq.com/s/PgSi0r7Ywy5VdOoCaA4fKw"
 ---
 
 # ACL 2026｜AI for聋哑群体，港理工开源思考型手语翻译模型

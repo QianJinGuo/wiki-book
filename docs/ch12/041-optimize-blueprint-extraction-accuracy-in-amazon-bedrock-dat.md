@@ -8,59 +8,7 @@
 
 Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 是一个 2026-06 推出的特性，自动 refine blueprint extraction instructions 来提升 IDP 流水线的精度。开发者只需要提供 3-10 个 example 文档 + ground truth，BDA 在数分钟内完成 instruction 优化（无需 model fine-tuning）。
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Optimize blueprint extraction"))
-    核心机制
-    工作流 从 schema 优化到 production
-    实际 schema 示例 Purchase Order
-    与现有 IDP 方案对比
-    实践要点
-    与现有 wiki 实体的关联
-```
-
 ## 核心机制
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 - **Blueprint 字段定义（schema 形式）**: 
 - `type`: 数据类型（string/number/array 等）
@@ -131,9 +79,9 @@ graph TB
 
 ## 与现有 wiki 实体的关联
 
-- [process-financial-documents-using-amazon-bedrock-data-automa](../ch11/295-amazon-bedrock.html) — 同 BDA 平台，重点是金融文档的实际提取案例
-- [automate-schema-generation-for-intelligent-document-processing](../ch11/170-automate-schema-generation-for-intelligent-document-processi.html) — schema 自动生成（与 blueprint 优化互补：先生成 schema，再优化 instruction）
-- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch04/561-amazon-bedrock-agentcore.html) — Bedrock AgentCore 平台深度（非 BDA，但同 Bedrock 体系）
+- [process-financial-documents-using-amazon-bedrock-data-automa](../ch11/306-amazon-bedrock.html) — 同 BDA 平台，重点是金融文档的实际提取案例
+- [automate-schema-generation-for-intelligent-document-processing](../ch11/192-automate-schema-generation-for-intelligent-document-processi.html) — schema 自动生成（与 blueprint 优化互补：先生成 schema，再优化 instruction）
+- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](../ch04/628-amazon-bedrock-agentcore.html) — Bedrock AgentCore 平台深度（非 BDA，但同 Bedrock 体系）
 
 ## 原文链接
 
@@ -171,7 +119,7 @@ graph TB
 
 4. **优化完成后务必用 holdout set 验证** — 文章示例中 aggregate exact match 仅从 90% 提升到 92%，如果不用 holdout set 验证，容易将偶然提升误判为真实效果。
 
-5. **与 [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/295-amazon-bedrock.html) 联合使用** — 后者侧重金融文档的端到端提取场景，前者侧重 blueprint instruction 的自动化优化，两者构成"schema 设计 → instruction 优化 → 生产部署"的完整 IDP pipeline。
+5. **与 [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/306-amazon-bedrock.html) 联合使用** — 后者侧重金融文档的端到端提取场景，前者侧重 blueprint instruction 的自动化优化，两者构成"schema 设计 → instruction 优化 → 生产部署"的完整 IDP pipeline。
 
 6. **Batch 场景下注意 holdout 验证循环** — 如果优化后发现精度未达预期，应根据失败 case 补充新 example（覆盖新的变体），再次触发优化，形成 data-driven 的迭代闭环。
 

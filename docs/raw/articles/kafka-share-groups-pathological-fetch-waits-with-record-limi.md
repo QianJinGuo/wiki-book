@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: fd8989eae0c5eb6bf46475138c5c6c584d02ee6fc749526454dcef964c857029
+source_url: "https://jack-vanlightly.com/blog/2026/6/24/kafka-share-groups-pathological-fetch-waits-with-recordlimit"
 ---
 
 sha256: 7ba5954ec32c8ac1f4589a35d50254c8b47c045fcce07966e7a75256ddb8646b

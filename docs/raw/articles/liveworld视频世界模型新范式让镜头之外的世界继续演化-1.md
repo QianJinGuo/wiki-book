@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 9e8ab69f15eac2ab2dd4ae1d33c343c7e236e02093454d96883c32679fb2f84c
+source_url: "https://mp.weixin.qq.com/s/IBAIk3TPzS_UExnHCtNUwg"
 ---
 
 # LiveWorld：视频世界模型新范式，让镜头之外的世界继续演化

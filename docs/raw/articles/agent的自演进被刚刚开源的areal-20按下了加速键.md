@@ -6,6 +6,7 @@ ingest_date: 2026-07-02
 vxc: 64
 stars: 4
 sha256: b0b695bc0dec4b83d4e4e24dad0c67c19b773205688aa166c35489726a3d329c
+source_url: "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019403&idx=1&sn=d35d1f707bb710e0c15f22426ebb2a32&scene=21#wechat_redirect>"
 ---
 
 # Agent的自演进，被刚刚开源的AReaL 2.0按下了加速键

@@ -10,6 +10,21 @@ AWS customers expect fast, informed support when they’re evaluating new techno
 The AWS Technical Field Communities (TFC) program supports hundreds of thousands of these customer engagements annually across dozens of specialized technology domains. For program leaders and field teams, understanding the pulse of these engagements isn’t just about tracking metrics; it’s about making sure that we have the right skills in the right places at the right time to help our customers succeed. Yet, as the scale of these engagements grew, so did the complexity of the questions our leaders needed to answer. Traditional, static dashboards began to struggle under the weight of sophisticated, multi-dimensional inquiries. Stakeholders found themselves navigating a maze of different systems, manually cross-referencing datasets just to get a clear picture of how to better serve the customer. Getting to the “why” behind the data isn’t always a hard technical problem, it’s a workflow problem. A leader’s question becomes an interruption for a BI engineer, who pauses planned work, runs the aggregation, and returns an answer that inevitably spawns the next question. The real time lost isn’t in the query. It’s in the handoff between the person with the question and the person with the tools to answer it. Leaders were asking complex, real-time questions that crossed organizational and technical boundaries.
 While the data existed, it was often “trapped” behind rigid visualizations that couldn’t anticipate every nuance of a program leader’s needs. Furthermore, the presence of personally identifiable information (PII) meant that certain qualitative details, the very context that makes data actionable, remained restricted and difficult to surface safely.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Quicksight Dataset QA Ta…"))
+    深度分析
+      核心架构转变：从 Topics 到直接 Dat…
+      TARA 四层架构
+      核心性能指标
+      MCP 集成的战略意义
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 ### 核心架构转变：从 Topics 到直接 Dataset Q&A

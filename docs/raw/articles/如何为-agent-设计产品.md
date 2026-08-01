@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 98227515a6762fc18670450ba7ce318b9556460bfed4128536285c2429cb342a
+source_url: "https://mp.weixin.qq.com/s/mlajGBnYpugyxjTDc7JGNA"
 ---
 
 # 如何为 Agent 设计产品？

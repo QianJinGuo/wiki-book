@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: cb2fb71fca5d4fdbe343895e9ec9336259551d38e4e5a5c31f091706b7e80aa9
+source_url: "https://mp.weixin.qq.com/s/pLqKTe1J2FkiiquoT4dOJA"
 ---
 
 # OpenClaw长期记忆：优秀管线与玄学效果

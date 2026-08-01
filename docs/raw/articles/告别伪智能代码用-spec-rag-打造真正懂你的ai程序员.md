@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: a8deb73898f40638167611f491dbf64466c3ce655028586e05994b386edf4828
+source_url: "https://mp.weixin.qq.com/s/ei1PTOYMmP8VRhoj_xOd0Q"
 ---
 
 # 告别“伪智能”代码：用 Spec + RAG 打造真正懂你的AI程序员

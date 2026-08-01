@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: afc9c44f9ffe6cb59e131602801554945ec57634a09facde6e2be4ab531726e1
+source_url: "https://vercel.com/blog/ai-sdk-7"
 ---
 
 sha256: 46333bd81f3b11ef3a9d9abf8b00b28b7c4ca8c901381356c97f68e03d6e1aa2

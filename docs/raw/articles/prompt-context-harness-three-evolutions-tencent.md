@@ -23,6 +23,7 @@ scored_by: MiniMax-M2.7
 v: 7
 c: 7
 sha256: c96dcba7544472b5887c0ee3b00b4d8a295dc786918b99389e7009d95bcef11a
+source_url: "unavailable"
 ---
 
 # 从Prompt、Context到Harness，工程的三次进化与终局之战

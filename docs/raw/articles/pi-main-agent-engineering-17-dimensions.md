@@ -4,6 +4,7 @@ source: ""
 tags: [pi-agent, agent-engineering, evaluation]
 created: 2026-05-20
 sha256: 01381fad007c60d737620d0b032c4b96790c37028530bf07d6f4d45775030981
+source_url: "https://mp.weixin.qq.com/s/h8HZyoyOOX2Aodfngq25FA"
 ---
 ---
 # 从 pi-main 源码拆解：顶尖 AI Agent 的工程设计（17 维度全解）

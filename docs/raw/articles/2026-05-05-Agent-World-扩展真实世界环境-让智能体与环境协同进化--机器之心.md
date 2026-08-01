@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 03fa75f7c7674f9fcd76f02d5dcf78468839393a3451572fdd5be5879142be85
+source_url: "https://arxiv.org/pdf/2604.18292"
 ---
 
 sha256: ebc5dfad0bdc92a66c4625eba56b1251943a69b882227973297bd7d803288d9f

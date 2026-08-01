@@ -9,6 +9,18 @@
 # Semgrep Intercom PHP Supply Chain Attack
 Semgrep: Intercom PHP 供应链攻击 Mini-Shai-Hulud，Packagist/Composer 投毒
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Semgrep Intercom Php Security"))
+    相关资源
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 摘要
 At RSA, we launched Semgrep Multimodal to combine AI reasoning with rule-based detection [Learn More → ](https://semgrep.dev/blog/2026/attackers-cant-...
 

@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 7a607a16adf540b77102b2fa7d6492a569b3ec6b3520b5fc9fb8a674f861b304
+source_url: "https://signoz.io/blog/introducing-noz-your-ai-teammate-in-signoz"
 ---
 
 sha256: 6231167270f562d4f70985676559008e14ad5012606e0cc3e4aa339bef1d9ac3

@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 56
 stars: 4
 sha256: 380e0e72a55b41fa98fc2fb76a5fc7cd84fa0dc51a6bf92b81f7c3488fc84e9a
+source_url: "https://arxiv.org/abs/2601.21468"
 ---
 
 # 美团ICML 2026入选论文精选，两场直播聚焦Agent与视频生成

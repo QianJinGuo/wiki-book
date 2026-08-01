@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: aa89e756af95afc21288f000c04e1014accf8c6178a484c4e08f9e1bc7daa4cc
+source_url: "https://mp.weixin.qq.com/s/uYxWxkOH2SXjEMQz7rxVFw"
 ---
 
 # 超级计算机上的数学 AI，现在能在你 Mac 上跑了

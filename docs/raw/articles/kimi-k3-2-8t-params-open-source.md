@@ -1,5 +1,6 @@
 ---
 sha256: b7a9a31f75c1f5710b9aa2ce7bb21d9c3cfd6576987c98106de64060be297570
+source_url: "https://mp.weixin.qq.com/s/xpIdLvyVBkg_NbQP-a1QPA"
 ---
 # 2.8万亿参数,全球第三强,Kimi K3又双叒刷新开源纪录，Fable 5和 GPT5.6-sol颤抖吧
 

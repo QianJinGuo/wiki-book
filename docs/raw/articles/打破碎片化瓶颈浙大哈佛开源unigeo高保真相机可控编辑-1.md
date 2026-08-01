@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: a138700ba19268cf700a5fbfddb566915aecec6b372cb1057dfd59864d9abdcb
+source_url: "https://mp.weixin.qq.com/s/ejSrcVpibbJebtQ1kiVuWw"
 ---
 
 # 打破碎片化瓶颈！浙大&哈佛开源UniGeo，高保真相机可控编辑

@@ -8,6 +8,21 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Canvas LMS 攻击者 ShinyHunters …"))
+    深度分析
+      Canvas LMS 攻击背景
+      域名暂停机制分析
+      暗网基础设施的优势
+      网络犯罪组织的典型响应模式
+    实践启示
+    关联实体
+```
+
 ## 摘要
 
 臭名昭著的黑客组织 ShinyHunters 在对 Instructure 的 Canvas LMS 平台发起大规模入侵和篡改攻击后，其官方明网（clearnet）域名 `shinyhunte.rs` 被域名注册局暂停。事件发生在 2026 年 5 月 11 日（周一），域名为塞尔维亚的 `.rs` ccTLD，由塞尔维亚国家互联网域名注册局（RNIDS）管理。ShinyHunters 在暗网（.onion）站点发布公告，警告未来该明网域名可能被未知行为者重新注册用于恶意活动，并宣布将"仅通过 onion 基础设施运营"。

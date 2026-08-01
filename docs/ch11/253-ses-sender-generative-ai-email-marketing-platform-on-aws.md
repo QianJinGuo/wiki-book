@@ -9,6 +9,24 @@
 AWS 推出的 SES Sender 是构建于 Amazon SES 之上的自托管、开源邮件营销与可送达性管理平台，将生成式 AI 应用于模板创作与质量把关的完整闭环。
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("SES Sender: Generative AI Em…"))
+    概念导图
+    核心痛点
+    AI 驱动的核心能力
+      1. 模板智能创作
+      2. 原生 MCP 集成
+    架构设计
+      核心组件
+      部署资源
+    部署与使用
+    替代方案背景
+```
+
 ## 概念导图
 
 ```mermaid

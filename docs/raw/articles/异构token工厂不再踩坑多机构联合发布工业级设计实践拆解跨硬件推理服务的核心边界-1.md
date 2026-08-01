@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 81
 stars: 5
 sha256: ebd27bafde0450e8b397527a84a261127b4fb386be7b809effc85bbdbea72c49
+source_url: "https://arxiv.org/pdf/2606.29708"
 ---
 
 # 异构Token工厂不再踩坑！多机构联合发布工业级设计实践，拆解跨硬件推理服务的核心边界

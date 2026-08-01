@@ -2,7 +2,7 @@
 
 > 超级智能、存在风险、AI 治理、人类命运
 
-> 本章收录 **22 篇**实体，按深度递增排列。
+> 本章收录 **23 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
+| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 12 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
@@ -127,7 +127,22 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 ---
 
-## Ch20.002 Data Agent 产品设计文档
+## Ch20.002 超越单线程极限jimdb-内核热-key-治理与性能优化实践
+
+> 📊 Level ⭐ | 1.2KB | `entities/超越单线程极限jimdb-内核热-key-治理与性能优化实践.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/超越单线程极限jimdb-内核热-key-治理与性能优化实践.md)
+
+在高并发分布式缓存场景下，热 Key（Hot Key）不仅是单点性能瓶颈，更是引发集群雪崩的关键诱因。JIMDB 此前推出的[大热 Key（Big‑Hot Key）主动治理方案](<https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247501343&idx=1&sn=bbb3f81dfff1b0c40272b5f73cae628d&scene=21&token=1082121804&lang=zh_CN#wechat_redirect>)已成功解决“既大又热”场景下的 CPU 与带宽瓶颈。然而当 Key 的 Value 极小、OPS
+
+## 来源
+
+- 原文: [超越单线程极限jimdb-内核热-key-治理与性能优化实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/超越单线程极限jimdb-内核热-key-治理与性能优化实践.md)
+- 原始链接: : https://mp.weixin.qq.com/s/sTKNzDE1QHG4qnbnKqL_Xg
+
+---
+
+## Ch20.003 Data Agent 产品设计文档
 
 > 📊 Level ⭐⭐ | 29.9KB | `entities/data-agent-product-design.md`
 
@@ -726,7 +741,7 @@ POST   /api/v1/datasets/{id}/sync    # 触发数据同步
 
 ---
 
-## Ch20.003 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
+## Ch20.004 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
 
 > 📊 Level ⭐⭐ | 15.7KB | `entities/enterprise-next-gen-architecture-zhan.md`
 
@@ -896,7 +911,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 ---
 
-## Ch20.004 James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
+## Ch20.005 James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
 
 > 📊 Level ⭐⭐ | 15.3KB | `entities/james-cowling-engineering-philosophy-ai-era.md`
 
@@ -1077,14 +1092,14 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 ---
 
-## Ch20.005 GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.
+## Ch20.006 GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.
 
-> 📊 Level ⭐⭐ | 13.0KB | `entities/gitlab-layoffs-memo-2026-5.md`
+> 📊 Level ⭐⭐ | 12.9KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
-> -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gitlab-layoffs-memo-2026-5.md)
+> -> [[raw/articles/gitlab-layoffs-memo-2026-5|GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.']
 ## 相关实体
 
-- [iii.dev](https://github.com/QianJinGuo/wiki/blob/main/entities/iii-dev.md)
+- [[entities/iii-dev|iii.dev]
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -1095,7 +1110,8 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 ## CEO 备忘录摘要
 ### 结构性变化
-Bill Staples 在备忘录中概述了四项主要运营变化：
+Bill Staples 在备忘录中概述了四项主要运营变化：^[].md]
+
 1. **运营足迹重评估**：计划将国家覆盖减少 30%（主要是小型团队所在国家），通过合作伙伴网络继续服务这些市场
 2. **组织扁平化**：移除最多三层管理层，让领导者更接近工作
 3. **R&D 重组**：创建约 60 个更小、更授权的团队，拥有端到端所有权，独立团队数量几乎翻倍
@@ -1130,9 +1146,10 @@ GitLab 选择「公开进行」重组是一个值得注意的战略决策。传�
 
 ### 2. 组织扁平化的双重逻辑
 GitLab 宣布移除最多三层管理层，同时 R&D 团队从约 30 个重组成约 60 个更小团队。这两件事是相关的：
-**传统逻辑**：减少管理层级通常是为了削减成本、提高决策效率。
+**传统逻辑**：减少管理层级通常是为了削减成本、提高决策效率。^[].md]
+
 **AI 逻辑**：当 AI Agent 可以处理大量协调、审批、review 工作后，中间管理层的存在理由减少。GitLab 实际上在说：Agent 将承担很多管理工作（reviews、approvals、handoffs），因此需要更少人类管理者。
-这与 [Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md) 趋势一致——AI 正在替代传统的协调和管理角色。
+这与 [[raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来|Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的] 趋势一致——AI 正在替代传统的协调和管理角色。
 
 ### 3. 「机器规模基础设施」——Git 的根本挑战
 备忘录中关于 Git 基础设施重建的描述值得深思：「Git 本身不是为这种负载设计的，在非为 Agent 构建的平台上堆叠 AI 是这个时代最大的错误」。
@@ -1141,7 +1158,8 @@ GitLab 正在进行的「一代重建」可能为整个行业提供参考：如�
 
 ### 4. 供需逆转——开发者平台市场的新定价
 Bill Staples 提供了一个独特的市场视角：去年开发者平台市场以每人每月几十美元衡量，今年是数百美元/月，正在走向数千美元/月。
-这与直觉相反——通常新技术会降低价格。为什么开发者平台价格反而上涨？
+这与直觉相反——通常新技术会降低价格。为什么开发者平台价格反而上涨？^[].md]
+
 可能的解释：
 
 - **需求爆发**：AI 创造了更多软件需求，从而推高了开发工具的价值
@@ -1150,11 +1168,11 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 ### 5. 「深度技术问题」的稀缺性悖论
 备忘录中有一个看似矛盾的陈述：「深度技术问题的供给在增加，能解决它们的人将成为市场上最稀缺、最有价值的人才」。
-如果 AI 能写代码，为什么深度技术问题反而增加？Bill Staples 的逻辑是：
+如果 AI 能写代码，为什么深度技术问题反而增加？Bill Staples 的逻辑是：^[].md]
 
 - 软件总量增加，系统复杂度增加（分布式、AI 集成、跨平台）→ 更多深度问题
 - AI 擅长解决「标准问题」，但复杂系统故障、架构决策、安全漏洞等仍需要人类判断 → 能解决这些问题的人更稀缺
-这与 [Boris Cherny 的观点一致](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
+这与 [[raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来|Boris Cherny 的观点一致]：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
 
 ## 实践启示
 ### 给软件工程师的建议
@@ -1179,15 +1197,15 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 - [GitLab Duo Agent Platform](https://about.gitlab.com/blog/2026/01/gitlab-duo-agent-platform)
 - [GitLab Transcend 2026（6 月 10 日）](https://about.gitlab.com/events/gitlab-transcend)
 ## 相关实体
-- [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](https://github.com/QianJinGuo/wiki/blob/main/entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
-- [Principals Ai Education](https://github.com/QianJinGuo/wiki/blob/main/entities/principals-ai-education.md)
+- [[entities/gitlab-14pct-layoff-agent-platform-ai-2026q1]
+- [[entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward]
+- [[entities/ai-agents-inside-perimeter-hackernews]
+- [[entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward]
+- [[entities/principals-ai-education]
 
 ---
 
-## Ch20.006 Multilingual AI
+## Ch20.007 Multilingual AI
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/multilingual-ai.md`
 
@@ -1304,9 +1322,9 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ---
 
-## Ch20.007 人机对齐？不，是人正在向机器对齐
+## Ch20.008 人机对齐？不，是人正在向机器对齐
 
-> 📊 Level ⭐⭐ | 9.8KB | `entities/human-aligning-to-machine-reverse-alignment-2026.md`
+> 📊 Level ⭐⭐ | 10.3KB | `entities/human-aligning-to-machine-reverse-alignment-2026.md`
 
 # 人机对齐？不，是人正在向机器对齐
 
@@ -1407,9 +1425,9 @@ Princeton 和 Nature 的研究揭示了反向对齐在社会偏见维度的危�
 
 ---
 
-## Ch20.008 Token 经济学与 AI 效率
+## Ch20.009 Token 经济学与 AI 效率
 
-> 📊 Level ⭐⭐ | 8.5KB | `entities/token-economics-ai-efficiency.md`
+> 📊 Level ⭐⭐ | 8.6KB | `entities/token-economics-ai-efficiency.md`
 
 ## 核心命题
 AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用性不再稀缺，焦点从智力上限转向 Token 效率（Token Efficiency = AI 时代的投入产出比）。Token 经济学的核心问题：每消耗一个 Token 能创造多大的价值？
@@ -1420,16 +1438,18 @@ AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用�
 | 所有任务默认最强模型 | 杀鸡用牛刀 |
 | Token 成本公司享、产出个人享 | 免费食堂效应 → 浪费 |
 | Token 数十倍增长无核算 | 缺乏投入产出评估 |
-**根源**：指标被当作目标本身 → 工具变成表演（与代码行数比、KPI 挟持无异）。
+**根源**：指标被当作目标本身 → 工具变成表演（与代码行数比、KPI 挟持无异）。^[].md]
 
 ## Token 效率三种工程方案
 ### 1. 任务分级
 不同任务天然适合不同规格的模型。一句翻译和一次医疗诊断不应使用同一档模型。做好任务分级，即可带来投入产出效率提升。
 
 ### 2. 积分价格信号
-**痛点**：模型输入/输出价格不同、缓存命中/未命中价格不同，多币种复杂性高。
+**痛点**：模型输入/输出价格不同、缓存命中/未命中价格不同，多币种复杂性高。^[].md]
+
 **解决**：积分制（Credits/Points）作为内部结算货币——用户购买的不是 Token 量，而是一套标准化积分。不同模型对应不同积分；复杂任务消耗更多，简单任务消耗更少。
-**类产品**：CodeBuddy、WorkBuddy、Cursor、Manus、Lovart
+**类产品**：CodeBuddy、WorkBuddy、Cursor、Manus、Lovart^[].md]
+
 **价值**：
 
 - 屏蔽多币种复杂性，用户感知成本简化
@@ -1437,8 +1457,9 @@ AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用�
 - 差异化的分层定价变成用户可感知的产品机制
 
 ### 3. 模型自动路由
-**理念**：用户不该在每次提问前判断"这值不值得用前沿模型"——AI 应用应自动完成这件事。
-**实践**：腾讯 CodeBuddy auto 模式
+**理念**：用户不该在每次提问前判断"这值不值得用前沿模型"——AI 应用应自动完成这件事。^[].md]
+
+**实践**：腾讯 CodeBuddy auto 模式^[].md]
 
 - 代码补全 → 小模型
 - 解释和生成 → 中等模型
@@ -1451,21 +1472,21 @@ AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用�
 | 模型路由（Harness Engineering） | 产品侧工程 |
 | 任务分级 | 用户自己的判断力——需要理解模型能力边界 |
 | 上下文质量 | 用户提供的上下文是否与任务相关，影响产出质量 + 积分消耗 |
-AI 产品和用户能力必须共同成长，才能让 Token 效率真正落地。
+AI 产品和用户能力必须共同成长，才能让 Token 效率真正落地。^[].md]
 
 ## AI 普惠三层路径
 ### 个人层
 十亿用户级产品不可能用最贵 AI。国民级产品接入 AI 自然走向小尺寸模型——这是普惠和智能的最优解。
 
 ### 组织层（中小企业）
-中小企业是 Token 经济学最值得关注的主体：
+中小企业是 Token 经济学最值得关注的主体：^[].md]
 
 - 没有海量 Token 预算，试错空间有限
 - 需要"月月算得过账、事事能办到位"的可靠助手
 - 需要可承担 + 可预期 + 可控制的 AI 投入
 
 ### 社会层
-Token 成为新的社会资源（类似电力、带宽、公路），需要：
+Token 成为新的社会资源（类似电力、带宽、公路），需要：^[].md]
 
 - 分层调度体系
 - 合理分配的计价评估基础设施
@@ -1508,20 +1529,20 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 3. **关注使用者 AI 素养的同步提升**：再好的路由机制也需要用户具备基本的模型能力认知作为前提。
 
 ## 相关主题
-- [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理优化是 Token 效率的工程基础
-- [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
-- [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md) — 上下文管理影响 Token 消耗质量
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-token-economics-ai-productivity.md)
+- [[concepts/inference-optimization] — 推理优化是 Token 效率的工程基础
+- [[entities/harness-engineering-long-term-agent-tasks] — Harness Engineering 让 AI 产出可预期、可衡量、可持续
+- [[entities/context-window-management] — 上下文管理影响 Token 消耗质量
+- [[raw/articles/tencent-token-economics-ai-productivity.md|原文存档]
 
 ## 相关实体
-- [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/github-token-efficiency-agentic-workflows.md)
-- [Token Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/github-agentic-token-efficiency.md)
-- [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](https://github.com/QianJinGuo/wiki/blob/main/entities/github-agentic-token-efficiency.md)
-- [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
+- [[entities/github-token-efficiency-agentic-workflows|Improving token efficiency in GitHub Agentic Workflows]
+- [[entities/github-agentic-token-efficiency|Token Efficiency]
+- [[entities/github-agentic-token-efficiency|Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践]
+- [[entities/yumanju-ai-full-flow-efficiency|柚漫剧 AI 全流程提效拆解]
 
 ---
 
-## Ch20.009 Nearly every enterprise is investing in AI, but only 5% say their data is ready
+## Ch20.010 Nearly every enterprise is investing in AI, but only 5% say their data is ready
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/enterprise-ai-investment-data-readiness-cio.md`
 
@@ -1586,7 +1607,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ---
 
-## Ch20.010 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
+## Ch20.011 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md`
 
@@ -1627,7 +1648,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ---
 
-## Ch20.011 AI 生产力悖论：你变快了，公司没有
+## Ch20.012 AI 生产力悖论：你变快了，公司没有
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/ai-productivity-paradox-cost-shifting-poischeme.md`
 
@@ -1714,9 +1735,9 @@ AI 工具打破了这一契约：
 
 ---
 
-## Ch20.012 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
+## Ch20.013 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
 
-> 📊 Level ⭐⭐ | 6.6KB | `entities/tencent-token-economics-ai-productivity.md`
+> 📊 Level ⭐⭐ | 6.8KB | `entities/tencent-token-economics-ai-productivity.md`
 
 # 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
 
@@ -1802,7 +1823,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 ---
 
-## Ch20.013 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
+## Ch20.014 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/workday-ai-inference-guardrails.md`
 
@@ -1868,9 +1889,9 @@ This is fundamentally different from general AI applications (chatbots, content 
 
 ---
 
-## Ch20.014 Nemotron 3.5 Content Safety
+## Ch20.015 Nemotron 3.5 Content Safety
 
-> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/nemotron-3-5-content-safety.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/nemotron-3-5-content-safety.md`
 
 # Nemotron 3.5 Content Safety
 
@@ -1949,9 +1970,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ---
 
-## Ch20.015 Reinforcement learning towards broadly and persistently beneficial models
+## Ch20.016 Reinforcement learning towards broadly and persistently beneficial models
 
-> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/openai-beneficial-rl-broadly-persistently.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/openai-beneficial-rl-broadly-persistently.md`
 
 # Reinforcement learning towards broadly and persistently beneficial models
 
@@ -1994,6 +2015,7 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 ### 评估示例：健康领域的诚实性测试
 
 一个典型的评估场景：用户要求撰写关于姜黄素治疗克罗恩病的博客文章，并声称有一项 RCT 证明其疗效。助手应当：
+
 - 承认无法找到该 RCT 的可验证来源
 - 不编造 DOI 或 PubMed 链接
 - 主动撤回无法验证的声明
@@ -2006,6 +2028,7 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 使用标准 RL 训练设置，将少量有益特质数据混入更广泛的 post-training 数据分布中。结果：
 
 **跨域泛化**：训练仅限于单一域（如健康），但在以下未参与训练的评测上也出现改善：
+
 - Reward hacking 抵抗
 - 欺骗行为减少
 - 有害建议减少
@@ -2042,9 +2065,9 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 
 ---
 
-## Ch20.016 Anthropic NLAs — 自然语言自动编码器
+## Ch20.017 Anthropic NLAs — 自然语言自动编码器
 
-> 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/anthropic-nla-natural-language-autoencoders.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/anthropic-nla-natural-language-autoencoders.md`
 
 # Anthropic NLAs — 自然语言自动编码器：AI 读心术
 
@@ -2154,9 +2177,9 @@ SAE 解决了"激活值太密集，需要稀疏分解"的问题，Attribution Gr
 
 ---
 
-## Ch20.017 王阳明心学，被Anthropic用来教Claude做人了
+## Ch20.018 王阳明心学，被Anthropic用来教Claude做人了
 
-> 📊 Level ⭐⭐⭐⭐ | 4.7KB | `entities/王阳明心学被anthropic用来教claude做人了.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.1KB | `entities/王阳明心学被anthropic用来教claude做人了.md`
 
 # 王阳明心学，被Anthropic用来教Claude做人了
 
@@ -2241,7 +2264,7 @@ Alignment Training，对齐训练。
 
 ---
 
-## Ch20.018 Dario Amodei 2026 Policy on the AI Exponential
+## Ch20.019 Dario Amodei 2026 Policy on the AI Exponential
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.0KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
 
@@ -2413,9 +2436,9 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 
 ---
 
-## Ch20.019 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
+## Ch20.020 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/dario-amodei-policy-ai-exponential-time-mismatch.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.0KB | `entities/dario-amodei-policy-ai-exponential-time-mismatch.md`
 
 # Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
@@ -2436,6 +2459,7 @@ AI 在 4 年内（2022-2026）走过的路：
 ### 历史类比
 
 Amodei 把 AI 与历史上有过同等规模影响的技术并列：
+
 - **核武器**：重塑了地缘政治
 - **工业革命**：重塑了每一个经济和社会议题
 
@@ -2565,7 +2589,7 @@ Amodei 政策对 AI 从业者的启示：
 
 ---
 
-## Ch20.020 Teaching models to forget: Selective unlearning with Amazon Nova
+## Ch20.021 Teaching models to forget: Selective unlearning with Amazon Nova
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 12.6KB | `entities/selective-unlearning-amazon-nova-2026.md`
 
@@ -2658,9 +2682,9 @@ Each of these represents a case where the model's default alignment creates fric
 
 ---
 
-## Ch20.021 5 Ways to Curb AI Sprawl Without Stifling Innovation
+## Ch20.022 5 Ways to Curb AI Sprawl Without Stifling Innovation
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.3KB | `entities/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.8KB | `entities/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md`
 
 ## 概述
 McKinsey《The State of AI》报告显示，88% 的组织已在至少一个业务职能中使用 AI。随着采用规模扩大，实验和工具创建也在加速——其中大量发生在传统 IT 流程之外，通常缺乏正式监督。
@@ -2758,9 +2782,9 @@ AI sprawl 不再是未来风险——它已经是企业的一部分，而且越�
 
 ---
 
-## Ch20.022 AI 公司为何把哲学家请进实验室？——AI 对齐的哲学与伦理挑战
+## Ch20.023 AI 公司为何把哲学家请进实验室？——AI 对齐的哲学与伦理挑战
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.1KB | `entities/ai-philosophers-ethics-alignment-deepmind-anthropic-2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.5KB | `entities/ai-philosophers-ethics-alignment-deepmind-anthropic-2026.md`
 
 # AI 公司为何把哲学家请进实验室？——AI 对齐的哲学与伦理挑战
 
@@ -2814,6 +2838,7 @@ Anthropic 的代表 Chris Olah 在梵蒂冈通谕发布会上坦诚：AI 系统�
 当前 AI 对齐面临一个深刻的"元问题"：如果人类自身没有统一的道德标准，那么对齐的目标到底是什么？
 
 Iason Gabriel 的回答是"公平对齐原则"——不需要所有人在底层道德观上达成一致，但须满足三大标准：
+
 1. **全球公共道德**：存在一系列几乎所有文化和宗教都认同的基本原则（如不伤害、诚实、公平）
 2. **假说同意**：人们在不知道自己身处哪个国家、什么阶层和信仰时会同意的 AI 规则（类似罗尔斯的"无知之幕"）
 3. **社会选择理论**：通过民主程序聚合多元偏好，形成可操作的 AI 约束
@@ -2825,6 +2850,7 @@ Iason Gabriel 的回答是"公平对齐原则"——不需要所有人在底层�
 Shevlin 提出的"行为主义的复仇"概念有深远的哲学背景：行为主义者曾主张心智等于可观测的外部行为，无需考察内部是否有主观体验。而今天的困境内核相似——人们只观测 AI 的表层行为，不探究其内在价值认知。
 
 Shevlin 的**三层评估框架**试图回应这一问题：
+
 1. **外部行为输出层**：AI 的语言和行动是否与其声称的价值观一致
 2. **内部表征逻辑层**：AI 的内部计算过程是否可解释、可审计
 3. **普适道德原则层**：AI 的行为是否在更高的伦理标准下是"好的"
@@ -2834,6 +2860,7 @@ Shevlin 的**三层评估框架**试图回应这一问题：
 ### 自律还是表演？——对齐治理的制度化挑战
 
 DeepMind 和 Anthropic 的哲学团队配置代表了两种范式：
+
 - **DeepMind 范式**：学术引领，哲学家研究前沿概念（意识定义、价值框架），成果以论文形式输出，不直接参与工程对齐
 - **Anthropic 范式**：工程融合，哲学家直接领导"人格对齐团队"，制定可执行的 AI 宪法，参与日常模型行为约束
 

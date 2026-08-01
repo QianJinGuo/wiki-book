@@ -6,6 +6,7 @@ source_account: 字节跳动技术团队
 created: 2026-07-02
 fetched: 2026-07-02
 sha256: 10bef96dbf7e213b8c999653d3901ebfa492579243f11dbcbd29f59c28825b08
+source_url: "unavailable"
 ---
 
 随着 AI Agent 技能（Skills）生态的迅速发展，社区开发者贡献的技能数量与日俱增。然而，这些技能来源多样、质量参差不齐，其安全性缺乏有效保障。攻击者可能借机发布恶意技能，对用户设备进行攻击或窃取数据。

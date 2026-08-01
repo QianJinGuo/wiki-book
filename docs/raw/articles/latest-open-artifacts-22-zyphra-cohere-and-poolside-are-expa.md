@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: bcfb4b0ed9a7d5cd1b88549fc71c04cb43e6060c36fda40d2621dae3abb4463d
+source_url: "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside"
 ---
 
 sha256: d62d10bbf5b779a4867712e3eb2c1c961703902e62104c582ea4d4a8cf5de177

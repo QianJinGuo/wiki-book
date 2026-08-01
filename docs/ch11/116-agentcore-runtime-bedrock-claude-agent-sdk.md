@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/easy-deployment-of-claude-agent-sdk-in-production.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("快时尚电商行业智能体设计思路与应用实践（五）借助 Age…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+      1. AgentCore Runtime 的 …
+      2. Claude Agent SDK 的生产…
+      3. Bedrock 跨区域推理的全球化部署策略
+      4. 从本地到生产的无缝迁移路径与最小改造成本
+    实践启示
+      1. 优先采用 Global CRIS 进行全…
+      2. 利用 8 小时执行窗口设计长时任务架构
+      3. 利用框架无关性进行渐进式技术选型
+      4. 使用 AgentCore Starter…
+```
+
 ## 概述
 快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 by awschina on 10 12月 2025 in Artificial Intelligence Permalink Share 序言 在智能体的开发实践中，一个常见现象是，在本地运行流畅的智能体，部署到生产环境后却频繁暴露出工程层面的不确定性问题，如执行时长不足、会话状态不稳定、算力资源分配困难、模型访问方式不统一，以及可观测性体系欠缺等。这类问题往往并非源于智能体自身的逻辑缺陷，而是由运行环境与模型平台之间的差异所引发。 随着快时尚电商企业对于自主式智能体的研发需求与日俱增，Claude Agent SDK 逐渐成为了智能体工具箱的重要组成部分，为构建具备多步推理与工具调用能力的自主式智能体提供了良好的开
 

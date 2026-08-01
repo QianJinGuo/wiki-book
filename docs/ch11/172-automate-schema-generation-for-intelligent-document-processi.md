@@ -6,6 +6,26 @@
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-schema-generation-for-intelligent-document-processing.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Automate Schema Generation f…"))
+    关键要点
+    相关实体
+    深度分析
+      技术架构的核心创新
+      关键技术决策背后的权衡
+      Schema生成的评价机制
+      与IDP Accelerator的深度集成
+    实践启示
+      适用场景判断
+      部署与配置要点
+      质量优化策略
+      技术选型参考
+```
+
 ## 摘要
 Title: Automate schema generation for intelligent document processing | Amazon Web Services
 URL Source: https://aws.amazon.com/blogs/machine-learning/automate-schema-generation-for-intelligent-document-processing/

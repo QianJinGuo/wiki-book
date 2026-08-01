@@ -9,6 +9,24 @@
 > Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS Bedrock AgentCore Equipm…"))
+    概念导图
+    背景
+    技术架构
+      核心组件
+      架构分段（Section A/B/C/D）
+    实践要点
+    上线状态
+    实践启示
+    原文链接
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

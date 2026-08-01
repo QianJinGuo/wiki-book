@@ -6,6 +6,7 @@ source_account: DataFunTalk
 created: 2026-07-02
 fetched: 2026-07-02
 sha256: c1f0bce3540b5159f08874bd0c143c233cfc0739954ef5017e016e18806b5c11
+source_url: "unavailable"
 ---
 
 导读：企业数字化投入巨大，却在决策环节卡壳。一个拥有四百多张仪表板的团队，开会时仍只知指标下跌，不知根因与对策。本文拆解从"看数"到"决策行动"的完整闭环，梳理洞察 Agent 的可信推理链路与落地卡点。

@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 2ce4c47065b9eb18e636549ec5f9bad1240cf8b814673d33ff2070f513e912e3
+source_url: "https://deploymentsafety.openai.com/gpt-5-6-preview"
 ---
 
 sha256: 936bb23e8dcd282de9831169456eda51d24ed690fd452f2d26d72c00cf40a8ad

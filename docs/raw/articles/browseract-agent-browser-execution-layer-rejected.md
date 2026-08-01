@@ -14,6 +14,7 @@ review_stars: 2
 review_reason: "v×c≈37 < 49 临界线；软文特征明显（'神级开源项目'标题+'完美！'+ 邮箱残留）；与 wiki 既有 4 款浏览器工具表（chrome-devtools-mcp/Playwright/agent-browser/browser-use）高度重叠；反检测 + remote-assist + 多 Session 三个新视角可批判性吸收到既有对比表；作者无 wiki 历史。"
 raw_status: "rejected-but-archived-for-supplementary-update"
 supplementary_target: "entities/four-browser-automation-tools-comparison.md (append fifth-row note + add 反检测/remote-assist/multi-session dimensions)"
+source_url: "https://www.browseract.ai/Java`）"
 ---
 
 # BrowserAct（Agent 真实浏览器执行层）—— 待第三方验证

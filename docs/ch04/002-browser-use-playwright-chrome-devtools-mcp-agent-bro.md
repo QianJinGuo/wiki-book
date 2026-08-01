@@ -2,10 +2,10 @@
 
 ## Ch04.002 五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct
 
-> 📊 Level ⭐ | 11.3KB | `entities/four-browser-automation-tools-comparison.md`
+> 📊 Level ⭐ | 11.7KB | `entities/four-browser-automation-tools-comparison.md`
 
 > 来源：[行小招 - 科技充电站](https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ)，2026-05-19
-> 评分：v=6, c=7, v×c=42 → 作为 [OpenCLI](../ch03/088-opencli.html) entity 的补充
+> 评分：v=6, c=7, v×c=42 → 作为 [OpenCLI](../ch03/094-opencli.html) entity 的补充
 | 维度 | chrome-devtools-mcp | Playwright | agent-browser | browser-use | BrowserAct | [raw/articles/browseract-agent-browser-execution-layer-rejected.md]
 |------|--------------------|-----------|---------------|-------------|------------|
 | 语言/运行时 | Node.js | Node.js，多语言绑定 | Rust，原生二进制 | Python | Node.js + Rust 内核 |
@@ -18,7 +18,7 @@
 | **反检测** | ❌ | ❌ | ❌ | ❌ | **✅ 18 项反检测全绿**（产品方自报，bot.sannysoft） |
 | **人机接力（验证码/2FA）** | ❌ | ❌ | ❌ | ❌ | **✅ Remote-assist 跨设备链接** |
 | **多身份隔离（多账号）** | ❌ | ❌ | ❌ | ❌ | **✅ 浏览器身份 × 静态代理绑定** |
-| **Skill Forge 流程打包** | ❌ | ❌ | ❌ | ❌ | ✅（注：与 [古法程序员 spec-as-code](../ch01/520-codex.html) 的 SKILL.md 模式重叠） |
+| **Skill Forge 流程打包** | ❌ | ❌ | ❌ | ❌ | ✅（注：与 [古法程序员 spec-as-code](../ch01/737-codex.html) 的 SKILL.md 模式重叠） |
 
 ## 四层抽象
 
@@ -87,7 +87,9 @@ CDP 级别控制适合网络抓包、性能分析、JS 调试等专项任务，�
 
 **来源**：[原文存档（reject-as-supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/browseract-agent-browser-execution-layer-rejected.md)
 **评分**：v=5, c=5, v×c=25（reject-as-supplementary，不创建独立 entity）
+
 **作者**：丛林（极客之家），2026-06-18，**wiki 无历史**
+
 **GitHub**：https://github.com/browser-act/skills · **官网**：https://www.browseract.ai/
 
 ### ⚠️ 验证状态声明

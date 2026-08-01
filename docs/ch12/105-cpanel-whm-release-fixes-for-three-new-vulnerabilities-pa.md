@@ -10,6 +10,17 @@ Followed by 5.70+ million[__](https://twitter.com/thehackersnews)[__](http
 [![Image 1: The Hacker News Logo](blob:http://localhost/5c34172ae87fab3ecb77bf8cfaf83e48)](http://thehackernews.com/)
 [__](javascript:void(0))
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("cPanel, WHM Release Fixes fo…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/652-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)

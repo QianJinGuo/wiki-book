@@ -2,7 +2,7 @@
 
 ## Ch07.028 SkillOpt — 微软训练 Skill 文档的方法论
 
-> 📊 Level ⭐⭐ | 10.4KB | `entities/skillopt-microsoft-research-skill-training.md`
+> 📊 Level ⭐⭐ | 10.7KB | `entities/skillopt-microsoft-research-skill-training.md`
 
 # SkillOpt — 微软训练 Skill 文档的方法论
 
@@ -134,11 +134,11 @@ SpreadsheetBench 从 77.5 暴跌到 55.0（-22.5 分）的实验揭示：跨 epo
 - 项目主页：https://microsoft.github.io/SkillOpt/
 
 ## 相关实体
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/273-skill.html)
-- [Claude Design Skill](../ch01/1143-claude-design-skill.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/338-skill.html)
+- [Claude Design Skill](../ch01/1347-claude-design-skill.html)
 - [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
-- [Ai Skill Skill Creator 源码拆解](../ch04/321-skill-skill.html)
-- [Qoder Skill Ui Agent Human Collaboration](../ch03/066-qoder-skill-ui-agent.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/364-skill-skill.html)
+- [Qoder Skill Ui Agent Human Collaboration](../ch03/071-qoder-skill-ui-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-microsoft-train-skill-like-neural-network.md)
 

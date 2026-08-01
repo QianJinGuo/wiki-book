@@ -6,6 +6,28 @@
 
 # 使用 Amazon CloudFront 和 AWS WAF 大规模交付 WordPress
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("使用 Amazon CloudFront 和 AWS W…"))
+    概览
+    三个核心工程问题
+      1. 缓存策略分层（公开/登录/Cookie）
+      2. xmlrpc.php 攻击面防御
+      3. 基于 Cookie 的缓存键问题
+    WAF 路径规则与速率限制
+    与其他 CloudFront 文档的差异化
+    实践启示
+    深度分析
+      1. Cookie 缓存键碎片化是 WordP…
+      2. 三层缓存策略是可复用的会话型 CMS 模式
+      3. Count + Label + Cust…
+      4. Cache Tag 语义化失效将 CDN…
+    相关实体
+```
+
 ## 概览
 
 AWS 官方博客发布的 WordPress 大规模交付工程实战文档，针对**高流量 + 强攻击面**场景，系统拆解 CloudFront 缓存分层、WAF 路径规则、Cookie 处理三个最棘手的工程问题。每个配置项都给出具体缓存键策略 + TTL 推荐 + WAF 规则模板。

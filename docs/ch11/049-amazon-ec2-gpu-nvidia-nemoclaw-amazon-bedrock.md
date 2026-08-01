@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("在 Amazon EC2 GPU 实例上部署 NVIDI…"))
+    相关实体
+    深度分析
+      1. 架构设计的本质：决策与代理的分离
+      2. NemoClaw 的安全模型：纵深防御而…
+      3. GPU 选型的工程权衡
+      4. 成本模型的关键变量
+    实践启示
+      1. 评估混合架构是否适合你的场景
+      2. 上生产的四项必做清单
+      3. 从意图分类到神经网络路由的升级路径
+      4. dispatch 层规则覆盖的战术价值
+```
+
 ## 核心要点
 
 - NVIDIA NemoClaw 安全沙箱架构（Landlock/seccomp/网络命名空间三层隔离）

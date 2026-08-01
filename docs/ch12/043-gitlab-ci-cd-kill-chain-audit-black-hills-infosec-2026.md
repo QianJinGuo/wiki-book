@@ -8,6 +8,26 @@
 
 > **背景**：本文基于 Black Hills Info Security 在 2026-06-03 发布的大规模 GitLab CI/CD 审计研究整理。3,757 个开源项目、1,580 个 HIGH 级别漏洞、kill chain 框架系统化分类。补充现有 [Jenkins 供应链攻击](../ch01/349-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) 等的 CI/CD 攻击面覆盖。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitLab CI/CD Kill Chain Audi…"))
+    研究规模与方法
+    Kill Chain 4 阶段
+      Stage 1 — Reconnaissanc…
+      Stage 2 — Initial Acces…
+      Stage 3 — Privilege Esc…
+      Stage 4 — Exfiltration（…
+    与现有 wiki 实体的差异化
+    实践启示（Actionable）
+    三个独有贡献（不应合并到现有 entity）
+    上线状态 / 链接
+    深度分析
+    实践启示
+```
+
 ## 研究规模与方法
 
 Black Hills Info Security 在 2026-06-03 发布的审计研究是 GitLab 生态**最大规模的第三方安全审计**之一：

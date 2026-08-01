@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **34 篇**实体，按深度递增排列。
+> 本章收录 **38 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
+| ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 14 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 18 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 19 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -108,9 +108,52 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ---
 
-## Ch16.002 Build real-time voice applications with Amazon SageMaker AI and vLLM
+## Ch16.002 enhancing-enterprise-inference-on-amazon-sagemaker-hyperpod-
 
-> 📊 Level ⭐⭐ | 21.2KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
+> 📊 Level ⭐ | 1.1KB | `entities/enhancing-enterprise-inference-on-amazon-sagemaker-hyperpod-.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enhancing-enterprise-inference-on-amazon-sagemaker-hyperpod-.md)
+
+As enterprises scale their generative AI workloads, the demand for faster, more observable, and more flexible inference infrastructure continues to grow. Amazon SageMaker HyperPod is rising to meet that challenge with a set of new capabilities designed to streamline how organizations deploy and oper
+
+## 来源
+
+- 原文: [enhancing-enterprise-inference-on-amazon-sagemaker-hyperpod-](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enhancing-enterprise-inference-on-amazon-sagemaker-hyperpod-.md)
+- 原始链接: : https://aws.amazon.com/blogs/machine-learning/enhancing-enterprise-inference-on-amazon-sagemaker-hyperpod-with-data-capture-hugging-face-nvme-and-route-53-integration
+
+---
+
+## Ch16.003 强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升
+
+> 📊 Level ⭐ | 0.8KB | `entities/强化学习没作用人大delta精准识别关键token推理正确率大幅上升-1.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/强化学习没作用人大delta精准识别关键token推理正确率大幅上升-1.md)
+
+关注前沿科技  关注前沿科技  [ 量子位 ](<javascript:void\(0\);>)
+
+## 来源
+
+- 原文: [强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/强化学习没作用人大delta精准识别关键token推理正确率大幅上升-1.md)
+
+---
+
+## Ch16.004 强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升
+
+> 📊 Level ⭐ | 0.8KB | `entities/强化学习没作用人大delta精准识别关键token推理正确率大幅上升-2.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/强化学习没作用人大delta精准识别关键token推理正确率大幅上升-2.md)
+
+关注前沿科技  关注前沿科技  [ 量子位 ](<javascript:void\(0\);>)
+
+## 来源
+
+- 原文: [强化学习没作用？人大DelTA精准识别关键token，推理正确率大幅上升](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/强化学习没作用人大delta精准识别关键token推理正确率大幅上升-2.md)
+
+---
+
+## Ch16.005 Build real-time voice applications with Amazon SageMaker AI and vLLM
+
+> 📊 Level ⭐⭐ | 21.1KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
 
 ## 核心要点
 
@@ -401,9 +444,9 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 ---
 
-## Ch16.003 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
+## Ch16.006 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
-> 📊 Level ⭐⭐ | 16.6KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
+> 📊 Level ⭐⭐ | 16.5KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
 
 # Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
@@ -561,7 +604,7 @@ Green 的结论是：隐私保护（如果存在）活在法律、政策和商�
 
 ---
 
-## Ch16.004 GLM-5 Scaling 痛点与推理优化
+## Ch16.007 GLM-5 Scaling 痛点与推理优化
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/glm5-scaling-pain-inference.md`
 
@@ -659,9 +702,9 @@ GLM-5的Scaling Pain案例揭示了高并发Coding Agent场景下推理系统面
 
 ---
 
-## Ch16.005 EAGLE-3 投机解码与 USP 长序列训练优化
+## Ch16.008 EAGLE-3 投机解码与 USP 长序列训练优化
 
-> 📊 Level ⭐⭐ | 14.2KB | `entities/eagle-3-speculative-decoding-optimization.md`
+> 📊 Level ⭐⭐ | 14.1KB | `entities/eagle-3-speculative-decoding-optimization.md`
 
 ## 核心问题：为什么 Agent 场景需要 EAGLE-3
 Agent 场景（自动化代码工程、长文档分析、多轮工具调用）带来了与大模型传统推理场景截然不同的挑战：
@@ -835,7 +878,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 
 ---
 
-## Ch16.006 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
+## Ch16.009 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
 
 > 📊 Level ⭐⭐ | 12.1KB | `entities/pith-train-agent-native-moe-training-framework.md`
 
@@ -976,9 +1019,9 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ---
 
-## Ch16.007 刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了
+## Ch16.010 刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了
 
-> 📊 Level ⭐⭐ | 9.5KB | `entities/deepseek-dspark-v4-speculative-decoding-deepspec.md`
+> 📊 Level ⭐⭐ | 10.1KB | `entities/deepseek-dspark-v4-speculative-decoding-deepspec.md`
 
 # 刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了
 
@@ -1083,7 +1126,7 @@ DeepSpec 的开源不仅仅是技术共享——它同时具有战略层面的�
 
 ---
 
-## Ch16.008 全球首个小时级世界模型来了！中国造，已开源
+## Ch16.011 全球首个小时级世界模型来了！中国造，已开源
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/全球首个小时级世界模型来了中国造已开源.md`
 
@@ -1149,7 +1192,7 @@ LingBot-World 2.0 同时开源 14B 主模型和 1.3B 轻量模型，这一双模
 
 ---
 
-## Ch16.009 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
+## Ch16.012 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
 
@@ -1245,9 +1288,9 @@ LingBot-World 2.0 同时开源 14B 主模型和 1.3B 轻量模型，这一双模
 
 ---
 
-## Ch16.010 How to Calculate the Inference Efficiency Ratio
+## Ch16.013 How to Calculate the Inference Efficiency Ratio
 
-> 📊 Level ⭐⭐ | 8.1KB | `entities/how-to-calculate-the-inference-efficiency-ratio.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/how-to-calculate-the-inference-efficiency-ratio.md`
 
 ## 深度分析
 **IER 的本质是将 AI 推理成本从"基础设施黑箱"中剥离出来，成为独立可追踪的 COGS 维度。** 文章的核心贡献是提出了 Inference Efficiency Ratio（IER = AI 产品收入 ÷ 推理成本）这一指标，并将其定位为 SaaS 财务框架第六支柱（AI Economics）的锚点指标。 传统 SaaS COGS 主要由固定成本构成（服务器、带宽、人力），而 AI inference cost 是纯usage-driven 的变量成本，其规模随产品功能扩展而非线性增长——这个本质差异是现有 gross margin 分析框架失效的根源。
@@ -1277,7 +1320,7 @@ LingBot-World 2.0 同时开源 14B 主模型和 1.3B 轻量模型，这一双模
 
 ---
 
-## Ch16.011 Disaggregated Prefill and Decode for LLM Inference on SageMaker HyperPod
+## Ch16.014 Disaggregated Prefill and Decode for LLM Inference on SageMaker HyperPod
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/disaggregated-prefill-decode-llm-inference-sagemaker.md`
 
@@ -1340,11 +1383,11 @@ DPD 架构正在改变推理基础设施的设计范式。传统"单节点尽可
 
 ---
 
-## Ch16.012 Unlocking asynchronicity in continuous batching
+## Ch16.015 Unlocking asynchronicity in continuous batching
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/continuous-async.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuous-async.md)
+> 来源：[[raw/articles/continuous-async.md|原文存档]
 
 ## 核心要点
 - HuggingFace 深度技术文章，解析连续批处理的异步优化
@@ -1355,22 +1398,24 @@ DPD 架构正在改变推理基础设施的设计范式。传统"单节点尽可
 ## 深度分析
 ### 同步批处理的本质缺陷
 连续批处理（Continuous Batching）通过动态打包请求显著提升了 GPU 利用率，但它默认是同步的——CPU 准备新批次时 GPU 空闲，GPU 计算时 CPU 等待。在高频推理场景下（每秒数百步），这些空闲间隙累积成显著的效率损失。
-HuggingFace 的实验数据揭示了这一问题的严重性：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，其中 24% 时间为空闲 GPU。这意味着如果能消除 CPU 开销，理论上可获得 24% 的免费加速——无需任何新 kernel 或模型修改。
+HuggingFace 的实验数据揭示了这一问题的严重性：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，其中 24% 时间为空闲 GPU。这意味着如果能消除 CPU 开销，理论上可获得 24% 的免费加速——无需任何新 kernel 或模型修改。^[].md]
 
 ### CUDA Streams 的并发机制
-CUDA streams 是理解异步批处理的关键。每个 stream 是 GPU 操作的顺序队列，同一 stream 内操作串行，不同 stream 可并发。通过将 H2D 传输（Host-to-Device）、计算、D2H 传输（Device-to-Host）分配到独立 stream，可实现数据传输与计算的重叠。
-但这里存在一个问题：非默认 stream 不会自动等待其他 stream 的操作完成——需要显式同步。
+CUDA streams 是理解异步批处理的关键。每个 stream 是 GPU 操作的顺序队列，同一 stream 内操作串行，不同 stream 可并发。通过将 H2D 传输（Host-to-Device）、计算、D2H 传输（Device-to-Host）分配到独立 stream，可实现数据传输与计算的重叠。^[].md]
+
+但这里存在一个问题：非默认 stream 不会自动等待其他 stream 的操作完成——需要显式同步。^[].md]
 
 ### CUDA Events 的同步语义
-CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点时标记为完成。通过 `stream.wait(event)` 可让一个 stream 阻塞直到某个 event 被设置，而 CPU 端调用立即返回。这种纯 GPU 侧的同步机制，使得 CPU 可以真正"放手"，让硬件自行管理依赖关系。
+CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点时标记为完成。通过 `stream.wait(event)` 可让一个 stream 阻塞直到某个 event 被设置，而 CPU 端调用立即返回。这种纯 GPU 侧的同步机制，使得 CPU 可以真正"放手"，让硬件自行管理依赖关系。^[].md]
 
 ### 双 buffer 槽位设计
-异步批处理需要在 GPU 处理 batch N 时准备 batch N+1 的输入。这引发两个技术挑战：
+异步批处理需要在 GPU 处理 batch N 时准备 batch N+1 的输入。这引发两个技术挑战：^[].md]
+
 1. **数据竞争**：batch N 和 batch N+1 不能共享同一内存区域，否则 GPU 可能读到部分覆写的数据。解决方案是使用两个独立的内存槽位（slot A 和 slot B），交替使用。
 2. **CUDA Graphs 兼容性**：生产环境常使用 CUDA Graphs 加速，但每个 graph 绑定特定内存地址。双 memory pool 方案允许多个 graph 共享池化内存，总 VRAM 接近单个 graph 的使用量。
 
 ### Carry-over 机制
-请求通常跨越多个 batch。当 batch N 产生新 token 时，该 token 需要作为 batch N+1 的输入。但由于 batch N 仍在计算，这个 token 还不存在。解决方案是使用占位符（placeholder）构建 batch N+1 输入，在 batch N 完成后通过 "carry-over" 将实际 token 填充进去。这四个操作（选择、置零、截断、相加）足够轻量，可被 CUDA Graph 捕获。
+请求通常跨越多个 batch。当 batch N 产生新 token 时，该 token 需要作为 batch N+1 的输入。但由于 batch N 仍在计算，这个 token 还不存在。解决方案是使用占位符（placeholder）构建 batch N+1 输入，在 batch N 完成后通过 "carry-over" 将实际 token 填充进去。这四个操作（选择、置零、截断、相加）足够轻量，可被 CUDA Graph 捕获。^[].md]
 
 ## 实践启示
 1. **推理优化应关注 CPU/GPU 协同**：对于 LLM 推理工作负载，CPU 端调度开销常被忽视。即使 GPU 计算能力充足，CPU 侧的批次准备可能成为瓶颈。HuggingFace 的方法展示了如何通过异步化将 CPU 和 GPU 利用率同时最大化。
@@ -1379,18 +1424,18 @@ CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点�
 4. **CUDA Graphs 仍是延迟优化的关键**：异步批处理提升了吞吐量，但 CUDA Graphs 对单批次延迟的优化不应被放弃。通过 memory pool 可在保持 Graphs 优化效果的同时支持多 batch 并行。
 5. **实践建议**：如果你的 LLM 推理服务吞吐量不达预期，在优化模型或硬件之前，先用 profiling 工具（如 HuggingFace 提供的脚本）确认是否存在 CPU-GPU 交替空闲问题。22% 的加速可能是免费午餐。
 ## 相关实体
-- [Continuousasync](https://github.com/QianJinGuo/wiki/blob/main/entities/continuousasync.md)
-- [Gemma 4 Multi Token Prediction Drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
-- [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-the-ettin-reranker-family.md)
-- [Lightseek Tokenspeed](https://github.com/QianJinGuo/wiki/blob/main/entities/lightseek-tokenspeed.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [[entities/continuousasync]
+- [[entities/gemma-4-multi-token-prediction-drafters]
+- [[entities/how-to-calculate-the-inference-efficiency-ratio]
+- [[entities/introducing-the-ettin-reranker-family]
+- [[entities/lightseek-tokenspeed]
+- [[moc/nvidia-gpu-acceleration|MOC]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuous-async.md)
+→ [[raw/articles/continuous-async.md|原文存档]
 
 ---
 
-## Ch16.013 SGLang
+## Ch16.016 SGLang
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/sglang.md`
 
@@ -1418,7 +1463,7 @@ SGLang作为UC Berkeley/CMU/Stability AI联合开发的LLM推理框架，其核�
 
 ---
 
-## Ch16.014 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
+## Ch16.017 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md`
 
@@ -1475,25 +1520,34 @@ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple�
 
 ---
 
-## Ch16.015 Graviton Inference
+## Ch16.018 Graviton Inference
 
-> 📊 Level ⭐⭐ | 0.4KB | `entities/graviton-inference.md`
+> 📊 Level ⭐⭐ | 1.1KB | `entities/graviton-inference.md`
 
 # Graviton Inference
 
-> 🚧 占位页面 — 内容待补充
+## 概述
 
-工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+AWS Graviton 处理器（Graviton2/Graviton3/Graviton4）是基于 ARM 架构的自研芯片，在 AI 推理场景中提供显著的性价比优势。相比 x86 实例，Graviton 实例在推理工作负载下可降低约 20-40% 的成本，同时保持 comparable 延迟性能。关键应用场景包括：使用 ONNX Runtime 或 PyTorch 在 ARM 上运行量化模型、通过 AWS Neuron SDK 在 Graviton 上加速 Transformer 推理、以及在 EKS/ECS 上部署 Graviton 节点组的 Agent 推理集群。
+
+## 主要内容
+
+- Graviton 处理器架构
+- ARM 上的推理优化
+- ONNX Runtime on Graviton
+- 成本对比分析
+- EKS Graviton 节点部署
+
+## 相关概念
+
+- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
+- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
----
+## Ch16.019 小米多篇论文入选 ECCV 2026 — 人脸修复、视频大模型推理加速
 
-## Ch16.016 小米多篇论文入选 ECCV 2026 — 人脸修复、视频大模型推理加速
-
-> 📊 Level ⭐⭐⭐ | 12.5KB | `entities/xiaomi-eccv-2026-face-restoration-video-llm-inference.md`
+> 📊 Level ⭐⭐⭐ | 13.3KB | `entities/xiaomi-eccv-2026-face-restoration-video-llm-inference.md`
 
 # 小米多篇论文入选 ECCV 2026 — 人脸修复、视频大模型推理加速
 
@@ -1622,7 +1676,7 @@ MindDrive 在离散语言空间中完成试错优化的设计巧妙地绕过了�
 
 ---
 
-## Ch16.017 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
+## Ch16.020 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 
@@ -1788,15 +1842,16 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ---
 
-## Ch16.018 TLiveOmni vLLM 适配与量化方案
+## Ch16.021 TLiveOmni vLLM 适配与量化方案
 
-> 📊 Level ⭐⭐⭐ | 10.1KB | `entities/tliveomni-vllm-quantization.md`
+> 📊 Level ⭐⭐⭐ | 10.2KB | `entities/tliveomni-vllm-quantization.md`
 
-→ [返回总览](https://github.com/QianJinGuo/wiki/blob/main/entities/面向电商直播场景的全模态大模型推理加速方案.md)
+→ [[entities/面向电商直播场景的全模态大模型推理加速方案.md|返回总览]
 
 ## vLLM 架构适配
 ### 模型注册
-自定义模型不在 vLLM 官方支持列表，采用 Out-of-tree models 方式通过 Plugin 注册，无需修改 vLLM 源码。
+自定义模型不在 vLLM 官方支持列表，采用 Out-of-tree models 方式通过 Plugin 注册，无需修改 vLLM 源码。^[].md]
+
 ```python
 def register():
     from vllm import ModelRegistry
@@ -1805,7 +1860,8 @@ def register():
 ```
 
 ### 多模态数据处理
-vLLM 数据前处理三阶段（"占位符 → Token 序列 → Embedding 向量"三级映射）：
+vLLM 数据前处理三阶段（"占位符 → Token 序列 → Embedding 向量"三级映射）：^[].md]
+
 1. **数据预处理**（`tlive_process`）：多模态数据读取与向量化
 2. **标识与排布**：
 
@@ -1817,34 +1873,35 @@ vLLM 数据前处理三阶段（"占位符 → Token 序列 → Embedding 向量
 ## 框架适配与精度对齐
 ### 多模态对齐问题
 #### Interleave 排布修复
-vLLM 默认将多模态特征 Embedding 拼接成连续序列，但 **TLiveOmni 采用 V/A 交替排布**（Vision Token 和 Audio Token 交替）。vLLM 默认连续拼接逻辑会导致：
+vLLM 默认将多模态特征 Embedding 拼接成连续序列，但 **TLiveOmni 采用 V/A 交替排布**（Vision Token 和 Audio Token 交替）。vLLM 默认连续拼接逻辑会导致：^[].md]
 
 - 连续视觉 Embedding 覆盖 Audio Token 位置
 - 映射错位，模型输出与训练产生误差
-修复方案：修改代码确保 Token 和 Embedding 排布方式与训练时一致。
+修复方案：修改代码确保 Token 和 Embedding 排布方式与训练时一致。^[].md]
 
 #### Audio Token 自动 Padding 修复
-vLLM 为优化 Cache 效率（保证特征维度是 8 的倍数）会在音频特征提取前 padding，导致 Token 长度不一致。解决方案：去除 vLLM 中 Audio 特征自动补全部分，严格按原始长度处理。
+vLLM 为优化 Cache 效率（保证特征维度是 8 的倍数）会在音频特征提取前 padding，导致 Token 长度不一致。解决方案：去除 vLLM 中 Audio 特征自动补全部分，严格按原始长度处理。^[].md]
 
 #### 浮点运算差异
-vLLM 和 Transformers 对 DeepStack 和 Residual 部分**相加顺序不同**：
+vLLM 和 Transformers 对 DeepStack 和 Residual 部分**相加顺序不同**：^[].md]
 
 - 数学上 A+B+C = (A+C)+B
 - 但 GPU 浮点运算不满足加法结合律
 - `residual` 输出大，先加大数还是先加小数会导致不同精度
 - 误差随模型层数逐层放大
-修复方案：修改 vLLM 计算逻辑，确保 DeepStack 和 Residual 计算顺序与 Transformers 一致。
+修复方案：修改 vLLM 计算逻辑，确保 DeepStack 和 Residual 计算顺序与 Transformers 一致。^[].md]
 
 ### 通用对齐问题
 #### Flash-Attention 差异
-vLLM 对 Vision 和 Language 模块采用不同 Attention 后端：
+vLLM 对 Vision 和 Language 模块采用不同 Attention 后端：^[].md]
 
 - Vision 模块（Qwen3-VL 等）：直接调用 `flash_attn_varlen_func`，结果与训练一致
 - Language 模块（vLLM）：调用 `torch.ops.vllm.unified_attention_with_output`，这是 vLLM 为 PagedAttention 专门重写的算子
-差异来源：CUDA 实现层面与原版 Flash-Attention 在累加精度、Scaling 处理或算子融合上存在微小差异。当前版本无法完全解决，但误差在可接受范围内。
+差异来源：CUDA 实现层面与原版 Flash-Attention 在累加精度、Scaling 处理或算子融合上存在微小差异。当前版本无法完全解决，但误差在可接受范围内。^[].md]
 
 #### RSNorm 对齐
-vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但在 `residual` 加法和数据类型转换顺序上与 Transformers 存在偏差。Q、K 的 Norm 结果有 1e-4 级误差会经 Attention 矩阵乘法放大累积，因此对 vLLM 的 Norm 进行了替换。
+vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但在 `residual` 加法和数据类型转换顺序上与 Transformers 存在偏差。Q、K 的 Norm 结果有 1e-4 级误差会经 Attention 矩阵乘法放大累积，因此对 vLLM 的 Norm 进行了替换。^[].md]
+
 ---
 
 ## 模型量化方案
@@ -1878,12 +1935,12 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 - **基于旋转矩阵**：QuaRot、SpinQuant — 旋转变换消除离群点
 
 ### 复合量化方案：SmoothQuant + GPTQ
-**SmoothQuant**：解决离群点问题
+**SmoothQuant**：解决离群点问题^[].md]
 
 - 当 LLM 参数量超过 7B 后，激活值中出现远超均值的离群点（通常比正常值大 100 倍以上）
 - INT8 量化会使大多数激活值被清零
 - SmoothQuant 引入平滑因子 s，将激活值离群点转移到权重上（权重分布更平滑、更易量化）
-**GPTQ**：最小化量化前后权重差异
+**GPTQ**：最小化量化前后权重差异^[].md]
 
 - 起源于 Yann LeCun 1990 年提出的 OBD 算法（剪枝方法）
 - 核心思路：找到量化权重使新权重和原权重输出结果差别最小
@@ -1898,16 +1955,18 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 - OCR/Markdown：一个像素偏差可能导致"8"量化成"0"
 - Visual Grounding：权重微小扰动使边界框漂移几十像素
 - Temporal Grounding：微小扰动导致时间轴偏移
-最终形成 **5000 条高质量数据**的校准池。
+最终形成 **5000 条高质量数据**的校准池。^[].md]
+
 ---
 
 ## 性能评测
 ### 精度评估（H20 单卡）
-量化方案：SmoothQuant + GPTQ 复合量化，主要针对 Language Model 部分量化。
-各量化方案精度损失均 **<1.5%**，其中 FP8 量化精度损失最小，图像与视频任务甚至有微弱性能提升。
+量化方案：SmoothQuant + GPTQ 复合量化，主要针对 Language Model 部分量化。^[].md]
+
+各量化方案精度损失均 **<1.5%**，其中 FP8 量化精度损失最小，图像与视频任务甚至有微弱性能提升。^[].md]
 
 ### 推理速度测试（H20 单卡）
-量化后综合加速比 **2.5x~3.5x**：
+量化后综合加速比 **2.5x~3.5x**：^[].md]
 
 - Video（Short）加速收益不明显：vLLM 多模态预处理效率低于 Torch，时延占比重
 - Video（Long）预处理占比相对较低，推理加速优势更充分体现
@@ -1955,7 +2014,7 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 4. **校准数据**：高敏感任务（OCR/VG/TG）→ 高权重覆盖；一般任务 → 均匀采样，确保 5000 条高质量数据池
 
 ### vLLM 多模态适配检查清单
-当需要将自定义多模态模型适配到 vLLM 时，以下检查点按优先级排序：
+当需要将自定义多模态模型适配到 vLLM 时，以下检查点按优先级排序：^[].md]
 
 - [ ] **多模态 Token 排布**：确认训练时 V/A 是连续还是交替排布，vLLM 默认连续拼接需要修改
 - [ ] **Audio Padding**：检查 vLLM 是否会自动对音频特征补齐，如有需要去除
@@ -1972,19 +2031,20 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 | 混合负载 | H20 + RTX 4090 混部 | 按任务分流 | 建立任务→硬件路由层 |
 
 ### 前处理优化方向
-多模态推理中前处理（CPU 端）往往被忽视，但对短内容场景影响最大。建议：
+多模态推理中前处理（CPU 端）往往被忽视，但对短内容场景影响最大。建议：^[].md]
+
 1. **图像**：使用 TurboJPEG/libjpeg-turbo 替代默认解码器，resize 用 NEON 加速
 2. **音频**：音频特征提取（Mel Spectrogram 等）用 PyTorch 批处理而非 vLLM 内置逻辑
 3. **视频**：关键帧采样策略在摄入端完成，不要在推理引擎内做动态采样
 ---
 ## 相关实体
-- [ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md)
-- [gemma 4 multi token prediction drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
-- [tokenspeed agentic inference engine](https://github.com/QianJinGuo/wiki/blob/main/entities/tokenspeed-agentic-inference-engine.md)
+- [[entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda|ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理]
+- [[entities/gemma-4-multi-token-prediction-drafters|gemma 4 multi token prediction drafters]
+- [[entities/tokenspeed-agentic-inference-engine|tokenspeed agentic inference engine]
 
 ---
 
-## Ch16.019 vLLM V0→V1 迁移中的 logprob 差异修复
+## Ch16.022 vLLM V0→V1 迁移中的 logprob 差异修复
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
@@ -2062,9 +2122,9 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 ---
 
-## Ch16.020 京东 JoyAI-VL-Interaction — 全栈开源视频语言交互模型
+## Ch16.023 京东 JoyAI-VL-Interaction — 全栈开源视频语言交互模型
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/jd-joyai-vl-interaction-video-language-open-source.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/jd-joyai-vl-interaction-video-language-open-source.md`
 
 # 京东 JoyAI-VL-Interaction — 全栈开源视频语言交互模型
 
@@ -2152,7 +2212,7 @@ JoyAI-VL-Interaction 选择全栈开源，与许多大模型企业的闭源策�
 
 ---
 
-## Ch16.021 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
+## Ch16.024 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
 
@@ -2286,7 +2346,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ---
 
-## Ch16.022 ServiceNow vLLM V0→V1 正确性修复
+## Ch16.025 ServiceNow vLLM V0→V1 正确性修复
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
 
@@ -2374,7 +2434,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ---
 
-## Ch16.023 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+## Ch16.026 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
 
@@ -2468,9 +2528,9 @@ Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw
 
 ---
 
-## Ch16.024 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
+## Ch16.027 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
 
-> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
 
 # MiMo-V2.5 推理系统全链路优化
 
@@ -2531,7 +2591,7 @@ MiMo 在多模态优化上的设计体现了一个重要原则——**将瓶颈�
 
 ---
 
-## Ch16.025 elasticpp重塑elasticsearch查询性能的c内核引擎
+## Ch16.028 elasticpp重塑elasticsearch查询性能的c内核引擎
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md`
 
@@ -2597,7 +2657,7 @@ elasticpp 没有选择替换整个 Elasticsearch，而是将最核心、最耗�
 
 ---
 
-## Ch16.026 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+## Ch16.029 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
 
 > 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md`
 
@@ -2654,37 +2714,45 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 
 ---
 
-## Ch16.027 vLLM V0 to V1: Correctness Before Corrections in RL
+## Ch16.030 vLLM V0 to V1: Correctness Before Corrections in RL
 
 > 📊 Level ⭐⭐⭐ | 4.6KB | `entities/servicenow-vllm-correctness.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-vllm-correctness-huggingface.md)
+> -> [[raw/articles/servicenow-vllm-correctness-huggingface|原文存档]
 
 ## 深度分析
-vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。
-**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。
-**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。
-**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
-**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。
+vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。^[].md]
+
+**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。^[].md]
+
+**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。^[].md]
+
+**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。^[].md]
+
+**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。^[].md]
 
 ## 实践启示
-**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。
-**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。
-**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。
-**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。
-**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。
+**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。^[].md]
+
+**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。^[].md]
+
+**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。^[].md]
+
+**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。^[].md]
+
+**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。^[].md]
 
 ## 相关实体
-- [servicenow vllm correctness huggingface](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-vllm-correctness-huggingface.md)
+- [[entities/servicenow-vllm-correctness-huggingface|servicenow vllm correctness huggingface]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vllm-v0-to-v1-correctness-before-corrections.md)
+→ [[raw/articles/vllm-v0-to-v1-correctness-before-corrections.md|原文存档]
 
-- [vLLM V0→V1 迁移中的 logprob 差异修复](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
-- [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
+- [[entities/vllm-v0-to-v1-correctness-before-corrections|vLLM V0→V1 迁移中的 logprob 差异修复]
+- [[entities/trajectory-balance-asynchrony-tba-bengio-papweekly|无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍]
 
 ---
 
-## Ch16.028 Pytorch in Kernel Recsys Optimization
+## Ch16.031 Pytorch in Kernel Recsys Optimization
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
 
@@ -2719,9 +2787,9 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 
 ---
 
-## Ch16.029 Bonsai Image 4B: 1-bit 和 Ternary 量化
+## Ch16.032 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/bonsai-image-4b-quantization.md`
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/bonsai-image-4b-quantization.md`
 
 # Bonsai Image 4B: 1-bit 和 Ternary 量化
 
@@ -2785,9 +2853,9 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.030 14× faster embeddings: how we rebuilt the ONNX path in Manticore
+## Ch16.033 14× faster embeddings: how we rebuilt the ONNX path in Manticore
 
-> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md`
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md`
 
 # 14× faster embeddings: how we rebuilt the ONNX path in Manticore
 
@@ -2822,9 +2890,9 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 
 ---
 
-## Ch16.031 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
+## Ch16.034 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
 
-> 📊 Level ⭐⭐⭐ | 3.0KB | `entities/ibm-research-model-routing-optimization-2026.md`
+> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/ibm-research-model-routing-optimization-2026.md`
 
 # Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
 
@@ -2866,40 +2934,78 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.032 Quantization Techniques
+## Ch16.035 Quantization Techniques
 
-> 📊 Level ⭐⭐⭐ | 0.5KB | `entities/quantization-techniques.md`
+> 📊 Level ⭐⭐⭐ | 1.1KB | `entities/quantization-techniques.md`
 
 # Quantization Techniques
 
-> 🚧 占位页面 — 内容待补充
+## 概述
 
-工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+模型量化是大语言模型推理优化的核心技术，通过降低模型参数精度（从 FP16/FP32 到 INT8/INT4 甚至更低）来减少内存占用和加速推理。主要方法包括：训练后量化（PTQ）如 GPTQ、AWQ、SmoothQuant；量化感知训练（QAT）；以及最新的 1-bit 量化（BitNet）。在 Agent 部署场景中，量化技术使得在消费级 GPU 甚至 CPU 上运行大模型成为可能，是实现本地化 Agent 推理的关键使能技术。
+
+## 主要内容
+
+- 训练后量化 (PTQ)
+- 量化感知训练 (QAT)
+- GGUF 格式量化
+- GPTQ/AWQ/SmoothQuant
+- 1-bit 量化 (BitNet)
+- 推理性能 vs 精度权衡
+
+## 相关概念
+
+- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
+- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+
+## Ch16.036 TMAP 平台图生视频推理加速实践
+
+> 📊 Level ⭐⭐⭐ | 0.9KB | `entities/tmap-video-generation-inference-acceleration-taobao-2026-07-22.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tmap-video-generation-inference-acceleration-taobao-2026-07-22.md)
+
+大淘宝技术 TMAP 平台与"淘宝法象"视频生成算法团队合作，从多卡并行、Attention 加速、量化加速、缓存加速四方向优化图生视频推理。
+
+## 来源
+
+- 原文: [TMAP 平台图生视频推理加速实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tmap-video-generation-inference-acceleration-taobao-2026-07-22.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/H7KdJqOINbyDRmVh71ikSg
 
 ---
 
-## Ch16.033 Speculative Decoding
+## Ch16.037 Speculative Decoding
 
-> 📊 Level ⭐⭐⭐ | 0.4KB | `entities/speculative-decoding.md`
+> 📊 Level ⭐⭐⭐ | 0.9KB | `entities/speculative-decoding.md`
 
 # Speculative Decoding
 
-> 🚧 占位页面 — 内容待补充
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
 
-工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+## 概述
+
+## 主要内容
+
+- 核心要点
+- 1. 为什么 Agent 场景需要极致推理速度
+- 2. 投机解码的核心逻辑
+- 3. 为什么选 EAGLE-3
+- 4. EAGLE-3 训练形态与显存问题
+- 5. 解决方案：USP（Unified Sequence Parallelism）
+- 6. 工程实践补齐
+- 7. 实测效果
+- 8. 当前挑战与后续规划
+- 相关链接
+
+## 来源
+
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
+- 原始链接: https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
----
-
-## Ch16.034 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
+## Ch16.038 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/puma-semantic-early-exit-reasoning-convergence-2605.md`
 

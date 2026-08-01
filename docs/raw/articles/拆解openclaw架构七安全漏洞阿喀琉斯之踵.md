@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 72
 stars: 4
 sha256: c4e938c0ce6b8381693e143d4e87dd06ec11ca1e7c5a23ba6cab77a83fd64ecf
+source_url: "https://mp.weixin.qq.com/s/ReiDY6EWY195s4f2xTWvzA"
 ---
 
 # 拆解OpenClaw架构（七）：安全漏洞，阿喀琉斯之踵

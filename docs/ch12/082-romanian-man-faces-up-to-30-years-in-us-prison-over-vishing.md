@@ -6,6 +6,20 @@
 
 # Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Romanian Man Faces Up to 30 …"))
+    深度分析
+      VOIP 安全漏洞的系统性问题
+      Money Mule 在网络犯罪中的角色
+      与 AI 时代 Vishing 的对比
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 53 岁的罗马尼亚籍男子 Gavril Sandu 于 2026 年 4 月 30 日被引渡至美国北卡罗来纳州夏洛特联邦法院，面临共谋罪和银行欺诈罪指控。该案涉及一个始于 2009 年的 VOIP vishing 犯罪团伙，该团伙劫持合法企业的 VOIP 电话系统，通过自动化脚本批量外呼，诱骗受害者泄露借记卡信息和 PIN 码，随后制作伪卡在 ATM 提现。该案于 2017 年 11 月由大陪审团起诉，Sandu 在罗马尼亚潜逃多年后于 2026 年 1 月被捕。

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 19522b5c50c82fe14b44901b20f68cb2dbf76a83b3d49f82dc9b1f2d3271b773
+source_url: "https://mp.weixin.qq.com/s/zN8FidEku-a8rZ-DohPveQ"
 ---
 
 # 阿里重磅开源！OpenSandbox：专为 AI Agent 打造的下一代沙箱

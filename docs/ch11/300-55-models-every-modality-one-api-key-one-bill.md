@@ -5,6 +5,17 @@
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/digitalocean-serverless-inference-55-models.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("55+ models, every modality. …"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 ```mermaid

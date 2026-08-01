@@ -5,6 +5,7 @@ url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-opencl
 source: rss
 feed_name: AWS China ML
 sha256: c6de759dcfebd3a63681a83e695d58c89e964f11e1a4abc2678a4e5256e9d83e
+source_url: "unavailable"
 ---
 <div style="line-height: 1.6;font-size: 16px"> 
  <p>

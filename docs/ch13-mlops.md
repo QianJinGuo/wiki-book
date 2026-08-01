@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **22 篇**实体，按深度递增排列。
+> 本章收录 **23 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 19 |
+| ⭐⭐ 工程师 | 需编程基础 | 20 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -292,14 +292,14 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 
 ## Ch13.002 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
 
-> 📊 Level ⭐⭐ | 20.0KB | `entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md`
+> 📊 Level ⭐⭐ | 19.9KB | `entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md`
 
 ## 核心要点
 - OTel SemConv 是可观测数据的"道"，采集工具是"术"——语义规范才是 OTel 社区的核心价值
 - LoongSuite GenAI SemConv 在 OTel GenAI SemConv 基础上新增 Entry/Step Span、Skill 语义、Token 级推理观测三大核心增强
 - GenAI Utils 作为工程化能力层，将语义规范的复杂性封装为统一 API，实现插桩库与规范升级的解耦
 - Token 级推理可观测首次将 vLLM / SGLang / TensorRT-LLM 引擎内部的黑盒过程拆解到 Token 粒度
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
+> 来源：[[raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地|原文存档]
 
 ## 背景：为什么需要 GenAI 可观测语义规范
 随着 GenAI 的快速发展，AI Agent 系统中涌现出大量新核心概念——Model、Prompt、Token、Tool Calling、Agent、Memory、Session——它们已成为算法工程师、运维人员和可观测平台用户最密切关注的观测对象 。这些对象需要像传统系统中 HTTP 请求或数据库调用一样被标准化采集、展示和消费，使系统维护者能够清晰了解调用过程并高效排查问题 。
@@ -307,7 +307,8 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 
 ### SemConv 的定位与价值
 对于刚接触 OTel 的人，自动插桩（Auto Instrumentation）或 SDK 等采集工具常被视为社区的核心价值所在 。然而，深入了解社区后会发现，相比于 SemConv，这些采集能力更多扮演的是"术"的角色，真正服务的是 OTel 的"道"——通过 SemConv 建立统一的可观测数据语言 。OTel SemConv 是汇聚全球数十家头部可观测厂商、数百名领域专家共同设计并持续演进的数据采集标准 。
-统一 SemConv 的核心价值体现在三个层面：
+统一 SemConv 的核心价值体现在三个层面：^[].md]
+
 **统一数据语言，解决口径不一致**：GenAI 应用天然跨模型、跨框架、跨平台 。没有统一语义规范时，不同团队各自记录"模型名"、"输入长度"、"Token 数"等，字段命名和统计口径无法对齐 。OTel GenAI SemConv 以 `gen_ai.system`、`gen_ai.request.model`、`gen_ai.usage.input_tokens` 等标准字段实现"同一类问题用同一套数据解释" 。
 **支撑性能、成本、质量与安全的统一治理**：统一语义规范使团队能够追踪性能、成本和安全问题，为大型企业提供技术排查、经营分析、评测和合规四大实际价值 。
 **降低接入成本，推动基础设施复用**：一旦字段、Span 结构、事件模型和上下文传递方式定义清楚，无侵入埋点、SDK 封装、平台分析、看板和告警策略均可复用，业务无需每次从"我要采什么字段"重新思考 。
@@ -323,7 +324,7 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 #### 语义建模
 **Entry Span**：在 Agent 调用入口处创建 Span，用于还原模型和用户的原始输入和输出，形成对话历史，确保下游任务处理的数据不受 System Prompt 或框架 Prompt 干扰，能够获取最原始的客户请求 。
 **Step Span**：Step 代表 Agent 在每次 ReAct 过程中的层次化表达 。每次 ReAct 过程都包含"反思 → 工具调用 → 模型调用"的循环，排查问题时采用 Top-down 方式：先定位问题出现在哪一轮 ReAct，再深入分析该轮中具体哪一步出错 。通过逐层 Span 结构，可以清晰展示 Agent 的多轮行动、反思及对应执行结果，使每轮循环轨迹一目了然 。
-目前该语义规范已在 OpenClaw、QwenPaw、HERMES Agent 等多个场景中落地 。
+目前该语义规范已在 OpenClaw、QwenPaw、HERMES Agent 等多个场景中落地 。^[].md]
 
 ### 新增 Skill 语义
 #### 问题背景
@@ -357,7 +358,7 @@ LoongSuite GenAI SemConv 新增 `gen_ai.skill.*` 属性组，用于标识 Skill 
 LoongSuite GenAI SemConv 覆盖了 Agent、Skill、Token Level Inference 等多个维度的语义建模，但各类插桩库（Instrumentation）开发者面临一个共同的工程挑战：每个 GenAI 框架插桩库都需要实现完整的遥测采集逻辑——创建 Span、挂载语义属性、记录 Metrics、发送 Events、管理 Context 传递——这些逻辑在不同框架插桩间高度重复，更关键的是当语义规范迭代升级时每个插桩库各自维护一套实现，升级成本成倍增长 。
 
 ### 架构设计
-GenAI Utils 整体架构遵循"分层解耦、统一收口"的设计原则 ：
+GenAI Utils 整体架构遵循"分层解耦、统一收口"的设计原则 ：^[].md]
 
 - **插桩层只做数据提取**：各框架插桩库通过 Hook/Monkey-Patch 拦截框架调用，将数据填充到对应的 Invocation 数据对象中，不直接操作 OTel API 
 - **GenAI Utils 统一收口遥测输出**：所有 Span 创建、属性挂载、Metrics 记录、Event 发送、Context 管理均由 ExtendedTelemetryHandler 内部完成 
@@ -400,13 +401,13 @@ Token 级可观测数据对于定位 vLLM/SGLang/TensorRT-LLM 等引擎的并发
 ### 对于推动 OTel 标准的社区贡献者
 LoongSuite 的演进路径——内部验证后贡献社区——是大型企业参与开源标准的最佳实践 。在 OTel 社区提案 Skill 语义的经历表明，社区对有充分生产验证的提案接受度更高，建议其他厂商在类似领域也采用这一路径 。
 ## 相关实体
-- [Loongsuite Genai Semconv](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv.md)
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/deeppotential-alibabacloud-agentrun-scientific-ai.md)
-- [从多智能体编排到Ai自主决策资损防控体系的架构演进](https://github.com/QianJinGuo/wiki/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
-- [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](https://github.com/QianJinGuo/wiki/blob/main/entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
+- [[entities/loongsuite-genai-semconv]
+- [[entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent]
+- [[entities/deeppotential-alibabacloud-agentrun-scientific-ai]
+- [[entities/从多智能体编排到ai自主决策资损防控体系的架构演进]
+- [[entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
+→ [[raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地|原文存档]
 
 ---
 
@@ -1076,20 +1077,23 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 ## Ch13.006 ai-skill-测评指标体系
 
-> 📊 Level ⭐⭐ | 16.2KB | `entities/ai-skill-测评指标体系.md`
+> 📊 Level ⭐⭐ | 16.3KB | `entities/ai-skill-测评指标体系.md`
 
-[Ai Skill 测评指标体系](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评指标体系.md)
+[[raw/articles/ai-skill-测评指标体系]
 
 # 02—通过率、增益 Δ、IFR 怎么看？AI Skill 测评指标体系完整解读
 系列：AI Skill 测评体系从零到一（二）
 难度：进阶
-适合读者：需要理解测评数字含义的工程师和产品经理
+适合读者：需要理解测评数字含义的工程师和产品经理^[].md]
+
 📌 一句话摘要：AI Skill 测评有 8 个核心指标，90% 的人只盯通过率却忽略了「增益 Δ」——本文一次讲清楚每个数字的含义、来源和发布红线。
 
 ## 指标太多记不住？用「九层」来理解
 AI Skill 测评指标体系由 9 层维度构成，从用户感知到工程内核，覆盖一个 LLM 应用上线前需要验证的所有质量维度。
-记忆方法：把 9 层想象成「从用户感知到工程内核」的由外到内的洋葱结构。
-口诀：**触发→输出→规则→对话→容错→效率→设计→覆盖→维护**
+记忆方法：把 9 层想象成「从用户感知到工程内核」的由外到内的洋葱结构。^[].md]
+
+口诀：**触发→输出→规则→对话→容错→效率→设计→覆盖→维护**^[].md]
+
 | 层级 | quick 模式 | standard 模式 | full 模式 |
 |------|-----------|---------------|-----------|
 | 触发层、输出层、业务层 | ✅ 必测 | ✅ 必测 | ✅ 必测 |
@@ -1109,8 +1113,10 @@ INCONCLUSIVE（无法验证）：这条用例没有出结论，不代表 AI 失�
 正确处理：补充对应测试资产后重新跑该用例。INCONCLUSIVE 用例不计入通过率，但必须在报告中单独说明补充计划。
 
 ### 1. 通过率（Pass Rate）
-**通过率 = 断言通过数 / 总断言数 × 100%**
-断言（Assertion）：测试用例中对「Skill 应该输出什么」的具体描述。
+**通过率 = 断言通过数 / 总断言数 × 100%**^[].md]
+
+断言（Assertion）：测试用例中对「Skill 应该输出什么」的具体描述。^[].md]
+
 准入阈值（参考值，非行业统一标准）：
 | 风险等级 | 通过率要求 | 典型场景 |
 |---------|-----------|---------|
@@ -1157,17 +1163,21 @@ B > C → 人工 Skill 有价值；B ≈ C → 边际收益低；B < C → 人�
 
 ### 4. 指令遵循率 IFR（Instruction Following Rate）
 **IFR = 正确遵循硬性规则的次数 / 触发硬性规则的总次数 × 100%。S 级要求 IFR = 100%。**
-硬性规则：Skill 中明确写了「必须」「禁止」「固定为」的规则。
+硬性规则：Skill 中明确写了「必须」「禁止」「固定为」的规则。^[].md]
+
 来源：对应通用研究方向 Instruction Following，参考 Google 的 IFEval 基准（arxiv.org/abs/2311.07911）。
 IFR vs 通过率：通过率是所有断言通过比例；IFR 只关注硬性规则。一个 Skill 可能通过率 92% 但 IFR 只有 80%——有 20% 的情况下违反了关键规则。
 
 ### 5. 一致性得分（Consistency Score）
-**一致性 = 关键字段完全一致的对比组数 / 总对比组数 × 100%**
-同一意图用不同表达方式（正式/口语/简略），关键输出字段应完全一致。
+**一致性 = 关键字段完全一致的对比组数 / 总对比组数 × 100%**^[].md]
+
+同一意图用不同表达方式（正式/口语/简略），关键输出字段应完全一致。^[].md]
+
 适用范围：full 模式才系统计算。
 
 ### 6. 稳定性（Stddev）
-**标准差 > 0.3 = 高度不稳定，立即排查。**
+**标准差 > 0.3 = 高度不稳定，立即排查。**^[].md]
+
 | Stddev | 含义 | 行动 |
 |--------|------|------|
 | < 0.05 | 稳定，结果可信 | S 级发布要求 |
@@ -1176,12 +1186,15 @@ IFR vs 通过率：通过率是所有断言通过比例；IFR 只关注硬性规
 | > 0.30 | 高度不稳定 | 检查 Skill 规则冲突 |
 
 ### 7. 幻觉检测（Hallucination Detection）
-**S 级 Skill 要求 0 次幻觉。**
-幻觉：接口调用实际失败了，但模型仍输出「草稿已保存」——链接是编造的。
-检测方法：评审 Agent 提取输出中的所有「隐含声明」并逐一核查是否有执行记录支撑。
+**S 级 Skill 要求 0 次幻觉。**^[].md]
+
+幻觉：接口调用实际失败了，但模型仍输出「草稿已保存」——链接是编造的。^[].md]
+
+检测方法：评审 Agent 提取输出中的所有「隐含声明」并逐一核查是否有执行记录支撑。^[].md]
 
 ### 8. 覆盖率（Coverage）
-**综合覆盖率 = 功能覆盖率×0.5 + 路径覆盖率×0.3 + 断言覆盖率×0.2**
+**综合覆盖率 = 功能覆盖率×0.5 + 路径覆盖率×0.3 + 断言覆盖率×0.2**^[].md]
+
 S/A 级目标 ≥ 85%。
 | 功能覆盖率 | 有用例覆盖的规则数 / 总规则数 |
 | 路径覆盖率 | 有用例覆盖的执行路径数 / 总路径数 |
@@ -1230,7 +1243,7 @@ S/A 级目标 ≥ 85%。
 - S 级通过率 ≥ 95% 的具体阈值
 - IFR = 100% 的要求
 - Stddev < 0.05 的稳定性标准
-这些经验值基于「业务容错度、用户预期、历史数据」三因素制定，可根据实际业务调整。
+这些经验值基于「业务容错度、用户预期、历史数据」三因素制定，可根据实际业务调整。^[].md]
 
 ## 深度分析
 ### 1. 指标体系的层次化设计哲学
@@ -1270,48 +1283,49 @@ Stddev 作为 S 级发布要求的硬性指标（< 0.05），反映的是**LLM �
 
 ## 实践启示
 ### 1. 建立「指标优先序」意识
-面对 8 个核心指标，团队容易陷入「追求全面达标」的误区。实践建议：
+面对 8 个核心指标，团队容易陷入「追求全面达标」的误区。实践建议：^[].md]
 
 - **S/A 级 Skill**：优先保障通过率 + Δ + IFR + 稳定性，覆盖率可适度降低
 - **C 级 Skill**：通过率达标即可，Δ 和 IFR 不作强制要求
 - **快速迭代阶段**：先用 quick 模式保触发率和通过率，full 模式留给发布前最终验证
 
 ### 2. 将 INCONCLUSIVE 纳入技术债务管理
-INCONCLUSIVE 不是「无所谓」的状态，它暴露了**测试资产缺口**。建议实践：
+INCONCLUSIVE 不是「无所谓」的状态，它暴露了**测试资产缺口**。建议实践：^[].md]
 
 - 建立 INCONCLUSIVE 专项台账，记录每个灰色用例的原因和补充计划
 - 在 Sprint 规划中预留「测试资产补充」专项工作
 - 将 INCONCLUSIVE 率纳入 QA 报告，作为测试充分性的代理指标
 
 ### 3. 触发率优化的「pushy description」技巧
-针对 Claude 的 undertrigger 倾向，Description 写作应：
+针对 Claude 的 undertrigger 倾向，Description 写作应：^[].md]
 
 - 使用明确的触发语境描述：「当用户提到 X 时，即使没有明确说'请使用 Skill'也应触发」
 - 列出边界场景：「尤其是以下情况...」
 - 避免过于学术或模糊的表述
 
 ### 4. Δ 达标但通过率不达标的「夹心饼」困境处理
-当遇到 Δ=+35%（正向）但通过率 87%（未达 S 级 95%）的情况：
+当遇到 Δ=+35%（正向）但通过率 87%（未达 S 级 95%）的情况：^[].md]
 
 - **不要发布**：通过率是准入底线，Δ 只是加成
 - **分析根因**：通过率低说明 Skill 本身实现质量不足，而非 Skill 方向错误
 - **优先优化**：将通过率提升到 95% 再发布，而非降低 S 级标准
 
 ### 5. IFR 优化的「规则分级」策略
-将 Skill 中的规则显式分为硬性/软性两类：
+将 Skill 中的规则显式分为硬性/软性两类：^[].md]
 
 - **硬性规则**（必须、禁止、固定为）：用简短无歧义的指令句描述，确保 IFR = 100%
 - **软性规则**（建议、优先、通常）：用自然语言描述，允许模型有一定灵活性
 - **避免「升级」**：不要把所有规则都标为硬性，这会降低模型整体表现
 
 ### 6. 稳定性问题的「三分法」排查
-Stddev > 0.1 时，按以下顺序排查：
+Stddev > 0.1 时，按以下顺序排查：^[].md]
+
 1. **Prompt 歧义**：检查是否有「或」「可能」等导致多解的词汇
 2. **示例不足**：关键场景是否提供了足够的 Few-shot 示例
 3. **规则冲突**：不同规则之间是否存在边界重叠导致的决策震荡
 
 ### 7. 覆盖率提升的「最小用例集」策略
-提升覆盖率不必穷举所有可能输入，而是聚焦：
+提升覆盖率不必穷举所有可能输入，而是聚焦：^[].md]
 
 - **功能覆盖**：每个规则至少 1 个正向 + 1 个负向用例
 - **路径覆盖**：每个分支路径至少 1 个用例
@@ -1327,14 +1341,14 @@ Stddev > 0.1 时，按以下顺序排查：
 | Stddev | < 0.05 | 0.08 | 🟡 |
 让决策者一目了然地看到哪些是绿灯放行、哪些需要人工判断。
 ## 相关实体
-- [Ai Skill Metrics System](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
-- [Ai Skill Evolution Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-evolution-framework.md)
-- [Ai Skill 测评报告解读](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-测评报告解读.md)
-- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [[entities/ai-skill-metrics-system]
+- [[entities/ai-skill-evolution-framework]
+- [[entities/ai-skill-测评报告解读]
+- [[entities/ai-skill-skill-creator-源码拆解]
+- [[entities/harness-engineered-business-agent-evaluation-aliyun-boyu]
+- [[moc/evaluation-benchmarks-extended|MOC]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评指标体系.md)
+→ [[raw/articles/ai-skill-测评指标体系|原文存档]
 
 ---
 
@@ -2017,7 +2031,70 @@ Skill 规则不只是"做什么"，还要说清楚"为什么"和"做不到会怎
 
 ---
 
-## Ch13.013 Agent Skill 评估与迭代
+## Ch13.013 The Ramanujan Challenge for AI
+
+> 📊 Level ⭐⭐ | 6.1KB | `entities/ramanujan-challenge-ai-gil-kalai-2026-07-02.md`
+
+# The Ramanujan Challenge for AI
+
+## 摘要
+
+吉尔·卡莱（Gil Kalai）分享了由伊多·卡米纳（Ido Kaminer）发起的"拉马努金 AI 挑战赛"（Ramanujan Challenge for AI），该挑战于 2026 年 7 月 2 日启动，将持续至 2026 年 8 月 1 日。挑战旨在系统测试 AI 系统在数学研究中的能力，特别是从具体公式出发生成有效证明或符号推导的能力。
+
+## 核心要点
+
+- **十个研究级问题**：基于数学常数显式公式方向，专门设计用于测试 AI 的证明生成与符号推导能力
+- **多种提交形式**：接受形式化验证证明、计算机代数系统（CAS）推导、以及附带可复现代码的人可读证明
+- **评估从"答案"转向"过程"**：核心目标是检验 AI 能否以可结构化验证的方式生成推导过程，而非仅仅输出正确答案
+- **兼容现有工具链**：规则设计兼容形式化验证系统（如 Lean、Coq）、CAS 系统（如 Mathematica、SymPy）及可复现代码辅助证明
+
+## 深度分析
+
+### 数学 AI 评估的范式转变
+
+拉马努金挑战代表了 AI 数学能力评估从"答案导向"向"过程导向"的深刻转变。传统的数学基准（如 MATH、GSM8K）主要测试 AI 对已知问题的答案生成能力，而本挑战要求 AI 从给定公式出发，构建完整的推导链条。这与当前 AI 评估领域从"输出正确性"向"推理可验证性"转变的大趋势一致。
+
+这种评估方式的转变触及了 AI 数学能力的本质：数学不仅仅是找到正确答案，更重要的是展示出可被同行验证的推理过程。挑战的规则设计——允许形式化证明、CAS 推导或可复现代码辅助证明——实际上是在测试 AI 是否具备"数学家的思维方式"，而不仅仅是"计算器的输出能力"。
+
+### 与形式化验证的深层关联
+
+该挑战兼容形式化验证系统（如 Lean、Coq），这一设计选择极具前瞻性。近年来，[LEAN 在形式化定理证明](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)领域的进展表明，AI 辅助的形式化数学正在成为现实。拉马努金挑战将形式化证明作为可接受的提交形式，实际上是在推动 AI 数学研究向"可机器验证"的方向发展——这不仅降低了人工审校的成本，也为 AI 生成的数学内容建立了一条质量控制基线。
+
+### 拉马努金机器项目背景
+
+该挑战由拉马努金机器（Ramanujan Machine）项目发起。拉马努金机器项目是一个致力于利用 AI 发现新的数学常数公式的开源研究项目，其核心理念与拉马努金（Srinivasa Ramanujan）的直觉式数学发现精神一脉相承。该项目此前已在数学常数公式发现方面取得了多项成果，本挑战是其将研究重心从"公式发现"向"证明生成"拓展的重要一步。
+
+### 对 AI 推理能力评估的启示
+
+拉马努金挑战的设计对更广泛的 AI 推理能力评估具有启示意义：
+
+1. **结构化验证**：通过要求可结构化验证的推导过程，挑战建立了一个可自动检查的评估框架，避免了传统评估中的人工主观偏差
+2. **多路径求解**：允许形式化证明、CAS 推导、代码辅助证明等多种提交路径，反映了数学研究本身的多元化方法论
+3. **时间压力**：一个月的挑战周期为 AI 系统提供了充足的多轮迭代空间，这与 METR、AISI 等机构对 AI 自主任务完成能力的长时间评估方法一致
+
+### 数学 AI 的未来方向
+
+拉马努金挑战预示了数学 AI 的三大发展方向：从答案生成向证明生成演进、从封闭测试向开放挑战演进、以及从单一模态向形式化系统集成演进。这些方向与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心理念——系统性地评估和提升 AI 能力——高度一致。
+
+## 实践启示
+
+1. **重视过程验证**：在评估 AI 的数学能力时，应优先关注推导过程的可验证性而非答案的正确性——前者才是衡量"理解"的真实标尺
+2. **拥抱形式化工具**：将形式化验证系统（Lean、Coq 等）纳入 AI 数学研究的评估工具链，可以大幅降低结果验证成本并提高可靠性
+3. **跨学科合作**：拉马努金挑战的跨学科性质（数学、AI、形式化验证）提示我们，最前沿的 AI 突破往往发生在学科交叉点
+4. **时间维度的评估**：给 AI 系统充足的时间进行多轮尝试和迭代（如本挑战的一个月窗口），往往比单次评估更能反映真实能力——这一原则同样适用于 [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 设计
+5. **从"发现"到"证明"**：AI 在数学领域的应用正从"公式发现"（如拉马努金机器项目的早期工作）向"定理证明"拓展，这一演进路径与 AI 从"模式匹配"向"推理理解"的整体进化趋势一致
+
+## 相关实体
+
+- [LEAP: Agentic Formal Theorem Proving](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)
+- [CODA Bench: Code Agent Data Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/coda-bench-code-agent-data-benchmark-renmin-2026.md)
+- [Karpathy LLM Wiki Knowledge Management](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ramanujan-challenge-ai-gil-kalai-2026-07-02.md)
+
+---
+
+## Ch13.014 Agent Skill 评估与迭代
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/agent-skill-writing-evaluation.md`
 
@@ -2118,72 +2195,9 @@ delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信�
 
 ---
 
-## Ch13.014 The Ramanujan Challenge for AI
-
-> 📊 Level ⭐⭐ | 5.7KB | `entities/ramanujan-challenge-ai-gil-kalai-2026-07-02.md`
-
-# The Ramanujan Challenge for AI
-
-## 摘要
-
-吉尔·卡莱（Gil Kalai）分享了由伊多·卡米纳（Ido Kaminer）发起的"拉马努金 AI 挑战赛"（Ramanujan Challenge for AI），该挑战于 2026 年 7 月 2 日启动，将持续至 2026 年 8 月 1 日。挑战旨在系统测试 AI 系统在数学研究中的能力，特别是从具体公式出发生成有效证明或符号推导的能力。
-
-## 核心要点
-
-- **十个研究级问题**：基于数学常数显式公式方向，专门设计用于测试 AI 的证明生成与符号推导能力
-- **多种提交形式**：接受形式化验证证明、计算机代数系统（CAS）推导、以及附带可复现代码的人可读证明
-- **评估从"答案"转向"过程"**：核心目标是检验 AI 能否以可结构化验证的方式生成推导过程，而非仅仅输出正确答案
-- **兼容现有工具链**：规则设计兼容形式化验证系统（如 Lean、Coq）、CAS 系统（如 Mathematica、SymPy）及可复现代码辅助证明
-
-## 深度分析
-
-### 数学 AI 评估的范式转变
-
-拉马努金挑战代表了 AI 数学能力评估从"答案导向"向"过程导向"的深刻转变。传统的数学基准（如 MATH、GSM8K）主要测试 AI 对已知问题的答案生成能力，而本挑战要求 AI 从给定公式出发，构建完整的推导链条。这与当前 AI 评估领域从"输出正确性"向"推理可验证性"转变的大趋势一致。
-
-这种评估方式的转变触及了 AI 数学能力的本质：数学不仅仅是找到正确答案，更重要的是展示出可被同行验证的推理过程。挑战的规则设计——允许形式化证明、CAS 推导或可复现代码辅助证明——实际上是在测试 AI 是否具备"数学家的思维方式"，而不仅仅是"计算器的输出能力"。
-
-### 与形式化验证的深层关联
-
-该挑战兼容形式化验证系统（如 Lean、Coq），这一设计选择极具前瞻性。近年来，[LEAN 在形式化定理证明](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)领域的进展表明，AI 辅助的形式化数学正在成为现实。拉马努金挑战将形式化证明作为可接受的提交形式，实际上是在推动 AI 数学研究向"可机器验证"的方向发展——这不仅降低了人工审校的成本，也为 AI 生成的数学内容建立了一条质量控制基线。
-
-### 拉马努金机器项目背景
-
-该挑战由拉马努金机器（Ramanujan Machine）项目发起。拉马努金机器项目是一个致力于利用 AI 发现新的数学常数公式的开源研究项目，其核心理念与拉马努金（Srinivasa Ramanujan）的直觉式数学发现精神一脉相承。该项目此前已在数学常数公式发现方面取得了多项成果，本挑战是其将研究重心从"公式发现"向"证明生成"拓展的重要一步。
-
-### 对 AI 推理能力评估的启示
-
-拉马努金挑战的设计对更广泛的 AI 推理能力评估具有启示意义：
-
-1. **结构化验证**：通过要求可结构化验证的推导过程，挑战建立了一个可自动检查的评估框架，避免了传统评估中的人工主观偏差
-2. **多路径求解**：允许形式化证明、CAS 推导、代码辅助证明等多种提交路径，反映了数学研究本身的多元化方法论
-3. **时间压力**：一个月的挑战周期为 AI 系统提供了充足的多轮迭代空间，这与 METR、AISI 等机构对 AI 自主任务完成能力的长时间评估方法一致
-
-### 数学 AI 的未来方向
-
-拉马努金挑战预示了数学 AI 的三大发展方向：从答案生成向证明生成演进、从封闭测试向开放挑战演进、以及从单一模态向形式化系统集成演进。这些方向与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心理念——系统性地评估和提升 AI 能力——高度一致。
-
-## 实践启示
-
-1. **重视过程验证**：在评估 AI 的数学能力时，应优先关注推导过程的可验证性而非答案的正确性——前者才是衡量"理解"的真实标尺
-2. **拥抱形式化工具**：将形式化验证系统（Lean、Coq 等）纳入 AI 数学研究的评估工具链，可以大幅降低结果验证成本并提高可靠性
-3. **跨学科合作**：拉马努金挑战的跨学科性质（数学、AI、形式化验证）提示我们，最前沿的 AI 突破往往发生在学科交叉点
-4. **时间维度的评估**：给 AI 系统充足的时间进行多轮尝试和迭代（如本挑战的一个月窗口），往往比单次评估更能反映真实能力——这一原则同样适用于 [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 设计
-5. **从"发现"到"证明"**：AI 在数学领域的应用正从"公式发现"（如拉马努金机器项目的早期工作）向"定理证明"拓展，这一演进路径与 AI 从"模式匹配"向"推理理解"的整体进化趋势一致
-
-## 相关实体
-
-- [LEAP: Agentic Formal Theorem Proving](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)
-- [CODA Bench: Code Agent Data Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/coda-bench-code-agent-data-benchmark-renmin-2026.md)
-- [Karpathy LLM Wiki Knowledge Management](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ramanujan-challenge-ai-gil-kalai-2026-07-02.md)
-
----
-
 ## Ch13.015 NVIDIA MCG Toolkit 模型文档自动化
 
-> 📊 Level ⭐⭐ | 5.6KB | `entities/nvidia-mcg-model-documentation.md`
+> 📊 Level ⭐⭐ | 5.7KB | `entities/nvidia-mcg-model-documentation.md`
 
 # NVIDIA MCG Toolkit 模型文档自动化
 
@@ -2249,7 +2263,7 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 
 ## Ch13.016 CEOs’ top priorities for IT leaders today
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
+> 📊 Level ⭐⭐ | 4.9KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
 
 ## 核心要点
 - **AI 落地压力从 POC 转向 ROI 交付**：2026 年 CEO 已对 AI 实验和概念验证失去耐心，明确要求 CIO 提供可量化业务价值。AI 投资回报与预期差距大，CEO 们"在 AI 上的花费远远大于回报"
@@ -2467,23 +2481,52 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ## Ch13.020 Observability Platform
 
-> 📊 Level ⭐⭐ | 0.4KB | `entities/observability-platform.md`
+> 📊 Level ⭐⭐ | 1.5KB | `entities/observability-platform.md`
 
 # Observability Platform
 
-> 🚧 占位页面 — 内容待补充
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-observability-4-layer-quant67.md)
 
-工具/产品/团队实体页面，待从相关 raw 文章中提取详细信息。
+## 概述
+
+可观测性在传统微服务已经是老生常谈：Metrics + Logs + Traces 三件套 + 一点 Profiling 就能覆盖 90% 排障。但直接搬到 LLM 系统上远远不够： - 成本不是"CPU 秒"而是"token × 单价"，input/output/cached 三档价格不同 - 延迟不是单一 latency，要拆 TTFT（Time To First Token）/ TPOT（Time Per Output Token）/ E2E - 一个 Agent 请求可能产生 20 次子 LLM 调用、5 次工具调用、3 次 retriever - 请求返回 HTTP 200、延迟正常、成本正常，**但答案是幻觉** — 传统监控一个告警都不会响 文章目标：把 LLM 可观测性拆成 4 层，串联主流通用栈，目标是"出问题时 5 分钟定位、3 小时修复，下次不再出现"。
+
+## 主要内容
+
+- 文章定位
+- 1. 为什么 LLM 需要新的可观测性
+- 1.1 与传统微服务差异
+- 1.2 四层观测模型
+- 2. 核心指标体系
+- 2.1 延迟：TTFT / TPOT / E2E
+- 2.2 吞吐：tokens / req / GPU
+- 2.3 GPU 与引擎内部信号
+
+## 来源
+
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-observability-4-layer-quant67.md)
+- 原始链接: https://quant67.com/post/llm-infra/23-observability/23-observability.html
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+## Ch13.021 IG-Bench：AI 生成论文 idea 的「想法基因组」谱系评测
+
+> 📊 Level ⭐⭐ | 0.9KB | `entities/ideas-have-genomes-ig-bench-sjtu.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ideas-have-genomes-ig-bench-sjtu.md)
+
+AI Scientist 等自动科研系统已能生成像模像样的论文，但现有评测只测检索准不准、事实错没错、文笔顺不顺。更关键的问题无人测过：**当一个 idea 声称「在延续某个研究方向」时，它有没有继承对的机制、修对的缺陷？**
+
+## 来源
+
+- 原文: [IG-Bench：AI 生成论文 idea 的「想法基因组」谱系评测](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ideas-have-genomes-ig-bench-sjtu.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/_jskmg_sY5txJs0iVFbFiw
 
 ---
 
-## Ch13.021 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+## Ch13.022 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
 
-> 📊 Level ⭐⭐⭐ | 22.2KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
+> 📊 Level ⭐⭐⭐ | 22.1KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
 
 # 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward
 
@@ -2697,9 +2740,9 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.022 Discretizing Reward Models
+## Ch13.023 Discretizing Reward Models
 
-> 📊 Level ⭐⭐⭐⭐ | 6.1KB | `entities/abs-2606-21795.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.2KB | `entities/abs-2606-21795.md`
 
 # Discretizing Reward Models
 

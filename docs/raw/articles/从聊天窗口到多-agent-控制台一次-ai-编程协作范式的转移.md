@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 09d7ef3a4f57bf43af94e1aa298ab74384a7dcd484492d319e334d1d3a2b5b93
+source_url: "https://mp.weixin.qq.com/s/0vIHvlZCdq2TZ1OBGUgW3w"
 ---
 
 # 从聊天窗口到多 Agent 控制台：一次 AI 编程协作范式的转移

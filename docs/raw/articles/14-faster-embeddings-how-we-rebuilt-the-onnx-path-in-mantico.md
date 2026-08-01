@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: b6bdc34328f97eee25950bb68039454eb7a6220b1866265d74f86589d0f7c820
+source_url: "https://manticoresearch.com/blog/onnx-embeddings-speedup"
 ---
 
 sha256: 61f9dd1cd496733431436f9b1c48fa6031b986e4daf1a45ddff02b9507b15944

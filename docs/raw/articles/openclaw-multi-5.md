@@ -5,6 +5,7 @@ url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-opencl
 source: rss
 feed_name: AWS China ML
 sha256: b82def90bbad83f70fcef72133d9217168d35b3b9e0789e704ba049e8a1056ad
+source_url: "https://aws.amazon.com/cn/api-gateway/"
 ---
 <div style="line-height: 1.6;font-size: 16px"> 
  <p>

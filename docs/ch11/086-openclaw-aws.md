@@ -5,6 +5,30 @@
 > 📊 Level ⭐⭐ | 10.3KB | `entities/enterprise-openclaw-security-deploy-architecture-guide.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("企业级OpenClaw安全部署架构指南 | 亚马逊AWS…"))
+    概念导图
+    概述
+    核心技术
+    来源
+    深度分析
+      1. AI Agent 安全的范式转移：从边界…
+      2. 威胁态势的量化警示：数字背后的安全紧迫性
+      3. 纵深防御七层模型的协同逻辑
+      4. 提示注入的架构性解决方案：隔离 + 结构…
+    实践启示
+      1. 立即执行：凭证管理从'裸奔'到 Secr…
+      2. 1 个月内：建立企业私有 ClawHub…
+      3. 1 个月内：实现 3-Leg OAuth…
+      4. 立即执行：隔离执行环境——每个 Agen…
+    架构图
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid
@@ -24,37 +48,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "攻击面"
-        PROMPT_INJ[提示注入]
-        DATA_LEAK[数据泄露]
-        SUPPLY[供应链攻击]
-        ADVERSARIAL[对抗样本]
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "防御纵深"
-        WAF[应用防火墙]
-        INPUT_GUARD[输入护栏<br/>意图检测]
-        SANDBOX[沙箱隔离<br/>权限最小化]
-        OUTPUT_GUARD[输出审查<br/>PII过滤]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    subgraph "检测响应"
-        IDS[入侵检测<br/>行为异常]
-        SIEM[安全事件中心]
-        AUTO_BLOCK[自动阻断]
-        FORENSIC[取证分析]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    PROMPT_INJ --> INPUT_GUARD
-    DATA_LEAK --> OUTPUT_GUARD
-    SUPPLY --> SANDBOX
-    ADVERSARIAL --> WAF
-    INPUT_GUARD & OUTPUT_GUARD --> IDS
-    WAF & SANDBOX --> IDS
-    IDS --> SIEM --> AUTO_BLOCK & FORENSIC
-    classDef attack fill:#fee2e2,stroke:#dc2626
-    classDef defense fill:#dbeafe,stroke:#2563eb
-    classDef detect fill:#fef3c7,stroke:#d97706
-    class PROMPT_INJ,DATA_LEAK,SUPPLY,ADVERSARIAL attack
-    class WAF,INPUT_GUARD,SANDBOX,OUTPUT_GUARD defense
-    class IDS,SIEM,AUTO_BLOCK,FORENSIC detect
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 企业级OpenClaw安全部署架构指南 by awschina on 23 4月 2026 in Security, Identity, Compliance Permalink Share 摘要：本博客提供企业在亚马逊云科技上部署类OpenClaw智能体的综合安全方案指南，包括架构设计、缓解注入攻击、企业内部系统集中访问和细粒度授权等。 目录 01 引言 02 AI Agent 安全：一个全新的问题域 03 威胁全景：了解你的对手 04 安全架构总览：纵深防御七层模型 05 核心安全能力：Amazon Bedrock AgentCore 06 关键安全场景与解决方案 07 安全运营：12 项安全控制清单 08 参考资源 09 相关链接 1. 引言 在过去十年中，企业安全架构的演进经历了从边界防御到零信任的深刻转型。然而， Agent 的出现正在带来又一次范式级的挑战——这一次，威胁不再单

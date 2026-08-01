@@ -7,6 +7,21 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-first-ai-and-payments-infrastructure.md)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Tether launches developer gr…"))
+    概念导图
+    深度分析
+      QVAC 平台：Tether 的去中心化 AI…
+      $1,500-$4,000 每交付物的定价逻辑
+      稳定币 + 本地 AI 的协同想象空间
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

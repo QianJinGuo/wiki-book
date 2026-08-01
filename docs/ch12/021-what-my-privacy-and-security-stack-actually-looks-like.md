@@ -6,6 +6,21 @@
 
 # What My Privacy and Security Stack Actually Looks Like
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("What My Privacy and Security…"))
+    深度分析
+      为什么'情绪直觉'被列为第一位
+      '996 张发票'的地址保护经验
+      认证体系的层级降级策略
+      为什么同时用两个密码管理器
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 资深隐私/安全记者 Yael 在博文中分享了她"实际在用"的隐私与安全实践，区别于常规的"工具推荐清单"。她的栈覆盖日常行为（情绪直觉、线下会面习惯）、个人信息保护（PO Box、数据经纪商退订）、隐私卫生（隐私屏、耳机通话、删除旧账号）、设备卫生（磁盘加密、iVerify、权限审计）、认证（YubiKey + 1Password/Bitwarden + Authy）、浏览（Mullvad VPN、uBlock Origin、Privacy Badger、多浏览器轮换）、通信保护（Signal 消失消息、Google Advanced Protection Program、Apple Lockdown Mode）、支付（信用卡优先、冻结信用）。

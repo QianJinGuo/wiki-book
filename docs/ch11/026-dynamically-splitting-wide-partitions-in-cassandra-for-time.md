@@ -8,6 +8,26 @@
 
 > Netflix Tech Blog 2026-06-03 工程实践：解决 Apache Cassandra 4.x 在 PB 级时序数据上 wide partition 问题的完整方案。从 `nodetool tablehistograms` 的 percentile 检测 → DynamicTimeSliceConfigWorker 自动调整 time_bucket → **async 动态分区管道（Detection / Planning & Splitting / Serving Reads）** 在 TimeSeries ID 粒度上做细粒度拆分，附 Decision Tree（Partial Return / Block ID / Dynamic Split）。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Dynamically Splitting Wide P…"))
+    背景：Wide Partition 的代价
+    基础策略：Time Slices × Time…
+    现有方法的局限
+    解决方案 1：Time Slice Re-Pa…
+      当 Partial ID 宽时，三个备选
+    解决方案 2：Dynamic Partitio…
+      Stage 1: Detection
+      Stage 2: Planning and Spl…
+      Stage 3: Serving Reads
+    三个独有贡献
+    适用场景
+    关键概念参考
+```
+
 ## 背景：Wide Partition 的代价
 
 Netflix TimeSeries Abstraction 每天摄入 PB 级时序事件数据，依赖 Cassandra 4.x 作为底层存储。理想读延迟为**个位数 ms**，但当 partition 增长过宽时：

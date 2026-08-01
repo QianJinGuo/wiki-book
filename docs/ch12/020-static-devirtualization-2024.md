@@ -6,6 +6,37 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/static-devirtualization-of-themida.md) | → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Static Devirtualization 2024"))
+    技术背景
+      虚拟机混淆的挑战
+      早期方法的局限性
+    核心技术：引导式符号执行
+      BLARE2 引擎
+      符号执行起点
+      控制流具体化
+    优化 Pass 系统
+      完整 Pass 列表
+      Pass 间的协同效应示例
+    Themida 特有的 VJCC 处理
+    降级（Lowering）阶段的关键约束
+      寄存器压力
+      LLVM 的局限性
+    防御与对抗的演进
+      MBA 混淆的对抗
+      更强的防护技术
+    2024 年技术成熟度
+    深度分析
+      通用优化是去虚拟化的主力，而非 VM 特定知识
+      Concrete RSP 的设计权衡：牺牲动态…
+      寄存器压力是降级阶段的决定性约束
+      VJCC handler 是真正的 VM 特定…
+```
+
 ## 摘要
 
 Static Devirtualization（静态去虚拟化）是一种针对基于虚拟机的代码混淆保护器的逆向工程方法论。其核心思想是将虚拟机（VM）保护的原生代码通过符号执行（Symbolic Evaluation）提升（lift）至中间表示（IR），利用通用编译器优化 passes 逐步消除 VM 脚手架，最终恢复出可读的原生代码。该方法在 2024 年已达到成熟实用阶段，可跨 Themida、VMProtect、CodeVirtualizer 等多种基于虚拟机的代码保护器工作，仅需极少的 VM 特定知识。

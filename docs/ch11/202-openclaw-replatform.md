@@ -4,6 +4,25 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/openclaw-multi-3.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenClaw 多用户部署（三）：Replatform…"))
+    深度分析
+      1. Replatform 策略的核心价值：用…
+      2. 多租户隔离的 STS Session P…
+      3. CDK 声明式部署的结构化价值
+      4. Amazon Bedrock Guard…
+    实践启示
+      1. 迁移前先用 --phase1 验证基础设…
+      2. 生产环境必须启用 Guardrail V…
+      3. Telegram Bot Token 配…
+      4. STS 权限隔离是 Refactor 改…
+    相关实体
+```
+
 ## 深度分析
 
 ### 1. Replatform 策略的核心价值：用托管服务置换人工运维

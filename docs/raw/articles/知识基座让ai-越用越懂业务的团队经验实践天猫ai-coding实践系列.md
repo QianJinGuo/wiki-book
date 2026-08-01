@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: b402fc1403dbcef405020c1513dd85a0668b31f7931be16b3563440403e58b69
+source_url: "https://mp.weixin.qq.com/s/P-p4-BH8AAOnTBRcpsoKeQ"
 ---
 
 # 知识基座：让“AI 越用越懂业务”的团队经验实践【天猫AI Coding实践系列】

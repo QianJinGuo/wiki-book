@@ -10,6 +10,30 @@
 
 > **Core insight**: Netflix 通过 Nebula ArchRules 插件将单仓库 ArchUnit 规则扩展为跨 polyrepo 的可共享、可版本化规则库——利用 Gradle Module Metadata 的 variant 选择机制，实现"bundled rule libraries"自动检测和执行，无需每个仓库单独配置。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix Nebula ArchRules: 跨越…"))
+    为什么选择 ArchUnit
+    ArchRules 架构：规则库插件 + 运行插件
+    案例：API Lifecycle 注解追踪
+    规模与效果
+    关键数据/实践启示
+    深度分析
+      1. ArchRules：架构决策的代码化执行
+      2. 架构治理的规模化需求
+      3. 与 Netflix Real Time…
+      4. 误报率是架构规则系统的关键挑战
+    实践启示
+      1. 微服务 50 个时：引入自动化架构治理
+      2. 从最关键的 3-5 条规则开始
+      3. 将架构规则纳入 CI 流水线
+      4. 定期审查规则的误报率
+    相关实体
+```
+
 ## 为什么选择 ArchUnit
 
 Netflix 采用 polyrepo 策略，拥有数万个 Java 仓库。JVM Ecosystem 团队构建 Nebula Gradle 插件套件，为这些仓库提供构建逻辑共享、标准构建方式和 artifact 发布能力。但在一次与 library backwards-incompatible change 相关的 incident 后，团队需要更好的 API lifecycle 管理工具。

@@ -6,6 +6,26 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building Blocks for Foundati…"))
+    核心摘要
+    深度分析
+      三重扩展定律的基础设施含义
+      通信瓶颈的关键性
+      Slurm vs Kubernetes 的架构取舍
+      推理框架的分化趋势
+    实践启示
+      基础设施选型决策框架
+      存储层次设计
+      资源编排选型
+      分布式训练框架选择
+    相关实体
+```
+
 ## 核心摘要
 AWS 提供从 P5 (H100/H200) 到 P6 (B200/B300) 的 GPU 实例家族，配合 EFA v2/v3/v4 OS-bypass 网络和 FSx for Lustre 分层存储，构成基础模型训练和推理的完整基础设施层。
 资源编排层面，Slurm 和 Kubernetes 代表两种路线：Slurm 以作业级原子调度适合 HPC 风格的大规模训练；Kubernetes 以声明式 API 适合云原生部署，但需要 Kueue/Volcano/KAI Scheduler 补齐作业级调度和拓扑感知。

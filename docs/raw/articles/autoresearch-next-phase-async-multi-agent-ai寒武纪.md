@@ -9,6 +9,7 @@ sources:
 review_value: 8
 review_confidence: 8
 sha256: 5b8c9915f029c8b184dd0bae297e6e00f1eb44563b270037d4e324fcefab86c5
+source_url: "https://github.com/karpathy/autoresearch"
 ---
 
 ## 核心内容

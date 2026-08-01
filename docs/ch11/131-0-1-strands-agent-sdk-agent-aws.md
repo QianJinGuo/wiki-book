@@ -5,6 +5,24 @@
 > 📊 Level ⭐⭐ | 8.3KB | `entities/strands-agent-sdk-resource-intelligent-inspection-agent-innovation.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("从0到1:联想基于Strands Agent SDK的资…"))
+    概念导图
+    概述
+    核心技术
+    深度分析
+      技术选型：为什么是Strands Agent …
+      三层架构设计亮点
+      多Agent协作模式的价值
+    实践启示
+    来源
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid
@@ -19,32 +37,39 @@ mindmap
 
 ```mermaid
 graph TB
-    subgraph "Agent 内核"
-        PL[规划器<br/>Planner] --> EX[执行器<br/>Executor]
-        EX --> OB[观察器<br/>Observer]
-        OB -->|"反馈"| PL
+    subgraph "边缘层"
+        CDN[CDN/缓存] --> LB[负载均衡]
+        LB --> GW[API Gateway<br/>认证+限流]
     end
-    subgraph "能力层"
-        SK[技能<br/>Skills]
-        TL[工具<br/>Tools]
-        MM[记忆<br/>Memory]
+    subgraph "服务层"
+        SVC_A[业务服务A]
+        SVC_B[业务服务B]
+        AGENT_SVC[Agent 服务]
     end
-    PL --> SK
-    PL --> MM
-    EX --> TL
-    OB --> MM
-    subgraph "护栏"
-        GRD[输入校验]
-        OUT_GRD[输出过滤]
+    GW --> SVC_A & SVC_B & AGENT_SVC
+    subgraph "Agent 运行时"
+        SANDBOX[沙箱隔离]
+        RUNTIME[执行引擎]
+        POOL[连接池]
     end
-    IN[用户意图] --> GRD --> PL
-    OUT[响应] --> OUT_GRD --> USR[用户]
-    classDef core fill:#dbeafe,stroke:#2563eb
-    classDef cap fill:#ede9fe,stroke:#7c3aed
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    class PL,EX,OB core
-    class SK,TL,MM cap
-    class GRD,OUT_GRD guard
+    AGENT_SVC --> SANDBOX --> RUNTIME
+    RUNTIME --> POOL
+    subgraph "数据层"
+        DB[(关系数据库)]
+        CACHE[(Redis缓存)]
+        OBJ[(对象存储)]
+        VDB[(向量数据库)]
+    end
+    SVC_A --> DB & CACHE
+    AGENT_SVC --> OBJ & VDB
+    classDef edge fill:#fef3c7,stroke:#d97706
+    classDef svc fill:#dbeafe,stroke:#2563eb
+    classDef runtime fill:#ede9fe,stroke:#7c3aed
+    classDef data fill:#d1fae5,stroke:#059669
+    class CDN,LB,GW edge
+    class SVC_A,SVC_B,AGENT_SVC svc
+    class SANDBOX,RUNTIME,POOL runtime
+    class DB,CACHE,OBJ,VDB data
 ```
 
 从0到1:联想基于Strands Agent SDK的资源智能巡检Agent创新 by awschina on 21 11月 2025 in Industries Permalink Share 前言 数字化浪潮已推动企业从传统数据中心迁移至公有云平台，现在正经历着另一场巨大的技术变革，站在从数字化向智能化转型的巨浪上。这一转变不仅是技术升级，更是运维理念的根本变革。 AI技术的快速发展为运维转型提供了强大动力，使我们能够实现三个关键目标：从被动响应故障转向主动预测隐患；通过AI及时识别潜在风险；提升运维效率与准确性。对一线运维人员而言，这一转型意义重大。他们将从繁琐的日常巡检和例行维护等重复性工作中解放出来，转而专注于系统架构优化、性能调优等更具创造性和挑战性的任务。这使得他们能够充分发挥多年积累的专业经验，真正体现在处理复杂问题时的独特价值。 Lenovo运维巡检的挑战与智能化需求 在Lenovo的公有云运维团队，关注服务状态、预防潜在问题，这是确保系统稳定运行的关键日常工作之一。传统资源巡检方法依赖人工操作，存在明显局限性。这种方式不仅耗时费力，还容易出现疏漏，导致故障难以及时发现，严重时会影响业务连续性。随着云资源部署规模扩大，人工巡检也已经无法实现全面覆盖，而且公有云运维团队缺乏基于项目维度的巡检报告作为参考，这也使得难以评估各项目状态，智能化解决方案迫在眉睫。 AI Agent技术以及LLM能力的日渐成熟为解决这些挑战提供了新思路。Lenovo的创新中心团队需要发展智能化多Agent协作的智能运维系统来解决大量资源的日常巡检问题，基于私域知识和最佳实践处理复杂的业务报告生成需求，解决人工无法解决的问题。智能化转型既是技术升级，也是运维理念变革，这将确保Lenovo的公有云运维团队在云资源规模不断扩大的环境中保持高效可靠的IT运维能力，也是开发智能巡检助手的初衷。

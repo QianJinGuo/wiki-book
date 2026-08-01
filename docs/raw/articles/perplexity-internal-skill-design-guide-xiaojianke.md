@@ -10,6 +10,7 @@ review_confidence: true
 tags: [agent, Skill, Perplexity, prompt-engineering, evaluation, hub-and-spoke]
 abstract: Perplexity 内部 Skill 设计指南首次公开——Skill 是目录/格式/可调用/渐进式四维体系；描述是"Load when..."路由触发器；Gotchas 负面案例积累是最高价值工作；每个 Skill 都是一份"税"。
 sha256: 32ed7ff921881448cc7aa22d04b829aa7ba99c2a4f6928bcb9eed8552ee4819a
+source_url: "unavailable"
 ---
 ---
 # Perplexity 首次公开了内部 Skill 设计指南

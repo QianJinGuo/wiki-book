@@ -8,6 +8,20 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/implementing-resilience-patterns-with-amazon-bedrock-and-llm.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Bedrock + LLM Gateway…"))
+    深度分析
+      弹性模式的渐进式演进路径
+      LLM Gateway 的核心价值与选型考量
+      弹性设计的维度权衡
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 随着生成式 AI 工作负载从实验阶段进入生产规模化部署，LLM 推理的弹性成为关键挑战。本文系统梳理了在 Amazon Bedrock 上实现生产级推理弹性的五种渐进式模式，从原生跨区域推理到基于 LLM Gateway 的多模型编排，涵盖重试、回退、限流、断路器、多模型路由等核心策略。这些模式已在 AWS 官方博客中通过可运行的 GitHub 示例代码验证。

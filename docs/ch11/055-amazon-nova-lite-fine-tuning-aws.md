@@ -4,6 +4,28 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Amazon Nova Lite Fine-Tuning…"))
+    概述
+    核心技术
+    深度分析
+      1. 微调策略的有效性验证
+      2. 成本效益的核心优势
+      3. 技术实施的关键发现
+      4. 局限性与注意事项
+    实践启示
+      1. 何时选择微调而非提示词工程
+      2. 微调实施的最佳实践
+      3. 成本控制策略
+      4. 场景化应用建议
+    来源
+    相关实体
+```
+
 ## 概述
 Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 by awschina on 07 1月 2026 in Artificial Intelligence Permalink Share 摘要 本文介绍了在 Amazon Bedrock 上对 Amazon Nova Lite 1.0进行微调的两个实际应用案例，展示了在专业计算机视觉任务中如何在保持成本效益的同时实现显著的性能提升。通过对航拍视角检测和低光照监控场景的系统性评估，我们以最小的训练成本实现了增强的指令遵循能力和更高的检测准确率。 背景介绍 Amazon Nova Lite 1.0作为 AWS 多模态基础模型系列的一部分，在通用视觉任务中提供了卓越的性价比。然而，专业应用场景往往需要增强的指令理解能力和特定领域的优化。本研究评估了微调技术在两个不同用例中的有效性： 航拍视角群组检测
 

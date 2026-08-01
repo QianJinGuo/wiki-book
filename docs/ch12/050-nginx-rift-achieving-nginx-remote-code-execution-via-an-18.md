@@ -12,6 +12,17 @@ In mid-April, I was chatting with a colleague about the most vulnerable spot in 
 NGINX is the most popular web server today, powering nearly a third of all [websites globally](https://w3techs.com/technologies/overview/web_server%5D). Its high performance architecture makes it the undisputed leader for handling massive volumes of web traffic. From serving static content to acting as an essential reverse proxy, it sits at the critical edge of the modern internet. A single vulnerability in this core infrastructure can therefore expose countless backend systems to severe risks.
 Internally, we have an autonomous system that specializes in analyzing low level software. Analyzing NGINX simply required a single click to onboard the repository and trigger the analysis. After six hours of scanning, the system identified 5 security issues including a high severity finding, which is a heap overflow issue when handling NGINX `rewrite` directive.
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("NGINX Rift: Achieving NGINX …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 
 **1. 18 年静默的内存损坏：经典状态机的两面-pass 设计缺陷**

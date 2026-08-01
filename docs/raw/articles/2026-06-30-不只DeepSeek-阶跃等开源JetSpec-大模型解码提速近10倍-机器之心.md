@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: b603938fb5e7f328f680a9f334626fdc1c2ab024d131f5dead6e41414af5f543
+source_url: "https://jetspec-project.github.io/jetspec-web/"
 ---
 
 sha256: a838ada2aa8f6bb5ee2d049707683d04bb2c791b0c74d4ae1debcbd86e7b2f28

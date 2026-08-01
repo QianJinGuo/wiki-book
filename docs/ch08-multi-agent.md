@@ -2,7 +2,7 @@
 
 > 从单兵到团队：编排、通信、治理
 
-> 本章收录 **35 篇**实体，按深度递增排列。
+> 本章收录 **36 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 24 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
@@ -216,7 +216,22 @@ ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能�
 
 ---
 
-## Ch08.003 Oz Multi-Harness Cloud Agent Orchestration (Warp)
+## Ch08.003 Agent 的六个自主性等级：从 L0 辅助到 L5 例外管理
+
+> 📊 Level ⭐ | 0.7KB | `entities/agent-autonomy-levels-l0-l5-addy-osmani-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-autonomy-levels-l0-l5-addy-osmani-2026.md)
+
+Addy Osmani（Google 工程负责人）提出的双轴模型：
+
+## 来源
+
+- 原文: [Agent 的六个自主性等级：从 L0 辅助到 L5 例外管理](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-autonomy-levels-l0-l5-addy-osmani-2026.md)
+- 原始链接: : "https://mp.weixin.qq.com/s/W1cua_2pXfshl_OUKgn2hA
+
+---
+
+## Ch08.004 Oz Multi-Harness Cloud Agent Orchestration (Warp)
 
 > 📊 Level ⭐⭐ | 12.1KB | `entities/oz-multi-harness-cloud-agent-orchestration.md`
 
@@ -338,9 +353,9 @@ Oz 和 AWS [AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/age
 
 ---
 
-## Ch08.004 Graph Engineering：从单循环到多节点编排
+## Ch08.005 Graph Engineering：从单循环到多节点编排
 
-> 📊 Level ⭐⭐ | 11.8KB | `entities/graph-engineering-loop-to-graph-tencent.md`
+> 📊 Level ⭐⭐ | 9.4KB | `entities/graph-engineering-loop-to-graph-tencent.md`
 
 # Graph Engineering：从单循环到多节点编排
 
@@ -468,41 +483,11 @@ Agent 从材料读到的只能先作为**候选主张（claim）**，经实体�
 → [原文存档（腾讯技术工程）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-tencent-lukiexing-2026.md)
 → [原文存档（若飞/架构师，Supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-agent-loop-fact-management-ruofei-2026.md)
 
-## 扩展：五层 Agent 工程定位 + 诊断与评审清单（若飞 2026-07-31 Supplementary）
-
-若飞将 Graph Engineering 放回五层框架（Prompt/Context/Harness/Loop/Graph）中定位：Graph 是第五层，管理跨工作单元的稳定关系，控制范围最大；各层处理对象不同、不能互相顶替。
-
-### Loop 与 Graph 的控制边界三问
-
-运行前能否写清依赖/分支/汇聚条件？失败是否昂贵（中断后需局部恢复、重试会重复扣款/写库/发布）？过程是否涉及审计/审批/预算/跨团队交接？信号弱用 Loop，任一信号强就上 Graph。
-
-### 系统不稳诊断定位表
-
-| 症状 | 先查层 |
-|------|--------|
-| 误解目标、输出格式跑偏 | Prompt |
-| 引用旧版本、漏文件、忘记状态 | Context |
-| 工具时好时坏、权限太大、无法复现 | Harness |
-| 反复绕路、停不下来 | Loop |
-| 单任务能做、一协作就乱 | Graph |
-
-### 从能跑到可恢复：补五件事
-
-记录真实路线（无运行数据，提前画的只是想象流程）→ 状态移出对话（task_id/input_version/stage/attempt/budget/artifact_uri）→ 验证器放明确的门上（模型评审不天然充当真值）→ 隔离副作用动作（幂等/审计/补偿，超时先查真实结果再决定重试）→ 证明独立后再并行（数据依赖/写集合/汇聚规则先说清）。
-
-### 评审 Graph 八问
-
-状态归属 / 节点结构 / 边的依据 / 验收证据 / 失败策略 / 副作用补偿 / 检查点恢复 / 可观测性——大半问题只能答"Agent 会自己处理"，说明图还停在示意层。
-
-### AutoResearch 作为五层最小完整例
-
-Karpathy AutoResearch（改 train.py→训练→读 val_bpb→保留/回退）沿五层分工清晰；关键经验：目标单一、指标可测、动作受限、失败可回滚时，单条 Loop 可稳定工作很久——**先补目标/尺子/权限/历史/回滚，单条 Loop 够用时不必提前改造成复杂的图**。
-
 ---
 
-## Ch08.005 Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
+## Ch08.006 Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
 
-> 📊 Level ⭐⭐ | 8.1KB | `entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md`
+> 📊 Level ⭐⭐ | 8.5KB | `entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md`
 
 # Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
 
@@ -610,7 +595,7 @@ CrewAI + NemoClaw 的集成支持"数据飞轮"模式——Agent 系统通过观
 
 ---
 
-## Ch08.006 ICML 2026 HOI-Edit & SCPE — 图像编辑的认知评测基准与智能体自纠错框架
+## Ch08.007 ICML 2026 HOI-Edit & SCPE — 图像编辑的认知评测基准与智能体自纠错框架
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/icml-2026-hoi-edit-scpe-self-correcting-pku.md`
 
@@ -687,9 +672,9 @@ HOI-Edit + SCPE 的组合为视觉生成模型提供了一种通用的"评测-�
 
 ---
 
-## Ch08.007 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
+## Ch08.008 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md`
+> 📊 Level ⭐⭐ | 7.0KB | `entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md)
 
@@ -768,7 +753,7 @@ L3的核心要求是**AI主导、人辅助**——这意味着机器不仅执行
 
 ---
 
-## Ch08.008 Multi-agent social intelligence with Strands Agents and Amazon Bedrock AgentCore
+## Ch08.009 Multi-agent social intelligence with Strands Agents and Amazon Bedrock AgentCore
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/multi-agent-social-intelligence-strands-bedrock.md`
 
@@ -845,23 +830,31 @@ Three-level guardrail system:
 
 ---
 
-## Ch08.009 微软 Agent Framework 全栈指南（Python）
+## Ch08.010 微软 Agent Framework 全栈指南（Python）
 
-> 📊 Level ⭐⭐ | 5.4KB | `entities/microsoft-agent-framework-python-zizhi.md`
+> 📊 Level ⭐⭐ | 5.5KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-agent-framework-python-zizhi.md)
+> 来源：[[raw/articles/microsoft-agent-framework-python-zizhi|原文存档]
 
 ## 深度分析
 **1. 三层架构的统一抽象：Agent / Workflow / Hosting 解耦设计**
-微软 Agent Framework 的核心价值在于将 Semantic Kernel 的企业底座、AutoGen 的 Agent 抽象与新增的 Workflow 图编排整合为统一 API。框架明确区分了三种场景的选型原则：开放对话、自主调工具 → Agent；步骤固定、要强控执行顺序 → Workflow；纯确定性逻辑 → 普通函数。这种分层使得开发者可以根据任务性质选择合适的编程模型，而非强行把所有场景都塞进 Agent。
-**2. Provider 模式实现记忆与上下文的可组合性**
-Step 4 展示的 `ContextProvider` / `HistoryProvider` 体系是框架最的设计亮点。通过 `before_run` 和 `after_run` 钩子，开发者可以在每轮对话前后注入自定义上下文或提取状态。多个 Provider 可以组合（记忆存储 + 外部记忆 + 审计），且只有一个应设置 `load_messages=True` 以避免重复回放。这套模式比直接硬编码记忆逻辑更具工程化价值。
-**3. 工具安全模型：从 Demo 到生产的必要跃迁**
-文章用 `approval_mode` 参数区分了演示环境（`never_require`）与生产环境（`always_require`）的差异。工具描述（docstring + `Field(description=...)`）的质量直接影响模型调用准确率，这个细节在很多入门教程中被忽略。生产 checklist 进一步强调了 ManagedIdentityCredential 优于 DefaultAzureCredential（避免探测延迟与安全面），说明框架设计者对企业安全有清晰认知。
-**4. Workflow 与多 Agent 的组合模式**
-Step 5 揭示了框架的编排野心：图中节点可以是 Agent，边定义协作顺序；需要对外暴露为单一 Agent 时，可将 Workflow 包装为 `AIAgent` 接入 A2A/OpenAI 兼容端点。这意味着框架既支持细粒度的多 Agent 协作，也支持将协作结果封装为统一接口，兼顾了灵活性与易用性。
-**5. 六步能力矩阵的渐进式学习路径**
-文章将 Agent 开发分为六个阶段（首 Agent → 工具 → 多轮 → 记忆 → 工作流 → 托管），每步都有明确的 API 概念和解决的问题。这种设计符合认知负荷理论：开发者可以从简单场景起步，逐步引入复杂特性，而不需要在一开始就理解整个框架。
+微软 Agent Framework 的核心价值在于将 Semantic Kernel 的企业底座、AutoGen 的 Agent 抽象与新增的 Workflow 图编排整合为统一 API。框架明确区分了三种场景的选型原则：开放对话、自主调工具 → Agent；步骤固定、要强控执行顺序 → Workflow；纯确定性逻辑 → 普通函数。这种分层使得开发者可以根据任务性质选择合适的编程模型，而非强行把所有场景都塞进 Agent。^[].md]
+
+**2. Provider 模式实现记忆与上下文的可组合性**^[].md]
+
+Step 4 展示的 `ContextProvider` / `HistoryProvider` 体系是框架最的设计亮点。通过 `before_run` 和 `after_run` 钩子，开发者可以在每轮对话前后注入自定义上下文或提取状态。多个 Provider 可以组合（记忆存储 + 外部记忆 + 审计），且只有一个应设置 `load_messages=True` 以避免重复回放。这套模式比直接硬编码记忆逻辑更具工程化价值。^[].md]
+
+**3. 工具安全模型：从 Demo 到生产的必要跃迁**^[].md]
+
+文章用 `approval_mode` 参数区分了演示环境（`never_require`）与生产环境（`always_require`）的差异。工具描述（docstring + `Field(description=...)`）的质量直接影响模型调用准确率，这个细节在很多入门教程中被忽略。生产 checklist 进一步强调了 ManagedIdentityCredential 优于 DefaultAzureCredential（避免探测延迟与安全面），说明框架设计者对企业安全有清晰认知。^[].md]
+
+**4. Workflow 与多 Agent 的组合模式**^[].md]
+
+Step 5 揭示了框架的编排野心：图中节点可以是 Agent，边定义协作顺序；需要对外暴露为单一 Agent 时，可将 Workflow 包装为 `AIAgent` 接入 A2A/OpenAI 兼容端点。这意味着框架既支持细粒度的多 Agent 协作，也支持将协作结果封装为统一接口，兼顾了灵活性与易用性。^[].md]
+
+**5. 六步能力矩阵的渐进式学习路径**^[].md]
+
+文章将 Agent 开发分为六个阶段（首 Agent → 工具 → 多轮 → 记忆 → 工作流 → 托管），每步都有明确的 API 概念和解决的问题。这种设计符合认知负荷理论：开发者可以从简单场景起步，逐步引入复杂特性，而不需要在一开始就理解整个框架。^[].md]
 
 ## 实践启示
 **1. 从 pip install 到 Azure Functions 暴露 HTTP，路径清晰**
@@ -875,15 +868,15 @@ Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 
 **5. Provider 组合时注意 load_messages 互斥**
 多个 `HistoryProvider` 组合时，只有一个应设置 `load_messages=True` 以避免多存储重复回放。审计类 Provider 应放在列表末尾并设置 `store_context_messages=True` 以记录其他 Provider 注入的上下文。这个约束需要在设计阶段就明确，否则运行时会出现难以排查的重复消息问题。
 ## 相关实体
-- [Microsoft Agent Framework Python Full Guide Zizhi](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-agent-framework-python-full-guide-zizhi.md)
-- [Microsoft Agent Framework Structured Output](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-agent-framework-structured-output.md)
-- [Microsoft Agent Framework Tools Overview Provider Matrix](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-agent-framework-tools-overview-provider-matrix.md)
-- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [New And Improved Agent Governance Intelligent Workflows Connected App Exp](https://github.com/QianJinGuo/wiki/blob/main/entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
+- [[entities/microsoft-agent-framework-python-full-guide-zizhi]
+- [[entities/microsoft-agent-framework-structured-output]
+- [[entities/microsoft-agent-framework-tools-overview-provider-matrix]
+- [[entities/agentscope-java-harness-framework-enterprise-distributed]
+- [[entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp]
 
 ---
 
-## Ch08.010 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
+## Ch08.011 高价率运营 AI 工作台：约定驱动与 AI 编排的评测优化实践
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/taobao-high-price-rate-ai-workbench-eval-optimization.md`
 
@@ -958,9 +951,9 @@ LLM 给修改建议约 80% 不合格。根因：LLM 区分不了四种"低分"�
 
 ---
 
-## Ch08.011 Claude Code Dynamic Workflows 多Agent编排
+## Ch08.012 Claude Code Dynamic Workflows 多Agent编排
 
-> 📊 Level ⭐⭐⭐ | 57.4KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
+> 📊 Level ⭐⭐⭐ | 57.3KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
 
 ## 核心价值
 
@@ -1634,9 +1627,9 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ---
 
-## Ch08.012 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
+## Ch08.013 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
 
-> 📊 Level ⭐⭐⭐ | 25.2KB | `entities/jiuwenswarm-coordination-engineering.md`
+> 📊 Level ⭐⭐⭐ | 25.1KB | `entities/jiuwenswarm-coordination-engineering.md`
 
 ## 概述
 JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，代表从 Harness Engineering 向 **Coordination Engineering** 的范式跃迁。
@@ -1722,6 +1715,7 @@ PinchBench 94.2% SOTA 配合 token 消耗降低 34.8%，说明多 Agent 协作�
 
 ### 如何从 Harness Engineering 过渡到 Coordination Engineering
 对于已有 Harness Engineering 基础的团队，过渡路径可以是： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+
 1. **先单 Agent 跑通**：确保每个角色 Agent 在 Harness 层面已经过优化 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
 2. **识别协作瓶颈**：哪些任务因为"单 Agent 能力边界"而受限 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
 3. **引入 Agent Swarm**：从两个角色开始尝试协作，观察通信和协商机制 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
@@ -1774,6 +1768,7 @@ SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起�
 ### 可视化：JiuwenSwarm TUI
 
 通过 `/swarmflows` 命令打开**实时交互式树状图**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+
 - 上方展示**阶段进度**
 - 下方联动展示选中阶段里的 **Agent 状态**
 - 排查时下钻到单个 Agent，查看**提示词、输出结果、错误日志**
@@ -1789,6 +1784,7 @@ SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起�
 ### SwarmSkill Creator（生成端）
 
 JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断该生成哪种形态**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+
 - 默认生成不带脚本的 Swarm Skill（角色、协作规则、流程说明、约束）
 - 判断用户要工作流 → 生成仅含脚本的版本（最小 Skill.md + workflow.py）
 - 两者都要时支持生成完整协作规范 + 脚本的版本
@@ -1798,6 +1794,7 @@ JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断�
 ### Team 模式自动调用（调用端）
 
 用户不用分辨任务属于哪种形态，在 Team 模式下一句需求自动进入。系统判断任务形态： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+
 - 适合固定编排 → 进入 SwarmFlow
 - 更适合开放协作 → 用不带脚本的 Swarm Skill
 - 单个 Agent 够用 → 不额外启动多 Agent
@@ -1921,7 +1918,7 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ---
 
-## Ch08.013 AI Agent Memory Systems
+## Ch08.014 AI Agent Memory Systems
 
 > 📊 Level ⭐⭐⭐ | 16.0KB | `entities/ai-agent-memory-systems.md`
 
@@ -2008,9 +2005,9 @@ Latency budget 分析显示 p95 目标 800ms 中，retrieval 占用约 495ms（Q
 
 ---
 
-## Ch08.014 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
+## Ch08.015 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 
-> 📊 Level ⭐⭐⭐ | 15.9KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
+> 📊 Level ⭐⭐⭐ | 15.8KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
 
 # 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 
@@ -2198,11 +2195,11 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 ---
 
-## Ch08.015 How Grab is Using AI Agents to Boost Team Productivity
+## Ch08.016 How Grab is Using AI Agents to Boost Team Productivity
 
-> 📊 Level ⭐⭐⭐ | 13.5KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
+> 📊 Level ⭐⭐⭐ | 13.4KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity.md)（ByteByteGo, 2026-05-18）
+> 来源：[[raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity|原文存档]（ByteByteGo, 2026-05-18）
 
 ## 核心要点
 - **问题背景**：Grab ADW（Analytics Data Warehouse）团队管理 15,000+ 张表，每月约 1000 人查询，最优秀工程师每周花 2 天回答同事的临时问题
@@ -2217,7 +2214,7 @@ Grab ADW 团队的核心观察是：**问题的答案各不相同，但回答的
 这给我们的启发是：在评估一个工作是否适合 Agent 化时，重要的不是问题看起来多复杂，而是**解决过程的变异性有多高**。变异性低（即使问题本身复杂），Agent 化的成功概率高；变异性高（即使单个问题简单），Agent 化难度大。
 
 ### 大脑与手的分离
-Grab 的设计哲学是"Decoupling the Brain from the Hands"：
+Grab 的设计哲学是"Decoupling the Brain from the Hands"：^[].md]
 
 - **Brain** = LLM，负责推理、决策、生成
 - **Hands** = Specialized Agents 和 Tools，负责实际执行（查询、代码搜索、状态检查）
@@ -2267,7 +2264,8 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 四层防御的逻辑是**每层的盲点由其他层覆盖**。Input Classification 可能有漏网的 PII 请求，但 SQL Validation 会拦住访问 PII 列的操作。每个 layer 独立负责一个维度的安全，但共同构成纵深防御。
 
 ### 信任建立的动态调整
-最初设计：所有 AI 生成的回答在工程师审核前不发布。这安全但慢——在高峰期问题堆积，无人审核。
+最初设计：所有 AI 生成的回答在工程师审核前不发布。这安全但慢——在高峰期问题堆积，无人审核。^[].md]
+
 改进后的设计：**立即发布答案，但标注为"未经审核"**。用户获得快速响应，同时知道答案的置信状态，可以选择性地进行人工复核。
 这个设计演变的深层逻辑是：信任不是静态的，是**随着系统性能证据积累动态扩展的**。系统上线初期，信任资本有限，高的审核率是合理的；随着系统性能数据积累（rejection rate 低，user feedback 好），信任边界可以扩展，释放人工审核资源用于更高价值的 work。
 这个模式对所有 AI Agent 系统有普遍参考价值：不要在系统上线初期就追求"无人化"，也不要永远停留在"全人工审核"阶段——建立性能指标驱动的动态审核策略。
@@ -2281,7 +2279,8 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 
 ### 生产 Hardening 的优先级排序
 当一个 Agent 原型在 demo 效果很好时，下一步不是上线，而是问"上线后会出什么问题"。Grab 发现的 4 类问题（context 爆炸、工具冗余、安全风险、信任建立）是有普遍性的。
-建议的上线前 Hardening 检查清单：
+建议的上线前 Hardening 检查清单：^[].md]
+
 1. **Context 压力测试**：模拟长会话（20+ 轮次），观察 token 累积对输出质量的影响
 2. **工具边界测试**：用边界条件调用（空输入、超大输入、恶意输入），观察 Agent 的错误处理
 3. **安全边界测试**：尝试注入 PII 请求、危险 SQL、越权操作，验证每层防御是否有效
@@ -2298,27 +2297,28 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 
 ### 写操作 Agent 的人工 Gate 设计
 对于改变 production 数据的 Agent 操作（Enhancement Pathway），Grab 的设计是**半自动化**：AI 生成变更，但每一步都需要人工审核和批准。这个设计值得推广。
-关键原则：AI 生成的内容接触 production 的 gate 数量取决于内容的风险等级：
+关键原则：AI 生成的内容接触 production 的 gate 数量取决于内容的风险等级：^[].md]
 
 - 读操作（调查、查询）→ 轻量监督或无监督
 - 写操作（数据变更、代码修改）→ 强制人工审核
 - 高风险写操作（删除数据、修改 schema）→ 强制多人审核 + staging 验证
-这个分层授权机制可以在任何企业 Agent 系统中复用。
-## 相关实体
-- [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
-- [Dipg Ant Insurance Host Research Verify Offline Closed Loop](https://github.com/QianJinGuo/wiki/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](https://github.com/QianJinGuo/wiki/blob/main/entities/building-ai-agents-for-business-support-using-amazon-bedrock.md)
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](https://github.com/QianJinGuo/wiki/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
-- [Low Code Api Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/low-code-api-integration.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+这个分层授权机制可以在任何企业 Agent 系统中复用。^[].md]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity.md)
+## 相关实体
+- [[entities/baixing-ontoz-enterprise-ontology-multi-agent]
+- [[entities/dipg-ant-insurance-host-research-verify-offline-closed-loop]
+- [[entities/building-ai-agents-for-business-support-using-amazon-bedrock]
+- [[entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel]
+- [[entities/low-code-api-integration]
+- [[moc/multi-agent-coordination|MOC]
+
+→ [[raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity|原文存档]
 
 ## 相关实体
 
 ---
 
-## Ch08.016 Factory Missions
+## Ch08.017 Factory Missions
 
 > 📊 Level ⭐⭐⭐ | 13.4KB | `entities/factory-missions-multi-agent-shipping.md`
 
@@ -2415,7 +2415,7 @@ Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步�
 
 ---
 
-## Ch08.017 Sub-Agent vs Agent Team 选型与编排原语
+## Ch08.018 Sub-Agent vs Agent Team 选型与编排原语
 
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/sub-agent-vs-agent-team-selection.md`
 
@@ -2530,7 +2530,7 @@ description 不是注释，是路由信号。写得含糊，路由就含糊；�
 
 ---
 
-## Ch08.018 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
+## Ch08.019 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
 
 > 📊 Level ⭐⭐⭐ | 12.0KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
 
@@ -2621,9 +2621,9 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ---
 
-## Ch08.019 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
+## Ch08.020 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
 
-> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/coze-3-0-collaboration-system.md`
+> 📊 Level ⭐⭐⭐ | 11.7KB | `entities/coze-3-0-collaboration-system.md`
 
 # 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
 > "AI Agent 的下一步，不只是更强的模型，而是**更像真实团队的工作系统**。" —— 量子位（编辑：金磊）报道
@@ -2771,7 +2771,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ---
 
-## Ch08.020 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
+## Ch08.021 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
 > 📊 Level ⭐⭐⭐ | 10.6KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
 
@@ -2921,7 +2921,7 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 
 ---
 
-## Ch08.021 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
+## Ch08.022 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/minimax-agent-team-mavis.md`
 
@@ -3089,7 +3089,7 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 
 ---
 
-## Ch08.022 AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）
+## Ch08.023 AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/agentrun-multi-agent-a2a-alibaba-cloud.md`
 
@@ -3214,7 +3214,7 @@ A2A 是 Google 主导的开放协议，类似 MCP之于工具调用、MPI 之于
 
 ---
 
-## Ch08.023 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
+## Ch08.024 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/ap2-agent-payments-protocol-hands-on-analysis.md`
 
@@ -3327,7 +3327,7 @@ CartMandate 一小时有效期 + 单次 OTP 的设计，本质上是为 Human-Pr
 
 ---
 
-## Ch08.024 全球化商品中心智能答疑 Agent 实践
+## Ch08.025 全球化商品中心智能答疑 Agent 实践
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/global-product-center-qa-agent-aliexpress-2026.md`
 
@@ -3426,7 +3426,7 @@ AliExpress IC 团队的三阶段演进揭示了 Agent 系统架构中的一个�
 
 ---
 
-## Ch08.025 对抗式验证：多 Agent 交叉校验设计哲学
+## Ch08.026 对抗式验证：多 Agent 交叉校验设计哲学
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/adversarial-verification.md`
 
@@ -3558,7 +3558,57 @@ Agent 输出是概率性的：同样的输入可能产生不同输出，需要�
 
 ---
 
-## Ch08.026 Routa 多智能体协同交付平台
+## Ch08.027 Cost of Consensus
+
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/cost-of-consensus.md`
+
+## 摘要
+Cost of Consensus 是 MiniMax Agent Team（Mavis）在其架构分享中引用的研究：在特定模型与同质 debate 设置下，多 Agent 达成共识的 token 消耗可达单 Agent 自我修正的 **2.1–3.4 倍**，且准确率并未提升甚至更差。这一结论指向一个反直觉的设计原则：多 Agent 不是默认选项，共识是系统的主要成本驱动，必须用架构手段（而非 prompt 堆砌）来约束它。
+
+## 核心要点
+- **共识开销系数 2.1–3.4x**：同质 debate 场景下，多 Agent 的 token 消耗显著超过单 Agent 自我修正，且没有换来准确率收益。
+- **没有结构、没有验证、没有停止条件的多 Agent 不成立**：Mavis 的结论是"多 Agent 需要纪律"，而不是"多 Agent 一定浪费"。
+- **Verifier 只验证、不参与讨论**：Owner-Worker-Verifier 三角色中，Verifier 与 Worker 是对抗关系，通过减少"全员讨论"来压缩共识范围。
+- **三类额外成本**：交接成本（信息重组）、共享成本（每轮重复付费）、聚合成本（合并十份结果最难，没有捷径）。
+- **Verifier 自身也有三笔成本**：验证本身、重试成本（必须要有退出机制）、人类决策成本（高风险动作必须人签字）。
+- **共识的适用边界**：多专业视角审查、单 Agent 低置信度的高风险决策、审计与冗余要求——这些场景才值得支付共识溢价。
+
+## 深度分析
+### 共识为什么贵：从"达成一致"到"形成相互制衡"
+共识成本的本质不是多问几个 Agent 那么简单。同质 debate 中，每个 Agent 都基于近似相同的上下文与推理路径产生输出，它们的"讨论"往往是同一误差的循环确认，token 开销翻倍而信息增量趋近于零——这正是 2.1–3.4x 开销却无准确率提升的机理。Mavis 的应对不是取消多 Agent，而是把"共识"从自由讨论改造成**对抗式验证**：Worker 停止的条件是 Verifier 启动的原因，Verifier 停止的条件是尽可能发现问题，发现的问题又成为 Worker 重启的原因。三者之间是相互制衡的闭环，而不是互相说服的圆桌。
+
+### 成本的三个放大点：交接、共享与聚合
+即使架构正确，多 Agent 仍有三个天然的成本放大器。**交接成本**：Agent 之间传递信息需要重新组织，研究 Agent 收回的几十个网页，写作 Agent 根本用不了，解法是让 Agent 之间通过结构化文件和摘要通信，而非把全部上下文塞进一个 prompt。**共享成本**：每多共享一段内容，每个 Agent 每一轮都要为它付一次 token，解法是按需加载——每个 Agent 只看到与自己任务相关的摘要，需要细节时再读全文。**聚合成本**：派十个 Agent 并行查资料容易，但把十份结果合成一份事实一致、引用准确、风格统一的交付物极难，这一步没有捷径，Owner 必须投入真实的合并精力。这三者共同决定了：多 Agent 的吞吐量瓶颈不在算力，而在通信与协调效率。
+
+### 架构约束取代 prompt 劝说：状态机与上下文隔离
+Mavis 把三个关键架构差异当作控制共识成本的手段。一是**对抗式验证**：验证不是可选附加步骤，而是架构核心，类似研发与质量部门的关系。二是**状态机管理**：什么时候验证、什么时候重试、什么时候停止，都是引擎层面的硬性约束，而不是模型自由判断——这直接限制了共识讨论的轮次上限。三是**隔离上下文**：受 Harness 思想启发，每个环节的上下文相互隔离，而不是所有 Agent 共享一个不断膨胀的对话历史，这从源头压缩了共享成本。Prompt/Skill 编排只是"发工作手册"，Team Engine 才是让这些约束成立的活系统。
+
+### 什么时候共识值得买：成本收益的边界条件
+Cost of Consensus 的结论不能外推为"所有多 Agent 都是浪费"。判断标准取决于任务属性：任务越复杂、链路越长、风险越高、经验越可复用，越值得上 Team；任务越短、越低风险、越确定，单 Agent 甚至脚本就够了。具体到共识本身，值得支付的场景包括：需要多专业视角并行审查（安全 + 性能 + 业务逻辑）、单 Agent 置信度不足以支撑高风险决策、以及需要冗余和交叉验证满足审计要求。Mavis 同时强调"能做 ≠ 能交付"——文档场景中 Planner/Writer/Formatter/Tool Agent/Evaluator 的流水线之所以成立，是因为每个环节有独立的验收标准，这正是共识成本换来的质量保障。
+
+## 实践启示
+1. **在系统设计阶段就把共识成本纳入评估**：比较"单 Agent 完成"与"多 Agent 共识"的实际 token 成本，不要默认多 Agent 更可靠；同质模型间的 debate 尤其容易陷入"开销翻倍、收益为零"。
+2. **最小化共识范围**：只在关键决策点引入共识，非关键路径用单 Agent；采用 Owner-Worker-Verifier 模式时，让 Verifier 只做验证、不参与自由讨论，可显著压缩共识开销。
+3. **用结构化输出减少歧义**：跨 Agent 通信时使用严格定义的格式（JSON schema、状态机事件、结构化文件与摘要）而非自然语言，减少因歧义引发的反复确认轮次。
+4. **为验证环节设计退出机制**：认真验证就要花时间和 token，但必须设置重试上限与停止条件，否则"越跑越贵"；走过场的验证不如不设。
+5. **把人类决策成本显式入账**：高风险动作（如合并代码、资金操作）不能让 Agent 拍板，Agent 交付的不只是结果，还要留下完整过程记录，让人能判断和接管。
+6. **聚合步骤预留真实投入**：并行派发很容易，合并很难；Owner 要在事实一致性、引用准确性与风格统一上花真实精力，聚合是共识流水线中最容易被低估的一环。
+
+## 相关实体
+- [MiniMax Agent Team（Mavis）](https://github.com/QianJinGuo/wiki/blob/main/entities/minimax-agent-team-mavis.md) — 本研究的出处与架构上下文
+- [多智能体系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 共识成本所在的研究领域
+- [多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 编排层是控制共识轮次的约束点
+- [多智能体协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — debate 与对抗式验证的对比
+- [多智能体上下文隔离](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-context-isolation.md) — 压缩共享成本的核心手段
+- [Verifier 驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md) — 对抗式验证理念的延伸实践
+- [Orchestrator-Worker 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) — Owner-Worker-Verifier 的近亲模式
+- [多智能体协调 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md) — 相关主题导航
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-agent-team-mavis-owner-worker-verifier.md)
+
+---
+
+## Ch08.028 Routa 多智能体协同交付平台
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/routa-multi-agent-coordination-platform.md`
 
@@ -3630,7 +3680,7 @@ Web 端（Next.js 16.2）和桌面端（Tauri + Rust Axum）共享同一套 `api
 
 ---
 
-## Ch08.027 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
+## Ch08.029 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nature-ai-scientific-assistant-google-futurehouse.md`
 
@@ -3690,9 +3740,9 @@ Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 Fut
 
 ---
 
-## Ch08.028 CoAgent
+## Ch08.030 CoAgent
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/coagent.md`
+> 📊 Level ⭐⭐⭐ | 6.4KB | `entities/coagent.md`
 
 # CoAgent
 
@@ -3704,6 +3754,7 @@ CoAgent 是上海交通大学 IPADS 实验室提出的多 Agent 系统**并发�
 ## 问题背景
 
 多 Agent 并发执行时会出现类似操作系统 Race Condition 的一致性问题，但传统方法在 Agent 场景下低效：
+
 - **悲观加锁**：Agent 任务时长分钟级，锁持有代价过高
 - **乐观并发控制**：Agent 操作真实系统（如 K8s）难以构建暂存区；"读放大"行为导致冲突频繁
 
@@ -3725,6 +3776,7 @@ CoAgent 是上海交通大学 IPADS 实验室提出的多 Agent 系统**并发�
 ### 系统架构
 
 引入**服务 Agent**（Service Agent）作为协调者：
+
 - 构造 Worker 工具并标记读写集
 - 为写操作准备快照/日志兜底
 - 编写撤销逻辑
@@ -3770,7 +3822,7 @@ CoAgent 的工程价值在于其代价-收益比是可接受的：冲突处理�
 
 ---
 
-## Ch08.029 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
+## Ch08.031 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md`
 
@@ -3837,65 +3889,9 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 
 ---
 
-## Ch08.030 Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
+## Ch08.032 TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
 
-> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/crayotter-traceable-multi-agent-long-form-video-editing-ustc-2026.md`
-
-# Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
-
-> **Background**：中科大等团队提出的 Crayotter 系统，从系统工程视角将长视频编辑重构为基于工件（Artifact）溯源的多智能体工作流。论文发表于 2026 年，项目已开源。
-
-## 核心贡献
-
-Crayotter 的核心创新在于将长视频编辑从黑盒生成问题转变为可观测、可定位、可修复的智能体轨迹问题：
-
-- **基于工件的编辑范式**：将 LLM 对话作为唯一状态转变为显式外部工件（检索覆盖率报告、JSON 分析、时间轴规划、过渡规划、工具调用记录、中间渲染输出等），使剪辑动作具备清晰可定位的结构基础。
-
-- **覆盖率感知的多模态素材检索**：将抽象剪辑请求分解为视觉、叙事、风格等维度的覆盖标签，迭代搜索缺失的语义证据，直到素材池覆盖率达到目标阈值。
-
-- **基于环境的反射机制**：当工具调用触发诊断失败（时间戳不准确、转场不平滑、旁白未对齐），智能体仅修复受影响的片段而非重启完整剪辑流程。纠错本质不是反复生成，而是局部编辑特定时间轴或调用特定工具。
-
-- **轨迹级 RLVR 优化框架**：利用 GRPO 算法结合可验证的剪辑信号、LLM 评委评分及人类偏好校准进行优化，表明长视频生成优化需要超越黑盒评分，从底层工具调用准确度、时长匹配度和工件有效性出发重新设计训练目标。
-
-## 方法论
-
-### 拒绝黑盒：寻找可定位的"工件"
-
-Crayotter 引入带有时间戳水印的技术，将时间坐标直接渲染在感知证据上以绑定语义观察与绝对剪辑坐标。研究阶段的智能体不调用任何处理工具，而是进行深度叙事推理，输出极度详尽的"剪辑蓝图"（包含叙事结构、镜头顺序、节奏、转场和旁白意图）。
-
-### 纠错本质：基于环境的反射
-
-执行阶段 ReAct Editor 基于蓝图和素材调用超过 20 个模块化视频编辑工具（裁剪、合并、转场、字幕、响度调整等）。错误定位到特定源片段或时间戳跨度，仅修复受影响工件而非重启。
-
-### 溯源素材：内容覆盖而非盲目生成
-
-素材准备阶段被证明是长视频质量的核心瓶颈——素材缺乏支撑时无论后期工具多强大也无法凭空捏造合理叙事。系统将用户请求扩展为场景、人物/动作、风格等覆盖标签，根据候选视频的边缘覆盖增益重排序，持续搜索直到覆盖率达阈值或预算耗尽。
-
-## 实验评估
-
-在 23 个固定编辑主题的综合评估中，Crayotter 与 CapCut-Mate 和 CutClaw 基线对比，在主题一致性、内容丰富度、叙事连贯性、剪辑流畅度和视觉质量五个维度上均显著优于基线。
-
-## 项目资源
-
-- 论文：https://arxiv.org/abs/2606.07636
-- 代码：https://github.com/idwts/Crayotter
-
-## 相关实体与概念
-
-- [RLVR (Reinforcement Learning with Verifiable Rewards)](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)
-- [GRPO 策略优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/grpo-policy-optimization-2026.md)
-- [多智能体协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)
-- [智能体工作流模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md)
-- [Self-Taught RLVR](https://github.com/QianJinGuo/wiki/blob/main/entities/self-taught-rlvr.md)
-- [2026 年强化学习算法综述](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crayotter-traceable-multi-agent-long-form-video-editing-ustc-2026.md)
-
----
-
-## Ch08.031 TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
-
-> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/tvir-text-visual-interleaved-report-generation-nju-alibaba.md`
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/tvir-text-visual-interleaved-report-generation-nju-alibaba.md`
 
 # TVIR：面向图文交错报告生成的统一基准与智能体框架 — 南大 × 阿里
 
@@ -3954,7 +3950,63 @@ TVIR 为未来可信的多模态深度研究智能体奠定了基础，揭示了
 
 ---
 
-## Ch08.032 OpenRath：以 Session 为核心的多 Agent 运行时状态系统（清华）
+## Ch08.033 Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
+
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/crayotter-traceable-multi-agent-long-form-video-editing-ustc-2026.md`
+
+# Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing
+
+> **Background**：中科大等团队提出的 Crayotter 系统，从系统工程视角将长视频编辑重构为基于工件（Artifact）溯源的多智能体工作流。论文发表于 2026 年，项目已开源。
+
+## 核心贡献
+
+Crayotter 的核心创新在于将长视频编辑从黑盒生成问题转变为可观测、可定位、可修复的智能体轨迹问题：
+
+- **基于工件的编辑范式**：将 LLM 对话作为唯一状态转变为显式外部工件（检索覆盖率报告、JSON 分析、时间轴规划、过渡规划、工具调用记录、中间渲染输出等），使剪辑动作具备清晰可定位的结构基础。
+
+- **覆盖率感知的多模态素材检索**：将抽象剪辑请求分解为视觉、叙事、风格等维度的覆盖标签，迭代搜索缺失的语义证据，直到素材池覆盖率达到目标阈值。
+
+- **基于环境的反射机制**：当工具调用触发诊断失败（时间戳不准确、转场不平滑、旁白未对齐），智能体仅修复受影响的片段而非重启完整剪辑流程。纠错本质不是反复生成，而是局部编辑特定时间轴或调用特定工具。
+
+- **轨迹级 RLVR 优化框架**：利用 GRPO 算法结合可验证的剪辑信号、LLM 评委评分及人类偏好校准进行优化，表明长视频生成优化需要超越黑盒评分，从底层工具调用准确度、时长匹配度和工件有效性出发重新设计训练目标。
+
+## 方法论
+
+### 拒绝黑盒：寻找可定位的"工件"
+
+Crayotter 引入带有时间戳水印的技术，将时间坐标直接渲染在感知证据上以绑定语义观察与绝对剪辑坐标。研究阶段的智能体不调用任何处理工具，而是进行深度叙事推理，输出极度详尽的"剪辑蓝图"（包含叙事结构、镜头顺序、节奏、转场和旁白意图）。
+
+### 纠错本质：基于环境的反射
+
+执行阶段 ReAct Editor 基于蓝图和素材调用超过 20 个模块化视频编辑工具（裁剪、合并、转场、字幕、响度调整等）。错误定位到特定源片段或时间戳跨度，仅修复受影响工件而非重启。
+
+### 溯源素材：内容覆盖而非盲目生成
+
+素材准备阶段被证明是长视频质量的核心瓶颈——素材缺乏支撑时无论后期工具多强大也无法凭空捏造合理叙事。系统将用户请求扩展为场景、人物/动作、风格等覆盖标签，根据候选视频的边缘覆盖增益重排序，持续搜索直到覆盖率达阈值或预算耗尽。
+
+## 实验评估
+
+在 23 个固定编辑主题的综合评估中，Crayotter 与 CapCut-Mate 和 CutClaw 基线对比，在主题一致性、内容丰富度、叙事连贯性、剪辑流畅度和视觉质量五个维度上均显著优于基线。
+
+## 项目资源
+
+- 论文：https://arxiv.org/abs/2606.07636
+- 代码：https://github.com/idwts/Crayotter
+
+## 相关实体与概念
+
+- [RLVR (Reinforcement Learning with Verifiable Rewards)](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)
+- [GRPO 策略优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/grpo-policy-optimization-2026.md)
+- [多智能体协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)
+- [智能体工作流模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md)
+- [Self-Taught RLVR](https://github.com/QianJinGuo/wiki/blob/main/entities/self-taught-rlvr.md)
+- [2026 年强化学习算法综述](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crayotter-traceable-multi-agent-long-form-video-editing-ustc-2026.md)
+
+---
+
+## Ch08.034 OpenRath：以 Session 为核心的多 Agent 运行时状态系统（清华）
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/openrath-session-centered-agent-runtime-tsinghua-2026.md`
 
@@ -4026,37 +4078,7 @@ fork 复制当前状态并保留父子关系；detach 切断父血缘；merge �
 
 ---
 
-## Ch08.033 Cost of Consensus
-
-> 📊 Level ⭐⭐⭐ | 3.5KB | `entities/cost-of-consensus.md`
-
-## 核心发现
-- 2.1-3.4x token 开销用于 Agent 间共识
-- 共识成本是多 Agent 的主要开销来源
-
-## 深度分析
-Cost of Consensus 研究揭示了多 Agent 系统中一个关键但常被忽视的开销维度：**各 Agent 就任务结果达成共识所消耗的 token 成本，往往超过实际任务执行本身的成本**。2.1-3.4x 的共识开销系数意味着，在设计多 Agent 系统时，通信和协调成本必须被作为一等公民来对待。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-**为什么共识如此昂贵**：多 Agent 共识的本质是"让多个 Agent 对同一个结论形成一致置信"。在缺乏全局真的情况下，每个 Agent 需要：(1) 理解其他 Agent 的推理过程；(2) 评估对方论点的有效性；(3) 调整自己的置信度或提出反驳。这需要大量的上下文传递和推理 token 消耗，远超单 Agent 独立决策的开销。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-**这一发现在工程上的重量级**：如果共识开销是主要成本来源，那么多 Agent 系统的吞吐量瓶颈不在计算能力，而在 Agent 间的通信效率。优化方向应该指向：减少不必要的共识需求（Owner-Worker-Verifier 架构中 Verifier 只验证不参与讨论）、压缩共识消息的体积、减少共识轮次。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-**与单 Agent 相比的战略含义**：在任务可以由单个 Agent 完成的情况下，引入多 Agent 共识往往会增加总成本而非减少。只有在以下场景多 Agent 共识才是合理的：(1) 任务需要多专业视角（如安全审查 + 性能审查 + 业务逻辑审查并行）；(2) 单 Agent 的置信度不足以支撑高风险决策；(3) 需要冗余和交叉验证来满足审计要求。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-
-## 实践启示
-1. **在系统设计阶段就把共识成本纳入评估**：比较"单 Agent 完成"vs"多 Agent 共识"的实际 token 成本，不要假设多 Agent 一定更优或更可靠。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-2. **最小化共识范围**：只在关键决策点引入共识机制，非关键路径用单 Agent 决策。Owner-Worker-Verifier 模式中，Verifier 只做验证不参与讨论，可以显著降低共识开销。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-3. **用结构化输出减少歧义**：当必须进行跨 Agent 通信时，使用严格定义的输出格式（JSON schema、状态机事件）而非自然语言，减少因歧义导致的反复确认。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-4. **考虑异步共识而非同步轮询**：多 Agent 间的同步等待是成本最高的模式之一，改用事件驱动/消息队列的异步确认机制，可以在保持一致性的同时大幅降低空转开销。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-5. **在需要高置信度的关键路径上使用多 Agent 共识**：涉及资金、身份、安全、高风险决策的环节，2.1-3.4x 的共识开销可能是值得支付的保险成本。   ^[raw/minimax-agent-team-mavis-owner-worker-verifier]
-
-## 参考
-- [Minimax Agent Team Mavis](https://github.com/QianJinGuo/wiki/blob/main/entities/minimax-agent-team-mavis.md)
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
-
----
-
-## Ch08.034 UnityMAS-O
+## Ch08.035 UnityMAS-O
 
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/unitymas-o-multi-agent-rl-optimization-framework-2026.md`
 
@@ -4080,7 +4102,7 @@ UnityMAS-O 与传统的提示词工程方法有本质区别。传统方法依赖
 
 ---
 
-## Ch08.035 γ-World: 多 Agent 世界建模（NVIDIA Research）
+## Ch08.036 γ-World: 多 Agent 世界建模（NVIDIA Research）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/nvidia-gamma-world-multi-agent-world-model.md`
 

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: 7eecd84ba742870f557edce39bb2c26997e0c25ee6874e9bad429ae98d4903c7
+source_url: "https://mp.weixin.qq.com/s/-hG9PYxYvF1siCx2sakuPA"
 ---
 
 # 【从零训练Steel-LLM】微调阶段优化

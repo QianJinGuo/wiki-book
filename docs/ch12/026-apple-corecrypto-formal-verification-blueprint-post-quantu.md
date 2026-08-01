@@ -10,6 +10,26 @@
 
 Apple Security Engineering and Architecture (SEAR) 联合 Hardware Technologies Formal Verification 团队发布的第一方技术披露，详细介绍了 Apple 如何在 iMessage 部署 PQ3 协议栈（ML-KEM/ML-DSA，FIPS 203/204）时对 corecrypto 核心实现进行**形式化验证**。这是大型科技公司公开其核心密码学代码形式化验证方法论的少数案例之一，对安全工程、Harness Engineering、Post-Quantum 迁移都有借鉴价值。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Apple corecrypto formal veri…"))
+    三个独有贡献（不应合并到现有 entity）
+    形式化验证的工程栈
+    关键方法论
+      Spec extraction
+      Montgomery multiplicati…
+      Constant-time 证明
+      Cross-implementation eq…
+    深度分析
+    实践启示
+    与现有实体的差异化
+    关键术语
+    链接到现有实体
+```
+
 ## 三个独有贡献（不应合并到现有 entity）
 
 1. **核心密码学代码的形式化验证 pipeline**（不是 TLA+ 系统建模）— 与现有 [antfly 博客](../ch03/035-agent.html)（AI agent 在 TLA+/Coq 证明上 hill-climb）属于**不同技术层**。前者是 *软件工程层*（让 AI 写出可验证代码），后者是 *密码学实现层*（用 ACL2/Sawmill 等证明助手验证汇编级恒定时间 + 正确性）。

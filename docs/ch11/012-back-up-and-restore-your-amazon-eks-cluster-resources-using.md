@@ -8,6 +8,25 @@ When you accidentally delete a production namespace or a cluster upgrade fails, 
 In this post, you'll learn to back up and restore Amazon EKS cluster resources and persistent volume data using Velero. You'll deploy a sample stateful application, back it up, and restore it to a different namespace within the same cluster. Along the way, you'll configure least-privilege AWS Identity and Access Management (AWS IAM) roles using Amazon EKS Pod Identity and scope Velero's Kubernetes permissions with a custom ClusterRole. A ClusterRole is a Kubernetes resource that defines cluster-wide permissions.
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Back up and restore your Ama…"))
+    概念导图
+    Prerequisites
+    Velero overview
+    Tutorial
+      Set up environment vari…
+      Configure Amazon S3 and…
+      Install Velero
+    Back up an application
+    Restore an application
+    Clean up
+    Conclusion
+```
+
 ## 概念导图
 
 ```mermaid

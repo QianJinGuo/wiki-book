@@ -15,6 +15,7 @@ series: "古法程序员 Harness Engineering 系列（中篇：Spec 写作）"
 series_parts:
   prev: "Harness 到底指什么"
   next: "Harness 怎么扩展：skill、配置目录与 hook"
+source_url: "unavailable"
 ---
 
 # 复杂任务的 Spec 怎么写

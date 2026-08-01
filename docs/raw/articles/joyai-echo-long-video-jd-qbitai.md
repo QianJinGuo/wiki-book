@@ -11,6 +11,7 @@ review_value: 8
 review_confidence: 8
 review_recommendation: strong
 review_stars: 4
+source_url: "unavailable"
 ---
 
 # 5分钟AI长视频不翻车！国产开源框架杀到全球第一梯队

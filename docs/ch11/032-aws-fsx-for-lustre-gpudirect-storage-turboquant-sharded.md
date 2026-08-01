@@ -8,6 +8,22 @@
 
 > **Core insight**: 把 GPU 加载模型权重的瓶颈从 CPU 旁路（GPUDirect Storage 直传 HBM），配合 TurboQuant KV 压缩，把 LLM 冷启动 TTFT 从 **10-20 分钟降到秒级**。这是 2026 年超大规模 LLM 部署的工程必读。
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS FSx for Lustre + GPUDire…"))
+    背景：Blackwell 时代的模型加载瓶颈
+    解决方案：FSx for Lustre + G…
+    Sharded Parallel Loadin…
+    性能结果（AWS 公开 benchmark）
+    TurboQuant：KV 缓存 6x 压缩
+    与其他方案的对比
+    实践要点
+    与现有实体的差异化
+```
+
 ## 背景：Blackwell 时代的模型加载瓶颈
 
 AWS 在 2026 年 6 月发布 P6e / P6 实例（Blackwell 架构），单 P6e UltraServer 集成 **72 颗 Blackwell GPU、130 TB/s bisection 带宽、13.4 TB HBM3e、360 PFLOPS FP8（720 PFLOPS FP4）**，用于万亿参数规模训练。但即便单节点 P5en / P6 实例，**模型加载仍是冷启动 TTFT 的核心瓶颈**。

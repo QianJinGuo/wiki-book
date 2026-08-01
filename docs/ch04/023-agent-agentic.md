@@ -2,7 +2,7 @@
 
 ## Ch04.023 从数据库到 Agent 原生数据底座，火山引擎发布 Agentic 全栈数据管理服务
 
-> 📊 Level ⭐ | 3.3KB | `entities/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md`
+> 📊 Level ⭐ | 3.9KB | `entities/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md`
 
 # 从数据库到 Agent 原生数据底座，火山引擎发布 Agentic 全栈数据管理服务
 
@@ -12,7 +12,7 @@
 
 > 本文通过article、agent、volcano-engine视角，分析了的技术进展和应用场景。
 
-当数据消费主体从 “Human + Application” 扩张至千万级 AI Agent，传统数据库的能力边界已被彻底打破——海量 AI Agent 全天候自主检索、推理、协作、调度数据，传统数据底座已无法适配全新的业务逻辑。2026 火山引擎 FORCE 原动力大会·SUMMER，火山引擎数据库推出“**Agentic Data Management and Services** ”产品体系，并完成全栈产品升级。  
+当数据消费主体从 “Human + Application” 扩张至千万级 AI Agent，传统数据库的能力边界已被彻底打破——海量 AI Agent 全天候自主检索、推理、协作、调度数据，传统数据底座已无法适配全新的业务逻辑。2026 火山引擎 FORCE 原动力大会·SUMMER，火山引擎数据库推出“**Agentic Data Management and Services** ”产品体系，并完成全栈产品升级。
 
   
 

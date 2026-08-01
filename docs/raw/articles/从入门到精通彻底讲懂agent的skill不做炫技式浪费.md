@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: b2ffa4c4997f4bfafb33f364084b247e96db054646edbb4bae49a1e4d7e0154a
+source_url: "https://mp.weixin.qq.com/s/rMDyAu2nS-USVotiiYMu1w"
 ---
 
 # 从入门到精通：彻底讲懂Agent的Skill，不做“炫技式浪费”

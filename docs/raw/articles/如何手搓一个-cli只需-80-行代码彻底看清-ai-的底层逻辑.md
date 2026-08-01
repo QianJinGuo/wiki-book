@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 63
 stars: 4
 sha256: 42365baa70d0abbca1f154bdb5156bd4c833e6016fae6d31437e1a7a51a52ff4
+source_url: "https://mp.weixin.qq.com/s/vw8UrflhcAOBJs-l7EQ8GA"
 ---
 
 # 如何手搓一个 CLI：只需 80 行代码，彻底看清 AI 的底层逻辑

@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Restrict access to sensitive…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - AWS QuickSight S3 知识库支持文档级 ACL，提供文件夹或单文档级别的精细访问控制 
 - 启用 ACL 后，未明确列入配置的文档或前缀默认拒绝访问（Deny-by-default） 

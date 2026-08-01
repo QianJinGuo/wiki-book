@@ -6,6 +6,7 @@ ingest_date: 2026-07-02
 vxc: 56
 stars: 4
 sha256: 11b011ccd48d60c4d3e3276d274c7a794af1cfcbf8687c63c8c6f8f20877c63b
+source_url: "https://github.com/chaitin/MonkeyCode/"
 ---
 
 # Claude Code 太折腾？这个国产开源 AI 编程平台打开就能用

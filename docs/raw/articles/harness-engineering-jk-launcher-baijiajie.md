@@ -3,6 +3,7 @@ title: "harness-engineering-jk-launcher-baijiajie"
 created: 2026-06-10
 type: raw-article
 sha256: 6e34691673cb47cf250ad2978c449297dd8181171207bc4ab3801a6449fbaa68
+source_url: "https://mp.weixin.qq.com/s/77dyufF3MP8stHPS0BApNw"
 ---
 source_url: https://mp.weixin.qq.com/s/77dyufF3MP8stHPS0BApNw
 source_title: 万字干货！Harness Engineering如何工程化落地？

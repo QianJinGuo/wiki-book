@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: eae957ad8b3bcb2842da22a24b161c392d15590578f7466c3ca671fd94367ee5
+source_url: "https://mp.weixin.qq.com/s/fMPSK00Lxb0uv90sun_BYQ"
 ---
 
 # 多 Agent 不是虚拟公司：从 Anthropic 五种模式看信息流怎么设计

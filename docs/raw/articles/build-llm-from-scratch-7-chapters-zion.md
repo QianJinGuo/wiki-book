@@ -10,6 +10,7 @@ review_confidence: true
 tags: [LLM, Transformer, GPT, pretraining, fine-tuning, PyTorch, 教程]
 abstract: 从零构建 LLM 系统性教程，分 Stage 1（数据+注意力）、Stage 2（GPT+预训练）、Stage 3（微调）三阶段，含完整 Python/PyTorch 代码，Makeling LLM 风格。
 sha256: 94395f57cbe451a4c7d440b81cf99b8775533d0a297dff07c06cad40741149ad
+source_url: "unavailable"
 ---
 ---
 # 从零构建大语言模型 —— 读完这篇你就懂了

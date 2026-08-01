@@ -4,6 +4,17 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/arctic-wolf-security-operations-machine-speed.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Guide to Security Operations…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 核心要点
 - AI/机器学习正在变革安全运营（SOC），实现机器级速度的威胁检测与响应
 - 成熟度评估框架：评估组织安全运营成熟度的关键维度

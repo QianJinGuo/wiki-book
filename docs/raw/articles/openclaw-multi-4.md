@@ -5,6 +5,7 @@ url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-opencl
 source: rss
 feed_name: AWS China Blog
 sha256: 7b5287092eb4ad74f25b50f413a036fd01f7582007debbfe5c0d7120c34a4948
+source_url: "unavailable"
 ---
 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客
 Skip to Main Content

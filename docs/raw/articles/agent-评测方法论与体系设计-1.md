@@ -6,6 +6,7 @@ ingest_date: 2026-07-02
 vxc: 81
 stars: 5
 sha256: b72715c7dfd0eaa64e74c3c4ea22b731fef44f46b460d1f060cd36c35d0da0a0
+source_url: "unavailable"
 ---
 
 # Agent 评测：方法论与体系设计

@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 1fd6aae977c708a0e66940a2bca81289f4850ba8b600c42fe82bd56d8928ac60
+source_url: "https://mp.weixin.qq.com/s/h49UiGERvz8BMkMW0_4Gwg"
 ---
 
 # Agent Harness 综述：同一个模型，为什么做出来的 Agent 差这么远

@@ -10,6 +10,7 @@ value: 7
 stars: 3
 description: "AI 设计工具 Huashu-Design 2.0 推翻重写: 撞/借/请 三套逻辑反安全极简 + 图片前置 (Wikimedia Commons 真实图) + 事实验证先于假设 (第 0 原则) — 3 个可泛化 Agent Skill 设计模式"
 created: 2026-06-10
+source_url: "unavailable"
 ---
 
 ## 坑二 · 内容网站没有真图 = 空壳

@@ -10,6 +10,30 @@
 
 > **Core insight**: Netflix Live 运营经历了四代演进：从工程师值守（All-Hands）→ 专业工程团队（SOE+BOE）→ 飞机驾驶舱模式（1:1 双人操作）→ TOC Fleet Model（三专分工：TCO/SCO/BCO），配合 Live Command Center 的全链路可观测性与 LOL 四级预警机制，实现从月均 1 场到日均 70 场的运营规模化
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Netflix Live 运营体系：TOC Fleet …"))
+    BOC 广播运营中心：信号冗余架构
+    TOC Fleet Model：大规模并发运营分工
+    Live Command Center：端到端…
+    LOL 四级预警与事件分级体系
+    关键数据/实践启示
+    深度分析
+      1. 四代演进的核心驱动力：规模 vs 人力效率
+      2. BOC 信号冗余的航空级工程哲学
+      3. LOL 四级预警是'运营可持续性'设计
+      4. LCC 的 38M events/sec…
+    实践启示
+      1. 大规模运营团队：采用 Fleet Mod…
+      2. 直播系统：信号冗余是强制要求而非可选优化
+      3. 运营可持续性：设计分级战备而非全天候高压
+      4. 可观测性：设计'行动视图'而非'数据仪表板'
+    相关实体
+```
+
 ## BOC 广播运营中心：信号冗余架构
 Broadcast Operations Center（BOC）是直播事件的核心指挥舱，从场馆接收完整制作信号后进行信号接入、检查、 conditioning、字幕处理、图形插入和广告管理。BOC 使用 hub-and-spoke 架构，通过 SMPTE 2022-7 无缝切换（双独立网络路径）和 SRT 贡献系统实现信号传输的高冗余。场馆端要求三路完全独立的传输路径（主备光纤 + 卫星 + 企业互联网 + SRT），所有硬件使用双路独立电源（UPS 保护），并要求在每次播出前执行 FACS/FAX 设施检查验证音视频同步、字幕和备用切换器输入。
 

@@ -8,6 +8,21 @@
 
 > 原文标题: Simplify model selection in Amazon Bedrock with the open source Model Profiler
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Simplify model selection in …"))
+    深度分析
+      1. 模型选型的碎片化困境
+      2. 数据管线架构的技术亮点
+      3. 从工具到工作流：模型选型的结构化方法
+      4. 对企业 AI 基础设施决策的影响
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 Amazon Bedrock Model Profiler 是一个开源工具，帮助团队在 120+ 基础模型（FMs）中做出数据驱动的选型决策。该工具整合来自 7 个数据源（5 个 AWS API + 2 个公共 URL）的模型元数据，提供可搜索的模型浏览器、多模型对比、区域可用性矩阵和收藏夹功能。全自动无服务器数据流水线每日自动刷新，8–12 分钟完成全流程，缓存命中率达 97%。

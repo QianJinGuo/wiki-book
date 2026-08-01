@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **55 篇**实体，按深度递增排列。
+> 本章收录 **56 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 16 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 35 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
@@ -31,7 +31,7 @@
 
 ## Ch17.001 Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google
 
-> 📊 Level ⭐ | 9.0KB | `entities/perceptron-mk1-video-analysis-ai.md`
+> 📊 Level ⭐ | 8.9KB | `entities/perceptron-mk1-video-analysis-ai.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perceptron-mk1-video-analysis-ai.md)
 
@@ -155,7 +155,22 @@ ImageToVideo.ai 代表了 AI 生成媒体的一个具体方向：**静态图像�
 
 ---
 
-## Ch17.003 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
+## Ch17.003 vibe一下能自动画工程图做3d装配的ai来了丨上海ai-lab
+
+> 📊 Level ⭐ | 0.8KB | `entities/vibe一下能自动画工程图做3d装配的ai来了丨上海ai-lab.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe一下能自动画工程图做3d装配的ai来了丨上海ai-lab.md)
+
+当大模型开始“使用电脑”，我们似乎离真正的AI自动化又近了一步。
+
+## 来源
+
+- 原文: [vibe一下能自动画工程图做3d装配的ai来了丨上海ai-lab](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe一下能自动画工程图做3d装配的ai来了丨上海ai-lab.md)
+- 原始链接: : https://mp.weixin.qq.com/s/CBOnf4oVQL7S12Gss-O67w
+
+---
+
+## Ch17.004 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
 
 > 📊 Level ⭐⭐ | 17.2KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
 
@@ -252,6 +267,7 @@ ImageToVideo.ai 代表了 AI 生成媒体的一个具体方向：**静态图像�
 > 团队曾把训练数据集扩容至原有 **10 倍**体量，**结果出乎意料：AudioSet 公开测试集指标不升反降，切回业务场景实测效果同样变差**。
 
 **关键认知**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+
 - 开源基准指标和实际业务指标**高度正相关**
 - **盲目扩量是无效的，音频数据的质量优先级远大于单纯的数据体量**
 
@@ -436,7 +452,7 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 ---
 
-## Ch17.004 Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
+## Ch17.005 Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
 
 > 📊 Level ⭐⭐ | 14.0KB | `entities/pixelle-video-aidc-ali-international-2026.md`
 
@@ -583,9 +599,9 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 ---
 
-## Ch17.005 美团海报生成 AIGC 技术创新与实践
+## Ch17.006 美团海报生成 AIGC 技术创新与实践
 
-> 📊 Level ⭐⭐ | 11.7KB | `entities/meituan-poster-aigc-production-practice.md`
+> 📊 Level ⭐⭐ | 12.4KB | `entities/meituan-poster-aigc-production-practice.md`
 
 # 美团海报生成 AIGC 技术创新与实践
 
@@ -655,6 +671,7 @@ PosterOmni 的核心技术挑战是**多任务冲突**。六类设计任务（�
 | 全局创作（Layout-driven/Style-driven） | 强调风格抽象和重构 | 风格抽象 vs 细节保真 |
 
 PosterOmni 的解决方案是"**先拆开学，再集合**"的蒸馏框架：
+
 1. **分别训练专家模型**：局部编辑专家学习低层级图像变形的精确控制，全局创作专家学习高层级风格和版式重组
 2. **任务蒸馏**：统一学生模型（PosterOmni-SFT）通过蒸馏损失逼近两个专家模型的行为，损失函数 = 文本渲染损失 + λ × 蒸馏损失
 3. **统一奖励模型**：训练 task-aware 奖励模型（非通用 VLM 评分），输出"视觉质量 + 任务完成度"的综合分数
@@ -673,12 +690,14 @@ PosterReward 代表了 AIGC 评估从"整体美不美"到"结构和内容对不�
 PosterReward 的工程实现分为两条互补路径：
 
 **路径一：真实海报的结构化评估（面向存量素材）**
+
 - 内容定位模型（准确率 90%+，定位 12 种常见元素）
 - 构图美学评分（5 分制误差仅 0.38）
 - 主色系识别（准确率 96.2%，支持 11 种色系）
 - 风格识别（准确率 91.5%，支持 12 种风格）
 
 **路径二：AI 生成海报的奖励模型（面向增量生成）**
+
 - 7 万高质量偏好对的自动化构建管线（多模型共识验证）
 - 四阶段级联训练（SFT → RSFT → 评分模块 → GRPO 强化学习）
 - 在 PosterRewardBench-Advanced 上达到 86% 准确率，远超基线 40-53%
@@ -713,7 +732,7 @@ PosterReward 的工程实现分为两条互补路径：
 
 ---
 
-## Ch17.006 Normalizing Trajectory Models
+## Ch17.007 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/ntm-normalizing-trajectory-models.md`
 
@@ -800,86 +819,9 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ---
 
-## Ch17.007 MineExplorer: 多模态能力断层
-
-> 📊 Level ⭐⭐ | 9.4KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
-
-# MineExplorer: 多模态能力断层
-
-> **v×c score**: 64 | stars=4
-> **来源**: https://mp.weixin.qq.com/s/P3yzceXkVxth7Q63nRfBLg
-> **发布**: 美团技术团队 (2026-07-23)
-
-有技术深度的文章。
-
-## 摘要
-
-MineExplorer 是美团 LongCat 团队构建的**首个在开放世界中做到分钟级长程任务的评测基准**，基于 Minecraft 沙盒环境系统性评测 18 款顶级多模态大模型在动态、含隐藏前置条件的长程任务中的真实能力。结果显示，最强模型 Claude-Opus-4.6 的整体任务成功率仅 41 分，从 1 跳任务的 77 分骤降至 4 跳任务的 12 分，揭示了当前模型"感知尚可、推理薄弱、探索无能"的根本性能力断层。
-
-## 核心要点
-
-1. **动态开放世界评测**：与静态截图问答不同，MineExplorer 在实时 3D 沙盒中运行任务，每个实例执行 1800 环境步（3 分钟连续交互），环境持续变化。
-2. **隐藏前置条件的多跳任务**：通过 1-4 hop 任务分级，核心挑战是最终目标包含未在指令中说明的隐藏前置子任务。最强模型 4-hop 成功率仅 12%。
-3. **知识解耦设计**：通过 LLM 裁判过滤掉 Minecraft 专有知识，确保评测的是通用探索能力而非"背 Wiki"能力。
-4. **多智能体数据合成**：用 5 个专业 Agent 协作造题，包含 orchestration 和 debate 两个阶段，有效率提升约 30 个百分点，最终保留 813 个高质量实例。
-5. **三大能力维度 14 项细粒度评测**：感知（空间/时序/实体/状态/资源）、推理（常识/因果/关系）、行动（移动/跳跃/采集/放置/合成/攻击）。
-6. **额外步数与记忆不是解药**：消融实验显示，增加步数或历史帧数到一定程度后性能反而下降，瓶颈不在资源而在模型无法将已有信息与当前世界状态对齐。
-
-## 深度分析
-
-### 为什么"会看"不等于"会探索"？
-
-MineExplorer 最重要的洞察是：在所有被测模型上，**感知分数 > 行动分数 > 推理分数**。以 Claude-Opus-4.6 为例，感知分 61.91，推理分 54.71。这意味着模型能"看见"环境中的物体和状态，但无法将多个视觉观察串联成一个有效的行动策略。
-
-这个发现与具身 AI 领域的一个核心假设一致：感知层的进展超过了规划层。当前最强的视觉模型已经可以在静态图像上达到甚至超越人类水平，但在**动态、具身、需要持续重规划**的环境中，感知到规划的转化仍然是瓶颈。MineExplorer 把这个定性判断变成了可量化的数据。
-
-### 隐藏前置条件：大模型的"认知盲区"
-
-MineExplorer 的四跳任务中，成功率从 77%（1-hop）到 12%（4-hop），每增加一层隐藏前置条件，性能掉一个台阶。这不仅仅是"任务变长了"，而是任务结构从"执行已知步骤序列"变成了"推断出未明确说明的步骤序列"。
-
-这暴露了当前大模型的一个根本性局限：**它们擅长在明确定义的搜索空间内优化，但不擅长在开放、未完全指定的空间中推断出缺失步骤**。这个局限在受控的 QA 基准（如 MMLU）中被完全隐藏了，因为那里所有必要信息都已包含在问题中。MineExplorer 的隐藏前置条件设计是对这种"温室评测"的直接批判。
-
-### 60% 的失败来自导航 —— 对具身 AI 的警示
-
-MineExplorer 的失败归因分析揭示了一个惊人事实：Claude-Opus-4.6 近 60% 的失败来自导航失败。模型无法在 3D 空间中持续追踪自己的位置和目标位置，或者在探索过程中迷失了方向。这不是视觉感知失败（模型能看到物体），而是空间推理和路径规划的失败。
-
-这对快速升温的具身智能赛道有着直接的警示：当机器人模型在受控演示中表现优秀，但在真实、动态、长程的任务中失败时，问题可能不在于感知能力，而在于空间推理和持续重规划能力的缺失。
-
-### 多智能体数据合成流程的工程价值
-
-MineExplorer 的方法论本身也值得关注。团队使用 5 个专业 Agent 组成的协作流程（orchestrator + specialist + verifier）来自动化生成训练数据。两个阶段（初始化和辩论）的设计允许 Agent 初稿生成后由验证器发现问题并迭代修订。这个范式对于任何需要高质量合成数据的场景都具有通用参考价值。
-
-## 实践启示
-
-1. **评测基准应反映真实世界复杂度**：如果仅使用静态 QA 基准评估多模态模型，会严重高估其真实能力。任何面向具身 AI、机器人或开放世界任务的选型评估，都应引入 MineExplorer 式的动态、多跳、含隐藏前置条件的评测。
-
-2. **感知层到规划层的转化是当前最大瓶颈**：在优化多模态 Agent 时，应优先关注"从视觉输入到行动序列"的推理能力，而非继续提升视觉 encoder 的分辨率。MineExplorer 的三维能力分数（感知 > 行动 > 推理）给出了明确的优化优先级。
-
-3. **隐藏前置条件的推理训练应成为重点**：当前训练数据大多是"指令-执行"配对。要提升模型在开放世界中的能力，需要加入含有隐藏条件的训练示例，让模型学会"推断未说明的需求"。
-
-4. **多智能体协作造线是高质量数据生成的有效范式**：MineExplorer 的多智能体数据合成流程为任何需要大规模合成训练数据的团队提供了可复用的范式 —— 使用 orchestrator 协调多个 specialist + verifier Agent，通过辩论阶段提升数据质量。
-
-5. **具身智能的资源分配关注点**：增加计算资源（步数、记忆帧数）不是解决能力的可行路径。模型需要改进的是"如何将已有信息与当前状态对齐"的认知架构，而非提供更多信息。
-
-## 相关实体
-
-- 多模态大模型 — MineExplorer 的评测对象，18 款顶级模型的系统性评测揭示了能力断层
-- 具身智能 (Embodied AI) — MineExplorer 的评测结果为该赛道提供了关键瓶颈定位
-- 美团 LongCat 团队 — MineExplorer 的构建团队
-- 开放世界评测 (Open-World Evaluation) — MineExplorer 代表的动态、含隐藏条件的新评测范式
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
-
----
-
 ## Ch17.008 Automatically redact PII in images with Amazon Nova
 
-> 📊 Level ⭐⭐ | 9.2KB | `entities/automatically-redact-pii-in-images-with-amazon-nova.md`
+> 📊 Level ⭐⭐ | 9.5KB | `entities/automatically-redact-pii-in-images-with-amazon-nova.md`
 
 # Automatically redact PII in images with Amazon Nova
 
@@ -965,113 +907,86 @@ Organizations processing large volumes of images (e.g., social media platforms, 
 
 ---
 
-## Ch17.009 LLaVA-OneVision-2：全帧率视频理解
+## Ch17.009 MineExplorer: 多模态能力断层
 
-> 📊 Level ⭐⭐ | 9.2KB | `entities/llava-onevision-2-full-frame-rate-vlm.md`
+> 📊 Level ⭐⭐ | 9.4KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
 
-## 核心问题
-**视频被当作一组图片处理——巨大的浪费。**
-1. **算力浪费**：视频原本连续，相邻帧天然存在关系。但传统流程把视频解码成静态图片，连续结构被打散，模型用昂贵计算把关系重新学回来。
-2. **信息结构浪费**：视频编码器早已建模 I帧（完整空间上下文）、P帧（记录运动和残差变化）、运动向量、残差——描述哪些内容稳定不变、哪些内容发生了变化。但现有 VLM 先把这些结构全部解开，再让模型重新发现一遍。
+# MineExplorer: 多模态能力断层
 
-## 核心方案：OneVision-Encoder
-**思路：** 直接利用视频 codec 中已有的信息结构（I帧/P帧/运动向量/残差），构建更 compact 的 token 或表示，让本来就存在于视频里的运动、变化和连续关系直接传给模型。
-| 组件 | 说明 |
-|------|------|
-| 架构 | "视觉基座—projector—LLM"（LLaVA 延续） |
-| 视觉编码器 | OneVision-Encoder（24层 ViT） |
-| 位置编码 | 共享时间、高度、宽度三个维度 |
-| 视频输入策略 | 基于 codec 的密集视频输入 |
-| 训练框架 | 百度百舸 LoongForge |
-| 训练扩展 | 四阶段：30秒 → 10-15分钟长视频 |
-**Token 效率：约 1/8 推理成本。** 一秒 24 帧 = 2400 token；100万上下文窗口仅容纳约 7 分钟全帧率视频。
+> **v×c score**: 64 | stars=4
+> **来源**: https://mp.weixin.qq.com/s/P3yzceXkVxth7Q63nRfBLg
+> **发布**: 美团技术团队 (2026-07-23)
 
-## 为什么抽帧不够
-- 关键动作可能只持续极短时间，固定间隔抽帧可能刚好错过
-- 时序定位（全帧率更精准）需要知道事件何时开始、何时结束
-- 视频 Agent（剪辑 Agent）底层需要准确定位动作起点终点
-- Coding agent 表现更好是因为代码是高质量文本；视频 agent 面对长视频 + 密集时序 + 大量视觉冗余，难度完全不在一个量级
+有技术深度的文章。
 
-## 分层部署路径
-```
-大模型冷启动（从无到有）
-    ↓
-中等模型快速迭代（2000卡→200卡，分钟级迭代版本）
-    ↓
-小模型规模化部署（长期低成本运行）
-```
+## 摘要
 
-- **边缘哨兵**：现场解析原始视频为结构化信息，筛掉无效数据，传有价值信息给上级
-- **算法运营中心**：二次识别复核、报警管理、模型迭代、业务编排
-- **算法训练中心**：私有化部署到客户数据中心，数据不离开客户体系
+MineExplorer 是美团 LongCat 团队构建的**首个在开放世界中做到分钟级长程任务的评测基准**，基于 Minecraft 沙盒环境系统性评测 18 款顶级多模态大模型在动态、含隐藏前置条件的长程任务中的真实能力。结果显示，最强模型 Claude-Opus-4.6 的整体任务成功率仅 41 分，从 1 跳任务的 77 分骤降至 4 跳任务的 12 分，揭示了当前模型"感知尚可、推理薄弱、探索无能"的根本性能力断层。
 
-## 全帧率 vs 抽帧
-| | 抽帧 | 全帧率（OneVision-Encoder） |
-|---|---|---|
-| 关键动作定位 | 可能漏掉 | 精准捕获 |
-| 时序信息 | 丢失 | 完整保留 |
-| Token 成本 | 高（重复编码相似帧） | 降至约 1/8 |
-| 推理成本 | 线性增长 | 压缩冗余后高效 |
+## 核心要点
 
-## 具身智能 & 未来方向
-- **VLM → 具身主干**：VLM 高效处理连续视频 + 空间关系 + 目标变化 → 可能成为具身系统主干模型
-- **流式理解**：不等整个视频结束，边进边持续理解判断（监控、直播、交互式视频）
-- **理解生成一体**：图像/视频的理解和生成，目前往往是两套系统；理解是底座，底座足够好，上层的生成和编辑才有更高上限
-
-## 关键数字
-| 指标 | 数值 |
-|------|------|
-| 一小时视频帧数（24 FPS） | ~9万帧 |
-| 一秒视频 token 数 | ~2400 token |
-| 100万上下文窗口 | 仅约 7 分钟全帧率 |
-| Token 成本节省 | 约 **1/8** |
-| 视频理解扩展 | 30秒 → 10-15分钟 |
-| 中等模型成本下降 | 2000卡 → 200卡 |
-
-## 相关链接
-- GitHub: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2
-- 模型: https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
-- 技术报告: https://cdn.jsdelivr.net/gh/anxiangsir/ov2_asset@main/LLaVA_OneVision_2.pdf
-
-## 相关概念
-- LLaVA系列 — 视觉基座—projector—LLM 架构（实体不存在，待创建）
-- 视频理解 — 全帧率 vs 抽帧（实体不存在，待创建）
-- 视觉编码器 — OneVision-Encoder（实体不存在，待创建）
-- 具身智能 — VLM 成为具身大脑 backbone（实体不存在，待创建）
+1. **动态开放世界评测**：与静态截图问答不同，MineExplorer 在实时 3D 沙盒中运行任务，每个实例执行 1800 环境步（3 分钟连续交互），环境持续变化。
+2. **隐藏前置条件的多跳任务**：通过 1-4 hop 任务分级，核心挑战是最终目标包含未在指令中说明的隐藏前置子任务。最强模型 4-hop 成功率仅 12%。
+3. **知识解耦设计**：通过 LLM 裁判过滤掉 Minecraft 专有知识，确保评测的是通用探索能力而非"背 Wiki"能力。
+4. **多智能体数据合成**：用 5 个专业 Agent 协作造题，包含 orchestration 和 debate 两个阶段，有效率提升约 30 个百分点，最终保留 813 个高质量实例。
+5. **三大能力维度 14 项细粒度评测**：感知（空间/时序/实体/状态/资源）、推理（常识/因果/关系）、行动（移动/跳跃/采集/放置/合成/攻击）。
+6. **额外步数与记忆不是解药**：消融实验显示，增加步数或历史帧数到一定程度后性能反而下降，瓶颈不在资源而在模型无法将已有信息与当前世界状态对齐。
 
 ## 深度分析
-**抽帧方案的隐性成本：省了 token，省不了信息损失。**
-固定间隔抽帧（如每秒1帧）是典型的"为了省 token 而引入偏差"的策略。当一个视频里关键动作只持续 3-5 帧时（24FPS 下不到 0.2 秒），固定间隔抽帧有极大概率完美错过。表面上看 token 成本降低了，但模型的"事件检测能力"也随之降低——这不是算法问题，是信息论问题：时序连续性被打散后，隐含的因果关系需要额外的计算才能重建，而且往往重建不完整。OneVision-Encoder 核心洞察是：视频 codec 已经把连续信息结构化建模好了，为什么不用？
-**Token 效率 1/8 的意义：不是压缩，是结构化复用。**
-1/8 的 Token 成本节省如果只是"更激进的帧间差异压缩"，那么代价一定是信息损失。但 OneVision-Encoder 的思路不同：它利用 I帧/P帧/运动向量/残差这些 codec 已有结构——这些都是视频压缩中已经做好的信息结构化表示，模型直接使用这些表示而不是重新从像素级特征中推导。这意味着压缩和结构化是一体的，不是先压缩再补救信息。Token 数量减少，但每个 token 携带的信息密度提高了。
-**100万上下文仅覆盖7分钟：这对实际应用意味着什么？**
-7分钟全帧率视频 ≈ 100万 token 输入给 LLM。这个数字表面看起来很小，但实际视频理解任务很少需要连续处理整段视频。以视频剪辑 Agent 为例：它的核心操作模式是"定位 → 分析 → 定位 → 分析"的循环，不是"一次性输入整段视频"。真正需要处理长视频的场景（如视频摘要、跨镜头分析）更可能采用分段处理 + 全局汇总的架构。100万 token 的限制影响的是单次处理上限，而不是整体系统能力。
-**分层部署架构的本质：不是"大模型→小模型"，而是"专家模型→通才模型"。**
-大模型冷启动 → 中模型快速迭代 → 小模型规模化，这条路径的内在逻辑不是"蒸馏压缩"，而是"角色分工"。大模型（30B+）负责从无到有的推理，发现视频中存在的模式；中模型（7B~13B）负责在已知模式下的快速决策；小模型（1B~3B）负责现场的结构化筛选，不传原帧，传"事件+时间戳+关键特征"。这三层模型针对的任务类型完全不同，是真正的 specialized pipeline，不只是规模的简单递减。
 
-## 相关链接
-- [Llava Onevision 2 Full Frame Rate Vlm](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)
+### 为什么"会看"不等于"会探索"？
 
-## 相关实体
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](https://github.com/QianJinGuo/wiki/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
+MineExplorer 最重要的洞察是：在所有被测模型上，**感知分数 > 行动分数 > 推理分数**。以 Claude-Opus-4.6 为例，感知分 61.91，推理分 54.71。这意味着模型能"看见"环境中的物体和状态，但无法将多个视觉观察串联成一个有效的行动策略。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
+这个发现与具身 AI 领域的一个核心假设一致：感知层的进展超过了规划层。当前最强的视觉模型已经可以在静态图像上达到甚至超越人类水平，但在**动态、具身、需要持续重规划**的环境中，感知到规划的转化仍然是瓶颈。MineExplorer 把这个定性判断变成了可量化的数据。
+
+### 隐藏前置条件：大模型的"认知盲区"
+
+MineExplorer 的四跳任务中，成功率从 77%（1-hop）到 12%（4-hop），每增加一层隐藏前置条件，性能掉一个台阶。这不仅仅是"任务变长了"，而是任务结构从"执行已知步骤序列"变成了"推断出未明确说明的步骤序列"。
+
+这暴露了当前大模型的一个根本性局限：**它们擅长在明确定义的搜索空间内优化，但不擅长在开放、未完全指定的空间中推断出缺失步骤**。这个局限在受控的 QA 基准（如 MMLU）中被完全隐藏了，因为那里所有必要信息都已包含在问题中。MineExplorer 的隐藏前置条件设计是对这种"温室评测"的直接批判。
+
+### 60% 的失败来自导航 —— 对具身 AI 的警示
+
+MineExplorer 的失败归因分析揭示了一个惊人事实：Claude-Opus-4.6 近 60% 的失败来自导航失败。模型无法在 3D 空间中持续追踪自己的位置和目标位置，或者在探索过程中迷失了方向。这不是视觉感知失败（模型能看到物体），而是空间推理和路径规划的失败。
+
+这对快速升温的具身智能赛道有着直接的警示：当机器人模型在受控演示中表现优秀，但在真实、动态、长程的任务中失败时，问题可能不在于感知能力，而在于空间推理和持续重规划能力的缺失。
+
+### 多智能体数据合成流程的工程价值
+
+MineExplorer 的方法论本身也值得关注。团队使用 5 个专业 Agent 组成的协作流程（orchestrator + specialist + verifier）来自动化生成训练数据。两个阶段（初始化和辩论）的设计允许 Agent 初稿生成后由验证器发现问题并迭代修订。这个范式对于任何需要高质量合成数据的场景都具有通用参考价值。
 
 ## 实践启示
-**选型判断：你的场景是"理解"还是"定位"？**
-如果核心需求是"这段视频里发生了什么"（视频摘要、内容理解），抽帧 + VLM 的方案在大多数情况下已经够用，Token 成本也更低。如果核心需求是"动作 X 发生在视频的哪个精确时间点"（剪辑、监控告警、具身机器人），全帧率是刚需——这时候抽帧的错误率会直接影响任务完成质量。明确这个区别，再决定要不要上 OneVision-Encoder。
-**边缘部署：小模型在现场做的事是"筛"不是"判"。**
-边缘哨兵节点（1B~3B 模型）不应该做最终判断——它的职责是把原始视频压缩为"有意义的结构化事件"（时间戳、事件类型、置信度、关键帧索引），然后把结构化数据传给上级。这样做有两个好处：边缘带宽需求大幅降低；上级中心可以用更少的上下文 token 处理更多路视频。设计边缘→中心的通信协议时，应该传"事件描述对象"而不是"关键帧图片+时间戳"。
-**模型迭代策略：先在长视频上测准，再缩短到实用长度。**
-文章提到四阶段训练：30秒 → 10-15分钟。实际落地时，建议先用公开数据集（ActivityNet、YouCook2 等）验证模型在全帧率下的时序定位精度，达到基线后再针对自己的目标场景做微调。不要一上来就追求10分钟+的处理能力——先确保30秒级别精度可接受，再扩展上下文窗口长度。
-**多模态 Agent 开发者：视频理解 ≠ 视频生成，底座通用是优势。**
-LLaVA-OneVision-2 解决的是理解侧问题，而当前很多视频生成模型（如 Sora、Runway）解决的是生成侧问题。两者的底座技术路径不同，但理解是生成的上游——理解得越细，生成的约束条件越精确。未来如果出现"理解+生成一体化"的系统，高质量的视频理解底座（如 OneVision-Encoder）会是关键的 infrastructure 优势。多模态 Agent 开发者在选型时可以考虑这个趋势。
+
+1. **评测基准应反映真实世界复杂度**：如果仅使用静态 QA 基准评估多模态模型，会严重高估其真实能力。任何面向具身 AI、机器人或开放世界任务的选型评估，都应引入 MineExplorer 式的动态、多跳、含隐藏前置条件的评测。
+
+2. **感知层到规划层的转化是当前最大瓶颈**：在优化多模态 Agent 时，应优先关注"从视觉输入到行动序列"的推理能力，而非继续提升视觉 encoder 的分辨率。MineExplorer 的三维能力分数（感知 > 行动 > 推理）给出了明确的优化优先级。
+
+3. **隐藏前置条件的推理训练应成为重点**：当前训练数据大多是"指令-执行"配对。要提升模型在开放世界中的能力，需要加入含有隐藏条件的训练示例，让模型学会"推断未说明的需求"。
+
+4. **多智能体协作造线是高质量数据生成的有效范式**：MineExplorer 的多智能体数据合成流程为任何需要大规模合成训练数据的团队提供了可复用的范式 —— 使用 orchestrator 协调多个 specialist + verifier Agent，通过辩论阶段提升数据质量。
+
+5. **具身智能的资源分配关注点**：增加计算资源（步数、记忆帧数）不是解决能力的可行路径。模型需要改进的是"如何将已有信息与当前状态对齐"的认知架构，而非提供更多信息。
+
+## 相关实体
+
+- 多模态大模型 — MineExplorer 的评测对象，18 款顶级模型的系统性评测揭示了能力断层
+- 具身智能 (Embodied AI) — MineExplorer 的评测结果为该赛道提供了关键瓶颈定位
+- 美团 LongCat 团队 — MineExplorer 的构建团队
+- 开放世界评测 (Open-World Evaluation) — MineExplorer 代表的动态、含隐藏条件的新评测范式
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 
 ---
 
 ## Ch17.010 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
 
-> 📊 Level ⭐⭐ | 9.0KB | `entities/小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow-xiaomi.md`
+> 📊 Level ⭐⭐ | 9.4KB | `entities/小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow-xiaomi.md`
 
 # 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
 
@@ -1154,9 +1069,129 @@ Daniel Povey 加入小米这件事本身具有标志性——一位定义了一�
 
 ---
 
-## Ch17.011 How transparent is DiffusionGemma (and why it matters)
+## Ch17.011 LLaVA-OneVision-2：全帧率视频理解
 
-> 📊 Level ⭐⭐ | 8.0KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
+> 📊 Level ⭐⭐ | 9.3KB | `entities/llava-onevision-2-full-frame-rate-vlm.md`
+
+## 核心问题
+**视频被当作一组图片处理——巨大的浪费。**^[].md]
+
+1. **算力浪费**：视频原本连续，相邻帧天然存在关系。但传统流程把视频解码成静态图片，连续结构被打散，模型用昂贵计算把关系重新学回来。
+2. **信息结构浪费**：视频编码器早已建模 I帧（完整空间上下文）、P帧（记录运动和残差变化）、运动向量、残差——描述哪些内容稳定不变、哪些内容发生了变化。但现有 VLM 先把这些结构全部解开，再让模型重新发现一遍。
+
+## 核心方案：OneVision-Encoder
+**思路：** 直接利用视频 codec 中已有的信息结构（I帧/P帧/运动向量/残差），构建更 compact 的 token 或表示，让本来就存在于视频里的运动、变化和连续关系直接传给模型。^[].md]
+
+| 组件 | 说明 |
+|------|------|
+| 架构 | "视觉基座—projector—LLM"（LLaVA 延续） |
+| 视觉编码器 | OneVision-Encoder（24层 ViT） |
+| 位置编码 | 共享时间、高度、宽度三个维度 |
+| 视频输入策略 | 基于 codec 的密集视频输入 |
+| 训练框架 | 百度百舸 LoongForge |
+| 训练扩展 | 四阶段：30秒 → 10-15分钟长视频 |
+**Token 效率：约 1/8 推理成本。** 一秒 24 帧 = 2400 token；100万上下文窗口仅容纳约 7 分钟全帧率视频。^[].md]
+
+## 为什么抽帧不够
+- 关键动作可能只持续极短时间，固定间隔抽帧可能刚好错过
+- 时序定位（全帧率更精准）需要知道事件何时开始、何时结束
+- 视频 Agent（剪辑 Agent）底层需要准确定位动作起点终点
+- Coding agent 表现更好是因为代码是高质量文本；视频 agent 面对长视频 + 密集时序 + 大量视觉冗余，难度完全不在一个量级
+
+## 分层部署路径
+```
+大模型冷启动（从无到有）
+    ↓
+中等模型快速迭代（2000卡→200卡，分钟级迭代版本）
+    ↓
+小模型规模化部署（长期低成本运行）
+```
+
+- **边缘哨兵**：现场解析原始视频为结构化信息，筛掉无效数据，传有价值信息给上级
+- **算法运营中心**：二次识别复核、报警管理、模型迭代、业务编排
+- **算法训练中心**：私有化部署到客户数据中心，数据不离开客户体系
+
+## 全帧率 vs 抽帧
+| | 抽帧 | 全帧率（OneVision-Encoder） |
+|---|---|---|
+| 关键动作定位 | 可能漏掉 | 精准捕获 |
+| 时序信息 | 丢失 | 完整保留 |
+| Token 成本 | 高（重复编码相似帧） | 降至约 1/8 |
+| 推理成本 | 线性增长 | 压缩冗余后高效 |
+
+## 具身智能 & 未来方向
+- **VLM → 具身主干**：VLM 高效处理连续视频 + 空间关系 + 目标变化 → 可能成为具身系统主干模型
+- **流式理解**：不等整个视频结束，边进边持续理解判断（监控、直播、交互式视频）
+- **理解生成一体**：图像/视频的理解和生成，目前往往是两套系统；理解是底座，底座足够好，上层的生成和编辑才有更高上限
+
+## 关键数字
+| 指标 | 数值 |
+|------|------|
+| 一小时视频帧数（24 FPS） | ~9万帧 |
+| 一秒视频 token 数 | ~2400 token |
+| 100万上下文窗口 | 仅约 7 分钟全帧率 |
+| Token 成本节省 | 约 **1/8** |
+| 视频理解扩展 | 30秒 → 10-15分钟 |
+| 中等模型成本下降 | 2000卡 → 200卡 |
+
+## 相关链接
+- GitHub: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2
+- 模型: https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
+- 技术报告: https://cdn.jsdelivr.net/gh/anxiangsir/ov2_asset@main/LLaVA_OneVision_2.pdf
+
+## 相关概念
+- LLaVA系列 — 视觉基座—projector—LLM 架构（实体不存在，待创建）
+- 视频理解 — 全帧率 vs 抽帧（实体不存在，待创建）
+- 视觉编码器 — OneVision-Encoder（实体不存在，待创建）
+- 具身智能 — VLM 成为具身大脑 backbone（实体不存在，待创建）
+
+## 深度分析
+**抽帧方案的隐性成本：省了 token，省不了信息损失。**^[].md]
+
+固定间隔抽帧（如每秒1帧）是典型的"为了省 token 而引入偏差"的策略。当一个视频里关键动作只持续 3-5 帧时（24FPS 下不到 0.2 秒），固定间隔抽帧有极大概率完美错过。表面上看 token 成本降低了，但模型的"事件检测能力"也随之降低——这不是算法问题，是信息论问题：时序连续性被打散后，隐含的因果关系需要额外的计算才能重建，而且往往重建不完整。OneVision-Encoder 核心洞察是：视频 codec 已经把连续信息结构化建模好了，为什么不用？^[].md]
+
+**Token 效率 1/8 的意义：不是压缩，是结构化复用。**^[].md]
+
+1/8 的 Token 成本节省如果只是"更激进的帧间差异压缩"，那么代价一定是信息损失。但 OneVision-Encoder 的思路不同：它利用 I帧/P帧/运动向量/残差这些 codec 已有结构——这些都是视频压缩中已经做好的信息结构化表示，模型直接使用这些表示而不是重新从像素级特征中推导。这意味着压缩和结构化是一体的，不是先压缩再补救信息。Token 数量减少，但每个 token 携带的信息密度提高了。^[].md]
+
+**100万上下文仅覆盖7分钟：这对实际应用意味着什么？**^[].md]
+
+7分钟全帧率视频 ≈ 100万 token 输入给 LLM。这个数字表面看起来很小，但实际视频理解任务很少需要连续处理整段视频。以视频剪辑 Agent 为例：它的核心操作模式是"定位 → 分析 → 定位 → 分析"的循环，不是"一次性输入整段视频"。真正需要处理长视频的场景（如视频摘要、跨镜头分析）更可能采用分段处理 + 全局汇总的架构。100万 token 的限制影响的是单次处理上限，而不是整体系统能力。^[].md]
+
+**分层部署架构的本质：不是"大模型→小模型"，而是"专家模型→通才模型"。**^[].md]
+
+大模型冷启动 → 中模型快速迭代 → 小模型规模化，这条路径的内在逻辑不是"蒸馏压缩"，而是"角色分工"。大模型（30B+）负责从无到有的推理，发现视频中存在的模式；中模型（7B~13B）负责在已知模式下的快速决策；小模型（1B~3B）负责现场的结构化筛选，不传原帧，传"事件+时间戳+关键特征"。这三层模型针对的任务类型完全不同，是真正的 specialized pipeline，不只是规模的简单递减。^[].md]
+
+## 相关链接
+- [[entities/llava-onevision-2-full-frame-rate-vlm]
+
+## 相关实体
+- [[entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o]
+
+→ [[raw/articles/llava-onevision-2-full-frame-rate-vlm-glintlab.md|原文存档]
+
+## 实践启示
+**选型判断：你的场景是"理解"还是"定位"？**^[].md]
+
+如果核心需求是"这段视频里发生了什么"（视频摘要、内容理解），抽帧 + VLM 的方案在大多数情况下已经够用，Token 成本也更低。如果核心需求是"动作 X 发生在视频的哪个精确时间点"（剪辑、监控告警、具身机器人），全帧率是刚需——这时候抽帧的错误率会直接影响任务完成质量。明确这个区别，再决定要不要上 OneVision-Encoder。^[].md]
+
+**边缘部署：小模型在现场做的事是"筛"不是"判"。**^[].md]
+
+边缘哨兵节点（1B~3B 模型）不应该做最终判断——它的职责是把原始视频压缩为"有意义的结构化事件"（时间戳、事件类型、置信度、关键帧索引），然后把结构化数据传给上级。这样做有两个好处：边缘带宽需求大幅降低；上级中心可以用更少的上下文 token 处理更多路视频。设计边缘→中心的通信协议时，应该传"事件描述对象"而不是"关键帧图片+时间戳"。^[].md]
+
+**模型迭代策略：先在长视频上测准，再缩短到实用长度。**^[].md]
+
+文章提到四阶段训练：30秒 → 10-15分钟。实际落地时，建议先用公开数据集（ActivityNet、YouCook2 等）验证模型在全帧率下的时序定位精度，达到基线后再针对自己的目标场景做微调。不要一上来就追求10分钟+的处理能力——先确保30秒级别精度可接受，再扩展上下文窗口长度。^[].md]
+
+**多模态 Agent 开发者：视频理解 ≠ 视频生成，底座通用是优势。**^[].md]
+
+LLaVA-OneVision-2 解决的是理解侧问题，而当前很多视频生成模型（如 Sora、Runway）解决的是生成侧问题。两者的底座技术路径不同，但理解是生成的上游——理解得越细，生成的约束条件越精确。未来如果出现"理解+生成一体化"的系统，高质量的视频理解底座（如 OneVision-Encoder）会是关键的 infrastructure 优势。多模态 Agent 开发者在选型时可以考虑这个趋势。   ^[].md]
+
+---
+
+## Ch17.012 How transparent is DiffusionGemma (and why it matters)
+
+> 📊 Level ⭐⭐ | 8.4KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
 
 # How transparent is DiffusionGemma (and why it matters)
 
@@ -1228,7 +1263,7 @@ Monitorability, a key downstream application of transparency, is similar between
 
 ---
 
-## Ch17.012 SunFinance: Textract+Claude准确率90.8%的ID提取方案
+## Ch17.013 SunFinance: Textract+Claude准确率90.8%的ID提取方案
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
 
@@ -1292,9 +1327,9 @@ SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化�
 
 ---
 
-## Ch17.013 FLAT: Feedforward Latent Triangle Splatting
+## Ch17.014 FLAT: Feedforward Latent Triangle Splatting
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/flat-feedforward-latent-triangle-splatting.md`
+> 📊 Level ⭐⭐ | 6.5KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
 # FLAT: Feedforward Latent Triangle Splatting
 
@@ -1309,6 +1344,7 @@ FLAT（Feedforward Latent Triangle Splatting）是一种面向 3D 场景生成�
 ### 从高斯到三角形
 
 传统 3D Gaussian Splatting（3DGS）使用体积基元（volumetric primitives），这带来两个固有问题：
+
 - **浮动物（Floaters）**：体积高斯分布在空间中，容易在物体表面外产生漂浮的伪影
 - **几何精度不足**：体积表示无法精确捕获表面边界，导致重建的几何形状模糊
 
@@ -1409,7 +1445,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 ---
 
-## Ch17.014 Multimodal AI for Searchable Aerial Imagery at Scale
+## Ch17.015 Multimodal AI for Searchable Aerial Imagery at Scale
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
 
@@ -1494,7 +1530,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 
 ---
 
-## Ch17.015 PersonaVLM — 长期个性化多模态大模型
+## Ch17.016 PersonaVLM — 长期个性化多模态大模型
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/personavlm-personalized-memory.md`
 
@@ -1558,7 +1594,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 
 ---
 
-## Ch17.016 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
+## Ch17.017 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/liteframe-efficient-vision-encoders.md`
 
@@ -1601,65 +1637,9 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ---
 
-## Ch17.017 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
-
-> 📊 Level ⭐⭐ | 4.3KB | `entities/timelens2.md`
-
-# TimeLens2: Generalist Video Temporal Grounding
-
-TimeLens2 是南京大学与上海 AI 实验室提出的视频时序定位（Video Temporal Grounding）通用模型，基于 Qwen3-VL 底座，通过一套统一的「时间段集合」标注与训练框架，让同一个模型在长短视频、单段或多段证据、陈述句或问句、第三人称或第一人称视角里直接输出一组起止时间段。
-
-## 动机
-
-多模态大模型能描述视频内容，却通常给不出可点开的时间出处。现有做法有三层不足：
-
-- **标注层：** 答案本该是「可能有多段」的时间段集合，长视频却常被整段只判一次，容易漏掉重复证据或起止偏粗。
-- **训练层：** 常规微调先学会「把时间写成规定格式」。用 tIoU 做强化学习时，预测和答案完全错开时分数一律是 0——偏了两秒和偏了两分钟训练信号无差别。
-- **多段对齐：** 强制「预测每一段对上答案每一段」时，一旦拆开、合并或段数不等，分数也会乱。
-
-## 方法
-
-### 数据标注（TimeLens2-93K）
-
-来自按时长分层、领域多样的 YouTube 视频，最终保留 23,793 条视频、93,232 条定位样本（其中 12,091 条带多段证据），视频平均时长约 10.2 分钟。采用六步流水线：先按内容切 20–60 秒小段并生成字幕，据此写陈述式查询和粗略候选；再由两个定位模型（Qwen3-VL-30B-A3B 与 TimeLens-8B）各自独立预测，两次结果需满足时间段交并比 > 0.9 且语义嵌入相似度 ≥ 0.5 才通过；最后在边界附近 ±3 秒做局部精修，合并间隔 ≤ 1 秒的相邻段。
-
-### 两阶段训练
-
-基于 Qwen3-VL 的 2B / 4B / 8B 指令版模型：
-
-1. **长上下文监督微调（SFT）：** 使用 TimeLens2-93K + TimeLens-100K + Ego4D-NLQ，4B/8B 打包到 100K token。同一条时间段用多种提问措辞和时间写法渲染，防止格式过拟合。
-2. **GRPO 强化学习校准：** 奖励由三项组成——重叠比例奖励(tIoU)、解析失败惩罚、以及关键的时间 **Wasserstein 奖励**。后者将预测段和答案段映射为时间轴上的分布，测量两者间的传输距离，解决了零分坑（完全错开时区分「差两秒」与「差两分钟」）。
-
-诊断结果：在 4,332 个「重叠为零」的有效预测中，加入 Wasserstein 奖励后，近处漏检的 21.9% 恢复出正重叠，远处仅 5.7%；原来整组 0 分的样本中 75.8% 重新排出远近。
-
-## 关键结果
-
-| 指标 | TimeLens2-2B | TimeLens2-4B | TimeLens2-8B |
-|------|-------------|-------------|-------------|
-| 平均 mIoU | 44.5 | 47.7 | 48.0 |
-| 相对 Qwen3-VL 底座提升 | +14.2 | +13.0 | +18.1 |
-
-TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七项基准上更高。最难场景的增益最大：VUE-TR +19.6、VUE-TR-V2 +27.8、MomentSeeker +12.6、Ego4D-NLQ +7.2。
-
-> [!note] 「超过 397B」只成立在这七项时序定位基准上，不代表通用视频理解能力。
-
-## 消融关键发现
-
-- TimeLens2-93K 前 5% 数据将平均 mIoU 从 34.7 拉到 42.8；全量到 45.8
-- 标签精炼各阶段（原始→对齐→语义校验→边界精修）：42.0 → 43.4 → 44.1 → 45.8
-
-## 相关实体
-
-- [LLaVA-OneVision-2](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)（同类全帧率视频语言模型）
-- [Video RAG 分块策略](https://github.com/QianJinGuo/wiki/blob/main/entities/video-rag-chunking-strategy.md)（视频检索的互补方向）
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/timelens2-generalist-video-temporal-grounding.md)
-
----
-
 ## Ch17.018 VoxCPM2：OpenBMB 开源 Tokenizer-free TTS，Voice Design 文字描述生成声音
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/voxcpm2-openbmb-tts-voice-design-jikezhijia-2026-06-30.md`
+> 📊 Level ⭐⭐ | 4.3KB | `entities/voxcpm2-openbmb-tts-voice-design-jikezhijia-2026-06-30.md`
 
 # VoxCPM2：OpenBMB 开源 Tokenizer-free TTS，Voice Design 文字描述生成声音
 
@@ -1743,7 +1723,63 @@ CLI：`voxcpm design --text "你好世界" --output out.wav`
 
 ---
 
-## Ch17.019 别让格式杀死思想logics-parsing-v2定义文档解析新边界
+## Ch17.019 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+
+> 📊 Level ⭐⭐ | 4.3KB | `entities/timelens2.md`
+
+# TimeLens2: Generalist Video Temporal Grounding
+
+TimeLens2 是南京大学与上海 AI 实验室提出的视频时序定位（Video Temporal Grounding）通用模型，基于 Qwen3-VL 底座，通过一套统一的「时间段集合」标注与训练框架，让同一个模型在长短视频、单段或多段证据、陈述句或问句、第三人称或第一人称视角里直接输出一组起止时间段。
+
+## 动机
+
+多模态大模型能描述视频内容，却通常给不出可点开的时间出处。现有做法有三层不足：
+
+- **标注层：** 答案本该是「可能有多段」的时间段集合，长视频却常被整段只判一次，容易漏掉重复证据或起止偏粗。
+- **训练层：** 常规微调先学会「把时间写成规定格式」。用 tIoU 做强化学习时，预测和答案完全错开时分数一律是 0——偏了两秒和偏了两分钟训练信号无差别。
+- **多段对齐：** 强制「预测每一段对上答案每一段」时，一旦拆开、合并或段数不等，分数也会乱。
+
+## 方法
+
+### 数据标注（TimeLens2-93K）
+
+来自按时长分层、领域多样的 YouTube 视频，最终保留 23,793 条视频、93,232 条定位样本（其中 12,091 条带多段证据），视频平均时长约 10.2 分钟。采用六步流水线：先按内容切 20–60 秒小段并生成字幕，据此写陈述式查询和粗略候选；再由两个定位模型（Qwen3-VL-30B-A3B 与 TimeLens-8B）各自独立预测，两次结果需满足时间段交并比 > 0.9 且语义嵌入相似度 ≥ 0.5 才通过；最后在边界附近 ±3 秒做局部精修，合并间隔 ≤ 1 秒的相邻段。
+
+### 两阶段训练
+
+基于 Qwen3-VL 的 2B / 4B / 8B 指令版模型：
+
+1. **长上下文监督微调（SFT）：** 使用 TimeLens2-93K + TimeLens-100K + Ego4D-NLQ，4B/8B 打包到 100K token。同一条时间段用多种提问措辞和时间写法渲染，防止格式过拟合。
+2. **GRPO 强化学习校准：** 奖励由三项组成——重叠比例奖励(tIoU)、解析失败惩罚、以及关键的时间 **Wasserstein 奖励**。后者将预测段和答案段映射为时间轴上的分布，测量两者间的传输距离，解决了零分坑（完全错开时区分「差两秒」与「差两分钟」）。
+
+诊断结果：在 4,332 个「重叠为零」的有效预测中，加入 Wasserstein 奖励后，近处漏检的 21.9% 恢复出正重叠，远处仅 5.7%；原来整组 0 分的样本中 75.8% 重新排出远近。
+
+## 关键结果
+
+| 指标 | TimeLens2-2B | TimeLens2-4B | TimeLens2-8B |
+|------|-------------|-------------|-------------|
+| 平均 mIoU | 44.5 | 47.7 | 48.0 |
+| 相对 Qwen3-VL 底座提升 | +14.2 | +13.0 | +18.1 |
+
+TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七项基准上更高。最难场景的增益最大：VUE-TR +19.6、VUE-TR-V2 +27.8、MomentSeeker +12.6、Ego4D-NLQ +7.2。
+
+> [!note] 「超过 397B」只成立在这七项时序定位基准上，不代表通用视频理解能力。
+
+## 消融关键发现
+
+- TimeLens2-93K 前 5% 数据将平均 mIoU 从 34.7 拉到 42.8；全量到 45.8
+- 标签精炼各阶段（原始→对齐→语义校验→边界精修）：42.0 → 43.4 → 44.1 → 45.8
+
+## 相关实体
+
+- [LLaVA-OneVision-2](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)（同类全帧率视频语言模型）
+- [Video RAG 分块策略](https://github.com/QianJinGuo/wiki/blob/main/entities/video-rag-chunking-strategy.md)（视频检索的互补方向）
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/timelens2-generalist-video-temporal-grounding.md)
+
+---
+
+## Ch17.020 别让格式杀死思想logics-parsing-v2定义文档解析新边界
 
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/别让格式杀死思想logics-parsing-v2定义文档解析新边界.md`
 
@@ -1853,7 +1889,7 @@ LogicsDocBench为自建综合评估基准，由 900 页精心挑选的 PDF 页�
 
 ---
 
-## Ch17.020 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
+## Ch17.021 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
 
 > 📊 Level ⭐⭐⭐ | 12.4KB | `entities/小米-多篇论文入选-eccv-2026-人脸修复视频加速.md`
 
@@ -1947,25 +1983,25 @@ BeyondDrive 和 DriveFine 两篇论文都聚焦于一个被传统端到端方法
 
 ---
 
-## Ch17.021 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
+## Ch17.022 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 > 📊 Level ⭐⭐⭐ | 11.6KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
+> -> [[raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md|原文存档]
 
 ## 摘要
 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 ## 关键要点
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
+- [[raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md|原文存档]
 
 ## 相关实体
 
-- [CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini 3.1 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](https://github.com/QianJinGuo/wiki/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
+- [[entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro|CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini 3.1 Pro]
+- [[entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了|语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？]
+- [[entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验|特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验]
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [[moc/vision-multimodal|MOC]
 ## 深度分析
 ### 「通才困境」的本质：多模态动态协同与博弈
 Omni2Sound 论文指出了一个被广泛低估的核心挑战：统一音频生成模型面临的核心问题，不是视觉与文本特征的简单线性叠加，而是**极具挑战的多模态动态协同与博弈过程**。
@@ -1981,14 +2017,15 @@ Omni2Sound 论文指出了一个被广泛低估的核心挑战：统一音频生
 此外，原生多模态大模型存在显著的**视觉偏置（Visual Bias）**——画面里出现静止的乐器或挥棒的指挥（实际并未发声），大模型也极易错误推断出对应的音乐；反之，对画面中看不见的真实音源（画外音），模型又容易直接忽略。
 
 ### 任务竞争的三层结构
-**第二，联合训练中固有的任务竞争。**
+**第二，联合训练中固有的任务竞争。**^[].md]
 
 - **跨任务竞争（Cross-task Competition）**：T2A（文本生音频）和 V2A（视频生音频）在联合优化时常面临相互牵制的局面，提升一方往往以牺牲另一方为代价。
 - **模态偏置（Intra-task Modality Bias）**：在处理 VT2A（图文联合生成）时，模型极易产生依赖单一模态的偏置现象。若过度依赖文本，生成的音频往往与画面动作脱节；若过度依赖视觉信息，在画外音场景时模型会忽略文本指令，产生生成幻觉。
 
 ### Omni2Sound 的破局思路：Less is More
 Omni2Sound 的核心思路在于：不过度依赖复杂的网络结构设计，而是通过**「高质量数据与渐进式训练」的底层方案**来打破通才困境。全篇仅采用标准的 Vanilla DiT 骨干，从数据源头、多任务调度以及客观评测三个维度进行协同设计。
-**SoundAtlas 数据集构建方法论：**
+**SoundAtlas 数据集构建方法论：**^[].md]
+
 团队设计了一套高效的多轮智能体流水线（Agentic Pipeline），构建了包含 47 万对高质量 V-A-T 联合对齐的数据集 SoundAtlas：
 1. **视觉到语言压缩（Vision-to-Language Compression）**：放弃直接输入原视频，利用视觉模型（如 Qwen-2.5-VL）先将视频画面"压缩"为精简的文本描述。这一设计不仅大幅削减视频 Token 成本，还将强烈的视觉刺激降维成辅助上下文，有效约束了大模型过度依赖画面产生的幻觉倾向。
 2. **初高级智能体接力（Junior-Senior Agent Handoff）**：获取压缩文本与音频后，系统首先调用高性价比的轻量级模型（Junior Agent）生成基础字幕；仅当检测到复杂场景或高频幻觉词汇时，才将任务路由给推理能力更强的模型（Senior Agent）进行复核。
@@ -2012,14 +2049,15 @@ Omni2Sound 最重要的实践启示是**「大道至简（Data & Strategy is all
 - 多模态数据的「语义冲突」问题需要从数据工程层面系统性解决，而非靠模型自行发现
 
 ### Agentic Pipeline 在数据标注中的高价值
-SoundAtlas 的智能体流水线展示了**多模型协作在数据标注领域的巨大效率提升**：
+SoundAtlas 的智能体流水线展示了**多模型协作在数据标注领域的巨大效率提升**：^[].md]
 
 - 轻量级模型负责基础任务，仅在复杂场景才升级到重推理模型
 - 5 倍成本降低的同时，质量优于人类专家标注
 - 这个「初高级 Agent 接力」模式可推广到任何需要高质量、大规模数据标注的场景
 
 ### 渐进式训练的三阶段设计原则
-三阶段渐进式训练解决了「直接联合训练」引发的任务竞争问题。 关键设计原则：
+三阶段渐进式训练解决了「直接联合训练」引发的任务竞争问题。 关键设计原则：^[].md]
+
 1. **先建立基础能力，再引入多任务**：T2A 预训练建立了稳健的音频生成先验，避免后续多任务学习中的灾难性遗忘
 2. **VT2A 作为语义桥梁**：高质量的图文联合数据在多任务协调中起到关键的「过渡」作用
 3. **解耦的鲁棒性训练**：将对抗性训练（文本 Dropout、画外音合成）单独处理，避免影响主训练阶段的优化动态
@@ -2030,11 +2068,11 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 - **评测基准设计本身是研究的核心贡献**
 - 专门设计对抗性评测场景（画外音、BGM 合成子集）才能真正检验模型的鲁棒性
 - 现有评测往往只覆盖「正常情况」，忽略了真实场景中的模态缺失和语义冲突
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
+→ [[raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md|原文存档]
 
 ---
 
-## Ch17.022 Self-Filming Guide by Hello World Media
+## Ch17.023 Self-Filming Guide by Hello World Media
 
 > 📊 Level ⭐⭐⭐ | 11.5KB | `entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md`
 
@@ -2163,7 +2201,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ---
 
-## Ch17.023 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
+## Ch17.024 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/gemma-4-12b-google-multimodal-local.md`
 
@@ -2337,7 +2375,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ---
 
-## Ch17.024 智源悟界·RoboBrain Orca：多模态表征世界模型
+## Ch17.025 智源悟界·RoboBrain Orca：多模态表征世界模型
 
 > 📊 Level ⭐⭐⭐ | 9.7KB | `entities/智源悟界robobrain-orca多模态表征世界模型.md`
 
@@ -2412,7 +2450,7 @@ Orca 与 Google DeepMind 的 Genie、OpenAI 的 Sora 等世界模型存在本质
 
 ---
 
-## Ch17.025 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
+## Ch17.026 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
 
@@ -2518,7 +2556,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ---
 
-## Ch17.026 CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率
+## Ch17.027 CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率
 
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/cvpr-2026-dgaf-vsr-video-super-resolution-diffusion-taobao.md`
 
@@ -2597,9 +2635,9 @@ DGAF-VSR 由淘天音视频技术团队开发，该团队长期服务于淘宝�
 
 ---
 
-## Ch17.027 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
+## Ch17.028 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
-> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
 ## 概述
 
@@ -2720,11 +2758,11 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ---
 
-## Ch17.028 Normalizing Trajectory Models
+## Ch17.029 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/normalizing-trajectory-models-v2.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/normalizing-trajectory-models-v2.md)
+> -> [[raw/articles/normalizing-trajectory-models-v2|原文存档]
 
 ## 摘要
 Normalizing Trajectory Models (NTM) 是由 Jiatao Gu 等人提出的新型扩散模型变体，旨在解决少步生成（few-step generation）场景下传统扩散模型假设失效的问题。传统扩散模型将采样分解为大量小步高斯去噪，这一假设在压缩到几步时崩溃。NTM 将每步 reverse 建模为 expressive conditional normalizing flow，保留精确似然训练。通过结合每步内的浅层可逆块与跨轨迹的深层并行预测器，NTM 在仅 4 步采样下即可匹配或超越强图像生成基线，同时保留对生成轨迹的精确似然计算能力。
@@ -2744,10 +2782,11 @@ NTM 的核心洞察是：**将每步 reverse process 建模为 normalizing flow*
 1. **浅层可逆块（Shallow Invertible Blocks）within each step**：每步内的转换用轻量级可逆网络建模，参数量少但表达能力足够
 2. **深层并行预测器（Deep Parallel Predictor）across the trajectory**：跨步之间共享一个深度网络预测去噪方向，实现高效信息传递
 3. **端到端可训练**：可从随机初始化训练，也可从预训练 flow-matching 模型初始化
-这种设计在每步内保持可逆性（支持精确似然计算），跨步间共享计算（保持效率）。
+这种设计在每步内保持可逆性（支持精确似然计算），跨步间共享计算（保持效率）。^[].md]
 
 ### 自蒸馏：精确似然的多步利用
-NTM 的精确轨迹似然还支持一个独特能力：**自蒸馏（Self-Distillation）**。
+NTM 的精确轨迹似然还支持一个独特能力：**自蒸馏（Self-Distillation）**。^[].md]
+
 流程：
 1. 训练一个完整的 NTM 模型
 2. 用该模型自身的 score 训练一个轻量级去噪器
@@ -2759,16 +2798,16 @@ NTM 的精确轨迹似然还支持一个独特能力：**自蒸馏（Self-Distil
 NTM 可从预训练 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过插值噪声和真实数据预测向量场，而 NTM 将这个预测过程参数化为条件归一化流。
 
 ### 似然精确性的意义
-精确似然（exact likelihood）对于以下应用至关重要：
+精确似然（exact likelihood）对于以下应用至关重要：^[].md]
 
 - **模型压缩评估**：直接比较不同模型的压缩效率
 - **生成质量度量**：不依赖 FID 等间接指标
 - **Bayesian model selection**：精确计算后验比近似方法更可靠
 - **Data compression**：精确似然直接对应压缩比
-这使得 NTM 在需要严格概率计数的场景（如压缩、异常检测）比其它少步扩散方法更有优势。
+这使得 NTM 在需要严格概率计数的场景（如压缩、异常检测）比其它少步扩散方法更有优势。^[].md]
 
 ### 训练稳定性
-传统 normalizing flow 的训练常面临数值不稳定问题。NTM 的设计通过以下方式缓解：
+传统 normalizing flow 的训练常面临数值不稳定问题。NTM 的设计通过以下方式缓解：^[].md]
 
 - 浅层可逆块限制每步的复杂度，降低数值误差累积
 - 跨步并行预测器分担单步网络的优化压力
@@ -2782,11 +2821,11 @@ NTM 可从预训练 flow-matching 模型初始化，这利用了 flow matching �
 NTM 的定位是**保留完整似然框架的少步方法**。这一定位使其与单纯追求速度的方法（如 GAN-based）不同——速度不是唯一目标，**保持概率语义**同样重要。
 
 ### 架构设计的权衡
-NTM 的"浅层每步 + 深层跨步"设计反映了一个基本权衡：
+NTM 的"浅层每步 + 深层跨步"设计反映了一个基本权衡：^[].md]
 
 - **每步可逆 = 精确似然**：但浅层网络限制单步表达能力
 - **跨步共享 = 效率**：深层网络捕获跨步依赖，但增加了训练复杂度
-这个权衡在实践中被证明是有效的——在 4 步采样下即可达到与数十步方法相当的质量。
+这个权衡在实践中被证明是有效的——在 4 步采样下即可达到与数十步方法相当的质量。^[].md]
 
 ### 与 Consistency Model 的对比
 Consistency Model 通过强制 $f(x_t) = f(x_{t+1})$ 实现少步采样，本质上是将轨迹压缩到单一不动点。
@@ -2799,7 +2838,7 @@ Consistency Model 通过强制 $f(x_t) = f(x_{t+1})$ 实现少步采样，本质
 
 - 训练更简单（单一一致性损失）
 - 推理极快（1-2步）
-两者代表了不同的设计哲学：NTM 偏向"精确描述"，CM 偏向"实用速度"。
+两者代表了不同的设计哲学：NTM 偏向"精确描述"，CM 偏向"实用速度"。^[].md]
 
 ### 归一化流的可逆性瓶颈
 Normalizing flow 的核心是通过一系列可逆变换实现精确似然计算。但可逆性要求网络输出维度不变且必须可逆，这限制了网络架构的选择。
@@ -2807,7 +2846,8 @@ NTM 通过"浅层可逆块"缓解这一问题——每步只做轻量变换，�
 
 ## 实践启示
 ### 对于扩散模型研究
-NTM 开辟了一个新方向：**保留似然框架的少步扩散**。未来研究可以探索：
+NTM 开辟了一个新方向：**保留似然框架的少步扩散**。未来研究可以探索：^[].md]
+
 1. **更激进的步数压缩**：4步已是SOTA，但是否有理论下限？
 2. **多模态扩展**：当前主要验证图像生成，是否可以扩展到视频、音频？
 3. **与attention机制的结合**：当前架构依赖并行预测器，是否可以引入更长程依赖？
@@ -2828,19 +2868,21 @@ NTM 开辟了一个新方向：**保留似然框架的少步扩散**。未来研
 **性能基准**：在文本到图像任务上，4步采样可匹配或超越现有基线。若部署场景需要 4-8 步采样，NTM 值得关注。
 
 ### 对于概率机器学习
-NTM 展示了一种有价值的思路：**通过架构设计保留训练目标的语义**，而非仅仅追求结果指标。
-在需要严格概率语义的下游任务（如贝叶斯推断、变分推断、压缩），这一思路可能启发新的模型设计。
+NTM 展示了一种有价值的思路：**通过架构设计保留训练目标的语义**，而非仅仅追求结果指标。^[].md]
+
+在需要严格概率语义的下游任务（如贝叶斯推断、变分推断、压缩），这一思路可能启发新的模型设计。^[].md]
+
 特别是**自蒸馏**机制——让模型自己教自己——在其它领域（如强化学习中的 self-play、语言模型的 self-reward）也有类似应用。这个范式值得在更多场景探索。
 
 ## 相关实体
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/normalizing-trajectory-models.md)
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/ntm-normalizing-trajectory-models.md)
+- [[entities/normalizing-trajectory-models|Normalizing Trajectory Models]
+- [[entities/ntm-normalizing-trajectory-models|Normalizing Trajectory Models]
 
 ---
 
-## Ch17.029 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
+## Ch17.030 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
-> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
 # Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
@@ -2932,56 +2974,6 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch17.030 Google's Gemini Omni video model surfaces ahead of I/O debut
-
-> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
-
-## Summary
-> Score: 8×9=72
-
-## 核心要点
-- Google Gemini Omni 视频模型在 Google I/O 2026 前夕泄露
-- 具备视频编辑能力：水印去除、对象替换、场景重写等
-- 采用与 Nano Banana 相同的策略：生成质量中等但编辑能力领先
-- 预计推出 Flash 和 Pro 两个版本
-- 将作为 Agent 提供，类似于 Deep Research
-
-## 相关实体
-- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
-
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
-## 深度分析
-**Gemini Omni 的战略定位：编辑优先于生成**
-从泄露的信息来看，Gemini Omni 的核心差异化策略并不是在原始视频生成质量上追求第一，而是将视频编辑能力作为主要卖点。早期测试者的反馈显示，在原始生成保真度上，Omni 似乎落后于 ByteDance 的 Seedance 2——观看者注意到电影质感方面落后于当前基准领导者。然而，在编辑功能方面：去除水印、在剪辑中交换对象、以及通过聊天指令重写场景，这些功能在首次公开展示中表现出乎意料地好。
-这种策略选择有其深刻的商业逻辑。视频生成领域的竞争已经非常激烈：OpenAI 的 Sora、Runway 的 Gen-3、Pika、ByteDance 的 Seedance 2 等都在 raw generation 质量上投入了大量资源。如果 Google 选择在同一维度上竞争，即使最终能够赶上，也需要大量的时间和资源，而且最终可能只是在他人定义的赛道上追逐。通过将重点放在视频编辑上，Google 开辟了一个相对蓝海的战场——视频编辑是一个生产工作流中的高频需求，而现有的 AI 编辑工具在精确度和自然度上仍有很大提升空间。
-**Nano Banana 模式的复制：从图像到视频**
-文章明确指出了一个关键模式：Gemini Omni 采用的策略与 Nano Banana 完全相同。Nano Banana 作为原生图像模型推出时，在生成评分上表现平平，但却在编辑排行榜上名列前茅，随后被升级为前沿图像系统。Google 似乎在视频领域复制这一策略：首先是中等水平的生成质量，但具有卓越的编辑能力，然后通过迭代改进提升生成质量，最终成为一个全面的视频系统。
-对于 AI 行业观察者来说，这意味着 Google 已经形成了一种可辨识的产品演进模式：不是一开始就在所有维度上追求第一，而是在某个特定维度上建立优势，然后通过快速迭代追赶其他维度。这种方法降低了风险——即使生成质量不能立即领先，编辑能力的差异化也能吸引有实际工作流需求的用户。
-**分层发布策略：Flash 和 Pro**
-泄露信息表明 Omni 将推出分层版本，很可能是 Flash 和 Pro 两个层级。当前流通的输出很可能是来自 Flash 层级的——这解释了为什么生成质量与前沿系统相比仍有差距。这种分层策略在 Google 的其他产品线中已经有成熟实践：Gemini Flash 提供轻量级、高速度、低成本的选项，Gemini Pro 提供更强大但更昂贵的选项。对于视频模型，Flash 版本可能针对日常用户和快速原型制作，而 Pro 版本则针对专业内容创作者和企业客户。
-**Agent 定位：不仅仅是生成**
-一个重要的泄露信息是，Gemini Omni 将被视为 Agent（类似于 Deep Research on AI Studio）提供，而不仅仅是生成工具。这意味着 Google 对 Omni 的定位不仅仅是"文生视频"或"视频编辑"，而是一个能够执行复杂多步骤任务的智能代理。例如，一个视频代理可能能够理解用户的指令（如"将这个视频中的产品特写镜头提取出来，加上品牌水印，并调整到 16:9 比例"），然后自主规划并执行这些步骤。这种定位与当前 AI 领域从"工具"向"代理"演进的大趋势完全一致。
-**时间窗口与 Google I/O 的战略考量**
-选择在 Google I/O（5月19-20日）前约一周进行泄露或 A/B 测试，这个时间窗口的策略意义值得玩味。一个短暂的会前窗口配合受控的泄露，给了 Google 在主题演讲前收集反馈和塑造叙事的空间。如果反馈积极，Google 可以在 I/O 上大力宣扬；如果有重大问题，还有时间进行调整。这种"测试-学习-迭代"的策略比过去的大爆炸式发布更加敏捷，也更符合互联网产品开发的最佳实践。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
-
-## 实践启示
-**1. AI 视频领域的竞争维度正在扩展**
-对于在视频 AI 领域寻找机会的团队，需要认识到"生成质量"不再是唯一的竞争维度。编辑、工作流集成、代理能力等正在成为新的差异化领域。如果你正在构建视频 AI 产品，考虑是否有机会在编辑或其他特定维度上建立优势，而不是简单地与现有系统在生成质量上竞争。
-**2. 关注 Google 的"迭代追赶"模式**
-Google 在 AI 产品上展示的模式是：先在某个维度上建立优势（即使其他维度暂时落后），然后快速迭代追赶。这对于评估 Google 的 AI 产品有重要启示：不应该根据首次发布的质量来判断其长期潜力。Nano Banana 的案例表明，Google 能够在发布后迅速提升产品质量。类似地，Gemini Omni 的生成质量可能会在 I/O 正式发布后快速提升。
-**3. 分层模型的策略值得学习**
-Gemini Omni 预计采用 Flash/Pro 分层策略，这对于需要控制成本和延迟的生产系统具有重要意义。Flash 版本可能适合作为日常使用和快速原型制作，而 Pro 版本可以用于对质量要求更高的专业场景。在构建自己的 AI 产品时，考虑类似的分层策略，为不同需求层次的用户提供适当的选项。
-**4. 视频 Agent 是下一个前沿**
-Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正在融合为一个更广泛的"视频 Agent"概念。这对开发者意味着：视频 AI 的下一个机会可能不在于"生成更好的视频"，而在于"构建能够理解、编辑、操作视频的智能代理"。对于有志于这一领域的团队，开始探索视频 Agent 的架构和用例可能会获得先发优势。
-**5. 生产工作流集成的价值**
-从泄露信息看，Gemini Omni 的核心差异化在于其编辑能力与聊天界面的深度集成。这意味着对于生产级视频应用，UI/UX 和工作流集成可能比底层模型能力更加关键。即使模型的原始生成能力不是第一流的，如果编辑体验足够流畅、自然，并且易于集成到现有工作流中，仍然可以赢得市场份额。建议在评估或构建视频 AI 产品时，将用户体验和工作流集成作为核心评估维度。
 
 ---
 
@@ -3097,9 +3089,66 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 
 ---
 
-## Ch17.032 OlmoEarth v1.1: A more efficient family of Earth observation models
+## Ch17.032 Google's Gemini Omni video model surfaces ahead of I/O debut
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
+
+> -> [[raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut|原文存档]
+
+## Summary
+> Score: 8×9=72
+
+## 核心要点
+- Google Gemini Omni 视频模型在 Google I/O 2026 前夕泄露
+- 具备视频编辑能力：水印去除、对象替换、场景重写等
+- 采用与 Nano Banana 相同的策略：生成质量中等但编辑能力领先
+- 预计推出 Flash 和 Pro 两个版本
+- 将作为 Agent 提供，类似于 Deep Research
+
+## 相关实体
+- [[entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut|Google's Gemini Omni video model surfaces ahead of I/O debut]
+
+- [[moc/vision-multimodal|MOC]
+## 深度分析
+**Gemini Omni 的战略定位：编辑优先于生成**^[].md]
+
+从泄露的信息来看，Gemini Omni 的核心差异化策略并不是在原始视频生成质量上追求第一，而是将视频编辑能力作为主要卖点。早期测试者的反馈显示，在原始生成保真度上，Omni 似乎落后于 ByteDance 的 Seedance 2——观看者注意到电影质感方面落后于当前基准领导者。然而，在编辑功能方面：去除水印、在剪辑中交换对象、以及通过聊天指令重写场景，这些功能在首次公开展示中表现出乎意料地好。
+这种策略选择有其深刻的商业逻辑。视频生成领域的竞争已经非常激烈：OpenAI 的 Sora、Runway 的 Gen-3、Pika、ByteDance 的 Seedance 2 等都在 raw generation 质量上投入了大量资源。如果 Google 选择在同一维度上竞争，即使最终能够赶上，也需要大量的时间和资源，而且最终可能只是在他人定义的赛道上追逐。通过将重点放在视频编辑上，Google 开辟了一个相对蓝海的战场——视频编辑是一个生产工作流中的高频需求，而现有的 AI 编辑工具在精确度和自然度上仍有很大提升空间。
+**Nano Banana 模式的复制：从图像到视频**^[].md]
+
+文章明确指出了一个关键模式：Gemini Omni 采用的策略与 Nano Banana 完全相同。Nano Banana 作为原生图像模型推出时，在生成评分上表现平平，但却在编辑排行榜上名列前茅，随后被升级为前沿图像系统。Google 似乎在视频领域复制这一策略：首先是中等水平的生成质量，但具有卓越的编辑能力，然后通过迭代改进提升生成质量，最终成为一个全面的视频系统。
+对于 AI 行业观察者来说，这意味着 Google 已经形成了一种可辨识的产品演进模式：不是一开始就在所有维度上追求第一，而是在某个特定维度上建立优势，然后通过快速迭代追赶其他维度。这种方法降低了风险——即使生成质量不能立即领先，编辑能力的差异化也能吸引有实际工作流需求的用户。
+**分层发布策略：Flash 和 Pro**^[].md]
+
+泄露信息表明 Omni 将推出分层版本，很可能是 Flash 和 Pro 两个层级。当前流通的输出很可能是来自 Flash 层级的——这解释了为什么生成质量与前沿系统相比仍有差距。这种分层策略在 Google 的其他产品线中已经有成熟实践：Gemini Flash 提供轻量级、高速度、低成本的选项，Gemini Pro 提供更强大但更昂贵的选项。对于视频模型，Flash 版本可能针对日常用户和快速原型制作，而 Pro 版本则针对专业内容创作者和企业客户。
+**Agent 定位：不仅仅是生成**
+一个重要的泄露信息是，Gemini Omni 将被视为 Agent（类似于 Deep Research on AI Studio）提供，而不仅仅是生成工具。这意味着 Google 对 Omni 的定位不仅仅是"文生视频"或"视频编辑"，而是一个能够执行复杂多步骤任务的智能代理。例如，一个视频代理可能能够理解用户的指令（如"将这个视频中的产品特写镜头提取出来，加上品牌水印，并调整到 16:9 比例"），然后自主规划并执行这些步骤。这种定位与当前 AI 领域从"工具"向"代理"演进的大趋势完全一致。
+**时间窗口与 Google I/O 的战略考量**^[].md]
+
+选择在 Google I/O（5月19-20日）前约一周进行泄露或 A/B 测试，这个时间窗口的策略意义值得玩味。一个短暂的会前窗口配合受控的泄露，给了 Google 在主题演讲前收集反馈和塑造叙事的空间。如果反馈积极，Google 可以在 I/O 上大力宣扬；如果有重大问题，还有时间进行调整。这种"测试-学习-迭代"的策略比过去的大爆炸式发布更加敏捷，也更符合互联网产品开发的最佳实践。
+
+→ [[raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md|原文存档]
+
+## 实践启示
+**1. AI 视频领域的竞争维度正在扩展**^[].md]
+
+对于在视频 AI 领域寻找机会的团队，需要认识到"生成质量"不再是唯一的竞争维度。编辑、工作流集成、代理能力等正在成为新的差异化领域。如果你正在构建视频 AI 产品，考虑是否有机会在编辑或其他特定维度上建立优势，而不是简单地与现有系统在生成质量上竞争。
+**2. 关注 Google 的"迭代追赶"模式**^[].md]
+
+Google 在 AI 产品上展示的模式是：先在某个维度上建立优势（即使其他维度暂时落后），然后快速迭代追赶。这对于评估 Google 的 AI 产品有重要启示：不应该根据首次发布的质量来判断其长期潜力。Nano Banana 的案例表明，Google 能够在发布后迅速提升产品质量。类似地，Gemini Omni 的生成质量可能会在 I/O 正式发布后快速提升。
+**3. 分层模型的策略值得学习**
+Gemini Omni 预计采用 Flash/Pro 分层策略，这对于需要控制成本和延迟的生产系统具有重要意义。Flash 版本可能适合作为日常使用和快速原型制作，而 Pro 版本可以用于对质量要求更高的专业场景。在构建自己的 AI 产品时，考虑类似的分层策略，为不同需求层次的用户提供适当的选项。
+**4. 视频 Agent 是下一个前沿**^[].md]
+
+Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正在融合为一个更广泛的"视频 Agent"概念。这对开发者意味着：视频 AI 的下一个机会可能不在于"生成更好的视频"，而在于"构建能够理解、编辑、操作视频的智能代理"。对于有志于这一领域的团队，开始探索视频 Agent 的架构和用例可能会获得先发优势。
+**5. 生产工作流集成的价值**
+从泄露信息看，Gemini Omni 的核心差异化在于其编辑能力与聊天界面的深度集成。这意味着对于生产级视频应用，UI/UX 和工作流集成可能比底层模型能力更加关键。即使模型的原始生成能力不是第一流的，如果编辑体验足够流畅、自然，并且易于集成到现有工作流中，仍然可以赢得市场份额。建议在评估或构建视频 AI 产品时，将用户体验和工作流集成作为核心评估维度。
+
+---
+
+## Ch17.033 OlmoEarth v1.1: A more efficient family of Earth observation models
+
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md`
 
 ## 概述
 
@@ -3176,7 +3225,7 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 
 ---
 
-## Ch17.033 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
+## Ch17.034 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md`
 
@@ -3261,9 +3310,9 @@ VLX-Flow 是三层链路中的感知前置层：Flow（持续感知）→ Seek�
 
 ---
 
-## Ch17.034 MolmoMotion：语言引导的 3D 运动预测模型
+## Ch17.035 MolmoMotion：语言引导的 3D 运动预测模型
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
+> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
 # MolmoMotion：语言引导的 3D 运动预测
 
@@ -3346,153 +3395,9 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ---
 
-## Ch17.035 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
+## Ch17.036 美团海报生成 AIGC 技术创新与实践
 
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/meta-msl-multi-scale-latent-yujiahui-2026.md`
-
-# Meta MSL：图像视频统一建模新范式
-
-Meta 基础 AI 研究团队（FAIR）在余家辉带领下连发图像与视频生成模型，基于 Multi-Scale Latent（MSL）架构实现图像和视频的统一建模。MSL 通过在多个尺度上学习潜在表示，同时捕捉空间细节与时间动态，在同一框架内支持图像生成和视频生成任务。
-
-## 核心产品
-
-### Muse Image：Agentic 图像生成
-
-Muse Image 是 Meta 推出的图像生成模型，走的是与常规文生图工具不同的路线——不是简单的文本到像素转换，而是像 AI 智能体一样工作。收到用户需求后，它不会急着直接出图，而是先拆解梳理完整创作思路，碰到需要真实信息的内容会主动调用配套工具辅助
-
-**技术特点：**
-
-- **工具调用能力**：Muse Image 在训练过程中学会了通过编写代码来生成精准的图表和二维码，还可以将生成的图像与代码结合，制作动图、嵌入图像的网页甚至可运行的互动小游戏。例如，它能根据用户的宠物照片编写出一个完整的 HTML 和 JS 互动游戏
-- **网络搜索**：通过搜索网页获取实时信息和视觉参考，在处理涉及新闻事件或现实常识的提示词时大幅提升画面准确度
-- **自主修正**：通过强化学习训练，当模型在思考链中发现画面细节有偏差时，会主动进行局部修改；如果发现方向完全错了，则会重新生成或调用工具来辅助。这种自我修正行为并非人工设定，而是模型在追求更高生成质量过程中自主学习到的成果
-- **推理时间扩展**：与大语言模型类似，Muse Image 支持推理阶段的计算扩展。给模型更多思考时间，它能进行更多推理步骤、调用更多工具并进行多次自我修正，从而产出质量更高的图像。实验表明推理投入与图像质量之间呈近似对数线性扩展关系
-
-**产品整合**：
-
-Muse Image 与 Meta 生态深度打通：支持多参考图合成（用户可在提示词中同时输入文字和多张参考图片，把特定的人物、衣服、背景等揉合到同一张画作中）；支持多轮对话编辑（用户可连续提出修改意见，如先改风格、再保留特定元素、最后输出对比图）；支持 @Instagram 好友（Muse Image 可拉取对方公开发布的照片来生成相关内容）。所有 AI 生成的图片都带 Content Seal 隐形水印，裁剪、压缩、截图均无法去除
-
-### Muse Video：同步预览
-
-Muse Video 与 Muse Image 同底座训练，具备高视觉保真度、原生支持音频、提示词理解良好。目前 Arena 文生视频排行榜暂列第三（排在谷歌 Gemini Omni Flash、字节 Seedance 2.0 之后）。需要改进的方面包括音画同步和高速运动场景的物理准确性，将在未来几个月内持续优化
-
-## 深度分析
-
-### 1. Multi-Scale Latent（MSL）架构的统一建模价值
-
-MSL 架构的核心创新在于图像和视频共享同一骨干网络，仅在输入/输出层有差异。这种设计大幅简化了训练和部署流程，使得同一个预训练模型可以同时支持生成和视频理解任务。与 [DiffusionGemma](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) 等纯自回归扩散模型不同，MSL 在多尺度潜在空间上学习表示，既能捕捉图像的精细局部细节，又能理解视频帧之间的时间动态
-
-### 2. Agentic 生成范式的转变
-
-Muse Image 最引人注目的设计是「Agentic Image Generation」——将 LLM 作为图像生成的核心控制器。这与 [Meta 的 Agent 生图模型](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-agent-image-generation-model.md) 方向一致，代表了图像生成从「模型中心」走向「Agent 中心」的范式转变。LLM 不再只是文本理解模块，而是生成流程的总指挥：
-
-- 传统扩散模型：文本编码 → 扩散采样 → 图像输出（黑盒过程）
-- Agentic 范式：LLM 规划 → 工具调用 → 迭代修正 → 最终输出（可解释的推理驱动过程）
-
-### 3. 社交图谱与图像生成的融合
-
-Muse Image 允许用户在提示词中 @Instagram 好友，拉取其公开照片进行参考生成。Meta 将这一能力定义为「Native Social Context」——把社交图谱长进了图像模型里。这既是产品创新也是隐私挑战：Meta 的方案是允许用户在设置中选择 opt-out 禁止他人使用自己的公开照片做 AI 二创，同时所有生成内容都带 Content Seal 水印
-
-### 4. 团队的学术与产业背景
-
-MSL 视觉团队的核心成员构成反映了当前 AI 研究的高端人才流动趋势。首席科学家赵晟佳（清华本科、斯坦福博士）2022 年毕业后加入 OpenAI，全程参与从初代 ChatGPT 到 o3 的预训练，2025 年 6 月加入 Meta。多模态负责人余家辉（中科大少年班、UIUC 博士）在谷歌时担任 Gemini 多模态视觉联合负责人，2023 年 10 月加入 OpenAI 担任感知团队负责人，参与 GPT-4o 到 o4-mini 的研发，2025 年 6 月与赵晟佳一起加入 Meta
-
-这种从「OpenAI → 一线大厂」的人才回流，与 [Agent Harness 招聘实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-dingtalk-recruitment.md) 中人才流动的宏观趋势相呼应。
-
-## 实践启示
-
-1. **推理时间扩展是生成质量的「杠杆」**：Muse Image 证明给生成模型更多「思考时间」可以直接提升输出质量。在构建图像生成应用时，应考虑在推理阶段分配可调节的计算预算，让用户根据需要权衡速度与质量。
-
-2. **Agent 范式刷新了 AI 工具的交互设计**：Muse Image 的自主修正、工具调用、链式推理等能力，使得用户可以用自然语言进行复杂的多步创作。这种交互范式正在从代码生成领域扩展到视觉生成领域。
-
-3. **社交数据与隐私的平衡设计**：Muse Image 的 Instagram 集成展示了 AI 产品中社交数据利用的隐私设计模式——opt-out 机制 + 隐形水印 + 公开数据只读引用。这是构建 AI 社交产品时的参考范式。
-
-4. **多参考图合成的工作流价值**：在电商、设计、品牌营销等场景中，Muse Image 的多参考图合成为一个提示词即可完成复杂视觉创作的能力，有望大幅降低图像素材生产的边际成本。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-msl-image-video-models-余家辉.md)
-
----
-
-## Ch17.036 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
-
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md`
-
-# Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
-
-VLX-Go 是 Om AI（联汇）VLX 端侧流式多模态模型系列的第三弹，定位为**行动决策层**，解决 VLM 从「看懂」到「行动」的跨越——即模型不仅能描述环境、定位目标，还能输出可执行的导航指令。
-
-## 核心定位：从感知到行动
-
-前两代 VLX（Flow 流式视频理解、Seek 细粒度感知）解决了 VLM「看得懂」的问题，VLX-Go 补上了「行动决策」层：接收连续视觉流输入，输出机器人下一时刻的运动目标——往哪里走、何时修正方向、如何在动态画面中避开障碍物。
-
-## 技术特点
-
-- **0.6B 参数在端侧跑通导航**：极小模型即可驱动物理世界导航任务，不依赖云端推理
-- **从目标定位到行动**：VLX-Go 补上 VLX 系列的行动决策层，与 Flow（流式理解）、Seek（精准定位）形成「理解→定位→行动」完整链路
-- **避开突发障碍物**：依靠实时视觉推理进行动态避障，非预编程路径规划
-- **短时航点预测机制**：模型每次只预测未来一小段轨迹，执行后再根据新画面更新下一段，避免长路径累积误差
-
-## VLX 系列对比
-
-| 型号 | 定位 | 能力 |
-|------|------|------|
-| VLX-Flow | 流式视频理解 | 边看边理解连续视频流 |
-| VLX-Seek | 细粒度感知 | 区域检索 + 精确定位 |
-| **VLX-Go** | **行动决策** | **端侧导航 + 动态避障** |
-
-## 与现有实体关联
-
-- [VLX-Flow](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md) — 系列开篇：流式视频理解 VLM
-- [VLX-Seek](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md) — 系列第二弹：3B 细粒度感知 VLM
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-vlm-navigation-0.6b-2026.md)
-
-## 第 2 来源 — PaperWeekly 解读
-
-PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实机器人上的局部导航演示：跟随目标行走、动态避障、地面机器人平台上的短时航点预测流程。
-
-报道补充了 VLX-Go 的训练模式细节：基于**离线轨迹数据学习**，系统先缓存视频帧的视觉特征减少训练开销，规划器读取视觉 token、历史帧信息后预测短时航点序列。
-
-## 深度分析
-
-### VLX-Go 的技术架构设计范式
-
-VLX-Go 的核心设计选择是**将 VLM 的输出形式从文本答案推进到短时行动轨迹**。传统 VLM 输出停留在文字层面（"向左前方移动"），但真实机器人需要的是可执行的航点坐标——这要求模型的输出层与底层控制接口对齐。
-
-VLX-Go 明确自身定位为**感知和控制之间的局部策略层**，而非替代底层控制器。模型负责将视觉、语言和历史帧接入行动预测，输出短时航点；速度命令、平台动力学和安全约束仍交给下游控制器与安全层。这种职责拆分使得模型体积可以压缩到 0.6B，同时保持与不同硬件平台的兼容性。
-
-### 离线轨迹学习 + 在线强化学习的混合训练策略
-
-VLX-Go 采用两阶段训练：第一阶段基于离线轨迹数据学习，系统预先缓存视频帧的视觉特征以减少训练开销，规划器学习预测短时航点序列。第二阶段引入在线强化学习优化，在仿真器或闭环环境中，模型预测航点后由控制器执行，环境返回新视觉观测和反馈信号（碰撞、障碍物距离、目标保持、进度奖励等），帮助模型学到更安全、更平滑的局部策略。
-
-这种混合策略的关键创新在于**仿真器贯穿数据生成、在线优化和闭环评测三个环节**，使得离线数据难以覆盖的动态避障场景（障碍物布局变化、目标遮挡、执行误差累积）可以通过交互式反馈得到有效治理。
-
-### EVT-Bench STT 评测表现
-
-在 EVT-Bench 的 STT 任务上，VLX-Go 0.6B 规划器取得 **SR（成功率）85.42%**、**TR（跟踪率）94.08%**、**CR（碰撞率）6.55%**。评测结果说明：在目标跟随任务中，0.6B 级别的模型已经具备实用竞争力；碰撞率的优化仍可通过仿真环境、奖励设计和安全约束继续收窄。
-
-### 与行业同类方案的定位差异
-
-与主流端到端导航方案不同，VLX-Go 不接管整套机器人控制栈，而是专注于将视觉语言状态转换为面向控制链路的航点输出。模型越轻，推理成本和部署压力越低，越接近真实运行约束。对端侧具身设备来说，导航决策随画面变化不断刷新，0.6B 级规划器在部署成本、调用开销和端到端延迟方面具有显著优势。
-
-## 实践启示
-
-1. **职责拆分是模型瘦身的关键**：VLX-Go 不替代底层控制器，而是作为视觉驱动的局部策略模型。这种"模型负责视觉语言规划 + 控制器负责执行 + 安全层提供约束"的职责拆分，是将其压缩至 0.6B 仍能实用的前提。在构建端侧 AI 系统时，应清晰界定模型的能力边界。
-
-2. **混合训练策略解决数据覆盖不足**：纯离线轨迹学习难以覆盖所有障碍物布局和动态干扰，VLX-Go 的离线+在线强化学习混合策略证明了：仿真环境中的闭环反馈对动态避障类任务至关重要。仿真器应贯穿数据生成、策略优化和闭环评测全流程。
-
-3. **短时航点预测减少累积误差**：每次只预测一小段轨迹，执行后再根据新画面更新，这种"预测-执行-观测"的循环机制避免了长路径累积误差，也使得在真实设备上的安全检查更容易落地。这对长时延场景下的机器人部署具有普适参考价值。
-
-4. **VLX 三件套的协同效应**：Flow（持续感知）→ Seek（精准定位）→ Go（行动决策），三层能力形成完整闭环。在构建端侧系统时，应优先考虑能力链路的完整性而非单一模块的性能巅峰。
-
-5. **0.6B 参数量的实际意义**：在具身系统里航点预测会随着新画面不断刷新，模型越小，部署成本和端到端延迟越可控。VLX-Go 证明 VLM 可以同时做到"小参数"和"实用性能"——前提是明确的任务边界和恰当的训练策略。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-vlm-navigation-0.6b-2026.md)
-→ [PaperWeekly 报道原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-paperweekly-2026.md)
-
----
-
-## Ch17.037 美团海报生成 AIGC 技术创新与实践
-
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/meituan-aigc-poster-generation-2026.md`
+> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/meituan-aigc-poster-generation-2026.md`
 
 # 美团海报生成 AIGC 技术创新与实践
 
@@ -3583,9 +3488,9 @@ PosterReward 的出现填补了海报质量评估领域的空白。现有通用�
 
 ---
 
-## Ch17.038 Video World Model Hand Tracking — 视频生成模型实现手部动捕
+## Ch17.037 Video World Model Hand Tracking — 视频生成模型实现手部动捕
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/video-world-model-hand-motion-capture-2026.md`
+> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/video-world-model-hand-motion-capture-2026.md`
 
 # Video World Model Hand Tracking — 视频生成模型实现手部动捕
 
@@ -3663,9 +3568,229 @@ ACE-ViDiHand 的核心洞察是：视频生成模型天天看互联网上海量�
 
 ---
 
-## Ch17.039 火山引擎 RTM：超低延时直播技术
+## Ch17.038 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
 
-> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/meta-msl-multi-scale-latent-yujiahui-2026.md`
+
+# Meta MSL：图像视频统一建模新范式
+
+Meta 基础 AI 研究团队（FAIR）在余家辉带领下连发图像与视频生成模型，基于 Multi-Scale Latent（MSL）架构实现图像和视频的统一建模。MSL 通过在多个尺度上学习潜在表示，同时捕捉空间细节与时间动态，在同一框架内支持图像生成和视频生成任务。
+
+## 核心产品
+
+### Muse Image：Agentic 图像生成
+
+Muse Image 是 Meta 推出的图像生成模型，走的是与常规文生图工具不同的路线——不是简单的文本到像素转换，而是像 AI 智能体一样工作。收到用户需求后，它不会急着直接出图，而是先拆解梳理完整创作思路，碰到需要真实信息的内容会主动调用配套工具辅助
+
+**技术特点：**
+
+- **工具调用能力**：Muse Image 在训练过程中学会了通过编写代码来生成精准的图表和二维码，还可以将生成的图像与代码结合，制作动图、嵌入图像的网页甚至可运行的互动小游戏。例如，它能根据用户的宠物照片编写出一个完整的 HTML 和 JS 互动游戏
+- **网络搜索**：通过搜索网页获取实时信息和视觉参考，在处理涉及新闻事件或现实常识的提示词时大幅提升画面准确度
+- **自主修正**：通过强化学习训练，当模型在思考链中发现画面细节有偏差时，会主动进行局部修改；如果发现方向完全错了，则会重新生成或调用工具来辅助。这种自我修正行为并非人工设定，而是模型在追求更高生成质量过程中自主学习到的成果
+- **推理时间扩展**：与大语言模型类似，Muse Image 支持推理阶段的计算扩展。给模型更多思考时间，它能进行更多推理步骤、调用更多工具并进行多次自我修正，从而产出质量更高的图像。实验表明推理投入与图像质量之间呈近似对数线性扩展关系
+
+**产品整合**：
+
+Muse Image 与 Meta 生态深度打通：支持多参考图合成（用户可在提示词中同时输入文字和多张参考图片，把特定的人物、衣服、背景等揉合到同一张画作中）；支持多轮对话编辑（用户可连续提出修改意见，如先改风格、再保留特定元素、最后输出对比图）；支持 @Instagram 好友（Muse Image 可拉取对方公开发布的照片来生成相关内容）。所有 AI 生成的图片都带 Content Seal 隐形水印，裁剪、压缩、截图均无法去除
+
+### Muse Video：同步预览
+
+Muse Video 与 Muse Image 同底座训练，具备高视觉保真度、原生支持音频、提示词理解良好。目前 Arena 文生视频排行榜暂列第三（排在谷歌 Gemini Omni Flash、字节 Seedance 2.0 之后）。需要改进的方面包括音画同步和高速运动场景的物理准确性，将在未来几个月内持续优化
+
+## 深度分析
+
+### 1. Multi-Scale Latent（MSL）架构的统一建模价值
+
+MSL 架构的核心创新在于图像和视频共享同一骨干网络，仅在输入/输出层有差异。这种设计大幅简化了训练和部署流程，使得同一个预训练模型可以同时支持生成和视频理解任务。与 [DiffusionGemma](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) 等纯自回归扩散模型不同，MSL 在多尺度潜在空间上学习表示，既能捕捉图像的精细局部细节，又能理解视频帧之间的时间动态
+
+### 2. Agentic 生成范式的转变
+
+Muse Image 最引人注目的设计是「Agentic Image Generation」——将 LLM 作为图像生成的核心控制器。这与 [Meta 的 Agent 生图模型](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-agent-image-generation-model.md) 方向一致，代表了图像生成从「模型中心」走向「Agent 中心」的范式转变。LLM 不再只是文本理解模块，而是生成流程的总指挥：
+
+- 传统扩散模型：文本编码 → 扩散采样 → 图像输出（黑盒过程）
+- Agentic 范式：LLM 规划 → 工具调用 → 迭代修正 → 最终输出（可解释的推理驱动过程）
+
+### 3. 社交图谱与图像生成的融合
+
+Muse Image 允许用户在提示词中 @Instagram 好友，拉取其公开照片进行参考生成。Meta 将这一能力定义为「Native Social Context」——把社交图谱长进了图像模型里。这既是产品创新也是隐私挑战：Meta 的方案是允许用户在设置中选择 opt-out 禁止他人使用自己的公开照片做 AI 二创，同时所有生成内容都带 Content Seal 水印
+
+### 4. 团队的学术与产业背景
+
+MSL 视觉团队的核心成员构成反映了当前 AI 研究的高端人才流动趋势。首席科学家赵晟佳（清华本科、斯坦福博士）2022 年毕业后加入 OpenAI，全程参与从初代 ChatGPT 到 o3 的预训练，2025 年 6 月加入 Meta。多模态负责人余家辉（中科大少年班、UIUC 博士）在谷歌时担任 Gemini 多模态视觉联合负责人，2023 年 10 月加入 OpenAI 担任感知团队负责人，参与 GPT-4o 到 o4-mini 的研发，2025 年 6 月与赵晟佳一起加入 Meta
+
+这种从「OpenAI → 一线大厂」的人才回流，与 [Agent Harness 招聘实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-dingtalk-recruitment.md) 中人才流动的宏观趋势相呼应。
+
+## 实践启示
+
+1. **推理时间扩展是生成质量的「杠杆」**：Muse Image 证明给生成模型更多「思考时间」可以直接提升输出质量。在构建图像生成应用时，应考虑在推理阶段分配可调节的计算预算，让用户根据需要权衡速度与质量。
+
+2. **Agent 范式刷新了 AI 工具的交互设计**：Muse Image 的自主修正、工具调用、链式推理等能力，使得用户可以用自然语言进行复杂的多步创作。这种交互范式正在从代码生成领域扩展到视觉生成领域。
+
+3. **社交数据与隐私的平衡设计**：Muse Image 的 Instagram 集成展示了 AI 产品中社交数据利用的隐私设计模式——opt-out 机制 + 隐形水印 + 公开数据只读引用。这是构建 AI 社交产品时的参考范式。
+
+4. **多参考图合成的工作流价值**：在电商、设计、品牌营销等场景中，Muse Image 的多参考图合成为一个提示词即可完成复杂视觉创作的能力，有望大幅降低图像素材生产的边际成本。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-msl-image-video-models-余家辉.md)
+
+---
+
+## Ch17.039 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
+
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md`
+
+# Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
+
+VLX-Go 是 Om AI（联汇）VLX 端侧流式多模态模型系列的第三弹，定位为**行动决策层**，解决 VLM 从「看懂」到「行动」的跨越——即模型不仅能描述环境、定位目标，还能输出可执行的导航指令。
+
+## 核心定位：从感知到行动
+
+前两代 VLX（Flow 流式视频理解、Seek 细粒度感知）解决了 VLM「看得懂」的问题，VLX-Go 补上了「行动决策」层：接收连续视觉流输入，输出机器人下一时刻的运动目标——往哪里走、何时修正方向、如何在动态画面中避开障碍物。
+
+## 技术特点
+
+- **0.6B 参数在端侧跑通导航**：极小模型即可驱动物理世界导航任务，不依赖云端推理
+- **从目标定位到行动**：VLX-Go 补上 VLX 系列的行动决策层，与 Flow（流式理解）、Seek（精准定位）形成「理解→定位→行动」完整链路
+- **避开突发障碍物**：依靠实时视觉推理进行动态避障，非预编程路径规划
+- **短时航点预测机制**：模型每次只预测未来一小段轨迹，执行后再根据新画面更新下一段，避免长路径累积误差
+
+## VLX 系列对比
+
+| 型号 | 定位 | 能力 |
+|------|------|------|
+| VLX-Flow | 流式视频理解 | 边看边理解连续视频流 |
+| VLX-Seek | 细粒度感知 | 区域检索 + 精确定位 |
+| **VLX-Go** | **行动决策** | **端侧导航 + 动态避障** |
+
+## 与现有实体关联
+
+- [VLX-Flow](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md) — 系列开篇：流式视频理解 VLM
+- [VLX-Seek](https://github.com/QianJinGuo/wiki/blob/main/entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md) — 系列第二弹：3B 细粒度感知 VLM
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-vlm-navigation-0.6b-2026.md)
+
+## 第 2 来源 — PaperWeekly 解读
+
+PaperWeekly 对 VLX-Go 进行了补充报道，重点介绍了 VLX-Go 在真实机器人上的局部导航演示：跟随目标行走、动态避障、地面机器人平台上的短时航点预测流程。
+
+报道补充了 VLX-Go 的训练模式细节：基于**离线轨迹数据学习**，系统先缓存视频帧的视觉特征减少训练开销，规划器读取视觉 token、历史帧信息后预测短时航点序列。
+
+## 深度分析
+
+### VLX-Go 的技术架构设计范式
+
+VLX-Go 的核心设计选择是**将 VLM 的输出形式从文本答案推进到短时行动轨迹**。传统 VLM 输出停留在文字层面（"向左前方移动"），但真实机器人需要的是可执行的航点坐标——这要求模型的输出层与底层控制接口对齐。
+
+VLX-Go 明确自身定位为**感知和控制之间的局部策略层**，而非替代底层控制器。模型负责将视觉、语言和历史帧接入行动预测，输出短时航点；速度命令、平台动力学和安全约束仍交给下游控制器与安全层。这种职责拆分使得模型体积可以压缩到 0.6B，同时保持与不同硬件平台的兼容性。
+
+### 离线轨迹学习 + 在线强化学习的混合训练策略
+
+VLX-Go 采用两阶段训练：第一阶段基于离线轨迹数据学习，系统预先缓存视频帧的视觉特征以减少训练开销，规划器学习预测短时航点序列。第二阶段引入在线强化学习优化，在仿真器或闭环环境中，模型预测航点后由控制器执行，环境返回新视觉观测和反馈信号（碰撞、障碍物距离、目标保持、进度奖励等），帮助模型学到更安全、更平滑的局部策略。
+
+这种混合策略的关键创新在于**仿真器贯穿数据生成、在线优化和闭环评测三个环节**，使得离线数据难以覆盖的动态避障场景（障碍物布局变化、目标遮挡、执行误差累积）可以通过交互式反馈得到有效治理。
+
+### EVT-Bench STT 评测表现
+
+在 EVT-Bench 的 STT 任务上，VLX-Go 0.6B 规划器取得 **SR（成功率）85.42%**、**TR（跟踪率）94.08%**、**CR（碰撞率）6.55%**。评测结果说明：在目标跟随任务中，0.6B 级别的模型已经具备实用竞争力；碰撞率的优化仍可通过仿真环境、奖励设计和安全约束继续收窄。
+
+### 与行业同类方案的定位差异
+
+与主流端到端导航方案不同，VLX-Go 不接管整套机器人控制栈，而是专注于将视觉语言状态转换为面向控制链路的航点输出。模型越轻，推理成本和部署压力越低，越接近真实运行约束。对端侧具身设备来说，导航决策随画面变化不断刷新，0.6B 级规划器在部署成本、调用开销和端到端延迟方面具有显著优势。
+
+## 实践启示
+
+1. **职责拆分是模型瘦身的关键**：VLX-Go 不替代底层控制器，而是作为视觉驱动的局部策略模型。这种"模型负责视觉语言规划 + 控制器负责执行 + 安全层提供约束"的职责拆分，是将其压缩至 0.6B 仍能实用的前提。在构建端侧 AI 系统时，应清晰界定模型的能力边界。
+
+2. **混合训练策略解决数据覆盖不足**：纯离线轨迹学习难以覆盖所有障碍物布局和动态干扰，VLX-Go 的离线+在线强化学习混合策略证明了：仿真环境中的闭环反馈对动态避障类任务至关重要。仿真器应贯穿数据生成、策略优化和闭环评测全流程。
+
+3. **短时航点预测减少累积误差**：每次只预测一小段轨迹，执行后再根据新画面更新，这种"预测-执行-观测"的循环机制避免了长路径累积误差，也使得在真实设备上的安全检查更容易落地。这对长时延场景下的机器人部署具有普适参考价值。
+
+4. **VLX 三件套的协同效应**：Flow（持续感知）→ Seek（精准定位）→ Go（行动决策），三层能力形成完整闭环。在构建端侧系统时，应优先考虑能力链路的完整性而非单一模块的性能巅峰。
+
+5. **0.6B 参数量的实际意义**：在具身系统里航点预测会随着新画面不断刷新，模型越小，部署成本和端到端延迟越可控。VLX-Go 证明 VLM 可以同时做到"小参数"和"实用性能"——前提是明确的任务边界和恰当的训练策略。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-vlm-navigation-0.6b-2026.md)
+→ [PaperWeekly 报道原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/om-ai-vlx-go-paperweekly-2026.md)
+
+---
+
+## Ch17.040 Introducing 1-bit and Ternary Bonsai Image Models
+
+> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/bonsai-image-4b-1-bit-ternary.md`
+
+# Introducing 1-bit and Ternary Bonsai Image Models
+
+## 深度分析
+
+Published Time: 2026-05-26
+
+Markdown Content:
+![Image 1](https://cdn.prod.website-files.com/699604cc2b9dd89bdbda0608/6a15cec375689f915406cc3c_grid.png)
+
+Images generated from Ternary Bonsai Image 4B
+
+Today we’re releasing **Bonsai Image 4B**, a family of compact image-generation models designed to run high-quality diffusion inference on local hardware: from laptops to phones.
+
+Bonsai Image 4B comes in two variants:
+
+*   **1-bit Bonsai Image 4B** uses binary {−1, +1} transformer weights with an FP16 group-wise scaling factor, giving 1.125 effective bits per weight. It targets maximum compression and is the right fit when memory pressure, bandwidth, and the deployment footprint are the primary constraints.
+*   **Ternary Bonsai Image 4B** uses {−1, 0, +1} transformer weights with an FP16 group-wise scaling factor, giving 1.71 effective bits per weight. The additional zero state gives the model more representational flexibility, improving visual quality and prompt fidelity while remaining extremely compact.
+
+The result is a new deployment regime for image generation: capable outputs, open weights, and practical local inference on devices that were previously out of reach for this class of model. To our knowledge, **Bonsai Image 4B is the first image model in its parameter class to run directly on an iPhone**.
+
+## Built for local generation
+
+![Image 2](https://cdn.prod.website-files.com/699604cc2b9dd89bdbda0608/6a15cd893a2c1d8354bece23_ef1081ac.png)
+
+Images generated from 1-bit Bonsai Image 4B
+
+Local image generation starts with a hard constraint: the model has to fit within the device’s memory budget.
+
+For a 4B-class image model, the diffusion transformer is the largest part of the model and the part that runs repeatedly during generation. Each denoising step invokes the transformer again, so transformer size directly shapes memory pressure, bandwidth demand, and local inference speed.
+
+Bonsai Image 4B is built from the FLUX.2 Klein 4B. It keeps the architecture intact but changes how the transformer weights are represented. By moving those weights into binary and ternary form, Bonsai reduces the part of the image pipeline that matters most for local deployment.
+
+| Model | Diffusion Transformer | Reduction vs FP16 |
+| --- | --- | --- |
+| FLUX.2 Klein 4B | 7.75 GB | 1.0x |
+| 1-bit Bonsai Image 4B | 0.93 GB | 8.3x |
+| Ternary Bonsai Image 4B | 1.21 GB | 6.4x |
+
+> **Table I:**Diffusion transformer footprint for models.
+
+The binary layers provide roughly a 14x reduction relative to full-precision transformer weights. A small set of precision-sensitive supporting tensors (~5%), called the projection layers, remains in FP16 so the final 1-bit Bonsai Image 4B transformer is **0.93 GB**: an 8.3x reduction from the 7.75 GB full-precision FLUX.2 Klein 4B.
+
+The ternary variant follows the same structure. Its ternary layers provide roughly a 10x reduction and the final Ternary Bonsai Image 4B transformer is **1.21 GB**, a 6.4x reduction from the full-precision transformer. It is slightly larger than the 1-bit model, but the additional zero state improves visual quality and prompt fidelity.
+
+Including the compressed text encoder and FP16 VAE, the Apple Silicon deployment payload is 3.42 GB for 1-bit Bonsai Image 4B and 3.88 GB for Ternary Bonsai Image 4B. For comparison, the full precision FLUX.2 Klein 4B requires a deployment payload of 15.97 GB. Since, at runtime, the text encoder is offloaded after prompt encoding, the mean memory usage is smaller than the total payload. When generating a 512x512 image, the mean-active memory is 1.5 GB and 1.96 GB, for the binary and ternary models, compared to 11.74 GB for the original FLUX.2 Klein 4B (a reduction of 7.8x and 6.0x, respectively). For a 1024x1024 image, the mean-active memory is 1.95 GB and 2.38 GB, for the binary and ternary models, compared to 14.39 GB for the original FLUX.2 Klein 4B (a reduction of 7.4x and 6.0x, respectively).
+
+This reduction in memory footprint changes where the model can run. Our deployment stack supports Apple Silicon iPhones, iPads and Macs and CUDA GPUs, using MLX low-bit paths on Apple hardware and Gemlite low-bit GEMM kernels on CUDA. On iPhone 17 Pro Max, the full-precision FLUX.2 Klein 4B pipeline does not fit within the device memory budget, while both Bonsai Image variants run on-device.
+
+[Video 3](https://vimeo.com/1195512651)
+
+> Video I: Image generation on Bonsai Studio
+
+In practice, Bonsai Image 4B generates a 512x512 image in 9.4 seconds on an iPhone 17 Pro Max and about 6 seconds on Mac M4 Pro. On Mac M4 Pro, Bonsai Image 4B is up to 5.6x faster than the stock full-precision MFLUX pipeline.
+
+## Benchmarking performance
+
+Compression only matters if the model remains useful. We evaluated Bonsai Image 4B across three complementary benchmarks: **GenEval** for object composition and attribute binding; **HPSv3** human preference and aesthetic quality; **DPG-Bench** dense prompt following and semantic faithfulness.
+
+![Image 3](https://cdn
+
+## 相关实体
+- [Bonsai Image 4B Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-quantization.md)
+- [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
+- [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
+- [Openai Models Codex Amazon Bedrock Ga](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-models-codex-amazon-bedrock-ga.md)
+- [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bonsai-image-4b-1-bit-ternary.md)
+
+---
+
+## Ch17.041 火山引擎 RTM：超低延时直播技术
+
+> 📊 Level ⭐⭐⭐ | 6.4KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
 
 # 火山引擎 RTM：超低延时直播技术
 
@@ -3741,123 +3866,48 @@ ABR 不只是简单的码率切换机制，而是服务端和客户端协同的�
 
 ---
 
-## Ch17.040 Introducing 1-bit and Ternary Bonsai Image Models
+## Ch17.042 Normalizing Trajectory Models
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/bonsai-image-4b-1-bit-ternary.md`
+> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/normalizing-trajectory-models.md`
 
-# Introducing 1-bit and Ternary Bonsai Image Models
-
-## 深度分析
-
-Published Time: 2026-05-26
-
-Markdown Content:
-![Image 1](https://cdn.prod.website-files.com/699604cc2b9dd89bdbda0608/6a15cec375689f915406cc3c_grid.png)
-
-Images generated from Ternary Bonsai Image 4B
-
-Today we’re releasing **Bonsai Image 4B**, a family of compact image-generation models designed to run high-quality diffusion inference on local hardware: from laptops to phones.
-
-Bonsai Image 4B comes in two variants:
-
-*   **1-bit Bonsai Image 4B** uses binary {−1, +1} transformer weights with an FP16 group-wise scaling factor, giving 1.125 effective bits per weight. It targets maximum compression and is the right fit when memory pressure, bandwidth, and the deployment footprint are the primary constraints.
-*   **Ternary Bonsai Image 4B** uses {−1, 0, +1} transformer weights with an FP16 group-wise scaling factor, giving 1.71 effective bits per weight. The additional zero state gives the model more representational flexibility, improving visual quality and prompt fidelity while remaining extremely compact.
-
-The result is a new deployment regime for image generation: capable outputs, open weights, and practical local inference on devices that were previously out of reach for this class of model. To our knowledge, **Bonsai Image 4B is the first image model in its parameter class to run directly on an iPhone**.
-
-## Built for local generation
-
-![Image 2](https://cdn.prod.website-files.com/699604cc2b9dd89bdbda0608/6a15cd893a2c1d8354bece23_ef1081ac.png)
-
-Images generated from 1-bit Bonsai Image 4B
-
-Local image generation starts with a hard constraint: the model has to fit within the device’s memory budget.
-
-For a 4B-class image model, the diffusion transformer is the largest part of the model and the part that runs repeatedly during generation. Each denoising step invokes the transformer again, so transformer size directly shapes memory pressure, bandwidth demand, and local inference speed.
-
-Bonsai Image 4B is built from the FLUX.2 Klein 4B. It keeps the architecture intact but changes how the transformer weights are represented. By moving those weights into binary and ternary form, Bonsai reduces the part of the image pipeline that matters most for local deployment.
-
-| Model | Diffusion Transformer | Reduction vs FP16 |
-| --- | --- | --- |
-| FLUX.2 Klein 4B | 7.75 GB | 1.0x |
-| 1-bit Bonsai Image 4B | 0.93 GB | 8.3x |
-| Ternary Bonsai Image 4B | 1.21 GB | 6.4x |
-
-> **Table I:**Diffusion transformer footprint for models.
-
-The binary layers provide roughly a 14x reduction relative to full-precision transformer weights. A small set of precision-sensitive supporting tensors (~5%), called the projection layers, remains in FP16 so the final 1-bit Bonsai Image 4B transformer is **0.93 GB**: an 8.3x reduction from the 7.75 GB full-precision FLUX.2 Klein 4B.
-
-The ternary variant follows the same structure. Its ternary layers provide roughly a 10x reduction and the final Ternary Bonsai Image 4B transformer is **1.21 GB**, a 6.4x reduction from the full-precision transformer. It is slightly larger than the 1-bit model, but the additional zero state improves visual quality and prompt fidelity.
-
-Including the compressed text encoder and FP16 VAE, the Apple Silicon deployment payload is 3.42 GB for 1-bit Bonsai Image 4B and 3.88 GB for Ternary Bonsai Image 4B. For comparison, the full precision FLUX.2 Klein 4B requires a deployment payload of 15.97 GB. Since, at runtime, the text encoder is offloaded after prompt encoding, the mean memory usage is smaller than the total payload. When generating a 512x512 image, the mean-active memory is 1.5 GB and 1.96 GB, for the binary and ternary models, compared to 11.74 GB for the original FLUX.2 Klein 4B (a reduction of 7.8x and 6.0x, respectively). For a 1024x1024 image, the mean-active memory is 1.95 GB and 2.38 GB, for the binary and ternary models, compared to 14.39 GB for the original FLUX.2 Klein 4B (a reduction of 7.4x and 6.0x, respectively).
-
-This reduction in memory footprint changes where the model can run. Our deployment stack supports Apple Silicon iPhones, iPads and Macs and CUDA GPUs, using MLX low-bit paths on Apple hardware and Gemlite low-bit GEMM kernels on CUDA. On iPhone 17 Pro Max, the full-precision FLUX.2 Klein 4B pipeline does not fit within the device memory budget, while both Bonsai Image variants run on-device.
-
-[Video 3](https://vimeo.com/1195512651)
-
-> Video I: Image generation on Bonsai Studio
-
-In practice, Bonsai Image 4B generates a 512x512 image in 9.4 seconds on an iPhone 17 Pro Max and about 6 seconds on Mac M4 Pro. On Mac M4 Pro, Bonsai Image 4B is up to 5.6x faster than the stock full-precision MFLUX pipeline.
-
-## Benchmarking performance
-
-Compression only matters if the model remains useful. We evaluated Bonsai Image 4B across three complementary benchmarks: **GenEval** for object composition and attribute binding; **HPSv3** human preference and aesthetic quality; **DPG-Bench** dense prompt following and semantic faithfulness.
-
-![Image 3](https://cdn
-
-## 相关实体
-- [Bonsai Image 4B Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-quantization.md)
-- [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
-- [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
-- [Openai Models Codex Amazon Bedrock Ga](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-models-codex-amazon-bedrock-ga.md)
-- [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bonsai-image-4b-1-bit-ternary.md)
-
----
-
-## Ch17.041 Normalizing Trajectory Models
-
-> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/normalizing-trajectory-models.md`
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/normalizing-trajectory-models-v2.md)
+> -> [[raw/articles/normalizing-trajectory-models-v2|原文存档]
 
 ## 摘要
-Normalizing Trajectory Models (NTM) 是 Jiatao Gu 等人于 2026 年 5 月提交至 arXiv 的新型扩散模型变体，专注于解决少步生成（few-step generation）场景下传统扩散模型假设失效的核心问题。传统扩散模型将采样分解为大量小步高斯去噪——这一假设在生成被压缩至少数几步时物理上不成立。NTM 的核心创新在于：将每一步 reverse 过程建模为 expressive conditional normalizing flow，并通过精确似然训练实现端到端优化。在文生图基准上，NTM 仅用 4 步采样即可匹配或超越强基线，同时唯一保留对生成轨迹的精确似然计算能力。
-本文于 2026 年 5 月 8 日提交至 arXiv，作者团队来自 Apple ML Research。
+Normalizing Trajectory Models (NTM) 是 Jiatao Gu 等人于 2026 年 5 月提交至 arXiv 的新型扩散模型变体，专注于解决少步生成（few-step generation）场景下传统扩散模型假设失效的核心问题。传统扩散模型将采样分解为大量小步高斯去噪——这一假设在生成被压缩至少数几步时物理上不成立。NTM 的核心创新在于：将每一步 reverse 过程建模为 expressive conditional normalizing flow，并通过精确似然训练实现端到端优化。在文生图基准上，NTM 仅用 4 步采样即可匹配或超越强基线，同时唯一保留对生成轨迹的精确似然计算能力。^[].md]
+
+本文于 2026 年 5 月 8 日提交至 arXiv，作者团队来自 Apple ML Research。^[].md]
 
 ## 背景问题：少步生成的困境
-扩散模型（DDPM、Flow Matching 等）的采样通常需要数十至数百步去噪，导致推理成本高昂。现有的少步加速方法分为三类：
+扩散模型（DDPM、Flow Matching 等）的采样通常需要数十至数百步去噪，导致推理成本高昂。现有的少步加速方法分为三类：^[].md]
 
 - **Distillation（蒸馏）**：将多步教师模型的知识蒸馏至少步学生模型，但训练不稳定且需要大规模数据
 - **Consistency Training（一致性训练）**：强制不同噪声水平下的样本映射至同一直流，核心思路接近 consistency model，但牺牲了似然框架
 - **Adversarial Objectives（对抗目标）**：引入 GAN式判别器提升少步质量，但失去精确似然，无法进行概率评估
-上述方法有一个共同缺陷：**均放弃了似然框架**，这在压缩评估、异常检测、模型选择等下游任务中是致命的。
+上述方法有一个共同缺陷：**均放弃了似然框架**，这在压缩评估、异常检测、模型选择等下游任务中是致命的。^[].md]
 
 ## 核心创新
 ### 条件归一化流建模每步 Reverse 过程
-NTM 的核心架构决策是将每步 reverse 去噪过程建模为**条件归一化流（Conditional Normalizing Flow）**。归一化流通过可逆变换实现精确似然计算，但传统上每步独立建模时表达能力受限。NTM 的解法是：
+NTM 的核心架构决策是将每步 reverse 去噪过程建模为**条件归一化流（Conditional Normalizing Flow）**。归一化流通过可逆变换实现精确似然计算，但传统上每步独立建模时表达能力受限。NTM 的解法是：^[].md]
 
 - **每步内（within-step）**：使用浅层可逆（invertible）块，保证该步内的精确似然可计算
 - **跨步（across-step）**：引入深层并行预测器，捕捉整个生成轨迹上的依赖关系
-这种"浅层可逆 + 深层跨步"的设计在表达能力和计算效率之间取得了工程折中：每步只做轻量变换，用跨步的深度网络补充表达力，避免了深层可逆网络的高计算成本。
+这种"浅层可逆 + 深层跨步"的设计在表达能力和计算效率之间取得了工程折中：每步只做轻量变换，用跨步的深度网络补充表达力，避免了深层可逆网络的高计算成本。^[].md]
 
 ### 精确轨迹似然与自蒸馏
-NTM 的精确轨迹似然（exact trajectory likelihood）使其天然支持**自蒸馏（self-distillation）**：一个轻量级去噪器可以在 NTM 模型自身的 score 基础上进行微调，产出高质量 4 步采样结果。这意味着 NTM 可以"自我压缩"——无需外部多步教师模型，自己教自己完成少步化。
+NTM 的精确轨迹似然（exact trajectory likelihood）使其天然支持**自蒸馏（self-distillation）**：一个轻量级去噪器可以在 NTM 模型自身的 score 基础上进行微调，产出高质量 4 步采样结果。这意味着 NTM 可以"自我压缩"——无需外部多步教师模型，自己教自己完成少步化。^[].md]
 
 ### 预训练初始化
-NTM 支持从预训练的 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过线性插值噪声和真实数据预测向量场，NTM 将这一线性预测过程参数化为条件归一化流，从线性轨迹出发逐步学习更复杂的反转动态。这一特性显著加速了 NTM 的收敛。
+NTM 支持从预训练的 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过线性插值噪声和真实数据预测向量场，NTM 将这一线性预测过程参数化为条件归一化流，从线性轨迹出发逐步学习更复杂的反转动态。这一特性显著加速了 NTM 的收敛。^[].md]
 
 ## 深度分析
 ### 架构哲学：精确描述 vs. 实用速度
-NTM 的定位是**保留完整似然框架的少步方法**，这使其与单纯追求速度的方法（GAN-based、adversarial distillation）本质不同。速度不是唯一目标；**保持概率语义**——即能够精确计算 p(x|z)——同样重要。在需要严格概率计数的场景（如数据压缩、异常检测、生成质量评估），NTM 的优势是其他少步方法无法替代的。
+NTM 的定位是**保留完整似然框架的少步方法**，这使其与单纯追求速度的方法（GAN-based、adversarial distillation）本质不同。速度不是唯一目标；**保持概率语义**——即能够精确计算 p(x|z)——同样重要。在需要严格概率计数的场景（如数据压缩、异常检测、生成质量评估），NTM 的优势是其他少步方法无法替代的。^[].md]
 
 ### 与 Consistency Models 的本质区别
-Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致来实现少步化，本质上是一种隐式的蒸馏，丢失了似然信息。NTM 保留了精确似然，可以进行困惑度（perplexity）计算，这使得两种方法面向不同的应用场景：CM 适合对质量要求极高、对概率评估无需求的场景；NTM 适合需要概率输出的场景。
+Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致来实现少步化，本质上是一种隐式的蒸馏，丢失了似然信息。NTM 保留了精确似然，可以进行困惑度（perplexity）计算，这使得两种方法面向不同的应用场景：CM 适合对质量要求极高、对概率评估无需求的场景；NTM 适合需要概率输出的场景。^[].md]
 
 ### 少步化的理论基础
-传统扩散模型的"多步小步"假设在数学上对应于对 score 函数进行 Euler-Maruyama 积分。当步数极少时，积分误差主导，输出质量崩溃。NTM 通过学习每步的完整条件归一化流绕过了这一积分近似——不再依赖"小步累积"，而是直接学习粗粒度的条件变换。这在理论上解释了为什么 NTM 在 4 步下仍能保持高质量，也为进一步压缩至 2-3 步提供了方向。
+传统扩散模型的"多步小步"假设在数学上对应于对 score 函数进行 Euler-Maruyama 积分。当步数极少时，积分误差主导，输出质量崩溃。NTM 通过学习每步的完整条件归一化流绕过了这一积分近似——不再依赖"小步累积"，而是直接学习粗粒度的条件变换。这在理论上解释了为什么 NTM 在 4 步下仍能保持高质量，也为进一步压缩至 2-3 步提供了方向。^[].md]
 
 ## 实践启示
 ### 部署建议
@@ -3874,68 +3924,14 @@ Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致�
 - 4 步采样的质量上限是否接近其实用上限，以及更多步数（8-16）时是否仍有优势
 
 ## 相关实体
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/normalizing-trajectory-models-v2.md)
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/ntm-normalizing-trajectory-models.md)
-
----
-
-## Ch17.042 ai视频工具悄悄走到了第三阶段
-
-> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/ai视频工具悄悄走到了第三阶段.md`
-
-> -> 原文存档
-# ai视频工具悄悄走到了第三阶段
-source: 
-## 摘录
-> AI视频工具悄悄走到了第三阶段
-这两年我看了一堆号称要颠覆AI视频的新产品。看了一阵子，我大概看出了一个规律。
-第一代AI视频工具，是文生视频的盲盒。 一句话扔进去，等几分钟，开出来什么算什么，不满意只能重新投币。
-第二代多了个Agent入口，AI开始能用对话方式调度。但Agent是悬浮在产品之外的「插件」，对话归对话，画布归画布，AI在另一个房间帮你跑腿。
-最近我用了一个国产的画布型AI视频工具，叫RHTV。打开第一眼我就感觉，AI视频工具可能在悄悄进第三阶段了。
-这一代的关键词是「画布原生」。Agent不是悬浮在画布之外的服务，而是画布本身的大脑。它住在你的工作流里，看得见你每一步在做什么，也让你看得见它每一步在想什么。
-听起来好像只是产品形态的小调整，但用过之后我意识到，它其实在重新定义「人和AI怎么一起做事」这件事。
-一、AI视频工具的三阶段演化
-把过去两年的AI视频工具按使用体验排一下，能很清晰地看到三个阶段。
-第一阶段，文生视频盲盒。
-你输入一句话，等模型出片。整个过程是黑盒，AI怎么理解你的需求、怎么选模型、怎么处理细节，全在后端，用户看不到。结果不满意只能重新生成，没有...
-## 标签
-- source/wechat
-## 相关实体
-> 主题导航
-- [提速4.48倍！哈工大华为新框架让扩散大模型精度无损推理起飞](https://github.com/QianJinGuo/wiki/blob/main/entities/提速448倍哈工大华为新框架让扩散大模型精度无损推理起飞.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
-## 深度分析
-### 1. 三阶段演化路径的本质逻辑
-AI视频工具的三代演化，本质上反映了人机协作模式的深层变迁。
-**第一阶段（文生视频盲盒）** 代表的是「AI作为黑盒服务」的范式——用户提交指令，AI在封闭系统中完成推理并输出结果，用户与AI之间是单向的「投币-产出」关系。这一阶段的核心矛盾是：AI能力再强，用户也只能在结果不满意时重新生成，无法干预过程。
-**第二代（Agent插件化）** 引入了对话入口，AI开始具备任务拆解和工具调度的能力。但Agent作为「悬浮在画布之外的服务」，与用户的核心工作区（画布）是割裂的。AI在另一个房间跑腿，用户在这里指挥——这种架构决定了AI永远是一个可召唤但不可信赖的外部助手。
-**第三代（画布原生Agent）** 的核心突破在于：Agent不再是外接插件，而是画布本身的大脑。AI内嵌在用户的工作流中，能感知用户每一步的操作上下文，同时将自身的推理过程可视化地呈现给用户。这意味着AI从「被召唤的工具」变成了「可协作的伙伴」。
-### 2. 「画布原生」意味着什么
-「画布原生」不仅仅是产品形态的创新，它代表了一种新的AI落地哲学：
-- **感知上下文**：Agent能看到用户在做什么，能基于当前工作状态做动态决策，而不是每次都需要用户重新描述背景。
-- **推理透明**：AI每一步在想什么对用户可见，用户可以及时纠正AI的方向，而不是等最终结果出来才发现跑偏了。
-- **深度集成**：AI成为工作流的一部分，而不是一个需要切换上下文才能调用的独立工具。
-这种模式让人想起儿时玩的「画布填色」——你画一笔，AI帮你补全并实时呈现，每一笔都在双方的交互中完成。这从根本上重新定义了「人和AI怎么一起做事」。
-### 3. 对AI视频赛道竞争格局的启示
-RHTV作为第三阶段的先行者，其「画布原生」路线可能会对赛道竞争产生以下影响：
-- **工具型AI的终点可能不是更强的模型，而是更好的协作体验**：当模型能力趋于同质化，用户体验和工作流集成度将成为核心差异化因素。
-- **纯API调用模式将面临挑战**：那些依赖调用外部模型API的视频工具，如果不能提供深度的上下文感知和过程可视化，可能会被原生集成方案降维打击。
-- **「AI as Co-pilot」将取代「AI as Tool」成为主流叙事**：用户需要的不是一个更强大的工具，而是一个能理解自己、跟自己协同工作的伙伴。
-## 实践启示
-### 给AI视频工具开发者的建议
-1. **重新思考Agent的架构定位**：不要把Agent做成一个「悬浮在画布之外的插件」，而是让它成为画布本身的一部分。Agent应该能感知用户的每一步操作，并在上下文中提供实时的智能辅助。
-2. **优先建设推理可视化能力**：透明化AI的思考过程比提升最终输出质量更重要。用户需要看到AI在想什么，才能建立信任并及时干预。
-3. **从「工具调用」转向「工作流共生」**：与其让用户学习如何调用AI，不如让AI自适应用户的工作流。用户不应该为了使用AI而改变自己的工作方式。
-### 给企业/创作者的建议
-1. **优先选择原生集成方案**：在评估AI视频工具时，关注AI是否能理解你的工作上下文、是否能呈现推理过程，而不仅仅是模型参数或生成速度。
-2. **将AI纳入工作流的思维转变**：不要把AI当成「出图机器」，而是当成一个能跟你一起工作的协作者。选择那些让你能持续参与、引导、纠正AI的工具。
-3. **关注「第三阶段」产品的先发优势**：RHTV等先行者正在定义下一代AI视频工具的标准，及早布局可能带来显著的效率红利。
+- [[entities/normalizing-trajectory-models-v2|Normalizing Trajectory Models]
+- [[entities/ntm-normalizing-trajectory-models|Normalizing Trajectory Models]
 
 ---
 
 ## Ch17.043 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
-> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/moebius.md`
+> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
 
 # Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
@@ -3996,6 +3992,7 @@ Moebius 在以下基准上进行了全面评估：
 ### 与模型压缩领域的关联
 
 Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
+
 - **知识蒸馏**：从大模型向小模型迁移能力的经典范式，Moebius 将其推进到 latent space 级别
 - **结构化剪枝**：LλMI 的设计思路类似对注意力机制的结构性重构
 - **稀疏化**：Moebius 证明了极端参数压缩（<2%）在任务特化场景下完全可行
@@ -4019,9 +4016,63 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ---
 
-## Ch17.044 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.044 ai视频工具悄悄走到了第三阶段
 
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/ai视频工具悄悄走到了第三阶段.md`
+
+> -> 原文存档
+# ai视频工具悄悄走到了第三阶段
+source: 
+## 摘录
+> AI视频工具悄悄走到了第三阶段
+这两年我看了一堆号称要颠覆AI视频的新产品。看了一阵子，我大概看出了一个规律。
+第一代AI视频工具，是文生视频的盲盒。 一句话扔进去，等几分钟，开出来什么算什么，不满意只能重新投币。
+第二代多了个Agent入口，AI开始能用对话方式调度。但Agent是悬浮在产品之外的「插件」，对话归对话，画布归画布，AI在另一个房间帮你跑腿。
+最近我用了一个国产的画布型AI视频工具，叫RHTV。打开第一眼我就感觉，AI视频工具可能在悄悄进第三阶段了。
+这一代的关键词是「画布原生」。Agent不是悬浮在画布之外的服务，而是画布本身的大脑。它住在你的工作流里，看得见你每一步在做什么，也让你看得见它每一步在想什么。
+听起来好像只是产品形态的小调整，但用过之后我意识到，它其实在重新定义「人和AI怎么一起做事」这件事。
+一、AI视频工具的三阶段演化
+把过去两年的AI视频工具按使用体验排一下，能很清晰地看到三个阶段。
+第一阶段，文生视频盲盒。
+你输入一句话，等模型出片。整个过程是黑盒，AI怎么理解你的需求、怎么选模型、怎么处理细节，全在后端，用户看不到。结果不满意只能重新生成，没有...
+## 标签
+- source/wechat
+## 相关实体
+> 主题导航
+- [提速4.48倍！哈工大华为新框架让扩散大模型精度无损推理起飞](https://github.com/QianJinGuo/wiki/blob/main/entities/提速448倍哈工大华为新框架让扩散大模型精度无损推理起飞.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+## 深度分析
+### 1. 三阶段演化路径的本质逻辑
+AI视频工具的三代演化，本质上反映了人机协作模式的深层变迁。
+**第一阶段（文生视频盲盒）** 代表的是「AI作为黑盒服务」的范式——用户提交指令，AI在封闭系统中完成推理并输出结果，用户与AI之间是单向的「投币-产出」关系。这一阶段的核心矛盾是：AI能力再强，用户也只能在结果不满意时重新生成，无法干预过程。
+**第二代（Agent插件化）** 引入了对话入口，AI开始具备任务拆解和工具调度的能力。但Agent作为「悬浮在画布之外的服务」，与用户的核心工作区（画布）是割裂的。AI在另一个房间跑腿，用户在这里指挥——这种架构决定了AI永远是一个可召唤但不可信赖的外部助手。
+**第三代（画布原生Agent）** 的核心突破在于：Agent不再是外接插件，而是画布本身的大脑。AI内嵌在用户的工作流中，能感知用户每一步的操作上下文，同时将自身的推理过程可视化地呈现给用户。这意味着AI从「被召唤的工具」变成了「可协作的伙伴」。
+### 2. 「画布原生」意味着什么
+「画布原生」不仅仅是产品形态的创新，它代表了一种新的AI落地哲学：
+- **感知上下文**：Agent能看到用户在做什么，能基于当前工作状态做动态决策，而不是每次都需要用户重新描述背景。
+- **推理透明**：AI每一步在想什么对用户可见，用户可以及时纠正AI的方向，而不是等最终结果出来才发现跑偏了。
+- **深度集成**：AI成为工作流的一部分，而不是一个需要切换上下文才能调用的独立工具。
+这种模式让人想起儿时玩的「画布填色」——你画一笔，AI帮你补全并实时呈现，每一笔都在双方的交互中完成。这从根本上重新定义了「人和AI怎么一起做事」。
+### 3. 对AI视频赛道竞争格局的启示
+RHTV作为第三阶段的先行者，其「画布原生」路线可能会对赛道竞争产生以下影响：
+- **工具型AI的终点可能不是更强的模型，而是更好的协作体验**：当模型能力趋于同质化，用户体验和工作流集成度将成为核心差异化因素。
+- **纯API调用模式将面临挑战**：那些依赖调用外部模型API的视频工具，如果不能提供深度的上下文感知和过程可视化，可能会被原生集成方案降维打击。
+- **「AI as Co-pilot」将取代「AI as Tool」成为主流叙事**：用户需要的不是一个更强大的工具，而是一个能理解自己、跟自己协同工作的伙伴。
+## 实践启示
+### 给AI视频工具开发者的建议
+1. **重新思考Agent的架构定位**：不要把Agent做成一个「悬浮在画布之外的插件」，而是让它成为画布本身的一部分。Agent应该能感知用户的每一步操作，并在上下文中提供实时的智能辅助。
+2. **优先建设推理可视化能力**：透明化AI的思考过程比提升最终输出质量更重要。用户需要看到AI在想什么，才能建立信任并及时干预。
+3. **从「工具调用」转向「工作流共生」**：与其让用户学习如何调用AI，不如让AI自适应用户的工作流。用户不应该为了使用AI而改变自己的工作方式。
+### 给企业/创作者的建议
+1. **优先选择原生集成方案**：在评估AI视频工具时，关注AI是否能理解你的工作上下文、是否能呈现推理过程，而不仅仅是模型参数或生成速度。
+2. **将AI纳入工作流的思维转变**：不要把AI当成「出图机器」，而是当成一个能跟你一起工作的协作者。选择那些让你能持续参与、引导、纠正AI的工具。
+3. **关注「第三阶段」产品的先发优势**：RHTV等先行者正在定义下一代AI视频工具的标准，及早布局可能带来显著的效率红利。
+
+---
+
+## Ch17.045 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+
+> 📊 Level ⭐⭐⭐ | 5.6KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
 ## 核心要点
 - Published Time: 2026-05-18T16:00:21.256Z [Back to Articles](https://huggingface.co/blog) [![Image 1: Ting-Yun Chang's avatar](https://huggingface.co/avatars/e4d63791901a7274e97d27ac879c1355.svg)](http
@@ -4062,7 +4113,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.045 Stable Audio 3.0 开源音频生成模型
+## Ch17.046 Stable Audio 3.0 开源音频生成模型
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/stable-audio-3.md`
 
@@ -4119,9 +4170,9 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.046 扩散模型视觉生成一致性框架（2026 综述）
+## Ch17.047 扩散模型视觉生成一致性框架（2026 综述）
 
-> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
 
 # 扩散模型视觉生成一致性框架（2026 综述）
 
@@ -4183,7 +4234,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.047 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+## Ch17.048 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
 
@@ -4249,7 +4300,7 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.048 FLUX 3 — Black Forest Labs 多模态流模型
+## Ch17.049 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -4311,7 +4362,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.049 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.050 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -4353,9 +4404,9 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.050 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.051 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
-> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
+> 📊 Level ⭐⭐⭐ | 3.6KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
 # 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
@@ -4364,7 +4415,9 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 source: wechat
 source_url: https://mp.weixin.qq.com/s/fF9D9Vvx3PsFrdy94eKyVg
 ingested: 2026-07-08
+
 source_published: 2026年7月8日 11:02
+
 ---
 # 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 编辑｜杜伟
@@ -4394,7 +4447,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.051 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.052 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4438,7 +4491,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.052 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.053 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4483,7 +4536,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.053 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.054 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4511,7 +4564,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.054 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.055 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -4635,7 +4688,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.055 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.056 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

@@ -5,6 +5,7 @@ url: https://mp.weixin.qq.com/s/oafitVcK5kXYXP6kteE90A
 mp_name: 腾讯研究院
 publish_date: 2026-05-06
 sha256: 2fae5f21fb1f4382c35982566fb6c4b405395b9c6242838c0a75cbf78afb9e53
+source_url: "https://mp.weixin.qq.com/s/oafitVcK5kXYXP6kteE90A"
 ---
 
 # 范凌：当公司变成Agent，关于 AI 时代组织的 5 个反思

@@ -12,6 +12,7 @@ review_confidence: 7
 sha256: c4404966369f425a672dc9ac43425df8a838e1ed658ec852c020277a53c59699
 status: supplemental
 supplements: entities/opencli
+source_url: "https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ"
 ---
 # 四款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser
 > 来源：[行小招 - 科技充电站](https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ)，2026-05-19

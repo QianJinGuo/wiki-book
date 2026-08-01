@@ -11,6 +11,7 @@ ingested: 2026-06-05
 review_value: 8
 review_confidence: 8
 review_recommendation: worth-reading
+source_url: "https://x.com/trq212/status/2061907337154367865"
 ---
 
 # Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）

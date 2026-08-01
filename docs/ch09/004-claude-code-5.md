@@ -2,7 +2,7 @@
 
 ## Ch09.004 Claude Code 个人学习系统：从答案机到学习工作台的 5 步法
 
-> 📊 Level ⭐ | 6.6KB | `entities/claude-code-personal-learning-system-ruofei.md`
+> 📊 Level ⭐ | 6.9KB | `entities/claude-code-personal-learning-system-ruofei.md`
 
 # Claude Code 个人学习系统：从答案机到学习工作台
 
@@ -76,6 +76,7 @@ Bastani 等人(PNAS 2024)研究：无护栏 GPT-4 提高当场表现，但 AI �
 ### Step 5：每轮只留两样 — 学习卡 + 错误记录
 
 **学习卡**：5 分钟恢复上下文（一句话问题 + 5 核心概念 + 最小例子 + 3 误区 + 3 速答）
+
 **错误记录**：错误→原因→下次动作（直接进入下一次练习）
 
 ## 验收标准
@@ -105,13 +106,13 @@ Bastani 等人(PNAS 2024)研究：无护栏 GPT-4 提高当场表现，但 AI �
 - CLAUDE.md 护栏 = 安全护栏（Step 5）
 - 学习卡 = 上下文恢复机制
 
-作者若飞（JiaGouX）系列关联：[Harness 实践指南](../ch05/120-harness-engineering.html)、[Harness 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+作者若飞（JiaGouX）系列关联：[Harness 实践指南](../ch05/126-harness-engineering.html)、[Harness 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ## 相关实体
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness Engineering 10 Step Practical Guide 2026](../ch05/120-harness-engineering.html)
-- [Karpathy Llm Wiki Second Brain Awkthole](../ch01/637-llm.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/286-anthropic-claude-code.html)
+- [Harness Engineering 10 Step Practical Guide 2026](../ch05/126-harness-engineering.html)
+- [Karpathy Llm Wiki Second Brain Awkthole](../ch01/855-llm.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/790-anthropic-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-personal-learning-system-ruofei.md)
 

@@ -7,6 +7,17 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("OpenAI launches Daybreak to …"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 **1. Daybreak 的市场定位：不是替代现有安全工具，而是「上车」企业的 AI 安全战略**
 文章引用 Gartner 分析师 John Watts 的关键判断：「我们相信它（Daybreak）将作为现有工具的补充，而非完全替代」。这个定性非常重要——OpenAI 推出 Daybreak 的目的不是做一个新的 Splunk 或 CrowdStrike，而是**将 AI 安全能力嵌入企业已有的安全工作流**。

@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: c51dd49c2c90139f1ec4ad867e71c0cfd3c94088f4c3fad00ede25191fbd9934
+source_url: "https://github.com/ConardLi/garden-skills"
 ---
 
 sha256: d6f064ad6fde6d1103017ed2767b9a2ecb542cb78b1817ff9e9755c5183d77c4

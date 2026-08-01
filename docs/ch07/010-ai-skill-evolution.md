@@ -2,7 +2,7 @@
 
 ## Ch07.010 ai-skill-evolution底层逻辑
 
-> 📊 Level ⭐⭐ | 19.7KB | `entities/ai-skill-evolution底层逻辑.md`
+> 📊 Level ⭐⭐ | 20.1KB | `entities/ai-skill-evolution底层逻辑.md`
 
 [Ai Skill Evolution底层逻辑](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-evolution底层逻辑.md)
 
@@ -10,6 +10,7 @@
 系列：AI Skill 测评体系从零到一（一）
 难度：入门
 适合读者：AI 产品经理、Prompt 工程师、对 LLM 应用质量感兴趣的开发者
+
 📌 一句话摘要：花两周写好的 AI Skill 上线就出 bug？本文拆解 AI Skill 测评的 3 个核心设计，帮你在发布前发现负向增益、随机失效、自判卷偏差这三类隐藏问题。
 🏷️ 推荐标签：AI Skill 测评 LLM 应用质量 Prompt 工程师 AI Agent 测试
 
@@ -22,6 +23,7 @@
 - 金额超标要自动扣减
 上线第一天，用户反馈：「我说帮我报销，它问我要发票；我发了发票，它说不支持这种格式；我换了格式，它直接帮我提交了——但我只是想保存草稿！」
 更隐蔽的情况是：换一位同事用同样的发票重新触发，这次它又正常工作了。
+
 问题出在哪？规则写了，但没有系统地验证规则是否真的被执行了，也没有验证执行结果是否稳定。**这就是 AI Skill 测评要解决的问题。**
 
 ## 什么是 AI Skill
@@ -60,6 +62,7 @@ Skill 不是代码，是「给模型看的说明书」。模型读懂了才能�
 这是最隐蔽的问题。
 > 【数据来源说明】 以下数据来自本文作者团队针对企业级 AI Skill 落地场景的自研测试研究（以下简称 SkillsBench），共选取 86 个 LLM 应用任务（覆盖报销、审批、文档处理等场景），有效计算增益对比 84 个。
 在该研究中：**84 个有效任务里，16 个（约 19%）加了 Skill 反而比没加更差。**
+
 原因可能是：
 
 - Skill 的规则过于死板，限制了模型本来能做好的灵活性
@@ -141,6 +144,7 @@ Skill 规则只写「必须约束」的部分，不写「可以推断」的部�
 
 ### 4. Δ 为负时的根因分析流程
 当 Δ < 0 时，不要急于删除 Skill。按以下顺序排查：
+
 1. 对比 with_skill 和 without_skill 的具体失败模式——是 Skill 让模型在某个子步骤上变得更差，还是整个任务都变差了？
 2. 检查 Skill 规则中是否存在指令冲突（与模型内在偏好冲突的规则）
 3. 评估 Skill 规则是否过于死板，限制了模型本来能灵活处理的边界情况
@@ -169,14 +173,14 @@ Skill 规则只写「必须约束」的部分，不写「可以推断」的部�
 **Q：AI Skill 测评需要哪些前提条件？**
 在正式开跑测评之前，需要准备三类资产：测试账号（拥有对应权限，能触发 Skill 的目标流程）、测试数据（对应场景的发票、单据等，类型必须和测试用例匹配），以及对被测 Skill 的规则清单（测评工具可以自动从 SKILL.md 提炼，但人工确认一遍更准确）。如果测试资产不匹配，用例会进入 INCONCLUSIVE（无法验证）状态，不代表失败，但必须补充资产后重跑，不能忽略。
 ## 相关实体
-- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/261-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Skill Formal Theory Survey 10Papers](../ch04/273-skill.html)
-- [Glm5 Scaling Pain Inference](../ch01/557-scaling.html)
-- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/077-claude-code.html)
-- [Gepa Optimize Anything](../ch01/296-gepa-optimize-anything.html)
+- [Yidian Tianxia Context Engineering Agentic Ai](../ch04/309-yidian-tianxia-context-engineering-agentic-ai.html)
+- [Skill Formal Theory Survey 10Papers](../ch04/338-skill.html)
+- [Glm5 Scaling Pain Inference](../ch01/612-scaling.html)
+- [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/084-claude-code.html)
+- [Gepa Optimize Anything](../ch01/490-gepa-optimize-anything.html)
 
 - [Auto Improving Agent Platform Ashpreetbedi Shensi](../ch03/035-agent.html)
-- [Hermes Skills Llm Wiki Self Improving Knowledge System](ch07/017-hermes-skill.html)
+- [Hermes Skills Llm Wiki Self Improving Knowledge System](ch07/018-hermes-skill.html)
 
 ---
 

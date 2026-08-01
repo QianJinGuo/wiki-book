@@ -5,6 +5,7 @@ source: wechat
 url: wechat
 sha256: d779f5ae668a84b13dc9f739e94f6db7eb7f1903bb930831b49dcda1c7825915
 date: 2026-05-17 10:05
+source_url: "https://mp.weixin.qq.com/s/d7QteVcIQoQ7ClxrHMIy4A"
 ---
 ---
 source: wechat

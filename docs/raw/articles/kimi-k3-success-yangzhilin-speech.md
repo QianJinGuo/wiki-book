@@ -1,5 +1,6 @@
 ---
 sha256: 8c167ec394acb5b80e0d13cdcb92886b7988894b031893ba83992d114db24391
+source_url: "https://mp.weixin.qq.com/s/w0EtBT4WIdBT9uEGlkBB5Q"
 ---
 # Kimi K3的成功藏在4个月前杨植麟的这场演讲当中
 

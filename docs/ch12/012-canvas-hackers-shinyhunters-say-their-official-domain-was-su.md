@@ -222,6 +222,21 @@ LASTNAME
 *   [Hacking News](https://hackread.com/category/data-breaches/hacking-news/)
 *   [Cyber Crime](https://hackread.com/category/latest-cyber-crime/)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Canvas Hackers ShinyHunters …"))
+    Baltimore' 911 CAD sys…
+    Scammers using voicema…
+    Cloudflare Mitigates M…
+    Kubernetes Clusters Ta…
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## [Baltimore' 911 CAD system hacked; remained suspended for 17 hours](https://hackread.com/baltimore-911-cad-system-hacked-suspended/)
  The 911 dispatch system of Baltimore became the target of hack attack over the weekend. As per Pugh…
 [by Waqas](https://hackread.com/author/hackread/)

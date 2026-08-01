@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: a6f86ae564c59ee341e2a0ba991552b05cb11f107a4db6ee7d9196a7b089c3d0
+source_url: "https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/"
 ---
 
 sha256: 848cfbda10d84adb7c22bb90e2b04cceb43a23725188d09d14fab54bd14dcbec

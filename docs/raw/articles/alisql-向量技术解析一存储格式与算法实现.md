@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: c9788dbc034954a7f86ecea82ec1cd2e7ca0e9026102edcade395533bfcf6a43
+source_url: "https://mp.weixin.qq.com/s/4fLgnwhIuJe76dX89Mv16A"
 ---
 
 # AliSQL 向量技术解析（一）：存储格式与算法实现

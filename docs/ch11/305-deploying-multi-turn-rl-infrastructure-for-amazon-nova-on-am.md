@@ -6,6 +6,21 @@
 
 # Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Deploying Multi-Turn RL Infr…"))
+    深度分析
+      多轮 RL 的企业级意义
+      基础设施架构的工程智慧
+      与 agent-harness 训练的关系
+      训练数据与奖励设计
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 AWS 提出了面向 Amazon Nova 模型在 SageMaker HyperPod 上运行多轮强化学习（Multi-Turn RL）的生产级基础设施方案。该方案采用两阶段部署模型：一次性 CDK 部署构建长生命周期基础架构（VPC、EKS、HyperPod 集群、ECS、S3、IAM 及 Step Functions 管线），每次训练运行时动态创建临时资源。这种分离设计将 GPU 闲置成本降到最低，同时支持快速迭代。核心架构由三层组成：SageMaker HyperPod（EKS）负责模型推理与 GRPO 权重更新，ECS on Fargate 运行奖励环境，Nova Forge SDK 在模型与奖励环境之间路由消息并追踪多轮对话状态。

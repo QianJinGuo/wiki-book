@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 1ab14506807b0e76c6b1d2183e744af5c84d8f0cefd1bdcb520e4238455040d9
+source_url: "https://tridao.me/blog/2026/sonicmoe-blackwell/"
 ---
 
 sha256: f9f9932a6521611b33e471a8604dd50a2d7b1c5c05b64526fc191d77bfefa697

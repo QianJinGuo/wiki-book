@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 773f617f892a27e0fb6cd5262d4619e08c14781d597db5f4a628da499770c213
+source_url: "https://staffordwilliams.com/blog/2026/06/28/how-i-build-software/"
 ---
 
 sha256: 0eb16e7d1859abd7106270ba9f4633238ed79af8368292be7245fdec34bc41ba

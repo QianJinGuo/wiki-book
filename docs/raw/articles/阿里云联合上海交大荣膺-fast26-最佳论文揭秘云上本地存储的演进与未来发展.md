@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 72
 stars: 4
 sha256: abf9263860b5d5612356481de7861c3c3915f78461b35ddf33575774dc9e0db6
+source_url: "https://mp.weixin.qq.com/s/3fIZ6bDQTxsFN8Nwg7De2g"
 ---
 
 # 阿里云联合上海交大荣膺 FAST'26 最佳论文：揭秘云上本地存储的演进与未来发展

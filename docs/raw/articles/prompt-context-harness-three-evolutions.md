@@ -4,6 +4,7 @@ source: ""
 tags: [prompt, context, harness, evolution]
 created: 2026-05-20
 sha256: 2b2e36f7196ce55192b0305fea5ecc5652f4e832b456bbf063d3b396cac75fb4
+source_url: "https://mp.weixin.qq.com/s/b1VL28GX5d17sKPfkSbIsw"
 ---
 ---
 # 从Prompt、Context到Harness，工程的三次进化与终局之战

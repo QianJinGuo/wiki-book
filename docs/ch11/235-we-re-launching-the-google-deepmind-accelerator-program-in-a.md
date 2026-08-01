@@ -5,6 +5,17 @@
 > 📊 Level ⭐⭐ | 4.8KB | `entities/google-deepmind-accelerator-asia-pacific.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("We're launching the Google D…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 
 ```mermaid

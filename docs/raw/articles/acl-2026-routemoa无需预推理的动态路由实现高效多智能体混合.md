@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: 91fa844e7aad3b85def17a16f6d1cefba40cf6a49673cbf8f8fc72068e028ced
+source_url: "https://mp.weixin.qq.com/s/nHWEqgpdH2FdZ08AaPylSg"
 ---
 
 # ACL 2026 | RouteMoA：无需预推理的动态路由，实现高效多智能体混合

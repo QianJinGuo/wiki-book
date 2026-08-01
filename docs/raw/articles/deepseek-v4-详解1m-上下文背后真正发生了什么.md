@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: a4f61fa7ddcfd8d17fff98e4b9d798c76378cc3f5ea800b256f275a5625c9c72
+source_url: "https://mp.weixin.qq.com/s/OkJjRqTwRV2z0Xw9T6Likg"
 ---
 
 # DeepSeek V4 详解：1M 上下文背后，真正发生了什么

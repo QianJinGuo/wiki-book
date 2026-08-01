@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 0af8d9d7e09617b80ab774b6e4ab24a9ad66ecf57d25e8e08abb900dc731da0e
+source_url: "https://mp.weixin.qq.com/s/UKM4apyYPYBfb27vtbrN6g"
 ---
 
 # 拆解 OpenClaw 架构（二）：8 个文件 + 10 步流水线，Agent 人格系统的源码级设计

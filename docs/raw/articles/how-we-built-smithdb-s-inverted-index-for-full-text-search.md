@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: e3817342d2de6c93db4d3230de448b94849b6eb3c85cbe07cf9ec48b35790c4a
+source_url: "https://www.langchain.com/blog/full-text-search-in-smithdb-constructing-and-querying-our-inverted-index-pt-2"
 ---
 
 sha256: e97dad951e66c9046e7228e836eef6c01fb2149161375a83f41faa5808240fa7

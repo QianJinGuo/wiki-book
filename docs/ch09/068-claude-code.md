@@ -1,63 +1,91 @@
-# 两万字详解Claude Code源码核心机制
+# Claude Code 身世：从安全对齐到开发工具的革命
 
-## Ch09.068 两万字详解Claude Code源码核心机制
+## Ch09.068 Claude Code 身世：从安全对齐到开发工具的革命
 
-> 📊 Level ⭐⭐ | 9.5KB | `entities/claude-code-20000-char-source-analysis.md`
+> 📊 Level ⭐⭐ | 10.8KB | `entities/claude-code-origin-safety-alignment-boris-2026.md`
 
-## 关键洞察
-本页分析了 两万字详解Claude Code源码核心机制 的核心内容。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-20000-char-source-analysis.md)
+> **Background**: 本文基于量子位公众号对 Claude Code 起源的报道，综合现有 coding agent 发展脉络整理。
+
+# Claude Code 身世：从安全对齐到开发工具的革命
+
+Claude Code 并非从零开始设计的开发工具，而是脱胎于 Anthropic 的安全对齐研究。其核心开发者 Boris Cherny 透露当前仅完成约 1% 的愿景。
+
+## 起源：安全对齐研究的意外产物
+
+### 2021-2022：从安全研究到编码工具
+
+故事要从 2021 年讲起。Anthropic 联合创始人兼 Labs 团队负责人 Ben Mann 回忆，当团队决定打造一款产品时（这在当时内部颇具争议），他们做的第一件事就是构建了一个编程助手。研究工程师 Dawn Drain 刚加入 Anthropic，她的主项目是：让模型的编码能力至少达到我自己的水平。
+
+同一时期，Shauna Kravec 的强化学习团队已经在思考更激进的方向——自主软件工程。他们的目标不是做一个聊天机器人，而是让模型真正「干活」。Shauna 的回答至今仍然惊艳：「我们认为通往变革性 AI 的路径，必须经过自动化大规模软件工程工作。」2022 年初，他们已经开始用 RL 训练模型写简单函数并测试正确性。
+
+与此同时，Ben Mann 带领团队做了一个 VS Code 扩展——早期的 coding assistant，能给出四个不同建议。2022 年春天，这个工具在外部已有大约 100 个用户了。
+
+### 早期挑战与 clide 的诞生
+
+然而，基础设施的噩梦出现了。要做真正的 agentic coding，需要让模型在安全环境里执行代码、读写文件、处理超时、处理失败——这些问题和如今所有人还在头疼的 agent 问题几乎一模一样。Dawn 和同事花了很长时间才让模型在一个容器里拥有持久 shell，能流式输入输出，还能优雅地处理超时。
+
+结果，Ben Mann 休完陪产假回来，发现大家「基本上把 coding assistant 忘了」。但研究侧从未停止：他们继续打磨 agentic coding 的核心零件——function calling、search、bash tool——这些今天看来理所当然的能力，在当时是硬仗。
+
+2022 年底到 2023 年，Shauna 的团队取得了关键突破——让模型拥有了 bash tool，能在代码库里自由搜索。Dawn Drain 花了「尴尬长的时间」教 Claude 写 diffs。最终他们做了一个内部命令行工具，叫 **clide**，能让用户和 Claude 聊天来编辑代码、完成开发任务。
+
+Ben Mann 说：「我爱它。它真的很棒，但它可以好得多。」问题是 clide 太超前了——Sid Bidasaria 后来回忆：「大家都谈论 clide，但它又笨重又慢。」Claude Code 第一位工程师 Adam Wolff 给它加了原始的 agentic 能力——能从部分改动推断用户意图，第一次成功时他在厨房里跳舞。但 clide 始终是研究侧的玩具，太脆弱、太慢、太不稳定。
+
+## Boris Cherny 的加入与 Claude Code 的诞生
+
+### 2024 年 9 月：两天的原型
+
+2024 年 9 月，Boris Cherny 加入 Anthropic Labs。Ben Mann 给他的任务是「agentic coding」，嘱托「不要为今天的模型构建，要为六个月后的模型构建」。Boris 没有被直接指派做 coding 产品，而是先熟悉 Anthropic API，快速用两天时间做一个极简终端（CLI）原型。Demo 里，它能截图 Apple Music，告诉你正在听什么歌。他发到 Slack，只收获了两三个点赞——没人懂，连他自己也不完全懂。
+
+但 Boris 停不下来了。朋友们喊他出去玩，他拒绝了，周末把自己关在家里持续钻研。有一天他写了一个 PR，Adam 拒绝了，让他用 clide 试试。Boris 把 issue 复制粘贴进 clide——它直接写出了完整的五到十行 PR。Boris 后来回忆：「我从没见过这种事。它太震撼了。感觉像未来。」Ben Mann 说 Boris 当时的表情是「Holy shit」。
+
+### 2024 年 12 月：两周冲刺
+
+12 月，Labs 团队终于给这个项目开了绿灯。原本只有 Boris、Sid Bidasaria 加上 Ben 的极小团队，瞬间涌进来六七个人。他们开始了最后两周的冲刺。那两周里，核心功能几乎全部完成：bug reporting、登录流程、auto-updates、优秀的使用指标……没有 PR 限制，没有 review 流程，修复能五分钟内上线。
+
+### 2025 年 2 月：正式发布
+
+2025 年 2 月，Claude CLI 对外发布，正式更名为 Claude Code。全大写 ASCII 字符的 Logo 成了 AI 编程的标志性设计。早期反馈并不热烈——很多人觉得「想法很酷，但 bug 太多」。但模型在进步。当 Claude 4 系列模型发布时，一切变了。Boris Cherny 坐在 Code with Claude 大会的后排，Sonnet 4 发布时，他低头 coding，突然意识到：「哇，这真的变强了。」
+
+这彻底改变了硅谷的运转方式：Ramp 的技术负责人在五分钟内被彻底征服，Bun 的创始人利用它瞬间啃下了复杂的网络协议代码。到了 2025 年的冬天，Boris Cherny 发现自己已经一行代码都不用手写了——100% 的工作都由 Claude Code 在后台的终端里静默完成。他甚至一整天用 Claude Code 写代码，提交了 88 次，全程妻子和狗狗就在沙发上陪着。
 
 ## 深度分析
-Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：不是依赖模型自身的推理能力来管理复杂任务，而是通过多层机制将不确定性转化为可控行为。与 OpenCode、Codex、Gemini-CLI 等竞品相比，Claude Code 在以下维度展现了更成熟的工程思考。
-**动态 System Prompt 机制**是理解 Claude Code 的第一个关键。传统框架使用静态 prompt，启动后不变；Claude Code 则通过 `buildEffectiveSystemPrompt` 函数在每次会话启动时动态组装内容，涵盖工具描述、MCP 服务器指令、Skill 索引、环境信息等六层优先级。这一设计使系统能够根据当前环境状态调整模型的行为契约，而非用一套固定规则应对所有场景。
-**并发调度与延迟加载**构成了工具层的核心创新。每个工具通过 `isConcurrencySafe` 声明并发安全性，调度层据此将工具调用分成批次——只读工具并行执行、写操作串行执行。更精妙的是 `shouldDefer + ToolSearch` 的延迟加载机制：非必需的复杂工具（如 Plan Mode）在初始请求中只携带空壳 schema，模型通过 `ToolSearch` 发现后才会注入完整描述。这套机制通过独立的 `deferred_tools_delta` attachment 发送，避免破坏 prompt cache 的前缀复用。Token 优化效果显著：对于接入十几个 MCP 服务器的企业场景，每次任务只注入实际用到的工具描述。
-**五层 Context 压缩体系**是 Claude Code 最复杂、也最能体现工程细腻度的部分。从最轻量的工具结果大小限制（超限写磁盘替换为路径引用），到基于规则的 `snipCompact` 消息截断，再到利用 API `cache_edits` 参数在服务端屏蔽旧工具结果的 `microCompact`，最后到保留近期原始粒度的 `contextCollapse` 和完整摘要的 `autoCompact`——每层之间互斥且递进覆盖，既避免重复工作，又确保在不同压力下都有合适的压缩策略应对。
-**Hooks 系统**将 Claude Code 从"命令行工具"升格为"可扩展平台"。24 种 Hook 事件覆盖工具调用前后、Sub-Agent 生命周期、权限决策、Session 压缩等关键节点，允许外部脚本以 JSON 格式返回决策来介入 Agent 行为。这是 Claude Code 区别于所有竞品最显著的特性，也是其被定位为"平台"而非单纯工具的核心依据。
-**子 Agent 系统**通过 `AgentTool` 统一入口支持七种执行模式：同步/异步后台、自动转后台、Worktree 隔离、远端执行、Fork 模式和 Teammate 模式。内置四类 Agent 类型（general-purpose、Explore、Plan、claude-code-guide）加 YAML 自定义，父子 Context 共享机制（Fork 模式共享完整对话历史）确保了复杂任务分解的可行性。
+
+### 1. 安全对齐基因如何塑造产品特质
+
+Claude Code 脱胎于安全对齐研究这一事实，从根本上塑造了它的产品 DNA。Anthropic 研究团队用于评估和验证模型安全行为的内部工具，天然适用于代码生成和调试场景——因为两者都需要精确性、可验证性和失败处理能力。
+
+这与安全对齐研究中的核心方法论——通过 RL 训练模型在复杂环境中做出安全决策——直接对应。Claude Code 在代码生成中表现出的「谨慎但高效」的特质，正源自对齐训练中对「安全边界内最大化能力」的优化目标。
+
+### 2. 「1% 完成度」的战略意义
+
+Boris Cherny 反复强调「我们只完成了 1%」，这句话需要从两个层面理解：
+
+- **产品层面**：当前 Claude Code 的核心能力（终端交互、文件编辑、代码生成）只是起点。真正的长时自主、持久记忆、复杂上下文管理、开放世界规划——这些能力远未到来
+- **战略层面**：Anthropic 对 coding agent 的定位远超当前市场认知。Claude Code 不仅是代码补全工具，而是朝着全栈开发自动化方向演进。这一愿景与 [Codex 的五层架构](../ch01/737-codex.html) 中对「AI 协作的深层架构」的探索方向一致
+
+CaT Wu 的观察也印证了信任的建立过程：刚上线时大家会认真阅读每个权限请求，现在很大一部分用户直接 auto-accept 了。信任正在被建立。
+
+### 3. 「两周冲刺」的文化启示
+
+Claude Code 的最后两周冲刺——没有 PR 限制、没有 review 流程、修复能五分钟内上线——展示了一种极端高效的团队运作模式。这种「研究→原型→验证→冲刺」的节奏，与 [Agent Harness 招聘实践](../ch05/062-agent-harness.html) 中强调的「快速验证、小团队高密度」原则高度一致。
+
+值得注意的是，这种冲刺能够工作的前提是：团队此前已经积累了 2-3 年的核心技术（bash tool、function calling、sandbox 环境），所有「零件」都准备好了，只是需要有人把它们拼在一起。Boris 是那个把所有零件组装起来的人。
+
+### 4. 从 coding assistant 到 AI 管理员的角色跃迁
+
+Boris 100% 的工作由 Claude Code 完成这一事实，揭示了人类工程师角色的根本性转变——从「代码建筑师」向「AI 管理员」跃迁。编程不再是晦涩难懂的极客特权。这恰恰是 [Harness：一句话交付产品](../ch05/017-harness.html) 中「将意图转化为交付」理念的自然延伸——当 AI 能够处理代码层面的所有实现细节时，人类的核心价值将从「怎么写代码」转向「想要什么」。
 
 ## 实践启示
-基于源码分析，Claude Code 的设计为 AI 工程化实践提供了几个重要启示。
-**架构层面**：Agent 系统的核心挑战不是模型能力，而是**状态管理和资源控制**。Claude Code 的预算管理体系（Token 预算、成本预算、工具结果大小限制、轮次预算四维控制）为 Agent 失控问题提供了工程化解法。在构建自研 Agent 框架时，应尽早考虑多维度预算控制，而非仅依赖"对话轮次上限"。
-**工具设计层面**：`isConcurrencySafe + 分批调度`机制表明，只读工具与写操作应严格区分并发策略。这不是模型能"学会"的约定，而是框架层面必须强制执行的约束。工具的 `maxResultSizeChars` 和磁盘持久化机制同样重要——大文件读取、批量搜索等场景若无结果大小控制，极易撑爆 Context。
-**权限与安全层面**：Plan Mode 的权限系统约束（`mode='plan'` 写操作在权限层直接拦截）比"在 prompt 中要求模型只读"要可靠得多。对于需要人工审批的高风险操作，应设计独立的权限状态机，而非依赖模型自我约束。
-**Context 管理层面**：`microCompact` 利用 `cache_edits` 在不修改本地消息序列的情况下实现服务端 token 屏蔽，是一项精妙的工程技巧。它解决了一个看似矛盾的问题：如何在压缩历史的同时保持 prompt cache 有效性。Fork 模式下的字节级 system prompt 复制也同理——确保长会话场景下 cache 命中率 。
-**扩展性层面**：MCP 协议和 Hooks 系统代表了 Agent 框架的两种扩展路径——前者通过标准协议接入外部工具生态，后者通过事件介入框架行为。构建生产级 Agent 平台时，这两层扩展能力是区分" demo "与"产品"的关键分水岭 。
 
-## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
-- [Claude Code Prompt 提示词体系源码解析](ch09/061-claude-code-prompt.html)
-- [Claude Code 源码深度解析（13 核心机制）](../ch03/077-claude-code.html)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/077-claude-code.html)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/077-claude-code.html)
-- [Claude Code 设计原则与对照分析](../ch03/077-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/423-claude-code-harness-deep-understanding.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/009-harness.html)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/009-harness.html)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
-- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/120-harness-engineering.html)
-- [Claude Code 可控性：软规则无法变成硬约束](../ch03/077-claude-code.html)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/009-harness.html)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [AutoResearch：多 Agent 自动化软件开发](../ch03/035-agent.html)
-- [Agent Harness 架构](../ch05/058-agent-harness.html)
-- [Agent 自我改进的六条路](../ch03/035-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/126-karpathy-vibe-coding-agentic-engineering.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/401-agent-skills.html)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/077-claude-code.html)
-- [Claude Code 源码核心机制详解](../ch03/077-claude-code.html)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/077-claude-code.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1022-claude.html)
+1. **安全对齐与产品能力的「意外溢出」**：安全研究工具在特定条件下会产生高质量的产品能力。团队应该审视内部研究工具是否具有「产品化潜力」——Figma 从内部协作工具出发、Claude Code 从安全对齐工具出发，都验证了这一模式。
 
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/077-claude-code.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/009-harness.html)
-- [Agent 原理、架构与工程实践](../ch03/035-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+2. **「不要为今天的模型构建」**：Ben Mann 给 Boris 的嘱托是构建方法论的精髓。当团队在规划 AI 产品时，应该假设 6 个月后的模型能力是当前的两倍以上——如果产品设计不依赖模型能力的快速提升，可能在上线时就已经过时。
+
+3. **两周冲刺的工作模式**：当核心技术积累到位时，「小团队 + 无限制冲刺」是最高效的发布路径。Claude Code 的历史证明，PR review、流程规范在关键时刻可以暂时让位于速度和执行力。
+
+4. **关注「1% 信号」**：当核心开发者说「只完成了 1%」，这既是对现状的诚实评估，也是对竞品的战略信号。在评估 AI 工具路线图时，不要仅根据当前能力决策——99% 未完成的空间可能改变竞争格局。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-惊人身世曝光安全对齐起源.md)
 
 ---
 

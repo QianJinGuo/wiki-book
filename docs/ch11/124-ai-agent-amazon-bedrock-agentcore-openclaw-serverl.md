@@ -6,6 +6,37 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-5.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AI Agent 的迁移与现代化 — 使用 Amazon…"))
+    标签
+    相关实体
+    消息渠道配置
+      架构转变
+      Telegram Bot 配置流程
+      飞书自建应用配置
+      白名单机制
+    端到端消息链路
+      完整旅程
+      功能验证矩阵
+    可观测性体系
+      四层日志架构
+      监控数据流
+    深度分析
+      1. Webhook 架构的安全权衡
+      2. 白名单机制的多租户隔离
+      3. Lightweight Agent 的过…
+      4. 多渠道的统一抽象
+    实践启示
+      渠道配置
+      调试技巧
+      生产检查清单
+      运维关注点
+```
+
 ## 标签
 #aws #bedrock #agentcore #openclaw #serverless
 **原文**: [Openclaw Multi 5](ch11/237-openclaw.html)(raw/articles/openclaw-multi-5.md)

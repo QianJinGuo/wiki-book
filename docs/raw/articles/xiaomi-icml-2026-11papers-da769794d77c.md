@@ -29,6 +29,7 @@ tags:
   - neural-architecture-search
   - multimodal
   - audio-understanding
+source_url: "https://arxiv.org/abs/2602.01698"
 ---
 
 ## 02 推理增强

@@ -11,6 +11,17 @@
 
 *   [Community](https://lovable.dev/community)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("Building is just the beginni…"))
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 相关实体
 - [Lovable Discoverability Intro](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
 - [Building Is Just The Beginning Introducing Discove](ch12/089-building-is-just-the-beginning-introducing-discoverability.html)

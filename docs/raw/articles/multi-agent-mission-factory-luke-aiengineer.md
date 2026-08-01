@@ -14,6 +14,7 @@ source: 微信公众号（AI 寒武纪）
 published: ~2026-05-08
 created: 2026-05-10
 updated: 2026-05-10
+source_url: "unavailable"
 ---
 # Multi-Agent 架构：Factory Mission 系统的方法论
 **来源：** AI Engineer 频道 YouTube 演讲整理（微信公众号"AI 寒武纪"）

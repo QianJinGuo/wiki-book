@@ -14,6 +14,7 @@ review_stars: 4
 review_recommendation: neutral
 ingested: 2026-05-16
 updated: 2026-05-10
+source_url: "https://www.youtube.com/watch?v=Z4MUDojhihQ"
 ---
 编译｜宇琪	策划 | Tina
 在 AI Coding 飞速发展的当下，工程师的价值正从"如何实现"转向"解决什么问题"，那么，手敲代码还有意义吗？作为一名坚持编码近 30 年的架构师，微软最有价值专家 (MVP)、开源项目创作者、现任 Aviva Solutions 的代码架构师 Dennis Doomen 的观点直截了当：如果你不深入代码，就无法做出优秀的架构决策。

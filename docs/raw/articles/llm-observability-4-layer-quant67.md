@@ -10,6 +10,7 @@ stars: 5
 confidence: 0.92
 value: 9
 description: LLM 可观测性 4 层模型（基础设施/调用/质量/业务），主流通用栈横评 + OTel GenAI 语义约定 2025 稳定版 + 实战排障故事
+source_url: "https://quant67.com/post/llm-infra/23-observability/23-observability.html"
 ---
 
 # 可观测性 — 把 LLM 系统从「看到指标」升级到「3 小时修复」

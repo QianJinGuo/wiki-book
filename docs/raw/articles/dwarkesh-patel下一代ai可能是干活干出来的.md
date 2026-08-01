@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 56047a0397d43f5474075c5f2390f81d3fc801c7084a6b220029d92da55134d8
+source_url: "http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651041546&idx=2&sn=fedc77937dafe2bff30de5b1d8d47e40&chksm=84e66b74b391e2622fe2705d6d20db3f35685261a164ac701af536a6a098971b92c858cfd776#rd"
 ---
 
 # Dwarkesh Patel：下一代AI，可能是干活干出来的

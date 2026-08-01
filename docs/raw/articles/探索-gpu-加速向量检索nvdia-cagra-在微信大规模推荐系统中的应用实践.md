@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 64
 stars: 4
 sha256: bc37f2f8cbaafbba606e44c1a7b67e108a2a606c57ece2d5565f77076c89d477
+source_url: "https://mp.weixin.qq.com/s/HY4uf9_WS7TULgEye--Oiw"
 ---
 
 # 探索 GPU 加速向量检索：NVDIA Cagra 在微信大规模推荐系统中的应用实践

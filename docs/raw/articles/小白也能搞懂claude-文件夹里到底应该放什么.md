@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 56
 stars: 4
 sha256: f769b49537b16992b3c79db4df5306c9bda005648df09d800d1106590aa30bf1
+source_url: "https://mp.weixin.qq.com/s/v6iBuqep2ZCZ9wAwhnHLDA"
 ---
 
 # 小白也能搞懂：.claude/ 文件夹里到底应该放什么

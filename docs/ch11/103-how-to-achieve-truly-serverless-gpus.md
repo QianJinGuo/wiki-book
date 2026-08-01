@@ -6,6 +6,17 @@
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/modal-truly-serverless-gpus.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How to achieve truly serverl…"))
+    深度分析
+    实践启示
+    相关实体
+```
+
 ## 深度分析
 **GPU Allocation Utilization 是推理工作负载中最容易被忽视的效率维度，但它往往比 MFU 更直接地决定实际成本。** 文章提出了一个三级利用率的框架：Model FLOP/s Utilization（最严格，衡量算法算力利用效率）→ nvidia-smi "GPU utilization"（kernel 在 GPU 上运行的时间比例）→ GPU Allocation Utilization（付费 GPU 秒数中实际运行应用程序代码的比例）。第三个指标是大多数公司在推理场景下实际亏损最大的盲区：在非峰值时段，多数组织的 GPU Allocation Utilization 仅 10-20%，意味着 80-90% 的 GPU 费用在为空闲容量付费。 这个指标与 MFU 并不矛盾——MFU 衡量给定 GPU 的计算效率，Allocation Utilization 衡量 GPU 是否被有效分配给工作负载；即使 MFU 高达 90%，如果 GPU 在 70% 的时间内等待请求，Allocation Utilization 仍然只有 30%。
 **Serverless GPU 的核心挑战不是"如何运行 GPU"，而是"如何在秒级响应时间内完成 GPU 初始化"。** 传统云厂商分配新 GPU instance 的流程包含四个阶段：instance 启动 + 健康检查（分钟级）→ 加载应用程序和文件系统状态（分钟级）→ 主机侧应用准备（十秒级）→ 设备侧（GPU）初始化（分钟级到十秒级）。这个链条加起来通常需要"数十 kiloseconds"（即数千秒），根本不可能在秒级响应的 serverless 场景下使用。 Modal 通过四层优化（cloud buffers、custom filesystem、CPU checkpoint/restore、GPU CUDA checkpoint/restore）将这 2000s+ 的冷启动压缩到约 50s，实现 40× 加速。

@@ -4,6 +4,16 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/shinyhunters-7-eleven-data-breach.md`
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("ShinyHunters hack 7-Eleven: …"))
+    深度分析
+    实践启示
+```
+
 ## 核心要点
 - ShinyHunters 黑客组织攻击了 7-Eleven 特许经营商，暴露了大量特许经营数据
 - 被泄露的数据包括 Salesforce 记录

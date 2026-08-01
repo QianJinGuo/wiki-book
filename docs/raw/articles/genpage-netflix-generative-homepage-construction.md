@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: d32f8a64460b7a57ea7b07df7bb6c8038cb1f7d9d5d29e02026c3841fac8a078
+source_url: "https://netflixtechblog.com/genpage-towards-end-to-end-generative-homepage-construction-at-netflix-77146fba8a08"
 ---
 
 sha256: 7ed641f6c7e8f4a947aa697dcdb00d8fe48b157e438dacdcb42f93e5fcf33d66

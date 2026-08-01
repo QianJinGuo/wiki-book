@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 6e9692b6377f27c329ed49dd198547d583adac8fb59b8925e0ebe88b5327ea2b
+source_url: "https://mp.weixin.qq.com/s/TpmrSdx13CqApwN3iZQVew"
 ---
 
 # 打造高效易用的Agent Skill

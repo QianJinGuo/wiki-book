@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 95689c497afacf58b0b88e63740b11f1d76394acb0a02d6691a3a4b9842f9806
+source_url: "https://github.com/Mininglamp-AI/cider"
 ---
 
 sha256: 9f734903d5de1ab8f640c5c4cdeb43fab0585d19b420a4fe8f4c576d6da1eb05

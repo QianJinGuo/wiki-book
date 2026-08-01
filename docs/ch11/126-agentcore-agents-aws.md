@@ -5,6 +5,20 @@
 > 📊 Level ⭐⭐ | 8.5KB | `entities/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore.md`
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("基于AgentCore构建自学习、可进化的文旅行业近似信…"))
+    概述
+    核心技术
+    来源
+    相关实体
+    深度分析
+    实践启示
+```
+
 ## 概述
 
 ```mermaid

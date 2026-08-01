@@ -9,6 +9,22 @@
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("LiteLLM 生产级部署：AWS ECS/EKS 双方…"))
+    概念导图
+    选型决策矩阵
+    方案一：ECS Fargate 部署
+    方案二：EKS 部署
+    Control Plane / Data Pl…
+    安全最佳实践
+    深度分析
+    实践启示
+```
+
 ## 概念导图
 
 ```mermaid

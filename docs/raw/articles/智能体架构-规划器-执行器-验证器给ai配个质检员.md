@@ -6,6 +6,7 @@ ingest_date: 2026-07-04
 vxc: 49
 stars: 4
 sha256: 599dc00aa1338cfb3243d66e7b5232eb5ebe87c1b998683df934b93a227fb5eb
+source_url: "https://mp.weixin.qq.com/s/63PyETVbhr0UgAJew-z6uA"
 ---
 
 # 智能体架构 -- 规划器 → 执行器 → 验证器，给AI配个“质检员”

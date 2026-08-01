@@ -6,6 +6,7 @@ ingest_date: 2026-07-03
 vxc: 56
 stars: 4
 sha256: 11145e8aa2205a7f06e5fe4c3787226cee64bcb8c3414d2b4574bb2129fc137d
+source_url: "unavailable"
 ---
 
 # 一文了解｜SkillScan 智能体技能安全扫描最佳实践

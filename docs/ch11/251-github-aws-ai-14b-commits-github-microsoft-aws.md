@@ -8,6 +8,20 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-github-aws-ai-capacity-crunch.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("GitHub + AWS 多云转折：AI 编码激增 14…"))
+    概述
+    关键数据
+    关键贡献
+    含义
+    相关主题
+    一句话定位
+```
+
 ## 概述
 
 2026-06-16 报道（基于 Business Insider 原始信息）：Microsoft 在 AI 编码激增压垮 GitHub 容量后，被迫向最大云对手 **Amazon Web Services** 加购容量以维持 GitHub 运行。这逆转了 2018 年 75 亿美元收购 GitHub 时"开发者平台归顺 Azure"的承诺。Microsoft 发言人确认了"多云策略"扩张，但拒绝点名 AWS。

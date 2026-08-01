@@ -14,11 +14,17 @@
 <link rel="apple-touch-icon" href="../assets/images/favicon.png">
 <style>
 :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1e293b;--surface3:#283548;
---border:#334155;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;
+--border:#334155;--border-soft:rgba(148,163,184,.12);--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;
 --accent:#8b5cf6;--accent2:#a78bfa;--green:#22c55e;--yellow:#eab308;
---orange:#f97316;--red:#ef4444;--cyan:#06b6d4;--pink:#ec4899;--blue:#3b82f6}
+--orange:#f97316;--red:#ef4444;--cyan:#06b6d4;--pink:#ec4899;--blue:#3b82f6;
+--shadow-sm:0 2px 8px rgba(0,0,0,.2);--shadow-md:0 4px 16px rgba(0,0,0,.3);
+--shadow-glow:0 0 20px rgba(139,92,246,.15);--radius:14px}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(--bg);background-image:radial-gradient(ellipse at top,rgba(139,92,246,.06) 0%,transparent 50%);color:var(--text);min-height:100vh;line-height:1.6}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--surface3);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--border)}
 
 .header{background:linear-gradient(135deg,#1e1b4b 0%,#0f172a 60%,#0a0e1a 100%);border-bottom:1px solid var(--border);padding:2rem 1rem 1.5rem}
 .header-inner{max-width:1400px;margin:0 auto;position:relative}
@@ -36,26 +42,30 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 @media(max-width:768px){.countdown{position:static;margin-top:.8rem;display:inline-block}}
 
 .phase-bar{display:flex;gap:.3rem;margin:1.2rem 0 .5rem;flex-wrap:wrap}
-.phase-chip{padding:.4rem 1rem;border-radius:10px;font-size:.82rem;font-weight:600;cursor:pointer;border:2px solid transparent;transition:all .2s;opacity:.6}
+.phase-chip{padding:.4rem 1rem;border-radius:10px;font-size:.82rem;font-weight:600;cursor:pointer;border:2px solid transparent;transition:all .25s;opacity:.55;backdrop-filter:blur(4px)}
 .phase-chip:hover{opacity:.85}
 .phase-chip.active{opacity:1;border-color:#fff;transform:scale(1.05)}
 .phase-chip .count{font-size:.7rem;opacity:.7;margin-left:.3rem}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.8rem;margin-bottom:1rem}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.8rem;text-align:center}
-.stat .num{font-size:1.6rem;font-weight:700}
-.stat .label{color:var(--text2);font-size:.72rem;margin-top:.15rem}
+.stat{background:linear-gradient(135deg,var(--surface) 0%,rgba(30,41,59,.5) 100%);border:1px solid var(--border-soft);border-radius:var(--radius);padding:.9rem .8rem;text-align:center;transition:all .25s;position:relative;overflow:hidden}
+.stat::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity .25s}
+.stat:hover{border-color:rgba(139,92,246,.25);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.stat:hover::after{opacity:.6}
+.stat .num{font-size:1.5rem;font-weight:700;line-height:1.2}
+.stat .label{color:var(--text2);font-size:.7rem;margin-top:.2rem;letter-spacing:.02em}
+.stat .stat-icon{font-size:.9rem;opacity:.5;margin-bottom:.15rem}
 
-.controls{max-width:1400px;margin:0 auto 1rem;display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;padding:0 1rem}
-.search-box{flex:1;min-width:180px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.6rem 1rem;color:var(--text);font-size:.9rem;outline:none}
-.search-box:focus{border-color:var(--accent)}
+.controls{max-width:1400px;margin:0 auto 1rem;display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;padding:.6rem 1rem}
+.search-box{flex:1;min-width:180px;background:rgba(17,24,39,.6);border:1px solid var(--border-soft);border-radius:10px;padding:.6rem 1rem;color:var(--text);font-size:.9rem;outline:none;transition:all .2s}
+.search-box:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(139,92,246,.12)}
 .search-box::placeholder{color:var(--text3)}
 .chip-group{display:flex;gap:.3rem;flex-wrap:wrap}
-.chip{padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s;white-space:nowrap}
-.chip:hover{border-color:var(--accent);color:var(--text)}
-.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip{padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border-soft);background:rgba(30,41,59,.5);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s;white-space:nowrap}
+.chip:hover{border-color:rgba(139,92,246,.4);color:var(--accent2)}
+.chip.active{background:linear-gradient(135deg,var(--accent),#7c3aed);border-color:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(139,92,246,.25)}
 
-.sync-bar{max-width:1400px;margin:0 auto .8rem;padding:0 1rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.sync-bar{max-width:1400px;margin:0 auto .8rem;padding:0 1rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;background:rgba(17,24,39,.3);border-radius:10px;padding:.5rem 1rem}
 .sync-status{font-size:.78rem;color:var(--text3)}
 .sync-status.ok{color:var(--green)}
 .sync-status.err{color:var(--red)}
@@ -64,20 +74,22 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .sync-btn{padding:.35rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s}
 .sync-btn:hover{border-color:var(--accent);color:var(--text)}
 
-.progress-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.progress-section{max-width:1400px;margin:0 auto .8rem;padding:.6rem 1rem;background:rgba(17,24,39,.3);border-radius:10px}
 .progress-bars{display:grid;gap:.4rem}
 .phase-progress{display:flex;align-items:center;gap:.5rem;padding:.3rem 0}
 .phase-progress .pname{font-size:.75rem;font-weight:600;min-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .phase-progress .bar{flex:1;height:8px;background:var(--surface2);border-radius:4px;overflow:hidden}
-.phase-progress .bar-fill{height:100%;border-radius:4px;transition:width .5s}
+.phase-progress .bar-fill{height:100%;border-radius:4px;transition:width .5s;box-shadow:0 0 8px currentColor;opacity:.85}
 .phase-progress .pcount{font-size:.72rem;color:var(--text3);min-width:80px;text-align:right}
 
 .content{max-width:1400px;margin:0 auto;padding:0 1rem 3rem}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.8rem}
 
-.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem;transition:all .2s;cursor:pointer;position:relative}
-.card:hover{border-color:var(--accent);transform:translateY(-1px);box-shadow:0 6px 20px rgba(99,102,241,.08)}
+.card{background:linear-gradient(135deg,var(--surface) 0%,rgba(17,24,39,.6) 100%);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1.1rem;transition:all .25s cubic-bezier(.4,0,.2,1);cursor:pointer;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);opacity:0;transition:opacity .25s}
+.card:hover{border-color:rgba(139,92,246,.3);transform:translateY(-2px);box-shadow:var(--shadow-md),var(--shadow-glow)}
+.card:hover::before{opacity:.6}
 .card.done{opacity:.55}
 .card.done .card-title{text-decoration:line-through}
 
@@ -94,9 +106,12 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .card-meta{display:flex;justify-content:space-between;align-items:center;margin-top:.5rem}
 .card-chapter{font-size:.72rem;color:var(--text3)}
 .card-words{font-size:.72rem;color:var(--text3)}
+.card-tags{display:flex;gap:.2rem;flex-wrap:wrap;margin-top:.3rem}
+.card-tag{font-size:.62rem;padding:.1rem .4rem;border-radius:4px;background:rgba(139,92,246,.08);color:var(--accent2);cursor:pointer;transition:all .15s;border:1px solid rgba(139,92,246,.1)}
+.card-tag:hover{background:rgba(139,92,246,.2);border-color:rgba(139,92,246,.3);color:#c4b5fd}
 .card-actions{display:flex;gap:.3rem;align-items:center}
 
-.level-btn{padding:.2rem .5rem;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--text3);cursor:pointer;font-size:.72rem;transition:all .15s;white-space:nowrap}
+.level-btn{padding:.2rem .55rem;border-radius:6px;border:1px solid var(--border-soft);background:rgba(30,41,59,.5);color:var(--text3);cursor:pointer;font-size:.72rem;transition:all .15s;white-space:nowrap}
 .level-btn:hover{border-color:var(--accent)}
 .level-btn.read{background:rgba(6,182,212,.15);color:var(--cyan);border-color:var(--cyan)}
 .level-btn.explained{background:rgba(234,179,8,.15);color:var(--yellow);border-color:var(--yellow)}
@@ -105,10 +120,14 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 
 .loading{text-align:center;padding:4rem;color:var(--text2)}
 .empty{text-align:center;padding:3rem;color:var(--text3)}
+.load-more-wrap{text-align:center;padding:1.5rem 0;display:flex;flex-direction:column;align-items:center;gap:.6rem}
+.load-more-btn{padding:.6rem 2rem;border-radius:10px;border:1px solid rgba(139,92,246,.3);background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(124,58,237,.08));color:var(--accent2);cursor:pointer;font-size:.85rem;font-weight:600;transition:all .25s}
+.load-more-btn:hover{background:linear-gradient(135deg,var(--accent),#7c3aed);color:#fff;border-color:var(--accent);transform:translateY(-1px);box-shadow:0 4px 12px rgba(139,92,246,.3)}
+.result-count{font-size:.74rem;color:var(--text3)}
 
-.section-header{margin:1.5rem 0 .8rem;display:flex;align-items:center;gap:.6rem}
-.section-header h2{font-size:1rem}
-.section-header .badge{background:var(--surface2);color:var(--text2);padding:.15rem .5rem;border-radius:5px;font-size:.72rem}
+.section-header{margin:1.8rem 0 .8rem;display:flex;align-items:center;gap:.6rem;padding-bottom:.5rem;border-bottom:1px solid var(--border-soft)}
+.section-header h2{font-size:1rem;font-weight:700}
+.section-header .badge{background:rgba(139,92,246,.12);color:var(--accent2);padding:.15rem .5rem;border-radius:6px;font-size:.72rem;font-weight:600}
 
 
 .recall-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
@@ -119,7 +138,7 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .recall-panel{display:none}
 .recall-panel.open{display:block}
 .recall-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.6rem;margin-bottom:.6rem}
-.recall-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.8rem;display:flex;flex-direction:column;gap:.4rem}
+.recall-card{background:linear-gradient(135deg,var(--surface) 0%,rgba(17,24,39,.6) 100%);border:1px solid var(--border-soft);border-radius:12px;padding:.8rem;display:flex;flex-direction:column;gap:.4rem;transition:all .2s}
 .recall-card:hover{border-color:var(--pink)}
 .recall-card-title{font-size:.85rem;font-weight:600;line-height:1.3}
 .recall-card-title a{color:inherit;text-decoration:none}
@@ -162,7 +181,7 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .feynman-review-info .count{color:var(--accent)}
 .feynman-review-info .age{color:var(--yellow)}
 .feynman-review-info .old{color:var(--orange)}
-.feynman-panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;max-width:600px;width:90%;max-height:85vh;overflow-y:auto;padding:1.5rem}
+.feynman-panel{background:rgba(17,24,39,.95);border:1px solid rgba(139,92,246,.15);border-radius:16px;max-width:600px;width:90%;max-height:85vh;overflow-y:auto;padding:1.5rem;backdrop-filter:blur(16px);box-shadow:var(--shadow-md)}
 .feynman-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
 .feynman-header h3{font-size:1.1rem;background:linear-gradient(135deg,#818cf8,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .feynman-close{background:none;border:none;color:var(--text3);font-size:1.5rem;cursor:pointer;line-height:1}
@@ -205,6 +224,60 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .feynman-tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .7rem;font-size:.72rem;color:var(--text);width:280px;max-height:150px;overflow-y:auto;display:none;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
 
 @media(max-width:640px){
+  .tag-filters-wrap{max-height:none}
+  .concept-map-container{min-height:300px}
+}
+
+/* ── Tag Filters ─────────────────────────────────── */
+.tag-filters-wrap{max-width:1400px;margin:0 auto .6rem;padding:0 1rem;overflow:hidden}
+.tag-filters-inner{display:flex;gap:.3rem;flex-wrap:wrap;overflow-y:auto;max-height:38px;transition:max-height .2s;padding-bottom:.2rem}
+.tag-filters-wrap.expanded .tag-filters-inner{max-height:200px}
+.tag-filters-header{display:flex;align-items:center;gap:.4rem;margin-bottom:.3rem}
+.tag-filters-header span{font-size:.78rem;color:var(--text2);font-weight:600}
+.tag-expand-btn{font-size:.72rem;color:var(--accent);cursor:pointer;background:none;border:none;padding:.1rem .3rem}
+.tag-expand-btn:hover{text-decoration:underline}
+.tag-chip{padding:.25rem .7rem;border-radius:20px;border:1px solid var(--border-soft);background:rgba(30,41,59,.5);color:var(--text2);cursor:pointer;font-size:.74rem;transition:all .2s;white-space:nowrap;backdrop-filter:blur(4px)}
+.tag-chip:hover{border-color:rgba(139,92,246,.4);color:var(--accent2);background:rgba(139,92,246,.08)}
+.tag-chip.active{background:linear-gradient(135deg,var(--accent),#7c3aed);border-color:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(139,92,246,.3)}
+.tag-chip .tag-count{font-size:.66rem;opacity:.6;margin-left:.2rem}
+
+/* ── Concept Map ─────────────────────────────────── */
+.concept-map-container{background:radial-gradient(ellipse at center,rgba(17,24,39,.8) 0%,rgba(10,14,26,.6) 100%);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1rem;overflow:hidden;position:relative;min-height:400px}
+.concept-map-container svg{max-width:100%;height:auto;display:block}
+.concept-node{cursor:pointer;transition:opacity .2s}
+.concept-node:hover .concept-node-circle{filter:brightness(1.3)}
+.concept-node-label{font-size:10px;fill:var(--text2);text-anchor:middle;pointer-events:none;font-weight:500}
+.concept-node-circle{transition:r .2s,opacity .2s}
+.concept-edge{stroke:#475569;stroke-width:.8;opacity:.2;transition:opacity .2s}
+.concept-edge.highlight{opacity:.7;stroke-width:1.5}
+.concept-detail{position:absolute;top:1rem;right:1rem;width:280px;max-height:340px;background:rgba(30,41,59,.95);border:1px solid rgba(139,92,246,.2);border-radius:var(--radius);padding:.8rem;overflow-y:auto;display:none;z-index:10;box-shadow:var(--shadow-md);backdrop-filter:blur(12px)}
+.concept-detail.open{display:block}
+.concept-detail-title{font-size:.85rem;font-weight:700;margin-bottom:.3rem;color:var(--accent2)}
+.concept-detail-meta{font-size:.72rem;color:var(--text3);margin-bottom:.5rem}
+.concept-detail-tags{display:flex;gap:.2rem;flex-wrap:wrap;margin-bottom:.5rem}
+.concept-detail-tag{font-size:.68rem;padding:.1rem .4rem;border-radius:4px;background:rgba(139,92,246,.12);color:var(--accent2)}
+.concept-detail-articles{display:flex;flex-direction:column;gap:.2rem}
+.concept-detail-article{font-size:.74rem;color:var(--text2);text-decoration:none;padding:.2rem .3rem;border-radius:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.concept-detail-article:hover{background:var(--surface3);color:var(--text)}
+.concept-detail-close{position:absolute;top:.5rem;right:.5rem;background:none;border:none;color:var(--text3);cursor:pointer;font-size:1rem}
+.concept-detail-close:hover{color:var(--text)}
+.concept-legend{display:flex;gap:.8rem;align-items:center;font-size:.7rem;color:var(--text3);margin-top:.5rem;flex-wrap:wrap}
+.concept-legend-item{display:flex;align-items:center;gap:.2rem}
+.concept-legend-dot{width:10px;height:10px;border-radius:50%}
+.concept-controls{display:flex;gap:.4rem;align-items:center;margin-bottom:.5rem;flex-wrap:wrap}
+.concept-search{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:.3rem .6rem;color:var(--text);font-size:.76rem;outline:none;min-width:150px}
+.concept-search:focus{border-color:var(--accent)}
+.concept-sort{font-size:.72rem;color:var(--text2)}
+.concept-sort select{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.2rem .4rem;color:var(--text);font-size:.74rem;outline:none}
+
+@media(max-width:640px){
+  .tag-filters-wrap{max-height:none}
+  .concept-map-container{min-height:300px}
+  .concept-detail{position:static;width:100%;margin-top:.5rem}
+}
+
+/* ── original @media below ── */
+@media(max-width:640px){
   .header h1{font-size:1.3rem}
   .grid{grid-template-columns:1fr}
   .phase-bar{gap:.2rem}
@@ -223,16 +296,16 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .viz-panels{display:none;padding-bottom:.5rem}
 .viz-panels.open{display:block}
 .viz-tabs{display:flex;gap:.4rem;margin-bottom:.8rem;flex-wrap:wrap}
-.viz-tab{padding:.4rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s}
-.viz-tab:hover{border-color:var(--accent);color:var(--text)}
-.viz-tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.viz-tab{padding:.4rem 1rem;border-radius:8px;border:1px solid var(--border-soft);background:rgba(30,41,59,.4);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all .2s}
+.viz-tab:hover{border-color:rgba(139,92,246,.3);color:var(--accent2)}
+.viz-tab.active{background:linear-gradient(135deg,var(--accent),#7c3aed);border-color:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(139,92,246,.25)}
 .viz-panel{display:none}
 .viz-panel.active{display:block}
 .viz-hint{font-size:.72rem;color:var(--text3);margin-bottom:.6rem}
-.mermaid-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem;overflow-x:auto;min-height:120px}
+.mermaid-container{background:rgba(17,24,39,.5);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1rem;overflow-x:auto;min-height:120px}
 .mermaid-container svg{max-width:100%;height:auto}
-.sankey-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem;overflow-x:auto;min-height:200px}
-.coverage-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem}
+.sankey-container{background:rgba(17,24,39,.5);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1rem;overflow-x:auto;min-height:200px}
+.coverage-container{background:rgba(17,24,39,.5);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1rem}
 .cov-row{display:flex;align-items:center;gap:.5rem;padding:.35rem 0;border-bottom:1px solid var(--surface2)}
 .cov-row:last-child{border-bottom:none}
 .cov-label{font-size:.75rem;min-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text2)}
@@ -241,6 +314,298 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 .cov-bar-read{position:absolute;top:0;left:0;height:100%;border-radius:7px;opacity:.5}
 .cov-num{font-size:.72rem;color:var(--text3);min-width:55px;text-align:right}
 .cov-tooltip{position:absolute;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .6rem;font-size:.72rem;color:var(--text);z-index:10;pointer-events:none;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+
+
+/* ── Dependency Path ─────────────────────────────── */
+.dep-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.dep-header{display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:.6rem 0;border-bottom:1px solid var(--border);margin-bottom:.6rem;user-select:none}
+.dep-header h2{font-size:1rem;font-weight:700;color:var(--cyan);margin:0}
+.dep-toggle-icon{font-size:.78rem;color:var(--text3);transition:transform .2s}
+.dep-panels{display:none;padding-bottom:.5rem}
+.dep-panels.open{display:block}
+.dep-hint{font-size:.72rem;color:var(--text3);margin-bottom:.6rem}
+.dag-container{background:rgba(17,24,39,.5);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1rem;overflow-x:auto;min-height:160px}
+.dep-card{background:linear-gradient(135deg,#0c1929 0%,#0f172a 100%);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.5rem;display:flex;gap:1rem;align-items:flex-start;position:relative;overflow:hidden}
+.dep-card::before{content:'';position:absolute;top:-30px;right:-30px;width:100px;height:100px;background:radial-gradient(circle,rgba(6,182,212,.1) 0%,transparent 70%);pointer-events:none}
+.dep-icon{font-size:1.8rem;flex-shrink:0;line-height:1}
+.dep-body{flex:1;min-width:0}
+.dep-label{font-size:.72rem;color:var(--cyan);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem}
+.dep-title{font-size:1.05rem;font-weight:700;line-height:1.4;margin-bottom:.3rem}
+.dep-title a{color:inherit;text-decoration:none}
+.dep-title a:hover{text-decoration:underline}
+.dep-meta{display:flex;gap:.8rem;font-size:.75rem;color:var(--text3);margin-bottom:.5rem;flex-wrap:wrap;align-items:center}
+.dep-meta .phase-tag{padding:.1rem .4rem;border-radius:4px;font-weight:600;font-size:.68rem;color:#fff}
+.dep-reason{font-size:.78rem;color:var(--text2);line-height:1.5;margin-bottom:.5rem;padding:.4rem .6rem;background:rgba(6,182,212,.06);border-radius:6px;border-left:3px solid var(--cyan)}
+.dep-reason .arrow{color:var(--cyan);font-weight:700}
+.dep-actions{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap}
+.dep-read-btn{padding:.4rem 1rem;border-radius:8px;background:var(--cyan);color:#fff;font-size:.82rem;font-weight:600;cursor:pointer;border:none;transition:all .15s;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem}
+.dep-read-btn:hover{opacity:.9;transform:translateY(-1px)}
+.dep-skip-btn{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:.78rem;cursor:pointer;transition:all .15s}
+.dep-skip-btn:hover{border-color:var(--cyan);color:var(--text)}
+.dep-more-btn{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--cyan);background:transparent;color:var(--cyan);font-size:.78rem;cursor:pointer;transition:all .15s}
+.dep-more-btn:hover{background:rgba(6,182,212,.1)}
+.dep-empty{text-align:center;padding:1.5rem;color:var(--text3);font-size:.85rem}
+.dep-prereq-indicator{font-size:.68rem;padding:.1rem .35rem;border-radius:4px;cursor:pointer;margin-left:.3rem;transition:all .15s}
+.dep-prereq-indicator.ready{background:rgba(34,197,94,.12);color:var(--green)}
+.dep-prereq-indicator.blocked{background:rgba(239,68,68,.12);color:var(--red)}
+.dep-prereq-indicator:hover{filter:brightness(1.2)}
+.dep-prereq-tooltip{position:fixed;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .7rem;font-size:.72rem;color:var(--text);z-index:200;max-width:300px;box-shadow:0 4px 12px rgba(0,0,0,.3);pointer-events:none}
+.dep-prereq-tooltip .prereq-item{padding:.15rem 0;display:flex;align-items:center;gap:.3rem}
+.dep-prereq-tooltip .prereq-item .check{color:var(--green)}
+.dep-prereq-tooltip .prereq-item .cross{color:var(--red)}
+/* ── Heatmap + Streak ──────────────────────────────── */
+.heatmap-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.heatmap-header{display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:.6rem 0;border-bottom:1px solid var(--border);margin-bottom:.6rem;user-select:none}
+.heatmap-header h2{font-size:1rem;font-weight:700;color:var(--green);margin:0}
+.heatmap-toggle-icon{font-size:.78rem;color:var(--text3);transition:transform .2s}
+.heatmap-panels{display:none;padding-bottom:.5rem}
+.heatmap-panels.open{display:block}
+.heatmap-stats{display:flex;gap:1.2rem;flex-wrap:wrap;margin-bottom:.8rem;align-items:center}
+.heatmap-stats .streak-item{display:flex;flex-direction:column;align-items:center;gap:.1rem}
+.heatmap-stats .streak-item .num{font-size:1.4rem;font-weight:800;line-height:1}
+.heatmap-stats .streak-item .lbl{font-size:.68rem;color:var(--text3)}
+.heatmap-stats .streak-item.current .num{color:var(--orange)}
+.heatmap-stats .streak-item.longest .num{color:var(--yellow)}
+.heatmap-stats .streak-item.total .num{color:var(--green)}
+.heatmap-stats .streak-item.today .num{color:var(--cyan)}
+.heatmap-stats .pace-box{flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.5rem .8rem;font-size:.75rem;color:var(--text2);line-height:1.5}
+.heatmap-stats .pace-box b{color:var(--accent2)}
+.heatmap-stats .pace-box .pace-warn{color:var(--orange)}
+.heatmap-stats .pace-box .pace-ok{color:var(--green)}
+.heatmap-wrap{background:rgba(17,24,39,.5);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1rem;overflow-x:auto}
+.heatmap-grid{display:flex;gap:2px;min-width:680px}
+.heatmap-col{display:flex;flex-direction:column;gap:2px}
+.heatmap-cell{width:11px;height:11px;border-radius:2px;background:var(--surface3);transition:transform .1s;cursor:pointer}
+.heatmap-cell:hover{transform:scale(1.5);z-index:5;position:relative}
+.heatmap-cell.l1{background:rgba(34,197,94,.25)}
+.heatmap-cell.l2{background:rgba(34,197,94,.45)}
+.heatmap-cell.l3{background:rgba(34,197,94,.7)}
+.heatmap-cell.l4{background:rgba(34,197,94,.95)}
+.heatmap-month-labels{display:flex;gap:2px;margin-top:.3rem;font-size:.65rem;color:var(--text3);min-width:680px}
+.heatmap-month-labels span{flex:1;text-align:center}
+.heatmap-legend{display:flex;align-items:center;gap:.3rem;font-size:.7rem;color:var(--text3);margin-top:.4rem;justify-content:flex-end}
+.heatmap-legend .heatmap-cell{cursor:default}
+.heatmap-legend .heatmap-cell:hover{transform:none}
+.heatmap-tooltip{position:fixed;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:.35rem .55rem;font-size:.7rem;color:var(--text);z-index:200;pointer-events:none;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.3);display:none}
+.heatmap-weekday-labels{display:flex;flex-direction:column;gap:2px;margin-right:4px;justify-content:flex-start;font-size:.6rem;color:var(--text3);width:12px}
+.heatmap-weekday-labels span{height:11px;line-height:11px;text-align:right}
+/* ── Smart Daily (今日三件事) ──────────────────────── */
+.smart-daily-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:.8rem}
+.smart-daily-card{background:linear-gradient(135deg,var(--surface) 0%,rgba(17,24,39,.6) 100%);border:1px solid var(--border-soft);border-radius:var(--radius);padding:1rem;position:relative;overflow:hidden;transition:all .25s;display:flex;flex-direction:column;gap:.4rem;min-height:140px}
+.smart-daily-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md),var(--shadow-glow)}
+.smart-daily-card.new-read{border-left:3px solid var(--accent)}
+.smart-daily-card.review{border-left:3px solid var(--pink)}
+.smart-daily-card.feynman{border-left:3px solid var(--yellow)}
+.smart-daily-card.done-card{opacity:.5}
+.smart-daily-card-top{display:flex;align-items:center;gap:.4rem}
+.smart-daily-icon{font-size:1.1rem}
+.smart-daily-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.smart-daily-card.new-read .smart-daily-label{color:var(--accent2)}
+.smart-daily-card.review .smart-daily-label{color:var(--pink)}
+.smart-daily-card.feynman .smart-daily-label{color:var(--yellow)}
+.smart-daily-title{font-size:.88rem;font-weight:600;line-height:1.3;flex:1}
+.smart-daily-title a{color:inherit;text-decoration:none}
+.smart-daily-title a:hover{text-decoration:underline}
+.smart-daily-meta{display:flex;gap:.5rem;font-size:.7rem;color:var(--text3);flex-wrap:wrap;align-items:center}
+.smart-daily-meta .phase-tag{padding:.1rem .4rem;border-radius:4px;font-weight:600;font-size:.65rem;color:#fff}
+.smart-daily-actions{display:flex;gap:.3rem;align-items:center}
+.smart-daily-btn{padding:.3rem .7rem;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;border:none;transition:all .15s;text-decoration:none;display:inline-flex;align-items:center;gap:.2rem}
+.smart-daily-btn.primary{background:var(--accent);color:#fff}
+.smart-daily-btn.primary:hover{background:var(--accent2)}
+.smart-daily-btn.review-btn{background:var(--pink);color:#fff}
+.smart-daily-btn.review-btn:hover{opacity:.85}
+.smart-daily-btn.feynman-btn{background:var(--yellow);color:#1a1a2e}
+.smart-daily-btn.feynman-btn:hover{opacity:.85}
+.smart-daily-btn.skip{background:var(--surface2);color:var(--text3);border:1px solid var(--border)}
+.smart-daily-btn.skip:hover{border-color:var(--accent);color:var(--text)}
+.smart-daily-empty{display:flex;align-items:center;justify-content:center;min-height:140px;color:var(--text3);font-size:.85rem;text-align:center}
+.smart-daily-reason{font-size:.68rem;color:var(--text3);line-height:1.3}
+@media(max-width:768px){.heatmap-grid,.heatmap-month-labels{min-width:560px}.smart-daily-grid{grid-template-columns:1fr}}
+
+
+/* ── Reading Time Badge (#6) ─── */
+.read-time-badge{font-size:.62rem;color:var(--text3);margin-left:.3rem;white-space:nowrap}
+.read-time-badge::before{content:'⏱ ';opacity:.7}
+.wpm-stat{color:var(--cyan)}
+
+/* ── Output Panel (#7) ─── */
+.output-section{max-width:1400px;margin:0 auto .8rem;padding:0 1rem}
+.output-header{display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:.6rem 0;border-bottom:1px solid var(--border);margin-bottom:.6rem;user-select:none}
+.output-header h2{font-size:1rem;font-weight:700;color:var(--orange);margin:0}
+.output-toggle-icon{font-size:.78rem;color:var(--text3);transition:transform .2s}
+.output-panels{display:none;padding-bottom:.5rem}
+.output-panels.open{display:block}
+.output-stats{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:.8rem}
+.output-stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.6rem .9rem;display:flex;flex-direction:column;gap:.2rem;min-width:110px}
+.output-stat-card .num{font-size:1.3rem;font-weight:800;line-height:1}
+.output-stat-card .lbl{font-size:.68rem;color:var(--text3)}
+.output-stat-card .sub{font-size:.62rem;color:var(--text3);opacity:.7}
+.output-pace-box{flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.5rem .8rem;font-size:.75rem;color:var(--text2);line-height:1.5}
+.output-pace-box b{color:var(--accent2)}
+.output-pace-box .pace-warn{color:var(--orange)}
+.output-pace-box .pace-ok{color:var(--green)}
+.output-log{display:flex;flex-direction:column;gap:.3rem;max-height:300px;overflow-y:auto}
+.output-log-item{display:flex;gap:.5rem;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.4rem .6rem;font-size:.74rem}
+.output-log-item .log-type{font-size:.68rem;padding:.1rem .4rem;border-radius:4px;font-weight:600;white-space:nowrap}
+.output-log-item .log-type.feynman{background:rgba(139,92,246,.12);color:var(--accent2)}
+.output-log-item .log-type.recall{background:rgba(236,72,153,.12);color:var(--pink)}
+.output-log-item .log-type.mastered{background:rgba(34,197,94,.12);color:var(--green)}
+.output-log-item .log-type.project{background:rgba(6,182,212,.12);color:var(--cyan)}
+.output-log-item .log-title{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text2)}
+.output-log-item .log-date{font-size:.66rem;color:var(--text3);white-space:nowrap}
+.output-log-empty{text-align:center;padding:1rem;color:var(--text3);font-size:.82rem}
+.output-add-row{display:flex;gap:.4rem;margin-bottom:.6rem}
+.output-add-input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:.3rem .5rem;color:var(--text);font-size:.78rem;outline:none}
+.output-add-input:focus{border-color:var(--accent)}
+.output-add-btn{padding:.3rem .8rem;border-radius:6px;background:var(--accent);color:#fff;border:none;font-size:.78rem;cursor:pointer;font-weight:600;white-space:nowrap}
+.output-add-btn:hover{background:var(--accent2)}
+
+/* ── Challenge Modal (#8) ─── */
+.challenge-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:1000}
+.challenge-modal.open{display:flex}
+.challenge-panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;max-width:640px;width:90%;max-height:85vh;overflow-y:auto;padding:1.5rem}
+.challenge-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.challenge-header h3{font-size:1.1rem;background:linear-gradient(135deg,#f97316,#eab308);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.challenge-close{background:none;border:none;color:var(--text3);font-size:1.5rem;cursor:pointer;line-height:1}
+.challenge-close:hover{color:var(--text)}
+.challenge-article-title{font-size:.88rem;color:var(--text2);margin-bottom:1rem;padding:.5rem .7rem;background:var(--surface2);border-radius:8px}
+.challenge-q{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:.8rem;margin-bottom:.8rem}
+.challenge-q-label{font-size:.72rem;color:var(--orange);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.4rem}
+.challenge-q-text{font-size:.85rem;color:var(--text);line-height:1.5;margin-bottom:.6rem}
+.challenge-q-textarea{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:.6rem;color:var(--text);font-size:.83rem;resize:vertical;min-height:80px;font-family:inherit}
+.challenge-q-textarea:focus{outline:none;border-color:var(--accent)}
+.challenge-q-score{display:flex;gap:.4rem;align-items:center;margin-top:.4rem}
+.challenge-score-btn{padding:.25rem .6rem;border-radius:6px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.74rem;transition:all .15s}
+.challenge-score-btn:hover{border-color:var(--accent)}
+.challenge-score-btn.active.correct{background:rgba(34,197,94,.15);border-color:var(--green);color:var(--green)}
+.challenge-score-btn.active.partial{background:rgba(234,179,8,.15);border-color:var(--yellow);color:var(--yellow)}
+.challenge-score-btn.active.wrong{background:rgba(239,68,68,.15);border-color:var(--red);color:var(--red)}
+.challenge-stats{display:flex;gap:1rem;font-size:.78rem;color:var(--text2);margin-bottom:.8rem;flex-wrap:wrap}
+.challenge-stats span{display:flex;align-items:center;gap:.3rem}
+.challenge-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:1rem}
+.challenge-submit{padding:.5rem 1.2rem;border-radius:8px;background:var(--orange);color:#fff;font-size:.85rem;font-weight:600;cursor:pointer;border:none}
+.challenge-submit:hover{opacity:.85}
+.challenge-cancel{padding:.5rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:.85rem;cursor:pointer}
+
+/* ── Feynman Related Articles (#5) ─── */
+.feynman-related{margin-bottom:.8rem}
+.feynman-related-label{font-size:.78rem;color:var(--text2);margin-bottom:.25rem;font-weight:600}
+.feynman-related-list{display:flex;flex-direction:column;gap:.3rem}
+.feynman-related-item{display:flex;gap:.4rem;align-items:center;background:var(--surface2);border-radius:6px;padding:.3rem .5rem;cursor:pointer;transition:all .15s}
+.feynman-related-item:hover{filter:brightness(1.1)}
+.feynman-related-item .rel-icon{font-size:.7rem;color:var(--text3)}
+.feynman-related-item .rel-title{flex:1;font-size:.76rem;color:var(--text2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.feynman-related-item .rel-shared{font-size:.62rem;color:var(--text3);white-space:nowrap}
+.feynman-related-empty{font-size:.75rem;color:var(--text3);padding:.2rem 0}
+
+/* ── Concept Collision (#5) ─── */
+.collision-view{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:.8rem;margin-top:.5rem;display:none}
+.collision-view.open{display:block}
+.collision-title{font-size:.82rem;font-weight:700;color:var(--accent2);margin-bottom:.5rem}
+.collision-cols{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.collision-col{background:var(--bg);border-radius:8px;padding:.6rem;font-size:.76rem;line-height:1.4}
+.collision-col h4{font-size:.78rem;color:var(--text);margin-bottom:.3rem}
+.collision-col .col-note{color:var(--text2);font-size:.72rem}
+.collision-col .col-empty{color:var(--text3);font-size:.72rem;font-style:italic}
+
+@media(max-width:768px){.collision-cols{grid-template-columns:1fr}.output-stats{flex-direction:column}}
+
+/* ── Dashboard polish ─────────────────────────────────
+   Keep the existing learning workflow, but give the page a clearer command
+   surface, stronger hierarchy, and predictable responsive behavior. */
+:root{
+  --page-gutter:clamp(1rem,3vw,2.5rem);
+  --panel:rgba(15,23,42,.82);
+  --panel-raised:rgba(22,32,51,.92);
+  --focus-ring:0 0 0 3px rgba(167,139,250,.24);
+}
+
+html{scroll-behavior:smooth}
+body{background-color:#080d19;background-image:
+  radial-gradient(900px 420px at 8% -8%,rgba(99,102,241,.18),transparent 65%),
+  radial-gradient(720px 360px at 92% 0%,rgba(14,165,233,.08),transparent 60%)}
+button,input,select,textarea{font:inherit}
+button{touch-action:manipulation}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,
+a:focus-visible{outline:none;box-shadow:var(--focus-ring);border-color:var(--accent2)!important}
+
+.header{padding:clamp(1.35rem,3vw,2.5rem) var(--page-gutter) 1.25rem;
+  background:linear-gradient(135deg,rgba(30,27,75,.96),rgba(15,23,42,.94) 58%,rgba(8,13,25,.98));
+  border-bottom-color:rgba(148,163,184,.2)}
+.header-inner{max-width:1480px}
+.header h1{font-size:clamp(1.45rem,2.8vw,2.15rem);letter-spacing:-.03em}
+.header p{font-size:.92rem;max-width:62ch}
+.phase-bar{margin-top:1.35rem;gap:.45rem;overflow-x:auto;flex-wrap:nowrap;padding-bottom:.25rem;scrollbar-width:none}
+.phase-bar::-webkit-scrollbar{display:none}
+.phase-chip{flex:0 0 auto;padding:.52rem .9rem;border-radius:9px;border-color:rgba(148,163,184,.08)}
+.phase-chip.active{box-shadow:0 0 0 2px rgba(255,255,255,.9),0 5px 18px rgba(0,0,0,.18);transform:none}
+.countdown{top:.1rem;right:0;padding:.6rem .9rem;min-width:112px}
+
+#stats-row{max-width:1480px!important;margin:1rem auto .85rem!important;padding:0 var(--page-gutter)!important;gap:.7rem}
+.stat{min-height:88px;padding:1rem .85rem;background:linear-gradient(145deg,rgba(17,24,39,.96),rgba(15,23,42,.72));border-color:rgba(71,85,105,.72)}
+.stat .num{font-size:clamp(1.35rem,2vw,1.7rem)}
+.stat .label{font-size:.72rem}
+
+.sync-bar,.controls,.tag-filters-wrap,.progress-section,.viz-section,.daily-section,.dep-section,.recall-section,.output-section,.heatmap-section,.content{max-width:1480px}
+.sync-bar,.controls{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.sync-bar{margin-bottom:1rem;min-height:42px;background:rgba(15,23,42,.55);border:1px solid rgba(71,85,105,.4);border-radius:11px}
+.sync-status{margin-left:auto}
+.controls{position:sticky;top:0;z-index:20;padding-top:.7rem;padding-bottom:.7rem;margin-bottom:.8rem;background:rgba(8,13,25,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(71,85,105,.32)}
+.search-box{min-height:40px;background:rgba(15,23,42,.9);border-color:rgba(71,85,105,.7);border-radius:11px}
+.chip,.tag-chip,.viz-tab{min-height:34px;display:inline-flex;align-items:center;justify-content:center}
+.chip{padding:.35rem .78rem;border-radius:9px}
+.chip.active,.tag-chip.active,.viz-tab.active{box-shadow:0 4px 12px rgba(139,92,246,.24)}
+.tag-filters-wrap{padding-left:var(--page-gutter);padding-right:var(--page-gutter);margin-bottom:1rem}
+.tag-filters-header{min-height:27px}
+.progress-section{padding:.8rem var(--page-gutter);background:rgba(15,23,42,.5);border:1px solid rgba(71,85,105,.32);border-radius:12px;margin-bottom:1rem}
+.phase-progress{padding:.4rem 0}
+.phase-progress .bar{height:9px;background:rgba(51,65,85,.72)}
+
+.content{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.section-header{margin-top:2.1rem}
+.grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,350px),1fr));gap:1rem}
+.card{padding:1.15rem 1.2rem;background:linear-gradient(145deg,rgba(17,24,39,.96),rgba(15,23,42,.72));border-color:rgba(71,85,105,.52)}
+.card:hover{border-color:rgba(167,139,250,.55);box-shadow:0 14px 28px rgba(0,0,0,.22),0 0 24px rgba(139,92,246,.1)}
+.card.done{opacity:.68}
+.card-title{font-size:.96rem}
+.card-meta{padding-top:.15rem;border-top:1px solid rgba(71,85,105,.22)}
+
+.viz-header,.dep-header,.heatmap-header,.output-header{padding:.85rem 0;border-bottom-color:rgba(71,85,105,.5)}
+.viz-header h2,.dep-header h2,.heatmap-header h2,.output-header h2{font-size:1.05rem}
+.viz-tabs{gap:.5rem}
+.viz-tab{padding:.48rem .9rem}
+.viz-hint{margin:.15rem 0 .8rem;color:#8291aa}
+.mermaid-container,.sankey-container,.coverage-container,.dag-container,.concept-map-container,.heatmap-wrap{background:rgba(15,23,42,.7);border-color:rgba(71,85,105,.55)}
+
+.daily-card,.dep-card{padding:1.25rem 1.45rem;border-color:rgba(71,85,105,.55);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.smart-daily-grid{gap:1rem}
+.smart-daily-card{padding:1.1rem;border-color:rgba(71,85,105,.5)}
+
+@media(max-width:768px){
+  .header{padding-bottom:1rem}
+  .countdown{margin-top:1rem}
+  .sync-status{width:100%;margin-left:0}
+  .controls{align-items:stretch}
+  .search-box{flex-basis:100%}
+  .chip-group{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:.15rem;scrollbar-width:none}
+  .chip-group::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto}
+  .phase-progress .pname{min-width:112px;font-size:.7rem}
+  .phase-progress .pcount{min-width:65px;font-size:.66rem}
+  .daily-card,.dep-card{padding:1rem}
+}
+@media(max-width:480px){
+  #stats-row{grid-template-columns:repeat(2,1fr)!important}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat{min-height:76px}
+  .stat .num{font-size:1.25rem}
+  .sync-input{width:100%}
+  .sync-btn{flex:1}
+  .phase-progress .pname{min-width:92px}
+  .phase-progress .bar{min-width:62px}
+  .output-add-row{flex-direction:column}
+  .output-add-btn{min-height:38px}
+}
 
 </style>
 </head>
@@ -270,12 +635,51 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
 
 <div class="controls">
   <input class="search-box" id="search" placeholder="搜索标题、章节..." />
-  <div class="chip-group" id="chapter-filters"></div>
-  <div class="chip-group" id="level-filters"></div>
+ <div class="chip-group" id="chapter-filters"></div>
+ <div class="chip-group" id="level-filters"></div>
+</div>
+
+<div class="tag-filters-wrap" id="tag-filters-wrap">
+  <div class="tag-filters-header">
+    <span>🏷️ 概念标签</span>
+    <button class="tag-expand-btn" id="tag-expand-btn">展开全部</button>
+  </div>
+  <div class="tag-filters-inner" id="tag-filters"></div>
 </div>
 
 <div class="progress-section">
   <div class="progress-bars" id="progress-bars"></div>
+</div>
+
+<div class="heatmap-section" id="heatmap-section">
+  <div class="heatmap-header" id="heatmap-toggle">
+    <h2>🔥 学习热力图 · Streak</h2>
+    <span class="heatmap-toggle-icon" id="heatmap-toggle-icon">▶ 展开</span>
+  </div>
+  <div class="heatmap-panels" id="heatmap-panels">
+    <div class="heatmap-stats" id="heatmap-stats"></div>
+    <div class="heatmap-wrap">
+      <div style="display:flex">
+        <div class="heatmap-weekday-labels">
+          <span></span><span>一</span><span></span><span>三</span><span></span><span>五</span><span></span>
+        </div>
+        <div>
+          <div class="heatmap-grid" id="heatmap-grid"></div>
+          <div class="heatmap-month-labels" id="heatmap-month-labels"></div>
+        </div>
+      </div>
+      <div class="heatmap-legend">
+        <span>少</span>
+        <div class="heatmap-cell"></div>
+        <div class="heatmap-cell l1"></div>
+        <div class="heatmap-cell l2"></div>
+        <div class="heatmap-cell l3"></div>
+        <div class="heatmap-cell l4"></div>
+        <span>多</span>
+      </div>
+    </div>
+  </div>
+  <div class="heatmap-tooltip" id="heatmap-tooltip"></div>
 </div>
 
 <div class="viz-section" id="viz-section">
@@ -285,9 +689,11 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
   </div>
   <div class="viz-panels" id="viz-panels">
     <div class="viz-tabs">
-      <button class="viz-tab active" data-tab="graph">🗺️ 章节图谱</button>
-      <button class="viz-tab" data-tab="flow">🔄 阅读流</button>
-      <button class="viz-tab" data-tab="coverage">📈 章节覆盖</button>
+     <button class="viz-tab active" data-tab="graph">🗺️ 章节图谱</button>
+     <button class="viz-tab" data-tab="flow">🔄 阅读流</button>
+     <button class="viz-tab" data-tab="coverage">📈 章节覆盖</button>
+     <button class="viz-tab" data-tab="path">🧭 依赖路径</button>
+      <button class="viz-tab" data-tab="concept">🕸️ 概念图谱</button>
     </div>
     <div class="viz-panel active" id="viz-graph">
       <div class="viz-hint">20 章知识图谱 · 节点大小=文章数 · 连线=共享阶段</div>
@@ -297,23 +703,50 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
       <div class="viz-hint">阅读进度流 · 从未读到掌握的漏斗</div>
       <div id="sankey-container" class="sankey-container"></div>
     </div>
-    <div class="viz-panel" id="viz-coverage">
-      <div class="viz-hint">各章节阅读覆盖率 · 悬浮查看详情</div>
-      <div id="coverage-container" class="coverage-container"></div>
-    </div>
+    <div class="viz-panel" id="viz-path">
+    <div class="dag-container" id="dag-container"></div>
   </div>
+ <div class="viz-panel" id="viz-coverage">
+     <div class="viz-hint">各章节阅读覆盖率 · 悬浮查看详情</div>
+     <div id="coverage-container" class="coverage-container"></div>
+   </div>
+    <div class="viz-panel" id="viz-concept">
+      <div class="viz-hint">概念关系图 · 节点大小=文章数 · 颜色=掌握度 · 点击查看文章列表</div>
+      <div class="concept-controls">
+        <input class="concept-search" id="concept-search" placeholder="搜索概念..." />
+        <div class="concept-sort">
+          <select id="concept-sort-select">
+            <option value="articles">按文章数</option>
+            <option value="mastery">按掌握度</option>
+            <option value="name">按名称</option>
+          </select>
+        </div>
+      </div>
+      <div class="concept-map-container" id="concept-map-container">
+        <div class="concept-detail" id="concept-detail"></div>
+      </div>
+      <div class="concept-legend" id="concept-legend"></div>
+    </div>
+ </div>
 </div>
 
 <div class="daily-section" id="daily-section">
-  <div class="daily-card" id="daily-card">
-    <div class="daily-icon">📅</div>
-    <div class="daily-body">
-      <div class="daily-label">每日一读</div>
-      <div class="daily-title" id="daily-title"></div>
-      <div class="daily-meta" id="daily-meta"></div>
-      <div class="daily-actions" id="daily-actions"></div>
-    </div>
-    <div class="daily-date" id="daily-date"></div>
+  <div class="section-header" style="margin-bottom:.6rem">
+    <h2 style="color:var(--accent2)">📅 今日三件事</h2>
+    <span class="badge" id="smart-daily-badge">智能推荐</span>
+    <span class="daily-date" id="daily-date" style="margin-left:auto"></span>
+  </div>
+  <div class="smart-daily-grid" id="smart-daily-grid"></div>
+</div>
+
+<div class="dep-section" id="dep-section">
+  <div class="dep-header" id="dep-toggle">
+    <h2>🧭 依赖路径 · 推荐下一篇</h2>
+    <span class="dep-toggle-icon" id="dep-toggle-icon">▶ 展开</span>
+  </div>
+  <div class="dep-panels" id="dep-panels">
+    <div class="dep-hint" id="dep-hint">基于知识依赖关系，推荐前置已满足的下一篇最佳文章</div>
+    <div id="dep-recommendation"></div>
   </div>
 </div>
 <div class="recall-section" id="recall-section">
@@ -325,6 +758,22 @@ body{font-family:-apple-system,'SF Pro','PingFang SC',sans-serif;background:var(
   <div class="recall-panel" id="recall-panel">
     <div class="recall-stats" id="recall-stats"></div>
     <div class="recall-list" id="recall-list"></div>
+  </div>
+</div>
+
+<div class="output-section" id="output-section">
+  <div class="output-header" id="output-toggle">
+    <h2>📦 学习输出物</h2>
+    <span class="badge" id="output-badge">0 本周</span>
+    <span class="output-toggle-icon" id="output-toggle-icon">▶ 展开</span>
+  </div>
+  <div class="output-panels" id="output-panels">
+    <div class="output-stats" id="output-stats"></div>
+    <div class="output-add-row">
+      <input type="text" id="output-add-input" class="output-add-input" placeholder="记录代码项目 / 口述复盘 / 其他输出物..." />
+      <button class="output-add-btn" onclick="addManualOutput()">+ 添加输出</button>
+    </div>
+    <div class="output-log" id="output-log"></div>
   </div>
 </div>
 <div class="content" id="content">
@@ -346,10 +795,19 @@ let currentPhase = 0;
 let currentChapter = 'all';
 let currentLevel = 'all';
 let searchQuery = '';
+let currentTag = 'all';
+let CONCEPT_DATA = null;
+let tagFiltersExpanded = false;
+let conceptSearchQuery = '';
+let conceptSortMode = 'articles';
 let userId = localStorage.getItem(USER_KEY) || '';
 let countdownCfg = JSON.parse(localStorage.getItem(COUNTDOWN_KEY) || 'null') || { label: '面试', targetDate: new Date(Date.now() + 30 * 86400000).toISOString().slice(0, 10) };
 let recallData = JSON.parse(localStorage.getItem(RECALL_KEY) || '{}');
 let recallPanelOpen = false;
+const ACTIVITY_KEY = 'wiki-learn-activity-v1';
+let activityData = JSON.parse(localStorage.getItem(ACTIVITY_KEY) || '{}');
+let heatmapOpen = false;
+let visibleCount = 30; // pagination: articles per page
 
 // ── Entity-based key migration ──────────────────────────────────
 // Article file paths change across builds (e.g. ch04/692-... → ch04/698-...)
@@ -512,8 +970,8 @@ async function pullFromCloud(){
       }
       saveRecall();
     }
-    migrateStaleKeys();
-    render(); renderRecallPanel();
+   migrateStaleKeys();
+    try { render(); renderRecallPanel(); } catch(re){ console.warn('render after pull:', re); }
     const total = Object.keys(result.progress||{}).length + Object.keys(result.feynman||{}).length + Object.keys(result.recall||{}).length;
     setSyncStatus('✓ 已拉取 '+total+' 条从云端', true);
   } catch(e) { setSyncStatus('拉取失败: '+e.message, false); }
@@ -530,6 +988,167 @@ function scheduleSync(){
 // ── Local Storage ────────────────────────────────────────────
 function save(){ localStorage.setItem(LS_KEY, JSON.stringify(done)); }
 function saveRecall(){ localStorage.setItem(RECALL_KEY, JSON.stringify(recallData)); }
+function saveActivity(){ localStorage.setItem(ACTIVITY_KEY, JSON.stringify(activityData)); }
+
+// ── Activity Log & Heatmap ───────────────────────────────────
+function recordActivity(entity, level){
+  const today = new Date().toISOString().slice(0, 10);
+  if(!activityData[today]) activityData[today] = { entities: {}, count: 0 };
+  if(!activityData[today].entities[entity]){
+    activityData[today].entities[entity] = level;
+    activityData[today].count++;
+  } else {
+    activityData[today].entities[entity] = level;
+  }
+  saveActivity();
+  scheduleSync();
+}
+
+function getActivityCount(dateStr){
+  return activityData[dateStr]?.count || 0;
+}
+
+function getStreakStats(){
+  const dates = Object.keys(activityData).filter(d => activityData[d].count > 0).sort();
+  if(dates.length === 0) return { current: 0, longest: 0, total: 0, today: 0 };
+  const today = new Date(); today.setHours(0,0,0,0);
+  let current = 0;
+  let cursor = new Date(today);
+  if(!activityData[today.toISOString().slice(0,10)]?.count){
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  while(true){
+    const ds = cursor.toISOString().slice(0,10);
+    if(activityData[ds]?.count > 0){
+      current++;
+      cursor.setDate(cursor.getDate() - 1);
+    } else break;
+  }
+  let longest = 0, run = 0, prev = null;
+  for(const d of dates){
+    if(prev){
+      const diff = Math.round((new Date(d) - new Date(prev)) / 86400000);
+      if(diff === 1) run++; else run = 1;
+    } else run = 1;
+    longest = Math.max(longest, run);
+    prev = d;
+  }
+  const todayStr = today.toISOString().slice(0,10);
+  return { current, longest, total: dates.length, today: activityData[todayStr]?.count || 0 };
+}
+
+function getPaceInfo(){
+  if(!DATA) return null;
+  const target = new Date(countdownCfg.targetDate + 'T00:00:00');
+  const today = new Date(); today.setHours(0,0,0,0);
+  const daysLeft = Math.max(0, Math.ceil((target - today) / 86400000));
+  if(daysLeft === 0) return { daysLeft: 0, remaining: 0, perDay: 0, hoursPerDay: 0, phase: 0 };
+  for(let p = 1; p <= 3; p++){
+    const arts = DATA.articles.filter(a => a.phase === p);
+    const unreadArts = arts.filter(a => !getLevel(a.entity));
+    const remaining = unreadArts.length;
+    if(remaining > 0){
+      const totalWords = unreadArts.reduce((s, a) => s + (a.words || 0), 0);
+      const totalHours = totalWords / getPersonalWPM() / 60;
+      return { daysLeft, remaining, perDay: Math.ceil(remaining / daysLeft), hoursPerDay: Math.ceil(totalHours / daysLeft * 10) / 10, phase: p };
+    }
+  }
+  return { daysLeft, remaining: 0, perDay: 0, hoursPerDay: 0, phase: 0 };
+}
+
+function toggleHeatmap(){
+  heatmapOpen = !heatmapOpen;
+  const panels = document.getElementById('heatmap-panels');
+  const icon = document.getElementById('heatmap-toggle-icon');
+  panels.classList.toggle('open', heatmapOpen);
+  icon.textContent = heatmapOpen ? '\u25BC \u6536\u8D77' : '\u25B6 \u5C55\u5F00';
+  if(heatmapOpen) renderHeatmap();
+}
+
+function renderHeatmap(){
+  if(!DATA) return;
+  const stats = getStreakStats();
+  const pace = getPaceInfo();
+  const statsEl = document.getElementById('heatmap-stats');
+  let sh = '<div class="streak-item current"><div class="num">'+stats.current+'</div><div class="lbl">\u5F53\u524D\u8FDE\u7EED</div></div>';
+  sh += '<div class="streak-item longest"><div class="num">'+stats.longest+'</div><div class="lbl">\u6700\u957F\u8FDE\u7EED</div></div>';
+  sh += '<div class="streak-item total"><div class="num">'+stats.total+'</div><div class="lbl">\u6D3B\u8DC3\u5929\u6570</div></div>';
+  sh += '<div class="streak-item today"><div class="num">'+stats.today+'</div><div class="lbl">\u4ECA\u65E5\u7BC7\u6570</div></div>';
+  if(pace && pace.remaining > 0){
+    const pc = pace.perDay > 3 ? 'pace-warn' : 'pace-ok';
+    const pn = 'Phase ' + pace.phase;
+    sh += '<div class="pace-box">\u8DDD'+countdownCfg.label+'\u8FD8\u6709 <b>'+pace.daysLeft+'</b> \u5929 \xB7 '+pn+'\u5269\u4F59 <b>'+pace.remaining+'</b> \u7BC7 \xB7 \u9700\u6BCF\u5929 <span class="'+pc+'"><b>'+pace.perDay+'</b> \u7BC7</span>\uFF08\u7EA6 <b>'+pace.hoursPerDay+'</b> \u5C0F\u65F6\xB7' + getPersonalWPM() + '\u5B57/\u5206\uFF09\u53EF\u5B8C\u6210</div>';
+  } else if(pace && pace.remaining === 0){
+    sh += '<div class="pace-box">\uD83C\uDF89 Phase 1-3 \u5168\u90E8\u5B8C\u6210\uFF01</div>';
+  }
+  statsEl.innerHTML = sh;
+
+  const gridEl = document.getElementById('heatmap-grid');
+  const monthEl = document.getElementById('heatmap-month-labels');
+  const today = new Date(); today.setHours(0,0,0,0);
+  const weeks = 52;
+  const totalDays = weeks * 7;
+  const start = new Date(today);
+  start.setDate(start.getDate() - totalDays + 1);
+  start.setDate(start.getDate() - start.getDay());
+  const monthNames = ['1\u6708','2\u6708','3\u6708','4\u6708','5\u6708','6\u6708','7\u6708','8\u6708','9\u6708','10\u6708','11\u6708','12\u6708'];
+  const monthLabels = [];
+  let lastMonth = -1;
+  let gridHtml = '';
+  for(let w = 0; w < weeks; w++){
+    let colHtml = '<div class="heatmap-col">';
+    for(let d = 0; d < 7; d++){
+      const date = new Date(start);
+      date.setDate(date.getDate() + w * 7 + d);
+      const ds = date.toISOString().slice(0, 10);
+      const count = getActivityCount(ds);
+      const future = date > today;
+      let cls = '';
+      if(!future && count > 0){
+        if(count >= 4) cls = 'l4';
+        else if(count >= 3) cls = 'l3';
+        else if(count >= 2) cls = 'l2';
+        else cls = 'l1';
+      }
+      if(future) cls += ' future';
+      colHtml += '<div class="heatmap-cell '+cls+'" data-date="'+ds+'" data-count="'+count+'"></div>';
+      if(d === 0){
+        const m = date.getMonth();
+        if(m !== lastMonth){ monthLabels.push({ week: w, label: monthNames[m] }); lastMonth = m; }
+      }
+    }
+    colHtml += '</div>';
+    gridHtml += colHtml;
+  }
+  gridEl.innerHTML = gridHtml;
+
+  let monthHtml = '';
+  let prevWeek = -1;
+  for(const ml of monthLabels){
+    const gap = ml.week - prevWeek - 1;
+    if(gap > 0) monthHtml += '<span style="flex:'+gap+'"></span>';
+    monthHtml += '<span>'+ml.label+'</span>';
+    prevWeek = ml.week;
+  }
+  const tailGap = weeks - prevWeek - 1;
+  if(tailGap > 0) monthHtml += '<span style="flex:'+tailGap+'"></span>';
+  monthEl.innerHTML = monthHtml;
+
+  const tooltip = document.getElementById('heatmap-tooltip');
+  gridEl.querySelectorAll('.heatmap-cell').forEach(cell => {
+    cell.addEventListener('mouseenter', e => {
+      const ds = cell.dataset.date;
+      const count = parseInt(cell.dataset.count);
+      const txt = count > 0 ? count + ' \u7BC7 \xB7 ' + ds : ds;
+      tooltip.innerHTML = txt;
+      tooltip.style.display = 'block';
+      tooltip.style.left = (e.clientX + 10) + 'px';
+      tooltip.style.top = (e.clientY - 25) + 'px';
+    });
+    cell.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+  });
+}
+
 
 function getLevel(file){
   const d = done[file];
@@ -562,8 +1181,10 @@ function setLevel(file, level){
     delete done[file];
     if(recallData[file]) removeFromRecallQueue(file);
   } else {
+    if(level === 'read' && !getLevel(file)) recordReadEnd(file);
     done[file] = { level, updatedAt: Date.now() };
     if(!recallData[file]) addToRecallQueue(file);
+    recordActivity(file, level);
   }
   save();
   scheduleSync();
@@ -776,17 +1397,18 @@ function skipDailyArticle(){
   const today = new Date().toISOString().slice(0, 10);
   // Get unread excluding current
   const unread = DATA.articles.filter(a => !getLevel(a.entity) && (!stored || a.entity !== (stored.entity || stored.file)));
-  if(unread.length === 0){ renderDailyCard(); return; }
+  if(unread.length === 0){ renderSmartDaily(); return; }
   let hash = 0;
   const seed = today + '-' + Date.now();
   for(let i = 0; i < seed.length; i++) hash = ((hash << 5) - hash + seed.charCodeAt(i)) | 0;
   const idx = Math.abs(hash) % unread.length;
   const picked = unread[idx];
   localStorage.setItem(DAILY_KEY, JSON.stringify({date: today, entity: picked.entity, file: picked.file}));
-  renderDailyCard();
+  renderSmartDaily();
 }
 
 function startDailyRead(phase, file){
+  recordReadStart(file);
   // Switch to the article's phase in the dashboard
   currentPhase = phase;
   // Update phase bar UI
@@ -798,30 +1420,159 @@ function startDailyRead(phase, file){
   window.open(articleUrl(file), '_blank');
 }
 
-function renderDailyCard(){
+function renderSmartDaily(){
   const section = document.getElementById('daily-section');
   if(!DATA){ section.style.display = 'none'; return; }
-  const article = getDailyArticle();
-  if(!article){
-    section.innerHTML = '<div class="daily-card"><div class="daily-icon">🎉</div><div class="daily-body"><div class="daily-label">每日一读</div><div class="daily-title">全部文章已读完！太棒了 🏆</div></div></div>';
+  const grid = document.getElementById('smart-daily-grid');
+  const dateEl = document.getElementById('daily-date');
+  const today = new Date();
+  if(dateEl) dateEl.textContent = (today.getMonth()+1)+'/'+today.getDate();
+
+  const newRead = getSmartDailyNewRead();
+  const review = getSmartDailyReview();
+  const feynman = getSmartDailyFeynman();
+
+  if(!newRead && !review && !feynman){
+    grid.innerHTML = '<div class="smart-daily-empty">\uD83C\uDF89 \u4ECA\u65E5\u4EFB\u52A1\u5168\u90E8\u5B8C\u6210\uFF01\u7EE7\u7EED\u4FDD\u6301 \uD83C\uDFC6</div>';
     return;
   }
-  const url = articleUrl(article.file);
-  const color = phaseColor(article.phase);
-  const today = new Date();
-  const dateStr = (today.getMonth()+1)+'/'+today.getDate();
-  const lvClass = article.level===3?'lv3':article.level===2?'lv2':'lv1';
 
-  document.getElementById('daily-title').innerHTML = '<a href="'+url+'" target="_blank" onclick="event.preventDefault();startDailyRead('+article.phase+',\''+article.file.replace(/'/g, "\\'")+'\')">'+article.title+'</a>';
-  document.getElementById('daily-meta').innerHTML =
-    '<span class="phase-tag" style="background:'+color+'">P'+article.phase+'</span>'+
-    '<span>'+article.chapterName+'</span>'+
-    '<span>'+formatWords(article.words)+'字</span>'+
-    '<span class="level-badge '+lvClass+'">'+('⭐'.repeat(article.level))+'</span>';
-  document.getElementById('daily-actions').innerHTML =
-    '<button class="daily-read-btn" onclick="startDailyRead('+article.phase+',\''+article.file.replace(/'/g, "\\'")+'\')">📖 开始阅读</button>'+
-    '<button class="daily-skip-btn" onclick="skipDailyArticle()">↻ 换一篇</button>';
-  document.getElementById('daily-date').textContent = dateStr;
+  let html = '';
+
+  if(newRead){
+    const a = newRead.article;
+    const url = articleUrl(a.file);
+    const color = phaseColor(a.phase);
+    const escFile = a.file.replace(/'/g, "\\'");
+    const escEntity = a.entity.replace(/'/g, "\\'");
+    html +=
+      '<div class="smart-daily-card new-read">'+
+        '<div class="smart-daily-card-top">'+
+          '<span class="smart-daily-icon">\uD83D\uDCD6</span>'+
+          '<span class="smart-daily-label">\u4ECA\u65E5\u65B0\u8BFB</span>'+
+        '</div>'+
+        '<div class="smart-daily-title"><a href="'+url+'" target="_blank" onclick="event.preventDefault();startDailyRead('+a.phase+',\''+escFile+'\')">'+a.title+'</a></div>'+
+        '<div class="smart-daily-meta">'+
+          '<span class="phase-tag" style="background:'+color+'">P'+a.phase+'</span>'+
+          '<span>'+a.chapterName+'</span>'+
+          '<span>'+formatWords(a.words)+'\u5B57</span>'+
+        '</div>'+
+        (newRead.reason ? '<div class="smart-daily-reason">'+newRead.reason+'</div>' : '')+
+        '<div class="smart-daily-actions">'+
+          '<button class="smart-daily-btn primary" onclick="startDailyRead('+a.phase+',\''+escFile+'\')">\uD83D\uDCD6 \u5F00\u59CB\u9605\u8BFB</button>'+
+          '<button class="smart-daily-btn skip" onclick="skipSmartDaily(\'newRead\',\''+escEntity+'\')">\u21BB \u6362</button>'+
+        '</div>'+
+      '</div>';
+  }
+
+  if(review){
+    const a = review.article;
+    const url = articleUrl(a.file);
+    const escKey = (a.entity || review.file).replace(/'/g, "\\'");
+    const interval = RECALL_INTERVALS[review.step];
+    const overdueH = Math.floor((Date.now() - review.nextReview) / 3600000);
+    html +=
+      '<div class="smart-daily-card review">'+
+        '<div class="smart-daily-card-top">'+
+          '<span class="smart-daily-icon">\uD83E\uDDE0</span>'+
+          '<span class="smart-daily-label">\u95F4\u9694\u590D\u4E60</span>'+
+        '</div>'+
+        '<div class="smart-daily-title"><a href="'+url+'" target="_blank">'+a.title+'</a></div>'+
+        '<div class="smart-daily-meta">'+
+          '<span class="phase-tag" style="background:'+phaseColor(a.phase)+'">P'+a.phase+'</span>'+
+          '<span>\u7B2C'+(review.step+1)+'\u8F6E \xB7 \u95F4\u9694'+interval+'d</span>'+
+          (overdueH > 0 ? '<span style="color:var(--red)">\u8D85\u671F'+overdueH+'h</span>' : '')+
+        '</div>'+
+        '<div class="smart-daily-actions">'+
+          '<button class="smart-daily-btn review-btn" onclick="event.stopPropagation();handleRecallWithNote(\''+escKey+'\',true)">\u2713 \u8BB0\u4F4F\u4E86</button>'+
+          '<button class="smart-daily-btn skip" onclick="skipSmartDaily(\'review\',\''+escKey+'\')">\u21BB \u6362</button>'+
+        '</div>'+
+      '</div>';
+  }
+
+  if(feynman){
+    const a = feynman.article;
+    const url = articleUrl(a.file);
+    const escKey = a.entity.replace(/'/g, "\\'");
+    html +=
+      '<div class="smart-daily-card feynman">'+
+        '<div class="smart-daily-card-top">'+
+          '<span class="smart-daily-icon">\uD83C\uDF93</span>'+
+          '<span class="smart-daily-label">\u8D39\u66FC\u68C0\u9A8C</span>'+
+        '</div>'+
+        '<div class="smart-daily-title"><a href="'+url+'" target="_blank">'+a.title+'</a></div>'+
+        '<div class="smart-daily-meta">'+
+          '<span>'+feynman.ageDays+'\u5929\u524D\u8BB0\u5F55</span>'+
+          '<span>'+(feynman.note.reviews||1)+'\u6B21\u590D\u4E60</span>'+
+        '</div>'+
+        '<div class="smart-daily-actions">'+
+          '<button class="smart-daily-btn feynman-btn" onclick="event.stopPropagation();openFeynmanModal(\''+escKey+'\',null)">\uD83D\uDCDD \u5199\u7B14\u8BB0</button>'+
+          '<button class="smart-daily-btn skip" onclick="skipSmartDaily(\'feynman\',\''+escKey+'\')">\u21BB \u6362</button>'+
+        '</div>'+
+      '</div>';
+  }
+
+  grid.innerHTML = html;
+}
+
+const SMART_DAILY_KEY = 'wiki-learn-smart-daily-v1';
+
+function getSmartDailyState(){
+  const today = new Date().toISOString().slice(0, 10);
+  const stored = JSON.parse(localStorage.getItem(SMART_DAILY_KEY) || 'null');
+  if(stored && stored.date === today) return stored;
+  return { date: today, newReadSkipped: [], reviewSkipped: [], feynmanSkipped: [] };
+}
+
+function saveSmartDailyState(state){
+  localStorage.setItem(SMART_DAILY_KEY, JSON.stringify(state));
+}
+
+function skipSmartDaily(type, key){
+  const state = getSmartDailyState();
+  const arr = type === 'newRead' ? state.newReadSkipped : type === 'review' ? state.reviewSkipped : state.feynmanSkipped;
+  if(!arr.includes(key)) arr.push(key);
+  saveSmartDailyState(state);
+  renderSmartDaily();
+}
+
+function getSmartDailyNewRead(){
+  if(!DATA) return null;
+  const state = getSmartDailyState();
+  if(typeof getSmartRecommendations === 'function'){
+    const recs = getSmartRecommendations().filter(a => !state.newReadSkipped.includes(a.entity));
+    if(recs.length > 0) return { article: recs[0], reason: getRecommendReason(recs[0]) };
+  }
+  const unread = DATA.articles.filter(a => !getLevel(a.entity) && !state.newReadSkipped.includes(a.entity));
+  if(unread.length === 0) return null;
+  unread.sort((a, b) => a.phase - b.phase || a.level - b.level);
+  return { article: unread[0], reason: '' };
+}
+
+function getSmartDailyReview(){
+  if(typeof getDueRecallArticles !== 'function') return null;
+  const state = getSmartDailyState();
+  const due = getDueRecallArticles().filter(d => !state.reviewSkipped.includes(d.file) && !state.reviewSkipped.includes(d.article?.entity));
+  return due[0] || null;
+}
+
+function getSmartDailyFeynman(){
+  const state = getSmartDailyState();
+  const now = Date.now();
+  const candidates = [];
+  for(const [key, note] of Object.entries(feynmanData)){
+    if(state.feynmanSkipped.includes(key)) continue;
+    const article = findArticle(key);
+    if(!article) continue;
+    const lv = getLevel(article.entity);
+    if(lv === 'mastered') continue;
+    const ageDays = Math.floor((now - (note.updatedAt || 0)) / 86400000);
+    if(ageDays >= 3 || (note.reviews || 0) < 3){
+      candidates.push({ key, article, note, ageDays });
+    }
+  }
+  candidates.sort((a, b) => b.ageDays - a.ageDays);
+  return candidates[0] || null;
 }
 
 
@@ -903,6 +1654,7 @@ function openFeynmanModal(key, event){
     upgradeHint.classList.remove('show');
   }
   
+  renderFeynmanRelated(key);
   document.getElementById('feynman-modal').classList.add('open');
 }
 
@@ -994,6 +1746,357 @@ function feynmanSummary(file){
   return parts.join(' · ');
 }
 
+// ── Output Tracking (#7) ──────────────────────────────────────
+const OUTPUT_KEY = 'wiki-learn-output-v1';
+let outputData = JSON.parse(localStorage.getItem(OUTPUT_KEY) || '[]');
+let outputOpen = false;
+
+function saveOutput(){ localStorage.setItem(OUTPUT_KEY, JSON.stringify(outputData)); scheduleSync(); }
+
+function toggleOutput(){
+  outputOpen = !outputOpen;
+  document.getElementById('output-panels').classList.toggle('open', outputOpen);
+  document.getElementById('output-toggle-icon').textContent = outputOpen ? '\u25BC \u6536\u8D77' : '\u25B6 \u5C55\u5F00';
+  if(outputOpen) renderOutputPanel();
+}
+
+function getOutputStats(){
+  const now = Date.now();
+  const weekAgo = now - 7 * 86400000;
+  const manualThisWeek = outputData.filter(o => o.timestamp >= weekAgo);
+  const feynmanCount = Object.keys(feynmanData).length;
+  const recallCompleted = Object.values(recallData).reduce((s, r) => s + (r.totalReviews || 0), 0);
+  const masteredCount = Object.values(done).filter(d => (typeof d === 'object' ? d.level : 'read') === 'mastered').length;
+  return { manualWeek: manualThisWeek.length, feynman: feynmanCount, recall: recallCompleted, mastered: masteredCount, total: outputData.length };
+}
+
+function renderOutputPanel(){
+  const stats = getOutputStats();
+  const statsEl = document.getElementById('output-stats');
+  let sh = '<div class="output-stat-card"><div class="num" style="color:var(--accent)">'+stats.feynman+'</div><div class="lbl">\u8D39\u66FC\u7B14\u8BB0</div></div>';
+  sh += '<div class="output-stat-card"><div class="num" style="color:var(--pink)">'+stats.recall+'</div><div class="lbl">\u590D\u4E60\u6B21\u6570</div></div>';
+  sh += '<div class="output-stat-card"><div class="num" style="color:var(--green)">'+stats.mastered+'</div><div class="lbl">\u638C\u63E1\u7BC7\u6570</div></div>';
+  sh += '<div class="output-stat-card"><div class="num" style="color:var(--orange)">'+stats.manualWeek+'</div><div class="lbl">\u672C\u5468\u624B\u52A8</div></div>';
+  // Pace box
+  const pace = getPaceInfo();
+  if(pace && pace.remaining > 0){
+    sh += '<div class="output-pace-box">\u8DDD'+countdownCfg.label+'\u8FD8\u6709 <b>'+pace.daysLeft+'</b> \u5929 \xB7 \u9700\u4EA7\u51FA <b class="pace-warn">'+Math.ceil(pace.remaining * 0.3)+'</b> \u4EFD\u8F93\u51FA\u7269\uFF08\u630930%\u638C\u63E1\u7387\uFF09</div>';
+  } else {
+    sh += '<div class="output-pace-box">\u2705 \u5168\u90E8\u5B8C\u6210</div>';
+  }
+  statsEl.innerHTML = sh;
+  document.getElementById('output-badge').textContent = (stats.manualWeek + stats.feynman) + ' \u672C\u5468';
+
+  // Build merged log
+  const entries = [];
+  for(const [key, note] of Object.entries(feynmanData)){
+    const art = findArticle(key);
+    entries.push({ type: 'feynman', typeLabel: '\u8D39\u66FC', title: art ? art.title : key, timestamp: note.updatedAt || 0 });
+  }
+  for(const [key, r] of Object.entries(recallData)){
+    if(r.lastReview){
+      const art = findArticle(key);
+      entries.push({ type: 'recall', typeLabel: '\u590D\u4E60', title: art ? art.title : key, timestamp: r.lastReview });
+    }
+  }
+  for(const [key, d] of Object.entries(done)){
+    const lv = typeof d === 'object' ? d.level : 'read';
+    if(lv === 'mastered' && d.updatedAt){
+      const art = findArticle(key);
+      entries.push({ type: 'mastered', typeLabel: '\u638C\u63E1', title: art ? art.title : key, timestamp: d.updatedAt });
+    }
+  }
+  for(const o of outputData){
+    entries.push({ type: o.type || 'project', typeLabel: o.typeLabel || '\u9879\u76EE', title: o.title, timestamp: o.timestamp });
+  }
+  entries.sort((a, b) => b.timestamp - a.timestamp);
+  const recent = entries.slice(0, 50);
+
+  const logEl = document.getElementById('output-log');
+  if(recent.length === 0){
+    logEl.innerHTML = '<div class="output-log-empty">\u6682\u65E0\u8F93\u51FA\u7269 \xB7 \u8D39\u66FC\u7B14\u8BB0\u3001\u590D\u4E60\u3001\u638C\u63E1\u4F1A\u81EA\u52A8\u8BB0\u5F55</div>';
+    return;
+  }
+  let html = '';
+  for(const e of recent){
+    const d = new Date(e.timestamp);
+    const ds = (d.getMonth()+1)+'/'+d.getDate();
+    html += '<div class="output-log-item"><span class="log-type '+e.type+'">'+e.typeLabel+'</span><span class="log-title">'+e.title+'</span><span class="log-date">'+ds+'</span></div>';
+  }
+  logEl.innerHTML = html;
+}
+
+function addManualOutput(){
+  const input = document.getElementById('output-add-input');
+  const title = input.value.trim();
+  if(!title) return;
+  outputData.push({ title, type: 'project', typeLabel: '\u9879\u76EE', timestamp: Date.now() });
+  saveOutput();
+  input.value = '';
+  renderOutputPanel();
+}
+
+// ── Challenge Mode (#8) ───────────────────────────────────────
+const CHALLENGE_KEY = 'wiki-learn-challenge-v1';
+let challengeData = JSON.parse(localStorage.getItem(CHALLENGE_KEY) || '{}');
+let currentChallengeEntity = null;
+let currentChallengeQuestions = [];
+
+function saveChallenge(){ localStorage.setItem(CHALLENGE_KEY, JSON.stringify(challengeData)); }
+
+function openChallengeModal(entity){
+  currentChallengeEntity = entity;
+  const article = findArticle(entity);
+  if(!article) return;
+  document.getElementById('challenge-article-title').textContent = article.title;
+  const questions = generateChallengeQuestions(article);
+  currentChallengeQuestions = questions;
+  const stats = challengeData[entity] || { total: 0, correct: 0, partial: 0, wrong: 0 };
+  document.getElementById('challenge-stats').innerHTML =
+    '<span>\uD83D\uDCCA \u603B\u6311\u6218: <b>'+stats.total+'</b></span>'+
+    '<span>\u2705 \u6B63\u786E: <b style="color:var(--green)">'+stats.correct+'</b></span>'+
+    '<span>\u26A0\uFE0F \u90E8\u5206: <b style="color:var(--yellow)">'+stats.partial+'</b></span>'+
+    '<span>\u274C \u9519\u8BEF: <b style="color:var(--red)">'+stats.wrong+'</b></span>';
+  let html = '';
+  questions.forEach((q, i) => {
+    html += '<div class="challenge-q">'+
+      '<div class="challenge-q-label">\u95EE\u9898 '+(i+1)+'</div>'+
+      '<div class="challenge-q-text">'+q.text+'</div>'+
+      '<textarea class="challenge-q-textarea" id="challenge-answer-'+i+'" placeholder="\u5199\u4E0B\u4F60\u7684\u7B54\u6848..."></textarea>'+
+      '<div class="challenge-q-score">'+
+        '<span style="font-size:.72rem;color:var(--text3);margin-right:.3rem">\u81EA\u8BC4\uFF1A</span>'+
+        '<button class="challenge-score-btn" data-q="'+i+'" data-score="correct">\u2705 \u6B63\u786E</button>'+
+        '<button class="challenge-score-btn" data-q="'+i+'" data-score="partial">\u26A0\uFE0F \u90E8\u5206</button>'+
+        '<button class="challenge-score-btn" data-q="'+i+'" data-score="wrong">\u274C \u9519\u8BEF</button>'+
+      '</div>'+
+    '</div>';
+  });
+  document.getElementById('challenge-questions').innerHTML = html;
+  document.querySelectorAll('.challenge-score-btn').forEach(btn => {
+    btn.onclick = () => {
+      const q = btn.dataset.q;
+      document.querySelectorAll('.challenge-score-btn[data-q="'+q+'"]').forEach(b => b.classList.remove('active','correct','partial','wrong'));
+      btn.classList.add('active', btn.dataset.score);
+    };
+  });
+  // Add AI lookup buttons to each challenge question
+  document.querySelectorAll('.challenge-q').forEach((qEl, i) => {
+    const scoreDiv = qEl.querySelector('.challenge-q-score');
+    if(scoreDiv){
+      const aiBtn = document.createElement('button');
+      aiBtn.className = 'challenge-score-btn';
+      aiBtn.style.cssText = 'margin-left:auto;border-color:var(--cyan);color:var(--cyan)';
+      aiBtn.textContent = '\uD83D\uDD0D \u67E5\u9605';
+      aiBtn.onclick = () => aiLookupChallenge(i);
+      scoreDiv.appendChild(aiBtn);
+      const resultDiv = document.createElement('div');
+      resultDiv.id = 'challenge-ai-result-' + i;
+      resultDiv.style.cssText = 'margin-top:.4rem';
+      qEl.appendChild(resultDiv);
+    }
+  });
+
+  document.getElementById('challenge-modal').classList.add('open');
+}
+
+function closeChallengeModal(){
+  document.getElementById('challenge-modal').classList.remove('open');
+  currentChallengeEntity = null;
+}
+
+function generateChallengeQuestions(article){
+  const qs = [];
+  const tags = article.tags || [];
+  const title = article.title;
+  qs.push({ text: '\u7528 3 \u53E5\u8BDD\u5411\u4E00\u4E2A\u5B8C\u5168\u4E0D\u61C2\u8FD9\u4E2A\u9886\u57DF\u7684\u4EBA\u89E3\u91CA\u300C'+title+'\u300D\u7684\u6838\u5FC3\u601D\u60F3\u3002' });
+  if(tags.length > 0){
+    qs.push({ text: '\u7ED9\u51FA\u4E00\u4E2A\u5B9E\u9645\u573A\u666F\uFF0C\u8BF4\u660E\u300C'+tags[0]+'\u300D\u5982\u4F55\u53D1\u6325\u4F5C\u7528\u3002\u5982\u679C\u89C4\u6A21\u6269\u5927 10 \u500D\uFF0C\u65B9\u6848\u9700\u8981\u600E\u4E48\u8C03\u6574\uFF1F' });
+  } else {
+    qs.push({ text: '\u63CF\u8FF0\u4E00\u4E2A\u300C'+title+'\u300D\u5728\u5B9E\u9645\u5DE5\u7A0B\u4E2D\u53EF\u80FD\u5931\u8D25\u6216\u9000\u5316\u7684\u573A\u666F\uFF0C\u5E76\u89E3\u91CA\u539F\u56E0\u3002' });
+  }
+  qs.push({ text: '\u5BF9\u6BD4\u300C'+title+'\u300D\u548C\u4F60\u5B66\u8FC7\u7684\u53E6\u4E00\u4E2A\u76F8\u5173\u6982\u5FF5\uFF0C\u5217\u51FA\u81F3\u5C11 2 \u4E2A\u76F8\u540C\u70B9\u548C 2 \u4E2A\u4E0D\u540C\u70B9\u3002' });
+  return qs;
+}
+
+async function aiLookupChallenge(qIdx){
+  const q = currentChallengeQuestions[qIdx];
+  if(!q) return;
+  const article = findArticle(currentChallengeEntity);
+  if(!article) return;
+  const resultEl = document.getElementById('challenge-ai-result-' + qIdx);
+  if(resultEl) resultEl.innerHTML = '<div style="font-size:.72rem;color:var(--text3)">\u67E5\u8BE2\u4E2D...</div>';
+  try {
+    const resp = await fetch('/rag-query?q=' + encodeURIComponent(q.text), { signal: AbortSignal.timeout(5000) });
+    if(resp.ok){
+      const data = await resp.json();
+      if(data.results && data.results.length > 0){
+        let html = '<div style="padding:.4rem .6rem;background:var(--bg);border-radius:6px;font-size:.72rem;border:1px solid var(--border)">';
+        html += '<div style="color:var(--accent2);margin-bottom:.2rem">\uD83D\uDCD6 RAG \u53C2\u8003\uFF1A</div>';
+        for(const r of data.results.slice(0, 3)){
+          const url = r.url || r.location || '#';
+          html += '<div style="margin-bottom:.15rem"><a href="'+url+'" target="_blank" style="color:var(--text2);text-decoration:none">'+(r.title||r.location||'\u6587\u7AE0')+'</a></div>';
+        }
+        html += '</div>';
+        if(resultEl) resultEl.innerHTML = html;
+        return;
+      }
+    }
+  } catch(e) { /* RAG not available, fallback below */ }
+  if(resultEl) resultEl.innerHTML = '<div style="padding:.4rem .6rem;background:var(--bg);border-radius:6px;font-size:.72rem;border:1px solid var(--border)"><a href="'+articleUrl(article.file)+'#q='+encodeURIComponent(q.text)+'" target="_blank" style="color:var(--cyan);text-decoration:none">\uD83D\uDD17 \u5728\u6587\u7AE0\u9875\u67E5\u9605\u76F8\u5173\u5185\u5BB9</a></div>';
+}
+
+
+function submitChallenge(){
+  if(!currentChallengeEntity) return;
+  let correct = 0, partial = 0, wrong = 0;
+  for(let i = 0; i < currentChallengeQuestions.length; i++){
+    const active = document.querySelector('.challenge-score-btn.active[data-q="'+i+'"]');
+    const score = active ? active.dataset.score : 'wrong';
+    if(score === 'correct') correct++;
+    else if(score === 'partial') partial++;
+    else wrong++;
+  }
+  if(!challengeData[currentChallengeEntity]){
+    challengeData[currentChallengeEntity] = { total: 0, correct: 0, partial: 0, wrong: 0, history: [] };
+  }
+  const cd = challengeData[currentChallengeEntity];
+  cd.total++;
+  cd.correct += correct;
+  cd.partial += partial;
+  cd.wrong += wrong;
+  cd.history.push({ date: Date.now(), scores: [correct, partial, wrong] });
+  saveChallenge();
+  closeChallengeModal();
+  render();
+}
+
+// ── Feynman Cross-article (#5) ────────────────────────────────
+function renderFeynmanRelated(entity){
+  const article = findArticle(entity);
+  if(!article) return;
+  const listEl = document.getElementById('feynman-related-list');
+  const sectionEl = document.getElementById('feynman-related-section');
+  const collisionSectionEl = document.getElementById('feynman-collision-section');
+  if(!listEl) return;
+  const myTags = article.tags || [];
+  const related = [];
+  for(const a of DATA.articles){
+    if(a.entity === entity) continue;
+    if(!getLevel(a.entity)) continue;
+    const shared = (a.tags || []).filter(t => myTags.includes(t));
+    if(shared.length > 0) related.push({ article: a, sharedTags: shared });
+  }
+  related.sort((a, b) => b.sharedTags.length - a.sharedTags.length);
+  const top = related.slice(0, 5);
+  let html = '';
+  if(top.length === 0){
+    html = '<div class="feynman-related-empty">\u6682\u65E0\u76F8\u5173\u5DF2\u8BFB\u6587\u7AE0</div>';
+  } else {
+    for(const r of top){
+      const escE1 = entity.replace(/'/g, "\\'");
+      const escE2 = r.article.entity.replace(/'/g, "\\'");
+      html += '<div class="feynman-related-item" onclick="openCollisionView(\''+escE1+'\',\''+escE2+'\')"><span class="rel-icon">\uD83D\uDD17</span><span class="rel-title">'+r.article.title+'</span><span class="rel-shared">'+r.sharedTags.length+' \u5171\u4EAB</span></div>';
+    }
+  }
+  // Cross-article question linking: find notes that address this article's question
+  const myNote = getFeynmanNote(entity) || {};
+  if(myNote.question && myNote.question.trim().length >= 2){
+    const qRaw = myNote.question.split(/[\s,，。、；;？?！!（）()]+/).filter(w => w.length >= 2);
+    const qKeywords = [];
+    for(const part of qRaw){
+      if(/[\u4e00-\u9fff]/.test(part)){
+        for(let j = 0; j <= part.length - 2; j++){
+          const sub = part.substring(j, j + 2);
+          if(/[\u4e00-\u9fff]/.test(sub) && !qKeywords.includes(sub)) qKeywords.push(sub);
+        }
+      } else { qKeywords.push(part); }
+    }
+    const linked = [];
+    for(const [key, note] of Object.entries(feynmanData)){
+      if(key === entity) continue;
+      const article2 = findArticle(key);
+      if(!article2) continue;
+      const searchText = [note.got, note.insight, note.next, note.question].filter(Boolean).join(' ');
+      const matched = qKeywords.filter(kw => searchText.includes(kw));
+      if(matched.length >= 2) linked.push({ article: article2, matchedKeywords: matched });
+    }
+    linked.sort((a, b) => b.matchedKeywords.length - a.matchedKeywords.length);
+    if(linked.length > 0){
+      html += '<div style="margin-top:.4rem;padding-top:.4rem;border-top:1px solid var(--border)"><div style="font-size:.72rem;color:var(--accent);margin-bottom:.2rem">\u2753 \u95EE\u9898\u4E32\u8054</div>';
+      for(const l of linked.slice(0, 3)){
+        const escE1 = entity.replace(/'/g, "\\'");
+        const escE2 = l.article.entity.replace(/'/g, "\\'");
+        html += '<div class="feynman-related-item" onclick="openCollisionView(\''+escE1+'\',\''+escE2+'\')"><span class="rel-icon">\u2753</span><span class="rel-title">'+l.article.title+'</span><span class="rel-shared">'+l.matchedKeywords.length+' \u5173\u8054</span></div>';
+      }
+      html += '</div>';
+    }
+  }
+  listEl.innerHTML = html;
+  sectionEl.style.display = 'block';
+  collisionSectionEl.style.display = 'none';
+}
+
+function openCollisionView(entity1, entity2){
+  const a1 = findArticle(entity1);
+  const a2 = findArticle(entity2);
+  if(!a1 || !a2) return;
+  const n1 = getFeynmanNote(entity1) || {};
+  const n2 = getFeynmanNote(entity2) || {};
+  const section = document.getElementById('feynman-collision-section');
+  const view = document.getElementById('collision-view');
+  const titleEl = document.getElementById('collision-title');
+  const colsEl = document.getElementById('collision-cols');
+  const sharedTags = (a1.tags || []).filter(t => (a2.tags || []).includes(t));
+  titleEl.textContent = '\u300C'+a1.title+'\u300D vs \u300C'+a2.title+'\u300D' + (sharedTags.length > 0 ? ' \xB7 \u5171\u4EAB: '+sharedTags.join(', ') : '');
+  function colHtml(title, note){
+    let h = '<h4>'+title+'</h4>';
+    if(note.got) h += '<div class="col-note"><b>\u6536\u83B7:</b> '+String(note.got).slice(0, 200)+'</div>';
+    if(note.insight) h += '<div class="col-note"><b>\u6D1E\u5BDF:</b> '+String(note.insight).slice(0, 200)+'</div>';
+    if(note.missed) h += '<div class="col-note"><b>\u7F3A\u5931:</b> '+String(note.missed).slice(0, 150)+'</div>';
+    if(!note.got && !note.insight && !note.missed) h += '<div class="col-empty">\u65E0\u7B14\u8BB0</div>';
+    return h;
+  }
+  colsEl.innerHTML = '<div class="collision-col">'+colHtml(a1.title, n1)+'</div><div class="collision-col">'+colHtml(a2.title, n2)+'</div>';
+  section.style.display = 'block';
+  view.classList.add('open');
+}
+
+// ── Reading Speed Tracking (#6) ───────────────────────────────
+const READ_TIME_KEY = 'wiki-learn-readtime-v1';
+let readTimeData = JSON.parse(localStorage.getItem(READ_TIME_KEY) || '{"sessions":[],"wpm":500}');
+
+function saveReadTime(){ localStorage.setItem(READ_TIME_KEY, JSON.stringify(readTimeData)); }
+
+function recordReadStart(file){
+  readTimeData.currentSession = { file, startTime: Date.now() };
+  saveReadTime();
+}
+
+function recordReadEnd(file){
+  if(!readTimeData.currentSession || readTimeData.currentSession.file !== file) return;
+  const article = findArticle(file);
+  if(!article){ delete readTimeData.currentSession; saveReadTime(); return; }
+  const durationMin = (Date.now() - readTimeData.currentSession.startTime) / 60000;
+  if(durationMin < 0.1){ delete readTimeData.currentSession; saveReadTime(); return; }
+  const wpm = Math.round(article.words / durationMin);
+  if(wpm > 50 && wpm < 2000){
+    readTimeData.sessions.push({ file, durationMin: Math.round(durationMin*10)/10, wpm, date: Date.now() });
+    if(readTimeData.sessions.length > 50) readTimeData.sessions = readTimeData.sessions.slice(-50);
+    const avg = readTimeData.sessions.reduce((s, x) => s + x.wpm, 0) / readTimeData.sessions.length;
+    readTimeData.wpm = Math.round(avg);
+  }
+  delete readTimeData.currentSession;
+  saveReadTime();
+}
+
+function getPersonalWPM(){ return readTimeData.wpm || 500; }
+
+function getEstReadTime(words){
+  const wpm = getPersonalWPM();
+  return Math.max(1, Math.ceil(words / wpm));
+}
+
+
 // ── Init ──────────────────────────────────────────────────────
 async function init(){
   try {
@@ -1012,6 +2115,17 @@ async function init(){
   document.getElementById('header-sub').textContent =
     `${DATA.totalArticles} 篇文章 · ${DATA.phases.length} 个阶段 · 渐进式掌握 Agent 工程`;
 
+  // Load concept data
+  try {
+    const cresp = await fetch('/dashboard/concept-tags.json?v=' + Date.now(), { cache: 'no-store' });
+    CONCEPT_DATA = await cresp.json();
+  } catch(e) {
+    try {
+      const cresp2 = await fetch('./concept-tags.json?v=' + Date.now(), { cache: 'no-store' });
+      CONCEPT_DATA = await cresp2.json();
+    } catch(e2) { console.warn('Concept data not loaded'); }
+  }
+
   // Restore user ID
   if(userId){
     document.getElementById('user-id').value = userId;
@@ -1020,13 +2134,16 @@ async function init(){
     pullFromCloud();
   }
 
+  await loadDeps();
   renderPhaseBar();
   renderChapterFilters();
   renderLevelFilters();
+  renderTagFilters();
   renderCountdown();
   render();
   renderRecallPanel();
-  renderDailyCard();
+  renderSmartDaily();
+  if(depOpen) renderDepRecommendation();
   if(vizOpen) renderActiveViz();
 }
 
@@ -1093,7 +2210,7 @@ function renderPhaseBar(){
       bar.querySelectorAll('.phase-chip').forEach(c=>c.classList.remove('active'));
       chip.classList.add('active');
       currentPhase = parseInt(chip.dataset.phase);
-      render();
+      visibleCount = 30; render();
     });
   });
 }
@@ -1112,7 +2229,7 @@ function renderChapterFilters(){
       div.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
       c.classList.add('active');
       currentChapter = c.dataset.ch;
-      render();
+      visibleCount = 30; render();
     });
   });
 }
@@ -1130,10 +2247,41 @@ function renderLevelFilters(){
     c.addEventListener('click', () => {
       div.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
       c.classList.add('active');
-      currentLevel = c.dataset.lv;
-      render();
+     currentLevel = c.dataset.lv;
+      visibleCount = 30; render();
     });
   });
+}
+
+// ── Tag filters ──────────────────────────────────────────────
+function renderTagFilters(){
+  const wrap = document.getElementById('tag-filters-wrap');
+  const inner = document.getElementById('tag-filters');
+  const expandBtn = document.getElementById('tag-expand-btn');
+  if(!DATA || !DATA.tagStats){
+    wrap.style.display = 'none';
+    return;
+  }
+  wrap.style.display = 'block';
+  const tags = Object.entries(DATA.tagStats).slice(0, 60);
+  let html = '<div class="tag-chip active" data-tag="all">全部标签</div>';
+  for(const [tag, count] of tags){
+    html += '<div class="tag-chip" data-tag="'+tag+'">'+tag+'<span class="tag-count">'+count+'</span></div>';
+  }
+  inner.innerHTML = html;
+  inner.querySelectorAll('.tag-chip').forEach(c => {
+    c.addEventListener('click', () => {
+      inner.querySelectorAll('.tag-chip').forEach(x=>x.classList.remove('active'));
+      c.classList.add('active');
+      currentTag = c.dataset.tag;
+      visibleCount = 30; render();
+    });
+  });
+  expandBtn.onclick = () => {
+    tagFiltersExpanded = !tagFiltersExpanded;
+    wrap.classList.toggle('expanded', tagFiltersExpanded);
+    expandBtn.textContent = tagFiltersExpanded ? '收起' : '展开全部';
+  };
 }
 
 // ── Stats ─────────────────────────────────────────────────────
@@ -1141,16 +2289,17 @@ function renderStats(filtered){
   const allDone = Object.keys(done);
   const doneInFiltered = filtered.filter(a=>getLevel(a.entity)).length;
   const totalWords = filtered.filter(a=>getLevel(a.entity)).reduce((s,a)=>s+a.words,0);
-  const readTime = (totalWords / 500 / 60).toFixed(1);
+  const readTime = (totalWords / getPersonalWPM() / 60).toFixed(1);
 
   const rStats = getRecallStats();
   const row = document.getElementById('stats-row');
   row.innerHTML = `
-    <div class="stat"><div class="num" style="color:var(--green)">${allDone.length}</div><div class="label">已读总数</div></div>
-    <div class="stat"><div class="num" style="color:var(--accent)">${doneInFiltered}/${filtered.length}</div><div class="label">当前视图</div></div>
-    <div class="stat"><div class="num" style="color:var(--cyan)">${readTime}h</div><div class="label">已读时长</div></div>
-    <div class="stat"><div class="num" style="color:var(--pink)">${rStats.due}</div><div class="label">待复习</div></div>
-    <div class="stat"><div class="num" style="color:var(--orange)">${DATA.totalArticles}</div><div class="label">文章总数</div></div>
+    <div class="stat"><div class="stat-icon">📖</div><div class="num" style="color:var(--green)">${allDone.length}</div><div class="label">已读总数</div></div>
+    <div class="stat"><div class="stat-icon">📊</div><div class="num" style="color:var(--accent)">${doneInFiltered}/${filtered.length}</div><div class="label">当前视图</div></div>
+    <div class="stat"><div class="stat-icon">⏱</div><div class="num" style="color:var(--cyan)">${readTime}h</div><div class="label">已读时长</div></div>
+    <div class="stat"><div class="stat-icon">🧠</div><div class="num" style="color:var(--pink)">${rStats.due}</div><div class="label">待复习</div></div>
+    <div class="stat"><div class="stat-icon">📚</div><div class="num" style="color:var(--orange)">${DATA.totalArticles}</div><div class="label">文章总数</div></div>
+    <div class="stat"><div class="stat-icon">⚡</div><div class="num wpm-stat" style="color:var(--cyan)">${getPersonalWPM()}</div><div class="label">字/分钟</div></div>
   `;
 }
 
@@ -1179,7 +2328,8 @@ function render(){
   let filtered = DATA.articles;
   if(currentPhase > 0) filtered = filtered.filter(a=>a.phase===currentPhase);
   if(currentChapter !== 'all') filtered = filtered.filter(a=>a.chapter===currentChapter);
-  if(currentLevel !== 'all') filtered = filtered.filter(a=>a.level===parseInt(currentLevel));
+ if(currentLevel !== 'all') filtered = filtered.filter(a=>a.level===parseInt(currentLevel));
+  if(currentTag !== 'all') filtered = filtered.filter(a=>a.tags && a.tags.includes(currentTag));
   if(searchQuery){
     const q = searchQuery.toLowerCase();
     filtered = filtered.filter(a =>
@@ -1190,7 +2340,8 @@ function render(){
   renderStats(filtered);
   renderProgress();
   renderRecallPanel();
-  renderDailyCard();
+  renderSmartDaily();
+  if(depOpen) renderDepRecommendation();
   if(vizOpen) renderActiveViz();
 
   const content = document.getElementById('content');
@@ -1199,8 +2350,12 @@ function render(){
     return;
   }
 
+  // Pagination: only render first visibleCount articles
+  const visible = filtered.slice(0, visibleCount);
+  const hasMore = filtered.length > visibleCount;
+
   const groups = {};
-  filtered.forEach(a => {
+  visible.forEach(a => {
     const key = a.phase;
     if(!groups[key]) groups[key] = [];
     groups[key].push(a);
@@ -1233,11 +2388,12 @@ function render(){
           <span class="phase-badge" style="background:${color}">P${a.phase}</span>
           <span class="level-badge ${lvClass}">${'⭐'.repeat(a.level)}</span>
         </div>
-        <div class="card-title"><a href="${url}" target="_blank">${a.title || a.file}</a></div>
-        <div class="card-meta">
+       <div class="card-title"><a href="${url}" target="_blank">${a.title || a.file}</a></div>
+        ${a.tags && a.tags.length ? `<div class="card-tags">${a.tags.slice(0,4).map(t=>`<span class="card-tag" onclick="filterByTag('${t.replace(/'/g,"\\'")}')">${t}</span>`).join('')}</div>` : ''}
+       <div class="card-meta">
           <div>
             <span class="card-chapter">${a.chapterName}</span>
-            <span class="card-words" style="margin-left:.5rem">${formatWords(a.words)}字</span>
+            <span class="card-words" style="margin-left:.5rem">${formatWords(a.words)}字</span><span class="read-time-badge">${getEstReadTime(a.words)}min</span>
           </div>
           <div class="card-actions">
             <button class="level-btn ${btnClass}" onclick="handleLevelClick('${a.entity}',event)">${lv ? levelLabel(lv) : '○ 未读'}</button>
@@ -1248,6 +2404,8 @@ function render(){
               const icon = fn ? (hasThreads ? '📝💬' : '📝✓') : '📝';
               return `<span class="feynman-badge" onclick="openFeynmanModal('${entityEsc}',event)">${icon}</span>`;
             })() : ''}
+            ${lv ? (() => { const ce = a.entity.replace(/'/g, "\\'"); const cd = challengeData[a.entity]; return `<span class="feynman-badge" style="background:rgba(249,115,22,.12);color:var(--orange)" onclick="openChallengeModal('${ce}')">🔥${cd ? cd.total : ''}</span>`; })() : ''}
+            ${renderPrereqIndicator(a.entity)}
           </div>
 
         </div>
@@ -1257,7 +2415,20 @@ function render(){
     html += '</div>';
   });
 
+  if(hasMore){
+    html += `<div class="load-more-wrap">
+      <div class="result-count">显示 ${visible.length} / ${filtered.length} 篇</div>
+      <button class="load-more-btn" onclick="loadMore()">加载更多 (${filtered.length - visibleCount} 篇)</button>
+    </div>`;
+  } else if(filtered.length > 30){
+    html += `<div class="load-more-wrap"><div class="result-count">全部 ${filtered.length} 篇已加载</div></div>`;
+  }
   content.innerHTML = html;
+}
+
+function loadMore(){
+  visibleCount += 30;
+  render();
 }
 
 document.getElementById('recall-header').addEventListener('click', () => {
@@ -1268,7 +2439,7 @@ document.getElementById('recall-header').addEventListener('click', () => {
 // ── Search ────────────────────────────────────────────────────
 document.getElementById('search').addEventListener('input', e => {
   searchQuery = e.target.value;
-  render();
+  visibleCount = 30; render();
 });
 
 // ── Sync UI ───────────────────────────────────────────────────
@@ -1311,6 +2482,8 @@ function renderActiveViz(){
   if(activeTab === 'graph') renderKnowledgeGraph();
   else if(activeTab === 'flow') renderReadingFlow();
   else if(activeTab === 'coverage') renderCoverage();
+ else if(activeTab === 'path') renderDependencyDAG();
+  else if(activeTab === 'concept') renderConceptMap();
 }
 
 function renderKnowledgeGraph(){
@@ -1543,6 +2716,11 @@ function renderCoverage(){
   el.innerHTML = html;
 }
 
+// Dep section event handlers
+document.getElementById('dep-toggle').addEventListener('click', toggleDep);
+document.getElementById('output-toggle').addEventListener('click', toggleOutput);
+document.getElementById('heatmap-toggle').addEventListener('click', toggleHeatmap);
+
 // Viz event handlers
 document.getElementById('viz-toggle').addEventListener('click', toggleViz);
 document.querySelectorAll('.viz-tab').forEach(tab => {
@@ -1551,6 +2729,597 @@ document.querySelectorAll('.viz-tab').forEach(tab => {
 
 // ── Start ─────────────────────────────────────────────────────
 init();
+
+
+// ── Dependency Path ───────────────────────────────────────────
+let DEPS = null;
+let depOpen = false;
+
+async function loadDeps(){
+  if(DEPS) return;
+  try {
+    const resp = await fetch('/dashboard/dependencies.json', { cache: 'no-store' });
+    DEPS = await resp.json();
+  } catch(e) {
+    try {
+      const resp2 = await fetch('./dependencies.json', { cache: 'no-store' });
+      DEPS = await resp2.json();
+    } catch(e2) {
+      console.warn('Could not load dependencies.json');
+    }
+  }
+}
+
+function getPrereqs(entity){
+  if(!DEPS) return [];
+  return DEPS.prereqs[entity] || [];
+}
+
+function getUnlocks(entity){
+  if(!DEPS) return [];
+  return DEPS.unlocks[entity] || [];
+}
+
+function arePrereqsMet(entity){
+  const prereqs = getPrereqs(entity);
+  if(prereqs.length === 0) return true;
+  return prereqs.every(p => getLevel(p) !== null);
+}
+
+function getPrereqStatus(entity){
+  const prereqs = getPrereqs(entity);
+  if(prereqs.length === 0) return { total: 0, met: 0, details: [] };
+  const details = prereqs.map(p => {
+    const art = DATA?.articles.find(a => a.entity === p);
+    return { entity: p, title: art?.title || p, met: getLevel(p) !== null };
+  });
+  return { total: prereqs.length, met: details.filter(d => d.met).length, details };
+}
+
+function getSmartRecommendations(){
+  if(!DATA || !DEPS) return [];
+  // Find articles: prereqs met, not yet read, sorted by phase then score
+  const candidates = DATA.articles.filter(a => {
+    const lv = getLevel(a.entity);
+    if(lv) return false; // already read
+    return arePrereqsMet(a.entity);
+  });
+  // Sort: lower phase first, then higher score
+  candidates.sort((a, b) => {
+    if(a.phase !== b.phase) return a.phase - b.phase;
+    return (b.score || 0) - (a.score || 0);
+  });
+  // Also track recently read chapters for diversity
+  const recentChapters = new Set();
+  const recentArts = DATA.articles.filter(a => getLevel(a.entity)).slice(-10);
+  recentArts.forEach(a => recentChapters.add(a.chapter));
+  
+  // Pick top recommendations with chapter diversity
+  const picked = [];
+  const usedChapters = new Set();
+  // First pass: pick highest priority from each chapter
+  for(const a of candidates){
+    if(picked.length >= 5) break;
+    if(!usedChapters.has(a.chapter) || picked.length < 3){
+      picked.push(a);
+      usedChapters.add(a.chapter);
+    }
+  }
+  return picked;
+}
+
+function getRecommendReason(art){
+  const prereqs = getPrereqs(art.entity);
+  const unlocks = getUnlocks(art.entity);
+  const reasons = [];
+  if(prereqs.length === 0) reasons.push('无前置依赖，可直接阅读');
+  else {
+    const metCount = prereqs.filter(p => getLevel(p) !== null).length;
+    if(metCount === prereqs.length) reasons.push(`${metCount} 个前置已全部满足`);
+  }
+  if(unlocks.length > 0){
+    const unlockCount = unlocks.filter(u => getLevel(u) === null).length;
+    if(unlockCount > 0) reasons.push(`完成后解锁 ${unlockCount} 篇后续文章`);
+  }
+  if(art.phase === 1) reasons.push('Phase 1 核心必读');
+  return reasons.join(' · ');
+}
+
+function toggleDep(){
+  depOpen = !depOpen;
+  const panels = document.getElementById('dep-panels');
+  const icon = document.getElementById('dep-toggle-icon');
+  panels.classList.toggle('open', depOpen);
+  icon.textContent = depOpen ? '▼ 收起' : '▶ 展开';
+  if(depOpen) renderDepRecommendation();
+}
+
+function renderDepRecommendation(){
+  if(!DATA) return;
+  const el = document.getElementById('dep-recommendation');
+  const recs = getSmartRecommendations();
+  
+  if(recs.length === 0){
+    el.innerHTML = '<div class="dep-empty">🎉 所有前置已满足的文章都已读过，或者暂无依赖数据</div>';
+    return;
+  }
+  
+  const art = recs[0]; // Top recommendation
+  const prereqStatus = getPrereqStatus(art.entity);
+  const unlockCount = getUnlocks(art.entity).filter(u => getLevel(u) === null).length;
+  const url = articleUrl(art.file);
+  const color = phaseColor(art.phase);
+  const reason = getRecommendReason(art);
+  
+  let html = `<div class="dep-card">
+    <div class="dep-icon">🧭</div>
+    <div class="dep-body">
+      <div class="dep-label">推荐下一篇</div>
+      <div class="dep-title"><a href="${url}" target="_blank">${art.title}</a></div>
+      <div class="dep-meta">
+        <span class="phase-tag" style="background:${color}">P${art.phase}</span>
+        <span>${art.chapterName}</span>
+        <span>${formatWords(art.words)}字</span>
+        ${prereqStatus.total > 0 ? `<span style="color:var(--green)">✓ ${prereqStatus.met}/${prereqStatus.total} 前置已满足</span>` : '<span style="color:var(--green)">✓ 无前置依赖</span>'}
+        ${unlockCount > 0 ? `<span style="color:var(--cyan)">🔓 解锁 ${unlockCount} 篇</span>` : ''}
+      </div>
+      <div class="dep-reason">${reason}</div>
+      <div class="dep-actions">
+        <a class="dep-read-btn" href="${url}" target="_blank">📖 开始阅读</a>
+        <button class="dep-skip-btn" onclick="skipDepRecommendation()">换一篇</button>
+        ${recs.length > 1 ? `<button class="dep-more-btn" onclick="showAllRecommendations()">查看全部 ${recs.length} 篇推荐</button>` : ''}
+      </div>
+    </div>
+  </div>`;
+  
+  el.innerHTML = html;
+}
+
+let skippedDepEntities = new Set();
+
+function skipDepRecommendation(){
+  const recs = getSmartRecommendations();
+  if(recs.length > 0) skippedDepEntities.add(recs[0].entity);
+  renderDepRecommendation();
+}
+
+function showAllRecommendations(){
+  const el = document.getElementById('dep-recommendation');
+  const recs = getSmartRecommendations().filter(a => !skippedDepEntities.has(a.entity));
+  
+  let html = '';
+  recs.slice(0, 8).forEach((art, i) => {
+    const prereqStatus = getPrereqStatus(art.entity);
+    const url = articleUrl(art.file);
+    const color = phaseColor(art.phase);
+    const reason = getRecommendReason(art);
+    
+    html += `<div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.8rem;margin-bottom:.5rem;display:flex;gap:.8rem;align-items:flex-start;${i === 0 ? 'border-color:var(--cyan)' : ''}">
+      <div style="font-size:1.2rem;flex-shrink:0">${i === 0 ? '🧭' : '📌'}</div>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:.88rem;font-weight:600;line-height:1.3"><a href="${url}" target="_blank" style="color:inherit;text-decoration:none">${art.title}</a></div>
+        <div style="font-size:.72rem;color:var(--text3);margin-top:.2rem;display:flex;gap:.6rem;flex-wrap:wrap;align-items:center">
+          <span style="background:${color};padding:.1rem .4rem;border-radius:4px;color:#fff;font-size:.68rem;font-weight:600">P${art.phase}</span>
+          <span>${art.chapterName}</span>
+          ${prereqStatus.total > 0 ? `<span style="color:var(--green)">✓${prereqStatus.met}/${prereqStatus.total}</span>` : '<span style="color:var(--green)">✓无前置</span>'}
+        </div>
+        <div style="font-size:.72rem;color:var(--text2);margin-top:.2rem">${reason}</div>
+      </div>
+      <a href="${url}" target="_blank" style="padding:.3rem .7rem;border-radius:6px;background:var(--surface2);color:var(--text2);font-size:.75rem;text-decoration:none;white-space:nowrap;border:1px solid var(--border)">阅读</a>
+    </div>`;
+  });
+  
+  html += '<button style="margin-top:.4rem;padding:.3rem .7rem;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text3);font-size:.75rem;cursor:pointer" onclick="renderDepRecommendation()">← 返回推荐</button>';
+  el.innerHTML = html;
+}
+
+// ── DAG Visualization ─────────────────────────────────────────
+function renderDependencyDAG(){
+  if(!DATA || !DEPS) return;
+  const el = document.getElementById('dag-container');
+  
+  const W = 900, H = 500, pad = 30;
+  const groups = DEPS.chapterGroups;
+  const chOrder = DEPS.chapterOrder;
+  
+  // Calculate chapter stats
+  const chStats = {};
+  for(const [ch, name] of Object.entries(DATA.chapters)){
+    const arts = DATA.articles.filter(a => a.chapter === ch);
+    if(arts.length === 0) continue;
+    const read = arts.filter(a => getLevel(a.entity)).length;
+    chStats[ch] = { name: name.replace(/^[^\s]+\s/, ''), total: arts.length, read, pct: Math.round(read / arts.length * 100) };
+  }
+  
+  // Layout: groups as columns, chapters within each group stacked
+  const groupX = {};
+  const colW = (W - pad * 2) / groups.length;
+  groups.forEach((g, i) => {
+    groupX[g.id] = pad + i * colW + colW / 2;
+  });
+  
+  // Position chapters within their group
+  const nodes = {};
+  groups.forEach(g => {
+    const chs = g.chapters.filter(c => chStats[c]);
+    const totalH = H - pad * 2;
+    const rowH = Math.min(80, totalH / Math.max(chs.length, 1));
+    const startY = pad + (totalH - chs.length * rowH) / 2 + rowH / 2;
+    
+    chs.forEach((ch, j) => {
+      const s = chStats[ch];
+      if(!s) return;
+      nodes[ch] = {
+        x: groupX[g.id],
+        y: startY + j * rowH,
+        group: g,
+        ...s
+      };
+    });
+  });
+  
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" style="width:100%;max-width:900px;margin:0 auto;display:block" xmlns="http://www.w3.org/2000/svg">';
+  svg += '<rect width="' + W + '" height="' + H + '" fill="#111827" rx="8"/>';
+  
+  // Draw group backgrounds
+  groups.forEach(g => {
+    const x = groupX[g.id] - colW / 2 + 5;
+    svg += '<rect x="' + x + '" y="' + (pad - 10) + '" width="' + (colW - 10) + '" height="' + (H - pad * 2 + 20) + '" rx="8" fill="' + g.color + '08" stroke="' + g.color + '22" stroke-width="1"/>';
+    svg += '<text x="' + groupX[g.id] + '" y="' + (pad - 16) + '" text-anchor="middle" fill="' + g.color + '" font-size="10" font-weight="700">' + g.name + '</text>';
+  });
+  
+  // Draw dependency edges (chapter level)
+  const chDeps = DEPS.chapterDeps;
+  for(const [ch, deps] of Object.entries(chDeps)){
+    if(!nodes[ch]) continue;
+    for(const dep of deps){
+      if(!nodes[dep]) continue;
+      const na = nodes[ch], nb = nodes[dep];
+      // Curved arrow from dep -> ch
+      const x1 = nb.x, y1 = nb.y + 18;
+      const x2 = na.x, y2 = na.y - 18;
+      const cx1 = x1 + (x2 - x1) * 0.3;
+      const cx2 = x1 + (x2 - x1) * 0.7;
+      
+      const depRead = chStats[dep]?.pct || 0;
+      const opacity = depRead > 50 ? 0.6 : 0.2;
+      const color = depRead > 50 ? '#22c55e' : '#334155';
+      
+      svg += '<path d="M' + x1 + ',' + y1 + ' C' + cx1 + ',' + (y1 + 30) + ' ' + cx2 + ',' + (y2 - 30) + ' ' + x2 + ',' + y2 + '" fill="none" stroke="' + color + '" stroke-width="1.5" opacity="' + opacity + '" marker-end="url(#arrow)"/>';
+    }
+  }
+  
+  // Arrow marker
+  svg += '<defs><marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker></defs>';
+  
+  // Draw chapter nodes
+  for(const [ch, node] of Object.entries(nodes)){
+    const color = node.group.color;
+    const r = 22;
+    const pct = node.pct;
+    
+    // Progress arc
+    if(pct > 0){
+      const arcLen = pct / 100 * Math.PI * 2;
+      const largeArc = pct > 50 ? 1 : 0;
+      const x2 = node.x + (r + 4) * Math.sin(arcLen);
+      const y2 = node.y - (r + 4) * Math.cos(arcLen);
+      svg += '<path d="M' + node.x + ',' + (node.y - r - 4) + ' A' + (r + 4) + ',' + (r + 4) + ' 0 ' + largeArc + ' 1 ' + x2 + ',' + y2 + '" fill="none" stroke="' + color + '" stroke-width="3" opacity="0.8"/>';
+    }
+    
+    // Node circle
+    const fillColor = pct > 50 ? color + '44' : color + '18';
+    svg += '<circle cx="' + node.x + '" cy="' + node.y + '" r="' + r + '" fill="' + fillColor + '" stroke="' + color + '" stroke-width="1.5"/>';
+    
+    // Percentage
+    svg += '<text x="' + node.x + '" y="' + (node.y + 4) + '" text-anchor="middle" fill="' + color + '" font-size="11" font-weight="700">' + pct + '%</text>';
+    
+    // Label below
+    svg += '<text x="' + node.x + '" y="' + (node.y + r + 14) + '" text-anchor="middle" fill="#94a3b8" font-size="9">' + node.name + '</text>';
+    svg += '<text x="' + node.x + '" y="' + (node.y + r + 26) + '" text-anchor="middle" fill="#64748b" font-size="8">' + node.read + '/' + node.total + '</text>';
+  }
+  
+  // Legend
+  svg += '<line x1="14" y1="' + (H - 28) + '" x2="26" y2="' + (H - 28) + '" stroke="#22c55e" stroke-width="1.5" opacity="0.6"/>';
+  svg += '<text x="30" y="' + (H - 25) + '" fill="#94a3b8" font-size="9">前置已满足</text>';
+  svg += '<line x1="14" y1="' + (H - 14) + '" x2="26" y2="' + (H - 14) + '" stroke="#334155" stroke-width="1.5" opacity="0.4"/>';
+  svg += '<text x="30" y="' + (H - 11) + '" fill="#94a3b8" font-size="9">前置未满足</text>';
+  
+  svg += '</svg>';
+  el.innerHTML = svg;
+}
+
+// ── Prereq indicator on cards ─────────────────────────────────
+function renderPrereqIndicator(entity){
+  if(!DEPS) return '';
+  const prereqs = getPrereqs(entity);
+  if(prereqs.length === 0) return '';
+  const met = arePrereqsMet(entity);
+  const status = getPrereqStatus(entity);
+  const cls = met ? 'ready' : 'blocked';
+  const icon = met ? '✓' : '⚠';
+  const label = met ? `${status.met}/${status.total}` : `${status.met}/${status.total}`;
+  return `<span class="dep-prereq-indicator ${cls}" data-entity="${entity}" onclick="showPrereqTooltip(event,'${entity.replace(/'/g, "\'")}')">${icon}${label}</span>`;
+}
+
+function showPrereqTooltip(event, entity){
+  event.stopPropagation();
+  // Remove any existing tooltip
+  const old = document.querySelector('.dep-prereq-tooltip');
+  if(old) old.remove();
+  
+  const status = getPrereqStatus(entity);
+  if(status.total === 0) return;
+  
+  const tooltip = document.createElement('div');
+  tooltip.className = 'dep-prereq-tooltip';
+  let html = '<div style="font-weight:600;margin-bottom:.3rem;color:var(--accent2)">前置依赖</div>';
+  status.details.forEach(d => {
+    const icon = d.met ? '<span class="check">✓</span>' : '<span class="cross">✗</span>';
+    const title = d.title.length > 30 ? d.title.slice(0, 30) + '...' : d.title;
+    html += `<div class="prereq-item">${icon} <span style="${d.met ? 'color:var(--text3)' : 'color:var(--text)'}">${title}</span></div>`;
+  });
+  tooltip.innerHTML = html;
+  
+  document.body.appendChild(tooltip);
+  const rect = event.target.getBoundingClientRect();
+  tooltip.style.top = (rect.bottom + 6) + 'px';
+  tooltip.style.left = Math.min(rect.left, window.innerWidth - 320) + 'px';
+  
+  // Auto-remove on next click
+  setTimeout(() => {
+    document.addEventListener('click', function removeTooltip(){
+      tooltip.remove();
+      document.removeEventListener('click', removeTooltip);
+    }, { once: true });
+  }, 100);
+}
+
+
+</script>
+<script>
+// ── Tag filter helper ──────────────────────────────────────
+function filterByTag(tag){
+  currentTag = tag;
+  visibleCount = 30;
+  const inner = document.getElementById('tag-filters');
+  if(inner){
+    let found = false;
+    inner.querySelectorAll('.tag-chip').forEach(c => {
+      if(c.dataset.tag === tag) found = true;
+      c.classList.toggle('active', c.dataset.tag === tag);
+    });
+    // If tag not in visible chips, add a temporary active chip
+    if(!found && tag !== 'all'){
+      const temp = document.createElement('div');
+      temp.className = 'tag-chip active';
+      temp.dataset.tag = tag;
+      temp.textContent = tag;
+      temp.onclick = () => { currentTag = 'all'; renderTagFilters(); render(); };
+      inner.insertBefore(temp, inner.firstChild);
+    }
+  }
+  if(!tagFiltersExpanded){
+    tagFiltersExpanded = true;
+    const wrap = document.getElementById('tag-filters-wrap');
+    const btn = document.getElementById('tag-expand-btn');
+    if(wrap) wrap.classList.add('expanded');
+    if(btn) btn.textContent = '收起';
+  }
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── Concept Map ────────────────────────────────────────────
+function getConceptMastery(conceptName){
+  if(!CONCEPT_DATA || !DATA) return { read: 0, total: 0, pct: 0, color: '#334155' };
+  const concept = CONCEPT_DATA.concepts.find(c => c.name === conceptName);
+  if(!concept) return { read: 0, total: 0, pct: 0, color: '#334155' };
+  let read = 0, total = 0;
+  for(const art of DATA.articles){
+    if(art.tags && art.tags.includes(conceptName)){
+      total++;
+      if(getLevel(art.entity)) read++;
+    }
+  }
+  const pct = total > 0 ? Math.round(read / total * 100) : 0;
+  let color;
+  if(pct === 0) color = '#334155';
+  else if(pct < 33) color = '#f97316';
+  else if(pct < 66) color = '#eab308';
+  else if(pct < 100) color = '#22c55e';
+  else color = '#10b981';
+  return { read, total, pct, color };
+}
+
+function renderConceptMap(){
+  if(!CONCEPT_DATA || !DATA){
+    const el = document.getElementById('concept-map-container');
+    if(el) el.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text3)">概念数据未加载</div>';
+    return;
+  }
+
+  const container = document.getElementById('concept-map-container');
+  const legend = document.getElementById('concept-legend');
+
+  let concepts = CONCEPT_DATA.concepts.filter(c => c.articleCount >= 3);
+  if(conceptSearchQuery){
+    const q = conceptSearchQuery.toLowerCase();
+    concepts = concepts.filter(c => c.name.toLowerCase().includes(q) || c.title.toLowerCase().includes(q) || (c.tags && c.tags.some(t => t.includes(q))));
+  }
+
+  if(conceptSortMode === 'articles'){
+    concepts.sort((a,b) => b.articleCount - a.articleCount);
+  } else if(conceptSortMode === 'mastery'){
+    concepts.sort((a,b) => getConceptMastery(b.name).pct - getConceptMastery(a.name).pct);
+  } else {
+    concepts.sort((a,b) => a.name.localeCompare(b.name));
+  }
+
+  const top = concepts.slice(0, 28);
+  if(top.length === 0){
+    container.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text3)">无匹配概念</div>';
+    return;
+  }
+
+  // Build edges: concepts sharing tags
+  const tagToConcepts = {};
+  for(const c of top){
+    if(c.tags){
+      for(const t of c.tags){
+        if(!tagToConcepts[t]) tagToConcepts[t] = [];
+        tagToConcepts[t].push(c.name);
+      }
+    }
+  }
+ const edgeSet = new Set();
+  const edges = [];
+  const edgeWeight = {};
+  for(const [tag, names] of Object.entries(tagToConcepts)){
+    for(let i = 0; i < names.length; i++){
+      for(let j = i+1; j < names.length; j++){
+        const key = [names[i], names[j]].sort().join('||');
+        edgeWeight[key] = (edgeWeight[key] || 0) + 1;
+      }
+    }
+  }
+  // Keep only top connections (max 80 edges, weight >= 2)
+  const sortedEdges = Object.entries(edgeWeight)
+    .map(([key, w]) => { const [a, b] = key.split('||'); return { a, b, w }; })
+    .sort((x, y) => y.w - x.w)
+    .slice(0, 80);
+  sortedEdges.forEach(e => { if(e.w >= 1) edges.push(e); });
+
+  const W = 900, H = 540;
+  const cx = W/2, cy = H/2;
+  const nodes = {};
+  top.forEach((c, i) => {
+    // Sunflower (phyllotaxis) layout for even spacing
+    const goldenAngle = 2.39996; // ~137.5 degrees
+    const angle = i * goldenAngle;
+    const maxR = Math.min(W, H) * 0.46;
+    const r = maxR * Math.sqrt((top.length - i - 0.5) / top.length);
+    const mastery = getConceptMastery(c.name);
+    nodes[c.name] = {
+      x: cx + r * Math.cos(angle),
+      y: cy + r * Math.sin(angle),
+      data: c,
+      mastery,
+      r: Math.max(10, Math.min(30, 8 + c.articleCount * 0.7))
+    };
+  });
+
+ let svg = '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-width:900px;margin:0 auto;display:block" xmlns="http://www.w3.org/2000/svg">';
+  svg += '<rect width="'+W+'" height="'+H+'" fill="#111827" rx="8"/>';
+
+  for(const e of edges){
+    const na = nodes[e.a], nb = nodes[e.b];
+    if(!na || !nb) continue;
+    svg += '<line class="concept-edge" x1="'+na.x.toFixed(1)+'" y1="'+na.y.toFixed(1)+'" x2="'+nb.x.toFixed(1)+'" y2="'+nb.y.toFixed(1)+'"/>';
+  }
+
+  let __ni = 0; for(const [name, n] of Object.entries(nodes)){
+   const escName = name.replace(/'/g, "\\'");
+   const label = n.data.title.length > 12 ? n.data.title.slice(0,10)+'..' : n.data.title;
+    const showLabel = n.data.articleCount >= 14;
+   svg += '<g class="concept-node" data-name="'+escName+'" onclick="showConceptDetail(\''+escName+'\')">';
+    svg += '<title>'+n.data.title+' ('+n.data.articleCount+' 篇 · '+n.mastery.pct+'%)</title>';
+    svg += '<circle class="concept-node-circle" cx="'+n.x.toFixed(1)+'" cy="'+n.y.toFixed(1)+'" r="'+n.r.toFixed(1)+'" fill="'+n.mastery.color+'" opacity="0.8" stroke="#1e293b" stroke-width="1.5"/>';
+    if(n.mastery.pct > 0){
+      const ringR = n.r + 3;
+      const circ = 2 * Math.PI * ringR;
+      const dash = circ * n.mastery.pct / 100;
+      svg += '<circle cx="'+n.x.toFixed(1)+'" cy="'+n.y.toFixed(1)+'" r="'+ringR.toFixed(1)+'" fill="none" stroke="'+n.mastery.color+'" stroke-width="2" stroke-dasharray="'+dash.toFixed(1)+' '+(circ-dash).toFixed(1)+'" stroke-dashoffset="'+(circ*0.25).toFixed(1)+'" opacity="0.6"/>';
+    }
+    if(showLabel){
+      const ly = __ni % 2 === 0 ? n.y + n.r + 13 : n.y - n.r - 5;
+      svg += '<text class="concept-node-label" x="'+n.x.toFixed(1)+'" y="'+ly.toFixed(1)+'">'+label+'</text>';
+    }
+    if(n.data.articleCount > 5){
+      svg += '<text x="'+n.x.toFixed(1)+'" y="'+(n.y + 3).toFixed(1)+'" text-anchor="middle" fill="#fff" font-size="9" font-weight="700" pointer-events="none">'+n.data.articleCount+'</text>';
+    }
+    svg += '</g>';
+    __ni++;
+  }
+
+  svg += '</svg>';
+
+  const detail = document.getElementById('concept-detail');
+  const detailHtml = detail ? detail.innerHTML : '';
+  const detailOpen = detail ? detail.classList.contains('open') : false;
+  container.innerHTML = svg + detail.outerHTML;
+  const newDetail = document.getElementById('concept-detail');
+  if(newDetail){
+    newDetail.innerHTML = detailHtml;
+    newDetail.classList.toggle('open', detailOpen);
+  }
+
+  legend.innerHTML = ''+
+    '<div class="concept-legend-item"><div class="concept-legend-dot" style="background:#334155"></div>未读</div>'+
+    '<div class="concept-legend-item"><div class="concept-legend-dot" style="background:#f97316"></div>&lt;33%</div>'+
+    '<div class="concept-legend-item"><div class="concept-legend-dot" style="background:#eab308"></div>33-66%</div>'+
+    '<div class="concept-legend-item"><div class="concept-legend-dot" style="background:#22c55e"></div>66-99%</div>'+
+    '<div class="concept-legend-item"><div class="concept-legend-dot" style="background:#10b981"></div>100%</div>'+
+    '<div class="concept-legend-item" style="margin-left:auto">节点大小=文章数 · 外环=掌握度 · 共 '+top.length+' 个概念 · '+edges.length+' 条关联</div>';
+
+  const searchEl = document.getElementById('concept-search');
+  const sortEl = document.getElementById('concept-sort-select');
+  if(searchEl){
+    searchEl.value = conceptSearchQuery;
+    searchEl.oninput = () => { conceptSearchQuery = searchEl.value.trim(); renderConceptMap(); };
+  }
+  if(sortEl){
+    sortEl.value = conceptSortMode;
+    sortEl.onchange = () => { conceptSortMode = sortEl.value; renderConceptMap(); };
+  }
+}
+
+function showConceptDetail(name){
+  if(!CONCEPT_DATA || !DATA) return;
+  const concept = CONCEPT_DATA.concepts.find(c => c.name === name);
+  if(!concept) return;
+
+  const detail = document.getElementById('concept-detail');
+  const mastery = getConceptMastery(name);
+
+  const articles = DATA.articles.filter(a => a.tags && a.tags.includes(name));
+  articles.sort((a,b) => b.score - a.score);
+
+  let html = '<button class="concept-detail-close" onclick="closeConceptDetail()">×</button>';
+  html += '<div class="concept-detail-title">'+concept.title+'</div>';
+  html += '<div class="concept-detail-meta">'+articles.length+' 篇文章 · 已读 '+mastery.read+' ('+mastery.pct+'%)</div>';
+  if(concept.tags && concept.tags.length){
+    html += '<div class="concept-detail-tags">';
+    for(const t of concept.tags.slice(0, 8)){
+      html += '<span class="concept-detail-tag">'+t+'</span>';
+    }
+    html += '</div>';
+  }
+  html += '<div class="concept-detail-articles">';
+  for(const a of articles.slice(0, 20)){
+    const lv = getLevel(a.entity);
+    const lvIcon = lv ? '✓' : '○';
+    const url = articleUrl(a.file);
+    html += '<a class="concept-detail-article" href="'+url+'" target="_blank">'+lvIcon+' '+a.title+'</a>';
+  }
+  if(articles.length > 20){
+    html += '<div style="font-size:.72rem;color:var(--text3);padding:.3rem;text-align:center">还有 '+(articles.length-20)+' 篇...</div>';
+  }
+  html += '</div>';
+  html += '<button class="tag-chip active" style="margin-top:.5rem;width:100%;text-align:center" onclick="filterByConcept(\''+name.replace(/'/g,"\\'")+'\')">📌 按此概念筛选</button>';
+
+  detail.innerHTML = html;
+  detail.classList.add('open');
+}
+
+function closeConceptDetail(){
+  const detail = document.getElementById('concept-detail');
+  if(detail) detail.classList.remove('open');
+}
+
+function filterByConcept(name){
+  filterByTag(name);
+}
 </script>
 
 <div class="feynman-modal" id="feynman-modal">
@@ -1600,9 +3369,36 @@ init();
         <button class="thread-add-btn" onclick="addThread()">+ 添加</button>
       </div>
     </div>
+    <div class="feynman-related" id="feynman-related-section">
+      <div class="feynman-related-label">🔗 相关已读文章（自动推荐）</div>
+      <div class="feynman-related-list" id="feynman-related-list"></div>
+    </div>
+    <div class="feynman-related" id="feynman-collision-section" style="display:none">
+      <div class="feynman-related-label">⚡ 概念碰撞 · 对比视角</div>
+      <div class="collision-view" id="collision-view">
+        <div class="collision-title" id="collision-title"></div>
+        <div class="collision-cols" id="collision-cols"></div>
+      </div>
+    </div>
     <div class="feynman-actions">
       <button class="feynman-cancel" onclick="closeFeynmanModal()">取消</button>
       <button class="feynman-save" onclick="saveFeynmanNote()">保存笔记</button>
+    </div>
+  </div>
+</div>
+
+<div class="challenge-modal" id="challenge-modal">
+  <div class="challenge-panel">
+    <div class="challenge-header">
+      <h3>🔥 挑战模式 · 面试题自测</h3>
+      <button class="challenge-close" onclick="closeChallengeModal()">×</button>
+    </div>
+    <div class="challenge-article-title" id="challenge-article-title"></div>
+    <div class="challenge-stats" id="challenge-stats"></div>
+    <div id="challenge-questions"></div>
+    <div class="challenge-actions">
+      <button class="challenge-cancel" onclick="closeChallengeModal()">关闭</button>
+      <button class="challenge-submit" onclick="submitChallenge()">提交评分</button>
     </div>
   </div>
 </div>

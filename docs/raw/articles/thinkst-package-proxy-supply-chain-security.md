@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 466d2531ba3f137ff2a4a7b640bb558c5778424c3d0602643551499c8772ee40
+source_url: "https://blog.thinkst.com/2026/06/introducing-package-proxy-supply-chain-safety-checks-without-client-side-software.html"
 ---
 
 sha256: 73cb7aebde88e8a52769352d15a04d4e98ecb33ad90cfd4c8c50379283ab5d60

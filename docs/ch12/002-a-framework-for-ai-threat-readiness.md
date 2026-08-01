@@ -2,7 +2,7 @@
 
 ## Ch12.002 A Framework for AI Threat Readiness
 
-> 📊 Level ⭐ | 10.4KB | `entities/ai_threat_readiness_framework.md`
+> 📊 Level ⭐ | 10.3KB | `entities/ai_threat_readiness_framework.md`
 
 ## 核心要点
 - AI 正在加速漏洞发现与利用的整个生命周期，前沿模型已能自主发现零日漏洞、生成可用的利用代码、并链接多个弱点形成攻击链
@@ -52,11 +52,11 @@ AI 代码分析需要分层策略，而不是对所有代码一视同仁。首�
 框架最后强调了治理的重要性：建立明确的 ownership、定义预期结果、并用清晰的指标追踪进度。这些指标包括 SLA 遵守率、异常数量、资产和环境覆盖范围、以及针对定义安全结果的进展。
 关键实践：建立定义清晰的委员会、角色和决策流程；定义结果和关键指标以追踪进展并向执行层报告；创建策略、SLA 和异常流程以确保风险被一致地处理。指标体系应该覆盖从暴露发现到修复完成的全流程时间（MTTR），以及各层次的覆盖率。
 ## 相关实体
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/444-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/451-agentrun.html)
 - [Where Openclaw Security Is Heading Openclaw Blog](ch12/032-where-openclaw-security-is-heading-openclaw-blog.html)
-- [Vietnamtodevelopdomesticcloud](../ch01/1119-opd.html)
+- [Vietnamtodevelopdomesticcloud](../ch01/1324-opd.html)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01/038-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
+- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](../ch01/040-cybersecqwen-4b-why-defensive-cyber-needs-small-specialize.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai_threat_readiness_framework.md)
 

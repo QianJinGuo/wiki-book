@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 1a768a6155f8d6a4c8786d96560d1ebe3cdf09a271679c22ceceff014952ac04
+source_url: "https://aws.amazon.com/cn/blogs/china/finops-devops-agent-ai-cost-optimize/"
 ---
 
 sha256: 7c91ea3a28ef0ee0245ab90a1f49faf5223e54f1269050ff7af6bc77db73d86b

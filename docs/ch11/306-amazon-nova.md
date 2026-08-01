@@ -8,6 +8,21 @@
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md)
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("微调 Amazon Nova 模型实现精准邮件数据提取"))
+    深度分析
+      微调策略的技术细节
+      评估结果深度解读
+      幻觉抑制的关键发现
+      生产部署架构
+    实践启示
+    相关实体
+```
+
 ## 摘要
 
 本文详细介绍了 Parcel Perform 与 AWS GenAIIC 合作，使用 Amazon SageMaker AI 对 Amazon Nova 模型进行参数高效微调（PEFT/LoRA），实现从电商邮件中精准提取结构化数据的完整方案。微调后的 Nova Micro 模型在测试集上达到 94.77% 的提取准确率，相比基线提升高达 16.6 个百分点，同时推理延迟降低 32%，成本降低 50%。这一案例证明了"小模型 + 领域微调"策略在生产场景中的巨大潜力。

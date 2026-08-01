@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 38b8b161dc2e231a59822afbc82a049d53a92ac3e3c4c723b1619b0cf44e3657
+source_url: "https://johnstawinski.com/2026/06/18/repo-jacking-anthropics-claude-community-plugins-and-the-shas-that-saved-them/"
 ---
 
 sha256: bdea69a0d62ea9e1835f1608a8763006884175c70d8173fd16425c8125f89cc4

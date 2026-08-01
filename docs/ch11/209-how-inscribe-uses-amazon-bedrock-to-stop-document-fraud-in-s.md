@@ -7,6 +7,21 @@
 # How Inscribe uses Amazon Bedrock to stop document fraud in seconds
 
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("How Inscribe uses Amazon Bed…"))
+    概念导图
+    深度分析
+      Agentic AI 为何更适合文档欺诈检测
+      多模型编排的经济学
+      基础设施架构的工程启示
+    实践启示
+    相关实体
+```
+
 ## 概念导图
 
 ```mermaid

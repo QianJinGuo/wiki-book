@@ -6,6 +6,22 @@
 
 # AWS SageMaker Async Inference 内联 Payload 支持
 
+
+## 概念导图
+
+```mermaid
+mindmap
+  root(("AWS SageMaker Async Inferenc…"))
+    核心变更
+    Before / After 对比
+    适用场景
+    Before 模式额外要求
+    可用区域
+    端点兼容性
+    错误处理
+    与知识库的连接
+```
+
 ## 核心变更
 
 `InvokeEndpointAsync` API 新增 `Body` 参数，允许在 API 请求体内直接传入推理 payload，无需先上传到 S3。

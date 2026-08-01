@@ -5,6 +5,7 @@ updated: 2026-07-24
 type: raw-article
 tags: [raw, article]
 sha256: 9ecb5657262a6994a6b523fcff16e088e8dcea03eaed4125de89d434ee0e02a9
+source_url: "https://thenewstack.io/workday-ai-inference-guardrails/"
 ---
 
 sha256: 7baa2d080369f65e73b07d0ca3b443619aeaebe2714757a880b5be471d370599
