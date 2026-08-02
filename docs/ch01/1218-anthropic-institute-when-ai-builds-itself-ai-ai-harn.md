@@ -43,12 +43,12 @@ AI 自己造 AI，听起来像科幻片里最危险、也最诱人的那一幕�
 - **anthropic趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/074-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/774-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/246-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/126-harness-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/363-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

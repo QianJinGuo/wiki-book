@@ -58,18 +58,18 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codeindex-让大模型更好地理解你的代码.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/855-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/854-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/017-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/451-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/074-agentic.html)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/338-skill.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/498-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/340-skill.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/126-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/246-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/247-openclaw.html)
 
-- [Hermes Agent /goal 长任务运行时架构](../ch04/447-hermes-agent-goal.html)
+- [Hermes Agent /goal 长任务运行时架构](../ch04/449-hermes-agent-goal.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/102-hermes-agent.html)
-- [LoongSuite GenAI 可观测语义规范](../ch04/542-loongsuite-genai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/543-loongsuite-genai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/035-agent.html)
 - [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/115-ai-coding.html)
 

@@ -80,7 +80,7 @@ Amazon Bedrock 的 bedrock-mantle 端点是 AWS 在多模型时代战略布局�
 
 ## 相关实体
 
-- [GPT-5.6 定价层次与 Codex 合并](../ch01/737-codex.html)
+- [GPT-5.6 定价层次与 Codex 合并](../ch01/736-codex.html)
 - [OpenAI Models + Codex on Bedrock GA](ch11/306-amazon-bedrock.html)
 - **Amazon Bedrock Guardrails**
 - **Codex CLI 编码 Agent**

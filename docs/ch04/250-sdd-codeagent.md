@@ -51,14 +51,14 @@ SDD 并非银行业的万能解，其适用性需要结合模型能力、私域�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md)
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/202-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/203-skillos-learning-skill-curation-for-self-evolving-agents.html)
 
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/017-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/451-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/074-agentic.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/498-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/289-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/126-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/246-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/247-openclaw.html)
 
 ---
 

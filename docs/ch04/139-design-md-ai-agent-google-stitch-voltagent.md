@@ -225,9 +225,9 @@ VoltAgent awesome-design-md 集合仍在活跃更新中（学术pro 使用"71 �
 ---
 
 ## 相关实体
-- [Agentexecutorgooglesdistributedagentruntime](ch04/451-agentrun.html)
-- [Anthropic Google Agent Skills Design Patterns](ch04/582-anthropic-google-agent-skills.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/525-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Agentexecutorgooglesdistributedagentruntime](ch04/498-agentrun.html)
+- [Anthropic Google Agent Skills Design Patterns](ch04/458-anthropic-google-agent-skills.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/524-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/035-agent.html)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/317-amazon-nova.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)

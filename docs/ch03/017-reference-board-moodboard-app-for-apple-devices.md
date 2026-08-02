@@ -57,11 +57,11 @@ Reference 在三端各有侧重：iPhone 用于随时捕获灵感，iPad 提供�
 - **DAM 能力**: 虽非专业 DAM 系统，但自动标签、颜色识别和 OCR 使其具备轻量级数字资产组织能力
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/1098-20.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/1100-20.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/097-ai.html)
 - [Somethings Rotten In The State Of Macos Icon Design](https://github.com/QianJinGuo/wiki/blob/main/entities/somethings-rotten-in-the-state-of-macos-icon-design.md)
 - [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](../ch05/115-ai-coding.html)
-- [Apple Silicon Costs More Than Openrouter](../ch01/109-apple-silicon-costs-more-than-openrouter.html)
+- [Apple Silicon Costs More Than Openrouter](../ch01/112-apple-silicon-costs-more-than-openrouter.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-referenceboard-app.md)
 

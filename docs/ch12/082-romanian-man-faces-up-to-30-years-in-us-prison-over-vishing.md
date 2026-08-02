@@ -2,23 +2,9 @@
 
 ## Ch12.082 Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/romanian-man-30-years-us-prison-vishing.md`
+> 📊 Level ⭐⭐ | 6.5KB | `entities/romanian-man-30-years-us-prison-vishing.md`
 
 # Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Romanian Man Faces Up to 30 …"))
-    深度分析
-      VOIP 安全漏洞的系统性问题
-      Money Mule 在网络犯罪中的角色
-      与 AI 时代 Vishing 的对比
-    实践启示
-    相关实体
-```
 
 ## 摘要
 
@@ -31,16 +17,19 @@ mindmap
 该案展示了从数字入侵到物理变现的完整犯罪链条：
 
 **阶段一：VOIP 系统劫持（2009 年起）**
+
 - 目标：小型企业的 Voice over Internet Protocol 电话系统
 - 手段：未经授权访问互联网电话服务器
 - 利用：VOIP 技术允许通过宽带互联网拨打电话，入侵后攻击者获得合法企业的来电显示信誉
 
 **阶段二：自动化语音钓鱼（Vishing）**
+
 - 部署计算机脚本自动外呼
 - 来电显示为被劫持的合法企业号码，增加可信度
 - 诱骗受害者透露借记卡号码和 PIN 码
 
 **阶段三：伪卡制作与 ATM 提现**
+
 - Sandu 担任 money mule（钱骡）角色
 - 将被盗卡号制作成带磁条的物理伪卡
 - 在多个 ATM 提现，保留部分赃款，其余汇回给黑客团伙
@@ -76,6 +65,7 @@ mindmap
 ### Money Mule 在网络犯罪中的角色
 
 Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物理现金。这是网络犯罪变现的关键环节，也是执法打击的重点。Money mule 通常：
+
 - 在犯罪团伙中处于较低层级，但承担最高物理风险
 - 负责实体操作（伪卡制作、ATM 提现、资金转移）
 - 容易被追踪（ATM 监控、银行记录）
@@ -83,6 +73,7 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 ### 与 AI 时代 Vishing 的对比
 
 传统 vishing 依赖人工脚本和简单自动化。随着 AI Agent 和语音合成技术的发展，vishing 攻击正在升级：
+
 - **深度伪造语音**：可以模仿特定人物的声音
 - **AI 驱动的对话**：可以实时应对受害者的质疑
 - **大规模个性化**：根据受害者信息定制话术
@@ -99,11 +90,11 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 
 ## 相关实体
 
-- [Npm Supply Chain Compromise Postmortem](../ch05/095-ai.html)
-- [Cloudflare Glasswing Mythos Security](ch12/030-mythos.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/097-ai.html)
+- [Cloudflare Glasswing Mythos Security](ch12/031-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/349-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/547-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/romanian-man-30-years-us-prison-vishing.md)
 

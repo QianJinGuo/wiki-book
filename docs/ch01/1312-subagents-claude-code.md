@@ -22,9 +22,9 @@ Daniel San 给出的量化参考很有价值：半小时的探索性会话可能
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/083-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/097-claude-code-1.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/377-claude-code-subagent.html)
+- [Claude Code Subagent 上下文卫生](../ch04/378-claude-code-subagent.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
-- [claude-code-kairos-paradigm-2026](ch01/509-claude-code-kairos.html)
+- [claude-code-kairos-paradigm-2026](ch01/508-claude-code-kairos.html)
 
 ---
 

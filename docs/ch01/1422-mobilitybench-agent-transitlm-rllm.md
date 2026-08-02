@@ -202,7 +202,7 @@ LLM Agent 调用导航工具来完成路线规划是当下最现实的一条路�
 
 ## 与 AMAP-ML 团队其他工作的关联
 
-- **[APPO](../ch04/074-agentic.html)**：同 AMAP-ML 团队（中科大+阿里高德）2026-06 发表的 Agent RL 信用分配算法（arxiv 2606.12384），用 Branching Score 把信用分配从工具调用边界下沉到细粒度决策点——这正好对应 MobilityBench 错误定位中"工具调用 36% + 规划推理 26%"两类问题的优化方向
+- **[APPO](../ch04/289-agentic.html)**：同 AMAP-ML 团队（中科大+阿里高德）2026-06 发表的 Agent RL 信用分配算法（arxiv 2606.12384），用 Branching Score 把信用分配从工具调用边界下沉到细粒度决策点——这正好对应 MobilityBench 错误定位中"工具调用 36% + 规划推理 26%"两类问题的优化方向
 - **[AMAP Proactive Agent](../ch03/035-agent.html)**：高德 LBS 时空 Agent 主动式推荐（出行场景下 Agent + 时空知识融合的另一个维度）
 - **[AMAP AI Native End-to-End Infrastructure](../ch05/021-ai-native.html)**：高德 AI Native 端到端基础设施（TransitLM 的工程底座）
 - **[AMAP ABot Earth 0.5](ch01/216-3d.html)**：高德 3D 原生世界模型（时空基座模型的视觉维度）

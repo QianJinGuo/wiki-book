@@ -157,15 +157,15 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 
 ## 相关实体
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/126-harness-engineering.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/640-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/639-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/774-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Claude Code 设计原则与对照分析](../ch03/084-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/017-harness.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/246-openclaw.html)
-- [Code as Agent Harness 综述](../ch09/060-code-as-agent-harness.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/247-openclaw.html)
+- [Code as Agent Harness 综述](../ch09/061-code-as-agent-harness.html)
 - [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
@@ -182,7 +182,7 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/062-agent-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/495-from-agent-protocol-to-harness-skill.html)
+- [From Agent Protocol to Harness Skill](ch04/496-from-agent-protocol-to-harness-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1-million-exposed-ai-services-hackernews.md)
 

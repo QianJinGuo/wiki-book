@@ -68,7 +68,7 @@ AI 生成的代码往往同时增加了内在负荷（方案可能不是最优�
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — 代码审查作为 Agent 系统的控制层
 - [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) — AI 辅助编码的完整工作流
-- [Building Reliable Agentic AI Systems](../ch04/292-building-reliable-agentic-ai-systems.html) — 同样关注 AI 系统的工程可靠性
+- [Building Reliable Agentic AI Systems](../ch04/293-building-reliable-agentic-ai-systems.html) — 同样关注 AI 系统的工程可靠性
 - [Claude Code Dynamic Workflows](ch09/102-claude-code-dynamic-workflows.html) — AI 编码代理的实践模式
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/when-i-reject-ai-code-even-if-it-works-vinibrasil.md)

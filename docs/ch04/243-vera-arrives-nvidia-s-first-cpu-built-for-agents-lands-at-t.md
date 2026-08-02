@@ -92,10 +92,10 @@ NVLink Fusion 向第三方 XPU 开放 NVIDIA 基础设施平台，使合作伙�
 
 ## 相关实体
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/243-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
-- [Nvidia Agentic Systems Extreme Co Design](ch04/074-agentic.html)
+- [Nvidia Agentic Systems Extreme Co Design](ch04/289-agentic.html)
 - [Sap Unveils The Autonomous Enterprise](ch04/133-sap-unveils-the-autonomous-enterprise.html)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/074-agentic.html)
-- [Nemotron 3 5 Content Safety](../ch01/689-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/289-agentic.html)
+- [Nemotron 3 5 Content Safety](../ch01/688-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blogs.nvidia.com-vera-cpu-delivery.md)

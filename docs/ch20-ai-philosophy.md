@@ -1891,7 +1891,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 
 ## Ch20.015 Nemotron 3.5 Content Safety
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/nemotron-3-5-content-safety.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/nemotron-3-5-content-safety.md`
 
 # Nemotron 3.5 Content Safety
 
@@ -2067,7 +2067,7 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 
 ## Ch20.017 Anthropic NLAs — 自然语言自动编码器
 
-> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/anthropic-nla-natural-language-autoencoders.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/anthropic-nla-natural-language-autoencoders.md`
 
 # Anthropic NLAs — 自然语言自动编码器：AI 读心术
 

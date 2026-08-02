@@ -48,7 +48,7 @@ depthfirst 的系统在 6 小时内完成 NGINX 代码分析，报告 5 个漏�
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Npm Supply Chain Compromise Postmortem](../ch05/097-ai.html)
-- [Cogalpha Acl2026 Alpha Mining](../ch01/1098-20.html)
+- [Cogalpha Acl2026 Alpha Mining](../ch01/1100-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
 

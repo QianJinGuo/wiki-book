@@ -22,7 +22,7 @@
 - [Anthropic Founders Playbook Huashu 2026](ch01/1215-anthropic.html)
 - [Cat Wu Anthropic Pm Interview](ch01/1215-anthropic.html)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1215-anthropic.html)
-- [Anthropic Claude Managed Agents Platform Launch](ch01/402-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform Launch](ch01/401-anthropic-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-cowork-task-boundary-5-signals-6-stages.md)
 

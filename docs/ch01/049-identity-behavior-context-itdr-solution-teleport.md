@@ -44,7 +44,7 @@ Teleport 既能把审计事件经 HTTP 导出到 Splunk、Datadog、Elastic、Pa
 ## 相关实体
 - [Identity Behavior & Context: ITDR Solution](ch01/049-identity-behavior-context-itdr-solution-teleport.html) — 同源姊妹条目，覆盖同一产品线的另一视角
 - [Unified EDR & ITDR](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md) — ITDR 的另一条产品路径（端点侧）
-- [MCP Protocol](../ch07/090-mcp-protocol.html) — Agent 访问基础设施与工具的协议基础
+- [MCP Protocol](../ch07/091-mcp-protocol.html) — Agent 访问基础设施与工具的协议基础
 - [Zero Trust for AI Agents](ch01/1215-anthropic.html) — AI 身份信任边界的另一种讨论
 - [Agentic Trust Management Platform](../ch04/010-the-agentic-trust-management-platform-drata.html) — Agent 信任与合规管理平台
 

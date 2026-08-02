@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/1044-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/138-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [AI in Cybersecurity Training Resources | SANS Institute](../ch05/097-ai.html)
 
 ## 深度分析

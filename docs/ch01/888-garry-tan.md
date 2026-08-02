@@ -106,19 +106,19 @@ Garry的80-90%标准：
 
 ## 相关实体
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/036-qoder-skills.html)
-- [Agent Skill 设计模式](../ch04/466-agent-skills.html)
+- [Agent Skill 设计模式](../ch04/468-agent-skills.html)
 - [柚漫剧 AI 全流程提效拆解](../ch05/097-ai.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/097-ai.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/035-agent.html)
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Improving token efficiency in GitHub Agentic Workflows](../ch04/074-agentic.html)
+- [Improving token efficiency in GitHub Agentic Workflows](../ch04/289-agentic.html)
 - [复杂度棘轮：AI编程的质量只升不降机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet.md)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/466-agent-skills.html)
-- [十年老技术开发的 AI Agent 探索之路](../ch04/237-ai-agent.html)
-- [Agent Workflows](../ch04/430-agent-workflows.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/468-agent-skills.html)
+- [十年老技术开发的 AI Agent 探索之路](../ch04/425-ai-agent.html)
+- [Agent Workflows](../ch04/432-agent-workflows.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/338-skill.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/340-skill.html)
 - [四种 Sub Agent 模式](../ch03/035-agent.html)
 
 ---

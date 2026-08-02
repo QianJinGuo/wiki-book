@@ -17,7 +17,7 @@ Claude Code创始人关于Harness和编程未来的观点。
 
 ## 相关实体
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失，Claude Code 将只有 100 行代码，loop 才是未来](../ch03/084-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/640-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/639-claude-code-harness-deep-understanding.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/070-claude-code-prompt.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)

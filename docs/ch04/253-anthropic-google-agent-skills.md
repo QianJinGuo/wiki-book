@@ -6,16 +6,16 @@
 
 ## 相关实体
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/156-anthropic-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/466-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/468-agent-skills.html)
 - [Anthropic 官方 14 种 Skill 设计模式](../ch01/1215-anthropic.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/946-skills-anthropic-openai-comparison-frontend-design.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/466-agent-skills.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/947-skills-anthropic-openai-comparison-frontend-design.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/468-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/035-agent.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/031-mythos.html)
-- [Anthropic Claude Managed Agents 平台正式发布](../ch01/402-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents 平台正式发布](../ch01/401-anthropic-claude-managed-agents.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Anthropic Computer Use 最佳实践](../ch01/1182-anthropic-computer-use.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1441-claude.html)
+- [Anthropic Computer Use 最佳实践](../ch01/1183-anthropic-computer-use.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1101-claude.html)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/084-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/074-claude-code-agent.html)

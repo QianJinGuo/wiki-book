@@ -37,7 +37,7 @@ Ethan Mollick 通过让 Gemini 3 复刻自己三年前 GPT-3 时代的"糖果驱
 2. **通用工具与专用工具的分野**：能编码的 Agent 是通用工具，不能编码的 Agent 是专用工具。
 3. **编程语言作为 Agent 的元能力**：编程语言不只是给程序员用的，而是 Agent 系统能力的元层级。
 
-这与 [Code As Agent Harness Survey](../ch09/060-code-as-agent-harness.html) 中关于"代码即 Agent Harness"的论述形成强对应——编程能力是 Agent 系统能力的"乘数因子"，而不是"附属技能"。
+这与 [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html) 中关于"代码即 Agent Harness"的论述形成强对应——编程能力是 Agent 系统能力的"乘数因子"，而不是"附属技能"。
 
 ### 2. Antigravity Inbox：从 Chatbox 到 Coworker 的产品形态
 
@@ -113,11 +113,11 @@ Mollick 给整篇文章的总结：
 
 > "三年前，我们对机器能写关于水獭的诗印象深刻。不到 1000 天后，我在与一个建立自己研究环境的 Agent 争论统计方法论。chatbot 时代正在变成数字同事时代。"
 
-**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/074-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
+**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
-Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/737-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
+Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/736-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
 
 ## 实践启示
 
@@ -187,17 +187,17 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 
 ## 相关实体
 
-- [Code As Agent Harness Survey](../ch09/060-code-as-agent-harness.html)
-- [GPT-5.4 Codex 进展](ch01/737-codex.html)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/074-agentic.html)
-- [Karpathy Agentic Engineering 综述](../ch04/774-karpathy-vibe-coding-agentic-engineering.html)
-- [AgentOps on Bedrock](../ch04/363-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html)
+- [GPT-5.4 Codex 进展](ch01/736-codex.html)
+- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
+- [Karpathy Agentic Engineering 综述](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
+- [AgentOps on Bedrock](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Yann Dubois OpenAI 后训练访谈](ch01/596-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/016-wiki-evolver.html)
-- [AI Agent Harness 构建](ch01/1161-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/1162-ai-agent-harness.html)
 - [Harness 状态边界与失败闭环](../ch05/017-harness.html)
 - [Agent Vibecoder 上下文压缩](../ch03/035-agent.html)
-- [腾讯混元 HY3 开源预览](ch01/126-hy3-preview.html)
+- [腾讯混元 HY3 开源预览](ch01/129-hy3-preview.html)
 - [Agent 记忆系统工程实践](../ch03/035-agent.html)
 
 ---

@@ -1463,7 +1463,61 @@ SGLang作为UC Berkeley/CMU/Stability AI联合开发的LLM推理框架，其核�
 
 ---
 
-## Ch16.017 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
+## Ch16.017 Graviton Inference
+
+> 📊 Level ⭐⭐ | 3.8KB | `entities/graviton-inference.md`
+
+# Graviton Inference
+
+## 概述
+
+AWS Graviton 处理器（Graviton2/Graviton3/Graviton4）是基于 ARM 架构的自研芯片，在 AI 推理场景中提供显著的性价比优势。相比 x86 实例，Graviton 实例在推理工作负载下可降低约 20-40% 的成本，同时保持 comparable 延迟性能。关键应用场景包括：使用 ONNX Runtime 或 PyTorch 在 ARM 上运行量化模型、通过 AWS Neuron SDK 在 Graviton 上加速 Transformer 推理、以及在 EKS/ECS 上部署 Graviton 节点组的 Agent 推理集群。
+
+## 主要内容
+
+- Graviton 处理器架构
+- ARM 上的推理优化
+- ONNX Runtime on Graviton
+- 成本对比分析
+- EKS Graviton 节点部署
+
+## 深度分析
+
+### Graviton 的性价比来自架构差异而非营销定位
+
+Graviton 基于 ARM 架构，与 x86 相比在每瓦性能与内存带宽上有天然优势，且 AWS 将其作为自研芯片按更低的单位算力价格出售。对推理这类内存带宽敏感、并行度高的负载，Graviton 的收益会被放大——这也是为何它被 AWS 定位为推理优先的算力选项。性价比收益并非恒定 20-40%，而是随负载的访存密度与线程效率浮动。
+
+### 生态兼容性是 Graviton 推理的真实门槛
+
+模型推理框架（PyTorch、ONNX Runtime）对 ARM 的支持已相当成熟，但并非所有算子都有等效的 ARM 优化实现。部署前必须做算子级验证：某些 x86 上依赖 AVX 指令集的优化路径在 ARM 上会退化为标量实现，导致性能低于预期。ONNX Runtime 与 PyTorch 的 ARM 构建是首选，而依赖 CUDA 的推理链路无法直接迁移——这决定了 Graviton 适合 CPU 推理与轻量模型，而非 GPU 工作负载。
+
+### 与量化技术叠加是 Graviton 的最佳实践
+
+Graviton 的推理收益与模型量化是乘法关系：量化模型在 ARM 上既省内存又省带宽，进一步放大架构优势。实际部署中，Graviton + INT8/INT4 量化 + ONNX Runtime 的组合可以在消费级成本区间内支撑可用的 Agent 推理服务。这也意味着 Graviton 方案应被纳入量化矩阵测算，而非单独评估。
+
+### 集群化部署让 Graviton 收益规模化
+
+单实例性价比只是起点，EKS/ECS 上的 Graviton 节点组才是规模化路径：混合节点池（x86 + Graviton）可以按负载特性调度，把适合 ARM 的推理 Pod 优先调度到 Graviton 节点，形成成本分层的集群。Karpenter 等调度器对架构感知的支持让这种混部成为低运维成本的默认选项。
+
+## 实践启示
+
+1. 迁移前做算子级验证（ONNX Runtime/PyTorch ARM 构建），确认关键算子在 ARM 上有等效优化
+2. 将 Graviton 方案与量化矩阵一起测算——Graviton + INT8 的收益大于两者单独评估之和
+3. 用 GPU 处理必须 CUDA 的负载，把 CPU 推理类负载迁移到 Graviton 节点
+4. 在 EKS 上建立 x86/Graviton 混合节点池，按负载类型调度以最大化整体成本收益
+5. 用真实流量做 A/B 压测对比 x86 与 Graviton 的延迟分布，再决定迁移范围
+
+## 相关概念
+
+- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
+- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
+- 参见 [Quantization Techniques](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) 的量化方法体系
+- 参见 [EKS Graviton 多租户 Agent 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md) 的集群部署案例
+- 参见 [Graviton 优化 Agentic RL 沙箱成本](https://github.com/QianJinGuo/wiki/blob/main/entities/graviton-optimize-agentic-rl-sandbox-architecture-cost.md) 的成本优化实践
+
+---
+
+## Ch16.018 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md`
 
@@ -1517,31 +1571,6 @@ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple�
 ## 相关实体
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
-
----
-
-## Ch16.018 Graviton Inference
-
-> 📊 Level ⭐⭐ | 1.1KB | `entities/graviton-inference.md`
-
-# Graviton Inference
-
-## 概述
-
-AWS Graviton 处理器（Graviton2/Graviton3/Graviton4）是基于 ARM 架构的自研芯片，在 AI 推理场景中提供显著的性价比优势。相比 x86 实例，Graviton 实例在推理工作负载下可降低约 20-40% 的成本，同时保持 comparable 延迟性能。关键应用场景包括：使用 ONNX Runtime 或 PyTorch 在 ARM 上运行量化模型、通过 AWS Neuron SDK 在 Graviton 上加速 Transformer 推理、以及在 EKS/ECS 上部署 Graviton 节点组的 Agent 推理集群。
-
-## 主要内容
-
-- Graviton 处理器架构
-- ARM 上的推理优化
-- ONNX Runtime on Graviton
-- 成本对比分析
-- EKS Graviton 节点部署
-
-## 相关概念
-
-- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
-- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
 
 ---
 
@@ -2657,139 +2686,9 @@ elasticpp 没有选择替换整个 Elasticsearch，而是将最核心、最耗�
 
 ---
 
-## Ch16.029 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+## Ch16.029 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md`
-
-# 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
-
-腾讯混元 AI Infra 推理团队对 Hy3 preview（GQA+MoE，295B/21B，256K 上下文）在 NVIDIA Hopper 96G 卡上进行了全栈推理优化，覆盖算子优化与融合、并行策略、多级缓存、MTP 异步调度、量化与稀疏五大维度。
-
-## 算子优化
-
-**动态调度 Attention**：所有请求按统一 Tile 粒度拆分，贪心装桶算法实现极致均分，Task Assign 模块每次推理前生成专属任务映射表。单 batch 长文本加速 2.95x，混合长度 batch 加速 1.59x~1.76x。
-
-**双 BF16 Router GEMM**：FP32 权重拆分为高位 BF16 + 低位残差 BF16，两次 BF16 GEMM 线性组合，融合至单一 Kernel，全程无 HBM 往返。相比 FP32(cuBLAS) 2.86x~3.22x 加速。
-
-**FusedMoE 全流水线重构**：路由与索引预处理、Gate-Up GEMM、激活量化+Down GEMM、Top-K 加权聚合、PDL 无气泡串联。TP=8/EP=1 场景相比 vLLM CUTLASS/Triton、SGLang 1.5x~1.6x 加速。
-
-## 算子融合
-
-**Fused Rope+Norm+Hadamard+Quant+Store KV**：5 个 Element-wise 算子重构为单一微型流水线 Kernel，寄存器级数据流转，在线量化直接低比特写入 KV Cache，加速约 5x。
-
-**Fused AllReduce+Norm+Add**：通信、残差计算、归一化全链路融合，高吞吐版（NVSwitch 多播）+ 低延迟版（Lamport P2P），覆盖 8~32k tokens，最高加速 1.68x。
-
-**采样融合算子**：10 余个零碎 Kernel 融合为 2 个核心 CUDA Kernel，全词表单次加载，GPU 闭环惩罚计算，相比 vLLM/FlashInfer 提升约 5.5x/2.5x。
-
-**GEMM+Comm 通算融合**：SM 显式划分为计算 SM（矩阵乘）与通信 SM（RS 搬运），Load→MMA→Epilogue 三级流水，Tile 级计算与通信重叠，加速比 1.68x~1.81x。
-
-## 并行策略
-
-**Prefill TPSP**：SP 拆分 + 通算融合 + 通信量化 + 并行模式调整。Prefill 16k TTFT 降 29.9%（764→536ms），32k 降 24.5%（1885→1424ms）。
-
-**Decode DP+EP**：Attention DP + MoE EP 跨节点混合并行，自研 HPC Kernel，Async EPLB 权重重排与 Decode 完全重叠，端到端吞吐提升 15.7~44.7%。
-
-## 多级缓存
-
-GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可复用前缀，新 Block 异步下沉至 L2/L3。
-
-## MTP 异步调度
-
-解除 CPU 对真实接收长度的同步依赖，按最大接收长度提前准备，减少 decode 间 5~10ms CPU 气泡，端到端提升 10%~20%。
-
-## 量化压缩
-
-**AngelSlim 量化**：GPTQ 权重重建 + 激活平滑与旋转变换 + QAT 轻量化微调。Attn FP8 + W4A8 配置下精度无损（与 BF16 基线差距 < 1%），端到端吞吐提升 28%+。
-
-**Stem 稀疏注意力**：Token Position-Decay（头部 k_start 线性衰减到尾部 k_end = μ·k_start）+ Output-Aware Metric（OAM: QK^T + β·max(0, log(||V_j||₂))）。25% 计算预算实现接近稠密注意力精度，128K 上下文 Prefill 延迟降低 3.6x。
-
-## 与现有知识库的关联
-
-- [腾讯混元 Hy3 preview 发布](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)：互补实体，该篇讲模型能力与发布，本篇讲推理优化技术细节
-- [LLM 推理流水线](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-inference-pipeline-internals.md)：推理优化基础知识，本篇是 Hy3 的具体工程实践
-- [模型蒸馏与压缩](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-distillation-compression.md)：量化压缩（W4A8、AngelSlim）是模型压缩的推理侧实践
-- [Transformer 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)：GQA + MoE 架构是 Hy3 的基础
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md)
-
----
-
-## Ch16.030 vLLM V0 to V1: Correctness Before Corrections in RL
-
-> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/servicenow-vllm-correctness.md`
-
-> -> [[raw/articles/servicenow-vllm-correctness-huggingface|原文存档]
-
-## 深度分析
-vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。^[].md]
-
-**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。^[].md]
-
-**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。^[].md]
-
-**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。^[].md]
-
-**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。^[].md]
-
-## 实践启示
-**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。^[].md]
-
-**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。^[].md]
-
-**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。^[].md]
-
-**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。^[].md]
-
-**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。^[].md]
-
-## 相关实体
-- [[entities/servicenow-vllm-correctness-huggingface|servicenow vllm correctness huggingface]
-
-→ [[raw/articles/vllm-v0-to-v1-correctness-before-corrections.md|原文存档]
-
-- [[entities/vllm-v0-to-v1-correctness-before-corrections|vLLM V0→V1 迁移中的 logprob 差异修复]
-- [[entities/trajectory-balance-asynchrony-tba-bengio-papweekly|无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍]
-
----
-
-## Ch16.031 Pytorch in Kernel Recsys Optimization
-
-> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
-
-## 深度分析
-
-**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
-
-**Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
-
-**渐进式协同设计是工程落地的合理路径：** IKBO Linear Compression 经历了四个阶段的渐进优化：matmul decomposition → memory alignment → broadcast fusion → warp-specialized multi-stage fusion via TLX，最终在 H100 SXM5 上实现 ~4× 加速。这个过程说明**性能优化不是一步到位的**，而是需要持续迭代、逐步逼近硬件极限。每一步优化都为下一步创造条件，最终的 warp-specialized fusion 无法在初始阶段直接实现。
-
-**IO-bound 到 compute-bound 的转变是性能优化的分水岭：** IKBO 将 Flash Attention kernel 从 IO-bound 推向 compute-bound，峰值达到 621 BF16 TFLOPs（H100 SXM5）。在 GPU 编程中，IO-bound 意味着 kernel 性能受限于内存带宽，而非算力——此时增加更多计算单元也无法提升性能。**转变为 compute-bound 是优化的关键里程碑**，意味着 kernel 已经充分利用了硬件的算力潜能，继续优化需要从算法或数据布局入手。
-
-**RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
-
-## 实践启示
-
-- **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
-
-- **Kernel 优化采用渐进式策略**：先实现功能正确的版本，再逐步优化——从基础 matmul 到 decomposition，再到 memory alignment，最后做 fusion。一次性写出最优 kernel 既不现实也不高效。
-
-- **RecSys 系统的 broadcast 开销需要专门优化**：当 user-candidate 不对称时，传统的 explicit replication 会造成严重的内存和计算浪费。考虑在 kernel 内部处理 broadcast，而非在系统层面 materialization。
-
-- **Inference-time transformation 可实现无感的系统升级**：Meta 的 IKBO 支持在推理时自动替换标准操作为 IKBO 等效操作，无需模型代码变更。这种**无破坏性升级**能力对生产系统非常重要。
-
-- **Custom kernel 开发需要工具链配合**：TLX (Triton Low-Level Extensions) 提供了 warp-specialized fusion 能力，但需要与 ML 编译器、inference runtime 配合使用。单独优化 kernel 而忽视其他层级，往往无法达到预期效果。
-
----
-## 关联
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-in-kernel-recsys-optimization.md)
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch16.032 Bonsai Image 4B: 1-bit 和 Ternary 量化
-
-> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/bonsai-image-4b-quantization.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
 
 # Bonsai Image 4B: 1-bit 和 Ternary 量化
 
@@ -2853,6 +2752,136 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
+## Ch16.030 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md`
+
+# 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+
+腾讯混元 AI Infra 推理团队对 Hy3 preview（GQA+MoE，295B/21B，256K 上下文）在 NVIDIA Hopper 96G 卡上进行了全栈推理优化，覆盖算子优化与融合、并行策略、多级缓存、MTP 异步调度、量化与稀疏五大维度。
+
+## 算子优化
+
+**动态调度 Attention**：所有请求按统一 Tile 粒度拆分，贪心装桶算法实现极致均分，Task Assign 模块每次推理前生成专属任务映射表。单 batch 长文本加速 2.95x，混合长度 batch 加速 1.59x~1.76x。
+
+**双 BF16 Router GEMM**：FP32 权重拆分为高位 BF16 + 低位残差 BF16，两次 BF16 GEMM 线性组合，融合至单一 Kernel，全程无 HBM 往返。相比 FP32(cuBLAS) 2.86x~3.22x 加速。
+
+**FusedMoE 全流水线重构**：路由与索引预处理、Gate-Up GEMM、激活量化+Down GEMM、Top-K 加权聚合、PDL 无气泡串联。TP=8/EP=1 场景相比 vLLM CUTLASS/Triton、SGLang 1.5x~1.6x 加速。
+
+## 算子融合
+
+**Fused Rope+Norm+Hadamard+Quant+Store KV**：5 个 Element-wise 算子重构为单一微型流水线 Kernel，寄存器级数据流转，在线量化直接低比特写入 KV Cache，加速约 5x。
+
+**Fused AllReduce+Norm+Add**：通信、残差计算、归一化全链路融合，高吞吐版（NVSwitch 多播）+ 低延迟版（Lamport P2P），覆盖 8~32k tokens，最高加速 1.68x。
+
+**采样融合算子**：10 余个零碎 Kernel 融合为 2 个核心 CUDA Kernel，全词表单次加载，GPU 闭环惩罚计算，相比 vLLM/FlashInfer 提升约 5.5x/2.5x。
+
+**GEMM+Comm 通算融合**：SM 显式划分为计算 SM（矩阵乘）与通信 SM（RS 搬运），Load→MMA→Epilogue 三级流水，Tile 级计算与通信重叠，加速比 1.68x~1.81x。
+
+## 并行策略
+
+**Prefill TPSP**：SP 拆分 + 通算融合 + 通信量化 + 并行模式调整。Prefill 16k TTFT 降 29.9%（764→536ms），32k 降 24.5%（1885→1424ms）。
+
+**Decode DP+EP**：Attention DP + MoE EP 跨节点混合并行，自研 HPC Kernel，Async EPLB 权重重排与 Decode 完全重叠，端到端吞吐提升 15.7~44.7%。
+
+## 多级缓存
+
+GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可复用前缀，新 Block 异步下沉至 L2/L3。
+
+## MTP 异步调度
+
+解除 CPU 对真实接收长度的同步依赖，按最大接收长度提前准备，减少 decode 间 5~10ms CPU 气泡，端到端提升 10%~20%。
+
+## 量化压缩
+
+**AngelSlim 量化**：GPTQ 权重重建 + 激活平滑与旋转变换 + QAT 轻量化微调。Attn FP8 + W4A8 配置下精度无损（与 BF16 基线差距 < 1%），端到端吞吐提升 28%+。
+
+**Stem 稀疏注意力**：Token Position-Decay（头部 k_start 线性衰减到尾部 k_end = μ·k_start）+ Output-Aware Metric（OAM: QK^T + β·max(0, log(||V_j||₂))）。25% 计算预算实现接近稠密注意力精度，128K 上下文 Prefill 延迟降低 3.6x。
+
+## 与现有知识库的关联
+
+- [腾讯混元 Hy3 preview 发布](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)：互补实体，该篇讲模型能力与发布，本篇讲推理优化技术细节
+- [LLM 推理流水线](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-inference-pipeline-internals.md)：推理优化基础知识，本篇是 Hy3 的具体工程实践
+- [模型蒸馏与压缩](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-distillation-compression.md)：量化压缩（W4A8、AngelSlim）是模型压缩的推理侧实践
+- [Transformer 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)：GQA + MoE 架构是 Hy3 的基础
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md)
+
+---
+
+## Ch16.031 vLLM V0 to V1: Correctness Before Corrections in RL
+
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/servicenow-vllm-correctness.md`
+
+> -> [[raw/articles/servicenow-vllm-correctness-huggingface|原文存档]
+
+## 深度分析
+vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。^[].md]
+
+**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。^[].md]
+
+**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。^[].md]
+
+**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。^[].md]
+
+**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。^[].md]
+
+## 实践启示
+**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。^[].md]
+
+**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。^[].md]
+
+**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。^[].md]
+
+**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。^[].md]
+
+**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。^[].md]
+
+## 相关实体
+- [[entities/servicenow-vllm-correctness-huggingface|servicenow vllm correctness huggingface]
+
+→ [[raw/articles/vllm-v0-to-v1-correctness-before-corrections.md|原文存档]
+
+- [[entities/vllm-v0-to-v1-correctness-before-corrections|vLLM V0→V1 迁移中的 logprob 差异修复]
+- [[entities/trajectory-balance-asynchrony-tba-bengio-papweekly|无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍]
+
+---
+
+## Ch16.032 Pytorch in Kernel Recsys Optimization
+
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
+
+## 深度分析
+
+**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-production-agent-engineering-deficit.md)
+
+**Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
+
+**渐进式协同设计是工程落地的合理路径：** IKBO Linear Compression 经历了四个阶段的渐进优化：matmul decomposition → memory alignment → broadcast fusion → warp-specialized multi-stage fusion via TLX，最终在 H100 SXM5 上实现 ~4× 加速。这个过程说明**性能优化不是一步到位的**，而是需要持续迭代、逐步逼近硬件极限。每一步优化都为下一步创造条件，最终的 warp-specialized fusion 无法在初始阶段直接实现。
+
+**IO-bound 到 compute-bound 的转变是性能优化的分水岭：** IKBO 将 Flash Attention kernel 从 IO-bound 推向 compute-bound，峰值达到 621 BF16 TFLOPs（H100 SXM5）。在 GPU 编程中，IO-bound 意味着 kernel 性能受限于内存带宽，而非算力——此时增加更多计算单元也无法提升性能。**转变为 compute-bound 是优化的关键里程碑**，意味着 kernel 已经充分利用了硬件的算力潜能，继续优化需要从算法或数据布局入手。
+
+**RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
+
+## 实践启示
+
+- **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
+
+- **Kernel 优化采用渐进式策略**：先实现功能正确的版本，再逐步优化——从基础 matmul 到 decomposition，再到 memory alignment，最后做 fusion。一次性写出最优 kernel 既不现实也不高效。
+
+- **RecSys 系统的 broadcast 开销需要专门优化**：当 user-candidate 不对称时，传统的 explicit replication 会造成严重的内存和计算浪费。考虑在 kernel 内部处理 broadcast，而非在系统层面 materialization。
+
+- **Inference-time transformation 可实现无感的系统升级**：Meta 的 IKBO 支持在推理时自动替换标准操作为 IKBO 等效操作，无需模型代码变更。这种**无破坏性升级**能力对生产系统非常重要。
+
+- **Custom kernel 开发需要工具链配合**：TLX (Triton Low-Level Extensions) 提供了 warp-specialized fusion 能力，但需要与 ML 编译器、inference runtime 配合使用。单独优化 kernel 而忽视其他层级，往往无法达到预期效果。
+
+---
+## 关联
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-in-kernel-recsys-optimization.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
 ## Ch16.033 14× faster embeddings: how we rebuilt the ONNX path in Manticore
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md`
@@ -2890,7 +2919,62 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 
 ---
 
-## Ch16.034 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
+## Ch16.034 Quantization Techniques
+
+> 📊 Level ⭐⭐⭐ | 3.7KB | `entities/quantization-techniques.md`
+
+# Quantization Techniques
+
+## 概述
+
+模型量化是大语言模型推理优化的核心技术，通过降低模型参数精度（从 FP16/FP32 到 INT8/INT4 甚至更低）来减少内存占用和加速推理。主要方法包括：训练后量化（PTQ）如 GPTQ、AWQ、SmoothQuant；量化感知训练（QAT）；以及最新的 1-bit 量化（BitNet）。在 Agent 部署场景中，量化技术使得在消费级 GPU 甚至 CPU 上运行大模型成为可能，是实现本地化 Agent 推理的关键使能技术。
+
+## 主要内容
+
+- 训练后量化 (PTQ)
+- 量化感知训练 (QAT)
+- GGUF 格式量化
+- GPTQ/AWQ/SmoothQuant
+- 1-bit 量化 (BitNet)
+- 推理性能 vs 精度权衡
+
+## 深度分析
+
+### 量化本质是"以可预测的精度损失换取数量级的内存收益"
+
+量化压缩的是参数的数值表示，而非模型的语义结构：FP16 到 INT8 直接减半内存，到 INT4 则降到八分之一。对 LLM 而言，内存占用直接决定模型能否装入单卡或消费级硬件——量化不是"性能优化选项"，而是"部署可行性开关"。精度的代价则表现为困惑度上升与长尾任务退化，通常在中低风险场景可接受。
+
+### PTQ 与 QAT 的分野在"是否需要重新训练"
+
+训练后量化（GPTQ、AWQ、SmoothQuant）无需重训，用少量校准数据即可完成，是快速部署路径；其难点在于处理激活值中的离群点，SmoothQuant 正是通过把激活缩放迁移到权重来缓解这一点。量化感知训练（QAT）在训练阶段模拟量化误差，精度更高但成本显著。工程上默认从 PTQ 开始，只有精度不达标才升级到 QAT。
+
+### 权重量化与激活量化是两条独立的优化轴
+
+多数 LLM 部署只做权重量化（W4A16、W8A16），因为权重静态可预计算、误差可控；而激活量化需要动态统计每层分布，实现复杂、容易掉精度。理解这条分界线有助于解读模型卡上的量化标注——"INT4 模型"通常指权重 4-bit，激活仍为 16-bit。真正同时量化权重与激活（W4A4）是更激进的方案，只在专用硬件上常见。
+
+### 1-bit 量化（BitNet）重新定义了下限
+
+BitNet 系列将权重压到 1-bit（或 1.58-bit 三元），把乘法变成加法，理论上可把推理能耗再降一个数量级。它改变了"量化是精度妥协"的叙事——模型从设计之初就按低比特训练，精度损失远小于事后量化。这一方向仍处早期，但代表了端侧与边缘推理的未来形态。
+
+## 实践启示
+
+1. 部署前先做量化矩阵测算（Q4/Q8 × 内存/延迟/质量），用数据而非直觉选择级别
+2. 默认走 PTQ 路线（GPTQ/AWQ/SmoothQuant），精度不足时再评估 QAT 成本
+3. 解读模型卡时区分"权重 4-bit"与"权重+激活 4-bit"，避免误判真实精度损失
+4. 结合具体任务做质量回归测试——通用评测分数下降 ≠ 目标任务不可用
+5. 关注 BitNet 等原生低比特模型的进展，它们在端侧部署上可能绕过量化权衡
+
+## 相关概念
+
+- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
+- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
+- 参见 [LLaMA.cpp Deployment](https://github.com/QianJinGuo/wiki/blob/main/entities/llama-cpp-deployment.md) 的 GGUF 量化实践
+- 参见 [Bonsai Image 4B Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-quantization.md) 的具体量化案例
+- 参见 [TLiveOmni vLLM Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/tliveomni-vllm-quantization.md) 的服务端量化实践
+
+---
+
+## Ch16.035 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/ibm-research-model-routing-optimization-2026.md`
 
@@ -2931,32 +3015,6 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 - [Amazon Bedrock 开源 Model Router](https://github.com/QianJinGuo/wiki/blob/main/entities/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md) 侧重 AWS 生态下的集成方案
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ibm-research-model-routing-optimization-2026.md)
-
----
-
-## Ch16.035 Quantization Techniques
-
-> 📊 Level ⭐⭐⭐ | 1.1KB | `entities/quantization-techniques.md`
-
-# Quantization Techniques
-
-## 概述
-
-模型量化是大语言模型推理优化的核心技术，通过降低模型参数精度（从 FP16/FP32 到 INT8/INT4 甚至更低）来减少内存占用和加速推理。主要方法包括：训练后量化（PTQ）如 GPTQ、AWQ、SmoothQuant；量化感知训练（QAT）；以及最新的 1-bit 量化（BitNet）。在 Agent 部署场景中，量化技术使得在消费级 GPU 甚至 CPU 上运行大模型成为可能，是实现本地化 Agent 推理的关键使能技术。
-
-## 主要内容
-
-- 训练后量化 (PTQ)
-- 量化感知训练 (QAT)
-- GGUF 格式量化
-- GPTQ/AWQ/SmoothQuant
-- 1-bit 量化 (BitNet)
-- 推理性能 vs 精度权衡
-
-## 相关概念
-
-- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
-- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
 
 ---
 
