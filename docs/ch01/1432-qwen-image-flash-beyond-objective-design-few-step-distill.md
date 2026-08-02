@@ -74,8 +74,8 @@ The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** ap
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Bonsai Image 4B 1 Bit Ternary](../ch05/097-ai.html)
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/612-scaling.html)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/451-agentrun.html)
-- [count anything - 文本引导的通用目标计数框架](ch01/1098-20.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/498-agentrun.html)
+- [count anything - 文本引导的通用目标计数框架](ch01/1100-20.html)
 
 ## 关键引用
 

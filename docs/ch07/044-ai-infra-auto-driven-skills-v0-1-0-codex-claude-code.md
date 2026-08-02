@@ -98,9 +98,9 @@ AI-Infra-Auto-Driven-SKILLS 的设计明确将**工程纪律编码为工作流�
 
 AI Infra 工程纪律正在变成可执行的 skill artifact——推理框架优化流程的最佳实践被编码为 Agent 工作流。
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1089-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1091-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Claude Code Skills Mcp Rules Source Analysis](ch07/007-claude-code-skills-mcp-rules.html)
-- [Skill System Design Three Way Comparison](../ch04/338-skill.html)
+- [Skill System Design Three Way Comparison](../ch04/340-skill.html)
 - [Openclaw Agent Loop Design Patterns](../ch01/1191-openclaw-agent.html)
 - [Claude Code Vs Codex Context Architecture 02](../ch03/084-claude-code.html)
 

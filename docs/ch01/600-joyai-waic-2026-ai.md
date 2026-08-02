@@ -94,7 +94,7 @@ JoyInside 计划接入超 1000 万台硬件设备，本质上是在构建一个 
 - [JoyAI-VL-Interaction 视频语言交互模型](ch01/1473-joyai-vl-interaction.html)
 - [JoyAI-Echo 长视频生成框架](../ch05/097-ai.html)
 - [JoyAI 实时视频交互](ch01/1473-joyai-vl-interaction.html)
-- [小米机器人汽车工厂操作](ch01/1098-20.html)
+- [小米机器人汽车工厂操作](ch01/1100-20.html)
 - [企业 AI Native 转型](../ch05/021-ai-native.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/京东joyai模型矩阵亮相waic-2026.md)

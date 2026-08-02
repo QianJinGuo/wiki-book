@@ -67,7 +67,7 @@ LLM 集成揭示了一个更深层的架构趋势：完全解耦并不总是最�
 
 ## 相关实体
 
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/683-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch04/383-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/035-agent.html)
 - [小米AI — ICML 2026 论文矩阵（11篇）](ch01/1459-ai-icml-2026-11.html)
 

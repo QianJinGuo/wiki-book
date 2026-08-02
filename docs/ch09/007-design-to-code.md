@@ -2,7 +2,7 @@
 
 ## Ch09.007 设计稿转代码（Design to Code）
 
-> 📊 Level ⭐ | 1.7KB | `entities/design-to-code.md`
+> 📊 Level ⭐ | 1.9KB | `entities/design-to-code.md`
 
 # 设计稿转代码（Design to Code）
 

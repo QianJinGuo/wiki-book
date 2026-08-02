@@ -29,14 +29,14 @@ Amazon QuickSight 的文档级 ACL 功能代表了企业 AI 搜索系统中访�
 **不可逆性的准备**：启用文档级 ACL 是单向操作，无法在后续关闭。建议在任何生产部署前先在测试或非生产知识库上完整验证配置正确性，特别是验证 ALLOW 和 DENY 规则的优先级行为是否符合预期 。
 
 ## 相关实体
-- [PyTorch 2.12 Release Blog – PyTorch](../ch01/393-pytorch-2-12-release-blog.html) — 另一个 2026 年重大技术发布
+- [PyTorch 2.12 Release Blog – PyTorch](../ch01/392-pytorch-2-12-release-blog.html) — 另一个 2026 年重大技术发布
 - [TeamPCP Claims Sale of Mistral AI Repositories](../ch12/066-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html) — AI 基础设施安全事件
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/097-ai.html)
 - [CloudSectiDbits](ch11/113-cloudsectidbits.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/280-aws-bedrock-agentcore.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/266-aws-bedrock-agentcore.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/035-amazon-bedrock-api.html)
-- [amazon quick arns: cross-account migration and namespace per](ch11/234-amazon-quick.html)
+- [amazon quick arns: cross-account migration and namespace per](ch11/235-amazon-quick.html)
 
 ---
 

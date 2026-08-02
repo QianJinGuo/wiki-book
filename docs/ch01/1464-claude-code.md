@@ -33,7 +33,7 @@ Claude Code 源码拆解（by 无岳，阿里云开发者，2026-04-15）。核�
 - [上下文隔离](https://github.com/QianJinGuo/wiki/blob/main/entities/context-isolation.md)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/097-ai.html)
 - [Agentium — 从零实现 Agent 系统的开源框架](ch01/1445-agentium-agent.html)
-- [17种Agent架构演进：控制流设计的完整演化史](../ch04/758-17-agent.html)
+- [17种Agent架构演进：控制流设计的完整演化史](../ch04/759-17-agent.html)
 - [Owner-Worker-Verifier 架构](ch01/1488-owner-worker-verifier.html)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/102-hermes-agent.html)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)

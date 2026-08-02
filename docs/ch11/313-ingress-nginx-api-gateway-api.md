@@ -84,11 +84,11 @@ Gateway API 在跨命名空间路由上引入 **ReferenceGrant**——必须由�
 
 ## 相关实体
 
-- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/413-rag.html)
+- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/1261-rag.html)
 - [Aliyun Cloud Native Safety Guardrails Three Domains](../ch05/097-ai.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/246-openclaw.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1373-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/247-openclaw.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1372-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 
 ---
 

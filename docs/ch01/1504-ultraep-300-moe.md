@@ -74,8 +74,8 @@ Persistent Tile Streaming 通过将权重/梯度切分为 tile，由持久化 Ke
 
 ## 相关实体
 
-- [MoE 架构](ch01/1408-moe-architecture.html) — MoE 基础架构概念
-- [LLM Inference Pipeline](ch01/855-llm.html) — LLM 推理流水线
+- [MoE 架构](ch01/1407-moe-architecture.html) — MoE 基础架构概念
+- [LLM Inference Pipeline](ch01/854-llm.html) — LLM 推理流水线
 - [MSA 稀疏注意力](https://github.com/QianJinGuo/wiki/blob/main/entities/msa-sparse-attention-three-kingdoms-huashu.md) — 稀疏注意力相关优化
 
 ## 开源

@@ -94,7 +94,7 @@ VISTA 的提出标志着 AI 软件工程评估的一个关键转折点。传统�
 
 ### 与现有评估体系的互补性
 
-VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力，RoadmapBench 评测长周期开发，VISTA 评测视觉驱动的从零开发能力。三者共同构成了 Coding Agent 评估的完整拼图，分别覆盖不同能力维度——这与 [RoadmapBench 长周期开发评估](../ch04/308-roadmapbench-long-horizon-agentic-software-development.html) 中讨论的"评估体系需要多维度覆盖"的观点一致。
+VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力，RoadmapBench 评测长周期开发，VISTA 评测视觉驱动的从零开发能力。三者共同构成了 Coding Agent 评估的完整拼图，分别覆盖不同能力维度——这与 [RoadmapBench 长周期开发评估](../ch04/310-roadmapbench-long-horizon-agentic-software-development.html) 中讨论的"评估体系需要多维度覆盖"的观点一致。
 
 ## 实践启示
 
@@ -110,10 +110,10 @@ VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力�
 
 ## 相关实体
 
-- [RoadmapBench — 长周期 Agentic 软件开发评估](../ch04/308-roadmapbench-long-horizon-agentic-software-development.html) — 从版本升级角度看长周期编码能力
+- [RoadmapBench — 长周期 Agentic 软件开发评估](../ch04/310-roadmapbench-long-horizon-agentic-software-development.html) — 从版本升级角度看长周期编码能力
 - [Harness Engineering 的核心地位](../ch05/126-harness-engineering.html) — 工作流设计与模型能力的系统整合
 - [Agent Harness 综述](../ch05/062-agent-harness.html) — 同一模型在不同架构下的表现差异分析
-- [SWE-bench Agent 评估](../ch04/748-swe-bench-agent.html) — 传统代码修复 Benchmark 的方法论
+- [SWE-bench Agent 评估](../ch04/749-swe-bench-agent.html) — 传统代码修复 Benchmark 的方法论
 - [Design-to-Code](../ch09/007-design-to-code.html) — 从设计稿到代码的自动化转换技术
 - [Agent 评估系统指南](../ch03/035-agent.html) — 系统性 Agent 评估方法论
 

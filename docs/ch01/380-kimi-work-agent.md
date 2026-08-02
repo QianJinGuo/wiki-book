@@ -10,11 +10,11 @@
 **Kimi Work** 是**月之暗面 K2.6 + Kimi Code Harness 搬到本地桌面**的通用 Agent 产品（2026-06 Beta 发布）。与 **OpenAI 把 Codex 并入 ChatGPT** 同一时间发布，标志 **"Vibe Working" 时代开启**——AI Agent 主战场从写代码迁移到**普通知识工作者的日常工作**。
 
 ## 相关实体
-- [Schemaflow Agentic Database Sql Generation Openai Cookbook](../ch04/074-agentic.html)
+- [Schemaflow Agentic Database Sql Generation Openai Cookbook](../ch04/289-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 
-- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/411-agi.html)
+- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/478-agi.html)
 
 ## 一句话定位
 
@@ -164,7 +164,7 @@
 - Kimi Work = Harness 从云端到本地（**部署层**架构）
 - 共同点：都在"防止上帝文件 / 防止环境割裂"层面做工程化
 
-### vs [Codex 6 职位插件](ch01/737-codex.html)
+### vs [Codex 6 职位插件](ch01/736-codex.html)
 - 之前 Codex 还在"加插件拓展能力"
 - 现在 OpenAI 直接把 Codex 并入 ChatGPT——**赛道战略转向**
 
@@ -193,7 +193,7 @@
 - [Agent Harness 架构](../ch05/062-agent-harness.html) —— 7 层 harness 模型
 - [Rein](../ch03/035-agent.html) —— 4 模块代码架构
 - [Agent Harness 上下文管理](../ch05/062-agent-harness.html) —— 工作集视角
-- [Karpathy Vibe Coding → Agentic Engineering](../ch04/074-agentic.html) —— Vibe Coding 原始定义
+- [Karpathy Vibe Coding → Agentic Engineering](../ch04/289-agentic.html) —— Vibe Coding 原始定义
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)
 

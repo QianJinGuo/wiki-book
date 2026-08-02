@@ -132,7 +132,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 ## 相关主题
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — 自进化机制与 AutoResearch 的"只保留改进"思想同源
 -  — Harness Engineering 让 Agent 产出可预期、可衡量、可持续
-- [Thin Harness Fat Skills](../ch05/088-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
+- [Thin Harness Fat Skills](../ch05/089-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
 ## 相关实体
@@ -144,7 +144,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/084-claude-code.html)
 - [claude-code-agent-view](ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/640-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/639-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Claude Code 设计原则与对照分析](../ch03/084-claude-code.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)

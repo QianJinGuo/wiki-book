@@ -72,10 +72,10 @@ The p6-b300 instance class is a constrained resource. Flexible Training Plans su
 
 - [Kimi K3 2.8T Open Source Model 2026](../ch01/231-kimi-k3.html) — Architectural deep dive on KDA, Attention Residuals, Stable LatentMoE, and GPU compiler innovations
 - [Kimi K3 2 8T Params Open Source](../ch01/875-kimi-k3-2-8t.html) — Coverage of the open-source release and model availability on Hugging Face
-- [Kimi K3 The Open Weights Escalation](../ch01/718-kimi-k3-the-open-weights-escalation.html) — Industry analysis on geopolitical and competitive implications of open-weight 3T models
+- [Kimi K3 The Open Weights Escalation](../ch01/717-kimi-k3-the-open-weights-escalation.html) — Industry analysis on geopolitical and competitive implications of open-weight 3T models
 - **SageMaker HyperPod** — SageMaker HyperPod managed infrastructure for large-scale ML workloads
 - [Vllm](../ch01/1224-vllm.html) — The vLLM inference engine powering the Kimi K3 serving stack
-- [Moe Architecture](../ch01/1408-moe-architecture.html) — Mixture of Experts architecture pattern used by Kimi K3 and other large-scale models
+- [Moe Architecture](../ch01/1407-moe-architecture.html) — Mixture of Experts architecture pattern used by Kimi K3 and other large-scale models
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deploying-kimi-k3-on-aws.md)
 

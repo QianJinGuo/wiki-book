@@ -30,7 +30,7 @@ GrowBrain 的架构演进历程是近年来少有的「生产环境逼出来的�
 
 **第二个问题：有状态设计的并发隐患。** ReactAgent 的 Chain 和 Memory 是构造时绑定的单例对象，在多个请求线程并发调用时，不同请求之间的 Memory 互相污染、Skills 指令全量灌入每个请求浪费 token。这在「单用户交互」的假设下没问题，但在服务端高并发场景下构成严重架构缺陷。
 
-这两个问题在本质上反映了 Agent 架构设计中一个尚未被充分认知的原则：**LLM 的职责范围应当与其模型能力相匹配**。小模型的幻觉风险要求从「LLM 全程驱动」转向「框架精确控制 + LLM 在关键节点介入」。这与 [Agent 配置组合](../ch04/338-skill.html) 中「Skill 作为可控边界」的设计理念形成互文。
+这两个问题在本质上反映了 Agent 架构设计中一个尚未被充分认知的原则：**LLM 的职责范围应当与其模型能力相匹配**。小模型的幻觉风险要求从「LLM 全程驱动」转向「框架精确控制 + LLM 在关键节点介入」。这与 [Agent 配置组合](../ch04/340-skill.html) 中「Skill 作为可控边界」的设计理念形成互文。
 
 ### PES 架构设计原则
 
@@ -76,13 +76,13 @@ SystemPipeline 和 ChatPipeline 共享同一套 Agent 矩阵和底层能力底�
 
 ## 相关实体
 
-- [Agent 配置组合](../ch04/338-skill.html)
+- [Agent 配置组合](../ch04/340-skill.html)
 - [Agent Harness 上下文管理](../ch05/062-agent-harness.html)
 - [Marvis 多智能体桌面助手](../ch03/095-marvis.html)
-- [AgentCore Trip Allocation](../ch04/746-agentcore-harness.html)
+- [AgentCore Trip Allocation](../ch04/747-agentcore-harness.html)
 - [Agent 评测方法论](../ch03/035-agent.html)
 - [Harness Engineering Survey 2026](../ch05/126-harness-engineering.html)
-- [Alibaba Agentic Cloud](../ch04/421-agentic-cloud.html)
+- [Alibaba Agentic Cloud](../ch04/423-agentic-cloud.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/淘宝内容生态-growbrain-淘宝agentic内容成长引擎.md)
 

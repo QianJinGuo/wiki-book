@@ -33,7 +33,7 @@ AI 生成代码 → AI 自动审查 → 人类重点审查——三层审查模�
 ## 相关实体
 - [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](ch01/038-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - [How We Made Window Join Parallel And Vectorized](ch01/037-how-we-made-window-join-parallel-and-vectorized.html)
-- [Products Are Out Brains Are In](ch01/144-products-are-out-brains-are-in.html)
+- [Products Are Out Brains Are In](ch01/146-products-are-out-brains-are-in.html)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 

@@ -2,25 +2,11 @@
 
 ## Ch12.087 Unlocking the Cloudflare app ecosystem with OAuth for all
 
-> 📊 Level ⭐⭐ | 5.7KB | `entities/cloudflare-oauth-for-all.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/cloudflare-oauth-for-all.md`
 
 # Unlocking the Cloudflare app ecosystem with OAuth for all
 
 > **Background**：Cloudflare 官方博客，宣布为所有开发者提供 OAuth 授权能力，使第三方应用能安全地访问 Cloudflare 平台资源。这是 Cloudflare 开发者平台战略的关键一步，尤其对 Agentic 工具的委托访问具有重要意义。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Unlocking the Cloudflare app…"))
-    技术实现深度分析
-      OAuth 引擎升级：Hydra 1.x → …
-      蓝绿部署的关键设计
-    对 Agent 生态的意义
-    实践启示
-    相关实体
-```
 
 ## 摘要
 
@@ -97,7 +83,7 @@ OAuth 标准化对 AI Agent 生态具有深远影响：
 
 ## 相关实体
 
-- [Cloudflare Temporary Accounts Ai Agents](../ch04/030-ai-agent.html)
+- [Cloudflare Temporary Accounts Ai Agents](../ch04/425-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloudflare-oauth-for-all.md)
 

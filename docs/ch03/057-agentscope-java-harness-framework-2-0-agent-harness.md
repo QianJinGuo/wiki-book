@@ -526,7 +526,7 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 ## 相关实体
 
 - [Agent Harness 架构](../ch05/062-agent-harness.html)
-- [OpenClaw Prompt/Harness](../ch11/246-openclaw.html)
+- [OpenClaw Prompt/Harness](../ch11/247-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
 
@@ -540,8 +540,8 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 
 **2.0 升级围绕 9 大主题**（每节标题都带"Cloud Native"标签 — **阿里云云原生**出品）：
 
-- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](../ch04/451-agentrun.html)
-- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/403-pi-agent.html)
+- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](../ch04/498-agentrun.html)
+- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/404-pi-agent.html)
 
 ## ① 企业级分布式部署 — 无状态水平扩展 + 零停机发布 + 多租户隔离
 

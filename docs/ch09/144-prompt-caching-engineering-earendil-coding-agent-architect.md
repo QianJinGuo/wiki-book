@@ -58,7 +58,7 @@ Pi 在交互 footer 显示累计 cache reads/writes（R/W），以及最新请�
 
 ## 与已知实体关系
 
-- [Anthropic Prompt Caching (Claude Code)](../ch01/407-anthropic-prompt-caching-claude-code.html) — Claude Code 的 prompt caching 工程实践，侧重 Anthropic 生态
+- [Anthropic Prompt Caching (Claude Code)](../ch01/406-anthropic-prompt-caching-claude-code.html) — Claude Code 的 prompt caching 工程实践，侧重 Anthropic 生态
 - [Tokenomics of Claude's Cache](../ch01/1215-anthropic.html) — Anthropic 62.5 分钟缓存规则的 Token 经济学分析
 - [Bedrock Prompt Cache Strategy](../ch11/069-amazon-bedrock-claude-prompt-cache.html) — AWS Bedrock 上的 Prompt Cache 策略设计
 - [pi-mono — 模块化 AI Agent 构建平台](../ch03/077-pi-mono-ai-agent-openclaw.html) — Earendil/Pi 的模块化 Agent 平台

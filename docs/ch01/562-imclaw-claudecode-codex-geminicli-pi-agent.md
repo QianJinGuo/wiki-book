@@ -59,19 +59,19 @@ IMClaw 提供了三种权限模式（approve-reads、approve-all、deny-all）�
 3. **审计日志的必要性**：建议在网关层实现完整的操作审计日志，记录每个会话、每个命令的发起人、时间戳和操作内容，满足合规审计需求。
 
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/640-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/639-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [OpenCLAW 完全指南](../ch11/246-openclaw.html)
+- [OpenCLAW 完全指南](../ch11/247-openclaw.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch01/1191-openclaw-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/466-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/468-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/237-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/425-ai-agent.html)
 - [Claude Code MCP Server](../ch07/031-claude-code-mcp-server.html)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/338-skill.html)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/340-skill.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1441-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1101-claude.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/084-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/017-harness.html)
@@ -81,17 +81,17 @@ IMClaw 提供了三种权限模式（approve-reads、approve-all、deny-all）�
 - [Claude Code Agent 工程设计](../ch03/074-claude-code-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
-- [OpenClaw Prompt/Context/Harness](../ch11/246-openclaw.html)
+- [OpenClaw Prompt/Context/Harness](../ch11/247-openclaw.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/035-agent.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch03/102-hermes-agent.html)
-- [AIAIGC峰会嘉宾阵容](../ch04/598-aiaigc.html)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch04/338-skill.html)
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/246-openclaw.html)
+- [AIAIGC峰会嘉宾阵容](../ch04/599-aiaigc.html)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch04/340-skill.html)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/247-openclaw.html)
 - [Skills 系统设计三方对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/skill-system-design-comparison.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/084-claude-code.html)
 - [Agent 原理、架构与工程实践](../ch03/035-agent.html)
-- [微信读书官方skill与huashu-weread增强版](../ch04/338-skill.html)
+- [微信读书官方skill与huashu-weread增强版](../ch04/340-skill.html)
 
 ---
 

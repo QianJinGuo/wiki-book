@@ -267,9 +267,9 @@ OWL适合以下场景：
 - **优化Critic机制**：使用更精细的评估标准提升输出质量
 ## 相关实体
 - [Agent Framework Owl Principles](../ch03/035-agent.html)
-- [Karpathy Ai Agent 7 Bits Value Decline](../ch04/204-karpathy-ai.html)
+- [Karpathy Ai Agent 7 Bits Value Decline](../ch04/205-karpathy-ai.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/084-claude-code.html)
-- [Gepa Optimize Anything](ch01/490-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](ch01/489-gepa-optimize-anything.html)
 - [Tmall Marketing Ai Workflow Best Practices](../ch05/097-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 

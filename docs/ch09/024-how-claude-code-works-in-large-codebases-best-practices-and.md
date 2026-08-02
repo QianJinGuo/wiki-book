@@ -109,7 +109,7 @@ Claude Code 围绕传统软件工程环境设计：工程师是主要的代码�
 
 ## 相关概念
 ## 相关实体
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/658-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/657-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Claude Code Large Codebase Harness Configuration](../ch03/084-claude-code.html)
 - [Claude Code Best Practices](../ch03/084-claude-code.html)
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/084-claude-code.html)

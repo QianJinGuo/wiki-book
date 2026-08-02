@@ -85,7 +85,7 @@ ep=8, dp=8 on 8 GPUs: 每个 GPU 训练自己的数据分片，同时仅持有 1
 
 ### 与推理框架的互操作
 
-NeMo AutoModel 保存的 checkpoint 是标准 HF 格式的 safetensors，可直接被 vLLM 和 [SGLang](../ch04/699-agent-assisted-sglang-ai-llm.html) 等推理框架加载。这意味着训练和推理之间没有格式转换开销——微调完成后可直接部署。
+NeMo AutoModel 保存的 checkpoint 是标准 HF 格式的 safetensors，可直接被 vLLM 和 [SGLang](../ch04/701-agent-assisted-sglang-ai-llm.html) 等推理框架加载。这意味着训练和推理之间没有格式转换开销——微调完成后可直接部署。
 
 ## 实践启示
 
@@ -98,7 +98,7 @@ NeMo AutoModel 保存的 checkpoint 是标准 HF 格式的 safetensors，可直�
 
 - Mixture-of-Experts — MoE 架构原理
 - vLLM — 高性能 LLM 推理引擎
-- [SGLang](../ch04/699-agent-assisted-sglang-ai-llm.html) — 结构化生成推理框架
+- [SGLang](../ch04/701-agent-assisted-sglang-ai-llm.html) — 结构化生成推理框架
 - LoRA / PEFT — 参数高效微调方法（对比路径）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-nemo-automodel-fine-tuning.md)

@@ -9,10 +9,10 @@
 - 内容来源：huntress
 ## 相关实体
 - [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr-unified-detection.md)
-- [Llm Raiders Private Ai Server](../ch01/855-llm.html)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/658-how-claude-code-works-in-large-codebases-best-practices-and.html)
-- [Llm Raiders And How To Repel Them](../ch01/1031-llm-raiders-and-how-to-repel-them.html)
-- [How To Create Websites With Great Ux Designs](../ch01/145-how-to-create-websites-with-great-ux-designs-principles-and.html)
+- [Llm Raiders Private Ai Server](../ch01/854-llm.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/657-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [Llm Raiders And How To Repel Them](../ch01/1032-llm-raiders-and-how-to-repel-them.html)
+- [How To Create Websites With Great Ux Designs](../ch01/147-how-to-create-websites-with-great-ux-designs-principles-and.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huntress-edr-itdr.md)
 

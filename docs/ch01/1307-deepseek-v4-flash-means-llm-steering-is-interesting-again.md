@@ -8,9 +8,9 @@
 - 评分：v=7 × c=8 = 56
 - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
 ## 相关实体
-- [Llm Steering Behavior Guidance](ch01/758-llm-steering.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/588-deepseek.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/588-deepseek.html)
+- [Llm Steering Behavior Guidance](ch01/757-llm-steering.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/793-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch01/793-deepseek.html)
 - [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/1279-deepseek-v4-flash-pro.html)
 - [Deepseek V4 Pro Vs Claude](ch01/436-deepseek-v4.html)
 
