@@ -59,7 +59,7 @@ AI 可以直接理解自然语言描述的需求并生成实现，不再需要�
 
 - [Vibe Coding](../ch09/181-vibe-coding-ai.html)
 - [AI-Native Development](../ch05/021-ai-native.html)
-- [Agent Orchestration](../ch04/590-agent-orchestration.html)
+- [Agent Orchestration](../ch04/591-agent-orchestration.html)
 - [Software Engineering Transformation](../ch05/097-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-productivity-paradox-collaboration-bottleneck-alibaba.md)

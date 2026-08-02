@@ -61,7 +61,7 @@ Apple Silicon 在本地推理领域的核心竞争力不是性价比，而是**�
 
 ### 专用引擎 vs 通用引擎的成本结构
 
-[ds4.c 项目](../ch09/052-deepseek-v4-ds4c-antirez.html)（Redis 作者 antirez 开发的 DeepSeek V4 专用推理引擎）展示了另一种路线：
+[ds4.c 项目](../ch09/053-deepseek-v4-ds4c-antirez.html)（Redis 作者 antirez 开发的 DeepSeek V4 专用推理引擎）展示了另一种路线：
 
 - **通用引擎**（llama.cpp、vLLM）：支持多模型，代价是间接成本和抽象层妥协
 - **专用引擎**：针对单一模型 + 硬件组合深度优化，放弃跨模型兼容性换取极致性能
@@ -137,8 +137,8 @@ ds4.c 在 M3 Ultra 128GB 配置下达到 **468 token/s 预填充速度** 和 **2
 
 ## 相关实体
 
-- [离线 LLM 能量使用](ch01/855-llm.html) — 同一作者的另一篇相关文章
-- [LightSeek TokenSpeed](ch01/1399-lightseek-tokenspeed.html) — 推理引擎优化技术（Speculative Decoding、KV Cache、Continuous Batching）
+- [离线 LLM 能量使用](ch01/854-llm.html) — 同一作者的另一篇相关文章
+- [LightSeek TokenSpeed](ch01/1398-lightseek-tokenspeed.html) — 推理引擎优化技术（Speculative Decoding、KV Cache、Continuous Batching）
 - [Ollama 安全问题](https://github.com/QianJinGuo/wiki/blob/main/entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md) — 本地推理基础设施的安全考量
 
 ## 相关概念

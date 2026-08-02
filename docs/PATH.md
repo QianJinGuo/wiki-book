@@ -10,38 +10,6 @@
 
 ---
 
-## 概念全景
-
-```mermaid
-mindmap
-  root((学习路径))
-    入门篇
-      LLM基础
-      提示词工程
-      AI工具
-    工程师篇
-      Agent架构
-      Harness
-      记忆系统
-      技能工具
-      多Agent
-      编码Agent
-      RAG
-    专家篇
-      云基础设施
-      安全
-      MLOps
-      数据工程
-    科学家篇
-      训练
-      推理优化
-      多模态
-      机器人
-    大师篇
-      研究前沿
-      AI哲学
-```
-
 ## 0. 先定方向：你要成为哪一类 Agent 人才
 
 Agent 方向不是单一岗位。学习前先明确你要同时构建四种能力：
@@ -59,17 +27,6 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 ---
 
 ## 1. 总体路线图
-
-```mermaid
-graph LR
-    BEGIN["开始"] --> FUND["基础<br/>LLM+编程"]
-    FUND --> ENG["工程<br/>Agent+Harness"]
-    ENG --> SPEC["专精<br/>训练/安全/infra"]
-    SPEC --> MAST["大师<br/>前沿+哲学"]
-    classDef stage fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    class BEGIN,FUND,ENG,SPEC,MAST stage
-```
-
 
 | 阶段 | 时间建议 | 身份目标 | 核心问题 | 产出物 |
 |---|---:|---|---|---|
@@ -134,13 +91,13 @@ graph LR
 
 | 主题 | entity | raw |
 |---|---|---|
-| Agent 术语表 | [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/030-ai-agent.html) | [{{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent]({{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent)|
-| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/126-karpathy-vibe-coding-agentic-engineering.html) | [{{BASE_URL}}/raw/articles/karpathy-vibe-coding-agentic-engineering-v4]({{BASE_URL}}/raw/articles/karpathy-vibe-coding-agentic-engineering-v4)|
-| AI Agent 工程师能力地图 | [Ai Agent Engineer Capability Map](ch04/149-ai-agent.html) | [{{BASE_URL}}/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026]({{BASE_URL}}/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026)|
-| 250 行 CLI Agent | [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/086-ai-agent-250-while-python-ollama-cli-agent-7.html) | [{{BASE_URL}}/raw/articles/minimal-cli-agent-250-line-python-ollama-7-stages]({{BASE_URL}}/raw/articles/minimal-cli-agent-250-line-python-ollama-7-stages)|
-| Agent Runtime 7 大职责 | [Agent Runtime 7 Responsibilities Secondcurve 2026](ch04/104-agent-agent-runtime-7-3-langgraph-openai-agents-s.html) | [{{BASE_URL}}/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026]({{BASE_URL}}/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026)|
-| Design Patterns for AI Agents | [Design Patterns For Ai Agents 2026](ch04/093-design-patterns-for-ai-agents-2026-4-5-reflection.html) | 先读实体页：`docs/ch04/083-design-patterns-for-ai-agents-2026-4-5-reflection.md` |
-| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/099-llm-agent-thinkingagent.html) | [{{BASE_URL}}/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02]({{BASE_URL}}/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02)|
+| Agent 术语表 | [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/237-ai-agent.html) | [{{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent]({{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent)|
+| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/183-karpathy-vibe-coding-agentic-engineering.html) | [{{BASE_URL}}/raw/articles/karpathy-vibe-coding-agentic-engineering-v4]({{BASE_URL}}/raw/articles/karpathy-vibe-coding-agentic-engineering-v4)|
+| AI Agent 工程师能力地图 | [Ai Agent Engineer Capability Map](ch04/207-ai-agent.html) | [{{BASE_URL}}/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026]({{BASE_URL}}/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026)|
+| 250 行 CLI Agent | [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/141-ai-agent-250-while-python-ollama-cli-agent-7.html) | [{{BASE_URL}}/raw/articles/minimal-cli-agent-250-line-python-ollama-7-stages]({{BASE_URL}}/raw/articles/minimal-cli-agent-250-line-python-ollama-7-stages)|
+| Agent Runtime 7 大职责 | [Agent Runtime 7 Responsibilities Secondcurve 2026](ch04/160-agent-agent-runtime-7-3-langgraph-openai-agents-s.html) | [{{BASE_URL}}/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026]({{BASE_URL}}/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026)|
+| Design Patterns for AI Agents | [Design Patterns For Ai Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html) | 先读实体页：`docs/ch04/083-design-patterns-for-ai-agents-2026-4-5-reflection.md` |
+| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/154-llm-agent-thinkingagent.html) | [{{BASE_URL}}/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02]({{BASE_URL}}/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02)|
 
 ### 3.4 入门期作业
 
@@ -224,62 +181,62 @@ graph LR
 
 | 主题 | entity | raw |
 |---|---|---|
-| Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/002-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [{{BASE_URL}}/raw/articles/loop-engineering-addy-osmani-challengehub]({{BASE_URL}}/raw/articles/loop-engineering-addy-osmani-challengehub)|
-| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch05/005-harness-engineering-2026-ecc.html) | [{{BASE_URL}}/raw/articles/harness-engineering-2026-rahul-rauhul]({{BASE_URL}}/raw/articles/harness-engineering-2026-rahul-rauhul)|
-| 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/012-agent-ralph-loop-harness.html) | [{{BASE_URL}}/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei]({{BASE_URL}}/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei)|
-| Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05/039-agent-harness.html) | [{{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit]({{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit)|
-| 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05/034-harness-12.html) | [{{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison]({{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison)|
+| Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/004-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [{{BASE_URL}}/raw/articles/loop-engineering-addy-osmani-challengehub]({{BASE_URL}}/raw/articles/loop-engineering-addy-osmani-challengehub)|
+| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch05/007-harness-engineering-2026-ecc.html) | [{{BASE_URL}}/raw/articles/harness-engineering-2026-rahul-rauhul]({{BASE_URL}}/raw/articles/harness-engineering-2026-rahul-rauhul)|
+| 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/014-agent-ralph-loop-harness.html) | [{{BASE_URL}}/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei]({{BASE_URL}}/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei)|
+| Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05/041-agent-harness.html) | [{{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit]({{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit)|
+| 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05/035-harness-12.html) | [{{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison]({{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison)|
 | 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05/069-harness-engineering-10-8-checklist-15.html) | [{{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026]({{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026)|
-| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/117-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
-| Better-Harness | [Better Harness Eval Trace Methodology](ch05/128-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
+| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/123-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
+| Better-Harness | [Better Harness Eval Trace Methodology](ch05/133-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
 
 ### 4.4 Memory 精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
-| Agent Memory 架构 | [Agent Memory Architecture Past Influence Future Ruofei](ch04/098-agent-memory.html) | 先读 `docs/ch06-memory.md` |
-| Hermes Agent 记忆系统 | [Hermes Agent Memory System Openclaw Comparison](ch04/227-hermes-agent.html) | [{{BASE_URL}}/raw/articles/hermes-agent-memory-system-openclaw-comparison]({{BASE_URL}}/raw/articles/hermes-agent-memory-system-openclaw-comparison)|
-| AgentMemory 源码分析 | [Agentmemory Source Analysis Coding Agent Local Memory](ch09/046-coding-agent.html) | [{{BASE_URL}}/raw/articles/agentmemory-source-analysis-coding-agent-local-memory]({{BASE_URL}}/raw/articles/agentmemory-source-analysis-coding-agent-local-memory)|
-| Claude Code vs OpenClaw Memory | [Claude Code Openclaw Memory Comparison](ch09/011-claude-code.html) | [{{BASE_URL}}/raw/articles/claude-code-openclaw-memory-comparison]({{BASE_URL}}/raw/articles/claude-code-openclaw-memory-comparison)|
-| Memory 评测全景 | [Agent Memory Evaluation Landscape Taobao Survey](ch04/098-agent-memory.html) | [{{BASE_URL}}/raw/articles/agent-memory-evaluation-landscape-taobao-survey]({{BASE_URL}}/raw/articles/agent-memory-evaluation-landscape-taobao-survey)|
-| State of Memory in Agent Harness | [State Of Memory In Agent Harness Mem0 2026](ch04/140-state-of-memory-in-agent-harness-mem0-harness.html) | [{{BASE_URL}}/raw/articles/state-of-memory-in-agent-harness-mem0-2026]({{BASE_URL}}/raw/articles/state-of-memory-in-agent-harness-mem0-2026)|
+| Agent Memory 架构 | [Agent Memory Architecture Past Influence Future Ruofei](ch04/178-agent-memory.html) | 先读 `docs/ch06-memory.md` |
+| Hermes Agent 记忆系统 | [Hermes Agent Memory System Openclaw Comparison](ch04/291-hermes-agent.html) | [{{BASE_URL}}/raw/articles/hermes-agent-memory-system-openclaw-comparison]({{BASE_URL}}/raw/articles/hermes-agent-memory-system-openclaw-comparison)|
+| AgentMemory 源码分析 | [Agentmemory Source Analysis Coding Agent Local Memory](ch09/051-coding-agent.html) | [{{BASE_URL}}/raw/articles/agentmemory-source-analysis-coding-agent-local-memory]({{BASE_URL}}/raw/articles/agentmemory-source-analysis-coding-agent-local-memory)|
+| Claude Code vs OpenClaw Memory | [Claude Code Openclaw Memory Comparison](ch09/100-claude-code.html) | [{{BASE_URL}}/raw/articles/claude-code-openclaw-memory-comparison]({{BASE_URL}}/raw/articles/claude-code-openclaw-memory-comparison)|
+| Memory 评测全景 | [Agent Memory Evaluation Landscape Taobao Survey](ch04/178-agent-memory.html) | [{{BASE_URL}}/raw/articles/agent-memory-evaluation-landscape-taobao-survey]({{BASE_URL}}/raw/articles/agent-memory-evaluation-landscape-taobao-survey)|
+| State of Memory in Agent Harness | [State Of Memory In Agent Harness Mem0 2026](ch04/199-state-of-memory-in-agent-harness-mem0-harness.html) | [{{BASE_URL}}/raw/articles/state-of-memory-in-agent-harness-mem0-2026]({{BASE_URL}}/raw/articles/state-of-memory-in-agent-harness-mem0-2026)|
 
 ### 4.5 Skill / Tool / MCP 精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
-| Skill Hub 组织资产化 | [Skill Hub Organization Asset Winty](ch07/001-skill-hub-ai-winty-q-3-4-6.html) | [{{BASE_URL}}/raw/articles/skill-hub-organization-asset-winty]({{BASE_URL}}/raw/articles/skill-hub-organization-asset-winty)|
-| Skill 设计模式 | [Skill Design Patterns](ch07/002-skill.html) | [{{BASE_URL}}/raw/articles/anthropic-14-skill-patterns-best-practices]({{BASE_URL}}/raw/articles/anthropic-14-skill-patterns-best-practices)|
-| Workflow Skill 写法 | [Skill Writing Patterns Best Practices](ch07/003-skill-7-skill.html) | [{{BASE_URL}}/raw/articles/skill-writing-patterns-best-practices]({{BASE_URL}}/raw/articles/skill-writing-patterns-best-practices)|
-| 企业级 Skill 8 块骨架 | [Skill Design Spec 8 Block Checklist Winty](ch07/004-skill-8-8-checklist.html) | [{{BASE_URL}}/raw/articles/skill-design-spec-8-block-checklist-winty]({{BASE_URL}}/raw/articles/skill-design-spec-8-block-checklist-winty)|
-| Claude Code Skills / MCP / Rules 源码 | [Claude Code Skills Mcp Rules Source Analysis](ch07/006-claude-code-skills-mcp-rules.html) | [{{BASE_URL}}/raw/articles/claude-code-skills-mcp-rules-source-analysis]({{BASE_URL}}/raw/articles/claude-code-skills-mcp-rules-source-analysis)|
-| 三层 Agent 架构 | [Baidu Netdisk Three Layer Agent Architecture](ch07/026-agent-skill-subagent-agent-team.html) | [{{BASE_URL}}/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture]({{BASE_URL}}/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture)|
-| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/037-cli-mcp-cli-skill.html) | [{{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder]({{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder)|
-| Skill 版本管理 | [Skill Version Management Semantic Versioning Practices Winty](ch07/049-skill.html) | [{{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty]({{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty)|
-| Anthropic 12 个 MCP 模式 | [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch07/064-anthropic-agent-12-mcp.html) | [{{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2]({{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2)|
-| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/090-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [{{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix]({{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix)|
+| Skill Hub 组织资产化 | [Skill Hub Organization Asset Winty](ch07/002-skill-hub-ai-winty-q-3-4-6.html) | [{{BASE_URL}}/raw/articles/skill-hub-organization-asset-winty]({{BASE_URL}}/raw/articles/skill-hub-organization-asset-winty)|
+| Skill 设计模式 | [Skill Design Patterns](ch07/003-skill.html) | [{{BASE_URL}}/raw/articles/anthropic-14-skill-patterns-best-practices]({{BASE_URL}}/raw/articles/anthropic-14-skill-patterns-best-practices)|
+| Workflow Skill 写法 | [Skill Writing Patterns Best Practices](ch07/004-skill-7-skill.html) | [{{BASE_URL}}/raw/articles/skill-writing-patterns-best-practices]({{BASE_URL}}/raw/articles/skill-writing-patterns-best-practices)|
+| 企业级 Skill 8 块骨架 | [Skill Design Spec 8 Block Checklist Winty](ch07/005-skill-8-8-checklist.html) | [{{BASE_URL}}/raw/articles/skill-design-spec-8-block-checklist-winty]({{BASE_URL}}/raw/articles/skill-design-spec-8-block-checklist-winty)|
+| Claude Code Skills / MCP / Rules 源码 | [Claude Code Skills Mcp Rules Source Analysis](ch07/007-claude-code-skills-mcp-rules.html) | [{{BASE_URL}}/raw/articles/claude-code-skills-mcp-rules-source-analysis]({{BASE_URL}}/raw/articles/claude-code-skills-mcp-rules-source-analysis)|
+| 三层 Agent 架构 | [Baidu Netdisk Three Layer Agent Architecture](ch07/027-agent-skill-subagent-agent-team.html) | [{{BASE_URL}}/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture]({{BASE_URL}}/raw/articles/baidu-netdisk-kmp-migration-three-layer-agent-architecture)|
+| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/038-cli-mcp-cli-skill.html) | [{{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder]({{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder)|
+| Skill 版本管理 | [Skill Version Management Semantic Versioning Practices Winty](ch07/050-skill.html) | [{{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty]({{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty)|
+| Anthropic 12 个 MCP 模式 | [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch07/051-anthropic-agent-12-mcp.html) | [{{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2]({{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2)|
+| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/093-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [{{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix]({{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix)|
 
 ### 4.6 RAG 精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
-| RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch01/223-rag.html) | [{{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂]({{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂)|
-| Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/116-google-agentic-rag-5.html) | [{{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606]({{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606)|
-| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/090-protocol-h-agentic-rag.html) | [{{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise]({{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise)|
-| Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [{{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration]({{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration)|
+| RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch01/413-rag.html) | [{{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂]({{BASE_URL}}/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂)|
+| Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/172-google-agentic-rag-5.html) | [{{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606]({{BASE_URL}}/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606)|
+| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/146-protocol-h-agentic-rag.html) | [{{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise]({{BASE_URL}}/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise)|
+| Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](ch01/200-1.html) | [{{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration]({{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration)|
 | RAG vs LLM Wiki | `docs/ch01/037-rag-vs-llm-wiki.md` | 先读实体页 |
 
 ### 4.7 Talk-to-data / Data Agent 精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
-| Anthropic 95% 数据分析自动化 | [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch09/008-anthropic-95-agent-skill-21-95.html) | [{{BASE_URL}}/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture]({{BASE_URL}}/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture)|
-| Data Agent 产品设计 | [Data Agent Product Design](ch04/377-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
-| 智能问数 Agent | [Data Agent Product Design](ch04/377-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent)|
-| 营销策略 Agent | [Data Agent Product Design](ch04/377-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent)|
+| Anthropic 95% 数据分析自动化 | [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch09/014-anthropic-95-agent-skill-21-95.html) | [{{BASE_URL}}/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture]({{BASE_URL}}/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture)|
+| Data Agent 产品设计 | [Data Agent Product Design](ch04/445-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
+| 智能问数 Agent | [Data Agent Product Design](ch04/445-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-intelligent-query-agent)|
+| 营销策略 Agent | [Data Agent Product Design](ch04/445-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent)|
 | TiDB Cloud Agent-native Database | [Tidb Cloud Agent Database](ch11/077-tidb-cloud-agent-native-kimi-k2-6.html) | [{{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513]({{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513)|
 | ClickHouse 大规模摄取 | [Clickhouse Ingestion At Scale An Open Source Zepto Engineering Story](https://github.com/QianJinGuo/wiki/blob/main/entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) | [{{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story]({{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story)|
-| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/926-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
+| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/1098-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
 
 ### 4.8 工程师期必须完成的 4 个项目
 
@@ -379,7 +336,7 @@ graph LR
 | OpenClaw on Kubernetes | [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/052-amazon-eks-graviton-ai-agent-openclaw-on-kubernetes.html) | 先读实体页：`docs/ch11/049-amazon-eks-graviton-ai-agent-openclaw-on-kubernetes.md` |
 | LiteLLM 成本治理 | [Litellm Amazon Bedrock Cost Control Four Layer](ch11/042-litellm-amazon-bedrock.html) | [{{BASE_URL}}/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底]({{BASE_URL}}/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底)|
 | AgentCore 质量优化飞轮 | [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/122-aws-bedrock-agentcore-quality-optimization-flywheel.html) | [{{BASE_URL}}/raw/articles/aws-bedrock-agentcore-quality-optimization-flywheel]({{BASE_URL}}/raw/articles/aws-bedrock-agentcore-quality-optimization-flywheel)|
-| 企业级 OpenClaw 安全部署 | [Enterprise Openclaw Security Deploy Architecture Guide](ch11/086-openclaw-aws.html) | 先读实体页：`docs/ch11/085-openclaw-aws.md` |
+| 企业级 OpenClaw 安全部署 | [Enterprise Openclaw Security Deploy Architecture Guide](ch11/104-openclaw-aws.html) | 先读实体页：`docs/ch11/085-openclaw-aws.md` |
 
 ### 5.3 安全治理精读清单
 
@@ -387,8 +344,8 @@ graph LR
 |---|---|---|
 | OpenClaw 安全增强 | [Openclaw Security And Feature Enhancement Practices](ch12/027-openclaw.html) | [{{BASE_URL}}/raw/articles/openclaw-security-and-feature-enhancement-practices]({{BASE_URL}}/raw/articles/openclaw-security-and-feature-enhancement-practices)|
 | OpenClaw Security Roadmap | [Where Openclaw Security Is Heading Openclaw Blog](ch12/032-where-openclaw-security-is-heading-openclaw-blog.html) | [{{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog]({{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog)|
-| AI Agent 机器身份安全 | [1Password Securing Ai Agents Machine Identities](ch12/047-securing-ai-agents-and-machine-identities.html) | [{{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities]({{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities)|
-| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch12/058-autonomous-vulnerability-hunting-with-mcp.html) | [{{BASE_URL}}/raw/articles/bullyingllms]({{BASE_URL}}/raw/articles/bullyingllms)|
+| AI Agent 机器身份安全 | [1Password Securing Ai Agents Machine Identities](ch12/050-securing-ai-agents-and-machine-identities.html) | [{{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities]({{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities)|
+| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch12/059-autonomous-vulnerability-hunting-with-mcp.html) | [{{BASE_URL}}/raw/articles/bullyingllms]({{BASE_URL}}/raw/articles/bullyingllms)|
 | AI Detection and Response | [Ai Detection And Response Aidr A Zero Impact Operating Model](ch12/078-ai-detection-and-response-aidr-a-zero-impact-operating-model.html) | [{{BASE_URL}}/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model]({{BASE_URL}}/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model)|
 | LLMReaper 对话窃取攻击 | [Llmreaper Dom Conversation Exfiltration](ch12/091-llmreaper.html) | [{{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512]({{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512)|
 | OpenSandbox 安全沙箱 | [Opensandbox Aliyun Cloud Agent Sandbox Vibecoder](ch12/111-opensandbox-agent-vault-egress-sidecar.html) | 先读实体页：`docs/ch12/119-opensandbox-agent-vault-egress-sidecar.md` |
@@ -397,11 +354,11 @@ graph LR
 
 | 主题 | entity | raw |
 |---|---|---|
-| AI Skill 测评报告 | [Ai Skill 测评报告解读](ch07/078-ai-skill.html) | [{{BASE_URL}}/raw/articles/ai-skill-测评报告解读]({{BASE_URL}}/raw/articles/ai-skill-测评报告解读)|
-| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/472-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
+| AI Skill 测评报告 | [Ai Skill 测评报告解读](ch07/079-ai-skill.html) | [{{BASE_URL}}/raw/articles/ai-skill-测评报告解读]({{BASE_URL}}/raw/articles/ai-skill-测评报告解读)|
+| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/542-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
 | Agent-EvalKit | [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](ch11/027-agent-evalkit-aws-cli-agent.html) | [{{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit]({{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit)|
-| AgentEval YAML | [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/152-agenteval-yaml-agent.html) | 先读实体页：`docs/ch04/141-agenteval-yaml-agent.md` |
-| Claw-SWE-Bench | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch09/055-claw-swe-bench-harness-agent.html) | [{{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm]({{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm)|
+| AgentEval YAML | [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/210-agenteval-yaml-agent.html) | 先读实体页：`docs/ch04/141-agenteval-yaml-agent.md` |
+| Claw-SWE-Bench | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch09/064-claw-swe-bench-harness-agent.html) | [{{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm]({{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm)|
 
 ### 5.5 专家期系统设计题库
 
@@ -454,25 +411,25 @@ graph LR
 
 | 主题 | entity | raw |
 |---|---|---|
-| RLHF / Post-training / ATOM | [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch09/174-ai.html) | [{{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini]({{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini)|
-| NVIDIA Blackwell MLPerf Training | [Nvidia Blackwell Mlperf Training 6 0 Benchmark Results 2026 06](ch09/174-ai.html) | [{{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06]({{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06)|
-| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1300-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
+| RLHF / Post-training / ATOM | [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch09/170-ai.html) | [{{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini]({{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini)|
+| NVIDIA Blackwell MLPerf Training | [Nvidia Blackwell Mlperf Training 6 0 Benchmark Results 2026 06](ch09/170-ai.html) | [{{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06]({{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06)|
+| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1496-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
 
 ### 6.3 推理优化精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
-| Chroma → Qdrant | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [{{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration]({{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration)|
-| 实时语音推理 vLLM + SageMaker | [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch09/174-ai.html) | [{{BASE_URL}}/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai]({{BASE_URL}}/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai)|
+| Chroma → Qdrant | [Chroma To Qdrant 1M Vector Migration](ch01/200-1.html) | [{{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration]({{BASE_URL}}/raw/articles/chroma-to-qdrant-1m-vector-migration)|
+| 实时语音推理 vLLM + SageMaker | [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch09/170-ai.html) | [{{BASE_URL}}/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai]({{BASE_URL}}/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai)|
 | Apple Private Inference | [Apple Siri Private Inference Cryptography Green](https://github.com/QianJinGuo/wiki/blob/main/entities/apple-siri-private-inference-cryptography-green.md) | [{{BASE_URL}}/raw/articles/apple-siri-private-inference-cryptography-green]({{BASE_URL}}/raw/articles/apple-siri-private-inference-cryptography-green)|
-| Didi EAGLE-3 投机解码 | [Didi Eagle 3 Speculative Decoding Agents](ch04/124-agent-eagle-3.html) | [{{BASE_URL}}/raw/articles/didi-eagle-3-speculative-decoding-agents]({{BASE_URL}}/raw/articles/didi-eagle-3-speculative-decoding-agents)|
+| Didi EAGLE-3 投机解码 | [Didi Eagle 3 Speculative Decoding Agents](ch04/181-agent-eagle-3.html) | [{{BASE_URL}}/raw/articles/didi-eagle-3-speculative-decoding-agents]({{BASE_URL}}/raw/articles/didi-eagle-3-speculative-decoding-agents)|
 
 ### 6.4 前沿研究精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
-| Recursive 自动化 AI 研究 | [Recursive Automated Ai Research First Steps 2026](ch09/174-ai.html) | [{{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026]({{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026)|
-| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/926-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
+| Recursive 自动化 AI 研究 | [Recursive Automated Ai Research First Steps 2026](ch09/170-ai.html) | [{{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026]({{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026)|
+| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/1098-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
 | Agent 自我改进六条路 | `docs/ch04/047-agent.md` | 先读实体页 |
 | Hermes Agent Eval Harness | `docs/ch04/035-hermes-agent-eval-harness-skill-7-taskset-harnessadapt.md` | 先读实体页 |
 | MUSE-Autoskill | `docs/ch04/046-muse-autoskill-bytebrain-agent-arxiv-2605-27366.md` | 先读实体页 |
@@ -539,9 +496,9 @@ graph LR
 | 主题 | entity | raw |
 |---|---|---|
 | Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch05/001-impeccable.html) | [{{BASE_URL}}/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding]({{BASE_URL}}/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding)|
-| Data Agent 产品设计 | [Data Agent Product Design](ch04/377-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
-| 下一代企业架构：系统 CLI 化、流程 Skill 化、员工 Agent 化 | [Enterprise Next Gen Architecture System Cli Process Skill Employee Agent Zhan](ch04/379-cli-skill-agent.html) | [{{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan]({{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan)|
-| James Cowling AI 时代工程哲学 | [James Cowling Engineering Philosophy Ai Era](ch09/174-ai.html) | [{{BASE_URL}}/raw/articles/james-cowling-engineering-philosophy-ai-era]({{BASE_URL}}/raw/articles/james-cowling-engineering-philosophy-ai-era)|
+| Data Agent 产品设计 | [Data Agent Product Design](ch04/445-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview]({{BASE_URL}}/raw/articles/volcengine-data-agent-product-overview)|
+| 下一代企业架构：系统 CLI 化、流程 Skill 化、员工 Agent 化 | [Enterprise Next Gen Architecture System Cli Process Skill Employee Agent Zhan](ch04/448-cli-skill-agent.html) | [{{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan]({{BASE_URL}}/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan)|
+| James Cowling AI 时代工程哲学 | [James Cowling Engineering Philosophy Ai Era](ch09/170-ai.html) | [{{BASE_URL}}/raw/articles/james-cowling-engineering-philosophy-ai-era]({{BASE_URL}}/raw/articles/james-cowling-engineering-philosophy-ai-era)|
 | Token 经济学与 AI 效率 | [Tencent Token Economics Ai Productivity](ch12/003-token.html) | [{{BASE_URL}}/raw/articles/tencent-token-economics-ai-productivity]({{BASE_URL}}/raw/articles/tencent-token-economics-ai-productivity)|
 | AI 普惠与 Token 效率门槛 | `docs/ch20-ai-philosophy.md` | 读 Ch20.009 / Ch20.011 |
 | Dario Amodei AI 指数发展与政策 | `docs/ch20-ai-philosophy.md` | 读 Ch20.015 / Ch20.016 |

@@ -36,10 +36,10 @@ AI 在 iMedLoop 中的角色是辅助医生、服务临床决策——中国工�
 
 ## 相关实体
 
-- [医疗预约Agent](../ch04/688-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.html)
+- [医疗预约Agent](../ch04/689-build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.html)
 - [Heidi Health 临床AI](../ch05/097-ai.html)
 - [Anthropic 生物学Agent](ch01/1215-anthropic.html)
-- [NVIDIA BioNeMo Agent](../ch04/012-nvidia-bionemo-agent-toolkit.html)
+- [NVIDIA BioNeMo Agent](../ch04/376-nvidia-bionemo-agent-toolkit.html)
 - [Data Agent 平台架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-agent-platform-architecture.md)
 - 多模态AI (`concepts/multimodal-ai` 待创建)
 

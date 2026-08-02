@@ -66,9 +66,9 @@ Bedrock Ops Alert 体现的范式转变是：将"监控→告警→人工判断�
 
 ## 相关实体
 - [Zenjoy Aiops Agent Bedrock Eks Prometheus](ch11/310-bedrock.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/628-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/628-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/474-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/630-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/630-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/476-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Amazon Bedrock Claude Prompt Cache Strategy](ch11/069-amazon-bedrock-claude-prompt-cache.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)

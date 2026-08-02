@@ -59,7 +59,7 @@ MX 是 NVIDIA Dynamo 开源生态的核心组件之一，与 [Bedrock](../ch11/3
 
 - [SANA-Video 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/sana-video-2-hybrid-linear-attention-video-generation.md) — NVIDIA Research 的另一个高性能推理优化案例
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 从系统角度管理复杂 AI 基础设施的方法论框架
-- [llama.cpp 部署](../ch11/305-llama-cpp-deployment.html) — 轻量级本地推理部署方案，与 MX 面向的生产级部署形成对比
+- [llama.cpp 部署](../ch11/288-llama-cpp-deployment.html) — 轻量级本地推理部署方案，与 MX 面向的生产级部署形成对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/modelexpress-distributing-model-artifacts-nvidia-2026.md)
 

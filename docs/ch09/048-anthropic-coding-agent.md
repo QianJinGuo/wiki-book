@@ -175,9 +175,9 @@ Top 25 大学 +40%、博士生 >25%、终身教授 ~10%——这些数字背后�
 ## 相关实体
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1215-anthropic.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1215-anthropic.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/466-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/466-agent-skills.html)
-- [Anthropic 14 Skill Patterns Best Practices](../ch01/501-anthropic-14-skill.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/468-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/468-agent-skills.html)
+- [Anthropic 14 Skill Patterns Best Practices](../ch01/500-anthropic-14-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-coding-agents-social-science-survey-2026.md)

@@ -64,10 +64,10 @@ Google DeepMind 论文（arXiv 2605.27295）：一个原生多模态 embedding �
 
 ## 相关实体
 - [Gemini Ai](ch01/052-gemini-ai-google.html)
-- [Google Debuts Gemini Focused Updates At Io 2026](ch01/1098-20.html)
-- [Google Io 2026 Agentic Gemini Era](../ch04/074-agentic.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/525-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
-- [Gemini 3 5 Frontier Intelligence](ch01/083-gemini-3-5-frontier-intelligence-with-action.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](ch01/1100-20.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/289-agentic.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/524-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Gemini 3 5 Frontier Intelligence](ch01/695-gemini-3-5-frontier-intelligence-with-action.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

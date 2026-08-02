@@ -11,10 +11,10 @@
 - 第三方开发者被迫在 Apple 的"squircle"（圆角矩形）约束下工作 
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/1098-20.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/1100-20.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/097-ai.html)
 - [Www Referenceboard App](https://github.com/QianJinGuo/wiki/blob/main/entities/www-referenceboard-app.md)
-- [Apple Silicon Costs More Than Openrouter](ch01/109-apple-silicon-costs-more-than-openrouter.html)
+- [Apple Silicon Costs More Than Openrouter](ch01/112-apple-silicon-costs-more-than-openrouter.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/somethings-rotten-in-the-state-of-macos-icon-design.md)
