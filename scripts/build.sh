@@ -7,6 +7,10 @@ cd "$PROJECT_DIR"
 
 echo "=== Building wiki-book ==="
 
+# Generate the small, curated course layer before MkDocs copies docs/ into site/.
+echo "=== Building curated course ==="
+python3 scripts/build-course.py
+
 # Build via Docker
 docker run --rm -v "$(pwd):/build" -w /build wiki-book-builder:latest mkdocs build
 
