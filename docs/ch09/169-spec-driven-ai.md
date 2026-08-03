@@ -22,7 +22,7 @@ AI 时代软件开发的核心矛盾变了：不是写不出代码，是**没人
 | Vibe Coding | 无 | 损耗裸奔 |
 | **SDD** | **spec** | **显式定位 + 人审** |
 
-与 [Harness Engineering](ch05/129-harness-engineering.html) 互补——该实体是 Harness 工程框架，本实体是 **Spec 层的认知与选型理论**。
+与 [Harness Engineering](../ch05/129-harness-engineering.html) 互补——该实体是 Harness 工程框架，本实体是 **Spec 层的认知与选型理论**。
 
 ## Spec 的定义
 
@@ -42,9 +42,9 @@ Prompt 是一次性指令，Spec 是可审计的责任链。[^1]
 
 ## 与已有实体的关系
 
-- [OpenSpec 四步法复盘](ch01/1188-spec.html) — 互补：该实体聚焦 OpenSpec 具体流程短板，本实体提供 **SDD 的认知基础框架**
-- [OpenSpec + Trae/Solo 实践](ch01/1188-spec.html) — 互补：工具实操 vs 认知理论
-- [Spec 作为反熵架构](ch05/100-ai.html) — 互补：该实体聚焦 Spec 作为架构工具，本实体聚焦 **SDD 的开发流程认知**
+- [OpenSpec 四步法复盘](../ch05/053-openspec.html) — 互补：该实体聚焦 OpenSpec 具体流程短板，本实体提供 **SDD 的认知基础框架**
+- [OpenSpec + Trae/Solo 实践](../ch05/053-openspec.html) — 互补：工具实操 vs 认知理论
+- [Spec 作为反熵架构](../ch05/021-ai-native.html) — 互补：该实体聚焦 Spec 作为架构工具，本实体聚焦 **SDD 的开发流程认知**
 
 ## 三大认知陷阱
 

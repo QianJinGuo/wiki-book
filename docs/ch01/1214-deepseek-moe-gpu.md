@@ -51,8 +51,8 @@ EP是唯一一个"在forward pass内部把token重新换主"的并行维度—�
 
 ## 与现有知识的链接
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-moe-parallel-strategy.md)
-- → [DeepSeek V4论文解读](ch05/100-ai.html) — 训练流程
-- → [DeepSeek V4 Pro评测](ch01/1442-claude.html) — 模型能力
+- → [DeepSeek V4论文解读](ch01/435-deepseek-v4.html) — 训练流程
+- → [DeepSeek V4 Pro评测](ch01/435-deepseek-v4.html) — 模型能力
 
 ---
 

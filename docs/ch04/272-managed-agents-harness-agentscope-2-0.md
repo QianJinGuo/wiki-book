@@ -70,16 +70,16 @@ MultiagentSpec 的 wire schema 是 `type + agents[]`；wait_async_results 用于
 
 ## 与既有 AgentScope 体系的定位差异
 
-AgentScope 2.0 在平台中的角色非常明确：**提供 HarnessAgent 与 FS/Sandbox 抽象，保证「效果默认项」和「执行面可替换」**；Managed Agents 负责租约、事件契约、多租与 ACL，而不是再包一层私有化的 ReAct。相比 [AgentScope Java 2.0 企业级分布式 Harness](ch03/035-agent.html)（聚焦 JVM 多租户资源隔离与中间件体系）和 [AgentScope Builder](ch03/035-agent.html)（自进化智能体的产品化），本实体聚焦 AgentScope 2.0 作为 **Managed Agents 底座 Runtime** 的 Brain/Hands 拆分、控制面/数据面分层与三种 Worker 执行模式。
+AgentScope 2.0 在平台中的角色非常明确：**提供 HarnessAgent 与 FS/Sandbox 抽象，保证「效果默认项」和「执行面可替换」**；Managed Agents 负责租约、事件契约、多租与 ACL，而不是再包一层私有化的 ReAct。相比 [AgentScope Java 2.0 企业级分布式 Harness](../ch05/085-harness.html)（聚焦 JVM 多租户资源隔离与中间件体系）和 [AgentScope Builder](ch04/758-self-evolving-agent.html)（自进化智能体的产品化），本实体聚焦 AgentScope 2.0 作为 **Managed Agents 底座 Runtime** 的 Brain/Hands 拆分、控制面/数据面分层与三种 Worker 执行模式。
 
 ## 相关实体
 
-- [AgentScope Java 2.0：企业级分布式 Harness 框架](ch03/035-agent.html)
-- [AgentScope Builder](ch03/035-agent.html)
-- [AgentScope Java Harness Framework](ch03/035-agent.html)
-- [我用阿里 AgentScope 复刻了一个 WorkBuddy](ch03/035-agent.html)
-- [Agent Harness 架构](ch03/035-agent.html)
-- [Agent Harness 生产化](ch03/035-agent.html)
+- [AgentScope Java 2.0：企业级分布式 Harness 框架](../ch05/085-harness.html)
+- [AgentScope Builder](ch04/758-self-evolving-agent.html)
+- [AgentScope Java Harness Framework](../ch03/057-agentscope-java-harness-framework-2-0-agent-harness.html)
+- [我用阿里 AgentScope 复刻了一个 WorkBuddy](../ch03/035-agent.html)
+- [Agent Harness 架构](../ch05/062-agent-harness.html)
+- [Agent Harness 生产化](../ch05/062-agent-harness.html)
 - [Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 - [100 行 vs Managed Harness 权衡](https://github.com/QianJinGuo/wiki/blob/main/concepts/100-line-vs-managed-harness-tradeoff.md)
 - [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)

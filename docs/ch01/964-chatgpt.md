@@ -66,10 +66,10 @@ AI 的"性格"并非固有属性，而是由训练数据、RLHF 奖励机制和�
 OpenAI 已在官方博客中调侃"接住"梗的存在，甚至在 GPT Image 2 的示例图片中玩起了这个梗，这表明厂商已意识到这一问题。随着模型迭代，安全层和训练机制的调整可能会改变模型的回复风格。用户应持续关注模型更新日志中对后训练流程的修改，这将有助于预判 AI"性格"的可能演变方向。
 
 ## 相关实体
-- [Karpathy Llm Wiki V2 2026](ch01/1429-0.html)
-- [Openai携手五巨头开源革命性超算协议一举解决超大集群Llm训练不稳定和网络性能难题](ch05/100-ai.html)
-- [Microsoft Agent Framework Python Full Guide Zizhi](ch03/035-agent.html)
-- [Ai True Moat Not Llm But Organization](ch05/100-ai.html)
+- [Karpathy Llm Wiki V2 2026](ch01/1476-llm.html)
+- [Openai携手五巨头开源革命性超算协议一举解决超大集群Llm训练不稳定和网络性能难题](ch01/227-openai.html)
+- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/468-python.html)
+- [Ai True Moat Not Llm But Organization](ch01/1476-llm.html)
 - [Pi Mono Github](ch01/1091-pi-mono-github.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt小心翼翼回复风格技术原因.md)

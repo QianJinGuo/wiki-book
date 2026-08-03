@@ -75,7 +75,7 @@ Algolia 这份白皮书构建了一个 AI 驱动搜索的完整架构视图，�
 
 ## 相关概念
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
-- [AI Agent 记忆系统架构](ch04/214-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](../ch04/214-how-ai-agent-memory-works.html)
 
 - [200人销售团队企业级 Agent 知识库问答系统架构设计](https://github.com/QianJinGuo/wiki/blob/main/queries/sales-team-agent-knowledge-base-architecture.md)
 

@@ -77,9 +77,9 @@ QQ 浏览器平台技术团队（腾讯 CSIG）基于 CodeBuddy Plugin 搭建了
 
 ---
 **相关条目**
-- [腾讯 AI 编程实践](ch05/100-ai.html)
-- [腾讯 TAB Harness 生产实践](ch05/085-harness.html)
-- [腾讯团队知识 Harness](ch05/100-ai.html)
+- [腾讯 AI 编程实践](../ch05/118-ai-coding.html)
+- [腾讯 TAB Harness 生产实践](../ch05/085-harness.html)
+- [腾讯团队知识 Harness](../ch05/085-harness.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-coding-team-experience-management-tencent-qqbrowser.md)
 
 ---

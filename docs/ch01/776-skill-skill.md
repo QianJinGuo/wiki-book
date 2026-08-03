@@ -107,11 +107,11 @@ SkillOpt 的发现直接支持了 [Harness Engineering](https://github.com/QianJ
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/084-claude-code.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

@@ -95,11 +95,11 @@ AI 项目从 PoC 到生产的失败，本质上是一个**系统工程问题**�
 2. **关注端侧场景的实际投入**：移动端、车载、IoT 等端侧场景的 AI 落地，需要专项技术储备和硬件预算规划，不能用云端模型的思路套用。
 3. **从"技术选型"转向"能力建设"**：AI 落地的长期竞争力不在于选择了哪个模型，而在于是否建立了持续迭代、工程化、可观测的 AI 能力体系。
 ## 相关实体
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch03/035-agent.html)
-- [Karpathy Ai Agent 7 Bits Value Decline](ch05/100-ai.html)
-- [Skill Formal Theory Survey 10Papers](ch04/341-skill.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/523-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Karpathy Ai Agent 7 Bits Value Decline](../ch04/206-karpathy-ai.html)
+- [Skill Formal Theory Survey 10Papers](../ch04/341-skill.html)
 - [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](ch01/333-generalization-dynamics-of-lm-pre-training-jiaxin-wen.html)
-- [Agent Framework Owl Principles](ch03/035-agent.html)
+- [Agent Framework Owl Principles](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/很多企业做完-ai-poc为什么还是上不了生产.md)
 

@@ -34,7 +34,7 @@ Mollick 引用了三个关键评估框架来量化 AI 的 Agent 能力增长：
 2. **AISI 自主能力评估**：英国政府 AI 安全研究所对 AI 自主网络能力的官方测评
 3. **AA-Briefcase 测试**：模拟复杂的多周咨询任务，评估 AI 在多种分析任务中的综合表现
 
-值得注意的是，Mollick 将中国开源权重模型也纳入分析，发现它们在 AA-Briefcase 上呈现自己的指数曲线，落后美国闭源模型约 6-12 个月。这一框架与 [Mollick 的 Co-Existence 框架](ch05/100-ai.html) 中的"能力阶梯"概念一脉相承。
+值得注意的是，Mollick 将中国开源权重模型也纳入分析，发现它们在 AA-Briefcase 上呈现自己的指数曲线，落后美国闭源模型约 6-12 个月。这一框架与 [Mollick 的 Co-Existence 框架](../ch01/818-ai-mollick.html) 中的"能力阶梯"概念一脉相承。
 
 ### 从"外行聊天"到"专家委托"的范式转换
 
@@ -48,13 +48,13 @@ Mollick 提出了一个关键洞察：**AI 使用方式正从"非专家用聊天
 
 OpenAI 与学术经济学家联合进行的研究显示，Agent 使用正在以惊人的速度渗透企业内部。在 OpenAI 内部，四分之一的员工每周同时运行至少四个 Agent。关键是，不仅仅是程序员在使用 Agent——法务、HR 和其他非技术职能的员工以几乎相同的速度采纳了这一工具。
 
-OpenAI 可能正在成为"煤矿里的金丝雀"——预示其他行业将要经历的变化。当编程工作由 AI 在专门的 Harness 和应用中完成后，其他角色也开始以某种方式"编程"——他们不是在写代码，而是在设计和管理 AI 工作流。这意味着 [Harness Engineering](ch05/129-harness-engineering.html) 的能力将成为跨职能的核心竞争力，而非仅限于技术团队。
+OpenAI 可能正在成为"煤矿里的金丝雀"——预示其他行业将要经历的变化。当编程工作由 AI 在专门的 Harness 和应用中完成后，其他角色也开始以某种方式"编程"——他们不是在写代码，而是在设计和管理 AI 工作流。这意味着 [Harness Engineering](../ch05/129-harness-engineering.html) 的能力将成为跨职能的核心竞争力，而非仅限于技术团队。
 
 ### Agent 的"额外机械"优势
 
 Mollick 指出，Agent 的优势不仅来自底层模型的进步，还来自"额外机械"（extra machinery）——提供工具访问权限和行动环境的 Harness，以及为 Agent 构建的专门应用（如 Claude Code 或 OpenAI Codex）。这些工具可以进一步提升 AI 模型的能力。
 
-这一观点与 [Hermes Agent 的 Skill 设计](ch04/341-skill.html) 理念一致：好的 Harness 不是简单的 API 封装，而是能放大模型能力的系统性框架。模型的能力曲线和 Harness 的工程优化存在乘数效应。
+这一观点与 [Hermes Agent 的 Skill 设计](../ch01/524-hermes-agent-skill.html) 理念一致：好的 Harness 不是简单的 API 封装，而是能放大模型能力的系统性框架。模型的能力曲线和 Harness 的工程优化存在乘数效应。
 
 ## 实践启示
 
@@ -66,10 +66,10 @@ Mollick 指出，Agent 的优势不仅来自底层模型的进步，还来自"�
 
 ## 相关实体
 
-- [Co-Existence：AI Agent 化范式的演变](ch05/100-ai.html)
+- [Co-Existence：AI Agent 化范式的演变](../ch01/818-ai-mollick.html)
 - [使用 Mythos 的真实体验](ch04/387-what-it-feels-like-to-work-with-mythos.html)
-- [Harness Engineering 探索之旅](ch05/129-harness-engineering.html)
-- [Hermes Agent Skill 设计分析](ch04/341-skill.html)
+- [Harness Engineering 探索之旅](../ch05/129-harness-engineering.html)
+- [Hermes Agent Skill 设计分析](../ch01/524-hermes-agent-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-twilight-of-the-chatbots.md)
 

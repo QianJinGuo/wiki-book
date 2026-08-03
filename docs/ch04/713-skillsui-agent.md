@@ -7,7 +7,7 @@
 # SkillsUI 企业 Agent 中间层
 
 ## 相关实体
-- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](ch05/100-ai.html)
+- [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](../ch01/350-langchain.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillsui-enterprise-agent-middle-layer.md)
 
 ## 深度分析
@@ -46,12 +46,12 @@ SkillsUI 是兔展智能推出的企业 Agent 平台，定位为"企业 Agent �
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/075-agentic.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/247-openclaw.html)
+- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/247-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

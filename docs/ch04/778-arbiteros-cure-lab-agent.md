@@ -56,15 +56,15 @@ Trace（log/{trace_id}.json 按轨迹组织）要回答三件事：**输入从�
 
 ## 与相关实体关系
 
-ArbiterOS 与 [Agent Harness 上下文管理：工作集视角](ch03/035-agent.html) 互补：前者管"动作能不能进执行面"（执行权治理），后者管"窗口里放什么"（上下文治理），同属 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 体系下的不同故障面。与 [CrewAI 数据治理与凭据模式](ch05/100-ai.html) 相比，ArbiterOS 走的是"模型输出与工具执行之间的确定性治理层"路线（Instruction + 数据流标签传播 + Trace），而非凭据封装模式；其"规划权与执行权分离"与 [Claude Code 大型代码库 Harness 配置](ch03/084-claude-code.html) 的边界设计思路一致。
+ArbiterOS 与 [Agent Harness 上下文管理：工作集视角](../ch05/062-agent-harness.html) 互补：前者管"动作能不能进执行面"（执行权治理），后者管"窗口里放什么"（上下文治理），同属 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 体系下的不同故障面。与 [CrewAI 数据治理与凭据模式](../ch03/035-agent.html) 相比，ArbiterOS 走的是"模型输出与工具执行之间的确定性治理层"路线（Instruction + 数据流标签传播 + Trace），而非凭据封装模式；其"规划权与执行权分离"与 [Claude Code 大型代码库 Harness 配置](../ch03/084-claude-code.html) 的边界设计思路一致。
 
 ## 相关实体
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arbiteros-governance-kernel-cuhk-ruofei-2026-08-03.md)
-- [OpenWorker 桌面 Agent 架构](ch03/035-agent.html)（同作者若飞源码拆解：权限引擎与执行边界）
-- [CrewAI 数据治理与凭据模式](ch05/100-ai.html)（治理路线对比）
-- [Claude 企业托管 Agent 沙箱](ch07/001-mcp.html)（刚性权限面）
-- [Agent Harness 上下文管理：工作集视角](ch03/035-agent.html)（上下文治理面）
+- [OpenWorker 桌面 Agent 架构](../ch03/035-agent.html)（同作者若飞源码拆解：权限引擎与执行边界）
+- [CrewAI 数据治理与凭据模式](../ch03/035-agent.html)（治理路线对比）
+- [Claude 企业托管 Agent 沙箱](ch04/618-claude-managed-agents.html)（刚性权限面）
+- [Agent Harness 上下文管理：工作集视角](../ch05/062-agent-harness.html)（上下文治理面）
 
 ---
 

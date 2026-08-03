@@ -66,10 +66,10 @@ GenericAgent 的 **5类9个互不重叠原子工具**：
 
 ## 关联条目
 
-- [Hermes Agent 自进化](ch03/035-agent.html) — 另一自进化智能体实现，对比 GenericAgent 的 "做减法" vs Hermes 的 Skill 演化路径
-- [TACO：让 CLI Agent 学会丢掉无用上下文](ch03/035-agent.html) — 上下文压缩的另一条路线，奖励模型驱动的自适应丢弃策略
+- [Hermes Agent 自进化](../ch03/102-hermes-agent.html) — 另一自进化智能体实现，对比 GenericAgent 的 "做减法" vs Hermes 的 Skill 演化路径
+- [TACO：让 CLI Agent 学会丢掉无用上下文](../ch03/035-agent.html) — 上下文压缩的另一条路线，奖励模型驱动的自适应丢弃策略
 - [上下文工程与三种记忆范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md) — 与 GenericAgent 五层记忆形成对比（分层 vs 三种范式）
-- [阿里云 Agent 进化四阶段六维度](ch03/035-agent.html) — 企业级 Agent 进化的不同视角
+- [阿里云 Agent 进化四阶段六维度](../ch03/035-agent.html) — 企业级 Agent 进化的不同视角
 
 ## 退出
 

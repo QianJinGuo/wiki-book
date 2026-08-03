@@ -7,9 +7,9 @@
 # Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)
 
 ## 相关实体
-- [microsoft is quietly shopping for an openai replacement](ch05/100-ai.html)
+- [microsoft is quietly shopping for an openai replacement](ch01/039-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [vietnam to develop domestic cloud](ch01/1325-opd.html)
-- [akamai acquires israeli ai browser security startup layerx f](ch05/100-ai.html)
+- [akamai acquires israeli ai browser security startup layerx f](ch01/046-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md)
 

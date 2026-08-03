@@ -92,7 +92,7 @@ DeepSeek 用坐标（x, y）解决：每一步都是精确数值，没有歧义�
 
 - F_TwG：专门训 thinking with grounding（用框思考）
 - F_TwP：专门训 thinking with pointing（用点思考）
-分开训的原因：避免模式冲突（用框和用点的思维方式有差异，混在一起训会互相干扰） See also [Karpathy Vibe Coding To Agentic Engineering](ch03/035-agent.html)
+分开训的原因：避免模式冲突（用框和用点的思维方式有差异，混在一起训会互相干扰） See also [Karpathy Vibe Coding To Agentic Engineering](../ch04/075-agentic.html)
 
 ### Stage 3: Specialized RL（专家化强化学习）
 算法：GRPO（V4 论文同款）
@@ -205,7 +205,7 @@ DeepSeek 专门设计了对抗样本（颜色一致的路径追踪、堵墙迷�
 4. **模态解耦**：视觉原语能力和语言能力解耦这一点已经验证，但和世界知识、程序知识的解耦边界在哪里？
 ## 相关实体
 
-- [被裁了想转 ai agent？先看面试官到底在筛你哪 7 样东西](ch03/035-agent.html)
+- [被裁了想转 ai agent？先看面试官到底在筛你哪 7 样东西](../ch03/035-agent.html)
 
 ---
 

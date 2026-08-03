@@ -48,8 +48,8 @@ Anthropic 四个远程 surface 中，Dispatch 对 PM 最有用：手机上的单
 
 ## 相关实体
 
-- [Hermes Agent 深度解析（阿里云/飞樰）](ch03/035-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/084-claude-code.html)
+- [Hermes Agent 深度解析（阿里云/飞樰）](../ch03/102-hermes-agent.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
 - [Claude Cowork 2026 大更新](ch01/805-claude-cowork.html)
 - [Claude Dispatch 与接口的力量](ch01/691-claude-dispatch-and-the-power-of-interfaces.html)
 - [基于 Git 仓库的 PM 自动化](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)

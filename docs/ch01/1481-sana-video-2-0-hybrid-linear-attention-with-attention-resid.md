@@ -61,7 +61,7 @@ SANA-Video 2.0 代表了视频生成模型效率优化的一个重要趋势：�
 - [MoE 架构](ch01/1408-moe-architecture.html) — 另一种通过稀疏激活提升推理效率的方法
 - [Tencent Hunyuan HILS Attention](ch01/897-hils-attention.html) — 层级路由注意力，与混合注意力思路互补
 - [Speculative Decoding](ch01/1188-spec.html) — 推理加速的另一个重要方向
-- [EchoGen](ch01/1429-0.html) — ICLR 2026 VAR 主体驱动生成，另一个关注效率-质量权衡的生成模型
+- [EchoGen](ch01/1105-20.html) — ICLR 2026 VAR 主体驱动生成，另一个关注效率-质量权衡的生成模型
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sana-video-2-hybrid-linear-attention-video-generation.md)
 

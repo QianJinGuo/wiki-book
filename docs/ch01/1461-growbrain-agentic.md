@@ -30,7 +30,7 @@ GrowBrain 的架构演进历程是近年来少有的「生产环境逼出来的�
 
 **第二个问题：有状态设计的并发隐患。** ReactAgent 的 Chain 和 Memory 是构造时绑定的单例对象，在多个请求线程并发调用时，不同请求之间的 Memory 互相污染、Skills 指令全量灌入每个请求浪费 token。这在「单用户交互」的假设下没问题，但在服务端高并发场景下构成严重架构缺陷。
 
-这两个问题在本质上反映了 Agent 架构设计中一个尚未被充分认知的原则：**LLM 的职责范围应当与其模型能力相匹配**。小模型的幻觉风险要求从「LLM 全程驱动」转向「框架精确控制 + LLM 在关键节点介入」。这与 [Agent 配置组合](ch07/001-mcp.html) 中「Skill 作为可控边界」的设计理念形成互文。
+这两个问题在本质上反映了 Agent 架构设计中一个尚未被充分认知的原则：**LLM 的职责范围应当与其模型能力相匹配**。小模型的幻觉风险要求从「LLM 全程驱动」转向「框架精确控制 + LLM 在关键节点介入」。这与 [Agent 配置组合](../ch04/341-skill.html) 中「Skill 作为可控边界」的设计理念形成互文。
 
 ### PES 架构设计原则
 
@@ -50,7 +50,7 @@ PES 架构的核心创新在于把「规划」和「执行」在时序上解耦�
 2. **将 Memory 从 Agent 级拆到请求级**：MemoryManager 实现三级隔离——请求级（用完即释放）、会话级（跨请求保持上下文）、共享级（跨 Agent 共享知识）
 3. **将 Skills/Tools 从构造时拆到运行时**：通过全局注册中心实现动态加载和热更新，新增能力无需重建 Agent 实例
 
-这三个设计原则构成了一个通用范式：**Agent 架构的「无状态化」是生产级部署的前提**。这与 [Agent Harness 上下文管理](ch03/035-agent.html) 中的工作集隔离设计不谋而合。
+这三个设计原则构成了一个通用范式：**Agent 架构的「无状态化」是生产级部署的前提**。这与 [Agent Harness 上下文管理](../ch05/062-agent-harness.html) 中的工作集隔离设计不谋而合。
 
 ### 子 Agent 矩阵的协同设计
 
@@ -60,7 +60,7 @@ GrowBrain 没有用一个 LLM 端到端解决所有问题，而是拆成三个�
 - **流量分配 Agent**：采用 CoT Distillation 策略，让大模型（数据分析师）学习规则定义的冷启分配策略，再蒸馏给轻量级模型（策略官）。策略框架全部内嵌于 prompt，修改指令即可实时调整策略
 - **流量诊断 Agent**：从召回、粗排、精排、混排、曝光日志构建全链路漏斗，将结构化数据直接写进推理链，实现逐层归因
 
-这种「职责分离 + 能力互补」的子 Agent 设计模式，与 [Marvis Multi-Agent 架构](ch03/035-agent.html) 中的多 Agent 分工协作理念高度一致，代表了生产级 Agent 系统的标准设计范式。
+这种「职责分离 + 能力互补」的子 Agent 设计模式，与 [Marvis Multi-Agent 架构](../ch03/095-marvis.html) 中的多 Agent 分工协作理念高度一致，代表了生产级 Agent 系统的标准设计范式。
 
 ### 双 Pipeline 的工程创新
 
@@ -76,13 +76,13 @@ SystemPipeline 和 ChatPipeline 共享同一套 Agent 矩阵和底层能力底�
 
 ## 相关实体
 
-- [Agent 配置组合](ch07/001-mcp.html)
-- [Agent Harness 上下文管理](ch03/035-agent.html)
-- [Marvis 多智能体桌面助手](ch03/035-agent.html)
-- [AgentCore Trip Allocation](ch03/035-agent.html)
-- [Agent 评测方法论](ch03/035-agent.html)
-- [Harness Engineering Survey 2026](ch05/129-harness-engineering.html)
-- [Alibaba Agentic Cloud](ch03/035-agent.html)
+- [Agent 配置组合](../ch04/341-skill.html)
+- [Agent Harness 上下文管理](../ch05/062-agent-harness.html)
+- [Marvis 多智能体桌面助手](../ch03/095-marvis.html)
+- [AgentCore Trip Allocation](../ch04/751-agentcore-harness.html)
+- [Agent 评测方法论](../ch03/035-agent.html)
+- [Harness Engineering Survey 2026](../ch05/129-harness-engineering.html)
+- [Alibaba Agentic Cloud](../ch04/424-agentic-cloud.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/淘宝内容生态-growbrain-淘宝agentic内容成长引擎.md)
 

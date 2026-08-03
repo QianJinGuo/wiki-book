@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [hermes新顶流agent skills闭环系统深度解析](ch04/341-skill.html)
+- [hermes新顶流agent skills闭环系统深度解析](../ch07/018-hermes-skill.html)
 - [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-long-running-governance-five-cards-ruofei.md)
 
@@ -50,12 +50,12 @@ Hermes 的官方扩展路径是"主 Agent → 专职 Agent → orchestrator → 
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/247-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/247-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/247-openclaw.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/247-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/247-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

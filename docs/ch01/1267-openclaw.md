@@ -42,12 +42,12 @@
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/247-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/247-openclaw.html)
-- [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](ch05/100-ai.html)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](ch05/100-ai.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch05/100-ai.html)
-- [Harness Engineering Core Patterns Claude Code](ch03/084-claude-code.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/247-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
+- [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](../ch03/035-agent.html)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/100-ai.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1532-anthropic.html)
+- [Harness Engineering Core Patterns Claude Code](../ch05/129-harness-engineering.html)
 
 ## 实践启示
 

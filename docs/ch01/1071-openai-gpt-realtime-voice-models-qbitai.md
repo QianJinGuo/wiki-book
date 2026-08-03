@@ -13,10 +13,10 @@
 
 ## 相关实体
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/091-build-live-translation-apps-with-gpt-realtime-translate.html)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch05/100-ai.html)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/227-openai.html)
 - GPT-5.5 实测
 - [Gpt 5 Is Here And Openai Has Some Tips](ch01/877-gpt-5-is-here-and-openai-has-some-tips.html)
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch05/100-ai.html)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/1532-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-gpt-realtime-voice-models-qbitai.md)
 

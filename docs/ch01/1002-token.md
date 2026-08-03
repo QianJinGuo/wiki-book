@@ -52,10 +52,10 @@ Token 不经济的内部技术根源来自 Agent 架构的五重结构性损耗�
 
 ## 相关实体
 
-- [AI Coding 效率分析](ch05/100-ai.html)
+- [AI Coding 效率分析](../ch05/118-ai-coding.html)
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [Agent 评测方法论](ch03/035-agent.html)
-- [Anthropic 输出验证瓶颈](ch09/098-anthropic-8x.html)
+- [Agent 评测方法论](../ch03/035-agent.html)
+- [Anthropic 输出验证瓶颈](../ch09/098-anthropic-8x.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/token不经济.md)
 

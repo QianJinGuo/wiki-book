@@ -11,11 +11,11 @@
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
 ## 相关实体
-- [Skillclaw](ch04/341-skill.html)
+- [Skillclaw](ch04/539-skillclaw-nacos-agent-skill-registry.html)
 - [Skillclaw Collective Intelligence](ch04/341-skill.html)
 - [Skillclaw Hyman Nightly Evolution Alibaba](ch04/341-skill.html)
 - [Skill Rag Tsinghua Sra](ch04/341-skill.html)
-- [Claude Code Search Architecture Tencent 2026](ch03/084-claude-code.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw-alibaba-paperagent.md)
 

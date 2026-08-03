@@ -44,7 +44,7 @@ Superpowers 的"铁律"（Iron Law）不仅是工程纪律，更是针对 LLM �
 - 反合理化（Anti-Rationalization）：禁止 LLM 自行解释为什么跳过某个步骤
 - 可验证约束（Verifiable Constraints）：每一条规范都能量化验证，不依赖主观判断
 
-这一设计理念与 [Agent Harness 生产化](ch03/035-agent.html)中的"可观测性闭环"思路一致——不是信任代理的行为，而是通过系统约束确保代理在安全边界内运作。
+这一设计理念与 [Agent Harness 生产化](ch05/062-agent-harness.html)中的"可观测性闭环"思路一致——不是信任代理的行为，而是通过系统约束确保代理在安全边界内运作。
 
 ### 规范累积机制的进化逻辑
 
@@ -65,7 +65,7 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 - Grilling 模式适合在既有约束下优化、需要精确执行的场景
 - CCC 的三层架构本质上是 grilling 模式的工作流工程化——将约束封装在 Harness 层和 Skill 层，让 AI 在 Spec 层的变化描述中自由发挥，但受上下层结构的约束
 
-这与 [Agent vs Workflow 控制权连续谱](ch03/035-agent.html)中描述的"受控自主"模式一致：不是完全信任 AI 的自主性，也不是完全剥夺 AI 的灵活性，而是在多层约束中给 AI 留出可控的自由度。
+这与 [Agent vs Workflow 控制权连续谱](../ch04/744-agent-vs-workflow.html)中描述的"受控自主"模式一致：不是完全信任 AI 的自主性，也不是完全剥夺 AI 的灵活性，而是在多层约束中给 AI 留出可控的自由度。
 
 ## 实践启示
 
@@ -81,12 +81,12 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 
 ## 相关实体
 
-- [Matt Pocock Skills vs Superpowers](ch04/341-skill.html) — 同一路线对比的另一视角
-- [Superpowers 三器合一](ch05/100-ai.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
-- [Agent vs Workflow 控制权连续谱](ch03/035-agent.html) — 架构选择的底层框架
-- [Agent Harness 生产化](ch03/035-agent.html) — 生产环境中的 Agent 约束与可观测性设计
-- [Spec-Driven Development Harness](ch01/1188-spec.html) — 与 Spec 层配合的 Harness 方法论
-- [AI-Friendly 后端标准化路径](ch05/100-ai.html) — 另一视角的工程规范建设实践
+- [Matt Pocock Skills vs Superpowers](../ch03/076-skills.html) — 同一路线对比的另一视角
+- [Superpowers 三器合一](ch05/118-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
+- [Agent vs Workflow 控制权连续谱](../ch04/744-agent-vs-workflow.html) — 架构选择的底层框架
+- [Agent Harness 生产化](ch05/062-agent-harness.html) — 生产环境中的 Agent 约束与可观测性设计
+- [Spec-Driven Development Harness](ch05/085-harness.html) — 与 Spec 层配合的 Harness 方法论
+- [AI-Friendly 后端标准化路径](ch05/022-ai-friendly.html) — 另一视角的工程规范建设实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-kit-openspec-superpowers-hybrid-harness.md)
 

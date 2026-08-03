@@ -83,15 +83,15 @@ Garry Tan 2026年5月发表的新机制，核心是**让AI写出的代码只进�
 
 ## 与本文相关
 -  — OpenClaw架构分析
-- [Claude Code Agent Engineering](ch03/084-claude-code.html) — Claude Code工程设计
+- [Claude Code Agent Engineering](ch03/074-claude-code-agent.html) — Claude Code工程设计
 - [Ai Knowledge Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md) — AI工具横向对比
 - [原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gstack-garry-tan-600k-lines-60-days.md)
 - [复杂性棘轮原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/garry-tan-complexity-ratchet-90percent-testing-20260513.md)
 
 ## 相关实体
-- [淘天营销中后台 AI 生码工作流最佳实践](ch05/100-ai.html)
-- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch05/100-ai.html)
-- [Obsidian + Claude Code 集成指南](ch03/084-claude-code.html)
+- [淘天营销中后台 AI 生码工作流最佳实践](../ch05/100-ai.html)
+- [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch03/084-claude-code.html)
+- [Obsidian + Claude Code 集成指南](../ch09/146-obsidian-claude-code-integration-guide.html)
 
 ## 深度分析
 ### 1. 棘轮机制的本质：从"努力"到"系统"

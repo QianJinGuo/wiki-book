@@ -101,7 +101,7 @@ spec:
 ## 相关实体
 
 - [Netflix 分层通知系统](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-notification-slow-fast-hierarchical-rl.md) — 同属 Netflix 工程实践，关注 RL 驱动的个性化
-- [VMAF v1](ch01/200-1.html) — Netflix 视频质量度量升级
+- [VMAF v1](../ch01/200-1.html) — Netflix 视频质量度量升级
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 平台工程约束与验证框架
 
 ---

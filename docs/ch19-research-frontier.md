@@ -116,7 +116,7 @@ NeurIPS 2026 Position Paper Track 引入闭源 AI 检测器 **Pangram** 做 desk
 - **2026-06-04**：机器之心 SOTA 中文报道
 
 ## 相关对照
-- [AI Detection and Response](ch12/081-ai-detection-and-response-aidr-a-zero-impact-operating-model.html) —— 概念对照（云安全 vs 学术诚信，**底层方法论问题一致**）
+- [AI Detection and Response](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md) —— 概念对照（云安全 vs 学术诚信，**底层方法论问题一致**）
 - 暂无直接对应 NeurIPS / 学术 AI 政策实体（**首次入库**）
 
 ## 深度分析
@@ -154,8 +154,8 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 部署后检测器性能会随时间漂移——投稿风格变化、新模型出现、Prompt 规避技术演化都可能导致检测器失效。建议每季度在已知 ground truth 的测试集上重新评估检测器 precision/recall，并在检测准确率下降时自动触发人工复核比例上调 。
 
 ## 关联阅读
-- [AI Detection and Response (AIDR)](ch12/081-ai-detection-and-response-aidr-a-zero-impact-operating-model.html) —— 概念对照：云安全场景的 AI 检测方法论与学术诚信场景面临相似的黑箱校准问题，底层方法论缺陷一致（误判率不可审计、分布偏移导致性能漂移、闭源黑箱不可问责） 
-- [Spotify LLM Evals](ch01/1476-llm.html) —— 类比案例：Spotify 使用 LLM judges 进行 A/B 测试评估时，同样面临双层校准挑战——代理指标之上再增加代理指标，两层都可能漂移，这与 Pangram 在学术场景中的校准失效问题形成跨领域的方法论共鸣
+- [AI Detection and Response (AIDR)](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md) —— 概念对照：云安全场景的 AI 检测方法论与学术诚信场景面临相似的黑箱校准问题，底层方法论缺陷一致（误判率不可审计、分布偏移导致性能漂移、闭源黑箱不可问责） 
+- [Spotify LLM Evals](https://github.com/QianJinGuo/wiki/blob/main/entities/spotify-llm-evals-funnel-not-fork.md) —— 类比案例：Spotify 使用 LLM judges 进行 A/B 测试评估时，同样面临双层校准挑战——代理指标之上再增加代理指标，两层都可能漂移，这与 Pangram 在学术场景中的校准失效问题形成跨领域的方法论共鸣
 
 ---
 
@@ -226,7 +226,7 @@ PosterReward 采用**四阶段级联训练策略**：
 3. 评分模块训练（Qwen3-VL-8B + 两层 MLP，Bradley-Terry 损失）
 4. 强化学习精炼（GRPO）
 
-参见 [MeiGen-AI 海报生成技术体系](ch05/100-ai.html) 中的论文解析。
+参见 [MeiGen-AI 海报生成技术体系](https://github.com/QianJinGuo/wiki/blob/main/entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md) 中的论文解析。
 
 ### 技术闭环的协同进化
 
@@ -248,9 +248,9 @@ PosterReward 采用**四阶段级联训练策略**：
 
 ## 相关实体
 
-- [MeiGen-AI 海报生成技术体系](ch05/100-ai.html) — 三项工作的论文级解析
-- [美团海报生成 AIGC 生产实践](ch05/100-ai.html) — 工程落地方案
-- [美团 LongCat 2.0](ch01/1429-0.html) — 美团大模型技术栈
+- [MeiGen-AI 海报生成技术体系](https://github.com/QianJinGuo/wiki/blob/main/entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md) — 三项工作的论文级解析
+- [美团海报生成 AIGC 生产实践](https://github.com/QianJinGuo/wiki/blob/main/entities/meituan-poster-aigc-production-practice.md) — 工程落地方案
+- [美团 LongCat 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/meituan-longcat-2-0.md) — 美团大模型技术栈
 - [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) — 反馈驱动进化的工程方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/美团-海报生成-aigc-技术创新实践-2026.md)
@@ -281,13 +281,13 @@ PosterReward 采用**四阶段级联训练策略**：
 ### 1. 抗 reward hacking 是 first-class 设计目标
 - 每次结果提升需通过**方差验证** + **reward hack 检测**才记为"真进步"
 - 防止"模型在 benchmark 上刷分但泛化崩了"的常见反模式
-- 与 [Agent 自我改进六条路](ch03/035-agent.html) 中"对抗训练 + 编排自优化"两机制深度呼应
+- 与 [Agent 自我改进六条路](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md) 中"对抗训练 + 编排自优化"两机制深度呼应
 
 ### 2. Long horizon context management
 - 多个研究线程并行
 - **保留前轮实验上下文**（不重置 prompt）
 - 分支合并（promising branch combination）
-- 工程实现上接近 [Hermes 自改进循环](ch01/294-hermes.html) 的"持久记忆 + 进化搜索"
+- 工程实现上接近 [Hermes 自改进循环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md) 的"持久记忆 + 进化搜索"
 
 ### 3. 三大杠杆设计
 - **训练算法**：让 NanoChat 学得更好（数据/优化器创新）
@@ -305,7 +305,7 @@ PosterReward 采用**四阶段级联训练策略**：
 | 开源 | 部分 | 全部 artifacts 开源 ([GitHub recursive-org](https://github.com/recursive-org/first-steps-toward-automated-ai-research)) |
 | 部署 | Google 内部 | 通用研究基础设施 |
 
-参考 [AlphaEvolve Impact](ch04/541-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](ch05/100-ai.html) 了解 DeepMind 路线。
+参考 [AlphaEvolve Impact](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve-impact-deepmind.md) 和 [AlphaEvolve 一周年](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md) 了解 DeepMind 路线。
 
 ## 深度分析
 
@@ -331,7 +331,7 @@ Recursive 团队在三个 SOTA benchmark 上同时取得突破，且没有 DeepM
 
 ## 实践启示
 
-- **AI 进步已可被 AI 加速**：三个 SOTA 提升都不是"渐近修补"而是**数量级加速**（1.3× speedup、18% gap 缩小）。这与 [NanoGPT-Prime 递归自改进](ch05/100-ai.html) 路线同向。
+- **AI 进步已可被 AI 加速**：三个 SOTA 提升都不是"渐近修补"而是**数量级加速**（1.3× speedup、18% gap 缩小）。这与 [NanoGPT-Prime 递归自改进](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md) 路线同向。
 - **SOTA benchmark 的"可自动化研究性"成为评估标准**：清晰指标 + 低方差 + 抗 reward hack = 三大必要条件。设计新 benchmark 时应内建这些属性。
 - **开源 artifacts 降低自动化研究门槛**：递归团队直接公开 [GitHub recursive-org/first-steps-toward-automated-ai-research](https://github.com/recursive-org/first-steps-toward-automated-ai-research)，为社区提供可复现的 baseline。
 - **open-ended algorithms 从论文走向工程**：递归自改进 AI 不再是理论假设，而是被 SOTA benchmark 验证的工程现实。
@@ -339,7 +339,7 @@ Recursive 团队在三个 SOTA benchmark 上同时取得突破，且没有 DeepM
 ## 引用与延伸阅读
 - **原文存档** → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/recursive-automated-ai-research-first-steps-2026.md)
 - **GitHub**：https://github.com/recursive-org/first-steps-toward-automated-ai-research
-- 关联 entity：[Alphaevolve Impact Deepmind](ch04/541-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](ch03/035-agent.html)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](ch05/100-ai.html)、[Hermes Self Improving Loop Winty](ch01/294-hermes.html)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/341-skill.html)
+- 关联 entity：[Alphaevolve Impact Deepmind](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaevolve-impact-deepmind.md)、[Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-self-improvement-six-mechanisms.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 
 ---
 
@@ -440,7 +440,7 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 
 ## 相关主题
 
-- [Agent Harness Context Management Working Set](ch03/035-agent.html) — Agent 上下文管理与角色隔离
+- [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理与角色隔离
 
 ---
 ## 关联
@@ -481,11 +481,11 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 革命性新系统最大的风险不是技术失败，而是资金耗尽。架构设计阶段就要考虑：支持者是谁？他们的利益动机是什么？如何让系统在财务上可持续？这要求工程师不能只埋头技术，还要理解利益相关者的激励结构 。
 ---
 ## 相关实体
-- [Nvidia Agentic Systems Extreme Co Design](ch03/035-agent.html)
-- [Claude Code Tool Design Evolution Anthropic](ch03/084-claude-code.html)
-- [Claude Code Memory Setup Token 71X楠楠自瑜](ch03/084-claude-code.html)
-- [Codex Goal Implementation Breakdown](ch01/736-codex.html)
-- [Gaode Ai Companion Agent Architecture](ch05/100-ai.html)
+- [Nvidia Agentic Systems Extreme Co Design](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)
+- [Claude Code Tool Design Evolution Anthropic](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-tool-design-evolution-anthropic.md)
+- [Claude Code Memory Setup Token 71X楠楠自瑜](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-memory-setup-token-71x楠楠自瑜.md)
+- [Codex Goal Implementation Breakdown](https://github.com/QianJinGuo/wiki/blob/main/entities/codex-goal-implementation-breakdown.md)
+- [Gaode Ai Companion Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-ai-companion-agent-architecture.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-06-2201.md)
 
@@ -905,26 +905,26 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 ## 相关链接
 
 ### 同范式生态
-- [ICML 2026 NPR 文本原生并行推理](ch01/1429-0.html) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
-- [LASER ACL 2026 视觉推理](ch01/1482-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
-- [DeepSeek 视觉原语](ch09/188-deepseek-visual-primitives.html) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
+- [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
+- [LASER ACL 2026 视觉推理](https://github.com/QianJinGuo/wiki/blob/main/entities/laser-acl2026-latent-superposition-visual-reasoning.md) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
+- [DeepSeek 视觉原语](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-visual-primitives-thinking.md) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
 
 ### 视觉/多模态相关
-- [LLaVA-OneVision-2 全帧率 VLM](ch01/1065-vlm.html) — VLM 架构
-- [a16z 视觉 AI 下一个前沿是代码](ch05/100-ai.html) — 视觉 AI 趋势
+- [LLaVA-OneVision-2 全帧率 VLM](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md) — VLM 架构
+- [a16z 视觉 AI 下一个前沿是代码](https://github.com/QianJinGuo/wiki/blob/main/entities/a16z-com-the-next-frontier-of-visual-ai-is-code.md) — 视觉 AI 趋势
 
 ### 推理范式
-- [LLM 语言思维机制](ch01/1476-llm.html) — 推理机制基础
-- [Layered Thinking 分层思维](ch05/100-ai.html) — 推理范式
+- [LLM 语言思维机制](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-language-thinking-mechanisms.md) — 推理机制基础
+- [Layered Thinking 分层思维](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-dan-shipper-every-layered-thinking-walkwalk.md) — 推理范式
 
 ## 相关实体
 
-- [Native Parallel Reasoner Icml2026](ch01/1429-0.html)
-- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/1482-laser-acl2026-latent-superposition-visual-reasoning.html)
-- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/1065-vlm.html)
-- [Deepseek Visual Primitives Thinking](ch09/188-deepseek-visual-primitives.html)
-- [Llm Language Thinking Mechanisms](ch01/1476-llm.html)- [count anything - 文本引导的通用目标计数框架](ch01/1429-0.html)
-- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](ch01/1429-0.html)
+- [Native Parallel Reasoner Icml2026](https://github.com/QianJinGuo/wiki/blob/main/entities/native-parallel-reasoner-icml2026.md)
+- [Laser Acl2026 Latent Superposition Visual Reasoning](https://github.com/QianJinGuo/wiki/blob/main/entities/laser-acl2026-latent-superposition-visual-reasoning.md)
+- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
+- [Deepseek Visual Primitives Thinking](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-visual-primitives-thinking.md)
+- [Llm Language Thinking Mechanisms](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-language-thinking-mechanisms.md)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
+- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2606-03979-language-models-need-sleep.md)
 
 ---
 
@@ -1123,9 +1123,9 @@ Count Anything 的点集输出天然规避了上述三个问题。
 - 论文: https://arxiv.org/abs/2605.30846
 - 代码: https://github.com/Mengqi-Lei/count-anything
 ## 相关实体
-- [visual para-thinker: 视觉并行思考框架 (arxiv 2602.13310)](ch01/1065-vlm.html)
-- [qwen-image-flash: beyond objective design — few-step distill](ch01/1433-qwen-image-flash-beyond-objective-design-few-step-distill.html)
-- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](ch11/310-bedrock.html)
+- [visual para-thinker: 视觉并行思考框架 (arxiv 2602.13310)](https://github.com/QianJinGuo/wiki/blob/main/entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md)
+- [qwen-image-flash: beyond objective design — few-step distill](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-image-flash-beyond-objective-design.md)
+- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](https://github.com/QianJinGuo/wiki/blob/main/entities/bedrock-image-content-precise-analysis.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---
@@ -1142,7 +1142,7 @@ Count Anything 的点集输出天然规避了上述三个问题。
 
 正如 NLP 中的 next-token prediction 将任务特定模型进化为通用语言基础模型（如 GPT 系列），论文主张 **大规模文生视频生成可以作为计算机视觉的等价催化剂**——提供视觉通用智能所需的时空先验、视觉-语言对齐和可扩展性。
 
-这与 [ELF (Embedded Language Flows)](ch05/100-ai.html) 共享 Kaiming He 在通用表征学习方面的研究脉络——ELF 提出语言流作为通用接口，GenCeption 则探索视频生成作为视觉预训练的接口。
+这与 [ELF (Embedded Language Flows)](https://github.com/QianJinGuo/wiki/blob/main/entities/elf-embedded-language-flows-hekaiming.md) 共享 Kaiming He 在通用表征学习方面的研究脉络——ELF 提出语言流作为通用接口，GenCeption 则探索视频生成作为视觉预训练的接口。
 
 ## 技术架构
 
@@ -1171,10 +1171,10 @@ GenCeption 在以下任务上达到或超越专门模型：
 
 ## 与现有生态的关系
 
-- [Diffusion Model 一致性框架](ch01/1429-0.html) — GenCeption 将多步扩散转化为单步前馈，是 consistency 方向的重要应用
-- [ELF: Embedded Language Flows](ch05/100-ai.html) — 同一位研究者（Kaiming He）在通用接口方面的不同探索：语言流 vs 视频生成
-- [ARD: Agentic Autoregressive Diffusion](ch03/035-agent.html) — 视频生成的另一个扩散方向
-- [Video Agent 范式](ch03/035-agent.html) — 视频作为 AI 基础设施的不同视角
+- [Diffusion Model 一致性框架](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusion-model-consistency-framework-2026-survey.md) — GenCeption 将多步扩散转化为单步前馈，是 consistency 方向的重要应用
+- [ELF: Embedded Language Flows](https://github.com/QianJinGuo/wiki/blob/main/entities/elf-embedded-language-flows-hekaiming.md) — 同一位研究者（Kaiming He）在通用接口方面的不同探索：语言流 vs 视频生成
+- [ARD: Agentic Autoregressive Diffusion](https://github.com/QianJinGuo/wiki/blob/main/entities/ard-agentic-autoregressive-diffusion-for-long-video-consistency.md) — 视频生成的另一个扩散方向
+- [Video Agent 范式](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md) — 视频作为 AI 基础设施的不同视角
 - [NVIDIA Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md) — 视频生成作为机器人 foundation model 训练数据的另一路径
 
 ## 引用
@@ -1433,11 +1433,11 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 华为对超节点架构（共享内存池、超高带宽、低时延）的展望指向了推荐系统推理基础设施的未来方向。在超节点架构下，推荐推理的延迟将显著降低——这对高并发、低时延的在线场景（如信息流、广告、电商搜索）有直接业务价值。企业应该从现在开始关注超节点技术的发展动态，包括：①华为超节点产品的 roadmap 和合作方式；② 超节点与现有分布式架构（跨机多卡）的性能差距和迁移成本；③ 基于超节点的推理部署方案（昇腾 910B 向超节点升级的路径）。在模型训练侧已经投入昇腾生态的企业，超节点推理升级的技术连续性会更好。
 
 ## 相关实体
-- [Onereason Kuaishou Reasoning Recommender System](ch05/100-ai.html)
-- [Glm5 Scaling Pain](ch05/100-ai.html)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](ch03/035-agent.html)
-- [Noam Brown Ai Evaluation Reasoning Budget Performance Cost Curve](ch05/100-ai.html)
-- [Aws Sagemaker Azerbaijani Lm](ch05/100-ai.html)
+- [Onereason Kuaishou Reasoning Recommender System](https://github.com/QianJinGuo/wiki/blob/main/entities/onereason-kuaishou-reasoning-recommender-system.md)
+- [Glm5 Scaling Pain](https://github.com/QianJinGuo/wiki/blob/main/entities/glm5-scaling-pain.md)
+- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
+- [Noam Brown Ai Evaluation Reasoning Budget Performance Cost Curve](https://github.com/QianJinGuo/wiki/blob/main/entities/noam-brown-ai-evaluation-reasoning-budget-performance-cost-curve.md)
+- [Aws Sagemaker Azerbaijani Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-azerbaijani-lm.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md)
 
@@ -1486,7 +1486,7 @@ Ethan 的核心判断：**视频生成正在走一条类似 AI 编程的道路**
 | 反馈循环 | 一次机会 | 多轮 plan / debug / test / ship |
 | 工程化重点 | 模型本身 | **工具编排 + Agent harness** |
 
-**与 [Agent Harness Engineering](ch05/129-harness-engineering.html) 的呼应**：视频 Agent 化的核心瓶颈不是模型本身，而是**编排多种工具（扩散模型 + 传统剪辑）的 Harness 设计**——这正是 [Harness Engineering](ch05/129-harness-engineering.html) 的能力被复用的领域。
+**与 [Agent Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md) 的呼应**：视频 Agent 化的核心瓶颈不是模型本身，而是**编排多种工具（扩散模型 + 传统剪辑）的 Harness 设计**——这正是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md) 的能力被复用的领域。
 
 ## 核心论点 2：视频模型的真实成本被严重低估
 
@@ -1535,19 +1535,19 @@ Ethan 自己的轨迹：图像识别 → 神经网络压缩 → 自监督学习 
 ## Video Agent 与现有 Wiki 主题的交叉映射
 
 ### 与 AI 编程 Agent 演化的对照（最强呼应）
-- 与 [Agent Harness Engineering Survey](ch05/129-harness-engineering.html) 中描述的"AI 编程从一次生成走向多轮推理 + 调试 + 测试 + 提交 PR 的智能体系统"——Ethan 明确判断 **视频生成将经历完全相同的演化**。
+- 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md) 中描述的"AI 编程从一次生成走向多轮推理 + 调试 + 测试 + 提交 PR 的智能体系统"——Ethan 明确判断 **视频生成将经历完全相同的演化**。
 
 ### 与世界模型/机器人
-[Yann LeCun JEPA 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) + [Fine-Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md) + [NVIDIA Gamma 世界模型](ch03/035-agent.html)——Ethan 在 Cosmos + Grok Imagine 的工作正是 **世界模型 + 视频生成** 的工程化实例，"实时长时程视频生成"是 [JEPA](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) 路线的 production 对应物。
+[Yann LeCun JEPA 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) + [Fine-Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md) + [NVIDIA Gamma 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)——Ethan 在 Cosmos + Grok Imagine 的工作正是 **世界模型 + 视频生成** 的工程化实例，"实时长时程视频生成"是 [JEPA](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) 路线的 production 对应物。
 
 ### 与研究组织 / 算力
-[AI Native 研发组织设计](ch05/100-ai.html) + [Ai Native Rd Org Design Xiaobin](ch05/100-ai.html) 中都暗示了**算力 = 研究上限**的趋势。Ethan 的访谈是**第一手证据**——"GPU 富人也出来找算力"。
+[AI Native 研发组织设计](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-rd-org-design.md) + [Ai Native Rd Org Design Xiaobin](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-rd-org-design-xiaobin.md) 中都暗示了**算力 = 研究上限**的趋势。Ethan 的访谈是**第一手证据**——"GPU 富人也出来找算力"。
 
 ### 与 Agent 时代的人才竞争
-- [中文 AI 实验室 Nathan 洞察](ch05/100-ai.html)——Ethan 的"算力-人才飞轮"是这些上层判断的**微观机制**
+- [中文 AI 实验室 Nathan 洞察](https://github.com/QianJinGuo/wiki/blob/main/entities/chinese-ai-lab-insights-nathan.md)——Ethan 的"算力-人才飞轮"是这些上层判断的**微观机制**
 
 ### 与上下文工程
-[Agent Memory 架构](ch03/035-agent.html) + [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) + [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)——Ethan 揭示 LLM **不知道自己的上下文长度还剩多少**（"上下文到达 80% 时自动压缩触发，但模型在工作时并不知道这件事"），并指出 **OpenClaw 已经让模型具备时间感知能力**——这与 [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md) 中"让模型具备上下文自我感知"是同一方向。
+[Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md) + [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) + [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)——Ethan 揭示 LLM **不知道自己的上下文长度还剩多少**（"上下文到达 80% 时自动压缩触发，但模型在工作时并不知道这件事"），并指出 **OpenClaw 已经让模型具备时间感知能力**——这与 [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md) 中"让模型具备上下文自我感知"是同一方向。
 
 ## 深度分析
 
@@ -1579,8 +1579,8 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - **世界模型 + 实时长时程**：是视频生成下一阶段的目标，不只是"更长的视频"
 
 ### 对 AI 编程 Agent → Video Agent 的迁移者
-- **复用 Harness 编排能力**：视频 Agent 的核心是工具编排（扩散模型 + 传统剪辑 + 资产库）——可复用 [Agent Harness Engineering](ch05/129-harness-engineering.html) 的实践
-- **从"一次生成"到"生产级工作流"**：与 [画布 Agent 时代](ch05/100-ai.html) + [AI 视频工具第三阶段](ch05/100-ai.html) 的演化趋势一致
+- **复用 Harness 编排能力**：视频 Agent 的核心是工具编排（扩散模型 + 传统剪辑 + 资产库）——可复用 [Agent Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md) 的实践
+- **从"一次生成"到"生产级工作流"**：与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 的演化趋势一致
 
 ### 对研究组织
 - **算力 = 人才吸盘**：这是 2026 H1 最硬的招聘福利——比薪资、股票、title 更决定顶尖研究员的去留
@@ -1594,10 +1594,10 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - **视频 Agent 是下一波 AI 编程的对应物**——2026 H2 - 2027 H1 是视频 Agent 范式形成的关键窗口期
 
 ## 与现有 Wiki 的关系
-- 与 [Claude Code 动态工作流多 Agent 编排](ch03/084-claude-code.html) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
-- 与 [Agent Harness Engineering Survey](ch05/129-harness-engineering.html) 互补：Harness 在视频 Agent 时代的能力复用
-- 与 [画布 Agent 时代](ch05/100-ai.html) + [AI 视频工具第三阶段](ch05/100-ai.html) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/240-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
+- 与 [Claude Code 动态工作流多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
+- 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md) 互补：Harness 在视频 Agent 时代的能力复用
+- 与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 互补：第一手研究人员视角补全产品视角
+- 与 [Foundation Capital agent era 六洞察](https://github.com/QianJinGuo/wiki/blob/main/entities/foundation-capital-agent-era-six-insights.md) 互补：算力-人才飞轮的微观机制
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
 
@@ -1707,10 +1707,10 @@ Mind Lab LoRA 持续学习 (mind-lab-lora-continual-learning-system) 与本文�
 
 由于 wiki 中尚未存在可交叉引用的相关 entity 文件 (mind-lab-lora-continual-learning-system 和 agent-memory-architecture 两条 related 路径暂无对应 page), 当前暂无有效的 关联阅读 链接。建议后续，当 `entities/mind-lab-lora-continual-learning-system.md` 或 `entities/agent-memory-architecture.md` 创建后，在本文 `related` 字段和本节同步添加双向链接。
 ## 相关实体
-- [Stochastic Parrot Language Models And Meaning](ch01/648-language-models-and-meaning.html)
-- [Reinforcing Recursive Language Models Alphaxiv](ch01/1136-reinforcing-recursive-language-models-alphaxiv.html)
+- [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
+- [Reinforcing Recursive Language Models Alphaxiv](https://github.com/QianJinGuo/wiki/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
 - [Alphaxiv Reinforcement Learning For Rlms](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaxiv-reinforcement-learning-for-rlms.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/226-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](https://github.com/QianJinGuo/wiki/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 
 ---
@@ -1738,8 +1738,8 @@ Anthropic 的 Natural Language Autoencoders (NLA) 研究旨在将 Claude 的内�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-natural-language-autoencoders.md)
 
 ## 相关实体
-- [Natural Language Autoencoders — Anthropic 激活→文字可解释性方法](ch01/1530-natural-language-autoencoders-anthropic.html)
-- [QuickSight Dataset QA：NL直查S3 Iceberg](ch11/195-aws-quicksight-dataset-qa-natural-language.html)
+- [Natural Language Autoencoders — Anthropic 激活→文字可解释性方法](https://github.com/QianJinGuo/wiki/blob/main/entities/natural-language-autoencoders.md)
+- [QuickSight Dataset QA：NL直查S3 Iceberg](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md)
 
 ## 深度分析
 ### 1. NLA 的技术架构：三重模型解耦设计
@@ -1878,8 +1878,8 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 
 ## 相关实体
 
-- [华为云昇腾具身智能生态](ch01/609-rlinf.html) — 同样基于昇腾 NPU 的具身智能框架优化
-- [世界模型产业时代](ch01/925-70.html) — MoWorld 的产业落地视角
+- [华为云昇腾具身智能生态](https://github.com/QianJinGuo/wiki/blob/main/entities/华为云-昇腾-rlinf-具身智能-2026.md) — 同样基于昇腾 NPU 的具身智能框架优化
+- [世界模型产业时代](https://github.com/QianJinGuo/wiki/blob/main/entities/50fps成本打掉70魔芯moworld把世界模型带进产业时代.md) — MoWorld 的产业落地视角
 - **世界模型** — 世界模型概念与技术综述
 - **DeepSeek R1** — 被类比为「世界模型的 DeepSeek 时刻」
 - **具身智能** — 世界模型的关键下游应用领域
@@ -2102,8 +2102,8 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ## 相关实体
 
-- [Skill-RM: Reward Model as Agent Skill](ch04/341-skill.html)
-- [Agent Harness Engineering Survey 2026](ch05/129-harness-engineering.html)
+- [Skill-RM: Reward Model as Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md)
+- [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-engineering-survey-2026.md)
 - World Models in AI
 
 ---
@@ -2175,10 +2175,10 @@ ICML 2026 上出现了一篇方法名为 "NeurIPS" 的论文——即标题缩�
 
 ## 相关实体
 
-- [ICML 2026 获奖论文](ch01/1429-0.html)
-- [Claude Code 学术文献综述](ch03/084-claude-code.html)
-- [Agent 技能写作指南](ch04/341-skill.html)
-- [AI 科研助手从构思到应用](ch05/100-ai.html)
+- [ICML 2026 获奖论文](https://github.com/QianJinGuo/wiki/blob/main/entities/icml-2026-award-papers-huanggao-a3c-time-test-2026.md)
+- [Claude Code 学术文献综述](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-academic-literature-review-sci.md)
+- [Agent 技能写作指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md)
+- [AI 科研助手从构思到应用](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-research-assistant-from-idea-to-app.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/neurips-in-icml-paper-title-tips-guidance-2026.md)
 
@@ -2259,9 +2259,9 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ## 相关实体
 
-- [mira + mpa：深度原理 ai scientist 递归自训练打造材料基座模型，40 项实验全面 sota](ch05/100-ai.html)
-- [some ideas for what comes next, may 2026 (interconnects)](ch01/1553-some-ideas-for-what-comes-next-may-2026-interconnects.html)
-- [agi 之路，可能从一开始就走错了（腾讯研究院·王鹏）](ch01/409-agi.html)
+- [mira + mpa：深度原理 ai scientist 递归自训练打造材料基座模型，40 项实验全面 sota](https://github.com/QianJinGuo/wiki/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md)
+- [some ideas for what comes next, may 2026 (interconnects)](https://github.com/QianJinGuo/wiki/blob/main/entities/some-ideas-for-what-comes-next-may-2026.md)
+- [agi 之路，可能从一开始就走错了（腾讯研究院·王鹏）](https://github.com/QianJinGuo/wiki/blob/main/entities/agi-之路-可能从一开始就走错了.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2606-12683-from-agi-to-asi.md)
 
@@ -2374,7 +2374,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ### 1. 时间表的激进性与战略逻辑
 
-唐杰给出的两年ASI时间表，是国产大模型赛道最激进的公开承诺。这一时间表的底层逻辑在于：智谱认为"真正的商业机会从来不在产品和模式的微调里，而在智能上界的跃迁中"。上市当天宣布全面回归基础研究、不做产品变现，这一反直觉决策表明智谱将自己定位为"基础研究赌注型"公司，而非"产品应用变现型"公司。这种战略定位与[GLM-5.2](ch03/035-agent.html)的全量开源策略一脉相承——通过开放底层能力来拉动生态，而非通过闭源产品收取溢价。
+唐杰给出的两年ASI时间表，是国产大模型赛道最激进的公开承诺。这一时间表的底层逻辑在于：智谱认为"真正的商业机会从来不在产品和模式的微调里，而在智能上界的跃迁中"。上市当天宣布全面回归基础研究、不做产品变现，这一反直觉决策表明智谱将自己定位为"基础研究赌注型"公司，而非"产品应用变现型"公司。这种战略定位与[GLM-5.2](https://github.com/QianJinGuo/wiki/blob/main/entities/glm-52-is-the-step-change-for-open-agents.md)的全量开源策略一脉相承——通过开放底层能力来拉动生态，而非通过闭源产品收取溢价。
 
 ### 2. 递归式自我改进的范式意义
 
@@ -2384,17 +2384,17 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 - 7×24小时不间断改进，挣脱人类工程师每天8小时的物理限制
 - 这个飞轮一旦转起来，"刹车片在人类手上，但方向盘已经不在了"
 
-递归式自我改进区别于传统的AutoML和NAS（神经架构搜索），因为它不仅优化模型架构和超参数，而是让模型**自主定义改进目标和方法**，是一种元认知层面的自我进化。这与[AREAL-2.0](ch03/035-agent.html)等开源自我演进框架形成了技术呼应。
+递归式自我改进区别于传统的AutoML和NAS（神经架构搜索），因为它不仅优化模型架构和超参数，而是让模型**自主定义改进目标和方法**，是一种元认知层面的自我进化。这与[AREAL-2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/agent的自演进被刚刚开源的areal-20按下了加速键.md)等开源自我演进框架形成了技术呼应。
 
 ### 3. 智能体密度作为ASI的实现路径
 
 唐杰援引的推演——即便单个模型的能力停在人类水平，如果AGI实例每年以十倍速度扩张，五年后一亿个共享同一套大脑的智能体同时运转，其群体层面的智能密度等同于ASI——揭示了"体量即质变"的核心论点。这一论点与Google DeepMind在《From AGI to ASI》报告中的判断惊人一致：超级智能可能会被算力"硬生生挤出来"，不需要等待单个单点突破。
 
-这一判断深刻影响了智谱的"无人公司（NPC）"战略。NPC概念将智能体从"工具"提升为"组织成员"：成千上万智能体7×24小时自动协作、互相评估、动态分配任务、自主决策资源调度。这是一种[群聊式Agent协作](ch03/035-agent.html)的极端版本——不再需要人类在回路中。
+这一判断深刻影响了智谱的"无人公司（NPC）"战略。NPC概念将智能体从"工具"提升为"组织成员"：成千上万智能体7×24小时自动协作、互相评估、动态分配任务、自主决策资源调度。这是一种[群聊式Agent协作](https://github.com/QianJinGuo/wiki/blob/main/entities/agentteams-和-claude-tag-都进入群聊模式是新范式还是新叙事.md)的极端版本——不再需要人类在回路中。
 
 ### 4. AGI定义的务实性
 
-唐杰对AGI的定义朴素而苛刻："AGI不是某一个天才的智慧，而是全人类智慧水平的总和，理应具备创造出'相对论'级别原创知识的能力。"这一标准远超当前主流定义（执行多种任务、自主学习新任务等），要求模型具备真正的知识创新能力。这与[Anthropic的AI意识研究](ch05/100-ai.html)中涉及的"自我认知"问题处于同一前沿——两者都触及AI是否能够具备原创性和自我意识的根本问题。
+唐杰对AGI的定义朴素而苛刻："AGI不是某一个天才的智慧，而是全人类智慧水平的总和，理应具备创造出'相对论'级别原创知识的能力。"这一标准远超当前主流定义（执行多种任务、自主学习新任务等），要求模型具备真正的知识创新能力。这与[Anthropic的AI意识研究](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic又叒发现ai意识了这次要读写claude的前额叶.md)中涉及的"自我认知"问题处于同一前沿——两者都触及AI是否能够具备原创性和自我意识的根本问题。
 
 ### 5. ASI对技术栈的穿透性影响
 
@@ -2403,7 +2403,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 - **操作系统**：变成LLM OS——模型不再是跑在操作系统上的应用，而是成为调度一切的底层
 - **冯·诺依曼体系**：被挑战——当计算逻辑从确定性指令变成概率性推理，现有计算机架构的基础假设开始动摇
 
-这意味着ASI不仅是AI能力的飞跃，而是整个计算范式的重构。[AI原生组织转型](ch05/100-ai.html)将从优化现有流程，转变为彻底重建底层架构。
+这意味着ASI不仅是AI能力的飞跃，而是整个计算范式的重构。[AI原生组织转型](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-company-transformation.md)将从优化现有流程，转变为彻底重建底层架构。
 
 ## 实践启示
 
@@ -2411,7 +2411,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 2. **工程实践层面**：递归式自我改进的"飞轮效应"要求工程体系支持模型自主生成训练数据、自主编写改进代码、自主运行训练流程。这意味着[Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)体系需要设计出支持模型自我改进的反馈闭环——包括数据管线自动化、代码生成沙盒、训练监控和结果评估。
 
-3. **团队组织层面**：无人公司（NPC）概念的实现路径是渐进式的——从单一Agent辅助工具，到Agent群组协作，再到全自动Agent组织。团队当前应优先建立"Agent协作秩序"（分工、互评、任务分配机制），而非追求完全无人化。这与[钉钉招聘Agent](ch03/035-agent.html)等实际落地案例中"人机协作"而非"完全替代"的务实方向一致。
+3. **团队组织层面**：无人公司（NPC）概念的实现路径是渐进式的——从单一Agent辅助工具，到Agent群组协作，再到全自动Agent组织。团队当前应优先建立"Agent协作秩序"（分工、互评、任务分配机制），而非追求完全无人化。这与[钉钉招聘Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-dingtalk-recruitment.md)等实际落地案例中"人机协作"而非"完全替代"的务实方向一致。
 
 4. **安全治理层面**：智谱选择GLM-5.2以MIT协议全量开源作为安全对冲，以透明度换取信任。任何从事ASI研究的团队都应同步设计安全机制和开源策略，而不是在技术突破后才考虑治理问题。如果"AI开始学习什么是'我'"成为现实，人类社会将面临前所未有的伦理挑战。
 
@@ -2419,14 +2419,14 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ## 相关实体
 
-- [GLM-5.2](ch03/035-agent.html)
-- [GLM Scaling Pain](ch05/100-ai.html)
-- [Databricks GLM-5.2](ch09/052-coding-agent.html)
-- [Anthropic AI意识研究](ch05/100-ai.html)
-- [AREAL-2.0 Agent自演进](ch03/035-agent.html)
-- [群聊Agent模式](ch03/035-agent.html)
-- [钉钉招聘Agent](ch03/035-agent.html)
-- [AI原生组织转型](ch05/100-ai.html)
+- [GLM-5.2](https://github.com/QianJinGuo/wiki/blob/main/entities/glm-52-is-the-step-change-for-open-agents.md)
+- [GLM Scaling Pain](https://github.com/QianJinGuo/wiki/blob/main/entities/glm5-scaling-pain.md)
+- [Databricks GLM-5.2](https://github.com/QianJinGuo/wiki/blob/main/entities/databricks-glm-52-3000-engineer-benchmark-coding-agent.md)
+- [Anthropic AI意识研究](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic又叒发现ai意识了这次要读写claude的前额叶.md)
+- [AREAL-2.0 Agent自演进](https://github.com/QianJinGuo/wiki/blob/main/entities/agent的自演进被刚刚开源的areal-20按下了加速键.md)
+- [群聊Agent模式](https://github.com/QianJinGuo/wiki/blob/main/entities/agentteams-和-claude-tag-都进入群聊模式是新范式还是新叙事.md)
+- [钉钉招聘Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-dingtalk-recruitment.md)
+- [AI原生组织转型](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-company-transformation.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tangjie-zhipu-asi-internal-letter-2026.md)

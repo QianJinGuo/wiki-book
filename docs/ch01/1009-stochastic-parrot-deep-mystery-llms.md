@@ -12,7 +12,7 @@ A while back on [X](<https://x.com/emollick/status/1960919256452796440>), Ethan 
 
 ## 相关实体
 - [Stochastic Parrot Thought Experiment](ch01/1166-stochastic-parrot-thought-experiment.html)
-- [Stochastic Parrot Marcus Ai Productivity](ch11/078-stochastic-parrot-marcus-ai-productivity.html)
+- [Stochastic Parrot Marcus Ai Productivity](../ch11/078-stochastic-parrot-marcus-ai-productivity.html)
 - [While Breathless In Stodgy Viridian](ch01/749-while-breathless-in-stodgy-viridian.html)
 - [Aws Reinforcement Fine Tuning Llm As Judge](ch01/436-aws.html)
 - [Aws Sagemaker Capacity Aware Inference Fallback](ch01/526-aws-sagemaker-capacity-aware-inference-fallback.html)

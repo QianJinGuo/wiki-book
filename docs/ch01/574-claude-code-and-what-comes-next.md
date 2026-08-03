@@ -38,7 +38,7 @@ METR（Model Evaluation and Threat Research）跟踪数据显示：AI 能以 50%
 
 这本质上是**外化长期记忆到文件系统**。类比人类工作：边工作边记工作日志，跨日工作先看昨日日志。
 
-这种"agent 即文件系统用户"的模式，与 [agent 记忆系统工程实践](ch03/035-agent.html) 中"分层记忆 + 检索增强"思路殊途同归。
+这种"agent 即文件系统用户"的模式，与 [agent 记忆系统工程实践](../ch03/035-agent.html) 中"分层记忆 + 检索增强"思路殊途同归。
 
 ### 3. Skills——按需加载的指令 + 工具
 
@@ -63,7 +63,7 @@ Jesse Vincent 的 [superpowers](https://github.com/obra/superpowers) 是一组�
 
 类比：Opus 是 manager，subagents 是合同工。Opus 不用懂每个子任务的最优路径，只管判定结果好坏。
 
-这与 [CrewAI 多 agent 模式](ch04/467-your-first-ai-agent-should-do-one-thing-badly.html)呼应，但更"轻"——subagent 是按需创建，不是预设架构。
+这与 [CrewAI 多 agent 模式](../ch04/467-your-first-ai-agent-should-do-one-thing-badly.html)呼应，但更"轻"——subagent 是按需创建，不是预设架构。
 
 ### 5. MCP 协议——AI 工具生态的"USB 标准"
 
@@ -97,8 +97,8 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ### 与相邻观点的张力
 
-- 与 [苦味教训](ch04/399-the-bitter-lesson-versus-the-garbage-can.html) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
-- 与 [CrewAI 迭代论](ch04/467-your-first-ai-agent-should-do-one-thing-badly.html)的对照：Claude Code 体现了"小时级自治"，CrewAI 强调"周迭代"——节奏不同，原则相通（都是迭代式而非瀑布式）。
+- 与 [苦味教训](../ch04/399-the-bitter-lesson-versus-the-garbage-can.html) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
+- 与 [CrewAI 迭代论](../ch04/467-your-first-ai-agent-should-do-one-thing-badly.html)的对照：Claude Code 体现了"小时级自治"，CrewAI 强调"周迭代"——节奏不同，原则相通（都是迭代式而非瀑布式）。
 - 与 [管理即超能力](ch01/677-management-as-ai-superpower.html) 的同源：Karpathy 编程工作"变成管理 AI agent"是 Mollick 商业观察在技术领域的镜像。
 
 ## 实践启示
@@ -112,22 +112,22 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [Your First Ai Agent Should Do One Thing Badly](ch04/467-your-first-ai-agent-should-do-one-thing-badly.html)
-- [The Bitter Lesson Versus The Garbage Can](ch04/399-the-bitter-lesson-versus-the-garbage-can.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [Your First Ai Agent Should Do One Thing Badly](../ch04/467-your-first-ai-agent-should-do-one-thing-badly.html)
+- [The Bitter Lesson Versus The Garbage Can](../ch04/399-the-bitter-lesson-versus-the-garbage-can.html)
 - [Management As Ai Superpower](ch01/677-management-as-ai-superpower.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/084-claude-code.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch05/100-ai.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Co Existence And The End Of Co Intelligence](ch01/862-co-existence-and-the-end-of-co-intelligence.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Model Context Protocol](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)
-- [an opinionated guide to using ai right now](ch09/095-an-opinionated-guide-to-using-ai-right-now.html)
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch03/035-agent.html)
+- [an opinionated guide to using ai right now](../ch09/095-an-opinionated-guide-to-using-ai-right-now.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch01/1442-claude.html)
 - [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/921-9.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

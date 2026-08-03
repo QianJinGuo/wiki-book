@@ -29,7 +29,7 @@ Agent Teams 概念近期持续升温——Claude Code 在推 agent teams，Kimi 
 2. **上下文腐烂**：日志、网页、报错、搜索结果一多，context 开始退化，前面的约束会遗忘，前面的风格可能改变
 3. **线程混用**：用户想要秒回，后台任务需要几分钟到几十分钟，单 agent 把两个线程混在一起，要么秒回一堆废话，要么半天没动静
 
-这些问题的根因不在模型智力，而在缺乏系统化的控制平面——这正是 [Harness Engineering](ch05/129-harness-engineering.html) 要解决的核心问题。
+这些问题的根因不在模型智力，而在缺乏系统化的控制平面——这正是 [Harness Engineering](../ch05/129-harness-engineering.html) 要解决的核心问题。
 
 ### Claude Code Agent Teams：最像工程团队的协作范式
 
@@ -40,7 +40,7 @@ Claude Code 的 Agent Teams 最适合放在软件工程场景理解。它不是�
 - **共享 task list**：任务不靠主 agent 用 prompt 记着，而是落在本地文件里，有状态、有依赖、有 claim 机制，多个 teammate 抢任务时用 file locking 防止竞态
 - **mailbox**：agent 之间点对点发消息，而非广播到大群——前端 agent 需要问后端接口就发给后端，安全 reviewer 不需要 UI 细节就別污染它的 context
 
-这与 [Claude Code 架构](ch03/084-claude-code.html)中强调的「工程化协作」理念一致。限制在于：token 成本随 teammate 数量上涨，适合独立工作流并行，不适合同一个文件多人同时编辑。
+这与 [Claude Code 架构](../ch03/084-claude-code.html)中强调的「工程化协作」理念一致。限制在于：token 成本随 teammate 数量上涨，适合独立工作流并行，不适合同一个文件多人同时编辑。
 
 ### Kimi K2.5 Agent Swarm：规模化探索的并行引擎
 
@@ -88,11 +88,11 @@ Worker 和 Verifier 的隔离是关键——Verifier 要像一个不近人情的
 
 ## 相关实体
 
-- [Claude Code 架构分析](ch03/084-claude-code.html) — Claude Code 的深层架构拆解
-- [Harness Engineering](ch05/129-harness-engineering.html) — Agent 控制平面的系统方法论
-- [Agent Orchestration](ch03/035-agent.html) — 多 agent 编排模式
-- [Kimi K2 Agent Swarm](ch01/1429-0.html) — Kimi 并行 agent 方案的技术细节
-- [Agent 评测方法论](ch03/035-agent.html) — 验证和评估 agent 系统的方法
+- [Claude Code 架构分析](../ch03/084-claude-code.html) — Claude Code 的深层架构拆解
+- [Harness Engineering](../ch05/129-harness-engineering.html) — Agent 控制平面的系统方法论
+- [Agent Orchestration](../ch04/596-agent-orchestration.html) — 多 agent 编排模式
+- [Kimi K2 Agent Swarm](ch01/579-kimi.html) — Kimi 并行 agent 方案的技术细节
+- [Agent 评测方法论](../ch03/035-agent.html) — 验证和评估 agent 系统的方法
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-vs-kimi-vs-minimaxagent-teams-到底拼的是什么.md)
 

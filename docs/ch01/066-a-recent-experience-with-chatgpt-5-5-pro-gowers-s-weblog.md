@@ -52,7 +52,7 @@ John Baez 在评论区提出一个关键框架：若想法的价值来自稀缺�
 
 - [GPT-5.5来了！我撤回了退订ChatGPT的决定](ch01/1178-chatgpt.html)
 - [GPT-5.5 实测：翻车的学霸](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-55-review.md)
-- [清华 AIR 的 AI 数学家](ch05/100-ai.html)
+- [清华 AIR 的 AI 数学家](../ch04/704-tsinghua-air-aim-ai.html)
 - [Vibe Coding](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md)
 - [推理模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/reasoning-models.md)
 - [OpenAI 模型演进](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-model-evolution.md)

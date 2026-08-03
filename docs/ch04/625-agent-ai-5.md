@@ -33,12 +33,12 @@ GEA 架构的实践意义：企业不需要执着于打造"超级 Agent"，而�
 
 ## 相关实体
 
-- [AI Native 时代研发组织何去何从](ch05/100-ai.html)
-- [AI in Cybersecurity Training Resources | SANS Institute](ch05/100-ai.html)
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch05/100-ai.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch05/100-ai.html)
-- [十年老技术开发的 AI Agent 探索之路](ch05/100-ai.html)
-- [James Cowling Engineering Philosophy Ai Era](ch05/100-ai.html)
+- [AI Native 时代研发组织何去何从](../ch05/021-ai-native.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/100-ai.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/509-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/534-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/209-ai-agent.html)
+- [James Cowling Engineering Philosophy Ai Era](../ch05/100-ai.html)
 
 ---
 

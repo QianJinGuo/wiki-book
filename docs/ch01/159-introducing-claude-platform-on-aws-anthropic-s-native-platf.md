@@ -13,16 +13,16 @@ In this post, we explore how Claude Platform on AWS works and how you can start 
 
 ## 相关实体
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1532-anthropic.html)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](ch11/235-amazon-quick.html)
-- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/021-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/160-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
+- [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/021-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Claude For Small Business](ch01/030-introducing-claude-for-small-business.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch03/035-agent.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/400-anthropic-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-platform-on-aws.md)
 
-- [Anthropic出手Ai的内心独白曝光了](ch05/100-ai.html)
-- [Claude Code Context Engineering Anthropic Thariq](ch03/084-claude-code.html)
-- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](ch05/100-ai.html)
+- [Anthropic出手Ai的内心独白曝光了](ch01/1532-anthropic.html)
+- [Claude Code Context Engineering Anthropic Thariq](../ch03/084-claude-code.html)
+- [anthropic创始人行动手册：打造一家ai-native创业公司（附36页中文pdf）](ch01/1532-anthropic.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)

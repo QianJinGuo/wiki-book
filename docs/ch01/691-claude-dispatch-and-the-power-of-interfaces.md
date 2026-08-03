@@ -98,13 +98,13 @@ Dispatch 不仅是一个产品功能，而是 Anthropic 界面战略的关键一
 
 ## 相关实体
 
-- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/247-openclaw.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch03/084-claude-code.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/247-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/100-ai.html)
-- [incendium fuzzing ms rpc](ch12/114-incendium-fuzzing-ms-rpc.html)
+- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/247-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
+- [incendium fuzzing ms rpc](../ch12/117-incendium-fuzzing-ms-rpc.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
 

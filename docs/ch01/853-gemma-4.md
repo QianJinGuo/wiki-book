@@ -24,7 +24,7 @@ Gemma 4 最激进的设计决策是去除了传统多模态模型中的独立视
 
 Gemma 4 的 Unified Transformer 在单一架构中同时处理视觉、听觉和文本信号，通过长时间的联合预训练克服了"原始像素直接输入导致文本能力退化"的行业难题。这一突破意味着 16GB VRAM 的 MacBook 即可本地运行原生音画文三位一体推理。
 
-从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的视角看，无编码器设计是典型的系统级简化——消除中间抽象层以减少信息损耗和资源碎片化。这与 [MCP 协议设计](ch07/017-anthropic-mcp.html) 追求的统一接口层设计哲学相通，但实施在模型架构层面而非工具调用层面。
+从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的视角看，无编码器设计是典型的系统级简化——消除中间抽象层以减少信息损耗和资源碎片化。这与 [MCP 协议设计](../ch07/017-anthropic-mcp.html) 追求的统一接口层设计哲学相通，但实施在模型架构层面而非工具调用层面。
 
 ### Thinking Mode 下放：边缘设备的「慢思考」能力
 
@@ -40,7 +40,7 @@ Google 将 Gemma 4 全系放在 Apache 2.0 协议下彻底开源，这一商业�
 
 ### 单位参数认知密度：模型竞争的新标尺
 
-Gemma 4 揭示了 AI 模型竞争的新方向——不是参数规模的军备竞赛，而是「单位参数的认知密度」之争。31B 参数逼近闭源前沿的事实表明，架构效率和数据质量比原始参数规模更重要。这与 [传统参数竞赛模式](ch05/100-ai.html) 形成鲜明对比：当 2.3B 的微型模型也能运行深度推理时，行业拼的不再是「你有多少张 H100」，而是「每个参数贡献了多少智能」。
+Gemma 4 揭示了 AI 模型竞争的新方向——不是参数规模的军备竞赛，而是「单位参数的认知密度」之争。31B 参数逼近闭源前沿的事实表明，架构效率和数据质量比原始参数规模更重要。这与 [传统参数竞赛模式](ch01/853-gemma-4.html) 形成鲜明对比：当 2.3B 的微型模型也能运行深度推理时，行业拼的不再是「你有多少张 H100」，而是「每个参数贡献了多少智能」。
 
 ## 实践启示
 
@@ -57,7 +57,7 @@ Gemma 4 揭示了 AI 模型竞争的新方向——不是参数规模的军备�
 ## 相关实体
 
 - [LingBot-VA 具身原生模型](https://github.com/QianJinGuo/wiki/blob/main/entities/全球首个具身原生世界动作模型来了.md)
-- [百度搭子 Agent 平台](ch03/035-agent.html)
+- [百度搭子 Agent 平台](../ch03/035-agent.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
 

@@ -37,8 +37,8 @@ ShinyHunters 选择在 Tor 数据泄露站点发布声明，配以指责性措�
 5. **对响应流程**：提前准备数据泄露响应剧本（notification letter、监管申报、受影响者沟通）；7-Eleven 的"立即调查、主动通知、按州法规申报"应成为标准动作而非事后补救。
 
 ## 相关实体
-- [Canvas LMS 攻击事件](ch05/100-ai.html) — ShinyHunters 同期针对 Instructure/Canvas 的入侵，同属 Salesforce 生态攻击
-- [Grafana GitHub Token 泄露事件](ch12/070-grafana-github-token-breach-led-to-codebase-download-and-ext.html) — 同一数据勒索生态（CoinbaseCartel）的 2026 年案例，印证纯数据勒索模式
+- [Canvas LMS 攻击事件](../ch05/100-ai.html) — ShinyHunters 同期针对 Instructure/Canvas 的入侵，同属 Salesforce 生态攻击
+- [Grafana GitHub Token 泄露事件](ch12/071-grafana-github-token-breach-led-to-codebase-download-and-ext.html) — 同一数据勒索生态（CoinbaseCartel）的 2026 年案例，印证纯数据勒索模式
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本 wiki 核心框架概念
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shinyhunters-7-eleven-data-breach.md)

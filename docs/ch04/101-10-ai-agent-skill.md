@@ -254,10 +254,10 @@ PrefixSpan/CloSpan只能挖掘**行为模式**，无法挖掘**语义意图**。
 **自动挖掘的成熟度**：当前挖掘管道的局限（只能捕获行为模式，无法捕获语义意图）可能在未来通过LLM辅助的语义分析得到改善。但即便如此，专家审核这一环难以完全消除——技能的最终质量责任仍在人类专家手中。
 ## 相关实体
 - [Ai Skill Skill Creator 源码拆解](ch04/366-skill-skill.html)
-- [Hermes Skill System Winty](ch04/341-skill.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](ch05/100-ai.html)
-- [Agent Skill Writing Guide](ch04/341-skill.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/341-skill.html)
+- [Hermes Skill System Winty](../ch07/018-hermes-skill.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/129-harness-engineering.html)
+- [Agent Skill Writing Guide](ch04/681-agent-skill.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/209-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-formal-theory-survey-10papers.md)
 

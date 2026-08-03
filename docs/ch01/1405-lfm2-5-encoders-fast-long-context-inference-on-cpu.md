@@ -27,13 +27,13 @@ Liquid AI 发布 LFM2.5-Encoders 系列（230M / 350M 双向编码器），从 L
 
 ## 与同系列产品的关系
 
-LFM2.5-Encoders 与 [LFM2.5-230M](ch05/100-ai.html)（decoder 小模型，面向边缘部署/Agent 工具调用）同属 LFM2.5 架构家族，但产品线不同：Encoders 是双向编码器，面向理解/分类/路由类任务；230M decoder 面向生成/Agent 场景。
+LFM2.5-Encoders 与 [LFM2.5-230M](../ch05/100-ai.html)（decoder 小模型，面向边缘部署/Agent 工具调用）同属 LFM2.5 架构家族，但产品线不同：Encoders 是双向编码器，面向理解/分类/路由类任务；230M decoder 面向生成/Agent 场景。
 
 ## 相关概念
 
 - [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — CPU 长上下文推理速度是核心卖点
 - [长上下文技术](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-context-techniques.md) — 8192 token 上下文扩展
-- [LFM2.5-230M](ch05/100-ai.html) — 同家族 decoder 模型
+- [LFM2.5-230M](../ch05/100-ai.html) — 同家族 decoder 模型
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/liquid-ai-lfm2-5-encoders-fast-long-context-cpu.md)
 

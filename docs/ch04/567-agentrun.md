@@ -8,11 +8,11 @@
 阿里云 AgentRun 是一个以高代码为核心的一站式 Agentic AI 基础设施平台。秉持生态开放和灵活组装的理念，为企业级 Agent 应用提供从开发、部署到运维的全生命周期管理。  AgentRun 通过集成表格存储（Tablestore），为智能体提供三种持久化记忆能力：在同一对话中维持上下文的会话历史、跨会话保留用户偏好等结构化信息的长期记忆，以及可直接读写的会话状态。本文介绍如何创建并配置记忆存储，并通过可运行的代码示例演示三种记忆类型的使用方式。
 
 ## 相关实体
-- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](ch04/341-skill.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/341-skill.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/341-skill.html)
-- [阿里云可观测 2026 年 4 月产品动态](ch01/1429-0.html)
-- [Agent 从能用到管好中间差了什么](ch03/035-agent.html)
+- [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/076-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/470-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/470-agent-skills.html)
+- [阿里云可观测 2026 年 4 月产品动态](../ch01/1105-20.html)
+- [Agent 从能用到管好中间差了什么](../ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/看-agentrun-如何玩转记忆存储最佳实践来了.md)
 

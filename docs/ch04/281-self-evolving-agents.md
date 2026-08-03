@@ -92,10 +92,10 @@ Agent 的进化不只来自参数更新，也来自它如何利用外部知识�
 
 ## 相关实体
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/204-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Self Evolving Agents Survey](ch03/035-agent.html)
-- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/341-skill.html)
-- [Hermes Agent Self Evolving Source Analysis](ch03/035-agent.html)
-- [Claude Code Search Architecture Tencent 2026](ch03/084-claude-code.html)
+- [Self Evolving Agents Survey](ch04/281-self-evolving-agents.html)
+- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/281-self-evolving-agents.html)
+- [Hermes Agent Self Evolving Source Analysis](../ch03/102-hermes-agent.html)
+- [Claude Code Search Architecture Tencent 2026](../ch03/084-claude-code.html)
 
 ---
 

@@ -47,8 +47,8 @@ TLS AgentLoop：观测数据接入 → Trace 调用链/Session 分析 → 评测
 
 ## 关联条目
 
-- [Agent Harness 工程全景](ch05/129-harness-engineering.html) — Harness 工程中存储层的角色定位
-- [Cloud Agent Infrastructure](ch05/100-ai.html) — Agent 基础设施的另一种视角（状态/代码/凭证隔离）
+- [Agent Harness 工程全景](../ch05/129-harness-engineering.html) — Harness 工程中存储层的角色定位
+- [Cloud Agent Infrastructure](../ch03/035-agent.html) — Agent 基础设施的另一种视角（状态/代码/凭证隔离）
 
 ## 退出
 

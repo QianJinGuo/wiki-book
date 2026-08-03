@@ -156,8 +156,8 @@ Layer 3 项目知识可以"向上提升"到 Layer 1 或 Layer 2，这一设计�
 新团队或历史项目引入知识库时，不要手工录入。用 /flow-import 管道：doc-collector 多源收集（Git/TAPD/iWiki/本地文档）→ codebase-profiler 生成代码画像（技术栈/模块/依赖/模式）→ knowledge-builder 标准化输出（4 维基线 + ≤13 条知识条目）。3 个 Agent 并行工作，冷启动周期从月级别压缩到天级别。
 
 ## Related entities
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/100-ai.html)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/100-ai.html)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/085-harness.html)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/085-harness.html)
 
 ## 关联阅读
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-knowledge-harness-practice.md)

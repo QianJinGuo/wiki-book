@@ -52,7 +52,7 @@ Cloudflare 的 Temporary Accounts 代表了 Agent 基础设施设计的一个重
 - **可认领性** — 临时到永久的转换需要人类主动操作，保持了人类对资源的最终控制权
 - **可审计性** — 所有临时账户的操作都可以被追踪和审计
 
-这与 [AWS DevOps Agent](ch03/035-agent.html) 中的 Agent 安全模型形成了有趣的对比：AWS 侧重于运行时的安全控制，而 Cloudflare 侧重于部署时的安全简化。
+这与 [AWS DevOps Agent](../ch11/295-aws-devops-agent.html) 中的 Agent 安全模型形成了有趣的对比：AWS 侧重于运行时的安全控制，而 Cloudflare 侧重于部署时的安全简化。
 
 ### 对 Agent 工作流的影响
 
@@ -85,8 +85,8 @@ Cloudflare 与 WorkOS 合作推出的 auth.md 协议解决的是另一个层面�
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — Agent 部署基础设施作为 harness 的一部分
-- [AWS DevOps Agent](ch03/035-agent.html) — 另一个生产级 Agent 基础设施案例
-- [ATH Agent Trust Handshake Protocol](ch03/035-agent.html) — Agent 信任协议设计
+- [AWS DevOps Agent](../ch11/295-aws-devops-agent.html) — 另一个生产级 Agent 基础设施案例
+- [ATH Agent Trust Handshake Protocol](../ch03/035-agent.html) — Agent 信任协议设计
 - [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) — Agent 编码工作流中的部署环节
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloudflare-temporary-accounts-ai-agents.md)

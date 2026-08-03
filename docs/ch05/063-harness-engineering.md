@@ -83,7 +83,7 @@
 
 ## 相关实体
 
-[Claude Code Large Codebase Harness Configuration](ch03/084-claude-code.html)、[超级Ai背后的秘密武器Agent Harness深度解析](ch05/100-ai.html)、[Harness Engineering](ch05/129-harness-engineering.html)、[Claude Code Founder Harness 100 Lines](ch03/084-claude-code.html)、[Tencent Knowledge Harness Practice](ch05/085-harness.html)
+[Claude Code Large Codebase Harness Configuration](../ch03/084-claude-code.html)、[超级Ai背后的秘密武器Agent Harness深度解析](ch05/062-agent-harness.html)、[Harness Engineering](ch05/129-harness-engineering.html)、[Claude Code Founder Harness 100 Lines](../ch03/084-claude-code.html)、[Tencent Knowledge Harness Practice](ch05/085-harness.html)
 
 ## 原文存档
 

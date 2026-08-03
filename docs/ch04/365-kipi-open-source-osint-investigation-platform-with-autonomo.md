@@ -88,7 +88,7 @@ kipi 是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/conc
 3. **自主 pivot**：Agent 从发现中自动识别新的调查线索（新域名、新 IP、新组织）
 4. **人机边界**：Agent 执行调查，人类审核结果
 
-这与 [Claude Code 的动态工作流](ch03/084-claude-code.html) 有相似的架构模式：LLM 做决策，工具做执行，人类做监督。
+这与 [Claude Code 的动态工作流](../ch09/102-claude-code-dynamic-workflows.html) 有相似的架构模式：LLM 做决策，工具做执行，人类做监督。
 
 ### Graph RAG 的结构化知识组织
 
@@ -102,7 +102,7 @@ kipi 的图谱构建本质上是一种 **Graph RAG**（图增强检索生成）�
 - **多跳推理**：图上的路径查找天然支持"A 关联 B，B 关联 C，因此 A 可能关联 C"
 - **社区发现**：自动识别紧密关联的实体集群（团伙、网络）
 
-这与 [SchemaFlow](ch05/100-ai.html) 的思路互补：SchemaFlow 将 LLM 约束在数据库 schema 中，kipi 将 LLM 约束在图结构中。
+这与 [SchemaFlow](ch04/075-agentic.html) 的思路互补：SchemaFlow 将 LLM 约束在数据库 schema 中，kipi 将 LLM 约束在图结构中。
 
 ### 开源 OSINT 的安全伦理
 
@@ -148,7 +148,7 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 - 依赖 Anthropic API，调查成本随图谱规模增长
 - 自主 Agent 的调查质量取决于目标网站的反爬措施
 - 证据分级系统仍需人工校准
-- 与 [prompt injection](ch01/895-github.html) 相关的安全风险：Agent 处理的网页内容可能包含恶意指令
+- 与 [prompt injection](../ch01/895-github.html) 相关的安全风险：Agent 处理的网页内容可能包含恶意指令
 
 ### 与同类工具对比
 
@@ -163,10 +163,10 @@ export ANTHROPIC_API_KEY=sk-ant-...    # 唯一必需的 key
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 架构工程
-- [Claude Code Workflows](ch03/084-claude-code.html) — Agent 动态工作流
-- [SchemaFlow](ch05/100-ai.html) — 结构化数据的 LLM 约束
+- [Claude Code Workflows](../ch09/102-claude-code-dynamic-workflows.html) — Agent 动态工作流
+- [SchemaFlow](ch04/075-agentic.html) — 结构化数据的 LLM 约束
 - [Gray Swan](https://github.com/QianJinGuo/wiki/blob/main/entities/latent-space-p-gray-swan.md) — AI 安全与 red-teaming
-- [Role Confusion](ch01/895-github.html) — Prompt injection 理论
+- [Role Confusion](../ch01/895-github.html) — Prompt injection 理论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kipi-osint-autonomous-agent-investigation.md)
 

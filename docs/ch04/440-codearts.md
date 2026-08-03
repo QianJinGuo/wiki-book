@@ -13,7 +13,7 @@
 ## 核心要点
 
 - **存量项目增量开发**：云端 CodeBase 多端支持（IDE 客户端、VSCode 插件、CLI/TUI），支持千万行级代码仓统一索引与检索，提升复杂代码仓理解能力，降低 Token 消耗。这是针对企业"代码已存在、AI 需融入"场景的关键能力——AI 工具要解决的不仅是"从零写代码"，更是"在既有代码库中做增量开发"。
-- **专家 Skill 市场**：新增覆盖单元测试、代码评审、文档生成、安全检查、编译构建、代码重构等场景的专家 Skills，提供开箱即用的专业能力。Skill 体系是 [Harness Engineering](ch05/129-harness-engineering.html) 框架的核心组件，将 AI 能力封装为可复用的工程资产。
+- **专家 Skill 市场**：新增覆盖单元测试、代码评审、文档生成、安全检查、编译构建、代码重构等场景的专家 Skills，提供开箱即用的专业能力。Skill 体系是 [Harness Engineering](../ch05/129-harness-engineering.html) 框架的核心组件，将 AI 能力封装为可复用的工程资产。
 - **Linux CLI 支持**：CLI/TUI 工具新增 Linux 平台支持，与 Windows/Mac 体验一致，支持网络访问控制、命令白名单、路径访问限制。这填补了企业级 AI 编码工具在 Linux 服务器开发环境中的空白——大量企业开发工作直接在 Linux 服务器上进行，此前多数 AI 编码工具仅支持桌面端。
 - **安全隔离代码仓**：支持将核心代码仓设置为安全隔离仓，AI 无法访问，保障核心代码安全。这是企业级安全的关键能力——在 AI 广泛参与代码开发的背景下，核心资产（如支付逻辑、密钥管理）需要不受 AI 影响的"冷区"。
 - **企业级身份认证**：基于 IAM 的 SSO 单点登录及公网 IP 白名单配置，满足企业数据安全与合规管理需求。
@@ -36,7 +36,7 @@ CodeArts 的专家 Skill 市场代表了 AI 编码工具从个人生产力工具
 2. **标准化流程**：通过 Skill 的确定性输入输出接口，使 AI 执行的工程任务可预期、可审计
 3. **生态扩展**：第三方或内部团队可以开发和分享自定义 Skill，形成企业内部 AI 工程能力市场
 
-这一方向与 [Harness Engineering](ch05/129-harness-engineering.html) 框架中"AI 负责认知，脚本负责执行"以及"Agent 必须职责隔离"的核心原则高度一致——Skill 正是实现职责隔离和能力复用的工程单元。
+这一方向与 [Harness Engineering](../ch05/129-harness-engineering.html) 框架中"AI 负责认知，脚本负责执行"以及"Agent 必须职责隔离"的核心原则高度一致——Skill 正是实现职责隔离和能力复用的工程单元。
 
 ### Linux CLI 支持的战略意义
 
@@ -54,10 +54,10 @@ CodeArts 新增 Linux CLI 支持的深层价值在于打通了**开发环境的�
 
 ## 关联实体
 
-- [Harness Engineering](ch05/129-harness-engineering.html)
-- [AI-Friendly 后端标准](ch05/100-ai.html)
-- [Claude Code Skills Guide](ch07/032-claude-code-skills.html)
-- [Claude Code Agent Engineering](ch03/084-claude-code.html)
+- [Harness Engineering](../ch05/129-harness-engineering.html)
+- [AI-Friendly 后端标准](../ch05/022-ai-friendly.html)
+- [Claude Code Skills Guide](../ch07/032-claude-code-skills.html)
+- [Claude Code Agent Engineering](../ch03/074-claude-code-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/华为云码道商用新版本发布聚焦企业级开发让ai真正融入存量项目.md)
 

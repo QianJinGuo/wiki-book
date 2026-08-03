@@ -71,11 +71,11 @@ user happy
 5. **用标准化短词组精简描述**：调试类→debug/inspect/fix；部署类→deploy/release/verify；检索类→search/sync/summarize。
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](ch11/247-openclaw.html)
-- [Skill System Design Three Way Comparison](ch04/341-skill.html)
-- [Openclaw Agent Loop Design Patterns](ch03/035-agent.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/341-skill.html)
-- [Ai Skill Skill Creator 源码拆解](ch04/366-skill-skill.html)
+- [Openclaw Prompt Context Harness](../ch11/247-openclaw.html)
+- [Skill System Design Three Way Comparison](../ch04/341-skill.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1195-openclaw-agent.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/341-skill.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/366-skill-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/steipete-skill-cleaner-liangzide.md)
 

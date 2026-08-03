@@ -82,8 +82,8 @@ Afford-VLA 则将 affordance 放进了 VLA 的内部计算路径中：由 query 
 
 ## 相关实体
 
-- [蚂蚁新一代VLA具身大脑](ch12/036-vla.html)
-- [Agent Architecture Harness](ch03/035-agent.html)
+- [蚂蚁新一代VLA具身大脑](../ch12/036-vla.html)
+- [Agent Architecture Harness](../ch05/085-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/机器人端杯子之前在想什么-afford-vla-先找到杯子最趁手的那块区域.md)
 

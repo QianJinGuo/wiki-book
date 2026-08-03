@@ -91,11 +91,11 @@ NVLink Fusion 向第三方 XPU 开放 NVIDIA 基础设施平台，使合作伙�
 供应量覆盖 30 个国家 350 多家工厂，CoreWeave、Google Cloud、Microsoft Azure、Mistral 等合作伙伴已部署 Vera Rubin 机架。
 
 ## 相关实体
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch05/100-ai.html)
-- [Nvidia Agentic Systems Extreme Co Design](ch03/035-agent.html)
+- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](ch04/244-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
+- [Nvidia Agentic Systems Extreme Co Design](ch04/075-agentic.html)
 - [Sap Unveils The Autonomous Enterprise](ch04/158-sap-unveils-the-autonomous-enterprise.html)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch03/035-agent.html)
-- [Nemotron 3 5 Content Safety](ch01/687-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch04/075-agentic.html)
+- [Nemotron 3 5 Content Safety](../ch01/687-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blogs.nvidia.com-vera-cpu-delivery.md)

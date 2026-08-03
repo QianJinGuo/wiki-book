@@ -44,11 +44,11 @@ Agent先进入"只读模式"：只能查看/搜索/回答，不能修改。生�
 
 - `Hermes Agent Loop Architecture` — Hermes的Agent循环架构
 ## 相关实体
-- [Agentium Agent Framework](ch03/035-agent.html)
-- [Tencentdb Agent Memory Short Term Compression](ch03/035-agent.html)
-- [Hermes Agent V014 Core Architecture Shugex](ch03/035-agent.html)
-- [Hermes Agent Self Evolution Tengxun](ch03/035-agent.html)
-- [Microsoft Agent Framework Python Zizhi](ch03/035-agent.html)
+- [Agentium Agent Framework](ch01/1446-agentium-agent.html)
+- [Tencentdb Agent Memory Short Term Compression](../ch04/154-agent-memory.html)
+- [Hermes Agent V014 Core Architecture Shugex](../ch03/102-hermes-agent.html)
+- [Hermes Agent Self Evolution Tengxun](../ch03/102-hermes-agent.html)
+- [Microsoft Agent Framework Python Zizhi](../ch04/468-python.html)
 
 ---
 

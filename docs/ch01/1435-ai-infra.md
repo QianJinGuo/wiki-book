@@ -144,15 +144,15 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 
 ## 相关实体
 
-- [Tokenspeed Agentic Inference Engine](ch04/768-tokenspeed-agentic-inference-engine.html)
-- [Google Io 2026 Agentic Gemini Era](ch03/035-agent.html)
-- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](ch04/341-skill.html)
+- [Tokenspeed Agentic Inference Engine](../ch04/768-tokenspeed-agentic-inference-engine.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/075-agentic.html)
+- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](ch01/1435-ai-infra.html)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/434-gemma-4-multi-token-prediction-drafters.html)
 - [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](ch01/1532-anthropic.html)
-- [Codex Goal Source Code Deep Dive](ch01/736-codex.html)
-- [Impeccable Frontend Design Skill Harness Vibecoder](ch04/341-skill.html)
-- [Opencli Browser Automation Jingxing](ch03/094-opencli.html)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/111-harness-2026.html)
+- [Codex Goal Source Code Deep Dive](../ch09/054-codex-goal.html)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
+- [Opencli Browser Automation Jingxing](../ch03/094-opencli.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-infra-llm-efficient-inference-vllm.md)

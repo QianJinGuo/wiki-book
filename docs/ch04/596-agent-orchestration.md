@@ -57,10 +57,10 @@ Advertising cookies may be set through our site by us or our advertising partner
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-agent-orchestration-workshop.md)
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch05/100-ai.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/492-aws-sagemaker-ai-agent.html)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/035-agent.html)
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch03/035-agent.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/478-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/295-aws-devops-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

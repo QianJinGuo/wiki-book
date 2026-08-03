@@ -158,14 +158,14 @@ Level 3（远期）: AI 做决策辅助
 
 ## 相关实体
 - [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
-- [Harness Engineering Jk Launcher Baijiajie](ch05/100-ai.html)
-- [Harness Design Long Running Apps](ch05/085-harness.html)
-- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](ch03/035-agent.html)
-- [Alibaba Agentic Cloud](ch03/035-agent.html)
+- [Harness Engineering Jk Launcher Baijiajie](../ch05/129-harness-engineering.html)
+- [Harness Design Long Running Apps](../ch05/085-harness.html)
+- [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/035-agent.html)
+- [Alibaba Agentic Cloud](ch04/424-agentic-cloud.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-project-management-git.md)
 
-- [Impeccable Frontend Design Skill Harness Vibecoder](ch04/341-skill.html)
+- [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 ## 深度分析
 
 ### 信息工程范式的核心突破

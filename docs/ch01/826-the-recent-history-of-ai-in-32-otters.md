@@ -95,9 +95,9 @@ Mollick 的核心判断：我们正在逼近一个临界点——AI 生成的图
 
 ## 相关实体
 
-- [Karpathy: Vibe Coding to Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [Karpathy: Vibe Coding to Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
 - [OLMo Hybrid LLM Architectures](ch01/623-olmo-hybrid-and-future-llm-architectures.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

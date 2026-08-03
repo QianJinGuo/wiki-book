@@ -85,9 +85,9 @@ services:
 
 - **同类实体**：`building-web-search-enabled-agents-with-strands-and-exa` — Strands SDK + Exa 实现的 web search agent（不同技术栈对比）
 - **AWS China Blog 同期 LiteLLM 矩阵**：
-  - [LiteLLM 生产级部署](ch05/100-ai.html)
-  - [LiteLLM Bedrock 成本管控](ch01/1476-llm.html)
-  - [LiteLLM QuickSight 可视化](ch01/1476-llm.html)
+  - [LiteLLM 生产级部署](../ch01/436-aws.html)
+  - [LiteLLM Bedrock 成本管控](ch11/050-litellm-amazon-bedrock.html)
+  - [LiteLLM QuickSight 可视化](ch11/235-amazon-quick.html)
 - 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-claude-litellm-websearch-interception-配置指南.md)
 
 ---

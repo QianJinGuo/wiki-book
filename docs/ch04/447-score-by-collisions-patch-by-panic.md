@@ -49,11 +49,11 @@
 
 ## 相关实体
 
-- [Cloudflare × Anthropic Glasswing：AI 漏洞研究能力跃升](ch12/031-mythos.html)
-- [AI Agent 安全攻防综述](ch05/100-ai.html)
-- [npm 供应链投毒复盘](ch05/100-ai.html)
-- [Thinkst Package Proxy：供应链防护](ch05/100-ai.html)
-- [Akamai 收购 AI 浏览器安全公司 LayerX](ch05/100-ai.html)
+- [Cloudflare × Anthropic Glasswing：AI 漏洞研究能力跃升](../ch12/031-mythos.html)
+- [AI Agent 安全攻防综述](ch04/209-ai-agent.html)
+- [npm 供应链投毒复盘](../ch05/100-ai.html)
+- [Thinkst Package Proxy：供应链防护](../ch05/100-ai.html)
+- [Akamai 收购 AI 浏览器安全公司 LayerX](../ch01/046-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Entry Point Hijacking：入口点劫持](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)

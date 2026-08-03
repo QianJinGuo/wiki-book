@@ -14,9 +14,9 @@
 
 ## 与已有实体的关系
 
-- [Harness Self-Improvement 全景](ch05/129-harness-engineering.html) — 互补：该实体是研究全景综述，本实体聚焦 **evaluator 这一唯一瓶颈维度**
-- [Self-Harness 论文分析](ch05/100-ai.html) — 互补：Self-Harness 的 held-in/held-out 双重门控验证是本实体论点的工程实例
-- [Harness Engineering](ch05/129-harness-engineering.html) — 上位框架：evaluator 是 Harness 反馈层的核心组件
+- [Harness Self-Improvement 全景](../ch05/129-harness-engineering.html) — 互补：该实体是研究全景综述，本实体聚焦 **evaluator 这一唯一瓶颈维度**
+- [Self-Harness 论文分析](../ch05/085-harness.html) — 互补：Self-Harness 的 held-in/held-out 双重门控验证是本实体论点的工程实例
+- [Harness Engineering](../ch05/129-harness-engineering.html) — 上位框架：evaluator 是 Harness 反馈层的核心组件
 
 ## 正例：深层自改进只在可验证区间成立
 

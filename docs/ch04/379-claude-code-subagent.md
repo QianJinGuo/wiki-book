@@ -104,12 +104,12 @@ Claude Code 自动扫描这些文件，根据 `description` 决定何时调用�
 
 ## 相关实体
 
-- [Harness Engineering Core Patterns Claude Code](ch03/084-claude-code.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
-- [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](ch03/084-claude-code.html)
-- [Hermes Agent V014 Architecture Shugex](ch03/035-agent.html)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](ch05/100-ai.html)
+- [Harness Engineering Core Patterns Claude Code](../ch05/129-harness-engineering.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
+- [Claude Code Harness Deep Understanding](../ch01/638-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/082-claude-code-harness.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/102-hermes-agent.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/209-ai-agent.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [k-dense — the model is no longer the bottleneck](ch04/221-k-dense-the-model-is-no-longer-the-bottleneck.html)
 

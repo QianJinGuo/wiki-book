@@ -24,7 +24,7 @@ Browser Use 提出了**六维验证框架**，覆盖 Web 产品「能不能用�
 
 | 维度 | 验证目标 | 典型故障 | 核心手段 |
 |------|---------|---------|---------|
-| **路径** | 登录/导航是否通畅，有无报错跳转异常 | 路由守卫重定向错误、权限校验失败、页面 404 | [CDP](ch07/001-mcp.html) 页面导航 + 状态码检测 |
+| **路径** | 登录/导航是否通畅，有无报错跳转异常 | 路由守卫重定向错误、权限校验失败、页面 404 | [CDP](../ch03/035-agent.html) 页面导航 + 状态码检测 |
 | **内容** | 元素是否齐全，Contract 断言验证 | 条件渲染导致的内容缺失、API 返回空数据 | DOM 查询 + 结构化断言 |
 | **视觉** | 布局错位、溢出、截断、文字换行 | Flex/Grid 布局崩塌、文本截断、响应式断点问题 | 截图 + 布局分析 |
 | **交互** | 弹窗/表单/Tab 切换是否正确 | 事件绑定丢失、状态管理 bug、动画异常 | CDP 元素操作 + 结果验证 |
@@ -47,7 +47,7 @@ Contract 断言是 Browser Use 的核心概念——它用结构化的方式表�
 
 （Chrome DevTools Protocol）是 Chrome 内置的远程调试协议，允许外部程序连接控制浏览器执行以下操作：导航、点击、注入脚本、截图。Agent 通过 CDP 与浏览器对话，用截图来「看」渲染结果，实现真正的视觉感知。
 
-CDP 的核心价值在于它提供了 **Chrome 的完整控制权限**——与 [AgentBrowser](ch09/077-agent-browser-claude-code-qoderwork.html) 等基于 CDP 的工具不同，Browser Use 将 CDP 能力直接暴露给 Agent，使其能够自主决定验证策略。
+CDP 的核心价值在于它提供了 **Chrome 的完整控制权限**——与 [AgentBrowser](../ch09/077-agent-browser-claude-code-qoderwork.html) 等基于 CDP 的工具不同，Browser Use 将 CDP 能力直接暴露给 Agent，使其能够自主决定验证策略。
 
 CDP 协议支持的关键能力：
 

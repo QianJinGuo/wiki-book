@@ -69,9 +69,9 @@ Stanford 144 / Berkeley 118 / MIT 80 / CMU 73 / Harvard 42。前四所占工程�
 
 ## 相关实体
 
-- [Harness Engineering](ch05/129-harness-engineering.html)
-- [Claw-SWE-Bench](ch12/003-token.html) — harness 独立评测基准
-- [YC Spring 2026 全批分析](ch01/1429-0.html) — 创始人背景分析
+- [Harness Engineering](../ch05/129-harness-engineering.html)
+- [Claw-SWE-Bench](../ch05/085-harness.html) — harness 独立评测基准
+- [YC Spring 2026 全批分析](../ch01/1105-20.html) — 创始人背景分析
 
 ---
 

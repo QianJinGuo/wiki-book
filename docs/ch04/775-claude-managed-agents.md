@@ -91,7 +91,7 @@ MCP Tunnels 本质上是一个"网络层解决方案"，而非"治理层解决�
 - **失败恢复**：长任务的中断恢复需要更复杂的 state management
 
 ## 相关链接
-- [Claude Managed Agents Self Hosted Sandbox Enterprise](ch03/035-agent.html)
+- [Claude Managed Agents Self Hosted Sandbox Enterprise](ch04/618-claude-managed-agents.html)
 
 ## 实践启示
 ### 1. 评估企业 Agent 平台的四维框架
@@ -149,11 +149,11 @@ Outcomes grader 的有效性取决于 rubric 质量。建议 rubric 设计原则
 - 监控 Anthropic 产品路线图，为跨模型迁移留有预案
 → （原始来源待补充，综合分析） ^[https://mp.weixin.qq.com/s/dqg5rr2V073oloyAZVPB9Q]
 ## 相关实体
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch07/001-mcp.html)
-- [Claude Managed Agents Official](ch04/673-claude-managed-agents-official.html)
-- [Claude Managed Agents](ch04/775-claude-managed-agents.html)
-- [Anthropic Claude Managed Agents Platform Launch](ch03/035-agent.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch03/035-agent.html)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/618-claude-managed-agents.html)
+- [Claude Managed Agents Official](ch04/674-claude-managed-agents-official.html)
+- [Claude Managed Agents](ch04/618-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform Launch](../ch01/400-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01/400-anthropic-claude-managed-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

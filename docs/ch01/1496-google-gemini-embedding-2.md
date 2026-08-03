@@ -63,10 +63,10 @@ Google DeepMind 论文（arXiv 2605.27295）：一个原生多模态 embedding �
 多模态 embedding 已从「可以做」转向「值得拿来重构系统」——用一个统一向量空间把原本四分五裂的前处理链路往回收。
 
 ## 相关实体
-- [Gemini Ai](ch05/100-ai.html)
-- [Google Debuts Gemini Focused Updates At Io 2026](ch01/1429-0.html)
-- [Google Io 2026 Agentic Gemini Era](ch03/035-agent.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch03/035-agent.html)
+- [Gemini Ai](ch01/052-gemini-ai-google.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](ch01/1105-20.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/075-agentic.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/523-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Gemini 3 5 Frontier Intelligence](ch01/088-gemini-3-5-frontier-intelligence-with-action.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 

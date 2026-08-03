@@ -69,11 +69,11 @@ AgentCore Runtime 用 Cognito Authorizer 校验 JWT
 - Quick Chat Agent 上下文管理
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch07/001-mcp.html)
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch07/001-mcp.html)
-- [Bedrock Agentcore Coding Agent Hosting](ch09/052-coding-agent.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch03/035-agent.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch03/035-agent.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/635-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/635-amazon-bedrock-agentcore.html)
+- [Bedrock Agentcore Coding Agent Hosting](ch11/059-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/635-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/635-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-bedrock-agentcore-finops-chat.md)
 

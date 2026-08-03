@@ -24,7 +24,7 @@
 
 维纳智能的核心洞察在于：大模型的高质量学习不能只有「教科书」式的结构化知识，还必须有「习题集」式的问答推理数据。传统依赖人类专家标注的数据生产方式成本高、扩展性差，而维纳智能提出的cQrA四元组范式，让大模型在上下文中同时生成问题、推理过程和答案，从而构建对抗式、强因果的知识组织形式。
 
-这一思路与[AI自我改进：从Harness开始](ch05/100-ai.html)的理念高度一致——Agent不应只是被动执行指令，而应在执行过程中生成可训练的高质量数据，反哺自身能力的持续进化。
+这一思路与[AI自我改进：从Harness开始](../ch05/085-harness.html)的理念高度一致——Agent不应只是被动执行指令，而应在执行过程中生成可训练的高质量数据，反哺自身能力的持续进化。
 
 ### 「数据→Token→数据」大闭环：补齐Agent进化的缺失链路
 
@@ -35,7 +35,7 @@
 - **内参数优化**：模型经预训练和后训练得到的参数可通过推理数据持续精调
 - **外参数优化**：基于上下文的因果锚定Few-shot，来自于高精度推理数据生成的业务知识和对抗式因果，对最终推理结果影响重大
 
-这种「数据即参数」的视角，与[AReaL 2.0的在线强化学习闭环](ch03/035-agent.html)形成互补——前者聚焦数据生成，后者聚焦训练基础设施。
+这种「数据即参数」的视角，与[AReaL 2.0的在线强化学习闭环](../ch04/306-agentic-rl.html)形成互补——前者聚焦数据生成，后者聚焦训练基础设施。
 
 ### Agent三重困局的系统化解法
 
@@ -47,7 +47,7 @@
 | 优化难 | 缺乏有效动态测试，系统处于无反馈状态 | 测试提供反馈，对整个系统结构和超参数进行优化 |
 | 答不准 | 经典LLM+RAG架构通常只有~70%准确度 | 离线生成海量cQrA，为在线推理注入逻辑先验（类比考前刷题） |
 
-这一框架与[Harness Engineering](ch05/129-harness-engineering.html)中强调的「可观测性→反馈→优化」闭环高度吻合。
+这一框架与[Harness Engineering](../ch05/129-harness-engineering.html)中强调的「可观测性→反馈→优化」闭环高度吻合。
 
 ### 从Nature通讯到工业级Agent基础设施
 
@@ -70,10 +70,10 @@
 ## 相关实体
 
 - [DeepSeek V4](ch01/435-deepseek-v4.html) — 同为登上Nature主要期刊的中国AI公司
-- [AReaL 2.0](ch03/035-agent.html) — 在线强化学习基础设施，与推理数据生成互补
-- [AI自我改进：从Harness开始](ch05/100-ai.html) — Agent通过运行轨迹持续优化的理念
-- [Harness Engineering](ch05/129-harness-engineering.html) — Agent工程治理的系统方法论
-- [Agent落地真相](ch03/035-agent.html) — Agent从演示到投产的核心挑战
+- [AReaL 2.0](../ch04/306-agentic-rl.html) — 在线强化学习基础设施，与推理数据生成互补
+- [AI自我改进：从Harness开始](../ch05/085-harness.html) — Agent通过运行轨迹持续优化的理念
+- [Harness Engineering](../ch05/129-harness-engineering.html) — Agent工程治理的系统方法论
+- [Agent落地真相](../ch03/035-agent.html) — Agent从演示到投产的核心挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek之后中国ai自己出题杀进nature通讯全球仅4家.md)
 

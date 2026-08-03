@@ -13,7 +13,7 @@
 - [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
 - [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki/blob/main/entities/valkey-why-valkey-performance.md)
-- [zapocalypse: the attack chain that could have hijacked zapie](ch05/100-ai.html)
+- [zapocalypse: the attack chain that could have hijacked zapie](../ch11/256-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
 
 ## 深度分析
@@ -56,12 +56,12 @@ Kiro 是 AWS 推出的下一代 AI 编程助手，提供 IDE 与 CLI 两种形�
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/247-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/247-openclaw.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch05/100-ai.html)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch11/247-openclaw.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/247-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/247-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

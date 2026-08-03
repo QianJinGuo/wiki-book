@@ -97,7 +97,7 @@ Anthropic 研究了大量 AI 在长任务中的失败案例，发现 3 个反复
 - [Harness Engineering 概念框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 抽象框架（Compaction vs Reset, Generator + Evaluator 分离）
 - [Agent Harness Engineering: A Survey](ch05/129-harness-engineering.html) — 学术 7 层 ETCLOVG 分类法
 - [AHE：Agentic Harness Engineering](ch05/129-harness-engineering.html) — 复旦/北大自动优化 Harness
-- [长周期 Agent：Ralph Loop → 可接管 Harness](ch03/035-agent.html) — Ralph Loop 漂移治理 + 5 张卡框架
+- [长周期 Agent：Ralph Loop → 可接管 Harness](ch05/085-harness.html) — Ralph Loop 漂移治理 + 5 张卡框架
 
 本文是**行业证据维度**的补充——把抽象框架落到三家不同行业公司的实际部署数据上。
 

@@ -60,11 +60,11 @@ RAG（Retrieval-Augmented Generation）是数据驻留优先理念的一个特�
 
 **可观测性**：分布式部署的 Agent 需要端到端的可观测性。每个 Agent 实例的日志、指标和链路追踪需要汇聚到统一的监控平台。这与传统中心化架构的可观测性方案有本质区别。^[inferred]
 
-### 与 [Claude Code Large Codebase Harness Configuration](ch03/084-claude-code.html) 的关联
+### 与 [Claude Code Large Codebase Harness Configuration](../ch03/084-claude-code.html) 的关联
 
 大型代码库的 Harness 配置本质上也是"让 Agent 在数据所在位置工作"的一种体现——Claude Code 直接在代码仓库中运行，而非将代码上传到远程服务。本地文件系统就是"数据所在的位置"。^[inferred]
 
-### 与 [Building Web Search Enabled Agents With Strands And Exa](ch04/550-building-web-search-enabled-agents-with-strands-and-exa.html) 的对比
+### 与 [Building Web Search Enabled Agents With Strands And Exa](ch04/551-building-web-search-enabled-agents-with-strands-and-exa.html) 的对比
 
 Web Search Agent 代表了另一种模式——数据不在本地，需要通过搜索 API 实时获取。这种场景下数据驻留原则不适用，但可以通过缓存和索引部分缓解延迟问题。两种模式并非对立，而是互补。^[inferred]
 
@@ -78,11 +78,11 @@ Web Search Agent 代表了另一种模式——数据不在本地，需要通过
 
 ## 相关实体
 
-- [Claude Code Large Codebase Harness Configuration](ch03/084-claude-code.html)
-- [Building Web Search Enabled Agents With Strands And Exa](ch04/550-building-web-search-enabled-agents-with-strands-and-exa.html)
-- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](ch01/1429-0.html)
-- [Accelerate Llm Model Loading And Increase Context Windows Wi](ch01/1374-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
+- [Claude Code Large Codebase Harness Configuration](../ch03/084-claude-code.html)
+- [Building Web Search Enabled Agents With Strands And Exa](ch04/551-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](../ch01/1476-llm.html)
+- [Accelerate Llm Model Loading And Increase Context Windows Wi](../ch01/1374-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
 - 相关领域: agent, data-infrastructure, architecture
 
 ---

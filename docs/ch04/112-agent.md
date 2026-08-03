@@ -129,10 +129,10 @@ graph TB
 - **两层天花板**：Big Model 决定理论上限，Big Harness 决定实际达到的高度
 
 ## 与现有 Wiki 的关联
-与 [Hermes Agent Deep Dive](ch03/035-agent.html) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
+与 [Hermes Agent Deep Dive](../ch03/102-hermes-agent.html) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
 与 [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
 与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
-与 [Agent Engineering Principles Architecture Practice](ch03/035-agent.html) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
+与 [Agent Engineering Principles Architecture Practice](../ch03/035-agent.html) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
 
 ## 核心命题
 > AI 的学习正在从训练阶段溢出到部署阶段。过去十年模型变强的唯一方式是改权重，这些项目展示了另一种可能：**权重冻结下通过外部记忆、行为搜索、对抗训练、代码自修改、编排自优化来持续积累能力。**
@@ -140,40 +140,40 @@ graph TB
 
 ## 相关实体
 - [foundation capital agent era six insights](ch04/240-foundation-capital-agent-era-six-insights.html)
-- [Hermes Agent 自进化机制源码解析](ch03/035-agent.html)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/341-skill.html)
-- [AI Coding Agent 记忆系统](ch05/100-ai.html)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](ch05/100-ai.html)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](ch03/035-agent.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/129-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch09/052-coding-agent.html)
+- [Hermes Agent 自进化机制源码解析](../ch03/102-hermes-agent.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/476-memento-skills-agent.html)
+- [AI Coding Agent 记忆系统](ch04/400-ai-coding-agent.html)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/085-harness.html)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/035-agent.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/129-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/129-harness-engineering.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch05/100-ai.html)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch03/035-agent.html)
-- [hermes-agent-self-evolving-source-analysis](ch03/035-agent.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/896-llm-wiki-obsidian-wiki-gbrain.html)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/085-harness.html)
+- [hermes-agent-self-evolving-source-analysis](../ch03/102-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [Agent Memory 架构解析](ch03/035-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/638-claude-code-harness-deep-understanding.html)
-- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
-- [Agent Harness 架构](ch03/035-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch09/052-coding-agent.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch11/247-openclaw.html)
+- [Agent Memory 架构解析](ch04/154-agent-memory.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
+- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
+- [Agent Harness 架构](../ch05/062-agent-harness.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/247-openclaw.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch05/100-ai.html)
-- [GBrain](ch05/100-ai.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/035-agent.html)
-- [SkillClaw](ch04/341-skill.html)
-- [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch04/341-skill.html)
-- [OpenHuman: AI Agent 持久记忆框架](ch05/100-ai.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](ch03/035-agent.html)
-- [Agent架构关键变化：Harness正在成为新后端](ch03/035-agent.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/100-ai.html)
+- [GBrain](../ch01/440-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
+- [SkillClaw](ch04/539-skillclaw-nacos-agent-skill-registry.html)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/018-hermes-skill.html)
+- [OpenHuman: AI Agent 持久记忆框架](ch04/154-agent-memory.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/085-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/085-harness.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
-- [AI Agent 工程师能力地图](ch05/100-ai.html)
+- [AI Agent 工程师能力地图](ch04/209-ai-agent.html)
 
-- [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](ch01/1334-chatgpt-dreaming-v3.html)
-- [Chatgpt Dreaming V3 Long Term Memory Openai](ch05/100-ai.html)
-- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](ch01/1429-0.html)
-- [recursive first steps toward automated ai research：sota 三基准自](ch05/100-ai.html)
+- [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](../ch01/1334-chatgpt-dreaming-v3.html)
+- [Chatgpt Dreaming V3 Long Term Memory Openai](../ch01/1334-chatgpt-dreaming-v3.html)
+- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](../ch01/1476-llm.html)
+- [recursive first steps toward automated ai research：sota 三基准自](../ch05/100-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 深度分析
@@ -268,7 +268,7 @@ Tax AI 的全部知识产权归 **Thrive Holdings**（Joshua Kushner 创办，Op
 - **模糊证据路由回产品团队**是抗幻觉的关键设计：Codex 不是万能的，不知道就是不知道，硬塞流程会污染训练集
 - **3-5 个 Agent 的工程师注意力上限**是工程现实——Symphony 的"管工作不管 Agent"思路值得借鉴
 - **6 周 25%→86% 的曲线**证明：自我改进不是匀速，而是**指数加速**（更复杂的问题被解决 → 每份省下的人工时间越多 → 反哺训练 → 处理更复杂的问题）
-- **生产方法论 > 应用层 IP**：OpenAI 放弃 Tax AI IP 换范式，是把"自我改进工程"作为下一代护城河，与 [Harness Engineering 长程任务](ch05/129-harness-engineering.html) 中"Big Harness > Big Model"的判断完全一致
+- **生产方法论 > 应用层 IP**：OpenAI 放弃 Tax AI IP 换范式，是把"自我改进工程"作为下一代护城河，与 [Harness Engineering 长程任务](../ch05/129-harness-engineering.html) 中"Big Harness > Big Model"的判断完全一致
 
 → [第 2 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 

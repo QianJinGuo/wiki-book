@@ -179,17 +179,17 @@ Content-Security-Policy:
 
 ## 相关实体
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/921-9.html)
-- [Ico Fines South Staffordshire 2022 Breach](ch01/1429-0.html)
+- [Ico Fines South Staffordshire 2022 Breach](ch01/1105-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
-- [Interaction Models](ch03/110-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](ch05/100-ai.html)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](ch09/171-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Interaction Models](../ch03/110-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/100-ai.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/171-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
-- [discord 全平台端到端加密](ch12/099-discord.html)
-- [incendium fuzzing ms rpc](ch12/114-incendium-fuzzing-ms-rpc.html)
-- [the interface is no longer the product](ch05/100-ai.html)
-- [a route to root in a 4g industrial router](ch01/1429-0.html)
+- [discord 全平台端到端加密](../ch12/102-discord.html)
+- [incendium fuzzing ms rpc](../ch12/117-incendium-fuzzing-ms-rpc.html)
+- [the interface is no longer the product](../ch05/100-ai.html)
+- [a route to root in a 4g industrial router](ch01/1105-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

@@ -71,11 +71,11 @@ BrowserAct 对 Agent 生态的关键价值在于：它承认"网页自动化不�
 
 ## 相关实体
 
-- [Agent Harness 钉钉招聘](ch03/035-agent.html) — 生产环境中 Agent 工作流编排的实际案例
-- [Browser Use v13](ch05/085-harness.html) — 浏览器 Agent 能力框架
+- [Agent Harness 钉钉招聘](../ch05/062-agent-harness.html) — 生产环境中 Agent 工作流编排的实际案例
+- [Browser Use v13](../ch05/085-harness.html) — 浏览器 Agent 能力框架
 - [MCP 协议](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — Agent 工具调用的标准化协议
-- [Hermes Agent 操作手册](ch03/035-agent.html) — Agent 操作系统的实践指南
-- [Hermes Skill 系统](ch04/341-skill.html) — Agent 技能管理与复用的系统设计
+- [Hermes Agent 操作手册](../ch03/102-hermes-agent.html) — Agent 操作系统的实践指南
+- [Hermes Skill 系统](../ch07/018-hermes-skill.html) — Agent 技能管理与复用的系统设计
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/product-hunt-把任何网站变成被-agent-复用的技能.md)
 

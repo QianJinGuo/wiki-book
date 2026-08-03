@@ -12,10 +12,10 @@
 - 不存在的问题：他不认为几年后会有人说当前路线走错了
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](ch05/085-harness.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch03/035-agent.html)
-- [Ath Agent Trust Handshake Protocol](ch03/035-agent.html)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/341-skill.html)
+- [Wow Harness V3 Governance Protocol](../ch05/085-harness.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/451-hermes-agent-goal.html)
+- [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/294-hermes.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/demis-hassabis-yc-interview-2026.md)

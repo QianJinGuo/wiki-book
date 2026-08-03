@@ -10,7 +10,7 @@
 
 ## 深度分析
 
-本页作为知识图谱锚点，连接了以下关键实体：[CLI、MCP 和 CLI+Skill，应该如何选？](ch07/001-mcp.html)。 相关主题通过 [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](ch05/100-ai.html) 延伸。
+本页作为知识图谱锚点，连接了以下关键实体：[CLI、MCP 和 CLI+Skill，应该如何选？](ch04/341-skill.html)。 相关主题通过 [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/035-agent.html) 延伸。
 
 > 本页内容将在入库相关溯源素材后进一步深化。
 
@@ -22,11 +22,11 @@
 
 ## 相关实体
 
-- [CLI、MCP 和 CLI+Skill，应该如何选？](ch07/001-mcp.html)
-- [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](ch05/100-ai.html)
-- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch05/100-ai.html)
-- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/035-agent.html)
-- [多 Agent 编排系统](ch03/035-agent.html)
+- [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/341-skill.html)
+- [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/035-agent.html)
+- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/209-ai-agent.html)
+- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](../ch05/085-harness.html)
+- [多 Agent 编排系统](ch04/596-agent-orchestration.html)
 
 ---
 

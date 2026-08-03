@@ -50,8 +50,8 @@ Osmosis 具有双向性：在低调用率的栈上，未调用的技能带来更
 
 ## 关联
 
-- [AI Skill 测评底层逻辑](ch04/341-skill.html) — 技能测评的核心关注
-- [Hermes Agent Skill 互优化实验](ch04/341-skill.html) — 技能自动化优化实践
+- [AI Skill 测评底层逻辑](../ch07/010-ai-skill-evolution.html) — 技能测评的核心关注
+- [Hermes Agent Skill 互优化实验](../ch01/524-hermes-agent-skill.html) — 技能自动化优化实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/regression-tax-skills-hurt-llm-agents-sentient-arxiv-2026.md)
 

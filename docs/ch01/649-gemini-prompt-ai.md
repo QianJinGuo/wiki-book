@@ -88,7 +88,7 @@ Prompt 用六个 XML 标签清晰划分角色、原则、契约、模式、输�
 
 这是作者对"导读"最深的洞察。信息本身可以被搜索引擎替换，**认知模型**才是高价值内容的真正资产。一个作者如何定义问题、拆解维度、做权衡——这些"思维方式"才是读者真正要学的东西。
 
-这与 [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/129-harness-engineering.html) 中"事实比策略更可迁移"的判断形成有趣对照：导读强调"提取作者的认知模型"（事实之上的策略层），而 AHE 发现"Prompt 单独迁移性能下降"（策略性资产反而不易迁移）。两个观察不矛盾——导读的"认知模型"是从内容中抽象出的**事实性框架**，不是 Prompt 那种"你应该这样做"的策略指令。
+这与 [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](../ch05/129-harness-engineering.html) 中"事实比策略更可迁移"的判断形成有趣对照：导读强调"提取作者的认知模型"（事实之上的策略层），而 AHE 发现"Prompt 单独迁移性能下降"（策略性资产反而不易迁移）。两个观察不矛盾——导读的"认知模型"是从内容中抽象出的**事实性框架**，不是 Prompt 那种"你应该这样做"的策略指令。
 
 ### 模式切换：导读/清单/结论三态
 
@@ -111,7 +111,7 @@ Prompt 提供了三种输出模式：
 
 > AI 深度导读填补了阅读空隙，但剥夺了"慢思考"的磨练机会。不适合初学者或构建全新知识体系的人。把 AI 当望远镜扩展视野是好的，但别指望它能代替你走路。
 
-这与 [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html) 中"vibe coding vs agentic engineering"的分野呼应——AI 工具可以放大能力，但不能替代基础训练。导读适合"已经有知识基础、需要快速进入新领域"的读者；对"还在构建基础认知框架"的初学者，导读反而有害。
+这与 [Karpathy Vibe Coding Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html) 中"vibe coding vs agentic engineering"的分野呼应——AI 工具可以放大能力，但不能替代基础训练。导读适合"已经有知识基础、需要快速进入新领域"的读者；对"还在构建基础认知框架"的初学者，导读反而有害。
 
 ## 实践启示
 
@@ -125,12 +125,12 @@ Prompt 提供了三种输出模式：
 
 ## 相关实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/100-ai.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch05/100-ai.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
+- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Prompt Engineering Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-patterns.md)
 - [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)
 

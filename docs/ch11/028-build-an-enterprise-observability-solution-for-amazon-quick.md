@@ -200,11 +200,11 @@ Quick Sight Dashboard 和自定义 Chat Agent 分别服务于不同使用场景�
 ---
 
 ## 相关实体
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](ch05/100-ai.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](ch07/001-mcp.html)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/129-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](ch01/976-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch07/001-mcp.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/635-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/635-amazon-bedrock-agentcore.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/129-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/976-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](ch11/306-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-enterprise-observability-solution-for-amazon-quick.md)

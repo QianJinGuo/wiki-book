@@ -30,11 +30,11 @@
 
 ## 相关实体
 
-- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch03/035-agent.html)
-- [AutoResearch 异步多 Agent AI 寒武纪新阶段](ch05/100-ai.html)
-- [Anthropic Multi Agent Research System](ch04/645-anthropic-multi-agent-research-system.html)
-- [Code as Agent Harness 综述](ch09/061-code-as-agent-harness.html)
-- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch05/100-ai.html)
+- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/219-factory-missions.html)
+- [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/1077-agent-ai.html)
+- [Anthropic Multi Agent Research System](ch04/646-anthropic-multi-agent-research-system.html)
+- [Code as Agent Harness 综述](../ch09/061-code-as-agent-harness.html)
+- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/281-self-evolving-agents.html)
 
 ---
 

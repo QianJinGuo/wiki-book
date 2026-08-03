@@ -50,7 +50,7 @@ LLaMA.cpp 的 `server` 模式暴露 OpenAI 兼容的 HTTP API，是接入 Agent 
 - 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
 - 参见 [Quantization Techniques](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) 的量化方法体系
 - 参见 [LLaMA.cpp 部署 Qwen3.6 实测](https://github.com/QianJinGuo/wiki/blob/main/entities/mtp-加速推理最佳实践在亚马逊云科技中国区使用-llamacpp-部署-qwen36-的实测指南.md) 的实测数据
-- 参见 [Minimal CLI Agent](ch03/035-agent.html) 的本地模型集成示例
+- 参见 [Minimal CLI Agent](../ch04/468-python.html) 的本地模型集成示例
 
 ---
 

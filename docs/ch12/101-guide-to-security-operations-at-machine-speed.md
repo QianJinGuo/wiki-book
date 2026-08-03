@@ -25,9 +25,9 @@
 5. **不要在没有基线的情况下购买新平台。** 先完成函数级评估，再决定平台采购。否则只是用更贵的工具重复已有的运营模式，是最常见的安全投资浪费。 ^[arctic-wolf-security-operations-machine-speed]
 
 ## 相关实体
-- [The It And Security Field Guide To Ai Adoption Tines](ch12/087-the-it-and-security-field-guide-to-ai-adoption-tines.html)
-- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](ch05/100-ai.html)
-- [Npm Supply Chain Compromise Postmortem](ch05/100-ai.html)
+- [The It And Security Field Guide To Ai Adoption Tines](ch12/089-the-it-and-security-field-guide-to-ai-adoption-tines.html)
+- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch01/736-codex.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/100-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/031-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)

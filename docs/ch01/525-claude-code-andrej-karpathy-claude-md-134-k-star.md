@@ -163,10 +163,10 @@ Karpathy 做的事情是用准确的语言把这些挫败感说了出来，并�
 
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](ch03/084-claude-code.html)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/084-claude-code.html)
-- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](ch03/084-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/084-claude-code.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/082-claude-code-harness.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/084-claude-code.html)
+- [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/084-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/479-anthropic-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/andrej-karpathy-claude-md-134k-stars-2026.md)

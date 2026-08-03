@@ -19,11 +19,11 @@ type: entity
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/853-gemma-4.html)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/693-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
 - [Interconnects What Comes Next With Open Models](ch01/1418-what-comes-next-with-open-models.html)
 - [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](ch01/921-9.html)
-- [U Of T Ai Worm Cleverhans Papernot 2026](ch05/100-ai.html)
-- [How Far Behind Are Open Models 2026](ch01/1429-0.html)
+- [U Of T Ai Worm Cleverhans Papernot 2026](../ch05/100-ai.html)
+- [How Far Behind Are Open Models 2026](ch01/1105-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 

@@ -57,7 +57,7 @@ Tarot Pixel 的一条核心设计原则是：**能用工程确定性解决的，
 4. **精度控制**：字重修正、透明度去重、数值四舍五入
 5. **资源自动导出**：蒙版强制 PNG，简单矢量用 SVG，图片填充用 PNG
 
-这些处理确保交到 Agent 手上的是干净、精确的信息。AI 只需要处理真正的判断问题——「这个图层是装饰还是内容？」。这种「工程做工程的事、AI 做 AI 的事」的边界划分，是 [Agent-Native 设计](ch09/099-deepseek-code-harness.html) 的核心实践。
+这些处理确保交到 Agent 手上的是干净、精确的信息。AI 只需要处理真正的判断问题——「这个图层是装饰还是内容？」。这种「工程做工程的事、AI 做 AI 的事」的边界划分，是 [Agent-Native 设计](../ch09/099-deepseek-code-harness.html) 的核心实践。
 
 ### Skill 驱动的能力扩展与去中心化扩展
 
@@ -86,7 +86,7 @@ MCP 本质上是「人做预处理，AI 做翻译」的模式；Tarot Pixel 则�
 
 ## 实践启示
 
-1. **Agent 工具的设计思维必须与人类 API 不同**。Tarot Pixel 的设计准则「工具是做给 AI 用的，不是做给人用的」应成为 AI 原生工具开发的原则。工具的输出当使用自然格式（prose、markdown），而非传统 API 的复杂结构化格式，同时需要充分的文档和对 Agent 可能意外使用方式的兼容。这对 [Hermes Agent](ch03/102-hermes-agent.html) 的技能设计也适用——技能文档应当面向 Agent 的工作方式而非人类阅读习惯。
+1. **Agent 工具的设计思维必须与人类 API 不同**。Tarot Pixel 的设计准则「工具是做给 AI 用的，不是做给人用的」应成为 AI 原生工具开发的原则。工具的输出当使用自然格式（prose、markdown），而非传统 API 的复杂结构化格式，同时需要充分的文档和对 Agent 可能意外使用方式的兼容。这对 [Hermes Agent](../ch03/102-hermes-agent.html) 的技能设计也适用——技能文档应当面向 Agent 的工作方式而非人类阅读习惯。
 
 2. **前端的「上下文问题」有多个层次**。Specflow 解决的是业务理解与任务拆解层，Tarot Pixel 解决的是视觉信息层。在构建 [Coding Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md) 系统时，应识别出不同类型的上下文问题，并为每一层设计专门的解决方案，而非用一个「万能上下文」包办所有。
 
@@ -99,9 +99,9 @@ MCP 本质上是「人做预处理，AI 做翻译」的模式；Tarot Pixel 则�
 ## 相关实体
 
 - Specflow Agent 任务规划（参见 [Coding Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md)） — Tarot Pixel 的协作搭档，负责业务上下文
-- [Hermes Agent](ch03/102-hermes-agent.html) — 通用 Agent 系统中的上下文管理与工具设计
-- [Claude Code 深度架构分析](ch03/084-claude-code.html) — Coding Agent 架构分析
-- [Agent-Native 设计](ch09/099-deepseek-code-harness.html) — 为 AI Agent 设计工具的方法论
+- [Hermes Agent](../ch03/102-hermes-agent.html) — 通用 Agent 系统中的上下文管理与工具设计
+- [Claude Code 深度架构分析](../ch03/084-claude-code.html) — Coding Agent 架构分析
+- [Agent-Native 设计](../ch09/099-deepseek-code-harness.html) — 为 AI Agent 设计工具的方法论
 - [Coding Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md) — AI 编程代理技术与实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 系统架构与上下文管理
 

@@ -101,10 +101,10 @@ Kiro CLI 的非交互模式意味着结果完全由输出内容决定。建议�
 → [C4 架构图](assets/c4/kiro-job-scheduler-eventbridge-ecs-fargate-c4.html)
 
 ## 相关实体
-- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](ch01/436-aws.html)
-- [Using Kiro Cli Agent Client Protocol Build Ai Chat](ch05/100-ai.html)
-- [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](ch07/001-mcp.html)
-- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](ch05/100-ai.html)
+- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/192-amazon-ecs.html)
+- [Using Kiro Cli Agent Client Protocol Build Ai Chat](../ch03/035-agent.html)
+- [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](../ch07/001-mcp.html)
+- [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch03/084-claude-code.html)
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 
 ## 相关引用

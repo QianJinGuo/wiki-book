@@ -11,11 +11,11 @@ LLM 部署后无法继续学习——预训练依赖海量算力，微调成本�
 将状态从 `s_t`（当前任务）扩展为 `x_t = (s_t, M_t)`（任务状态 + 技能内存），**重新获得马尔可夫性**，保证系统收敛性。
 
 ## 相关实体
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/341-skill.html)
-- [Agent Skills Comprehensive Survey](ch04/341-skill.html)
-- [使用 Agent Skills 做知识库检索能比传统 Rag 效果更好吗](ch04/341-skill.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/035-agent.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch03/035-agent.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/470-agent-skills.html)
+- [Agent Skills Comprehensive Survey](ch04/470-agent-skills.html)
+- [使用 Agent Skills 做知识库检索能比传统 Rag 效果更好吗](ch04/470-agent-skills.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/085-harness.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/085-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memento-skills-agent-self-evolving.md)
 

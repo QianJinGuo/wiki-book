@@ -42,11 +42,11 @@ Q1 最令人印象深刻的指标之一是 Revenue per employee 达到近 140 �
 1. **关注 TMD（Transaction Margin Dollars）而非单纯收入**：Klarna 使用 TMD 这一非 IFRS 指标来衡量核心业务盈利能力， 定义为收入减去处理和服务成本、信贷损失准备和资金成本。TMD Q1 达 3.89 亿美元（+44% YoY）， 与收入增速完全匹配，说明增长质量扎实。
 2. **Cohort 运营效率是长期价值指标**：2022 年加入的用户 cohort 年收入贡献从 12 美元增至 52 美元， 这种用户深耕能力是 Klarna 相较于单纯获客型金融科技公司的差异化优势，也是规模效应之外最值得关注的效率指标。
 ## 相关实体
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](ch05/100-ai.html)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch05/100-ai.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/100-ai.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/411-rag.html)
 - [How To Create Websites With Great Ux Designs](ch01/149-how-to-create-websites-with-great-ux-designs-principles-and.html)
-- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](ch05/100-ai.html)
-- [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](ch05/100-ai.html)
+- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04/018-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
+- [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](../ch03/100-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md)
 

@@ -73,8 +73,8 @@ Redis Pub/Sub 多实例同步秒级生效 + ConfigVersionRegistry 版本回滚�
 ## 相关链接
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/finxscope-financial-agent-harness-aliyun-2026-08-03.md)
-- 底座姊妹篇：[AgentScope Java 2.0：企业级分布式 Harness 框架](ch03/035-agent.html)、[专为 Managed Agents 而生的 Harness 底座：AgentScope 2.0](ch03/035-agent.html)
-- 相关主题：[STAROps 主机智能巡检（阿里云云原生）](ch01/1188-spec.html)、[DojoAgents 金融 Agent（AlphaDojo）](ch03/035-agent.html)
+- 底座姊妹篇：[AgentScope Java 2.0：企业级分布式 Harness 框架](../ch05/085-harness.html)、[专为 Managed Agents 而生的 Harness 底座：AgentScope 2.0](../ch05/085-harness.html)
+- 相关主题：[STAROps 主机智能巡检（阿里云云原生）](../ch11/205-starops-host-intelligent-inspection-24-7-ai-doctor-for-ecs.html)、[DojoAgents 金融 Agent（AlphaDojo）](../ch03/035-agent.html)
 
 ---
 

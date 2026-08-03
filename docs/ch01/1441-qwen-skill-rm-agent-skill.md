@@ -84,10 +84,10 @@ Skill-RM 的核心优势是「默认协议下就能涨分」，不需要为每�
 ### 与现有 wiki概念的呼应
 
 - **[Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)**：Skill-RM 把 Skill范式从 Agent 执行层延伸到 RM评估层——同一套「说明书 +工具箱」抽象在两个不同域落地
-- **[Skill 系统设计](ch04/341-skill.html)**：Reward-Evaluation Skill 是 SKILL.md范式在 reward域的扩展，证明 Skill抽象可复用、可编排、可审计
-- **[Token-in-Token-out Agentic RL](ch03/035-agent.html)**：Skill-RM 是 agentic RL闭环中「奖励信号可审计化」的关键拼图——flat prompt 的奖励信号难复现，Skill化的评估轨迹可复查
+- **[Skill 系统设计](../ch04/341-skill.html)**：Reward-Evaluation Skill 是 SKILL.md范式在 reward域的扩展，证明 Skill抽象可复用、可编排、可审计
+- **[Token-in-Token-out Agentic RL](../ch04/788-agentic-rl-token-in-token-out-done-right.html)**：Skill-RM 是 agentic RL闭环中「奖励信号可审计化」的关键拼图——flat prompt 的奖励信号难复现，Skill化的评估轨迹可复查
 - **[AWS RL LLM-as-Judge](ch01/436-aws.html)**：AWS 的同方向探索，但 Skill-RM给出更系统的资源分层 +编排协议
-- **[Agent 自改进六机制](ch03/035-agent.html)**：Skill-RM属于「外部奖励 + Skill化」机制，与 L4 对抗训练形成对照
+- **[Agent 自改进六机制](../ch03/035-agent.html)**：Skill-RM属于「外部奖励 + Skill化」机制，与 L4 对抗训练形成对照
 
 ###渐进式披露 vs append
 
@@ -147,7 +147,7 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 - **公众号转载**：Hyman的杂货铺（2026-06-10）
 ## 相关实体
 
-- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](ch04/341-skill.html)
+- [面向 skills 编程：大淘宝企业购 5 阶段演进与 anthropic agent skills 标准实战](../ch03/076-skills.html)
 
 ---
 

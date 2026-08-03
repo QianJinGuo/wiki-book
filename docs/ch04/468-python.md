@@ -50,9 +50,9 @@
 ## 相关实体
 
 - [一次构建，随处复用：Python 中的泛型仓库模式](ch04/468-python.html) — 同源姊妹条目（同一微信文章的另一个入库版本）
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/341-skill.html)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](ch03/035-agent.html)
-- [Agent 开发范式演进：从环境工程出发](ch03/035-agent.html) — 反向链接本条目
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/470-agent-skills.html)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/035-agent.html)
+- [Agent 开发范式演进：从环境工程出发](../ch03/035-agent.html) — 反向链接本条目
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一次构建随处复用python-泛型仓库模式.md)
 

@@ -27,11 +27,11 @@
 
 ## 关联阅读
 ## 相关实体
-- [Hs.Playerzero Ai Code Review](ch05/100-ai.html)
-- [Aws Reinvent Game Demo 2024 25](ch11/263-aws-reinvent-game-demo-2024-25.html)
-- [Claude For Small Business](ch01/030-introducing-claude-for-small-business.html)
+- [Hs.Playerzero Ai Code Review](../ch05/100-ai.html)
+- [Aws Reinvent Game Demo 2024 25](../ch11/263-aws-reinvent-game-demo-2024-25.html)
+- [Claude For Small Business](../ch01/030-introducing-claude-for-small-business.html)
 - [Notebook Lm](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md)
-- [Kuse Junior Ai Employee](ch05/100-ai.html)
+- [Kuse Junior Ai Employee](../ch05/100-ai.html)
 
 ---
 

@@ -106,9 +106,9 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 
 ## 相关概念
 - [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
-- [AlphaEvolve](ch03/035-agent.html) — DeepMind 代码进化型科学发现 Agent
-- [Agent Memory 模块化框架与评测](ch03/035-agent.html) — ICLR 2026 评测基准
-- [Skill RAG 清华 SRA](ch04/341-skill.html) — 技能增强型检索
+- [AlphaEvolve](../ch03/035-agent.html) — DeepMind 代码进化型科学发现 Agent
+- [Agent Memory 模块化框架与评测](../ch04/154-agent-memory.html) — ICLR 2026 评测基准
+- [Skill RAG 清华 SRA](../ch04/341-skill.html) — 技能增强型检索
 
 ## 深度分析
 1. **ASI 即文本优化的梯度**：`evaluate()` 返回单一标量 → `oa.log()` 记录诊断信息作为 ASI，是从"告诉 LLM 打几分"到"告诉 LLM 怎么改"的信息升维。这一机制与数值优化中梯度的角色完全对称：梯度指示方向，ASI 指示修复路径^。传统进化框架将诊断上下文压缩为单一标量，相当于丢弃了梯度信息。
@@ -125,18 +125,18 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 5. **优先在 Generalization 模式构建可迁移 skill library**：对于需要在新问题上快速适配的场景（如 Agent skill 自动化），先用 Generalization 模式将优化结果固化为 skill，再用 Multi-Task 模式让 skill 在任务间互相增强^。
 
 ## 相关实体
-- [2026年最值得关注的15款开发者工具你用过几个](ch01/1429-0.html)
+- [2026年最值得关注的15款开发者工具你用过几个](ch01/1105-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
-- [腾讯研究院Ai速递 20260507](ch05/100-ai.html)
-- [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](ch05/100-ai.html)
+- [腾讯研究院Ai速递 20260507](../ch05/100-ai.html)
+- [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](../ch04/206-karpathy-ai.html)
 - [Kasra Blog Llm Hacking Empirical Test](ch01/1476-llm.html)
-- [Hermes Agent V014 Architecture Shugex](ch03/035-agent.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/102-hermes-agent.html)
 ## 与 Hermes Agent Skill 互优化的关联
 
-**[Hermes Agent Skill 互优化](ch04/341-skill.html)**（KK大叔 4 轮互优化实验，2026-06）是 GEPA 通用优化方法论在 **Skill 自进化场景**的具体落地。
+**[Hermes Agent Skill 互优化](ch01/524-hermes-agent-skill.html)**（KK大叔 4 轮互优化实验，2026-06）是 GEPA 通用优化方法论在 **Skill 自进化场景**的具体落地。
 
 **互验证（4 维高度互补）**：
 

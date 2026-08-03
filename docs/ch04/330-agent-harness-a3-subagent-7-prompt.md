@@ -96,7 +96,7 @@ SubAgent 与 Agent As Tool、MultiAgent 有交集但概念范围不完全一致�
 ## 相关页面
 
 - [JiuwenSwarm Coordination Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/jiuwenswarm-coordination-engineering.md)
-- [Claude Code Subagents 上下文卫生](ch03/084-claude-code.html)
+- [Claude Code Subagents 上下文卫生](ch04/231-claude-code-subagents.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-comparison-a3-subagent-2026-06-10.md)
 
 ## 相关实体

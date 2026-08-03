@@ -116,7 +116,7 @@ For serving at scale, data parallelism (multiple independent model replicas) is 
 ## Related Entities
 
 - [Apple Silicon costs more than OpenRouter](ch01/1476-llm.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch05/100-ai.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/039-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Vietnamtodevelopdomesticcloud](ch01/1325-opd.html)
 
 ---

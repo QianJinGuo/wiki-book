@@ -40,9 +40,9 @@ MCP（ Model Context Protocol）服务正在成为下一个 OAuth 式的攻击�
 5. **令牌级撤销而非用户级暂停**：应急响应手册须训练团队执行单个令牌的撤销，而非整个用户账户的暂停。这要求对 OAuth 撤销端点（ revoke endpoint ）的操作熟练度，以及对哪些令牌需要撤销的精确判断能力。 
 
 ## 相关实体
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch05/100-ai.html)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch05/100-ai.html)
-- [Pixel 10 Zero Click Exploit Chain](ch05/100-ai.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/110-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/128-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [Pixel 10 Zero Click Exploit Chain](../ch05/100-ai.html)
 - [New Lock](https://github.com/QianJinGuo/wiki/blob/main/entities/new-lock.md)
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
 

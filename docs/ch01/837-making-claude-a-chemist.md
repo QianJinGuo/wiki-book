@@ -29,10 +29,10 @@ Anthropic 的研究让 Claude 在化学领域达到专家水平——不是通�
 用领域 AI 做专业任务，通用 AI 做跨领域任务——两者组合优于单一模型。
 
 ## 相关实体
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch03/035-agent.html)
-- [Anthropic Pm Jess Yan Managed Agents](ch03/035-agent.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch03/035-agent.html)
-- [Claude Code Hackathon Winners 2026](ch03/084-claude-code.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1532-anthropic.html)
+- [Anthropic Pm Jess Yan Managed Agents](ch01/1532-anthropic.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/400-anthropic-claude-managed-agents.html)
+- [Claude Code Hackathon Winners 2026](../ch03/084-claude-code.html)
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-com-research-making-claude-a-chemist.md)

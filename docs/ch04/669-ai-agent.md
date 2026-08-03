@@ -50,12 +50,12 @@ AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力�
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/075-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch11/247-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/247-openclaw.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/100-ai.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/247-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

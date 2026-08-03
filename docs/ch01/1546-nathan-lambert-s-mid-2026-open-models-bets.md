@@ -69,13 +69,13 @@ Nathan 的核心论点：
 ## 关联与延伸
 
 - **同主题 deep entity**：
-  - [How Far Behind Are Open Models 2026](ch01/1429-0.html) — 能力差距量化
-  - [Chinese Ai Lab Insights Nathan](ch05/100-ai.html) — Chinese labs 深度分析
-  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch05/100-ai.html) — 训练后差距分析
+  - [How Far Behind Are Open Models 2026](ch01/1105-20.html) — 能力差距量化
+  - [Chinese Ai Lab Insights Nathan](../ch05/100-ai.html) — Chinese labs 深度分析
+  - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/453-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html) — 训练后差距分析
 - **方法论文**：
   - Nathan 的 [open-models-in-perpetual-catch-up](https://www.interconnects.ai/p/open-models-in-perpetual-catch-up) — 能力差距基础
   - [How much does distillation really matter](https://www.interconnects.ai/p/how-much-does-distillation-really) — distillation 实证
-- **Agent 时代背景**：[Opus 4 7 Launch Claude Code Best Practices Wechat](ch03/084-claude-code.html) — Claude Code 是闭源主导 RL 时代的样本
+- **Agent 时代背景**：[Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/084-claude-code.html) — Claude Code 是闭源主导 RL 时代的样本
 
 ## 上线状态与发布信息
 

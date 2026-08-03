@@ -53,12 +53,12 @@ SDD 并非银行业的万能解，其适用性需要结合模型能力、私域�
 ## 相关实体
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/204-skillos-learning-skill-curation-for-self-evolving-agents.html)
 
-- [你不知道的 Agent：原理、架构与工程实践](ch03/035-agent.html)
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch05/100-ai.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch03/035-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/129-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/247-openclaw.html)
+- [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/085-harness.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/501-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/075-agentic.html)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/129-harness-engineering.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/247-openclaw.html)
 
 ---
 

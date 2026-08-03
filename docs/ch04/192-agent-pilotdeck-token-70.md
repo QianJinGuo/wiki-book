@@ -105,15 +105,15 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 
 **白盒记忆呼应**：第 1 来源强调"可观测性 = 数据库级"，第 2 来源把这个抽象落到**具体 UI 操作**：「记错了点进改，记忆冲突了直接删，**不要重启对话，不要重新喂一遍偏好**」——这一句精准对应 Agent 记忆架构 的"用户可控 vs AI 自主整合"两派之争，PilotDeck 明显站用户可控派。
 
-**路由机制延伸**：第 1 来源只覆盖"按规则 + 自然语言选模型"，第 2 来源**新增一维度**——路由可以**冷启动本地模型**（VoxCPM 案例）。这一能力是 [Harness 7 层架构](ch03/084-claude-code.html) 中"环境即服务"层的具体实现：路由不只决策，更可动态拉起新资源。
+**路由机制延伸**：第 1 来源只覆盖"按规则 + 自然语言选模型"，第 2 来源**新增一维度**——路由可以**冷启动本地模型**（VoxCPM 案例）。这一能力是 [Harness 7 层架构](../ch05/129-harness-engineering.html) 中"环境即服务"层的具体实现：路由不只决策，更可动态拉起新资源。
 
-**OpenClaw 横向对比的反思**：两源都把 OpenClaw 定位"范式探路者而非生态建设者"，呼应 [OpenClaw 8 部分总结](ch11/247-openclaw.html) 提到的"安全/性能/可观测性短板"——PilotDeck 正是补足这些短板的后继者（隔离、记忆可控、成本）。
+**OpenClaw 横向对比的反思**：两源都把 OpenClaw 定位"范式探路者而非生态建设者"，呼应 [OpenClaw 8 部分总结](../ch11/247-openclaw.html) 提到的"安全/性能/可观测性短板"——PilotDeck 正是补足这些短板的后继者（隔离、记忆可控、成本）。
 
 ### 实践启示（从 2 源综合后）
 
 1. **GitHub 显式链接**为开发者提供**立即试用入口**——之前 1 个 source 没给链接，2 source 后 onboarding 成本降低
 2. **VoxCPM 案例**对**多模态 Agent 团队**有借鉴价值：复杂任务不再预装所有模型，而是在 routing 层按需冷启动
-3. **3 个跨域 demo 并行**证明 **WorkSpace 隔离已从"文件夹级"进化到"AI 完整生存环境级"**——是 [Agent Harness 上下文管理](ch03/035-agent.html) 概念的产品化落地
+3. **3 个跨域 demo 并行**证明 **WorkSpace 隔离已从"文件夹级"进化到"AI 完整生存环境级"**——是 [Agent Harness 上下文管理](../ch05/062-agent-harness.html) 概念的产品化落地
 4. **6 种程序员人格**的细分定位是**Skill 商店 + WorkSpace + Routing** 三件套的**用户教育样例**——通过游戏化 case 让用户理解三层结构
 
 ### 上线状态 / 链接
@@ -128,7 +128,7 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 - → [第 1 原文存档（新智元 ASI启示录 2026-05-28）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-agent-os-openbmb-tsinghua.md)
 - → [第 2 原文存档（数据派THU 2026-06-09）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-data派thu-2026.md)
 ## 相关实体
-- [Minicpm5 1B Forgetrain Machine Heart](ch05/100-ai.html)
+- [Minicpm5 1B Forgetrain Machine Heart](../ch05/100-ai.html)
 
 ---
 

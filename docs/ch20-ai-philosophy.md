@@ -42,7 +42,7 @@
 Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反驳 [Karpathy 提出的 vibe coding 概念](https://entities/karpathy-vibe-coding-to-agentic-engineering.md) 在前端的适用性：**代码能编译 ≠ 设计完成**。这条边界划清后，AI 工具在前端赛道会进一步分化。
 
 ## 相关实体
-- [Elena Progressive Web Components](ch03/048-elena-progressive-web-components.html)
+- [Elena Progressive Web Components](https://github.com/QianJinGuo/wiki/blob/main/entities/elena-progressive-web-components.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
 
@@ -64,7 +64,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 | **动效过度** | 渐变慢、缓动曲线怪、吃掉注意力 | motion-token + 限制时长 |
 | **一致性** | 组件风格跳跃、间距不统一、icon 混用 | design token + token drift 检测 |
 
-这 6 类与 [Impeccable](ch05/001-impeccable.html) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
+这 6 类与 [Impeccable](https://github.com/QianJinGuo/wiki/blob/main/entities/impeccable.md) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
 
 ### 解决路径：Rule + Skill，不是 Rule-only
 - 单纯把 rules 写到 CLAUDE.md **不够** —— rules 是声明式约束，AI 容易"选择性遵守"或长上下文里漂移
@@ -94,11 +94,11 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 4. **前端 AI 工具会进一步分化** —— 纯 vibe coding 工具（原型）vs 设计 skill 工具（品控），赛道不同
 
 ## 相关对照
-- [Impeccable](ch05/001-impeccable.html) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
-- [Karpathy Vibe Coding](ch03/035-agent.html) —— Karpathy 原始概念出处
-- [Willison Vibe Coding Convergence](ch09/052-coding-agent.html) —— Willison 的同主题回应
-- [Agent Skill 编写指南](ch04/341-skill.html) —— 通用 skill 格式
-- [Agentic Design System 演化](ch01/008-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Impeccable](https://github.com/QianJinGuo/wiki/blob/main/entities/impeccable.md) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
+- [Karpathy Vibe Coding](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Karpathy 原始概念出处
+- [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
+- [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
+- [Agentic Design System 演化](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-design-system-from-chatbot-to-orchestration.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
 
 ## 深度分析
@@ -117,7 +117,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 1. **在前端AI项目中明确区分"原型阶段"和"品控阶段"**：用vibe coding处理快速原型和业务逻辑验证（此处AI的"对错分明"特性有效），但在设计品质控制环节切换到skill-based工作流。两个阶段采用不同的工具和方法论，而非试图用单一流程覆盖
 
-2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](ch05/001-impeccable.html) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
+2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](https://github.com/QianJinGuo/wiki/blob/main/entities/impeccable.md) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
 
 3. **优先采用Skill架构而非Rule-only来约束AI设计输出**：在CLAUDE.md或类似配置中，不仅要写声明式规则，更要配套实现"触发命令+检测器+反馈闭环"。设计skill应该包含：主动触发的检查命令、基于规则的自动检测、与设计系统对齐的上下文信息三个部分
 
@@ -151,11 +151,11 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 本文档基于火山引擎 Data Agent 产品体系，设计一套可对标的**企业级数据智能体**产品。涵盖：智能问数 Agent（NL2SQL）、营销策略 Agent（CDP 集成）两大核心场景的完整功能拆解、技术架构、API 设计、数据模型。
 
 ## 相关实体
-- [Openai Buys Ai Consultancy Enterprises](ch05/100-ai.html)
-- [Multilingual Ai](ch05/100-ai.html)
-- [Baixing Ontoz Enterprise Ontology Multi Agent](ch05/100-ai.html)
-- [Enterprise Ai Memory Substrate Three Layer Architecture](ch05/100-ai.html)
-- [Skill Version Management Semantic Versioning Practices Winty](ch04/341-skill.html)
+- [Openai Buys Ai Consultancy Enterprises](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-buys-ai-consultancy-enterprises.md)
+- [Multilingual Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/multilingual-ai.md)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
+- [Enterprise Ai Memory Substrate Three Layer Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
+- [Skill Version Management Semantic Versioning Practices Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md)
 
 → [产品总览 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-product-overview.md)
 → [智能问数Agent 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
@@ -903,9 +903,9 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 过早引入全面指标体系会让团队陷入"测量瘫痪"，而不是真正推进落地。
 
 ## 相关实体
-- [AutoResearch 多Agent开发](ch03/035-agent.html) — 类似的 Agentic 循环 + 量化评分思路
-- [Harness Engineering](ch05/129-harness-engineering.html) — 约束驱动的自动化执行
-- [Enterprise Software Moats in Agent Era](ch03/035-agent.html) — 企业级 Agent 护城河分析
+- [AutoResearch 多Agent开发](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md) — 类似的 Agentic 循环 + 量化评分思路
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — 约束驱动的自动化执行
+- [Enterprise Software Moats in Agent Era](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-software-moats-agent-era.md) — 企业级 Agent 护城河分析
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 宪法级约束 + 量化验收标准
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
 
@@ -928,8 +928,8 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 **访谈来源**：James 接受技术博主 **Ryan Peterman** 的视频采访（2+ 小时），本文根据采访视频整理「AI 时代的职业建议」部分。
 
 ## 相关实体
-- [Fanling Company As Agent Ai Org Reflection](ch05/100-ai.html)
-- [Ai Era What To Read World Book Day](ch05/100-ai.html)
+- [Fanling Company As Agent Ai Org Reflection](https://github.com/QianJinGuo/wiki/blob/main/entities/fanling-company-as-agent-ai-org-reflection.md)
+- [Ai Era What To Read World Book Day](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-era-what-to-read-world-book-day.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/james-cowling-engineering-philosophy-ai-era.md)
 
@@ -1263,13 +1263,13 @@ Welo Data 的服务覆盖从训练数据到生产监控的全链路：
 
 **Human evaluation**：在目标语言中实现 **90%+ 评估者共识率**，这是通过评估者独立校准和质量控制流程实现的，而非简单依赖评分数量。
 
-**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](ch05/100-ai.html)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
+**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-post-training-full-guide.md)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
 
 **Production monitoring**：按语言、按地区追踪质量指标，在用户发现问题之前发现多语言质量退化。
 
 ## 质量保障基础设施
 
-Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](ch04/341-skill.html)体系。
+Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)体系。
 
 安全设施覆盖 **14+ 地区**（北美、欧洲、亚洲、MENA），支持 air-gapped 环境、设备控制和严格的数据处理协议。历史安全事件：**0**。
 
@@ -1282,7 +1282,7 @@ Multilingual AI 与以下领域存在深刻关联： 提供了偏好学习的方
 
 ## 相关实体
 
-- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](ch01/1188-spec.html)
+- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multilingual-ai.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -1415,11 +1415,11 @@ Princeton 和 Nature 的研究揭示了反向对齐在社会偏见维度的危�
 
 ## 相关实体
 
-- [多 Agent AI 安全研究投资](ch05/100-ai.html)
+- [多 Agent AI 安全研究投资](https://github.com/QianJinGuo/wiki/blob/main/entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md)
 - [注意力崩溃与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [AI 交互卫生规范](ch05/100-ai.html)
-- [Claude Code 系统工程指南](ch03/084-claude-code.html)
-- [禁止开源 AI 是个错误](ch05/100-ai.html)
+- [AI 交互卫生规范](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-interaction-hygiene-enri-tencent-llm-practices-2026.md)
+- [Claude Code 系统工程指南](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-top-1-guide-system-engineering.md)
+- [禁止开源 AI 是个错误](https://github.com/QianJinGuo/wiki/blob/main/entities/banning-open-source-ai-would-be-a-mistake.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/human-aligning-to-machine-reverse-alignment-2026.md)
 
@@ -1602,8 +1602,8 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 
 ## 相关实体
 
-- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](ch03/035-agent.html)
-- [ICO fines Cl0p victim South Staffs Water over data breach](ch01/1429-0.html)
+- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-software-moats-agent-era.md)
+- [ICO fines Cl0p victim South Staffs Water over data breach](https://github.com/QianJinGuo/wiki/blob/main/entities/computerweekly-ico-fines-cl0p-south-staffs-water.md)
 
 ---
 
@@ -1638,11 +1638,11 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 **对个人AI素养的建议**
 文章特别指出，提升Token效率还有一个同等重要的前提：使用者的AI素养。模型路由可以由产品侧的Harness Engineering支撑，但任务分级需要用户自己的判断力——哪些任务该交给哪一档模型，需要用户建立对模型能力的理解。此外，上下文信息的管理也直接影响Token消耗：只提供与当前任务相关的上下文，还是让模型自己在系统中东拼西凑，不仅影响产出质量，还非常影响积分消耗 。
 ## 相关实体
-- [企微的这些新功能补齐了Ai在你公司的最后一公里](ch05/100-ai.html)
-- [Token Economics Ai Efficiency](ch05/100-ai.html)
+- [企微的这些新功能补齐了Ai在你公司的最后一公里](https://github.com/QianJinGuo/wiki/blob/main/entities/企微的这些新功能补齐了ai在你公司的最后一公里.md)
+- [Token Economics Ai Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/token-economics-ai-efficiency.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch03/035-agent.html)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/1178-chatgpt.html)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](https://github.com/QianJinGuo/wiki/blob/main/entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md)
+- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](https://github.com/QianJinGuo/wiki/blob/main/entities/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md)
 
@@ -1726,10 +1726,10 @@ AI 工具打破了这一契约：
 
 ## 相关实体
 
-- [腾讯 Token 经济学](ch05/100-ai.html) — AI 工具的成本-效率分析
-- [GitHub Agentic Token 效率](ch03/035-agent.html) — Agent 在代码审查场景的效率优化
+- [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 工具的成本-效率分析
+- [GitHub Agentic Token 效率](https://github.com/QianJinGuo/wiki/blob/main/entities/github-agentic-token-efficiency.md) — Agent 在代码审查场景的效率优化
 - [Greptile TREX](https://github.com/QianJinGuo/wiki/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
-- [Claude Code 大型代码库 Harness](ch03/084-claude-code.html) — AI 辅助开发的工具配置实践
+- [Claude Code 大型代码库 Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-large-codebase-harness-configuration.md) — AI 辅助开发的工具配置实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-productivity-paradox-cost-shifting-poischeme.md)
 
@@ -1818,8 +1818,8 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 - 模型路由
 - AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [Hermes Agent 自进化机制](ch03/035-agent.html)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [Hermes Agent 自进化机制](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-tools-research.md)
 
 ---
 
@@ -1959,13 +1959,13 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 - 发布日期：2026-06-04
 - 部署平台：Hugging Face + NVIDIA NIM
 ## 相关实体
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch03/035-agent.html)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch03/035-agent.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/487-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-secure-local-agent-nemoclaw-openclaw.md)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/768-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](https://github.com/QianJinGuo/wiki/blob/main/entities/tokenspeed-agentic-inference-engine.md)
 
-- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch05/100-ai.html)
+- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---
@@ -2427,9 +2427,9 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 ---
 
 **相关实体**：
-- [Youre Building Agent Security In The Wrong Order](ch03/035-agent.html) — AI 公司政策参与的结构性困境
-- [Claude Opus 48 The System Card B8460F](ch01/1442-claude.html) — Anthropic 前沿模型的安全评估方法
-- [Dario Amodei Policy Ai Exponential Time Mismatch](ch05/100-ai.html) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
+- [Youre Building Agent Security In The Wrong Order](https://github.com/QianJinGuo/wiki/blob/main/entities/youre-building-agent-security-in-the-wrong-order.md) — AI 公司政策参与的结构性困境
+- [Claude Opus 48 The System Card B8460F](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-opus-48-the-system-card-b8460f.md) — Anthropic 前沿模型的安全评估方法
+- [Dario Amodei Policy Ai Exponential Time Mismatch](https://github.com/QianJinGuo/wiki/blob/main/entities/dario-amodei-policy-ai-exponential-time-mismatch.md) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — AI 安全架构的政策维度
 - [Ai R And D Bottleneck Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-r-and-d-bottleneck-shift.md) — AI 发展对 R&D 组织的重构效应
 - [Enterprise Ai Adoption Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption-patterns.md) — 企业 AI 采纳的宏观政策背景
@@ -2583,9 +2583,9 @@ Amodei 政策对 AI 从业者的启示：
 - **预期 2026-2028**：如 Powerful AI 出现，政策制定者将被迫「**应急式立法**」——这正是 Amodei 警告要避免的
 ## 相关实体
 
-- [5 ways to curb ai sprawl without stifling innovation](ch05/100-ai.html)
-- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](ch01/1532-anthropic.html)
-- [dario amodei 2026 policy on the ai exponential](ch05/100-ai.html)
+- [5 ways to curb ai sprawl without stifling innovation](https://github.com/QianJinGuo/wiki/blob/main/entities/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md)
+- [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-vs-dow-open-models-power-equilibrium-2026.md)
+- [dario amodei 2026 policy on the ai exponential](https://github.com/QianJinGuo/wiki/blob/main/entities/dario-amodei-policy-ai-exponential-2026.md)
 
 ---
 
@@ -2613,7 +2613,7 @@ Selective unlearning is the process of removing specific knowledge or behaviors 
 
 The core challenge that rDPO addresses is structural rather than superficial. When a model undergoes RLHF or DPO-based alignment during post-training, the safety guardrails are embedded directly into its parameters — they are not rules appended to the prompt or classifiers running on the output. This means that prompt engineering techniques (system prompts, few-shot examples, instruction clarification) cannot reliably override these internalized safeguards.
 
-A security team asking the model to "generate a sample phishing email for employee awareness training" will receive a refusal not because the prompt is ambiguous, but because the model's parameters encode a learned association between "phishing email" and "harmful output." This is precisely the scenario where selective unlearning is necessary — not to weaken safety, but to make it context-aware. The approach aligns with the principle discussed in [AI-friendly architecture](ch05/100-ai.html): rather than fighting against baked-in model behaviors with brittle prompt engineering, modify the model's underlying parameters with targeted, verifiable changes.
+A security team asking the model to "generate a sample phishing email for employee awareness training" will receive a refusal not because the prompt is ambiguous, but because the model's parameters encode a learned association between "phishing email" and "harmful output." This is precisely the scenario where selective unlearning is necessary — not to weaken safety, but to make it context-aware. The approach aligns with the principle discussed in [AI-friendly architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md): rather than fighting against baked-in model behaviors with brittle prompt engineering, modify the model's underlying parameters with targeted, verifiable changes.
 
 ### rDPO: Mechanism and Design Choices
 
@@ -2633,7 +2633,7 @@ Amazon Nova CCMS organizes its configurable safeguards around four pillars:
 
 The architectural significance of this framework is that it separates *what* is being moderated from *how much* moderation is applied. Customers can adjust sensitivity levels per pillar independently, creating a multi-dimensional safety configuration space rather than a binary "safe/unsafe" toggle. The non-configurable essential controls (child safety, privacy) form a hard floor beneath which no configuration can descend — ensuring that customization doesn't compromise core safety requirements.
 
-This layered approach mirrors the [zero-trust security architecture](ch12/031-mythos.html) concept of tiered access control: different levels of trust receive different levels of access, and a hard safety floor prevents the lowest level from compromising the system. The parallel between model safety configuration and enterprise security architecture is instructive — both require balancing usability (legitimate access) against protection (harm prevention).
+This layered approach mirrors the [zero-trust security architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos-对企业安全架构影响的思考.md) concept of tiered access control: different levels of trust receive different levels of access, and a hard safety floor prevents the lowest level from compromising the system. The parallel between model safety configuration and enterprise security architecture is instructive — both require balancing usability (legitimate access) against protection (harm prevention).
 
 ### Selective Unlearning vs. Alternative Approaches
 
@@ -2656,7 +2656,7 @@ The most immediate applications of selective unlearning with rDPO include:
 - **Legal & Compliance**: Legal teams processing sensitive evidence documents can configure the model to handle confidential and potentially disturbing content without over-refusal
 - **Research**: Organizations conducting AI safety research can create calibrated sets of models with different safety configurations to study the effects of alignment on model behavior
 
-Each of these represents a case where the model's default alignment creates friction with legitimate use — and selective unlearning provides a parameter-level escape valve without compromising the model's fundamental safety posture. This is analogous to the [backend-for-agent](ch03/035-agent.html) concept of context-aware permission systems: rather than a universal policy, apply policies that are sensitive to the specific task context and user role.
+Each of these represents a case where the model's default alignment creates friction with legitimate use — and selective unlearning provides a parameter-level escape valve without compromising the model's fundamental safety posture. This is analogous to the [backend-for-agent](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-for-agent.md) concept of context-aware permission systems: rather than a universal policy, apply policies that are sensitive to the specific task context and user role.
 
 ## Practical Takeaways
 
@@ -2672,11 +2672,11 @@ Each of these represents a case where the model's default alignment creates fric
 
 ## Related Entities
 
-- [Mythos and Enterprise Security](ch12/031-mythos.html) — Zero-trust security architecture parallels with model safety
-- [AI-Friendly Backend Standards](ch05/100-ai.html) — Architecture-level vs. surface-level approaches to AI system design
+- [Mythos and Enterprise Security](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos-对企业安全架构影响的思考.md) — Zero-trust security architecture parallels with model safety
+- [AI-Friendly Backend Standards](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-ai-friendly-standards-path-alitech.md) — Architecture-level vs. surface-level approaches to AI system design
 - [Attention Collapse](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — Context management challenges in model behavior
-- [Backend for Agent](ch03/035-agent.html) — Context-aware permission systems
-- [Alibaba Cloud AI Practices](ch05/100-ai.html) — Practical AI infrastructure engineering
+- [Backend for Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/backend-for-agent.md) — Context-aware permission systems
+- [Alibaba Cloud AI Practices](https://github.com/QianJinGuo/wiki/blob/main/entities/alicloud-ai-practices.md) — Practical AI infrastructure engineering
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/teaching-models-to-forget-selective-unlearning-with-amazon-nova.md)
 
@@ -2738,7 +2738,7 @@ Drumgoole 表示："从传统角度真正管理好风险的组织，可能恰恰
 ### 3. 将有效实践正式化
 员工现在可以在几天内构建有用的工具。将这些转化为企业资产需要结构化的 intake 流程，评估已创建的内容并确定应该扩展什么。
 
-组织需要一种方式将员工构建的工具带入管理环境，定义所有权、可审计性和治理。参见：[Claude Code 治理：软规则与硬约束](ch05/100-ai.html)
+组织需要一种方式将员工构建的工具带入管理环境，定义所有权、可审计性和治理。参见：[Claude Code 治理：软规则与硬约束](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-governance-soft-rules-hard-constraints.md)
 
 ### 4. 为持续创建构建基础设施
 AI sprawl 反映了一个更深层次的转变：软件不再只由 IT 构建。
@@ -2748,7 +2748,7 @@ AI sprawl 反映了一个更深层次的转变：软件不再只由 IT 构建。
 ### 5. 将治理扩展到供应商和第三方
 越来越多的 AI 根本不是内部构建的，而是通过供应商、合作伙伴和现有软件提供商引入的。
 
-许多组织通过他们已经信任的工具使用 AI（这些工具处理企业数据），但并未意识到。领先组织正在通过在 RFP 中添加 AI 特定问题、更新合同以解决数据使用和模型行为问题，使第三方期望与内部 AI 政策保持一致来加强供应商监督。参见：[AI 工具中毒：企业 Agent 安全的一大缺陷](ch05/100-ai.html)
+许多组织通过他们已经信任的工具使用 AI（这些工具处理企业数据），但并未意识到。领先组织正在通过在 RFP 中添加 AI 特定问题、更新合同以解决数据使用和模型行为问题，使第三方期望与内部 AI 政策保持一致来加强供应商监督。参见：[AI 工具中毒：企业 Agent 安全的一大缺陷](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md)
 
 ## 关键结论
 AI sprawl 不再是未来风险——它已经是企业的一部分，而且越来越多地成为工作方式的组成部分。对 CIO 来说，挑战不是阻止它，而是塑造它，建立足够的结构来管理风险，同时不减缓使 AI 有价值的创新。
@@ -2883,7 +2883,7 @@ OpenAI 超级对齐团队的解散则暴露了第三种模式的风险：对齐�
 ## 关联条目
 
 - [机制可解释性的非唯一性](https://github.com/QianJinGuo/wiki/blob/main/entities/条条电路通罗马大模型可解释性的唯一机制可能从一开始就不存在.md) — 可解释性研究对 AI 对齐工程的应用价值
-- [Agent 落地真相](ch03/035-agent.html) — Agent 行为安全与治理
+- [Agent 落地真相](https://github.com/QianJinGuo/wiki/blob/main/entities/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md) — Agent 行为安全与治理
 - **Constitutional AI 原理与实践** — Anthropic 宪法式对齐的技术细节（参考页面待创建）
 
 ## 退出

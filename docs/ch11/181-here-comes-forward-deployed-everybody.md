@@ -53,9 +53,9 @@ Pit Crew 不需要写品牌调性指南，营销人员不需要配置 MCP 服务
 3. **模型是通用的，业务语境是私有的**：理解 AI 在特定工作流、数据集和人员接触点上的具体应用，才是价值真正产生的地方。通用"AI 团队"的模式将让位于每个业务功能的专属 AI 能力建设。
 ## 相关实体
 - from-system-of-record-to-system-of-intelligence.md-intelligence
-- [Enterprise Software Moats Agent Era](ch03/035-agent.html)
-- [Salesforce Headless Software Losing Head A16Z](ch01/200-1.html)
-- [Ibm Forward Deployed Units Ai Deployment](ch05/100-ai.html)
+- [Enterprise Software Moats Agent Era](../ch03/035-agent.html)
+- [Salesforce Headless Software Losing Head A16Z](../ch01/200-1.html)
+- [Ibm Forward Deployed Units Ai Deployment](../ch05/100-ai.html)
 - from-system-of-record-to-system-of-intelligence.md-intelligence-1
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/here-comes-forward-deployed-everybody.md)

@@ -154,11 +154,11 @@ POC 可用 Long-term API Key 快速验证，但生产环境必须切换到 IRSA 
 ## 参考来源
 
 ## 相关实体
-- [Bedrock Agentcore Payment X402 Agent](ch03/035-agent.html)
-- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](ch03/035-agent.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch05/100-ai.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](ch03/035-agent.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 5](ch03/035-agent.html)
+- [Bedrock Agentcore Payment X402 Agent](ch11/059-bedrock-agentcore.html)
+- [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](../ch04/635-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/635-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/635-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/635-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-amazon-bedrock-eks-printer-qc.md)
 

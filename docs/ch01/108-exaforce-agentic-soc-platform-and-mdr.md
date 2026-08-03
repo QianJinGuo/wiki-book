@@ -42,9 +42,9 @@ Fuze CTO 指出核心痛点：GuardDuty 告警淹没团队，Exaforce 将其梳�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Exaforce | Agentic SOC Platform and MDR](ch04/025-exaforce-agentic-soc-platform-and-mdr.html)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch05/100-ai.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](ch05/100-ai.html)
+- [Exaforce | Agentic SOC Platform and MDR](../ch04/025-exaforce-agentic-soc-platform-and-mdr.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/411-rag.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](ch01/795-deepseek.html)
 - [AI 安全全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-security-landscape.md)
 
 ---

@@ -76,11 +76,11 @@ Agent 持续采集运行数据，AI 自动分析高频问题/质量/效率，生
 
 ## 相关实体
 
-- [小米 Harness 工程：从个人实践到团队标准](ch05/129-harness-engineering.html) — 另一团队级 Harness 实践
-- [Harness Engineering](ch05/129-harness-engineering.html) — Harness 工程基础概念
-- [Loop Engineering 深度解读](ch05/006-loop-engineering.html) — 循环工程方法论
-- [腾讯 Harness 工程实践](ch05/129-harness-engineering.html) — 腾讯 Harness 落地经验
-- [Claude Code 大代码库 Harness 配置](ch03/084-claude-code.html) — Harness 配置实践
+- [小米 Harness 工程：从个人实践到团队标准](../ch05/129-harness-engineering.html) — 另一团队级 Harness 实践
+- [Harness Engineering](../ch05/129-harness-engineering.html) — Harness 工程基础概念
+- [Loop Engineering 深度解读](../ch05/006-loop-engineering.html) — 循环工程方法论
+- [腾讯 Harness 工程实践](../ch05/076-cdn-lego-harness-engineering.html) — 腾讯 Harness 落地经验
+- [Claude Code 大代码库 Harness 配置](../ch03/084-claude-code.html) — Harness 配置实践
 
 ---
 

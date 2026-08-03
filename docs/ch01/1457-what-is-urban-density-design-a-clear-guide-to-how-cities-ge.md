@@ -126,7 +126,7 @@
 
 ## 相关实体
 
-- [What Figma Made Visible — 设计系统思维](ch03/016-what-figma-made-visible-component-model-bridging-design-and.html)
+- [What Figma Made Visible — 设计系统思维](../ch03/016-what-figma-made-visible-component-model-bridging-design-and.html)
 - [Haptics Design — 交互设计](ch01/200-1.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

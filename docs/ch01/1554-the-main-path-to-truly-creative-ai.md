@@ -43,7 +43,7 @@ Miessler 指出 AI 创造力的前沿不在于更复杂的算法，而在于如�
 政策制定者和 AI 伦理委员会应提前研究并草拟「AI 终止权」框架，明确在什么条件下终止一个 AI 实例需要类似 IRB 审查的伦理审批流程。即使当前 AI 不具有主观体验，也应为未来技术路径的不确定性预留法律和伦理接口，特别是涉及大规模部署的创意类 AI 代理。
 
 ## 相关实体
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch05/100-ai.html)
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch11/235-amazon-quick.html)
 
 ---
 ## 关联

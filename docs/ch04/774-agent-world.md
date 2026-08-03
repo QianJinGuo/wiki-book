@@ -104,9 +104,9 @@ Agent-World 将三者融合：自动合成高质量环境 + 多环境 RL 训练 
 
 ## 相关实体
 
-- [Agent Config Model Tool Skill MCP Prompt Combination](ch07/001-mcp.html) — Agent 配置与 MCP 工具调用模式
-- [Agent 评测方法论与体系设计](ch03/035-agent.html) — Agent 评估体系设计讨论
-- [AgentCore Harness Trip Allocation](ch03/035-agent.html) — 多 Agent 系统实践
+- [Agent Config Model Tool Skill MCP Prompt Combination](ch04/341-skill.html) — Agent 配置与 MCP 工具调用模式
+- [Agent 评测方法论与体系设计](../ch03/035-agent.html) — Agent 评估体系设计讨论
+- [AgentCore Harness Trip Allocation](ch04/751-agentcore-harness.html) — 多 Agent 系统实践
 
 ---
 

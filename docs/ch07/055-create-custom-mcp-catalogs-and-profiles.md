@@ -27,7 +27,7 @@ MCP 协议标准化了"如何接入工具"，却从未回答"哪些工具可信�
 当 agent 连接多个 MCP 服务器时，所有导出的 tool 都会进入 context window，工具一多，上下文额度便迅速被耗尽。Profiles 通过两层机制解决这一实际问题：一是命名分组与 client reassign——coding 与 planning 各对应一组服务器，切换工作模式只需把 client 重新指过去，仅当前需要的工具留在 context；二是 tool 级开关与配置持久化——只启用 GitHub server 的 `get_me` 而禁用其余工具，把 Markitdown 的访问路径存进 Profile，"一次配置、反复复用"。这套"薄交互面 + 按意图组织工具"的思路与 `MCP 12 生产模式` 高度呼应，只是落到了终端用户层。
 
 ### OCI 分发模型：继承容器 registry 的安全语义
-把 Catalog 与 Profile 都做成 OCI artifact，最有价值的一点是"免费继承"容器镜像已有的分发与访问控制体系——私有 Catalog 只需按老办法管理 Docker Hub（或任意 OCI registry）的仓库级权限，无需引入新基础设施、无需学习新系统。该模式还可自然扩展：换用私有容器 registry，或通过 streamable HTTP 引用自托管的远程 MCP server。这与 [混合云 MCP 运维场景](ch07/001-mcp.html) 中"基础设施团队提供标准化 server"的分层思路同源：把分发层接在既有的企业容器安全体系之上，采纳成本趋近于零。
+把 Catalog 与 Profile 都做成 OCI artifact，最有价值的一点是"免费继承"容器镜像已有的分发与访问控制体系——私有 Catalog 只需按老办法管理 Docker Hub（或任意 OCI registry）的仓库级权限，无需引入新基础设施、无需学习新系统。该模式还可自然扩展：换用私有容器 registry，或通过 streamable HTTP 引用自托管的远程 MCP server。这与 [混合云 MCP 运维场景](ch07/049-aws-devops-agent-mcp-server.html) 中"基础设施团队提供标准化 server"的分层思路同源：把分发层接在既有的企业容器安全体系之上，采纳成本趋近于零。
 
 ### 平台与个人的分工边界
 文章收尾给出了整套设计的分界线：Catalogs 回答"组织推荐什么"，Profiles 回答"个人如何工作"。平台团队通过发布 golden path 确立标准与 guardrails，开发者则保留适应、实验与自由组合 Profiles 的空间。这一分离让治理不至于沦为管控——标准统一在分发层，灵活保留在使用层，从而让 MCP 在组织内"更容易采用、更安全地管理、更有效地扩展"。对 in-house 服务器而言，暴露更丰富的配置选项还能让同一 server 跨项目复用、按上下文重配置，产出更可预测。
@@ -42,7 +42,7 @@ MCP 协议标准化了"如何接入工具"，却从未回答"哪些工具可信�
 
 ## 相关实体
 - `MCP 12 生产模式` — 12 种 Agent 连接外部工具的工程模式，与 Catalogs/Profiles 的薄交互面、按意图组织工具设计互补
-- [AWS DevOps Agent × MCP Server](ch07/001-mcp.html) — 混合云 MCP 运维闭环实践，体现基础设施标准化与业务侧自由组合的分层原则
+- [AWS DevOps Agent × MCP Server](ch07/049-aws-devops-agent-mcp-server.html) — 混合云 MCP 运维闭环实践，体现基础设施标准化与业务侧自由组合的分层原则
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md) — 工具使用与 MCP 模式总览
 
 ---

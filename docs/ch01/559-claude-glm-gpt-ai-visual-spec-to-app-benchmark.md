@@ -90,11 +90,11 @@ VISTA 的提出标志着 AI 软件工程评估的一个关键转折点。传统�
 
 ### "模型 + Harness"系统竞争的含义
 
-同一模型在不同 Harness 下的表现差异表明，**工作流设计和工具调用策略正在成为比模型本身更具区分度的因素**。这与 Harness Engineering 范式的基本观点高度一致——Agent 系统的工程化质量决定了模型能力的实际落地效果。参见 [Harness Engineering 的核心地位](ch05/129-harness-engineering.html) 和 [Agent Harness 综述](ch03/035-agent.html)。
+同一模型在不同 Harness 下的表现差异表明，**工作流设计和工具调用策略正在成为比模型本身更具区分度的因素**。这与 Harness Engineering 范式的基本观点高度一致——Agent 系统的工程化质量决定了模型能力的实际落地效果。参见 [Harness Engineering 的核心地位](../ch05/129-harness-engineering.html) 和 [Agent Harness 综述](../ch05/062-agent-harness.html)。
 
 ### 与现有评估体系的互补性
 
-VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力，RoadmapBench 评测长周期开发，VISTA 评测视觉驱动的从零开发能力。三者共同构成了 Coding Agent 评估的完整拼图，分别覆盖不同能力维度——这与 [RoadmapBench 长周期开发评估](ch03/035-agent.html) 中讨论的"评估体系需要多维度覆盖"的观点一致。
+VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力，RoadmapBench 评测长周期开发，VISTA 评测视觉驱动的从零开发能力。三者共同构成了 Coding Agent 评估的完整拼图，分别覆盖不同能力维度——这与 [RoadmapBench 长周期开发评估](../ch04/311-roadmapbench-long-horizon-agentic-software-development.html) 中讨论的"评估体系需要多维度覆盖"的观点一致。
 
 ## 实践启示
 
@@ -110,12 +110,12 @@ VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力�
 
 ## 相关实体
 
-- [RoadmapBench — 长周期 Agentic 软件开发评估](ch03/035-agent.html) — 从版本升级角度看长周期编码能力
-- [Harness Engineering 的核心地位](ch05/129-harness-engineering.html) — 工作流设计与模型能力的系统整合
-- [Agent Harness 综述](ch03/035-agent.html) — 同一模型在不同架构下的表现差异分析
-- [SWE-bench Agent 评估](ch03/035-agent.html) — 传统代码修复 Benchmark 的方法论
-- [Design-to-Code](ch09/007-design-to-code.html) — 从设计稿到代码的自动化转换技术
-- [Agent 评估系统指南](ch03/035-agent.html) — 系统性 Agent 评估方法论
+- [RoadmapBench — 长周期 Agentic 软件开发评估](../ch04/311-roadmapbench-long-horizon-agentic-software-development.html) — 从版本升级角度看长周期编码能力
+- [Harness Engineering 的核心地位](../ch05/129-harness-engineering.html) — 工作流设计与模型能力的系统整合
+- [Agent Harness 综述](../ch05/062-agent-harness.html) — 同一模型在不同架构下的表现差异分析
+- [SWE-bench Agent 评估](../ch04/752-swe-bench-agent.html) — 传统代码修复 Benchmark 的方法论
+- [Design-to-Code](../ch09/007-design-to-code.html) — 从设计稿到代码的自动化转换技术
+- [Agent 评估系统指南](../ch03/035-agent.html) — 系统性 Agent 评估方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claudeglmgpt谁才是真正的ai软件工程师首个持续更新visual-spec-to-app-benchmark发布.md)
 

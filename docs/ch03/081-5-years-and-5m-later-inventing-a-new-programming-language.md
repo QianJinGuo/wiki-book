@@ -48,7 +48,7 @@ Wasp 团队是 Haskell 老兵，对 DSL + 编译器 + 形式化规范有深厚�
 
 这是一个非常深刻的范畴混淆。**语言**是承载规范的形式；**规范**是被表达的内容。Wasp 团队执着于发明新的形式，却没意识到价值在内容上——任何能完整表达「应用拓扑」的形式（DSL、TypeScript、YAML 都行）都能产生同样的护城河。
 
-这与 [AI 友好架构设计](ch05/100-ai.html)中的核心思想完全一致：能让 AI 和人类同时推理应用结构的「单一真理源（single source of truth）」才是关键，载体是 DSL 还是 TS 是次要选择。
+这与 [AI 友好架构设计](../ch05/022-ai-friendly.html)中的核心思想完全一致：能让 AI 和人类同时推理应用结构的「单一真理源（single source of truth）」才是关键，载体是 DSL 还是 TS 是次要选择。
 
 ### IDE 工具链：被严重低估的隐藏成本
 
@@ -99,12 +99,12 @@ Wasp 团队是 Haskell 老兵，对 DSL + 编译器 + 形式化规范有深厚�
 
 ## 相关实体
 
-- [Ai Friendly Architecture Design Taobao](ch05/100-ai.html) — AI 友好架构设计
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/084-claude-code.html) — 大代码库最佳实践
+- [Ai Friendly Architecture Design Taobao](../ch05/022-ai-friendly.html) — AI 友好架构设计
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/479-anthropic-claude-code.html) — 大代码库最佳实践
 - [Ai Coding Agent From Helloworld To Production](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md) — AI Coding Agent 走向生产
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — Harness 工程范式转移
-- [qwen code skill testing framework: recording, playback, and](ch04/341-skill.html)
+- [qwen code skill testing framework: recording, playback, and](../ch04/341-skill.html)
 
 ---
 

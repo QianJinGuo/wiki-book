@@ -58,7 +58,7 @@ RobustScore = NDCG@20 + α×MRR@10 - β×zero_result_rate - γ×latency_penalty 
 
 ## 相关实体
 
-- [火山引擎 AI 搜索千万级 Agent 架构](ch05/100-ai.html)
+- [火山引擎 AI 搜索千万级 Agent 架构](../ch03/035-agent.html)
 
 ---
 

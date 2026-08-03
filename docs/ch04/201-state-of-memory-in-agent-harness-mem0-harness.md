@@ -138,7 +138,7 @@ Mem0 把 memory 做成 **基础设施层**而非 harness 内部功能。混合�
 - `Harness Engineering Future Persistence Vs Erosion` — harness boundary 与持续性
 ## 相关实体
 
-- [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](ch05/100-ai.html)
+- [self-harness：上海ai lab 提出的 agent 自我改进 harness 范式](../ch05/085-harness.html)
 
 ---
 

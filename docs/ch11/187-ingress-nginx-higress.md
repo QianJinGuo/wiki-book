@@ -49,9 +49,9 @@ Higress已在多种环境中展现出足以投入生产的可靠性，企业采�
 **4. 多模型Fallback是AI落地的关键能力。** 当LLM服务出现故障或延迟时，多模型Fallback可以保证AI服务的连续性。这个能力在企业级AI应用中非常重要，Higress原生支持这一特性。
 **5. MCP协议正在成为AI Agent的标准接口。** Higress深化对Model Context Protocol（MCP）的支持，表明MCP正在成为AI Agent与外部工具交互的事实标准。企业构建AI Agent时，需要考虑对MCP协议的原生支持。
 ## 相关实体
-- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch07/001-mcp.html)
+- [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 - aigatewayproductionindex.md-1
-- [Hiclaw V110 K8S Hermes Worker](ch01/1429-0.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/294-hermes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/higress-cncf-sandbox-ingress-nginx-replacement.md)
 

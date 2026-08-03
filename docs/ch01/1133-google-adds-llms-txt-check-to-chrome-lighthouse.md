@@ -11,14 +11,14 @@
 
 ## 相关实体
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/895-github.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/447-score-by-collisions-patch-by-panic.html)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch05/100-ai.html)
-- [Npm Supply Chain Compromise Postmortem](ch05/100-ai.html)
-- [Cloudflare Glasswing Mythos Security](ch12/031-mythos.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/447-score-by-collisions-patch-by-panic.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/411-rag.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/100-ai.html)
+- [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 
-- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](ch05/100-ai.html)
+- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/035-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

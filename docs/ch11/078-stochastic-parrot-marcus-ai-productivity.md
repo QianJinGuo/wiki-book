@@ -42,15 +42,15 @@ Marcus 和 Bjarnason 将 AI 工具本身作为批评对象，而 Upwork 报告�
 4. **缩小管理层与员工对 AI 价值认知的鸿沟**：当 37% 使用 AI 的管理层认为员工已熟练掌握 AI 工具，而实际只有 17% 的员工认同时，这意味着高管对 AI 落地进展的判断与一线现实之间存在严重失真。应在组织内建立定期的 AI 使用体验反馈机制，而非仅依赖管理层的自我评估。
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](ch01/1166-stochastic-parrot-thought-experiment.html)
-- [Stochastic Parrot Deep Mystery Llms](ch01/1009-stochastic-parrot-deep-mystery-llms.html)
-- [While Breathless In Stodgy Viridian](ch01/749-while-breathless-in-stodgy-viridian.html)
-- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/436-aws.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch05/100-ai.html)
+- [Stochastic Parrot Thought Experiment](../ch01/1166-stochastic-parrot-thought-experiment.html)
+- [Stochastic Parrot Deep Mystery Llms](../ch01/1009-stochastic-parrot-deep-mystery-llms.html)
+- [While Breathless In Stodgy Viridian](../ch01/749-while-breathless-in-stodgy-viridian.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01/436-aws.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/492-aws-sagemaker-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-marcus-ai-productivity.md)
-- [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](ch01/200-1.html)
-- [thinking-machines-interaction-models-ai-cold](ch05/100-ai.html)
+- [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](../ch01/200-1.html)
+- [thinking-machines-interaction-models-ai-cold](../ch04/322-thinking-machines-interaction-models.html)
 - trump media
 
 ---

@@ -264,7 +264,7 @@ harness 是 AI 的"操作系统"——每个组件都应有单元测试和集成
 
 ## 相关实体
 - [Harness Engineering](ch05/129-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](ch05/129-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/296-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/129-harness-engineering.html)
 - [Harness Engineering Alibaba Java Case Study](ch05/129-harness-engineering.html)
 - [Tencent Cdn Lego Harness](ch05/085-harness.html)

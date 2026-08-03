@@ -28,16 +28,16 @@
 ## 相关实体链接
 
 - [Loop Engineering Addy Osmani Challengehub](ch05/006-loop-engineering.html) — Addy Osmani 的 Loop Engineering 原文
-- [一文看懂 Ai 编程智能体工程化新范式Loop Engineering](ch05/100-ai.html) — Loop Engineering 全景介绍
-- [Claude Code Loop Engineering Guide](ch03/084-claude-code.html) — Claude Code Loop Engineering 指南
-- [Claude Code Loop Control Rights Four Levels](ch03/084-claude-code.html) — Loop 权限控制的四个层次
-- [Anthropic 8X Output Verification Bottleneck Fiona Fung](ch09/098-anthropic-8x.html) — Agent 验证瓶颈讨论
-- [Anthropic Claude Code Large Scale Code Migration 2026](ch03/084-claude-code.html) — Anthropic 大规模代码迁移实践
+- [一文看懂 Ai 编程智能体工程化新范式Loop Engineering](ch05/006-loop-engineering.html) — Loop Engineering 全景介绍
+- [Claude Code Loop Engineering Guide](../ch09/168-claude-code-loop-engineering.html) — Claude Code Loop Engineering 指南
+- [Claude Code Loop Control Rights Four Levels](../ch01/339-claude-code-loop.html) — Loop 权限控制的四个层次
+- [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/098-anthropic-8x.html) — Agent 验证瓶颈讨论
+- [Anthropic Claude Code Large Scale Code Migration 2026](../ch01/479-anthropic-claude-code.html) — Anthropic 大规模代码迁移实践
 - [Agentic Loop Engineering Handbook Empirical Framework](ch05/006-loop-engineering.html) — Loop Engineering 经验框架
-- [Ai Agent Loops Claude Code Codex](ch05/100-ai.html) — AI Agent 循环模式
-- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](ch01/1532-anthropic.html) — Dynamic Workflows 与 Ultracode
+- [Ai Agent Loops Claude Code Codex](../ch03/084-claude-code.html) — AI Agent 循环模式
+- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/1532-anthropic.html) — Dynamic Workflows 与 Ultracode
 - [Harness Engineering](ch05/129-harness-engineering.html) — Harness Engineering 概念体系
-- [Claude Code 27 Tips Engineering Upgrade Jiagoux 2026](ch03/084-claude-code.html) — Claude Code 工程实践技巧
+- [Claude Code 27 Tips Engineering Upgrade Jiagoux 2026](../ch01/338-claude-code-27.html) — Claude Code 工程实践技巧
 
 ---
 

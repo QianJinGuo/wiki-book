@@ -53,10 +53,10 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ## 与现有 wiki 实体的关联
 
-- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](ch03/035-agent.html) — 同 Bedrock agent 体系（AgentCore runtime vs Strands Agents）
-- [secure-ai-agents-policy-lambda-interceptors-aws](ch05/100-ai.html) — Bedrock Agent 安全护栏（与本文的 Guardrails + row-level entitlements 对应）
-- [agentic-payment-x402-bedrock-agentcore](ch03/035-agent.html) — 金融场景 agent 应用
-- [agentops-operationalize-agentic-ai-amazon-bedrock](ch05/100-ai.html) — Bedrock 上 agent 的 production 化
+- [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](ch04/635-amazon-bedrock-agentcore.html) — 同 Bedrock agent 体系（AgentCore runtime vs Strands Agents）
+- [secure-ai-agents-policy-lambda-interceptors-aws](ch04/209-ai-agent.html) — Bedrock Agent 安全护栏（与本文的 Guardrails + row-level entitlements 对应）
+- [agentic-payment-x402-bedrock-agentcore](../ch11/059-bedrock-agentcore.html) — 金融场景 agent 应用
+- [agentops-operationalize-agentic-ai-amazon-bedrock](../ch11/306-amazon-bedrock.html) — Bedrock 上 agent 的 production 化
 
 ## 原文链接
 
@@ -105,10 +105,10 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ### 相关实体
 
-- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](ch03/035-agent.html) — 同为 Bedrock agent 体系，AgentCore runtime vs Strands Agents 的技术选型对比
-- [Secure Ai Agents Policy Lambda Interceptors Aws](ch05/100-ai.html) — Bedrock Agent 安全护栏，与本文的 Guardrails + row-level entitlements 设计思路一致
-- [Agentic Payment X402 Bedrock Agentcore](ch03/035-agent.html) — 金融场景 agent 应用案例，与 Rocket Close 同属金融行业 AI 落地
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch05/100-ai.html) — Bedrock 上 agent 的 production 化路径，包含监控 / 审计 / 部署最佳实践
+- [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](ch04/635-amazon-bedrock-agentcore.html) — 同为 Bedrock agent 体系，AgentCore runtime vs Strands Agents 的技术选型对比
+- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/209-ai-agent.html) — Bedrock Agent 安全护栏，与本文的 Guardrails + row-level entitlements 设计思路一致
+- [Agentic Payment X402 Bedrock Agentcore](../ch11/059-bedrock-agentcore.html) — 金融场景 agent 应用案例，与 Rocket Close 同属金融行业 AI 落地
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/306-amazon-bedrock.html) — Bedrock 上 agent 的 production 化路径，包含监控 / 审计 / 部署最佳实践
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 ## 实践启示

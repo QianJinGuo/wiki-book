@@ -12,11 +12,11 @@
 - AI 钓鱼比传统钓鱼有效性高 24%（Hoxhunt）
 - LLM 可将钓鱼成本降低 95% 以上，同时保持同等成功率（Harvard Business Review）
 ## 相关实体
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch05/100-ai.html)
-- [Ai Agents Inside Perimeter Hackernews](ch05/100-ai.html)
-- [Llm Raiders Private Ai Server](ch05/100-ai.html)
-- [Bluekit](ch12/093-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.html)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch03/035-agent.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/110-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/209-ai-agent.html)
+- [Llm Raiders Private Ai Server](../ch01/1476-llm.html)
+- [Bluekit](ch12/096-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.html)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/158-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
