@@ -97,6 +97,7 @@ extra:
 
 nav:
   - 首页: index.md
+  - AI 工程主课程: course.md
   - 第一篇 · 入门篇:
     - Ch01 AI 与 LLM 基础: ch01-ai-basics.md
     - Ch02 提示词工程与上下文工程: ch02-prompt.md
