@@ -164,14 +164,14 @@ pi-mono 的流式事件架构天然支持实时 UI 更新（如终端差分渲�
 
 ## 相关
 - [Openclaw Prompt Context Harness](../ch11/247-openclaw.html) — OpenClaw 架构，pi-mono 是它的 Agent 执行引擎
-- [Harness Engineering Systematic Framework](../ch05/126-harness-engineering.html) — Harness Engineering 框架
+- [Harness Engineering Systematic Framework](../ch05/129-harness-engineering.html) — Harness Engineering 框架
 
 ## 相关实体
 
-- [announcing genkit middleware](../ch04/009-announcing-genkit-middleware-intercept-extend-and-harden.html)
+- [announcing genkit middleware](../ch04/010-announcing-genkit-middleware-intercept-extend-and-harden.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [Agentcore Harness](../ch04/747-agentcore-harness.html) — AWS 托管 Harness 平台
+- [Agentcore Harness](../ch04/751-agentcore-harness.html) — AWS 托管 Harness 平台
 
 ---
 

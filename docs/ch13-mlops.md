@@ -1942,7 +1942,60 @@ hermes gateway start  # 后台
 
 ---
 
-## Ch13.012 AI Skill Evolution Framework
+## Ch13.012 CEOs’ top priorities for IT leaders today
+
+> 📊 Level ⭐⭐ | 7.5KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
+
+# CEOs’ top priorities for IT leaders today
+
+## 摘要
+2026 年 CEO 给 CIO 的第一优先任务仍是 AI 实施，但态度已发生根本转变：对实验和 POC 失去耐心，转而要求可量化的 ROI，并将"建立 AI 政策与 ROI 指标"列入 top 10 优先事项。与此同时，安全升格为第二优先，CIO 的角色正从技术执行者被推向业务变革的引领者——从"证明 AI 可行"转向"证明 AI 值钱"。
+
+## 核心要点
+- **AI 实施连续两年位居 CEO 优先清单第一**：CIO.com 2026 State of the CIO Survey 与 2025 年调查结果一致，AI 是 CEO 对 IT 的第一指令
+- **CEO 已对 AI 实验失去耐心**：不再关心 proofs of concept，要求可量化价值；最战略型的 CEO 更进一步，期望 AI 重塑组织运营方式与产品服务体系，且要求 CIO 主动创造机会而非仅仅配合
+- **ROI 焦虑是 2026 年的新变量**：CEO 普遍认为"AI 花费远大于回报"、收益碎片化，因此"建立 AI 政策与 ROI 指标"首次进入 top 10；推动力从 productivity gains 转向 revenue growth
+- **从 POC 到生产的过渡"比想象中更难"**：数据债务、技术债、legacy 环境与预算压力是四大结构性障碍，根源不在模型而在企业数据与系统地基
+- **安全升为第二优先**：升级 IT 与数据安全以降低企业风险；AI 采用使数据完整性、治理与风险管理的重要性进一步上升
+- **CEO 对 AI 的认知仍偏效率叙事**：研究显示几乎全部 CEO 用 AI 节省时间，仅 2% 用于决策支持等增长驱动场景——这正是 CIO 的战略机会窗口
+- **CIO 评价指标正在迁移**：IDC 数据显示一年内 revenue generation 从第六跃升至 CIO 成功指标第三位，CIO 开始按业务成果而非运营绩效被衡量
+- **前沿议题进入清单**：量子计算出现在银行、生命科学、物流等行业的 CEO 议程；优化与现代化被要求为新兴技术腾挪资金
+
+## 深度分析
+
+### 从"AI 实验"到"AI 交付"：CEO 耐心耗尽的一年
+自 2022 年 11 月 ChatGPT 进入企业视野以来，AI 一直是高层目标；2026 年的新变化在于"交付有形 ROI"成为硬性要求，而非口头愿景。TCS 的 Viswanathan 观察到 CEO 的挫败感源于"在 AI 上的花费远远大于回报，虽然有些生产力收益，但相当碎片化"。IDC 的 C-Suite Tech Survey 显示全球超过半数 CIO/CTO 已将 AI 与自动化列为首要业务目标，CEO 施压 IT 用 AI 驱动收入增长而不只是提升效率。这一转向的战略含义是：CIO 的衡量语言必须从技术指标切换到业务成果，否则无法在 CEO 的 ROI 框架内证明自身价值。
+
+### 规模化之痛：数据、技术债与"试点到生产"的鸿沟
+IDC 的 Saroff 指出，许多组织"从 experimentation 和 pilots 走到真正跑在生产环境并产生可衡量价值"的过渡，比最初看起来困难得多。障碍清单高度结构化：喂养 AI 的数据本身有问题（数据债务）、legacy 环境与既有技术债让创新更慢更贵、预算压力进一步叠加。与此同时，IT 在很多组织仍未成为真正的业务战略伙伴，导致"把 AI 举措与业务结果挂钩"这件本应刻意为之的事落空。这解释了业界普遍的悖论——AI 潜力无限，但 CIO 卡在"找不到落地的路径"：瓶颈不在模型能力，而在企业数据与系统地基的成熟度。
+
+### CEO 认知错位与 CIO 的战略机会窗口
+Gartner 的 Carter 指出，技术已进入 CEO 战略优先前三（仅次于增长与财务），而 CEO 口中的"技术"几乎约等于 AI。但 CEO 自身对 AI 的想象仍停留在省时增效——研究显示几乎全部 CEO 用 AI 节省时间，仅 2% 将其用于决策支持等增长驱动场景。这种认知错位恰恰是 CIO 的机会：谁能指出 AI 如何重塑组织运营方式与产出，谁就能帮助 CEO 在市场中取胜。Carter 建议 CIO"加倍押注能支撑高影响力、高曝光举措的技术叙事"，并承担提升全组织 tech literacy 的责任——"这是 CIO 角色有史以来最大的机会浪潮"。Rubrik 的实践提供了样本：IT 部门率先转型为 AI-first 组织，把 AI 植入工程、架构、FinOps、DevOps 与用户支持全链路，以资源优化为纲。
+
+### 从效率叙事到竞争叙事：评价体系的重构
+PwC 的 Leinwand 认为，CEO 期望 IT 通过连接数据、工作流与决策，推动运营模式的全企业级转型——"在核心运营与流程中落地，而不是只跑 pilot"，其背后是竞争方式的根本性变化与可持续增长的挑战。IDC 数据印证了这一重构：仅一年时间，revenue generation 就从第六位跃升为 CIO 成功指标的第三位，越来越多的 CIO 开始按业务成果（而非运营绩效）衡量自己。叠加量子计算等下一代技术在部分行业的早期布局、以及"通过优化与现代化腾挪资金投入新兴技术"的诉求，CEO 的 IT 议程已从"降本增效"全面扩展为"重塑竞争方式"。
+
+## 实践启示
+1. **用业务语言定义 AI 成功指标**：启动任何 AI 项目前，先与 CEO 对齐"可量化价值"的具体形态（收入增长、客户体验、新渠道），把 ROI 指标写入项目章程，而非停留在交付物清单。
+2. **为每个 POC 预置生产路径**：pilot 从第一天就要回答"如何规模化落地"——评估数据就绪度、legacy 集成成本与技术债，避免试点无限期、价值无法兑现。
+3. **把数据与技术债盘点设为 AI 投资前置条件**：AI 项目真实成本的很大一部分藏在数据质量与遗留系统里，先清理数据债务再谈模型选型，否则 ROI 预期必然失真。
+4. **将安全与 AI 治理前置设计**：安全已是 CEO 第二优先，AI 采用放大了数据完整性、治理与风险管理的权重；把安全政策、ROI 指标与 AI 部署同步规划，而非事后补救。
+5. **主动提出"AI 重塑场景"而非被动接单**：向 CEO 展示 AI 如何在客户响应、供应链、产品重塑等过去"做不到"的领域解锁价值，主动承担从效率增益到新价值主张的叙事升级。
+6. **用业务成果重构 CIO 评价体系**：主动引入 revenue contribution、创新产出等指标并自我衡量，顺应"从运营绩效到业务成果"的评价迁移，把安全与治理转化为业务赋能叙事。
+
+## 相关实体
+- [很多企业做完 AI PoC，为什么还是上不了生产](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-poc-why-fail-to-production.md)
+- [企业 AI 投资与数据就绪度](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-investment-data-readiness-cio.md)
+- [CIOs rise to the global challenge](https://github.com/QianJinGuo/wiki/blob/main/entities/cios-rise-to-the-global-challenge.md)
+- [Enterprise AI Adoption](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md)
+- [数据质量框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-quality-framework.md)
+- [负责任 AI 治理体系](https://github.com/QianJinGuo/wiki/blob/main/concepts/responsible-ai-governance.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md)
+
+---
+
+## Ch13.013 AI Skill Evolution Framework
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/ai-skill-evolution-framework.md`
 
@@ -2031,7 +2084,7 @@ Skill 规则不只是"做什么"，还要说清楚"为什么"和"做不到会怎
 
 ---
 
-## Ch13.013 NVIDIA MCG Toolkit 模型文档自动化
+## Ch13.014 NVIDIA MCG Toolkit 模型文档自动化
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/nvidia-mcg-model-documentation.md`
 
@@ -2097,7 +2150,7 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 
 ---
 
-## Ch13.014 The Ramanujan Challenge for AI
+## Ch13.015 The Ramanujan Challenge for AI
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/ramanujan-challenge-ai-gil-kalai-2026-07-02.md`
 
@@ -2160,7 +2213,7 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 
 ---
 
-## Ch13.015 Agent Skill 评估与迭代
+## Ch13.016 Agent Skill 评估与迭代
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/agent-skill-writing-evaluation.md`
 
@@ -2258,42 +2311,6 @@ delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信�
 
 - [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](https://github.com/QianJinGuo/wiki/blob/main/entities/skillsieve-agent-skill-security.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
-
----
-
-## Ch13.016 CEOs’ top priorities for IT leaders today
-
-> 📊 Level ⭐⭐ | 4.9KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
-
-## 核心要点
-- **AI 落地压力从 POC 转向 ROI 交付**：2026 年 CEO 已对 AI 实验和概念验证失去耐心，明确要求 CIO 提供可量化业务价值。AI 投资回报与预期差距大，CEO 们"在 AI 上的花费远远大于回报"
-- **数据质量和技术债是 AI 规模化的隐性障碍**：从 POC 到实际生产环境的过渡比预期困难，根源不在 AI 本身，而在于数据债务、legacy 系统集成成本和技术债积累
-- **安全从成本中心升格为战略优先级**：CEO 将"升级 IT 和数据安全以降低企业风险"列为 CIO 第二优先级，反映 AI 时代数据完整性和治理的战略性价值
-- **技术债清算是 AI 规模化的前提**：投资 AI 转型前需先做技术债盘点，否则 AI 项目真实成本被低估、ROI 预期被高估
-- **CIO 角色从技术执行者转向业务战略伙伴**：CEO 期望 CIO 能主动发现 AI 机会、创造新的价值主张，而非仅被动配合业务部门需求
-- **量子计算和前沿技术已进入部分 CEO 视野**：在金融、生命科学、物流等行业，CEO 开始要求 CIO 探讨量子计算等下一代技术的潜在机会
-## 相关实体
-- [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
-- [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](https://github.com/QianJinGuo/wiki/blob/main/entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
-- [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
-- [Programbench Agent Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/programbench-agent-benchmark.md)
-- [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md)
-
-## 深度分析
-**从 AI 实验到 AI ROI 的范式转变**：2026 年 CEO 对 AI 的态度已从"先做 POC 看效果"转向"必须给我可量化的回报"。文章引用的多项调查显示，CEO 们普遍对 AI 投资回报不如预期感到失望——"他们在 AI 上的花费远远大于回报"。这种情绪将 CIO 从"AI 实验赞助者"推向"AI 价值交付者"的角色压力。
-**技术债务和 legacy 环境是创新的隐性成本**：IDC 的 Saroff 指出，从 POC 到规模化生产的过渡比预期困难得多。问题不在 AI 本身，而在于数据质量（"数据债务"）和 legacy 系统的集成成本。这解释了为什么许多 CIO"知道 AI 有潜力，但找不到落地的路径"——障碍不是 AI 技术，而是技术债。
-**安全从成本中心升格为战略资产**：有趣的是，安全（清单排名第 2）不仅是风险防范，也是 Rubrik 案例中 CEO 明确的业务目标——"帮助 Rubrik 在所有业务流程中提高效率和生产力"。当安全开始谈业务价值而非仅谈风险规避时，CIO 与 CEO 的对话才真正进入同一轨道。
-
-## 实践启示
-1. **ROI 框架先于技术选型**：在启动任何 AI 项目前，先明确"如何衡量成功"。CEO 想看到的不仅是 productivity gains，而是 revenue generation 或 competitive differentiation。CIO 需要准备好用业务语言而非技术语言来定义 AI 项目成功指标。
-2. **技术债清算是 AI 规模化的前提**：投资 AI 转型之前，做一次技术债盘点（数据质量、legacy 系统集成成本、API 能力）。否则 AI 项目的真实成本会被低估，而 ROI 预期会被高估。
-3. **安全可以成为 CIO 的战略杠杆**：当 CEO 将安全目标与业务效率目标并列为 IT 优先级时，CIO 有机会将安全从"花钱的部门"转变为"业务赋能者"。展示安全如何直接支撑业务目标，比展示安全合规分数更有说服力。
-4. **主动寻找 AI 变革机会而非被动响应**：CEO 期望 CIO 提出"AI 如何重塑产品、服务和运营模式"的战略建议。CIO 应主动识别组织内 AI 可以创造新价值的场景，而不是等待业务部门提出需求。
-5. **建立 AI 规模化交付能力**：从实验到生产的过渡需要专门的工程化和运营能力，包括数据管道管理、模型监控、MLOps 等基础设施投资。
-6. **安全与 AI 治理需要同步规划**：随着 AI 采用增加数据完整性和治理的重要性，CIO 应将安全政策、ROI 指标和 AI 部署同步设计，而非事后补救。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md)
 
 ---
 

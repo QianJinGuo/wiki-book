@@ -63,7 +63,7 @@ LiteLLM Proxy 的审计日志 + CloudWatch 集成是基础，但企业还应关�
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
 - [Claude Code Prompt 提示词体系源码解析](ch09/070-claude-code-prompt.html)
-- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/705-claude-code-skills-superpowers.html)
+- [Claude Code Skills 实践与 Superpowers 利器推荐](../ch01/704-claude-code-skills-superpowers.html)
 
 ---
 

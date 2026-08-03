@@ -88,7 +88,7 @@ ASD（Agent-Spec-Driven Development）是 SSD Harness 的开源实现，专门�
 
 ## 相关页面
 
-- [术哥三器对比：Comet/OpenSpec/Superpowers](ch05/115-ai-coding.html) — 同作者系列第二篇
+- [术哥三器对比：Comet/OpenSpec/Superpowers](ch05/118-ai-coding.html) — 同作者系列第二篇
 - [Spec 作为 AIOS 反熵架构](ch05/021-ai-native.html)
 - [OpenSpec Spec-Driven Development](ch05/053-openspec.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ssd-spec-driven-development-harness-asd-shuge-2026-06-17.md)

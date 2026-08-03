@@ -2,72 +2,11 @@
 
 ## Ch11.177 VMAF v1: Netflix 视频质量度量的全面升级
 
-> 📊 Level ⭐⭐ | 7.0KB | `entities/netflix-vmaf-v1-video-quality-metric-upgrade.md`
+> 📊 Level ⭐⭐ | 7.6KB | `entities/netflix-vmaf-v1-video-quality-metric-upgrade.md`
 
 # VMAF v1: Netflix 视频质量度量的全面升级
 
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("VMAF v1: Netflix 视频质量度量的全面升级"))
-    概念导图
-    深度分析
-      CSF 调制：统一多设备模型的突破
-      CAMBI 集成：带状伪影检测
-      Chroma 特征：色彩失真的感知
-      运动特征修正
-    实践启示
-    相关实体
-```
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("VMAF v1 Netflix 视频质量度量的全面升级"))
-    VMAF 的工作原理
-    v0 v1 六大改进
-    CSF 调制 统一多设备模型的突破
-    CAMBI 集成 带状伪影检测
-    Chroma 特征 色彩失真的感知
-    运动特征修正
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "可观测性层"
-        LOG[日志采集] --> TRACE[链路追踪]
-        TRACE --> METRIC[指标聚合]
-        METRIC --> DASH[仪表盘/告警]
-    end
-    subgraph "护栏层"
-        IN_CHK[输入校验<br/>提示注入检测]
-        RATE[速率限制<br/>成本控制]
-        OUT_CHK[输出过滤<br/>PII脱敏]
-    end
-    subgraph "编排层"
-        ORC[工作流引擎]
-        STATE[状态管理]
-        RETRY[错误恢复]
-    end
-    REQ[请求] --> IN_CHK --> ORC
-    ORC --> AGENT[Agent 执行]
-    AGENT --> OUT_CHK --> RES[响应]
-    DASH -->|"异常信号"| RATE
-    ORC --> STATE --> RETRY
-    classDef obs fill:#dbeafe,stroke:#2563eb
-    classDef guard fill:#fee2e2,stroke:#dc2626
-    classDef orch fill:#d1fae5,stroke:#059669
-    class LOG,TRACE,METRIC,DASH obs
-    class IN_CHK,RATE,OUT_CHK guard
-    class ORC,STATE,RETRY orch
-```
-
 
 VMAF（Video Multimethod Assessment Fusion）是 Netflix 与大学合作开发并开源的视频质量度量指标，已成为视频行业编码评估和优化的事实标准。VMAF v1 是一次全面升级，核心改进包括：基于 CSF 调制的统一多设备模型（替代 v0 的多项式映射）、CAMBI 带状伪影检测集成、chroma 通道特征提取、NEG（No-Enhancement Gain）默认启用、运动特征修正。在大多数主观数据集上，v1 匹配或超越 v0 的准确性，同时计算复杂度反而降低。
 
@@ -99,6 +38,7 @@ VMAF 结合多个基础质量感知特征，通过支持向量回归器（SVR）
 v1 的创新在于：**在特征提取阶段就根据观看距离调制空间对比敏感度函数（CSF）**。
 
 CSF 定义了人眼对不同空间频率对比度的敏感度。核心原理是：
+
 - 观看距离增加 → 更多像素落入单位视角 → 伪影可见性降低
 - 通过 Barten CSF 模型，可以根据归一化观看距离（如 3H、5H、1.5H）调整 DLM 和 AIM 的计算
 
@@ -139,6 +79,7 @@ NEG（No-Enhancement Gain）是一个保守质量度量，减少图像增强操�
 ### 性能：更准确且更快
 
 v1 通过三个优化实现了更低的计算复杂度：
+
 1. **移除 VIF**：计算最复杂的特征，但更新其他特征后对准确性贡献不大
 2. **CAMBI 优化**：算法和软件层面的专门优化
 3. **Chroma 特征降尺度**：在更低尺度上测量，不影响准确性
@@ -159,6 +100,7 @@ v1 通过三个优化实现了更低的计算复杂度：
 ### 评估结果
 
 在多个主观数据集上的 Spearman 秩相关系数（SRCC）评估：
+
 - 大型数据集（WATERLOO IVC 4K、Netflix Screen Size Crowdsourcing）有显著改进
 - Chroma 和 banding 数据集改进明显
 - 手机观看数据集改进明显

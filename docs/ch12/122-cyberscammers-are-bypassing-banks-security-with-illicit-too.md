@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [canvas hackers shinyhunters say their official domain was su](../ch05/097-ai.html)
+- [canvas hackers shinyhunters say their official domain was su](../ch05/100-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](ch12/013-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/114-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/114-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
@@ -38,10 +38,10 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/247-openclaw.html)
 

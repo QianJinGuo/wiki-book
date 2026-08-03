@@ -102,8 +102,8 @@ gstack → /browse 截图验证 → /qa 端到端测试 → /ship → /land-and-
 
 ## 相关页面
 
-- [三合一工具深度对比](ch05/115-ai-coding.html)
-- [Superpowers 实战](../ch01/705-claude-code-skills-superpowers.html)
+- [三合一工具深度对比](ch05/118-ai-coding.html)
+- [Superpowers 实战](../ch01/704-claude-code-skills-superpowers.html)
 
 ## 深度分析
 

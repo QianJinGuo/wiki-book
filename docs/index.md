@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3830 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3840 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1743 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1347 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 516 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1744 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1354 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 517 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 178 篇 |
-| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 46 篇 |
+| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 47 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1561 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1562 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ 快手首个打工人Agent
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ... 共 **1561** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1562** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 40 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **142** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1743 篇**
+> 📖 **本篇共 1744 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 794 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 798 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -75,10 +75,10 @@
   - ⭐ AgentRun
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
-  - ⭐ From idea to AI app: creating intelligent research assistants
-  - ... 共 **794** 篇 → [完整章节](ch04-agent-core.md)
+  - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
+  - ... 共 **798** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 141 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 144 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
-  - ... 共 **141** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **144** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 50 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -156,13 +156,13 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **41** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1347 篇**
+> 📖 **本篇共 1354 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 319 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 320 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐ Cloudflare Turnstile requiring fingerprintable WebGL
   - ⭐ 运行可全生命周期控制的隔离沙盒aws-lambda-推出-microvm
   - ⭐ 宣布推出由-nvidia-rtx-pro-4500-blackwell-服务器版-gpu-加速的-amazon-ec2-
-  - ... 共 **319** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **320** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 130 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -214,7 +214,7 @@
   - ⭐⭐ Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
   - ... 共 **44** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 516 篇**
+> 📖 **本篇共 517 篇**
 
 ---
 
@@ -278,7 +278,7 @@
 
 ## 第五篇 · 大师篇 — 哲学、安全与未来
 
-### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 23 篇
+### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 24 篇
 > Scaling Law、涌现能力、世界模型、自我博弈
 
   - ⭐ 斯坦福：失败轨迹是天然、高价值的监督信号
@@ -289,7 +289,7 @@
   - ⭐⭐ The Complexity of Simplicity | Jim Nielsen's Notes
   - ⭐⭐ Lean Software Scaling Laws
   - ⭐⭐ arXiv 脱离康奈尔，正式独立为非营利组织
-  - ... 共 **23** 篇 → [完整章节](ch19-research-frontier.md)
+  - ... 共 **24** 篇 → [完整章节](ch19-research-frontier.md)
 
 ### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 23 篇
 > 超级智能、存在风险、AI 治理、人类命运
@@ -304,10 +304,10 @@
   - ⭐⭐ 人机对齐？不，是人正在向机器对齐
   - ... 共 **23** 篇 → [完整章节](ch20-ai-philosophy.md)
 
-> 📖 **本篇共 46 篇**
+> 📖 **本篇共 47 篇**
 
 ---
 
-**📊 全书收录：3830 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3840 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-03 | 来源: ~/wiki/entities/
+生成时间: 2026-08-04 | 来源: ~/wiki/entities/
