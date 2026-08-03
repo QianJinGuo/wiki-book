@@ -43,23 +43,23 @@ AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/478-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch11/266-aws-bedrock-agentcore.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/634-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/035-agent.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch07/001-mcp.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch07/001-mcp.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](ch11/247-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](ch11/191-apache-doris-mcp-server-quick-suite-ai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/266-aws-bedrock-agentcore.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](ch07/001-mcp.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch03/035-agent.html)
 - [OpenClaw多租户迁移: 背景与架构概览](ch11/247-openclaw.html)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/035-amazon-bedrock-api.html)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/035-amazon-bedrock-api.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/247-openclaw.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/266-aws-bedrock-agentcore.html)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/306-amazon-bedrock.html)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/634-amazon-bedrock-agentcore.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch03/035-agent.html)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/310-bedrock.html)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch03/035-agent.html)
 
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/017-aws-bedrock.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/306-amazon-bedrock.html)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch01/436-aws.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch05/100-ai.html)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/1442-claude.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch03/035-agent.html)
 
 ---
 

@@ -77,9 +77,9 @@ Harness = 计划分解 + 状态管理 + 工具编排 + 验证门控 + 反馈回�
 ## 关联
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本文给出了 Harness 的信息论解释
-- [高德 Spec as AI OS：反熵增架构](../ch05/021-ai-native.html) — 同一主题的工程实践视角
-- [Claude Code 为什么会忽略指令](../ch03/084-claude-code.html) — CLAUDE.md 越写越糟的信息论解释（噪音稀释信号）
-- [Skills 重新定义 Agent 喂知识](../ch03/076-skills.html) — Skills 的渐进式披露本质是信息密度优化
+- [高德 Spec as AI OS：反熵增架构](ch05/100-ai.html) — 同一主题的工程实践视角
+- [Claude Code 为什么会忽略指令](ch03/084-claude-code.html) — CLAUDE.md 越写越糟的信息论解释（噪音稀释信号）
+- [Skills 重新定义 Agent 喂知识](ch04/341-skill.html) — Skills 的渐进式披露本质是信息密度优化
 
 ---
 

@@ -109,10 +109,10 @@ Agent Browser、Playwright、Puppeteer 等浏览器自动化工具在 Agent 架�
 
 ## 相关实体
 
-- [Agent Loop Engineering 手册](../ch05/006-loop-engineering.html)
-- [Agent Harness 生产可观测性](../ch05/062-agent-harness.html)
-- [Agent 事故分类实践](../ch11/235-amazon-quick.html)
-- [Loop Engineering 反馈机制](../ch05/006-loop-engineering.html)
+- [Agent Loop Engineering 手册](ch05/006-loop-engineering.html)
+- [Agent Harness 生产可观测性](ch03/035-agent.html)
+- [Agent 事故分类实践](ch03/035-agent.html)
+- [Loop Engineering 反馈机制](ch05/006-loop-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-browser-zombie-process-cleanup-mac-tool-2026.md)
 

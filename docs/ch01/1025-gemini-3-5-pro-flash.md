@@ -94,7 +94,7 @@ Gemini 3.5 Pro 的持续延期和 Gemini 4 的提前启动，折射出大模型�
 - Google Gemini 系列模型
 - 模型效率
 - [负责任的 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ethics-responsible-ai.md)
-- [AI Agent 安全事件](../ch03/035-agent.html)
+- [AI Agent 安全事件](ch05/100-ai.html)
 - CodeMender 安全系统
 
 ---

@@ -37,7 +37,7 @@ John Marion 披露的 Affirm Bank 计划值得特别关注。Affirm 于 2026 年
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md)
 
 ## 相关实体
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](ch03/100-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](ch05/100-ai.html)
 
 ---
 ## 关联

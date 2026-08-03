@@ -86,10 +86,10 @@ TTFT 降低 30% 的同时准确率不降反升，归因于 Context Manager 的"�
 
 ## 相关实体
 
-- [Agent Harness 架构](../ch05/062-agent-harness.html)
-- [Agent 上下文管理架构模式](../ch03/035-agent.html)
-- [Harness Engineering](../ch05/129-harness-engineering.html)
-- [生产级 Agent 工程挑战](../ch05/085-harness.html)
+- [Agent Harness 架构](ch03/035-agent.html)
+- [Agent 上下文管理架构模式](ch03/035-agent.html)
+- [Harness Engineering](ch05/129-harness-engineering.html)
+- [生产级 Agent 工程挑战](ch03/035-agent.html)
 - [上下文工程三记忆范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/火山引擎-ai-搜索千万级-agent-架构演进与实践从-react-三节点到-unified-policy.md)

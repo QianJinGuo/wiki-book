@@ -56,9 +56,9 @@ Green 给出了一个引人深思的类比：使用这些模型**"如同在深�
 
 ## 相关实体
 
-- [Apple Corecrypto Formal Verification Blueprint](../ch12/027-apple-corecrypto-formal-verification-blueprint-post-quantu.html)
+- [Apple Corecrypto Formal Verification Blueprint](ch12/027-apple-corecrypto-formal-verification-blueprint-post-quantu.html)
 - [Drinking Llms](ch01/1476-llm.html)
-- [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch01/1532-anthropic.html)
+- [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch04/341-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-mythos-cryptanalysis-hawk-aes-matthew-green.md)
 

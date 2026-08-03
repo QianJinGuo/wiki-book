@@ -66,10 +66,10 @@ Suspend 的 Broker 级实现确保了：被限流的 LiteTopic 不占用任何�
 
 ## 关联实体
 
-- [Harness Engineering](../ch05/129-harness-engineering.html)
-- [AI-Friendly 后端标准](../ch05/022-ai-friendly.html)
+- [Harness Engineering](ch05/129-harness-engineering.html)
+- [AI-Friendly 后端标准](ch05/100-ai.html)
 - [Alitech 标准体系](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md)
-- [阿里云 LLM Wiki 实践](../ch01/1476-llm.html)
+- [阿里云 LLM Wiki 实践](ch05/100-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/百炼网关实践用-rocketmq-litetopic-让限流比降了-10-倍.md)
 

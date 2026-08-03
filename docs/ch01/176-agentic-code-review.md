@@ -42,7 +42,7 @@ Code review used to work because of a happy accident of relative speed. A senior
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)
 - [why internally-built ai fails fund accounting audits](ch01/1049-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [back up and restore your amazon eks cluster resources using](../ch11/021-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [back up and restore your amazon eks cluster resources using](ch11/021-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---
 

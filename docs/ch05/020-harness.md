@@ -97,11 +97,11 @@ Generator 在没有 sprint 拆解的情况下连续稳定运行了两小时以�
 3. **每 1-2 个模型版本做一次 harness 组件审计**：组件的必要性随模型能力变化。Opus 4.6 移除了 sprint 结构但保留了 planner 和 evaluator，说明某些组件是补偿模型短板的，过时后应移除以降低成本。
 4. **Evaluator 的调优优先级高于 Generator**：在同等工程时间内，优化 evaluator 的评分准确性（通过 few-shot examples、硬性阈值）带来的系统提升往往超过优化 generator 的提示词。
 ## 相关实体
-- [Anthropic 14 Skill Patterns Best Practices](../ch01/499-anthropic-14-skill.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1532-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/341-skill.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/1532-anthropic.html)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/775-claude-managed-agents.html)
+- [Anthropic 14 Skill Patterns Best Practices](ch04/341-skill.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch07/001-mcp.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/341-skill.html)
+- [Anthropic 12 Mcp Production Patterns](ch07/001-mcp.html)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](ch03/035-agent.html)
 
 ---
 

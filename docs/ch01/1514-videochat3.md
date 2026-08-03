@@ -22,10 +22,10 @@ VideoChat3 是由南京大学、上海人工智能实验室、南洋理工大学
 
 ## 相关实体链接
 
-- [Self Harness Shanghai Ai Lab Agent Improves Harness](../ch05/085-harness.html) — 上海人工智能实验室（合作方之一）相关工作
-- [Shotstream Streaming Multi Shot Video Cuhk Kling Eccv2026](ch01/1105-20.html) — 流式视频生成（与 VideoChat3 的流式视频理解互补）
-- [Joyai Vl Interaction Jd Open Source Real Time Video 2026](ch01/1474-joyai-vl-interaction.html) — 京东 JoyAI-VL 实时视频交互开源模型
-- [Crayotter Traceable Multi Agent Long Form Video Editing Ustc 2026](../ch03/035-agent.html) — 长视频编辑多智能体框架
+- [Self Harness Shanghai Ai Lab Agent Improves Harness](ch05/100-ai.html) — 上海人工智能实验室（合作方之一）相关工作
+- [Shotstream Streaming Multi Shot Video Cuhk Kling Eccv2026](ch01/1429-0.html) — 流式视频生成（与 VideoChat3 的流式视频理解互补）
+- [Joyai Vl Interaction Jd Open Source Real Time Video 2026](ch05/100-ai.html) — 京东 JoyAI-VL 实时视频交互开源模型
+- [Crayotter Traceable Multi Agent Long Form Video Editing Ustc 2026](ch03/035-agent.html) — 长视频编辑多智能体框架
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/611-scaling.html) — 高效视觉编码器与视频 LLM 帧缩放
 
 ---

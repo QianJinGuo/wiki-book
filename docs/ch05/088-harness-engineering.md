@@ -15,7 +15,7 @@
 - [Harness Engineering Reliable Long Term Agent](ch05/129-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/129-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](ch05/129-harness-engineering.html)
-- [Harness Engineering Systematic Explainer](ch05/129-harness-engineering.html)
+- [Harness Engineering Systematic Explainer](ch05/100-ai.html)
 - [Harness Engineering Framework](ch05/129-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-harness-engineering-report.md)

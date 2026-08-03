@@ -126,12 +126,12 @@ npx skills add cline/sdk-skill
 - **官方推文**：@cline (2026-05-13)
 
 ## 相关实体
-- [Cline releases open-source agent runtime SDK](../ch04/568-cline-releases-open-source-agent-runtime-sdk.html)
-- [腾讯混元Hy3-preview发布](ch01/131-hy3-preview.html)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/084-claude-code.html)
-- [Codex /goal：长任务Agent的目标运行时](../ch04/245-codex-goal-agent.html)
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11/310-bedrock.html)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/035-agent.html)
+- [Cline releases open-source agent runtime SDK](ch04/568-cline-releases-open-source-agent-runtime-sdk.html)
+- [腾讯混元Hy3-preview发布](ch03/035-agent.html)
+- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch03/084-claude-code.html)
+- [Codex /goal：长任务Agent的目标运行时](ch01/736-codex.html)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch03/035-agent.html)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](ch07/001-mcp.html)
 
 ## 深度分析
 ### SDK 分层架构的设计哲学

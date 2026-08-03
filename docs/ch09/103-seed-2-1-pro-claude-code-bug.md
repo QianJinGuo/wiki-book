@@ -6,7 +6,7 @@
 
 # 我把Seed 2.1 Pro塞进Claude Code，让它修我自己产品的bug
 
-本文是一次极具启发性的实战记录：作者将字节跳动最新发布的 Seed 2.1 Pro 模型（开源，主打编程能力）与 [Claude Code](../ch03/074-claude-code-agent.html) 工具结合，让该模型直接修复自己产品中的真实 bug。
+本文是一次极具启发性的实战记录：作者将字节跳动最新发布的 Seed 2.1 Pro 模型（开源，主打编程能力）与 [Claude Code](ch03/084-claude-code.html) 工具结合，让该模型直接修复自己产品中的真实 bug。
 
 ## 核心要点
 
@@ -62,11 +62,11 @@ Seed 2.1 Pro 接入 Claude Code 框架的过程展示了**模型即插即用（p
 
 ## 关联实体
 
-- [Claude Code Agent Engineering](../ch03/074-claude-code-agent.html)
-- [Coding Agent Quality Defense](../ch04/400-ai-coding-agent.html)
-- [Claude Code 记忆系统](../ch03/084-claude-code.html)
-- [Harness Engineering](../ch05/129-harness-engineering.html)
-- [Claude Code Skills Guide](../ch07/032-claude-code-skills.html)
+- [Claude Code Agent Engineering](ch03/084-claude-code.html)
+- [Coding Agent Quality Defense](ch05/100-ai.html)
+- [Claude Code 记忆系统](ch03/084-claude-code.html)
+- [Harness Engineering](ch05/129-harness-engineering.html)
+- [Claude Code Skills Guide](ch07/032-claude-code-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我把seed-21-pro塞进claude-code让它修我自己产品的bug.md)
 

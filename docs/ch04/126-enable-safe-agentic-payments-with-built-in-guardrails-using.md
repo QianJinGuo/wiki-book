@@ -172,9 +172,9 @@ Policy in AgentCore（基于 Cedar 引擎）决定"谁可以调用哪个付费�
 AgentCore Observability 暴露了所有 ProcessPayment 调用的结果（成功、预算耗尽、钱包层失败），开发者应据此配置专项监控：支付错误率突增、单个会话支出速度异常、凭证过期频率等。这些指标应向财务和安全团队同步，而不仅仅由技术团队内部消化——这是因为 agentic 支付的异常往往既是技术事件也是财务事件。
 
 ## 相关实体
-- [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/209-ai-agent.html)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/306-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/634-amazon-bedrock-agentcore.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](ch05/100-ai.html)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch05/100-ai.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch03/035-agent.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/129-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/346-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)

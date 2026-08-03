@@ -77,18 +77,18 @@ On-Demand 评估在 CI/CD 中的角色是**门禁（gate）而非建议**——�
 
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/317-amazon-nova.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/478-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/017-aws-bedrock.html)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch05/100-ai.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch03/035-agent.html)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch01/436-aws.html)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch01/1442-claude.html)
 
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/114-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/928-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/634-amazon-bedrock-agentcore.html)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch03/035-agent.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](ch01/928-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch03/035-agent.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/310-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/976-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/149-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch05/100-ai.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/976-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch05/100-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---

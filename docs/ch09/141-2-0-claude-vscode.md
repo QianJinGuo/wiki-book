@@ -45,11 +45,11 @@ Claude 主动承认"浏览器自动读取偶尔会因为 SSO 多域 cookie 处�
 ## 关联阅读
 
 ## 相关实体
-- [Claude Code Prompt Context Harness](ch09/070-claude-code-prompt.html)
-- [Claude Vscode Plugin Zero Code](../ch01/1442-claude.html)
-- [Doubao Seed 2 Lite Agent Multimodal](../ch03/035-agent.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/084-claude-code.html)
-- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/085-harness.html)
+- [Claude Code Prompt Context Harness](ch03/084-claude-code.html)
+- [Claude Vscode Plugin Zero Code](ch01/1442-claude.html)
+- [Doubao Seed 2 Lite Agent Multimodal](ch03/035-agent.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/084-claude-code.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md)
 

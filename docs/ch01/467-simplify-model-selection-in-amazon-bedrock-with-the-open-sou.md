@@ -102,9 +102,9 @@ The Model Profiler fills a gap between AWS's infrastructure-level offerings (Bed
 
 ## Related Entities
 
-- [AgentCore Harness Trip Allocation Multi-Agent System AWS](../ch04/751-agentcore-harness.html) — AWS Agent ecosystem
-- [Agent Config Model Tool Skill MCP](../ch04/341-skill.html) — Model/tool configuration patterns
-- [Backend AI-Friendly Standards Path](../ch05/022-ai-friendly.html) — Cloud-native AI infrastructure
+- [AgentCore Harness Trip Allocation Multi-Agent System AWS](ch03/035-agent.html) — AWS Agent ecosystem
+- [Agent Config Model Tool Skill MCP](ch07/001-mcp.html) — Model/tool configuration patterns
+- [Backend AI-Friendly Standards Path](ch05/100-ai.html) — Cloud-native AI infrastructure
 
 ---
 

@@ -52,13 +52,13 @@ CLI 只解决"系统动作怎么执行"，不解决"流程应该怎么走"。文
 
 ## 相关实体
 
-- [为什么是CLI Agent时代](../ch03/035-agent.html)
-- [无界面软件代理](ch04/162-headless-software-agent.html)
-- [清华自进化Skill Agent](ch04/200-skill-agent.html)
+- [为什么是CLI Agent时代](ch03/035-agent.html)
+- [无界面软件代理](ch03/035-agent.html)
+- [清华自进化Skill Agent](ch04/341-skill.html)
 - [Skill编排的六个依赖](ch04/341-skill.html)
 - [Skill治理与注册](ch04/341-skill.html)
 - [首席Agent运营官](ch04/518-your-chief-agent-operator-lobehub.html)
-- [后端AI友好化标准](../ch05/022-ai-friendly.html)
+- [后端AI友好化标准](ch05/100-ai.html)
 
 ---
 

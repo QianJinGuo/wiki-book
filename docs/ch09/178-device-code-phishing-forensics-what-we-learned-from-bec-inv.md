@@ -36,12 +36,12 @@ April 1st started with the kind of phishing reports we receive all the time from
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1373-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
+- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1373-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/035-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

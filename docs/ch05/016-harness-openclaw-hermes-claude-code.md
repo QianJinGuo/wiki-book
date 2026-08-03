@@ -174,9 +174,9 @@ OpenClaw 的约束设计最完善，但扩展性最差；Hermes 的扩展性最�
 文章的结语说"Harness 以后未必还叫 Harness，但这条路，肯定不会消失"，这是整篇文章最准确的一句话。Harness 不是一个产品功能，它是一个工程学科。它的目标是解决"模型能力到产品能力"之间的最后一公里问题。这个问题不会消失，只会被越来越深入地解决。
 
 ## 相关链接
-- [17 Agent Architectures Evolution](../ch04/762-17-agent.html)
-- [Hermes Agent Closed Learning Loop](../ch03/102-hermes-agent.html)
-- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/084-claude-code.html)
+- [17 Agent Architectures Evolution](ch03/035-agent.html)
+- [Hermes Agent Closed Learning Loop](ch03/035-agent.html)
+- [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](ch03/084-claude-code.html)
 
 ## 实践启示
 ### 对 Agent 开发者的行动指南

@@ -657,11 +657,11 @@ Host Agent（5 秒级）与 Lambda Watchdog（5 分钟级）的两级架构实�
 示例项目定位为参考架构和学习实验，直接用于生产环境需进行额外加固：VPC 端点（确保 DynamoDB/API Gateway 流量不经过公网）、静态加密（rootfs 和数据卷的 KMS 加密）、WAF 集成（API Gateway 前置 AWS WAF 防护）、跨可用区高可用（修改为 Multi-AZ 部署）、DynamoDB 全局二级索引（避免 200 租户规模时的 Scan 性能瓶颈）。此外，生产级部署还应建立监控告警体系，监控 Host Agent 的 Balloon 统计、Lambda 的错误率、DynamoDB 的读/写容量单位消耗等关键指标。
 
 ## 相关实体
-- [Bedrock Agentcore Payment X402 Agent](ch11/059-bedrock-agentcore.html)
-- [Agentcore Payments X402 Agentic Commerce](ch11/073-agentcore-payments.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/634-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/634-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/634-amazon-bedrock-agentcore.html)
+- [Bedrock Agentcore Payment X402 Agent](ch03/035-agent.html)
+- [Agentcore Payments X402 Agentic Commerce](ch03/035-agent.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch03/035-agent.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch05/100-ai.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/firecracker-bedrock-agentcore-multi-tenant.md)
 

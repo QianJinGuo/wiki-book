@@ -27,7 +27,7 @@ Hashimoto 的告别信本质上是重度用户流失的典型案例。作为平�
 
 ### 单点依赖的结构性风险：Git 分布式 ≠ 协作基础设施分布式
 
-Hashimoto 在脚注中预先回应了「Git 是分布式的」这一常见反驳：问题不在版本控制本身，而在围绕它生长出来的协作基础设施——issues、PR、Actions 等集中托管功能。这些功能构成开源项目的「运营操作系统」，一旦托管方故障，整个协作流程即被阻断。值得注意的是，他特别澄清 2026 年 4 月 27 日的大规模 Elasticsearch 故障并非决策触发点（博文早于该事件一周写成），说明高频的日常性小故障比偶发的大事故更具累积破坏力。对依赖单一平台的开源项目而言，这是典型的单点故障（single point of failure）暴露，与 [GitHub 平台安全事件](ch01/895-github.html) 共同勾勒出集中托管的风险全貌。
+Hashimoto 在脚注中预先回应了「Git 是分布式的」这一常见反驳：问题不在版本控制本身，而在围绕它生长出来的协作基础设施——issues、PR、Actions 等集中托管功能。这些功能构成开源项目的「运营操作系统」，一旦托管方故障，整个协作流程即被阻断。值得注意的是，他特别澄清 2026 年 4 月 27 日的大规模 Elasticsearch 故障并非决策触发点（博文早于该事件一周写成），说明高频的日常性小故障比偶发的大事故更具累积破坏力。对依赖单一平台的开源项目而言，这是典型的单点故障（single point of failure）暴露，与 [GitHub 平台安全事件](ch05/100-ai.html) 共同勾勒出集中托管的风险全貌。
 
 ### 平台治理与商业收购的张力
 
@@ -42,21 +42,21 @@ Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、
 1. 用数据代替情绪做平台决策：像 Hashimoto 一样持续记录故障对实际工作的影响（故障日记），积累一个月量级的数据后再判断是否迁移，避免单次宕机触发冲动决策。
 2. 识别真正的单点依赖：Git 分布式不等于协作基础设施分布式，issues、PR、CI 等集中托管环节才是真实风险面，退出规划应围绕这些依赖逐一展开。
 3. 迁移采取渐进双轨制：主仓库迁移 + 只读镜像保留，维持原 URL 与可见度，为社区适应和平台验证留出时间窗口。
-4. 评估替代平台时关注治理与所有权：GitLab、Forgejo 等自托管或社区所有权选项与商业平台的价值取向不同——选择托管方本质上是治理优先级的选择，例如 [GitLab 2026 裁员](ch01/1105-20.html) 显示替代平台同样面临商业压力。
+4. 评估替代平台时关注治理与所有权：GitLab、Forgejo 等自托管或社区所有权选项与商业平台的价值取向不同——选择托管方本质上是治理优先级的选择，例如 [GitLab 2026 裁员](ch01/1429-0.html) 显示替代平台同样面临商业压力。
 5. 高价值开源项目应预先制定「平台退出路线图」：包括依赖清单、镜像策略、社区沟通节奏，而非等到信任崩塌时仓促应对。
 6. 将平台商业收购史纳入可靠性评估的参照系：以 2018 年微软收购为节点观察宕机趋势，评估平台路线图与自身项目价值观的长期兼容性。
 
 ## 相关实体
 
-- [Microsoft Copilot Studio Agent Governance](../ch03/035-agent.html)
-- [Microsoft Mxc Execution Containers Agent Sandbox Origin](../ch03/035-agent.html)
+- [Microsoft Copilot Studio Agent Governance](ch03/035-agent.html)
+- [Microsoft Mxc Execution Containers Agent Sandbox Origin](ch05/100-ai.html)
 - [Github Copilot Individual Plans Flex Allotments](ch01/1016-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
-- [Joyai Echo Long Video Framework Jd](../ch05/100-ai.html)
+- [Joyai Echo Long Video Framework Jd](ch05/100-ai.html)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
-- [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/895-github.html)
+- [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/1429-0.html)
 - [开源项目的消亡方式](ch01/138-dumb-ways-for-an-open-source-project-to-die.html)
-- [GitHub 平台安全事件](ch01/895-github.html)
-- [GitLab 2026 裁员](ch01/1105-20.html)
+- [GitHub 平台安全事件](ch05/100-ai.html)
+- [GitLab 2026 裁员](ch01/1429-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-source-projects-leaving-github.md)
 

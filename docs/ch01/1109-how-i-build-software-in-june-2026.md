@@ -78,7 +78,7 @@ Williams 的经历展示了 Agent 工具链的自然演进路径：先用 CLI �
 
 - [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)：Williams 的 assist 是 Agent 编排的实践案例
 - [Harness Engineering 7 Layers](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)：编排器属于 Harness 层工程
-- [Claude Code MCP Server](../ch07/031-claude-code-mcp-server.html)：assist 控制的核心执行引擎之一
+- [Claude Code MCP Server](ch07/031-claude-code-mcp-server.html)：assist 控制的核心执行引擎之一
 - [Claude Code Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)：从「引导 vibe」到「编排 Agent」的演进
 
 ---

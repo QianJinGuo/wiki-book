@@ -37,7 +37,7 @@ Claude Science 是 Anthropic 从通用编程助手向领域专用 Agent 扩展�
 
 ### 科研 Agent 的"前台-后台"协作模式
 
-Claude Science 的产品设计体现了科研 Agent 中一个重要的架构模式：前台负责交互与可视，后台负责计算与推理。用户在前台通过自然语言描述科研需求，后端的智能体系统则自主完成数据抓取、代码生成、计算执行和结果整理。这种模式在 [Claude Code 的系统工程能力](../ch03/084-claude-code.html) 中已经得到验证，Claude Science 将其迁移到了科研场景。
+Claude Science 的产品设计体现了科研 Agent 中一个重要的架构模式：前台负责交互与可视，后台负责计算与推理。用户在前台通过自然语言描述科研需求，后端的智能体系统则自主完成数据抓取、代码生成、计算执行和结果整理。这种模式在 [Claude Code 的系统工程能力](ch03/084-claude-code.html) 中已经得到验证，Claude Science 将其迁移到了科研场景。
 
 ### 科研 Agent 面临的三大核心挑战
 
@@ -45,7 +45,7 @@ Claude Science 的产品设计体现了科研 Agent 中一个重要的架构模�
 
 1. **数据源的可靠性与多样性**：科研 Agent 需要聚合多个异构数据源（文献数据库、实验数据、知识库），每个数据源可能有不同的访问限制、数据格式和更新频率。Claude Science 采用的"优先尝试→遇到故障→自动切换→告知用户"的容错范式是一个值得借鉴的设计模式。
 
-2. **结果的可复现性**：科研 Agent 的输出必须可复现、可追溯。Claude Science 提供完整代码、运行环境和对话历史，确保每一步结论都有据可查。这与 [Hermes Agent 技能设计](ch01/524-hermes-agent-skill.html) 中的"透明导向"设计原则一致。
+2. **结果的可复现性**：科研 Agent 的输出必须可复现、可追溯。Claude Science 提供完整代码、运行环境和对话历史，确保每一步结论都有据可查。这与 [Hermes Agent 技能设计](ch04/341-skill.html) 中的"透明导向"设计原则一致。
 
 3. **领域知识与通用推理的平衡**：科研 Agent 不仅需要通用推理能力，还需要深度的领域知识。Claude Science 通过 60+ 科学技能和连接器来封装领域知识，而非依赖模型本身的参数化记忆——这意味着即使底层模型更新，领域知识依然可以通过独立维护的技能体系持续演进。
 
@@ -67,7 +67,7 @@ Anthropic 的策略是最"轻量"的——不依赖独占的科学模型或数�
 
 1. **科研 Agent 设计应坚持"过程可见、边界诚实"原则**：Claude Science 展示的"展示每一步→遇到问题自动切换→主动说明局限性"的交互范式，值得所有面向专业用户（医生、律师、工程师）的 Agent 产品借鉴。
 
-2. **领域知识应封装为可复用的技能/连接器**：预置 60+ 科学技能的做法，与 [Agent Skill 设计模式](../ch04/680-agent-skill.html) 中的"技能即服务"理念高度一致。专业 Agent 的核心竞争力不在于模型能力，而在于领域知识的体系化封装。
+2. **领域知识应封装为可复用的技能/连接器**：预置 60+ 科学技能的做法，与 [Agent Skill 设计模式](ch04/341-skill.html) 中的"技能即服务"理念高度一致。专业 Agent 的核心竞争力不在于模型能力，而在于领域知识的体系化封装。
 
 3. **"审查代理"机制是专业 Agent 的安全底线**：Claude Science 内置审查代理检查引文准确性和计算正确性，同时要求每项关键操作都经过用户逐项授权——这种"安全阀"机制降低了自主 Agent 在专业场景中的失控风险。
 
@@ -77,12 +77,12 @@ Anthropic 的策略是最"轻量"的——不依赖独占的科学模型或数�
 
 ## 相关实体
 
-- [Claude Code 系统工程能力](../ch03/084-claude-code.html)
-- [Anthropic Claude Code 安全争议](ch01/479-anthropic-claude-code.html)
-- [Agent Skill 设计模式](../ch04/680-agent-skill.html)
-- [Hermes Agent 技能设计分析](ch01/524-hermes-agent-skill.html)
-- [NVIDIA BioNeMo Agent Toolkit](../ch04/013-nvidia-bionemo-agent-toolkit.html)
-- [Claude Code 系统工程指南](../ch03/084-claude-code.html)
+- [Claude Code 系统工程能力](ch03/084-claude-code.html)
+- [Anthropic Claude Code 安全争议](ch03/084-claude-code.html)
+- [Agent Skill 设计模式](ch04/341-skill.html)
+- [Hermes Agent 技能设计分析](ch04/341-skill.html)
+- [NVIDIA BioNeMo Agent Toolkit](ch03/035-agent.html)
+- [Claude Code 系统工程指南](ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic推出claude-science科研界的claude-code来了附实测.md)
 

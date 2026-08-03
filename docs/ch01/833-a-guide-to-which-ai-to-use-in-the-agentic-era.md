@@ -44,7 +44,7 @@ Mollick 的三分法是理解当前 AI 生态最实用的分析框架。它的�
 | 知识工具 | Deep Research | Deep Research + Shopping | NotebookLM + Deep Research |
 | 安全模型 | VM 隔离 + 默认拒绝网络 | — | — |
 
-Anthropic 在 Harness 层的布局最为完整——从编码（Code）到通用桌面（Cowork）到办公（Excel/PPT），形成了覆盖开发者和非技术用户的全栈 Agent 产品线。这与 [Claude Code 的架构分析](../ch03/084-claude-code.html) 中揭示的设计理念一脉相承。
+Anthropic 在 Harness 层的布局最为完整——从编码（Code）到通用桌面（Cowork）到办公（Excel/PPT），形成了覆盖开发者和非技术用户的全栈 Agent 产品线。这与 [Claude Code 的架构分析](ch03/084-claude-code.html) 中揭示的设计理念一脉相承。
 
 ### "AI 做事" vs "AI 说话" 的范式转移
 
@@ -76,7 +76,7 @@ OpenClaw 代表了 AI Agent 的一个极端方向——24/7 个人助手，具�
 - [Claude Opus 4.8 System Card](ch01/1442-claude.html)
 - NotebookLM
 - Agent Harness
-- [Karpathy: Agentic Engineering](../ch04/185-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/185-karpathy-vibe-coding-agentic-engineering.html)
 - [MOC: Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

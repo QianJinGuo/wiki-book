@@ -35,11 +35,11 @@ CIO.com 的一篇分析文章探讨了企业通过 AI 驱动裁员来提升效�
 ## 相关实体
 
 ## 相关实体
-- [Ai Driven Layoffs Business Sense Cio](ch03/011-cio.html)
-- [Ai Driven Layoffs Arent Making Business Sense](../ch05/100-ai.html)
-- [Enterprise Ai Investment Data Readiness Cio](ch03/011-cio.html)
-- [Aliyun Cio Ai Rd Efficiency](ch03/011-cio.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/100-ai.html)
+- [Ai Driven Layoffs Business Sense Cio](ch05/100-ai.html)
+- [Ai Driven Layoffs Arent Making Business Sense](ch05/100-ai.html)
+- [Enterprise Ai Investment Data Readiness Cio](ch05/100-ai.html)
+- [Aliyun Cio Ai Rd Efficiency](ch05/100-ai.html)
+- [Npm Supply Chain Compromise Postmortem](ch05/100-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio-4171054-ai-driven-layoffs-arent-making-bus.md)
 

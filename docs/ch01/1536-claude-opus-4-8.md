@@ -75,11 +75,11 @@ RSP 版本的演进（v3.2 → v3.3）揭示了一个重要的元评估问题：
 ---
 
 ## 相关实体
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/084-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](ch03/084-claude-code.html)
 - Claude Opus 4.7 评测
-- [Wetesteddeepseekv4Proandflashagainstclau](ch01/795-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](ch05/100-ai.html)
 - [Webwright Microsoft 1000 Lines](ch01/1429-0.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/084-claude-code.html)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-opus-48-the-system-card-b8460f.md)
 

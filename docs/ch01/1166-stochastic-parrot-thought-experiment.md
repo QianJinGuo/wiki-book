@@ -14,8 +14,8 @@ Now, let's consider two training scenarios:
 - [Stochastic Parrot Thought Experiment](ch01/1166-stochastic-parrot-thought-experiment.html)
 - [While Breathless In Stodgy Viridian](ch01/749-while-breathless-in-stodgy-viridian.html)
 - [Stochastic Parrot Deep Mystery Llms](ch01/1009-stochastic-parrot-deep-mystery-llms.html)
-- [Stochastic Parrot Marcus Ai Productivity](../ch11/078-stochastic-parrot-marcus-ai-productivity.html)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](../ch11/113-aws-grpo-rlvr-sagemaker-math-reasoning.html)
+- [Stochastic Parrot Marcus Ai Productivity](ch11/078-stochastic-parrot-marcus-ai-productivity.html)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/113-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-thought-experiment.md)
 

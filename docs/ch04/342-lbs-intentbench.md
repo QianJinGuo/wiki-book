@@ -86,7 +86,7 @@ Qwen3.5-35B-A3B 在 POI 语义理解和事实检索上逼近顶级闭源模型�
 
 ## 项目信息
 - 开源地址：https://github.com/lbs-researcher/LBS-IntentBench
-- 相关体系：[Skillclaw](ch04/538-skillclaw-nacos-agent-skill-registry.html)（同属高德 AMAP-ML）
+- 相关体系：[Skillclaw](ch04/341-skill.html)（同属高德 AMAP-ML）
 
 ## 关联条目
 -  — 同属高德 AMAP-ML，群体智能进化系统
@@ -94,13 +94,13 @@ Qwen3.5-35B-A3B 在 POI 语义理解和事实检索上逼近顶级闭源模型�
 
 ## 相关实体
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/341-skill.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/1532-anthropic.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch03/035-agent.html)
 
-- [AI Skill 测评指标体系](../ch01/658-ai-skill.html)
+- [AI Skill 测评指标体系](ch04/341-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-tools-research.md)
 
-- [Skills赏析：使用skills-refiner提升skill质量](../ch03/076-skills.html)
+- [Skills赏析：使用skills-refiner提升skill质量](ch04/341-skill.html)
 
 ---
 

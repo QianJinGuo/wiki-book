@@ -105,18 +105,18 @@ Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code
    智利 28 万非正式建筑工人没有大学文凭因此在系统里"不存在"^；这类群体的知识一旦失传就无法重建，应该成为 AI 知识保存工作的最高优先级
 
 ## 相关
-- [Claude Code 架构](../ch03/084-claude-code.html)
-- [Anthropic PM Agentic 工作流](../ch04/556-anthropic-pm-agentic.html)
-- [AutoResearch 多 Agent 开发](../ch03/035-agent.html)
-- [Agent Memory 模块化框架](../ch04/154-agent-memory.html)
+- [Claude Code 架构](ch03/084-claude-code.html)
+- [Anthropic PM Agentic 工作流](ch03/035-agent.html)
+- [AutoResearch 多 Agent 开发](ch03/035-agent.html)
+- [Agent Memory 模块化框架](ch03/035-agent.html)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
-- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/083-obsidian-claude-code.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/097-claude-code-1.html)
-- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/379-claude-code-subagent.html)
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/084-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch05/100-ai.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch03/084-claude-code.html)
+- [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
+- [Claude Code Subagent 上下文卫生](ch03/084-claude-code.html)
+- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/032-claude-code-skills.html)
 
 ---
 

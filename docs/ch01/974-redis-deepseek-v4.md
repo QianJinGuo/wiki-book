@@ -20,8 +20,8 @@ source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 ## 相关实体
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/435-deepseek-v4.html)
 - [ds4c deepseek v4 antirez](ch01/733-ds4c-deepseek-v4-antirez.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/435-deepseek-v4.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/795-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1442-claude.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch05/100-ai.html)
 
 ## 深度分析
 ### 1. 项目定位：专有推理引擎的回归

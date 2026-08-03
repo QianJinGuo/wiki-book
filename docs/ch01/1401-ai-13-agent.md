@@ -20,7 +20,7 @@ SearchGEO 构建了一个混合搜索代理，先将真实 SerpAPI 搜索结果�
 
 研究指出，防御方案需要针对「模型+框架」这一对组合来设计，而不是指望通用补丁；评测指标也需要走出单一 ASR，将沉默漂移、误拒率等被忽略的风险纳入考量。
 
-→ [SearchGEO：13个大模型检索Agent可信度评测](../ch03/035-agent.html)
+→ [SearchGEO：13个大模型检索Agent可信度评测](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/现代ai之父新作13个大模型实测检索agent真的可信吗.md)
 

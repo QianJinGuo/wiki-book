@@ -87,8 +87,8 @@ Skill 不是更长的提示词，而是把已验证规则与操作流程封装�
 ## 相关链接
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-autosdk-ai-native-pipeline-2026-08-03.md)
-- 高德同源姊妹篇：[高德 AI-Native 生产线：7x24 Self-Healing Pipeline + Agent 自进化](ch05/021-ai-native.html)、[高德广告工程 Harness/SDD 体系演进](ch05/118-ai-coding.html)、[高德工业级能力底座：AI-Native 端云一体基建](ch05/021-ai-native.html)
-- 相关主题：[Spec as AIOS：AI-Native 全栈交付的抗熵架构](../ch01/1188-spec.html)、[端到端 CodingAgent 设计（大淘宝）](../ch04/032-codingagent.html)
+- 高德同源姊妹篇：[高德 AI-Native 生产线：7x24 Self-Healing Pipeline + Agent 自进化](ch05/100-ai.html)、[高德广告工程 Harness/SDD 体系演进](ch05/100-ai.html)、[高德工业级能力底座：AI-Native 端云一体基建](ch05/100-ai.html)
+- 相关主题：[Spec as AIOS：AI-Native 全栈交付的抗熵架构](ch05/100-ai.html)、[端到端 CodingAgent 设计（大淘宝）](ch03/035-agent.html)
 
 ---
 

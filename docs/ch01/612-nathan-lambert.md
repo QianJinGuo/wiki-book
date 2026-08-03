@@ -65,11 +65,11 @@ Lambert 指出"依赖单一私人公司来评估国际关键基础设施的安�
 当前最大的知识空白是：在网络安全等窄域，开源模型与闭源前沿的真实差距到底有多大？建议建立标准化的网络安全 CTF benchmark，定期对比开源/闭源模型表现，为政策讨论提供实证基础而非直觉推测。
 
 ## 相关实体
-- [Nathan Lambert Open Models Bets 2026](ch01/612-nathan-lambert.html)
-- [Chinese Ai Lab Insights Nathan](../ch05/100-ai.html)
+- [Nathan Lambert Open Models Bets 2026](ch01/1429-0.html)
+- [Chinese Ai Lab Insights Nathan](ch05/100-ai.html)
 - [How Open Model Ecosystems Compound](ch01/1176-how-open-model-ecosystems-compound.html)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/1280-deepseek-v4-flash-pro.html)
-- [Multilingual Ai](../ch05/100-ai.html)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/435-deepseek-v4.html)
+- [Multilingual Ai](ch05/100-ai.html)
 
 - [dean ball on open models and government control](ch01/1035-dean-ball-on-open-models-and-government-control.html)
 

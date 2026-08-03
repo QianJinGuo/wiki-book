@@ -69,8 +69,8 @@ HGA 揭示了一个重要的 AI 安全新维度：**推理效率本身也是一�
 
 - [LLM推理安全分级](ch01/894-llm-thonking.html)
 - [提示注入角色分类](https://github.com/QianJinGuo/wiki/blob/main/entities/mechanistic-explanation-prompt-injection-roles.md)
-- [2026年LLM RL算法全景](ch01/1476-llm.html)
-- [Agentic RL框架与实践](../ch04/306-agentic-rl.html)
+- [2026年LLM RL算法全景](ch01/1429-0.html)
+- [Agentic RL框架与实践](ch03/035-agent.html)
 - [D-OPSD 扩散语言模型在线自蒸馏](ch01/181-d-opsd.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hga-reasoning-model-dos-zheda-alibaba-2026.md)

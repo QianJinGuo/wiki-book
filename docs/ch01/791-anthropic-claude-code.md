@@ -60,10 +60,10 @@ Claude Code 的案例特别值得警惕，因为它是一个拥有文件系统�
 
 ## 相关实体
 
-- [Claude Code Tool Call 安全事件](../ch03/084-claude-code.html) — Claude Code 此前发生的文件泄露安全事件，与此事件形成连锁安全争议
-- [实锤了 Claude Code 偷查用户时区](../ch03/084-claude-code.html) — 该事件的早期爆料，详细记录了时区检测的具体发现
-- [Claude Code 安全审计与偏见分析](../ch03/084-claude-code.html) — AI 编码工具安全审计的系统性分析
-- [Anthropic 8x 输出验证瓶颈](../ch09/098-anthropic-8x.html) — Claude Code 负责人的工程理念访谈，理解其安全设计哲学的背景
+- [Claude Code Tool Call 安全事件](ch03/084-claude-code.html) — Claude Code 此前发生的文件泄露安全事件，与此事件形成连锁安全争议
+- [实锤了 Claude Code 偷查用户时区](ch05/100-ai.html) — 该事件的早期爆料，详细记录了时区检测的具体发现
+- [Claude Code 安全审计与偏见分析](ch05/100-ai.html) — AI 编码工具安全审计的系统性分析
+- [Anthropic 8x 输出验证瓶颈](ch09/098-anthropic-8x.html) — Claude Code 负责人的工程理念访谈，理解其安全设计哲学的背景
 - [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — 系统性分析 AI Agent 工具安全的架构框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-code-trojan-telemetry-security-2026.md)

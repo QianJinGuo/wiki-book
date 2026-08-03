@@ -27,13 +27,13 @@ BigQuery 威胁模型覆盖了完整的 STRIDE 分类（Spoofing、Tampering、R
 5. **对 authorized views 和 row-level security 策略实施强制代码审查和测试**。这些安全机制的逻辑漏洞（漏写 WHERE 子句、逻辑错误）会导致数据访问范围超出预期，且不易通过常规监控发现 。
 
 ## 相关实体
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/470-agent-skills.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/470-agent-skills.html)
-- [Cloudsectidbits Masso Cognito Sso.Html](../ch11/114-cloudsectidbits.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1312-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11/017-aws-bedrock.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/341-skill.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/341-skill.html)
+- [Cloudsectidbits Masso Cognito Sso.Html](ch11/114-cloudsectidbits.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch05/100-ai.html)
+- [Aws Bedrock Halliburton Seismic Workflow Genai](ch05/100-ai.html)
 
-- [A History Of Ides At Google](../ch03/040-a-history-of-ides-at-google.html)
+- [A History Of Ides At Google](ch03/040-a-history-of-ides-at-google.html)
 - [gemini app rolling out](ch01/921-9.html)
 
 ---

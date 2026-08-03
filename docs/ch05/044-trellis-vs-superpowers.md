@@ -182,7 +182,7 @@ Superpowers v6.0 引入的 continuous execution 模式（任务之间不暂停�
 
 ## 互补关系
 
-- → [GSD vs OpenSpec vs Superpowers 源码对比](ch05/086-gsd-openspec-superpowers-context-rot.html)（同一作者的前作，聚焦 context rot）
+- → [GSD vs OpenSpec vs Superpowers 源码对比](ch01/1188-spec.html)（同一作者的前作，聚焦 context rot）
 - → [Superpowers v6 SDD 重写](https://github.com/QianJinGuo/wiki/blob/main/entities/superpowers-6-sdd-review-redesign-file-handoff.md)（SDD 细节补充）
 - → [Superpowers 深度解析](ch05/100-ai.html)（superpowers 全景）
 

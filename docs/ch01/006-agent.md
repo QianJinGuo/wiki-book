@@ -67,7 +67,7 @@ KroWork 的核心范式创新是**应用固化（Application Solidification）**
 | 用户学习成本 | 每次都要重新讲需求 | 一次固化，永久使用 |
 | 共享方式 | 难以分发 | 一键分享给同事 |
 
-这一范式与 [Enterprise Software Moats in the Agent Era](../ch03/035-agent.html) 中关于"Agent 时代企业软件护城河"的论述高度契合——本地化部署 + 数据主权 + 工作流沉淀构成了新一代企业 Agent 工具的核心竞争壁垒。
+这一范式与 [Enterprise Software Moats in the Agent Era](ch03/035-agent.html) 中关于"Agent 时代企业软件护城河"的论述高度契合——本地化部署 + 数据主权 + 工作流沉淀构成了新一代企业 Agent 工具的核心竞争壁垒。
 
 ### 3. 主动规划：Agent 决策能力的关键升级
 
@@ -84,7 +84,7 @@ KroWork 在执行 AI 热点追踪器任务时，**主动规划**而非直接开�
 - **替代方案推荐**：当首选方案不可行时主动给出备选
 - **等待用户授权**：而非自作主张降级
 
-这与 [Factory Mission 系统](../ch03/035-agent.html) 中 Orchestrator 的"梳理模糊需求"角色形成跨厂商印证——成熟 Agent 工具的核心是从"被动响应"升级为"主动规划 + 授权执行"。
+这与 [Factory Mission 系统](ch05/100-ai.html) 中 Orchestrator 的"梳理模糊需求"角色形成跨厂商印证——成熟 Agent 工具的核心是从"被动响应"升级为"主动规划 + 授权执行"。
 
 ### 4. browser-use 能力：Agent 的最后一块拼图
 
@@ -104,7 +104,7 @@ KroWork 的下一步棋是**应用分享**——你生成的应用可以一键�
 - **市场同学固化出来的竞品监控器，整个小组都能复用**
 - **财务做的票据核查工具，其他部门也能直接拿去跑**
 
-这与 [AutoResearch 多 Agent 软件开发](../ch03/035-agent.html) 中的"代码资产化"方向一致——Agent 时代最重要的不是工具本身，而是工具带来的**可复用资产**。
+这与 [AutoResearch 多 Agent 软件开发](ch03/035-agent.html) 中的"代码资产化"方向一致——Agent 时代最重要的不是工具本身，而是工具带来的**可复用资产**。
 
 ### 6. 对"AI 替代人"的另一种回答
 
@@ -112,7 +112,7 @@ KroWork 的故事隐含对"AI 替代人"叙事的另一种回答：**AI 不是�
 
 > 程序员早就会把重复劳动写成脚本，给自己造一堆小工具。真正被困住的，是**不会写代码但每天都在重复处理信息的人**——运营要做周报，市场要盯竞品，行政要整理文件，财务要核对票据，教师要管理课程资料。他们不缺想法，也不缺流程经验。**缺的是把流程变成工具的能力**。KroWork 所做的，就是把"写脚本"翻译成了自然语言，把"部署应用"藏进了桌面端。
 
-这一观点与 [24h 打工人](../ch03/035-agent.html) 中关于"AI 数字员工"的方向相互呼应——Agent 时代的核心价值是让"非程序员"也能拥有制造工具的能力。
+这一观点与 [24h 打工人](ch03/035-agent.html) 中关于"AI 数字员工"的方向相互呼应——Agent 时代的核心价值是让"非程序员"也能拥有制造工具的能力。
 
 ## 实践启示
 
@@ -172,12 +172,12 @@ browser-use 能力让 Agent 能够访问没有 API 的信息源，这是 Agent �
 
 ## 相关实体
 
-- [24h 打工人](../ch03/035-agent.html)
-- [Enterprise Software Moats in the Agent Era](../ch03/035-agent.html)
-- [AutoResearch 多 Agent 软件开发](../ch03/035-agent.html)
-- [Factory Mission Multi-Agent 系统](../ch03/035-agent.html)
-- [AgentOps on Bedrock](../ch04/292-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch01/409-agi.html)
+- [24h 打工人](ch03/035-agent.html)
+- [Enterprise Software Moats in the Agent Era](ch03/035-agent.html)
+- [AutoResearch 多 Agent 软件开发](ch03/035-agent.html)
+- [Factory Mission Multi-Agent 系统](ch05/100-ai.html)
+- [AgentOps on Bedrock](ch05/100-ai.html)
+- [agivar 录屏教学桌面 agent：清华非十科技 大脑小脑双层架构 + jittor 推理引擎 + 2.3× 速度](ch05/100-ai.html)
 - [应用固化（Application Solidification）](https://github.com/QianJinGuo/wiki/blob/main/concepts/application-solidification.md)
 
 ---

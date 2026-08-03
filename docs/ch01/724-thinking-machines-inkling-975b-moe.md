@@ -21,7 +21,7 @@ Inkling 是 Thinking Machines Lab 不同规模模型家族中的首款产品。�
 
 ## 与 Thinking Machines 交互模型的关系
 
-Thinking Machines Lab 此前发布了 [交互模型（Interaction Models）](../ch04/322-thinking-machines-interaction-models.html)，专注于解决假实时问题（200ms 微轮次双向交换）。Inkling 是其基础模型层，与交互模型构成两层能力体系：Inkling 提供跨模态理解与推理，交互模型提供实时双向交互能力。
+Thinking Machines Lab 此前发布了 [交互模型（Interaction Models）](ch04/322-thinking-machines-interaction-models.html)，专注于解决假实时问题（200ms 微轮次双向交换）。Inkling 是其基础模型层，与交互模型构成两层能力体系：Inkling 提供跨模态理解与推理，交互模型提供实时双向交互能力。
 
 ## 深度分析
 
@@ -65,7 +65,7 @@ Inkling 的开放权重策略不仅体现在模型权重下载（Hugging Face �
 
 ## 行业背景
 
-Thinking Machines Lab（估值约 500 亿美元）由前 OpenAI CTO Mira Murati、OpenAI 强化学习核心人物 John Schulman 以及 PyTorch 创始人 Soumith Chintala 联合创立。参见 [Neolab 浪潮分析](../ch05/100-ai.html)。
+Thinking Machines Lab（估值约 500 亿美元）由前 OpenAI CTO Mira Murati、OpenAI 强化学习核心人物 John Schulman 以及 PyTorch 创始人 Soumith Chintala 联合创立。参见 [Neolab 浪潮分析](ch05/100-ai.html)。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinking-machines-inkling-975b-moe-open-weights-2026.md)
 

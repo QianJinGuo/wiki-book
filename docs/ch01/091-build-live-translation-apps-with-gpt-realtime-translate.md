@@ -56,8 +56,8 @@ gpt-realtime-translate 是 OpenAI 推出的专用实时语音翻译模型：输�
 ## 相关实体
 
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/1071-openai-gpt-realtime-voice-models-qbitai.html) — GPT Realtime Voice 模型信息，与 gpt-realtime-translate 同族
-- [Openai Realtime Api Architecture](ch01/119-openai-realtime-api.html) — OpenAI Realtime API 的整体架构
-- [Openai Three Voice Models Kill Simultaneous Translation](ch01/227-openai.html) — OpenAI 语音模型矩阵与同传能力的讨论
+- [Openai Realtime Api Architecture](ch05/100-ai.html) — OpenAI Realtime API 的整体架构
+- [Openai Three Voice Models Kill Simultaneous Translation](ch05/100-ai.html) — OpenAI 语音模型矩阵与同传能力的讨论
 - [Openai Realtime Voice Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-realtime-voice-architecture.md) — Realtime 语音架构概念
 - [OpenAI 开发者生态 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 

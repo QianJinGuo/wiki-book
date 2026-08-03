@@ -34,7 +34,7 @@
 
 2. **安全错觉**：禁用断言并不意味着程序变得更安全。程序在违反假设后继续运行，可能产生比崩溃更严重的后果——数据损坏、安全漏洞、静默错误。作者将这种情况类比为"对自我造假"（gaslighting yourself）。
 
-3. **调试信息丢失**：断言是最早捕获错误的机制。没有断言，一个错误可能在远离根源的位置才显现，大大增加调试难度。这与 [可观测性工程框架](../ch03/035-agent.html) 中"尽早暴露故障"的原则一致。
+3. **调试信息丢失**：断言是最早捕获错误的机制。没有断言，一个错误可能在远离根源的位置才显现，大大增加调试难度。这与 [可观测性工程框架](ch03/035-agent.html) 中"尽早暴露故障"的原则一致。
 
 ### Assert 与 fuzz 的协同效应
 
@@ -69,11 +69,11 @@
 
 ## 相关实体
 
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/100-ai.html) — 同一技术写作风格系列的领域专业知识讨论
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/1105-20.html) — 同为深度技术实践分析的姊妹文章
-- [Seangoedeckecom Build Agents Not Pipelines](../ch04/023-build-agents-not-pipelines.html) — 软件工程方法论相关讨论
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](ch05/100-ai.html) — 同一技术写作风格系列的领域专业知识讨论
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/1429-0.html) — 同为深度技术实践分析的姊妹文章
+- [Seangoedeckecom Build Agents Not Pipelines](ch03/035-agent.html) — 软件工程方法论相关讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 技术深度分析系列
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1105-20.html) — 系统调试方法与实践
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1429-0.html) — 系统调试方法与实践
 
 ## 相关主题
 

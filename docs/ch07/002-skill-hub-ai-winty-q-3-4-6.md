@@ -246,25 +246,25 @@ winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是�
 - **放得开** ≈ 灰度发布（Canary Deployment）+ Feature Flag
 - **收得回** ≈ 回滚机制（Rollback）+ 监控告警（Observability）
 
-这与 [技能设计模式](../ch04/341-skill.html) 的要求一致——Skill 本质上是结构化的 Prompt + 工具链 + 执行策略，需要被当作**可执行软件**而非静态文档来治理。这也解释了为什么 [AI Skill 演进框架](ch07/010-ai-skill-evolution.html) 强调 Skill 的版本化和可测试性是不可妥协的基础要求。
+这与 [技能设计模式](ch04/341-skill.html) 的要求一致——Skill 本质上是结构化的 Prompt + 工具链 + 执行策略，需要被当作**可执行软件**而非静态文档来治理。这也解释了为什么 [AI Skill 演进框架](ch04/341-skill.html) 强调 Skill 的版本化和可测试性是不可妥协的基础要求。
 
 ### 3. 组织资产视角下的 Skill 定位：第三层抽象
 
 winty 将 Skill 定位在"个人侧"与"工具侧"之间，并称之为"组织能力层"。这个描述有深刻的架构含义：**Skill 是对组织流程经验的结构化编码，而非硬编码的规则或松散的 Prompt 集合**。
 
-[Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](../ch05/092-thin-harness-fat-skills-ai.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
+[Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](ch04/341-skill.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
 
 ### 4. 从"个人聪明"到"组织默认聪明"：新人入职问题的元问题
 
 文章的核心比喻——"新人入职那天，AI 就已经知道怎么帮他发版了"——揭示了一个被大多数企业 AI 落地策略忽略的**新人上手问题的元问题**：不是 AI 不会，而是 AI 没有继承组织的积累。
 
-这个问题在 [How To Encode Experience Into Skills](../ch03/076-skills.html) 中有更系统的讨论：Skill 的价值不在于它能执行某个动作，而在于它编码了"在这个组织里，这个场景的标准做法是什么"。当 Skill 进入 Hub 后，新人不必再依赖"问老张"这种不可扩展的知识传递方式——组织智慧已经被结构化地编码进了 Skill Hub，被所有 Agent 共享。这与 [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/294-hermes.html) 中的"技能复用闭环"是同一个逻辑在不同粒度上的表达。
+这个问题在 [How To Encode Experience Into Skills](ch04/341-skill.html) 中有更系统的讨论：Skill 的价值不在于它能执行某个动作，而在于它编码了"在这个组织里，这个场景的标准做法是什么"。当 Skill 进入 Hub 后，新人不必再依赖"问老张"这种不可扩展的知识传递方式——组织智慧已经被结构化地编码进了 Skill Hub，被所有 Agent 共享。这与 [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch04/341-skill.html) 中的"技能复用闭环"是同一个逻辑在不同粒度上的表达。
 
 ### 5. 平台型与业务型的张力：Skill Hub 的权力结构
 
-中台收口型模式的失败（平台定义能力，业务方只能用现成的；新需求要排期）揭示了 Skill Hub 治理中一个深层矛盾：**平台提供方与业务消费方之间的权力博弈**。这个问题在 [Skill System Design Three Way Comparison](../ch04/341-skill.html) 中有详细讨论。
+中台收口型模式的失败（平台定义能力，业务方只能用现成的；新需求要排期）揭示了 Skill Hub 治理中一个深层矛盾：**平台提供方与业务消费方之间的权力博弈**。这个问题在 [Skill System Design Three Way Comparison](ch04/341-skill.html) 中有详细讨论。
 
-winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用）实际上是一种**联邦式治理模型**：Hub 提供基础设施和治理框架，但 Skill 的所有权属于业务团队。这与传统的"中台把所有能力收到平台团队"模式有本质区别——[Skill Complete Guide Alibaba](../ch04/341-skill.html) 中阿里云 tangram 模型的"企业级 Skill 管理中心"也采用了类似的分层所有权设计，平台管治理，业务方管内容。
+winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用）实际上是一种**联邦式治理模型**：Hub 提供基础设施和治理框架，但 Skill 的所有权属于业务团队。这与传统的"中台把所有能力收到平台团队"模式有本质区别——[Skill Complete Guide Alibaba](ch04/341-skill.html) 中阿里云 tangram 模型的"企业级 Skill 管理中心"也采用了类似的分层所有权设计，平台管治理，业务方管内容。
 
 ## 实践启示
 
@@ -281,13 +281,13 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 2. **高频流程**：代码评审、发版检查、环境配置 → 第二批
 3. **低频但关键**：灾难恢复、故障排查手册 → 第三批
 
-这个优先级参考了 [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/341-skill.html) 中的"关键路径识别"方法：把组织中最不容出错的那类操作先用 Skill 固化起来，形成组织默认的正确做法。个人偏好类操作（如编辑器偏好）留在个人 Memory，不进入 Hub——Hub 的治理成本应该花在值得治理的地方。
+这个优先级参考了 [Agent Reliability Engineering Skillify Continuous Improvement](ch04/341-skill.html) 中的"关键路径识别"方法：把组织中最不容出错的那类操作先用 Skill 固化起来，形成组织默认的正确做法。个人偏好类操作（如编辑器偏好）留在个人 Memory，不进入 Hub——Hub 的治理成本应该花在值得治理的地方。
 
 ### 3. 给每个 Skill 配置"最小评估集"，不要等到质量完美再发布
 
 **关键实践**：每个 Skill 在进入 Hub 时，至少需要准备一个**最小可用测试集**（哪怕是 5-10 个历史输入输出对），用于后续版本比较。
 
-这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](../ch04/680-agent-skill.html) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
+这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](ch04/341-skill.html) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
 
 ### 4. 设计 Skill 的 Fork / 分支策略，明确所有权边界
 
@@ -297,13 +297,13 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 - **团队分支（team-xxx）**：特定团队的定制 Skill，不进入官方 Hub
 - **重大分歧时走 Fork**：在 Fork 上各自演进，核心接口保持兼容
 
-参考 [Skill Formal Theory Survey](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) 中关于 Skill 可组合性的讨论，以及 [Skill Design Spec 8 Block Checklist Winty](../ch04/341-skill.html) 中的结构化模板，Fork 的边界应该在"场景定制"层面而非"核心逻辑"层面——核心逻辑应该在主线收敛，场景差异通过参数或条件分支来处理。
+参考 [Skill Formal Theory Survey](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) 中关于 Skill 可组合性的讨论，以及 [Skill Design Spec 8 Block Checklist Winty](ch04/341-skill.html) 中的结构化模板，Fork 的边界应该在"场景定制"层面而非"核心逻辑"层面——核心逻辑应该在主线收敛，场景差异通过参数或条件分支来处理。
 
 ### 5. 建立 Skill Hub 与现有工程流程的嵌入点，防止 Hub 成为孤岛
 
 **实践警示**：Skill Hub 如果只是"另一个工具"，很快会被团队遗忘。**必须将 Skill Hub 与现有工程流程深度嵌入**：
 
-- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](../ch04/281-self-evolving-agents.html) 中提到的"技能编排"思路）
+- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](ch04/341-skill.html) 中提到的"技能编排"思路）
 - 代码评审 Agent 默认加载 Skill Hub 中的团队规范 Skill
 - 新项目初始化时，Agent 自动从 Hub 拉取该项目类型对应的 Skill 集
 
@@ -349,7 +349,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 
 1. frontmatter · 2. When to use · 3. Do not use when · 4. Inputs · 5. Steps · 6. Verification · 7. Failure handling · 8. Pitfalls
 
-> **这 8 块都得有。少一块即拒。** ——与 [Skill Design Spec 8 Block Checklist Winty](../ch04/341-skill.html) 中的 8 块结构完全对齐
+> **这 8 块都得有。少一块即拒。** ——与 [Skill Design Spec 8 Block Checklist Winty](ch04/341-skill.html) 中的 8 块结构完全对齐
 
 ### 类别三：安全合规
 
@@ -598,7 +598,7 @@ owner 看完之后，做了三件事：
 
 ## 相关实体
 
-- [review agent 机制深度解析（winty）](../ch03/035-agent.html)
+- [review agent 机制深度解析（winty）](ch03/035-agent.html)
 → [第 1 篇原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-hub-organization-asset-winty.md) · [第 2 篇原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-quality-gates-4-checks-winty-2026-06-16.md) · [第 3 篇原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-lifecycle-6-stages-winty-2026-06-17.md) · ·
 
 > **系列收尾**：winty 在第 3 篇末尾预告"下一篇进入更具体的实战层面：企业级 Skill Hub 的架构设计"——`架构设计`将是 winty Skill Hub 系列的第 4 篇，可继续追踪入库。

@@ -202,7 +202,7 @@ WebGPU 使浏览器可以直接运行 AI 模型——这可能改变"AI 编码�
 如果 Chromium 定义了 AI 编码的浏览器 API 标准，其他浏览器（Firefox/Safari）可能跟进——关注标准化进展。
 
 ## 相关实体
-- [Ai Coding Agent Memory System](../ch04/400-ai-coding-agent.html)
+- [Ai Coding Agent Memory System](ch05/100-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 ## 相关主题

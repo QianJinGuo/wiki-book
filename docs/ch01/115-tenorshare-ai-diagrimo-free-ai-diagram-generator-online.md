@@ -93,8 +93,8 @@ Diagrimo 的核心价值主张在于**降低可视化门槛**。传统图表制�
 - 复杂的自定义设计可能受限，有高度定制需求时建议使用专业设计工具
 
 ## 相关实体
-- [Imagetovideoai Generator](../ch05/100-ai.html)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/100-ai.html)
+- [Imagetovideoai Generator](ch05/100-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](ch05/100-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch01/1032-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 

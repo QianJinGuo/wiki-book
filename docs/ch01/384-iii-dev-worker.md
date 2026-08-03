@@ -136,13 +136,13 @@ iii 的核心价值主张不是"它是一个更好的 harness"，而是"它消�
 **5. Primitives 设计比功能列表更重要**
 iii 最值得学习的不是它的具体功能，而是它的设计哲学：找到一个足够小、足够通用的 primitive 集合，让"添加功能"的答案变成"添加一个 Worker"。在设计任何复杂系统时，先问：能否用一个 primitive 回答"我想要 X"这个问题？如果不能，为什么？如果能，这个 primitive 是什么？"添加一个 worker"这个答案的优雅之处在于它是自描述的——它告诉你具体做什么（添加 worker）以及这会带来的效果（系统获得新能力并立即可发现、可观测）。
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch01/1532-anthropic.html)
-- [Anthropic 12 Mcp Production Patterns](ch01/1532-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch01/1532-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/341-skill.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/479-anthropic-claude-code.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch07/001-mcp.html)
+- [Anthropic 12 Mcp Production Patterns](ch07/001-mcp.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch07/001-mcp.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](ch04/341-skill.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch03/084-claude-code.html)
 
-- [Anthropic Long Running Agent Architecture 6H Retroforge](ch01/1532-anthropic.html)
+- [Anthropic Long Running Agent Architecture 6H Retroforge](ch03/035-agent.html)
 
 ---
 

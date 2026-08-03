@@ -12,11 +12,11 @@
 - 「Claude Opus 4.7」→「Claude 四点七」
 
 ## 相关实体
-- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/035-agent.html)
-- [Claude Code Prompt Context Harness](../ch09/070-claude-code-prompt.html)
-- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/268-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Claude Code Search Architecture Tencent 2026](../ch03/084-claude-code.html)
-- [Hermes Agent Newbie Guide Dotta](../ch03/102-hermes-agent.html)
+- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](ch03/035-agent.html)
+- [Claude Code Prompt Context Harness](ch03/084-claude-code.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/268-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Claude Code Search Architecture Tencent 2026](ch03/084-claude-code.html)
+- [Hermes Agent Newbie Guide Dotta](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
 

@@ -104,7 +104,7 @@ Anthropic 的「精选」策略反映了其对"体验质量"的强烈控制欲�
 
 ## 相关主题
 
-- [Anthropic AI Gateways vs MCP Gateways](../ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — MCP 安全架构分析（protocol 概念另见 ai-gateways-vs-mcp-gateways 页面）
+- [Anthropic AI Gateways vs MCP Gateways](ch07/001-mcp.html) — MCP 安全架构分析（protocol 概念另见 ai-gateways-vs-mcp-gateways 页面）
 
 ## 相关实体
 

@@ -96,9 +96,9 @@ DBCopilot 的推出回应了一个关键问题：在 Agent 大规模操作数据
 
 ## 相关实体
 
-- [Backend for Agent](../ch03/035-agent.html) — 面向 Agent 的后端架构设计
-- [AI 原生企业转型](../ch05/021-ai-native.html) — 数据基础设施转型的组织视角
-- [Agent Harness 钉钉招聘](../ch05/062-agent-harness.html) — Agent 生产部署实践
+- [Backend for Agent](ch03/035-agent.html) — 面向 Agent 的后端架构设计
+- [AI 原生企业转型](ch05/100-ai.html) — 数据基础设施转型的组织视角
+- [Agent Harness 钉钉招聘](ch03/035-agent.html) — Agent 生产部署实践
 - [火山 Milvus 向量检索](https://github.com/QianJinGuo/wiki/blob/main/entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md) — Milvus 性能详解
 - **Supabase** — AI 原生 BaaS 平台
 

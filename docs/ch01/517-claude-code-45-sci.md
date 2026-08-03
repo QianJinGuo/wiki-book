@@ -18,13 +18,13 @@
 
 Claude Code 作为一款面向编程场景设计的 coding agent，被成功应用于学术文献综述这一非编程任务，其本质是「工具跨域迁移」的典型案例。编程与学术写作在底层范式上存在结构相似性：代码生成需要结构化输出、类型安全、模块化组织；学术综述同样需要结构化的论证链条、引用完整性、逻辑自洽性。Claude Code 的强项——长上下文窗口、系统化的文件组织能力、代码执行验证——恰好对应了学术写作中对长篇论证管理、文献引用组织、数据图表复现验证的需求。这种跨域能力揭示了 AI 工具的通用性：当工具的核心能力足够抽象时，它可以脱离原始设计场景服务于更广泛的知识工作。
 
-这一现象并非孤例。[KAIROS 范式](ch01/507-claude-code-kairos.html)中 Claude Code 从「同步问答器」向「常驻代理」的进化路径同样印证了同一趋势——工具的边界正在从单一场景工具向通用工作流中枢扩展。编码工具不再仅仅是写代码的，而是成为知识生产的底层基础设施。
+这一现象并非孤例。[KAIROS 范式](ch05/100-ai.html)中 Claude Code 从「同步问答器」向「常驻代理」的进化路径同样印证了同一趋势——工具的边界正在从单一场景工具向通用工作流中枢扩展。编码工具不再仅仅是写代码的，而是成为知识生产的底层基础设施。
 
 ### 2.「Vibe Researching」的方法论定位
 
 该方法背后的「从 Vibe Coding 到 Vibe Researching」框架，实际上定义了一种新的知识生产方式：以 Agent 驱动的、人机协作的、迭代式的学术写作工作流。Claude Code 负责结构化论证生成、引用覆盖、格式规范化，人则在方向选择、假设提出、质量判断上保持主导地位。这与 [vibe coding 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md)的理念一脉相承——人提供意图和方向，AI 负责执行和落地。在文献综述场景中，AI 能够快速扫描大量文献、识别关键主题、组织论证结构，而研究人员则判断哪些文献真正重要、哪些论证方向值得深入、哪些结论可以被接受。
 
-从更宏观的视角看，这种分工模式与 [AI 自主科研 L0-L4 五级框架](../ch05/100-ai.html)高度吻合。该框架将 AI 科研自主度分为五个等级，其中 L1-L2 被定义为「Vibe Research」——人在驾驶座，AI 作为辅助工具执行具体任务。45 页综述的成功产出，实证了 Vibe Research 在当前技术条件下的可行性和有效性。它不追求 L3（AI 主导、人辅助）的全自动化，而是务实地将 AI 嵌入到人类研究者的工作流中，在人类判断力的护航下释放 AI 的效率优势。
+从更宏观的视角看，这种分工模式与 [AI 自主科研 L0-L4 五级框架](ch05/100-ai.html)高度吻合。该框架将 AI 科研自主度分为五个等级，其中 L1-L2 被定义为「Vibe Research」——人在驾驶座，AI 作为辅助工具执行具体任务。45 页综述的成功产出，实证了 Vibe Research 在当前技术条件下的可行性和有效性。它不追求 L3（AI 主导、人辅助）的全自动化，而是务实地将 AI 嵌入到人类研究者的工作流中，在人类判断力的护航下释放 AI 的效率优势。
 
 ### 3. 文献综述是 AI 科研助手的理想切入点
 
@@ -38,7 +38,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的「标准化流程 + 可复用组件」思维高度一致。每一段综述不是一次性生成的长文本，而是可独立审查、迭代、替换的「知识模块」。更重要的是，这种模块化结构为未来的持续更新奠定了基础——当新文献出现时，只需更新对应的子模块文件，而非重新生成整篇综述。这种「构件化」的知识生产方式，将学术写作从一次性劳动转变为可维护的系统工程。
 
-[KAIROS 范式](ch01/507-claude-code-kairos.html)中提到的「长生命周期会话」「后台任务持续执行」等能力，若与这种模块化工作流结合，可以进一步自动化文献追踪、引用更新、格式规范等重复性工作，将人的参与点从「逐段写作」压缩到「策略性评审」。
+[KAIROS 范式](ch05/100-ai.html)中提到的「长生命周期会话」「后台任务持续执行」等能力，若与这种模块化工作流结合，可以进一步自动化文献追踪、引用更新、格式规范等重复性工作，将人的参与点从「逐段写作」压缩到「策略性评审」。
 
 ### 5. 关于「SCI 一区级」边界的审慎评估
 
@@ -52,7 +52,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 2. **Modular Composition 是长文档生成的关键模式。** 45 页综述不是一次性生成的，而是通过将文档拆分为独立子模块、逐个生成、再组合拼接的方式完成的。对于任何涉及长篇幅输出的 AI 工作流，都应采用「按模块生成 → 逐模块审查 → 汇总组合」的模式，而非试图一次输出全部内容。这种模式既提高了输出质量（每个模块可独立迭代优化），也使得人的审查和干预可以在模块级别进行——这是任何追求出版级质量的 AI 写作项目不可跳过的工程选择。
 
-3. **引用核验是 AI 学术写作不可跳过的质量关卡。** LLM 生成的引用经常出现幻觉——引用不存在的文献、张冠李戴的论点归属、页码错误等。45 页综述能够达到 SCI 标准，离不开事后的引用核验工作。在实践中，可以引入专门的 reviewer agent（如 [Claude Science](ch01/1532-anthropic.html) 中的 actor-critic 架构）逐句核对引用的准确性，将引用校验从纯手动劳动转化为 AI 辅助的自动化流程。任何使用 LLM 辅助学术写作的实践者，都应建立至少包含「生成 → 引用核验 → 人工审查」的三阶段品控流水线。
+3. **引用核验是 AI 学术写作不可跳过的质量关卡。** LLM 生成的引用经常出现幻觉——引用不存在的文献、张冠李戴的论点归属、页码错误等。45 页综述能够达到 SCI 标准，离不开事后的引用核验工作。在实践中，可以引入专门的 reviewer agent（如 [Claude Science](ch05/100-ai.html) 中的 actor-critic 架构）逐句核对引用的准确性，将引用校验从纯手动劳动转化为 AI 辅助的自动化流程。任何使用 LLM 辅助学术写作的实践者，都应建立至少包含「生成 → 引用核验 → 人工审查」的三阶段品控流水线。
 
 4. **明确「人的不可替代价值」并集中投入。** 本案例中最值得关注的不是 AI 做了什么，而是人做了什么：选择综述主题、判断哪些文献值得纳入、评估论证的逻辑严密性、优化语言表达以符合学术期刊风格。这些是当前 AI 能力最薄弱的环节，却恰恰是学术写作最核心的价值。任何希望用 AI 提升学术生产力的团队，都应该明确「人负责什么，AI 负责什么」的分工边界，将人的精力集中在高价值判断上，而不是追求全自动化。
 
@@ -60,11 +60,11 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 ## 相关实体
 
-- [Matt Pocock Skills vs Superpowers](../ch03/076-skills.html) — 同一作者（鲁工/AI编程实验室）的实操分享系列，讨论了 Agent 技能工程的两条路线
+- [Matt Pocock Skills vs Superpowers](ch04/341-skill.html) — 同一作者（鲁工/AI编程实验室）的实操分享系列，讨论了 Agent 技能工程的两条路线
 - [Claude Science：AI 科研工作台](ch01/1442-claude.html) — Anthropic 面向科研的 AI 工作台，将 AI 能力嵌入科研全流程，与 Claude Code 的学术综述实践互补
-- [Claude Code KAIROS 范式](ch01/507-claude-code-kairos.html) — Claude Code 从同步问答器向常驻代理的范式跃迁，为长期学术写作工作流提供基础设施
-- [AI 自主科研 L0-L4 框架](../ch05/100-ai.html) — 52 页综述定义的 AI 科研自主度分级，Vibe Research 属于 L1-L2 级别
-- [Claude Science Anthropic 科研 AI 工作台](ch01/1532-anthropic.html) — Anthropic 官方推出的科研 AI 集成工作环境，可审计管道 + 多智能体协同
+- [Claude Code KAIROS 范式](ch05/100-ai.html) — Claude Code 从同步问答器向常驻代理的范式跃迁，为长期学术写作工作流提供基础设施
+- [AI 自主科研 L0-L4 框架](ch05/100-ai.html) — 52 页综述定义的 AI 科研自主度分级，Vibe Research 属于 L1-L2 级别
+- [Claude Science Anthropic 科研 AI 工作台](ch05/100-ai.html) — Anthropic 官方推出的科研 AI 集成工作环境，可审计管道 + 多智能体协同
 - [vibe coding 编程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md) — 人提供意图方向、AI 负责执行的协作模式，Vibe Researching 的方法论基础
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 标准化流程 + 可复用组件的工程思维，可应用于学术写作的流程化管理
 - [AI 研究的科学方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/scientific-method-ai-research.md) — 关于 AI 如何增强而非替代人类判断力的方法论讨论

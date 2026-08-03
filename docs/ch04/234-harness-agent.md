@@ -115,10 +115,10 @@ Harness 工程最容易被误解的地方在于，人们认为它是「让 AI �
 
 ## 相关实体
 
-- [Agent Harness 生产实践](../ch05/062-agent-harness.html) — Harness 在生产环境的部署经验
-- [Harness 工程实践：17 个 vs 6 子 Agent](../ch05/129-harness-engineering.html) — 阿里另一篇 Harness 工程深度文章
-- [Agent Harness 钉钉招聘](../ch05/062-agent-harness.html) — Agent 招聘场景的 Harness 实践
-- [Loop Engineering](../ch05/006-loop-engineering.html) — 与 Harness 工程协同的循环工程范式
+- [Agent Harness 生产实践](ch03/035-agent.html) — Harness 在生产环境的部署经验
+- [Harness 工程实践：17 个 vs 6 子 Agent](ch05/129-harness-engineering.html) — 阿里另一篇 Harness 工程深度文章
+- [Agent Harness 钉钉招聘](ch03/035-agent.html) — Agent 招聘场景的 Harness 实践
+- [Loop Engineering](ch05/006-loop-engineering.html) — 与 Harness 工程协同的循环工程范式
 - **Reward Hacking** — Agent 自主优化的核心陷阱
 - **Prompt Engineering** — 自主迭代中的 prompt 优化方法论
 

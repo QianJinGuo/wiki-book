@@ -208,11 +208,11 @@ Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition �
 ## 来源
 
 ## 相关实体
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](ch11/218-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](ch11/209-vietnam-to-develop-domestic-cloud.html)
 - [Vietnam Domestic Cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1368-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
-- [Toto 2](ch11/186-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](ch11/218-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](ch01/1368-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Toto 2](ch01/028-toto-2-0-time-series-forecasting-enters-the-scaling-era.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](ch11/209-vietnam-to-develop-domestic-cloud.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
 

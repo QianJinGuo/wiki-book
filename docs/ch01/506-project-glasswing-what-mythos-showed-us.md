@@ -101,8 +101,8 @@ Cloudflare 总结出四方面经验，最终形成八阶段管道 ：
 - [Autonomous Vulnerability Hunting with MCP](ch01/1476-llm.html)
 - [Anthropic Managed Agents 架构：脑手分离设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md)
 
-- [LLM raiders and how to repel them](ch01/1476-llm.html)
-- [LLM raiders and how to repel them](ch01/1476-llm.html)
+- [LLM raiders and how to repel them](ch05/100-ai.html)
+- [LLM raiders and how to repel them](ch05/100-ai.html)
 - [Anthropic Mythos Glasswing 30Days Vulnerability Report](ch01/1532-anthropic.html)
 
 ---

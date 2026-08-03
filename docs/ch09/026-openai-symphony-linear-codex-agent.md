@@ -125,7 +125,7 @@ OpenAI 还使用 **dynamic tool calls** 暴露 `linear_graphql` 这类能力，�
 | 工程流程 | **显式 WORKFLOW.md 文档驱动** | 内置节点模板 | 内置 worker 模板 | harness 模板 |
 
 - 对话流主导（Coze 3）→ 任务系统主导（Symphony）→ Kanban 调度（Hermes）→ 云端沙箱（Oz）的演进，是「**从编排对话到编排工作流**」的范式递进
-- Symphony 强调的「**任务系统驱动 agent 干活**」与 [agent orchestration](../ch04/595-agent-orchestration.html) 的核心一致，但**控制平面从代码 session 切到了任务管理系统**
+- Symphony 强调的「**任务系统驱动 agent 干活**」与 [agent orchestration](ch04/595-agent-orchestration.html) 的核心一致，但**控制平面从代码 session 切到了任务管理系统**
 
 ## 深度分析
 
@@ -168,7 +168,7 @@ OpenAI 还使用 **dynamic tool calls** 暴露 `linear_graphql` 这类能力，�
 - 配套技术底座：Codex App Server（headless + JSON-RPC）
 
 ## 相关实体
-- [Figma Make Local Code](../ch03/047-figma-make.html)
+- [Figma Make Local Code](ch03/047-figma-make.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md)
 

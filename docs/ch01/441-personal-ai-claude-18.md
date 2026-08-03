@@ -234,7 +234,7 @@ good example:
 ## 关联阅读
 - 原文：https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w（若飞/架构师，2026-05-18）
 - 属于 JiaGouX 公众号 Harness 系列文章之一（Agent Harness、Memory、Goal、Skills、Personal Harness）
-- [Agent Memory 架构本质](../ch04/497-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构本质](ch03/035-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 

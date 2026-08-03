@@ -9,9 +9,9 @@
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/1071-openai-gpt-realtime-voice-models-qbitai.html)
 - GPT-5.5 实测
-- [Yann Dubois Openai Post Training Interview](ch01/227-openai.html)
+- [Yann Dubois Openai Post Training Interview](ch05/100-ai.html)
 - [Gpt 5 Is Here And Openai Has Some Tips](ch01/877-gpt-5-is-here-and-openai-has-some-tips.html)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/079-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/1476-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
 

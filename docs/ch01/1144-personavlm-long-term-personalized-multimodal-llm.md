@@ -11,11 +11,11 @@
 让模型具备"长期个性化能力"——记忆、推理与对齐三能力协同。
 
 ## 相关实体
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/085-harness.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/085-harness.html)
-- [Two Harness Papers Microsoft Google](../ch05/085-harness.html)
-- [Trace2Skill Trajectory Distillation Agent Skills](../ch04/470-agent-skills.html)
-- [05 11 The Great Memory Panic Of 2026](ch01/1132-the-great-memory-panic-of-2026.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch03/035-agent.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](ch03/035-agent.html)
+- [Two Harness Papers Microsoft Google](ch05/085-harness.html)
+- [Trace2Skill Trajectory Distillation Agent Skills](ch04/341-skill.html)
+- [05 11 The Great Memory Panic Of 2026](ch01/1429-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/personavlm-long-term-personalization.md)
 

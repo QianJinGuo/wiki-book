@@ -93,7 +93,7 @@ OpenAI 面临的两难是：模型的推理能力越强，其逃逸和绕过安�
 
 ## 相关实体链接
 
-- [Hugging Face AI Agent 攻击事件](../ch03/035-agent.html)
+- [Hugging Face AI Agent 攻击事件](ch05/100-ai.html)
 - [AI 对齐](https://github.com/QianJinGuo/wiki/blob/main/concepts/msm-model-spec-midtraining-alignment.md)
 - 长时程任务
 - 沙箱逃逸

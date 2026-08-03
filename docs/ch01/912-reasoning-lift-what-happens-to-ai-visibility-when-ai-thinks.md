@@ -11,11 +11,11 @@
 - 不同 reasoning 模式下引用的域名重叠仅 25.6%，几乎完全不同
 - TOFU 内容在 reasoning 模式下具有新的战略价值：品牌可持续从 Problem 阶段延续到 Selection 阶段
 ## 相关实体
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1105-20.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/100-ai.html)
-- [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1429-0.html)
+- [Npm Supply Chain Compromise Postmortem](ch05/100-ai.html)
+- [Cloudflare Glasswing Mythos Security](ch12/031-mythos.html)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/118-ai-coding.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](ch05/100-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reasoning-lift.md)
 

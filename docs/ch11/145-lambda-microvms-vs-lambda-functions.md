@@ -58,7 +58,7 @@ Lambda Functions 的 SnapStart 可以缓解 Java 等语言的初始化延迟，�
 
 3. **安全扫描平台**：每个扫描任务启动一个临时 MicroVM → 可运行 Docker 容器（完整 Linux capabilities）→ 扫描完成后直接终止，无状态残留。Functions 处理任务调度和结果收集。
 
-这种组合模式与 [AgentCore 架构](../ch04/751-agentcore-harness.html) 中的「编排层 + 执行层」分离的思路一致。
+这种组合模式与 [AgentCore 架构](ch03/035-agent.html) 中的「编排层 + 执行层」分离的思路一致。
 
 ## 实践启示
 
@@ -72,11 +72,11 @@ Lambda Functions 的 SnapStart 可以缓解 Java 等语言的初始化延迟，�
 
 ## 相关实体
 
-- [AgentCore 多Agent系统AWS实现](../ch04/751-agentcore-harness.html)
-- [Backend for Agent 架构](../ch03/035-agent.html)
-- [腾讯 Harness Engineering 探索之旅](../ch05/129-harness-engineering.html)
-- [企业级 Agent 编排](../ch04/595-agent-orchestration.html)
-- [AI 原生企业转型](../ch05/021-ai-native.html)
+- [AgentCore 多Agent系统AWS实现](ch03/035-agent.html)
+- [Backend for Agent 架构](ch03/035-agent.html)
+- [腾讯 Harness Engineering 探索之旅](ch05/129-harness-engineering.html)
+- [企业级 Agent 编排](ch03/035-agent.html)
+- [AI 原生企业转型](ch05/100-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lambda-microvms-vs-lambda-functions全方位深度对比.md)
 

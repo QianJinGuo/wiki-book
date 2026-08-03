@@ -41,7 +41,7 @@ Anthropic 在开发 Reflect 时与 MIT 媒体实验室、波士顿儿童医院�
 
 ## 相关实体
 
-- [Claude Code Dynamic Workflows](../ch09/102-claude-code-dynamic-workflows.html)
+- [Claude Code Dynamic Workflows](ch03/084-claude-code.html)
 - [Anthropic](ch01/1532-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-reflect-4d-ai-fluency-framework-2026.md)

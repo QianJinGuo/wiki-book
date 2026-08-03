@@ -55,7 +55,7 @@ OpenWorker 是 Andrew Ng（吴恩达）团队开源（MIT 许可）的本地优�
 | 运行基础 | 官方强调 Agent Runtime 与安全沙箱 | 本地 Python 服务，当前 shell 使用 LocalExecutor |
 | 观察重点 | 企业级工作台与托管运行 | 桌面 Agent 的模块、协议和源码实现 |
 
-两者共同回答"AI 怎样把任务做完"，基础设施选择不同。 参见 [WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构](../ch05/062-agent-harness.html)。
+两者共同回答"AI 怎样把任务做完"，基础设施选择不同。 参见 [WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构](ch03/035-agent.html)。
 
 ## 试用建议：四类低风险场景 + 边界清楚的任务模板
 
@@ -66,10 +66,10 @@ OpenWorker 是 Andrew Ng（吴恩达）团队开源（MIT 许可）的本地优�
 ## 相关实体
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openworker-desktop-agent-local-first-architecture-ruofei-2026.md)
-- [从 Prompt 到 Graph：一文理解五层 Agent 工程](../ch01/1105-20.html)（同作者姊妹篇：五层框架 → OpenWorker 源码样本）
-- [WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构](../ch05/062-agent-harness.html)（对比对象）
-- [Fable 5 的信号：Agent 开始拼 Runtime](../ch01/475-claude-fable-5.html)（Runtime Contract 工程化拆解）
-- [Harness 之后：状态边界与失败闭环](../ch05/085-harness.html)（同作者可靠性续篇）
+- [从 Prompt 到 Graph：一文理解五层 Agent 工程](ch01/1429-0.html)（同作者姊妹篇：五层框架 → OpenWorker 源码样本）
+- [WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构](ch03/035-agent.html)（对比对象）
+- [Fable 5 的信号：Agent 开始拼 Runtime](ch03/035-agent.html)（Runtime Contract 工程化拆解）
+- [Harness 之后：状态边界与失败闭环](ch05/085-harness.html)（同作者可靠性续篇）
 
 ---
 

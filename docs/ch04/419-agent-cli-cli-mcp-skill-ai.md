@@ -89,8 +89,8 @@ Unix 管道组合（如 `calendar agenda --next-week | grep "张三"`）的核�
 
 ## 与已有 wiki 实体关系
 
-- 补充 [Cli Mcp Skill Architecture Decision Vibecoder](ch04/341-skill.html)：该实体聚焦架构选型决策矩阵，本文聚焦历史演进分析、结构性优势论证和产品设计原则。
-- 关联 [如何为 Agent 设计产品](../ch03/035-agent.html)、[Agent Era Architect Skills Guide](../ch03/076-skills.html)
+- 补充 [Cli Mcp Skill Architecture Decision Vibecoder](ch07/001-mcp.html)：该实体聚焦架构选型决策矩阵，本文聚焦历史演进分析、结构性优势论证和产品设计原则。
+- 关联 [如何为 Agent 设计产品](ch03/035-agent.html)、[Agent Era Architect Skills Guide](ch04/341-skill.html)
 
 ---
 

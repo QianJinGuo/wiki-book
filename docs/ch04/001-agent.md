@@ -114,11 +114,11 @@ AI 原生创业公司每周改进一次自己的操作系统。
 7. **每周进化循环**：后台智能体全天候给外环输送候选项，人决定追哪个——保持学习和改进的系统性节奏。
 
 ## 相关实体
-- [Ai Native Startup Cyberfund Guide](../ch05/021-ai-native.html)
-- [Ai Agent Harness Construction Akshay](../ch01/1168-ai-agent-harness.html)
-- [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/085-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/209-ai-agent.html)
-- [Guide Ai Agents Models Apps Harnesses Mollick](ch04/209-ai-agent.html)
+- [Ai Native Startup Cyberfund Guide](ch05/100-ai.html)
+- [Ai Agent Harness Construction Akshay](ch05/100-ai.html)
+- [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](ch05/085-harness.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/341-skill.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](ch05/100-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
 

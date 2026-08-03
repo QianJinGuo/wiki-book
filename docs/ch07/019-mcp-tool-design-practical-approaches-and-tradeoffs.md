@@ -84,7 +84,7 @@ The article identifies several key dimensions in MCP tool design:
 
 ### 上下文工程：Agent 系统设计的核心约束
 
-MCP 工具设计的根本矛盾在于：**LLM 的上下文窗口是有限且昂贵的资源，但工具系统需要在其中承载尽可能多的语义信息**。AWS 这篇博客的核心贡献不是提出了某个具体的优化技巧，而是将"上下文工程"提升为 Agent 系统设计的显式维度。这与此前 [Hermes Agent](../ch03/102-hermes-agent.html) 和 [Agent Harness Context Management](../ch05/062-agent-harness.html) 中强调的"上下文管理是 Agent 生产力的关键瓶颈"一脉相承。
+MCP 工具设计的根本矛盾在于：**LLM 的上下文窗口是有限且昂贵的资源，但工具系统需要在其中承载尽可能多的语义信息**。AWS 这篇博客的核心贡献不是提出了某个具体的优化技巧，而是将"上下文工程"提升为 Agent 系统设计的显式维度。这与此前 [Hermes Agent](ch03/035-agent.html) 和 [Agent Harness Context Management](ch03/035-agent.html) 中强调的"上下文管理是 Agent 生产力的关键瓶颈"一脉相承。
 
 ### 从"API 透传"到"Agent 封装"的演进路径
 
@@ -92,7 +92,7 @@ MCP 工具设计的根本矛盾在于：**LLM 的上下文窗口是有限且昂�
 
 ### Skills 与 MCP 工具设计的交汇点
 
-Anthropic 的 Skills 系统和 AWS 的 AgentCore Gateway 都体现了同样的懒加载理念——只有在相关时才将工具定义加载到上下文。这与 garden-skills（[Conardli Skills 7K Star Open Source Agent 2026](ch07/037-skills-7k-star.html)）项目中"按需加载 Skill"的设计哲学一致。Skills 生态系统不仅是提示词的集合，更是 MCP 工具设计的客户端实现形式。
+Anthropic 的 Skills 系统和 AWS 的 AgentCore Gateway 都体现了同样的懒加载理念——只有在相关时才将工具定义加载到上下文。这与 garden-skills（[Conardli Skills 7K Star Open Source Agent 2026](ch04/341-skill.html)）项目中"按需加载 Skill"的设计哲学一致。Skills 生态系统不仅是提示词的集合，更是 MCP 工具设计的客户端实现形式。
 
 ### 安全性：被忽视的设计维度
 
@@ -114,11 +114,11 @@ Anthropic 的 Skills 系统和 AWS 的 AgentCore Gateway 都体现了同样的�
 
 ## 相关实体
 
-- [ConardLi Skills 开源项目](ch07/037-skills-7k-star.html)
-- [Hermes Agent 上手](../ch03/102-hermes-agent.html)
-- [Agent Harness Context Management](../ch05/062-agent-harness.html)
+- [ConardLi Skills 开源项目](ch04/341-skill.html)
+- [Hermes Agent 上手](ch03/035-agent.html)
+- [Agent Harness Context Management](ch03/035-agent.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Claude Code /checkup 功能](../ch03/084-claude-code.html)
+- [Claude Code /checkup 功能](ch03/084-claude-code.html)
 - [MCP 协议生态系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mcp-tool-design-practical-approaches-and-tradeoffs.md)

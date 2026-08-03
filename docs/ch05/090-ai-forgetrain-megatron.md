@@ -63,15 +63,15 @@ AI 写代码成本趋近于零 → 没有必要继续做大而全通用框架 �
 **4. 国产算力生态的追赶路径。** 通过 AI 自动化弥补人类工程师数量和经验上的差距，是一个值得关注的思路。但前提是能够建立有效的评测体系，让 AI 知道往哪个方向优化。
 
 ## 相关实体
-- [Ai Coding Agent Memory System](../ch04/400-ai-coding-agent.html)
-- [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/795-deepseek.html)
-- [Gaode Ai Native 7X24 Pipeline Self Healing](ch05/021-ai-native.html)
-- [Karpathy Claude Md Rules](../ch01/426-claude-md.html)
-- [Tmall Ai Coding Practice Guide](ch05/118-ai-coding.html)
+- [Ai Coding Agent Memory System](ch05/100-ai.html)
+- [Deepseek Cost Migration System Layer Kv Cache Harness](ch01/795-deepseek.html)
+- [Gaode Ai Native 7X24 Pipeline Self Healing](ch05/100-ai.html)
+- [Karpathy Claude Md Rules](ch01/1442-claude.html)
+- [Tmall Ai Coding Practice Guide](ch05/100-ai.html)
 
-- [Minimax M3 Frontier Open Source Model](../ch09/072-minimax-m3-frontier.html)
-- [Chromium Ai Coding Development System](../ch09/058-chromium-ai-coding.html)
-- [Loongsuite Pilot Sls Ai Coding Metrics Practice](../ch01/1342-pilot-sls-ai.html)
+- [Minimax M3 Frontier Open Source Model](ch09/072-minimax-m3-frontier.html)
+- [Chromium Ai Coding Development System](ch05/100-ai.html)
+- [Loongsuite Pilot Sls Ai Coding Metrics Practice](ch05/100-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

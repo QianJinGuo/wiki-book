@@ -22,12 +22,12 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 
 ## 相关实体
 - [Semis Memo: Supply Chain Inheritance](ch01/876-semis-memo-supply-chain-inheritance.html)
-- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12/037-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/100-ai.html)
-- [Semis Memo: Supply Chain Inheritance](../ch05/100-ai.html)
-- [semgrep intercom php supply chain](../ch12/120-semgrep-intercom-php-supply-chain.html)
+- [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch05/100-ai.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](ch05/100-ai.html)
+- [Semis Memo: Supply Chain Inheritance](ch05/100-ai.html)
+- [semgrep intercom php supply chain](ch12/120-semgrep-intercom-php-supply-chain.html)
 
-- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch05/100-ai.html)
+- [xz-utils backdoor 2 years on — maintainer trust hijack patte](ch05/100-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

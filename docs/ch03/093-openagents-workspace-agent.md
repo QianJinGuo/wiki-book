@@ -97,7 +97,7 @@ OpenAgents 的架构遵循了"平台 vs 工具"的设计哲学：
 - **浏览器优先**：Workspace 的核心交互界面是浏览器，降低了使用门槛
 - **开源优先**：Apache 2.0 许可证，社区驱动，不绑定任何供应商
 
-这种设计理念与 [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html) 中描述的 Agent Harness 模式高度契合——OpenAgents 本质上是一个"协作层 Harness"。^[inferred]
+这种设计理念与 [Code As Agent Harness Survey](ch09/061-code-as-agent-harness.html) 中描述的 Agent Harness 模式高度契合——OpenAgents 本质上是一个"协作层 Harness"。^[inferred]
 
 ### 共享浏览器的技术挑战
 
@@ -110,11 +110,11 @@ OpenAgents 的架构遵循了"平台 vs 工具"的设计哲学：
 
 这些挑战的解决程度将决定 OpenAgents 在实际场景中的可用性。^[inferred]
 
-### 与 [Hermes Agent V014 Architecture Shugex](ch03/102-hermes-agent.html) 的关系
+### 与 [Hermes Agent V014 Architecture Shugex](ch03/035-agent.html) 的关系
 
 Hermes Agent 已经在 OpenAgents 的支持列表中。这意味着 Hermes Agent 用户可以通过 OpenAgents Workspace 与其他 Agent（如 Claude Code、Codex CLI）进行协作。这种互操作性对于 Agent 生态的健康发展至关重要。^[inferred]
 
-### 与 [Building Web Search Enabled Agents With Strands And Exa](../ch04/550-building-web-search-enabled-agents-with-strands-and-exa.html) 的互补
+### 与 [Building Web Search Enabled Agents With Strands And Exa](ch04/550-building-web-search-enabled-agents-with-strands-and-exa.html) 的互补
 
 Web Search Agent 可以通过 OpenAgents 的 Mod 系统接入 Workspace，将搜索能力作为共享资源提供给其他 Agent。这种模式下，一个 Agent 专注于搜索，其他 Agent 专注于编码或分析，各司其职。^[inferred]
 
@@ -140,11 +140,11 @@ OpenAgents 的 Launch Partners 包括 Z.AI（智谱）、FastGPT、MiniMax 等�
 
 ## 相关实体
 
-- [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html)
-- [Hermes Agent V014 Architecture Shugex](ch03/102-hermes-agent.html)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04/550-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Code As Agent Harness Survey](ch09/061-code-as-agent-harness.html)
+- [Hermes Agent V014 Architecture Shugex](ch03/035-agent.html)
+- [Building Web Search Enabled Agents With Strands And Exa](ch04/550-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Claude Code Large Codebase Harness Configuration](ch03/084-claude-code.html)
-- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch03/035-agent.html)
+- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch05/100-ai.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openagents-workspace-multi-agent-collaboration-itech.md)
 
 ---

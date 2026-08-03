@@ -23,7 +23,7 @@
 ### 攻击机制与供应链投毒
 攻击的工程化程度体现在三个层面。第一是信任伪装：typosquatting 加 model card 逐字复制，利用 AI 社区对 OpenAI 品牌的"信任溢出"——用户看到熟悉的名字与描述即默认跳过安全审查，按 README 指引运行 `start.bat`（Windows）或 `loader.py`（Linux/macOS），恶意代码便借"配置依赖并启动模型"的合法外衣执行。第二是弹性 C2 设计：借助 JSON Keeper 这类公共粘贴服务作 dead drop resolver，无需修改仓库即可随时切换 payload URL。第三是多阶段降级投递：loader → PowerShell → 批处理 → 计划任务 → 木马，每一跳都缩小暴露面、抬高分析成本；"重启前即销毁、仅作一次性 SYSTEM 上下文启动器"的设计说明攻击者意在单次会话内完成窃取后消失。
 
-更值得警惕的是攻击的横向延伸：HiddenLayer 发现 `api[.]eth-fastscan[.]org` 同时服务一个回连 `welovechinatown[.]info` C2 的 Windows 可执行文件，该 C2 此前用于恶意 npm 包 `trevlo` 分发 ValleyRAT。`trevlo` 的 postinstall 钩子静默执行混淆 JS 加载器，经 Base64 PowerShell 命令拉取第二阶段脚本，最终运行具备隐藏窗口、Zone Identifier 移除、进程脱离等规避能力的 Winos 4.0 stager。这意味着针对开源 AI 生态的攻击与 npm 供应链投毒、以及被归因于 Silver Fox 的 ValleyRAT 活动共享基础设施——HiddenLayer 判断这些行动"可能互有关联，很可能是针对开源生态系统的更大规模供应链行动的一部分"。这与 [npm 供应链攻击](../ch05/100-ai.html) 等既有案例在 TTP 上高度同构。
+更值得警惕的是攻击的横向延伸：HiddenLayer 发现 `api[.]eth-fastscan[.]org` 同时服务一个回连 `welovechinatown[.]info` C2 的 Windows 可执行文件，该 C2 此前用于恶意 npm 包 `trevlo` 分发 ValleyRAT。`trevlo` 的 postinstall 钩子静默执行混淆 JS 加载器，经 Base64 PowerShell 命令拉取第二阶段脚本，最终运行具备隐藏窗口、Zone Identifier 移除、进程脱离等规避能力的 Winos 4.0 stager。这意味着针对开源 AI 生态的攻击与 npm 供应链投毒、以及被归因于 Silver Fox 的 ValleyRAT 活动共享基础设施——HiddenLayer 判断这些行动"可能互有关联，很可能是针对开源生态系统的更大规模供应链行动的一部分"。这与 [npm 供应链攻击](ch05/100-ai.html) 等既有案例在 TTP 上高度同构。
 
 ### 趋势排名的信任幻觉
 `Open-OSS/privacy-filter` 上线 18 小时内登上 Trending 榜首，是本事件中最具讽刺意味的细节。Trending 的本意是帮用户发现高质量、社区活跃的模型，攻击者却把这个"发现机制"变成了"信任背书机制"：一旦仓库出现在榜首，用户会本能地将"热门"等同于"安全"，从而放弃应有的审查流程。HiddenLayer 明确指出其下载量与点赞数"疑似被人工刷量"——排名可能并非自然传播的结果，而是攻击者刻意制造的可信度道具。这暴露出平台层面的结构性盲区：Hugging Face 的开放上传机制既缺乏对仓库名与官方项目相似性的自动检测，也缺乏对 `loader.py` 这类可疑脚本行为的自动告警，等于把供应链验证责任完全转嫁给了终端用户。
@@ -44,7 +44,7 @@
 
 ## 相关实体
 - [主题导航：网络安全与隐私](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
-- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/604-ml-intern-huggingface-autonomous-ml-agent.html)
+- [ml-intern — Hugging Face 自主 ML 工程代理](ch04/604-ml-intern-huggingface-autonomous-ml-agent.html)
 - [LLM Share 恶意分发页面](ch01/1392-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
 - [LLM raiders and how to repel them](ch01/1036-llm-raiders-and-how-to-repel-them.html)
 

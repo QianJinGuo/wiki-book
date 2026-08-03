@@ -48,8 +48,8 @@ LLM 根因分析的质量上限取决于 Agent 能触达多少运维数据源：
 
 - 与 Agent 推理优化、模型部署、成本控制等领域密切相关
 - 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
-- 参见 [Zenjoy AIOps Agent on EKS](../ch11/310-bedrock.html) 的落地实践
-- 参见 [MCP Agent 外部生态集成](../ch03/035-agent.html) 的工具链集成模式
+- 参见 [Zenjoy AIOps Agent on EKS](ch05/100-ai.html) 的落地实践
+- 参见 [MCP Agent 外部生态集成](ch07/001-mcp.html) 的工具链集成模式
 
 ---
 

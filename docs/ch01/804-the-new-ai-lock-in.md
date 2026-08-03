@@ -51,10 +51,10 @@ Model Context Protocol 是有用的：它把模型连接工具与数据源的成
 ## 相关实体
 
 - [Model Context Protocol (MCP)](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
-- [企业级 Agent 编排](../ch04/595-agent-orchestration.html)
+- [企业级 Agent 编排](ch03/035-agent.html)
 - [Claude Cowork](ch01/805-claude-cowork.html)
-- [LangGraph](../ch04/262-langgraph.html)
-- [Agent 编排](../ch04/595-agent-orchestration.html)
+- [LangGraph](ch04/262-langgraph.html)
+- [Agent 编排](ch04/595-agent-orchestration.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-lock.md)
 

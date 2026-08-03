@@ -27,23 +27,23 @@ Benchmark 刷分的本质是一个委托代理问题（Principal-Agent Problem�
 **Prompt 工程师和架构师**：理解 benchmark 分数的局限性有助于避免「过度提示词工程」。当模型实际效果与 benchmark 预期不符时，首先排查的是上下文长度、硬件配置和采样策略，而非 prompt 本身。
 > ai agent platforms topic map（已删除）
 
-- [Claude Opus 4.7 发布分析](ch01/548-claude-opus-4-7.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/1532-anthropic.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/775-claude-managed-agents.html)
+- [Claude Opus 4.7 发布分析](ch01/1442-claude.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch05/100-ai.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch03/035-agent.html)
 
 ## 相关实体
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/085-harness.html)
+- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch05/100-ai.html)
 
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/085-harness.html)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/102-hermes-agent.html)
-- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/085-harness.html)
-- [你不知道的 Agent：原理、架构与工程实践](../ch03/035-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/501-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/075-agentic.html)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/129-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/247-openclaw.html)
-- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/129-harness-engineering.html)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/100-ai.html)
+- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](ch03/035-agent.html)
+- [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/085-harness.html)
+- [你不知道的 Agent：原理、架构与工程实践](ch03/035-agent.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch03/035-agent.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch03/035-agent.html)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/129-harness-engineering.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch11/247-openclaw.html)
+- [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch05/100-ai.html)
 
 ---
 

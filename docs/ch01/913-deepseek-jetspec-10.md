@@ -56,9 +56,9 @@ DSpark 和 JetSpec 的同期出现不是巧合。它们共同标志着大模型�
 
 ## 相关实体
 
-- [Token 不经济](../ch12/003-token.html)
+- [Token 不经济](ch12/003-token.html)
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [DeepSeek V3 分析](ch01/1408-moe-architecture.html)
+- [DeepSeek V3 分析](ch01/1084-deepseek-v3-moe.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek点燃大模型效率之争阶跃火速接棒jetspec让大模型解码速度最高提升近10倍.md)
 

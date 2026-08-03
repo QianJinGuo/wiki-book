@@ -70,7 +70,7 @@ Brown 以 GPT-5.5 为例：发布初期基准分数与 GPT-5.4 相比提升有�
 
 - OneReason — 快手在推荐领域验证了 test-time compute scaling 的价值
 - ARC-AGI — 已尝试衡量模型分数与运行成本关系
-- [Claude Code 深度解析](../ch03/084-claude-code.html) — agentic 系统的性能—成本权衡
+- [Claude Code 深度解析](ch03/084-claude-code.html) — agentic 系统的性能—成本权衡
 - AI Safety Evaluation — 安全评估方法论
 
 ## 结论

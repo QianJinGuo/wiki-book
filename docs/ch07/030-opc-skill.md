@@ -105,8 +105,8 @@ OPC（One Person Company）模式的核心理念是让小型团队拥有端到�
 
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent Harness Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
-- [面向 Agent 的后端设计](../ch03/035-agent.html)
-- [企业 Agent 编排](../ch04/595-agent-orchestration.html)
+- [面向 Agent 的后端设计](ch03/035-agent.html)
+- [企业 Agent 编排](ch03/035-agent.html)
 
 ## 来源
 

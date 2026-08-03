@@ -51,7 +51,7 @@ SkillScan 针对两种典型业务场景提供定制化方案：
 
 ### 与 Agent Skill 工程体系的协同
 
-SkillScan 与 [Agent Skill 设计模式](ch04/680-agent-skill.html) 和 [Hermes Agent 技能设计分析](../ch01/524-hermes-agent-skill.html) 形成了"设计—部署—安全"的完整闭环。具体来说：
+SkillScan 与 [Agent Skill 设计模式](ch04/341-skill.html) 和 [Hermes Agent 技能设计分析](ch04/341-skill.html) 形成了"设计—部署—安全"的完整闭环。具体来说：
 
 - **设计阶段**：Agent Skill 设计模式关注技能的结构规范、接口定义和复用模式
 - **部署阶段**：Agent Harness 架构提供技能的执行环境和生命周期管理
@@ -90,13 +90,13 @@ SkillScan 的供应链风险检测涵盖许可证合规、已知 CVE 漏洞和�
 
 ## 相关实体
 
-- [Agent Skill 设计模式](ch04/680-agent-skill.html)
-- [Hermes Agent 技能设计分析](../ch01/524-hermes-agent-skill.html)
-- [Agent Harness 架构](../ch05/062-agent-harness.html)
-- [SkillScan 字节跳动版](ch04/680-agent-skill.html)
-- [SkillSieve Agent 技能安全](ch04/534-skillsieve-agent-skill.html)
-- [Claude Code 安全审查偏见分析](../ch03/084-claude-code.html)
-- [Claude Code 遥测安全争议](../ch01/479-anthropic-claude-code.html)
+- [Agent Skill 设计模式](ch04/341-skill.html)
+- [Hermes Agent 技能设计分析](ch04/341-skill.html)
+- [Agent Harness 架构](ch03/035-agent.html)
+- [SkillScan 字节跳动版](ch04/341-skill.html)
+- [SkillSieve Agent 技能安全](ch04/341-skill.html)
+- [Claude Code 安全审查偏见分析](ch05/100-ai.html)
+- [Claude Code 遥测安全争议](ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文了解skillscan-智能体技能安全扫描最佳实践.md)
 

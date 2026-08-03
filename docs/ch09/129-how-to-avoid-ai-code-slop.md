@@ -8,11 +8,11 @@
 - 来源：eng-leadership
 - 评分：v=7 × c=8
 ## 相关实体
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/400-ai-coding-agent.html)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/656-how-claude-code-works-in-large-codebases-best-practices-and.html)
-- [Low Code Api Integration](../ch03/080-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
-- [How_Claude_Code_Works_In_Large_Codebases](../ch01/1442-claude.html)
-- [Karpathy Claude Md Rules](../ch01/426-claude-md.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](ch05/100-ai.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](ch03/084-claude-code.html)
+- [Low Code Api Integration](ch03/080-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
+- [How_Claude_Code_Works_In_Large_Codebases](ch01/1442-claude.html)
+- [Karpathy Claude Md Rules](ch01/1442-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-avoid-ai-code-slop.md)
 

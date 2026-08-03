@@ -17,12 +17,12 @@ type: entity
 # The distillation panic
 
 ## 相关实体
-- [05 11 The Great Memory Panic Of 2026](ch01/1132-the-great-memory-panic-of-2026.html)
+- [05 11 The Great Memory Panic Of 2026](ch01/1429-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-distillation-panic.md)
 
 - [Qwen Image Flash Beyond Objective Design](ch01/1433-qwen-image-flash-beyond-objective-design-few-step-distill.html)
-- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](../ch05/100-ai.html)
+- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch05/100-ai.html)
 - [Interconnects The Inevitable Need For An Open Model Consortium](ch01/1391-the-inevitable-need-for-an-open-model-consortium.html)
 ## 深度分析
 

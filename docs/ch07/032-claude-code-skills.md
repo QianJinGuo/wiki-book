@@ -6,7 +6,7 @@
 
 # Claude Code Skills 实战指南 — 发现机制、编写与安全
 
-> 小 G (JavaGuide) 对 Claude Code Skills 的深度技术解析。与 [Claude Code Skills/MCP/Rules 源码分析](ch07/007-claude-code-skills-mcp-rules.html) 互补——该实体聚焦源码层实现，本实体聚焦用户层的发现机制、SKILL.md 编写、执行流程与安全限制。
+> 小 G (JavaGuide) 对 Claude Code Skills 的深度技术解析。与 [Claude Code Skills/MCP/Rules 源码分析](ch07/032-claude-code-skills.html) 互补——该实体聚焦源码层实现，本实体聚焦用户层的发现机制、SKILL.md 编写、执行流程与安全限制。
 
 ## Skills 的核心设计理念
 
@@ -108,10 +108,10 @@ MCP 来源的 Skill 跳过内嵌 shell 执行是一个合理的安全设计，�
 
 ## 相关实体
 
-- [Claude Code Skills/MCP/Rules 源码分析](ch07/007-claude-code-skills-mcp-rules.html) — 互补：该实体源码层（Rewrites/Loader/评分），本实体用户层（frontmatter/发现/安全）
-- [Claude Code Skill Writing 指南](../ch03/084-claude-code.html) — 互补：前者侧重编写方法，本实体侧重发现机制和执行原理
-- [Hermes Skill System](ch07/018-hermes-skill.html)
-- [Claude Code 系统工程指南](../ch03/084-claude-code.html)
+- [Claude Code Skills/MCP/Rules 源码分析](ch07/032-claude-code-skills.html) — 互补：该实体源码层（Rewrites/Loader/评分），本实体用户层（frontmatter/发现/安全）
+- [Claude Code Skill Writing 指南](ch04/341-skill.html) — 互补：前者侧重编写方法，本实体侧重发现机制和执行原理
+- [Hermes Skill System](ch04/341-skill.html)
+- [Claude Code 系统工程指南](ch03/084-claude-code.html)
 
 ## 参考
 

@@ -65,7 +65,7 @@ Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影�
 
 ### Serverless 架构的成本经济学
 
-文章推荐的 Lambda + API Gateway + S3 + CloudFront 组合，本质上是将"空闲成本"降为零。Lambda 按调用计费，无请求时完全不产生费用；Bedrock API 本身也是按 token 计费。 结合 [Bedrock Serverless 架构案例](ch11/306-amazon-bedrock.html) 的经验，这种模式在日均处理量波动大或不可预测的场景下（农业季节性采集、物流大促期间）具有明显优势。对于日均 1.2M 张图像的农业场景，$200/season 的成本远低于自建 GPU 集群的固定支出。
+文章推荐的 Lambda + API Gateway + S3 + CloudFront 组合，本质上是将"空闲成本"降为零。Lambda 按调用计费，无请求时完全不产生费用；Bedrock API 本身也是按 token 计费。 结合 [Bedrock Serverless 架构案例](ch11/310-bedrock.html) 的经验，这种模式在日均处理量波动大或不可预测的场景下（农业季节性采集、物流大促期间）具有明显优势。对于日均 1.2M 张图像的农业场景，$200/season 的成本远低于自建 GPU 集群的固定支出。
 
 ### 三行业用例的泛化性分析
 
@@ -87,7 +87,7 @@ Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影�
 
 ### 生产部署优先考虑 Serverless 弹性
 
-对于日均处理量不可预测的场景（农业季节性采集、电商大促、突发质检任务），Lambda 的自动扩缩容 + Bedrock 按调用计费是最优成本结构。 当日均调用量超过约 50K 张图像时，可评估 Bedrock Provisioned Throughput 的预留容量方案，将边际成本降低 30-50%。[详细架构参考](ch11/306-amazon-bedrock.html)。
+对于日均处理量不可预测的场景（农业季节性采集、电商大促、突发质检任务），Lambda 的自动扩缩容 + Bedrock 按调用计费是最优成本结构。 当日均调用量超过约 50K 张图像时，可评估 Bedrock Provisioned Throughput 的预留容量方案，将边际成本降低 30-50%。[详细架构参考](ch11/310-bedrock.html)。
 
 ### 坐标转换是必须处理的实现细节
 

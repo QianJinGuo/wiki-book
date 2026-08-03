@@ -37,7 +37,7 @@ NDS（Neural Dynamical Systems）方法利用神经网络嵌入连续时间微�
 
 ## 与现有 AI 硬件的对比
 
-传统 [AI 芯片架构](../ch05/100-ai.html) 依赖冯·诺依曼架构分离存储与计算，数据搬运占总延迟的四分之一以上。PCM 忆阻器通过存内计算（CIM）从根本上消除了存储墙问题，在 NDS 这类需要反复调用神经网络的场景下优势显著。
+传统 [AI 芯片架构](ch05/100-ai.html) 依赖冯·诺依曼架构分离存储与计算，数据搬运占总延迟的四分之一以上。PCM 忆阻器通过存内计算（CIM）从根本上消除了存储墙问题，在 NDS 这类需要反复调用神经网络的场景下优势显著。
 
 相比纯数字电路 ASIC（如 TPU/NPU），PCM 方案同时承担存储和计算功能，芯片面积更小、功耗更低，但牺牲了通用性和精度（8 级量化对多场景泛化的影响尚未验证）。
 
@@ -49,8 +49,8 @@ NDS（Neural Dynamical Systems）方法利用神经网络嵌入连续时间微�
 
 ## 相关实体
 
-- [AI芯片架构](../ch05/100-ai.html)
-- [AI硬件寒武纪](../ch05/100-ai.html)
+- [AI芯片架构](ch05/100-ai.html)
+- [AI硬件寒武纪](ch05/100-ai.html)
 - [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pku-neural-dynamical-system-pcm-memristor-chip-science-2026.md)

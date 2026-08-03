@@ -59,9 +59,9 @@ OpenAI 已在 2026 年 2 月聘请 Instagram 前明星合作负责人 Charles Po
 - 即便无法阻止技术扩散，通过商标等工具建立Consent框架，仍能在商业层面保持控制力
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/1071-openai-gpt-realtime-voice-models-qbitai.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](ch01/039-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch05/100-ai.html)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/079-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](ch05/100-ai.html)
+- [Ai Voice Cloning The Technology Behind It Whos Building It A](ch05/100-ai.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/1476-llm.html)
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/091-build-live-translation-apps-with-gpt-realtime-translate.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-quietly-bought-voice-cloning-star.md)

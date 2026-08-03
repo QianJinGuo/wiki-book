@@ -16,9 +16,9 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 
 ## 相关实体
 - [Gpt Image 2完全指南](ch01/1258-gpt-image-2.html)
-- [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](ch01/1258-gpt-image-2.html)
-- [Skill Rag Tsinghua Sra](../ch04/341-skill.html)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/079-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](ch04/341-skill.html)
+- [Skill Rag Tsinghua Sra](ch04/341-skill.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/1476-llm.html)
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/091-build-live-translation-apps-with-gpt-realtime-translate.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-image-2神级提示词分享.md)
