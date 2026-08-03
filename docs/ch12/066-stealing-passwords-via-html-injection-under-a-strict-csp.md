@@ -2,81 +2,11 @@
 
 ## Ch12.066 Stealing Passwords via HTML Injection Under a Strict CSP
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/afine-csp-html-injection-password-exfiltration.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/afine-csp-html-injection-password-exfiltration.md`
 
 # Stealing Passwords via HTML Injection Under a Strict CSP
 
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Stealing Passwords via HTML …"))
-    概念导图
-    深度分析
-      CSP 的安全边界被重新定义
-      密码管理器的设计缺陷
-      Referer 策略规范的实现不一致
-      对 Web 安全评估的影响
-    实践启示
-    相关实体
-```
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Stealing Passwords via HTML"))
-    攻击原理三要素
-    浏览器差异对比
-    完整攻击链 单次点击
-    实际代码演示
-    CSP 的安全边界被重新定义
-    密码管理器的设计缺陷
-    Referer 策略规范的实现不一致
-    对 Web 安全评估的影响
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 AFINE Security Research 于 2026 年 6 月披露了一种在**严格 CSP（Content-Security-Policy）**下通过 HTML 注入窃取浏览器保存密码的攻击技术。核心发现：即使 CSP 设置为 `script-src 'none'`、`default-src 'none'`（理论上阻止一切脚本执行），攻击者仍可通过**Chrome 密码自动填充**机制 + **Referer 头泄露**实现密码窃取，全程无需 JavaScript。攻击链为：HTML 注入伪造表单 → Chrome 自动填充密码 → `<meta>` 标签设置 `unsafe-url` referrer 策略 → `<meta>` 重定向到攻击者域名 → Referer 头携带明文密码。
 
@@ -156,6 +86,10 @@ W3C 规范定义了 referrer 策略的评估顺序：`noreferrer` link type → 
 
 - [Agent 安全攻防](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

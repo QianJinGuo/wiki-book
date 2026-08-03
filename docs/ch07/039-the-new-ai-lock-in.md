@@ -20,10 +20,10 @@
 Claude Code、Codex、Gemini 和本地模型之间的切换成本正在下降。API 层的抽象持续改善，开放标准逐步建立。这一层是供应商最喜欢宣传的战场——因为它最容易替代，也最不需要真正的锁定。
 **第二层：编排层（Orchestration Layer，核心锁定点）**
 LangGraph 本身是中性工具，但编排逻辑会积累粘性。当 Klarna、Replit、Elastic、Ally 等企业在 LangGraph 上投入一年时间构建 agent 行为、评估、恢复逻辑和可观测性追踪后，它们不会因为竞品发布更快/更便宜的模型就拆除这套系统。关键是：**模型容易换，编排逻辑不容易换**。
-这个观察与 [Langgraph State Machine](../ch04/261-langgraph.html) 的分析形成呼应——LangGraph 的状态机模型让工作流逻辑得以持久化，同时也让这些逻辑成为替换成本最高的层面。
+这个观察与 [Langgraph State Machine](../ch04/262-langgraph.html) 的分析形成呼应——LangGraph 的状态机模型让工作流逻辑得以持久化，同时也让这些逻辑成为替换成本最高的层面。
 **第三层：工作流表面（Workflow Surface，Anthropic 的主战场）**
 Anthropic 的 Claude Cowork 战略真正发力的地方是管理平面：私有插件市场、per-user 配置、预构建 HR/金融/投行/设计 agents。企业 IT 不希望 400 个随机 agents 接入合同系统、HR 数据和客户记录——因此**围绕 agent 的管理平面成为产品本身**。
-这与 [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/090-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) 中关于「管理表面成为产品」的论述高度一致。两者都指向同一个结论：在 agent 时代，**控制平面的所有权等于生态锁定的所有权**。
+这与 [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) 中关于「管理表面成为产品」的论述高度一致。两者都指向同一个结论：在 agent 时代，**控制平面的所有权等于生态锁定的所有权**。
 **第四层：服务层（Services Layer，讽刺的价值迁移）**
 AI 价值正在向实施层面迁移。OpenAI、Anthropic、PwC、Accenture、Deloitte 都在训练咨询大军做工作流映射、系统连接和流程重新设计。PwC 与 Anthropic 声称合作将网络安全事件响应从小时级缩短到分钟级，承保周期从 10 周缩短到 10 天——**但这些收益来自数万名了解如何重新设计周围流程的顾问，而非模型本身**。
 
@@ -88,7 +88,7 @@ MIT NANDA 报告显示 95% 企业 genAI pilot 未能交付可衡量的业务影�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-ai-lock-in.md)
 
 ## ## 相关实体
-- [柚漫剧 AI 全流程提效拆解](../ch05/097-ai.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/100-ai.html)
 
 ---
 

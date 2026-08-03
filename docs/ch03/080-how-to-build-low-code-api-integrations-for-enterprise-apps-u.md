@@ -161,10 +161,10 @@ OIN + API Integration Actions 的组合创造了：
    - 错误处理、条件分支等能力要内置，而非要求用户自己实现
 ## 相关实体
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/028-build-an-enterprise-observability-solution-for-amazon-quick.html)
-- [Hs.Playerzero Ai Code Review](../ch05/097-ai.html)
-- [Code Simulation For Enterprise Engineering Playerz](../ch01/108-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/965-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/1100-20.html)
+- [Hs.Playerzero Ai Code Review](../ch05/100-ai.html)
+- [Code Simulation For Enterprise Engineering Playerz](../ch01/063-code-simulation-for-enterprise-engineering-playerzero.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/968-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/1105-20.html)
 
 ---
 

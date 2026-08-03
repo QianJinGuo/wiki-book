@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **23 篇**实体，按深度递增排列。
+> 本章收录 **24 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 7 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 10 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
@@ -2327,7 +2327,30 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.023 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
+## Ch19.023 阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式
+
+> 📊 Level ⭐⭐⭐⭐ | 2.6KB | `entities/qwen-skill-self-play-hyman-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-skill-self-play-hyman-2026.md)
+
+一句话讲清楚👉🏻 阿里 Qwen 大模型应用团队开源 Skill Self-Play （ Skill-SP ）：用会进化的 skill 库同时管「出什么题」和「怎么自动判对错」，让自博弈既能覆盖开放任务，又能挡住假题；工具调用最高抬 42.9 分，逻辑推理上也能把几乎起不来的弱模型拉回正轨。
+
+## 来源
+
+- 原文: [阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-skill-self-play-hyman-2026.md)
+- 原始链接: : https://mp.weixin.qq.com/s/czQ1AnCD5qwswhKmutLGgQ
+
+## SESA：搜索场景的 Self-Play + Skill 进化（Supplementary）
+
+**SESA（Self-Evolving Skill-Augmented Agent）** ——《Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember》（arXiv 2607.29468，第一方作者 XHS 发布，2026-08-03）将 Skill-SP 同源范式落地到开放域/多跳问答搜索场景：Proposer 出题 → Solver 解题 → 将**有价值的失败轨迹提炼成可复用的 Skill Card 存入持续更新的 Skill Bank**，形成「失败 → 技能 → 能力提升 → 更难问题 → 新失败」的闭环自进化。
+
+**与 Skill-SP 的机制同源**：两者核心都是用进化的 skill 库驱动自博弈——Qwen Skill-SP 用 skill 库同时管「出题」和「判对错」（覆盖开放任务+挡假题），SESA 用 Skill Bank 沉淀失败经验供下一轮进化。差异在场景与证据：SESA 给出 7 个开放域/多跳问答 Benchmark 上相比 Search Self-Play 平均 +1.2~3.2 点的量化提升。
+
+**关键消融证据（不可替代维度）**：SESA 推理时**关闭 Skill Bank** 后模型仍保留大部分能力增益——说明技能不仅是提示词注入，而是真正参与并影响了模型训练，为「skill 库驱动自博弈」路线提供了训练级（而非 prompt 级）增益的直接证据。
+
+---
+
+## Ch19.024 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.4KB | `entities/tangjie-zhipu-asi-internal-letter-2026.md`
 

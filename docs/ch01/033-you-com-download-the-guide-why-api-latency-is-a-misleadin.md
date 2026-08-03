@@ -51,7 +51,7 @@ p50 延迟回答的是"一半请求多快"，而生产体验由"最差的那些�
 
 ## 相关实体
 
-- [Inngest: AI in Production 2026 基准报告](ch01/788-inngest-ai-in-production-the-2026-benchmark-report.html) —— 同样聚焦"生产环境与基准测试的差距"的行业报告
+- [Inngest: AI in Production 2026 基准报告](ch01/789-inngest-ai-in-production-the-2026-benchmark-report.html) —— 同样聚焦"生产环境与基准测试的差距"的行业报告
 - [从榜单崇拜到自建评测](https://github.com/QianJinGuo/wiki/blob/main/entities/model-evaluation-from-benchmark-worship-to-self-built-evals.md) —— 基准崇拜问题的另一视角：自建评测取代榜单
 - [LLM 基准测试全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md) —— 理解基准测试本身的局限与适用边界
 - [模型推理对比](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-inference-comparison.md) —— 推理性能对比时容易踩中的方法论陷阱

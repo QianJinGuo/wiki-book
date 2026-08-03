@@ -83,7 +83,7 @@ AnySearch 的"Agent 原生"不仅体现在算法层面，更体现在工程层�
 ## 相关实体
 
 - [Agent Harness Dingtalk Recruitment](../ch05/062-agent-harness.html) — 企业级 Agent Harness，可将 AnySearch 作为搜索工具集成
-- [Lambda Microvms Vs Bedrock Agentcore Ai Agent Comparison](../ch11/096-lambda-microvms-vs-bedrock-agentcore-ai-agent.html) — Agent 基础设施对比，搜索是其中关键组件
+- [Lambda Microvms Vs Bedrock Agentcore Ai Agent Comparison](../ch11/097-lambda-microvms-vs-bedrock-agentcore-ai-agent.html) — Agent 基础设施对比，搜索是其中关键组件
 - [AnySearch 原始报道](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anysearch-agent-search-product-hunt-2026.md) — AnySearch 的产品管线与接入方式
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架中的信息获取层设计
 

@@ -89,9 +89,9 @@ OpenAI 的 auto 模式也做模型路由，但规则不透明且偏向成本优�
 ## 相关实体
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](ch11/103-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](ch11/104-netflix-nebula-archrules-java-archunit.html)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
-- [High Throughput Graph Abstraction At Netflix](ch11/114-high-throughput-graph-abstraction-at-netflix-part-i.html)
+- [High Throughput Graph Abstraction At Netflix](ch11/115-high-throughput-graph-abstraction-at-netflix-part-i.html)
 
 ## 相关引用
 

@@ -8,7 +8,7 @@
 
 王云鹤（华为诺亚方舟实验室）提出 **Agent = Models + Harness** 的定义框架，其中 Models 特指多模型协作而非单一 Base Model。这一定义直接回应了 Agent 概念长期缺乏清晰边界的问题。
 
-Harness 在此语境下指围绕模型的所有高价值元素——包括 [prompt 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)、RAG（检索增强生成）、tools（工具调用）、memory（记忆）等——联动形成的有机系统。王云鹤强调，Harness 不会消亡：RAG 不是在消失而是在升级——当 RAG 加上 prompt、工具调用、知识后，它演变为 [skills](ch05/089-thin-harness-fat-skills-ai.html) 的核心组件。Harness 元素始终存在，并随模型能力和算法创新不断进化。
+Harness 在此语境下指围绕模型的所有高价值元素——包括 [prompt 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)、RAG（检索增强生成）、tools（工具调用）、memory（记忆）等——联动形成的有机系统。王云鹤强调，Harness 不会消亡：RAG 不是在消失而是在升级——当 RAG 加上 prompt、工具调用、知识后，它演变为 [skills](ch05/092-thin-harness-fat-skills-ai.html) 的核心组件。Harness 元素始终存在，并随模型能力和算法创新不断进化。
 
 ## 国内模型格局：七国八制与异构竞争
 
@@ -19,7 +19,7 @@ Harness 在此语境下指围绕模型的所有高价值元素——包括 [prom
 - **长序列处理**：长上下文窗口模型各有千秋
 - **价格分层**：从开源免费到商业 API 定价差异悬殊
 
-这种异构性格局意味着没有单一基座模型能垄断所有场景。值得注意的是，Benchmark 测试分数与具体任务表现之间的关联度可能很低——典型案例是 GPT 因过度安全校准而在量化交易任务中失利，而 [DeepSeek](../ch01/436-deepseek-v4.html) 和通义千问反而表现优异。
+这种异构性格局意味着没有单一基座模型能垄断所有场景。值得注意的是，Benchmark 测试分数与具体任务表现之间的关联度可能很低——典型案例是 GPT 因过度安全校准而在量化交易任务中失利，而 [DeepSeek](../ch01/435-deepseek-v4.html) 和通义千问反而表现优异。
 
 Claude Code 的内部实现印证了多模型路线的有效性：通过调用 opus、sonnet、haiku 等多款模型实现综合最优效果。
 
@@ -53,7 +53,7 @@ Claude Code 内部通过调用 opus、sonnet、haiku 等多款模型实现综合
 
 ## Harness Engineering：形式化优化框架
 
-王云鹤将 [Harness 工程](ch05/126-harness-engineering.html) 形式化为一个优化问题：
+王云鹤将 [Harness 工程](ch05/129-harness-engineering.html) 形式化为一个优化问题：
 
 **Agent 价值范式** = 任务价值 × 成功率 × Token 性价比（Intelligence/Token）
 
@@ -153,12 +153,12 @@ Model Parameters 与 Harness Parameters 的联合优化代表着一个明确的�
 - [r7] Trivedi, Prashant, et al. "Align-Pro." AAAI 2025.
 
 ## 相关实体
-- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活 V2](ch05/115-ai-coding.html)
+- [Ai Coding 入门指南 如何更好地让Ai真正帮你干活 V2](ch05/118-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wangyunhe-harness-optimization-agentsoul.md)
 
-- [Prompt Context Harness Three Evolutions Tencent](ch05/017-harness.html)
-- [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](ch05/017-harness.html)
+- [Prompt Context Harness Three Evolutions Tencent](ch05/085-harness.html)
+- [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](ch05/085-harness.html)
 - [Agent Tools Research](../ch03/035-agent.html)
 
 ---

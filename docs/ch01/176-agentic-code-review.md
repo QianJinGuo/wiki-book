@@ -41,7 +41,7 @@ Code review used to work because of a happy accident of relative speed. A senior
 - 引用源：[Agentic Code Review Addyosmani](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-code-review-addyosmani.md)
 ## 相关实体
 - [from doer to director: the ai mindset shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](ch01/138-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](ch01/1049-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](../ch11/021-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---
