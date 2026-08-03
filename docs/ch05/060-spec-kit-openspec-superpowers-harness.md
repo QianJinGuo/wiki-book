@@ -65,7 +65,7 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 - Grilling 模式适合在既有约束下优化、需要精确执行的场景
 - CCC 的三层架构本质上是 grilling 模式的工作流工程化——将约束封装在 Harness 层和 Skill 层，让 AI 在 Spec 层的变化描述中自由发挥，但受上下层结构的约束
 
-这与 [Agent vs Workflow 控制权连续谱](../ch04/740-agent-vs-workflow.html)中描述的"受控自主"模式一致：不是完全信任 AI 的自主性，也不是完全剥夺 AI 的灵活性，而是在多层约束中给 AI 留出可控的自由度。
+这与 [Agent vs Workflow 控制权连续谱](../ch04/744-agent-vs-workflow.html)中描述的"受控自主"模式一致：不是完全信任 AI 的自主性，也不是完全剥夺 AI 的灵活性，而是在多层约束中给 AI 留出可控的自由度。
 
 ## 实践启示
 
@@ -82,10 +82,10 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 ## 相关实体
 
 - [Matt Pocock Skills vs Superpowers](../ch03/076-skills.html) — 同一路线对比的另一视角
-- [Superpowers 三器合一](ch05/115-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
-- [Agent vs Workflow 控制权连续谱](../ch04/740-agent-vs-workflow.html) — 架构选择的底层框架
+- [Superpowers 三器合一](ch05/118-ai-coding.html) — Superpowers 在 Comet+OpenSpec 流水线中的角色
+- [Agent vs Workflow 控制权连续谱](../ch04/744-agent-vs-workflow.html) — 架构选择的底层框架
 - [Agent Harness 生产化](ch05/062-agent-harness.html) — 生产环境中的 Agent 约束与可观测性设计
-- [Spec-Driven Development Harness](ch05/017-harness.html) — 与 Spec 层配合的 Harness 方法论
+- [Spec-Driven Development Harness](ch05/085-harness.html) — 与 Spec 层配合的 Harness 方法论
 - [AI-Friendly 后端标准化路径](ch05/022-ai-friendly.html) — 另一视角的工程规范建设实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-kit-openspec-superpowers-hybrid-harness.md)

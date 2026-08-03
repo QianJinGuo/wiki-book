@@ -2,79 +2,13 @@
 
 ## Ch11.169 Better decisions at scale: How mathematical optimization delivers where intuition fails
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
+> 📊 Level ⭐⭐ | 7.8KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
 
 # 数学优化：在直觉失效的复杂决策中寻找确定性最优解
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Better decisions at scale: H…"))
-    概念导图
-    深度分析
-      数学优化 vs 机器学习：演绎 vs 归纳
-      四步优化框架的工程实践
-      关键案例深度解析
-      可复用解决方案的抽象
-    实践启示
-    相关实体
-```
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Better decisions at scale How"))
-    数学优化 vs 机器学习 演绎 vs 归纳
-    四步优化框架的工程实践
-    关键案例深度解析
-    可复用解决方案的抽象
-```
-
 ## 摘要
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 AWS Generative AI Innovation Center 介绍了数学优化（Mathematical Optimization）作为 AI 的重要子领域——与机器学习互补的"演绎式 AI"。ML 从数据中归纳模式并给出概率预测，而数学优化在给定约束下寻找数学上可证明的最优决策。文章展示了多个真实案例：BMW 机器人路径优化（10% 周期时间改进）、Delivery Hero 中间里程物流（24% 成本节省）、Amazon 欧盟物流网络（数千万美元价值）、澳大利亚红交叉排班优化（7% 理论成本降低）。
 
@@ -122,6 +56,7 @@ AWS Innovation Center 的四步框架是将数学优化从学术概念转化为�
 ### 可复用解决方案的抽象
 
 最优秀的项目产出的不是一次性结果，而是可复用的方法论：
+
 - **ROaDS（Route Optimization and Dispatch Solution）**：源自 Delivery Hero 项目，可配置的车辆路线、物流优化和现场服务规划框架
 - **WISE（Workforce Intelligence and Scheduling Engine）**：源自 Lifeblood 方法论，可配置的跨行业排班和值班基础框架
 
@@ -142,9 +77,9 @@ Fidelity Center for Applied Technology（FCAT）的案例特别值得关注：ML
 
 ## 相关实体
 
-- [规模化机器人强化学习](../ch01/1160-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [规模化机器人强化学习](../ch01/1373-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [NVIDIA Isaac Lab 机器人 RL](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [AWS SageMaker AI Agent 工作流](../ch04/413-aws-sagemaker-ai-agent.html)
+- [AWS SageMaker AI Agent 工作流](../ch04/492-aws-sagemaker-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 

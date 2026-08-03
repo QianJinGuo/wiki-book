@@ -156,14 +156,14 @@ AWS Network Firewall 是一个**内联（inline）状态检测设备**，而非�
 6. **双向流量均需独立路由配置**：不仅要在 `prv-rt-az1/az2`（VPC→IDC 方向）指向 NFW，还必须在 `vgw-ingress-rt`（IDC→VPC 方向）配置指向 NFW，否则只能单向审查。
 7. **NFW Suricata 规则顺序决定拦截行为** — `STRICT_ORDER` 模式下，序号更小的规则优先执行；实验模板配置为：拦截 HTTP 请求，其余流量放行，这与 IDC→VPC 方向 curl 被拦截的现象完全对应。
 8. **Site-to-Site VPN + VGW 可替代 DX 做技术验证** — 两者 BGP 路由行为完全一致，且可随时销毁重建，适合在无法申请 DX 物理电路时进行 PoC 验证。
-9. **NFW 日志需开启 Flow + Alert 双通道** — Flow 日志记录所有流量会话，Alert 日志记录触发拦截/告警的规则匹配事件；两者结合才能完整还原一次攻击链。参见 [AWS NFW 规则冲突 AI 检测](ch11/137-aws-network-firewall-ai.html)。
+9. **NFW 日志需开启 Flow + Alert 双通道** — Flow 日志记录所有流量会话，Alert 日志记录触发拦截/告警的规则匹配事件；两者结合才能完整还原一次攻击链。参见 [AWS NFW 规则冲突 AI 检测](ch11/138-aws-network-firewall-ai.html)。
 10. **合规审查场景中"流量可见性"是前提** — NFW 不仅拦截流量，更是合规审计的数据源；所有 IDC↔VPC 双向流量均需经过 NFW 并留存日志，以满足等保/GDPR 等监管要求。
 
 ## 关键引用清单
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-network-firewall-服务审查-idc-和云上-vpc-间的流量-vgw-架构的设计和实验.md)
-- [AWS NFW 规则冲突 AI 检测](ch11/137-aws-network-firewall-ai.html) — 姐妹篇（AI 集成）
-- [LiteLLM ECS/EKS 部署](../ch01/854-llm.html) — 同样部署在 VPC 中，受 NFW 保护
+- [AWS NFW 规则冲突 AI 检测](ch11/138-aws-network-firewall-ai.html) — 姐妹篇（AI 集成）
+- [LiteLLM ECS/EKS 部署](../ch01/436-aws.html) — 同样部署在 VPC 中，受 NFW 保护
 - [QuickSight Dataset Q&A](ch11/195-aws-quicksight-dataset-qa-natural-language.html)
 
 ## 相关实体

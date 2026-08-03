@@ -63,7 +63,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ### 与同类工具的对比
 
-与 [Hermes Agent 的 Skill 设计](../ch01/525-hermes-agent-skill.html) 相比，ljg 的 Skill 更侧重于"认知模式"而非"自动化工作流"。Hermes Skill 更像是一个可自动执行的函数（输入 → 自动处理 → 输出），而 ljg Skill 更像是一个思维框架（输入 → 引导人类思考 → 输出）。两者在技能设计中代表了"AI 代替"和"AI 辅助"两种不同的哲学。
+与 [Hermes Agent 的 Skill 设计](../ch01/524-hermes-agent-skill.html) 相比，ljg 的 Skill 更侧重于"认知模式"而非"自动化工作流"。Hermes Skill 更像是一个可自动执行的函数（输入 → 自动处理 → 输出），而 ljg Skill 更像是一个思维框架（输入 → 引导人类思考 → 输出）。两者在技能设计中代表了"AI 代替"和"AI 辅助"两种不同的哲学。
 
 ## 实践启示
 
@@ -76,7 +76,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 ## 相关实体
 
 - [ljg Skills 深度解析](../ch03/076-skills.html)
-- [Hermes Agent Skill 设计分析](../ch01/525-hermes-agent-skill.html)
+- [Hermes Agent Skill 设计分析](../ch01/524-hermes-agent-skill.html)
 - [Codex 五层架构](../ch01/736-codex.html)
 - [Claude Code 顶层指导](../ch03/084-claude-code.html)
 

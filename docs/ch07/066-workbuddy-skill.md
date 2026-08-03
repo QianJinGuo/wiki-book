@@ -63,8 +63,8 @@ WorkBuddy 的自进化机制是整个 Skill 体系中最具创新性的部分。
 
 ## 相关实体
 
-- [Skill Orchestration 6 Dependencies](../ch04/340-skill.html) — 多 Skill 编排与依赖管理，Skills 体系的上层组合挑战
-- [Skill Hub Mvp Evaluation Rollback Release](../ch04/340-skill.html) — Skill Hub 的 MVP 设计、评估与版本管理
+- [Skill Orchestration 6 Dependencies](../ch04/341-skill.html) — 多 Skill 编排与依赖管理，Skills 体系的上层组合挑战
+- [Skill Hub Mvp Evaluation Rollback Release](../ch04/341-skill.html) — Skill Hub 的 MVP 设计、评估与版本管理
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workbuddy-skill-全拆解从创建到自进化.md)
 

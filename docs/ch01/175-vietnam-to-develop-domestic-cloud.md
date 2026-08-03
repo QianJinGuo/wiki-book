@@ -27,7 +27,7 @@
 
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](../ch11/218-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam to develop domestic cloud](../ch11/209-vietnam-to-develop-domestic-cloud.html)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)- [anthropic](ch01/1215-anthropic.html)- [inference cost at scale with napkin math](ch01/1100-20.html)- [why use app-level auth when every database has auth? (splunk](ch01/177-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)- [anthropic](ch01/1532-anthropic.html)- [inference cost at scale with napkin math](ch01/1105-20.html)- [why use app-level auth when every database has auth? (splunk](ch01/177-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
 
 ---
 

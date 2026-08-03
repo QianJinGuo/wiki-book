@@ -100,16 +100,16 @@ SkillOpt 把 skill 文件变成**可训练 / 可验证 / 可审计的工程资�
 
 - **Prompt drift 监测是 agent 自我改进系统的标配**：任何引入模型自修订或 optimizer 的系统都需要类似验证门控的机制——没有验证的优化是在"看起来更聪明"的路上裸奔。参考 [Agent 自我改进的六条路](../ch03/035-agent.html) 中的验证机制设计。 
 
-- **Skill 资产化是 agent 团队工程成熟的标志**：将 skill 文件视为可训练/可验证/可审计的工程资产（而非随手改的文档）需要配套的工程实践：版本控制、审阅流程、部署前验证。参考 [Agent Skill 编写指南](../ch04/675-agent-skill.html) 建立规范化 skill 管理流程。 
+- **Skill 资产化是 agent 团队工程成熟的标志**：将 skill 文件视为可训练/可验证/可审计的工程资产（而非随手改的文档）需要配套的工程实践：版本控制、审阅流程、部署前验证。参考 [Agent Skill 编写指南](../ch04/680-agent-skill.html) 建立规范化 skill 管理流程。 
 
 ## 相关对照
-- [Agent Skill 编写指南](../ch04/675-agent-skill.html) —— 通用 skill 格式
-- [Agent Skill 进阶模式与治理](../ch04/675-agent-skill.html)
-- [Agent Skill 评估与迭代](../ch04/675-agent-skill.html) —— 评估正契合 SkillOpt gate 思想
-- [Agent Skill 高质量编写规范](../ch04/675-agent-skill.html)
-- [Agent 可靠性的工程解法：Skillify 持续改进](../ch04/340-skill.html)
+- [Agent Skill 编写指南](../ch04/680-agent-skill.html) —— 通用 skill 格式
+- [Agent Skill 进阶模式与治理](../ch04/680-agent-skill.html)
+- [Agent Skill 评估与迭代](../ch04/680-agent-skill.html) —— 评估正契合 SkillOpt gate 思想
+- [Agent Skill 高质量编写规范](../ch04/680-agent-skill.html)
+- [Agent 可靠性的工程解法：Skillify 持续改进](../ch04/341-skill.html)
 - [Agent 自我改进的六条路](../ch03/035-agent.html) —— SkillOpt 是一种新路径
-- [Agent Skills 系统性综述](../ch04/468-agent-skills.html)
+- [Agent Skills 系统性综述](../ch04/470-agent-skills.html)
 
 ## 第 2 来源 — 实战教程（@hooeem）
 

@@ -39,15 +39,15 @@ BMAD 使用 **TOML 配置文件**定义每个 Agent 的行为空间，这是整�
 
 该文章与 wiki 中已有实体相比的独特贡献：
 
-1. **平台化视角** — AWS 官方出品的 AIDLC 实施指南，从云平台基础设施角度讲述，区别于 [spec-kit-bmad-sdd-practice-yexiaocha](../ch01/1182-spec.html) 的个人实践者视角
+1. **平台化视角** — AWS 官方出品的 AIDLC 实施指南，从云平台基础设施角度讲述，区别于 [spec-kit-bmad-sdd-practice-yexiaocha](../ch01/1188-spec.html) 的个人实践者视角
 2. **完整的约束机制示范** — 给出 BMAD TOML 配置文件的完整形态和分类，比 叶小钗 的对比文章更侧重 BMAD 作为框架的运行时机制
 3. **Serverless 技术栈锁定** — 以 AWS Lambda + API Gateway + DynamoDB + CDK 作为具体实施参考，区别于其他泛化讨论
 4. **Review Gate 的分阶段设计** — 给出了 Inception/Construction/Operations 各阶段的具体 AI vs 人工分工表
 5. **多人团队协作模型** — 含 BMAD Party Mode 的多 Agent 交叉检查机制
 
 → [AI-DLC 紫讯 AI 原生研发实践](../ch05/021-ai-native.html)
-→ [Harness Engineering 概念](../ch05/126-harness-engineering.html)
-→ [SDD 规格驱动开发总结](../ch01/950-qoder.html)
+→ [Harness Engineering 概念](../ch05/129-harness-engineering.html)
+→ [SDD 规格驱动开发总结](../ch01/953-qoder.html)
 → [Spec-Kit + OpenSpec + Superpowers 混合 Harness](../ch05/053-openspec.html)
 
 ## 局限性

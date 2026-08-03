@@ -38,7 +38,7 @@ Doocs 微信号整理：https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ
 ## 相关实体
 - [Pi Openclaw Coding Harness](../ch11/247-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](../ch05/053-openspec.html)
-- [Ai Era Git Version Control Agentic Coding Practices](../ch04/289-agentic.html)
+- [Ai Era Git Version Control Agentic Coding Practices](../ch04/075-agentic.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/035-agent.html)
 - [Ai Coding Guide Tmall Deep Dive](ch09/022-ai-coding-guide-tmall-deep-dive.html)
 
