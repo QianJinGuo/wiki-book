@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **192 篇**实体，按深度递增排列。
+> 本章收录 **193 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 13 |
-| ⭐⭐ 工程师 | 需编程基础 | 173 |
+| ⭐⭐ 工程师 | 需编程基础 | 174 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 5 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -189,41 +189,42 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [152. 逆了个大天！负责人亲自下场，教大家反代Codex](ch09/152-codex)
 - [153. Linn Fritz looks at the lighter side of life](ch09/153-linn-fritz-looks-at-the-lighter-side-of-life)
 - [154. Code is the easy part, or how we refactored half the business to fix a janky script | Swizec Teller](ch09/154-code-is-the-easy-part-or-how-we-refactored-half-the-busines)
-- [155. 百度 AI Coding 质量关卡实践](ch09/155-ai-coding)
-- [156. 从需求到原型：50 个设计师与产品经理值得掌握的 AI 智能体技能](ch09/156-50-ai)
-- [157. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/157-claude-code)
-- [158. Tether launches developer grants program for local AI payments](ch09/158-tether-launches-developer-grants-program-for-local-ai-paymen)
-- [159. Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」](ch09/159-claude-code-claude-tag)
-- [160. We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks](ch09/160-we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-be)
-- [161. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/161-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c)
-- [162. 天猫新品营销技术团队AI编码实战指南（上）](ch09/162-ai)
-- [163. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/163-introducing-deepsec-the-security-harness-for-finding-vulner)
-- [164. State of CLI Coding Agents, Mid-2026](ch09/164-state-of-cli-coding-agents-mid-2026)
-- [165. 从需求到原型：50 个设计师与产品经理的 AI 智能体技能](ch09/165-50-ai)
-- [166. Using Local Coding Agents](ch09/166-using-local-coding-agents)
-- [167. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/167-loop-agent)
-- [168. 打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略](ch09/168-claude-code-loop-engineering)
-- [169. Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](ch09/169-spec-driven-ai)
-- [170. 天猫新品团队AI编码实战指南（下）](ch09/170-ai)
-- [171. Automate progressive rollouts with Vercel Flags - Vercel](ch09/171-automate-progressive-rollouts-with-vercel-flags-vercel)
-- [172. AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判](ch09/172-ai-anomaly-vibe-coding)
-- [173. Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access](ch09/173-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region)
-- [174. Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads](ch09/174-dynamically-splitting-wide-partitions-in-cassandra-for-time)
-- [175. How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore](ch09/175-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama)
-- [176. OpenAI大神教你如何榨干Codex](ch09/176-openai-codex)
-- [177. Claude Code Loop 四档控制权：自检→目标→定时→工作域](ch09/177-claude-code-loop)
-- [178. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/178-device-code-phishing-forensics-what-we-learned-from-bec-inv)
-- [179. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/179-kiro-spec-vs-vibe-coding)
-- [180. AI 原生开发工作流](ch09/180-ai)
-- [181. Vibe Coding 与 AI 软件工程](ch09/181-vibe-coding-ai)
-- [182. 腾讯 AI 编码实践](ch09/182-ai)
-- [183. AI 编码效率分析方法论](ch09/183-ai)
-- [184. Claude Code到底有多费token？对比实验来了：三大框架最多差30倍](ch09/184-claude-code-token-30)
-- [185. Graph Engineering 来了：Claude Code 让 Agent 从一条直线变成一张图](ch09/185-graph-engineering-claude-code-agent)
-- [186. Claude Code 写得越快，越要把错误控制在可回滚范围内](ch09/186-claude-code)
-- [187. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/187-fastcontext-coding-agent)
-- [188. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/188-deepseek-visual-primitives)
-- [189. AI Coding Agent Token 成本控制五层模型](ch09/189-ai-coding-agent-token)
-- [190. Dockerless: 免环境补丁验证器](ch09/190-dockerless)
-- [191. 用好 Qoder Credits：优化的不是花费多少，而是单位 Credits 的产出](ch09/191-qoder-credits-credits)
-- [192. GLM-5 Scaling Pain 推理复盘](ch09/192-glm-5-scaling-pain)
+- [155. MirrorCode: AI 从行为重建完整程序的长时程基准（Epoch AI × METR）](ch09/155-mirrorcode-ai-epoch-ai-metr)
+- [156. 百度 AI Coding 质量关卡实践](ch09/156-ai-coding)
+- [157. 从需求到原型：50 个设计师与产品经理值得掌握的 AI 智能体技能](ch09/157-50-ai)
+- [158. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/158-claude-code)
+- [159. Tether launches developer grants program for local AI payments](ch09/159-tether-launches-developer-grants-program-for-local-ai-paymen)
+- [160. Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」](ch09/160-claude-code-claude-tag)
+- [161. We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks](ch09/161-we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-be)
+- [162. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/162-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c)
+- [163. 天猫新品营销技术团队AI编码实战指南（上）](ch09/163-ai)
+- [164. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/164-introducing-deepsec-the-security-harness-for-finding-vulner)
+- [165. State of CLI Coding Agents, Mid-2026](ch09/165-state-of-cli-coding-agents-mid-2026)
+- [166. 从需求到原型：50 个设计师与产品经理的 AI 智能体技能](ch09/166-50-ai)
+- [167. Using Local Coding Agents](ch09/167-using-local-coding-agents)
+- [168. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/168-loop-agent)
+- [169. 打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略](ch09/169-claude-code-loop-engineering)
+- [170. Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](ch09/170-spec-driven-ai)
+- [171. 天猫新品团队AI编码实战指南（下）](ch09/171-ai)
+- [172. Automate progressive rollouts with Vercel Flags - Vercel](ch09/172-automate-progressive-rollouts-with-vercel-flags-vercel)
+- [173. AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判](ch09/173-ai-anomaly-vibe-coding)
+- [174. Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access](ch09/174-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region)
+- [175. Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads](ch09/175-dynamically-splitting-wide-partitions-in-cassandra-for-time)
+- [176. How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore](ch09/176-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama)
+- [177. OpenAI大神教你如何榨干Codex](ch09/177-openai-codex)
+- [178. Claude Code Loop 四档控制权：自检→目标→定时→工作域](ch09/178-claude-code-loop)
+- [179. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/179-device-code-phishing-forensics-what-we-learned-from-bec-inv)
+- [180. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/180-kiro-spec-vs-vibe-coding)
+- [181. AI 原生开发工作流](ch09/181-ai)
+- [182. Vibe Coding 与 AI 软件工程](ch09/182-vibe-coding-ai)
+- [183. 腾讯 AI 编码实践](ch09/183-ai)
+- [184. AI 编码效率分析方法论](ch09/184-ai)
+- [185. Claude Code到底有多费token？对比实验来了：三大框架最多差30倍](ch09/185-claude-code-token-30)
+- [186. Graph Engineering 来了：Claude Code 让 Agent 从一条直线变成一张图](ch09/186-graph-engineering-claude-code-agent)
+- [187. Claude Code 写得越快，越要把错误控制在可回滚范围内](ch09/187-claude-code)
+- [188. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/188-fastcontext-coding-agent)
+- [189. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/189-deepseek-visual-primitives)
+- [190. AI Coding Agent Token 成本控制五层模型](ch09/190-ai-coding-agent-token)
+- [191. Dockerless: 免环境补丁验证器](ch09/191-dockerless)
+- [192. 用好 Qoder Credits：优化的不是花费多少，而是单位 Credits 的产出](ch09/192-qoder-credits-credits)
+- [193. GLM-5 Scaling Pain 推理复盘](ch09/193-glm-5-scaling-pain)

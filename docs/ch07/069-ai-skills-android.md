@@ -64,18 +64,18 @@ AI + Skills 模式在 154 个服务的规模化迁移中节省 **25 小时**（�
 
 ## 相关实体
 
-- [Agent Skill Writing Guide](../ch04/680-agent-skill.html) — Skill 编写方法论
+- [Agent Skill Writing Guide](../ch04/684-agent-skill.html) — Skill 编写方法论
 - [Hermes Skill System](ch07/018-hermes-skill.html) — Hermes 技能系统
 - [Harness Engineering](../ch05/129-harness-engineering.html) — Harness 工程范式
 - [Thin Harness, Fat Skills](../ch05/092-thin-harness-fat-skills-ai.html) — 薄 Harness 厚 Skills 架构
 - [如何将经验编码为 Skills](../ch03/076-skills.html) — 经验 → Skills 转化方法论
 - [Agent Skills vs 低代码平台](../ch04/470-agent-skills.html) — Skills 与低代码对比
 - [Skill Craft](ch07/060-skill-craft-claude-skill.html) — Skill 工艺学
-- [Skill Engineering as Algorithm](../ch04/341-skill.html) — Skill 工程即算法
-- [Anthropic 14 Skill Patterns](../ch01/499-anthropic-14-skill.html) — Anthropic 技能设计模式
+- [Skill Engineering as Algorithm](../ch04/339-skill.html) — Skill 工程即算法
+- [Anthropic 14 Skill Patterns](../ch01/498-anthropic-14-skill.html) — Anthropic 技能设计模式
 - [百度网盘 KMP 迁移三层架构](../ch03/035-agent.html) — 同类跨平台迁移案例
 - [SkillX 分层技能库](ch07/059-skillx.html) — 分层技能库架构
-- [Skill Hub 组织资产](../ch04/341-skill.html) — 组织级技能管理中心
+- [Skill Hub 组织资产](../ch04/339-skill.html) — 组织级技能管理中心
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skills-middleware-migration-android-harmonyos-taobao-2026.md)
 

@@ -30,12 +30,12 @@ Obsidian与Claude Code的集成本质上解决了AI编程工具的一个核心�
 
 ## 相关资源
 - [Agent Memory 架构](../ch04/497-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](../ch04/775-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](../ch04/776-claude-managed-agents.html)
 
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](ch09/146-obsidian-claude-code-integration-guide.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/083-obsidian-claude-code.html)
-- [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/1200-claude-code-memory-setup-obsidian-graphify.html)
+- [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/1203-claude-code-memory-setup-obsidian-graphify.html)
 - [Claude Code 命令完全指南](../ch03/084-claude-code.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/097-claude-code-1.html)

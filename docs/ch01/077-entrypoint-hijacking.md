@@ -46,7 +46,7 @@ Windows 进程运行时动态加载多个 DLL，加载器（ntdll!Ldrp）维护�
 
 - [EntryPoint Hijacking](ch01/077-entrypoint-hijacking.html)
 - [安全态势全景](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
-- [Cilium Tetragon：eBPF 运行时安全](ch01/411-rag.html)
+- [Cilium Tetragon：eBPF 运行时安全](ch01/1266-rag.html)
 
 ---
 

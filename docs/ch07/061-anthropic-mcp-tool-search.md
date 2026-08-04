@@ -85,12 +85,12 @@ MCP 的真正地盘是**云端 Agent 标准化接入层**——这里需要统�
 
 ## 交叉引用
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-mcp-revisited-tool-search-code-orchestration.md)
-- [Agent Skill 编写指南](../ch04/680-agent-skill.html) — Skills 管「编排」，MCP 管「能力」，两者互补
+- [Agent Skill 编写指南](../ch04/684-agent-skill.html) — Skills 管「编排」，MCP 管「能力」，两者互补
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md) — MCP token 膨胀问题与上下文窗口管理相关
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw 的 Tool/MessageBus 设计可对比 MCP 架构
 
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1532-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1533-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

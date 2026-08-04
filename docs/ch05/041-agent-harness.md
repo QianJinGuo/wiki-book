@@ -121,7 +121,7 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 
 ## 相关页面
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-production-agent-engineering-deficit.md)
-→ [Cursor Harness 复盘](../ch01/454-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
+→ [Cursor Harness 复盘](../ch01/453-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
 → [Claude Code 提示词体系](../ch09/070-claude-code-prompt.html)
 → [Agent Harness 上下文管理](ch05/062-agent-harness.html)
 → [Agent Memory 架构](../ch04/497-perplexity-brain-self-improving-agent-memory-architecture.html)
@@ -131,7 +131,7 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](ch05/129-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch05/129-harness-engineering.html)
 
-- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/1442-claude.html)
+- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/638-claude.html)
 - [Agent架构关键变化：Harness正在成为新后端](ch05/085-harness.html)
 
 ## 深度分析

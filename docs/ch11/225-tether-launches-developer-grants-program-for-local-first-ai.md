@@ -37,7 +37,7 @@ QVAC MedPsy（医疗心理）模型在 May 7 发布，May 11 就宣布 grants �
 
 ## 相关实体
 - [Tether launches developer grants program for local-first AI and payments infrastructure](ch11/225-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Tether launches developer grants program for local AI payments](../ch09/158-tether-launches-developer-grants-program-for-local-ai-paymen.html)
+- [Tether launches developer grants program for local AI payments](../ch09/159-tether-launches-developer-grants-program-for-local-ai-paymen.html)
 
 ---
 

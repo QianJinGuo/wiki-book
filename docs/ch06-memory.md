@@ -3830,7 +3830,68 @@ Context建设落在数据工程、AI产品、治理三个团队的交叉地带�
 
 ---
 
-## Ch06.024 Obsidian
+## Ch06.024 LLM Wiki 知识管理
+
+> 📊 Level ⭐⭐ | 7.8KB | `entities/llm-wiki-knowledge-management.md`
+
+# LLM Wiki 知识管理
+
+## 摘要
+
+LLM Wiki 知识管理是以大语言模型为"维护者"的知识管理范式：由 LLM 承担内容提取、摘要生成、关系推断与矛盾检测等原本依赖人工的维护工作，使 Markdown 文件树成为可查询、可演进、Agent 可读的知识资产。与 RAG 相比，它把知识综合从"查询时"提前到"入库时"，让知识从无状态的碎片检索升级为有状态的持续沉淀。
+
+## 核心要点
+
+- **范式定位**：LLM 不是检索器而是"知识编译者"——在 Ingest 阶段完成阅读、综合、交叉引用与矛盾标记，产物是持久化的 Markdown 页面而非临时回答。
+- **有状态知识**：与 RAG 每次查询独立拼装片段不同，LLM Wiki 的知识随查询与维护持续累积，矛盾在入库时被发现，而非查询时才暴露。
+- **三层架构**：Schema 层（人定规则）→ Wiki 层（LLM 维护）→ Raw Sources 层（人提供、LLM 只读），Wiki 是地图，不是领土。
+- **矛盾检测制度化**：以 [!contradiction] 显式标记冲突，配合基于 tag 聚类与评分差的自动扫描，加上"代码即真相"等仲裁原则，让冲突显式化、可仲裁。
+- **互通性**：Open Knowledge Format (OKF) v0.1 以"type 必填 + Markdown 链接关系图"的最小约束，为"长得像但互不通用"的 LLM Wiki 范式提供格式契约。
+- **质量护栏**：四维质量框架（可解析/可下钻/可遍历/可度量）+ 生成与判断分离 + Lint 巡检，使知识库健康度从"构建时合格"变为"持续合格"。
+- **自进化循环**：ingest → synthesize → index → lint → evolve，配合 embedding/indexing（如 QMD）支撑检索，使知识库成为 Agent 可读资产。
+
+## 深度分析
+
+### 1. 从"检索知识"到"编译知识"的范式转移
+
+LLM Wiki 知识管理的核心洞见，是把知识管理从"人工编写文档"升级为"编译知识"：散落在文档、代码、聊天记录与数据表里的原始材料，通过 LLM 驱动的流水线被编译为结构化、可验证、可交叉引用的知识资产。这一思维转变的关键在于承认"知识的问题出在知识本身，不在检索"——RAG 只是给散乱的知识加了向量索引，并没有解决知识的矛盾、过期与离散；LLM Wiki 则在检索之前加了一道编译工序，从源头治理质量。架构上通常分三层：Schema 层由人定义规则，Wiki 层由 LLM 维护，Raw Sources 层由人提供、LLM 只读——Wiki 是地图，不是领土，原文仍是最终依据。经济模型也随之反转：RAG 是查询时花钱，LLM Wiki 是灌文档时花钱，因此知识稳定、查询量大的场景下 LLM Wiki 总拥有成本反而更低。
+
+### 2. 矛盾检测与冲突仲裁：让知识库自我纠错
+
+LLM 维护知识库的最大风险是"冻结错误"——一个错误论断被写进 Markdown 之后，会在后续查询中被反复复用，摘要漂移还会让内容逐渐偏离原始材料。因此成熟实践把矛盾检测制度化，而非依赖模型的临场判断：其一，用 [!contradiction] 标记显式标注冲突结论，并配合基于 tag 聚类与评分差的自动扫描定期发现潜在矛盾；其二，为多源冲突制定单一仲裁原则，例如"代码即真相"——注释与文档可能长期失修，而任务代码每天运行在生产环境，代表系统当下的真实行为；其三，把生成与判断分离，推断字段在生成阶段强制留空，落盘后独立运行判断阶段，防止 LLM 在信息不完整时抢先下结论。再加上 provenance 溯源引用（如）作为一等公民，每个论断都能回查原始证据，矛盾便从"模型偏好问题"转化为可审计的工程决策。
+
+### 3. Schema 与互操作：质量上限与开放边界
+
+Schema 设计是 LLM Wiki 的质量上限，也是最大的风险点：Schema 定义差，Wiki 层会系统性积累错误结构，后期修正需重新 Ingest 全量文档，成本极高。因此主流实践是"最小可用 Schema"起步——只定义核心实体类型与必需关系，用 3-5 个真实查询案例验证充分性后再扩展。而 Schema 之上还有一层互操作问题：Karpathy Wiki、Obsidian 知识库、各企业内部 Wiki 都长着 Markdown + frontmatter + 交叉链接的样子，却互不通用，知识仍被锁在各团队里。Google 发布的 Open Knowledge Format (OKF) v0.1 正针对这一痛点：一个 OKF bundle 就是一个 Markdown 文件目录，只强制要求 `type` 字段，概念之间用普通 Markdown 链接构成关系图。最小约束、生产者与消费者独立、格式不是平台——三个设计原则把"互通边界"从私有约定提升为开放规范，使知识库成为可迁移、可被任意工具消费的资产。
+
+### 4. Agent 可读的知识资产与自进化循环
+
+当知识库本身成为 Agent 的长期工作记忆，知识管理就与 Agent 工程合流：Memory 记住"你是谁"（事实类），Skills 记住"怎么干活"（方法类），Wiki 把零散知识组织成带空间与时间维度的目录，三者互相喂养、越用越厚。工程上表现为一个持续运转的循环：ingest（摄入综合）→ synthesize（生成页面）→ index（登记索引）→ lint（结构校验）→ evolve（增量更新与矛盾扫描），配合 embedding/indexing（如 QMD）构建语义检索入口；queries/ 保存查询过程与中间结果，log.md 记录全部变更，实现审计溯源。这套循环使知识库从被动查询对象变为主动维护主体，但也引入治理命题：每次自动更新都应视为"可审阅更新"而非"自动真理"，需要人工 review 与 lint 规则兜底，才能避免自进化退化为自漂移。
+
+## 实践启示
+
+1. **从源头治理知识**：先解决知识的矛盾、过期与离散，再谈检索方式；RAG 只是把"人找不到"变成"AI 找到了但答不准"。
+2. **最小可用 Schema 起步**：只定义核心实体类型与必需关系，用 3-5 个真实查询验证充分性后再扩展，避免后期全量重 Ingest。
+3. **矛盾检测制度化**：统一冲突仲裁原则（如"代码即真相"）+ 自动 contradiction 扫描 + 生成与判断分离，三件套缺一不可。
+4. **保留 Raw Sources 为真相层**：Wiki 只做入口，provenance 引用（含行号范围）保证每个论断可回查，防止"冻结错误"。
+5. **按场景选型**：稳定知识 + 高查询量优先 LLM Wiki；高频变化保留 RAG；复杂场景混合——RAG 广检索、Wiki 深沉淀，RAG 结果作为 Ingest 候选素材。
+6. **让知识库对 Agent 可读**：frontmatter、交叉链接、index 与 log 齐全，并考虑以 OKF 等开放格式作为导出与互通契约。
+
+## 相关实体
+
+- [Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](https://github.com/QianJinGuo/wiki/blob/main/entities/google-okf-open-knowledge-format-v0-1-2026.md)
+- [RAG vs LLM Wiki 深度对比：企业知识库架构选型指南](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vs-llm-wiki-enterprise-knowledge-base.md)
+- [RAG Chunk Embedding Rerank Pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
+- [构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-knowledge-base-llm-wiki-practice-alicloud.md)
+- [手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md)
+- [LLM Wiki 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-architecture.md)
+- [LLM Wiki / Obsidian Wiki / GBrain 自组织自进化](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
+- [Karpathy LLM Wiki v2 (2026)](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-v2-2026.md)
+- [知识沉淀是护城河](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-mgmt-is-moat.md)
+
+---
+
+## Ch06.025 Obsidian
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/obsidian.md`
 
@@ -3965,7 +4026,7 @@ iOS/Android 端体验弱于桌面端，优化方案：
 
 ---
 
-## Ch06.025 Your documentation is still in your Mum's filing cabinet
+## Ch06.026 Your documentation is still in your Mum's filing cabinet
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/documentation-organisation-humans-ai.md`
 
@@ -4051,7 +4112,7 @@ Reid 的 UX 背景使她自然地将文档问题与 design systems 联系起来�
 
 ---
 
-## Ch06.026 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地
+## Ch06.027 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ant-group-medical-agent-afu.md`
 
@@ -4147,7 +4208,7 @@ Speculative Decoding 的 SpecFog 方案将推理速度从 50 提升到 120 token
 
 ---
 
-## Ch06.027 上下文工程：三种 Agent Memory 方案对比实验
+## Ch06.028 上下文工程：三种 Agent Memory 方案对比实验
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/context-engineering-three-memory-paradigms.md`
 
@@ -4248,7 +4309,7 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 
 ---
 
-## Ch06.028 TencentDB Agent Memory 短期记忆压缩方案
+## Ch06.029 TencentDB Agent Memory 短期记忆压缩方案
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/tencentdb-agent-memory-short-term-compression.md`
 
@@ -4352,7 +4413,7 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 
 ---
 
-## Ch06.029 Hermes Agent 三级 Memory 架构解析（One掌柜视角）
+## Ch06.030 Hermes Agent 三级 Memory 架构解析（One掌柜视角）
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/hermes-agent-three-layer-memory-one.md`
 
@@ -4409,7 +4470,7 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 
 ---
 
-## Ch06.030 Building is just the beginning: Introducing Discoverability
+## Ch06.031 Building is just the beginning: Introducing Discoverability
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/lovable-discoverability-intro.md`
 
@@ -4457,7 +4518,7 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 
 ---
 
-## Ch06.031 OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
+## Ch06.032 OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/openjiuwen-autogenetic-memory-agent-2026-07-02.md`
 
@@ -4538,7 +4599,7 @@ JiuwenMemory 设计了四层记忆架构，让信息从原始对话逐级抽象�
 
 ---
 
-## Ch06.032 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
+## Ch06.033 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md`
 
@@ -4609,7 +4670,7 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ---
 
-## Ch06.033 OpenChronicle — AI可复用记忆层
+## Ch06.034 OpenChronicle — AI可复用记忆层
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/openchronicle-memory-layer.md`
 
@@ -4659,7 +4720,7 @@ OpenChronicle的出现揭示了AI记忆层的核心争议——记忆究竟应�
 
 ---
 
-## Ch06.034 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
+## Ch06.035 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/qoder-team-knowledge-engine-compiled-knowledge.md`
 
@@ -4718,7 +4779,7 @@ Agent 每次进入项目都要重新读代码、猜结构、问人。
 
 ---
 
-## Ch06.035 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
+## Ch06.036 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
 
@@ -4795,7 +4856,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ---
 
-## Ch06.036 Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
+## Ch06.037 Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-memory-main-contradiction-context-scheduling.md`
 
@@ -4864,7 +4925,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ---
 
-## Ch06.037 Headroom 是怎么省上下文的
+## Ch06.038 Headroom 是怎么省上下文的
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/headroom-context-compression-agent-vibecoder.md`
 
@@ -4921,7 +4982,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 
 ---
 
-## Ch06.038 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
+## Ch06.039 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/alibaba-complex-business-skills-architecture-evolution.md`
 
@@ -4972,7 +5033,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 
 ---
 
-## Ch06.039 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
+## Ch06.040 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/tencentdb-agent-memory-long-term-pyramid.md`
 
@@ -5033,7 +5094,7 @@ PersonaMem（人物画像记忆准确率）提升最显著（+28pp），说明�
 
 ---
 
-## Ch06.040 Skill 编排的 6 种依赖关系
+## Ch06.041 Skill 编排的 6 种依赖关系
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/skill-orchestration-6-dependencies.md`
 
@@ -5071,36 +5132,6 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch06.041 LLM Wiki 知识管理
-
-> 📊 Level ⭐⭐ | 1.8KB | `entities/llm-wiki-knowledge-management.md`
-
-# LLM Wiki 知识管理
-
-以 LLM 为核心的 Wiki 知识管理体系：利用大模型进行内容提取、摘要生成、关联推理、矛盾检测。Obsidian + AI Agent 的知识库范式。
-
-## 深度分析
-
-本页作为知识图谱锚点，连接了以下关键实体：[Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](https://github.com/QianJinGuo/wiki/blob/main/entities/google-okf-open-knowledge-format-v0-1-2026.md)。 相关主题通过 [RAG vs LLM Wiki 深度对比：企业知识库架构选型指南](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vs-llm-wiki-enterprise-knowledge-base.md) 延伸。
-
-> 本页内容将在入库相关溯源素材后进一步深化。
-
-## 实践启示
-
-1. 本领域系统性内容尚待采集——当前知识库在此方向的覆盖密度偏低
-2. 建议优先采集 LLM Wiki 知识管理 相关的一手来源（论文/官方文档/工程博客）
-3. 通过交叉链接密度评估本领域的知识图谱成熟度
-
-## 相关实体
-
-- [Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](https://github.com/QianJinGuo/wiki/blob/main/entities/google-okf-open-knowledge-format-v0-1-2026.md)
-- [RAG vs LLM Wiki 深度对比：企业知识库架构选型指南](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vs-llm-wiki-enterprise-knowledge-base.md)
-- [RAG Chunk Embedding Rerank Pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
-- [构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-knowledge-base-llm-wiki-practice-alicloud.md)
-- [手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md)
 
 ---
 
