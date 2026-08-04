@@ -50,10 +50,10 @@ Voice Notes 的设计值得玩味：它不是简单地把语音转成文字，�
 ## 相关实体
 
 - [Who Winning Enterprise AI Now](../ch05/100-ai.html)
-- [Salesforce 主动砍掉了界面：护城河从来不在那里](../ch01/200-1.html)
+- [Salesforce 主动砍掉了界面：护城河从来不在那里](../ch01/334-1.html)
 - [3小时蒸发200万：一个AI客服引发的灾难](../ch05/100-ai.html)
 - [LiveKit Agents 语音 AI 框架工程解析](../ch03/035-agent.html)
-- [Agentic AI in Finance](ch04/668-agentic-ai.html)
+- [Agentic AI in Finance](ch04/116-agentic-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 

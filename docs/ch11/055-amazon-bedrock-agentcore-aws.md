@@ -51,12 +51,12 @@ AgentCore 可作为 MCP 服务器使用，这意味着策略编写和验证可�
 AgentCore 支持任何开源框架（CrewAI、LangGraph、LlamaIndex、Strands Agents）和任何基础模型 。在设计策略和评估体系时，应保持框架无关性，使治理能力可跨项目复用。这一设计选择意味着组织可以先在试点项目验证治理框架的有效性，再逐步推广到其他代理应用，避免重复建设。
 
 ## 相关实体
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/635-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/635-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/638-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/638-amazon-bedrock-agentcore.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/151-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](ch11/137-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/478-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/635-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/638-amazon-bedrock-agentcore.html)
 
 ---
 

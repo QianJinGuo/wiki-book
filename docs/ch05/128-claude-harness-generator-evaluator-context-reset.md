@@ -169,16 +169,16 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 - [LangChain Anatomy of Agent Harness](ch05/062-agent-harness.html) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/618-claude-managed-agents.html)
-- [Ai Agent Harness Construction Akshay Baoyu](../ch01/1168-ai-agent-harness.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/776-claude-managed-agents.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch01/1171-ai-agent-harness.html)
 - [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html)
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/783-agent-harnesses-are-dead-long-live-agent-harnesses.html)
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/784-agent-harnesses-are-dead-long-live-agent-harnesses.html)
 - [Harness 之后 状态边界与失败闭环 若飞](ch05/085-harness.html)
 - [Agentscope Java 2.0 Enterprise Distributed Harness](ch05/085-harness.html)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](ch05/085-harness.html)
 - [Long Running Agent Ralph Loop Harness Takeover](ch05/014-agent-ralph-loop-harness.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/1532-anthropic.html)
-- [Langgraph A2A Adversarial Agent Team](../ch04/262-langgraph.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch01/1533-anthropic.html)
+- [Langgraph A2A Adversarial Agent Team](../ch04/260-langgraph.html)
 
 ---
 

@@ -102,9 +102,9 @@ Amazon Quick 的按查询量付费模型对不同使用模式有不同的经济�
 ## 相关实体
 
 - [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](ch11/310-bedrock.html)
-- [Hermes Agent Skills Source Code Analysis Shuge](../ch04/510-hermes-agent-skills.html)
+- [Hermes Agent Skills Source Code Analysis Shuge](../ch04/511-hermes-agent-skills.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Accelerate Llm Model Loading And Increase Context Windows Wi](../ch01/1374-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [Accelerate Llm Model Loading And Increase Context Windows Wi](../ch01/1377-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/100-ai.html)
 - 相关领域: aws, data-pipeline, serverless, analytics
 

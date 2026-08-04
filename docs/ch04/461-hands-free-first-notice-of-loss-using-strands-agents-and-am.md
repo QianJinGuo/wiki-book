@@ -80,10 +80,10 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 ## 相关实体
 
-- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/297-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore + Knowledge Base 的维修助手
-- [Building Web Search Enabled Agents With Strands And Exa](ch04/551-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
+- [Build An Ai Powered Equipment Repair Assistant Using Amazon ](ch04/295-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore + Knowledge Base 的维修助手
+- [Building Web Search Enabled Agents With Strands And Exa](ch04/553-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级方案
-- [Agentcore Harness](ch04/751-agentcore-harness.html) — AgentCore 工程化
+- [Agentcore Harness](ch04/754-agentcore-harness.html) — AgentCore 工程化
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch11/266-aws-bedrock-agentcore.html) — AgentCore + MCP Server
 - [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
 - [Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) — Agent 部署策略

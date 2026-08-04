@@ -102,7 +102,7 @@ PQC 过渡对受限设备（IoT、智能卡、嵌入式系统）的影响尤为�
 - [后量子安全采用分析](ch12/119-on-post-quantum-security-adoption.html) — PQC 采用策略和威胁评估框架
 - 以太坊 BLS 后量子替换 — 区块链场景的 PQC 迁移案例
 - 密码学敏捷性（Cryptographic Agility）是 PQC 过渡的底层设计原则
-- [Cisco SD-WAN 漏洞](../ch01/342-01.html) — 安全基础设施需要持续更新的例证
+- [Cisco SD-WAN 漏洞](../ch01/357-01.html) — 安全基础设施需要持续更新的例证
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rfc9958.md)
 

@@ -63,9 +63,9 @@ Meta 将用户引向 WhatsApp，但其整体商业模式持续向 AI 监控和�
 ## 相关实体
 - [Weve Been Here Before Ai Vulnerability Research](../ch05/100-ai.html)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
-- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/411-rag.html)
-- [Us Bank Aws Ai Migration](../ch01/436-aws.html)
-- [Deerflow Hermes Openclaw Comparison](../ch04/571-deerflow-hermes-openclaw.html)
+- [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/1266-rag.html)
+- [Us Bank Aws Ai Migration](../ch01/435-aws.html)
+- [Deerflow Hermes Openclaw Comparison](../ch04/573-deerflow-hermes-openclaw.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5235705.md)

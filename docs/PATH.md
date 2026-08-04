@@ -345,17 +345,17 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | OpenClaw 安全增强 | [Openclaw Security And Feature Enhancement Practices](ch12/027-openclaw.html) | [{{BASE_URL}}/raw/articles/openclaw-security-and-feature-enhancement-practices]({{BASE_URL}}/raw/articles/openclaw-security-and-feature-enhancement-practices)|
 | OpenClaw Security Roadmap | [Where Openclaw Security Is Heading Openclaw Blog](ch12/032-where-openclaw-security-is-heading-openclaw-blog.html) | [{{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog]({{BASE_URL}}/raw/articles/where-openclaw-security-is-heading-openclaw-blog)|
 | AI Agent 机器身份安全 | [1Password Securing Ai Agents Machine Identities](ch12/050-securing-ai-agents-and-machine-identities.html) | [{{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities]({{BASE_URL}}/raw/articles/1password-securing-ai-agents-machine-identities)|
-| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch12/059-autonomous-vulnerability-hunting-with-mcp.html) | [{{BASE_URL}}/raw/articles/bullyingllms]({{BASE_URL}}/raw/articles/bullyingllms)|
+| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch12/061-autonomous-vulnerability-hunting-with-mcp.html) | [{{BASE_URL}}/raw/articles/bullyingllms]({{BASE_URL}}/raw/articles/bullyingllms)|
 | AI Detection and Response | [Ai Detection And Response Aidr A Zero Impact Operating Model](ch12/081-ai-detection-and-response-aidr-a-zero-impact-operating-model.html) | [{{BASE_URL}}/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model]({{BASE_URL}}/raw/articles/ai-detection-and-response-aidr-a-zero-impact-operating-model)|
 | LLMReaper 对话窃取攻击 | [Llmreaper Dom Conversation Exfiltration](ch12/091-llmreaper.html) | [{{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512]({{BASE_URL}}/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512)|
-| OpenSandbox 安全沙箱 | [Opensandbox Aliyun Cloud Agent Sandbox Vibecoder](ch12/112-opensandbox-agent-vault-egress-sidecar.html) | 先读实体页：`docs/ch12/119-opensandbox-agent-vault-egress-sidecar.md` |
+| OpenSandbox 安全沙箱 | [Opensandbox Aliyun Cloud Agent Sandbox Vibecoder](ch12/115-opensandbox-agent-vault-egress-sidecar.html) | 先读实体页：`docs/ch12/119-opensandbox-agent-vault-egress-sidecar.md` |
 
 ### 5.4 评估与 MLOps 精读清单
 
 | 主题 | entity | raw |
 |---|---|---|
 | AI Skill 测评报告 | [Ai Skill 测评报告解读](ch07/079-ai-skill.html) | [{{BASE_URL}}/raw/articles/ai-skill-测评报告解读]({{BASE_URL}}/raw/articles/ai-skill-测评报告解读)|
-| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/546-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
+| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/547-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
 | Agent-EvalKit | [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](ch11/027-agent-evalkit-aws-cli-agent.html) | [{{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit]({{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit)|
 | AgentEval YAML | [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/212-agenteval-yaml-agent.html) | 先读实体页：`docs/ch04/141-agenteval-yaml-agent.md` |
 | Claw-SWE-Bench | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch09/064-claw-swe-bench-harness-agent.html) | [{{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm]({{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm)|

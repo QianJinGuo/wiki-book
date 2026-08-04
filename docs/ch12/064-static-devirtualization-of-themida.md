@@ -59,7 +59,7 @@ devirtualized 代码要被 IDA、Binary Ninja 等工具正常加载，关键约�
 ## 相关实体
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/back-engineering-static-devirtualization-themida.md)
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/static-devirtualization-themida.md)
-- [static devirtualization of themida](../ch01/302-verbalized-sampling-prompt-engineering-icml2026-mode-collaps.html)
+- [static devirtualization of themida](../ch01/301-verbalized-sampling-prompt-engineering-icml2026-mode-collaps.html)
 
 ---
 

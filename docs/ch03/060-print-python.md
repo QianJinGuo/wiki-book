@@ -307,7 +307,7 @@ print 的问题不是它简单，而是它没有层级、没有格式契约、�
 
 ## 相关实体
 
-- [FastAPI APIRouter 路由组织最佳实践](../ch01/863-fastapi-apirouter.html)
+- [FastAPI APIRouter 路由组织最佳实践](../ch01/865-fastapi-apirouter.html)
 - [Karpathy AutoResearch 在软件开发领域的应用](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [民生银行 CodeAgent 私域研发探索](ch03/035-agent.html)
 - [Claude Code Hackathon 经验总结](ch03/084-claude-code.html)

@@ -83,7 +83,7 @@ CI Fortify 是国际倡议，澳大利亚政府于2025年率先发布了类似�
 
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
 - [AI in Cybersecurity Training Resources | SANS Institute](../ch05/100-ai.html)
-- [U.S. Bank shifts critical apps to AWS for AI push | CIO Dive](../ch01/436-aws.html)
+- [U.S. Bank shifts critical apps to AWS for AI push | CIO Dive](../ch01/435-aws.html)
 
 ---
 

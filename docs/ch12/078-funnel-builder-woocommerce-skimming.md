@@ -45,7 +45,7 @@ Funnel Builder 包含一个公开暴露的结账端点，允许传入请求选�
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](ch12/068-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/342-01.html)
+- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/357-01.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/funnel-builder-flaw-under-active-exploitation-enables-woocom.md)
 

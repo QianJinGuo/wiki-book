@@ -37,7 +37,7 @@ South Staffordshire 事件几乎完整呈现了 Cl0p 的攻击手册：以钓鱼
 
 此案最值得注意的执法信号是：ICO 并未纠结于响应速度，而是将处罚核心放在 GDPR 所要求的技术与组织安全措施上——权限提升路径未被切断、日志审计形同虚设、Windows Server 2003 仍在服役、补丁与扫描流程缺失，这些都属于「本应早已就位」的基础控制。
 
-Hulme 的表述「等待性能问题或勒索信才发现入侵是不可接受的」直接点出问题本质：该组织不是被安全团队发现，而是被 IT 性能故障暴露。对监管者而言，「是否提前建立可检测、可防御的体系」正取代「是否及时通知」成为问责主轴，这与 [同一事件的 The Register 报道](../ch01/1105-20.html) 所呈现的处罚逻辑一致。
+Hulme 的表述「等待性能问题或勒索信才发现入侵是不可接受的」直接点出问题本质：该组织不是被安全团队发现，而是被 IT 性能故障暴露。对监管者而言，「是否提前建立可检测、可防御的体系」正取代「是否及时通知」成为问责主轴，这与 [同一事件的 The Register 报道](../ch01/1108-20.html) 所呈现的处罚逻辑一致。
 
 ### 四、自愿和解与罚款减免的激励设计
 
@@ -56,9 +56,9 @@ ICO 将罚金从原始拟议金额减免 40%，理由是自愿和解：South Sta
 
 ## 相关实体
 
-- [ICO fines South Staffordshire £963K over 2022 breach](../ch01/1105-20.html)
+- [ICO fines South Staffordshire £963K over 2022 breach](../ch01/1108-20.html)
 - [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [GitHub Breached — Employee Device Hack Led to Exfiltration](../ch01/895-github.html)
+- [GitHub Breached — Employee Device Hack Led to Exfiltration](../ch01/897-github.html)
 - [Hackers accessed BWH Hotels reservation system for months](../ch05/100-ai.html)
 - [Canvas Breach Disrupts Schools & Colleges Nationwide](ch12/034-canvas-breach-disrupts-schools-colleges-nationwide.html)
 

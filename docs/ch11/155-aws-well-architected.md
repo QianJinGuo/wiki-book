@@ -68,10 +68,10 @@
 ## 相关实体
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](ch11/063-prowler-genai.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](ch11/031-restrict-access-to-sensitive-documents-in-your-amazon-q-s3-k.html)
-- [Aws Cognito Multi Region Replication](../ch01/436-aws.html)
+- [Aws Cognito Multi Region Replication](../ch01/435-aws.html)
 - [Aws Transform Ezconvertbi Bi Migration](ch11/227-aws-transform-ezconvertbi-bi-migration.html)
 - [Amazon Bedrock Agentic Payments Guardrails](ch11/306-amazon-bedrock.html)
-- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/192-amazon-ecs.html)
+- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/191-amazon-ecs.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-software-supply-chain-security-well-architected.md)
 

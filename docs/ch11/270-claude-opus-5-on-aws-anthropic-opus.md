@@ -23,7 +23,7 @@
 
 ## Related Entities
 
-- [Claude Platform on AWS](../ch01/695-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Claude Platform on AWS](../ch01/159-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-opus-5-on-aws-anthropics-most-capable-opus-model.md)
 
