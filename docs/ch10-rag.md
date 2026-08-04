@@ -2131,7 +2131,69 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ---
 
-## Ch10.022 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
+## Ch10.022 知识库构建方法论
+
+> 📊 Level ⭐⭐ | 7.9KB | `entities/knowledge-base-construction.md`
+
+# 知识库构建方法论
+
+## 摘要
+
+知识库构建方法论是连接"原始采集"与"结构化知识资产"的工程体系，覆盖入库评分、溯源标注、实体综合、交叉链接、质量控制与自动化管线六个环节。其核心命题是：知识库的效果上限不取决于检索算法，而取决于入库质量与知识结构设计。方法论沿 RAG 平铺检索 → LLM Wiki 编译沉淀 → 分层/图谱知识库演进，实践中以混合架构取胜。
+
+## 核心要点
+
+- **入库评分前置**：以 review_value × review_confidence 的乘积对候选素材打分排序，低分素材不进入知识库，从源头控制质量
+- **溯源标注是可信度基石**：每条综合内容携带 source_url、sha256 与 line-range 引用，让知识可回溯、可审计
+- **三层结构**：raw 素材层 → entities/concepts 综合层 → schema/index 治理层
+- **流水线模式**：Triage → Gate → Store → Evolve 四阶段，把"读-判-存-养"固化为可重复执行的流程
+- **交叉链接即知识图谱**：wikilink 密度决定图谱连通性，broken-link 检测与 lint 是持续质量闸门
+- **自动化采集**：RSS、newsletter、微信公众号等管道自动入库，人工只保留 Gate 把关权
+- **分层优于平铺**：Pyramid KB 证明按抽象层次组织知识可显著降低粒度混乱，混合方案 Hit@3 达 89%
+- **健康度可度量**：orphan rate、覆盖率、链接密度等指标把维护从凭感觉变成看数据
+
+## 深度分析
+
+### 一、入库评分与 Gate：质量在入口而非出口
+
+入库评分（review_value × review_confidence 双维度打分）本质上是把"素材值不值得进库"的决策前置化。RAG 实践中一个反直觉的结论是相当比例的问题出在源文档质量而非检索链路——团队遇到效果不佳时先换 embedding 模型、调 TopK，但真实瓶颈往往是文档从一开始就没处理好，而入库决策具有不可逆性，后续调优无法补偿前序环节的错误。评分机制把质量判断从一次性人工决定变成可比较、可回看的流程：review_confidence 记录判断者的确信程度，低置信度素材即使有潜力也会被标记为待复核，而不是直接污染知识库。Gate 阶段的意义不仅是"过滤"，更是"排队"——当采集量超过综合能力时，评分决定 LLM 优先处理哪些素材。该 wiki 自身的运行即是这一方法论的内化：每个实体页都携带 review_value/review_confidence 字段，把质量判断固化为可 lint 的结构化数据。
+
+### 二、溯源标注：从"AI 生成"到"可审计的知识资产"
+
+知识库区别于普通文档库的核心能力是溯源：source_url 指向原始出处，sha256 保证素材内容未被篡改，line-range 引用把综合后的每个论断锚定到原文的具体位置。溯源的价值体现在三个层面：其一，可信度——内容冲突时可逐层下钻到原始素材裁决，这也是矛盾检测自动运行的前提；其二，维护——素材更新后通过 sha256 变化检测触发下游实体页的重新综合，形成变更驱动的更新链而非日历驱动的例行巡检；其三，审计——企业场景必须回答"这个结论凭什么这么说"，line-range 引用让 AI 综合变成带脚注的论证。LLM Wiki 范式把溯源作为 Ingest 内置环节：综合页面必须携带引用标记，未标注来源的推断会被 lint 标记为 inferred，把"诚实标注不确定性"变成工程约束。溯源标注由此成为区分"AI 生成内容"与"可审计知识资产"的分界线。
+
+### 三、RAG 与结构化知识库：选型不是二选一
+
+RAG 的优势是构建成本低、时效性高（灌一篇搜一篇），结构性缺陷则是无状态（相同问题被重复检索生成、知识无法跨查询累积）、粒度混乱（向量空间不区分抽象层次）、无法全局推理（Top-K 只能找最像的片段）。结构化知识库——LLM Wiki、知识图谱、分层知识库——把知识编译成有状态资产，查询时零边际综合成本，但 Ingest 阶段成本高，且 Schema 设计是高风险决策，出错后修正需要全量重编译。选型的真实维度是知识变更频率、查询量、术语密度与审计需求：高频变更走 RAG，稳定高查询量走 LLM Wiki，术语密集垂直领域需要实体页承载标准化定义。复杂场景则需混合：RAG 负责广覆盖召回，结构化层负责深度沉淀与关联。Pyramid KB 的实测提供了更精细的证据：分层路由 + 向量穿透的混合方案 Hit@3 达 89%，以 0+1 次 API 调用实现，说明"结构化导航 + 语义检索"的组合优于任何单一范式。
+
+### 四、健康度度量：知识库的可观测性与保鲜
+
+知识库会持续腐烂：接口签名变了文档没更新（静默过期）、架构决策降级为历史背景却仍留在原层（层级漂移）、新服务上线数月但实现层完全没有它（覆盖盲区）。对抗腐烂需要可观测性——orphan rate（孤立页比例）反映交叉链接失效，覆盖率反映知识库对业务域的覆盖完整度，链接密度反映图谱连通性，lint 的 broken-link 检测把"链接坏了"从用户偶然发现变成 CI 阶段的自动发现。修复上审计驱动优于日历驱动：用覆盖率/新鲜度/图谱连通/层级平衡四类审计定位腐烂点，按变更触发局部重编译，使成本只与变化量相关。最终目标是把知识库从"构建时合格"推进到"持续合格"——健康度指标、自动化管道与保鲜机制三者缺一不可，这与阿里云直播数据 LLM Wiki 实践的"增量编译 + 持续 Lint 巡检"结论一致。
+
+## 实践启示
+
+1. **把入库评分做成硬闸门**：为每个候选素材计算价值 × 置信度乘积，设定明确阈值，低于阈值不进库；低置信度素材单独标记待复核
+2. **先治理源头文档，再调检索**：文档格式优先级 Markdown > Word > PDF > 扫描件；清洗水印、URL 等噪音优于更换 embedding 模型
+3. **强制溯源标注**：综合页面每条论断锚定 line-range 引用，无法溯源的推断内容显式标记，用 lint 自动检查引用完整性与来源存在性
+4. **用自动化管道降低采集成本**：RSS、newsletter、公众号管道负责采集与打分，人工只保留 Gate 决策权，把人的精力集中在判断而非搬运
+5. **按知识特征选型而非追逐潮流**：高频变更用 RAG、稳定高查询量用 LLM Wiki、复杂分析用混合；用分层结构（实体/概念/素材三层或 Pyramid 五层）对抗粒度混乱
+6. **把健康度变成指标**：定期统计 orphan rate、覆盖率、链接密度，按变更驱动修复，避免知识库"建完即腐烂"
+
+## 相关实体
+
+- [AI 导购在 vivo 官网的落地实践](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-ai-sales-guide-ecommerce-agent.md)
+- [Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
+- [RAG vs LLM Wiki 深度对比：企业知识库架构选型指南](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vs-llm-wiki-enterprise-knowledge-base.md)
+- [AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-equipment-repair-assistant.md)
+- [RAG Chunk Embedding Rerank Pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
+- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) — LLM Wiki 范式的方法论源头
+- [Hermes Skills LLM Wiki 自进化知识系统](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md) — 本 wiki 自身的流水线实现
+- [向量库·知识图谱·本体论：RAG 知识系统演进](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vector-knowledge-graph-ontology.md) — 知识表示层的演进对照
+- [RAG 知识检索 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md) — 主题地图导航
+
+---
+
+## Ch10.023 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
 
@@ -2226,7 +2288,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ---
 
-## Ch10.023 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.024 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
@@ -2271,7 +2333,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ---
 
-## Ch10.024 Notes on Amazon v. Perplexity
+## Ch10.025 Notes on Amazon v. Perplexity
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/amazon-perplexity-legal-analysis.md`
 
@@ -2350,7 +2412,7 @@ Agentic browsing 正是这种用户代理权的最新表达——它让用户无
 
 ---
 
-## Ch10.025 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.026 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮-v2.md`
 
@@ -2404,7 +2466,7 @@ AI 客服出问题不是传统意义的报错，而是意图识别错、问题�
 
 ---
 
-## Ch10.026 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
+## Ch10.027 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/gbrain-8layer-51cto.md`
 
@@ -2454,7 +2516,7 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 
 ---
 
-## Ch10.027 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+## Ch10.028 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
@@ -2525,7 +2587,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ---
 
-## Ch10.028 How we built SmithDB’s inverted index for full-text search
+## Ch10.029 How we built SmithDB’s inverted index for full-text search
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
 
@@ -2576,7 +2638,7 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 
 ---
 
-## Ch10.029 为OpenClaw配置网盘空间的最佳实践
+## Ch10.030 为OpenClaw配置网盘空间的最佳实践
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
 
@@ -2621,7 +2683,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ---
 
-## Ch10.030 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+## Ch10.031 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
@@ -2664,7 +2726,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 ---
 
-## Ch10.031 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
+## Ch10.032 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/guardoc-health-medical-document-processing-amazon-nova.md`
 
@@ -2727,7 +2789,7 @@ Guardoc 的部署效果量化案例：
 
 ---
 
-## Ch10.032 Task-Aware Knowledge Compression (TAKC)
+## Ch10.033 Task-Aware Knowledge Compression (TAKC)
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/task-aware-knowledge-compression-takc.md`
 
@@ -2784,7 +2846,7 @@ TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档
 
 ---
 
-## Ch10.033 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
+## Ch10.034 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
 
@@ -2814,7 +2876,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.034 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.035 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
@@ -2867,7 +2929,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch10.035 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+## Ch10.036 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
 
@@ -2908,7 +2970,7 @@ source_published: 2026年7月8日 17:00
 
 ---
 
-## Ch10.036 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
+## Ch10.037 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/graphrag-needed-aws-9-rag-comparison-2026.md`
 
@@ -2962,7 +3024,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.037 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
+## Ch10.038 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
 
@@ -3007,36 +3069,6 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 ## 相关实体
 - [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线
 - [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案
-
----
-
-## Ch10.038 知识库构建方法论
-
-> 📊 Level ⭐⭐ | 1.7KB | `entities/knowledge-base-construction.md`
-
-# 知识库构建方法论
-
-AI 驱动的知识库构建方法论：从原始采集到结构化编目的完整流水线。涵盖入库评分、溯源标注、交叉链接、质量控制、自动化管线等环节。
-
-## 深度分析
-
-本页作为知识图谱锚点，连接了以下关键实体：[AI 导购在 vivo 官网的落地实践](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-ai-sales-guide-ecommerce-agent.md)。 相关主题通过 [Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md) 延伸。
-
-> 本页内容将在入库相关溯源素材后进一步深化。
-
-## 实践启示
-
-1. 本领域系统性内容尚待采集——当前知识库在此方向的覆盖密度偏低
-2. 建议优先采集 知识库构建方法论 相关的一手来源（论文/官方文档/工程博客）
-3. 通过交叉链接密度评估本领域的知识图谱成熟度
-
-## 相关实体
-
-- [AI 导购在 vivo 官网的落地实践](https://github.com/QianJinGuo/wiki/blob/main/entities/vivo-ai-sales-guide-ecommerce-agent.md)
-- [Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
-- [RAG vs LLM Wiki 深度对比：企业知识库架构选型指南](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vs-llm-wiki-enterprise-knowledge-base.md)
-- [AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-bedrock-agentcore-equipment-repair-assistant.md)
-- [RAG Chunk Embedding Rerank Pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
 
 ---
 

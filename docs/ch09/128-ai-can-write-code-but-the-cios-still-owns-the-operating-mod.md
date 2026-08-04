@@ -9,9 +9,9 @@
 - AI Can Write Code but CIOs Own the Operating Model
 
 ## 相关实体
-- [Ai Is Writing More Code Your Ci Pipeline](../ch01/1078-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.html)
-- [From System Of Record To System Of Intelligence](../ch01/442-from-system-of-record-to-system-of-intelligence.html)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1368-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Ai Is Writing More Code Your Ci Pipeline](../ch01/1081-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.html)
+- [From System Of Record To System Of Intelligence](../ch01/441-from-system-of-record-to-system-of-intelligence.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/1371-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](../ch01/155-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](../ch04/470-agent-skills.html)
 

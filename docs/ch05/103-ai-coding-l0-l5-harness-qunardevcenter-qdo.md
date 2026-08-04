@@ -66,7 +66,7 @@ AI 研发自动化编排引擎。JDK 自动升级案例：211 个应用，编译
 - [Agent Harness 架构](ch05/062-agent-harness.html) — Harness Engineering 概念框架
 - [Enterprise Readiness Maturity Model](../ch11/237-enterprise-readiness-maturity-model.html) — 企业成熟度模型
 - [从 SDD 到 Lattice Harness](ch05/118-ai-coding.html) — 另一团队级 AI Coding harness 实践
-- [AI Infra 全景 9 层架构](../ch01/1435-ai-infra.html) — AI 基础设施全景
+- [AI Infra 全景 9 层架构](../ch01/944-ai-infra.html) — AI 基础设施全景
 
 ---
 

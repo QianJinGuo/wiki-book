@@ -74,8 +74,8 @@ Thariq 自己的实践案例最具说服力：Fable 的发布视频完全是 Cla
 
 - [Claude Code Deep Architecture Analysis](../ch03/084-claude-code.html) — Claude Code 的深度架构分析与使用模式
 - [Claude Code Skills Workflow Encapsulation Costa Long](../ch07/032-claude-code-skills.html) — Skill 工作流封装，与 Thariq 的未知消除法互补
-- [Fable 5 模型能力分析](../ch01/475-claude-fable-5.html) — Fable 5 模型能力分析
-- [Agentic Coding 方法论](../ch04/075-agentic.html) — Agentic Coding 方法论的整体框架
+- [Fable 5 模型能力分析](../ch01/474-claude-fable-5.html) — Fable 5 模型能力分析
+- [Agentic Coding 方法论](../ch04/718-agentic.html) — Agentic Coding 方法论的整体框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/全网爆火claude-code核心工程师放出fable-5使用心法.md)
 

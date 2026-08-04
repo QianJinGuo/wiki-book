@@ -57,7 +57,7 @@ Reference 在三端各有侧重：iPhone 用于随时捕获灵感，iPad 提供�
 - **DAM 能力**: 虽非专业 DAM 系统，但自动标签、颜色识别和 OCR 使其具备轻量级数字资产组织能力
 
 ## 相关实体
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/1105-20.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](../ch01/1108-20.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/100-ai.html)
 - [Somethings Rotten In The State Of Macos Icon Design](https://github.com/QianJinGuo/wiki/blob/main/entities/somethings-rotten-in-the-state-of-macos-icon-design.md)
 - [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](../ch05/118-ai-coding.html)

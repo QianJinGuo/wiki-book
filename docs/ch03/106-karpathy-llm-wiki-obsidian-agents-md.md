@@ -30,7 +30,7 @@ LLM 把记账接过去了，wiki 才能持续被维护。Karpathy 关联到 Vann
 
 本文提供了结构化对比表：RAG 不累积/产物不可见/不发现矛盾/用户重新上传才能更新；LLM Wiki 持续累积/可读可编辑的 markdown/主动标注矛盾/维护成本趋近于零。
 
-这与 [LLM Wiki 架构](../ch01/1476-llm.html) 实体互补——该实体侧重概念框架，本文侧重具体实现。也与本 wiki 自身的运作模式一致（见 [Hermes Skills LLM Wiki](../ch07/018-hermes-skill.html)）。
+这与 [LLM Wiki 架构](../ch01/859-llm.html) 实体互补——该实体侧重概念框架，本文侧重具体实现。也与本 wiki 自身的运作模式一致（见 [Hermes Skills LLM Wiki](../ch07/018-hermes-skill.html)）。
 
 ## 深度分析
 
@@ -60,7 +60,7 @@ Consolidate（定期整合）是 Ingest 的补充，用于解决多次 Ingest �
 
 ### 与现有 LLM Wiki 方法论的协同
 
-本 wiki 的运作模式与 Karpathy 的 LLM Wiki 方法论高度一致：通过 [Hermes Skills LLM Wiki](../ch07/018-hermes-skill.html) 技能实现自动化的 Ingest 和 Consolidate；通过 AGENTS.md（即本文的 Schema 层）定义 wiki 的组织方式和编辑规范。[LLM Wiki 架构](../ch01/1476-llm.html) 实体则从更高维度描述了这一模式的理论基础。
+本 wiki 的运作模式与 Karpathy 的 LLM Wiki 方法论高度一致：通过 [Hermes Skills LLM Wiki](../ch07/018-hermes-skill.html) 技能实现自动化的 Ingest 和 Consolidate；通过 AGENTS.md（即本文的 Schema 层）定义 wiki 的组织方式和编辑规范。[LLM Wiki 架构](../ch01/859-llm.html) 实体则从更高维度描述了这一模式的理论基础。
 
 ## 实践启示
 

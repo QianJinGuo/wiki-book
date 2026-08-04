@@ -89,9 +89,9 @@ Prompt 的逻辑是"告诉 AI 怎么做"——给出规则、给出示例、给�
 
 ## 相关实体
 
-- [Agent Skill Writing Practices — Skill 写作规范与模式](../ch04/680-agent-skill.html)
+- [Agent Skill Writing Practices — Skill 写作规范与模式](../ch04/684-agent-skill.html)
 - [AI Skill 进化框架 — Skill 沉淀与持续优化](../ch07/010-ai-skill-evolution.html)
-- [Agent Skill Writing — Skill 基础框架](../ch04/680-agent-skill.html)
+- [Agent Skill Writing — Skill 基础框架](../ch04/684-agent-skill.html)
 
 ---
 

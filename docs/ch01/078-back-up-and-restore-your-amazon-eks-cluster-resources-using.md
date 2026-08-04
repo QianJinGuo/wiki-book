@@ -9,7 +9,7 @@
 ## 相关实体
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/021-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](../ch11/025-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
-- [Introducing Claude Platform On Aws](ch01/695-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Introducing Claude Platform On Aws](ch01/159-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/160-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](../ch04/010-announcing-genkit-middleware-intercept-extend-and-harden.html)
 
