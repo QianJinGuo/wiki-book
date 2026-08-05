@@ -42,9 +42,9 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 
 ## Related Supply Chain Incidents
 
-- [Semgrep Intercom PHP](ch12/122-semgrep-intercom-php-supply-chain.html) - malicious package via package manager
-- [Claude Code Malicious Skills](../ch01/1099-skill-issues-compromising-claude-code-with-malicious-skills.html) - Agent/Skill ecosystem risk
-- [Checkmarx Jenkins Plugin](../ch01/545-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) - plugin marketplace attack
+- [Semgrep Intercom PHP](ch12/123-semgrep-intercom-php-supply-chain.html) - malicious package via package manager
+- [Claude Code Malicious Skills](../ch01/1105-skill-issues-compromising-claude-code-with-malicious-skills.html) - Agent/Skill ecosystem risk
+- [Checkmarx Jenkins Plugin](../ch01/544-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) - plugin marketplace attack
 
 ## 深度分析
 

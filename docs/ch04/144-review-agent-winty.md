@@ -5,7 +5,7 @@
 > 📊 Level ⭐⭐ | 17.8KB | `entities/review-agent-deep-dive-winty.md`
 
 # Review Agent 机制深度解析
-来源：[前端Q/winty](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)（2026-05-18），评分 56；同系列有 [Hermes Self-Improving Loop 详解](../ch01/293-hermes.html)（2026-05-12）覆盖四组件全貌
+来源：[前端Q/winty](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)（2026-05-18），评分 56；同系列有 [Hermes Self-Improving Loop 详解](../ch01/292-hermes.html)（2026-05-12）覆盖四组件全貌
 
 ## 核心定位
 Review Agent = Hermes 的"心智"。独立于执行 Agent 之外，专门负责复盘和判断什么值得沉淀为长期记忆。
@@ -144,7 +144,7 @@ Review Agent 优先 patch 已有的 Memory/Skill，避免了"同一个事实被�
 
 ## 相关实体
 - [Skill 系统](../ch07/018-hermes-skill.html) — Skill 的触发条件、Patch 机制、版本管理
-- [Hermes 九模块架构](../ch01/293-hermes.html) — 架构全图，Review Agent 在第 7 模块
+- [Hermes 九模块架构](../ch01/292-hermes.html) — 架构全图，Review Agent 在第 7 模块
 
 ---
 

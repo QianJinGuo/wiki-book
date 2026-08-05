@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **56 篇**实体，按深度递增排列。
+> 本章收录 **57 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 16 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 35 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 36 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
@@ -4469,7 +4469,44 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.052 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.052 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+
+> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
+
+# Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+
+> **Background**：Mistral AI 发布 Shieldstral（3B open-weights 多模态安全分类器），核心创新是把内容审核从「固定有害类别 taxonomy」重构为「policy-adaptive question-answering」——模型在推理时接受自然语言策略（如"这段内容是否煽动针对受保护群体的暴力？"），返回校准安全分数，无需针对每个部署上下文重训。
+
+## 核心创新：Policy-Adaptive QA 范式
+
+传统 guardrail 模型把固定 harm categories taxonomy 烘焙进权重，重新定向到新部署上下文意味着重训。Shieldstral 换了一个思路：**推理时用自然语言写策略，模型返回校准安全分数**——无重训、文本图像统一接口、单 token 出 verdict。
+
+同一内容在不同场景的安全性不同（网络安全研究工具 vs 心理健康平台），因此不存在单一"正确"的类别集合——这正是 policy-adaptive 设计的前提。
+
+## 关键指标
+
+- **3B open-weights**，Apache 2.0 协议
+- **文本安全**：匹配 7× 体量模型
+- **多模态审核**：SOTA（文本 + 图像统一接口）
+- **运行开销**：单张 16GB NVIDIA GPU 即可高效运行
+- **输出**：校准安全分数（calibrated safety scores）
+
+## 对 LLM 安全工程的意义
+
+- **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md) 类平台方案形成互补（平台 vs open-weights 两种路线）
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](https://github.com/QianJinGuo/wiki/blob/main/entities/prompting-amazon-nova-2-for-content-moderation.md) 思路同源
+- **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
+
+## 相关主题
+
+- 同类 open-weights 安全模型：[Nemotron 3.5 Content Safety (multimodal)](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)、[Nemotron 3.5 Content Safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety.md)
+- 平台级 guardrail：[Amazon Bedrock Guardrails](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mistral-shieldstral-policy-adaptive-safety-classifier.md)
+
+---
+
+## Ch17.053 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4513,7 +4550,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.053 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.054 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4558,7 +4595,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.054 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.055 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4586,7 +4623,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.055 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.056 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -4710,7 +4747,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.056 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.057 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

@@ -20,7 +20,7 @@ Domino 由两部分组成：**parallel draft backbone** 为整个 draft block �
 
 在 Qwen3-4B 和 Qwen3-8B 上，Domino 在数学、代码、对话等任务中都取得稳定提升。在 greedy decoding 设置下，Qwen3-4B 上平均达到 5.47x 端到端加速，Qwen3-8B 上平均达 5.49x，GSM8K 等任务上最高可达 7.92x。消融实验显示，关闭 Domino head 后平均接受长度从 4.19 降到 3.49，平均速度从 3.31x 降到 2.84x，说明轻量 prefix-dependent correction 是 Domino 的关键来源。
 
-→ [DeepSeek DSpark 投机解码](ch01/968-deepseek-dspark.html)
+→ [DeepSeek DSpark 投机解码](ch01/973-deepseek-dspark.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/大三本科生一作交出792倍加速的投机解码新答卷deepseek和阶跃星辰双双引用.md)
 

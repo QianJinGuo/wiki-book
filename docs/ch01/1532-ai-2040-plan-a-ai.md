@@ -74,7 +74,7 @@ Plan A 发布后最激烈的批评来自 Richard Ngo（《选择性乐观》）�
 - [Ai Philosophers Ethics Alignment Deepmind Anthropic 2026](ch01/1533-anthropic.html) — AI 对齐与哲学家的讨论
 - [Anthropic Global Workspace J Space 2026](ch01/1533-anthropic.html) — AI 意识与内部可解释性研究
 - [Claude Code Origin Safety Alignment Boris 2026](../ch03/084-claude-code.html) — Claude Code 的起源与安全对齐
-- [Human Aligning To Machine Reverse Alignment 2026](ch01/1108-20.html) — 反向对齐：人类适应机器
+- [Human Aligning To Machine Reverse Alignment 2026](ch01/1114-20.html) — 反向对齐：人类适应机器
 - [Ai Safety Governance](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-safety-governance.md) — AI 安全与治理框架
 - [Rlhf Dpo Grpo Alignment](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — 对齐技术方法论
 

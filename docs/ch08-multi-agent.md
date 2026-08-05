@@ -231,131 +231,9 @@ Addy Osmani（Google 工程负责人）提出的双轴模型：
 
 ---
 
-## Ch08.004 Oz Multi-Harness Cloud Agent Orchestration (Warp)
+## Ch08.004 Graph Engineering：从单循环到多节点编排
 
-> 📊 Level ⭐⭐ | 12.1KB | `entities/oz-multi-harness-cloud-agent-orchestration.md`
-
-# Oz Multi-Harness Cloud Agent Orchestration
-
-Warp 在 2026-05-19 推出 [Oz](https://www.warp.dev/oz) 重大升级，将其定位为**首个真正的多 harness 云 Agent 控制平面**。核心命题：**「企业不应该被迫把未来押在单一模型或 harness 上」**。Oz 在云端统一编排 Claude Code、Codex、Warp Agent 三个主流 harness，提供自动多 Agent 编排、跨 harness 的 Agent Memory、扩展的自托管选项（Docker / Kubernetes / 远程开发环境）、以及精细化成本与权限治理。这是 [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)从「单 harness 多 model」升级到「多 harness 多 model」的标志性事件。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/oz-multi-harness-cloud-agent-orchestration.md)
-
-## 摘要
-
-Warp 团队与工程领导者深度合作后总结出三大共同需求：（1）2026 年要规模化部署云 Agent，但需要可控可治理；（2）需要 harness 选择权——不同任务用不同 harness 并测量效果；（3）希望 Agents 跑在自己的基础设施上，数据完全所有。本次 Oz 升级正面回应这三点。最大变化是 **multi-harness**：Oz 原本就是 multi-model，现在进一步抽象到 harness 这一层，因为「Agent 性能是 harness 和 model 的联合函数」。它成了所有云 Agent 的 single pane of glass——统一的启动、追踪、治理、对比、审计接口。
-
-## 核心要点
-
-- **核心定位**：first truly multi-harness control plane for cloud agents——比 [AgentCore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) 多了一层「harness 选择权」的抽象
-- **支持的 harness**：Claude Code、Codex、Warp Agent 三家可在云端互换运行；multi-harness orchestration 对所有用户开放（beta）
-- **自动多 Agent 编排**：Oz 可以自动 spawn 多个 subagent 并行处理长时任务（大特性构建、code migration、生产部署），跨 harness 自动追踪、steering、提供管理界面
-- **跨 harness Agent Memory（research preview）**：业界第一个跨 harness 的记忆系统——code review agent 学习团队代码风格、生产 agent 记住部署拓扑、数据分析 agent 记住数据结构
-- **Agent Memory 关键特性**：（1）可插拔数据源（文件、MCP、数据库、企业应用）；（2）可写入（Oz 完成任务后自动添加到知识库）；（3）企业可自托管，自己拥有 memory corpus
-- **扩展自托管**：支持有/无 Docker、Kubernetes pods、远程开发环境，直接代码执行也可——「Oz works with your existing systems」
-- **治理增强**：per-team billing、个人 credit cap、用量与产出可视化；每个 agent 的服务访问权限可独立设置，对应「Least Privilege for Agents」原则
-- **会话便携**：API/SDK 支持返回 artifacts + 原始对话；本地 ↔ 云端 ↔ 远程随时切换——「手机上启动十个 agent、笔记本继续、晚上推回云端」
-- **战略含义**：Warp 从「最好的终端」延伸到「云 Agent 的 Kubernetes」——这是终端公司向 AI 基础设施迁移的典型案例
-
-## 深度分析
-
-### 「不要押注单一 harness」是 2026 企业 AI 战略的核心命题
-
-Oz 给出的命题非常清晰：**「Agent 性能是 harness 和 model 的联合函数」**。这一句话至少包含三层判断：
-
-1. **harness 和 model 是正交维度**：同样的 Claude 4 跑在 Claude Code、Cursor、自研 harness 里表现差异巨大——上下文管理、tool 调用策略、规划方式都不同
-2. **不同任务的最优 harness 不同**：代码审查可能 Codex 更稳，长任务规划可能 Claude Code 更强，自定义脚本可能 Warp Agent 最贴合
-3. **多供应商对冲是基础设施层的责任**：让业务侧自己写 harness 适配是错的，应当由编排层抽象掉
-
-这与 [Agent 框架对比](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-framework-comparison.md)中的核心论点一致——但 Oz 是少数把这个判断**直接做成产品**的厂商。绝大多数企业当前还在「按 harness 各自做 PoC」的阶段，Oz 是把这一阶段产品化的尝试。
-
-### Cross-Harness Agent Memory 是真正的差异化
-
-公告里其他特性（Kubernetes 自托管、per-team billing、API/SDK）基本都是「企业必选项的补全」；唯一真正具有产品壁垒的是 **cross-harness Agent Memory**。
-
-它的设计有几点值得特别关注：
-
-- **跨 harness**：Claude Code 学到的东西可以被 Codex 复用——这要求 memory 不能绑定到 harness 的内部表示
-- **可写入**：Oz 完成任务后自动追加到 memory，形成 self-improvement 闭环
-- **可插拔数据源**：文件（skills）、MCP、数据库、企业应用——把企业现有知识资产纳入 Agent 上下文
-- **可自托管**：「Warp 可以替你托管，但我们相信企业会想自己拥有 corpus」——这一句直接回应了企业对数据所有权的核心顾虑
-
-这套架构与 [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)和 [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)中讨论的「双向、长期、企业自有」三个理想性质完全对齐。它和 Obsidian + QMD 类型的本地方案（见 [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md)策略 5）属于同一思路的两个层级：QMD 是个人工作站方案，Oz Agent Memory 是企业方案。
-
-### 「single pane of glass」对企业 AI 治理的真正含义
-
-Oz 反复强调「统一控制平面」——这是企业 AI 部署的核心痛点。在没有 Oz 的世界里：
-
-- Claude Code 的使用统计在 Anthropic 后台
-- Codex 的使用在 OpenAI 后台
-- Warp Agent 在 Warp 自己
-- 各自的审计日志、权限模型、计费维度完全不同
-- 想知道「我们公司这个月 AI 总开销 / 高风险操作」需要至少跨三个系统
-
-Oz 的价值是把「**审计 / 治理 / 计费 / 权限**」这四件事从 harness 厂商手里收回到企业自己的控制平面里。这对受合规约束的行业（金融、医疗、政府）几乎是必选项。
-
-### Least Privilege for Agents：从理论走向产品
-
-文中提到「individual agents to have granular permissions to internal services, following the model of allowing agents to have the least privilege」——把信息安全里的最小权限原则正式应用到 Agent 上。
-
-具体含义：**处理生产系统的 agent** 和 **访问 CRM 的 agent** 应当持有完全不同的凭证集合。这与 [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)中讨论的核心原则一致，但 Oz 把它从「最佳实践建议」做成了「产品默认配置」。
-
-这是个被严重低估的特性。当前 AI Agent 安全事故的相当一部分根因是「Agent 用了过宽的服务账号」——给 read-only 任务的 agent 配了 admin 凭证，然后被 prompt injection 引发越权操作。
-
-### 战略层面：Warp 从「终端」延伸到「AI 基础设施」
-
-Warp 起家是「最好用的现代终端」，现在通过 Oz 把战线推到了云 Agent 编排层。这是一个非常聪明的 land-and-expand：
-
-- 终端是开发者每天都开的入口
-- 从终端 → 终端里集成 Agent → 多个 Agent 协作需要 orchestration → 自然演化到云端控制平面
-
-对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
-
-### 与 AgentCore 的微妙差异
-
-Oz 和 AWS [AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) 在功能列表上有大量重叠，但定位有微妙不同：
-
-| 维度 | Oz | AgentCore |
-|---|---|---|
-| 抽象层级 | harness 编排 | runtime 托管 |
-| 默认绑定 | 工具中立 | AWS 生态 |
-| 多 harness | 是（Claude Code/Codex/Warp Agent） | 主要是 Strands SDK 框架 |
-| 自托管 | Kubernetes / 远程开发环境 | 主要是 AWS |
-| 切入用户 | 已有 AI 工具试点的工程团队 | AWS 已有客户 |
-
-简单说：AgentCore 是「AWS 让你在 AWS 上跑 Agent 更方便」，Oz 是「让你在任何地方跑任何 harness 更方便」。两者会在中型企业市场正面竞争。
-
-## 实践启示
-
-1. **企业 AI 选型应当假设 multi-harness**：不要把所有押注放在一个 harness 上——半年后最佳实践可能完全不同
-2. **Agent Memory 是下一个差异化战场**：评估编排平台时，问「memory 是否可写入、跨 harness、可自托管」三件事
-3. **Least Privilege 必须从一开始就做**：不要给所有 agent 同一个 admin 凭证——按服务类型拆分凭证
-4. **会话便携性是新基础设施特性**：本地 ↔ 云端 ↔ 远程随时切换，会改变开发者的工作节奏
-5. **single pane of glass 是合规行业的硬需求**：金融/医疗/政府绕不开统一审计与治理
-6. **关注 Warp 的产品演化**：从终端切入做 AI 基础设施是值得追踪的战略路径
-7. **AgentCore vs Oz 的选型逻辑**：已在 AWS 的选 AgentCore，工具中立选 Oz，跨多家 AI 厂商必选 Oz
-8. **「harness 是性能维度」是新的工程认知**：性能调优不再只是换模型——换 harness 可能效果更显著
-
-## 相关实体
-
-- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
-- [Agentcore Managed Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) — Managed Harness 定位
-- [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) — Agent Harness 架构
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harnesses-are-dead-long-live-agent-harnesses.md) — Harness 演进观察
-- [Agent Memory Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md) — Agent Memory 架构综述
-- [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
-- [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
-- [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
-- [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — Agent 安全架构
-- [Agent Memory Systematic Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md) — Agent 记忆系统框架
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
-
----
-
-## Ch08.005 Graph Engineering：从单循环到多节点编排
-
-> 📊 Level ⭐⭐ | 9.4KB | `entities/graph-engineering-loop-to-graph-tencent.md`
+> 📊 Level ⭐⭐ | 12.4KB | `entities/graph-engineering-loop-to-graph-tencent.md`
 
 # Graph Engineering：从单循环到多节点编排
 
@@ -480,8 +358,151 @@ Agent 从材料读到的只能先作为**候选主张（claim）**，经实体�
 
 从 PostgreSQL 起步（claims/entities/relations/evidence 四张表），不必急于上图数据库。先盯住四件事：时间和版本不可静默覆盖、幂等键防重复写入、遍历时校验权限、撤回事件通知执行系统。
 
+## 防跑偏三方法（飞樰，阿里云云原生 Supplementary）
+
+Graph 体系要防"为了优化指标而牺牲本质"，需要三个不可动摇的约束（Carlos Perez 框架，2026-08-05 阿里云云原生飞樰补充）：
+
+1. **Anchors（锚点）**：不可争论的事实必须由外部系统真实验证，不能由模型说了算——"钱真的转到账户了"而非报告写"转账成功"；"测试真的跑通了"而非标记"Pass"。锚点监督 Loop 有效性，防止模型自欺欺人。
+2. **Frozen Nodes（冻结节点）**：优化器永远不能修改的规则，最典型是测试集——一旦定好有效测试集，不能因"效果不理想"改简单它。核心评估标准必须"冻结"，堵死"测量衰减"陷阱。
+3. **External Judgment（外部判断）**："什么值得追求""什么目标有意义"必须由人来判断，系统只高效执行——这是防止 AI 在错误道路上狂奔的最重要防线。
+
+### 单 Loop 四失败原因（补充框架）
+
+飞樰补充了单 Loop 四种结构性失败原因的完整框架：① Goodhart's Law（指标优化后不再衡量原目标，AI 客服"刷解决率"案例：快速关单/阻止追问/滥用标记，5 个月指标涨但客户流失翻倍）；② Blindness Upward（向上盲视，无法质疑目标本身）；③ Conflict（多 Loop 目标打架）；④ Measurement Decay（测量衰减，改评判标准/换简单评测集）。对应四种 Graph 对策：监督循环（制衡刷指标）、慢循环（修正目标）、仲裁循环（解决冲突）、审计循环（检查指标失真）。
+
+### Graph vs Workflow vs Dynamic Workflow
+
+传统 Workflow = 确定性流水线（预先设定、路径不可变）；Dynamic Workflow（Claude Code）= 动态生成但相对固定，仍是单开发者一次性/短时任务的产品功能；Graph Engineering = 动态"组织管理"，多 Loop 组合互监督、运行中自主调整——三者是不同维度的抽象。
+
+### 实战模式：监督 Loop + 评测集审批
+
+文本分类场景：分类 Loop + 监督分类依据 Loop（审查规则合理性，发现过拟合直接驳回）+ 监管评测集 Loop（调整评测集须经另一 Agent 严格审批：调整依据/新数据来源/是否随机抽取）+ Test/Validation 分离（模型只在测试集迭代，验证集是盲盒，双集都提升才算真提升）。
+
 → [原文存档（腾讯技术工程）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-tencent-lukiexing-2026.md)
 → [原文存档（若飞/架构师，Supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-agent-loop-fact-management-ruofei-2026.md)
+→ [原文存档（飞樰/阿里云云原生，Supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-feixue-aliyun-2026-08-05.md)
+
+---
+
+## Ch08.005 Oz Multi-Harness Cloud Agent Orchestration (Warp)
+
+> 📊 Level ⭐⭐ | 12.1KB | `entities/oz-multi-harness-cloud-agent-orchestration.md`
+
+# Oz Multi-Harness Cloud Agent Orchestration
+
+Warp 在 2026-05-19 推出 [Oz](https://www.warp.dev/oz) 重大升级，将其定位为**首个真正的多 harness 云 Agent 控制平面**。核心命题：**「企业不应该被迫把未来押在单一模型或 harness 上」**。Oz 在云端统一编排 Claude Code、Codex、Warp Agent 三个主流 harness，提供自动多 Agent 编排、跨 harness 的 Agent Memory、扩展的自托管选项（Docker / Kubernetes / 远程开发环境）、以及精细化成本与权限治理。这是 [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)从「单 harness 多 model」升级到「多 harness 多 model」的标志性事件。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/oz-multi-harness-cloud-agent-orchestration.md)
+
+## 摘要
+
+Warp 团队与工程领导者深度合作后总结出三大共同需求：（1）2026 年要规模化部署云 Agent，但需要可控可治理；（2）需要 harness 选择权——不同任务用不同 harness 并测量效果；（3）希望 Agents 跑在自己的基础设施上，数据完全所有。本次 Oz 升级正面回应这三点。最大变化是 **multi-harness**：Oz 原本就是 multi-model，现在进一步抽象到 harness 这一层，因为「Agent 性能是 harness 和 model 的联合函数」。它成了所有云 Agent 的 single pane of glass——统一的启动、追踪、治理、对比、审计接口。
+
+## 核心要点
+
+- **核心定位**：first truly multi-harness control plane for cloud agents——比 [AgentCore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) 多了一层「harness 选择权」的抽象
+- **支持的 harness**：Claude Code、Codex、Warp Agent 三家可在云端互换运行；multi-harness orchestration 对所有用户开放（beta）
+- **自动多 Agent 编排**：Oz 可以自动 spawn 多个 subagent 并行处理长时任务（大特性构建、code migration、生产部署），跨 harness 自动追踪、steering、提供管理界面
+- **跨 harness Agent Memory（research preview）**：业界第一个跨 harness 的记忆系统——code review agent 学习团队代码风格、生产 agent 记住部署拓扑、数据分析 agent 记住数据结构
+- **Agent Memory 关键特性**：（1）可插拔数据源（文件、MCP、数据库、企业应用）；（2）可写入（Oz 完成任务后自动添加到知识库）；（3）企业可自托管，自己拥有 memory corpus
+- **扩展自托管**：支持有/无 Docker、Kubernetes pods、远程开发环境，直接代码执行也可——「Oz works with your existing systems」
+- **治理增强**：per-team billing、个人 credit cap、用量与产出可视化；每个 agent 的服务访问权限可独立设置，对应「Least Privilege for Agents」原则
+- **会话便携**：API/SDK 支持返回 artifacts + 原始对话；本地 ↔ 云端 ↔ 远程随时切换——「手机上启动十个 agent、笔记本继续、晚上推回云端」
+- **战略含义**：Warp 从「最好的终端」延伸到「云 Agent 的 Kubernetes」——这是终端公司向 AI 基础设施迁移的典型案例
+
+## 深度分析
+
+### 「不要押注单一 harness」是 2026 企业 AI 战略的核心命题
+
+Oz 给出的命题非常清晰：**「Agent 性能是 harness 和 model 的联合函数」**。这一句话至少包含三层判断：
+
+1. **harness 和 model 是正交维度**：同样的 Claude 4 跑在 Claude Code、Cursor、自研 harness 里表现差异巨大——上下文管理、tool 调用策略、规划方式都不同
+2. **不同任务的最优 harness 不同**：代码审查可能 Codex 更稳，长任务规划可能 Claude Code 更强，自定义脚本可能 Warp Agent 最贴合
+3. **多供应商对冲是基础设施层的责任**：让业务侧自己写 harness 适配是错的，应当由编排层抽象掉
+
+这与 [Agent 框架对比](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-framework-comparison.md)中的核心论点一致——但 Oz 是少数把这个判断**直接做成产品**的厂商。绝大多数企业当前还在「按 harness 各自做 PoC」的阶段，Oz 是把这一阶段产品化的尝试。
+
+### Cross-Harness Agent Memory 是真正的差异化
+
+公告里其他特性（Kubernetes 自托管、per-team billing、API/SDK）基本都是「企业必选项的补全」；唯一真正具有产品壁垒的是 **cross-harness Agent Memory**。
+
+它的设计有几点值得特别关注：
+
+- **跨 harness**：Claude Code 学到的东西可以被 Codex 复用——这要求 memory 不能绑定到 harness 的内部表示
+- **可写入**：Oz 完成任务后自动追加到 memory，形成 self-improvement 闭环
+- **可插拔数据源**：文件（skills）、MCP、数据库、企业应用——把企业现有知识资产纳入 Agent 上下文
+- **可自托管**：「Warp 可以替你托管，但我们相信企业会想自己拥有 corpus」——这一句直接回应了企业对数据所有权的核心顾虑
+
+这套架构与 [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)和 [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)中讨论的「双向、长期、企业自有」三个理想性质完全对齐。它和 Obsidian + QMD 类型的本地方案（见 [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md)策略 5）属于同一思路的两个层级：QMD 是个人工作站方案，Oz Agent Memory 是企业方案。
+
+### 「single pane of glass」对企业 AI 治理的真正含义
+
+Oz 反复强调「统一控制平面」——这是企业 AI 部署的核心痛点。在没有 Oz 的世界里：
+
+- Claude Code 的使用统计在 Anthropic 后台
+- Codex 的使用在 OpenAI 后台
+- Warp Agent 在 Warp 自己
+- 各自的审计日志、权限模型、计费维度完全不同
+- 想知道「我们公司这个月 AI 总开销 / 高风险操作」需要至少跨三个系统
+
+Oz 的价值是把「**审计 / 治理 / 计费 / 权限**」这四件事从 harness 厂商手里收回到企业自己的控制平面里。这对受合规约束的行业（金融、医疗、政府）几乎是必选项。
+
+### Least Privilege for Agents：从理论走向产品
+
+文中提到「individual agents to have granular permissions to internal services, following the model of allowing agents to have the least privilege」——把信息安全里的最小权限原则正式应用到 Agent 上。
+
+具体含义：**处理生产系统的 agent** 和 **访问 CRM 的 agent** 应当持有完全不同的凭证集合。这与 [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)中讨论的核心原则一致，但 Oz 把它从「最佳实践建议」做成了「产品默认配置」。
+
+这是个被严重低估的特性。当前 AI Agent 安全事故的相当一部分根因是「Agent 用了过宽的服务账号」——给 read-only 任务的 agent 配了 admin 凭证，然后被 prompt injection 引发越权操作。
+
+### 战略层面：Warp 从「终端」延伸到「AI 基础设施」
+
+Warp 起家是「最好用的现代终端」，现在通过 Oz 把战线推到了云 Agent 编排层。这是一个非常聪明的 land-and-expand：
+
+- 终端是开发者每天都开的入口
+- 从终端 → 终端里集成 Agent → 多个 Agent 协作需要 orchestration → 自然演化到云端控制平面
+
+对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
+
+### 与 AgentCore 的微妙差异
+
+Oz 和 AWS [AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) 在功能列表上有大量重叠，但定位有微妙不同：
+
+| 维度 | Oz | AgentCore |
+|---|---|---|
+| 抽象层级 | harness 编排 | runtime 托管 |
+| 默认绑定 | 工具中立 | AWS 生态 |
+| 多 harness | 是（Claude Code/Codex/Warp Agent） | 主要是 Strands SDK 框架 |
+| 自托管 | Kubernetes / 远程开发环境 | 主要是 AWS |
+| 切入用户 | 已有 AI 工具试点的工程团队 | AWS 已有客户 |
+
+简单说：AgentCore 是「AWS 让你在 AWS 上跑 Agent 更方便」，Oz 是「让你在任何地方跑任何 harness 更方便」。两者会在中型企业市场正面竞争。
+
+## 实践启示
+
+1. **企业 AI 选型应当假设 multi-harness**：不要把所有押注放在一个 harness 上——半年后最佳实践可能完全不同
+2. **Agent Memory 是下一个差异化战场**：评估编排平台时，问「memory 是否可写入、跨 harness、可自托管」三件事
+3. **Least Privilege 必须从一开始就做**：不要给所有 agent 同一个 admin 凭证——按服务类型拆分凭证
+4. **会话便携性是新基础设施特性**：本地 ↔ 云端 ↔ 远程随时切换，会改变开发者的工作节奏
+5. **single pane of glass 是合规行业的硬需求**：金融/医疗/政府绕不开统一审计与治理
+6. **关注 Warp 的产品演化**：从终端切入做 AI 基础设施是值得追踪的战略路径
+7. **AgentCore vs Oz 的选型逻辑**：已在 AWS 的选 AgentCore，工具中立选 Oz，跨多家 AI 厂商必选 Oz
+8. **「harness 是性能维度」是新的工程认知**：性能调优不再只是换模型——换 harness 可能效果更显著
+
+## 相关实体
+
+- [Agentcore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
+- [Agentcore Managed Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md) — Managed Harness 定位
+- [Agent Harness Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture.md) — Agent Harness 架构
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harnesses-are-dead-long-live-agent-harnesses.md) — Harness 演进观察
+- [Agent Memory Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md) — Agent Memory 架构综述
+- [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
+- [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
+- [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
+- [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — Agent 安全架构
+- [Agent Memory Systematic Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md) — Agent 记忆系统框架
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 ---
 

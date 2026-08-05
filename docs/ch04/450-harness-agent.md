@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [how to build an ai-native startup](../ch05/021-ai-native.html)
-- [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](../ch05/100-ai.html)
-- [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](../ch01/334-1.html)
-- [perplexity 首次公开了内部 skill 设计指南](ch04/339-skill.html)
+- [how to build an ai-native startup](../ch05/022-ai-native.html)
+- [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](../ch05/101-ai.html)
+- [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](../ch01/928-9.html)
+- [perplexity 首次公开了内部 skill 设计指南](ch04/340-skill.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
@@ -44,12 +44,12 @@ Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环 涉�
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/718-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/289-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/183-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/247-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/248-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/248-openclaw.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

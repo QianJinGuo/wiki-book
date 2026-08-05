@@ -26,7 +26,7 @@ Opus 5 表明 Anthropic 在 Opus 4.8 中移除业务技能训练带来的"对齐
 
 - [Opus 4.8 System Card](ch01/1537-claude-opus-4-8.html) — 系统卡中的业务技能训练移除记录
 - [Opus 5 发布](ch01/1533-anthropic.html) — 模型发布与能力定位
-- [Andon Labs 媒体实验](../ch05/100-ai.html) — 同机构对 AI 自主运营的探索
+- [Andon Labs 媒体实验](../ch05/101-ai.html) — 同机构对 AI 自主运营的探索
 
 ## 相关概念
 

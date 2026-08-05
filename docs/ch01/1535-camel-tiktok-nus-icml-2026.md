@@ -23,7 +23,7 @@ CAMEL（Confidence-gAted RefLection for Reward Modeling）由 TikTok 与新加�
 
 奖励模型在 RLHF/RLAIF 等后训练流程中扮演"偏好裁判"的角色。过去几年，奖励建模沿两条路线发展：scalar RM（输出标量分数，推理快但解释力有限）和 generative judge/LLM-as-a-Judge（先生成判断理由再给出 verdict，更透明但 token 成本高）。
 
-CAMEL 的关键洞察在于：并非所有偏好比较都需要"长思考"。多数样本模型可以直接给出可靠判断，真正值得反思的只是少数不确定、易出错的困难样本。这本质上是"按置信度分配计算"（compute-aware allocation）的思想，与 [DeepSpec 推理时计算分配](ch01/968-deepseek-dspark.html) 等推理系统研究不谋而合。
+CAMEL 的关键洞察在于：并非所有偏好比较都需要"长思考"。多数样本模型可以直接给出可靠判断，真正值得反思的只是少数不确定、易出错的困难样本。这本质上是"按置信度分配计算"（compute-aware allocation）的思想，与 [DeepSpec 推理时计算分配](ch01/973-deepseek-dspark.html) 等推理系统研究不谋而合。
 
 ### Log-Probability Margin 作为零成本置信度信号
 
@@ -61,7 +61,7 @@ CAMEL 所体现的"按置信度分配计算"原则，正被更广泛的推理系
 
 ## 相关实体
 
-- [DeepSpec 推理时计算分配](ch01/968-deepseek-dspark.html) — 推理系统中的计算分配思路，与 CAMEL 的置信度门控共享相同的设计哲学
+- [DeepSpec 推理时计算分配](ch01/973-deepseek-dspark.html) — 推理系统中的计算分配思路，与 CAMEL 的置信度门控共享相同的设计哲学
 - [RLHF 对齐方法](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — RLHF 流程中奖励模型的核心角色和基础框架
 - **LLM-as-a-Judge 评估方法** — LLM-as-a-Judge 评估方法的发展与挑战
 - [GRPO 训练方法](https://github.com/QianJinGuo/wiki/blob/main/concepts/grpo-policy-optimization-2026.md) — GRPO 训练方法，CAMEL 使用其进行 counterfactual augmentation 训练

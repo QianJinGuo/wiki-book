@@ -144,18 +144,18 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/183-karpathy-vibe-coding-agentic-engineering.html)
 - [Code as Agent Harness 综述](../ch09/061-code-as-agent-harness.html)
-- [AI Skill 测评指标体系](../ch01/657-ai-skill.html)
+- [AI Skill 测评指标体系](../ch01/656-ai-skill.html)
 
 ## Related
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/129-harness-engineering.html)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/057-harness-engineering.html)
 
-- [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/1266-rag.html)
-- [AgentCore Managed Harness](../ch04/754-agentcore-harness.html)
-- [Agent Harness 解析：智能体架构深度拆解](ch05/062-agent-harness.html)
-- [From Agent Protocol to Harness Skill](../ch04/499-from-agent-protocol-to-harness-skill.html)
+- [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/1267-rag.html)
+- [AgentCore Managed Harness](../ch04/755-agentcore-harness.html)
+- [Agent Harness 解析：智能体架构深度拆解](ch05/063-agent-harness.html)
+- [From Agent Protocol to Harness Skill](../ch04/500-from-agent-protocol-to-harness-skill.html)
 - [Claude Code 架构深度解析](../ch03/084-claude-code.html)
 - [Agent Memory 架构解析](../ch04/215-agent-memory.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/247-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/248-openclaw.html)
 - [claude-code-7-layer-memory-architecture](../ch03/084-claude-code.html)
 - [AI Agent 工程师能力地图](../ch04/762-ai-agent.html)
 

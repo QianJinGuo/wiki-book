@@ -65,7 +65,7 @@ ISO 42001 出现在框架矩阵中同样具有信号意义：AI 治理（AI gove
 ## 相关实体
 
 - [Exaforce | Agentic SOC Platform and MDR](ch04/025-exaforce-agentic-soc-platform-and-mdr.html) — 同为 agentic 化安全平台，SOC 场景与 Drata 的 GRC 场景可对照
-- [Stripe Financial Compliance AI Agent](ch04/383-stripe-financial-compliance-ai-agent-production-lessons.html) — 生产级合规 Agent 的架构决策与经验，与 Drata 互为实践参照
+- [Stripe Financial Compliance AI Agent](ch04/384-stripe-financial-compliance-ai-agent-production-lessons.html) — 生产级合规 Agent 的架构决策与经验，与 Drata 互为实践参照
 - [CrewAI Fintech Compliance Agentic AI](ch04/036-crewai-fintech-compliance-reporting-agentic-ai.html) — agentic AI 在合规报告场景的另一种落地
 - [Legal AI Compliance](https://github.com/QianJinGuo/wiki/blob/main/concepts/legal-ai-compliance.md) — AI 与合规交叉领域的概念页
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — AI Agent 系统化工程范式，解释 Drata 各 Agent 场景的底层架构逻辑

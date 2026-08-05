@@ -113,7 +113,7 @@ Trueman 坦诚地承认，他自己也不确定这是真正的结构性问题还
 - [Figma Make](ch03/047-figma-make.html)
 - [Agent Harnesses](../ch04/784-agent-harnesses-are-dead-long-live-agent-harnesses.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Haptics Design — Microsoft](../ch01/334-1.html)
+- [Haptics Design — Microsoft](../ch01/333-1.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-figma-made-visible.md)
 

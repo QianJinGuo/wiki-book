@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3843 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3848 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -11,9 +11,9 @@
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1745 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1355 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 518 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 178 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1358 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 519 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 179 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 47 篇 |
 
 ---
@@ -65,7 +65,7 @@
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 798 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 799 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,9 +76,9 @@
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
-  - ... 共 **798** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **799** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 144 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 145 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
-  - ... 共 **144** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **145** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 50 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -123,14 +123,14 @@
   - ⭐ Hermes+Kimi K2.6 多Agent军团实战教程
   - ⭐ OpenClaw 多智能体团队搭建实战经验
   - ⭐ Agent 的六个自主性等级：从 L0 辅助到 L5 例外管理
-  - ⭐⭐ Oz Multi-Harness Cloud Agent Orchestration (Warp)
   - ⭐⭐ Graph Engineering：从单循环到多节点编排
+  - ⭐⭐ Oz Multi-Harness Cloud Agent Orchestration (Warp)
   - ⭐⭐ Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
   - ⭐⭐ ICML 2026 HOI-Edit & SCPE — 图像编辑的认知评测基准与智能体自纠错框架
   - ⭐⭐ 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
   - ... 共 **36** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 193 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 194 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ 视觉还原 AI 技术
@@ -141,7 +141,7 @@
   - ⭐ Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM
   - ⭐ 设计稿转代码（Design to Code）
   - ⭐ 电商搜索h1提升ai-coding质量实践-rd-qa
-  - ... 共 **193** 篇 → [完整章节](ch09-ai-coding.md)
+  - ... 共 **194** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 41 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
@@ -156,7 +156,7 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **41** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1355 篇**
+> 📖 **本篇共 1358 篇**
 
 ---
 
@@ -188,7 +188,7 @@
   - ⭐ 5 Things to Know about the CLARITY Act
   - ... 共 **130** 篇 → [完整章节](ch12-security.md)
 
-### [Ch13 MLOps 与评估](ch13-mlops.md) — 24 篇
+### [Ch13 MLOps 与评估](ch13-mlops.md) — 25 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
   - ⭐ 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
@@ -199,7 +199,7 @@
   - ⭐⭐ ai-skill-测评指标体系
   - ⭐⭐ 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
   - ⭐⭐ SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
-  - ... 共 **24** 篇 → [完整章节](ch13-mlops.md)
+  - ... 共 **25** 篇 → [完整章节](ch13-mlops.md)
 
 ### [Ch14 数据工程](ch14-data.md) — 44 篇
 > AI 的燃料：实时入湖、流处理、数据质量
@@ -214,7 +214,7 @@
   - ⭐⭐ Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
   - ... 共 **44** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 518 篇**
+> 📖 **本篇共 519 篇**
 
 ---
 
@@ -246,7 +246,7 @@
   - ⭐⭐ EAGLE-3 投机解码与 USP 长序列训练优化
   - ... 共 **38** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 56 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 57 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
@@ -257,7 +257,7 @@
   - ⭐⭐ 美团海报生成 AIGC 技术创新与实践
   - ⭐⭐ Normalizing Trajectory Models
   - ⭐⭐ Automatically redact PII in images with Amazon Nova
-  - ... 共 **56** 篇 → [完整章节](ch17-multimodal.md)
+  - ... 共 **57** 篇 → [完整章节](ch17-multimodal.md)
 
 ### [Ch18 机器人与具身智能](ch18-robotics.md) — 25 篇
 > 从数字到物理：强化学习、仿真、人形机器人
@@ -272,7 +272,7 @@
   - ⭐⭐ 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
   - ... 共 **25** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 178 篇**
+> 📖 **本篇共 179 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3843 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3848 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-05 | 来源: ~/wiki/entities/
+生成时间: 2026-08-06 | 来源: ~/wiki/entities/

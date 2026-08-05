@@ -90,7 +90,7 @@ QuickSight 直连 S3 时只能解析一层嵌套 JSON 字段，深层嵌套字�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-amazon-quicksight-数据可视化配置手册.md)
 - [LiteLLM 成本治理四层防护](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底.md) — 姐妹篇（事前限额 → 事中监控 → 事后兜底）
 - [LiteLLM Bedrock 成本治理实体](ch11/050-litellm-amazon-bedrock.html) — 同一 AI Gateway 主题
-- [QuickSight Dataset Q&A](ch11/195-aws-quicksight-dataset-qa-natural-language.html) — QuickSight NL2SQL 能力
+- [QuickSight Dataset Q&A](ch11/196-aws-quicksight-dataset-qa-natural-language.html) — QuickSight NL2SQL 能力
 
 ---
 

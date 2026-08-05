@@ -12,8 +12,8 @@
 
 ## 相关实体
 - [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
-- [Aws Bedrock Agentcore Identity Security](../ch11/266-aws-bedrock-agentcore.html)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/897-github.html)
+- [Aws Bedrock Agentcore Identity Security](../ch11/267-aws-bedrock-agentcore.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/1079-github.html)
 - [Ai Agents Inside Perimeter Hackernews](../ch04/762-ai-agent.html)
 - [Tsinghua Agent Security Fangcun](../ch03/035-agent.html)
 

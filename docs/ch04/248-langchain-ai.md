@@ -80,8 +80,8 @@ LangChain 创始人 Harrison Chase 系统分析 AI 智能体与沙盒集成的�
 
 ## 相关主题
 - [Harness Generator Evaluator Anthropic](../ch01/1533-anthropic.html) — Generator-Evaluator 架构
-- [Agent Harness Engineering Survey 2026](../ch05/129-harness-engineering.html) — Agent Harness 工程综述
-- [Pi Openclaw Coding Harness](../ch11/247-openclaw.html) — OpenClaw Coding Harness
+- [Agent Harness Engineering Survey 2026](../ch05/057-harness-engineering.html) — Agent Harness 工程综述
+- [Pi Openclaw Coding Harness](../ch11/248-openclaw.html) — OpenClaw Coding Harness
 
 ## 深度分析
 
@@ -125,11 +125,11 @@ Adish Jain 的观点揭示了一个被忽视的问题：无论选择哪种架构
 
 **5. 建立沙盒行为验证机制作为必要组件** ^[https://mp.weixin.qq.com/s/1ts5cEe3qHN0w3-evQMzuQ]
 
-Adish Jain 强调的行为测试应该成为沙盒集成的标准环节，而非事后考虑。建议实现：工具调用轨迹记录、沙盒内文件变更审计、执行结果确定性校验。这与 [Agent Harness Engineering Survey 2026](../ch05/129-harness-engineering.html) 中 Verification 层的最佳实践一致。
+Adish Jain 强调的行为测试应该成为沙盒集成的标准环节，而非事后考虑。建议实现：工具调用轨迹记录、沙盒内文件变更审计、执行结果确定性校验。这与 [Agent Harness Engineering Survey 2026](../ch05/057-harness-engineering.html) 中 Verification 层的最佳实践一致。
 
 ## 关联阅读
 - [Harness Generator Evaluator Anthropic](../ch01/1533-anthropic.html) — Anthropic 的 Generator-Evaluator Harness 架构，提供了智能体评测闭环的设计思路，与沙盒行为验证问题直接相关
-- [Agent Harness Engineering Survey 2026](../ch05/129-harness-engineering.html) — Agent Harness 工程的系统性综述，包含沙盒（Execution environment）层的完整分类，对理解两种沙盒架构的行业上下文很有价值
+- [Agent Harness Engineering Survey 2026](../ch05/057-harness-engineering.html) — Agent Harness 工程的系统性综述，包含沙盒（Execution environment）层的完整分类，对理解两种沙盒架构的行业上下文很有价值
 
 ---
 
