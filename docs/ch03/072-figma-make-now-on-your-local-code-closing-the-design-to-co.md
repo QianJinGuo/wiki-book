@@ -37,7 +37,7 @@ Make 的核心交互是「选中元素 → 调整属性 → Agent 编辑代码�
 
 ### 3. Git 流程是生产代码的「质量门槛」
 
-Figma 明确把「生产代码发布应该通过团队的开发流程有意图地进行」作为产品约束。 具体落地是：所有更改在打开 PR 之前都是本地 commit；Make 支持分支创建、撤销 commit；工程团队像 review 其他 PR 一样 review 设计师的更改。 这条线连到 [Karpathy 访谈](../ch04/718-agentic.html) 里反复强调的「Agentic Engineering 不是 Vibe Coding，验证体系决定 Agent 自动化能走多远」——Figma 在产品层面把这条原则具象化：无论 Agent 怎么生成代码，最终必须经过 Git 工作流和 PR review，这是「承重墙」的具体形态。给做内部工具的启示是：**当引入 AI 写代码能力时，必须把 Git 工作流作为默认约束，而不是可选**。
+Figma 明确把「生产代码发布应该通过团队的开发流程有意图地进行」作为产品约束。 具体落地是：所有更改在打开 PR 之前都是本地 commit；Make 支持分支创建、撤销 commit；工程团队像 review 其他 PR 一样 review 设计师的更改。 这条线连到 [Karpathy 访谈](../ch04/289-agentic.html) 里反复强调的「Agentic Engineering 不是 Vibe Coding，验证体系决定 Agent 自动化能走多远」——Figma 在产品层面把这条原则具象化：无论 Agent 怎么生成代码，最终必须经过 Git 工作流和 PR review，这是「承重墙」的具体形态。给做内部工具的启示是：**当引入 AI 写代码能力时，必须把 Git 工作流作为默认约束，而不是可选**。
 
 ### 4. 画布与代码库的双向同步是「闭环」
 
@@ -63,14 +63,14 @@ Figma 在 Beta 期做了三个限制：① 仅 Mac 桌面应用；② 需要公�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/718-agentic.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/531-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/532-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/062-agent-harness.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/063-agent-harness.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/183-karpathy-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/035-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/247-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/248-openclaw.html)
 
 ---
 

@@ -11,11 +11,11 @@ Google Cloud Tech 前些日子发布了一篇 Agent Skill 设计模式文章：�
 现在回头看，5 个名字本身可能没有那么重要。
 
 ## 相关实体
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/470-agent-skills.html)
-- [Anthropic Google Agent Skills Design Patterns](ch04/252-anthropic-google-agent-skills.html)
-- [Anthropic 14 Skill Patterns Best Practices](../ch01/498-anthropic-14-skill.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/470-agent-skills.html)
-- [Anthropic Agent Skills Design Patterns 14](ch04/321-anthropic-agent.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/471-agent-skills.html)
+- [Anthropic Google Agent Skills Design Patterns](ch04/591-anthropic-google-agent-skills.html)
+- [Anthropic 14 Skill Patterns Best Practices](../ch01/497-anthropic-14-skill.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/471-agent-skills.html)
+- [Anthropic Agent Skills Design Patterns 14](ch04/322-anthropic-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
 

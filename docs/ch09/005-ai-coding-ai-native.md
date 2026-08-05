@@ -65,7 +65,7 @@ Coding Agent 可以截图自己的实现页面，通过 node-map API 与设计�
 ## 相关实体
 
 - [Design to Code](ch09/007-design-to-code.html)
-- [Visual Reduction AI](../ch05/100-ai.html)
+- [Visual Reduction AI](../ch05/101-ai.html)
 - [大淘宝前端实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 
 ## 标签

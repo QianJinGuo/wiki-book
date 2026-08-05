@@ -172,7 +172,7 @@ NVIDIA 的 Extreme Co-Design 强调 Vera CPU 承担「长上下文检索操作�
 - [Lightseek Tokenspeed](../ch01/1402-lightseek-tokenspeed.html)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/084-claude-code.html)
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/306-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/638-amazon-bedrock-agentcore.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/639-amazon-bedrock-agentcore.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-systems-extreme-co-design.md)

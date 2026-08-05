@@ -27,7 +27,7 @@ Landon Cox（Microsoft Research）和 Mara Kiefer（GitHub）分享 GitHub 内�
 - **bash tool 内联 CLI**：直接在 bash 命令中调用 gh CLI
 - **Subagent 模式**：生成专门负责数据获取的子 agent，只返回结构化数据
   **效果**：将大部分 GitHub 数据获取移出 LLM 推理循环。
-  这与 [Claude Code Subagent 上下文卫生](ch04/377-claude-code-subagent.html) 中 Subagent 作为上下文隔离工具的理念相通。
+  这与 [Claude Code Subagent 上下文卫生](ch04/378-claude-code-subagent.html) 中 Subagent 作为上下文隔离工具的理念相通。
 
 ### 3. Auditor + Optimizer 元工作流
 
@@ -82,9 +82,9 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 - → ：本文是 Token 经济学的生产级落地案例
 - → ：MCP 工具注册优化的不同路径（Tool Search vs 裁剪）
 - → ：Subagent 模式的上下文隔离与本文的 CLI subagent 策略互补
-- → [Prompt Caching 工程实践](../ch01/404-anthropic-prompt-caching-claude-code.html)：缓存策略是 token 优化的另一维度
-- → [Agent Harness 12 组件与 7 个关键决策](../ch05/062-agent-harness.html)：工具选择决策树与本文的 MCP vs CLI 选型呼应
-- → [Agentic Systems Extreme Co-Design（NVIDIA）](ch04/718-agentic.html)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
+- → [Prompt Caching 工程实践](../ch01/403-anthropic-prompt-caching-claude-code.html)：缓存策略是 token 优化的另一维度
+- → [Agent Harness 12 组件与 7 个关键决策](../ch05/063-agent-harness.html)：工具选择决策树与本文的 MCP vs CLI 选型呼应
+- → [Agentic Systems Extreme Co-Design（NVIDIA）](ch04/289-agentic.html)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
 
 ## 深度分析
 ### 1. API Proxy 架构是 token 可观测性的基础设施
@@ -122,9 +122,9 @@ Auditor + Optimizer 的双 workflow 设计值得借鉴：每日扫描 → 标记
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-agentic-token-efficiency.md)
 
 ## 相关实体
-- [Improving token efficiency in GitHub Agentic Workflows](ch04/718-agentic.html)
+- [Improving token efficiency in GitHub Agentic Workflows](ch04/289-agentic.html)
 
-- [Token Efficiency](ch04/718-agentic.html)
+- [Token Efficiency](ch04/289-agentic.html)
 ````
 
 ---

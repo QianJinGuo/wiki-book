@@ -20,7 +20,7 @@
 
 | 层次 | 对应路线 | 核心能力 | 代表系统 |
 |------|---------|---------|---------|
-| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](../ch05/062-agent-harness.html) |
+| **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](../ch05/063-agent-harness.html) |
 | **学习层**（进化） | 自我进化 | 经验沉淀、Skills 版本化、可审计的回滚 | [Small Hermes 自我进化架构](ch04/759-self-evolving-agent.html) |
 | **行动层**（执行力） | 执行力 | 工具调用、任务分解、可靠执行 | [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) |
 
@@ -55,7 +55,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 6. **Skill版本管理** — 技能迭代有版本号、可对比、可回滚
 7. **数据访问控制** — 敏感数据的访问级别和范围精确管控
 
-参考：[Agent Harness Engineering Survey](../ch05/129-harness-engineering.html) 中的 ETCLOVG 治理维度。
+参考：[Agent Harness Engineering Survey](../ch05/057-harness-engineering.html) 中的 ETCLOVG 治理维度。
 
 ## 模型非唯一壁垒
 
@@ -109,10 +109,10 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 - **行动层**依赖记忆来调用技能（"我有一个SKILL可以处理这个"）
 
 ## 相关实体
-- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch05/100-ai.html)
+- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch05/101-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
-- [fanling company as agent ai org reflection v2](../ch01/1080-agent-ai.html)
+- [fanling company as agent ai org reflection v2](../ch01/1086-agent-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

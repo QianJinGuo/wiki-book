@@ -246,7 +246,7 @@ business_agent_profile:
 ## 与现有 Wiki 的关系
 
 ### 与 Agent Harness 工程的呼应
-[Agent Harness 架构设计](../ch05/062-agent-harness.html) + [Agent Harness Engineering Survey ETCLOVG](../ch05/129-harness-engineering.html) 提供了 Harness 的 **学术框架**（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance）——本文提供了 **业务团队的 MVP 落地路径**，两者互补。Harness 框架是"通用 Agent 的 execution layer"；业务增强层是"团队给通用 Agent 补的 domain layer"。
+[Agent Harness 架构设计](../ch05/063-agent-harness.html) + [Agent Harness Engineering Survey ETCLOVG](../ch05/057-harness-engineering.html) 提供了 Harness 的 **学术框架**（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance）——本文提供了 **业务团队的 MVP 落地路径**，两者互补。Harness 框架是"通用 Agent 的 execution layer"；业务增强层是"团队给通用 Agent 补的 domain layer"。
 
 ### 与其他企业级 Agent 实践的呼应
 - [AgentScope Builder 企业自进化](../ch04/759-self-evolving-agent.html) = 阿里云 Harness 平台化（重平台路径）
@@ -262,7 +262,7 @@ business_agent_profile:
 - **本文的 7 个反模式 = 业务层的失败模式**（无 baseline / 长 prompt 知识 / 过早多 Agent 化等）
 
 ### 与"Agent = Model + Harness"公式
-[Agent Harness 12 组件 7 决策](../ch05/062-agent-harness.html) 提出 **Agent = Model + Harness**——本文是这公式在企业落地时的工程展开：**通用 Agent（Model + 基础 Harness）+ 业务增强层（业务能力）**。
+[Agent Harness 12 组件 7 决策](../ch05/063-agent-harness.html) 提出 **Agent = Model + Harness**——本文是这公式在企业落地时的工程展开：**通用 Agent（Model + 基础 Harness）+ 业务增强层（业务能力）**。
 
 ## 深度分析
 

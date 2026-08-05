@@ -189,7 +189,7 @@ Claude 在被限定到实际与任务相关的代码库部分时工作得最好�
 
 ## 与 Agent Harness Engineering 的关系
 
-参见 [Agent Harness 架构](../ch05/062-agent-harness.html)（AHE框架）。
+参见 [Agent Harness 架构](../ch05/063-agent-harness.html)（AHE框架）。
 
 AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景扩展点实现，两者互补。AHE 的"三层可观测"在大型代码库场景对应 LSP+Hooks 的调试能力。
 
@@ -239,16 +239,16 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 ## 相关实体
 - [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
 
-- [Feishu Aily Agent Lobster](../ch04/603-aily-agent.html)
+- [Feishu Aily Agent Lobster](../ch04/604-aily-agent.html)
 - [Colaos Listenhub Agency Native Organization Juzi](https://github.com/QianJinGuo/wiki/blob/main/entities/colaos-listenhub-agency-native-organization-juzi.md)
-- [Red Sequoia Ai Summit Agi Declaration](../ch01/476-agi.html)
-- [Hermes Self Improving Overview Winty](../ch01/293-hermes.html)
+- [Red Sequoia Ai Summit Agi Declaration](../ch01/407-agi.html)
+- [Hermes Self Improving Overview Winty](../ch01/292-hermes.html)
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md)
-- [100 年压缩到 100 天红杉资本这就是 Agi](../ch01/476-agi.html)
+- [100 年压缩到 100 天红杉资本这就是 Agi](../ch01/407-agi.html)
 - [Stripe Agent Economic Infrastructure Emily Sands](../ch03/035-agent.html)
-- [Pilotdeck Data派Thu 2026](../ch01/1108-20.html)
+- [Pilotdeck Data派Thu 2026](../ch01/1114-20.html)
 - [Four Sub Agent Patterns](../ch03/035-agent.html)
-- [A Guide To Which Ai To Use In The Agentic Era](../ch01/835-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
+- [A Guide To Which Ai To Use In The Agentic Era](../ch01/838-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
 - [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](../ch03/035-agent.html)
 - [Cloud Agent Development Environments](../ch03/035-agent.html)
 - [Volcengine Data Agent Product Overview](../ch04/449-data-agent.html)
@@ -256,29 +256,29 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Emergent Collaboration Ai High Quality Decision Agent Room](../ch04/771-agent-room.html)
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](../ch03/035-agent.html)
 - [Agent Guide Core Concepts Overview](../ch03/035-agent.html)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch01/131-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch01/133-hy3-preview.html)
 - [Headroom Context Compression Agent Vibecoder](../ch03/035-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Kimi Work Beta Foundation Model Company Advantage](../ch01/578-kimi.html)
+- [Kimi Work Beta Foundation Model Company Advantage](../ch01/577-kimi.html)
 - [Agent Paradigm Evolution Feipeng Alibaba](../ch03/035-agent.html)
 - [Hermes Agent Long Running Governance Five Cards Ruofei](../ch03/102-hermes-agent.html)
 - [Agentic Rl Token In Token Out Done Right C6Aaa4](../ch04/789-agentic-rl-token-in-token-out-done-right.html)
 - [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](../ch03/035-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Kimi Work 300 Agent Cluster Yin John Agi Hunt](../ch01/336-agi-hunt.html)
-- [Your First Ai Agent Should Do One Thing Badly](../ch04/467-your-first-ai-agent-should-do-one-thing-badly.html)
-- [A Missing Layer In Agentic Systems](../ch04/421-a-missing-layer-in-agentic-systems.html)
+- [Kimi Work 300 Agent Cluster Yin John Agi Hunt](../ch01/335-agi-hunt.html)
+- [Your First Ai Agent Should Do One Thing Badly](../ch04/468-your-first-ai-agent-should-do-one-thing-badly.html)
+- [A Missing Layer In Agentic Systems](../ch04/422-a-missing-layer-in-agentic-systems.html)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](../ch04/010-announcing-genkit-middleware-intercept-extend-and-harden.html)
 - [Hermes Agent Soul Md Personality Shugex](../ch03/102-hermes-agent.html)
-- [Lessons From 2 Billion Agentic Workflows](../ch04/514-lessons-from-2-billion-agentic-workflows.html)
+- [Lessons From 2 Billion Agentic Workflows](../ch04/515-lessons-from-2-billion-agentic-workflows.html)
 - [Local Vs Cloud Agent Onsite Context Debate Xingxiaozhao](../ch03/035-agent.html)
 - [Volcengine Data Agent Marketing Strategy Agent](../ch04/449-data-agent.html)
-- [Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486](../ch01/610-scaling.html)
+- [Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486](../ch01/609-scaling.html)
 - [Hermes Agent Self Evolution 源码解析](../ch03/102-hermes-agent.html)
-- [Real Ai Agents And Real Work](../ch04/284-real-ai-agents-and-real-work.html)
+- [Real Ai Agents And Real Work](../ch04/285-real-ai-agents-and-real-work.html)
 - [Volcengine Data Agent Intelligent Query Agent](../ch04/449-data-agent.html)
 - [Hermes Agent Tool System Analysis](../ch03/102-hermes-agent.html)
-- [How To Build Agents Where Data Already Lives](../ch04/566-how-to-build-agents-where-data-already-lives.html)
+- [How To Build Agents Where Data Already Lives](../ch04/567-how-to-build-agents-where-data-already-lives.html)
 - [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](../ch04/762-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 

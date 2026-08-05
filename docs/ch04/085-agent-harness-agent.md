@@ -608,17 +608,17 @@ class RecoveryManager:
 
 ## 相关实体
 - [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html)
-- [Agent Harness Architecture](../ch05/062-agent-harness.html)
-- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/085-harness.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/097-harness-skill.html)
-- [Harness Production Agent Engineering Deficit](../ch05/085-harness.html)
+- [Agent Harness Architecture](../ch05/063-agent-harness.html)
+- [Agentscope Java Harness Framework Enterprise Distributed](../ch05/017-harness.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/098-harness-skill.html)
+- [Harness Production Agent Engineering Deficit](../ch05/017-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
 → [Harness Engineering 综合性指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
 → [Claude Code 12 个设计模式](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agentic-harness-design-patterns.md)
 → [ETCLOVG Survey (CMU 2026)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/686-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/687-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
 - [k-dense — the model is no longer the bottleneck](ch04/219-k-dense-the-model-is-no-longer-the-bottleneck.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

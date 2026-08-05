@@ -47,10 +47,10 @@
 > 关于 Vibe Coding 的生产可行性，另一种观点认为当前的 AI 能力尚未成熟，不应完全依赖 AI 生成代码。
 ## 相关实体
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/084-claude-code.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/129-harness-engineering.html)
-- [Tmall Marketing Ai Workflow](../ch05/100-ai.html)
-- [Harness Engineering Alibaba Java Case Study](../ch05/129-harness-engineering.html)
-- [Skill Formal Theory Survey 10Papers](ch04/339-skill.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/057-harness-engineering.html)
+- [Tmall Marketing Ai Workflow](../ch05/101-ai.html)
+- [Harness Engineering Alibaba Java Case Study](../ch05/057-harness-engineering.html)
+- [Skill Formal Theory Survey 10Papers](ch04/340-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-时代的生产力悖论当协作本身成为最大的瓶颈.md)
 三、Agent 在交付和稳定性链路中的缺席

@@ -52,7 +52,7 @@ VSCode 在 webview 与扩展 host 之间使用 `postMessage` API 通信。ammara
 - **Autonomous Vulnerability Hunting with MCP** — MCP 驱动的自动化漏洞狩猎趋势
 
 ## 相关实体
-- [Auditing Gitlab Cicd Kill Chain Black Hills 2026](../ch05/100-ai.html)
+- [Auditing Gitlab Cicd Kill Chain Black Hills 2026](../ch05/101-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
 
@@ -104,7 +104,7 @@ ammaraskar 在 2026 年 6 月 2 日下午公开披露漏洞，GitHub 安全团�
 
 ## 关联阅读
 
-→ [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/545-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) — Jenkins 插件供应链投毒事件，攻击路径与本漏洞相似：均通过依赖链的信任假设进行初始代码执行，代表了近两年最活跃的 supply chain 攻击向量之一。
+→ [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/544-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html) — Jenkins 插件供应链投毒事件，攻击路径与本漏洞相似：均通过依赖链的信任假设进行初始代码执行，代表了近两年最活跃的 supply chain 攻击向量之一。
 
 → [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](ch09/086-claw-chain-cyera-research-unveil-four-chainable-vulnerabili.html) — OpenClaw 多漏洞链披露，与本文同为 2026 年安全研究，展示了从 webview XSS 到 RCE 的链式利用完整路径，对理解 IDE/扩展攻击面具有重要参考价值。
 

@@ -168,14 +168,14 @@ TUI 显示：
 ## 相关实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/718-agentic.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/183-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/247-openclaw.html)
-- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/339-skill.html)
-- [Agent Harness Context Management Working Set](../ch05/062-agent-harness.html)
-- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/111-harness-2026.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/248-openclaw.html)
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/340-skill.html)
+- [Agent Harness Context Management Working Set](../ch05/063-agent-harness.html)
+- [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/112-harness-2026.html)
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 

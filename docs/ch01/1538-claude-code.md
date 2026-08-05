@@ -13,9 +13,9 @@
 
 ## 相关实体
 - [Claude Code Self Repair Hooks Memory Config](../ch03/084-claude-code.html)
-- [Code Review Graph](ch01/1093-code-review-graph-claude-code-6-8-token.html)
+- [Code Review Graph](ch01/1099-code-review-graph-claude-code-6-8-token.html)
 - [Claude Code Hackathon Winners 2026](../ch03/084-claude-code.html)
-- [Claude Code Harness Deep Understanding](ch01/637-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/636-claude-code-harness-deep-understanding.html)
 - [Claude Code Agent View Huashu](../ch09/003-claude-code-agent-view.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-demand-research-taosecho.md)

@@ -41,10 +41,10 @@ Trollope 设想"每千名员工上千个 Agent"的世界，并以电子表格为
 6. **把存储介质成本结构纳入大规模 Agent 架构预算**：全量 RAM 缓存不经济，SSD/分层存储（如 Flex）可将成本降低一个数量级，规模化设计时应把"上下文的经济性"与延迟指标一起考虑。
 
 ## 相关实体
-- [Redis 之父为 DeepSeek v4 造推理引擎](ch01/434-deepseek-v4.html)
+- [Redis 之父为 DeepSeek v4 造推理引擎](ch01/433-deepseek-v4.html)
 - [Model Context Protocol（MCP）](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
 - [Agent 驱动的数据访问](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-driven-data-access.md)
-- [Agent Memory 架构](../ch04/497-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构](../ch04/498-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agentic AI 数据网格与 MCP](../ch04/116-agentic-ai.html)
 - [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 

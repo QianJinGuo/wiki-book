@@ -81,11 +81,11 @@ The best thing I did as a leader was spend enough time with the tools to become 
 So let the work correct your assumptions, because you cannot afford to lead agentic engineering from the sidelines.
 
 ## 相关实体
-- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/873-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
-- [Google Io 2026 Agentic Gemini Era](ch04/718-agentic.html)
-- [Asana Agentic Work Management Platform Lettertwo](ch04/718-agentic.html)
+- [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](../ch01/876-introducing-seer-agent-the-answer-is-already-in-sentry-now.html)
+- [Google Io 2026 Agentic Gemini Era](ch04/289-agentic.html)
+- [Asana Agentic Work Management Platform Lettertwo](ch04/289-agentic.html)
 - [Tokenspeed Agentic Inference Engine](ch04/769-tokenspeed-agentic-inference-engine.html)
-- [Gemini 3 5 Frontier Intelligence](../ch01/088-gemini-3-5-frontier-intelligence-with-action.html)
+- [Gemini 3 5 Frontier Intelligence](../ch01/090-gemini-3-5-frontier-intelligence-with-action.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-engineering-leadership.md)
 

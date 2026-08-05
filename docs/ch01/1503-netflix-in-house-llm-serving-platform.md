@@ -79,12 +79,12 @@ vLLM 和 Triton 各自写 metrics 到不同的位置，Triton 内置的 bridge �
 
 ## 相关实体
 
-- [AI Infra：大模型高效推理](ch01/944-ai-infra.html) — vLLM 技术原理层面
-- [LLM 推理流水线完整解析](ch01/859-llm.html) — Prefill/Decode 理论
-- [SGLang](../ch04/709-agent-assisted-sglang-ai-llm.html) — 另一推理框架
-- [Disaggregated Prefill/Decode](ch01/859-llm.html) — 分离式推理架构
-- [OpenAI-Compatible API on SageMaker](ch01/970-announcing-openai-compatible-api-support-for-amazon-sagemake.html) — 类似 API 设计决策
-- [FSx for Lustre GPU Direct](ch01/435-aws.html) — 模型加载/缓存方案
+- [AI Infra：大模型高效推理](ch01/949-ai-infra.html) — vLLM 技术原理层面
+- [LLM 推理流水线完整解析](ch01/862-llm.html) — Prefill/Decode 理论
+- [SGLang](../ch04/710-agent-assisted-sglang-ai-llm.html) — 另一推理框架
+- [Disaggregated Prefill/Decode](ch01/862-llm.html) — 分离式推理架构
+- [OpenAI-Compatible API on SageMaker](ch01/975-announcing-openai-compatible-api-support-for-amazon-sagemake.html) — 类似 API 设计决策
+- [FSx for Lustre GPU Direct](ch01/862-llm.html) — 模型加载/缓存方案
 - [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
 
 ---
