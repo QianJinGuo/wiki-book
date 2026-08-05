@@ -1320,7 +1320,81 @@ LingBot-World 2.0 同时开源 14B 主模型和 1.3B 轻量模型，这一双模
 
 ---
 
-## Ch16.014 Disaggregated Prefill and Decode for LLM Inference on SageMaker HyperPod
+## Ch16.014 Graviton Inference
+
+> 📊 Level ⭐⭐ | 7.9KB | `entities/graviton-inference.md`
+
+# Graviton Inference
+
+## 摘要
+
+AWS Graviton 是亚马逊基于 ARM 架构自研的服务器处理器（Graviton2/3/4/5），在 AI 推理这类访存密集、高并发并行的负载上提供显著的性价比优势，实测成本节省通常在 20-40% 区间。收益根植于架构物理特性（每瓦性能、内存带宽、物理核密度）而非营销定位，实际数值随负载画像浮动，需通过算子级验证、量化叠加与集群化调度才能完整兑现。
+
+## 核心要点
+
+- **代际演进持续放大推理优势**：Graviton2→5 每代提升核心数与内存带宽（Graviton5 m9g 达 192 核、DDR5-8800），推理是访存受限负载，直接受益
+- **收益并非恒定 20-40%**：真实节省 = 单价优势 × 吞吐优势的叠乘，随访存密度与线程效率浮动，须以实测替代宣传口径
+- **物理核 vs SMT 是隐性变量**：Graviton 无 SMT，物理核直接暴露，对 fan-out 并行负载（多租户、工具调用、沙盒）有 1.5-2.5× 吞吐优势
+- **生态兼容性是真实门槛**：依赖 AVX 的 x86 优化路径在 ARM 上可能退化为标量实现，部署前必须做算子级验证
+- **CUDA 依赖划定负载边界**：CUDA 链路不可迁移，Graviton 适配 CPU 推理、量化轻量模型与沙盒/工具执行类负载
+- **与量化是乘法关系**：Graviton + INT8/INT4 + ONNX Runtime 的组合应纳入量化矩阵测算，而非单独评估
+- **集群化让收益规模化**：EKS/ECS Graviton 节点组 + 混合节点池 + Karpenter 架构感知调度 + Spot 叠加，成本优化可达 60-80%
+
+## 深度分析
+
+### 架构优势的物理来源：访存带宽与物理核，而非"ARM 更优"
+
+**Graviton 的推理优势来自两条物理路径——每瓦性能与内存带宽，而推理恰好是访存密集、并行度高的负载，收益因此被系统性放大。**
+
+代际演进上，从 Graviton2 到 Graviton5，AWS 的迭代主线始终是核心数、内存带宽与向量指令（NEON/SVE）的同步提升：Graviton5（m9g/m9gd）达到 192 核、DDR5-8800，ML 性能较前代提升约 35%。每一代都以低于同代 x86 的单价提供更多物理核与更宽的访存通道。
+
+Transformer 推理的瓶颈恰恰落在这里：生成阶段逐 token 解码，权重与 KV cache 的访存搬运量远大于算术量，是典型的 memory-bound 负载——峰值 FLOPS 常常用不满，内存带宽与容量配比反而决定 token 吞吐。ARM 的每瓦性能与带宽设计让同样吞吐消耗更少能耗；Graviton 无 SMT，物理核直接暴露给调度器，多租户与 Agent 的并发请求天然是 fan-out 结构，实测可获得 1.5-2.5× 吞吐优势。
+
+### 性价比的浮动区间：从营销叙事回到负载画像
+
+**"20-40% 成本节省"只有在负载画像与实例选型匹配时才成立——收益随访存密度与线程效率浮动，决策必须建立在实测而非宣传口径上。**
+
+收益来源是两层叠乘：实例单价更低（同代 m8g 比 m7i 便宜约 11%），再乘上吞吐提升。实测案例给出锚点：EKS 多租户 Agent 实践报告 20-40% 计算成本优化（叠加 Spot 可达 60-80%）；Agentic RL 沙箱 benchmark 显示 m7i→m8g 每百万 rollouts 成本降约 30%、m7i→m9g 约 41%，p99 仅为 x86 的 40-60%。方向一致，幅度差异恰恰证明"负载决定收益"。
+
+边界同样真实：单线程、访存密度低、或核心路径依赖 AVX 微内核的负载，ARM 可能没有优势甚至更差；Intel 换代 m7i→m8i 反而贵 5%，说明"换代"不等于"降价"。因此正确姿势是先做负载画像（访存密度、并发度、p99 敏感度），再决定是否迁移。
+
+### 生态兼容性与 CUDA 边界：什么负载值得迁移
+
+**Graviton 迁移的失败点几乎总在生态而非硬件——x86 优化路径在 ARM 上可能退化为标量实现，CUDA 链路则完全不可迁移；这两条边界划定了 Graviton 的适配域。**
+
+第一层是算子级验证。PyTorch 与 ONNX Runtime 的 ARM 构建已相当成熟，但并非所有算子都有等效的 NEON/SVE 实现：依赖 AVX 的 GEMM/卷积微内核在 ARM 上可能回退到标量路径，纸面性能与实际吞吐相差数倍。部署前必须用 ARM 构建跑 per-op profiling，逐算子确认 embedding、attention、采样等关键路径未退化——这是迁移后性能不达预期的头号原因。
+
+第二层是 CUDA 依赖边界。依赖 CUDA/cuBLAS/FlashAttention 的链路无法迁移到纯 CPU 实例，Graviton 的适配域因此明确：CPU 推理、量化轻量模型、embedding/rerank 小模型，以及 Agent 场景中占比极高的工具执行与沙盒负载。这条边界反而是决策工具——按"是否需要 CUDA"切分负载，GPU 只保留必须的部分。Agentic RL 沙箱案例印证了这一点：沙盒层 CPU bound、fan-out 重、无 BLAS/CUDA 路径，不动 GPU 流程却贡献 30-41% 成本下降——Agent 推理的沙盒与工具调用层同理。
+
+### 量化叠加与集群化：乘法关系与规模化路径
+
+**Graviton 的收益不是孤立的：与量化是乘法关系，与集群调度是规模化关系——只有组合评估才能拿到真实 ROI。**
+
+量化与 Graviton 的乘法效应源于访存特性：INT8 权重内存减半、INT4 仅剩八分之一，访存受限的 ARM 架构同时省内存又省带宽。Graviton + INT8/INT4 + ONNX Runtime 的组合可以把可用的 Agent 推理服务压到消费级成本区间。因此 Graviton 必须纳入量化矩阵测算（Q4/Q8 × 架构 × 延迟/成本）——单独评估任何一条线都会低估组合收益。
+
+集群化则是规模化路径：单实例性价比只是起点，EKS/ECS 的 Graviton 节点组与 x86+Graviton 混合节点池按负载特性调度，把适合 ARM 的推理 Pod 优先调度到 Graviton 节点，形成成本分层集群；Karpenter 架构感知调度（节点启动约 2 分钟、空闲 30 分钟回收）让混部成为低运维默认选项，叠加 Spot 后多租户场景总成本优化可达 60-80%。更关键的结构性收益来自解耦：CPU 侧（沙盒、工具执行、轻量推理）与 GPU 侧独立选型、独立扩缩容，迁移不触碰 GPU 流程。
+
+## 实践启示
+
+1. **先做负载画像再谈迁移**：以访存密度、并发度、p99 敏感度三维评估，符合"高并发、访存密集、单核峰值不敏感"的负载才值得迁移
+2. **算子级验证先行**：用 ONNX Runtime/PyTorch ARM 构建跑 per-op profiling，确认关键算子未退化为标量实现
+3. **用延迟分布而非均值做 A/B**：对比 p50/p99 与吞吐，Agent 交互对长尾延迟敏感
+4. **纳入量化矩阵组合测算**：把 Graviton 放进 Q4/Q8 × 架构 × 延迟/成本矩阵，乘法收益只有组合评估才能看到
+5. **按 CUDA 依赖切分负载**：GPU 只保留必须 CUDA 的模型调用，CPU 推理、沙盒、工具执行、预处理下沉到 Graviton 节点
+6. **集群层面做成本分层**：混合节点池 + Karpenter 架构感知调度 + Spot 叠加，让收益规模化，保留 x86 兜底节点控制风险
+
+## 相关实体
+
+- [Quantization Techniques](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md)：量化方法体系与乘法叠加收益
+- [EKS Graviton 多租户 Agent 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)：EKS + Karpenter + Spot 集群部署实测
+- [Graviton 优化 Agentic RL 沙箱成本](https://github.com/QianJinGuo/wiki/blob/main/entities/graviton-optimize-agentic-rl-sandbox-architecture-cost.md)：沙盒层迁移的 benchmark 方法与实测收益
+- [AWS Graviton5 M9g/M9gd 实例](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)：Graviton5 的规格与代际能力
+- [AI 驱动的 Graviton 迁移评估](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-graviton-migration-kiro-power-guide.md)：迁移评估的实战指南
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)：Agent 推理基础设施与负载分配的框架语境
+
+---
+
+## Ch16.015 Disaggregated Prefill and Decode for LLM Inference on SageMaker HyperPod
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/disaggregated-prefill-decode-llm-inference-sagemaker.md`
 
@@ -1383,7 +1457,7 @@ DPD 架构正在改变推理基础设施的设计范式。传统"单节点尽可
 
 ---
 
-## Ch16.015 Unlocking asynchronicity in continuous batching
+## Ch16.016 Unlocking asynchronicity in continuous batching
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/continuous-async.md`
 
@@ -1435,7 +1509,7 @@ CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点�
 
 ---
 
-## Ch16.016 SGLang
+## Ch16.017 SGLang
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/sglang.md`
 
@@ -1460,60 +1534,6 @@ SGLang作为UC Berkeley/CMU/Stability AI联合开发的LLM推理框架，其核�
 ## 相关页面
 [GLM-5 Scaling Pain 推理复盘](https://github.com/QianJinGuo/wiki/blob/main/entities/glm5-scaling-pain.md) — 包含 HiCache BugFix #2 的详细分析
 - [基于SGLang的大模型推理部署实践](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang-inference-deployment-practice-benchmark-tuning.md) — Benchmark 方法论、部署方案选型与调优实战指南
-
----
-
-## Ch16.017 Graviton Inference
-
-> 📊 Level ⭐⭐ | 3.8KB | `entities/graviton-inference.md`
-
-# Graviton Inference
-
-## 概述
-
-AWS Graviton 处理器（Graviton2/Graviton3/Graviton4）是基于 ARM 架构的自研芯片，在 AI 推理场景中提供显著的性价比优势。相比 x86 实例，Graviton 实例在推理工作负载下可降低约 20-40% 的成本，同时保持 comparable 延迟性能。关键应用场景包括：使用 ONNX Runtime 或 PyTorch 在 ARM 上运行量化模型、通过 AWS Neuron SDK 在 Graviton 上加速 Transformer 推理、以及在 EKS/ECS 上部署 Graviton 节点组的 Agent 推理集群。
-
-## 主要内容
-
-- Graviton 处理器架构
-- ARM 上的推理优化
-- ONNX Runtime on Graviton
-- 成本对比分析
-- EKS Graviton 节点部署
-
-## 深度分析
-
-### Graviton 的性价比来自架构差异而非营销定位
-
-Graviton 基于 ARM 架构，与 x86 相比在每瓦性能与内存带宽上有天然优势，且 AWS 将其作为自研芯片按更低的单位算力价格出售。对推理这类内存带宽敏感、并行度高的负载，Graviton 的收益会被放大——这也是为何它被 AWS 定位为推理优先的算力选项。性价比收益并非恒定 20-40%，而是随负载的访存密度与线程效率浮动。
-
-### 生态兼容性是 Graviton 推理的真实门槛
-
-模型推理框架（PyTorch、ONNX Runtime）对 ARM 的支持已相当成熟，但并非所有算子都有等效的 ARM 优化实现。部署前必须做算子级验证：某些 x86 上依赖 AVX 指令集的优化路径在 ARM 上会退化为标量实现，导致性能低于预期。ONNX Runtime 与 PyTorch 的 ARM 构建是首选，而依赖 CUDA 的推理链路无法直接迁移——这决定了 Graviton 适合 CPU 推理与轻量模型，而非 GPU 工作负载。
-
-### 与量化技术叠加是 Graviton 的最佳实践
-
-Graviton 的推理收益与模型量化是乘法关系：量化模型在 ARM 上既省内存又省带宽，进一步放大架构优势。实际部署中，Graviton + INT8/INT4 量化 + ONNX Runtime 的组合可以在消费级成本区间内支撑可用的 Agent 推理服务。这也意味着 Graviton 方案应被纳入量化矩阵测算，而非单独评估。
-
-### 集群化部署让 Graviton 收益规模化
-
-单实例性价比只是起点，EKS/ECS 上的 Graviton 节点组才是规模化路径：混合节点池（x86 + Graviton）可以按负载特性调度，把适合 ARM 的推理 Pod 优先调度到 Graviton 节点，形成成本分层的集群。Karpenter 等调度器对架构感知的支持让这种混部成为低运维成本的默认选项。
-
-## 实践启示
-
-1. 迁移前做算子级验证（ONNX Runtime/PyTorch ARM 构建），确认关键算子在 ARM 上有等效优化
-2. 将 Graviton 方案与量化矩阵一起测算——Graviton + INT8 的收益大于两者单独评估之和
-3. 用 GPU 处理必须 CUDA 的负载，把 CPU 推理类负载迁移到 Graviton 节点
-4. 在 EKS 上建立 x86/Graviton 混合节点池，按负载类型调度以最大化整体成本收益
-5. 用真实流量做 A/B 压测对比 x86 与 Graviton 的延迟分布，再决定迁移范围
-
-## 相关概念
-
-- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
-- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
-- 参见 [Quantization Techniques](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) 的量化方法体系
-- 参见 [EKS Graviton 多租户 Agent 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md) 的集群部署案例
-- 参见 [Graviton 优化 Agentic RL 沙箱成本](https://github.com/QianJinGuo/wiki/blob/main/entities/graviton-optimize-agentic-rl-sandbox-architecture-cost.md) 的成本优化实践
 
 ---
 
@@ -2557,7 +2577,72 @@ Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw
 
 ---
 
-## Ch16.027 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
+## Ch16.027 Quantization Techniques
+
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/quantization-techniques.md`
+
+# Quantization Techniques
+
+## 摘要
+
+量化是以可预测的精度损失换取数量级内存与能耗收益的模型压缩技术，通过降低权重/激活的数值位宽（FP16 → INT8/INT4 乃至 1-bit）使大模型得以装入消费级硬件。它是本地化与端侧 Agent 推理的关键使能层，而 PTQ、QAT 与原生低比特训练三条路线之间的选择，本质上是部署成本与质量之间的一次工程权衡。
+
+## 核心要点
+
+- **内存即可行性**：权重从 FP16 到 INT8 内存减半、到 INT4 仅剩八分之一，内存占用直接决定模型能否装入单卡、能否跑在手机或边缘设备上
+- **PTQ 与 QAT 的分水岭是"是否需要重新训练"**：GPTQ/AWQ/SmoothQuant 仅需少量校准数据即可完成，QAT 精度更高但训练成本显著
+- **权重轴与激活轴相互独立**：W4A16/W8A16 成熟常见，W4A4 激进且依赖动态分布统计；解读模型卡需先分清被量化的轴
+- **离群点是精度失守的主因**：SmoothQuant 的思路是把激活的缩放迁移到权重侧，从而绕开动态统计的难点
+- **1-bit/三元量化正在重构叙事**：BitNet 让乘法变加法，Bonsai Image 4B 证明 1.58-bit 可在 6.4x 压缩下保留约 95% 质量
+- **通用分数下降 ≠ 任务不可用**：量化效果必须以目标任务的端到端回归测试为准，而非仅看基准榜
+
+## 深度分析
+
+### 量化的本质：用可预测的精度损失交换数量级的内存收益
+
+量化不是"性能优化选项"，而是"部署可行性开关"——它改变的是参数的数值表示，而非模型的语义结构。对 LLM 而言，权重从 FP16 降到 INT8 内存直接减半，降到 INT4 只剩八分之一，再叠加 KV cache 与激活的内存占用，位宽往往决定了模型能否装进单张消费级显卡、能否跑在 Mac 统一内存或手机 SoC 上。在 Agent 部署语境里，装不进去的模型精度再高也没有意义，因此量化首先是一道"能不能跑起来"的门槛，其次才是吞吐与延迟的优化空间。
+
+精度代价并非均匀分布。量化误差集中在一小部分离群权重与敏感层上：困惑度的轻微上升背后，可能是长尾知识、指令遵循或格式约束等能力的局部塌陷。这解释了为什么"可预测"是量化的核心诉求——好的方案追求误差可控、可回归验证，而不是零损失；而差方案往往在基准分数看似不变的同时，悄悄牺牲了最难量化的那部分能力。
+
+### PTQ 与 QAT 的分野：后处理校准 vs 训练期适应
+
+分水岭在于是否重新训练：训练后量化（PTQ）是部署前的后处理，量化感知训练（QAT）是训练流程的一部分，二者成本与精度相差一个量级。工程默认从 PTQ 起步，不是因为它更好，而是因为它不动训练流程——几百条校准样本即可完成。
+
+PTQ 家族内部路线各异：GPTQ 基于二阶 Hessian 近似逐层最小化量化误差，AWQ 依据激活分布保护显著通道的精度，SmoothQuant 则把激活的缩放因子迁移到权重侧，绕开激活离群点这个 PTQ 最大的精度杀手。它们共同的假设是"校准数据能代表真实分布"，因此校准集的构造质量直接影响量化效果。QAT 则在训练过程中通过直通估计器等手段模拟量化噪声，让权重在训练时就适应离散的量化网格，精度通常优于同等位宽的 PTQ；代价是训练算力、数据与流程成本。实践中常见的是混合策略：PTQ 得到初始低比特权重，再做少量步数的 QAT 微调，在成本与精度之间取折中。
+
+### 权重轴与激活轴：读模型卡先分清 W4A16 与 W4A4
+
+权重量化与激活量化是两条独立的优化轴，绝大多数"INT4 模型"只量化了权重。权重是静态的，量化网格与缩放因子可以离线计算、按层按通道精细优化，因此 W4A16/W8A16 成熟且风险低；激活随输入动态变化，量化需要在线统计每层分布，误差还会随层数累积，W4A4 只有在专用硬件或激进方案中才常见。模型卡上的"4-bit 模型"通常指 W4A16——激活仍保持 16-bit，若同时量化激活则必须显式标注（W8A8、W4A4），这是快速判断一个量化方案风险等级的第一眼。
+
+这条分界线还提示：量化质量的瓶颈往往不在位宽数字本身，而在计算图的细节。TLiveOmni 的 vLLM 适配案例显示，仅仅改变浮点相加顺序（GPU 浮点加法不满足结合律）就会让误差逐层放大，必须与 Transformers 参考实现逐位对齐；同理，group-wise scaling factor 的粒度与敏感层保留策略，比"4-bit"这个标签更能解释最终质量——Bonsai Image 4B 的 1-bit/ternary 模型靠分组缩放拿到 1.125/1.71 的有效位数，并把约 5% 的投影层留在 FP16，质量才得以兜底。
+
+### 1-bit 与三元量化：把低比特从"妥协"重构为"原生设计"
+
+BitNet 与 Bonsai Image 4B 正在改写量化叙事：低比特不再是事后补救，而是从训练之初就内建的设计约束。1.58-bit 三元量化（{−1, 0, +1}）把矩阵乘法变成加法，理论上可将推理能耗再降一个数量级；由于模型从设计之初就按低比特训练，精度损失远小于事后量化。Bonsai Image 4B 证明了这条路线在非语言模态的可行性：相对 FP16 实现 8.3x（1-bit）/6.4x（ternary）压缩，ternary 保留约 95% 的 GenEval 质量（1-bit 约 88%），并首次让 4B 级图像模型在 iPhone 上以 9.4 秒生成 512x512 图像、活跃内存仅 1.5–1.96GB。
+
+其深层启示是"差异化精度"：并非所有权重同等敏感，分组缩放因子与少量高精度投影层承担了大部分质量兜底。这意味着未来的量化决策将从"全局统一位宽"走向"按层/按模块分配精度预算"，而原生低比特训练将让部署侧绕开 PTQ/QAT 的经典权衡。对端侧与边缘 Agent 推理而言，这是一条可能跳过中间态、直接获得数量级收益的路径，值得持续跟踪。
+
+## 实践启示
+
+1. 部署前先做量化矩阵测算（Q4/Q8 × 内存/延迟/质量），用数据而非直觉选级别；llama.cpp 生态可从 Q4_K_M 起步，再按质量反馈升降级
+2. 默认走 PTQ 路线（GPTQ/AWQ/SmoothQuant），记录校准数据集与评测基线，精度不达标时再评估 QAT 的训练成本
+3. 解读模型卡时区分"权重 4-bit（W4A16）"与"权重+激活 4-bit（W4A4）"，并确认 KV cache 是否参与量化，避免误判真实精度损失
+4. 用目标任务的端到端指标做质量回归：通用评测分数下降 ≠ 目标任务不可用，反之亦然
+5. 关注 BitNet、Bonsai 等原生低比特模型的进展——端侧与边缘场景可能直接绕过量化权衡，获得数量级收益
+6. 精度对齐看实测而非纸面参数：校验计算顺序、缩放因子粒度与敏感层保留策略，参考 TLiveOmni vLLM 的浮点对齐经验
+
+## 相关实体
+
+- [LLaMA.cpp Deployment](https://github.com/QianJinGuo/wiki/blob/main/entities/llama-cpp-deployment.md)：GGUF 量化级别矩阵与本地推理实践
+- [Bonsai Image 4B Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-quantization.md)：图像生成模型的 1-bit/三元量化案例
+- [Bonsai Image 4B 1-bit/Ternary 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-1-bit-ternary.md)：分组缩放因子与敏感层保留的实测细节
+- [TLiveOmni vLLM Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/tliveomni-vllm-quantization.md)：服务端量化与浮点精度对齐工程
+- [AI Infra：LLM 高效推理 (vLLM)](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md)：推理引擎层面的优化配套
+- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)：Agent 推理基础设施与量化部署的框架语境
+
+---
+
+## Ch16.028 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
 
@@ -2620,7 +2705,7 @@ MiMo 在多模态优化上的设计体现了一个重要原则——**将瓶颈�
 
 ---
 
-## Ch16.028 elasticpp重塑elasticsearch查询性能的c内核引擎
+## Ch16.029 elasticpp重塑elasticsearch查询性能的c内核引擎
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md`
 
@@ -2686,7 +2771,7 @@ elasticpp 没有选择替换整个 Elasticsearch，而是将最核心、最耗�
 
 ---
 
-## Ch16.029 Bonsai Image 4B: 1-bit 和 Ternary 量化
+## Ch16.030 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
 
@@ -2752,7 +2837,7 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.030 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+## Ch16.031 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
 
 > 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md`
 
@@ -2809,7 +2894,7 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 
 ---
 
-## Ch16.031 vLLM V0 to V1: Correctness Before Corrections in RL
+## Ch16.032 vLLM V0 to V1: Correctness Before Corrections in RL
 
 > 📊 Level ⭐⭐⭐ | 4.6KB | `entities/servicenow-vllm-correctness.md`
 
@@ -2847,7 +2932,7 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 
 ---
 
-## Ch16.032 Pytorch in Kernel Recsys Optimization
+## Ch16.033 Pytorch in Kernel Recsys Optimization
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
 
@@ -2882,7 +2967,7 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 
 ---
 
-## Ch16.033 14× faster embeddings: how we rebuilt the ONNX path in Manticore
+## Ch16.034 14× faster embeddings: how we rebuilt the ONNX path in Manticore
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md`
 
@@ -2916,61 +3001,6 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch16.034 Quantization Techniques
-
-> 📊 Level ⭐⭐⭐ | 3.7KB | `entities/quantization-techniques.md`
-
-# Quantization Techniques
-
-## 概述
-
-模型量化是大语言模型推理优化的核心技术，通过降低模型参数精度（从 FP16/FP32 到 INT8/INT4 甚至更低）来减少内存占用和加速推理。主要方法包括：训练后量化（PTQ）如 GPTQ、AWQ、SmoothQuant；量化感知训练（QAT）；以及最新的 1-bit 量化（BitNet）。在 Agent 部署场景中，量化技术使得在消费级 GPU 甚至 CPU 上运行大模型成为可能，是实现本地化 Agent 推理的关键使能技术。
-
-## 主要内容
-
-- 训练后量化 (PTQ)
-- 量化感知训练 (QAT)
-- GGUF 格式量化
-- GPTQ/AWQ/SmoothQuant
-- 1-bit 量化 (BitNet)
-- 推理性能 vs 精度权衡
-
-## 深度分析
-
-### 量化本质是"以可预测的精度损失换取数量级的内存收益"
-
-量化压缩的是参数的数值表示，而非模型的语义结构：FP16 到 INT8 直接减半内存，到 INT4 则降到八分之一。对 LLM 而言，内存占用直接决定模型能否装入单卡或消费级硬件——量化不是"性能优化选项"，而是"部署可行性开关"。精度的代价则表现为困惑度上升与长尾任务退化，通常在中低风险场景可接受。
-
-### PTQ 与 QAT 的分野在"是否需要重新训练"
-
-训练后量化（GPTQ、AWQ、SmoothQuant）无需重训，用少量校准数据即可完成，是快速部署路径；其难点在于处理激活值中的离群点，SmoothQuant 正是通过把激活缩放迁移到权重来缓解这一点。量化感知训练（QAT）在训练阶段模拟量化误差，精度更高但成本显著。工程上默认从 PTQ 开始，只有精度不达标才升级到 QAT。
-
-### 权重量化与激活量化是两条独立的优化轴
-
-多数 LLM 部署只做权重量化（W4A16、W8A16），因为权重静态可预计算、误差可控；而激活量化需要动态统计每层分布，实现复杂、容易掉精度。理解这条分界线有助于解读模型卡上的量化标注——"INT4 模型"通常指权重 4-bit，激活仍为 16-bit。真正同时量化权重与激活（W4A4）是更激进的方案，只在专用硬件上常见。
-
-### 1-bit 量化（BitNet）重新定义了下限
-
-BitNet 系列将权重压到 1-bit（或 1.58-bit 三元），把乘法变成加法，理论上可把推理能耗再降一个数量级。它改变了"量化是精度妥协"的叙事——模型从设计之初就按低比特训练，精度损失远小于事后量化。这一方向仍处早期，但代表了端侧与边缘推理的未来形态。
-
-## 实践启示
-
-1. 部署前先做量化矩阵测算（Q4/Q8 × 内存/延迟/质量），用数据而非直觉选择级别
-2. 默认走 PTQ 路线（GPTQ/AWQ/SmoothQuant），精度不足时再评估 QAT 成本
-3. 解读模型卡时区分"权重 4-bit"与"权重+激活 4-bit"，避免误判真实精度损失
-4. 结合具体任务做质量回归测试——通用评测分数下降 ≠ 目标任务不可用
-5. 关注 BitNet 等原生低比特模型的进展，它们在端侧部署上可能绕过量化权衡
-
-## 相关概念
-
-- 与 Agent 推理优化、模型部署、成本控制等领域密切相关
-- 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的推理基础设施部分
-- 参见 [LLaMA.cpp Deployment](https://github.com/QianJinGuo/wiki/blob/main/entities/llama-cpp-deployment.md) 的 GGUF 量化实践
-- 参见 [Bonsai Image 4B Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-quantization.md) 的具体量化案例
-- 参见 [TLiveOmni vLLM Quantization](https://github.com/QianJinGuo/wiki/blob/main/entities/tliveomni-vllm-quantization.md) 的服务端量化实践
 
 ---
 

@@ -159,8 +159,8 @@ ChangeSet 是一个存在于git版本库中的，把每次变更的过程都记�
 
 ## 相关实体
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/266-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Ai 编程的下一场架构迁移从代码检索到上下文操作](../ch05/100-ai.html)
-- [Ai Era Git Version Control Agentic Coding Practices](ch04/718-agentic.html)
+- [Ai 编程的下一场架构迁移从代码检索到上下文操作](../ch05/101-ai.html)
+- [Ai Era Git Version Control Agentic Coding Practices](ch04/289-agentic.html)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/052-coding-agent.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/035-agent.html)
 

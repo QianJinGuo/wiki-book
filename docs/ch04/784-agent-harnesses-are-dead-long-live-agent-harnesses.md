@@ -49,7 +49,7 @@ Moura 提出的核心概念：从物理学借用的"纠缠"隐喻——当两个
 
 这与过去三十年软件的工作方式完全相反——我们一直构建工具并要求人类适应它们。纠缠式软件翻转了这一假设：软件适应行为，而不是行为适应软件。这在没有 Agent 之前是不可能的。
 
-**对 Agent 系统的含义**：Agent 系统正在演变为"纠缠式 Agent 系统"（Entangled Agentic Systems）。当 Agent 真正部署到客户的流程、数据和工作中，它们变得完全纠缠——客户无法轻易替换，因为 Agent 已经深度嵌入其运营方式。这与 [Harness Engineering 核心模式](../ch05/129-harness-engineering.html) 中讨论的"Agent 与工作流的深度耦合"一致。
+**对 Agent 系统的含义**：Agent 系统正在演变为"纠缠式 Agent 系统"（Entangled Agentic Systems）。当 Agent 真正部署到客户的流程、数据和工作中，它们变得完全纠缠——客户无法轻易替换，因为 Agent 已经深度嵌入其运营方式。这与 [Harness Engineering 核心模式](../ch05/057-harness-engineering.html) 中讨论的"Agent 与工作流的深度耦合"一致。
 
 ### 4. "路，而不是车"——基础设施 vs 应用层的价值分配
 
@@ -78,12 +78,12 @@ CrewAI 同时构建了框架（CrewAI Flows）和 Harness（CrewAI Crews and Age
 ## 相关实体
 
 - [Hermes Agent Operator](../ch03/102-hermes-agent.html)
-- [Harness Engineering 核心模式](../ch05/129-harness-engineering.html)
+- [Harness Engineering 核心模式](../ch05/057-harness-engineering.html)
 - [Claude Code 动态工作流](../ch09/102-claude-code-dynamic-workflows.html)
 - [Harness Generator-Evaluator](../ch01/1533-anthropic.html)
-- [Agent Reliability Engineering](ch04/339-skill.html)
+- [Agent Reliability Engineering](ch04/340-skill.html)
 - [当 AI 构建自身](../ch01/1533-anthropic.html)
-- [Prime Intellect Auto NanoGPT](../ch01/267-0.html)
+- [Prime Intellect Auto NanoGPT](../ch01/928-9.html)
 
 ---
 

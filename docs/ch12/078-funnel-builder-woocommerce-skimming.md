@@ -41,11 +41,11 @@ Funnel Builder 包含一个公开暴露的结账端点，允许传入请求选�
 3. **在结账页面部署 CSP 并限制 script-src**：为 WooCommerce 结账页面设置严格的内容安全策略（CSP），明确限定允许加载的脚本来源（仅限可信域名），阻断来自未授权域名的 JavaScript 执行，即使攻击者已在设置中注入脚本也无法加载。4. **对 WordPress 插件实现运行时行为监控**：部署专门的 WordPress 安全监控（如 Wordfence、Sucuri 或 Patchstack），重点监控 `wp_options` 表中 plugin settings 的变更行为，以及结账页面 DOM 中动态插入的可疑 script 标签。
 5. **建立第三方脚本引入的强制审核流程**：制定安全策略要求所有新引入的第三方脚本（GTM、Analytics、Chat Widget 等）必须经过安全团队的代码审查和域名 Verify后方可上线。对于电商平台，建议在结账流程中完全禁用非必要第三方脚本。
 ## 相关实体
-- [Funnel Builder Flaw Under Active Exploitation Enables Woocommerce Checkout Skimm](ch12/104-funnel-builder-flaw-under-active-exploitation-enables-woocom.html)
+- [Funnel Builder Flaw Under Active Exploitation Enables Woocommerce Checkout Skimm](ch12/105-funnel-builder-flaw-under-active-exploitation-enables-woocom.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](ch12/068-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/357-01.html)
+- [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](../ch01/356-01.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/funnel-builder-flaw-under-active-exploitation-enables-woocom.md)
 

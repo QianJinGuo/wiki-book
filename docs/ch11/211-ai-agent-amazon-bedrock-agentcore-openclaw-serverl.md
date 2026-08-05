@@ -1,93 +1,46 @@
-# AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客
+# AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客
 
-## Ch11.211 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客
+## Ch11.211 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-3.md`
-
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Agent 的迁移与现代化 — 使用 Amazon…"))
-    概述
-    核心技术
-    来源
-    深度分析
-    实践启示
-    相关实体
-```
+> 📊 Level ⭐⭐ | 6.5KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-6.md`
 
 ## 概述
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
-AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 by awschina on 08 5月 2026 in Migration Transfer Services Permalink Share 摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第三篇：Phase 1 — 部署基础设施，deploy.sh 脚本解析、CDK 部署 5 个基础 Stack（VPC / Security / Guardrails / AgentCore / Observability）及其创建的资源详解
+AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 by awschina on 08 5月 2026 in Migration Transfer Services Permalink Share 摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第六篇：清理资源与总结展望，删除部署资源、迁移前后对比回顾，以及进一步探索方向。 目录 01 十、清理资源 02 十一、总结与展望 十、清理资源 部署完成后，建议删除所有资源避免持续产生费用。 第一步：删除 AgentCore Runtim
 
 ## 核心技术
 Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、OpenClaw、Amazon Bedrock
 
 ## 来源
-> [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-3/)
+> [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-6/)
 
 ## 深度分析
-本文展示了 AI Agent 迁移中的 **Replatform vs Refactor 策略选择框架**。Replatform（换底座不换核心）= 用 AWS 托管服务替代手动运维，地基打好但不做架构重构；Refactor = 重新设计以充分利用云原生能力。文章强调 Replatform 是当前阶段的务实选择——用 Bedrock AgentCore 的托管能力替代 OpenClaw 的手动运维，降低运营负担同时保留业务逻辑完整性。
-**Phase 1 基础设施栈的模块化价值**：CDK 一次性声明式部署 5 个基础 Stack（VPC/Security/Guardrails/AgentCore/Observability），解决了传统 Agent 部署中网络配置、安全防护、监控告警需要手动串联的问题。这种"先建基础设施，再跑业务"的顺序符合企业级部署的标准流程。
-**BUILD_MODE=codebuild 的实际考量**：AgentCore 要求 ARM64 镜像，而开发环境通常是 x86。CodeBuild 模式启用云端 ARM64 原生构建，解决了跨架构构建的兼容性问题。这是一个典型的不对称资源问题——本地 ARM64 构建机成本高、利用率低，云端按需构建更经济。
-**多租户 Serverless 架构的核心优势**：通过 AgentCore 实现多租户隔离，租户间共享底层资源但逻辑隔离，兼顾成本效率和安全性。这对于 AI Agent 这类潮汐 workload（使用率波动大）尤其有价值——Serverless 自动 scaling 特性避免了资源预留浪费。
+**这是 OpenClaw 从单机到多租户 Serverless 架构迁移系列文章的第六篇，也是收尾篇**。前五篇分别覆盖了迁移策略（Replatform vs Refactor）、架构设计、租户隔离、运行时配置等，本篇聚焦于资源清理与整体复盘。这六篇系列构成了一个完整的"AI Agent 现代化改造方法论"——从评估现状、制定策略、到实施落地、最后到收尾清理。
+**Replatform 与 Refactor 两种策略代表了不同的现代化路径**。Replatform 是将现有系统迁移到托管服务（如将 EC2 上的 OpenClaw 迁移到 Bedrock AgentCore），保留应用架构不变；Refactor 则是借迁移机会重新设计架构，利用云原生特性（如多租户 Serverless）。前者风险低、周期短，后者收益大但复杂度高。选择哪种策略取决于业务优先级、团队能力和时间窗口。
+**多租户 Serverless 架构的核心挑战是"隔离"**。包括计算隔离（不同租户的 Agent 不会相互影响）、数据隔离（租户数据严格分离）、权限隔离（资源访问控制）、成本隔离（各租户独立计费）。Bedrock AgentCore 的多租户支持是 AWS 在这一领域的深度优化，简化了开发者需要处理的隔离复杂度。
+**资源清理是容易被忽视但至关重要的环节**。云资源的持续计费可能带来意外成本，尤其是迁移过程中产生的临时资源。建议在完成迁移后立即清理所有过渡资源，并建立资源生命周期管理规范。
 
 ## 实践启示
-**迁移规划**：采用渐进式迁移策略而非大爆炸式重构。Phase 1 先建基础设施（网络、安全、监控），Phase 2 部署 Runtime，Phase 3 接入业务层。每阶段独立验证，降低整体风险。
-**容器构建**：跨架构构建场景下（x86 开发机 + ARM64 生产机），优先选择云端构建服务（CodeBuild），而非尝试本地交叉编译或维护 ARM64 构建机。
-**Stack 设计**：参考文中的 5 Stack 划分（VPC/Security/Guardrails/AgentCore/Observability），在实际项目中根据团队边界调整。Security 和 Guardrails 分离是合理设计——Security 负责基础 IAM/VPC，Guardrails 负责内容审核/行为限制。
-**运维集成**：deploy.sh 的分阶段执行设计（--phase1/--phase2/--phase3/--cdk-only）提供了灵活的运维弹性。在实际项目中，根据 CI/CD 需求选择性地触发不同阶段，而非每次全量部署。
+1. **迁移前做充分的架构评估**：参考系列文章第一篇的评估框架，明确当前系统的瓶颈、迁移目标、团队能力和时间窗口，再决定采用 Replatform 还是 Refactor。
+2. **多租户设计要考虑"隔离"的多个层次**：不仅仅是计算和存储的隔离，还包括权限、成本、监控等。建议在设计阶段就将隔离作为核心需求而非事后添加的约束。
+3. **建立资源生命周期清单**：每次部署新资源时，记录其用途、创建时间和预期保留期限。这可以大幅简化后续的清理工作，也能避免"无人知道这个资源是否还在使用"的困境。
+4. **迁移完成后立即清理过渡资源**：不要等到季度审计时才想起来清理。迁移过程中的临时资源（如过渡数据库、测试用的 Bedrock 实例）如果不及时清理，会持续产生费用。
+5. **保留迁移过程的文档**：
+
+   - 本系列文章本身就是很好的复盘素材，可以作为团队知识沉淀
+   - 包括踩坑记录、配置决策、测试结果等
+   - 这些文档对后续的架构演进和新人 onboarding 都有价值
+6. **关注成本监控的持续性**：多租户 Serverless 的成本模型与单机部署有显著差异。建议在迁移完成后建立租户级别的成本监控，及时发现异常消费模式。
 
 ## 相关实体
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch04/540-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/540-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/540-amazon-bedrock-agentcore.html)
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/540-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/540-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/639-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/639-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/639-amazon-bedrock-agentcore.html)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/639-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/639-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/540-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/639-amazon-bedrock-agentcore.html)
 
 ---
 

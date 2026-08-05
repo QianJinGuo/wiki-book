@@ -9,7 +9,7 @@
 
 ## 相关实体
 
-- [anthropic acquires stainless](../ch04/521-anthropic-acquires-stainless.html)
+- [anthropic acquires stainless](../ch04/522-anthropic-acquires-stainless.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/down-fall-of-bug-bounties.md)
 
 ## 深度分析
@@ -20,7 +20,7 @@ AI 模型的大规模普及正在从根本上瓦解 bug bounty 生态系统的�
 
 ### 平台应对策略的局限：技术对抗 vs 信任重建
 HackerOne 选择用 AI 对抗 AI，试图通过自动化检测识别 AI 生成报告；Bugcrowd 则侧重于引入更严格的控制机制来阻断 AI agent 的批量提交行为。 两种路径都未能解决根本问题：平台未能建立基于研究员历史贡献的可信度评估体系，导致真正有价值的研究者反而被淹没在审查延迟中。
-这与 Daniel Stenberg 关闭 cURL bug bounty 的决策形成呼应——后者明确以「AI slop 泛滥」为由终止了整个项目，虽然他也承认部分 AI 辅助报告确实具有价值（参见 [Anthropic S Bug Hunting Mythos Was Greatest Marketing Stunt Ever Says Curl Creat](ch12/116-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)）。这种矛盾立场揭示了安全社区对 AI 的核心焦虑：AI 确实能提升安全研究的效率，但同时也系统性地提升了噪声（noise）而非信号（signal）。
+这与 Daniel Stenberg 关闭 cURL bug bounty 的决策形成呼应——后者明确以「AI slop 泛滥」为由终止了整个项目，虽然他也承认部分 AI 辅助报告确实具有价值（参见 [Anthropic S Bug Hunting Mythos Was Greatest Marketing Stunt Ever Says Curl Creat](ch12/117-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)）。这种矛盾立场揭示了安全社区对 AI 的核心焦虑：AI 确实能提升安全研究的效率，但同时也系统性地提升了噪声（noise）而非信号（signal）。
 
 ### 研究员动机退化：从经济激励到纯粹的研究热情
 作者坦承自己参与 bug bounty 的动力已从经济回报彻底转向对技术的纯粹热爱——这是经济激励失效的危险信号。 当顶尖研究员发现其十年积累的可信度在平台算法中毫无权重、提交高价值漏洞得不到及时响应时，理性选择是转向能快速验证成果的平台，或将精力投入纯粹以兴趣为导向的研究。人才流失将进一步降低平台的有效报告密度，形成恶性循环。

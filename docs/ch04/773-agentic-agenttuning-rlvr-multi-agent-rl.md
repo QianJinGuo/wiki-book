@@ -59,7 +59,7 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 - **Reward设计**：LLM Judge作为奖励模型引入的"评委不稳定性"使奖励更加模糊——同一个回复LLM Judge在不同次调用可能给出不同的打分
 - **稀疏奖励问题**：在长链工具调用中，只有最终结果才获得反馈，中间步骤的奖励信号极度稀疏
 
-这些挑战在[AgentCore旅行分配系统](ch04/754-agentcore-harness.html)的落地实践中也被反复提及——Agent训练的最大挑战往往不是算法创新，而是工程环境的可靠性。
+这些挑战在[AgentCore旅行分配系统](ch04/755-agentcore-harness.html)的落地实践中也被反复提及——Agent训练的最大挑战往往不是算法创新，而是工程环境的可靠性。
 
 ### 5. 从task-specific训练到通用模型+Skill的演进方向
 
@@ -85,10 +85,10 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 ## 相关实体
 
 - [QoderWork Skills开发实践](../ch03/076-skills.html)
-- [Harness Engineering探索之旅](../ch05/129-harness-engineering.html)
+- [Harness Engineering探索之旅](../ch05/057-harness-engineering.html)
 - [Agent落地真相](../ch03/035-agent.html)
-- [AgentCore旅行分配系统](ch04/754-agentcore-harness.html)
-- [群聊Agent模式](../ch01/638-claude.html)
+- [AgentCore旅行分配系统](ch04/755-agentcore-harness.html)
+- [群聊Agent模式](../ch01/1195-claude.html)
 - [Agent评测方法论](../ch03/035-agent.html)
 - [AREAL-2.0 Agent自演进](../ch03/035-agent.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

@@ -54,7 +54,7 @@ Spark 的独特优势在于 Workflow 集成深度和持久化能力。一个典�
 2. **跨系统编排**：在多个 SaaS 工具之间协调数据流和操作流
 3. **安全与治理**：高风险操作的审批、审计、回滚
 
-Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对前两个层面，但第三个层面——安全治理——仍是所有 Agent 产品的共同挑战。这与 [Harness Engineering](../ch05/129-harness-engineering.html) 框架中强调的六大控制层（调度流、工具层、记忆层、门控层、安全层、观测层）高度一致。
+Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对前两个层面，但第三个层面——安全治理——仍是所有 Agent 产品的共同挑战。这与 [Harness Engineering](../ch05/057-harness-engineering.html) 框架中强调的六大控制层（调度流、工具层、记忆层、门控层、安全层、观测层）高度一致。
 
 ### 人才流失背后的深层信号
 
@@ -78,9 +78,9 @@ Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对�
 
 - [Agent Teams 对比](../ch03/084-claude-code.html) — 三家 Agent 产品路线对比
 - [Claude Science](../ch03/084-claude-code.html) — Anthropic 的 Agent 平台化路径
-- [Harness Engineering](../ch05/129-harness-engineering.html) — Agent 控制面板的系统方法论
+- [Harness Engineering](../ch05/057-harness-engineering.html) — Agent 控制面板的系统方法论
 - [Agent落地真相](../ch03/035-agent.html) — Agent 从演示到投产的核心挑战
-- [Agent Harness 招聘实践](../ch05/062-agent-harness.html) — Agent 在企业场景的工程实践
+- [Agent Harness 招聘实践](../ch05/063-agent-harness.html) — Agent 在企业场景的工程实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/谷歌风雨飘摇市值蒸发数千亿美元gemini-spark能救场吗.md)
 

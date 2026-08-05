@@ -90,7 +90,7 @@ garden-skills 最值得关注的不是单个 Skill 的实现细节，而是它�
 
 - [Claude Code 深度分析](../ch03/084-claude-code.html)
 - [MCP Tool Design Tradeoffs](../ch01/1533-anthropic.html)
-- [Agent Harness Context Management](../ch05/062-agent-harness.html)
+- [Agent Harness Context Management](../ch05/063-agent-harness.html)
 - [Hermes Agent 上手](../ch03/102-hermes-agent.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - Agent Skills 生态

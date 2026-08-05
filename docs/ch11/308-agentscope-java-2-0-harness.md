@@ -316,7 +316,7 @@ AgentScope Java 2.0 将传统 Web 框架中成熟的 Middleware Chain 模式引�
 
 ### Sealed Class 作为消息类型系统的优势与局限
 
-使用 Sealed Interface 定义 Message 类型体系，获得编译期穷尽性检查的同时保持了扩展接口的灵活性。这个选择在 [Harness Engineering 核心模式](../ch05/129-harness-engineering.html) 中有类似的模式讨论。值得注意的是，Sealed Class 的穷尽性检查是一把双刃剑——它强制所有 switch 语句在新增类型时必须显式处理，但同时也要求所有参与者都遵守开闭原则。大型团队中，维护 sealed hierarchy 的演化需要严格的代码审查流程。
+使用 Sealed Interface 定义 Message 类型体系，获得编译期穷尽性检查的同时保持了扩展接口的灵活性。这个选择在 [Harness Engineering 核心模式](../ch05/057-harness-engineering.html) 中有类似的模式讨论。值得注意的是，Sealed Class 的穷尽性检查是一把双刃剑——它强制所有 switch 语句在新增类型时必须显式处理，但同时也要求所有参与者都遵守开闭原则。大型团队中，维护 sealed hierarchy 的演化需要严格的代码审查流程。
 
 ### Abstract FileSystem 的多租户隔离思路值得借鉴
 
@@ -335,16 +335,16 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 ## 相关实体
 
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/062-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/063-agent-harness.html)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/084-claude-code.html)
-- [Factory Mission Multi Agent Architecture](../ch01/1437-factory-mission-multi-agent-architecture.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
-- [Iii Dev Worker Trigger Function](../ch01/383-iii-dev-worker.html)
-- [AgentScope Java Harness Framework 42KB](../ch05/085-harness.html) — 同 AgentScope Java 2.0 早期综述
+- [Factory Mission Multi Agent Architecture](../ch01/1438-factory-mission-multi-agent-architecture.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
+- [Iii Dev Worker Trigger Function](../ch01/382-iii-dev-worker.html)
+- [AgentScope Java Harness Framework 42KB](../ch05/017-harness.html) — 同 AgentScope Java 2.0 早期综述
 - [AgentScope Builder](../ch04/759-self-evolving-agent.html) — 同生态自进化视角
 - [Loop Engineering](../ch05/006-loop-engineering.html) — 同样强调"组织级流程约束"
-- [MXC Execution Containers](../ch05/100-ai.html) — 类似沙箱机制对比
-- [Agent Harness Engineering Survey](../ch05/129-harness-engineering.html) — Harness 行业全景
+- [MXC Execution Containers](../ch05/101-ai.html) — 类似沙箱机制对比
+- [Agent Harness Engineering Survey](../ch05/057-harness-engineering.html) — Harness 行业全景
 
 ## 实践启示
 

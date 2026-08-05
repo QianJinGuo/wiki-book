@@ -299,9 +299,9 @@ OpenAI SDK 的三层护栏（输入→工具→输出）体现了**纵深防御*
 ## 相关实体
 - [Guide Ai Agents Models Apps Harnesses Mollick](ch04/762-ai-agent.html)
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/084-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/792-anthropic-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/477-anthropic-claude-code.html)
 - [Claude Code Routines Proactive Agent](../ch03/084-claude-code.html)
-- [From Prompt To Harness Claude Official](../ch05/085-harness.html)
+- [From Prompt To Harness Claude Official](../ch05/017-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)

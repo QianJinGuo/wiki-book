@@ -92,9 +92,9 @@
 - Budget Action 仅支持 IAM Policy 类操作（不直接支持 budget 调减）
 
 ## 相关实体
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/638-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/639-amazon-bedrock-agentcore.html)
 - [Amazon Quick Bedrock Agentcore Finops Chat](ch11/142-amazon-quick-bedrock-agentcore-finops.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/638-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/639-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Ops Alert](ch11/017-aws-bedrock.html)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/306-amazon-bedrock.html)
 

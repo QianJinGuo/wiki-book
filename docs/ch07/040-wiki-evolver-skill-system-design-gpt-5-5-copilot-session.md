@@ -134,16 +134,16 @@ wiki-evolver 的 Knowledge Ladder 本质上是一个记忆系统的层次模型�
 1. **先建立底层闭环**：在部署 wiki-evolver 之前，确保单篇处理闭环（ingest → synthesize → index → log → lint）已经稳定运行
 2. **从 vault-query 开始**：最轻量的运行模式是 vault-query——先让系统学会「与知识库对话」，再逐步增加涌现能力
 3. **Provenance 是生命线**：任何涌现层的产出都必须可追溯到低层来源，否则知识库的可信度会快速下降
-4. **Evals 是涌现层的关键**：正如 [AI 原生创业公司](../ch05/021-ai-native.html) 中强调的，没有评估系统就无法实现复利增长
+4. **Evals 是涌现层的关键**：正如 [AI 原生创业公司](../ch05/022-ai-native.html) 中强调的，没有评估系统就无法实现复利增长
 5. **渐进式披露**：参考 Claude Code Skills 的设计，wiki-evolver 的能力应该逐步开放，避免一次性暴露过多复杂性
 
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/718-agentic.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/129-harness-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/183-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/290-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wiki-evolver-skill-system-design-gpt55-copilot-session.md)

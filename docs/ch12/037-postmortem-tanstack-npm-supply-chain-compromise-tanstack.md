@@ -7,11 +7,11 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 
 ## 相关实体
-- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/1009-scarcruft.html)
-- [Semis Memo: Supply Chain Inheritance](../ch01/856-semis-memo-supply-chain-inheritance.html)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/100-ai.html)
-- [Semis Memo: Supply Chain Inheritance](../ch05/100-ai.html)
-- [semgrep intercom php supply chain](ch12/122-semgrep-intercom-php-supply-chain.html)
+- [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/1015-scarcruft.html)
+- [Semis Memo: Supply Chain Inheritance](../ch01/859-semis-memo-supply-chain-inheritance.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/101-ai.html)
+- [Semis Memo: Supply Chain Inheritance](../ch05/101-ai.html)
+- [semgrep intercom php supply chain](ch12/123-semgrep-intercom-php-supply-chain.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

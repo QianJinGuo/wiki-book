@@ -42,7 +42,7 @@ Gemini Omni Flash 是高质量、高性价比的视频生成和对话式编辑�
 
 Gemini Omni Flash 是 Gemini Omni 系列的高性价比变体，与 [原有 Gemini Omni](ch01/1495-introducing-gemini-omni.html) 系列互补。原有 Gemini Omni 专注于高质量视频生成，Flash 版本在保持质量的同时大幅降低了成本和推理延迟。
 
-Nano Banana 2 Lite 延续了 Nano Banana 系列（[加速 Gemini Nano 模型](ch01/284-accelerating-gemini-nano-models-on-pixel-with-frozen-multi-t.html)）的高效路线，将推理效率推向新高。
+Nano Banana 2 Lite 延续了 Nano Banana 系列（[加速 Gemini Nano 模型](ch01/283-accelerating-gemini-nano-models-on-pixel-with-frozen-multi-t.html)）的高效路线，将推理效率推向新高。
 
 ## 安全
 

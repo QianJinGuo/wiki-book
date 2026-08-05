@@ -32,7 +32,7 @@
 
 生产环境中 Agent 行为不再是"黑盒一次调用"，而是跨越数分钟到数小时、涉及多次工具调用的执行轨迹。可观测性三支柱——日志、指标（Token 消耗、步骤耗时、错误率）、链路追踪——构成监控基础；更进一步是 deep telemetry：记录提示词、检索内容、工具参数、延迟、被拒绝方案与人工干预点，这是定位"失败发生在 Harness 哪一层"（上下文不足？工具定义错误？验证器漏检？）的唯一依据。
 
-可观测性还应形成回写闭环：生产 traces 自动生成回归用例，失败模式沉淀为评估基准。这与 [Agent Harness 架构](../ch05/062-agent-harness.html) 中 Observability 独立成层的趋势一致；度量也应从"最终成功率"转向过程指标（工具调用效率、验证覆盖率、平均步数）。
+可观测性还应形成回写闭环：生产 traces 自动生成回归用例，失败模式沉淀为评估基准。这与 [Agent Harness 架构](../ch05/063-agent-harness.html) 中 Observability 独立成层的趋势一致；度量也应从"最终成功率"转向过程指标（工具调用效率、验证覆盖率、平均步数）。
 
 ### 安全沙箱与并发隔离：能力-控制权衡的两端
 
@@ -44,7 +44,7 @@
 
 生产 Agent 的可靠性不取决于模型有多强，而取决于状态边界是否清楚、失败闭环是否完整。状态要分层：候选、已验证、已执行、已提交的动作必须显式区分，同一运行事实不应从多个来源拼接。State Schema First 是落地原则——先回答"哪些事实必须恢复、哪些必须跨端一致、哪些只是派生视图"，再设计 prompt 与工具。重启后能从 checkpoint 恢复、用户 stop 后后端不再执行——这些可检查标准定义了状态边界的验收线。
 
-失败闭环的另一半是恢复与回滚：长任务定期 checkpoint，失败时从最近点续跑而非从头重跑；跨会话靠 Progress File 避免重复劳动。Harness 自身的变更必须可回归，自进化 Harness（AHE 方向）只在可评估、可回滚、有 canary 时才放开。这与 [Harness 之后：状态边界与失败闭环](../ch05/085-harness.html) 的判断一致：很多失败不是模型不会想，而是系统没有区分已验证动作与已提交状态。
+失败闭环的另一半是恢复与回滚：长任务定期 checkpoint，失败时从最近点续跑而非从头重跑；跨会话靠 Progress File 避免重复劳动。Harness 自身的变更必须可回归，自进化 Harness（AHE 方向）只在可评估、可回滚、有 canary 时才放开。这与 [Harness 之后：状态边界与失败闭环](../ch05/017-harness.html) 的判断一致：很多失败不是模型不会想，而是系统没有区分已验证动作与已提交状态。
 
 ## 实践启示
 
@@ -57,15 +57,15 @@
 
 ## 相关实体
 
-- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](../ch05/062-agent-harness.html)
-- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/085-harness.html)
-- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](../ch05/085-harness.html)
-- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist](../ch05/129-harness-engineering.html)
+- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](../ch05/063-agent-harness.html)
+- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/017-harness.html)
+- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](../ch05/017-harness.html)
+- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist](../ch05/057-harness-engineering.html)
 - [Code as Agent Harness 综述](../ch09/061-code-as-agent-harness.html)
-- [Harness 工程核心模式](../ch05/129-harness-engineering.html)
-- [Harness 范式](../ch05/085-harness.html)
-- [Ralph Loop 长程执行](../ch05/085-harness.html)
-- [Agent 架构：Harness 正在成为新后端](../ch05/085-harness.html)
+- [Harness 工程核心模式](../ch05/057-harness-engineering.html)
+- [Harness 范式](../ch05/017-harness.html)
+- [Ralph Loop 长程执行](../ch05/017-harness.html)
+- [Agent 架构：Harness 正在成为新后端](../ch05/017-harness.html)
 - [生产级 Agent 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md)
 - [AI 可观测性与监控](https://github.com/QianJinGuo/wiki/blob/main/concepts/observability-monitoring-ai.md)
 - [多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)

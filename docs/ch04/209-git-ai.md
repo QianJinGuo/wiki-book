@@ -181,9 +181,9 @@ Git 作为 Source of Truth 的选择看似朴素，实则精妙。Git 的内容�
 这套方案最适合：**中小型研发团队（10-50人）、多业务线并行、缺乏统一项目管理工具、工程师主导的团队**。最不适用的场景：**高度依赖非技术干系人的合规场景、需要审批流转的项目管理、无法接受 Git 工作流的运营/非技术团队**。
 
 ## 相关实体
-- [Ai Native Project Management Git](../ch05/021-ai-native.html)
-- [P Ai Pms Guide To Claude](../ch01/638-claude.html)
-- [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](../ch05/085-harness.html)
+- [Ai Native Project Management Git](../ch05/022-ai-native.html)
+- [P Ai Pms Guide To Claude](../ch01/1195-claude.html)
+- [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](../ch05/017-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/762-ai-agent.html)
 - [Building Ai Agents In Accounting](ch04/006-building-ai-agents-in-accounting.html)
 

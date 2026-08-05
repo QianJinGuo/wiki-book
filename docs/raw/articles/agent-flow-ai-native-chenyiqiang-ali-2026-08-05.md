@@ -1,0 +1,18 @@
+---
+type: source-card
+title: "从 Agent Flow 到 AI Native：为什么通用 Agent 是「饮鸩止渴」"
+source: "wechat"
+author: "未标注作者；来源机构见 source"
+source_url: "https://mp.weixin.qq.com/s/_ctmgcnt-G46bmrFmR2vZg"
+published: "未标注"
+collected: "2026-08-05"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+---
+
+# 从 Agent Flow 到 AI Native：为什么通用 Agent 是「饮鸩止渴」
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“从 Agent Flow 到 AI Native：为什么通用 Agent 是「饮鸩止渴」”的第三方资料，主题标签为agent-flow、ai-native、hardcode。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

@@ -118,11 +118,11 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 
 ## 相关实体
 - [Anthropic Generator-Evaluator Harness](../ch01/1533-anthropic.html) — 另一种评测闭环思路
-- [Superpowers](../ch01/703-claude-code-skills-superpowers.html) — Agent 工作流规范
-- [Skill Writing Patterns](ch04/339-skill.html) — Skill 质量评估相关
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/340-lbs-intentbench.html)
-- [AI Skill 测评指标体系](../ch01/657-ai-skill.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/339-skill.html)
+- [Superpowers](../ch01/702-claude-code-skills-superpowers.html) — Agent 工作流规范
+- [Skill Writing Patterns](ch04/340-skill.html) — Skill 质量评估相关
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/341-lbs-intentbench.html)
+- [AI Skill 测评指标体系](../ch01/656-ai-skill.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/340-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/076-skills.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 

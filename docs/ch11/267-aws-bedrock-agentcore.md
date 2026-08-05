@@ -2,77 +2,11 @@
 
 ## Ch11.267 AWS Bedrock AgentCore
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/aws-bedrock-agentcore.md`
+> 📊 Level ⭐⭐ | 4.2KB | `entities/aws-bedrock-agentcore.md`
 
 AWS Bedrock AgentCore 是 AWS 推出的 Agent 基础设施平台，旨在为开发者提供生产级 AI Agent 部署能力。通过 `CreateHarness` 和 `InvokeHarness` 两个核心 API，覆盖 Agent 运行所需的六大基础设施原语。
 
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Bedrock AgentCore"))
-    概念导图
-    核心能力
-    相关实体
-    深度分析
-      六大原语的设计哲学
-      与 MCP 生态的关系
-      企业级部署的权衡
-    实践启示
-    应用场景
-```
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AWS Bedrock AgentCore"))
-    六大原语的设计哲学
-    与 MCP 生态的关系
-    企业级部署的权衡
-```
-
 ## 核心能力
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 - **Sandbox 运行时**：安全隔离的代码执行环境
 - **Memory**：Agent 记忆管理，支持短期和长期记忆
@@ -83,11 +17,11 @@ graph TB
 
 ## 相关实体
 
-- [AgentCore Harness GA](../ch04/508-amazon-bedrock-agentcore-harness-ga-api-agent.html)
-- [AgentCore Harness](../ch04/679-agentcore-harness.html)
+- [AgentCore Harness GA](../ch04/571-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [AgentCore Harness](../ch04/755-agentcore-harness.html)
 - [AgentCore Identity Security](ch11/267-aws-bedrock-agentcore.html)
-- [Bedrock Multi-Agent](ch11/009-aws-bedrock.html)
-- [AgentCore Browser](../ch04/554-amazon-bedrock-agentcore.html)
+- [Bedrock Multi-Agent](ch11/017-aws-bedrock.html)
+- [AgentCore Browser](../ch04/639-amazon-bedrock-agentcore.html)
 
 ## 深度分析
 

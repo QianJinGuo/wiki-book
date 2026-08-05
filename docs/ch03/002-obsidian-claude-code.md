@@ -149,15 +149,15 @@ last-session: 2026-05-10
 
 ## 相关工具与资源
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/obsidian-claude-code-integration-guide.md)
-- [Agent Memory 架构](../ch04/497-perplexity-brain-self-improving-agent-memory-architecture.html) — 与 Obsidian vault 记忆模式的思想关联
+- [Agent Memory 架构](../ch04/498-perplexity-brain-self-improving-agent-memory-architecture.html) — 与 Obsidian vault 记忆模式的思想关联
 - [Claude Code Hackathon 经验](ch03/084-claude-code.html) — Claude Code 实战相关
 - [Karpathy LLM Wiki](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) — 本地知识管理系统的设计思路
 > 本页整合来源：[GitHub] ballred/obsidian-claude-pkm、obsidian-claude-code-mcp、Claudesidian MCP；[博客] Chase AI、Noah Vincent、Niclas Dern、Kenneth Reitz 等实战汇总
 
 ## 相关实体
-- [obsidian claude code integration guide](../ch09/146-obsidian-claude-code-integration-guide.html)
+- [obsidian claude code integration guide](../ch09/151-obsidian-claude-code-integration-guide.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](ch03/083-obsidian-claude-code.html)
-- [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/1203-claude-code-memory-setup-obsidian-graphify.html)
+- [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/996-claude-code-memory-setup-obsidian-graphify.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch03/084-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/097-claude-code-1.html)
 - [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)

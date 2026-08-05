@@ -88,7 +88,7 @@ Kim i的实验表明，块数从 1（相当于 baseline）增加到 8 时，效�
 ## 相关实体
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/035-agent.html)
 - [How Llms Actually Work 0Xkato](ch01/1475-how-llms-actually-work-0xkato-transformer-walkthrough.html)
-- [Ai Employment Eight Changes Tencent Research](../ch05/100-ai.html)
+- [Ai Employment Eight Changes Tencent Research](../ch05/101-ai.html)
 - [Kimi K2 6 Tidb Agent Database](../ch03/035-agent.html)
 - [Hermes Agent K2 6 Tutorial](../ch03/102-hermes-agent.html)
 
