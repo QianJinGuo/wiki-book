@@ -13,14 +13,14 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 
 ## 相关实体
 - [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/340-skill.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/005-agentrun.html)
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/762-ai-agent.html)
-- [Pi Mono Github](../ch01/1100-pi-mono-github.html)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/306-amazon-bedrock.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/571-agentrun.html)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/425-ai-agent.html)
+- [Pi Mono Github](../ch01/1101-pi-mono-github.html)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/181-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cli-mcp-sdk-agent-tool-selection.md)
 
-- [crawler vs opencli doubao](../ch03/030-crawler-vs-opencli-doubao.html)
+- [crawler vs opencli doubao](../ch03/031-crawler-vs-opencli-doubao.html)
 
 ## 深度分析
 

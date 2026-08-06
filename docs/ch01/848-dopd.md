@@ -58,8 +58,8 @@ DOPD 在持续学习的三阶段蒸馏中表现出稳定的能力积累，在分
 ## 相关实体
 
 - [在线策略蒸馏 vs 离线蒸馏](https://github.com/QianJinGuo/wiki/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md) — 蒸馏方法论对比
-- [蒸馏恐慌与技术争议](ch01/875-the-distillation-panic.html) — 蒸馏领域的生态讨论
-- [XOPD：在线策略蒸馏全景](ch01/1329-opd.html) — 同领域相关工作
+- [蒸馏恐慌与技术争议](ch01/478-the-distillation-panic.html) — 蒸馏领域的生态讨论
+- [XOPD：在线策略蒸馏全景](ch01/1330-opd.html) — 同领域相关工作
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/蒸馏效果起飞dopd破解特权幻觉让在线策略蒸馏更有效.md)
 

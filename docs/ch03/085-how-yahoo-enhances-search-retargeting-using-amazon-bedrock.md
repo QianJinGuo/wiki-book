@@ -105,7 +105,7 @@ The LLM-powered system frequently generated hundreds or even thousands of keywor
 
 ## Related Entities
 
-- [Amazon Bedrock](../ch11/306-amazon-bedrock.html) — The serverless FM platform used by Yahoo for LLM access and inference
+- [Amazon Bedrock](../ch11/181-amazon-bedrock.html) — The serverless FM platform used by Yahoo for LLM access and inference
 - **AI 广告** — The broader domain of AI-powered advertising technology
 - **LLM 评估** — Methodologies for assessing and selecting LLMs for production use cases
 - **Search Retargeting** — The advertising technique of targeting users based on search behavior

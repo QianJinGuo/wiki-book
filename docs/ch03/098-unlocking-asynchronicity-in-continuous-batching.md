@@ -12,9 +12,9 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [Development environments for your cloud agents](ch03/035-agent.html)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/949-ai-infra.html)
-- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/609-ml-intern-huggingface-autonomous-ml-agent.html)
+- [Development environments for your cloud agents](ch03/036-agent.html)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/950-ai-infra.html)
+- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/610-ml-intern-huggingface-autonomous-ml-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析

@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3848 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3866 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,11 +10,11 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1745 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1358 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 519 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 179 篇 |
-| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 47 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1746 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1368 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 521 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 182 篇 |
+| 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 49 篇 |
 
 ---
 
@@ -33,7 +33,7 @@
   - ⭐ Agentic Design System - From Chatbot to Orchestration
   - ... 共 **1563** 篇 → [完整章节](ch01-ai-basics.md)
 
-### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 40 篇
+### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 41 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
   - ⭐ AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
@@ -44,7 +44,7 @@
   - ⭐⭐ Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhis
   - ⭐⭐ Hermes Agent 自进化机制源码解析
   - ⭐⭐ Hermes Agent 深度解析（阿里云/飞樰）
-  - ... 共 **40** 篇 → [完整章节](ch02-prompt.md)
+  - ... 共 **41** 篇 → [完整章节](ch02-prompt.md)
 
 ### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 142 篇
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **142** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1745 篇**
+> 📖 **本篇共 1746 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 799 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 807 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,9 +76,9 @@
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
-  - ... 共 **799** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **807** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 145 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 146 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
-  - ... 共 **145** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **146** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 50 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -130,7 +130,7 @@
   - ⭐⭐ 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
   - ... 共 **36** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 194 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 195 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ 视觉还原 AI 技术
@@ -138,10 +138,10 @@
   - ⭐ Claude Code Agent View
   - ⭐ Claude Code 个人学习系统：从答案机到学习工作台的 5 步法
   - ⭐ 场景营销前端 AI Coding — AI Native 的视觉稿还原
-  - ⭐ Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM
   - ⭐ 设计稿转代码（Design to Code）
+  - ⭐ Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM
   - ⭐ 电商搜索h1提升ai-coding质量实践-rd-qa
-  - ... 共 **194** 篇 → [完整章节](ch09-ai-coding.md)
+  - ... 共 **195** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 41 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
@@ -156,13 +156,13 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **41** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1358 篇**
+> 📖 **本篇共 1368 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 320 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 321 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
@@ -173,7 +173,7 @@
   - ⭐ Cloudflare Turnstile requiring fingerprintable WebGL
   - ⭐ 运行可全生命周期控制的隔离沙盒aws-lambda-推出-microvm
   - ⭐ 宣布推出由-nvidia-rtx-pro-4500-blackwell-服务器版-gpu-加速的-amazon-ec2-
-  - ... 共 **320** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **321** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 130 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -188,18 +188,18 @@
   - ⭐ 5 Things to Know about the CLARITY Act
   - ... 共 **130** 篇 → [完整章节](ch12-security.md)
 
-### [Ch13 MLOps 与评估](ch13-mlops.md) — 25 篇
+### [Ch13 MLOps 与评估](ch13-mlops.md) — 26 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
   - ⭐ 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
   - ⭐⭐ 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
+  - ⭐⭐ Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
   - ⭐⭐ 循环工程 (Loop Engineering) — 清华 2026 框架
   - ⭐⭐ NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
   - ⭐⭐ 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
   - ⭐⭐ ai-skill-测评指标体系
   - ⭐⭐ 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
-  - ⭐⭐ SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
-  - ... 共 **25** 篇 → [完整章节](ch13-mlops.md)
+  - ... 共 **26** 篇 → [完整章节](ch13-mlops.md)
 
 ### [Ch14 数据工程](ch14-data.md) — 44 篇
 > AI 的燃料：实时入湖、流处理、数据质量
@@ -214,7 +214,7 @@
   - ⭐⭐ Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
   - ... 共 **44** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 519 篇**
+> 📖 **本篇共 521 篇**
 
 ---
 
@@ -246,7 +246,7 @@
   - ⭐⭐ EAGLE-3 投机解码与 USP 长序列训练优化
   - ... 共 **38** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 57 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 58 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
@@ -257,11 +257,12 @@
   - ⭐⭐ 美团海报生成 AIGC 技术创新与实践
   - ⭐⭐ Normalizing Trajectory Models
   - ⭐⭐ Automatically redact PII in images with Amazon Nova
-  - ... 共 **57** 篇 → [完整章节](ch17-multimodal.md)
+  - ... 共 **58** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 25 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 27 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
+  - ⭐ 腾讯 Hy-Embodied 具身智能基座模型与钛螺丝平台全面升级
   - ⭐ 具身智能-家庭陪伴-机器人
   - ⭐ 具身智能高考难疯了人类100分最强模型128
   - ⭐⭐ 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
@@ -269,16 +270,15 @@
   - ⭐⭐ 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
   - ⭐⭐ 小米机器人汽车工厂柔性操作与多机协同实战
   - ⭐⭐ LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
-  - ⭐⭐ 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
-  - ... 共 **25** 篇 → [完整章节](ch18-robotics.md)
+  - ... 共 **27** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 179 篇**
+> 📖 **本篇共 182 篇**
 
 ---
 
 ## 第五篇 · 大师篇 — 哲学、安全与未来
 
-### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 24 篇
+### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 26 篇
 > Scaling Law、涌现能力、世界模型、自我博弈
 
   - ⭐ 斯坦福：失败轨迹是天然、高价值的监督信号
@@ -288,8 +288,8 @@
   - ⭐⭐ Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
   - ⭐⭐ The Complexity of Simplicity | Jim Nielsen's Notes
   - ⭐⭐ Lean Software Scaling Laws
-  - ⭐⭐ arXiv 脱离康奈尔，正式独立为非营利组织
-  - ... 共 **24** 篇 → [完整章节](ch19-research-frontier.md)
+  - ⭐⭐ Zero-Mem — LLM Agent 的零 Token 记忆操作
+  - ... 共 **26** 篇 → [完整章节](ch19-research-frontier.md)
 
 ### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 23 篇
 > 超级智能、存在风险、AI 治理、人类命运
@@ -304,10 +304,10 @@
   - ⭐⭐ 人机对齐？不，是人正在向机器对齐
   - ... 共 **23** 篇 → [完整章节](ch20-ai-philosophy.md)
 
-> 📖 **本篇共 47 篇**
+> 📖 **本篇共 49 篇**
 
 ---
 
-**📊 全书收录：3848 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3866 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-06 | 来源: ~/wiki/entities/
+生成时间: 2026-08-07 | 来源: ~/wiki/entities/

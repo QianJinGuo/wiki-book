@@ -102,10 +102,10 @@ YAML 结构化模板（关键字段）：
 ## 相关实体
 
 - [Skill 版本管理五大原则](../ch04/340-skill.html) — 同作者同系列，版本管理侧
-- [Agent Skill 写作评估](../ch04/685-agent-skill.html)
-- [Harness Engineering](../ch05/057-harness-engineering.html)
+- [Agent Skill 写作评估](../ch04/686-agent-skill.html)
+- [Harness Engineering](../ch05/092-harness-engineering.html)
 - [Claw-SWE-Bench](../ch05/017-harness.html) — harness 独立评测基准
-- [Agent Eval WalleZhang](../ch03/035-agent.html) — YAML 驱动评估框架
+- [Agent Eval WalleZhang](../ch03/036-agent.html) — YAML 驱动评估框架
 
 ---
 

@@ -15,10 +15,10 @@
 
 ## 相关实体
 - [Anthropic Pm Jess Yan Managed Agents](../ch01/1533-anthropic.html)
-- [Anthropic Claude Managed Agents Platform 2026](../ch01/398-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/776-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](../ch01/397-anthropic-claude-managed-agents.html)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/782-claude-managed-agents.html)
 - [From Prompt To Harness Claude Official](../ch05/017-harness.html)
-- [Anthropic Demystifying Evals For Ai Agents](ch04/562-anthropic-demystifying-evals-for-ai-agents.html)
+- [Anthropic Demystifying Evals For Ai Agents](ch04/563-anthropic-demystifying-evals-for-ai-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-managed-agents-scaling.md)
 

@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **25 篇**实体，按深度递增排列。
+> 本章收录 **27 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,10 +10,10 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 
 ---
 
@@ -29,7 +29,38 @@ AI 最终要从屏幕走进物理世界。
 
 ---
 
-## Ch18.001 具身智能-家庭陪伴-机器人
+## Ch18.001 腾讯 Hy-Embodied 具身智能基座模型与钛螺丝平台全面升级
+
+> 📊 Level ⭐ | 2.8KB | `entities/腾讯发布多款具身智能基座模型与智能体钛螺丝平台迎来全面升级.md`
+
+# 腾讯 Hy-Embodied 具身智能基座模型与钛螺丝平台全面升级
+
+## 核心：首次系统性打通"感知—身体—行动"闭环
+
+7月18日，腾讯 Robotics X 实验室、福田实验室联合腾讯混元发布具身智能系列新模型和智能体新成果，首次系统性打通"感知—身体—行动"的闭环，推动具身智能从"离身智能"迈向"具身原生智能"。发布的三个具身基座模型都基于混元大模型打造：
+
+- **Hy-Embodied-VLM-1.0**（"右脑"）：理解图像、空间和场景
+- **Hy-Embodied-RxBrain-1.0**（具身"大脑"）：统一认知、规划和对未来状态的想象
+- **Hy-Embodied-VLA-0.5**（连接"小脑"和身体）：把高层目标转化成连续的、可纠错的动作
+
+同时发布两个具身智能体 **Apexio** 和 **TairosAgent**，通过智能体调度能力把"左右脑"、"大脑"、"小脑"和身体整合成完整系统，让机器人形成持续感知、持续决策、持续行动的整体。
+
+## 张正友："缸中之脑"批判
+
+腾讯首席科学家、Robotics X 实验室主任张正友指出：今天最聪明的人工智能本质上仍是"缸中之脑"——善于逻辑推理、文本生成和知识问答，却缺乏与物理世界直接互动的闭环。**"语言并不等于全部认知，它只是智能向外表达的一个通道。"** 真正的智能需要让语言、视觉、空间认知、身体控制和环境反馈连通起来，在"感知—身体—行动"的闭环里接受验证。
+
+## 与 Wiki 现有知识的关联
+
+- 具身原生智能阶段论：[Embodied Native LLM 具身智能新阶段](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-native-llm-embodied-intelligence-new-stage.md)
+- 具身基础模型：[Genesis Gene-25 具身基础模型](https://github.com/QianJinGuo/wiki/blob/main/entities/genesis-ai-gene-25-embodied-foundation-model.md)
+- VLA 具身大脑：[蚂蚁新一代 VLA 具身大脑](https://github.com/QianJinGuo/wiki/blob/main/entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md)
+- 具身智能数据市场：[具身智能数据市场格局](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/腾讯发布多款具身智能基座模型与智能体钛螺丝平台迎来全面升级.md)
+
+---
+
+## Ch18.002 具身智能-家庭陪伴-机器人
 
 > 📊 Level ⭐ | 1.1KB | `entities/具身智能-家庭陪伴-机器人.md`
 
@@ -44,7 +75,7 @@ AI 最终要从屏幕走进物理世界。
 
 ---
 
-## Ch18.002 具身智能高考难疯了人类100分最强模型128
+## Ch18.003 具身智能高考难疯了人类100分最强模型128
 
 > 📊 Level ⭐ | 0.7KB | `entities/具身智能高考难疯了人类100分最强模型128.md`
 
@@ -59,7 +90,7 @@ AI 最终要从屏幕走进物理世界。
 
 ---
 
-## Ch18.003 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
+## Ch18.004 逐际动力 Pre-IPO 融资 — 具身智能商业化路径
 
 > 📊 Level ⭐⭐ | 11.8KB | `entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md`
 
@@ -168,7 +199,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ---
 
-## Ch18.004 机器人为什么要拟人？终于有人正确回答了
+## Ch18.005 机器人为什么要拟人？终于有人正确回答了
 
 > 📊 Level ⭐⭐ | 11.2KB | `entities/机器人为什么要拟人终于有人正确回答了.md`
 
@@ -251,7 +282,7 @@ COSA 0.5 的发布在行业层面提出了一个关键区分：**"模型 vs 系�
 
 ---
 
-## Ch18.005 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
+## Ch18.006 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代-xiaomi.md`
 
@@ -354,7 +385,7 @@ Xiaomi-Robotics-U0 最核心的设计决策是**用统一的自回归框架覆�
 
 ---
 
-## Ch18.006 小米机器人汽车工厂柔性操作与多机协同实战
+## Ch18.007 小米机器人汽车工厂柔性操作与多机协同实战
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/小米机器人汽车工厂柔性操作多机协同-2026.md`
 
@@ -440,7 +471,7 @@ Xiaomi-Robotics-U0 最核心的设计决策是**用统一的自回归框架覆�
 
 ---
 
-## Ch18.007 LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
+## Ch18.008 LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/lingbot-va-20-embodied-video-action-pretrain-ant-lingbo-2026.md`
 
@@ -511,7 +542,7 @@ LingBot-VA 2.0 不是孤立发布，而是蚂蚁灵波"机器人大脑 2.0"系�
 
 ---
 
-## Ch18.008 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
+## Ch18.009 刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/刚刚首个空间原生的具身视觉基模开源机器人更会看我们的世界了.md`
 
@@ -587,7 +618,7 @@ LingBot-Vision 和 LingBot-Depth 2.0 已通过奥比中光深度视觉实验室�
 
 ---
 
-## Ch18.009 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
+## Ch18.010 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
@@ -679,7 +710,7 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ---
 
-## Ch18.010 啊？这是机器人的手？！
+## Ch18.011 啊？这是机器人的手？！
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/啊这是机器人的手.md`
 
@@ -750,7 +781,7 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ---
 
-## Ch18.011 Unitree's IPO Filing: The State of the Robotics Market
+## Ch18.012 Unitree's IPO Filing: The State of the Robotics Market
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/unitree-ipo-robotics-market.md`
 
@@ -820,7 +851,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.012 蔚蓝BabyAlpha A3消费级机器狗
+## Ch18.013 蔚蓝BabyAlpha A3消费级机器狗
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/weilan-babyalpha-a3.md`
 
@@ -908,7 +939,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.013 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
+## Ch18.014 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
 
@@ -987,7 +1018,7 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 ---
 
-## Ch18.014 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
+## Ch18.015 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md`
 
@@ -1037,7 +1068,7 @@ Xiaomi-Robotics-1 验证了一条面向 [具身智能](https://github.com/QianJi
 
 ---
 
-## Ch18.015 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
+## Ch18.016 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 
@@ -1101,7 +1132,7 @@ Physical AI is moving from research into production.
 
 ---
 
-## Ch18.016 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
+## Ch18.017 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/waic-minicpm-1-5b-model-2026.md`
 
@@ -1137,7 +1168,7 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 
 ---
 
-## Ch18.017 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+## Ch18.018 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/weilan-babyalpha-a3-machine-dog.md`
 
@@ -1204,7 +1235,7 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 
 ---
 
-## Ch18.018 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
+## Ch18.019 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/lingbot-dm05-4b-embodied-foundation-model-zero-shot-2026.md`
 
@@ -1254,7 +1285,7 @@ DM0.5 将 VLA（视觉-语言-动作）模型从精心搭建的"剧本环境"推
 
 ---
 
-## Ch18.019 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
+## Ch18.020 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md`
 
@@ -1284,7 +1315,7 @@ Afford-VLA 包含三个关键步骤：
 
 ---
 
-## Ch18.020 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
+## Ch18.021 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/poxiaointelligent-tactile-robot-foundation-model-2026.md`
 
@@ -1314,7 +1345,7 @@ TouchWorld 的核心架构包含 Predictive（触觉目标预测）和 Reactive�
 
 ---
 
-## Ch18.021 具身智能空间视觉死穴，终于被最新顶会彻底解决！
+## Ch18.022 具身智能空间视觉死穴，终于被最新顶会彻底解决！
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/具身智能空间视觉死穴终于被最新顶会彻底解决.md`
 
@@ -1390,7 +1421,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.022 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+## Ch18.023 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/icra26-symskill-robot-long-horizon-manipulation.md`
 
@@ -1463,7 +1494,7 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 ---
 
-## Ch18.023 具身原生世界动作模型（Embodied World Action Model）
+## Ch18.024 具身原生世界动作模型（Embodied World Action Model）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/全球首个具身原生世界动作模型来了.md`
 
@@ -1526,7 +1557,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ---
 
-## Ch18.024 景烁科技 — 具身智能数据基础设施
+## Ch18.025 景烁科技 — 具身智能数据基础设施
 
 > 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
@@ -1596,7 +1627,7 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 
 ---
 
-## Ch18.025 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+## Ch18.026 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 
@@ -1665,5 +1696,37 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch18.027 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+
+> 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md`
+
+# Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+
+## 核心：把触觉放进"预测—执行—反馈"完整链路
+
+Being-H0.8 是一套带触觉的隐式世界—动作模型：**预训练阶段**就教会机器人提前判断将要怎样接触物体，并在真正接触后根据触觉反馈及时调整动作。相比过去根据画面决定动作的世界模型，Being-H0.8 把触觉放进了完整链路——模型先根据当前画面预判接下来可能发生的接触，执行过程中再读取最新触觉，重新生成下一小段动作。
+
+## 数据—模型—控制三层设计
+
+- **数据层**：汇总数十家合作伙伴数据，建立超 50 万小时原始数据池，形成高质量数据集 UniHand-3.0，并通过 TactoHand 生成接触和邻近度标注。
+- **模型层**：预训练时把动作执行后实际记录的视觉和触觉结果作为监督，让模型学习仅凭当前指令和画面提前判断接下来会怎样接触。
+- **控制层**：每个动作块开始时先生成完整动作计划；每执行一小段，就读取最新机器人状态和触觉，只重算下一小段动作。
+
+基于这套方法，Being-H0.8 在真实双臂机器人实验中完成了包中取物、毛笔写字、挤牙膏、夹薯片等依赖触觉的高难度精巧任务。
+
+## 意义：触觉如何进入世界模型仍是开放问题
+
+对于具身模型，触觉不仅关系到精细操作，还能帮助完成仅凭视觉难以实现的接触推断。李飞飞、徐丹飞、Wenzhen Yuan、宋舒然等研究者都在推进相关方向，但聚焦到世界模型层面，"触觉如何进入世界模型"仍是开放问题——Being-H0.8 首次用人类视频数据给出了一条可扩展路径。
+
+## 与 Wiki 现有知识的关联
+
+- 触觉具身：[触觉改写具身智能新格局](https://github.com/QianJinGuo/wiki/blob/main/entities/vla不够了触觉将改写具身智能新格局.md)、[破晓触觉机器人基础模型](https://github.com/QianJinGuo/wiki/blob/main/entities/poxiaointelligent-tactile-robot-foundation-model-2026.md)
+- 世界模型：[李飞飞 Masked Visual Actions World Model](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md)
+- 具身智能市场全景：[具身智能数据市场格局](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md)
 
 ---

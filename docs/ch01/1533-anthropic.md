@@ -63,7 +63,7 @@ Anthropic 对成因的坦率——"我们还不清楚这些差异为什么存在
 2. 追溯到具体训练数据和训练阶段
 3. 决定是否干预和调节
 
-这意味着模型性格不再是"不可控的涌现现象"，而是可以通过数据筛选、训练策略和 RLHF 设计来定向调整的工程变量。对于 [Agent Harness Dingtalk Recruitment](../ch05/063-agent-harness.html) 等面向特定用户群体的 agent 系统，价值观可调性具有直接的商业价值。
+这意味着模型性格不再是"不可控的涌现现象"，而是可以通过数据筛选、训练策略和 RLHF 设计来定向调整的工程变量。对于 [Agent Harness Dingtalk Recruitment](../ch05/042-agent-harness.html) 等面向特定用户群体的 agent 系统，价值观可调性具有直接的商业价值。
 
 ### "同一个人, 不同语言"——对 Agent 交互设计的挑战
 
@@ -77,7 +77,7 @@ Anthropic 举的例子很生动："两个人拿同一份商业计划书找 Claud
 
 ## 实践启示
 
-1. **选择模型不只是选能力，也是选"性格"**。Sonnet 适合创意和高情商场景，Opus 4.7 适合严格的技术审查。在 [Agent Harness Dingtalk Recruitment](../ch05/063-agent-harness.html) 等生产部署中，应该根据 agent 的应用场景选择匹配"性格"的模型，而不是只看 benchmark 分数。
+1. **选择模型不只是选能力，也是选"性格"**。Sonnet 适合创意和高情商场景，Opus 4.7 适合严格的技术审查。在 [Agent Harness Dingtalk Recruitment](../ch05/042-agent-harness.html) 等生产部署中，应该根据 agent 的应用场景选择匹配"性格"的模型，而不是只看 benchmark 分数。
 
 2. **同一模型在不同语言下呈现不同"性格"**。如果你的 agent 面向多语言用户，需要测试不同语言下的交互体验差异。俄语和印地语用户获得的回复风格可能截然不同。
 
@@ -87,9 +87,9 @@ Anthropic 举的例子很生动："两个人拿同一份商业计划书找 Claud
 
 ## 相关实体
 
-- [Agent Harness Dingtalk Recruitment](../ch05/063-agent-harness.html) — 企业级 Agent 部署中的模型选择策略，需考虑模型性格与任务匹配
-- [Anthropic Claude Code Trojan Telemetry Security 2026](ch01/477-anthropic-claude-code.html) — Anthropic 在安全层面的其他研究，构成完整的模型治理图景
-- [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/098-anthropic-8x.html) — Anthropic 在 AI 工程实践中的另一维度探索
+- [Agent Harness Dingtalk Recruitment](../ch05/042-agent-harness.html) — 企业级 Agent 部署中的模型选择策略，需考虑模型性格与任务匹配
+- [Anthropic Claude Code Trojan Telemetry Security 2026](ch01/476-anthropic-claude-code.html) — Anthropic 在安全层面的其他研究，构成完整的模型治理图景
+- [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/099-anthropic-8x.html) — Anthropic 在 AI 工程实践中的另一维度探索
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架，将模型选择与性格匹配纳入 agent 系统设计
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-model-personality-four-axes-2026.md)

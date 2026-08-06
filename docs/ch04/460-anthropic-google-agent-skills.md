@@ -12,8 +12,8 @@ Google Cloud Tech 前些日子发布了一篇 Agent Skill 设计模式文章：�
 
 ## 相关实体
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/471-agent-skills.html)
-- [Anthropic Google Agent Skills Design Patterns](ch04/591-anthropic-google-agent-skills.html)
-- [Anthropic 14 Skill Patterns Best Practices](../ch01/497-anthropic-14-skill.html)
+- [Anthropic Google Agent Skills Design Patterns](ch04/592-anthropic-google-agent-skills.html)
+- [Anthropic 14 Skill Patterns Best Practices](../ch01/496-anthropic-14-skill.html)
 - [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](ch04/471-agent-skills.html)
 - [Anthropic Agent Skills Design Patterns 14](ch04/322-anthropic-agent.html)
 

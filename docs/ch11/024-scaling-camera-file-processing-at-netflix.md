@@ -11,7 +11,7 @@ tags: [netflix]
 - netflix
 title: Scaling Camera File Processing at Netflix
 type: entity
-updated: 2026-08-01
+updated: 2026-08-06
 ---
 type: entity
 # Scaling Camera File Processing at Netflix

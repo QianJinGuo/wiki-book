@@ -72,8 +72,8 @@ Loop Engineering 最有吸引力也最危险的地方在于其自动运行能力
 
 - [Hermes Agent](../ch03/102-hermes-agent.html)
 - [Claude Code 深度架构分析](../ch03/084-claude-code.html)
-- [Agent Harness 上下文管理](../ch05/063-agent-harness.html)
-- [Backend for Agent](../ch03/035-agent.html)
+- [Agent Harness 上下文管理](../ch05/042-agent-harness.html)
+- [Backend for Agent](../ch03/036-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文看懂-ai-编程智能体工程化新范式loop-engineering.md)
 

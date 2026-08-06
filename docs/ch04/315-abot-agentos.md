@@ -23,7 +23,7 @@
 | Edge-Cloud LLM Routing | 边端低延迟 ↔ 云端强推理动态权衡 | MoE routing |
 | Agent Harness | 推理→执行→验证闭环 | [Loop Engineering](../ch05/006-loop-engineering.html) 的具身实现 |
 | Skills and Tools Layer | 抽象导航/操作/运动/视觉/对话 | MCP / 工具抽象 |
-| Multi-modal Memory | 图记忆（实体/事件/视觉/时空/溯源） | [Context Engineering Memory 层](../ch05/063-agent-harness.html) |
+| Multi-modal Memory | 图记忆（实体/事件/视觉/时空/溯源） | [Context Engineering Memory 层](../ch05/042-agent-harness.html) |
 | Robot Hardware Interface | 异构本体适配 | 硬件抽象层 |
 
 ### 2. Agent Harness：具身版的推理-执行-验证闭环
@@ -57,7 +57,7 @@
 
 - **具身化 Loop/Harness**：[Loop Engineering 实体](../ch05/006-loop-engineering.html) 讨论了 Graph/Loop/Harness 三层概念。ABot-AgentOS 是 Loop 概念在**物理世界**的具身实现——增加了物理验证（Verifier）这一关键环节
 - **填补空白**：wiki 此前没有机器人/具身 AI 领域的内容。ABot-AgentOS 作为 Alibaba 系 1st-party 的完整系统级方案，填补了这一维度
-- **记忆系统另一分支**：[WorkBuddy](../ch05/063-agent-harness.html) 讨论了 Context Engineering 中的记忆分类（短期/长期/工作/情景/外部），ABot-AgentOS 提供了**多模态图记忆**这一具体实现方案
+- **记忆系统另一分支**：[WorkBuddy](../ch05/042-agent-harness.html) 讨论了 Context Engineering 中的记忆分类（短期/长期/工作/情景/外部），ABot-AgentOS 提供了**多模态图记忆**这一具体实现方案
 
 ---
 
@@ -113,8 +113,8 @@ ABot-AgentOS 的自进化机制不是简单的模型微调，而是将每个评�
 ## 延伸阅读
 
 - [Loop Engineering 会是 AI 的下个关键词吗？](../ch05/006-loop-engineering.html) — Loop/Harness/Graph 三层概念
-- [WorkBuddy：LLM 产品实践](../ch05/063-agent-harness.html) — Context Engineering 和 Memory 五类分类
-- [后端系统「AI 知识库体系」建设实践](../ch05/101-ai.html) — Alibaba 的另一篇知识库方法论姊妹篇
+- [WorkBuddy：LLM 产品实践](../ch05/042-agent-harness.html) — Context Engineering 和 Memory 五类分类
+- [后端系统「AI 知识库体系」建设实践](../ch05/104-ai.html) — Alibaba 的另一篇知识库方法论姊妹篇
 - [ABot-AgentOS arXiv](https://arxiv.org/abs/2607.10350) | [GitHub](https://github.com/amap-cvlab/ABot-AgentOS) | [项目主页](https://amap-cvlab.github.io/ABot-AgentOS)
 
 ---

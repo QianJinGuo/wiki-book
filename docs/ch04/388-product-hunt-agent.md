@@ -71,7 +71,7 @@ BrowserAct 对 Agent 生态的关键价值在于：它承认"网页自动化不�
 
 ## 相关实体
 
-- [Agent Harness 钉钉招聘](../ch05/063-agent-harness.html) — 生产环境中 Agent 工作流编排的实际案例
+- [Agent Harness 钉钉招聘](../ch05/042-agent-harness.html) — 生产环境中 Agent 工作流编排的实际案例
 - [Browser Use v13](../ch05/017-harness.html) — 浏览器 Agent 能力框架
 - [MCP 协议](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — Agent 工具调用的标准化协议
 - [Hermes Agent 操作手册](../ch03/102-hermes-agent.html) — Agent 操作系统的实践指南

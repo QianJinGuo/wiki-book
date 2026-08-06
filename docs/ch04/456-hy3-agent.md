@@ -72,7 +72,7 @@ Hy3 采用 MoE（Mixture of Experts）架构，总参数 295B 但每次推理仅
 ## 相关实体
 
 - [Claude Code 治理软规则](../ch03/084-claude-code.html) — Coding Agent vs 普通用户 Agent 的治理对比
-- [Agent Harness 架构](../ch05/063-agent-harness.html) — Agent 系统的架构设计模式
+- [Agent Harness 架构](../ch05/042-agent-harness.html) — Agent 系统的架构设计模式
 - [Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) — Agent 评测方法论
 - [Agent 评测框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) — 行业 Agent 评测实践
 - [Claude Code 系统工程指南](../ch03/084-claude-code.html) — 对比 Coding Agent 能力
