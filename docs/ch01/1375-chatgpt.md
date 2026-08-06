@@ -38,12 +38,12 @@ OpenAI 用三条硬标准衡量"好记忆"：记得住、用得对、跟得上�
 - **data趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/036-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/035-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/248-openclaw.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/036-agent.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/250-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/035-agent.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/036-agent.html)
 
 ## 实践启示
 1. **工程落地**: architecture领域方案需关注可观测性、可维护性和成本效率

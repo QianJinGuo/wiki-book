@@ -57,7 +57,7 @@ audit-context-building 代表另一类 Skill：不指挥操作步骤，而是规
 - [Meta-Skill：Skill 编排](../ch04/365-skill-skill.html)
 - [Nico 的 25 个 Skill 工作流资产分析](../ch03/076-skills.html)
 - [Lightfield：Introducing Skills](../ch03/076-skills.html)
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/1233-gpt-image-2.html)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/1234-gpt-image-2.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/工作流的-skill-怎么写从-7-个顶级-skill-中提炼的模式与最佳实践.md)
 

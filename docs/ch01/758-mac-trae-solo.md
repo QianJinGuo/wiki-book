@@ -16,7 +16,7 @@ review_stars: 3
 - [Trae Solo Work Feishu Bitable Pipeline Tutorial](https://github.com/QianJinGuo/wiki/blob/main/entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md)
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1533-anthropic.html)
 - [Anthropic Pm Jess Yan Managed Agents](ch01/1533-anthropic.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/398-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
 - [Claude Code Hackathon Winners 2026](../ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我把mac留在家用手机让trae-solo替我打了一天工.md)

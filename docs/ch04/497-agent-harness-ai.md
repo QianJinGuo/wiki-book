@@ -79,8 +79,8 @@ LangChain 官方在 Terminal Bench 2.0 实验中以实证验证了这一公式�
 
 ## 相关实体
 
-- [钉钉AI助手](../ch05/101-ai.html)
-- [Agent Harness生产实践](../ch05/063-agent-harness.html)
+- [钉钉AI助手](../ch05/104-ai.html)
+- [Agent Harness生产实践](../ch05/042-agent-harness.html)
 - [Harness范式](../ch05/017-harness.html)
 
 ## 标签

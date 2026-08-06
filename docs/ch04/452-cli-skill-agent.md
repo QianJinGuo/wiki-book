@@ -52,7 +52,7 @@ CLI 只解决"系统动作怎么执行"，不解决"流程应该怎么走"。文
 
 ## 相关实体
 
-- [为什么是CLI Agent时代](../ch03/035-agent.html)
+- [为什么是CLI Agent时代](../ch03/036-agent.html)
 - [无界面软件代理](ch04/160-headless-software-agent.html)
 - [清华自进化Skill Agent](ch04/198-skill-agent.html)
 - [Skill编排的六个依赖](ch04/340-skill.html)

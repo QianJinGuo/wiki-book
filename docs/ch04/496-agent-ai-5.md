@@ -10,7 +10,7 @@
 ## 相关实体
 - [Wow Harness V3 Governance Protocol](../ch05/017-harness.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/451-hermes-agent-goal.html)
-- [Ath Agent Trust Handshake Protocol](../ch03/035-agent.html)
+- [Ath Agent Trust Handshake Protocol](../ch03/036-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/292-hermes.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 

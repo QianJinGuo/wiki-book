@@ -53,7 +53,7 @@ Claude Science 最值得关注的特性是「科学成果可复现」。传统 A
 
 但也存在隐忧：东北大学的 Jared Auclair 指出，AI 更像是「需要老练飞行员驾驶的副驾驶」。在解读监管指南、设计实验等需要精细判断的环节，AI 仍可能出现幻觉或遗漏细节——在药物研发里，这类错误可能致命。
 
-这印证了 [Harness Engineering](../ch05/057-harness-engineering.html) 的核心原则：Agent 的能力越强，控制平面的治理就越不能松懈。Claude Science 的逐项授权机制和审查智能体正是这一原则在产品层面的体现。
+这印证了 [Harness Engineering](../ch05/092-harness-engineering.html) 的核心原则：Agent 的能力越强，控制平面的治理就越不能松懈。Claude Science 的逐项授权机制和审查智能体正是这一原则在产品层面的体现。
 
 ## 实践启示
 
@@ -70,9 +70,9 @@ Claude Science 最值得关注的特性是「科学成果可复现」。传统 A
 ## 相关实体
 
 - [Claude Code 架构分析](../ch03/084-claude-code.html) — Claude Science 的架构参照系
-- [Anthropic 输出验证](../ch09/098-anthropic-8x.html) — Anthropic 的验证与质量控制理念
-- [Harness Engineering](../ch05/057-harness-engineering.html) — Agent 控制平面的系统方法论
-- [Agent Orchestration](../ch04/600-agent-orchestration.html) — 多 agent 编排在科研场景的应用
+- [Anthropic 输出验证](../ch09/099-anthropic-8x.html) — Anthropic 的验证与质量控制理念
+- [Harness Engineering](../ch05/092-harness-engineering.html) — Agent 控制平面的系统方法论
+- [Agent Orchestration](../ch04/601-agent-orchestration.html) — 多 agent 编排在科研场景的应用
 - [Google 的 Agent 策略](ch01/025-gemini-spark.html) — Google Gemini Spark 的竞争定位
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic推出claude-science-科研界的claude-code.md)

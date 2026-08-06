@@ -87,7 +87,7 @@ Workflow平台与Skills系统正在向彼此中间地带演进。Coze已明确�
 - 出问题时，能否准确定位是规则设计缺陷还是模型能力不足（根因可分离）
 ## 相关实体
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](ch04/471-agent-skills.html)
-- [Anthropic Google Agent Skills Design Patterns](ch04/591-anthropic-google-agent-skills.html)
+- [Anthropic Google Agent Skills Design Patterns](ch04/592-anthropic-google-agent-skills.html)
 - [Agent Skills Teams Architecture Evolution Selection Guide](ch04/304-agent-skills-teams.html)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/471-agent-skills.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/471-agent-skills.html)

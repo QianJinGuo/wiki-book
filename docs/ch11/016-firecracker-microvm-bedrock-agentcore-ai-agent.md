@@ -659,9 +659,9 @@ Host Agent（5 秒级）与 Lambda Watchdog（5 分钟级）的两级架构实�
 ## 相关实体
 - [Bedrock Agentcore Payment X402 Agent](ch11/059-bedrock-agentcore.html)
 - [Agentcore Payments X402 Agentic Commerce](ch11/073-agentcore-payments.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/639-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/639-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/639-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/640-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/640-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/640-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/firecracker-bedrock-agentcore-multi-tenant.md)
 

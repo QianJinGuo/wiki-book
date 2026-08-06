@@ -254,7 +254,7 @@ AIOS 范式的核心突破在于：**将规范从"文档"重构为"操作系统"
 
 ## 相关实体
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/399-ai-coding-agent.html)
-- [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/035-agent.html)
+- [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/036-agent.html)
 - [Ai Native Project Management Git](ch05/022-ai-native.html)
 - [Claude Code Founder Harness 100 Lines](../ch03/084-claude-code.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/007-claude-code-skills-mcp-rules.html)

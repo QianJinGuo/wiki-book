@@ -31,9 +31,9 @@ Anthropic 的研究让 Claude 在化学领域达到专家水平——不是通�
 ## 相关实体
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1533-anthropic.html)
 - [Anthropic Pm Jess Yan Managed Agents](ch01/1533-anthropic.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/398-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
 - [Claude Code Hackathon Winners 2026](../ch03/084-claude-code.html)
-- [Claude Code Harness Deep Understanding](ch01/636-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/635-claude-code-harness-deep-understanding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-com-research-making-claude-a-chemist.md)
 

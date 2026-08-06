@@ -49,10 +49,10 @@ Fairness 的实现机制值得注意：任务先按 Fairness Key 分入逻辑桶
 
 ## 相关实体
 
-- [Task Queue Priority and Fairness](ch11/185-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority and Fairness Your Task Queue Your Way](ch11/185-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness](ch11/230-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness Your Task Queue Your Way](ch11/230-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [PromptQueue + OpenGorilla 集成](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-async-task-queue-opengorilla-integration.md)
-- [Building Multi-Tenant Agents with Amazon Bedrock AgentCore](../ch04/639-amazon-bedrock-agentcore.html)
+- [Building Multi-Tenant Agents with Amazon Bedrock AgentCore](../ch04/640-amazon-bedrock-agentcore.html)
 
 ---
 

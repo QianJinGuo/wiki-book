@@ -36,7 +36,7 @@ Cursor 研究团队在 2026 年 7 月发表了一项极具影响力的实验：�
 
 团队测试了四种模型组合，所有组合在新框架下均优于旧版。Opus 4.8 担任规划器、Composer 2.5 担任 worker 的组合最终得分 100%，仅用 4645 行引擎代码（旧版需 19013 行），花费仅 **$1,339**；而全程使用 GPT-5.5 花费 **$10,565**，两者质量相近但成本相差巨大。费用结构分析表明，worker 消耗了 69% 以上的 token，但规划器的高 token 单价才是主要支出源——Opus 4.8 仅产生很少 token 却占约三分之二花费。实验证明，大型任务中真正需要顶级智能的环节（初始分解、设计决策、权衡取舍）只占极少数，前沿规划器将不确定性收敛为详细指令后，廉价模型照做即可。
 
-这一范式将 AI 工程中的抽象层级从「自动补全一行代码→整段代码→单个文件」提升到了「规格说明（Specification）」级别。正如编译器将源代码翻译为机器码，蜂群将意图解析为任务树并逐步细化。区别在于编译器的每一步确保语义不变，而蜂群的每一步是概率性的——这正是 [Cursor Harness](../ch01/452-cursor-harness-model-production-floor.html) 和 [Cursor 训练方法论](../ch03/035-agent.html) 在试图缩小的差距。
+这一范式将 AI 工程中的抽象层级从「自动补全一行代码→整段代码→单个文件」提升到了「规格说明（Specification）」级别。正如编译器将源代码翻译为机器码，蜂群将意图解析为任务树并逐步细化。区别在于编译器的每一步确保语义不变，而蜂群的每一步是概率性的——这正是 [Cursor Harness](../ch01/451-cursor-harness-model-production-floor.html) 和 [Cursor 训练方法论](../ch03/036-agent.html) 在试图缩小的差距。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-ai-swarm-document-to-database.md)
 

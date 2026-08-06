@@ -33,7 +33,7 @@ SWE-bench 测"修复已有代码"，偏向防御性、受约束的工程活动�
 
 ### Harness 作为独立变量：被混合信号掩盖的工程贡献
 
-任何 SWE-bench 运行都是两层系统叠加：模型与 Harness（环境搭建、上下文检索、工具接口、循环控制、成本治理），默认下两者贡献无法区分。Claw-SWE-bench 固定模型、只改 Harness 配置（检索策略、文件选择、重试机制、测试反馈循环），量化各组件对分数的边际贡献。实验结论高度一致：模型能力达到阈值后，Harness 优化的边际收益往往超过模型升级本身——这解释了 Cursor、Anthropic 等一线团队为何重仓 harness 层而非单纯追逐更强模型，与 [Harness 工程综述](../ch05/057-harness-engineering.html)、[核心模式](../ch05/057-harness-engineering.html) 的共识一致：评测正从"模型竞赛"转向"系统竞赛"。显式化 Harness 还让分数可比：报告"Harness + 模型 + 采样次数"后，Leaderboard 从模型排名退化为系统排名。
+任何 SWE-bench 运行都是两层系统叠加：模型与 Harness（环境搭建、上下文检索、工具接口、循环控制、成本治理），默认下两者贡献无法区分。Claw-SWE-bench 固定模型、只改 Harness 配置（检索策略、文件选择、重试机制、测试反馈循环），量化各组件对分数的边际贡献。实验结论高度一致：模型能力达到阈值后，Harness 优化的边际收益往往超过模型升级本身——这解释了 Cursor、Anthropic 等一线团队为何重仓 harness 层而非单纯追逐更强模型，与 [Harness 工程综述](../ch05/092-harness-engineering.html)、[核心模式](../ch05/092-harness-engineering.html) 的共识一致：评测正从"模型竞赛"转向"系统竞赛"。显式化 Harness 还让分数可比：报告"Harness + 模型 + 采样次数"后，Leaderboard 从模型排名退化为系统排名。
 
 ### 数据污染、reward hacking 与成本视角
 
@@ -51,13 +51,13 @@ SWE-bench 测"修复已有代码"，偏向防御性、受约束的工程活动�
 
 ## 相关实体
 
-- [快手 RCA Agent：复杂业务场景下排障 Agent 的探索实践](../ch03/035-agent.html)
-- [Programbench Swe Agent Benchmark](ch04/632-programbench-swe-agent-benchmark.html)
-- [SciAgentGym：多步科学工具使用的 LLM Agent 评测基准](../ch03/035-agent.html)
+- [快手 RCA Agent：复杂业务场景下排障 Agent 的探索实践](../ch03/036-agent.html)
+- [Programbench Swe Agent Benchmark](ch04/633-programbench-swe-agent-benchmark.html)
+- [SciAgentGym：多步科学工具使用的 LLM Agent 评测基准](../ch03/036-agent.html)
 - [Reward hacking is swamping model intelligence gains](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)
-- [AgentEval：YAML驱动的Agent评测框架](../ch03/035-agent.html)
-- [Harness 工程核心模式](../ch05/057-harness-engineering.html)
-- [Harness 工程综述 2026](../ch05/057-harness-engineering.html)
+- [AgentEval：YAML驱动的Agent评测框架](../ch03/036-agent.html)
+- [Harness 工程核心模式](../ch05/092-harness-engineering.html)
+- [Harness 工程综述 2026](../ch05/092-harness-engineering.html)
 - [从 Benchmark 崇拜到自建 Evals](https://github.com/QianJinGuo/wiki/blob/main/entities/model-evaluation-from-benchmark-worship-to-self-built-evals.md)
 - [Attention Collapse：上下文管理失效](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

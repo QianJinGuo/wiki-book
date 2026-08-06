@@ -47,7 +47,7 @@
 | 优化难 | 缺乏有效动态测试，系统处于无反馈状态 | 测试提供反馈，对整个系统结构和超参数进行优化 |
 | 答不准 | 经典LLM+RAG架构通常只有~70%准确度 | 离线生成海量cQrA，为在线推理注入逻辑先验（类比考前刷题） |
 
-这一框架与[Harness Engineering](../ch05/057-harness-engineering.html)中强调的「可观测性→反馈→优化」闭环高度吻合。
+这一框架与[Harness Engineering](../ch05/092-harness-engineering.html)中强调的「可观测性→反馈→优化」闭环高度吻合。
 
 ### 从Nature通讯到工业级Agent基础设施
 
@@ -69,11 +69,11 @@
 
 ## 相关实体
 
-- [DeepSeek V4](ch01/433-deepseek-v4.html) — 同为登上Nature主要期刊的中国AI公司
+- [DeepSeek V4](ch01/1360-deepseek-v4.html) — 同为登上Nature主要期刊的中国AI公司
 - [AReaL 2.0](../ch04/305-agentic-rl.html) — 在线强化学习基础设施，与推理数据生成互补
 - [AI自我改进：从Harness开始](../ch05/017-harness.html) — Agent通过运行轨迹持续优化的理念
-- [Harness Engineering](../ch05/057-harness-engineering.html) — Agent工程治理的系统方法论
-- [Agent落地真相](../ch03/035-agent.html) — Agent从演示到投产的核心挑战
+- [Harness Engineering](../ch05/092-harness-engineering.html) — Agent工程治理的系统方法论
+- [Agent落地真相](../ch03/036-agent.html) — Agent从演示到投产的核心挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek之后中国ai自己出题杀进nature通讯全球仅4家.md)
 

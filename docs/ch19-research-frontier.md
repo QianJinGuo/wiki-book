@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **24 篇**实体，按深度递增排列。
+> 本章收录 **26 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,9 +11,9 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 7 |
+| ⭐⭐ 工程师 | 需编程基础 | 8 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 12 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
@@ -539,7 +539,49 @@ But this does not follow: being a popular language with a lot of training data o
 
 ---
 
-## Ch19.008 arXiv 脱离康奈尔，正式独立为非营利组织
+## Ch19.008 Zero-Mem — LLM Agent 的零 Token 记忆操作
+
+> 📊 Level ⭐⭐ | 3.8KB | `entities/zero-mem-zero-token-memory-operations.md`
+
+# Zero-Mem — LLM Agent 的零 Token 记忆操作
+
+## 核心问题
+
+LLM agent 需要记忆才能在长交互中保持一致行为，但多数系统用额外的 LLM 调用去操作记忆：生成中间记录、调解检索都会产生持续的 token 与时间成本，且省略/合并的细节会遮蔽原始证据。Zero-Mem（arXiv 2607.29377）提出的问题是：**结构化记忆访问是否必须依赖生成**？
+
+## 方案：零 Token 记忆操作
+
+Zero-Mem 引入 **zero-token memory operations**：除最终问答外，没有任何一步调用 LLM 或消耗 LLM 输入/输出 token（encoder 计算单独核算）。其设计要点：
+
+- **原始轨迹即唯一记录源**：不生成中间表示，直接保留 interaction traces 作为 source of record。
+- **双重视图组织**：entity–context graph 暴露跨交互的连接，temporal hierarchy 保留会话局部性与 session 状态。
+- **查询时双视图加权**：对每个 query 加权两个视图、从两者检索，并沿其结构恢复支持性关系或周边上下文。
+- **确定性校准**：先丢弃冲突证据，再让 reader 的答案 grounded 在检索到的 traces 上；只有最终 QA reader 调用 LLM。
+
+## 结果
+
+在长记忆与长上下文 QA benchmark 上，Zero-Mem 达到竞争性性能，同时把记忆操作中的 LLM 调用与 token 消耗清零；在相同 final-QA reader 与 context 预算下，相比最快的 baseline，记忆操作时间成本降低 **57.6%**。Ablations 支持两个视图及其查询相关协调各自的贡献。结论：结构化 agent 记忆未必需要生成过去的中间表示。
+
+## 意义与定位
+
+Zero-Mem 与「记忆即生成」的主流路线（如用 LLM 摘要/压缩记忆）正面竞争，属于 [Agent Memory Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) 中「存储原样数据 vs 编译后数据」争论的激进一方（对比 [compile vs raw-data 之争](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-storage-six-schools-wiki-compile-vs-raw-data-debate.md)）：以检索侧图结构 + 确定性校准换取零生成成本。它在 token 经济学上直接相关 [Context Window Economics](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-window-economics.md)，并与同期的检索侧记忆工作（[MemReranker](https://github.com/QianJinGuo/wiki/blob/main/entities/memreranker-reasoning-aware-agent-memory-reranking-2026.md)、[MrAgent](https://github.com/QianJinGuo/wiki/blob/main/entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md)）形成对照。
+
+## 相关
+
+- [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
+- [Agent 记忆系统设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [Agent 记忆架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
+- [Agent 记忆四学派对比](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-four-schools-comparison-2026-07-22.md)
+- [Harness 中的记忆现状 (mem0)](https://github.com/QianJinGuo/wiki/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md)
+- [记忆 vs RAG 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/memory-vs-rag-agent-memory-systematic-framework.md)
+- [记忆注入五维](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md)
+- [Context Engineering 三范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zero-mem-zero-token-memory-operations.md)
+
+---
+
+## Ch19.009 arXiv 脱离康奈尔，正式独立为非营利组织
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/arxiv-independent-spinout-2026.md`
 
@@ -601,7 +643,7 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 
 ---
 
-## Ch19.009 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
+## Ch19.010 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
 
 > 📊 Level ⭐⭐⭐ | 22.8KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
 
@@ -928,7 +970,7 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 
 ---
 
-## Ch19.010 LoopWM (Looped World Models)
+## Ch19.011 LoopWM (Looped World Models)
 
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/loopwm-looped-world-models.md`
 
@@ -1048,7 +1090,7 @@ v×c=56 的量子位文章（第 3 来源）与机器之心本篇同为大众科
 
 ---
 
-## Ch19.011 Count Anything - 文本引导的通用目标计数框架
+## Ch19.012 Count Anything - 文本引导的通用目标计数框架
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/arxiv-2605-30846-count-anything-2026.md`
 
@@ -1130,7 +1172,7 @@ Count Anything 的点集输出天然规避了上述三个问题。
 
 ---
 
-## Ch19.012 GenCeption — 视频生成模型作为通用视觉学习器
+## Ch19.013 GenCeption — 视频生成模型作为通用视觉学习器
 
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/genception-video-gen-models-general-purpose-vision-learners-arxiv-2607.md`
 
@@ -1186,7 +1228,7 @@ GenCeption 在以下任务上达到或超越专门模型：
 
 ---
 
-## Ch19.013 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
+## Ch19.014 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
 > 📊 Level ⭐⭐⭐⭐ | 23.7KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
@@ -1443,7 +1485,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 ---
 
-## Ch19.014 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
+## Ch19.015 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
 > 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
@@ -1603,7 +1645,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 
 ---
 
-## Ch19.015 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
+## Ch19.016 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
 
 > 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/arxiv-2606-03979-language-models-need-sleep.md`
 
@@ -1715,7 +1757,7 @@ Mind Lab LoRA 持续学习 (mind-lab-lora-continual-learning-system) 与本文�
 
 ---
 
-## Ch19.016 Natural Language Autoencoders (Anthropic)
+## Ch19.017 Natural Language Autoencoders (Anthropic)
 
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/anthropic-natural-language-autoencoders.md`
 
@@ -1797,7 +1839,7 @@ NLA 证明了"让模型解释自己的思维过程"这一思路的可行性，�
 
 ---
 
-## Ch19.017 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
+## Ch19.018 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
 
@@ -1888,7 +1930,7 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 
 ---
 
-## Ch19.018 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
+## Ch19.019 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
 
 > 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/light-interaction-world-model-inference.md`
 
@@ -1983,7 +2025,7 @@ Light Interaction 的价值在于提出了一种更适合交互式生成的推�
 
 ---
 
-## Ch19.019 Qwen-AgentWorld: Language World Models for General Agents
+## Ch19.020 Qwen-AgentWorld: Language World Models for General Agents
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/qwen-agentworld-language-world-models.md`
 
@@ -2108,7 +2150,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ---
 
-## Ch19.020 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
+## Ch19.021 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
 
 > 📊 Level ⭐⭐⭐⭐ | 6.7KB | `entities/neurips-in-icml-paper-title-tips.md`
 
@@ -2184,7 +2226,7 @@ ICML 2026 上出现了一篇方法名为 "NeurIPS" 的论文——即标题缩�
 
 ---
 
-## Ch19.021 From AGI to ASI
+## Ch19.022 From AGI to ASI
 
 > 📊 Level ⭐⭐⭐⭐ | 6.5KB | `entities/arxiv-2606-12683-from-agi-to-asi.md`
 
@@ -2267,7 +2309,50 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.022 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
+## Ch19.023 阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式
+
+> 📊 Level ⭐⭐⭐⭐ | 5.1KB | `entities/qwen-skill-self-play-hyman-2026.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-skill-self-play-hyman-2026.md)
+
+一句话讲清楚👉🏻 阿里 Qwen 大模型应用团队开源 Skill Self-Play （ Skill-SP ）：用会进化的 skill 库同时管「出什么题」和「怎么自动判对错」，让自博弈既能覆盖开放任务，又能挡住假题；工具调用最高抬 42.9 分，逻辑推理上也能把几乎起不来的弱模型拉回正轨。
+
+## 来源
+
+- 原文: [阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-skill-self-play-hyman-2026.md)
+- 原始链接: : https://mp.weixin.qq.com/s/czQ1AnCD5qwswhKmutLGgQ
+
+## SESA：搜索场景的 Self-Play + Skill 进化（Supplementary）
+
+**SESA（Self-Evolving Skill-Augmented Agent）** ——《Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember》（arXiv 2607.29468，第一方作者 XHS 发布，2026-08-03）将 Skill-SP 同源范式落地到开放域/多跳问答搜索场景：Proposer 出题 → Solver 解题 → 将**有价值的失败轨迹提炼成可复用的 Skill Card 存入持续更新的 Skill Bank**，形成「失败 → 技能 → 能力提升 → 更难问题 → 新失败」的闭环自进化。
+
+**与 Skill-SP 的机制同源**：两者核心都是用进化的 skill 库驱动自博弈——Qwen Skill-SP 用 skill 库同时管「出题」和「判对错」（覆盖开放任务+挡假题），SESA 用 Skill Bank 沉淀失败经验供下一轮进化。差异在场景与证据：SESA 给出 7 个开放域/多跳问答 Benchmark 上相比 Search Self-Play 平均 +1.2~3.2 点的量化提升。
+
+**关键消融证据（不可替代维度）**：SESA 推理时**关闭 Skill Bank** 后模型仍保留大部分能力增益——说明技能不仅是提示词注入，而是真正参与并影响了模型训练，为「skill 库驱动自博弈」路线提供了训练级（而非 prompt 级）增益的直接证据。
+
+## 论文原文补强（SUPP 2026-08-06，arXiv 第一手来源）
+
+> 用户提供论文原文 PDF（arXiv:2607.22529，30 页），补充二手解读缺失的形式化定义、完整分项数据与局限未来。
+
+### 形式化目标（gated curriculum reward 防 reward hacking）
+
+可验证任务形式化为元组 (𝒙, 𝒄)：𝒙 为 solver 可见 prompt，𝒄 为隐藏机器可读验证契约（单元测试/参考答案），环境返回 Rsolve ∈ [0,1]。proposer 目标 = 𝟙{(𝒙,𝒄) is valid} · (1 − 2|vsolve − 0.5|)——瞄准 solver 学习前沿（50% 正确率），**二元质量过滤器显式 gate proposer 奖励**：防止 proposer 合成 ill-posed/不可解契约伪造人工难度（reward hacking）。外层目标联合优化 skill 库与 proposer，持续合成 valid + frontier-targeted 任务。
+
+### 完整分项数据
+
+**Qwen3-4B-Inst**（60.2 → 66.7，+6.5）：API-Bank L1 +6.5/L2 +12.2/L3 +8.4；BFCL JS +7.7/Py +4.2/Java +3.7/Live +2.9。**Qwen3-8B** 69.4 基线各分项均正向。**Ministral-3-8B** 20.7 → 63.6（+42.9，Unguided SP 几乎无进步——技能库提供标准化出题模板让训练信号启动）；**Ministral-3-14B** 22.2 → 64.5（+42.3）。ZebraLogic：Qwen3-4B +1.4、Qwen3-8B +8.8、Ministral-3-14B 整体 +12 点/简单谜题 +35.3；四档复杂度网格谜题验证生成的课程帮助 solver 学习更难推理模式（非仅局部格式改善）。
+
+### 技能库进化统计
+
+5 轮迭代后 **Active skills 86 套、Effective（≥1 accepted record）46 套**，从初始十几套扩张——持续拓宽任务类型覆盖。
+
+### 局限与未来（一手声明）
+
+局限：①发现全新任务模式需基础模型最低基础能力 ②极复杂领域初期需少量人工演示 jumpstart ③依赖固定启发式（静态混合比例 α、预定义难度边界，新任务族需经验调参）。未来：可学习动态课程调度器取代固定路由；直接从原始环境交互全自动 co-induce 生成规则与可执行验证器；**跨模型架构迁移演化技能库**（强模型引导小模型，可扩展民主化对齐）；拓展多模态/长流程 Agent 场景。
+
+---
+
+## Ch19.024 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/baai-orca-next-state-prediction-world-model.md`
 
@@ -2327,30 +2412,37 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.023 阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式
+## Ch19.025 VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
 
-> 📊 Level ⭐⭐⭐⭐ | 2.6KB | `entities/qwen-skill-self-play-hyman-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 2.9KB | `entities/lecun连续转发新作visreg攻克jepa世界模型表征坍塌核心难题.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-skill-self-play-hyman-2026.md)
+# VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
 
-一句话讲清楚👉🏻 阿里 Qwen 大模型应用团队开源 Skill Self-Play （ Skill-SP ）：用会进化的 skill 库同时管「出什么题」和「怎么自动判对错」，让自博弈既能覆盖开放任务，又能挡住假题；工具调用最高抬 42.9 分，逻辑推理上也能把几乎起不来的弱模型拉回正轨。
+## 背景：SSL 表征坍塌难题
 
-## 来源
+自监督学习（SSL）无需人工标注即可从海量数据中学习通用表征，但普遍面临**表征坍塌（representation collapse）**：模型倾向于把不同输入映射到相同或极少数几个向量上，看似完成了训练，实则未学到有判别力的表征。主流抑制方法依赖启发式技巧（EMA、教师-学生网络、停止梯度、冻结层等），使训练脆弱、难以调参、削弱可解释性与可扩展性。
 
-- 原文: [阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-skill-self-play-hyman-2026.md)
-- 原始链接: : https://mp.weixin.qq.com/s/czQ1AnCD5qwswhKmutLGgQ
+## 从 VICReg → SIGReg → VISReg 的演化
 
-## SESA：搜索场景的 Self-Play + Skill 进化（Supplementary）
+- **VICReg**（LeCun 团队）：把学习目标拆为方差、不变性、协方差三项，用协方差约束各维度相关性——但协方差仅刻画二阶统计量，无法区分"均值、方差相同但分布形状迥异"的表征。
+- **SIGReg**：基于 Cramér–Wold 定理，用 sketching 技术把整个嵌入分布对齐到标准高斯，约束完整分布形状。但存在两个缺陷：① **坍塌时梯度消失**——表征越坍塌、修正信号越弱，模型难以自行恢复；② **尺度与形状耦合**——未分离"幅度大小"与"分布形态"两个独立属性，在长尾、低质量、低秩数据上适配性差。
+- **VISReg**（Variance-Invariance-Sketching Regularization）：正是为解决 SIGReg 的梯度消失与尺度/形状耦合问题而生。LeCun 连续转发并评价"VICReg begat SIGReg which begat VISReg"。
 
-**SESA（Self-Evolving Skill-Augmented Agent）** ——《Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember》（arXiv 2607.29468，第一方作者 XHS 发布，2026-08-03）将 Skill-SP 同源范式落地到开放域/多跳问答搜索场景：Proposer 出题 → Solver 解题 → 将**有价值的失败轨迹提炼成可复用的 Skill Card 存入持续更新的 Skill Bank**，形成「失败 → 技能 → 能力提升 → 更难问题 → 新失败」的闭环自进化。
+## 意义：JEPA 世界模型的关键拼图
 
-**与 Skill-SP 的机制同源**：两者核心都是用进化的 skill 库驱动自博弈——Qwen Skill-SP 用 skill 库同时管「出题」和「判对错」（覆盖开放任务+挡假题），SESA 用 Skill Bank 沉淀失败经验供下一轮进化。差异在场景与证据：SESA 给出 7 个开放域/多跳问答 Benchmark 上相比 Search Self-Play 平均 +1.2~3.2 点的量化提升。
+表征坍塌是 JEPA（联合嵌入预测架构）世界模型的核心难题之一——VISReg 提供了一条不依赖启发式技巧的正则化路线。这与 LeCun 关于世界模型的整体构想直接相关。
 
-**关键消融证据（不可替代维度）**：SESA 推理时**关闭 Skill Bank** 后模型仍保留大部分能力增益——说明技能不仅是提示词注入，而是真正参与并影响了模型训练，为「skill 库驱动自博弈」路线提供了训练级（而非 prompt 级）增益的直接证据。
+## 与 Wiki 现有知识的关联
+
+- JEPA 世界模型背景：[Yann LeCun JEPA World Model](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md)
+- 世界模型前沿：[BAAI ORCA 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/baai-orca-next-state-prediction-world-model.md)、[李飞飞 Masked Visual Actions](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md)
+- 表征/熵坍塌相关：[LLM RL 熵坍塌 ACL 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-rl-entropy-collapse-acl-2026-outstanding-paper.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lecun连续转发新作visreg攻克jepa世界模型表征坍塌核心难题.md)
 
 ---
 
-## Ch19.024 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
+## Ch19.026 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.4KB | `entities/tangjie-zhipu-asi-internal-letter-2026.md`
 

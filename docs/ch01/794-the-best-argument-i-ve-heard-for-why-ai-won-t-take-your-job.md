@@ -37,7 +37,7 @@ Levie 用 Gell-Mann 失忆症解释外行的高估：人用自己的 AI 做事�
 
 ### 企业数据成为 agent 时代的「新护城河」
 
-Levie 给出判断平台存亡的框架：是否承载业务逻辑与工作流、是否存储数据、是否拥有 agent 训练无法替代的领域上下文、是否涉及安全治理信任、是否有网络效应、是否受益于「多 agent 共享数据」而非「单 agent 独占」。保险理赔自动化案例说明：agent 无论建在 Anthropic 还是 OpenAI 上，都必须连接企业内全部内容与数据，企业要做的是升级基础设施而非砍掉它。数据应抽象在 agent 之外、结构化治理后再供所有 agent 对话——这正是 Databricks、Snowflake 持续增长的原因，也呼应了 [谁在赢得企业 AI](../ch05/101-ai.html) 的竞争议题。未来十年的管理问题随之变成：智能充裕但不免费时，如何像管理 headcount 一样分配 token——参见 [Token 经济学](ch01/759-the-token-economy.html)。
+Levie 给出判断平台存亡的框架：是否承载业务逻辑与工作流、是否存储数据、是否拥有 agent 训练无法替代的领域上下文、是否涉及安全治理信任、是否有网络效应、是否受益于「多 agent 共享数据」而非「单 agent 独占」。保险理赔自动化案例说明：agent 无论建在 Anthropic 还是 OpenAI 上，都必须连接企业内全部内容与数据，企业要做的是升级基础设施而非砍掉它。数据应抽象在 agent 之外、结构化治理后再供所有 agent 对话——这正是 Databricks、Snowflake 持续增长的原因，也呼应了 [谁在赢得企业 AI](../ch05/104-ai.html) 的竞争议题。未来十年的管理问题随之变成：智能充裕但不免费时，如何像管理 headcount 一样分配 token——参见 [Token 经济学](ch01/759-the-token-economy.html)。
 
 ## 实践启示
 
@@ -51,11 +51,11 @@ Levie 给出判断平台存亡的框架：是否承载业务逻辑与工作流�
 ## 相关实体
 
 - [AI 驱动的裁员没有商业意义](../ch03/011-cio.html)
-- [Kimi Work：通用 Agent 工作范式迁移](ch01/734-codex.html)
+- [Kimi Work：通用 Agent 工作范式迁移](ch01/733-codex.html)
 - [The UI is dead, long live the agent](../ch04/504-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [谁在赢得企业 AI](../ch05/101-ai.html)
+- [谁在赢得企业 AI](../ch05/104-ai.html)
 - [Token 经济学](ch01/759-the-token-economy.html)
-- [校长与 AI 时代](../ch05/101-ai.html)
+- [校长与 AI 时代](../ch05/104-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/platformer-ai-job-loss-levie.md)
 

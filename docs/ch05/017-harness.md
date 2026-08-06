@@ -141,8 +141,8 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 ## 与其他实体的关系
 
 - **基础理论**：
-  - [Harness Engineering Survey](ch05/057-harness-engineering.html)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
-  - [Harness Engineering — ETCLOVG Taxonomy](ch05/057-harness-engineering.html)（七层分类的独立条目）
+  - [Harness Engineering Survey](ch05/092-harness-engineering.html)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
+  - [Harness Engineering — ETCLOVG Taxonomy](ch05/092-harness-engineering.html)（七层分类的独立条目）
 - **同作者系列**：
   - Ralph Loop 与可接管 Harness（2026-05-10）（2026-05-10，三类漂移 + 可接手标准）
   - Hermes 5 张卡治理框架（2026-06-01）（2026-06-01，don't automate slop）
