@@ -5,6 +5,9 @@ set -e
 
 cd "$(dirname "$0")"
 
+echo "Regenerating curated course layer..."
+python3 scripts/build-course.py 2>&1 | tail -2 || echo "  WARNING: course.json regeneration failed"
+
 echo "Building site..."
 .venv/bin/python -m mkdocs build
 
