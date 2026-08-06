@@ -57,7 +57,7 @@ Gemma 4 揭示了 AI 模型竞争的新方向——不是参数规模的军备�
 ## 相关实体
 
 - [LingBot-VA 具身原生模型](https://github.com/QianJinGuo/wiki/blob/main/entities/全球首个具身原生世界动作模型来了.md)
-- [百度搭子 Agent 平台](../ch03/035-agent.html)
+- [百度搭子 Agent 平台](../ch03/036-agent.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
 

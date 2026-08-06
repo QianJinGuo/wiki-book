@@ -80,11 +80,11 @@ Interconnects 的 Latest Open Artifacts 系列是跟踪中国 AI 开源前沿的
 本期相对轻量，集中在主流模型 Sizes，轻于长尾专业模态。技术细节深度 complement：["Ahead of AIA Dream of Spring for Open-Weight LLMs"](https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight) 覆盖了 2026 年 1-2 月的 10 种架构主题。
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/691-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
-- [Nathan Lambert Open Models Bets 2026](ch01/610-nathan-lambert.html)
-- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/426-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/690-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
+- [Nathan Lambert Open Models Bets 2026](ch01/609-nathan-lambert.html)
+- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/1310-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
 - [Gemma 4 Open Model Adoption Framework Interconnects](ch01/858-gemma-4.html)
-- [Olmo Hybrid Gdn Wave 2026](ch01/1114-20.html)
+- [Olmo Hybrid Gdn Wave 2026](ch01/1115-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 

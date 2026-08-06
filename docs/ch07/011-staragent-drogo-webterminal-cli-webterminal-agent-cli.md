@@ -238,9 +238,9 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 本文是 **"Agent 远程执行能力"** 的工程化实现：
 
-- [CLI / MCP / SDK 选型](../ch03/035-agent.html) — 工具原语选择（理论层）
-- [AgentCore OpenClaw 多租户](../ch04/639-amazon-bedrock-agentcore.html) — AWS 视角的远程 Agent
-- [OpenClaw Security 部署](../ch11/248-openclaw.html) — OpenClaw 安全部署
+- [CLI / MCP / SDK 选型](../ch03/036-agent.html) — 工具原语选择（理论层）
+- [AgentCore OpenClaw 多租户](../ch04/640-amazon-bedrock-agentcore.html) — AWS 视角的远程 Agent
+- [OpenClaw Security 部署](../ch11/250-openclaw.html) — OpenClaw 安全部署
 - [DIPG](https://github.com/QianJinGuo/wiki/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md) — 蚂蚁保险 verify 闭环（也是 Agent 远程任务）
 - [250 行 CLI Agent 教程](../ch04/469-python.html) — minimal 教学
 

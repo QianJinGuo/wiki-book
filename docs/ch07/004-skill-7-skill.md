@@ -431,7 +431,7 @@ Audit-context-building 模式最独特的地方在于它不是告诉 LLM"做什�
 - [Agent Skills Comprehensive Survey](../ch04/471-agent-skills.html)
 - [Ai Skill Skill Creator 源码拆解](../ch04/365-skill-skill.html)
 - [Yidian Tianxia Context Engineering Agentic Ai](../ch04/311-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Rag Chunking Vectorization Rerank Distillation](../ch01/1267-rag.html)
+- [Rag Chunking Vectorization Rerank Distillation](../ch01/1268-rag.html)
 - [Ai Skill Evolution底层逻辑](ch07/010-ai-skill-evolution.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 

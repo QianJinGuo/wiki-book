@@ -56,14 +56,14 @@ DeepSeek 是七大 coding agent 玩家中最后一个把视觉接入主力产品
 
 ## 相关实体
 
-- [DeepSeek Visual Primitives](../ch09/190-deepseek-visual-primitives.html)
-- [Thinking with Visual Primitives 深度解读](../ch09/190-deepseek-visual-primitives.html)
-- [同文 v1 解读](ch01/799-deepseek.html)
-- [DeepSeek V4](ch01/433-deepseek-v4.html)
-- [DeepSeek V4 论文深读](ch01/433-deepseek-v4.html)
-- [DeepSeek KV cache](ch01/799-deepseek.html)
-- [DeepSeek Code Harness](../ch09/099-deepseek-code-harness.html)
-- [DeepSeek-VL 与 VLM 原理](ch01/799-deepseek.html)
+- [DeepSeek Visual Primitives](../ch09/191-deepseek-visual-primitives.html)
+- [Thinking with Visual Primitives 深度解读](../ch09/191-deepseek-visual-primitives.html)
+- [同文 v1 解读](ch01/584-deepseek.html)
+- [DeepSeek V4](ch01/1360-deepseek-v4.html)
+- [DeepSeek V4 论文深读](ch01/1360-deepseek-v4.html)
+- [DeepSeek KV cache](ch01/584-deepseek.html)
+- [DeepSeek Code Harness](../ch09/100-deepseek-code-harness.html)
+- [DeepSeek-VL 与 VLM 原理](ch01/584-deepseek.html)
 
 ---
 

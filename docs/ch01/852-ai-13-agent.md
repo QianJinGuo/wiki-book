@@ -53,8 +53,8 @@ GPT 在常规评测中的 0.8% ASR 让人误以为它与 Claude 几乎一样安�
 ## 相关实体
 
 - [Loop Engineering Overview Tech Minimalism](../ch05/006-loop-engineering.html) — Loop Engineering 的编排范式，与 AI 搜索 agent 的可靠性建设相关
-- [Alibaba Data Rd Harness Engineering Nl2Sql](../ch05/057-harness-engineering.html) — 阿里 NL2SQL 实践中的幻觉防控策略，与搜索结果的真实性校验互补
-- [Ant Group Medical Agent Afu](../ch03/035-agent.html) — 蚂蚁医疗 Agent 的安全评测实践
+- [Alibaba Data Rd Harness Engineering Nl2Sql](../ch05/092-harness-engineering.html) — 阿里 NL2SQL 实践中的幻觉防控策略，与搜索结果的真实性校验互补
+- [Ant Group Medical Agent Afu](../ch03/036-agent.html) — 蚂蚁医疗 Agent 的安全评测实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/现代ai之父新作-13个大模型实测-检索agent真的可信吗.md)
 

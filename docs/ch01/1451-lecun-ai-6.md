@@ -99,7 +99,7 @@ Judea Pearl 将因果能力拆解为三个层级：
 ## 关联条目
 
 - [电路发现的非唯一性](https://github.com/QianJinGuo/wiki/blob/main/entities/条条电路通罗马大模型可解释性的唯一机制可能从一开始就不存在.md) — 可解释性研究的因果相关视角
-- [Agent 落地真相](../ch03/035-agent.html) — Agent 从可用到可靠的生产化路径中的因果思考
+- [Agent 落地真相](../ch03/036-agent.html) — Agent 从可用到可靠的生产化路径中的因果思考
 - [Harness 即后端](../ch05/017-harness.html) — 干预载体与系统工程的关系
 - **物理世界模型与社会行为世界模型对比** — 对两种世界模型技术路径的系统性对比（参考页面待创建）
 

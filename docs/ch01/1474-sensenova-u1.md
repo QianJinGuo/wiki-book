@@ -92,8 +92,8 @@ SenseNova-U1 的开源选择（GitHub + HuggingFace + arXiv）是一个完整的
 3. **当前局限需要针对性评估**：32K 上下文上限对超长图文创作有约束；人物复杂场景的稳定性问题在娱乐内容生成场景需要额外后处理或人工审核。
 
 ## 相关技术
-- [DeepSeek Visual Primitives](../ch09/190-deepseek-visual-primitives.html) — 视觉原语作为思考媒介（同期多模态前沿）
-- [Kimi AttnRes](ch01/577-kimi.html) — 训练效率优化
+- [DeepSeek Visual Primitives](../ch09/191-deepseek-visual-primitives.html) — 视觉原语作为思考媒介（同期多模态前沿）
+- [Kimi AttnRes](ch01/576-kimi.html) — 训练效率优化
 - [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 注意力机制基础
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md) — Transformer 架构演进
 
@@ -104,7 +104,7 @@ SenseNova-U1 的开源选择（GitHub + HuggingFace + arXiv）是一个完整的
 - 连续性图文创作仍在 beta
 ## 相关实体
 
-- [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](ch01/333-1.html)
+- [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](ch01/332-1.html)
 
 ---
 

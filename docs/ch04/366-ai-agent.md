@@ -6,21 +6,21 @@
 
 ## 相关实体
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/511-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/537-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/538-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/036-qoder-skills.html)
-- [柚漫剧 AI 全流程提效拆解](../ch05/101-ai.html)
+- [柚漫剧 AI 全流程提效拆解](../ch05/104-ai.html)
 - [Agent Skill 设计模式](ch04/471-agent-skills.html)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/101-ai.html)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/035-agent.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/104-ai.html)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/036-agent.html)
 
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/471-agent-skills.html)
 - [ai agent memory systems](ch04/215-agent-memory.html)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/471-agent-skills.html)
-- [Garry Tan](../ch01/897-garry-tan.html)
+- [Garry Tan](../ch01/898-garry-tan.html)
 - [Agent Workflows](ch04/432-agent-workflows.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/340-skill.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/762-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/762-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/762-ai-agent.html)- [四种 Sub Agent 模式](../ch03/035-agent.html) 
+- [十年老技术开发的 AI Agent 探索之路](ch04/425-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/425-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/425-ai-agent.html)- [四种 Sub Agent 模式](../ch03/036-agent.html) 
 
 ## 深度分析
 ### 范式转移：人是瓶颈，但解决方式不是替代人

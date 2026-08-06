@@ -78,7 +78,7 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 ## 与用户 Harness 体系的关系
 本文与以下页面形成呼应：
 
-- [高德伴行Agent](../ch03/035-agent.html)（工作现场六组件）
+- [高德伴行Agent](../ch03/036-agent.html)（工作现场六组件）
 - [Hermes Agent](../ch03/102-hermes-agent.html)（Karpathy 观点被多次引用）
 - [Agent Memory Architecture](ch04/498-perplexity-brain-self-improving-agent-memory-architecture.html)（状态为什么得落在模型外面）
 
@@ -87,8 +87,8 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 
 ## 相关实体
 - [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/065-codex-goal-six-hour-run.html)
-- [Cline releases open-source agent runtime SDK](ch04/572-cline-releases-open-source-agent-runtime-sdk.html)
-- [Cline releases open-source agent runtime SDK](../ch03/035-agent.html)
+- [Cline releases open-source agent runtime SDK](ch04/573-cline-releases-open-source-agent-runtime-sdk.html)
+- [Cline releases open-source agent runtime SDK](../ch03/036-agent.html)
 
 - [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/276-openai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

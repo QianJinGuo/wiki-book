@@ -46,7 +46,7 @@ Symphony 因此不是让 Codex 多写几行代码，而是推动范式跃迁：�
 
 仓库本质上只是 `SPEC.md`——问题与预期方案的定义，配套 `WORKFLOW.md` 把领 issue、checkout、移状态、建 PR、进 Review、附视频证明全部显式写下来，让 agent 按流程执行，而非靠口口相传。
 
-与 LangGraph、CrewAI 等编排框架相比，Symphony 刻意不做执行引擎：选 Elixir 只因适合并发编排与进程监督，核心思想与语言无关。它与 [同题材深度分析](ch01/276-openai.html) 定位一致：定义契约而非运行时；与 [spec 约束复杂任务](ch01/734-codex.html)、[Codex 五层架构](ch01/734-codex.html) 互相印证——规模化 AI 编程的关键，是让一组 agent 围绕真实工程流程稳定协作。
+与 LangGraph、CrewAI 等编排框架相比，Symphony 刻意不做执行引擎：选 Elixir 只因适合并发编排与进程监督，核心思想与语言无关。它与 [同题材深度分析](ch01/276-openai.html) 定位一致：定义契约而非运行时；与 [spec 约束复杂任务](ch01/733-codex.html)、[Codex 五层架构](ch01/733-codex.html) 互相印证——规模化 AI 编程的关键，是让一组 agent 围绕真实工程流程稳定协作。
 
 ## 实践启示
 

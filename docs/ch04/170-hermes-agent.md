@@ -184,8 +184,8 @@ Time To First Token 的单独记录是一个看似小但实际非常关键的 fe
 - [Hermes Agent Memory System Vs Openclaw](../ch03/102-hermes-agent.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch03/102-hermes-agent.html)
 - [Hermes Agent Self Evolving Source Analysis](../ch03/102-hermes-agent.html)
-- [Small Hermes Self Evolving Agent Architecture](ch04/759-self-evolving-agent.html)
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/1114-20.html)
+- [Small Hermes Self Evolving Agent Architecture](ch04/765-self-evolving-agent.html)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/1115-20.html)
 
 ---
 

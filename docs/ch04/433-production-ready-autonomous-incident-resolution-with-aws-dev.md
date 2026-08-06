@@ -58,7 +58,7 @@ GA 版本引入了预防性分析功能：
 - **传统 API** — 面向人类开发者，需要理解文档、处理认证、编写请求代码
 - **Agent API** — 面向 AI Agent，自动处理认证和路由，提供语义化的工具描述，输出格式化后的上下文
 
-这种模式与 [Cloudflare 临时账户](ch04/762-ai-agent.html) 形成了 Agent 基础设施的两个互补维度：Cloudflare 解决了部署时的零摩擦问题，Datadog MCP Server 解决了运行时的数据访问问题。
+这种模式与 [Cloudflare 临时账户](ch04/425-ai-agent.html) 形成了 Agent 基础设施的两个互补维度：Cloudflare 解决了部署时的零摩擦问题，Datadog MCP Server 解决了运行时的数据访问问题。
 
 ### 从被动响应到主动预防的范式转移
 
@@ -97,9 +97,9 @@ AWS DevOps Agent 的核心价值主张是将事件响应从**被动模式**转�
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — Agent 运维系统的控制层设计
 - [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — Datadog MCP Server 所基于的协议标准
-- [Cloudflare 临时账户](ch04/762-ai-agent.html) — Agent 基础设施的部署维度
+- [Cloudflare 临时账户](ch04/425-ai-agent.html) — Agent 基础设施的部署维度
 - [Building Reliable Agentic AI Systems](ch04/293-building-reliable-agentic-ai-systems.html) — 生产级 Agent 系统的架构方法论
-- [ATH Agent Trust Handshake Protocol](../ch03/035-agent.html) — Agent 信任和安全协议
+- [ATH Agent Trust Handshake Protocol](../ch03/036-agent.html) — Agent 信任和安全协议
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-autonomous-incident-resolution-datadog.md)
 

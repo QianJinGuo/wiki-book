@@ -54,7 +54,7 @@ The article positions open-weight models as inherently "decelerationist" for fro
 
 ## Related Entities
 
-- [Kimi K3 The Open Weights Escalation](ch01/714-kimi-k3-the-open-weights-escalation.html) — Companion piece on Kimi K3 as the strongest open model ever released, directly relevant to the frontier capability debate
+- [Kimi K3 The Open Weights Escalation](ch01/713-kimi-k3-the-open-weights-escalation.html) — Companion piece on Kimi K3 as the strongest open model ever released, directly relevant to the frontier capability debate
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/6-months-to-live-for-open-models.md)
 

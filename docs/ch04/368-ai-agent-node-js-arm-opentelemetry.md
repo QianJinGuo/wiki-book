@@ -87,7 +87,7 @@ ARMS 方案在 Agent 决策链路追踪方面具有独特优势——这得益�
 
 ### 五、对 Agent 工程化成熟度的意义
 
-ARMS Node.js 探针标志着 AI Agent 从"能跑通"向"能运维"的工程化跃迁。2026 年上半年，Agent 落地的主流挑战已从"Agent 能不能完成单次任务"转向了"Agent 在生产环境中的可靠性、成本和可诊断性"——这正是 [Harness Engineering 为何重要](../ch05/057-harness-engineering.html) 的核心议题。
+ARMS Node.js 探针标志着 AI Agent 从"能跑通"向"能运维"的工程化跃迁。2026 年上半年，Agent 落地的主流挑战已从"Agent 能不能完成单次任务"转向了"Agent 在生产环境中的可靠性、成本和可诊断性"——这正是 [Harness Engineering 为何重要](../ch05/092-harness-engineering.html) 的核心议题。
 
 可观测性能力的完善，使得团队可以：
 - **建立 Agent SLA**：通过延迟和成功率指标定义 Agent 服务质量

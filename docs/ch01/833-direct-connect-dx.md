@@ -36,7 +36,7 @@ DX 节点迁移的本质，是把一条承载生产流量的专线从旧 PoP 平
 
 路由控制采用"双向不对称"设计：出云方向（VPC→本地）在 VPC 路由表开启 VGW 路由传播，同时设置一条掩码更短的 `192.168.0.0/16` 静态路由指向 vCPE 的 ENI，依据最长掩码匹配原则让 DX 成为主线路；入云方向（本地→VPC）设置掩码更短的 `10.42.0.0/16` 静态路由指向 VPN tunnel 接口，或调整静态路由管理距离（DX 所用 EBGP 管理距离为 20），让本地网关优先选择 DX。此外在本地网关 DX 接口上配置 BFD，可将 DX 自动切换至 VPN 的时间降低到秒级。
 
-该场景的迁移步骤为：在新 DX 站点建立第二条连接 → 创建与主连接同类型的 VIF（若主连接关联在 Direct Connect Gateway 上，新 VIF 也应关联同一 DXGW）→ 配置 BGP 路由属性策略 → 关闭主连接 BGP 会话做故障转移测试（演练方法论可参考 [AWS 故障演练实战](../ch11/295-aws-devops-agent.html)）→ 验证后删除原连接。全程强烈建议在维护窗口内执行。
+该场景的迁移步骤为：在新 DX 站点建立第二条连接 → 创建与主连接同类型的 VIF（若主连接关联在 Direct Connect Gateway 上，新 VIF 也应关联同一 DXGW）→ 配置 BGP 路由属性策略 → 关闭主连接 BGP 会话做故障转移测试（演练方法论可参考 [AWS 故障演练实战](../ch11/296-aws-devops-agent.html)）→ 验证后删除原连接。全程强烈建议在维护窗口内执行。
 
 ### 场景二：DX+DX 备份——多 PoP 专线冗余
 
@@ -60,9 +60,9 @@ VIF 设置上强调两点：新 VIF 必须与主连接同类型（Private VIF / 
 ## 相关实体
 
 - [Direct Connect (DX) 迁移最佳实践（英文实体）](../ch11/038-direct-connect-dx.html)
-- [AWS Network Firewall VGW BGP 流量检查](ch01/1197-spec.html)
+- [AWS Network Firewall VGW BGP 流量检查](ch01/1198-spec.html)
 - [Amazon VPC NAT Gateway 对比](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md)
-- [AWS Glue 大规模迁移方法论](ch01/434-aws.html)
+- [AWS Glue 大规模迁移方法论](ch01/433-aws.html)
 - [MOC: Amazon AWS AI](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
 - [MOC: 数据基础设施](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 

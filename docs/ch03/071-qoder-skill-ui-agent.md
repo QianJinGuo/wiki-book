@@ -78,7 +78,7 @@ Widget 运行在 `sandbox="allow-scripts allow-forms"` 的 iframe 中，**不加
 ### 输出端 Dashboard
 Agent 执行完数据分析任务后，把结果渲染成 Dashboard：关键指标卡片 + 趋势折线图 + 留存曲线 + 响应时间分布图并排对比。
 
-## 与 [Agent Skill Writing](../ch04/685-agent-skill.html) 的关系
+## 与 [Agent Skill Writing](../ch04/686-agent-skill.html) 的关系
 Skill UI 是 Skill 编写规范的自然延伸：
 
 - **** 定义了 Skill 的 CLI 层（SKILL.md + scripts/ + references/）
@@ -147,11 +147,11 @@ Skill UI 的案例中，设计方向面板经过了三轮增强（初版→加�
 
 ## 相关实体
 
-- [qoder 团队知识引擎](../ch01/960-qoder.html)
+- [qoder 团队知识引擎](../ch01/961-qoder.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
 
 ## 相关主题
-- [Claude Design Skill](../ch01/1351-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
+- [Claude Design Skill](../ch01/1352-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md) — Hermes Agent 的 Skill 格式
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
 

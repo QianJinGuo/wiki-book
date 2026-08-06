@@ -82,7 +82,7 @@ GitOps 让你能更安全地加快变更速度，但需要显式工程优化才�
 ## 相关实体
 - [What Marketing Can Learn From It About Running Complex Technology](../ch03/112-what-marketing-can-learn-from-it-about-running-complex-techn.html)
 - [Forward Networks Predict Network Verification](https://github.com/QianJinGuo/wiki/blob/main/entities/forward-networks-predict-network-verification.md)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/248-openclaw.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/250-openclaw.html)
 - [Hiclaw V110 K8S Hermes Worker](../ch01/292-hermes.html)
 - [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/340-skill.html)
 

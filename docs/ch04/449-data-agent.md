@@ -58,10 +58,10 @@ Data Agent 已构建三大核心应用领域：智能分析聚焦数据查询与
 ## 相关实体
 
 - [高德 AI 原生数据智能体](ch04/449-data-agent.html)
-- [火山引擎 SearchCLI 智能体](../ch03/035-agent.html)
+- [火山引擎 SearchCLI 智能体](../ch03/036-agent.html)
 - [火山引擎 RTM 低延迟流式传输](https://github.com/QianJinGuo/wiki/blob/main/entities/volcano-engine-rtm-low-latency-streaming.md)
-- [你不知道的 Agent 原理架构与工程实践](../ch03/035-agent.html)
-- [Karpathy：从 Vibe Coding 到 Agentic Engineering](ch04/183-karpathy-vibe-coding-agentic-engineering.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch03/036-agent.html)
+- [Karpathy：从 Vibe Coding 到 Agentic Engineering](ch04/787-karpathy-vibe-coding-agentic-engineering.html)
 - [智能体驱动的数据访问](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-driven-data-access.md)
 
 ---

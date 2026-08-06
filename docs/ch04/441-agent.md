@@ -52,10 +52,10 @@ Agent 后端中能力暴露方式发生根本变化：传统后端暴露 REST AP
 - [后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构](../ch05/023-ai-friendly.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/017-harness.html)
 - [AI 友好架构设计](../ch05/023-ai-friendly.html)
-- [AI Agent 工程师能力地图](ch04/762-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/425-ai-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/289-agentic.html)
 - [MCP（Model Context Protocol）](../ch07/091-mcp-protocol.html)
-- [Agent 可观测性五层架构](../ch03/035-agent.html)
+- [Agent 可观测性五层架构](../ch03/036-agent.html)
 - [Anthropic 12 个 MCP 生产模式](../ch01/1533-anthropic.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 

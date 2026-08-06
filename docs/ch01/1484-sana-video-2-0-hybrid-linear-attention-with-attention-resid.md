@@ -42,7 +42,7 @@ SANA-Video 2.0 的效率优势不仅来自注意力架构创新，还得益于�
 
 ### 与扩散模型中效率优化趋势的关系
 
-SANA-Video 2.0 代表了视频生成模型效率优化的一个重要趋势：不再单一追求更小的模型或更少的步数，而是从注意力机制本身入手降低单步计算成本。这与 [MoE 架构](ch01/1409-moe-architecture.html)的稀疏激活思路类似——不是在推理时减少模型参数量，而是让每次计算本身更高效。同时，混合注意力的思路与 [Tencent Hunyuan HILS 注意力](ch01/903-hils-attention.html) 的层级路由注意力形成互补：前者在单层内混合两种注意力机制，后者在不同层之间路由 token 到不同的注意力处理路径。
+SANA-Video 2.0 代表了视频生成模型效率优化的一个重要趋势：不再单一追求更小的模型或更少的步数，而是从注意力机制本身入手降低单步计算成本。这与 [MoE 架构](ch01/1409-moe-architecture.html)的稀疏激活思路类似——不是在推理时减少模型参数量，而是让每次计算本身更高效。同时，混合注意力的思路与 [Tencent Hunyuan HILS 注意力](ch01/904-hils-attention.html) 的层级路由注意力形成互补：前者在单层内混合两种注意力机制，后者在不同层之间路由 token 到不同的注意力处理路径。
 
 ## 实践启示
 
@@ -59,9 +59,9 @@ SANA-Video 2.0 代表了视频生成模型效率优化的一个重要趋势：�
 ## 相关实体
 
 - [MoE 架构](ch01/1409-moe-architecture.html) — 另一种通过稀疏激活提升推理效率的方法
-- [Tencent Hunyuan HILS Attention](ch01/903-hils-attention.html) — 层级路由注意力，与混合注意力思路互补
-- [Speculative Decoding](ch01/1197-spec.html) — 推理加速的另一个重要方向
-- [EchoGen](ch01/1114-20.html) — ICLR 2026 VAR 主体驱动生成，另一个关注效率-质量权衡的生成模型
+- [Tencent Hunyuan HILS Attention](ch01/904-hils-attention.html) — 层级路由注意力，与混合注意力思路互补
+- [Speculative Decoding](ch01/1198-spec.html) — 推理加速的另一个重要方向
+- [EchoGen](ch01/1115-20.html) — ICLR 2026 VAR 主体驱动生成，另一个关注效率-质量权衡的生成模型
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sana-video-2-hybrid-linear-attention-video-generation.md)
 

@@ -42,14 +42,14 @@ Fin 展示了一条垂直行业 Agent 的完整商业化路径：用"最高准�
 
 ## 相关实体
 - [Intercom（Fin）推出管理另一个 AI Agent 的 Agent](ch04/481-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
-- [Agentic AI in Finance](ch04/116-agentic-ai.html)
+- [Agentic AI in Finance](ch04/673-agentic-ai.html)
 - [Stripe Financial Compliance AI Agent：生产级经验](ch04/384-stripe-financial-compliance-ai-agent-production-lessons.html)
-- [AFAC2026 金融AI武道大会](ch04/762-ai-agent.html)
-- [厦门国际银行数创金融杯 RAG 方案](../ch01/1267-rag.html)
-- [Agent Reliability：Context Drift 与 Tool Hallucination](../ch03/035-agent.html)
+- [AFAC2026 金融AI武道大会](ch04/425-ai-agent.html)
+- [厦门国际银行数创金融杯 RAG 方案](../ch01/1268-rag.html)
+- [Agent Reliability：Context Drift 与 Tool Hallucination](../ch03/036-agent.html)
 - [法律 AI 与合规](https://github.com/QianJinGuo/wiki/blob/main/concepts/legal-ai-compliance.md)
 - [AI 伦理与负责任 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ethics-responsible-ai.md)
-- [How Superset built the IDE for AI agents on Vercel](../ch01/087-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/088-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [The UI is dead, long live the agent：ServiceNow goes headless and opens its platform](ch04/504-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [The UI is dead, long live the agent：ServiceNow goes headless](ch04/504-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 

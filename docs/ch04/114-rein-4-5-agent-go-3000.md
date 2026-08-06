@@ -10,7 +10,7 @@
 **Rein** 是一个 Go agent 框架，用 **4 个模块 + 5 条类型边界 + 7 个不变量** 解决"agent.go 200 行 → 3000 行"的问题。核心思路：**模块之间的数据契约定义清楚 = 防止上帝文件**。每条数据流都对应一个**严格类型 + 单一职责 + 不可见字段**。
 
 ## 相关实体
-- [Youre Building Agent Security In The Wrong Order](../ch03/035-agent.html)
+- [Youre Building Agent Security In The Wrong Order](../ch03/036-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
 
@@ -234,7 +234,7 @@ WithWorkingDir(cwd)            // 工作目录
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
-### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](../ch05/063-agent-harness.html)）
+### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](../ch05/042-agent-harness.html)）
 - 工作集视角：logical_messages 原样保留 + 投影 = Rein 的"存储完整，发送压缩"
 
 ### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](../ch05/017-harness.html)）
@@ -242,7 +242,7 @@ WithWorkingDir(cwd)            // 工作目录
 - Rein = session 原子写入 + 完整 logical_messages
 - **共同点**：完整历史 + 不可篡改 + 确定性回放
 
-### vs PilotDeck 白盒记忆（[Pilotdeck Agent Os Openbmb Tsinghua](../ch03/035-agent.html)）
+### vs PilotDeck 白盒记忆（[Pilotdeck Agent Os Openbmb Tsinghua](../ch03/036-agent.html)）
 - PilotDeck 记忆可读可改 + Dream 回滚
 - Rein observation envelope retryable 字段
 - **共同点**：把"AI 思考过程"暴露给用户/调用方
@@ -293,12 +293,12 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 相关对照
 - [Claude Code 20000 字符源码分析](../ch03/084-claude-code.html)
-- [Agent Harness 上下文管理](../ch05/063-agent-harness.html) —— 工作集视角
+- [Agent Harness 上下文管理](../ch05/042-agent-harness.html) —— 工作集视角
 - [wow-harness v3](../ch05/017-harness.html) —— 事件溯源 + 概念图
-- [PilotDeck](../ch03/035-agent.html) —— 白盒记忆
-- [Agent Harness 架构](../ch05/063-agent-harness.html) —— 7 层 harness 模型
-- [17 种 agent 架构演进](ch04/763-17-agent.html) —— 类型边界视角
-- [Agent 工程原则](../ch03/035-agent.html) —— 模块化设计实践
+- [PilotDeck](../ch03/036-agent.html) —— 白盒记忆
+- [Agent Harness 架构](../ch05/042-agent-harness.html) —— 7 层 harness 模型
+- [17 种 agent 架构演进](ch04/769-17-agent.html) —— 类型边界视角
+- [Agent 工程原则](../ch03/036-agent.html) —— 模块化设计实践
 - [短期记忆压缩](ch04/215-agent-memory.html) —— 投影压缩对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)

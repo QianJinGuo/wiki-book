@@ -16,7 +16,7 @@
 - [Protocol H Hierarchical Agentic Rag Enterprise](ch04/289-agentic.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/084-claude-code.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/084-claude-code.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/521-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/520-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-rag-architectures-classic-graph-agentic.md)

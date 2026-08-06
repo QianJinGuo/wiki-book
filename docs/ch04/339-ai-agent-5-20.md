@@ -104,7 +104,7 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-tool-count-trap.md)
 
 ## 关联
-- [Agent工程原则架构实践](../ch03/035-agent.html)
+- [Agent工程原则架构实践](../ch03/036-agent.html)
 - [Claude Code深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 - [MCP工具搜索与代码编排](../ch07/017-anthropic-mcp.html)
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)
@@ -113,14 +113,14 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/084-claude-code.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
-- [Claude Opus 4.7 发布分析](../ch01/546-claude-opus-4-7.html)
+- [Claude Opus 4.7 发布分析](../ch01/545-claude-opus-4-7.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/471-agent-skills.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/561-anthropic-ai.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/562-anthropic-ai.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/035-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1195-claude.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/036-agent.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1218-claude.html)
 
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 

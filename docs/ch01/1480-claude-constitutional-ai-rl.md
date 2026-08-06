@@ -148,7 +148,7 @@ Claude 代码场景的行为准则：
 
 - → [Anthropic LLM 内省意识](../ch04/225-anthropic-llm.html)：Anthropic 的安全研究能力维度
 - → [Building Next Claude](ch01/1533-anthropic.html)：Claude 的产品演进方向
-- → [Harness Engineering 范式](../ch05/057-harness-engineering.html)：代码能力在 Agent 场景的价值
+- → [Harness Engineering 范式](../ch05/092-harness-engineering.html)：代码能力在 Agent 场景的价值
 
 ---
 
