@@ -62,7 +62,7 @@ Rebuttal Skill 代表了一类新兴的工具范式：**将专家经验编码为
 
 ## 相关实体
 
-- [Skill 编排与依赖管理](../ch04/340-skill.html)
+- [Skill 编排与依赖管理](../ch04/344-skill.html)
 - [Agent Skill 系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [开源模型与学术生态](../ch01/228-kimi-k3.html)
 - [Hermes Agent Skill 设计分析](../ch01/521-hermes-agent-skill.html)

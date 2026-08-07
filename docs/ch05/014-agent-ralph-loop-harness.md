@@ -180,7 +180,7 @@ Boris Cherny 的观点指出：一个 Agent 引入的 bug，常常要靠另一�
 
 ## 相关实体
 - [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](ch05/017-harness.html)
-- [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html)
+- [Code As Agent Harness Survey](../ch09/062-code-as-agent-harness.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](ch05/017-harness.html)
 - [Agent Harness Architecture Design Production Guide](ch05/042-agent-harness.html)
 - [Harness 之后 状态边界与失败闭环 Ruofei](ch05/017-harness.html)

@@ -125,11 +125,11 @@ SDD 的真正价值不在于文档本身，而在于 Spec 创建过程中建立�
 
 ## 相关实体
 
-- [Vibe Coding 的局限性与 Agentic Engineering](../ch04/787-karpathy-vibe-coding-agentic-engineering.html)
+- [Vibe Coding 的局限性与 Agentic Engineering](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
 - [Harness Engineering 实践指南](ch05/092-harness-engineering.html)
 - [Spec Kit & OpenSpec 混合 Harness](ch05/055-openspec.html)
 - [SDD 实践：Lattice Harness 团队 AI 编码](ch05/121-ai-coding.html)
-- [Codex 五层架构](../ch01/733-codex.html)
+- [Codex 五层架构](../ch01/734-codex.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sdd-spec-driven-development-summary-qoder.md)
 

@@ -287,7 +287,7 @@ Claude Code 泄露事件最反直觉的发现：**LLM API 调用只是一行代�
 ## 相关实体
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch01/1533-anthropic.html)
 - [Anthropic 12 Mcp Production Patterns](ch01/1533-anthropic.html)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/782-claude-managed-agents.html)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/612-claude-managed-agents.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/042-agent-harness.html)
 - [Harness Design Long Running Apps](../ch05/017-harness.html)
 

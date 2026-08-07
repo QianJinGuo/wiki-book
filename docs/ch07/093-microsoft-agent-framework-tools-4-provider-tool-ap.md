@@ -16,11 +16,11 @@
 - **可被中间件拦截的执行路径**
 
 ## 相关实体
-- [Microsoft Agent Framework Structured Output](../ch03/036-agent.html)
-- [Microsoft Agent Framework Python Zizhi](../ch04/469-python.html)
-- [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](../ch03/036-agent.html)
-- [Open Claw Tool Bus Subagent Architecture](../ch03/036-agent.html)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/538-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Microsoft Agent Framework Structured Output](../ch03/037-agent.html)
+- [Microsoft Agent Framework Python Zizhi](../ch04/475-python.html)
+- [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](../ch03/037-agent.html)
+- [Open Claw Tool Bus Subagent Architecture](../ch03/037-agent.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/353-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix.md)
 

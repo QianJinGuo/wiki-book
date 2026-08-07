@@ -85,7 +85,7 @@ Harness 的每个组件都编码了一个关于"模型做不到什么"的假设�
 
 ### 1. Harness Engineering 的本质是"信任但验证"的系统化
 
-Harness Engineering 的深层本质是 AI 时代的**系统工程方法论**——它在模型能力与生产可靠性之间建立了一个可量化、可管理的接口层。这条思路与 [Backend for Agent](../ch03/036-agent.html) 中讨论的"智能体后端"架构一脉相承，都是将不可预测的智能体行为约束在可控框架内的工程尝试。不同于传统软件工程中的防御性编程（Defensive Programming），Harness Engineering 不是在代码层面设置壁垒，而是在认知和决策层面建立护栏——它约束的是 agent 的"思考过程"而非"执行结果"。
+Harness Engineering 的深层本质是 AI 时代的**系统工程方法论**——它在模型能力与生产可靠性之间建立了一个可量化、可管理的接口层。这条思路与 [Backend for Agent](../ch03/037-agent.html) 中讨论的"智能体后端"架构一脉相承，都是将不可预测的智能体行为约束在可控框架内的工程尝试。不同于传统软件工程中的防御性编程（Defensive Programming），Harness Engineering 不是在代码层面设置壁垒，而是在认知和决策层面建立护栏——它约束的是 agent 的"思考过程"而非"执行结果"。
 
 ### 2. "环境比模型更重要"的隐含前提
 
@@ -93,7 +93,7 @@ LangChain 的同一模型在不同 harness 下 52.8% → 66.5% 的提升，和 V
 
 ### 3. 从"强模型"到"强系统"的范式迁移
 
-Harness Engineering 的兴起标志着 AI 工程的重心从"提高模型智商"迁移到了"提高系统可靠性"。这种迁移与 [Agent 落地真相](../ch03/036-agent.html) 中讨论的"从能跑通到能投产"的讨论完全一致。2025 年行业更关注模型评测成绩单上的数字提升；2026 年的竞争焦点则变成了：谁能先让 AI agent 可靠地交付生产级输出。Harness Engineering 正是此范式迁移的工程载体。
+Harness Engineering 的兴起标志着 AI 工程的重心从"提高模型智商"迁移到了"提高系统可靠性"。这种迁移与 [Agent 落地真相](../ch03/037-agent.html) 中讨论的"从能跑通到能投产"的讨论完全一致。2025 年行业更关注模型评测成绩单上的数字提升；2026 年的竞争焦点则变成了：谁能先让 AI agent 可靠地交付生产级输出。Harness Engineering 正是此范式迁移的工程载体。
 
 ### 4. Harness 衰减的深层次含义
 
@@ -111,10 +111,10 @@ Harness Engineering 的兴起标志着 AI 工程的重心从"提高模型智商"
 
 ## 相关实体
 
-- [Backend for Agent — 智能体后端架构](../ch03/036-agent.html)
-- [Agent 落地真相：从能跑通到能投产](../ch03/036-agent.html)
+- [Backend for Agent — 智能体后端架构](../ch03/037-agent.html)
+- [Agent 落地真相：从能跑通到能投产](../ch03/037-agent.html)
 - [Agent Harness 钉钉招聘实践](ch05/042-agent-harness.html)
-- [Claude Code Skills 实践指南](../ch07/032-claude-code-skills.html)
+- [Claude Code Skills 实践指南](../ch07/033-claude-code-skills.html)
 - [注意力崩溃与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

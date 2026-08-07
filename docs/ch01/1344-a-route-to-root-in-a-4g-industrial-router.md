@@ -29,9 +29,9 @@
 ## 相关实体
 - [Npm Supply Chain Compromise Postmortem](../ch05/104-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
-- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch01/543-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
+- [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](ch01/545-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1317-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/571-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/427-agentrun.html)
 
 ---
 

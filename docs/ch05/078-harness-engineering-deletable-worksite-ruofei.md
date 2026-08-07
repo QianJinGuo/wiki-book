@@ -63,7 +63,7 @@ Anthropic 的长任务 Harness 讲同一问题的另一面：Agent 做长项目�
 - [Harness Engineering 概念](ch05/092-harness-engineering.html)
 - [Harness Engineering：让 coding agent 可靠完成长程任务](ch05/092-harness-engineering.html)
 - [一文带你弄懂 AI 圈爆火的新概念 Harness Engineering](ch05/092-harness-engineering.html)
-- [你不知道的 Agent 原理架构与工程实践](../ch03/036-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch03/037-agent.html)
 - [Using Local Coding Agents](../ch09/173-using-local-coding-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 

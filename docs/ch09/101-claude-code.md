@@ -55,10 +55,10 @@ Claude 的自我评估不是"不够准确"，而是方向性的：它倾向于�
 - [Harness Engineering 可靠长程Agent](../ch05/092-harness-engineering.html) — 治理方法论
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [AutoResearch：多 Agent 自动化软件开发](../ch03/036-agent.html)
+- [AutoResearch：多 Agent 自动化软件开发](../ch03/037-agent.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)
 - [Claude Code 设计原则与对照分析](../ch03/084-claude-code.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/036-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/017-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 *评分 9×8=72 | 入库 2026-05-12*

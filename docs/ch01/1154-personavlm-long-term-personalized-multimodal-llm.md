@@ -14,8 +14,8 @@
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/017-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/017-harness.html)
 - [Two Harness Papers Microsoft Google](../ch05/017-harness.html)
-- [Trace2Skill Trajectory Distillation Agent Skills](../ch04/471-agent-skills.html)
-- [05 11 The Great Memory Panic Of 2026](ch01/1142-the-great-memory-panic-of-2026.html)
+- [Trace2Skill Trajectory Distillation Agent Skills](../ch04/477-agent-skills.html)
+- [05 11 The Great Memory Panic Of 2026](ch01/1144-the-great-memory-panic-of-2026.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/personavlm-long-term-personalization.md)
 

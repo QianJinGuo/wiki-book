@@ -50,16 +50,16 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 5. **在生产环境部署前，必须定义 Agent 的行为边界（Boundary）而非仅定义能力（Capability）**。Capability 描述 Agent 能做什么，Boundary 描述 Agent 不应该做什么或何时应该拒绝。Constitutional AI Guardrails 提供了原则驱动的边界定义方法。将"不应该"转化为"在什么条件下应该"的结构化规则，比单纯在 prompt 中说"不要做 X"更可靠。
 
 ## 相关实体
-- [Code as Agent Harness 综述](../ch09/061-code-as-agent-harness.html)
+- [Code as Agent Harness 综述](../ch09/062-code-as-agent-harness.html)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/017-harness.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/042-agent-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/500-from-agent-protocol-to-harness-skill.html)
-- [Agent Memory 架构解析](ch04/215-agent-memory.html)
+- [From Agent Protocol to Harness Skill](ch04/507-from-agent-protocol-to-harness-skill.html)
+- [Agent Memory 架构解析](ch04/179-agent-memory.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/017-harness.html)
 - [AI Native 时代 —— 研发组织何去何从](../ch05/022-ai-native.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/017-harness.html)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/036-agent.html)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/037-agent.html)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/104-ai.html)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/1360-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
@@ -68,9 +68,9 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 
 - [Thin Harness Fat Skills](../ch05/096-thin-harness-fat-skills-ai.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/426-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/431-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AI Agent 工程师能力地图](ch04/425-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/430-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）

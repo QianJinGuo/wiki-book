@@ -91,22 +91,22 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mythos_offensive_security_xbow_evaluatio.md)
 
 ## 相关实体
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1218-claude.html)
-- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/036-qoder-skills.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1219-claude.html)
+- [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/037-qoder-skills.html)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/084-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/074-claude-code-agent.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/104-ai.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](ch01/1533-anthropic.html)
-- [Agent Skill 设计模式](../ch04/471-agent-skills.html)
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/036-agent.html)
+- [Agent Skill 设计模式](../ch04/477-agent-skills.html)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/037-agent.html)
 
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/036-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/1533-anthropic.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/397-anthropic-claude-managed-agents.html)
 
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/471-agent-skills.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/322-anthropic-agent.html)
-- [Anthropic Computer Use 最佳实践](ch01/1199-anthropic-computer-use.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/477-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/156-anthropic-agent.html)
+- [Anthropic Computer Use 最佳实践](ch01/1201-anthropic-computer-use.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
 
 ---

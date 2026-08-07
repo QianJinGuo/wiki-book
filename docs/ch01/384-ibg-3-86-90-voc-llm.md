@@ -19,9 +19,9 @@
 
 ## 相关实体
 - [Multilingual Ai](../ch05/104-ai.html)
-- [Eagle 3 Speculative Decoding Optimization](ch01/1198-spec.html)
-- [Didi Eagle 3 Speculative Decoding Agents](../ch09/052-coding-agent.html)
-- [Be More Expressive To Close More Sales](ch01/099-be-more-expressive-to-close-more-sales.html)
+- [Eagle 3 Speculative Decoding Optimization](ch01/1199-spec.html)
+- [Didi Eagle 3 Speculative Decoding Agents](../ch09/053-coding-agent.html)
+- [Be More Expressive To Close More Sales](ch01/100-be-more-expressive-to-close-more-sales.html)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)

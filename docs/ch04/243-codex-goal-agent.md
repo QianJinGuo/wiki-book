@@ -2,7 +2,7 @@
 
 ## Ch04.243 Codex /goal 实现拆解：长任务 Agent 不只是多跑几轮
 
-> 📊 Level ⭐⭐ | 11.9KB | `entities/codex-goal-implementation-breakdown.md`
+> 📊 Level ⭐⭐ | 12.0KB | `entities/codex-goal-implementation-breakdown.md`
 
 ## 文章背景
 书接上文《长周期 Agent 详解：从 Ralph Loop 到可接管 Harness》，这次从里面看 Codex `/goal` 的源码实现。
@@ -24,7 +24,7 @@ Karpathy 在 Sequoia AI Ascent 2026 提到，2025年12月前后 agentic coding �
 ## /goal 的三层设计
 ### 第一层：目标持久化
 目标不再只是聊天上下文里的一段文字。它进入了 **state-db**，有自己的状态、预算、token记账、wall clock记账，也能被外部mutation修改。
-目标一旦变成 thread 上的状态，运行时可以处理：^[].md]
+目标一旦变成 thread 上的状态，运行时可以处理：
 
 - 当前目标是不是 active
 - 是否被 paused
@@ -47,7 +47,7 @@ Karpathy 在 Sequoia AI Ascent 2026 提到，2025年12月前后 agentic coding �
 - 空闲时，是否应该启动一个 continuation turn
 
 ### 第三层：完成审计和预算收束
-**完成判断**：续跑 prompt 里反复提醒模型：^[].md]
+**完成判断**：续跑 prompt 里反复提醒模型：
 
 - 不要把完整目标缩小成当前容易完成的小目标
 - 要基于当前 worktree 和外部状态
@@ -89,16 +89,16 @@ Karpathy 在 Sequoia AI Ascent 2026 提到，2025年12月前后 agentic coding �
 budget_limit 那份很短：到点了，别开新工作，把进展、剩余工作或阻塞、下一步整理出来。把停下来本身当成一种状态，要有自己的协议。
 
 ## 工程师的新杠杆
-Karpathy 说 10x 工程师可能已经不够看了。^[].md]
+Karpathy 说 10x 工程师可能已经不够看了。
 
-两种工程师用的是同一类工具，但手里的杠杆不一样：^[].md]
+两种工程师用的是同一类工具，但手里的杠杆不一样：
 
 - **前者**：把需求一股脑丢给 Agent，然后等它吐代码
 - **后者**：把同一个需求改写成一份清楚的 spec，知道哪些上下文要给、哪些工具和权限要收紧，让 Agent 先做小切片，再用测试和日志做反馈，能看懂 diff，也能在预算耗尽时把现场整理回来
 两个人用的是同一类工具，但手里的杠杆不一样。前者是在使用 Agent。后者是在为 Agent 搭工作系统。
-**Karpathy 那句话**：可以外包思考，但不能外包理解。^[].md]
+**Karpathy 那句话**：可以外包思考，但不能外包理解。
 
-**补充**：可以把很多执行交给 Agent，但别把工作现场交给运气。^[].md]
+**补充**：可以把很多执行交给 Agent，但别把工作现场交给运气。
 
 ## 深度分析
 ### 从"工具调用"到"系统设计"的范式转移
@@ -137,7 +137,7 @@ Codex `/goal` 的实现揭示了一个深刻转变：Agent 系统设计正在从
 - [OpenAI Codex /goal 官方用例](https://developers.openai.com/codex/use-cases/follow-goals)
 - [OpenAI Codex goals.rs 源码](https://github.com/openai/codex/blob/main/codex-rs/core/src/goals.rs)
 
-→ [[raw/articles/2026.md|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
 - [Martin Fowler: Harness engineering for coding agent users](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)
 ---
@@ -145,7 +145,7 @@ Codex `/goal` 的实现揭示了一个深刻转变：Agent 系统设计正在从
 
 ---
 ## 关联
-- 相关概念: [[concepts/harness-engineering-framework|Harness Engineering]
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

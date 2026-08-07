@@ -44,7 +44,7 @@ Harness Engineering 方法论，让 Coding Agent 能够可靠地完成长程任�
 
 ## 相关文章
 - → [Agent Harness Architecture](../ch05/042-agent-harness.html)
-- → [Qoder Skills Complete Guide](../ch07/036-qoder-skills.html)
+- → [Qoder Skills Complete Guide](../ch07/037-qoder-skills.html)
 - → [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 ---
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)

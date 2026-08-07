@@ -14,8 +14,8 @@
 
 ## 相关实体
 - [Notion Dev Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-dev-platform.md)
-- [Pi Mono Github](../ch01/1101-pi-mono-github.html)
-- [Cli Mcp Sdk Agent Tool Selection](ch03/036-agent.html)
+- [Pi Mono Github](../ch01/1105-pi-mono-github.html)
+- [Cli Mcp Sdk Agent Tool Selection](ch03/037-agent.html)
 - [Openai Realtime Api Architecture](../ch01/122-openai-realtime-api.html)
 - [Browser Harness Github](../ch05/100-browser-harness-github.html)
 

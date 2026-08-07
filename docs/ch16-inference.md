@@ -1459,9 +1459,9 @@ DPD 架构正在改变推理基础设施的设计范式。传统"单节点尽可
 
 ## Ch16.016 Unlocking asynchronicity in continuous batching
 
-> 📊 Level ⭐⭐ | 4.9KB | `entities/continuous-async.md`
+> 📊 Level ⭐⭐ | 5.1KB | `entities/continuous-async.md`
 
-> 来源：[[raw/articles/continuous-async.md|原文存档]
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuous-async.md)
 
 ## 核心要点
 - HuggingFace 深度技术文章，解析连续批处理的异步优化
@@ -1472,24 +1472,24 @@ DPD 架构正在改变推理基础设施的设计范式。传统"单节点尽可
 ## 深度分析
 ### 同步批处理的本质缺陷
 连续批处理（Continuous Batching）通过动态打包请求显著提升了 GPU 利用率，但它默认是同步的——CPU 准备新批次时 GPU 空闲，GPU 计算时 CPU 等待。在高频推理场景下（每秒数百步），这些空闲间隙累积成显著的效率损失。
-HuggingFace 的实验数据揭示了这一问题的严重性：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，其中 24% 时间为空闲 GPU。这意味着如果能消除 CPU 开销，理论上可获得 24% 的免费加速——无需任何新 kernel 或模型修改。^[].md]
+HuggingFace 的实验数据揭示了这一问题的严重性：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，其中 24% 时间为空闲 GPU。这意味着如果能消除 CPU 开销，理论上可获得 24% 的免费加速——无需任何新 kernel 或模型修改。
 
 ### CUDA Streams 的并发机制
-CUDA streams 是理解异步批处理的关键。每个 stream 是 GPU 操作的顺序队列，同一 stream 内操作串行，不同 stream 可并发。通过将 H2D 传输（Host-to-Device）、计算、D2H 传输（Device-to-Host）分配到独立 stream，可实现数据传输与计算的重叠。^[].md]
+CUDA streams 是理解异步批处理的关键。每个 stream 是 GPU 操作的顺序队列，同一 stream 内操作串行，不同 stream 可并发。通过将 H2D 传输（Host-to-Device）、计算、D2H 传输（Device-to-Host）分配到独立 stream，可实现数据传输与计算的重叠。
 
-但这里存在一个问题：非默认 stream 不会自动等待其他 stream 的操作完成——需要显式同步。^[].md]
+但这里存在一个问题：非默认 stream 不会自动等待其他 stream 的操作完成——需要显式同步。
 
 ### CUDA Events 的同步语义
-CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点时标记为完成。通过 `stream.wait(event)` 可让一个 stream 阻塞直到某个 event 被设置，而 CPU 端调用立即返回。这种纯 GPU 侧的同步机制，使得 CPU 可以真正"放手"，让硬件自行管理依赖关系。^[].md]
+CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点时标记为完成。通过 `stream.wait(event)` 可让一个 stream 阻塞直到某个 event 被设置，而 CPU 端调用立即返回。这种纯 GPU 侧的同步机制，使得 CPU 可以真正"放手"，让硬件自行管理依赖关系。
 
 ### 双 buffer 槽位设计
-异步批处理需要在 GPU 处理 batch N 时准备 batch N+1 的输入。这引发两个技术挑战：^[].md]
+异步批处理需要在 GPU 处理 batch N 时准备 batch N+1 的输入。这引发两个技术挑战：
 
 1. **数据竞争**：batch N 和 batch N+1 不能共享同一内存区域，否则 GPU 可能读到部分覆写的数据。解决方案是使用两个独立的内存槽位（slot A 和 slot B），交替使用。
 2. **CUDA Graphs 兼容性**：生产环境常使用 CUDA Graphs 加速，但每个 graph 绑定特定内存地址。双 memory pool 方案允许多个 graph 共享池化内存，总 VRAM 接近单个 graph 的使用量。
 
 ### Carry-over 机制
-请求通常跨越多个 batch。当 batch N 产生新 token 时，该 token 需要作为 batch N+1 的输入。但由于 batch N 仍在计算，这个 token 还不存在。解决方案是使用占位符（placeholder）构建 batch N+1 输入，在 batch N 完成后通过 "carry-over" 将实际 token 填充进去。这四个操作（选择、置零、截断、相加）足够轻量，可被 CUDA Graph 捕获。^[].md]
+请求通常跨越多个 batch。当 batch N 产生新 token 时，该 token 需要作为 batch N+1 的输入。但由于 batch N 仍在计算，这个 token 还不存在。解决方案是使用占位符（placeholder）构建 batch N+1 输入，在 batch N 完成后通过 "carry-over" 将实际 token 填充进去。这四个操作（选择、置零、截断、相加）足够轻量，可被 CUDA Graph 捕获。
 
 ## 实践启示
 1. **推理优化应关注 CPU/GPU 协同**：对于 LLM 推理工作负载，CPU 端调度开销常被忽视。即使 GPU 计算能力充足，CPU 侧的批次准备可能成为瓶颈。HuggingFace 的方法展示了如何通过异步化将 CPU 和 GPU 利用率同时最大化。
@@ -1503,9 +1503,9 @@ CUDA event 是一个标记，可记录到 stream 中，当 GPU 执行到该点�
 - [[entities/how-to-calculate-the-inference-efficiency-ratio]
 - [[entities/introducing-the-ettin-reranker-family]
 - [[entities/lightseek-tokenspeed]
-- [[moc/nvidia-gpu-acceleration|MOC]
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
-→ [[raw/articles/continuous-async.md|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuous-async.md)
 
 ---
 
@@ -1893,63 +1893,63 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ## Ch16.021 TLiveOmni vLLM 适配与量化方案
 
-> 📊 Level ⭐⭐⭐ | 10.2KB | `entities/tliveomni-vllm-quantization.md`
+> 📊 Level ⭐⭐⭐ | 10.1KB | `entities/tliveomni-vllm-quantization.md`
 
-→ [[entities/面向电商直播场景的全模态大模型推理加速方案.md|返回总览]
+→ [返回总览](https://github.com/QianJinGuo/wiki/blob/main/entities/面向电商直播场景的全模态大模型推理加速方案.md)
 
 ## vLLM 架构适配
 ### 模型注册
-自定义模型不在 vLLM 官方支持列表，采用 Out-of-tree models 方式通过 Plugin 注册，无需修改 vLLM 源码。^[].md]
+自定义模型不在 vLLM 官方支持列表，采用 Out-of-tree models 方式通过 Plugin 注册，无需修改 vLLM 源码。
 
 ```python
 def register():
-    from vllm import ModelRegistry
-    from your_code import YourModelForCausalLM
-    ModelRegistry.register_model("YourModelForCausalLM", YourModelForCausalLM)
+ from vllm import ModelRegistry
+ from your_code import YourModelForCausalLM
+ ModelRegistry.register_model("YourModelForCausalLM", YourModelForCausalLM)
 ```
 
 ### 多模态数据处理
-vLLM 数据前处理三阶段（"占位符 → Token 序列 → Embedding 向量"三级映射）：^[].md]
+vLLM 数据前处理三阶段（"占位符 → Token 序列 → Embedding 向量"三级映射）：
 
 1. **数据预处理**（`tlive_process`）：多模态数据读取与向量化
 2. **标识与排布**：
 
-   - 定义标识（`get_placeholder_str`）：指定 Prompt 中多模态 Token 模版（如 `<video_pad>`）
-   - Token 展开与排布（`prompt_updates`）：将占位符替换为 N 个连续视觉占位 Token
+ - 定义标识（`get_placeholder_str`）：指定 Prompt 中多模态 Token 模版（如 `<video_pad>`）
+ - Token 展开与排布（`prompt_updates`）：将占位符替换为 N 个连续视觉占位 Token
 3. **向量对齐与更替**（`_maybe_apply_prompt_updates`）：Encoder 计算 Embedding 后填入对应位置
 ---
 
 ## 框架适配与精度对齐
 ### 多模态对齐问题
 #### Interleave 排布修复
-vLLM 默认将多模态特征 Embedding 拼接成连续序列，但 **TLiveOmni 采用 V/A 交替排布**（Vision Token 和 Audio Token 交替）。vLLM 默认连续拼接逻辑会导致：^[].md]
+vLLM 默认将多模态特征 Embedding 拼接成连续序列，但 **TLiveOmni 采用 V/A 交替排布**（Vision Token 和 Audio Token 交替）。vLLM 默认连续拼接逻辑会导致：
 
 - 连续视觉 Embedding 覆盖 Audio Token 位置
 - 映射错位，模型输出与训练产生误差
-修复方案：修改代码确保 Token 和 Embedding 排布方式与训练时一致。^[].md]
+修复方案：修改代码确保 Token 和 Embedding 排布方式与训练时一致。
 
 #### Audio Token 自动 Padding 修复
-vLLM 为优化 Cache 效率（保证特征维度是 8 的倍数）会在音频特征提取前 padding，导致 Token 长度不一致。解决方案：去除 vLLM 中 Audio 特征自动补全部分，严格按原始长度处理。^[].md]
+vLLM 为优化 Cache 效率（保证特征维度是 8 的倍数）会在音频特征提取前 padding，导致 Token 长度不一致。解决方案：去除 vLLM 中 Audio 特征自动补全部分，严格按原始长度处理。
 
 #### 浮点运算差异
-vLLM 和 Transformers 对 DeepStack 和 Residual 部分**相加顺序不同**：^[].md]
+vLLM 和 Transformers 对 DeepStack 和 Residual 部分**相加顺序不同**：
 
 - 数学上 A+B+C = (A+C)+B
 - 但 GPU 浮点运算不满足加法结合律
 - `residual` 输出大，先加大数还是先加小数会导致不同精度
 - 误差随模型层数逐层放大
-修复方案：修改 vLLM 计算逻辑，确保 DeepStack 和 Residual 计算顺序与 Transformers 一致。^[].md]
+修复方案：修改 vLLM 计算逻辑，确保 DeepStack 和 Residual 计算顺序与 Transformers 一致。
 
 ### 通用对齐问题
 #### Flash-Attention 差异
-vLLM 对 Vision 和 Language 模块采用不同 Attention 后端：^[].md]
+vLLM 对 Vision 和 Language 模块采用不同 Attention 后端：
 
 - Vision 模块（Qwen3-VL 等）：直接调用 `flash_attn_varlen_func`，结果与训练一致
 - Language 模块（vLLM）：调用 `torch.ops.vllm.unified_attention_with_output`，这是 vLLM 为 PagedAttention 专门重写的算子
-差异来源：CUDA 实现层面与原版 Flash-Attention 在累加精度、Scaling 处理或算子融合上存在微小差异。当前版本无法完全解决，但误差在可接受范围内。^[].md]
+差异来源：CUDA 实现层面与原版 Flash-Attention 在累加精度、Scaling 处理或算子融合上存在微小差异。当前版本无法完全解决，但误差在可接受范围内。
 
 #### RSNorm 对齐
-vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但在 `residual` 加法和数据类型转换顺序上与 Transformers 存在偏差。Q、K 的 Norm 结果有 1e-4 级误差会经 Attention 矩阵乘法放大累积，因此对 vLLM 的 Norm 进行了替换。^[].md]
+vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但在 `residual` 加法和数据类型转换顺序上与 Transformers 存在偏差。Q、K 的 Norm 结果有 1e-4 级误差会经 Attention 矩阵乘法放大累积，因此对 vLLM 的 Norm 进行了替换。
 
 ---
 
@@ -1984,12 +1984,12 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 - **基于旋转矩阵**：QuaRot、SpinQuant — 旋转变换消除离群点
 
 ### 复合量化方案：SmoothQuant + GPTQ
-**SmoothQuant**：解决离群点问题^[].md]
+**SmoothQuant**：解决离群点问题
 
 - 当 LLM 参数量超过 7B 后，激活值中出现远超均值的离群点（通常比正常值大 100 倍以上）
 - INT8 量化会使大多数激活值被清零
 - SmoothQuant 引入平滑因子 s，将激活值离群点转移到权重上（权重分布更平滑、更易量化）
-**GPTQ**：最小化量化前后权重差异^[].md]
+**GPTQ**：最小化量化前后权重差异
 
 - 起源于 Yann LeCun 1990 年提出的 OBD 算法（剪枝方法）
 - 核心思路：找到量化权重使新权重和原权重输出结果差别最小
@@ -2004,18 +2004,18 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 - OCR/Markdown：一个像素偏差可能导致"8"量化成"0"
 - Visual Grounding：权重微小扰动使边界框漂移几十像素
 - Temporal Grounding：微小扰动导致时间轴偏移
-最终形成 **5000 条高质量数据**的校准池。^[].md]
+最终形成 **5000 条高质量数据**的校准池。
 
 ---
 
 ## 性能评测
 ### 精度评估（H20 单卡）
-量化方案：SmoothQuant + GPTQ 复合量化，主要针对 Language Model 部分量化。^[].md]
+量化方案：SmoothQuant + GPTQ 复合量化，主要针对 Language Model 部分量化。
 
-各量化方案精度损失均 **<1.5%**，其中 FP8 量化精度损失最小，图像与视频任务甚至有微弱性能提升。^[].md]
+各量化方案精度损失均 **<1.5%**，其中 FP8 量化精度损失最小，图像与视频任务甚至有微弱性能提升。
 
 ### 推理速度测试（H20 单卡）
-量化后综合加速比 **2.5x~3.5x**：^[].md]
+量化后综合加速比 **2.5x~3.5x**：
 
 - Video（Short）加速收益不明显：vLLM 多模态预处理效率低于 Torch，时延占比重
 - Video（Long）预处理占比相对较低，推理加速优势更充分体现
@@ -2063,7 +2063,7 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 4. **校准数据**：高敏感任务（OCR/VG/TG）→ 高权重覆盖；一般任务 → 均匀采样，确保 5000 条高质量数据池
 
 ### vLLM 多模态适配检查清单
-当需要将自定义多模态模型适配到 vLLM 时，以下检查点按优先级排序：^[].md]
+当需要将自定义多模态模型适配到 vLLM 时，以下检查点按优先级排序：
 
 - [ ] **多模态 Token 排布**：确认训练时 V/A 是连续还是交替排布，vLLM 默认连续拼接需要修改
 - [ ] **Audio Padding**：检查 vLLM 是否会自动对音频特征补齐，如有需要去除
@@ -2080,16 +2080,16 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 | 混合负载 | H20 + RTX 4090 混部 | 按任务分流 | 建立任务→硬件路由层 |
 
 ### 前处理优化方向
-多模态推理中前处理（CPU 端）往往被忽视，但对短内容场景影响最大。建议：^[].md]
+多模态推理中前处理（CPU 端）往往被忽视，但对短内容场景影响最大。建议：
 
 1. **图像**：使用 TurboJPEG/libjpeg-turbo 替代默认解码器，resize 用 NEON 加速
 2. **音频**：音频特征提取（Mel Spectrogram 等）用 PyTorch 批处理而非 vLLM 内置逻辑
 3. **视频**：关键帧采样策略在摄入端完成，不要在推理引擎内做动态采样
 ---
 ## 相关实体
-- [[entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda|ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理]
-- [[entities/gemma-4-multi-token-prediction-drafters|gemma 4 multi token prediction drafters]
-- [[entities/tokenspeed-agentic-inference-engine|tokenspeed agentic inference engine]
+- [ai-infra-auto-driven-skills v0.1.0：给 codex / claude code 的推理](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md)
+- [gemma 4 multi token prediction drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
+- [tokenspeed agentic inference engine](https://github.com/QianJinGuo/wiki/blob/main/entities/tokenspeed-agentic-inference-engine.md)
 
 ---
 
@@ -2837,7 +2837,45 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.031 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+## Ch16.031 vLLM V0 to V1: Correctness Before Corrections in RL
+
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/servicenow-vllm-correctness.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-vllm-correctness-huggingface.md)
+
+## 深度分析
+vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。
+
+**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。
+
+**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。
+
+**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
+
+**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。
+
+## 实践启示
+**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。
+
+**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。
+
+**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。
+
+**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。
+
+**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。
+
+## 相关实体
+- [servicenow vllm correctness huggingface](https://github.com/QianJinGuo/wiki/blob/main/entities/servicenow-vllm-correctness-huggingface.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vllm-v0-to-v1-correctness-before-corrections.md)
+
+- [vLLM V0→V1 迁移中的 logprob 差异修复](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
+- [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
+
+---
+
+## Ch16.032 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
 
 > 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md`
 
@@ -2891,44 +2929,6 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 - [Transformer 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)：GQA + MoE 架构是 Hy3 的基础
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md)
-
----
-
-## Ch16.032 vLLM V0 to V1: Correctness Before Corrections in RL
-
-> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/servicenow-vllm-correctness.md`
-
-> -> [[raw/articles/servicenow-vllm-correctness-huggingface|原文存档]
-
-## 深度分析
-vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。^[].md]
-
-**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。^[].md]
-
-**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。^[].md]
-
-**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。^[].md]
-
-**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。^[].md]
-
-## 实践启示
-**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。^[].md]
-
-**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。^[].md]
-
-**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。^[].md]
-
-**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。^[].md]
-
-**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。^[].md]
-
-## 相关实体
-- [[entities/servicenow-vllm-correctness-huggingface|servicenow vllm correctness huggingface]
-
-→ [[raw/articles/vllm-v0-to-v1-correctness-before-corrections.md|原文存档]
-
-- [[entities/vllm-v0-to-v1-correctness-before-corrections|vLLM V0→V1 迁移中的 logprob 差异修复]
-- [[entities/trajectory-balance-asynchrony-tba-bengio-papweekly|无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍]
 
 ---
 
