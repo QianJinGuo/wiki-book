@@ -24,7 +24,7 @@
 ## 关联阅读
 ## 相关实体
 - [From Doer To Director The Ai Mindset Shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](ch01/1241-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](ch01/722-microsoft-for-startups-microsoft.html)
 - [Running An Ai Native Engineering Org](ch01/057-running-an-ai-native-engineering-org.html)
 - [White House Federal Identity Security Ai](../ch05/104-ai.html)
 

@@ -48,7 +48,7 @@ Agnes-2.5-Flash 的实际表现不仅来自模型本身的改进，更来自 **A
 
 ### 与旗舰模型的分层定位
 
-Agnes-2.5-Flash 定位为"日常主力模型"，而 Agnes-2.5-Pro 面向"专业开发场景"。这一分层策略与 [Claude Code 技能封装](../ch07/032-claude-code-skills.html) 中提到的"能力分层供给"思路相似：
+Agnes-2.5-Flash 定位为"日常主力模型"，而 Agnes-2.5-Pro 面向"专业开发场景"。这一分层策略与 [Claude Code 技能封装](../ch07/033-claude-code-skills.html) 中提到的"能力分层供给"思路相似：
 
 | 维度 | Agnes-2.5-Flash | Agnes-2.5-Pro |
 |------|-----------------|---------------|
@@ -73,7 +73,7 @@ Agnes-2.5-Flash 定位为"日常主力模型"，而 Agnes-2.5-Pro 面向"专业�
 - [AI Coding 入门指南](../ch05/121-ai-coding.html)
 - [Claude Code 深度架构分析](../ch03/084-claude-code.html)
 - [Harness Engineering 2026 全景](../ch05/092-harness-engineering.html)
-- [Claude Code 技能封装](../ch07/032-claude-code-skills.html)
+- [Claude Code 技能封装](../ch07/033-claude-code-skills.html)
 - [Anthropic 输出验证瓶颈](ch09/099-anthropic-8x.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

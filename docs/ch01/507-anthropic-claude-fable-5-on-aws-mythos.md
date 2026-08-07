@@ -35,7 +35,7 @@ Fable 5 能够理解嵌套在文件和 PDF 中的图表和表格，这在以下�
 
 Fable 5 的第三个差异化特性是**能够根据学习情况自我更新技能，开发自己的测试工具和评估方法**。这代表了一种新的模型自主性维度——模型不仅执行任务，还能够评估自身输出的质量并主动改进。
 
-这与 Skill-RM（[Skill Rm Qwen Agent Skill Reward Model](../ch04/686-agent-skill.html)）的研究方向形成有趣的呼应：Skill-RM 关注的是将 Reward Model 封装为可复用的 Agent Skill；Fable 5 的自我验证则暗示模型本身具备内化的"Skill-RM 能力"，不需要外部评估器即可进行自我校准。
+这与 Skill-RM（[Skill Rm Qwen Agent Skill Reward Model](../ch04/595-agent-skill.html)）的研究方向形成有趣的呼应：Skill-RM 关注的是将 Reward Model 封装为可复用的 Agent Skill；Fable 5 的自我验证则暗示模型本身具备内化的"Skill-RM 能力"，不需要外部评估器即可进行自我校准。
 
 ## 安全保护机制：Fable 与 Mythos 的分界线
 
@@ -126,7 +126,7 @@ print(response["output"]["message"]["content"][0]["text"])
 
 Fable 5 的发布代表了一种新的模型发布策略：**将安全保护作为能力的一部分而非能力的减分项**。传统思路是先训练最强模型，再附加安全层（可能导致能力回撤）；Fable 的思路是同步设计安全机制与能力输出，使得安全路由对用户几乎透明。
 
-这一思路与 [Skill Rm Qwen Agent Skill Reward Model](../ch04/686-agent-skill.html) 中"渐进式披露"的设计哲学相呼应：不是一股脑把所有信息扔给模型，而是根据上下文按需激活最合适的组件。Fable 5 的安全路由本质上是"在特定领域按需激活更安全的模型组件"——这是一个在单一模型内部实现的能力路由机制。
+这一思路与 [Skill Rm Qwen Agent Skill Reward Model](../ch04/595-agent-skill.html) 中"渐进式披露"的设计哲学相呼应：不是一股脑把所有信息扔给模型，而是根据上下文按需激活最合适的组件。Fable 5 的安全路由本质上是"在特定领域按需激活更安全的模型组件"——这是一个在单一模型内部实现的能力路由机制。
 
 ### 企业 Agent 部署的影响
 
@@ -136,7 +136,7 @@ Fable 5 的发布代表了一种新的模型发布策略：**将安全保护作�
 
 ### 数据合规的隐性成本
 
-30 天数据留存 + 人工审查的要求对于有严格数据主权要求的行业（如欧洲 GDPR 合规企业）意味着 Fable 5 可能不是即插即用的解决方案。企业在评估 Fable 5 时需要将"合规评估周期"纳入部署时间表。这与 [Skill Hub Organization Asset Winty](../ch04/340-skill.html) 中提到的"企业 AI 落地隐形 Tax"概念一致：看不见的合规成本往往被低估。
+30 天数据留存 + 人工审查的要求对于有严格数据主权要求的行业（如欧洲 GDPR 合规企业）意味着 Fable 5 可能不是即插即用的解决方案。企业在评估 Fable 5 时需要将"合规评估周期"纳入部署时间表。这与 [Skill Hub Organization Asset Winty](../ch04/344-skill.html) 中提到的"企业 AI 落地隐形 Tax"概念一致：看不见的合规成本往往被低估。
 
 ## 实践启示
 
@@ -162,10 +162,10 @@ Fable 5 是"有保护措施的 Mythos 级功能"，而非"无限制的 Mythos"�
 
 ## 相关实体
 
-- [Hermes Agent Skills Source Code Analysis Shuge](../ch04/512-hermes-agent-skills.html)
-- [Skill Rm Qwen Agent Skill Reward Model](../ch04/686-agent-skill.html)
+- [Hermes Agent Skills Source Code Analysis Shuge](../ch04/518-hermes-agent-skills.html)
+- [Skill Rm Qwen Agent Skill Reward Model](../ch04/595-agent-skill.html)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/084-claude-code.html)
-- [Skill Hub Organization Asset Winty](../ch04/340-skill.html)
+- [Skill Hub Organization Asset Winty](../ch04/344-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

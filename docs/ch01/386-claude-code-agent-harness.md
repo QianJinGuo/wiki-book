@@ -85,7 +85,7 @@ MCP 指令:         ~300 tokens
 
 **用户消息只占 0.04% 的上下文**——Agent 看到的 99.96% 是系统、规则、记忆、历史的组合。
 
-这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](../ch03/036-agent.html) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
+这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](../ch03/037-agent.html) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
 
 ### 5. 技能预算控制：1% 规则的设计哲学
 
@@ -116,7 +116,7 @@ Claude Code 通过 `isConcurrencySafe()` 标记控制并发执行：
 
 **关键工程细节**：工具可以修改后续上下文——有些工具返回"上下文修改函数"用于更新 `ToolUseContext`。并发批次先收集修改，整批完再统一应用；串行批次每个工具执行完立刻应用。**这一设计避免了并发冲突**。
 
-这与 [Factory Mission](../ch03/036-agent.html) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
+这与 [Factory Mission](../ch03/037-agent.html) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
 
 ### 7. 分层权限机制：4 层检查的设计取舍
 
@@ -182,7 +182,7 @@ Plan Mode 的本质是"权限系统里的状态切换"——技术上 Claude 仍
 
 **这一设计哲学揭示了 Agent 系统设计的一个深层原则**：**不要用权限禁锢 Agent，而要用行为引导**。完全禁止 Agent 做某些事会大幅降低其能力；通过提示词和行为约束引导它"先规划再执行"是更优雅的方案。
 
-这与 [Claude Managed Agents 企业自托管](../ch04/782-claude-managed-agents.html) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
+这与 [Claude Managed Agents 企业自托管](../ch04/612-claude-managed-agents.html) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
 
 ### 10. 终止原因的多样性：8 种退出路径
 
@@ -305,15 +305,15 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [Claude Code Harness 深度解析](../ch05/086-claude-code-harness.html)
 - [Claude Code Harness 深度理解](ch01/635-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [Agent 记忆系统工程实践](../ch03/036-agent.html)
+- [Agent 记忆系统工程实践](../ch03/037-agent.html)
 - [Harness Engineering Core Patterns](../ch05/092-harness-engineering.html)
 - [Harness 状态边界与失败闭环](../ch05/017-harness.html)
-- [Factory Mission Multi-Agent 系统](../ch03/036-agent.html)
-- [Claude Managed Agents 企业自托管](../ch04/782-claude-managed-agents.html)
+- [Factory Mission Multi-Agent 系统](../ch03/037-agent.html)
+- [Claude Managed Agents 企业自托管](../ch04/612-claude-managed-agents.html)
 - [OpenClaw 多 Agent 团队实践](../ch04/101-openclaw-multi-agent-team-practice-v2.html)
-- [OpenClaw 完全指南](../ch11/250-openclaw.html)
-- [OpenClaw 多智能体团队搭建经验](../ch11/250-openclaw.html)
-- [Headroom Context Compression](../ch03/036-agent.html)
+- [OpenClaw 完全指南](../ch11/251-openclaw.html)
+- [OpenClaw 多智能体团队搭建经验](../ch11/251-openclaw.html)
+- [Headroom Context Compression](../ch03/037-agent.html)
 - [AI Agent Harness 构建](ch01/1178-ai-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 

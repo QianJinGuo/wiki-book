@@ -754,7 +754,127 @@ PosterReward 的工程实现分为两条互补路径：
 
 ---
 
-## Ch17.007 Normalizing Trajectory Models
+## Ch17.007 LLaVA-OneVision-2：全帧率视频理解
+
+> 📊 Level ⭐⭐ | 10.4KB | `entities/llava-onevision-2-full-frame-rate-vlm.md`
+
+## 核心问题
+**视频被当作一组图片处理——巨大的浪费。**
+
+1. **算力浪费**：视频原本连续，相邻帧天然存在关系。但传统流程把视频解码成静态图片，连续结构被打散，模型用昂贵计算把关系重新学回来。
+2. **信息结构浪费**：视频编码器早已建模 I帧（完整空间上下文）、P帧（记录运动和残差变化）、运动向量、残差——描述哪些内容稳定不变、哪些内容发生了变化。但现有 VLM 先把这些结构全部解开，再让模型重新发现一遍。
+
+## 核心方案：OneVision-Encoder
+**思路：** 直接利用视频 codec 中已有的信息结构（I帧/P帧/运动向量/残差），构建更 compact 的 token 或表示，让本来就存在于视频里的运动、变化和连续关系直接传给模型。
+
+| 组件 | 说明 |
+|------|------|
+| 架构 | "视觉基座—projector—LLM"（LLaVA 延续） |
+| 视觉编码器 | OneVision-Encoder（24层 ViT） |
+| 位置编码 | 共享时间、高度、宽度三个维度 |
+| 视频输入策略 | 基于 codec 的密集视频输入 |
+| 训练框架 | 百度百舸 LoongForge |
+| 训练扩展 | 四阶段：30秒 → 10-15分钟长视频 |
+**Token 效率：约 1/8 推理成本。** 一秒 24 帧 = 2400 token；100万上下文窗口仅容纳约 7 分钟全帧率视频。
+
+## 为什么抽帧不够
+- 关键动作可能只持续极短时间，固定间隔抽帧可能刚好错过
+- 时序定位（全帧率更精准）需要知道事件何时开始、何时结束
+- 视频 Agent（剪辑 Agent）底层需要准确定位动作起点终点
+- Coding agent 表现更好是因为代码是高质量文本；视频 agent 面对长视频 + 密集时序 + 大量视觉冗余，难度完全不在一个量级
+
+## 分层部署路径
+```
+大模型冷启动（从无到有）
+    ↓
+中等模型快速迭代（2000卡→200卡，分钟级迭代版本）
+    ↓
+小模型规模化部署（长期低成本运行）
+```
+
+- **边缘哨兵**：现场解析原始视频为结构化信息，筛掉无效数据，传有价值信息给上级
+- **算法运营中心**：二次识别复核、报警管理、模型迭代、业务编排
+- **算法训练中心**：私有化部署到客户数据中心，数据不离开客户体系
+
+## 全帧率 vs 抽帧
+| | 抽帧 | 全帧率（OneVision-Encoder） |
+|---|---|---|
+| 关键动作定位 | 可能漏掉 | 精准捕获 |
+| 时序信息 | 丢失 | 完整保留 |
+| Token 成本 | 高（重复编码相似帧） | 降至约 1/8 |
+| 推理成本 | 线性增长 | 压缩冗余后高效 |
+
+## 具身智能 & 未来方向
+- **VLM → 具身主干**：VLM 高效处理连续视频 + 空间关系 + 目标变化 → 可能成为具身系统主干模型
+- **流式理解**：不等整个视频结束，边进边持续理解判断（监控、直播、交互式视频）
+- **理解生成一体**：图像/视频的理解和生成，目前往往是两套系统；理解是底座，底座足够好，上层的生成和编辑才有更高上限
+
+## 关键数字
+| 指标 | 数值 |
+|------|------|
+| 一小时视频帧数（24 FPS） | ~9万帧 |
+| 一秒视频 token 数 | ~2400 token |
+| 100万上下文窗口 | 仅约 7 分钟全帧率 |
+| Token 成本节省 | 约 **1/8** |
+| 视频理解扩展 | 30秒 → 10-15分钟 |
+| 中等模型成本下降 | 2000卡 → 200卡 |
+
+## 相关链接
+- GitHub: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2
+- 模型: https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
+- 技术报告: https://cdn.jsdelivr.net/gh/anxiangsir/ov2_asset@main/LLaVA_OneVision_2.pdf
+
+## 相关概念
+- LLaVA系列 — 视觉基座—projector—LLM 架构（实体不存在，待创建）
+- 视频理解 — 全帧率 vs 抽帧（实体不存在，待创建）
+- 视觉编码器 — OneVision-Encoder（实体不存在，待创建）
+- 具身智能 — VLM 成为具身大脑 backbone（实体不存在，待创建）
+
+## 深度分析
+**抽帧方案的隐性成本：省了 token，省不了信息损失。**
+
+固定间隔抽帧（如每秒1帧）是典型的"为了省 token 而引入偏差"的策略。当一个视频里关键动作只持续 3-5 帧时（24FPS 下不到 0.2 秒），固定间隔抽帧有极大概率完美错过。表面上看 token 成本降低了，但模型的"事件检测能力"也随之降低——这不是算法问题，是信息论问题：时序连续性被打散后，隐含的因果关系需要额外的计算才能重建，而且往往重建不完整。OneVision-Encoder 核心洞察是：视频 codec 已经把连续信息结构化建模好了，为什么不用？
+
+**Token 效率 1/8 的意义：不是压缩，是结构化复用。**
+
+1/8 的 Token 成本节省如果只是"更激进的帧间差异压缩"，那么代价一定是信息损失。但 OneVision-Encoder 的思路不同：它利用 I帧/P帧/运动向量/残差这些 codec 已有结构——这些都是视频压缩中已经做好的信息结构化表示，模型直接使用这些表示而不是重新从像素级特征中推导。这意味着压缩和结构化是一体的，不是先压缩再补救信息。Token 数量减少，但每个 token 携带的信息密度提高了。
+
+**100万上下文仅覆盖7分钟：这对实际应用意味着什么？**
+
+7分钟全帧率视频 ≈ 100万 token 输入给 LLM。这个数字表面看起来很小，但实际视频理解任务很少需要连续处理整段视频。以视频剪辑 Agent 为例：它的核心操作模式是"定位 → 分析 → 定位 → 分析"的循环，不是"一次性输入整段视频"。真正需要处理长视频的场景（如视频摘要、跨镜头分析）更可能采用分段处理 + 全局汇总的架构。100万 token 的限制影响的是单次处理上限，而不是整体系统能力。
+
+**分层部署架构的本质：不是"大模型→小模型"，而是"专家模型→通才模型"。**
+
+大模型冷启动 → 中模型快速迭代 → 小模型规模化，这条路径的内在逻辑不是"蒸馏压缩"，而是"角色分工"。大模型（30B+）负责从无到有的推理，发现视频中存在的模式；中模型（7B~13B）负责在已知模式下的快速决策；小模型（1B~3B）负责现场的结构化筛选，不传原帧，传"事件+时间戳+关键特征"。这三层模型针对的任务类型完全不同，是真正的 specialized pipeline，不只是规模的简单递减。
+
+## 相关链接
+- [[entities/llava-onevision-2-full-frame-rate-vlm]
+
+## 相关实体
+- [[entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o]
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
+
+## 实践启示
+**选型判断：你的场景是"理解"还是"定位"？**
+
+如果核心需求是"这段视频里发生了什么"（视频摘要、内容理解），抽帧 + VLM 的方案在大多数情况下已经够用，Token 成本也更低。如果核心需求是"动作 X 发生在视频的哪个精确时间点"（剪辑、监控告警、具身机器人），全帧率是刚需——这时候抽帧的错误率会直接影响任务完成质量。明确这个区别，再决定要不要上 OneVision-Encoder。
+
+**边缘部署：小模型在现场做的事是"筛"不是"判"。**
+
+边缘哨兵节点（1B~3B 模型）不应该做最终判断——它的职责是把原始视频压缩为"有意义的结构化事件"（时间戳、事件类型、置信度、关键帧索引），然后把结构化数据传给上级。这样做有两个好处：边缘带宽需求大幅降低；上级中心可以用更少的上下文 token 处理更多路视频。设计边缘→中心的通信协议时，应该传"事件描述对象"而不是"关键帧图片+时间戳"。
+
+**模型迭代策略：先在长视频上测准，再缩短到实用长度。**
+
+文章提到四阶段训练：30秒 → 10-15分钟。实际落地时，建议先用公开数据集（ActivityNet、YouCook2 等）验证模型在全帧率下的时序定位精度，达到基线后再针对自己的目标场景做微调。不要一上来就追求10分钟+的处理能力——先确保30秒级别精度可接受，再扩展上下文窗口长度。
+
+**多模态 Agent 开发者：视频理解 ≠ 视频生成，底座通用是优势。**
+
+LLaVA-OneVision-2 解决的是理解侧问题，而当前很多视频生成模型（如 Sora、Runway）解决的是生成侧问题。两者的底座技术路径不同，但理解是生成的上游——理解得越细，生成的约束条件越精确。未来如果出现"理解+生成一体化"的系统，高质量的视频理解底座（如 OneVision-Encoder）会是关键的 infrastructure 优势。多模态 Agent 开发者在选型时可以考虑这个趋势。
+
+---
+
+## Ch17.008 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/ntm-normalizing-trajectory-models.md`
 
@@ -841,7 +961,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ---
 
-## Ch17.008 Automatically redact PII in images with Amazon Nova
+## Ch17.009 Automatically redact PII in images with Amazon Nova
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/automatically-redact-pii-in-images-with-amazon-nova.md`
 
@@ -929,7 +1049,7 @@ Organizations processing large volumes of images (e.g., social media platforms, 
 
 ---
 
-## Ch17.009 MineExplorer: 多模态能力断层
+## Ch17.010 MineExplorer: 多模态能力断层
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/让ai离开温室走向动态世界mineexplorer揭示顶级多模态大模型被忽视的能力断层.md`
 
@@ -1006,7 +1126,7 @@ MineExplorer 的方法论本身也值得关注。团队使用 5 个专业 Agent 
 
 ---
 
-## Ch17.010 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
+## Ch17.011 小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow-xiaomi.md`
 
@@ -1088,126 +1208,6 @@ Daniel Povey 加入小米这件事本身具有标志性——一位定义了一�
 - [小米零售 AI 工程化](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-retail-ai-engineering-three-layer-practice.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/小米科学家再获重磅荣誉daniel-povey-当选-isca-fellow-xiaomi.md)
-
----
-
-## Ch17.011 LLaVA-OneVision-2：全帧率视频理解
-
-> 📊 Level ⭐⭐ | 9.3KB | `entities/llava-onevision-2-full-frame-rate-vlm.md`
-
-## 核心问题
-**视频被当作一组图片处理——巨大的浪费。**^[].md]
-
-1. **算力浪费**：视频原本连续，相邻帧天然存在关系。但传统流程把视频解码成静态图片，连续结构被打散，模型用昂贵计算把关系重新学回来。
-2. **信息结构浪费**：视频编码器早已建模 I帧（完整空间上下文）、P帧（记录运动和残差变化）、运动向量、残差——描述哪些内容稳定不变、哪些内容发生了变化。但现有 VLM 先把这些结构全部解开，再让模型重新发现一遍。
-
-## 核心方案：OneVision-Encoder
-**思路：** 直接利用视频 codec 中已有的信息结构（I帧/P帧/运动向量/残差），构建更 compact 的 token 或表示，让本来就存在于视频里的运动、变化和连续关系直接传给模型。^[].md]
-
-| 组件 | 说明 |
-|------|------|
-| 架构 | "视觉基座—projector—LLM"（LLaVA 延续） |
-| 视觉编码器 | OneVision-Encoder（24层 ViT） |
-| 位置编码 | 共享时间、高度、宽度三个维度 |
-| 视频输入策略 | 基于 codec 的密集视频输入 |
-| 训练框架 | 百度百舸 LoongForge |
-| 训练扩展 | 四阶段：30秒 → 10-15分钟长视频 |
-**Token 效率：约 1/8 推理成本。** 一秒 24 帧 = 2400 token；100万上下文窗口仅容纳约 7 分钟全帧率视频。^[].md]
-
-## 为什么抽帧不够
-- 关键动作可能只持续极短时间，固定间隔抽帧可能刚好错过
-- 时序定位（全帧率更精准）需要知道事件何时开始、何时结束
-- 视频 Agent（剪辑 Agent）底层需要准确定位动作起点终点
-- Coding agent 表现更好是因为代码是高质量文本；视频 agent 面对长视频 + 密集时序 + 大量视觉冗余，难度完全不在一个量级
-
-## 分层部署路径
-```
-大模型冷启动（从无到有）
-    ↓
-中等模型快速迭代（2000卡→200卡，分钟级迭代版本）
-    ↓
-小模型规模化部署（长期低成本运行）
-```
-
-- **边缘哨兵**：现场解析原始视频为结构化信息，筛掉无效数据，传有价值信息给上级
-- **算法运营中心**：二次识别复核、报警管理、模型迭代、业务编排
-- **算法训练中心**：私有化部署到客户数据中心，数据不离开客户体系
-
-## 全帧率 vs 抽帧
-| | 抽帧 | 全帧率（OneVision-Encoder） |
-|---|---|---|
-| 关键动作定位 | 可能漏掉 | 精准捕获 |
-| 时序信息 | 丢失 | 完整保留 |
-| Token 成本 | 高（重复编码相似帧） | 降至约 1/8 |
-| 推理成本 | 线性增长 | 压缩冗余后高效 |
-
-## 具身智能 & 未来方向
-- **VLM → 具身主干**：VLM 高效处理连续视频 + 空间关系 + 目标变化 → 可能成为具身系统主干模型
-- **流式理解**：不等整个视频结束，边进边持续理解判断（监控、直播、交互式视频）
-- **理解生成一体**：图像/视频的理解和生成，目前往往是两套系统；理解是底座，底座足够好，上层的生成和编辑才有更高上限
-
-## 关键数字
-| 指标 | 数值 |
-|------|------|
-| 一小时视频帧数（24 FPS） | ~9万帧 |
-| 一秒视频 token 数 | ~2400 token |
-| 100万上下文窗口 | 仅约 7 分钟全帧率 |
-| Token 成本节省 | 约 **1/8** |
-| 视频理解扩展 | 30秒 → 10-15分钟 |
-| 中等模型成本下降 | 2000卡 → 200卡 |
-
-## 相关链接
-- GitHub: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2
-- 模型: https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
-- 技术报告: https://cdn.jsdelivr.net/gh/anxiangsir/ov2_asset@main/LLaVA_OneVision_2.pdf
-
-## 相关概念
-- LLaVA系列 — 视觉基座—projector—LLM 架构（实体不存在，待创建）
-- 视频理解 — 全帧率 vs 抽帧（实体不存在，待创建）
-- 视觉编码器 — OneVision-Encoder（实体不存在，待创建）
-- 具身智能 — VLM 成为具身大脑 backbone（实体不存在，待创建）
-
-## 深度分析
-**抽帧方案的隐性成本：省了 token，省不了信息损失。**^[].md]
-
-固定间隔抽帧（如每秒1帧）是典型的"为了省 token 而引入偏差"的策略。当一个视频里关键动作只持续 3-5 帧时（24FPS 下不到 0.2 秒），固定间隔抽帧有极大概率完美错过。表面上看 token 成本降低了，但模型的"事件检测能力"也随之降低——这不是算法问题，是信息论问题：时序连续性被打散后，隐含的因果关系需要额外的计算才能重建，而且往往重建不完整。OneVision-Encoder 核心洞察是：视频 codec 已经把连续信息结构化建模好了，为什么不用？^[].md]
-
-**Token 效率 1/8 的意义：不是压缩，是结构化复用。**^[].md]
-
-1/8 的 Token 成本节省如果只是"更激进的帧间差异压缩"，那么代价一定是信息损失。但 OneVision-Encoder 的思路不同：它利用 I帧/P帧/运动向量/残差这些 codec 已有结构——这些都是视频压缩中已经做好的信息结构化表示，模型直接使用这些表示而不是重新从像素级特征中推导。这意味着压缩和结构化是一体的，不是先压缩再补救信息。Token 数量减少，但每个 token 携带的信息密度提高了。^[].md]
-
-**100万上下文仅覆盖7分钟：这对实际应用意味着什么？**^[].md]
-
-7分钟全帧率视频 ≈ 100万 token 输入给 LLM。这个数字表面看起来很小，但实际视频理解任务很少需要连续处理整段视频。以视频剪辑 Agent 为例：它的核心操作模式是"定位 → 分析 → 定位 → 分析"的循环，不是"一次性输入整段视频"。真正需要处理长视频的场景（如视频摘要、跨镜头分析）更可能采用分段处理 + 全局汇总的架构。100万 token 的限制影响的是单次处理上限，而不是整体系统能力。^[].md]
-
-**分层部署架构的本质：不是"大模型→小模型"，而是"专家模型→通才模型"。**^[].md]
-
-大模型冷启动 → 中模型快速迭代 → 小模型规模化，这条路径的内在逻辑不是"蒸馏压缩"，而是"角色分工"。大模型（30B+）负责从无到有的推理，发现视频中存在的模式；中模型（7B~13B）负责在已知模式下的快速决策；小模型（1B~3B）负责现场的结构化筛选，不传原帧，传"事件+时间戳+关键特征"。这三层模型针对的任务类型完全不同，是真正的 specialized pipeline，不只是规模的简单递减。^[].md]
-
-## 相关链接
-- [[entities/llava-onevision-2-full-frame-rate-vlm]
-
-## 相关实体
-- [[entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o]
-
-→ [[raw/articles/llava-onevision-2-full-frame-rate-vlm-glintlab.md|原文存档]
-
-## 实践启示
-**选型判断：你的场景是"理解"还是"定位"？**^[].md]
-
-如果核心需求是"这段视频里发生了什么"（视频摘要、内容理解），抽帧 + VLM 的方案在大多数情况下已经够用，Token 成本也更低。如果核心需求是"动作 X 发生在视频的哪个精确时间点"（剪辑、监控告警、具身机器人），全帧率是刚需——这时候抽帧的错误率会直接影响任务完成质量。明确这个区别，再决定要不要上 OneVision-Encoder。^[].md]
-
-**边缘部署：小模型在现场做的事是"筛"不是"判"。**^[].md]
-
-边缘哨兵节点（1B~3B 模型）不应该做最终判断——它的职责是把原始视频压缩为"有意义的结构化事件"（时间戳、事件类型、置信度、关键帧索引），然后把结构化数据传给上级。这样做有两个好处：边缘带宽需求大幅降低；上级中心可以用更少的上下文 token 处理更多路视频。设计边缘→中心的通信协议时，应该传"事件描述对象"而不是"关键帧图片+时间戳"。^[].md]
-
-**模型迭代策略：先在长视频上测准，再缩短到实用长度。**^[].md]
-
-文章提到四阶段训练：30秒 → 10-15分钟。实际落地时，建议先用公开数据集（ActivityNet、YouCook2 等）验证模型在全帧率下的时序定位精度，达到基线后再针对自己的目标场景做微调。不要一上来就追求10分钟+的处理能力——先确保30秒级别精度可接受，再扩展上下文窗口长度。^[].md]
-
-**多模态 Agent 开发者：视频理解 ≠ 视频生成，底座通用是优势。**^[].md]
-
-LLaVA-OneVision-2 解决的是理解侧问题，而当前很多视频生成模型（如 Sora、Runway）解决的是生成侧问题。两者的底座技术路径不同，但理解是生成的上游——理解得越细，生成的约束条件越精确。未来如果出现"理解+生成一体化"的系统，高质量的视频理解底座（如 OneVision-Encoder）会是关键的 infrastructure 优势。多模态 Agent 开发者在选型时可以考虑这个趋势。   ^[].md]
 
 ---
 
@@ -2007,23 +2007,23 @@ BeyondDrive 和 DriveFine 两篇论文都聚焦于一个被传统端到端方法
 
 ## Ch17.022 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
-> 📊 Level ⭐⭐⭐ | 11.6KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
+> 📊 Level ⭐⭐⭐ | 12.0KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
-> -> [[raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md|原文存档]
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
 
 ## 摘要
 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 ## 关键要点
-- [[raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md|原文存档]
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
 
 ## 相关实体
 
-- [[entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro|CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini 3.1 Pro]
-- [[entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了|语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？]
-- [[entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验|特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验]
+- [CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini 3.1 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](https://github.com/QianJinGuo/wiki/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
 
-- [[moc/vision-multimodal|MOC]
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 ### 「通才困境」的本质：多模态动态协同与博弈
 Omni2Sound 论文指出了一个被广泛低估的核心挑战：统一音频生成模型面临的核心问题，不是视觉与文本特征的简单线性叠加，而是**极具挑战的多模态动态协同与博弈过程**。
@@ -2039,14 +2039,14 @@ Omni2Sound 论文指出了一个被广泛低估的核心挑战：统一音频生
 此外，原生多模态大模型存在显著的**视觉偏置（Visual Bias）**——画面里出现静止的乐器或挥棒的指挥（实际并未发声），大模型也极易错误推断出对应的音乐；反之，对画面中看不见的真实音源（画外音），模型又容易直接忽略。
 
 ### 任务竞争的三层结构
-**第二，联合训练中固有的任务竞争。**^[].md]
+**第二，联合训练中固有的任务竞争。**
 
 - **跨任务竞争（Cross-task Competition）**：T2A（文本生音频）和 V2A（视频生音频）在联合优化时常面临相互牵制的局面，提升一方往往以牺牲另一方为代价。
 - **模态偏置（Intra-task Modality Bias）**：在处理 VT2A（图文联合生成）时，模型极易产生依赖单一模态的偏置现象。若过度依赖文本，生成的音频往往与画面动作脱节；若过度依赖视觉信息，在画外音场景时模型会忽略文本指令，产生生成幻觉。
 
 ### Omni2Sound 的破局思路：Less is More
 Omni2Sound 的核心思路在于：不过度依赖复杂的网络结构设计，而是通过**「高质量数据与渐进式训练」的底层方案**来打破通才困境。全篇仅采用标准的 Vanilla DiT 骨干，从数据源头、多任务调度以及客观评测三个维度进行协同设计。
-**SoundAtlas 数据集构建方法论：**^[].md]
+**SoundAtlas 数据集构建方法论：**
 
 团队设计了一套高效的多轮智能体流水线（Agentic Pipeline），构建了包含 47 万对高质量 V-A-T 联合对齐的数据集 SoundAtlas：
 1. **视觉到语言压缩（Vision-to-Language Compression）**：放弃直接输入原视频，利用视觉模型（如 Qwen-2.5-VL）先将视频画面"压缩"为精简的文本描述。这一设计不仅大幅削减视频 Token 成本，还将强烈的视觉刺激降维成辅助上下文，有效约束了大模型过度依赖画面产生的幻觉倾向。
@@ -2071,14 +2071,14 @@ Omni2Sound 最重要的实践启示是**「大道至简（Data & Strategy is all
 - 多模态数据的「语义冲突」问题需要从数据工程层面系统性解决，而非靠模型自行发现
 
 ### Agentic Pipeline 在数据标注中的高价值
-SoundAtlas 的智能体流水线展示了**多模型协作在数据标注领域的巨大效率提升**：^[].md]
+SoundAtlas 的智能体流水线展示了**多模型协作在数据标注领域的巨大效率提升**：
 
 - 轻量级模型负责基础任务，仅在复杂场景才升级到重推理模型
 - 5 倍成本降低的同时，质量优于人类专家标注
 - 这个「初高级 Agent 接力」模式可推广到任何需要高质量、大规模数据标注的场景
 
 ### 渐进式训练的三阶段设计原则
-三阶段渐进式训练解决了「直接联合训练」引发的任务竞争问题。 关键设计原则：^[].md]
+三阶段渐进式训练解决了「直接联合训练」引发的任务竞争问题。 关键设计原则：
 
 1. **先建立基础能力，再引入多任务**：T2A 预训练建立了稳健的音频生成先验，避免后续多任务学习中的灾难性遗忘
 2. **VT2A 作为语义桥梁**：高质量的图文联合数据在多任务协调中起到关键的「过渡」作用
@@ -2090,7 +2090,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 - **评测基准设计本身是研究的核心贡献**
 - 专门设计对抗性评测场景（画外音、BGM 合成子集）才能真正检验模型的鲁棒性
 - 现有评测往往只覆盖「正常情况」，忽略了真实场景中的模态缺失和语义冲突
-→ [[raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
 
 ---
 
@@ -2657,7 +2657,129 @@ DGAF-VSR 由淘天音视频技术团队开发，该团队长期服务于淘宝�
 
 ---
 
-## Ch17.028 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
+## Ch17.028 Normalizing Trajectory Models
+
+> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/normalizing-trajectory-models-v2.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/normalizing-trajectory-models-v2.md)
+
+## 摘要
+Normalizing Trajectory Models (NTM) 是由 Jiatao Gu 等人提出的新型扩散模型变体，旨在解决少步生成（few-step generation）场景下传统扩散模型假设失效的问题。传统扩散模型将采样分解为大量小步高斯去噪，这一假设在压缩到几步时崩溃。NTM 将每步 reverse 建模为 expressive conditional normalizing flow，保留精确似然训练。通过结合每步内的浅层可逆块与跨轨迹的深层并行预测器，NTM 在仅 4 步采样下即可匹配或超越强图像生成基线，同时保留对生成轨迹的精确似然计算能力。
+
+## 核心创新
+### 问题：少步生成的困境
+扩散模型的采样过程通常需要数十到数百步去噪步骤，这带来了显著的推理成本。现有少步方法（如 consistency models、distillation 技术）通过以下方式加速：
+
+- **Consistency Training**：强制不同噪声水平下的样本映射到同一直流
+- **Distillation**：从多步教师模型蒸馏到少步学生模型
+- **Adversarial Objectives**：引入对抗训练替代重建损失
+但这些方法都**牺牲了似然框架**——无法精确计算生成样本的似然，失去了基于似然进行模型选择、压缩评估等下游任务的能力。
+
+### 解决方案：NTM 架构
+NTM 的核心洞察是：**将每步 reverse process 建模为 normalizing flow**，而非传统扩散模型中的高斯去噪。
+**架构组成：**
+1. **浅层可逆块（Shallow Invertible Blocks）within each step**：每步内的转换用轻量级可逆网络建模，参数量少但表达能力足够
+2. **深层并行预测器（Deep Parallel Predictor）across the trajectory**：跨步之间共享一个深度网络预测去噪方向，实现高效信息传递
+3. **端到端可训练**：可从随机初始化训练，也可从预训练 flow-matching 模型初始化
+这种设计在每步内保持可逆性（支持精确似然计算），跨步间共享计算（保持效率）。
+
+### 自蒸馏：精确似然的多步利用
+NTM 的精确轨迹似然还支持一个独特能力：**自蒸馏（Self-Distillation）**。
+
+流程：
+1. 训练一个完整的 NTM 模型
+2. 用该模型自身的 score 训练一个轻量级去噪器
+3. 轻量去噪器可在 4 步内产生高质量样本
+这意味着 NTM 可以"自我压缩"——将复杂的多步 NTM 蒸馏为极简的少步采样器，同时保持高质量输出。
+
+## 技术细节
+### 与 Flow Matching 的关系
+NTM 可从预训练 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过插值噪声和真实数据预测向量场，而 NTM 将这个预测过程参数化为条件归一化流。
+
+### 似然精确性的意义
+精确似然（exact likelihood）对于以下应用至关重要：
+
+- **模型压缩评估**：直接比较不同模型的压缩效率
+- **生成质量度量**：不依赖 FID 等间接指标
+- **Bayesian model selection**：精确计算后验比近似方法更可靠
+- **Data compression**：精确似然直接对应压缩比
+这使得 NTM 在需要严格概率计数的场景（如压缩、异常检测）比其它少步扩散方法更有优势。
+
+### 训练稳定性
+传统 normalizing flow 的训练常面临数值不稳定问题。NTM 的设计通过以下方式缓解：
+
+- 浅层可逆块限制每步的复杂度，降低数值误差累积
+- 跨步并行预测器分担单步网络的优化压力
+- 支持从预训练模型初始化提供更好的初始点
+
+## 深度分析
+### 渐进式生成 vs. 单步生成
+当前主流加速扩散采样的方法可分为两类：
+1. **单步生成（One-step）**：consistency model、GAN-based method，生成质量与多步方法仍有差距
+2. **少步生成（Few-step）**：NTM、LCM、SDXL-Turbo等，在4-8步内达到可接受质量
+NTM 的定位是**保留完整似然框架的少步方法**。这一定位使其与单纯追求速度的方法（如 GAN-based）不同——速度不是唯一目标，**保持概率语义**同样重要。
+
+### 架构设计的权衡
+NTM 的"浅层每步 + 深层跨步"设计反映了一个基本权衡：
+
+- **每步可逆 = 精确似然**：但浅层网络限制单步表达能力
+- **跨步共享 = 效率**：深层网络捕获跨步依赖，但增加了训练复杂度
+这个权衡在实践中被证明是有效的——在 4 步采样下即可达到与数十步方法相当的质量。
+
+### 与 Consistency Model 的对比
+Consistency Model 通过强制 $f(x_t) = f(x_{t+1})$ 实现少步采样，本质上是将轨迹压缩到单一不动点。
+**NTM 的优势**：
+
+- 保留完整的轨迹分布而非单一代表点
+- 可以追溯生成过程（每一步都有明确概率）
+- 支持自蒸馏将复杂模型压缩为简单采样器
+**CM 的优势**：
+
+- 训练更简单（单一一致性损失）
+- 推理极快（1-2步）
+两者代表了不同的设计哲学：NTM 偏向"精确描述"，CM 偏向"实用速度"。
+
+### 归一化流的可逆性瓶颈
+Normalizing flow 的核心是通过一系列可逆变换实现精确似然计算。但可逆性要求网络输出维度不变且必须可逆，这限制了网络架构的选择。
+NTM 通过"浅层可逆块"缓解这一问题——每步只做轻量变换，用跨步的深层网络补充表达力。这是一种工程折中：在保持可逆性的同时尽量利用深度网络的表达能力。
+
+## 实践启示
+### 对于扩散模型研究
+NTM 开辟了一个新方向：**保留似然框架的少步扩散**。未来研究可以探索：
+
+1. **更激进的步数压缩**：4步已是SOTA，但是否有理论下限？
+2. **多模态扩展**：当前主要验证图像生成，是否可以扩展到视频、音频？
+3. **与attention机制的结合**：当前架构依赖并行预测器，是否可以引入更长程依赖？
+4. **条件生成控制**：精确似然是否可以帮助实现更好的条件控制（如 classifier-free guidance 的替代）？
+建议研究团队关注 NTM 的自蒸馏机制——这提供了一个将大模型能力压缩到小采样器的正规框架，而非依赖启发式 distillation。
+
+### 对于工程部署
+**适用场景**：
+
+- 对生成质量有严格要求（需要精确概率）
+- 需要少步推理但无法接受质量损失
+- 需要可追溯的生成过程（审计、调试）
+**部署建议**：
+
+- NTM 的精确似然特性非常适合**在线质量评估**——可以在不额外采样的情况下计算生成样本的似然
+- 自蒸馏得到的轻量采样器可以部署在边缘设备
+- 与预训练 flow-matching 模型的兼容性意味着可以**增量部署**——先部署 teacher NTM，再蒸馏部署轻量采样器
+**性能基准**：在文本到图像任务上，4步采样可匹配或超越现有基线。若部署场景需要 4-8 步采样，NTM 值得关注。
+
+### 对于概率机器学习
+NTM 展示了一种有价值的思路：**通过架构设计保留训练目标的语义**，而非仅仅追求结果指标。
+
+在需要严格概率语义的下游任务（如贝叶斯推断、变分推断、压缩），这一思路可能启发新的模型设计。
+
+特别是**自蒸馏**机制——让模型自己教自己——在其它领域（如强化学习中的 self-play、语言模型的 self-reward）也有类似应用。这个范式值得在更多场景探索。
+
+## 相关实体
+- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/normalizing-trajectory-models.md)
+- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/ntm-normalizing-trajectory-models.md)
+
+---
+
+## Ch17.029 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
@@ -2780,129 +2902,64 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ---
 
-## Ch17.029 Normalizing Trajectory Models
+## Ch17.030 Google's Gemini Omni video model surfaces ahead of I/O debut
 
-> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/normalizing-trajectory-models-v2.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
 
-> -> [[raw/articles/normalizing-trajectory-models-v2|原文存档]
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
 
-## 摘要
-Normalizing Trajectory Models (NTM) 是由 Jiatao Gu 等人提出的新型扩散模型变体，旨在解决少步生成（few-step generation）场景下传统扩散模型假设失效的问题。传统扩散模型将采样分解为大量小步高斯去噪，这一假设在压缩到几步时崩溃。NTM 将每步 reverse 建模为 expressive conditional normalizing flow，保留精确似然训练。通过结合每步内的浅层可逆块与跨轨迹的深层并行预测器，NTM 在仅 4 步采样下即可匹配或超越强图像生成基线，同时保留对生成轨迹的精确似然计算能力。
+## Summary
+> Score: 8×9=72
 
-## 核心创新
-### 问题：少步生成的困境
-扩散模型的采样过程通常需要数十到数百步去噪步骤，这带来了显著的推理成本。现有少步方法（如 consistency models、distillation 技术）通过以下方式加速：
-
-- **Consistency Training**：强制不同噪声水平下的样本映射到同一直流
-- **Distillation**：从多步教师模型蒸馏到少步学生模型
-- **Adversarial Objectives**：引入对抗训练替代重建损失
-但这些方法都**牺牲了似然框架**——无法精确计算生成样本的似然，失去了基于似然进行模型选择、压缩评估等下游任务的能力。
-
-### 解决方案：NTM 架构
-NTM 的核心洞察是：**将每步 reverse process 建模为 normalizing flow**，而非传统扩散模型中的高斯去噪。
-**架构组成：**
-1. **浅层可逆块（Shallow Invertible Blocks）within each step**：每步内的转换用轻量级可逆网络建模，参数量少但表达能力足够
-2. **深层并行预测器（Deep Parallel Predictor）across the trajectory**：跨步之间共享一个深度网络预测去噪方向，实现高效信息传递
-3. **端到端可训练**：可从随机初始化训练，也可从预训练 flow-matching 模型初始化
-这种设计在每步内保持可逆性（支持精确似然计算），跨步间共享计算（保持效率）。^[].md]
-
-### 自蒸馏：精确似然的多步利用
-NTM 的精确轨迹似然还支持一个独特能力：**自蒸馏（Self-Distillation）**。^[].md]
-
-流程：
-1. 训练一个完整的 NTM 模型
-2. 用该模型自身的 score 训练一个轻量级去噪器
-3. 轻量去噪器可在 4 步内产生高质量样本
-这意味着 NTM 可以"自我压缩"——将复杂的多步 NTM 蒸馏为极简的少步采样器，同时保持高质量输出。
-
-## 技术细节
-### 与 Flow Matching 的关系
-NTM 可从预训练 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过插值噪声和真实数据预测向量场，而 NTM 将这个预测过程参数化为条件归一化流。
-
-### 似然精确性的意义
-精确似然（exact likelihood）对于以下应用至关重要：^[].md]
-
-- **模型压缩评估**：直接比较不同模型的压缩效率
-- **生成质量度量**：不依赖 FID 等间接指标
-- **Bayesian model selection**：精确计算后验比近似方法更可靠
-- **Data compression**：精确似然直接对应压缩比
-这使得 NTM 在需要严格概率计数的场景（如压缩、异常检测）比其它少步扩散方法更有优势。^[].md]
-
-### 训练稳定性
-传统 normalizing flow 的训练常面临数值不稳定问题。NTM 的设计通过以下方式缓解：^[].md]
-
-- 浅层可逆块限制每步的复杂度，降低数值误差累积
-- 跨步并行预测器分担单步网络的优化压力
-- 支持从预训练模型初始化提供更好的初始点
-
-## 深度分析
-### 渐进式生成 vs. 单步生成
-当前主流加速扩散采样的方法可分为两类：
-1. **单步生成（One-step）**：consistency model、GAN-based method，生成质量与多步方法仍有差距
-2. **少步生成（Few-step）**：NTM、LCM、SDXL-Turbo等，在4-8步内达到可接受质量
-NTM 的定位是**保留完整似然框架的少步方法**。这一定位使其与单纯追求速度的方法（如 GAN-based）不同——速度不是唯一目标，**保持概率语义**同样重要。
-
-### 架构设计的权衡
-NTM 的"浅层每步 + 深层跨步"设计反映了一个基本权衡：^[].md]
-
-- **每步可逆 = 精确似然**：但浅层网络限制单步表达能力
-- **跨步共享 = 效率**：深层网络捕获跨步依赖，但增加了训练复杂度
-这个权衡在实践中被证明是有效的——在 4 步采样下即可达到与数十步方法相当的质量。^[].md]
-
-### 与 Consistency Model 的对比
-Consistency Model 通过强制 $f(x_t) = f(x_{t+1})$ 实现少步采样，本质上是将轨迹压缩到单一不动点。
-**NTM 的优势**：
-
-- 保留完整的轨迹分布而非单一代表点
-- 可以追溯生成过程（每一步都有明确概率）
-- 支持自蒸馏将复杂模型压缩为简单采样器
-**CM 的优势**：
-
-- 训练更简单（单一一致性损失）
-- 推理极快（1-2步）
-两者代表了不同的设计哲学：NTM 偏向"精确描述"，CM 偏向"实用速度"。^[].md]
-
-### 归一化流的可逆性瓶颈
-Normalizing flow 的核心是通过一系列可逆变换实现精确似然计算。但可逆性要求网络输出维度不变且必须可逆，这限制了网络架构的选择。
-NTM 通过"浅层可逆块"缓解这一问题——每步只做轻量变换，用跨步的深层网络补充表达力。这是一种工程折中：在保持可逆性的同时尽量利用深度网络的表达能力。
-
-## 实践启示
-### 对于扩散模型研究
-NTM 开辟了一个新方向：**保留似然框架的少步扩散**。未来研究可以探索：^[].md]
-
-1. **更激进的步数压缩**：4步已是SOTA，但是否有理论下限？
-2. **多模态扩展**：当前主要验证图像生成，是否可以扩展到视频、音频？
-3. **与attention机制的结合**：当前架构依赖并行预测器，是否可以引入更长程依赖？
-4. **条件生成控制**：精确似然是否可以帮助实现更好的条件控制（如 classifier-free guidance 的替代）？
-建议研究团队关注 NTM 的自蒸馏机制——这提供了一个将大模型能力压缩到小采样器的正规框架，而非依赖启发式 distillation。
-
-### 对于工程部署
-**适用场景**：
-
-- 对生成质量有严格要求（需要精确概率）
-- 需要少步推理但无法接受质量损失
-- 需要可追溯的生成过程（审计、调试）
-**部署建议**：
-
-- NTM 的精确似然特性非常适合**在线质量评估**——可以在不额外采样的情况下计算生成样本的似然
-- 自蒸馏得到的轻量采样器可以部署在边缘设备
-- 与预训练 flow-matching 模型的兼容性意味着可以**增量部署**——先部署 teacher NTM，再蒸馏部署轻量采样器
-**性能基准**：在文本到图像任务上，4步采样可匹配或超越现有基线。若部署场景需要 4-8 步采样，NTM 值得关注。
-
-### 对于概率机器学习
-NTM 展示了一种有价值的思路：**通过架构设计保留训练目标的语义**，而非仅仅追求结果指标。^[].md]
-
-在需要严格概率语义的下游任务（如贝叶斯推断、变分推断、压缩），这一思路可能启发新的模型设计。^[].md]
-
-特别是**自蒸馏**机制——让模型自己教自己——在其它领域（如强化学习中的 self-play、语言模型的 self-reward）也有类似应用。这个范式值得在更多场景探索。
+## 核心要点
+- Google Gemini Omni 视频模型在 Google I/O 2026 前夕泄露
+- 具备视频编辑能力：水印去除、对象替换、场景重写等
+- 采用与 Nano Banana 相同的策略：生成质量中等但编辑能力领先
+- 预计推出 Flash 和 Pro 两个版本
+- 将作为 Agent 提供，类似于 Deep Research
 
 ## 相关实体
-- [[entities/normalizing-trajectory-models|Normalizing Trajectory Models]
-- [[entities/ntm-normalizing-trajectory-models|Normalizing Trajectory Models]
+- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+## 深度分析
+**Gemini Omni 的战略定位：编辑优先于生成**
+
+从泄露的信息来看，Gemini Omni 的核心差异化策略并不是在原始视频生成质量上追求第一，而是将视频编辑能力作为主要卖点。早期测试者的反馈显示，在原始生成保真度上，Omni 似乎落后于 ByteDance 的 Seedance 2——观看者注意到电影质感方面落后于当前基准领导者。然而，在编辑功能方面：去除水印、在剪辑中交换对象、以及通过聊天指令重写场景，这些功能在首次公开展示中表现出乎意料地好。
+这种策略选择有其深刻的商业逻辑。视频生成领域的竞争已经非常激烈：OpenAI 的 Sora、Runway 的 Gen-3、Pika、ByteDance 的 Seedance 2 等都在 raw generation 质量上投入了大量资源。如果 Google 选择在同一维度上竞争，即使最终能够赶上，也需要大量的时间和资源，而且最终可能只是在他人定义的赛道上追逐。通过将重点放在视频编辑上，Google 开辟了一个相对蓝海的战场——视频编辑是一个生产工作流中的高频需求，而现有的 AI 编辑工具在精确度和自然度上仍有很大提升空间。
+**Nano Banana 模式的复制：从图像到视频**
+
+文章明确指出了一个关键模式：Gemini Omni 采用的策略与 Nano Banana 完全相同。Nano Banana 作为原生图像模型推出时，在生成评分上表现平平，但却在编辑排行榜上名列前茅，随后被升级为前沿图像系统。Google 似乎在视频领域复制这一策略：首先是中等水平的生成质量，但具有卓越的编辑能力，然后通过迭代改进提升生成质量，最终成为一个全面的视频系统。
+对于 AI 行业观察者来说，这意味着 Google 已经形成了一种可辨识的产品演进模式：不是一开始就在所有维度上追求第一，而是在某个特定维度上建立优势，然后通过快速迭代追赶其他维度。这种方法降低了风险——即使生成质量不能立即领先，编辑能力的差异化也能吸引有实际工作流需求的用户。
+**分层发布策略：Flash 和 Pro**
+
+泄露信息表明 Omni 将推出分层版本，很可能是 Flash 和 Pro 两个层级。当前流通的输出很可能是来自 Flash 层级的——这解释了为什么生成质量与前沿系统相比仍有差距。这种分层策略在 Google 的其他产品线中已经有成熟实践：Gemini Flash 提供轻量级、高速度、低成本的选项，Gemini Pro 提供更强大但更昂贵的选项。对于视频模型，Flash 版本可能针对日常用户和快速原型制作，而 Pro 版本则针对专业内容创作者和企业客户。
+**Agent 定位：不仅仅是生成**
+一个重要的泄露信息是，Gemini Omni 将被视为 Agent（类似于 Deep Research on AI Studio）提供，而不仅仅是生成工具。这意味着 Google 对 Omni 的定位不仅仅是"文生视频"或"视频编辑"，而是一个能够执行复杂多步骤任务的智能代理。例如，一个视频代理可能能够理解用户的指令（如"将这个视频中的产品特写镜头提取出来，加上品牌水印，并调整到 16:9 比例"），然后自主规划并执行这些步骤。这种定位与当前 AI 领域从"工具"向"代理"演进的大趋势完全一致。
+**时间窗口与 Google I/O 的战略考量**
+
+选择在 Google I/O（5月19-20日）前约一周进行泄露或 A/B 测试，这个时间窗口的策略意义值得玩味。一个短暂的会前窗口配合受控的泄露，给了 Google 在主题演讲前收集反馈和塑造叙事的空间。如果反馈积极，Google 可以在 I/O 上大力宣扬；如果有重大问题，还有时间进行调整。这种"测试-学习-迭代"的策略比过去的大爆炸式发布更加敏捷，也更符合互联网产品开发的最佳实践。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
+
+## 实践启示
+**1. AI 视频领域的竞争维度正在扩展**
+
+对于在视频 AI 领域寻找机会的团队，需要认识到"生成质量"不再是唯一的竞争维度。编辑、工作流集成、代理能力等正在成为新的差异化领域。如果你正在构建视频 AI 产品，考虑是否有机会在编辑或其他特定维度上建立优势，而不是简单地与现有系统在生成质量上竞争。
+**2. 关注 Google 的"迭代追赶"模式**
+
+Google 在 AI 产品上展示的模式是：先在某个维度上建立优势（即使其他维度暂时落后），然后快速迭代追赶。这对于评估 Google 的 AI 产品有重要启示：不应该根据首次发布的质量来判断其长期潜力。Nano Banana 的案例表明，Google 能够在发布后迅速提升产品质量。类似地，Gemini Omni 的生成质量可能会在 I/O 正式发布后快速提升。
+**3. 分层模型的策略值得学习**
+Gemini Omni 预计采用 Flash/Pro 分层策略，这对于需要控制成本和延迟的生产系统具有重要意义。Flash 版本可能适合作为日常使用和快速原型制作，而 Pro 版本可以用于对质量要求更高的专业场景。在构建自己的 AI 产品时，考虑类似的分层策略，为不同需求层次的用户提供适当的选项。
+**4. 视频 Agent 是下一个前沿**
+
+Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正在融合为一个更广泛的"视频 Agent"概念。这对开发者意味着：视频 AI 的下一个机会可能不在于"生成更好的视频"，而在于"构建能够理解、编辑、操作视频的智能代理"。对于有志于这一领域的团队，开始探索视频 Agent 的架构和用例可能会获得先发优势。
+**5. 生产工作流集成的价值**
+从泄露信息看，Gemini Omni 的核心差异化在于其编辑能力与聊天界面的深度集成。这意味着对于生产级视频应用，UI/UX 和工作流集成可能比底层模型能力更加关键。即使模型的原始生成能力不是第一流的，如果编辑体验足够流畅、自然，并且易于集成到现有工作流中，仍然可以赢得市场份额。建议在评估或构建视频 AI 产品时，将用户体验和工作流集成作为核心评估维度。
 
 ---
 
-## Ch17.030 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
+## Ch17.031 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
@@ -2999,7 +3056,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 ---
 
-## Ch17.031 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
+## Ch17.032 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/doubao-seed-2-lite.md`
 
@@ -3108,63 +3165,6 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 ## 相关实体
 - [Video Rag Chunking Strategy](https://github.com/QianJinGuo/wiki/blob/main/entities/video-rag-chunking-strategy.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
-
----
-
-## Ch17.032 Google's Gemini Omni video model surfaces ahead of I/O debut
-
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
-
-> -> [[raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut|原文存档]
-
-## Summary
-> Score: 8×9=72
-
-## 核心要点
-- Google Gemini Omni 视频模型在 Google I/O 2026 前夕泄露
-- 具备视频编辑能力：水印去除、对象替换、场景重写等
-- 采用与 Nano Banana 相同的策略：生成质量中等但编辑能力领先
-- 预计推出 Flash 和 Pro 两个版本
-- 将作为 Agent 提供，类似于 Deep Research
-
-## 相关实体
-- [[entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut|Google's Gemini Omni video model surfaces ahead of I/O debut]
-
-- [[moc/vision-multimodal|MOC]
-## 深度分析
-**Gemini Omni 的战略定位：编辑优先于生成**^[].md]
-
-从泄露的信息来看，Gemini Omni 的核心差异化策略并不是在原始视频生成质量上追求第一，而是将视频编辑能力作为主要卖点。早期测试者的反馈显示，在原始生成保真度上，Omni 似乎落后于 ByteDance 的 Seedance 2——观看者注意到电影质感方面落后于当前基准领导者。然而，在编辑功能方面：去除水印、在剪辑中交换对象、以及通过聊天指令重写场景，这些功能在首次公开展示中表现出乎意料地好。
-这种策略选择有其深刻的商业逻辑。视频生成领域的竞争已经非常激烈：OpenAI 的 Sora、Runway 的 Gen-3、Pika、ByteDance 的 Seedance 2 等都在 raw generation 质量上投入了大量资源。如果 Google 选择在同一维度上竞争，即使最终能够赶上，也需要大量的时间和资源，而且最终可能只是在他人定义的赛道上追逐。通过将重点放在视频编辑上，Google 开辟了一个相对蓝海的战场——视频编辑是一个生产工作流中的高频需求，而现有的 AI 编辑工具在精确度和自然度上仍有很大提升空间。
-**Nano Banana 模式的复制：从图像到视频**^[].md]
-
-文章明确指出了一个关键模式：Gemini Omni 采用的策略与 Nano Banana 完全相同。Nano Banana 作为原生图像模型推出时，在生成评分上表现平平，但却在编辑排行榜上名列前茅，随后被升级为前沿图像系统。Google 似乎在视频领域复制这一策略：首先是中等水平的生成质量，但具有卓越的编辑能力，然后通过迭代改进提升生成质量，最终成为一个全面的视频系统。
-对于 AI 行业观察者来说，这意味着 Google 已经形成了一种可辨识的产品演进模式：不是一开始就在所有维度上追求第一，而是在某个特定维度上建立优势，然后通过快速迭代追赶其他维度。这种方法降低了风险——即使生成质量不能立即领先，编辑能力的差异化也能吸引有实际工作流需求的用户。
-**分层发布策略：Flash 和 Pro**^[].md]
-
-泄露信息表明 Omni 将推出分层版本，很可能是 Flash 和 Pro 两个层级。当前流通的输出很可能是来自 Flash 层级的——这解释了为什么生成质量与前沿系统相比仍有差距。这种分层策略在 Google 的其他产品线中已经有成熟实践：Gemini Flash 提供轻量级、高速度、低成本的选项，Gemini Pro 提供更强大但更昂贵的选项。对于视频模型，Flash 版本可能针对日常用户和快速原型制作，而 Pro 版本则针对专业内容创作者和企业客户。
-**Agent 定位：不仅仅是生成**
-一个重要的泄露信息是，Gemini Omni 将被视为 Agent（类似于 Deep Research on AI Studio）提供，而不仅仅是生成工具。这意味着 Google 对 Omni 的定位不仅仅是"文生视频"或"视频编辑"，而是一个能够执行复杂多步骤任务的智能代理。例如，一个视频代理可能能够理解用户的指令（如"将这个视频中的产品特写镜头提取出来，加上品牌水印，并调整到 16:9 比例"），然后自主规划并执行这些步骤。这种定位与当前 AI 领域从"工具"向"代理"演进的大趋势完全一致。
-**时间窗口与 Google I/O 的战略考量**^[].md]
-
-选择在 Google I/O（5月19-20日）前约一周进行泄露或 A/B 测试，这个时间窗口的策略意义值得玩味。一个短暂的会前窗口配合受控的泄露，给了 Google 在主题演讲前收集反馈和塑造叙事的空间。如果反馈积极，Google 可以在 I/O 上大力宣扬；如果有重大问题，还有时间进行调整。这种"测试-学习-迭代"的策略比过去的大爆炸式发布更加敏捷，也更符合互联网产品开发的最佳实践。
-
-→ [[raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md|原文存档]
-
-## 实践启示
-**1. AI 视频领域的竞争维度正在扩展**^[].md]
-
-对于在视频 AI 领域寻找机会的团队，需要认识到"生成质量"不再是唯一的竞争维度。编辑、工作流集成、代理能力等正在成为新的差异化领域。如果你正在构建视频 AI 产品，考虑是否有机会在编辑或其他特定维度上建立优势，而不是简单地与现有系统在生成质量上竞争。
-**2. 关注 Google 的"迭代追赶"模式**^[].md]
-
-Google 在 AI 产品上展示的模式是：先在某个维度上建立优势（即使其他维度暂时落后），然后快速迭代追赶。这对于评估 Google 的 AI 产品有重要启示：不应该根据首次发布的质量来判断其长期潜力。Nano Banana 的案例表明，Google 能够在发布后迅速提升产品质量。类似地，Gemini Omni 的生成质量可能会在 I/O 正式发布后快速提升。
-**3. 分层模型的策略值得学习**
-Gemini Omni 预计采用 Flash/Pro 分层策略，这对于需要控制成本和延迟的生产系统具有重要意义。Flash 版本可能适合作为日常使用和快速原型制作，而 Pro 版本可以用于对质量要求更高的专业场景。在构建自己的 AI 产品时，考虑类似的分层策略，为不同需求层次的用户提供适当的选项。
-**4. 视频 Agent 是下一个前沿**^[].md]
-
-Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正在融合为一个更广泛的"视频 Agent"概念。这对开发者意味着：视频 AI 的下一个机会可能不在于"生成更好的视频"，而在于"构建能够理解、编辑、操作视频的智能代理"。对于有志于这一领域的团队，开始探索视频 Agent 的架构和用例可能会获得先发优势。
-**5. 生产工作流集成的价值**
-从泄露信息看，Gemini Omni 的核心差异化在于其编辑能力与聊天界面的深度集成。这意味着对于生产级视频应用，UI/UX 和工作流集成可能比底层模型能力更加关键。即使模型的原始生成能力不是第一流的，如果编辑体验足够流畅、自然，并且易于集成到现有工作流中，仍然可以赢得市场份额。建议在评估或构建视频 AI 产品时，将用户体验和工作流集成作为核心评估维度。
 
 ---
 
@@ -3810,7 +3810,70 @@ Compression only matters if the model remains useful. We evaluated Bonsai Image 
 
 ---
 
-## Ch17.041 火山引擎 RTM：超低延时直播技术
+## Ch17.041 Normalizing Trajectory Models
+
+> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/normalizing-trajectory-models.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/normalizing-trajectory-models-v2.md)
+
+## 摘要
+Normalizing Trajectory Models (NTM) 是 Jiatao Gu 等人于 2026 年 5 月提交至 arXiv 的新型扩散模型变体，专注于解决少步生成（few-step generation）场景下传统扩散模型假设失效的核心问题。传统扩散模型将采样分解为大量小步高斯去噪——这一假设在生成被压缩至少数几步时物理上不成立。NTM 的核心创新在于：将每一步 reverse 过程建模为 expressive conditional normalizing flow，并通过精确似然训练实现端到端优化。在文生图基准上，NTM 仅用 4 步采样即可匹配或超越强基线，同时唯一保留对生成轨迹的精确似然计算能力。
+
+本文于 2026 年 5 月 8 日提交至 arXiv，作者团队来自 Apple ML Research。
+
+## 背景问题：少步生成的困境
+扩散模型（DDPM、Flow Matching 等）的采样通常需要数十至数百步去噪，导致推理成本高昂。现有的少步加速方法分为三类：
+
+- **Distillation（蒸馏）**：将多步教师模型的知识蒸馏至少步学生模型，但训练不稳定且需要大规模数据
+- **Consistency Training（一致性训练）**：强制不同噪声水平下的样本映射至同一直流，核心思路接近 consistency model，但牺牲了似然框架
+- **Adversarial Objectives（对抗目标）**：引入 GAN式判别器提升少步质量，但失去精确似然，无法进行概率评估
+上述方法有一个共同缺陷：**均放弃了似然框架**，这在压缩评估、异常检测、模型选择等下游任务中是致命的。
+
+## 核心创新
+### 条件归一化流建模每步 Reverse 过程
+NTM 的核心架构决策是将每步 reverse 去噪过程建模为**条件归一化流（Conditional Normalizing Flow）**。归一化流通过可逆变换实现精确似然计算，但传统上每步独立建模时表达能力受限。NTM 的解法是：
+
+- **每步内（within-step）**：使用浅层可逆（invertible）块，保证该步内的精确似然可计算
+- **跨步（across-step）**：引入深层并行预测器，捕捉整个生成轨迹上的依赖关系
+这种"浅层可逆 + 深层跨步"的设计在表达能力和计算效率之间取得了工程折中：每步只做轻量变换，用跨步的深度网络补充表达力，避免了深层可逆网络的高计算成本。
+
+### 精确轨迹似然与自蒸馏
+NTM 的精确轨迹似然（exact trajectory likelihood）使其天然支持**自蒸馏（self-distillation）**：一个轻量级去噪器可以在 NTM 模型自身的 score 基础上进行微调，产出高质量 4 步采样结果。这意味着 NTM 可以"自我压缩"——无需外部多步教师模型，自己教自己完成少步化。
+
+### 预训练初始化
+NTM 支持从预训练的 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过线性插值噪声和真实数据预测向量场，NTM 将这一线性预测过程参数化为条件归一化流，从线性轨迹出发逐步学习更复杂的反转动态。这一特性显著加速了 NTM 的收敛。
+
+## 深度分析
+### 架构哲学：精确描述 vs. 实用速度
+NTM 的定位是**保留完整似然框架的少步方法**，这使其与单纯追求速度的方法（GAN-based、adversarial distillation）本质不同。速度不是唯一目标；**保持概率语义**——即能够精确计算 p(x|z)——同样重要。在需要严格概率计数的场景（如数据压缩、异常检测、生成质量评估），NTM 的优势是其他少步方法无法替代的。
+
+### 与 Consistency Models 的本质区别
+Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致来实现少步化，本质上是一种隐式的蒸馏，丢失了似然信息。NTM 保留了精确似然，可以进行困惑度（perplexity）计算，这使得两种方法面向不同的应用场景：CM 适合对质量要求极高、对概率评估无需求的场景；NTM 适合需要概率输出的场景。
+
+### 少步化的理论基础
+传统扩散模型的"多步小步"假设在数学上对应于对 score 函数进行 Euler-Maruyama 积分。当步数极少时，积分误差主导，输出质量崩溃。NTM 通过学习每步的完整条件归一化流绕过了这一积分近似——不再依赖"小步累积"，而是直接学习粗粒度的条件变换。这在理论上解释了为什么 NTM 在 4 步下仍能保持高质量，也为进一步压缩至 2-3 步提供了方向。
+
+## 实践启示
+### 部署建议
+- 若部署场景需要 **4-8 步采样**，NTM 值得关注——在步数预算内提供精确似然输出
+- 自蒸馏机制提供了一个将大模型能力压缩到小采样器的**正规框架**，而非依赖启发式 distillation，适合需要可控压缩比的团队
+- NTM 可从预训练 flow-matching 模型热启，若已有 Flow Matching 部署基础设施，迁移成本较低
+
+### 研究方向
+- **其他领域的自蒸馏**：自蒸馏机制在强化学习（self-play）、语言模型（self-reward）中有类似应用，NTM 将这一范式引入扩散模型，值得在视频生成、3D 生成等领域探索
+- **轨迹级概率**：精确轨迹似然使得在生成轨迹级别而非样本级别进行评估成为可能，这对研究扩散模型的隐式偏差（implicit bias）有重要价值
+
+### 注意事项
+- 浅层可逆块的表达能力是否足够支撑复杂任务（如高分辨率文生图）仍需更大规模验证
+- 4 步采样的质量上限是否接近其实用上限，以及更多步数（8-16）时是否仍有优势
+
+## 相关实体
+- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/normalizing-trajectory-models-v2.md)
+- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/ntm-normalizing-trajectory-models.md)
+
+---
+
+## Ch17.042 火山引擎 RTM：超低延时直播技术
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
 
@@ -3885,69 +3948,6 @@ ABR 不只是简单的码率切换机制，而是服务端和客户端协同的�
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch17.042 Normalizing Trajectory Models
-
-> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/normalizing-trajectory-models.md`
-
-> -> [[raw/articles/normalizing-trajectory-models-v2|原文存档]
-
-## 摘要
-Normalizing Trajectory Models (NTM) 是 Jiatao Gu 等人于 2026 年 5 月提交至 arXiv 的新型扩散模型变体，专注于解决少步生成（few-step generation）场景下传统扩散模型假设失效的核心问题。传统扩散模型将采样分解为大量小步高斯去噪——这一假设在生成被压缩至少数几步时物理上不成立。NTM 的核心创新在于：将每一步 reverse 过程建模为 expressive conditional normalizing flow，并通过精确似然训练实现端到端优化。在文生图基准上，NTM 仅用 4 步采样即可匹配或超越强基线，同时唯一保留对生成轨迹的精确似然计算能力。^[].md]
-
-本文于 2026 年 5 月 8 日提交至 arXiv，作者团队来自 Apple ML Research。^[].md]
-
-## 背景问题：少步生成的困境
-扩散模型（DDPM、Flow Matching 等）的采样通常需要数十至数百步去噪，导致推理成本高昂。现有的少步加速方法分为三类：^[].md]
-
-- **Distillation（蒸馏）**：将多步教师模型的知识蒸馏至少步学生模型，但训练不稳定且需要大规模数据
-- **Consistency Training（一致性训练）**：强制不同噪声水平下的样本映射至同一直流，核心思路接近 consistency model，但牺牲了似然框架
-- **Adversarial Objectives（对抗目标）**：引入 GAN式判别器提升少步质量，但失去精确似然，无法进行概率评估
-上述方法有一个共同缺陷：**均放弃了似然框架**，这在压缩评估、异常检测、模型选择等下游任务中是致命的。^[].md]
-
-## 核心创新
-### 条件归一化流建模每步 Reverse 过程
-NTM 的核心架构决策是将每步 reverse 去噪过程建模为**条件归一化流（Conditional Normalizing Flow）**。归一化流通过可逆变换实现精确似然计算，但传统上每步独立建模时表达能力受限。NTM 的解法是：^[].md]
-
-- **每步内（within-step）**：使用浅层可逆（invertible）块，保证该步内的精确似然可计算
-- **跨步（across-step）**：引入深层并行预测器，捕捉整个生成轨迹上的依赖关系
-这种"浅层可逆 + 深层跨步"的设计在表达能力和计算效率之间取得了工程折中：每步只做轻量变换，用跨步的深度网络补充表达力，避免了深层可逆网络的高计算成本。^[].md]
-
-### 精确轨迹似然与自蒸馏
-NTM 的精确轨迹似然（exact trajectory likelihood）使其天然支持**自蒸馏（self-distillation）**：一个轻量级去噪器可以在 NTM 模型自身的 score 基础上进行微调，产出高质量 4 步采样结果。这意味着 NTM 可以"自我压缩"——无需外部多步教师模型，自己教自己完成少步化。^[].md]
-
-### 预训练初始化
-NTM 支持从预训练的 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过线性插值噪声和真实数据预测向量场，NTM 将这一线性预测过程参数化为条件归一化流，从线性轨迹出发逐步学习更复杂的反转动态。这一特性显著加速了 NTM 的收敛。^[].md]
-
-## 深度分析
-### 架构哲学：精确描述 vs. 实用速度
-NTM 的定位是**保留完整似然框架的少步方法**，这使其与单纯追求速度的方法（GAN-based、adversarial distillation）本质不同。速度不是唯一目标；**保持概率语义**——即能够精确计算 p(x|z)——同样重要。在需要严格概率计数的场景（如数据压缩、异常检测、生成质量评估），NTM 的优势是其他少步方法无法替代的。^[].md]
-
-### 与 Consistency Models 的本质区别
-Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致来实现少步化，本质上是一种隐式的蒸馏，丢失了似然信息。NTM 保留了精确似然，可以进行困惑度（perplexity）计算，这使得两种方法面向不同的应用场景：CM 适合对质量要求极高、对概率评估无需求的场景；NTM 适合需要概率输出的场景。^[].md]
-
-### 少步化的理论基础
-传统扩散模型的"多步小步"假设在数学上对应于对 score 函数进行 Euler-Maruyama 积分。当步数极少时，积分误差主导，输出质量崩溃。NTM 通过学习每步的完整条件归一化流绕过了这一积分近似——不再依赖"小步累积"，而是直接学习粗粒度的条件变换。这在理论上解释了为什么 NTM 在 4 步下仍能保持高质量，也为进一步压缩至 2-3 步提供了方向。^[].md]
-
-## 实践启示
-### 部署建议
-- 若部署场景需要 **4-8 步采样**，NTM 值得关注——在步数预算内提供精确似然输出
-- 自蒸馏机制提供了一个将大模型能力压缩到小采样器的**正规框架**，而非依赖启发式 distillation，适合需要可控压缩比的团队
-- NTM 可从预训练 flow-matching 模型热启，若已有 Flow Matching 部署基础设施，迁移成本较低
-
-### 研究方向
-- **其他领域的自蒸馏**：自蒸馏机制在强化学习（self-play）、语言模型（self-reward）中有类似应用，NTM 将这一范式引入扩散模型，值得在视频生成、3D 生成等领域探索
-- **轨迹级概率**：精确轨迹似然使得在生成轨迹级别而非样本级别进行评估成为可能，这对研究扩散模型的隐式偏差（implicit bias）有重要价值
-
-### 注意事项
-- 浅层可逆块的表达能力是否足够支撑复杂任务（如高分辨率文生图）仍需更大规模验证
-- 4 步采样的质量上限是否接近其实用上限，以及更多步数（8-16）时是否仍有优势
-
-## 相关实体
-- [[entities/normalizing-trajectory-models-v2|Normalizing Trajectory Models]
-- [[entities/ntm-normalizing-trajectory-models|Normalizing Trajectory Models]
 
 ---
 

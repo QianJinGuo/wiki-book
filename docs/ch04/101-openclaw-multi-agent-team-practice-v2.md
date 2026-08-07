@@ -294,11 +294,11 @@ subagents: {
 - agent-claude-code — Claude Code 集成
 
 ## 相关实体
-- [Hermes Agent Memory System](../ch03/102-hermes-agent.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1205-openclaw-agent.html)
+- [Hermes Agent Memory System](../ch03/098-hermes-agent.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1206-openclaw-agent.html)
 - [Hiclaw V110 K8S Hermes Worker](../ch01/292-hermes.html)
-- [Openclaw Multi 2](../ch11/250-openclaw.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch04/640-amazon-bedrock-agentcore.html)
+- [Openclaw Multi 2](../ch11/251-openclaw.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch04/643-amazon-bedrock-agentcore.html)
 
 ---
 

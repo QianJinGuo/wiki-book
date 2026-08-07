@@ -32,7 +32,7 @@ AutoCLI 是一个用 Rust 实现的高速、内存安全的命令行网页信息
 - **云端增强**：AutoCLI.ai 加持
 
 ## autocli-skill
-专为 ClaudeCode / [OpenCLI](ch03/094-opencli.html) / [Hermes-Agent](ch03/102-hermes-agent.html) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
+专为 ClaudeCode / [OpenCLI](ch03/094-opencli.html) / [Hermes-Agent](ch03/098-hermes-agent.html) 设计的 Skill，让 AI Agent 能够获取整个互联网的信息、抓取任意网页内容。
 
 ## 深度分析
 ### 定位与优势
@@ -57,7 +57,7 @@ autocli-skill（591 stars）作为 AutoCLI 的 AI Agent 接口层，其设计目
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md) — OpenCLI / CLI-Anything / AutoCLI / AgentBrowser 四项目对比
 
 ## 相关实体
-- [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 
 ---

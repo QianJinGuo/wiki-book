@@ -59,7 +59,7 @@
 
 ## 相关实体
 
-- [A2RD Agentic Diffusion](../ch04/289-agentic.html)
+- [A2RD Agentic Diffusion](../ch04/722-agentic.html)
 - [Agent Architecture Harness](../ch05/017-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一步生成sota也不够何恺明团队漂移模型遭icml拒稿.md)

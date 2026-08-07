@@ -121,7 +121,7 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 ### 4. 多 Agent 协作中的工具标准化
 在  和 CLI-Anything 的生态中，多个 Agent 协同时面临的挑战是工具的一致性问题。标准化是解决协作复杂度的关键——当所有 Agent 都通过统一的 SKILL 接口调用工具时，工具的提供方无需感知调用者是哪个 Agent。
 
-## 与 [Hermes-Agent](ch03/102-hermes-agent.html) 的关系
+## 与 [Hermes-Agent](ch03/098-hermes-agent.html) 的关系
  支持通过 Skill 机制调用外部 CLI 工具，CLI-Anything 正是此类工具的重要来源之一。
 
 ## Related
@@ -132,7 +132,7 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 
 ---
 

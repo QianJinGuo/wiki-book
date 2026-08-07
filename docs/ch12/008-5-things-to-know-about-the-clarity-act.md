@@ -2,34 +2,34 @@
 
 ## Ch12.008 5 Things to Know about the CLARITY Act
 
-> 📊 Level ⭐ | 6.3KB | `entities/clarity-act-5-things.md`
+> 📊 Level ⭐ | 6.5KB | `entities/clarity-act-5-things.md`
 
-> -> [[raw/articles/clarity-act-5-things.md|原文存档]
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clarity-act-5-things.md)
 
 ## 核心要点
 - value=7, confidence=8, product=56
 - Timely overview of CLARITY Act
-→ [[raw/articles/clarity-act-5-things.md|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clarity-act-5-things.md)
 
 ## 深度分析
-**1. CLARITY Act 的核心使命：终结十年数字资产监管真空**^[].md]
+**1. CLARITY Act 的核心使命：终结十年数字资产监管真空**
 
 本文揭示的 CLARITY Act 最核心的背景是：数字资产（从 token 到稳定币再到 AI 驱动金融系统）的监管框架在美国已经悬而未决超过十年。这期间，SEC、CFTC、州级监管机构之间的管辖争议导致大量合规资源浪费在「不确定哪些规则适用」上，而非实际保护消费者。
 CLARITY Act 的出现是试图做一件简单但关键的事：**明确哪个 token 在什么时候属于证券（SEC 管辖）、什么时候属于商品（CFTC 管辖）、什么时候是支付工具（货币监理署或美联储管辖）**。这个边界的确立将直接影响交易所和平台如何运营、什么信息需要披露、以及监管成本由谁承担。
-**2. 「收益」（Yield）争议揭示的深层结构性问题**^[].md]
+**2. 「收益」（Yield）争议揭示的深层结构性问题**
 
 文章指出稳定币能否支付「收益」是银行和加密公司之间的主要战场。这个争议的本质不是「收益好不好」，而是：
 
 - **银行体系路径依赖**：如果稳定币存款能获得收益，它在功能上就成为了货币市场基金的竞争品，可能引发存款从传统银行向稳定币转移（「稳定币化」）
 - **监管套利问题**：如果一个数字资产提供利息，它在监管意义上可能被视为证券，但现有的证券框架并未针对这类混合产品设计
 CLARITY Act 的策略是**间接调控**：不直接说「稳定币不能提供收益」，而是通过证券法框架让「提供收益的数字资产」自动落入 SEC 管辖，间接改变了发行人的激励结构。这种「框架归属」而非「直接禁止」的方式，是美国立法者常用的路径依赖。
-**3. 地缘金融竞争是推动立法加速的真正动力**^[].md]
+**3. 地缘金融竞争是推动立法加速的真正动力**
 
 文章引用了一个关键论点：欧洲、香港、阿联酋、新加坡都已经推出了数字资产框架，「如果美国不建立监管护栏，银行、金融科技公司和加密企业在美国创新会觉得不安全」。
 这说明 CLARITY Act 的推动力不仅是国内监管完善的需求，更是**国际监管竞争的压力**。当主要金融中心都在建立清晰框架时，监管真空反而会成为人才和资本流出的原因。这是理解美国近期一系列数字资产立法动作（GENIUS Act、CLARITY Act 等几乎同时出现）的核心背景。
-**4. 「即使通过，争论也远未结束」揭示的治理缺口**^[].md]
+**4. 「即使通过，争论也远未结束」揭示的治理缺口**
 
-文章末尾列举了 CLARITY Act 未解决的四个核心问题：^[].md]
+文章末尾列举了 CLARITY Act 未解决的四个核心问题：
 
 - **AML（反洗钱）保护**：数字资产交易所有义务进行 KYC/AML 检查，但 DeFi 协议在技术上无法做到这一点，CLARITY Act 对去中心化协议的覆盖存在法律灰色地带
 - **DeFi 监管**：谁来对去中心化协议负责？开发者？节点运营者？代币持有者？现有框架没有答案
@@ -47,14 +47,14 @@ CLARITY Act 的策略是**间接调控**：不直接说「稳定币不能提供�
 5. **国际框架互认机制应成为 CLARITY Act 的后续重点**：当前 CLARITY Act 主要处理美国国内管辖，但数字资产天然是跨境运作的。建立与欧盟 MiCA、香港 VASP 牌照等主要框架的互认机制，可以避免重复合规成本，同时保持监管有效性。
 **对于投资者和用户：**
 6. **理解「监管明确」对资产价值的双向影响**：CLARITY Act 的通过可能同时带来：(a) 纳入监管框架的合规代币价值提升（因为监管确定性降低了风险）；(b) 被认定为证券的代币面临抛售压力。投资者需要根据持仓结构提前调整。
-→ [[raw/articles/clarity-act-5-things.md|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clarity-act-5-things.md)
 
 ## 相关实体
-- [[entities/5-things-to-know-about-the-clarity-act|5 Things to Know about the CLARITY Act]
+- [5 Things to Know about the CLARITY Act](../ch03/015-5-things-to-know-about-the-clarity-act.html)
 
 ---
 ## 关联
-- 相关概念: [[concepts/harness-engineering-framework|Harness Engineering]
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

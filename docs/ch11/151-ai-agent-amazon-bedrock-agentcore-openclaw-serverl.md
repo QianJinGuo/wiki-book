@@ -2,21 +2,21 @@
 
 ## Ch11.151 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇
 
-> 📊 Level ⭐⭐ | 8.1KB | `entities/openclaw-multi-6.md`
+> 📊 Level ⭐⭐ | 8.2KB | `entities/openclaw-multi-6.md`
 
-> -> [[raw/articles/openclaw-multi-6.md|原文存档]
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-6.md)
 
 ## 标签
 #aws #bedrock #agentcore #openclaw #serverless
 **原文**: [[entities/openclaw-multi-6](raw/articles/openclaw-multi-6.md)
 
 ## 相关实体
-- [[entities/openclaw-multi-3|OpenClaw多租户迁移: Phase 1 基础设施部署]
-- [[entities/openclaw-multi-agent-team-practice-v2|龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验]
-- [[entities/openclaw-multi-5|AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第五篇]
-- [[entities/using-amazon-bedrock-agentcore-openclaw-multi-1|AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客]
-- [[entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice|基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客]
-- [[entities/using-amazon-bedrock-agentcore-openclaw-multi-4|AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客]
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/251-openclaw.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/101-openclaw-multi-agent-team-practice-v2.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第五篇](ch11/251-openclaw.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/643-amazon-bedrock-agentcore.html)
+- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](../ch04/430-ai-agent.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/643-amazon-bedrock-agentcore.html)
 
 ## 摘要
 基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第六篇：清理资源与总结展望，删除部署资源、迁移前后对比回顾，以及进一步探索方向。
@@ -61,7 +61,7 @@ CDK Stack 删除后，S3/KMS/DynamoDB 等设置了 RETAIN 的资源会保留下�
 - **Replatform 执念**：明明需要重新设计的部分，硬要用迁移的方式
 
 ### 2. Per-Session microVM 的成本账
-microVM 按会话启停，听起来成本很高。但实际：^[].md]
+microVM 按会话启停，听起来成本很高。但实际：
 
 - **共享底层资源**：microVM 是轻量级虚拟化，多个 microVM 可以共享底层物理机资源
 - **按需计费**：会话结束后 microVM 终止，不计费
@@ -69,14 +69,14 @@ microVM 按会话启停，听起来成本很高。但实际：^[].md]
 对比传统 VPS 固定月费：低负载时 Serverless 成本更低，高负载时自动扩缩不需要人工干预。
 
 ### 3. 数据迁移的隐性成本
-"迁移已有工作区数据"听起来简单——上传到 S3 就好了。但隐性成本：^[].md]
+"迁移已有工作区数据"听起来简单——上传到 S3 就好了。但隐性成本：
 
 - **历史数据清理**：旧 VPS 上的数据要不要保留？
 - **格式转换**：本地 `.openclaw/` 目录结构 vs S3 前缀结构是否兼容？
 - **用户通知**：数据迁移后使用习惯变化，需要用户适应
 
 ### 4. 多区域部署的运维复杂度
-多区域部署听起来很美好（高可用、低延迟），但实际运维复杂度：^[].md]
+多区域部署听起来很美好（高可用、低延迟），但实际运维复杂度：
 
 - **配置漂移**：各区域的 cdk.json 需要独立维护
 - **数据同步**：DynamoDB 有全局表但成本高，S3 跨区域复制需要额外配置

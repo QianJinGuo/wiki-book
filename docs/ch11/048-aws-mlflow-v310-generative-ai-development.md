@@ -79,11 +79,11 @@ MLflow 本身是云无关的开源框架，而 AWS 将其托管在 SageMaker 中
    金融和医疗领域的 AI 应用面临模型决策可解释性和审计要求，内置的 faithfulness 和 correctness 指标可作为模型审计文档的自动化数据源，降低合规团队的人工复核成本。
 
 ## 相关实体
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/020-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
-- [Aws Generative Ai Model Agility Framework](ch11/172-aws-generative-ai-model-agility-framework.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/493-aws-sagemaker-ai-agent.html)
-- [Aws Bedrock Halliburton Seismic Workflow Genai](ch11/017-aws-bedrock.html)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/228-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/019-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
+- [Aws Generative Ai Model Agility Framework](ch11/173-aws-generative-ai-model-agility-framework.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/499-aws-sagemaker-ai-agent.html)
+- [Aws Bedrock Halliburton Seismic Workflow Genai](ch11/020-aws-bedrock.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/229-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-mlflow-v310-generative-ai-development.md)

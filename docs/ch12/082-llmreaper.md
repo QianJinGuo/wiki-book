@@ -15,7 +15,7 @@
 ---
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch04/374-aws-security-agent.html)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch04/378-aws-security-agent.html)
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/088-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Novee Security How To Get A 100 Conference Acceptance Rate The No](../ch01/266-0.html)
 

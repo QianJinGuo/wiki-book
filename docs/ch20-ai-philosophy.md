@@ -1094,12 +1094,12 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 ## Ch20.006 GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.
 
-> 📊 Level ⭐⭐ | 12.9KB | `entities/gitlab-layoffs-memo-2026-5.md`
+> 📊 Level ⭐⭐ | 13.0KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
-> -> [[raw/articles/gitlab-layoffs-memo-2026-5|GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.']
+> -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gitlab-layoffs-memo-2026-5.md)
 ## 相关实体
 
-- [[entities/iii-dev|iii.dev]
+- [iii.dev](https://github.com/QianJinGuo/wiki/blob/main/entities/iii-dev.md)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -1110,7 +1110,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 ## CEO 备忘录摘要
 ### 结构性变化
-Bill Staples 在备忘录中概述了四项主要运营变化：^[].md]
+Bill Staples 在备忘录中概述了四项主要运营变化：
 
 1. **运营足迹重评估**：计划将国家覆盖减少 30%（主要是小型团队所在国家），通过合作伙伴网络继续服务这些市场
 2. **组织扁平化**：移除最多三层管理层，让领导者更接近工作
@@ -1146,10 +1146,10 @@ GitLab 选择「公开进行」重组是一个值得注意的战略决策。传�
 
 ### 2. 组织扁平化的双重逻辑
 GitLab 宣布移除最多三层管理层，同时 R&D 团队从约 30 个重组成约 60 个更小团队。这两件事是相关的：
-**传统逻辑**：减少管理层级通常是为了削减成本、提高决策效率。^[].md]
+**传统逻辑**：减少管理层级通常是为了削减成本、提高决策效率。
 
 **AI 逻辑**：当 AI Agent 可以处理大量协调、审批、review 工作后，中间管理层的存在理由减少。GitLab 实际上在说：Agent 将承担很多管理工作（reviews、approvals、handoffs），因此需要更少人类管理者。
-这与 [[raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来|Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的] 趋势一致——AI 正在替代传统的协调和管理角色。
+这与 [Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md) 趋势一致——AI 正在替代传统的协调和管理角色。
 
 ### 3. 「机器规模基础设施」——Git 的根本挑战
 备忘录中关于 Git 基础设施重建的描述值得深思：「Git 本身不是为这种负载设计的，在非为 Agent 构建的平台上堆叠 AI 是这个时代最大的错误」。
@@ -1158,7 +1158,7 @@ GitLab 正在进行的「一代重建」可能为整个行业提供参考：如�
 
 ### 4. 供需逆转——开发者平台市场的新定价
 Bill Staples 提供了一个独特的市场视角：去年开发者平台市场以每人每月几十美元衡量，今年是数百美元/月，正在走向数千美元/月。
-这与直觉相反——通常新技术会降低价格。为什么开发者平台价格反而上涨？^[].md]
+这与直觉相反——通常新技术会降低价格。为什么开发者平台价格反而上涨？
 
 可能的解释：
 
@@ -1168,11 +1168,11 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 ### 5. 「深度技术问题」的稀缺性悖论
 备忘录中有一个看似矛盾的陈述：「深度技术问题的供给在增加，能解决它们的人将成为市场上最稀缺、最有价值的人才」。
-如果 AI 能写代码，为什么深度技术问题反而增加？Bill Staples 的逻辑是：^[].md]
+如果 AI 能写代码，为什么深度技术问题反而增加？Bill Staples 的逻辑是：
 
 - 软件总量增加，系统复杂度增加（分布式、AI 集成、跨平台）→ 更多深度问题
 - AI 擅长解决「标准问题」，但复杂系统故障、架构决策、安全漏洞等仍需要人类判断 → 能解决这些问题的人更稀缺
-这与 [[raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来|Boris Cherny 的观点一致]：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
+这与 [Boris Cherny 的观点一致](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
 
 ## 实践启示
 ### 给软件工程师的建议
@@ -1427,7 +1427,7 @@ Princeton 和 Nature 的研究揭示了反向对齐在社会偏见维度的危�
 
 ## Ch20.009 Token 经济学与 AI 效率
 
-> 📊 Level ⭐⭐ | 8.6KB | `entities/token-economics-ai-efficiency.md`
+> 📊 Level ⭐⭐ | 9.0KB | `entities/token-economics-ai-efficiency.md`
 
 ## 核心命题
 AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用性不再稀缺，焦点从智力上限转向 Token 效率（Token Efficiency = AI 时代的投入产出比）。Token 经济学的核心问题：每消耗一个 Token 能创造多大的价值？
@@ -1438,17 +1438,17 @@ AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用�
 | 所有任务默认最强模型 | 杀鸡用牛刀 |
 | Token 成本公司享、产出个人享 | 免费食堂效应 → 浪费 |
 | Token 数十倍增长无核算 | 缺乏投入产出评估 |
-**根源**：指标被当作目标本身 → 工具变成表演（与代码行数比、KPI 挟持无异）。^[].md]
+**根源**：指标被当作目标本身 → 工具变成表演（与代码行数比、KPI 挟持无异）。
 
 ## Token 效率三种工程方案
 ### 1. 任务分级
 不同任务天然适合不同规格的模型。一句翻译和一次医疗诊断不应使用同一档模型。做好任务分级，即可带来投入产出效率提升。
 
 ### 2. 积分价格信号
-**痛点**：模型输入/输出价格不同、缓存命中/未命中价格不同，多币种复杂性高。^[].md]
+**痛点**：模型输入/输出价格不同、缓存命中/未命中价格不同，多币种复杂性高。
 
 **解决**：积分制（Credits/Points）作为内部结算货币——用户购买的不是 Token 量，而是一套标准化积分。不同模型对应不同积分；复杂任务消耗更多，简单任务消耗更少。
-**类产品**：CodeBuddy、WorkBuddy、Cursor、Manus、Lovart^[].md]
+**类产品**：CodeBuddy、WorkBuddy、Cursor、Manus、Lovart
 
 **价值**：
 
@@ -1457,9 +1457,9 @@ AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用�
 - 差异化的分层定价变成用户可感知的产品机制
 
 ### 3. 模型自动路由
-**理念**：用户不该在每次提问前判断"这值不值得用前沿模型"——AI 应用应自动完成这件事。^[].md]
+**理念**：用户不该在每次提问前判断"这值不值得用前沿模型"——AI 应用应自动完成这件事。
 
-**实践**：腾讯 CodeBuddy auto 模式^[].md]
+**实践**：腾讯 CodeBuddy auto 模式
 
 - 代码补全 → 小模型
 - 解释和生成 → 中等模型
@@ -1472,21 +1472,21 @@ AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用�
 | 模型路由（Harness Engineering） | 产品侧工程 |
 | 任务分级 | 用户自己的判断力——需要理解模型能力边界 |
 | 上下文质量 | 用户提供的上下文是否与任务相关，影响产出质量 + 积分消耗 |
-AI 产品和用户能力必须共同成长，才能让 Token 效率真正落地。^[].md]
+AI 产品和用户能力必须共同成长，才能让 Token 效率真正落地。
 
 ## AI 普惠三层路径
 ### 个人层
 十亿用户级产品不可能用最贵 AI。国民级产品接入 AI 自然走向小尺寸模型——这是普惠和智能的最优解。
 
 ### 组织层（中小企业）
-中小企业是 Token 经济学最值得关注的主体：^[].md]
+中小企业是 Token 经济学最值得关注的主体：
 
 - 没有海量 Token 预算，试错空间有限
 - 需要"月月算得过账、事事能办到位"的可靠助手
 - 需要可承担 + 可预期 + 可控制的 AI 投入
 
 ### 社会层
-Token 成为新的社会资源（类似电力、带宽、公路），需要：^[].md]
+Token 成为新的社会资源（类似电力、带宽、公路），需要：
 
 - 分层调度体系
 - 合理分配的计价评估基础设施
@@ -1532,13 +1532,13 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 - [[concepts/inference-optimization] — 推理优化是 Token 效率的工程基础
 - [[entities/harness-engineering-long-term-agent-tasks] — Harness Engineering 让 AI 产出可预期、可衡量、可持续
 - [[entities/context-window-management] — 上下文管理影响 Token 消耗质量
-- [[raw/articles/tencent-token-economics-ai-productivity.md|原文存档]
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-token-economics-ai-productivity.md)
 
 ## 相关实体
-- [[entities/github-token-efficiency-agentic-workflows|Improving token efficiency in GitHub Agentic Workflows]
-- [[entities/github-agentic-token-efficiency|Token Efficiency]
-- [[entities/github-agentic-token-efficiency|Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践]
-- [[entities/yumanju-ai-full-flow-efficiency|柚漫剧 AI 全流程提效拆解]
+- [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/github-token-efficiency-agentic-workflows.md)
+- [Token Efficiency](https://github.com/QianJinGuo/wiki/blob/main/entities/github-agentic-token-efficiency.md)
+- [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](https://github.com/QianJinGuo/wiki/blob/main/entities/github-agentic-token-efficiency.md)
+- [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
 
 ---
 

@@ -2,16 +2,16 @@
 
 ## Ch09.003 Claude Code Agent View
 
-> 📊 Level ⭐ | 7.9KB | `entities/claude-code-agent-view.md`
+> 📊 Level ⭐ | 8.2KB | `entities/claude-code-agent-view.md`
 
-> -> [[raw/articles/claude-code-agent-view-huashu.md|原文存档]
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-view-huashu.md)
 
 # Claude Code Agent View
-**Agent View** 是 Anthropic 在 Claude Code v2.1.139 中推出的多 Agent 可视化面板，被其工程 lead Thariq 称为「给 Claude Code 的 tmux」。它解决的不是 AI 能力问题，而是**人类在多 Agent 工作流中的注意力分配问题**——当同时运行 N 个 Claude Code 实例时，人的调度能力成为瓶颈。[^1]^[].md]
+**Agent View** 是 Anthropic 在 Claude Code v2.1.139 中推出的多 Agent 可视化面板，被其工程 lead Thariq 称为「给 Claude Code 的 tmux」。它解决的不是 AI 能力问题，而是**人类在多 Agent 工作流中的注意力分配问题**——当同时运行 N 个 Claude Code 实例时，人的调度能力成为瓶颈。[^1]
 
 ## 核心设计
 ### 三层架构
-Claude Code 中有三个易混淆但本质不同的概念：[^1]^[].md]
+Claude Code 中有三个易混淆但本质不同的概念：[^1]
 
 - **Subagent** — 单个 session 内，主 agent 派出的临时助手（服务于 AI 自身）
 - **Agent Team** — 单个 session 内的固定协作小组，Leader + Teammates（服务于 AI 自身）
@@ -31,7 +31,7 @@ Claude Code 中有三个易混淆但本质不同的概念：[^1]^[].md]
 4. **/loop 集成**：后台会话支持按 schedule 自迭代，带 ✢ 图标标识
 
 ## 与 Hermes 的关联
-Agent View 解决的问题域与 Hermes 的 [[concepts/hermes-agent|Agent 编排] 高度相关：^[].md]
+Agent View 解决的问题域与 Hermes 的 [Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 高度相关：
 
 - Hermes 通过 wiki-pipeline 编排多个 agent 协作
 - Agent View 的 worktree 隔离方案是 Agent Harness 中多 agent 并行的参考模式
@@ -39,24 +39,24 @@ Agent View 解决的问题域与 Hermes 的 [[concepts/hermes-agent|Agent 编排
 
 ## 深度分析
 ### 多 Agent 协作的注意力经济学
-花叔在文中揭示了一个核心矛盾：**AI 派任务的边际成本趋近于零，但人类 review 任务的边际成本不是。** 这正是 Agent View 试图解决的本质问题。当 38 个项目、606 个会话并行运转时，调度者成为系统瓶颈。Anthropic 内部 Boris Cherny 需要管理 5 个终端 tab、5-10 个浏览器 session 加移动端——这不是个人管理能力问题，而是人机协作界面的设计问题。 ^[].md]
+花叔在文中揭示了一个核心矛盾：**AI 派任务的边际成本趋近于零，但人类 review 任务的边际成本不是。** 这正是 Agent View 试图解决的本质问题。当 38 个项目、606 个会话并行运转时，调度者成为系统瓶颈。Anthropic 内部 Boris Cherny 需要管理 5 个终端 tab、5-10 个浏览器 session 加移动端——这不是个人管理能力问题，而是人机协作界面的设计问题。
 
 ### 平台化的必然性：Sherlocking 时刻
-Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal、claude-squad、Vibe Kanban 等），Anthropic 选择产品化而非收购或合作，说明：^[].md]
+Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal、claude-squad、Vibe Kanban 等），Anthropic 选择产品化而非收购或合作，说明：
 
 1. 多 Agent 调度是核心竞争力，必须官方掌控
 2. 第三方工具能跨 vendor（同时管 Claude Code + Codex + Gemini），官方版本只需专注单一生态绑定
 3. 这是典型的平台「Sherlocking」——但凡有长期价值的功能，平台终将纳入官方版本
 
 ### 三层架构的认知价值
-花叔在文中清晰地区分了 Subagent、Agent Team、Agent View 三层概念，这个划分的价值在于**服务对象不同**：^[].md]
+花叔在文中清晰地区分了 Subagent、Agent Team、Agent View 三层概念，这个划分的价值在于**服务对象不同**：
 
 - Subagent 和 Agent Team 是 AI 内部的并行优化，服务 AI 自身
 - Agent View 是人类的多路复用面板，服务操作者
-这个分层思维可以迁移到 Hermes：如果 Hermes 未来有多 Agent 协作需求，应该区分 AI 内并行（类似 Subagent）和人类可观察的多实例管理（类似 Agent View），而非混为一体。 ^[].md]
+这个分层思维可以迁移到 Hermes：如果 Hermes 未来有多 Agent 协作需求，应该区分 AI 内并行（类似 Subagent）和人类可观察的多实例管理（类似 Agent View），而非混为一体。
 
 ### Worktree 隔离的工程哲学
-每个后台 agent 独立 Git Worktree 的设计，本质是用文件系统级隔离替代进程级隔离。这解决了多 Agent 同时操作同一代码库时的冲突问题，但也带来「主目录看不到产物」的认知障碍。这个trade-off的启示：**隔离越强，协作越难感知**。对于需要紧密协作的任务（如代码审查、调试），过度隔离反而增加认知负担。 ^[].md]
+每个后台 agent 独立 Git Worktree 的设计，本质是用文件系统级隔离替代进程级隔离。这解决了多 Agent 同时操作同一代码库时的冲突问题，但也带来「主目录看不到产物」的认知障碍。这个trade-off的启示：**隔离越强，协作越难感知**。对于需要紧密协作的任务（如代码审查、调试），过度隔离反而增加认知负担。
 
 ## 实践启示
 ### 对个人用户
@@ -73,32 +73,32 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - **跨 vendor 工具的窗口期**：官方方案只管 Claude Code，第三方跨 vendor 工具仍有存在价值，尤其在多生态并行的工作场景
 
 ## 参考来源
-[^1]: 花叔. *Claude Code 发布 Agent View，多任务流的 ADHD 患者有救了*. 微信公众号, 2026-05-12. [[entities/claude-code-agent-view|raw]^[].md]
+[^1]: 花叔. *Claude Code 发布 Agent View，多任务流的 ADHD 患者有救了*. 微信公众号, 2026-05-12. [raw](ch09/003-claude-code-agent-view.html)
 
 - 官方博客: https://claude.com/blog/agent-view-in-claude-code
 - Release v2.1.139: https://github.com/anthropics/claude-code/releases/tag/v2.1.139
 
 ## 相关实体
-- [[entities/claude-code-agent-engineering|Claude Code Agent 工程设计]
-- [[entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2|深入理解 Claude Code 源码中的 Agent Harness 构建之道]
-- [[entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群|imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群]
-- [[entities/claude-code-openclaw-memory-comparison|Claude Code vs OpenClaw Agent 记忆系统对比]
-- [[entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2|开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南]
-- [[entities/claude-code-12-rules-karpathy-extension|CLAUDE.md 12 条规则：Karpathy 扩展模板]
-- [[entities/cat-wu-claude-code-pm|Cat Wu — Anthropic Claude Code/Cowork产品负责人]
-- [[concepts/claude-code-tool-design-evolution|Claude Code 工具设计演化]
-- [[entities/autoresearch-multi-agent-software|AutoResearch：多 Agent 自动化软件开发]
-- [[entities/claude-opus-4-7-launch|Claude Opus 4.7 发布分析]
-- [[entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式|Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式]
-- [[entities/ai-agent-tool-count-trap|AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具]
-- [[entities/anthropic-ai-native-startup-handbook|Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了]
-- [[entities/claude-code-large-codebase-enterprise-deployment|Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南]
-- [[entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台|Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台]
-- [[entities/claude-发布官方报告承认存在-3-处质量退化问题|Claude 发布官方报告，承认存在 3 处质量退化问题]
+- [Claude Code Agent 工程设计](../ch03/074-claude-code-agent.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
+- [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/084-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/083-obsidian-claude-code.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/098-claude-code-1.html)
+- [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/084-claude-code.html)
+- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
+- [AutoResearch：多 Agent 自动化软件开发](../ch03/037-agent.html)
+- [Claude Opus 4.7 发布分析](../ch01/547-claude-opus-4-7.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/477-agent-skills.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/430-ai-agent.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/564-anthropic-ai.html)
+- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1219-claude.html)
 
-→ [[raw/articles/xero-announces-integration-with-anthropics-claude.md|原文存档]
-- [[entities/2026年最值得关注的15款开发者工具-深度解读|2026年最值得关注的15款开发者工具深度解读]
-- [[moc/claude-code-complete-guide|MOC]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
+- [2026年最值得关注的15款开发者工具深度解读](../ch01/1119-20.html)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

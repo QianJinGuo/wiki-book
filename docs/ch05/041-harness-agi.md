@@ -159,7 +159,7 @@ Model Parameters 与 Harness Parameters 的联合优化代表着一个明确的�
 
 - [Prompt Context Harness Three Evolutions Tencent](ch05/017-harness.html)
 - [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](ch05/017-harness.html)
-- [Agent Tools Research](../ch03/036-agent.html)
+- [Agent Tools Research](../ch03/037-agent.html)
 
 ---
 

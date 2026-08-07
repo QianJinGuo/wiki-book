@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [llmshare: using shared chatbot pages to distribute malware](ch01/1395-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
-- [the code-as-content era](ch01/685-the-code-as-content-era.html)
+- [the code-as-content era](ch01/687-the-code-as-content-era.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-wed-market-to-software-developers-at-startups-20260606.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
@@ -35,12 +35,12 @@ How We’d Market to Software Developers at Startups 涉及article领域的核�
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/036-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/250-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/251-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/299-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [E9Ffy3R5Kwa1Ja5Pywbbrg](ch01/929-9.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/295-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [E9Ffy3R5Kwa1Ja5Pywbbrg](ch01/932-9.html)
 
 ## 实践启示
 1. **工程落地**: article领域方案需关注可观测性、可维护性和成本效率

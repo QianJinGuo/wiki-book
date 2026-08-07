@@ -8,12 +8,12 @@
 
 ## 相关实体
 
-- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/584-deepseek.html)
+- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/799-deepseek.html)
 - [dynamically splitting wide partitions in cassandra for time](../ch11/034-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
 - [interconnects ai p open and closed models are on different](../ch05/104-ai.html)
 - [reducing container cold start times using soci index on dlam](ch01/1403-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
-- [state of routing in model serving](../ch11/202-state-of-routing-in-model-serving.html)
-- [the distillation panic](ch01/478-the-distillation-panic.html)
+- [state of routing in model serving](../ch11/203-state-of-routing-in-model-serving.html)
+- [the distillation panic](ch01/482-the-distillation-panic.html)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
@@ -44,10 +44,10 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1376-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/250-openclaw.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/036-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/250-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/251-openclaw.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/251-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/722-agentic.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

@@ -39,7 +39,7 @@ Claude Code 2025-02 内部演示只收到 2 个赞。两年后（2026-06），�
 - **AI 产品的复合效应**——模型能力提升与用户工作流沉淀是两条独立曲线：模型每月升级（Claude 3.7 → 4.0 → 4.5 → 4.6 → 4.7 → 4.8），但 Skill / Routine / 验证回路是用户在使用中沉淀的资产，**两者叠加产生指数级复合**。
 - **AI 工具的反馈周期**——传统工具的反馈是"今天能干什么"；AI 工具的反馈是"今天 + 模型升级后 + 用户技能沉淀后"能干什么。早期反馈对长期价值预测力很弱。
 
-这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/289-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
+这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/722-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
 
 ### 二、Self-Validating Loop：Agent 长期自主的真正关键
 
@@ -63,7 +63,7 @@ Routines 是文章最有产品洞察力的概念。Boris 原话：
 - 异步 Agent 是"我设个规则，Agent 在后台跑，结果回来了再处理"——人的注意力被释放。
 - Cat 的亲身体验："我还没修的 bug，另一个 Claude 已经修了"——这是异步 Agent 时代的标志性叙事。
 
-Routines 与 [24h Worker Agent](../ch03/036-agent.html) 描述的"持续运行的 Agent"完全一致——Claude Code 的 Routine 是工业级实现。Routine 在产品形态上对应到：
+Routines 与 [24h Worker Agent](../ch03/037-agent.html) 描述的"持续运行的 Agent"完全一致——Claude Code 的 Routine 是工业级实现。Routine 在产品形态上对应到：
 - **监控型 Routine**：监听 GitHub issue / bug report，主动捡起修复。
 - **批处理型 Routine**：定期跑数据处理 / 报告生成。
 - **触发型 Routine**：在特定事件（PR 合并 / Slack 消息 / 定时器）触发 Agent 行动。
@@ -140,21 +140,21 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 
 ## 关联实体
 
-- [Boris Cherny: 从 IDE 到 Agent Console](../ch03/036-agent.html)
-- [Boris Cherny Interview 2026: 从 IDE 到 Agent Console](../ch03/036-agent.html)
-- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/036-agent.html)
-- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/036-agent.html)
+- [Boris Cherny: 从 IDE 到 Agent Console](../ch03/037-agent.html)
+- [Boris Cherny Interview 2026: 从 IDE 到 Agent Console](../ch03/037-agent.html)
+- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/037-agent.html)
+- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/084-claude-code.html)
-- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/641-agent-loop.html)
+- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/644-agent-loop.html)
 - [Claude Code Prompt 源码分析](ch09/070-claude-code-prompt.html)
 - [Claude Code Prompt 源码分析 fanone](ch09/070-claude-code-prompt.html)
 - [Claude Code Prompt Context Harness](ch09/070-claude-code-prompt.html)
 - [From Prompt to Harness: Claude 官方](../ch05/017-harness.html)
 - [Anthropic Prompt Caching 与 Claude Code](../ch01/402-anthropic-prompt-caching-claude-code.html)
-- [24h Worker Agent](../ch03/036-agent.html)
+- [24h Worker Agent](../ch03/037-agent.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/017-harness.html)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/538-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/289-agentic.html)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/353-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/722-agentic.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

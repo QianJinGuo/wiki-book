@@ -13,9 +13,9 @@ Karpathy 的看法：音频是大语言模型最好的输入，视觉是最好�
 ## 相关实体
 - [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1533-anthropic.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/084-claude-code.html)
-- [Skill Factory Yueheng](../ch04/340-skill.html)
-- [Code Review Graph](ch01/1100-code-review-graph-claude-code-6-8-token.html)
-- [300万人在存的Claude提示词](ch01/1218-claude.html)
+- [Skill Factory Yueheng](../ch04/344-skill.html)
+- [Code Review Graph](ch01/1103-code-review-graph-claude-code-6-8-token.html)
+- [300万人在存的Claude提示词](ch01/1219-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/markdown-ai-era-ifanr-20260513.md)
 

@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **59 篇**实体，按深度递增排列。
+> 本章收录 **61 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 14 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 38 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 40 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 
 ---
@@ -1456,7 +1456,7 @@ Macaron-A2UI 表面上是应用层的成果，但实则是对整个体系理论�
 
 ## Ch15.019 Fine-Tuning Cosmos
 
-> 📊 Level ⭐⭐⭐ | 15.7KB | `entities/fine-tuning-cosmos.md`
+> 📊 Level ⭐⭐⭐ | 16.7KB | `entities/fine-tuning-cosmos.md`
 
 ## 核心要点
 
@@ -1480,7 +1480,7 @@ Cosmos Predict 2.5 作为通用世界模型，在处理**机器人领域特定�
 
 ### 微调的本质
 
-微调是将通用世界模型的「物理直觉」与特定机器人平台的「运动学特征」对齐，而非重新学习通用物理规律 。^[].md]
+微调是将通用世界模型的「物理直觉」与特定机器人平台的「运动学特征」对齐，而非重新学习通用物理规律 。
 
 这意味着：
 
@@ -1504,7 +1504,7 @@ Cosmos Predict 2.5 (2B 参数)
 
 ### LoRA 注入机制
 
-LoRA 在 DiT 的注意力层和前馈层注入低秩矩阵 ：^[].md]
+LoRA 在 DiT 的注意力层和前馈层注入低秩矩阵 ：
 
 ```
 ΔW = A × B, 其中 A ∈ R^{d×r}, B ∈ R^{r×k}, rank r << min(d,k)
@@ -1523,13 +1523,13 @@ LoRA 在 DiT 的注意力层和前馈层注入低秩矩阵 ：^[].md]
 
 ### DoRA 的增量改进
 
-DoRA 将权重分解为幅度和方向两部分 ：^[].md]
+DoRA 将权重分解为幅度和方向两部分 ：
 
 ```
 W = m × (W₀ + ΔW / ||W₀ + ΔW||)
 ```
 
-其中 m 是可学习的幅度标量。直觉上，DoRA 让模型分别学习「**改变多少**」（幅度）和「**往哪个方向变**」（方向）。^[].md]
+其中 m 是可学习的幅度标量。直觉上，DoRA 让模型分别学习「**改变多少**」（幅度）和「**往哪个方向变**」（方向）。
 
 | 特性 | LoRA | DoRA |
 |------|------|------|
@@ -1542,7 +1542,7 @@ W = m × (W₀ + ΔW / ||W₀ + ΔW||)
 
 ### 数据准备
 
-**训练数据集**：GR1-100 (92 个机器人操作视频 + 文本描述)^[].md]
+**训练数据集**：GR1-100 (92 个机器人操作视频 + 文本描述)
 
 ```
 gr1_dataset/train
@@ -1551,7 +1551,7 @@ gr1_dataset/train
 └── metadata.csv         #  元数据
 ```
 
-**测试数据集**：PhysicalAI-Robotics-GR00T-Eval (50 个 prompt-image 对)^[].md]
+**测试数据集**：PhysicalAI-Robotics-GR00T-Eval (50 个 prompt-image 对)
 
 ```
 gr1_dataset/test
@@ -1646,7 +1646,7 @@ export_to_video(frames, "output.mp4", fps=16)
 
 ### LoRA 热切换
 
-可以训练多个 domain-specific adapters，推理时动态加载，实现一个 base model 服务多个垂直场景 ：^[].md]
+可以训练多个 domain-specific adapters，推理时动态加载，实现一个 base model 服务多个垂直场景 ：
 
 ```python
 
@@ -1666,7 +1666,7 @@ pipe.load_lora_weights("path/to/domain_b_lora")
 
 ### Sampson Error（几何一致性）
 
-Sampson Error 是几何计算机视觉中的传统指标，衡量匹配关键点到其对应极线的距离 。^[].md]
+Sampson Error 是几何计算机视觉中的传统指标，衡量匹配关键点到其对应极线的距离 。
 
 | 指标 | 衡量内容 | 为什么重要 |
 |------|---------|-----------|
@@ -1675,16 +1675,16 @@ Sampson Error 是几何计算机视觉中的传统指标，衡量匹配关键点
 
 ### LLM-as-a-Judge（物理可信性 & 指令遵循）
 
-使用 Cosmos Reason2 作为评判模型，1-5 分评分 ：^[].md]
+使用 Cosmos Reason2 作为评判模型，1-5 分评分 ：
 
-**Physical Plausibility**（不看 prompt）：^[].md]
+**Physical Plausibility**（不看 prompt）：
 
 - 物体行为是否符合物理特性（刚体不变形、液体自然流动）
 - 运动和力是否与真实物理一致（重力、惯性、动量守恒）
 - 物体交互是否合理（无异常穿透、碰撞反应适当）
 - 时序一致性（帧间无突兀变化）
 
-**Instruction Following**（看 prompt + video）：^[].md]
+**Instruction Following**（看 prompt + video）：
 
 - 任务完成度
 - 动作准确性
@@ -1758,7 +1758,7 @@ Cosmos Predict 2.5 + Domain LoRA
 
 ### DoRA 切换时机
 
-当出现以下情况时，考虑切换到 DoRA ：^[].md]
+当出现以下情况时，考虑切换到 DoRA ：
 
 - 使用极低 rank (r=8) 且训练 loss 震荡
 - 观察到 LoRA 过拟合但又不希望增大 rank
@@ -1768,23 +1768,23 @@ Cosmos Predict 2.5 + Domain LoRA
 
 ### 参数高效微调的实质是"保留物理 priors + 适配域外观分布"
 
-LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"，而是将通用世界模型的视觉分布适配到特定机器人平台的外观特征 。实验结果揭示了一个关键不对称：rank 32 vs rank 8 的差异仅体现在指令遵循能力上，而几何一致性和物理可信性在两个 rank 下都没有显著差异。这意味着几何和物理 priors 主要由冻结的基础模型捕获，LoRA 适配的只是"机器人手臂看起来是什么样"和"给定 prompt 应该执行什么动作"这类浅层分布偏移 。对于需要同时优化所有三个指标的场景，增大 rank 并非万能解——当 base model 的物理 priors 本身存在问题时，冻结权重 + LoRA 的组合无法修复底层物理理解缺陷。^[].md]
+LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"，而是将通用世界模型的视觉分布适配到特定机器人平台的外观特征 。实验结果揭示了一个关键不对称：rank 32 vs rank 8 的差异仅体现在指令遵循能力上，而几何一致性和物理可信性在两个 rank 下都没有显著差异。这意味着几何和物理 priors 主要由冻结的基础模型捕获，LoRA 适配的只是"机器人手臂看起来是什么样"和"给定 prompt 应该执行什么动作"这类浅层分布偏移 。对于需要同时优化所有三个指标的场景，增大 rank 并非万能解——当 base model 的物理 priors 本身存在问题时，冻结权重 + LoRA 的组合无法修复底层物理理解缺陷。
 
 ### 多维度评估体系的必要性：单一指标会掩盖重要缺陷
 
-该论文构建了三重评估体系：Sampson Error（几何一致性）、LLM-as-Judge Physical Plausibility（物理可信性）、LLM-as-Judge Instruction Following（指令遵循） 。这是一个重要的设计选择，因为视频生成质量的视觉逼真度与"物理正确性"和"任务完成度"之间没有强相关性。一个帧间完全一致、物体运动流畅的视频可能完全遵循了错误的手（左手 vs 右手）或与目标物体交互错误；反之亦然。这意味着在构建机器人合成数据 pipeline 时，必须对每个维度分别设定质量门槛（Physical score > 4.0 AND Instruction following > 4.0），而非依赖单一 FID 或 LPIPS 指标 。^[].md]
+该论文构建了三重评估体系：Sampson Error（几何一致性）、LLM-as-Judge Physical Plausibility（物理可信性）、LLM-as-Judge Instruction Following（指令遵循） 。这是一个重要的设计选择，因为视频生成质量的视觉逼真度与"物理正确性"和"任务完成度"之间没有强相关性。一个帧间完全一致、物体运动流畅的视频可能完全遵循了错误的手（左手 vs 右手）或与目标物体交互错误；反之亦然。这意味着在构建机器人合成数据 pipeline 时，必须对每个维度分别设定质量门槛（Physical score > 4.0 AND Instruction following > 4.0），而非依赖单一 FID 或 LPIPS 指标 。
 
 ### LoRA 热切换使单一 base model 服务多域成为可能
 
-推理时动态加载不同 domain-specific LoRA adapters 的能力，指向一个重要的工程模式：world model + domain adapters 的组合可能是机器人领域通用基础模型的最终形态 。在 Cosmos 之前，每个机器人类别（工业臂、协作臂、轮式）通常需要独立训练或微调一个完整的视频生成模型；LoRA 热切换使得一个 2B 参数的 base model 可以通过切换 ~50M 的 adapter 服务多个垂直场景，存储和计算成本降低了一个数量级。这种模式与 LLM 社区的 adapter/tuning 实践完全一致，暗示机器人 world model 的未来可能走向"一个通用物理世界模型 + 多个领域轻量适配器"的架构。^[].md]
+推理时动态加载不同 domain-specific LoRA adapters 的能力，指向一个重要的工程模式：world model + domain adapters 的组合可能是机器人领域通用基础模型的最终形态 。在 Cosmos 之前，每个机器人类别（工业臂、协作臂、轮式）通常需要独立训练或微调一个完整的视频生成模型；LoRA 热切换使得一个 2B 参数的 base model 可以通过切换 ~50M 的 adapter 服务多个垂直场景，存储和计算成本降低了一个数量级。这种模式与 LLM 社区的 adapter/tuning 实践完全一致，暗示机器人 world model 的未来可能走向"一个通用物理世界模型 + 多个领域轻量适配器"的架构。
 
 ### 100 epochs 是效率与效果的最优平衡点
 
-实验数据显示 100 epochs（约 2.5 小时 8×H100）在三个评估指标上均达到显著提升，继续训练到 500 epochs 的边际收益很小 。这一发现对工程实践有重要指导意义：对于快速迭代验证场景，100 epochs 是最低可行训练长度；超过 100 epochs 的训练更可能是在拟合训练数据噪声而非学习新的域知识。这还意味着，对于需要频繁重新训练或持续学习的场景（如持续收集新机器人数据的在线学习），单次 100 epochs 的训练成本（~2.5 小时 on 8×H100）是可接受的工程预算。^[].md]
+实验数据显示 100 epochs（约 2.5 小时 8×H100）在三个评估指标上均达到显著提升，继续训练到 500 epochs 的边际收益很小 。这一发现对工程实践有重要指导意义：对于快速迭代验证场景，100 epochs 是最低可行训练长度；超过 100 epochs 的训练更可能是在拟合训练数据噪声而非学习新的域知识。这还意味着，对于需要频繁重新训练或持续学习的场景（如持续收集新机器人数据的在线学习），单次 100 epochs 的训练成本（~2.5 小时 on 8×H100）是可接受的工程预算。
 
 ### DoRA 的优势在 rank=32 时消失，在极低 rank 时才显现
 
-在 rank=32 的标准配置下，LoRA 和 DoRA 收敛到相近性能 。DoRA 的幅度-方向分解在更高 rank 时提供了额外的表达能力，但当 rank 足够高时，这种分解带来的增益被 LoRA 自身的低秩更新空间所吸收。只有在 rank 极低（r=8）或训练不稳定场景下，DoRA 的结构化分解才表现出稳定优势 。这为实践者提供了一个清晰的决策框架：rank≥16 时默认使用 LoRA，rank<16 或观察到训练 loss 震荡时切换到 DoRA。^[].md]
+在 rank=32 的标准配置下，LoRA 和 DoRA 收敛到相近性能 。DoRA 的幅度-方向分解在更高 rank 时提供了额外的表达能力，但当 rank 足够高时，这种分解带来的增益被 LoRA 自身的低秩更新空间所吸收。只有在 rank 极低（r=8）或训练不稳定场景下，DoRA 的结构化分解才表现出稳定优势 。这为实践者提供了一个清晰的决策框架：rank≥16 时默认使用 LoRA，rank<16 或观察到训练 loss 震荡时切换到 DoRA。
 
 ## 实践启示
 
@@ -1807,13 +1807,13 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 ## 相关词条
 
-- [[entities/nvidia-cosmos-fine-tuning-robot-video-generation|Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation]
-- [[entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation|Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA — 深度分析]
-- [[raw/articles/nvidia-cosmos-fine-tuning-robot-video-generation|原文存档]
+- [Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
+- [Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA — 深度分析](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-cosmos-fine-tuning-robot-video-generation.md)
 
 ## 相关实体
 
-- [[moc/nvidia-gpu-acceleration|MOC]
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---
 
@@ -4601,7 +4601,81 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 
 ---
 
-## Ch15.041 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
+## Ch15.041 SearchMaster：接地的受调节自博弈搜索 Agent 训练
+
+> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/searchmaster-grounded-regulated-self-play-jd-2026.md`
+
+# SearchMaster：接地的受调节自博弈搜索 Agent 训练
+
+## 摘要
+
+京东未来研究院（JD Future Academy）SearchMaster（arXiv:2608.01822）：把搜索 Agent 自博弈训练形式化为「grounding（任务接地）+ regulating（行为调节）」问题。同一策略 πθ 兼任 Proposer（在本地搜索环境出多跳任务）与 Solver（用浏览器工具作答），冻结 Verifier 验证，GRPO 联合优化。针对自博弈三大误导信号给出三个控制：**ECG**（证据链生成器）抑制伪多跳题、**SDR**（搜索深度奖励）按最浅成功搜索深度定难度而非成功率、**OOP**（过度打开惩罚）按 open/search 比率正则工具使用。Qwen3.5-9B 六基准平均 38.19%→51.52%（+13.3），BrowseComp-Plus 30.12%→60.24%（+30.1），纯离线训练却在线五基准全部提升。
+
+## 自博弈的三大误导信号
+
+现有搜索自博弈（Search Self-Play 预定义答案集、Dr. Zero 成功率难度）产出看似有用实则误导的训练信号：
+
+1. **Pseudo Multi-Hop**：Proposer 浏览多文档却写出单文档可答的问题——表面多跳、实际浅查。naive 基线 47.1% 的任务是伪多跳
+2. **成功率难度失真**：成功率无法区分「浅查即答」与「多步搜索才能答」——Solver 变强后任务自然变浅，hmin 衰减到 2-3
+3. **Over-Opening 漂移**：训练中打开文档带来即时奖励，策略逐渐过度依赖 open——56.3% 的额外 open 只是重开已见文档，产生长而浅的轨迹
+
+## 三控制机制（核心贡献）
+
+### ECG：证据链接地的任务生成
+
+Proposer 从种子文档出发，反复沿实体/事实链接跨文档延伸链条（选实体→搜关联文档→识别新实体→扩展），最后从完整链条出题，要求 full-chain necessity、无单文档可答。形式上每条 rollout 维护显式证据链 c_j = e_1 → e_2 → ··· → e_n。四道质量过滤器（Tool-use/Format/Validity/Parametric-knowledge）进一步移除无效候选。
+
+### SDR：搜索深度即难度
+
+任务难度 = 成功 rollout 的**最浅**搜索深度 hmin = min_{i:z_i=1} h_i（Eq 3）——任何成功解能浅搜解决即视为 shortcut，不给高分。奖励 rsdr = r0 + (1−r0)·min(hmin/Hsdr, 1)（Eq 4），Hsdr=10 饱和防无限深搜奖励。对照成功率信号（1−|2C/K_S−1| 峰值在 50% 成功率）：SDR 让保留任务的 hmin 稳定在 8-10，成功率信号下随 Solver 变强衰减到 2-3。
+
+### OOP：比率惩罚而非次数惩罚
+
+ρoop = clip((n_open/n_search − α_oop)/(β_oop − α_oop), 0, 1)（Eq 7，α=1.5 起罚/β=2.5 满罚），最终奖励 r = b − λ_oop·ρ_oop（Eq 8-9，λ=0.5）。用比率不用绝对次数：压制冗余打开（56.3% 重开已见文档）同时保留合法多文档探索。Proposer 与 Solver 共享策略，一次惩罚双角色都受益。
+
+## 训练设计
+
+- **共享策略双角色 + 冻结 Verifier**：Verifier 是初始模型冻结副本；种子级 gate（K_P 任务最高奖励 ≤ r0=0.2 整种子丢弃）；只保留最高奖励通过任务的 K_S 条 Solver rollout 防样本主导（每种子贡献 K_P+K_S=16 样本）
+- **GRPO**（Eq 10）：token 级 clipped objective + KL 正则，工具观测保留上下文但 mask 出 loss，梯度只流经模型生成 token
+- **配置**：Qwen3.5-9B，lr 1e-6，clip (0.2, 0.28)，βKL=0.001；OpenResearcher 离线语料（约 15M 文档/11B token）+ Qwen3-Embedding-8B FAISS；20 迭代 × 64 种子 = 1280 种子；256K 上下文；上限 200 工具调用/rollout
+
+## 实验结果
+
+**主结果**：Qwen3.5-9B 六基准平均 38.19%→51.52%（+13.3）；BrowseComp-Plus 30.12→60.24（+30.1）——9B 模型超过 gpt-oss-120B-high (42.89)、GPT-4.1 (35.42)、Claude Opus 4 (36.14)，逼近 o3 (63.49)。纯离线训练在全部 5 个在线基准提升（+6.8 GAIA 到 +18.2 WebWalkerQA），搜索行为泛化到开放网络。
+
+**消融**（BrowseComp-Plus）：naive self-play 45.18 → +ECG 53.25 → +SDR 52.89 → +ECG+SDR 57.71 → 全量 60.24——三机制单调互补。**任务质量**（GLM-5 判定）：True Multi-Hop 24.2%→78.6%，Invalid 28.7%→6.4%。
+
+## 与 Skill-SP/SESA 的家族关系
+
+SearchMaster 与 Skill-SP（qwen-skill-self-play-hyman-2026 实体）同属 self-play 训练家族，但机制维度根本不同，形成互补：
+
+| 维度 | Skill-SP / SESA | SearchMaster |
+|------|----------------|-------------|
+| 记忆机制 | Skill Card → Skill Bank 技能库进化（失败轨迹提炼可复用技能） | 无技能库——ECG/SDR/OOP 三控制在循环内做信号接地与调节 |
+| 任务生成 | Proposer + 动态 skill 控制器 | Proposer + 显式证据链（ECG） |
+| 难度信号 | gated curriculum（50% 正确率瞄准学习前沿） | 搜索深度 hmin（最浅成功解） |
+| 工具调节 | 无显式工具使用惩罚 | OOP open/search 比率惩罚 |
+| 验证 | 机器可读契约（单元测试/参考答案） | 冻结 Verifier + 四道过滤器 |
+
+两篇都证明「自博弈数据无需人工标注 QA 对」：Skill-SP 靠 skill 库记忆复用扩能力，SearchMaster 靠接地+调节稳定信号。若飞关于「一次成功只是观察、要经归因回归才能变默认行为」的晋升边界（见 tencentdb-agent-memory-hierarchical 治理框架）在此有工程化体现——SDR 的 hmin 与 OOP 的比率惩罚本质上是给「哪种成功值得学」设置验证门槛。
+
+## 局限
+
+训练仍需可搜索环境、每任务多条 Solver rollout、Verifier 调用（grounding/parametric filtering/correctness）——减少标注依赖但未消除全部成本；本地搜索环境限制开放网络全多样性覆盖；代码将在未来开源。
+
+## 相关实体
+
+- [阿里 Qwen Skill-SP 自博弈](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen-skill-self-play-hyman-2026.md)
+- [LLM 自改进系统综述](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-self-improvement-system-survey-zesearch-nlp-2026.md)
+- [Native Parallel Reasoner](https://github.com/QianJinGuo/wiki/blob/main/entities/native-parallel-reasoner-icml2026.md)
+
+## 来源
+
+→ [论文原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/searchmaster-grounded-regulated-self-play-jd-2026.md)
+
+---
+
+## Ch15.042 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
 
@@ -4706,7 +4780,7 @@ ZPPO 的实验结果进一步证实了一个趋势：naive knowledge distillatio
 
 ---
 
-## Ch15.042 Vime-Ascend — 基于 vLLM 的开源 RL 后训练框架（华为云昇腾版）
+## Ch15.043 Vime-Ascend — 基于 vLLM 的开源 RL 后训练框架（华为云昇腾版）
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/vime-ascend-rl-framework-modelarts-huawei.md`
 
@@ -4764,7 +4838,7 @@ Vime-ascend 的完整价值不仅体现在框架能力上，更在于它提供�
 
 ---
 
-## Ch15.043 百度文心大模型后训练进化（ERNIE 3.0→5.0）
+## Ch15.044 百度文心大模型后训练进化（ERNIE 3.0→5.0）
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/baidu-wenxin-post-training-evolution.md`
 
@@ -4823,7 +4897,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.044 Reinforcing Recursive Language Models | alphaXiv
+## Ch15.045 Reinforcing Recursive Language Models | alphaXiv
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/reinforcing-recursive-language-models-alphaxiv.md`
 
@@ -4866,7 +4940,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.045 时间序列预测增强方法总结：频域、分解、patch
+## Ch15.046 时间序列预测增强方法总结：频域、分解、patch
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/time-series-forecasting-augmentation-methods.md`
 
@@ -4912,7 +4986,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.046 AlphaEvolve交出一周年炸裂成绩单！AI自我改进不再科幻
+## Ch15.047 AlphaEvolve交出一周年炸裂成绩单！AI自我改进不再科幻
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md`
 
@@ -4960,7 +5034,7 @@ Allen Institute for AI的Nathan Lambert提出，随着AI系统复杂度增加，
 
 ---
 
-## Ch15.047 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
+## Ch15.048 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
 
@@ -5025,7 +5099,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 ---
 
-## Ch15.048 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
+## Ch15.049 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md`
 
@@ -5060,7 +5134,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 ---
 
-## Ch15.049 EMO: Pretraining mixture of experts for emergent modularity | Ai2
+## Ch15.050 EMO: Pretraining mixture of experts for emergent modularity | Ai2
 
 > 📊 Level ⭐⭐⭐ | 5.2KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
 
@@ -5101,7 +5175,7 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 
 ---
 
-## Ch15.050 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
+## Ch15.051 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/mobileforge-annotation-free-gui-agent-kuaishou-zju-2026.md`
 
@@ -5161,7 +5235,7 @@ HiFPO 将失败经验转化为训练信号，包含四条关键设计：
 
 ---
 
-## Ch15.051 Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
+## Ch15.052 Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
 
@@ -5197,7 +5271,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ---
 
-## Ch15.052 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
+## Ch15.053 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/emces-icml2026-episodic-memory-controlled-experience-synthesis-rl.md`
 
@@ -5237,7 +5311,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.053 SkillOS
+## Ch15.054 SkillOS
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillos.md`
 
@@ -5293,7 +5367,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.054 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
+## Ch15.055 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
 
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/localdpo-cvpr2026-video-diffusion-local-preference-taobao.md`
 
@@ -5348,7 +5422,7 @@ LocalDPO 为视频生成模型的偏好对齐提供了一种高效、稳定且�
 
 ---
 
-## Ch15.055 Farewell Ai2
+## Ch15.056 Farewell Ai2
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/farewell-ai2.md`
 
@@ -5388,7 +5462,42 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.056 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.057 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
+
+> 📊 Level ⭐⭐⭐ | 3.2KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
+
+# 多模态预训练物理：知识流、模态协同、早期统一与高效配方
+
+系统性多模态预训练实证研究（Junlin Han / Shengbang Tong / David Fan / Minghao Chen / Philip Torr / Filippos Kokkinos / Mike Lewis，2026-08），通过合成 + 大规模真实数据的受控实验，给出多模态统一训练的四条机制性结论，并在 13.5B MoE × 2T tokens 规模验证。
+
+## 四条核心发现
+
+**知识流（Knowledge Flow）**：语言、视觉理解、视觉生成三类模态之间知识迁移的方向与强度存在**不对称性**——某些模态是知识源，另一些是知识汇，迁移模式可被解耦刻画。
+
+**协同 vs 竞争（Synergy vs. Competition）**：数据"复杂度"是决定模态间协同还是竞争的首要因素；**共享 attention + 归一化 + 模态专属 FFN 层**的结构选择促进协同，且该行为在不同视觉 tokenizer 设计下泛化。
+
+**早期统一（Early Unification）**：从最早期阶段联合训练多模态，优于晚期对齐或顺序训练。延迟整合会触发 **vision laziness（视觉懒惰）** 现象——模型依赖语言先验而非真正理解视觉输入。
+
+**高效配方（Recipes）**：仅用 **5% 计算预算**即可达到强生成性能的预训练配方，为小团队复现前沿多模态模型提供可行路径。
+
+## 规模验证
+
+核心发现在 13.5B MoE 模型、2T tokens 上得到验证——机制性结论（协同/竞争、早期统一、vision laziness）从小规模受控实验向工业级规模迁移成立。
+
+## 与既有知识的连接
+
+- 与 [LM 预训练泛化动力学](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-lm-pretraining.md) 互补：后者关注单模态 LM 预训练损失曲线规律，本文扩展至跨模态交互机制
+- 与 [EMO MoE 预训练涌现模块化](https://github.com/QianJinGuo/wiki/blob/main/entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md) 同属预训练机制研究族，本文的模态专属 FFN 设计直接关联 MoE 路由结构
+- vision laziness 现象为 [多模态思维链推理](https://github.com/QianJinGuo/wiki/blob/main/entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md) 提供训练侧解释：晚期对齐的模型其"推理"可能实为语言先验复述
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md)
+
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch15.058 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 27.8KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -5769,13 +5878,13 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.057 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.059 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
-> 📊 Level ⭐⭐⭐⭐ | 21.5KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
+> 📊 Level ⭐⭐⭐⭐ | 22.3KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
 
 ## 核心要点
 
-- source: [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+- source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 - review: v=9 × c=9 = 81
 - 作者：Jiaxin Wen, Zhengxuan Wu, Dawn Song, Lijie Chen
 - 研究模型：OLMo3 (7B/32B) 和 Apertus (8B/70B)
@@ -5788,7 +5897,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 - [[entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen]
 - [[entities/yann-dubois-openai-post-training-interview]
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## 研究背景与动机
 
@@ -5802,7 +5911,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 **关键反例**：在"answer+1"评估任务中，OLMo3 32B 在 2.17T tokens 时准确率 81%，在 2.19T tokens 时暴跌至 0%，随后在 2.21T tokens 时反弹至 81.7%。这种跳跃并非孤例——在各种评估和模型上都能观察到 LM 突然捕获记忆或上下文模式而非上下文学习、使用 System 1 而非 System 2 思考、选择听起来真而非确实真的内容、在多跳人格 QA、上下文外推理和 emergent misalignment 上失败——然后同样突然地恢复并泛化。
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## Mode-Hopping 现象详解
 
@@ -5823,7 +5932,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 - **大型模型**：泛化更频繁但仍存在振荡
 - **跨数据集相关性**：大模型的相关性更高，说明泛化行为在不同数据集间更一致
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## 六项评估任务详解
 
@@ -5831,7 +5940,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 ### 1. Flipped Answer（标签翻转测试）
 
-**测试目标**：模型是捕获记忆模式还是上下文学习？^[].md]
+**测试目标**：模型是捕获记忆模式还是上下文学习？
 
 **设计逻辑**：选择 8 个经典情感分类和主题分类数据集，将原始标签翻转（如将正面情感标注为负面）。鹦鹉会坚持其记忆模式仍预测"正面"和"商业"，而智能体会从上下文演示中推断底层任务。
 
@@ -5844,7 +5953,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 ### 2. Repetitive Answer（重复答案测试）
 
-**测试目标**：模型是复制上下文重复模式还是执行底层学习？^[].md]
+**测试目标**：模型是复制上下文重复模式还是执行底层学习？
 
 **设计逻辑**：构造四个跨编码、数学、字母计数和逻辑的简单任务。演示中所有答案相同，测试问题答案不同但都遵循相同模式。
 
@@ -5855,7 +5964,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 ### 3. Successive Answer（连续答案测试）
 
-**测试目标**：模型是捕获上下文连续模式还是执行上下文学习？^[].md]
+**测试目标**：模型是捕获上下文连续模式还是执行上下文学习？
 
 **设计逻辑**：构建关于字符、单词和数字序列的四个数据集。演示答案遵循连续模式（如"1,2,3"或"A,B,C"），测试问题答案也遵循此模式。
 
@@ -5866,7 +5975,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 ### 4. Truthy Answer（真实性测试）
 
-**测试目标**：模型是捕获听起来真的还是确实真的？^[].md]
+**测试目标**：模型是捕获听起来真的还是确实真的？
 
 **设计逻辑**：策划明显或令人惊讶地真或假的声明。演示中的声明明显为真或假，测试声明则是令人惊讶的真或常见误解。
 
@@ -5877,7 +5986,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 ### 5. Intuitive Answers（直觉vs推理测试）
 
-**测试目标**：模型是使用 System 1 还是 System 2 思考？^[].md]
+**测试目标**：模型是使用 System 1 还是 System 2 思考？
 
 **设计逻辑**：使用三个具有代表性的认知反射测试（CRT）问题。每个问题都有一个直觉性但错误的快速 System 1 思考答案，而真正正确答案需要慢速 System 2 思考。每个原始问题基于模板生成 1,000 个变体。
 
@@ -5889,7 +5998,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 ### 6. Multi-hop Persona QA（多跳人格问答）
 
-**测试目标**：模型是捕获离散事实还是连贯人格？^[].md]
+**测试目标**：模型是捕获离散事实还是连贯人格？
 
 **设计逻辑**：为六位历史人物构建人格评估。每个人格展示 90 个传记事实作为上下文 QA 对，然后问单跳和多跳问题。如果模型将所有看似通用的事实连接为连贯人格，则准确率高。
 
@@ -5907,19 +6016,19 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 - Function：模型在匿名 Python 函数的输入输出对上训练，然后评估其用自然语言和代码表达函数的能力
 - Location：模型在固定匿名城市和随机城市之间的相对距离和基点方向上训练，然后评估其说出城市名称的能力
 
-**Emergent Misalignment测试**：^[].md]
+**Emergent Misalignment测试**：
 
 - 模型在不安全代码上训练，然后评估其在更广泛的用户查询上对错误对齐答案的概率
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## 排除竞争性假说
 
-研究团队系统性地排除了几种可能的替代解释：^[].md]
+研究团队系统性地排除了几种可能的替代解释：
 
 ### 假说1：非泛化噪声
 
-**假说内容**：LM 在所有评估上表现都振荡，而非仅在泛化评估上。^[].md]
+**假说内容**：LM 在所有评估上表现都振荡，而非仅在泛化评估上。
 
 **排除证据**：在标准分类、主题分类、数学和知识 QA 任务上，LM 的表现曲线是平滑的，说明振荡仅出现在泛化任务上。
 
@@ -5940,7 +6049,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 为排除通用指令跟随能力引起的振荡（如生成可提取的答案片段），计算答案选择上的概率（除人格 QA 外，人格 QA 没有默认鹦鹉答案）。
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## 跨数据集泛化相关性分析
 
@@ -5955,21 +6064,21 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 ### 数据集类型的具体相关性
 
-**情感与主题数据集间相关性低**（<0.1）：不同概念需要不同电路，不足为奇。^[].md]
+**情感与主题数据集间相关性低**（<0.1）：不同概念需要不同电路，不足为奇。
 
 **不同情感数据集间相关性中等**（0.4-0.6）：例如 SST2 和 IMDB 之间的相关性仅为 0.43。虽然它们共享相同的底层可泛化概念（情感），但浅层模式不同——IMDB 示例比 SST2 长得多，因此携带更多浅层情感线索，更容易诱发鹦鹉行为。
 
 **同一数据集的转述版本间相关性高**：这证实了当诱人模式基本一致时，mode-hopping 强烈普遍。
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## 三大实践应用
 
 ### 应用1：预训练检查点选择
 
-研究证明，其玩具评估套件可以指导选择通过后训练泛化更好的预训练检查点。^[].md]
+研究证明，其玩具评估套件可以指导选择通过后训练泛化更好的预训练检查点。
 
-**实验设置**：选择 4.5T 和 4.9T token 检查点进行后训练泛化测试：^[].md]
+**实验设置**：选择 4.5T 和 4.9T token 检查点进行后训练泛化测试：
 
 - **数学后训练测试**：SFT 可泛化为 RL（多 epoch 训练和高品质思维数据）
 - **通用后训练测试**：49K 非安全数据 + 1K 安全数据（STAR）
@@ -5982,7 +6091,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 ### 应用2：预训练数据选择
 
-是否可以利用每个预训练窗口内的泛化动态来选择预训练数据子集以控制模型的泛化方式？^[].md]
+是否可以利用每个预训练窗口内的泛化动态来选择预训练数据子集以控制模型的泛化方式？
 
 **实验设计**：在 Successive Answer 的"answer+1"评估上继续预训练 OLMo3 32B 中间检查点，使用三种不同预训练子集：
 
@@ -5992,11 +6101,11 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 | Control-pattern | 鼓励模式匹配的数据 | 稳定向模式匹配方向发展 |
 | Control-generalization | 鼓励泛化的数据 | 稳定向泛化方向发展 |
 
-**结论**：可以选择性地让预训练数据引导泛化动态走向预期方向。^[].md]
+**结论**：可以选择性地让预训练数据引导泛化动态走向预期方向。
 
 ### 应用3：泛化预测因子测试
 
-研究评估了多种基于激活和梯度估计模型复杂度的方法，检验"更简单的解决方案泛化更好"这一主流信念。^[].md]
+研究评估了多种基于激活和梯度估计模型复杂度的方法，检验"更简单的解决方案泛化更好"这一主流信念。
 
 **测试的五种指标**：
 
@@ -6037,7 +6146,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 研究在两个微调基础评估上追踪了 mode-hopping：Out-of-context reasoning 和 Emergent Misalignment。后者尤其值得安全关注——模型在预训练的不同阶段可能对不安全代码的微调产生截然不同的对齐泛化行为：有时微调后的模型会表现出广泛的 misalignment，有时则不会。这种不可预测性意味着，仅依靠最终检查点或标准后训练流程无法保证对齐的鲁棒性。研究者建议，对齐策略应该包含对预训练动态的主动监控，选择处于"泛化窗口"的特定检查点，而非假设最终模型天然具有最强的对齐能力 。
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## 实践启示
 
@@ -6059,7 +6168,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 - **鲁棒对齐可能需要选择处于"泛化窗口"的特定检查点**：而非依赖最终模型
 - **预训练动态的深入理解可能启发新架构和优化技巧**：当前 LLM 的泛化动态显然远非最优
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ## 作者观点
 
@@ -6080,11 +6189,11 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 - 应接受预训练动态是复杂的：在大规模多任务学习下，可泛化解决方案可以是简单的或复杂的
 - 解决方案的动态不会被任何单一的、简单的故事（如吸收-压缩）所捕捉
 
-→ [[raw/articles/generalization-dynamics-pre-training-jiaxin-wen|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
 ---
 
-## Ch15.058 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.060 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
@@ -6158,7 +6267,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.059 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.061 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
 

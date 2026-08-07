@@ -39,10 +39,10 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 
 ## 相关实体
 - [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1550-anthropic-claude.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/471-agent-skills.html)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/782-claude-managed-agents.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/477-agent-skills.html)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/612-claude-managed-agents.html)
 - [Anthropic 12 Mcp Production Patterns](../ch01/1533-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/340-skill.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/344-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture.md)
 

@@ -49,7 +49,7 @@ print(result['content'][0]['text'])
 
 ### 2. 通过 Bedrock AgentCore 集成
 
-在 [Amazon Bedrock AgentCore](../ch04/572-amazon-bedrock-agentcore-harness-ga-api-agent.html) 中，可以将 OpenAI 模型配置为 Agent 的推理引擎，实现完整的工具调用、记忆管理和多步推理：
+在 [Amazon Bedrock AgentCore](../ch04/574-amazon-bedrock-agentcore-harness-ga-api-agent.html) 中，可以将 OpenAI 模型配置为 Agent 的推理引擎，实现完整的工具调用、记忆管理和多步推理：
 
 ```json
 {
@@ -62,7 +62,7 @@ print(result['content'][0]['text'])
 
 ### 3. 作为 Codex Agent 的推理后端
 
-[OpenAI Codex on Bedrock](../ch11/181-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
+[OpenAI Codex on Bedrock](../ch11/308-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
 
 ## 模型对比与选型
 
@@ -102,7 +102,7 @@ GPT-5.5 在 Bedrock 上表现出显著的 Agentic Coding 能力提升：
 
 ### 安全合规
 
-通过 [Bedrock AgentCore 安全加固](../ch11/273-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)，可以为 OpenAI 模型的调用叠加多层防护：
+通过 [Bedrock AgentCore 安全加固](../ch11/274-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)，可以为 OpenAI 模型的调用叠加多层防护：
 - WAF 策略：过滤恶意输入和提示注入攻击
 - 数据加密：TLS 传输加密 + KMS 静态加密
 - 审计日志：所有模型调用写入 CloudTrail，满足 SOC2/GDPR 合规要求
@@ -115,7 +115,7 @@ Bedrock 的一大优势是可以在同一平台上混合使用 OpenAI 和 [Anthr
 - **安全审查**：使用 Claude 做代码安全审计（取长补短）
 - **成本优化**：简单任务用 Claude Haiku，复杂任务用 GPT-5.5
 
-这种混合策略已在 [某头部科技公司](../ch11/137-aws-bedrock-agentcore-quality-optimization-flywheel.html) 的生产环境中验证，综合成本降低 30-40%，同时保持输出质量。
+这种混合策略已在 [某头部科技公司](../ch11/138-aws-bedrock-agentcore-quality-optimization-flywheel.html) 的生产环境中验证，综合成本降低 30-40%，同时保持输出质量。
 
 ## 深度分析
 
@@ -149,13 +149,13 @@ Codex 作为编码 Agent 在 Bedrock 上的部署模式，代表了 AI 编码工
 
 ## 相关实体
 
-- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/181-amazon-bedrock.html)
-- [Amazon Bedrock AgentCore Harness GA](../ch04/572-amazon-bedrock-agentcore-harness-ga-api-agent.html)
-- [AWS Bedrock Multi-Agent Collaboration Guide](../ch11/017-aws-bedrock.html)
-- [Securing Bedrock AgentCore with AWS WAF](../ch11/273-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)
+- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/308-amazon-bedrock.html)
+- [Amazon Bedrock AgentCore Harness GA](../ch04/574-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [AWS Bedrock Multi-Agent Collaboration Guide](../ch11/020-aws-bedrock.html)
+- [Securing Bedrock AgentCore with AWS WAF](../ch11/274-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)
 - [LiteLLM + Bedrock Cost Control](../ch11/050-litellm-amazon-bedrock.html)
-- [Bedrock AgentCore Quality Optimization Flywheel](../ch11/137-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [Deep Agents on Bedrock AgentCore](../ch04/601-agent-orchestration.html)
+- [Bedrock AgentCore Quality Optimization Flywheel](../ch11/138-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- [Deep Agents on Bedrock AgentCore](../ch04/604-agent-orchestration.html)
 
 ---
 
