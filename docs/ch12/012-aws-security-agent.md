@@ -353,10 +353,10 @@ AWS Security Agent 的 Cross-Account VPC 能力解决了金融科技公司长期
 **合规报告能力选型**：安全工具的选型应将"可交付合规报告"作为核心评估维度。对于 PCI DSS、SOC 2、ISO 27001 等认证要求下的支付企业，工具输出的漏洞报告必须能够直接满足内外部审计的结构化要求，而非仅提供技术性漏洞列表 。
 
 ## 相关实体
-- [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](ch12/003-token.html)
+- [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](ch12/002-token.html)
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/088-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01/433-aws.html)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/181-amazon-bedrock.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/308-amazon-bedrock.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/237-amazon-quick.html)
 
 ---

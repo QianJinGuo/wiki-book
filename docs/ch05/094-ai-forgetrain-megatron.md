@@ -63,14 +63,14 @@ AI 写代码成本趋近于零 → 没有必要继续做大而全通用框架 �
 **4. 国产算力生态的追赶路径。** 通过 AI 自动化弥补人类工程师数量和经验上的差距，是一个值得关注的思路。但前提是能够建立有效的评测体系，让 AI 知道往哪个方向优化。
 
 ## 相关实体
-- [Ai Coding Agent Memory System](../ch04/399-ai-coding-agent.html)
-- [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/584-deepseek.html)
+- [Ai Coding Agent Memory System](../ch04/401-ai-coding-agent.html)
+- [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/799-deepseek.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](ch05/022-ai-native.html)
 - [Karpathy Claude Md Rules](../ch01/423-claude-md.html)
 - [Tmall Ai Coding Practice Guide](ch05/121-ai-coding.html)
 
 - [Minimax M3 Frontier Open Source Model](../ch09/072-minimax-m3-frontier.html)
-- [Chromium Ai Coding Development System](../ch09/058-chromium-ai-coding.html)
+- [Chromium Ai Coding Development System](../ch09/060-chromium-ai-coding.html)
 - [Loongsuite Pilot Sls Ai Coding Metrics Practice](../ch01/1347-pilot-sls-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

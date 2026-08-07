@@ -139,8 +139,8 @@ iii 最值得学习的不是它的具体功能，而是它的设计哲学：找�
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](ch01/1533-anthropic.html)
 - [Anthropic 12 Mcp Production Patterns](ch01/1533-anthropic.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch01/1533-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/340-skill.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/476-anthropic-claude-code.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/344-skill.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/480-anthropic-claude-code.html)
 
 - [Anthropic Long Running Agent Architecture 6H Retroforge](ch01/1533-anthropic.html)
 

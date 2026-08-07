@@ -2,7 +2,7 @@
 
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
-> 本章收录 **41 篇**实体，按深度递增排列。
+> 本章收录 **42 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 39 |
+| ⭐⭐ 工程师 | 需编程基础 | 40 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -2146,212 +2146,7 @@ BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 g
 
 ---
 
-## Ch02.013 Karpathy CLAUDE.md — 四条行为准则让 AI 编程 Agent 减少结构性失败
-
-> 📊 Level ⭐⭐ | 10.9KB | `entities/karpathy-claude-md-rules.md`
-
-## 背景与传播轨迹
-
-- **Karpathy 原始推文**：2026 年 1 月 26 日发布，分享 AI 编程工作流最大变化——从 80% 手动写代码 → 80% 靠 Agent 生成
-- **推文热度**：近 800 万次浏览
-- **GitHub Star 增长曲线**：一天 6000 Star，一周 4 万，三个月 11 万，跻身 GitHub 历史 Star 数 Top 100
-- **文件规模**：原始 CLAUDE.md 仅 65 行，MIT 协议，采用成本极低
-
-## 原始 CLAUDE.md 全文
-
-```markdown
-
-# CLAUDE.md
-Behavioral guidelines to reduce common LLM coding mistakes.
-
-## 1. Think Before Coding
-Don't assume. Don't hide confusion. Surface tradeoffs.
-
-- State your assumptions explicitly. If uncertain, ask.
-- If multiple interpretations exist, present them.
-- If a simpler approach exists, say so. Push back when warranted.
-- If something is unclear, stop. Name what's confusing. Ask.
-
-## 2. Simplicity First
-Minimum code that solves the problem. Nothing speculative.
-
-- No features beyond what was asked.
-- No abstractions for single-use code.
-- No "flexibility" or "configurability" that wasn't requested.
-- No error handling for impossible scenarios.
-- If you write 200 lines and it could be 50, rewrite it.
-
-## 3. Surgical Changes
-Touch only what you must. Clean up only your own mess.
-
-- Don't "improve" adjacent code, comments, or formatting.
-- Don't refactor things that aren't broken.
-- Match existing style.
-- Your changes create orphans: remove unused imports/variables/functions.
-- Don't remove pre-existing dead code unless asked.
-- Test: every changed line should trace directly to the user's request.
-
-## 4. Goal-Driven Execution
-Define success criteria. Loop until verified.
-
-- "Add validation" → "Write tests for invalid inputs, then make them pass"
-- "Fix the bug" → "Write a test that reproduces it, then make it pass"
-- "Refactor X" → "Ensure tests pass before and after"
-- For multi-step tasks: state plan with verify checkpoints.
-
-These guidelines are working if:
-fewer unnecessary changes in diffs, fewer rewrites due to overcomplication,
-and clarifying questions come before implementation rather than after mistakes.
-```
-
-## 经典失败案例
-
-每个用过 AI 编程工具的开发者都碰过同样的墙：^[].md]
-
-> 让 AI 加一个小的缓存层，它把函数签名重写了，引入了一个没有要求的依赖注入模式，把缓存包在了一个暴露出八个方法的类里——缓存本身只有三行。
-
-这不是极端案例，这是**默认行为**。
-
-## 四条行为准则
-
-### 1. Think Before Coding
-
-**针对**：AI 遇到模糊需求时用"听起来合理"的答案填上空，然后往下冲，不停下来问。^[].md]
-
-**规则**：State your assumptions explicitly. If uncertain, ask. If multiple interpretations exist, present them.^[].md]
-
-**改变交互流程**：用户给需求 → AI **先提出歧义** → 澄清之后再实现（而不是：用户纠错多轮循环）。^[].md]
-
-### 2. Simplicity First
-
-**针对**：AI 偏向生成比必要更多的代码（复杂=更完整/专业的训练信号）。^[].md]
-
-**规则**：Minimum code that solves the problem. Nothing speculative.^[].md]
-
-- 没人要求的 feature 不加
-- 用一次的代码不抽象
-- 不可能发生的异常不防御
-- 没被要求"灵活可配置"就不搞扩展性
-
-**自检问题**："一个老工程师看到这些代码会不会觉得过度设计？"如果会，重写。^[].md]
-
-### 3. Surgical Changes
-
-**针对**：AI 改代码时"顺便优化一下"——在真实系统里很危险。^[].md]
-
-**规则**：Touch only what you must. Clean up only your own mess.^[].md]
-
-- 只改任务要求的部分，不顺便优化周边
-- 不重构没坏的东西
-- 你的改动带来的孤儿代码要清掉；之前存在的死代码不删，除非明确要求
-
-**验收标准**：每一行改动都能追溯回用户的请求。^[].md]
-
-### 4. Goal-Driven Execution
-
-**针对**：没有明确完成标准，AI 在"感觉差不多了"停下来，而不是在"确实对了"时停下。^[].md]
-
-**规则**：Transform tasks into verifiable goals.^[].md]
-
-- "加校验" → "为无效输入写测试，然后让测试通过"
-- "修 bug" → "写一个能复现 bug 的测试，然后让它通过"
-- "重构 X" → "确保重构前后测试都通过"
-
-多步骤任务先列计划，每步说清楚验收方式。^[].md]
-
-## 适用场景
-
-| 场景 | 用法 |
-|------|------|
-| 全新项目 | 直接放进根目录，或 `/init` 生成后合并 |
-| 已有 CLAUDE.md | 末尾加 `## Behavioral Guidelines` 小节叠加 |
-| 全局生效 | 放 home 目录，提交版本控制，团队共享 |
-| Cursor | 换文件名即可（仓库提供两个版本） |
-
-## 为什么爆火
-
-Karpathy 做的事情是用准确的语言把大家的挫败感说了出来。Forrest Chang 把它变成了一个可以直接用的文件（65 行，MIT 协议），采用成本极低——粘贴进根目录，三十秒搞定。^[].md]
-
-这不是泛泛的"编程建议"，而是直指 AI 编程 Agent 的四种**结构性失败模式**——这些失败不是偶发的，而是 AI 训练目标和工程执行之间的系统性错配。^[].md]
-
-## 量化效果
-
-| 配置 | 错误率 | 遵循率 |
-|------|--------|--------|
-| 无 CLAUDE.md | 41% | — |
-| Karpathy 4 条 | ~3% | 78% |
-| 扩展 12 条 | 3% | 76% |
-| 14+ 条 | — | 52%（骤降）|
-
-> **关键发现**：超过 14 条规则后遵循率骤降 24 个点，存在认知带宽的物理限制。规则数量与遵循率呈倒 U 型曲线——在 6-12 条范围内时每条规则的边际认知成本低于临界值，超过后规则之间开始竞争上下文资源。
-
-## 深度分析
-
-### 四条准则针对的结构性失败根因
-
-Karpathy 总结的四条准则不是泛泛的"编程建议"，而是直指 AI 编程 Agent 的四种**结构性失败模式**——这些失败不是偶发的，而是 AI 训练目标和工程执行之间的系统性错配。^[].md]
-
-**自信猜测（Think Before Coding 针对）**：AI 在预训练中学习的是"给出完整答案"，奖励信号来自答案的完整性而非正确性。遇到模糊需求时，AI 的默认策略是"补全"而非"提问"——因为训练数据中，提问者通常会持续提供信息，而完整的方案更受奖励。这是 AI 不主动澄清的根本原因，不是态度问题，是训练目标问题。^[].md]
-
-**过度设计（Simplicity First 针对）**：AI 偏向生成更多代码，是因为复杂代码在训练语料中往往与"专业""完整""高级"等正面标签共现。少写代码在训练信号上是"懒惰"的，模型没有内在动机选择最小化实现。^[].md]
-
-**顺手优化（Surgical Changes 针对）**：改代码时"顺手优化周边"在人类工程师中是良好习惯，但 AI 这样做会导致两类问题：一是改动范围不可控，引入原本不需要修的 bug；二是优化方向的奖励信号缺失（没有人在代码审查中给"顺手清理"打高分）。^[].md]
-
-**模糊完成标准（Goal-Driven Execution 针对）**：AI 停止的时机由"模型觉得自己答完了"决定，而不是"是否真正满足用户需求"。这是 RL 环境中稀疏奖励的标准问题——没有明确的完成信号，AI 会在"差不多对了"时停止，而不是在"确实对了"时停止。^[].md]
-
-### 为什么这四条规则能真正起作用
-
-65 行 MIT 协议的 CLAUDE.md 能获得 11 万星，不只是因为"说得好听"，而是因为它把抽象原则转化成了**可验证的检查条件**。^[].md]
-
-- Think Before Coding → "每一行改动都能追溯回用户的请求"
-- Simplicity First → "一个老工程师看到这些代码会不会觉得过度设计"
-- Surgical Changes → 改动范围的边界是可枚举的
-- Goal-Driven Execution → 任务先列计划，每步有验收方式
-
-这种"原则 → 可检查条件"的转化，是让规则真正被执行而非被忽略的关键。^[].md]
-
-## 实践启示
-
-### 对 AI 编程 Agent 开发者的建议
-
-1. **在 Agent 系统层面实现 Think Before Coding**：不要依赖模型的自觉，而要在调度层强制要求模型先输出"歧义列表"再执行。可以在任务初始化阶段插入一个强制性的"澄清节点"，只有当歧义列表为空或全部标记为 resolved 时，才允许进入执行阶段。
-
-2. **用约束而非引导来实施 Simplicity First**：与其告诉模型"要简洁"，不如在系统层面对代码输出的 token 预算进行硬性限制，或者在调度层增加"复杂度惩罚"——对超出必要规模的代码变更要求模型额外论证每个新增组件的必要性。
-
-3. **把 Surgical Changes 变成审计日志**：在代码变更的 diff 阶段，记录每一行改动与原始用户请求的映射关系。这不仅有助于验收，也能在模型做出超范围变更时提供可追溯的证据。
-
-4. **Goal-Driven Execution 的工程实现**：将任务验收条件结构化——不是自然语言描述的"完成标准"，而是可执行的验证脚本或测试用例。AI 生成的测试本身就是完成标准的外化形式。
-
-### 对团队引入 CLAUDE.md 的建议
-
-1. **优先级：全新项目 > 已有项目**：在已有项目中使用时，CLAUDE.md 会对历史代码产生"不一致性感"，建议先在 feature branch 或新模块中试用。
-
-2. **不要直接覆盖已有的 CLAUDE.md**：叠加 `## Behavioral Guidelines` 小节，比替换整个文件更安全，也更容易被团队接受。
-
-3. **针对团队工作流定制 Simplicity First 规则**：原文四条基础规则是通用版，但每个团队的"过度设计"标准不同。建议在 CLAUDE.md 中明确哪些是团队不允许的结构（如没有要求的依赖注入、过度抽象的接口），使其可检查。
-
-### 对 AI 编程评估框架的启示
-
-当前的 AI 编程 benchmark 主要评估**正确性**（代码能否跑通）和**效率**（用了多少步/时间），但缺乏对**结构性失败率**的测量。建议增加以下指标：^[].md]
-
-- **歧义未澄清率**：任务有歧义时，模型主动提问的比例
-- **超范围变更率**：实际改动超出任务要求的比例
-- **最小化实现率**：新增代码中真正必要的代码行数占比
-- **验收条件达成率**：任务完成后是否真正满足最初的需求
-
-## 相关链接
-
-- **GitHub**：https://github.com/forrestchang/andrej-karpathy-skills（65 行，MIT 协议，134K+ stars）
-- **Karpathy 原推**：2026-01-26
-- **扩展版本**：[[entities/claude-code-12-rules-karpathy-extension]（新增 8 条覆盖 agent 编排场景）
-
-## 相关实体
-
-- [[moc/coding-agent-practice|MOC]
-
----
-
-## Ch02.014 Skills赏析：使用skills-refiner提升skill质量
+## Ch02.013 Skills赏析：使用skills-refiner提升skill质量
 
 > 📊 Level ⭐⭐ | 10.8KB | `entities/skills-refiner-design-quality-evaluation-framework.md`
 
@@ -2465,6 +2260,211 @@ skills-refiner 的两阶段框架（诊断→精炼 / 提取→整合）本质�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-introducing-skills.md)
 
 - [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
+
+---
+
+## Ch02.014 Karpathy CLAUDE.md — 四条行为准则让 AI 编程 Agent 减少结构性失败
+
+> 📊 Level ⭐⭐ | 10.8KB | `entities/karpathy-claude-md-rules.md`
+
+## 背景与传播轨迹
+
+- **Karpathy 原始推文**：2026 年 1 月 26 日发布，分享 AI 编程工作流最大变化——从 80% 手动写代码 → 80% 靠 Agent 生成
+- **推文热度**：近 800 万次浏览
+- **GitHub Star 增长曲线**：一天 6000 Star，一周 4 万，三个月 11 万，跻身 GitHub 历史 Star 数 Top 100
+- **文件规模**：原始 CLAUDE.md 仅 65 行，MIT 协议，采用成本极低
+
+## 原始 CLAUDE.md 全文
+
+```markdown
+
+# CLAUDE.md
+Behavioral guidelines to reduce common LLM coding mistakes.
+
+## 1. Think Before Coding
+Don't assume. Don't hide confusion. Surface tradeoffs.
+
+- State your assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
+
+## 2. Simplicity First
+Minimum code that solves the problem. Nothing speculative.
+
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
+
+## 3. Surgical Changes
+Touch only what you must. Clean up only your own mess.
+
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style.
+- Your changes create orphans: remove unused imports/variables/functions.
+- Don't remove pre-existing dead code unless asked.
+- Test: every changed line should trace directly to the user's request.
+
+## 4. Goal-Driven Execution
+Define success criteria. Loop until verified.
+
+- "Add validation" → "Write tests for invalid inputs, then make them pass"
+- "Fix the bug" → "Write a test that reproduces it, then make it pass"
+- "Refactor X" → "Ensure tests pass before and after"
+- For multi-step tasks: state plan with verify checkpoints.
+
+These guidelines are working if:
+fewer unnecessary changes in diffs, fewer rewrites due to overcomplication,
+and clarifying questions come before implementation rather than after mistakes.
+```
+
+## 经典失败案例
+
+每个用过 AI 编程工具的开发者都碰过同样的墙：
+
+> 让 AI 加一个小的缓存层，它把函数签名重写了，引入了一个没有要求的依赖注入模式，把缓存包在了一个暴露出八个方法的类里——缓存本身只有三行。
+
+这不是极端案例，这是**默认行为**。
+
+## 四条行为准则
+
+### 1. Think Before Coding
+
+**针对**：AI 遇到模糊需求时用"听起来合理"的答案填上空，然后往下冲，不停下来问。
+
+**规则**：State your assumptions explicitly. If uncertain, ask. If multiple interpretations exist, present them.
+
+**改变交互流程**：用户给需求 → AI **先提出歧义** → 澄清之后再实现（而不是：用户纠错多轮循环）。
+
+### 2. Simplicity First
+
+**针对**：AI 偏向生成比必要更多的代码（复杂=更完整/专业的训练信号）。
+
+**规则**：Minimum code that solves the problem. Nothing speculative.
+
+- 没人要求的 feature 不加
+- 用一次的代码不抽象
+- 不可能发生的异常不防御
+- 没被要求"灵活可配置"就不搞扩展性
+
+**自检问题**："一个老工程师看到这些代码会不会觉得过度设计？"如果会，重写。
+
+### 3. Surgical Changes
+
+**针对**：AI 改代码时"顺便优化一下"——在真实系统里很危险。
+
+**规则**：Touch only what you must. Clean up only your own mess.
+
+- 只改任务要求的部分，不顺便优化周边
+- 不重构没坏的东西
+- 你的改动带来的孤儿代码要清掉；之前存在的死代码不删，除非明确要求
+
+**验收标准**：每一行改动都能追溯回用户的请求。
+
+### 4. Goal-Driven Execution
+
+**针对**：没有明确完成标准，AI 在"感觉差不多了"停下来，而不是在"确实对了"时停下。
+
+**规则**：Transform tasks into verifiable goals.
+
+- "加校验" → "为无效输入写测试，然后让测试通过"
+- "修 bug" → "写一个能复现 bug 的测试，然后让它通过"
+- "重构 X" → "确保重构前后测试都通过"
+
+多步骤任务先列计划，每步说清楚验收方式。
+
+## 适用场景
+
+| 场景 | 用法 |
+|------|------|
+| 全新项目 | 直接放进根目录，或 `/init` 生成后合并 |
+| 已有 CLAUDE.md | 末尾加 `## Behavioral Guidelines` 小节叠加 |
+| 全局生效 | 放 home 目录，提交版本控制，团队共享 |
+| Cursor | 换文件名即可（仓库提供两个版本） |
+
+## 为什么爆火
+
+Karpathy 做的事情是用准确的语言把大家的挫败感说了出来。Forrest Chang 把它变成了一个可以直接用的文件（65 行，MIT 协议），采用成本极低——粘贴进根目录，三十秒搞定。
+
+这不是泛泛的"编程建议"，而是直指 AI 编程 Agent 的四种**结构性失败模式**——这些失败不是偶发的，而是 AI 训练目标和工程执行之间的系统性错配。
+
+## 量化效果
+
+| 配置 | 错误率 | 遵循率 |
+|------|--------|--------|
+| 无 CLAUDE.md | 41% | — |
+| Karpathy 4 条 | ~3% | 78% |
+| 扩展 12 条 | 3% | 76% |
+| 14+ 条 | — | 52%（骤降）|
+
+> **关键发现**：超过 14 条规则后遵循率骤降 24 个点，存在认知带宽的物理限制。规则数量与遵循率呈倒 U 型曲线——在 6-12 条范围内时每条规则的边际认知成本低于临界值，超过后规则之间开始竞争上下文资源。
+
+## 深度分析
+
+### 四条准则针对的结构性失败根因
+
+Karpathy 总结的四条准则不是泛泛的"编程建议"，而是直指 AI 编程 Agent 的四种**结构性失败模式**——这些失败不是偶发的，而是 AI 训练目标和工程执行之间的系统性错配。
+
+**自信猜测（Think Before Coding 针对）**：AI 在预训练中学习的是"给出完整答案"，奖励信号来自答案的完整性而非正确性。遇到模糊需求时，AI 的默认策略是"补全"而非"提问"——因为训练数据中，提问者通常会持续提供信息，而完整的方案更受奖励。这是 AI 不主动澄清的根本原因，不是态度问题，是训练目标问题。
+
+**过度设计（Simplicity First 针对）**：AI 偏向生成更多代码，是因为复杂代码在训练语料中往往与"专业""完整""高级"等正面标签共现。少写代码在训练信号上是"懒惰"的，模型没有内在动机选择最小化实现。
+
+**顺手优化（Surgical Changes 针对）**：改代码时"顺手优化周边"在人类工程师中是良好习惯，但 AI 这样做会导致两类问题：一是改动范围不可控，引入原本不需要修的 bug；二是优化方向的奖励信号缺失（没有人在代码审查中给"顺手清理"打高分）。
+
+**模糊完成标准（Goal-Driven Execution 针对）**：AI 停止的时机由"模型觉得自己答完了"决定，而不是"是否真正满足用户需求"。这是 RL 环境中稀疏奖励的标准问题——没有明确的完成信号，AI 会在"差不多对了"时停止，而不是在"确实对了"时停止。
+
+### 为什么这四条规则能真正起作用
+
+65 行 MIT 协议的 CLAUDE.md 能获得 11 万星，不只是因为"说得好听"，而是因为它把抽象原则转化成了**可验证的检查条件**。
+
+- Think Before Coding → "每一行改动都能追溯回用户的请求"
+- Simplicity First → "一个老工程师看到这些代码会不会觉得过度设计"
+- Surgical Changes → 改动范围的边界是可枚举的
+- Goal-Driven Execution → 任务先列计划，每步有验收方式
+
+这种"原则 → 可检查条件"的转化，是让规则真正被执行而非被忽略的关键。
+
+## 实践启示
+
+### 对 AI 编程 Agent 开发者的建议
+
+1. **在 Agent 系统层面实现 Think Before Coding**：不要依赖模型的自觉，而要在调度层强制要求模型先输出"歧义列表"再执行。可以在任务初始化阶段插入一个强制性的"澄清节点"，只有当歧义列表为空或全部标记为 resolved 时，才允许进入执行阶段。
+
+2. **用约束而非引导来实施 Simplicity First**：与其告诉模型"要简洁"，不如在系统层面对代码输出的 token 预算进行硬性限制，或者在调度层增加"复杂度惩罚"——对超出必要规模的代码变更要求模型额外论证每个新增组件的必要性。
+
+3. **把 Surgical Changes 变成审计日志**：在代码变更的 diff 阶段，记录每一行改动与原始用户请求的映射关系。这不仅有助于验收，也能在模型做出超范围变更时提供可追溯的证据。
+
+4. **Goal-Driven Execution 的工程实现**：将任务验收条件结构化——不是自然语言描述的"完成标准"，而是可执行的验证脚本或测试用例。AI 生成的测试本身就是完成标准的外化形式。
+
+### 对团队引入 CLAUDE.md 的建议
+
+1. **优先级：全新项目 > 已有项目**：在已有项目中使用时，CLAUDE.md 会对历史代码产生"不一致性感"，建议先在 feature branch 或新模块中试用。
+
+2. **不要直接覆盖已有的 CLAUDE.md**：叠加 `## Behavioral Guidelines` 小节，比替换整个文件更安全，也更容易被团队接受。
+
+3. **针对团队工作流定制 Simplicity First 规则**：原文四条基础规则是通用版，但每个团队的"过度设计"标准不同。建议在 CLAUDE.md 中明确哪些是团队不允许的结构（如没有要求的依赖注入、过度抽象的接口），使其可检查。
+
+### 对 AI 编程评估框架的启示
+
+当前的 AI 编程 benchmark 主要评估**正确性**（代码能否跑通）和**效率**（用了多少步/时间），但缺乏对**结构性失败率**的测量。建议增加以下指标：
+
+- **歧义未澄清率**：任务有歧义时，模型主动提问的比例
+- **超范围变更率**：实际改动超出任务要求的比例
+- **最小化实现率**：新增代码中真正必要的代码行数占比
+- **验收条件达成率**：任务完成后是否真正满足最初的需求
+
+## 相关链接
+
+- **GitHub**：https://github.com/forrestchang/andrej-karpathy-skills（65 行，MIT 协议，134K+ stars）
+- **Karpathy 原推**：2026-01-26
+- **扩展版本**：[[entities/claude-code-12-rules-karpathy-extension]（新增 8 条覆盖 agent 编排场景）
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---
 
@@ -2953,7 +2953,164 @@ AI 评分是「效率」工具，用户评分是「质量」工具。两者结�
 
 ---
 
-## Ch02.019 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
+## Ch02.019 qoder skills
+
+> 📊 Level ⭐⭐ | 9.4KB | `entities/qoder-skills.md`
+
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
+
+## 核心概念
+Skill 是 AI 世界里的菜谱（Recipe），告诉 AI 如何处理特定任务或工作流。
+
+### 三级渐进式披露机制
+1. **YAML Frontmatter** - 元数据头部，始终加载在系统提示词中 
+2. **SKILL.md 正文** - 当 AI 判断相关时加载完整正文 
+3. **scripts/references/assets** - 按需加载的参考文件 
+
+### Skill vs 其他工具
+| 维度 | Skill | Slash Command | MCP | Rules | 
+|------|-------|---------------|-----|-------| 
+| 触发方式 | AI 自主判断 + 可主动 `/` 调用 | 用户主动输入 `/xxx` | 工具调用时自动触发 | 始终在上下文中生效 | 
+| 内容复杂度 | 高：多步骤、脚本、资源 | 低：固定短提示词 | 中：工具接口定义 | 低：全局约束规则 | 
+| 可分发性 | ✅ 适合团队共享 | ❌ 难以共享 | ✅ 通过服务端共享 | ❌ 通常个人配置 | 
+
+## 使用场景
+1. **文档与资产创建** - 生成符合特定风格、规范的输出物 
+2. **工作流自动化** - 多步骤流程，期望每次输出结果一致 
+3. **MCP 能力增强** - 有了工具访问权限，但缺乏"怎么用好"的工作流知识 
+
+## 安装方式
+```bash 
+npx skills add <skill-name> 
+``` 
+
+## 深度分析
+### 1. Skill 的本质：从"提示词"到"工作流知识"
+Skill 的设计哲学超越了传统提示词工程（prompt engineering）的范畴。传统提示词本质上是"给 AI 的指令"，是一次性、上下文绑定的；而 Skill 本质上是"可复用的工作流知识"，是跨会话、跨项目的资产。
+
+这一定位的转变意义重大：当 AI 编程工具能够记住你的偏好、流程和领域知识时，人机协作的边际成本才能真正下降。否则，每次新会话都需要重新"调教"AI，高成本、低确定性、难以复现。Skill 正是解决这一问题的标准化方案。
+
+### 2. 三级渐进式披露机制的设计智慧
+Progressive Disclosure（渐进式披露）是 Skill 架构中最精妙的设计。它解决了一个核心矛盾：**上下文窗口有限 vs. 知识容量无限**。
+
+传统的解决方案是"要么全加载（撑爆上下文），要么不加载（无法利用知识）"。Skill 的三级机制提供了第三种路径：
+
+- 第一级（Frontmatter）：始终可见，提供"目录"功能，让 AI 知道何时应该调用该 Skill
+- 第二级（SKILL.md）：按需加载，提供完整执行细节
+- 第三级（references/scripts）：仅在执行过程中引用，保持主文件精简
+这一设计的隐含假设是：**知识的使用频率呈幂律分布**。少数 Skill 会被频繁调用，多数 Skill 则长期闲置。渐进式披露确保高频 Skill 的完整知识高效加载，低频 Skill 的元数据也能让 AI 在需要时准确识别。
+
+### 3. Skill 与 MCP 的互补关系
+文章清晰阐明了 Skill 与 MCP 的分工：**MCP 解决"AI 能做什么"（工具访问），Skill 解决"AI 应该怎么做"（工作流知识）**。
+
+这是一个常被忽视的关键区分。许多 AI 开发者热衷于"连接更多工具"（MCP），却忽略了"如何用好工具"（Skill）。结果是：AI 拥有了执行能力，但缺乏执行策略——可以调用 API，但不知道何时调用、调用后如何处理结果。
+
+两者结合的范式是：**MCP 提供专业厨房，Skill 提供菜谱**。用户无需每次从头解释，AI 也能稳定交付高质量结果。
+
+### 4. Skill 作为团队知识沉淀载体
+Skill 的可分发性和开放标准属性，使其成为团队知识管理的理想载体。传统情况下，团队最佳实践存在于"老员工的脑子里"或个人笔记中，难以系统化传承。Skill 将这些隐性知识显性化、标准化：
+
+- **显性化**：将模糊的"经验"转化为清晰的"执行步骤"
+- **版本化**：通过 Git 管理 Skill，追踪知识演进
+- **可测试**：Skill 的执行结果可以验证，知识的质量有客观标准
+- **可分发**：一份 Skill，多个平台通用，避免重复维护
+这对于 AI 时代的团队知识管理具有深远意义：**当 AI 能够可靠地执行 Skill 时，团队的工作流知识就变成了一种可自动化的资产**。
+
+### 5. Skill 的测试与迭代机制
+文章提出的 Skill 生命周期管理方法值得关注。与传统软件开发类似，Skill 需要"测试"和"迭代"：
+
+- **触发测试**：确保 Skill 在正确的时机加载
+- **功能测试**：确保输出结果稳定一致
+- **基线对比**：量化 Skill 带来的改善（减少对话轮次、降低 token 消耗等）
+更值得关注的是"动态优化"机制：**"你刚才的输出中，[问题描述]。请把这个改进固化到 Skill 文件中"**——这意味着 Skill 是"活"的文档，能够随着使用过程中的反馈持续优化。这是 Skill 区别于传统配置文件的核心优势。
+
+## 实践启示
+### 快速上手路线图
+1. **从安装第一个 Skill 开始** 
+   ```bash 
+   npx skills add remotion-best-practice  # 选择 Qoder，Global 安装 
+   ``` 
+   先体验 Skill 的效果，再深入理解原理
+
+2. **用 Quest 模式生成你的第一个 Skill** 
+   ``` 
+   帮我创建一个 Skill，用于 [描述你的需求]
+   ``` 
+   AI 会引导完成所有步骤，降低学习门槛 
+3. **理解三级披露机制** 
+
+   - Frontmatter 的 description 是触发器，决定 AI 何时调用
+   - 正文只写"做什么"和"关键步骤"，5000 词以内
+   - 复杂文档放到 references/，保持主文件精简
+
+### 团队落地策略
+1. **建立团队 Skill 库** 
+
+   - 路径：`<项目根>/.qoder/skills/`（项目级，纳入 Git 版本控制）
+   - 每个团队规范对应一个 Skill
+   - 提交时写清楚变更内容：`feat: add api-standard skill v1.0`
+2. **识别适合 Skill 化的场景** 
+
+   - 重复性工作流（每次都要解释相同流程）
+   - 多步骤流程（期望输出结果一致）
+   - 跨项目规范（团队成员需要遵循相同标准）
+3. **区分 Skill 与其他工具** 
+
+   - 需要调用外部系统 → MCP
+   - 全局约束（语言、格式） → Rules
+   - 一次性快捷操作 → Slash Command
+   - **可复用的标准化工作流 → Skill** ✅
+
+### 避免常见陷阱
+1. **Description 写得太模糊** 
+
+   - ❌ "帮助处理项目"
+   - ✅ "当开发者新增、修改或删除 API 接口时，自动执行本 Skill，完成 API 文档同步、向后兼容性检查和单元测试框架生成"
+2. **Frontmatter 中使用 XML 尖括号** 
+
+   - ❌ `description: Use for <important> cases`
+   - ✅ 纯文本描述，不含 XML 标签
+3. **name 包含保留词或空格** 
+
+   - ❌ `name: My Cool Skill` 或 `name: claude-helper`
+   - ✅ `name: my-cool-skill`（kebab-case，无空格，无 "claude"/"anthropic"）
+4. **正文过于冗长** 
+
+   - 将复杂文档放到 references/，主文件只写引用路径
+   - 步骤编号化，每步只做一件事
+   - 关键验证前置，用 `## 重要` 或 `CRITICAL:` 标注
+
+### 持续优化方法
+1. **诊断触发问题** 
+   ``` 
+   "你什么时候会用 [skill-name] 这个 Skill？" 
+   ``` 
+   AI 会复述 description，根据复述结果判断是否需要调整
+
+2. **监控迭代信号** 
+
+   - Skill 没有自动调用 → description 太模糊或缺少触发词
+   - Skill 总是莫名被调用 → description 太宽泛，加入负向说明
+   - Skill 被调用但 AI 没按步骤执行 → 指令太冗长，关键步骤前置
+3. **用自然语言修改 Skill** 
+   ``` 
+   你刚才的输出中，[问题]。请把这个改进固化到 [skill-name] 中 
+   ``` 
+   这是 Skill 区别于 Slash Command 的核心优势：每次修正都能沉淀
+
+## 参考文章
+-  - Qoder Skills 完全指南
+
+## 相关实体
+- [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-complete-guide.md)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch02.020 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/openclaw-prompt-context-harness.md`
 
@@ -3031,7 +3188,97 @@ before_tool_call阶段的参数校验不仅能防止错误，还能作为"AI行�
 
 ---
 
-## Ch02.020 LLM Wiki 架构
+## Ch02.021 淘宝主播 Agent Harness 工程：六元组框架与直播场景八项实战
+
+> 📊 Level ⭐⭐ | 9.0KB | `entities/taobao-live-anchor-agent-harness-engineering-2026.md`
+
+# 淘宝主播 Agent Harness 工程：六元组框架与直播场景八项实战
+
+## 摘要
+
+淘天集团直播技术团队（大淘宝技术）把 Harness 工程推到极端压力测试场：主播 Agent 面对操作即时生效面向公众（错误无法撤回）、主播注意力极度稀缺（安全必须工程兜底）、多话题高频交织（上下文易污染漂移）、长程可中断要恢复（直播数小时跨端切换）。核心产出：Harness 六元组形式化 H = (E, T, C, S, L, V) + 八项实战（上下文工程/工具调用/Hook/沙箱/五层防御/异常降级/DAG PlanEngine/评测体系）+ Harness 思想重塑的记忆体系（三层记忆/记忆对账/信任度进化/多因子遗忘）。
+
+## Harness 六元组
+
+H = (E, T, C, S, L, V)：
+
+| 元组 | 含义 |
+|------|------|
+| E | Execution Loop 执行循环 |
+| T | Tool Registry 工具注册 |
+| C | Context Management 上下文管理 |
+| S | State Storage 状态存储 |
+| L | Lifecycle Hooks 生命周期钩子 |
+| V | Evaluation Interface 评估接口 |
+
+价值：把 Agent 工程从零散 Prompt 技巧和 if-else 升级为有明确分工的系统架构，任何项目可拿六维度对照。配套「水流理论」：人控方向设边界，AI 边界内自主推进，工程师建「河道闸门护栏」即 Harness。
+
+## 分层架构：业务方写 Skill，框架层兜底
+
+「会变的」与「不变的」彻底拆分：框架层提供执行循环、上下文治理、安全防护、状态持久化、审计观测；业务方以 Skill 声明能力域/风险等级/参数校验，其余框架兜底。存储「逻辑统一、物理分治」——记忆存 Hologres（向量+全文+标量三位一体，混合检索）、技能存 GitLab（版本化管理+预检+Code Review+灰度）、会话存 MySQL（user_id+session_id+state_key 索引，共享存储保多副本状态一致）。
+
+## 八项实战
+
+### 上下文工程：分层压缩 + Reducer + 大上下文卸载
+
+1. **分层压缩**：Token 超阈值走 3 层压缩（历史工具调用/摘要对话轮次/当前轮消息）；超 N 轮触发 Session 级话题分段打场景标签（pre-live/on-live/post-live）
+2. **Reducer 模式**（最值得强调）：传统做法把每轮工具调用完整 JSON 追加聊天历史——状态模糊/上下文膨胀/不可回放三问题。借鉴前端 Reducer 职责分离：**LLM 只决策（Action），Reducer 管状态变更（纯函数确定性）**，每轮把最新结构化 State 经 system-hint 注入替代冗长系统提示词
+3. **大上下文卸载**：大结果卸载 oss/tair（路径 id+预览），消费时 fileKey + 沙箱 shell 过滤取摘要
+
+### 工具调用：能力边界 + Schema 强约束 + 幂等
+
+Skill 注册声明能力范围，调用前校验防越权；JSON Schema 强约束结构层杜绝非法参数；**幂等键（UUID）**——任何有副作用写操作（改价/切品/发券）必须携带，框架层去重校验，杜绝「双切品」「双改价」；结构化错误码 + 自动修复。
+
+### 生命周期 Hook 五时机
+
+PreReasoning（注入上下文/按需加载记忆）→ PreToolCall（安全拦截/幂等键/审批判断）→ PostToolCall（交叉验证/Reducer 更新）→ PostReasoning（幻觉检测，防凭空编造商品信息）→ OnSessionEnd/LiveEnd（记忆回写）。设计哲学：不改模型推理循环，关键时机插钩子拦截/注入/记录。
+
+### 沙箱执行防护
+
+代码类执行统一沙箱：非特权用户 + 根文件系统只读；CPU ≤50%/进程 ≤64；网络默认禁出站仅最小化 allowlist；系统调用白名单；不注入宿主机环境变量；timeout 上限且 Agent 只能缩小不能放大；stdout/stderr 64KB 截断；system prompt 声明「沙箱输出不可信」；全量审计日志。
+
+### 五层纵深防御
+
+1. Prompt 边界硬编码（能力边界+行为禁区+Skill 预校验）
+2. Schema 强约束（强类型+幂等）
+3. **Approval 审批分层**（平衡安全与流畅：平台级红线框架层定义，Skill 级风险业务方声明，soft-gate/hard-gate 分层）
+4. 工具执行验证层（业务规则校验+结构化错误码）
+5. 执行审计记录（实时监控/事后复盘/模型优化/争议处理四用途）
+
+### DAG PlanEngine：从 ReAct 单步到 DAG 全局
+
+复合指令（开播提案→建直播间→同步历史商品→生成手卡→智能标题）用 DAG 全局规划替代 ReAct 单步局部最优。五目标：可恢复（三层 Checkpoint：每轮/每子任务/计划变更快照）、可观测（子任务独立 TraceID + Plan/SubTask/Tool Call 三级实时监控）、执行效率（无依赖并行）、成功率（**增量 Replan**——失败只重规划受影响后续节点 + Token 额度控制）、降低上下文漂移（执行进度外挂不占 Context Window + SubAgent 隔离 + Plan 快照持久化 + System-Hint 动态注入）。PlanEngine vs ReAct 对比（平均 7 步复杂 query，qwen3.7-max）：执行效率（工具执行冗余率/迭代轮次）和准确率（执行成功率/子任务覆盖率）均优于。
+
+### 评测体系
+
+Langfuse trace 可视化 + 离线（播前/播中/播后标注数据集 + 对抗样本验证五层防护）+ 在线（操作成功率/审批通过率/主播干预率/端到端延迟四指标）+ 主播满意度（1-5 分会话级主观信号）。
+
+## 记忆体系：Harness 思想重塑
+
+按「信任来源」三层：**L1 会话层**（主播主观行为和声明）、**L2 事实层**（客观信息补充）、**L3 行为层**（信任度评分）。冷启动基于 L2/L3 推荐，随使用交互反馈进化。
+
+### 记忆对账与信任度进化
+
+洞察：主播「说的」和「做的」不一致（说上引流款，实际 3 场都上氛围款且效果不错）。**记忆对账机制**：矛盾不粗暴覆盖，累积证据达阈值后 Agent 主动和主播确认——尊重 L1 主观意图同时基于客观事实进化，避免「AI 自作主张」破坏信任。**Decision Trace Log** 记录「问什么/Agent 答什么/主播选什么/最终效果」，把 Harness 评估接口（V）可观测数据反向喂给记忆系统。**trust_score** 播后逐条 trace 归因更新，反向决定输出形态：信任度高大胆建议，低则只摆数据不下结论。
+
+### 多因子遗忘
+
+比通用时间衰减精细：直播场景相关性（品类集中度/常播品类策略）+ 信息新鲜度分级（经验型慢衰减/波动型快衰减）+ 时间衰减 + 可信度因子（验证加成/证伪急剧降权/未验证基础衰减）。定时清理（采纳/召回次数 ≤ 阈值）+ 记忆冲突处理（LWW + 自定义优先级，或召回时呈现冲突主动确认）。
+
+## 与其他 Harness 实体的关系
+
+- **与 tdsql-harness-subtraction-l0-l3**：tdsql 讲「删什么」的减法方法论（L0-L3 归属/五道关卡），本文讲「建什么」的加法体系（六元组+八项实战）——互补视角
+- **与 agent-harness-6-runtime-patterns-sdb**：6 运行时模式是通用抽象，本文是直播场景完整落地实例（含记忆/安全/规划特色）
+- **与 tencentdb-agent-memory-hierarchical**：TencentDB 记忆治理侧重检索/晋升/冲突仲裁，本文增加「信任度演化+输出形态自适应」维度——记忆可靠性从正确性扩展到信任关系
+- **与 aws-china-enterprise-agent-evaluation-adlc**：AWS 评估方法论偏框架（两支柱/证据权重），本文给出直播场景的离在线指标落地点（操作成功率/审批通过率/主播干预率/端到端延迟）
+
+## 来源
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taobao-live-anchor-agent-harness-engineering-chengfen-2026.md)
+
+---
+
+## Ch02.022 LLM Wiki 架构
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/llm-wiki-architecture.md`
 
@@ -3135,7 +3382,7 @@ LLM Wiki 体现了一种范式转移：从"检索已有知识"到"构建可演�
 
 ---
 
-## Ch02.021 Skills Registry 公测开启：为企业打造私有的 Skill 管理中心
+## Ch02.023 Skills Registry 公测开启：为企业打造私有的 Skill 管理中心
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/skills-registry-公测开启为企业打造私有的-skill-管理中心.md`
 
@@ -3181,164 +3428,7 @@ Skills Registry 解决的四类困扰（散落各处、权限失控、外部 Ski
 
 ---
 
-## Ch02.022 qoder skills
-
-> 📊 Level ⭐⭐ | 8.2KB | `entities/qoder-skills.md`
-
-> -> [[raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md|原文存档]
-
-## 核心概念
-Skill 是 AI 世界里的菜谱（Recipe），告诉 AI 如何处理特定任务或工作流。^[].md]
-
-### 三级渐进式披露机制
-1. **YAML Frontmatter** - 元数据头部，始终加载在系统提示词中 
-2. **SKILL.md 正文** - 当 AI 判断相关时加载完整正文 
-3. **scripts/references/assets** - 按需加载的参考文件 
-
-### Skill vs 其他工具
-| 维度 | Skill | Slash Command | MCP | Rules | 
-|------|-------|---------------|-----|-------| 
-| 触发方式 | AI 自主判断 + 可主动 `/` 调用 | 用户主动输入 `/xxx` | 工具调用时自动触发 | 始终在上下文中生效 | 
-| 内容复杂度 | 高：多步骤、脚本、资源 | 低：固定短提示词 | 中：工具接口定义 | 低：全局约束规则 | 
-| 可分发性 | ✅ 适合团队共享 | ❌ 难以共享 | ✅ 通过服务端共享 | ❌ 通常个人配置 | 
-
-## 使用场景
-1. **文档与资产创建** - 生成符合特定风格、规范的输出物 
-2. **工作流自动化** - 多步骤流程，期望每次输出结果一致 
-3. **MCP 能力增强** - 有了工具访问权限，但缺乏"怎么用好"的工作流知识 
-
-## 安装方式
-```bash 
-npx skills add <skill-name> 
-``` 
-
-## 深度分析
-### 1. Skill 的本质：从"提示词"到"工作流知识"
-Skill 的设计哲学超越了传统提示词工程（prompt engineering）的范畴。传统提示词本质上是"给 AI 的指令"，是一次性、上下文绑定的；而 Skill 本质上是"可复用的工作流知识"，是跨会话、跨项目的资产。 ^[].md]
-
-这一定位的转变意义重大：当 AI 编程工具能够记住你的偏好、流程和领域知识时，人机协作的边际成本才能真正下降。否则，每次新会话都需要重新"调教"AI，高成本、低确定性、难以复现。Skill 正是解决这一问题的标准化方案。^[].md]
-
-### 2. 三级渐进式披露机制的设计智慧
-Progressive Disclosure（渐进式披露）是 Skill 架构中最精妙的设计。它解决了一个核心矛盾：**上下文窗口有限 vs. 知识容量无限**。 ^[].md]
-
-传统的解决方案是"要么全加载（撑爆上下文），要么不加载（无法利用知识）"。Skill 的三级机制提供了第三种路径： ^[].md]
-
-- 第一级（Frontmatter）：始终可见，提供"目录"功能，让 AI 知道何时应该调用该 Skill
-- 第二级（SKILL.md）：按需加载，提供完整执行细节
-- 第三级（references/scripts）：仅在执行过程中引用，保持主文件精简
-这一设计的隐含假设是：**知识的使用频率呈幂律分布**。少数 Skill 会被频繁调用，多数 Skill 则长期闲置。渐进式披露确保高频 Skill 的完整知识高效加载，低频 Skill 的元数据也能让 AI 在需要时准确识别。^[].md]
-
-### 3. Skill 与 MCP 的互补关系
-文章清晰阐明了 Skill 与 MCP 的分工：**MCP 解决"AI 能做什么"（工具访问），Skill 解决"AI 应该怎么做"（工作流知识）**。 ^[].md]
-
-这是一个常被忽视的关键区分。许多 AI 开发者热衷于"连接更多工具"（MCP），却忽略了"如何用好工具"（Skill）。结果是：AI 拥有了执行能力，但缺乏执行策略——可以调用 API，但不知道何时调用、调用后如何处理结果。 ^[].md]
-
-两者结合的范式是：**MCP 提供专业厨房，Skill 提供菜谱**。用户无需每次从头解释，AI 也能稳定交付高质量结果。^[].md]
-
-### 4. Skill 作为团队知识沉淀载体
-Skill 的可分发性和开放标准属性，使其成为团队知识管理的理想载体。传统情况下，团队最佳实践存在于"老员工的脑子里"或个人笔记中，难以系统化传承。Skill 将这些隐性知识显性化、标准化： ^[].md]
-
-- **显性化**：将模糊的"经验"转化为清晰的"执行步骤"
-- **版本化**：通过 Git 管理 Skill，追踪知识演进
-- **可测试**：Skill 的执行结果可以验证，知识的质量有客观标准
-- **可分发**：一份 Skill，多个平台通用，避免重复维护
-这对于 AI 时代的团队知识管理具有深远意义：**当 AI 能够可靠地执行 Skill 时，团队的工作流知识就变成了一种可自动化的资产**。^[].md]
-
-### 5. Skill 的测试与迭代机制
-文章提出的 Skill 生命周期管理方法值得关注。与传统软件开发类似，Skill 需要"测试"和"迭代"： ^[].md]
-
-- **触发测试**：确保 Skill 在正确的时机加载
-- **功能测试**：确保输出结果稳定一致
-- **基线对比**：量化 Skill 带来的改善（减少对话轮次、降低 token 消耗等）
-更值得关注的是"动态优化"机制：**"你刚才的输出中，[问题描述]。请把这个改进固化到 Skill 文件中"**——这意味着 Skill 是"活"的文档，能够随着使用过程中的反馈持续优化。这是 Skill 区别于传统配置文件的核心优势。^[].md]
-
-## 实践启示
-### 快速上手路线图
-1. **从安装第一个 Skill 开始** 
-   ```bash 
-   npx skills add remotion-best-practice  # 选择 Qoder，Global 安装 
-   ``` 
-   先体验 Skill 的效果，再深入理解原理 ^[].md]
-
-2. **用 Quest 模式生成你的第一个 Skill** 
-   ``` 
-   帮我创建一个 Skill，用于 [描述你的需求]
-   ``` 
-   AI 会引导完成所有步骤，降低学习门槛 
-3. **理解三级披露机制** 
-
-   - Frontmatter 的 description 是触发器，决定 AI 何时调用
-   - 正文只写"做什么"和"关键步骤"，5000 词以内
-   - 复杂文档放到 references/，保持主文件精简
-
-### 团队落地策略
-1. **建立团队 Skill 库** 
-
-   - 路径：`<项目根>/.qoder/skills/`（项目级，纳入 Git 版本控制）
-   - 每个团队规范对应一个 Skill
-   - 提交时写清楚变更内容：`feat: add api-standard skill v1.0`
-2. **识别适合 Skill 化的场景** 
-
-   - 重复性工作流（每次都要解释相同流程）
-   - 多步骤流程（期望输出结果一致）
-   - 跨项目规范（团队成员需要遵循相同标准）
-3. **区分 Skill 与其他工具** 
-
-   - 需要调用外部系统 → MCP
-   - 全局约束（语言、格式） → Rules
-   - 一次性快捷操作 → Slash Command
-   - **可复用的标准化工作流 → Skill** ✅
-
-### 避免常见陷阱
-1. **Description 写得太模糊** 
-
-   - ❌ "帮助处理项目"
-   - ✅ "当开发者新增、修改或删除 API 接口时，自动执行本 Skill，完成 API 文档同步、向后兼容性检查和单元测试框架生成"
-2. **Frontmatter 中使用 XML 尖括号** 
-
-   - ❌ `description: Use for <important> cases`
-   - ✅ 纯文本描述，不含 XML 标签
-3. **name 包含保留词或空格** 
-
-   - ❌ `name: My Cool Skill` 或 `name: claude-helper`
-   - ✅ `name: my-cool-skill`（kebab-case，无空格，无 "claude"/"anthropic"）
-4. **正文过于冗长** 
-
-   - 将复杂文档放到 references/，主文件只写引用路径
-   - 步骤编号化，每步只做一件事
-   - 关键验证前置，用 `## 重要` 或 `CRITICAL:` 标注
-
-### 持续优化方法
-1. **诊断触发问题** 
-   ``` 
-   "你什么时候会用 [skill-name] 这个 Skill？" 
-   ``` 
-   AI 会复述 description，根据复述结果判断是否需要调整 ^[].md]
-
-2. **监控迭代信号** 
-
-   - Skill 没有自动调用 → description 太模糊或缺少触发词
-   - Skill 总是莫名被调用 → description 太宽泛，加入负向说明
-   - Skill 被调用但 AI 没按步骤执行 → 指令太冗长，关键步骤前置
-3. **用自然语言修改 Skill** 
-   ``` 
-   你刚才的输出中，[问题]。请把这个改进固化到 [skill-name] 中 
-   ``` 
-   这是 Skill 区别于 Slash Command 的核心优势：每次修正都能沉淀 ^[].md]
-
-## 参考文章
--  - Qoder Skills 完全指南
-
-## 相关实体
-- [[entities/qoder-skills-complete-guide|Qoder Skills 完全指南]
-
----
-## 关联
-- 相关概念: [[concepts/harness-engineering-framework|Harness Engineering]
-
----
-
-## Ch02.023 Prompt Context Harness 三次演进
+## Ch02.024 Prompt Context Harness 三次演进
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/prompt-context-harness-three-evolutions.md`
 
@@ -3381,7 +3471,7 @@ Skill 的可分发性和开放标准属性，使其成为团队知识管理的�
 
 ---
 
-## Ch02.024 从Prompt、Context到Harness，工程的三次进化与终局之战
+## Ch02.025 从Prompt、Context到Harness，工程的三次进化与终局之战
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/prompt-context-harness-three-evolutions-tencent.md`
 
@@ -3493,7 +3583,7 @@ LLM 底层逻辑是一个极其擅长续写的系统。
 
 ---
 
-## Ch02.025 Claude Design 系统提示词 → web-design-engineer Skill
+## Ch02.026 Claude Design 系统提示词 → web-design-engineer Skill
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/claude-design-skill.md`
 
@@ -3567,7 +3657,7 @@ Claude Design 的验证机制包含一个关键设计：调用 `fork_verifier_ag
 
 ---
 
-## Ch02.026 Agent Skill 编写指南
+## Ch02.027 Agent Skill 编写指南
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/agent-skill-writing.md`
 
@@ -3658,7 +3748,7 @@ metadata:
 
 ---
 
-## Ch02.027 System Prompt vs Post-Training：行为约束该写还是该训？
+## Ch02.028 System Prompt vs Post-Training：行为约束该写还是该训？
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/system-prompt-vs-post-training-behavioral-constraints-2026.md`
 
@@ -3713,7 +3803,7 @@ System Prompt 与 Post-training 是两种截然不同的"行为约束注入方�
 
 ---
 
-## Ch02.028 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
+## Ch02.029 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/agent-tools-research.md`
 
@@ -3830,7 +3920,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 
 ---
 
-## Ch02.029 Claude Code Prompt 与上下文 Harness 设计
+## Ch02.030 Claude Code Prompt 与上下文 Harness 设计
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/claude-code-prompt-context-harness.md`
 
@@ -3876,7 +3966,7 @@ Harness Engineering 的 Permission Engine 三行为模型（Allow/Deny/Ask）是
 
 ---
 
-## Ch02.030 深度解析 Hermes Agent 如何实现\"自进化\"及其 Prompt / Context / Harness 的设计实践
+## Ch02.031 深度解析 Hermes Agent 如何实现\"自进化\"及其 Prompt / Context / Harness 的设计实践
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/hermes-agent-deep-dive-alibaba.md`
 
@@ -3922,7 +4012,7 @@ Harness Engineering层面的全生命周期Hook机制（14种错误分类与自�
 
 ---
 
-## Ch02.031 阿里巴巴 & 蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
+## Ch02.032 阿里巴巴 & 蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/loongsuite-genai-semconv-alibaba.md`
 
@@ -3968,7 +4058,7 @@ GenAI Utils 提供的统一 Invocation 数据类 + Context Manager 编程模型�
 
 ---
 
-## Ch02.032 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
+## Ch02.033 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/ainmm-ai-native-maturity-model.md`
 
@@ -4047,7 +4137,7 @@ AINMM 继承 CMMI 的"逐级递进、每级是下一级基础"原则——ML1 �
 
 ---
 
-## Ch02.033 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
+## Ch02.034 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/nextie-alpha-cognitive-model-4b-on-device.md`
 
@@ -4110,7 +4200,7 @@ Proactive Agent长期受限于推理成本——7×24运行千亿参数模型的
 
 ---
 
-## Ch02.034 AI 导购在 vivo 官网的落地实践
+## Ch02.035 AI 导购在 vivo 官网的落地实践
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/vivo-ai-sales-guide-ecommerce-agent.md`
 
@@ -4172,7 +4262,7 @@ vivo AI 导购项目的核心工程价值在于**小模型 + 大模型协同**�
 
 ---
 
-## Ch02.035 Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
+## Ch02.036 Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/skills-redefine-agent-knowledge-allen-tang-2026.md`
 
@@ -4230,7 +4320,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ---
 
-## Ch02.036 vivo LLM 游戏推荐表达层：从"推什么"到"怎么选
+## Ch02.037 vivo LLM 游戏推荐表达层：从"推什么"到"怎么选
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/vivo-llm-game-recommendation-expression-decision-layer.md`
 
@@ -4295,7 +4385,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ---
 
-## Ch02.037 Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
+## Ch02.038 Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
 
@@ -4327,7 +4417,7 @@ Legacy Topics provided the initial approach to adding business context to datase
 
 ---
 
-## Ch02.038 PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
+## Ch02.039 PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/promptqueue-opengorilla-project-analysis-ljguo.md`
 
@@ -4385,7 +4475,7 @@ PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析 涉及agent
 
 ---
 
-## Ch02.039 Claude Opus 5 系统提示词疑似泄露：Agent 规则到底该如何定？
+## Ch02.040 Claude Opus 5 系统提示词疑似泄露：Agent 规则到底该如何定？
 
 > 📊 Level ⭐⭐ | 2.2KB | `entities/claude-opus-5-系统提示词疑似泄露agent-规则到底该如何定.md`
 
@@ -4409,7 +4499,7 @@ PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析 涉及agent
 
 ---
 
-## Ch02.040 从 Prompt 到 Graph：一文理解五层 Agent 工程
+## Ch02.041 从 Prompt 到 Graph：一文理解五层 Agent 工程
 
 > 📊 Level ⭐⭐ | 1.1KB | `entities/graph-engineering-prompt-to-graph-five-layer-ruofei-2026.md`
 
@@ -4424,7 +4514,7 @@ PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析 涉及agent
 
 ---
 
-## Ch02.041 OneReason：快手将推理注入推荐基模的系统性尝试
+## Ch02.042 OneReason：快手将推理注入推荐基模的系统性尝试
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`
 

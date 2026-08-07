@@ -43,7 +43,7 @@ Meta 早期训练 Llama 时直接通过 Tectonic 块层上的 NFS 类文件系�
 
 ### 5. 对行业的启示
 
-Meta 的 AI 存储实践揭示了数个重要趋势：(1) 存储与计算之间的性能鸿沟正在扩大，GPU 快速增长与存储增长不匹配将成为 AI 基础设施的核心矛盾；(2) 统一的 BLOB 存储层正在取代传统分层存储（文件系统、块存储、对象存储各自为政）成为 AI 基础设施的标准范式；(3) 跨区域数据移动的速度直接影响研究迭代效率——这不仅仅是带宽问题，更是数据编排和缓存策略的问题。这与 [Databricks 的 GPU 可靠性实践](ch01/052-how-we-keep-gpus-reliable-across-databricks-ai.html) 中讨论的 GPU 故障分类形成互补：存储延迟不仅是性能问题，也是引发 GPU 训练故障（如 NCCL 超时）的重要来源。
+Meta 的 AI 存储实践揭示了数个重要趋势：(1) 存储与计算之间的性能鸿沟正在扩大，GPU 快速增长与存储增长不匹配将成为 AI 基础设施的核心矛盾；(2) 统一的 BLOB 存储层正在取代传统分层存储（文件系统、块存储、对象存储各自为政）成为 AI 基础设施的标准范式；(3) 跨区域数据移动的速度直接影响研究迭代效率——这不仅仅是带宽问题，更是数据编排和缓存策略的问题。这与 [Databricks 的 GPU 可靠性实践](ch01/053-how-we-keep-gpus-reliable-across-databricks-ai.html) 中讨论的 GPU 故障分类形成互补：存储延迟不仅是性能问题，也是引发 GPU 训练故障（如 NCCL 超时）的重要来源。
 
 ## 实践启示
 
@@ -59,9 +59,9 @@ Meta 的 AI 存储实践揭示了数个重要趋势：(1) 存储与计算之间�
 
 ## 相关实体
 
-- [Databricks GPU 可靠性实践](ch01/052-how-we-keep-gpus-reliable-across-databricks-ai.html)
+- [Databricks GPU 可靠性实践](ch01/053-how-we-keep-gpus-reliable-across-databricks-ai.html)
 - [AI Infrastructure & Cost Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md)
-- [Graviton 优化 Agentic RL Sandbox](../ch04/305-agentic-rl.html)
+- [Graviton 优化 Agentic RL Sandbox](../ch04/309-agentic-rl.html)
 - [AI 友好的后端标准](../ch05/023-ai-friendly.html)
 
 ## 来源

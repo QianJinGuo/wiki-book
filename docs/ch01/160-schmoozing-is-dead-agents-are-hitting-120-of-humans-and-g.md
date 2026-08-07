@@ -35,8 +35,8 @@ SaaStr AI Annual 2026 的闭门 Q&A 环节揭示了 AI 原生软件公司的关�
 ## 相关实体
 - [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki/blob/main/entities/deels-accelerate-or-die-moment.md)
 - 1000 Record Covers The Taschen Book That Proves
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch01/088-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](ch01/098-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch01/083-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](ch01/091-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04/018-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md)

@@ -49,10 +49,10 @@ source_published: 2026-04-01
 
 ### 关联实体
 
-- [Hermes Agent V014 Architecture Shugex](../ch03/102-hermes-agent.html)
+- [Hermes Agent V014 Architecture Shugex](../ch03/098-hermes-agent.html)
 - [Claude Code Team 10 Tips Boris Data派Thu](../ch03/084-claude-code.html)
-- [Hermes Agent Soul Md Personality Shugex](../ch03/102-hermes-agent.html)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/404-pi-agent.html)
+- [Hermes Agent Soul Md Personality Shugex](../ch03/098-hermes-agent.html)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/406-pi-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1533-anthropic.html)
 

@@ -2,24 +2,14 @@
 
 ## Ch12.070 OpenAI launches Daybreak to combat cyber threats
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/ciodive-openai-daybreak-cyber-threats.md`
+> 📊 Level ⭐⭐ | 7.2KB | `entities/ciodive-openai-daybreak-cyber-threats.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
 
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("OpenAI launches Daybreak to …"))
-    深度分析
-    实践启示
-    相关实体
-```
-
 ## 深度分析
 **1. Daybreak 的市场定位：不是替代现有安全工具，而是「上车」企业的 AI 安全战略**
+
 文章引用 Gartner 分析师 John Watts 的关键判断：「我们相信它（Daybreak）将作为现有工具的补充，而非完全替代」。这个定性非常重要——OpenAI 推出 Daybreak 的目的不是做一个新的 Splunk 或 CrowdStrike，而是**将 AI 安全能力嵌入企业已有的安全工作流**。
 从市场竞争角度看，OpenAI 的核心优势不是安全工具的专业深度（这是 CrowdStrike、 SentinelOne 等专业厂商的领地），而是： (a) 能够利用 GPT-4o、Codex 等前沿模型的推理和代码能力；(b) 拥有与主流云平台（Cloudflare、Cisco）的合作伙伴关系，可以触达企业边界。这种「AI 原生 + 渠道合作」的模式，与 Anthropic 的 Mythos 形成直接竞争，但定位有所不同。
 **2. Anthropic Mythos vs OpenAI Daybreak：两种 AI 安全范式的碰撞**
@@ -30,10 +20,12 @@ mindmap
 - **OpenAI** 似乎在赌「让所有企业都能用 AI 做安全检测」的规模效应
 同时，Daybreak 的合作伙伴列表（Cloudflare、Cisco、CrowdStrike、Oracle、Zscaler）暗示 OpenAI 选择**与安全厂商合作而非竞争**——这是比 Anthropic 更加开放的生态策略。
 **3. 「AI 公司需要人们消费他们的产品」——企业 AI 采购的真正动机**
+
 CIO Dive 引用 Forrester 分析师 Jeff Pollard 的话：「AI 公司需要人们消费他们的产品、购买订阅和使用 token。这是实现那一目标的一种方式。」
 这句话的洞察价值在于：它将 Daybreak 不仅仅视为一个安全产品，更视为**OpenAI 增加企业 token 消耗量的渠道**。当企业使用 Daybreak 进行漏洞扫描时，他们在使用 OpenAI 的模型；随着使用规模扩大，OpenAI 的 API 收入和Enterprise 订阅收入都会增长。
 这对企业技术决策者的启示是：**在评估 AI 安全产品时，需要将「安全价值」和「AI 消费成本」分开评估**，而非被「AI 原生」的标签所迷惑。Daybreak 可能是一个优秀的漏洞扫描工具，但它的成本结构可能不同于传统的按资产/按容量计费的安全工具。
 **4. 三阶段工作流的安全工程价值**
+
 OpenAI 将 Daybreak 设计为三阶段流程： (1) 用 AI 推理和 token 使用量对高影响威胁排序；(2) 在企业内生成并测试风险（有范围限制的访问、监控和审查）；(3) 发送审计就绪的证据帮助企业跟踪、验证和修复漏洞。
 这个工作流设计的核心价值在于**「审计就绪」这个输出承诺**——企业安全团队面临的挑战不仅是「找到漏洞」，更是「证明漏洞已被修复且有记录」。Daybreak 的第三阶段直接针对这个需求。
 但值得注意的是，「审计就绪」与「真正修复」之间存在差距。Gartner 的 Watts 也指出：「组织必须跨整个修复链部署资源，包括补丁测试、部署和回滚，以减少修补时对运营的影响，而非仅仅关注 Codex Security。」
@@ -50,9 +42,9 @@ OpenAI 将 Daybreak 设计为三阶段流程： (1) 用 AI 推理和 token 使�
 
 ## 相关实体
 
-- [Useful Memories Become Faulty When Continuously Updated by LLMs](../ch01/122-useful-memories-become-faulty-when-continuously-updated-by-l.html)
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/214-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Tether launches developer grants program for local AI payments](../ch09/150-tether-launches-developer-grants-program-for-local-ai-paymen.html)
+- [Useful Memories Become Faulty When Continuously Updated by LLMs](../ch01/082-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/228-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Tether launches developer grants program for local AI payments](../ch09/165-tether-launches-developer-grants-program-for-local-ai-paymen.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 ---

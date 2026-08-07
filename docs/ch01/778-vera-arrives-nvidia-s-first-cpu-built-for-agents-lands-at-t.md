@@ -47,10 +47,10 @@ Ian Buck 逐家上门、在 OpenAI 现场用螺丝刀拆机讲解、在 OCI 与�
 ## 相关实体
 
 - [Blogs.Nvidia.Com Vera Cpu Delivery](https://github.com/QianJinGuo/wiki/blob/main/entities/blogs.nvidia.com-vera-cpu-delivery.md) — 同源 NVIDIA 官方博客条目
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](../ch03/036-agent.html) — NVIDIA Agent 产品线（RAG/语音/安全）
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch04/289-agentic.html) — NVIDIA MoE Agentic 模型栈
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](../ch03/037-agent.html) — NVIDIA Agent 产品线（RAG/语音/安全）
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch04/722-agentic.html) — NVIDIA MoE Agentic 模型栈
 - [Nvidia Edge First Llms Av Robotics](ch01/410-nvidia-edge-first-llms-av-robotics.html) — NVIDIA 边缘 LLM 与机器人场景
-- [Anthropic Demystifying Evals For Ai Agents](../ch04/563-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 Agent 评估实践
+- [Anthropic Demystifying Evals For Ai Agents](../ch04/565-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 Agent 评估实践
 - [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](../ch05/104-ai.html) — CPU/GPU 全链路算力视角对照
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)

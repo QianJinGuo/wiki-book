@@ -116,14 +116,14 @@ Agent 不会欣赏按钮做得多圆，只在乎能不能稳定调用。GUI 服�
 - [AgentBrowser](../ch09/077-agent-browser-claude-code-qoderwork.html) — AI 专用浏览器
   > **补充**（行小招/科技充电站，2026-05-19）：四工具横向对比（browser-use / Playwright / chrome-devtools-mcp / agent-browser）核心结论：agent-browser 用 accessibility tree + @eN ref，token 最省、session 跨命令持久，适合 AI Coding 即时验证；browser-use 适合目标模糊的完整自动化；Playwright 适合 CI 稳定回归；chrome-devtools-mcp 适合底层网络/性能/JS 调试。
 
-- [Hermes-Agent](ch03/102-hermes-agent.html) — 支持从 OpenCLI 无缝迁移
+- [Hermes-Agent](ch03/098-hermes-agent.html) — 支持从 OpenCLI 无缝迁移
 - [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — **注意：与 OpenClaw（淘天 Agent 框架）无关系**，两者仅命名相似，实为完全不同项目：OpenCLI = 网页自动化工具，OpenClaw = AI Agent 执行框架
 
 ## 相关实体
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crawler-vs-opencli-doubao.md)
 
-- [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 
 ---
 

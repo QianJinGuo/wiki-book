@@ -124,7 +124,7 @@ Anthropic 明确定义了两者关系：
 - [Anthropic Mcp Revisited](ch07/017-anthropic-mcp.html)
 - [Anthropic 12 Mcp Production Patterns](../ch01/1533-anthropic.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1533-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/340-skill.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/344-skill.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1533-anthropic.html)
 
 - [打造 Ai 智能体专属的代码知识库Gitnexus 完整上手攻略](../ch05/104-ai.html)

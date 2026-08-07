@@ -71,7 +71,7 @@ Boris Cherny 这套配置的深层逻辑，是把「错误修复」从人力密�
 
 ## 相关主题
 
-- [Agent Hooks：可编程工作流](../ch03/036-agent.html) — Hooks 生命周期节点详解（PostToolUse/Stop/PreToolUse 等）
+- [Agent Hooks：可编程工作流](../ch03/037-agent.html) — Hooks 生命周期节点详解（PostToolUse/Stop/PreToolUse 等）
 
 ## 相关实体
 

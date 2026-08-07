@@ -42,7 +42,7 @@ _Figure 1. MCG toolkit architecture: Generate a comprehensive model card by dire
 - [Nvidia Mcg Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-model-documentation.md)
 - [Nvidia Gpu Kernel Translation Cute Python Julia](../ch01/373-gpu-kernel.html)
 - [Nvidia Edge First Llms Av Robotics](../ch01/410-nvidia-edge-first-llms-av-robotics.html)
-- [Nvidia Cut Checkpoint Costs Nvcomp](ch03/033-nvidia-cut-checkpoint-costs-nvcomp.html)
+- [Nvidia Cut Checkpoint Costs Nvcomp](ch03/034-nvidia-cut-checkpoint-costs-nvcomp.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-mcg-toolkit-model-documentation.md)

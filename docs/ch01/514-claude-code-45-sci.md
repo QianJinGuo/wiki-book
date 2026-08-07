@@ -30,7 +30,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 在众多学术写作形式中，文献综述是最适合当前 AI 能力的类别。原因有三：第一，综述的核心任务——文献扫描、主题归纳、论证组织——都是信息处理密集型工作，LLM 的强项恰好在此。第二，综述对创新性的要求相对宽松，不需要真正的科学发现（那是原创研究的要求），而是强调系统性、全面性和逻辑性。第三，综述的可验证性较高——每一条引用都可以被追溯到原始来源，AI 的幻觉问题可以通过引用校验来缓解。
 
-[Claude Science](ch01/1218-claude.html) 的案例佐证了这一判断。Allen Institute 神经科学家 Jérôme Lecoq 将一篇长篇综述的写作时间从接近 2 年压缩到几周，核心正是利用了 AI 的文献扫描、引用核验和结构化输出能力。当 AI 辅助综述写作的效率提升达到一个量级时，它不仅仅是节省时间的问题——它会改变科研人员的工作习惯：综述不再是「写论文之前做的准备」，而是「贯穿研究始终的持续性知识组织活动」。
+[Claude Science](ch01/1219-claude.html) 的案例佐证了这一判断。Allen Institute 神经科学家 Jérôme Lecoq 将一篇长篇综述的写作时间从接近 2 年压缩到几周，核心正是利用了 AI 的文献扫描、引用核验和结构化输出能力。当 AI 辅助综述写作的效率提升达到一个量级时，它不仅仅是节省时间的问题——它会改变科研人员的工作习惯：综述不再是「写论文之前做的准备」，而是「贯穿研究始终的持续性知识组织活动」。
 
 ### 4. 45 页产出的工程化实现路径
 
@@ -61,7 +61,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 ## 相关实体
 
 - [Matt Pocock Skills vs Superpowers](../ch03/076-skills.html) — 同一作者（鲁工/AI编程实验室）的实操分享系列，讨论了 Agent 技能工程的两条路线
-- [Claude Science：AI 科研工作台](ch01/1218-claude.html) — Anthropic 面向科研的 AI 工作台，将 AI 能力嵌入科研全流程，与 Claude Code 的学术综述实践互补
+- [Claude Science：AI 科研工作台](ch01/1219-claude.html) — Anthropic 面向科研的 AI 工作台，将 AI 能力嵌入科研全流程，与 Claude Code 的学术综述实践互补
 - [Claude Code KAIROS 范式](ch01/504-claude-code-kairos.html) — Claude Code 从同步问答器向常驻代理的范式跃迁，为长期学术写作工作流提供基础设施
 - [AI 自主科研 L0-L4 框架](../ch05/104-ai.html) — 52 页综述定义的 AI 科研自主度分级，Vibe Research 属于 L1-L2 级别
 - [Claude Science Anthropic 科研 AI 工作台](ch01/1533-anthropic.html) — Anthropic 官方推出的科研 AI 集成工作环境，可审计管道 + 多智能体协同

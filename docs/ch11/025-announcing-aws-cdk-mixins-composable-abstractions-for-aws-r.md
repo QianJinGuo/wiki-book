@@ -2,17 +2,17 @@
 
 ## Ch11.025 Announcing AWS CDK Mixins: Composable Abstractions for AWS Resources
 
-> 📊 Level ⭐⭐ | 24.0KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-re.md`
+> 📊 Level ⭐⭐ | 24.9KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-re.md`
 
 ## 背景
-AWS 云开发套件（AWS Cloud Development Kit，CDK）是一个开源软件开发框架，用于以代码方式定义云基础设施，并通过 AWS CloudFormation 进行配置。CDK 包含预构建、模块化且可重用的云组件，称为构造块（constructs）。构造块是代表一个或多个 AWS CloudFormation 资源及其配置的基本构建单元。 ^[].md]
+AWS 云开发套件（AWS Cloud Development Kit，CDK）是一个开源软件开发框架，用于以代码方式定义云基础设施，并通过 AWS CloudFormation 进行配置。CDK 包含预构建、模块化且可重用的云组件，称为构造块（constructs）。构造块是代表一个或多个 AWS CloudFormation 资源及其配置的基本构建单元。
 
-传统上，我们将 CDK 构造块组织为三个层级。L1 构造块直接映射到 CloudFormation 资源。L2 构造块提供更高级的抽象，包含便捷方法、安全默认配置和辅助函数。L3 构造块（也称为模式）组合多个资源以解决特定用例。然而，这种架构造成了一个根本性的权衡：你必须在即时访问新 AWS 功能（L1）和复杂抽象（L2/L3）之间做出选择。团队通常需要自定义 L2 构造块，重新构建整个构造块库以满足其特定需求。 ^[].md]
+传统上，我们将 CDK 构造块组织为三个层级。L1 构造块直接映射到 CloudFormation 资源。L2 构造块提供更高级的抽象，包含便捷方法、安全默认配置和辅助函数。L3 构造块（也称为模式）组合多个资源以解决特定用例。然而，这种架构造成了一个根本性的权衡：你必须在即时访问新 AWS 功能（L1）和复杂抽象（L2/L3）之间做出选择。团队通常需要自定义 L2 构造块，重新构建整个构造块库以满足其特定需求。
 
 CDK Mixins 通过将抽象与构造块实现解耦来解决这个问题。与其将所有功能捆绑到单一的 L2 构造块中，Mixins 允许你精确组合所需的功能，将其应用于任何构造块类型，并保持对底层 CloudFormation 属性的完全访问。
 
 ## 什么是 CDK Mixins？
-CDK Mixins 让你组合可重用的抽象，并将其应用于已创建的构造块。你可以混合搭配模块化功能，构建完全所需的基础设施。与捆绑所有功能的传统 L2 构造块不同，Mixins 让你可以细粒度控制应用的抽象。 ^[].md]
+CDK Mixins 让你组合可重用的抽象，并将其应用于已创建的构造块。你可以混合搭配模块化功能，构建完全所需的基础设施。与捆绑所有功能的传统 L2 构造块不同，Mixins 让你可以细粒度控制应用的抽象。
 
 主要优势包括：
 
@@ -60,7 +60,7 @@ new s3.Bucket(stack, "MixinsL2DemoBucket")
 cdk.Mixins.of(stack, cdk.ConstructSelector.byId('MixinsL1DemoBucket')) 
   .apply(new s3.mixins.BucketAutoDeleteObjects()); 
 ``` 
-大规模应用 mixins 到整个构造块树或特定资源类型： ^[].md]
+大规模应用 mixins 到整个构造块树或特定资源类型：
 
 ```typescript 
 // Apply your Mixins to the whole app 
@@ -93,7 +93,7 @@ class MyDataRecovery extends cdk.Mixin implements IMixin {
   } 
 } 
 ``` 
-定义后，你可以将自定义 mixin 应用于资源： ^[].md]
+定义后，你可以将自定义 mixin 应用于资源：
 
 ```typescript 
 // ... and to use them: 
@@ -161,7 +161,7 @@ cdk.Mixins.of(app, cdk.ConstructSelector.resourcesOfType(s3.CfnBucket.CFN_RESOUR
 ``` 
 
 ## Vended Logs 和日志传递
-在 CloudFormation 中设置 vended log delivery 通常需要协调多个资源 — AWS::Logs::DeliverySource、AWS::Logs::DeliveryDestination 和 AWS::Logs::Delivery 来连接它们 — 以及每个目标类型的正确 IAM 权限。你必须为每个要传递日志的资源重复此样板文件，且因服务而异。 ^[].md]
+在 CloudFormation 中设置 vended log delivery 通常需要协调多个资源 — AWS::Logs::DeliverySource、AWS::Logs::DeliveryDestination 和 AWS::Logs::Delivery 来连接它们 — 以及每个目标类型的正确 IAM 权限。你必须为每个要传递日志的资源重复此样板文件，且因服务而异。
 
 CDK Mixins 将此复杂性折叠为单个 `.with()` 调用。由于 Mixins 将日志传递抽象与任何特定构造块解耦，相同的模式适用于所有 47 个支持的 AWS 资源 — 无论你使用的是 L1 还是 L2 构造块。虽然仍处于预览阶段，但这是 Mixins 为何重要的最引人注目的例子之一：你获得了一个复杂的跨服务抽象，传统上需要每个资源都有专门的 L2 构造块支持。
 ```typescript 
@@ -176,7 +176,7 @@ const logGroup = new logs.LogGroup(stack, 'LogGroup');
 new wafv2.CfnWebACL(stack, 'WebAcl2', { /* ... */ }) 
   .with(new wafv2Mixins.CfnWebACLAccessLogs().toLogGroup(logGroup)); 
 ``` 
-没有 Mixins，向 L1 构造块添加 vended log delivery 意味着要么等待 L2 支持，要么自己手动连接三个 CloudFormation 资源和权限。Mixins 让你可以将这种 L2 质量的抽象带到任何构造块。 ^[].md]
+没有 Mixins，向 L1 构造块添加 vended log delivery 意味着要么等待 L2 支持，要么自己手动连接三个 CloudFormation 资源和权限。Mixins 让你可以将这种 L2 质量的抽象带到任何构造块。
 
 对于跨账户集中日志记录，`toDestination()` 方法将日志发送到预先创建的传递目标，这样你可以在不授予对目标资源直接访问的情况下在共享账户中聚合日志：
 ```typescript 
@@ -188,7 +188,7 @@ new wafv2.CfnWebACL(stack, 'WebAcl3', { /* ... */ })
 ``` 
 
 ## 开始使用
-CDK Mixins 核心功能 — 包括 cdk.Mixins、`cdk.ConstructSelector` 和 `.with()` 语法 — 包含在 aws-cdk-lib 中。你通过标准服务导入（如 s3.mixins、ecs.mixins）访问服务 mixins。用于类型安全 L1 属性覆盖的 CloudFormation 属性 mixins 来自单独的 **@aws-cdk/cfn-property-mixins** 包。 ^[].md]
+CDK Mixins 核心功能 — 包括 cdk.Mixins、`cdk.ConstructSelector` 和 `.with()` 语法 — 包含在 aws-cdk-lib 中。你通过标准服务导入（如 s3.mixins、ecs.mixins）访问服务 mixins。用于类型安全 L1 属性覆盖的 CloudFormation 属性 mixins 来自单独的 **@aws-cdk/cfn-property-mixins** 包。
 
 1. 安装包：`npm install aws-cdk-lib @aws-cdk/cfn-property-mixins` 
 2. 从 aws-cdk-lib/core 导入核心类：`import * as cdk from 'aws-cdk-lib/core';` 
@@ -198,7 +198,7 @@ CDK Mixins 核心功能 — 包括 cdk.Mixins、`cdk.ConstructSelector` 和 `.wi
 6. 探索 CDK Mixins 包 README 获取详细示例和 API 参考
 
 ## 结论
-CDK Mixins 代表了我们思考基础设施抽象的根本性转变。通过将功能与构造块实现解耦，Mixins 让你可以自由地精确组合所需的基础设施，无论你使用的是 L1 构造块访问新的 CloudFormation 资源、L2 构造块获得便捷性，还是自定义构造块满足企业需求。 ^[].md]
+CDK Mixins 代表了我们思考基础设施抽象的根本性转变。通过将功能与构造块实现解耦，Mixins 让你可以自由地精确组合所需的基础设施，无论你使用的是 L1 构造块访问新的 CloudFormation 资源、L2 构造块获得便捷性，还是自定义构造块满足企业需求。
 
 自最初的开发者预览以来，生态系统发展迅速：47 个资源的日志传递 mixins、26 个服务的 EventBridge 事件模式助手、ECS 集群设置、S3 安全 mixins 以及为 L1 构造块带来 L2 风格权限的资源策略特性。我们使用 requireAll/requireAny 完善了 API，以实现精确的行为控制和应用程序报告。
 
@@ -254,7 +254,7 @@ CDK Mixins 代表了我们思考基础设施抽象的根本性转变。通过将
 
 ## 测试自定义 Mixins
 
-自定义 Mixin 的测试策略应该覆盖以下维度： ^[].md]
+自定义 Mixin 的测试策略应该覆盖以下维度：
 
 ```typescript 
 // 测试 Mixin 对目标类型的支持判断 
@@ -352,13 +352,13 @@ class PipelineStack extends cdk.Stack {
 - Mixin 市场/社区分享平台
 
 ## 关联阅读
-- [[raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s|原文存档]
+- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
 - [CDK Mixins 文档](https://github.com/aws/aws-cdk/tree/main/packages/aws-cdk-lib#mixins)
 - [CDK Mixins RFC](https://github.com/aws/aws-cdk-rfcs/pull/824)
 
 ## 相关实体
-- [[ai-agents-security-survey-attack-defense|AI安全全景] — 基础设施安全与AI防护的交叉领域
-- [[agent-harness-architecture-deep-dive-aksahy|Harness架构] — 云原生基础设施的抽象设计
+- `AI安全全景` — 基础设施安全与AI防护的交叉领域
+- `Harness架构` — 云原生基础设施的抽象设计
 ## 相关实体
 - [[entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s]
 - [[entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o]

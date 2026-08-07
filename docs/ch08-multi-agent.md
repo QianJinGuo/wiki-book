@@ -853,29 +853,29 @@ Three-level guardrail system:
 
 ## Ch08.010 微软 Agent Framework 全栈指南（Python）
 
-> 📊 Level ⭐⭐ | 5.5KB | `entities/microsoft-agent-framework-python-zizhi.md`
+> 📊 Level ⭐⭐ | 5.9KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
-> 来源：[[raw/articles/microsoft-agent-framework-python-zizhi|原文存档]
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-agent-framework-python-zizhi.md)
 
 ## 深度分析
 **1. 三层架构的统一抽象：Agent / Workflow / Hosting 解耦设计**
-微软 Agent Framework 的核心价值在于将 Semantic Kernel 的企业底座、AutoGen 的 Agent 抽象与新增的 Workflow 图编排整合为统一 API。框架明确区分了三种场景的选型原则：开放对话、自主调工具 → Agent；步骤固定、要强控执行顺序 → Workflow；纯确定性逻辑 → 普通函数。这种分层使得开发者可以根据任务性质选择合适的编程模型，而非强行把所有场景都塞进 Agent。^[].md]
+微软 Agent Framework 的核心价值在于将 Semantic Kernel 的企业底座、AutoGen 的 Agent 抽象与新增的 Workflow 图编排整合为统一 API。框架明确区分了三种场景的选型原则：开放对话、自主调工具 → Agent；步骤固定、要强控执行顺序 → Workflow；纯确定性逻辑 → 普通函数。这种分层使得开发者可以根据任务性质选择合适的编程模型，而非强行把所有场景都塞进 Agent。
 
-**2. Provider 模式实现记忆与上下文的可组合性**^[].md]
+**2. Provider 模式实现记忆与上下文的可组合性**
 
-Step 4 展示的 `ContextProvider` / `HistoryProvider` 体系是框架最的设计亮点。通过 `before_run` 和 `after_run` 钩子，开发者可以在每轮对话前后注入自定义上下文或提取状态。多个 Provider 可以组合（记忆存储 + 外部记忆 + 审计），且只有一个应设置 `load_messages=True` 以避免重复回放。这套模式比直接硬编码记忆逻辑更具工程化价值。^[].md]
+Step 4 展示的 `ContextProvider` / `HistoryProvider` 体系是框架最的设计亮点。通过 `before_run` 和 `after_run` 钩子，开发者可以在每轮对话前后注入自定义上下文或提取状态。多个 Provider 可以组合（记忆存储 + 外部记忆 + 审计），且只有一个应设置 `load_messages=True` 以避免重复回放。这套模式比直接硬编码记忆逻辑更具工程化价值。
 
-**3. 工具安全模型：从 Demo 到生产的必要跃迁**^[].md]
+**3. 工具安全模型：从 Demo 到生产的必要跃迁**
 
-文章用 `approval_mode` 参数区分了演示环境（`never_require`）与生产环境（`always_require`）的差异。工具描述（docstring + `Field(description=...)`）的质量直接影响模型调用准确率，这个细节在很多入门教程中被忽略。生产 checklist 进一步强调了 ManagedIdentityCredential 优于 DefaultAzureCredential（避免探测延迟与安全面），说明框架设计者对企业安全有清晰认知。^[].md]
+文章用 `approval_mode` 参数区分了演示环境（`never_require`）与生产环境（`always_require`）的差异。工具描述（docstring + `Field(description=...)`）的质量直接影响模型调用准确率，这个细节在很多入门教程中被忽略。生产 checklist 进一步强调了 ManagedIdentityCredential 优于 DefaultAzureCredential（避免探测延迟与安全面），说明框架设计者对企业安全有清晰认知。
 
-**4. Workflow 与多 Agent 的组合模式**^[].md]
+**4. Workflow 与多 Agent 的组合模式**
 
-Step 5 揭示了框架的编排野心：图中节点可以是 Agent，边定义协作顺序；需要对外暴露为单一 Agent 时，可将 Workflow 包装为 `AIAgent` 接入 A2A/OpenAI 兼容端点。这意味着框架既支持细粒度的多 Agent 协作，也支持将协作结果封装为统一接口，兼顾了灵活性与易用性。^[].md]
+Step 5 揭示了框架的编排野心：图中节点可以是 Agent，边定义协作顺序；需要对外暴露为单一 Agent 时，可将 Workflow 包装为 `AIAgent` 接入 A2A/OpenAI 兼容端点。这意味着框架既支持细粒度的多 Agent 协作，也支持将协作结果封装为统一接口，兼顾了灵活性与易用性。
 
-**5. 六步能力矩阵的渐进式学习路径**^[].md]
+**5. 六步能力矩阵的渐进式学习路径**
 
-文章将 Agent 开发分为六个阶段（首 Agent → 工具 → 多轮 → 记忆 → 工作流 → 托管），每步都有明确的 API 概念和解决的问题。这种设计符合认知负荷理论：开发者可以从简单场景起步，逐步引入复杂特性，而不需要在一开始就理解整个框架。^[].md]
+文章将 Agent 开发分为六个阶段（首 Agent → 工具 → 多轮 → 记忆 → 工作流 → 托管），每步都有明确的 API 概念和解决的问题。这种设计符合认知负荷理论：开发者可以从简单场景起步，逐步引入复杂特性，而不需要在一开始就理解整个框架。
 
 ## 实践启示
 **1. 从 pip install 到 Azure Functions 暴露 HTTP，路径清晰**
@@ -2218,9 +2218,9 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 ## Ch08.016 How Grab is Using AI Agents to Boost Team Productivity
 
-> 📊 Level ⭐⭐⭐ | 13.4KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
+> 📊 Level ⭐⭐⭐ | 13.8KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
 
-> 来源：[[raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity|原文存档]（ByteByteGo, 2026-05-18）
+> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity.md)（ByteByteGo, 2026-05-18）
 
 ## 核心要点
 - **问题背景**：Grab ADW（Analytics Data Warehouse）团队管理 15,000+ 张表，每月约 1000 人查询，最优秀工程师每周花 2 天回答同事的临时问题
@@ -2235,7 +2235,7 @@ Grab ADW 团队的核心观察是：**问题的答案各不相同，但回答的
 这给我们的启发是：在评估一个工作是否适合 Agent 化时，重要的不是问题看起来多复杂，而是**解决过程的变异性有多高**。变异性低（即使问题本身复杂），Agent 化的成功概率高；变异性高（即使单个问题简单），Agent 化难度大。
 
 ### 大脑与手的分离
-Grab 的设计哲学是"Decoupling the Brain from the Hands"：^[].md]
+Grab 的设计哲学是"Decoupling the Brain from the Hands"：
 
 - **Brain** = LLM，负责推理、决策、生成
 - **Hands** = Specialized Agents 和 Tools，负责实际执行（查询、代码搜索、状态检查）
@@ -2285,7 +2285,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 四层防御的逻辑是**每层的盲点由其他层覆盖**。Input Classification 可能有漏网的 PII 请求，但 SQL Validation 会拦住访问 PII 列的操作。每个 layer 独立负责一个维度的安全，但共同构成纵深防御。
 
 ### 信任建立的动态调整
-最初设计：所有 AI 生成的回答在工程师审核前不发布。这安全但慢——在高峰期问题堆积，无人审核。^[].md]
+最初设计：所有 AI 生成的回答在工程师审核前不发布。这安全但慢——在高峰期问题堆积，无人审核。
 
 改进后的设计：**立即发布答案，但标注为"未经审核"**。用户获得快速响应，同时知道答案的置信状态，可以选择性地进行人工复核。
 这个设计演变的深层逻辑是：信任不是静态的，是**随着系统性能证据积累动态扩展的**。系统上线初期，信任资本有限，高的审核率是合理的；随着系统性能数据积累（rejection rate 低，user feedback 好），信任边界可以扩展，释放人工审核资源用于更高价值的 work。
@@ -2300,7 +2300,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 
 ### 生产 Hardening 的优先级排序
 当一个 Agent 原型在 demo 效果很好时，下一步不是上线，而是问"上线后会出什么问题"。Grab 发现的 4 类问题（context 爆炸、工具冗余、安全风险、信任建立）是有普遍性的。
-建议的上线前 Hardening 检查清单：^[].md]
+建议的上线前 Hardening 检查清单：
 
 1. **Context 压力测试**：模拟长会话（20+ 轮次），观察 token 累积对输出质量的影响
 2. **工具边界测试**：用边界条件调用（空输入、超大输入、恶意输入），观察 Agent 的错误处理
@@ -2318,12 +2318,12 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 
 ### 写操作 Agent 的人工 Gate 设计
 对于改变 production 数据的 Agent 操作（Enhancement Pathway），Grab 的设计是**半自动化**：AI 生成变更，但每一步都需要人工审核和批准。这个设计值得推广。
-关键原则：AI 生成的内容接触 production 的 gate 数量取决于内容的风险等级：^[].md]
+关键原则：AI 生成的内容接触 production 的 gate 数量取决于内容的风险等级：
 
 - 读操作（调查、查询）→ 轻量监督或无监督
 - 写操作（数据变更、代码修改）→ 强制人工审核
 - 高风险写操作（删除数据、修改 schema）→ 强制多人审核 + staging 验证
-这个分层授权机制可以在任何企业 Agent 系统中复用。^[].md]
+这个分层授权机制可以在任何企业 Agent 系统中复用。
 
 ## 相关实体
 - [[entities/baixing-ontoz-enterprise-ontology-multi-agent]
@@ -2331,9 +2331,9 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 - [[entities/building-ai-agents-for-business-support-using-amazon-bedrock]
 - [[entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel]
 - [[entities/low-code-api-integration]
-- [[moc/multi-agent-coordination|MOC]
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
-→ [[raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity|原文存档]
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity.md)
 
 ## 相关实体
 

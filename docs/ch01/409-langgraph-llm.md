@@ -296,29 +296,29 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 **5. 多 Agent 协作时，用 Fan-out 而非在一个节点里串行调用**
 新手实现「同时查天气、查新闻、查股价」的做法是在一个 LLM 节点里 `await Promise.all([weather(), news(), stock()])`——这破坏了图的可见性：外部无法观测到有三个子任务在执行，也不知道哪个先完成。正确做法：用 Fan-out 图结构，三个节点并行执行，一个 merge 节点汇总结果。这样 `stream()` 输出里每个 chunk 都能看到具体是哪个子节点完成了，前端可以精确渲染每个数据源的加载状态。
 ## 相关实体
-- [Gepa Optimize Anything](ch01/485-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](ch01/488-gepa-optimize-anything.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/111-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
-- [How Open Model Ecosystems Compound](ch01/1187-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](ch01/1188-how-open-model-ecosystems-compound.html)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/1360-deepseek-v4.html)
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
 
 - [Tomtunguz Ai Model Inflation](../ch05/104-ai.html)
 - [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](ch01/292-hermes.html)
-- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/1075-vlm.html)
+- [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/1078-vlm.html)
 - [We Let Four Ais Run Radio Stations Heres What Happened](../ch05/104-ai.html)
 - [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-recruitment.md)
 - [Lightfield Ai Pipeline Generation](../ch05/104-ai.html)
 - [Creativeboom Ai Views Changed](../ch05/104-ai.html)
 - [Netflix Is Building An Ai Animation Studio](../ch11/248-netflix-is-building-an-ai-animation-studio.html)
 - [Minicpm V 46 13B Xinazhiyuan](ch01/332-1.html)
-- [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](ch01/858-gemma-4.html)
-- [Model Half Life Aifoc](ch01/1074-model-half-life.html)
-- [Ghostbyt3 Github Io Blog Nday Research Ai](ch01/902-github.html)
+- [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](ch01/860-gemma-4.html)
+- [Model Half Life Aifoc](ch01/1077-model-half-life.html)
+- [Ghostbyt3 Github Io Blog Nday Research Ai](ch01/903-github.html)
 - [Ai Friendly Architecture Design](../ch05/023-ai-friendly.html)
-- [Obsidian Llm Wiki Local Kytmanov](ch01/1132-llm.html)
-- [Olmo Hybrid And Future Llm Architectures](ch01/620-olmo-hybrid-and-future-llm-architectures.html)
+- [Obsidian Llm Wiki Local Kytmanov](ch01/863-llm.html)
+- [Olmo Hybrid And Future Llm Architectures](ch01/622-olmo-hybrid-and-future-llm-architectures.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
-- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](ch01/1198-spec.html)
+- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](ch01/1199-spec.html)
 
 ---
 

@@ -101,7 +101,7 @@ AI Agent 竞争已从「模型更聪明、Agent 推理更长」的上半场，�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513.md)
 
 ## 相关实体
-- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](../ch03/036-agent.html)
+- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](../ch03/037-agent.html)
 
 ---
 ## 关联

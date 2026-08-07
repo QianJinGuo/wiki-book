@@ -378,11 +378,11 @@ but branch -a feat/refresh-token feat/token-revocation
 **核心目标**：「让版本历史成为可信的知识库」——无论代码是人写的还是 agent 写的。
 
 ## 相关实体
-- [Alphaevolve Deepmind Discovery Agent](../ch03/036-agent.html)
-- [Code As Agent Harness Survey](../ch09/061-code-as-agent-harness.html)
-- [我用 Skillmd 做了一个简历生成器](../ch04/340-skill.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/037-agent.html)
+- [Code As Agent Harness Survey](../ch09/062-code-as-agent-harness.html)
+- [我用 Skillmd 做了一个简历生成器](../ch04/344-skill.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/017-harness.html)
-- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/266-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/272-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
 

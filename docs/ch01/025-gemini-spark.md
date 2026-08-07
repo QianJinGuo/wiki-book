@@ -79,7 +79,7 @@ Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对�
 - [Agent Teams 对比](../ch03/084-claude-code.html) — 三家 Agent 产品路线对比
 - [Claude Science](../ch03/084-claude-code.html) — Anthropic 的 Agent 平台化路径
 - [Harness Engineering](../ch05/092-harness-engineering.html) — Agent 控制面板的系统方法论
-- [Agent落地真相](../ch03/036-agent.html) — Agent 从演示到投产的核心挑战
+- [Agent落地真相](../ch03/037-agent.html) — Agent 从演示到投产的核心挑战
 - [Agent Harness 招聘实践](../ch05/042-agent-harness.html) — Agent 在企业场景的工程实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/谷歌风雨飘摇市值蒸发数千亿美元gemini-spark能救场吗.md)

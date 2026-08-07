@@ -203,10 +203,10 @@ MemTree、MemoryOS、MemOS 等树状层次方法在各项任务中表现突出�
 
 ## 相关概念
 
-- [Agent Memory Architecture](../ch04/498-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent Memory 架构本质（治理视角）
-- [Agent Memory Modular Framework](../ch04/215-agent-memory.html) — Agent Memory 模块化框架与评测（同一论文的详细解读）
-- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/215-agent-memory.html) — Agent Memory 架构演进历史
-- [Agent Memory Architecture Essence](../ch04/215-agent-memory.html) — Agent Memory 架构本质深度分析
+- [Agent Memory Architecture](../ch04/504-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent Memory 架构本质（治理视角）
+- [Agent Memory Modular Framework](../ch04/179-agent-memory.html) — Agent Memory 模块化框架与评测（同一论文的详细解读）
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/179-agent-memory.html) — Agent Memory 架构演进历史
+- [Agent Memory Architecture Essence](../ch04/179-agent-memory.html) — Agent Memory 架构本质深度分析
 - [Agent Memory Systematic Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md) — Agent Memory 系统化框架
 
 → [原文存档 — NewGridAI 原始解读](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-in-the-llm-era-iclr2026.md)

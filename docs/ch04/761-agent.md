@@ -1,23 +1,38 @@
-# 一文讲清 Agent 如何理解业务：把对象、状态和权限接进执行流程
+# 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
 
-## Ch04.761 一文讲清 Agent 如何理解业务：把对象、状态和权限接进执行流程
+## Ch04.761 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
 
-> 📊 Level ⭐⭐ | 1.7KB | `entities/一文讲清-agent-如何理解业务把对象状态和权限接进执行流程.md`
+> 📊 Level ⭐⭐ | 2.7KB | `entities/doubao-search-agent-claude-code-datawhale-2026.md`
 
-# 一文讲清 Agent 如何理解业务：把对象、状态和权限接进执行流程
+# 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
 
-## 核心：Agent 理解业务的三要素
+做 Agent 不能只靠基础模型——模型知识停在训练截止日，需要搜索工具提供实时、可信的信息输入。
 
-作者（架构师 JiaGouX）提出 Agent 要真正理解业务，需要把三个要素接进执行流程：**对象（Object）、状态（State）、权限（Permission）**。以"用户问客服"场景为例，Agent 不能只理解自然语言意图，还要知道业务对象是什么（订单/工单/账户）、当前处于什么状态（待支付/已发货/已关闭）、以及当前会话拥有哪些权限（能否查询/能否修改）。这决定了 Agent 能否在真实业务系统中安全、正确地执行操作。
+## 第 1 来源 — 豆包搜索 + Claude Code 实测（2026-07-28）
+
+豆包搜索与 Claude Code 结合的实测：Agent 通过搜索获取训练截止日之后的新信息，弥补基础模型的知识边界。核心结论是 Agent 的信息获取必须依赖可信搜索，而非模型存量知识。
+
+## 第 2 来源 — 豆包搜索走出豆包（2026-08-06，vxc=56）
+
+豆包 APP 里的搜索能力正在走出豆包，进入面向企业和开发者的 Agent 场景。与只返回网页入口的搜索不同，豆包搜索返回的不只是链接，还包括 Agent 判断"资料能不能用"所需的关键字段：
+
+- **信源名称 + 权威分级**：每条结果带来源评级，Agent 可判断资料是否可靠
+- **发布时间**：判断信息是否足够新（针对新事件、新版本、新价格）
+- **围绕当前问题生成的正文摘要**：无需打开页面即可提取要点
+- **可直接引用的原文 Markdown 节选**：Agent 直接引用原文片段
+
+以菲尔兹奖查询为例：豆包搜索返回 3 条直接相关资料（政府官网转载、科技日报、西蒙斯基金会），每条都带权威分级和原文节选——Agent 先利用权威分级和发布时间判断资料可用性，再从摘要和节选中提取获奖名单、研究贡献、媒体评价。这省去了"打开页面→理解正文→抽取信息"的中间反复读取环节。
 
 ## 与 Wiki 现有知识的关联
 
-- 与 [企业 AI Loop 落地五对象](ch04/585-ai-loop.html) 互补：本文聚焦"业务语义接入"，五对象聚焦企业落地框架
-- 状态机实现见 [LangGraph State Machine](ch04/260-langgraph.html)
-- 权限与凭据隔离：[云 Agent 基础设施状态/代码/凭据隔离](../ch03/036-agent.html)
-- 架构总览见 [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+- 搜索增强 Agent 的信息可信度：引用分级与信源标注（`grounded-citations` 主题）
+- Agent 工具调用：[Agent Loop Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md)、[MCP 协议生态](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
+- RAG 数据接入：[Agentic AI Data Mesh](ch04/116-agentic-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文讲清-agent-如何理解业务把对象状态和权限接进执行流程.md)
+## 来源
+
+- 原文 1: [最新发布！豆包搜索+Claude Code实测来了](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/doubao-search-agent-claude-code-datawhale-2026.md)
+- 原文 2: [豆包搜索，走出了豆包](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/豆包搜索走出了豆包.md)
 
 ---
 
