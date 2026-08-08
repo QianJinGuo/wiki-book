@@ -7,9 +7,15 @@ cd "$PROJECT_DIR"
 
 echo "=== Building wiki-book ==="
 
-# Generate the small, curated course layer before MkDocs copies docs/ into site/.
+# Regenerate index JSONs from the actual docs/ tree before MkDocs copies
+# docs/ into site/.  The auto-sync ("sync: auto-update from wiki entities")
+# renumbers files, so these indexes must be rebuilt every build or the
+# dashboard / course UI will emit links to stale file numbers (404s).
 echo "=== Building curated course ==="
 python3 scripts/build-course.py
+
+echo "=== Building dashboard article catalog ==="
+python3 scripts/rank-articles.py
 
 # Build via Docker
 docker run --rm -v "$(pwd):/build" -w /build wiki-book-builder:latest mkdocs build
