@@ -411,7 +411,7 @@ Claude Code 的架构设计折射出一个核心洞察：**Agent 编程工具的
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
 
 ## Related
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/251-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/252-openclaw.html)
 
 - [Code as Agent Harness 综述](../ch09/062-code-as-agent-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.html)

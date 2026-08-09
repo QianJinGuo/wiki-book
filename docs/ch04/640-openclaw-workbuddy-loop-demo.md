@@ -47,7 +47,7 @@
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/037-agent.html)
 - [Harness Engineering](../ch05/092-harness-engineering.html)
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/017-harness.html)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/251-openclaw.html)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/252-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md)
 

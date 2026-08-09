@@ -310,7 +310,7 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
 
 ## 相关实体
-- [OpenClaw多租户迁移: Phase 2&3部署](ch11/251-openclaw.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](ch11/252-openclaw.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/319-amazon-nova.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/112-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/939-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
@@ -321,11 +321,11 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
 - [AgentCore Runtime部署Apache Doris MCP Server](ch11/194-apache-doris-mcp-server-quick-suite-ai.html)
-- [OpenClaw多租户迁移: 背景与架构概览](ch11/251-openclaw.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/251-openclaw.html)
+- [OpenClaw多租户迁移: 背景与架构概览](ch11/252-openclaw.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/252-openclaw.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/308-amazon-bedrock.html)
 - [Agent 原理、架构与工程实践](../ch03/037-agent.html)
-- [from pdfs to insights: architecting an intelligent document](ch11/268-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+- [from pdfs to insights: architecting an intelligent document](ch11/269-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 
 ---
 

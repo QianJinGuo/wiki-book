@@ -173,7 +173,7 @@
   - [AI 科研超越人类 — Prime Intellect 递归自改进实验](../ch05/104-ai.html)（单点实验：nanoGPT 突破人类纪录）
   - [Lossy Self-Improvement](ch01/473-lossy-self-improvement.html)（自噬数据风险的理论分析）
   - [编排自演化 Agent — CrewAI + NVIDIA Nemotron](../ch04/285-self-evolving-agents.html)（多 Agent 仿真环境）
-  - [MUSE AutoSkill — 字节 ByteBrain 自演化 Agent](../ch04/767-self-evolving-agent.html)（arXiv 2605.27366 工业级实现）
+  - [MUSE AutoSkill — 字节 ByteBrain 自演化 Agent](../ch04/768-self-evolving-agent.html)（arXiv 2605.27366 工业级实现）
   - [LangSmith Engine — 基于链路追踪的自改进 Agent](../ch03/037-agent.html)（工业级 trace-based 自改进）
   - [Hermes 自我改进闭环](ch01/292-hermes.html)（Winty 视角：基于 SKILL.md 自我迭代）
 - **同领域框架**：

@@ -53,16 +53,16 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 
 ## 相关实体
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch11/269-aws-bedrock-agentcore.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](ch11/270-aws-bedrock-agentcore.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/643-amazon-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: Phase 2&3部署](ch11/251-openclaw.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](ch11/252-openclaw.html)
 - [AgentCore Runtime部署Apache Doris MCP Server](ch11/194-apache-doris-mcp-server-quick-suite-ai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/269-aws-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: 背景与架构概览](ch11/251-openclaw.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: 背景与架构概览](ch11/252-openclaw.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/643-amazon-bedrock-agentcore.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/251-openclaw.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/269-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/252-openclaw.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/270-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/308-amazon-bedrock.html)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/485-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)

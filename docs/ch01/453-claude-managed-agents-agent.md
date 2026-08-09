@@ -137,7 +137,7 @@ Self-hosted sandbox 的设计更适合 worker 只返回结构化摘要和证据�
 ## 相关实体
 - [Claude Managed Agents Self Hosted Sandbox Enterprise](../ch04/612-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents Official](../ch04/682-claude-managed-agents-official.html)
+- [Claude Managed Agents Official](../ch04/683-claude-managed-agents-official.html)
 - [Claude Managed Agents](../ch04/612-claude-managed-agents.html)
 - [Anthropic Pm Jess Yan Managed Agents](ch01/1533-anthropic.html)
 

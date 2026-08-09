@@ -89,11 +89,11 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 
 ## 相关实体
 
-- [Agentcore Harness](../ch04/758-agentcore-harness.html) — AgentCore Harness 综述
+- [Agentcore Harness](../ch04/759-agentcore-harness.html) — AgentCore Harness 综述
 - [Agentcore Managed Harness](../ch04/294-agentcore-managed-harness.html) — Managed Harness 定位与权衡
 - [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](../ch04/643-amazon-bedrock-agentcore.html) — AgentCore Runtime 深度分析
 - [Agentcore Payments X402 Agentic Commerce](ch11/073-agentcore-payments.html) — AgentCore 在支付场景的应用
-- [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](../ch04/722-agentic.html) — Strands + AgentCore 调度案例
+- [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](../ch04/073-agentic.html) — Strands + AgentCore 调度案例
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/308-amazon-bedrock.html) — Bedrock Agent 运维
 - [Multi Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多 Agent 协作模式
 - [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多 Agent 编排

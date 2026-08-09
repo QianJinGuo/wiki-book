@@ -139,7 +139,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/1119-20.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/344-skill.html)
 - [SkillX — 层次化技能知识库](../ch07/059-skillx.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/251-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/252-openclaw.html)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/156-anthropic-agent.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/179-agent-memory.html)

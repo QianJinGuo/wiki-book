@@ -40,9 +40,9 @@ ChatGPT 的'失忆症'终于被治好了！Dreaming V3 让大模型拥有长期�
 ### 关联实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/251-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/722-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/251-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/252-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.html)
 

@@ -125,7 +125,7 @@ Vanilla RAG 是 "retrieve-once-then-generate" 模式，面对需要跨数据源�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-agentic-rag-sufficient-context-agent-framesqa.md)
 
 ## 相关实体
-- [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](../ch04/722-agentic.html)
+- [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](../ch04/073-agentic.html)
 - [is grep all you need? — 检索 × harness × 交付方式耦合三元组（pwc 论文 arxi](../ch05/017-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

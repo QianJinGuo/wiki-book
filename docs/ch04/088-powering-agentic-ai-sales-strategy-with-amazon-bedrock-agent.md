@@ -255,7 +255,7 @@ AWS 明确建议从生产流量在线评估开始，而非先构建离线测试�
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch01/433-aws.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/308-amazon-bedrock.html)
 - [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](../ch12/002-token.html)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/237-amazon-quick.html)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/238-amazon-quick.html)
 
 ---
 

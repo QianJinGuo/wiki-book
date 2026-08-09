@@ -63,7 +63,7 @@ Symphony 因此不是让 Codex 多写几行代码，而是推动范式跃迁：�
 - [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多智能体编排通用范式
 - [Orchestrator Worker Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) — orchestrator-worker 架构模式
 - [Specification Driven Agent Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/specification-driven-agent-development.md) — 规范驱动的 agent 开发
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/722-agentic.html) — vibe coding 到 agentic engineering 的范式演进
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html) — vibe coding 到 agentic engineering 的范式演进
 - [Ai Agent Loops Claude Code Codex](../ch03/084-claude-code.html) — Claude Code 与 Codex 的 agent 循环实践
 
 ---

@@ -57,7 +57,7 @@ Ouster 并非没有对手：全球出货量领先的 Hesai 在 Rev8 发布前几
 - [Amap ABot Earth 0.5：3D 原生世界模型](ch01/1280-3d.html)
 - [具身智能与机器人](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md)
 - [Vision-Language Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/vision-language-models.md)
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/228-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/229-tether-launches-developer-grants-program-for-local-first-ai.html)
 
 ---
 

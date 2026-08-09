@@ -35,12 +35,12 @@ Unlocking AI flexibility in Europe: A guide to cross-region inference for EU dat
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/722-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/790-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/295-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/251-openclaw.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/252-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: aws领域方案需关注可观测性、可维护性和成本效率

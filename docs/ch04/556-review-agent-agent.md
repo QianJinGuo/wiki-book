@@ -14,7 +14,7 @@ Review Agent 解决的就是这个问题。它换了个角色、换了个 prompt
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/076-skills.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/272-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/084-claude-code.html)
-- [Openclaw Prompt Context Harness](../ch11/251-openclaw.html)
+- [Openclaw Prompt Context Harness](../ch11/252-openclaw.html)
 - [Harness Engineering Framework](../ch05/092-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)

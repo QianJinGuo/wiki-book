@@ -57,7 +57,7 @@ Nudge Engine 后台维护三组计数器：距上次 Memory 更新的轮数、�
 5. **配置多维度 Nudge 触发阈值**：通过计数器组合（轮数/任务数/步数）设置学习触发条件，避免仅依赖单一指标，实现更精细化的自进化节奏控制。
 
 ## 相关实体
-- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](../ch11/251-openclaw.html)
+- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](../ch11/252-openclaw.html)
 
 ---
 ## 关联

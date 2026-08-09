@@ -297,7 +297,7 @@ subagents: {
 - [Hermes Agent Memory System](../ch03/098-hermes-agent.html)
 - [Openclaw Agent Loop Design Patterns](../ch01/1206-openclaw-agent.html)
 - [Hiclaw V110 K8S Hermes Worker](../ch01/292-hermes.html)
-- [Openclaw Multi 2](../ch11/251-openclaw.html)
+- [Openclaw Multi 2](../ch11/252-openclaw.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 3](ch04/643-amazon-bedrock-agentcore.html)
 
 ---

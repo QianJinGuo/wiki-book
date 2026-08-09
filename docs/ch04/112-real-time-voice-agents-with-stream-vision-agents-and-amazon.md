@@ -141,19 +141,19 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/319-amazon-nova.html) — Nova 多模态嵌入能力
 - [Nemotron 3 Multi-Agent System](../ch03/037-agent.html) — NVIDIA 多Agent系统参考
 - [Amazon Bedrock AgentCore Memory](ch04/643-amazon-bedrock-agentcore.html) — Bedrock Agent 记忆哲学
-- [Strands Agents SDK](ch04/764-strands-agents.html) — 确定性数据分析实践
+- [Strands Agents SDK](ch04/765-strands-agents.html) — 确定性数据分析实践
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/986-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/312-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/643-amazon-bedrock-agentcore.html)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/269-aws-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/251-openclaw.html)
+- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/270-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 2&3部署](../ch11/252-openclaw.html)
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/194-apache-doris-mcp-server-quick-suite-ai.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/269-aws-bedrock-agentcore.html)
-- [OpenClaw多租户迁移: 背景与架构概览](../ch11/251-openclaw.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: 背景与架构概览](../ch11/252-openclaw.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/251-openclaw.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/269-aws-bedrock-agentcore.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/252-openclaw.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/270-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/308-amazon-bedrock.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/643-amazon-bedrock-agentcore.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch04/643-amazon-bedrock-agentcore.html)

@@ -78,8 +78,8 @@ AGI Hunt 的实测记录了多项令人印象深刻的长程任务：
 - [Kimi K3 2.8T Open Source Model 2026](ch01/228-kimi-k3.html) — K3 开源模型的详细分析
 - [Kimi K3 Success Yangzhilin Speech](ch01/228-kimi-k3.html) — 杨植麟谈 K3 成功
 - [Deepseek V4 详解1M 上下文背后真正发生了什么](ch01/1360-deepseek-v4.html) — DeepSeek V4 的技术解析
-- [Fable 5 官方实战指南找到你的未知](../ch04/669-fable-5.html) — Claude Fable 5 的实战对比
-- [Seed 开启持续进化Fable 5 点评Opus 48 水准不比我差](../ch04/669-fable-5.html) — Fable 5 与 Opus 4.8 的对比
+- [Fable 5 官方实战指南找到你的未知](../ch04/670-fable-5.html) — Claude Fable 5 的实战对比
+- [Seed 开启持续进化Fable 5 点评Opus 48 水准不比我差](../ch04/670-fable-5.html) — Fable 5 与 Opus 4.8 的对比
 - [Claude Fable 5 发布Ai 工作流的关键正在转向 Loop 循环](ch01/474-claude-fable-5.html) — Fable 5 发布与 AI 工作流演进
 
 ---
