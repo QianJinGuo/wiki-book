@@ -70,9 +70,9 @@ related:
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/017-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/427-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/722-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/073-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/092-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/251-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/252-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/092-harness-engineering.html)
 
 ---

@@ -80,9 +80,9 @@ jagged frontier 的双刃剑效应：每次 reverse salient 被解决、每轮�
 
 ## 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/722-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/790-karpathy-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1376-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)

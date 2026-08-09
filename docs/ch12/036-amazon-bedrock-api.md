@@ -78,8 +78,8 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-api-security-guide.md)
 
 ## 相关实体
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/251-openclaw.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/269-aws-bedrock-agentcore.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/252-openclaw.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/643-amazon-bedrock-agentcore.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/485-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/643-amazon-bedrock-agentcore.html)

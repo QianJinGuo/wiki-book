@@ -13,7 +13,7 @@ Here are a few examples of what things would look like if they were 10x faster/b
 - [Skill Development Guide Aliyun 2026](../ch04/344-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki/blob/main/entities/manus.im-manus-schedules.md)
 - [Openclaw Multi Agent Team Practice](../ch04/101-openclaw-multi-agent-team-practice-v2.html)
-- [Strands Agents Cloud Cost Optimizer](../ch04/764-strands-agents.html)
+- [Strands Agents Cloud Cost Optimizer](../ch04/765-strands-agents.html)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/10x-is-a-lot.md)

@@ -37,7 +37,7 @@ How We’d Market to Software Developers at Startups 涉及article领域的核�
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/251-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/295-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [E9Ffy3R5Kwa1Ja5Pywbbrg](ch01/932-9.html)

@@ -66,8 +66,8 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/722-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/191-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/073-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/790-karpathy-vibe-coding-agentic-engineering.html)
 - [The Bitter Lesson Versus The Garbage Can](ch04/400-the-bitter-lesson-versus-the-garbage-can.html)
 - [Claude Code And What Comes Next](../ch01/571-claude-code-and-what-comes-next.html)
 - [Management As Ai Superpower](../ch01/676-management-as-ai-superpower.html)

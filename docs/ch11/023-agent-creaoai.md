@@ -265,7 +265,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 
 ### 与多租户 / Serverless Agent
 - [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/643-amazon-bedrock-agentcore.html) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
-- [AgentScope Builder](../ch04/767-self-evolving-agent.html) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
+- [AgentScope Builder](../ch04/768-self-evolving-agent.html) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
 - [Stripe Agent 经济基础设施 5 套图谱](../ch03/037-agent.html) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
 
 ### 与 RAG / Agent 评估

@@ -89,9 +89,9 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
 
 ## 相关实体
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/251-openclaw.html)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/252-openclaw.html)
 - [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/092-harness-engineering.html)
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/251-openclaw.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/252-openclaw.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch03/098-hermes-agent.html)
 - [AIAIGC峰会嘉宾阵容](ch04/603-aiaigc.html)
 - [OpenClaw 多智能体团队搭建实战经验](ch04/101-openclaw-multi-agent-team-practice-v2.html)

@@ -81,11 +81,11 @@ Cursor 另外看了两个代理指标：
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](ch05/017-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/427-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/722-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/092-harness-engineering.html)
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch05/092-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/251-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/252-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](ch05/092-harness-engineering.html)
 
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/037-agent.html)
@@ -99,7 +99,7 @@ Cursor 另外看了两个代理指标：
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch05/042-agent-harness.html)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1533-anthropic.html)
 - [你写的 Skill，及格了吗？](../ch04/344-skill.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/722-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/073-agentic.html)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1219-claude.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/612-claude-managed-agents.html)
 

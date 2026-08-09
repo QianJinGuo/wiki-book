@@ -62,7 +62,7 @@ SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD �
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch05/104-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/722-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/073-agentic.html)
 - [AI Agent 工程师能力地图](../ch04/430-ai-agent.html)
 
 ---

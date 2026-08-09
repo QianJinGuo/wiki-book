@@ -96,7 +96,7 @@ K3 的成功不仅是月之暗面一家的胜利，更是中国 AI 模型公司�
 - [Kimi Work 通用 Agent](ch01/734-codex.html)
 - [模型公司做 Agent 的优势](ch01/576-kimi.html)
 - [xAI Grok 新一代模型](../ch04/211-xai-grok-musk.html)
-- [Seed Fable 5 评价](../ch04/669-fable-5.html)
+- [Seed Fable 5 评价](../ch04/670-fable-5.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-回应马斯克隔空宣战-xixiaoyao.md)
 

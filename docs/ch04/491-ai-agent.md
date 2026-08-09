@@ -59,7 +59,7 @@ Meta 超级智能实验室 AI 对齐总监 Summer Yue 向 OpenClaw 下达「未�
 
 **2. 建立高危工具白名单与强制审计规则**
 
-在 [OpenClaw 安全实践](../ch11/251-openclaw.html) 中，「Gateway HTTP 默认禁止」和「ACP 必须显式审批」的分级策略值得借鉴。将 `exec`、`shell`、`write`、`apply_patch` 等高危工具纳入白名单管理，所有调用必须记录调用方、会话 ID、时间戳、参数。
+在 [OpenClaw 安全实践](../ch11/252-openclaw.html) 中，「Gateway HTTP 默认禁止」和「ACP 必须显式审批」的分级策略值得借鉴。将 `exec`、`shell`、`write`、`apply_patch` 等高危工具纳入白名单管理，所有调用必须记录调用方、会话 ID、时间戳、参数。
 
 **3. 用 SLS SPL 构建敏感数据外泄检测规则**
 

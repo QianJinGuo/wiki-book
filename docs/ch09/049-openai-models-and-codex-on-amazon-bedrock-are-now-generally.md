@@ -78,7 +78,7 @@ GPT-5.5/5.4 在 Bedrock 上与 OpenAI 直连价格一致、不收额外费用 ^�
 
 ### 1. 生产级 Agentic 任务优先选 Bedrock 而非直连 OpenAI API
 
-对于需要多步骤推理和跨工具调用的复杂任务（代码生成流水线、自动化数据分析），Bedrock 的 Durable state capture 保证硬件故障不导致请求中断 ^。结合 Isolated Queue 可向业务方提供可量化的性能 SLA。建议将 [Agentcore Harness](../ch04/758-agentcore-harness.html) 和 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 纳入应用层架构设计参考。
+对于需要多步骤推理和跨工具调用的复杂任务（代码生成流水线、自动化数据分析），Bedrock 的 Durable state capture 保证硬件故障不导致请求中断 ^。结合 Isolated Queue 可向业务方提供可量化的性能 SLA。建议将 [Agentcore Harness](../ch04/759-agentcore-harness.html) 和 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 纳入应用层架构设计参考。
 
 ### 2. 利用现有 AWS 合约覆盖 OpenAI 模型费用
 

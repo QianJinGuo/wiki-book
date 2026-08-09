@@ -62,7 +62,7 @@ Peter Steinberger的100个AI Agent实验揭示了当前AI编程工具在工程�
 - [Openclaw Agent Loop Design Patterns](../ch01/1206-openclaw-agent.html)
 - [Autoresearch Multi Agent Software](../ch03/037-agent.html)
 - [Hiclaw V110 K8S Hermes Worker](../ch01/292-hermes.html)
-- [Pi Openclaw Coding Harness](../ch11/251-openclaw.html)
+- [Pi Openclaw Coding Harness](../ch11/252-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 

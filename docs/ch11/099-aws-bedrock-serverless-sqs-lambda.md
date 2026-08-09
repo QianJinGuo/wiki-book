@@ -70,7 +70,7 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 ## 相关实体
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/308-amazon-bedrock.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](ch11/138-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/269-aws-bedrock-agentcore.html)
+- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/270-aws-bedrock-agentcore.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch11/123-building-blocks-for-foundation-model-training-and-inference.html)
 - [Hapag-Lloyd：1.5万反馈/月95%情感准确率](ch11/204-aws-hapag-lloyd-bedrock-customer-feedback.html)
 - [Halliburton Seismic Workflow with Amazon Bedrock and Generative AI](ch11/020-aws-bedrock.html)

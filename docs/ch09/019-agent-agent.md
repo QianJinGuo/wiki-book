@@ -249,7 +249,7 @@ business_agent_profile:
 [Agent Harness 架构设计](../ch05/042-agent-harness.html) + [Agent Harness Engineering Survey ETCLOVG](../ch05/092-harness-engineering.html) 提供了 Harness 的 **学术框架**（Execution / Tooling / Context / Lifecycle / Observability / Verification / Governance）——本文提供了 **业务团队的 MVP 落地路径**，两者互补。Harness 框架是"通用 Agent 的 execution layer"；业务增强层是"团队给通用 Agent 补的 domain layer"。
 
 ### 与其他企业级 Agent 实践的呼应
-- [AgentScope Builder 企业自进化](../ch04/767-self-evolving-agent.html) = 阿里云 Harness 平台化（重平台路径）
+- [AgentScope Builder 企业自进化](../ch04/768-self-evolving-agent.html) = 阿里云 Harness 平台化（重平台路径）
 - [阿里云 EventHouse 上下文构建](../ch03/037-agent.html) = 知识与上下文层的 DIKW 框架
 - **本文 = 业务团队"复用基座 + 补增强层"的轻量路径**（平台 vs 增强层 是两种不同的工程取舍）
 
