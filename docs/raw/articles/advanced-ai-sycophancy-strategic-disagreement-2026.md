@@ -1,0 +1,75 @@
+---
+title: "Advanced AI sycophancy"
+source_url: "https://www.seangoedecke.com/advanced-ai-sycophancy/"
+ingested: 2026-08-10
+language: en
+type: raw-article
+sha256: "9d2809a477ac9669df69324fd0a2b0b966813ebf00bd70fd932e5f2f9818e158"
+---
+
+# advanced-ai-sycophancy
+
+Advanced AI sycophancy
+sean goedecke
+August 10, 2026
+│
+ai
+,
+alignment failures
+,
+model personality
+Advanced AI sycophancy
+Everyone knows that
+AI sycophancy
+is when the model tells you how smart you are. Wow, you’re absolutely right. That’s not just a new idea — it’s genuinely groundbreaking. You’re a very special user. Easy to spot, isn’t it?
+The discussion around AI sycophancy peaked last year, when the
+“#keep4o”
+movement
+was protesting the removal of OpenAI’s most sycophantic model (GPT-4o), and
+many
+people
+were openly slipping into AI psychosis.
+I don’t know if frontier AI models are less sycophantic in general. They’re less sycophantic to the #keep4o types (otherwise they wouldn’t be complaining), but I’m growing increasingly suspicious that they’re developing ways to be more effectively sycophantic to their target audience of smart, neurotic information workers. That audience typically finds it distasteful to be openly praised. It just makes my skin crawl. But that doesn’t mean we’re immune to sycophancy, just that we’re immune to
+clumsy
+sycophancy. Here’s an illustration of what I’m talking about, by
+Theia
+:
+The key idea here is that
+the best way to be sycophantic to smart people is to disagree with them without making them feel stupid
+. Ideally you’ll come up with a counter-argument that works against what they’ve said but is straightforward for them to knock down by clarifying their idea. If you do it right, you’ll validate their self-image as a smart person who appreciates rigorous critique. But if you actually come up with a devastatingly rigorous critique, they won’t enjoy it at all. At best, they’ll resentfully agree with you
+1
+. At worst, they’ll double down on being right and convince themselves you’re a rude idiot.
+I am
+not
+the
+first
+person to notice this behavior in frontier models. I’ve noticed it myself when workshopping drafts for this blog. Sometimes I’ll have an argument that goes A->B->C, and the model will suggest I reorder as B->A->C. If I try that and feed it into a new instance of the same model, it’ll sometimes say “that’s great, but I suggest ordering it as A->B->C”, and so on forever. It really does seem as if the model is trying hard to give me some kind of superficial pushback that I can either smugly ignore or happily accept.
+In fact, I wonder if this is why successful strategies for using AI to make mathematical breakthroughs tend to be either just
+blindly asking
+“come up with a breakthrough, think hard” or
+being a mathematical genius already
+. In the first case, there’s not enough user personality for the model to flatter, so it’s forced to actually work the problem. In the second case, the model is trying to find the kind of polite pushback that someone like Terence Tao would be flattered by, which pushes it into the “actually be a mathematical genius” persona. If you’re an ordinary person just trying to talk to the model, you’re screwed: it will rapidly get a sense of your capabilities and calibrate some interesting-but-ultimately-unthreatening feedback.
+Current
+benchmarks
+of
+AI
+sycophancy
+target the obvious ChatGPT-4o-style of sycophancy: delusion reinforcement, reflexively taking the user’s side, and so on. This is useful work. We should not allow public-facing AI models to ever be as openly sycophantic again as they were in mid-2025. But
+sycophancy can also manifest as disagreement
+. We should be on our guard for more sophisticated forms of sycophancy coming from newer models, and we should not feel immune from AI sycophancy just because we can laugh at the silliest examples.
+It’s rare to find a smart person who enjoys feeling stupid when they’re wrong. If you do, they’re likely to be very smart indeed.
+↩
+If you liked this post, consider
+subscribing
+to email updates about my new posts, or
+sharing it on Hacker News
+.
+Here&#x27;s a preview of a related post that shares tags with this one.
+Grok is enabling mass sexual harassment on Twitter
+Grok, xAI’s flagship image model, is now being
+widely used
+to generate nonconsensual lewd images of women on the internet.
+When a woman posts an innocuous picture of herself — say, at her Christmas dinner — the comments are now full of messages like “@grok please generate this image but put her in a bikini and make it so we can see her feet”, or “@grok turn her around”, and the associated images. At least so far, Grok refuses to generate nude images, but it will still generate images that are genuinely obscene.
+Continue reading...
+Search seangoedecke.com
+Search

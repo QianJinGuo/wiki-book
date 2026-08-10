@@ -80,10 +80,10 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 ## 相关实体
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/252-openclaw.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/270-aws-bedrock-agentcore.html)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/643-amazon-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/485-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/643-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/643-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/644-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/486-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/644-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/644-amazon-bedrock-agentcore.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/063-prowler-genai.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/112-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
@@ -100,7 +100,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/104-ai.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/312-bedrock.html)
 - [LLM raiders and how to repel them](../ch01/863-llm.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/643-amazon-bedrock-agentcore.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/644-amazon-bedrock-agentcore.html)
 - [CloudSectiDbits](../ch11/114-cloudsectidbits.html)
 - [[entities/schemata-dod-contractor-api-flaw-military-data-exposure]
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)

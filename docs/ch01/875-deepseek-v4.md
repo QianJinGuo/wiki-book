@@ -41,8 +41,8 @@ DeepSeek-V4的论文试图同时完成多件事，而且这些事之间的联系
 
 ## 相关实体
 - [ds4c deepseek v4 antirez](ch01/706-ds4c-deepseek-v4-antirez.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1360-deepseek-v4.html)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/1360-deepseek-v4.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/875-deepseek-v4.html)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/875-deepseek-v4.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/799-deepseek.html)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
 - [Design Patterns for AI Agents 2026](../ch04/147-design-patterns-for-ai-agents-2026-4-5-reflection.html)

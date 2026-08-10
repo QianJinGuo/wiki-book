@@ -177,7 +177,7 @@
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) — AHE 通用 Harness 工程框架
 - [Claude Code Architecture](../ch03/084-claude-code.html) — Claude Code 架构（作为 Harness 搭建者的能力来源）
 - LLM-as-Judge 通用方法
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/401-ai-coding-agent.html) — AI Coding Agent 质量防御五机制（评测即其中一环）
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/402-ai-coding-agent.html) — AI Coding Agent 质量防御五机制（评测即其中一环）
 
 ---
 

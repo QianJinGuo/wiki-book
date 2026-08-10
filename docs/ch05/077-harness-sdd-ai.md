@@ -16,7 +16,7 @@
 - [Wow Harness V3 Governance Protocol](ch05/017-harness.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/055-openspec.html)
 - [Stepan Gershuni Ai Native Startup Guide](ch05/022-ai-native.html)
-- [Oz Multi Harness Cloud Agent Orchestration](../ch04/604-agent-orchestration.html)
+- [Oz Multi Harness Cloud Agent Orchestration](../ch04/605-agent-orchestration.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-sdd-duiwu-ai-fullstack-dewux.md)
 

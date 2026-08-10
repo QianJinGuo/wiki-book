@@ -57,7 +57,7 @@ Google I/O 作为平台和工具方向的**信号事件**，其实质影响体�
 - [Gemini Ai](ch01/055-gemini-ai-google.html)
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Google Shipped Gemini 31 Flash Lite In General Availability](../ch05/104-ai.html)
-- [Google Io 2026 Agentic Gemini Era](../ch04/073-agentic.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/724-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-debuts-gemini-focused-updates-at-io-2026.md)
 

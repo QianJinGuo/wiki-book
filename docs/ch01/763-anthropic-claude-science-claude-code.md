@@ -72,7 +72,7 @@ Claude Science 最值得关注的特性是「科学成果可复现」。传统 A
 - [Claude Code 架构分析](../ch03/084-claude-code.html) — Claude Science 的架构参照系
 - [Anthropic 输出验证](../ch09/099-anthropic-8x.html) — Anthropic 的验证与质量控制理念
 - [Harness Engineering](../ch05/092-harness-engineering.html) — Agent 控制平面的系统方法论
-- [Agent Orchestration](../ch04/604-agent-orchestration.html) — 多 agent 编排在科研场景的应用
+- [Agent Orchestration](../ch04/605-agent-orchestration.html) — 多 agent 编排在科研场景的应用
 - [Google 的 Agent 策略](ch01/025-gemini-spark.html) — Google Gemini Spark 的竞争定位
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic推出claude-science-科研界的claude-code.md)

@@ -106,7 +106,7 @@ Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code
 
 ## 相关
 - [Claude Code 架构](../ch03/084-claude-code.html)
-- [Anthropic PM Agentic 工作流](../ch04/563-anthropic-pm-agentic.html)
+- [Anthropic PM Agentic 工作流](../ch04/564-anthropic-pm-agentic.html)
 - [AutoResearch 多 Agent 开发](../ch03/037-agent.html)
 - [Agent Memory 模块化框架](../ch04/179-agent-memory.html)
 

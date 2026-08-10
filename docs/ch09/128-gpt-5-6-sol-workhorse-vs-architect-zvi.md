@@ -44,7 +44,7 @@ Zvi 建议的实践模式：
 ## 相关实体
 - [GPT-5.6 Sol/Terra/Luna 分层定价](../ch01/734-codex.html)
 - [GPT-5.6 Preview System Card](../ch01/732-gpt-5-6-preview-system-card-community-detection-benchmar.html)
-- [Claude Opus 4.8 System Card (Zvi)](../ch01/1537-claude-opus-4-8.html)
+- [Claude Opus 4.8 System Card (Zvi)](../ch01/1540-claude-opus-4-8.html)
 
 ## 深度分析
 

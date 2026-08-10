@@ -43,8 +43,8 @@ OpenClawTokenMonitoring 通过订阅 Bedrock 调用日志实时解析 Token 数�
 ## 相关实体
 - [Openclaw Multi 1](ch11/252-openclaw.html)
 - [Openclaw Multi 3](ch11/252-openclaw.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/485-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Strands Agents Cloud Cost Optimizer](../ch04/765-strands-agents.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/486-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Strands Agents Cloud Cost Optimizer](../ch04/766-strands-agents.html)
 - [Aws Bedrock Agentcore Identity Security](ch11/270-aws-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-4.md)

@@ -63,7 +63,7 @@ Jesse Vincent 的 [superpowers](https://github.com/obra/superpowers) 是一组�
 
 类比：Opus 是 manager，subagents 是合同工。Opus 不用懂每个子任务的最优路径，只管判定结果好坏。
 
-这与 [CrewAI 多 agent 模式](../ch04/474-your-first-ai-agent-should-do-one-thing-badly.html)呼应，但更"轻"——subagent 是按需创建，不是预设架构。
+这与 [CrewAI 多 agent 模式](../ch04/475-your-first-ai-agent-should-do-one-thing-badly.html)呼应，但更"轻"——subagent 是按需创建，不是预设架构。
 
 ### 5. MCP 协议——AI 工具生态的"USB 标准"
 
@@ -97,8 +97,8 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ### 与相邻观点的张力
 
-- 与 [苦味教训](../ch04/400-the-bitter-lesson-versus-the-garbage-can.html) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
-- 与 [CrewAI 迭代论](../ch04/474-your-first-ai-agent-should-do-one-thing-badly.html)的对照：Claude Code 体现了"小时级自治"，CrewAI 强调"周迭代"——节奏不同，原则相通（都是迭代式而非瀑布式）。
+- 与 [苦味教训](../ch04/401-the-bitter-lesson-versus-the-garbage-can.html) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
+- 与 [CrewAI 迭代论](../ch04/475-your-first-ai-agent-should-do-one-thing-badly.html)的对照：Claude Code 体现了"小时级自治"，CrewAI 强调"周迭代"——节奏不同，原则相通（都是迭代式而非瀑布式）。
 - 与 [管理即超能力](ch01/676-management-as-ai-superpower.html) 的同源：Karpathy 编程工作"变成管理 AI agent"是 Mollick 商业观察在技术领域的镜像。
 
 ## 实践启示
@@ -112,10 +112,10 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/790-karpathy-vibe-coding-agentic-engineering.html)
-- [Your First Ai Agent Should Do One Thing Badly](../ch04/474-your-first-ai-agent-should-do-one-thing-badly.html)
-- [The Bitter Lesson Versus The Garbage Can](../ch04/400-the-bitter-lesson-versus-the-garbage-can.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/724-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
+- [Your First Ai Agent Should Do One Thing Badly](../ch04/475-your-first-ai-agent-should-do-one-thing-badly.html)
+- [The Bitter Lesson Versus The Garbage Can](../ch04/401-the-bitter-lesson-versus-the-garbage-can.html)
 - [Management As Ai Superpower](ch01/676-management-as-ai-superpower.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)

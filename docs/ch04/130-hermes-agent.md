@@ -157,8 +157,8 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/252-openclaw.html)
 - [MemOS Hermes 记忆插件](../ch01/292-hermes.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/098-hermes-agent.html)
-- [17种Agent架构演进：控制流设计的完整演化史](ch04/772-17-agent.html)
-- [AIAIGC峰会嘉宾阵容](ch04/603-aiaigc.html)
+- [17种Agent架构演进：控制流设计的完整演化史](ch04/773-17-agent.html)
+- [AIAIGC峰会嘉宾阵容](ch04/604-aiaigc.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/252-openclaw.html)
 - [Agent Memory 架构解析](ch04/179-agent-memory.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/070-claude-code-prompt.html)
@@ -174,7 +174,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 - [AI Agent 记忆系统架构](ch04/213-how-ai-agent-memory-works.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [AI Agent 工程师能力地图](ch04/430-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/679-ai-agent.html)
 
 ---
 

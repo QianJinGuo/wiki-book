@@ -46,7 +46,7 @@
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
 - [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](../ch03/037-agent.html)
 - [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/104-ai.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1533-anthropic.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1536-anthropic.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.html)
 
 ## 实践启示

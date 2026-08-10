@@ -78,7 +78,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch05/104-ai.html)
 - [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/109-automating-confidential-containers-coco-infrastructure-wit.html)
 - [Gptomics Com How Ai Changes Software P L](../ch01/086-how-ai-changes-software-p-l.html)
-- [Romanian Man 30 Years Us Prison Vishing](../ch01/266-0.html)
+- [Romanian Man 30 Years Us Prison Vishing](../ch01/1434-0.html)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](../ch01/332-1.html)
 - [2026 04 15](../ch01/1119-20.html)

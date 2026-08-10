@@ -25,7 +25,7 @@ Platformer 与 Box CEO Aaron Levie 的对谈系统反驳了「SaaSpocalypse」�
 
 ### Agent 是乘数而非减法：90/10 之争的产业含义
 
-Levie 把「人类交互从 90% 降到 10%」定义为本行业最开放的辩论：这到底意味着人类岗位缩水 90%，还是 agent 数量增长 10 倍？他押注后者，证据来自企业内部软件消费——几乎找不到「削减 seat」的实例，反而到处是新的 agentic 用例：Salesforce 的销售代表今年不减反增，而可想象的 agent 用例从两年前的个位数变成 10–100 个。agent 未必直接操作 Salesforce 界面——它们出现在 Claude Cowork、Codex 或 ChatGPT 里——但底层「某人以某级权限访问某类数据」的 seat 表征不会消失，这与 [The UI is dead, long live the agent](../ch04/387-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 的判断一致：交互入口迁移到 agent，系统与数据层仍是承载者。
+Levie 把「人类交互从 90% 降到 10%」定义为本行业最开放的辩论：这到底意味着人类岗位缩水 90%，还是 agent 数量增长 10 倍？他押注后者，证据来自企业内部软件消费——几乎找不到「削减 seat」的实例，反而到处是新的 agentic 用例：Salesforce 的销售代表今年不减反增，而可想象的 agent 用例从两年前的个位数变成 10–100 个。agent 未必直接操作 Salesforce 界面——它们出现在 Claude Cowork、Codex 或 ChatGPT 里——但底层「某人以某级权限访问某类数据」的 seat 表征不会消失，这与 [The UI is dead, long live the agent](../ch04/388-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 的判断一致：交互入口迁移到 agent，系统与数据层仍是承载者。
 
 ### 「最后 20%」：价值藏在生成文本之外
 
@@ -52,7 +52,7 @@ Levie 给出判断平台存亡的框架：是否承载业务逻辑与工作流�
 
 - [AI 驱动的裁员没有商业意义](../ch03/011-cio.html)
 - [Kimi Work：通用 Agent 工作范式迁移](ch01/734-codex.html)
-- [The UI is dead, long live the agent](../ch04/387-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent](../ch04/388-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [谁在赢得企业 AI](../ch05/104-ai.html)
 - [Token 经济学](ch01/759-the-token-economy.html)
 - [校长与 AI 时代](../ch05/104-ai.html)

@@ -26,9 +26,9 @@
 
 - [Openai官方Cli上线跟复杂的Sdk说拜拜](ch01/276-openai.html)
 - [Ciodive Openai Daybreak Cyber Threats](ch01/276-openai.html)
-- [快来和Ai实战派一起Aiaigc峰会最新嘉宾阵容来了](../ch04/603-aiaigc.html)
+- [快来和Ai实战派一起Aiaigc峰会最新嘉宾阵容来了](../ch04/604-aiaigc.html)
 - [Ai True Moat Organizational Capability](ch01/1058-ai-true-moat-organizational-capability.html)
-- [The Anti Singularity](ch01/1557-the-anti-singularity.html)
+- [The Anti Singularity](ch01/1560-the-anti-singularity.html)
 - [Wiki Evolver Skill System Design Gpt55 Copilot Session](../ch07/016-wiki-evolver.html)
 - [Gpt 54 Is A Big Step For Codex](ch01/734-codex.html)
 - [Yann Dubois Openai Post Training Matt Turck Interview](ch01/276-openai.html)

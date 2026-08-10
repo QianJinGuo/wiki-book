@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **44 篇**实体，按深度递增排列。
+> 本章收录 **45 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 7 |
-| ⭐⭐ 工程师 | 需编程基础 | 35 |
+| ⭐⭐ 工程师 | 需编程基础 | 36 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 
 ---
@@ -3139,7 +3139,73 @@ RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中�
 
 ---
 
-## Ch14.032 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
+## Ch14.032 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
+
+> 📊 Level ⭐⭐ | 6.0KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
+
+# nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md)
+
+## 概览
+
+nOps（AI 驱动的多云成本优化平台，管理 $4B+ 云支出）将其 FinOps 分析 Agent「Clara」从自建 Kubernetes + LangChain/LangGraph + Web API 工具包装架构迁移到 [Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) 托管运行时 + Databricks Lakehouse Metric Views 语义层 + Databricks Lakebase 持久化。结果：上线时间从 10-12 个月压缩到 4 个月（-75%），正确率从 ~65% 升至 81.7%（+145%），工具失败率从 7.49% 降至 0.92%。
+
+本文的核心价值不在 AWS 平台本身，而在三个可迁移的架构决策：**语义层作为 Agent 工具的数据访问契约**、**单 Agent 直连工具优于多 Agent 路由**、**流式响应合并层**。
+
+## 语义层作为 Agent 工具的数据访问契约
+
+Clara 的关键转变是放弃「API 形态数据 + 大上下文窗口」的旧路径，改为让 Agent 工具直接执行 SQL 查询 **Databricks Lakehouse Metric Views**（预建模的度量/维度语义层）。
+
+文章用同一问题「Show my true AWS Cost for the last 30 days by account」对比两种工具实现：
+
+- **Raw SQL MCP 方式**：工具每次都要重新计算业务逻辑——EDP 折扣、PPA 信用、RI 摊销、Savings Plan 摊销逐项叠加再 join 归一化，SQL 30+ 行且每处使用点都可能漂移。
+- **Metric View MCP 方式**：工具查询预定义度量 `true_customer_cost` + 维度 `account_name` + 时间范围，SQL 缩短为 4 行；业务逻辑只在一处建模。
+
+配套的元数据设计让 LLM 能正确消费语义层：每个度量带 **ID / Display Name / Comment（口径说明）/ Synonyms**。其中 Synonyms 被复用为 key:value 对，向 Agent 发送附加元数据。
+
+这一模式与 [Amazon Quick + AgentCore FinOps 助手](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md)（BI 平台内置语义层）同族，但 nOps 的贡献是把「度量口径预建模 + LLM 元数据契约」作为 Agent 工具层设计的通用原则——任何数据分析 Agent 都可以用「预建模度量 + 注释/Synonyms 元数据」替代「工具内嵌业务逻辑」。
+
+## 单 Agent 直连工具优于多 Agent 路由
+
+Clara 采用**单 Strands Agent + 直接工具访问**（canvas 操作、查询执行、数据源发现、工作流编排），明确拒绝多 Agent 路由器架构：
+
+> 单 Agent 架构避免了 agent-to-agent 交接的延迟与错误传播开销，同时保持工具分发的确定性。
+
+这与 [FinOps+DevOps 双 Agent 协作](https://github.com/QianJinGuo/wiki/blob/main/entities/finops-devops-dual-agent-cost-optimization.md)（结构化交接协议）形成对照：当任务边界清晰、工具集可枚举时，单 Agent 直连的工具分发确定性 > 多 Agent 分工的模块化收益。该 tradeoff 与 [多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) 的通用讨论互补。
+
+## 流式响应合并层
+
+Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次性处理三个关注点：
+
+1. **Heartbeats**：长工具执行期间保持连接存活
+2. **词边界感知的文本缓冲**：把小模型 delta 合并为可读块，防止 UI 闪烁
+3. **Widget-poll worker**：把实时 canvas 更新事件交织进同一 SSE 流
+
+这是流式 Agent UX 的工程细节集合，可迁移到任何 SSE/WebSocket 推送的 Agent 前端。
+
+## 记忆与多租户隔离
+
+- **记忆三策略**：语义事实（组织上下文：账户结构/成本分配约定）、用户偏好（布局/默认聚合/图表类型）、canvas 摘要（跨会话保留分析线索）。会话按 canvas 而非 HTTP session 划分，刷新/重连后上下文不丢。
+- **隔离两层**：[AgentCore Gateway](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentcore-gateway-mcp-extension.md) 侧的 Guardrails 作为独立 pre-check（跨租户数据访问策略 + prompt 攻击检测），输出侧再有一层租户策略清洗（脱敏内部标识符）。
+
+## 与既有实体的关系
+
+| 实体 | 角度 | 与本文差异 |
+|------|------|-----------|
+| [Amazon Quick FinOps 助手](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md) | BI 平台对话 | 本文是语义层作为 Agent 工具契约，非平台功能 |
+| [FinOps+DevOps 双 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/finops-devops-dual-agent-cost-optimization.md) | 多 Agent 交接协议 | 本文论证单 Agent 直连的确定性优势 |
+| [AgentCore Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-harness.md) | 托管 Agent 运行时 | 本文提供 AgentCore 落地案例与架构决策 |
+
+## 边界与局限
+
+- 迁移前后非严格对照（EKS 自建 → 托管 + 语义层同时变更），75% 提速的归因不纯
+- 度量指标为 nOps 自报，无独立 benchmark
+- 平台绑定部分（AgentCore memory/Guardrails 具体配置）不可迁移，可迁移的是语义层契约、单 Agent tradeoff、流式合并层三个抽象
+
+---
+
+## Ch14.033 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
 
@@ -3209,7 +3275,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.033 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
+## Ch14.034 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
 
@@ -3324,7 +3390,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.034 DataComp for Language Models
+## Ch14.035 DataComp for Language Models
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
 
@@ -3376,7 +3442,7 @@ DataComp 配套开源数据处理工具：
 
 ---
 
-## Ch14.035 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
+## Ch14.036 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
 
@@ -3431,7 +3497,7 @@ So I ran some backlog drain tests to unders
 
 ---
 
-## Ch14.036 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
+## Ch14.037 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
 
@@ -3484,7 +3550,7 @@ DPDPA also reshaped what the platform had to be. India’s Digital Personal Data
 
 ---
 
-## Ch14.037 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
+## Ch14.038 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
@@ -3518,7 +3584,7 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 
 ---
 
-## Ch14.038 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
+## Ch14.039 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/databend-open-source-lakehouse-ai-agent.md`
 
@@ -3595,7 +3661,7 @@ Databend Cloud on AWS 架构:
 
 ---
 
-## Ch14.039 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
+## Ch14.040 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
 
@@ -3649,7 +3715,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ---
 
-## Ch14.040 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+## Ch14.041 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
@@ -3683,7 +3749,7 @@ Software is changing the world. QCon San Francisco empowers software development
 
 ---
 
-## Ch14.041 The Data Operating System for the Foundation Model Era — Data Juicer
+## Ch14.042 The Data Operating System for the Foundation Model Era — Data Juicer
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
@@ -3715,7 +3781,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ---
 
-## Ch14.042 Amazon Quick integration with time-series databases for market intelligence using MCP
+## Ch14.043 Amazon Quick integration with time-series databases for market intelligence using MCP
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
@@ -3771,7 +3837,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 ---
 
-## Ch14.043 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
+## Ch14.044 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
 > 📊 Level ⭐⭐⭐ | 14.5KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
 
@@ -3908,7 +3974,7 @@ AIDLC 转型对团队能力的要求发生根本变化：
 
 ---
 
-## Ch14.044 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
+## Ch14.045 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/shotstream-streaming-multi-shot-video-cuhk-kling-eccv2026.md`
 

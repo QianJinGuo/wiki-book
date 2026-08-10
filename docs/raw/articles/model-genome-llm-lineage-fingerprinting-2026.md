@@ -1,0 +1,30 @@
+---
+title: "Model Genome: Fingerprinting Whether an LLM Was Trained From Scratch or Derived"
+source_url: "https://huggingface.co/blog/mayafree/model-dna"
+ingested: 2026-08-10
+language: en
+type: raw-article
+sha256: "6f10cdd1cc12dbd9e4887fe7d713a068348de3ef5f4082659f83eb66ac6beabc"
+---
+
+# Model Genome: Fingerprinting Whether an LLM Was Trained From Scratch or Derived
+
+TL;DR — When a lab announces a "self-developed, from-scratch" foundation model, how can an outsider verify the claim using only public artifacts? We built a reproducible pipeline that fingerprints a model on three axes — architecture (config.json), tokenizer (vocabulary overlap), and weights (embedding CKA) — and combined them into a single at-a-glance genotype. Along the way we hit two instructive traps: row-wise embedding cosine is useless because of rotational invariance, and even CKA cannot cleanly separate continued-pretraining from from-scratch — so config + tokenizer remain the primary evidence. We applied the exact same yardstick to the public foundation models of nine Korean organizations.
+
+1. The question — Building a large language model on top of an open-weight base (Qwen, Llama, DeepSeek, Mistral) is a legitimate, industry-standard practice. But it is different from training a foundation model from scratch — and vendors do not always make the distinction explicit. When several labs released DeepSeek-rivaling "self-developed" models in late July 2026 (e.g. LG K-EXAONE 2.0, 750B), the debate spilled into Chinese tech communities as well — a Zhihu thread crossed 2.7M views. The natural question followed: from scratch, or derived?
+
+2. Axis 1 — Architecture fingerprint (config.json) — Every transformers checkpoint ships a config.json. A handful of fields form a surprisingly discriminative signature: model_type, vocab_size, hidden_size, intermediate_size, num_hidden_layers, num_attention_heads / num_key_value_heads. The shape tuple (hidden_size, intermediate_size, num_hidden_layers, heads, kv) is effectively a fingerprint of the reference architecture. When a model's tuple matches a foreign open-weight exactly, that is strong evidence the architecture was adopted rather than designed independently. Measured examples: a 7B commercial model (3584·18944·28·28·4) = Qwen2.5-7B; a 72B commercial model (8192·29568·80·64·8) = Qwen2.5-72B; a 14B VLM (5120·17408·40·40·8) = Qwen3-14B; an 8B model (4096·14336·32·32·8) = Llama-3.1-8B; a MoE model (7168·18432·61·moe2048) = DeepSeek-V3. A single coincidental field means nothing; five simultaneously is a fingerprint.
+
+3. Axis 2 — Tokenizer fingerprint (a paternity test) — Architecture alone can mislead. The tokenizer is measured directly from tokenizer.json, comparing vocabulary sets with a min-overlap ratio: tok_overlap = |A∩B| / min(|A|,|B|). One model matched Qwen2.5-7B's architecture exactly, yet its tokenizer overlapped Qwen by only ~0.38 — a "foreign brain, own language" case: architecture adopted, but a new Korean tokenizer trained. Conversely, some VLMs reused a base tokenizer verbatim (overlap = 1.000), confirming a straight fine-tune. Practical trap: min(|A|,|B|) in the denominator (not the union) makes a reduced vocabulary that is a strict subset of a larger one score ~1.0 — the correct signal for "carved out of the base."
+
+4. Axis 3 — Weights fingerprint (the hard one) — Trap 1: row-wise cosine is useless. Loading embed_tokens.weight and averaging row-wise cosine for shared tokens yields near-zero mean cosine for BOTH a known from-scratch model and a known Llama-derivative. Root cause: rotational invariance — a Transformer's hidden space has no privileged basis, so two models can encode identical information under an arbitrary orthogonal rotation. Trap 2: Linear CKA (Centered Kernel Alignment) is rotation- and isotropic-scale-invariant, so it is the right tool: a from-scratch model scored near-zero CKA against its candidate base — clean evidence of independent pretraining. But a continued-pretrained derivative scored only ≈0.25 — barely above the baseline between two unrelated models of the same family (≈0.21). Large-scale training reshapes embeddings enough that CKA loses discriminative power on the derivative side. Honest conclusion: the weights axis reliably confirms from-scratch (near-zero), but is NOT a strong detector of derivation — config + tokenizer fingerprints remain primary.
+
+5. Bonus axis — attention diversity as an originality proxy — Count of distinct attention mechanisms in config.json (layer_types, linear_attn_config, sliding_window, mamba2_d_state, hyena_filter_order, mla_kv_lora_rank, attention_cls). Most Korean models used single GQA or MLA; a couple hybrid (layer_types = [full_attention×16, sliding_attention×48]); the most diverse combined mamba2, hyena, MLA, linear attention, gated-delta-net, native-sparse-attention and sliding-window in one stack.
+
+6. Combining axes → the genotype — Genotype labels: 🟢 Native (self arch + from-scratch weights); 🔵 Adapted (mostly self, one axis borrowed); 🟡 Mixed (partial, partial inheritance); 🔴 Ported (foreign exact match + inherited). Tokenizer overlap and attention diversity shown alongside, not folded into the verdict.
+
+7. Results — Applying the identical pipeline to the public foundation models of nine Korean organizations: some match a foreign architecture and tokenizer exactly (Ported); others use self-built architectures and weights with no foreign match (Native); many sit in between. Per-model breakdown with 3D lineage graph in the Model Genome Korea Space.
+
+8. Honesty & limitations — Not an accusation: building on open-weight bases is legitimate and widespread. The tool reports lineage, not wrongdoing. Weights axis is supporting, not conclusive. Same yardstick for every model, without exception. All inputs are public; corrections are welcome.
+
+9. Reproduce it — The three functions above are the whole method: print(arch_fingerprint("some/model")); print(tok_overlap("some/model", "Qwen/Qwen3-14B")); weights: load embed_tokens.weight for a shared-vocab pair, then linear_cka. Live demo, full dataset, and 3-language UI: Model Genome Korea.

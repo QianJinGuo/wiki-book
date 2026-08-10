@@ -77,7 +77,7 @@ SurgMotion 标志着手术 AI 领域的一个关键转折点：从「单帧感�
 ## 相关实体
 
 - [Agent Architecture Harness](../ch05/017-harness.html)
-- [AFAC2026 Financial AI Agent](../ch04/430-ai-agent.html)
+- [AFAC2026 Financial AI Agent](../ch04/679-ai-agent.html)
 - [维纳智能登上Nature通讯](../ch05/104-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/中国科学院携手全球顶尖机构发布首个十亿参数级的手术视频基础模型surgmotion.md)

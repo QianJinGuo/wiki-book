@@ -52,7 +52,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 2. **Modular Composition 是长文档生成的关键模式。** 45 页综述不是一次性生成的，而是通过将文档拆分为独立子模块、逐个生成、再组合拼接的方式完成的。对于任何涉及长篇幅输出的 AI 工作流，都应采用「按模块生成 → 逐模块审查 → 汇总组合」的模式，而非试图一次输出全部内容。这种模式既提高了输出质量（每个模块可独立迭代优化），也使得人的审查和干预可以在模块级别进行——这是任何追求出版级质量的 AI 写作项目不可跳过的工程选择。
 
-3. **引用核验是 AI 学术写作不可跳过的质量关卡。** LLM 生成的引用经常出现幻觉——引用不存在的文献、张冠李戴的论点归属、页码错误等。45 页综述能够达到 SCI 标准，离不开事后的引用核验工作。在实践中，可以引入专门的 reviewer agent（如 [Claude Science](ch01/1533-anthropic.html) 中的 actor-critic 架构）逐句核对引用的准确性，将引用校验从纯手动劳动转化为 AI 辅助的自动化流程。任何使用 LLM 辅助学术写作的实践者，都应建立至少包含「生成 → 引用核验 → 人工审查」的三阶段品控流水线。
+3. **引用核验是 AI 学术写作不可跳过的质量关卡。** LLM 生成的引用经常出现幻觉——引用不存在的文献、张冠李戴的论点归属、页码错误等。45 页综述能够达到 SCI 标准，离不开事后的引用核验工作。在实践中，可以引入专门的 reviewer agent（如 [Claude Science](ch01/1536-anthropic.html) 中的 actor-critic 架构）逐句核对引用的准确性，将引用校验从纯手动劳动转化为 AI 辅助的自动化流程。任何使用 LLM 辅助学术写作的实践者，都应建立至少包含「生成 → 引用核验 → 人工审查」的三阶段品控流水线。
 
 4. **明确「人的不可替代价值」并集中投入。** 本案例中最值得关注的不是 AI 做了什么，而是人做了什么：选择综述主题、判断哪些文献值得纳入、评估论证的逻辑严密性、优化语言表达以符合学术期刊风格。这些是当前 AI 能力最薄弱的环节，却恰恰是学术写作最核心的价值。任何希望用 AI 提升学术生产力的团队，都应该明确「人负责什么，AI 负责什么」的分工边界，将人的精力集中在高价值判断上，而不是追求全自动化。
 
@@ -64,7 +64,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 - [Claude Science：AI 科研工作台](ch01/1219-claude.html) — Anthropic 面向科研的 AI 工作台，将 AI 能力嵌入科研全流程，与 Claude Code 的学术综述实践互补
 - [Claude Code KAIROS 范式](ch01/504-claude-code-kairos.html) — Claude Code 从同步问答器向常驻代理的范式跃迁，为长期学术写作工作流提供基础设施
 - [AI 自主科研 L0-L4 框架](../ch05/104-ai.html) — 52 页综述定义的 AI 科研自主度分级，Vibe Research 属于 L1-L2 级别
-- [Claude Science Anthropic 科研 AI 工作台](ch01/1533-anthropic.html) — Anthropic 官方推出的科研 AI 集成工作环境，可审计管道 + 多智能体协同
+- [Claude Science Anthropic 科研 AI 工作台](ch01/1536-anthropic.html) — Anthropic 官方推出的科研 AI 集成工作环境，可审计管道 + 多智能体协同
 - [vibe coding 编程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md) — 人提供意图方向、AI 负责执行的协作模式，Vibe Researching 的方法论基础
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 标准化流程 + 可复用组件的工程思维，可应用于学术写作的流程化管理
 - [AI 研究的科学方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/scientific-method-ai-research.md) — 关于 AI 如何增强而非替代人类判断力的方法论讨论

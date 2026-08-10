@@ -87,7 +87,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 
 ## 相关实体
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/104-ai.html)
-- [AI Coding Agent 记忆系统](ch04/401-ai-coding-agent.html)
+- [AI Coding Agent 记忆系统](ch04/402-ai-coding-agent.html)
 - [AI Agent 记忆系统架构](ch04/213-how-ai-agent-memory-works.html)
 - [Self-Evolving Agents 系统性综述](ch04/285-self-evolving-agents.html)
 - [Hermes Agent 记忆系统深度拆解](../ch03/098-hermes-agent.html)
@@ -95,7 +95,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-- [SkillClaw](ch04/547-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](ch04/548-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/019-hermes-skill.html)
 - [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
