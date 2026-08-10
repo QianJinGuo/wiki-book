@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3874 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3879 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,9 +10,9 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1747 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1372 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 522 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1750 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1373 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 523 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 184 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 49 篇 |
 
@@ -20,7 +20,7 @@
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1563 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1566 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ 快手首个打工人Agent
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ... 共 **1563** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1566** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 42 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **142** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1747 篇**
+> 📖 **本篇共 1750 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 810 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 811 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
-  - ... 共 **810** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **811** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 146 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -156,7 +156,7 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **41** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1372 篇**
+> 📖 **本篇共 1373 篇**
 
 ---
 
@@ -201,7 +201,7 @@
   - ⭐⭐ 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
   - ... 共 **26** 篇 → [完整章节](ch13-mlops.md)
 
-### [Ch14 数据工程](ch14-data.md) — 44 篇
+### [Ch14 数据工程](ch14-data.md) — 45 篇
 > AI 的燃料：实时入湖、流处理、数据质量
 
   - ⭐ 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
@@ -212,9 +212,9 @@
   - ⭐ Kafka 原生消息入湖能力上线 一键打通实时流与数据湖 阿里云云原生
   - ⭐ dataflow harness data pipeline agent pku 2026
   - ⭐⭐ Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
-  - ... 共 **44** 篇 → [完整章节](ch14-data.md)
+  - ... 共 **45** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 522 篇**
+> 📖 **本篇共 523 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3874 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3879 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-10 | 来源: ~/wiki/entities/
+生成时间: 2026-08-11 | 来源: ~/wiki/entities/

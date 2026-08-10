@@ -16,7 +16,7 @@
 
 ## 相关实体
 
-- [AI Infra LLM 高效推理 (vLLM)](ch01/1438-ai-infra.html)
+- [AI Infra LLM 高效推理 (vLLM)](ch01/1441-ai-infra.html)
 - [PyTorch Monarch AMD GPUs (ROCm 分布式训练)](../ch05/104-ai.html)
 - [NVIDIA Blackwell MLPerf Training 6.0](../ch05/104-ai.html)
 - [vLLM](ch01/879-vllm.html)

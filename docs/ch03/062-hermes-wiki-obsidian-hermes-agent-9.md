@@ -236,7 +236,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [Hermes Agent 自进化机制源码解析](ch03/098-hermes-agent.html)
   - [Hermes Agent Memory System vs OpenClaw](ch03/098-hermes-agent.html)
 - **同上下文工程 / 记忆架构**：
-  - [AI Coding Agent 记忆系统](../ch04/401-ai-coding-agent.html)
+  - [AI Coding Agent 记忆系统](../ch04/402-ai-coding-agent.html)
   - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
   - [企业 AI 记忆 substrate 三层架构](../ch05/104-ai.html)
 

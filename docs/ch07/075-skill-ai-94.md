@@ -70,7 +70,7 @@
 设计稿筛选不是靠 AI "觉得哪个像移动端稿"，而是用脚本做直方图统计。只要能用确定性程序解决的问题，就不该交给 LLM 的模糊判断。
 
 ### 外部知识载体 > 模型记忆
-TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内在记忆更可靠。这与 [Anthropic Long Running Agent Architecture 6H Retroforge](../ch01/1533-anthropic.html) 的"文件系统 > 模型记忆"原则一致。
+TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内在记忆更可靠。这与 [Anthropic Long Running Agent Architecture 6H Retroforge](../ch01/1536-anthropic.html) 的"文件系统 > 模型记忆"原则一致。
 
 ### 阶段性验证
 每个阶段有独立验证退出标准，验证从编译（阶段⑤）到模拟器（阶段⑥）到知识沉淀（阶段⑦）逐级上升，避免"完成"的虚假声明。

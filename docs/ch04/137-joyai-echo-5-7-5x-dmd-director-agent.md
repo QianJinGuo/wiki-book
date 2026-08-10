@@ -135,13 +135,13 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 
 ## 与现有实体差异化
 
-- [Ard Agentic Autoregressive Diffusion For Long Video Consistency](ch04/073-agentic.html) / [A2Rd Agentic Autoregressive Diffusion Long Video](ch04/073-agentic.html) — **A²RD 是研究架构**（Google Cloud AI Research + 新加坡国立大学，论文 + 项目页 dxlong2000.github.io），核心是"Multimodal Video Memory + Adaptive Segment Generation + HITS 自改进"学术方案。**JoyAI-Echo 是生产框架**（京东 jd-opensource，GitHub 开源），核心是"跨模态音视频记忆库 + DMD 蒸馏 + 实时超分 + Director Agent"工程化方案。两者**问题域相同（长视频一致性）但定位完全不同**：A²RD = 学术研究 / JoyAI = 开源生产工具。
+- [Ard Agentic Autoregressive Diffusion For Long Video Consistency](ch04/724-agentic.html) / [A2Rd Agentic Autoregressive Diffusion Long Video](ch04/724-agentic.html) — **A²RD 是研究架构**（Google Cloud AI Research + 新加坡国立大学，论文 + 项目页 dxlong2000.github.io），核心是"Multimodal Video Memory + Adaptive Segment Generation + HITS 自改进"学术方案。**JoyAI-Echo 是生产框架**（京东 jd-opensource，GitHub 开源），核心是"跨模态音视频记忆库 + DMD 蒸馏 + 实时超分 + Director Agent"工程化方案。两者**问题域相同（长视频一致性）但定位完全不同**：A²RD = 学术研究 / JoyAI = 开源生产工具。
 - [Ai视频工具悄悄走到了第三阶段](../ch05/104-ai.html) / [Ai Video Tools Third Stage 1779303117](../ch05/104-ai.html) — AI 视频工具的**行业演进史**（Sora 类初代 → Runway Gen-3 → 长视频时代）。本实体是京东的**具体生产框架**，是该演进史的当下最新案例。
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/037-agent.html) — Ethan He 视频 Agent 范式分析。本实体的 Director Agent 是视频 Agent 在**长视频生成场景**的具体实现，但定位更工具化（不需要"compute + talent flywheel"层面的战略叙事）。
 - [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md) / [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md) — NVIDIA Cosmos 视频生成（**机器人/具身智能**视频）。JoyAI-Echo 是**消费级长视频生成**（虚拟 IP / 数字人 / 营销），定位不同。
 - [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](../ch05/104-ai.html) — CVPR 2026 视频理解（**8B 小模型看视频**反超 GPT-5 / Gemini-3.1-Pro），方向是视频理解而非视频生成。
 - [Googles Gemini Omni Video Model Surfaces Ahead Of I O Debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md) — Google Gemini Omni 视频模型（**闭源**，I/O 前夕曝光）。JoyAI-Echo 走**开源路线**，定位差异明显。
-- [Coze 3 0 Collaboration System](../ch01/1400-3-0.html) — Coze 3.0 协作系统（**Agent 协作平台**）。JoyAI-Echo Director Agent 是**单 Agent 在视频生成场景的应用**，是 Agent 平台在长视频领域的具体工程化案例。
+- [Coze 3 0 Collaboration System](../ch01/1402-3-0.html) — Coze 3.0 协作系统（**Agent 协作平台**）。JoyAI-Echo Director Agent 是**单 Agent 在视频生成场景的应用**，是 Agent 平台在长视频领域的具体工程化案例。
 
 ## 相关实体
 - [别让格式杀死思想Logics Parsing V2定义文档解析新边界](https://github.com/QianJinGuo/wiki/blob/main/entities/别让格式杀死思想logics-parsing-v2定义文档解析新边界.md)
@@ -157,15 +157,15 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 
 —
 - 视频 Agent 范式 — [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/037-agent.html)
-- 记忆架构在多模态的延伸 — [Chatgpt Dreaming V3 Long Term Memory Architecture](../ch01/1339-chatgpt-dreaming-v3.html)（同 2026-06 发布，Dreaming 强调"会话级记忆"，JoyAI-Echo 强调"角色级记忆"——都是"长期记忆"概念在不同模态的工程化）
-- 多模态记忆库设计 — [Agent Memory Architecture](ch04/504-perplexity-brain-self-improving-agent-memory-architecture.html)
+- 记忆架构在多模态的延伸 — [Chatgpt Dreaming V3 Long Term Memory Architecture](../ch01/1341-chatgpt-dreaming-v3.html)（同 2026-06 发布，Dreaming 强调"会话级记忆"，JoyAI-Echo 强调"角色级记忆"——都是"长期记忆"概念在不同模态的工程化）
+- 多模态记忆库设计 — [Agent Memory Architecture](ch04/505-perplexity-brain-self-improving-agent-memory-architecture.html)
 —
 
 ## 深度分析
 
 - **"像人一样记忆"是 JoyAI-Echo 的核心哲学**：跨模态音视频记忆库的设计明确点出"不无限扩展记忆，只保留开头关键镜头 + 最近生成镜头"——这与人脑记忆系统（**长期记忆 + 工作记忆**）的工作方式高度相似。**5 分钟时长上限本质上是工作记忆容量上限的工程化体现**——超出这个时长，模型再增加参数也难以保持一致性。这个边界条件比很多论文里宣称的"任意时长"更诚实。
 
-- **DMD 7.5x 加速是"后训练工业化"的标志**：DMD（Distribution Matching Distillation）不是新概念，**将 DMD 应用于长视频生成的后训练环节并实现 7.5x 加速**才是 JoyAI-Echo 的工程价值。这与 [Ai Infra Llm Efficient Inference Vllm](../ch01/1438-ai-infra.html) 中 vLLM 的 PagedAttention 类似——都是"训练时模型 → 推理时模型"的能力压缩，但 DMD 解决的是**生成质量保留**问题，vLLM 解决的是**吞吐量**问题。DMD 范式可能在 AIGC 全行业扩散（视频 / 图像 / 3D / 音频都可能复用）。
+- **DMD 7.5x 加速是"后训练工业化"的标志**：DMD（Distribution Matching Distillation）不是新概念，**将 DMD 应用于长视频生成的后训练环节并实现 7.5x 加速**才是 JoyAI-Echo 的工程价值。这与 [Ai Infra Llm Efficient Inference Vllm](../ch01/1441-ai-infra.html) 中 vLLM 的 PagedAttention 类似——都是"训练时模型 → 推理时模型"的能力压缩，但 DMD 解决的是**生成质量保留**问题，vLLM 解决的是**吞吐量**问题。DMD 范式可能在 AIGC 全行业扩散（视频 / 图像 / 3D / 音频都可能复用）。
 
 - **Director Agent 三阶段是视频生成的"流程工程"突破**：之前 AI 视频的瓶颈除了"变脸/漂移/慢"，还有"无法返工"——创作者发现某镜头有问题只能重新生成整条视频。**Director Agent 的"只对受影响部分重生成"**让 AI 视频真正进入"可迭代"阶段，这是与 [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/037-agent.html) 中"compute + talent flywheel"概念对应的工程化落地——前者是战略叙事，后者是技术实现。
 

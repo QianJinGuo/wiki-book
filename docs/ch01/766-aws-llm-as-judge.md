@@ -15,12 +15,12 @@ Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑craf
 - [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](ch01/557-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
 - [Llm Finetuning Cost Breakdown](ch01/863-llm.html)
 - [Harness Engineering 第三代工程范式](../ch05/092-harness-engineering.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/499-aws-sagemaker-ai-agent.html)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/500-aws-sagemaker-ai-agent.html)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/896-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)
 
-- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/395-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
+- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/396-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)

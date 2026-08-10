@@ -53,10 +53,10 @@ SkillOpt 最有价值的抽象，是把模型训练的那套流程整体平移�
 - [SkillOpt](../ch05/047-skillopt.html) — 本方法的主条目
 - [SkillOpt — 微软训练 Skill 文档的方法论](../ch05/047-skillopt.html)（论文精读版）
 - [别再手写 Skill 了！微软最新研究：像神经网络一样训练 Skill](../ch05/047-skillopt.html)（同主题另一篇报道）
-- [SkillOpt-Lite：一行 Vibe 指令加速 Agent 技能自进化](../ch04/595-agent-skill.html)
+- [SkillOpt-Lite：一行 Vibe 指令加速 Agent 技能自进化](../ch04/342-agent-skill.html)
 - [Regression Tax：技能包导致 Agent 性能退化的系统性分析](../ch03/076-skills.html)
 - [清华自进化 Skill 双星：EmbodiSkill + SkillEvolver](../ch04/194-skill-agent.html)
-- [AgentENV：面向大规模 Agentic RL 的智能体执行环境](../ch04/647-agentenv-agentic-rl.html)
+- [AgentENV：面向大规模 Agentic RL 的智能体执行环境](../ch04/648-agentenv-agentic-rl.html)
 
 ---
 

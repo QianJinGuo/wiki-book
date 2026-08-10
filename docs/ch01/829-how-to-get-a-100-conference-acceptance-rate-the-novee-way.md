@@ -68,7 +68,7 @@ _De
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch01/433-aws.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/308-amazon-bedrock.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/238-amazon-quick.html)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/643-amazon-bedrock-agentcore.html)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/644-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 

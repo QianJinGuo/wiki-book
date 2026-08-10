@@ -66,8 +66,8 @@ llama.cpp 的 server 模式把本地推理包装成 OpenAI 兼容的 `/v1/chat/c
 
 - [Quantization Techniques](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) — GGUF 量化方法体系与精度-成本权衡
 - [LLaMA.cpp 部署 Qwen3.6 实测](https://github.com/QianJinGuo/wiki/blob/main/entities/mtp-加速推理最佳实践在亚马逊云科技中国区使用-llamacpp-部署-qwen36-的实测指南.md) — AWS 中国区 CPU/GPU 部署实测数据
-- [MoE 架构](../ch01/1409-moe-architecture.html) — 激活参数稀疏化对内存带宽需求的缓解
-- [Minimal CLI Agent](../ch04/475-python.html) — 本地模型接入 Agent 循环的最小实现
+- [MoE 架构](../ch01/1412-moe-architecture.html) — 激活参数稀疏化对内存带宽需求的缓解
+- [Minimal CLI Agent](../ch04/476-python.html) — 本地模型接入 Agent 循环的最小实现
 - [Graviton 推理](https://github.com/QianJinGuo/wiki/blob/main/entities/graviton-inference.md) — 内存带宽优势在 ARM 服务器上的体现
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 推理基础设施在 Agent 工程中的定位
 

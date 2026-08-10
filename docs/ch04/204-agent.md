@@ -96,15 +96,15 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 ## Related
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — bootstrap 文件机制、工具结果预算、compaction 实现
 - [Claude Code 架构解析](../ch03/084-claude-code.html) — 文件读取双层门禁、查询前优化、compaction 触发机制
-- [Agent Skill 编写指南](ch04/595-agent-skill.html) — Skill 的渐进式上下文注入机制
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/430-ai-agent.html)
+- [Agent Skill 编写指南](ch04/342-agent-skill.html) — Skill 的渐进式上下文注入机制
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/679-ai-agent.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [OpenCLAW 完全指南](../ch11/252-openclaw.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1206-openclaw-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/477-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/478-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/344-skill.html)
@@ -118,7 +118,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 [Context Window 管理对比](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-window-management-comparison.md)
 
 ## 相关实体
-- [AIAIGC峰会嘉宾阵容](ch04/603-aiaigc.html)
+- [AIAIGC峰会嘉宾阵容](ch04/604-aiaigc.html)
 
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/252-openclaw.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/037-agent.html)

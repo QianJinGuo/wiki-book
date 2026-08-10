@@ -112,15 +112,15 @@ skill-up 用**逐层收窄的判定漏斗**承接此类场景：
 - skill-up 专为 Agent Skill 设计，聚焦 Skill 安装、跨引擎回放、工具调用验证
 - skill-up 的多轮会话评测和 judge skill 能力是独特亮点
 
-与 [Agent Skill 评估与迭代](ch04/595-agent-skill.html)（侧重于手动测试方法论）相比，skill-up 提供了完全自动化、CI 可集成的工程化方案。
+与 [Agent Skill 评估与迭代](ch04/342-agent-skill.html)（侧重于手动测试方法论）相比，skill-up 提供了完全自动化、CI 可集成的工程化方案。
 
 ## 相关实体
 
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/037-agent.html)
-- [Agent Skill 评估与迭代](ch04/595-agent-skill.html)
+- [Agent Skill 评估与迭代](ch04/342-agent-skill.html)
 - [Agent 可靠性工程：Skillify 与持续改进](ch04/344-skill.html)
 - [Agent 评估系统指南](../ch03/037-agent.html)
-- [SWE-bench Agent 评估](ch04/467-swe-bench-agent.html)
+- [SWE-bench Agent 评估](ch04/468-swe-bench-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-skill-up-agent-skill-evaluation-framework-2026.md)
 

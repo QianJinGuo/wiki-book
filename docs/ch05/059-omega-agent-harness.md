@@ -90,7 +90,7 @@ OMEGA 的设计理念对通用 harness engineering 有重要借鉴意义：它�
 
 ## 相关实体
 
-- [Agent Orchestration Multi Agent Systems](../ch04/604-agent-orchestration.html) — 多智能体编排的基础架构模式，OMEGA 将其扩展到物理机器人领域
+- [Agent Orchestration Multi Agent Systems](../ch04/605-agent-orchestration.html) — 多智能体编排的基础架构模式，OMEGA 将其扩展到物理机器人领域
 - [Coze 3 Multimagent Team Orchestration Wangheige](../ch03/037-agent.html) — Coze 的团队级编排设计，提供软件侧的参考对比
 - [Agent Harness Context Management Working Set](ch05/042-agent-harness.html) — harness 工程中的 context management，与 OMEGA 的分层设计有相似的设计哲学
 - [阿里云刚发布的 Agentloop 是什么](../ch04/355-agentloop.html) — 阿里云的 AgentLoop 编排方案，为软件侧的多 agent 协作提供另一种范式参考

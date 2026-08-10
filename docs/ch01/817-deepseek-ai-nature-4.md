@@ -69,7 +69,7 @@
 
 ## 相关实体
 
-- [DeepSeek V4](ch01/1360-deepseek-v4.html) — 同为登上Nature主要期刊的中国AI公司
+- [DeepSeek V4](ch01/875-deepseek-v4.html) — 同为登上Nature主要期刊的中国AI公司
 - [AReaL 2.0](../ch04/309-agentic-rl.html) — 在线强化学习基础设施，与推理数据生成互补
 - [AI自我改进：从Harness开始](../ch05/017-harness.html) — Agent通过运行轨迹持续优化的理念
 - [Harness Engineering](../ch05/092-harness-engineering.html) — Agent工程治理的系统方法论

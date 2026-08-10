@@ -35,7 +35,7 @@
 - [Anthropic Claude Code Large Scale Code Migration 2026](../ch01/480-anthropic-claude-code.html) — Anthropic 大规模代码迁移实践
 - [Agentic Loop Engineering Handbook Empirical Framework](ch05/006-loop-engineering.html) — Loop Engineering 经验框架
 - [Ai Agent Loops Claude Code Codex](../ch03/084-claude-code.html) — AI Agent 循环模式
-- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/1533-anthropic.html) — Dynamic Workflows 与 Ultracode
+- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/1536-anthropic.html) — Dynamic Workflows 与 Ultracode
 - [Harness Engineering](ch05/092-harness-engineering.html) — Harness Engineering 概念体系
 - [Claude Code 27 Tips Engineering Upgrade Jiagoux 2026](../ch01/335-claude-code-27.html) — Claude Code 工程实践技巧
 

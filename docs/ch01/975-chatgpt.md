@@ -68,7 +68,7 @@ OpenAI 已在官方博客中调侃"接住"梗的存在，甚至在 GPT Image 2 �
 ## 相关实体
 - [Karpathy Llm Wiki V2 2026](ch01/863-llm.html)
 - [Openai携手五巨头开源革命性超算协议一举解决超大集群Llm训练不稳定和网络性能难题](ch01/276-openai.html)
-- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/475-python.html)
+- [Microsoft Agent Framework Python Full Guide Zizhi](../ch04/476-python.html)
 - [Ai True Moat Not Llm But Organization](ch01/863-llm.html)
 - [Pi Mono Github](ch01/1105-pi-mono-github.html)
 

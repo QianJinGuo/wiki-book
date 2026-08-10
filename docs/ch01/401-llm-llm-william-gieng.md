@@ -246,11 +246,11 @@ Python 案例使用 `numpy.default_rng(7)` + 4 个 logistic 方程，可重现�
 ## 相关实体
 
 - [Video Rag Chunking Strategy](ch01/1268-rag.html)（文本 + AI 同源 — 视频 RAG 切片策略）
-- [2 Year 25 Ai Projects Summary](ch01/1332-5-ai.html)（2 年 25 个 AI 项目总结 — 失败案例对照）
+- [2 Year 25 Ai Projects Summary](ch01/1334-5-ai.html)（2 年 25 个 AI 项目总结 — 失败案例对照）
 - [Loss Function Development Elvis Sun Goal Loop 2026](ch01/1119-20.html)（LFD 强制熵同源 — 都是"系统化检查"思维）
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/042-agent-harness.html)（Agent 记忆体系 — 类似"看起来像观测但实际是生成"）
 - [Recent Developments In Llm Architectures Jiqizhixin](ch01/863-llm.html)（LLM 架构最新进展 — 同主题）
-- [2 Year 25 Ai Projects Summary](ch01/1332-5-ai.html)（2 年 25 个 AI 项目 — 失败方法论对照）
+- [2 Year 25 Ai Projects Summary](ch01/1334-5-ai.html)（2 年 25 个 AI 项目 — 失败方法论对照）
 - [While Breathless In Stodgy Viridian](ch01/746-while-breathless-in-stodgy-viridian.html)（对 LLM 局限的反思同源）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-themes-not-observations-william-gieng-causal-inference-2026.md)

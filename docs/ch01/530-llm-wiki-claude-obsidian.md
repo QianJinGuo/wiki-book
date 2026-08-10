@@ -176,7 +176,7 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 - [Karpathy Claude Md Rules](ch01/423-claude-md.html)
 - [Obsidian Llm Wiki Local Kytmanov](ch01/863-llm.html)
 - [Claude Md 12 Rules Mnilax](ch01/423-claude-md.html)
-- [Karpathy Vibe Coding Agentic Engineering V3](../ch04/790-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering V3](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
 - [yc掌门人60天写了60万行代码：gstack开源](ch01/899-garry-tan.html)

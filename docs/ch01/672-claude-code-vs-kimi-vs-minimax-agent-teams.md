@@ -90,7 +90,7 @@ Worker 和 Verifier 的隔离是关键——Verifier 要像一个不近人情的
 
 - [Claude Code 架构分析](../ch03/084-claude-code.html) — Claude Code 的深层架构拆解
 - [Harness Engineering](../ch05/092-harness-engineering.html) — Agent 控制平面的系统方法论
-- [Agent Orchestration](../ch04/604-agent-orchestration.html) — 多 agent 编排模式
+- [Agent Orchestration](../ch04/605-agent-orchestration.html) — 多 agent 编排模式
 - [Kimi K2 Agent Swarm](ch01/576-kimi.html) — Kimi 并行 agent 方案的技术细节
 - [Agent 评测方法论](../ch03/037-agent.html) — 验证和评估 agent 系统的方法
 

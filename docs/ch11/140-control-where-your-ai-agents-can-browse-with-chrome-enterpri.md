@@ -53,10 +53,10 @@ AgentCore 的方案是将组织根 CA 存储在 AWS Secrets Manager，引用时�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 
 ## 相关实体
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/073-agentic.html)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/724-agentic.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/353-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch11/238-amazon-quick.html)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/677-agentic-ai.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/116-agentic-ai.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04/353-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Who Winning Enterprise AI Now](../ch05/104-ai.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/112-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
@@ -64,8 +64,8 @@ AgentCore 的方案是将组织根 CA 存储在 AWS Secrets Manager，引用时�
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/319-amazon-nova.html)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/986-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/312-bedrock.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/643-amazon-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/485-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/644-amazon-bedrock-agentcore.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/486-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/020-aws-bedrock.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
@@ -79,9 +79,9 @@ AgentCore 的方案是将组织根 CA 存储在 AWS Secrets Manager，引用时�
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/252-openclaw.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/270-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/308-amazon-bedrock.html)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/643-amazon-bedrock-agentcore.html)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/643-amazon-bedrock-agentcore.html)
-- [anthropic acquires stainless](../ch04/527-anthropic-acquires-stainless.html)
+- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/644-amazon-bedrock-agentcore.html)
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/644-amazon-bedrock-agentcore.html)
+- [anthropic acquires stainless](../ch04/528-anthropic-acquires-stainless.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

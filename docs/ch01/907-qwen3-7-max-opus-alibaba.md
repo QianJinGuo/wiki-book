@@ -53,11 +53,11 @@ Qwen3.7-Max 的评测策略与传统大模型评测有本质区别。传统 benc
 ## 相关实体
 
 - [Qwen AgentWorld](../ch03/037-agent.html)
-- [Qwen Image Flash](ch01/1435-qwen-image-flash-beyond-objective-design-few-step-distill.html)
-- [Alibaba Agentic Cloud](../ch04/428-agentic-cloud.html)
+- [Qwen Image Flash](ch01/1438-qwen-image-flash-beyond-objective-design-few-step-distill.html)
+- [Alibaba Agentic Cloud](../ch04/429-agentic-cloud.html)
 - [Harness Engineering Survey 2026](../ch05/092-harness-engineering.html)
 - [Agent Harness 上下文管理](../ch05/042-agent-harness.html)
-- [DeepSeek V4](ch01/1360-deepseek-v4.html)
+- [DeepSeek V4](ch01/875-deepseek-v4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen3.7-max-opus-level-experience-code-secret-garden.md)
 

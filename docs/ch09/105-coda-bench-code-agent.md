@@ -61,7 +61,7 @@ CoDA-Bench 的发现与生产环境中 Code Agent 的部署经验高度吻合。
 
 ## 相关实体
 
-- [ProgramBench / SWE-agent Benchmark](../ch04/618-programbench-swe-agent-benchmark.html) — 传统 Agent 基准，主要关注代码修改能力
+- [ProgramBench / SWE-agent Benchmark](../ch04/619-programbench-swe-agent-benchmark.html) — 传统 Agent 基准，主要关注代码修改能力
 - [VitaBench 2.0](../ch01/1119-20.html) — 真实生活场景中长期动态用户建模基准，互补关注个性化维度
 - [QoderWork 诊断](../ch01/965-qoder.html) — 生产环境中 Agent 在复杂目录结构下的行为问题
 - [QoderWork Skills 实践](../ch03/076-skills.html) — 数据科学场景下 Agent 的工作流封装
