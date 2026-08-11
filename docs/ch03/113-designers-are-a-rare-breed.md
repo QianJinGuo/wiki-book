@@ -45,7 +45,7 @@ Claude Design 引发的行业焦虑，源于把「设计普及」误读为「设
 - [AI UX 设计模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ux-design-patterns.md) —— AI 时代交互设计范式的方法论集合
 - [Top 10 Design Gadgets（2026）](../ch01/1119-20.html) —— 创意专业人士的工具装备清单
 - [柚漫剧 AI 全流程提效拆解](../ch05/104-ai.html) —— AI 提效从单点到工程化的行业案例
-- [Agent Skill 设计模式](../ch04/478-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
+- [Agent Skill 设计模式](../ch04/479-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designers-are-a-rare-breed.md)
 

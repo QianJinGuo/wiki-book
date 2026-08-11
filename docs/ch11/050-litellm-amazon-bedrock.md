@@ -126,7 +126,7 @@ LiteLLM Virtual Key 提供 team/user/project 三层粒度 + token/dollar 双维�
 
 ### 2. IAM Role 替换 Long-lived AK/SK 是企业 AI 安全的最低要求
 
-对于任何在 AWS 上部署 AI 应用的团队，用 IAM Role 替换 Long-lived AK/SK 是**必须完成的基础安全改造**。配合 Secrets Manager 集中托管 + 90 天自动轮转 + GitHub Secret Scanning，可以将 API Key 盗刷风险降到最低。参见 [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/644-amazon-bedrock-agentcore.html) 了解 Bedrock 场景下的安全最佳实践。
+对于任何在 AWS 上部署 AI 应用的团队，用 IAM Role 替换 Long-lived AK/SK 是**必须完成的基础安全改造**。配合 Secrets Manager 集中托管 + 90 天自动轮转 + GitHub Secret Scanning，可以将 API Key 盗刷风险降到最低。参见 [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/645-amazon-bedrock-agentcore.html) 了解 Bedrock 场景下的安全最佳实践。
 
 ### 3. Prometheus + Grafana 是 AI Gateway 可观测性的行业标准
 
@@ -143,7 +143,7 @@ LiteLLM 内置 `/metrics` 端点暴露 Prometheus 指标，配合 Grafana 看板
 ## 相关主题
 
 - `concepts/llm-cost-control`（LLM 成本控制，概念层，待创建）
-- [AWS Bedrock AgentCore Gateway MCP 扩展](../ch04/644-amazon-bedrock-agentcore.html)
+- [AWS Bedrock AgentCore Gateway MCP 扩展](../ch04/645-amazon-bedrock-agentcore.html)
 - [阿里云云原生 API Gateway Gateway API 指南](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 
 ---

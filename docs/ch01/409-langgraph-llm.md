@@ -309,7 +309,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-recruitment.md)
 - [Lightfield Ai Pipeline Generation](../ch05/104-ai.html)
 - [Creativeboom Ai Views Changed](../ch05/104-ai.html)
-- [Netflix Is Building An Ai Animation Studio](../ch11/249-netflix-is-building-an-ai-animation-studio.html)
+- [Netflix Is Building An Ai Animation Studio](../ch11/250-netflix-is-building-an-ai-animation-studio.html)
 - [Minicpm V 46 13B Xinazhiyuan](ch01/332-1.html)
 - [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](ch01/860-gemma-4.html)
 - [Model Half Life Aifoc](ch01/1077-model-half-life.html)

@@ -78,7 +78,7 @@ Agent 面临的上下文腐烂、工具误用、成本失控、安全漏洞、�
 
 **1. 10 步路线图 vs Hermes Agent 的实现映射**
 
-Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAUDE.md（目标边界）；Step 2 = tools/ 目录（原子工具）；Step 3 = context management + compaction；Step 4 = session persistence + memory tool；Step 5 = disallowed_tools + hooks；Step 6 = pre-commit hooks + wiki-lint；Step 7 = Langfuse integration；Step 8 = cron + kanban（长程执行）；Step 9 = model routing（OpenRouter）。Step 10 持续迭代通过 skill_manage 和 session_search 实现。 [Hermes Agent Skills Source Code Analysis Shuge](../ch04/519-hermes-agent-skills.html)
+Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAUDE.md（目标边界）；Step 2 = tools/ 目录（原子工具）；Step 3 = context management + compaction；Step 4 = session persistence + memory tool；Step 5 = disallowed_tools + hooks；Step 6 = pre-commit hooks + wiki-lint；Step 7 = Langfuse integration；Step 8 = cron + kanban（长程执行）；Step 9 = model routing（OpenRouter）。Step 10 持续迭代通过 skill_manage 和 session_search 实现。 [Hermes Agent Skills Source Code Analysis Shuge](../ch04/520-hermes-agent-skills.html)
 
 **2. Progress File 模式与 Hermes Memory/Cron 的对比**
 
@@ -99,7 +99,7 @@ Hermes Agent 已实现路线图中的大部分步骤：Step 1 = AGENTS.md + CLAU
 - [Harness Engineering 14 步路线图](ch05/092-harness-engineering.html)
 - [AI Agent Harness Construction — Akshay](../ch01/1178-ai-agent-harness.html)
 - [Ralph Loop 长程执行](ch05/017-harness.html)
-- [Hermes Agent Skills 源码分析](../ch04/519-hermes-agent-skills.html)
+- [Hermes Agent Skills 源码分析](../ch04/520-hermes-agent-skills.html)
 - [Agent 记忆生命周期哲学](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
 - [Agent Engineering Guide MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-10-step-practical-guide-2026.md)

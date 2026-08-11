@@ -81,13 +81,13 @@
 5. **Codex 并入 ChatGPT = 边界模糊** —— Agent 能力 + Chat 界面 = 一体化产品
 
 ## 相关对照
-- [Codex Goal Agent Runtime](../ch04/162-codex-goal-agent.html)
+- [Codex Goal Agent Runtime](../ch04/244-codex-goal-agent.html)
 - [Codex Goal 实现拆解](../ch09/056-codex-goal.html)
 - [Codex Computer Use](../ch09/155-codex-can-now-control-other-desktop-devices-via-computer-use.html)
 - [Codex 自主赚钱](ch01/734-codex.html)
 - [Claude Code vs Codex 上下文架构](../ch03/084-claude-code.html)
 - [Meta Skill](../ch07/029-meta-skill.html)（Skill 2.0 抽象）
-- [扣子 3.0 协作系统](ch01/1402-3-0.html)（同类协作产品）
+- [扣子 3.0 协作系统](ch01/1403-3-0.html)（同类协作产品）
 - [Embabel](../ch07/024-embabel.html)（可解释+类型系统集成）
 
 ## 深度分析

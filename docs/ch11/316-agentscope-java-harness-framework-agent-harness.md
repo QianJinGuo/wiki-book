@@ -25,7 +25,7 @@ workspace/
 对比 vault 中其他工作区方案：
 
 - [Agent Harness 架构](../ch05/042-agent-harness.html) — 7层金字塔模型，Harness 定位为 Agent 的"后台基础设施"
-- [OpenClaw Prompt/Harness](ch11/252-openclaw.html) — 个人单机假设，workspace 即本地目录
+- [OpenClaw Prompt/Harness](ch11/253-openclaw.html) — 个人单机假设，workspace 即本地目录
 - [Thin Harness Fat Skills](../ch05/096-thin-harness-fat-skills-ai.html) — Thin Harness 理念：Harness 做薄（最小协调层），Skill 做厚（业务逻辑）
 
 ### 支柱二：AbstractFilesystem 抽象
@@ -53,7 +53,7 @@ Local      Remote     Sandbox
 
 ## 相关实体
 - [Harness Engineering 系统梳理](../ch05/092-harness-engineering.html)
-- [OpenHuman: AI Agent 持久记忆框架](../ch04/179-agent-memory.html)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04/180-agent-memory.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

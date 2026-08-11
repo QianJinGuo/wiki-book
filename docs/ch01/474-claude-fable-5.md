@@ -138,8 +138,8 @@ ActionTrail 操作审计            ←  每次拒绝可审计
   - [Nemotron 3.5 Content Safety](ch01/686-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
   - [阿里集团 AI 代码评审安全带](../ch05/104-ai.html)
 - **同阿里云生态**：
-  - [Aliyun AgentRun](../ch04/428-agentrun.html)
-  - [阿里云 CMS CLI 可观测](../ch04/344-skill.html)
+  - [Aliyun AgentRun](../ch04/005-agentrun.html)
+  - [阿里云 CMS CLI 可观测](../ch04/345-skill.html)
   - [阿里云 哈勃业务 Agent 评估](../ch05/017-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

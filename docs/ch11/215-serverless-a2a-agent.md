@@ -2,91 +2,13 @@
 
 ## Ch11.215 构建 Serverless A2A 网关：Agent 发现、路由与访问控制
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md`
+> 📊 Level ⭐⭐ | 6.4KB | `entities/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md`
 
 # 构建 Serverless A2A 网关：Agent 发现、路由与访问控制
 
 > 本文基于 AWS Machine Learning Blog 的技术文章整理。原文介绍了如何在 AWS 上构建一个 serverless 的 Agent-to-Agent (A2A) 网关，实现 agent 的注册、发现、路由和访问控制，支持异构环境（AWS、非 AWS 云、混合环境）下的 agent 互联。
 
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("构建 Serverless A2A 网关：Agent 发…"))
-    概念导图
-    背景与问题
-    三层架构
-      管理层（Management Layer）
-      控制层（Control Layer）
-      执行层（Execution Layer）
-    A2A 协议端点
-    安全考量
-      后端信任模型
-      Amazon Bedrock AgentCor…
-      私有部署
-    部署
-    相关实体
-```
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("构建 Serverless A2A 网关 Agent 发现"))
-    背景与问题
-    三层架构
-      管理层 Management Layer
-      控制层 Control Layer
-      执行层 Execution Layer
-    A2A 协议端点
-    安全考量
-      后端信任模型
-      Amazon Bedrock AgentCore 认证细节
-      私有部署
-    部署
-```
-
 ## 背景与问题
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 
 企业在多个团队、供应商和基础设施上部署 AI agent 后，agent 间的通信管理成为越来越大的运维负担。如果没有中心化的通信层，每个新 agent 的集成都需要：
 
@@ -97,7 +19,7 @@ graph TB
 
 结果是：新 agent 工作流上线慢、安全风险高、运维开销随 agent 数量平方增长。
 
-网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](../ch04/237-agentic.html)、[Lambda](../ch04/003-agentrun.html)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
+网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](../ch04/725-agentic.html)、[Lambda](../ch04/005-agentrun.html)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
 
 ## 三层架构
 
@@ -132,6 +54,7 @@ graph TB
 网关支持 A2A 协议规范中的两种 binding：
 
 **A2A Native 端点**（JSON-RPC）：
+
 - `GET /agents/{agentId}/.well-known/agent-card.json` — 获取 agent 能力
 - `POST /agents/{agentId}` — 发送消息（buffered response）
 - `POST /agents/{agentId}` with `SendStreamingMessage` — SSE 流式响应
@@ -171,10 +94,10 @@ cd terraform && terraform apply
 
 ## 相关实体
 
-- [Agentic Overlays：从 REST 到 A2A 的企业转型](../ch04/237-agentic.html) — REST → A2A 过渡的互补方案
-- [Alibaba Cloud AgentRun 多 Agent A2A](../ch04/003-agentrun.html) — 不同云上的 A2A 实现
-- [AWS/Cisco A2A 安全方案](../ch04/298-ai-agent.html) — A2A 安全治理生态
-- [LangGraph A2A 对抗 Agent 团队](../ch04/201-langgraph.html) — A2A 协议的应用示例
+- [Agentic Overlays：从 REST 到 A2A 的企业转型](../ch04/725-agentic.html) — REST → A2A 过渡的互补方案
+- [Alibaba Cloud AgentRun 多 Agent A2A](../ch04/005-agentrun.html) — 不同云上的 A2A 实现
+- [AWS/Cisco A2A 安全方案](../ch04/493-ai-agent.html) — A2A 安全治理生态
+- [LangGraph A2A 对抗 Agent 团队](../ch04/267-langgraph.html) — A2A 协议的应用示例
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md)
 

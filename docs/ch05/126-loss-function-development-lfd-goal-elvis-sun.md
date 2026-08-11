@@ -300,12 +300,12 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 - [Openspec Spec Driven Development Trae Solo](ch05/055-openspec.html)（Spec-driven 同对照）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](ch05/022-ai-native.html)（Spec-as-AIOS — 抗熵增架构）
 - [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/084-claude-code.html)（session vs goal lifecycle 对照）
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/365-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/366-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
 - [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/084-claude-code.html)（Claude Code 100 行 loop 同主线）
-- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/645-agent-loop.html)（OpenClaw agent loop 对照）
+- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/646-agent-loop.html)（OpenClaw agent loop 对照）
 - [Mimo Code Xiaomi Coding Harness 2026](ch05/075-harness-2026.html)（MiMo Code Max Mode + Goal 机制同主线）
-- [Snowflake Agentic Enterprise Summit 2026](../ch04/724-agentic.html)（Snowflake — 可审计治理同主线）
-- [Hermes Agent Goal And Kanban](../ch04/365-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）
+- [Snowflake Agentic Enterprise Summit 2026](../ch04/725-agentic.html)（Snowflake — 可审计治理同主线）
+- [Hermes Agent Goal And Kanban](../ch04/366-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)（接触面控制对照）
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
 

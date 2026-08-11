@@ -90,7 +90,7 @@ Grok Build（CLI）、API、xAI Console、Cursor、Office 插件五个入口同�
 
 - [Cursor让马斯克的Grok45咸鱼翻身追平Opus 48成本比Glm52还低](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor让马斯克的grok45咸鱼翻身追平opus-48成本比glm52还低.md) — Cursor 赋能 Grok 4.5 的深度分析
 - [Xai Dissolved Grok Colossus2 Analysis](../ch05/104-ai.html) — xAI Colossus 集群与 Grok 训练分析
-- [Xai Grok Musk Training New Model Wechat](../ch04/211-xai-grok-musk.html) — xAI 训练动态
+- [Xai Grok Musk Training New Model Wechat](../ch04/212-xai-grok-musk.html) — xAI 训练动态
 - [Cursor Harness Model Production Floor](ch01/452-cursor-harness-model-production-floor.html) — Cursor Harness 模型生产
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/017-harness.html) — 模型与 Harness 关系分析
 - [Claude Fable 5 And New Ai Safety Fables](ch01/1175-claude-fable-5-and-new-ai-safety-fables.html) — Fable 5 模型安全寓言

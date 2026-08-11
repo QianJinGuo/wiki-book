@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [xz, two years on: what scanners still cannot catch](ch01/882-xz.html)
-- [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](../ch04/219-factory-missions.html)
+- [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](../ch04/220-factory-missions.html)
 - [gemma 4 and what makes an open model succeed](ch01/871-gemma-4-and-what-makes-an-open-model-succeed.html)
 - [model-harness-fit-agent-harness](ch01/434-model-harness-fit-agent.html)
 - [what i’ve been building: atom report, post-training course,](../ch05/104-ai.html)
@@ -49,10 +49,10 @@ Gaode Uplift Model Iteration Agent Long Running Harness 涉及agent领域的核�
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/252-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/724-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/725-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 

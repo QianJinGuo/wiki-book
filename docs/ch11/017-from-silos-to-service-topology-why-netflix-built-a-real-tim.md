@@ -284,10 +284,10 @@ Service Topology 同时服务于人类工程师（UI 探索）和自动化系统
 → [C4 架构图](assets/c4/netflix-real-time-service-topology-c4.html)
 
 ## 相关实体
-- [Serverless Langgraph Multi Agent Aws](ch11/256-multi-agent-aws.html)
+- [Serverless Langgraph Multi Agent Aws](ch11/257-multi-agent-aws.html)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](ch11/319-amazon-nova.html)
 - [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/143-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/112-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
+- [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/netflix-real-time-service-topology.md)

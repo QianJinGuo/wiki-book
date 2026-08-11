@@ -171,7 +171,7 @@ AI coding assistant 处理 repository 内容（README、代码注释、commit me
 
 - [Microsoft MXC](../ch03/037-agent.html) — 微软自家跨 OS 沙箱，提供 kernel 隔离，可作 NomShub 的防御侧
 - [CrewAI 三步防护](../ch05/017-harness.html) — 应用层 guardrail 视角
-- [AI Tool Poisoning](../ch04/353-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具被污染的通用风险
+- [AI Tool Poisoning](../ch04/455-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) — 工具被污染的通用风险
 - [Microsoft RAMPART/Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — 微软同源栈，检测类似 agent 行为
 - **LotL Attack** — Living-Off-The-Land 在 AI agent 时代的演化
 

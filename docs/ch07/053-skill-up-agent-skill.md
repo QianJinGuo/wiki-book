@@ -168,12 +168,12 @@ skill-up run eval.yaml --retry-failed
 
 ## 相关实体
 
-- [Alibaba Skill-Up：声明式 Agent Skill 评测框架（同主题深度解读）](../ch04/359-alibaba-skill-up-agent-skill.html) — 基于另一篇来源文章的全面分析，含对比评测框架
+- [Alibaba Skill-Up：声明式 Agent Skill 评测框架（同主题深度解读）](../ch04/360-alibaba-skill-up-agent-skill.html) — 基于另一篇来源文章的全面分析，含对比评测框架
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/037-agent.html) — 另一 YAML 驱动的 Agent 评测框架（Go 语言，pass@k 指标），定位互补
-- [Agent Skill 评估与迭代](../ch04/342-agent-skill.html) — 侧重于手动测试方法论，与 skill-up 的自动化 CI 方案形成对照
+- [Agent Skill 评估与迭代](../ch04/597-agent-skill.html) — 侧重于手动测试方法论，与 skill-up 的自动化 CI 方案形成对照
 - [Agent 评测体系化指南](../ch03/037-agent.html) — 评估体系全链路：指标体系、数据集、评分与闭环
-- [SWE-bench Agent 评估方法论](../ch04/468-swe-bench-agent.html) — 软件工程 Agent 评测基准方法论
-- [SkillScan：智能体技能安全扫描](../ch04/342-agent-skill.html) — 技能安全扫描与 skill-up 的质量验证相辅相成
+- [SWE-bench Agent 评估方法论](../ch04/469-swe-bench-agent.html) — 软件工程 Agent 评测基准方法论
+- [SkillScan：智能体技能安全扫描](../ch04/597-agent-skill.html) — 技能安全扫描与 skill-up 的质量验证相辅相成
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-skill-up-agent-skill-evaluation-cli-2026.md)
 

@@ -50,10 +50,10 @@ Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角） 涉及agen
 
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/724-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/725-agentic.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/252-openclaw.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/253-openclaw.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

@@ -80,7 +80,7 @@
 
 - [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](ch01/1119-20.html)
 - [the token economy](ch01/759-the-token-economy.html)
-- [Consumer Confidence](ch01/1554-consumer-confidence.html)
+- [Consumer Confidence](ch01/1557-consumer-confidence.html)
 
 ---
 

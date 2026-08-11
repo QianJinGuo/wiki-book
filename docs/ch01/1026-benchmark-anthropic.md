@@ -28,8 +28,8 @@ Benchmark 刷分的本质是一个委托代理问题（Principal-Agent Problem�
 > ai agent platforms topic map（已删除）
 
 - [Claude Opus 4.7 发布分析](ch01/547-claude-opus-4-7.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/1536-anthropic.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/786-claude-managed-agents.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/1539-anthropic.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/614-claude-managed-agents.html)
 
 ## 相关实体
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/017-harness.html)
@@ -39,10 +39,10 @@ Benchmark 刷分的本质是一个委托代理问题（Principal-Agent Problem�
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/098-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/017-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/428-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/724-agentic.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/005-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/725-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/092-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/252-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/253-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/092-harness-engineering.html)
 
 ---

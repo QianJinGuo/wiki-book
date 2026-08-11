@@ -81,7 +81,7 @@ Flo Health 案例展示了一个关键洞察：在医疗等高信任度领域，
 - [企业 AI Native 转型](../ch05/022-ai-native.html)
 - [后端 AI 友好架构](../ch05/023-ai-friendly.html)
 - [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md)
-- [企业 Agent 编排](../ch04/605-agent-orchestration.html)
+- [企业 Agent 编排](../ch04/606-agent-orchestration.html)
 - [AI Native 开发工作流](../ch05/022-ai-native.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flo-health-medical-content-review-bedrock.md)

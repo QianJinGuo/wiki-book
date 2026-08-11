@@ -45,7 +45,7 @@ Monarch 所代表的单控制器（single-controller）架构从根本上改变�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-monarch-amd-gpus-rocm-distributed-training.md)
 
-> **相关实体**: [AMD GPU DeepSeek 部署](ch01/799-deepseek.html), [AMD vs NVIDIA 推理成本](https://github.com/QianJinGuo/wiki/blob/main/entities/amd跑glm-52成本只要英伟达一半.md)
+> **相关实体**: [AMD GPU DeepSeek 部署](ch01/1434-deepseek.html), [AMD vs NVIDIA 推理成本](https://github.com/QianJinGuo/wiki/blob/main/entities/amd跑glm-52成本只要英伟达一半.md)
 
 ---
 

@@ -43,8 +43,8 @@ Anthropic 的解法是在预训练 → 对齐微调之间插入 Model Spec Midtr
 
 ## 相关实体
 - [Claude Managed Agents 平台](ch01/397-anthropic-claude-managed-agents.html)
-- [Natural Language Autoencoders（NLAs）](ch01/1531-natural-language-autoencoders-anthropic.html)
-- [LLM 内省意识检测](../ch04/227-anthropic-llm.html)
+- [Natural Language Autoencoders（NLAs）](ch01/1534-natural-language-autoencoders-anthropic.html)
+- [LLM 内省意识检测](../ch04/228-anthropic-llm.html)
 - [MCP 协议](../ch07/017-anthropic-mcp.html)
 - [Claude Code 完全指南（MOC）](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [LLM 核心技术（MOC）](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)

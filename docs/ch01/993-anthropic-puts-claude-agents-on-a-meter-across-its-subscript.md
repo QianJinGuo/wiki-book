@@ -33,11 +33,11 @@ Doozer AI 联合创始人 Paul Chada 建议开发者停止为"补贴"优化，�
 由于信用不跨团队共享，组织需要建立明确的团队信用分配机制和跨团队协调流程，避免单点耗尽影响整体研发效率 。这可能需要引入内部信用核算或工单系统来协调共享需求。
 
 ## 相关实体
-- [Anthropic Claude Agents Meter Infoworld](../ch04/489-anthropic-claude-agent.html)
+- [Anthropic Claude Agents Meter Infoworld](../ch04/490-anthropic-claude-agent.html)
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch01/090-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/397-anthropic-claude-managed-agents.html)
-- [Anthropic Pm Jess Yan Managed Agents](ch01/1536-anthropic.html)
+- [Anthropic Pm Jess Yan Managed Agents](ch01/1539-anthropic.html)
 
 ---
 

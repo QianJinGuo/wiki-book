@@ -38,7 +38,7 @@ Muse Spark 1.0 年初发布时表现平平。1.1 版本实现脱胎换骨的提�
 
 ## 定价与性价比
 
-定价是其最具杀伤力的武器：输入 $1.25/1M tokens，缓存输入 $0.15/1M，输出 $4.25/1M。对比：Opus 4.8 为 $5/$25，Fable 5 为 $10/$50，[Grok 4.5](../ch05/104-ai.html) 为 $2/$6。 这意味着输入不到 Opus 四分之一、输出不到五分之一；综合成本约为 [Fable 5](../ch04/671-fable-5.html) 的十分之一。
+定价是其最具杀伤力的武器：输入 $1.25/1M tokens，缓存输入 $0.15/1M，输出 $4.25/1M。对比：Opus 4.8 为 $5/$25，Fable 5 为 $10/$50，[Grok 4.5](../ch05/104-ai.html) 为 $2/$6。 这意味着输入不到 Opus 四分之一、输出不到五分之一；综合成本约为 [Fable 5](../ch04/672-fable-5.html) 的十分之一。
 
 同时保持高速：Vals AI 榜单显示，Fable 5、Opus 4.8、Sonnet 5 跑测试动辄 1000 秒起步，Muse Spark 1.1 仅需 388 秒。每个测试成本仅 $0.50，是同档最低。有工程师实测称成本约为 Fable/GPT-5.5 的十分之一，甚至比自己托管开源模型还便宜；延迟约为 Opus 4.8 的四分之一。
 
@@ -55,11 +55,11 @@ Vals AI 数据显示：
 
 Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入了多得多的人力研究算力和 GPU 算力，使用了一套更稳定的异步 RL 训练栈。更大规模的模型正在训练中。
 
-这一路线与 [Agentic RL](../ch04/309-agentic-rl.html) 演进方向一致——通过异步强化学习在真实环境交互中优化 Agent 行为。背后更涉及 Meta 2025 年以 143 亿美元收购 Scale AI 49% 股权的战略布局，以及 2026 年预计 1250-1450 亿美元的 AI 基础设施投入。
+这一路线与 [Agentic RL](../ch04/310-agentic-rl.html) 演进方向一致——通过异步强化学习在真实环境交互中优化 Agent 行为。背后更涉及 Meta 2025 年以 143 亿美元收购 Scale AI 49% 股权的战略布局，以及 2026 年预计 1250-1450 亿美元的 AI 基础设施投入。
 
 ## 行业影响
 
-**Meta Model API：** Meta 历史上第一次通过 API 开放自家最强模型。兼容 OpenAI 格式，只需改 endpoint 即可接入。早期合作伙伴包括 Replit、Box、[Cline](../ch04/576-cline-releases-open-source-agent-runtime-sdk.html)。普通用户可在 Meta AI 应用免费使用（Thinking 模式）。
+**Meta Model API：** Meta 历史上第一次通过 API 开放自家最强模型。兼容 OpenAI 格式，只需改 endpoint 即可接入。早期合作伙伴包括 Replit、Box、[Cline](../ch04/577-cline-releases-open-source-agent-runtime-sdk.html)。普通用户可在 Meta AI 应用免费使用（Thinking 模式）。
 
 **Llama 时代结束：** Muse Spark 1.1 不开源（无开放权重）。以 Llama 撑起开源生态的 Meta 正式转向闭源收费模式。从 Llama 4 翻车后沉寂一年到如今重回牌桌，战略转型完成。
 
@@ -71,7 +71,7 @@ Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入
 
 2. **价格战是比能力战更致命的武器。** 真正颠覆性不在跑分，而在于以 Opus 4.8 五分之一的价格提供接近的能力。Replit CEO 称其为「完整的 Agent 底座」；Cline CEO 称此价格才让大规模跑编码任务变得划算。目标不是秀肌肉，而是抢份额。
 
-3. **异步 RL 训练栈是 1.0→1.1 质变的技术内核。** 飞跃幅度难以仅用「更多数据」解释。异步 RL 的稳定性改进让模型可在真实交互中持续学习，为 [Agentic RL](../ch04/309-agentic-rl.html) 大规模实践提供了重要参考。
+3. **异步 RL 训练栈是 1.0→1.1 质变的技术内核。** 飞跃幅度难以仅用「更多数据」解释。异步 RL 的稳定性改进让模型可在真实交互中持续学习，为 [Agentic RL](../ch04/310-agentic-rl.html) 大规模实践提供了重要参考。
 
 4. **开源→闭源的转身标志行业格局变化。** 即使 Meta 也认为 Agent 时代模型权重本身是最核心的竞争壁垒。开源社区需重新审视 Agent 时代的技术获取路径。
 
@@ -94,13 +94,13 @@ Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入
 - [Grok 4.5](../ch05/104-ai.html) — 同期 xAI 模型，法律榜上被 Muse Spark 1.1 在 24 小时内超越
 - [GPT-5.6 系列](../ch01/734-codex.html) — OpenAI 同日发布的降价系列
 - [GLM 5.2](../ch03/037-agent.html) — 编程水平同档位的开源 Agent 模型
-- [Fable 5](../ch04/671-fable-5.html) — Anthropic 旗舰，在 MedScribe/TaxEval 上被超越
+- [Fable 5](../ch04/672-fable-5.html) — Anthropic 旗舰，在 MedScribe/TaxEval 上被超越
 - [Gemini 3.5](../ch01/094-gemini-3-5-frontier-intelligence-with-action.html) — Google 旗舰竞争模型
 - [Sonnet 5](../ch01/1219-claude.html) — Anthropic 高性价比模型
 - [Harness Engineering](../ch05/092-harness-engineering.html) — 相关工程范式
-- [Agentic RL 框架与实践](../ch04/309-agentic-rl.html) — 训练相关的强化学习技术路线
+- [Agentic RL 框架与实践](../ch04/310-agentic-rl.html) — 训练相关的强化学习技术路线
 - [MCP 协议](../ch07/091-mcp-protocol.html) — MCP Atlas 上取得最高分，零样本支持 MCP server
-- [Cline](../ch04/576-cline-releases-open-source-agent-runtime-sdk.html) — Meta Model API 早期合作伙伴
+- [Cline](../ch04/577-cline-releases-open-source-agent-runtime-sdk.html) — Meta Model API 早期合作伙伴
 - [Llama](../ch11/168-llama-cpp-deployment.html) — 开源路线转向闭源的标志
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 概念层面的工程方法论
 

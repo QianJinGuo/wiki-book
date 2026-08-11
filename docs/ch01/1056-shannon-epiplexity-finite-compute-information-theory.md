@@ -14,7 +14,7 @@ Shannon 1948 年创立信息论，假设观察者有**无限算力**。这个假
 - [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/863-llm.html)
 - [Karpathy Llm Wiki V2 2026](ch01/863-llm.html)
 - [Chatgpt小心翼翼回复风格技术原因](ch01/975-chatgpt.html)
-- [Skill Rag Tsinghua Sra](../ch04/344-skill.html)
+- [Skill Rag Tsinghua Sra](../ch04/345-skill.html)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/082-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shannon-epiplexity-finite-compute-information-theory.md)

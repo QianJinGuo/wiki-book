@@ -35,7 +35,7 @@
 ## 相关实体
 - [Doubao Seed 2 Lite Agent Multimodal](../ch03/037-agent.html)
 - [Hermes Agent Newbie Guide Dotta](../ch03/098-hermes-agent.html)
-- [Skill Rag Tsinghua Sra](../ch04/344-skill.html)
+- [Skill Rag Tsinghua Sra](../ch04/345-skill.html)
 - [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md)
 - [Deepseek Code Harness](../ch09/100-deepseek-code-harness.html)
 
