@@ -55,7 +55,7 @@
    NVIDIA 产品线分层是现实约束，不能假设一个 kernel 在 SM100 上正确就在 SM121 上正确。建议建立不同硬件型号的自动化数值回归测试矩阵，覆盖 SM100/SM120/SM121，对 FP4/FP8/FP16/BF16 分别验证。Marlin 在 SM121 上的静默错误就是这个原则的反面教材。
 
 ## 与现有知识关联
-- [LBS-IntentBench](../ch04/346-lbs-intentbench.html) — 靳岩岩也是作者之一
+- [LBS-IntentBench](../ch04/347-lbs-intentbench.html) — 靳岩岩也是作者之一
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-triton-fp4-optimization.md) — raw articles 中的完整版本
 
 ## 相关实体

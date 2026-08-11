@@ -89,7 +89,7 @@ Boris Cherny 报告自验证提升 2-3x 质量，但这是有代价的：每步�
 ## 相关实体
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/017-harness.html)
 - [Thin Harness Fat Skills](../ch05/096-thin-harness-fat-skills-ai.html)
-- [你不知道的 Agent 原理架构与工程实践](../ch04/432-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/433-agent-principle-architecture-engineering-practice.html)
 - [Design Patterns for AI Agents 2026](../ch04/147-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

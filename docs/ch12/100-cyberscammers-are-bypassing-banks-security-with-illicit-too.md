@@ -19,7 +19,7 @@ MIT Technology Review 在为期两个月的调查中发现了 22 个中越英语
 - [Cyberscammers Bypassing Bank Telegram](https://github.com/QianJinGuo/wiki/blob/main/entities/cyberscammers-bypassing-bank-telegram.md)
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](../ch11/010-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - [Weve Been Here Before Ai Vulnerability Research](../ch05/104-ai.html)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/353-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/455-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/1018-scarcruft.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)

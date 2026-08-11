@@ -44,7 +44,7 @@ AACR-Bench 由南京大学与阿里巴巴 TRE 联合推出，具备三大核心�
 ## 相关实体
 - [从多智能体编排到Ai自主决策资损防控体系的架构演进](../ch05/104-ai.html)
 - [Ai Native 时代 研发组织何去何从](../ch05/022-ai-native.html)
-- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/554-loongsuite-genai.html)
+- [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](../ch04/555-loongsuite-genai.html)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/037-agent.html)
 

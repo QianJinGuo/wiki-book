@@ -109,12 +109,12 @@
 
 - [Mythos For Offensive Security Xbows Evaluation](ch12/031-mythos.html) — Claude Mythos 攻防评估
 - [Llm Raiders Private Ai Server](../ch01/863-llm.html) — LLM Raiders 私人 AI 服务器
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/679-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/493-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI gateway 安全
 - [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/1268-rag.html) — Linux 内核权限提升
 - [The Agentic Trust Management Platform Drata](../ch04/011-the-agentic-trust-management-platform-drata.html) — Drata agentic trust 平台
-- [Enterprise Openclaw Security Deploy Architecture Guide](../ch11/252-openclaw.html) — OpenClaw 部署安全
-- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/518-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox AI agent 安全测试
+- [Enterprise Openclaw Security Deploy Architecture Guide](../ch11/253-openclaw.html) — OpenClaw 部署安全
+- [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/519-introducing-aimap-security-testing-for-ai-agent-bishop-f.html) — Bishop Fox AI agent 安全测试
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/1125-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html) — Anthropic Mythos 漏洞共享
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-open-sources-rampart-clarity.md) — Microsoft Rampart/Clarity 开源
 

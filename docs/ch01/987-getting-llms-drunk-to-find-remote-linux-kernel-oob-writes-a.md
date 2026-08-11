@@ -47,7 +47,7 @@
 ## 相关实体
 
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/1268-rag.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](ch01/799-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](ch01/1434-deepseek.html)
 
 ---
 

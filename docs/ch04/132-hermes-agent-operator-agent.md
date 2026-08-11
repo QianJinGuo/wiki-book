@@ -254,7 +254,7 @@ Day 5: 攻击者早已不在现场，但 Agent 执行了预期外的操作].md]
 - [Hermes Agent Memory System Vs Openclaw](../ch03/098-hermes-agent.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch03/098-hermes-agent.html)
 - [Hermes Agent Self Evolving Source Analysis](../ch03/098-hermes-agent.html)
-- [Small Hermes Self Evolving Agent Architecture](ch04/769-self-evolving-agent.html)
+- [Small Hermes Self Evolving Agent Architecture](ch04/770-self-evolving-agent.html)
 
 ---
 

@@ -74,7 +74,7 @@ WorkBuddy 专家团采用的编排者模式（Orchestrator Pattern）是目前�
 - 上下文污染：多个 Agent 来回通信会产生大量无关上下文
 - 错误追溯困难：没有中心化的通信记录，出问题难以定位
 
-这与 [AgentCore Harness 的 AWS 多 Agent 系统](../ch04/760-agentcore-harness.html) 中的"集中编排"设计模式一致。实际上，OpenClaw 和 Hermes Agent 也采用这种模式。
+这与 [AgentCore Harness 的 AWS 多 Agent 系统](../ch04/761-agentcore-harness.html) 中的"集中编排"设计模式一致。实际上，OpenClaw 和 Hermes Agent 也采用这种模式。
 
 **任务分配预检机制**——这是一个关键的设计创新：
 
@@ -92,7 +92,7 @@ WorkBuddy 专家团预设了 8 个 Workflow，覆盖最常见的协作场景。�
 - **优点**：行为可预测，质量有保障，适合已知任务模式
 - **缺点**：固定 Workflow 会消耗更多 token（即使未使用），且无法灵活应对未预设的新场景
 
-这个权衡与 [Skill Reward Model 研究](../ch04/342-agent-skill.html) 中关于"固定 skill vs 动态生成"的讨论相关。在产品化阶段，固定 Workflow 适合高频、已知、可标准化的任务；动态编排适合低频、创新、变化多的任务。WorkBuddy 选择前者，合理是因为它面向的是"用户选择专家团来完成已知类型的任务"这个场景。
+这个权衡与 [Skill Reward Model 研究](../ch04/597-agent-skill.html) 中关于"固定 skill vs 动态生成"的讨论相关。在产品化阶段，固定 Workflow 适合高频、已知、可标准化的任务；动态编排适合低频、创新、变化多的任务。WorkBuddy 选择前者，合理是因为它面向的是"用户选择专家团来完成已知类型的任务"这个场景。
 
 ### 从 WorkBuddy 看 Agent 产品的设计原则
 
@@ -117,7 +117,7 @@ WorkBuddy 专家团预设了 8 个 Workflow，覆盖最常见的协作场景。�
 
 ## 相关实体
 
-- [Agentcore Harness Trip Allocation Multi Agent System Aws](../ch04/760-agentcore-harness.html) — 多 Agent 系统的 AWS 实践
+- [Agentcore Harness Trip Allocation Multi Agent System Aws](../ch04/761-agentcore-harness.html) — 多 Agent 系统的 AWS 实践
 - [Hermes Agent](../ch03/098-hermes-agent.html) — Agent Skills 机制与 WorkBuddy 的对比
 - [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/084-claude-code.html) — 桌面 Agent 产品的工程设计对比
 - [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/037-agent.html) — Agent 工程化落地讨论

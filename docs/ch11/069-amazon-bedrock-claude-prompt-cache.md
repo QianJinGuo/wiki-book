@@ -53,13 +53,13 @@ Claude thinking (extended thinking 或 adaptive thinking) 引入了一个特殊�
 - [Anthropic Prompt Caching for Claude Code](../ch01/402-anthropic-prompt-caching-claude-code.html) — Anthropic 官方博客解析：Prompt Caching 的 7 条经验与架构约束
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/319-amazon-nova.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/486-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/487-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/020-aws-bedrock.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/308-amazon-bedrock.html)
 
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/112-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/939-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/644-amazon-bedrock-agentcore.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/645-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [SunFinance: Textract+Claude准确率90.8%的ID提取方案](../ch01/433-aws.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/312-bedrock.html)
@@ -68,7 +68,7 @@ Claude thinking (extended thinking 或 adaptive thinking) 引入了一个特殊�
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [yc掌门人60天写了60万行代码：gstack开源](../ch01/899-garry-tan.html)
 - [markdown 不会过时](../ch01/1043-markdown.html)
-- [miro-amazon-bedrock-bug-routing](ch11/196-miro-amazon-bedrock-bug.html)
+- [miro-amazon-bedrock-bug-routing](ch11/197-miro-amazon-bedrock-bug.html)
 
 ---
 

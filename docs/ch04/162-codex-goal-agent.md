@@ -80,14 +80,14 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 
 - [高德伴行Agent](../ch03/037-agent.html)（工作现场六组件）
 - [Hermes Agent](../ch03/098-hermes-agent.html)（Karpathy 观点被多次引用）
-- [Agent Memory Architecture](ch04/505-perplexity-brain-self-improving-agent-memory-architecture.html)（状态为什么得落在模型外面）
+- [Agent Memory Architecture](ch04/506-perplexity-brain-self-improving-agent-memory-architecture.html)（状态为什么得落在模型外面）
 
 ## 相关页面
 - [原文存档：Codex /goal 实现拆解](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-implementation-breakdown.md)
 
 ## 相关实体
 - [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/066-codex-goal-six-hour-run.html)
-- [Cline releases open-source agent runtime SDK](ch04/576-cline-releases-open-source-agent-runtime-sdk.html)
+- [Cline releases open-source agent runtime SDK](ch04/577-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](../ch03/037-agent.html)
 
 - [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/276-openai.html)

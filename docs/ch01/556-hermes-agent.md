@@ -167,10 +167,10 @@ Hermes Agent 的闭环学习循环代表了一种**主动式自我改进**而非
 3. **知识表示的分离是认知架构的基础**：将不同类型的知识用不同的机制处理，这一致知框架值得在更多 Agent 系统中推广
 ## 相关实体
 - [Hermes Agent Vs Openclaw Comparison](../ch03/098-hermes-agent.html)
-- [Skill System Design Three Way Comparison](../ch04/344-skill.html)
+- [Skill System Design Three Way Comparison](../ch04/345-skill.html)
 - [Hermes Agent Memory System Vs Openclaw](../ch03/098-hermes-agent.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/365-hermes-agent-goal.html)
-- [Small Hermes Self Evolving Agent Architecture](../ch04/769-self-evolving-agent.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/366-hermes-agent-goal.html)
+- [Small Hermes Self Evolving Agent Architecture](../ch04/770-self-evolving-agent.html)
 
 ---
 

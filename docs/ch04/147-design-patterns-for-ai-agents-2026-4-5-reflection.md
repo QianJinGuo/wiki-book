@@ -54,8 +54,8 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/017-harness.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/042-agent-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/508-from-agent-protocol-to-harness-skill.html)
-- [Agent Memory 架构解析](ch04/179-agent-memory.html)
+- [From Agent Protocol to Harness Skill](ch04/509-from-agent-protocol-to-harness-skill.html)
+- [Agent Memory 架构解析](ch04/180-agent-memory.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/017-harness.html)
 - [AI Native 时代 —— 研发组织何去何从](../ch05/022-ai-native.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/017-harness.html)
@@ -68,9 +68,9 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 
 - [Thin Harness Fat Skills](../ch05/096-thin-harness-fat-skills-ai.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/432-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/433-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AI Agent 工程师能力地图](ch04/679-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/493-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）

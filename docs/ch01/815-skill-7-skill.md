@@ -50,14 +50,14 @@ audit-context-building 代表另一类 Skill：不指挥操作步骤，而是规
 
 ## 相关实体
 
-- [你写的 Skill，及格了吗？](../ch04/344-skill.html)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/198-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Perplexity 内部 Skill 设计指南](../ch04/344-skill.html)
-- [Skill 系统设计三方对比](../ch04/344-skill.html)
-- [Meta-Skill：Skill 编排](../ch04/368-skill-skill.html)
+- [你写的 Skill，及格了吗？](../ch04/345-skill.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/199-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Perplexity 内部 Skill 设计指南](../ch04/345-skill.html)
+- [Skill 系统设计三方对比](../ch04/345-skill.html)
+- [Meta-Skill：Skill 编排](../ch04/369-skill-skill.html)
 - [Nico 的 25 个 Skill 工作流资产分析](../ch03/076-skills.html)
 - [Lightfield：Introducing Skills](../ch03/076-skills.html)
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/1462-gpt-image-2.html)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](ch01/1236-gpt-image-2.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/工作流的-skill-怎么写从-7-个顶级-skill-中提炼的模式与最佳实践.md)
 

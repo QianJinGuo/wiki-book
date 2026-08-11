@@ -33,7 +33,7 @@
 - **[Claude Code Prompt Context Harness](../ch09/070-claude-code-prompt.html)**（飞樰）侧重 Prompt 模块化/Harness 安全/多 Agent 体系
 - **[Claude Code Agent Engineering](../ch03/074-claude-code-agent.html)**（SooKool）侧重 StreamingToolExecutor/主循环/压缩/小模型/Hook
 - **[Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)**（800行轻量架构）与 Claude Code 同体系但更精简
-- **[Agent Skill Writing](../ch04/342-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
+- **[Agent Skill Writing](../ch04/597-agent-skill.html)** Skill 编写规范对应 Fat Skills 理念
 - **[Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)** Hermes 的 Self-Evolving 与 Claude Code 架构的关系
 
 ## 相关实体
@@ -53,7 +53,7 @@
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/635-claude-code-harness-deep-understanding.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/042-agent-harness.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/478-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/479-agent-skills.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
 - [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)

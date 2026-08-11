@@ -9,8 +9,8 @@
 ## 相关实体
 
 - [interconnects ai p open and closed models are on different](../ch05/104-ai.html)
-- [llmshare: using shared chatbot pages to distribute malware](ch01/1397-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
-- [zapocalypse: the attack chain that could have hijacked zapie](../ch11/260-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
+- [llmshare: using shared chatbot pages to distribute malware](ch01/1398-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
+- [zapocalypse: the attack chain that could have hijacked zapie](../ch11/261-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
@@ -37,11 +37,11 @@ Google brings local AI agents to laptops with Gemma 4 12B 涉及agent领域的�
 - **article趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/252-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/724-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/725-agentic.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/191-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 
 ## 实践启示

@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3879 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3883 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,8 +10,8 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1750 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1373 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1753 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1374 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 523 篇 |
 | 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 184 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 49 篇 |
@@ -20,7 +20,7 @@
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1566 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1569 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ 快手首个打工人Agent
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ... 共 **1566** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1569** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 42 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **142** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1750 篇**
+> 📖 **本篇共 1753 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 811 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 812 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,7 +76,7 @@
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
-  - ... 共 **811** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **812** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 146 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -156,7 +156,7 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **41** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1373 篇**
+> 📖 **本篇共 1374 篇**
 
 ---
 
@@ -192,9 +192,9 @@
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
   - ⭐ 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
+  - ⭐⭐ Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
   - ⭐⭐ 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
   - ⭐⭐ ai-skill-测评指标体系
-  - ⭐⭐ Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
   - ⭐⭐ 循环工程 (Loop Engineering) — 清华 2026 框架
   - ⭐⭐ NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
   - ⭐⭐ 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3879 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3883 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-11 | 来源: ~/wiki/entities/
+生成时间: 2026-08-12 | 来源: ~/wiki/entities/

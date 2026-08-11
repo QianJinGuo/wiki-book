@@ -12,7 +12,7 @@
 - **攻击前提**：用户需主动触发恶意 Skill，且 Claude Code 未启用沙箱隔离
 ## 相关实体
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1111-skill-issues-compromising-claude-code-with-malicious-skills.html)
-- [Skill System Design Three Way Comparison](../ch04/344-skill.html)
+- [Skill System Design Three Way Comparison](../ch04/345-skill.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/007-claude-code-skills-mcp-rules.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/007-claude-code-skills-mcp-rules.html)
 - [Claude Code Skills Mcp Rules Source Analysis](../ch07/007-claude-code-skills-mcp-rules.html)

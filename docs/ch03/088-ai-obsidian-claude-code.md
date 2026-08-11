@@ -12,7 +12,7 @@
 - [打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](ch03/084-claude-code.html)
 - [Obsidian + Claude Code 集成指南](../ch09/152-obsidian-claude-code-integration-guide.html)
 
-- [微信读书官方skill与huashu-weread增强版](../ch04/344-skill.html)
+- [微信读书官方skill与huashu-weread增强版](../ch04/345-skill.html)
 
 ## 深度分析
 ### 1. 核心矛盾：两个工具的原生设计目标不同

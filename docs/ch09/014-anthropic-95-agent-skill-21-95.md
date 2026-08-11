@@ -39,17 +39,17 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 
 ## 相关实体
 - [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1143-anthropic-claude.html)
-- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/478-agent-skills.html)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/786-claude-managed-agents.html)
-- [Anthropic 12 Mcp Production Patterns](../ch01/1536-anthropic.html)
-- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/344-skill.html)
+- [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/479-agent-skills.html)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/614-claude-managed-agents.html)
+- [Anthropic 12 Mcp Production Patterns](../ch01/1539-anthropic.html)
+- [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/345-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture.md)
 
 - [使用Claude Codesession管理与1M上下文](../ch03/084-claude-code.html)
-- [Anthropic 95Pct Data Analysis Summary 189 Chars](../ch01/1536-anthropic.html)
-- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](../ch01/1536-anthropic.html)
-- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/1536-anthropic.html)
+- [Anthropic 95Pct Data Analysis Summary 189 Chars](../ch01/1539-anthropic.html)
+- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](../ch01/1539-anthropic.html)
+- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/1539-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 ## 数据分析 ≠ 写代码（核心区分）
 

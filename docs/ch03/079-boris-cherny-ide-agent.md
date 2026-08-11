@@ -99,7 +99,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - Simon Willison 转述：https://simonwillison.net/2026/Feb/14/boris/
 
 ## 关联条目
-- [Karpathy Vibe Coding To Agentic Engineering](../ch04/724-agentic.html) — 同场 Sequoia AI Ascent 2026，Software 3.0 概念框架，Boris 访谈的上一层叙事
+- [Karpathy Vibe Coding To Agentic Engineering](../ch04/725-agentic.html) — 同场 Sequoia AI Ascent 2026，Software 3.0 概念框架，Boris 访谈的上一层叙事
 - [Claude Code Architecture](ch03/084-claude-code.html) — Claude Code 源码架构，包含主循环、Permission 管道等底层实现
 - [Cat Wu Claude Code Pm](ch03/084-claude-code.html) — Anthropic Claude Code/Cowork 产品负责人，同团队视角
 -  — Karpathy 访谈原文存档
@@ -111,7 +111,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/084-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/478-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/479-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/084-claude-code.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
@@ -119,7 +119,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](ch03/084-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/017-harness.html)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/084-claude-code.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/272-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/273-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 

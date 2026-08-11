@@ -5,12 +5,12 @@
 > 📊 Level ⭐⭐ | 17.4KB | `entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md`
 
 ## 相关实体
-- [Anthropic 14 个 Agent Skills 设计模式](ch04/156-anthropic-agent.html)
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/466-anthropic-google-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/311-anthropic-agent.html)
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/596-anthropic-google-agent-skills.html)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/961-skills-anthropic-openai-comparison-frontend-design.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/786-claude-managed-agents.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1536-anthropic.html)
-- [Agent Skill 设计模式](ch04/478-agent-skills.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/614-claude-managed-agents.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1539-anthropic.html)
+- [Agent Skill 设计模式](ch04/479-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1219-claude.html)
 
@@ -27,9 +27,9 @@
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/679-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/493-ai-agent.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/565-anthropic-ai.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](ch04/566-anthropic-ai.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)

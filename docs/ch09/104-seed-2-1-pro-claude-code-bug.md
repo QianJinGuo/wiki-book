@@ -63,7 +63,7 @@ Seed 2.1 Pro 接入 Claude Code 框架的过程展示了**模型即插即用（p
 ## 关联实体
 
 - [Claude Code Agent Engineering](../ch03/074-claude-code-agent.html)
-- [Coding Agent Quality Defense](../ch04/402-ai-coding-agent.html)
+- [Coding Agent Quality Defense](../ch04/403-ai-coding-agent.html)
 - [Claude Code 记忆系统](../ch03/084-claude-code.html)
 - [Harness Engineering](../ch05/092-harness-engineering.html)
 - [Claude Code Skills Guide](../ch07/033-claude-code-skills.html)

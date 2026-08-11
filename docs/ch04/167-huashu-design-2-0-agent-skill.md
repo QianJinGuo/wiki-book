@@ -174,7 +174,7 @@ Huashu-Design 2.0 的 3 个真实坑（设计收敛成安全极简、内容网�
 
 ### 与 Agent Skill 设计的深层关联
 
-Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：**当 AI 作为"做决策的人"而非"动手的人"时，如何保证决策质量？** 这与 [Skill Design Patterns](ch04/344-skill.html) 中讨论的 skill 设计维度高度相关——skill 的设计者需要预判 AI 在哪些地方会"偷懒"或"自信地犯错"，并通过设计提前插入防护栏。
+Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：**当 AI 作为"做决策的人"而非"动手的人"时，如何保证决策质量？** 这与 [Skill Design Patterns](ch04/345-skill.html) 中讨论的 skill 设计维度高度相关——skill 的设计者需要预判 AI 在哪些地方会"偷懒"或"自信地犯错"，并通过设计提前插入防护栏。
 
 ### 跨工具可复用性的本质
 
@@ -184,7 +184,7 @@ Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：
 
 ### 对 Agent Skill 设计者
 
-1. **预设 AI 会"偷懒"到最安全的解法**：在设计 skill 时，主动考虑"AI 最可能收敛到哪个最保守的答案"，然后设计机制强制对抗这种收敛。参考 [Skill Design Patterns](ch04/344-skill.html) 中的"避免 AI 输出同质化"相关章节。
+1. **预设 AI 会"偷懒"到最安全的解法**：在设计 skill 时，主动考虑"AI 最可能收敛到哪个最保守的答案"，然后设计机制强制对抗这种收敛。参考 [Skill Design Patterns](ch04/345-skill.html) 中的"避免 AI 输出同质化"相关章节。
 
 2. **核心资产完整性检查应该是第 0 步**：在任何内容生成类 skill 中，先检查"完成这个任务所需的不可替代素材是否齐全"，再开始生成。这个检查点应该在 skill 流程的最前端，而非在生成过程中发现问题后才补救。
 
@@ -211,7 +211,7 @@ Huashu-Design 的 3 个坑和 3 个原则，本质上是在回答一个问题：
 ---
 
 **相关实体**：
-- [Skill Design Patterns](ch04/344-skill.html) — skill 设计维度的通用模式
+- [Skill Design Patterns](ch04/345-skill.html) — skill 设计维度的通用模式
 - [Harness Engineering Practical 17Ge Versus 6 Subagent](../ch05/092-harness-engineering.html) — 互补的 Harness 模式（决策者 vs 动手者）
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html) — Claude Code harness 架构参考
 - [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — AI 能力提升后的 harness 设计范式转移

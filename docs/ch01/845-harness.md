@@ -60,7 +60,7 @@ Phase 5 支持单 Agent 顺序和多 Agent 并行两种模式，后者对模型�
 - [Loop Engineering Overview Tech Minimalism](../ch05/006-loop-engineering.html) — Loop Engineering 概览，Harness 的另一种编排范式
 - [Alibaba Data Rd Harness Engineering Nl2Sql](../ch05/092-harness-engineering.html) — 阿里数据研发的 NL2SQL Harness Engineering 实践
 - [Aliyun Loop Engineering Log Scan Auto Fix Deploy](../ch05/006-loop-engineering.html) — 阿里云 Loop Engineering 的日志扫描自修复实践
-- [Agent Config Model Tool Skill Mcp Prompt Combination Yexiaochai 09](../ch04/344-skill.html) — Agent 配置层的解耦设计，与 Skill 架构互补
+- [Agent Config Model Tool Skill Mcp Prompt Combination Yexiaochai 09](../ch04/345-skill.html) — Agent 配置层的解耦设计，与 Skill 架构互补
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-实践将任何文字编辑成精美的文章.md)
 

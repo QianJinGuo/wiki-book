@@ -186,7 +186,7 @@
 - vs **[若飞 long-running agent ralph loop 状态交接](../ch05/017-harness.html)** — 那是 **Ralph loop 状态交接**具体工程模式;本文是 **Runtime 协议**宏观框架。
 - vs **[Claude Code agent teams task decomposition ruofei](../ch01/519-claude-code-agent-teams.html)** — 那是**任务分解**(具体执行);本文是**任务协议** (前置契约)。
 - vs **[Harness Engineering Deletable Worksite](../ch05/078-harness-engineering-deletable-worksite-ruofei.html)** — 那是 **Harness 可删工作位**的精简原则;本文是 **Runtime 4 层**(包含 Harness 作为"工具路由层"的子集)。
-- vs **[若飞 agent memory architecture](ch04/179-agent-memory.html)** — 那是 **Memory 架构**;本文**执行状态账本** 5 类中包含 memory。
+- vs **[若飞 agent memory architecture](ch04/180-agent-memory.html)** — 那是 **Memory 架构**;本文**执行状态账本** 5 类中包含 memory。
 
 **Runtime / Agent 架构** 主题簇:
 
@@ -202,7 +202,7 @@
 
 ### 2. Task Brief 9 字段本质上是任务元数据的结构化声明
 
-Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 Task Brief,这在工程上意义深远:**它把"任务边界"从隐性知识变成了显性契约**。传统软件开发中,需求文档往往依赖自然语言,边界模糊,验收标准主观。长任务 Agent 的问题更严重——它没有实时人工监督,一旦对"完成"的理解偏差,会在错误方向上消耗大量资源。9 字段模板(背景/目标/Done means/上下文包/权限/验证/阻塞/交付物/降级)本质上是一种**任务元数据的强制声明**,让 Agent 在行动前先对齐期望。这与 [17 种 Agent 架构演进](ch04/773-17-agent.html) 中"控制流设计逐步显性化"的历史趋势一脉相承。
+Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 Task Brief,这在工程上意义深远:**它把"任务边界"从隐性知识变成了显性契约**。传统软件开发中,需求文档往往依赖自然语言,边界模糊,验收标准主观。长任务 Agent 的问题更严重——它没有实时人工监督,一旦对"完成"的理解偏差,会在错误方向上消耗大量资源。9 字段模板(背景/目标/Done means/上下文包/权限/验证/阻塞/交付物/降级)本质上是一种**任务元数据的强制声明**,让 Agent 在行动前先对齐期望。这与 [17 种 Agent 架构演进](ch04/774-17-agent.html) 中"控制流设计逐步显性化"的历史趋势一脉相承。
 
 ### 3. 能力路由 8 维度揭示了工具膨胀的失控风险
 
@@ -210,7 +210,7 @@ Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 T
 
 ### 4. 执行状态账本设计是长任务 Agent 的核心工程难题
 
-长任务 Agent 不能只靠聊天记录记住自己做过什么——这个判断来自 Anthropic 官方文档,被若飞拆解为 5 类状态账本(memory/Artifact storage/文件账本/工具历史/进度声明校验)。这与 [若飞 agent memory architecture](ch04/179-agent-memory.html) 中的"记忆架构决定 Agent 能否真正完成任务"高度相关。核心洞察是:**状态管理不只是"有没有 memory",而是"状态是否可以被验证和交接"**。进度声明必须回到本轮工具结果校验,这是一个朴素的工程原则,但在 AI Agent 场景下被放大——模型的"自信"可能掩盖实际的工具调用失败,而没有结构化账本,工程师无法事后重建真实执行路径。
+长任务 Agent 不能只靠聊天记录记住自己做过什么——这个判断来自 Anthropic 官方文档,被若飞拆解为 5 类状态账本(memory/Artifact storage/文件账本/工具历史/进度声明校验)。这与 [若飞 agent memory architecture](ch04/180-agent-memory.html) 中的"记忆架构决定 Agent 能否真正完成任务"高度相关。核心洞察是:**状态管理不只是"有没有 memory",而是"状态是否可以被验证和交接"**。进度声明必须回到本轮工具结果校验,这是一个朴素的工程原则,但在 AI Agent 场景下被放大——模型的"自信"可能掩盖实际的工具调用失败,而没有结构化账本,工程师无法事后重建真实执行路径。
 
 ### 5. Fable 5 事件是 Agent 治理从"产品内嵌"走向"显性协议"的拐点
 

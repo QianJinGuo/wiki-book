@@ -130,10 +130,10 @@ SkillOpt 的类比映射：
 ## 相关实体
 
 - [SkillOpt: 像训练神经网络一样训练 Skill](../ch05/047-skillopt.html)
-- [Agent Skills 综合调查](../ch04/478-agent-skills.html)
+- [Agent Skills 综合调查](../ch04/479-agent-skills.html)
 - [Hermes Agent 自进化](../ch03/098-hermes-agent.html)
 - [Agent 自改进六机制](../ch03/037-agent.html)
-- [阿里 Agentic Cloud](../ch04/429-agentic-cloud.html)
+- [阿里 Agentic Cloud](../ch04/430-agentic-cloud.html)
 - [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---
