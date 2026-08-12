@@ -65,7 +65,7 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
-- [Claude Code Harness Deep Understanding](../ch01/635-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/636-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/086-claude-code-harness.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/540-vibe-coding-agentic-engineering.html)

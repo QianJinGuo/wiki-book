@@ -2,7 +2,7 @@
 
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
-> 本章收录 **51 篇**实体，按深度递增排列。
+> 本章收录 **52 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 42 |
+| ⭐⭐ 工程师 | 需编程基础 | 43 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 
 ---
@@ -4634,7 +4634,75 @@ Flowchart 比 StateDiagram 在长任务场景效果好约 15%。StateDiagram 适
 
 ---
 
-## Ch06.033 OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
+## Ch06.033 WorldTrace：视频世界模型的可寻址记忆（Addressable Memory for Video World Models）
+
+> 📊 Level ⭐⭐ | 4.8KB | `entities/worldtrace-addressable-memory-video-world-models.md`
+
+# WorldTrace：视频世界模型的可寻址记忆
+
+> **来源**: NVIDIA Spatial Intelligence Lab（SIL）+ Princeton + Toronto + Vector Institute，ICML 2026 F2S Workshop Best Paper（oral）。arXiv: 2608.07408。
+
+## 核心主张
+
+自回归视频世界模型的长程视觉持久性崩溃，根因是 **position 问题而非 content 问题**：temporal RoPE offsets 一旦超过训练时域，缓存的记忆物理上仍在、但对 attention 已不可寻址。WorldTrace 用 slot-rank 虚拟位置让每个压缩记忆槽在任何生成长度下都保持 in-distribution，无需重训生成器。
+
+## 问题诊断：记忆为何在训练时域外失效
+
+- **可寻址性失效**：KV cache 中存储的视觉记忆超过训练窗口后，attention queries 看到的 phase 是模型从未学会寻址的——记忆"存在但读不出"。
+- **内容保真度失效**：naive key averaging 在 RoPE 旋转空间混合不相容相位，phase cancellation 摧毁压缩摘要携带的信号。
+
+## 方法：双层 cache + 两种 writer
+
+WorldTrace 构建两层 KV cache：逐字近期窗口 + $N_s$ 个 summary slots。核心创新是 **slot-rank position assignment**——虚拟位置 $v_s = q - (L_{train} - 1 - s)\cdot F$ 只由 slot 的 rank 决定，与 rollout 长度无关，因此任何 horizon 下 summary 都保持在训练分布内。
+
+两个互补 writer 填充 slots：
+
+| Writer | 机制 | 目标 |
+|--------|------|------|
+| **WT-Field** | canonical-key averaging：keys 先对齐到共享相位、平均、再旋转回 slot 位置，避免 phase cancellation | 压缩下的时间连贯性（smooth long rollouts），非回忆机制 |
+| **WT-Landmark** | 从 canonical-key signal 检测场景入口帧，逐字存储进 summary slots 并冻结（防 bfloat16 drift） | 长 rollout 的 episodic recall（回忆已访问场景） |
+
+## 关键结果
+
+**WT-Landmark（episodic recall，LoopMem benchmark，PAC 指标）**：
+
+- 长 ABA path：0.825 vs 0.627（sliding-window baseline）
+- 标准 ABA：0.864 vs 0.723
+- ABABA：0.941 vs 0.892
+- 360° pan（最难）：0.577 vs 0.559——增益最小，把局限暴露在明处而非藏进聚合数
+
+**WT-Field（coherence rollouts，TempSSIM）**：
+
+- 8× horizon：+5.9% vs Block-Rel；16×：+2.8%
+- 24× horizon（N=48）：+15.5% vs sliding-window，且降低 Local Scene Drift
+- 所有 N-dependent 位置公式均非单调退化，唯 slot-rank 单调有效
+
+## 工程意义
+
+- **训练无关、$O(1)$ summary cache**：即插即用型 drop-in 方案，不需要重训生成器，适配现有 AR 视频世界模型。
+- **"记忆失效是位置问题"的普适诊断**：对 KV cache 压缩、长上下文技术有迁移价值——压缩后记忆的可寻址性（而非容量）是长程任务的真正瓶颈。
+- **phase cancellation 的显式处理**：RoPE 空间中的 key averaging 需要先对齐相位再平均，这一原则适用于任何基于 RoPE 的缓存压缩方案。
+
+## 相关实体
+
+- [李飞飞掩码视觉动作世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md) — 同为世界模型方向，WorldTrace 聚焦记忆寻址而非动作预测
+- [BAAI Orca 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/baai-orca-next-state-prediction-world-model.md) — 下一状态预测范式对照
+- [A2RD 长视频自回归扩散](https://github.com/QianJinGuo/wiki/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md) — 长视频生成的自回归一致性
+- [The great memory panic of 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/05-11-the-great-memory-panic-of-2026.md) — 记忆/上下文基础设施的行业视角
+- [高德 Abot Earth 3D 原生世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
+
+## 相关概念
+
+- [视频生成模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/video-generation-models.md)
+- [Agent 记忆架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md)
+- [长上下文技术](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-context-techniques.md)
+- [上下文窗口经济学](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-window-economics.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/worldtrace-addressable-memory-video-world-models.md)
+
+---
+
+## Ch06.034 OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/openjiuwen-autogenetic-memory-agent-2026-07-02.md`
 
@@ -4715,7 +4783,7 @@ JiuwenMemory 设计了四层记忆架构，让信息从原始对话逐级抽象�
 
 ---
 
-## Ch06.034 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
+## Ch06.035 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md`
 
@@ -4786,7 +4854,7 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ---
 
-## Ch06.035 OpenChronicle — AI可复用记忆层
+## Ch06.036 OpenChronicle — AI可复用记忆层
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/openchronicle-memory-layer.md`
 
@@ -4836,7 +4904,7 @@ OpenChronicle的出现揭示了AI记忆层的核心争议——记忆究竟应�
 
 ---
 
-## Ch06.036 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
+## Ch06.037 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/qoder-team-knowledge-engine-compiled-knowledge.md`
 
@@ -4895,7 +4963,7 @@ Agent 每次进入项目都要重新读代码、猜结构、问人。
 
 ---
 
-## Ch06.037 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
+## Ch06.038 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
 
@@ -4972,7 +5040,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ---
 
-## Ch06.038 Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
+## Ch06.039 Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-memory-main-contradiction-context-scheduling.md`
 
@@ -5041,7 +5109,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ---
 
-## Ch06.039 Headroom 是怎么省上下文的
+## Ch06.040 Headroom 是怎么省上下文的
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/headroom-context-compression-agent-vibecoder.md`
 
@@ -5098,7 +5166,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 
 ---
 
-## Ch06.040 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
+## Ch06.041 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/alibaba-complex-business-skills-architecture-evolution.md`
 
@@ -5149,7 +5217,7 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 
 ---
 
-## Ch06.041 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
+## Ch06.042 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/tencentdb-agent-memory-long-term-pyramid.md`
 
@@ -5210,7 +5278,7 @@ PersonaMem（人物画像记忆准确率）提升最显著（+28pp），说明�
 
 ---
 
-## Ch06.042 Skill 编排的 6 种依赖关系
+## Ch06.043 Skill 编排的 6 种依赖关系
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/skill-orchestration-6-dependencies.md`
 
@@ -5251,7 +5319,7 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ---
 
-## Ch06.043 Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）
+## Ch06.044 Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）
 
 > 📊 Level ⭐⭐ | 1.7KB | `entities/loop-engineering-anthropic-playbook-orange-book-v260615-2026.md`
 
@@ -5267,7 +5335,7 @@ Loop Engineering 是 2026 年 6 月由 Peter Steinberger（OpenClaw 作者，800
 
 ---
 
-## Ch06.044 别让Agent什么都记 上交×腾讯提出 AdaMem
+## Ch06.045 别让Agent什么都记 上交×腾讯提出 AdaMem
 
 > 📊 Level ⭐⭐ | 0.9KB | `entities/admem-memory-policy-selective-memory-sjtu-tencent-2026.md`
 
@@ -5282,7 +5350,7 @@ Loop Engineering 是 2026 年 6 月由 Peter Steinberger（OpenClaw 作者，800
 
 ---
 
-## Ch06.045 AI Memory Architecture: Deep Dive
+## Ch06.046 AI Memory Architecture: Deep Dive
 
 > 📊 Level ⭐⭐⭐ | 36.6KB | `entities/ai-memory-architecture-deep-dive.md`
 
@@ -5864,7 +5932,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 
 ---
 
-## Ch06.046 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
+## Ch06.047 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
 
 > 📊 Level ⭐⭐⭐ | 29.7KB | `entities/miroflow-deep-research-agent-harness-mirothinker.md`
 
@@ -6195,7 +6263,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 
 ---
 
-## Ch06.047 Agent Harness 上下文管理：工作集视角
+## Ch06.048 Agent Harness 上下文管理：工作集视角
 
 > 📊 Level ⭐⭐⭐ | 24.6KB | `entities/agent-harness-context-management-working-set.md`
 
@@ -6442,7 +6510,7 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 
 ---
 
-## Ch06.048 MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战
+## Ch06.049 MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战
 
 > 📊 Level ⭐⭐⭐ | 13.7KB | `entities/agentos-minimax-forge-model-adaptation-yaoge.md`
 
@@ -6622,7 +6690,7 @@ Agent 场景的关键特征是执行效率与结果质量同等重要。 复合�
 
 ---
 
-## Ch06.049 Claude Code Subagent 上下文卫生
+## Ch06.050 Claude Code Subagent 上下文卫生
 
 > 📊 Level ⭐⭐⭐ | 10.2KB | `entities/claude-code-subagent-context-hygiene.md`
 
@@ -6732,7 +6800,7 @@ Subagent的本质被广泛误解——它不是"多一个Agent帮忙"，而是�
 
 ---
 
-## Ch06.050 注意力塌缩与上下文管理
+## Ch06.051 注意力塌缩与上下文管理
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/attention-collapse-context-management.md`
 
@@ -6807,7 +6875,7 @@ Harness 的本质职责之一是决定"模型在每一步看到什么"——上�
 
 ---
 
-## Ch06.051 Claude Code Session 管理与 1M 上下文最佳实践
+## Ch06.052 Claude Code Session 管理与 1M 上下文最佳实践
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/claude-code-session-management-1m-context.md`
 

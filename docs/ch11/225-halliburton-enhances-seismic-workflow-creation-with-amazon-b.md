@@ -13,7 +13,7 @@ Seismic data analysis is an essential component of energy exploration, but confi
 - [Build Financial Document Processing With Pulse Ai And Amazon Bedrock](ch11/152-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/493-ai-agent.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/645-amazon-bedrock-agentcore.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01/896-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](../ch01/897-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-halliburton-seismic-workflow-genai.md)
 

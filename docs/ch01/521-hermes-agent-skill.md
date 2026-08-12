@@ -164,7 +164,7 @@ Skill 退役时切忌直接删除——工具栈过时不代表经验过时。�
 → [Agent Memory 架构对比](../ch04/506-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
-- [AI Skill 测评指标体系](ch01/657-ai-skill.html)
+- [AI Skill 测评指标体系](ch01/658-ai-skill.html)
 - [Agentic AI 系统架构与分层模型](../ch05/101-harness-skill.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/098-hermes-agent.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/098-hermes-agent.html)

@@ -2,7 +2,7 @@
 
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
-> 本章收录 **322 篇**实体，按深度递增排列。
+> 本章收录 **323 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 14 |
-| ⭐⭐ 工程师 | 需编程基础 | 295 |
+| ⭐⭐ 工程师 | 需编程基础 | 296 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 12 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -340,20 +340,21 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [303. Build an explainable next-best-product recommendation system for banking on AWS](ch11/303-build-an-explainable-next-best-product-recommendation-system)
 - [304. 星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系](ch11/304-aws-devops-agent)
 - [305. Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](ch11/305-secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz)
-- [306. AWS IDP Accelerator](ch11/306-aws-idp-accelerator)
-- [307. AWS Fargate Deployment](ch11/307-aws-fargate-deployment)
-- [308. Amazon Bedrock](ch11/308-amazon-bedrock)
-- [309. Introducing AWS Continuum for security at machine speed](ch11/309-introducing-aws-continuum-for-security-at-machine-speed)
-- [310. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/310-agentscope-java-2-0-harness)
-- [311. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/311-hiclaw-v1-1-0-kubernetes-hermes-worker)
-- [312. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/312-bedrock)
-- [313. Build a highly scalable serverless LangGraph multi-agent system](ch11/313-build-a-highly-scalable-serverless-langgraph-multi-agent-sys)
-- [314. Scaling ArchUnit with Nebula ArchRules](ch11/314-scaling-archunit-with-nebula-archrules)
-- [315. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/315-ingress-nginx-api-gateway-api)
-- [316. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/316-agentscope-java-harness-framework-agent-harness)
-- [317. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/317-netflix-thinking-fast-slow-slow-fast-rl)
-- [318. Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod](ch11/318-deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-am)
-- [319. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/319-amazon-nova)
-- [320. 55+ models, every modality. One API key, one bill.](ch11/320-55-models-every-modality-one-api-key-one-bill)
-- [321. GenPage: Netflix 端到端生成式首页构建](ch11/321-genpage-netflix)
-- [322. 百度百舸 Cosmos3-Super 512 卡 Scaling：无 NVLink 通用 GPU 集群的 AI Infra 工程优化](ch11/322-cosmos3-super-512-scaling-nvlink-gpu-ai-infra)
+- [306. How OneAdvanced deployed over 50 AI agents on UK-sovereign AWS](ch11/306-how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-a)
+- [307. AWS IDP Accelerator](ch11/307-aws-idp-accelerator)
+- [308. AWS Fargate Deployment](ch11/308-aws-fargate-deployment)
+- [309. Amazon Bedrock](ch11/309-amazon-bedrock)
+- [310. Introducing AWS Continuum for security at machine speed](ch11/310-introducing-aws-continuum-for-security-at-machine-speed)
+- [311. AgentScope Java 2.0：企业级分布式 Harness 框架](ch11/311-agentscope-java-2-0-harness)
+- [312. HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时](ch11/312-hiclaw-v1-1-0-kubernetes-hermes-worker)
+- [313. 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）](ch11/313-bedrock)
+- [314. Build a highly scalable serverless LangGraph multi-agent system](ch11/314-build-a-highly-scalable-serverless-langgraph-multi-agent-sys)
+- [315. Scaling ArchUnit with Nebula ArchRules](ch11/315-scaling-archunit-with-nebula-archrules)
+- [316. 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引](ch11/316-ingress-nginx-api-gateway-api)
+- [317. AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现](ch11/317-agentscope-java-harness-framework-agent-harness)
+- [318. Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构](ch11/318-netflix-thinking-fast-slow-slow-fast-rl)
+- [319. Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod](ch11/319-deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-am)
+- [320. 微调 Amazon Nova 模型实现精准邮件数据提取](ch11/320-amazon-nova)
+- [321. 55+ models, every modality. One API key, one bill.](ch11/321-55-models-every-modality-one-api-key-one-bill)
+- [322. GenPage: Netflix 端到端生成式首页构建](ch11/322-genpage-netflix)
+- [323. 百度百舸 Cosmos3-Super 512 卡 Scaling：无 NVLink 通用 GPU 集群的 AI Infra 工程优化](ch11/323-cosmos3-super-512-scaling-nvlink-gpu-ai-infra)

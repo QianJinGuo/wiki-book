@@ -76,7 +76,7 @@ Unlimited OCR 沿用 DeepSeek OCR 提出的 DeepEncoder（高压缩率视觉编�
 - HuggingFace: https://huggingface.co/baidu/Unlimited-OCR
 
 ## 相关实体
-- [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/875-deepseek-v4.html)
+- [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/1363-deepseek-v4.html)
 - [Context Management Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-unlimited-ocr-rswa-attention.md)

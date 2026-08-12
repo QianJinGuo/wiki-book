@@ -27,7 +27,7 @@
 
 ## 相关实体
 
-- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/793-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest - AI in Production: The 2026 Benchmark Report](ch01/794-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [How Superset built the IDE for AI agents on Vercel](ch01/083-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Toto 2.0: Time series forecasting enters the scaling era](../ch11/189-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Personavlm Long Term Personalization](ch01/1078-vlm.html)

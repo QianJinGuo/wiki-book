@@ -31,7 +31,7 @@ Code Intelligence代表了一种工程工具AI化的典型路径：不是用AI�
 ## 相关实体
 - [Code Intelligence Changelog](ch04/584-code-intelligence-changelog.html)
 - [Qoder Skills Complete Guide](../ch07/037-qoder-skills.html)
-- [Is Software Losing Its Head](../ch01/886-is-software-losing-its-head.html)
+- [Is Software Losing Its Head](../ch01/887-is-software-losing-its-head.html)
 - [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/091-engineering-roles-shift-from-developing-code-to-managing-ai.html)
 - [Prompt Debugger A B Compare Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-a-b-compare-winty.md)
 

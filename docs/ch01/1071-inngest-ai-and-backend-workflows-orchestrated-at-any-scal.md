@@ -70,7 +70,7 @@ Inngest 定位为下一代工作流编排引擎，与 Temporal 形成直接竞�
 - [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/493-ai-agent.html)
 - [Mathematical Optimization Aws Innovation Center Enterprise](ch01/433-aws.html)
 - [Task Queue Priority And Fairness Your Task Queue](../ch11/233-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Whats New With Vsphere 9 1](ch01/932-9.html)
+- [Whats New With Vsphere 9 1](ch01/933-9.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/inngest-ai-and-backend-workflows-orchestrated-at-any-scale.md)
 

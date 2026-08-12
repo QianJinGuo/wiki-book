@@ -152,7 +152,7 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 
 ## 相关实体
 - [Agent Memory 架构解析](ch04/180-agent-memory.html)
-- [memory agent systems cobanov](ch04/686-memory-agent-systems-cobanov.html)
+- [memory agent systems cobanov](ch04/688-memory-agent-systems-cobanov.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch03/098-hermes-agent.html)
 - [AI Agent 记忆系统架构](ch04/214-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/098-hermes-agent.html)

@@ -131,7 +131,7 @@ Skills 是按需加载的专业知识包，应绑定到特定目录实现模块�
 ## 相关实体
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/084-claude-code.html)
 - [Claude Code Core Internals](../ch03/084-claude-code.html)
-- [Claude Code Harness Deep Understanding](ch01/635-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/636-claude-code-harness-deep-understanding.html)
 - [Claude Code Large Codebase Harness Configuration](../ch03/084-claude-code.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/084-claude-code.html)
 

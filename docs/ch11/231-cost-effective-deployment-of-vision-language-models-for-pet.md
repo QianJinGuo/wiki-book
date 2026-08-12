@@ -51,13 +51,13 @@ Furbo 的系统架构采用双层设计：
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
 
 ## 相关实体
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/319-amazon-nova.html)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](ch11/320-amazon-nova.html)
 - [Reinforcing Recursive Language Models | alphaXiv](../ch01/1113-reinforcing-recursive-language-models-alphaxiv.html)
-- [Language Models and Meaning](../ch01/645-language-models-and-meaning.html)
+- [Language Models and Meaning](../ch01/646-language-models-and-meaning.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sun-finance-ai-id-extraction-fraud-detection.md)
 
-- [Language Models and Meaning](../ch01/645-language-models-and-meaning.html)
+- [Language Models and Meaning](../ch01/646-language-models-and-meaning.html)
 - [llava-onevision-2：全帧率视频理解](../ch01/1078-vlm.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 

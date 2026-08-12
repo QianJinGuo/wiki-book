@@ -99,7 +99,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - Simon Willison 转述：https://simonwillison.net/2026/Feb/14/boris/
 
 ## 关联条目
-- [Karpathy Vibe Coding To Agentic Engineering](../ch04/725-agentic.html) — 同场 Sequoia AI Ascent 2026，Software 3.0 概念框架，Boris 访谈的上一层叙事
+- [Karpathy Vibe Coding To Agentic Engineering](../ch04/727-agentic.html) — 同场 Sequoia AI Ascent 2026，Software 3.0 概念框架，Boris 访谈的上一层叙事
 - [Claude Code Architecture](ch03/084-claude-code.html) — Claude Code 源码架构，包含主循环、Permission 管道等底层实现
 - [Cat Wu Claude Code Pm](ch03/084-claude-code.html) — Anthropic Claude Code/Cowork 产品负责人，同团队视角
 -  — Karpathy 访谈原文存档
@@ -107,7 +107,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/037-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/037-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/636-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](ch03/084-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](ch03/084-claude-code.html)

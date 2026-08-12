@@ -150,7 +150,7 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
   - [Agent Memory 架构：过去影响未来](../ch04/180-agent-memory.html)（记忆预算的更早版本）
 - **互补实践**：
   - [Codex /goal Runtime](../ch04/244-codex-goal-agent.html)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
-  - [Anthropic 长时运行 Agent 架构](../ch01/1539-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
+  - [Anthropic 长时运行 Agent 架构](../ch01/776-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
   - [六条经验：让 AI 编码 Agent 变得可控](../ch04/403-ai-coding-agent.html)（Martin Fowler 反馈环共识）
   - [Harness design for long running apps](ch05/017-harness.html)（Anthropic 官方长任务 Harness 解读）
   - [Martin Fowler：非确定性进了研发链路](ch05/017-harness.html)（前馈/反馈原文）

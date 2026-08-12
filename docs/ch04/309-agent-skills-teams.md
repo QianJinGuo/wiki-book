@@ -70,7 +70,7 @@ Agent Teams（并行 + 共享 Context）
 
 ## 相关实体
 - [Agent 时代架构师技能指南](../ch03/076-skills.html)
-- [factory mission multi agent architecture](../ch01/1440-factory-mission-multi-agent-architecture.html)
+- [factory mission multi agent architecture](../ch01/1441-factory-mission-multi-agent-architecture.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/479-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/037-agent.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/596-anthropic-google-agent-skills.html)

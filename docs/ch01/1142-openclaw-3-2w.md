@@ -60,7 +60,7 @@ source_published: 2026-03-11
 - [Hermes Agent V014 Architecture Shugex](../ch03/098-hermes-agent.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/425-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
-- [Deepseek Code Harness Competitor Tina](../ch09/100-deepseek-code-harness.html)
+- [Deepseek Code Harness Competitor Tina](../ch09/101-deepseek-code-harness.html)
 
 ## 实践启示
 

@@ -59,7 +59,7 @@ IMClaw 提供了三种权限模式（approve-reads、approve-all、deny-all）�
 3. **审计日志的必要性**：建议在网关层实现完整的操作审计日志，记录每个会话、每个命令的发起人、时间戳和操作内容，满足合规审计需求。
 
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/636-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [OpenCLAW 完全指南](../ch11/253-openclaw.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)

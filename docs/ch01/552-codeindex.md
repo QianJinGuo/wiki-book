@@ -58,11 +58,11 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codeindex-让大模型更好地理解你的代码.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1268-rag.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1484-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/017-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/005-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/725-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/727-agentic.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/345-skill.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/092-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/253-openclaw.html)

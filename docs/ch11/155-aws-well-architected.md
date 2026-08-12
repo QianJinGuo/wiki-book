@@ -70,7 +70,7 @@
 - [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](ch11/032-restrict-access-to-sensitive-documents-in-your-amazon-q-s3-k.html)
 - [Aws Cognito Multi Region Replication](../ch01/433-aws.html)
 - [Aws Transform Ezconvertbi Bi Migration](ch11/232-aws-transform-ezconvertbi-bi-migration.html)
-- [Amazon Bedrock Agentic Payments Guardrails](ch11/308-amazon-bedrock.html)
+- [Amazon Bedrock Agentic Payments Guardrails](ch11/309-amazon-bedrock.html)
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/190-amazon-ecs.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-software-supply-chain-security-well-architected.md)

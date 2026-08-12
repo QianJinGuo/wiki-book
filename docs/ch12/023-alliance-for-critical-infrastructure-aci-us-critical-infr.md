@@ -69,7 +69,7 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/017-harness.html)
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 - [Aws Software Supply Chain Security Well Architected Best Practices](../ch01/433-aws.html)
-- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/1268-rag.html)
+- [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/1269-rag.html)
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/455-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Ai Traffic Cyberthreat Benchmark 2026](../ch05/104-ai.html)
 - [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/038-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)

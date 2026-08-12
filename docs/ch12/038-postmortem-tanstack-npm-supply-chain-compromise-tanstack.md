@@ -8,7 +8,7 @@
 
 ## 相关实体
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/1018-scarcruft.html)
-- [Semis Memo: Supply Chain Inheritance](../ch01/869-semis-memo-supply-chain-inheritance.html)
+- [Semis Memo: Supply Chain Inheritance](../ch01/870-semis-memo-supply-chain-inheritance.html)
 - [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/104-ai.html)
 - [Semis Memo: Supply Chain Inheritance](../ch05/104-ai.html)
 - [semgrep intercom php supply chain](ch12/122-semgrep-intercom-php-supply-chain.html)

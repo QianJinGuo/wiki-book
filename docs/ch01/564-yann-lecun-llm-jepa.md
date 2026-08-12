@@ -93,9 +93,9 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 ## 相关实体
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1379-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1380-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/725-agentic.html)
+- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/727-agentic.html)
 - [OpenClaw 多 Agent 协同开发](../ch11/253-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - 
@@ -104,12 +104,12 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
 - [better decisions at scale: how mathematical optimization del](../ch11/170-better-decisions-at-scale-how-mathematical-optimization-del.html)
 - [farewell ai2](../ch05/104-ai.html)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/1383-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/1384-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch05/104-ai.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/104-ai.html)
 - [private fintech has quietly become bigger than public fintec](../ch03/115-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [Private Fintech Has Quietly Become Bigger Than Public Fintec](../ch03/115-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
-- [the inevitable need for an open model consortium](ch01/1397-the-inevitable-need-for-an-open-model-consortium.html)
+- [the inevitable need for an open model consortium](ch01/551-the-inevitable-need-for-an-open-model-consortium.html)
 
 ---
 

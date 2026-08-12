@@ -30,7 +30,7 @@ Amazon Bedrock Managed Knowledge Bases 新推出的 Agentic Retrieval（通过 A
 
 理解 Agentic Retrieval 的价值，首先要理解单次向量检索（Retrieve API）在多跳问题上的根本局限。当用户问"比较 Amazon 在 2020 年和 2023 年的招聘策略差异"时，这个查询包含三个子意图（2020 年招聘、2023 年招聘、两期比较），但是 embedding 模型只能产生一个向量——这个向量是三个子意图的"平均"，无法精准代表任何一个。
 
-更关键的是，传统检索没有"充分性判断"机制。不论查询多复杂，它永远只返回 top-k 个 chunk。如果前 k 个结果都来自 2020 年的文档，2023 年的信息完全丢失，检索器不会知道"我还有信息没找到"。这与 [RAG 分块-向量化-重排管线](../ch01/1268-rag.html) 中的已知缺陷一致。
+更关键的是，传统检索没有"充分性判断"机制。不论查询多复杂，它永远只返回 top-k 个 chunk。如果前 k 个结果都来自 2020 年的文档，2023 年的信息完全丢失，检索器不会知道"我还有信息没找到"。这与 [RAG 分块-向量化-重排管线](../ch01/1269-rag.html) 中的已知缺陷一致。
 
 Agentic Retrieval 的设计目标就是自动化人类分析师的搜索行为：先分解问题，按子意图逐项检索，读结果，发现盲点，再搜索，直到有足够证据才综合回答。
 
@@ -59,7 +59,7 @@ Agentic Retrieval 之前，团队通常基于 Retrieve API 构建自定义 Agent
 - 安全模型需要自行实现（规划模型的 IAM 权限、检索结果的访问控制）
 - 可观测性需要从零搭建
 
-Agentic Retrieval 将这些统一为服务端能力，借助 AWS 的 IAM 集成和 CloudWatch 日志，安全模型和可观测性开箱即用。这体现了 [Bedrock 平台化](../ch11/308-amazon-bedrock.html) 的核心理念——让开发者专注业务逻辑，而非基础设施编排。
+Agentic Retrieval 将这些统一为服务端能力，借助 AWS 的 IAM 集成和 CloudWatch 日志，安全模型和可观测性开箱即用。这体现了 [Bedrock 平台化](../ch11/309-amazon-bedrock.html) 的核心理念——让开发者专注业务逻辑，而非基础设施编排。
 
 ### 多知识库路由的关键设计约束
 
@@ -87,11 +87,11 @@ Agentic Retrieval 的多 KB 路由功能依赖一个精妙的设计：retriever 
 ## 相关实体
 
 - Agentic RAG 模式
-- [RAG 分块-向量化-重排管线](../ch01/1268-rag.html)
+- [RAG 分块-向量化-重排管线](../ch01/1269-rag.html)
 - [Bedrock AgentCore 运行时](ch04/645-amazon-bedrock-agentcore.html)
-- [Bedrock 跨区域推理](../ch11/308-amazon-bedrock.html)
+- [Bedrock 跨区域推理](../ch11/309-amazon-bedrock.html)
 - RAG 框架对比
-- [三种 RAG 架构](ch04/725-agentic.html)
+- [三种 RAG 架构](ch04/727-agentic.html)
 - RAG 检索增强生成
 - [知识库构建](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-base-construction.md)
 

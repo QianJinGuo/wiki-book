@@ -265,11 +265,11 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 
 ### 与多租户 / Serverless Agent
 - [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/645-amazon-bedrock-agentcore.html) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
-- [AgentScope Builder](../ch04/770-self-evolving-agent.html) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
+- [AgentScope Builder](../ch04/772-self-evolving-agent.html) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
 - [Stripe Agent 经济基础设施 5 套图谱](../ch03/037-agent.html) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
 
 ### 与 RAG / Agent 评估
-- [RAG 技术框架的演进方向](../ch01/1268-rag.html) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
+- [RAG 技术框架的演进方向](../ch01/1269-rag.html) = 关注 **retrieval 充分性**（充分上下文智能体 = 信息的"够不够"判断）
 - **本文 = 关注 runtime 充分性**（状态 / 代码 / 凭据的"够不够"判断 + ownership 边界）
 
 ### 与上下文隔离

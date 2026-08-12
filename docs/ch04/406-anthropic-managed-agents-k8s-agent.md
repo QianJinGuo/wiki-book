@@ -14,7 +14,7 @@
 - Prompt injection 攻击面大：不可信代码和凭证在同一环境
 
 ## 相关实体
-- [Anthropic Pm Jess Yan Managed Agents](../ch01/1539-anthropic.html)
+- [Anthropic Pm Jess Yan Managed Agents](../ch01/776-anthropic.html)
 - [Anthropic Claude Managed Agents Platform 2026](../ch01/397-anthropic-claude-managed-agents.html)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/614-claude-managed-agents.html)
 - [From Prompt To Harness Claude Official](../ch05/017-harness.html)

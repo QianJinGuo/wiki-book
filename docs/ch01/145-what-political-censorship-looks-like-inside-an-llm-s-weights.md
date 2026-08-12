@@ -14,7 +14,7 @@
 - [Products Are Out Brains Are In](ch01/150-products-are-out-brains-are-in.html)
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Offline Llm Energy Use Html](ch01/863-llm.html)
+- [Offline Llm Energy Use Html](ch01/1484-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 

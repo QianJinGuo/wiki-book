@@ -135,7 +135,7 @@ TamperedChef攻击链展现出高度结构化的入侵策略：
 - [Agentexecutorgooglesdistributedagentruntime](../ch04/005-agentrun.html)
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/1119-20.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/104-ai.html)
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/609-scaling.html)
+- [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/610-scaling.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/trackingtamperedchefclustersviacertificateandcodereuse.md)
 

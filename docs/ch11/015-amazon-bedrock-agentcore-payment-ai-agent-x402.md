@@ -2,7 +2,7 @@
 
 ## Ch11.015 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
 
-> 📊 Level ⭐⭐ | 52.5KB | `entities/bedrock-agentcore-payment-x402-agent.md`
+> 📊 Level ⭐⭐ | 55.3KB | `entities/bedrock-agentcore-payment-x402-agent.md`
 
 # 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
 
@@ -759,12 +759,27 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 ## 相关实体
 - [Firecracker Bedrock Agentcore Multi Tenant](ch11/059-bedrock-agentcore.html)
 - [Agentcore Payments X402 Agentic Commerce](ch11/073-agentcore-payments.html)
-- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/308-amazon-bedrock.html)
+- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/309-amazon-bedrock.html)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/645-amazon-bedrock-agentcore.html)
 - [Agentic Payment X402 Bedrock Agentcore](ch11/059-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-agentcore-payment-x402-agent.md)
 - [Ai Research Assistant From Idea To App](../ch05/104-ai.html)
+
+## 第 2 来源 — Solv Labs 可验证可审计的 Agent 支付（2026-08-13 MERGE）
+
+> v×c=64（v=8 c=8 s=4），30-70% overlap + 6 互补角度 → MERGE。原文：Pay with confidence: How Solv Labs built verifiable, auditable agent payments on Amazon Bedrock AgentCore payments。
+
+### 互补角度 6 条
+
+1. **治理三层架构**：Solv Labs 的 agent 支付流程由两层治理组件叠加——ORACLE（Solv 策略引擎，每笔交易前强制授权策略）+ ICME PreFlight（合规验证，把 AWS Automated Reasoning Checks 扩展为隐私保护、可移植、独立可验证，每笔决策可检查）。
+2. **三大治理组件流水线**：每笔 agent 支付经过 ORACLE 预授权决策 → Nitro Enclave 中运行的完整性服务 → 风险引擎逐笔定价，每笔交易 <4s 完成（覆盖预授权、治理、链上结算），完整审计轨迹。
+3. **Nitro Enclave 作为逐笔 attestation 器**：AWS Nitro Enclaves 在每笔交易中充当验证器，与 ORACLE 策略引擎 + 风险引擎构成可证明的治理链。
+4. **x402 支付标准 + Coinbase 链上结算**：AgentCore payments 与 Coinbase/Stripe 合作（2026-05 发布），agent 可即时访问并支付 web 内容、API、MCP servers、其他 agents；Solv 方案通过 Coinbase 完成链上结算。
+5. **关键问题转向**："agent 第一次替企业移动真钱，问题不再是'成功了吗'而是'我们能证明刚才发生了什么吗'"——可证明性成为 agent 支付的第一性要求。
+6. **四件基础设施同年汇聚**：AgentCore payments、AWS Automated Reasoning Checks、Nitro Enclaves 逐笔 attestation、x402 标准——四个让可证明问题有答案的基础设施在一个季度内同时成熟。
+
+→ [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pay-with-confidence-how-solv-labs-built-verifiable-auditable-agent-payments-on-amazon-bedrock-agentcore-payments.md)
 
 ---
 

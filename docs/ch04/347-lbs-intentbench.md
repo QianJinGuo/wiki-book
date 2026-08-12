@@ -94,9 +94,9 @@ Qwen3.5-35B-A3B 在 POI 语义理解和事实检索上逼近顶级闭源模型�
 
 ## 相关实体
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/345-skill.html)
-- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/1539-anthropic.html)
+- [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch01/776-anthropic.html)
 
-- [AI Skill 测评指标体系](../ch01/657-ai-skill.html)
+- [AI Skill 测评指标体系](../ch01/658-ai-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-tools-research.md)
 

@@ -125,7 +125,7 @@ SAP 的多基础模型策略值得借鉴。在企业内部，应尽早评估不�
 ## 相关链接
 
 ## 相关实体
-- [Sap Unveils The Autonomous Enterprise](ch04/133-sap-unveils-the-autonomous-enterprise.html)
+- [Sap Unveils The Autonomous Enterprise](ch04/158-sap-unveils-the-autonomous-enterprise.html)
 - [Sap Unveils Autonomous Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/sap-unveils-autonomous-enterprise.md)
 - [Enterprise Software Moats Agent Era](../ch03/037-agent.html)
 - [The Ui Is Dead Long Live The Agent](ch04/512-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
