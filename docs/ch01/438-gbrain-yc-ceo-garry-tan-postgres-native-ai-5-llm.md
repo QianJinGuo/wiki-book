@@ -134,7 +134,7 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 **性能基准**：P@5 49.1%、R@5 97.9%。关闭 KG 功能后 P@5 下降 31.4pp，优于纯 ripgrep-BM25+向量 RAG 。
 
 ## 相关实体
-- [AgentBrowser](../ch09/077-agent-browser-claude-code-qoderwork.html)
+- [AgentBrowser](../ch09/078-agent-browser-claude-code-qoderwork.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/104-ai.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/1119-20.html)
@@ -151,7 +151,7 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 - [OpenCLI](../ch03/094-opencli.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [24h打工人](../ch03/037-agent.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/904-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/905-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/098-hermes-agent.html)
 - [Agent 原理、架构与工程实践](../ch03/037-agent.html)
 - [AI Agent 工程师能力地图](../ch04/493-ai-agent.html)

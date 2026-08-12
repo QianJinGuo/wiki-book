@@ -90,7 +90,7 @@ Gemini 3.5 Pro 的持续延期和 Gemini 4 的提前启动，折射出大模型�
 
 ## 相关实体链接
 
-- [Gemini 3.6 相关报道](ch01/743-gemini-36.html)
+- [Gemini 3.6 相关报道](ch01/744-gemini-36.html)
 - Google Gemini 系列模型
 - 模型效率
 - [负责任的 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ethics-responsible-ai.md)

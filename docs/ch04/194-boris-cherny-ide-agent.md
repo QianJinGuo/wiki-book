@@ -7,7 +7,7 @@
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/037-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/636-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/017-harness.html)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/084-claude-code.html)

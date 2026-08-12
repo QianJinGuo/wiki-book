@@ -178,12 +178,12 @@ Content-Security-Policy:
 - **密码窃取专项测试**：如果目标有登录功能，主动尝试注入 form 标签并观察 autofill 行为（需在受控环境）
 
 ## 相关实体
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/932-9.html)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](ch01/933-9.html)
 - [Ico Fines South Staffordshire 2022 Breach](ch01/1119-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](../ch03/110-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/104-ai.html)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/178-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/179-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
 - [discord 全平台端到端加密](../ch12/103-discord.html)

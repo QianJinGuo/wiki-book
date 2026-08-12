@@ -67,7 +67,7 @@ L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初�
 - [你不知道的 Agent 原理架构与工程实践](ch04/433-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Thin Harness Fat Skills](../ch05/096-thin-harness-fat-skills-ai.html)
-- [Design Patterns for AI Agents 2026](ch04/147-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/017-harness.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)

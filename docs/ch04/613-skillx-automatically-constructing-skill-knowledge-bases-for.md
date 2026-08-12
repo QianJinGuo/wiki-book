@@ -13,7 +13,7 @@
 ## 相关实体
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/199-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Skill Os Learning Skill Curation Self Evolving Agents](ch04/286-self-evolving-agents.html)
-- [Airbyte Agents](ch04/665-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
+- [Airbyte Agents](ch04/666-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1111-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/127-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 

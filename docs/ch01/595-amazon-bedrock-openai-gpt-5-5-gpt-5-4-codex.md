@@ -62,7 +62,7 @@ print(result['content'][0]['text'])
 
 ### 3. 作为 Codex Agent 的推理后端
 
-[OpenAI Codex on Bedrock](../ch11/308-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
+[OpenAI Codex on Bedrock](../ch11/309-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
 
 ## 模型对比与选型
 
@@ -110,7 +110,7 @@ GPT-5.5 在 Bedrock 上表现出显著的 Agentic Coding 能力提升：
 
 ## 与 Anthropic 模型的混合使用
 
-Bedrock 的一大优势是可以在同一平台上混合使用 OpenAI 和 [Anthropic Claude](ch01/1539-anthropic.html) 模型。典型场景：
+Bedrock 的一大优势是可以在同一平台上混合使用 OpenAI 和 [Anthropic Claude](ch01/776-anthropic.html) 模型。典型场景：
 - **代码生成**：使用 OpenAI Codex 做代码生成
 - **安全审查**：使用 Claude 做代码安全审计（取长补短）
 - **成本优化**：简单任务用 Claude Haiku，复杂任务用 GPT-5.5
@@ -149,7 +149,7 @@ Codex 作为编码 Agent 在 Bedrock 上的部署模式，代表了 AI 编码工
 
 ## 相关实体
 
-- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/308-amazon-bedrock.html)
+- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/309-amazon-bedrock.html)
 - [Amazon Bedrock AgentCore Harness GA](../ch04/576-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - [AWS Bedrock Multi-Agent Collaboration Guide](../ch11/020-aws-bedrock.html)
 - [Securing Bedrock AgentCore with AWS WAF](../ch11/275-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)

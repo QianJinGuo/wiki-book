@@ -14,7 +14,7 @@
 - [Canvas Breach Disrupts Schools Colleges Nationwide](../ch12/034-canvas-breach-disrupts-schools-colleges-nationwide.html)
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/076-skills.html)
 - [Aws Bedrock Agentcore Identity Security](../ch11/271-aws-bedrock-agentcore.html)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/903-github.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/904-github.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-agent-security-fangcun.md)
 

@@ -119,7 +119,7 @@ AI 的上下文窗口有限，一次性输入所有约束和参考信息会导�
 
 - → [Harness Engineering](ch05/092-harness-engineering.html) — 本文是该方法论在维护性工程场景的完整实证
 - → [Agent Skill 规范、构建与设计模式](../ch04/597-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
-- → [Vibe Coding 与 AI 软件工程](../ch04/768-vibe-coding-ai.html) — Vibe Coding 概念背景，与本案例的"约束 vs 自由"对比
+- → [Vibe Coding 与 AI 软件工程](../ch04/770-vibe-coding-ai.html) — Vibe Coding 概念背景，与本案例的"约束 vs 自由"对比
 - → [腾讯 Harness Engineering 团队实践](ch05/092-harness-engineering.html) — 同一方法论在不同组织的实践对比
 - → [ScarfBench：企业 Java 框架迁移 AI 评测](../ch04/493-ai-agent.html) — 企业级迁移场景的基准评测，与本案例互补
 - → [技能治理与 AI 注册中心](../ch04/345-skill.html) — Skill 的注册发现与版本管理机制

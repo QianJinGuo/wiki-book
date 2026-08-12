@@ -11,7 +11,7 @@
 > **参考原文**: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/
 
 ## 相关实体
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/979-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/980-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/1084-openai-gpt-realtime-voice-models-qbitai.html)
 - [Aliyun Agentrun 2Line Integration](../ch04/005-agentrun.html)
 - [Pi Mono Github](ch01/1105-pi-mono-github.html)

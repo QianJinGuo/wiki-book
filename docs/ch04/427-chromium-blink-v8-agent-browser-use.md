@@ -84,7 +84,7 @@ V8 执行层级（从快到慢，从轻到重）：
 
 ## 相关实体
 
-- [BrowserBC：人类轨迹 Skill 蒸馏](../ch01/1552-browserbc.html)
+- [BrowserBC：人类轨迹 Skill 蒸馏](../ch01/1554-browserbc.html)
 - [Agent Harness Context Management](../ch05/042-agent-harness.html)
 
 ## 延伸资源

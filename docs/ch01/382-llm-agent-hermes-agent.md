@@ -178,7 +178,7 @@ Skill 不是一次性创建的静态资产，而是需要持续维护的演化�
 - [Codeindex · 让大模型更好地理解你的代码](ch01/552-codeindex.html)
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/479-agent-skills.html)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/084-claude-code.html)
-- [AI Skill 测评指标体系](ch01/657-ai-skill.html)
+- [AI Skill 测评指标体系](ch01/658-ai-skill.html)
 
 ---
 

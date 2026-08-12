@@ -88,7 +88,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/017-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/636-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/192-karpathy-vibe-coding-agentic-engineering.html)
@@ -102,7 +102,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/096-thin-harness-fat-skills-ai.html)
-- [Design Patterns for AI Agents 2026](ch04/147-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
 ## 深度分析
 ### 上下文漂移的注意力机制深层根因

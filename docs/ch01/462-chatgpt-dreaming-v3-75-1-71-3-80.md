@@ -124,7 +124,7 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 - 长期记忆架构 — [Ai Memory Architecture Deep Dive](../ch05/104-ai.html)
 - 个人助手 / Agent 状态 — [Personavlm Personalized Memory](ch01/1078-vlm.html)
 - 算力优化 — [Harness Engineering Comprehensive Guide Conardli](../ch05/092-harness-engineering.html)
-- 2026-06-05 开发者期待 GPT 5.6 — [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](ch01/975-chatgpt.html)（同 ChatGPT 系列）
+- 2026-06-05 开发者期待 GPT 5.6 — [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](ch01/1379-chatgpt.html)（同 ChatGPT 系列）
 
 ## 深度分析
 
@@ -158,7 +158,7 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 - **「做梦」叙事框架独占**：把 Dreaming 翻译为"做梦"并贯穿全文（"ChatGPT 也会「做梦」了"），是**用户心智占位**——比 51CTO 直译"Dreaming V3"更易传播，本质是同一技术概念的两个传播策略。
 - **"三场大考"场景更具体**：51CTO 译本用"上海出差外卖"举例时间感知，新智元用"水下摄影玩家 + 索尼 A1 II + Nauticam NA-A1II 防水壳 + Backscatter Mini Flash 3 / Inon Z-330 闪光灯"验证**具体 SKU 兼容性**——更接近"私人器材顾问"的产品定位叙事。两案例**互补不冲突**：上海外卖测时间感知，水下摄影 SKU 测事实召回精度。
-- **ASI 路线图铺垫独有**：新智元把 Dreaming V3 包装为"**ASI 第一块拼图**"——"缺的不只是更大参数、更多算力，还有在时间中持续学习、持续自我更新的能力"——这是 51CTO 译本完全没有的**战略叙事层**，给 OpenAI 后续 ASI 路线图埋下伏笔。新智元作为 OpenAI 长期跟踪者（参见 `[Openai Codex Super Computer Network Xinzhiyuan](../ch09/183-openai-codex.html)`、`[Claude Pilled Phenomenon Xinzhiyuan 2026](ch01/1219-claude.html)`），这种叙事连贯性是单源报道无法复现的。
+- **ASI 路线图铺垫独有**：新智元把 Dreaming V3 包装为"**ASI 第一块拼图**"——"缺的不只是更大参数、更多算力，还有在时间中持续学习、持续自我更新的能力"——这是 51CTO 译本完全没有的**战略叙事层**，给 OpenAI 后续 ASI 路线图埋下伏笔。新智元作为 OpenAI 长期跟踪者（参见 `[Openai Codex Super Computer Network Xinzhiyuan](../ch09/184-openai-codex.html)`、`[Claude Pilled Phenomenon Xinzhiyuan 2026](ch01/1219-claude.html)`），这种叙事连贯性是单源报道无法复现的。
 - **"三级跳"时间线稍详细**：给出 2024-04 → 2025-04 → 2026-06 三个时间点，与 51CTO 译本对齐但增加了对 V1 "saved memories 会过期、帮倒忙"的细节描述——为后续"为什么必须升级到 dreaming"的论证提供更细的时间线锚点。
 
 **两源叙事收敛度对比**：51CTO 偏技术解读（架构机制 + 工程突破量化），新智元偏战略叙事（"做梦"框架 + ASI 拼图）。**两个叙事角度合并后形成"Dreaming V3 = 技术架构升级 + 商业范式重构 + 战略路线图占位"的三层解读**，比单源覆盖更立体。**不创建新 entity，不 skip——合并到本实体的"第 2 来源"章节**，是同源不同公众号译本的标准处理模式（参考 web-content-reviewer 2026-06-04 同源不同公众号 pitfall）。

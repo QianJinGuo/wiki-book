@@ -37,7 +37,7 @@
 - [Hermes Agent Newbie Guide Dotta](../ch03/098-hermes-agent.html)
 - [Skill Rag Tsinghua Sra](../ch04/345-skill.html)
 - [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md)
-- [Deepseek Code Harness](../ch09/100-deepseek-code-harness.html)
+- [Deepseek Code Harness](../ch09/101-deepseek-code-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
 

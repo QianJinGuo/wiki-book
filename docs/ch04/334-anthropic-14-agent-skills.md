@@ -29,8 +29,8 @@ Anthropic官方14个Agent Skills设计模式；最佳实践官方指南。本文
 ## 相关实体
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/596-anthropic-google-agent-skills.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/479-agent-skills.html)
-- [Anthropic 官方 14 种 Skill 设计模式](../ch01/1539-anthropic.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/961-skills-anthropic-openai-comparison-frontend-design.html)
+- [Anthropic 官方 14 种 Skill 设计模式](../ch01/776-anthropic.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/962-skills-anthropic-openai-comparison-frontend-design.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/479-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/037-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/037-qoder-skills.html)

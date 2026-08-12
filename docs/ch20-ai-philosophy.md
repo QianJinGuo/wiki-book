@@ -1891,7 +1891,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 
 ## Ch20.015 Nemotron 3.5 Content Safety
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/nemotron-3-5-content-safety.md`
+> 📊 Level ⭐⭐⭐ | 11.3KB | `entities/nemotron-3-5-content-safety.md`
 
 # Nemotron 3.5 Content Safety
 
@@ -1952,6 +1952,22 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 - 与 `nvidia-mcg-model-documentation`（NVIDIA 整体模型文档）互补：本实体专注 **Content Safety 垂直方向**
 - 与 `nvidia-edge-first-llms-av-robotics`（边缘 LLM）不同：那个是边缘部署，本实体是企业级云端
 - 暂无现有 entity 覆盖 **可定制多模态内容安全 + 推理轨迹** 的具体技术细节
+
+## SUPP：阿里 Yuvion VL 的对抗式训练方法论维度（2026-08-12）
+
+> 阿里安全 AGI 实验室 Yuvion VL（arXiv:2606.25034，基于 Qwen3-VL）从**训练方法论**侧补充本实体的产品部署视角：Nemotron 3.5 回答"企业级多模态内容安全怎么部署"，Yuvion VL 回答"多模态安全模型怎么把对抗性练进能力"。
+
+**核心方法论（全库零覆盖）**：
+
+- **C2FT（Confuse-then-Contrast Fine-Tuning）对比后训练范式** — 针对"视觉相似但风险不同"样本（合法文化符号 vs 被禁标识、正常商品图 vs 隐藏违禁品），动态挖掘模型特定混淆样本（Confuse：混淆分数基于错误预测 embedding 与候选类别真值 embedding）+ 多图对比组跨图判别训练（Contrast：统一多图指令 + Transformer 自注意力 + 对比交叉熵损失）。消融：随机对比替代混淆挖掘 → 下降 4.28 分；去除 Progressive Anti-Shortcut Training → 下降 15.41 分（防捷径学习）
+- **六类对抗数据体系 + 数据飞轮** — 小字/水印规避、Logo/符号变异、遮挡隐藏、AI 生成对抗内容（扩散模型生成变体）；失败案例挖掘 → 图像生成技术产生针对性增强数据持续进化
+- **后验约束 CoT 生产流水线** — 风险领域知识密集型任务：逆向推导 + 级联一致性验证（答案对齐 + 双模型交叉验证仲裁）+ 效率/一致性/质量三维质检
+- **三阶段渐进安全训练** — 知识增强继续预训练（风险概念跨模态对齐）→ Instruct SFT + C2FT → Reasoning SFT + RL（拒绝采样 + 课程学习，仅 6% 数据达全量性能）
+- **YVRE 三级评测体系** — 58 benchmark：L1 通用（23）/ L2 开源安全（12，较基座 +11-12%）/ L3 内部业务（21，阿里 100+ 真实业务）；AI 生图检测较同尺寸开源 +13-17%
+
+**结果**：VL-32B 在 58 项安全评测平均领先同规模开源 9.9 分、超 GPT-5.4/Qwen3.5-Plus 商业模型 6.7 分；**VL-8B 超越 397B Qwen3.5-Plus 与 1.5T GPT-5.4**（"安全是设计出来的，不是参数堆出来的"）。
+
+**与 Nemotron 3.5 的互补**：Nemotron 侧重部署形态（可定制策略/推理轨迹/双渠道），Yuvion VL 侧重训练范式（C2FT 对比学习/对抗数据/评测体系）；两者共同构成多模态内容安全的"部署 + 训练"双视角。
 
 ## 上线状态
 

@@ -90,7 +90,7 @@ MCP 的真正地盘是**云端 Agent 标准化接入层**——这里需要统�
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw 的 Tool/MessageBus 设计可对比 MCP 架构
 
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1539-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/776-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

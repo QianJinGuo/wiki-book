@@ -104,7 +104,7 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch05/092-harness-engineering.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch05/017-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/636-claude-code-harness-deep-understanding.html)
 - [Agent Harness 架构](ch05/042-agent-harness.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
@@ -118,7 +118,7 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [Agent Skill 设计模式](../ch04/479-agent-skills.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](ch05/096-thin-harness-fat-skills-ai.html)
-- [Design Patterns for AI Agents 2026](../ch04/147-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](../ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
 ---
 

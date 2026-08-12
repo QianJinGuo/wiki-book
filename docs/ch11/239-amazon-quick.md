@@ -62,7 +62,7 @@ Amazon Quick 的自然语言查询功能（NL2SQL）是一个亮点，但也有�
 
 ### 数据工作平民化的趋势
 
-Amazon Quick 代表了数据分析领域的"低代码"趋势。类似于 [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](ch11/312-bedrock.html) 中基础设施配置的简化，数据查询也在从"专业技能"向"通用能力"演变。^[inferred]
+Amazon Quick 代表了数据分析领域的"低代码"趋势。类似于 [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](ch11/313-bedrock.html) 中基础设施配置的简化，数据查询也在从"专业技能"向"通用能力"演变。^[inferred]
 
 这一趋势的核心驱动力：
 - **AI 辅助**：NL2SQL 让非技术人员也能查询数据
@@ -101,10 +101,10 @@ Amazon Quick 的按查询量付费模型对不同使用模式有不同的经济�
 
 ## 相关实体
 
-- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](ch11/312-bedrock.html)
+- [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](ch11/313-bedrock.html)
 - [Hermes Agent Skills Source Code Analysis Shuge](../ch04/520-hermes-agent-skills.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
-- [Accelerate Llm Model Loading And Increase Context Windows Wi](../ch01/1380-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [Accelerate Llm Model Loading And Increase Context Windows Wi](../ch01/1381-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/104-ai.html)
 - 相关领域: aws, data-pipeline, serverless, analytics
 

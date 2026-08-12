@@ -99,7 +99,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - [Agent Skill 编写指南](ch04/597-agent-skill.html) — Skill 的渐进式上下文注入机制
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/493-ai-agent.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/636-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [OpenCLAW 完全指南](../ch11/253-openclaw.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)

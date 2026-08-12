@@ -39,7 +39,7 @@ LLM 公司的战略规划者需要正视文章中隐含的挑战：如果强化�
 ## 关联阅读
 ## 相关实体
 - [From Doer To Director The Ai Mindset Shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)
-- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/090-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](ch01/994-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/048-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Microsoft For Startups Microsoft](ch01/722-microsoft-for-startups-microsoft.html)
 

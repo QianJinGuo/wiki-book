@@ -54,15 +54,15 @@ Agent Protocol → MCP Tool Calling → A2A Collaboration → Harness Skill
 - [你不知道的 Agent 原理架构与工程实践](ch04/433-agent-principle-architecture-engineering-practice.html)
 - [柚漫剧 AI 全流程提效拆解](../ch05/104-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/273-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Design Patterns for AI Agents 2026](ch04/147-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/017-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.html)
 - [claude-code-7-layer-memory-architecture](../ch03/084-claude-code.html)
 - [AI Agent 工程师能力地图](ch04/493-ai-agent.html)
-- [huashu-design 2.0 — agent skill 反收敛三套逻辑](../ch01/1435-0.html)
+- [huashu-design 2.0 — agent skill 反收敛三套逻辑](../ch01/266-0.html)
 - [introducing the mdn mcp server](../ch07/001-mcp.html)
-- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/679-agentic-ai.html)
+- [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/117-agentic-ai.html)
 
 ---
 

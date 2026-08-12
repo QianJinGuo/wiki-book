@@ -51,9 +51,9 @@ Anthropic 是 MCP（Model Context Protocol）的创造者，其思路是先用�
 
 ## 相关实体
 
-- [Anthropic 12 个 MCP 生产模式](../ch01/1539-anthropic.html) — Anthropic 官方 MCP 设计模式，与收购后自营 MCP server 工具链直接相关
+- [Anthropic 12 个 MCP 生产模式](../ch01/776-anthropic.html) — Anthropic 官方 MCP 设计模式，与收购后自营 MCP server 工具链直接相关
 - [Anthropic 14 个 Skill 最佳实践](../ch01/454-anthropic-14-skill.html) — Anthropic 开发者体验体系中的另一支柱
-- [Anthropic Agent 平台演进](ch04/676-anthropic-agent-platform.html) — Claude Platform 与代理连接战略的宏观背景
+- [Anthropic Agent 平台演进](ch04/678-anthropic-agent-platform.html) — Claude Platform 与代理连接战略的宏观背景
 - [CLI Agent 与 MCP Shell 模式](../ch03/037-agent.html) — SDK/CLI 工具链在代理场景中的落地形态
 - [OpenAI 收购 AI 咨询公司](../ch01/276-openai.html) — 竞对收购策略对照，两种生态路线之争
 - [MCP（Model Context Protocol）](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — 本收购所服务的关键协议

@@ -157,7 +157,7 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 
 ## 相关实体
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/092-harness-engineering.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/636-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/192-karpathy-vibe-coding-agentic-engineering.html)

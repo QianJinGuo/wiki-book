@@ -555,7 +555,7 @@ Rules因为持续占用Context，必须精简——只保留「任何时候都�
 > AI Coding 不是让你少思考，而是让你 **思考更值钱的部分**。越早建立正确的协作方式，越早把生产力的杠杆握在自己手里。
 
 ## 相关实体
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/725-agentic.html)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch04/727-agentic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 
 ---

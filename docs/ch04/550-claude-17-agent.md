@@ -97,7 +97,7 @@ Chrome、Cowork、Connectors、Claude Code 一旦接到真实网页、本地文�
 - [Claude Code Agent Engineering](../ch03/074-claude-code-agent.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/084-claude-code.html)
 - [Claude Code Agent View Huashu](../ch09/003-claude-code-agent-view.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/480-anthropic-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/796-anthropic-claude-code.html)
 
 ## 深度分析
 

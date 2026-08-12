@@ -146,7 +146,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 
 ## 相关实体
 - [Agent Memory 架构本质](ch04/506-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [memory agent systems cobanov](ch04/686-memory-agent-systems-cobanov.html)
+- [memory agent systems cobanov](ch04/688-memory-agent-systems-cobanov.html)
 
 - [AI Agent 记忆系统架构](ch04/214-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch03/098-hermes-agent.html)
@@ -162,7 +162,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/096-thin-harness-fat-skills-ai.html)
 - [Hermes Agent 记忆系统深度拆解](../ch03/098-hermes-agent.html)
-- [Design Patterns for AI Agents 2026](ch04/147-design-patterns-for-ai-agents-2026-4-5-reflection.html)
+- [Design Patterns for AI Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [harness-engineering-systematic-explainer](../ch05/092-harness-engineering.html)
 - [claude-code-7-layer-memory-architecture](../ch03/084-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)

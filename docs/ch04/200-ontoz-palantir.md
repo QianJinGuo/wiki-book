@@ -154,7 +154,7 @@
 
 ## 深度分析
 
-- **本体竞争取代工具竞争**：OntoZ 的核心命题是「2B AI 从工具辅助进入本体竞争新阶段」——企业间竞争的不再是谁买了更多 SaaS，而是谁的数字分身（企业本体）更懂业务、更能自迭代。这一判断与 [Rag Vector Knowledge Graph Ontology](../ch01/1268-rag.html) 中知识图谱本体是数据驱动成交基础设施的观点高度一致。 
+- **本体竞争取代工具竞争**：OntoZ 的核心命题是「2B AI 从工具辅助进入本体竞争新阶段」——企业间竞争的不再是谁买了更多 SaaS，而是谁的数字分身（企业本体）更懂业务、更能自迭代。这一判断与 [Rag Vector Knowledge Graph Ontology](../ch01/1269-rag.html) 中知识图谱本体是数据驱动成交基础设施的观点高度一致。 
 
 - **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](ch04/656-anthropic-multi-agent-research-system.html) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
 
@@ -181,11 +181,11 @@
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/038-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/734-codex.html)
+- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/735-codex.html)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/084-claude-code.html)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05/092-harness-engineering.html)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/037-agent.html)
-- 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/1268-rag.html)
+- 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/1269-rag.html)
 - 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/656-anthropic-multi-agent-research-system.html)
 - Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/1119-20.html)
 - 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html)

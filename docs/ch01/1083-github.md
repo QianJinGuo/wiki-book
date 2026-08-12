@@ -33,7 +33,7 @@
 - [Agi 之路 可能从一开始就走错了](ch01/407-agi.html)
 - [Joyai Echo Long Video Framework Jd](../ch05/104-ai.html)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04/772-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04/774-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 
 ---
 

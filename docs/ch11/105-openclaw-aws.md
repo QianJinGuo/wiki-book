@@ -57,7 +57,7 @@ AgentCore Runtime 的核心价值在于为每个任务提供独立隔离执行�
 
 ## 相关实体
 - [Amazon CloudFront部署小指南（二十四）：将CloudFront “多域名”改造为”多租户”架构 | 亚马逊AWS官方博客](../ch05/104-ai.html)
-- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch01/1268-rag.html)
+- [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch01/1269-rag.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/455-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04/455-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/253-openclaw.html)

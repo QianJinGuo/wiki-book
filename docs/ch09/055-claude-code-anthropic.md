@@ -69,7 +69,7 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 ## 相关实体
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/493-ai-agent.html)
 - [claude-code-agent-view](ch09/003-claude-code-agent-view.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/636-claude-code-harness-deep-understanding.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/566-anthropic-ai.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/037-agent.html)

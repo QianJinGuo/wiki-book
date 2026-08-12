@@ -33,7 +33,7 @@ UP-ReAct 最核心的变革在于控制权模型的重构。从分布式决策�
 
 1. **监控可追溯性**：当 Agent 行为异常时，只需 Dump 单一 Policy 的状态日志即可定位问题，不再需要在多个节点间交叉排查
 2. **行为确定性提升**：Policy 节点的单一决策路径意味着系统的动作空间（Action Space）完全可枚举、可校验、可测试
-3. **二次开发简化**：新功能的接入不需要修改核心 DAG 代码，只需注册新的 Tool——这与 [Codex 五层架构](../ch01/734-codex.html) 中的"技能注册"模式异曲同工
+3. **二次开发简化**：新功能的接入不需要修改核心 DAG 代码，只需注册新的 Tool——这与 [Codex 五层架构](../ch01/735-codex.html) 中的"技能注册"模式异曲同工
 4. **推理效率优化**：时间复杂度从 O(3 × Model_inference + Tool_exec + IO) 降为 O(Model_inference + Tool_exec + IO)，彻底消除了节点间流转的开销
 
 ### Context Manager：Agent 内存管理的工程哲学
@@ -74,7 +74,7 @@ UP-ReAct 最核心的变革在于控制权模型的重构。从分布式决策�
 ## 相关实体
 
 - [腾讯 Harness Engineering 探索之旅](../ch05/092-harness-engineering.html)
-- [Codex 五层架构](../ch01/734-codex.html)
+- [Codex 五层架构](../ch01/735-codex.html)
 - [SageMaker 多轮 RL 实践](../ch05/104-ai.html)
 - [LangGraph Agent 操作系统](ch04/267-langgraph.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

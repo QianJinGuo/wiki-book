@@ -30,11 +30,11 @@ BigQuery 威胁模型覆盖了完整的 STRIDE 分类（Spoofing、Tampering、R
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/479-agent-skills.html)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/479-agent-skills.html)
 - [Cloudsectidbits Masso Cognito Sso.Html](../ch11/114-cloudsectidbits.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1319-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](ch01/1320-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
 - [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11/020-aws-bedrock.html)
 
 - [A History Of Ides At Google](../ch03/041-a-history-of-ides-at-google.html)
-- [gemini app rolling out](ch01/932-9.html)
+- [gemini app rolling out](ch01/933-9.html)
 
 ---
 

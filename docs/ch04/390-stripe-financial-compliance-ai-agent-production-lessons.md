@@ -78,7 +78,7 @@ Amazon Bedrock 的 prompt caching 通过复用跨 Agent 轮次的公共 prompt �
 
 本文聚焦**金融合规这一高风险场景**的 Agent 生产实践，与通用 Agent 架构文章形成互补：
 - [Agent Harness Architecture Deep Dive Aksahy](../ch05/042-agent-harness.html) — Agent Harness 通用架构深度分析
-- [17 Agent Architectures Evolution](ch04/774-17-agent.html) — 17 种 Agent 架构演化全景
+- [17 Agent Architectures Evolution](ch04/776-17-agent.html) — 17 种 Agent 架构演化全景
 
 本文独特贡献：
 1. **ReAct 闭环控制**的生产实现细节（Thought→Tool→Observation 注入模式）

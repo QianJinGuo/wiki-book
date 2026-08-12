@@ -19,7 +19,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - **核心痛点**：Claude Code 配置在 5+ 个位置之间分散，跨仓库无法统一搜索；Obsidian 直接打开代码仓库时被非 Markdown 文件淹没
 - **策略 1（独立 Vault + 符号链接）**：建一个 `~/Developer-Vault`，用 `ln -s` 把关心的内容拉进来，配合 `userIgnoreFilters` 过滤代码噪音
 - **策略 2（Vault = Claude Code 工作目录）**：把 Obsidian Vault 当作 Claude Code 的工作目录，根目录 `CLAUDE.md` 既是 Claude 指令也是 Obsidian 笔记
-- **策略 3（MCP 桥接）**：代码仓库和 Obsidian 完全分离，通过 [obsidian-claude-code-mcp](../ch09/152-obsidian-claude-code-integration-guide.html) 这类插件让 Claude 按需访问 Obsidian
+- **策略 3（MCP 桥接）**：代码仓库和 Obsidian 完全分离，通过 [obsidian-claude-code-mcp](../ch09/153-obsidian-claude-code-integration-guide.html) 这类插件让 Claude 按需访问 Obsidian
 - **策略 4（每仓库一个 Vault）**：每个代码仓库独立 Vault，配置最简，但牺牲跨项目搜索
 - **策略 5（QMD + 会话同步）**：Shopify CEO Tobi Lutke 的 QMD 做语义检索 + `sync-claude-sessions` 导出对话 + `/recall` 技能拉回上下文，让每次会话沉淀为可搜索笔记
 - **Obsidian 1.12 CLI 突破**：在 4000+ 文件、16GB 仓库上找孤立笔记从十几秒降到不到 1 秒（约 50× 提升），让 AI 不必再 grep
@@ -100,10 +100,10 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 
 ## 相关实体
 
-- [Obsidian Claude Code Integration Guide](../ch09/152-obsidian-claude-code-integration-guide.html) — 早期版本的集成指南
-- [Obsidian Claude Code Integration](../ch09/152-obsidian-claude-code-integration-guide.html) — 集成实践综述
-- [Obsidian](../ch01/1000-claude-code-memory-setup-obsidian-graphify.html) — Obsidian 实体页
-- [Obsidian Llm Wiki Local Kytmanov](../ch01/863-llm.html) — 本地 LLM Wiki 实践
+- [Obsidian Claude Code Integration Guide](../ch09/153-obsidian-claude-code-integration-guide.html) — 早期版本的集成指南
+- [Obsidian Claude Code Integration](../ch09/153-obsidian-claude-code-integration-guide.html) — 集成实践综述
+- [Obsidian](../ch01/1001-claude-code-memory-setup-obsidian-graphify.html) — Obsidian 实体页
+- [Obsidian Llm Wiki Local Kytmanov](../ch01/1484-llm.html) — 本地 LLM Wiki 实践
 - [Claude Code 7 Layer Memory Architecture](ch03/084-claude-code.html) — Claude Code 的 7 层记忆架构
 - [Agent Memory Architecture](../ch04/506-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架

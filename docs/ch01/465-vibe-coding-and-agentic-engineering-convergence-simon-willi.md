@@ -30,7 +30,7 @@ Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准�
 
 ### 1. Vibe Coding → Agentic Engineering 的真正融合点是「半黑盒信任」
 
-访谈里 Simon 给了一个非常工程师的比喻来描述自己的心路变化：在大厂当 Engineering Manager 时，他信任其他团队交付的模块，除非出 Bug 或性能拉胯否则不会翻源码。「开始把 Agent 当作一个半黑盒的合作伙伴」——这就是融合点。 这个比喻关键在于：信任不是「完全不看」也不是「逐行 review」，而是建立在团队/工具/Agent 的历史可靠性记录上的有条件信任。这与 [Karpathy 同一时期访谈](../ch04/725-agentic.html) 里讲的 Agentic Engineering 是同一条线的不同入口——Vibe Coding 是「不看」的极端，Agentic Engineering 是「逐行看」的极端，Simon 提出的是更可操作的中间路径。
+访谈里 Simon 给了一个非常工程师的比喻来描述自己的心路变化：在大厂当 Engineering Manager 时，他信任其他团队交付的模块，除非出 Bug 或性能拉胯否则不会翻源码。「开始把 Agent 当作一个半黑盒的合作伙伴」——这就是融合点。 这个比喻关键在于：信任不是「完全不看」也不是「逐行 review」，而是建立在团队/工具/Agent 的历史可靠性记录上的有条件信任。这与 [Karpathy 同一时期访谈](../ch04/727-agentic.html) 里讲的 Agentic Engineering 是同一条线的不同入口——Vibe Coding 是「不看」的极端，Agentic Engineering 是「逐行看」的极端，Simon 提出的是更可操作的中间路径。
 
 ### 2. 偏差正常化（Anomaly Normalization）是 AI 编程最危险的心理陷阱
 
@@ -42,7 +42,7 @@ Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准�
 
 ### 4. 真正的产品壁垒是「数据层和接口」而不是代码
 
-访谈里 Simon 给了一个反直觉但很有说服力的产品设计建议：如果要从头做 Issue Tracker（仿 GitHub Issues 或 Linear），会把全部精力放在极佳的核心数据库 Schema 和稳健 API 上，UI 完全用 Vibe Code 搓。 背后的逻辑是 Agent 带来的非确定性让减少非确定性、提供稳定边界的东西更珍贵——而数据模型做对了，用户就拥有无限的自定义灵活性。这条线连到 [Karpathy 访谈](../ch04/725-agentic.html) 里 MenuGen 的「被模型吞掉的中间层」警告——纯包装模型能力的产品壁垒是脆弱的，但「数据层 + 接口 + 业务状态」的壁垒在 Agentic 时代反而是升值的。给产品架构师的具体启示是：当评估一个新产品 idea 时，问的不是「这个功能 LLM 能不能做」，而是「这个产品有没有掌握数据、接口、状态、权限、审计、复杂协同」。
+访谈里 Simon 给了一个反直觉但很有说服力的产品设计建议：如果要从头做 Issue Tracker（仿 GitHub Issues 或 Linear），会把全部精力放在极佳的核心数据库 Schema 和稳健 API 上，UI 完全用 Vibe Code 搓。 背后的逻辑是 Agent 带来的非确定性让减少非确定性、提供稳定边界的东西更珍贵——而数据模型做对了，用户就拥有无限的自定义灵活性。这条线连到 [Karpathy 访谈](../ch04/727-agentic.html) 里 MenuGen 的「被模型吞掉的中间层」警告——纯包装模型能力的产品壁垒是脆弱的，但「数据层 + 接口 + 业务状态」的壁垒在 Agentic 时代反而是升值的。给产品架构师的具体启示是：当评估一个新产品 idea 时，问的不是「这个功能 LLM 能不能做」，而是「这个产品有没有掌握数据、接口、状态、权限、审计、复杂协同」。
 
 ### 5. 并行 Agent 做 Spike 是工作流的范式转移
 
@@ -68,9 +68,9 @@ Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/725-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/727-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Code Harness Deep Understanding](ch01/635-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](ch01/636-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/086-claude-code-harness.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
