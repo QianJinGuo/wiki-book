@@ -130,21 +130,21 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 → [winty·Hermes Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
 
 ## 相关实体
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/597-agent-skill.html)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch05/104-ai.html)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/501-aws-sagemaker-ai-agent.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/600-agent-skill.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch06/045-memory.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/503-aws-sagemaker-ai-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/345-skill.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
-- [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/1119-20.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/345-skill.html)
-- [SkillX — 层次化技能知识库](../ch07/059-skillx.html)
+- [SkillX — 层次化技能知识库](../ch07/060-skillx.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/253-openclaw.html)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/311-anthropic-agent.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/180-agent-memory.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/479-agent-skills.html)
-- [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/481-agent-skills.html)
+- [上下文工程 - 三种Memory方案对比](../ch06/045-memory.html)
 
 - [你写的 Skill，及格了吗？](ch04/345-skill.html)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/905-llm-wiki-obsidian-wiki-gbrain.html)
@@ -153,12 +153,12 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [hermes-agent-self-evolving-source-analysis](../ch03/098-hermes-agent.html)
-- [Claude Code Prompt 提示词体系源码解析](../ch09/070-claude-code-prompt.html)
+- [Claude Code Prompt 提示词体系源码解析](../ch09/071-claude-code-prompt.html)
 - [Agent 原理、架构与工程实践](../ch03/037-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 
-- [AI Agent 工程师能力地图](ch04/493-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/209-ai-agent.html)
 
 ---
 

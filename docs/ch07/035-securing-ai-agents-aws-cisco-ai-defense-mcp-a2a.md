@@ -73,7 +73,7 @@ AWS/Cisco 把企业 AI 部署的核心痛点归纳为三个盲区，每个盲区
 3. **"扫描 + 人工复核"成为合规基线**：企业 AI 部署的合规要求从"事后审计"升级为"事前扫描 + 事中标记 + 事后追溯"
 4. **MCP/A2A 从"开发者协议"升级为"企业协议"**：随着安全护栏的成熟，MCP/A2A 不再只是 Anthropic / Google 的实验性协议，而是企业级基础设施
 
-### 与 [U Of T Ai Worm Cleverhans Research](../ch05/104-ai.html) 的连接
+### 与 [U Of T Ai Worm Cleverhans Research](../ch05/105-ai.html) 的连接
 
 U of T CleverHans 团队展示的 AI Worm 揭示的威胁场景，与本文描述的"自服务开通 + 安全护栏"形成直接对照：
 
@@ -92,7 +92,7 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 - **审计日志**：所有调用留痕，支持合规审计
 - **策略执行**：统一的工具白名单、调用频率限制
 
-这与 [Qy_Zacztcs1Ql3Bifmbmgg](../ch01/332-1.html) 中 Claude Code Subagent 的 `description` 路由机制形成有趣对照——Subagent 是"agent → 工具"的小尺度路由，MCP Gateway Registry 是"agent → 工具"的企业级路由。两者本质上是同一种抽象在不同尺度的实现。
+这与 [Qy_Zacztcs1Ql3Bifmbmgg](../ch01/358-1.html) 中 Claude Code Subagent 的 `description` 路由机制形成有趣对照——Subagent 是"agent → 工具"的小尺度路由，MCP Gateway Registry 是"agent → 工具"的企业级路由。两者本质上是同一种抽象在不同尺度的实现。
 
 ## 实践启示
 
@@ -106,18 +106,18 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 
 ## 相关实体
 
-- [U Of T Ai Worm Cleverhans Research](../ch05/104-ai.html)
-- [Qy_Zacztcs1Ql3Bifmbmgg](../ch01/332-1.html)
-- [Claude Code Harness Deep Understanding](../ch01/636-claude-code-harness-deep-understanding.html)
-- [Harness Engineering Core Patterns Claude Code](../ch05/092-harness-engineering.html)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/493-ai-agent.html)
+- [U Of T Ai Worm Cleverhans Research](../ch05/105-ai.html)
+- [Qy_Zacztcs1Ql3Bifmbmgg](../ch01/358-1.html)
+- [Claude Code Harness Deep Understanding](../ch01/635-claude-code-harness-deep-understanding.html)
+- [Harness Engineering Core Patterns Claude Code](../ch05/065-harness-engineering.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/209-ai-agent.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 - [Mcp Protocol Ecosystem](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 - [Llm Security Red Teaming](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-security-red-teaming.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
-- [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](../ch01/328-geek.html)
+- [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](../ch01/327-geek.html)
 
 ---
 

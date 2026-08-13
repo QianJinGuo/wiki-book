@@ -120,7 +120,7 @@ This mirrors the broader evolution in AI Code Review from pattern-matching to se
 - AI Code Review
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - GitLab Enterprise DevOps
-- [Tencent AI Coding Practices](../ch05/121-ai-coding.html)
+- [Tencent AI Coding Practices](../ch05/122-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/代码不出内网也能用上-ai-智能评审云效现已支持-gitlab.md)
 

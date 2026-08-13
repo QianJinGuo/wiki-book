@@ -12,8 +12,8 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [PyTorch 2.12 Release Blog – PyTorch](ch01/388-pytorch-2-12-release-blog.html)
-- [PyTorch 2.12 Release Blog – PyTorch](ch01/332-1.html)
+- [PyTorch 2.12 Release Blog – PyTorch](ch01/387-pytorch-2-12-release-blog.html)
+- [PyTorch 2.12 Release Blog – PyTorch](ch01/358-1.html)
 
 ## 深度分析
 PyTorch 2.12 标志着 PyTorch 从研究优先框架向统一硬件无关生产平台的转型进入关键阶段。

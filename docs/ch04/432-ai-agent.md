@@ -72,7 +72,7 @@ DataFunTalk 圆桌讨论实录，围绕本体建模、知识治理、企业 AI �
 
 ## 相关实体
 
-- [百信 OntoZ 企业本体实践](../ch05/104-ai.html)
+- [百信 OntoZ 企业本体实践](../ch05/105-ai.html)
 - [AI POC 到生产环境的鸿沟](../ch01/826-ai-poc.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [AI Native 企业转型](../ch05/022-ai-native.html)

@@ -76,7 +76,7 @@ Group-IB 和 Team Cymru 的参与表明私营部门威胁情报已成为执法�
 2. **定期检查设备入侵迹象**：卡塔尔案例中设备所有者对入侵不知情，个人应定期检查是否有异常进程、未授权连接或性能异常。
 ## 相关实体
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki/blob/main/entities/london-met-police-big-tech-data-requests.md)
-- [Nathan Lambert Claude Mythos Open Weights](../ch01/612-nathan-lambert.html)
+- [Nathan Lambert Claude Mythos Open Weights](../ch01/611-nathan-lambert.html)
 - [Shinyhunters 7 Eleven Data Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/shinyhunters-7-eleven-data-breach.md)
 - [Japan Pm Cybersecurity Review Anthropic Mythos](../ch01/776-anthropic.html)
 - [New Cybersecurity Coalition Us Policy](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)

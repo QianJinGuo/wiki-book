@@ -83,7 +83,7 @@ I don’t love that they used this as a reason to skip a bunch
 
 ## 相关实体
 - [Claude Opus 47](ch01/1219-claude.html)
-- [Claude 4 5 Sonnet Opus Release Notes](ch01/421-claude-4-5-sonnet-opus-release-notes.html)
+- [Claude 4 5 Sonnet Opus Release Notes](ch01/420-claude-4-5-sonnet-opus-release-notes.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/084-claude-code.html)
 - [Tokenomics The 625 Minute Rule For Claudes Cache](ch01/1219-claude.html)
 - [Anthropic Long Running Agent Adversarial Architecture](ch01/776-anthropic.html)

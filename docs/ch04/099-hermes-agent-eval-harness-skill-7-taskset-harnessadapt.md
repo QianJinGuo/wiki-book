@@ -255,16 +255,16 @@ regression_failures | rejection_reason | review_notes
 | [Skillopt](../ch05/047-skillopt.html) | **SkillOpt 学术理论** | Microsoft + SJTU SkillOpt 训练范式（121 行）：把 SKILL.md 当可训练状态、bounded edits、held-out validation gate；本文是其在 Hermes Agent 的工程实施蓝图 |
 | [Skillopt Microsoft Train Skill Like Neural Network](../ch05/047-skillopt.html) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
 | [Skillopt Microsoft Train Skill Hyman'S Blog](../ch05/047-skillopt.html) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
-| [Hermes Agent Skill Crossover Optimization](../ch01/521-hermes-agent-skill.html) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
+| [Hermes Agent Skill Crossover Optimization](../ch01/520-hermes-agent-skill.html) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
 | [Skill Self Evolution Three Approaches](ch04/345-skill.html) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
 | [Agent Self Improvement Six Mechanisms](../ch03/037-agent.html) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
-| [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/104-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
+| [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/105-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
 | [Darwin Skill 2 Huashu](ch04/345-skill.html) | **Darwin Skill 2** | Darwin Skill 进化 |
 | [Embabel](../ch07/024-embabel.html) | **Embabel** | Embabel 自进化框架 |
 | [Pith Train Agent Native Moe Training Framework](../ch03/037-agent.html) | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](../ch03/098-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
-| [Hermes 9 Module Architecture](../ch01/292-hermes.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
-| [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/092-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
+| [Hermes 9 Module Architecture](../ch01/291-hermes.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
+| [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/065-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
 | [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/310-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
 | [Deli Auto Research Skill V2 Continual Learning Self Improvement](ch04/345-skill.html) | **Deli Auto Research** | Continual learning + self-improvement |
 | [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/084-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |

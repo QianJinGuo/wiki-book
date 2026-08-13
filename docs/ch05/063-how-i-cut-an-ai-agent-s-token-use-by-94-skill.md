@@ -62,7 +62,7 @@ Vivek 指出了一个重要但容易被忽视的方面：大模型厂商的商�
 
 当然，每个 token 更便宜、更好的推理缓存和更高效的模型确实使产品更有用。但帮助客户发现「大多数工作流根本不需要 token 本身」——这与卖更多 token 的激励机制不一致。因此，这种优化的发现和实施主要来自用户和独立开发者。
 
-这个观察与 [Agent Harness Engineering Survey](ch05/092-harness-engineering.html) 中关于「Harness 的演进——从自然语言到确定性结构」的趋势完全一致——效率优化的动力来自用户端而非厂商端。
+这个观察与 [Agent Harness Engineering Survey](ch05/065-harness-engineering.html) 中关于「Harness 的演进——从自然语言到确定性结构」的趋势完全一致——效率优化的动力来自用户端而非厂商端。
 
 ### 与 Natlang Code 和 Context Engineering 的关系
 
@@ -84,7 +84,7 @@ Vivek 开发了一种他称为「natlang code」（自然语言代码）的理�
 
 ## 相关实体
 
-- [Agent Harness Engineering Survey](ch05/092-harness-engineering.html)
+- [Agent Harness Engineering Survey](ch05/065-harness-engineering.html)
 - [Skill 编排的6种依赖关系](../ch04/345-skill.html)
 - [CLI Agent模式——MCP与Shell Agent](../ch03/037-agent.html)
 - [Skill Hub MVP评估与发布](../ch04/345-skill.html)

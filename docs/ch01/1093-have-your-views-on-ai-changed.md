@@ -52,7 +52,7 @@ Matthew Gallagher 的观察触及核心："When I speak with folks about AI, man
 ## 相关实体
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/233-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/233-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [The best argument I've heard for why AI won't take your job](../ch05/104-ai.html)
+- [The best argument I've heard for why AI won't take your job](../ch05/105-ai.html)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **29 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 
 ---
@@ -1421,7 +1421,61 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.023 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+## Ch18.023 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
+
+> 📊 Level ⭐⭐⭐ | 2.7KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代.md`
+
+# 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
+
+> WeChat-小米技术 | 发布于 2026-07-15 | 评分入库 v×c≥49
+
+## 核心内容
+
+原创 小米机器人事业部 2026-07-15 14:42 北京 今天，小米正式发布 Xiaomi-Robotics-U0 ——一个拥有 380 亿参数的多模态自回归具身生成基础模型，是具身领域首个“通吃”四类任务的统一生成模型， 打通了机器人图片和视频数据的生成与编辑链路。 它既能在保持几何一致性的前提下，对已有数据做增强——换物体、换光照、换背景、加干扰，无需重新采集；也能从零生成全新场景，覆盖危险、极端、长尾等真机难以触达的环境。此外，通过 FlashAR+ 推理加速方案，它的生成效率较原始自回归范式提升近 83 倍，大幅加快工程落地速度。规模化生成具身训练数据用于增益模型效果，从此有了可控且高效的解决方案。 在 WorldArena 评测基准上，Xiaomi-Robotics-U0 取得总分第一名 （全球 126 个模型参评）。此外，真机评测中，在未知光照、陌生背景等 Out of Distribution 场景下，使用 Xiaomi-Robotics-U0 扩增数据训练的策略任务完成进度平均提升超 26% 。 相关代码与模型权重已全量开源：<https://robotics.xiaomi.com/xiaomi-robotics-u0.html 01 一个通用模型，覆盖四类生成任务 过去，具身生成往往是“一个任务一个模型”：场景生成用一个模型，轨迹迁移用一个模型，视频生成又是另一个模型。模型之间相互割裂，导致具身生成很难规模化应用。 Xiaomi-Robotics-U0 选择了另一条路：用统一的多模态自回归框架，覆盖四类核心任务。 具身场景生成（Scene Generat。
+
+## 关键要点
+
+- 原文完整记录：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代.md)
+- 关联主题：[Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)、[Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)、[Embodied Intelligence Frontier](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
+
+## 相关实体
+
+[Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md) [Embodied Intelligence Frontier](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
+
+---
+
+## Ch18.024 Handroid：同一套硬件在人形机器人与灵巧手之间重构（UNC+Stanford）
+
+> 📊 Level ⭐⭐⭐ | 2.3KB | `entities/handroid-reconfigurable-robot-dexterous-hand-humanoid-unc-stanford-2026.md`
+
+# Handroid：同一套硬件在人形机器人与灵巧手之间重构
+
+## 核心创新
+
+Handroid 是北卡罗来纳大学教堂山分校与斯坦福大学提出的可重构桌面级机器人（高 0.33m、重 2.05kg、27 自由度），核心思路是**形态复用**：同一套机电系统在灵巧手形态（20 DOF 五指）与人形形态（25 DOF 头+双臂+双腿）之间切换，而非叠加独立灵巧手。
+
+## 关键技术
+
+- **机械设计**：手指模块 ↔ 头部/四肢 的关节映射；滑轨 + 齿轮齿条传动完成形态切换（无需拆卸）
+- **电磁法兰**：与 Franka Research 3 机械臂快速连接/分离，提供 ~180N 保持力
+- **遥操作**：Apple Vision Pro 手部关键点追踪 → 动作重定向 + 数据采集
+- **学习策略**：物体条件扩散策略（10 类物体 100 条示教，平均 72% 真实抓取成功率）；仿真 RL 立方体重定向策略部署到真机；人形形态下 ZMP 步态规划 + 参考轨迹 RL 跟踪
+
+## 意义
+
+证明机器人能力扩展可以不依赖增加新部件，而是通过**同一套硬件的形态重组**承担不同功能——把"移动能力"与"精细操作"装进同一副躯体，并支撑从示教、策略学习到真实部署的完整流程。
+
+## 与既有实体的关系
+
+与 [Xiaomi Robotics-1 具身基座模型](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md) 互补——后者关注数据规模与 Scaling 效应，本文关注单平台硬件复用与策略部署。同属 [具身智能 Sim-to-Real](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md) 家族的硬件侧实践。
+
+## 引用来源
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/handroid-reconfigurable-robot-dexterous-hand-humanoid-unc-stanford-2026.md)
+
+---
+
+## Ch18.025 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/icra26-symskill-robot-long-horizon-manipulation.md`
 
@@ -1494,7 +1548,7 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 ---
 
-## Ch18.024 具身原生世界动作模型（Embodied World Action Model）
+## Ch18.026 具身原生世界动作模型（Embodied World Action Model）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/全球首个具身原生世界动作模型来了.md`
 
@@ -1557,7 +1611,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ---
 
-## Ch18.025 景烁科技 — 具身智能数据基础设施
+## Ch18.027 景烁科技 — 具身智能数据基础设施
 
 > 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
@@ -1627,7 +1681,7 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 
 ---
 
-## Ch18.026 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+## Ch18.028 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 
@@ -1699,7 +1753,7 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.027 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+## Ch18.029 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md`
 

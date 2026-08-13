@@ -10,7 +10,7 @@
 
 ### Working Memory（工作记忆）
 
-Working Memory 对应 LLM 的[上下文窗口](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)，是最短期的记忆形式。当上下文满时，新信息通过 FIFO（先进先出）策略覆盖旧信息——即 **FIFO dropping**。这种机制的局限性在于：信息寿命极短，仅在当前对话轮次内有效，且上下文窗口大小直接决定可用的记忆带宽。实际的工程实现中，Working Memory 的容量通常以 token 数量计量（GPT-4o 支持 128K tokens，Claude 3.5 支持 200K tokens），超出部分要么被截断，要么需要依赖外部存储。
+Working Memory 对应 LLM 的[上下文窗口](../ch06/009-context-window-management-comparison.html)，是最短期的记忆形式。当上下文满时，新信息通过 FIFO（先进先出）策略覆盖旧信息——即 **FIFO dropping**。这种机制的局限性在于：信息寿命极短，仅在当前对话轮次内有效，且上下文窗口大小直接决定可用的记忆带宽。实际的工程实现中，Working Memory 的容量通常以 token 数量计量（GPT-4o 支持 128K tokens，Claude 3.5 支持 200K tokens），超出部分要么被截断，要么需要依赖外部存储。
 
 ### Long-term Memory（长期记忆）
 

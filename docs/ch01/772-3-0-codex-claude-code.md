@@ -32,7 +32,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 ### 六 Agent 接力流水线：项目即共享上下文
 
-"AI4S 研究"项目的演示说明多 Agent 协作的关键不在于模型数量，而在于共享的项目级上下文。6 个 Agent（模板 Agent、挂自动化写作技能的阿链、本地 codex）在同一项目内被 @ 点名接力：研究包、写作风格规范、历史文章、选题方案、初稿与自审结论全部沉淀在项目上下文里，一次没切窗口。对照 [多模型协作交接](ch01/1219-claude.html) 那类"人肉搬运上下文"的模式，coze-bridge 把交接损耗从"人当 API"降为"项目即共享记忆"，与 [Harness 工程](../ch05/092-harness-engineering.html) 的工作现场沉淀方向一致。另一个细节是 codex 做 PPT 时内置 image-gen 调用 gpt-image-2 批量生成配图且不消耗用户 API 额度——本地 Agent 的既有工具能力被云侧任务直接复用，是桥接机制的隐性收益。
+"AI4S 研究"项目的演示说明多 Agent 协作的关键不在于模型数量，而在于共享的项目级上下文。6 个 Agent（模板 Agent、挂自动化写作技能的阿链、本地 codex）在同一项目内被 @ 点名接力：研究包、写作风格规范、历史文章、选题方案、初稿与自审结论全部沉淀在项目上下文里，一次没切窗口。对照 [多模型协作交接](ch01/1219-claude.html) 那类"人肉搬运上下文"的模式，coze-bridge 把交接损耗从"人当 API"降为"项目即共享记忆"，与 [Harness 工程](../ch05/065-harness-engineering.html) 的工作现场沉淀方向一致。另一个细节是 codex 做 PPT 时内置 image-gen 调用 gpt-image-2 批量生成配图且不消耗用户 API 额度——本地 Agent 的既有工具能力被云侧任务直接复用，是桥接机制的隐性收益。
 
 ### 远程操控：Agent 走出浏览器与办公桌
 
@@ -56,12 +56,12 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 - [本地编码 Agent 的使用实践](../ch09/174-using-local-coding-agents.html)
 - [Claude 做方案，Codex 写代码：多模型协作交接](ch01/1219-claude.html)
 - [AI 军团式多智能体协作循环](../ch05/006-loop-engineering.html)
-- [Strands 多智能体框架](../ch04/769-strands-agents.html)
+- [Strands 多智能体框架](../ch04/779-strands-agents.html)
 - [OpenClaw 多智能体团队搭建](../ch11/253-openclaw.html)
 - [Claude Code 源码核心机制](../ch03/084-claude-code.html)
-- [Harness 工程](../ch05/092-harness-engineering.html)
+- [Harness 工程](../ch05/065-harness-engineering.html)
 - [Claude Code 大型代码库团队部署](../ch05/042-agent-harness.html)
-- [Karpathy × Boris：Software 3.0 编程地图](ch01/1484-llm.html)
+- [Karpathy × Boris：Software 3.0 编程地图](ch01/1135-llm.html)
 - [MOC：工作流编排](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

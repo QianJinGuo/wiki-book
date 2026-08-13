@@ -62,7 +62,7 @@ VIF 设置上强调两点：新 VIF 必须与主连接同类型（Private VIF / 
 - [Direct Connect (DX) 迁移最佳实践（英文实体）](../ch11/038-direct-connect-dx.html)
 - [AWS Network Firewall VGW BGP 流量检查](ch01/1199-spec.html)
 - [Amazon VPC NAT Gateway 对比](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md)
-- [AWS Glue 大规模迁移方法论](ch01/433-aws.html)
+- [AWS Glue 大规模迁移方法论](ch01/432-aws.html)
 - [MOC: Amazon AWS AI](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
 - [MOC: 数据基础设施](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 

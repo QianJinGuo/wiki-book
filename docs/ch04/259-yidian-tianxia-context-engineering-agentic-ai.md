@@ -68,7 +68,7 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 3. Token 如何**花在刀刃上**（L0/L1/L2 三级分层 + PreCompact 压缩续接）
 
 ## 相关概念
-- [Factory Mission](../ch01/1441-factory-mission-multi-agent-architecture.html) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
+- [Factory Mission](../ch01/1455-factory-mission-multi-agent-architecture.html) — 同为 Agent Loop 架构，但 Mission 侧重多 Agent 编排，易点天下侧重企业级单 Agent 深度工程
 ---
 *Last updated: 2026-05-08*
 
@@ -77,8 +77,8 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 ## 相关实体
 - [Agentic AI for Subsurface Engineering Simulation (NVIDIA)](ch04/443-nvidia-agentic-ai-subsurface-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/273-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/727-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/727-agentic.html)
+- [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/294-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/294-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 
 ## 深度分析

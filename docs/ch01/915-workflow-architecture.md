@@ -42,10 +42,10 @@ For full visibility into LLMs across the two monitoring dimensions of quantity a
 Custom quality metrics c
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch01/433-aws.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch01/432-aws.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/239-amazon-quick.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/309-amazon-bedrock.html)
-- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/645-amazon-bedrock-agentcore.html)
+- [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/648-amazon-bedrock-agentcore.html)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/309-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)

@@ -62,7 +62,7 @@ program.md 的权限边界设计 体现了"防止 Agent 改写自己的规则"�
 ## 相关实体
 
 - [OpenClaw 多 Agent 协同开发](../ch11/253-openclaw.html)
-- [Karpathy Agentic Engineering](../ch04/727-agentic.html)
+- [Karpathy Agentic Engineering](../ch04/294-agentic.html)
 - [Karpathy Vibe Coding](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 - [OpenClaw 多智能体团队搭建](../ch11/253-openclaw.html)

@@ -250,11 +250,11 @@ Day 5: 攻击者早已不在现场，但 Agent 执行了预期外的操作].md]
 - prompt-injection-security（实体不存在，待创建） — Prompt Injection 安全问题
 
 ## 相关实体
-- [Hermes Observability Aliyun](../ch01/292-hermes.html)
-- [Hermes Agent Memory System Vs Openclaw](../ch03/098-hermes-agent.html)
-- [Hermes Agent Vs Openclaw Comparison](../ch03/098-hermes-agent.html)
+- [Hermes Observability Aliyun](../ch01/291-hermes.html)
+- [Hermes Agent Memory System Vs Openclaw](../ch06/013-hermes-agent-memory.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch06/022-hermes-agent-vs-openclaw.html)
 - [Hermes Agent Self Evolving Source Analysis](../ch03/098-hermes-agent.html)
-- [Small Hermes Self Evolving Agent Architecture](ch04/772-self-evolving-agent.html)
+- [Small Hermes Self Evolving Agent Architecture](ch04/782-self-evolving-agent.html)
 
 ---
 

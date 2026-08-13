@@ -24,7 +24,7 @@
 
 ### 从 Prompt Engineering 到 Loop Engineering 的本质跃迁
 
-文章引用 Peter Steinberger 和 Claude Code 负责人 Boris Cherny 的观点：两人都不再「提示」AI 了，而是编写让 AI 自行工作的循环。这个转变的实质是**将「人机对话」重构为「人设计系统，系统与 AI 协作」**。在传统 Prompt Engineering 中，人的注意力被卡在每一轮交互的入口处；在 Loop Engineering 中，人退后一步成为流程设计者、约束制定者和审查者。这与 [阿里 Harness Engineering 实践](../ch05/092-harness-engineering.html)中的「AI 做执行，人做决策」理念完全一致。
+文章引用 Peter Steinberger 和 Claude Code 负责人 Boris Cherny 的观点：两人都不再「提示」AI 了，而是编写让 AI 自行工作的循环。这个转变的实质是**将「人机对话」重构为「人设计系统，系统与 AI 协作」**。在传统 Prompt Engineering 中，人的注意力被卡在每一轮交互的入口处；在 Loop Engineering 中，人退后一步成为流程设计者、约束制定者和审查者。这与 [阿里 Harness Engineering 实践](../ch05/065-harness-engineering.html)中的「AI 做执行，人做决策」理念完全一致。
 
 ### Six Core Components 的工程学意义
 
@@ -32,7 +32,7 @@ Loop 的六大构件并非并列关系，而是有层次的：**Automations** �
 
 ### Worktrees：一个被低估的关键组件
 
-Worktree 可能是 Loop 中最不起眼却最重要的工程决策。当多个 Agent 同时修改同一个仓库，最容易出问题的地方不是模型能力，而是文件冲突。Git worktree 给每个 Agent 一个独立 checkout，共享仓库历史但在不同目录工作，从根本上避免了「两个 Agent 改同一个文件」的问题。这与 [Beautiful Article Skill](../ch05/017-harness.html) 中的「一节一文件」和多 Agent 并行安全设计思路一致——都是通过**空间隔离**来解决协作冲突，而非依赖 Agent 的自我约束。
+Worktree 可能是 Loop 中最不起眼却最重要的工程决策。当多个 Agent 同时修改同一个仓库，最容易出问题的地方不是模型能力，而是文件冲突。Git worktree 给每个 Agent 一个独立 checkout，共享仓库历史但在不同目录工作，从根本上避免了「两个 Agent 改同一个文件」的问题。这与 [Beautiful Article Skill](../ch05/077-harness.html) 中的「一节一文件」和多 Agent 并行安全设计思路一致——都是通过**空间隔离**来解决协作冲突，而非依赖 Agent 的自我约束。
 
 ### Sub-agents 的 maker/checker 分离
 
@@ -52,8 +52,8 @@ Loop Engineering 并没有让工程师消失——它只是把工程师的工作
 
 ## 相关实体
 
-- [Harness 实践将任何文字编辑成精美的文章](../ch05/017-harness.html) — Beautiful Article Skill 的 8 Phase Harness 与 Loop 架构相互印证
-- [Alibaba Data Rd Harness Engineering Nl2Sql](../ch05/092-harness-engineering.html) — 阿里 NL2SQL 多 Agent 工作流中的 Gate 审批与 Loop 的停止条件设计一致
+- [Harness 实践将任何文字编辑成精美的文章](../ch05/077-harness.html) — Beautiful Article Skill 的 8 Phase Harness 与 Loop 架构相互印证
+- [Alibaba Data Rd Harness Engineering Nl2Sql](../ch05/065-harness-engineering.html) — 阿里 NL2SQL 多 Agent 工作流中的 Gate 审批与 Loop 的停止条件设计一致
 - [Aliyun Loop Engineering Log Scan Auto Fix Deploy](../ch05/006-loop-engineering.html) — 阿里云 Loop Engineering 的日志扫描自修复实战
 - [Ant Group Medical Agent Afu](../ch03/037-agent.html) — 蚂蚁医疗 Agent 的 Harness Engineering，对比 Loop 架构的适用边界
 

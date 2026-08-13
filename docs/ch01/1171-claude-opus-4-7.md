@@ -13,10 +13,10 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 办公任务：OfficeQA Pro 从 57.1% 干到 80.6%，简单理解就是让它处理 Excel 和 Doc 这些文件更靠谱了。
 
 ## 相关实体
-- [From Prompt To Harness Claude Official](../ch05/017-harness.html)
+- [From Prompt To Harness Claude Official](../ch05/077-harness.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/796-anthropic-claude-code.html)
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/084-claude-code.html)
-- [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
+- [Anthropic Claude Managed Agents Platform 2026](ch01/396-anthropic-claude-managed-agents.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/084-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-opus-47.md)

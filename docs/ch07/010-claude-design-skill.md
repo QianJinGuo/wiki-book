@@ -292,7 +292,7 @@ Claude Design 的发布标志着一个重要转折：设计工具从"人在画�
 - [浏览器 agent 的失忆问题：autobrowse 如何让每次探索变成永久技能](ch07/030-autobrowse-browserbase-persistent-skill.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-design-skill-web-design-engineer.md)
 
-**延伸阅读**：用户体验设计需要系统性的用户研究方法。[User Journey Map](../ch01/383-user-journey-maps-how-ux-teams-turn-friction-into-better-pr.html) 提供了一种将用户行为、情感和痛点可视化的框架，帮助团队从"功能清单"转向"用户目标视角"。
+**延伸阅读**：用户体验设计需要系统性的用户研究方法。[User Journey Map](../ch01/382-user-journey-maps-how-ux-teams-turn-friction-into-better-pr.html) 提供了一种将用户行为、情感和痛点可视化的框架，帮助团队从"功能清单"转向"用户目标视角"。
 
 ---
 

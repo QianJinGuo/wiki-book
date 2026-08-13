@@ -69,7 +69,7 @@
 
 ## 相关实体
 
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/104-ai.html) — 同一技术写作风格系列的领域专业知识讨论
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/105-ai.html) — 同一技术写作风格系列的领域专业知识讨论
 - [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/1119-20.html) — 同为深度技术实践分析的姊妹文章
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/023-build-agents-not-pipelines.html) — 软件工程方法论相关讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 技术深度分析系列

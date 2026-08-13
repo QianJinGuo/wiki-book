@@ -12,7 +12,7 @@
 
 OpenSandbox 负责执行面：创建隔离环境、执行命令、处理文件、控制出站请求。调度、会话、记忆、任务语义等上层能力需要外部系统自己接。
 
-与 [Claude Managed Agents](../ch04/614-claude-managed-agents.html) 的关系：OpenSandbox 更接近 Environment、Sandbox、Vault、Permission policy 里偏运行时的部分，Agent harness 那层不会替你做。
+与 [Claude Managed Agents](../ch04/799-claude-managed-agents.html) 的关系：OpenSandbox 更接近 Environment、Sandbox、Vault、Permission policy 里偏运行时的部分，Agent harness 那层不会替你做。
 
 ## 凭据设计（核心亮点）
 
@@ -56,8 +56,8 @@ OpenSandbox 负责执行面：创建隔离环境、执行命令、处理文件�
 
 ## 相关实体
 
-- [Claude Managed Agents](../ch04/614-claude-managed-agents.html) — 类似的 sandbox 架构
-- [LangChain Sandbox Architecture](../ch01/347-langchain.html) — 另一种 sandbox 设计
+- [Claude Managed Agents](../ch04/799-claude-managed-agents.html) — 类似的 sandbox 架构
+- [LangChain Sandbox Architecture](../ch01/346-langchain.html) — 另一种 sandbox 设计
 - [Microsoft mxc Containers](../ch03/037-agent.html) — Microsoft 的 sandbox 方案
 
 ---

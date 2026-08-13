@@ -214,9 +214,9 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 
 ## 相关实体
 - [Hermes Agent Loop Architecture](ch04/307-hermes-agent-loop.html)
-- [Small Hermes Self Evolving Agent Architecture](ch04/772-self-evolving-agent.html)
+- [Small Hermes Self Evolving Agent Architecture](ch04/782-self-evolving-agent.html)
 - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/098-hermes-agent.html)
-- [Hermes Observability Aliyun](../ch01/292-hermes.html)
+- [Hermes Observability Aliyun](../ch01/291-hermes.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/253-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-loop-source-code-anatomy.md)
@@ -281,9 +281,9 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - judge 把卡片 title + body 视为 acceptance criteria
 
 #### Loop 3-8(本来源概览)
-- **Memory Loop**: 跨 session 持久化经验(与 [Hermes Agent Memory System Architecture](../ch03/098-hermes-agent.html) 同源)
+- **Memory Loop**: 跨 session 持久化经验(与 [Hermes Agent Memory System Architecture](../ch06/013-hermes-agent-memory.html) 同源)
 - **Skill Loop**: 把 procedure 编码为 SKILL.md 改变未来执行(与 [Hermes Skill System](../ch07/019-hermes-skill.html) 同源)
-- **Reflection Loop**: 输出经另一 agent 评价后进入下一 pass(与 [Hermes Self Improving Loop Winty](../ch01/292-hermes.html) 同源)
+- **Reflection Loop**: 输出经另一 agent 评价后进入下一 pass(与 [Hermes Self Improving Loop Winty](../ch01/291-hermes.html) 同源)
 - **Orchestration Loop**: 跨 agent 跨时间协调(本来源独家扩展)
 - **Retry Loop**: 失败自动重试(基础能力)
 - **Compression Loop**: >50% 触发,Loop 1 内部步骤
@@ -314,9 +314,9 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 
 ### 与其他 Hermes 实体的关系
 
-- **Memory Loop** 与 [Hermes Agent Memory System Architecture](../ch03/098-hermes-agent.html) 直接对应 — Hermes 记忆系统
+- **Memory Loop** 与 [Hermes Agent Memory System Architecture](../ch06/013-hermes-agent-memory.html) 直接对应 — Hermes 记忆系统
 - **Skill Loop** 与 [Hermes Skill System](../ch07/019-hermes-skill.html) 直接对应 — Hermes 技能系统
-- **Reflection Loop** 与 [Hermes Self Improving Loop Winty](../ch01/292-hermes.html) 直接对应 — Hermes 自进化
+- **Reflection Loop** 与 [Hermes Self Improving Loop Winty](../ch01/291-hermes.html) 直接对应 — Hermes 自进化
 - **Orchestration Loop** 与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/098-hermes-agent.html) 互补 — Loop 视角 vs Operator 视角
 - **Core Loop / Ralph Loop** 与 [Hermes Agent Loop Architecture](ch04/307-hermes-agent-loop.html) 直接对应 — 主循环概念
 - **Core Loop 9 步** 与 [Hermes Agent Goal And Kanban](ch04/366-hermes-agent-goal.html) 的 `/goal` + kanban 集成直接对应 — 同一架构的两种视角
