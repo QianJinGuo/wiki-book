@@ -71,9 +71,9 @@ Automation Anywhere CEO Mihir Shukla 的表述揭示了其核心愿景：**AI �
 
 ## 相关实体
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1269-rag.html)
-- [Strands Agents High Performance Genai Systems](ch04/769-strands-agents.html)
+- [Strands Agents High Performance Genai Systems](ch04/779-strands-agents.html)
 - [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/096-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/104-ai.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/105-ai.html)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/160-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)- [the next generation of speculative decoding: dflash and spec](../ch01/1199-spec.html)

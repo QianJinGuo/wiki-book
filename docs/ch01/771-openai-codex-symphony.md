@@ -46,7 +46,7 @@ Symphony 因此不是让 Codex 多写几行代码，而是推动范式跃迁：�
 
 仓库本质上只是 `SPEC.md`——问题与预期方案的定义，配套 `WORKFLOW.md` 把领 issue、checkout、移状态、建 PR、进 Review、附视频证明全部显式写下来，让 agent 按流程执行，而非靠口口相传。
 
-与 LangGraph、CrewAI 等编排框架相比，Symphony 刻意不做执行引擎：选 Elixir 只因适合并发编排与进程监督，核心思想与语言无关。它与 [同题材深度分析](ch01/276-openai.html) 定位一致：定义契约而非运行时；与 [spec 约束复杂任务](ch01/735-codex.html)、[Codex 五层架构](ch01/735-codex.html) 互相印证——规模化 AI 编程的关键，是让一组 agent 围绕真实工程流程稳定协作。
+与 LangGraph、CrewAI 等编排框架相比，Symphony 刻意不做执行引擎：选 Elixir 只因适合并发编排与进程监督，核心思想与语言无关。它与 [同题材深度分析](ch01/1019-openai.html) 定位一致：定义契约而非运行时；与 [spec 约束复杂任务](ch01/735-codex.html)、[Codex 五层架构](ch01/735-codex.html) 互相印证——规模化 AI 编程的关键，是让一组 agent 围绕真实工程流程稳定协作。
 
 ## 实践启示
 
@@ -59,11 +59,11 @@ Symphony 因此不是让 Codex 多写几行代码，而是推动范式跃迁：�
 
 ## 相关实体
 
-- [Openai Symphony Codex Orchestration Linear Control Plane](ch01/276-openai.html) — 同源文章的深度分析版本
+- [Openai Symphony Codex Orchestration Linear Control Plane](ch01/1019-openai.html) — 同源文章的深度分析版本
 - [Multi Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 多智能体编排通用范式
 - [Orchestrator Worker Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) — orchestrator-worker 架构模式
 - [Specification Driven Agent Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/specification-driven-agent-development.md) — 规范驱动的 agent 开发
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/727-agentic.html) — vibe coding 到 agentic engineering 的范式演进
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/294-agentic.html) — vibe coding 到 agentic engineering 的范式演进
 - [Ai Agent Loops Claude Code Codex](../ch03/084-claude-code.html) — Claude Code 与 Codex 的 agent 循环实践
 
 ---

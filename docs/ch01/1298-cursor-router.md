@@ -51,8 +51,8 @@ Compass 在线评估确认其分数是用户满意度的强预测器：
 
 ## 相关实体
 
-- [Cursor Harness 生产运营](ch01/452-cursor-harness-model-production-floor.html) — 同源 Cursor 工程实践：模型 + Harness 组合作为发布单元
-- [CursorBench 3.1](ch01/341-cursor-evals-benchmark-3-1-2026-07.html) — Cursor 的离线评测体系（路由用线上生产信号，与离线评测互补）
+- [Cursor Harness 生产运营](ch01/451-cursor-harness-model-production-floor.html) — 同源 Cursor 工程实践：模型 + Harness 组合作为发布单元
+- [CursorBench 3.1](ch01/340-cursor-evals-benchmark-3-1-2026-07.html) — Cursor 的离线评测体系（路由用线上生产信号，与离线评测互补）
 - [本地推理成本分析](ch01/117-apple-silicon-costs-more-than-openrouter.html) — 推理成本计算维度
 - [AI 成本优化框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md) — 成本-质量权衡框架
 - [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理成本优化方法

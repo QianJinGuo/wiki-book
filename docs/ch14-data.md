@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **45 篇**实体，按深度递增排列。
+> 本章收录 **46 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,6 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 7 |
 | ⭐⭐ 工程师 | 需编程基础 | 36 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
 
@@ -4042,5 +4043,28 @@ ShotStream 虽实现了实时多镜头生成，但仍面临若干挑战：长视
 - 代码：https://github.com/KlingAIResearch/ShotStream
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/eccv-2026-shotstream-streaming-multi-shot-video-cuhk-kling.md)
+
+---
+
+## Ch14.046 理解归 AI，正确归引擎：从一句话到一条实时数据链路（0代码搭建实时任务）
+
+> 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/理解归-ai正确归引擎从一句话到一条实时数据链路0代码搭建实时任务.md`
+
+# 理解归 AI，正确归引擎：从一句话到一条实时数据链路（0代码搭建实时任务）
+
+> WeChat-阿里云开发者 | 发布于 2026-08-04 | 评分入库 v×c≥49
+
+## 核心内容
+
+原创 陈晓帆(曦溪) 2026-08-04 09:56 浙江 阿里妹导读 文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。 一、背景：实时数据开发为何"重" 在直播业务中，存在大量实时数据的应用场景：对内的直播 360 大促分析，对外的主播数据大屏、实时榜单等数据产品，以及嵌入业务主链路的实时数据工程链路（平台策略调控、实时算法特征、广告投放）。 离线数据开发的核心是业务逻辑的正确表达；而实时数据开发在此之上，还必须处理流式数据的复杂特性——窗口设计、双流关联语义、状态生命周期管理、时间属性与乱序处理等，才能完成对无限、动态流的状态化持续计算。因此，相较离线，实时数据链路的开发门槛更高，代码评审与纠错成本也更高。 那么，面向这些场景，我们能否抽象出一套更高效、更轻量的研发模式？能否通过产品化抽象，隔离流式数据的复杂特性处理，让实时开发重新聚焦业务逻辑本身？ 我们的切入点是：对于数据链路，业务逻辑的核心可以抽象为"在哪个维度上计算出什么指标"，即维度 + 指标。观测和追踪指标的实时变化正是实时数据的核心价值，指标的计算过程撑起了整个数据任务的骨架。沿着这一思路，我们探索出一套 AI 辅助、指标驱动的实时数据端到端开发系统。 本文将从一个具体案例切入，介绍直播数据团队在搭建该系统过程中的实践与思考。 二、最佳应用案例 我们以一个典型的实时特征数据需求为例，从用户视角完整走一遍使用链路——看看从一句自然语言需求，到一个可发布的 Flink SQL 任务，中间经历了什么。 2.1 需求描述 需求澄清：用户用自然语言描述需求，系统自动完成指标的检索召回，以及窗口等逻。
+
+## 关键要点
+
+- 原文完整记录：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/理解归-ai正确归引擎从一句话到一条实时数据链路0代码搭建实时任务.md)
+- 关联主题：[Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)、[Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
+
+## 相关实体
+
+[Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md) [Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
 
 ---

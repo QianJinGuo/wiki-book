@@ -80,7 +80,7 @@ Agent 开工前，运行边界要清楚。至少包括：目标、停止条件�
 
 > "不是所有发生过的事情都值得记住。尤其是那些临时绕路、失败猜测、一次性偏好，如果被写进长期记忆，会变成未来判断里的噪声。"
 
-这与 [Hermes Agent Memory System Three Layer Architecture](../ch03/098-hermes-agent.html) 的"记忆预算观"（注意力预算 + 上下文预算 + 判断预算）一致——若飞在 5 张卡续篇就提出过，本文再次强调。
+这与 [Hermes Agent Memory System Three Layer Architecture](../ch06/013-hermes-agent-memory.html) 的"记忆预算观"（注意力预算 + 上下文预算 + 判断预算）一致——若飞在 5 张卡续篇就提出过，本文再次强调。
 
 ### 3.3 失败回写
 
@@ -141,8 +141,8 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 ## 与其他实体的关系
 
 - **基础理论**：
-  - [Harness Engineering Survey](ch05/092-harness-engineering.html)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
-  - [Harness Engineering — ETCLOVG Taxonomy](ch05/092-harness-engineering.html)（七层分类的独立条目）
+  - [Harness Engineering Survey](ch05/065-harness-engineering.html)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
+  - [Harness Engineering — ETCLOVG Taxonomy](ch05/065-harness-engineering.html)（七层分类的独立条目）
 - **同作者系列**：
   - Ralph Loop 与可接管 Harness（2026-05-10）（2026-05-10，三类漂移 + 可接手标准）
   - Hermes 5 张卡治理框架（2026-06-01）（2026-06-01，don't automate slop）
@@ -152,8 +152,8 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
   - [Codex /goal Runtime](../ch04/244-codex-goal-agent.html)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
   - [Anthropic 长时运行 Agent 架构](../ch01/776-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
   - [六条经验：让 AI 编码 Agent 变得可控](../ch04/403-ai-coding-agent.html)（Martin Fowler 反馈环共识）
-  - [Harness design for long running apps](ch05/017-harness.html)（Anthropic 官方长任务 Harness 解读）
-  - [Martin Fowler：非确定性进了研发链路](ch05/017-harness.html)（前馈/反馈原文）
+  - [Harness design for long running apps](ch05/077-harness.html)（Anthropic 官方长任务 Harness 解读）
+  - [Martin Fowler：非确定性进了研发链路](ch05/077-harness.html)（前馈/反馈原文）
 - **概念图**：
   - [Long-Running Agent 架构三大模式与演进路径](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md)
 

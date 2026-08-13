@@ -56,7 +56,7 @@ BioNeMo Agent 不同与通用的 LLM Agent：
 3. **多工具组合的可靠性**：一个科学发现流程可能涉及 10+ 步骤的工具调用，任何一步出错都会导致结论无效
 4. **合规与审计需求**：药物研发受 FDA/EMA 等监管，Agent 的决策过程需要完整的审计追踪
 
-这些要求与 [Harness Engineering 实践](../ch05/092-harness-engineering.html) 中讨论的生产级 Agent 设计原则高度一致——可靠性、可审计性、可复现性是科学 Agent 从原型走向落地的关键。
+这些要求与 [Harness Engineering 实践](../ch05/065-harness-engineering.html) 中讨论的生产级 Agent 设计原则高度一致——可靠性、可审计性、可复现性是科学 Agent 从原型走向落地的关键。
 
 ### 竞争对手与生态位分析
 
@@ -84,9 +84,9 @@ NVIDIA 的核心竞争力在于其**底层硬件+软件栈+生态伙伴**的垂�
 ## 相关实体
 
 - [Agent Teams 与群聊模式](../ch01/1219-claude.html) — Agent 团队协作与工具抽象层设计
-- [Harness Engineering 实践](../ch05/092-harness-engineering.html) — 生产级 Agent 的可靠性设计原则
+- [Harness Engineering 实践](../ch05/065-harness-engineering.html) — 生产级 Agent 的可靠性设计原则
 - [Agent 评测方法论与体系设计](../ch03/037-agent.html) — Agent 自主性分级与评测标准
-- [NVIDIA BlueField DPU 助力 AI 云](../ch05/104-ai.html) — NVIDIA 计算生态的另一重要产品线
+- [NVIDIA BlueField DPU 助力 AI 云](../ch05/105-ai.html) — NVIDIA 计算生态的另一重要产品线
 - [后端 AI 友好标准化路径](../ch05/023-ai-friendly.html) — 平台化基础设施的设计思路
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-bionemo-agent-toolkit-加速科学发现的智能体工具.md)

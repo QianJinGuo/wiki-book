@@ -106,12 +106,12 @@ Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code
 
 ## 相关
 - [Claude Code 架构](../ch03/084-claude-code.html)
-- [Anthropic PM Agentic 工作流](../ch04/565-anthropic-pm-agentic.html)
+- [Anthropic PM Agentic 工作流](../ch04/568-anthropic-pm-agentic.html)
 - [AutoResearch 多 Agent 开发](../ch03/037-agent.html)
 - [Agent Memory 模块化框架](../ch04/180-agent-memory.html)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/083-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/099-claude-code-1.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)

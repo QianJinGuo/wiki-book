@@ -79,7 +79,7 @@
 ## 相关实体
 - [gemma 4 12b：google 多模态本地模型 —— 扔掉编码器](../ch01/861-gemma-4.html)
 - [amazon bedrock模型推理的serverless异步架构 – 处理在线多模态高负载案例](ch11/020-aws-bedrock.html)
-- [gemma 4 multi token prediction drafters](../ch01/431-gemma-4-multi-token-prediction-drafters.html)
+- [gemma 4 multi token prediction drafters](../ch01/430-gemma-4-multi-token-prediction-drafters.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)
 - [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](../ch01/861-gemma-4.html)

@@ -87,9 +87,9 @@ Strands Agent 的 `@tool` 装饰器模式使得能力扩展无需基础设施变
 
 ## 相关实体
 
-- [Building Web Search Enabled Agents With Strands And Exa](ch04/559-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 构建搜索 Agent 的实践
+- [Building Web Search Enabled Agents With Strands And Exa](ch04/562-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 构建搜索 Agent 的实践
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级数据查询方案
-- [Agentcore Harness](ch04/763-agentcore-harness.html) — AgentCore 工程化实践
+- [Agentcore Harness](ch04/766-agentcore-harness.html) — AgentCore 工程化实践
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/351-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html) — AgentCore 安全认证流程
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch11/271-aws-bedrock-agentcore.html) — AgentCore + MCP Server 集成
 - [Retrieval Augmented Generation Advanced](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-advanced.md) — RAG 高级模式

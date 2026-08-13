@@ -12,7 +12,7 @@
 - 招募参与者有两种主要途径：自带用户（相关性高、成本低）vs 外部面板（多样性好、客观性强） 
 - 分析流程：转录 → 摘要 → 寻找模式 → 情境化 → 定量验证 → 综合洞察 → 头脑风暴下一步 
 ## 相关实体
-- [User Journey Map](ch01/383-user-journey-maps-how-ux-teams-turn-friction-into-better-pr.html)
+- [User Journey Map](ch01/382-user-journey-maps-how-ux-teams-turn-friction-into-better-pr.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/058-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 - [Unitree Ipo Robotics Market](https://github.com/QianJinGuo/wiki/blob/main/entities/unitree-ipo-robotics-market.md)

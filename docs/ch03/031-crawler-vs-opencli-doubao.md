@@ -17,7 +17,7 @@
 - [Pi Mono Github](../ch01/1105-pi-mono-github.html)
 - [Cli Mcp Sdk Agent Tool Selection](ch03/037-agent.html)
 - [Openai Realtime Api Architecture](../ch01/122-openai-realtime-api.html)
-- [Browser Harness Github](../ch05/100-browser-harness-github.html)
+- [Browser Harness Github](../ch05/101-browser-harness-github.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crawler-vs-opencli-doubao.md)
 

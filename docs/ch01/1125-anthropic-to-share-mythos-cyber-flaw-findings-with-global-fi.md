@@ -10,7 +10,7 @@
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/1125-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
 - [Japan Pm Cybersecurity Review Anthropic Mythos](ch01/776-anthropic.html)
 - [Xero Announces Integration With Anthropics Claude](ch01/776-anthropic.html)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/104-ai.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/105-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)

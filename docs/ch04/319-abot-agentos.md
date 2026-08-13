@@ -114,7 +114,7 @@ ABot-AgentOS 的自进化机制不是简单的模型微调，而是将每个评�
 
 - [Loop Engineering 会是 AI 的下个关键词吗？](../ch05/006-loop-engineering.html) — Loop/Harness/Graph 三层概念
 - [WorkBuddy：LLM 产品实践](../ch05/042-agent-harness.html) — Context Engineering 和 Memory 五类分类
-- [后端系统「AI 知识库体系」建设实践](../ch05/104-ai.html) — Alibaba 的另一篇知识库方法论姊妹篇
+- [后端系统「AI 知识库体系」建设实践](../ch05/105-ai.html) — Alibaba 的另一篇知识库方法论姊妹篇
 - [ABot-AgentOS arXiv](https://arxiv.org/abs/2607.10350) | [GitHub](https://github.com/amap-cvlab/ABot-AgentOS) | [项目主页](https://amap-cvlab.github.io/ABot-AgentOS)
 
 ---

@@ -83,18 +83,18 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 
 ## 相关实体
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Hermes Agent 记忆系统深度拆解](../ch03/098-hermes-agent.html)
+- [Hermes Agent 记忆系统深度拆解](../ch06/013-hermes-agent-memory.html)
 
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/104-ai.html)
-- [我给Hermes配了4个Agent，真正有用的是这些事](../ch01/292-hermes.html)
-- [AIAIGC峰会嘉宾阵容](ch04/605-aiaigc.html)
-- [Hermes Agent vs OpenClaw 对比分析](../ch03/098-hermes-agent.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/105-ai.html)
+- [我给Hermes配了4个Agent，真正有用的是这些事](../ch01/291-hermes.html)
+- [AIAIGC峰会嘉宾阵容](ch04/608-aiaigc.html)
+- [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/253-openclaw.html)
 - [OpenCLAW 完全指南](../ch11/253-openclaw.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1206-openclaw-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/345-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 

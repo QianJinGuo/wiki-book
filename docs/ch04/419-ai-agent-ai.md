@@ -78,7 +78,7 @@ AI 原生浏览器是 [Harness Engineering](https://github.com/QianJinGuo/wiki/b
 
 - [Agent Harness 招聘场景](../ch05/042-agent-harness.html)
 - [Agent Harness 生产化](../ch05/042-agent-harness.html)
-- [Perplexity 自改进记忆](../ch05/104-ai.html)
+- [Perplexity 自改进记忆](../ch06/045-memory.html)
 - [AI Native 企业转型](../ch05/022-ai-native.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)

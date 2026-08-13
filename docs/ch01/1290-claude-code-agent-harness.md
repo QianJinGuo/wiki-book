@@ -45,7 +45,7 @@
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/092-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 
 ## 实践启示

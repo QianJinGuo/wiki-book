@@ -99,11 +99,11 @@ SWE-bench 长期以 Python 为绝对主力，而 Claw-SWE-Bench 的 350 个实�
 
 **1. 评测报告必须包含 API 总成本，而不只是 Pass@1**
 
-单一 Pass@1 数字无法支撑真实决策。同等准确率下成本可能相差两个数量级，而成本直接影响可持续的迭代频率。未来的编程 Agent 评测规范应强制要求汇报完整运行成本，让横向比较真正有意义。 [Harness Engineering](../ch05/092-harness-engineering.html)
+单一 Pass@1 数字无法支撑真实决策。同等准确率下成本可能相差两个数量级，而成本直接影响可持续的迭代频率。未来的编程 Agent 评测规范应强制要求汇报完整运行成本，让横向比较真正有意义。 [Harness Engineering](../ch05/065-harness-engineering.html)
 
 **2. 使用 Lite-80 进行高频迭代，full-350 用于正式汇报**
 
-Lite-80 的成本约为 full-350 的 22.9%，在 17 个校准列上两者 Pass@1 偏差仅 0.4pp。对于学术团队、开源社区和资源有限的小团队，Lite-80 是日常 prompt 调整、模型替换和回归测试的务实选择；full-350 则保留给正式论文和技术报告。 [Harness Engineering 7 Layers](../ch05/092-harness-engineering.html)
+Lite-80 的成本约为 full-350 的 22.9%，在 17 个校准列上两者 Pass@1 偏差仅 0.4pp。对于学术团队、开源社区和资源有限的小团队，Lite-80 是日常 prompt 调整、模型替换和回归测试的务实选择；full-350 则保留给正式论文和技术报告。 [Harness Engineering 7 Layers](../ch05/065-harness-engineering.html)
 
 **3. 在设计 agent 评测方案时，将适配器层视为 first-class component**
 
@@ -119,13 +119,13 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 
 ## 相关实体
 
-- [Harness Engineering](../ch05/092-harness-engineering.html)
+- [Harness Engineering](../ch05/065-harness-engineering.html)
 - [Coding Harness 工程本质](../ch11/253-openclaw.html)
 - [复旦北大 AHE Agentic Harness Engineering](../ch04/301-ahe-agentic-harness-engineering.html)
 - [OpenClaw Agent Loop Design Patterns](../ch01/1206-openclaw-agent.html)
-- [Harness Engineering 7 Layers](../ch05/092-harness-engineering.html)
+- [Harness Engineering 7 Layers](../ch05/065-harness-engineering.html)
 - [Agent Eval 框架](../ch03/037-agent.html)
-- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](../ch05/121-ai-coding.html)
+- [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](../ch05/122-ai-coding.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

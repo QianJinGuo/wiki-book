@@ -42,7 +42,7 @@ AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判 涉
 - **ai-coding趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/727-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/294-agentic.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)

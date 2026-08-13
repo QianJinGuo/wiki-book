@@ -51,7 +51,7 @@ Capo、BBEdit、Fantastical、Cot Editor 等应用在 squircle 框架内依然�
 
 - [设计师必收的图标资源站](../ch03/135-icon-pack-websites-designers-should-bookmark.html)
 - [BMW 设计对话](ch01/021-the-future-of-bmw.html)
-- [Windows 11 触觉设计实现](ch01/332-1.html)
+- [Windows 11 触觉设计实现](ch01/358-1.html)
 - [设计师是稀缺物种](../ch03/113-designers-are-a-rare-breed.html)
 - [AI UX 设计模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ux-design-patterns.md)
 

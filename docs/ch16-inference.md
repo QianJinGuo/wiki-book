@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **38 篇**实体，按深度递增排列。
+> 本章收录 **39 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 14 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 19 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 20 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -3048,7 +3048,27 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.036 TMAP 平台图生视频推理加速实践
+## Ch16.036 COVERT — VLMaaS 协变混淆隐私保护推理框架（ECCV 2026）
+
+> 📊 Level ⭐⭐⭐ | 2.0KB | `entities/covert-vlmaas-covariant-obfuscation-eccv-2026.md`
+
+# COVERT — VLMaaS 协变混淆隐私保护推理框架（ECCV 2026）
+
+> 字节跳动安全研究团队 + 南京大学，2026-07-27。论文《COVERT: Privacy-Preserving Covariant Obfuscation for VLMaaS via Exact Reparameterization and Tailored Tuning》入选 ECCV 2026。
+
+## 研究背景与方案
+
+- **问题**：VLMaaS 模式下用户上传图像/提示词到云端推理，图像含人脸、医疗影像、票据等敏感信息，服务端或攻击者可恢复造成泄露
+- **现有方案局限**：MPC/同态加密/TEE 开销过高；差分隐私扰动破坏视觉-语言语义对齐
+- **COVERT 方案**：基于字节 PrivLLM 协变混淆方法的 VLM 扩展——客户端对输入和模型参数协同混淆，服务端运行混淆后的 VLM 推理，在不牺牲实用性前提下保护输入图像
+
+属于 [Agent 安全攻防](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-security-survey-attack-defense.md) 相邻的推理隐私保护方向，与隐私推理基准类评测（如 [Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-survey-ibm-yale-2026.md)）互补。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/顶会入选-covert-面向视觉语言模型的隐私保护推理框架入选-eccv-2026.md)
+
+---
+
+## Ch16.037 TMAP 平台图生视频推理加速实践
 
 > 📊 Level ⭐⭐⭐ | 0.9KB | `entities/tmap-video-generation-inference-acceleration-taobao-2026-07-22.md`
 
@@ -3063,7 +3083,7 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.037 Speculative Decoding
+## Ch16.038 Speculative Decoding
 
 > 📊 Level ⭐⭐⭐ | 0.9KB | `entities/speculative-decoding.md`
 
@@ -3093,7 +3113,7 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.038 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
+## Ch16.039 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/puma-semantic-early-exit-reasoning-convergence-2605.md`
 

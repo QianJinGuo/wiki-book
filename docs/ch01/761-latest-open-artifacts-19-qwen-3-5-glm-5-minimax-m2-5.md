@@ -80,9 +80,9 @@ Interconnects 的 Latest Open Artifacts 系列是跟踪中国 AI 开源前沿的
 本期相对轻量，集中在主流模型 Sizes，轻于长尾专业模态。技术细节深度 complement：["Ahead of AIA Dream of Spring for Open-Weight LLMs"](https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight) 覆盖了 2026 年 1-2 月的 10 种架构主题。
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/693-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
-- [Nathan Lambert Open Models Bets 2026](ch01/612-nathan-lambert.html)
-- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/425-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/692-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
+- [Nathan Lambert Open Models Bets 2026](ch01/611-nathan-lambert.html)
+- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/424-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
 - [Gemma 4 Open Model Adoption Framework Interconnects](ch01/861-gemma-4.html)
 - [Olmo Hybrid Gdn Wave 2026](ch01/1119-20.html)
 

@@ -8,7 +8,7 @@
 - 来源：depthfirst.com
 - 评分：v=5 c=12 (56分)
 ## 相关实体
-- [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](ch01/332-1.html)
+- [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](ch01/358-1.html)
 - [Cogalpha Acl2026 Alpha Mining](ch01/1119-20.html)
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)

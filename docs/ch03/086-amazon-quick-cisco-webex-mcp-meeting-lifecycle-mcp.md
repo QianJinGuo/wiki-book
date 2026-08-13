@@ -27,7 +27,7 @@ Amazon Quick + MCP 集成模式已有多个 entity 覆盖不同 MCP server 家�
 
 - **[Agentic Incident Triage](../ch11/239-amazon-quick.html)**（New Relic MCP）— SRE incident response 场景，时间敏感 / RCA brief 5 段
 - **[FinOps Chat](../ch11/144-amazon-quick-bedrock-agentcore-finops.html)**（Billing MCP via Bedrock AgentCore）— 成本查询场景，对话式多账号 AWS 成本
-- **[Time Series Market Intelligence](../ch07/078-amazon-quick-mcp.html)**（KDB-X MCP）— 金融交易场景，时间序列分析
+- **[Time Series Market Intelligence](../ch07/079-amazon-quick-mcp.html)**（KDB-X MCP）— 金融交易场景，时间序列分析
 - **[飞书 MCP](../ch11/239-amazon-quick.html)**（自建远程 MCP）— 国产办公协同场景，200+ 工具上下文治理
 - **[AML Alert Triage](../ch11/239-amazon-quick.html)**（Snowflake MCP）— 合规反洗钱场景
 
@@ -83,11 +83,11 @@ Webex MCP server 提供了**完整 read/write scope 分离**，Amazon Quick 集�
 
 - [Amazon Quick + New Relic MCP incident triage](../ch11/239-amazon-quick.html) — 同 Amazon Quick + MCP 编排模式，但 MCP server 家族和场景不同（SRE vs meeting）
 - [Amazon Quick + Bedrock AgentCore FinOps](../ch11/144-amazon-quick-bedrock-agentcore-finops.html) — 同 Amazon Quick 对话模式，FinOps 成本查询场景
-- [Amazon Quick + KDB-X MCP 时序市场](../ch07/078-amazon-quick-mcp.html) — 金融时序场景 MCP 集成
+- [Amazon Quick + KDB-X MCP 时序市场](../ch07/079-amazon-quick-mcp.html) — 金融时序场景 MCP 集成
 - [Amazon Quick 操作飞书：自建远程 MCP](../ch11/239-amazon-quick.html) — 对比案例，国产办公协同自建 MCP 模式
 - [Amazon Quick + Snowflake MCP AML 反洗钱](../ch11/239-amazon-quick.html) — 合规场景 MCP 集成
 - [Aderant 法律云运营案例](../ch11/222-aderant-transforms-cloud-operations-with-amazon-quick.html) — Amazon Quick 行业 case study（legal-tech 角度）
-- [Amazon Bedrock AgentCore](../ch04/763-agentcore-harness.html) — 另一种 Amazon MCP 部署 runtime（vs Amazon Quick 原生 MCP 集成）
+- [Amazon Bedrock AgentCore](../ch04/766-agentcore-harness.html) — 另一种 Amazon MCP 部署 runtime（vs Amazon Quick 原生 MCP 集成）
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

@@ -39,7 +39,7 @@ DeepSeek V4是怎么训练出来的？58页论文深入解读 涉及agent领域�
 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/727-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/294-agentic.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)

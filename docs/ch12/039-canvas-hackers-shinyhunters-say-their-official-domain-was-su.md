@@ -79,8 +79,8 @@ ShinyHunters 决定"完全放弃 clearnet 运营，仅依赖 onion 平台"具有
 ## 相关实体
 
 - [Claude Code 源码机制](../ch03/084-claude-code.html) — AI 工具架构
-- [Karpathy Vibe Coding 访谈](../ch04/727-agentic.html) — Agentic Engineering 范式
-- [Harness Engineering 概念](../ch05/092-harness-engineering.html)
+- [Karpathy Vibe Coding 访谈](../ch04/294-agentic.html) — Agentic Engineering 范式
+- [Harness Engineering 概念](../ch05/065-harness-engineering.html)
 - [Karpathy Vibe Coding 完整版](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [Agent 记忆系统](../ch03/037-agent.html)
 - [Scale Robot RL with NVIDIA Isaac Lab](../ch01/1380-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)

@@ -7,9 +7,9 @@
 # System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
 
 ## 相关实体
-- [unexpected lessons from an ai-assisted prototyping experimen](../ch05/104-ai.html)
+- [unexpected lessons from an ai-assisted prototyping experimen](../ch05/105-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [ai gpus probably live longer than three years](../ch05/104-ai.html)
+- [ai gpus probably live longer than three years](../ch05/105-ai.html)
 - [ddosing software delivery pipelines](ch01/1119-20.html)
 
 ## 深度分析
@@ -33,7 +33,7 @@ System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Wei
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/253-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/727-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/294-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 
 ## 实践启示

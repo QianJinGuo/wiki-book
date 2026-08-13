@@ -19,7 +19,7 @@ We train an interaction model from...
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models-human-ai.md)
 
 ## 相关实体
-- [OpenAI buys AI consultancy to sell enterprises on its models](ch01/1411-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.html)
+- [OpenAI buys AI consultancy to sell enterprises on its models](ch01/1243-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.html)
 - [Interaction Models](../ch03/110-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 - [Thinking Machines 交互模型（Interaction Models）](../ch04/325-thinking-machines-interaction-models.html)
 

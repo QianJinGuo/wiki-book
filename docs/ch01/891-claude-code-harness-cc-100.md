@@ -17,10 +17,10 @@ Claude Code创始人关于Harness和编程未来的观点。
 
 ## 相关实体
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失，Claude Code 将只有 100 行代码，loop 才是未来](../ch03/084-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/636-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/635-claude-code-harness-deep-understanding.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
-- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/070-claude-code-prompt.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
+- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/071-claude-code-prompt.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/083-obsidian-claude-code.html)
 
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
@@ -39,7 +39,7 @@ Boris 平均每天同时运行几百个 Agent，每晚还有几千个做深度�
 Boris 的护城河分析框架是迄今最清晰的 AI 商业影响地图：切换成本降低（AI 可以帮你迁移）、流程壁垒削弱（ Opus 4.7 可以自主迭代优化），但网络效应、规模经济、稀缺资源不变。这意味着 AI 对不同类型护城河的影响是非对称的——企业在重新评估战略时，首先应该识别自己的护城河类型，而非泛泛谈论 AI 威胁 。
 
 ### 5. Harness 递减定律：产品层正在被模型能力「蒸发」
-Boris 预测 Claude Code 未来只有 100 行代码，因为安全机制（防 prompt 注入、静态校验、权限模式、人工审批）都是模型能力不足时的补丁。这个判断的深层含义是：Harness 的价值在于填补模型不确定性，一旦模型足够可靠，Harness 就变成了纯粹的效率拖累。这条定律同样适用于 [Harness Engineering](../ch05/092-harness-engineering.html) 的所有实践者 。
+Boris 预测 Claude Code 未来只有 100 行代码，因为安全机制（防 prompt 注入、静态校验、权限模式、人工审批）都是模型能力不足时的补丁。这个判断的深层含义是：Harness 的价值在于填补模型不确定性，一旦模型足够可靠，Harness 就变成了纯粹的效率拖累。这条定律同样适用于 [Harness Engineering](../ch05/065-harness-engineering.html) 的所有实践者 。
 
 ## 实践启示
 ### 1. 建立「模型能力-产品层」的对标节奏

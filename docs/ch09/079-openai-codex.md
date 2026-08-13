@@ -92,7 +92,7 @@ OpenAI 正在做的，是利用大模型作为通用的操作接口，把高不�
 - https://x.com/testingcatalog/status/2055708109343994335
 - https://x.com/op7418/status/2055561525633642762
 - https://x.com/gdb/status/2056046844921172243
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/104-ai.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/105-ai.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/037-agent.html)
 
 ---

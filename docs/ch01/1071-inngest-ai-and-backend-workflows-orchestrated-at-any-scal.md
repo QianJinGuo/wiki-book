@@ -67,8 +67,8 @@ Inngest 定位为下一代工作流编排引擎，与 Temporal 形成直接竞�
 - 医疗等强监管行业需确认 HIPAA BAA 的具体覆盖范围
 ## 相关实体
 - [Microsoft Copilot Studio Agent Governance](../ch03/037-agent.html)
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/493-ai-agent.html)
-- [Mathematical Optimization Aws Innovation Center Enterprise](ch01/433-aws.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/209-ai-agent.html)
+- [Mathematical Optimization Aws Innovation Center Enterprise](ch01/432-aws.html)
 - [Task Queue Priority And Fairness Your Task Queue](../ch11/233-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Whats New With Vsphere 9 1](ch01/933-9.html)
 

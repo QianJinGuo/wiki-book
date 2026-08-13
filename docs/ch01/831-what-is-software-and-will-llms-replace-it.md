@@ -126,10 +126,10 @@ LLM 时代软件工程师的核心技能：
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 概率层与确定性层的边界管理
-- [Agent Harnesses](../ch04/798-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Agent 架构的演进
+- [Agent Harnesses](../ch04/808-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Agent 架构的演进
 - [Claude Code Workflows](../ch09/104-claude-code-dynamic-workflows.html) — Agent 工作流设计
-- [本文实体](ch01/1484-llm.html) — Tomassetti 的分析
-- [AI Agent Hype](../ch04/493-ai-agent.html) — 对 AI agent 过度炒作的冷静分析
+- [本文实体](ch01/1135-llm.html) — Tomassetti 的分析
+- [AI Agent Hype](../ch04/209-ai-agent.html) — 对 AI agent 过度炒作的冷静分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-is-software-llms-replace-tomassetti-2026.md)
 

@@ -60,7 +60,7 @@ ScarfBench 的数据对采用 AI Agent 进行企业 Java 现代化的组织有�
 - [CODA Bench 代码 Agent 基准测试](../ch09/106-coda-bench-code-agent.html)
 - [AI Coding Paradigm Evolution](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-paradigm-evolution.md)
 - 编码 Agent 评估
-- [企业 Agent 编排](../ch04/606-agent-orchestration.html)
+- [企业 Agent 编排](../ch04/609-agent-orchestration.html)
 - [面向 Agent 的后端设计](../ch03/037-agent.html)
 
 ## 来源

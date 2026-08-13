@@ -12,10 +12,10 @@ GitHub: https://github.com/Einsia/OpenChronicle
 
 ## 相关实体
 - [Agent Self Improvement Six Mechanisms](../ch03/037-agent.html)
-- [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/407-agi.html)
+- [Agi Road May Be Wrong From The Start Wang Peng Tencent](ch01/477-agi.html)
 - [Vayne Lw Personal Agent System](../ch03/037-agent.html)
-- [Chatgpt Memory](ch01/549-chatgpt-memory.html)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch01/292-hermes.html)
+- [Chatgpt Memory](ch01/548-chatgpt-memory.html)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](ch01/291-hermes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openchronicle-opensource-memory-layer.md)
 

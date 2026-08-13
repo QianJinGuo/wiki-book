@@ -46,7 +46,7 @@ BMAD 使用 **TOML 配置文件**定义每个 Agent 的行为空间，这是整�
 5. **多人团队协作模型** — 含 BMAD Party Mode 的多 Agent 交叉检查机制
 
 → [AI-DLC 紫讯 AI 原生研发实践](../ch05/022-ai-native.html)
-→ [Harness Engineering 概念](../ch05/092-harness-engineering.html)
+→ [Harness Engineering 概念](../ch05/065-harness-engineering.html)
 → [SDD 规格驱动开发总结](../ch01/966-qoder.html)
 → [Spec-Kit + OpenSpec + Superpowers 混合 Harness](../ch05/055-openspec.html)
 

@@ -11,10 +11,10 @@ Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一
 **关键区分：** RAG 更像是「把资料找出来」，LLM Wiki 试图解决的是「把读过的资料组织起来」。
 
 ## 相关实体
-- [Karpathy Llm Wiki V2 2026](ch01/1484-llm.html)
+- [Karpathy Llm Wiki V2 2026](../ch06/025-llm-wiki.html)
 - [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/044-rag-vs-llm-wiki.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/084-claude-code.html)
-- [Three Rag Architectures Classic Graph Agentic](../ch04/727-agentic.html)
+- [Three Rag Architectures Classic Graph Agentic](../ch04/294-agentic.html)
 - [How Ai Agent Memory Works](../ch04/214-how-ai-agent-memory-works.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md)

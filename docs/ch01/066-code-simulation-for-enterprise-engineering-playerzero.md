@@ -39,7 +39,7 @@ Sim-1 的技术路线值得拆解：code embeddings 提供代码的语义表示�
 6. **以代码库为集成锚点**：先接入代码库形成核心连接，再分层接入 Jira、Zendesk 等工作流工具，降低 rollout 摩擦，避免一次性大改造。
 
 ## 相关实体
-- [Hs.Playerzero Ai Code Review](../ch05/104-ai.html) — 同一来源文章的另一存档实体，含更多量化指标（MTTR、误报率等）
+- [Hs.Playerzero Ai Code Review](../ch05/105-ai.html) — 同一来源文章的另一存档实体，含更多量化指标（MTTR、误报率等）
 - [Playerzero Request Demo](https://github.com/QianJinGuo/wiki/blob/main/entities/playerzero-request-demo.md) — PlayerZero 产品入口
 - [Code Review Graph](ch01/1103-code-review-graph-claude-code-6-8-token.html) — 代码评审图谱，可对照理解 review 的静态作用域
 - [Agentic Code Review Addyosmani](ch01/176-agentic-code-review.html) — 另一篇 agentic code review 视角

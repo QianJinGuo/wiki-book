@@ -181,10 +181,10 @@ Time To First Token 的单独记录是一个看似小但实际非常关键的 fe
 - CMS 2.0 控制台：https://cmsnext.console.aliyun.com/
 ## 相关实体
 - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/098-hermes-agent.html)
-- [Hermes Agent Memory System Vs Openclaw](../ch03/098-hermes-agent.html)
-- [Hermes Agent Vs Openclaw Comparison](../ch03/098-hermes-agent.html)
+- [Hermes Agent Memory System Vs Openclaw](../ch06/013-hermes-agent-memory.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch06/022-hermes-agent-vs-openclaw.html)
 - [Hermes Agent Self Evolving Source Analysis](../ch03/098-hermes-agent.html)
-- [Small Hermes Self Evolving Agent Architecture](ch04/772-self-evolving-agent.html)
+- [Small Hermes Self Evolving Agent Architecture](ch04/782-self-evolving-agent.html)
 - [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](../ch01/1119-20.html)
 
 ---

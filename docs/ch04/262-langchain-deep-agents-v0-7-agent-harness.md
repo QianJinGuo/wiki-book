@@ -130,12 +130,12 @@ Filesystem 作为 [Agent Loop](https://github.com/QianJinGuo/wiki/blob/main/conc
 
 ## 相关实体
 
-- [Deep Agents Bedrock 集成](ch04/606-agent-orchestration.html) — Deep Agents 在 AWS Bedrock 上的部署和 subagent 编排
+- [Deep Agents Bedrock 集成](ch04/609-agent-orchestration.html) — Deep Agents 在 AWS Bedrock 上的部署和 subagent 编排
 - [Agent Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) — Harness 设计的理论框架，v0.7 的实践补充
 - [AHE — Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) — Agentic Harness Engineering 方法论的完整阐述
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — Anthropic 引领的 context engineering 理念，v0.7 的直接理论来源
 - [Codex Context Engineering](../ch01/735-codex.html) — Codex 在 context engineering 上的不同实践路径
-- [Context Engineering 三种记忆范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md) — 从记忆范式角度理解 context 管理
+- [Context Engineering 三种记忆范式](../ch06/045-memory.html) — 从记忆范式角度理解 context 管理
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — 上层编排模式与底层 harness 优化的互补关系
 - [Tool Use Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/tool-use-patterns-ai-agents.md) — 工具使用模式，v0.7 中 Interfaces beat examples 的底层理论基础
 - [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) — Deep Agents v0.7 使用的评估方法论

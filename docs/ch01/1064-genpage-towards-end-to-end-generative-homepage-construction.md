@@ -44,7 +44,7 @@ GenPage 的单模型架构简化了推荐系统的工程复杂度——不再需
 
 ## 相关实体
 
-- [Netflix VMAF](ch01/332-1.html)
+- [Netflix VMAF](ch01/358-1.html)
 - [Netflix Switchboard](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [Netflix ML 平台](../ch11/299-democratizing-machine-learning-at-netflix-building-the-mode.html)
 - [Attention Collapse 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)

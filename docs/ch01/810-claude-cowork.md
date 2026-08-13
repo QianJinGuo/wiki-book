@@ -57,7 +57,7 @@ Cowork 的更新并非孤立事件，而是反映了 Coding Agent 市场的整�
 - **Dispatch 发布**：手机能远程派活
 - **本次更新**：杀进手机和网页、定时任务脱离设备
 
-从桌面到掌心到云端，所有工作会发生的界面都插了旗。这场竞争到最后，比的可能不是谁的 Agent 更聪明，而是谁先变成普通人日常的一部分。这与 [Agent Harness 工程调查 2026](../ch05/092-harness-engineering.html) 中关于 Agent 采纳路径的分析一致——用户体验和分发渠道是 Agent 规模化的关键瓶颈。
+从桌面到掌心到云端，所有工作会发生的界面都插了旗。这场竞争到最后，比的可能不是谁的 Agent 更聪明，而是谁先变成普通人日常的一部分。这与 [Agent Harness 工程调查 2026](../ch05/065-harness-engineering.html) 中关于 Agent 采纳路径的分析一致——用户体验和分发渠道是 Agent 规模化的关键瓶颈。
 
 ## 实践启示
 
@@ -75,7 +75,7 @@ Cowork 的更新并非孤立事件，而是反映了 Coding Agent 市场的整�
 
 - [Agent Harness 上下文管理](../ch05/042-agent-harness.html) — 工作集视角的上下文管理
 - [Agent Harness 可观测性](../ch05/042-agent-harness.html) — 智能体行为审计与监控
-- [Agent Harness 工程调查 2026](../ch05/092-harness-engineering.html) — Agent 采纳路径分析
+- [Agent Harness 工程调查 2026](../ch05/065-harness-engineering.html) — Agent 采纳路径分析
 - [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — 持久化任务循环模式
 - [Agent Harness 架构](../ch05/042-agent-harness.html) — Agent 系统架构设计
 

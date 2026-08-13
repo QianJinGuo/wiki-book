@@ -13,8 +13,8 @@
 
 ## 相关实体
 - [Claude Code Source Leak Lifecycle Analysis](../ch03/084-claude-code.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/540-vibe-coding-agentic-engineering.html)
-- [Claude Code Harness Deep Understanding](ch01/636-claude-code-harness-deep-understanding.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/543-vibe-coding-agentic-engineering.html)
+- [Claude Code Harness Deep Understanding](ch01/635-claude-code-harness-deep-understanding.html)
 - [Pi Mono Github](ch01/1105-pi-mono-github.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/084-claude-code.html)
 

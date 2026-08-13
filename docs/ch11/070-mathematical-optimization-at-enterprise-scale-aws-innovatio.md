@@ -146,13 +146,13 @@ LLM 可以将自然语言业务描述翻译为初步的数学模型，但人类�
 用"优化前后的成本差异"量化优化项目的 ROI——这是说服管理层投资优化的最有效方式。
 
 ## 相关实体
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/493-ai-agent.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/209-ai-agent.html)
 - [Aws Quicksight Dataset Qa Tara Case](ch11/192-aws-quicksight-dataset-qa-tara-case.html)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/138-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/190-amazon-ecs.html)
 
-- [Aws Fundamentals Large Tabular Model Nexus Is Now Available On Amazon Sagemaker Jump](../ch01/433-aws.html)
+- [Aws Fundamentals Large Tabular Model Nexus Is Now Available On Amazon Sagemaker Jump](../ch01/432-aws.html)
 
 ---
 

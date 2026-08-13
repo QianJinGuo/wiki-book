@@ -68,7 +68,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 ### 4. 异步补全 vs 实时编排的对比
 
-本架构中 **Amazon Quick 是同步编排**（单 prompt 触发 → 5 工具调用 → RCA 输出 → Asana 任务创建），与 [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](../ch01/954-ai-infra.html) 描述的"长时自驱动 agent"模式相反：
+本架构中 **Amazon Quick 是同步编排**（单 prompt 触发 → 5 工具调用 → RCA 输出 → Asana 任务创建），与 [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](../ch01/1555-ai-infra.html) 描述的"长时自驱动 agent"模式相反：
 
 - **同步编排（Quick 模式）**：用户给 prompt → AI 立即完成 → 人类 review + confirm Asana 任务创建（"Yes, create an Asana task..."）
 - **异步自驱动（auto-driven 模式）**：AI 在 background 持续运行 → 周期性输出 → 人类异步 review
@@ -115,10 +115,10 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 ## 相关主题
 
 - [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/222-aderant-transforms-cloud-operations-with-amazon-quick.html) — Amazon Quick 在法律行业的 cross-source RAG 案例（同一产品不同应用场景）
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/645-amazon-bedrock-agentcore.html) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/648-amazon-bedrock-agentcore.html) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/239-amazon-quick.html) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch11/271-aws-bedrock-agentcore.html) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
-- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](../ch01/954-ai-infra.html) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）
+- [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](../ch01/1555-ai-infra.html) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）
 
 ---
 

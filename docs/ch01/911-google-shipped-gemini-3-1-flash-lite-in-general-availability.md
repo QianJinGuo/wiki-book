@@ -52,7 +52,7 @@ Flash-Lite 的典型用法是「先轻后重」的渐进式选型：产品早期
 - [Gemini 3.5: frontier intelligence with action](ch01/094-gemini-3-5-frontier-intelligence-with-action.html) — 分层矩阵中的旗舰能力端
 - [Gemini 3.5 Flash: more expensive, but Google plan to use it for everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md) — Flash 层级的价格与采用策略
 - [GPT-5.6 Sol/Terra/Luna 分层定价](ch01/735-codex.html) — OpenAI 侧的分层定价对照
-- [OpenAI Reasoning Models (o1/o3/o4-mini)](ch01/648-openai-reasoning-models-o1-o3-o4-mini.html) — 推理模型分层参考
+- [OpenAI Reasoning Models (o1/o3/o4-mini)](ch01/647-openai-reasoning-models-o1-o3-o4-mini.html) — 推理模型分层参考
 - [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — 基于 Gemini 生态的典型应用
 - [Google's Gemini Omni video model](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md) — Gemini 生态的另一条产品线（其 `-i-o-debut` 变体实体为重复条目）
 

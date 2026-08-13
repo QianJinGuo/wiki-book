@@ -148,9 +148,9 @@ Prompt Cache 命中率应该进监控，且告警阈值要严格。如果团队�
 `defer_loading: true` 的工具 stub 拉取后，如果模型接下来反复使用同一个工具，不要每次都重新拉取 schema。在本地实现一个**工具 schema 缓存**，TTL 可以设长一些（数小时或本次 session 结束），避免重复拉取的网络开销和延迟。
 
 ## 相关实体
-- [Claude Code Prompt 提示词体系源码解析](ch09/070-claude-code-prompt.html)
-- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](ch09/070-claude-code-prompt.html)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/084-claude-code.html)
+- [Claude Code Prompt 提示词体系源码解析](ch09/071-claude-code-prompt.html)
+- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](ch09/071-claude-code-prompt.html)
+- [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/083-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/099-claude-code-1.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
