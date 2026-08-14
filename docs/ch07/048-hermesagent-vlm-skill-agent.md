@@ -88,10 +88,10 @@ Hermes 作为 Agent 编排层，自然语言对话支持进度查询/单点重�
 
 ## 与其他实体的关系
 
-- **HermesAgent 生产案例**：本文是 wiki 中首个 HermesAgent 在大型互联网应用中的端到端生产案例，与 [高德 SDD/Harness 编码范式](../ch05/122-ai-coding.html) 互补——前者讲 AI 编码，本文讲 Agent 在生产链路的编排
+- **HermesAgent 生产案例**：本文是 wiki 中首个 HermesAgent 在大型互联网应用中的端到端生产案例，与 [高德 SDD/Harness 编码范式](../ch05/124-ai-coding.html) 互补——前者讲 AI 编码，本文讲 Agent 在生产链路的编排
 - **确定性 + Agent 混合架构**：与 [Harness Engineering](../ch05/065-harness-engineering.html) 的"多层重试+执行者/验证者分离"哲学一致——确定性与 Agent 的边界划分是生产级 Agent 系统设计的核心
 - **Skill 化/MCP 层**：五层架构中的 MCP/Skill 层与 [Hermes Agent](../ch03/098-hermes-agent.html) 的 Skill 系统直接对应——每个能力被封装为可独立调用的工具
-- **RAG 配置驱动**：与 [Flow2Spec 结构化知识路由](../ch01/1199-spec.html) 的"规则外置"思想同源——业务知识从代码中剥离出来
+- **RAG 配置驱动**：与 [Flow2Spec 结构化知识路由](../ch01/1212-spec.html) 的"规则外置"思想同源——业务知识从代码中剥离出来
 - **语言驱动生产**：与 Claude Tag 的"聊天即工作流入口"趋势一致——自然语言成为新的生产接口
 
 ## 实践启示

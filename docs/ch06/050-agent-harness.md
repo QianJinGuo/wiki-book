@@ -236,7 +236,7 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/037-agent.html)
 - [Claude Code Session 管理与 1M 上下文最佳实践](../ch03/084-claude-code.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/037-agent.html)
-- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/071-claude-code-prompt.html)
+- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/072-claude-code-prompt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-context-management-working-set.md)
 → [原文存档（Anthropic CE 文章）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-context-engineering-anthropic-thariq.md)

@@ -34,7 +34,7 @@ Microsoft for Startups 是微软面向早期初创企业打造的综合性支持
 ## 关联阅读
 ## 相关实体
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch01/039-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [Microsoft For Startups Microsoft V2](ch01/721-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft V2](ch01/1237-microsoft-for-startups-microsoft.html)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
 - [From Doer To Director The Ai Mindset Shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)
 

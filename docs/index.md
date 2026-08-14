@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3947 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3986 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1786 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1398 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 525 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 189 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1804 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1410 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 526 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 197 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 49 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1601 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1619 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ 快手首个打工人Agent
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ... 共 **1601** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1619** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 43 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **142** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1786 篇**
+> 📖 **本篇共 1804 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 825 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 834 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,9 +76,9 @@
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
-  - ... 共 **825** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **834** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 147 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 150 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
-  - ... 共 **147** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **150** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 54 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -156,7 +156,7 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **43** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1398 篇**
+> 📖 **本篇共 1410 篇**
 
 ---
 
@@ -201,7 +201,7 @@
   - ⭐⭐ 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
   - ... 共 **26** 篇 → [完整章节](ch13-mlops.md)
 
-### [Ch14 数据工程](ch14-data.md) — 46 篇
+### [Ch14 数据工程](ch14-data.md) — 47 篇
 > AI 的燃料：实时入湖、流处理、数据质量
 
   - ⭐ 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
@@ -212,15 +212,15 @@
   - ⭐ Kafka 原生消息入湖能力上线 一键打通实时流与数据湖 阿里云云原生
   - ⭐ dataflow harness data pipeline agent pku 2026
   - ⭐⭐ Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
-  - ... 共 **46** 篇 → [完整章节](ch14-data.md)
+  - ... 共 **47** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 525 篇**
+> 📖 **本篇共 526 篇**
 
 ---
 
 ## 第四篇 · 科学家篇 — 研究与创新
 
-### [Ch15 训练与微调](ch15-training.md) — 61 篇
+### [Ch15 训练与微调](ch15-training.md) — 62 篇
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
   - ⭐ optimize-model-training-on-amazon-sagemaker-ai-with-nvidia-b
@@ -231,9 +231,9 @@
   - ⭐⭐ 多轮Agent蒸馏终于不翻车！港中文x通义新方法成功率暴涨18点，训练还快32%
   - ⭐⭐ ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
   - ⭐⭐ 华为云、昇腾联合 RLinf 共筑基于昇腾算力的具身智能开发生态
-  - ... 共 **61** 篇 → [完整章节](ch15-training.md)
+  - ... 共 **62** 篇 → [完整章节](ch15-training.md)
 
-### [Ch16 推理优化与架构](ch16-inference.md) — 39 篇
+### [Ch16 推理优化与架构](ch16-inference.md) — 41 篇
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
   - ⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
@@ -244,22 +244,22 @@
   - ⭐⭐ Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
   - ⭐⭐ GLM-5 Scaling 痛点与推理优化
   - ⭐⭐ EAGLE-3 投机解码与 USP 长序列训练优化
-  - ... 共 **39** 篇 → [完整章节](ch16-inference.md)
+  - ... 共 **41** 篇 → [完整章节](ch16-inference.md)
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 60 篇
+### [Ch17 多模态与生成](ch17-multimodal.md) — 62 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
   - ⭐ Perceptron Mk1 shocks with highly performant video analysis AI model 8
   - ⭐ ImageToVideoAI - #1 Image to Video AI Generator Online
+  - ⭐ Boogu-Image-0.1 — 40 万美元训出 2K 开源图像模型
   - ⭐ vibe一下能自动画工程图做3d装配的ai来了丨上海ai-lab
   - ⭐⭐ Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
   - ⭐⭐ Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
   - ⭐⭐ 美团海报生成 AIGC 技术创新与实践
   - ⭐⭐ LLaVA-OneVision-2：全帧率视频理解
-  - ⭐⭐ Normalizing Trajectory Models
-  - ... 共 **60** 篇 → [完整章节](ch17-multimodal.md)
+  - ... 共 **62** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 29 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 32 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
   - ⭐ 腾讯 Hy-Embodied 具身智能基座模型与钛螺丝平台全面升级
@@ -270,9 +270,9 @@
   - ⭐⭐ 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
   - ⭐⭐ 小米机器人汽车工厂柔性操作与多机协同实战
   - ⭐⭐ LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
-  - ... 共 **29** 篇 → [完整章节](ch18-robotics.md)
+  - ... 共 **32** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 189 篇**
+> 📖 **本篇共 197 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3947 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3986 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-14 | 来源: ~/wiki/entities/
+生成时间: 2026-08-15 | 来源: ~/wiki/entities/

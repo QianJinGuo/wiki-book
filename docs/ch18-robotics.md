@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **29 篇**实体，按深度递增排列。
+> 本章收录 **32 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,9 +11,9 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 18 |
+| ⭐⭐ 工程师 | 需编程基础 | 19 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
 
 ---
 
@@ -1345,7 +1345,29 @@ TouchWorld 的核心架构包含 Predictive（触觉目标预测）和 Reactive�
 
 ---
 
-## Ch18.022 具身智能空间视觉死穴，终于被最新顶会彻底解决！
+## Ch18.022 Grabette — 开源机器人操作数据采集系统
+
+> 📊 Level ⭐⭐ | 1.2KB | `entities/grabette-open-system-robot-manipulation-data.md`
+
+# Grabette — 开源机器人操作数据采集系统
+
+Grabette 是面向**机器人操作数据录制**的开源系统——解决具身智能数据采集环节的标准化问题：以开放协议录制机器人操作数据，支持跨平台复用。
+
+## 核心价值
+
+- **数据标准化**：统一机器人操作数据的录制格式/协议
+- **开源可复用**：研究机构无需自建采集栈
+- **数据闭环**：为 VLA 训练提供高质量操作数据源
+
+## 关联
+
+与 [机器人具身智能](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md) 和 [具身数据市场](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md) 直接相关——数据采集是具身智能 scaling 的瓶颈环节，Grabette 是开源侧的基础设施尝试。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grabette-open-system-robot-manipulation-data.md)
+
+---
+
+## Ch18.023 具身智能空间视觉死穴，终于被最新顶会彻底解决！
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/具身智能空间视觉死穴终于被最新顶会彻底解决.md`
 
@@ -1421,7 +1443,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.023 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
+## Ch18.024 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
 
 > 📊 Level ⭐⭐⭐ | 2.7KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代.md`
 
@@ -1444,7 +1466,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.024 Handroid：同一套硬件在人形机器人与灵巧手之间重构（UNC+Stanford）
+## Ch18.025 Handroid：同一套硬件在人形机器人与灵巧手之间重构（UNC+Stanford）
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/handroid-reconfigurable-robot-dexterous-hand-humanoid-unc-stanford-2026.md`
 
@@ -1475,7 +1497,7 @@ Handroid 是北卡罗来纳大学教堂山分校与斯坦福大学提出的可�
 
 ---
 
-## Ch18.025 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+## Ch18.026 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/icra26-symskill-robot-long-horizon-manipulation.md`
 
@@ -1548,7 +1570,7 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 ---
 
-## Ch18.026 具身原生世界动作模型（Embodied World Action Model）
+## Ch18.027 具身原生世界动作模型（Embodied World Action Model）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/全球首个具身原生世界动作模型来了.md`
 
@@ -1611,7 +1633,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ---
 
-## Ch18.027 景烁科技 — 具身智能数据基础设施
+## Ch18.028 景烁科技 — 具身智能数据基础设施
 
 > 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
@@ -1681,7 +1703,48 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 
 ---
 
-## Ch18.028 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+## Ch18.029 10万小时训出开箱即用机器人基座模型：Xiaomi-Robotics-1 探索具身智能 Scaling 效应
+
+> 📊 Level ⭐⭐⭐⭐ | 6.0KB | `entities/xiaomi-robotics-1-具身智能-scaling.md`
+
+# Xiaomi-Robotics-1：10 万小时数据训练的具身智能基座模型
+
+Xiaomi-Robotics-1 是小米机器人事业部发布的面向真实移动操作任务的具身基座模型，基于 **10 万小时真实世界轨迹** 预训练，再结合跨本体数据后训练，在未见环境真实机器人任务、复杂新任务适配和多个仿真基准上都展现出稳定的规模化收益。它试图回答一个关键问题：机器人策略模型是否也能像大模型一样，随着数据规模、模型容量和训练计算量的提升而持续 Scaling。
+
+在 [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md) 的探索中，真实机器人数据采集依赖具体硬件、真实环境和人工遥操作，成本高、周期长、规模有限，传统数据又多集中在少量场景和任务上，难以支撑泛化能力。Xiaomi-Robotics-1 正是围绕"机器人策略模型能否像大模型一样 Scaling"这一核心问题展开的系统性尝试。
+
+## 数据工程：10 万小时 UMI 轨迹与自动化标注
+
+预训练阶段使用了 10 万小时真实世界操作轨迹，通过 Universal Manipulation Interface（UMI）设备采集，覆盖家庭、商业空间、工业场景、办公室、户外等多类环境。UMI 数据不依赖特定机器人本体，可先让模型从大规模真实操作轨迹中学习通用动作生成表征，再迁移到真实机器人上。
+
+面对 10 万小时数据，团队构建了可规模化自动标注流程：将长轨迹切分为固定长度片段，用视觉语言模型描述片段中夹爪状态和交互物体状态的变化，模型由此学习"在当前视觉观察和语言条件下生成推动场景状态变化的动作"。该流程约 2 周即可完成全量数据的高质量标注。
+
+## 两阶段训练：从通用动作生成到真实机器人执行
+
+Xiaomi-Robotics-1 采用"预训练 + 后训练"两阶段范式。预训练阶段学习通用动作生成能力：给定当前视觉观察和语言描述，模型预测一段动作序列使场景从当前状态向目标状态变化。后训练阶段解决两个对齐问题：**本体对齐**（将 UMI 数据获得的动作生成能力迁移到真实机器人本体）与 **指令对齐**（将"根据状态变化描述生成动作"转化为"根据自然语言指令执行任务"）。
+
+后训练数据约 10000 小时跨本体数据，包括 7200+ 小时移动操作机器人和双臂机器人数据、1000+ 小时人工标注 UMI 数据，以及 Bridge V2、RT-1、DROID 等公开机器人数据集。完成后训练的模型可在真实环境中根据自然语言指令直接执行沙发整理、餐具收纳、行李箱打包等移动操作任务，实现"开箱即用"。
+
+## Scaling 实验与基准表现
+
+数据规模实验使用 2.5K、5K、10K、20K 小时 UMI 数据训练，动作预测损失随数据量增加持续降低；模型规模实验对比 2B、5B、10B 三个版本，结果同样随规模提升而改善。更重要的是，预训练更强的模型在后训练后的真实机器人评测（鞋柜收纳、书包打包、桌面整理、沙发收拾等未见环境任务）中也取得更高成功率，说明大规模预训练获得的通用表征能迁移到真实执行。
+
+在新任务适配方面，每个任务平均数据时长不足 10 小时条件下，Xiaomi-Robotics-1 在四个复杂灵巧操作任务中均大幅超越 Pi-0.5。仿真基准上，RoboCasa365 平均成功率 57.4%（此前最优 46.6%），RoboDojo 以 20.07 平均分和 13.93% 成功率登顶 Leaderboard（原纪录 13.07 分 / 8.80%），VLABench 平均成功率 59.1%，RoboCasa 达 74.5%，超过 RLDX-1、Cosmos Policy、GR00T N1.6 等方法。
+
+这一路径表明机器人策略模型有机会从依赖小规模任务定制数据，走向更接近基座模型的训练范式：大规模预训练学通用表征 → 跨本体数据后训练对齐 → 少量数据微调适配新任务。对 [Scaling Law](https://github.com/QianJinGuo/wiki/blob/main/concepts/scaling-laws.md) 而言，具身智能仍处早期探索阶段，随着数据、模型和任务覆盖范围继续扩大，边界将持续被拓展。
+
+## 相关
+
+- [Xiaomi-Robotics-1 具身基座模型](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md) — 本实体对应的英文条目
+- [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md) — 领域背景
+- [机器人具身智能](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md) — 相关概念
+- [Scaling Law](https://github.com/QianJinGuo/wiki/blob/main/concepts/scaling-laws.md) — 核心方法论
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/10万小时训出开箱即用机器人基座模型xiaomi-robotics-1-探索具身智能-scaling-效应.md)
+
+---
+
+## Ch18.030 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 
@@ -1753,7 +1816,7 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.029 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+## Ch18.031 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md`
 
@@ -1782,5 +1845,31 @@ Being-H0.8 是一套带触觉的隐式世界—动作模型：**预训练阶段*
 - 具身智能市场全景：[具身智能数据市场格局](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md)
+
+---
+
+## Ch18.032 LeRobot v0.6.0 — Imagine, Evaluate, Improve
+
+> 📊 Level ⭐⭐⭐⭐ | 1.8KB | `entities/lerobot-v060-imagine-evaluate-improve.md`
+
+# LeRobot v0.6.0 — Imagine, Evaluate, Improve
+
+Hugging Face LeRobot 框架 2026 年发布 v0.6.0，主题是**闭合机器人学习回路**：策略先想象未来再行动（world model policies）、奖励模型判断机器人是否成功、部署 CLI 把失败转化为训练数据、六个新仿真基准统一度量。
+
+## 核心新增
+
+- **World model policies**：VLA-JEPA、FastWAM、LingBot-VA 三类学会"想象未来"的策略
+- **新 VLA 家族**：GR00T N1.7、MolmoAct2、EO-1、EVO1、Multitask DiT
+- **Reward models API**：Robometer、TOPReward，判断任务成功与否
+- **`lerobot-eval`**：六个新仿真基准统一度量入口
+- **`lerobot-rollout` CLI**：DAgger 式人在回路纠错，失败样本直接沉淀为训练数据
+- **训练基建**：FSDP 训练、HF Jobs 云训练
+- **数据管线**：深度图支持、VLM 自动语言标注、自定义视频编码、数据加载提速 2x
+
+## 与 wiki 内相关主题的关系
+
+与 [机器人具身智能](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md) 领域直接相关：world model policies 是 [3D 原生世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md) 一族的策略侧延伸；reward models 方向与 [具身数据市场](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md) 的评估环节互补。LeRobot 定位为开放机器人学习栈，与商业 VLA 方案形成开源对照。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lerobot-v060-imagine-evaluate-improve.md)
 
 ---

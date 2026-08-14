@@ -25,12 +25,12 @@ OneAdvanced（英国企业软件供应商，服务 10,000+ 客户）需要在数
 
 ## 相关实体
 
-- [Strands Agents](../ch04/779-strands-agents.html)
-- [Strands Agents 成本优化](../ch04/779-strands-agents.html)
-- [Strands Agents 高性能 GenAI 系统](../ch04/779-strands-agents.html)
+- [Strands Agents](../ch04/787-strands-agents.html)
+- [Strands Agents 成本优化](../ch04/787-strands-agents.html)
+- [Strands Agents 高性能 GenAI 系统](../ch04/787-strands-agents.html)
 - [Bedrock AgentCore Coding Agent 托管](ch11/059-bedrock-agentcore.html)
 - [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md)
-- [vLLM](../ch01/880-vllm.html)
+- [vLLM](../ch01/883-vllm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws.md)
 

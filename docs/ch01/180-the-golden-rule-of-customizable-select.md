@@ -37,7 +37,7 @@ When you remember to follow the rule, you’ll improve the user experience, supp
 - 与现有实体的差异化角度：本文来自 webkit.org 视角
 - 引用源：[Webkit Customizable Select Golden Rule](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/webkit-customizable-select-golden-rule.md)
 ## 相关实体
-- [tokenomics: the 62.5-minute rule for claude](ch01/776-anthropic.html)
+- [tokenomics: the 62.5-minute rule for claude](ch01/778-anthropic.html)
 - [from doer to director: the ai mindset shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)
 - [why internally-built ai fails fund accounting audits](ch01/143-why-internally-built-ai-fails-fund-accounting-audits.html)
 

@@ -51,11 +51,11 @@
 ## 相关实体
 
 - [场景营销前端 AI Coding — AI Native 的视觉稿还原](../ch05/022-ai-native.html)
-- [场景营销前端 AI Coding — 从问题到方案](../ch05/122-ai-coding.html)
-- [视觉还原 AI 技术](../ch05/105-ai.html)
+- [场景营销前端 AI Coding — 从问题到方案](../ch05/124-ai-coding.html)
+- [视觉还原 AI 技术](../ch05/107-ai.html)
 - [淘宝前端 AI 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 - [Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判](../ch05/001-impeccable.html)
-- [AE 到可运行代码：大淘宝 AI 动画全链路方案](../ch01/1119-20.html)
+- [AE 到可运行代码：大淘宝 AI 动画全链路方案](../ch01/1129-20.html)
 - [设计系统的新作者：从 Agent 读到 Agent 写](../ch03/037-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/design-to-code-loop-figma.md)

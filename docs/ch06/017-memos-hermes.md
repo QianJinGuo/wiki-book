@@ -117,13 +117,13 @@ curl -fsSL https://raw.githubusercontent.com/MemTensor/MemOS/openclaw-local-plug
 |---------|--------|
 || [Hermes Agent](../ch03/098-hermes-agent.html) | MemOS 是 Hermes 的记忆插件，解决 Hermes 记忆乱的痛点 |
 || [Claude Code 架构解析](../ch03/084-claude-code.html) | Claude Code 的 Query Loop 含上下文管理，和 MemOS 的记忆注入思路一致 |
-|| [AgentCore Harness](../ch04/766-agentcore-harness.html) | AgentCore 管运行时，MemOS 管记忆，是不同维度的 Agent 基础设施 |
+|| [AgentCore Harness](../ch04/775-agentcore-harness.html) | AgentCore 管运行时，MemOS 管记忆，是不同维度的 Agent 基础设施 |
 **核心洞察**：Harness Engineering（AgentCore）和记忆工程（MemOS）是 Agent 走向生产的两个不同维度——前者管"运行"，后者管"记忆"。
 
 ## Related
 - [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memos-hermes-plugin.md)
 - [Hermes Agent 记忆系统深度拆解](ch06/013-hermes-agent-memory.html)
-- [AI Agent 工程师能力地图](../ch04/209-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/581-ai-agent.html)
 ## 相关实体
 - [Ai Task Scheduling Dynamic Hibernate Aliyun Mse](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-task-scheduling-dynamic-hibernate-aliyun-mse.md)
 
@@ -131,7 +131,7 @@ curl -fsSL https://raw.githubusercontent.com/MemTensor/MemOS/openclaw-local-plug
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/253-openclaw.html)
-- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/649-agent-loop.html)
+- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/658-agent-loop.html)
 
 ---
 

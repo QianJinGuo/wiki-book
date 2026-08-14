@@ -36,11 +36,11 @@ Schluntz 提出每 7 个月 AI 编程任务时长翻倍的增长曲线，意味�
 5. **接受责任模型转变，重新定义职业核心能力**：工程师的价值不再体现在"代码写得漂亮"，而体现在"能否说清楚要什么、能否在高层验证结果"。这是职业身份的重新定位，需要刻意练习新的能力组合。
 
 ## 相关实体
-- [Anthropic Coding Agents Social Science Survey 2026](ch09/048-anthropic-coding-agent.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/543-vibe-coding-agentic-engineering.html)
-- [从Vibe Coding到Agentic Engineering重构后台开发全流程](../ch04/294-agentic.html)
-- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/273-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/776-anthropic.html)
+- [Anthropic Coding Agents Social Science Survey 2026](ch09/049-anthropic-coding-agent.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/548-vibe-coding-agentic-engineering.html)
+- [从Vibe Coding到Agentic Engineering重构后台开发全流程](../ch04/739-agentic.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/275-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/778-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/erik-schluntz-vibe-coding-in-production.md)
 

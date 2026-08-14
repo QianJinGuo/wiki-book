@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **46 篇**实体，按深度递增排列。
+> 本章收录 **47 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 7 |
-| ⭐⭐ 工程师 | 需编程基础 | 36 |
+| ⭐⭐ 工程师 | 需编程基础 | 37 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -1255,7 +1255,123 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 
 ---
 
-## Ch14.011 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
+## Ch14.011 京东 JoyAI 模型矩阵亮相 WAIC 2026 — 从数字世界走向物理世界的 AI 全栈布局
+
+> 📊 Level ⭐⭐ | 12.9KB | `entities/京东joyai模型矩阵waic-2026.md`
+
+# 京东 JoyAI 模型矩阵亮相 WAIC 2026 — 从数字世界走向物理世界的 AI 全栈布局
+
+## 摘要
+
+在 2026 世界人工智能大会（WAIC）期间，京东首次系统展示面向物理世界的 JoyAI 模型矩阵，涵盖语音、图像、视频、实时交互、世界模型和具身智能等多个基础模型。京东同时开源了行业最大人类视角数据集 JoyEgoCam，并打造首个 JoyInside "AI Home" 场景，将模型能力延伸至物流、健康、工业等多个产业场景。这一布局体现了京东"AI 走出数字世界、参与物理世界感知决策与行动"的战略方向。
+
+## 核心要点
+
+- **JoyAI 基础模型体系**：以 JoyAI 基座大模型为核心，覆盖语音、图像、视频、实时交互、世界模型和具身智能的七大基础模型矩阵，包括 JoyAI-Talker（实时语音交互）、JoyAI-Video-Edit（实时视频编辑）、JoyAI-Echo（长音视频生成）、JoyAI-VL-Interaction（视频语言交互）等
+- **JoyAI-Talker**：实时语音交互模型，具备低延迟对话、情绪理解、工具调用和记忆能力，让 AI 从机械执行指令走向理解人的意图和状态
+- **JoyAI-Video-Edit**：实时视频编辑模型，支持自定义画面和边预览边修改，大幅降低视频制作门槛
+- **EgoLive 人类视角数据集**：京东开源行业最大人类视角数据集，基于 60 万人参与、2 年内采集 1000 万小时人类真实数据，构建全球最大具身数据采集中心
+- **JoyInside AI Home**：首个 "AI Home" 场景覆盖客厅、厨房、学习区和卧室，已与近 200 家品牌合作，计划接入超 1000 万台硬件设备，让 JoyAI 从云端进入终端
+
+## 模型矩阵详解
+
+### 实时交互模型
+
+**JoyAI-Talker** 是京东在实时语音交互领域的核心产品。区别于传统的语音助手，JoyAI-Talker 具备四个关键能力：
+
+- 低延迟对话——响应速度接近实时对话
+- 情绪理解——识别用户语气和情绪状态
+- 工具调用——在对话中调用其他服务和功能
+- 记忆能力——跨会话保持上下文
+
+这些能力使 AI 从"听懂指令"进化为"理解意图"，在多设备、多场景的家庭环境中尤为关键——比如判断"帮我把空调调低两度"是谁说的、在跟谁说、是不是对自己说的。
+
+### 视频与多模态模型
+
+- **JoyAI-Video-Edit**：实时视频编辑模型，用户可以在预览过程中实时修改画面，实现所见即所得的编辑体验
+- **JoyAI-Echo**：长音视频生成框架，支持 5 分钟一致性输出 + 7.5x DMD 加速 + Director Agent，详见 [JoyAI-Echo 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-framework-jd.md)
+- **JoyAI-VL-Interaction**：全栈开源视频语言交互模型，详见 [JoyAI-VL-Interaction](https://github.com/QianJinGuo/wiki/blob/main/entities/jd-joyai-vl-interaction-video-language-open-source.md)
+
+### 具身数据与训练基础设施
+
+京东构建了覆盖"采、存、标、训、评、仿、测"的全链路具身数据基础设施：
+
+1. **人类数据采集**：发动 60 万人参与，使用 JoyEgoCam 采集第一视角数据，2 年内完成 1000 万小时真实数据采集
+2. **数据标注与结构化**：将原始视频转为机器人可学习的"教材"，搭建数据交易平台
+3. **数字孪生训练**：根据真实场景搭建数字孪生空间，让机器人反复训练和评测
+4. **真机验证**：在实体环境（如星辰智能理货机器人）中完成商品整理与补货
+
+这一完整链路解决了具身智能领域"真实世界数据不足"的关键瓶颈——不同于互联网文本和图片，具身数据采集成本高、标注难、不同机器人本体之间数据无法直接复用。
+
+### JoyInside 产业落地
+
+JoyInside 将 JoyAI 模型能力植入家电、家居、机器人等硬件设备，覆盖客厅、厨房、学习区、卧室等多个家庭场景：
+
+- **AI 投影台灯**：通过无屏漫反射投影进行扫题批改和实时答疑
+- **智能茶吧机**：识别用户语音指令主动确认水温并出水
+- **智能厨房设备**：记住一家人的口味和饮食禁忌，分步骤引导烹饪
+- **智能床垫**：持续捕捉呼吸、体动等睡眠体征，生成周/月度睡眠报告
+
+此外，京东将模型能力延伸至产业现场：物流"超脑"统一调度决策（仓库选址、库存管理、配送路径优化），健康"京医千询"AI 医生产品矩阵，以及 JoyIndustrial 工业供应链"AI 智采管家"。目前京东 AI 已应用于零售、物流、健康、金融、工业、本地生活等 3000+ 业务场景。
+
+## 深度分析
+
+### 京东的差异化 AI 战略：场景驱动而非参数竞赛
+
+当行业聚焦大模型参数规模和基准排名时，京东走出了一条独特的**场景驱动**路径。依托 20 多年积累的供应链能力和海量产业数据，京东的 AI 战略核心不是比拼单一模型的能力，而是构建"模型-数据-终端-场景"的完整闭环。这一策略的合理性在于：在 AI 进入物理世界的阶段，单一模型的性能天花板不再是主要瓶颈，真正壁垒在于**系统集成与场景落地的工程能力**。京东在全球 3000+ 业务场景中部署 AI，积累了其他玩家难以复制的"最后一公里"经验。
+
+### 具身数据战略的前瞻性
+
+京东在具身数据上的投入力度值得关注。60 万人参与、1000 万小时真实数据、全链路"采存标训评仿测"基础设施的布局，表明京东将**数据作为具身智能的核心战略资产**。这一判断与行业共识一致：具身智能的瓶颈不在算法而在数据。互联网中文字和图片充足，但机器人操作数据（第一视角、触觉、力反馈、操作轨迹）极其稀缺。京东通过自身物流、仓储、家庭场景的优势，天然拥有人类真实操作数据，将其开源以降低行业门槛，既能推动生态发展，也为自身积累标准化的数据基础设施。
+
+### "AI 走出数字世界"的产业逻辑
+
+京东在 WAIC 展示的完整路径——模型提供理解和决策能力、数据提供真实世界经验、终端和场景承接行动与服务——反映了 AI 产业从**信息处理**向**物理世界运营**的范式迁移。京东将自己定位为"全球最大物理世界运营中心"，依托物流网络、供应链基础设施和消费场景，构建 AI 在真实世界中的训练-验证闭环。"飞狼"无人机、智元具身机器人、智能仓库等场景，使京东具备了其他 AI 公司难以复制的"真实世界测试场"优势。
+
+### JoyInside 作为 To C 入口的战略价值
+
+JoyInside 计划接入超 1000 万台硬件设备，本质上是在构建一个 **AI 时代的消费端入口**。不同于以对话为核心的家庭 AI（如智能音箱），JoyInside 强调多设备协同——电视、灯具、玩具、陪伴机器人不再各自为战，而是围绕家庭成员的真实需求协同服务。这种"协同智能"（collaborative intelligence）比单设备智能更难实现，因为它需要解决多人说话识别、环境噪声抑制、跨设备任务跟踪、长期记忆等技术挑战，但一旦建成，其用户粘性和数据壁垒远高于单设备方案。
+
+## 实践启示
+
+1. **场景驱动的 AI 战略比参数竞赛更具可持续性**：在 AI 进入物理世界的阶段，系统集成能力和场景理解深度比单一模型的基准分数更重要。京东的 3000+ 业务场景覆盖展示了"广度本身就是壁垒"的竞争逻辑。
+
+2. **具身数据基础设施建设需提前布局**：真实世界的第一视角数据是具身智能的稀缺资源，且采集成本高、周期长。如果有条件，应尽早建立数据采集-标注-训练的全链路基础设施，而非等到需要时才仓促搭建。
+
+3. **模型矩阵的统一底座规划**：京东以 JoyAI 基座大模型为统一核心，覆盖语音、图像、视频、交互等多个垂直能力。这种"统一底座 + 领域适配"的架构避免了多模型体系的碎片化问题，降低了运维复杂度和推理成本。
+
+4. **To C 场景的协同智能比单设备智能更具价值**：家庭 AI 的核心挑战不是单个设备的智能化水平，而是多设备在动态环境中的协同能力。JoyInside 的设计——判断"谁在说、跟谁说、是不是对我说"——代表了家庭 AI 的正确发展方向。
+
+5. **开源数据作为生态杠杆**：京东开源 EgoLive 数据集降低了行业获取高质量具身数据的门槛。在 AI 生态竞争中，关键数据资产的开源可以吸引更多开发者和合作伙伴，形成围绕自身技术栈的生态系统。
+
+## 第 2 来源 — JoyAI-Video-Edit 实时流式视频编辑（新智元，2026-08-07）
+
+> v×c=56 (v=7 c=8 s=4) | 来源：新智元报道「实时视频版 Nano Banana 来了！160亿参数重磅开源」
+
+- **定位**：京东开源的 JoyAI-Video-Edit 是赛道里第一个同时做到「流式架构 + 实时速度 + 可用质量」的视频编辑模型——720P 下推理 30 FPS、端到端稳定 24FPS、支持任意时长稳定流式编辑（视频可以一直播一直改）
+- **架构**：MLLM 条件编码器 + 因果视频 VAE + 16B 多模态扩散 Transformer，按自回归扩散编辑器训练部署；SA-DMD 蒸馏把十几步迭代压缩到两步出图；单张 B200 上 226ms 端到端延迟、30.1 FPS 吞吐
+- **有界 KV 状态推理（核心创新）**：限制模型记忆量为「最近几段画面 + 视频首帧参照」，其余全部丢弃——计算/内存占用恒定不随视频时长增长；训练阶段专项优化让模型学会在有限记忆下稳住长视频画面
+- **基准**：OpenVE-Bench 总分 3.60（SANA-Streaming 2.62 / LiveEdit 2.00 / XMax-X2.0 1.87 / StreamDiffusionV2 1.23），进入离线商业模型区间（Runway Aleph 3.45 / PixVerse V6 3.05）；自建 LongV2VBench 五类全第一（3.30，领先 XMax-X2.0 1.59 分）；人类两两盲评偏好率 90/87/87/81%
+- **互补角度 5 条**：
+  1. 「流式」vs「实时」双维度定义（挂活流 vs 速度跟得上播放），此前无模型够到 24 FPS 流畅门槛
+  2. 大模型流式编辑的「时长漂移」难题（自回归误差累积）与有界 KV 解法——泛化到任意长视频编辑的通用方案
+  3. 流式编辑三重约束（前后一致性 / 原视频保真 / 指令一致性）的问题框架
+  4. 实时编辑改变工作流的三层叙事（消除等待 / 一次拍摄多成品 / 可编程语义层）+ RV2V 参考图引导换装
+  5. 具身智能数据生产管线：人操作视频 → 实时换机械臂形态（30 FPS）——JoyAI 矩阵（VL-Interaction/Talker/RA/Video-Edit）闭环造机器人训练数据
+
+## 相关实体
+
+- [JoyAI-VL-Interaction 视频语言交互模型](https://github.com/QianJinGuo/wiki/blob/main/entities/jd-joyai-vl-interaction-video-language-open-source.md)
+- [JoyAI-Echo 长视频生成框架](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-echo-long-video-framework-jd.md)
+- [JoyAI 实时视频交互](https://github.com/QianJinGuo/wiki/blob/main/entities/joyai-vl-interaction-jd-open-source-real-time-video-2026.md)
+- [小米机器人汽车工厂操作](https://github.com/QianJinGuo/wiki/blob/main/entities/小米机器人汽车工厂柔性操作多机协同-2026.md)
+- [企业 AI Native 转型](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-native-company-transformation.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/京东joyai模型矩阵亮相waic-2026.md) · [JoyAI-Video-Edit 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/joyai-video-edit-streaming-real-time-open-source-jd-2026.md)
+
+---
+
+## Ch14.012 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/kimi-k2-6-tidb-agent-database.md`
 
@@ -1396,7 +1512,7 @@ one agent, one sandbox, one storage, one database
 
 ---
 
-## Ch14.012 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
+## Ch14.013 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md`
 
@@ -1495,7 +1611,7 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ---
 
-## Ch14.013 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
+## Ch14.014 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
 
 > 📊 Level ⭐⭐ | 11.5KB | `entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md`
 
@@ -1605,7 +1721,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ---
 
-## Ch14.014 具身数据产业格局：97家玩家与447亿融资
+## Ch14.015 具身数据产业格局：97家玩家与447亿融资
 
 > 📊 Level ⭐⭐ | 10.7KB | `entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md`
 
@@ -1707,7 +1823,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ---
 
-## Ch14.015 London's police asked Big Tech for comms data over 700,000 times last year
+## Ch14.016 London's police asked Big Tech for comms data over 700,000 times last year
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/london-met-police-big-tech-data-requests.md`
 
@@ -1824,7 +1940,7 @@ LycaMobile 请求量 500% 的增长和针对移民的新立法动向表明，移
 
 ---
 
-## Ch14.016 AI-Enhanced Data Solutions with Database 26ai
+## Ch14.017 AI-Enhanced Data Solutions with Database 26ai
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/ai-enhanced-data-solutions-with-database-26ai.md`
 
@@ -1938,7 +2054,7 @@ JSON Relational Duality 的创新在于重新定义文档与关系表的竞争�
 
 ---
 
-## Ch14.017 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
+## Ch14.018 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
 
@@ -2066,7 +2182,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 ---
 
-## Ch14.018 LiveKit Agents 语音 AI 框架工程解析
+## Ch14.019 LiveKit Agents 语音 AI 框架工程解析
 
 > 📊 Level ⭐⭐ | 9.4KB | `entities/livekit-agents-voice-ai-framework.md`
 
@@ -2201,7 +2317,7 @@ MCP（Model Context Protocol）和 SIP 电话集成代表了 LiveKit 从"开发�
 
 ---
 
-## Ch14.019 Apache SeaTunnel AI CLI 模型评测
+## Ch14.020 Apache SeaTunnel AI CLI 模型评测
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/基于-amazon-bedrock-的-apache-seatunnel-ai-cli-模型评测从配置生成到真实执行.md`
 
@@ -2280,7 +2396,7 @@ SeaTunnel AI CLI 面临的挑战是整个"AI for Data Engineering"领域的缩�
 
 ---
 
-## Ch14.020 Moneyball for Physical AI
+## Ch14.021 Moneyball for Physical AI
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/moneyball-for-physical-ai.md`
 
@@ -2391,7 +2507,7 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 ---
 
-## Ch14.021 Lightfield AI pipeline generation
+## Ch14.022 Lightfield AI pipeline generation
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/lightfield-ai-pipeline-generation.md`
 
@@ -2449,7 +2565,7 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 
 ---
 
-## Ch14.022 verify-data：一个端到端的数据验数 Agent Skill
+## Ch14.023 verify-data：一个端到端的数据验数 Agent Skill
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/verify-data-agent-skill-data-validation.md`
 
@@ -2578,7 +2694,7 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 
 ---
 
-## Ch14.023 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+## Ch14.024 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
@@ -2622,7 +2738,7 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 
 ---
 
-## Ch14.024 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
+## Ch14.025 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md`
 
@@ -2717,7 +2833,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.025 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
+## Ch14.026 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/goodfire-predictive-data-debugging-post-training-anatomy-2026.md`
 
@@ -2779,7 +2895,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.026 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
+## Ch14.027 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
 
@@ -2858,7 +2974,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ---
 
-## Ch14.027 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
+## Ch14.028 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/agent-data-governance-crewai-credential-patterns.md`
 
@@ -2936,7 +3052,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.028 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
+## Ch14.029 基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md`
 
@@ -2965,7 +3081,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.029 AI 驱动的大数据工程：从平台驱动到 AIDLC 的范式迁移
+## Ch14.030 AI 驱动的大数据工程：从平台驱动到 AIDLC 的范式迁移
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/ai-engineering-platform-aidlc-migration.md`
 
@@ -3007,7 +3123,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.030 DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
+## Ch14.031 DataWorks Copilot 需求交付 Skill — 数据需求 24h 交付的 Spec Coding 实践
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/dataworks-copilot-skill-data-request-24h-delivery-taobao-2026-07-20.md`
 
@@ -3090,7 +3206,7 @@ specs/yyyymmdd_{任务名}/
 
 ---
 
-## Ch14.031 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
+## Ch14.032 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
 
@@ -3140,7 +3256,7 @@ RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中�
 
 ---
 
-## Ch14.032 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
+## Ch14.033 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
 
@@ -3206,7 +3322,7 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 
 ---
 
-## Ch14.033 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
+## Ch14.034 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
 
@@ -3276,7 +3392,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.034 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
+## Ch14.035 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
 
@@ -3391,7 +3507,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.035 DataComp for Language Models
+## Ch14.036 DataComp for Language Models
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/datacomp-for-language-models.md`
 
@@ -3443,7 +3559,7 @@ DataComp 配套开源数据处理工具：
 
 ---
 
-## Ch14.036 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
+## Ch14.037 Kafka Share Groups - Pathological fetch waits with record_limit — Jack Vanlightly
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/kafka-share-groups-pathological-fetch-waits-with-record-limi.md`
 
@@ -3498,7 +3614,7 @@ So I ran some backlog drain tests to unders
 
 ---
 
-## Ch14.037 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
+## Ch14.038 Turning Scattered Data Into Queryable Segments at Scale: Razorpay 实践
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/turning-scattered-data-into-queryable-segments-at-scale-how.md`
 
@@ -3551,7 +3667,7 @@ DPDPA also reshaped what the platform had to be. India’s Digital Personal Data
 
 ---
 
-## Ch14.038 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
+## Ch14.039 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
@@ -3585,7 +3701,7 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 
 ---
 
-## Ch14.039 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
+## Ch14.040 Databend — 开源云原生湖仓（Snowflake-like），面向 AI 的多模态一体化数仓
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/databend-open-source-lakehouse-ai-agent.md`
 
@@ -3662,7 +3778,7 @@ Databend Cloud on AWS 架构:
 
 ---
 
-## Ch14.040 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
+## Ch14.041 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
 
@@ -3716,7 +3832,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ---
 
-## Ch14.041 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
+## Ch14.042 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
@@ -3750,7 +3866,7 @@ Software is changing the world. QCon San Francisco empowers software development
 
 ---
 
-## Ch14.042 The Data Operating System for the Foundation Model Era — Data Juicer
+## Ch14.043 The Data Operating System for the Foundation Model Era — Data Juicer
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
@@ -3782,7 +3898,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ---
 
-## Ch14.043 Amazon Quick integration with time-series databases for market intelligence using MCP
+## Ch14.044 Amazon Quick integration with time-series databases for market intelligence using MCP
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
@@ -3838,7 +3954,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 ---
 
-## Ch14.044 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
+## Ch14.045 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
 > 📊 Level ⭐⭐⭐ | 14.5KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
 
@@ -3975,7 +4091,7 @@ AIDLC 转型对团队能力的要求发生根本变化：
 
 ---
 
-## Ch14.045 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
+## Ch14.046 ShotStream: Streaming Multi-Shot Video Generation (ECCV 2026, 港中文&快手可灵)
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/shotstream-streaming-multi-shot-video-cuhk-kling-eccv2026.md`
 
@@ -4046,7 +4162,7 @@ ShotStream 虽实现了实时多镜头生成，但仍面临若干挑战：长视
 
 ---
 
-## Ch14.046 理解归 AI，正确归引擎：从一句话到一条实时数据链路（0代码搭建实时任务）
+## Ch14.047 理解归 AI，正确归引擎：从一句话到一条实时数据链路（0代码搭建实时任务）
 
 > 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/理解归-ai正确归引擎从一句话到一条实时数据链路0代码搭建实时任务.md`
 

@@ -104,14 +104,14 @@ Amazon Nova、Nova Lite、Fine-tuning ^[https://aws.amazon.com/cn/blogs/china/am
 
 ## 相关实体
 - [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](ch11/231-cost-effective-deployment-of-vision-language-models-for-pet.html)
-- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/556-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
+- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/559-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/309-amazon-bedrock.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [AI Detection and Response (AIDR): A Zero-Impact Operating Model](../ch12/083-ai-detection-and-response-aidr-a-zero-impact-operating-model.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md)
 
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch04/779-strands-agents.html)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch04/787-strands-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
 ---

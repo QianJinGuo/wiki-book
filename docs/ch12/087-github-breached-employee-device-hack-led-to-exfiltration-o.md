@@ -33,9 +33,9 @@ FIRESCALE 技术（C2 地址隐藏在 GitHub 公开提交信息中）和针对�
 - **建立开发环境的零信任架构**：开发者工作站应被视为高价值攻击目标，实施持续验证（mTLS/设备证书）、网络分段（开发环境与生产环境隔离）和端点检测响应（EDR）覆盖，特别关注WSL/Linux子系统中的异常进程行为 
 
 ## 相关实体
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/904-github.html)
-- [Exiftool Compromise Mac 592994](../ch01/933-9.html)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1111-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/1093-github.html)
+- [Exiftool Compromise Mac 592994](../ch01/936-9.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1121-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch12/072-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 

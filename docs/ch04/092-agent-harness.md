@@ -157,15 +157,15 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 
 ## 相关实体
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/635-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/192-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/813-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Claude Code 设计原则与对照分析](../ch03/084-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/253-openclaw.html)
-- [Code as Agent Harness 综述](../ch09/062-code-as-agent-harness.html)
+- [Code as Agent Harness 综述](../ch09/063-code-as-agent-harness.html)
 - [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
@@ -177,12 +177,12 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 - [AI Native 时代 —— 研发组织何去何从](../ch05/022-ai-native.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/077-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/037-agent.html)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/105-ai.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/107-ai.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Harness 解析：智能体架构深度拆解](../ch05/042-agent-harness.html)
-- [From Agent Protocol to Harness Skill](ch04/511-from-agent-protocol-to-harness-skill.html)
+- [From Agent Protocol to Harness Skill](ch04/515-from-agent-protocol-to-harness-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1-million-exposed-ai-services-hackernews.md)
 

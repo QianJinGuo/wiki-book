@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **39 篇**实体，按深度递增排列。
+> 本章收录 **41 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 14 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 20 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 22 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -2093,7 +2093,86 @@ vLLM 原生 RMSNorm 使用优化的 CUDA 算子（`fused_add_rms_norm`），但�
 
 ---
 
-## Ch16.022 vLLM V0→V1 迁移中的 logprob 差异修复
+## Ch16.022 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
+
+> 📊 Level ⭐⭐⭐ | 9.6KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
+
+# MiMo-V2.5 推理系统全链路优化
+
+## 摘要
+
+小米 MiMo-V2.5 系列模型的推理系统全链路优化方案，围绕 Hybrid SWA + MoE + 多模态复合架构，系统性重构了 KVCache 管理、调度策略、Prefill/Decode 链路，实现 API 降价最高 99%。这是业内首篇全面覆盖该组合架构的大规模工程落地方案。
+
+## 核心要点
+
+1. **Hybrid SWA 架构**：70 层 Transformer 中 10 层 Full Attention + 60 层 Sliding Window Attention（窗口 128 token），KVCache 降至 1/7，Prefill 计算量降至 1/7
+2. **KVCache 系统重构**：双池分治（Full KV Pool + SWA KV Pool环形缓冲区）、前缀缓存树重构、GCache 三级缓存（GPU→CPU→NVMe SSD）
+3. **调度优化**：KVCache 亲和调度（L2 命中率+25%）、计算量感知优先调度（TTFT P90 -30%）、EP 缩减与三级长度分桶
+4. **Decode 加速**：MTP 投机解码（前 128 token 加速 2.3×）、SWA 显存扩容（有效容量 +5 倍）
+5. **多模态链路并行化**：Encoder 跨请求 Batch、GPU 图片预处理、视频多 chunk 并行（1 小时视频 156s→23s）
+
+## 深度分析
+
+### 1. Hybrid SWA 是生产级 LLM 推理的成本最优解之一
+
+MiMo-V2.5 证明了一个关键假设：在 70 层模型中仅用 14% 的 Full Attention 层即可维持足够质量，同时将 KVCache 和 Prefill 计算量降至 1/7。这意味着 **Attention 的稀疏化不是质量牺牲而是架构设计选择**——Sliding Window Attention 对局部依赖建模能力与 Full Attention 接近，而全局依赖由少量 Full Attention 层承载。这一设计在长序列场景下优势更显著，与当前模型上下文窗口持续扩张的趋势高度契合。
+
+### 2. 前缀缓存树重构是 SWA 工程化的核心挑战
+
+SWA 模式下传统「token 序列相等 → KV 也相等」的缓存假设被打破，因为窗口滑动导致相同前缀在不同请求中的 KVCache 表示不同。MiMo 团队的解决方案——将匹配规则升级为「窗口安全长度」（尾部至少 W 个 token 仍有有效 slot），并让淘汰路径与请求生命周期绑定——是针对 SWA 特性的关键工程创新。线上命中率平均 93% 证明了这种方案的有效性。这一思路对任何采用 SWA 或其变体的推理系统都有普适参考价值。
+
+### 3. GCache 三级缓存的零成本策略值得所有推理系统借鉴
+
+GCache 利用 GPU 机器上已被分配的 CPU 内存和 NVMe SSD，作为 KVCache 的二级/三级存储，实现了「额外存储成本为零」。RDMA 通信实现 170 GB/s 读吞吐和 280μs 延迟，使三级缓存在性能上也可接受。这种「混部存算」的思路——在推理节点上复用已有的 CPU/NVMe 资源作为缓存层——比独立部署缓存集群更经济。与 `Agent 评测的分层评分引擎` 的成本分层思路一致。
+
+### 4. 计算量感知调度是对传统负载均衡的范式改进
+
+传统负载均衡考虑的是请求数量均衡，而 MiMo 的「计算量感知优先调度」考虑的是真实计算 token 数量。这一差异在混合 Attention 架构下至关重要——不同请求的 Prefill 计算量可能相差数十倍（取决于输入长度和处理 attention 的层数）。优先处理计算量小的请求再辅以等待时间惩罚避免饥饿，这种「先易后难 + 公平补偿」的策略使 TTFT P90 降低 30%，同时不牺牲吞吐。
+
+### 5. 多模态链路并行化的架构设计原则
+
+MiMo 在多模态优化上的设计体现了一个重要原则——**将瓶颈操作从 CPU/IO 路径迁移至 GPU 计算路径**。图片预处理从 CPU 侧迁移至 GPU 消除大图瓶颈，视频解码多 chunk 多线程并行化，Encoder 支持跨请求 Batch。这背后是对「GPU 利用率高但 CPU/IO 成为瓶颈」现象的工程回应——当模型推理本身已高度优化时，数据预处理和传输的瓶颈就会凸显。随着多模态 Agent 场景增多（输入含图片、音频、视频），这一优化原则将变得越来越关键。
+
+## 实践启示
+
+1. **Attention 架构选择是推理成本的根本杠杆**：在模型设计阶段，对 Attention 比例的取舍直接影响部署成本。MiMo 的 Hybrid SWA 实践证明 10% 的全注意力层就足以维持质量。模型团队应在训练前就评估推理成本，而非先训后优化。
+
+2. **前缀缓存在 SWA 架构下需要重新设计**：传统基于精确 token 匹配的缓存策略在 SWA 下失效。如果团队部署的模型使用 SWA 或变体，应参考 MiMo 的「窗口安全长度」方案重新设计缓存逻辑。
+
+3. **推理优化要系统性考虑 KVCache、调度、Decode 三个维度**：单一维度的优化效果有限，MiMo 证明三维联动（KVCache 亲和调度 + 双池分治 + 投机解码）的协同效果远超各维度之和。建议推理系统团队以「全链路」视角而非「单点优化」视角制定优化计划。
+
+4. **多模态 Agent 场景的瓶颈正在从模型推理转移到数据处理**：随着推理效率提升，图片/视频预处理和传输将逐渐成为延迟的主要贡献者。将预处理迁移到 GPU 并支持跨请求 Batch 是当前最有效的缓解策略。
+
+5. **开源回馈是检验工程质量的试金石**：MiMo 将部分优化以 PR 形式回馈 SGLang 开源社区。回馈开源的过程强制团队将临时方案标准化为通用设计，本身就是工程自检。
+
+## 相关实体
+
+- `AReaL 2.0 在线 RL 系统` — 推理基础设施的另一个维度（RL 训练方）
+- `Agent 评测体系化指南` — 分层效率设计的评估维度
+- `洞察 Agent 可信推理链路` — 企业级推理应用场景
+- `Codex Agent 项目配置` — Agent 推理客户端实践
+
+## 第 2 来源 — MiMo-V2.5-Pro-UltraSpeed：将 1T 参数模型推向 1000 TPS（2026-08-14 MERGE）
+
+> v×c=56 (v=7 c=8 s=4) | 小米大模型 (2026-06-09) | MiMo × TileRT 联合发布的 UltraSpeed 模式技术详解，与第 1 来源（推理系统全链路优化）同品牌同系列演进
+
+**核心增量：在 1T 参数旗舰模型上首次突破 1000 tokens/s 输出速度**，通过 FP4 QAT + DFlash 投机解码 + TileRT 超低延迟推理系统三层联动实现。
+
+**互补角度 5 条**：
+
+1. **FP4 选择性量化（MXFP4 QAT）**：1T 尺度下 FP8/INT8 带来恐怖显存占用和内存带宽压力，但「一刀切」FP4 会在复杂推理、逻辑代码上精度退化。针对 MoE 架构特性（Expert 占参数绝大部分且对量化精度容忍度最高），只对 MoE Expert 做 FP4 QAT 量化，其他模块保留原精度——大幅缩减模型体积、榨干硬件带宽的同时整体能力基本持平。
+2. **DFlash 投机解码**：与第 1 来源的 MTP 投机解码（前 128 token 加速 2.3×）互补的另一种解码加速路径，进一步压缩单 token 生成延迟。
+3. **TileRT 常驻内核引擎（Persistent Engine Kernel）**：1000 tokens/s 高频状态下单算子生命周期压缩至微秒级，传统推理系统「算子边界」成为核心瓶颈（每次算子启动、硬件同步、全局内存往返都在微秒尺度打断执行流）。TileRT 摒弃逐算子启动模式，让整个计算流水线常驻 GPU 内部持续流转，获得全链路持续预取能力——当前 Tile 仍在 Tensor Core 计算时，后续数据已沿存储架构提前流动，实现数据搬运与计算的极致重叠。这是「消灭算子边界」的范式级执行模型变革，可迁移到任何超低延迟推理场景。
+4. **算法重构（千亿/万亿模型带宽卸荷）与推理系统（TileRT）的分工配合**：MiMo 算法侧重构为模型卸下带宽枷锁，TileRT 推理系统侧将通用 GPU 物理潜能压榨到微秒级极限——与第 1 来源的「KVCache 亲和调度 + 双池分治 + 投机解码三维联动」构成同一优化哲学的延续。
+5. **发布形态印证生产化路径**：从 06-09 发布 UltraSpeed 模式到第 1 来源的 API 降价 99%，MiMo-V2.5 系列的推理优化从「技术能力展示」走向「成本结构重构」，验证了推理优化最终要落回商业价值。
+
+→ [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mimo-v25-pro-ultraspeed-1000tps-xiaomi-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mimo-v2-5-inference-system-optimization-hybrid-swa.md)
+
+---
+
+## Ch16.023 vLLM V0→V1 迁移中的 logprob 差异修复
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
@@ -2171,7 +2250,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 ---
 
-## Ch16.023 京东 JoyAI-VL-Interaction — 全栈开源视频语言交互模型
+## Ch16.024 京东 JoyAI-VL-Interaction — 全栈开源视频语言交互模型
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/jd-joyai-vl-interaction-video-language-open-source.md`
 
@@ -2261,7 +2340,7 @@ JoyAI-VL-Interaction 选择全栈开源，与许多大模型企业的闭源策�
 
 ---
 
-## Ch16.024 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
+## Ch16.025 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
 
@@ -2395,7 +2474,67 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ---
 
-## Ch16.025 ServiceNow vLLM V0→V1 正确性修复
+## Ch16.026 COVERT — VLMaaS 协变混淆隐私保护推理框架（ECCV 2026）
+
+> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/covert-vlmaas-covariant-obfuscation-eccv-2026.md`
+
+# COVERT — VLMaaS 协变混淆隐私保护推理框架（ECCV 2026）
+
+## 摘要
+
+COVERT 是字节跳动安全研究团队与南京大学联合提出的、首个专门面向视觉语言模型即服务（VLMaaS）的实用隐私保护推理框架，论文《COVERT: Privacy-Preserving Covariant Obfuscation for VLMaaS via Exact Reparameterization and Tailored Tuning》入选 ECCV 2026。它延续文本 LLM 的协变混淆思想，在客户端对输入与模型参数做协同变换、在服务端完成混淆空间内的等价推理，使云端无法直接观察明文图像、提示词与响应。五个主流多模态评测集上平均精度下降控制在 3% 以内，vLLM 上吞吐开销低于 6%。
+
+## 核心要点
+
+- **问题定位**：医疗、金融、办公自动化等场景下，用户上传的图像可能含人脸、车牌、医疗影像与票据，服务端或攻击者一旦恢复即构成严重泄露。
+- **现有方案的两难**：MPC、同态加密、TEE 开销过高，难适配高维视觉输入与实时推理；差分隐私扰动则破坏视觉-语言语义对齐，显著损伤模型效果。
+- **协变混淆机制**：对输入与模型参数做成对变换，服务端在混淆空间完成等价计算——区别于只扰动输入，在保护隐私同时维持模型功能一致性。
+- **视觉管线精确重参数化**：针对卷积 patch 化、ViT 特征提取、语义投影三个模块构造可精确抵消的变换，含零空间噪声注入、bias/RoPE/FFN 门控适配、块对角逆变换与共享对齐掩码。
+- **隐藏状态反演攻击防御**：识别出浅层 ViT 注意力中的空间可逆风险，通过私有种子高斯噪声注入 + 效用感知选择性微调，将第一层隐藏状态反演攻击的 SSIM 从 0.3404 压至 0.1550（下降 54.46%）。
+- **部署效率**：在 vLLM 部署 Qwen2.5-VL-32B（30 并发、1064 视觉 token/提示）时，TTFT 仅增 0.86%、吞吐下降 5.93%，可继承 KV-cache 与并行解码优化。
+- **通信优化**：6-bit 量化把视觉输入混淆的传输扩展压至约 1.30 倍、仅损失约 2.39% 精度，比单请求耗时数分钟的 MPC 更适合实时客户端-服务端架构。
+
+## 深度分析
+
+### 协变混淆：从文本 LLM 到 VLM 的机制迁移
+
+协变混淆的核心是「成对变换」：客户端持有私有密钥，将输入与模型参数按同一套可逆关系协同变换后交给服务端，服务端在混淆参数上执行的每步计算在数学上与原模型等价，因此无需同态加密或 TEE 等重安全原语，就能阻止服务端直接读取明文。文本侧已有 PrivLLM 协变混淆作为先例，COVERT 的难点在于视觉编码器并非纯 Transformer：卷积 patch 化可重写为矩阵乘法并构造满足可逆关系的随机变换矩阵，客户端向混淆输入注入零空间噪声、服务端计算时被精确抵消；ViT 中的加性 bias、RoPE 位置约束与 FFN 门控函数会破坏结构等价性，需逐一适配；语义投影层则通过块对角逆变换、隐藏层置换与共享对齐掩码，使视觉特征无缝进入混淆后的 LLM 语义空间。
+
+### 威胁模型：结构等价混淆的盲区与隐藏状态反演
+
+仅做参数混淆并不完整——论文揭示了一个容易被忽视的攻击面：攻击者可利用浅层 ViT 注意力中的空间先验（spatial prior），从服务端可见的隐藏状态高保真地恢复车牌等敏感视觉细节。纯结构等价混淆无法防御这一点：计算等价不意味着中间表示的统计结构脱离明文视觉内容。COVERT 的应对是把混淆从「参数层」推进到「表示层」：在第一层 ViT 注意力参数中注入由用户私有种子控制的高斯噪声，再用公开图像数据对注意力矩阵与归一化层做效用感知的轻量微调（冻结其余参数），使最终隐藏状态尽量贴近原模型，同时显著改变中间注意力模式、破坏可逆结构。实验显示，未经调优的混淆方案面对自适应攻击仍会泄露浅层视觉细节，而调优后反演攻击 SSIM 从 0.3404 降至 0.1550（−54.46%）、MSE 从 3275.28 升至 4577.28（+39.75%），攻击结果趋近于噪声。
+
+### 精度-隐私-效率三角与 ECCV 2026 贡献
+
+COVERT 的贡献在于把 VLM 隐私保护从「安全协议」重新定义为「模型结构适配 + 参数空间混淆」问题，同时逼近三条约束：效果上，Qwen2.5-VL 系列平均精度下降约 1.83%–2.58%（8-bit 量化约 1.68%–2.81%），更大模型因参数冗余更强而更鲁棒；效率上，vLLM 高并发吞吐开销仅 5.93%、TTFT 增加 0.86%，几乎完全继承 KV-cache 与并行解码优化；隐私上，非自适应反演攻击结果退化为噪声。与多服务器交互、单请求耗时数分钟的 MPC 相比，COVERT 是首个把 VLM 隐私推理推进到「可直接部署」形态的框架，这也是其入选 ECCV 2026 的核心原因。
+
+### 局限与开放问题
+
+当前方案仍有明显边界：视觉输入混淆带来额外通信负载，需靠维度压缩与量化缓解；适配验证集中在 Qwen2.5-VL 等代表性架构，MiMo-VL、Fara 仅验证了效果稳定性；信任假设是「客户端可信、仅服务端不可信」，与多方密钥分发等更强模型不同；视频与长上下文任务尚属空白。团队后续计划围绕更低通信开销、更广架构适配、视频与长上下文任务拓展——隐私保护正从合规要求演变为多模态 AI 服务可信落地的基础能力。
+
+## 实践启示
+
+1. 评估 VLMaaS 隐私方案时以「精度-隐私-效率」三角而非单一指标为基线：MPC/HE/TEE 保证强但难实时，差分隐私保效率却破坏语义对齐，协变混淆是当前工程折中点。
+2. 隐私保护应覆盖「输入-参数-响应」全链路：COVERT 同时对视觉输入、文本提示词与推理响应做混淆，只保护输入的单点方案会留下响应侧泄露面。
+3. 部署前主动做隐藏状态反演攻击评估：即使模型参数已混淆，浅层注意力中的空间先验仍可能被自适应攻击利用，需配套表示层扰动而非仅依赖结构等价变换。
+4. 采用「效用感知」调优：公开数据 + 冻结大部分参数 + 只微调注意力/归一化等关键层，可在不牺牲效果的前提下显著压低中间表示的泄露能力。
+5. 优先选兼容现有推理引擎的混淆设计：COVERT 在 vLLM 吞吐仅降 5.93%，隐私改造不应推翻 KV-cache 与并行解码等 serving 基建。
+6. 用「量化 + 维度压缩」控制通信成本：6-bit 量化把传输扩展压至 1.30 倍、精度损失约 2.39%，这是混淆方案落地前必须核算的隐藏开销。
+
+## 相关实体
+
+- [Agent 安全攻防综述](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-security-survey-attack-defense.md) — 推理侧隐私保护与 Agent 攻防同属 AI 系统安全议题
+- [Agent 评测基准综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-survey-ibm-yale-2026.md) — 评测视角下的 AI 系统能力与风险
+- [vLLM 高效推理](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md) — COVERT 的部署基座与效率基准
+- [MosaicLeaks 隐私泄露](https://github.com/QianJinGuo/wiki/blob/main/entities/mosaicleaks-privacy-risks-deep-research-agents-servicenow.md) — 服务型 AI 隐私泄露的另一视角
+- [机密计算全链路](https://github.com/QianJinGuo/wiki/blob/main/entities/baidu-confidential-computing-cpu-gpu-full-chain.md) — TEE 机密计算路线的替代对比
+- [CoLT（ECCV 2026）](https://github.com/QianJinGuo/wiki/blob/main/entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md) — 同期 ECCV 2026 多模态推理工作
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/顶会入选-covert-面向视觉语言模型的隐私保护推理框架入选-eccv-2026.md)
+
+---
+
+## Ch16.027 ServiceNow vLLM V0→V1 正确性修复
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
 
@@ -2483,7 +2622,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ---
 
-## Ch16.026 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+## Ch16.028 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
 
@@ -2577,7 +2716,7 @@ Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw
 
 ---
 
-## Ch16.027 Quantization Techniques
+## Ch16.029 Quantization Techniques
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/quantization-techniques.md`
 
@@ -2642,70 +2781,7 @@ BitNet 与 Bonsai Image 4B 正在改写量化叙事：低比特不再是事后�
 
 ---
 
-## Ch16.028 MiMo-V2.5 推理系统全链路优化：Hybrid SWA + MoE + 多模态生产级落地
-
-> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/mimo-v2-5-inference-system-optimization-hybrid-swa.md`
-
-# MiMo-V2.5 推理系统全链路优化
-
-## 摘要
-
-小米 MiMo-V2.5 系列模型的推理系统全链路优化方案，围绕 Hybrid SWA + MoE + 多模态复合架构，系统性重构了 KVCache 管理、调度策略、Prefill/Decode 链路，实现 API 降价最高 99%。这是业内首篇全面覆盖该组合架构的大规模工程落地方案。
-
-## 核心要点
-
-1. **Hybrid SWA 架构**：70 层 Transformer 中 10 层 Full Attention + 60 层 Sliding Window Attention（窗口 128 token），KVCache 降至 1/7，Prefill 计算量降至 1/7
-2. **KVCache 系统重构**：双池分治（Full KV Pool + SWA KV Pool环形缓冲区）、前缀缓存树重构、GCache 三级缓存（GPU→CPU→NVMe SSD）
-3. **调度优化**：KVCache 亲和调度（L2 命中率+25%）、计算量感知优先调度（TTFT P90 -30%）、EP 缩减与三级长度分桶
-4. **Decode 加速**：MTP 投机解码（前 128 token 加速 2.3×）、SWA 显存扩容（有效容量 +5 倍）
-5. **多模态链路并行化**：Encoder 跨请求 Batch、GPU 图片预处理、视频多 chunk 并行（1 小时视频 156s→23s）
-
-## 深度分析
-
-### 1. Hybrid SWA 是生产级 LLM 推理的成本最优解之一
-
-MiMo-V2.5 证明了一个关键假设：在 70 层模型中仅用 14% 的 Full Attention 层即可维持足够质量，同时将 KVCache 和 Prefill 计算量降至 1/7。这意味着 **Attention 的稀疏化不是质量牺牲而是架构设计选择**——Sliding Window Attention 对局部依赖建模能力与 Full Attention 接近，而全局依赖由少量 Full Attention 层承载。这一设计在长序列场景下优势更显著，与当前模型上下文窗口持续扩张的趋势高度契合。
-
-### 2. 前缀缓存树重构是 SWA 工程化的核心挑战
-
-SWA 模式下传统「token 序列相等 → KV 也相等」的缓存假设被打破，因为窗口滑动导致相同前缀在不同请求中的 KVCache 表示不同。MiMo 团队的解决方案——将匹配规则升级为「窗口安全长度」（尾部至少 W 个 token 仍有有效 slot），并让淘汰路径与请求生命周期绑定——是针对 SWA 特性的关键工程创新。线上命中率平均 93% 证明了这种方案的有效性。这一思路对任何采用 SWA 或其变体的推理系统都有普适参考价值。
-
-### 3. GCache 三级缓存的零成本策略值得所有推理系统借鉴
-
-GCache 利用 GPU 机器上已被分配的 CPU 内存和 NVMe SSD，作为 KVCache 的二级/三级存储，实现了「额外存储成本为零」。RDMA 通信实现 170 GB/s 读吞吐和 280μs 延迟，使三级缓存在性能上也可接受。这种「混部存算」的思路——在推理节点上复用已有的 CPU/NVMe 资源作为缓存层——比独立部署缓存集群更经济。与 `Agent 评测的分层评分引擎` 的成本分层思路一致。
-
-### 4. 计算量感知调度是对传统负载均衡的范式改进
-
-传统负载均衡考虑的是请求数量均衡，而 MiMo 的「计算量感知优先调度」考虑的是真实计算 token 数量。这一差异在混合 Attention 架构下至关重要——不同请求的 Prefill 计算量可能相差数十倍（取决于输入长度和处理 attention 的层数）。优先处理计算量小的请求再辅以等待时间惩罚避免饥饿，这种「先易后难 + 公平补偿」的策略使 TTFT P90 降低 30%，同时不牺牲吞吐。
-
-### 5. 多模态链路并行化的架构设计原则
-
-MiMo 在多模态优化上的设计体现了一个重要原则——**将瓶颈操作从 CPU/IO 路径迁移至 GPU 计算路径**。图片预处理从 CPU 侧迁移至 GPU 消除大图瓶颈，视频解码多 chunk 多线程并行化，Encoder 支持跨请求 Batch。这背后是对「GPU 利用率高但 CPU/IO 成为瓶颈」现象的工程回应——当模型推理本身已高度优化时，数据预处理和传输的瓶颈就会凸显。随着多模态 Agent 场景增多（输入含图片、音频、视频），这一优化原则将变得越来越关键。
-
-## 实践启示
-
-1. **Attention 架构选择是推理成本的根本杠杆**：在模型设计阶段，对 Attention 比例的取舍直接影响部署成本。MiMo 的 Hybrid SWA 实践证明 10% 的全注意力层就足以维持质量。模型团队应在训练前就评估推理成本，而非先训后优化。
-
-2. **前缀缓存在 SWA 架构下需要重新设计**：传统基于精确 token 匹配的缓存策略在 SWA 下失效。如果团队部署的模型使用 SWA 或变体，应参考 MiMo 的「窗口安全长度」方案重新设计缓存逻辑。
-
-3. **推理优化要系统性考虑 KVCache、调度、Decode 三个维度**：单一维度的优化效果有限，MiMo 证明三维联动（KVCache 亲和调度 + 双池分治 + 投机解码）的协同效果远超各维度之和。建议推理系统团队以「全链路」视角而非「单点优化」视角制定优化计划。
-
-4. **多模态 Agent 场景的瓶颈正在从模型推理转移到数据处理**：随着推理效率提升，图片/视频预处理和传输将逐渐成为延迟的主要贡献者。将预处理迁移到 GPU 并支持跨请求 Batch 是当前最有效的缓解策略。
-
-5. **开源回馈是检验工程质量的试金石**：MiMo 将部分优化以 PR 形式回馈 SGLang 开源社区。回馈开源的过程强制团队将临时方案标准化为通用设计，本身就是工程自检。
-
-## 相关实体
-
-- `AReaL 2.0 在线 RL 系统` — 推理基础设施的另一个维度（RL 训练方）
-- `Agent 评测体系化指南` — 分层效率设计的评估维度
-- `洞察 Agent 可信推理链路` — 企业级推理应用场景
-- `Codex Agent 项目配置` — Agent 推理客户端实践
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mimo-v2-5-inference-system-optimization-hybrid-swa.md)
-
----
-
-## Ch16.029 elasticpp重塑elasticsearch查询性能的c内核引擎
+## Ch16.030 elasticpp重塑elasticsearch查询性能的c内核引擎
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md`
 
@@ -2771,7 +2847,7 @@ elasticpp 没有选择替换整个 Elasticsearch，而是将最核心、最耗�
 
 ---
 
-## Ch16.030 Bonsai Image 4B: 1-bit 和 Ternary 量化
+## Ch16.031 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
 
@@ -2837,7 +2913,7 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.031 vLLM V0 to V1: Correctness Before Corrections in RL
+## Ch16.032 vLLM V0 to V1: Correctness Before Corrections in RL
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/servicenow-vllm-correctness.md`
 
@@ -2875,7 +2951,7 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 
 ---
 
-## Ch16.032 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
+## Ch16.033 腾讯混元 Hy3 preview 在 Hopper 卡上的推理优化实践
 
 > 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-hopper-inference-optimization.md`
 
@@ -2932,7 +3008,7 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 
 ---
 
-## Ch16.033 Pytorch in Kernel Recsys Optimization
+## Ch16.034 Pytorch in Kernel Recsys Optimization
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
 
@@ -2967,7 +3043,7 @@ GPU→CPU→KVStore 三级缓存体系，请求按 L1→L2→L3 顺序查询可�
 
 ---
 
-## Ch16.034 14× faster embeddings: how we rebuilt the ONNX path in Manticore
+## Ch16.035 14× faster embeddings: how we rebuilt the ONNX path in Manticore
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/14-faster-embeddings-how-we-rebuilt-the-onnx-path-in-mantico.md`
 
@@ -3004,7 +3080,7 @@ This post is the engineering log: what we tried, what surprised us, what we thre
 
 ---
 
-## Ch16.035 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
+## Ch16.036 Model Routing Is Simple. Until It Isn't — IBM Research 多目标优化路由
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/ibm-research-model-routing-optimization-2026.md`
 
@@ -3048,27 +3124,55 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.036 COVERT — VLMaaS 协变混淆隐私保护推理框架（ECCV 2026）
+## Ch16.037 Native-speed vLLM transformers modeling backend
 
-> 📊 Level ⭐⭐⭐ | 2.0KB | `entities/covert-vlmaas-covariant-obfuscation-eccv-2026.md`
+> 📊 Level ⭐⭐⭐ | 1.8KB | `entities/native-speed-vllm-transformers-modeling-backend.md`
 
-# COVERT — VLMaaS 协变混淆隐私保护推理框架（ECCV 2026）
+# Native-speed vLLM transformers modeling backend
 
-> 字节跳动安全研究团队 + 南京大学，2026-07-27。论文《COVERT: Privacy-Preserving Covariant Obfuscation for VLMaaS via Exact Reparameterization and Tailored Tuning》入选 ECCV 2026。
+Hugging Face 2026-07 发布 vLLM transformers modeling backend 提速成果：**transformers 实现的模型在 vLLM 引擎内达到（或超过）手写 vLLM 实现的速度**——模型作者无需再为每个框架各写一遍自定义实现。
 
-## 研究背景与方案
+## 机制
 
-- **问题**：VLMaaS 模式下用户上传图像/提示词到云端推理，图像含人脸、医疗影像、票据等敏感信息，服务端或攻击者可恢复造成泄露
-- **现有方案局限**：MPC/同态加密/TEE 开销过高；差分隐私扰动破坏视觉-语言语义对齐
-- **COVERT 方案**：基于字节 PrivLLM 协变混淆方法的 VLM 扩展——客户端对输入和模型参数协同混淆，服务端运行混淆后的 VLM 推理，在不牺牲实用性前提下保护输入图像
+- 旧模式：新模型要集成两次——transformers 一次 + vLLM 自定义优化一次；追求极致性能仍需手写 vLLM 实现
+- 新模式：模型作者写好 transformers 实现即自动获得 vLLM 高速推理；vLLM 引擎在运行时插入注意力实现等高性能组件
+- 支持范围：多数 LLM 架构；线性注意力模型暂不支持；Hub repo 中的自定义模型因未按规范编写而大概率不兼容
 
-属于 [Agent 安全攻防](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agents-security-survey-attack-defense.md) 相邻的推理隐私保护方向，与隐私推理基准类评测（如 [Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-survey-ibm-yale-2026.md)）互补。
+## 基准方法
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/顶会入选-covert-面向视觉语言模型的隐私保护推理框架入选-eccv-2026.md)
+三条件对照（唯一差异是代码路径）：`native`（vLLM 手写，基准线）/ `after`（transformers + PR）/ `before`（transformers 无 PR）。可复现 runner 以 gist 形式公开。
+
+## 意义
+
+这是 [vLLM](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm.md) 生态与 [transformers 兼容性](https://github.com/QianJinGuo/wiki/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md) 的关键里程碑：把"写一次代码"的愿景从训练侧（transformers）延伸到推理侧（vLLM），属于 [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 的工程范式变化——推理性能不再要求重复实现。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/native-speed-vllm-transformers-modeling-backend.md)
 
 ---
 
-## Ch16.037 TMAP 平台图生视频推理加速实践
+## Ch16.038 Nunchaku — 4-bit Diffusion 推理加速
+
+> 📊 Level ⭐⭐⭐ | 1.2KB | `entities/nunchaku-4bit-diffusion-inference-diffusers.md`
+
+# Nunchaku — 4-bit Diffusion 推理加速
+
+MIT Han Lab 的 Nunchaku 量化引擎接入 diffusers 生态，实现 **4-bit diffusion 模型推理**——把 SVDQuant 等低比特量化方案从实验原型变为 diffusers 可开箱使用的后端。
+
+## 关键点
+
+- **4-bit 量化**：扩散模型权重压到 4-bit，显著降低显存占用
+- **diffusers 集成**：作为推理后端直接可用，降低使用门槛
+- **开源生态**：MIT Han Lab 出品，与 [量化技术](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) 家族一致
+
+## 定位
+
+属于 [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 在生成式视觉模型上的延伸——与 LLM 侧 4-bit 量化（GGUF/GPTQ 等）对应，扩散模型的低比特推理是显存受限部署（本地/边缘）的关键路径。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nunchaku-4bit-diffusion-inference-diffusers.md)
+
+---
+
+## Ch16.039 TMAP 平台图生视频推理加速实践
 
 > 📊 Level ⭐⭐⭐ | 0.9KB | `entities/tmap-video-generation-inference-acceleration-taobao-2026-07-22.md`
 
@@ -3083,7 +3187,7 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.038 Speculative Decoding
+## Ch16.040 Speculative Decoding
 
 > 📊 Level ⭐⭐⭐ | 0.9KB | `entities/speculative-decoding.md`
 
@@ -3113,7 +3217,7 @@ IBM Research 的路由器将路由重新定义为**优化问题**而非分类问
 
 ---
 
-## Ch16.039 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
+## Ch16.041 PUMA — 语义保持的推理模型早停（Semantic-Preserving Early Exit for Reasoning Models）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/puma-semantic-early-exit-reasoning-convergence-2605.md`
 

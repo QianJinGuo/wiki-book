@@ -148,7 +148,7 @@ Back Engineering Labs 方法的核心洞察是：去虚拟化的主要工作量�
 - [Static Devirtualization of Themida](ch12/107-static-devirtualization-of-themida.html)（另一版本）
 
 - [Static Devirtualization 2024](ch12/021-static-devirtualization-2024.html)
-- [static devirtualization of themida](../ch01/299-verbalized-sampling-prompt-engineering-icml2026-mode-collaps.html)
+- [static devirtualization of themida](../ch01/300-verbalized-sampling-prompt-engineering-icml2026-mode-collaps.html)
 
 ---
 

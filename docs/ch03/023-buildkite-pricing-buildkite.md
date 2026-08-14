@@ -51,8 +51,8 @@ Buildkite 把 CI 拆成两个平面并分别定价：编排平面由 SaaS 托管
 
 - [Buildkite Pricing（旧版条目）](ch03/023-buildkite-pricing-buildkite.html)
 - [Hermes Cron vs GitHub Actions：自动化对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/hermes-cron-vs-github-actions.md)
-- [AI Is Writing More Code. Your CI Pipeline Can't Keep Up](../ch01/1092-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.html)
-- [AI Agent 时代的 CI/CD 生存指南](../ch04/209-ai-agent.html)
+- [AI Is Writing More Code. Your CI Pipeline Can't Keep Up](../ch01/1102-ai-is-writing-more-code-your-ci-pipeline-can-t-keep-up.html)
+- [AI Agent 时代的 CI/CD 生存指南](../ch04/581-ai-agent.html)
 - [GitLab 裁员与 Agent 平台扩张](ch03/037-agent.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

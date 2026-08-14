@@ -48,7 +48,7 @@ Vibe Coding 场景的特殊性包括：应用形态跨度大（长期业务系�
 ## 与其他实体关系
 
 - [AI Native 开发工作流](../ch05/022-ai-native.html) — 本实体是 AI Native 开发中**数据基础设施层**的具体实现案例
-- 本实体展示了传统数据库在 AI 时代需要"从架构底层重新设计"的理念，与 [Vibe Coding 范式](../ch04/543-vibe-coding-agentic-engineering.html) 互补
+- 本实体展示了传统数据库在 AI 时代需要"从架构底层重新设计"的理念，与 [Vibe Coding 范式](../ch04/548-vibe-coding-agentic-engineering.html) 互补
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-postgresql-serverless-feishu-ai-vibe-coding-2026.md)
 

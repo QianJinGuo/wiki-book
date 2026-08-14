@@ -125,8 +125,8 @@ Qoder 提供了 Git 共享和管理员治理的机制，但这不意味着管理
 
 Qoder 明确指出"团队规范混乱时，自动化会放大坏的习惯"。如果团队的代码规范本身未被共识、模块边界模糊、commit 质量低，那么将这些内容编译进知识库只会让错误更加固化。在引入 Qoder 之前，团队需要先梳理和建立基本的工程规范，否则知识引擎会在错误的基础上高效运转。 
 ## 相关实体
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/122-ai-coding.html)
-- [Tmall Ai Coding Practice Team Knowledge Base Npm](../ch05/122-ai-coding.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/124-ai-coding.html)
+- [Tmall Ai Coding Practice Team Knowledge Base Npm](../ch05/124-ai-coding.html)
 - [Tencent Ai Team Knowledge Harness](../ch05/077-harness.html)
 - [Tencent Ai Team Knowledge Mgmt Harness Moat](../ch05/077-harness.html)
 - [Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)
