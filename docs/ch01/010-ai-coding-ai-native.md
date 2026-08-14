@@ -57,7 +57,7 @@ Tarot Pixel 的一条核心设计原则是：**能用工程确定性解决的，
 4. **精度控制**：字重修正、透明度去重、数值四舍五入
 5. **资源自动导出**：蒙版强制 PNG，简单矢量用 SVG，图片填充用 PNG
 
-这些处理确保交到 Agent 手上的是干净、精确的信息。AI 只需要处理真正的判断问题——「这个图层是装饰还是内容？」。这种「工程做工程的事、AI 做 AI 的事」的边界划分，是 [Agent-Native 设计](../ch09/101-deepseek-code-harness.html) 的核心实践。
+这些处理确保交到 Agent 手上的是干净、精确的信息。AI 只需要处理真正的判断问题——「这个图层是装饰还是内容？」。这种「工程做工程的事、AI 做 AI 的事」的边界划分，是 [Agent-Native 设计](../ch09/015-deepseek-code-harness.html) 的核心实践。
 
 ### Skill 驱动的能力扩展与去中心化扩展
 
@@ -101,7 +101,7 @@ MCP 本质上是「人做预处理，AI 做翻译」的模式；Tarot Pixel 则�
 - Specflow Agent 任务规划（参见 [Coding Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md)） — Tarot Pixel 的协作搭档，负责业务上下文
 - [Hermes Agent](../ch03/098-hermes-agent.html) — 通用 Agent 系统中的上下文管理与工具设计
 - [Claude Code 深度架构分析](../ch03/084-claude-code.html) — Coding Agent 架构分析
-- [Agent-Native 设计](../ch09/101-deepseek-code-harness.html) — 为 AI Agent 设计工具的方法论
+- [Agent-Native 设计](../ch09/015-deepseek-code-harness.html) — 为 AI Agent 设计工具的方法论
 - [Coding Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md) — AI 编程代理技术与实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 系统架构与上下文管理
 

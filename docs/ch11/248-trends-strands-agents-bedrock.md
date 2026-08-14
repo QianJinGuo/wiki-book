@@ -20,7 +20,7 @@ EKS 应用 → FluentBit → CloudWatch Logs
                     SNS → 团队通知
 ```
 
-CloudWatch 订阅过滤器监控错误级日志模式，命中即触发 Lambda。Lambda 运行由 [Strands Agents](../ch04/779-strands-agents.html) SDK + [Amazon Bedrock](../ch04/648-amazon-bedrock-agentcore.html) 驱动的 agent：FM 做实际推理，SDK 负责工具调用编排——定义可用工具，模型自己决定何时、如何调用。给定堆栈追踪，agent 可能抓取相关源码文件、发现需要更多上下文、搜索相关错误处理逻辑、产出结构化分析，全程无需硬编码调查路径。
+CloudWatch 订阅过滤器监控错误级日志模式，命中即触发 Lambda。Lambda 运行由 [Strands Agents](../ch04/787-strands-agents.html) SDK + [Amazon Bedrock](../ch04/657-amazon-bedrock-agentcore.html) 驱动的 agent：FM 做实际推理，SDK 负责工具调用编排——定义可用工具，模型自己决定何时、如何调用。给定堆栈追踪，agent 可能抓取相关源码文件、发现需要更多上下文、搜索相关错误处理逻辑、产出结构化分析，全程无需硬编码调查路径。
 
 ## 关键工具设计：docstring 驱动模型选择
 
@@ -72,7 +72,7 @@ TReNDS 处理健康相关研究数据（可能涉及 HIPAA），数据驻留是�
 - [快手 RCA Agent](../ch03/037-agent.html)：同样面向根因分析自动化，快手版更侧重 LLM 推理链与人工确认闭环，本文侧重事件触发（CloudWatch 订阅过滤）+ 工具检索设计
 - [Agentic Incident Triage](ch11/239-amazon-quick.html)：事件分类/分诊场景，本文是深度调查（源码级）场景
 - [Agent 可观测性](../ch03/037-agent.html)：本文是"用 agent 做应用可观测性"的反向用例
-- [AgentCore Harness](../ch04/579-amazon-bedrock-agentcore-harness-ga-api-agent.html)：同 AWS Agent 生态
+- [AgentCore Harness](../ch04/585-amazon-bedrock-agentcore-harness-ga-api-agent.html)：同 AWS Agent 生态
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-trends-automates-root-cause-analysis-with-amazon-bedrock.md)
 

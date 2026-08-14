@@ -57,7 +57,7 @@
 ## 相关实体
 
 - [How to Build an AI-Native Startup](../ch05/022-ai-native.html)
-- [YC Spring 2026 全批 196 家公司分析：AI 不再是差异点](ch01/1119-20.html)
+- [YC Spring 2026 全批 196 家公司分析：AI 不再是差异点](ch01/1129-20.html)
 - [What Do Your Startup Advisors Say About You? — Charlie O'Donnell](https://github.com/QianJinGuo/wiki/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
 - [How Superset built the IDE for AI agents on Vercel](ch01/083-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 

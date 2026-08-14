@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **61 篇**实体，按深度递增排列。
+> 本章收录 **62 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 14 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 40 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 41 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 
 ---
@@ -5134,7 +5134,58 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 ---
 
-## Ch15.050 EMO: Pretraining mixture of experts for emergent modularity | Ai2
+## Ch15.050 CDL Solver：用简洁几何描述语言桥接视觉与推理（CVPR 2026，北航）
+
+> 📊 Level ⭐⭐⭐ | 5.4KB | `entities/cvpr-2026-cdl-solver-concise-geometric-description-bridge-beihang.md`
+
+# CDL Solver：用简洁几何描述语言桥接视觉与推理（CVPR 2026，北航）
+
+## 摘要
+
+CDL Solver 是北京航空航天大学团队（Jingyun Wang, Dian Li, Xiaohan Wang, Gang Liu, Jiahong Yan, Guoliang Kang）在 CVPR 2026 Findings 提出的平面几何问题求解（PGPS）范式。核心洞察：**"解耦"比"大一统"更优雅**——不再让多模态模型端到端联合优化视觉感知与逻辑推理（两头落空），而是用高质、简炼的结构化符号语言 CDL（Conditional Declaration Language）作为中间桥梁，把"读图翻译"与"推理解题"两项任务解耦。仅用 5.5k 数据微调，即在 Formalgeo 测试集达到 85.7% 准确率，超越 Gemini 2.5 Pro（81.8%）、GPT-4o（58.0%），并比此前最佳专用模型 DFE-GPS（23.8 万数据、75.3%）数据量缩减 43 倍。
+
+## 动机：联合优化的两大困境
+
+传统 PGPS 方法将多模态模型在庞大训练数据上端到端联合微调，存在两个致命痛点：一是视觉感知与逻辑推理的联合优化困境——模型经常看错图，且**过度微调视觉对齐会损害基座 LLM 本身已强大的逻辑推理能力**；二是关键实验发现 LLM 是"隐藏的几何解题高手"——当直接提供完美精确的几何描述符号语言（GT CDL）而不给模型看图时，Qwen3 30B 的解题准确率飙升至 88.4%，远超 Qwen3-VL 30B、Claude-Opus-4.1、Gemini 2.5 Pro 等同等或更大尺寸的多模态模型。结论：LLM 推理能力完全在线，缺的只是一座精确无损而精炼的"桥梁"。
+
+## 方法与创新
+
+### CDL 三声明语言
+
+CDL（Conditional Declaration Language）包含三种核心声明：**ConsCDL**（图形基本骨架：形状、共线、共圆等）、**ImgCDL**（从几何图提取的物理/数值关系：线段长度、角度、平行垂直）、**TextCDL**（从题目文本提取的物理/数值关系）。关键在"简洁性"——高度结构化的符号语言大幅收窄模型输出搜索空间，使 MLLM Interpreter 训练更高效。
+
+### 数据重塑：Formalgeo7k-Rec-CoT
+
+原版 Formalgeo7k 数据集存在标注错误、图文不匹配等质量问题；团队派 4 位专家做严格双盲人工校验，重构 Formalgeo7k v2 并引入高质量 CoT 推导步骤，为几何学界贡献高纯度训练基石。
+
+### 两阶段训练管线
+
+- **Stage 1 — CoT 增强的监督微调**：用 Python 解析器将几何关系自动生成自然语言思维链推理步骤；训练模型按 `<think>推理步骤</think> <cdl>CDL 输出</cdl>` 格式输出。
+- **Stage 2 — CDL 匹配奖励机制的 GRPO**：传统 Solution-based Reward（最终答案对=1 否则 0）信号太稀疏（解题正确≠读图全对），小样本下极难收敛。CDL Solver 用贪婪匹配算法逐件对比生成 CDL 与 GT CDL，分别计算 Recall（鼓励完整性）与 Precision（惩罚错误/重复），ConsCDL/ImgCDL/TextCDL 独立计算后综合格式奖励——给 RL 提供高密度、高精度打分机制，极大提升 GRPO 训练效率。
+
+## 实验结果
+
+- **Formalgeo 测试集**：CDL Solver（Qwen3-VL 8B Interpreter + Qwen3 30B Solver）85.7%，超越 Gemini 2.5 Pro（81.8%）3.9pp、比 GPT-4o（58.0%）高 27.7pp
+- **vs 专用模型**：DFE-GPS 用 23.8 万数据端到端训练仅 75.3%；CDL Solver 仅 5.5k 数据（缩减 43 倍）达 85.7%
+- **跨域泛化（OOD）**：Unigeo 84.0%、MathVista 80.8%，证明通用性
+
+## 对多模态技术社区的两个核心洞察
+
+1. **解耦优于大一统**：与其用一个模型同时提升视觉感知与逻辑推理，不如通过高质简炼的结构化符号语言作为中间桥梁，把两项任务解耦，最大限度保留语言模型推理优势。
+2. **RL 需要高密度过程奖励**：在数学、编程、几何等强约束领域，二元结果奖励效率极低；设计类似 CDL 匹配的精确过程匹配机制能提供充沛信息流，让 GRPO 在极小数据规模下爆发潜力。
+
+## 相关实体
+
+- [RLHF/DPO/GRPO 对齐](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — CDL 匹配奖励是 GRPO 过程奖励的具体案例
+- [RLVR 验证驱动推理](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md) — 高密度奖励信号设计思路相通
+- [AWS GRPO/RLVR 数学推理](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — 同 GRPO 数学推理域
+- [推理模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/reasoning-models.md) — 几何推理是推理模型的专项应用
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-cdl-solver-concise-geometric-description-bridge-beihang.md)
+
+---
+
+## Ch15.051 EMO: Pretraining mixture of experts for emergent modularity | Ai2
 
 > 📊 Level ⭐⭐⭐ | 5.2KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
 
@@ -5175,7 +5226,7 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 
 ---
 
-## Ch15.051 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
+## Ch15.052 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/mobileforge-annotation-free-gui-agent-kuaishou-zju-2026.md`
 
@@ -5235,7 +5286,7 @@ HiFPO 将失败经验转化为训练信号，包含四条关键设计：
 
 ---
 
-## Ch15.052 Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
+## Ch15.053 Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
 
@@ -5271,7 +5322,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ---
 
-## Ch15.053 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
+## Ch15.054 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/emces-icml2026-episodic-memory-controlled-experience-synthesis-rl.md`
 
@@ -5311,7 +5362,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.054 SkillOS
+## Ch15.055 SkillOS
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillos.md`
 
@@ -5367,7 +5418,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.055 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
+## Ch15.056 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
 
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/localdpo-cvpr2026-video-diffusion-local-preference-taobao.md`
 
@@ -5422,7 +5473,7 @@ LocalDPO 为视频生成模型的偏好对齐提供了一种高效、稳定且�
 
 ---
 
-## Ch15.056 Farewell Ai2
+## Ch15.057 Farewell Ai2
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/farewell-ai2.md`
 
@@ -5462,7 +5513,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.057 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
+## Ch15.058 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
 
@@ -5497,7 +5548,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.058 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.059 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 27.8KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -5878,7 +5929,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.059 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.060 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 22.3KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
 
@@ -6193,7 +6244,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.060 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.061 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
@@ -6267,7 +6318,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.061 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.062 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
 

@@ -80,7 +80,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 - 危险操作的二次确认（删除文件、修改配置、转账）
 - 沙箱化 Agent 进程（chroot / 容器 / separate user）
 
-这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/456-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
+这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/459-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
 
 ### 四、4 种 AWS 部署方式的工程含义
 
@@ -117,15 +117,15 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 
 ## 关联实体
 
-- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/648-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/657-amazon-bedrock-agentcore.html)
 - [EKS Graviton 多租户 OpenClaw K8s 实践](../ch11/253-openclaw.html)
-- [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/648-amazon-bedrock-agentcore.html)
+- [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/657-amazon-bedrock-agentcore.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/077-harness.html)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/456-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/459-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Claude Code vs OpenClaw Memory 对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/084-claude-code.html)
-- [Claude Code vs OpenClaw 使用 Ettin](../ch09/040-claude-code-openclaw-usage-ettin.html)
-- [Claude Managed Agents 自托管沙箱企业版](../ch04/799-claude-managed-agents.html)
+- [Claude Code vs OpenClaw 使用 Ettin](../ch09/041-claude-code-openclaw-usage-ettin.html)
+- [Claude Managed Agents 自托管沙箱企业版](../ch04/626-claude-managed-agents.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

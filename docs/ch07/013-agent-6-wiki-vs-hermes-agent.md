@@ -141,11 +141,11 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - [Hermes Agent Memory System Three Layer Architecture](../ch06/013-hermes-agent-memory.html)
 - [Hermes Agent Self Evolving](../ch03/098-hermes-agent.html)
 - [Hermes Skill System](ch07/019-hermes-skill.html)
-- [Hermes 9 Module Architecture](../ch01/291-hermes.html)
+- [Hermes 9 Module Architecture](../ch01/292-hermes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-storage-six-schools-quantumtransf-debate-frank.md)
 
-- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/291-hermes.html)
+- [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](../ch01/292-hermes.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 ## 深度分析

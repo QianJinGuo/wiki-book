@@ -82,7 +82,7 @@ Obsidian 的插件生态极为丰富，涵盖 AI 功能、数据库、日程管�
 ## Related
 - [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
 - [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — 云端 AI 研究助手
-- [ChatGPT Memory](../ch01/548-chatgpt-memory.html) — 对话式记忆
+- [ChatGPT Memory](../ch01/551-chatgpt-memory.html) — 对话式记忆
 - [Hermes-Agent](../ch03/098-hermes-agent.html) — 可通过 Local REST API 与 Obsidian 交互
 
 ## 深度分析
@@ -128,7 +128,7 @@ iOS/Android 端体验弱于桌面端，优化方案：
 
 ## 相关实体
 
-- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](../ch01/1119-20.html)
+- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](../ch01/1129-20.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
 
 - 核心写作和链接工作留在桌面端完成

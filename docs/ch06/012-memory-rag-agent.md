@@ -161,7 +161,7 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 ## 相关实体
 - [Context Engineering Three Memory Paradigms](ch06/045-memory.html)
 - [Agent Memory Architecture Essence](../ch04/180-agent-memory.html)
-- [How Ai Agent Memory Works](../ch04/214-how-ai-agent-memory-works.html)
+- [How Ai Agent Memory Works](../ch04/215-how-ai-agent-memory-works.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](../ch04/180-agent-memory.html)
 - [Agent Memory Architecture Ruofei](../ch04/180-agent-memory.html)
 

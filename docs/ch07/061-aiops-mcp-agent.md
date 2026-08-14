@@ -69,7 +69,7 @@ Agent 的输入侧是告警洪流：同一故障在多套系统重复报警、�
 - [MCP Agent 外部生态集成](../ch03/037-agent.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [OpsPilot Zero 零人工运维](../ch03/037-agent.html)
-- [Qoder StarOps AI Ops 根因定位](../ch01/966-qoder.html)
+- [Qoder StarOps AI Ops 根因定位](../ch01/971-qoder.html)
 
 ---
 

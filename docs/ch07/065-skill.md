@@ -59,22 +59,22 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ni-xie-de-skill-ji-ge-liao-ma.md)
 
 ## 相关实体
-- [Skill.md 简历生成器 Resume Forge](../ch04/345-skill.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/600-agent-skill.html)
+- [Skill.md 简历生成器 Resume Forge](../ch04/348-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch04/607-agent-skill.html)
 - [Hermes Agent](../ch03/098-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/037-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/503-aws-sagemaker-ai-agent.html)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/345-skill.html)
-- [SkillClaw](../ch04/552-skillclaw-nacos-agent-skill-registry.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/507-aws-sagemaker-ai-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/348-skill.html)
+- [SkillClaw](../ch04/557-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/019-hermes-skill.html)
-- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/345-skill.html)
+- [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/348-skill.html)
 - [SkillX — 层次化技能知识库](ch07/060-skillx.html)
-- [Anthropic 14 个 Agent Skills 设计模式](../ch04/311-anthropic-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/481-agent-skills.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/308-anthropic-agent.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/033-agent-skills.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch07/037-qoder-skills.html)
-- [Thin Harness Fat Skills](../ch05/097-thin-harness-fat-skills-ai.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/273-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Thin Harness Fat Skills](../ch05/099-thin-harness-fat-skills-ai.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/275-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ---
 

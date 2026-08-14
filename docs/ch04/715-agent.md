@@ -1,53 +1,53 @@
-# Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
+# 小刘商业 Agent 增强层通用基座
 
-## Ch04.715 Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
+## Ch04.715 小刘商业 Agent 增强层通用基座
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md`
+> 📊 Level ⭐⭐ | 3.9KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
 
-# Agent落地真相：协议、成本与进化——关于智能体从能跑通到能投产的讨论
+# Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
 
-> **v×c=64** | value=8 confidence=8 stars=4 | 2026-07-05
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/CyA5UUXhH7MzLwes1XPgnQ
-ingested: 2026-07-05
+## 深度分析
 
-source_published: 2026年6月30日 17:00
+Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606 涉及agent领域的核心技术议题。
+### 核心观点
+1. 复用通用 Agent 基座，把业务知识、工具、流程和评测做成可验证增强层。
+2. 很多团队一说要做业务 Agent，第一反应是搭一个自己的 Agent Framework：规划器、执行循环、工具调度、记忆、权限、人机交互，最好再做成平台。
+3. 这个方向听起来完整，真正落地时却很容易把团队拖进基础设施泥潭。
+4. 我更倾向于反过来做：先把 Codex、Claude Code 这类
+通用 Agent 基座
+当成现成基座，让它们承担推理、代码理解、工具调用和多轮执行。
+5. 业务团队的精力不要花在重写这些能力上，而是补它们缺的那部分：
+业务知识、内部工具、流程规则、权限边界、评测集和线上观测
+这样做不是偷懒。
 
----
+### 内容结构
+- 元信息
 
-直播推荐  
+### 技术要点
 
-从金融风控到数据语义，再到自进化工程，谈谈智能体的“进化与防退化”
+- **agent架构**: 本文在agent方向提出的设计理念与实现路径
+- **工程挑战**: 实际落地中面临的关键问题与应对策略
+- **architecture趋势**: 相关技术演进方向与新兴范式
+### 关联实体
 
-扫码加入直播交流群，更有精华资料免费领！
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/739-agentic.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/813-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/298-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/253-openclaw.html)
 
-2026年6月25日晚，DataFun 技术社区举办了一场关于 Agent 智能体企业级落地的深度对话。主持人古永丰——FoundationAgents 开源社区核心成员、DeepWisdom 学术研究员——与两位来自一线实战派的技术负责人：深圳价值网络科技技术副总监况雨平，以及碧桂园服务集团技术总监毛卓，围绕 Agent 落地的三个核心命题——协议协作、自进化能力与成本控制——展开了一场长达90分钟的坦诚讨论。
+## 实践启示
+1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
+2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
+3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
+4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
 
-这场对话没有回避任何尖锐问题：Agent 跑通了 Demo 却无法投产，到底缺什么？60%以上的 Token 都是无效消耗，这是技术问题还是管理问题？当 AI Coding 大规模铺开，产品经理、开发、测试的角色究竟谁被强化、谁被弱化？三位嘉宾从协议层、工程层、管理层三个维度，用各自的实战经验，描绘了 Agent 在理想与现实之间的真实图景。
+## 相关实体
 
-本文完整记录了这场讨论的核心内容，力求以对话的形式还原现场的思辨氛围，为正在推动 AI 落地的技术团队提供有温度的实战参考。
-
-扫码报名
-
-**01  
-**
-
-**话题一：Agent 进入业务，最被忽视的短板是什么？
-
-**
-
-当主持人古永丰抛出第一个问题时，三位嘉宾几乎不约而同地指向了同一个方向——但角度完全不同。
-
-毛卓从成本维度切入，语气沉稳却直击要害：“对传统企业来说，一个 Agent 能不能落地，首先
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent落地真相-协议-成本与进化-关于智能体从能跑通到能投产的讨论.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- 相关: [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 ---
 

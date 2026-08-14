@@ -100,11 +100,11 @@ Wasp 团队是 Haskell 老兵，对 DSL + 编译器 + 形式化规范有深厚�
 ## 相关实体
 
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html) — AI 友好架构设计
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/796-anthropic-claude-code.html) — 大代码库最佳实践
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/798-anthropic-claude-code.html) — 大代码库最佳实践
 - [Ai Coding Agent From Helloworld To Production](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md) — AI Coding Agent 走向生产
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — Harness 工程范式转移
-- [qwen code skill testing framework: recording, playback, and](../ch04/345-skill.html)
+- [qwen code skill testing framework: recording, playback, and](../ch04/348-skill.html)
 
 ---
 

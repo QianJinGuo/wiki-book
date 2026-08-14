@@ -54,8 +54,8 @@ Pit Crew 不需要写品牌调性指南，营销人员不需要配置 MCP 服务
 ## 相关实体
 - from-system-of-record-to-system-of-intelligence.md-intelligence
 - [Enterprise Software Moats Agent Era](../ch03/037-agent.html)
-- [Salesforce Headless Software Losing Head A16Z](../ch01/358-1.html)
-- [Ibm Forward Deployed Units Ai Deployment](../ch05/105-ai.html)
+- [Salesforce Headless Software Losing Head A16Z](../ch01/332-1.html)
+- [Ibm Forward Deployed Units Ai Deployment](../ch05/107-ai.html)
 - from-system-of-record-to-system-of-intelligence.md-intelligence-1
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/here-comes-forward-deployed-everybody.md)

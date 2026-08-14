@@ -39,7 +39,7 @@ Claude Opus 4.7 成功重新实现了 gotree——约 16,000 行 Go 代码、40+
 
 ## 与 Wiki 现有概念的关系
 
-MirrorCode 填补了 [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 中长时程维度的空白——现有 [LLM 基准全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md) 以短任务为主，而 MirrorCode 把「重建整个程序」变成可评测任务，与 [Agentic RL 长时程实践](../ch04/310-agentic-rl.html) 互补。
+MirrorCode 填补了 [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 中长时程维度的空白——现有 [LLM 基准全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md) 以短任务为主，而 MirrorCode 把「重建整个程序」变成可评测任务，与 [Agentic RL 长时程实践](../ch04/312-agentic-rl.html) 互补。
 
 其推理预算设计（$2,600 / 19 天）与 [长时程 Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md) 直接呼应——评测预算必须匹配任务的真实难度，否则短预算只会测出「短时程能力」。
 
@@ -49,8 +49,8 @@ MirrorCode 填补了 [Agent 评估基准](https://github.com/QianJinGuo/wiki/blo
 
 - [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
 - [LLM 基准全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md)
-- [Claude Opus 4.7](../ch01/1219-claude.html)
-- [Agentic RL 长时程实践](../ch04/310-agentic-rl.html)
+- [Claude Opus 4.7](../ch01/639-claude.html)
+- [Agentic RL 长时程实践](../ch04/312-agentic-rl.html)
 - [长时程 Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md)
 - [编码基准 reward hacking](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)
 
