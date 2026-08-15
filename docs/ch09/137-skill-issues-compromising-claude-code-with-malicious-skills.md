@@ -19,7 +19,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
 
-- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch05/107-ai.html)
+- [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch05/108-ai.html)
 
 ## 深度分析
 - **Skill 供应链攻击的本质**：Skill 文件（`.claude/commands/*.md` 或 `.claude/skills/*/SKILL.md`）本质上是自然语言指令集，但通过 `allowed-tools` frontmatter 可以声明工具权限，这等同于要求操作系统授予特定权限。相比 PyPI/npm 的包管理生态，Skill 文件缺乏签名验证、版本锁定或来源审计机制，攻击门槛极低。

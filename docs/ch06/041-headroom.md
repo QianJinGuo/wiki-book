@@ -42,8 +42,8 @@ Headroom 可以作为**库、proxy、wrapper、MCP server**使用。
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/739-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/813-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/815-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/298-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)

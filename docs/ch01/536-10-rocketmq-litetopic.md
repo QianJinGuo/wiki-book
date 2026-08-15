@@ -44,7 +44,7 @@ LiteTopic 为何是漏桶的天然载体，三个维度恰好对上"GPU 稀缺 +
 
 - [百炼网关 LiteTopic 限流](ch01/622-rocketmq-litetopic.html) — 本实体对应的英文条目
 - [RocketMQ LiteTopic 消息](ch01/622-rocketmq-litetopic.html) — LiteTopic 技术背景
-- [RocketMQ A2A 通信](../ch04/828-rocketmq-a2a.html) — RocketMQ 生态扩展
+- [RocketMQ A2A 通信](../ch04/829-rocketmq-a2a.html) — RocketMQ 生态扩展
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/限流比降-10-倍百炼网关如何用-rocketmq-litetopic-重构大模型限流.md)
 

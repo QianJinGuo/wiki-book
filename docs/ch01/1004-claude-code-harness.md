@@ -37,7 +37,7 @@ Claude Code 实现了 fake_tool_injection 防御以污染训练数据，connecto
 
 ## 深度分析
 
-**1. Thin Harness 作为架构哲学的落地**：Claude Code 的 50 行 Orchestrator + 4 种工具原语是"Thin Harness"理念的极致实践。与 [Thin Harness Fat Skills](../ch05/099-thin-harness-fat-skills-ai.html) 描述的"~200行轻量框架"一脉相承——脚手架不承载业务逻辑，模型越强框架越薄 。
+**1. Thin Harness 作为架构哲学的落地**：Claude Code 的 50 行 Orchestrator + 4 种工具原语是"Thin Harness"理念的极致实践。与 [Thin Harness Fat Skills](../ch05/100-thin-harness-fat-skills-ai.html) 描述的"~200行轻量框架"一脉相承——脚手架不承载业务逻辑，模型越强框架越薄 。
 
 **2. 六层记忆系统是 Context 工程的完整范式**：Claude Code 的记忆层次覆盖从组织策略到会话上下文的全光谱，且记忆是"索引而非存储"的设计让系统可以主动编辑和去重。这是 [Agentmemory Coding Agent Local Memory](../ch06/005-agentmemory-coding-agent.html) 讨论的本地记忆系统在产品级实现中的完整形态 。
 

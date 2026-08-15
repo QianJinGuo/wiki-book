@@ -56,9 +56,9 @@ Grok 4.3 is the predecessor to Grok 4.5. While Grok 4.3 offers a 1M token contex
 
 ## Related Entities
 
-- [Grok 4 5 Model Release Xai 2026 07](../ch05/107-ai.html) — Grok 4.5 model release (successor model)
+- [Grok 4 5 Model Release Xai 2026 07](../ch05/108-ai.html) — Grok 4.5 model release (successor model)
 - [Cursor让马斯克的Grok45咸鱼翻身追平Opus 48成本比Glm52还低](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor让马斯克的grok45咸鱼翻身追平opus-48成本比glm52还低.md) — Cursor + Grok 4.5 depth analysis
-- [Xai Dissolved Grok Colossus2 Analysis](../ch05/107-ai.html) — xAI Colossus cluster analysis
+- [Xai Dissolved Grok Colossus2 Analysis](../ch05/108-ai.html) — xAI Colossus cluster analysis
 - [Openai Models Codex Amazon Bedrock Ga](ch11/309-amazon-bedrock.html) — OpenAI models on Bedrock GA
 - [Gpt 56 Sol Terra Luna Tiered Pricing Codex Merge 2026](../ch01/737-codex.html) — GPT-5.6 on Bedrock
 

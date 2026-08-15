@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 3986 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 3992 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1804 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1410 篇 |
-| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 526 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 197 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1805 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1412 篇 |
+| 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 527 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 199 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 49 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1619 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1620 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ 快手首个打工人Agent
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ... 共 **1619** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1620** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 43 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -59,13 +59,13 @@
   - ⭐ Choosing to Stay Human
   - ... 共 **142** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1804 篇**
+> 📖 **本篇共 1805 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 834 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 835 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
@@ -76,9 +76,9 @@
   - ⭐ Building AI Agents in Accounting
   - ⭐ 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
   - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
-  - ... 共 **834** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **835** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 150 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 151 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
-  - ... 共 **150** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **151** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 54 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -156,7 +156,7 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **43** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1410 篇**
+> 📖 **本篇共 1412 篇**
 
 ---
 
@@ -188,7 +188,7 @@
   - ⭐ 5 Things to Know about the CLARITY Act
   - ... 共 **130** 篇 → [完整章节](ch12-security.md)
 
-### [Ch13 MLOps 与评估](ch13-mlops.md) — 26 篇
+### [Ch13 MLOps 与评估](ch13-mlops.md) — 27 篇
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
   - ⭐ 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
@@ -199,7 +199,7 @@
   - ⭐⭐ NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
   - ⭐⭐ 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
   - ⭐⭐ 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
-  - ... 共 **26** 篇 → [完整章节](ch13-mlops.md)
+  - ... 共 **27** 篇 → [完整章节](ch13-mlops.md)
 
 ### [Ch14 数据工程](ch14-data.md) — 47 篇
 > AI 的燃料：实时入湖、流处理、数据质量
@@ -214,7 +214,7 @@
   - ⭐⭐ Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
   - ... 共 **47** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 526 篇**
+> 📖 **本篇共 527 篇**
 
 ---
 
@@ -259,7 +259,7 @@
   - ⭐⭐ LLaVA-OneVision-2：全帧率视频理解
   - ... 共 **62** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 32 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 34 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
   - ⭐ 腾讯 Hy-Embodied 具身智能基座模型与钛螺丝平台全面升级
@@ -270,9 +270,9 @@
   - ⭐⭐ 小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代
   - ⭐⭐ 小米机器人汽车工厂柔性操作与多机协同实战
   - ⭐⭐ LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
-  - ... 共 **32** 篇 → [完整章节](ch18-robotics.md)
+  - ... 共 **34** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 197 篇**
+> 📖 **本篇共 199 篇**
 
 ---
 
@@ -308,6 +308,6 @@
 
 ---
 
-**📊 全书收录：3986 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：3992 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-15 | 来源: ~/wiki/entities/
+生成时间: 2026-08-16 | 来源: ~/wiki/entities/

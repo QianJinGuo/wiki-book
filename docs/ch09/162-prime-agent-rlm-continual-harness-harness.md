@@ -25,7 +25,7 @@ Prime Intellect 于 2026-08-05 发布 Prime Agent——一个围绕两个抽象�
 
 ## 定位与意义
 
-Prime Agent 定位为通用编码助手、长程自主评估的默认 runtime、以及 research/autoresearch 协作器，完全开源。其「harness 状态可被 agent 自身 CRUD」与「context 作为 REPL 变量」的设计，与 [Agent Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 中「harness 即产品表面」的演化方向一致，也是 RLM 训练思路（见同团队 NanoGPT 递归自改进实验 [Prime Intellect 递归自改进实验](../ch05/107-ai.html)）从训练侧延伸到 harness 设计侧的落地。
+Prime Agent 定位为通用编码助手、长程自主评估的默认 runtime、以及 research/autoresearch 协作器，完全开源。其「harness 状态可被 agent 自身 CRUD」与「context 作为 REPL 变量」的设计，与 [Agent Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 中「harness 即产品表面」的演化方向一致，也是 RLM 训练思路（见同团队 NanoGPT 递归自改进实验 [Prime Intellect 递归自改进实验](../ch05/108-ai.html)）从训练侧延伸到 harness 设计侧的落地。
 
 ## 相关
 

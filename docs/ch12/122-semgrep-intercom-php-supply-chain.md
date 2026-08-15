@@ -31,11 +31,11 @@ PHP 生态的供应链攻击揭示了一个深层问题：Composer 的插件机�
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](../ch01/1024-scarcruft.html)
 - [Semis Memo: Supply Chain Inheritance](../ch01/865-semis-memo-supply-chain-inheritance.html)
 - [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](ch12/038-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/107-ai.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/108-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
-- [Semis Memo: Supply Chain Inheritance](../ch05/107-ai.html)
+- [Semis Memo: Supply Chain Inheritance](../ch05/108-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 
 ---

@@ -121,11 +121,11 @@ GitNexus 的本地化架构（代码不离开机器）是其企业推广的关�
 ## 关联阅读
 →
 ## 相关实体
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/124-ai-coding.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/778-anthropic.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/125-ai-coding.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](ch01/1586-anthropic.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/084-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/084-claude-code.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/778-anthropic.html)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/1586-anthropic.html)
 
 → [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
 → [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)

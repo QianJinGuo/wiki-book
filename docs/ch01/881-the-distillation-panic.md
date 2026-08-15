@@ -21,9 +21,9 @@ type: entity
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-distillation-panic.md)
 
-- [Qwen Image Flash Beyond Objective Design](ch01/1468-qwen-image-flash-beyond-objective-design-few-step-distill.html)
-- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](../ch05/107-ai.html)
-- [Interconnects The Inevitable Need For An Open Model Consortium](ch01/1412-the-inevitable-need-for-an-open-model-consortium.html)
+- [Qwen Image Flash Beyond Objective Design](ch01/1469-qwen-image-flash-beyond-objective-design-few-step-distill.html)
+- [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](../ch05/108-ai.html)
+- [Interconnects The Inevitable Need For An Open Model Consortium](ch01/1413-the-inevitable-need-for-an-open-model-consortium.html)
 ## 深度分析
 
 ### 术语污名化的系统性风险

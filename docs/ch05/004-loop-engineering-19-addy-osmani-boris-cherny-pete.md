@@ -352,7 +352,7 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 
 ### 与其他实体的关系
 
-- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch05/124-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
+- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch05/125-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
 - **Evaluator 部件**与 [Harness 架构](ch05/042-agent-harness.html)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
 - **State 部件**与 [Hermes Loop 架构](../ch04/309-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
 - **reviewer agent 不允许直接修复**与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)的"生成器-验证器分离"模式一致

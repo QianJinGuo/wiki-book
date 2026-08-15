@@ -83,7 +83,7 @@ Gemma 4 以 Apache 2.0 协议发布，是 Google 在开源 AI 领域的战略布
 - [Mixture of Experts (MoE)](https://github.com/QianJinGuo/wiki/blob/main/concepts/moe-mixture-of-experts-2025.md) — MoE 架构概念
 - [Speculative Decoding](https://github.com/QianJinGuo/wiki/blob/main/concepts/speculative-decoding.md) — 投机解码原理
 - **Quantization-Aware Training (QAT)** — 量化感知训练方法论（无独立概念页面）
-- [Claude Opus 4.7](ch01/639-claude.html) — 闭源竞品参考
+- [Claude Opus 4.7](ch01/1233-claude.html) — 闭源竞品参考
 - **Gemma 3n** — 前代音频编码器架构对比（无独立实体页面）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2607.02770v1.md)

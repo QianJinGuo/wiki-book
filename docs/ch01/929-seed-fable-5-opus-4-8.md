@@ -95,7 +95,7 @@ Seed-Evolving 的"统一 Model ID，新版本自动生效"设计解决了开发�
 ## 相关实体链接
 
 - [豆包 Seed 模型系列](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md)
-- [Fable 5 官方实战指南](../ch04/685-fable-5.html)
+- [Fable 5 官方实战指南](../ch04/686-fable-5.html)
 - 火山方舟平台
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent 编排模式](../ch04/618-agent-orchestration.html)

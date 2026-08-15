@@ -137,7 +137,7 @@ FTS5 的关键词搜索 + SQLite 的 session 聚合 + parent_session_id 的关�
 
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](../ch03/098-hermes-agent.html) — 同一作者的另一篇分析
 - [AI Agent 记忆系统架构](../ch04/215-how-ai-agent-memory-works.html) — Agent 记忆系统的通识性框架
-- [17种Agent架构演进](../ch04/795-17-agent.html) — 记忆设计在 Agent 演化中的位置
+- [17种Agent架构演进](../ch04/796-17-agent.html) — 记忆设计在 Agent 演化中的位置
 
 - [Hermes Agent Core Architecture Self Evolution](https://github.com/QianJinGuo/wiki/blob/main/queries/hermes-agent-core-architecture-self-evolution.md)
 ## 深度分析

@@ -122,7 +122,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - Karpathy（理论侧）：Software 3.0——执行层自动化后，方向层变得更重要
 - Boris（工程侧）：控制点迁移——人从写代码的人变成管 Agent 工作流的人
 
-这与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/739-agentic.html) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
+这与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
 
 ## 实践启示
 
@@ -178,11 +178,11 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - [深入理解 Claude Code Agent Harness 构建之道](../ch05/042-agent-harness.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/037-agent.html)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/739-agentic.html)
+- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)
 - [Anthropic 内部实践](ch01/332-1.html)
-- [DeepSeek V4 Flash Pro](ch01/1301-deepseek-v4-flash-pro.html)
-- [加速 LLM 模型加载与上下文窗口](ch01/1395-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
-- [大型表格模型基础](../ch05/107-ai.html)
+- [DeepSeek V4 Flash Pro](ch01/1302-deepseek-v4-flash-pro.html)
+- [加速 LLM 模型加载与上下文窗口](ch01/1396-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [大型表格模型基础](../ch05/108-ai.html)
 
 ---
 

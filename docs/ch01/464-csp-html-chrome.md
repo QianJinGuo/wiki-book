@@ -182,13 +182,13 @@ Content-Security-Policy:
 - [Ico Fines South Staffordshire 2022 Breach](ch01/1129-20.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Interaction Models](../ch03/110-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
-- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/107-ai.html)
+- [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch05/108-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/179-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
 - [discord 全平台端到端加密](../ch12/103-discord.html)
 - [incendium fuzzing ms rpc](../ch12/118-incendium-fuzzing-ms-rpc.html)
-- [the interface is no longer the product](../ch05/107-ai.html)
+- [the interface is no longer the product](../ch05/108-ai.html)
 - [a route to root in a 4g industrial router](ch01/1129-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

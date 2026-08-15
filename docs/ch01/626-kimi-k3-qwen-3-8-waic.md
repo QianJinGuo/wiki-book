@@ -72,7 +72,7 @@ Florian 提出了一个关键观察：AI 能力正在经历**前沿分化**—�
 ## 相关实体
 
 - [Kimi K3: The Open-Weights Escalation](ch01/608-kimi-k3-the-open-weights-escalation.html) — Kimi K3 的深度分析
-- [Kimi K3 2.8T 开源模型](ch01/1415-kimi-k3.html) — Kimi K3 技术细节
+- [Kimi K3 2.8T 开源模型](ch01/1416-kimi-k3.html) — Kimi K3 技术细节
 - **GLM 5.2 智谱开源模型** — 同代竞争模型
 - **Qwen 3.8 阿里开源模型** — Qwen 系列旗舰
 - **AI 蒸馏技术争论** — 蒸馏技术深度探讨

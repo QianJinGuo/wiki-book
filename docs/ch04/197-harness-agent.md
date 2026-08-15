@@ -112,20 +112,20 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 ## 相关实体
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/084-claude-code.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/639-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1233-claude.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/037-agent.html)
 - [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
 - [Agent Harness 架构](../ch05/042-agent-harness.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/813-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/815-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code 设计原则与对照分析](../ch03/084-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/084-claude-code.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/033-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/486-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)

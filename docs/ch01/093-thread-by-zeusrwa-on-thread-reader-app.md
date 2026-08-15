@@ -65,9 +65,9 @@ RWA 的终局是让传统资产在链上自由流通，而单一链的流动性�
 
 ## 相关实体
 
-- [@0xCheeezzyyyy：IRIS 固定利率 DeFi 借贷](ch01/1464-0.html)
+- [@0xCheeezzyyyy：IRIS 固定利率 DeFi 借贷](ch01/1465-0.html)
 - [@_patrickogrady：Tempo 共识与区块链基础设施](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
-- [稳定币 24x7 资金循环与代币化存款](../ch05/107-ai.html)
+- [稳定币 24x7 资金循环与代币化存款](../ch05/108-ai.html)
 - [Crypto 资金流入与监管叙事](ch01/936-9.html)
 - [@OpenAIDevs：Codex Hooks 与平台化](ch01/276-openai.html)
 
