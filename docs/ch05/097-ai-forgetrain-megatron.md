@@ -67,11 +67,11 @@ AI 写代码成本趋近于零 → 没有必要继续做大而全通用框架 �
 - [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/587-deepseek.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](ch05/022-ai-native.html)
 - [Karpathy Claude Md Rules](../ch01/423-claude-md.html)
-- [Tmall Ai Coding Practice Guide](ch05/124-ai-coding.html)
+- [Tmall Ai Coding Practice Guide](ch05/125-ai-coding.html)
 
 - [Minimax M3 Frontier Open Source Model](../ch09/075-minimax-m3-frontier.html)
 - [Chromium Ai Coding Development System](../ch09/061-chromium-ai-coding.html)
-- [Loongsuite Pilot Sls Ai Coding Metrics Practice](../ch01/1364-pilot-sls-ai.html)
+- [Loongsuite Pilot Sls Ai Coding Metrics Practice](../ch01/1365-pilot-sls-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

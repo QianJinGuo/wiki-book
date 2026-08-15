@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Skillclaw Collective Intelligence](ch04/348-skill.html)
-- [Skillclaw](ch04/557-skillclaw-nacos-agent-skill-registry.html)
+- [Skillclaw](ch04/558-skillclaw-nacos-agent-skill-registry.html)
 - [Skillclaw Alibaba Paperagent](ch04/348-skill.html)
 - [Wow Harness V3 Governance Protocol](../ch05/077-harness.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/369-hermes-agent-goal.html)

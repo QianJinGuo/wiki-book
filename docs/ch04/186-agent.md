@@ -48,7 +48,7 @@
 ## 相关实体
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/084-claude-code.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/065-harness-engineering.html)
-- [Tmall Marketing Ai Workflow](../ch05/107-ai.html)
+- [Tmall Marketing Ai Workflow](../ch05/108-ai.html)
 - [Harness Engineering Alibaba Java Case Study](../ch05/065-harness-engineering.html)
 - [Skill Formal Theory Survey 10Papers](ch04/348-skill.html)
 

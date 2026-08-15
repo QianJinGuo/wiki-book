@@ -2,7 +2,7 @@
 
 ## Ch09.015 DeepSeek Code Harness
 
-> 📊 Level ⭐⭐ | 38.9KB | `entities/deepseek-code-harness.md`
+> 📊 Level ⭐⭐ | 41.1KB | `entities/deepseek-code-harness.md`
 
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
@@ -230,6 +230,17 @@ DSH 用 node:worker_threads 跑模型写的编排代码：node:vm 同进程沙�
 互补角度：
 1. **开源策略信号** — DeepSeek 将 Harness 定位为开放生态组件，而非封闭产品
 2. **生态对比** — 与 Claude Code / Codex 等闭源 Harness 的竞争格局分析
+
+## 第 8 来源 — DeepSeek Harness 实测：模型之外的那一半（2026-08-15 入库，vxc=48）
+
+腾讯技术工程（元宝产品中心）在 DeepSeek-V4-Pro 上线当天对开源的 DeepSeek Harness 进行本机实测：跑通 npm、Web、Headless、Python SDK 四通道，拆解默认配置与 session log，并用 Kimi K3 对照 DSH 与 Kimi Code、让 V4 Pro 连续执行带视觉产物的复杂任务。
+
+互补角度：
+1. **实测视角补位** — 前 7 来源以架构拆解/生态分析为主，本文提供真实的四通道运行验证：runtime 已很开放，默认产品体验仍带预览版毛边，未追上 Claude Code / Codex / Kimi Code
+2. **Trajectory 价值定位** — 社区称其为「Agent 的 DevTools」：时间轴/每轮请求/日志可见，查上下文压缩、Skill 过多、模型犯错时有用；实现上直接从 session event log 投影，不另埋监控数据，轨迹更接近模型真实输入
+3. **Plugin/Preset 分工澄清** — 插件提供新能力、Preset 决定某类 Agent 能看见哪些能力；生产价值落在「删掉什么、替换什么」——Data Agent 只保留 read/edit/write 并用 sqlcmd 替换 bash，模型围着数据库执行结果转
+4. **长任务与账单数据** — Adam Platin 用内测版管理机器学习竞赛 89 步收尾；微信接入从需求到真机回复约 87.6 分钟、花费约 18 元，含 SDK 调研/零依赖客户端/mock server/真实端点冒烟
+5. **完成度不对称结论** — DSH 同时是「成熟 coding agent」与「可继续开发 Agent 的平台」两个身份，runtime 开放度与默认产品完成度不对称，一切皆插件的理念 + Trajectory 源码设计口碑最好
 
 ## 相关实体
 

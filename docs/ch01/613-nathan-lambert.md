@@ -66,10 +66,10 @@ Lambert 指出"依赖单一私人公司来评估国际关键基础设施的安�
 
 ## 相关实体
 - [Nathan Lambert Open Models Bets 2026](ch01/613-nathan-lambert.html)
-- [Chinese Ai Lab Insights Nathan](../ch05/107-ai.html)
-- [How Open Model Ecosystems Compound](ch01/1201-how-open-model-ecosystems-compound.html)
-- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/1301-deepseek-v4-flash-pro.html)
-- [Multilingual Ai](../ch05/107-ai.html)
+- [Chinese Ai Lab Insights Nathan](../ch05/108-ai.html)
+- [How Open Model Ecosystems Compound](ch01/1202-how-open-model-ecosystems-compound.html)
+- [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](ch01/1302-deepseek-v4-flash-pro.html)
+- [Multilingual Ai](../ch05/108-ai.html)
 
 - [dean ball on open models and government control](ch01/1052-dean-ball-on-open-models-and-government-control.html)
 

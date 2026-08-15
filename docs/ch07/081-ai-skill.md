@@ -16,7 +16,7 @@ Agent 在模糊需求前反复揣摩、多轮尝试、走了一半发现方向�
 ## 相关实体
 - [我用 Skillmd 做了一个简历生成器](../ch04/348-skill.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/098-hermes-agent.html)
-- [Llm Raiders Private Ai Server](../ch01/1513-llm.html)
+- [Llm Raiders Private Ai Server](../ch01/867-llm.html)
 - [Pi Mono Github](../ch01/1115-pi-mono-github.html)
 - [我用 Skillmd 做了一个简历生成器](../ch04/348-skill.html)
 

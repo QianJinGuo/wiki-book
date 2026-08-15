@@ -46,7 +46,7 @@ Karpathy 在原文里还提到了一个细节：1945 年万尼瓦尔·布什的�
 
 ## 相关实体
 - [Llm Wiki Architecture Karpathy Markdown Knowledge Base](../ch06/025-llm-wiki.html)
-- [Rag技术框架的演进方向](ch01/408-rag.html)
+- [Rag技术框架的演进方向](ch01/1284-rag.html)
 - [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](ch01/908-llm-wiki-obsidian-wiki-gbrain.html)
 - [Llm Wiki Architecture](../ch06/025-llm-wiki.html)
 - [Rag Vs Llm Wiki Enterprise Knowledge Base](ch01/044-rag-vs-llm-wiki.html)

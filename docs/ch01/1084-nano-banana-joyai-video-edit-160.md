@@ -28,9 +28,9 @@
 
 ## 相关
 
-- [Nano Banana 系列](ch01/1557-nano-banana-2-lite-gemini-omni-flash-google-deepmind.html) — "实时视频版 Nano Banana"的命名来源
+- [Nano Banana 系列](ch01/1558-nano-banana-2-lite-gemini-omni-flash-google-deepmind.html) — "实时视频版 Nano Banana"的命名来源
 - [视频生成模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/video-generation-models.md) — 与视频编辑模型的边界
-- [可控视频编辑](../ch05/107-ai.html) — 视频编辑另一技术路线
+- [可控视频编辑](../ch05/108-ai.html) — 视频编辑另一技术路线
 - [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md) — 机器人训练数据生产方向
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/实时视频版nano-banana来了160亿参数重磅开源.md)

@@ -50,14 +50,14 @@ SSD 的工程取舍本质是给两类资产定价：spec、design doc、plan 只
 
 ## 相关实体
 
-- [场景营销前端 AI Coding — 从问题到方案](ch05/124-ai-coding.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/739-agentic.html)
-- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/124-ai-coding.html)
+- [场景营销前端 AI Coding — 从问题到方案](ch05/125-ai-coding.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)
+- [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/125-ai-coding.html)
 - [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch05/065-harness-engineering.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/065-harness-engineering.html)
-- [Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](../ch01/1212-spec.html)
+- [Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](../ch01/1213-spec.html)
 - [OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定](ch05/055-openspec.html)
-- [从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/124-ai-coding.html)
+- [从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/125-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ssd-spec-driven-development-harness-asd-shuge-2026-06-17.md)
 

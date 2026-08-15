@@ -78,7 +78,7 @@ Subagent 是 Agent Harness 在**上下文管理层**的具体机制之一：
 
 - [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的上下文管理理念：工作集 vs 聊天记录
 - [Harness Engineering](../ch05/065-harness-engineering.html) 的系统性框架：模型外的 harness 决定下限
-- [Anthropic PM 的 Agentic 工作流](../ch04/574-anthropic-pm-agentic.html)：任务委派和上下文边界的判断
+- [Anthropic PM 的 Agentic 工作流](../ch04/575-anthropic-pm-agentic.html)：任务委派和上下文边界的判断
 > 原文链接：https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg
 
 ## 相关实体

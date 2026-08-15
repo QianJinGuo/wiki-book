@@ -42,7 +42,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
 
 - [注定改变历史的一代人](https://github.com/QianJinGuo/wiki/blob/main/entities/注定改变历史的一代人.md)
-- [这张信息图居然是8B开源模型做的](ch01/1230-8b.html)
+- [这张信息图居然是8B开源模型做的](ch01/1231-8b.html)
 
 ---
 

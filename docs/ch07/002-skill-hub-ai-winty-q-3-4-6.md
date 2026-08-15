@@ -252,7 +252,7 @@ winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是�
 
 winty 将 Skill 定位在"个人侧"与"工具侧"之间，并称之为"组织能力层"。这个描述有深刻的架构含义：**Skill 是对组织流程经验的结构化编码，而非硬编码的规则或松散的 Prompt 集合**。
 
-[Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](../ch05/099-thin-harness-fat-skills-ai.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
+[Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](../ch05/100-thin-harness-fat-skills-ai.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
 
 ### 4. 从"个人聪明"到"组织默认聪明"：新人入职问题的元问题
 
@@ -287,7 +287,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 
 **关键实践**：每个 Skill 在进入 Hub 时，至少需要准备一个**最小可用测试集**（哪怕是 5-10 个历史输入输出对），用于后续版本比较。
 
-这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](../ch04/607-agent-skill.html) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
+这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](../ch04/608-agent-skill.html) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
 
 ### 4. 设计 Skill 的 Fork / 分支策略，明确所有权边界
 

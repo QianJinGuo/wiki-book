@@ -56,7 +56,7 @@ Sentry 的 Explore 产品已允许查询遥测，但前提是你必须先知道�
 - [Introducing The Ettin Reranker Family](ch01/627-introducing-the-ettin-reranker-family.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/111-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/037-agent.html)
-- [Ai Agents Inside Perimeter Hackernews](../ch04/581-ai-agent.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/105-ai-agent.html)
 
 ---
 

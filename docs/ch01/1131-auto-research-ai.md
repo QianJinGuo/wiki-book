@@ -22,9 +22,9 @@ CHEMBENCH 覆盖 57 种单一或组合酶动力学机制，8 次实验后 MDA �
 
 ## 当前方法的边界
 
-目前验证主要发生在合成基准和预定义设计空间中，距离真实实验室的全自主科研还有明显距离。基础模型能力影响优势大小：跨 Opus、Fable、DeepSeek 三种模型，MDA 数值通过率保持约 89%–94%、精确形式恢复率约 74%–83%，但换成更强的 Fable 5 后，纯大模型智能体在精确形式恢复上反而更高——MDA 更稳定的优势是在紧实验预算下用模型证据筛选候选假设，通过针对性实验持续减少不确定性。这与 [Auto Research 能力分级](../ch05/107-ai.html) 的判断一致：科研流程的自动化正在从读论文、写代码、跑实验，向上游的"下一步最值得获取什么证据"推进。
+目前验证主要发生在合成基准和预定义设计空间中，距离真实实验室的全自主科研还有明显距离。基础模型能力影响优势大小：跨 Opus、Fable、DeepSeek 三种模型，MDA 数值通过率保持约 89%–94%、精确形式恢复率约 74%–83%，但换成更强的 Fable 5 后，纯大模型智能体在精确形式恢复上反而更高——MDA 更稳定的优势是在紧实验预算下用模型证据筛选候选假设，通过针对性实验持续减少不确定性。这与 [Auto Research 能力分级](../ch05/108-ai.html) 的判断一致：科研流程的自动化正在从读论文、写代码、跑实验，向上游的"下一步最值得获取什么证据"推进。
 
-MDA 把实验设计变成可由自动微分求解的优化问题，代表了 [AI 科研方法](https://github.com/QianJinGuo/wiki/blob/main/concepts/scientific-method-ai-research.md) 从"执行科研"到"决策科研"的转折；它与 [Deli Auto Research v2 的持续学习自改进](ch01/1235-auto-research.html) 同属 Auto Research 的演化分支，一个解决实验选择，一个解决能力自增强。
+MDA 把实验设计变成可由自动微分求解的优化问题，代表了 [AI 科研方法](https://github.com/QianJinGuo/wiki/blob/main/concepts/scientific-method-ai-research.md) 从"执行科研"到"决策科研"的转折；它与 [Deli Auto Research v2 的持续学习自改进](ch01/1236-auto-research.html) 同属 Auto Research 的演化分支，一个解决实验选择，一个解决能力自增强。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/auto-research又进化了贝叶斯联手大模型ai自己设计关键实验.md)
 

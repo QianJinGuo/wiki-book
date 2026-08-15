@@ -49,7 +49,7 @@
 Hapi 内网版的设计哲学——**状态持久化（文件系统即状态机）、断点恢复、异步审批、跨设备接管**——是对传统 Harness"在场依赖"问题的根本性回答。4 小时/8 小时的创始人有效时间约束，通过 24 小时待机 + 异步审批得到缓解。
 
 ### 与其他 Harness 实践的关系
-腾讯 AI Team 的知识沉淀体系，与 [系统化 Harness Engineering 框架](ch05/065-harness-engineering.html) 中的治理（Governance）支柱高度对齐，也与 [Thin Harness Fat Skills](ch05/099-thin-harness-fat-skills-ai.html) 的核心主张（工具链薄，知识技能厚）形成呼应。知识自动衰减机制与 LLM Wiki Pattern 的 Lint 机制一脉相承。
+腾讯 AI Team 的知识沉淀体系，与 [系统化 Harness Engineering 框架](ch05/065-harness-engineering.html) 中的治理（Governance）支柱高度对齐，也与 [Thin Harness Fat Skills](ch05/100-thin-harness-fat-skills-ai.html) 的核心主张（工具链薄，知识技能厚）形成呼应。知识自动衰减机制与 LLM Wiki Pattern 的 Lint 机制一脉相承。
 
 ## 实践启示
 ### 知识沉淀的冷启动路径
@@ -80,7 +80,7 @@ Hapi 内网版的设计哲学——**状态持久化（文件系统即状态机�
 → [AI Team 知识沉淀体系（概念页）](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md) — 详细架构说明
 →  — 三支柱架构对照
 →  — 知识 vs 工具链的务实立场
-→ [Agent Memory 架构本质](../ch04/512-perplexity-brain-self-improving-agent-memory-architecture.html) — 与知识层级的关联讨论
+→ [Agent Memory 架构本质](../ch04/513-perplexity-brain-self-improving-agent-memory-architecture.html) — 与知识层级的关联讨论
 
 ---
 

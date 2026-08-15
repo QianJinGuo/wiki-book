@@ -112,7 +112,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 **同主题(Agent Runtime)**:
 
 - vs **[若飞 Fable 5 Runtime Contract 工程化拆解](../ch01/474-claude-fable-5.html)** — 若飞文是**Runtime Contract 框架**(Task Brief 9 字段 / 能力路由 8 维度 / 状态账本 5 类),**深度工程协议视角**;本文是**7 职责概念入门视角** + **3 主流框架对比**。两者**完全互补**: 若飞 = Runtime **如何被设计** (契约层);二曲线 = Runtime **包含什么职责** + **用什么框架实现** (职责 + 工具层)
-- vs **[阿里云云原生安全护栏三域演进](../ch05/107-ai.html)** — 那是从云资源到 AI 模型到模型间路由的**三域护栏**;本文的"风险控制"职责是 Guardrail 的**单点实现**视角
+- vs **[阿里云云原生安全护栏三域演进](../ch05/108-ai.html)** — 那是从云资源到 AI 模型到模型间路由的**三域护栏**;本文的"风险控制"职责是 Guardrail 的**单点实现**视角
 
 **Agent Loop / Context / Tool 系列**(本文 7 职责的前 3 块与这些 entity 强相关):
 
@@ -122,10 +122,10 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 **框架生态**(本文 3 主流框架):
 
-- vs **[Google Agent Executor Distributed Runtime](ch04/466-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
+- vs **[Google Agent Executor Distributed Runtime](ch04/585-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/397-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
-- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/657-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/775-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/297-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/658-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
+- vs **[AgentCore Harness](ch04/776-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/297-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -173,7 +173,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 - **本文是入门视角**: 7 职责是"至少要有"清单,不是"全部要有"清单 — 真实生产 Runtime 远比 7 职责复杂
 - **3 主流框架对比浅尝辄止**: LangGraph / OpenAI SDK / 自研的 trade-off 仅 1-2 句,深度对比需各框架官方文档
-- **未涉及 prompt injection / 越权 / 隐私等高级 Guardrail**: 本文风险控制仅 1 段;深度安全参考 [阿里云安全护栏三域](../ch05/107-ai.html)
+- **未涉及 prompt injection / 越权 / 隐私等高级 Guardrail**: 本文风险控制仅 1 段;深度安全参考 [阿里云安全护栏三域](../ch05/108-ai.html)
 - **本文发布于 2026-06-05,早于若飞 Runtime Contract 文(2026-06-14)**: 时间上若飞受本文"Runtime 是什么"基础铺垫,后提出"Runtime Contract"上层抽象 — 形成"概念 → 协议"演化的 9 天跨度
 - **系列第 5-13 篇未发布**: 7 职责对应的 Memory / HITL / Guardrail / Trace 等深度篇未出,读者需补充
 
@@ -197,14 +197,14 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026.md)
 - [若飞 Fable 5 Runtime Contract](../ch01/474-claude-fable-5.html)
-- [阿里云安全护栏三域](../ch05/107-ai.html)
+- [阿里云安全护栏三域](../ch05/108-ai.html)
 - [阿里云 Agent 演化四阶段](../ch03/037-agent.html)
 - [Harness Engineering Framework](../ch05/065-harness-engineering.html)
 - [Agent Harness 架构设计与生产实践](../ch05/042-agent-harness.html)
-- [Google Agent Executor Runtime](ch04/466-agentrun.html)
+- [Google Agent Executor Runtime](ch04/585-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/397-anthropic-claude-managed-agents.html)
-- [Amazon Bedrock AgentCore Runtime](ch04/657-amazon-bedrock-agentcore.html)
-- [AgentCore Harness](ch04/775-agentcore-harness.html)
+- [Amazon Bedrock AgentCore Runtime](ch04/658-amazon-bedrock-agentcore.html)
+- [AgentCore Harness](ch04/776-agentcore-harness.html)
 - [纳德拉「Token 资本」论](../ch12/002-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

@@ -298,17 +298,17 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 ## 相关实体
 - [Gepa Optimize Anything](ch01/488-gepa-optimize-anything.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/111-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
-- [How Open Model Ecosystems Compound](ch01/1201-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](ch01/1202-how-open-model-ecosystems-compound.html)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/432-deepseek-v4.html)
 - [Context Window Management Comparison](../ch06/009-context-window-management-comparison.html)
 
-- [Tomtunguz Ai Model Inflation](../ch05/107-ai.html)
+- [Tomtunguz Ai Model Inflation](../ch05/108-ai.html)
 - [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](ch01/292-hermes.html)
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](ch01/1088-vlm.html)
-- [We Let Four Ais Run Radio Stations Heres What Happened](../ch05/107-ai.html)
+- [We Let Four Ais Run Radio Stations Heres What Happened](../ch05/108-ai.html)
 - [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-recruitment.md)
-- [Lightfield Ai Pipeline Generation](../ch05/107-ai.html)
-- [Creativeboom Ai Views Changed](../ch05/107-ai.html)
+- [Lightfield Ai Pipeline Generation](../ch05/108-ai.html)
+- [Creativeboom Ai Views Changed](../ch05/108-ai.html)
 - [Netflix Is Building An Ai Animation Studio](../ch11/250-netflix-is-building-an-ai-animation-studio.html)
 - [Minicpm V 46 13B Xinazhiyuan](ch01/332-1.html)
 - [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](ch01/864-gemma-4.html)
@@ -318,7 +318,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Obsidian Llm Wiki Local Kytmanov](../ch06/025-llm-wiki.html)
 - [Olmo Hybrid And Future Llm Architectures](ch01/624-olmo-hybrid-and-future-llm-architectures.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
-- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](ch01/1212-spec.html)
+- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](ch01/1213-spec.html)
 
 ---
 

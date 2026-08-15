@@ -128,7 +128,7 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 - → [第 1 原文存档（新智元 ASI启示录 2026-05-28）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-agent-os-openbmb-tsinghua.md)
 - → [第 2 原文存档（数据派THU 2026-06-09）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-data派thu-2026.md)
 ## 相关实体
-- [Minicpm5 1B Forgetrain Machine Heart](../ch05/107-ai.html)
+- [Minicpm5 1B Forgetrain Machine Heart](../ch05/108-ai.html)
 
 ---
 

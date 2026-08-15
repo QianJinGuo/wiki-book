@@ -11,10 +11,10 @@
 1. **多种行为偏好均可潜意识传递**，包括一些不安全的行为偏好
 
 ## 相关实体
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/033-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/486-agent-skills.html)
 - [Sap Unveils The Autonomous Enterprise](../ch04/158-sap-unveils-the-autonomous-enterprise.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/033-agent-skills.html)
-- [Anthropic Mythos Bug Hunting Marketing](ch01/778-anthropic.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/486-agent-skills.html)
+- [Anthropic Mythos Bug Hunting Marketing](ch01/1586-anthropic.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthopic-distillation-behavioural-traits-nature.md)

@@ -24,7 +24,7 @@ type: entity
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/985-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/900-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
-- [Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment](../ch05/107-ai.html)
+- [Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment](../ch05/108-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 

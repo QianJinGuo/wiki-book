@@ -27,7 +27,7 @@ DeepSecBench 使用受控的沙箱环境，在其中植入已知漏洞，然后�
 - [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [CyberSecQwen-4B](ch12/108-cybersecqwen-4b.html)
 - [拆解 OpenClaw 架构（七）：安全漏洞](../ch11/253-openclaw.html)
-- [Agentic Penetration Testing Legal Questions](../ch04/739-agentic.html)
+- [Agentic Penetration Testing Legal Questions](../ch04/740-agentic.html)
 - [Multimodal Evaluators：MLLM-as-Judge](../ch01/494-mllm-as-judge.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepsecbench-evaluating-model-performance-cybersecurity-vulnerabilities-vercel-2026.md)

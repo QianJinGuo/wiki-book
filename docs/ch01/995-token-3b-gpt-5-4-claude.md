@@ -45,9 +45,9 @@ LenVM（Length Value Model）的核心贡献是将长度控制从"序列级软�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/639-claude.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/626-claude-managed-agents.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/033-agent-skills.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1233-claude.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/809-claude-managed-agents.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/486-agent-skills.html)
 
 ---
 

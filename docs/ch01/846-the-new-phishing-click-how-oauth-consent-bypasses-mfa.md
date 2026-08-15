@@ -42,7 +42,7 @@ MCP（ Model Context Protocol）服务正在成为下一个 OAuth 式的攻击�
 ## 相关实体
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/111-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/058-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
-- [Pixel 10 Zero Click Exploit Chain](../ch05/107-ai.html)
+- [Pixel 10 Zero Click Exploit Chain](../ch05/108-ai.html)
 - [New Lock](https://github.com/QianJinGuo/wiki/blob/main/entities/new-lock.md)
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
 

@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **32 篇**实体，按深度递增排列。
+> 本章收录 **34 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 19 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 9 |
 
 ---
 
@@ -1816,7 +1816,95 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.031 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+## Ch18.031 对话郎咸朋：昆仑行具身智能的物理因果世界模型与数据编译路线
+
+> 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/对话郎咸朋用机器人创业重做一次百万智驾量产.md`
+
+# 对话郎咸朋：昆仑行具身智能的物理因果世界模型与数据编译路线
+
+量子位 2026-08-15 对郎咸朋（前理想智能驾驶 0→150 万辆量产核心负责人，与华为系任庚联合创办昆仑行）的 1.9 万字访谈实录。核心命题：**具身智能要解决的是"理解"而非"模仿"**——昆仑行选择物理因果世界模型 + 数据编译路线，并强调具身最终拼的是量产与自我造血。
+
+## 范式判断：理解 vs 模仿
+
+郎咸朋认为做具身不能沿用自动驾驶范式——自动驾驶 VLA/端到端本质上仍是模仿学习。机器人模仿人类行为在单一场景可行，但上万场景无法穷举模仿，因此范式必须是"理解"。这与他对技术路线的长期判断一致：从有图→轻图→无图→端到端+VLM→VLA，再到世界模型，趋势是从动作模仿转向对世界的理解。
+
+## 数据编译：数据效率 = 获取效率 × 使用效率
+
+数字 AGI（互联网文本、驾驶数据）成功在数据**获取效率**近乎零成本；具身智能无法"把机器人请进家里手动操作两年"，必须在**使用效率**上下功夫。昆仑行的方法论是"数据编译"——对采集数据做编译加工，使数据富含物理因果要素与属性，用于训练物理因果世界模型而非纯相关性模仿学习模型。工程落地上强调两条管线：训练/数据管线工程化（类比自动驾驶数据闭环，但为数据编译管线）+ 量产部署采用 **Agent 工程框架**而非传统软硬件拼凑（类比 Anthropic Claude Code 的 Agent 机制支撑可用性）。
+
+## 世界模型三类划分与 MoT 因果架构
+
+世界模型分三类：渲染器（图像像素/视频生成）、模拟器/仿真器（状态与动力学仿真）、动作策略输出。好的世界模型应三者兼具（渲染 + 动作生成 + 生成评价）。昆仑行从第一天就以"物理因果"第一性原理设计：行为目的 → 目标产生动作 → 动作产生结果 → 结果评价动作。
+
+模型架构采用 MoT（Mixture of Transformers/MoE 变体）但**按因果角色而非模态分专家**：目的（自回归文本/场景理解）、干预（action，为达成目的的动作）、结果（动作产生的后果）。与常见按模态（文本/视频/动作）分专家的 MoT 不同，昆仑行设计了**联合因果注意力机制**——注意力单向流动：做动作时不能"偷看"结果（避免作弊），动作与目标产生结果后才可见。同一套架构既能生成动作、预测结果、又能渲染最终视频。
+
+## 量产观与商业路径
+
+具身智能成功的关键标志是**量产与自我造血**（类比当年做车"交付量是多少"）。具身智能包含运控、移动、交互、操作四种智能——操作智能最难也最早期，但前三种（表演运控/自动驾驶迁移移动/LLM 交互）持续迭代中。全栈软硬一体化自研（关节、驱动电机、本体设计自研）是量产的最佳选择——"攒机器人"只是原型样机，通过不了量产试制。商业路径从 toB 开始、家庭为终点（家庭场景复杂度 + 安全可靠性要求高）。组织理念：华为式体系化量产协同（"神似形不似"）+ 理想式 AI 快速迭代（"创新不是被计划出来的，是迭代出来的"），组织能力是最终护城河。
+
+## 与 wiki 既有知识的连接
+
+- 物理因果世界模型与 [Fei-Fei Li World Models](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md)、[BAAI ORCA](https://github.com/QianJinGuo/wiki/blob/main/entities/baai-orca-next-state-prediction-world-model.md) 同属世界模型家族，但昆仑行的因果注意力（单向流动防作弊）是独有设计。
+- "具身要理解不要模仿"与 [sim-to-real 主动推理](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md) 的"超越模仿"视角呼应。
+- Agent 工程框架落地硬件量产，与 [Agent Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md) 工程实践同构（Claude Code 类比）。
+- 数据编译与 [具身数据市场](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md) 互补：市场讲数据供给格局，本文讲数据如何被"编译"为物理因果特征。
+
+## 相关实体
+
+- [Fei-Fei Li Masked Visual Actions World Model](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md)
+- [BAAI ORCA 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/baai-orca-next-state-prediction-world-model.md)
+- [具身 sim-to-real 主动推理](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md)
+- [具身原生 LLM](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-native-llm-embodied-intelligence-new-stage.md)
+- [具身 AI 数据市场](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md)
+- [Genesis Gene.25 具身基座模型](https://github.com/QianJinGuo/wiki/blob/main/entities/genesis-ai-gene-25-embodied-foundation-model.md)
+- [Amap ABot Earth 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/对话郎咸朋用机器人创业重做一次百万智驾量产.md)
+
+---
+
+## Ch18.032 人形之外：擎羽把“身体”变成具身智能的新变量（柔性具身智能 + Fi0 跨本体基础模型）
+
+> 📊 Level ⭐⭐⭐⭐ | 3.9KB | `entities/人形之外擎羽柔性具身智能-fi0-跨本体基础模型.md`
+
+# 人形之外：擎羽把“身体”变成具身智能的新变量
+
+> [!contradiction] 参见 [蚂蚁 VLA 具身大脑](https://github.com/QianJinGuo/wiki/blob/main/entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md) 持互补路线——蚂蚁走"通用本体通吃"的 VLA 路线，擎羽走"跨本体基础模型 + 身体参数入上下文"的柔性路线；两派共识是"智能应跨身体复用"，分歧在实现方式（VLA 大模型统一 vs 身体参数化适配）。
+
+量子位 2026-08-12 报道：擎羽科技（FEAGINE，港大机器人博士彭锐创立）发布三款绳驱柔性机器人（FEAGINE A01/A02/A03）与第一代跨本体基础模型 Fi0（Foundation Intelligence Across Embodiments）。核心论点：**通用机器人不一定需要通用身体**——当任务边界明确时，最高效的身体形态可能完全不同（引李飞飞"爬树"类比）；身体本身应作为可重新设计的变量，而非复制人体。
+
+## 核心概念：柔性具身智能
+
+擎羽将"柔性具身智能"定义为：以可连续形变、可顺应接触的机器人本体为物理基础，**将身体的结构参数、实时形态、感知和驱动能力纳入模型上下文**，使任务知识与世界理解能够跨越不同身体复用，并由模型为当前身体生成适配行动的一类具身智能系统。
+
+- 三条路线对比：人形机器人（复制人体，复用人类物理基础设施）vs 柔性本体（连续构型、顺应接触、拓展近人交互边界）vs 传统刚体机械臂
+- 核心三要素：友善的本体、丰富的数据、泛化的模型
+- 市场结构预判：未来机器人拥有许多不同身体，通用性由共享智能提供，每种身体围绕自己的任务与环境达到更高效率
+
+## Fi0：跨本体基础模型
+
+Fi0 建立在基础判断上：**机器人对任务和物理世界的理解应当跨身体复用；真正需要随身体变化的是行动**。
+
+- 任务意图/物体关系/接触逻辑/目标状态在不同身体间延续
+- 根据当前机器人形态、感知、驱动能力、动态状态生成适配动作
+- 三款产品（A01 一段 2 自由度 750g / A02 两段 4 自由度 30cm / A03 三段 6+1 自由度 50cm）构成**真实 embodiment variation 数据源**——同任务在不同长度/节段/自由度下产生不同运动路径与接触方式
+- 推理时演示学习：Ego 头环提供 demonstration → 作为推理时 skill context，无需重训即可执行训练覆盖外的任务
+
+## 技术意义与 wiki 关联
+
+- **跨本体泛化**是具身智能的开放问题：任务/世界知识 vs 身体知识的分离。与 [李飞飞空间智能](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md) 观点呼应（身体形态应由任务塑造）
+- 与 [具身智能](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md) 概念页互补：VLA 路线（[蚂蚁 VLA](https://github.com/QianJinGuo/wiki/blob/main/entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md)、[LingBot VLA](https://github.com/QianJinGuo/wiki/blob/main/entities/lingbot-vla-2-60000h-open-source-vla.md)）与柔性本体路线
+- 绳驱柔性机器人产品参数（自由度/负载/速度/ROS 支持）为工程落地参考
+
+## 来源
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/人形之外擎羽把身体变成具身智能的新变量.md)
+
+**评审**：vxc=56 (v=7 c=8 s=4) | 2026-08-16 DeepSeek 评分 | 具身智能焦点领域，跨本体基础模型概念可迁移（非平台绑定）；产品发布报道部分已降权
+
+---
+
+## Ch18.033 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md`
 
@@ -1848,7 +1936,7 @@ Being-H0.8 是一套带触觉的隐式世界—动作模型：**预训练阶段*
 
 ---
 
-## Ch18.032 LeRobot v0.6.0 — Imagine, Evaluate, Improve
+## Ch18.034 LeRobot v0.6.0 — Imagine, Evaluate, Improve
 
 > 📊 Level ⭐⭐⭐⭐ | 1.8KB | `entities/lerobot-v060-imagine-evaluate-improve.md`
 

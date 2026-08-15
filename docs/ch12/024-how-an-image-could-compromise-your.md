@@ -135,7 +135,7 @@ ExifTool 13.50 的修复方案代表了处理此类漏洞的最佳实践：
 
 ## 相关实体
 - [Exiftool Compromise Mac 592994](../ch01/936-9.html)
-- [Shub Reaper Macos Stealer Attack Chain](../ch05/107-ai.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch05/108-ai.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](ch12/066-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
 - [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](../ch09/088-claw-chain-cyera-research-unveil-four-chainable-vulnerabili.html)

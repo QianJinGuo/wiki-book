@@ -99,13 +99,13 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [Hermes Agent /goal 长任务运行时架构](../ch04/369-hermes-agent-goal.html)
 
 ## ## 相关实体
-- [LoongSuite GenAI 可观测语义规范](../ch04/564-loongsuite-genai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/565-loongsuite-genai.html)
 
 ## ## 相关实体
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/037-agent.html)
 
 ## ## 相关实体
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/124-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/125-ai-coding.html)
 
 ---
 

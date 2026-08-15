@@ -139,7 +139,7 @@ NotebookLM 的护城河在于：Google 拥有 Gemini 的模型能力 + Google Wo
 - [ChatGPT Memory](ch01/551-chatgpt-memory.html) — 对话式记忆
 ## 相关实体
 
-- [the interface is no longer the product](../ch05/107-ai.html)
+- [the interface is no longer the product](../ch05/108-ai.html)
 
 ---
 

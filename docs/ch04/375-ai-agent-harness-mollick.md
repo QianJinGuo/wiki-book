@@ -98,7 +98,7 @@ Mollick 认为这是"ChatGPT 发布以来人们使用 AI 方式的最重要变�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-guide-to-which-ai-to-use-in-the-agentic-era.md)
 ## 相关实体
 
-- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](../ch01/639-claude.html)
+- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](../ch01/1233-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

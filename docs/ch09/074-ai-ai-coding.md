@@ -53,8 +53,8 @@ ROI：Fermi 估算年度节省 40–80 人天 vs 维护月度 1–2 人天，但
 
 ## 相关实体
 
-- → [高德 Harness/SDD 团队 AI 研发范式](../ch05/124-ai-coding.html)：同为团队级 AI Coding 组织化实践（高德走 harness 治理 + SDD/ATDD 流程；天猫走范式 + Skill + Hook 观测闭环），不同执行路径
-- → [天猫 AI Coding 胶水编程](../ch05/124-ai-coding.html)：同团队同系列（业务出码采纳率 97.9%），本文是其工程化体系侧
+- → [高德 Harness/SDD 团队 AI 研发范式](../ch05/125-ai-coding.html)：同为团队级 AI Coding 组织化实践（高德走 harness 治理 + SDD/ATDD 流程；天猫走范式 + Skill + Hook 观测闭环），不同执行路径
+- → [天猫 AI Coding 胶水编程](../ch05/125-ai-coding.html)：同团队同系列（业务出码采纳率 97.9%），本文是其工程化体系侧
 - → [阿里云 AgentLoop 自进化飞轮](../ch04/359-agentloop.html)：同为"飞轮"式工程化体系（AgentLoop 是平台级 skill 治理飞轮，天猫是团队级范式+观测闭环）
 - → [美团图灵评测方法论](../ch03/037-agent.html)：同为评测/度量方法（美团评 Agent 输出，天猫测体系落地）
 - → [腾讯 tdsql-harness 减法工程](../ch05/077-harness.html)：同为第一方团队工程实践（腾讯答"什么该留"，天猫答"怎么落地为组织能力"）

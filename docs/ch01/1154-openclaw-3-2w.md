@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [cola dlm：字节跳动连续潜空间扩散语言模型](ch01/532-cola-dlm.html)
-- [explicit vs. implicit in the age of intelligences — le secré](../ch05/107-ai.html)
+- [explicit vs. implicit in the age of intelligences — le secré](../ch05/108-ai.html)
 - [what it feels like to work with mythos](../ch04/393-what-it-feels-like-to-work-with-mythos.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
@@ -56,7 +56,7 @@ source_published: 2026-03-11
 ### 关联实体
 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/107-ai.html)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/108-ai.html)
 - [Hermes Agent V014 Architecture Shugex](../ch03/098-hermes-agent.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/425-latest-open-artifacts-20-new-orgs-new-types-of-models.html)

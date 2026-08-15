@@ -101,7 +101,7 @@ AI Infra 工程纪律正在变成可执行的 skill artifact——推理框架�
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1121-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Claude Code Skills Mcp Rules Source Analysis](ch07/007-claude-code-skills-mcp-rules.html)
 - [Skill System Design Three Way Comparison](../ch04/348-skill.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1219-openclaw-agent.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1220-openclaw-agent.html)
 - [Claude Code Vs Codex Context Architecture 02](../ch03/084-claude-code.html)
 
 - [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](../ch01/883-vllm.html)

@@ -6,7 +6,7 @@
 
 ## 相关实体
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch06/013-hermes-agent-memory.html)
-- [Agent 记忆架构](ch04/512-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent 记忆架构](ch04/513-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agent 记忆模块化框架](ch04/180-agent-memory.html)
 - [AI Agent 记忆系统](ch04/180-agent-memory.html)
 - [上下文窗口管理](../ch06/009-context-window-management-comparison.html)
@@ -25,9 +25,9 @@
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/077-harness.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/098-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [AI Agent 工程师能力地图](ch04/581-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch05/107-ai.html)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch05/108-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

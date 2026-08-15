@@ -51,8 +51,8 @@
 ## 相关实体
 
 - [场景营销前端 AI Coding — AI Native 的视觉稿还原](../ch05/022-ai-native.html)
-- [场景营销前端 AI Coding — 从问题到方案](../ch05/124-ai-coding.html)
-- [视觉还原 AI 技术](../ch05/107-ai.html)
+- [场景营销前端 AI Coding — 从问题到方案](../ch05/125-ai-coding.html)
+- [视觉还原 AI 技术](../ch05/108-ai.html)
 - [淘宝前端 AI 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 - [Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判](../ch05/001-impeccable.html)
 - [AE 到可运行代码：大淘宝 AI 动画全链路方案](../ch01/1129-20.html)

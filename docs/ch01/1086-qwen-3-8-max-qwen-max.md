@@ -48,15 +48,15 @@ oh-my-cli 实验展示了一个完整的自主编码 Harness 架构：需求进�
 
 1. **开源权重是新的竞争维度**：首个开源 Max 级权重意味着开源模型首次与闭源旗舰同规格（2.4T 规模）正面竞争，延续 Kimi K3（2.8T 开源）开启的「开源权重升级竞赛」。
 2. **长程自主是评测前沿**：官方评测不再以单轮 benchmark 为主，而是以「多天长程任务 + 自主迭代 + 真实产物」衡量模型，与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 视角一致。
-3. **自我进化循环是模型能力放大器**：oh-my-cli 的 issue 状态机 + 自测试 + 多源演化模式，与 [AgentScope Builder 自进化 Agent Harness](../ch04/791-self-evolving-agent.html) 属于同一设计空间。
+3. **自我进化循环是模型能力放大器**：oh-my-cli 的 issue 状态机 + 自测试 + 多源演化模式，与 [AgentScope Builder 自进化 Agent Harness](../ch04/792-self-evolving-agent.html) 属于同一设计空间。
 4. **科研复现实验价值高**：复现论文（+7.7% 复现基线）到超越论文（+2.7 点）的完整轨迹，是评测模型科研自主性的可复现范例。
 
 ## 相关实体
 
 - [Qwen3.7-Max Opus 级体验](https://github.com/QianJinGuo/wiki/blob/main/entities/qwen3.7-max-opus-level-experience-code-secret-garden.md) — 上一代旗舰实测
 - [Kimi K3: The Open-Weights Escalation](ch01/608-kimi-k3-the-open-weights-escalation.html) — 开源权重升级竞赛背景
-- [Open models recap](ch01/1415-kimi-k3.html) — 社区对 Qwen 3.8 的早期观察
-- [AgentScope Builder 自进化 Harness](../ch04/791-self-evolving-agent.html) — 同类自主演化系统
+- [Open models recap](ch01/1416-kimi-k3.html) — 社区对 Qwen 3.8 的早期观察
+- [AgentScope Builder 自进化 Harness](../ch04/792-self-evolving-agent.html) — 同类自主演化系统
 - [Agent 自进化评测瓶颈](../ch03/037-agent.html) — 自主进化的评测约束
 - [Agent Loop 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — 反馈环路设计
 - [MoE 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/moe-mixture-of-experts-2025.md) — 2.4T 稀疏激活架构基础
