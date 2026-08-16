@@ -257,7 +257,7 @@ PrefixSpan/CloSpan只能挖掘**行为模式**，无法挖掘**语义意图**。
 - [Hermes Skill System Winty](../ch07/019-hermes-skill.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/065-harness-engineering.html)
 - [Agent Skill Writing Guide](ch04/608-agent-skill.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/105-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/796-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-formal-theory-survey-10papers.md)
 

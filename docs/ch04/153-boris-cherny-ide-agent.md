@@ -89,7 +89,7 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/084-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/031-mythos.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/105-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/796-ai-agent.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1586-anthropic.html)

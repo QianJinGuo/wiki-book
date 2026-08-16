@@ -62,7 +62,7 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/077-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/585-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/348-skill.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/065-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/253-openclaw.html)

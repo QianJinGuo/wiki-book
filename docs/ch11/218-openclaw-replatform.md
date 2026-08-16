@@ -52,7 +52,7 @@ Phase 1 部署的 VPC Flow Logs 记录所有进出 VPC 的网络流量，配合 
 - [Openclaw Multi 4](ch11/253-openclaw.html)
 - [Openclaw Multi 1](ch11/253-openclaw.html)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/494-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Strands Agents Cloud Cost Optimizer](../ch04/788-strands-agents.html)
+- [Strands Agents Cloud Cost Optimizer](../ch04/789-strands-agents.html)
 - [Aws Bedrock Agentcore Identity Security](ch11/271-aws-bedrock-agentcore.html)
 
 ---

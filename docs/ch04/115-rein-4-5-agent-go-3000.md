@@ -297,7 +297,7 @@ WithWorkingDir(cwd)            // 工作目录
 - [wow-harness v3](../ch05/077-harness.html) —— 事件溯源 + 概念图
 - [PilotDeck](../ch03/037-agent.html) —— 白盒记忆
 - [Agent Harness 架构](../ch05/042-agent-harness.html) —— 7 层 harness 模型
-- [17 种 agent 架构演进](ch04/796-17-agent.html) —— 类型边界视角
+- [17 种 agent 架构演进](ch04/797-17-agent.html) —— 类型边界视角
 - [Agent 工程原则](../ch03/037-agent.html) —— 模块化设计实践
 - [短期记忆压缩](../ch06/011-tencentdb-agent-memory.html) —— 投影压缩对比
 

@@ -56,7 +56,7 @@ SkillOpt 最有价值的抽象，是把模型训练的那套流程整体平移�
 - [SkillOpt-Lite：一行 Vibe 指令加速 Agent 技能自进化](../ch04/608-agent-skill.html)
 - [Regression Tax：技能包导致 Agent 性能退化的系统性分析](../ch03/076-skills.html)
 - [清华自进化 Skill 双星：EmbodiSkill + SkillEvolver](../ch04/196-skill-agent.html)
-- [AgentENV：面向大规模 Agentic RL 的智能体执行环境](../ch04/662-agentenv-agentic-rl.html)
+- [AgentENV：面向大规模 Agentic RL 的智能体执行环境](../ch04/663-agentenv-agentic-rl.html)
 
 ---
 

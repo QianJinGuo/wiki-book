@@ -101,7 +101,7 @@ Generator 在没有 sprint 拆解的情况下连续稳定运行了两小时以�
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1586-anthropic.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/348-skill.html)
 - [Anthropic 12 Mcp Production Patterns](../ch01/1586-anthropic.html)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/809-claude-managed-agents.html)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/810-claude-managed-agents.html)
 
 ---
 

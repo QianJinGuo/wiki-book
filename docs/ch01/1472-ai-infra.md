@@ -144,8 +144,8 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 
 ## 相关实体
 
-- [Tokenspeed Agentic Inference Engine](../ch04/802-tokenspeed-agentic-inference-engine.html)
-- [Google Io 2026 Agentic Gemini Era](../ch04/740-agentic.html)
+- [Tokenspeed Agentic Inference Engine](../ch04/803-tokenspeed-agentic-inference-engine.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/073-agentic.html)
 - [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](ch01/1574-ai-infra.html)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/431-gemma-4-multi-token-prediction-drafters.html)
 - [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)

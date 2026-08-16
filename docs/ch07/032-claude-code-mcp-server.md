@@ -105,7 +105,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
-- [AI Agent 工程师能力地图](../ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

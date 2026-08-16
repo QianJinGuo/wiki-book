@@ -135,10 +135,10 @@ Self-hosted sandbox 的设计更适合 worker 只返回结构化摘要和证据�
 这条路线会吸引不想自建 Agent 平台的企业，同时继续被开源和自研路线挑战（LangGraph/Temporal 组合方案）。判断适用性的四个关键：**数据流能否审计、工具权限能否收紧、outcome rubric 能否发现真实错误、成本能否按任务解释**。
 
 ## 相关实体
-- [Claude Managed Agents Self Hosted Sandbox Enterprise](../ch04/809-claude-managed-agents.html)
+- [Claude Managed Agents Self Hosted Sandbox Enterprise](../ch04/810-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents Official](../ch04/700-claude-managed-agents-official.html)
-- [Claude Managed Agents](../ch04/809-claude-managed-agents.html)
+- [Claude Managed Agents Official](../ch04/701-claude-managed-agents-official.html)
+- [Claude Managed Agents](../ch04/810-claude-managed-agents.html)
 - [Anthropic Pm Jess Yan Managed Agents](ch01/1586-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)

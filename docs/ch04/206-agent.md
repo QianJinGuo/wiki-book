@@ -97,7 +97,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — bootstrap 文件机制、工具结果预算、compaction 实现
 - [Claude Code 架构解析](../ch03/084-claude-code.html) — 文件读取双层门禁、查询前优化、compaction 触发机制
 - [Agent Skill 编写指南](ch04/608-agent-skill.html) — Skill 的渐进式上下文注入机制
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/105-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/796-ai-agent.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)

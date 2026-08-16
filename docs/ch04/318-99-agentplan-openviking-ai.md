@@ -92,7 +92,7 @@ OpenViking 的虚拟文件系统范式解决了这些问题：
 
 - [AgentCore + OpenViking 搭建指南](../ch03/037-agent.html)
 - [火山引擎 Data Agent 产品概述](ch04/461-data-agent.html)
-- [火山引擎 Agentic 全栈数据管理](ch04/740-agentic.html)
+- [火山引擎 Agentic 全栈数据管理](ch04/073-agentic.html)
 - [火山引擎 AI 搜索 Agent 架构](../ch03/037-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/99-元月用-agentplan-openviking-给销售团队配一个不会忘事的-ai-助手-bytedance.md)

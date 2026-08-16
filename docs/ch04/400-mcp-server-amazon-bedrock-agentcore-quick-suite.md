@@ -14,7 +14,7 @@
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/194-apache-doris-mcp-server-quick-suite-ai.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/271-aws-bedrock-agentcore.html)
-- [AgentCore Managed Harness](ch04/776-agentcore-harness.html)
+- [AgentCore Managed Harness](ch04/777-agentcore-harness.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/494-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/297-aws-devops-agent.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch11/253-openclaw.html)
@@ -30,8 +30,8 @@
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/993-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/313-bedrock.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/658-amazon-bedrock-agentcore.html)
-- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/659-amazon-bedrock-agentcore.html)
+- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
 
 ## 深度分析
 **1. 架构解耦：MCP协议的网关价值**

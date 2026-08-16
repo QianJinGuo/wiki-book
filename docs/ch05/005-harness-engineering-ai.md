@@ -144,7 +144,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Hermes Agent 深度解析（阿里云/飞樰）](../ch03/098-hermes-agent.html)
 - [harness-engineering-systematic-explainer](ch05/065-harness-engineering.html)
 - [Agent 原理、架构与工程实践](../ch03/037-agent.html)
-- [AI Agent 工程师能力地图](../ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
 
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
 - [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)

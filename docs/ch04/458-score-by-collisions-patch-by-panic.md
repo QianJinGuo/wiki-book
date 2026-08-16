@@ -50,7 +50,7 @@
 ## 相关实体
 
 - [Cloudflare × Anthropic Glasswing：AI 漏洞研究能力跃升](../ch12/031-mythos.html)
-- [AI Agent 安全攻防综述](ch04/105-ai-agent.html)
+- [AI Agent 安全攻防综述](ch04/796-ai-agent.html)
 - [npm 供应链投毒复盘](../ch05/108-ai.html)
 - [Thinkst Package Proxy：供应链防护](../ch05/108-ai.html)
 - [Akamai 收购 AI 浏览器安全公司 LayerX](../ch01/048-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)

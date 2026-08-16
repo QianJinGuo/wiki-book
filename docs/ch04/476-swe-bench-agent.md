@@ -52,7 +52,7 @@ SWE-bench 测"修复已有代码"，偏向防御性、受约束的工程活动�
 ## 相关实体
 
 - [快手 RCA Agent：复杂业务场景下排障 Agent 的探索实践](../ch03/037-agent.html)
-- [Programbench Swe Agent Benchmark](ch04/633-programbench-swe-agent-benchmark.html)
+- [Programbench Swe Agent Benchmark](ch04/634-programbench-swe-agent-benchmark.html)
 - [SciAgentGym：多步科学工具使用的 LLM Agent 评测基准](../ch03/037-agent.html)
 - [Reward hacking is swamping model intelligence gains](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/037-agent.html)

@@ -38,7 +38,7 @@ Muse Spark 1.0 年初发布时表现平平。1.1 版本实现脱胎换骨的提�
 
 ## 定价与性价比
 
-定价是其最具杀伤力的武器：输入 $1.25/1M tokens，缓存输入 $0.15/1M，输出 $4.25/1M。对比：Opus 4.8 为 $5/$25，Fable 5 为 $10/$50，[Grok 4.5](../ch05/108-ai.html) 为 $2/$6。 这意味着输入不到 Opus 四分之一、输出不到五分之一；综合成本约为 [Fable 5](../ch04/686-fable-5.html) 的十分之一。
+定价是其最具杀伤力的武器：输入 $1.25/1M tokens，缓存输入 $0.15/1M，输出 $4.25/1M。对比：Opus 4.8 为 $5/$25，Fable 5 为 $10/$50，[Grok 4.5](../ch05/108-ai.html) 为 $2/$6。 这意味着输入不到 Opus 四分之一、输出不到五分之一；综合成本约为 [Fable 5](../ch04/687-fable-5.html) 的十分之一。
 
 同时保持高速：Vals AI 榜单显示，Fable 5、Opus 4.8、Sonnet 5 跑测试动辄 1000 秒起步，Muse Spark 1.1 仅需 388 秒。每个测试成本仅 $0.50，是同档最低。有工程师实测称成本约为 Fable/GPT-5.5 的十分之一，甚至比自己托管开源模型还便宜；延迟约为 Opus 4.8 的四分之一。
 
@@ -94,7 +94,7 @@ Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入
 - [Grok 4.5](../ch05/108-ai.html) — 同期 xAI 模型，法律榜上被 Muse Spark 1.1 在 24 小时内超越
 - [GPT-5.6 系列](../ch01/737-codex.html) — OpenAI 同日发布的降价系列
 - [GLM 5.2](../ch03/037-agent.html) — 编程水平同档位的开源 Agent 模型
-- [Fable 5](../ch04/686-fable-5.html) — Anthropic 旗舰，在 MedScribe/TaxEval 上被超越
+- [Fable 5](../ch04/687-fable-5.html) — Anthropic 旗舰，在 MedScribe/TaxEval 上被超越
 - [Gemini 3.5](../ch01/094-gemini-3-5-frontier-intelligence-with-action.html) — Google 旗舰竞争模型
 - [Sonnet 5](../ch01/1233-claude.html) — Anthropic 高性价比模型
 - [Harness Engineering](../ch05/065-harness-engineering.html) — 相关工程范式

@@ -107,7 +107,7 @@ Agent 调用某个工具后，该工具进一步调用其他未声明的外部�
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1586-anthropic.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1220-openclaw-agent.html)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/297-aws-devops-agent.html)
-- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 
 ---

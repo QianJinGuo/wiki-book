@@ -95,9 +95,9 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1395-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)
+- [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
 - [OpenClaw 多 Agent 协同开发](../ch11/253-openclaw.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/815-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/816-karpathy-vibe-coding-agentic-engineering.html)
 - 
 - 
 -

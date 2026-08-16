@@ -30,7 +30,7 @@ Obsidian与Claude Code的集成本质上解决了AI编程工具的一个核心�
 
 ## 相关资源
 - [Agent Memory 架构](../ch04/513-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](../ch04/809-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](../ch04/810-claude-managed-agents.html)
 
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](ch09/153-obsidian-claude-code-integration-guide.html)

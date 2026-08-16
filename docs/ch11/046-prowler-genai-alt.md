@@ -73,7 +73,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/943-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/658-amazon-bedrock-agentcore.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/659-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/160-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/313-bedrock.html)

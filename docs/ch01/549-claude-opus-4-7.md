@@ -108,7 +108,7 @@
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/084-claude-code.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/486-agent-skills.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/105-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/796-ai-agent.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/576-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)

@@ -45,10 +45,10 @@
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/1586-anthropic.html)
 - [你写的 Skill，及格了吗？](../ch04/348-skill.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/740-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/073-agentic.html)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/1233-claude.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/809-claude-managed-agents.html)
-- [AI Agent 工程师能力地图](../ch04/105-ai-agent.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/810-claude-managed-agents.html)
+- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

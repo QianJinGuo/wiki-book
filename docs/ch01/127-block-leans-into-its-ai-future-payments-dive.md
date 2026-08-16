@@ -8,7 +8,7 @@
 Opens in a new window Opens an external website Opens an external website in a new window
 
 ## 相关实体
-- [Notion Ai Agents](../ch04/105-ai-agent.html)
+- [Notion Ai Agents](../ch04/796-ai-agent.html)
 - [Amazon Turns Alexa Into Its Next Storefront](ch01/079-amazon-turns-alexa-into-its-next-storefront.html)
 - Senators Query Credit Bureaus On Bnpl 1
 - [Openai Realtime Api Architecture](ch01/122-openai-realtime-api.html)

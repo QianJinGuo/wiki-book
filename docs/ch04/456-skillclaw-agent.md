@@ -17,7 +17,7 @@
 - [Skillclaw Collective Intelligence](ch04/348-skill.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/084-claude-code.html)
 - [Perplexity Search As Code Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-search-as-code-generation.md)
-- [Ai Agent Engineer Capability Map](ch04/105-ai-agent.html)
+- [Ai Agent Engineer Capability Map](ch04/796-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw.md)
 

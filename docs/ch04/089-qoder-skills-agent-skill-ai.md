@@ -367,7 +367,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Agent Skill 设计模式](ch04/486-agent-skills.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch05/108-ai.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/037-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/105-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/796-ai-agent.html)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/608-agent-skill.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/259-anthropic-google-agent-skills.html)
 - [Garry Tan](../ch01/903-garry-tan.html)
@@ -380,7 +380,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
 - [Skillx Zhejiang University](../ch07/060-skillx.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)

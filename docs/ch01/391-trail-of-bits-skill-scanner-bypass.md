@@ -149,7 +149,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 ### 对 Skill Marketplace 建设者
 
-1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](../ch04/105-ai-agent.html) 中的多层防御模型。
+1. **scanner 是必要不充分的防线**：单一 scanner 无法应对双载体攻击（自然语言 + 代码）。必须将 scanner 与 runtime sandbox、publisher reputation、audit trail 结合使用，形成纵深防御。参考 [Ai Agents Security Survey Attack Defense](../ch04/796-ai-agent.html) 中的多层防御模型。
 
 2. **out-of-band 分发需要专项审计**：ZIP 手工上传 + API 直接安装是当前最大的 supply chain 盲点。凡是绕过了 marketplace review 流程的分发渠道，都需要独立的人工或自动化审计步骤。
 

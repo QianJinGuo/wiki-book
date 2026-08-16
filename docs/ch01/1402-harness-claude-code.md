@@ -46,10 +46,10 @@
 
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/815-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/816-karpathy-vibe-coding-agentic-engineering.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

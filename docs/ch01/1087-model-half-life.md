@@ -48,7 +48,7 @@
 
 ## 相关实体
 
-- [开源模型的寿命之争](ch01/1609-6-months-to-live-for-open-models.html)
+- [开源模型的寿命之争](ch01/1610-6-months-to-live-for-open-models.html)
 - [Open Weight 模型的廉价化](https://github.com/QianJinGuo/wiki/blob/main/entities/25-the-unbearable-cheapness-of-open-weight-models.md)
 - [AI Evals 评估方法论](ch01/403-ai-evals.html)
 - [LLM 评估基准全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md)

@@ -13,9 +13,9 @@
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/320-amazon-nova.html)
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/320-amazon-nova.html)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch04/788-strands-agents.html)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch04/789-strands-agents.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11/152-build-financial-document-processing-with-pulse-ai-and-amazon.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/105-ai-agent.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/796-ai-agent.html)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/900-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)
 

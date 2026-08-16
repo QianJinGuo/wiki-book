@@ -83,7 +83,7 @@ Gemini 3.6 的发布可能标志着大模型竞争进入一个新的阶段。前
 
 - [Gemini 3.5 Pro 跳票分析](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-pro继续跳票谷歌端上三款flash模型强行交作业.md)
 - [Gemini AI 综合概述](ch01/055-gemini-ai-google.html)
-- [Google I/O 2026 Agentic Gemini 战略](../ch04/740-agentic.html)
+- [Google I/O 2026 Agentic Gemini 战略](../ch04/073-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/突发gemini-36-来了智力直接原地踏步速度立刻翻倍-xixiaoyao.md)
 

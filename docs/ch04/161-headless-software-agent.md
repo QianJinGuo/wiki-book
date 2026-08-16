@@ -73,7 +73,7 @@ Steven Sinofsky 提出的三类能力（查找/执行/分析）在商业价值�
 
 大多数 agent 产品从 Look up 切入，因为最容易；但真正持久的竞争优势在 Execute 和 Analyze 层。执行层要求 agent 与现有企业软件深度集成（这意味着需要 negotiate 身份系统、席位计费、审计追溯），而分析层要求 agent 具备跨系统的推理能力和错误容忍机制。
 
-这与 [Ai Agent Tool Count Trap](ch04/105-ai-agent.html) 讨论的工具数量陷阱形成互补：当 agent 进入 Execute 和 Analyze 层时，工具数量的控制变得更加关键——每个错误执行都有真实的业务成本。
+这与 [Ai Agent Tool Count Trap](ch04/796-ai-agent.html) 讨论的工具数量陷阱形成互补：当 agent 进入 Execute 和 Analyze 层时，工具数量的控制变得更加关键——每个错误执行都有真实的业务成本。
 
 ### 3. 业务逻辑即护城河：SAP 案例的泛化意义
 
@@ -140,13 +140,13 @@ Headless 软件面向 agent，不面向人，但最终仍然需要有人来解�
 
 ## 相关实体
 
-- [AI Agent 工具数量陷阱](ch04/105-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
+- [AI Agent 工具数量陷阱](ch04/796-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
 - [Salesforce 主动砍掉了界面](../ch01/332-1.html) — 同一议题的延伸讨论，聚焦数据护城河
 - [Enterprise Software Moats in the Agent Era](../ch03/037-agent.html) — 企业软件在 Agent 时代的护城河分析框架
 - [ServiceNow Headless 实践](ch04/520-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — ITSM 领域的 headless 转型案例
 - [Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md) — 云安全领域的 headless 实践
 - [日抛软件：AI时代的认知滑坡](../ch05/108-ai.html) — 对"AI 替代复杂系统"论调的批判性分析
-- [17种Agent架构演进](ch04/796-17-agent.html) — Agent 控制流设计对 headless 架构的影响
+- [17种Agent架构演进](ch04/797-17-agent.html) — Agent 控制流设计对 headless 架构的影响
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束 agent 行为的工程方法论
 
 ---

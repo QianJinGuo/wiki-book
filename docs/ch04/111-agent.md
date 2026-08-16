@@ -156,7 +156,7 @@ graph TB
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agent Harness 架构](../ch05/042-agent-harness.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/815-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/816-karpathy-vibe-coding-agentic-engineering.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/253-openclaw.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch06/045-memory.html)
@@ -168,7 +168,7 @@ graph TB
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
 - [上下文工程 - 三种Memory方案对比](../ch06/045-memory.html)
-- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
 
 - [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](../ch01/1357-chatgpt-dreaming-v3.html)
 - [Chatgpt Dreaming V3 Long Term Memory Openai](../ch01/1357-chatgpt-dreaming-v3.html)

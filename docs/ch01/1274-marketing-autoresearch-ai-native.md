@@ -47,7 +47,7 @@
 - [Harness 之后 状态边界与失败闭环 若飞](../ch05/077-harness.html)
 - [Ai Agent Harness Construction Akshay Baoyu](ch01/1191-ai-agent-harness.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/065-harness-engineering.html)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/105-ai-agent.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/796-ai-agent.html)
 
 ## 实践启示
 

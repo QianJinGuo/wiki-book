@@ -8,9 +8,9 @@
 
 ## 相关实体
 - [Tencent Vibe Coding To Agentic Engineering Backend](ch04/275-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Karpathy Vibe Coding To Agentic Engineering](ch04/740-agentic.html)
+- [Karpathy Vibe Coding To Agentic Engineering](ch04/073-agentic.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](ch04/549-vibe-coding-agentic-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering V4](ch04/815-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering V4](ch04/816-karpathy-vibe-coding-agentic-engineering.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](ch04/241-ahe-agentic-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从vibe-coding到agentic-engineering重构后台开发全流程.md)

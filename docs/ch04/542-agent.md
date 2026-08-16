@@ -53,7 +53,7 @@
 - [CUGA: IBM Research Enterprise Agent Harness](../ch05/042-agent-harness.html)
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/348-skill.html)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/520-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Claude Managed Agents 新更新"专属云"模式：把Agent的手放回企业内部](ch04/809-claude-managed-agents.html)
+- [Claude Managed Agents 新更新"专属云"模式：把Agent的手放回企业内部](ch04/810-claude-managed-agents.html)
 - [Agent 生产级 Harness 工程实践](../ch05/042-agent-harness.html)
 - [企业级 Agent 编排](ch04/618-agent-orchestration.html)
 - [AI 原生公司转型路径](../ch05/022-ai-native.html)

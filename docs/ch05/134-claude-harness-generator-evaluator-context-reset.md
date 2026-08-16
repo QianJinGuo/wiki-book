@@ -169,10 +169,10 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 - [LangChain Anatomy of Agent Harness](ch05/042-agent-harness.html) — Ralph 循环 + 规划/自我验证双闭环
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/809-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/810-claude-managed-agents.html)
 - [Ai Agent Harness Construction Akshay Baoyu](../ch01/1191-ai-agent-harness.html)
 - [Code As Agent Harness Survey](../ch09/063-code-as-agent-harness.html)
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/818-agent-harnesses-are-dead-long-live-agent-harnesses.html)
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/819-agent-harnesses-are-dead-long-live-agent-harnesses.html)
 - [Harness 之后 状态边界与失败闭环 若飞](ch05/077-harness.html)
 - [Agentscope Java 2.0 Enterprise Distributed Harness](ch05/077-harness.html)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](ch05/077-harness.html)

@@ -99,7 +99,7 @@ Dify 知识库的每一个配置项，本质上都是 RAG 链路某个环节的�
 - [向量库 vs 知识图谱：RAG 的进阶路径](ch01/1284-rag.html)
 - [AI 客服落地全流程：意图识别到数据飞轮](../ch05/108-ai.html)
 - [企业 AI POC 落地困境](ch01/461-ai-poc.html)
-- [AI Agent 工程师能力地图](../ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
 
 ---

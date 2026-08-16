@@ -120,7 +120,7 @@ Lambda MicroVMs 和 Bedrock AgentCore 的出现标志着 AI Agent 运行时正�
 
 ## 相关实体
 
-- [Amazon Bedrock Agent](../ch04/658-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agent](../ch04/659-amazon-bedrock-agentcore.html)
 - [Agent 代码沙箱安全](../ch04/448-sandboxing-an-ai-agent.html)
 - [AWS Lambda Serverless](ch11/146-what-you-need-to-know-about-lambda-microvms.html)
 - [Harness Engineering](../ch05/065-harness-engineering.html)
