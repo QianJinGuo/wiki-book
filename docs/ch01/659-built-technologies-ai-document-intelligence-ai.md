@@ -70,7 +70,7 @@ Built 采用"同一管道，不同模型"的策略：对于标准文档（如发
 
 - [Amazon Bedrock](../ch11/309-amazon-bedrock.html) — AWS 的基础模型服务和文档处理能力
 - [AWS IDP Accelerator](../ch11/307-aws-idp-accelerator.html) — AWS 智能文档处理加速器
-- [文档处理 Agent](../ch04/791-document-processing-agent.html) — AI 驱动的文档处理 Agent
+- [文档处理 Agent](../ch04/792-document-processing-agent.html) — AI 驱动的文档处理 Agent
 - [金融行业 Agentic AI](../ch04/117-agentic-ai.html) — AI Agent 在金融领域的应用
 - [Human-in-the-Loop AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/human-in-the-loop-ai.md) — 人机协作的 AI 系统设计
 - [文档 RAG](ch01/1284-rag.html) — RAG 在文档处理中的应用

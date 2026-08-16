@@ -61,7 +61,7 @@ Hermes 的记忆系统本质上是一套**分层成本治理**架构，而非单
 ## 关联阅读
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-vs-openclaw.md)
 - [深度拆解 Hermes Agent 记忆系统](ch06/013-hermes-agent-memory.html)
-- [memory agent systems cobanov](../ch04/701-memory-agent-systems-cobanov.html)
+- [memory agent systems cobanov](../ch04/702-memory-agent-systems-cobanov.html)
 - [AI Agent 记忆系统架构](../ch04/215-how-ai-agent-memory-works.html)
 -
 

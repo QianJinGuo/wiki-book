@@ -158,7 +158,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 
-- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
 
 ---
 

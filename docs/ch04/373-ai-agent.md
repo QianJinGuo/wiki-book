@@ -20,7 +20,7 @@
 - [Agent Workflows](ch04/442-agent-workflows.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/348-skill.html)
-- [十年老技术开发的 AI Agent 探索之路](ch04/105-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/105-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/105-ai-agent.html)- [四种 Sub Agent 模式](../ch03/037-agent.html) 
+- [十年老技术开发的 AI Agent 探索之路](ch04/796-ai-agent.html)- [十年老技术开发的 AI Agent 探索之路](ch04/796-ai-agent.html)- 十年老技术开发的 AI Agent 探索之路- [十年老技术开发的 AI Agent 探索之路](ch04/796-ai-agent.html)- [四种 Sub Agent 模式](../ch03/037-agent.html) 
 
 ## 深度分析
 ### 范式转移：人是瓶颈，但解决方式不是替代人

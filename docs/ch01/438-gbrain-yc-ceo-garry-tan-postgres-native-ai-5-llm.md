@@ -154,7 +154,7 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/908-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/098-hermes-agent.html)
 - [Agent 原理、架构与工程实践](../ch03/037-agent.html)
-- [AI Agent 工程师能力地图](../ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
 
 - [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/180-agent-memory.html)
 

@@ -35,7 +35,7 @@ CEO 盛颖是 LMSYS Org 发起者、SGLang 主要创始人之一，博士期间�
 
 ## 相关实体
 - [Nvidia Embraces Ai Investor Topping 40 Billion In Equity Bets 2026](../ch05/108-ai.html)
-- [Edgeclaw Bemit Lobster](../ch04/644-edgeclaw.html)
+- [Edgeclaw Bemit Lobster](../ch04/645-edgeclaw.html)
 - [Claude Opus 47](ch01/1233-claude.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/098-hermes-agent.html)
 - [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](../ch05/108-ai.html)

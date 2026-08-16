@@ -30,7 +30,7 @@ Intercom PHP供应链攻击（Mini Shai-Hulud行动）揭示了Packagist/Compose
 
 ## 相关资源
 - [Agent Memory 架构](../ch04/513-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](../ch04/809-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](../ch04/810-claude-managed-agents.html)
 
 ## 相关实体
 

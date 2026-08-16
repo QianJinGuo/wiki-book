@@ -10,7 +10,7 @@
 ## 相关实体
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/048-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](ch01/162-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
-- [Notion Ai Agents](../ch04/105-ai-agent.html)
+- [Notion Ai Agents](../ch04/796-ai-agent.html)
 - [Code Simulation For Enterprise Engineering Playerz](ch01/113-code-simulation-for-enterprise-engineering-playerzero.html)
 - [Thrive Capital Bets 100 Million On Shopifys Ai Future](../ch05/108-ai.html)
 

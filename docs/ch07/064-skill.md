@@ -88,7 +88,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [Skill 评估方法](../ch04/608-agent-skill.html) — 如何评估 Skill 质量
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](../ch04/105-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](../ch04/796-ai-agent.html)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04/508-aws-sagemaker-ai-agent.html)
 - [SkillX — 层次化技能知识库](ch07/060-skillx.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/308-anthropic-agent.html)
@@ -106,7 +106,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](../ch04/348-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [AI Agent 工程师能力地图](../ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch03/037-agent.html)
 
 ---

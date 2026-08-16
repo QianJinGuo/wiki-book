@@ -25,7 +25,7 @@
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/077-harness.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/098-hermes-agent.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
 
 - [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch05/108-ai.html)
 

@@ -2,7 +2,7 @@
 
 ## Ch09.019 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化
 
-> 📊 Level ⭐⭐ | 28.0KB | `entities/mimo-code-xiaomi-coding-harness-2026.md`
+> 📊 Level ⭐⭐ | 29.3KB | `entities/mimo-code-xiaomi-coding-harness-2026.md`
 
 ## 概述
 
@@ -294,6 +294,14 @@ MiMo Code 的 npm uninstall bug 暴露了 **Agent Harness 设计的通用安全�
 
 > **核心原则**：Agent 不应在未经明确确认的情况下执行任何影响范围超出当前任务的操作。系统判断某些包可能是残留，也应该先询问用户确认。
 
+## 第 3 来源 — 小米官方：模型 Agent 协同优化迈向自进化（08-16）
+
+小米官方 2026-08-16 发布 MiMo Code 开源升级动态，核心转向「模型与 Agent 协同优化」的自进化路线：MiMo Code 作为终端编程 Agent，通过与模型训练/推理的协同反馈闭环，逐步迈向 Agent 自进化时代。
+
+- **协同优化视角**：把模型（MiMo 基座）与 Agent（编程界面）作为联合优化对象，形成数据/策略双向反馈。
+- **自进化路线**：Agent 在执行长程编程任务中积累经验，反哺模型，形成「越用越强」的自改进循环。
+- **互补角度**：与既有 InfoQ 5.1k 星开源稿（重点在产品定位与三大主线）互补，本稿补充了官方对「模型-Agent 协同优化」即自进化的架构叙事。
+
 ## 相关实体
 
 - [撕开Claude Code真相：1.6% vs 98.4%](../ch03/084-claude-code.html)（同 VILA 论文来源）
@@ -303,7 +311,7 @@ MiMo Code 的 npm uninstall bug 暴露了 **Agent Harness 设计的通用安全�
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/042-agent-harness.html)（mem0 Agent 记忆体系对照）
 - [Openai Skills Shell Compaction Agent Primitives](../ch05/028-openai-skills-shell-compaction-agent.html)（OpenAI Skills + Compaction 同源）
 - [Claude Code Source Leak Lifecycle Analysis](../ch03/084-claude-code.html)（Claude Code 源码生命周期分析）
-- [Snowflake Agentic Enterprise Summit 2026](../ch04/740-agentic.html)（Snowflake — 企业级 AI 可审计性同主线）
+- [Snowflake Agentic Enterprise Summit 2026](../ch04/073-agentic.html)（Snowflake — 企业级 AI 可审计性同主线）
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/348-skill.html)（Agent Reliability Engineering 持续改进对照）
 - [Claude Code Tool Design Evolution Anthropic](../ch03/084-claude-code.html)（Claude Code 工具设计演进）
 - [Hermes Agent Self Evolving](../ch03/098-hermes-agent.html)（Hermes Agent 自演进对照）

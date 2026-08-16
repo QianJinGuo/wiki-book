@@ -66,7 +66,7 @@ IMClaw 提供了三种权限模式（approve-reads、approve-all、deny-all）�
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](ch01/1220-openclaw-agent.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/486-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/105-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/796-ai-agent.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/348-skill.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)

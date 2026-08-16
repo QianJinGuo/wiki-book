@@ -92,7 +92,7 @@ Netflix 利用 Envoy 已有的集群路由能力，仅需补充 Lightbulb 来处
 ## 相关实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1395-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/815-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/816-karpathy-vibe-coding-agentic-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-routing-in-model-serving.md)
 

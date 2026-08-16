@@ -56,14 +56,14 @@ SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD �
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](ch01/1586-anthropic.html)
 - [你写的 Skill，及格了吗？](../ch04/348-skill.html)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/1233-claude.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/809-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/810-claude-managed-agents.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
 - [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch05/108-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/740-agentic.html)
-- [AI Agent 工程师能力地图](../ch04/105-ai-agent.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/073-agentic.html)
+- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
 
 ---
 

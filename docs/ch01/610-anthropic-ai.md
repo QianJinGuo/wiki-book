@@ -126,7 +126,7 @@ Sean Ellis 测试（>40% 用户回答"如果不能继续使用会非常失望"�
 
 ## 相关实体
 - [Claude Code Skills 实践与 Superpowers 利器推荐](ch01/706-claude-code-skills-superpowers.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/105-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/796-ai-agent.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
 - [Claude Opus 4.7 发布分析](ch01/549-claude-opus-4-7.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)

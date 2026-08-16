@@ -68,8 +68,8 @@ OpenAI 评估了内核旁路（DPDK 等）但最终选择留在用户态，理�
 
 ## 相关实体
 
-- [多区域 GPU 推理调度](../ch04/740-agentic.html)
-- [TokenSpeed 推理引擎](../ch04/802-tokenspeed-agentic-inference-engine.html)
+- [多区域 GPU 推理调度](../ch04/073-agentic.html)
+- [TokenSpeed 推理引擎](../ch04/803-tokenspeed-agentic-inference-engine.html)
 - [跨区域推理](../ch11/309-amazon-bedrock.html)
 - [CloudFront 全球部署](../ch05/108-ai.html)
 

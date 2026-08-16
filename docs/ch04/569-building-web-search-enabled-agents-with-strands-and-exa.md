@@ -10,7 +10,7 @@
 See [source article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md) for full content.
 
 ## 相关实体
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/788-strands-agents.html)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch04/789-strands-agents.html)
 - [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](../ch11/059-bedrock-agentcore.html)
 
 ## 深度分析
@@ -31,7 +31,7 @@ See [source article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/
 -
 -
 
-- [Agentic Scheduler with Strands AgentCore for Multi-Region GPU Inference](ch04/740-agentic.html)
+- [Agentic Scheduler with Strands AgentCore for Multi-Region GPU Inference](ch04/073-agentic.html)
 - [Product Ad Review Agent with Strands SDK and Bedrock](../ch11/313-bedrock.html)
 - [基于 Strands SDK 的企业级智能数据查询解决方案实践](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
 - [AI Agent Memory Systems](ch04/180-agent-memory.html)

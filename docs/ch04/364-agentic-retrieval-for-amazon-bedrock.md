@@ -43,7 +43,7 @@ Agentic Retrieval 的实现细节展现了 AWS 在"服务化"上的工程思路�
 3. **Retrieval 或 FullDocumentExpansion**：每个子查询的执行事件，支持获取完整文档
 4. **Result**：去重后的最终结果
 
-每个 Trace 事件携带 step 和 status 信息，可审计模型每一步做了什么。这在生产环境中至关重要——当回答出现问题时，可以通过 Trace 回放定位是规划出错、检索遗漏还是综合错误。这与 [Bedrock AgentCore 运行时](ch04/658-amazon-bedrock-agentcore.html) 的可观测性设计一脉相承。
+每个 Trace 事件携带 step 和 status 信息，可审计模型每一步做了什么。这在生产环境中至关重要——当回答出现问题时，可以通过 Trace 回放定位是规划出错、检索遗漏还是综合错误。这与 [Bedrock AgentCore 运行时](ch04/659-amazon-bedrock-agentcore.html) 的可观测性设计一脉相承。
 
 ### FullDocumentExpansion 的独特价值
 
@@ -88,10 +88,10 @@ Agentic Retrieval 的多 KB 路由功能依赖一个精妙的设计：retriever 
 
 - Agentic RAG 模式
 - [RAG 分块-向量化-重排管线](../ch01/1284-rag.html)
-- [Bedrock AgentCore 运行时](ch04/658-amazon-bedrock-agentcore.html)
+- [Bedrock AgentCore 运行时](ch04/659-amazon-bedrock-agentcore.html)
 - [Bedrock 跨区域推理](../ch11/309-amazon-bedrock.html)
 - RAG 框架对比
-- [三种 RAG 架构](ch04/740-agentic.html)
+- [三种 RAG 架构](ch04/073-agentic.html)
 - RAG 检索增强生成
 - [知识库构建](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-base-construction.md)
 

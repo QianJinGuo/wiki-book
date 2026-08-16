@@ -325,7 +325,7 @@
 - [高德 AI-Native 生产线](../ch05/022-ai-native.html) —— 企业级 R&D
 - [晓斌 Agent-Oriented Infra](../ch03/037-agent.html) —— 哲学框架
 - [Kimi Work](../ch01/737-codex.html) —— 本地 Agent
-- [ANOLISA v0.3](../ch04/740-agentic.html) —— 阿里 Agentic OS
+- [ANOLISA v0.3](../ch04/073-agentic.html) —— 阿里 Agentic OS
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/miroflow-deep-research-agent-harness-mirothinker.md)
 

@@ -136,7 +136,7 @@ AI 可以快速生成方法论正确的论文框架，但假设的原创性和�
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md)
 - [The Shape Of The Thing Mollick](ch01/398-the-shape-of-the-thing.html)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/105-ai-agent.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/796-ai-agent.html)
 - [Ai Job Interview Model Evaluation Mollick](../ch05/108-ai.html)
 
 ## 关键引用（保留原文）

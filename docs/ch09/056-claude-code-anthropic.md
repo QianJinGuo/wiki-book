@@ -67,7 +67,7 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - ⚠️ **需要额外配置**：大量二进制资产的游戏引擎、非 Git 版本控制、非工程师贡献内容
 
 ## 相关实体
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/105-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/796-ai-agent.html)
 - [claude-code-agent-view](ch09/003-claude-code-agent-view.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/576-anthropic-ai.html)
@@ -88,7 +88,7 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)
 - [柚漫剧 AI全流程提效拆解](../ch05/108-ai.html)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/084-claude-code.html)
-- [Claude Managed Agents 开发者指南](../ch04/809-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](../ch04/810-claude-managed-agents.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/084-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 

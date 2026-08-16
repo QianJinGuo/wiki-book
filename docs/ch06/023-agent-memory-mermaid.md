@@ -93,7 +93,7 @@ AWS AgentCore Memory 的核心抽象是"actor + namespace + strategy"——按�
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/298-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
 - [Youre Building Agent Security In The Wrong Order](../ch03/037-agent.html)
 
 ---

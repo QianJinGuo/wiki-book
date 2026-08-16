@@ -28,7 +28,7 @@
 
 ### 确定性 × 推理：两种互补的编排范式
 
-素材呈现的是两种互补范式而非替代关系：Step Functions 代表确定性编排——状态机显式管理状态、重试、分支与并行，适合步骤边界清晰的业务流程；Bedrock Agents 代表推理驱动协调——内置工具调用、记忆与动态路由，适合路径不固定的开放任务。真实企业编排层通常把两者叠放：用确定性的外层定义合规边界，用推理的内层保留灵活性。这种「工作流引擎 vs 自主 Agent 框架」的张力在开源生态中同样存在，控制流设计的更完整谱系参见 [17种Agent架构演进](ch04/796-17-agent.html)。
+素材呈现的是两种互补范式而非替代关系：Step Functions 代表确定性编排——状态机显式管理状态、重试、分支与并行，适合步骤边界清晰的业务流程；Bedrock Agents 代表推理驱动协调——内置工具调用、记忆与动态路由，适合路径不固定的开放任务。真实企业编排层通常把两者叠放：用确定性的外层定义合规边界，用推理的内层保留灵活性。这种「工作流引擎 vs 自主 Agent 框架」的张力在开源生态中同样存在，控制流设计的更完整谱系参见 [17种Agent架构演进](ch04/797-17-agent.html)。
 
 ### 审批闸门与失败隔离：从演示到生产的关键一跃
 
@@ -51,10 +51,10 @@ HITL 审批把「关键决策」变成显式暂停点，直到人类签核才继
 
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/348-skill.html)
 - [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/037-agent.html)
-- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/105-ai-agent.html)
+- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/796-ai-agent.html)
 - [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](../ch05/077-harness.html)
 - [多 Agent 编排系统](ch04/618-agent-orchestration.html)
-- [17种Agent架构演进：控制流设计的完整演化史](ch04/796-17-agent.html)
+- [17种Agent架构演进：控制流设计的完整演化史](ch04/797-17-agent.html)
 - [Agent Harness 可观测性：生产级 AI 项目必须补上的一课](../ch05/042-agent-harness.html)
 - [Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns](../ch03/037-agent.html)
 

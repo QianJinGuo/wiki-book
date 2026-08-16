@@ -117,7 +117,7 @@ SE-GA 的创新不仅在于 TTME 或 MASE 各自的效果，更在于两者协�
 - [Hermes Agent Self Evolution Tengxun](../ch03/098-hermes-agent.html)
 - [Self Learning Evolvable Agents For Cultural Tourism Info Extraction With Agentcore](../ch03/037-agent.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/200-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/809-claude-managed-agents.html)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/810-claude-managed-agents.html)
 - [World Knowledge Agent Self Evolution Tencent Hkustgz](ch04/366-world-knowledge-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/se-ga-memory-augmented-self-evolution-gui-agents.md)

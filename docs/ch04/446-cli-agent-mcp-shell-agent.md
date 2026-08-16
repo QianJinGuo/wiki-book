@@ -68,7 +68,7 @@ CLI Agent 要进入生产，可靠性工程是分水岭，涉及五个维度：
 ## 相关实体
 
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/348-skill.html)
-- [如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch04/105-ai-agent.html)
+- [如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch04/796-ai-agent.html)
 - [Agent-EvalKit：AWS 开源 CLI Agent 评测工具包](../ch03/037-agent.html)
 - [CLI-Anything：让 Agent 自主驱动任意 GUI 软件](../ch03/105-cli-anything.html)
 - [AI Agent 的内核是 250 行 while 循环：用 Python + Ollama 从零搭建 CLI Agent 的 7 阶段教程](ch04/484-python.html)

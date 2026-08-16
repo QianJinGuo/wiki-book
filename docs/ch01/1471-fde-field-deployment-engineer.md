@@ -110,7 +110,7 @@ Manelius 将 FDX 视为十亿美元级市场机会——AI 时代稀缺的不是
 - 与 [Ibm Forward Deployed Units Ai Deployment](../ch05/108-ai.html) 互补——IBM 的 FDE 是公司战略视角，本文是一线实践视角
 - FDE 的"蒸馏"机制是 [Loop Engineering Feedback Control System](../ch05/006-loop-engineering.html) 在组织层面的体现：经验从项目→可复用资产→产品
 - FDE "听到炮声改产品"的模式是 [Harness Engineering](../ch05/065-harness-engineering.html) 的生产实践——前线和产品之间的超短反馈环
-- "模型是最容易被替代的一层" 呼应 [Agent Vs Workflow Control Continuum Framework](../ch04/769-agent-vs-workflow.html) 中护城河不在模型而在工程层
+- "模型是最容易被替代的一层" 呼应 [Agent Vs Workflow Control Continuum Framework](../ch04/770-agent-vs-workflow.html) 中护城河不在模型而在工程层
 - 与 阿里巴巴 Harness 工程自主迭代 互补——Harness 工程在个体层面，FDE 在组织层面
 
 ---

@@ -13,8 +13,8 @@
 ## 相关实体
 - [Amazon Bedrock Api Security Guide](../ch12/036-amazon-bedrock-api.html)
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/108-ai.html)
-- [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/658-amazon-bedrock-agentcore.html)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/658-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock Agentcore Gateway Mcp Extension](../ch04/659-amazon-bedrock-agentcore.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/659-amazon-bedrock-agentcore.html)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/900-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)

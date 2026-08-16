@@ -252,8 +252,8 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](../ch03/037-agent.html)
 - [Cloud Agent Development Environments](../ch03/037-agent.html)
 - [Volcengine Data Agent Product Overview](../ch04/461-data-agent.html)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/105-ai-agent.html)
-- [Emergent Collaboration Ai High Quality Decision Agent Room](../ch04/804-agent-room.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/796-ai-agent.html)
+- [Emergent Collaboration Ai High Quality Decision Agent Room](../ch04/805-agent-room.html)
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](../ch03/037-agent.html)
 - [Agent Guide Core Concepts Overview](../ch03/037-agent.html)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch01/135-hy3-preview.html)
@@ -262,7 +262,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Kimi Work Beta Foundation Model Company Advantage](../ch01/578-kimi.html)
 - [Agent Paradigm Evolution Feipeng Alibaba](../ch03/037-agent.html)
 - [Hermes Agent Long Running Governance Five Cards Ruofei](../ch03/098-hermes-agent.html)
-- [Agentic Rl Token In Token Out Done Right C6Aaa4](../ch04/824-agentic-rl-token-in-token-out-done-right.html)
+- [Agentic Rl Token In Token Out Done Right C6Aaa4](../ch04/754-agentic-rl-token-in-token-out-done-right.html)
 - [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](../ch03/037-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [Kimi Work 300 Agent Cluster Yin John Agi Hunt](../ch01/334-agi-hunt.html)
@@ -279,7 +279,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Volcengine Data Agent Intelligent Query Agent](../ch04/461-data-agent.html)
 - [Hermes Agent Tool System Analysis](../ch03/098-hermes-agent.html)
 - [How To Build Agents Where Data Already Lives](../ch04/583-how-to-build-agents-where-data-already-lives.html)
-- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](../ch04/105-ai-agent.html)
+- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](../ch04/796-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

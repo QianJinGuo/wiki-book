@@ -240,7 +240,7 @@ Anthropic 反复强调："将做事的 Agent 和评判的 Agent 分开，是一�
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — 上下文管理工具
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/037-agent.html) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
 - [Cline Agent Runtime Sdk](ch03/037-agent.html) — Cline SDK 的分层可移植设计，与 Harness Engineering 形成"开源平台 vs 工程化体系"对照
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html) — Vibe Coding → Agentic Engineering 的范式跃迁
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html) — Vibe Coding → Agentic Engineering 的范式跃迁
 - [卡片式对话的协议方案探索和思考](https://github.com/QianJinGuo/wiki/blob/main/entities/卡片式对话的协议方案探索和思考.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

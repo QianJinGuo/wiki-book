@@ -139,7 +139,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 - [AIDL 范式迁移：平台驱动数据工程](../ch01/433-aws.html) — 另一 AIDL 视角
 - [Agent Harness 架构设计生产指南](../ch05/042-agent-harness.html) — Aksahy 实战视角
 - [Agent 工程原则与架构实践](../ch03/037-agent.html) — 通用 Agent 工程框架
-- [Strands + AgentCore 多区域 GPU 推理调度](ch04/740-agentic.html) — 实战案例
+- [Strands + AgentCore 多区域 GPU 推理调度](ch04/073-agentic.html) — 实战案例
 
 ## 上线状态 / 链接
 
@@ -168,7 +168,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 深层博弈："代理人困境"的微观机制与宏观代价
 
-130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/105-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
+130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](ch04/796-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
 
 ### 技术判断：框架无关 + 模型无关是战略灵活性而非技术偏好
 

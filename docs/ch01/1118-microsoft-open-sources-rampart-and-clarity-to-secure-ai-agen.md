@@ -10,7 +10,7 @@
 
 ## 相关实体
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](ch01/451-how-harnesses-and-post-training-close-the-open-weight-bug-fi.html)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/105-ai-agent.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/796-ai-agent.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/108-ai.html)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](ch01/160-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/108-ai.html)

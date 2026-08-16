@@ -78,7 +78,7 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/508-aws-sagemaker-ai-agent.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-token-efficiency-agentic-workflows.md)
-- [十年老技术开发的 AI Agent 探索之路](ch04/105-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/796-ai-agent.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/486-agent-skills.html)
 - [Garry Tan](../ch01/903-garry-tan.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)

@@ -89,7 +89,7 @@
 
 ## 关联阅读
 
-- [Vibe Coding 到 Agentic Engineering](../ch04/740-agentic.html)——了解「氛围编程」如何重塑开发流程
+- [Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)——了解「氛围编程」如何重塑开发流程
 - [Claude Code 架构](../ch03/084-claude-code.html)——Anthropic推出的AI编程代理，深入理解其设计哲学和能力边界
 - [Coding Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md)——从技术架构角度理解AI Agent与传统软件的根本差异
 

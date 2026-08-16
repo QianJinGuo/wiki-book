@@ -42,7 +42,7 @@ Together Mode 的退役不是孤立事件，而是"沉浸式办公"叙事整体�
 ## 相关实体
 - [微软悄然寻找 OpenAI 替代方案](ch01/039-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Microsoft for Startups (v2)](ch01/724-microsoft-for-startups-microsoft.html)
-- [Notion AI Agents](../ch04/105-ai-agent.html)
+- [Notion AI Agents](../ch04/796-ai-agent.html)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
 - [Microsoft for Startups](ch01/724-microsoft-for-startups-microsoft.html)
 - [Granola：AI 会议笔记工具](../ch05/108-ai.html)

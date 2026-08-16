@@ -70,7 +70,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Thin Harness Fat Skills](../ch05/100-thin-harness-fat-skills-ai.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/437-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AI Agent 工程师能力地图](ch04/105-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）
