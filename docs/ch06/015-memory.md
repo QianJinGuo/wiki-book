@@ -113,7 +113,7 @@ D2L 看似优雅的"0 context 回答"实际上是以高幻觉率为代价的。�
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/908-llm-wiki-obsidian-wiki-gbrain.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/076-skills.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch06/045-memory.html)
-- [SkillClaw](../ch04/558-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/559-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/019-hermes-skill.html)
 - [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)

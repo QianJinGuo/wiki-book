@@ -45,7 +45,7 @@ Nvidia 的自由现金流在上一财年达到 970 亿美元，使其有能力�
 
 ## 相关实体
 - [拿下1亿美元种子轮Sglang团队创立Radixark打造下一代开放Ai基础设施](ch01/332-1.html)
-- [Edgeclaw Bemit Lobster](../ch04/645-edgeclaw.html)
+- [Edgeclaw Bemit Lobster](../ch04/646-edgeclaw.html)
 - [Claude Opus 47](ch01/1233-claude.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/098-hermes-agent.html)
 - [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](../ch05/108-ai.html)

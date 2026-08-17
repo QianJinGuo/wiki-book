@@ -52,7 +52,7 @@ ETR 明确指出 coding assistant 是各大实验室竞争最激烈、收入增�
 ## 相关实体
 
 - [Claude's next enterprise battle: 从模型之争到 agent 控制平面](../ch01/1233-claude.html)
-- [Anthropic](../ch01/1586-anthropic.html)
+- [Anthropic](../ch01/778-anthropic.html)
 - [OpenAI 收购 AI 咨询公司加码企业市场](../ch01/276-openai.html)
 - [企业 AI 投资与数据就绪度](ch03/011-cio.html)
 - [AI tool poisoning：企业 agent 安全缺陷](../ch04/460-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)

@@ -47,11 +47,11 @@ Pipelined decoding 在 Photon 上实现最高 **35% 的 decode 吞吐提升**。
 
 ## 与现有推理优化技术的区别
 
-Moondream Photon 的 pipelined decoding 与传统的推理优化方法（如 [LLM Inference Pipeline](ch01/867-llm.html) 中 covered 的 continuous batching、PagedAttention、speculative decoding）的区别在于：它解决的是**CPU-GPU 间同步开销**问题，而非模型计算效率或显存管理问题。Pipelined decoding 可以与这些技术正交组合，产生叠加效果。
+Moondream Photon 的 pipelined decoding 与传统的推理优化方法（如 [LLM Inference Pipeline](ch01/1515-llm.html) 中 covered 的 continuous batching、PagedAttention、speculative decoding）的区别在于：它解决的是**CPU-GPU 间同步开销**问题，而非模型计算效率或显存管理问题。Pipelined decoding 可以与这些技术正交组合，产生叠加效果。
 
 ## 相关实体
-- [LLM Inference Pipeline Internals](ch01/867-llm.html)
-- [MorphLLM Inference Optimization](ch01/867-llm.html)
+- [LLM Inference Pipeline Internals](ch01/1515-llm.html)
+- [MorphLLM Inference Optimization](ch01/1515-llm.html)
 - [Tencent Hunyuan Hopper Inference Optimization](ch01/135-hy3-preview.html)
 - [LLaVA-OneVision VLM](ch01/1088-vlm.html)
 - [高德 VLM 生产实践](ch01/292-hermes.html)

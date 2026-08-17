@@ -14,11 +14,11 @@
 - Prompt injection 攻击面大：不可信代码和凭证在同一环境
 
 ## 相关实体
-- [Anthropic Pm Jess Yan Managed Agents](../ch01/1586-anthropic.html)
+- [Anthropic Pm Jess Yan Managed Agents](../ch01/778-anthropic.html)
 - [Anthropic Claude Managed Agents Platform 2026](../ch01/397-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/810-claude-managed-agents.html)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](ch04/629-claude-managed-agents.html)
 - [From Prompt To Harness Claude Official](../ch05/077-harness.html)
-- [Anthropic Demystifying Evals For Ai Agents](ch04/577-anthropic-demystifying-evals-for-ai-agents.html)
+- [Anthropic Demystifying Evals For Ai Agents](ch04/578-anthropic-demystifying-evals-for-ai-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-managed-agents-scaling.md)
 

@@ -53,7 +53,7 @@ MiniMax M2.7代表了LLM发展的一条新路径——模型不再只是被训�
 
 ## 与本文相关
 - [Openclaw Architecture 800Lines](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-architecture-800lines.md) — OpenClaw架构（MM-Claw基准基于此构建）
-- [Edgeclaw Openbmb](../ch04/645-edgeclaw.html) — EdgeClaw端云两栖（MiniCPM是端侧对比）
+- [Edgeclaw Openbmb](../ch04/646-edgeclaw.html) — EdgeClaw端云两栖（MiniCPM是端侧对比）
 - [Gstack Ai Workflow](../ch03/068-gstack-ai.html) — 并行Sprint工作流
 -  — 企业级Agent落地对比
 - [Hermes Agent Deep Dive](../ch03/098-hermes-agent.html) — Self-Evolution概念对照

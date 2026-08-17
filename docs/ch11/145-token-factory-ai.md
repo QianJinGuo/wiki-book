@@ -108,7 +108,7 @@
 - [让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠](../ch12/002-token.html) — 腾讯研究院关于Token经济学与模型路由的理论框架，与星火Token Factory的工程实践形成互补
 - [AI Coding Agent Token 成本控制五层模型](../ch09/054-coding-agent.html) — Token成本工程化的五层优化模型，侧重AI Coding场景
 - [AI Gateways vs MCP Gateways](ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI网关在推理路由与成本控制中的定位分析
-- [LLM 缓存原理与实践](../ch01/867-llm.html) — 语义缓存/Prefix Caching的技术原理深化
+- [LLM 缓存原理与实践](../ch01/1515-llm.html) — 语义缓存/Prefix Caching的技术原理深化
 - [State of Routing in Model Serving](ch11/204-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
 
 ---

@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Hermes Agent Deep Dive Alibaba](../ch03/098-hermes-agent.html)
-- [Deerflow Hermes Openclaw Comparison](../ch04/589-deerflow-hermes-openclaw.html)
+- [Deerflow Hermes Openclaw Comparison](../ch04/590-deerflow-hermes-openclaw.html)
 - [Harness Evolution Papers](ch05/077-harness.html)
 - [Better Harness Eval Trace Methodology](ch05/077-harness.html)
 - [Wow Harness V3 Governance Protocol](ch05/077-harness.html)

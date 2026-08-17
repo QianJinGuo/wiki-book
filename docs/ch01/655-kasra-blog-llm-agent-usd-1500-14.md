@@ -138,7 +138,7 @@ prompt filter + input validation + output monitoring + human review——多层�
 ## 相关实体
 - [Ai Skill Skill Creator 源码拆解](../ch04/372-skill-skill.html)
 - [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch03/098-hermes-agent.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/105-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/126-harness-skill.html)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **62 篇**实体，按深度递增排列。
+> 本章收录 **63 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 17 |
+| ⭐⭐ 工程师 | 需编程基础 | 18 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 39 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
@@ -1847,7 +1847,38 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ---
 
-## Ch17.022 别让格式杀死思想logics-parsing-v2定义文档解析新边界
+## Ch17.022 MineExplorer：开放世界多模态评测基准
+
+> 📊 Level ⭐⭐ | 2.4KB | `entities/mineexplorer-开放世界多模态评测基准-longcat-2026.md`
+
+# MineExplorer：开放世界多模态评测基准
+
+## 核心洞察
+
+多模态大模型能看懂图像、解析视频、在复杂场景里做静态推理，但一旦被放进一个**实时变化、需要持续探索的开放世界**（如《我的世界》），其真实能力出现系统性断层——这是静态 benchmark（截图问答）掩盖的长程能力短板。
+
+## 评测设计
+
+美团 LongCat 团队构建了 **MineExplorer**——首个在开放世界中做到**分钟级长程任务**的评测基准，系统评测多模态大模型在需要**长程规划**、且包含**隐藏前置条件**（如先砍树才能获得木头、先熔炼才能得到工具）的任务中的真实能力。
+
+- 与静态截图问答的区别：模型必须在环境中持续执行、感知反馈、修正规划
+- 任务结构：长时间跨度、多步骤因果链、隐含前置条件
+- 目标：暴露"温室"（静态数据集）与"开放世界"（动态执行）之间的能力落差
+
+## 与现有评测体系的关系
+
+MineExplorer 属于 agent/能力评测家族的新分支——面向**执行型长程任务**而非单轮问答。它与 [VitaBench 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/meituan-longcat-vitabench-20-long-term-dynamic-agent-benchmark.md)（长期动态智能体基准）、[Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)、[WBench 世界模型边界](https://github.com/QianJinGuo/wiki/blob/main/entities/从月球漫步到赛博都市wbench测出了世界模型的边界.md) 同属"更贴近真实执行环境"的评测转向。
+
+## 价值
+
+- 提供了超越静态 VQA 的**动态世界评测范式**，可迁移用于 video-understanding / agentic / world-model 类模型的执行能力评估
+- 揭示多模态模型在长程规划与隐含前置条件推理上的真实短板
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mineexplorer-开放世界多模态评测基准-longcat-2026.md)
+
+---
+
+## Ch17.023 别让格式杀死思想logics-parsing-v2定义文档解析新边界
 
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/别让格式杀死思想logics-parsing-v2定义文档解析新边界.md`
 
@@ -1957,7 +1988,7 @@ LogicsDocBench为自建综合评估基准，由 900 页精心挑选的 PDF 页�
 
 ---
 
-## Ch17.023 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
+## Ch17.024 小米多篇论文入选 ECCV 2026：人脸视频修复与视频模型加速
 
 > 📊 Level ⭐⭐⭐ | 12.4KB | `entities/小米-多篇论文入选-eccv-2026-人脸修复视频加速.md`
 
@@ -2051,7 +2082,7 @@ BeyondDrive 和 DriveFine 两篇论文都聚焦于一个被传统端到端方法
 
 ---
 
-## Ch17.024 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
+## Ch17.025 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 > 📊 Level ⭐⭐⭐ | 12.0KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
@@ -2140,7 +2171,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ---
 
-## Ch17.025 Self-Filming Guide by Hello World Media
+## Ch17.026 Self-Filming Guide by Hello World Media
 
 > 📊 Level ⭐⭐⭐ | 11.5KB | `entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md`
 
@@ -2269,7 +2300,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ---
 
-## Ch17.026 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
+## Ch17.027 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/gemma-4-12b-google-multimodal-local.md`
 
@@ -2443,7 +2474,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ---
 
-## Ch17.027 智源悟界·RoboBrain Orca：多模态表征世界模型
+## Ch17.028 智源悟界·RoboBrain Orca：多模态表征世界模型
 
 > 📊 Level ⭐⭐⭐ | 9.7KB | `entities/智源悟界robobrain-orca多模态表征世界模型.md`
 
@@ -2518,7 +2549,7 @@ Orca 与 Google DeepMind 的 Genie、OpenAI 的 Sora 等世界模型存在本质
 
 ---
 
-## Ch17.028 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
+## Ch17.029 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
 
@@ -2624,7 +2655,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ---
 
-## Ch17.029 CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率
+## Ch17.030 CVPR 2026 | DGAF-VSR: 重思基于扩散模型的视频超分辨率
 
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/cvpr-2026-dgaf-vsr-video-super-resolution-diffusion-taobao.md`
 
@@ -2703,7 +2734,7 @@ DGAF-VSR 由淘天音视频技术团队开发，该团队长期服务于淘宝�
 
 ---
 
-## Ch17.030 Normalizing Trajectory Models
+## Ch17.031 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/normalizing-trajectory-models-v2.md`
 
@@ -2825,7 +2856,7 @@ NTM 展示了一种有价值的思路：**通过架构设计保留训练目标�
 
 ---
 
-## Ch17.031 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
+## Ch17.032 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
@@ -2948,7 +2979,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ---
 
-## Ch17.032 Google's Gemini Omni video model surfaces ahead of I/O debut
+## Ch17.033 Google's Gemini Omni video model surfaces ahead of I/O debut
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
 
@@ -3005,7 +3036,7 @@ Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正�
 
 ---
 
-## Ch17.033 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
+## Ch17.034 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
@@ -3102,7 +3133,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 ---
 
-## Ch17.034 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
+## Ch17.035 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/doubao-seed-2-lite.md`
 
@@ -3214,7 +3245,7 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 
 ---
 
-## Ch17.035 OlmoEarth v1.1: A more efficient family of Earth observation models
+## Ch17.036 OlmoEarth v1.1: A more efficient family of Earth observation models
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md`
 
@@ -3293,7 +3324,7 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 
 ---
 
-## Ch17.036 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
+## Ch17.037 Om AI VLX-Flow: 流式视频理解 VLM — VLX 系列开篇
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/om-ai-vlx-flow-streaming-video-vlm-vlx系列开篇-2026.md`
 
@@ -3378,7 +3409,7 @@ VLX-Flow 是三层链路中的感知前置层：Flow（持续感知）→ Seek�
 
 ---
 
-## Ch17.037 MolmoMotion：语言引导的 3D 运动预测模型
+## Ch17.038 MolmoMotion：语言引导的 3D 运动预测模型
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
@@ -3463,7 +3494,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ---
 
-## Ch17.038 美团海报生成 AIGC 技术创新与实践
+## Ch17.039 美团海报生成 AIGC 技术创新与实践
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/meituan-aigc-poster-generation-2026.md`
 
@@ -3556,7 +3587,7 @@ PosterReward 的出现填补了海报质量评估领域的空白。现有通用�
 
 ---
 
-## Ch17.039 Video World Model Hand Tracking — 视频生成模型实现手部动捕
+## Ch17.040 Video World Model Hand Tracking — 视频生成模型实现手部动捕
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/video-world-model-hand-motion-capture-2026.md`
 
@@ -3636,7 +3667,7 @@ ACE-ViDiHand 的核心洞察是：视频生成模型天天看互联网上海量�
 
 ---
 
-## Ch17.040 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
+## Ch17.041 Meta MSL（Multi-Scale Latent）：余家辉团队连发图像视频模型
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/meta-msl-multi-scale-latent-yujiahui-2026.md`
 
@@ -3702,7 +3733,7 @@ MSL 视觉团队的核心成员构成反映了当前 AI 研究的高端人才流
 
 ---
 
-## Ch17.041 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
+## Ch17.042 Om AI VLX-Go: 0.6B 导航 VLM — VLX 系列收官
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/om-ai-vlx-go-vlm-navigation-0.6b-2026.md`
 
@@ -3780,7 +3811,7 @@ VLX-Go 采用两阶段训练：第一阶段基于离线轨迹数据学习，系�
 
 ---
 
-## Ch17.042 Introducing 1-bit and Ternary Bonsai Image Models
+## Ch17.043 Introducing 1-bit and Ternary Bonsai Image Models
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/bonsai-image-4b-1-bit-ternary.md`
 
@@ -3856,7 +3887,7 @@ Compression only matters if the model remains useful. We evaluated Bonsai Image 
 
 ---
 
-## Ch17.043 Normalizing Trajectory Models
+## Ch17.044 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/normalizing-trajectory-models.md`
 
@@ -3919,7 +3950,7 @@ Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致�
 
 ---
 
-## Ch17.044 火山引擎 RTM：超低延时直播技术
+## Ch17.045 火山引擎 RTM：超低延时直播技术
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
 
@@ -3997,7 +4028,7 @@ ABR 不只是简单的码率切换机制，而是服务端和客户端协同的�
 
 ---
 
-## Ch17.045 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.046 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
 
@@ -4084,7 +4115,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ---
 
-## Ch17.046 ai视频工具悄悄走到了第三阶段
+## Ch17.047 ai视频工具悄悄走到了第三阶段
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/ai视频工具悄悄走到了第三阶段.md`
 
@@ -4138,7 +4169,7 @@ RHTV作为第三阶段的先行者，其「画布原生」路线可能会对赛�
 
 ---
 
-## Ch17.047 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.048 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 5.6KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
@@ -4181,7 +4212,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.048 Stable Audio 3.0 开源音频生成模型
+## Ch17.049 Stable Audio 3.0 开源音频生成模型
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/stable-audio-3.md`
 
@@ -4238,7 +4269,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.049 PhyEdit：显式 3D 几何 Preview 指导 DiT 图像编辑（浙大 ReLER，ACM MM 2026）
+## Ch17.050 PhyEdit：显式 3D 几何 Preview 指导 DiT 图像编辑（浙大 ReLER，ACM MM 2026）
 
 > 📊 Level ⭐⭐⭐ | 4.9KB | `entities/phyedit-explicit-3d-geometry-preview-image-editing-acm-mm26-2026.md`
 
@@ -4283,7 +4314,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.050 扩散模型视觉生成一致性框架（2026 综述）
+## Ch17.051 扩散模型视觉生成一致性框架（2026 综述）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
 
@@ -4347,7 +4378,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.051 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+## Ch17.052 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
 
@@ -4413,7 +4444,7 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.052 FLUX 3 — Black Forest Labs 多模态流模型
+## Ch17.053 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -4475,7 +4506,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.053 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.054 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -4517,7 +4548,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.054 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.055 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
@@ -4560,7 +4591,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.055 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+## Ch17.056 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
@@ -4597,7 +4628,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.056 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.057 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4641,7 +4672,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.057 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.058 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4686,7 +4717,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.058 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.059 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4714,7 +4745,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.059 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
+## Ch17.060 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
 
 > 📊 Level ⭐⭐⭐ | 2.2KB | `entities/eccv26-oral人物不能变姿势要对齐风格还得一致dyref突破多参考约束下的图像生成难题.md`
 
@@ -4738,7 +4769,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.060 Qwen-Image-3.0 — 落字成画，字字如印
+## Ch17.061 Qwen-Image-3.0 — 落字成画，字字如印
 
 > 📊 Level ⭐⭐⭐ | 1.4KB | `entities/qwen-image-30落字成画字字如印.md`
 
@@ -4760,7 +4791,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.061 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.062 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -4884,7 +4915,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.062 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.063 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

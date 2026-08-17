@@ -91,7 +91,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Agent 术语表 | [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/105-ai-agent.html) | [{{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent]({{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent)|
+| Agent 术语表 | [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/796-ai-agent.html) | [{{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent]({{BASE_URL}}/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent)|
 | 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/178-karpathy-vibe-coding-agentic-engineering.html) | [{{BASE_URL}}/raw/articles/karpathy-vibe-coding-agentic-engineering-v4]({{BASE_URL}}/raw/articles/karpathy-vibe-coding-agentic-engineering-v4)|
 | AI Agent 工程师能力地图 | [Ai Agent Engineer Capability Map](ch04/210-ai-agent.html) | [{{BASE_URL}}/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026]({{BASE_URL}}/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026)|
 | 250 行 CLI Agent | [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/141-ai-agent-250-while-python-ollama-cli-agent-7.html) | [{{BASE_URL}}/raw/articles/minimal-cli-agent-250-line-python-ollama-7-stages]({{BASE_URL}}/raw/articles/minimal-cli-agent-250-line-python-ollama-7-stages)|

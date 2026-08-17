@@ -83,30 +83,30 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
 ## 相关页面
-- [Skill 写作基础指南](../ch04/608-agent-skill.html) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](../ch04/608-agent-skill.html) — 高级技巧
-- [Skill 评估方法](../ch04/608-agent-skill.html) — 如何评估 Skill 质量
+- [Skill 写作基础指南](../ch04/609-agent-skill.html) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](../ch04/609-agent-skill.html) — 高级技巧
+- [Skill 评估方法](../ch04/609-agent-skill.html) — 如何评估 Skill 质量
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](../ch04/796-ai-agent.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/508-aws-sagemaker-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](../ch04/670-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/509-aws-sagemaker-ai-agent.html)
 - [SkillX — 层次化技能知识库](ch07/060-skillx.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/308-anthropic-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch04/348-skill.html)
-- [SkillClaw](../ch04/558-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/559-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/019-hermes-skill.html)
 - [四种 Sub Agent 模式](../ch03/037-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/486-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/487-agent-skills.html)
 
 - [Qoder Skills 完全指南](ch07/037-qoder-skills.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/486-agent-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/487-agent-skills.html)
 - [Garry Tan](../ch01/903-garry-tan.html)
 - [Agent Workflows](../ch04/442-agent-workflows.html)
 - [Hermes Agent](../ch03/098-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](../ch04/348-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [AI Agent 工程师能力地图](../ch04/796-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/670-ai-agent.html)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch03/037-agent.html)
 
 ---

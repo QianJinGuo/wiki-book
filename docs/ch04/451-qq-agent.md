@@ -15,7 +15,7 @@
 - 链路收敛为「对话上报 → 主题分组 → 经验抽取 → Review → Dedup → Merge → 入库 → 召回统计」
 - 效果：垃圾率 90% → 约 5%、平均 80% 入库率；6 仓库、50+ 研发、1,236 次对话，入库 789 条经验
 
-与 [Agent 记忆架构](ch04/513-perplexity-brain-self-improving-agent-memory-architecture.html) 主题互补——个人记忆 vs 团队经验库；工程实现上属于 [Harness/Skill 工程](../ch05/105-harness-skill.html) 的团队层扩展。 评测见 [Agent 记忆评测](ch04/180-agent-memory.html)，姊妹篇 [腾讯团队经验管理](../ch05/125-ai-coding.html)。
+与 [Agent 记忆架构](ch04/514-perplexity-brain-self-improving-agent-memory-architecture.html) 主题互补——个人记忆 vs 团队经验库；工程实现上属于 [Harness/Skill 工程](../ch05/126-harness-skill.html) 的团队层扩展。 评测见 [Agent 记忆评测](ch04/180-agent-memory.html)，姊妹篇 [腾讯团队经验管理](../ch05/125-ai-coding.html)。
 
 ## 深度分析
 

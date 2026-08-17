@@ -91,7 +91,7 @@ Williamson 对 Block 裁员的评论揭示了一个被系统性忽视的维度�
 
 ## 相关实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html) — AI 对软件工程角色的影响
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html) — AI 对软件工程角色的影响
 - [From Doer To Director The Ai Mindset Shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html) — AI 时代从执行者到指挥者的思维转变
 - [System Over Model Tested Reproducing Mythoss Freebsd Find On 20260606](../ch12/031-mythos.html) — AI 系统的实际能力边界
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — AI 系统的工程化治理

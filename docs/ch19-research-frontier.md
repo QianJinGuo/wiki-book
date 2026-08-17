@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **26 篇**实体，按深度递增排列。
+> 本章收录 **27 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 12 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 13 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
@@ -2352,7 +2352,47 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.024 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
+## Ch19.024 LittleLearner：课程受控预训练——预训练过滤设定能力上限的实验证据
+
+> 📊 Level ⭐⭐⭐⭐ | 3.9KB | `entities/littlelearner-pedagogical-curriculum-llm-arxiv-2608-13545.md`
+
+# LittleLearner：课程受控预训练——预训练过滤设定能力上限的实验证据
+
+> **Background**：MPI for Intelligent Systems × ELLIS Institute Tübingen × ETH Zürich（Fanfei Li 等 7 人），arXiv:2608.13545。以美国小学 K–5 课程为界的受控预训练实验——同一架构、同一 token budget，唯一变量是预训练语料分布。
+
+## 核心方法：把知识边界做成受控变量
+
+现代 LM 的训练数据「一次全见」，因此无法分辨一个新技能究竟是被**学到**（acquired，预训练分布中包含的知识浮现）还是被**引出**（elicited，已有能力在提示/后训练下被激活）。LittleLearner 直接约束训练分布：**88B-token LittleCurriculum** 从 FineWeb-Edu 蒸馏，五阶段过滤流水线对齐 Common Core（K–5），五年级以上概念被显式排除。
+
+三档模型（0.6B/1.3B/5B）从零在课程语料上训练，每档配同架构、同 token、同 recipe 的 Unfiltered 对照——唯一差异是 pretraining corpus。知识边界因此成为可探测的实验变量：模型「只知道五年级学生知道的东西」。
+
+## 关键发现：Elicitation, not Acquisition
+
+scaling、SFT+GRPO 后训练、in-context learning 都能放大**课程内**（in-scope）所学，但**都无法有意义地提升课程外**（out-of-scope）表现。结论：**预训练过滤器设定了有效能力上限**——标准干预只能「引出」已内化的能力，不能补上预训练分布从未教过的知识。
+
+这一发现与「后训练能教新知识」的直觉形成张力：后训练（SFT/GRPO）放大的是分布内能力，而非在分布外新增知识。对 RLHF/GRPO 后训练的边界判断有直接参考意义。
+
+## 资源与可复现性
+
+- 托管 5B 模型浏览器可对话；模型 checkpoints 分 base / GRPO（MathCAMPS 数学后训练）/ chatty 三档：
+- 数据集（LittleCurriculum）与五阶段过滤流水线全开源，对比实验设计（matched control）完整可复现。
+- BibTeX: `arXiv:2608.13545`
+
+## 相关研究
+
+- 与 [预训练失败模式](https://github.com/QianJinGuo/wiki/blob/main/entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md) 同属预训练实证研究族，本作聚焦数据分布侧。
+- 与 [预训练涌现模块性](https://github.com/QianJinGuo/wiki/blob/main/entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md) 互补：那里研究结构涌现，这里研究知识边界。
+- 与 [LM 预训练泛化动力学](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-lm-pretraining.md) 概念同源：分布内 vs 分布外泛化的边界证据。
+
+## 实践启示
+
+数据工程视角：预训练语料的过滤/编排决策不只是「质量 vs 数量」权衡，而是直接决定能力天花板——课程化语料可以按知识范围精确塑造模型能力边界（教育、领域专用模型场景）。评估视角：能力评测需区分「分布内表现」与「分布外泛化」，后训练指标好看不等于新增了分布外知识。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/littlelearner-pedagogical-curriculum-llm-arxiv-2608-13545.md)
+
+---
+
+## Ch19.025 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/baai-orca-next-state-prediction-world-model.md`
 
@@ -2412,7 +2452,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.025 VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
+## Ch19.026 VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
 
 > 📊 Level ⭐⭐⭐⭐ | 2.9KB | `entities/lecun连续转发新作visreg攻克jepa世界模型表征坍塌核心难题.md`
 
@@ -2442,7 +2482,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.026 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
+## Ch19.027 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.4KB | `entities/tangjie-zhipu-asi-internal-letter-2026.md`
 

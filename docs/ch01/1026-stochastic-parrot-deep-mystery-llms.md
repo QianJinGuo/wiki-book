@@ -14,7 +14,7 @@ A while back on [X](<https://x.com/emollick/status/1960919256452796440>), Ethan 
 - [Stochastic Parrot Thought Experiment](ch01/1189-stochastic-parrot-thought-experiment.html)
 - [Stochastic Parrot Marcus Ai Productivity](../ch11/079-stochastic-parrot-marcus-ai-productivity.html)
 - [While Breathless In Stodgy Viridian](ch01/749-while-breathless-in-stodgy-viridian.html)
-- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/867-llm.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](ch01/433-aws.html)
 - [Aws Sagemaker Capacity Aware Inference Fallback](ch01/525-aws-sagemaker-capacity-aware-inference-fallback.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-deep-mystery-llms.md)

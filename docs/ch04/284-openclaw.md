@@ -84,7 +84,7 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 - [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/348-skill.html)
 - [四种 Sub Agent 模式](../ch03/037-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/486-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/487-agent-skills.html)
 ---
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
 
@@ -93,7 +93,7 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 - [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/065-harness-engineering.html)
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/253-openclaw.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
-- [AIAIGC峰会嘉宾阵容](ch04/617-aiaigc.html)
+- [AIAIGC峰会嘉宾阵容](ch04/618-aiaigc.html)
 - [OpenClaw 多智能体团队搭建实战经验](ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/348-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)

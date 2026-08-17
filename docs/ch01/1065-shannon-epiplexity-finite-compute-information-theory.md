@@ -11,7 +11,7 @@
 Shannon 1948 年创立信息论，假设观察者有**无限算力**。这个假设在通信领域无害，但 LLM 时代成了核心缺口：同样的数据，GPT-2 和 GPT-4 学到的东西不同；人类和 LLM 学到的也不同；同一个人精力充沛 vs 疲惫时学到也不同。
 
 ## 相关实体
-- [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/867-llm.html)
+- [Llm From Scratch 7 Stage Pytorch Tutorial](ch01/1515-llm.html)
 - [Karpathy Llm Wiki V2 2026](../ch06/025-llm-wiki.html)
 - [Chatgpt小心翼翼回复风格技术原因](ch01/893-chatgpt.html)
 - [Skill Rag Tsinghua Sra](../ch04/348-skill.html)

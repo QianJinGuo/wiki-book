@@ -225,7 +225,7 @@ VoltAgent awesome-design-md 集合仍在活跃更新中（学术pro 使用"71 �
 ---
 
 ## 相关实体
-- [Agentexecutorgooglesdistributedagentruntime](ch04/585-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](ch04/005-agentrun.html)
 - [Anthropic Google Agent Skills Design Patterns](ch04/259-anthropic-google-agent-skills.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/521-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/037-agent.html)

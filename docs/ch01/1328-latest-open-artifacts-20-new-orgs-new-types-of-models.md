@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/587-deepseek.html)
+- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/1465-deepseek.html)
 - [dynamically splitting wide partitions in cassandra for time](../ch11/034-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
 - [interconnects ai p open and closed models are on different](../ch05/108-ai.html)
 - [reducing container cold start times using soci index on dlam](ch01/1424-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
@@ -47,7 +47,7 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

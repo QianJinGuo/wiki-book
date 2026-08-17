@@ -64,7 +64,7 @@ DCGM-Exporter 暴露 GPU 指标中，SM activity (DCGM_FI_PROF_SM_ACTIVE) 比基
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/020-aws-bedrock.html)
 - [EC2 Capacity Blocks：GPU短期容量决策指南](ch11/238-aws-ec2-capacity-blocks-gpu-ml.html)
 - [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/525-aws-sagemaker-capacity-aware-inference-fallback.html)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/1574-ai-infra.html)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/1473-ai-infra.html)
 - [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](ch11/031-amazon-workspaces-applications.html)
 - [[entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a]
 - [notes on pretraining parallelisms and failed training runs.](../ch05/108-ai.html)

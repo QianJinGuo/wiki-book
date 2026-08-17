@@ -81,7 +81,7 @@ SOP 的持续生产是胖鹅AI 最有价值的能力。这个循环本质上是�
 
 人类的角色就从「AI 操作员」转变为「AI 管理者」——定义目标、设置约束、审查结果，而非亲自编写 Prompt 或配置工具。
 
-这与 [Karpathy 关于 Vibe Coding 到 Agentic Engineering 的演进](../ch04/816-karpathy-vibe-coding-agentic-engineering.html)形成呼应：从「人写代码」到「人写 Prompt」到「人定义目标，AI 编排全流程」。
+这与 [Karpathy 关于 Vibe Coding 到 Agentic Engineering 的演进](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)形成呼应：从「人写代码」到「人写 Prompt」到「人定义目标，AI 编排全流程」。
 
 ### 产品定位的局限性
 
@@ -101,9 +101,9 @@ SOP 的持续生产是胖鹅AI 最有价值的能力。这个循环本质上是�
 ## 相关实体
 
 - [Skillopt Microsoft Train Skill Like Neural Network](../ch05/047-skillopt.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/816-karpathy-vibe-coding-agentic-engineering.html)
-- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](ch01/1586-anthropic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](ch01/778-anthropic.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

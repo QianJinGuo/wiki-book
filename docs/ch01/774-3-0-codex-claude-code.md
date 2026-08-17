@@ -56,12 +56,12 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 - [本地编码 Agent 的使用实践](../ch09/174-using-local-coding-agents.html)
 - [Claude 做方案，Codex 写代码：多模型协作交接](ch01/1233-claude.html)
 - [AI 军团式多智能体协作循环](../ch05/006-loop-engineering.html)
-- [Strands 多智能体框架](../ch04/789-strands-agents.html)
+- [Strands 多智能体框架](../ch04/790-strands-agents.html)
 - [OpenClaw 多智能体团队搭建](../ch11/253-openclaw.html)
 - [Claude Code 源码核心机制](../ch03/084-claude-code.html)
 - [Harness 工程](../ch05/065-harness-engineering.html)
 - [Claude Code 大型代码库团队部署](../ch05/042-agent-harness.html)
-- [Karpathy × Boris：Software 3.0 编程地图](ch01/867-llm.html)
+- [Karpathy × Boris：Software 3.0 编程地图](ch01/1515-llm.html)
 - [MOC：工作流编排](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

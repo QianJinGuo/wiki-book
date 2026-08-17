@@ -171,7 +171,7 @@ pi-mono 的流式事件架构天然支持实时 UI 更新（如终端差分渲�
 - [announcing genkit middleware](../ch04/010-announcing-genkit-middleware-intercept-extend-and-harden.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [Agentcore Harness](../ch04/777-agentcore-harness.html) — AWS 托管 Harness 平台
+- [Agentcore Harness](../ch04/778-agentcore-harness.html) — AWS 托管 Harness 平台
 
 ---
 

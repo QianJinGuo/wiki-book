@@ -51,7 +51,7 @@ SSD 的工程取舍本质是给两类资产定价：spec、design doc、plan 只
 ## 相关实体
 
 - [场景营销前端 AI Coding — 从问题到方案](ch05/125-ai-coding.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/073-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
 - [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/125-ai-coding.html)
 - [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch05/065-harness-engineering.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/065-harness-engineering.html)

@@ -29,8 +29,8 @@ Obsidian与Claude Code的集成本质上解决了AI编程工具的一个核心�
 **对于工程团队：** 建立项目知识库的Obsidian规范，包括：(1) 每个重大架构决策的ADR（Architecture Decision Records）笔记，(2) 每个API的交互记录，(3) 每次代码审查的决策记录。这些结构化文档既是团队知识资产，也是Claude Code在长程任务中的外部记忆。Claude Code在执行任务时，应被明确指示将关键上下文写入Obsidian而非仅输出到终端。
 
 ## 相关资源
-- [Agent Memory 架构](../ch04/513-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](../ch04/810-claude-managed-agents.html)
+- [Agent Memory 架构](../ch04/514-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Claude Managed Agents 开发者指南](../ch04/629-claude-managed-agents.html)
 
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](ch09/153-obsidian-claude-code-integration-guide.html)
