@@ -152,13 +152,13 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/253-openclaw.html)
 - [Code as Agent Harness 综述](../ch09/063-code-as-agent-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/065-harness-engineering.html)
-- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/670-ai-agent.html)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/494-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/495-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/297-aws-devops-agent.html)
-- [Your Chief Agent Operator Lobehub](ch04/535-your-chief-agent-operator-lobehub.html)
+- [Your Chief Agent Operator Lobehub](ch04/536-your-chief-agent-operator-lobehub.html)
 - [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](ch04/117-agentic-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 

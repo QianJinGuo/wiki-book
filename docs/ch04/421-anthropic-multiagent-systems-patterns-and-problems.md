@@ -39,13 +39,13 @@ Mythos 5 的多轮实验中观察到 agent 自发组织"应用性能锦标赛"�
 
 - 人类协调依赖规范、声誉、昂贵信号、追索权等千年演化的机制；LM 继承了这段历史的"内容"但没有产生它的"倾向"。对 agent 而言，传递上下文与行动成本相当，agent 可被随意 fork/重用——支撑人类协调成功的假设对 agent 不成立。
 - 修复方向不是更强智能或个体对齐，而是：(1) 对 agent 施加类演化社交压力的环境；(2) 为可自我复制、自我改进的参与者重新设计的社交计算系统——交互与机制设计的开放问题。
-- 与既有评估视角互补：[Anthropic 多 agent 评估研究](ch04/670-anthropic-multi-agent-research-system.html) 关注"如何评估多 agent 系统"（路径正确性 vs 结果正确性），本实体关注"多 agent 系统在野会涌现什么失败模式"——两者合起来构成 Anthropic 多 agent 研究的评估-行为双视角。
+- 与既有评估视角互补：[Anthropic 多 agent 评估研究](ch04/671-anthropic-multi-agent-research-system.html) 关注"如何评估多 agent 系统"（路径正确性 vs 结果正确性），本实体关注"多 agent 系统在野会涌现什么失败模式"——两者合起来构成 Anthropic 多 agent 研究的评估-行为双视角。
 
 ## 相关实体
 
-- [Anthropic Multi Agent Research System](ch04/670-anthropic-multi-agent-research-system.html) — 同项目早期评估方法论研究
+- [Anthropic Multi Agent Research System](ch04/671-anthropic-multi-agent-research-system.html) — 同项目早期评估方法论研究
 - [Cursor AI Swarm](../ch05/108-ai.html) — swarm 模式工程实践
-- [Agent Orchestration](ch04/618-agent-orchestration.html) — 编排架构对照
+- [Agent Orchestration](ch04/619-agent-orchestration.html) — 编排架构对照
 - [Agent 演化三路线收敛](../ch03/037-agent.html) — 演化视角的趋同分析
 - [Mode Collapse 研究](../ch01/300-verbalized-sampling-prompt-engineering-icml2026-mode-collaps.html) — 输出坍缩机制对照
 - [多智能体协作体系](../ch03/084-claude-code.html) — 协作设计实践

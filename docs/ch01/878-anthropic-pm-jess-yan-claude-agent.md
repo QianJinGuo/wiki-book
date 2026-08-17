@@ -71,10 +71,10 @@ METR 的测量基准（Sonnet 3.5 21分钟 vs Opus 4.6 12小时）反映的是�
 5. **多 agent 协作时机**：当任务可分解为独立子任务时（如舆情监控按域名列表 fan-out），优先考虑并行 agent 而非串行单一 agent
 ## 相关实体
 - [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
-- [Anthropic Managed Agents Scaling](ch01/1586-anthropic.html)
+- [Anthropic Managed Agents Scaling](ch01/778-anthropic.html)
 - [Anthropic Claude Managed Agents Platform Launch](ch01/397-anthropic-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Guide](ch01/397-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/810-claude-managed-agents.html)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/629-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-pm-jess-yan-managed-agents.md)
 

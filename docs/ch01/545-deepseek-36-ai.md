@@ -14,7 +14,7 @@
 - [Deepseek Code Harness](../ch09/015-deepseek-code-harness.html)
 - [Nathan Lambert Claude Mythos Open Weights](ch01/613-nathan-lambert.html)
 - [Deepseek V4 Pro Vs Claude](ch01/432-deepseek-v4.html)
-- [Deepseek Moe Parallel Strategy](ch01/587-deepseek.html)
+- [Deepseek Moe Parallel Strategy](ch01/1465-deepseek.html)
 - [Deepseek V4 Training Methodology](ch01/432-deepseek-v4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chinese-ai-lab-insights-nathan.md)

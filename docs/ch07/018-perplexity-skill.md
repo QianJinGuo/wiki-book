@@ -147,15 +147,15 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 
 ## 相关实体
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/350-lbs-intentbench.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/508-aws-sagemaker-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/509-aws-sagemaker-ai-agent.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/348-skill.html)
 - [SkillX — 层次化技能知识库](ch07/060-skillx.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/308-anthropic-agent.html)
 - [AI Skill 测评指标体系](../ch01/660-ai-skill.html)
-- [SkillClaw](../ch04/558-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/559-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/019-hermes-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/076-skills.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/486-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/487-agent-skills.html)
 
 - [Hermes Agent](../ch03/098-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/037-qoder-skills.html)

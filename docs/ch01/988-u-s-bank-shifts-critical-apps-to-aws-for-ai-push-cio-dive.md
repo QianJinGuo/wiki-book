@@ -39,7 +39,7 @@ Goldman Sachs 将数据准确性列为 AI 运营模型的基础，说明数据�
 
 ## 相关实体
 - [AWS Model Agility: 6步LLM跨代际迁移框架](../ch11/173-aws-generative-ai-model-agility-framework.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/796-ai-agent.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/670-ai-agent.html)
 - [MLflow v3.10：生成式AI开发新特性](../ch11/048-aws-mlflow-v310-generative-ai-development.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/117-agentic-ai.html)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/084-claude-code.html)

@@ -55,7 +55,7 @@ Brain2Qwerty v2 不是孤立的研究，而是 Meta 开放式大脑基础模型�
 ## 相关实体
 
 - [2026 06 30 登上Nature子刊 Meta脑机接口重大阶段性进展 超高实时解码准确率 机器之心](ch01/1129-20.html) — Meta 脑机接口 Nature 子刊报道
-- [Anthropic又叒发现Ai意识了这次要读写Claude的前额叶](ch01/1586-anthropic.html) — AI 神经科学相关研究
+- [Anthropic又叒发现Ai意识了这次要读写Claude的前额叶](ch01/778-anthropic.html) — AI 神经科学相关研究
 - [Agent Harness Production](../ch05/042-agent-harness.html) — Agent 生产级工程
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架
 

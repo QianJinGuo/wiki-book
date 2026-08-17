@@ -53,7 +53,7 @@ Voice Mode 的 killer feature 不是自然对话，而是**共享屏幕/相机**
 ## 相关实体
 - [Opinionated Guide Ai Right Now Mollick](../ch05/108-ai.html)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/796-ai-agent.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/670-ai-agent.html)
 - [Miroflow Deep Research Agent Harness Mirothinker](../ch05/042-agent-harness.html)
 - [Meta Muse Spark Voice Mode Meta Glasses](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-muse-spark-voice-mode-meta-glasses.md)
 

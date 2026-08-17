@@ -42,7 +42,7 @@
 - 三黄工作室第二个开源项目
 
 ## 相关实体
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/105-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/126-harness-skill.html)
 - [Browser Harness Github](../ch05/104-browser-harness-github.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/077-harness.html)

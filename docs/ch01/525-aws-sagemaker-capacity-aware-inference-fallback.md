@@ -84,7 +84,7 @@ Instance Pools改变了这一点：冷启动时会自动按优先级尝试可用
 - [GRPO+RLVR: Qwen数学推理3.7x提升的工程细节](../ch11/113-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](../ch11/123-building-blocks-for-foundation-model-training-and-inference.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11/020-aws-bedrock.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/508-aws-sagemaker-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/509-aws-sagemaker-ai-agent.html)
 - [redis agentic ai flowers with iris](ch01/332-1.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 

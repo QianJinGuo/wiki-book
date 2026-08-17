@@ -201,7 +201,7 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 
 → [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-architecture-design-taobao.md)
 → [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-backend-architecture-standard-pathway-alibaba-liu-ruizhou-2026.md)
-- [协作涌现：agent room 的多智能体决策框架](../ch04/805-agent-room.html)
+- [协作涌现：agent room 的多智能体决策框架](../ch04/806-agent-room.html)
 - [从全量启动到最小核：手淘外链唤端链路的三次架构演进](https://github.com/QianJinGuo/wiki/blob/main/entities/从全量启动到最小核手淘外链唤端链路的三次架构演进.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

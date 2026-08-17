@@ -29,7 +29,7 @@
 
 传统 UI 自动化（Selenium、Playwright）基于 DOM 选择器（XPath、CSS Selector、ID）定位元素。这意味着：界面结构一旦变更（改个 class 名、重组 DOM 层级、从 SPA 换 SSR），脚本就断裂。维护脚本的成本往往超过编写脚本的成本。
 
-Nova Act 的工作方式完全不同：它通过分析网页截图理解页面布局，通过视觉线索识别交互元素，然后做出上下文决策。这意味着它不依赖 DOM 结构——只要人眼能看出"这是一个搜索框"，Nova Act 理论上也能。这与 [Amazon Nova Act HIPAA 合规](../ch04/590-amazon-nova-act-is-now-hipaa-eligible.html) 中强调的视觉基础模型能力一致。
+Nova Act 的工作方式完全不同：它通过分析网页截图理解页面布局，通过视觉线索识别交互元素，然后做出上下文决策。这意味着它不依赖 DOM 结构——只要人眼能看出"这是一个搜索框"，Nova Act 理论上也能。这与 [Amazon Nova Act HIPAA 合规](../ch04/591-amazon-nova-act-is-now-hipaa-eligible.html) 中强调的视觉基础模型能力一致。
 
 关键理解：Nova Act 不是"在传统自动化上加一个 AI 层"，而是从根本上改变了自动化测试的原子单位——从"用选择器定位元素"变为"用视觉理解识别意图"。
 
@@ -77,13 +77,13 @@ Nova Act 方案引入了一个精妙的设计维度：三级指令粒度。同�
 
 ## 相关实体
 
-- [Amazon Nova Act HIPAA 合规](../ch04/590-amazon-nova-act-is-now-hipaa-eligible.html)
+- [Amazon Nova Act HIPAA 合规](../ch04/591-amazon-nova-act-is-now-hipaa-eligible.html)
 - Agentic RAG 模式
-- [Amazon Bedrock AgentCore 浏览器能力](../ch04/659-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock AgentCore 浏览器能力](../ch04/660-amazon-bedrock-agentcore.html)
 - [RAG 全链路实践](ch01/1284-rag.html)
 - [Agent Harness 运行时模式](../ch05/042-agent-harness.html)
 - [Bedrock Claude 缓存策略](../ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [Bedrock 商业智能 Agent](../ch04/659-amazon-bedrock-agentcore.html)
+- [Bedrock 商业智能 Agent](../ch04/660-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-ux-testing-with-amazon-nova-act-a-new-approach-to-us.md)
 

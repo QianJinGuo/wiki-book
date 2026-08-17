@@ -106,19 +106,19 @@ GAN 风格的对抗式架构之所以有效，根本原因在于突破了「谄�
 
 ## 相关实体
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/084-claude-code.html)
-- [Anthropic puts Claude agents on a meter across its subscriptions](ch04/497-anthropic-claude-agent.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](ch04/498-anthropic-claude-agent.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/259-anthropic-google-agent-skills.html)
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/350-lbs-intentbench.html)
 - [Introducing Claude for Small Business](../ch01/030-introducing-claude-for-small-business.html)
 - [Introducing Claude for Small Business](../ch01/030-introducing-claude-for-small-business.html)
-- [Xero Announces Integration with Anthropic's Claude](../ch01/1586-anthropic.html)
+- [Xero Announces Integration with Anthropic's Claude](../ch01/778-anthropic.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/031-mythos.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01/1608-anthropic-claude.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](../ch01/1611-anthropic-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 
 - [Agent 原理、架构与工程实践](../ch03/037-agent.html)
-- [claude opus 4.8: the system card](../ch01/1590-claude-opus-4-8.html)
+- [claude opus 4.8: the system card](../ch01/1593-claude-opus-4-8.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

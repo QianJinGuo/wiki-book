@@ -57,7 +57,7 @@ CLI 只解决"系统动作怎么执行"，不解决"流程应该怎么走"。文
 - [清华自进化Skill Agent](ch04/196-skill-agent.html)
 - [Skill编排的六个依赖](ch04/348-skill.html)
 - [Skill治理与注册](ch04/348-skill.html)
-- [首席Agent运营官](ch04/535-your-chief-agent-operator-lobehub.html)
+- [首席Agent运营官](ch04/536-your-chief-agent-operator-lobehub.html)
 - [后端AI友好化标准](../ch05/023-ai-friendly.html)
 
 ---

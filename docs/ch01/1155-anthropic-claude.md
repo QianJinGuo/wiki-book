@@ -45,7 +45,7 @@
 
 ## 相关实体
 
-- [Anthropic Demystifying Evals for AI Agents](../ch04/577-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 agent 评估方法论
+- [Anthropic Demystifying Evals for AI Agents](../ch04/578-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 agent 评估方法论
 - [Anthropic LLM ATT&CK Navigator](../ch04/230-anthropic-llm.html) — Anthropic 网络攻防操作框架
 - [Claude Code 工具调用安全事件](../ch03/084-claude-code.html) — 另一类 Claude 安全事故
 - [AI 评估方法论](ch01/403-ai-evals.html) — 通用评估方法

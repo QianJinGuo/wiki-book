@@ -54,7 +54,7 @@ LLM-as-a-Verifier 是由斯坦福 AI Lab、UC Berkeley Sky Computing Lab 与 NVI
 ## 相关实体
 
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/528-llm-as-a-verifier-a-general-purpose-verification-framework.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/867-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1515-llm.html)
 - [jane street — 形式化方法与编程的未来](../ch12/121-jane-street.html)
 
 ---

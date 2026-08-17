@@ -49,7 +49,7 @@ v1 是 vLLM 的一次架构级重构：token 级调度器（token-based schedule
 
 ## 相关实体
 
-- [vLLM 高效推理](ch01/1574-ai-infra.html)
+- [vLLM 高效推理](ch01/1473-ai-infra.html)
 - [ServiceNow vLLM Correctness](ch01/883-vllm.html)
 - [vLLM v0 to v1 Correctness](ch01/883-vllm.html)
 - [量化技术](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md)

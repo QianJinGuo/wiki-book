@@ -91,7 +91,7 @@ jdk-upgrade-lessons Skill 的设计将一次性的升级经验转化为可复用
 
 ### 5. 开发者角色的根本性转变
 
-本案例中，小米开发者的核心工作不是写升级代码（这部分由 AI 执行），而是：定义约束边界、设计工具接口、编排执行流程、设计验证机制、总结升级经验。这验证了 [Agent Skill 规范、构建与设计模式](../ch04/608-agent-skill.html) 中提出的"开发者从代码编写者转变为约束设计者"的预判。当 AI 承担执行层后，人的核心价值是定义"什么能做、什么不能做、做到什么程度"——工程规范正在成为比代码更重要的资产。
+本案例中，小米开发者的核心工作不是写升级代码（这部分由 AI 执行），而是：定义约束边界、设计工具接口、编排执行流程、设计验证机制、总结升级经验。这验证了 [Agent Skill 规范、构建与设计模式](../ch04/609-agent-skill.html) 中提出的"开发者从代码编写者转变为约束设计者"的预判。当 AI 承担执行层后，人的核心价值是定义"什么能做、什么不能做、做到什么程度"——工程规范正在成为比代码更重要的资产。
 
 ## 实践启示
 
@@ -118,10 +118,10 @@ AI 的上下文窗口有限，一次性输入所有约束和参考信息会导�
 ## 相关实体
 
 - → [Harness Engineering](ch05/065-harness-engineering.html) — 本文是该方法论在维护性工程场景的完整实证
-- → [Agent Skill 规范、构建与设计模式](../ch04/608-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
-- → [Vibe Coding 与 AI 软件工程](../ch04/791-vibe-coding-ai.html) — Vibe Coding 概念背景，与本案例的"约束 vs 自由"对比
+- → [Agent Skill 规范、构建与设计模式](../ch04/609-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
+- → [Vibe Coding 与 AI 软件工程](../ch04/792-vibe-coding-ai.html) — Vibe Coding 概念背景，与本案例的"约束 vs 自由"对比
 - → [腾讯 Harness Engineering 团队实践](ch05/065-harness-engineering.html) — 同一方法论在不同组织的实践对比
-- → [ScarfBench：企业 Java 框架迁移 AI 评测](../ch04/796-ai-agent.html) — 企业级迁移场景的基准评测，与本案例互补
+- → [ScarfBench：企业 Java 框架迁移 AI 评测](../ch04/670-ai-agent.html) — 企业级迁移场景的基准评测，与本案例互补
 - → [技能治理与 AI 注册中心](../ch04/348-skill.html) — Skill 的注册发现与版本管理机制
 - → [Regression Tax：技能如何损害 LLM Agent](../ch03/076-skills.html) — 缺乏反馈闭环导致的技能退化问题，与本案例的闭环设计形成对照
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe-coding-to-harness-engineering-jdk-upgrade-xiaomi.md)

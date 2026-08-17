@@ -109,11 +109,11 @@ FY26 Q4 数据显示 AI 收入占比首破 30%、年化 AI 收入 358 亿，这�
 3. **关注 Qwen 开源生态的持续性**：20 万个衍生模型、10 亿次下载，这些数字的增长或停滞可以反映阿里云在开源社区的真正影响力。
 
 ## 相关实体
-- [Oz Multi Harness Cloud Agent Orchestration](ch04/618-agent-orchestration.html)
-- [看 Agentrun 如何玩转记忆存储最佳实践来了](ch04/585-agentrun.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/486-agent-skills.html)
+- [Oz Multi Harness Cloud Agent Orchestration](ch04/619-agent-orchestration.html)
+- [看 Agentrun 如何玩转记忆存储最佳实践来了](ch04/005-agentrun.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/487-agent-skills.html)
 - [Agent 从能用到管好中间差了什么](../ch03/037-agent.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/486-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/487-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-agentic-cloud.md)
 

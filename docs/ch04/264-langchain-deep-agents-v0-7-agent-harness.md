@@ -130,7 +130,7 @@ Filesystem 作为 [Agent Loop](https://github.com/QianJinGuo/wiki/blob/main/conc
 
 ## 相关实体
 
-- [Deep Agents Bedrock 集成](ch04/618-agent-orchestration.html) — Deep Agents 在 AWS Bedrock 上的部署和 subagent 编排
+- [Deep Agents Bedrock 集成](ch04/619-agent-orchestration.html) — Deep Agents 在 AWS Bedrock 上的部署和 subagent 编排
 - [Agent Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) — Harness 设计的理论框架，v0.7 的实践补充
 - [AHE — Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) — Agentic Harness Engineering 方法论的完整阐述
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — Anthropic 引领的 context engineering 理念，v0.7 的直接理论来源

@@ -39,7 +39,7 @@ Claude Code 2025-02 内部演示只收到 2 个赞。两年后（2026-06），�
 - **AI 产品的复合效应**——模型能力提升与用户工作流沉淀是两条独立曲线：模型每月升级（Claude 3.7 → 4.0 → 4.5 → 4.6 → 4.7 → 4.8），但 Skill / Routine / 验证回路是用户在使用中沉淀的资产，**两者叠加产生指数级复合**。
 - **AI 工具的反馈周期**——传统工具的反馈是"今天能干什么"；AI 工具的反馈是"今天 + 模型升级后 + 用户技能沉淀后"能干什么。早期反馈对长期价值预测力很弱。
 
-这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/073-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
+这与 [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/742-agentic.html) 中关于"AI 编程工具的最终形态是 agentic engineering"的判断同构——只有当 Agent 工具沉淀出"自我验证 + 异步调度 + 异步 Routine"的工程模式时，它的价值才会从"工具"升级为"基础设施"。
 
 ### 二、Self-Validating Loop：Agent 长期自主的真正关键
 
@@ -145,7 +145,7 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/037-agent.html)
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/084-claude-code.html)
-- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/660-agent-loop.html)
+- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/661-agent-loop.html)
 - [Claude Code Prompt 源码分析](ch09/072-claude-code-prompt.html)
 - [Claude Code Prompt 源码分析 fanone](ch09/072-claude-code-prompt.html)
 - [Claude Code Prompt Context Harness](ch09/072-claude-code-prompt.html)
@@ -154,7 +154,7 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [24h Worker Agent](../ch03/037-agent.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/077-harness.html)
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/460-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/073-agentic.html)
+- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/742-agentic.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

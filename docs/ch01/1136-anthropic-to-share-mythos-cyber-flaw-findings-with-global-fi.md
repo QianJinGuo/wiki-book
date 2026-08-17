@@ -8,8 +8,8 @@
 - Published Time: 2026-05-18T13:19:24.000Z # Anthropic to share Mythos cyber flaw findings with global finance watchdog | AI (artificial intelligence) | The Guardian [Skip to main content](https://www.t
 ## 相关实体
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/1136-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
-- [Japan Pm Cybersecurity Review Anthropic Mythos](ch01/1586-anthropic.html)
-- [Xero Announces Integration With Anthropics Claude](ch01/1586-anthropic.html)
+- [Japan Pm Cybersecurity Review Anthropic Mythos](ch01/778-anthropic.html)
+- [Xero Announces Integration With Anthropics Claude](ch01/778-anthropic.html)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/108-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 

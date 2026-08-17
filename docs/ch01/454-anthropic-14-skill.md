@@ -200,7 +200,7 @@ Anthropic 强调 description 是「最关键的信号」，实践中最有效的
 
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](ch01/967-skills-anthropic-openai-comparison-frontend-design.html)
 - [Claude Design 系统提示词 → web-design-engineer Skill](ch01/1370-claude-design-skill.html)
-- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/1586-anthropic.html)
+- [anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香](ch01/778-anthropic.html)
 
 ---
 

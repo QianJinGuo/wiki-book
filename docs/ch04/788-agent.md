@@ -1,23 +1,23 @@
-# 一文讲清 Agent 如何理解业务：把对象、状态和权限接进执行流程
+# Agent 开始「自我进化」：会出题、会反思，还会自己长出新技能
 
-## Ch04.788 一文讲清 Agent 如何理解业务：把对象、状态和权限接进执行流程
+## Ch04.788 Agent 开始「自我进化」：会出题、会反思，还会自己长出新技能
 
-> 📊 Level ⭐⭐ | 1.7KB | `entities/一文讲清-agent-如何理解业务把对象状态和权限接进执行流程.md`
+> 📊 Level ⭐⭐ | 1.8KB | `entities/agent开始自我进化会出题会反思还会自己长出新技能.md`
 
-# 一文讲清 Agent 如何理解业务：把对象、状态和权限接进执行流程
+# Agent 开始「自我进化」：会出题、会反思，还会自己长出新技能
 
-## 核心：Agent 理解业务的三要素
+## 核心机制：出题—答题—反思闭环
 
-作者（架构师 JiaGouX）提出 Agent 要真正理解业务，需要把三个要素接进执行流程：**对象（Object）、状态（State）、权限（Permission）**。以"用户问客服"场景为例，Agent 不能只理解自然语言意图，还要知道业务对象是什么（订单/工单/账户）、当前处于什么状态（待支付/已发货/已关闭）、以及当前会话拥有哪些权限（能否查询/能否修改）。这决定了 Agent 能否在真实业务系统中安全、正确地执行操作。
+本文（作者 horacebao、ashexie）描述了一个 Agent 自我进化的三层闭环：**Agent 自己会出题、自己会答题，还能把答错的经历变成新技能**。与传统的"人类出题—模型训练"模式不同，这里 Agent 在运行时自主生成训练信号——出题环节检验自身知识边界，答题环节暴露薄弱点，反思环节将错误模式沉淀为可复用的新能力。这是从"被动接受训练"到"主动生成学习信号"的范式转移。
 
 ## 与 Wiki 现有知识的关联
 
-- 与 [企业 AI Loop 落地五对象](ch04/600-ai-loop.html) 互补：本文聚焦"业务语义接入"，五对象聚焦企业落地框架
-- 状态机实现见 [LangGraph State Machine](ch04/269-langgraph.html)
-- 权限与凭据隔离：[云 Agent 基础设施状态/代码/凭据隔离](../ch03/037-agent.html)
-- 架构总览见 [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
+- 与 [Agent 自我改进六机制](../ch03/037-agent.html) 同主题但机制不同：六机制是分类学框架，本文是具体的"自出题"实现路径
+- 与 [自进化评估器瓶颈](../ch03/037-agent.html) 互补：本文侧重技能生成侧，评估器瓶颈侧重验证侧
+- 企业级落地见 [AgentScope Builder 自进化 Harness](ch04/794-self-evolving-agent.html)
+- 递归自我改进的理论背景见 [AI 递归自我改进](../ch05/108-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文讲清-agent-如何理解业务把对象状态和权限接进执行流程.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent开始自我进化会出题会反思还会自己长出新技能.md)
 
 ---
 

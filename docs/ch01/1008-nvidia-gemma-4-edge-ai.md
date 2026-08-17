@@ -12,7 +12,7 @@ Bringing AI Closer to the Edge and On&#x2d;Device with Gemma 4 | NVIDIA Technica
 - [Nvidia Edge First Llms Av Robotics](ch01/410-nvidia-edge-first-llms-av-robotics.html)
 - [Nvidia Multimodal Rag Knowledge Systems](ch01/1284-rag.html)
 - [Nvidia Agentic Ai Subsurface Engineering](../ch04/447-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/503-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/504-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-gemma-4-edge-ai.md)
 

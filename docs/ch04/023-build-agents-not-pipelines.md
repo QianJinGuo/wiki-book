@@ -46,7 +46,7 @@ Pipeline并不比agent更安全：prompt injection在两种架构下攻击面相
 - [Claude Code Tool Design Evolution](../ch03/084-claude-code.html)
 - [RAG Chunking Optimization 2025](../ch01/1284-rag.html)
 - [Context Engineering: Three Memory Paradigms](../ch06/045-memory.html)
-- [Karpathy: Vibe Coding to Agentic Engineering](ch04/073-agentic.html)
+- [Karpathy: Vibe Coding to Agentic Engineering](ch04/742-agentic.html)
 
 ---
 

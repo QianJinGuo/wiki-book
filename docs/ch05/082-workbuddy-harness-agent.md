@@ -112,7 +112,7 @@ Loop = 触发器 + 独立执行环境 + Skills + Tools/MCP + Sub-agents + Memory
 ## 相关实体
 
 - [WorkBuddy Skill 全拆解](../ch07/068-workbuddy-skill.html)
-- [Mem0 vs WorkBuddy Agent 记忆对比](../ch04/719-mem0-vs-workbuddy-agent.html)
+- [Mem0 vs WorkBuddy Agent 记忆对比](../ch04/720-mem0-vs-workbuddy-agent.html)
 - [OpenClaw/WorkBuddy/Loop 工程对比](ch05/006-loop-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workbuddy-agent-product-practice-tencent-2026.md)

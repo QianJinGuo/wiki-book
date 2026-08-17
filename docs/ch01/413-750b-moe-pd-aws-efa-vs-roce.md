@@ -163,7 +163,7 @@ EFA 在用户态暴露两套接口，这些通信库分别走不同路径：
 
 ## 相关主题
 
-- [AWS FSx Lustre GPUDirect 加载](ch01/867-llm.html) — AWS 训练/推理数据加载栈
+- [AWS FSx Lustre GPUDirect 加载](ch01/433-aws.html) — AWS 训练/推理数据加载栈
 - [AWS GRPO RLVR SageMaker](../ch11/113-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
 - [Foundation Model Building Blocks on AWS](../ch11/123-building-blocks-for-foundation-model-training-and-inference.html) — AWS 训练与推理基础组件
 - [Foundation Model Building Blocks](../ch03/096-foundation-model-building-blocks.html) — 通用基础组件

@@ -285,7 +285,7 @@ Anthropic 数据显示验证工作可将效率提升 2-3 倍。对于代码任�
 
 - [Claude Opus 4.7](ch01/1233-claude.html) — 最新旗舰模型发布
 - [Claude Opus 4.7 深度分析](ch01/549-claude-opus-4-7.html) — 详细发布分析
-- [Anthropic](ch01/1586-anthropic.html) — 模型开发商
+- [Anthropic](ch01/778-anthropic.html) — 模型开发商
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

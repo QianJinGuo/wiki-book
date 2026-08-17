@@ -81,9 +81,9 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 - [Agent落地真相](../ch03/037-agent.html)
 - [Agent配置模型](../ch04/348-skill.html)
 - [钉钉招聘Agent](../ch05/042-agent-harness.html)
-- [AgentCore旅行分配系统](../ch04/777-agentcore-harness.html)
+- [AgentCore旅行分配系统](../ch04/778-agentcore-harness.html)
 - [QoderWork Skills开发实践](../ch03/076-skills.html)
-- [淘宝数字人Agentic架构](../ch04/073-agentic.html)
+- [淘宝数字人Agentic架构](../ch04/742-agentic.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

@@ -15,8 +15,8 @@ The Founder's Playbook
 
 ## 相关实体
 - [Introducing Claude Platform On Aws](ch01/698-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1586-anthropic.html)
-- [Anthropic Pm Jess Yan Managed Agents](ch01/1586-anthropic.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/778-anthropic.html)
+- [Anthropic Pm Jess Yan Managed Agents](ch01/778-anthropic.html)
 - [Anthropic Claude Managed Agents Platform 2026](ch01/397-anthropic-claude-managed-agents.html)
 - [Claude Code Hackathon Winners 2026](../ch03/084-claude-code.html)
 

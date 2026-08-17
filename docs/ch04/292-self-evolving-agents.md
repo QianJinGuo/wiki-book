@@ -31,7 +31,7 @@
 
 ## 与 Wiki 现有页面的关系
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes 的自进化机制，侧重 Skill 生成 + RL 训练双路径
-- [Memento Skills Agent Self Evolving](ch04/492-memento-skills-agent.html) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
+- [Memento Skills Agent Self Evolving](ch04/493-memento-skills-agent.html) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
 - [Agent Self Improvement Six Mechanisms](../ch03/037-agent.html) — Agent 自我改进六条路，与本文 taxonomy 有重叠但视角不同
 - [Agent Memory Modular Framework](ch04/180-agent-memory.html) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-evolving-agents-survey-papersagent.md)
@@ -81,10 +81,10 @@ Model-Environment Co-Evolution 的两个方向：
 - [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/908-llm-wiki-obsidian-wiki-gbrain.html)
-- [17种Agent架构演进：控制流设计的完整演化史](ch04/797-17-agent.html)
+- [17种Agent架构演进：控制流设计的完整演化史](ch04/798-17-agent.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/098-hermes-agent.html)
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
-- [AI Agent 工程师能力地图](ch04/796-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/670-ai-agent.html)
 
 ---
 
