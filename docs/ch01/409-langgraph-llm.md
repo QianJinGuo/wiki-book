@@ -300,7 +300,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/111-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [How Open Model Ecosystems Compound](ch01/1202-how-open-model-ecosystems-compound.html)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/432-deepseek-v4.html)
-- [Context Window Management Comparison](../ch06/009-context-window-management-comparison.html)
+- [Context Window Management Comparison](../ch06/010-context-window-management-comparison.html)
 
 - [Tomtunguz Ai Model Inflation](../ch05/108-ai.html)
 - [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](ch01/292-hermes.html)

@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **43 篇**实体，按深度递增排列。
+> 本章收录 **44 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 8 |
 | ⭐⭐ 工程师 | 需编程基础 | 33 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 2 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 
 ---
 
@@ -3322,7 +3322,36 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ---
 
-## Ch10.043 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
+## Ch10.043 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
+
+> 📊 Level ⭐⭐⭐ | 3.0KB | `entities/multi-vector-late-interaction-embedding-models-with-sentence.md`
+
+# Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
+
+## 核心思想：把「压缩损失」留到打分阶段
+
+普通 dense embedding 把一段文本压成一个定长向量，罕见实体、精确 ID、长段落里的关键从句都要挤进同一个向量里竞争空间；多条件查询（如"绿色沙发+木腿+圆坐垫"）也会被折成一个点。多向量模型（late-interaction / ColBERT 家族）避开这层压缩：同样跑 transformer，但把每个 token embedding 投影到小维度（经典 128）并全部保留，一篇 9-token 文档变成 9×128 矩阵，而非 1×128 向量。
+
+cross-encoder 交互最早（query 与 doc 一起过模型，最准但 doc 无法离线预计算）；bi-encoder 交互最少（一个点积，可离线索引、查询快）；late-interaction 介于两者之间——文档仍独立编码、可离线建索引，但打分时让每个 query token 与每个 document token 交互，保留 token 级匹配信息。
+
+## MaxSim 算子
+
+打分用 MaxSim：对每个 query token 取它与任一 document token 的最高相似度，再对 query 求和。token embedding 经 L2 归一化，每个点积都是 [-1,1] 的余弦相似度，总和落在 [-num_query_tokens, num_query_tokens]。它把单向量模型必须平均掉的 token 级匹配信息保留下来，通常换来更强的召回，代价是更大的索引。
+
+## 多向量模型的形态与 SOTA 场景
+
+多向量模型是**视觉文档检索**的当前 SOTA：文本 query 直接与页面图像匹配、无需中间 OCR 步骤。同一套 `sentence-transformers`（`pip install -U sentence-transformers`）即可加载各类 checkpoint、编码打分、接入检索栈、在页面图像上运行并控制索引成本；也覆盖音频与视频检索、token pooling、推理加速与评估。
+
+## 互补定位
+
+- 与 [InstEmB](https://github.com/QianJinGuo/wiki/blob/main/entities/instemb-instruction-following-embeddings-2026.md)、[Douyin DME](https://github.com/QianJinGuo/wiki/blob/main/entities/douyin-dme-multimodal-embedding-multimodal-retrieval.md) 等单向量/多模态 embedding 不同，本文聚焦 late-interaction 的工程使用（加载、编码、MaxSim 打分、视觉无 OCR 检索、索引降本）。
+- 适用：RAG 检索、视觉文档检索、需要 token 级精确匹配的场景；代价是索引体积随 token 数线性增长。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multi-vector-late-interaction-embedding-models-with-sentence.md)
+
+---
+
+## Ch10.044 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
 
 > 📊 Level ⭐⭐⭐ | 1.7KB | `entities/file-upload-multimodal-vector-pipeline-real-time-2026-08-04.md`
 

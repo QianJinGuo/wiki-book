@@ -125,7 +125,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - vs **[Google Agent Executor Distributed Runtime](ch04/005-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/397-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
 - vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/660-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/778-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/297-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[AgentCore Harness](ch04/779-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/297-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -204,7 +204,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - [Google Agent Executor Runtime](ch04/005-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/397-anthropic-claude-managed-agents.html)
 - [Amazon Bedrock AgentCore Runtime](ch04/660-amazon-bedrock-agentcore.html)
-- [AgentCore Harness](ch04/778-agentcore-harness.html)
+- [AgentCore Harness](ch04/779-agentcore-harness.html)
 - [纳德拉「Token 资本」论](../ch12/002-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

@@ -50,7 +50,7 @@ config.json 中不同注意力机制的计数（layer_types, mamba2_d_state, hye
 
 ## 相关实体
 
-- [从零构建 LLM](ch01/1515-llm.html) — 从零训练的工程路径（对应指纹的 from-scratch 侧）
+- [从零构建 LLM](ch01/867-llm.html) — 从零训练的工程路径（对应指纹的 from-scratch 侧）
 - [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — tokenizer/架构层优化背景
 - [本地推理成本分析](ch01/607-apple-silicon-costs-more-than-openrouter.html) — 模型实现差异的实证视角
 

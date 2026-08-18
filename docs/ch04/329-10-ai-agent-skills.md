@@ -48,7 +48,7 @@ source_url: https://mp.weixin.qq.com/s/ieQhpziDVspRQ0Kun_mYzw
 - [十年老技术开发的 AI Agent 探索之路](ch04/670-ai-agent.html)
 - [ai agent memory systems](ch04/180-agent-memory.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/629-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/813-claude-managed-agents.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/778-anthropic.html)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/778-anthropic.html)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1233-claude.html)

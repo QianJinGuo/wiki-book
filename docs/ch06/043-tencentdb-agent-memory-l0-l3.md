@@ -48,7 +48,7 @@ PersonaMem（人物画像记忆准确率）提升最显著（+28pp），说明�
 
 ## 相关实体
 
-- [TencentDB Agent Memory 短期记忆压缩方案](ch06/011-tencentdb-agent-memory.html) — 短期记忆压缩的另一种实现角度
+- [TencentDB Agent Memory 短期记忆压缩方案](ch06/030-tencentdb-agent-memory.html) — 短期记忆压缩的另一种实现角度
 
 ## 来源
 

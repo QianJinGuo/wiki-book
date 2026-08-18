@@ -47,7 +47,7 @@
 - [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/231-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [On the Deep Mystery of Language Models](ch01/1026-stochastic-parrot-deep-mystery-llms.html)
 - [A Thought Experiment](ch01/1189-stochastic-parrot-thought-experiment.html)
-- [Marcus on AI Productivity](../ch11/079-stochastic-parrot-marcus-ai-productivity.html)
+- [Marcus on AI Productivity](../ch11/080-stochastic-parrot-marcus-ai-productivity.html)
 - [While Breathless In Stodgy Viridian](ch01/749-while-breathless-in-stodgy-viridian.html)
 
 ---

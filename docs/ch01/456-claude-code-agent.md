@@ -59,7 +59,7 @@
 - [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
 - [200人销售团队企业级 Agent 知识库问答系统架构设计](https://github.com/QianJinGuo/wiki/blob/main/queries/sales-team-agent-knowledge-base-architecture.md)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Agent Memory 系统性框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)

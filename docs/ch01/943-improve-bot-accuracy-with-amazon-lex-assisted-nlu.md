@@ -20,7 +20,7 @@
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch11/253-openclaw.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/271-aws-bedrock-agentcore.html)
-- [Amazon Bedrock模型推理的Serverless异步架构](../ch11/309-amazon-bedrock.html)
+- [Amazon Bedrock模型推理的Serverless异步架构](../ch11/310-amazon-bedrock.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/660-amazon-bedrock-agentcore.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/660-amazon-bedrock-agentcore.html)
 > ai agent platforms topic map（已删除）
@@ -28,14 +28,14 @@
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/993-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/320-amazon-nova.html)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/313-bedrock.html)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/321-amazon-nova.html)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/314-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/660-amazon-bedrock-agentcore.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/495-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11/020-aws-bedrock.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/063-prowler-genai.html)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11/309-amazon-bedrock.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/064-prowler-genai.html)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11/070-amazon-bedrock-claude-prompt-cache.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11/310-amazon-bedrock.html)
 
 ## 深度分析
 1. **LLM 作为 NLU 的"软着陆"机制** — 传统规则 NLU 需要手动配置所有可能的 utterance 变体，而 Assisted NLU 利用 LLM 理解自然语言变体，大幅降低人工配置负担

@@ -154,7 +154,7 @@ POC 可用 Long-term API Key 快速验证，但生产环境必须切换到 IRSA 
 ## 参考来源
 
 ## 相关实体
-- [Bedrock Agentcore Payment X402 Agent](ch11/059-bedrock-agentcore.html)
+- [Bedrock Agentcore Payment X402 Agent](ch11/060-bedrock-agentcore.html)
 - [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](../ch04/660-amazon-bedrock-agentcore.html)
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/660-amazon-bedrock-agentcore.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/660-amazon-bedrock-agentcore.html)

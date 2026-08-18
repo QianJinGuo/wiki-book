@@ -52,7 +52,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/778-anthropic.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/577-anthropic-ai.html)
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Claude Opus 4.7 发布分析](ch01/549-claude-opus-4-7.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/397-anthropic-claude-managed-agents.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)

@@ -17,7 +17,7 @@
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agent Harness 架构](../ch05/042-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)

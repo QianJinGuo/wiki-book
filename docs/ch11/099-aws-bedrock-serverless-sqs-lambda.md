@@ -68,7 +68,7 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 对于图片和文档审核等多模态批量任务，Amazon Nova 2 Lite是高性价比之选——对所有图片和文档页面统一按约230 tokens计费，不论分辨率和页面复杂度，而Claude系列每张图片约1,600 tokens。2000并发20万张图片的压测使用Nova 2 Lite正是基于此考量。
 *Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-serverless-async-inference-sqs-lambda.md)*
 ## 相关实体
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/309-amazon-bedrock.html)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/310-amazon-bedrock.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](ch11/138-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/271-aws-bedrock-agentcore.html)
 - [Building Blocks for Foundation Model Training and Inference on AWS](ch11/123-building-blocks-for-foundation-model-training-and-inference.html)
@@ -78,14 +78,14 @@ if existing.get("Item", {}).get("status") == "COMPLETED":
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/943-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/320-amazon-nova.html)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/321-amazon-nova.html)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/993-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/313-bedrock.html)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/314-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/660-amazon-bedrock-agentcore.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/495-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/309-amazon-bedrock.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/064-prowler-genai.html)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/070-amazon-bedrock-claude-prompt-cache.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/310-amazon-bedrock.html)
 - [55+ models, every modality. one api key, one bill.](ch11/002-serverless-inference.html)
 - [aws bedrock dynamic document extraction pipeline](https://github.com/QianJinGuo/wiki/blob/main/entities/extract-data-with-on-demand-and-batch-pipelines-dynamically.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mcp-server-patterns.md)

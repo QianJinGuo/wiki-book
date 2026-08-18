@@ -97,7 +97,7 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
 - [OpenClaw 多 Agent 协同开发](../ch11/253-openclaw.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - 
 - 
 -

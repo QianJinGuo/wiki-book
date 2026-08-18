@@ -45,7 +45,7 @@ Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环 涉�
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/742-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)

@@ -48,7 +48,7 @@ Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译�
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/253-openclaw.html)
 
 ## 实践启示

@@ -143,7 +143,7 @@ ds4 的 README 坦承使用 GPT 5.5 辅助开发，两个星期完成。这是�
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/432-deepseek-v4.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/432-deepseek-v4.html)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/432-deepseek-v4.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1465-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1466-deepseek.html)
 *Last updated: 2026-05-20*
 
 *评审：Value 8 × Confidence 9 = 72 | ★★★★ | STRONG PASS*

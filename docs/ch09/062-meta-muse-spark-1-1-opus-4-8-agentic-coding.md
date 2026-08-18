@@ -99,7 +99,7 @@ Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入
 - [Sonnet 5](../ch01/1233-claude.html) — Anthropic 高性价比模型
 - [Harness Engineering](../ch05/065-harness-engineering.html) — 相关工程范式
 - [Agentic RL 框架与实践](../ch04/312-agentic-rl.html) — 训练相关的强化学习技术路线
-- [MCP 协议](../ch07/094-mcp-protocol.html) — MCP Atlas 上取得最高分，零样本支持 MCP server
+- [MCP 协议](../ch07/095-mcp-protocol.html) — MCP Atlas 上取得最高分，零样本支持 MCP server
 - [Cline](../ch04/588-cline-releases-open-source-agent-runtime-sdk.html) — Meta Model API 早期合作伙伴
 - [Llama](../ch11/168-llama-cpp-deployment.html) — 开源路线转向闭源的标志
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 概念层面的工程方法论

@@ -47,7 +47,7 @@ LLM-as-a-Verifier 是斯坦福 AI Lab 与 UC Berkeley Sky Computing Lab 联合�
 
 ## 相关实体
 
-- [LLM-as-a-Verifier Framework（同源实体）](ch01/1515-llm.html)
+- [LLM-as-a-Verifier Framework（同源实体）](ch01/867-llm.html)
 - [LLM-as-a-Verifier（同源实体）](ch01/784-llm-as-a-verifier-a-general-purpose-verification.html)
 - [Verifier 驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
 - [RLVR：可验证推理强化学习](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)

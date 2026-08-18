@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **96 篇**实体，按深度递增排列。
+> 本章收录 **97 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 94 |
+| ⭐⭐ 工程师 | 需编程基础 | 95 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -126,7 +126,8 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [090. 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践](ch07/090-skill-skill)
 - [091. 面向复杂业务场景的智能分析 Skills 架构设计与演进实践](ch07/091-skills)
 - [092. 10万+Skill 背后：腾讯SkillHub如何帮用户找到真正好用的那20%](ch07/092-10-skill-skillhub-20)
-- [093. Amazon EKS MCP Server](ch07/093-amazon-eks-mcp-server)
-- [094. MCP Protocol](ch07/094-mcp-protocol)
-- [095. Hermes 上线 /learn 模式：从任何地方提炼任何 Skill](ch07/095-hermes-learn-skill)
-- [096. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/096-microsoft-agent-framework-tools-4-provider-tool-ap)
+- [093. KnowAct-GUIClaw — 哈工大「Know Deeply, Act Perfectly」自进化 GUI Agent](ch07/093-knowact-guiclaw-know-deeply-act-perfectly-gui-agent)
+- [094. Amazon EKS MCP Server](ch07/094-amazon-eks-mcp-server)
+- [095. MCP Protocol](ch07/095-mcp-protocol)
+- [096. Hermes 上线 /learn 模式：从任何地方提炼任何 Skill](ch07/096-hermes-learn-skill)
+- [097. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/097-microsoft-agent-framework-tools-4-provider-tool-ap)

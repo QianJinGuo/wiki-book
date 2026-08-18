@@ -95,7 +95,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/487-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/084-claude-code.html)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1233-claude.html)

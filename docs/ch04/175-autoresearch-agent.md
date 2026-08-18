@@ -151,7 +151,7 @@
 ## 相关实体
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](../ch01/276-openai.html)
-- [What Comes Next With Open Models](../ch01/1454-what-comes-next-with-open-models.html)
+- [What Comes Next With Open Models](../ch01/1455-what-comes-next-with-open-models.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Multi-Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)
 - **Monte Carlo Tree Search**

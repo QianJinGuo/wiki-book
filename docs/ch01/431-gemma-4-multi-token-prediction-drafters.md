@@ -6,7 +6,7 @@
 
 ## 概述
 
-**Gemma 4 Multi-Token Prediction (MTP) Drafters** 是 Google 于 2026年5月为 Gemma 4 系列模型发布的**推测解码**（Speculative Decoding）加速组件。该技术通过轻量级草稿模型（drafter）并行预测多个 token，再由目标大模型验证，实现最高 **3x 推理加速**，同时保持输出质量完全一致。 See also [Context Window Management](../ch06/009-context-window-management-comparison.html)
+**Gemma 4 Multi-Token Prediction (MTP) Drafters** 是 Google 于 2026年5月为 Gemma 4 系列模型发布的**推测解码**（Speculative Decoding）加速组件。该技术通过轻量级草稿模型（drafter）并行预测多个 token，再由目标大模型验证，实现最高 **3x 推理加速**，同时保持输出质量完全一致。 See also [Context Window Management](../ch06/010-context-window-management-comparison.html)
 
 MTP drafters 以 Apache 2.0 开源协议发布，兼容 vLLM、MLX、HuggingFace Transformers、SGLang、Ollama 等主流推理框架，并可通过 Google AI Edge Gallery 在 Android 或 iOS 设备上运行。
 
@@ -211,7 +211,7 @@ MTP drafters 对 Apple Silicon 的适配揭示了 MoE（混合专家）模型在
 [^8]: 同上 — 官方技术文档链接 https://ai.google.dev/gemma/docs/mtp/overview?hl=zh-cn
 
 ## 相关实体
-- [Aws Fsx Lustre Gpudirect Sharded Llm Loading](ch01/433-aws.html)- [tliveomni vllm 适配与量化方案](ch01/883-vllm.html)
+- [Aws Fsx Lustre Gpudirect Sharded Llm Loading](ch01/867-llm.html)- [tliveomni vllm 适配与量化方案](ch01/883-vllm.html)
 - [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](ch01/864-gemma-4.html)
 
 ---

@@ -165,7 +165,7 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 
 - **"像人一样记忆"是 JoyAI-Echo 的核心哲学**：跨模态音视频记忆库的设计明确点出"不无限扩展记忆，只保留开头关键镜头 + 最近生成镜头"——这与人脑记忆系统（**长期记忆 + 工作记忆**）的工作方式高度相似。**5 分钟时长上限本质上是工作记忆容量上限的工程化体现**——超出这个时长，模型再增加参数也难以保持一致性。这个边界条件比很多论文里宣称的"任意时长"更诚实。
 
-- **DMD 7.5x 加速是"后训练工业化"的标志**：DMD（Distribution Matching Distillation）不是新概念，**将 DMD 应用于长视频生成的后训练环节并实现 7.5x 加速**才是 JoyAI-Echo 的工程价值。这与 [Ai Infra Llm Efficient Inference Vllm](../ch01/1473-ai-infra.html) 中 vLLM 的 PagedAttention 类似——都是"训练时模型 → 推理时模型"的能力压缩，但 DMD 解决的是**生成质量保留**问题，vLLM 解决的是**吞吐量**问题。DMD 范式可能在 AIGC 全行业扩散（视频 / 图像 / 3D / 音频都可能复用）。
+- **DMD 7.5x 加速是"后训练工业化"的标志**：DMD（Distribution Matching Distillation）不是新概念，**将 DMD 应用于长视频生成的后训练环节并实现 7.5x 加速**才是 JoyAI-Echo 的工程价值。这与 [Ai Infra Llm Efficient Inference Vllm](../ch01/1577-ai-infra.html) 中 vLLM 的 PagedAttention 类似——都是"训练时模型 → 推理时模型"的能力压缩，但 DMD 解决的是**生成质量保留**问题，vLLM 解决的是**吞吐量**问题。DMD 范式可能在 AIGC 全行业扩散（视频 / 图像 / 3D / 音频都可能复用）。
 
 - **Director Agent 三阶段是视频生成的"流程工程"突破**：之前 AI 视频的瓶颈除了"变脸/漂移/慢"，还有"无法返工"——创作者发现某镜头有问题只能重新生成整条视频。**Director Agent 的"只对受影响部分重生成"**让 AI 视频真正进入"可迭代"阶段，这是与 [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/037-agent.html) 中"compute + talent flywheel"概念对应的工程化落地——前者是战略叙事，后者是技术实现。
 

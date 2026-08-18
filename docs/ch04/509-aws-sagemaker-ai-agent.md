@@ -12,7 +12,7 @@ What makes this experience truly powerful is [agent Skills for model customizati
 ## Amazon Kiro in SageMaker AI Studio JupyterLab
 
 ## 相关实体
-- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01/433-aws.html)
+- [Aws Reinforcement Fine Tuning Llm As Judge](../ch01/867-llm.html)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/297-aws-devops-agent.html)
 - [Agent Workflows](ch04/442-agent-workflows.html)
 - [Habby Game Aws Devops Agent](../ch11/297-aws-devops-agent.html)

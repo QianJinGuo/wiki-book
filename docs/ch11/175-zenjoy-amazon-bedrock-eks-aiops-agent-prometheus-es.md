@@ -53,13 +53,13 @@ AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原�
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/253-openclaw.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/271-aws-bedrock-agentcore.html)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/309-amazon-bedrock.html)
+- [Amazon Bedrock模型推理的Serverless异步架构](ch11/310-amazon-bedrock.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/660-amazon-bedrock-agentcore.html)
 
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/020-aws-bedrock.html)
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/309-amazon-bedrock.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/064-prowler-genai.html)
+- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/070-amazon-bedrock-claude-prompt-cache.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/310-amazon-bedrock.html)
 
 ---
 

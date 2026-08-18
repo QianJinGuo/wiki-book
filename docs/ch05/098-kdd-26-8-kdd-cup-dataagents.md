@@ -34,7 +34,7 @@
 ## 相关实体
 
 - [美团 LongCat 2.0](../ch04/480-longcat-2-0.html) — 美团大模型家族
-- [GenRec（Netflix）](../ch01/1515-llm.html) — 生成式推荐对照
+- [GenRec（Netflix）](../ch01/867-llm.html) — 生成式推荐对照
 - [Discretizing Reward Models](../ch01/368-discretizing-reward-models.html) — 奖励模型离散化
 - [美团 LoHOSearch](../ch04/668-lohosearch.html) — Agent 搜索评测
 - [美团 Turing Agent 评估](../ch03/037-agent.html) — 同团队评估方法论

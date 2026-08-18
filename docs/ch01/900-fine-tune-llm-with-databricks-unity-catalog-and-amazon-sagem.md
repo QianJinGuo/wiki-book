@@ -11,9 +11,9 @@
 
 ## 相关实体
 - [基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客](../ch04/450-pod.html)
-- [LLM-as-Judge: RFT的6步法官设计方法论](ch01/433-aws.html)
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/320-amazon-nova.html)
-- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/320-amazon-nova.html)
+- [LLM-as-Judge: RFT的6步法官设计方法论](ch01/867-llm.html)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/321-amazon-nova.html)
+- [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/321-amazon-nova.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/670-ai-agent.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11/152-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)

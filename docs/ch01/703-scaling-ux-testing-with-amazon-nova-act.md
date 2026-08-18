@@ -82,7 +82,7 @@ Nova Act 方案引入了一个精妙的设计维度：三级指令粒度。同�
 - [Amazon Bedrock AgentCore 浏览器能力](../ch04/660-amazon-bedrock-agentcore.html)
 - [RAG 全链路实践](ch01/1284-rag.html)
 - [Agent Harness 运行时模式](../ch05/042-agent-harness.html)
-- [Bedrock Claude 缓存策略](../ch11/069-amazon-bedrock-claude-prompt-cache.html)
+- [Bedrock Claude 缓存策略](../ch11/070-amazon-bedrock-claude-prompt-cache.html)
 - [Bedrock 商业智能 Agent](../ch04/660-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-ux-testing-with-amazon-nova-act-a-new-approach-to-us.md)

@@ -1650,7 +1650,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## Ch08.013 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
 
-> 📊 Level ⭐⭐⭐ | 25.1KB | `entities/jiuwenswarm-coordination-engineering.md`
+> 📊 Level ⭐⭐⭐ | 26.4KB | `entities/jiuwenswarm-coordination-engineering.md`
 
 ## 概述
 JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，代表从 Harness Engineering 向 **Coordination Engineering** 的范式跃迁。
@@ -1936,6 +1936,13 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 | 游戏/沉浸式体验 | HITS | 体验的核心是参与感，而非结果优化 |
 ---
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)
+## 4th Source — ScienceDiscovery AI 科研工作台（应用：BiomniBench-DA SOTA）
+
+**ScienceDiscovery** 是基于 Agent OS（JiuwenSwarm）开发的一站式 AI 科研工作台，解决科研场景两大痛点：工具碎片化（文献阅读/假设/代码/实验/调参频繁切换平台）与科研幻觉（大模型长链条任务易文献引用/因果推导/实验流程造假）。在权威生物医学智能体基准 **BiomniBench-DA** 上验证达业界 SOTA，成功应用于纳米抗体药物设计。
+
+- 互补角度：1) JiuwenSwarm 作为 Agent OS 在垂直科研领域的落地案例；2) BiomniBench-DA 生物医学智能体基准成为 openJiuwen 生态的评估锚点；3) 「零科研幻觉」诉求把 JiuwenSwarm 的多 Agent 协作与专用工具编排能力绑定到科学发现场景。
+
+→ [ScienceDiscovery 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sciencediscovery-biomnibench-ai-science-workstation-jiuwenswarm.md)
 
 ---
 

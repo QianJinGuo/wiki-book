@@ -23,7 +23,7 @@ Anthropic 悄悄搭好了一套 Agent 基础设施 Claude Managed Agents 正式�
 
 ## 相关实体
 - [Claude Managed Agents Official](ch04/702-claude-managed-agents-official.html)
-- [Claude Managed Agents](ch04/629-claude-managed-agents.html)
+- [Claude Managed Agents](ch04/813-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform 2026](../ch01/397-anthropic-claude-managed-agents.html)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/778-anthropic.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/798-anthropic-claude-code.html)

@@ -33,7 +33,7 @@ Strands Agent SDK、Amazon Bedrock、AgentCore
 5. **复合指标的验证**：NPS 等复合指标需要额外的公式验证层，不能仅依赖 LLM 生成 SQL。
 
 ## 相关实体
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/313-bedrock.html)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/314-bedrock.html)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/152-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/660-amazon-bedrock-agentcore.html)
@@ -41,7 +41,7 @@ Strands Agent SDK、Amazon Bedrock、AgentCore
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
 
-- [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](ch11/059-bedrock-agentcore.html)
+- [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](ch11/060-bedrock-agentcore.html)
 
 ---
 

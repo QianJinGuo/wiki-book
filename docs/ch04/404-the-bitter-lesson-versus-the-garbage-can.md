@@ -68,7 +68,7 @@ Manus 是工艺典范：几百行手工 system prompts、明确的工作流脚�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/742-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [Management As Ai Superpower](../ch01/679-management-as-ai-superpower.html)
 - [Claude Code And What Comes Next](../ch01/573-claude-code-and-what-comes-next.html)
 - [Your First Ai Agent Should Do One Thing Badly](ch04/484-your-first-ai-agent-should-do-one-thing-badly.html)

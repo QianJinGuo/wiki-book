@@ -37,7 +37,7 @@ ProgramBench的核心设计哲学是回答"SWE-bench等现有benchmark无法回�
 
 ## 相关资源
 - [Agent Memory 架构](ch04/514-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](ch04/629-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](ch04/813-claude-managed-agents.html)
 
 ---
 

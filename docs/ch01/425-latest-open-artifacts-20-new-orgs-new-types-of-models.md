@@ -20,7 +20,7 @@ type: entity
 
 ## 相关实体
 - [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/695-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
-- [Interconnects What Comes Next With Open Models](ch01/1454-what-comes-next-with-open-models.html)
+- [Interconnects What Comes Next With Open Models](ch01/1455-what-comes-next-with-open-models.html)
 - [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](ch01/332-1.html)
 - [U Of T Ai Worm Cleverhans Papernot 2026](../ch05/108-ai.html)
 - [How Far Behind Are Open Models 2026](ch01/1129-20.html)

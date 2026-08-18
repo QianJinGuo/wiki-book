@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/1465-deepseek.html)
+- [deepseek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！](ch01/1466-deepseek.html)
 - [dynamically splitting wide partitions in cassandra for time](../ch11/034-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
 - [interconnects ai p open and closed models are on different](../ch05/108-ai.html)
 - [reducing container cold start times using soci index on dlam](ch01/1424-reducing-container-cold-start-times-using-soci-index-on-dlam.html)

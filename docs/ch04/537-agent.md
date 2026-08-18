@@ -60,7 +60,7 @@
 
 - [MCP Server](ch04/660-amazon-bedrock-agentcore.html)
 - [Agentic Harness Engineering](../ch05/065-harness-engineering.html)
-- [Agentic AI 系统架构](../ch05/126-harness-skill.html)
+- [Agentic AI 系统架构](../ch05/127-harness-skill.html)
 - [Token 成本控制](../ch09/054-coding-agent.html)
 - [A2A 企业级协议](ch04/742-agentic.html)
 - [Agent 环境工程](ch04/742-agentic.html)

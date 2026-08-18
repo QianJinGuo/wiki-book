@@ -82,7 +82,7 @@ IMClaw 提供了三种权限模式（approve-reads、approve-all、deny-all）�
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [OpenClaw Prompt/Context/Harness](../ch11/253-openclaw.html)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/037-agent.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
 - [AIAIGC峰会嘉宾阵容](../ch04/618-aiaigc.html)

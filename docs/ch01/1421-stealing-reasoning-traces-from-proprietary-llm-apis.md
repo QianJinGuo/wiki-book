@@ -33,7 +33,7 @@ Panfilov 等（ELLIS Tübingen / MPI-IS / Tübingen AI Center / MATS / Snyk，st
 ## 与库内其他实体的关系
 
 - [Claude Code 工具调用安全事件](../ch03/084-claude-code.html) — 同为 LLM 客户端侧安全漏洞方向
-- [LLM 记忆容量](ch01/1515-llm.html) — 思维链包含敏感信息的表征基础
+- [LLM 记忆容量](ch01/867-llm.html) — 思维链包含敏感信息的表征基础
 - 与 Trace Inversion（Cornell Tech，同一 XHS 帖提及）互补：前者从加密块解码，后者仅凭输入/答案/摘要合成推理轨迹蒸馏黑盒模型
 
 → [论文原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stealing-reasoning-traces-proprietary-llm-apis-paper-2026.md)

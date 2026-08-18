@@ -105,7 +105,7 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 - [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](../ch05/065-harness-engineering.html)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
 - [OpenCLAW 完全指南](../ch11/253-openclaw.html)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1220-openclaw-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
