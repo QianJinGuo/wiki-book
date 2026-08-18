@@ -13,7 +13,7 @@
 ## 相关实体
 - [Hermes Skill System Winty](../ch07/019-hermes-skill.html)
 - [Ai Skill Skill Creator 源码拆解](ch04/372-skill-skill.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/126-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/127-harness-skill.html)
 - [Agent Skill Writing Guide](ch04/609-agent-skill.html)
 - [Agent Memory Engineering Tax Aws China 2026](ch04/180-agent-memory.html)
 

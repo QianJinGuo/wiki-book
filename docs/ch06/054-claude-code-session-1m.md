@@ -52,7 +52,7 @@
 ## 相关实体
 - [Claude Code Subagent 上下文卫生](../ch04/386-claude-code-subagent.html)
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/072-claude-code-prompt.html)
-- [Agent 上下文窗口管理对比](ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](ch06/010-context-window-management-comparison.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/037-agent.html)
 
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch06/008-claude-code-openclaw-memory-comparison.html)

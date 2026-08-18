@@ -60,10 +60,10 @@ Gateway 的令牌验证设计具有显著的架构灵活性。文档明确指出
 
 ## 相关实体
 - [Amazon Bedrock Agentcore Gateway Mcp Extension](ch04/660-amazon-bedrock-agentcore.html)
-- [Spec Review Agent Baz Bedrock Agentcore Multi Agent](../ch11/059-bedrock-agentcore.html)
+- [Spec Review Agent Baz Bedrock Agentcore Multi Agent](../ch11/060-bedrock-agentcore.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](ch04/660-amazon-bedrock-agentcore.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](ch04/660-amazon-bedrock-agentcore.html)
-- [Amazon Bedrock Agentic Payments Guardrails](../ch11/309-amazon-bedrock.html)
+- [Amazon Bedrock Agentic Payments Guardrails](../ch11/310-amazon-bedrock.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 相关主题

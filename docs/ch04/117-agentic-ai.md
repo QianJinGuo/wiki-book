@@ -134,7 +134,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ## 相关实体
 
-- [Agentic AI 系统架构：Harness + Skill + MCP](../ch05/126-harness-skill.html) — Anthropic/agent 视角的架构总览
+- [Agentic AI 系统架构：Harness + Skill + MCP](../ch05/127-harness-skill.html) — Anthropic/agent 视角的架构总览
 - [AIDLC 范式迁移](../ch05/108-ai.html) — 数据工程视角 AIDLC（互补不重叠）
 - [AIDL 范式迁移：平台驱动数据工程](../ch01/433-aws.html) — 另一 AIDL 视角
 - [Agent Harness 架构设计生产指南](../ch05/042-agent-harness.html) — Aksahy 实战视角
@@ -164,7 +164,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 实践价值：MCP + A2A 是接口标准化层面的 N×M → M 降维
 
-当企业有 N 个 Agent 和 M 个工具时，全连接复杂度是 N×M。MCP 协议（Agent↔工具）和 A2A 协议（Agent↔Agent）将复杂度降为 M（工具层）+ N（Agent 层）。这是 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/126-harness-skill.html) 中描述的架构逻辑在接口标准化层面的落地。AWS Bedrock AgentCore 的 Gateway 模块正是这一标准化的基础设施承载。
+当企业有 N 个 Agent 和 M 个工具时，全连接复杂度是 N×M。MCP 协议（Agent↔工具）和 A2A 协议（Agent↔Agent）将复杂度降为 M（工具层）+ N（Agent 层）。这是 [Agentic Ai System Architecture Harness Skill Mcp](../ch05/127-harness-skill.html) 中描述的架构逻辑在接口标准化层面的落地。AWS Bedrock AgentCore 的 Gateway 模块正是这一标准化的基础设施承载。
 
 ### 深层博弈："代理人困境"的微观机制与宏观代价
 

@@ -27,7 +27,7 @@ Incendium 项目展示了 MS-RPC 模糊测试的方法论演进：通过递归�
 
 ## 相关资源
 - [Agent Memory 架构](../ch04/514-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [Claude Managed Agents 开发者指南](../ch04/629-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](../ch04/813-claude-managed-agents.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/incendium-fuzzing-ms-rpc.md)
 
 ## 相关实体

@@ -40,8 +40,8 @@ Skill 是 Agent 能力的最小封装单元，它把领域知识、工作流程�
 > ai agent platforms topic map（已删除）
 
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/487-agent-skills.html)
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](../ch01/1494-gpt-image-2.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/629-claude-managed-agents.html)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](../ch01/1495-gpt-image-2.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/813-claude-managed-agents.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/037-agent.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/778-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)

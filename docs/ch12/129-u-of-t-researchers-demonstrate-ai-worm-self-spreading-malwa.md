@@ -108,7 +108,7 @@
 ## 相关实体（Related Entities）
 
 - [Mythos For Offensive Security Xbows Evaluation](ch12/031-mythos.html) — Claude Mythos 攻防评估
-- [Llm Raiders Private Ai Server](../ch01/1515-llm.html) — LLM Raiders 私人 AI 服务器
+- [Llm Raiders Private Ai Server](../ch01/867-llm.html) — LLM Raiders 私人 AI 服务器
 - [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/670-ai-agent.html) — AWS + Cisco AI Defense MCP/A2A
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI gateway 安全
 - [Fragnesia Linux Kernel Local Privilege Escalation Via Esp In Tcp](../ch01/1284-rag.html) — Linux 内核权限提升

@@ -29,7 +29,7 @@ Benchmark 刷分的本质是一个委托代理问题（Principal-Agent Problem�
 
 - [Claude Opus 4.7 发布分析](ch01/549-claude-opus-4-7.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/778-anthropic.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/629-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/813-claude-managed-agents.html)
 
 ## 相关实体
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/077-harness.html)

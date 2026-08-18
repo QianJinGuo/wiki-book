@@ -81,8 +81,8 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/397-anthropic-claude-managed-agents.html)
 - [claude managed agents official](../ch04/702-claude-managed-agents-official.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
-- [claude managed agents](../ch04/629-claude-managed-agents.html)
-- [Claude Managed Agents 开发者指南](../ch04/629-claude-managed-agents.html)
+- [claude managed agents](../ch04/813-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](../ch04/813-claude-managed-agents.html)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/487-agent-skills.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/037-agent.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/778-anthropic.html)
@@ -104,7 +104,7 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/065-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/253-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/065-harness-engineering.html)
-- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](ch01/1515-llm.html)
+- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](ch01/867-llm.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 第 2 来源：claude.com 官方 blog 视角（2026-06-10，演进叙事）

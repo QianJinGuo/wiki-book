@@ -38,7 +38,7 @@ OpenClaw 的爆火并非偶然，而是精准击中了 AI Agent 落地的三个�
 - [AIAIGC峰会嘉宾阵容](ch04/618-aiaigc.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/348-skill.html)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1220-openclaw-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/084-claude-code.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/348-skill.html)

@@ -114,7 +114,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/487-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](ch03/084-claude-code.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1233-claude.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](ch03/084-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)

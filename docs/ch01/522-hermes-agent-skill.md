@@ -165,7 +165,7 @@ Skill 退役时切忌直接删除——工具栈过时不代表经验过时。�
 
 ## 相关实体
 - [AI Skill 测评指标体系](ch01/660-ai-skill.html)
-- [Agentic AI 系统架构与分层模型](../ch05/126-harness-skill.html)
+- [Agentic AI 系统架构与分层模型](../ch05/127-harness-skill.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch06/013-hermes-agent-memory.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch06/013-hermes-agent-memory.html)
 

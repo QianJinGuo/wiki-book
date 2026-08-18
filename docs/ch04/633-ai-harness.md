@@ -8,10 +8,10 @@
 
 ## 相关实体
 
-- [从零构建大语言模型 —— 读完这篇你就懂了](../ch01/1515-llm.html)
+- [从零构建大语言模型 —— 读完这篇你就懂了](../ch01/867-llm.html)
 - [canvas hackers shinyhunters say their official domain was su](../ch05/108-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](../ch12/013-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
-- [democratizing machine learning at netflix: building the mode](../ch11/299-democratizing-machine-learning-at-netflix-building-the-mode.html)
+- [democratizing machine learning at netflix: building the mode](../ch11/300-democratizing-machine-learning-at-netflix-building-the-mode.html)
 - [from silos to service topology: why netflix built a real-tim](../ch11/017-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
 - [llmreaper - dom based ai conversation exfiltration via brows](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [building is just the beginning: introducing discoverability](../ch12/098-building-is-just-the-beginning-introducing-discoverability.html)
@@ -57,7 +57,7 @@
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/742-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)

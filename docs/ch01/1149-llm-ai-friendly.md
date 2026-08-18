@@ -12,7 +12,7 @@
 - [ai 硬件迎来寒武纪时刻：百度智能云如何成为爆发催化剂](ch01/328-geek.html)
 - [how to build an ai-native startup](../ch05/022-ai-native.html)
 - [百型智能 ontoz：企业本体论 + 群智能体协同体系，新一代企业级 ai 基础设施](../ch05/108-ai.html)
-- [从零构建大语言模型 —— 读完这篇你就懂了](ch01/1515-llm.html)
+- [从零构建大语言模型 —— 读完这篇你就懂了](ch01/867-llm.html)
 - [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
 - [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](../ch04/221-factory-missions.html)
 - [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](../ch05/108-ai.html)
@@ -56,7 +56,7 @@
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)

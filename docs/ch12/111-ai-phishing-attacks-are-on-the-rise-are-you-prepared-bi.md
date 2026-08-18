@@ -14,7 +14,7 @@
 ## 相关实体
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/111-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [Ai Agents Inside Perimeter Hackernews](../ch04/670-ai-agent.html)
-- [Llm Raiders Private Ai Server](../ch01/1515-llm.html)
+- [Llm Raiders Private Ai Server](../ch01/867-llm.html)
 - [Bluekit](ch12/097-meet-bluekit-the-ai-powered-all-in-one-phishing-kit.html)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/160-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 

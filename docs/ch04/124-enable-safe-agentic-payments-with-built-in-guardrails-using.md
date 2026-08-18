@@ -173,7 +173,7 @@ AgentCore Observability 暴露了所有 ProcessPayment 调用的结果（成功�
 
 ## 相关实体
 - [Secure Ai Agents Policy Lambda Interceptors Aws](ch04/670-ai-agent.html)
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/309-amazon-bedrock.html)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/310-amazon-bedrock.html)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](ch04/660-amazon-bedrock-agentcore.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/127-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](ch04/354-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)

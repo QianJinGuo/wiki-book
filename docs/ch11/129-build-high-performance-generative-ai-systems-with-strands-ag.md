@@ -110,7 +110,7 @@ NVIDIA NIM (GPU 加速推理 via build.nvidia.com)
 GitHub: `aws-samples/sample-agentic-genai-agentcore/aws-genai-campaign-review-strands-agentcore`
 
 ## 相关实体
-- [Bedrock Agentcore Coding Agent Hosting](ch11/059-bedrock-agentcore.html)
+- [Bedrock Agentcore Coding Agent Hosting](ch11/060-bedrock-agentcore.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/660-amazon-bedrock-agentcore.html)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch11/140-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/354-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)

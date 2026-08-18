@@ -62,7 +62,7 @@ print(result['content'][0]['text'])
 
 ### 3. 作为 Codex Agent 的推理后端
 
-[OpenAI Codex on Bedrock](../ch11/309-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
+[OpenAI Codex on Bedrock](../ch11/310-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
 
 ## 模型对比与选型
 
@@ -149,7 +149,7 @@ Codex 作为编码 Agent 在 Bedrock 上的部署模式，代表了 AI 编码工
 
 ## 相关实体
 
-- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/309-amazon-bedrock.html)
+- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/310-amazon-bedrock.html)
 - [Amazon Bedrock AgentCore Harness GA](../ch04/587-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - [AWS Bedrock Multi-Agent Collaboration Guide](../ch11/020-aws-bedrock.html)
 - [Securing Bedrock AgentCore with AWS WAF](../ch11/275-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)

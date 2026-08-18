@@ -72,8 +72,8 @@ Slack 从 SageMaker 到 Bedrock 的迁移实现了零客户事故，其方法论
 
 - [Token 成本控制](../ch09/054-coding-agent.html)
 - [Amazon Bedrock AgentCore](../ch04/587-amazon-bedrock-agentcore-harness-ga-api-agent.html)
-- [Bedrock Prompt Cache](../ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [Bedrock 跨区域推理](../ch11/309-amazon-bedrock.html)
+- [Bedrock Prompt Cache](../ch11/070-amazon-bedrock-claude-prompt-cache.html)
+- [Bedrock 跨区域推理](../ch11/310-amazon-bedrock.html)
 - [GPU 推理调度](../ch04/742-agentic.html)
 - [AI-Friendly 后端标准](../ch05/023-ai-friendly.html)
 

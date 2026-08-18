@@ -9,7 +9,7 @@
 - [Agent 记忆架构](ch04/514-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agent 记忆模块化框架](ch04/180-agent-memory.html)
 - [AI Agent 记忆系统](ch04/180-agent-memory.html)
-- [上下文窗口管理](../ch06/009-context-window-management-comparison.html)
+- [上下文窗口管理](../ch06/010-context-window-management-comparison.html)
 - [Agent Harness 上下文管理：工作集模型](../ch05/042-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/180-agent-memory.html)

@@ -38,9 +38,9 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 追踪 AI 自动完成的分析任务占比——95% 是目标，当前可能在 60-70%，逐步提升。
 
 ## 相关实体
-- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1611-anthropic-claude.html)
+- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1612-anthropic-claude.html)
 - [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/487-agent-skills.html)
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/629-claude-managed-agents.html)
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/813-claude-managed-agents.html)
 - [Anthropic 12 Mcp Production Patterns](../ch01/778-anthropic.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/348-skill.html)
 

@@ -88,7 +88,7 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 - [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/298-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
-- [Tencentdb Agent Memory Context Offloading](../ch06/011-tencentdb-agent-memory.html)
+- [Tencentdb Agent Memory Context Offloading](../ch06/030-tencentdb-agent-memory.html)
 - [agent 开发范式演进：从环境工程出发](../ch03/037-agent.html)
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](../ch05/001-impeccable.html)
 - [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](../ch04/348-skill.html)

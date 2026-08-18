@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **63 篇**实体，按深度递增排列。
+> 本章收录 **65 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 39 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 41 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
@@ -4745,7 +4745,63 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.060 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
+## Ch17.060 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
+
+> 📊 Level ⭐⭐⭐ | 2.5KB | `entities/douyin-dme-multimodal-embedding-multimodal-retrieval.md`
+
+# 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
+
+## 概述
+
+抖音搜索多模态团队联合中国人民大学高瓴人工智能学院发布多模态表征模型 **DME（Douyin Multimodal Embedding）**，采用「对比 + 生成」混合范式。在 MMEB-v2（78 个数据集，覆盖图像、视频、视觉文档三大域）上 2B/9B 两个参数量级均达对应规模 SOTA（74.8 / 78.4），视频与视觉文档检索优势突出。
+
+DME 已部署进抖音线上系统：离线评测集整体相对提升 2.92%，线上 A/B 验证核心业务指标 0.1% LT（Lifetime）收益，应用于生成式搜索、视觉搜索、AI 搜索等场景。
+
+## 核心命题：效率与细粒度不必二选一
+
+DME 想验证的核心是检索表征的「效率」与「细粒度」不必二选一——将「该看哪里」（细粒度定位）与「必须记住什么」（高层语义记忆）两大任务前置至训练阶段，保障在线推理高效性。该能力适配百亿级工业检索场景，还可支撑 AI 搜索、Agent 等需依托检索结果做深度推理的新兴场景——向量需承载非对称语义，而非仅作排序相似度信号。
+
+## 技术架构
+
+- 对比学习 + 生成任务联合训练，平衡多模态表征的判别力与生成力
+- MMEB-v2 三域（图像/视频/视觉文档）全量评估体系
+- 论文：arxiv 2608.02148
+
+## 意义
+
+DME 代表多模态表征从「纯检索排序信号」向「承载非对称语义、支撑 Agent 深度推理」的范式演进，与 [智源悟界 Orca](https://github.com/QianJinGuo/wiki/blob/main/entities/智源悟界robobrain-orca多模态表征世界模型.md) 等属于同一多模态表征前沿家族。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/douyin-dme-multimodal-embedding-multimodal-retrieval.md)
+
+---
+
+## Ch17.061 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
+
+> 📊 Level ⭐⭐⭐ | 2.3KB | `entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md`
+
+# CurrentWorld-0 — 跨本体多视角多模态物理世界模型
+
+## 概述
+
+Current Robotics 发布 **CurrentWorld-0**，一种**交互式世界仿真器（Interactive World Simulator）**，是其在发布人形全身精细操作 Curr-0 后的第二份工作。与依赖人工编写物理公式的传统物理引擎不同，它从真实世界数据中学习规律，形成数据驱动的仿真方式。
+
+## 核心创新：跨本体 + 多视角 + 力触觉统一
+
+这是**首次将跨本体、多视角和力触预测整合进同一个世界仿真器**，同时用于模拟、学习以及与人类和机器人模型交互。此前类似方向如 1X World Model、Physical Intelligence 的 Ctrl-World 与 SC3-Eval、DeepMind WorldGym、英伟达 Cosmos Predict，但都未做到三者统一。
+
+- **跨本体**：移动机器人、配备灵巧手的双足人形机器人都可被建模与控制
+- **多视角 + 力触觉**：不只刚体，柔性物体与流体（叠袜子、拾枕头、削黄瓜）都能保持合理物理状态
+- 关键价值不在画面逼真度，而在于机器人动作变化后世界如何正确演化
+
+## 意义
+
+CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md)、[NVIDIA Gamma World](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md) 等同属世界模型前沿，但其「跨本体 + 力触觉」的数据驱动仿真路线在具身智能领域具有差异化方法论价值。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/currentworld-0-cross-embodiment-multimodal-physical-world-model.md)
+
+---
+
+## Ch17.062 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
 
 > 📊 Level ⭐⭐⭐ | 2.2KB | `entities/eccv26-oral人物不能变姿势要对齐风格还得一致dyref突破多参考约束下的图像生成难题.md`
 
@@ -4769,7 +4825,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.061 Qwen-Image-3.0 — 落字成画，字字如印
+## Ch17.063 Qwen-Image-3.0 — 落字成画，字字如印
 
 > 📊 Level ⭐⭐⭐ | 1.4KB | `entities/qwen-image-30落字成画字字如印.md`
 
@@ -4791,7 +4847,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.062 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.064 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -4915,7 +4971,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.063 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.065 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

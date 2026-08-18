@@ -76,9 +76,9 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 
 ## 相关实体
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/742-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/742-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/275-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/742-agentic.html)
 - [Design Patterns for AI Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)

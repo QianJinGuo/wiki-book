@@ -610,7 +610,7 @@ class RecoveryManager:
 - [Code As Agent Harness Survey](../ch09/063-code-as-agent-harness.html)
 - [Agent Harness Architecture](../ch05/042-agent-harness.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/077-harness.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/126-harness-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/127-harness-skill.html)
 - [Harness Production Agent Engineering Deficit](../ch05/077-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）

@@ -54,7 +54,7 @@ Agent 后端中能力暴露方式发生根本变化：传统后端暴露 REST AP
 - [AI 友好架构设计](../ch05/023-ai-friendly.html)
 - [AI Agent 工程师能力地图](ch04/670-ai-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/742-agentic.html)
-- [MCP（Model Context Protocol）](../ch07/094-mcp-protocol.html)
+- [MCP（Model Context Protocol）](../ch07/095-mcp-protocol.html)
 - [Agent 可观测性五层架构](../ch03/037-agent.html)
 - [Anthropic 12 个 MCP 生产模式](../ch01/778-anthropic.html)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)

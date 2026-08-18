@@ -241,7 +241,7 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-context-management-working-set.md)
 → [原文存档（Anthropic CE 文章）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-context-engineering-anthropic-thariq.md)
 
-- [Agent 上下文窗口管理对比](ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](ch06/010-context-window-management-comparison.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-structure-navigation.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 

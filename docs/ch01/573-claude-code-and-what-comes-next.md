@@ -113,7 +113,7 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/484-your-first-ai-agent-should-do-one-thing-badly.html)
 - [The Bitter Lesson Versus The Garbage Can](../ch04/404-the-bitter-lesson-versus-the-garbage-can.html)
 - [Management As Ai Superpower](ch01/679-management-as-ai-superpower.html)

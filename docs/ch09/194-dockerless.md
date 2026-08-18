@@ -52,7 +52,7 @@ Dockerless 占据「免环境 + 有仓库 grounding」的独特生态位。
 
 ## 相关实体
 
-- [RLHF/GRPO 训练](../ch01/1514-trl.html)
+- [RLHF/GRPO 训练](../ch01/1515-trl.html)
 - [SWE-bench Agent 评测](../ch04/476-swe-bench-agent.html)
 - [Generator-Evaluator Harness](../ch01/778-anthropic.html)
 

@@ -115,11 +115,11 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1233-claude.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/037-agent.html)
-- [Agent 上下文窗口管理对比](../ch06/009-context-window-management-comparison.html)
+- [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Agent Harness 架构](../ch05/042-agent-harness.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/084-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/037-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/819-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code 设计原则与对照分析](../ch03/084-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 

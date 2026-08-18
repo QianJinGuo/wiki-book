@@ -65,7 +65,7 @@ Claude for Small Business 代表了一种新兴的「AI Native SMB 产品」范�
 - [Introducing Claude for Small Business](ch01/030-introducing-claude-for-small-business.html)
 - [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/498-anthropic-claude-agent.html)
 - [Xero Announces Integration with Anthropic's Claude](ch01/778-anthropic.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1611-anthropic-claude.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1612-anthropic-claude.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/397-anthropic-claude-managed-agents.html)
 - [Claude Managed Agents 官方 Harness 平台指南](ch01/397-anthropic-claude-managed-agents.html)
 - [Anthropic Computer Use 最佳实践](ch01/1215-anthropic-computer-use.html)

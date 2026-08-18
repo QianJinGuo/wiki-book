@@ -169,7 +169,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 
 ## 相关实体
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/084-claude-code.html)
-- [Claude Code Openclaw Usage Ettin](../ch09/041-claude-code-openclaw-usage-ettin.html)
+- [Claude Code Openclaw Usage Ettin](../ch09/042-claude-code-openclaw-usage-ettin.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/065-harness-engineering.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/084-claude-code.html)
 - [Skill System Design Three Way Comparison](../ch04/348-skill.html)

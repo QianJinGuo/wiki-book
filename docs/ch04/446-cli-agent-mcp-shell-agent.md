@@ -72,7 +72,7 @@ CLI Agent 要进入生产，可靠性工程是分水岭，涉及五个维度：
 - [Agent-EvalKit：AWS 开源 CLI Agent 评测工具包](../ch03/037-agent.html)
 - [CLI-Anything：让 Agent 自主驱动任意 GUI 软件](../ch03/105-cli-anything.html)
 - [AI Agent 的内核是 250 行 while 循环：用 Python + Ollama 从零搭建 CLI Agent 的 7 阶段教程](ch04/485-python.html)
-- [MCP Protocol](../ch07/094-mcp-protocol.html)
+- [MCP Protocol](../ch07/095-mcp-protocol.html)
 - [为什么 Agent 时代大家都在做 CLI——CLI/MCP/SKILL 三层模型与 AI 友好设计](../ch03/037-agent.html)
 - [Harness Engineering 核心模式](../ch05/065-harness-engineering.html)
 

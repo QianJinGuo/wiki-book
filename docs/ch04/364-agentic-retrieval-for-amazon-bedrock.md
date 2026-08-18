@@ -59,7 +59,7 @@ Agentic Retrieval 之前，团队通常基于 Retrieve API 构建自定义 Agent
 - 安全模型需要自行实现（规划模型的 IAM 权限、检索结果的访问控制）
 - 可观测性需要从零搭建
 
-Agentic Retrieval 将这些统一为服务端能力，借助 AWS 的 IAM 集成和 CloudWatch 日志，安全模型和可观测性开箱即用。这体现了 [Bedrock 平台化](../ch11/309-amazon-bedrock.html) 的核心理念——让开发者专注业务逻辑，而非基础设施编排。
+Agentic Retrieval 将这些统一为服务端能力，借助 AWS 的 IAM 集成和 CloudWatch 日志，安全模型和可观测性开箱即用。这体现了 [Bedrock 平台化](../ch11/310-amazon-bedrock.html) 的核心理念——让开发者专注业务逻辑，而非基础设施编排。
 
 ### 多知识库路由的关键设计约束
 
@@ -89,7 +89,7 @@ Agentic Retrieval 的多 KB 路由功能依赖一个精妙的设计：retriever 
 - Agentic RAG 模式
 - [RAG 分块-向量化-重排管线](../ch01/1284-rag.html)
 - [Bedrock AgentCore 运行时](ch04/660-amazon-bedrock-agentcore.html)
-- [Bedrock 跨区域推理](../ch11/309-amazon-bedrock.html)
+- [Bedrock 跨区域推理](../ch11/310-amazon-bedrock.html)
 - RAG 框架对比
 - [三种 RAG 架构](ch04/742-agentic.html)
 - RAG 检索增强生成

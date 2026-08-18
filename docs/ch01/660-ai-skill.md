@@ -33,7 +33,7 @@ SkillsBench研究：84个任务中19%出现负向增益。
 → [AI Skill 测评体系：从零到一](../ch07/011-ai-skill-evolution.html)（系列主框架）
 
 ## 相关实体
-- [Agentic AI 系统架构与分层模型](../ch05/126-harness-skill.html)
+- [Agentic AI 系统架构与分层模型](../ch05/127-harness-skill.html)
 - [Hermes Agent Skill 系统深度解析](../ch07/019-hermes-skill.html)
 
 - [Skill工程化设计：把Agent当算法用](../ch04/348-skill.html)

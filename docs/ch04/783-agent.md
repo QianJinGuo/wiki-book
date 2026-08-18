@@ -1,38 +1,25 @@
-# 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
+# 火山引擎开源 Agent 驱动的搜索自迭代技术
 
-## Ch04.783 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
+## Ch04.783 火山引擎开源 Agent 驱动的搜索自迭代技术
 
-> 📊 Level ⭐⭐ | 2.7KB | `entities/doubao-search-agent-claude-code-datawhale-2026.md`
+> 📊 Level ⭐⭐ | 2.8KB | `entities/火山引擎开源-agent-驱动的搜索自迭代技术.md`
 
-# 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
+# 火山引擎开源 Agent 驱动的搜索自迭代技术
 
-做 Agent 不能只靠基础模型——模型知识停在训练截止日，需要搜索工具提供实时、可信的信息输入。
+> WeChat-字节跳动技术团队 | 发布于 2026-07-29 | 评分入库 v×c≥49
 
-## 第 1 来源 — 豆包搜索 + Claude Code 实测（2026-07-28）
+## 核心内容
 
-豆包搜索与 Claude Code 结合的实测：Agent 通过搜索获取训练截止日之后的新信息，弥补基础模型的知识边界。核心结论是 Agent 的信息获取必须依赖可信搜索，而非模型存量知识。
+Viking AI 搜索 2026-07-29 18:00 北京 会调用搜索，只是 Agent 搜索能力的第一步。更难的是：当结果不好时，它能不能找到改进方向，并通过一轮轮实验把搜索变好？ 假设你刚上线一个商品搜索应用：搜品牌、品类和型号基本正常，但用户输入“适合通勤的轻便双肩包”，结果就开始跑偏。 你提高语义召回权重，长句理解变好了，精确型号词却可能变差；提高关键词匹配门槛，前几条结果更准了，零结果又开始增加；放大候选集，召回更多了，噪声和延迟也可能随之上升。 很多搜索项目都会遇到类似的调优困境。问题不是没有参数可调，而是这些参数彼此影响：一次看似简单的修改，往往同时改变召回、排序、零结果率和延迟。要判断一组策略是否真的更好，还需要准备 Query、批量搜索、相关性标注、离线评测和 Bad Case 分析。 过去，这套工作依赖搜索专家反复试验。每一轮都能做，但很难低成本、可复现地持续做。 于是我们开始思考：既然 Agent 已经能够理解目标和调用搜索，它能不能再向前一步——根据当前数据和 Query 分布，自动提出候选策略，用实验验证收益，并告诉开发者“为什么这组配置更好”？ 围绕这个问题，火山引擎在开源项目 SearchCLI 中开放了 vs search tune。开发者提供应用、数据集和 Query Set 后，Agent 可以调用它完成 Query 校验、实验规划、候选策略生成、批量搜索、相关性标注、指标计算、结果对比和候选 Scene 创建。 在服饰商品、综合商品和图片内容等三个业务数据集的阶段性离线评测中，自动调优策略相较默认策略，NDCG@20 提升 11.66。
 
-## 第 2 来源 — 豆包搜索走出豆包（2026-08-06，vxc=56）
+## 关键要点
 
-豆包 APP 里的搜索能力正在走出豆包，进入面向企业和开发者的 Agent 场景。与只返回网页入口的搜索不同，豆包搜索返回的不只是链接，还包括 Agent 判断"资料能不能用"所需的关键字段：
+- 原文完整记录：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/火山引擎开源-agent-驱动的搜索自迭代技术.md)
+- 关联主题：[Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)、[Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)、[Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
 
-- **信源名称 + 权威分级**：每条结果带来源评级，Agent 可判断资料是否可靠
-- **发布时间**：判断信息是否足够新（针对新事件、新版本、新价格）
-- **围绕当前问题生成的正文摘要**：无需打开页面即可提取要点
-- **可直接引用的原文 Markdown 节选**：Agent 直接引用原文片段
+## 相关实体
 
-以菲尔兹奖查询为例：豆包搜索返回 3 条直接相关资料（政府官网转载、科技日报、西蒙斯基金会），每条都带权威分级和原文节选——Agent 先利用权威分级和发布时间判断资料可用性，再从摘要和节选中提取获奖名单、研究贡献、媒体评价。这省去了"打开页面→理解正文→抽取信息"的中间反复读取环节。
-
-## 与 Wiki 现有知识的关联
-
-- 搜索增强 Agent 的信息可信度：引用分级与信源标注（`grounded-citations` 主题）
-- Agent 工具调用：[Agent Loop Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md)、[MCP 协议生态](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
-- RAG 数据接入：[Agentic AI Data Mesh](ch04/117-agentic-ai.html)
-
-## 来源
-
-- 原文 1: [最新发布！豆包搜索+Claude Code实测来了](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/doubao-search-agent-claude-code-datawhale-2026.md)
-- 原文 2: [豆包搜索，走出了豆包](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/豆包搜索走出了豆包.md)
+[Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md) [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) [Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 
 ---
 
