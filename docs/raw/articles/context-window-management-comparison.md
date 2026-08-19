@@ -11,17 +11,7 @@ review_recommendation: STRONG
 source: 高可用架构
 author: Aparna Dhinakaran (Arize AI)
 published: 2026-04-26
-tags: [agent, harness, context-management, context-window, compaction, subagent-isolation, pi-mono, openclaw, claude-code, memory]
-  - agent
-  - harness
-  - context-management
-  - context-window
-  - compaction
-  - subagent-isolation
-  - pi-mono
-  - openclaw
-  - claude-code
-  - letta
+tags: [agent, harness, context-management, context-window, compaction, subagent-isolation, pi-mono, openclaw, claude-code, memory, agent, harness, context-management, context-window, compaction, subagent-isolation, pi-mono, openclaw, claude-code, letta]
 created: 2026-05-10
 updated: 2026-05-10
 ---

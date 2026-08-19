@@ -1,5 +1,5 @@
 ---
-source_url: "https://hustvl.github.io/Moebius/""
+source_url: "https://hustvl.github.io/Moebius/"
 ingested: 2026-06-26
 sha256: 975e840e3e3d16be
 ---

@@ -1324,7 +1324,7 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ## Ch20.008 人机对齐？不，是人正在向机器对齐
 
-> 📊 Level ⭐⭐ | 10.3KB | `entities/human-aligning-to-machine-reverse-alignment-2026.md`
+> 📊 Level ⭐⭐ | 10.4KB | `entities/human-aligning-to-machine-reverse-alignment-2026.md`
 
 # 人机对齐？不，是人正在向机器对齐
 

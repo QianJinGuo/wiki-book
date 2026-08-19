@@ -1,5 +1,5 @@
 ---
-source_url: "https://brandur.org/minimum-viable-unit""
+source_url: "https://brandur.org/minimum-viable-unit"
 ingested: 2026-06-26
 sha256: 286563789dc75518
 ---

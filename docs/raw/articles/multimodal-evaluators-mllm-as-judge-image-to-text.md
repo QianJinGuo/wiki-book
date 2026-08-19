@@ -1,5 +1,5 @@
 ---
-title: Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
+title: "Multimodal evaluators"
 type: raw-article
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/multimodal-evaluators-mllm-as-a-judge-for-image-to-text-tasks-in-strands-evals/

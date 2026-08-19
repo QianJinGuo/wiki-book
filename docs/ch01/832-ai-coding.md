@@ -62,7 +62,7 @@ AI Coding 不应该以采纳率为指标——只要工程师坚持不写任何�
 
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 - [Token 不经济](../ch12/002-token.html)
-- [Claude Code 深度架构分析](../ch03/084-claude-code.html)
+- [Claude Code 深度架构分析](../ch03/085-claude-code.html)
 - [AI 编码效率分析](../ch05/125-ai-coding.html)
 - [Spec Kit 实践](ch01/1213-spec.html)
 

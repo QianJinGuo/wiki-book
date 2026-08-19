@@ -30,7 +30,7 @@ PhyEdit 还能把一次编辑变成连续动作：给出三维轨迹后，在轨
 
 ## 相关
 
-- [PhyEdit 英文条目](ch01/1296-3d.html) — 本实体对应的英文条目
+- [PhyEdit 英文条目](ch01/214-3d.html) — 本实体对应的英文条目
 - [Nano Banana 系列](ch01/1560-nano-banana-2-lite-gemini-omni-flash-google-deepmind.html) — ManipEval 对比对象
 - [视频生成模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/video-generation-models.md) — 连续动作编辑依赖视频模型插值
 

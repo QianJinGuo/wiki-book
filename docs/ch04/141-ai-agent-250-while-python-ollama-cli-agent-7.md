@@ -236,7 +236,7 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 
 本文是 **"Learning by Building" 风格**的最小可运行参考：
 
-- [从零复刻 Claude Code](../ch03/084-claude-code.html) — ConardLi 的 30 模块**路线图**（roadmap）
+- [从零复刻 Claude Code](../ch03/085-claude-code.html) — ConardLi 的 30 模块**路线图**（roadmap）
 - 本文 — 7 模块**完整可运行实现**（minimal 250-line implementation with Ollama）
 - [Harness Engineering 框架](../ch05/065-harness-engineering.html) — Anthropic/OpenAI 抽象框架
 - [Claude Code Harness 深度理解](../ch01/638-claude-code-harness-deep-understanding.html) — 生产级深度

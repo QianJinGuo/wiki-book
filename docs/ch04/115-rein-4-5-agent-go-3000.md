@@ -230,11 +230,11 @@ WithWorkingDir(cwd)            // 工作目录
 
 ## 与现有 wiki 实体的关系
 
-### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](../ch03/084-claude-code.html)）
+### vs Claude Code 源码分析（[Claude Code 20000 Char Source Analysis](../ch03/085-claude-code.html)）
 - Claude Code 98.4% 基础设施 + 1.6% AI 决策
 - Rein 用 4 模块 + 5 类型边界把 3000 行结构化
 
-### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](../ch05/042-agent-harness.html)）
+### vs Agent Harness 上下文管理（[Agent Harness Context Management Working Set](../ch05/043-agent-harness.html)）
 - 工作集视角：logical_messages 原样保留 + 投影 = Rein 的"存储完整，发送压缩"
 
 ### vs wow-harness v3 事件溯源（[Wow Harness V3 Governance Protocol](../ch05/077-harness.html)）
@@ -292,12 +292,12 @@ WithWorkingDir(cwd)            // 工作目录
 - **评估框架时关注流式等价性保证**：如果一个 provider 声称支持流式但无法保证 Stream() 和 Complete() 产出完全一致的 Message，这个 provider 就不满足 Rein 的 invariants。流式和非流式路径必须等价——这是 session 回放确定性的基础，也是你选型时最重要的技术指标之一 
 
 ## 相关对照
-- [Claude Code 20000 字符源码分析](../ch03/084-claude-code.html)
-- [Agent Harness 上下文管理](../ch05/042-agent-harness.html) —— 工作集视角
+- [Claude Code 20000 字符源码分析](../ch03/085-claude-code.html)
+- [Agent Harness 上下文管理](../ch05/043-agent-harness.html) —— 工作集视角
 - [wow-harness v3](../ch05/077-harness.html) —— 事件溯源 + 概念图
 - [PilotDeck](../ch03/037-agent.html) —— 白盒记忆
-- [Agent Harness 架构](../ch05/042-agent-harness.html) —— 7 层 harness 模型
-- [17 种 agent 架构演进](ch04/800-17-agent.html) —— 类型边界视角
+- [Agent Harness 架构](../ch05/043-agent-harness.html) —— 7 层 harness 模型
+- [17 种 agent 架构演进](ch04/802-17-agent.html) —— 类型边界视角
 - [Agent 工程原则](../ch03/037-agent.html) —— 模块化设计实践
 - [短期记忆压缩](../ch06/030-tencentdb-agent-memory.html) —— 投影压缩对比
 

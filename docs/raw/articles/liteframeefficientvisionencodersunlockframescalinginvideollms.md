@@ -1,5 +1,5 @@
 ---
-title: LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
+title: "LiteFrame"
 type: raw-article
 tags: [google, llm, malware, optimization, vision]
 source: rss

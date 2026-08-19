@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.papermtn.co.uk/detecting-misuse-with-the-claude-compliance-api-the-threat-is-in-the-content""
+source_url: "https://www.papermtn.co.uk/detecting-misuse-with-the-claude-compliance-api-the-threat-is-in-the-content"
 ingested: 2026-06-26
 sha256: ad3d9547a2f59298
 ---

@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open""
+source_url: "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open"
 ingested: 2026-06-26
 sha256: d50a677960bb8a40
 ---

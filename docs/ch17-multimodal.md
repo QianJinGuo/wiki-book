@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **65 篇**实体，按深度递增排列。
+> 本章收录 **67 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 41 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 43 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
@@ -781,6 +781,8 @@ PosterReward 的工程实现分为两条互补路径：
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/llava-onevision-2-full-frame-rate-vlm.md`
 
+provenance_state: inferred
+confidence: 0.8
 ## 核心问题
 **视频被当作一组图片处理——巨大的浪费。**
 
@@ -4028,7 +4030,98 @@ ABR 不只是简单的码率切换机制，而是服务端和客户端协同的�
 
 ---
 
-## Ch17.046 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.046 SemVID：面向视频时序定位的训练免费 Token 剪枝（Evidence Chain）
+
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/semvid-vtg-evidence-chain-token-pruning-eccv2026.md`
+
+# SemVID：面向视频时序定位的训练免费 Token 剪枝（Evidence Chain）
+
+> **背景**：本文基于 PaperWeekly 对 ECCV 2026 论文《Keeping the Evidence Chain: Semantic Evidence Allocation for Training-Free Token Pruning in Video Temporal Grounding》的解读。核心洞察是：视频时序定位（VTG）的 token 剪枝不能照搬 VideoQA 的剪枝逻辑——VTG 需要的不只是"保留相关画面"，而是"保一条能支撑时间定位的证据链"。
+
+## 摘要
+
+SemVID 是一个面向 Video Temporal Grounding（VTG）的 training-free token pruning 框架。长视频理解中，visual tokens 越多推理成本越高，直接思路是剪掉一部分视觉 token；但 VTG 的目标是定位"事件从什么时候开始、到什么时候结束"，模型不仅要看到 query 相关对象，还要看到动作前后的状态变化。SemVID 的核心观点是：VTG 剪枝不是简单删掉"不重要画面"，而是要保住一条支撑时间定位的 evidence chain——事件边界附近的 token 负责"变化从这里开始和结束"，中间的 relay token 负责连接前后状态，一旦中间节点被剪掉，证据链断裂，语义理解还在但时间定位变差。
+
+## 核心要点
+
+- **VideoQA 剪枝 vs VTG 剪枝的根本差异**：VideoQA 回答"视频里有什么/人物在做什么"，往往只需少数关键帧即可答对；VTG 要定位"什么时候开始/结束"，必须看到动作前后的状态变化。VideoQA 剪枝问"哪些画面够回答问题"，VTG 剪枝问"哪些证据能支撑时间定位"。
+- **Evidence Chain 动机**：事件往往不是由最显著的几帧决定，而是由一系列状态变化共同定义。事件边界附近的 token 告诉模型"变化从这里开始和结束"，中间的 relay token 连接前后状态。
+- **两个面向 VTG 的剪枝目标**：Evidence Retention——保留与 query 语义高度相关的 token，尤其是事件边界附近的关键证据；Connectivity Strength——保留跨帧连接，让证据能沿时间传播而不是变成孤立碎片。
+- **两步框架**：第一步决定每帧保留多少 token——同时考虑 query 相关度与帧间变化两个信号（相关帧含目标事件，变化帧靠近动作转折或事件边界，保证预算覆盖完整时间轴）；第二步在每帧内选择具体 token，显式保留三类语义角色。
+
+## 三类语义角色：Object / Motion / Context
+
+- **Object token**：保留与 query 相关的对象证据，回答"发生了什么"。用 MMR 防止反复选中同一物体附近的 patch，让选出的 object token 既相关又互补。
+- **Motion token**：保留动作转折，回答"什么时候发生变化"。根据相邻帧局部特征变化选择，结合相关度过滤与 query 无关的背景运动——它们不是普通运动区域，而是连接事件前后状态的 relay node。
+- **Context token**：保留场景锚点，回答"证据发生在什么环境中"。极端剪枝下少量 context anchor 维持场景连续性，帮助模型把对象和动作放回正确语境。
+
+## 实验验证
+
+在 Charades-STA 和 ActivityNet-Grounding 上使用 Qwen3-VL 与 Qwen2.5-VL 评测。相同 token 预算下，SemVID 在 mIoU（定位精度）、ER（关键证据保留）、CS（证据跨帧连接）上整体优于现有剪枝方法，尤其在低保留率下仍能稳定保持较高 mIoU。消融实验印证动机：去掉 Object Token → mIoU/ER 下降（对象证据是定位基础）；去掉 Motion Token → mIoU/CS 下降最明显（动作变化 token 是连接前后状态的关键 relay）；去掉 Context Token → CS 下降（场景锚点维持时间连续性）。可视化显示，相比 VisionZip 和 FastVID，SemVID 即使在 12.5% 极低预算下仍能稳定聚焦动作前后的语义相关区域。
+
+## 实践启示
+
+1. **剪枝目标必须与下游任务对齐**：VideoQA 和 VTG 对"什么值得保留"的回答完全不同——剪枝方法的有效性不是绝对的，而是相对任务定义的。为 VTG 这类时序定位任务设计剪枝时，连通性（evidence chain）与局部相关性同等重要。
+2. **语义角色分解可作为通用模板**：Object/Motion/Context 三类角色对应"发生了什么 / 何时变化 / 在哪发生"，这套分解可迁移到其他需要时序证据保持的视频理解任务。
+3. **training-free 的价值**：不重新训练 backbone、只在推理阶段决定保留哪些 token，意味着可即插即用地接入现有视频理解模型（Qwen-VL 系列）降本增效。
+4. **已知局限**：motion token 依赖帧间特征变化刻画运动，在镜头移动、背景剧烈变化或遮挡较多场景中仍可能受干扰。
+
+## 相关实体
+
+- [视频生成模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/video-generation-models.md)
+- [视觉语言模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/vision-language-models.md)
+- [A2RD Agentic 自回归扩散长视频](https://github.com/QianJinGuo/wiki/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
+- [ARD 长视频一致性](https://github.com/QianJinGuo/wiki/blob/main/entities/ard-agentic-autoregressive-diffusion-for-long-video-consistency.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semvid-vtg-evidence-chain-token-pruning-eccv2026.md)
+
+---
+
+## Ch17.047 Beyond Pixels / Latent-to-4D：从视频 latent 直接走向 4D 世界（浙大）
+
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/beyond-pixels-latent-to-4d-zju-video-dit.md`
+
+# Beyond Pixels / Latent-to-4D：从视频 latent 直接走向 4D 世界（浙大）
+
+> **背景**：本文基于新智元对 ReLER、CCAI、浙江大学团队论文《Beyond Pixels》的解读（arxiv 2608.10744）。核心洞察：视频生成模型在 latent 空间已学到外观、运动与空间线索，这些线索能否不经过像素、直接转化为动态三维几何？答案是 Latent-to-4D——绕过"生成 latent → RGB 视频 → 重建特征 → 4D 几何"的多余翻译往返。
+
+## 摘要
+
+Beyond Pixels 提出 Latent-to-4D 框架，把视频 DiT 最终去噪的 VAE latent 直接作为显式 4D 预测的输入，通过 Latent-to-4D Alignment and Refinement（L4AR）网络把视频 latent 翻译成结构化 4D latent，再由预训练 4D 解码器输出相机与动态世界空间点图。传统路线是"先生成再重建"（latent→RGB→4D），每次跨过表示边界都可能损失信息，且生成器与重建器训练数据分布不同，生成伪影会被重建模型固化为几何孔洞。Latent-to-4D 的关键洞察是：不同视频 DiT 只要共用同一套 VAE 规范，其最终 latent 就处于同一种表示空间中，从而"DiT 可以不同，但说着同一种 latent 语言"。
+
+## 核心要点
+
+- **为什么绕 RGB 是多余的**：视频 DiT 在 latent 空间去噪，VAE Decoder 把 latent 解码成 RGB，再由独立 4D 重建模型读像素恢复几何。这条"翻译往返"（生成 latent→RGB→重建特征→4D）每跨一次表示边界都损失信息，且生成器与重建器见过不同数据，生成视频的伪影会被重建模型"固化"为几何孔洞、破碎表面和不稳定运动。
+- **shared VAE = 统一 latent 语言**：不同视频 DiT 未必有相同架构/参数量/条件输入，但可能共享同一 VAE。只要 VAE checkpoint、latent 归一化、张量布局、压缩规范和 latent shape 一致，这些 DiT 最终生成的 latent 就处于同一种表示空间——而这个最终 latent 已包含画面内容、主体运动、镜头变化，且位于 RGB 解码之前。
+- **L4AR 三步跨表示翻译**：(1) 三线性重采样把视频 latent 调整到 4D 解码器时空分辨率 + 可学习 3D 卷积投影到 4D token 特征维度（初始对齐聚合局部运动与外观证据）；(2) 交替使用 Frame Attention（单帧内整理空间结构）与 Global Attention（跨时空 token 交换信息，连接跨帧运动/镜头变化/长距离对应）；(3) 4D Decoder 预测每帧相机、深度与世界空间射线，组合成统一坐标系中的动态点图。
+
+## 训练与推理：一次"无缝换源"
+
+训练阶段不需要运行视频 DiT——用冻结的 Wan VAE 编码已有重建视频得到 observed-video latent，用已有相机/几何标注训练 latent-to-4D 下游路径。视频生成器、VAE、预训练 4D 模型原始权重全部冻结，主要更新 latent 对齐模块、基于 LoRA 的轻量时空细化参数、相机与几何预测头。推理阶段只做一次替换：把真实视频编码得到的 latent 换成兼容视频 DiT 生成的最终去噪 latent，后续 L4AR 与 4D Decoder 完全不变，不做测试时适配。文本/图像/姿态/轨迹条件共用同一条路径，因为条件已被视频模型"实现"在最终 latent 中。
+
+## 关键数据
+
+- **一个 checkpoint 横跨三种 DiT**：最终训练阶段只用约 1K 条已有重建视频，同一 checkpoint 原样接入 Wan2.1-T2V-14B、Wan2.1-T2V-1.3B、Wan2.2-I2V-A14B（不同规模 Text-to-Video 与 Image-to-Video 模型，共享同一 Wan VAE），切换 DiT 不重新训练、不加条件分支、不做测试时微调。
+- **same-latent 严格对比**：与 Wan+4RC 基线（latent→RGB→4D 重建）使用完全相同的生成 latent。在 Text4D-200（200 个文本条件案例）与 I4D-200（200 个图像条件案例）评测中，Image-to-4D 测试全部指标排名第一。14B 与 1.3B 两个 Text-to-Video DiT 接入同一 checkpoint 后 DINO-F1 分别为 57.01 与 57.09，结果非常接近——为"共享 VAE latent 可成为统一接口"提供直接证据。
+
+## 实践启示
+
+1. **latent 空间可作为跨模型统一接口**：与其在像素层做可组合但误差传播的重建，不如在 VAE latent 层找一个所有生成模型共享的接口。shared-VAE 前提让"训练一次、多 DiT 通用"成为可能。
+2. **冻结 + 轻量适配的规模化路径**：训练阶段不跑视频 DiT、只更新 LoRA 时空细化 + 预测头，把昂贵的 4D 几何监督需求压到 1K 条数据，是数据稀缺场景下的高效范式。
+3. **生成与理解的解耦**：视频模型负责"想象内容和运动"，Latent-to-4D 提供统一 4D 出口——这种关注点分离让生成能力（多 DiT）与几何理解（单一 4D 解码）各自演进。
+
+## 相关实体
+
+- [视频生成模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/video-generation-models.md)
+- [4D WAM 世界动作模型](https://github.com/QianJinGuo/wiki/blob/main/entities/4d-wam-world-action-model-3d-trajectory-alignment-2026.md)
+- [TryOnCrafter 4D 试衣](https://github.com/QianJinGuo/wiki/blob/main/entities/eccv26-为视频虚拟试衣解锁自由视角tryoncrafter玩转4d试衣代理.md)
+- [CurrentWorld-0 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/beyond-pixels-latent-to-4d-zju-video-dit.md)
+
+---
+
+## Ch17.048 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
 
@@ -4115,7 +4208,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ---
 
-## Ch17.047 ai视频工具悄悄走到了第三阶段
+## Ch17.049 ai视频工具悄悄走到了第三阶段
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/ai视频工具悄悄走到了第三阶段.md`
 
@@ -4169,7 +4262,7 @@ RHTV作为第三阶段的先行者，其「画布原生」路线可能会对赛�
 
 ---
 
-## Ch17.048 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.050 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 5.6KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
@@ -4212,7 +4305,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.049 Stable Audio 3.0 开源音频生成模型
+## Ch17.051 Stable Audio 3.0 开源音频生成模型
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/stable-audio-3.md`
 
@@ -4269,7 +4362,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.050 PhyEdit：显式 3D 几何 Preview 指导 DiT 图像编辑（浙大 ReLER，ACM MM 2026）
+## Ch17.052 PhyEdit：显式 3D 几何 Preview 指导 DiT 图像编辑（浙大 ReLER，ACM MM 2026）
 
 > 📊 Level ⭐⭐⭐ | 4.9KB | `entities/phyedit-explicit-3d-geometry-preview-image-editing-acm-mm26-2026.md`
 
@@ -4314,7 +4407,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.051 扩散模型视觉生成一致性框架（2026 综述）
+## Ch17.053 扩散模型视觉生成一致性框架（2026 综述）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
 
@@ -4378,7 +4471,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.052 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+## Ch17.054 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
 
@@ -4444,7 +4537,7 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.053 FLUX 3 — Black Forest Labs 多模态流模型
+## Ch17.055 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -4506,7 +4599,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.054 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.056 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -4548,7 +4641,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.055 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.057 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
@@ -4591,7 +4684,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.056 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+## Ch17.058 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
@@ -4628,7 +4721,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.057 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.059 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4672,7 +4765,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.058 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.060 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4717,7 +4810,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.059 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.061 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4745,7 +4838,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.060 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
+## Ch17.062 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
 
 > 📊 Level ⭐⭐⭐ | 2.5KB | `entities/douyin-dme-multimodal-embedding-multimodal-retrieval.md`
 
@@ -4775,7 +4868,7 @@ DME 代表多模态表征从「纯检索排序信号」向「承载非对称语�
 
 ---
 
-## Ch17.061 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
+## Ch17.063 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md`
 
@@ -4801,7 +4894,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.062 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
+## Ch17.064 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
 
 > 📊 Level ⭐⭐⭐ | 2.2KB | `entities/eccv26-oral人物不能变姿势要对齐风格还得一致dyref突破多参考约束下的图像生成难题.md`
 
@@ -4825,7 +4918,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.063 Qwen-Image-3.0 — 落字成画，字字如印
+## Ch17.065 Qwen-Image-3.0 — 落字成画，字字如印
 
 > 📊 Level ⭐⭐⭐ | 1.4KB | `entities/qwen-image-30落字成画字字如印.md`
 
@@ -4847,7 +4940,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.064 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.066 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -4971,7 +5064,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.065 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.067 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

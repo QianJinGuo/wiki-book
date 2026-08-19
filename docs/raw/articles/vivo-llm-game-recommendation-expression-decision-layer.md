@@ -3,7 +3,7 @@ source_url: https://mp.weixin.qq.com/s/3iyTrjiKiSj9xd7VtczO4A
 ingested: 2026-07-08
 sha256: cddf4bf572cfe3f8c48e1160adae6c0e2f123c3cb54ea8285165cc4bbcb4e259
 source_published: 2026-07-08
-title: "当 AI 进入推荐系统：从"推什么"到"怎么选""
+title: "当 AI 进入推荐系统：从\"推什么\"到\"怎么选\""
 author: vivo互联网产品团队 - Wang Yuxi
 feed_name: vivo互联网技术
 ---

@@ -1,5 +1,5 @@
 ---
-title: "从"自己造轮子"到"OpenAPI 嵌进来"：精臣全栈上云后的智能运维底座之选"
+title: "从\"自己造轮子\"到\"OpenAPI 嵌进来\"：精臣全栈上云后的智能运维底座之选"
 source_url: "https://mp.weixin.qq.com/s/1q74ne0yoFYJzlFPd8WrzQ"
 author: 阿里云云原生 / 白玙、左知、四拾
 platform: WeChat

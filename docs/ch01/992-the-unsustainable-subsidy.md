@@ -82,10 +82,10 @@ Anthropic 的定价策略最为保守。Claude Opus 4.7 维持了 $5/$25 的高�
 
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
-- [Langgraph State Machine Under The Hood](../ch04/269-langgraph.html)
-- [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/432-deepseek-v4.html)
+- [Langgraph State Machine Under The Hood](../ch04/271-langgraph.html)
+- [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/1379-deepseek-v4.html)
 - [Minimax Agent Team Mavis Owner Worker Verifier](ch01/1531-owner-worker-verifier.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/778-anthropic.html)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](ch01/779-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tomtunguz-ai-model-inflation.md)
 

@@ -1,5 +1,5 @@
 ---
-title: The Future of BMW Design: A Conversation with Max Missoni
+title: "The Future of BMW Design"
 source: newsletter
 source_url: https://coolhunting.com/design/the-future-of-bmw-design-a-conversation-with-max-missoni/
 fetcher: jina

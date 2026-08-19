@@ -885,7 +885,68 @@ SFT→DPO 两阶段之间可能有数小时的调试和评估间隙。设置 kee
 
 ---
 
-## Ch15.011 xai解散但grok还没死马斯克声称新模型正在训练
+## Ch15.011 Is One Layer Enough? 单层 RL 训练可超越全参数训练
+
+> 📊 Level ⭐⭐ | 8.1KB | `entities/rl-single-layer-training-full-parameter.md`
+
+# Is One Layer Enough? 单层 RL 训练可超越全参数训练
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rl-single-layer-training-full-parameter.md)
+
+> 明尼苏达大学、北京大学和 Amazon 团队在 arxiv 2607.01232 中，通过系统性逐层研究揭示：RL 后训练的收益高度集中在 Transformer 中间层（深度 40–60%），训练单个层即可匹敌甚至超越全参数 RL 训练——这从根本上挑战了「能力提升需要整个网络协调适应」的隐含假设。
+
+## 摘要
+
+现有 RL 后训练（GRPO、Dr. GRPO、GiGPO）统一更新所有层，隐含假设每层贡献均等。该团队提出层贡献度 C(k) 逐层量化单层「学习能力」，发现 RL 收益高度集中在一小部分中间层，且该结构在 7 个模型、2 个家族、3 种算法、3 个任务领域间高度一致，是预训练模型的内在属性。
+
+由此得到双重含义：每个被测试模型的最佳单层均达到甚至超越全参数（C ≥ 1.0），说明 RL 对模型的修改远比想象的局部化；而基于层贡献度的三种训练策略全部稳定超越全参数基线，暗示标准的全参数 RL 训练本身可能次优。
+
+## 核心要点
+
+- **层贡献度 C(k)**：冻结除第 k 层外的全部参数（含 Embedding 与 LM Head），仅对该层做 RL，以 C(k) = (S_k − S_base)/(S_full − S_base) 度量；C(k) > 1.0 即单层超越全参数。梯度仍全网络反传，仅参数更新受限，隔离单层自身学习能力。
+- **中间层主导**：所有 7 个模型中深度 40–60% 的层贡献最高，近输入/输出端显著偏低。
+- **4 倍差距**：Qwen3-1.7B 最佳 Layer 10 达 C = 1.14（超越 14%），最差 Layer 24 仅 C = 0.28，最好与最差层相差超 4 倍。
+- **每个模型最佳单层均 C ≥ 1.0**：单层匹敌或超越全参数并非个案，而被 7 个模型一致复现。
+- **贡献 ≠ 权重变化幅度**：全参数下各层 L2 变化均匀（0.5–0.8），单层训练下高低贡献层变化幅度相近（0.8–1.0）却结果迥异——C(k) 反映参数子空间捕获 RL 改进的有效性，而非更新量。
+- **结构高度一致**：跨数据集（ρ = 0.76）、跨任务（数学 vs 代码，ρ = 0.59）、跨算法、跨领域（数学小幅适应 vs 智能体 66–84 个百分点的大幅习得）均保持「中间高、两端低」。
+- **全参数 RL 可能次优**：冻结低贡献层后性能反超全参数，低贡献层的更新更多是引入噪声、干扰高贡献层学习。
+
+## 深度分析
+
+### C(k)：把「收益来源」锚定到具体层的方法论
+
+C(k) 的巧思在于用「冻结 + 单层更新」把问题压缩成干净的单变量实验：冻结除第 k 层外所有参数，只允许该层被优化，但梯度计算仍贯穿整个网络——每一层都在相同表征与损失环境下被单独检验，唯一变化的是「哪一层能吸收这次更新」。收益按 C(k) 归一化到全参数基线：等于 1 表示复现全部收益，大于 1 则单层干得比全员参与更好。作者还先为全参数基线调优到最优学习率，再沿用至所有单层，并通过学习率消融验证其不翻转层排序——这让 4 倍差距是纯结构性、可严格归因的。
+
+### 为什么是中间层：40–60% 深度是「意义承载区」
+
+Transformer 功能沿深度分层：底层做 token 级局部句法与低层特征提取，顶层贴近输出空间、把抽象表征「读出」为具体任务分布，而中层恰是跨词跨句的抽象推理特征最集中的「语义整合平台」。RL 奖励（尤其 RLVR 对整条推理链的评估）针对最复杂的高阶认知，因此最能从中层抽象表征榨取收益；同时底层须保持稳定以保基础表征，近输出端参数空间则像「浅层适配器」、承载有限，于是「中间高两端低」近乎必然。跨任务排序相关（数学 vs 代码 ρ = 0.59）更表明这些承重子空间编码的是预训练已铺设好的跨技能抽象能力，RL 只是在其上拧旋钮。
+
+### 反直觉：贡献不是「改了多少」，而是「改对了地方」
+
+最自然的猜想是中国层贡献高只因参数变化最大，但 ‖Δθ_k‖₂ 测量否定了它。全参数训练下各层权重变化均匀（0.5–0.8），中间层并未动得更多，却在单独训练时贡献远超其他层——「变化均匀、贡献不均匀」直接脱钩。单层训练时，高低贡献层的权重变化幅度都落在 0.8–1.0（甚至比全参数更大，因须补偿冻结邻居），结果却天差地别。结论是 C(k) 量度的是「该层可到达的参数区域与 RL 提升方向的契合度」：某些子空间天生更擅长承载 RL 改进。这把 RL 后训练重新框定为「在特权子空间内做约束性重配置」而非盲目全局梯度下降。
+
+### 推论：标准的全参数 RL 可能是次优的
+
+既然收益集中，让所有层一起更新就值得审视：低贡献层既无正向贡献，其更新反而可能引入噪声、稀释整体提升。论文用选择性训练直接验证——只训练高贡献 top 层性能反超（Qwen3-8B top-10 → 69.11% vs 66.43%），只训练低贡献 k 层则大幅崩塌（Only W5：1.7B 46.87%、8B 62.04%）。方向不对称表明全参数配方里混入了一批「拖后腿」的层，其存在是净损失。这把 RL 后训练从「优化算法」拓展到「优化哪些层」。
+
+## 实践启示
+
+1. **目标层训练降低成本**：仅训练高贡献层即可匹敌/超越全参数，RL 后训练算力与时间开销可大幅压缩。
+2. **零分析启发式作为默认策略**：无需贡献度分析，直接选中间 5 层（28 层取 Layer 11–15，36 层取 Layer 15–19），所有规模均超全参数基线，适合新模型/新任务的低成本起点。
+3. **层自适应学习率是最小成本干预**：仅把高贡献层学习率从 5e-6 提到 1e-5（Qwen3-1.7B +2.88、Qwen3-8B +0.99）；提升低贡献层反而下降，证明增益来自贡献度引导而非学习率数值。
+4. **冻结低贡献层作为「净化」手段**：较大模型只训 top 层（Qwen3-8B 69.11% vs 66.43%），删去低贡献层噪声可得更干净的优化面。
+5. **把 C(k) 当作模型结构诊断工具**：连通 mechanistic interpretability 与训练效率，可预判模型哪些层承载 RL 收益并据此分配资源。
+
+## 相关实体
+
+- [2026 年面向 LLM 的 RL 方法总结](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 从 PPO 到 GRPO 的 RL 后训练全览
+- [Agentic RL 六框架实践地图](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — 长程智能体训练框架对比
+- [AWS GRPO/RLVR 数学推理实践](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — GRPO/RLVR 的真实推理落地
+- [AlphaXIV：RL 时代的强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaxiv-reinforcement-learning-for-rlms.md) — RL for LLM 的宏观方法迭代
+
+---
+
+## Ch15.012 xai解散但grok还没死马斯克声称新模型正在训练
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/xai-dissolved-grok-colossus2-analysis.md`
 
@@ -928,7 +989,7 @@ Grok对马斯克而言有三个战略价值：X平台AI能力的核心支柱、�
 
 ---
 
-## Ch15.012 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
+## Ch15.013 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
 
@@ -1007,7 +1068,7 @@ MiniCPM5-1B 的特殊之处：
 
 ---
 
-## Ch15.013 Notes on pretraining parallelisms and failed training runs.
+## Ch15.014 Notes on pretraining parallelisms and failed training runs.
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
 
@@ -1055,7 +1116,7 @@ GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数�
 
 ---
 
-## Ch15.014 untitled v2
+## Ch15.015 untitled v2
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/untitled.md`
 
@@ -1088,7 +1149,7 @@ RL 与 OPD 之所以表现出更强的抗遗忘能力，关键在于两者的训
 
 ---
 
-## Ch15.015 PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化可训练 mock Android 环境基础设施（机器之心解读）
+## Ch15.016 PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化可训练 mock Android 环境基础设施（机器之心解读）
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan-arxiv-2605-29486.md`
 
@@ -1145,7 +1206,7 @@ PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化�
 
 ---
 
-## Ch15.016 面壁让AI写了训练框架ForgeTrain，然后它自己训出了最强1B模型
+## Ch15.017 面壁让AI写了训练框架ForgeTrain，然后它自己训出了最强1B模型
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/minicpm5-1b-forgetrain-agh-hunt.md`
 
@@ -1203,7 +1264,7 @@ PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化�
 
 ---
 
-## Ch15.017 Rubrics 综述：LLM 训练与评测的显式质量接口
+## Ch15.018 Rubrics 综述：LLM 训练与评测的显式质量接口
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/rubrics-survey-llm-evaluation-ruc-nlpir-2026.md`
 
@@ -1260,54 +1321,6 @@ Rubrics 是**自然语言形式的多维评价标准**，将模糊的"好答案"
 - [RLVR](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md) 适合可验证任务，rubrics 适合开放式任务 → 互补覆盖
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rubrics-survey-llm-evaluation-ruc-nlpir-2026.md)
-
----
-
-## Ch15.018 Is One Layer Enough? 单层 RL 训练可超越全参数训练
-
-> 📊 Level ⭐⭐ | 3.1KB | `entities/rl-single-layer-training-full-parameter.md`
-
-# Is One Layer Enough? 单层 RL 训练可超越全参数训练
-
-> 明尼苏达大学、北京大学和 Amazon 团队在 arxiv 2607.01232 中揭示：RL 后训练的收益高度集中在 Transformer 中间层（40–60% 深度），训练单个层即可匹敌甚至超越全参数 RL 训练。
-
-## 核心发现
-
-RL 收益高度集中在 Transformer 网络的**中间层**（深度 40–60%），而非均匀分布在整个网络。这一规律在 7 个模型、2 个模型家族、3 种 RL 算法、3 个任务领域间保持高度一致，是**预训练模型的内在结构属性**。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rl-single-layer-training-full-parameter.md)
-
-### 层贡献度指标
-
-C(k) = (S_k − S_base) / (S_full − S_base)
-
-当 C(k) > 1.0 时，单层训练超越全参数 RL。在 Qwen3-1.7B 上，仅训练 Layer 10 达到 C = 1.14（超越全参数 14%），而最差的 Layer 24 仅 C = 0.28。同一模型内最好层和最差层差距超过 **4 倍**。
-
-### 层贡献度 vs 参数变化幅度
-
-关键洞察：层贡献度不是由参数变化幅度决定。全参数训练下各层权重变化均匀（L2 范数 0.5–0.8），单层训练时无论高低贡献层都经历相近幅度变化（0.8–1.0）。层贡献度反映的是**参数子空间捕获 RL 改进的有效性**。
-
-## 实用策略
-
-三种基于层贡献度的训练策略均持续超越标准全参数 RL：
-
-| 策略 | 方法 | Qwen3-1.7B | Qwen3-8B |
-|------|------|-----------|---------|
-| 层自适应学习率 | 高贡献层加大学习率 | 53.70% (+2.88) | 67.42% (+0.99) |
-| 层选择性训练 | 仅训练 top 层 | 51.53% (+0.71) | 69.11% (+2.68) |
-| 零分析启发式 | 直接选中间 5 层 | 51.35% (+0.53) | 68.19% (+1.76) |
-| 全参数基线 | — | 50.82% | 66.43% |
-
-## 与现有研究的关系
-
-- 与预训练 LLM 层级结构不均匀现象一致（基石层研究、推理阶段层移除实验）
-- 从 SFT 阶段已知的层重要性采样，扩展到了 RL 后训练阶段
-- 挑战了"RL 能力提升需要整个网络协调适应"的隐含假设
-
-## 关联
-
-- [2026 年面向 LLM 的 RL 方法总结](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 从 PPO 到 GRPO 的 RL 后训练全览
-- [Agentic RL 六框架实践地图](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — 长程智能体训练框架对比
 
 ---
 
@@ -5384,43 +5397,7 @@ HiFPO 将失败经验转化为训练信号，包含四条关键设计：
 
 ---
 
-## Ch15.054 Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
-
-> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
-
-# Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/predicting-risk-in-content-launches-how-data-driven-insights.md)
-
-# Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
-
-by [Emily Gill](<https://www.linkedin.com/in/ecgill/>)
-
-_Each year, we bring the Analytics Engineering community together for an Analytics Summit — a multi-day internal conference to share analytical deliverables across Netflix, discuss analytic practice, and build relationships within the community. This post is one of several topics presented at the Summit highlighting the breadth and impact of Analytics work across different areas of the business._
-
-### **Understanding Risk in Content Launches**
-
-Every title you see on Netflix goes through several key phases: Development, Pre-Production, Production/Principal Photography, Post-Production, and finally, Launch Preparation, all leading up to the Title Launch. Once Principal Photography wraps, the focus shifts in Post-Production from content creation to quality assurance and visual effects (if needed).
-
-At the end of Post Production, Netflix receives the final audio and video files — often delivered as an IMF (Interoperable Master Format) — which triggers a flurry of Launch Preparation activities, focused on tasks such as the development of artwork and trailers, creation of subtitles, maturity ratings & quality control, that happen within a tight window and rely on having the finalized media assets in hand.
-
-Some of this work can be kicked off earlier using a non-final version of the media called the Locked Cut, but since it’s not the absolute final deliverable, this presents a tradeoff: should our teams who prepare content for service wait for the more finalized IMF to begin their work, or start sooner with the unfinal Locked Cut? Waiting for the IMF risks a compressed timeline if it arrives late, while starting with the Locked Cut means teams may need to do additional conformance work if there are significant changes between the Locked Cut and the final IMF.
-
-#### **Identifying Gaps in Schedule Accuracy**
-
-To help navigate the decision of when to start launch preparation, our teams rely on estimated delivery dates for both the Locked Cut and IMF media assets, which are manually provided by content partners in production schedules. However, these schedules often have gaps in coverage and lack accuracy for both asset types (see Figure 1).
-
-Figure 1. At an asset-level we generally see that scheduled date accuracy and coverage are lower at horizons further from asset delivery. As we approach delivery (moving towards the right on this plot) schedules become more accurate (errors decrease) adn coverage improves.
-
-This isn’t unexpected — productions are dynamic, facing frequent changes, scheduling conflicts, and unforeseen obstacles that can shift timelines without warning. As a result, there’s a clear opportunity to leverage the wealth of production data we collect to predict the risk of schedule slips. By developing a predictive model, we aim to both fill in ETA gaps (providing asset delivery estimates when
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch15.055 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
+## Ch15.054 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/emces-icml2026-episodic-memory-controlled-experience-synthesis-rl.md`
 
@@ -5460,7 +5437,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.056 SkillOS
+## Ch15.055 SkillOS
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillos.md`
 
@@ -5513,6 +5490,42 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillOS.md)
+
+---
+
+## Ch15.056 Predicting Risk in Content Launches
+
+> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
+
+# Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/predicting-risk-in-content-launches-how-data-driven-insights.md)
+
+# Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
+
+by [Emily Gill](<https://www.linkedin.com/in/ecgill/>)
+
+_Each year, we bring the Analytics Engineering community together for an Analytics Summit — a multi-day internal conference to share analytical deliverables across Netflix, discuss analytic practice, and build relationships within the community. This post is one of several topics presented at the Summit highlighting the breadth and impact of Analytics work across different areas of the business._
+
+### **Understanding Risk in Content Launches**
+
+Every title you see on Netflix goes through several key phases: Development, Pre-Production, Production/Principal Photography, Post-Production, and finally, Launch Preparation, all leading up to the Title Launch. Once Principal Photography wraps, the focus shifts in Post-Production from content creation to quality assurance and visual effects (if needed).
+
+At the end of Post Production, Netflix receives the final audio and video files — often delivered as an IMF (Interoperable Master Format) — which triggers a flurry of Launch Preparation activities, focused on tasks such as the development of artwork and trailers, creation of subtitles, maturity ratings & quality control, that happen within a tight window and rely on having the finalized media assets in hand.
+
+Some of this work can be kicked off earlier using a non-final version of the media called the Locked Cut, but since it’s not the absolute final deliverable, this presents a tradeoff: should our teams who prepare content for service wait for the more finalized IMF to begin their work, or start sooner with the unfinal Locked Cut? Waiting for the IMF risks a compressed timeline if it arrives late, while starting with the Locked Cut means teams may need to do additional conformance work if there are significant changes between the Locked Cut and the final IMF.
+
+#### **Identifying Gaps in Schedule Accuracy**
+
+To help navigate the decision of when to start launch preparation, our teams rely on estimated delivery dates for both the Locked Cut and IMF media assets, which are manually provided by content partners in production schedules. However, these schedules often have gaps in coverage and lack accuracy for both asset types (see Figure 1).
+
+Figure 1. At an asset-level we generally see that scheduled date accuracy and coverage are lower at horizons further from asset delivery. As we approach delivery (moving towards the right on this plot) schedules become more accurate (errors decrease) adn coverage improves.
+
+This isn’t unexpected — productions are dynamic, facing frequent changes, scheduling conflicts, and unforeseen obstacles that can shift timelines without warning. As a result, there’s a clear opportunity to leverage the wealth of production data we collect to predict the risk of schedule slips. By developing a predictive model, we aim to both fill in ETA gaps (providing asset delivery estimates when
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

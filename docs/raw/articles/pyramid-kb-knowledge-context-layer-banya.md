@@ -1,13 +1,13 @@
 ---
 title: "知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer — 4 种范式全景对比 + Pyramid KB 原创框架"
-created:2026-06-10
-updated:2026-06-10
+created: 2026-06-10
+updated: 2026-06-10
 type: raw-article
-platform:阿里云开发者
-author:板牙
+platform: 阿里云开发者
+author: 板牙
 source_url: https://mp.weixin.qq.com/s/_IlrlfGpPa42VhTaKNAj6A
-sha256:c2c9c29e841c9b2509d06b9f398a06f2e19431bc6910bcc34bfeb9f338d3d5e2
-source:阿里云开发者
+sha256: c2c9c29e841c9b2509d06b9f398a06f2e19431bc6910bcc34bfeb9f338d3d5e2
+source: 阿里云开发者
 tags: [knowledge-base, rag, llm-wiki, graphify, graphrag, pyramid-kb, knowledge-context-layer, knowledge-engineering, knowledge-freshness, evaluation, structured-routing, role-aware, aliyun, banya]
 ---
 

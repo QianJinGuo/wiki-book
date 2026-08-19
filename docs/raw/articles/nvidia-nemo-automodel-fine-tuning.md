@@ -1,5 +1,5 @@
 ---
-source_url: "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel""
+source_url: "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel"
 ingested: 2026-06-26
 sha256: abd6b4ff2e538903
 ---

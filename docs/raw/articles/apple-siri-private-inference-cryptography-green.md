@@ -1,5 +1,5 @@
 ---
-source_url: "https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/""
+source_url: "https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/"
 ingested: 2026-06-26
 sha256: b6a9f273332fa453
 ---

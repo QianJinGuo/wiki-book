@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.lesswrong.com/posts/yLHiQGCPdvzL9fBn3/model-size-scaling-in-2023-2031""
+source_url: "https://www.lesswrong.com/posts/yLHiQGCPdvzL9fBn3/model-size-scaling-in-2023-2031"
 ingested: 2026-06-26
 sha256: 94a6b4856b632e83
 ---

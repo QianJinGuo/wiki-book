@@ -1,5 +1,5 @@
 ---
-title: "AgentENV：当大模型开始学会"做事"，我们开源了支撑它的基础设施"
+title: "AgentENV：当大模型开始学会\"做事\"，我们开源了支撑它的基础设施"
 source_url: "https://mp.weixin.qq.com/s/FuogYS7jLk7xyPOkZacd2Q"
 source_account: "AgentENV 团队 / KVCache.AI (清华MADSys实验室+月之暗面)"
 ingested: 2026-07-28

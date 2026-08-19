@@ -2,7 +2,7 @@
 
 ## Ch12.047 AI in Cybersecurity Training Resources | SANS Institute
 
-> 📊 Level ⭐⭐ | 9.3KB | `entities/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md`
+> 📊 Level ⭐⭐ | 9.4KB | `entities/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md`
 
 # SANS Institute AI 安全培训体系
 
@@ -103,7 +103,7 @@ SANS 通过 GIAC（Global Information Assurance Certification）认证体系将 
 SANS 的 AI 安全培训体系与 wiki 中的多个概念和实体存在交叉：
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — SEC545 覆盖的 LLM 应用安全控制正是 harness 的安全层
-- [Cloudflare 临时账户](../ch04/670-ai-agent.html) — SEC411 覆盖的 AI 安全原则与 Agent 认证直接相关
+- [Cloudflare 临时账户](../ch04/439-ai-agent.html) — SEC411 覆盖的 AI 安全原则与 Agent 认证直接相关
 - [AFine CSP HTML Injection](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md) — SEC535 的攻击技术覆盖了类似的攻击向量
 
 ## 实践启示
@@ -117,7 +117,7 @@ SANS 的 AI 安全培训体系与 wiki 中的多个概念和实体存在交叉�
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — AI 安全控制作为 harness 的一部分
-- [Cloudflare 临时账户](../ch04/670-ai-agent.html) — Agent 认证安全
+- [Cloudflare 临时账户](../ch04/439-ai-agent.html) — Agent 认证安全
 - [AFine CSP HTML Injection](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md) — 安全漏洞案例
 - [Building Reliable Agentic AI Systems](../ch04/299-building-reliable-agentic-ai-systems.html) — AI 系统可靠性工程
 - [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — SEC573 课程中涉及的协议

@@ -1,5 +1,5 @@
 ---
-title: Building the agentic future: Developer highlights from I/O 2026
+title: "Building the agentic future"
 source: newsletter
 source_url: https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
 fetcher: jina

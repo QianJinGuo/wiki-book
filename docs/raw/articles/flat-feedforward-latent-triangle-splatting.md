@@ -1,5 +1,5 @@
 ---
-source_url: "https://flat-splat.github.io""
+source_url: "https://flat-splat.github.io"
 ingested: 2026-06-26
 sha256: 34dc028f08f8043d
 ---

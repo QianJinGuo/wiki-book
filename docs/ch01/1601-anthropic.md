@@ -36,7 +36,7 @@ Anthropic 前沿红队 2026-08-13 公开的一组**多智能体冲突实验**研
 ## 相关
 
 - [Investing in Multi-Agent AI Safety (DeepMind)](ch01/1101-agent-ai.html)
-- [Agent Room 涌现协作](../ch04/808-agent-room.html)
+- [Agent Room 涌现协作](../ch04/810-agent-room.html)
 - [Multi-Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)
 - [Multi-Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)
 - [Multi-Agent Team Coordination](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-team-coordination.md)

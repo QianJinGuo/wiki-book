@@ -1,5 +1,5 @@
 ---
-title: How an image could compromise your Mac: understanding an ExifTool vulnerability (CVE-2026-3102)
+title: "How an image could compromise your Mac"
 type: raw-article
 tags: []
 source: newsletter

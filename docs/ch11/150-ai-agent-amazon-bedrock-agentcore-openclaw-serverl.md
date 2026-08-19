@@ -1,215 +1,115 @@
-# AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第二篇
+# AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇
 
-## Ch11.150 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第二篇
+## Ch11.150 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇
 
-> 📊 Level ⭐⭐ | 7.7KB | `entities/openclaw-multi-2.md`
+> 📊 Level ⭐⭐ | 8.2KB | `entities/openclaw-multi-6.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-2.md)
-
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Agent 的迁移与现代化 — 使用 Amazon…"))
-    概念导图
-    标签
-    相关实体
-    环境准备要点
-      核心依赖栈
-      AWS X-Ray 分布式追踪配置
-      cdk.json 配置架构
-    CDK 初始化流程
-      Bootstrap 原理
-      cdk synth 的双重价值
-      部署前必要补丁
-    深度分析
-      1. 环境准备作为架构选择的缩影
-      2. X-Ray 配置的深层含义
-      3. 多租户 Serverless 的成本模型
-      4. Workspace Sync 的数据持久…
-    实践启示
-      环境标准化
-      配置管理
-      迁移检查点
-```
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("AI Agent 的迁移与现代化 使用 Amazon"))
-    环境准备要点
-      核心依赖栈
-      AWS X-Ray 分布式追踪配置
-      cdkjson 配置架构
-    CDK 初始化流程
-      Bootstrap 原理
-      cdk synth 的双重价值
-      部署前必要补丁
-    环境准备作为架构选择的缩影
-    X-Ray 配置的深层含义
-    多租户 Serverless 的成本模型
-    Workspace Sync 的数据持久化策略
-    环境标准化
-    配置管理
-```
+> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-6.md)
 
 ## 标签
-
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
 #aws #bedrock #agentcore #openclaw #serverless
-**原文**: [Openclaw Multi 2](ch11/232-openclaw.html)(raw/articles/openclaw-multi-2.md)
+**原文**: [[entities/openclaw-multi-6](raw/articles/openclaw-multi-6.md)
 
 ## 相关实体
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](ch11/232-openclaw.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/232-openclaw.html)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/050-openclaw-multi-agent-team-practice-v2.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第五篇](ch11/232-openclaw.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/549-amazon-bedrock-agentcore.html)
-- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch11/232-openclaw.html)
+- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/252-openclaw.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第五篇](ch11/252-openclaw.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/663-amazon-bedrock-agentcore.html)
+- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](../ch04/439-ai-agent.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/663-amazon-bedrock-agentcore.html)
 
 ## 摘要
-基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第二篇：环境准备与代码获取，安装依赖工具、配置 AWS 环境、克隆项目代码、了解 cdk.json 配置项，以及初始化 CDK。
+基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第六篇：清理资源与总结展望，删除部署资源、迁移前后对比回顾，以及进一步探索方向。
 
-## 环境准备要点
-### 核心依赖栈
-| 组件 | 版本要求 | 作用 |
-|------|---------|------|
-| Python | 3.12+ | CDK 应用编写 |
-| Node.js | 20+ | CDK CLI 运行 |
-| Docker | 最新 | 环境完整性 |
-| AWS CDK | v2 | 基础设施编排 |
-| AgentCore Toolkit | 最新 | Runtime 管理 |
+## 资源清理
+### 删除顺序至关重要
+1. **先删 AgentCore Runtime**：`agentcore destroy --agent openclaw_agent` — 否则 CDK 删除 Stack 时因依赖关系失败
+2. **再删 CDK Stack**：`cdk destroy --all` — 一次性删除所有8个 Stack
+3. **最后手动删除 RETAIN 资源**：S3 桶（先清空再删）、DynamoDB 表、KMS 密钥（需7-30天排队删除）、ECR 仓库、Secrets Manager Secrets、CloudWatch Log Groups
 
-### AWS X-Ray 分布式追踪配置
-X-Ray 是迁移前后最关键的差异点之一。原来单进程时出问题看一份日志即可，现在十几个组件串联，必须靠分布式追踪把整条链路串起来：API Gateway → Router Lambda → AgentCore 容器 → Bedrock → Guardrails。
+### RETAIN 保留策略
+CDK Stack 删除后，S3/KMS/DynamoDB 等设置了 RETAIN 的资源会保留下来——这是防止数据误删的保护机制。但也意味着需要手动清理，否则会继续计费。
 
-### cdk.json 配置架构
-cdk.json 是整个项目的配置中枢，关键参数分类：
-**部署目标**
+## 迁移前后对比
+| 维度 | 迁移前 | 迁移后 | 策略 |
+|------|--------|--------|------|
+| 运行环境 | VPS 上 `openclaw gateway` 单进程 | AgentCore Runtime，Per-Session microVM | Replatform |
+| 用户隔离 | 所有用户共享进程和文件系统 | 每用户独立 microVM + STS scoped credentials | Refactor |
+| 数据持久化 | 本地 `~/.openclaw/` 目录 | Amazon S3 + Workspace Sync，按用户前缀隔离 | Refactor |
+| 安全 | 应用层自行实现 | VPC + KMS + Bedrock Guardrails + STS + Secrets Manager | Replatform |
+| 监控 | 本地日志文件 | CloudWatch Dashboard + Alarm + X-Ray + Token 统计 | Replatform |
+| 扩缩容 | 手动扩容 | AgentCore 按会话自动扩缩 | Replatform |
 
-- `region`：部署区域（从环境变量读取）
-- `availability_zones`：VPC 可用区（留空则自动选 2 个）
-**模型配置**
-
-- `default_model_id`：主 Agent 使用 `global.anthropic.claude-sonnet-4-6`（跨区域推理）
-- `subagent_model_id`：子代理模型（空则复用主模型，可设更便宜的）
-**Runtime 运行参数**
-
-- `session_idle_timeout`：900秒（15分钟）→ 默认1800秒
-- `session_max_lifetime`：上限28800秒（8小时）
-- `workspace_sync_interval_seconds`：容器内工作区同步到 S3 的间隔（5分钟）
-**Lambda 配置**
-
-- `router_lambda_timeout_seconds`：600秒（冷启动时 Lightweight Agent 约10-15秒）
-- `cron_lambda_timeout_seconds`：900秒
-- `cron_lead_time_minutes`：5（任务触发前5分钟预热容器）
-**预算与安全**
-
-- `daily_token_budget`：100万 Token（实际检查周期是1小时）
-- `daily_cost_budget_usd`：5美元
-- `registration_open`：false（白名单模式）
-- `enable_guardrails`：默认启用 Bedrock Guardrails 
-
-## CDK 初始化流程
-### Bootstrap 原理
-`cdk bootstrap` 在目标账号+区域创建一个 CDKToolkit Stack，包含：
-
-- S3 桶（存储 CloudFormation 模板和 Lambda 代码包）
-- ECR 仓库（如果需要）
-- IAM 角色（CDK 运行时需要的执行角色）
-每个账号+区域组合只需执行一次。
-
-### cdk synth 的双重价值
-`synth` 命令将 Python CDK 代码"编译"成 CloudFormation 模板，同时运行 cdk-nag 安全检查，验证是否有明显的安全配置错误。
-
-### 部署前必要补丁
-```bash
-
-# AWS Marketplace 权限（模型访问验证需要）
-self.execution_role.add_to_policy(iam.PolicyStatement(
-    actions=["aws-marketplace:ViewSubscriptions", "aws-marketplace:Subscribe"],
-    resources=["*"]
-))
-
-# Dashboard 名称加区域后缀（多区域部署防冲突）
-dashboard_name=f"OpenClaw-Operations-{region}"
-```
+## 进一步探索方向
+| 方向 | 说明 |
+|------|------|
+| 接入更多 IM 渠道 | 项目预留了 Slack/Discord/WhatsApp 的 Secret 槽位，Router Lambda 已内置 Slack HMAC 验证逻辑 |
+| 自定义 Guardrails | 修改 `stacks/guardrails_stack.py` 中的过滤规则，适配业务场景 |
+| 迁移已有工作区数据 | 将 `~/.openclaw/` 下的 Markdown 文件上传到 S3 用户桶对应前缀 |
+| 多区域部署 | 每个区域创建独立工作目录，Dashboard 名称已加区域后缀 |
+| 成本优化 | 缩短 `session_idle_timeout`、子代理用更便宜模型、设置更严格预算告警 |
 
 ## 深度分析
-### 1. 环境准备作为架构选择的缩影
-这篇文章看似只是"装工具"，实则揭示了 Serverless AI Agent 架构的依赖复杂度：
+### 1. Replatform + Refactor 混合策略的本质
+这篇文章是理解这个混合策略的最佳总结。核心洞察：**不是非此即彼的选择，而是在不同维度做最合适的决策**。
 
-- **运行时隔离**：通过 CodeBuild 在 ARM64（Graviton）上构建镜像，确保与 AgentCore microVM 架构一致
-- **配置驱动**：所有可调参数集中在 cdk.json，避免代码侵入
-- **渐进式验证**：check.sh 7项检查确保环境就绪后再推进，避免在部署阶段才发现工具缺失
+- **Replatform 维度**：运行环境、安全、监控、扩缩容——这些用 AWS 托管服务直接替换，收益明确
+- **Refactor 维度**：多租户隔离、数据持久化、消息路由——这些需要重新设计架构，不能简单迁移
+实际项目中常见的错误是：
 
-### 2. X-Ray 配置的深层含义
-从单进程到多组件架构，排错方式必须根本性改变。X-Ray 将请求链路可视化，但更关键的是**日志统一化**——所有组件日志汇聚到 CloudWatch，这是云原生运维的基础设施思维。
+- **过度 Refactor**：明明可以直接迁移的组件，非要重写
+- **Replatform 执念**：明明需要重新设计的部分，硬要用迁移的方式
 
-### 3. 多租户 Serverless 的成本模型
-通过 `daily_token_budget` 和 `daily_cost_budget_usd` 的双预算机制，结合 CloudWatch Alarm，实现：
+### 2. Per-Session microVM 的成本账
+microVM 按会话启停，听起来成本很高。但实际：
 
-- **事前预防**：Token 用量超阈值立即告警
-- **异常检测**：Anomaly Detector 基于历史数据识别模式异常
-- **按需计费**：AgentCore microVM 按会话启停，Router/Cron Lambda 按调用计费
+- **共享底层资源**：microVM 是轻量级虚拟化，多个 microVM 可以共享底层物理机资源
+- **按需计费**：会话结束后 microVM 终止，不计费
+- **Lambda 补充**：Router/Cron Lambda 按调用计费，空闲时零成本
+对比传统 VPS 固定月费：低负载时 Serverless 成本更低，高负载时自动扩缩不需要人工干预。
 
-### 4. Workspace Sync 的数据持久化策略
-`workspace_sync_interval_seconds: 300`（5分钟）意味着：容器内 `.openclaw/` 目录每5分钟同步到 S3，会话中断后同一 ID 可恢复。但这也是数据一致性的妥协——5分钟内的数据在容器异常终止时会丢失，需要应用层做容错。
+### 3. 数据迁移的隐性成本
+"迁移已有工作区数据"听起来简单——上传到 S3 就好了。但隐性成本：
+
+- **历史数据清理**：旧 VPS 上的数据要不要保留？
+- **格式转换**：本地 `.openclaw/` 目录结构 vs S3 前缀结构是否兼容？
+- **用户通知**：数据迁移后使用习惯变化，需要用户适应
+
+### 4. 多区域部署的运维复杂度
+多区域部署听起来很美好（高可用、低延迟），但实际运维复杂度：
+
+- **配置漂移**：各区域的 cdk.json 需要独立维护
+- **数据同步**：DynamoDB 有全局表但成本高，S3 跨区域复制需要额外配置
+- **监控聚合**：各区域的 CloudWatch Dashboard 需要汇总到统一视图
+- **成本叠加**：每个区域独立资源，成本是单区域的 N 倍
 
 ## 实践启示
-### 环境标准化
-1. **建立环境检查清单**：check.sh 的思路可复用到任何复杂部署——将所有依赖项脚本化，上来先跑一遍
-2. **版本锁定**：cdk.json 中的 `image_version: 70` 机制——改版本号+重新部署会强制 AgentCore 重新拉取镜像，这是蓝绿发布的基础
-3. **区域感知的命名**：Dashboard 名称加区域后缀，避免多区域部署时资源名冲突
+### 资源清理
+1. **建立清理清单**：部署前就列出所有资源类型和删除顺序，而不是最后手忙脚乱
+2. **KMS 密钥删除要排队**：7-30天的等待期意味着如果想彻底清理环境，需要提前操作
+3. **S3 桶必须先清空**：即使删除了 CloudFormation Stack，S3 桶里的文件还在，必须手动清空才能删除桶
 
-### 配置管理
-1. **区分环境变量和代码配置**：`CDK_DEFAULT_ACCOUNT`/`CDK_DEFAULT_REGION` 从环境变量读取，模型 ID/预算阈值写入 cdk.json——环境差异配置化
-2. **理解参数的检查周期**：名义上的 "daily" 预算实际是1小时检查一次，这个细节影响告警阈值设计
-3. **保留策略防误删**：`RETAIN` 删除策略保护 S3 桶/KMS 密钥，防止数据因操作失误丢失
+### 成本优化实操
+1. **session_idle_timeout 调优**：从 1800 秒（30分钟）缩短到 900 秒（15分钟），microVM 运行时间减半，成本直接下降
+2. **子代理模型降级**：如果 subagent 不需要顶级模型能力，设置 `subagent_model_id` 为更便宜的模型
+3. **预算告警先设严**：上线初期设置严格告警，跑一段时间后根据实际用量调整阈值
 
 ### 迁移检查点
-1. **先 synth 再 deploy**：`cdk synth` 是免费的预览步骤，应该成为标准流程的一部分
-2. **AgentCore Runtime 必须先删**：资源删除顺序很重要——Runtime 依赖 CDK Stack，但 destroy 时 CDK 不知道这个依赖关系
-3. **Secrets Manager 集中管理凭证**：从 `auth-profiles.json` 本地存储到 AWS Secrets Manager 加密管理，是安全架构升级的关键一步
+1. **数据完整性验证**：迁移后用户能否正常访问历史数据？工具调用是否正常？
+2. **性能回归测试**：Serverless 架构的冷启动延迟是否可接受？
+3. **安全审计**：白名单机制、Secrets Manager 访问、Guardrails 配置是否正确？
+
+### 架构演进路径
+1. **先 Replatform 再 Refactor**：不要一开始就想做完美的多租户架构，先把应用跑在托管服务上
+2. **监控驱动优化**：通过 Token 用量大盘和异常检测发现优化点
+3. **按需扩展能力**：多区域、更多 IM 渠道都是后续可以按需添加的能力，不需要一开始就设计好
+
+### 团队能力要求
+1. **CDK 基础设施代码**：需要 Python + CDK + AWS 服务知识
+2. **容器镜像构建**：ARM64 + Docker + ECR
+3. **DynamoDB 数据建模**：PK/SK 设计、GSI 使用
+4. **Serverless 架构理解**：microVM 生命周期、Lambda 限制、EventBridge 调度
+这是典型的新型云原生 AI Agent 全栈工程，需要多个领域知识的交叉。
 
 ---
 

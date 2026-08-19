@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.perplexity.ai/hub/blog/self-improving-memory-for-agents""
+source_url: "https://www.perplexity.ai/hub/blog/self-improving-memory-for-agents"
 ingested: 2026-06-26
 sha256: 293ddd66a15560f7
 ---

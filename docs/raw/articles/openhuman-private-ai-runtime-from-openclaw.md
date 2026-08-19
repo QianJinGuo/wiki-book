@@ -6,17 +6,7 @@ published: 2026-05-19
 created: 2026-05-19
 type: raw-article
 platform: wechat
-tags: [OpenHuman, AI-Runtime, agent, Memory-Tree, Composio, Local-First, Private-AI, Tool-Governance, Security, Rust]
-  - OpenHuman
-  - AI-Runtime
-  - Agent
-  - Memory-Tree
-  - Composio
-  - Local-First
-  - Private-AI
-  - Tool-Governance
-  - Security
-  - Rust
+tags: [OpenHuman, AI-Runtime, agent, Memory-Tree, Composio, Local-First, Private-AI, Tool-Governance, Security, Rust, OpenHuman, AI-Runtime, Agent, Memory-Tree, Composio, Local-First, Private-AI, Tool-Governance, Security, Rust]
 sha256: "a7b7d93b76c3987bac5d963903b2756794f0bbb03445158ae279cbeb62e8e22f"
 rating: 8.5/9.0
 review_value: 8.5

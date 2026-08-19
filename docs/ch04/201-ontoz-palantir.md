@@ -156,7 +156,7 @@
 
 - **本体竞争取代工具竞争**：OntoZ 的核心命题是「2B AI 从工具辅助进入本体竞争新阶段」——企业间竞争的不再是谁买了更多 SaaS，而是谁的数字分身（企业本体）更懂业务、更能自迭代。这一判断与 [Rag Vector Knowledge Graph Ontology](../ch01/1284-rag.html) 中知识图谱本体是数据驱动成交基础设施的观点高度一致。 
 
-- **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](ch04/671-anthropic-multi-agent-research-system.html) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
+- **二阶控制论架构的工程验证**：马尔可夫毯 + 强化学习任务规划器（2024 验证）与带先验因果结构的图神经网络（2024 验证），构成二阶控制论（控制控制系统）的工程实现。这使得多智能体协作有了「可控边界」，解决了单点 Agent「止步于部门墙之前」的根本缺陷。对照 [Anthropic Multi Agent Research System](ch04/674-anthropic-multi-agent-research-system.html) 中多智能体系统需要显式协调机制的设计原则，百型的马尔可夫毯方法提供了一种无需中心化调度的去中心化控制路径。 
 
 - **RL + Reflection 的无人化知识蒸馏**：百型以「强化学习 + Reflection 架构」实现企业知识库的无人化、短时间蒸馏，形成 cognition infra。这与传统的知识工程（专家建模、RDF 本体）有本质区别——不是工程师将知识注入系统，而是系统在买卖交互中自主涌现结构。对照 [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html) 中企业 AI 落地依赖数据质量和结构化程度的前提，OntoZ 的冷启动能力直接绕过了这一瓶颈。 
 
@@ -168,7 +168,7 @@
 
 - **开展企业内容层的 AI Ready 审计**：在引入 OntoZ 之前，企业应审视现有内容资产（产品描述、客户案例、FAQ）的结构化程度。OntoZ 的产业世界模型虽能一键冷启动，但冷启动质量仍取决于企业初始知识的完整度。内容层的 AI Ready 程度直接决定本体构建的速度和准确性。 
 
-- **以 Skill/MCP 标准封装能力而非定制开发**：百型强调「封装 Skill 与 MCP 和 API 的工具层」是三个准备层面之一。企业应将内部能力标准化为可复用的 Skill，而非依赖定制开发。这与 [Aws Bedrock Multi Agent Collaboration Guide](../ch11/020-aws-bedrock.html) 倡导的多智能体协作需标准协议的观点一致——能力标准化是可交互的基础。 
+- **以 Skill/MCP 标准封装能力而非定制开发**：百型强调「封装 Skill 与 MCP 和 API 的工具层」是三个准备层面之一。企业应将内部能力标准化为可复用的 Skill，而非依赖定制开发。这与 [Aws Bedrock Multi Agent Collaboration Guide](../ch11/019-aws-bedrock.html) 倡导的多智能体协作需标准协议的观点一致——能力标准化是可交互的基础。 
 
 - **在业务流程中嵌入持续的反馈回路**：OntoZ 的飞轮依赖用户在产品交互中持续给予反馈。企业应主动设计反馈触点（询盘回复评价、需求确认动作），而非将系统当作静态查询工具。强结果信号（成交数据）的积累速度直接决定系统进化速度。 
 
@@ -182,16 +182,16 @@
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/038-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/737-codex.html)
-- Claude Code 架构 — [Claude Code Architecture](../ch03/084-claude-code.html)
+- Claude Code 架构 — [Claude Code Architecture](../ch03/085-claude-code.html)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05/065-harness-engineering.html)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/037-agent.html)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/1284-rag.html)
-- 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/671-anthropic-multi-agent-research-system.html)
+- 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/674-anthropic-multi-agent-research-system.html)
 - Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/1129-20.html)
 - 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](../ch03/011-cio.html)
 ## 相关实体
 
-- [how grab is using ai agents to boost team productivity](ch04/670-ai-agent.html)
+- [how grab is using ai agents to boost team productivity](ch04/439-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

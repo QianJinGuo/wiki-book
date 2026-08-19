@@ -33,10 +33,10 @@
 ## 相关实体
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch06/013-hermes-agent-memory.html)
-- [Hermes Agent 自进化机制源码解析](../ch03/098-hermes-agent.html)
+- [Hermes Agent 自进化机制源码解析](../ch03/099-hermes-agent.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch06/013-hermes-agent-memory.html)
-- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/098-hermes-agent.html)
-- [Hermes+Kimi K2.6 多Agent军团实战教程](../ch03/098-hermes-agent.html)
+- [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/099-hermes-agent.html)
+- [Hermes+Kimi K2.6 多Agent军团实战教程](../ch03/099-hermes-agent.html)
 
 ---
 

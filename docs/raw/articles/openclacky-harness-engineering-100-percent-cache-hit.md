@@ -6,16 +6,7 @@ published: 2026-05-19
 created: 2026-05-19
 type: raw-article
 platform: wechat
-tags: [harness, OpenClacky, Cache, claude-code, LLM, Prompt-Cache, Multi-Agent, context-management, Ruby]
-  - Harness
-  - OpenClacky
-  - Cache
-  - Claude-Code
-  - LLM
-  - Prompt-Cache
-  - Multi-Agent
-  - Context-Management
-  - Ruby
+tags: [harness, OpenClacky, Cache, claude-code, LLM, Prompt-Cache, Multi-Agent, context-management, Ruby, Harness, OpenClacky, Cache, Claude-Code, LLM, Prompt-Cache, Multi-Agent, Context-Management, Ruby]
 sha256: "57ece831427cfd0a88937c18920c8af44b50c7741b461307448a15dc1304680c"
 rating: 8.5/9.0
 review_value: 8.5

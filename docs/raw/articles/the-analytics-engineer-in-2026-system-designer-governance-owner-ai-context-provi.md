@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.getdbt.com/blog/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provider""
+source_url: "https://www.getdbt.com/blog/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provider"
 ingested: 2026-06-26
 sha256: 4306a4d69a8fd919
 ---

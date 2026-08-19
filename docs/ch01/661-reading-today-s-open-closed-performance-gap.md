@@ -75,10 +75,10 @@ RLVR 的结果更可复现、更难刷榜，是评估模型真实能力的更好
 "开源永远追不上"和"开源很快会超越"都是叙事，不是数据。用具体 benchmark 的历史趋势做决策。
 
 ## 相关实体
-- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/695-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
-- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch04/742-agentic.html)
+- [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/696-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
+- [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch04/297-agentic.html)
 - [Ai Job Interview Model Evaluation Mollick](../ch05/108-ai.html)
-- [Claude Code Performance Benchmarking](../ch03/084-claude-code.html)
+- [Claude Code Performance Benchmarking](../ch03/085-claude-code.html)
 - [Mythos_Offensive_Security_Xbow_Evaluatio](../ch12/031-mythos.html)
 
 ## 相关引用

@@ -1,5 +1,5 @@
 ---
-source_url: "https://news.crunchbase.com/venture/foundational-ai-startup-investment-kardos-nyheim-thomson/""
+source_url: "https://news.crunchbase.com/venture/foundational-ai-startup-investment-kardos-nyheim-thomson/"
 ingested: 2026-06-26
 sha256: 69cf393a3dd57da5
 ---

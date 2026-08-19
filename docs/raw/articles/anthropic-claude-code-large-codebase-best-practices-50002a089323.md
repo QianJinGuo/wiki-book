@@ -9,22 +9,7 @@ review_confidence: 9
 review_score: 81
 review_recommendation: 入库
 ingested: 2026-05-16
-tags: [anthropic, claude-code, enterprise-deployment, large-codebase, harness, claude-md, hook, skills, plugins, lsp, mcp, sub-agents, rag, configuration, 治理]
-  - anthropic
-  - claude-code
-  - enterprise-deployment
-  - large-codebase
-  - harness
-  - claude-md
-  - hooks
-  - skills
-  - plugins
-  - lsp
-  - mcp
-  - sub-agents
-  - rag
-  - configuration
-  - 治理
+tags: [anthropic, claude-code, enterprise-deployment, large-codebase, harness, claude-md, hook, skills, plugins, lsp, mcp, sub-agents, rag, configuration, 治理, anthropic, claude-code, enterprise-deployment, large-codebase, harness, claude-md, hooks, skills, plugins, lsp, mcp, sub-agents, rag, configuration, 治理]
 source_url: "unavailable"
 ---
 # Anthropic 博客：Claude Code 大型代码库最佳实践

@@ -27,7 +27,7 @@
 
 ## 与本文相关
 -  — OpenClaw生态
-- [Gstack Ai Workflow](../ch03/068-gstack-ai.html) — AI协作工作流
+- [Gstack Ai Workflow](../ch03/069-gstack-ai.html) — AI协作工作流
 - [Kuse Junior Ai Employee](../ch05/108-ai.html) — AI员工（Org Memory对比）
 -  — 详细报道（raw）
 

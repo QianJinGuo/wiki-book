@@ -80,9 +80,9 @@ huashu-weread证明了"在官方能力上做增强层"这一模式的可行性�
 2. **上下文注入决定推荐质量**：huashu-weread的核心技巧是把"已读/笔记/书架历史"作为context注入prompt，而不是让模型自由发挥——这是RAG思路在个性化推荐中的具体应用 ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 3. **数据聚合后做统计往往比做生成更有价值**：alchemy的洞察不是AI"生成"出来的，而是AI对5269条划线做分组统计后"呈现"出来的——有时候最好的AI产品不需要生成，只需要准确统计 + 可视化呈现 ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 ## 相关实体
-- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](../ch03/083-obsidian-claude-code.html)
+- [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](../ch03/084-obsidian-claude-code.html)
 - [Ai Era What To Read World Book Day](../ch05/108-ai.html)
-- [Imclaw通过微信飞书操控Claude Code Coodex Gemini Clipi Agent蜂群](../ch03/084-claude-code.html)
+- [Imclaw通过微信飞书操控Claude Code Coodex Gemini Clipi Agent蜂群](../ch03/085-claude-code.html)
 - [Tmall Ai Coding Practice Team Knowledge Base](../ch05/125-ai-coding.html)
 - [Skill Craft](ch07/062-skill-craft-claude-skill.html)
 

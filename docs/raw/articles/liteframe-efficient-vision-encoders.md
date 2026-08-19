@@ -1,5 +1,5 @@
 ---
-title: LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
+title: "LiteFrame"
 source: newsletter
 source_url: https://jjihwan.github.io/projects/LiteFrame/
 tags: [creative]

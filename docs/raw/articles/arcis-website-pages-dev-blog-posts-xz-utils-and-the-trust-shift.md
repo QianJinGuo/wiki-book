@@ -1,5 +1,5 @@
 ---
-title: xz, two years on: what scanners still cannot catch
+title: "xz, two years on"
 source_url: https://arcis-website.pages.dev/blog/posts/xz-utils-and-the-trust-shift
 ingested: 2026-06-04
 sha256: 5f3f5d7d9dd1ffd25c171868b0054e7d87377dcb194b1df15f6efe337d788fc0

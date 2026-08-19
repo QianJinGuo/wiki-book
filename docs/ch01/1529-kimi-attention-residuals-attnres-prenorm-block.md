@@ -90,7 +90,7 @@ Kim i的实验表明，块数从 1（相当于 baseline）增加到 8 时，效�
 - [How Llms Actually Work 0Xkato](ch01/1512-how-llms-actually-work-0xkato-transformer-walkthrough.html)
 - [Ai Employment Eight Changes Tencent Research](../ch05/108-ai.html)
 - [Kimi K2 6 Tidb Agent Database](../ch03/037-agent.html)
-- [Hermes Agent K2 6 Tutorial](../ch03/098-hermes-agent.html)
+- [Hermes Agent K2 6 Tutorial](../ch03/099-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-attention-residuals-preNorm-dilution-block-attnres.md)
 

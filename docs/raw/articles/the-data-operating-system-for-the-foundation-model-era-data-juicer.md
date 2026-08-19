@@ -1,5 +1,5 @@
 ---
-source_url: "https://datajuicer.github.io/data-juicer/en/main/""
+source_url: "https://datajuicer.github.io/data-juicer/en/main/"
 ingested: 2026-06-26
 sha256: 707695496fd9b44d
 ---

@@ -30,10 +30,10 @@
 
 ## 相关实体
 - [是时候讨论人类配额制了应对Ai就业冲击的一种可能性探讨](../ch05/108-ai.html)
-- [Agi 之路 可能从一开始就走错了](ch01/407-agi.html)
+- [Agi 之路 可能从一开始就走错了](ch01/477-agi.html)
 - [Joyai Echo Long Video Framework Jd](../ch05/108-ai.html)
-- [Openchronicle Memory Layer](../ch06/045-memory.html)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04/798-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
+- [Openchronicle Memory Layer](../ch06/015-memory.html)
+- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04/800-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-source_url: "https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29""
+source_url: "https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29"
 ingested: 2026-06-26
 sha256: ce133cf94bc5f792
 ---

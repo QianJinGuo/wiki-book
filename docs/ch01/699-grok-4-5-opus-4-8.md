@@ -64,7 +64,7 @@ Grok 4.5 的定价策略极具攻击性。Opus 4.8 的输出价格为 $25/百万
 
 ### 2. Cursor 收购的协同效应
 
-Cursor 收购后的联合训练是 Grok 4.5 的核心竞争壁垒。模型不仅使用了 Cursor 的真实开发数据（真实 bug、真实调试过程、真实架构决策），而且在发布后仍通过 Grok Build 的自动化软件工程环境持续进行 RL。这意味着 Grok 4.5 的编码和 agentic 能力会持续提升。这种「产品驱动模型训练」的闭环——IDE 使用数据 → 真实开发数据 → RL 训练 → API 发布 → 更多使用数据——是 xAI 区别于其他 model provider 的关键差异化优势，也与 [Cursor Harness Model Production Floor](ch01/452-cursor-harness-model-production-floor.html) 中讨论的「模型决定能力上限，harness 决定生产下限」的逻辑一脉相承。
+Cursor 收购后的联合训练是 Grok 4.5 的核心竞争壁垒。模型不仅使用了 Cursor 的真实开发数据（真实 bug、真实调试过程、真实架构决策），而且在发布后仍通过 Grok Build 的自动化软件工程环境持续进行 RL。这意味着 Grok 4.5 的编码和 agentic 能力会持续提升。这种「产品驱动模型训练」的闭环——IDE 使用数据 → 真实开发数据 → RL 训练 → API 发布 → 更多使用数据——是 xAI 区别于其他 model provider 的关键差异化优势，也与 [Cursor Harness Model Production Floor](ch01/451-cursor-harness-model-production-floor.html) 中讨论的「模型决定能力上限，harness 决定生产下限」的逻辑一脉相承。
 
 ### 3. 「V9 基座 + 1.5T 参数」的规模信号
 
@@ -90,8 +90,8 @@ Grok Build（CLI）、API、xAI Console、Cursor、Office 插件五个入口同�
 
 - [Cursor让马斯克的Grok45咸鱼翻身追平Opus 48成本比Glm52还低](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor让马斯克的grok45咸鱼翻身追平opus-48成本比glm52还低.md) — Cursor 赋能 Grok 4.5 的深度分析
 - [Xai Dissolved Grok Colossus2 Analysis](../ch05/108-ai.html) — xAI Colossus 集群与 Grok 训练分析
-- [Xai Grok Musk Training New Model Wechat](../ch04/213-xai-grok-musk.html) — xAI 训练动态
-- [Cursor Harness Model Production Floor](ch01/452-cursor-harness-model-production-floor.html) — Cursor Harness 模型生产
+- [Xai Grok Musk Training New Model Wechat](../ch04/210-xai-grok-musk.html) — xAI 训练动态
+- [Cursor Harness Model Production Floor](ch01/451-cursor-harness-model-production-floor.html) — Cursor Harness 模型生产
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/077-harness.html) — 模型与 Harness 关系分析
 - [Claude Fable 5 And New Ai Safety Fables](ch01/1188-claude-fable-5-and-new-ai-safety-fables.html) — Fable 5 模型安全寓言
 - [Ai Cost Optimization Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md) — AI 成本优化框架

@@ -1,5 +1,5 @@
 ---
-title: "为什么 AI 视频，需要"懂生成"的画质增强"
+title: "为什么 AI 视频，需要\"懂生成\"的画质增强"
 source: wechat
 source_url: "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521103&idx=1&sn=464de2a00f29cfc21e3875a515d5fdbe"
 ingested: 2026-08-14

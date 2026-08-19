@@ -48,7 +48,7 @@ BrowserBC 将人类在浏览器中的一次操作轨迹蒸馏为自然语言技�
 
 ## 关联
 
-- [Autobrowse：浏览器 Agent 的失忆问题](../ch03/076-skills.html) — 持久化探索 vs 人类轨迹蒸馏，互补方案
+- [Autobrowse：浏览器 Agent 的失忆问题](../ch03/077-skills.html) — 持久化探索 vs 人类轨迹蒸馏，互补方案
 - [Browser Use：为 Agent 构建 Runtime Harness](../ch05/077-harness.html) — 浏览器 Agent 的运行时验证
 
 ---

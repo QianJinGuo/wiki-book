@@ -1,5 +1,5 @@
 ---
-source_url: "https://gerireid.com/blog/organising-documentation-for-humans-and-ai/""
+source_url: "https://gerireid.com/blog/organising-documentation-for-humans-and-ai/"
 ingested: 2026-06-26
 sha256: 04abeef7bed501f2
 ---

@@ -4320,7 +4320,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ---
 
-## Ch02.037 vivo LLM 游戏推荐表达层：从"推什么"到"怎么选
+## Ch02.037 vivo LLM 游戏推荐表达层：从\"推什么\"到\"怎么选\
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/vivo-llm-game-recommendation-expression-decision-layer.md`
 
@@ -4385,7 +4385,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ---
 
-## Ch02.038 Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
+## Ch02.038 Enrich your datasets with business context
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
 

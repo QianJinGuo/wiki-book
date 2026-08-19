@@ -853,7 +853,7 @@ Three-level guardrail system:
 
 ## Ch08.010 微软 Agent Framework 全栈指南（Python）
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/microsoft-agent-framework-python-zizhi.md`
+> 📊 Level ⭐⭐ | 6.0KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-agent-framework-python-zizhi.md)
 

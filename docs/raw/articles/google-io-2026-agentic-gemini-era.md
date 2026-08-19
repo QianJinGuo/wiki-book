@@ -1,5 +1,5 @@
 ---
-title: I/O 2026: Welcome to the agentic Gemini era
+title: "I/O 2026"
 type: raw-article
 source: newsletter
 source_url: https://blog.google/innovation-and-ai/sundar-pichai-io-2026/

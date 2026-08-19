@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.lesswrong.com/posts/d8xDGzCEYE639qqEv/a-mechanistic-explanation-of-prompt-injection-and-why-you""
+source_url: "https://www.lesswrong.com/posts/d8xDGzCEYE639qqEv/a-mechanistic-explanation-of-prompt-injection-and-why-you"
 ingested: 2026-06-26
 sha256: fc0d1f713933a4d1
 ---

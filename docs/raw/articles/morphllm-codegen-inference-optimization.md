@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.morphllm.com/blog/codegen-inference-research""
+source_url: "https://www.morphllm.com/blog/codegen-inference-research"
 ingested: 2026-06-26
 sha256: ad5f932259a2e885
 ---

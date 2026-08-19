@@ -196,7 +196,7 @@ OKF 不是要替代 Karpathy Wiki / Obsidian Wiki / GBrain，而是**给它们�
 → [知识沉淀是护城河](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-mgmt-is-moat.md) — 知识管理护城河论述
 → [腾讯知识 Harness 实践](../ch05/077-harness.html) — 腾讯系知识管理
 → [Create Custom MCP Catalogs and Profiles](../ch07/056-create-custom-mcp-catalogs-and-profiles.html) — MCP 目录 vs OKF bundle 关系
-→ [GBrain](../ch01/438-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html) — Postgres 持久化 + 知识图谱（可消费 OKF bundle）
+→ [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html) — Postgres 持久化 + 知识图谱（可消费 OKF bundle）
 
 ---
 

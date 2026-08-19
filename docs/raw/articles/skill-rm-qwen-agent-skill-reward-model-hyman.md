@@ -1,8 +1,8 @@
 ---
 title: "阿里Qwen出手：Skill-RM把奖励模型做成可复用Agent Skill"
 source_url: "https://mp.weixin.qq.com/s/K92ZQp1PnVQq1UPOes9rtA"
-ingested:2026-06-10
-sha256:71b68d7932f57cd9883a593c97256e7aaf19e7c596c14bdfd1a9ba9d8c5c80b0
+ingested: 2026-06-10
+sha256: 71b68d7932f57cd9883a593c97256e7aaf19e7c596c14bdfd1a9ba9d8c5c80b0
 type: raw-article
 tags: [wechat, skill-rm, qwen, reward-model, agent-skill, rewardbench, rm-bench, judgebench, alibaba, agentic-judge, skill-md, llm-as-judge, grpo, verinstruct, hyman]
 ---

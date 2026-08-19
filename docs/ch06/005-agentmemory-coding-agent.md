@@ -382,7 +382,7 @@ if (!health.ok) {
 ## Related
 
 - [AgentMemory 实体页面](ch06/005-agentmemory-coding-agent.html)
-- [Claude Code 源码核心机制详解](../ch03/084-claude-code.html)
+- [Claude Code 源码核心机制详解](../ch03/085-claude-code.html)
 
 ## 相关实体
 

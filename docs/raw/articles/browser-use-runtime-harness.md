@@ -7,14 +7,7 @@ publisher: 百度Geek说
 published: 2026-05-13
 created: 2026-05-14
 type: raw-article
-tags: [computer-use, browser-automation, cdp, chrome-devtools-protocol, agent-harness, runtime-verification, frontend-agent]
-  - browser-use
-  - browser-automation
-  - cdp
-  - chrome-devtools-protocol
-  - agent-harness
-  - runtime-verification
-  - frontend-agent
+tags: [computer-use, browser-automation, cdp, chrome-devtools-protocol, agent-harness, runtime-verification, frontend-agent, browser-use, browser-automation, cdp, chrome-devtools-protocol, agent-harness, runtime-verification, frontend-agent]
 review_value: 8
 review_confidence: 7
 review_recommendation: neutral

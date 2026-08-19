@@ -1,5 +1,5 @@
 ---
-title: Gemini 3.5: frontier intelligence with action
+title: "Gemini 3.5"
 type: raw-article
 source: newsletter
 source_url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/

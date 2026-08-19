@@ -3,16 +3,16 @@ title: '清华大学：基于 AI 的自进化组织研究报告'
 source_url: https://mp.weixin.qq.com/s/pLD_nZ8uLAOh18JL1ZCsTw
 source: wechat
 wechat_mp: GIS极客
-publish_date:2026-06-10
-ingested:2026-06-10
+publish_date: 2026-06-10
+ingested: 2026-06-10
 pdf_source: /Users/jinguo/.hermes/cache/documents/doc_f2e22b850716_清华大学：基于 AI 的自进化组织研究报告.pdf
-pdf_pages:63
-pdf_size_bytes:5077603
-extraction_method: PyMuPDF (xref 部分损坏，55/63 页文本可恢复，MuPDF error: cannot find object in xref 已记录)
-sha256:1e92f0698fea7a0c077bf940df8b92480803f973ce9e2c32f6fd3ce608610c24
+pdf_pages: 63
+pdf_size_bytes: 5077603
+extraction_method: "PyMuPDF (xref 部分损坏，55/63 页文本可恢复，MuPDF error: cannot find object in xref 已记录)"
+sha256: 1e92f0698fea7a0c077bf940df8b92480803f973ce9e2c32f6fd3ce608610c24
 tags: [tsinghua, self-evolving-organization, ai-native-company, agent-runtime, capital-markets, valuation-metrics, governance, algorithmic-jurisdiction, intent-compiler, rebuttal-asset, memory-solvency, machine-market, web3-agent, machine-economy, wechat, pdf-ingest]
-review_value:9
-review_confidence:8
+review_value: 9
+review_confidence: 8
 review_recommendation: strong
 type: raw-article
 sources: []

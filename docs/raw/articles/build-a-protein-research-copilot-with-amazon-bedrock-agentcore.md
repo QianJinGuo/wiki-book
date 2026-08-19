@@ -1,5 +1,5 @@
 ---
-source_url: "https://aws.amazon.com/blogs/machine-learning/build-a-protein-research-copilot-with-amazon-bedrock-agentcore/""
+source_url: "https://aws.amazon.com/blogs/machine-learning/build-a-protein-research-copilot-with-amazon-bedrock-agentcore/"
 ingested: 2026-06-26
 sha256: 504733b6d0bab59f
 ---

@@ -2,7 +2,7 @@
 source_url: https://www.xiaohongshu.com/explore/6a7aaa9e00000000250028bc?xsec_source=app_share&type=normal&xsec_token=CBf3BqNZ6hJqhhSj5pDzcXz53Tm79w-R7IkHhkHlw_2ZM=
 ingested: 2026-08-11
 sha256: 21c8cd050e43a76614e13c3a1ce032459ba25e1b38a14a71855f4a6ce0ccb766
-title: "GEA：让AI从"个体进化"到"群体进化""
+title: "GEA：让AI从\"个体进化\"到\"群体进化\""
 author: 王鹏LLM
 source: 小红书
 platform: xiaohongshu

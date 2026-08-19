@@ -21,7 +21,7 @@
 
 ## 意义
 
-该技术连接了 AI 内容溯源、模型版权、虚假信息防御三条主线，是 [Anthropic Claude](ch01/397-anthropic-claude-managed-agents.html) 生态在安全与合规层的关键升级，也为 GenAI 信息隐藏研究提供了工业级落地锚点。
+该技术连接了 AI 内容溯源、模型版权、虚假信息防御三条主线，是 [Anthropic Claude](ch01/396-anthropic-claude-managed-agents.html) 生态在安全与合规层的关键升级，也为 GenAI 信息隐藏研究提供了工业级落地锚点。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-invisible-watermark-genai-steganography-xinzhiyuan.md)
 

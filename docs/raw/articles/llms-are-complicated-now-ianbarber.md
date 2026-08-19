@@ -1,5 +1,5 @@
 ---
-source_url: "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/""
+source_url: "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/"
 ingested: 2026-06-26
 sha256: b938292f16b41797
 ---

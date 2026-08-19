@@ -50,11 +50,11 @@ GPT-5.6 界面把两件事分清楚：选模型（Luna/Terra/Sol）是换权重�
 - [推理模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/reasoning-models.md) — reasoning trace 行为定义
 - [预训练 vs SFT](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-pretraining-vs-sft.md) — 路径二的训练阶段基础
 - [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理 scaling 的成本/延迟权衡
-- [DeepSeek V4 训练方法论](ch01/432-deepseek-v4.html) — 路径一+三的实践
-- [Claude Code Extended Thinking](../ch03/084-claude-code.html) — effort 机制的关联讨论
+- [DeepSeek V4 训练方法论](ch01/1379-deepseek-v4.html) — 路径一+三的实践
+- [Claude Code Extended Thinking](../ch03/085-claude-code.html) — effort 机制的关联讨论
 - [LLM 推理 effort 安全分流](ch01/906-llm-thonking.html) — effort 在安全场景的应用
-- [Kimi K3 部署](../ch11/088-deploying-kimi-k3-on-aws.html) — reasoning_effort 参数的工程实践
-- [Agent Loops](../ch03/084-claude-code.html) — Codex/Claude Code 的工程上下文
+- [Kimi K3 部署](../ch11/087-deploying-kimi-k3-on-aws.html) — reasoning_effort 参数的工程实践
+- [Agent Loops](../ch03/085-claude-code.html) — Codex/Claude Code 的工程上下文
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codexclaude-code-的推理-effort-本质就是往-prompt-里塞了一句话.md)
 

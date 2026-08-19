@@ -1,5 +1,5 @@
 ---
-title: "Agent落地真相：协议、成本与进化——一场关于智能体从"能跑通"到"能投产"的讨论"
+title: "Agent落地真相：协议、成本与进化——一场关于智能体从\"能跑通\"到\"能投产\"的讨论"
 source: wechat
 url: http://mp.weixin.qq.com/s?__biz=MzU0MDI4OTk2Mw==&mid=2247502105&idx=1&sn=1afef9b3a574498d2f833fe6c1bef535&chksm=fb39f7ddcc4e7ecbb1f7ded92b5249fe3f938750cceb1a170623fdb3aa49e8963ed561d50a53#rd
 ingest_date: 2026-07-03

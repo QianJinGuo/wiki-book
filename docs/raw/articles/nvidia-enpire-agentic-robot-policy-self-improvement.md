@@ -1,5 +1,5 @@
 ---
-source_url: "https://research.nvidia.com/labs/gear/enpire/""
+source_url: "https://research.nvidia.com/labs/gear/enpire/"
 ingested: 2026-06-26
 sha256: 4a04f39d69972707
 ---

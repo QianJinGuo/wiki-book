@@ -70,7 +70,7 @@ Agent 从两个来源获取稳定性知识：
 
 ## 关联
 
-- [LLM 超算协议](ch01/276-openai.html) — 解决超大集群训练不稳定性的网络协议层面方案，与算力风洞在 GPU 集群稳定性领域互补
+- [LLM 超算协议](ch01/594-openai.html) — 解决超大集群训练不稳定性的网络协议层面方案，与算力风洞在 GPU 集群稳定性领域互补
 - [AI Infra 运维智能体基准](ch01/1577-ai-infra.html) — 首个针对 GPU 集群故障的 AI Infra 运维智能体评测基准
 - [Spec as AIOS：AI-Native 全栈交付的抗熵架构](../ch05/022-ai-native.html) — 高德的 AI Native 架构实践，与算力风洞同为阿里巴巴系 AI Native 体系
 

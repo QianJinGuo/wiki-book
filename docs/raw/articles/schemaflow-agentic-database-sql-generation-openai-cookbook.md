@@ -4,7 +4,7 @@ source: rss
 source_url: https://developers.openai.com/cookbook/examples/partners/schemaflow_design_guide/schemaflow_cookbook
 ingested: 2026-06-09
 sha256: pending
-author: OpenAI Cookbook (partner: SchemaFlow)
+author: "OpenAI Cookbook (partner: SchemaFlow)"
 tags: [agent, harness, openai, sql, eval, ratchet, pydantic, guardrails]
 type: raw-article
 review_value: 8

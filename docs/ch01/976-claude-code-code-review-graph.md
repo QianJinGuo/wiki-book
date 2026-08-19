@@ -12,8 +12,8 @@
 
 ## 相关实体
 - [Code Review Graph](ch01/1113-code-review-graph-claude-code-6-8-token.html)
-- [Claude Code Self Repair Hooks Memory Config](../ch03/084-claude-code.html)
-- [Claude Code Hackathon Winners 2026](../ch03/084-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/085-claude-code.html)
+- [Claude Code Hackathon Winners 2026](../ch03/085-claude-code.html)
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
 - [Claude Code Agent View Huashu](../ch09/003-claude-code-agent-view.html)
 

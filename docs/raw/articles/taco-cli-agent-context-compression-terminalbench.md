@@ -1,5 +1,5 @@
 ---
-title: TACO: 让 CLI Agent 在自主迭代中学会丢掉无用上下文
+title: "TACO"
 source: wechat
 url: https://mp.weixin.qq.com/s/uqpkQ7VRXD80Tq5on-2MPg
 mp_name: 机器之心

@@ -12,9 +12,9 @@
 先在 Amazon 搜关键词，看头部竞品的价格带、评分、评论数、主图和五点卖点。再打开 Keepa 看排名和价格走势，用 Helium 10 或 Jungle Scout 补一轮关键词。接着翻评论，摘几条差评，问供应商报价，最后靠经验给一个判断。
 
 ## 相关实体
-- [Claude Code Self Repair Hooks Memory Config](../ch03/084-claude-code.html)
+- [Claude Code Self Repair Hooks Memory Config](../ch03/085-claude-code.html)
 - [Code Review Graph](ch01/1113-code-review-graph-claude-code-6-8-token.html)
-- [Claude Code Hackathon Winners 2026](../ch03/084-claude-code.html)
+- [Claude Code Hackathon Winners 2026](../ch03/085-claude-code.html)
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
 - [Claude Code Agent View Huashu](../ch09/003-claude-code-agent-view.html)
 

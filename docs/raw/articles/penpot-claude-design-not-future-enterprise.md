@@ -1,5 +1,5 @@
 ---
-source_url: "https://penpot.app/blog/designing-with-ai-why-claude-design-is-not-the-future-of-enterprise-design/""
+source_url: "https://penpot.app/blog/designing-with-ai-why-claude-design-is-not-the-future-of-enterprise-design/"
 ingested: 2026-06-26
 sha256: 60f59f219783c411
 ---

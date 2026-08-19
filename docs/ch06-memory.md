@@ -2,7 +2,7 @@
 
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
-> 本章收录 **54 篇**实体，按深度递增排列。
+> 本章收录 **55 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 45 |
+| ⭐⭐ 工程师 | 需编程基础 | 46 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 
 ---
@@ -73,18 +73,19 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 - [037. OpenChronicle — AI可复用记忆层](ch06/037-openchronicle-ai)
 - [038. Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件](ch06/038-qoder-harness)
 - [039. Claude Code Agent Memory Systems — L0~L3 四层记忆方案](ch06/039-claude-code-agent-memory-systems-l0-l3)
-- [040. Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度](ch06/040-agent-vs)
-- [041. Headroom 是怎么省上下文的](ch06/041-headroom)
-- [042. 面向复杂业务场景的智能分析 Skills 架构设计与演进实践](ch06/042-skills)
-- [043. TencentDB Agent Memory：L0-L3 语义金字塔长期记忆](ch06/043-tencentdb-agent-memory-l0-l3)
-- [044. Skill 编排的 6 种依赖关系](ch06/044-skill-6)
-- [045. 参数化 Memory 漫谈（纯干货）](ch06/045-memory)
-- [046. Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）](ch06/046-loop-engineering-the-anthropic-playbook-agent-v2606)
-- [047. 别让Agent什么都记 上交×腾讯提出 AdaMem](ch06/047-agent-adamem)
-- [048. AI Memory Architecture: Deep Dive](ch06/048-ai-memory-architecture-deep-dive)
-- [049. MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](ch06/049-miroflow-deep-research-agent-code-agent-6)
-- [050. Agent Harness 上下文管理：工作集视角](ch06/050-agent-harness)
-- [051. MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战](ch06/051-minimax-token-agentos)
-- [052. Claude Code Subagent 上下文卫生](ch06/052-claude-code-subagent)
-- [053. 注意力塌缩与上下文管理](ch06/053-page-053)
-- [054. Claude Code Session 管理与 1M 上下文最佳实践](ch06/054-claude-code-session-1m)
+- [040. Powering scientific discovery](ch06/040-powering-scientific-discovery)
+- [041. Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度](ch06/041-agent-vs)
+- [042. Headroom 是怎么省上下文的](ch06/042-headroom)
+- [043. 面向复杂业务场景的智能分析 Skills 架构设计与演进实践](ch06/043-skills)
+- [044. TencentDB Agent Memory：L0-L3 语义金字塔长期记忆](ch06/044-tencentdb-agent-memory-l0-l3)
+- [045. Skill 编排的 6 种依赖关系](ch06/045-skill-6)
+- [046. 参数化 Memory 漫谈（纯干货）](ch06/046-memory)
+- [047. Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）](ch06/047-loop-engineering-the-anthropic-playbook-agent-v2606)
+- [048. 别让Agent什么都记 上交×腾讯提出 AdaMem](ch06/048-agent-adamem)
+- [049. AI Memory Architecture: Deep Dive](ch06/049-ai-memory-architecture-deep-dive)
+- [050. MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](ch06/050-miroflow-deep-research-agent-code-agent-6)
+- [051. Agent Harness 上下文管理：工作集视角](ch06/051-agent-harness)
+- [052. MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战](ch06/052-minimax-token-agentos)
+- [053. Claude Code Subagent 上下文卫生](ch06/053-claude-code-subagent)
+- [054. 注意力塌缩与上下文管理](ch06/054-page-054)
+- [055. Claude Code Session 管理与 1M 上下文最佳实践](ch06/055-claude-code-session-1m)

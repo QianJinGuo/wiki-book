@@ -17,11 +17,11 @@ AlphaEvolve 不是把 LLM 当成一个更聪明的程序员，而是把 LLM 放�
 核心判断：只要问题存在可执行、可验证、可比较的反馈回路，LLM 就可以不只"直接答题"，而是被放进一个进化系统里持续生成、评估、保留和重组更好的程序。
 
 ## 相关实体
-- [Alphaevolve Impact](../ch04/561-alphaevolve-impact-deepmind.html)
-- [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/054-coding-agent.html)
+- [Alphaevolve Impact](../ch04/564-alphaevolve-impact-deepmind.html)
+- [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/055-coding-agent.html)
 - [Gemma 4 Qat Models Optimizing Compression](ch01/864-gemma-4.html)
 - [Servicenow Ui Is Dead Agent](../ch03/037-agent.html)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/005-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/589-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaevolve-deepmind-discovery-agent.md)
 

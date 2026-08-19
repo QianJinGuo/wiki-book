@@ -28,7 +28,7 @@
 - [Spec Kit Bmad Sdd Practice Yexiaocha](../ch01/1213-spec.html)
 - [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](../ch03/037-agent.html)
 - [24H Worker Agent](../ch03/037-agent.html)
-- [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/670-ai-agent.html)
+- [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/439-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openspec-spec-driven-development-trae-solo.md)
 

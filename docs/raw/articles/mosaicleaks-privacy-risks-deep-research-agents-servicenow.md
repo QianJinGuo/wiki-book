@@ -1,5 +1,5 @@
 ---
-source_url: "https://huggingface.co/blog/ServiceNow/mosaicleaks""
+source_url: "https://huggingface.co/blog/ServiceNow/mosaicleaks"
 ingested: 2026-06-26
 sha256: bd665973614d6b70
 ---

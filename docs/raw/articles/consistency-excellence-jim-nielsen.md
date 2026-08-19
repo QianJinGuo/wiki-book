@@ -1,5 +1,5 @@
 ---
-source_url: "https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/""
+source_url: "https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/"
 ingested: 2026-06-26
 sha256: 89b7bb354b199863
 ---

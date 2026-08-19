@@ -34,7 +34,7 @@ v2 的技术核心在于将大语言模型微调适配到神经数据领域。�
 
 ### AI Agent 辅助 vs 人工决策
 
-v2 的优化过程中使用了 AI agent 探索可能的优化方向，但最终配置由工程师人工选择。这表明在当前阶段，AI agent 更适合作为"探索者"而非"决策者"——可以高效覆盖参数空间，但训练配置的最终确定仍需要人类对生物信号特性的深层理解。这与 [Agent Harness Production](../ch05/042-agent-harness.html) 中讨论的"人在回路中"原则一致。
+v2 的优化过程中使用了 AI agent 探索可能的优化方向，但最终配置由工程师人工选择。这表明在当前阶段，AI agent 更适合作为"探索者"而非"决策者"——可以高效覆盖参数空间，但训练配置的最终确定仍需要人类对生物信号特性的深层理解。这与 [Agent Harness Production](../ch05/043-agent-harness.html) 中讨论的"人在回路中"原则一致。
 
 ### 与 Meta 更大的战略关联
 
@@ -55,8 +55,8 @@ Brain2Qwerty v2 不是孤立的研究，而是 Meta 开放式大脑基础模型�
 ## 相关实体
 
 - [2026 06 30 登上Nature子刊 Meta脑机接口重大阶段性进展 超高实时解码准确率 机器之心](ch01/1129-20.html) — Meta 脑机接口 Nature 子刊报道
-- [Anthropic又叒发现Ai意识了这次要读写Claude的前额叶](ch01/778-anthropic.html) — AI 神经科学相关研究
-- [Agent Harness Production](../ch05/042-agent-harness.html) — Agent 生产级工程
+- [Anthropic又叒发现Ai意识了这次要读写Claude的前额叶](ch01/779-anthropic.html) — AI 神经科学相关研究
+- [Agent Harness Production](../ch05/043-agent-harness.html) — Agent 生产级工程
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-brain2qwerty-v2-bci-2026.md)

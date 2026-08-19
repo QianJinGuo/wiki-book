@@ -53,7 +53,7 @@ Capacity Blocks填补了"灵活但贵"与"便宜但僵化"之间的中间地带�
 - 两者共同构成GPU资源管理的"预订-使用-降级"完整链路
 ## 相关实体
 - [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/524-aws-sagemaker-capacity-aware-inference-fallback.html)
-- [Building Blocks for Foundation Model Training and Inference on AWS](ch11/123-building-blocks-for-foundation-model-training-and-inference.html)
+- [Building Blocks for Foundation Model Training and Inference on AWS](ch11/122-building-blocks-for-foundation-model-training-and-inference.html)
 ---
 *Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-ec2-capacity-blocks-gpu-ml.md)*
 

@@ -39,7 +39,7 @@ DiScoFormer 在这两个极端之间找到了一个新的平衡点：利用 Tran
 
 ### 与扩散模型的关系
 
-分数估计是扩散模型（diffusion model）的核心组成部分——扩散模型的训练目标本质上就是在学习数据分布的分数函数（score function）。DiScoFormer 的"一个模型同时估计密度和分数"的能力，对扩散模型领域具有潜在影响：如果有一个统一的模型可以同时完成这两项任务，且能跨分布零样本泛化，那么它可能简化扩散模型的训练和推理流程。相关方向可参考 [DiffusionGemma](ch01/864-gemma-4.html) 和 [CoLa-DLM](ch01/532-cola-dlm.html) 等扩散语言模型的工作。
+分数估计是扩散模型（diffusion model）的核心组成部分——扩散模型的训练目标本质上就是在学习数据分布的分数函数（score function）。DiScoFormer 的"一个模型同时估计密度和分数"的能力，对扩散模型领域具有潜在影响：如果有一个统一的模型可以同时完成这两项任务，且能跨分布零样本泛化，那么它可能简化扩散模型的训练和推理流程。相关方向可参考 [DiffusionGemma](ch01/864-gemma-4.html) 和 [CoLa-DLM](ch01/531-cola-dlm.html) 等扩散语言模型的工作。
 
 ## 深度分析
 
@@ -74,8 +74,8 @@ DiSCoFormer 同时提供了密度值和分数值，这使其天然适用于马�
 ## 相关实体
 
 - [DiffusionGemma — 谷歌 4 倍快速文本生成](ch01/864-gemma-4.html)
-- [CoLa-DLM — 字节跳动连续潜在扩散语言模型](ch01/532-cola-dlm.html)
-- [ACL 2026 扩散语言模型的块大小推理新难题](ch01/360-acl-2026.html)
+- [CoLa-DLM — 字节跳动连续潜在扩散语言模型](ch01/531-cola-dlm.html)
+- [ACL 2026 扩散语言模型的块大小推理新难题](ch01/202-acl-2026.html)
 - [DeepMind Transformer 状态追踪研究](ch01/1129-20.html)
 - [扩散模型一致性框架 2026 综述](ch01/1129-20.html)
 - [DiffusionGemma 透明度审计](https://github.com/QianJinGuo/wiki/blob/main/entities/diffusiongemma-transparency-audit-lesswrong.md)

@@ -1,5 +1,5 @@
 ---
-title: Schmoozing Is Dead, Agents Are Hitting 120% of Humans, and Growth Is the Only Thing That Matters: 10 Things From the Closing Q&A at SaaStr AI Annual 2026
+title: "Schmoozing Is Dead, Agents Are Hitting 120% of Humans, and Growth Is the Only Thing That Matters"
 source: newsletter
 source_url: https://www.saastr.com/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing-that-matters-10-things-from-the-closing-qa-at-saastr-ai-annual-2026/
 fetcher: jina

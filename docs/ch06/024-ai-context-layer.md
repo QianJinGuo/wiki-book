@@ -49,7 +49,7 @@ $$P = f(I, C)$$
 4. 需要像代码库一样维护：版本控制、测试、治理
 
 ## 与现有知识的链接
-- → [Harness Context Management](../ch05/042-agent-harness.html) — Context作为Agent的工作集
+- → [Harness Context Management](../ch05/043-agent-harness.html) — Context作为Agent的工作集
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-context-layer-kgc-2026.md)
 
 ## 核心价值
@@ -87,10 +87,10 @@ Context建设落在数据工程、AI产品、治理三个团队的交叉地带�
 
 ## 相关实体
 - [OpenHuman: AI Agent 持久记忆框架](../ch04/180-agent-memory.html)
-- [AI Coding Agent 记忆系统](../ch04/405-ai-coding-agent.html)
-- [Claude Code Agent 工程设计](../ch03/074-claude-code-agent.html)
+- [AI Coding Agent 记忆系统](../ch04/406-ai-coding-agent.html)
+- [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/411-pi-agent.html)
+- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/412-pi-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

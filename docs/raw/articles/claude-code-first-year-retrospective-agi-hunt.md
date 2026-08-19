@@ -2,8 +2,8 @@
 title: "Claude Code 之父一周年回顾：下一年的形态，一定跟现在完全不同"
 source_url: "https://mp.weixin.qq.com/s/OXXZdKfBwFJJK14kKBJ5Kw"
 source: wechat
-ingested:2026-06-10
-sha256:b52db641e005a02de59848388311bafab94d331e029231d1af2d6b18c51e6e58
+ingested: 2026-06-10
+sha256: b52db641e005a02de59848388311bafab94d331e029231d1af2d6b18c51e6e58
 type: raw-article
 tags: [wechat, claude-code, boris-cherny, cat-wu, anthropic, anniversary, retrospective, routines, auto-mode, agent-view, dynamic-workflows, source-leak, kairos, undercover-mode, voice-mode, remote-control, agi-hunt]
 ---

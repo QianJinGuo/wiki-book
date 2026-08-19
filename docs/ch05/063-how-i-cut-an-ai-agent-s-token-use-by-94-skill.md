@@ -85,9 +85,9 @@ Vivek 开发了一种他称为「natlang code」（自然语言代码）的理�
 ## 相关实体
 
 - [Agent Harness Engineering Survey](ch05/065-harness-engineering.html)
-- [Skill 编排的6种依赖关系](../ch04/348-skill.html)
+- [Skill 编排的6种依赖关系](../ch04/349-skill.html)
 - [CLI Agent模式——MCP与Shell Agent](../ch03/037-agent.html)
-- [Skill Hub MVP评估与发布](../ch04/348-skill.html)
+- [Skill Hub MVP评估与发布](../ch04/349-skill.html)
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivekhaldar-compiling-ai-agent-skill-token-cut-94pct-2026.md)

@@ -32,7 +32,7 @@ GPT-Live 的委派架构是语音 AI 行业的一个分水岭时刻。在此之�
 
 GPT-Live 的解法本质上是一种**异构计算（Heterogeneous Computing）**在 LLM 层面的应用——将不同性质的任务分配给不同特性的模型，通过模型间的协同来突破单一模型的性能天花板。前台模型的优化目标是响应速度（100ms 级），后台模型的优化目标是推理质量（秒级）。两者通过"委派协议"实现松耦合协同。
 
-这种架构在更广泛的 AI 系统中已有先例：[Harness Engineering](../ch05/065-harness-engineering.html) 框架中的多 Agent 协作、[Claude Code](../ch03/074-claude-code-agent.html) 的 plan mode + 子 agent 编排，都体现了类似的设计思想——将复杂任务拆解为前台（快速交互）和后台（深度处理），通过明确的接口协议实现解耦。
+这种架构在更广泛的 AI 系统中已有先例：[Harness Engineering](../ch05/065-harness-engineering.html) 框架中的多 Agent 协作、[Claude Code](../ch03/075-claude-code-agent.html) 的 plan mode + 子 agent 编排，都体现了类似的设计思想——将复杂任务拆解为前台（快速交互）和后台（深度处理），通过明确的接口协议实现解耦。
 
 ### "快"不是唯一目标——对话节奏感才是
 
@@ -78,8 +78,8 @@ GPT-Live 的发布也揭示了实时语音 Agent 的未来发展方向：
 
 - [GPT-5.6 分层定价模型](ch01/737-codex.html)
 - [Harness Engineering](../ch05/065-harness-engineering.html)
-- [Claude Code Agent Engineering](../ch03/074-claude-code-agent.html)
-- [CodeX 上位](ch01/893-chatgpt.html)
+- [Claude Code Agent Engineering](../ch03/075-claude-code-agent.html)
+- [CodeX 上位](ch01/1395-chatgpt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai放出gpt-live背后是gpt55实时语音有点恐怖了.md)
 

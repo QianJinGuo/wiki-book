@@ -187,8 +187,8 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05/042-agent-harness.html) | [{{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit]({{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit)|
 | 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05/036-harness-12.html) | [{{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison]({{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison)|
 | 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05/073-harness-engineering-10-8-checklist-15.html) | [{{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026]({{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026)|
-| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/133-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
-| Better-Harness | [Better Harness Eval Trace Methodology](ch05/144-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
+| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/134-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
+| Better-Harness | [Better Harness Eval Trace Methodology](ch05/145-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
 
 ### 4.4 Memory 精读清单
 
@@ -214,7 +214,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/039-cli-mcp-cli-skill.html) | [{{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder]({{BASE_URL}}/raw/articles/cli-mcp-skill-architecture-decision-vibecoder)|
 | Skill 版本管理 | [Skill Version Management Semantic Versioning Practices Winty](ch07/051-skill.html) | [{{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty]({{BASE_URL}}/raw/articles/skill-version-management-semantic-versioning-practices-winty)|
 | Anthropic 12 个 MCP 模式 | [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch07/052-anthropic-agent-12-mcp.html) | [{{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2]({{BASE_URL}}/raw/articles/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2)|
-| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/096-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [{{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix]({{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix)|
+| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/097-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [{{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix]({{BASE_URL}}/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix)|
 
 ### 4.6 RAG 精读清单
 
@@ -413,7 +413,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 |---|---|---|
 | RLHF / Post-training / ATOM | [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch09/170-ai.html) | [{{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini]({{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini)|
 | NVIDIA Blackwell MLPerf Training | [Nvidia Blackwell Mlperf Training 6 0 Benchmark Results 2026 06](ch09/170-ai.html) | [{{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06]({{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06)|
-| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1537-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
+| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1578-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
 
 ### 6.3 推理优化精读清单
 

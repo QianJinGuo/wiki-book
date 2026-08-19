@@ -66,12 +66,12 @@ Owner 不是简单地分配任务和等待结果，而是负责：
 当系统复杂度提升时，Verifier 本身也可能出错。可以考虑"Verifier 的输出由另一个 Verifier 检查"的机制（如代码审查中 Reviewer 的评论也需要被审视），但这会显著增加系统复杂度。建议仅在核心质量关卡使用多层验证。
 
 ## 参考
-- [Minimax Agent Team Mavis](../ch04/208-ai-minimax-agent-team-mavis.html)
+- [Minimax Agent Team Mavis](../ch04/209-ai-minimax-agent-team-mavis.html)
 
 ## 相关实体
-- [Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](../ch11/321-amazon-nova.html)
-- [Claude Code 架构解析](../ch03/084-claude-code.html)
-- [Agent 时代架构师技能指南](../ch03/076-skills.html)
+- [Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](../ch11/318-amazon-nova.html)
+- [Claude Code 架构解析](../ch03/085-claude-code.html)
+- [Agent 时代架构师技能指南](../ch03/077-skills.html)
 
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [routa 多智能体协同交付平台](../ch03/037-agent.html)

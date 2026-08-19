@@ -1,6 +1,6 @@
 ---
 source_url: https://mp.weixin.qq.com/s/657EDcc9mEdilrZm-69BDA
-ingested:2026-06-10
+ingested: 2026-06-10
 sha256: dd9b1bd48e2aa4e3340b6415e73a966951b7a57547e1558657b7a071dfc1bedf
 ---
 

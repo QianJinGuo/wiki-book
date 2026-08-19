@@ -1,5 +1,5 @@
 ---
-source_url: "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic""
+source_url: "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic"
 ingested: 2026-06-26
 sha256: d37d17b3047e231e
 ---

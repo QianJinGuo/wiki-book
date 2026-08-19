@@ -1,5 +1,5 @@
 ---
-source_url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash""
+source_url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash"
 ingested: 2026-06-26
 sha256: 7989d1a8a96e894c
 ---

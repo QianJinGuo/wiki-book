@@ -1,13 +1,13 @@
 ---
-title: "如何更科学、方向可控的实现 Skill 的"自进化"? — Trace2Skill / EvoSkill / SkillOpt 三路线深度解析"
-created:2026-06-10
-updated:2026-06-10
+title: "如何更科学、方向可控的实现 Skill 的\"自进化\"? — Trace2Skill / EvoSkill / SkillOpt 三路线深度解析"
+created: 2026-06-10
+updated: 2026-06-10
 type: raw-article
-platform:阿里云开发者
-author:飞樰
+platform: 阿里云开发者
+author: 飞樰
 source_url: https://mp.weixin.qq.com/s/2Cq0QR3vcKlMHkI0XyYYrw
-sha256:061c6fd3bbd765e7ace7977c3bce337e2f8a1a6547aacd61953957dc688084dc
-source:阿里云开发者
+sha256: 061c6fd3bbd765e7ace7977c3bce337e2f8a1a6547aacd61953957dc688084dc
+source: 阿里云开发者
 tags: [skill, self-evolution, trace2skill, evoskill, skillopt, agent, overfitting, verification, training-paradigm, qwen, microsoft, frontier-set, learning-rate, minibatch, hold-out-gating, feixiao, aliyun]
 provenance_state: archived
 ---

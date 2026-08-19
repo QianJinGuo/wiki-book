@@ -1,5 +1,5 @@
 ---
-source_url: "https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/""
+source_url: "https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/"
 ingested: 2026-06-26
 sha256: 3e175c0a23948dd4
 ---

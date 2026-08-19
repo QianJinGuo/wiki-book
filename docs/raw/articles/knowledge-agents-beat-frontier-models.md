@@ -1,5 +1,5 @@
 ---
-source_url: "https://weightythoughts.com/p/knowledge-agents-beat-frontier-models""
+source_url: "https://weightythoughts.com/p/knowledge-agents-beat-frontier-models"
 ingested: 2026-06-26
 sha256: 8c917b61702a2a42
 ---

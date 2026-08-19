@@ -1,5 +1,5 @@
 ---
-source_url: "https://arxiv.org/abs/2606.24597""
+source_url: "https://arxiv.org/abs/2606.24597"
 ingested: 2026-06-26
 sha256: aaa43ca7252917d4
 ---

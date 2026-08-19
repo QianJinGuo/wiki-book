@@ -8,12 +8,12 @@
 
 ## 相关实体
 
-- [an opinionated guide to using ai right now](../ch09/097-an-opinionated-guide-to-using-ai-right-now.html)
-- [cmu language models need sleep (arxiv 2605.26099)：ssm-attent](ch01/266-0.html)
+- [an opinionated guide to using ai right now](../ch09/098-an-opinionated-guide-to-using-ai-right-now.html)
+- [cmu language models need sleep (arxiv 2605.26099)：ssm-attent](ch01/265-0.html)
 - [rod johnson 回归：embabel 与「最后一波由人类选择的框架」](../ch07/024-embabel.html)
 - [how my non-engineering team at sentry learned to ship](ch01/646-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/937-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
-- [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](ch01/332-1.html)
+- [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](ch01/358-1.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/108-ai.html)
 - [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/1166-self-taught-rlvr.html)
 - [the recent history of ai in 32 otters](ch01/836-the-recent-history-of-ai-in-32-otters.html)
@@ -46,11 +46,11 @@
 - **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/819-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/298-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/301-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 
 ## 实践启示

@@ -21,7 +21,7 @@ Inkling 是 Thinking Machines Lab 不同规模模型家族中的首款产品。�
 
 ## 与 Thinking Machines 交互模型的关系
 
-Thinking Machines Lab 此前发布了 [交互模型（Interaction Models）](../ch04/327-thinking-machines-interaction-models.html)，专注于解决假实时问题（200ms 微轮次双向交换）。Inkling 是其基础模型层，与交互模型构成两层能力体系：Inkling 提供跨模态理解与推理，交互模型提供实时双向交互能力。
+Thinking Machines Lab 此前发布了 [交互模型（Interaction Models）](../ch04/328-thinking-machines-interaction-models.html)，专注于解决假实时问题（200ms 微轮次双向交换）。Inkling 是其基础模型层，与交互模型构成两层能力体系：Inkling 提供跨模态理解与推理，交互模型提供实时双向交互能力。
 
 ## 深度分析
 

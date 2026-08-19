@@ -1,5 +1,5 @@
 ---
-title: "ICML 2026 | 当线性注意力学会"写入前思考"：并行化的多步记忆写入"
+title: "ICML 2026 | 当线性注意力学会\"写入前思考\"：并行化的多步记忆写入"
 source_url: "https://mp.weixin.qq.com/s/luHnepErnw3Ujfjcr5YIQg"
 author: "腾讯广告技术"
 feed: "大模型智能"

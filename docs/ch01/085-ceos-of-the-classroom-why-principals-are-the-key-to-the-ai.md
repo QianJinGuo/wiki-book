@@ -50,13 +50,13 @@ Summit 上的讨论发生了范式转移：从「把 AI 当作效率工具」转
 
 ## 相关实体
 
-- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/189-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](../ch11/188-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [The best argument I've heard for why AI won't take your job](../ch05/108-ai.html)
 - [Jagged AI Frontier](../ch05/108-ai.html)
 - [Agentic AI 与人类共存范式](ch01/827-ai-mollick.html)
 - [管理作为 AI 时代的超能力](ch01/679-management-as-ai-superpower.html)
 - [Canvas 泄露事件：教育平台安全的警钟](../ch12/034-canvas-breach-disrupts-schools-colleges-nationwide.html)
-- [Salesforce 无头软件化](ch01/332-1.html)
+- [Salesforce 无头软件化](ch01/358-1.html)
 
 ---
 

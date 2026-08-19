@@ -1,5 +1,5 @@
 ---
-source_url: "https://microsoft.design/articles/haptics-design-and-implementation/""
+source_url: "https://microsoft.design/articles/haptics-design-and-implementation/"
 ingested: 2026-06-26
 sha256: 70ab1b4aed3e7f11
 ---

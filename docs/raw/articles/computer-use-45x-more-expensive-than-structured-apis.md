@@ -12,9 +12,8 @@ source_published: 2026-04-27
 type: raw-article
 created: 2026-05-10
 updated: 2026-05-10
-tags: []
 tags: [raw-status:stub]
-
 ---
+
 # Computer Use is 45x More Expensive Than Structured APIs
 Palash Awasthi 的系统 Benchmark：Vision agent vs API agent 在同一个 admin panel 任务上的成本对比。Vision agent: 53 steps/551K tokens/~17min。API agent: 8 calls/12K tokens/~20sec（Haiku 仅 8sec/10K tokens）。核心洞察："An agent that must see in order to act will always pay for the seeing."

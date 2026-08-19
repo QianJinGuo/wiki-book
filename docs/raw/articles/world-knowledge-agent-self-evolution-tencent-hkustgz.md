@@ -1,5 +1,5 @@
 ---
-title: "让 Agent 在没有任务、没有奖励时先学会"认识世界""
+title: "让 Agent 在没有任务、没有奖励时先学会\"认识世界\""
 type: raw-article
 tags: [agent, self-improvement, world-knowledge, reinforcement-learning, web-agent, tencent]
 source_url: "https://mp.weixin.qq.com/s/LjhOh9-15SwyZ8bXt1URVQ"

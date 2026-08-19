@@ -1,5 +1,5 @@
 ---
-source_url: "https://aws.amazon.com/blogs/machine-learning/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore/""
+source_url: "https://aws.amazon.com/blogs/machine-learning/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore/"
 ingested: 2026-06-26
 sha256: 0c8f2863071971af
 ---

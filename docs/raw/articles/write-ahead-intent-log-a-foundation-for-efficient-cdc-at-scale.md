@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.infoq.com/presentations/write-ahead-intent-log/""
+source_url: "https://www.infoq.com/presentations/write-ahead-intent-log/"
 ingested: 2026-06-26
 sha256: 3d8d721c1ef7730f
 ---

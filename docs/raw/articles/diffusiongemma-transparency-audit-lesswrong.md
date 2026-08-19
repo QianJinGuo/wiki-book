@@ -1,5 +1,5 @@
 ---
-source_url: "https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters""
+source_url: "https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters"
 ingested: 2026-06-26
 sha256: efaa4a6e71b1cc20
 ---

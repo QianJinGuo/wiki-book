@@ -41,7 +41,7 @@ PDI Technologies 为内部长尾工具（成本计算器、表单、仪表板）
 
 ## 与 Wiki 现有知识的关联
 
-- 与 [LendingTree 多 Agent 架构](../ch04/762-how-lendingtree-built-a-multi-agent-mortgage-assistant-on-am.html) 同属"生产级多 Agent 架构"家族——都强调编排层与执行层解耦，但本文的核心增量是**规划/供给分离 + manifest 契约**（确定性执行 vs 对话式规划）
+- 与 [LendingTree 多 Agent 架构](../ch04/784-how-lendingtree-built-a-multi-agent-mortgage-assistant-on-am.html) 同属"生产级多 Agent 架构"家族——都强调编排层与执行层解耦，但本文的核心增量是**规划/供给分离 + manifest 契约**（确定性执行 vs 对话式规划）
 - [多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) 的信任画像分离实践——规划 Agent 可容忍 LLM 幻觉（对话），供给 Agent 必须确定性（记录/复现/无幻觉）
 - [Orchestrator-Worker 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) 的变体——这里不是同层 worker 分工，而是跨信任边界的规划→执行流水线
 - [Agent 部署策略](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-deployment-strategy.md) 与 serverless scale-to-zero 的工程实践

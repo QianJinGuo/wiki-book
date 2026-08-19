@@ -80,11 +80,11 @@ GitOps 让你能更安全地加快变更速度，但需要显式工程优化才�
 - **浸泡测试（Soak Test）**：在大变更或峰值流量前，在预生产环境持续压测，发现资源限制和 autoscaling 行为的问题
 - **Alert 修剪（Alert Pruning）**：每次 incident 后问：这个 alert 是否帮助了我们，还是只是一个噪音？持续修剪是保持可观测性信号纯净的必要工作
 ## 相关实体
-- [What Marketing Can Learn From It About Running Complex Technology](../ch03/112-what-marketing-can-learn-from-it-about-running-complex-techn.html)
+- [What Marketing Can Learn From It About Running Complex Technology](../ch03/113-what-marketing-can-learn-from-it-about-running-complex-techn.html)
 - [Forward Networks Predict Network Verification](https://github.com/QianJinGuo/wiki/blob/main/entities/forward-networks-predict-network-verification.md)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/247-openclaw.html)
-- [Hiclaw V110 K8S Hermes Worker](../ch01/295-hermes.html)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/340-skill.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/439-ai-agent.html)
+- [Hiclaw V110 K8S Hermes Worker](../ch01/291-hermes.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](../ch04/349-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-kubernetes-dev-setup-to-production-what-actually-change.md)
 

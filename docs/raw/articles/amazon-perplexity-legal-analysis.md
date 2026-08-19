@@ -1,5 +1,5 @@
 ---
-source_url: "https://educatedguesswork.org/posts/notes-amazon-perplexity/""
+source_url: "https://educatedguesswork.org/posts/notes-amazon-perplexity/"
 ingested: 2026-06-26
 sha256: 6135a87ed030fb72
 ---

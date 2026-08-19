@@ -1,5 +1,5 @@
 ---
-source_url: "https://eaton-works.com/2026/06/24/jnj-webapp-hacks""
+source_url: "https://eaton-works.com/2026/06/24/jnj-webapp-hacks"
 ingested: 2026-06-26
 sha256: 7a979827e144cf17
 ---

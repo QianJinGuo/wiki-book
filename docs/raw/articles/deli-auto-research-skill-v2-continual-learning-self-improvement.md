@@ -1,6 +1,6 @@
 ---
 title: "DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了"
-description: "陈德里第二篇与AI合作论文：持续学习与自我改进统一框架，三轴分类法/五类方法论/收敛条件形式化/六开放挑战，评审8分
+description: "陈德里第二篇与AI合作论文：持续学习与自我改进统一框架，三轴分类法/五类方法论/收敛条件形式化/六开放挑战，评审8分"
 source_url: "https://mp.weixin.qq.com/s/g42Tchq89GVN7D35BVLqMA"
 author: "机器之心编辑部"
 platform: wechat

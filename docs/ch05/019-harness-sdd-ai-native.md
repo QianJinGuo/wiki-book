@@ -12,9 +12,9 @@
 ## 一、识别 AI Coding 的三大核心问题
 
 ## 相关实体
-- [Claude Code Prompt Context Harness](../ch09/072-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/241-ahe-agentic-harness-engineering.html)
-- [Pi Openclaw Coding Harness](../ch11/253-openclaw.html)
+- [Claude Code Prompt Context Harness](../ch09/073-claude-code-prompt.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
+- [Pi Openclaw Coding Harness](../ch11/252-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/055-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/065-harness-engineering.html)
 
@@ -195,12 +195,12 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 两篇是同一团队（高德广告工程 / 高德技术公众号）在 6 周内的演进：先讲"为什么要 Harness"，再讲"具体 Harness 体系长什么样"。
 
 ## 相关实体（更新）
-- [Claude Code Prompt Context Harness](../ch09/072-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/241-ahe-agentic-harness-engineering.html)
-- [Pi Openclaw Coding Harness](../ch11/253-openclaw.html)
+- [Claude Code Prompt Context Harness](../ch09/073-claude-code-prompt.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
+- [Pi Openclaw Coding Harness](../ch11/252-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/055-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/065-harness-engineering.html)
-- [K/S/T 知识底座](ch05/042-agent-harness.html)（相关：K/S/T 是知识用途分类，本文在工程层落地）
+- [K/S/T 知识底座](ch05/043-agent-harness.html)（相关：K/S/T 是知识用途分类，本文在工程层落地）
 - [Harness Engineering 综述](ch05/065-harness-engineering.html)（相关：三阶段 Prompt→Context→Harness）
 - [Spec as AIOS (高德 App 平台)](../ch01/1213-spec.html)（同团队同主题另一视角）
 

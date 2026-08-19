@@ -45,7 +45,7 @@ Claude Science 最好的参照物是 Claude Code。两者的架构思路高度�
 - Claude Code 是程序员的 AI 同事，管理软件工程工作流（编码、测试、调试、部署）
 - Claude Science 是科研人员的 AI 同事，管理科学研究工作流（文献、数据、分析、论文）
 
-两者共享 Anthropic 的 Agent 基础设施——[Claude Code 的工程化协作模式](../ch03/084-claude-code.html)（task 落盘、子代理分工、可观测性、审批门禁）在 Claude Science 中以科学场景的形态复现。例如审查智能体相当于代码 review 中的独立验证者，算力调度相当于 CI/CD 中的资源编排。
+两者共享 Anthropic 的 Agent 基础设施——[Claude Code 的工程化协作模式](../ch03/085-claude-code.html)（task 落盘、子代理分工、可观测性、审批门禁）在 Claude Science 中以科学场景的形态复现。例如审查智能体相当于代码 review 中的独立验证者，算力调度相当于 CI/CD 中的资源编排。
 
 ### 科研 Agent 的可复现性与治理挑战
 
@@ -69,10 +69,10 @@ Claude Science 最值得关注的特性是「科学成果可复现」。传统 A
 
 ## 相关实体
 
-- [Claude Code 架构分析](../ch03/084-claude-code.html) — Claude Science 的架构参照系
-- [Anthropic 输出验证](../ch09/101-anthropic-8x.html) — Anthropic 的验证与质量控制理念
+- [Claude Code 架构分析](../ch03/085-claude-code.html) — Claude Science 的架构参照系
+- [Anthropic 输出验证](../ch09/102-anthropic-8x.html) — Anthropic 的验证与质量控制理念
 - [Harness Engineering](../ch05/065-harness-engineering.html) — Agent 控制平面的系统方法论
-- [Agent Orchestration](../ch04/619-agent-orchestration.html) — 多 agent 编排在科研场景的应用
+- [Agent Orchestration](../ch04/622-agent-orchestration.html) — 多 agent 编排在科研场景的应用
 - [Google 的 Agent 策略](ch01/025-gemini-spark.html) — Google Gemini Spark 的竞争定位
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic推出claude-science-科研界的claude-code.md)

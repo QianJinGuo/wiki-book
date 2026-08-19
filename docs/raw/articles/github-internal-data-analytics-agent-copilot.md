@@ -1,5 +1,5 @@
 ---
-source_url: "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/""
+source_url: "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/"
 ingested: 2026-06-26
 sha256: 71f6edd816ec87ba
 ---

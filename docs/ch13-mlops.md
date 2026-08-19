@@ -550,7 +550,7 @@ LoongSuite 的演进路径——内部验证后贡献社区——是大型企业
 
 ## Ch13.004 ai-skill-测评指标体系
 
-> 📊 Level ⭐⭐ | 17.1KB | `entities/ai-skill-测评指标体系.md`
+> 📊 Level ⭐⭐ | 17.2KB | `entities/ai-skill-测评指标体系.md`
 
 [[raw/articles/ai-skill-测评指标体系]
 

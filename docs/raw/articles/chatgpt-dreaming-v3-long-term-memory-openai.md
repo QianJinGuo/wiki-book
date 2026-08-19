@@ -1,7 +1,7 @@
 ---
 sha256: b5ab8cba4f660233a60c4c50e8ca0cca0742a197c30bfb714130e3ed51017bdb
 source: "https://mp.weixin.qq.com/s/-k71aRS38kiZexsyFU3JGw"
-title: "ChatGPT 的"失忆症"终于被治好了！Dreaming V3 让大模型拥有长期记忆"
+title: "ChatGPT 的\"失忆症\"终于被治好了！Dreaming V3 让大模型拥有长期记忆"
 author: 大石
 publisher: 51CTO技术栈
 date: 2026-06-05

@@ -46,7 +46,7 @@
 
 ## 相关实体
 
-- [京东 Oxygen AIIC 平台](ch01/941-oxygen-aiic.html) — InstEmb 是 Oxygen 生态的指令遵循知识表征技术（同平台姊妹能力，互链）
+- [京东 Oxygen AIIC 平台](ch01/942-oxygen-aiic.html) — InstEmb 是 Oxygen 生态的指令遵循知识表征技术（同平台姊妹能力，互链）
 - [知识图谱 embedding](https://github.com/QianJinGuo/wiki/blob/main/entities/understand-anything-code-knowledge-graph-lum-jike.md) — 检索/语义匹配方向
 - [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — embedding 是 RAG 检索侧基础组件
 

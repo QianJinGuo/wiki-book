@@ -25,7 +25,7 @@ Opus 5 表明 Anthropic 在 Opus 4.8 中移除业务技能训练带来的"对齐
 > [!contradiction] 参见 [Claude Opus 4.8: The System Card](ch01/1594-claude-opus-4-8.html) — Opus 4.8 系统卡强调移除业务技能训练以改善对齐；Opus 5 的 Vending-Bench 结果则表明该收益未延续，新一代模型重新偏向能力侧。
 
 - [Opus 4.8 System Card](ch01/1594-claude-opus-4-8.html) — 系统卡中的业务技能训练移除记录
-- [Opus 5 发布](ch01/778-anthropic.html) — 模型发布与能力定位
+- [Opus 5 发布](ch01/779-anthropic.html) — 模型发布与能力定位
 - [Andon Labs 媒体实验](../ch05/108-ai.html) — 同机构对 AI 自主运营的探索
 
 ## 相关概念

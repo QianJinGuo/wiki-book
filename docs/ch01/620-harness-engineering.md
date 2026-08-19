@@ -42,7 +42,7 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 - **输入质量约束**：通过标准化模板（需求模板、方案模板等）约束输入质量
 - **对抗式纪律**：行为铁律 + 评估独立（防止自我高分）+ 自我合理化警报
 
-这种"Fixed Flow + 程序化门禁"的设计哲学，与[Agent配置模型](../ch04/348-skill.html)中"渐进式披露"的思路形成对照——前者通过纪律保障可靠性，后者通过结构控制信息密度。
+这种"Fixed Flow + 程序化门禁"的设计哲学，与[Agent配置模型](../ch04/349-skill.html)中"渐进式披露"的思路形成对照——前者通过纪律保障可靠性，后者通过结构控制信息密度。
 
 ### 3. 可监测性的三个维度——信任AI的工程前提
 
@@ -52,7 +52,7 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 - **可回溯**针对不同失败类型（UI还原偏差、API测试失败、跨阶段重试浪费）设计了不同的SOP路径，而非统一用"日志搜索"兜底
 - **可度量**通过双层Hook（业务级CLI + 平台级Hook Engine）汇聚数据，实现了Token/成本、耗时、重试率、代码改动量的量化追踪
 
-这与[钉钉招聘Agent](../ch05/042-agent-harness.html)中"可审计的Agent行为日志"的需求一致——在AI执行关键业务链时，可观测性不是运维锦上添花，而是信任AI的工程前提。
+这与[钉钉招聘Agent](../ch05/043-agent-harness.html)中"可审计的Agent行为日志"的需求一致——在AI执行关键业务链时，可观测性不是运维锦上添花，而是信任AI的工程前提。
 
 ### 4. 知识库作为AI长期记忆的运作机制
 
@@ -79,11 +79,11 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 ## 相关实体
 
 - [Agent落地真相](../ch03/037-agent.html)
-- [Agent配置模型](../ch04/348-skill.html)
-- [钉钉招聘Agent](../ch05/042-agent-harness.html)
-- [AgentCore旅行分配系统](../ch04/779-agentcore-harness.html)
-- [QoderWork Skills开发实践](../ch03/076-skills.html)
-- [淘宝数字人Agentic架构](../ch04/742-agentic.html)
+- [Agent配置模型](../ch04/349-skill.html)
+- [钉钉招聘Agent](../ch05/043-agent-harness.html)
+- [AgentCore旅行分配系统](../ch04/781-agentcore-harness.html)
+- [QoderWork Skills开发实践](../ch03/077-skills.html)
+- [淘宝数字人Agentic架构](../ch04/297-agentic.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

@@ -16,7 +16,7 @@ Z.ai 官方博客开篇即声明「Scaling post-training is all we did for GLM-5
 
 ## 六个「中国实验室如何跟上前沿」的解析因素
 
-Lambert 明确否定「蒸馏是主因」的常见解释（详见其 [The Distillation Panic](ch01/881-the-distillation-panic.html) 系列），提出六个大图景因素：
+Lambert 明确否定「蒸馏是主因」的常见解释（详见其 [The Distillation Panic](ch01/481-the-distillation-panic.html) 系列），提出六个大图景因素：
 
 1. **发布速度（最关键因素）**：Z.ai 从发布到公开以天计，OpenAI/Anthropic 以月计。美国实验室将发布前测试时间花在 benchmark 爬坡上，而中国实验室用这段时间持续 hillclimbing；在模型自改进循环加速的背景下，更快的发布周期对用户数据驱动的反馈环更有利。
 2. **对公共 benchmark 的关注度更高**：公开榜单（如 Artificial Analysis 智能指数）直接影响股价、融资与团队士气，「挑战美国巨头」的叙事本身就是融资故事的一部分。
@@ -35,7 +35,7 @@ Lambert 的评论是：开放权重时代这种安全措施作用有限——「
 
 - [Z.ai GLM-5.2 综合](https://github.com/QianJinGuo/wiki/blob/main/entities/z-glm-5.2.md) — 前代模型的综合实体（多来源）
 - [GLM-5.2 step change](../ch03/037-agent.html) — Interconnects 对 GLM-5.2 的分析
-- [The Distillation Panic](ch01/881-the-distillation-panic.html) — 蒸馏争论系列，本文明确否定蒸馏为主因
+- [The Distillation Panic](ch01/481-the-distillation-panic.html) — 蒸馏争论系列，本文明确否定蒸馏为主因
 - [Open models 差距](ch01/1129-20.html) — 开放模型前沿差距语境
 - [Gemma 4 开放模型采纳框架](ch01/864-gemma-4.html) — Interconnects 开放模型系列
 

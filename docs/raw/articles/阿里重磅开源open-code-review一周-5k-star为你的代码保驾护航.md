@@ -1,5 +1,5 @@
 ---
-title: "工作区模式 —— 评审所有暂存、未暂存和未追踪的变更ocr review# 分支对比 —— 比较两个引用之间的 diffocr review --from main --to feature-branch# 单次提交ocr review --commit abc123# 附带需求背景 —— 评审变更是否正确实现了需求ocr review --background \"实现用户登录的手机号验证逻辑\"
+title: "阿里重磅开源 Open Code Review 一周 5k Star，为你的代码保驾护航"
 created: 2026-05-01
 updated: 2026-07-24
 type: raw-article
