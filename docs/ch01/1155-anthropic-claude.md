@@ -45,10 +45,10 @@
 
 ## 相关实体
 
-- [Anthropic Demystifying Evals for AI Agents](../ch04/578-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 agent 评估方法论
-- [Anthropic LLM ATT&CK Navigator](../ch04/230-anthropic-llm.html) — Anthropic 网络攻防操作框架
-- [Claude Code 工具调用安全事件](../ch03/084-claude-code.html) — 另一类 Claude 安全事故
-- [AI 评估方法论](ch01/403-ai-evals.html) — 通用评估方法
+- [Anthropic Demystifying Evals for AI Agents](../ch04/581-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 agent 评估方法论
+- [Anthropic LLM ATT&CK Navigator](../ch04/231-anthropic-llm.html) — Anthropic 网络攻防操作框架
+- [Claude Code 工具调用安全事件](../ch03/085-claude-code.html) — 另一类 Claude 安全事故
+- [AI 评估方法论](ch01/402-ai-evals.html) — 通用评估方法
 - [评估三法](../ch05/108-ai.html) — 评估范式
 - [Agent 评估基准框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) — 评估框架体系
 - [Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) — 评估环境作为 Harness 边界

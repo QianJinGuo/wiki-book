@@ -46,9 +46,9 @@ Agent先进入"只读模式"：只能查看/搜索/回答，不能修改。生�
 ## 相关实体
 - [Agentium Agent Framework](ch01/1484-agentium-agent.html)
 - [Tencentdb Agent Memory Short Term Compression](../ch06/030-tencentdb-agent-memory.html)
-- [Hermes Agent V014 Core Architecture Shugex](../ch03/098-hermes-agent.html)
-- [Hermes Agent Self Evolution Tengxun](../ch03/098-hermes-agent.html)
-- [Microsoft Agent Framework Python Zizhi](../ch04/485-python.html)
+- [Hermes Agent V014 Core Architecture Shugex](../ch03/099-hermes-agent.html)
+- [Hermes Agent Self Evolution Tengxun](../ch03/099-hermes-agent.html)
+- [Microsoft Agent Framework Python Zizhi](../ch04/488-python.html)
 
 ---
 

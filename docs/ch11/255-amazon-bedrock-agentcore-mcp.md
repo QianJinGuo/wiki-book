@@ -49,12 +49,12 @@ AWS China Blog 2026-07-29 发布的深度技术文章，系统地介绍了使用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-amazon-bedrock-agentcore-构建企业级-mcp-服务器四种架构模式.md)
 
 这一架构设计与以下实体相关：
-- [AgentCore Harness](../ch04/760-agentcore-harness.html) — AgentCore 基础能力
-- [AgentCore Managed Harness](../ch04/294-agentcore-managed-harness.html) — 托管式 AgentCore
-- [Bedrock AgentCore 质量评估与策略控制](../ch04/644-amazon-bedrock-agentcore.html) — AgentCore 的评估治理能力
-- [Bedrock AgentCore Gateway MCP Extension](../ch04/644-amazon-bedrock-agentcore.html) — AgentCore Gateway MCP 扩展
-- [Anthropic 12 MCP Production Patterns](../ch01/1536-anthropic.html) — MCP 生产模式参考
-- [AgentOps + Bedrock](ch11/308-amazon-bedrock.html) — Agent 运维
+- [AgentCore Harness](../ch04/781-agentcore-harness.html) — AgentCore 基础能力
+- [AgentCore Managed Harness](../ch04/298-agentcore-managed-harness.html) — 托管式 AgentCore
+- [Bedrock AgentCore 质量评估与策略控制](../ch04/663-amazon-bedrock-agentcore.html) — AgentCore 的评估治理能力
+- [Bedrock AgentCore Gateway MCP Extension](../ch04/663-amazon-bedrock-agentcore.html) — AgentCore Gateway MCP 扩展
+- [Anthropic 12 MCP Production Patterns](../ch01/779-anthropic.html) — MCP 生产模式参考
+- [AgentOps + Bedrock](ch11/307-amazon-bedrock.html) — Agent 运维
 - [Smartsheet Remote MCP Server on AWS](../ch07/001-mcp.html) — MCP 服务器架构参考
 
 ---

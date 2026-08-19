@@ -46,7 +46,7 @@ AWS 将在河内部署轻量级 Local Zones，阿里巴巴云和华为云也有�
 - **关注 Decision 808 的执行机制**：该决策由总理直接发布，列出 20 项战略技术——这种顶层设计模式与越南的政治体制高度匹配，但执行中的部门协调、预算分配和技术引进管理将是主要瓶颈。
 
 ## 相关实体
-- [Vietnam to develop domestic cloud](../ch11/187-vietnam-to-develop-domestic-cloud.html)
+- [Vietnam to develop domestic cloud](../ch11/186-vietnam-to-develop-domestic-cloud.html)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
 
 ---

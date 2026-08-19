@@ -40,10 +40,10 @@ OpenAI 发布的 GPT-5 使用建议：
 5. **工具调用架构从"单工具顺序调用"升级到"多工具并行协调"**。GPT-5 支持多工具并行调用的能力，使得 Agent 可以一次性规划多个工具调用、并行执行、聚合结果，而无需像 GPT-4 时代那样逐个工具串行调用。这对需要多数据源查询（如同时查询天气、股票、新闻）的应用，延迟可以从 O(n) 降低到 O(1)。建议在 Agent 架构中实现工具调用的并行化改造。
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/1094-openai-gpt-realtime-voice-models-qbitai.html)
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/276-openai.html)
-- [Yann Dubois Openai Post Training Interview](ch01/276-openai.html)
-- [Openai Models Codex Amazon Bedrock Ga](../ch11/310-amazon-bedrock.html)
-- [Openai Gdpval Real Ai Agents Threshold](../ch04/670-ai-agent.html)
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/594-openai.html)
+- [Yann Dubois Openai Post Training Interview](ch01/594-openai.html)
+- [Openai Models Codex Amazon Bedrock Ga](../ch11/307-amazon-bedrock.html)
+- [Openai Gdpval Real Ai Agents Threshold](../ch04/439-ai-agent.html)
 
 ---
 

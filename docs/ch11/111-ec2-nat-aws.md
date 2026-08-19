@@ -117,9 +117,9 @@ AWS 的多流流量规则（Multi-flow traffic rules）规定 vCPUs ≥ 32 的�
 ## 原始引用
 
 ## 相关实体
-- [aws 一周综述：amazon bedrock agentcore 付款、适用于 aws 的 agent 工具套件等（2](../ch04/630-amazon-bedrock-agentcore.html)
-- [基于 strands agents 构建亚马逊云科技云成本分析与优化 ai 助手](../ch04/752-strands-agents.html)
-- [building blocks for foundation model training and inference](ch11/135-building-blocks-for-foundation-model-training-and-inference.html)
+- [aws 一周综述：amazon bedrock agentcore 付款、适用于 aws 的 agent 工具套件等（2](../ch04/663-amazon-bedrock-agentcore.html)
+- [基于 strands agents 构建亚马逊云科技云成本分析与优化 ai 助手](../ch04/794-strands-agents.html)
+- [building blocks for foundation model training and inference](ch11/122-building-blocks-for-foundation-model-training-and-inference.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ec2-nat-instance-deploy-practice-aws-china.md)
 

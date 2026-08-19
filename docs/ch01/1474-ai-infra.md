@@ -144,15 +144,15 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 
 ## 相关实体
 
-- [Tokenspeed Agentic Inference Engine](../ch04/806-tokenspeed-agentic-inference-engine.html)
-- [Google Io 2026 Agentic Gemini Era](../ch04/742-agentic.html)
+- [Tokenspeed Agentic Inference Engine](../ch04/808-tokenspeed-agentic-inference-engine.html)
+- [Google Io 2026 Agentic Gemini Era](../ch04/297-agentic.html)
 - [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](ch01/1577-ai-infra.html)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/431-gemma-4-multi-token-prediction-drafters.html)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/430-gemma-4-multi-token-prediction-drafters.html)
 - [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/075-harness-2026.html)
-- [Codex Goal Source Code Deep Dive](../ch09/057-codex-goal.html)
+- [Codex Goal Source Code Deep Dive](../ch09/058-codex-goal.html)
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
-- [Opencli Browser Automation Jingxing](../ch03/094-opencli.html)
+- [Opencli Browser Automation Jingxing](../ch03/095-opencli.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-infra-llm-efficient-inference-vllm.md)

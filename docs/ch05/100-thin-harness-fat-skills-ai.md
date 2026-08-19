@@ -48,7 +48,7 @@ AI应用有两个完全不同的空间：Latent 空间和 Deterministic 空间�
 
 ## 相关实体
 - [Mac Multi Agent Coding Skills Hooks Harness](ch05/030-mac-multi-agent-coding-skills-hooks-harness-0-20.html)
-- [Code As Agent Harness Survey](../ch09/063-code-as-agent-harness.html)
+- [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](ch05/077-harness.html)
 - [Claude Code Harness Deep Understanding](../ch01/638-claude-code-harness-deep-understanding.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](ch05/077-harness.html)

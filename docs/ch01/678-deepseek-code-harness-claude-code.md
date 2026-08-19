@@ -79,7 +79,7 @@ DeepSeek 的公式 Model + Harness = Agent 是对 [Harness Engineering](https://
 2. **任务边界控制**：模型总高估自己的完成度——明明半成品却说「好了」
 3. **失败路径学习**：Harness 的真正价值不在于让模型成功，而在于系统化地学习失败
 
-### 与 [Claude Code 内部机制](../ch03/084-claude-code.html) 的对比
+### 与 [Claude Code 内部机制](../ch03/085-claude-code.html) 的对比
 
 Claude Code 的核心是一个 loop：调用模型 → 运行工具 → 拿到反馈 → 继续调用。真正的护城河在外围：权限控制、上下文压缩、MCP 工具、插件、Skills、Hooks、Subagent 调度、会话存储和安全策略。DeepSeek 需要在每个环节建立自己的工程积累，这不可能通过简单复制完成。
 
@@ -100,11 +100,11 @@ Anthropic 已经建立了一个正向飞轮：模型越强 → Harness 越顺手
 
 ## 相关实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
-- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/252-openclaw.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
+- [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-code-harness-competitor-tina.md)

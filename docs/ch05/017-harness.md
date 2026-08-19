@@ -39,7 +39,7 @@
 - 模型"试了一次"，工具却已经把外部状态改掉（候选→已执行跳过 dry-run）。
 - 模型"当前 session 的临时结论"，memory 却把它写成长期偏好（候选→已验证跳过退场）。
 
-这条链路与 [Codex /goal Runtime](../ch04/246-codex-goal-agent.html) 的 `GOAL.md → PLAN.md → PROGRESS.md` 外部状态文件互补：本文关注**单个动作的提交闸门**，Codex /goal 关注**任务级别的状态文件**。两者不冲突，前者更细粒度。
+这条链路与 [Codex /goal Runtime](../ch04/247-codex-goal-agent.html) 的 `GOAL.md → PLAN.md → PROGRESS.md` 外部状态文件互补：本文关注**单个动作的提交闸门**，Codex /goal 关注**任务级别的状态文件**。两者不冲突，前者更细粒度。
 
 ## 核心框架 2：Trace 回写 + 前馈/反馈 + 计算/语义控制
 
@@ -54,7 +54,7 @@
 
 工程里更稳的分配是：**便宜、稳定、快速的检查尽量前移**；**昂贵、不确定、需要取舍的检查留给关键节点**。
 
-这与 [六条经验](../ch04/405-ai-coding-agent.html) 里的"测试和重构不是旧时代包袱，而是 AI 时代的价值锚——AI 生成越快，确定性反馈环越值钱"完全一致：Martin Fowler 与 OpenAI Harness Engineering 的共识在这里再次出现。
+这与 [六条经验](../ch04/406-ai-coding-agent.html) 里的"测试和重构不是旧时代包袱，而是 AI 时代的价值锚——AI 生成越快，确定性反馈环越值钱"完全一致：Martin Fowler 与 OpenAI Harness Engineering 的共识在这里再次出现。
 
 ## 核心框架 3：先做三件事（运行时契约 / 提交闸门 / 失败回写）
 
@@ -64,7 +64,7 @@ Agent 开工前，运行边界要清楚。至少包括：目标、停止条件�
 
 > "Prompt 如果只写'帮我做竞品分析'，它会自然扩散。运行时契约会写清读哪些站点、看哪些字段、输出几段、哪些地方不预测、什么时候停止、哪些链接打不开要标出来。Agent 任务越长，这份契约越重要。"
 
-与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/098-hermes-agent.html) 的 "TERMINATION" 段直接相连——若飞把 Cowork 模板里的 `TERMINATION` 概念搬到了长任务 Agent Runtime。
+与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/099-hermes-agent.html) 的 "TERMINATION" 段直接相连——若飞把 Cowork 模板里的 `TERMINATION` 概念搬到了长任务 Agent Runtime。
 
 ### 3.2 状态提交闸门
 
@@ -146,12 +146,12 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 - **同作者系列**：
   - Ralph Loop 与可接管 Harness（2026-05-10）（2026-05-10，三类漂移 + 可接手标准）
   - Hermes 5 张卡治理框架（2026-06-01）（2026-06-01，don't automate slop）
-  - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/098-hermes-agent.html)（Cowork + TERMINATION 段）
+  - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/099-hermes-agent.html)（Cowork + TERMINATION 段）
   - [Agent Memory 架构：过去影响未来](../ch04/180-agent-memory.html)（记忆预算的更早版本）
 - **互补实践**：
-  - [Codex /goal Runtime](../ch04/246-codex-goal-agent.html)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
-  - [Anthropic 长时运行 Agent 架构](../ch01/778-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
-  - [六条经验：让 AI 编码 Agent 变得可控](../ch04/405-ai-coding-agent.html)（Martin Fowler 反馈环共识）
+  - [Codex /goal Runtime](../ch04/247-codex-goal-agent.html)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
+  - [Anthropic 长时运行 Agent 架构](../ch01/779-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
+  - [六条经验：让 AI 编码 Agent 变得可控](../ch04/406-ai-coding-agent.html)（Martin Fowler 反馈环共识）
   - [Harness design for long running apps](ch05/077-harness.html)（Anthropic 官方长任务 Harness 解读）
   - [Martin Fowler：非确定性进了研发链路](ch05/077-harness.html)（前馈/反馈原文）
 - **概念图**：
@@ -180,7 +180,7 @@ CMU/Yale/Johns Hopkins 的七层 ETCLOVG 分类（Execution / Tooling / Context 
 
 ### 3. 记忆预算观重新定义了 memory 的角色
 
-若飞在本文和 5 张卡续篇里反复强调"记忆像预算，不像仓库"——长期记忆不是存储，而是选择性消耗认知资源的决策。这个框架与 [六条经验](../ch04/405-ai-coding-agent.html) 里"AI 生成越快，确定性反馈环越值钱"共享同一个底层逻辑：资源（token 预算、注意力预算、判断预算）越稀缺，越需要把资源分配给高价值验证，而不是把所有中间结果都沉淀成"经验"。把临时绕路、失败猜测、一次性偏好写入长期记忆，是在预支明天的认知预算。
+若飞在本文和 5 张卡续篇里反复强调"记忆像预算，不像仓库"——长期记忆不是存储，而是选择性消耗认知资源的决策。这个框架与 [六条经验](../ch04/406-ai-coding-agent.html) 里"AI 生成越快，确定性反馈环越值钱"共享同一个底层逻辑：资源（token 预算、注意力预算、判断预算）越稀缺，越需要把资源分配给高价值验证，而不是把所有中间结果都沉淀成"经验"。把临时绕路、失败猜测、一次性偏好写入长期记忆，是在预支明天的认知预算。
 
 ### 4. 前馈/反馈 × 计算/语义的二维控制矩阵有实操价值
 
@@ -198,7 +198,7 @@ Martin Fowler 的控制二分法（feedforward/feedback × computational/inferen
 
 ### 2. 给 Agent 写运行时契约，从 TERMINATION 反推边界
 
-参考若飞在 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/098-hermes-agent.html) 里的 TERMINATION 段落，从"任务在哪里停"反推边界：目标、停止条件、输入来源、输出收件人、可读系统、可写动作、人确认动作、上一轮证据。契约不需要完美，但需要把"模糊地带"变成"明确条目"。这份契约应该落在 `AGENTS.md` 或项目入口文件里，让不同 Harness 读取但不依赖。
+参考若飞在 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/099-hermes-agent.html) 里的 TERMINATION 段落，从"任务在哪里停"反推边界：目标、停止条件、输入来源、输出收件人、可读系统、可写动作、人确认动作、上一轮证据。契约不需要完美，但需要把"模糊地带"变成"明确条目"。这份契约应该落在 `AGENTS.md` 或项目入口文件里，让不同 Harness 读取但不依赖。
 
 ### 3. 用"错误回写表"把每次失败变成一次系统改进
 

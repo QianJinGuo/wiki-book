@@ -61,7 +61,7 @@ WiseClaw 重点发力院外高频场景——这是医疗服务从低频、单�
 ## 相关实体
 
 - [Harness 工程实践](../ch05/065-harness-engineering.html)
-- [Agent Harness 生产化](../ch05/042-agent-harness.html)
+- [Agent Harness 生产化](../ch05/043-agent-harness.html)
 - [蚂蚁集团医疗 Agent](../ch03/037-agent.html)
 - [Agent 落地真相](../ch03/037-agent.html)
 

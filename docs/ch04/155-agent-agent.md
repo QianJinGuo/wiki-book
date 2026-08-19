@@ -170,14 +170,14 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 ## 相关页面
 - [原文存档：高德伴行Agent技术解析](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ai-companion-agent-architecture.md)
 - [AI Skill进化框架](../ch07/011-ai-skill-evolution.html)（Skill沉淀相关）
-- [Hermes Agent](../ch03/098-hermes-agent.html)（被本文分析对比）
+- [Hermes Agent](../ch03/099-hermes-agent.html)（被本文分析对比）
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/528-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/460-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/531-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/358-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
-- [十年老技术开发的 AI Agent 探索之路](ch04/670-ai-agent.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/487-agent-skills.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/439-ai-agent.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/490-agent-skills.html)
 - [ai agent memory systems](ch04/180-agent-memory.html)
 
 ---

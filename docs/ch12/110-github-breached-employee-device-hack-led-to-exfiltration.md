@@ -12,7 +12,7 @@
 ## 相关实体
 - [Github Investigating Teampcp Claimed 17Cc77](../ch01/1093-github.html)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/1157-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/458-score-by-collisions-patch-by-panic.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/462-score-by-collisions-patch-by-panic.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](ch12/072-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/1284-rag.html)
 

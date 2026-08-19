@@ -60,7 +60,7 @@ Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对�
 
 一周内四位核心人才同时离开，反映的是比薪酬更深层的组织问题。Noam Shazeer 曾被谷歌以约 27 亿美元请回，不到两年又离开——这说明谷歌在 AGI 层面的愿景和执行力可能未能匹配这些顶尖人才对技术前沿的追求。
 
-相似的情况也出现在 [Anthropic 的人才吸引力](ch01/778-anthropic.html) 和 OpenAI 的人才竞争中——AI 顶尖人才的流动性极高，他们追逐的是技术愿景的实现空间，而非薪酬或头衔。
+相似的情况也出现在 [Anthropic 的人才吸引力](ch01/779-anthropic.html) 和 OpenAI 的人才竞争中——AI 顶尖人才的流动性极高，他们追逐的是技术愿景的实现空间，而非薪酬或头衔。
 
 ## 实践启示
 
@@ -76,11 +76,11 @@ Gemini Spark 通过 Antigravity 框架（Tasks + Skills + Schedules）来应对�
 
 ## 相关实体
 
-- [Agent Teams 对比](../ch03/084-claude-code.html) — 三家 Agent 产品路线对比
-- [Claude Science](../ch03/084-claude-code.html) — Anthropic 的 Agent 平台化路径
+- [Agent Teams 对比](../ch03/085-claude-code.html) — 三家 Agent 产品路线对比
+- [Claude Science](../ch03/085-claude-code.html) — Anthropic 的 Agent 平台化路径
 - [Harness Engineering](../ch05/065-harness-engineering.html) — Agent 控制面板的系统方法论
 - [Agent落地真相](../ch03/037-agent.html) — Agent 从演示到投产的核心挑战
-- [Agent Harness 招聘实践](../ch05/042-agent-harness.html) — Agent 在企业场景的工程实践
+- [Agent Harness 招聘实践](../ch05/043-agent-harness.html) — Agent 在企业场景的工程实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/谷歌风雨飘摇市值蒸发数千亿美元gemini-spark能救场吗.md)
 

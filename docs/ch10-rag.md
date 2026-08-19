@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **44 篇**实体，按深度递增排列。
+> 本章收录 **43 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 8 |
-| ⭐⭐ 工程师 | 需编程基础 | 33 |
+| ⭐⭐ 工程师 | 需编程基础 | 32 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 
 ---
@@ -2131,7 +2131,64 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ---
 
-## Ch10.022 知识库构建方法论
+## Ch10.022 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
+
+> 📊 Level ⭐⭐ | 8.0KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
+
+## 摘要
+
+本文解读厦门国际银行第五届数创金融杯大模型应用挑战赛初赛方案：赛题为**金融监管制度智能问答**（经典 RAG），要求基于给定金融文档库，对不定项选择题和问答题生成"准确、合规"的答案；整体工程只能在受限硬件（CPU 8 核 / 32G 内存 / 24G 显存）下推理，以 A/B 榜评估、B 榜定名次。作者以 TrustRAG 框架为脚手架，在两周边际时间内冲刺、约 10 天冲入 top10，给出了一条"短平快"、效果够用的 RAG 落地路径。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiamen-bank-rag-competition-financial-regulation-trustrag.md)
+
+## 核心要点
+
+- 金融监管问答是高利害领域：答案须"准确、合规"，既同幻觉作战，也同术语歧义作战，正确性直接关系合规判断。
+- 采用七步经典流水线：文档加载解析 → 文本切块 → 混合检索重排 → 指令数据集构造 → 模型微调 → 推理 → 投票融合。
+- 混合检索 BM25（权重 0.3）+ Dense（bge-m3 / bge-large-zh-v1.5，权重 0.7），Top-15 候选再经 BGE-reranker-large 精排；选择题把选项拼进查询辅助定位。
+- 句子级切块（SentenceChunker）不割裂完整句子，256 的 chunk_size 在召回率实验中表现最佳，切块与文件元信息分离存储减少冗余。
+- 微调补差距：Qwen3-8B/14B + QLoRA/LoRA，实测 8B 与 14B 分数接近、甚至 8B 更优——通用模型金融监管表现不够，需领域数据微调。
+- 推理期以 temperature=0.0 贪心解码、max_new_tokens=512、batch_size=1 强化稳定性。
+- 结果投票融合：选择题多数投票，问答题取语义相似度最高者。
+- 作者结论：RAG 没有标准答案，考验的是面对不同任务灵活变通、基于成熟脚手架快速改造并"发现问题解决问题"的能力。
+
+## 深度分析
+
+### 金融监管约束下的 RAG：精确、可追溯、可审计
+
+金融监管制度问答与泛化知识问答最大的分野在于约束强度。题目明确要求"生成准确、合规的答案"——准确意味着答案必须锚定文档原文而非模型记忆，合规意味着表述要符合监管语言与术语体系，两者共同把任务推向"拒绝模糊、拒绝编造"。这类约束沿着整条流水线传导：检索阶段需要高密度小 chunk 以保证命中，生成阶段需要"与文档原文精确对比、逐一验证"的强约束 prompt，数据阶段则需要把文件名、token 长度、是否含表格等元信息以 JSON/映射表结构化保存，使每个答案都可回查到出处——这正是金融场景"可追溯、可审计"诉求在工程上的落地。表格在金融监管文档中的高价值也被显式处理：加载解析阶段即标记含表格文档，避免做 embedding 时丢失结构性关键信息（限额、比例、名单常藏在表格里）。
+
+### TrustRAG 框架：面向可信 RAG 的可复用脚手架
+
+方案的技术底座是 gomate-community 的 TrustRAG 项目（DocxParser、SentenceChunker 等组件），代码几乎全部复用。这体现了作者"短平快"的核心方法论：不从头造轮子，而是站在可信 RAG 脚手架上做增量改造，把有限时间花在数据、prompt、融合这些真正决定分数的环节。一个值得注意的细节是用与问答模型同款的 Qwen3-8B tokenizer 统计文档 token 长度，以精准设计窗口大小、提高输入长度预算的利用效率——领域 token 数的经验值（大部分文档约 1600 token）让后续切块与上下文组织有据可依。
+
+### 检索与重排：混合信号与多配置融合
+
+检索层采用混合检索补齐单一方法的短板：BM25 抓关键词的字面匹配，Dense 向量抓语义相关，以 0.3/0.7 加权融合召回 Top-15，再经 BGE-reranker-large 精排。更巧妙的是把"多配置"当作泛化手段：用 2 个 embedding 模型（bge-m3、bge-large-zh-v1.5）× 2 种 chunk_size（256、512）交叉组合，构造出彼此独立、各有偏好的检索-生成样本，为末端的投票融合铺底——不同配置在召回分布上互补，融合后整体稳健性显著提升。作者也坦承困难场景：答案可能跨多个 chunk 分布、相似内容过多导致排序靠后（如"双线报告"类题目）、以及部分问题无需检索即可由模型自身知识回答——识别并分类这些困难，是调优召回与切块的关键输入。
+
+### 高利害场景下的幻觉控制与推理稳定性
+
+幻觉控制在高利害领域是叠加的、多层的防线，而非单点技术。第一层是检索质量（混合检索+重排+小 chunk 高信息密度），保证模型"有据可依"；第二层是 prompt 约束（选择题"精准分析/逐一验证"+严格格式"A,C,D"，问答题五步推理链：问题解构→信息检索→内容筛选→答案组织→答案优化，并要求规范金融监管术语）；第三层是解码配置（temperature=0.0 贪心解码消除随机性）；第四层是推理期投票融合，用多数投票与语义相似度做次级纠错。此外以领域数据微调 QLoRA 补齐通用模型在金融监管上的知识盲区——四个层次层层兜底，共同把高利害场景下"看起来合理但实为编造"的输出空间压到最小。
+
+## 实践启示
+
+1. 领域 RAG 的性价比起点是"召回密度"：句子级切块 + 小 chunk（256）+ 混合检索 + 重排，比追求大模型更立竿见影。
+2. 把"可校验"写进 prompt：要求逐项对照原文、严格输出格式，既是工程约束更是廉价幻觉护栏。
+3. 用"多配置融合"以廉价换稳健：不同 chunk×embedding 组合投票显著提升效果，且不增加推理期复杂度。
+4. 受限硬件下 QLoRA 是务实选择，且 8B 常已够用——不必盲目追逐更大模型，把算力留给融合与迭代。
+5. 高利害领域务必在数据层保留结构化元信息（文件名、token 数、表格标记、chunk→file 映射），为可追溯和审计留下后路。
+6. 不要从零造轮子：基于成熟可信 RAG 脚手架（如 TrustRAG）快速改造，把时间花在识别困难案例和调试上，是"短平快做好"的关键。
+
+## 相关实体
+
+- [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
+- [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
+- [RAG 分块-嵌入-重排全链路](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md) — 与本文混合检索+重排设计互补的管道细节
+- [Stripe 金融合规 AI Agent 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/stripe-financial-compliance-ai-agent-production-lessons.md) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
+
+---
+
+## Ch10.023 知识库构建方法论
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/knowledge-base-construction.md`
 
@@ -2193,7 +2250,7 @@ RAG 的优势是构建成本低、时效性高（灌一篇搜一篇），结构�
 
 ---
 
-## Ch10.023 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
+## Ch10.024 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
 
@@ -2288,7 +2345,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ---
 
-## Ch10.024 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.025 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
@@ -2333,7 +2390,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ---
 
-## Ch10.025 Notes on Amazon v. Perplexity
+## Ch10.026 Notes on Amazon v. Perplexity
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/amazon-perplexity-legal-analysis.md`
 
@@ -2412,7 +2469,7 @@ Agentic browsing 正是这种用户代理权的最新表达——它让用户无
 
 ---
 
-## Ch10.026 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.027 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮-v2.md`
 
@@ -2466,7 +2523,7 @@ AI 客服出问题不是传统意义的报错，而是意图识别错、问题�
 
 ---
 
-## Ch10.027 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
+## Ch10.028 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/gbrain-8layer-51cto.md`
 
@@ -2516,7 +2573,7 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 
 ---
 
-## Ch10.028 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+## Ch10.029 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
@@ -2587,7 +2644,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ---
 
-## Ch10.029 How we built SmithDB’s inverted index for full-text search
+## Ch10.030 How we built SmithDB’s inverted index for full-text search
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
 
@@ -2638,7 +2695,7 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 
 ---
 
-## Ch10.030 为OpenClaw配置网盘空间的最佳实践
+## Ch10.031 为OpenClaw配置网盘空间的最佳实践
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
 
@@ -2683,7 +2740,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ---
 
-## Ch10.031 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+## Ch10.032 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
@@ -2726,7 +2783,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 ---
 
-## Ch10.032 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
+## Ch10.033 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/guardoc-health-medical-document-processing-amazon-nova.md`
 
@@ -2789,7 +2846,7 @@ Guardoc 的部署效果量化案例：
 
 ---
 
-## Ch10.033 Task-Aware Knowledge Compression (TAKC)
+## Ch10.034 Task-Aware Knowledge Compression (TAKC)
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/task-aware-knowledge-compression-takc.md`
 
@@ -2843,36 +2900,6 @@ TAKC 在 AWS 上部署为两个解耦的无服务器流程：
 TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档推理的场景（如金融尽调、合规审查）。对于每小时变化的知识库，RAG 的按查询检索模型更实用。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/beyond-rag-task-aware-knowledge-compression-for-enterprise-a.md)
-
----
-
-## Ch10.034 Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
-
-> 📊 Level ⭐⭐ | 4.0KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
-
-# Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md)
-
-# Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
-
-In pharmaceutical research, scientists face a fundamental challenge: accessing and connecting the vast amount of scientific knowledge scattered across disparate systems. From published literature and internal lab notes to genomics databases, critical insights remain trapped in silos, making it difficult for researchers to form comprehensive connections and generate promising hypotheses. This fragmentation slows down the drug discovery process. It also risks valuable institutional knowledge being lost as researchers transition, ultimately affecting the industry’s ability to research and develop efficiently. The need for a solution that can intelligently bridge these knowledge gaps while maintaining scientific integrity has become increasingly important.
-
-## The challenge: Scattered data across fragmented systems
-
-At leading pharmaceutical companies, researchers face a critical challenge in early-stage drug discovery, where traditional methods yield only a 5 percent success rate and initial screening takes over six months. Scientists struggle to connect insights buried across fragmented systems such as PubMed, internal lab notes, and genomics databases, all while racing against competitors and time constraints. The scattered nature of data leads to redundant work and missed opportunities. It also makes it difficult to trace the evidence trail needed for regulatory approval. When researchers depart, they often take valuable tacit knowledge with them, further compromising the institutional memory needed for breakthrough discoveries.
-
-Challenges in early-stage drug discovery:
-
-1. Poor success rate and time efficiency – Only 5 percent hit rate with over 6 months of screening time per attempt.
-  2. Fragmented knowledge systems – Critical insights scattered across PubMed, lab notes, and databases, leading to missed connections.
-  3. Loss of institutional memory – Valuable knowledge disappears when researchers leave, breaking continuity in research efforts.
-
-These challenges collectively create a significant bottleneck in the drug discovery pipeline, leading to inefficiencies, missed opportunities, and potential delays in developing life-saving treatments. Our solution addresses these bottlenecks by moving beyond traditional methods: graph-powered AI supports pharmaceutical research by creating an interconnected knowledge environment. Using [Amazon Neptune Analytics](<https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html>), researchers can now ask complex questions in natural language and receive instant, evidence-backed insights drawn from a unified knowledge graph that connects everything from compound interactions to gene expressions and clinical studies. This approach doesn’t only provide answers. It reveals the complete reasoning behind each result by showing detailed citation paths and graph traversal steps. By exp
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3024,55 +3051,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.038 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
-
-> 📊 Level ⭐⭐ | 3.1KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
-
-## 核心概述
-
-厦门国际银行第五届数创金融杯大模型应用挑战赛初赛方案分享。该赛题为金融监管制度智能问答（经典RAG），基于给定金融文档库生成准确合规的答案，题型包括不定项选择题和问答题。硬件限制：CPU 8核 / 32G内存 / 24G显存。作者10天冲到top10。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiamen-bank-rag-competition-financial-regulation-trustrag.md)
-
-## 七步RAG Pipeline
-
-### 1. 文档加载解析
-使用 TrustRAG 框架的 DocxParser 解析 docx 文件，Qwen3-8B tokenizer 统计 token 长度，标记表格存在，JSON 结构化存储。
-
-### 2. 文本切块
-SentenceChunker（句子级切块），实验 256/512 两种 chunk_size。切块内容与文件元信息分离存储减少冗余。结论：256 召回率最佳。
-
-### 3. 混合检索 + 重排序
-- BM25（权重 0.3）+ Dense（bge-m3/bge-large-zh-v1.5，权重 0.7）
-- Top-K=15 → BGE-reranker-large 二次精排
-- 选择题将选项补充到查询中
-- 2 embedding 模型 × 2 chunk_size 交叉组合
-
-### 4. 指令数据集构造
-选择题与问答题分别设计 prompt。选择题强调逐项验证与格式约束；问答题采用五步推理链。取 Top-6 检索结果作为上下文。
-
-### 5. 模型微调
-Qwen3-8B + QLoRA/LoRA 和 Qwen3-14B + QLoRA。8B 和 14B 分数接近。
-
-### 6. 推理
-temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
-
-### 7. 结果投票融合
-选择题：多数投票（Majority Voting）；问答题：语义相似度最高者胜出。
-
-## 关键经验
-- 混合检索（BM25+Dense）+ 重排序是最优组合
-- 多模型融合（不同 chunk_size × embedding 模型组合）显著提升效果
-- QLoRA 在受限硬件下有效
-- 最终结论：RAG 没有标准答案，关键是根据任务灵活变通
-
-## 相关实体
-- [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线
-- [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案
-
----
-
-## Ch10.039 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
+## Ch10.038 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
 
 > 📊 Level ⭐⭐ | 2.4KB | `entities/www-2026-强化学习重塑graphrag多跳推理f1提升8381.md`
 
@@ -3095,7 +3074,7 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 
 ---
 
-## Ch10.040 腾讯新研究：让Agent在语料中搜得更快、更准
+## Ch10.039 腾讯新研究：让Agent在语料中搜得更快、更准
 
 > 📊 Level ⭐⭐ | 1.1KB | `entities/rarg-relevance-aware-ripgrep-search-agent-tencent-2026.md`
 
@@ -3110,7 +3089,7 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 
 ---
 
-## Ch10.041 RAG for Documents
+## Ch10.040 RAG for Documents
 
 > 📊 Level ⭐⭐ | 0.6KB | `entities/rag-for-documents.md`
 
@@ -3127,7 +3106,7 @@ temperature=0.0（贪心解码），max_new_tokens=512，batch_size=1。
 
 ---
 
-## Ch10.042 Ettin Reranker Family
+## Ch10.041 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 
@@ -3322,7 +3301,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ---
 
-## Ch10.043 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
+## Ch10.042 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
 
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/multi-vector-late-interaction-embedding-models-with-sentence.md`
 
@@ -3351,7 +3330,7 @@ cross-encoder 交互最早（query 与 doc 一起过模型，最准但 doc 无�
 
 ---
 
-## Ch10.044 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
+## Ch10.043 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
 
 > 📊 Level ⭐⭐⭐ | 1.7KB | `entities/file-upload-multimodal-vector-pipeline-real-time-2026-08-04.md`
 

@@ -24,7 +24,7 @@ Hugging Face 在 2026 年 8 月发布的半年一度开源模型生态报告，�
 
 按衍生模型衡量，Qwen 系模型在 Hub 上已有 151,448 个衍生仓库，是 Meta 总足迹的 2.6 倍、Llama 专属的 4.7 倍；Google 以 82,506 个跟随其后。Qwen 衍生以每天约 180–210 个新仓库的速度增长，靠的是稳定的发布节奏、尺寸覆盖和 Apache 2.0 开放许可形成的正反馈。这个位置主要由社区建立：151,448 个衍生中 Qwen 自己发布的只有极少部分，28,531 个 GGUF 转换中 Qwen 官方只发布了 54 个。
 
-参数规模小于 1B 的模型占历史下载总量的 83%，100B 以上只占 1%。万亿参数模型能触达普通开发者靠的是 [llama.cpp 本地部署](../ch11/168-llama-cpp-deployment.html)：7 月快照已包含约 284B 的 DeepSeek-V4-Flash 与约 2.8 万亿的 Kimi-K3 的 GGUF 构建，本地推理从笔记本上的 8B 变成跨几台消费级机器的万亿 MoE。声明 gguf 库的仓库数增长 464%、lerobot 194%、Apple mlx 148%，而 transformers 只有 16%——运行时层比建模核心增长快三到七倍。Qwen 系的 GGUF 月下载 3,960 万次，接近 Gemma（2,080 万）的两倍、Llama（750 万）的五倍以上。
+参数规模小于 1B 的模型占历史下载总量的 83%，100B 以上只占 1%。万亿参数模型能触达普通开发者靠的是 [llama.cpp 本地部署](../ch11/167-llama-cpp-deployment.html)：7 月快照已包含约 284B 的 DeepSeek-V4-Flash 与约 2.8 万亿的 Kimi-K3 的 GGUF 构建，本地推理从笔记本上的 8B 变成跨几台消费级机器的万亿 MoE。声明 gguf 库的仓库数增长 464%、lerobot 194%、Apple mlx 148%，而 transformers 只有 16%——运行时层比建模核心增长快三到七倍。Qwen 系的 GGUF 月下载 3,960 万次，接近 Gemma（2,080 万）的两倍、Llama（750 万）的五倍以上。
 
 ## Agent 成为新的用户
 

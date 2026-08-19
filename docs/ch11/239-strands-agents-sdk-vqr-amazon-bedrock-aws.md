@@ -33,11 +33,11 @@ Strands Agent SDK、Amazon Bedrock、AgentCore
 5. **复合指标的验证**：NPS 等复合指标需要额外的公式验证层，不能仅依赖 LLM 生成 SQL。
 
 ## 相关实体
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/312-bedrock.html)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/311-bedrock.html)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
-- [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/152-build-financial-document-processing-with-pulse-ai-and-amazon.html)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/644-amazon-bedrock-agentcore.html)
-- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/644-amazon-bedrock-agentcore.html)
+- [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/151-build-financial-document-processing-with-pulse-ai-and-amazon.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/663-amazon-bedrock-agentcore.html)
+- [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/663-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
 

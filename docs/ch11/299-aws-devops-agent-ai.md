@@ -33,9 +33,9 @@ Kiro 可将 DevOps Agent 的调查结论自动汇总为结构化演练报告，�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-实战如何使用生成式-ai-加速故障演练.md)
 
 ## 相关实体
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch11/295-aws-devops-agent.html)
-- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](ch11/295-aws-devops-agent.html)
-- [AgentCore Managed Harness](../ch04/755-agentcore-harness.html)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](ch11/294-aws-devops-agent.html)
+- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](ch11/294-aws-devops-agent.html)
+- [AgentCore Managed Harness](../ch04/781-agentcore-harness.html)
 
 ---
 

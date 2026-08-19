@@ -13,15 +13,15 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 数据库设计：experiments 表（固定输入）下挂 experiment_runs 表（不同 Prompt/参数的结果），同一输入对比任意变体。
 
 ## 相关实体
-- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/778-anthropic.html)
+- [Anthropic最危险路线图曝光 无限记忆多智能体 硅谷Ai终局仅剩双雄决顶](ch01/779-anthropic.html)
 - [Claude Opus 47](ch01/1233-claude.html)
 - [Pi Mono Github](ch01/1115-pi-mono-github.html)
 - [From Prompt To Harness Claude Official](../ch05/077-harness.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/005-agentrun.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/589-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-debugger-compare-templates-winty.md)
 
-- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch01/276-openai.html)
+- [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](ch01/594-openai.html)
 
 ## 深度分析
 

@@ -2,7 +2,7 @@
 
 ## Ch01.1588 Reducing Doom Loops with Final Token Preference Optimization
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/antidoom.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/antidoom.md`
 
 # Reducing Doom Loops with Final Token Preference Optimization
 

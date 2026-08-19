@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch05/042-agent-harness.html)
-- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch05/042-agent-harness.html)
+- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch05/043-agent-harness.html)
+- [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch05/043-agent-harness.html)
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-core-patterns-claude-code.md)
 
@@ -48,10 +48,10 @@
 ### 关联实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/742-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/819-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/298-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/301-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 
 ## 实践启示

@@ -41,7 +41,7 @@
 
 ### 与既有工程实践的互补关系
 
-四阶段路线图与 [腾讯 Harness 工程团队规范](../ch05/065-harness-engineering.html) 互补：本文讲「如何从零把 agent 用起来」，团队规范讲「如何把 harness 管起来」；「提醒升级为机制」与 [软规则与硬约束](../ch03/084-claude-code.html) 的分层治理同构。相比 [源码视角的 Harness 拆解](../ch05/042-agent-harness.html)，本文是纯使用者/组织者视角：一个讲 Harness 由什么构成，一个讲 Harness 如何在团队落地。
+四阶段路线图与 [腾讯 Harness 工程团队规范](../ch05/065-harness-engineering.html) 互补：本文讲「如何从零把 agent 用起来」，团队规范讲「如何把 harness 管起来」；「提醒升级为机制」与 [软规则与硬约束](../ch03/085-claude-code.html) 的分层治理同构。相比 [源码视角的 Harness 拆解](../ch05/043-agent-harness.html)，本文是纯使用者/组织者视角：一个讲 Harness 由什么构成，一个讲 Harness 如何在团队落地。
 
 ## 实践启示
 
@@ -54,8 +54,8 @@
 
 ## 相关实体
 
-- [Claude Code 大型代码库 Agent Harness 13 模式（同作者姊妹篇）](../ch05/042-agent-harness.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
+- [Claude Code 大型代码库 Agent Harness 13 模式（同作者姊妹篇）](../ch05/043-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [一文带你弄懂 Harness Engineering](../ch05/065-harness-engineering.html)
 - [腾讯 Harness 工程团队规范](../ch05/065-harness-engineering.html)
 - [小米 Harness 工程：从 prompt 到 hook 到 plugin](../ch05/065-harness-engineering.html)

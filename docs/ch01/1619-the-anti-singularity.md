@@ -43,7 +43,7 @@
 ## 相关实体
 - [the token economy](ch01/762-the-token-economy.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AGI 之路可能从一开始就走错了](ch01/407-agi.html)
+- [AGI 之路可能从一开始就走错了](ch01/477-agi.html)
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
 - [Prompt Engineering Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-patterns.md)
 - [Scaling Laws](https://github.com/QianJinGuo/wiki/blob/main/concepts/scaling-laws.md)

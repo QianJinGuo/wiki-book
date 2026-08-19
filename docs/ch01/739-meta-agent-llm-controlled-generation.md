@@ -49,7 +49,7 @@ Muse Image 的 Agentic 生成模式代表了图像生成领域从「模型中心
 - **工具辅助**：不确定的内容通过真实工具（搜索、代码）补全，而非模型脑补
 - **迭代修正**：生成后通过自我复盘修正不协调之处
 
-这种范式与 [Claude Code 的架构分析](../ch03/084-claude-code.html) 中的「思考-行动-验证」循环完全一致，表明 Agent 范式正在从代码生成领域扩展到视觉生成领域。
+这种范式与 [Claude Code 的架构分析](../ch03/085-claude-code.html) 中的「思考-行动-验证」循环完全一致，表明 Agent 范式正在从代码生成领域扩展到视觉生成领域。
 
 ### 2. 「思考越久越好」的深层意义
 
@@ -69,7 +69,7 @@ Muse Image 在 Instagram 中的集成展示了 Meta 对「AI + 社交」的独�
 
 ### 4. Muse Spark 的协同联动
 
-Muse Spark（Meta 的大语言模型）可以与 Muse Image 深度联动，共享整套工具链路协同完成复杂创作。例如制作小型互动游戏时，Muse Spark 编写网页交互代码，Muse Image 生成配套视觉素材，最终输出带动态 GIF、内嵌图片的完整网页。这种「语言模型 + 视觉模型」的协同工作模式，是 [Agent Harness 多模型协作](../ch05/042-agent-harness.html) 在生成场景的具体实践。
+Muse Spark（Meta 的大语言模型）可以与 Muse Image 深度联动，共享整套工具链路协同完成复杂创作。例如制作小型互动游戏时，Muse Spark 编写网页交互代码，Muse Image 生成配套视觉素材，最终输出带动态 GIF、内嵌图片的完整网页。这种「语言模型 + 视觉模型」的协同工作模式，是 [Agent Harness 多模型协作](../ch05/043-agent-harness.html) 在生成场景的具体实践。
 
 ## 实践启示
 

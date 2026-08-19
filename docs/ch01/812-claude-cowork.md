@@ -63,21 +63,21 @@ Cowork 的更新并非孤立事件，而是反映了 Coding Agent 市场的整�
 
 1. **异步 Agent 需要重新设计交互模式**：当 Agent 不再实时响应时，交互从"对话"变为"任务管理"。需要建立清晰的进度反馈、决策点和交付物追踪机制。
 
-2. **上下文管理是异步 Agent 的核心挑战**：独立运行的 Agent 必须在没有人类辅助的情况下自主构建和维护上下文。这意味着需要更强大的文件系统、工具调用链和状态持久化能力。参考 [Agent Harness 上下文管理](../ch05/042-agent-harness.html) 中的工作集设计模式。
+2. **上下文管理是异步 Agent 的核心挑战**：独立运行的 Agent 必须在没有人类辅助的情况下自主构建和维护上下文。这意味着需要更强大的文件系统、工具调用链和状态持久化能力。参考 [Agent Harness 上下文管理](../ch05/043-agent-harness.html) 中的工作集设计模式。
 
 3. **"手机作为指挥台"模式值得借鉴**：将 Agent 的执行层（云端）与交互层（手机/桌面）分离，让手机成为轻量级的"任务管理中心"。这种架构降低了 Agent 的使用门槛，同时保持了深度工作的桌面环境。
 
-4. **Agent 的能力边界需要明确的触发/暂停机制**：异步 Agent 在独立运行时可能做出超出用户预期的操作。需要建立明确的"需要人类决策"的触发条件，以及紧急暂停的安全机制。参见 [Agent Harness 可观测性](../ch05/042-agent-harness.html) 中的安全审计设计。
+4. **Agent 的能力边界需要明确的触发/暂停机制**：异步 Agent 在独立运行时可能做出超出用户预期的操作。需要建立明确的"需要人类决策"的触发条件，以及紧急暂停的安全机制。参见 [Agent Harness 可观测性](../ch05/043-agent-harness.html) 中的安全审计设计。
 
 5. **Agent 市场正从开发者向知识工作者扩展**：Product-led Growth 的路径是先在开发者社区建立品牌认知，再通过简化交互扩展到更广的知识工作者群体。不要低估非技术用户对 Agent 的需求潜力。
 
 ## 相关实体
 
-- [Agent Harness 上下文管理](../ch05/042-agent-harness.html) — 工作集视角的上下文管理
-- [Agent Harness 可观测性](../ch05/042-agent-harness.html) — 智能体行为审计与监控
+- [Agent Harness 上下文管理](../ch05/043-agent-harness.html) — 工作集视角的上下文管理
+- [Agent Harness 可观测性](../ch05/043-agent-harness.html) — 智能体行为审计与监控
 - [Agent Harness 工程调查 2026](../ch05/065-harness-engineering.html) — Agent 采纳路径分析
 - [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — 持久化任务循环模式
-- [Agent Harness 架构](../ch05/042-agent-harness.html) — Agent 系统架构设计
+- [Agent Harness 架构](../ch05/043-agent-harness.html) — Agent 系统架构设计
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-cowork-2026-big-update.md)
 

@@ -138,11 +138,11 @@ IoT 链路中断时最直接的告警信号是 S3 Object 写入停止。建议�
 手册、脚本、Spec 三层并存的价值不在于"AI 哪天能完全替代"，而在于提供了一个可靠的降级路径。当 Spec 运行异常时，Agent 可以回退到脚本；当脚本因权限或网络问题失败时，工程师可以参照手册手动处理。建议在团队的 SOP 文档中明确标注这三层的适用场景和切换条件，而不是盲目追求 AI 覆盖率。
 
 ## 相关实体
-- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/192-amazon-ecs.html)
-- [Kiro Quick Deploy Agent Deploy Amazon Bedrock Agentcore](../ch04/630-amazon-bedrock-agentcore.html)
-- [Developing Flink Monitoring System On Amazon Emr With Kiro Ai Ide](../ch05/097-ai.html)
-- [Quick Suite Agent Core Kiro Logistics Quote Assistant](../ch03/035-agent.html)
-- [Aws Direct Connect Dx Migration Best Practices](ch11/038-direct-connect-dx.html)
+- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/190-amazon-ecs.html)
+- [Kiro Quick Deploy Agent Deploy Amazon Bedrock Agentcore](../ch04/663-amazon-bedrock-agentcore.html)
+- [Developing Flink Monitoring System On Amazon Emr With Kiro Ai Ide](../ch05/108-ai.html)
+- [Quick Suite Agent Core Kiro Logistics Quote Assistant](../ch03/037-agent.html)
+- [Aws Direct Connect Dx Migration Best Practices](ch11/037-direct-connect-dx.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-iot-core-kiro-industrial-data-pipeline.md)
 

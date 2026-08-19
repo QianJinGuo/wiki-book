@@ -82,8 +82,8 @@ Obsidian 的插件生态极为丰富，涵盖 AI 功能、数据库、日程管�
 ## Related
 - [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
 - [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — 云端 AI 研究助手
-- [ChatGPT Memory](../ch01/551-chatgpt-memory.html) — 对话式记忆
-- [Hermes-Agent](../ch03/098-hermes-agent.html) — 可通过 Local REST API 与 Obsidian 交互
+- [ChatGPT Memory](../ch01/550-chatgpt-memory.html) — 对话式记忆
+- [Hermes-Agent](../ch03/099-hermes-agent.html) — 可通过 Local REST API 与 Obsidian 交互
 
 ## 深度分析
 ### 本地优先架构的战略意义

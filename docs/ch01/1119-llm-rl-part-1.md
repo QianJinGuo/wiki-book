@@ -38,7 +38,7 @@ LLM RL中的熵：模型rollout多样性调控。熵随训练下降，维持适�
 4. **Clip higher 的上界设置应保守调整**：从 0.3（标准值）开始，每次小幅度提高（如 0.35 → 0.4），同时监控熵是否出现发散趋势。一旦熵曲线出现上扬失控的迹象，应立即回退。
 
 ## 相关实体
-- [llm-rl中的熵-part-2-熵对训练的调控](ch01/867-llm.html)
+- [llm-rl中的熵-part-2-熵对训练的调控](ch01/1146-llm.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---

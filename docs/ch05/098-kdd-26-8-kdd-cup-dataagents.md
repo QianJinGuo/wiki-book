@@ -11,7 +11,7 @@
 ## 8 篇论文的技术脉络
 
 - **MTFM**（Meituan Foundation Model for Recommendation）：可扩展、免对齐的工业推荐基座模型——将跨域数据转换为异质 Token 以无对齐方式捕捉多场景知识，多场景用户级样本聚合提升训练吞吐，Grouped-Query Attention + Hybrid Target Attention 降低内存与计算；在外卖等场景离在线验证后构建统一基座推荐大模型替换各业务独立精排模型。
-- **CDRRM**：对比驱动的评分准则生成与奖励建模框架——"对比-聚合"流程先对比好/差回答定位关键差异再聚合为任务相关准则，缓解话痨、位置偏见；仅用 3 千样本让未微调模型超越全量微调基线，兼顾可解释性与数据效率（与 [discretizing reward models](../ch01/368-discretizing-reward-models.html) 同属奖励模型可解释性方向）。
+- **CDRRM**：对比驱动的评分准则生成与奖励建模框架——"对比-聚合"流程先对比好/差回答定位关键差异再聚合为任务相关准则，缓解话痨、位置偏见；仅用 3 千样本让未微调模型超越全量微调基线，兼顾可解释性与数据效率（与 [discretizing reward models](../ch01/367-discretizing-reward-models.html) 同属奖励模型可解释性方向）。
 - **LocalSearchBench**：本地生活服务领域 Agentic Search 评测基准——9 城市、6 服务品类、900 道多跳问答 + LocalPlayground 交互环境 + LocalRAG 商户检索工具；16 款主流推理模型普遍表现不佳（信息完整性/可信度不足），为本地生活场景智能体搜索提供基准支撑。
 - **JTransNet**：联合广告拍卖场景匿名性 + 确定性分配（NeuralSort 可微排序 + 端到端数据驱动 AMD 自动化模型拍卖），已在美团零售核心业务全量上线。
 - **UME**：跨域 ETA 统一元泛化框架——双分支网络 + 超网络元学习动态调制特征门控/专家注意力/最终预测，知识蒸馏弥合冷启动市场特征缺失，解决 Keeta 国际化即时配送跨域异质性。
@@ -29,16 +29,16 @@
 - 错误反馈、超时控制、自动重试机制提升长链路任务稳定性与容错
 - 异构数据处理：多模态视频理解子智能体 + 非结构化文档 ETL 子智能体，增强主智能体数据提取与综合分析
 
-获奖代码已在 GitHub 开源（`zhezh/kddcup2026_champion`）。该方案验证了 Agent Harness（工具编排 + 子智能体分工 + 容错机制）在复杂异构数据分析场景的有效性，与 [Agent Harness 上下文管理](ch05/042-agent-harness.html) 及 [Agent Orchestration](../ch04/619-agent-orchestration.html) 的工程实践同构。
+获奖代码已在 GitHub 开源（`zhezh/kddcup2026_champion`）。该方案验证了 Agent Harness（工具编排 + 子智能体分工 + 容错机制）在复杂异构数据分析场景的有效性，与 [Agent Harness 上下文管理](ch05/043-agent-harness.html) 及 [Agent Orchestration](../ch04/622-agent-orchestration.html) 的工程实践同构。
 
 ## 相关实体
 
-- [美团 LongCat 2.0](../ch04/480-longcat-2-0.html) — 美团大模型家族
-- [GenRec（Netflix）](../ch01/867-llm.html) — 生成式推荐对照
-- [Discretizing Reward Models](../ch01/368-discretizing-reward-models.html) — 奖励模型离散化
-- [美团 LoHOSearch](../ch04/668-lohosearch.html) — Agent 搜索评测
+- [美团 LongCat 2.0](../ch04/483-longcat-2-0.html) — 美团大模型家族
+- [GenRec（Netflix）](../ch01/1146-llm.html) — 生成式推荐对照
+- [Discretizing Reward Models](../ch01/367-discretizing-reward-models.html) — 奖励模型离散化
+- [美团 LoHOSearch](../ch04/671-lohosearch.html) — Agent 搜索评测
 - [美团 Turing Agent 评估](../ch03/037-agent.html) — 同团队评估方法论
-- [Agent Harness 上下文管理](ch05/042-agent-harness.html) — Harness 工程实践
+- [Agent Harness 上下文管理](ch05/043-agent-harness.html) — Harness 工程实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kdd26-美团学术论文精选及kdd-cup26-dataagents赛道冠军思路解读.md)
 

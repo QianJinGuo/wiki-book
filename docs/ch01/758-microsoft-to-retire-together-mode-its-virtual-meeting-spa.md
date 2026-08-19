@@ -36,17 +36,17 @@ Together Mode 的退役不是孤立事件，而是"沉浸式办公"叙事整体�
 2. **把功能重叠当作砍掉决策的触发器。** 当新功能完整覆盖旧功能的核心需求（Gallery view 覆盖"看到所有人"），旧功能就进入待修剪名单；重叠是最干净、最无争议的退役理由。
 3. **将维护成本显性化。** 每个低使用率选项背后都有三笔隐性账单：用户认知负担、测试与兼容矩阵、无障碍与回归成本；决策前先把这三笔账算清楚。
 4. **用轻量实验替代宏大叙事。** 元宇宙办公的教训是：用 Together Mode 这类轻量功能做渐进验证，比一次性押注 Mesh 这样的重型平台更稳健；实验数据不支持叙事时，及时止损本身就是战略能力。
-5. **关注下一代"共在感"的轻量实现。** 虚拟场景渲染被证明过于笨重，但"降低会议认知负荷"的需求仍在——[Granola](../ch05/108-ai.html) 这类 AI 会议笔记工具、[Webex 的 AI 会议助手](../ch11/239-amazon-quick.html) 用摘要、跟进与实时洞察等更轻的交互切入同一问题，说明正确的载体可能不是画面，而是信息结构。
+5. **关注下一代"共在感"的轻量实现。** 虚拟场景渲染被证明过于笨重，但"降低会议认知负荷"的需求仍在——[Granola](../ch05/108-ai.html) 这类 AI 会议笔记工具、[Webex 的 AI 会议助手](../ch11/238-amazon-quick.html) 用摘要、跟进与实时洞察等更轻的交互切入同一问题，说明正确的载体可能不是画面，而是信息结构。
 6. **企业 IT 需跟踪路线图并提前准备替代方案。** 对大多数用户 Gallery view 是合格替代，但若组织内有基于 Together Mode 的培训流程或特殊场景，需在 6 月 30 日前完成迁移或重新设计。
 
 ## 相关实体
 - [微软悄然寻找 OpenAI 替代方案](ch01/039-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Microsoft for Startups (v2)](ch01/724-microsoft-for-startups-microsoft.html)
-- [Notion AI Agents](../ch04/670-ai-agent.html)
+- [Notion AI Agents](../ch04/439-ai-agent.html)
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md)
 - [Microsoft for Startups](ch01/724-microsoft-for-startups-microsoft.html)
 - [Granola：AI 会议笔记工具](../ch05/108-ai.html)
-- [Cisco Webex 会议 AI 助手](../ch11/239-amazon-quick.html)
+- [Cisco Webex 会议 AI 助手](../ch11/238-amazon-quick.html)
 - [Slack 的 AI 路径](../ch05/108-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md)

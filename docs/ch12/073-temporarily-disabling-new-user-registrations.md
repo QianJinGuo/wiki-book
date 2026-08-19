@@ -52,8 +52,8 @@ rubygems.org 这类开放包注册中心几乎是供应链攻击的理想靶标�
 - [TanStack npm 供应链攻击复盘](../ch05/108-ai.html)：npm 生态同类供应链事故的 postmortem 对照
 - [Thinkst Package Proxy 供应链安全校验](../ch05/108-ai.html)：在包代理层做安全校验的工程实践
 - [DDoSing Software Delivery Pipelines](../ch01/1129-20.html)：针对软件交付管线的 DDoS 攻击研究
-- [Checkmarx Jenkins 插件供应链攻击](../ch01/547-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)：工具链组件被投毒的供应链攻击案例
-- [Skill 版本管理五大原则](../ch04/348-skill.html)：依赖版本管理与持续演进策略
+- [Checkmarx Jenkins 插件供应链攻击](../ch01/543-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)：工具链组件被投毒的供应链攻击案例
+- [Skill 版本管理五大原则](../ch04/349-skill.html)：依赖版本管理与持续演进策略
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/temporarily-disabling-new-user-registrations.md)
 

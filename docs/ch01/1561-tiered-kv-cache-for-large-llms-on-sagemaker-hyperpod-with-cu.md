@@ -31,7 +31,7 @@
 
 - [vLLM](ch01/883-vllm.html)
 - [DeepSeek 系统层 KV cache 成本迁移](ch01/1466-deepseek.html)
-- [Curvine 存储选型（EKS 万级 Agent）](../ch04/670-ai-agent.html)
+- [Curvine 存储选型（EKS 万级 Agent）](../ch04/439-ai-agent.html)
 - [SageMaker 推理可观测性](https://github.com/QianJinGuo/wiki/blob/main/entities/sagemaker-inference-observability-cloudwatch-insights.md)
 - [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
 - [GPU 优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/gpu-optimization.md)

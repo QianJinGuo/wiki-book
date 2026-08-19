@@ -55,7 +55,7 @@ v1 是 vLLM 的一次架构级重构：token 级调度器（token-based schedule
 - [量化技术](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md)
 - [投机解码](ch01/1213-spec.html)
 - [SGLang 推理部署](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang-inference-deployment-practice-benchmark-tuning.md)
-- [llama.cpp 部署](../ch11/168-llama-cpp-deployment.html)
+- [llama.cpp 部署](../ch11/167-llama-cpp-deployment.html)
 
 ---
 

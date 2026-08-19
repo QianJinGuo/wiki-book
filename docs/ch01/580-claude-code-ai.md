@@ -115,7 +115,7 @@ MonkeyCode 制作 HTML 转 PNG 工具的案例特别有意义——它展示了 
 - **工具的一次性使用成本**趋近于零
 - 用户可以按需生成「用完即走」的微型工具
 
-这对 [Agent 系统](../ch03/098-hermes-agent.html) 的能力设计也有启发：Agent 不应只执行预设的 workflow，还应具备按需生成辅助工具的能力，以应对长尾场景。
+这对 [Agent 系统](../ch03/099-hermes-agent.html) 的能力设计也有启发：Agent 不应只执行预设的 workflow，还应具备按需生成辅助工具的能力，以应对长尾场景。
 
 ### 国产开源 AI 编程工具的定位与差异化
 
@@ -130,7 +130,7 @@ MonkeyCode 制作 HTML 转 PNG 工具的案例特别有意义——它展示了 
 
 ## 实践启示
 
-1. **环境配置是 AI 编程工具最大的隐性门槛**。MonkeyCode 的成功因素之一是消除了安装配置这个「第一英里」摩擦。在设计 [Hermes Agent](../ch03/098-hermes-agent.html) 等开发工具时，应尽可能提供零配置的「云端开箱即用」体验，降低用户的启动成本。
+1. **环境配置是 AI 编程工具最大的隐性门槛**。MonkeyCode 的成功因素之一是消除了安装配置这个「第一英里」摩擦。在设计 [Hermes Agent](../ch03/099-hermes-agent.html) 等开发工具时，应尽可能提供零配置的「云端开箱即用」体验，降低用户的启动成本。
 
 2. **评估 AI 编程工具的核心指标应从「单次准确率」转向「收敛速度」**。MonkeyCode 的测试显示，从初版到精品的多轮迭代中，每次迭代都能感知到明显进步。这意味着衡量工具能力的标准应该是「需要多少轮人工干预才能达到目标质量」，而不是「第一版多完美」。
 
@@ -142,8 +142,8 @@ MonkeyCode 制作 HTML 转 PNG 工具的案例特别有意义——它展示了 
 
 ## 相关实体
 
-- [Claude Code 深度架构分析](../ch03/084-claude-code.html) — Claude Code 的技术架构与使用分析
-- [Hermes Agent](../ch03/098-hermes-agent.html) — Agent 系统的开发环境与工具链
+- [Claude Code 深度架构分析](../ch03/085-claude-code.html) — Claude Code 的技术架构与使用分析
+- [Hermes Agent](../ch03/099-hermes-agent.html) — Agent 系统的开发环境与工具链
 - [Vibe Coding](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md) — AI 辅助编程的直觉式开发范式
 - [Coding Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md) — AI 编程代理的能力边界与评估
 - AI 原生开发（参见 [Vibe Coding 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md)） — 从模型到产品的全链路工具链

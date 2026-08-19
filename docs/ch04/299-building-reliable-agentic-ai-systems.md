@@ -2,7 +2,7 @@
 
 ## Ch04.299 Building Reliable Agentic AI Systems
 
-> 📊 Level ⭐⭐ | 10.7KB | `entities/building-reliable-agentic-ai-systems-martinfowler.md`
+> 📊 Level ⭐⭐ | 10.8KB | `entities/building-reliable-agentic-ai-systems-martinfowler.md`
 
 # Building Reliable Agentic AI Systems
 
@@ -117,7 +117,7 @@ PRINCE 的三层反思机制可以映射到传统软件工程的质量保障实�
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — PRINCE 是该框架的教科书实现
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-context-window-management.md) — 上下文纪律是该概念的实践模式
 - [Agentic RAG Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-rag-patterns.md) — PRINCE 展示了生产级 Agentic RAG 的完整实现
-- [AWS DevOps Agent](../ch11/297-aws-devops-agent.html) — 另一个生产级多 Agent 系统案例
+- [AWS DevOps Agent](../ch11/294-aws-devops-agent.html) — 另一个生产级多 Agent 系统案例
 - [When I Reject AI Code](../ch09/126-when-i-reject-ai-code-even-if-it-works.html) — 同样关注 AI 系统的工程可靠性
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-reliable-agentic-ai-systems-martinfowler.md)

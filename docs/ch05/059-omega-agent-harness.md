@@ -74,7 +74,7 @@ Harness VLA 提供了两个重要的设计补充：
 
 ### 对 Harness Engineering 的启示
 
-OMEGA 的设计理念对通用 harness engineering 有重要借鉴意义：它展示了 harness 层如何为 AI 系统提供"可执行的组织层"——不是替代底层模型能力，而是把模型能力包装成可声明、可调度、可观察的协作单元。这与 [Agent Harness Context Management Working Set](ch05/042-agent-harness.html) 中描述的 context management 思路异曲同工：两者都是在模型能力之外，构建一层系统化的组织与调度能力。
+OMEGA 的设计理念对通用 harness engineering 有重要借鉴意义：它展示了 harness 层如何为 AI 系统提供"可执行的组织层"——不是替代底层模型能力，而是把模型能力包装成可声明、可调度、可观察的协作单元。这与 [Agent Harness Context Management Working Set](ch05/043-agent-harness.html) 中描述的 context management 思路异曲同工：两者都是在模型能力之外，构建一层系统化的组织与调度能力。
 
 ## 实践启示
 
@@ -90,10 +90,10 @@ OMEGA 的设计理念对通用 harness engineering 有重要借鉴意义：它�
 
 ## 相关实体
 
-- [Agent Orchestration Multi Agent Systems](../ch04/619-agent-orchestration.html) — 多智能体编排的基础架构模式，OMEGA 将其扩展到物理机器人领域
+- [Agent Orchestration Multi Agent Systems](../ch04/622-agent-orchestration.html) — 多智能体编排的基础架构模式，OMEGA 将其扩展到物理机器人领域
 - [Coze 3 Multimagent Team Orchestration Wangheige](../ch03/037-agent.html) — Coze 的团队级编排设计，提供软件侧的参考对比
-- [Agent Harness Context Management Working Set](ch05/042-agent-harness.html) — harness 工程中的 context management，与 OMEGA 的分层设计有相似的设计哲学
-- [阿里云刚发布的 Agentloop 是什么](../ch04/359-agentloop.html) — 阿里云的 AgentLoop 编排方案，为软件侧的多 agent 协作提供另一种范式参考
+- [Agent Harness Context Management Working Set](ch05/043-agent-harness.html) — harness 工程中的 context management，与 OMEGA 的分层设计有相似的设计哲学
+- [阿里云刚发布的 Agentloop 是什么](../ch04/360-agentloop.html) — 阿里云的 AgentLoop 编排方案，为软件侧的多 agent 协作提供另一种范式参考
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/omega-orchestration-multiple-embodied-generalist-agents-ustc-2026.md)
 

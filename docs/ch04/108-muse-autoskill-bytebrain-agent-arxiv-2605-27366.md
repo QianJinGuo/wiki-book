@@ -251,12 +251,12 @@
 
 ## 相关实体
 - [Ara Agent Native Research Artifact 37Authors](../ch03/037-agent.html)
-- [Memento Skills Let Agents Design Agents](../ch03/076-skills.html)
+- [Memento Skills Let Agents Design Agents](../ch03/077-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md)
 
-- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](../ch01/266-0.html)
-- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](ch04/348-skill.html)
+- [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](../ch01/265-0.html)
+- [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](ch04/349-skill.html)
 
 ## 深度分析
 

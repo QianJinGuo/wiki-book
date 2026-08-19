@@ -55,11 +55,11 @@ Unibase Memory 等共享记忆方案面临的核心工程挑战是并发写入�
 
 ## 相关实体链接
 
-- [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/101-anthropic-8x.html) — 文中引用的 Agent 协作验证瓶颈讨论
-- [Agent Harness Context Management Working Set](../ch05/042-agent-harness.html) — 上下文窗口作为运行时工作集的观点
+- [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/102-anthropic-8x.html) — 文中引用的 Agent 协作验证瓶颈讨论
+- [Agent Harness Context Management Working Set](../ch05/043-agent-harness.html) — 上下文窗口作为运行时工作集的观点
 - [Codex 5 Layer Architecture](ch01/737-codex.html) — Codex 的架构设计
-- [Claude Code Multi Agent Collaboration 多智能体协作体系设计](../ch03/084-claude-code.html) — 多智能体协作体系设计
-- [Ai Agent Loops Claude Code Codex](../ch03/084-claude-code.html) — AI Agent 循环与代码生成
+- [Claude Code Multi Agent Collaboration 多智能体协作体系设计](../ch03/085-claude-code.html) — 多智能体协作体系设计
+- [Ai Agent Loops Claude Code Codex](../ch03/085-claude-code.html) — AI Agent 循环与代码生成
 - [Harness 之后 状态边界与失败闭环 若飞](../ch05/077-harness.html) — Harness 工程中的状态与边界管理
 - [Harness Engineering](../ch05/065-harness-engineering.html) — Harness Engineering 总体概念
 

@@ -17,7 +17,7 @@
 - **未来路线**：全自动驾驶与纯模拟驾驶将在高端跑车市场分道扬镳，形成两条并行的产品家族 
 
 ## 相关实体
-- [The Race To Own The Agentic Future Tidemark](../ch04/554-the-race-to-own-the-agentic-future-tidemark.html)
+- [The Race To Own The Agentic Future Tidemark](../ch04/557-the-race-to-own-the-agentic-future-tidemark.html)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/108-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/035-from-doer-to-director-the-ai-mindset-shift.html)

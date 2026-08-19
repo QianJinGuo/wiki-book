@@ -23,7 +23,7 @@ full-bandwidth transformer 用 **latent feedback** 拓宽该通道：每个解�
 ## 与既有研究的关系
 
 - 与 [Transformer 状态跟踪局限](ch01/1129-20.html) 同属「修改自回归架构以补足机制能力」家族，但本作从反馈带宽（垂直流）切入而非状态表示。
-- 与 [Attention-only Transformer 受控研究](ch01/266-0.html) 同属「给 Transformer 变形并实证」的方法论族——本作保留标准 attention，只改反馈通道。
+- 与 [Attention-only Transformer 受控研究](ch01/265-0.html) 同属「给 Transformer 变形并实证」的方法论族——本作保留标准 attention，只改反馈通道。
 - 与 [注意力机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) 概念页互补：attention 决定水平接入，latent feedback 决定垂直回流。
 
 ## 实践启示

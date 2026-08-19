@@ -17,10 +17,10 @@
 
 ## 相关实体
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/037-agent.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/487-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/487-agent-skills.html)
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/521-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
-- [Anthropic Google Agent Skills Design Patterns](../ch04/259-anthropic-google-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/490-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/490-agent-skills.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/520-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
+- [Anthropic Google Agent Skills Design Patterns](../ch04/610-anthropic-google-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 

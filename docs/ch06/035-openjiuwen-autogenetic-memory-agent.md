@@ -68,14 +68,14 @@ JiuwenMemory 设计了四层记忆架构，让信息从原始对话逐级抽象�
 ## 相关交叉链接
 
 - [OpenJiuwen Swarm 协作工程](https://github.com/QianJinGuo/wiki/blob/main/entities/jiuwenswarm-coordination-engineering.md) — 同一社区的 Agent 协作框架
-- [Agent 记忆架构](../ch04/514-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆系统设计模式
+- [Agent 记忆架构](../ch04/517-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆系统设计模式
 - [若飞 Agent 记忆架构](../ch04/180-agent-memory.html) — 分层记忆视角对比
 - [Hermes Agent 记忆系统](ch06/013-hermes-agent-memory.html) — 记忆引擎实现对比
-- [Agent Harness 记忆现状](../ch05/042-agent-harness.html) — Mem0 等同类引擎
+- [Agent Harness 记忆现状](../ch05/043-agent-harness.html) — Mem0 等同类引擎
 - [淘宝 Agent 记忆评估全景](../ch04/180-agent-memory.html) — 记忆评估体系
 - [AI Agent 记忆系统综述](../ch04/180-agent-memory.html) — 记忆系统综合对比
-- [三种记忆范式对比](ch06/045-memory.html) — 范式级对比
-- [Claude Code 七层记忆架构](../ch03/084-claude-code.html) — 分层记忆设计对比
+- [三种记忆范式对比](ch06/015-memory.html) — 范式级对比
+- [Claude Code 七层记忆架构](../ch03/085-claude-code.html) — 分层记忆设计对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openjiuwen-autogenetic-memory-agent-2026-07-02.md)
 

@@ -9,7 +9,7 @@
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/1094-openai-gpt-realtime-voice-models-qbitai.html)
 - GPT-5.5 实测
-- [Yann Dubois Openai Post Training Interview](ch01/276-openai.html)
+- [Yann Dubois Openai Post Training Interview](ch01/594-openai.html)
 - [Gpt 5 Is Here And Openai Has Some Tips](ch01/888-gpt-5-is-here-and-openai-has-some-tips.html)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/082-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 
