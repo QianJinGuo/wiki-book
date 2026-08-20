@@ -190,7 +190,7 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
 - [GPT-5.4 Codex 进展](ch01/737-codex.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
-- [Karpathy Agentic Engineering 综述](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Agentic Engineering 综述](../ch04/821-karpathy-vibe-coding-agentic-engineering.html)
 - [AgentOps on Bedrock](../ch04/301-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Yann Dubois OpenAI 后训练访谈](ch01/594-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/016-wiki-evolver.html)

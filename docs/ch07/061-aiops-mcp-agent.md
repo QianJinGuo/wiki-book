@@ -65,7 +65,7 @@ Agent 的输入侧是告警洪流：同一故障在多套系统重复报警、�
 ## 相关实体
 
 - [Model Context Protocol (MCP)](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
-- [Zenjoy AIOps Agent on EKS](../ch11/311-bedrock.html)
+- [Zenjoy AIOps Agent on EKS](../ch11/312-bedrock.html)
 - [MCP Agent 外部生态集成](../ch03/037-agent.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [OpsPilot Zero 零人工运维](../ch03/037-agent.html)

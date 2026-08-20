@@ -71,7 +71,7 @@ ICO 将原始罚款从约 160 万英镑减免至 96.4 万英镑（减免 40%）�
 
 ## 相关实体
 
-- [ICO fines Cl0p victim South Staffs Water over data breach](../ch01/265-0.html)
+- [ICO fines Cl0p victim South Staffs Water over data breach](../ch01/1468-0.html)
 - [AI Code Review](../ch05/108-ai.html)
 - [主题导航 - 网络安全与隐私](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 

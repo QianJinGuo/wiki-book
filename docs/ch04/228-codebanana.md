@@ -29,7 +29,7 @@ CodeBanana 是李志飞自研的组织操作系统，核心理念：**沟通在�
 ## 与现有知识库的关联
 
 - [Harness Engineering 范式 — 综合性概念解析](../ch05/065-harness-engineering.html) — CodeBanana 是组织级 Harness 系统的一个具体实现案例
-- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/490-agent-skills.html) — CodeBanana 的 Skill 商店是 Agent Skill 生态在组织场景的应用实例
+- [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/492-agent-skills.html) — CodeBanana 的 Skill 商店是 Agent Skill 生态在组织场景的应用实例
 - [Hermes Agent](../ch03/099-hermes-agent.html) — CodeBanana 的 Skill 系统和 Agent 管理具象化了 Hermes 之类 Agent 系统的组织级部署
 - [Claude Code 一周年回顾](../ch03/085-claude-code.html) — 李志飞的「不允许手写代码」转型与 Claude Code/Agent 编码实践的呼应
 

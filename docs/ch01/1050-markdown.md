@@ -11,7 +11,7 @@ Karpathy 的看法：音频是大语言模型最好的输入，视觉是最好�
 ## 为什么 Markdown 最适合 AI
 
 ## 相关实体
-- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/779-anthropic.html)
+- [Www.Infoworld 4171274 Anthropic Puts Claude Agents On A Meter Across Its Subscri](ch01/1592-anthropic.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/085-claude-code.html)
 - [Skill Factory Yueheng](../ch04/349-skill.html)
 - [Code Review Graph](ch01/1113-code-review-graph-claude-code-6-8-token.html)

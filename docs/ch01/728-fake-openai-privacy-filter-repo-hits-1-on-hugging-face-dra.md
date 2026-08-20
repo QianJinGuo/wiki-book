@@ -44,8 +44,8 @@
 
 ## 相关实体
 - [主题导航：网络安全与隐私](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
-- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/633-ml-intern-huggingface-autonomous-ml-agent.html)
-- [LLM Share 恶意分发页面](ch01/1414-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
+- [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/635-ml-intern-huggingface-autonomous-ml-agent.html)
+- [LLM Share 恶意分发页面](ch01/1415-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
 - [LLM raiders and how to repel them](ch01/1046-llm-raiders-and-how-to-repel-them.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thehackernews-fake-openai-privacy-filter.md)

@@ -120,7 +120,7 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 ## 相关实体
 
 - [Harness Engineering](../ch05/065-harness-engineering.html)
-- [Coding Harness 工程本质](../ch11/252-openclaw.html)
+- [Coding Harness 工程本质](../ch11/253-openclaw.html)
 - [复旦北大 AHE Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [OpenClaw Agent Loop Design Patterns](../ch01/1220-openclaw-agent.html)
 - [Harness Engineering 7 Layers](../ch05/065-harness-engineering.html)

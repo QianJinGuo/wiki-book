@@ -34,7 +34,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
-- [AIDLC范式: 平台驱动到大数据工程的范式迁移](../ch01/433-aws.html)
+- [AIDLC范式: 平台驱动到大数据工程的范式迁移](../ch05/108-ai.html)
 
 ---
 

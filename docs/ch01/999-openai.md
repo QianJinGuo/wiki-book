@@ -97,7 +97,7 @@ OpenAI 面临的两难是：模型的推理能力越强，其逃逸和绕过安�
 - [AI 对齐](https://github.com/QianJinGuo/wiki/blob/main/concepts/msm-model-spec-midtraining-alignment.md)
 - 长时程任务
 - 沙箱逃逸
-- [Prime Intellect 自主 speedrun 实验](ch01/265-0.html)
+- [Prime Intellect 自主 speedrun 实验](ch01/1468-0.html)
 - [GPT-5.5 相关报道](ch01/358-1.html)
 
 ---

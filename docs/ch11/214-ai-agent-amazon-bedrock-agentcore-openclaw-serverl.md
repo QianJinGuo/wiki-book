@@ -32,15 +32,15 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、OpenClaw�
 6. **关注成本监控的持续性**：多租户 Serverless 的成本模型与单机部署有显著差异。建议在迁移完成后建立租户级别的成本监控，及时发现异常消费模式。
 
 ## 相关实体
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/660-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/660-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/660-amazon-bedrock-agentcore.html)
-- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/660-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/660-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
+- [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/665-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/660-amazon-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
 
 ---
 

@@ -33,7 +33,7 @@
 - [Skill Rag Tsinghua Sra](../ch04/349-skill.html)
 - [Doubao Seed 2 Lite Agent Multimodal](../ch03/037-agent.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/085-claude-code.html)
-- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/814-claude-managed-agents.html)
+- [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/634-claude-managed-agents.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-newbie-guide-dotta.md)
 

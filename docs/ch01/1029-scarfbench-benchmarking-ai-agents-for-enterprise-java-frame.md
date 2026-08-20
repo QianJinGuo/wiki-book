@@ -26,7 +26,7 @@ Agent 的访问模式分析显示：最常见的文件层访问转换集中在 C
 
 ### 4. 非代码因素的挑战
 
-环境与工具链问题也在迁移过程中占据重要比重：Docker 缓存不一致、端口连接问题、Maven Wrapper 和构建工具问题等操作层面的困扰，往往在源代码迁移本身就绪后仍会延迟验证。IBM 的故障模式分布分析显示：迁移失败涉及构建系统、部署环境、依赖注入、数据库、端点、断言和基础设施等多个维度。这印证了 [CODA Bench](../ch09/107-coda-bench-code-agent.html) 中也强调的一个发现——代码 Agent 的能力评估不能仅关注代码生成质量，还需要考虑其对开发环境、构建工具和运行时行为的理解能力。
+环境与工具链问题也在迁移过程中占据重要比重：Docker 缓存不一致、端口连接问题、Maven Wrapper 和构建工具问题等操作层面的困扰，往往在源代码迁移本身就绪后仍会延迟验证。IBM 的故障模式分布分析显示：迁移失败涉及构建系统、部署环境、依赖注入、数据库、端点、断言和基础设施等多个维度。这印证了 [CODA Bench](../ch09/108-coda-bench-code-agent.html) 中也强调的一个发现——代码 Agent 的能力评估不能仅关注代码生成质量，还需要考虑其对开发环境、构建工具和运行时行为的理解能力。
 
 ### 5. 对企业 Java 现代化战略的启示
 
@@ -57,10 +57,10 @@ ScarfBench 的数据对采用 AI Agent 进行企业 Java 现代化的组织有�
 
 ## 相关实体
 
-- [CODA Bench 代码 Agent 基准测试](../ch09/107-coda-bench-code-agent.html)
+- [CODA Bench 代码 Agent 基准测试](../ch09/108-coda-bench-code-agent.html)
 - [AI Coding Paradigm Evolution](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-paradigm-evolution.md)
 - 编码 Agent 评估
-- [企业 Agent 编排](../ch04/622-agent-orchestration.html)
+- [企业 Agent 编排](../ch04/624-agent-orchestration.html)
 - [面向 Agent 的后端设计](../ch03/037-agent.html)
 
 ## 来源

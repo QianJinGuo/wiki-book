@@ -45,11 +45,11 @@ Agent 每次进入项目都要重新读代码、猜结构、问人。
 ### 关联实体
 
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/252-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/252-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1396-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1397-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

@@ -131,7 +131,7 @@ GBrain 自带 30+ 个 MCP 工具，通过 stdio 暴露，直接接进 Claude Cod
 {
 ## 相关实体
 
-- [十年老技术开发的 ai agent 探索之路](../ch04/439-ai-agent.html)
+- [十年老技术开发的 ai agent 探索之路](../ch04/588-ai-agent.html)
 - [wiki evolver](../ch07/016-wiki-evolver.html)
 
 ---

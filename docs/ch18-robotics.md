@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **34 篇**实体，按深度递增排列。
+> 本章收录 **35 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 19 |
+| ⭐⭐ 工程师 | 需编程基础 | 20 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 9 |
 
@@ -1285,7 +1285,41 @@ DM0.5 将 VLA（视觉-语言-动作）模型从精心搭建的"剧本环境"推
 
 ---
 
-## Ch18.020 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
+## Ch18.020 LiOS 端云协同基础设施：具身智能柔性操作与虚实迁移（招商局狮子山人工智能实验室）
+
+> 📊 Level ⭐⭐ | 3.4KB | `entities/lios-end-cloud-robotics-infrastructure-vla-sim2real-simba-2026.md`
+
+# LiOS 端云协同基础设施：具身智能柔性操作与虚实迁移
+
+## 背景：柔性操作是具身智能的「技术试金石」
+
+衣物折叠被公认为具身智能领域的技术试金石：衣物属无定型柔性物体，材质厚薄、褶皱、缠绕、摩擦力、弹性形变均存在强动态不确定性，考验柔性感知、双臂协同、接触力控、长程作业、状态恢复五大能力。行业主流方案普遍存在「仿真优秀、真机拉胯、场景受限」痛点，根因是仿真与真机的**虚实迁移鸿沟**（硬件刚性差异、装配误差、夹爪稳定性、底层控制精度偏差）。
+
+## LiOS 三层架构
+
+招商局狮子山人工智能实验室自研 **LiOS 端云协同基础设施**，将具身智能从分散系统集成推进到 OS 级统一基础设施，分三层：
+
+- **云侧**：多模态大模型分布式训练与推理优化、多模态数据湖仓管理、高并发仿真评估；可在 Qwen3-VL-30B-A3B / 235B-A22B、Wan2.2-T2V-A14B、DINOv3、V-JEPA-2 等基座上构建 VLA、WAM、WM 等具身基础模型。
+- **端侧**：LiOS Runtime 接入异构机器人本体/传感器/末端执行器/边缘计算，实现传感器同步、运动控制、安全执行、接管恢复，结合 Real-time Chunking 等策略保持实时性与安全边界。
+- **端云协同**：以低延迟可计算数据流把真实机器人现场接入云端，支撑推理、远程接管与数据回流；WebRTC/GStreamer 图传方案实现约 30ms（网络部分 24ms）「本地相机到云端显存」单向端到端延迟，较通用中继方案加速 2.1～6.9 倍，单路 GPU 解码吞吐每秒数千帧。
+
+## 数据闭环与成果
+
+实验室构建「覆盖训练、部署、轨迹采样与 Real2Sim 遥操作」的数据迭代闭环：分布式并行训练使模型训练吞吐提升 5 倍以上，仿真环境并行化重构使评测效率提升 4 倍以上。2026 年 6 月晋级 ICRA 2026 LeHome Challenge 决赛并击败包括 2025 BEHAVIOR-1K 冠军、Ilya 等对手，斩获全球第一名。
+
+三大核心能力演示：多双臂平台并列叠衣（统一接入/任务编排/控制执行框架屏蔽硬件差异）、多类衣物折叠（短袖/长袖/长裤拓扑自适应）、大形变整理（成团缠绕/褶皱/遮挡下拖拽、拉伸、展平恢复至可折叠状态）。
+
+## 相关
+
+- 具身智能前沿 → [Embodied Intelligence Frontier](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
+- 机器人具身 AI → [Robotics Embodied Ai](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md)
+- 端云机器人 OS 范式对比 → [Abot Agentos Robot Agent Os Amap 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/abot-agentos-robot-agent-os-amap-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lios-end-cloud-robotics-infrastructure-vla-sim2real-simba-2026.md)
+
+---
+
+## Ch18.021 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md`
 
@@ -1315,7 +1349,7 @@ Afford-VLA 包含三个关键步骤：
 
 ---
 
-## Ch18.021 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
+## Ch18.022 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/poxiaointelligent-tactile-robot-foundation-model-2026.md`
 
@@ -1345,7 +1379,7 @@ TouchWorld 的核心架构包含 Predictive（触觉目标预测）和 Reactive�
 
 ---
 
-## Ch18.022 Grabette — 开源机器人操作数据采集系统
+## Ch18.023 Grabette — 开源机器人操作数据采集系统
 
 > 📊 Level ⭐⭐ | 1.2KB | `entities/grabette-open-system-robot-manipulation-data.md`
 
@@ -1367,7 +1401,7 @@ Grabette 是面向**机器人操作数据录制**的开源系统——解决具�
 
 ---
 
-## Ch18.023 具身智能空间视觉死穴，终于被最新顶会彻底解决！
+## Ch18.024 具身智能空间视觉死穴，终于被最新顶会彻底解决！
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/具身智能空间视觉死穴终于被最新顶会彻底解决.md`
 
@@ -1443,7 +1477,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.024 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
+## Ch18.025 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
 
 > 📊 Level ⭐⭐⭐ | 2.7KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代.md`
 
@@ -1466,7 +1500,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.025 Handroid：同一套硬件在人形机器人与灵巧手之间重构（UNC+Stanford）
+## Ch18.026 Handroid：同一套硬件在人形机器人与灵巧手之间重构（UNC+Stanford）
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/handroid-reconfigurable-robot-dexterous-hand-humanoid-unc-stanford-2026.md`
 
@@ -1497,7 +1531,7 @@ Handroid 是北卡罗来纳大学教堂山分校与斯坦福大学提出的可�
 
 ---
 
-## Ch18.026 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+## Ch18.027 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/icra26-symskill-robot-long-horizon-manipulation.md`
 
@@ -1570,7 +1604,7 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 ---
 
-## Ch18.027 具身原生世界动作模型（Embodied World Action Model）
+## Ch18.028 具身原生世界动作模型（Embodied World Action Model）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/全球首个具身原生世界动作模型来了.md`
 
@@ -1633,7 +1667,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ---
 
-## Ch18.028 景烁科技 — 具身智能数据基础设施
+## Ch18.029 景烁科技 — 具身智能数据基础设施
 
 > 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
@@ -1703,7 +1737,7 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 
 ---
 
-## Ch18.029 10万小时训出开箱即用机器人基座模型：Xiaomi-Robotics-1 探索具身智能 Scaling 效应
+## Ch18.030 10万小时训出开箱即用机器人基座模型：Xiaomi-Robotics-1 探索具身智能 Scaling 效应
 
 > 📊 Level ⭐⭐⭐⭐ | 6.0KB | `entities/xiaomi-robotics-1-具身智能-scaling.md`
 
@@ -1744,7 +1778,7 @@ Xiaomi-Robotics-1 采用"预训练 + 后训练"两阶段范式。预训练阶段
 
 ---
 
-## Ch18.030 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+## Ch18.031 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 
@@ -1816,7 +1850,7 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.031 对话郎咸朋：昆仑行具身智能的物理因果世界模型与数据编译路线
+## Ch18.032 对话郎咸朋：昆仑行具身智能的物理因果世界模型与数据编译路线
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/对话郎咸朋用机器人创业重做一次百万智驾量产.md`
 
@@ -1863,7 +1897,7 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.032 人形之外：擎羽把“身体”变成具身智能的新变量（柔性具身智能 + Fi0 跨本体基础模型）
+## Ch18.033 人形之外：擎羽把“身体”变成具身智能的新变量（柔性具身智能 + Fi0 跨本体基础模型）
 
 > 📊 Level ⭐⭐⭐⭐ | 3.9KB | `entities/人形之外擎羽柔性具身智能-fi0-跨本体基础模型.md`
 
@@ -1904,7 +1938,7 @@ Fi0 建立在基础判断上：**机器人对任务和物理世界的理解应�
 
 ---
 
-## Ch18.033 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+## Ch18.034 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md`
 
@@ -1936,7 +1970,7 @@ Being-H0.8 是一套带触觉的隐式世界—动作模型：**预训练阶段*
 
 ---
 
-## Ch18.034 LeRobot v0.6.0 — Imagine, Evaluate, Improve
+## Ch18.035 LeRobot v0.6.0 — Imagine, Evaluate, Improve
 
 > 📊 Level ⭐⭐⭐⭐ | 1.8KB | `entities/lerobot-v060-imagine-evaluate-improve.md`
 

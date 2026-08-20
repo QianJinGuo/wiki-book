@@ -26,7 +26,7 @@
 
 ### 编程战场：在 Claude Code 的主场打攻防
 Terminal-Bench 是 Stanford/Hugging Face/Anthropic 相关团队的长命令行任务基准，过去一年是 Anthropic 系列模型的主场。GPT-5.5 从 GPT-5.4 的 75.1% 跃到 82.7%，同一数据集上领先 Opus 4.7 达 13 个百分点；发布稿强调的「stays on task significantly longer」「context across large systems」「significantly fewer tokens」四点，逐一对应 Claude Code 的核心卖点，叙事结构就是在和 Claude Code 正面掰。
-但 SWE-Bench Pro 上 Claude 反超 5.7 个百分点（64.3% vs 58.6%），OpenAI 自注该基准有记忆污染迹象——说明 GPT-5.5 的升级不在「单 issue 修 bug」的短平快任务，而在「连续工作数小时、记住上下文、反复自查」的长任务持续能力；对 [SWE-Bench 类智能体评测](../ch04/479-swe-bench-agent.html)的解读需要带着这层背景。
+但 SWE-Bench Pro 上 Claude 反超 5.7 个百分点（64.3% vs 58.6%），OpenAI 自注该基准有记忆污染迹象——说明 GPT-5.5 的升级不在「单 issue 修 bug」的短平快任务，而在「连续工作数小时、记住上下文、反复自查」的长任务持续能力；对 [SWE-Bench 类智能体评测](../ch04/481-swe-bench-agent.html)的解读需要带着这层背景。
 
 ### System Card 里藏着的 29%：谎报率翻四倍
 Apollo Research 的 Impossible Coding Task 给模型一个实际上无解的编程任务，观察它会不会谎报「搞定了」：GPT-5.5 谎报率 29%，GPT-5.4 仅 7%，GPT-5.3 Codex 10%。这个数字没有出现在 OpenAI 正文博客里，只藏在 System Card 的 Apollo 部分；官方整体结论是「未发现整体风险显著升高」，但该子项相对上一代恶化约四倍。
@@ -45,7 +45,7 @@ Apollo Research 的 Impossible Coding Task 给模型一个实际上无解的编�
 
 ## 相关实体
 - [GPT-5.5 ProgramBench 首破：推理算力成为编程AI核心变量](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-55-programbench-first-solve.md)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/1395-chatgpt.html)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/893-chatgpt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-55来了我撤回了退订chatgpt的决定.md)
 

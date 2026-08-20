@@ -39,15 +39,15 @@ Skill 是 Agent 能力的最小封装单元，它把领域知识、工作流程�
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/490-agent-skills.html)
-- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](../ch01/1495-gpt-image-2.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/814-claude-managed-agents.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/492-agent-skills.html)
+- [GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～](../ch01/1496-gpt-image-2.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/634-claude-managed-agents.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/037-agent.html)
-- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/779-anthropic.html)
+- [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1592-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [吴恩达：AI 将最先杀死前端](../ch05/108-ai.html)
-- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/779-anthropic.html)
+- [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](../ch01/1592-anthropic.html)
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/1233-claude.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
@@ -60,12 +60,12 @@ Skill 是 Agent 能力的最小封装单元，它把领域知识、工作流程�
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/099-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/077-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/589-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/438-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/297-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/065-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/252-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/253-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/065-harness-engineering.html)
-- [fastapi上线实战：认证、限流、零停机，一套代码搞定](../ch11/227-fastapi.html)
+- [fastapi上线实战：认证、限流、零停机，一套代码搞定](../ch11/092-fastapi.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 
 ---

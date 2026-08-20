@@ -1,62 +1,64 @@
-# 特赞企业级生成式 Agent
+# 企业级 Agent 编排
 
-## Ch04.546 特赞企业级生成式 Agent
+## Ch04.546 企业级 Agent 编排
 
-> 📊 Level ⭐⭐ | 6.9KB | `entities/tezign-generative-enterprise-agent.md`
+> 📊 Level ⭐⭐ | 6.9KB | `entities/enterprise-agent-orchestration.md`
 
-# 特赞企业级生成式 Agent
+# 企业级 Agent 编排
 
 ## 摘要
 
-特赞（Tezign）将企业创意内容生产流程整体 Agent 化，覆盖素材理解、创意生成、合规审核、多渠道分发四个环节，是创意行业 AI 化的代表性实践。与通用 Agent 不同，其企业级生成式 Agent 的核心约束来自品牌一致性、合规审核门禁以及与既有 DAM／营销系统的深度集成，背后是创意行业从按人天收费向按产出收费的商业模式迁移。
+多智能体系统若缺少编排控制面，会以可预测的方式失败：步骤间状态丢失、关键决策无人签核、单个 Agent 故障引发静默级联扩散。AWS《Agent Orchestration Workshop》给出的解法是分层编排——以确定性工作流引擎（Step Functions）、推理驱动协调层（Bedrock Agents）、人工审批闸门（HITL）和 DAG 式失败处理（MWAA 及开源编排工具）共同构成控制面。本实体将该素材置于企业工程语境，展开权限隔离、审计合规、多租户、资源配额与故障隔离等生产化议题。
 
 ## 核心要点
 
-- **四环节流水线**：素材理解（多模态解析历史素材与品牌资产，沉淀 Context）→ 创意生成（文案／图像／视频的多方案生成）→ 合规审核（版权、肖像、品牌安全、广告法门禁）→ 多渠道分发（适配各平台规格与调性）
-- **企业级与通用 Agent 的结构性差异**：品牌一致性约束、合规门禁、可审计性、与既有系统集成，是进入企业场景的硬性前提
-- **GEA 架构取向**：不执着于单个超级 Agent，而是以 Lead Agent + Sub-Agent + Skills + Context 搭出企业专属的 Agent 项目组
-- **数据不出域**：未发布的 campaign 与新品素材是核心机密，执行边界需要客户侧化（self-hosted sandbox 模式）
-- **工具分层决策**：Skill 写方法、MCP 管边界、CLI 做执行，生产数据与审批走 MCP-like gateway
-- **商业模式重构**：从按人天／按项目计费转向按产出计费，内容中台化沉淀为企业资产
-- **组织变革**：Pod + Community 双轨制下，Agent 成为 Pod 虚拟成员，管理 Agent 比管理人更难
+- 无编排层的 Agent 网络必然以三种方式失效：状态丢失、关键决策缺少人工签核机制、单点故障静默级联。
+- 编排层的核心职责是三件事：管理执行（execution）、管理状态（state）、管理审批闸门（approval gates）。
+- 编排存在两种互补范式：确定性工作流（状态机：重试、分支、并行）与推理驱动协调（工具调用、记忆、动态路由），企业通常叠加使用而非二选一。
+- 人工在环（HITL）审批把高风险决策变成显式暂停点，执行挂起直至人类签核——这是控制面与失控的分界线，也是审计证据链的起点。
+- 复杂多步流水线的失败处理依赖 DAG 式编排（Amazon MWAA / Airflow、Temporal、Prefect、Orkes），实现重试、补偿与优雅降级。
+- 企业级编排不只是技术选型：权限隔离、审计合规、多租户、资源配额与可观测性共同决定编排层能否进入生产。
+- AWS Marketplace 将编排工具（Temporal、Airflow、Orkes、Prefect、Step Functions、Bedrock Agents、MWAA）商品化为可订阅服务，降低编排层建设门槛。
 
 ## 深度分析
 
-### 创意生产流水线的 Agent 化拆解
+### 控制面缺失：企业 Agent 网络失败的第一性原因
 
-特赞场景的本质是把创意生产从"人 + 工具"重构为"Agent + Context"。素材理解环节将企业积累的亿级历史素材、品牌规范与 campaign 数据转化为可检索的结构化资产，构成生成的前提——这与范凌强调的分层上下文系统同构：素材库就是创意 Agent 的上下文层。创意生成环节输出多方案内容，但必须受品牌一致性约束：tone of voice、视觉规范、logo 使用规则都需编码进生成约束。合规审核是创意行业特有的 guardrail——版权、肖像权、品牌安全（brand safety）与广告法限制词构成硬性门禁，未经审核的内容不得进入分发。多渠道分发则把同一创意资产适配到微信、抖音、小红书等不同规格与调性。这一流水线同时也是 [企业 AI 采用](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption-patterns.md) 的典型场景：以既有内容资产为切入点，逐步向核心业务延伸。
+素材的立论非常直接：你造好了专用 Agent，也把它们接成了多 Agent 系统，但网络没有控制面就会以可预测的方式失败——状态在步骤之间丢失、关键决策没有人工签核机制、一个 Agent 宕机引发无声的级联失败。根因是同一个：缺少编排层来管理执行、状态与审批闸门。对企业而言这一点更致命——单 Agent 的异常在演示中是趣闻，在流水线上就是事故。
 
-### 企业级 Agent 与通用 Agent 的结构性差异
+### 确定性 × 推理：两种互补的编排范式
 
-通用 Agent 以任务完成度为目标，企业级生成式 Agent 则必须同时满足四类约束：品牌一致性（输出必须符合品牌资产规范）、合规门禁（审核不通过即不发布）、可审计性（每一次生成与发布留痕可查）、系统集成（与 DAM、CMS、营销自动化打通）。这与 CUGA 的 Guardrails Layer、ServiceNow AI Control Tower 的治理逻辑同构——治理与可观测性不再是附加层，而是 headless 企业平台能否被信任执行敏感操作的前提。[法律 AI 与合规](https://github.com/QianJinGuo/wiki/blob/main/concepts/legal-ai-compliance.md) 在创意场景中尤为具体：版权归属、肖像授权、广告法限制词，都需要编码为流水线内的硬性检查点。Claude Managed Agents 的"专属云"模式进一步给出执行边界答案：brain 与 hands 分离，决策可在托管控制平面，执行必须落在企业侧，确保创意素材与审核记录不出域。
+素材呈现的是两种互补范式而非替代关系：Step Functions 代表确定性编排——状态机显式管理状态、重试、分支与并行，适合步骤边界清晰的业务流程；Bedrock Agents 代表推理驱动协调——内置工具调用、记忆与动态路由，适合路径不固定的开放任务。真实企业编排层通常把两者叠放：用确定性的外层定义合规边界，用推理的内层保留灵活性。这种「工作流引擎 vs 自主 Agent 框架」的张力在开源生态中同样存在，控制流设计的更完整谱系参见 [17种Agent架构演进](ch04/803-17-agent.html)。
 
-### 组织与商业模式的连锁反应
+### 审批闸门与失败隔离：从演示到生产的关键一跃
 
-范凌在"当公司变成 Agent"中提出：AI 不是提效工具，而是资源分配器。当生成式 Agent 承担创意执行环节，创意行业的价值计量随之改变——从按人天／按项目收费转向按产出收费，内容中台成为企业的核心资产。组织层面，Pod + Community 双轨制下 Agent 以虚拟成员身份进入 Pod，Pod Leader 的核心能力从管理人变为"管理 Agent + 上下文工程"。随之而来的边界问题需要重新定义：组织与 Agent 的边界、人的判断与 Agent 产出的边界，以及责任归属——当 Agent 生成违规内容，责任由谁承担。这类组织与工具的双重变革，正是 [AI 原生公司转型路径](../ch05/022-ai-native.html) 讨论的核心命题。
+HITL 审批把「关键决策」变成显式暂停点，直到人类签核才继续执行——这是素材明确列出的学习目标，也是企业合规的最低要求。失败处理则交给 DAG 式编排（MWAA/Airflow、Temporal、Prefect、Orkes 等），在复杂多步流水线中提供重试、补偿与优雅降级。企业实践中，审批闸门同时承担审计职责：谁在何时批准了什么，本身就是合规证据链的一部分。凭证治理是另一个常被忽视的隔离维度——Agent 不应持有数据库直连凭证，相关模式见 [Agent 数据治理与凭证模式](../ch03/037-agent.html)。
 
-### 工具链与架构决策
+### 企业编排层的六个生产化维度
 
-面向特赞这类企业场景，工具选型遵循 CLI／MCP／Skill 的三层决策框架：Skill 封装创意方法论（brief 拆解、风格迁移、审核 checklist 等流程经验），MCP 治理外部系统接入（DAM、版权库、审核 API 的发现、授权与审计），CLI 负责在具体运行环境批量执行。生产级数据、审批与审计诉求指向 MCP-like gateway，而非裸 CLI。这套分层正对应 GEA 架构中 Context + Orchestration 的重点：编排 Agent 网络，而非建造单一超级 Agent，也与 [Agent 生产级 Harness 工程实践](../ch05/043-agent-harness.html) 的治理取向一致。
+把素材的工程主张推向生产，可归纳出六个企业级维度：权限隔离——每个 Agent 获得最小必要权限而非共享服务账号，编排层负责把身份映射到具体执行单元；审计合规——执行轨迹、审批记录、凭证使用全程可回溯，满足监管要求；多租户——隔离不同团队与业务线的命名空间、状态与配额，防止相互干扰；资源配额——为每个 Agent 设定 token、并发与调用预算，防止失控 Agent 耗尽共享资源；故障隔离——通过超时、熔断与降级把失败限制在子图内，阻止级联；可控性与可观测性——企业要求任何时刻都能解释「系统在做什么、为什么」，而开源场景往往默认信任 Agent 的自主性。这六点共同构成企业编排层与实验性多 Agent 系统的分水岭，生产级可观测性实践参见 [Agent Harness 生产可观测性](../ch05/043-agent-harness.html)。
 
 ## 实践启示
 
-1. **素材数字化先行**：先建设素材理解与 Context 层，再谈生成——历史素材资产是创意 Agent 的护城河
-2. **合规门禁前置**：把版权、肖像、品牌安全审核做成流水线内 guardrail，而非发布前的人工兜底
-3. **工具分层治理**：Skill 写方法、MCP 管边界、CLI 做执行；生产数据与审批走 gateway 并全程留痕
-4. **组织先行**：先明确 Pod 职责与上下文边界再引入 Agent；管理 Agent 比管理人更难，需重新定义 Pod Leader 能力
-5. **执行边界客户侧化**：敏感创意素材留在企业侧执行（self-hosted sandbox 模式），控制平面可托管
-6. **商业模式重构**：探索按产出／效果计费，推动内容中台化，让 AI 产能沉淀为可复利的企业资产
+1. 先补控制面再扩规模——把执行、状态、审批闸门显式建模，而不是指望 Agent 自治兜底。
+2. 确定性流程用状态机（Step Functions 类），开放任务用推理驱动协调（Bedrock Agents 类），叠加部署。
+3. 高风险决策一律挂人工审批闸门，审批记录即审计证据，不做例外。
+4. 用 DAG 编排（MWAA/Airflow、Temporal、Prefect、Orkes）统一失败处理：重试、补偿、优雅降级，禁止裸奔级联。
+5. 生产化六件套逐个验收再上线：权限隔离、审计合规、多租户、资源配额、故障隔离、可观测性。
+6. 优先选购带托管 SLA 的编排服务（如 AWS Marketplace 商品），减少自运维与版本漂移负担。
 
 ## 相关实体
 
-- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/1101-agent-ai.html)
-- [CUGA: IBM Research Enterprise Agent Harness](../ch05/043-agent-harness.html)
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/349-skill.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/392-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Claude Managed Agents 新更新"专属云"模式：把Agent的手放回企业内部](ch04/814-claude-managed-agents.html)
-- [Agent 生产级 Harness 工程实践](../ch05/043-agent-harness.html)
-- [企业级 Agent 编排](ch04/622-agent-orchestration.html)
-- [AI 原生公司转型路径](../ch05/022-ai-native.html)
+- [在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署](../ch03/037-agent.html)
+- [Enterprise AI Agent Development Tools (n8n Report 2026)](ch04/588-ai-agent.html)
+- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](../ch05/077-harness.html)
+- [多 Agent 编排系统](ch04/624-agent-orchestration.html)
+- [17种Agent架构演进：控制流设计的完整演化史](ch04/803-17-agent.html)
+- [Agent Harness 可观测性：生产级 AI 项目必须补上的一课](../ch05/043-agent-harness.html)
+- [Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns](../ch03/037-agent.html)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-orchestration.md)
 
 ---
 

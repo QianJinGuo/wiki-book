@@ -122,10 +122,10 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 **框架生态**(本文 3 主流框架):
 
-- vs **[Google Agent Executor Distributed Runtime](ch04/589-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
+- vs **[Google Agent Executor Distributed Runtime](ch04/438-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/396-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
-- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/663-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/781-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/298-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/665-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
+- vs **[AgentCore Harness](ch04/782-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/298-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -201,10 +201,10 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - [阿里云 Agent 演化四阶段](../ch03/037-agent.html)
 - [Harness Engineering Framework](../ch05/065-harness-engineering.html)
 - [Agent Harness 架构设计与生产实践](../ch05/043-agent-harness.html)
-- [Google Agent Executor Runtime](ch04/589-agentrun.html)
+- [Google Agent Executor Runtime](ch04/438-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/396-anthropic-claude-managed-agents.html)
-- [Amazon Bedrock AgentCore Runtime](ch04/663-amazon-bedrock-agentcore.html)
-- [AgentCore Harness](ch04/781-agentcore-harness.html)
+- [Amazon Bedrock AgentCore Runtime](ch04/665-amazon-bedrock-agentcore.html)
+- [AgentCore Harness](ch04/782-agentcore-harness.html)
 - [纳德拉「Token 资本」论](../ch12/002-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

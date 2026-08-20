@@ -145,7 +145,7 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/037-agent.html)
 - [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/085-claude-code.html)
-- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/664-agent-loop.html)
+- [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/666-agent-loop.html)
 - [Claude Code Prompt 源码分析](ch09/073-claude-code-prompt.html)
 - [Claude Code Prompt 源码分析 fanone](ch09/073-claude-code-prompt.html)
 - [Claude Code Prompt Context Harness](ch09/073-claude-code-prompt.html)
@@ -153,7 +153,7 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Anthropic Prompt Caching 与 Claude Code](../ch01/401-anthropic-prompt-caching-claude-code.html)
 - [24h Worker Agent](../ch03/037-agent.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/077-harness.html)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/358-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/359-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/297-agentic.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

@@ -35,11 +35,11 @@ The art and science of hyperparameter optimization on Amazon Nova Forge 涉及aw
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/035-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/183-karpathy-vibe-coding-agentic-engineering.html)
-- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1376-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/821-karpathy-vibe-coding-agentic-engineering.html)
+- [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1397-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 
 ## 实践启示

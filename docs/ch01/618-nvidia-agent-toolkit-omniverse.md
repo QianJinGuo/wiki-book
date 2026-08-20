@@ -77,7 +77,7 @@ Agent Toolkit + Omniverse 的核心创新在于让 AI 智能体自动化这些�
 - [NVIDIA Agentic Systems 极端协同设计](../ch04/297-agentic.html)
 - [NVIDIA Cosmos 机器人视频生成](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
 - [NVIDIA Isaac Lab 机器人强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [NVIDIA BioNeMo Agent Toolkit](../ch04/013-nvidia-bionemo-agent-toolkit.html)
+- [NVIDIA BioNeMo Agent Toolkit](../ch04/387-nvidia-bionemo-agent-toolkit.html)
 - [NVIDIA Nemotron-3 多模态 Agent](../ch04/297-agentic.html)
 - [Harness Engineering 范式](../ch05/065-harness-engineering.html)
 - Bedrock AgentCore 质量优化飞轮

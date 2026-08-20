@@ -34,13 +34,13 @@ Storage Agent Family 最值得关注的不是技术实现，而是其产品设�
 
 "统一大 Agent"方案在跨产品场景中存在天然的限制：每个产品的 API、数据结构、错误码体系差异巨大，一个中央 Agent 需要理解所有产品的细节，维护成本随产品数量线性增长。Storage Agent Family 的"去中心化家族"架构巧妙地回避了这一问题——每个 Agent 只精通自己的产品领域，家族约定只在交互范式和安全机制层面做统一 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:31-32]。
 
-这本质上是 [多 Agent 协作架构](../ch11/311-bedrock.html) 中"专业化分工"思路的体现。每个 Agent 的能力边界明确（只做自己产品的事），但通过统一的交互入口和产品间引导机制（跨产品问题主动引导跳转），用户获得的是"多个专家协同服务"的体验，而非"一个什么都懂一点但都不精的通才"。
+这本质上是 [多 Agent 协作架构](../ch11/312-bedrock.html) 中"专业化分工"思路的体现。每个 Agent 的能力边界明确（只做自己产品的事），但通过统一的交互入口和产品间引导机制（跨产品问题主动引导跳转），用户获得的是"多个专家协同服务"的体验，而非"一个什么都懂一点但都不精的通才"。
 
 ### 安全模型的核心创新：凭证贯穿而非权限放大
 
 Agent 安全的一个核心难题是：Agent 调用工具时，应该用谁的权限？如果 Agent 有自己的服务账户，它可能做用户本不能做的事（权限放大）；如果每次都让用户确认，又破坏了自动化的流畅性。
 
-Storage Agent Family 的解决方案是"User 凭证贯穿"——发起任务的 User 凭证会贯穿 Agent 触发的每一个动作，Agent 能做的永远是"用户本来就能做的事"的子集 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:86-89]。这与 [Amazon Bedrock AgentCore](ch04/590-amazon-bedrock-agentcore-harness-ga-api-agent.html) 的身份安全模型理念一致。加上三级风险分级（只读直接执行、写入二次确认、破坏性拒绝自动执行）和 Dry-Run 预演机制，工作台拥有了自动执行的能力，但把"按下确认键"的权力始终交还给用户 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:91-97]。
+Storage Agent Family 的解决方案是"User 凭证贯穿"——发起任务的 User 凭证会贯穿 Agent 触发的每一个动作，Agent 能做的永远是"用户本来就能做的事"的子集 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:86-89]。这与 [Amazon Bedrock AgentCore](ch04/592-amazon-bedrock-agentcore-harness-ga-api-agent.html) 的身份安全模型理念一致。加上三级风险分级（只读直接执行、写入二次确认、破坏性拒绝自动执行）和 Dry-Run 预演机制，工作台拥有了自动执行的能力，但把"按下确认键"的权力始终交还给用户 [^raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md:91-97]。
 
 ### TLS Agent 的 LLMWiki：超越传统 RAG 的知识探索
 
@@ -71,8 +71,8 @@ Sandbox 执行环境支持运行命令、保存中间文件、读取输出、失
 ## 相关实体
 
 - [Agent Harness 生产级实践](../ch05/043-agent-harness.html)
-- [多 Agent 协作架构](../ch11/311-bedrock.html)
-- [Amazon Bedrock AgentCore](ch04/590-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [多 Agent 协作架构](../ch11/312-bedrock.html)
+- [Amazon Bedrock AgentCore](ch04/592-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - Agentic RAG 模式
 - [Agent Harness 运行时模式](../ch05/043-agent-harness.html)
 - [Agent 记忆存储工程实践](ch04/180-agent-memory.html)

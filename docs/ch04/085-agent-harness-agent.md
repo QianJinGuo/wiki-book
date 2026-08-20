@@ -618,7 +618,7 @@ class RecoveryManager:
 → [Claude Code 12 个设计模式](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agentic-harness-design-patterns.md)
 → [ETCLOVG Survey (CMU 2026)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/714-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](ch04/715-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
 - [k-dense — the model is no longer the bottleneck](ch04/224-k-dense-the-model-is-no-longer-the-bottleneck.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 

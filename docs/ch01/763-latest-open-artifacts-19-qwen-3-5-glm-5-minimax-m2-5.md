@@ -82,7 +82,7 @@ Interconnects 的 Latest Open Artifacts 系列是跟踪中国 AI 开源前沿的
 ## 相关实体
 - [Latest Open Artifacts 21 Open Model Bonanza Gemma 4 Deepseek](ch01/696-latest-open-artifacts-21-open-model-bonanza-gemma-4-de.html)
 - [Nathan Lambert Open Models Bets 2026](ch01/613-nathan-lambert.html)
-- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/424-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
+- [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](ch01/1330-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
 - [Gemma 4 Open Model Adoption Framework Interconnects](ch01/864-gemma-4.html)
 - [Olmo Hybrid Gdn Wave 2026](ch01/1129-20.html)
 

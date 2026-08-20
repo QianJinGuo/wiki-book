@@ -61,7 +61,7 @@ The gateway handles five core responsibilities:
 
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- 相关: [AI Gateways vs MCP Gateways](ch11/091-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
+- 相关: [AI Gateways vs MCP Gateways](ch11/090-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 
 ---
 

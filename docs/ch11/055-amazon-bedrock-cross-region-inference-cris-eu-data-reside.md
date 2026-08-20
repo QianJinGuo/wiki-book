@@ -181,10 +181,10 @@ CloudWatch / CloudTrail / Model Invocation Logging 均**只在 source region 记
 
 ## 相关实体
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/993-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Openai Models Codex Amazon Bedrock Ga](ch11/307-amazon-bedrock.html)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/439-ai-agent.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/663-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/663-amazon-bedrock-agentcore.html)
+- [Openai Models Codex Amazon Bedrock Ga](ch11/308-amazon-bedrock.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/588-ai-agent.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/665-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/665-amazon-bedrock-agentcore.html)
 
 ---
 
