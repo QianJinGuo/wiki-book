@@ -11,8 +11,8 @@
 
 ## 相关实体
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](ch01/1093-github.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/462-score-by-collisions-patch-by-panic.html)
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/1284-rag.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/464-score-by-collisions-patch-by-panic.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](ch01/407-rag.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/108-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 

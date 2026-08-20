@@ -27,7 +27,7 @@ Landon Cox（Microsoft Research）和 Mara Kiefer（GitHub）分享 GitHub 内�
 - **bash tool 内联 CLI**：直接在 bash 命令中调用 gh CLI
 - **Subagent 模式**：生成专门负责数据获取的子 agent，只返回结构化数据
   **效果**：将大部分 GitHub 数据获取移出 LLM 推理循环。
-  这与 [Claude Code Subagent 上下文卫生](ch04/387-claude-code-subagent.html) 中 Subagent 作为上下文隔离工具的理念相通。
+  这与 [Claude Code Subagent 上下文卫生](ch04/389-claude-code-subagent.html) 中 Subagent 作为上下文隔离工具的理念相通。
 
 ### 3. Auditor + Optimizer 元工作流
 

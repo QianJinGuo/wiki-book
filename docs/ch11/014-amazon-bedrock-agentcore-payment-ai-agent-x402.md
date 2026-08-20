@@ -759,8 +759,8 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 ## 相关实体
 - [Firecracker Bedrock Agentcore Multi Tenant](ch11/059-bedrock-agentcore.html)
 - [Agentcore Payments X402 Agentic Commerce](ch11/073-agentcore-payments.html)
-- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/307-amazon-bedrock.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/663-amazon-bedrock-agentcore.html)
+- [Openclaw Amazon Bedrock Eks Printer Qc](ch11/308-amazon-bedrock.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/665-amazon-bedrock-agentcore.html)
 - [Agentic Payment X402 Bedrock Agentcore](ch11/059-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-agentcore-payment-x402-agent.md)

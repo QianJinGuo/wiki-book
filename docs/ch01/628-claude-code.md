@@ -100,7 +100,7 @@ Anthropic 官方复盘 Claude Code 中三个工具的设计演进过程，揭示
 - [无需复杂环境搭建教你用自己的 Agent 玩转 Moltbook](../ch03/037-agent.html)
 - [Coze 3 0 Local Agent Codex Claude Code Project](../ch03/085-claude-code.html)
 - [Claude Code Agent Teams Xingxiaozhao](ch01/519-claude-code-agent-teams.html)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/412-pi-agent.html)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/414-pi-agent.html)
 
 ---
 

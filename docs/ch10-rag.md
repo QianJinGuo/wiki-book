@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **43 篇**实体，按深度递增排列。
+> 本章收录 **44 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 8 |
-| ⭐⭐ 工程师 | 需编程基础 | 32 |
+| ⭐⭐ 工程师 | 需编程基础 | 33 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 
 ---
@@ -2523,7 +2523,49 @@ AI 客服出问题不是传统意义的报错，而是意图识别错、问题�
 
 ---
 
-## Ch10.028 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
+## Ch10.028 美团搜索3.0：LLM 语义表征在排序模型的应用
+
+> 📊 Level ⭐⭐ | 6.3KB | `entities/meituan-search-3-llm-semantic-embedding-ranking-2026.md`
+
+# 美团搜索3.0：LLM 语义表征在排序模型的应用
+
+美团服务零售搜索排序团队在 2025 Q4 至 2026 Q2 用三期迭代把 LLM 语义表征系统性引入精排模型，用 cosine 相似度特征弥补传统文本匹配在长尾语义场景的不足，累计 3 个 Launch Review 全量上线并带来显著订单增量。
+
+## 一期：验证可行性（64 维余弦特征）
+
+一期用轻量开源基座 + 全参数微调，在词表新增 `<|query|>`、`<|item|>`、`<|qi|>` 三个特殊 Token 作为聚合锚点（平均初始化参考 vocab-expansion），通过三次独立 Forward Pass + Attention Mask 保证 Query/item 表征自包含。取最后一层特殊 Token 位置 hidden state 经两层 MLP 降至 64 维，全量推理 Query/POI Embedding 存 Hive，算 cosine 相似度按 10 个分桶边界（[-0.40, -0.30, -0.18, -0.12, 0.00, 0.10, 0.16, 0.22, 0.30]）离散化，每个分桶配可学习 12 维 Embedding 拼入精排特征。
+
+线上（20% 流量 14 天）搜索支付订单 +0.20%、服务零售订单 +0.27%，长尾 NDCG@5 +2.21pp、长尾 BadCase@1 -2.96pp。一期同时暴露四个短板：缺商品侧语义、全参微调成本高、点击率目标对排序不全面、三次 Forward Pass 效率低。
+
+## 二期：Query-POI-Deal 三元表征体系
+
+二期系统性重构表征生产全流程，核心矛盾从「是否匹配」分类转向「哪个更匹配」排序。五个关键升级：①训练数据扩为五元组（Query/Deal 正/POI 正/Deal 难负/POI 难负），难负样本取「同请求同商家曝光未点击」，2766 万条；②Prompt 做减法——精简信息陈述+总结引导优于复杂指令（反直觉，Embedding 的 Prompt 是引导聚合语义而非指令遵循）；③LoRA（r=8/α=32，q_proj+v_proj）取代全参微调；④表征提取改为 nn.Parameter 可学习向量覆写序列末位 + 单次 Forward 五路并行（Last Special Token Embedding 优于 Mean Pooling）；⑤损失从 BCE 改为三组 InfoNCE（Q↔POI/Q↔Deal/POI↔Deal）+ 两组 Triplet（欧氏距离 margin=0.5）共五个损失加权。降维从 MLP 换成 MRL-E（嵌套维度 [1024,512,256,128]，推理截前 128 维）以获得多尺度灵活性。
+
+二期表征应用升级为双组相似度分桶（Query-POI 与 Query-Deal 各自分桶）+ 零向量缺失边界，底层拼接 + 顶层 LHUC 双融合。工程上改「离线训练样本化 + 线上 KV 读取」，模型体积不增反降。线上（20% 流量 7 天）大盘 UV +0.07%、有效点击 QV +0.13%、QV_CTR +0.10pp；关键洞察是语义表征优化「曝光质量」而非「曝光数量」——某事业部 QV 下降但 QV_CTR 提升 0.24pp。
+
+## 三期：下挂精排迁移 + 全域交叉统计特征
+
+三期把成熟商家表征迁移到下挂精排（对商家下挂商品排序），遇到的最大工程挑战是**覆盖率而非模型适配**：直接复用二期时 Query 覆盖率仅 81.24%、双覆盖率仅 73.61%（商家精排 Query 偏商家意图词如「SPA」，下挂偏商品意图词如「双人 XX 套餐」），重新按下挂样本分布圈选后升至 98.92%/89.81%。这条「覆盖率验证必须是跨模块迁移第一步」成为标准 checklist。
+
+三期在表征耦合方式上对比 4 种方案，PEPNet 门控最优（+25bp，vs 底层拼接 +18bp、输出塔前 +8bp）：把 cosine 相似度当门控信号调制其他特征权重，高匹配放大、低匹配抑制，比固定位置拼接更灵活。同时补充四类全域交叉统计特征（user×deal / POI cate3 / user×POI cate3 / query×deal）弥补「个性化×商品」和「Query 意图×商品」建模空白；覆盖率<0.1% 的订单特征被消融移除。线上（10% 流量 7 天）服务零售订单 +0.32%、搜索大盘支付订单 +0.35%，且语义+统计特征叠加效应强于各自单独验证——两者互补而非替代。
+
+## 独立创新点与业内定位
+
+本工作处于「LLM 文本表征」与「搜索排序特征工程」交叉地带。相对业内（TIGER 生成式检索、ANCE 全局 ANN 难负样本、UNGER 模态平衡、Meta/Apple Music/小红书难负策略）有三点独立创新：①cosine 相似度作为直接排序特征 + 底层/顶层双融合（兼顾特征交叉与信号保真，比推荐场景底层拼接更具可解释性）；②「同请求同商家曝光未点击」难负样本天然绑定搜索上下文（引入后 Q2I-Order-AUC +11.02pp vs Click-AUC +4.85pp）；③「搜索词→商家→商品」三元匹配结构 + 三组 InfoNCE Loss 覆盖所有两两关系，公开文献中较少见。
+
+后续方向：负例质量（false-negative mask / focal 重加权 / 难度阈值）、离散 Semantic ID、专项下挂表征训练、表征-排序闭环（relevance 蒸馏回灌）。
+
+## 相关实体
+
+- → [美团图灵评测方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-turing-meituan-2026.md)（同美团技术团队评测方法论，互补）
+- → [淘宝闪购爆品团精排](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-flash-sale-ranking-scaling-up-2026.md)（电商精排 scaling 实践对照）
+- → [eBay 生成式检索 Semantic ID](https://github.com/QianJinGuo/wiki/blob/main/entities/ebay-generative-retrieval-rq-vae-semantic-id-2026-06-30.md)（离散语义 ID 方向）
+- → [抖音多模态 Embedding 检索](https://github.com/QianJinGuo/wiki/blob/main/entities/douyin-dme-multimodal-embedding-multimodal-retrieval.md)（Embedding 检索侧对照）
+- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-search-3-llm-semantic-embedding-ranking-2026.md)
+
+---
+
+## Ch10.029 捅破个人AI天花板！YC总裁开源GBrain：8层架构打造AI第二大脑
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/gbrain-8layer-51cto.md`
 
@@ -2573,7 +2615,7 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 
 ---
 
-## Ch10.029 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+## Ch10.030 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
@@ -2644,7 +2686,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ---
 
-## Ch10.030 How we built SmithDB’s inverted index for full-text search
+## Ch10.031 How we built SmithDB’s inverted index for full-text search
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
 
@@ -2695,7 +2737,7 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 
 ---
 
-## Ch10.031 为OpenClaw配置网盘空间的最佳实践
+## Ch10.032 为OpenClaw配置网盘空间的最佳实践
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
 
@@ -2740,7 +2782,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ---
 
-## Ch10.032 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+## Ch10.033 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
@@ -2783,7 +2825,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 ---
 
-## Ch10.033 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
+## Ch10.034 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/guardoc-health-medical-document-processing-amazon-nova.md`
 
@@ -2846,7 +2888,7 @@ Guardoc 的部署效果量化案例：
 
 ---
 
-## Ch10.034 Task-Aware Knowledge Compression (TAKC)
+## Ch10.035 Task-Aware Knowledge Compression (TAKC)
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/task-aware-knowledge-compression-takc.md`
 
@@ -2903,7 +2945,7 @@ TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档
 
 ---
 
-## Ch10.035 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.036 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
@@ -2956,7 +2998,7 @@ TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档
 
 ---
 
-## Ch10.036 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+## Ch10.037 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
 
@@ -2997,7 +3039,7 @@ source_published: 2026年7月8日 17:00
 
 ---
 
-## Ch10.037 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
+## Ch10.038 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/graphrag-needed-aws-9-rag-comparison-2026.md`
 
@@ -3051,7 +3093,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.038 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
+## Ch10.039 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
 
 > 📊 Level ⭐⭐ | 2.4KB | `entities/www-2026-强化学习重塑graphrag多跳推理f1提升8381.md`
 
@@ -3074,7 +3116,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.039 腾讯新研究：让Agent在语料中搜得更快、更准
+## Ch10.040 腾讯新研究：让Agent在语料中搜得更快、更准
 
 > 📊 Level ⭐⭐ | 1.1KB | `entities/rarg-relevance-aware-ripgrep-search-agent-tencent-2026.md`
 
@@ -3089,7 +3131,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.040 RAG for Documents
+## Ch10.041 RAG for Documents
 
 > 📊 Level ⭐⭐ | 0.6KB | `entities/rag-for-documents.md`
 
@@ -3106,7 +3148,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.041 Ettin Reranker Family
+## Ch10.042 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 
@@ -3301,7 +3343,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ---
 
-## Ch10.042 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
+## Ch10.043 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
 
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/multi-vector-late-interaction-embedding-models-with-sentence.md`
 
@@ -3330,7 +3372,7 @@ cross-encoder 交互最早（query 与 doc 一起过模型，最准但 doc 无�
 
 ---
 
-## Ch10.043 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
+## Ch10.044 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
 
 > 📊 Level ⭐⭐⭐ | 1.7KB | `entities/file-upload-multimodal-vector-pipeline-real-time-2026-08-04.md`
 

@@ -74,7 +74,7 @@ hermes doctor   # 检查环境
 
 ## 相关实体
 - [Hermes Agent Kanban Deep Test](../ch03/099-hermes-agent.html)
-- [Hermes Agent Goal Runtime Architecture](../ch04/370-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture](../ch04/371-hermes-agent-goal.html)
 - [Hermes Agent](../ch03/099-hermes-agent.html)
 - [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch03/099-hermes-agent.html)
 - [Hermes Agent Self Evolution Tengxun](../ch03/099-hermes-agent.html)

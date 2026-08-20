@@ -138,7 +138,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 ## 相关实体
 - [快手首个打工人Agent](../ch03/037-agent.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/037-agent.html)
-- [factory mission multi agent architecture](../ch01/1472-factory-mission-multi-agent-architecture.html)
+- [factory mission multi agent architecture](../ch01/1473-factory-mission-multi-agent-architecture.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)

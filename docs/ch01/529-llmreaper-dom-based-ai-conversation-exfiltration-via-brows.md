@@ -120,7 +120,7 @@ LLMReaper 演示的技术完整对应到 MITRE ATT&CK：
 - [Agent 记忆系统](../ch03/037-agent.html) — Agent 系统的工程实践
 - [Claude Code 源码机制](../ch03/085-claude-code.html) — AI 工具架构
 - [Karpathy Vibe Coding 访谈](../ch04/297-agentic.html) — Agentic Engineering 范式
-- [OpenClaw 完整指南](../ch11/252-openclaw.html) — AI 工具教程
+- [OpenClaw 完整指南](../ch11/253-openclaw.html) — AI 工具教程
 - [天猫 AI 编码实战](../ch05/108-ai.html) — 企业 AI 编码案例
 - [What My Privacy and Security Stack Actually Looks Like](../ch12/022-what-my-privacy-and-security-stack-actually-looks-like.html) — 个人安全栈案例
 - [Canvas Hackers ShinyHunters Domain Suspended](../ch12/013-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html) — 攻击者基础设施案例

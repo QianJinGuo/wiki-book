@@ -90,7 +90,7 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 - [LLM Wiki 架构](ch06/025-llm-wiki.html)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/908-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/099-hermes-agent.html)
-- [AI Agent 工程师能力地图](../ch04/439-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/588-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-engineering-three-memory-paradigms-comparison.md)
 

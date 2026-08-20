@@ -75,7 +75,7 @@ SQS + ECS Fargate 的异步架构还带来了额外收益：天然并发控制�
 - [Amazon EKS MCP Server](../ch07/094-amazon-eks-mcp-server.html) — 用于 EKS 集群诊断的 MCP Server 实现
 - [MCP 协议](../ch07/095-mcp-protocol.html) — Model Context Protocol 的架构和应用
 - [AIOps MCP Agent](../ch07/061-aiops-mcp-agent.html) — AI 驱动的运维诊断 Agent
-- [AWS Fargate 部署](../ch11/306-aws-fargate-deployment.html) — Serverless 容器的运维实践
+- [AWS Fargate 部署](../ch11/307-aws-fargate-deployment.html) — Serverless 容器的运维实践
 - [Agent 驱动运维](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-driven-ops.md) — AI Agent 在运维领域的应用范式
 - [可观测性平台](https://github.com/QianJinGuo/wiki/blob/main/entities/observability-platform.md) — 云原生可观测性的架构设计
 

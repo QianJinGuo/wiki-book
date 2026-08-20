@@ -83,16 +83,16 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](ch07/007-claude-code-skills-mcp-rules.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Claude Code 源码深度解析（13 核心机制）](../ch03/085-claude-code.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/779-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1592-anthropic.html)
 - [AgentCore Runtime 部署 Apache Doris MCP Server](../ch11/193-apache-doris-mcp-server-quick-suite-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/037-agent.html)
 - [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](ch07/007-claude-code-skills-mcp-rules.html)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/779-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1592-anthropic.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/490-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/492-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/085-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/085-claude-code.html)
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
@@ -105,7 +105,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
-- [AI Agent 工程师能力地图](../ch04/439-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/588-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

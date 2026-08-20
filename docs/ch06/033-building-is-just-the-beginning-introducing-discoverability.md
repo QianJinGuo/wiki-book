@@ -43,7 +43,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [What the design-to-code loop unlocks](../ch09/006-design-to-code.html)
-- [Obsidian + Claude Code 集成指南](../ch09/154-obsidian-claude-code-integration-guide.html)
+- [Obsidian + Claude Code 集成指南](../ch09/155-obsidian-claude-code-integration-guide.html)
 - [柚漫剧 AI全流程提效拆解](../ch05/108-ai.html)
 
 ---

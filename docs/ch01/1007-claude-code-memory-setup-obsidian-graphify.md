@@ -52,9 +52,9 @@
 - [Claude Code vs OpenClaw 记忆：向量数据库是否必要](../ch03/085-claude-code.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/084-obsidian-claude-code.html)
-- [obsidian claude code integration guide](../ch09/154-obsidian-claude-code-integration-guide.html)
-- [Obsidian + Claude Code 集成指南](../ch09/154-obsidian-claude-code-integration-guide.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/101-claude-code-1.html)
+- [obsidian claude code integration guide](../ch09/155-obsidian-claude-code-integration-guide.html)
+- [Obsidian + Claude Code 集成指南](../ch09/155-obsidian-claude-code-integration-guide.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/102-claude-code-1.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)

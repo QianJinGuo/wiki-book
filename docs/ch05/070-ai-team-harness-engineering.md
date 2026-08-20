@@ -80,7 +80,7 @@ Hapi 内网版的设计哲学——**状态持久化（文件系统即状态机�
 → [AI Team 知识沉淀体系（概念页）](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md) — 详细架构说明
 →  — 三支柱架构对照
 →  — 知识 vs 工具链的务实立场
-→ [Agent Memory 架构本质](../ch04/517-perplexity-brain-self-improving-agent-memory-architecture.html) — 与知识层级的关联讨论
+→ [Agent Memory 架构本质](../ch04/519-perplexity-brain-self-improving-agent-memory-architecture.html) — 与知识层级的关联讨论
 
 ---
 

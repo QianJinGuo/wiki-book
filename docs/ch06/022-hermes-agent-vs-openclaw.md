@@ -11,7 +11,7 @@
 | **会话检索** | session_search (SQLite + FTS5) | 无硬上限 | 档案室，"上次那个问题" |
 | **程序性记忆** | Skills | 无硬上限 | SOP，"这类任务下次怎么做" |
 | **深层用户建模** | Honcho（外部） | 可选 | 跨平台/跨设备长周期画像 |
-> 和 [Agent Memory 架构本质](../ch04/517-perplexity-brain-self-improving-agent-memory-architecture.html) 的"write-manage-read 三链路闭环"角度不同，Hermes 更侧重**运行时成本控制和分层治理**。
+> 和 [Agent Memory 架构本质](../ch04/519-perplexity-brain-self-improving-agent-memory-architecture.html) 的"write-manage-read 三链路闭环"角度不同，Hermes 更侧重**运行时成本控制和分层治理**。
 
 ## 核心设计：cache-aware
 **不轻易改系统提示词**。会话中途记忆写入先落盘，不立刻修改当前 system prompt——保护 prompt cache。牺牲即时性，换缓存命中和提示词结构稳定。
@@ -61,7 +61,7 @@ Hermes 的记忆系统本质上是一套**分层成本治理**架构，而非单
 ## 关联阅读
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-vs-openclaw.md)
 - [深度拆解 Hermes Agent 记忆系统](ch06/013-hermes-agent-memory.html)
-- [memory agent systems cobanov](../ch04/707-memory-agent-systems-cobanov.html)
+- [memory agent systems cobanov](../ch04/708-memory-agent-systems-cobanov.html)
 - [AI Agent 记忆系统架构](../ch04/216-how-ai-agent-memory-works.html)
 -
 

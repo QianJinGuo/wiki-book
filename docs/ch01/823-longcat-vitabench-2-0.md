@@ -56,8 +56,8 @@ VitaBench 2.0 的另一重要发现是：开启模型的"思考模式"（推理�
 
 ## 相关实体
 
-- [ProgramBench / SWE-agent Benchmark](../ch04/638-programbench-swe-agent-benchmark.html) — 传统 Agent 基准，关注代码修改能力的单点评测
-- [CoDA-Bench](../ch09/107-coda-bench-code-agent.html) — 关注 Code Agent 的数据发现能力，与 VitaBench 形成互补
+- [ProgramBench / SWE-agent Benchmark](../ch04/640-programbench-swe-agent-benchmark.html) — 传统 Agent 基准，关注代码修改能力的单点评测
+- [CoDA-Bench](../ch09/108-coda-bench-code-agent.html) — 关注 Code Agent 的数据发现能力，与 VitaBench 形成互补
 - [Agent 评测方法论与体系设计](../ch03/037-agent.html) — Agent 评测方法的系统性讨论
 - [Agent Harness 上下文管理](../ch05/043-agent-harness.html) — 生产环境中 Agent 的上下文组织策略
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化的系统框架

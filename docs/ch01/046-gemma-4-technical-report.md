@@ -77,7 +77,7 @@ Gemma 4 以 Apache 2.0 协议发布，是 Google 在开源 AI 领域的战略布
 ## 相关实体
 
 - **Gemma 3 Technical Report** — 前代架构的基线对比（无独立实体页面）
-- [DeepSeek V4](ch01/1379-deepseek-v4.html) — 同期 MoE 开源模型竞品
+- [DeepSeek V4](ch01/432-deepseek-v4.html) — 同期 MoE 开源模型竞品
 - [Kimi K2.5](ch01/579-kimi.html) — 同期视觉智能开源模型
 - **Qwen 3.5 Omni** — 同期全模态开源模型（无独立实体页面）
 - [Mixture of Experts (MoE)](https://github.com/QianJinGuo/wiki/blob/main/concepts/moe-mixture-of-experts-2025.md) — MoE 架构概念

@@ -76,16 +76,16 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 
 ## 相关实体
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/297-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/821-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/297-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/821-karpathy-vibe-coding-agentic-engineering.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/297-agentic.html)
 - [Design Patterns for AI Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/077-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/037-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/1146-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/1517-llm.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/099-hermes-agent.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/077-harness.html)
@@ -101,7 +101,7 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/065-harness-engineering.html)
 - [Agent 原理、架构与工程实践](../ch03/037-agent.html)
-- [AI Agent 工程师能力地图](ch04/439-ai-agent.html)
+- [AI Agent 工程师能力地图](ch04/588-ai-agent.html)
 
 ---
 

@@ -146,16 +146,16 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [[agent-skill-writing-evaluation] — Skill 评测相关
 
 ## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/351-lbs-intentbench.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/512-aws-sagemaker-ai-agent.html)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/352-lbs-intentbench.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/514-aws-sagemaker-ai-agent.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch04/349-skill.html)
 - [SkillX — 层次化技能知识库](ch07/060-skillx.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/314-anthropic-agent.html)
 - [AI Skill 测评指标体系](../ch01/660-ai-skill.html)
-- [SkillClaw](../ch04/562-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/563-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/019-hermes-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/077-skills.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/490-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/492-agent-skills.html)
 
 - [Hermes Agent](../ch03/099-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/037-qoder-skills.html)

@@ -40,7 +40,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 ### 两条多 Agent 路线的编排哲学之争
 
-文章把 Dynamic Workflows（Opus 4.8）与扣子 3.0 放在一起对比：前者用脚本编排上百个子 Agent，追求快和规模；后者强调"人 + 云 Agent + 本地 Agent 同一项目"，像带小团队一样 @ 点名接力。分歧的本质是编排哲学——中心化脚本调度，还是人机混合的自组织协作。作者倾向后者："与其干等一个什么都会的万能 AI，不如现在就带一支各有专长、@一下就接力上的小队。"这与 [多智能体协作循环](../ch05/006-loop-engineering.html)、[本地编码 Agent](../ch09/176-using-local-coding-agents.html) 等方向共享同一个判断：单模型能力不再是瓶颈，分工、交接与组织方式才是决定产出的变量。
+文章把 Dynamic Workflows（Opus 4.8）与扣子 3.0 放在一起对比：前者用脚本编排上百个子 Agent，追求快和规模；后者强调"人 + 云 Agent + 本地 Agent 同一项目"，像带小团队一样 @ 点名接力。分歧的本质是编排哲学——中心化脚本调度，还是人机混合的自组织协作。作者倾向后者："与其干等一个什么都会的万能 AI，不如现在就带一支各有专长、@一下就接力上的小队。"这与 [多智能体协作循环](../ch05/006-loop-engineering.html)、[本地编码 Agent](../ch09/177-using-local-coding-agents.html) 等方向共享同一个判断：单模型能力不再是瓶颈，分工、交接与组织方式才是决定产出的变量。
 
 ## 实践启示
 
@@ -53,15 +53,15 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 ## 相关实体
 
-- [本地编码 Agent 的使用实践](../ch09/176-using-local-coding-agents.html)
+- [本地编码 Agent 的使用实践](../ch09/177-using-local-coding-agents.html)
 - [Claude 做方案，Codex 写代码：多模型协作交接](ch01/1233-claude.html)
 - [AI 军团式多智能体协作循环](../ch05/006-loop-engineering.html)
-- [Strands 多智能体框架](../ch04/794-strands-agents.html)
-- [OpenClaw 多智能体团队搭建](../ch11/252-openclaw.html)
+- [Strands 多智能体框架](../ch04/795-strands-agents.html)
+- [OpenClaw 多智能体团队搭建](../ch11/253-openclaw.html)
 - [Claude Code 源码核心机制](../ch03/085-claude-code.html)
 - [Harness 工程](../ch05/065-harness-engineering.html)
 - [Claude Code 大型代码库团队部署](../ch05/043-agent-harness.html)
-- [Karpathy × Boris：Software 3.0 编程地图](ch01/1146-llm.html)
+- [Karpathy × Boris：Software 3.0 编程地图](ch01/1517-llm.html)
 - [MOC：工作流编排](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

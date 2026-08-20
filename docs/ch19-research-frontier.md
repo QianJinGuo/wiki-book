@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **28 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 4 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 5 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 13 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
@@ -1172,7 +1172,61 @@ Count Anything 的点集输出天然规避了上述三个问题。
 
 ---
 
-## Ch19.013 GenCeption — 视频生成模型作为通用视觉学习器
+## Ch19.013 DeepMind Recirculation：冻结权重、深层激活回流释放性能
+
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/deepmind-recirculation-transformer-layer-activation-feedback-2026.md`
+
+# DeepMind Recirculation：冻结权重、深层激活回流释放性能
+
+> **Background**：PaperWeekly 对 DeepMind 论文《Recirculation》（arXiv:2608.17981）的解读。DeepMind 证明优化大模型未必需要堆参数——在推理阶段打通一条信息回路，让深层已形成的状态重新进入后续计算，即可释放新的性能空间，且基础版本无需修改原模型权重。
+
+## 核心洞见：深层状态无法被后续 token 复读是结构瓶颈
+
+Transformer 的前馈结构决定了一个长期限制：语义消歧和状态更新往往要到较深的 layer 才逐渐稳定下来，但浅层计算不会重新读取这些后来形成的信息，后续 token 因而很难持续利用已在深层完成更新的状态。
+
+- 上下文语义消歧案例：含 `fishing pole` 的上下文中，模型在较深 layer 已把 `bank` 正确理解为"河岸"，但继续问附近有无 ATM 时仍会受 `bank`-金融机构强关联影响。此前研究通过激活干预，将已消歧的深层表示重新注入浅层，这类上下文化错误减少约 60%。
+- 与 CoT 的区别：CoT 把中间结果显式写入 token 序列增加串行计算步骤，更适合复杂推理；Recirculation 关注的是内部状态本身如何在后续 token 中持续更新。
+
+## 机制：深浅层回流通路
+
+基础 Recirculation 计算不复杂：处理当前 token 时，从较深的源层 (s) 读取激活，与较浅目标层 (d) 的原有状态混合，默认用凸组合。由于不同 layer 残差流尺度不一致，源层激活先对齐到目标层 L2 范数再相加。
+
+- Gemma3 1B/4B/12B 的较优源层→目标层组合分别是 11→4、18→9、35→16。
+- 与 Looping（层循环，沿深度重复执行若干层）不同，Recirculation 同时跨越网络深度和 token 时间，同一 layer 可持续承载更新后的状态。
+
+## 实验结果
+
+- Gemma3 1B/4B/12B 测试 10 个数据集，Recirculation 在其中 9 个上表现跨规模稳定改善；12B 的 PG19 困惑度下降 35.40%、BookSum 下降 32.91%、GovReport 下降 30.74%（Lambada 是主要例外）。
+- 最稳定收益集中在语言建模；下游任务效果对具体设置更敏感。Qwen3 1.7B、Pythia 1B、Ministral3 3B、Phi2 2.7B 五家族均观察到有效源层—目标层组合。
+- 回流收益随 token 间距衰减，但相隔 256 token 时仍可测到；副词/形容词/动词受益较多，数词/限定词/代词较少。
+- 指令遵循：Gemma3 4B 准确率 82.3%→87.3%，12B 93.0%→98.4%。
+- 工程代价主要在 Prefill（需按 token 顺序更新回流状态，长上下文拖慢）；自回归生成时两套 Transformer 计算可并行，额外生成延迟几乎可忽略。
+
+## Adaptive Recirculation：小模块反超全量微调
+
+固定系数对所有 token/隐藏维度用相同控制策略，但不同 token 需融合程度不同。研究训练一个小型 MLP，根据当前 token 在源层与目标层的表示动态生成逐维回流系数（Gemma3 主体始终冻结，只训练控制模块）。
+
+- 逐维控制优于标量控制，token 条件动态生成又优于固定参数。
+- Adaptive Recirculation 在 9 个语言建模数据集平均困惑度降幅 23.0%；固定基础版 8.5%；对加入回流结构的 Gemma3 1B 全量微调 21.6%。
+- GSM8K 数学推理：Gemma3 4B pass@1 从 29.3%→35.5%（+21%），pass@128 94.9%→96.0%。效果依赖 MLP 控制器训练数据分布。
+
+## 意义
+
+Recirculation 不是可直接替代微调的通用方案，但证明一个可能：冻结模型权重后，改变内部状态传播方式同样能释放新性能空间。与同属"垂直反馈/信息回路"家族但机制不同的 [Full-Bandwidth Transformer](https://github.com/QianJinGuo/wiki/blob/main/entities/full-bandwidth-transformer-latent-feedback-arxiv-2608-08888.md)（GLU latent feedback + scheduled multi-pass 训练）互补。
+
+## 相关实体
+
+- [Full-Bandwidth Transformer](https://github.com/QianJinGuo/wiki/blob/main/entities/full-bandwidth-transformer-latent-feedback-arxiv-2608-08888.md) — latent feedback 拓宽垂直反馈通道（同家族不同机制）
+- [DiscoFormer](https://github.com/QianJinGuo/wiki/blob/main/entities/discoformer-density-score-transformer-allen-ai.md) — 密度评分稀疏化 transformer
+- [Transformer 状态追踪](https://github.com/QianJinGuo/wiki/blob/main/entities/topological-trouble-transformers-state-tracking-deepmind-2026-06-17.md)
+- [Attention-only transformer 对照研究](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-only-transformers-controlled-study-sans-arxiv-2607-18363.md)
+- [DeepMind](https://github.com/QianJinGuo/wiki/blob/main/entities/deepmind-ai-pointer.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepmind-recirculation-transformer-layer-activation-feedback-2026.md)
+
+---
+
+## Ch19.014 GenCeption — 视频生成模型作为通用视觉学习器
 
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/genception-video-gen-models-general-purpose-vision-learners-arxiv-2607.md`
 
@@ -1228,7 +1282,7 @@ GenCeption 在以下任务上达到或超越专门模型：
 
 ---
 
-## Ch19.014 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
+## Ch19.015 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
 > 📊 Level ⭐⭐⭐⭐ | 23.7KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
@@ -1485,7 +1539,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 ---
 
-## Ch19.015 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
+## Ch19.016 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
 > 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
@@ -1645,7 +1699,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 
 ---
 
-## Ch19.016 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
+## Ch19.017 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
 
 > 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/arxiv-2606-03979-language-models-need-sleep.md`
 
@@ -1757,7 +1811,7 @@ Mind Lab LoRA 持续学习 (mind-lab-lora-continual-learning-system) 与本文�
 
 ---
 
-## Ch19.017 Natural Language Autoencoders (Anthropic)
+## Ch19.018 Natural Language Autoencoders (Anthropic)
 
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/anthropic-natural-language-autoencoders.md`
 
@@ -1839,7 +1893,7 @@ NLA 证明了"让模型解释自己的思维过程"这一思路的可行性，�
 
 ---
 
-## Ch19.018 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
+## Ch19.019 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
 
@@ -1930,7 +1984,7 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 
 ---
 
-## Ch19.019 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
+## Ch19.020 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
 
 > 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/light-interaction-world-model-inference.md`
 
@@ -2025,7 +2079,7 @@ Light Interaction 的价值在于提出了一种更适合交互式生成的推�
 
 ---
 
-## Ch19.020 Qwen-AgentWorld: Language World Models for General Agents
+## Ch19.021 Qwen-AgentWorld: Language World Models for General Agents
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/qwen-agentworld-language-world-models.md`
 
@@ -2150,7 +2204,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ---
 
-## Ch19.021 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
+## Ch19.022 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
 
 > 📊 Level ⭐⭐⭐⭐ | 6.7KB | `entities/neurips-in-icml-paper-title-tips.md`
 
@@ -2226,7 +2280,7 @@ ICML 2026 上出现了一篇方法名为 "NeurIPS" 的论文——即标题缩�
 
 ---
 
-## Ch19.022 From AGI to ASI
+## Ch19.023 From AGI to ASI
 
 > 📊 Level ⭐⭐⭐⭐ | 6.5KB | `entities/arxiv-2606-12683-from-agi-to-asi.md`
 
@@ -2309,7 +2363,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.023 阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式
+## Ch19.024 阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.1KB | `entities/qwen-skill-self-play-hyman-2026.md`
 
@@ -2352,7 +2406,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.024 LittleLearner：课程受控预训练——预训练过滤设定能力上限的实验证据
+## Ch19.025 LittleLearner：课程受控预训练——预训练过滤设定能力上限的实验证据
 
 > 📊 Level ⭐⭐⭐⭐ | 3.9KB | `entities/littlelearner-pedagogical-curriculum-llm-arxiv-2608-13545.md`
 
@@ -2392,7 +2446,7 @@ scaling、SFT+GRPO 后训练、in-context learning 都能放大**课程内**（i
 
 ---
 
-## Ch19.025 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
+## Ch19.026 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/baai-orca-next-state-prediction-world-model.md`
 
@@ -2452,7 +2506,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.026 VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
+## Ch19.027 VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
 
 > 📊 Level ⭐⭐⭐⭐ | 2.9KB | `entities/lecun连续转发新作visreg攻克jepa世界模型表征坍塌核心难题.md`
 
@@ -2482,7 +2536,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.027 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
+## Ch19.028 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.4KB | `entities/tangjie-zhipu-asi-internal-letter-2026.md`
 

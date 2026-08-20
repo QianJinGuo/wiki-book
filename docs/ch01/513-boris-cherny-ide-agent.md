@@ -180,8 +180,8 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - [Agent 记忆系统工程实践](../ch03/037-agent.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
 - [Anthropic 内部实践](ch01/358-1.html)
-- [DeepSeek V4 Flash Pro](ch01/1303-deepseek-v4-flash-pro.html)
-- [加速 LLM 模型加载与上下文窗口](ch01/1397-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [DeepSeek V4 Flash Pro](ch01/1304-deepseek-v4-flash-pro.html)
+- [加速 LLM 模型加载与上下文窗口](ch01/1398-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
 - [大型表格模型基础](../ch05/108-ai.html)
 
 ---

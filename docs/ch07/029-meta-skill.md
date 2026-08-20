@@ -105,12 +105,12 @@
 5. **个人信号 × 社区匹配** = Skill 发现的新范式，超越关键词搜索
 
 ## 相关对照
-- [OpenSquilla](../ch04/800-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
+- [OpenSquilla](../ch04/801-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/033-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
-- [Agent Skill 编写指南](../ch04/612-agent-skill.html)
+- [Agent Skill 编写指南](../ch04/614-agent-skill.html)
 - [10 篇论文看懂 AI Agent Skill](../ch04/349-skill.html)
-- [Agent Skills 系统性综述](../ch04/490-agent-skills.html)
+- [Agent Skills 系统性综述](../ch04/492-agent-skills.html)
 - [Skills 系统设计三路对比](../ch04/349-skill.html)
 - [Agent/Skills/Teams 架构演进](../ch04/312-agent-skills-teams.html)
 

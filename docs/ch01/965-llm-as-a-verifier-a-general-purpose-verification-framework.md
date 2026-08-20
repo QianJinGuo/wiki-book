@@ -47,12 +47,12 @@ LLM-as-a-Verifier 是斯坦福 AI Lab 与 UC Berkeley Sky Computing Lab 联合�
 
 ## 相关实体
 
-- [LLM-as-a-Verifier Framework（同源实体）](ch01/1146-llm.html)
+- [LLM-as-a-Verifier Framework（同源实体）](ch01/1517-llm.html)
 - [LLM-as-a-Verifier（同源实体）](ch01/568-llm-as-a-verifier-a-general-purpose-verification.html)
 - [Verifier 驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
 - [RLVR：可验证推理强化学习](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)
 - [LLM-as-a-Judge 实践案例](ch01/458-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
-- [SWE-bench Agent 评估方法论](../ch04/479-swe-bench-agent.html)
+- [SWE-bench Agent 评估方法论](../ch04/481-swe-bench-agent.html)
 - [Agent 评估基准体系](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
 - [LLM 研究前沿 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 - [评估与基准 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)

@@ -43,8 +43,8 @@ OpenAI 将 Daybreak 设计为三阶段流程： (1) 用 AI 推理和 token 使�
 ## 相关实体
 
 - [Useful Memories Become Faulty When Continuously Updated by LLMs](../ch01/082-useful-memories-become-faulty-when-continuously-updated-by-l.html)
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/229-tether-launches-developer-grants-program-for-local-first-ai.html)
-- [Tether launches developer grants program for local AI payments](../ch09/167-tether-launches-developer-grants-program-for-local-ai-paymen.html)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/230-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Tether launches developer grants program for local AI payments](../ch09/168-tether-launches-developer-grants-program-for-local-ai-paymen.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 ---

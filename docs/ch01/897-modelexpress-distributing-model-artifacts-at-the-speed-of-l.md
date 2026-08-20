@@ -41,7 +41,7 @@ MX 的优化可以抽象为三个层次：
 
 ### 与推理框架的关系
 
-MX 是 NVIDIA Dynamo 开源生态的核心组件之一，与 [Bedrock](../ch11/307-amazon-bedrock.html) 等托管推理服务的底层优化思路形成互补：前者聚焦于跨副本、跨节点的权重分发效率，后者关注 API 层面的模型编排。MX 参考了 Fireworks/Cursor/Cognition 等公司在 RL 训练中的 delta weight diff 传输技术，并将类似的 receiver-driven 模式产品化。
+MX 是 NVIDIA Dynamo 开源生态的核心组件之一，与 [Bedrock](../ch11/308-amazon-bedrock.html) 等托管推理服务的底层优化思路形成互补：前者聚焦于跨副本、跨节点的权重分发效率，后者关注 API 层面的模型编排。MX 参考了 Fireworks/Cursor/Cognition 等公司在 RL 训练中的 delta weight diff 传输技术，并将类似的 receiver-driven 模式产品化。
 
 ## 实践启示
 

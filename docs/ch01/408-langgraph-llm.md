@@ -299,7 +299,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Gepa Optimize Anything](ch01/487-gepa-optimize-anything.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/111-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [How Open Model Ecosystems Compound](ch01/1202-how-open-model-ecosystems-compound.html)
-- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/1379-deepseek-v4.html)
+- [读完这篇你就搞懂 Deepseek V4 了 V2](ch01/432-deepseek-v4.html)
 - [Context Window Management Comparison](../ch06/010-context-window-management-comparison.html)
 
 - [Tomtunguz Ai Model Inflation](../ch05/108-ai.html)
@@ -309,7 +309,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 - [Liangzi Recruitment](https://github.com/QianJinGuo/wiki/blob/main/entities/liangzi-recruitment.md)
 - [Lightfield Ai Pipeline Generation](../ch05/108-ai.html)
 - [Creativeboom Ai Views Changed](../ch05/108-ai.html)
-- [Netflix Is Building An Ai Animation Studio](../ch11/249-netflix-is-building-an-ai-animation-studio.html)
+- [Netflix Is Building An Ai Animation Studio](../ch11/250-netflix-is-building-an-ai-animation-studio.html)
 - [Minicpm V 46 13B Xinazhiyuan](ch01/358-1.html)
 - [不改模型不降质量谷歌让Gemma 4快了3倍本地跑大模型彻底变天](ch01/864-gemma-4.html)
 - [Model Half Life Aifoc](ch01/1087-model-half-life.html)

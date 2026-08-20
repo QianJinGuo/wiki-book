@@ -74,7 +74,7 @@ Handoff 块直接写入主会话而不落盘，避免了引入额外存储复杂
 - [Agent Harness 架构](ch05/043-agent-harness.html)
 - [Harness 上下文管理工作集](ch05/043-agent-harness.html)
 - [Harness Engineering 实践调查](ch05/065-harness-engineering.html)
-- [Vibe Coding 与 AI 软件工程](../ch04/796-vibe-coding-ai.html)
+- [Vibe Coding 与 AI 软件工程](../ch04/797-vibe-coding-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/如何利用-harness-一句话交付产品功能.md)
 

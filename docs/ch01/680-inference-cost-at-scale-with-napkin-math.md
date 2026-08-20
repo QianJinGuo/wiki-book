@@ -92,7 +92,7 @@ The napkin math provides a useful framework for pricing AI products:
 
 ### Connection to Local Inference Economics
 
-This analysis complements the [Apple Silicon cost analysis](ch01/1146-llm.html). While local inference on Apple Silicon costs ~$1.50/M tokens due to lower memory bandwidth (~200-400 GB/s vs. B200's 8 TB/s), cloud inference on B200-class GPUs achieves much better per-token economics through batched serving. The fundamental advantage of cloud GPUs is not just raw bandwidth, but the ability to **batch hundreds of users** to amortize the memory-bandwidth bottleneck.
+This analysis complements the [Apple Silicon cost analysis](ch01/1517-llm.html). While local inference on Apple Silicon costs ~$1.50/M tokens due to lower memory bandwidth (~200-400 GB/s vs. B200's 8 TB/s), cloud inference on B200-class GPUs achieves much better per-token economics through batched serving. The fundamental advantage of cloud GPUs is not just raw bandwidth, but the ability to **batch hundreds of users** to amortize the memory-bandwidth bottleneck.
 
 ### Scaling to Multi-GPU
 
@@ -115,9 +115,9 @@ For serving at scale, data parallelism (multiple independent model replicas) is 
 
 ## Related Entities
 
-- [Apple Silicon costs more than OpenRouter](ch01/1146-llm.html)
+- [Apple Silicon costs more than OpenRouter](ch01/1517-llm.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch01/039-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [Vietnamtodevelopdomesticcloud](ch01/1349-opd.html)
+- [Vietnamtodevelopdomesticcloud](ch01/1350-opd.html)
 
 ---
 

@@ -78,7 +78,7 @@ Subagent 是 Agent Harness 在**上下文管理层**的具体机制之一：
 
 - [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的上下文管理理念：工作集 vs 聊天记录
 - [Harness Engineering](../ch05/065-harness-engineering.html) 的系统性框架：模型外的 harness 决定下限
-- [Anthropic PM 的 Agentic 工作流](../ch04/579-anthropic-pm-agentic.html)：任务委派和上下文边界的判断
+- [Anthropic PM 的 Agentic 工作流](../ch04/580-anthropic-pm-agentic.html)：任务委派和上下文边界的判断
 > 原文链接：https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg
 
 ## 相关实体
@@ -86,7 +86,7 @@ Subagent 是 Agent Harness 在**上下文管理层**的具体机制之一：
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/073-claude-code-prompt.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch06/008-claude-code-openclaw-memory-comparison.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/084-obsidian-claude-code.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/101-claude-code-1.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/102-claude-code-1.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)

@@ -305,7 +305,7 @@ MiMo Code 的 npm uninstall bug 暴露了 **Agent Harness 设计的通用安全�
 ## 相关实体
 
 - [撕开Claude Code真相：1.6% vs 98.4%](../ch03/085-claude-code.html)（同 VILA 论文来源）
-- [Claude Code Dynamic Workflows Thariq Blog Gaia](ch09/105-claude-code-dynamic-workflows.html)（Anthropic Dynamic Workflow 同主题）
+- [Claude Code Dynamic Workflows Thariq Blog Gaia](ch09/106-claude-code-dynamic-workflows.html)（Anthropic Dynamic Workflow 同主题）
 - [Codex Goal Agent Runtime](../ch04/247-codex-goal-agent.html)（Codex goal agent runtime 对照）
 - [Codex Context Engineering Lastwhisper Thinking In Context](../ch01/737-codex.html)（Codex 上下文工程对照）
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/043-agent-harness.html)（mem0 Agent 记忆体系对照）

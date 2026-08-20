@@ -77,8 +77,8 @@ The positioning of DeepMind at #7 and the concentration of Chinese labs in posit
 
 ## Related Entities
 
-- [6 Months To Live For Open Models](ch01/1614-6-months-to-live-for-open-models.html) — Companion piece on the regulatory timeline that K3's release accelerates
-- [Kimi K3这是 Deepseek 20 时刻](ch01/1466-deepseek.html) — Chinese-language analysis of K3's significance
+- [6 Months To Live For Open Models](ch01/1616-6-months-to-live-for-open-models.html) — Companion piece on the regulatory timeline that K3's release accelerates
+- [Kimi K3这是 Deepseek 20 时刻](ch01/587-deepseek.html) — Chinese-language analysis of K3's significance
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-k3-the-open-weights-escalation.md)
 

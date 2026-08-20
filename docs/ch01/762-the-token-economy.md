@@ -50,7 +50,7 @@ Token 价格约每 18 个月下降 10 倍，而输出能力持续上升——模
 
 ## 相关实体
 
-- [Anthropic](ch01/779-anthropic.html)
+- [Anthropic](ch01/1592-anthropic.html)
 - [企业 AI 采纳](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md)
 - [从系统记录到系统智能](ch01/436-from-system-of-record-to-system-of-intelligence.html)
 - [Token 经济与 AI 生产力](../ch12/002-token.html)
