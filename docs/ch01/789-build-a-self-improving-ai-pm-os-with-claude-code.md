@@ -55,7 +55,7 @@ Anthropic 四个远程 surface 中，Dispatch 对 PM 最有用：手机上的单
 - [基于 Git 仓库的 PM 自动化](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 - [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
-- [Build Live Translation Apps with gpt-realtime-translate](ch01/097-build-live-translation-apps-with-gpt-realtime-translate.html)
+- [Build Live Translation Apps with gpt-realtime-translate](ch01/102-build-live-translation-apps-with-gpt-realtime-translate.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-ai-pms-guide-to-claude.md)
 

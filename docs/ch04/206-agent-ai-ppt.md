@@ -201,10 +201,10 @@ Nacos Skill/Worker Registry 将互联网公司久经考验的微服务治理体�
 
 ## 相关实体
 - [Hiclaw V110 K8S Hermes Worker](../ch01/291-hermes.html)
-- [Defense_At_Ai_Speed_Microsofts_New_Multi](../ch05/108-ai.html)
+- [Defense_At_Ai_Speed_Microsofts_New_Multi](../ch05/109-ai.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/077-harness.html)
-- [Ai Enhanced Data Solutions With Database 26Ai](../ch05/108-ai.html)
-- [Rag技术框架的演进方向](../ch01/407-rag.html)
+- [Ai Enhanced Data Solutions With Database 26Ai](../ch05/109-ai.html)
+- [Rag技术框架的演进方向](../ch01/1286-rag.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取.md)
 

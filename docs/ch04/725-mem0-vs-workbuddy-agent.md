@@ -57,7 +57,7 @@ Mem0（59.9k GitHub stars）是开源的 Agent 记忆框架，核心组件：
 
 ## 关联
 
-- [MemOS Hermes 记忆插件](../ch06/017-memos-hermes.html) — Hermes Agent 自身的内存插件系统
+- [MemOS Hermes 记忆插件](../ch06/018-memos-hermes.html) — Hermes Agent 自身的内存插件系统
 - [知识图谱驱动的代码理解](https://github.com/QianJinGuo/wiki/blob/main/entities/understand-anything-code-knowledge-graph-lum-jike.md) — 与记忆层的知识组织互补
 
 ## 第 2 来源 — 微信同日同主题报道

@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **44 篇**实体，按深度递增排列。
+> 本章收录 **45 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 8 |
-| ⭐⭐ 工程师 | 需编程基础 | 33 |
+| ⭐⭐ 工程师 | 需编程基础 | 34 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 
 ---
@@ -3093,7 +3093,33 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.039 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
+## Ch10.039 Query-Aware Compression: RAG 成本优化的后检索过滤模式
+
+> 📊 Level ⭐⭐ | 2.4KB | `entities/query-aware-rag-cost-compression-pattern.md`
+
+# Query-Aware Compression: RAG 成本优化的后检索过滤模式
+
+## 核心洞察：小模型过滤检索块
+
+RAG 检索通常调高召回率，返回大量潜在相关块（top-k 常见 5-20），导致每次调用输入 token 数高达数千，成为规模化 RAG 的主要成本。**Query-aware compression** 的核心模式：在检索之后、最终回答调用之前，插入一个**更小、更便宜的模型**，让它读取检索块 + 用户查询，输出仅与问题相关的**逐字 span**（verbatim spans）；主模型（更大的昂贵模型）随后只接收过滤后的上下文生成答案。
+
+## 经济性原理
+
+收益取决于两个因素：小/主模型的**单价比**（price ratio）和压缩比 `c`。对单次 RAG 查询，输入 token `R`、压缩比 `c>1`、输出 `A` token，通过减小送入主模型的输入 token 数实现成本节省。**次要收益**：移除无关上下文缩小幻觉表面。
+
+## 架构与叠加
+
+小模型（Claude Haiku）做压缩调用、主模型（Claude Sonnet）做回答调用，两者在同一个 AWS Lambda 中运行；检索器（Amazon Bedrock Knowledge Bases，OpenSearch Serverless 支撑）嵌入查询并返回 top-k 块。该模式可叠加在既有能力上实现复合节省：prompt caching、智能提示路由（Intelligent Prompt Routing）、Rerank API。
+
+## 与既有 RAG 优化体系的关系
+
+这是 [RAG 高级优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-advanced.md) 家族中"后检索处理"（post-retrieval processing）的具体实例，与 [分块/向量化/召回/重排](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md) 互补：后者优化检索质量，本文优化检索后的 token 成本。它与 [上下文管理](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md) 主题共享"在昂贵模型前精炼输入"的思想。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compress.md)
+
+---
+
+## Ch10.040 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
 
 > 📊 Level ⭐⭐ | 2.4KB | `entities/www-2026-强化学习重塑graphrag多跳推理f1提升8381.md`
 
@@ -3116,7 +3142,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.040 腾讯新研究：让Agent在语料中搜得更快、更准
+## Ch10.041 腾讯新研究：让Agent在语料中搜得更快、更准
 
 > 📊 Level ⭐⭐ | 1.1KB | `entities/rarg-relevance-aware-ripgrep-search-agent-tencent-2026.md`
 
@@ -3131,7 +3157,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.041 RAG for Documents
+## Ch10.042 RAG for Documents
 
 > 📊 Level ⭐⭐ | 0.6KB | `entities/rag-for-documents.md`
 
@@ -3148,7 +3174,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.042 Ettin Reranker Family
+## Ch10.043 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 
@@ -3343,7 +3369,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ---
 
-## Ch10.043 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
+## Ch10.044 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
 
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/multi-vector-late-interaction-embedding-models-with-sentence.md`
 
@@ -3372,7 +3398,7 @@ cross-encoder 交互最早（query 与 doc 一起过模型，最准但 doc 无�
 
 ---
 
-## Ch10.044 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
+## Ch10.045 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
 
 > 📊 Level ⭐⭐⭐ | 1.7KB | `entities/file-upload-multimodal-vector-pipeline-real-time-2026-08-04.md`
 

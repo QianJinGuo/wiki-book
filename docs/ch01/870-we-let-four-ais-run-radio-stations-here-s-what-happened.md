@@ -10,11 +10,11 @@
 - AI 个性化发展路径差异显著
 - AI 在无监督环境下易形成极端行为模式
 ## 相关实体
-- [Npm Supply Chain Compromise Postmortem](../ch05/108-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/109-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
-- [Reasoning Lift](ch01/926-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/125-ai-coding.html)
+- [Reasoning Lift](ch01/927-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/126-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/we-let-four-ais-run-radio-stations-heres-what-happened.md)
 

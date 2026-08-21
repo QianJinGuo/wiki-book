@@ -174,10 +174,10 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 
 ## 相关实体
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/532-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/359-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/360-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
-- [十年老技术开发的 AI Agent 探索之路](ch04/588-ai-agent.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/492-agent-skills.html)
+- [十年老技术开发的 AI Agent 探索之路](ch04/377-ai-agent.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/033-agent-skills.html)
 - [ai agent memory systems](ch04/180-agent-memory.html)
 
 ---

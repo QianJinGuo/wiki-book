@@ -49,8 +49,8 @@ Hugging Face + alphaXiv 于 2026-07-15 ~ 08-02 举办的 ICML 2026 Open Reproduc
 - [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) — 复现审计可作为科研产出评估的新基准形态
 - [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — BYO agent + 统一接口的社区协同模式
 - [Agent 工具研究](../ch03/037-agent.html) — 工具与 agent 能力的实证关系
-- [采用 AI coding agent 的六个教训](ch04/408-ai-coding-agent.html) — coding agent 实际能力边界的并行证据
-- [Agentic RL 框架实践](ch04/313-agentic-rl.html) — 长时域 agent 行为的另一视角
+- [采用 AI coding agent 的六个教训](ch04/409-ai-coding-agent.html) — coding agent 实际能力边界的并行证据
+- [Agentic RL 框架实践](ch04/314-agentic-rl.html) — 长时域 agent 行为的另一视角
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md) — 自动化验证驱动的开发范式延伸
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-we-learned-by-reproducing-2200-papers-from-icml.md)

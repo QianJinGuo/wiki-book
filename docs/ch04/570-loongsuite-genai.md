@@ -52,13 +52,13 @@ LoongSuite 当前支持 8+ 框架的 Invocation 统一抽象值得参考——�
 ## 相关实体
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/065-harness-engineering.html)
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/442-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/443-agent-principle-architecture-engineering-practice.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/037-agent.html)
 
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](../ch01/553-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/492-agent-skills.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/033-agent-skills.html)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/085-claude-code.html)
 
 ---

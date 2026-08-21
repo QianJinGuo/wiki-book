@@ -293,8 +293,8 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 
 ## 相关实体
 
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/821-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)

@@ -24,7 +24,7 @@
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/532-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 - [Offensive Security Blog](ch12/006-offensive-security-blog.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01/048-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01/050-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
 ---
 

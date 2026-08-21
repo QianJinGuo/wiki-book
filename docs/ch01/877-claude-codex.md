@@ -55,7 +55,7 @@ Unibase Memory 等共享记忆方案面临的核心工程挑战是并发写入�
 
 ## 相关实体链接
 
-- [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/103-anthropic-8x.html) — 文中引用的 Agent 协作验证瓶颈讨论
+- [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/104-anthropic-8x.html) — 文中引用的 Agent 协作验证瓶颈讨论
 - [Agent Harness Context Management Working Set](../ch05/043-agent-harness.html) — 上下文窗口作为运行时工作集的观点
 - [Codex 5 Layer Architecture](ch01/737-codex.html) — Codex 的架构设计
 - [Claude Code Multi Agent Collaboration 多智能体协作体系设计](../ch03/085-claude-code.html) — 多智能体协作体系设计

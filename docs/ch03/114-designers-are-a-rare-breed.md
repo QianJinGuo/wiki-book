@@ -39,13 +39,13 @@ Claude Design 引发的行业焦虑，源于把「设计普及」误读为「设
 5. 保护专业内核：品味、判断力、对用户需求的理解是任何工具无法复制的资产，持续投资它们，其余技术细节可以外包给工具；面对每一代新工具，保持初学者心态重新学习
 
 ## 相关实体
-- [Claude Design Skill](../ch01/1372-claude-design-skill.html) —— 将 Claude Design 封装为 Skill 的实践，是「设计普及」工具链的具体形态
-- [Penpot 与 Claude Design](../ch01/1233-claude.html) —— 关于 Claude Design 是否代表企业级设计未来的相反观点，可对照阅读
-- [自由设计师 vs AI 订阅](../ch05/108-ai.html) —— AI 订阅制冲击自由设计师市场的另一视角
+- [Claude Design Skill](../ch01/1373-claude-design-skill.html) —— 将 Claude Design 封装为 Skill 的实践，是「设计普及」工具链的具体形态
+- [Penpot 与 Claude Design](../ch01/1212-claude.html) —— 关于 Claude Design 是否代表企业级设计未来的相反观点，可对照阅读
+- [自由设计师 vs AI 订阅](../ch05/109-ai.html) —— AI 订阅制冲击自由设计师市场的另一视角
 - [AI UX 设计模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ux-design-patterns.md) —— AI 时代交互设计范式的方法论集合
-- [Top 10 Design Gadgets（2026）](../ch01/1129-20.html) —— 创意专业人士的工具装备清单
-- [柚漫剧 AI 全流程提效拆解](../ch05/108-ai.html) —— AI 提效从单点到工程化的行业案例
-- [Agent Skill 设计模式](../ch04/492-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
+- [Top 10 Design Gadgets（2026）](../ch01/1130-20.html) —— 创意专业人士的工具装备清单
+- [柚漫剧 AI 全流程提效拆解](../ch05/109-ai.html) —— AI 提效从单点到工程化的行业案例
+- [Agent Skill 设计模式](../ch04/033-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designers-are-a-rare-breed.md)
 

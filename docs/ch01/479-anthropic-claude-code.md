@@ -139,7 +139,7 @@ Skills 是按需加载的专业知识包，应绑定到特定目录实现模块�
 
 - 博客原文：https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
 - [openai 的最强对手，离「ai windows」又近了一步](../ch04/581-anthropic-ai.html)
-- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch05/108-ai.html)
+- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch05/109-ai.html)
 - [claude code 1.0.24 工具调用安全事故：静默删 .gitignore 与 redis flush 复盘](../ch03/085-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

@@ -166,11 +166,11 @@ Hermes Agent 的闭环学习循环代表了一种**主动式自我改进**而非
 2. **异步非阻塞设计是用户体验的关键**：后台 Review 不应影响主对话的响应延迟，这是保持用户体验的工程底线
 3. **知识表示的分离是认知架构的基础**：将不同类型的知识用不同的机制处理，这一致知框架值得在更多 Agent 系统中推广
 ## 相关实体
-- [Hermes Agent Vs Openclaw Comparison](../ch06/022-hermes-agent-vs-openclaw.html)
-- [Skill System Design Three Way Comparison](../ch04/349-skill.html)
-- [Hermes Agent Memory System Vs Openclaw](../ch06/013-hermes-agent-memory.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/371-hermes-agent-goal.html)
-- [Small Hermes Self Evolving Agent Architecture](../ch04/799-self-evolving-agent.html)
+- [Hermes Agent Vs Openclaw Comparison](../ch06/023-hermes-agent-vs-openclaw.html)
+- [Skill System Design Three Way Comparison](../ch04/350-skill.html)
+- [Hermes Agent Memory System Vs Openclaw](../ch06/014-hermes-agent-memory.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/372-hermes-agent-goal.html)
+- [Small Hermes Self Evolving Agent Architecture](../ch04/801-self-evolving-agent.html)
 
 ---
 

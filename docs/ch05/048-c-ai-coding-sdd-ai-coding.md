@@ -89,7 +89,7 @@ topics/
 ## 相关实体
 
 - [端到端 CodingAgent 设计：百亿补贴 C 端 AI Coding 实战](../ch04/030-codingagent.html) — 同团队同业务线的姊妹篇（前端 D2C + SKILLS 体系），本文聚焦服务端 SDD 流程 + 自进化记忆
-- [SDD 实践：格子 Harness 团队](ch05/125-ai-coding.html) — 另一团队 SDD 落地实践
+- [SDD 实践：格子 Harness 团队](ch05/126-ai-coding.html) — 另一团队 SDD 落地实践
 - [OpenSpec SDD](ch05/055-openspec.html) — Spec Kit 业界实践参照
 - [AgentMemory](../ch06/005-agentmemory-coding-agent.html) — Coding Agent 本地记忆同类方案
 - [SDD 规格驱动开发 Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/sdd-specification-driven-development-harness.md)

@@ -75,7 +75,7 @@
 ## 相关链接
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-omega-ai-bi-marmos-2026-08-03.md)
-- 相关主题：[高德 NL2SQL 知识工程：确定性路由 + 知识卡片](../ch01/1437-nl2sql.html)、[高德 AI Native 数据 Agent（NL2SQL 生产实践）](../ch04/467-data-agent.html)、[阿里数据研发 Harness：NL2SQL × Multi-Agent × 知识工程](ch05/065-harness-engineering.html)、[火山引擎智能问数 Agent](../ch04/467-data-agent.html)
+- 相关主题：[高德 NL2SQL 知识工程：确定性路由 + 知识卡片](../ch01/1438-nl2sql.html)、[高德 AI Native 数据 Agent（NL2SQL 生产实践）](../ch04/468-data-agent.html)、[阿里数据研发 Harness：NL2SQL × Multi-Agent × 知识工程](ch05/065-harness-engineering.html)、[火山引擎智能问数 Agent](../ch04/468-data-agent.html)
 - 腾讯同源：[驾驭 AI Coding：腾讯 Harness Engineering 落地规范](ch05/065-harness-engineering.html)
 
 ---

@@ -305,14 +305,14 @@ MiMo Code 的 npm uninstall bug 暴露了 **Agent Harness 设计的通用安全�
 ## 相关实体
 
 - [撕开Claude Code真相：1.6% vs 98.4%](../ch03/085-claude-code.html)（同 VILA 论文来源）
-- [Claude Code Dynamic Workflows Thariq Blog Gaia](ch09/106-claude-code-dynamic-workflows.html)（Anthropic Dynamic Workflow 同主题）
+- [Claude Code Dynamic Workflows Thariq Blog Gaia](ch09/107-claude-code-dynamic-workflows.html)（Anthropic Dynamic Workflow 同主题）
 - [Codex Goal Agent Runtime](../ch04/247-codex-goal-agent.html)（Codex goal agent runtime 对照）
 - [Codex Context Engineering Lastwhisper Thinking In Context](../ch01/737-codex.html)（Codex 上下文工程对照）
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/043-agent-harness.html)（mem0 Agent 记忆体系对照）
 - [Openai Skills Shell Compaction Agent Primitives](../ch05/028-openai-skills-shell-compaction-agent.html)（OpenAI Skills + Compaction 同源）
 - [Claude Code Source Leak Lifecycle Analysis](../ch03/085-claude-code.html)（Claude Code 源码生命周期分析）
-- [Snowflake Agentic Enterprise Summit 2026](../ch04/297-agentic.html)（Snowflake — 企业级 AI 可审计性同主线）
-- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/349-skill.html)（Agent Reliability Engineering 持续改进对照）
+- [Snowflake Agentic Enterprise Summit 2026](../ch04/298-agentic.html)（Snowflake — 企业级 AI 可审计性同主线）
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/350-skill.html)（Agent Reliability Engineering 持续改进对照）
 - [Claude Code Tool Design Evolution Anthropic](../ch03/085-claude-code.html)（Claude Code 工具设计演进）
 - [Hermes Agent Self Evolving](../ch03/099-hermes-agent.html)（Hermes Agent 自演进对照）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/022-ai-native.html)（Spec-as-AIOS — 可审查性同主线）

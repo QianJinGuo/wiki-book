@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **28 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 23 |
+| ⭐⭐ 工程师 | 需编程基础 | 24 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -2713,7 +2713,44 @@ STAROps RUM Inspection is publicly available through the Alibaba Cloud STAROps c
 
 ---
 
-## Ch13.022 WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
+## Ch13.022 AutoResearchEval：AutoResearch 的元认知闭环缺口与过程级失败诊断
+
+> 📊 Level ⭐⭐ | 3.4KB | `entities/autoresearch-eval-agent-failure-meta-cognitive-loop-2026.md`
+
+# AutoResearchEval：AutoResearch 的元认知闭环缺口与过程级失败诊断
+
+## 核心发现
+
+Prentis AI 与斯坦福等机构发布 AutoResearchEval，对当前 AutoResearch 系统的自主科研能力做了端到端的过程级诊断。核心结论：**当前 Agent 的主要瓶颈已不再是工程执行，而是科研过程中的判断与修正能力——即「元认知闭环（Metacognitive Loop）」的缺失**。Agent 能完成实验、生成报告，却难以像研究者一样持续检查结论、质疑方法、根据新证据调整方向。
+
+## 评测设计
+
+研究基于真实前沿科研工作构建任务环境，让 Claude、GPT、Qwen、DeepSeek 等多个模型系列及多个 Agent 系统完成从研究设想、文献检索、实验执行、结果分析、论文撰写到自我验证审查的完整流程，分析 100 个真实科研任务、8 组 Agent–模型组合与 800 条完整科研轨迹，归纳出 **45 类失败模式**。
+
+- 任务覆盖生物、医学、化学、材料科学、物理、科学计算、地球物理 7 个领域
+- 100 个任务分为 70 个开放式科学发现任务（无明确指标）+ 30 个目标锚定优化任务（以人类 SOTA 为锚）
+- 与多数只看最终结果的 benchmark 不同，AutoResearchEval 保留完整执行轨迹（代码、工具调用、实验结果、报告）
+
+## 关键方法：Artifact-aware Agent-as-a-Judge
+
+为把过程级诊断扩展到全部 800 条轨迹，研究构建了经过人工校准的 Artifact-aware Agent-as-a-Judge——不只读取最终报告，还检查代码、执行日志和数据等中间产物。在 50 条人工标注轨迹上，其 failure pattern 和根因分类的 Cohen's κ 分别达到 **0.75 和 0.83**，明显高于单次 LLM-as-a-Judge 的 **0.53 和 0.62**。
+
+## 意义
+
+这项研究把「Agent 能做科研」的讨论推进到「Agent 为什么做不好科研」——把失败归因到元认知闭环这一可操作的能力缺口，为后续在科研 Agent 中显式引入反思/验证/纠偏回路提供了诊断依据与评测基准。
+
+## 相关实体
+
+- → [AI 科研 L0-L4 分级综述](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md)
+- → [自改进智能体反馈回路](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-feedback-loop-self-improving-agents-introspection.md)
+- → [Perplexity WANDR 研究智能体基准](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-wandr-benchmark-research-agents-wide-deep-2026.md)
+- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-eval-agent-failure-meta-cognitive-loop-2026.md)
+
+> [!contradiction] 参见 [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md) 对 AutoResearch 成熟度的乐观分级——AutoResearchEval 用过程级失败数据指出元认知闭环缺口仍是当前自主科研的主瓶颈。
+
+---
+
+## Ch13.023 WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/perplexity-wandr-benchmark-research-agents-wide-deep-2026.md`
 
@@ -2760,7 +2797,7 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.023 Observability Platform
+## Ch13.024 Observability Platform
 
 > 📊 Level ⭐⭐ | 1.5KB | `entities/observability-platform.md`
 
@@ -2790,7 +2827,7 @@ Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic �
 
 ---
 
-## Ch13.024 IG-Bench：AI 生成论文 idea 的「想法基因组」谱系评测
+## Ch13.025 IG-Bench：AI 生成论文 idea 的「想法基因组」谱系评测
 
 > 📊 Level ⭐⭐ | 0.9KB | `entities/ideas-have-genomes-ig-bench-sjtu.md`
 
@@ -2805,7 +2842,7 @@ AI Scientist 等自动科研系统已能生成像模像样的论文，但现有�
 
 ---
 
-## Ch13.025 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+## Ch13.026 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
 
 > 📊 Level ⭐⭐⭐ | 22.1KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
 
@@ -3021,7 +3058,7 @@ AI Scientist 等自动科研系统已能生成像模像样的论文，但现有�
 
 ---
 
-## Ch13.026 Seedream 5.0 Pro 交互式精准编辑实测
+## Ch13.027 Seedream 5.0 Pro 交互式精准编辑实测
 
 > 📊 Level ⭐⭐⭐ | 4.8KB | `entities/字节把-ps-做进了生图模型里实测-seedream-50-pro-指哪改哪.md`
 
@@ -3059,7 +3096,7 @@ AI Scientist 等自动科研系统已能生成像模像样的论文，但现有�
 
 ---
 
-## Ch13.027 Discretizing Reward Models
+## Ch13.028 Discretizing Reward Models
 
 > 📊 Level ⭐⭐⭐⭐ | 6.2KB | `entities/abs-2606-21795.md`
 

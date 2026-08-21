@@ -51,7 +51,7 @@ HTTP/CLI 只是字节翻译器，真正业务逻辑在协调与治理层。包�
 - [Claude Code Search Architecture Tencent 2026](../ch03/085-claude-code.html)
 - [Openclaw Prompt Context Harness](../ch11/253-openclaw.html)
 - [Hermes 9 Module Architecture Winty](../ch01/291-hermes.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/371-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
 - [Agent Memory Architecture Ruofei](ch04/180-agent-memory.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
 

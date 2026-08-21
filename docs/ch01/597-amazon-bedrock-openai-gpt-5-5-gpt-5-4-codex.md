@@ -110,7 +110,7 @@ GPT-5.5 在 Bedrock 上表现出显著的 Agentic Coding 能力提升：
 
 ## 与 Anthropic 模型的混合使用
 
-Bedrock 的一大优势是可以在同一平台上混合使用 OpenAI 和 [Anthropic Claude](ch01/1592-anthropic.html) 模型。典型场景：
+Bedrock 的一大优势是可以在同一平台上混合使用 OpenAI 和 [Anthropic Claude](ch01/1605-anthropic.html) 模型。典型场景：
 - **代码生成**：使用 OpenAI Codex 做代码生成
 - **安全审查**：使用 Claude 做代码安全审计（取长补短）
 - **成本优化**：简单任务用 Claude Haiku，复杂任务用 GPT-5.5

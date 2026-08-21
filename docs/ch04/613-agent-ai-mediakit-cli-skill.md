@@ -28,7 +28,7 @@ AI MediaKit CLI + Skill 并不是把 API 简单包一层命令，它面向 Agent
 
 ## 相关实体
 
-- [AI MediaKit CLI Skill 工作台](ch04/469-cli-skill-agent.html)
+- [AI MediaKit CLI Skill 工作台](ch04/470-cli-skill-agent.html)
 - [Mediakit 火山引擎视频生产套件](../ch03/037-agent.html)
 - [Harness 工具设计演进](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-tool-design-evolution.md)
 - [Agent 角色专业化](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-role-specialization.md)

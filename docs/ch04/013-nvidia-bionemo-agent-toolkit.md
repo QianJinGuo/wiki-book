@@ -76,7 +76,7 @@ BioNeMo Agent Toolkit 代表了 AI 在科学研究中的应用从"工具辅助"�
 
 - [NVIDIA Nemotron-3：Agent、RAG、语音与安全](../ch03/037-agent.html)
 - [NVIDIA NeMo AutoModel 微调](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemo-automodel-fine-tuning.md)
-- [NVIDIA 安全本地 Agent：NemoClaw 与 OpenClaw](ch04/509-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [NVIDIA 安全本地 Agent：NemoClaw 与 OpenClaw](ch04/510-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Hermes Agent 技能设计分析](../ch01/521-hermes-agent-skill.html)
 - [Agent Harness 架构](../ch05/043-agent-harness.html)
 

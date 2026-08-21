@@ -86,12 +86,12 @@ Loop 持久状态设计：`{status, last_check_time, known_articles, check_count
 Claude Code 里 agent 的自动化触发有五种形态：/loop（时间表）、/goal（目标驱动）、hooks（事件确定性触发）、subagent spawn（并行验证）、workflow（LLM 决定子 agent 组合）——实际工作流组合使用（示例：scheduled loop 每周五触发 → 主 agent 分析 PR 识别缺失 skill → spawn 子 agent 用 goal loop 验证）。设计 Loop 的第一步不是 loop 组件本身，而是先写处理问题的 skill。
 
 ## 与已有实体的关系
-- [Claude Code Loop Engineering 完整攻略](ch09/179-claude-code-loop-engineering.html) — 兔兔AGI 第三方教程，侧重实战技法；本实体是官方分类法，侧重模式选择决策
+- [Claude Code Loop Engineering 完整攻略](ch09/160-claude-code-loop-engineering.html) — 兔兔AGI 第三方教程，侧重实战技法；本实体是官方分类法，侧重模式选择决策
 - [阿里云 Loop 实战」— 同为 Loop 实践，但本实体聚焦 Claude Code 的 CLI 命令级 loop 原语
 
 ## 参考
 
-→ [raw/articles/claude-code-loop-types-official-taxonomy-four-modes|原文存档 1](../ch05/006-loop-engineering.html)
+→ [raw/articles/claude-code-loop-types-official-taxonomy-four-modes|原文存档 1](../ch05/122-loop-engineering.html)
 → [raw/articles/fyjE5EhnV1jKzE8NnscZDQ|原文存档 2 (AI寒武纪)]
 → [raw/articles/anthropic-loop-four-types-practical-guide-jiagoux-2026-07-15|原文存档 3 (架构师)]
 → [raw/articles/claude-code-loop-practical-cron-prompt-datathu-2026-08-06|原文存档 4 (数据派THU)]

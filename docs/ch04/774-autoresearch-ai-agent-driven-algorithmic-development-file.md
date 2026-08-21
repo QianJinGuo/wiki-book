@@ -36,7 +36,7 @@ Smith 的基本方法是：提供一个带约束的工程问题框架（类型�
 
 ## 与同类工作的关系
 
-- 与 [Headroom](../ch06/042-headroom.html) 不同：Headroom 关注 LLM 上下文压缩，这里关注通用数据压缩
+- 与 [Headroom](../ch06/044-headroom.html) 不同：Headroom 关注 LLM 上下文压缩，这里关注通用数据压缩
 - 与 `loop-engineering` 模式相关：agent 自主迭代改进的自动化循环
 - 与 Karpathy 的 Autoresearch 概念一脉相承：让 Agent 自主进行端到端研究
 

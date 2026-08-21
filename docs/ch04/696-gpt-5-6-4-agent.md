@@ -20,15 +20,15 @@ GPT-5.6 将推理强度（reasoning effort）暴露为运行时可选菜单后�
 
 ## 深度分析
 
-推理强度调度的价值在于打破「推理强度 = 质量」的线性直觉。文中给出的反例：CI 报错场景拉满推理强度，模型「确实会想得更久，问题却未必更接近解决」——因为瓶颈可能在外层环境（依赖超时、测试污染）而非推理深度。正确做法是让便宜的快速分类先判断任务该走哪条路径（工具调用/验证器/深度推理），再分配对应强度的推理。这与 [reasoning effort 安全分类](../ch01/906-llm-thonking.html) 的「按任务动态分配思考深度」思路同构，但本文将其推广到通用 Agent 调度层，并给出训练路线维度的解释：推理强度的上限由后训练数据与奖励设计决定，运行时只能在其能力带内做取舍。
+推理强度调度的价值在于打破「推理强度 = 质量」的线性直觉。文中给出的反例：CI 报错场景拉满推理强度，模型「确实会想得更久，问题却未必更接近解决」——因为瓶颈可能在外层环境（依赖超时、测试污染）而非推理深度。正确做法是让便宜的快速分类先判断任务该走哪条路径（工具调用/验证器/深度推理），再分配对应强度的推理。这与 [reasoning effort 安全分类](../ch01/907-llm-thonking.html) 的「按任务动态分配思考深度」思路同构，但本文将其推广到通用 Agent 调度层，并给出训练路线维度的解释：推理强度的上限由后训练数据与奖励设计决定，运行时只能在其能力带内做取舍。
 
 对 Agent 工程的启示：推理预算应成为 Agent 编排器的一等公民——与工具选择、上下文预算、重试策略并列，而非藏在模型调用参数里的隐藏旋钮。
 
 ## 相关实体
 
 - [GPT-5.6 Sol/Terra/Luna 分层定价与 Codex 合并](../ch01/737-codex.html)
-- [Reasoning Effort 安全分类](../ch01/906-llm-thonking.html)
-- [DeepSeek V4 1M 上下文](../ch01/432-deepseek-v4.html)
+- [Reasoning Effort 安全分类](../ch01/907-llm-thonking.html)
+- [DeepSeek V4 1M 上下文](../ch01/1381-deepseek-v4.html)
 - [任务调度](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-task-scheduling-dynamic-hibernate-aliyun-mse.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-56-的推理强度怎么选从4家国产模型的训练路线到一套agent调度方法.md)

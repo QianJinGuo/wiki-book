@@ -48,7 +48,7 @@
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/037-agent.html)
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/077-harness.html)
 - [Harness Engineering](../ch05/065-harness-engineering.html)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch06/013-hermes-agent-memory.html)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch06/014-hermes-agent-memory.html)
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/043-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/es-agent-memory-layer-atlas-elasticsearch-2026.md)

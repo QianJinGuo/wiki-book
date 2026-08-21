@@ -97,20 +97,20 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — bootstrap 文件机制、工具结果预算、compaction 实现
 - [Claude Code 架构解析](../ch03/085-claude-code.html) — 文件读取双层门禁、查询前优化、compaction 触发机制
 - [Agent Skill 编写指南](ch04/614-agent-skill.html) — Skill 的渐进式上下文注入机制
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/588-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](ch04/377-ai-agent.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [OpenCLAW 完全指南](../ch11/253-openclaw.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1220-openclaw-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/492-agent-skills.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1221-openclaw-agent.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/033-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/085-claude-code.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/349-skill.html)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/350-skill.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1233-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/085-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
@@ -122,8 +122,8 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/253-openclaw.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/037-agent.html)
-- [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/349-skill.html)
+- [Hermes Agent vs OpenClaw 对比分析](../ch06/023-hermes-agent-vs-openclaw.html)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/350-skill.html)
 - [Skills 系统设计三方对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/skill-system-design-comparison.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/085-claude-code.html)
 

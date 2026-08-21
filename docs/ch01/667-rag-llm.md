@@ -66,7 +66,7 @@
 
 文本 RAG 的隐含假设是**结构化分隔**（段落/换行符/章节标题天然可索引）。视频 RAG 的本质挑战是**时间维度的连续性**——画面与语音交错，单一信号源（音频转录）会丢失视觉切换信号。
 
-**Rishav Aich 解决方案的隐含工程哲学**：停顿检测是**物理信号**（音频静音时长），LLM 主题分块是**语义信号**（chunk-level 聚类）。两者结合相当于**多模态信号融合**——物理边界 + 语义边界。这一思想与 [NVIDIA 多模态 RAG](ch01/407-rag.html) 5 大能力（baseline / reasoning / query decomposition / metadata filter / visual reasoning）一脉相承，但聚焦在**视频时序数据**这一更窄子领域。
+**Rishav Aich 解决方案的隐含工程哲学**：停顿检测是**物理信号**（音频静音时长），LLM 主题分块是**语义信号**（chunk-level 聚类）。两者结合相当于**多模态信号融合**——物理边界 + 语义边界。这一思想与 [NVIDIA 多模态 RAG](ch01/1286-rag.html) 5 大能力（baseline / reasoning / query decomposition / metadata filter / visual reasoning）一脉相承，但聚焦在**视频时序数据**这一更窄子领域。
 
 ### 与已有 RAG 分块实体的关系
 
@@ -94,9 +94,9 @@ Pause-based chunking 实质上是**视频转录文本的"事件分段"**——�
 
 ## 与现有实体的差异化定位
 
-- vs [RAG 框架演进](ch01/407-rag.html) (17KB) — 演进方向侧重协议/架构层（agentic RAG / hierarchical RAG），本文是**数据预处理层**
-- vs [NVIDIA 多模态 RAG](ch01/407-rag.html) (2026-05-21 入库) — NVIDIA 聚焦企业多模态文档（图/表/扫描页），本文聚焦**视频时序数据**
-- vs [RAG chunk→embed→rerank pipeline](ch01/407-rag.html) (23.7KB) — 文本域全流程，本文只解决**视频分块**这一上游问题
+- vs [RAG 框架演进](ch01/1286-rag.html) (17KB) — 演进方向侧重协议/架构层（agentic RAG / hierarchical RAG），本文是**数据预处理层**
+- vs [NVIDIA 多模态 RAG](ch01/1286-rag.html) (2026-05-21 入库) — NVIDIA 聚焦企业多模态文档（图/表/扫描页），本文聚焦**视频时序数据**
+- vs [RAG chunk→embed→rerank pipeline](ch01/1286-rag.html) (23.7KB) — 文本域全流程，本文只解决**视频分块**这一上游问题
 
 ## 原文链接
 

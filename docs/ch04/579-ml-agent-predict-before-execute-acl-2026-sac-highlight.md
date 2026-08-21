@@ -83,7 +83,7 @@
 
 ## 相关实体
 
-- [Agent Loop Engineering](../ch05/006-loop-engineering.html)
+- [Agent Loop Engineering](../ch05/122-loop-engineering.html)
 - [Agent Evaluation Guide](../ch03/037-agent.html)
 - [AWS Agent Eval Kit](../ch03/037-agent.html)
 - [Loop World Models](https://github.com/QianJinGuo/wiki/blob/main/entities/loopwm-looped-world-models.md)

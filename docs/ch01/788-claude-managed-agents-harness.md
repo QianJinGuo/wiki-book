@@ -14,7 +14,7 @@ Claude Managed Agents官方Harness平台完整手册。本文来自 WeChat data-
 
 ## 与现有知识库内容的关联
 - [Claude Managed Agents](../ch04/634-claude-managed-agents.html) — 托管 Harness 平台
-- [Agent/Skills/Teams 架构演进与选型](../ch04/312-agent-skills-teams.html) — Anthropic Skills 认知一致性机制
+- [Agent/Skills/Teams 架构演进与选型](../ch04/313-agent-skills-teams.html) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
 ## 原始存档
@@ -86,14 +86,14 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - [Claude Managed Agents 开发者指南](../ch04/634-claude-managed-agents.html)
 - [claude managed agents official](../ch04/707-claude-managed-agents-official.html)
 
-- [obsidian claude code integration guide](../ch09/155-obsidian-claude-code-integration-guide.html)
-- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/504-anthropic-claude-agent.html)
-- [Introducing Claude for Small Business](ch01/030-introducing-claude-for-small-business.html)
-- [Introducing Claude for Small Business](ch01/030-introducing-claude-for-small-business.html)
-- [Xero Announces Integration with Anthropic's Claude](ch01/1592-anthropic.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1614-anthropic-claude.html)
+- [obsidian claude code integration guide](../ch09/156-obsidian-claude-code-integration-guide.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/505-anthropic-claude-agent.html)
+- [Introducing Claude for Small Business](ch01/032-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](ch01/032-introducing-claude-for-small-business.html)
+- [Xero Announces Integration with Anthropic's Claude](ch01/1605-anthropic.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1616-anthropic-claude.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
-- [Anthropic Computer Use 最佳实践](ch01/1215-anthropic-computer-use.html)
+- [Anthropic Computer Use 最佳实践](ch01/1216-anthropic-computer-use.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

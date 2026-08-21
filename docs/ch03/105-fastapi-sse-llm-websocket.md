@@ -73,7 +73,7 @@ async def event_generator():
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/319-amazon-nova.html)
-- [Thinking Machines 交互模型（Interaction Models）](../ch04/328-thinking-machines-interaction-models.html)
+- [Thinking Machines 交互模型（Interaction Models）](../ch04/329-thinking-machines-interaction-models.html)
 - [SGLang](../ch04/737-agent-assisted-sglang-ai-llm.html)
 
 - [Fastapi Sse Llm Streaming Vs Websocket 5E4A458Abf18](../ch11/092-fastapi.html)

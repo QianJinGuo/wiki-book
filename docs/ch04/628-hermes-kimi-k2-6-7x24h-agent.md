@@ -10,8 +10,8 @@
 
 ## 相关实体
 - [Hermes Agent K2 6 Tutorial](../ch03/099-hermes-agent.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/371-hermes-agent-goal.html)
-- [Small Hermes Self Evolving Agent Architecture](ch04/799-self-evolving-agent.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
+- [Small Hermes Self Evolving Agent Architecture](ch04/801-self-evolving-agent.html)
 - [Kimi K2 Tidb Agent Database Huangdongxu 20260513](../ch03/037-agent.html)
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](../ch03/099-hermes-agent.html)
 

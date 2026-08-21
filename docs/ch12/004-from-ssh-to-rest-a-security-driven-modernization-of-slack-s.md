@@ -70,21 +70,21 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 ## 相关实体
 - [Wetesteddeepseekv4Proandflashagainstclau](../ch01/587-deepseek.html)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/108-ai.html)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/143-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch05/109-ai.html)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/147-why-internally-built-ai-fails-fund-accounting-audits.html)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
-- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch05/108-ai.html)
+- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch05/109-ai.html)
 - [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/108-automating-confidential-containers-coco-infrastructure-wit.html)
-- [Gptomics Com How Ai Changes Software P L](../ch01/086-how-ai-changes-software-p-l.html)
-- [Romanian Man 30 Years Us Prison Vishing](../ch01/1468-0.html)
+- [Gptomics Com How Ai Changes Software P L](../ch01/091-how-ai-changes-software-p-l.html)
+- [Romanian Man 30 Years Us Prison Vishing](../ch01/1469-0.html)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](../ch01/358-1.html)
-- [2026 04 15](../ch01/1586-15.html)
+- [2026 04 15](../ch01/1588-15.html)
 - [What My Privacy And Security Stack Actually Looks Like](ch12/022-what-my-privacy-and-security-stack-actually-looks-like.html)
-- [Ai Traffic Cyberthreat Benchmark 2026](../ch05/108-ai.html)
-- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/189-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch05/109-ai.html)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/190-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
 
 ---
 

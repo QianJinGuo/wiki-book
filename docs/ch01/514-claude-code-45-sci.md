@@ -24,13 +24,13 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 该方法背后的「从 Vibe Coding 到 Vibe Researching」框架，实际上定义了一种新的知识生产方式：以 Agent 驱动的、人机协作的、迭代式的学术写作工作流。Claude Code 负责结构化论证生成、引用覆盖、格式规范化，人则在方向选择、假设提出、质量判断上保持主导地位。这与 [vibe coding 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md)的理念一脉相承——人提供意图和方向，AI 负责执行和落地。在文献综述场景中，AI 能够快速扫描大量文献、识别关键主题、组织论证结构，而研究人员则判断哪些文献真正重要、哪些论证方向值得深入、哪些结论可以被接受。
 
-从更宏观的视角看，这种分工模式与 [AI 自主科研 L0-L4 五级框架](../ch05/108-ai.html)高度吻合。该框架将 AI 科研自主度分为五个等级，其中 L1-L2 被定义为「Vibe Research」——人在驾驶座，AI 作为辅助工具执行具体任务。45 页综述的成功产出，实证了 Vibe Research 在当前技术条件下的可行性和有效性。它不追求 L3（AI 主导、人辅助）的全自动化，而是务实地将 AI 嵌入到人类研究者的工作流中，在人类判断力的护航下释放 AI 的效率优势。
+从更宏观的视角看，这种分工模式与 [AI 自主科研 L0-L4 五级框架](../ch05/109-ai.html)高度吻合。该框架将 AI 科研自主度分为五个等级，其中 L1-L2 被定义为「Vibe Research」——人在驾驶座，AI 作为辅助工具执行具体任务。45 页综述的成功产出，实证了 Vibe Research 在当前技术条件下的可行性和有效性。它不追求 L3（AI 主导、人辅助）的全自动化，而是务实地将 AI 嵌入到人类研究者的工作流中，在人类判断力的护航下释放 AI 的效率优势。
 
 ### 3. 文献综述是 AI 科研助手的理想切入点
 
 在众多学术写作形式中，文献综述是最适合当前 AI 能力的类别。原因有三：第一，综述的核心任务——文献扫描、主题归纳、论证组织——都是信息处理密集型工作，LLM 的强项恰好在此。第二，综述对创新性的要求相对宽松，不需要真正的科学发现（那是原创研究的要求），而是强调系统性、全面性和逻辑性。第三，综述的可验证性较高——每一条引用都可以被追溯到原始来源，AI 的幻觉问题可以通过引用校验来缓解。
 
-[Claude Science](ch01/1233-claude.html) 的案例佐证了这一判断。Allen Institute 神经科学家 Jérôme Lecoq 将一篇长篇综述的写作时间从接近 2 年压缩到几周，核心正是利用了 AI 的文献扫描、引用核验和结构化输出能力。当 AI 辅助综述写作的效率提升达到一个量级时，它不仅仅是节省时间的问题——它会改变科研人员的工作习惯：综述不再是「写论文之前做的准备」，而是「贯穿研究始终的持续性知识组织活动」。
+[Claude Science](ch01/1212-claude.html) 的案例佐证了这一判断。Allen Institute 神经科学家 Jérôme Lecoq 将一篇长篇综述的写作时间从接近 2 年压缩到几周，核心正是利用了 AI 的文献扫描、引用核验和结构化输出能力。当 AI 辅助综述写作的效率提升达到一个量级时，它不仅仅是节省时间的问题——它会改变科研人员的工作习惯：综述不再是「写论文之前做的准备」，而是「贯穿研究始终的持续性知识组织活动」。
 
 ### 4. 45 页产出的工程化实现路径
 
@@ -52,7 +52,7 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 
 2. **Modular Composition 是长文档生成的关键模式。** 45 页综述不是一次性生成的，而是通过将文档拆分为独立子模块、逐个生成、再组合拼接的方式完成的。对于任何涉及长篇幅输出的 AI 工作流，都应采用「按模块生成 → 逐模块审查 → 汇总组合」的模式，而非试图一次输出全部内容。这种模式既提高了输出质量（每个模块可独立迭代优化），也使得人的审查和干预可以在模块级别进行——这是任何追求出版级质量的 AI 写作项目不可跳过的工程选择。
 
-3. **引用核验是 AI 学术写作不可跳过的质量关卡。** LLM 生成的引用经常出现幻觉——引用不存在的文献、张冠李戴的论点归属、页码错误等。45 页综述能够达到 SCI 标准，离不开事后的引用核验工作。在实践中，可以引入专门的 reviewer agent（如 [Claude Science](ch01/1592-anthropic.html) 中的 actor-critic 架构）逐句核对引用的准确性，将引用校验从纯手动劳动转化为 AI 辅助的自动化流程。任何使用 LLM 辅助学术写作的实践者，都应建立至少包含「生成 → 引用核验 → 人工审查」的三阶段品控流水线。
+3. **引用核验是 AI 学术写作不可跳过的质量关卡。** LLM 生成的引用经常出现幻觉——引用不存在的文献、张冠李戴的论点归属、页码错误等。45 页综述能够达到 SCI 标准，离不开事后的引用核验工作。在实践中，可以引入专门的 reviewer agent（如 [Claude Science](ch01/1605-anthropic.html) 中的 actor-critic 架构）逐句核对引用的准确性，将引用校验从纯手动劳动转化为 AI 辅助的自动化流程。任何使用 LLM 辅助学术写作的实践者，都应建立至少包含「生成 → 引用核验 → 人工审查」的三阶段品控流水线。
 
 4. **明确「人的不可替代价值」并集中投入。** 本案例中最值得关注的不是 AI 做了什么，而是人做了什么：选择综述主题、判断哪些文献值得纳入、评估论证的逻辑严密性、优化语言表达以符合学术期刊风格。这些是当前 AI 能力最薄弱的环节，却恰恰是学术写作最核心的价值。任何希望用 AI 提升学术生产力的团队，都应该明确「人负责什么，AI 负责什么」的分工边界，将人的精力集中在高价值判断上，而不是追求全自动化。
 
@@ -61,10 +61,10 @@ Claude Code 作为一款面向编程场景设计的 coding agent，被成功应�
 ## 相关实体
 
 - [Matt Pocock Skills vs Superpowers](../ch03/077-skills.html) — 同一作者（鲁工/AI编程实验室）的实操分享系列，讨论了 Agent 技能工程的两条路线
-- [Claude Science：AI 科研工作台](ch01/1233-claude.html) — Anthropic 面向科研的 AI 工作台，将 AI 能力嵌入科研全流程，与 Claude Code 的学术综述实践互补
+- [Claude Science：AI 科研工作台](ch01/1212-claude.html) — Anthropic 面向科研的 AI 工作台，将 AI 能力嵌入科研全流程，与 Claude Code 的学术综述实践互补
 - [Claude Code KAIROS 范式](ch01/500-claude-code-kairos.html) — Claude Code 从同步问答器向常驻代理的范式跃迁，为长期学术写作工作流提供基础设施
-- [AI 自主科研 L0-L4 框架](../ch05/108-ai.html) — 52 页综述定义的 AI 科研自主度分级，Vibe Research 属于 L1-L2 级别
-- [Claude Science Anthropic 科研 AI 工作台](ch01/1592-anthropic.html) — Anthropic 官方推出的科研 AI 集成工作环境，可审计管道 + 多智能体协同
+- [AI 自主科研 L0-L4 框架](../ch05/109-ai.html) — 52 页综述定义的 AI 科研自主度分级，Vibe Research 属于 L1-L2 级别
+- [Claude Science Anthropic 科研 AI 工作台](ch01/1605-anthropic.html) — Anthropic 官方推出的科研 AI 集成工作环境，可审计管道 + 多智能体协同
 - [vibe coding 编程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/vibe-coding-paradigm.md) — 人提供意图方向、AI 负责执行的协作模式，Vibe Researching 的方法论基础
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 标准化流程 + 可复用组件的工程思维，可应用于学术写作的流程化管理
 - [AI 研究的科学方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/scientific-method-ai-research.md) — 关于 AI 如何增强而非替代人类判断力的方法论讨论
