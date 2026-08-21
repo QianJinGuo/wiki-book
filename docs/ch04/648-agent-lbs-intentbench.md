@@ -11,10 +11,10 @@
 评估大模型在 LBS 场景中，从海量隐式信号（点击、搜索、导航片段）里精准推理用户深层意图的能力——而非执行明确指令。
 
 ## 相关实体
-- [Lbs Intentbench](ch04/352-lbs-intentbench.html)
+- [Lbs Intentbench](ch04/353-lbs-intentbench.html)
 - [Programbench Agent Benchmark](ch04/223-programbench-agent-benchmark.html)
-- [Computer Use 45X More Expensive Than Structured Apis](ch04/346-computer-use-45x-more-expensive-than-structured-apis.html)
-- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](../ch01/594-openai.html)
+- [Computer Use 45X More Expensive Than Structured Apis](ch04/347-computer-use-45x-more-expensive-than-structured-apis.html)
+- [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](../ch01/1000-openai.html)
 - [Cursor Harness Model Production Floor](../ch01/451-cursor-harness-model-production-floor.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lbs-intent-bench-lbs-intentbench.md)

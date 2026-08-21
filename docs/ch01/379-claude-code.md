@@ -253,8 +253,8 @@ Hooks 系统是 Claude Code 区别于其他框架最显著的能力，但它同�
 ## 相关实体
 - [Lessons from Building Claude Code: Seeing like an Agent](../ch03/085-claude-code.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/102-claude-code-1.html)
-- [Claude Code Subagent 上下文卫生](../ch04/389-claude-code-subagent.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/103-claude-code-1.html)
+- [Claude Code Subagent 上下文卫生](../ch04/390-claude-code-subagent.html)
 - [深度拆解 Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/075-claude-code-agent.html)
 - [Claude Code 架构深度解析](../ch03/085-claude-code.html)
 - [From Agent Protocol to Harness Skill](../ch04/522-from-agent-protocol-to-harness-skill.html)
@@ -269,12 +269,12 @@ Hooks 系统是 Claude Code 区别于其他框架最显著的能力，但它同�
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
 - [claude-code-7-layer-memory-architecture](../ch03/085-claude-code.html)
-- [17种Agent架构演进：控制流设计的完整演化史](../ch04/803-17-agent.html)
+- [17种Agent架构演进：控制流设计的完整演化史](../ch04/805-17-agent.html)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/077-harness.html)
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [AgentMemory](../ch06/005-agentmemory-coding-agent.html)
-- [AI Agent 工程师能力地图](../ch04/588-ai-agent.html)
-- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch05/108-ai.html)
+- [AI Agent 工程师能力地图](../ch04/377-ai-agent.html)
+- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch05/109-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
 
 ---

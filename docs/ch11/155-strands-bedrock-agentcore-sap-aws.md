@@ -31,7 +31,7 @@
 ## 相关实体
 - [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/665-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](ch11/137-aws-bedrock-agentcore-quality-optimization-flywheel.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/501-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/665-amazon-bedrock-agentcore.html)
 - [Aws Bedrock Multi Agent Collaboration Guide](ch11/019-aws-bedrock.html)
 

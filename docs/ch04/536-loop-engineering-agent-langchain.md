@@ -66,7 +66,7 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 
 **2. L4 爬坡循环是真正的护城河**
 
-前三层在 Addy Osmani、Boris/Peter、若飞等人的文章中已有充分讨论。L4 的独到之处在于将 trace 分析 Agent 作为一等公民——不是事后复盘而是持续自动化。这与 OpenAI Codex 的 trace-driven improvement 和 Anthropic 的 Agent 自改进循环方向一致。 [Loop Engineering Addy Osmani Challengehub](../ch05/006-loop-engineering.html)
+前三层在 Addy Osmani、Boris/Peter、若飞等人的文章中已有充分讨论。L4 的独到之处在于将 trace 分析 Agent 作为一等公民——不是事后复盘而是持续自动化。这与 OpenAI Codex 的 trace-driven improvement 和 Anthropic 的 Agent 自改进循环方向一致。 [Loop Engineering Addy Osmani Challengehub](../ch05/122-loop-engineering.html)
 
 **3. 产品原语即架构约束**
 
@@ -78,10 +78,10 @@ LangChain 的 4 层与清华 Loop Stack 六件套（Skill/Spec/Tool/Act/Eval/Sto
 
 ## 相关实体
 
-- [Loop Engineering — 12 来源合并](../ch05/006-loop-engineering.html)
-- [Loop Engineering: 把反馈循环放进工程现场](../ch05/006-loop-engineering.html)
-- [循环工程 — 清华 2026 框架](../ch05/006-loop-engineering.html)
-- [Agent Loop 8 个未解问题](../ch05/006-loop-engineering.html)
+- [Loop Engineering — 12 来源合并](../ch05/122-loop-engineering.html)
+- [Loop Engineering: 把反馈循环放进工程现场](../ch05/122-loop-engineering.html)
+- [循环工程 — 清华 2026 框架](../ch05/122-loop-engineering.html)
+- [Agent Loop 8 个未解问题](../ch05/122-loop-engineering.html)
 - [Hermes Agent Skills 源码分析](ch04/533-hermes-agent-skills.html)
 - [Loop Engineering 主题地图](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-langchain-four-layer-loopcraft.md)

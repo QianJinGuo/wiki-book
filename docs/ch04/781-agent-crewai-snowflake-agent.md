@@ -36,8 +36,8 @@
 - [Agent 数据治理模式](../ch03/037-agent.html)
 - [CrewAI 小步快跑](../ch03/037-agent.html)
 - [Agent 安全三步序列](../ch05/077-harness.html)
-- [Agentium Agent 框架](../ch01/1485-agentium-agent.html)
-- [Snowflake Agentic Enterprise Summit](ch04/297-agentic.html)
+- [Agentium Agent 框架](../ch01/1486-agentium-agent.html)
+- [Snowflake Agentic Enterprise Summit](ch04/298-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-build-agents-where-data-already-lives.md)
 

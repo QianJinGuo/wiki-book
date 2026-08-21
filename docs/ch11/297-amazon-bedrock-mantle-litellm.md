@@ -22,7 +22,7 @@ Mantle 是 Amazon Bedrock 的下一代推理引擎（next-generation inference e
 
 ## 可迁移性判据与定位
 
-去掉品牌词后，核心方法（用统一网关收敛多协议/多端点、实例角色 SigV4 免落盘 key、pre-call 钩子修 agent 客户端请求体不兼容）可指导任何多推理提供商的网关设计，且与 wiki 已入库的 [LiteLLM Bedrock 成本控制](ch11/049-litellm-amazon-bedrock.html)、[LiteLLM ECS/EKS 网关](../ch01/1517-llm.html) 同属 LiteLLM×Bedrock 网关工程族；本实体聚焦新的 Mantle 推理引擎 + 双协议收敛。
+去掉品牌词后，核心方法（用统一网关收敛多协议/多端点、实例角色 SigV4 免落盘 key、pre-call 钩子修 agent 客户端请求体不兼容）可指导任何多推理提供商的网关设计，且与 wiki 已入库的 [LiteLLM Bedrock 成本控制](ch11/049-litellm-amazon-bedrock.html)、[LiteLLM ECS/EKS 网关](../ch01/1147-llm.html) 同属 LiteLLM×Bedrock 网关工程族；本实体聚焦新的 Mantle 推理引擎 + 双协议收敛。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-mantle-litellm-gateway-2026.md)
 

@@ -36,14 +36,14 @@ OpenClaw 的爆火并非偶然，而是精准击中了 AI Agent 落地的三个�
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/253-openclaw.html)
 - [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/065-harness-engineering.html)
 - [AIAIGC峰会嘉宾阵容](ch04/623-aiaigc.html)
-- [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/349-skill.html)
+- [Hermes Agent vs OpenClaw 对比分析](../ch06/023-hermes-agent-vs-openclaw.html)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/350-skill.html)
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1220-openclaw-agent.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1221-openclaw-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/349-skill.html)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/350-skill.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Hermes Agent 记忆系统深度拆解](../ch06/013-hermes-agent-memory.html)
+- [Hermes Agent 记忆系统深度拆解](../ch06/014-hermes-agent-memory.html)
 
 ---
 

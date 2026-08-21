@@ -70,7 +70,7 @@
 - 不是替代，而是**生态合作**：与 Wix/Base44/Replit/Lovable/Figma/Webflow/Emergent 共建
 
 ### 5. Annotations = "局部编辑"范式
-- 与 [Embabel](../ch07/024-embabel.html) 的"完全可解释可审计"思路呼应
+- 与 [Embabel](../ch07/025-embabel.html) 的"完全可解释可审计"思路呼应
 - 局部修改 vs 全局重生成 = 节省用户心智 + 减少幻觉累积
 
 ## 启示
@@ -83,12 +83,12 @@
 ## 相关对照
 - [Codex Goal Agent Runtime](../ch04/247-codex-goal-agent.html)
 - [Codex Goal 实现拆解](../ch09/058-codex-goal.html)
-- [Codex Computer Use](../ch09/158-codex-can-now-control-other-desktop-devices-via-computer-use.html)
+- [Codex Computer Use](../ch09/159-codex-can-now-control-other-desktop-devices-via-computer-use.html)
 - [Codex 自主赚钱](ch01/737-codex.html)
 - [Claude Code vs Codex 上下文架构](../ch03/085-claude-code.html)
 - [Meta Skill](../ch07/029-meta-skill.html)（Skill 2.0 抽象）
-- [扣子 3.0 协作系统](ch01/928-3-0.html)（同类协作产品）
-- [Embabel](../ch07/024-embabel.html)（可解释+类型系统集成）
+- [扣子 3.0 协作系统](ch01/1422-3-0.html)（同类协作产品）
+- [Embabel](../ch07/025-embabel.html)（可解释+类型系统集成）
 
 ## 深度分析
 
@@ -123,7 +123,7 @@
 
 - [Meta Skill](../ch07/029-meta-skill.html) —— Skill 2.0 抽象层理论，解释为何"1 插件 = N 原子 Skill × M 应用集成"是技能演进的必然方向。
 
-- [Embabel](../ch07/024-embabel.html) —— 与 Annotations 的"局部编辑"范式在可解释性设计上形成跨产品呼应，两者共同指向"信任用户满意部分，只改被选中部分"的协作哲学。
+- [Embabel](../ch07/025-embabel.html) —— 与 Annotations 的"局部编辑"范式在可解释性设计上形成跨产品呼应，两者共同指向"信任用户满意部分，只改被选中部分"的协作哲学。
 
 ## 2nd Source：极客之家译介（2026-06-05）——Sites 落地细节与三层权限
 

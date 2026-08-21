@@ -63,10 +63,10 @@ Marvis 上线后出现了大量团队未曾预料的使用场景：写小说（�
 ## 相关实体
 
 - [AgentCore Trip Allocation](../ch04/782-agentcore-harness.html)
-- [Agent 配置组合](../ch04/349-skill.html)
+- [Agent 配置组合](../ch04/350-skill.html)
 - [Backend AI-Friendly 标准](../ch05/023-ai-friendly.html)
 - [Claude Code 遥测与安全](../ch01/479-anthropic-claude-code.html)
-- [GrowBrain 淘宝内容成长引擎](../ch04/297-agentic.html)
+- [GrowBrain 淘宝内容成长引擎](../ch04/298-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/marvis-multi-agent-desktop-tool-tencent-2026-07-15.md)
 

@@ -160,7 +160,7 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](ch05/108-ai.html)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](ch05/109-ai.html)
 
 ## 相关链接
 

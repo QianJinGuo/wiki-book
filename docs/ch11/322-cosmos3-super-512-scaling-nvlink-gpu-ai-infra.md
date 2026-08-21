@@ -59,7 +59,7 @@
 ## 相关链接
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-baige-cosmos3-super-512gpu-scaling-2026-08-03.md)
-- 百度同源姊妹篇：[百度 AI Coding 质量关卡实践](../ch05/125-ai-coding.html)、[全链路研发智能体（百度Geek说）](../ch03/037-agent.html)
-- 相关主题：[TMAP 图生视频推理加速实践（大淘宝）](../ch01/1129-20.html)、[高德 AI-Native 端云一体基建](../ch05/022-ai-native.html)
+- 百度同源姊妹篇：[百度 AI Coding 质量关卡实践](../ch05/126-ai-coding.html)、[全链路研发智能体（百度Geek说）](../ch03/037-agent.html)
+- 相关主题：[TMAP 图生视频推理加速实践（大淘宝）](../ch01/1130-20.html)、[高德 AI-Native 端云一体基建](../ch05/022-ai-native.html)
 
 ---

@@ -68,7 +68,7 @@ Cursor 收购后的联合训练是 Grok 4.5 的核心竞争壁垒。模型不仅
 
 ### 3. 「V9 基座 + 1.5T 参数」的规模信号
 
-从 V8-small（约 0.5T）到 V9 基座（1.5T），xAI 的模型参数在单代内增长了 3 倍，是当前最激进的参数扩展之一。更值得关注的是训练基础设施的跃升——数万块 NVIDIA GB300 和异步训练架构支撑超长 agentic rollout。这与 [Xai Dissolved Grok Colossus2 Analysis](../ch05/108-ai.html) 中讨论的 Colossus 集群能力形成呼应。下一代 Grok 5 目标参数规模达 6 万亿以上，按此速度 xAI 正在走一条「参数规模最大化」的路线。
+从 V8-small（约 0.5T）到 V9 基座（1.5T），xAI 的模型参数在单代内增长了 3 倍，是当前最激进的参数扩展之一。更值得关注的是训练基础设施的跃升——数万块 NVIDIA GB300 和异步训练架构支撑超长 agentic rollout。这与 [Xai Dissolved Grok Colossus2 Analysis](../ch05/109-ai.html) 中讨论的 Colossus 集群能力形成呼应。下一代 Grok 5 目标参数规模达 6 万亿以上，按此速度 xAI 正在走一条「参数规模最大化」的路线。
 
 ### 4. 上下文窗口缩减的工程取舍
 
@@ -89,11 +89,11 @@ Grok Build（CLI）、API、xAI Console、Cursor、Office 插件五个入口同�
 ## 相关实体
 
 - [Cursor让马斯克的Grok45咸鱼翻身追平Opus 48成本比Glm52还低](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor让马斯克的grok45咸鱼翻身追平opus-48成本比glm52还低.md) — Cursor 赋能 Grok 4.5 的深度分析
-- [Xai Dissolved Grok Colossus2 Analysis](../ch05/108-ai.html) — xAI Colossus 集群与 Grok 训练分析
+- [Xai Dissolved Grok Colossus2 Analysis](../ch05/109-ai.html) — xAI Colossus 集群与 Grok 训练分析
 - [Xai Grok Musk Training New Model Wechat](../ch04/210-xai-grok-musk.html) — xAI 训练动态
 - [Cursor Harness Model Production Floor](ch01/451-cursor-harness-model-production-floor.html) — Cursor Harness 模型生产
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/077-harness.html) — 模型与 Harness 关系分析
-- [Claude Fable 5 And New Ai Safety Fables](ch01/1188-claude-fable-5-and-new-ai-safety-fables.html) — Fable 5 模型安全寓言
+- [Claude Fable 5 And New Ai Safety Fables](ch01/1189-claude-fable-5-and-new-ai-safety-fables.html) — Fable 5 模型安全寓言
 - [Ai Cost Optimization Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md) — AI 成本优化框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grok-45-上线opus-48-级能力四分之一价格.md)

@@ -8,7 +8,7 @@
 ## 相关实体
 - [Icon Pack Websites Designers Should Bookmark](ch03/136-icon-pack-websites-designers-should-bookmark.html)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
-- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/1129-20.html)
+- [Top 10 Design Gadgets Creative Professionals 2026](../ch01/1130-20.html)
 - [Codex Role Plugins Sites Annotations](../ch01/737-codex.html)
 - [The Future Of Bmw Design A Conversation With Max Missoni](../ch01/021-the-future-of-bmw.html)
 

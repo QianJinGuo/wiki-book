@@ -16,7 +16,7 @@
 2. **知识注入** — 团队规范/领域知识前置到 AI 上下文
 3. **质量门禁** — 评审后绕过门禁修改被拦截
 
-融合 [Skill Engineering](ch05/127-harness-skill.html) 的技能编排与 [OpenSpec](ch05/055-openspec.html) 的规格化变更流程，通过 Hook 和门禁补上强制执行与可审计能力。
+融合 [Skill Engineering](ch05/106-harness-skill.html) 的技能编排与 [OpenSpec](ch05/055-openspec.html) 的规格化变更流程，通过 Hook 和门禁补上强制执行与可审计能力。
 
 门禁引擎（workflow-gate.sh）做 5 路校验（技能事件/CLI 事件/工件/度量/项目状态），Fail-Closed 不降级放行；23 个样本合规率约 91.3%。
 

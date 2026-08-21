@@ -59,7 +59,7 @@ Step Functions 用 `waitForTaskToken` 集成调用 Lambda，传入 task token �
 ## 相关实体
 
 - [AgentCore Managed Harness](../ch04/782-agentcore-harness.html) — AgentCore 平台（Harness Engineering）本身
-- [AgentCore Web Search](../ch04/334-amazon-bedrock-agentcore-web-search-ga.html) — AgentCore 的 Web 搜索 grounding 能力
+- [AgentCore Web Search](../ch04/335-amazon-bedrock-agentcore-web-search-ga.html) — AgentCore 的 Web 搜索 grounding 能力
 - [Serverless A2A Gateway](../ch03/037-agent.html) — Agent 间通信网关
 - [Bedrock Serverless Async Inference](ch11/019-aws-bedrock.html) — 同族的异步推理模式（SQS+Lambda）
 

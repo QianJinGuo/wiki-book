@@ -85,7 +85,7 @@ MCP 指令:         ~300 tokens
 
 **用户消息只占 0.04% 的上下文**——Agent 看到的 99.96% 是系统、规则、记忆、历史的组合。
 
-这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](../ch06/042-headroom.html) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
+这一数据点对 Agent 设计者极有启示：**你给 Agent 的"消息"不是你输入的那一句，而是系统为你准备的所有上下文**。这与 [Headroom Context Compression](../ch06/044-headroom.html) 中关于"上下文是工程产物"的论述一致——上下文不是自然涌现的，而是被精心组装的。
 
 ### 5. 技能预算控制：1% 规则的设计哲学
 
@@ -313,8 +313,8 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [OpenClaw 多 Agent 团队实践](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - [OpenClaw 完全指南](../ch11/253-openclaw.html)
 - [OpenClaw 多智能体团队搭建经验](../ch11/253-openclaw.html)
-- [Headroom Context Compression](../ch06/042-headroom.html)
-- [AI Agent Harness 构建](ch01/1191-ai-agent-harness.html)
+- [Headroom Context Compression](../ch06/044-headroom.html)
+- [AI Agent Harness 构建](ch01/1192-ai-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

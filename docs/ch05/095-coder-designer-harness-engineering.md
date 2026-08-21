@@ -31,7 +31,7 @@ Harness Design 的核心目标不是让模型更聪明，而是通过结构化�
 ## 相关实体
 
 - [阿里数据研发 Harness 工程](ch05/065-harness-engineering.html)
-- [NL2SQL 数仓架构实践](../ch01/1437-nl2sql.html)
+- [NL2SQL 数仓架构实践](../ch01/1438-nl2sql.html)
 - [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 - [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)
 - [Harness Gate 评估](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-gate-evaluation.md)

@@ -12,9 +12,9 @@
 
 ## 相关实体
 - [Skillclaw](ch04/563-skillclaw-nacos-agent-skill-registry.html)
-- [Skillclaw Collective Intelligence](ch04/349-skill.html)
-- [Skillclaw Hyman Nightly Evolution Alibaba](ch04/349-skill.html)
-- [Skill Rag Tsinghua Sra](ch04/349-skill.html)
+- [Skillclaw Collective Intelligence](ch04/350-skill.html)
+- [Skillclaw Hyman Nightly Evolution Alibaba](ch04/350-skill.html)
+- [Skill Rag Tsinghua Sra](ch04/350-skill.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/085-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw-alibaba-paperagent.md)

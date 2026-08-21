@@ -42,8 +42,8 @@ ChatGPT 的过度热情并非「性格」，而是 RLHF 优化的统计必然。
 
 ## 相关实体
 - [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
-- [奥特曼最险一战：前女CTO当庭翻脸，OpenAI权斗彻底打到台前](ch01/594-openai.html)
-- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](ch01/594-openai.html)
+- [奥特曼最险一战：前女CTO当庭翻脸，OpenAI权斗彻底打到台前](ch01/1000-openai.html)
+- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](ch01/1000-openai.html)
 - [RLHF/DPO/GRPO 对齐](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md)
 
 ---

@@ -79,11 +79,11 @@ FrontendStack（前端应用，经常更新）
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/037-agent.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/117-agentic-ai.html)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/085-claude-code.html)
-- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1213-spec.html)
+- [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](../ch01/1214-spec.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
-- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch05/108-ai.html)
+- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch05/109-ai.html)
 
 ---
 

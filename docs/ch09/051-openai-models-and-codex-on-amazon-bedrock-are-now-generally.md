@@ -86,11 +86,11 @@ Codex on Bedrock 推理费用可计入企业现有 AWS 承诺用量 ^。建议�
 
 ### 3. 平行评估 Codex 与 Claude Code 在 Bedrock 上的企业适用性
 
-Codex 无座机、无按开发者收费的模式打破了 AI 编程工具的企业采购门槛 ^。建议在 [Claude Code Aws Bedrock Guide](ch09/109-claude-code-aws.html) 之外并行评估 Codex on Bedrock——在企业已有 AWS 治理框架（IAM 权限、VPC 隔离、CloudTrail 审计）内即可启用。Codex 的跨仓库上下文能力特别适合大型 monorepo 开发团队。选型框架参见 [Ai Coding Agent From Helloworld To Production](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)。
+Codex 无座机、无按开发者收费的模式打破了 AI 编程工具的企业采购门槛 ^。建议在 [Claude Code Aws Bedrock Guide](ch09/110-claude-code-aws.html) 之外并行评估 Codex on Bedrock——在企业已有 AWS 治理框架（IAM 权限、VPC 隔离、CloudTrail 审计）内即可启用。Codex 的跨仓库上下文能力特别适合大型 monorepo 开发团队。选型框架参见 [Ai Coding Agent From Helloworld To Production](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)。
 
 ### 4. 关注 Bedrock Managed Agents (Powered by OpenAI) 发布节奏
 
-即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/298-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
+即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/299-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
 
 ### 5. 追踪 Daybreak GA 并评估安全工程扩展路径
 

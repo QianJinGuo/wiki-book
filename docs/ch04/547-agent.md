@@ -49,10 +49,10 @@
 
 ## 相关实体
 
-- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/1101-agent-ai.html)
+- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/1102-agent-ai.html)
 - [CUGA: IBM Research Enterprise Agent Harness](../ch05/043-agent-harness.html)
-- [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/349-skill.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/394-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/350-skill.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/466-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Claude Managed Agents 新更新"专属云"模式：把Agent的手放回企业内部](ch04/634-claude-managed-agents.html)
 - [Agent 生产级 Harness 工程实践](../ch05/043-agent-harness.html)
 - [企业级 Agent 编排](ch04/624-agent-orchestration.html)

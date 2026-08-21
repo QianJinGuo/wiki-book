@@ -278,8 +278,8 @@ Plain markdown、git history、versioned memory store 这类朴素设计不一�
 - [Claude Code 7 Layer Memory Architecture](../ch03/085-claude-code.html)
 - [Agent Memory Architecture Ruofei](../ch04/180-agent-memory.html)
 - [Memory Agent Systems Cobanov](../ch04/708-memory-agent-systems-cobanov.html)
-- [Factory Mission Multi Agent Architecture](../ch01/1473-factory-mission-multi-agent-architecture.html)
-- [Context Engineering Three Memory Paradigms](ch06/015-memory.html)
+- [Factory Mission Multi Agent Architecture](../ch01/1474-factory-mission-multi-agent-architecture.html)
+- [Context Engineering Three Memory Paradigms](ch06/048-memory.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

@@ -14,11 +14,11 @@
 Agent 在模糊需求前反复揣摩、多轮尝试、走了一半发现方向不对再重来——每一步都在烧 Token。
 
 ## 相关实体
-- [我用 Skillmd 做了一个简历生成器](../ch04/349-skill.html)
+- [我用 Skillmd 做了一个简历生成器](../ch04/350-skill.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/099-hermes-agent.html)
-- [Llm Raiders Private Ai Server](../ch01/1517-llm.html)
-- [Pi Mono Github](../ch01/1115-pi-mono-github.html)
-- [我用 Skillmd 做了一个简历生成器](../ch04/349-skill.html)
+- [Llm Raiders Private Ai Server](../ch01/1147-llm.html)
+- [Pi Mono Github](../ch01/1116-pi-mono-github.html)
+- [我用 Skillmd 做了一个简历生成器](../ch04/350-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-engineering-ai-as-algorithm.md)
 

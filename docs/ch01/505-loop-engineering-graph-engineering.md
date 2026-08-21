@@ -43,7 +43,7 @@ Graph Engineering 是一次命名事件加一次视角上移。命名事件部�
 ## 相关
 
 - [腾讯 Graph Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/graph-engineering-loop-to-graph-tencent.md) — 本实体对应的英文条目
-- [Loop Engineering 概念解析](../ch05/006-loop-engineering.html) — 被取代的前一层范式
+- [Loop Engineering 概念解析](../ch05/122-loop-engineering.html) — 被取代的前一层范式
 - [多智能体编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — Graph 的核心主题
 - [Orchestrator-Workers 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) — 主管模式的理论化
 

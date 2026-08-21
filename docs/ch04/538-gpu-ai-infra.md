@@ -59,7 +59,7 @@ AISHPerf 的评估体系以结果为导向，主指标为综合得分（不同�
 
 - [Harness Engineering 探索实践](../ch05/065-harness-engineering.html)
 - [Harness 即后端](../ch05/077-harness.html)
-- [Databricks GPU 可靠性](../ch01/053-how-we-keep-gpus-reliable-across-databricks-ai.html)
+- [Databricks GPU 可靠性](../ch01/055-how-we-keep-gpus-reliable-across-databricks-ai.html)
 - [Attention Collapse 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/直击gpu集群真实故障首个ai-infra运维智能体基准开源.md)

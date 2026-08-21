@@ -65,10 +65,10 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/270-aws-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/308-amazon-bedrock.html)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/501-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/019-aws-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/308-amazon-bedrock.html)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/1129-20.html)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/1129-20.html)
+- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/308-amazon-bedrock.html)- [aws graviton5 m9g/m9gd 实例 ga 公告](../ch01/1130-20.html)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](../ch01/1130-20.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

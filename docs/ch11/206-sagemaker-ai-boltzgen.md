@@ -58,7 +58,7 @@ BoltzGen on SageMaker 的设计中，从快速验证（10 个候选，~2 分钟�
 - [蛋白质研究 Copilot](../ch04/665-amazon-bedrock-agentcore.html)
 - [Claude 化学家](../ch01/848-making-claude-a-chemist.html)
 - [AgentScope 企业级分布式 Harness](../ch05/077-harness.html)
-- [Databricks GPU 可靠性](../ch01/053-how-we-keep-gpus-reliable-across-databricks-ai.html)
+- [Databricks GPU 可靠性](../ch01/055-how-we-keep-gpus-reliable-across-databricks-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/accelerate-protein-design-with-boltzgen-on-amazon-sagemaker-.md)
 

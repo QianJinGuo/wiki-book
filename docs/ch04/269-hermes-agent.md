@@ -106,8 +106,8 @@ Hermes 采用的"冻结快照"模式 看起来反直觉：会话过程中文件�
 
 ## 相关实体
 
-- [Karpathy 从 Vibe Coding 到 Agentic Engineering](ch04/297-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/821-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
 - [OpenClaw 多智能体团队搭建](../ch11/253-openclaw.html)

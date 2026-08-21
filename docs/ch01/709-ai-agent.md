@@ -81,11 +81,11 @@ OBI 在实际接入中解决了三个典型问题：
 
 ## 相关实体
 
-- [OBI 零代码 AI 可观测性](ch01/1129-20.html)
+- [OBI 零代码 AI 可观测性](ch01/1130-20.html)
 - [Agent 可观测性五层架构](../ch03/037-agent.html)
 - [LangFuse Agent 评估追踪](../ch03/037-agent.html)
-- [Cilium Tetragon eBPF 安全](ch01/407-rag.html)
-- [上下文工程三记忆范式](../ch06/015-memory.html)
+- [Cilium Tetragon eBPF 安全](ch01/1286-rag.html)
+- [上下文工程三记忆范式](../ch06/048-memory.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/不改一行代码看透-ai-agent-的每一次调用.md)
 

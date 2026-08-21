@@ -98,11 +98,11 @@ Miles 内置的可观测性（rollout 吞吐量、策略分歧度、reward 趋�
 ## 相关实体
 
 - [SGLang](../ch04/737-agent-assisted-sglang-ai-llm.html) — Miles 使用 SGLang 作为 rollout 引擎
-- [LLM RL 算法概览](ch01/1517-llm.html)
-- [DeepSeek V4 训练方法论](ch01/432-deepseek-v4.html)
-- [前沿后训练配方回顾](../ch05/108-ai.html)
-- [百度文心后训练演进](../ch05/108-ai.html)
-- [PyTorch 训练循环实践](../ch05/108-ai.html)
+- [LLM RL 算法概览](ch01/1147-llm.html)
+- [DeepSeek V4 训练方法论](ch01/1381-deepseek-v4.html)
+- [前沿后训练配方回顾](../ch05/109-ai.html)
+- [百度文心后训练演进](../ch05/109-ai.html)
+- [PyTorch 训练循环实践](../ch05/109-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-miles-llm-rl-post-training-2026.md)
 

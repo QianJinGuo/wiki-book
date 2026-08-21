@@ -28,7 +28,7 @@ Claude Managed Agents 官方发布的三大核心能力——dreaming、outcomes
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-official.md)
 
 ## 相关资源
-- [Agent Memory 架构](ch04/519-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构](ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Claude Managed Agents 开发者指南](ch04/634-claude-managed-agents.html)
 
 ## 相关实体

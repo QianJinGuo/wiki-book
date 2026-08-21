@@ -51,7 +51,7 @@ Salesforce 推出的 Headless 360 将 headless 概念推向大众。Notion 也�
 
 这些案例共同指向一个趋势：传统软件公司正在主动"去掉界面"，不是因为界面没有价值，而是因为 agent 作为新的用户群体，对 access pattern 的需求与人完全不同。未来软件可能需要维护两套接口——一套为人（GUI），一套为机器（API/API Agent Interface）。
 
-这与 [Salesforce Headless Software Losing Head A16Z](../ch01/358-1.html) 讨论的"护城河从界面层迁移到数据层"的趋势一致。[Enterprise Software Moats Agent Era](../ch03/037-agent.html) 进一步分析了五维迁移评估框架。[The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/394-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 则展示了 ServiceNow 在 ITSM 领域的 headless 实践。
+这与 [Salesforce Headless Software Losing Head A16Z](../ch01/358-1.html) 讨论的"护城河从界面层迁移到数据层"的趋势一致。[Enterprise Software Moats Agent Era](../ch03/037-agent.html) 进一步分析了五维迁移评估框架。[The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/466-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 则展示了 ServiceNow 在 ITSM 领域的 headless 实践。
 
 ## 深度分析
 
@@ -61,7 +61,7 @@ Salesforce 推出的 Headless 360 将 headless 概念推向大众。Notion 也�
 
 当 agent 取代人类成为主要操作者，界面变成了多余甚至有害的抽象层。Agent 不需要视觉布局，不需要下拉菜单，不需要美观的图表——它需要的是 schema、endpoint、permission model 和 SLA guarantee。这迫使软件架构从"presentation-first"转向"data-first"。
 
-但这里有一个被忽略的风险：**界面在历史上扮演的"数据规范化"角色，在 headless 架构中需要由 schema 约束和 API 契约来替代**。如果只是简单去掉界面而不补上足够强的数据契约，数据质量会急剧下降。这与 [日抛软件Ai时代正在发生的一场认知滑坡](../ch05/108-ai.html) 讨论的"软件是复杂性控制系统"的观点深度呼应——界面消失后，约束机制需要重新设计。
+但这里有一个被忽略的风险：**界面在历史上扮演的"数据规范化"角色，在 headless 架构中需要由 schema 约束和 API 契约来替代**。如果只是简单去掉界面而不补上足够强的数据契约，数据质量会急剧下降。这与 [日抛软件Ai时代正在发生的一场认知滑坡](../ch05/109-ai.html) 讨论的"软件是复杂性控制系统"的观点深度呼应——界面消失后，约束机制需要重新设计。
 
 ### 2. Agent 三分法的战略优先级翻转
 
@@ -73,7 +73,7 @@ Steven Sinofsky 提出的三类能力（查找/执行/分析）在商业价值�
 
 大多数 agent 产品从 Look up 切入，因为最容易；但真正持久的竞争优势在 Execute 和 Analyze 层。执行层要求 agent 与现有企业软件深度集成（这意味着需要 negotiate 身份系统、席位计费、审计追溯），而分析层要求 agent 具备跨系统的推理能力和错误容忍机制。
 
-这与 [Ai Agent Tool Count Trap](ch04/588-ai-agent.html) 讨论的工具数量陷阱形成互补：当 agent 进入 Execute 和 Analyze 层时，工具数量的控制变得更加关键——每个错误执行都有真实的业务成本。
+这与 [Ai Agent Tool Count Trap](ch04/377-ai-agent.html) 讨论的工具数量陷阱形成互补：当 agent 进入 Execute 和 Analyze 层时，工具数量的控制变得更加关键——每个错误执行都有真实的业务成本。
 
 ### 3. 业务逻辑即护城河：SAP 案例的泛化意义
 
@@ -140,13 +140,13 @@ Headless 软件面向 agent，不面向人，但最终仍然需要有人来解�
 
 ## 相关实体
 
-- [AI Agent 工具数量陷阱](ch04/588-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
+- [AI Agent 工具数量陷阱](ch04/377-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
 - [Salesforce 主动砍掉了界面](../ch01/358-1.html) — 同一议题的延伸讨论，聚焦数据护城河
 - [Enterprise Software Moats in the Agent Era](../ch03/037-agent.html) — 企业软件在 Agent 时代的护城河分析框架
-- [ServiceNow Headless 实践](ch04/394-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — ITSM 领域的 headless 转型案例
+- [ServiceNow Headless 实践](ch04/466-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — ITSM 领域的 headless 转型案例
 - [Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md) — 云安全领域的 headless 实践
-- [日抛软件：AI时代的认知滑坡](../ch05/108-ai.html) — 对"AI 替代复杂系统"论调的批判性分析
-- [17种Agent架构演进](ch04/803-17-agent.html) — Agent 控制流设计对 headless 架构的影响
+- [日抛软件：AI时代的认知滑坡](../ch05/109-ai.html) — 对"AI 替代复杂系统"论调的批判性分析
+- [17种Agent架构演进](ch04/805-17-agent.html) — Agent 控制流设计对 headless 架构的影响
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束 agent 行为的工程方法论
 
 ---

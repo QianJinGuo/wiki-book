@@ -111,7 +111,7 @@ Prompt 提供了三种输出模式：
 
 > AI 深度导读填补了阅读空隙，但剥夺了"慢思考"的磨练机会。不适合初学者或构建全新知识体系的人。把 AI 当望远镜扩展视野是好的，但别指望它能代替你走路。
 
-这与 [Karpathy Vibe Coding Agentic Engineering](../ch04/821-karpathy-vibe-coding-agentic-engineering.html) 中"vibe coding vs agentic engineering"的分野呼应——AI 工具可以放大能力，但不能替代基础训练。导读适合"已经有知识基础、需要快速进入新领域"的读者；对"还在构建基础认知框架"的初学者，导读反而有害。
+这与 [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html) 中"vibe coding vs agentic engineering"的分野呼应——AI 工具可以放大能力，但不能替代基础训练。导读适合"已经有知识基础、需要快速进入新领域"的读者；对"还在构建基础认知框架"的初学者，导读反而有害。
 
 ## 实践启示
 
@@ -127,10 +127,10 @@ Prompt 提供了三种输出模式：
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/297-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/821-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/301-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Prompt Engineering Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-patterns.md)
 - [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)
 

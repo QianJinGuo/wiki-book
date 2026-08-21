@@ -17,7 +17,7 @@ External → MCP → Skill → Agent → Memory → LLM
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/077-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/077-harness.html)
 - [From Agent Protocol To Harness Skill](ch04/522-from-agent-protocol-to-harness-skill.html)
-- [Ai Skill Skill Creator 源码拆解](ch04/374-skill-skill.html)
+- [Ai Skill Skill Creator 源码拆解](ch04/375-skill-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-ai-system-architecture-harness-skill-mcp.md)
 

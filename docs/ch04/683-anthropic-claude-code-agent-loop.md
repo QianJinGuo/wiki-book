@@ -58,9 +58,9 @@ Multi-agent loop 架构：implement → review → fix。使用小模型做 impl
 
 本实体提供了 **多 agent loop 用于生产级代码迁移** 的具体方法论，与以下实体互补：
 
-- [Claude Code Dynamic Workflows](../ch09/106-claude-code-dynamic-workflows.html)（动态工作流基础）
+- [Claude Code Dynamic Workflows](../ch09/107-claude-code-dynamic-workflows.html)（动态工作流基础）
 - [Claude Code Loop Types](../ch09/101-claude-code-loop-types.html)（loop 类型官方分类）
-- [Agentic Loop Engineering](../ch05/006-loop-engineering.html)（loop 工程框架）
+- [Agentic Loop Engineering](../ch05/122-loop-engineering.html)（loop 工程框架）
 - [Claude Code Engineering Truth](../ch03/085-claude-code.html)（工程实践）
 - [Claude Code 架构](../ch03/085-claude-code.html)
 

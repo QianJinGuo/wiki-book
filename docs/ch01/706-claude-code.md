@@ -61,7 +61,7 @@ Claude Code 的七大模块设计，本质上是在回答一个问题：**当 Ag
 
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/084-obsidian-claude-code.html)
-- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/102-claude-code-1.html)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch09/103-claude-code-1.html)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/099-hermes-agent.html)
 

@@ -34,7 +34,7 @@ LangGraph 管理所有 Agent 之间的状态共享，通过 checkpoint 系统提
 
 ## 互补角度
 
-本文在现有 [LangGraph 状态机](ch04/271-langgraph.html) 和 [Strands Agents](ch04/795-strands-agents.html) 知识基础上贡献了以下独特角度：
+本文在现有 [LangGraph 状态机](ch04/271-langgraph.html) 和 [Strands Agents](ch04/797-strands-agents.html) 知识基础上贡献了以下独特角度：
 
 1. **LangGraph + Strands + AgentCore 三件套组合**：现有实体分别覆盖 LangGraph 和 Strands，但本文演示了两者结合部署在 AgentCore 上的完整方案
 2. **金融领域应用**：市场监控/合规场景的多 Agent 系统设计
@@ -45,11 +45,11 @@ LangGraph 管理所有 Agent 之间的状态共享，通过 checkpoint 系统提
 ## 相关实体
 
 - [LangGraph 底层原理](ch04/271-langgraph.html)
-- [Strands Agents](ch04/795-strands-agents.html)
+- [Strands Agents](ch04/797-strands-agents.html)
 - [AgentCore Harness](ch04/782-agentcore-harness.html)
 - [Building web search agents with Strands and Exa](ch04/574-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Deep Agents 子 Agent 编排](ch04/624-agent-orchestration.html)
-- [Evaluating AI agents production blueprint](ch04/588-ai-agent.html)
+- [Evaluating AI agents production blueprint](ch04/377-ai-agent.html)
 - [AgentCore Gateway MCP](ch04/665-amazon-bedrock-agentcore.html)
 - [Multi-Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)
 - [Multi-Agent Collaboration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md)

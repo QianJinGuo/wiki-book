@@ -75,7 +75,7 @@
 
 ## 与库内实体关系
 
-- 与 [三种 Agent Memory 方案对比实验](../ch06/015-memory.html)（MSA/D2L/RAG 实证）互补：那是 agent 级记忆方案选型，本文是 model-level 架构分类
+- 与 [三种 Agent Memory 方案对比实验](../ch06/048-memory.html)（MSA/D2L/RAG 实证）互补：那是 agent 级记忆方案选型，本文是 model-level 架构分类
 - 与 [Agent 记忆系统四学派](../ch04/180-agent-memory.html) / [六存储学派](../ch04/180-agent-memory.html) 维度不同：库内为产品/存储级，本文为架构级三维元分类
 - 与 [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 的记忆维度（L4 记忆系统）衔接：本文提供统一坐标
 

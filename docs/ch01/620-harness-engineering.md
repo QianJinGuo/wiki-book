@@ -42,7 +42,7 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 - **输入质量约束**：通过标准化模板（需求模板、方案模板等）约束输入质量
 - **对抗式纪律**：行为铁律 + 评估独立（防止自我高分）+ 自我合理化警报
 
-这种"Fixed Flow + 程序化门禁"的设计哲学，与[Agent配置模型](../ch04/349-skill.html)中"渐进式披露"的思路形成对照——前者通过纪律保障可靠性，后者通过结构控制信息密度。
+这种"Fixed Flow + 程序化门禁"的设计哲学，与[Agent配置模型](../ch04/350-skill.html)中"渐进式披露"的思路形成对照——前者通过纪律保障可靠性，后者通过结构控制信息密度。
 
 ### 3. 可监测性的三个维度——信任AI的工程前提
 
@@ -79,11 +79,11 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 ## 相关实体
 
 - [Agent落地真相](../ch03/037-agent.html)
-- [Agent配置模型](../ch04/349-skill.html)
+- [Agent配置模型](../ch04/350-skill.html)
 - [钉钉招聘Agent](../ch05/043-agent-harness.html)
 - [AgentCore旅行分配系统](../ch04/782-agentcore-harness.html)
 - [QoderWork Skills开发实践](../ch03/077-skills.html)
-- [淘宝数字人Agentic架构](../ch04/297-agentic.html)
+- [淘宝数字人Agentic架构](../ch04/298-agentic.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

@@ -20,7 +20,7 @@ EKS 应用 → FluentBit → CloudWatch Logs
                     SNS → 团队通知
 ```
 
-CloudWatch 订阅过滤器监控错误级日志模式，命中即触发 Lambda。Lambda 运行由 [Strands Agents](../ch04/795-strands-agents.html) SDK + [Amazon Bedrock](../ch04/665-amazon-bedrock-agentcore.html) 驱动的 agent：FM 做实际推理，SDK 负责工具调用编排——定义可用工具，模型自己决定何时、如何调用。给定堆栈追踪，agent 可能抓取相关源码文件、发现需要更多上下文、搜索相关错误处理逻辑、产出结构化分析，全程无需硬编码调查路径。
+CloudWatch 订阅过滤器监控错误级日志模式，命中即触发 Lambda。Lambda 运行由 [Strands Agents](../ch04/797-strands-agents.html) SDK + [Amazon Bedrock](../ch04/665-amazon-bedrock-agentcore.html) 驱动的 agent：FM 做实际推理，SDK 负责工具调用编排——定义可用工具，模型自己决定何时、如何调用。给定堆栈追踪，agent 可能抓取相关源码文件、发现需要更多上下文、搜索相关错误处理逻辑、产出结构化分析，全程无需硬编码调查路径。
 
 ## 关键工具设计：docstring 驱动模型选择
 

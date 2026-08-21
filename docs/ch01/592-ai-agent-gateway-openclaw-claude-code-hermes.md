@@ -71,14 +71,14 @@
 ## 相关实体
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 
-- [深度拆解 Hermes Agent 记忆系统](../ch06/013-hermes-agent-memory.html)
-- [Hermes Agent vs OpenClaw 对比分析](../ch06/022-hermes-agent-vs-openclaw.html)
+- [深度拆解 Hermes Agent 记忆系统](../ch06/014-hermes-agent-memory.html)
+- [Hermes Agent vs OpenClaw 对比分析](../ch06/023-hermes-agent-vs-openclaw.html)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/085-claude-code.html)
 - [Claude Code 设计原则与对照分析](../ch03/085-claude-code.html)
 - [Claude Code Integration Other Tools](../ch03/085-claude-code.html)
 - [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
 - [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
-- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/1233-claude.html)
+- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/1212-claude.html)
 
 ---
 

@@ -11,10 +11,10 @@
 在 Agent 生态里，Skill 正在变成一个很现实的新攻击面。一个 Skill 往往既包含 SKILL.md 里的自然语言说明，也可能带着脚本、依赖和权限声明。它看起来像一个"小插件"，但实际拿到的是 Agent 的执行能力、环境变量访问能力、文件系统访问能力，甚至网络请求能力。
 
 ## 相关实体
-- [Skillclaw Collective Intelligence](ch04/349-skill.html)
+- [Skillclaw Collective Intelligence](ch04/350-skill.html)
 - [Hermes Skill System Winty](../ch07/019-hermes-skill.html)
-- [Ai Skill Skill Creator 源码拆解](ch04/374-skill-skill.html)
-- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/127-harness-skill.html)
+- [Ai Skill Skill Creator 源码拆解](ch04/375-skill-skill.html)
+- [Agentic Ai System Architecture Harness Skill Mcp](../ch05/106-harness-skill.html)
 - [Agent Skill Writing Guide](ch04/614-agent-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillsieve-agent-skill-security.md)
