@@ -125,7 +125,7 @@ Auto mode 通过**模型驱动的分类器**判定命令是否安全可执行，
 - [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](../ch09/107-claude-code-dynamic-workflows.html) — Claude Code 动态工作流译注
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html) — Claude Code 源码机制
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html) — Agent 原理架构与工程实践
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html) — Agent 原理架构与工程实践
 
 ---
 

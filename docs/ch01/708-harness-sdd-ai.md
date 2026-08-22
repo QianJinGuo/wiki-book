@@ -36,7 +36,7 @@ SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD �
 - [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](../ch05/077-harness.html)
 
 ## 相关实体
-- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/037-agent.html)
+- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/019-agent.html)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/200-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/099-hermes-agent.html)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/065-harness-engineering.html)
@@ -58,7 +58,7 @@ SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD �
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch01/1212-claude.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/634-claude-managed-agents.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/037-agent.html)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/019-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch05/109-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)

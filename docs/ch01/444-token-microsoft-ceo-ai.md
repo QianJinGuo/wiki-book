@@ -53,8 +53,8 @@
 - vs **[企业 AI 记忆底座 三层架构](../ch06/048-memory.html)** — 三层架构 = 知识底座的**工程实现**;纳德拉 Token 资本 = 知识底座背后的**经济学理由**。
 - vs **[Anthropic 缓存 Token 经济](ch01/1605-anthropic.html)** — 缓存是**Token 成本优化**的具体技术杠杆;纳德拉说的是**Token 作为资本形态**的存在论层面。
 - vs **[Harness Engineering Long-Term Agent Tasks](../ch05/065-harness-engineering.html)** — Harness = 工程模式(让 agent 可控);Token 资本 = 经济模式(让企业 AI 资产可积累)。两者构成"Token 资本"的双侧实现。
-- vs **[Agent 时代我们架构师应该学什么](../ch03/037-agent.html)** — 架构师视角讲**技能升级**;纳德拉讲**企业层面**的资本积累路径。
-- vs **[Microsoft Build 2026 MAI Models Scout Agent](../ch03/037-agent.html)** — 同一作者(Microsoft)在 Build 2026 上主推的是**前沿模型**;本文(纳德拉 X 帖)则**明确警告"前沿模型 ≠ 价值"**。同一个公司的两套话语:产品层 vs 战略层。**这一矛盾本身**值得读者警惕。
+- vs **[Agent 时代我们架构师应该学什么](../ch03/019-agent.html)** — 架构师视角讲**技能升级**;纳德拉讲**企业层面**的资本积累路径。
+- vs **[Microsoft Build 2026 MAI Models Scout Agent](../ch03/019-agent.html)** — 同一作者(Microsoft)在 Build 2026 上主推的是**前沿模型**;本文(纳德拉 X 帖)则**明确警告"前沿模型 ≠ 价值"**。同一个公司的两套话语:产品层 vs 战略层。**这一矛盾本身**值得读者警惕。
 - vs **[Agent 架构关键变化:Harness 正在成为新后端](../ch05/077-harness.html)** — Harness 是"老兵经验"沉淀的工程载体;纳德拉说的"不丢失老兵经验"**正是** Harness 的存在理由。
 
 ## 工程启示(实践可执行项)
@@ -78,7 +78,7 @@
 
 **1. "Token 资本"是纳德拉对知识工作者论点的 AI 时代升级**
 
-纳德拉在 1990 年代末受 [Karpathy LLM Wiki](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) 类比影响颇深，其平台哲学一以贯之。[Microsoft Build 2026](../ch03/037-agent.html) 却在同月高调主推"前沿模型"，与本文的"前沿生态系统"叙事形成内部张力——同一 CEO 的两套话语，实际上对应[Harness Engineering](../ch05/065-harness-engineering.html)所揭示的**产品层**与**战略层**双重现实。
+纳德拉在 1990 年代末受 [Karpathy LLM Wiki](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) 类比影响颇深，其平台哲学一以贯之。[Microsoft Build 2026](../ch03/019-agent.html) 却在同月高调主推"前沿模型"，与本文的"前沿生态系统"叙事形成内部张力——同一 CEO 的两套话语，实际上对应[Harness Engineering](../ch05/065-harness-engineering.html)所揭示的**产品层**与**战略层**双重现实。
 
 **2. Microsoft AI 经济定位：做生态，不做模型**
 
@@ -86,7 +86,7 @@
 
 **3. Azure OpenAI 服务的商业逻辑与 Token 资本叙事的吻合**
 
-微软 Azure OpenAI Service 的商业模式，本质上是**Token 资本的基础设施供应商**：提供模型接入 + 企业数据隔离 + [Agent 记忆 substrate 三层架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md)支撑。纳德拉的叙事为这一产品定位提供了经济学背书——企业付费的不是 Token 消耗量，而是**组织级学习闭环的所有权**。这与[Microsoft Build 2026](../ch03/037-agent.html)的 MAI 模型战略，构成"平台层"与"模型层"的双重锁定。
+微软 Azure OpenAI Service 的商业模式，本质上是**Token 资本的基础设施供应商**：提供模型接入 + 企业数据隔离 + [Agent 记忆 substrate 三层架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md)支撑。纳德拉的叙事为这一产品定位提供了经济学背书——企业付费的不是 Token 消耗量，而是**组织级学习闭环的所有权**。这与[Microsoft Build 2026](../ch03/019-agent.html)的 MAI 模型战略，构成"平台层"与"模型层"的双重锁定。
 
 **4. "前沿生态系统"作为反平台垄断的政治经济学**
 
@@ -128,8 +128,8 @@ AI 时代的企业主权 = 业务知识的所有权 + 可迁移性，**不等于
 - [Harness Engineering Long-Term Agent Tasks](../ch05/065-harness-engineering.html)
 - [Harness Engineering 7 层架构](../ch05/065-harness-engineering.html)
 - [Agent 架构关键变化:Harness 正在成为新后端](../ch05/077-harness.html)
-- [Agent 时代架构师应学什么](../ch03/037-agent.html)
-- [Microsoft Build 2026 MAI Models Scout Agent](../ch03/037-agent.html)
+- [Agent 时代架构师应学什么](../ch03/019-agent.html)
+- [Microsoft Build 2026 MAI Models Scout Agent](../ch03/019-agent.html)
 - [MiniMax Token 退化](../ch12/002-token.html)
 - [Cybersecurity Reach:Revoke Token 擦除计算机](../ch12/002-token.html)
 

@@ -58,7 +58,7 @@ Lambert 预测：开源模型在 **重复性自动化任务** 的 API 市场份�
 
 **本地 agent、OpenClaw 等个人 agent** 代表一个到目前大多被忽略的开源使用市场。Lambert 把它称为"暗物质" — 普遍存在、潜力巨大、对开源/闭源平衡影响深远。
 
-这一观察对 [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html) 类工作意义重大：个人 agent 很可能成为开源模型的真正主战场，而不是云端 API 服务的二等替代品。
+这一观察对 [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html) 类工作意义重大：个人 agent 很可能成为开源模型的真正主战场，而不是云端 API 服务的二等替代品。
 
 ### 8. 开源融资结构必然出现新形式
 
@@ -87,11 +87,11 @@ RL 训练时代真正的新护城河不是公开 benchmark 上的分数，而是
 ## 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/037-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/254-openclaw.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/019-agent.html)
 - [Rlhf Dpo Grpo Alignment](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md)
 
 ---

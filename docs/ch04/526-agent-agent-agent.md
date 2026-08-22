@@ -13,7 +13,7 @@
 ## 相关实体
 - [Harness Engineering Framework](../ch05/065-harness-engineering.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/077-harness.html)
-- [Openclaw Comprehensive Guide](../ch11/253-openclaw.html)
+- [Openclaw Comprehensive Guide](../ch11/254-openclaw.html)
 - [Ai Context Layer Kgc 2026](../ch06/025-ai-context-layer.html)
 - [Skillsieve Agent Skill Security](ch04/559-skillsieve-agent-skill.html)
 

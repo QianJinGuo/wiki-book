@@ -35,10 +35,10 @@ Prime Agent 定位为通用编码助手、长程自主评估的默认 runtime、
 - [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Agent Harness 架构](../ch05/043-agent-harness.html)
 - [Harness 12 组件 / 7 决策](../ch05/043-agent-harness.html)
-- [Agent 自改进六机制](../ch03/037-agent.html)
+- [Agent 自改进六机制](../ch03/019-agent.html)
 - [Lilian Weng 自改进 survey](../ch05/065-harness-engineering.html)
-- [Autoresearch 反馈环](../ch03/037-agent.html)
-- [Agent Context 管理模式](../ch03/037-agent.html)
+- [Autoresearch 反馈环](../ch03/019-agent.html)
+- [Agent Context 管理模式](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prime-agent-self-improving-rlm-agent.md)
 

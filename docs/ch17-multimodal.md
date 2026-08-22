@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **67 篇**实体，按深度递增排列。
+> 本章收录 **68 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 43 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 44 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
@@ -4471,7 +4471,54 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.054 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+## Ch17.054 CFT：一致特征传输的人像重打光（美图影像研究院 ECCV 2026）
+
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/cft-consistent-feature-transport-image-relighting-eccv-2026-meitu.md`
+
+# CFT：一致特征传输的人像重打光（美图影像研究院 ECCV 2026）
+
+## 概述
+
+美图影像研究院（MT Lab）提出 Consistent Feature Transport（CFT，一致特征传输），将人像重打光重新表述为**光照一致的特征传输问题**，在 Rectified Flow 框架上显式学习源图与目标图分布之间的光照变换，而非泛泛的图像翻译。成果被计算机视觉顶级会议 ECCV 2026 录用，论文题为《Consistent Feature Transport for Image Relighting》。
+
+## 背景：三类主流方法的短板
+
+现有基于扩散模型的人像重打光主流方法各有不足：
+
+- **控制信号驱动（Control-based）** — 可控性有所提升，但结果高度依赖控制信号的准确性与完整性
+- **本征分解驱动（Decomposition-based）** — 复杂光照下容易出错，误差传导至最终图像，导致阴影不一致、颜色偏移或细节丢失
+- **直接图到图翻译（Image-to-image）** — 未显式建模「光照专属」的特征位移，光照编辑精度与表达力不足
+
+此外，公开人像重打光数据集规模有限、多在受控环境采集，缺乏多色温、空间变化阴影、非均匀照明等复杂光效，难以支撑真实场景下的可控重打光学习。
+
+## 方法：CFT 三部分损失
+
+CFT 在噪声、源图、目标图三个分布之间建立联合建模，训练目标由三部分组成：
+
+- **L₁ 噪声→目标图** — 给定源图 (x_src)、重打光目标图 (x_tgt) 及文本条件 (c_tgt)，学习从先验噪声到目标 latent 的速度场，完成条件生成
+- **L₂ 噪声→源图** — 在同一先验噪声下，以中性条件 (c_src) 重建源图分布，强化对非光照内容（身份、几何、场景结构）的保持
+- **L₃ 源图→目标图：光照一致的特征传输（CFT 核心）** — 借鉴无反演编辑方法，利用 Rectified Flow 的线性性质，通过平行四边形法则构造源到目标的直接传输路径：`z_t_direct = z_src + z_t_tgt − z_t_src`，对应速度场 `v_t_direct = v_θ(z_t_tgt,t,x_src,c_tgt) − v_θ(z_t_src,t,x_src,c_src)`
+
+L₃ 的监督使用**身份与场景内容不同、但光照变换相同**的图像对作为真值。若监督来自同一对图像，模型易拟合样本特有的内容差异，把光照变化与非光照变化混在一起；换用「同光照变换、不同内容」的配对，可让模型学习可跨实例复用的光照特征传输，在生成稳定性与光照传输监督间取得平衡。
+
+## 数据集与实验结果
+
+团队构建了覆盖室内、室外等主流场景的大规模人像重打光数据集，覆盖 14 类光照效果类别，强调空间结构化照明、多色温与复杂阴影，弥补现有 portrait relighting 数据在复杂光效上的不足。
+
+实验显示 CFT 在像素保真、感知相似度、分布真实感与光照专用指标上均优于现有方案；定性结果在多光源交互、空间结构化照明、色温大幅偏移等困难场景下的一致性与稳定性有明显优势。30 名用户对 40 组随机样本打分显示，Flux-Kontext + CFT 在光照质量（IQ）、内容一致性（CC）、物理合理性（PP）、图像美学（IA）上表现最佳。消融实验表明，单独增加 L₂ 不能提升重打光质量，但与 L₃ 联用时提供额外结构保持，完整 CFT 效果最优。
+
+## 相关实体
+
+- [扩散模型架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
+- [视觉语言模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/vision-language-models.md)
+- [A2RD 扩散长视频](https://github.com/QianJinGuo/wiki/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
+- [CVPR 2026 DGAF-VSR 视频超分](https://github.com/QianJinGuo/wiki/blob/main/entities/cvpr-2026-dgaf-vsr-video-super-resolution-diffusion-taobao.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cft-consistent-feature-transport-image-relighting-eccv-2026-meitu.md)
+
+---
+
+## Ch17.055 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
 
@@ -4537,7 +4584,7 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.055 FLUX 3 — Black Forest Labs 多模态流模型
+## Ch17.056 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -4599,7 +4646,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.056 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.057 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -4641,7 +4688,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.057 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.058 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
@@ -4684,7 +4731,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.058 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+## Ch17.059 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
@@ -4721,7 +4768,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.059 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.060 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4765,7 +4812,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.060 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.061 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4810,7 +4857,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.061 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.062 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4838,7 +4885,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.062 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
+## Ch17.063 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
 
 > 📊 Level ⭐⭐⭐ | 2.5KB | `entities/douyin-dme-multimodal-embedding-multimodal-retrieval.md`
 
@@ -4868,7 +4915,7 @@ DME 代表多模态表征从「纯检索排序信号」向「承载非对称语�
 
 ---
 
-## Ch17.063 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
+## Ch17.064 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md`
 
@@ -4894,7 +4941,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.064 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
+## Ch17.065 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
 
 > 📊 Level ⭐⭐⭐ | 2.2KB | `entities/eccv26-oral人物不能变姿势要对齐风格还得一致dyref突破多参考约束下的图像生成难题.md`
 
@@ -4918,7 +4965,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.065 Qwen-Image-3.0 — 落字成画，字字如印
+## Ch17.066 Qwen-Image-3.0 — 落字成画，字字如印
 
 > 📊 Level ⭐⭐⭐ | 1.4KB | `entities/qwen-image-30落字成画字字如印.md`
 
@@ -4940,7 +4987,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.066 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.067 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -5064,7 +5111,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.067 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.068 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

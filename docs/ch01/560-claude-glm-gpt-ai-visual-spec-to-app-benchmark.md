@@ -115,7 +115,7 @@ VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力�
 - [Agent Harness 综述](../ch05/043-agent-harness.html) — 同一模型在不同架构下的表现差异分析
 - [SWE-bench Agent 评估](../ch04/482-swe-bench-agent.html) — 传统代码修复 Benchmark 的方法论
 - [Design-to-Code](../ch09/006-design-to-code.html) — 从设计稿到代码的自动化转换技术
-- [Agent 评估系统指南](../ch03/037-agent.html) — 系统性 Agent 评估方法论
+- [Agent 评估系统指南](../ch03/019-agent.html) — 系统性 Agent 评估方法论
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claudeglmgpt谁才是真正的ai软件工程师首个持续更新visual-spec-to-app-benchmark发布.md)
 

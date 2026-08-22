@@ -51,7 +51,7 @@ LangSmith Trajectory Evaluations 是一种评估 AI Agent 行为的方法，特�
 
 对于更灵活的、"过程是否合理"的评估场景，LLM-as-judge trajectory eval 比严格的字符串匹配更合适 。这种方法的优点是可以处理开放式的判断（如"这个决策是否合理"），缺点是引入了 judge 模型本身的偏见。在 [Agent Harness Engineering Survey 2026](../ch05/065-harness-engineering.html) 实践中，这种混合方法特别有价值，因为既需要确保关键步骤不遗漏，又需要允许合理的工程自由度。
 
-**5. 与 [Multi Agent Architecture Retail Practice](../ch03/037-agent.html) 的关联**
+**5. 与 [Multi Agent Architecture Retail Practice](../ch03/019-agent.html) 的关联**
 
 在多 Agent 系统中，单个 Agent 的 trajectory eval 可以组合成整个系统的行为评估。每个 Agent 的工具调用和决策路径被记录，然后通过 LLM-as-judge 进行综合判断 。这对于管理复杂的虚拟工程团队（如 gstack 模式）至关重要，因为需要确保每个专家角色的行为符合其职责定义。
 

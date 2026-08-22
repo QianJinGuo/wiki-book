@@ -77,7 +77,7 @@ XG-Guard 的隔离策略（实时裁剪恶意 Agent 的通信边）在保障安�
 ## 相关实体
 
 - [Anthropic Multi Agent Research System](ch04/676-anthropic-multi-agent-research-system.html) — Anthropic 多智能体研究系统
-- [Multi Agent Mission Factory Luke Aiengineer](../ch03/037-agent.html) — 多智能体任务工厂
+- [Multi Agent Mission Factory Luke Aiengineer](../ch03/019-agent.html) — 多智能体任务工厂
 - [Agent Orchestration Multi Agent Systems](ch04/624-agent-orchestration.html) — Agent 编排与多智能体系统
 - [Icml 2026如何对Multi Agent系统进行过程评估重新认识多智能体系统中的Orchestrator](../ch01/1582-icml-2026.html) — ICML 2026 MAS 过程评估
 - [Investing In Multi Agent Ai Safety Research Deepmind 2026 06](../ch01/1102-agent-ai.html) — DeepMind 多智能体安全研究

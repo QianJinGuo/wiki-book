@@ -79,7 +79,7 @@ Layer 5: 强制回滚机制 — 所有修改类工具必须附带降级回滚逻
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](ch04/298-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 
 ## 深度分析
 **1. 六层上下文体系（L1–L6）的系统性工程视角**

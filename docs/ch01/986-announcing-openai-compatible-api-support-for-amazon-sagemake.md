@@ -19,8 +19,8 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 
-- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11/293-openai-models-and-codex-on-amazon-bedrock-are-now-generally.html)
-- [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](../ch11/308-amazon-bedrock.html)
+- [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11/294-openai-models-and-codex-on-amazon-bedrock-are-now-generally.html)
+- [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](../ch11/309-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析
 

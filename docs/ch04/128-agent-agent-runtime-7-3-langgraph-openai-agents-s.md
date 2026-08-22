@@ -116,7 +116,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 **Agent Loop / Context / Tool 系列**(本文 7 职责的前 3 块与这些 entity 强相关):
 
-- vs **[阿里云 Agent 演化四阶段六维度](../ch03/037-agent.html)** — 阿里云是**演化阶段视角**;本文是**职责解剖视角**。两者都讲 Runtime 但切入维度不同
+- vs **[阿里云 Agent 演化四阶段六维度](../ch03/019-agent.html)** — 阿里云是**演化阶段视角**;本文是**职责解剖视角**。两者都讲 Runtime 但切入维度不同
 - vs **[Harness Engineering Framework](../ch05/065-harness-engineering.html)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
 - vs **[Agent Harness 架构设计与生产实践](../ch05/043-agent-harness.html)** — Production 视角更全;本文是入门视角
 
@@ -125,7 +125,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - vs **[Google Agent Executor Distributed Runtime](ch04/473-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/396-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
 - vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/665-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/782-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/299-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[AgentCore Harness](ch04/783-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/299-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -147,7 +147,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 2. 状态管理 + 终止判断 = 运行时"自控"机制,是 Second Curve 的核心
 
-[阿里云 Agent 演化四阶段六维度](../ch03/037-agent.html) 从演化视角揭示 Agent 向自主化演进的路径；本文则从 Runtime 职责视角拆解**自控的两个支点**：状态管理（记录"跑到哪里了"）+ 终止判断（决定"何时停下来"）。没有这两个支点，Agent Loop 只能在无边界状态下运行 — 这正是"第二曲线"设计中最容易被忽视、也最容易出生产事故的环节。
+[阿里云 Agent 演化四阶段六维度](../ch03/019-agent.html) 从演化视角揭示 Agent 向自主化演进的路径；本文则从 Runtime 职责视角拆解**自控的两个支点**：状态管理（记录"跑到哪里了"）+ 终止判断（决定"何时停下来"）。没有这两个支点，Agent Loop 只能在无边界状态下运行 — 这正是"第二曲线"设计中最容易被忽视、也最容易出生产事故的环节。
 
 ### 3. Router 是复杂度的分水岭:简单 Agent 用提示词路由,复杂 Agent 才需要显式 Router
 
@@ -198,13 +198,13 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026.md)
 - [若飞 Fable 5 Runtime Contract](../ch01/475-claude-fable-5.html)
 - [阿里云安全护栏三域](../ch05/109-ai.html)
-- [阿里云 Agent 演化四阶段](../ch03/037-agent.html)
+- [阿里云 Agent 演化四阶段](../ch03/019-agent.html)
 - [Harness Engineering Framework](../ch05/065-harness-engineering.html)
 - [Agent Harness 架构设计与生产实践](../ch05/043-agent-harness.html)
 - [Google Agent Executor Runtime](ch04/473-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/396-anthropic-claude-managed-agents.html)
 - [Amazon Bedrock AgentCore Runtime](ch04/665-amazon-bedrock-agentcore.html)
-- [AgentCore Harness](ch04/782-agentcore-harness.html)
+- [AgentCore Harness](ch04/783-agentcore-harness.html)
 - [纳德拉「Token 资本」论](../ch12/002-token.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 

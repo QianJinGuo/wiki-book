@@ -117,7 +117,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Claude Managed Agents 官方 Harness 平台指南](ch01/396-anthropic-claude-managed-agents.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/634-claude-managed-agents.html)
 - [Multica — 开源 Managed Agents 平台](../ch07/074-multica-managed-agents.html)
-- [claude managed agents official](../ch04/707-claude-managed-agents-official.html)
+- [claude managed agents official](../ch04/708-claude-managed-agents-official.html)
 - [claude managed agents](../ch04/634-claude-managed-agents.html)
 
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/612-anthropic-google-agent-skills.html)
@@ -130,7 +130,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/315-anthropic-agent.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/1605-anthropic.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/033-agent-skills.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1212-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)

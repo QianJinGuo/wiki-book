@@ -32,7 +32,7 @@
 - [Anthropic PM 的 Agentic 工作流](../ch04/580-anthropic-pm-agentic.html) — 管理多个 Agent 的场景
 - [Agentic AI 系统架构](../ch05/106-harness-skill.html) — 五层架构，管理层问题
 - [Skill-RAG：清华 SRA](../ch04/350-skill.html) — Skill 检索增强相关
-- [Agent自我改进六条路](../ch03/037-agent.html) — Skill 积累属于经验沉淀
+- [Agent自我改进六条路](../ch03/019-agent.html) — Skill 积累属于经验沉淀
 - Paperclip — 定位对比（个人AI公司模拟）
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multica-managed-agents-platform.md)
 
@@ -58,7 +58,7 @@ Multica 的核心创新在于将"管理层"从框架层抽离出来，成为独�
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/634-claude-managed-agents.html)
 - [Claude Managed Agents 官方 Harness 平台指南](../ch01/396-anthropic-claude-managed-agents.html)
 - [claude managed agents](../ch04/634-claude-managed-agents.html)
-- [claude managed agents official](../ch04/707-claude-managed-agents-official.html)
+- [claude managed agents official](../ch04/708-claude-managed-agents-official.html)
 
 ---
 

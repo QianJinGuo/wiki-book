@@ -52,7 +52,7 @@ Qwen3.7-Max 的评测策略与传统大模型评测有本质区别。传统 benc
 
 ## 相关实体
 
-- [Qwen AgentWorld](../ch03/037-agent.html)
+- [Qwen AgentWorld](../ch03/019-agent.html)
 - [Qwen Image Flash](ch01/1473-qwen-image-flash-beyond-objective-design-few-step-distill.html)
 - [Alibaba Agentic Cloud](../ch04/440-agentic-cloud.html)
 - [Harness Engineering Survey 2026](../ch05/065-harness-engineering.html)

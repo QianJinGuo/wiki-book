@@ -60,7 +60,7 @@ The 62.5-minute rule presumes you will actually make another request against tha
 - [Harness 提示缓存](../ch05/077-harness.html)
 - [Claude Opus 4.7](ch01/1212-claude.html)
 - [Harness token 成本对比](../ch03/085-claude-code.html)
-- [上下文压缩](../ch03/037-agent.html)
+- [上下文压缩](../ch03/019-agent.html)
 
 ---
 

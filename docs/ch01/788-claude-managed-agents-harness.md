@@ -84,7 +84,7 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/634-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/396-anthropic-claude-managed-agents.html)
 - [Claude Managed Agents 开发者指南](../ch04/634-claude-managed-agents.html)
-- [claude managed agents official](../ch04/707-claude-managed-agents-official.html)
+- [claude managed agents official](../ch04/708-claude-managed-agents-official.html)
 
 - [obsidian claude code integration guide](../ch09/156-obsidian-claude-code-integration-guide.html)
 - [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/505-anthropic-claude-agent.html)

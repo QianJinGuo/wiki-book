@@ -18,7 +18,7 @@ dig.bench 是一个以**科学发现**为目标的智能体基准：70 个交互
 
 ## 意义
 
-dig.bench 把「智能体实验/发现能力」从通用 QA 基准中独立出来，与 [AutoResearch](ch05/109-ai.html) 同属 AI 科学发现评估前沿。其「基础模型 vs Agentic Harness」双层测法为 [Agent 评测](../ch03/037-agent.html) 提供了实验驱动的基准范式。
+dig.bench 把「智能体实验/发现能力」从通用 QA 基准中独立出来，与 [AutoResearch](ch05/109-ai.html) 同属 AI 科学发现评估前沿。其「基础模型 vs Agentic Harness」双层测法为 [Agent 评测](../ch03/019-agent.html) 提供了实验驱动的基准范式。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/digbench-scientific-discovery-text-games-agent-benchmark.md)
 

@@ -23,7 +23,7 @@
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1398-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](ch11/011-cuda.html)
 - [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](../ch01/1428-nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.html)
-- [miro-amazon-bedrock-bug-routing](ch11/197-miro-amazon-bedrock-bug.html)
+- [miro-amazon-bedrock-bug-routing](ch11/198-miro-amazon-bedrock-bug.html)
 
 ## 深度分析
 

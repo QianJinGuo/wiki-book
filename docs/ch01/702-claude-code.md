@@ -75,14 +75,14 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 - [AI Native 时代 —— 研发组织何去何从](../ch05/022-ai-native.html)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](../ch03/099-hermes-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/638-claude-code-harness-deep-understanding.html)
-- [AutoResearch：多 Agent 自动化软件开发](../ch03/037-agent.html)
+- [AutoResearch：多 Agent 自动化软件开发](../ch03/019-agent.html)
 - [Agent Harness 架构](../ch05/043-agent-harness.html)
 - [Claude Code 源码核心机制详解](../ch03/085-claude-code.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
-- [Agent 原理、架构与工程实践](../ch03/037-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

@@ -101,8 +101,8 @@ AWS 提供的托管安全要求（行业标准基线）+ 用户自定义安全�
 - **渐进集成顺序：GitHub 代码审查 → 安全要求配置 → 设计评审 → 渗透测试**：每个阶段独立验证后再进入下一阶段，避免多变量同时变更
 
 ## 相关实体
-- [habby 游戏借助 aws devops agent 实现智能运维最佳实践](../ch11/295-aws-devops-agent.html)
-- [agent-evalkit：aws 开源 cli agent 评测工具包](../ch03/037-agent.html)
+- [habby 游戏借助 aws devops agent 实现智能运维最佳实践](../ch11/296-aws-devops-agent.html)
+- [agent-evalkit：aws 开源 cli agent 评测工具包](../ch03/019-agent.html)
 - [aws sagemaker ai agent guided workflows finetuning](ch04/515-aws-sagemaker-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-security-agent-构建应用安全闭环从代码提交到漏洞修复的自动化之路.md)

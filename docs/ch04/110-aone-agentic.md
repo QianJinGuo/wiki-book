@@ -162,7 +162,7 @@ ChangeSet 是一个存在于git版本库中的，把每次变更的过程都记�
 - [Ai 编程的下一场架构迁移从代码检索到上下文操作](../ch05/109-ai.html)
 - [Ai Era Git Version Control Agentic Coding Practices](ch04/298-agentic.html)
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/055-coding-agent.html)
-- [Alphaevolve Deepmind Discovery Agent](../ch03/037-agent.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-aone-agentic-rd-mode-xiangbangyu.md)
 

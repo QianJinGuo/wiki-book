@@ -34,7 +34,7 @@ RoadmapBench 填补了从 SWE-Bench（单 bug fix）到 [Codex 六小时目标�
 
 ### 模型能力的差异化分析
 
-13 个模型的评测结果显示，模型性能并非简单地随参数量增长。Claude-Opus-4.7 的 39.1% 与最弱模型的 5.2% 之间差距悬殊，暗示长周期任务对模型的指令遵循、长上下文理解和错误恢复能力提出了复合要求。 这与 [CMU PACE 代理评估](../ch03/037-agent.html) 中揭示的能力指纹概念相互印证——不同基准测试对模型能力维度的需求分布不同。
+13 个模型的评测结果显示，模型性能并非简单地随参数量增长。Claude-Opus-4.7 的 39.1% 与最弱模型的 5.2% 之间差距悬殊，暗示长周期任务对模型的指令遵循、长上下文理解和错误恢复能力提出了复合要求。 这与 [CMU PACE 代理评估](../ch03/019-agent.html) 中揭示的能力指纹概念相互印证——不同基准测试对模型能力维度的需求分布不同。
 
 ### 对 Harness 工程设计的启示
 
@@ -46,7 +46,7 @@ RoadmapBench 的结果表明，单纯提升模型能力不足以解决长周期�
 
 2. **长周期任务需要 Harness 层支持**：在评估或部署长周期 Agent 时，确保 Harness 提供任务持久化、中间状态保存和断点续传能力。纯模型能力无法弥补架构短板。
 
-3. **关注能力指纹而非单一分数**：结合 [CMU PACE](../ch03/037-agent.html) 等代理评估方法，分析模型在长周期任务上的具体短板——是指令遵循、规划还是错误恢复？针对性地设计 prompt 策略。
+3. **关注能力指纹而非单一分数**：结合 [CMU PACE](../ch03/019-agent.html) 等代理评估方法，分析模型在长周期任务上的具体短板——是指令遵循、规划还是错误恢复？针对性地设计 prompt 策略。
 
 4. **渐进式任务分解是可行路径**：将 RoadmapBench 的 51 文件任务分解为按依赖顺序排列的子任务序列，每个子任务有独立验证。这比"一次性完成所有修改"的策略更可靠。
 
@@ -57,7 +57,7 @@ RoadmapBench 的结果表明，单纯提升模型能力不足以解决长周期�
 - [Agent Harness 架构](../ch05/043-agent-harness.html) — 生产级 Agent 运行基础设施的设计原则
 - [Codex 六小时目标运行](../ch09/068-codex-goal-six-hour-run.html) — 长链 Agent 执行的实际案例
 - [Agent Harness 上下文管理](../ch05/043-agent-harness.html) — 长周期任务中的上下文窗口管理技术
-- [CMU PACE 代理评估](../ch03/037-agent.html) — 低成本 Agent 能力评估方法
+- [CMU PACE 代理评估](../ch03/019-agent.html) — 低成本 Agent 能力评估方法
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 分层 Harness 工程方法论
 - SWE-Bench Verified — 当前主流的单 bug fix Agent 基准
 

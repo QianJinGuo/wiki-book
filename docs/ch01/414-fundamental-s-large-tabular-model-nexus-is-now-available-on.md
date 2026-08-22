@@ -20,7 +20,7 @@ type: entity
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
 ## 相关实体
-- [Openai Models Codex Amazon Bedrock Ga](../ch11/308-amazon-bedrock.html)
+- [Openai Models Codex Amazon Bedrock Ga](../ch11/309-amazon-bedrock.html)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/986-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/901-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)

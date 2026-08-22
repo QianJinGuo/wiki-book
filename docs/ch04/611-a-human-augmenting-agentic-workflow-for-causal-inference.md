@@ -47,7 +47,7 @@ AutoML 自动化的是模型选择和超参数调优，而 OCI-Agent 自动化�
 - [AgentScope 企业级分布式 Harness](../ch05/077-harness.html)
 - [Netflix VMAF](../ch01/358-1.html)
 - [Netflix Switchboard](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
-- [Netflix ML 平台](../ch11/298-democratizing-machine-learning-at-netflix-building-the-mode.html)
+- [Netflix ML 平台](../ch11/299-democratizing-machine-learning-at-netflix-building-the-mode.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/human-augmenting-agentic-workflow-causal-inference-netflix.md)
 

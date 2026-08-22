@@ -144,7 +144,7 @@ OpenAgents 的 Launch Partners 包括 Z.AI（智谱）、FastGPT、MiniMax 等�
 - [Hermes Agent V014 Architecture Shugex](ch03/099-hermes-agent.html)
 - [Building Web Search Enabled Agents With Strands And Exa](../ch04/574-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Claude Code Large Codebase Harness Configuration](ch03/085-claude-code.html)
-- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch03/037-agent.html)
+- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](ch03/019-agent.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openagents-workspace-multi-agent-collaboration-itech.md)
 
 ---

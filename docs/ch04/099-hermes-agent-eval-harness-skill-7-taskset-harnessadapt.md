@@ -257,11 +257,11 @@ regression_failures | rejection_reason | review_notes
 | [Skillopt Microsoft Train Skill Hyman'S Blog](../ch05/033-skillopt.html) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
 | [Hermes Agent Skill Crossover Optimization](../ch01/521-hermes-agent-skill.html) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
 | [Skill Self Evolution Three Approaches](ch04/350-skill.html) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
-| [Agent Self Improvement Six Mechanisms](../ch03/037-agent.html) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
+| [Agent Self Improvement Six Mechanisms](../ch03/019-agent.html) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
 | [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/109-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
 | [Darwin Skill 2 Huashu](ch04/350-skill.html) | **Darwin Skill 2** | Darwin Skill 进化 |
 | [Embabel](../ch07/025-embabel.html) | **Embabel** | Embabel 自进化框架 |
-| [Pith Train Agent Native Moe Training Framework](../ch03/037-agent.html) | **Pith 训练框架** | Agent 原生 MoE 训练 |
+| [Pith Train Agent Native Moe Training Framework](../ch03/019-agent.html) | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](../ch03/099-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
 | [Hermes 9 Module Architecture](../ch01/291-hermes.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/065-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |

@@ -29,9 +29,9 @@
 5. **始终保持数据安全意识**：在使用任何调用云端模型的 Agent 系统时，应默认将请求内容视为可能被服务商访问的数据。了解数据流的完整路径，评估敏感信息的处理方式，是安全使用 AI 工具的基本素养。对于企业环境，还需考虑隔离方案和权限控制。
 
 ## 相关实体
-- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/037-agent.html)
+- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/019-agent.html)
 - [Skill Rag Tsinghua Sra](../ch04/350-skill.html)
-- [Doubao Seed 2 Lite Agent Multimodal](../ch03/037-agent.html)
+- [Doubao Seed 2 Lite Agent Multimodal](../ch03/019-agent.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/085-claude-code.html)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/634-claude-managed-agents.html)
 

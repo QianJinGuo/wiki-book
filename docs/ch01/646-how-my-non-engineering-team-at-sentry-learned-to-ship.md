@@ -67,7 +67,7 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)

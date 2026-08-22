@@ -9,8 +9,8 @@
 ## 相关实体
 
 - [llmreaper - dom based ai conversation exfiltration via brows](../ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
-- [review agent：后台复盘 agent 如何判断什么值得保存](../ch03/037-agent.html)
-- [不用再学ai了！生成结果包稳的agent来了](../ch03/037-agent.html)
+- [review agent：后台复盘 agent 如何判断什么值得保存](../ch03/019-agent.html)
+- [不用再学ai了！生成结果包稳的agent来了](../ch03/019-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -44,11 +44,11 @@
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/253-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/824-karpathy-vibe-coding-agentic-engineering.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

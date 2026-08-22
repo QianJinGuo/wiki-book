@@ -111,7 +111,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - **审计层**：所有动作的完整记录
 - **责任层**：失败的归属与决策追溯
 
-这些边界问题在 [Agent 记忆系统工程实践](../ch03/037-agent.html) 中被称为"过程资产"——Agent 系统不仅要完成任务，还要留下可审查、可重放、可学习的中间表示。
+这些边界问题在 [Agent 记忆系统工程实践](../ch03/019-agent.html) 中被称为"过程资产"——Agent 系统不仅要完成任务，还要留下可审查、可重放、可学习的中间表示。
 
 ### 7. 与 Karpathy Software 3.0 的呼应
 
@@ -177,7 +177,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - [Claude Code Harness 深度理解](ch01/638-claude-code-harness-deep-understanding.html)
 - [深入理解 Claude Code Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [Agent 记忆系统工程实践](../ch03/037-agent.html)
+- [Agent 记忆系统工程实践](../ch03/019-agent.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Anthropic 内部实践](ch01/358-1.html)
 - [DeepSeek V4 Flash Pro](ch01/1305-deepseek-v4-flash-pro.html)

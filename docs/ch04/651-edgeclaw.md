@@ -17,7 +17,7 @@ GitHub: https://github.com/Openbmb/edgeclaw
 - [Aliyun Agentrun 2Line Integration](ch04/473-agentrun.html)
 - [Computer Use 45X More Expensive Than Structured Apis](ch04/347-computer-use-45x-more-expensive-than-structured-apis.html)
 - [2 Year 25 Ai Projects Summary](../ch01/1353-5-ai.html)
-- [Agent 从能用到管好中间差了什么](../ch03/037-agent.html)
+- [Agent 从能用到管好中间差了什么](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/edgeclaw-bemit-lobster.md)
 

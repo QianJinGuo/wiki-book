@@ -18,7 +18,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 
-- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/037-agent.html)
+- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/019-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
 ## 深度分析

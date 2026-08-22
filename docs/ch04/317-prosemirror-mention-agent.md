@@ -139,7 +139,7 @@ Decoration.inline(range.from, range.to, {
 
 ## 相关对照
 - [Impeccable](../ch05/001-impeccable.html) —— harness 之上"设计能力层"
-- [vivo AI 导购在官网落地实践](../ch03/037-agent.html) —— 同作者团队
+- [vivo AI 导购在官网落地实践](../ch03/019-agent.html) —— 同作者团队
 - [Agent Skill 编写指南](ch04/614-agent-skill.html) —— Skill 格式 + 渐进式披露
 - [Harness 成为新后端](../ch05/077-harness.html)
 

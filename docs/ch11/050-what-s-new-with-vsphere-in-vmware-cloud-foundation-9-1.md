@@ -198,10 +198,10 @@ vMotion 加密一直是 CPU 开销的大户——即便使用 AES-NI，8 个并�
 5. **Non-Disruptive Evacuation 应作为 DRS 维护的标准模式**：标准 Evacuation 只要兼容就迁移，可能在目标主机上制造新的资源竞争；Non-Disruptive 模式确保迁移后 VM 的资源需求得到无争用满足。对于金融交易、医疗系统等对性能抖动敏感的环境，应将 Non-Disruptive 设为默认。
 
 ## 相关实体
-- [Cloud Agent Infrastructure Creaoai State Code Credential Isolation 20260606](../ch03/037-agent.html)
+- [Cloud Agent Infrastructure Creaoai State Code Credential Isolation 20260606](../ch03/019-agent.html)
 - [Llm Raiders How To Repel](../ch01/1147-llm.html)
 - [Amazon Bedrock Api Security Guide](../ch12/036-amazon-bedrock-api.html)
-- [Aderant Transforms Cloud Operations With Amazon Quick](ch11/222-aderant-transforms-cloud-operations-with-amazon-quick.html)
+- [Aderant Transforms Cloud Operations With Amazon Quick](ch11/223-aderant-transforms-cloud-operations-with-amazon-quick.html)
 - [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch07/001-mcp.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/whats-new-with-vsphere-9-1.md)

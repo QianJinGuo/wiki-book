@@ -268,8 +268,8 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 ## 相关概念
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架的核心概念
 - [Agent Architecture & Harness](../ch05/077-harness.html) — Agent 架构与 Harness 的关系
-- [Open-Claw Tool 消息总线](../ch03/037-agent.html) — 子 Agent 管理架构实践
-- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/037-agent.html)
+- [Open-Claw Tool 消息总线](../ch03/019-agent.html) — 子 Agent 管理架构实践
+- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/019-agent.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1605-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
@@ -287,11 +287,11 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/099-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/077-harness.html)
-- [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
+- [你不知道的 Agent：原理、架构与工程实践](../ch03/019-agent.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/473-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/065-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/253-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/254-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/065-harness-engineering.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/077-harness.html)- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/077-harness.html)
 

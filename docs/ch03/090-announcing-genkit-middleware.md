@@ -106,7 +106,7 @@ Middleware 链会增加每次调用的延迟：
 ## 相关实体
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](../ch04/010-announcing-genkit-middleware-intercept-extend-and-harden.html)
 - [Pi Mono](ch03/078-pi-mono-ai-agent-openclaw.html)
-- [Microsoft Agent Framework Structured Output](ch03/037-agent.html)
+- [Microsoft Agent Framework Structured Output](ch03/019-agent.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/077-harness.html)
 - [Skillsui](ch03/110-skillsui.html)
 

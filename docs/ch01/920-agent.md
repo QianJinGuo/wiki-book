@@ -20,7 +20,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/你不知道的-agent原理架构与工程实践.md)
 
 ## 相关实体
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/037-agent.html)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/019-agent.html)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/099-hermes-agent.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/077-harness.html)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/065-harness-engineering.html)
@@ -34,7 +34,7 @@
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/065-harness-engineering.html)
 
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/037-agent.html)
+- [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/019-agent.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](ch01/1605-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)

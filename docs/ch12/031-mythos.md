@@ -40,7 +40,7 @@ Mythos带来的最根本冲击不是某个具体能力的提升，而是安全�
 2. **模型交互的不可穷举性**：相同的提示词和业务数据输入，模型输出不完全确定——基于"确定规则"的边界无法覆盖无限的自然语言输入空间
 3. **治理对象更加复杂**：边界能回答"谁能访问什么"，却回答不了"这个被授权的智能体此刻的行为是否还在任务意图范围内"
 
-这三点共同指向一个结论：**AI安全需要从"访问控制"升级为"意图治理"**。传统的零信任解决的是"人→系统"的信任问题，AI原生场景下需要解决的是"AI访问全链路"的信任问题——包括人→Agent、Agent→Agent、Agent→数据、Agent→工具的多维信任关系。这与[Agent后端架构](../ch03/037-agent.html)中讨论的"上下文感知权限系统"理念一致。
+这三点共同指向一个结论：**AI安全需要从"访问控制"升级为"意图治理"**。传统的零信任解决的是"人→系统"的信任问题，AI原生场景下需要解决的是"AI访问全链路"的信任问题——包括人→Agent、Agent→Agent、Agent→数据、Agent→工具的多维信任关系。这与[Agent后端架构](../ch03/019-agent.html)中讨论的"上下文感知权限系统"理念一致。
 
 ### 智能体身份全生命周期管理
 
@@ -83,7 +83,7 @@ Mythos带来的最根本冲击不是某个具体能力的提升，而是安全�
 
 - [Agent系统生产化部署](../ch05/043-agent-harness.html) — 响应速度作为系统设计的第一性原理
 - [Agent团队协作](../ch01/1212-claude.html) — 多Agent协同模式
-- [Agent后端架构](../ch03/037-agent.html) — 上下文感知权限系统
+- [Agent后端架构](../ch03/019-agent.html) — 上下文感知权限系统
 - [Alitech标准化实践](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md) — 治理优先的系统设计
 - [注意力坍缩](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — 信息边界管理
 - [AI原生企业转型](../ch05/022-ai-native.html) — 从执行者到系统设计者的角色转变

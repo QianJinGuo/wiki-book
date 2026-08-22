@@ -37,7 +37,7 @@
 - [GenRec（Netflix）](../ch01/1147-llm.html) — 生成式推荐对照
 - [Discretizing Reward Models](../ch01/367-discretizing-reward-models.html) — 奖励模型离散化
 - [美团 LoHOSearch](../ch04/673-lohosearch.html) — Agent 搜索评测
-- [美团 Turing Agent 评估](../ch03/037-agent.html) — 同团队评估方法论
+- [美团 Turing Agent 评估](../ch03/019-agent.html) — 同团队评估方法论
 - [Agent Harness 上下文管理](ch05/043-agent-harness.html) — Harness 工程实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kdd26-美团学术论文精选及kdd-cup26-dataagents赛道冠军思路解读.md)

@@ -21,7 +21,7 @@
 
 ---
 
-- [stack overflow for agents — ephemeral intelligence gap 框架与 a](../ch03/037-agent.html)
+- [stack overflow for agents — ephemeral intelligence gap 框架与 a](../ch03/019-agent.html)
 
 ## 案例概述
 

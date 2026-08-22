@@ -184,7 +184,7 @@
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/737-codex.html)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/085-claude-code.html)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05/065-harness-engineering.html)
-- A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/037-agent.html)
+- A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/019-agent.html)
 - 本体论 / 知识图谱 — [Rag Vector Knowledge Graph Ontology](../ch01/1286-rag.html)
 - 多智能体研究系统 — [Anthropic Multi Agent Research System](ch04/676-anthropic-multi-agent-research-system.html)
 - Palantir 企业软件 — [Saastr 20Vc Most Aggressive Quarter American Capitalism Palantir](../ch01/1130-20.html)

@@ -46,7 +46,7 @@ Granola 的产品定位揭示了一个垂直场景 AI 原生应用的机会窗�
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](../ch01/088-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Anthropic_Cache_Tokenomics](../ch01/1605-anthropic.html)
 - [Marc Andreessen On Builder Culture In The Age Of Ai The A16Z Show](../ch01/069-marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a1.html)
-- [Turn Repeated Instructions Into Reusable Skills In Lovable L](ch03/020-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
+- [Turn Repeated Instructions Into Reusable Skills In Lovable L](ch03/021-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/058-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/granola-the-ai-notepad-for-backtoback-meetings.md)

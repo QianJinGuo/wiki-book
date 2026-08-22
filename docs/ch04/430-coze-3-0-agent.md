@@ -91,7 +91,7 @@ coze-bridge 解决了一个根本矛盾：云端 Agent 擅长对话推理但无�
 5. **技能包复用能显著降低 Agent 配置成本**：自媒体、金融、法律、科研等行业技能包可以一键加载到任意 Agent。建议将团队常用的 Prompt 模板沉淀为技能包，减少每次新建 Agent 的重复配置工作。
 
 ## 相关实体
-- [Coze 3 Multimagent Team Orchestration Wangheige](../ch03/037-agent.html)
+- [Coze 3 Multimagent Team Orchestration Wangheige](../ch03/019-agent.html)
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/624-agent-orchestration.html)
 - [Agent Orchestration](ch04/624-agent-orchestration.html)
 - [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/1000-openai.html)

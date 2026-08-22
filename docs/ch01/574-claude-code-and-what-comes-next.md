@@ -38,7 +38,7 @@ METR（Model Evaluation and Threat Research）跟踪数据显示：AI 能以 50%
 
 这本质上是**外化长期记忆到文件系统**。类比人类工作：边工作边记工作日志，跨日工作先看昨日日志。
 
-这种"agent 即文件系统用户"的模式，与 [agent 记忆系统工程实践](../ch03/037-agent.html) 中"分层记忆 + 检索增强"思路殊途同归。
+这种"agent 即文件系统用户"的模式，与 [agent 记忆系统工程实践](../ch03/019-agent.html) 中"分层记忆 + 检索增强"思路殊途同归。
 
 ### 3. Skills——按需加载的指令 + 工具
 
@@ -113,11 +113,11 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/490-your-first-ai-agent-should-do-one-thing-badly.html)
 - [The Bitter Lesson Versus The Garbage Can](../ch04/408-the-bitter-lesson-versus-the-garbage-can.html)
 - [Management As Ai Superpower](ch01/679-management-as-ai-superpower.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)

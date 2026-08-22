@@ -51,7 +51,7 @@ Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工�
 
 ### 与相邻观点的张力
 
-- 与 [Karpathy 的 agentic engineering 转向](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)一致：人类角色在变化
+- 与 [Karpathy 的 agentic engineering 转向](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)一致：人类角色在变化
 - 与 [管理即 AI 超能力](ch01/679-management-as-ai-superpower.html)互补：Mollick 强调"协商"而非"管理"，反映写作与商业的不同权力结构
 - 与 [Claude Code 现状评估](ch01/574-claude-code-and-what-comes-next.html)同源：能力跃迁带来新工作模式
 
@@ -66,12 +66,12 @@ Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [The Bitter Lesson Versus The Garbage Can](../ch04/408-the-bitter-lesson-versus-the-garbage-can.html)
 - [Claude Code And What Comes Next](ch01/574-claude-code-and-what-comes-next.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/490-your-first-ai-agent-should-do-one-thing-badly.html)
 - [Management As Ai Superpower](ch01/679-management-as-ai-superpower.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/037-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)

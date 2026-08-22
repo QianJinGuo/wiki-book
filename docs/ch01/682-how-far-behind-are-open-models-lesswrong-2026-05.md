@@ -149,7 +149,7 @@ Public benchmark 由于数据公开且分数透明，开源社区可以针对性
 - [Mollick Ai 32 Otters Benchmark](ch01/771-mollick-ai-32.html)
 - [Some Ideas For What Comes Next May 2026](ch01/1620-some-ideas-for-what-comes-next-may-2026-interconnects.html)
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/037-agent.html)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/019-agent.html)
 - [Langsmith Evaluation Concepts](../ch03/141-langsmith-evaluation-concepts.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-far-behind-are-open-models-2026.md)

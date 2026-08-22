@@ -38,7 +38,7 @@ Agent应用涉及敏感数据处理时，隔离性和安全策略至关重要。
 
 ## 相关实体
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/665-amazon-bedrock-agentcore.html)
-- [三剑合璧Quick Suite + Agent Core + Kiro联动实践：海外物流报价助手实战 | 亚马逊AWS官方博客](../ch03/037-agent.html)
+- [三剑合璧Quick Suite + Agent Core + Kiro联动实践：海外物流报价助手实战 | 亚马逊AWS官方博客](../ch03/019-agent.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)

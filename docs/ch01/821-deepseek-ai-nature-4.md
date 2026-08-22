@@ -73,7 +73,7 @@
 - [AReaL 2.0](../ch04/314-agentic-rl.html) — 在线强化学习基础设施，与推理数据生成互补
 - [AI自我改进：从Harness开始](../ch05/077-harness.html) — Agent通过运行轨迹持续优化的理念
 - [Harness Engineering](../ch05/065-harness-engineering.html) — Agent工程治理的系统方法论
-- [Agent落地真相](../ch03/037-agent.html) — Agent从演示到投产的核心挑战
+- [Agent落地真相](../ch03/019-agent.html) — Agent从演示到投产的核心挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek之后中国ai自己出题杀进nature通讯全球仅4家.md)
 

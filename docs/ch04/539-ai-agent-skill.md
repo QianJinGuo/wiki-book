@@ -50,7 +50,7 @@ K8s 场景采用 DaemonSet 在集群节点运行 Agent Pod，Deployment 打上�
 
 ## 相关实体
 
-- [CLI Agent 时代](../ch03/037-agent.html)
+- [CLI Agent 时代](../ch03/019-agent.html)
 - [Harness Engineering](../ch05/065-harness-engineering.html)
 - [一行命令让 AI 自己找技能](../ch05/109-ai.html)
 - [Claude Code 团队部署与 Agent Harness](../ch05/043-agent-harness.html)

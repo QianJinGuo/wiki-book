@@ -137,7 +137,7 @@
 
 ## 与已有 wiki 实体的关系
 
-### vs [晓斌 Agent-Oriented Infra](../ch03/037-agent.html)
+### vs [晓斌 Agent-Oriented Infra](../ch03/019-agent.html)
 - 晓斌 = "harness = 根据角色、任务、权限范围自动组装的完整工作环境"（4 层 Comprehensible/Operable/Observable/Traceable）
 - MAC = "**Skills + Hooks 两层叠加**"——更具体、更轻量、更聚焦"完全委托"的信任问题
 - 共同点：都强调 harness 决定 agent 自主空间
@@ -162,7 +162,7 @@
 - MAC = "**Skills 概率层 + Hooks 确定性层**"——harness 设计的**关键分层原则**
 - 共同点：都把 harness 视为多层叠加
 
-### vs [Rein](../ch03/037-agent.html)
+### vs [Rein](../ch03/019-agent.html)
 - Rein = 4 模块 + 5 类型边界（**单 agent 内部**架构）
 - MAC = Skills + Hooks（**多 agent 协作 + 跨 session** 框架）
 - 共同点：都强调"边界"是工程化关键
@@ -188,12 +188,12 @@
 - 实际使用效果（0-20% 提升到多少）未给出数据
 
 ## 相关对照
-- [晓斌 Agent-Oriented Infra](../ch03/037-agent.html) —— 哲学框架
+- [晓斌 Agent-Oriented Infra](../ch03/019-agent.html) —— 哲学框架
 - [wow-harness v3](ch05/077-harness.html) —— 跨 session 治理
 - [高德 AI-Native 生产线](ch05/022-ai-native.html) —— 企业级 R&D 生产线
 - [Claude Code Dynamic Workflows](../ch09/107-claude-code-dynamic-workflows.html) —— 动态工作流
 - [Agent Harness 架构](ch05/043-agent-harness.html) —— 7 层模型
-- [Rein](../ch03/037-agent.html) —— 单 agent 架构
+- [Rein](../ch03/019-agent.html) —— 单 agent 架构
 - [Kimi Work](../ch01/737-codex.html) —— 本地 Agent
 
 ## 深度分析

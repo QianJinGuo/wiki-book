@@ -324,7 +324,7 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 ### 事件流架构的可观测性设计
 
-将所有 Middleware 的输入输出抽象为统一事件流，是实现完整可观测性的关键。Kafka/Pulsar 作为事件总线，支持实时追踪、回放分析和指标聚合三个层次的观测需求。[Loop Engineering](../ch05/006-loop-engineering.html) 中也强调了"过程可观测性"对长程 Agent 任务的重要性——Agent 的决策过程往往是隐式的，只有记录完整的事件轨迹才能真正做到事后分析和问题定位。
+将所有 Middleware 的输入输出抽象为统一事件流，是实现完整可观测性的关键。Kafka/Pulsar 作为事件总线，支持实时追踪、回放分析和指标聚合三个层次的观测需求。[Loop Engineering](../ch05/122-loop-engineering.html) 中也强调了"过程可观测性"对长程 Agent 任务的重要性——Agent 的决策过程往往是隐式的，只有记录完整的事件轨迹才能真正做到事后分析和问题定位。
 
 ### Open SWE 与 AgentScope 的殊途同归
 
@@ -335,15 +335,15 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 ## 相关实体
 
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/042-agent-harness.html)
-- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/084-claude-code.html)
-- [Factory Mission Multi Agent Architecture](../ch01/1471-factory-mission-multi-agent-architecture.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/043-agent-harness.html)
+- [Subagents 详解Claude Code 如何避免上下文污染](../ch03/085-claude-code.html)
+- [Factory Mission Multi Agent Architecture](../ch01/1474-factory-mission-multi-agent-architecture.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
-- [Iii Dev Worker Trigger Function](../ch01/381-iii-dev-worker.html)
+- [Iii Dev Worker Trigger Function](../ch01/380-iii-dev-worker.html)
 - [AgentScope Java Harness Framework 42KB](../ch05/077-harness.html) — 同 AgentScope Java 2.0 早期综述
-- [AgentScope Builder](../ch04/794-self-evolving-agent.html) — 同生态自进化视角
-- [Loop Engineering](../ch05/006-loop-engineering.html) — 同样强调"组织级流程约束"
-- [MXC Execution Containers](../ch05/108-ai.html) — 类似沙箱机制对比
+- [AgentScope Builder](../ch04/802-self-evolving-agent.html) — 同生态自进化视角
+- [Loop Engineering](../ch05/122-loop-engineering.html) — 同样强调"组织级流程约束"
+- [MXC Execution Containers](../ch05/109-ai.html) — 类似沙箱机制对比
 - [Agent Harness Engineering Survey](../ch05/065-harness-engineering.html) — Harness 行业全景
 
 ## 实践启示
@@ -366,7 +366,7 @@ Middleware 链的执行顺序直接影响安全性和正确性。Auth Middleware
 
 ### 5. Workspace 应作为代码仓库的一部分进行版本化管理
 
-工作区目录（AGENTS.md、MEMORY.md、skills/、subagents/）应当与应用程序代码一起存储在同一个 Git 仓库中，进行版本化管理。这样做有两个好处：团队规范以文件形式生效（commit-style skill），且 CI 可以验证 Workspace 配置的正确性。参见 [Loop Engineering](../ch05/006-loop-engineering.html) 对"团队规范即代码"理念的强调。
+工作区目录（AGENTS.md、MEMORY.md、skills/、subagents/）应当与应用程序代码一起存储在同一个 Git 仓库中，进行版本化管理。这样做有两个好处：团队规范以文件形式生效（commit-style skill），且 CI 可以验证 Workspace 配置的正确性。参见 [Loop Engineering](../ch05/122-loop-engineering.html) 对"团队规范即代码"理念的强调。
 
 ---
 

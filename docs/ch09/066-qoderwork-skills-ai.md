@@ -55,7 +55,7 @@
 | 复用性 | 每次从头对话 | 一次编写多次调用 |
 | 团队协作 | 个人经验 | 团队知识沉淀 |
 
-这一演进映射了AI工程化从"让AI更聪明"到"让系统更可控"的范式转变——不是追求模型本身能力的提升，而是通过工程手段将确定性注入概率性系统。这与[Agent落地真相](../ch03/037-agent.html)中"从跑通到投产"的鸿沟是同一枚硬币的两面。
+这一演进映射了AI工程化从"让AI更聪明"到"让系统更可控"的范式转变——不是追求模型本身能力的提升，而是通过工程手段将确定性注入概率性系统。这与[Agent落地真相](../ch03/019-agent.html)中"从跑通到投产"的鸿沟是同一枚硬币的两面。
 
 ### 4. 测试驱动Skill开发的70-80%法则
 
@@ -93,7 +93,7 @@ Agent不擅长的事情：把控商业数据分析流程、理解隐性业务约
 
 - [Harness Engineering探索之旅](../ch05/065-harness-engineering.html)
 - [Agent配置模型](../ch04/350-skill.html)
-- [Agent落地真相](../ch03/037-agent.html)
+- [Agent落地真相](../ch03/019-agent.html)
 - [淘宝数字人Agentic架构](../ch04/298-agentic.html)
 - [阿里巴巴NL2SQL Harness](../ch05/065-harness-engineering.html)
 - [AI友好后端标准](../ch05/023-ai-friendly.html)

@@ -55,7 +55,7 @@ source_published: 2026-03-11
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/254-openclaw.html)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/109-ai.html)
 - [Hermes Agent V014 Architecture Shugex](../ch03/099-hermes-agent.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)

@@ -109,7 +109,7 @@
 - [AI Coding Agent Token 成本控制五层模型](../ch09/055-coding-agent.html) — Token成本工程化的五层优化模型，侧重AI Coding场景
 - [AI Gateways vs MCP Gateways](ch11/090-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI网关在推理路由与成本控制中的定位分析
 - [LLM 缓存原理与实践](../ch01/1147-llm.html) — 语义缓存/Prefix Caching的技术原理深化
-- [State of Routing in Model Serving](ch11/204-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
+- [State of Routing in Model Serving](ch11/205-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
 
 ---
 

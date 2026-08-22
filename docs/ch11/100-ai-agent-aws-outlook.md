@@ -83,7 +83,7 @@ Skill 层用 Markdown 描述业务流程，其核心设计意图是在工程层�
 
 ### 2. MCP 协议作为企业级异构系统接入标准的价值
 
-四层架构中 MCP 工具层承担了隔离 Agent 运行时与底层企业 API 差异的关键职责。Microsoft Graph、OneDrive、ServiceNow、Jira、企业 ERP 系统各有不同的 API 形态和认证机制，但 MCP 协议将它们收敛到统一的工具发现与调用接口。这意味着新增一个外部系统集成只需要开发一个新的 MCP Server，原有的 Skill 文件和 Agent 运行时无需改动。在 [Aderant Transforms Cloud Operations With Amazon Quick](ch11/222-aderant-transforms-cloud-operations-with-amazon-quick.html) 中已记录类似模式：MCP 作为连接 AI Agent 与企业数据孤岛的核心中间层，将系统打通成本从月级降至周级。该架构的可扩展性验证了 MCP 协议在企业级 Agent 部署中的标准化价值。
+四层架构中 MCP 工具层承担了隔离 Agent 运行时与底层企业 API 差异的关键职责。Microsoft Graph、OneDrive、ServiceNow、Jira、企业 ERP 系统各有不同的 API 形态和认证机制，但 MCP 协议将它们收敛到统一的工具发现与调用接口。这意味着新增一个外部系统集成只需要开发一个新的 MCP Server，原有的 Skill 文件和 Agent 运行时无需改动。在 [Aderant Transforms Cloud Operations With Amazon Quick](ch11/223-aderant-transforms-cloud-operations-with-amazon-quick.html) 中已记录类似模式：MCP 作为连接 AI Agent 与企业数据孤岛的核心中间层，将系统打通成本从月级降至周级。该架构的可扩展性验证了 MCP 协议在企业级 Agent 部署中的标准化价值。
 
 ### 3. 模型可替换性作为中国区合规约束下的关键设计选择
 

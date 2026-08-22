@@ -64,7 +64,7 @@ TDD 铁律（先写失败测试再写代码）作为 skill 文件规则自动执
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/085-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
 - [你不知道的 Agent 原理架构与工程实践](../ch04/443-agent-principle-architecture-engineering-practice.html)
-- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/037-agent.html)
+- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/019-agent.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 
 ## 深度分析

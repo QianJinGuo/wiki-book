@@ -106,7 +106,7 @@ LiteTopic 定位为消息基础设施，与上层 Agent 框架的集成主要有
 - [Rocketmq Litetopic Ai Agent Messaging](../ch01/622-rocketmq-litetopic.html)
 - [Wow Harness V3 Governance Protocol](../ch05/077-harness.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
-- [Ath Agent Trust Handshake Protocol](../ch03/037-agent.html)
+- [Ath Agent Trust Handshake Protocol](../ch03/019-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/291-hermes.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocket-mq-5-litetopic-ai-agent-async-cloudnative.md)

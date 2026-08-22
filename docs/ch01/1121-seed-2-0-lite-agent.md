@@ -33,7 +33,7 @@
 5. **集成建议**：对于已经在用 Claude Code、Codex、OpenClaw、Hermes Agent 或 Trae 的用户，把豆包 Seed 2.0 Lite 作为前置感知层接入现有工作流即可实现"眼睛+耳朵"能力，无需迁移工作台或学习新工具。
 
 ## 相关实体
-- [Doubao Seed 2 Lite Agent Multimodal](../ch03/037-agent.html)
+- [Doubao Seed 2 Lite Agent Multimodal](../ch03/019-agent.html)
 - [Hermes Agent Newbie Guide Dotta](../ch03/099-hermes-agent.html)
 - [Skill Rag Tsinghua Sra](../ch04/350-skill.html)
 - [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md)

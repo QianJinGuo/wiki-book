@@ -50,7 +50,7 @@ AI 网关的透明化处理（模型路由、负载均衡、内容安全、密�
 
 ## 相关实体
 - [Pi Mono Github](../ch01/1116-pi-mono-github.html)
-- [Cli Mcp Sdk Agent Tool Selection](../ch03/037-agent.html)
+- [Cli Mcp Sdk Agent Tool Selection](../ch03/019-agent.html)
 - [Agentcore Managed Harness](ch04/299-agentcore-managed-harness.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 - [我用 Skillmd 做了一个简历生成器](ch04/350-skill.html)

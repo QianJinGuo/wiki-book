@@ -104,7 +104,7 @@ Comet 使用 Chrome UA 的原因与其他 Chromium 系浏览器相同：规避�
 
 - [Agent Harness 可观测性](../ch05/043-agent-harness.html)
 - [Agent 安全三步序列](../ch05/077-harness.html)
-- [Agent Trust Handshake Protocol](../ch03/037-agent.html)
+- [Agent Trust Handshake Protocol](../ch03/019-agent.html)
 - Prompt Injection
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-v-perplexity-agentic-browsing-open-web.md)

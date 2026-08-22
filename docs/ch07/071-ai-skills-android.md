@@ -73,7 +73,7 @@ AI + Skills 模式在 154 个服务的规模化迁移中节省 **25 小时**（�
 - [Skill Craft](ch07/062-skill-craft-claude-skill.html) — Skill 工艺学
 - [Skill Engineering as Algorithm](../ch04/350-skill.html) — Skill 工程即算法
 - [Anthropic 14 Skill Patterns](../ch01/453-anthropic-14-skill.html) — Anthropic 技能设计模式
-- [百度网盘 KMP 迁移三层架构](../ch03/037-agent.html) — 同类跨平台迁移案例
+- [百度网盘 KMP 迁移三层架构](../ch03/019-agent.html) — 同类跨平台迁移案例
 - [SkillX 分层技能库](ch07/060-skillx.html) — 分层技能库架构
 - [Skill Hub 组织资产](../ch04/350-skill.html) — 组织级技能管理中心
 

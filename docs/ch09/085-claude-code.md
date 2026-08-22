@@ -119,7 +119,7 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 - [Obsidian + Claude Code 集成指南](ch09/156-obsidian-claude-code-integration-guide.html) — 知识管理工具集成
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html) — MCP 协议集成
 - [IMClaw](../ch03/085-claude-code.html) — IM 平台操控
-- [OpenClaw 安全增强](../ch11/253-openclaw.html) — 自托管 Agent 平台
+- [OpenClaw 安全增强](../ch11/254-openclaw.html) — 自托管 Agent 平台
 - [Kiro + Claude Code](../ch05/109-ai.html) — AI IDE 协同
 - [企业级 Agentic AI](../ch04/117-agentic-ai.html) — AWS 集成
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)

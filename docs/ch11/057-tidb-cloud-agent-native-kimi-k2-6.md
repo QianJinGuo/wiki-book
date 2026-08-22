@@ -112,7 +112,7 @@ Agent 时代的计算单位从用户/会话变为 Agent 自己——带任务/�
 三个可落地架构判断：①**先算空闲成本再谈规模**（不干活成本趋近零、要干活秒级就绪）；②**从第一天拆开执行和状态**（早定义哪些可重建哪些必须持久）；③**让 Agent 少跨系统边界**（标准是稳定数据语义/权限贯通/失败可恢复）。商业上 Dify 多租户容器收敛进 TiDB Cloud 后成本降 80%、运维负担降 90%。
 
 ## 相关实体
-- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](../ch03/037-agent.html)
+- [Kimi K2.6 Agent Database：Agent-native 数据 Infra](../ch03/019-agent.html)
 
 ---
 ## 关联

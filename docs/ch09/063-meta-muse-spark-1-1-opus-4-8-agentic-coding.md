@@ -14,7 +14,7 @@ Meta 于 2026年7月10日正式发布 Muse Spark 1.1，一个主打 agentic 和 
 
 Muse Spark 1.1 在 MCP Atlas 上拿到 88.1 分（工具调用得分最高），第二名 Opus 4.8 为 82.2。JobBench（职业级工具使用）54.7，高于 Opus 4.8 的 48.4。HLE（带工具）62.1，拿下第一。在 Agent 评测线上，Muse Spark 1.1 基本压过 Opus 4.8 和 GPT-5.5。 GPT-5.5 在 MCP Atlas 上仅获 75.3 分，被拉开超过 12 分。
 
-Coding 方面：SWE-Bench Pro 61.5（Opus 4.8 为 69.2），编程水平约为 [GLM 5.2](../ch03/037-agent.html) 同一档位。 Terminal-Bench 2.1 Meta 自测 80.0，第三方 Vals AI 测得 69.29，显示评测差异。Meta 内部编码基准 68.3，仅次于 Opus 4.8（69.0），高于 GPT-5.5（67.1）。
+Coding 方面：SWE-Bench Pro 61.5（Opus 4.8 为 69.2），编程水平约为 [GLM 5.2](../ch03/019-agent.html) 同一档位。 Terminal-Bench 2.1 Meta 自测 80.0，第三方 Vals AI 测得 69.29，显示评测差异。Meta 内部编码基准 68.3，仅次于 Opus 4.8（69.0），高于 GPT-5.5（67.1）。
 
 通用推理并非其强项：GPQA 排第 12，MMLU Pro 第 9，竞赛编程 LiveCodeBench 第 17，SAGE 在 63 家中排第 20。Muse Spark 1.1 是专业场景的「刺客」，非全能王。
 
@@ -93,7 +93,7 @@ Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入
 
 - [Grok 4.5](../ch05/109-ai.html) — 同期 xAI 模型，法律榜上被 Muse Spark 1.1 在 24 小时内超越
 - [GPT-5.6 系列](../ch01/737-codex.html) — OpenAI 同日发布的降价系列
-- [GLM 5.2](../ch03/037-agent.html) — 编程水平同档位的开源 Agent 模型
+- [GLM 5.2](../ch03/019-agent.html) — 编程水平同档位的开源 Agent 模型
 - [Fable 5](../ch04/693-fable-5.html) — Anthropic 旗舰，在 MedScribe/TaxEval 上被超越
 - [Gemini 3.5](../ch01/698-gemini-3-5-frontier-intelligence-with-action.html) — Google 旗舰竞争模型
 - [Sonnet 5](../ch01/1212-claude.html) — Anthropic 高性价比模型

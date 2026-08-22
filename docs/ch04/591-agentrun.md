@@ -12,7 +12,7 @@
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/033-agent-skills.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/033-agent-skills.html)
 - [阿里云可观测 2026 年 4 月产品动态](../ch01/1130-20.html)
-- [Agent 从能用到管好中间差了什么](../ch03/037-agent.html)
+- [Agent 从能用到管好中间差了什么](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/看-agentrun-如何玩转记忆存储最佳实践来了.md)
 

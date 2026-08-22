@@ -69,7 +69,7 @@ Chronos-Bolt 通过分位数损失函数实现的概率预测能力，在实际�
 ## 相关实体
 
 - [MTP 加速推理实践](https://github.com/QianJinGuo/wiki/blob/main/entities/mtp-加速推理最佳实践在亚马逊云科技中国区使用-llamacpp-部署-qwen36-的实测指南.md) — 同一博客系列的 AWS 中国区推理最佳实践
-- [EKS 集群健康诊断](../ch03/037-agent.html) — 同一博客系列的运维场景实践
+- [EKS 集群健康诊断](../ch03/019-agent.html) — 同一博客系列的运维场景实践
 
 ## 原文存档
 

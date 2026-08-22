@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](../ch03/037-agent.html)
+- [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](../ch03/019-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md)
 
 ## 摘要

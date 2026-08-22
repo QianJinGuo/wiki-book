@@ -105,8 +105,8 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 -  — Karpathy 访谈原文存档
 
 ## 相关实体
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/037-agent.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/019-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/019-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](ch03/085-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)

@@ -75,7 +75,7 @@ AgentCore Payments 把这些打包到托管服务：原本数月工程量 → �
 - 不同 Payment Connector 的支持范围
 
 ## 相关实体
-- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/308-amazon-bedrock.html)
+- [Agentops Operationalize Agentic Ai Amazon Bedrock](ch11/309-amazon-bedrock.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/665-amazon-bedrock-agentcore.html)
 - [Bedrock Agentcore Coding Agent Hosting](ch11/059-bedrock-agentcore.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/665-amazon-bedrock-agentcore.html)

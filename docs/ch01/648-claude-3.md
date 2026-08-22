@@ -56,7 +56,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [Claude Opus 4.7 发布分析](ch01/548-claude-opus-4-7.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/396-anthropic-claude-managed-agents.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/007-claude-code-skills-mcp-rules.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/085-claude-code.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
@@ -66,7 +66,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [Anthropic Computer Use 最佳实践](ch01/1216-anthropic-computer-use.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
 
-- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/037-agent.html)
+- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/019-agent.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/085-claude-code.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](../ch12/031-mythos.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)

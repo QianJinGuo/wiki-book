@@ -78,11 +78,11 @@ GPT-5.5/5.4 在 Bedrock 上与 OpenAI 直连价格一致、不收额外费用 ^�
 
 ### 1. 生产级 Agentic 任务优先选 Bedrock 而非直连 OpenAI API
 
-对于需要多步骤推理和跨工具调用的复杂任务（代码生成流水线、自动化数据分析），Bedrock 的 Durable state capture 保证硬件故障不导致请求中断 ^。结合 Isolated Queue 可向业务方提供可量化的性能 SLA。建议将 [Agentcore Harness](../ch04/782-agentcore-harness.html) 和 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 纳入应用层架构设计参考。
+对于需要多步骤推理和跨工具调用的复杂任务（代码生成流水线、自动化数据分析），Bedrock 的 Durable state capture 保证硬件故障不导致请求中断 ^。结合 Isolated Queue 可向业务方提供可量化的性能 SLA。建议将 [Agentcore Harness](../ch04/783-agentcore-harness.html) 和 [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 纳入应用层架构设计参考。
 
 ### 2. 利用现有 AWS 合约覆盖 OpenAI 模型费用
 
-Codex on Bedrock 推理费用可计入企业现有 AWS 承诺用量 ^。建议财务和采购团队梳理现有 AWS Spend Contract，将 OpenAI 模型推理纳入已有承诺范围，利用 Bedrock 统一账单简化多供应商管理。具体可参考 [Aws Budget Bedrock Cost Governance](../ch11/312-bedrock.html) 的 FinOps 流程扩展方案。
+Codex on Bedrock 推理费用可计入企业现有 AWS 承诺用量 ^。建议财务和采购团队梳理现有 AWS Spend Contract，将 OpenAI 模型推理纳入已有承诺范围，利用 Bedrock 统一账单简化多供应商管理。具体可参考 [Aws Budget Bedrock Cost Governance](../ch11/313-bedrock.html) 的 FinOps 流程扩展方案。
 
 ### 3. 平行评估 Codex 与 Claude Code 在 Bedrock 上的企业适用性
 
@@ -100,7 +100,7 @@ Daybreak 和 Codex Security 在 Bedrock GA 后，企业安全团队可通过已�
 
 ## 相关实体
 
-- [试用 amazon bedrock 中的新控制台体验：该体验针对兼容 anthropic 和 openai 的 api](../ch11/308-amazon-bedrock.html)
+- [试用 amazon bedrock 中的新控制台体验：该体验针对兼容 anthropic 和 openai 的 api](../ch11/309-amazon-bedrock.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md)
 
 ---

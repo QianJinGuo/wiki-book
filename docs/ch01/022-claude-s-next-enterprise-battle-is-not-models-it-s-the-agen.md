@@ -75,7 +75,7 @@ OpenAI 的 Assistants 和 Responses API 稳居第二（23.2% → 25.7%），这�
 - [Harness Engineering 三次范式跃迁与四根支柱](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)
 
 ## ## 相关实体
-- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/037-agent.html)
+- [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/019-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
 
 ---

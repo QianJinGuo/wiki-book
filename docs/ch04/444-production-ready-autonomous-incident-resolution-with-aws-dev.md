@@ -99,7 +99,7 @@ AWS DevOps Agent 的核心价值主张是将事件响应从**被动模式**转�
 - [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — Datadog MCP Server 所基于的协议标准
 - [Cloudflare 临时账户](ch04/377-ai-agent.html) — Agent 基础设施的部署维度
 - [Building Reliable Agentic AI Systems](ch04/300-building-reliable-agentic-ai-systems.html) — 生产级 Agent 系统的架构方法论
-- [ATH Agent Trust Handshake Protocol](../ch03/037-agent.html) — Agent 信任和安全协议
+- [ATH Agent Trust Handshake Protocol](../ch03/019-agent.html) — Agent 信任和安全协议
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-autonomous-incident-resolution-datadog.md)
 

@@ -92,7 +92,7 @@ Worker 和 Verifier 的隔离是关键——Verifier 要像一个不近人情的
 - [Harness Engineering](../ch05/065-harness-engineering.html) — Agent 控制平面的系统方法论
 - [Agent Orchestration](../ch04/624-agent-orchestration.html) — 多 agent 编排模式
 - [Kimi K2 Agent Swarm](ch01/579-kimi.html) — Kimi 并行 agent 方案的技术细节
-- [Agent 评测方法论](../ch03/037-agent.html) — 验证和评估 agent 系统的方法
+- [Agent 评测方法论](../ch03/019-agent.html) — 验证和评估 agent 系统的方法
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-vs-kimi-vs-minimaxagent-teams-到底拼的是什么.md)
 

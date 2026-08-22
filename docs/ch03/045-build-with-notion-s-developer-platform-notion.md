@@ -27,7 +27,7 @@ External agents 的集成方式暗示了 Notion 正在将自己定位为企业 A
 - **多源数据同步的持久化游标（persistent cursor）模式是 AI 数据可靠性的关键**。Workers 的 `schedule: "5m"` + upsert pattern 确保了数据同步的持续性和幂等性。对于需要 AI 持续监控和处理数据的场景（如客服工单、订单状态监控），持久化游标机制可以防止数据丢失和重复处理，是构建可靠 AI 数据管道的基础组件。
 ## 相关实体
 
-- [crawler vs opencli doubao](ch03/031-crawler-vs-opencli-doubao.html)
+- [crawler vs opencli doubao](ch03/032-crawler-vs-opencli-doubao.html)
 
 ---
 

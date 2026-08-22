@@ -127,7 +127,7 @@ AgentRun 基于函数计算计费，核心优势是**按实际调用计费 + 零
 - [CLI-Anything](../ch03/106-cli-anything.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [AgentBrowser](../ch09/080-agent-browser-claude-code-qoderwork.html)
-- [24h打工人](../ch03/037-agent.html)
+- [24h打工人](../ch03/019-agent.html)
 
 ---
 

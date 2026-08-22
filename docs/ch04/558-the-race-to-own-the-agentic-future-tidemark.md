@@ -44,8 +44,8 @@ GovDash CEO Sean Doherty 的引言值得单独拆解："Customers will be consum
 ## 关联阅读
 - [ServiceNow Action Fabric](ch04/466-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — System of Action 概念的行业标杆实现，Claude Cowork 直接对接
 -  — Micro harness 框架的完整工程方法论，与 Doherty 引言直接相关
-- [Enterprise Software Moats in Agent Era](../ch03/037-agent.html) — 同一时期 a16z 对企业软件护城河在 Agent 时代变化的分析
-- [ServiceNow: The UI is Dead, Long Live the Agent](../ch03/037-agent.html) — ServiceNow Agent 战略的深度解析
+- [Enterprise Software Moats in Agent Era](../ch03/019-agent.html) — 同一时期 a16z 对企业软件护城河在 Agent 时代变化的分析
+- [ServiceNow: The UI is Dead, Long Live the Agent](../ch03/019-agent.html) — ServiceNow Agent 战略的深度解析
 ## 相关实体
 - Investing In Stitch.Md
 

@@ -212,7 +212,7 @@ Context 隔离不只是防止污染，还有另一层价值：**它让并行变�
 - [[entities/claude-code-architecture]
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-teams-xingxiaozhao.md)
-- [routa 多智能体协同交付平台](../ch03/037-agent.html)
+- [routa 多智能体协同交付平台](../ch03/019-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---
