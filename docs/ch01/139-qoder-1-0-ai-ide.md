@@ -7,7 +7,7 @@
 ## 核心要点
 -
 ## 相关实体
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/037-agent.html)
+- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/019-agent.html)
 - [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/893-chatgpt.html)
 - [Openai Three Voice Models Kill Simultaneous Translation](ch01/1000-openai.html)
 - [Baidu Confidential Computing Cpu Gpu Full Chain](../ch05/109-ai.html)

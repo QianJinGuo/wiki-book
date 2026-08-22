@@ -112,7 +112,7 @@ FY26 Q4 数据显示 AI 收入占比首破 30%、年化 AI 收入 358 亿，这�
 - [Oz Multi Harness Cloud Agent Orchestration](ch04/624-agent-orchestration.html)
 - [看 Agentrun 如何玩转记忆存储最佳实践来了](ch04/473-agentrun.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/033-agent-skills.html)
-- [Agent 从能用到管好中间差了什么](../ch03/037-agent.html)
+- [Agent 从能用到管好中间差了什么](../ch03/019-agent.html)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/033-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-agentic-cloud.md)

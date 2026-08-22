@@ -117,7 +117,7 @@ GAN 风格的对抗式架构之所以有效，根本原因在于突破了「谄�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 
-- [Agent 原理、架构与工程实践](../ch03/037-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
 - [claude opus 4.8: the system card](../ch01/1598-claude-opus-4-8.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 

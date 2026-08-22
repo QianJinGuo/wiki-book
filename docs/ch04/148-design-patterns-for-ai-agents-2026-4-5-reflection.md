@@ -59,7 +59,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/077-harness.html)
 - [AI Native 时代 —— 研发组织何去何从](../ch05/022-ai-native.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/077-harness.html)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/037-agent.html)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/019-agent.html)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/109-ai.html)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/1381-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)

@@ -49,16 +49,16 @@
 ## 互补角度
 
 - 与 [OpenSpec Spec 驱动](ch05/055-openspec.html) 的关系：本文批判 spec 驱动路线的瀑布模型倾向，但保留 spec 的新写法（约束/假设二分）——不是反对 spec，而是反对「spec 规定实现路径」
-- 与 [Agent 生产力悖论](../ch03/037-agent.html) 互补：那篇讲协作/组织瓶颈，本文给「为什么瓶颈在 Coding 之外」的工程量化（阿姆达尔 + 20-30% 生码占比）
+- 与 [Agent 生产力悖论](../ch03/019-agent.html) 互补：那篇讲协作/组织瓶颈，本文给「为什么瓶颈在 Coding 之外」的工程量化（阿姆达尔 + 20-30% 生码占比）
 - 与 [Harness Engineering](ch05/065-harness-engineering.html) 互补：本文提供 harness 的「投资账」论证——环境与验证投入是复利因子
-- 与 [Vibe Coding](../ch04/799-vibe-coding-ai.html) 的演进关系：从 vibe coding 的生成狂欢到验证驱动的冷静期
+- 与 [Vibe Coding](../ch04/800-vibe-coding-ai.html) 的演进关系：从 vibe coding 的生成狂欢到验证驱动的冷静期
 
 ## 相关实体
 
 - [OpenSpec Spec 驱动开发](ch05/055-openspec.html)
-- [Agent 生产力悖论](../ch03/037-agent.html)
+- [Agent 生产力悖论](../ch03/019-agent.html)
 - [Harness Engineering 2026](ch05/065-harness-engineering.html)
-- [Vibe Coding](../ch04/799-vibe-coding-ai.html)
+- [Vibe Coding](../ch04/800-vibe-coding-ai.html)
 - [Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Agent Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 

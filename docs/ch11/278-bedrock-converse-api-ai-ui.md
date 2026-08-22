@@ -29,11 +29,11 @@
 
 ## 相关实体
 
-- [Bedrock 图像内容精确分析](ch11/312-bedrock.html)
-- [Amazon Bedrock 模型推理 Serverless 异步架构](ch11/308-amazon-bedrock.html)
-- [Agentic Vision：基于 Bedrock + MCP 构建视觉智能](ch11/312-bedrock.html)
-- [Habby 游戏借助 AWS DevOps Agent 实现智能运维](ch11/297-aws-devops-agent.html)
-- [vivo LLM 游戏推荐表达层](../ch01/863-llm.html)
+- [Bedrock 图像内容精确分析](ch11/313-bedrock.html)
+- [Amazon Bedrock 模型推理 Serverless 异步架构](ch11/309-amazon-bedrock.html)
+- [Agentic Vision：基于 Bedrock + MCP 构建视觉智能](ch11/313-bedrock.html)
+- [Habby 游戏借助 AWS DevOps Agent 实现智能运维](ch11/296-aws-devops-agent.html)
+- [vivo LLM 游戏推荐表达层](../ch01/1147-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-multimodal-model-benchmark-gaming-qa-2026.md)
 

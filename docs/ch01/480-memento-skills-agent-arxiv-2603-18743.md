@@ -28,7 +28,7 @@ Observe → Read → Act → Feedback → Write
 - **Feedback**：Judge 给出正确/错误反馈
 - **Write**：更新 skill utility、做 failure 归因和 file-level rewrite、必要时进入 skill discovery
 
-**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](../ch03/037-agent.html) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
+**三层写回策略**：局部修补优先，只在 utility 降至阈值时才生成新技能，避免破坏已有能力。这种策略在 [Agent Self Improvement Six Mechanisms](../ch03/019-agent.html) 中被称为"输出自审"的工程化升级版——从单次执行的反射进化为跨 session 的持久化技能积累。
 
 ## 技能路由器：行为对齐而非语义相似
 

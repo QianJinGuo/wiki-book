@@ -34,8 +34,8 @@ OpenAI 推出官方 CLI 的核心意义在于**将 AI 能力标准化为 Unix �
 4. **多租户/Agent 场景的通信口**：在本地智能硬件 + 云端大模型的架构中，CLI 提供了一个标准的轻量级通信接口，适合构建本地自动化脚本与云端大脑的协同工作流。
 
 ## 相关实体
-- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/037-agent.html)
-- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](../ch03/037-agent.html)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/019-agent.html)
+- [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](../ch03/019-agent.html)
 
 ---
 

@@ -39,7 +39,7 @@
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/377-ai-agent.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/581-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/085-claude-code.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/019-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/085-claude-code.html)

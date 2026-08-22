@@ -45,7 +45,7 @@
 
 ## 相关实体
 
-- [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/037-agent.html)
+- [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/019-agent.html)
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/077-harness.html)
 - [Harness Engineering](../ch05/065-harness-engineering.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch06/014-hermes-agent-memory.html)

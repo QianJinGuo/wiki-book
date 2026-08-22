@@ -20,7 +20,7 @@
 
 ## 与现有体系的关系
 
-本文属 [Agent 驱动数据访问](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-driven-data-access.md) 与 [Agentic RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-rag-patterns.md) 的具体工程案例，补充了 Text-to-Metrics 这一指标层范式。与 [零售多 Agent 架构实践](../ch03/037-agent.html)、[小米 AI 工程化三层实践](../ch05/109-ai.html) 同属小米/零售 AI 落地系列。
+本文属 [Agent 驱动数据访问](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-driven-data-access.md) 与 [Agentic RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-rag-patterns.md) 的具体工程案例，补充了 Text-to-Metrics 这一指标层范式。与 [零售多 Agent 架构实践](../ch03/019-agent.html)、[小米 AI 工程化三层实践](../ch05/109-ai.html) 同属小米/零售 AI 落地系列。
 
 ## 价值
 

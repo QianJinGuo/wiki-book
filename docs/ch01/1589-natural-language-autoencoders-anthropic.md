@@ -133,7 +133,7 @@ NLAs 当前的高成本限制了其作为实时监控工具的可行性，但可
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-natural-language-autoencoders.md)
 
-- [QuickSight Dataset QA：NL直查S3 Iceberg](../ch11/199-aws-quicksight-dataset-qa-natural-language.html)
+- [QuickSight Dataset QA：NL直查S3 Iceberg](../ch11/200-aws-quicksight-dataset-qa-natural-language.html)
 
 ---
 

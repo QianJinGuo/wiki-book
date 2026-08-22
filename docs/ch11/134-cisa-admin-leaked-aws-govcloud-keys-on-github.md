@@ -114,7 +114,7 @@ Caturegli 分析认为，该仓库的使用模式显示个人将其作为工作�
 - [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/908-github.html)
 - [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/422-claude-md.html)
 - [Open Source Projects Leaving Github](../ch01/908-github.html)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/231-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](ch11/232-cost-effective-deployment-of-vision-language-models-for-pet.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cisa-admin-leaked-aws-govcloud-keys-on-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](../ch01/908-github.html)
 

@@ -40,7 +40,7 @@ GenRec 不只是"换一个 Transformer"，而是指向推荐系统的四个方�
 
 ## 相关实体
 
-- [GenPage: Netflix 端到端生成式首页构建](../ch11/321-genpage-netflix.html) — GenPage 是生成式整页构建（Transformer 自回归生成首页布局），GenRec 是 LLM 排序层（对全目录打分排序），同属 Netflix LLM 原生推荐探索，但层次不同（page construction vs ranking）
+- [GenPage: Netflix 端到端生成式首页构建](../ch11/322-genpage-netflix.html) — GenPage 是生成式整页构建（Transformer 自回归生成首页布局），GenRec 是 LLM 排序层（对全目录打分排序），同属 Netflix LLM 原生推荐探索，但层次不同（page construction vs ranking）
 - [Netflix LLM-as-a-Judge 剧集摘要评估](ch01/458-evaluating-netflix-show-synopses-with-llm-as-a-judge.html) — Netflix 用 LLM 做内容摘要评估
 - [LLM 高效推理与 vLLM](ch01/959-ai-infra.html) — GenRec 的 prefill-only serving 基于 vLLM
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — GenRec 把 context window 当作新的 feature budget

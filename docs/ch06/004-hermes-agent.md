@@ -352,7 +352,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch06/014-hermes-agent-memory.html)
 - [Hermes Agent 记忆系统深度拆解](ch06/014-hermes-agent-memory.html)
 - [Hermes Agent vs OpenClaw 对比分析](ch06/023-hermes-agent-vs-openclaw.html)
-- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](../ch11/253-openclaw.html)
+- [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](../ch11/254-openclaw.html)
 - [DeerFlow vs Hermes vs OpenClaw 深度对比](../ch04/596-deerflow-hermes-openclaw.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch06/008-claude-code-openclaw-memory-comparison.html)
 - [Agent Harness 上下文管理：聊天记录还是工作集](../ch05/043-agent-harness.html)

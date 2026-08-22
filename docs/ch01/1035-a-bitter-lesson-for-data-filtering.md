@@ -48,7 +48,7 @@ Rich Sutton 的经典教训是：AI 研究数十年的经验表明，把人类�
 
 ## 相关实体
 
-- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/037-agent.html)
+- [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/019-agent.html)
 - [Architecture Data Foundations For Ai Powered Search](ch01/1195-architecture-data-foundations-for-ai-powered-search.html)
 - [Running An Ai Native Engineering Org](ch01/060-running-an-ai-native-engineering-org.html)
 - [Minimax Agent Team Mavis Owner Worker Verifier](ch01/1533-owner-worker-verifier.html)

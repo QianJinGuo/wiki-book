@@ -159,13 +159,13 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 
 - [Hermes Agent](../ch03/099-hermes-agent.html)
 - [Qoder Skills 完全指南](ch07/037-qoder-skills.html)
-- [AgentEval：YAML驱动的Agent评测框架](../ch03/037-agent.html)
+- [AgentEval：YAML驱动的Agent评测框架](../ch03/019-agent.html)
 - [你写的 Skill，及格了吗？](../ch04/350-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md)
 
-- [Agent 原理、架构与工程实践](../ch03/037-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
 
 ---
 

@@ -55,7 +55,7 @@ Loop Engineering 并没有让工程师消失——它只是把工程师的工作
 - [Harness 实践将任何文字编辑成精美的文章](../ch05/077-harness.html) — Beautiful Article Skill 的 8 Phase Harness 与 Loop 架构相互印证
 - [Alibaba Data Rd Harness Engineering Nl2Sql](../ch05/065-harness-engineering.html) — 阿里 NL2SQL 多 Agent 工作流中的 Gate 审批与 Loop 的停止条件设计一致
 - [Aliyun Loop Engineering Log Scan Auto Fix Deploy](../ch05/122-loop-engineering.html) — 阿里云 Loop Engineering 的日志扫描自修复实战
-- [Ant Group Medical Agent Afu](../ch03/037-agent.html) — 蚂蚁医疗 Agent 的 Harness Engineering，对比 Loop 架构的适用边界
+- [Ant Group Medical Agent Afu](../ch03/019-agent.html) — 蚂蚁医疗 Agent 的 Harness Engineering，对比 Loop 架构的适用边界
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一文看懂-ai-编程智能体工程化新范式loop-engineering.md)
 

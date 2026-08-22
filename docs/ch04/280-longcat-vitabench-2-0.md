@@ -88,7 +88,7 @@ VitaBench 2.0 对模型失败模式的精细分类揭示了 Agent 能力的阶�
 ## 相关实体
 
 - [CODA-Bench 代码 Agent 数据基准](../ch09/109-coda-bench-code-agent.html)
-- [Agent 评测方法论](../ch03/037-agent.html)
+- [Agent 评测方法论](../ch03/019-agent.html)
 - [Agent Harness 上下文管理](../ch05/043-agent-harness.html)
 - [注意力崩溃与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
 - [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)

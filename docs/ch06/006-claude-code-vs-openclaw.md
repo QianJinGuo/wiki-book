@@ -218,7 +218,7 @@ Claude Code 的六层记忆架构与软件工程中的权限模型高度对齐�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-openclaw-memory-comparison.md)
 
-- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/253-openclaw.html)
+- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/254-openclaw.html)
 
 ## 相关实体
 

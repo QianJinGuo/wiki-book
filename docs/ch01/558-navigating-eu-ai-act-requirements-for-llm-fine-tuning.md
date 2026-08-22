@@ -25,7 +25,7 @@ The EU AI Act requires organizations fine-tuning large language models (LLMs) to
 ## 相关实体
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/901-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [LLM-as-Judge: RFT的6步法官设计方法论](ch01/1147-llm.html)
-- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/319-amazon-nova.html)
+- [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/320-amazon-nova.html)
 - [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch05/109-ai.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11/151-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)

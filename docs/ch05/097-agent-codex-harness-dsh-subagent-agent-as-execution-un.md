@@ -43,7 +43,7 @@ OpenAI 文档仍把 app-server 命令和 WebSocket 传输标在实验性边界�
 
 ## 相关概念
 - [Fable 5 信号：Agent 拼 Runtime（若飞 Runtime Contract）](../ch01/475-claude-fable-5.html)
-- [Agent Runtime 七大职责](../ch03/037-agent.html)
+- [Agent Runtime 七大职责](../ch03/019-agent.html)
 - [Codex Goal Agent Runtime](../ch04/247-codex-goal-agent.html)
 - [Harness 工程范式](ch05/065-harness-engineering.html)
 - [Agentic Environment Engineering](../ch04/298-agentic.html)

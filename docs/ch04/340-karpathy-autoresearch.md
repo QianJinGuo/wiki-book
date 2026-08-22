@@ -31,7 +31,7 @@ source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g
 > ai agent platforms topic map（已删除）
 
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](ch04/033-agent-skills.html)
-- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/037-agent.html)
+- [民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践](../ch03/019-agent.html)
 - [吴恩达：AI 将最先杀死前端](../ch05/109-ai.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch01/1605-anthropic.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
@@ -49,11 +49,11 @@ source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/077-harness.html)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/099-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/077-harness.html)
-- [你不知道的 Agent：原理、架构与工程实践](../ch03/037-agent.html)
+- [你不知道的 Agent：原理、架构与工程实践](../ch03/019-agent.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](ch04/473-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/065-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/253-openclaw.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/254-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/065-harness-engineering.html)
 
 ---

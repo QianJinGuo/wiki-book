@@ -36,9 +36,9 @@ Couchbase 正探索通过 Bedrock Custom Model Import 部署微调的小型模�
 
 ## 相关实体
 
-- [Amazon Bedrock 模型推理 Serverless 架构案例](ch11/181-amazon-bedrock.html) — 不同的推理架构（SQS 异步 vs EKS 同步）
-- [Amazon Bedrock CRIS 跨 Region 推理](ch11/181-amazon-bedrock.html) — CRIS 在 GDPR 场景的应用
-- [AWS Bedrock Multi-Agent Collaboration](ch11/017-aws-bedrock.html)
+- [Amazon Bedrock 模型推理 Serverless 架构案例](ch11/309-amazon-bedrock.html) — 不同的推理架构（SQS 异步 vs EKS 同步）
+- [Amazon Bedrock CRIS 跨 Region 推理](ch11/309-amazon-bedrock.html) — CRIS 在 GDPR 场景的应用
+- [AWS Bedrock Multi-Agent Collaboration](ch11/019-aws-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/couchbase-capella-iq-multi-model-ai-architecture-bedrock-case-study.md)
 

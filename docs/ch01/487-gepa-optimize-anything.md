@@ -106,7 +106,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 
 ## 相关概念
 - [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
-- [AlphaEvolve](../ch03/037-agent.html) — DeepMind 代码进化型科学发现 Agent
+- [AlphaEvolve](../ch03/019-agent.html) — DeepMind 代码进化型科学发现 Agent
 - [Agent Memory 模块化框架与评测](../ch04/180-agent-memory.html) — ICLR 2026 评测基准
 - [Skill RAG 清华 SRA](../ch04/350-skill.html) — 技能增强型检索
 

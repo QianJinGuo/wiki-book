@@ -48,8 +48,8 @@ Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、
 
 ## 相关实体
 
-- [Microsoft Copilot Studio Agent Governance](../ch03/037-agent.html)
-- [Microsoft Mxc Execution Containers Agent Sandbox Origin](../ch03/037-agent.html)
+- [Microsoft Copilot Studio Agent Governance](../ch03/019-agent.html)
+- [Microsoft Mxc Execution Containers Agent Sandbox Origin](../ch03/019-agent.html)
 - [Github Copilot Individual Plans Flex Allotments](ch01/1034-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
 - [Joyai Echo Long Video Framework Jd](../ch05/109-ai.html)
 - [Openchronicle Memory Layer](../ch06/048-memory.html)

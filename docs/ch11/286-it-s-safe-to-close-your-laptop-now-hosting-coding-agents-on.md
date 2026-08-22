@@ -36,12 +36,12 @@ There’s a habit going around.
 - **ai-coding趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/036-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/289-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/787-karpathy-vibe-coding-agentic-engineering.html)
-- [两万字详解Claude Code源码核心机制](../ch03/084-claude-code.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/250-openclaw.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/042-agent-harness.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
+- [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/254-openclaw.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

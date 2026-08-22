@@ -43,7 +43,7 @@ Kyverno 本身运行在 CoCo 信任模型中标记为不可信的 Kubernetes 控
 - [From Kubernetes Dev Setup To Production What Actually Change](ch11/097-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](ch11/020-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Hiclaw V110 K8S Hermes Worker](../ch01/291-hermes.html)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/253-openclaw.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/254-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)（CNCF Blog, 2026-05-19）
 

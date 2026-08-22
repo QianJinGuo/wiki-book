@@ -12,7 +12,7 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [Development environments for your cloud agents](ch03/037-agent.html)
+- [Development environments for your cloud agents](ch03/019-agent.html)
 - [AI Infra 系统性拆解：传统后台工程师视角](../ch01/959-ai-infra.html)
 - [ml-intern — Hugging Face 自主 ML 工程代理](../ch04/635-ml-intern-huggingface-autonomous-ml-agent.html)
 

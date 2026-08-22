@@ -102,7 +102,7 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [LoongSuite GenAI 可观测语义规范](../ch04/570-loongsuite-genai.html)
 
 ## ## 相关实体
-- [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/037-agent.html)
+- [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/019-agent.html)
 
 ## ## 相关实体
 - [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/126-ai-coding.html)

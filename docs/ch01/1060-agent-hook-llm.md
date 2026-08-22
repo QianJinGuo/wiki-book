@@ -32,8 +32,8 @@ prompt 是软约束，不是安全边界。任何「做了就回不去」的操�
 
 ## 相关实体
 
-- [Agent Hooks 可编程工作流](../ch03/037-agent.html)
-- [腾讯 DECO Hook 治理](../ch04/753-deco-agent-hook.html)
+- [Agent Hooks 可编程工作流](../ch03/019-agent.html)
+- [腾讯 DECO Hook 治理](../ch04/754-deco-agent-hook.html)
 - [Harness Gate 评估](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-gate-evaluation.md)
 - [Agent 记忆架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md)
 

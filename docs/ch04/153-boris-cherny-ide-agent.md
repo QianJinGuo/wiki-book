@@ -80,8 +80,8 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
 
 ## 相关实体
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
-- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
+- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/019-agent.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/033-agent-skills.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/085-claude-code.html)
@@ -106,7 +106,7 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/315-anthropic-agent.html)
 - [Anthropic Computer Use 最佳实践](../ch01/1216-anthropic-computer-use.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/085-claude-code.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
 - [claude code 一周年回顾：boris cherny + cat wu 对话](../ch03/085-claude-code.html)
 
 ---

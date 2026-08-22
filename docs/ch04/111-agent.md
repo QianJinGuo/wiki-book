@@ -132,7 +132,7 @@ graph TB
 与 [Hermes Agent Deep Dive](../ch03/099-hermes-agent.html) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
 与 [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
 与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
-与 [Agent Engineering Principles Architecture Practice](../ch03/037-agent.html) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
+与 [Agent Engineering Principles Architecture Practice](../ch03/019-agent.html) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
 
 ## 核心命题
 > AI 的学习正在从训练阶段溢出到部署阶段。过去十年模型变强的唯一方式是改权重，这些项目展示了另一种可能：**权重冻结下通过外部记忆、行为搜索、对抗训练、代码自修改、编排自优化来持续积累能力。**
@@ -144,7 +144,7 @@ graph TB
 - [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch04/499-memento-skills-agent.html)
 - [AI Coding Agent 记忆系统](ch04/409-ai-coding-agent.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/077-harness.html)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/037-agent.html)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/019-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
@@ -156,12 +156,12 @@ graph TB
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Agent Harness 架构](../ch05/043-agent-harness.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/253-openclaw.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/824-karpathy-vibe-coding-agentic-engineering.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/254-openclaw.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch06/048-memory.html)
 - [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
 - [SkillClaw](ch04/563-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/019-hermes-skill.html)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/180-agent-memory.html)

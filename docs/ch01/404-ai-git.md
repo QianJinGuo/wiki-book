@@ -378,7 +378,7 @@ but branch -a feat/refresh-token feat/token-revocation
 **核心目标**：「让版本历史成为可信的知识库」——无论代码是人写的还是 agent 写的。
 
 ## 相关实体
-- [Alphaevolve Deepmind Discovery Agent](../ch03/037-agent.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/019-agent.html)
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
 - [我用 Skillmd 做了一个简历生成器](../ch04/350-skill.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/077-harness.html)

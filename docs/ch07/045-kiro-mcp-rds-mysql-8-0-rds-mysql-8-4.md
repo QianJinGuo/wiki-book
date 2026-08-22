@@ -23,14 +23,14 @@
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/665-amazon-bedrock-agentcore.html)
 - [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/068-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/295-aws-devops-agent.html)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch11/296-aws-devops-agent.html)
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/357-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](../ch11/011-cuda.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
 
 - [Amazon Quick Mcp Kdbx Time Series](ch07/079-amazon-quick-mcp.html)
-- [Transforming Rare Cancer Research With Amazon Quick Integrat](../ch11/239-amazon-quick.html)
+- [Transforming Rare Cancer Research With Amazon Quick Integrat](../ch11/240-amazon-quick.html)
 ## 深度分析
 
 **1. "Agent + MCP + Shell"三层架构的工程实践意义**

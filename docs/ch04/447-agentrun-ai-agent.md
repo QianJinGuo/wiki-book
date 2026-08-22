@@ -15,7 +15,7 @@
 - [Aliyun Agentrun 5Min Quickstart](ch04/473-agentrun.html)
 - [Wow Harness V3 Governance Protocol](../ch05/077-harness.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
-- [Ath Agent Trust Handshake Protocol](../ch03/037-agent.html)
+- [Ath Agent Trust Handshake Protocol](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/深势科技携手阿里云-agentrun加速科研-ai-agent-全速运行.md)
 

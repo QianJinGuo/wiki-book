@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **63 篇**实体，按深度递增排列。
+> 本章收录 **64 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 15 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 41 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 42 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 
 ---
@@ -5529,7 +5529,52 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ---
 
-## Ch15.057 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
+## Ch15.057 Vbot 具身基因组：跨本体智能继承（维他动力 秦海龙）
+
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/vbot-embodied-genome-cross-embodiment-inheritance-qinhailong-2026.md`
+
+# Vbot 具身基因组：跨本体智能继承（维他动力 秦海龙）
+
+## 概述
+
+维他动力（Vbot）在 WRC 上首次公开人形机器人 Vbot ATOM 并开启预订，同时提出「Vbot Embodied Genome｜具身基因组」技术体系，核心命题是：机器人换了一副「身体」，能否「继承」已经学会的智能。该框架把「智能跨任务继承、跨本体进化」作为通用机器人的关键，区别于行业常见的「一个模型覆盖更多任务」路线，转而追问「一套已形成的智能系统能否顺畅进入截然不同的物理身体」。
+
+ATOM 并非从零起步，它背后是已量产交付、走进真实用户生活的四足机器人「大头」及其积累的真实数据与迭代闭环。秦海龙（哈工大、新加坡国立、浦项科大背景，前蔚来自动驾驶高级总监、千里智驾首席科学家）于 2026 年 3 月加入维他动力任研发副总裁，负责世界模型、空间智能、Agent OS 及人形机器人研发。
+
+## 三大核心模型
+
+维他动力公布三大核心模型，对应机器人智能链条的三个关键环节（理解人、预测未来、适应不同本体），连接成「前台持续交互 → 世界持续推理 → 本体持续进化」的完整闭环：
+
+- **Vbot-OmniDuplex** — 多模态流式全双工交互与异步推理，负责「理解人」
+- **Vbot-WorldModel** — 动作条件未来预测与策略评估，负责「预测未来」
+- **Vbot-EvoMorph** — 共享策略骨干 + 多本体 Real-Sim-Real 进化，负责「适应不同本体」
+
+## 跨本体智能继承的分层
+
+针对「智能继承不能一概而论」，秦海龙提出按模块分层的继承能力：
+
+- **交互层** — 可 100% 完全继承。机器人与人交互的理解、成功与失败案例与物理本体形态无关，四足积累的交互数据可直接迁移到人形
+- **策略生成与空间理解层** — 高度复用。移动导航任务的空间动静态理解、避障、通行判断在四足与人形间差异不大；操作任务采用无本体（Egocentric / 第一人称视角）基模路线，复用大量公开与合成数据，真正的瓶颈在真机后训练数据
+- **底层运控与强化学习层** — 「隐空间共通，末端分叉」。上层隐空间理解、环境感知、控制逻辑相通，下层因关节自由度、拓扑结构、运动学不同而输出分叉，需依赖特定本体的适配层与强化学习（RL）完成控制
+
+## Real-Sim-Real 与数据稀缺
+
+体系依托多本体 Real-Sim-Real 进化：策略共享骨干在仿真与真实世界间交替迭代，让一套智能逐步适配多种本体。文中强调具身智能领域真正稀缺的数据是**真机后训练数据**（real-machine post-training data），而非公开/合成基模数据——这决定了跨本体能力能否落地到具体物理身体。
+
+## 相关实体
+
+- [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
+- [机器人具身 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md)
+- [CurrentWorld 跨本体世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md)
+- [具身原生 LLM](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-native-llm-embodied-intelligence-new-stage.md)
+- [Amap Abot 3D 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
+- [BAAI Orca 世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/baai-orca-next-state-prediction-world-model.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vbot-embodied-genome-cross-embodiment-inheritance-qinhailong-2026.md)
+
+---
+
+## Ch15.058 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
 
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/localdpo-cvpr2026-video-diffusion-local-preference-taobao.md`
 
@@ -5584,7 +5629,7 @@ LocalDPO 为视频生成模型的偏好对齐提供了一种高效、稳定且�
 
 ---
 
-## Ch15.058 Farewell Ai2
+## Ch15.059 Farewell Ai2
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/farewell-ai2.md`
 
@@ -5624,7 +5669,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.059 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
+## Ch15.060 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
 
@@ -5659,7 +5704,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.060 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.061 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 27.8KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -6040,7 +6085,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.061 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.062 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 22.3KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
 
@@ -6355,7 +6400,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.062 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.063 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
@@ -6429,7 +6474,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.063 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.064 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
 

@@ -42,11 +42,11 @@ Lenovo在技术选型时提出了三个核心需求：**上手快、复杂度低
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/strands-agent-sdk-resource-intelligent-inspection-agent-innovation/)
 
 ## 相关实体
-- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/312-bedrock.html)
+- [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/313-bedrock.html)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
-- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch11/308-amazon-bedrock.html)
-- [Cline releases open-source agent runtime SDK](../ch03/037-agent.html)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/037-agent.html)
+- [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch11/309-amazon-bedrock.html)
+- [Cline releases open-source agent runtime SDK](../ch03/019-agent.html)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5-ways-to-curb-ai-sprawl-without-stifling-innovation.md)
 

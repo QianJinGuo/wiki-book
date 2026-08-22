@@ -161,7 +161,7 @@ Agent 治理是尚未被解决的难题，企业应该现在开始试点而非�
 
 ## 相关实体
 - from-system-of-record-to-system-of-intelligence.md-intelligence
-- [Enterprise Software Moats Agent Era](ch03/037-agent.html)
+- [Enterprise Software Moats Agent Era](ch03/019-agent.html)
 - from-system-of-record-to-system-of-intelligence.md-intelligence-1
 - [我用 Skillmd 做了一个简历生成器](../ch04/350-skill.html)
 - [Aliyun Agentrun 2Line Integration](../ch04/473-agentrun.html)

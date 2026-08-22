@@ -31,8 +31,8 @@ Anthropic 内部真正领先的，不一定是模型本身，而是组织流程�
 代码生成变快以后，样板代码、重复修改、机械排障、低风险迁移慢慢被 Agent 接过去，人可以把精力放回更难、也更有价值的问题。但一次成功经验如果不能沉淀成团队 Skill 或 Runbook，就没法复制。长期来看，团队的核心竞争力之一会是：把"会用 AI"变成"可复制的工程能力"——有结构化的 Harness、有文档化的 Skills、有可传承的流程知识 。
 
 ## Related entities
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
-- - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/037-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
+- - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
 
 ## 关联阅读
 - [Agent Harness 框架](../ch05/043-agent-harness.html)

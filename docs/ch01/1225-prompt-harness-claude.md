@@ -14,7 +14,7 @@
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/087-claude-code-harness.html)
 - [Claude Opus 47](ch01/1212-claude.html)
-- [Openclaw Prompt Context Harness](../ch11/253-openclaw.html)
+- [Openclaw Prompt Context Harness](../ch11/254-openclaw.html)
 - [Anthropic Managed Agents Scaling](ch01/1605-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-prompt-to-harness-claude-official.md)

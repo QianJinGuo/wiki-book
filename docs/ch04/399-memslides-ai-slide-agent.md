@@ -78,7 +78,7 @@ Guard 阶段的存在尤为关键——它引入了**局部验证可靠性**这�
 - [Agent 记忆架构](ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html) — 层级化 Agent 记忆设计的通用框架，MemSlides 是其幻灯片生成领域的具体实例
 - [Harness 上下文管理工作集](../ch05/043-agent-harness.html) — 上下文优先级分层与 MemSlides 的三层记忆优先级设计一致
 - [Agent 记忆力工程税](ch04/180-agent-memory.html) — 讨论经验迁移的结构化成本，与工具记忆复用直接相关
-- [Agent 评测方法论与体系设计](../ch03/037-agent.html) — MemSlides 的 Plan-Act-Guard 评测方法可纳入更广泛的 Agent 评测框架
+- [Agent 评测方法论与体系设计](../ch03/019-agent.html) — MemSlides 的 Plan-Act-Guard 评测方法可纳入更广泛的 Agent 评测框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化中的执行 contract 与验证机制
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huggingface热榜第一清华上交推出memslides精准锁定ppt局部修改.md)

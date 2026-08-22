@@ -68,7 +68,7 @@ Cannes 并非孤例。同一时期，Meta 在肯尼亚内罗毕的承包商正�
 
 ## 相关实体
 
-- [Meta Muse Spark 11](../ch04/711-11-agent.html) — Meta 自身的 AI 模型生态
+- [Meta Muse Spark 11](../ch04/712-11-agent.html) — Meta 自身的 AI 模型生态
 - [Claude 安全对齐](../ch03/085-claude-code.html) — AI 安全与对齐研究
 - [AI Safety Fables](ch01/1189-claude-fable-5-and-new-ai-safety-fables.html) — AI 安全伦理讨论
 - [Prompt Injection 机制解释](https://github.com/QianJinGuo/wiki/blob/main/entities/mechanistic-explanation-prompt-injection-roles.md) — 提示词注入与安全突破

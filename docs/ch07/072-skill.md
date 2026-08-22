@@ -105,7 +105,7 @@ YAML 结构化模板（关键字段）：
 - [Agent Skill 写作评估](../ch04/614-agent-skill.html)
 - [Harness Engineering](../ch05/065-harness-engineering.html)
 - [Claw-SWE-Bench](../ch05/077-harness.html) — harness 独立评测基准
-- [Agent Eval WalleZhang](../ch03/037-agent.html) — YAML 驱动评估框架
+- [Agent Eval WalleZhang](../ch03/019-agent.html) — YAML 驱动评估框架
 
 ---
 

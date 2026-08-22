@@ -74,7 +74,7 @@ AliExpress 团队在 Harness Engineering / Context Engineering / Loop Engineerin
 ## 相关链接
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliexpress-harness-ai-native-architect-2026-08-03.md)
-- 同源姊妹篇：[AI Agent 应用精细化评测（AliExpress）](../ch03/037-agent.html)、[全球化商品中心智能答疑 Agent（AliExpress）](../ch03/037-agent.html)
+- 同源姊妹篇：[AI Agent 应用精细化评测（AliExpress）](../ch03/019-agent.html)、[全球化商品中心智能答疑 Agent（AliExpress）](../ch03/019-agent.html)
 - 相关主题：[端到端 CodingAgent 设计（大淘宝）](../ch04/030-codingagent.html)、[高德 AutoSDK 全链路 AI Native（架构篇）](ch05/022-ai-native.html)、[AI Agent Skill 系统设计（淘宝技术）](../ch04/350-skill.html)
 
 ---

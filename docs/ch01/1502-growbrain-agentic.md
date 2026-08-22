@@ -79,8 +79,8 @@ SystemPipeline 和 ChatPipeline 共享同一套 Agent 矩阵和底层能力底�
 - [Agent 配置组合](../ch04/350-skill.html)
 - [Agent Harness 上下文管理](../ch05/043-agent-harness.html)
 - [Marvis 多智能体桌面助手](../ch03/096-marvis.html)
-- [AgentCore Trip Allocation](../ch04/782-agentcore-harness.html)
-- [Agent 评测方法论](../ch03/037-agent.html)
+- [AgentCore Trip Allocation](../ch04/783-agentcore-harness.html)
+- [Agent 评测方法论](../ch03/019-agent.html)
 - [Harness Engineering Survey 2026](../ch05/065-harness-engineering.html)
 - [Alibaba Agentic Cloud](../ch04/440-agentic-cloud.html)
 

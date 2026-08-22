@@ -136,7 +136,7 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 ## 相关实体
 - [AgentBrowser](../ch09/080-agent-browser-claude-code-qoderwork.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch06/048-memory.html)
-- [Agent 自我改进的六条路](../ch03/037-agent.html)
+- [Agent 自我改进的六条路](../ch03/019-agent.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/1130-20.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [SkillClaw](../ch04/563-skillclaw-nacos-agent-skill-registry.html)
@@ -150,10 +150,10 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 - [AgentRun](../ch04/473-agentrun.html)
 - [OpenCLI](../ch03/095-opencli.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
-- [24h打工人](../ch03/037-agent.html)
+- [24h打工人](../ch03/019-agent.html)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/909-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/099-hermes-agent.html)
-- [Agent 原理、架构与工程实践](../ch03/037-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
 - [AI Agent 工程师能力地图](../ch04/377-ai-agent.html)
 
 - [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/180-agent-memory.html)

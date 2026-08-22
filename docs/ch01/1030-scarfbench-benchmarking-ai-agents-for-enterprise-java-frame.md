@@ -61,7 +61,7 @@ ScarfBench 的数据对采用 AI Agent 进行企业 Java 现代化的组织有�
 - [AI Coding Paradigm Evolution](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-paradigm-evolution.md)
 - 编码 Agent 评估
 - [企业 Agent 编排](../ch04/624-agent-orchestration.html)
-- [面向 Agent 的后端设计](../ch03/037-agent.html)
+- [面向 Agent 的后端设计](../ch03/019-agent.html)
 
 ## 来源
 

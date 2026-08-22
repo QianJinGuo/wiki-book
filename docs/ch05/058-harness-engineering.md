@@ -91,7 +91,7 @@ Harness 的渐进披露信息系统：
 
 ## 相关
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Agent 工程实践](../ch03/037-agent.html)
+- [Agent 工程实践](../ch03/019-agent.html)
 - [OpenClaw 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)
 
 ## 深度分析

@@ -66,9 +66,9 @@ PointFive 的实测数据为"上下文陷阱"提供了直接的量化证据：Ag
 
 - [AI Coding 效率分析](../ch05/126-ai-coding.html)
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [Agent 评测方法论](../ch03/037-agent.html)
+- [Agent 评测方法论](../ch03/019-agent.html)
 - [Anthropic 输出验证瓶颈](../ch09/104-anthropic-8x.html)
-- [Agent 落地真相：协议、成本与进化](../ch03/037-agent.html)
+- [Agent 落地真相：协议、成本与进化](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/token不经济.md)
 → [PointFive 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pointfive-token-reduction-not-cost-reduction.md)

@@ -111,7 +111,7 @@ Lite-80 的成本约为 full-350 的 22.9%，在 17 个校准列上两者 Pass@1
 
 **4. 标准化评测协议是隔离 harness 效应的前提**
 
-Claw-SWE-Bench 在外层固定了 prompt 模板、任务集、Docker 运行环境、超时预算（3600 秒），使得不同 harness 之间的 Pass@1 差异可以真正归因到 harness 自身的内部实现。在内部评测中复现这一思路——控制住所有外部变量——才能真正识别出是模型强了还是 harness 优化了。 [Agent Eval 框架](../ch03/037-agent.html)
+Claw-SWE-Bench 在外层固定了 prompt 模板、任务集、Docker 运行环境、超时预算（3600 秒），使得不同 harness 之间的 Pass@1 差异可以真正归因到 harness 自身的内部实现。在内部评测中复现这一思路——控制住所有外部变量——才能真正识别出是模型强了还是 harness 优化了。 [Agent Eval 框架](../ch03/019-agent.html)
 
 **5. 定期审计 benchmark 的数据完整性，防止答案泄露破坏公平性**
 
@@ -120,11 +120,11 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 ## 相关实体
 
 - [Harness Engineering](../ch05/065-harness-engineering.html)
-- [Coding Harness 工程本质](../ch11/253-openclaw.html)
+- [Coding Harness 工程本质](../ch11/254-openclaw.html)
 - [复旦北大 AHE Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [OpenClaw Agent Loop Design Patterns](../ch01/1221-openclaw-agent.html)
 - [Harness Engineering 7 Layers](../ch05/065-harness-engineering.html)
-- [Agent Eval 框架](../ch03/037-agent.html)
+- [Agent Eval 框架](../ch03/019-agent.html)
 - [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](../ch05/126-ai-coding.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)

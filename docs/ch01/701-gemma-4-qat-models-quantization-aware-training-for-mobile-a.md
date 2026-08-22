@@ -113,7 +113,7 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 在关键场景中部署量化模型时，保留 FP16 版本作为回退——当量化模型的输出质量不可接受时，自动切换到高精度版本。
 
 ## 相关实体
-- [Alphaevolve Deepmind Discovery Agent](../ch03/037-agent.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/019-agent.html)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/430-gemma-4-multi-token-prediction-drafters.html)
 - [Google Ai Vulnerability Exploitation Threat Intel](../ch05/109-ai.html)
 - [Bonsai Image 4B 1 Bit Ternary](../ch05/109-ai.html)

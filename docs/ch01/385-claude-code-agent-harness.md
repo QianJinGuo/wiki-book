@@ -116,7 +116,7 @@ Claude Code 通过 `isConcurrencySafe()` 标记控制并发执行：
 
 **关键工程细节**：工具可以修改后续上下文——有些工具返回"上下文修改函数"用于更新 `ToolUseContext`。并发批次先收集修改，整批完再统一应用；串行批次每个工具执行完立刻应用。**这一设计避免了并发冲突**。
 
-这与 [Factory Mission](../ch03/037-agent.html) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
+这与 [Factory Mission](../ch03/019-agent.html) 的"串行 + 定点内部并行"策略有异曲同工之妙——但 Mission 是 Agent 间的串行，Claude Code 是工具间的串行。
 
 ### 7. 分层权限机制：4 层检查的设计取舍
 
@@ -305,14 +305,14 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [Claude Code Harness 深度解析](../ch05/087-claude-code-harness.html)
 - [Claude Code Harness 深度理解](ch01/638-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-- [Agent 记忆系统工程实践](../ch03/037-agent.html)
+- [Agent 记忆系统工程实践](../ch03/019-agent.html)
 - [Harness Engineering Core Patterns](../ch05/065-harness-engineering.html)
 - [Harness 状态边界与失败闭环](../ch05/077-harness.html)
-- [Factory Mission Multi-Agent 系统](../ch03/037-agent.html)
+- [Factory Mission Multi-Agent 系统](../ch03/019-agent.html)
 - [Claude Managed Agents 企业自托管](../ch04/634-claude-managed-agents.html)
 - [OpenClaw 多 Agent 团队实践](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
-- [OpenClaw 完全指南](../ch11/253-openclaw.html)
-- [OpenClaw 多智能体团队搭建经验](../ch11/253-openclaw.html)
+- [OpenClaw 完全指南](../ch11/254-openclaw.html)
+- [OpenClaw 多智能体团队搭建经验](../ch11/254-openclaw.html)
 - [Headroom Context Compression](../ch06/044-headroom.html)
 - [AI Agent Harness 构建](ch01/1192-ai-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)

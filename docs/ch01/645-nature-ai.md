@@ -72,7 +72,7 @@
 
 ## 相关实体
 
-- [Agent Capital Markets](../ch03/037-agent.html)
+- [Agent Capital Markets](../ch03/019-agent.html)
 - [Agent Architecture Harness](../ch05/077-harness.html)
 - [Program-as-Weights PAW](https://github.com/QianJinGuo/wiki/blob/main/entities/program-as-weights-paw-fuzzy-functions-waterloo.md)
 

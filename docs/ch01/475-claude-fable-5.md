@@ -69,7 +69,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 > 这是与 Fable 5 降级路由**本质相同的设计思路**：用配置而非代码实现护栏弹性。
 
-> 与 [NVIDIA Nemotron 3 内容安全](../ch03/037-agent.html) 在"token-level 流式安全审核"维度同模式（Qwen3Guard-Stream 的对应英文实现）。
+> 与 [NVIDIA Nemotron 3 内容安全](../ch03/019-agent.html) 在"token-level 流式安全审核"维度同模式（Qwen3Guard-Stream 的对应英文实现）。
 
 ### 域 3 — Anthropic 护栏：约束模型间路由（决策性）
 
@@ -117,7 +117,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 ## 实践启示
 
 1. **护栏设计 checklist**：直接套用 5 原则——声明式（JSON/YAML）、旁路执行（独立检测器）、梯度响应（观察→降级→拒绝）、可观测（日志+UI）、分层继承（系统级→分组级→用户级）
-2. **token-level 流式安全**：高敏感场景（金融/医疗/未成年人）应采用 [Qwen3Guard-Stream 风格](../ch03/037-agent.html) 逐 token 审核，而非等整条回复完毕再判定
+2. **token-level 流式安全**：高敏感场景（金融/医疗/未成年人）应采用 [Qwen3Guard-Stream 风格](../ch03/019-agent.html) 逐 token 审核，而非等整条回复完毕再判定
 3. **对抗性场景必须旁路执行**：内嵌式"让模型自己判断"在 jailbreak / prompt injection 场景**几乎必然被绕过**——必须独立分类器
 4. **可观测性是调优前提**：Fable 5 的 UI 通知是**产品级可观测**的极端——把"护栏对自己做了什么"告诉用户是**最有效的反馈循环**
 5. **降级优于拒绝**：Fable 5 不拒绝而是降级到 Opus 4.8，**用户仍然拿到有价值回复**——这是护栏"用户体验设计"的核心原则
@@ -132,8 +132,8 @@ ActionTrail 操作审计            ←  每次拒绝可审计
   - [Fable 5 Mollick hands-on](ch01/475-claude-fable-5.html)（用户体验视角）
 - **同护栏 / 安全主题**：
   - [AI Gateway vs MCP Gateway 安全分析](../ch11/090-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
-  - [NVIDIA Nemotron 3 Agents RAG Voice Safety](../ch03/037-agent.html)
-  - [Amazon Bedrock Agentic Payments Guardrails](../ch11/308-amazon-bedrock.html)
+  - [NVIDIA Nemotron 3 Agents RAG Voice Safety](../ch03/019-agent.html)
+  - [Amazon Bedrock Agentic Payments Guardrails](../ch11/309-amazon-bedrock.html)
   - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/124-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
   - [Nemotron 3.5 Content Safety](ch01/690-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
   - [阿里集团 AI 代码评审安全带](../ch05/109-ai.html)

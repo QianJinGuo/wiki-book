@@ -104,9 +104,9 @@ Autonomous Suite 的分阶段落地（从 RISE 客户第一年的 3 个 Assistan
 ## 相关实体
 - [Sap Unveils The Autonomous Enterprise](ch04/158-sap-unveils-the-autonomous-enterprise.html)
 - [News Sap Com Sap Unveils The Autonomous Enterprise](ch04/158-sap-unveils-the-autonomous-enterprise.html)
-- [Enterprise Software Moats Agent Era](../ch03/037-agent.html)
+- [Enterprise Software Moats Agent Era](../ch03/019-agent.html)
 - [The Ui Is Dead Long Live The Agent](ch04/466-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/239-amazon-quick.html)
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](../ch11/240-amazon-quick.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-unveils-autonomous-enterprise.md)
 

@@ -51,7 +51,7 @@ SCTP 与 TCP 的关键差异在于多宿主关联（multi-homing）：一个连�
 ## 相关实体
 
 - [Agent 安全攻防综述](ch04/377-ai-agent.html)
-- [Agent 评测综述（IBM/Yale 2026）](../ch03/037-agent.html)
+- [Agent 评测综述（IBM/Yale 2026）](../ch03/019-agent.html)
 - [Fragnesia：Linux 内核 LPE（ESP-in-TCP）](../ch01/1286-rag.html)
 - [Autonomous Vulnerability Hunting with MCP](../ch12/061-autonomous-vulnerability-hunting-with-mcp.html)
 - [Anthropic N-days：前沿 Agent 漏洞研究](ch04/330-anthropic-n-days-frontier-agent-vulnerability-research.html)

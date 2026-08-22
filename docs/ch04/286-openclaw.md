@@ -83,15 +83,15 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/350-skill.html)
-- [四种 Sub Agent 模式](../ch03/037-agent.html)
+- [四种 Sub Agent 模式](../ch03/019-agent.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](ch04/033-agent-skills.html)
 ---
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
 
 ## 相关实体
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/253-openclaw.html)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/254-openclaw.html)
 - [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/065-harness-engineering.html)
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/253-openclaw.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/254-openclaw.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/023-hermes-agent-vs-openclaw.html)
 - [AIAIGC峰会嘉宾阵容](ch04/623-aiaigc.html)
 - [OpenClaw 多智能体团队搭建实战经验](ch04/102-openclaw-multi-agent-team-practice-v2.html)

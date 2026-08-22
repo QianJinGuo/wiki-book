@@ -114,7 +114,7 @@ Harness 和 Environment 不是替代关系：
 - [Loop Engineering](../ch05/122-loop-engineering.html)——Loop 关心任务怎么持续发生，Environment 关心循环所依赖的事实源是否可靠
 - [Loop Engineering 反馈控制系统](../ch05/122-loop-engineering.html)——反馈控制的前提是环境能给出可信反馈
 - [Self-Harness](../ch05/077-harness.html)——没有可靠环境，自我改进很容易变成自我强化
-- [Agent 开发范式演进：从环境工程出发](../ch03/037-agent.html)——同主题不同角度，侧重多源实时上下文简化
+- [Agent 开发范式演进：从环境工程出发](../ch03/019-agent.html)——同主题不同角度，侧重多源实时上下文简化
 - [清华 Harness Engineering 报告](../ch05/065-harness-engineering.html)——EurekAgent 的权限/产物/预算/人在环四工程与清华报告互补
 
 ---

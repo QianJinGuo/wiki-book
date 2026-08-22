@@ -55,7 +55,7 @@ Agent 评测结构比传统评测复杂得多：需要先准备好工具、运�
 建立评测体系后遇到表现下降时，第一反应是查环境（资源是否不足）、查评分器本身是否有 bug、查测试用例是否和生产场景脱节。只有确认评测系统本身没有问题后，才基于失真信号去调整 Agent 方向。评测套件饱和了不是好事——当通过率接近 100% 时应该补充更难的任务。
 
 ## 相关实体
-- [Agent Engineering Principles Architecture Practice](../ch03/037-agent.html)
+- [Agent Engineering Principles Architecture Practice](../ch03/019-agent.html)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/065-harness-engineering.html)
 - [Factory Mission Multi Agent Architecture](../ch01/1474-factory-mission-multi-agent-architecture.html)
 - [Harness Engineering Long Term Agent Tasks](../ch05/065-harness-engineering.html)

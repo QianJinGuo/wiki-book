@@ -138,9 +138,9 @@ Live 模式的价值是把"AI 输出"从单向的"修改文件"变成双向的"�
 ## 相关实体
 
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/037-agent.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/253-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/253-openclaw.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/254-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/254-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/350-skill.html)

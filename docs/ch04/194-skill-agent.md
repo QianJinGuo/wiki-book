@@ -134,12 +134,12 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch06/048-memory.html)
 - [9个Agent技能模块化SageMaker微调生命周期](ch04/515-aws-sagemaker-ai-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/350-skill.html)
-- [Agent 自我改进的六条路](../ch03/037-agent.html)
+- [Agent 自我改进的六条路](../ch03/019-agent.html)
 - [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/1130-20.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/350-skill.html)
 - [SkillX — 层次化技能知识库](../ch07/060-skillx.html)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/253-openclaw.html)
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/254-openclaw.html)
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/315-anthropic-agent.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [OpenHuman: AI Agent 持久记忆框架](ch04/180-agent-memory.html)
@@ -154,7 +154,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [hermes-agent-self-evolving-source-analysis](../ch03/099-hermes-agent.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/073-claude-code-prompt.html)
-- [Agent 原理、架构与工程实践](../ch03/037-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 

@@ -177,9 +177,9 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-openclaw-memory-comparison.md)
 
 - [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
-- [agent资本市场：自主agent融资框架与批判](../ch03/037-agent.html)
+- [agent资本市场：自主agent融资框架与批判](../ch03/019-agent.html)
 - [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](../ch03/085-claude-code.html)
-- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/253-openclaw.html)
+- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/254-openclaw.html)
 
 - [claude code 1.0.24 工具调用安全事故：静默删 .gitignore 与 redis flush 复盘](../ch03/085-claude-code.html)
 

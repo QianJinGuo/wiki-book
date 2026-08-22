@@ -39,8 +39,8 @@ ServiceNow 愿意接纳 Anthropic 等竞品 Agent 在其平台运行，反映了
 ## 相关实体
 - [The UI is dead, long live the agent: ServiceNow goes headless](ch04/466-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/466-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch03/037-agent.html)
-- [Auto-Improving Agent Platform (Ashpreet Bedi)](../ch03/037-agent.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch03/019-agent.html)
+- [Auto-Improving Agent Platform (Ashpreet Bedi)](../ch03/019-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
 

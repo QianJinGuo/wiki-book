@@ -62,7 +62,7 @@ print(result['content'][0]['text'])
 
 ### 3. 作为 Codex Agent 的推理后端
 
-[OpenAI Codex on Bedrock](../ch11/308-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
+[OpenAI Codex on Bedrock](../ch11/309-amazon-bedrock.html) 可直接使用 Bedrock 作为推理运行时，Codex 的编码 Agent 能力与 Bedrock 的安全基础设施深度整合——适合需要企业级审计和合规的软件开发场景。
 
 ## 模型对比与选型
 
@@ -95,14 +95,14 @@ GPT-5.5 在 Bedrock 上表现出显著的 Agentic Coding 能力提升：
 
 ### 成本管控
 
-[Bedrock 模型选择器](../ch11/260-simplify-model-selection-in-amazon-bedrock-with-the-open-sou.html)可以帮助团队基于任务复杂度自动选择最优模型。结合 AWS 的成本管理工具，可实现：
+[Bedrock 模型选择器](../ch11/261-simplify-model-selection-in-amazon-bedrock-with-the-open-sou.html)可以帮助团队基于任务复杂度自动选择最优模型。结合 AWS 的成本管理工具，可实现：
 - 按团队/项目维度的模型调用成本拆分
 - 月度预算预警与自动限流
 - 模型调用量的可视化和趋势分析
 
 ### 安全合规
 
-通过 [Bedrock AgentCore 安全加固](../ch11/273-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)，可以为 OpenAI 模型的调用叠加多层防护：
+通过 [Bedrock AgentCore 安全加固](../ch11/274-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)，可以为 OpenAI 模型的调用叠加多层防护：
 - WAF 策略：过滤恶意输入和提示注入攻击
 - 数据加密：TLS 传输加密 + KMS 静态加密
 - 审计日志：所有模型调用写入 CloudTrail，满足 SOC2/GDPR 合规要求
@@ -149,10 +149,10 @@ Codex 作为编码 Agent 在 Bedrock 上的部署模式，代表了 AI 编码工
 
 ## 相关实体
 
-- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/308-amazon-bedrock.html)
+- [OpenAI models and Codex on Amazon Bedrock - GA](../ch11/309-amazon-bedrock.html)
 - [Amazon Bedrock AgentCore Harness GA](../ch04/592-amazon-bedrock-agentcore-harness-ga-api-agent.html)
 - [AWS Bedrock Multi-Agent Collaboration Guide](../ch11/019-aws-bedrock.html)
-- [Securing Bedrock AgentCore with AWS WAF](../ch11/273-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)
+- [Securing Bedrock AgentCore with AWS WAF](../ch11/274-securing-amazon-bedrock-agentcore-runtime-with-aws-waf.html)
 - [LiteLLM + Bedrock Cost Control](../ch11/049-litellm-amazon-bedrock.html)
 - [Bedrock AgentCore Quality Optimization Flywheel](../ch11/137-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [Deep Agents on Bedrock AgentCore](../ch04/624-agent-orchestration.html)

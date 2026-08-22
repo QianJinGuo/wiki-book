@@ -16,11 +16,11 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 - [Aliyun Agentrun 2Line Integration](../ch04/473-agentrun.html)
 - [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/377-ai-agent.html)
 - [Pi Mono Github](../ch01/1116-pi-mono-github.html)
-- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/308-amazon-bedrock.html)
+- [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/309-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cli-mcp-sdk-agent-tool-selection.md)
 
-- [crawler vs opencli doubao](../ch03/031-crawler-vs-opencli-doubao.html)
+- [crawler vs opencli doubao](../ch03/032-crawler-vs-opencli-doubao.html)
 
 ## 深度分析
 

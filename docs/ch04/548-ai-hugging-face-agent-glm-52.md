@@ -100,7 +100,7 @@ Hugging Face CEO 的立场强调了开放模型对防御的价值：禁止开源
 ## 相关实体链接
 
 - Hugging Face
-- [GLM 5.2](../ch03/037-agent.html)
+- [GLM 5.2](../ch03/019-agent.html)
 - [AI Agent 安全](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 - 供应链安全
 - [OpenAI 模型逃逸事件](../ch01/1000-openai.html)

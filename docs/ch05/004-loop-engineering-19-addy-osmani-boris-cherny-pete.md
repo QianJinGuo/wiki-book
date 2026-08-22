@@ -43,7 +43,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 ### 三个循环搞不定的问题
 
-- **验证仍在人头上**："做完了"是声明不是证明——[Agent 可靠性](../ch03/037-agent.html)的核心挑战
+- **验证仍在人头上**："做完了"是声明不是证明——[Agent 可靠性](../ch03/019-agent.html)的核心挑战
 - **理解债（Comprehension Debt）**：循环越快交付你没写的代码，"真实存在"和"你实际搞懂"的鸿沟越大
 - **认知投降（Cognitive Surrender）**：最舒服的姿势恰最危险——循环给啥收啥。设计循环带判断力=解药；为逃避思考=助燃剂
 
@@ -58,7 +58,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 - [Agent Harness Architecture](ch05/043-agent-harness.html)
 - [Claude Code 深度分析](../ch03/085-claude-code.html)
 - [Harness Engineering](ch05/065-harness-engineering.html)
-- [Agent Self-Improvement](../ch03/037-agent.html)
+- [Agent Self-Improvement](../ch03/019-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-addy-osmani-challengehub.md)
 
