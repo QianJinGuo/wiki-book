@@ -29,7 +29,7 @@ Fable 5 能够理解嵌套在文件和 PDF 中的图表和表格，这在以下�
 - **建筑图纸**：理解二维平面图的空间关系（实验性能力）
 - **游戏资产**：高保真度实施设计稿并对照目标自检输出
 
-在编码场景中，视觉能力尤为实用：Fable 5 可以读取设计稿（截图或 PDF 格式）并生成对应代码，同时利用视觉功能对照目标进行自检。这与 [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](../ch05/126-ai-coding.html) 中描述的"视觉-代码闭环"高度吻合。
+在编码场景中，视觉能力尤为实用：Fable 5 可以读取设计稿（截图或 PDF 格式）并生成对应代码，同时利用视觉功能对照目标进行自检。这与 [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](../ch05/127-ai-coding.html) 中描述的"视觉-代码闭环"高度吻合。
 
 ### 3. 主动自我验证
 
@@ -162,7 +162,7 @@ Fable 5 是"有保护措施的 Mythos 级功能"，而非"无限制的 Mythos"�
 
 ## 相关实体
 
-- [Hermes Agent Skills Source Code Analysis Shuge](../ch04/533-hermes-agent-skills.html)
+- [Hermes Agent Skills Source Code Analysis Shuge](../ch04/534-hermes-agent-skills.html)
 - [Skill Rm Qwen Agent Skill Reward Model](../ch04/614-agent-skill.html)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/085-claude-code.html)
 - [Skill Hub Organization Asset Winty](../ch04/350-skill.html)

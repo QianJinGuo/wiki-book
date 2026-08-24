@@ -61,7 +61,7 @@ AI让每个角色成为"超级个体"，但完整工作的推进并未因此变�
 
 该实践是[Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/loop-engineering-methodology.md)概念在组织级AI协作中的具体落地。传统Loop Engineering聚焦个体开发者的反馈闭环（修改→测试→看错误→再修复），而腾讯的实践将这一理念扩展到团队协作层面——需求、Bug、改进项在Agent间流转而不需要人的干预，最终实现"凌晨3点无人值守的AI军团"。
 
-若将[Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)视为个体Loop的编排方式，本次实践进一步升维为**组织级Loop**：工作事件进入→工作流接手→Agent协作执行→状态判断→验收或返工→指标沉淀→下一轮优化。这与[CodeBuddy的Inner/Outer Loop](../ch05/122-loop-engineering.html)分属不同层级——后者关注单Agent编码循环，此处关注多Agent的组织循环。
+若将[Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)视为个体Loop的编排方式，本次实践进一步升维为**组织级Loop**：工作事件进入→工作流接手→Agent协作执行→状态判断→验收或返工→指标沉淀→下一轮优化。这与[CodeBuddy的Inner/Outer Loop](../ch05/123-loop-engineering.html)分属不同层级——后者关注单Agent编码循环，此处关注多Agent的组织循环。
 
 ## 深度分析
 
@@ -93,11 +93,11 @@ AI让每个角色成为"超级个体"，但完整工作的推进并未因此变�
 - [Loop Engineering 方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/loop-engineering-methodology.md) — 从个体Loop到组织级Loop的升维
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) — Agent编排的设计模式体系
 - [多 Agent 协作编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md) — 协作编排的通用框架
-- [CodeBuddy Loop Engineering](../ch05/122-loop-engineering.html) — 腾讯同团队单Agent编码循环实践
-- [Agent Loop 工程手册](../ch05/122-loop-engineering.html) — 腾讯陈进关于Agent Loop未解问题的探讨
-- [Agentic Loop Engineering 工程手册](../ch05/122-loop-engineering.html) — Loop工程化的实证框架
+- [CodeBuddy Loop Engineering](../ch05/123-loop-engineering.html) — 腾讯同团队单Agent编码循环实践
+- [Agent Loop 工程手册](../ch05/123-loop-engineering.html) — 腾讯陈进关于Agent Loop未解问题的探讨
+- [Agentic Loop Engineering 工程手册](../ch05/123-loop-engineering.html) — Loop工程化的实证框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent工程化的支撑框架
-- [腾讯Harness Engineering落地规范](../ch05/065-harness-engineering.html) — 腾讯团队的工程化规范实践
+- [腾讯Harness Engineering落地规范](../ch05/066-harness-engineering.html) — 腾讯团队的工程化规范实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/揭秘如何打造一支凌晨3点还在交付的ai军团.md)
 

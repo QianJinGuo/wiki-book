@@ -60,8 +60,8 @@ Unibase Memory 等共享记忆方案面临的核心工程挑战是并发写入�
 - [Codex 5 Layer Architecture](ch01/737-codex.html) — Codex 的架构设计
 - [Claude Code Multi Agent Collaboration 多智能体协作体系设计](../ch03/085-claude-code.html) — 多智能体协作体系设计
 - [Ai Agent Loops Claude Code Codex](../ch03/085-claude-code.html) — AI Agent 循环与代码生成
-- [Harness 之后 状态边界与失败闭环 若飞](../ch05/077-harness.html) — Harness 工程中的状态与边界管理
-- [Harness Engineering](../ch05/065-harness-engineering.html) — Harness Engineering 总体概念
+- [Harness 之后 状态边界与失败闭环 若飞](../ch05/091-harness.html) — Harness 工程中的状态与边界管理
+- [Harness Engineering](../ch05/066-harness-engineering.html) — Harness Engineering 总体概念
 
 ---
 

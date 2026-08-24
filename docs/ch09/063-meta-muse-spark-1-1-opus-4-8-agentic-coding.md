@@ -14,7 +14,7 @@ Meta 于 2026年7月10日正式发布 Muse Spark 1.1，一个主打 agentic 和 
 
 Muse Spark 1.1 在 MCP Atlas 上拿到 88.1 分（工具调用得分最高），第二名 Opus 4.8 为 82.2。JobBench（职业级工具使用）54.7，高于 Opus 4.8 的 48.4。HLE（带工具）62.1，拿下第一。在 Agent 评测线上，Muse Spark 1.1 基本压过 Opus 4.8 和 GPT-5.5。 GPT-5.5 在 MCP Atlas 上仅获 75.3 分，被拉开超过 12 分。
 
-Coding 方面：SWE-Bench Pro 61.5（Opus 4.8 为 69.2），编程水平约为 [GLM 5.2](../ch03/019-agent.html) 同一档位。 Terminal-Bench 2.1 Meta 自测 80.0，第三方 Vals AI 测得 69.29，显示评测差异。Meta 内部编码基准 68.3，仅次于 Opus 4.8（69.0），高于 GPT-5.5（67.1）。
+Coding 方面：SWE-Bench Pro 61.5（Opus 4.8 为 69.2），编程水平约为 [GLM 5.2](../ch03/006-agent.html) 同一档位。 Terminal-Bench 2.1 Meta 自测 80.0，第三方 Vals AI 测得 69.29，显示评测差异。Meta 内部编码基准 68.3，仅次于 Opus 4.8（69.0），高于 GPT-5.5（67.1）。
 
 通用推理并非其强项：GPQA 排第 12，MMLU Pro 第 9，竞赛编程 LiveCodeBench 第 17，SAGE 在 63 家中排第 20。Muse Spark 1.1 是专业场景的「刺客」，非全能王。
 
@@ -38,7 +38,7 @@ Muse Spark 1.0 年初发布时表现平平。1.1 版本实现脱胎换骨的提�
 
 ## 定价与性价比
 
-定价是其最具杀伤力的武器：输入 $1.25/1M tokens，缓存输入 $0.15/1M，输出 $4.25/1M。对比：Opus 4.8 为 $5/$25，Fable 5 为 $10/$50，[Grok 4.5](../ch05/109-ai.html) 为 $2/$6。 这意味着输入不到 Opus 四分之一、输出不到五分之一；综合成本约为 [Fable 5](../ch04/693-fable-5.html) 的十分之一。
+定价是其最具杀伤力的武器：输入 $1.25/1M tokens，缓存输入 $0.15/1M，输出 $4.25/1M。对比：Opus 4.8 为 $5/$25，Fable 5 为 $10/$50，[Grok 4.5](../ch05/110-ai.html) 为 $2/$6。 这意味着输入不到 Opus 四分之一、输出不到五分之一；综合成本约为 [Fable 5](../ch04/693-fable-5.html) 的十分之一。
 
 同时保持高速：Vals AI 榜单显示，Fable 5、Opus 4.8、Sonnet 5 跑测试动辄 1000 秒起步，Muse Spark 1.1 仅需 388 秒。每个测试成本仅 $0.50，是同档最低。有工程师实测称成本约为 Fable/GPT-5.5 的十分之一，甚至比自己托管开源模型还便宜；延迟约为 Opus 4.8 的四分之一。
 
@@ -67,7 +67,7 @@ Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入
 
 ## 深度分析
 
-1. **Agent 能力 > 通用能力的分化进一步确认。** Muse Spark 1.1 在 Agent 评测上碾压 Opus 4.8，在通用基准上掉出前十。模型设计进行了明确的「能力定向强化」，与 [Harness Engineering](../ch05/065-harness-engineering.html) 范式「场景定义能力」的理念高度吻合。
+1. **Agent 能力 > 通用能力的分化进一步确认。** Muse Spark 1.1 在 Agent 评测上碾压 Opus 4.8，在通用基准上掉出前十。模型设计进行了明确的「能力定向强化」，与 [Harness Engineering](../ch05/066-harness-engineering.html) 范式「场景定义能力」的理念高度吻合。
 
 2. **价格战是比能力战更致命的武器。** 真正颠覆性不在跑分，而在于以 Opus 4.8 五分之一的价格提供接近的能力。Replit CEO 称其为「完整的 Agent 底座」；Cline CEO 称此价格才让大规模跑编码任务变得划算。目标不是秀肌肉，而是抢份额。
 
@@ -91,13 +91,13 @@ Meta 研究员 Shuchao Bi 透露：加入了更多更高质量的数据，投入
 
 ## 相关实体
 
-- [Grok 4.5](../ch05/109-ai.html) — 同期 xAI 模型，法律榜上被 Muse Spark 1.1 在 24 小时内超越
+- [Grok 4.5](../ch05/110-ai.html) — 同期 xAI 模型，法律榜上被 Muse Spark 1.1 在 24 小时内超越
 - [GPT-5.6 系列](../ch01/737-codex.html) — OpenAI 同日发布的降价系列
-- [GLM 5.2](../ch03/019-agent.html) — 编程水平同档位的开源 Agent 模型
+- [GLM 5.2](../ch03/006-agent.html) — 编程水平同档位的开源 Agent 模型
 - [Fable 5](../ch04/693-fable-5.html) — Anthropic 旗舰，在 MedScribe/TaxEval 上被超越
 - [Gemini 3.5](../ch01/698-gemini-3-5-frontier-intelligence-with-action.html) — Google 旗舰竞争模型
 - [Sonnet 5](../ch01/1212-claude.html) — Anthropic 高性价比模型
-- [Harness Engineering](../ch05/065-harness-engineering.html) — 相关工程范式
+- [Harness Engineering](../ch05/066-harness-engineering.html) — 相关工程范式
 - [Agentic RL 框架与实践](../ch04/314-agentic-rl.html) — 训练相关的强化学习技术路线
 - [MCP 协议](../ch07/095-mcp-protocol.html) — MCP Atlas 上取得最高分，零样本支持 MCP server
 - [Cline](../ch04/593-cline-releases-open-source-agent-runtime-sdk.html) — Meta Model API 早期合作伙伴

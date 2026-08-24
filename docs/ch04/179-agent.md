@@ -55,7 +55,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 6. **Skill版本管理** — 技能迭代有版本号、可对比、可回滚
 7. **数据访问控制** — 敏感数据的访问级别和范围精确管控
 
-参考：[Agent Harness Engineering Survey](../ch05/065-harness-engineering.html) 中的 ETCLOVG 治理维度。
+参考：[Agent Harness Engineering Survey](../ch05/066-harness-engineering.html) 中的 ETCLOVG 治理维度。
 
 ## 模型非唯一壁垒
 
@@ -109,7 +109,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 - **行动层**依赖记忆来调用技能（"我有一个SKILL可以处理这个"）
 
 ## 相关实体
-- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch05/109-ai.html)
+- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](../ch05/110-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/acker-agent-evolution-three-routes-convergence.md)
 
 - [fanling company as agent ai org reflection v2](../ch01/1102-agent-ai.html)

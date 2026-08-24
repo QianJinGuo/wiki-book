@@ -114,7 +114,7 @@ Multi-turn is where it starts to matter. When the assistant emits tokens, you d
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/085-claude-code.html)
 - [Skill Os Learning Skill Curation Self Evolving Agents](ch04/289-self-evolving-agents.html)
 - [Hermes Agent Deep Dive](../ch03/099-hermes-agent.html)
-- [Baixing Ontoz Enterprise Ontology Multi Agent](../ch03/019-agent.html)
+- [Baixing Ontoz Enterprise Ontology Multi Agent](../ch03/006-agent.html)
 - [Yann Dubois Openai Post Training Interview](../ch01/1000-openai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 

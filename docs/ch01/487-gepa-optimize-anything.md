@@ -106,7 +106,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 
 ## 相关概念
 - [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
-- [AlphaEvolve](../ch03/019-agent.html) — DeepMind 代码进化型科学发现 Agent
+- [AlphaEvolve](../ch03/006-agent.html) — DeepMind 代码进化型科学发现 Agent
 - [Agent Memory 模块化框架与评测](../ch04/180-agent-memory.html) — ICLR 2026 评测基准
 - [Skill RAG 清华 SRA](../ch04/350-skill.html) — 技能增强型检索
 
@@ -130,7 +130,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
-- [腾讯研究院Ai速递 20260507](../ch05/109-ai.html)
+- [腾讯研究院Ai速递 20260507](../ch05/110-ai.html)
 - [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](../ch04/208-karpathy-ai.html)
 - [Kasra Blog Llm Hacking Empirical Test](ch01/1147-llm.html)
 - [Hermes Agent V014 Architecture Shugex](../ch03/099-hermes-agent.html)

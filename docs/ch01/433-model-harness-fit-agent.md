@@ -207,9 +207,9 @@ Rajasekaran 的案例极具说明性：为 Sonnet 4.5 精心设计的 context re
 
 ## 相关实体
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/377-ai-agent.html)
-- [Browser Use Runtime Harness](../ch05/077-harness.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/077-harness.html)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务](../ch05/065-harness-engineering.html)
+- [Browser Use Runtime Harness](../ch05/091-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/091-harness.html)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务](../ch05/066-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/043-agent-harness.html)
 
 ---

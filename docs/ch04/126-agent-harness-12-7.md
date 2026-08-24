@@ -12,8 +12,8 @@ Agent = Model + Harness。模型负责智能，Harness 负责把智能变成能�
 LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 从榜外跳到第 5 名。
 
 ## 相关实体
-- [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](../ch05/077-harness.html)
-- [Harness Engineering Framework](../ch05/065-harness-engineering.html)
+- [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](../ch05/091-harness.html)
+- [Harness Engineering Framework](../ch05/066-harness-engineering.html)
 - [Langchain Anatomy Agent Harness](../ch05/043-agent-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/377-ai-agent.html)
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)

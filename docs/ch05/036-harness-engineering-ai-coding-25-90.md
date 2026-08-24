@@ -58,7 +58,7 @@
 - 原则：**"Waiting is expensive, fixing is cheap"** —— 宁可让 Agent 多跑一轮验证
 
 ## 子页面
-- [四根支柱与四要素架构](ch05/065-harness-engineering.html) — 四根支柱详解、四要素架构、关键经验、效果对比
+- [四根支柱与四要素架构](ch05/066-harness-engineering.html) — 四根支柱详解、四要素架构、关键经验、效果对比
 
 ## 参考资料
 - [Anthropic: Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
@@ -73,10 +73,10 @@
 
 ## 相关实体
 
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch05/065-harness-engineering.html)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/065-harness-engineering.html)
-- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](ch05/065-harness-engineering.html)
-- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/077-harness.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](ch05/066-harness-engineering.html)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/066-harness-engineering.html)
+- [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](ch05/066-harness-engineering.html)
+- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/091-harness.html)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/350-skill.html)
 

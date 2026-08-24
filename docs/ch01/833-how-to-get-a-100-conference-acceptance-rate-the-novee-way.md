@@ -65,7 +65,7 @@ _De
 
 ## 相关实体
 - [Tomtunguz Com Software After Ai](ch01/1002-software-after-ai.html)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/109-ai.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/110-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/309-amazon-bedrock.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/240-amazon-quick.html)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/665-amazon-bedrock-agentcore.html)

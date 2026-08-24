@@ -6,7 +6,7 @@
 
 # STAROps Host Intelligent Inspection
 
-STAROps 主机智能巡检是阿里云全域智能运维平台 [STAROps](../ch04/440-agentic-cloud.html) 的一项核心能力，面向主机（ECS）基础设施层提供「自动体检 + AI 医生」式巡检——从事后救火转向事前防护。
+STAROps 主机智能巡检是阿里云全域智能运维平台 [STAROps](../ch04/441-agentic-cloud.html) 的一项核心能力，面向主机（ECS）基础设施层提供「自动体检 + AI 医生」式巡检——从事后救火转向事前防护。
 
 STAROps 的名字代表运维四层理念：全域感知（Sense）、目标导向（Target）、自主运维（Autonomy）、业务韧性（Resilience）。主机智能巡检正是「业务韧性」的关键实现——自动为每台主机做一次覆盖 **CPU、内存、磁盘、网络、GPU、内核、硬件七大领域、超过 50 个检查项** 的全面检查。
 
@@ -63,7 +63,7 @@ STAROps 与阿里云操作系统控制台的运维组件 **SysOM** 分工协作�
 ## 关联
 - 姊妹能力: [STAROps RUM Intelligent Inspection](../ch01/1214-spec.html)
 - 姊妹能力: [STAROps UModel 数字孪生 + OpenAPI 嵌入（客户集成模式）](../ch01/1130-20.html)
-- 平台: [阿里云 Agentic Cloud](../ch04/440-agentic-cloud.html)
+- 平台: [阿里云 Agentic Cloud](../ch04/441-agentic-cloud.html)
 
 ---
 

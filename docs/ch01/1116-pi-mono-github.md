@@ -14,12 +14,12 @@ pi-mono 是一个 npm workspace monorepo 的 TypeScript 项目，提供构建 AI
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/033-agent-skills.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/033-agent-skills.html)
 - [Cursor Harness Model Production Floor](ch01/451-cursor-harness-model-production-floor.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/554-vibe-coding-agentic-engineering.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch04/555-vibe-coding-agentic-engineering.html)
 - [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](ch01/587-deepseek.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-mono-github.md)
 
-- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch01/1605-anthropic.html)
+- [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](ch01/1594-anthropic.html)
 
 ## 深度分析
 

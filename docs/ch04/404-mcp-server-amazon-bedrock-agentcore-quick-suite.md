@@ -15,7 +15,7 @@
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch11/194-apache-doris-mcp-server-quick-suite-ai.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/271-aws-bedrock-agentcore.html)
 - [AgentCore Managed Harness](ch04/783-agentcore-harness.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/296-aws-devops-agent.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch11/254-openclaw.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/271-aws-bedrock-agentcore.html)

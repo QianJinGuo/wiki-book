@@ -30,9 +30,9 @@
 ## 与现有知识关联
 - [Claude Managed Agents 开发者指南](../ch04/634-claude-managed-agents.html) — Managed Agents 概念扩展
 - [Anthropic PM 的 Agentic 工作流](../ch04/580-anthropic-pm-agentic.html) — 管理多个 Agent 的场景
-- [Agentic AI 系统架构](../ch05/106-harness-skill.html) — 五层架构，管理层问题
+- [Agentic AI 系统架构](../ch05/107-harness-skill.html) — 五层架构，管理层问题
 - [Skill-RAG：清华 SRA](../ch04/350-skill.html) — Skill 检索增强相关
-- [Agent自我改进六条路](../ch03/019-agent.html) — Skill 积累属于经验沉淀
+- [Agent自我改进六条路](../ch03/006-agent.html) — Skill 积累属于经验沉淀
 - Paperclip — 定位对比（个人AI公司模拟）
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multica-managed-agents-platform.md)
 

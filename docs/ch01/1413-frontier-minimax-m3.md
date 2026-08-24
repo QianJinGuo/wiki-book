@@ -45,7 +45,7 @@ Coding、长上下文、多模态不是三个并列卖点，而是**一个系统
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/019-agent.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/006-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1398-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)

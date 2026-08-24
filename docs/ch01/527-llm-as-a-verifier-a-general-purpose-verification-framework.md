@@ -94,7 +94,7 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/200-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [AI Skill 测评指标体系](ch01/660-ai-skill.html)
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/065-harness-engineering.html)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/066-harness-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](ch01/553-codeindex.html)
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/033-agent-skills.html)

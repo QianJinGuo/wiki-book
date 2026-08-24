@@ -28,7 +28,7 @@
 
 ### DSL 作为语义约束层
 
-NL2DSL2SQL 路线的关键洞察是：自然语言到 SQL 的直接映射缺少关键信息（如指标的业务含义、维度的取值范围）。插入 DSL 层作为标准化的语义桥梁，让自然语言先被翻译为结构化的指标-维度语义，再据此生成 SQL。这与 [Beautiful Article 的 Reacticle 协议](../ch05/077-harness.html)有异曲同工之妙——都通过在输入和输出之间插入一个受约束的中间表示层，来提升 AI 输出的可控性和准确性。
+NL2DSL2SQL 路线的关键洞察是：自然语言到 SQL 的直接映射缺少关键信息（如指标的业务含义、维度的取值范围）。插入 DSL 层作为标准化的语义桥梁，让自然语言先被翻译为结构化的指标-维度语义，再据此生成 SQL。这与 [Beautiful Article 的 Reacticle 协议](../ch05/091-harness.html)有异曲同工之妙——都通过在输入和输出之间插入一个受约束的中间表示层，来提升 AI 输出的可控性和准确性。
 
 ### Harness vs CI/CD Pipeline 的核心区别
 
@@ -52,10 +52,10 @@ NL2DSL2SQL 路线的关键洞察是：自然语言到 SQL 的直接映射缺少�
 
 ## 相关实体
 
-- [Harness 实践将任何文字编辑成精美的文章](../ch05/077-harness.html) — Harness 骨架可迁移性的另一实践
-- [Loop Engineering Overview Tech Minimalism](../ch05/122-loop-engineering.html) — Loop Engineering 的编排范式对比
-- [Ant Group Medical Agent Afu](../ch03/019-agent.html) — 蚂蚁医疗 Agent 的 Harness Engineering 实践
-- [Aliyun Loop Engineering Log Scan Auto Fix Deploy](../ch05/122-loop-engineering.html) — 阿里云 Loop Engineering 的日志扫描自修复实践
+- [Harness 实践将任何文字编辑成精美的文章](../ch05/091-harness.html) — Harness 骨架可迁移性的另一实践
+- [Loop Engineering Overview Tech Minimalism](../ch05/123-loop-engineering.html) — Loop Engineering 的编排范式对比
+- [Ant Group Medical Agent Afu](../ch03/006-agent.html) — 蚂蚁医疗 Agent 的 Harness Engineering 实践
+- [Aliyun Loop Engineering Log Scan Auto Fix Deploy](../ch05/123-loop-engineering.html) — 阿里云 Loop Engineering 的日志扫描自修复实践
 
 ## 第 2 来源 — 1688数据中心 Multi-Agent 研发小队实录
 

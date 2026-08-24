@@ -74,7 +74,7 @@ Owner 不是简单地分配任务和等待结果，而是负责：
 - [Agent 时代架构师技能指南](../ch03/077-skills.html)
 
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [routa 多智能体协同交付平台](../ch03/019-agent.html)
+- [routa 多智能体协同交付平台](../ch03/006-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

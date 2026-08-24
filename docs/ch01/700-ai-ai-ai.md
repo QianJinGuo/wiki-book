@@ -103,7 +103,7 @@ SOP 的持续生产是胖鹅AI 最有价值的能力。这个循环本质上是�
 - [Skillopt Microsoft Train Skill Like Neural Network](../ch05/033-skillopt.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
-- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](ch01/1605-anthropic.html)
+- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](ch01/1594-anthropic.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
 ---

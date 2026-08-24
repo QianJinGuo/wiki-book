@@ -91,7 +91,7 @@ Boris 清理出的 5.5K tokens 每个 session 的价值不应被低估。在 202
 
 - [Hermes Agent 上手](../ch03/099-hermes-agent.html)
 - [ConardLi Skills 开源项目](../ch07/038-skills-7k-star.html)
-- [MCP Tool Design Tradeoffs](../ch01/1605-anthropic.html)
+- [MCP Tool Design Tradeoffs](../ch01/1594-anthropic.html)
 - [Agent Harness Context Management](../ch05/043-agent-harness.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - Agent Tools 生态系统

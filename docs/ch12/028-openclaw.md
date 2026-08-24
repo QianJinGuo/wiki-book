@@ -120,7 +120,7 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 - [AI Agent 的迁移与现代化: OpenClaw → Bedrock AgentCore](../ch04/665-amazon-bedrock-agentcore.html)
 - [EKS Graviton 多租户 OpenClaw K8s 实践](../ch11/254-openclaw.html)
 - [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/665-amazon-bedrock-agentcore.html)
-- [Agent Security 三步走: Harness + Governance + Identity](../ch05/077-harness.html)
+- [Agent Security 三步走: Harness + Governance + Identity](../ch05/091-harness.html)
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/360-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Claude Code vs OpenClaw Memory 对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/085-claude-code.html)

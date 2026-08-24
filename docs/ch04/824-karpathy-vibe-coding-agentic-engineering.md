@@ -48,7 +48,7 @@ Agentic Engineering 需要接口级约定：Agent 能看到哪些上下文、能
 
 ## 关联条目
 - [同主题入库（宝玉解读、不同角度）](ch04/298-agentic.html)
-- [Harness Engineering — Agent 工程化落地的实践体系](../ch05/065-harness-engineering.html)
+- [Harness Engineering — Agent 工程化落地的实践体系](../ch05/066-harness-engineering.html)
 - [Vibe Coding 主题入库文章](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
 
 ## 深度分析

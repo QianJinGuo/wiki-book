@@ -70,11 +70,11 @@ Mem0 与 WorkBuddy 代表了 Agent 记忆层的两种技术路线：
 
 ## 相关实体
 
-- [生产级 Agent 框架](../ch03/019-agent.html)
+- [生产级 Agent 框架](../ch03/006-agent.html)
 - [Agent Harness 钉钉招聘](../ch05/043-agent-harness.html)
 - [AI 友好后端标准](../ch05/023-ai-friendly.html)
 - [注意力塌陷与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [CoAgent 协同框架](../ch03/019-agent.html)
+- [CoAgent 协同框架](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mem0-vs-workbuddyagent-记忆层的两条路线谁才是终极答案.md)
 

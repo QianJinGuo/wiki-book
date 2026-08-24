@@ -20,7 +20,7 @@
 
 ## 意义
 
-KnowAct-GUIClaw 与 [MobileForge](../ch03/019-agent.html)、[MemGUI](../ch03/019-agent.html)、[SaaS-Bench](../ch03/019-agent.html) 同属 GUI Agent 前沿，其「主智能体记忆编排 + 自进化」路线与 [OpenClaw](../ch11/254-openclaw.html) 生态深度耦合。
+KnowAct-GUIClaw 与 [MobileForge](../ch03/006-agent.html)、[MemGUI](../ch03/006-agent.html)、[SaaS-Bench](../ch03/006-agent.html) 同属 GUI Agent 前沿，其「主智能体记忆编排 + 自进化」路线与 [OpenClaw](../ch11/254-openclaw.html) 生态深度耦合。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/knowact-guiclaw-self-evolving-gui-agent-harbin-hitsz.md)
 

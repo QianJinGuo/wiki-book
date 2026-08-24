@@ -88,7 +88,7 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 
 ## 深度分析
 
-**Skill 作为记忆系统的工程化演进**：Skills 解决了 prompt 每次需要重建上下文的根本痛点，把"怎么做"封装为持久化资产。与 [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html) 中的记忆系统不同，Skill 不是靠向量检索召回历史，而是直接定义工作流执行步骤——这是一种"程序性记忆"而非"陈述性记忆"。两者结合可以构建更完整的 agent 知识管理体系。
+**Skill 作为记忆系统的工程化演进**：Skills 解决了 prompt 每次需要重建上下文的根本痛点，把"怎么做"封装为持久化资产。与 [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html) 中的记忆系统不同，Skill 不是靠向量检索召回历史，而是直接定义工作流执行步骤——这是一种"程序性记忆"而非"陈述性记忆"。两者结合可以构建更完整的 agent 知识管理体系。
 
 **context: fork 的隔离设计哲学**：Subagent 隔离模式体现了"最小权限"原则——Skill 的工作上下文与主 session 隔离，防止副作用扩散。这一设计理念与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的 harness 隔离机制高度一致，都是为了在多 agent 协作时保护主控制平面的稳定性。fork 模式尤其适合大规模代码库扫描等高上下文消耗操作。
 
@@ -111,8 +111,8 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/254-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)

@@ -60,10 +60,10 @@ WiseClaw 重点发力院外高频场景——这是医疗服务从低频、单�
 
 ## 相关实体
 
-- [Harness 工程实践](../ch05/065-harness-engineering.html)
+- [Harness 工程实践](../ch05/066-harness-engineering.html)
 - [Agent Harness 生产化](../ch05/043-agent-harness.html)
-- [蚂蚁集团医疗 Agent](../ch03/019-agent.html)
-- [Agent 落地真相](../ch03/019-agent.html)
+- [蚂蚁集团医疗 Agent](../ch03/006-agent.html)
+- [Agent 落地真相](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/全球医疗榜第一中国ai杀疯了医疗ai迈入harness时代.md)
 

@@ -18,7 +18,7 @@ Hugging Face 博客介绍了 Hume AI 与 HF 合作构建的 Real World VoiceEQ �
 
 文章主张：语音正在成为 AI 的主要界面（客服、医疗、教育、娱乐、个人助手），速度和纯技术准确性将不再是决定系统成败的唯一因素，人们最终选择的模型是那些能像人一样理解、表达和回应的模型。Real World VoiceEQ 希望扩展过去几十年"用标准化基准上的量化指标优化语音 AI"（WER、PESQ、DNSMOS）的范式，提供一个以人类为中心的、衡量合成语音交互各组成部分的度量。
 
-这与 [LLM 评测基准全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md) 中"基准接近饱和、需要新测量层"的判断同构——语音侧同样在经历从单分数崇拜到分能力评测的转变。Hume 的 Kairos 平台定位为可复用的语音原生评测基础设施，让前沿实验室和企业能运行定制评测、识别生产语音系统的细粒度失败模式、生成人类偏好数据，并通过 RLHF 持续改进模型，这与 [Voice Agent 评测（EVA-Bench）](../ch03/019-agent.html) 的自动化方向形成互补：VoiceEQ 强调人工听者的不可替代性，而 EVA-Bench 侧重规模化数据驱动评测。在实时语音架构层面，VoiceEQ 揭示的"说强于听"问题为 [实时语音交互架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-realtime-voice-architecture.md) 的设计提供了评测证据：端到端 S2S 系统必须显式消费副语言信息，否则只是"转录驱动的语音壳"。
+这与 [LLM 评测基准全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md) 中"基准接近饱和、需要新测量层"的判断同构——语音侧同样在经历从单分数崇拜到分能力评测的转变。Hume 的 Kairos 平台定位为可复用的语音原生评测基础设施，让前沿实验室和企业能运行定制评测、识别生产语音系统的细粒度失败模式、生成人类偏好数据，并通过 RLHF 持续改进模型，这与 [Voice Agent 评测（EVA-Bench）](../ch03/006-agent.html) 的自动化方向形成互补：VoiceEQ 强调人工听者的不可替代性，而 EVA-Bench 侧重规模化数据驱动评测。在实时语音架构层面，VoiceEQ 揭示的"说强于听"问题为 [实时语音交互架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-realtime-voice-architecture.md) 的设计提供了评测证据：端到端 S2S 系统必须显式消费副语言信息，否则只是"转录驱动的语音壳"。
 
 完整技术报告见 arXiv 2607.14846，公开排行榜在 Hugging Face Spaces（HumeAI/rw-voice-eq）。对 [GPT-Live 实时语音的前后端分工](ch01/1516-openai-gpt-live.html) 这类产品架构而言，VoiceEQ 提供的分维度评测（情绪理解 vs 精确复述 vs 表现力）也直接支持了"按场景选模型"的产品决策。
 

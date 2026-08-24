@@ -78,7 +78,7 @@ On-Demand 评估在 CI/CD 中的角色是**门禁（gate）而非建议**——�
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/320-amazon-nova.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/503-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/019-aws-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
 

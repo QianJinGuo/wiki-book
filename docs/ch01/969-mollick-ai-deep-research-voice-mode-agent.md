@@ -51,7 +51,7 @@ Voice Mode 的 killer feature 不是自然对话，而是**共享屏幕/相机**
 但构建供他人重复使用的 prompt 仍需要真实技能。
 
 ## 相关实体
-- [Opinionated Guide Ai Right Now Mollick](../ch05/109-ai.html)
+- [Opinionated Guide Ai Right Now Mollick](../ch05/110-ai.html)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/377-ai-agent.html)
 - [Miroflow Deep Research Agent Harness Mirothinker](../ch05/043-agent-harness.html)

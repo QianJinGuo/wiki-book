@@ -27,7 +27,7 @@
 ## 相关
 
 - [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md)
-- [DiscoFormer](../ch05/109-ai.html)
+- [DiscoFormer](../ch05/110-ai.html)
 - [SSM Attention 睡眠巩固研究](ch01/1469-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/controlled-study-attention-only-transformers-arxiv-2607-18363.md)

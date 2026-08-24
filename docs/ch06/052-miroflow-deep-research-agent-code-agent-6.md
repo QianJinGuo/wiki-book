@@ -249,12 +249,12 @@
 - 7 层 harness 模型 = 抽象框架
 - **MiroFlow = "deep research 任务性质的脚手架"**——把 harness 设计哲学落到 deep research 任务上的**具体实现 + 工程决策**
 
-### vs [Rein](../ch03/019-agent.html)
+### vs [Rein](../ch03/006-agent.html)
 - Rein = **Code Agent** 的 4 模块 + 5 类型边界
 - **MiroFlow = Deep Research Agent 的 6 大工程差异**——与 Rein 互补
 - 共同点：都强调"边界 / 工程约束"是 harness 关键
 
-### vs [wow-harness v3](../ch05/077-harness.html)
+### vs [wow-harness v3](../ch05/091-harness.html)
 - v3 = 跨 session 事件时间线（**协议层**治理）
 - MiroFlow = 任务级别（**单次任务**）的完整执行流
 - 共同点：都强调"治理"是 harness 关键
@@ -268,7 +268,7 @@
 - 高德 = 7×24 永动生产线（**企业级 R&D 链路**）
 - MiroFlow = **Deep Research 单次任务执行**（在 GAIA / HLE 评测上打榜）
 
-### vs [晓斌 Agent-Oriented Infra](../ch03/019-agent.html)
+### vs [晓斌 Agent-Oriented Infra](../ch03/006-agent.html)
 - 晓斌 = 哲学框架（4 层设计）
 - MiroFlow = 任务级别（**理解题 / 解题 / 总结 / 答案提取** 4 阶段解耦）
 
@@ -319,11 +319,11 @@
 
 ## 相关对照
 - [Agent Harness 架构](../ch05/043-agent-harness.html) —— 7 层模型
-- [Rein](../ch03/019-agent.html) —— Code Agent 架构
-- [wow-harness v3](../ch05/077-harness.html) —— 协议层治理
+- [Rein](../ch03/006-agent.html) —— Code Agent 架构
+- [wow-harness v3](../ch05/091-harness.html) —— 协议层治理
 - [MAC Skills + Hooks](../ch05/030-mac-multi-agent-coding-skills-hooks-harness-0-20.html) —— 工程师个人框架
 - [高德 AI-Native 生产线](../ch05/022-ai-native.html) —— 企业级 R&D
-- [晓斌 Agent-Oriented Infra](../ch03/019-agent.html) —— 哲学框架
+- [晓斌 Agent-Oriented Infra](../ch03/006-agent.html) —— 哲学框架
 - [Kimi Work](../ch01/737-codex.html) —— 本地 Agent
 - [ANOLISA v0.3](../ch04/298-agentic.html) —— 阿里 Agentic OS
 

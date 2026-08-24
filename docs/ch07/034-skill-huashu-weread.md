@@ -81,9 +81,9 @@ huashu-weread证明了"在官方能力上做增强层"这一模式的可行性�
 3. **数据聚合后做统计往往比做生成更有价值**：alchemy的洞察不是AI"生成"出来的，而是AI对5269条划线做分组统计后"呈现"出来的——有时候最好的AI产品不需要生成，只需要准确统计 + 可视化呈现 ^[https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q]
 ## 相关实体
 - [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南 V2](../ch03/084-obsidian-claude-code.html)
-- [Ai Era What To Read World Book Day](../ch05/109-ai.html)
+- [Ai Era What To Read World Book Day](../ch05/110-ai.html)
 - [Imclaw通过微信飞书操控Claude Code Coodex Gemini Clipi Agent蜂群](../ch03/085-claude-code.html)
-- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/126-ai-coding.html)
+- [Tmall Ai Coding Practice Team Knowledge Base](../ch05/127-ai-coding.html)
 - [Skill Craft](ch07/062-skill-craft-claude-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weread-official-skill-huashu-critical-gap.md)

@@ -40,7 +40,7 @@ Linux Foundation 在 2025 年 12 月成立 Agentic AI Foundation（AAIF）并接
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-cli-coding-agents-mid-2026.md)
 
-> **相关实体**: [Cline Agent SDK](../ch03/019-agent.html), [Agent 形式化验证](../ch03/019-agent.html)
+> **相关实体**: [Cline Agent SDK](../ch03/006-agent.html), [Agent 形式化验证](../ch03/006-agent.html)
 
 ---
 

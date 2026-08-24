@@ -27,7 +27,7 @@
 | 工具 | 风格 | 核心特点 |
 |------|------|----------|
 | **Spec-Kit** | 标准化规格流程 | `/specify` / `/plan` / `/tasks` / `/implement` 顺序流程，强制上下文标准化 |
-| **OpenSpec** | 轻量级规格变更 | proposal(范围/边界锁定) + design + tasks + specs(ADDED/MODIFIED/REMOVED 增量化)，已有 [Openspec Spec Driven Development Trae Solo](../ch05/055-openspec.html) 实体 |
+| **OpenSpec** | 轻量级规格变更 | proposal(范围/边界锁定) + design + tasks + specs(ADDED/MODIFIED/REMOVED 增量化)，已有 [Openspec Spec Driven Development Trae Solo](../ch05/056-openspec.html) 实体 |
 | **BMAD** | 完整 AI 研发流程编排 | 角色化 Agent 团队 + 圆桌评审 + 4 阶段（分析/规划/方案/实现） |
 
 ## Spec-Kit 实战：秩序感很强
@@ -119,7 +119,7 @@ Spec-Kit 基础流程在多仓项目里不够用——主仓沉淀需求，前�
 
 **本实体关注"双框架实战对比 + 重构迁移项目场景"**（Spec-Kit 强秩序 vs BMAD 强圆桌的对比维度 + 各自适用场景）。
 
-- [Openspec Spec Driven Development Trae Solo](../ch05/055-openspec.html) — Trae IDE 内置的 OpenSpec 框架（proposal/design/tasks/specs 四类文档）。本实体是**外部 SDD 工具对比**（Spec-Kit/BMAD），那个是**集成 IDE 的 SDD 工具**；形成"独立工具谱系 ↔ IDE 集成 SDD"对照。
+- [Openspec Spec Driven Development Trae Solo](../ch05/056-openspec.html) — Trae IDE 内置的 OpenSpec 框架（proposal/design/tasks/specs 四类文档）。本实体是**外部 SDD 工具对比**（Spec-Kit/BMAD），那个是**集成 IDE 的 SDD 工具**；形成"独立工具谱系 ↔ IDE 集成 SDD"对照。
 - [Ai Native Team Building Failures Ceo Digital Twin Case](../ch05/022-ai-native.html) — 叶小钗 16.8KB 旧文，深度讲 AI 原生团队组织建设的"脏乱差"（CEO 数字分身失败案例 / AI 销售线索分配兴衰）。本实体是"**SDD 双框架在重构迁移项目**的实战"，那个是"**AI 原生团队组织建设**的失败教训"；同作者同主题不同场景。
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/022-ai-native.html) — 高德 AI 原生系列第 2 篇：Spec 作为 AIOS 抗熵增架构。本实体是 SDD 流程工具对比，那个是 Spec 作为架构概念的延伸。
 
@@ -169,10 +169,10 @@ Spec-Kit 的顺序流程（specify → plan → tasks → implement）在多仓�
 
 ## 相关主题
 
-- AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/019-agent.html) / [Agent Skills Teams Architecture Evolution Selection Guide](ch04/313-agent-skills-teams.html)
+- AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/006-agent.html) / [Agent Skills Teams Architecture Evolution Selection Guide](ch04/313-agent-skills-teams.html)
 - 多 Agent 圆桌协作 — [Openclaw Multi Agent Team Practice V2](ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - 规格驱动开发概念 — [Ai Agent Exploration Path Legacy Tech](ch04/377-ai-agent.html)
-- AI Coding Agent 评测 — [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/077-harness.html)
+- AI Coding Agent 评测 — [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/091-harness.html)
 
 ---
 

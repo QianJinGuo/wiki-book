@@ -16,7 +16,7 @@
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/665-amazon-bedrock-agentcore.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/665-amazon-bedrock-agentcore.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/665-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/503-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md)
 

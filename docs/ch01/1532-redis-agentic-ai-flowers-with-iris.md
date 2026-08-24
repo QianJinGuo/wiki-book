@@ -44,7 +44,7 @@ Trollope 设想"每千名员工上千个 Agent"的世界，并以电子表格为
 - [Redis 之父为 DeepSeek v4 造推理引擎](ch01/1381-deepseek-v4.html)
 - [Model Context Protocol（MCP）](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
 - [Agent 驱动的数据访问](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-driven-data-access.md)
-- [Agent Memory 架构](../ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构](../ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agentic AI 数据网格与 MCP](../ch04/117-agentic-ai.html)
 - [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 

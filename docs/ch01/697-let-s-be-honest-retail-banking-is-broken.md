@@ -80,7 +80,7 @@ Banxlocal 等案例正在验证：AI 和共享基础设施可以降低物理网�
 - [[entities/the-stablecoin-24x7-money-loop-fintechbrainfood]
 - [[entities/chime-earnings-q1-2026-ai-upmarket]
 - [[entities/deels-accelerate-or-die-moment]
-- [Backend for Agent](../ch03/019-agent.html)
+- [Backend for Agent](../ch03/006-agent.html)
 - [数据基础设施 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/finanser-retail-banking-broken.md)

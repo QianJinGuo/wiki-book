@@ -64,8 +64,8 @@
 - [后端 AI 友好标准化路径](../ch05/023-ai-friendly.html) — 异构计算分层设计与硬件选型策略
 - [AI 友好架构](../ch05/023-ai-friendly.html) — 端侧 AI 推理与中心化服务的架构权衡
 - [Agent 世界模型扩展](../ch04/044-agent-world.html) — 真实环境数据对 Agent 感知能力的关键作用
-- [阿里云 AI 实践](../ch05/109-ai.html) — 云计算与边缘计算的协同模式对比
-- [NVIDIA BlueField DPU 助力 AI 云](../ch05/109-ai.html) — NVIDIA 边缘计算系列的另一重要产品线
+- [阿里云 AI 实践](../ch05/110-ai.html) — 云计算与边缘计算的协同模式对比
+- [NVIDIA BlueField DPU 助力 AI 云](../ch05/110-ai.html) — NVIDIA 边缘计算系列的另一重要产品线
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/如视借助-nvidia-jetson-将毫米级三维重建带到边缘端.md)
 

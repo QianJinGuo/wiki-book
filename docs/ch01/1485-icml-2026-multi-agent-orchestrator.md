@@ -81,7 +81,7 @@ Orchestrator 面临的问题是理解用户目标、系统约束、历史日志�
 
 ### 从"执行能力"到"调度能力"的范式转移
 
-这项研究的核心贡献在于将多智能体系统评估的关注点从执行器（Executor）转移到调度器（Orchestrator）。这与当前 Agent 系统的发展趋势密切相关：随着工具和技能库的不断扩展，单个 Agent 的能力已经不是瓶颈，如何组织和管理多个 Agent 的协作才是。这与 Harness Engineering 范式中强调的"调度层"设计理念高度一致。参见 [生产级 Agent Harness](../ch05/043-agent-harness.html) 和 [Harness 范式](../ch05/077-harness.html)。
+这项研究的核心贡献在于将多智能体系统评估的关注点从执行器（Executor）转移到调度器（Orchestrator）。这与当前 Agent 系统的发展趋势密切相关：随着工具和技能库的不断扩展，单个 Agent 的能力已经不是瓶颈，如何组织和管理多个 Agent 的协作才是。这与 Harness Engineering 范式中强调的"调度层"设计理念高度一致。参见 [生产级 Agent Harness](../ch05/043-agent-harness.html) 和 [Harness 范式](../ch05/091-harness.html)。
 
 ### Reasoning Trap 的深层启示
 
@@ -106,9 +106,9 @@ Reasoning Trap 的发现挑战了"更多思考 = 更好结果"的朴素直觉。
 ## 相关实体
 
 - [生产级 Agent Harness](../ch05/043-agent-harness.html) — Harness 架构中 Orchestrator 层的设计
-- [Harness 范式](../ch05/077-harness.html) — 从 Vibe Coding 到 Harness Engineering 的范式转变
+- [Harness 范式](../ch05/091-harness.html) — 从 Vibe Coding 到 Harness Engineering 的范式转变
 - [Agent Harness 综述](../ch05/043-agent-harness.html) — 调度层设计对 Agent 表现的影响
-- [多 Agent 信息流设计](ch01/1605-anthropic.html) — Agent 间信息流转的架构模式
+- [多 Agent 信息流设计](ch01/1594-anthropic.html) — Agent 间信息流转的架构模式
 - [注意力坍缩与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — 长上下文场景下模型行为退化及其应对
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icml-2026如何对multi-agent系统进行过程评估重新认识多智能体系统中的orchestrator.md)

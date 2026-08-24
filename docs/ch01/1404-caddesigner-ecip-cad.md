@@ -40,7 +40,7 @@ ECIP在错误反馈机制上针对LLM做了优化：不仅告诉模型哪里失�
 
 ## 相关实体
 
-- [AI材料发现](../ch05/109-ai.html)
+- [AI材料发现](../ch05/110-ai.html)
 - [AI Agent安全综述](../ch04/377-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/caddesigner-ecip-cad-agent-zheda-2026.md)

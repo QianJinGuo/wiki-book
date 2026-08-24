@@ -34,11 +34,11 @@ CEO 盛颖是 LMSYS Org 发起者、SGLang 主要创始人之一，博士期间�
 5. **关注 RadixArk 托管平台的免费积分活动以降低早期实验成本**：团队在正式生产部署前，可以使用 RadixArk 的托管平台进行小规模推理实验，利用免费积分验证 SGLang 在目标模型上的实际性能，避免自行部署的运维复杂度。
 
 ## 相关实体
-- [Nvidia Embraces Ai Investor Topping 40 Billion In Equity Bets 2026](../ch05/109-ai.html)
+- [Nvidia Embraces Ai Investor Topping 40 Billion In Equity Bets 2026](../ch05/110-ai.html)
 - [Edgeclaw Bemit Lobster](../ch04/651-edgeclaw.html)
 - [Claude Opus 47](ch01/1212-claude.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/099-hermes-agent.html)
-- [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](../ch05/109-ai.html)
+- [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](../ch05/110-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/拿下1亿美元种子轮SGLang团队创立RadixArk打造下一代开放AI基础设施.md)
 

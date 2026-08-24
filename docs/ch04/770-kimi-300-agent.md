@@ -40,7 +40,7 @@ OpenAI Codex 增速最快的用户群体不是程序员（知识工作者增速 
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/254-openclaw.html)

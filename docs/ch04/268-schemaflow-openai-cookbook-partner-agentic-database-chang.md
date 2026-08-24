@@ -148,7 +148,7 @@ Stage-level 监控（token 上限 2000、P95 < 5s、重试 > 2 次告警）揭�
 ## 相关实体
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/309-amazon-bedrock.html)
 - [Ai Native Startup Cyberfund Guide](../ch05/022-ai-native.html)
-- [From Prompt To Harness Claude Official](../ch05/077-harness.html)
+- [From Prompt To Harness Claude Official](../ch05/091-harness.html)
 - [Cursor Harness Model Production Floor](../ch01/451-cursor-harness-model-production-floor.html)
 - [Agent Harness Architecture Deep Dive Aksahy](../ch05/043-agent-harness.html)
 

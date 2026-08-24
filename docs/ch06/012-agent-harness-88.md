@@ -88,7 +88,7 @@ Subagent 也按角色分流：`explore`/`data-query` 走 classifyAlias，`genera
 
 成本优化不是外挂式 token 技巧，**就是 Harness 实践**——模型只负责生成，Harness 决定发什么、隔离什么、何时停、用什么模型。Agent Loop 成本没有单一解法：前缀少一点、缓存多命中、探索少带回来、无效轮次少跑一次，单看都不惊人，但会在每一轮每次任务重复，差距就是这样乘出来的。**让 agent 长期跑得起、跑得高效，才是 Harness 真正要解决的问题**。
 
-> 与 [腾讯 Token 优化实战](../ch03/019-agent.html) 互补：腾讯侧强调 Context Rot 三段生命周期与"最小上下文/清晰理想态/动态选型"框架，本实体提供阿里百炼侧的六刀可执行工程量（deferred tools、CLI 替代 MCP、缓存断点、thinking_budget、Subagent 隔离、模型分流）+ 88% 测算方法。
+> 与 [腾讯 Token 优化实战](../ch03/006-agent.html) 互补：腾讯侧强调 Context Rot 三段生命周期与"最小上下文/清晰理想态/动态选型"框架，本实体提供阿里百炼侧的六刀可执行工程量（deferred tools、CLI 替代 MCP、缓存断点、thinking_budget、Subagent 隔离、模型分流）+ 88% 测算方法。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-终章harness-成本篇一次百炼账单降低-88-实战.md)
 

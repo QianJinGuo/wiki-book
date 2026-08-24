@@ -71,7 +71,7 @@ Anthropic 有合理的商业和技术理由关注非官方 API 路由。影子 A
 
 ## 相关实体
 
-- [Anthropic Skill Stack 架构](../ch01/1605-anthropic.html) — Anthropic 的 Agent 工程架构背景，帮助理解 Claude Code 的底层设计
+- [Anthropic Skill Stack 架构](../ch01/1594-anthropic.html) — Anthropic 的 Agent 工程架构背景，帮助理解 Claude Code 的底层设计
 - [Claude Code 治理软规则](../ch03/085-claude-code.html) — 探讨 Claude Code 行为的治理与透明度
 - [OpenClaw 安全与功能增强实践](../ch11/254-openclaw.html) — AI 工具的安全实践案例
 - [AI Gateway vs MCP Gateway 安全须知](../ch11/090-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — API 路由与安全网关的讨论，与本实体的 API 路由指纹识别直接相关

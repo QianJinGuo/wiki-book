@@ -72,8 +72,8 @@
 
 ## 相关实体
 
-- [Agent Capital Markets](../ch03/019-agent.html)
-- [Agent Architecture Harness](../ch05/077-harness.html)
+- [Agent Capital Markets](../ch03/006-agent.html)
+- [Agent Architecture Harness](../ch05/091-harness.html)
 - [Program-as-Weights PAW](https://github.com/QianJinGuo/wiki/blob/main/entities/program-as-weights-paw-fuzzy-functions-waterloo.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/维纳智能登上nature通讯ai不只会回答问题开始生成高精度行业数据.md)

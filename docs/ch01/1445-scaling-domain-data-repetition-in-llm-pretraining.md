@@ -14,7 +14,7 @@ arxiv 2608.14071（2026-08-14 提交，Jingwei Li 等 8 位作者）研究 LLM �
 
 ## 意义
 
-该研究直接回应 LLM 训练中的数据工程难题——当高质量域数据供给不足时，重复率该如何设定。它与 [LM 预训练泛化动力学](../ch05/109-ai.html)、[预训练并行与失败记录](../ch05/109-ai.html) 同属 LLM 预训练实证研究前沿，为数据配比与训练预算设计提供可迁移的 scale 规律。
+该研究直接回应 LLM 训练中的数据工程难题——当高质量域数据供给不足时，重复率该如何设定。它与 [LM 预训练泛化动力学](../ch05/110-ai.html)、[预训练并行与失败记录](../ch05/110-ai.html) 同属 LLM 预训练实证研究前沿，为数据配比与训练预算设计提供可迁移的 scale 规律。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2608-14071-scaling-domain-data-repetition-llm-pretraining.md)
 

@@ -32,7 +32,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 ### 六 Agent 接力流水线：项目即共享上下文
 
-"AI4S 研究"项目的演示说明多 Agent 协作的关键不在于模型数量，而在于共享的项目级上下文。6 个 Agent（模板 Agent、挂自动化写作技能的阿链、本地 codex）在同一项目内被 @ 点名接力：研究包、写作风格规范、历史文章、选题方案、初稿与自审结论全部沉淀在项目上下文里，一次没切窗口。对照 [多模型协作交接](ch01/1212-claude.html) 那类"人肉搬运上下文"的模式，coze-bridge 把交接损耗从"人当 API"降为"项目即共享记忆"，与 [Harness 工程](../ch05/065-harness-engineering.html) 的工作现场沉淀方向一致。另一个细节是 codex 做 PPT 时内置 image-gen 调用 gpt-image-2 批量生成配图且不消耗用户 API 额度——本地 Agent 的既有工具能力被云侧任务直接复用，是桥接机制的隐性收益。
+"AI4S 研究"项目的演示说明多 Agent 协作的关键不在于模型数量，而在于共享的项目级上下文。6 个 Agent（模板 Agent、挂自动化写作技能的阿链、本地 codex）在同一项目内被 @ 点名接力：研究包、写作风格规范、历史文章、选题方案、初稿与自审结论全部沉淀在项目上下文里，一次没切窗口。对照 [多模型协作交接](ch01/1212-claude.html) 那类"人肉搬运上下文"的模式，coze-bridge 把交接损耗从"人当 API"降为"项目即共享记忆"，与 [Harness 工程](../ch05/066-harness-engineering.html) 的工作现场沉淀方向一致。另一个细节是 codex 做 PPT 时内置 image-gen 调用 gpt-image-2 批量生成配图且不消耗用户 API 额度——本地 Agent 的既有工具能力被云侧任务直接复用，是桥接机制的隐性收益。
 
 ### 远程操控：Agent 走出浏览器与办公桌
 
@@ -40,7 +40,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 ### 两条多 Agent 路线的编排哲学之争
 
-文章把 Dynamic Workflows（Opus 4.8）与扣子 3.0 放在一起对比：前者用脚本编排上百个子 Agent，追求快和规模；后者强调"人 + 云 Agent + 本地 Agent 同一项目"，像带小团队一样 @ 点名接力。分歧的本质是编排哲学——中心化脚本调度，还是人机混合的自组织协作。作者倾向后者："与其干等一个什么都会的万能 AI，不如现在就带一支各有专长、@一下就接力上的小队。"这与 [多智能体协作循环](../ch05/122-loop-engineering.html)、[本地编码 Agent](../ch09/178-using-local-coding-agents.html) 等方向共享同一个判断：单模型能力不再是瓶颈，分工、交接与组织方式才是决定产出的变量。
+文章把 Dynamic Workflows（Opus 4.8）与扣子 3.0 放在一起对比：前者用脚本编排上百个子 Agent，追求快和规模；后者强调"人 + 云 Agent + 本地 Agent 同一项目"，像带小团队一样 @ 点名接力。分歧的本质是编排哲学——中心化脚本调度，还是人机混合的自组织协作。作者倾向后者："与其干等一个什么都会的万能 AI，不如现在就带一支各有专长、@一下就接力上的小队。"这与 [多智能体协作循环](../ch05/123-loop-engineering.html)、[本地编码 Agent](../ch09/178-using-local-coding-agents.html) 等方向共享同一个判断：单模型能力不再是瓶颈，分工、交接与组织方式才是决定产出的变量。
 
 ## 实践启示
 
@@ -55,11 +55,11 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 - [本地编码 Agent 的使用实践](../ch09/178-using-local-coding-agents.html)
 - [Claude 做方案，Codex 写代码：多模型协作交接](ch01/1212-claude.html)
-- [AI 军团式多智能体协作循环](../ch05/122-loop-engineering.html)
+- [AI 军团式多智能体协作循环](../ch05/123-loop-engineering.html)
 - [Strands 多智能体框架](../ch04/798-strands-agents.html)
 - [OpenClaw 多智能体团队搭建](../ch11/254-openclaw.html)
 - [Claude Code 源码核心机制](../ch03/085-claude-code.html)
-- [Harness 工程](../ch05/065-harness-engineering.html)
+- [Harness 工程](../ch05/066-harness-engineering.html)
 - [Claude Code 大型代码库团队部署](../ch05/043-agent-harness.html)
 - [Karpathy × Boris：Software 3.0 编程地图](ch01/1147-llm.html)
 - [MOC：工作流编排](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

@@ -14,8 +14,8 @@
 ## 相关实体
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/085-claude-code.html)
-- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](../ch03/019-agent.html)
-- [Claude Code Harness Deep Dive Founder Park](../ch05/087-claude-code-harness.html)
+- [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](../ch03/006-agent.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/088-claude-code-harness.html)
 - wetesteddeepseekv4proandflashagainstclau.md-against-claude
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-boris-software3-llm-era-programming-2026.md)

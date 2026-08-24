@@ -7,10 +7,10 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semis-memo-supply-chain-inheritance.md)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](../ch05/109-ai.html)
+- [Semis Memo: Supply Chain Inheritance](../ch05/110-ai.html)
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](ch01/1025-scarcruft.html)
 - [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](../ch12/038-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/109-ai.html)
+- [Amazon launches Supply Chain Services for businesses of all sizes](../ch05/110-ai.html)
 - [semgrep intercom php supply chain](../ch12/122-semgrep-intercom-php-supply-chain.html)
 
 ## 深度分析

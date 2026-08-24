@@ -67,7 +67,7 @@ DCGM-Exporter 暴露 GPU 指标中，SM activity (DCGM_FI_PROF_SM_ACTIVE) 比基
 - [AI Infra 系统性拆解：传统后台工程师视角](../ch01/959-ai-infra.html)
 - [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](ch11/030-amazon-workspaces-applications.html)
 - [[entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a]
-- [notes on pretraining parallelisms and failed training runs.](../ch05/109-ai.html)
+- [notes on pretraining parallelisms and failed training runs.](../ch05/110-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 
 ---

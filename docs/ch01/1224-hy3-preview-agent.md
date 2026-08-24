@@ -14,11 +14,11 @@
 - [how my non-engineering team at sentry learned to ship](ch01/646-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](ch01/1402-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
 - [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](ch01/358-1.html)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/109-ai.html)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](../ch05/110-ai.html)
 - [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](ch01/1167-self-taught-rlvr.html)
 - [the recent history of ai in 32 otters](ch01/836-the-recent-history-of-ai-in-32-otters.html)
 - [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](ch01/1582-icml-2026.html)
-- [天猫新品团队ai编码实战指南（下）](../ch05/109-ai.html)
+- [天猫新品团队ai编码实战指南（下）](../ch05/110-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source.md)
 
 ## 深度分析
@@ -48,10 +48,10 @@
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/019-agent.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/006-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

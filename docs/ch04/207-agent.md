@@ -108,12 +108,12 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/085-claude-code.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/350-skill.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
+- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/085-claude-code.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/077-harness.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/091-harness.html)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 [Context Window 管理对比](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-window-management-comparison.md)
 
@@ -121,7 +121,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - [AIAIGC峰会嘉宾阵容](ch04/623-aiaigc.html)
 
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/254-openclaw.html)
-- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/019-agent.html)
+- [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/006-agent.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/023-hermes-agent-vs-openclaw.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/350-skill.html)
 - [Skills 系统设计三方对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/skill-system-design-comparison.md)

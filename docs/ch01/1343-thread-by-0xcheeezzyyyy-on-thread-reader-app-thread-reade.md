@@ -31,7 +31,7 @@ IRIS 的 multi-venue liquidity aggregation 机制具有重要的系统性意义�
 - [Thread Openai Devs](ch01/1000-openai.html)
 - [Zeus Rwa Thread Reader](https://github.com/QianJinGuo/wiki/blob/main/entities/zeus-rwa-thread-reader.md)
 - [Thread Patrickogrady](https://github.com/QianJinGuo/wiki/blob/main/entities/thread-patrickogrady.md)
-- [Joyai Echo Long Video Framework Jd](../ch05/109-ai.html)
+- [Joyai Echo Long Video Framework Jd](../ch05/110-ai.html)
 
 ---
 

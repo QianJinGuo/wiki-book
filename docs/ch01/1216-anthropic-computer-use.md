@@ -45,7 +45,7 @@ Anthropic 发布的这份最佳实践揭示了 Computer Use 技术落地的几�
 - [Claude Opus 47](ch01/1212-claude.html)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](../ch04/634-claude-managed-agents.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/479-anthropic-claude-code.html)
-- [From Prompt To Harness Claude Official](../ch05/077-harness.html)
+- [From Prompt To Harness Claude Official](../ch05/091-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-computer-use-best-practices.md)
 

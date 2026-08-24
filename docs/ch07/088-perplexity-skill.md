@@ -39,9 +39,9 @@ Perplexity 首次公开了内部 Skill 设计指南 涉及agent领域的核心�
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/019-agent.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/006-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 
 ## 实践启示

@@ -109,7 +109,7 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 举个例子。用户配置一个每天早 8 点的 cron 任务：“汇总过去 24 小时的 GitHub Issue 进展，写到团队 Notion 周报草稿”。第一次执行时工作区是空的，Agent 建立基础结构，写入第一次记录。第二次执行时
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/109-ai.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/110-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/309-amazon-bedrock.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/240-amazon-quick.html)
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/1147-llm.html)

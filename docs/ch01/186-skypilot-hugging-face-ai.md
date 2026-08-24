@@ -17,7 +17,7 @@ SkyPilot 与 Hugging Face 联合发布：**模型/数据集留在 HF Hub，SkyPi
 
 ## 意义
 
-把"数据与算力分离"的跨云 AI 工作负载从成本噩梦变成默认选项——云间数据迁移税（cross-cloud transfer tax）被结构性消除。属于 AI 基础设施层的存储编排创新，与 [Slack 多云路径](../ch05/109-ai.html) 同主题不同解法。
+把"数据与算力分离"的跨云 AI 工作负载从成本噩梦变成默认选项——云间数据迁移税（cross-cloud transfer tax）被结构性消除。属于 AI 基础设施层的存储编排创新，与 [Slack 多云路径](../ch05/110-ai.html) 同主题不同解法。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skypilot-hf-zero-egress-storage.md)
 

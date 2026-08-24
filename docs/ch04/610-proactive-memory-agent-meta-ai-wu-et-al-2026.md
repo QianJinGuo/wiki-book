@@ -45,7 +45,7 @@ Memory Agent 判断是否需要注入记忆驱动的提醒（memory-grounded rem
 
 该论文的工作与 wiki 中已有的大量记忆系统研究形成互补：
 
-- [AGENT MEMORY MODULAR FRAMEWORK](ch04/180-agent-memory.html) 和 [Agent Memory Architecture](ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html) 主要关注记忆存储的层次化结构，而这篇论文聚焦于记忆的 **主动干预时机**；
+- [AGENT MEMORY MODULAR FRAMEWORK](ch04/180-agent-memory.html) 和 [Agent Memory Architecture](ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html) 主要关注记忆存储的层次化结构，而这篇论文聚焦于记忆的 **主动干预时机**；
 - [Hermes Agent Memory System](../ch06/014-hermes-agent-memory.html) 的三层架构侧重持久化存储，论文的贡献在于何时以及如何 **注入记忆**；
 - [Memory Source Provenance](https://github.com/QianJinGuo/wiki/blob/main/concepts/memory-source-provenance.md) 关注记忆的来源可信度，这篇论文关注的是注入的 **时机选择**；
 - [Agent Memory Injection](ch04/180-agent-memory.html) 从注入维度角度探讨了相似主题。

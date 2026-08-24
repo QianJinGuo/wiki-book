@@ -26,7 +26,7 @@ NVIDIA 推出 BioNeMo Agent Toolkit，这是一个汇集了 NVIDIA 十多年生�
 
 BioNeMo Agent Toolkit 的推出标志着**科学计算领域正在经历 Agent 化拐点**。传统上，科学发现涉及大量人工操作：文献检索→假设生成→实验设计→计算模拟→结果分析→迭代优化。Agent 可以将这一流程中的多个环节自动化，甚至自主决定下一步该做什么。
 
-这与 [Agent 评测方法论](../ch03/019-agent.html) 中讨论的"Agent 自主性分级"直接相关——BioNeMo Agent 至少在 Level 3（工具使用+多步推理）级别，部分场景可达 Level 4（自主规划执行）。
+这与 [Agent 评测方法论](../ch03/006-agent.html) 中讨论的"Agent 自主性分级"直接相关——BioNeMo Agent 至少在 Level 3（工具使用+多步推理）级别，部分场景可达 Level 4（自主规划执行）。
 
 ### "NVIDIA 做生态，不抢饭碗"的平台战略
 
@@ -56,7 +56,7 @@ BioNeMo Agent 不同与通用的 LLM Agent：
 3. **多工具组合的可靠性**：一个科学发现流程可能涉及 10+ 步骤的工具调用，任何一步出错都会导致结论无效
 4. **合规与审计需求**：药物研发受 FDA/EMA 等监管，Agent 的决策过程需要完整的审计追踪
 
-这些要求与 [Harness Engineering 实践](../ch05/065-harness-engineering.html) 中讨论的生产级 Agent 设计原则高度一致——可靠性、可审计性、可复现性是科学 Agent 从原型走向落地的关键。
+这些要求与 [Harness Engineering 实践](../ch05/066-harness-engineering.html) 中讨论的生产级 Agent 设计原则高度一致——可靠性、可审计性、可复现性是科学 Agent 从原型走向落地的关键。
 
 ### 竞争对手与生态位分析
 
@@ -84,9 +84,9 @@ NVIDIA 的核心竞争力在于其**底层硬件+软件栈+生态伙伴**的垂�
 ## 相关实体
 
 - [Agent Teams 与群聊模式](../ch01/1212-claude.html) — Agent 团队协作与工具抽象层设计
-- [Harness Engineering 实践](../ch05/065-harness-engineering.html) — 生产级 Agent 的可靠性设计原则
-- [Agent 评测方法论与体系设计](../ch03/019-agent.html) — Agent 自主性分级与评测标准
-- [NVIDIA BlueField DPU 助力 AI 云](../ch05/109-ai.html) — NVIDIA 计算生态的另一重要产品线
+- [Harness Engineering 实践](../ch05/066-harness-engineering.html) — 生产级 Agent 的可靠性设计原则
+- [Agent 评测方法论与体系设计](../ch03/006-agent.html) — Agent 自主性分级与评测标准
+- [NVIDIA BlueField DPU 助力 AI 云](../ch05/110-ai.html) — NVIDIA 计算生态的另一重要产品线
 - [后端 AI 友好标准化路径](../ch05/023-ai-friendly.html) — 平台化基础设施的设计思路
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-bionemo-agent-toolkit-加速科学发现的智能体工具.md)

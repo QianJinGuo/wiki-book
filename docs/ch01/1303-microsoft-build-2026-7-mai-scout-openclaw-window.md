@@ -56,7 +56,7 @@ Microsoft Build 2026 全景：7 款 MAI 模型 + Scout + OpenClaw 登 Windows + 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1398-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

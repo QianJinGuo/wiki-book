@@ -46,7 +46,7 @@ Hermes Agent 是 **Nous Research** 开源的自主演式 AI Agent 框架，GitHu
 - [Hermes-Agent 自进化机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Skill 生成 + RL 训练双路径详解
 - [原始调研存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-tools-research.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/037-qoder-skills.html)
-- [Thin Harness Fat Skills](../ch05/101-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/102-thin-harness-fat-skills-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ## 深度分析
@@ -63,7 +63,7 @@ Hermes Agent 的自进化机制代表了一种新型的 AI Agent 设计范式：
 4. **警惕"进化陷阱"**：Skill 自动生成若缺乏质量控制，会导致技术债务累积，需要配套的 Skill 评估与淘汰机制
 
 ## 相关实体
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/515-aws-sagemaker-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/516-aws-sagemaker-ai-agent.html)
 
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/350-skill.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/350-skill.html)

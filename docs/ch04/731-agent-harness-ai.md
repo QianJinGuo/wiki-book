@@ -35,10 +35,10 @@
 5. **回放不是严格复现**：模型有随机性，回放只能做相似条件下的验证，用于判断优化方向
 
 ## 相关实体
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/077-harness.html)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/091-harness.html)
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/077-harness.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/077-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/091-harness.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/091-harness.html)
 - [Agent Harness Architecture](../ch05/043-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-observability-production.md)

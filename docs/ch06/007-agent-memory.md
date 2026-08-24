@@ -230,8 +230,8 @@ M3-Agent 的双重记忆设计（Episodic + Semantic）对视频/音频理解场
 - [Claude Code 7 Layer Memory Architecture](../ch03/085-claude-code.html) — Claude Code 7 层记忆架构
 - [Agent Memory Storage Six Schools Wiki Compile Vs Raw Data Debate](../ch04/180-agent-memory.html) — 记忆存储六派之争
 - [Agentic Ai Infrastructure Practice Series Nine Context Engineering](../ch04/117-agentic-ai.html) — AWS Context Engineering（基础设施层）
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/019-agent.html) — YAML 驱动的 Agent 评测
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/019-agent.html) — 淘宝导购 Agent 评测
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/006-agent.html) — YAML 驱动的 Agent 评测
+- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/006-agent.html) — 淘宝导购 Agent 评测
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-evaluation-landscape-taobao-survey.md) → [Agent Memory Evaluation Landscape Taobao Survey](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-evaluation-landscape-taobao-survey.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

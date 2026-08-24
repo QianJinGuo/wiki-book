@@ -190,7 +190,7 @@ SynthID 三年累计标记 1000 亿张图片/视频和约 6 万年音频，新�
 - [Building The Agentic Future Developer Highlights From Io 2026](../ch04/021-building-the-agentic.html)
 - [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 - [Google Debuts Gemini Focused Updates At Io 2026](ch01/1130-20.html)
-- [Alphaevolve Deepmind Discovery Agent](../ch03/019-agent.html)
+- [Alphaevolve Deepmind Discovery Agent](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-io-2026-agentic-gemini-era.md)
 

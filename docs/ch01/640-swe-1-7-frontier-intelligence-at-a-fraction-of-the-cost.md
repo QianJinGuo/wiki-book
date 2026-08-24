@@ -88,7 +88,7 @@ SWE-1.7 在长周期任务上的能力来自 **自压缩训练**。当 Agent 接
 ## 相关实体
 
 - **Kimi K2.7** — SWE-1.7 的基座模型（无独立实体页面）
-- [Devin](../ch05/077-harness.html) — Cognition 的 AI 软件工程师平台
+- [Devin](../ch05/091-harness.html) — Cognition 的 AI 软件工程师平台
 - **SWE-1.6 Preview** — 前代版本（无独立实体页面）
 - [FrontierCode](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md) — Cognition 的代码评测基准
 - [RLHF](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlhf-dpo-grpo-alignment.md) — RL 训练的基础框架

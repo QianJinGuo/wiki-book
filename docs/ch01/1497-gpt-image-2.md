@@ -92,9 +92,9 @@ Muse Video 与 Muse Image 共享同一套预训练底座，主打原生音频（
 
 ## 相关实体
 
-- [Meta Agent 图像生成模型](../ch03/019-agent.html) — Meta 在图像生成领域的 Agent 化探索
+- [Meta Agent 图像生成模型](../ch03/006-agent.html) — Meta 在图像生成领域的 Agent 化探索
 - [Meta Muse Spark 语音模式](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-muse-spark-voice-mode-meta-glasses.md) — Muse Spark（牛油果）的语音交互能力
-- [Meta AI 负责人 Alex Wang 谈 Muse Spark 与 AI 战争](../ch05/109-ai.html) — Meta AI 整体战略
+- [Meta AI 负责人 Alex Wang 谈 Muse Spark 与 AI 战争](../ch05/110-ai.html) — Meta AI 整体战略
 - [Muse AutoSkill 自进化 Agent](../ch04/802-self-evolving-agent.html) — Meta 在 Agent 自主技能获取方面的研究
 - [注意力坍塌与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md) — 涌现行为的理论基础
 - [Agent 世界模型扩展](../ch04/044-agent-world.html) — 测试时计算 Scaling 的相关讨论

@@ -62,8 +62,8 @@ Factory 能支持 16 天（目标 30 天）的长任务，核心依赖不是长�
 ## 相关实体
 - [Factory Missions Multi Agent Shipping](ch04/222-factory-missions.html)
 - [Sap Unveils The Autonomous Enterprise](ch04/158-sap-unveils-the-autonomous-enterprise.html)
-- [Agent Formal Verification Ai Code](../ch03/019-agent.html)
-- [Martin Fowler Ai Rd Harness Nondeterminism Devnote](../ch05/077-harness.html)
+- [Agent Formal Verification Ai Code](../ch03/006-agent.html)
+- [Martin Fowler Ai Rd Harness Nondeterminism Devnote](../ch05/091-harness.html)
 - [Peter Steinberger Openclaw 100 Ai Agents](../ch09/125-peter-steinberger-openclaw-100-ai.html)
 
 ---

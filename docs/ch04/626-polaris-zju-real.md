@@ -29,7 +29,7 @@ Polaris（北极星）是浙江大学 ZJU-REAL 团队开源的端到端科研智
 
 ## 定位对比
 
-Polaris 是「完整科研流水线编排」路线（端到端六阶段 + 人机分工），区别于[Claude Science 开源平替](../ch01/1212-claude.html)与 [Anthropic Claude Science](../ch03/085-claude-code.html) 的「研究 AI 工作台」路线，也与 [科研 Agent 多视角创新评估](../ch03/019-agent.html)（文献图谱驱动的评估视角）不同。三者互补：Polaris 强在流程闭环与实验室多人协作，Claude Science 强在模型能力底座与产品化，文献图谱路线强在创新评估的全局视野。
+Polaris 是「完整科研流水线编排」路线（端到端六阶段 + 人机分工），区别于[Claude Science 开源平替](../ch01/1212-claude.html)与 [Anthropic Claude Science](../ch03/085-claude-code.html) 的「研究 AI 工作台」路线，也与 [科研 Agent 多视角创新评估](../ch03/006-agent.html)（文献图谱驱动的评估视角）不同。三者互补：Polaris 强在流程闭环与实验室多人协作，Claude Science 强在模型能力底座与产品化，文献图谱路线强在创新评估的全局视野。
 
 ## 相关概念与实体
 
@@ -37,7 +37,7 @@ Polaris 是「完整科研流水线编排」路线（端到端六阶段 + 人机
 - [科研方法 × AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/scientific-method-ai-research.md)
 - [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 - [MCP 生态](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
-- [SkillClaw](ch04/563-skillclaw-nacos-agent-skill-registry.html) — 技能系统生态参照
+- [SkillClaw](ch04/564-skillclaw-nacos-agent-skill-registry.html) — 技能系统生态参照
 - [DeepSeek Harness](../ch09/016-deepseek-code-harness.html) — Polaris 能力开放的对接目标之一
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/浙大团队开源ai科研智能体polaris让ai与你一起做研究.md)

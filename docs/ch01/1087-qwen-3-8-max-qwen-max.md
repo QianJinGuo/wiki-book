@@ -57,7 +57,7 @@ oh-my-cli 实验展示了一个完整的自主编码 Harness 架构：需求进�
 - [Kimi K3: The Open-Weights Escalation](ch01/608-kimi-k3-the-open-weights-escalation.html) — 开源权重升级竞赛背景
 - [Open models recap](ch01/1418-kimi-k3.html) — 社区对 Qwen 3.8 的早期观察
 - [AgentScope Builder 自进化 Harness](../ch04/802-self-evolving-agent.html) — 同类自主演化系统
-- [Agent 自进化评测瓶颈](../ch03/019-agent.html) — 自主进化的评测约束
+- [Agent 自进化评测瓶颈](../ch03/006-agent.html) — 自主进化的评测约束
 - [Agent Loop 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — 反馈环路设计
 - [MoE 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/moe-mixture-of-experts-2025.md) — 2.4T 稀疏激活架构基础
 

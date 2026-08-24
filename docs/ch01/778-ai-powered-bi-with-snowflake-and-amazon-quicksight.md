@@ -131,7 +131,7 @@ Snowflake 联合行业领导者推动的开放语义交换标准（OSI），目�
 
 - [Snowflake Agentic Enterprise](../ch04/298-agentic.html) — Snowflake 的 Agent 平台愿景
 - [SchemaFlow](../ch04/298-agentic.html) — Agent 驱动的 SQL 生成
-- [Anthropic Data Analysis](ch01/1605-anthropic.html) — LLM 数据分析的另一个视角
+- [Anthropic Data Analysis](ch01/1594-anthropic.html) — LLM 数据分析的另一个视角
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束下放的架构理念
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-powered-bi-with-snowflake-and-amazon-quick.md)

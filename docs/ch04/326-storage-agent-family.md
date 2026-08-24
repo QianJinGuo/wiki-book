@@ -76,7 +76,7 @@ Sandbox 执行环境支持运行命令、保存中间文件、读取输出、失
 - Agentic RAG 模式
 - [Agent Harness 运行时模式](../ch05/043-agent-harness.html)
 - [Agent 记忆存储工程实践](ch04/180-agent-memory.html)
-- [State Lake 火山引擎存储](../ch03/019-agent.html)
+- [State Lake 火山引擎存储](../ch03/006-agent.html)
 - [Agent Harness 钉钉招聘案例](../ch05/043-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/storage-agent-family-agent-时代重构云存储的人机交互.md)

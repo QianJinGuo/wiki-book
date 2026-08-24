@@ -124,7 +124,7 @@ VOC 管线采用三阶段 pipeline：并行提取 → 问题聚类 → 报告生
 * 
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/109-ai.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/110-ai.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](../ch11/240-amazon-quick.html)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/665-amazon-bedrock-agentcore.html)
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](ch01/1147-llm.html)

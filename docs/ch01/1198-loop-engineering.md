@@ -62,8 +62,8 @@
 
 - [交易与量化 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/trading-quantitative-ai.md) — 量化因子挖掘/策略回测/Alpha 生成的概念页
 - [Loop Engineering 方法论](https://github.com/QianJinGuo/wiki/blob/main/concepts/loop-engineering-methodology.md) — 通用方法论：感知-决策-执行-验证四阶段
-- [阿里云 Loop 实战（日志扫描→预发部署）](../ch05/122-loop-engineering.html) — Loop 在 devops 场景的应用；本实体是量化金融场景
-- [Loop Engineering 四层框架](../ch05/122-loop-engineering.html) — 另一 Loop 落地框架
+- [阿里云 Loop 实战（日志扫描→预发部署）](../ch05/123-loop-engineering.html) — Loop 在 devops 场景的应用；本实体是量化金融场景
+- [Loop Engineering 四层框架](../ch05/123-loop-engineering.html) — 另一 Loop 落地框架
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cicc-loop-engineering-factor-discovery-engine-2026-08-06.md)
 
 ---

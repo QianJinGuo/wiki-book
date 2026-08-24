@@ -37,7 +37,7 @@ Agent Executor 的开放性设计——支持 LangChain/LangGraph、ADK、以及
 - **通过 A2A 协议实现跨组织 agent 协作**：Agent2Agent Protocol 的开放性意味着不同组织开发的 agent 可以互操作。在设计 agent 系统时，应考虑支持 A2A 以便未来与其他供应商的 agent 无缝集成。
 
 ## 相关实体
-- [Agentexecutorgooglesdistributedagentruntime](ch04/473-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](ch04/005-agentrun.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/520-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
 - [A Bitter Lesson For Data Filtering E8807D](../ch01/1035-a-bitter-lesson-for-data-filtering.html)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/033-agent-skills.html)

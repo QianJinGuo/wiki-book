@@ -85,12 +85,12 @@ Multi-Agent RL的解法是将"做什么"（工具调用）和"怎么说"（回�
 ## 相关实体
 
 - [QoderWork Skills开发实践](../ch03/077-skills.html)
-- [Harness Engineering探索之旅](../ch05/065-harness-engineering.html)
-- [Agent落地真相](../ch03/019-agent.html)
+- [Harness Engineering探索之旅](../ch05/066-harness-engineering.html)
+- [Agent落地真相](../ch03/006-agent.html)
 - [AgentCore旅行分配系统](ch04/783-agentcore-harness.html)
 - [群聊Agent模式](../ch01/1212-claude.html)
-- [Agent评测方法论](../ch03/019-agent.html)
-- [AREAL-2.0 Agent自演进](../ch03/019-agent.html)
+- [Agent评测方法论](../ch03/006-agent.html)
+- [AREAL-2.0 Agent自演进](../ch03/006-agent.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

@@ -50,7 +50,7 @@ UP-ReAct 最核心的变革在于控制权模型的重构。从分布式决策�
 
 统一行为层的设计——所有系统行为必须封装为标准 Tool——是一项极具前瞻性的架构决策。当"退出"（exit_and_reply_tool）、"深度思考"（deep_think_tool）、"租户配置加载"（load_tenant_config_tool）都变成了标准 API 时，系统的动作空间变得完全可枚举。
 
-这种设计理念与 [SageMaker RL](../ch05/109-ai.html) 中的"动作空间离散化"思路一致——可枚举的动作空间是强化学习微调的前提条件。火山引擎的架构实际上为未来对 Policy 进行 RL 微调铺平了道路。
+这种设计理念与 [SageMaker RL](../ch05/110-ai.html) 中的"动作空间离散化"思路一致——可枚举的动作空间是强化学习微调的前提条件。火山引擎的架构实际上为未来对 Policy 进行 RL 微调铺平了道路。
 
 ### 与行业共识的共振
 
@@ -73,9 +73,9 @@ UP-ReAct 最核心的变革在于控制权模型的重构。从分布式决策�
 
 ## 相关实体
 
-- [腾讯 Harness Engineering 探索之旅](../ch05/065-harness-engineering.html)
+- [腾讯 Harness Engineering 探索之旅](../ch05/066-harness-engineering.html)
 - [Codex 五层架构](../ch01/737-codex.html)
-- [SageMaker 多轮 RL 实践](../ch05/109-ai.html)
+- [SageMaker 多轮 RL 实践](../ch05/110-ai.html)
 - [LangGraph Agent 操作系统](ch04/271-langgraph.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

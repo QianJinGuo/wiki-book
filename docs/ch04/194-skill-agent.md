@@ -132,9 +132,9 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 ## 相关实体
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](ch04/614-agent-skill.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch06/048-memory.html)
-- [9个Agent技能模块化SageMaker微调生命周期](ch04/515-aws-sagemaker-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](ch04/516-aws-sagemaker-ai-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch04/350-skill.html)
-- [Agent 自我改进的六条路](../ch03/019-agent.html)
+- [Agent 自我改进的六条路](../ch03/006-agent.html)
 - [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/1130-20.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](ch04/350-skill.html)
@@ -154,7 +154,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [hermes-agent-self-evolving-source-analysis](../ch03/099-hermes-agent.html)
 - [Claude Code Prompt 提示词体系源码解析](../ch09/073-claude-code-prompt.html)
-- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 

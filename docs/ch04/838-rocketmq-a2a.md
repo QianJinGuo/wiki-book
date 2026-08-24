@@ -68,7 +68,7 @@ Supervisor 和 Worker 各自拥有独立状态机，通过 MQ 消息驱动转换
 
 ---
 **相关条目**
-- [Agent 评测精细化](../ch03/019-agent.html)
+- [Agent 评测精细化](../ch03/006-agent.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocketmq-a2a-session-level-replayable-event-streams-fse-2026.md)
 
 ---

@@ -107,7 +107,7 @@ PROPOSE→APPLY→SHIP→ARCHIVE 四阶段生命周期将传统软件工程中�
 - [黄佳 8 关卡](../ch03/085-claude-code.html) — 企业级 AI 代码质量门禁框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 分层 Harness 工程的通用理论
 - [Agent Harness 上下文管理](../ch05/043-agent-harness.html) — 上下文分层与工作集管理技术
-- [OpenSpec/Solo Spec 驱动开发](../ch05/055-openspec.html) — 规格先行在 AI 开发中的应用
+- [OpenSpec/Solo Spec 驱动开发](../ch05/056-openspec.html) — 规格先行在 AI 开发中的应用
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-apprentice-v1.0-32-files-design-zaowushougao-2026.md)
 

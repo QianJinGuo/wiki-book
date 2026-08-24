@@ -16,7 +16,7 @@
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/085-claude-code.html)
 - [Claude Code Openclaw Memory Comparison](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/479-anthropic-claude-code.html)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/065-harness-engineering.html)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/066-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 

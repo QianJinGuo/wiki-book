@@ -1,6 +1,6 @@
 # 《AI 第一书：从入门到院士》
 
-> 全球第一部基于 4040 篇编撰实体系统编撰的开源读物。
+> 全球第一部基于 4043 篇编撰实体系统编撰的开源读物。
 
 > 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
 
@@ -10,17 +10,17 @@
 
 | 篇 | 定位 | 读者 | 代表实体数 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1816 篇 |
-| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1435 篇 |
+| 第一篇 · 入门篇 — 从零理解 AI | 任何人 | 1817 篇 |
+| 第二篇 · 工程师篇 — 构建 AI 应用 | 有编程基础 | 1436 篇 |
 | 第三篇 · 专家篇 — 深入系统架构 | 有ML基础 | 528 篇 |
-| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 209 篇 |
+| 第四篇 · 科学家篇 — 研究与创新 | 研究者 | 210 篇 |
 | 第五篇 · 大师篇 — 哲学、安全与未来 | 思考者 | 52 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1630 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 1631 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 2026年最值得关注的15款开发者工具深度解读
@@ -31,7 +31,7 @@
   - ⭐ 快手首个打工人Agent
   - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
   - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ... 共 **1630** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **1631** 篇 → [完整章节](ch01-ai-basics.md)
 
 ### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 43 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
@@ -54,12 +54,12 @@
   - ⭐ Your defect backlog is a retention report
   - ⭐ It's Time to Walk
   - ⭐ Habib Hajallie's Meticulous Ballpoint Pen Drawings Examine the Depths 
+  - ⭐ Agent 时代的生产力悖论：协作成为新瓶颈
   - ⭐ The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS
   - ⭐ What the design-to-code loop unlocks
-  - ⭐ Choosing to Stay Human
   - ... 共 **143** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 1816 篇**
+> 📖 **本篇共 1817 篇**
 
 ---
 
@@ -78,7 +78,7 @@
   - ⭐ FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
   - ... 共 **844** 篇 → [完整章节](ch04-agent-core.md)
 
-### [Ch05 Harness 工程](ch05-harness.md) — 154 篇
+### [Ch05 Harness 工程](ch05-harness.md) — 155 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
   - ⭐ Impeccable：大规模自动化测试框架
@@ -89,7 +89,7 @@
   - ⭐⭐ Loop Engineering: 把反馈循环放进工程现场
   - ⭐⭐ Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
   - ⭐⭐ QQ音乐 Harness Engineering 实践（大仓多服务场景）
-  - ... 共 **154** 篇 → [完整章节](ch05-harness.md)
+  - ... 共 **155** 篇 → [完整章节](ch05-harness.md)
 
 ### [Ch06 记忆与上下文管理](ch06-memory.md) — 57 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
@@ -156,7 +156,7 @@
   - ⭐ Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑
   - ... 共 **45** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 1435 篇**
+> 📖 **本篇共 1436 篇**
 
 ---
 
@@ -220,7 +220,7 @@
 
 ## 第四篇 · 科学家篇 — 研究与创新
 
-### [Ch15 训练与微调](ch15-training.md) — 64 篇
+### [Ch15 训练与微调](ch15-training.md) — 65 篇
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
   - ⭐ optimize-model-training-on-amazon-sagemaker-ai-with-nvidia-b
@@ -231,7 +231,7 @@
   - ⭐⭐ NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）
   - ⭐⭐ 多轮Agent蒸馏终于不翻车！港中文x通义新方法成功率暴涨18点，训练还快32%
   - ⭐⭐ ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
-  - ... 共 **64** 篇 → [完整章节](ch15-training.md)
+  - ... 共 **65** 篇 → [完整章节](ch15-training.md)
 
 ### [Ch16 推理优化与架构](ch16-inference.md) — 42 篇
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
@@ -272,7 +272,7 @@
   - ⭐⭐ LingBot-VA 2.0 — 蚂蚁灵波具身原生预训练视频-动作基座模型
   - ... 共 **35** 篇 → [完整章节](ch18-robotics.md)
 
-> 📖 **本篇共 209 篇**
+> 📖 **本篇共 210 篇**
 
 ---
 
@@ -301,13 +301,13 @@
   - ⭐⭐ James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
   - ⭐⭐ GitLab employees are the latest to face layoffs limbo. Read the CEO's 
   - ⭐⭐ Multilingual AI
-  - ⭐⭐ 人机对齐？不，是人正在向机器对齐
+  - ⭐⭐ Token 经济学与 AI 效率
   - ... 共 **24** 篇 → [完整章节](ch20-ai-philosophy.md)
 
 > 📖 **本篇共 52 篇**
 
 ---
 
-**📊 全书收录：4040 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：4043 篇编撰实体 | 20 章 5 篇 | 开源读物**
 
-生成时间: 2026-08-24 | 来源: ~/wiki/entities/
+生成时间: 2026-08-25 | 来源: ~/wiki/entities/

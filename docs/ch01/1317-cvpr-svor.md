@@ -15,14 +15,14 @@
 - 视频消除三大顽疾
 ## 相关实体
 - [A2Rd Agentic Autoregressive Diffusion Long Video](../ch04/298-agentic.html)
-- [Yumanju Ai Full Flow Efficiency](../ch05/109-ai.html)
+- [Yumanju Ai Full Flow Efficiency](../ch05/110-ai.html)
 - [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](../ch03/084-obsidian-claude-code.html)
-- [腾讯研究院Ai速递 20260430](../ch05/109-ai.html)
+- [腾讯研究院Ai速递 20260430](../ch05/110-ai.html)
 - [Gbrain Garry Tan Yanfa Zhili](ch01/904-garry-tan.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
-- [Joyai Echo Long Video Jd Qbitai](../ch05/109-ai.html)
+- [Joyai Echo Long Video Jd Qbitai](../ch05/110-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 ### 技术架构：从单点优化到系统协同

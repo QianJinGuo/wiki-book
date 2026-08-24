@@ -14,9 +14,9 @@ Amazon Web Services (AWS)
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/multi-agent-architecture-retail-practice/)
 
 ## 相关实体
-- [你不知道的 Agent 原理架构与工程实践](../ch04/443-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/444-agent-principle-architecture-engineering-practice.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
-- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/006-agent.html)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch11/254-openclaw.html)
 - [factory mission multi agent architecture](../ch01/1474-factory-mission-multi-agent-architecture.html)

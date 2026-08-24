@@ -48,7 +48,7 @@ Nvidia 的自由现金流在上一财年达到 970 亿美元，使其有能力�
 - [Edgeclaw Bemit Lobster](../ch04/651-edgeclaw.html)
 - [Claude Opus 47](ch01/1212-claude.html)
 - [Hermes Agent Getting Started Guide 2026](../ch03/099-hermes-agent.html)
-- [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](../ch05/109-ai.html)
+- [Gpt 54 烧完额度后我把七家国产 Ai 公司 Coding Plan 对比了一遍想不到最应该买的竟然是这家](../ch05/110-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.md)

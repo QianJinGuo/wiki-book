@@ -216,7 +216,7 @@ Hermes的Smart Approval是**分诊导向**：先用LLM判断危险等级，再�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-hermes-source-code-agent-architecture-review.md)
 
 - [Openclaw Architecture 800Lines](../ch11/254-openclaw.html)
-- [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](../ch03/019-agent.html)
+- [Aliyun Mse Ai Task Scheduling Agent Sandbox Cost 90 Percent](../ch03/006-agent.html)
 
 ---
 

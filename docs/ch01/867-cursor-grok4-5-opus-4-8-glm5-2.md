@@ -60,9 +60,9 @@ Grok 4.5 基于 1.5 万亿参数的 V9 基础模型，在数万张 NVIDIA GB300 
 
 ## 相关实体
 
-- [Grok 4.5 模型发布详情](../ch05/109-ai.html)
+- [Grok 4.5 模型发布详情](../ch05/110-ai.html)
 - [Claude Opus 4.8 系统卡分析](ch01/1212-claude.html)
-- [Cursor 复盘：模型决定能力上限，Harness 决定生产下限](../ch05/077-harness.html)
+- [Cursor 复盘：模型决定能力上限，Harness 决定生产下限](../ch05/091-harness.html)
 - [Cursor Harness 模型生产化实践](ch01/451-cursor-harness-model-production-floor.html)
 - [Claude Code Checkup 功能](../ch03/085-claude-code.html)
 

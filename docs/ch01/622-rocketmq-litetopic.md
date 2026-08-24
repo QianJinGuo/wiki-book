@@ -94,7 +94,7 @@ Suspend 将「等待的成本」从客户端转移到了 Broker，消费者线�
 
 - [Fastapi Auth Rate Limit Zero Downtime](../ch11/229-fastapi.html) — API 限流与零宕机部署
 - [Backend Ai Friendly Standards Path Alitech](../ch05/023-ai-friendly.html) — 后端 AI 友好标准化
-- [Alicloud Ai Practices](../ch05/109-ai.html) — 阿里云 AI 实践
+- [Alicloud Ai Practices](../ch05/110-ai.html) — 阿里云 AI 实践
 - [Alitech Standards](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md) — 阿里技术标准
 - [Ai Cost Optimization Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md) — AI 成本优化框架
 

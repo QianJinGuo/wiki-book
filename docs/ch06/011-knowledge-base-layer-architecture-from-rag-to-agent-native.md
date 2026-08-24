@@ -157,11 +157,11 @@ Karpathy 提出的知识库模式。三层架构：**Raw Sources**（人类策�
 ## 相关实体
 
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 金字塔分层是 context engineering 的"知识侧"实现
-- [Agent Evolution 四阶段六维](../ch03/019-agent.html) — Memory 维度的"文件系统沉淀"与 Pyramid KB 的 L4/L5 对应
+- [Agent Evolution 四阶段六维](../ch03/006-agent.html) — Memory 维度的"文件系统沉淀"与 Pyramid KB 的 L4/L5 对应
 - [Hermes Agent Operator](../ch03/099-hermes-agent.html) — Hermes 的 LLM-Wiki 模式实现（Karpathy 提出的范式二）
-- [Claude Code 深度解析](../ch05/087-claude-code-harness.html) — Claude Code 的 CLAUDE.md / SKILL.md 是"渐进式披露"实践
+- [Claude Code 深度解析](../ch05/088-claude-code-harness.html) — Claude Code 的 CLAUDE.md / SKILL.md 是"渐进式披露"实践
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Knowledge Context Layer 是 Harness 的知识基础设施层
-- [Agent 记忆系统实践](../ch03/019-agent.html) — Memory 模块的工程化对照
+- [Agent 记忆系统实践](../ch03/006-agent.html) — Memory 模块的工程化对照
 - [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md) — Naive RAG 范式
 - [GraphRAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/knowledge-graph-rag.md) — 范式四
 
