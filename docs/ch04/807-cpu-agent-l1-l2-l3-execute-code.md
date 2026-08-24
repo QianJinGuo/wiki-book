@@ -275,7 +275,7 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 
 - [AI Agent 工具数量陷阱](ch04/377-ai-agent.html) — "5-10 工具"是 Anthropic 答案；"1 execute_code"是本文答案（更激进的同向论述）
 - [Agent Harness 上下文管理工作集视角](../ch05/043-agent-harness.html) — 工作集是 **L1 内部**的精细化设计；本文是工作集的 L1/L2/L3 宏观扩展
-- [智能体编排层中的上下文管理架构](../ch03/019-agent.html) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
+- [智能体编排层中的上下文管理架构](../ch03/006-agent.html) — 框架主动约束 vs 模型自主管理的权衡；本文是同向的更激进的 execute_code 推论
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程的概念基础
 - [Code as Agent Harness Survey](../ch09/064-code-as-agent-harness.html) — 编程语言作为 Agent 接口的更广义论述
 - [Claude Code 工具设计演进](../ch03/085-claude-code.html) — Anthropic 工具设计的演进

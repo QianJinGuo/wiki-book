@@ -14,7 +14,7 @@ Published Time: Wed, 13 May 2026 15:55:13 GMT
 ## 相关实体
 - [Opendefenseinitiativedepthfirst](https://github.com/QianJinGuo/wiki/blob/main/entities/opendefenseinitiativedepthfirst.md)
 - [Open Defense Initiative Depthfirst](ch01/1057-open-defense-initiative-depthfirst.html)
-- [Joyai Echo Long Video Framework Jd](../ch05/109-ai.html)
+- [Joyai Echo Long Video Framework Jd](../ch05/110-ai.html)
 - [Openchronicle Memory Layer](../ch06/048-memory.html)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch04/804-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 

@@ -90,7 +90,7 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 
 ## 相关实体
 
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/109-ai.html)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](../ch05/110-ai.html)
 - [system over model, tested: reproducing mythos's freebsd find](../ch12/031-mythos.html)
 - [from doer to director: the ai mindset shift](ch01/036-from-doer-to-director-the-ai-mindset-shift.html)
 - [DDoSing Software Delivery Pipelines](ch01/1130-20.html)

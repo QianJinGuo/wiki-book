@@ -14,8 +14,8 @@
 - [Agent Harness 12 Components 7 Decisions](../ch05/043-agent-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/377-ai-agent.html)
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
-- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/077-harness.html)
-- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/077-harness.html)
+- [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/091-harness.html)
+- [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/091-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langchain-anatomy-agent-harness.md)
 

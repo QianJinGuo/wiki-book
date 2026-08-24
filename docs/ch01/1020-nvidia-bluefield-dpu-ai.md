@@ -64,9 +64,9 @@ NVIDIA BlueField 不仅是性能加速器，也是云上"可信数据通路"的�
 
 ## 相关实体
 
-- [百度机密计算全链路](../ch05/109-ai.html)
+- [百度机密计算全链路](../ch05/110-ai.html)
 - [OBI 零代码可观测性](ch01/1130-20.html)
-- [Agent 可观测性五层架构](../ch03/019-agent.html)
+- [Agent 可观测性五层架构](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-bluefield-dpu-助力-ai-云兼顾效率与可信.md)
 

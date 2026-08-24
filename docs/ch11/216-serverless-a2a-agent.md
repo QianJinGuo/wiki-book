@@ -19,7 +19,7 @@
 
 结果是：新 agent 工作流上线慢、安全风险高、运维开销随 agent 数量平方增长。
 
-网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](../ch04/298-agentic.html)、[Lambda](../ch04/473-agentrun.html)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
+网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](../ch04/298-agentic.html)、[Lambda](../ch04/005-agentrun.html)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
 
 ## 三层架构
 
@@ -95,7 +95,7 @@ cd terraform && terraform apply
 ## 相关实体
 
 - [Agentic Overlays：从 REST 到 A2A 的企业转型](../ch04/298-agentic.html) — REST → A2A 过渡的互补方案
-- [Alibaba Cloud AgentRun 多 Agent A2A](../ch04/473-agentrun.html) — 不同云上的 A2A 实现
+- [Alibaba Cloud AgentRun 多 Agent A2A](../ch04/005-agentrun.html) — 不同云上的 A2A 实现
 - [AWS/Cisco A2A 安全方案](../ch04/377-ai-agent.html) — A2A 安全治理生态
 - [LangGraph A2A 对抗 Agent 团队](../ch04/271-langgraph.html) — A2A 协议的应用示例
 

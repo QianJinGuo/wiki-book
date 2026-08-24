@@ -145,25 +145,25 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 记住：Memory 系统早期，先做到"像工程系统一样能查账"，再追求"像人一样记忆"。
 
 ## 相关实体
-- [Agent Memory 架构本质](ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构本质](ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [memory agent systems cobanov](ch04/709-memory-agent-systems-cobanov.html)
 
 - [AI Agent 记忆系统架构](ch04/216-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch06/014-hermes-agent-memory.html)
 - [ai agent memory systems](ch04/180-agent-memory.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/443-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/444-agent-principle-architecture-engineering-practice.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/043-agent-harness.html)
-- [Agent 自我改进的六条路](../ch03/019-agent.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/077-harness.html)
+- [Agent 自我改进的六条路](../ch03/006-agent.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/091-harness.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/254-openclaw.html)
-- [AI Coding Agent 记忆系统](ch04/409-ai-coding-agent.html)
+- [AI Coding Agent 记忆系统](ch04/410-ai-coding-agent.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
-- [Thin Harness Fat Skills](../ch05/101-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/102-thin-harness-fat-skills-ai.html)
 - [Hermes Agent 记忆系统深度拆解](../ch06/014-hermes-agent-memory.html)
 - [Design Patterns for AI Agents 2026](ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
-- [harness-engineering-systematic-explainer](../ch05/065-harness-engineering.html)
+- [harness-engineering-systematic-explainer](../ch05/066-harness-engineering.html)
 - [claude-code-7-layer-memory-architecture](../ch03/085-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

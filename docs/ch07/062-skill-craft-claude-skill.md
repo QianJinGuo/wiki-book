@@ -79,7 +79,7 @@ audit 模式揭示了一个关键问题：**多 Skill 系统的复杂性不是�
 
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html) — Claude Code 的 Skill 加载与执行机制
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — Agent 系统的可观测性与运维
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html) — Agent 记忆系统中的约束管理
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html) — Agent 记忆系统中的约束管理
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 中的质量工程维度
 - [Prompt Engineering Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-patterns.md) — 提示工程模式
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)

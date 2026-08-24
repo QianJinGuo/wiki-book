@@ -83,14 +83,14 @@ subgoals 让用户在执行过程中补充约束，不必推翻原目标重来�
 - **Ralph Loop**：长程 Agent 执行模式理念，外部状态+显式停止条件替代聊天记忆
 - **Dumb Zone**：上下文堆积导致 Agent 质量下滑的区域
 - **Judge**：辅助模型负责窄判定（是否继续），可独立配置廉价 provider
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/065-harness-engineering.html)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/066-harness-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](../ch01/553-codeindex.html)
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](ch04/033-agent-skills.html)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/085-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/443-agent-principle-architecture-engineering-practice.html)
-- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/019-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/444-agent-principle-architecture-engineering-practice.html)
+- [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
 

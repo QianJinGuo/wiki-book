@@ -120,8 +120,8 @@ WorkBuddy 专家团预设了 8 个 Workflow，覆盖最常见的协作场景。�
 - [Agentcore Harness Trip Allocation Multi Agent System Aws](../ch04/783-agentcore-harness.html) — 多 Agent 系统的 AWS 实践
 - [Hermes Agent](../ch03/099-hermes-agent.html) — Agent Skills 机制与 WorkBuddy 的对比
 - [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/085-claude-code.html) — 桌面 Agent 产品的工程设计对比
-- [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/019-agent.html) — Agent 工程化落地讨论
-- [Agent Harness Engineering Survey 2026](../ch05/065-harness-engineering.html) — Harness Engineering 与多 Agent 编排
+- [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/006-agent.html) — Agent 工程化落地讨论
+- [Agent Harness Engineering Survey 2026](../ch05/066-harness-engineering.html) — Harness Engineering 与多 Agent 编排
 
 ## 相关主题
 

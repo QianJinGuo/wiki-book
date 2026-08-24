@@ -66,7 +66,7 @@ Laguna XS 2.1 是 Agentic Coding 领域当前最具竞争力的开源模型之�
 
 - [Codex 五层架构](../ch01/737-codex.html)
 - [Claude Code 深度架构分析](../ch03/085-claude-code.html)
-- [Pi Agent](../ch04/415-pi-agent.html)
+- [Pi Agent](../ch04/416-pi-agent.html)
 - [LLM Post-Training](../ch01/1147-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/poolside-laguna-xs-2-1-2026.md)

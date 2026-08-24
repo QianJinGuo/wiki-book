@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [被裁了想转 ai agent？先看面试官到底在筛你哪 7 样东西](../ch03/019-agent.html)
+- [被裁了想转 ai agent？先看面试官到底在筛你哪 7 样东西](../ch03/006-agent.html)
 - [试用 amazon bedrock 中的新控制台体验：该体验针对兼容 anthropic 和 openai 的 api](../ch11/309-amazon-bedrock.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/全球ai新王诞生anthropic估值冲爆12万亿首次反超openai.md)
 
@@ -41,7 +41,7 @@
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/254-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/019-agent.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/006-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 

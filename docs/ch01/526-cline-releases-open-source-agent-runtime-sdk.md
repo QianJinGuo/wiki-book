@@ -131,7 +131,7 @@ npx skills add cline/sdk-skill
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/085-claude-code.html)
 - [Codex /goal：长任务Agent的目标运行时](../ch04/247-codex-goal-agent.html)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11/313-bedrock.html)
-- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/019-agent.html)
+- [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/006-agent.html)
 
 ## 深度分析
 ### SDK 分层架构的设计哲学

@@ -60,7 +60,7 @@ OpenAI 已在 2026 年 2 月聘请 Instagram 前明星合作负责人 Charles Po
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](ch01/1095-openai-gpt-realtime-voice-models-qbitai.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](ch01/041-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch05/109-ai.html)
+- [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch05/110-ai.html)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](ch01/087-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 - [Build Live Translation Apps With Gpt Realtime Translate](ch01/102-build-live-translation-apps-with-gpt-realtime-translate.html)
 

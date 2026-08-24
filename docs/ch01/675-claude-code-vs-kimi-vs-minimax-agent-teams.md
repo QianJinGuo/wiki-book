@@ -29,7 +29,7 @@ Agent Teams 概念近期持续升温——Claude Code 在推 agent teams，Kimi 
 2. **上下文腐烂**：日志、网页、报错、搜索结果一多，context 开始退化，前面的约束会遗忘，前面的风格可能改变
 3. **线程混用**：用户想要秒回，后台任务需要几分钟到几十分钟，单 agent 把两个线程混在一起，要么秒回一堆废话，要么半天没动静
 
-这些问题的根因不在模型智力，而在缺乏系统化的控制平面——这正是 [Harness Engineering](../ch05/065-harness-engineering.html) 要解决的核心问题。
+这些问题的根因不在模型智力，而在缺乏系统化的控制平面——这正是 [Harness Engineering](../ch05/066-harness-engineering.html) 要解决的核心问题。
 
 ### Claude Code Agent Teams：最像工程团队的协作范式
 
@@ -89,10 +89,10 @@ Worker 和 Verifier 的隔离是关键——Verifier 要像一个不近人情的
 ## 相关实体
 
 - [Claude Code 架构分析](../ch03/085-claude-code.html) — Claude Code 的深层架构拆解
-- [Harness Engineering](../ch05/065-harness-engineering.html) — Agent 控制平面的系统方法论
+- [Harness Engineering](../ch05/066-harness-engineering.html) — Agent 控制平面的系统方法论
 - [Agent Orchestration](../ch04/624-agent-orchestration.html) — 多 agent 编排模式
 - [Kimi K2 Agent Swarm](ch01/579-kimi.html) — Kimi 并行 agent 方案的技术细节
-- [Agent 评测方法论](../ch03/019-agent.html) — 验证和评估 agent 系统的方法
+- [Agent 评测方法论](../ch03/006-agent.html) — 验证和评估 agent 系统的方法
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-vs-kimi-vs-minimaxagent-teams-到底拼的是什么.md)
 

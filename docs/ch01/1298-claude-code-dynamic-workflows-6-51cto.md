@@ -49,7 +49,7 @@ Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角） 涉及agen
 ### 关联实体
 
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)

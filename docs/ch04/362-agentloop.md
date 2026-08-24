@@ -57,7 +57,7 @@ AgentLoop 回答了 Agent 时代观测的核心命题：**观测的对象变了�
 
 AgentLoop 的出现填补了 Agent 生产化链路中一个关键空白——**生产环境的持续评估与进化循环**。多数 Agent 开发框架（LangChain、AgentScope、[Hermes Agent](../ch03/099-hermes-agent.html) 等）提供了构建 Agent 的工具链，但缺乏将生产数据反哺到 Agent 能力的闭环机制。
 
-AgentLoop 的"Agent + Harness → 观测 → 评估 → 优化"链路，与 [Harness Engineering 2026 全景](../ch05/065-harness-engineering.html) 中描述的"可观测性是 Harness 的核心支柱"完全一致。AgentLoop 通过 MVP 五环将 Harness 工程的观测侧做实，使 Agent 能够在生产环境中自我进化。
+AgentLoop 的"Agent + Harness → 观测 → 评估 → 优化"链路，与 [Harness Engineering 2026 全景](../ch05/066-harness-engineering.html) 中描述的"可观测性是 Harness 的核心支柱"完全一致。AgentLoop 通过 MVP 五环将 Harness 工程的观测侧做实，使 Agent 能够在生产环境中自我进化。
 
 ## 实践启示
 
@@ -75,9 +75,9 @@ AgentLoop 的"Agent + Harness → 观测 → 评估 → 优化"链路，与 [Har
 
 - [Hermes Agent](../ch03/099-hermes-agent.html)
 - [Agent Harness 生产化](../ch05/043-agent-harness.html)
-- [Harness Engineering 2026 全景](../ch05/065-harness-engineering.html)
-- [Agent 评测方法论与体系设计](../ch03/019-agent.html)
-- [阿里云 AI 实践](../ch05/109-ai.html)
+- [Harness Engineering 2026 全景](../ch05/066-harness-engineering.html)
+- [Agent 评测方法论与体系设计](../ch03/006-agent.html)
+- [阿里云 AI 实践](../ch05/110-ai.html)
 - [Agent Teams 群聊模式](../ch01/1212-claude.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)

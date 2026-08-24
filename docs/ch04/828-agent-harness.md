@@ -44,7 +44,7 @@
 
 生产 Agent 的可靠性不取决于模型有多强，而取决于状态边界是否清楚、失败闭环是否完整。状态要分层：候选、已验证、已执行、已提交的动作必须显式区分，同一运行事实不应从多个来源拼接。State Schema First 是落地原则——先回答"哪些事实必须恢复、哪些必须跨端一致、哪些只是派生视图"，再设计 prompt 与工具。重启后能从 checkpoint 恢复、用户 stop 后后端不再执行——这些可检查标准定义了状态边界的验收线。
 
-失败闭环的另一半是恢复与回滚：长任务定期 checkpoint，失败时从最近点续跑而非从头重跑；跨会话靠 Progress File 避免重复劳动。Harness 自身的变更必须可回归，自进化 Harness（AHE 方向）只在可评估、可回滚、有 canary 时才放开。这与 [Harness 之后：状态边界与失败闭环](../ch05/077-harness.html) 的判断一致：很多失败不是模型不会想，而是系统没有区分已验证动作与已提交状态。
+失败闭环的另一半是恢复与回滚：长任务定期 checkpoint，失败时从最近点续跑而非从头重跑；跨会话靠 Progress File 避免重复劳动。Harness 自身的变更必须可回归，自进化 Harness（AHE 方向）只在可评估、可回滚、有 canary 时才放开。这与 [Harness 之后：状态边界与失败闭环](../ch05/091-harness.html) 的判断一致：很多失败不是模型不会想，而是系统没有区分已验证动作与已提交状态。
 
 ## 实践启示
 
@@ -58,14 +58,14 @@
 ## 相关实体
 
 - [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](../ch05/043-agent-harness.html)
-- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/077-harness.html)
-- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](../ch05/077-harness.html)
-- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist](../ch05/065-harness-engineering.html)
+- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/091-harness.html)
+- [Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环](../ch05/091-harness.html)
+- [Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist](../ch05/066-harness-engineering.html)
 - [Code as Agent Harness 综述](../ch09/064-code-as-agent-harness.html)
-- [Harness 工程核心模式](../ch05/065-harness-engineering.html)
-- [Harness 范式](../ch05/077-harness.html)
-- [Ralph Loop 长程执行](../ch05/077-harness.html)
-- [Agent 架构：Harness 正在成为新后端](../ch05/077-harness.html)
+- [Harness 工程核心模式](../ch05/066-harness-engineering.html)
+- [Harness 范式](../ch05/091-harness.html)
+- [Ralph Loop 长程执行](../ch05/091-harness.html)
+- [Agent 架构：Harness 正在成为新后端](../ch05/091-harness.html)
 - [生产级 Agent 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md)
 - [AI 可观测性与监控](https://github.com/QianJinGuo/wiki/blob/main/concepts/observability-monitoring-ai.md)
 - [多 Agent 编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)

@@ -2,7 +2,7 @@
 
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
-> 本章收录 **1630 篇**实体，按深度递增排列。
+> 本章收录 **1631 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 372 |
 | ⭐⭐ 工程师 | 需编程基础 | 1078 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 137 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 25 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 26 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 18 |
 
 ---
@@ -1641,30 +1641,31 @@
 - [1601. Gemini 3.5 Flash 内置 Computer Use 能力](ch01/1601-gemini-3-5-flash-computer-use)
 - [1602. Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan](ch01/1602-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gr)
 - [1603. 淘宝闪购爆品团精排 Scaling Up 迭代实践](ch01/1603-scaling-up)
-- [1604. 腾讯混元 CL-Bench Life：让大模型读懂你的日常生活](ch01/1604-cl-bench-life)
-- [1605. Anthropic 前沿红队多智能体冲突实验 — 安全是整体属性而非个体属性](ch01/1605-anthropic)
-- [1606. LLM 记忆容量：ICML 2026 获奖论文揭示每个参数约 3.6 bit](ch01/1606-llm-icml-2026-3-6-bit)
-- [1607. LLM-Driven Feature Discovery](ch01/1607-llm-driven-feature-discovery)
-- [1608. BrowserBC：人类轨迹蒸馏为可复用技能，让小模型获得大模型的网页操作能力](ch01/1608-browserbc)
-- [1609. 面向监控场景的无订阅异常发现：问题、思路与边界](ch01/1609-page-1609)
-- [1610. 从胡言乱语到精准改代码：我是如何让 AI 读懂老项目的](ch01/1610-ai)
-- [1611. 腾讯Omega：下一代“AI BI”的答案？](ch01/1611-omega-ai-bi)
-- [1612. ACL 2026 | AI润色还是代写？中科院四分类检测框架开源，锁定真实作者](ch01/1612-acl-2026-ai)
-- [1613. Nathan Lambert's Mid-2026 Open Models Bets](ch01/1613-nathan-lambert-s-mid-2026-open-models-bets)
-- [1614. Anthropic vs DoW (Department of War) 与开源模型的 5-10 年权力均衡](ch01/1614-anthropic-vs-dow-department-of-war-5-10)
-- [1615. 是时候讨论\"人类配额制\"了：应对AI就业冲击的一种可能性探讨](ch01/1615-ai)
-- [1616. Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1616-anthropic-claude)
-- [1617. Consumer Confidence](ch01/1617-consumer-confidence)
-- [1618. 6 Months to Live for Open Models](ch01/1618-6-months-to-live-for-open-models)
-- [1619. Anthropic又叒发现AI意识了，这次要读写Claude的前额叶](ch01/1619-anthropic-ai-claude)
-- [1620. Some ideas for what comes next, May 2026 (Interconnects)](ch01/1620-some-ideas-for-what-comes-next-may-2026-interconnects)
-- [1621. The Main Path to Truly Creative AI](ch01/1621-the-main-path-to-truly-creative-ai)
-- [1622. 刚刚，DeepMind经典巨作再封神！ICML 2026大奖公布](ch01/1622-deepmind-icml-2026)
-- [1623. the anti singularity](ch01/1623-the-anti-singularity)
-- [1624. 距离觉醒意识，人工智能还差一具肉身？](ch01/1624-page-1624)
-- [1625. 投毒！Meta竟雇外包，大规模给ChatGPT和Gemini下套](ch01/1625-meta-chatgpt-gemini)
-- [1626. 大反转！马斯克牵手对手 Dario，Anthropic 与 SpaceX 罕见合作](ch01/1626-dario-anthropic-spacex)
-- [1627. Anthropic出手！AI的内心独白曝光了——NLA研究解读](ch01/1627-anthropic-ai-nla)
-- [1628. 欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert 论美国政府强制 Anthropic 限制 Fable/Mythos 访问](ch01/1628-agi-ai-nathan-lambert-anthropic-fable-mythos)
-- [1629. Claude Reflect：Anthropic 的 AI 使用反思框架与 4D AI Fluency](ch01/1629-claude-reflect-anthropic-ai-4d-ai-fluency)
-- [1630. Claude 隐形水印 — GenAI 时代信息隐藏与可证安全隐写](ch01/1630-claude-genai)
+- [1604. UniGOOD：统一图分布外泛化与检测框架（南开×北航，WWW 2026）](ch01/1604-unigood-www-2026)
+- [1605. 腾讯混元 CL-Bench Life：让大模型读懂你的日常生活](ch01/1605-cl-bench-life)
+- [1606. Anthropic 前沿红队多智能体冲突实验 — 安全是整体属性而非个体属性](ch01/1606-anthropic)
+- [1607. LLM 记忆容量：ICML 2026 获奖论文揭示每个参数约 3.6 bit](ch01/1607-llm-icml-2026-3-6-bit)
+- [1608. LLM-Driven Feature Discovery](ch01/1608-llm-driven-feature-discovery)
+- [1609. BrowserBC：人类轨迹蒸馏为可复用技能，让小模型获得大模型的网页操作能力](ch01/1609-browserbc)
+- [1610. 面向监控场景的无订阅异常发现：问题、思路与边界](ch01/1610-page-1610)
+- [1611. 从胡言乱语到精准改代码：我是如何让 AI 读懂老项目的](ch01/1611-ai)
+- [1612. 腾讯Omega：下一代“AI BI”的答案？](ch01/1612-omega-ai-bi)
+- [1613. ACL 2026 | AI润色还是代写？中科院四分类检测框架开源，锁定真实作者](ch01/1613-acl-2026-ai)
+- [1614. Nathan Lambert's Mid-2026 Open Models Bets](ch01/1614-nathan-lambert-s-mid-2026-open-models-bets)
+- [1615. Anthropic vs DoW (Department of War) 与开源模型的 5-10 年权力均衡](ch01/1615-anthropic-vs-dow-department-of-war-5-10)
+- [1616. 是时候讨论\"人类配额制\"了：应对AI就业冲击的一种可能性探讨](ch01/1616-ai)
+- [1617. Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1617-anthropic-claude)
+- [1618. Consumer Confidence](ch01/1618-consumer-confidence)
+- [1619. 6 Months to Live for Open Models](ch01/1619-6-months-to-live-for-open-models)
+- [1620. Anthropic又叒发现AI意识了，这次要读写Claude的前额叶](ch01/1620-anthropic-ai-claude)
+- [1621. Some ideas for what comes next, May 2026 (Interconnects)](ch01/1621-some-ideas-for-what-comes-next-may-2026-interconnects)
+- [1622. The Main Path to Truly Creative AI](ch01/1622-the-main-path-to-truly-creative-ai)
+- [1623. 刚刚，DeepMind经典巨作再封神！ICML 2026大奖公布](ch01/1623-deepmind-icml-2026)
+- [1624. the anti singularity](ch01/1624-the-anti-singularity)
+- [1625. 距离觉醒意识，人工智能还差一具肉身？](ch01/1625-page-1625)
+- [1626. 投毒！Meta竟雇外包，大规模给ChatGPT和Gemini下套](ch01/1626-meta-chatgpt-gemini)
+- [1627. 大反转！马斯克牵手对手 Dario，Anthropic 与 SpaceX 罕见合作](ch01/1627-dario-anthropic-spacex)
+- [1628. Anthropic出手！AI的内心独白曝光了——NLA研究解读](ch01/1628-anthropic-ai-nla)
+- [1629. 欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert 论美国政府强制 Anthropic 限制 Fable/Mythos 访问](ch01/1629-agi-ai-nathan-lambert-anthropic-fable-mythos)
+- [1630. Claude Reflect：Anthropic 的 AI 使用反思框架与 4D AI Fluency](ch01/1630-claude-reflect-anthropic-ai-4d-ai-fluency)
+- [1631. Claude 隐形水印 — GenAI 时代信息隐藏与可证安全隐写](ch01/1631-claude-genai)

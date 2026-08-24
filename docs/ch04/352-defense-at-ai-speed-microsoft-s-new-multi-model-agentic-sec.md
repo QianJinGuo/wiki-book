@@ -76,7 +76,7 @@ MDASH 的设计哲学是**管道是产品，模型是输入之一**。整个系�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/defense_at_ai_speed_microsofts_new_multi.md)
 
 - [[concepts/the-agency-model-dangers]
-- [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/019-agent.html)
+- [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/006-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 
 ---

@@ -324,7 +324,7 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 - [OpenClaw多租户迁移: 背景与架构概览](ch11/254-openclaw.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/254-openclaw.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](ch11/309-amazon-bedrock.html)
-- [Agent 原理、架构与工程实践](../ch03/019-agent.html)
+- [Agent 原理、架构与工程实践](../ch03/006-agent.html)
 - [from pdfs to insights: architecting an intelligent document](ch11/264-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 
 ---

@@ -152,7 +152,7 @@ LLM 可以将自然语言业务描述翻译为初步的数学模型，但人类�
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki/blob/main/entities/3rdfsmp.md)
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](../ch01/190-amazon-ecs.html)
 
-- [Aws Fundamentals Large Tabular Model Nexus Is Now Available On Amazon Sagemaker Jump](../ch05/109-ai.html)
+- [Aws Fundamentals Large Tabular Model Nexus Is Now Available On Amazon Sagemaker Jump](../ch05/110-ai.html)
 
 ---
 

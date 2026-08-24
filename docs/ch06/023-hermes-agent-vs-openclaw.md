@@ -11,7 +11,7 @@
 | **会话检索** | session_search (SQLite + FTS5) | 无硬上限 | 档案室，"上次那个问题" |
 | **程序性记忆** | Skills | 无硬上限 | SOP，"这类任务下次怎么做" |
 | **深层用户建模** | Honcho（外部） | 可选 | 跨平台/跨设备长周期画像 |
-> 和 [Agent Memory 架构本质](../ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html) 的"write-manage-read 三链路闭环"角度不同，Hermes 更侧重**运行时成本控制和分层治理**。
+> 和 [Agent Memory 架构本质](../ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html) 的"write-manage-read 三链路闭环"角度不同，Hermes 更侧重**运行时成本控制和分层治理**。
 
 ## 核心设计：cache-aware
 **不轻易改系统提示词**。会话中途记忆写入先落盘，不立刻修改当前 system prompt——保护 prompt cache。牺牲即时性，换缓存命中和提示词结构稳定。

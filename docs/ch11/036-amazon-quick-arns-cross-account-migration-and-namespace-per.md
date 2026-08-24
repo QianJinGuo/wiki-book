@@ -160,7 +160,7 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/994-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Amazon Quick Research Agentic Multi Source Citation](ch11/240-amazon-quick.html)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](ch11/309-amazon-bedrock.html)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/109-ai.html)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](../ch05/110-ai.html)
 
 ---
 

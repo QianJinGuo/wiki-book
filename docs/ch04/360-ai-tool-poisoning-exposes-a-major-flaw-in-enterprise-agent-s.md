@@ -100,11 +100,11 @@ Agent 调用某个工具后，该工具进一步调用其他未声明的外部�
 
 ## 相关实体
 - [AI tool poisoning — 另一存档版本](ch04/360-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [AI MAP: Bishop Fox 安全测试工具](ch04/532-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
+- [AI MAP: Bishop Fox 安全测试工具](ch04/533-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
 - [Amazon Quick — 企业数据到 AI 决策](../ch11/240-amazon-quick.html)
 - [Headless cloud security: Rewriting security without the UI.](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1605-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1594-anthropic.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1221-openclaw-agent.html)
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](../ch11/296-aws-devops-agent.html)
 - [AI Agent 工程师能力地图](ch04/377-ai-agent.html)

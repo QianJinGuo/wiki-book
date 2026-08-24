@@ -219,7 +219,7 @@ IDE 是工程现场, 但不是人的全部工作现场. **Hermes 真正想解决
 
 | 实体 | 角度 | 互补性 |
 |------|------|------|
-| [Harness 7 Layers OpenClaw/Hermes/Claude Code](../ch05/065-harness-engineering.html) | 3 工具 × 7 层 harness 视角 | **互补** (本实体: 2 工具 × 6 维生命周期) |
+| [Harness 7 Layers OpenClaw/Hermes/Claude Code](../ch05/066-harness-engineering.html) | 3 工具 × 7 层 harness 视角 | **互补** (本实体: 2 工具 × 6 维生命周期) |
 | [Hermes 9 Module 架构](ch01/291-hermes.html) | Hermes 源码级 | 互补 (本实体: 跨工具对比) |
 | [Claude Code Agentic Harness](../ch03/075-claude-code-agent.html) | CC 内部 harness 模式 | 互补 (本实体: CC vs Hermes 外部对比) |
 | [Hermes Goal Runtime 架构](../ch04/372-hermes-agent-goal.html) | Goal-in-loop 实现 | **直接相关** (本实体 Goal 概念的实现) |
@@ -239,7 +239,7 @@ Session 和 Goal 是两套完全不同的**生命周期抽象**，不是同一�
 
 Claude Code 的 Human-in-loop 把最后一公里责任留给工程师，是**刻意设计的可靠性边界**；Hermes 的 Goal-in-loop 把长期目标挂载在 runtime 状态里，是**刻意设计的持续性**。两者在各自的设计语境里都是正确的——混淆两者才是"错配思维"的根源。
 
-[Harness Engineering](../ch05/065-harness-engineering.html) 关心的是"这一刀能不能切准"；Persistent Runtime 关心的是"这台机器能不能连续切一周，而且知道什么时候该停"。前者偏工程方法，后者偏系统架构。
+[Harness Engineering](../ch05/066-harness-engineering.html) 关心的是"这一刀能不能切准"；Persistent Runtime 关心的是"这台机器能不能连续切一周，而且知道什么时候该停"。前者偏工程方法，后者偏系统架构。
 
 ### 实践价值：流水线组合是最优解
 

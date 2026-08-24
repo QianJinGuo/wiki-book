@@ -50,7 +50,7 @@ Google 配套 Gemini 3 推出的 Antigravity 工具引入 **Inbox** 概念——
 - **多 Agent 并行**：可以同时管理多个 Agent，识别"哪个在工作、哪个需要你的帮助"
 - **权限模型**：Agent 自主工作时，遇到关键决策点会 ping 用户等待授权
 
-Mollick 截图展示的工作场景："同时有四个不同 Agent 在工作，一个在工作，另一个需要你的帮助才能继续"——这与 [Factory Mission](../ch03/019-agent.html) 中 Orchestrator 协调多 Worker 的模式有异曲同工之妙，但 Inbox 把"协调者"角色直接交给了用户。
+Mollick 截图展示的工作场景："同时有四个不同 Agent 在工作，一个在工作，另一个需要你的帮助才能继续"——这与 [Factory Mission](../ch03/006-agent.html) 中 Orchestrator 协调多 Worker 的模式有异曲同工之妙，但 Inbox 把"协调者"角色直接交给了用户。
 
 ### 3. "管理数字同事"的人机协作模式
 
@@ -68,7 +68,7 @@ Mollick 描述的真实工作流：
 
 Mollick 的总结："我感觉自己掌控着 AI 正在做的选择，因为 AI 检查了，它的工作是可见的。"
 
-**与 [Harness Engineering Core Patterns](../ch05/065-harness-engineering.html) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
+**与 [Harness Engineering Core Patterns](../ch05/066-harness-engineering.html) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
 
 ### 4. PhD 级智能的真实测试
 
@@ -195,10 +195,10 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [Yann Dubois OpenAI 后训练访谈](ch01/1000-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/016-wiki-evolver.html)
 - [AI Agent Harness 构建](ch01/1192-ai-agent-harness.html)
-- [Harness 状态边界与失败闭环](../ch05/077-harness.html)
+- [Harness 状态边界与失败闭环](../ch05/091-harness.html)
 - [Agent Vibecoder 上下文压缩](../ch06/044-headroom.html)
 - [腾讯混元 HY3 开源预览](ch01/140-hy3-preview.html)
-- [Agent 记忆系统工程实践](../ch03/019-agent.html)
+- [Agent 记忆系统工程实践](../ch03/006-agent.html)
 
 ---
 

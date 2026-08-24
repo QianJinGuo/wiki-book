@@ -68,7 +68,7 @@ skill 不传数据、不声明依赖，复杂任务的协作靠 agent（LLM）�
 ## 与其他实体的关系
 
 - → [Agent Skill 规范、构建与设计模式](ch04/614-agent-skill.html) — 更多关注如何构建 skill（Skill-Creator、设计模式等）
-- → [Hermes Agent Skills 源码级拆解](ch04/533-hermes-agent-skills.html) — 同一作者（术哥）的源码级分析
+- → [Hermes Agent Skills 源码级拆解](ch04/534-hermes-agent-skills.html) — 同一作者（术哥）的源码级分析
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skills-spec-no-dependency-design.md)
 
 ---

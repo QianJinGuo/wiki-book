@@ -88,7 +88,7 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 *Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)*
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/503-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/137-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/271-aws-bedrock-agentcore.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/271-aws-bedrock-agentcore.html)

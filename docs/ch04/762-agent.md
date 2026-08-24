@@ -38,7 +38,7 @@
 5. **在离线统一**：同一套Workflow逻辑，通过触发源差异区分在线/离线，代码复用率最大化
 
 ## 相关实体
-- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/019-agent.html)
+- [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/006-agent.html)
 - [Verizon Connect Agentic Ai 100K Users](ch04/163-verizon-connect-agentic-ai-10.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/200-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/827-ai-mollick.html)

@@ -15,12 +15,12 @@
 - [Claude Code Prompt Context Harness](../ch09/073-claude-code-prompt.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [Pi Openclaw Coding Harness](../ch11/254-openclaw.html)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/055-openspec.html)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/065-harness-engineering.html)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/056-openspec.html)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/066-harness-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
 
-- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/109-ai.html)
+- [从提需求到部署发布全Ai全自动化后研发效能全面跃升](ch05/110-ai.html)
 ## 二、从"出码率"看"提效"背后的深层困境
 
 **原因1：研发是全链路，不仅仅是写代码**
@@ -198,10 +198,10 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 - [Claude Code Prompt Context Harness](../ch09/073-claude-code-prompt.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
 - [Pi Openclaw Coding Harness](../ch11/254-openclaw.html)
-- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/055-openspec.html)
-- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/065-harness-engineering.html)
+- [Ai Production Development Workflow Openspec Superpowers Gstack](ch05/056-openspec.html)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](ch05/066-harness-engineering.html)
 - [K/S/T 知识底座](ch05/043-agent-harness.html)（相关：K/S/T 是知识用途分类，本文在工程层落地）
-- [Harness Engineering 综述](ch05/065-harness-engineering.html)（相关：三阶段 Prompt→Context→Harness）
+- [Harness Engineering 综述](ch05/066-harness-engineering.html)（相关：三阶段 Prompt→Context→Harness）
 - [Spec as AIOS (高德 App 平台)](../ch01/1214-spec.html)（同团队同主题另一视角）
 
 → [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)

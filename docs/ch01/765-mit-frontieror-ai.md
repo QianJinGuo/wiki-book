@@ -68,7 +68,7 @@ FrontierOR 最重要的发现之一是方法分布对竞争力的决定性影响
 
 - [AI 评测方法论](ch01/402-ai-evals.html)
 - [AutoResearch 算法开发智能体](../ch04/175-autoresearch-agent.html)
-- [智能体自演化评测瓶颈](../ch03/019-agent.html)
+- [智能体自演化评测瓶颈](../ch03/006-agent.html)
 - [AREAL-2 智能体在线学习自演化](../ch04/314-agentic-rl.html)
 - [大规模数学优化决策](../ch11/169-better-decisions-at-scale-how-mathematical-optimization-del.html)
 

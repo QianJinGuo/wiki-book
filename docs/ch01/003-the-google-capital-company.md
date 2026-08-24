@@ -116,7 +116,7 @@ Stratechery 将 Google 描述为"most beautiful business model of all time"，�
 ## 相关实体
 - [The Token Economy Pt2 The Intelligence Company Gets Built](ch01/002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/050-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/473-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/005-agentrun.html)
 - [Running An Ai Native Engineering Org](ch01/060-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](ch01/358-1.html)
 

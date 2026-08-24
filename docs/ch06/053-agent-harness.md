@@ -126,7 +126,7 @@
 |------|---------|
 || [Sub-Agent vs Agent Team](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sub-agent-vs-agent-team-selection-guide.md) | 多 Agent 架构先看上下文边界 |
 || [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-subagents-context-hygiene.md) | Subagent 是 Harness 的上下文卫生工具 |
-|| [Harness Engineering 系统梳理](../ch05/065-harness-engineering.html) | Harness 是把经验沉淀成下一轮默认存在的能力 |
+|| [Harness Engineering 系统梳理](../ch05/066-harness-engineering.html) | Harness 是把经验沉淀成下一轮默认存在的能力 |
 **上下文管理决定系统能不能持续协作。**
 
 ## 深度分析
@@ -232,10 +232,10 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 3. **CE 是已有实践的官方命名** —— 不要当成新发明，应被当作"已有 6 个框架的子学科标准化"
 
 ## 相关实体
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/019-agent.html)
-- [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/019-agent.html)
+- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/006-agent.html)
+- [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/006-agent.html)
 - [Claude Code Session 管理与 1M 上下文最佳实践](../ch03/085-claude-code.html)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/019-agent.html)
+- [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/006-agent.html)
 - [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](../ch09/073-claude-code-prompt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-context-management-working-set.md)

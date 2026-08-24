@@ -58,8 +58,8 @@ BLOCKED 快速路径：命中 Rule 1/4/5/7/9 立刻 finish 并标 blocked，不�
 
 ## 相关实体
 
-- [AI Agent 精细化评测体系（AliExpress）](../ch03/019-agent.html) — 姊妹篇：本篇是「执行/测试」维度（六层能力体系 + 假通过治理 + 能力探针度量），该实体是「评测」维度（模块级白盒诊断 + 质量×成本×性能三维指标 + 6 种 Judge Task），同一账号同一团队不同能力层
-- [Harness 工程实践](../ch05/065-harness-engineering.html) — UI 测试场景中 Agent 评测优化的平台实践
+- [AI Agent 精细化评测体系（AliExpress）](../ch03/006-agent.html) — 姊妹篇：本篇是「执行/测试」维度（六层能力体系 + 假通过治理 + 能力探针度量），该实体是「评测」维度（模块级白盒诊断 + 质量×成本×性能三维指标 + 6 种 Judge Task），同一账号同一团队不同能力层
+- [Harness 工程实践](../ch05/066-harness-engineering.html) — UI 测试场景中 Agent 评测优化的平台实践
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-self-planning-ui-testing-aliexpress-2026.md)
 
 ## 反模式清单（其他团队可直接复用）

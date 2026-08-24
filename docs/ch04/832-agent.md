@@ -69,7 +69,7 @@
 - [Code as Agent Harness 综述](../ch09/064-code-as-agent-harness.html)
 - [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/289-self-evolving-agents.html)
 - [AWS Bedrock 多智能体协作指南](../ch11/019-aws-bedrock.html)
-- [Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？](../ch03/019-agent.html)
+- [Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？](../ch03/006-agent.html)
 - [Agent vs Workflow：控制权连续谱与生产级选型框架](ch04/777-agent-vs-workflow.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-orchestration.md)

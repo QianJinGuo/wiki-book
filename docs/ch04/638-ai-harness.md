@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [从零构建大语言模型 —— 读完这篇你就懂了](../ch01/1147-llm.html)
-- [canvas hackers shinyhunters say their official domain was su](../ch05/109-ai.html)
+- [canvas hackers shinyhunters say their official domain was su](../ch05/110-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](../ch12/013-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
 - [democratizing machine learning at netflix: building the mode](../ch11/299-democratizing-machine-learning-at-netflix-building-the-mode.html)
 - [from silos to service topology: why netflix built a real-tim](../ch11/149-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
@@ -22,7 +22,7 @@
 - [state of routing in model serving](../ch11/205-state-of-routing-in-model-serving.html)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01/1267-steering.html)
 - [the recent history of ai in 32 otters](../ch01/836-the-recent-history-of-ai-in-32-otters.html)
-- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](../ch05/109-ai.html)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](../ch05/110-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
@@ -58,10 +58,10 @@
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/824-karpathy-vibe-coding-agentic-engineering.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/254-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/019-agent.html)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/006-agent.html)
 
 ## 实践启示
 1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率

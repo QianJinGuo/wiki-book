@@ -12,8 +12,8 @@
 
 - [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](../ch11/240-amazon-quick.html)
 - [introducing the mdn mcp server](../ch07/001-mcp.html)
-- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/019-agent.html)
-- [万级实时推理的商品领域agent实践思考和总结](../ch03/019-agent.html)
+- [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/006-agent.html)
+- [万级实时推理的商品领域agent实践思考和总结](../ch03/006-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)

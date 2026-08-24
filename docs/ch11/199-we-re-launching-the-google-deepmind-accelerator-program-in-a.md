@@ -64,7 +64,7 @@ APAC 既是全球经济增长引擎，也是气候变化最脆弱的区域之一
 
 ## 相关实体
 
-- [Intelligent Radiology Workflow Optimization With Ai Agents](../ch04/406-intelligent-radiology-workflow-optimization-with-ai-agents.html)
+- [Intelligent Radiology Workflow Optimization With Ai Agents](../ch04/407-intelligent-radiology-workflow-optimization-with-ai-agents.html)
 - [Amazon Nova Act Is Now Hipaa Eligible](../ch04/597-amazon-nova-act-is-now-hipaa-eligible.html)
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/994-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01/945-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)

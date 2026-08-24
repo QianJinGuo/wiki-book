@@ -27,7 +27,7 @@
 
 ## 与既有治理体系的关系
 
-该框架与 [CrewAI 凭证治理](../ch03/019-agent.html) 和 [AI 网关 vs MCP 网关](../ch11/090-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) 互补，但提供了更完整的**组织级成熟度路径**（Connect→Control→Catalog→Harden）。它也呼应 [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) 中对"工具访问作为攻击面"的关注。
+该框架与 [CrewAI 凭证治理](../ch03/006-agent.html) 和 [AI 网关 vs MCP 网关](../ch11/090-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) 互补，但提供了更完整的**组织级成熟度路径**（Connect→Control→Catalog→Harden）。它也呼应 [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) 中对"工具访问作为攻击面"的关注。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-ga.md)
 

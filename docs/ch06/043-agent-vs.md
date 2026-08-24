@@ -63,7 +63,7 @@
 
 ## 与其他实体的关系
 
-- → [Agent 记忆系统的工程实践与演进](../ch03/019-agent.html) — 更侧重工程落地（写入纪律、Prompt Cache、Embedding迁移等），本实体侧重理论框架
+- → [Agent 记忆系统的工程实践与演进](../ch03/006-agent.html) — 更侧重工程落地（写入纪律、Prompt Cache、Embedding迁移等），本实体侧重理论框架
 - → [State of Memory in Agent Harness](../ch05/043-agent-harness.html) — Mem0 的行业状态报告
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-system-main-contradiction-context-scheduling.md)
 

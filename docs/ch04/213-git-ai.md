@@ -183,7 +183,7 @@ Git 作为 Source of Truth 的选择看似朴素，实则精妙。Git 的内容�
 ## 相关实体
 - [Ai Native Project Management Git](../ch05/022-ai-native.html)
 - [P Ai Pms Guide To Claude](../ch01/1212-claude.html)
-- [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](../ch05/077-harness.html)
+- [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](../ch05/091-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/377-ai-agent.html)
 - [Building Ai Agents In Accounting](ch04/006-building-ai-agents-in-accounting.html)
 

@@ -63,7 +63,7 @@ Routines 是文章最有产品洞察力的概念。Boris 原话：
 - 异步 Agent 是"我设个规则，Agent 在后台跑，结果回来了再处理"——人的注意力被释放。
 - Cat 的亲身体验："我还没修的 bug，另一个 Claude 已经修了"——这是异步 Agent 时代的标志性叙事。
 
-Routines 与 [24h Worker Agent](../ch03/019-agent.html) 描述的"持续运行的 Agent"完全一致——Claude Code 的 Routine 是工业级实现。Routine 在产品形态上对应到：
+Routines 与 [24h Worker Agent](../ch03/006-agent.html) 描述的"持续运行的 Agent"完全一致——Claude Code 的 Routine 是工业级实现。Routine 在产品形态上对应到：
 - **监控型 Routine**：监听 GitHub issue / bug report，主动捡起修复。
 - **批处理型 Routine**：定期跑数据处理 / 报告生成。
 - **触发型 Routine**：在特定事件（PR 合并 / Slack 消息 / 定时器）触发 Agent 行动。
@@ -78,7 +78,7 @@ Boris 说他最初觉得 auto mode"不靠谱——把 prompt 路由给一个模�
 - Auto mode：用专门训练的 Sonnet 4.6 分类器持续学习；收集成千上万条 Agent 运行轨迹 + 红队 prompt 注入 + 内部攻击测试 + 真实发现 → eval。
 - **结论**：auto mode 比人工形式审查更安全，因为它对所有请求都做实质性判断。
 
-这与 [Agent Security 三步走: Harness + Governance + Identity](../ch05/077-harness.html) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
+这与 [Agent Security 三步走: Harness + Governance + Identity](../ch05/091-harness.html) 中"governance 必须可验证、可审计"的原则一致——Auto Mode 是 governance 的工业级实现。
 
 ### 五、Context 极简主义对 prompt engineering 的反叛
 
@@ -92,7 +92,7 @@ Boris + Cat 都明确表态：
 - 当前 Opus 4.7+：过度工程化 context 反而限制模型的内在能力。
 - **真正的工程**：保持 system prompt 极简、提供足够但不过度的 tools、让模型自己决策用什么 context。
 
-这与 [From Prompt to Harness: Claude 官方](../ch05/077-harness.html) 描述的"harness 不是更大 prompt，是更好结构"理念一致——harness engineering 的核心不是"塞更多 context"，而是"提供对的 tools + 对的评估 + 对的 Skill 沉淀机制"。
+这与 [From Prompt to Harness: Claude 官方](../ch05/091-harness.html) 描述的"harness 不是更大 prompt，是更好结构"理念一致——harness engineering 的核心不是"塞更多 context"，而是"提供对的 tools + 对的评估 + 对的 Skill 沉淀机制"。
 
 ### 六、源码泄露风波的工程含义
 
@@ -140,19 +140,19 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 
 ## 关联实体
 
-- [Boris Cherny: 从 IDE 到 Agent Console](../ch03/019-agent.html)
-- [Boris Cherny Interview 2026: 从 IDE 到 Agent Console](../ch03/019-agent.html)
-- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/019-agent.html)
-- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/019-agent.html)
+- [Boris Cherny: 从 IDE 到 Agent Console](../ch03/006-agent.html)
+- [Boris Cherny Interview 2026: 从 IDE 到 Agent Console](../ch03/006-agent.html)
+- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台 v2](../ch03/006-agent.html)
+- [Boris Cherny 新访谈: 开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
 - [Claude Code 一周年回顾 Boris+Cat 2026](../ch03/085-claude-code.html)
 - [OpenClaw × Boris Cherny: Agent Loop 设计模式](../ch04/666-agent-loop.html)
 - [Claude Code Prompt 源码分析](ch09/073-claude-code-prompt.html)
 - [Claude Code Prompt 源码分析 fanone](ch09/073-claude-code-prompt.html)
 - [Claude Code Prompt Context Harness](ch09/073-claude-code-prompt.html)
-- [From Prompt to Harness: Claude 官方](../ch05/077-harness.html)
+- [From Prompt to Harness: Claude 官方](../ch05/091-harness.html)
 - [Anthropic Prompt Caching 与 Claude Code](../ch01/401-anthropic-prompt-caching-claude-code.html)
-- [24h Worker Agent](../ch03/019-agent.html)
-- [Agent Security 三步走: Harness + Governance + Identity](../ch05/077-harness.html)
+- [24h Worker Agent](../ch03/006-agent.html)
+- [Agent Security 三步走: Harness + Governance + Identity](../ch05/091-harness.html)
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/360-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/298-agentic.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

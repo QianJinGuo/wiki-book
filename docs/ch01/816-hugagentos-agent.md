@@ -49,7 +49,7 @@ HugAgentOS 是浙江大学人工智能省部共建协同创新中心开源的自
 
 ## 相关实体
 
-- [Agent 记忆架构](../ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html) — 记忆引擎经验留存机制对应
+- [Agent 记忆架构](../ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html) — 记忆引擎经验留存机制对应
 - [openJiuwen 自进化记忆](../ch06/037-openjiuwen-autogenetic-memory-agent.html) — 同命题参照实现
 - [EverMind Raven 自进化 Harness](../ch04/802-self-evolving-agent.html) — 另一条自进化 Harness 路线
 - [轨迹蒸馏为技能](../ch04/033-agent-skills.html) — 技能蒸馏机制同源

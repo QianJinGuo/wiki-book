@@ -36,7 +36,7 @@ Skill 适合让 Agent 理解和应用流程，但安全底线、权限控制、�
 - [Anthropic Agent Skills Design Patterns 14](ch04/315-anthropic-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
-- [nature | anthropic：蒸馏过程潜意识传递行为偏好](../ch05/109-ai.html)
+- [nature | anthropic：蒸馏过程潜意识传递行为偏好](../ch05/110-ai.html)
 
 ---
 

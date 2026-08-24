@@ -25,7 +25,7 @@ Prime Intellect 于 2026-08-05 发布 Prime Agent——一个围绕两个抽象�
 
 ## 定位与意义
 
-Prime Agent 定位为通用编码助手、长程自主评估的默认 runtime、以及 research/autoresearch 协作器，完全开源。其「harness 状态可被 agent 自身 CRUD」与「context 作为 REPL 变量」的设计，与 [Agent Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 中「harness 即产品表面」的演化方向一致，也是 RLM 训练思路（见同团队 NanoGPT 递归自改进实验 [Prime Intellect 递归自改进实验](../ch05/109-ai.html)）从训练侧延伸到 harness 设计侧的落地。
+Prime Agent 定位为通用编码助手、长程自主评估的默认 runtime、以及 research/autoresearch 协作器，完全开源。其「harness 状态可被 agent 自身 CRUD」与「context 作为 REPL 变量」的设计，与 [Agent Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 中「harness 即产品表面」的演化方向一致，也是 RLM 训练思路（见同团队 NanoGPT 递归自改进实验 [Prime Intellect 递归自改进实验](../ch05/110-ai.html)）从训练侧延伸到 harness 设计侧的落地。
 
 ## 相关
 
@@ -35,10 +35,10 @@ Prime Agent 定位为通用编码助手、长程自主评估的默认 runtime、
 - [Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Agent Harness 架构](../ch05/043-agent-harness.html)
 - [Harness 12 组件 / 7 决策](../ch05/043-agent-harness.html)
-- [Agent 自改进六机制](../ch03/019-agent.html)
-- [Lilian Weng 自改进 survey](../ch05/065-harness-engineering.html)
-- [Autoresearch 反馈环](../ch03/019-agent.html)
-- [Agent Context 管理模式](../ch03/019-agent.html)
+- [Agent 自改进六机制](../ch03/006-agent.html)
+- [Lilian Weng 自改进 survey](../ch05/066-harness-engineering.html)
+- [Autoresearch 反馈环](../ch03/006-agent.html)
+- [Agent Context 管理模式](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prime-agent-self-improving-rlm-agent.md)
 

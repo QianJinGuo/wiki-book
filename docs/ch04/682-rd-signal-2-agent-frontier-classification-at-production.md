@@ -42,11 +42,11 @@ Agent 行为评估的本质是**二元分类问题**（行为好/坏），但这
 
 ## 相关实体
 
-- [Trace 即 Evals（张雁飞）](ch04/445-ai-agent-trace-evals.html) — 同为 trace 驱动评估范式；rd-signal-2 给出生产规模实现路径
-- [YAML 驱动 Agent 评估框架](../ch03/019-agent.html) — 声明式评估对照
-- [Agent 改进的数据挖掘视角](../ch03/019-agent.html) — trace 数据的另一消费方式
-- [Agent 可观测性五层架构](../ch03/019-agent.html)
-- [Agent 落地真相：协议、成本与进化](../ch03/019-agent.html) — 成本治理上下文
+- [Trace 即 Evals（张雁飞）](ch04/446-ai-agent-trace-evals.html) — 同为 trace 驱动评估范式；rd-signal-2 给出生产规模实现路径
+- [YAML 驱动 Agent 评估框架](../ch03/006-agent.html) — 声明式评估对照
+- [Agent 改进的数据挖掘视角](../ch03/006-agent.html) — trace 数据的另一消费方式
+- [Agent 可观测性五层架构](../ch03/006-agent.html)
+- [Agent 落地真相：协议、成本与进化](../ch03/006-agent.html) — 成本治理上下文
 
 ## 相关概念
 

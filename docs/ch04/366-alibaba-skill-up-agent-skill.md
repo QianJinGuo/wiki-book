@@ -106,7 +106,7 @@ skill-up 用**逐层收窄的判定漏斗**承接此类场景：
 
 ## 对比
 
-与 [AgentEval](../ch03/019-agent.html)（另一 YAML 驱动的 Agent 评测框架）相比，skill-up 有明显不同的定位：
+与 [AgentEval](../ch03/006-agent.html)（另一 YAML 驱动的 Agent 评测框架）相比，skill-up 有明显不同的定位：
 
 - AgentEval 是通用 Agent 评测框架（Go 语言，pass@k+pass^k 双指标）
 - skill-up 专为 Agent Skill 设计，聚焦 Skill 安装、跨引擎回放、工具调用验证
@@ -116,11 +116,11 @@ skill-up 用**逐层收窄的判定漏斗**承接此类场景：
 
 ## 相关实体
 
-- [AgentEval：YAML驱动的Agent评测框架](../ch03/019-agent.html)
+- [AgentEval：YAML驱动的Agent评测框架](../ch03/006-agent.html)
 - [Agent Skill 评估与迭代](ch04/614-agent-skill.html)
 - [Agent 可靠性工程：Skillify 与持续改进](ch04/350-skill.html)
-- [Agent 评估系统指南](../ch03/019-agent.html)
-- [SWE-bench Agent 评估](ch04/482-swe-bench-agent.html)
+- [Agent 评估系统指南](../ch03/006-agent.html)
+- [SWE-bench Agent 评估](ch04/483-swe-bench-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-skill-up-agent-skill-evaluation-framework-2026.md)
 

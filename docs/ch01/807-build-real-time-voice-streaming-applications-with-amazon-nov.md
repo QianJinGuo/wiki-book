@@ -27,7 +27,7 @@
 - [用 Amazon Quick 加速日常数据工作](../ch11/240-amazon-quick.html)
 - [使用 Amazon Cognito 多区域复制提高应用程序韧性](../ch11/082-amazon-cognito.html)
 - [Amazon Quick Arns Cross Account Migration And Namespace Perm](../ch11/036-amazon-quick-arns-cross-account-migration-and-namespace-per.html)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/109-ai.html)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/110-ai.html)
 - [The Art And Science Of Hyperparameter Optimization On Amazon Nova Forge](../ch11/291-the-art-and-science-of-hyperparameter-optimization-on-amazon.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)

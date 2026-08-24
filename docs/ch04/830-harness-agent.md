@@ -63,7 +63,7 @@ Harness 本身是需要被工程化管理的系统，生命周期分四阶段。
 
 ## 相关实体
 
-- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/077-harness.html)
+- [高德 Uplift 模型迭代 Agent：长时间运行 Harness](../ch05/091-harness.html)
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
 - [逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team](ch04/271-langgraph.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)

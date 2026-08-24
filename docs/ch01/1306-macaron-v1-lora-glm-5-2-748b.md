@@ -8,7 +8,7 @@
 
 ## 深度分析
 
-Macaron V1是Mind Lab发布的全球首个基于GLM-5.2完成后训练的个人模型。其总参数量达748B，其中744B的GLM-5.2基座[Glm 52 Is The Step Change For Open Agents](../ch03/019-agent.html)被完全冻结，真正参与训练的是挂载在基座上的四个1B参数的LoRA专家模块。官方将这类架构命名为MoL（Mixture of LoRA），通过路由器将不同请求分发给对应的LoRA专家处理。
+Macaron V1是Mind Lab发布的全球首个基于GLM-5.2完成后训练的个人模型。其总参数量达748B，其中744B的GLM-5.2基座[Glm 52 Is The Step Change For Open Agents](../ch03/006-agent.html)被完全冻结，真正参与训练的是挂载在基座上的四个1B参数的LoRA专家模块。官方将这类架构命名为MoL（Mixture of LoRA），通过路由器将不同请求分发给对应的LoRA专家处理。
 
 LoRA（Low-Rank Adaptation）最初由微软研究院于2021年提出，传统上被视为一种降低微调成本的权宜之计。Mind Lab在《On the Scaling of PEFT》论文中证明，适配模块可以压缩到每层仅保留一个可调方向，参数量降至基座的0.5%以下仍能稳定学习，算力需求仅为全量微调的十分之一。他们将LoRA从一次性微调技术升级为可积累、可管理的正式架构组件，并在MinT平台上建立了包含百万级LoRA目录的管理系统，每个LoRA拥有独立身份和版本历史。
 

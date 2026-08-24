@@ -53,7 +53,7 @@ AI 驱动的快速裁员还破坏了组织的学习能力。真正有效的 AI �
 
 ## 相关实体
 
-- [Nearly every enterprise is investing in AI, but only 5% say their data is ready](ch03/011-cio.html)
+- [Nearly every enterprise is investing in AI, but only 5% say their data is ready](ch03/012-cio.html)
 
 ---
 ## 关联

@@ -31,7 +31,7 @@ Amazon QuickSight 的文档级 ACL 功能代表了企业 AI 搜索系统中访�
 ## 相关实体
 - [PyTorch 2.12 Release Blog – PyTorch](../ch01/387-pytorch-2-12-release-blog.html) — 另一个 2026 年重大技术发布
 - [TeamPCP Claims Sale of Mistral AI Repositories](../ch12/068-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html) — AI 基础设施安全事件
-- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/109-ai.html)
+- [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](../ch05/110-ai.html)
 - [CloudSectiDbits](ch11/113-cloudsectidbits.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/063-prowler-genai.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](ch11/271-aws-bedrock-agentcore.html)

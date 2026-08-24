@@ -433,11 +433,11 @@ Msg reply = agent.call(userMessage, ctx).block();
 | LangChain Agents | Python | 内存/向量 | 应用级 | 向量检索 |
 
 > [!analysis]
-> AgentScope Java 的设计目标与 [Harness Engineering 系统梳理](../ch05/065-harness-engineering.html) 中描述的"七环节控制回路"完全对齐：Workspace 对应 State 层、AbstractFilesystem 对应 Tools 层、RuntimeContext 对应身份和隔离层、Memory 对应 Harness Update 层。
+> AgentScope Java 的设计目标与 [Harness Engineering 系统梳理](../ch05/066-harness-engineering.html) 中描述的"七环节控制回路"完全对齐：Workspace 对应 State 层、AbstractFilesystem 对应 Tools 层、RuntimeContext 对应身份和隔离层、Memory 对应 Harness Update 层。
 
 ### 与阿里 Java 案例的关联
 
-[阿里 Java Harness 案例](../ch05/065-harness-engineering.html) 揭示的企业级挑战（隐性知识问题、质量控制缺失、熵累积），正是 AgentScope 设计时重点解决的问题：
+[阿里 Java Harness 案例](../ch05/066-harness-engineering.html) 揭示的企业级挑战（隐性知识问题、质量控制缺失、熵累积），正是 AgentScope 设计时重点解决的问题：
 
 - **隐性知识** → `knowledge/` 目录 + FTS5 检索
 - **质量控制** → Sandbox 隔离执行 + 端到端验证
@@ -540,8 +540,8 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 
 **2.0 升级围绕 9 大主题**（每节标题都带"Cloud Native"标签 — **阿里云云原生**出品）：
 
-- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](../ch04/473-agentrun.html)
-- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/415-pi-agent.html)
+- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](../ch04/005-agentrun.html)
+- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/416-pi-agent.html)
 
 ## ① 企业级分布式部署 — 无状态水平扩展 + 零停机发布 + 多租户隔离
 

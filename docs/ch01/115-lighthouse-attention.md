@@ -47,7 +47,7 @@ Lighthouse 选择了**对称池化**：Q、K、V 在金字塔每一层按相同�
 
 ## 关联阅读
 ## 相关实体
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/109-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/110-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/036-from-doer-to-director-the-ai-mindset-shift.html)
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch01/1001-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/050-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)

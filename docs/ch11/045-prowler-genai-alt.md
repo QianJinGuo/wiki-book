@@ -66,7 +66,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/320-amazon-nova.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/502-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/503-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](ch11/019-aws-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/309-amazon-bedrock.html)

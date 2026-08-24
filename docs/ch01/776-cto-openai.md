@@ -28,7 +28,7 @@
 - [Ciodive Openai Daybreak Cyber Threats](ch01/1000-openai.html)
 - [快来和Ai实战派一起Aiaigc峰会最新嘉宾阵容来了](../ch04/623-aiaigc.html)
 - [Ai True Moat Organizational Capability](ch01/1068-ai-true-moat-organizational-capability.html)
-- [The Anti Singularity](ch01/1623-the-anti-singularity.html)
+- [The Anti Singularity](ch01/1624-the-anti-singularity.html)
 - [Wiki Evolver Skill System Design Gpt55 Copilot Session](../ch07/016-wiki-evolver.html)
 - [Gpt 54 Is A Big Step For Codex](ch01/737-codex.html)
 - [Yann Dubois Openai Post Training Matt Turck Interview](ch01/1000-openai.html)

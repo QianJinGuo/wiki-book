@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **64 篇**实体，按深度递增排列。
+> 本章收录 **65 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 15 |
+| ⭐⭐ 工程师 | 需编程基础 | 16 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 42 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 
@@ -885,7 +885,78 @@ SFT→DPO 两阶段之间可能有数小时的调试和评估间隙。设置 kee
 
 ---
 
-## Ch15.011 Is One Layer Enough? 单层 RL 训练可超越全参数训练
+## Ch15.011 Relay-OPD：在线蒸馏的前缀失败纠偏（浙大×阿里，2026）
+
+> 📊 Level ⭐⭐ | 8.4KB | `entities/relay-opd-handoff-trigger-online-distillation-zju-alibaba-2026.md`
+
+# Relay-OPD：在线蒸馏的前缀失败纠偏（浙大×阿里，2026）
+
+> **一句话**：在线蒸馏（OPD）中，学生推理一旦早早走偏，教师也会被错误前缀带跑。Relay-OPD 在生成过程中在线检测"跑偏"位置（交接触发点），让教师像接力赛一样短暂"接棒"纠偏再交还学生，八个数学基准全最优/次优，训练轨迹长度削减过半。
+
+## 摘要
+
+浙江大学生物信息学（浙大）联合阿里巴巴提出 Relay-OPD（Relay On-Policy Distillation）。核心洞察：在线蒸馏让学生在自己生成的轨迹上接受教师逐 token 的稠密监督，但学生自生成轨迹必然带着自己的错误——长链推理中一旦开头选错方向，后续所有生成都建立在该偏差之上，教师监督越来越不可靠，训练算力被浪费在偏离正轨的长续写上。Relay-OPD 在线检测推理"跑偏"位置，让教师短暂接棒纠偏再交还学生。
+
+## 核心要点
+
+- **前缀失败（Prefix Failure）**：学生推理早期选定错误方向后，自回归生成让后续内容都在错误前提下展开，滚雪球形成冗长失败轨迹
+- **关键观察**：在走偏前缀上，教师与学生"续写本能"截然不同——教师倾向停下来反思（下个 token 大概率是 Wait/But/However），学生倾向沿原方向写下去。实测某位置教师 74.4% 想说 "But"，学生 50.6% 想接 "So"
+- **交接触发点（handoff trigger）**：教师在当前前缀上最偏好的下个 token 属于反思词表 R，而学生 top-K 候选中不含反思词时判定触发（K=5），无需 verifier/过程标签/奖励模型
+- **效果**：八个数学基准全最优/次优，1.7B 学生较标准 OPD 平均提升 +5.73%，训练轨迹长度削减 50.7%
+
+## 深度分析
+
+### 1. 问题与现有方案的局限
+
+已有补救各有结构性局限：固定长度截断（ESR、FastOPD）一刀切，与推理实际失败位置无关；离线重写（TRD）干预太晚且重写痕迹明显；token 级混合（SKD）无"推理方向已失败"的显式信号。缺的是既在线发生、又由推理状态本身决定干预位置的机制。
+
+### 2. 轨迹干预实验的三个结论
+
+- **纠偏可极其局部**：只在每个触发点替换那一个反思 token（教师 token 仅占全部 0.35%），准确率从 27.73 提至 34.96（+7.23%）
+- **干预价值高度前置**：保持干预长度不变，把位置从最早触发点推后，准确率从 41.99 跌至 33.98 再至 29.49——前缀变长后教师被学生上下文带跑，师生差距收窄，晚到接管无力回天
+- **延长干预收益快速饱和**：单次接管从 3 段延至 6 段，教师 token 占比从 17.52% 升至 28.52%，准确率却停留 41~44 区间。干预应"点到为止"——既要趁早又克制
+
+### 3. Relay-OPD 三个关键设计
+
+- **免标签交接触发器**：预定义反思词表 R（Wait/But/However 及大小写、前导空格变体）。教师最偏好的下个 token 属于 R 而学生 top-K 不含任何反思词时触发
+- **接力预算 (M, L)**：整条轨迹最多 M 次教师接管；每次以触发反思 token 起笔，继续生成 L 个自然段（以 \\n\\n 为界，平均每段约 23.2 token）——按"段落"而非固定 token 数计量，保证接管收尾于结构完整推理单元。主实验取 (M,L)=(2,3)
+- **面向接力轨迹的训练目标**：教师给接力轨迹的指导并不等于其理想发挥（教师也被学生前缀牵着走）。学生不照单全收，直接在实际生成的接力轨迹上做 single-sample 蒸馏，有选择吸收教师纠偏信号
+
+### 4. 工程实现：投机解码统一引擎
+
+交接触发器要求每个位置拿到教师对下个 token 的分布判定，且教师与学生同轨迹反复交替生成。团队将整个接力过程统一进投机解码引擎：学生为 draft model、教师为 target model。学生段中 target 即学生自身，draft 全接受；教师接管段为标准投机拒绝采样。教师本就要对学生草稿做批量验证，验证中算出的教师 logits 顺带给出触发判据，持续监测教师意图零额外开销；投机采样正确性保证单引擎产出与"两模型真实轮流生成"分布完全一致。
+
+### 5. 实验结果
+
+以 Qwen3-4B-Instruct-2507 为教师、Qwen3-0.6B/1.7B（Non-Thinking）为学生，DAPO-Math-17K 英文子集上基于 verl + vLLM 训练，全程无 verifier/过程监督/答案正确性标签，在 AIME 2024/2025/2026、MATH500、AMC 2023、OlympiadBench、HMMT 2026 Feb/Nov 八个基准评测
+
+- 1.7B 学生平均准确率 46.96，较标准 OPD（41.23）提升 +5.73%；AIME 2025/2026 分别 +7.29%/+7.19%；超过最强轨迹干预基线 FastOPD（45.47）+1.49%
+- 效率：1.7B 平均训练轨迹长度 2,296 token，较 OPD 的 4,658 削减 50.7%（0.6B 削减 63.9%），仅 35 步达最优 checkpoint（OPD 55 步）
+- 推理更短答得更准：vs FastOPD，AIME 2025/2026/HMMT Feb 2026 回复长度缩短 17.9%/14.2%/28.3%，准确率反升 +2.39%/+4.17%/+1.14%
+- 教师介入强度自适应衰减：用满接力预算轨迹占比从初期 75%~85% 降至 50%~60%，教师 token 占比从约 13% 快速回落，约 20 步后稳定 2%~3%
+- 消融：限定 M=1，"触发即停"仅 43.48，补 L=3 教师接管段后升至 46.25（+2.77%）——收益来自修正上下文与局部推理示范，不只动态截断
+
+### 6. 团队与资源
+
+第一作者徐皓雷（浙大计算机博士生二年级，大模型推理/后训练/可解释性），共同一作 & Project Lead 洪海文（阿里安全 AGI 实验室-御风大模型团队，大模型预训练/多模态/Self Play），通讯作者鲁伟明教授（浙大）。论文 arXiv:2607.26057，项目 zju-real.github.io/Relay-OPD，代码 github.com/ZJU-REAL/Relay-OPD
+
+## 关联实体
+
+- [模型蒸馏与压缩](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-distillation-compression.md)
+- [投机解码](https://github.com/QianJinGuo/wiki/blob/main/concepts/speculative-decoding.md)
+- [在线 vs 离线蒸馏](https://github.com/QianJinGuo/wiki/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
+- [XOPD 在线策略蒸馏全景](https://github.com/QianJinGuo/wiki/blob/main/entities/xopd-on-policy-distillation-landscape-banana-2026.md)
+- [D-OPsD 扩散在线自蒸馏](https://github.com/QianJinGuo/wiki/blob/main/entities/d-opsd-diffusion-llm-on-policy-self-distillation.md)
+- [OPD 失败模式重访](https://github.com/QianJinGuo/wiki/blob/main/entities/opd-revisiting-failure-modes-simple-fixes-storm.md)
+- [自演化 OPD 长程 Agent RL](https://github.com/QianJinGuo/wiki/blob/main/entities/seed-self-evolving-opd-long-horizon-agent-rl-tsinghua-zju-2026.md)
+
+## 原文存档
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/relay-opd-handoff-trigger-online-distillation-zju-alibaba-2026.md)
+
+---
+
+## Ch15.012 Is One Layer Enough? 单层 RL 训练可超越全参数训练
 
 > 📊 Level ⭐⭐ | 8.1KB | `entities/rl-single-layer-training-full-parameter.md`
 
@@ -946,7 +1017,7 @@ Transformer 功能沿深度分层：底层做 token 级局部句法与低层特�
 
 ---
 
-## Ch15.012 xai解散但grok还没死马斯克声称新模型正在训练
+## Ch15.013 xai解散但grok还没死马斯克声称新模型正在训练
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/xai-dissolved-grok-colossus2-analysis.md`
 
@@ -989,7 +1060,7 @@ Grok对马斯克而言有三个战略价值：X平台AI能力的核心支柱、�
 
 ---
 
-## Ch15.013 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
+## Ch15.014 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
 
@@ -1068,7 +1139,7 @@ MiniCPM5-1B 的特殊之处：
 
 ---
 
-## Ch15.014 Notes on pretraining parallelisms and failed training runs.
+## Ch15.015 Notes on pretraining parallelisms and failed training runs.
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
 
@@ -1116,7 +1187,7 @@ GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数�
 
 ---
 
-## Ch15.015 untitled v2
+## Ch15.016 untitled v2
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/untitled.md`
 
@@ -1149,7 +1220,7 @@ RL 与 OPD 之所以表现出更强的抗遗忘能力，关键在于两者的训
 
 ---
 
-## Ch15.016 PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化可训练 mock Android 环境基础设施（机器之心解读）
+## Ch15.017 PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化可训练 mock Android 环境基础设施（机器之心解读）
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan-arxiv-2605-29486.md`
 
@@ -1206,7 +1277,7 @@ PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化�
 
 ---
 
-## Ch15.017 面壁让AI写了训练框架ForgeTrain，然后它自己训出了最强1B模型
+## Ch15.018 面壁让AI写了训练框架ForgeTrain，然后它自己训出了最强1B模型
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/minicpm5-1b-forgetrain-agh-hunt.md`
 
@@ -1264,7 +1335,7 @@ PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化�
 
 ---
 
-## Ch15.018 Rubrics 综述：LLM 训练与评测的显式质量接口
+## Ch15.019 Rubrics 综述：LLM 训练与评测的显式质量接口
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/rubrics-survey-llm-evaluation-ruc-nlpir-2026.md`
 
@@ -1324,7 +1395,7 @@ Rubrics 是**自然语言形式的多维评价标准**，将模糊的"好答案"
 
 ---
 
-## Ch15.019 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
+## Ch15.020 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
 
 > 📊 Level ⭐⭐⭐ | 18.1KB | `entities/mind-lab-lora-continual-learning-system.md`
 
@@ -1565,7 +1636,7 @@ Macaron-A2UI 表面上是应用层的成果，但实则是对整个体系理论�
 
 ---
 
-## Ch15.020 Fine-Tuning Cosmos
+## Ch15.021 Fine-Tuning Cosmos
 
 > 📊 Level ⭐⭐⭐ | 16.7KB | `entities/fine-tuning-cosmos.md`
 
@@ -1928,7 +1999,7 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 ---
 
-## Ch15.021 SFT, RL, and On-Policy Distillation Through a Distributional Lens
+## Ch15.022 SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
 > 📊 Level ⭐⭐⭐ | 15.6KB | `entities/untitled-v2.md`
 
@@ -2131,7 +2202,7 @@ OPSD 的研究发现 style token 的 per-token KL 显著高于 math token。建�
 
 ---
 
-## Ch15.022 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
+## Ch15.023 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
 
 > 📊 Level ⭐⭐⭐ | 14.2KB | `entities/on-policy-distillation-vs-offline-distillation-loster.md`
 
@@ -2287,7 +2358,7 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
 
 ---
 
-## Ch15.023 三个理想火枪手创业，打破具身最快百台交付纪录
+## Ch15.024 三个理想火枪手创业，打破具身最快百台交付纪录
 
 > 📊 Level ⭐⭐⭐ | 13.9KB | `entities/三个理想火枪手创业打破具身最快百台交付纪录.md`
 
@@ -2462,7 +2533,7 @@ i7 Pro刚进场测试的时候，直接当场“翻车”。
 
 ---
 
-## Ch15.024 DeepSeek V4 训练方法论深度解读
+## Ch15.025 DeepSeek V4 训练方法论深度解读
 
 > 📊 Level ⭐⭐⭐ | 13.7KB | `entities/deepseek-v4-training-methodology.md`
 
@@ -2594,7 +2665,7 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 
 ---
 
-## Ch15.025 RL Beyond the Verifiable: 当奖励信号无法自动验证时
+## Ch15.026 RL Beyond the Verifiable: 当奖励信号无法自动验证时
 
 > 📊 Level ⭐⭐⭐ | 13.5KB | `entities/rl-beyond-the-verifiable-tanayj.md`
 
@@ -2817,7 +2888,7 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ---
 
-## Ch15.026 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch15.027 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 12.0KB | `entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md`
 
@@ -2936,7 +3007,7 @@ Cosmos Predict 2.5 + Domain LoRA
 
 ---
 
-## Ch15.027 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
+## Ch15.028 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/小米承办-wpc-qi-plugfest-srt-event推动国产无线充电方案融入全球标准体系.md`
 
@@ -3092,7 +3163,7 @@ Qi 50W 标准正是无线充电标准向更高功率演进的重要方向。目�
 
 ---
 
-## Ch15.028 Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线
+## Ch15.029 Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线
 
 > 📊 Level ⭐⭐⭐ | 11.0KB | `entities/yann-dubois-openai-post-training-interview.md`
 
@@ -3215,7 +3286,7 @@ Dubois 提到的一个关键设计哲学是：能力（capability）和安全性
 
 ---
 
-## Ch15.029 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
+## Ch15.030 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
 
 > 📊 Level ⭐⭐⭐ | 10.6KB | `entities/全球第一位ai哲学家在谷歌deepmind的9年为agi安全奔走.md`
 
@@ -3457,7 +3528,7 @@ Gabriel 和牛津研
 
 ---
 
-## Ch15.030 看见用户每一步：Session Replay 与热力图让体验优化有据可依
+## Ch15.031 看见用户每一步：Session Replay 与热力图让体验优化有据可依
 
 > 📊 Level ⭐⭐⭐ | 10.3KB | `entities/看见用户每一步session-replay-与热力图让体验优化有据可依.md`
 
@@ -3579,7 +3650,7 @@ Session Replay 帮你看到“一个人的故事”，热力图则帮你看到�
 
 ---
 
-## Ch15.031 50FPS、成本打掉70%，魔芯MoWorld把世界模型带进产业时代
+## Ch15.032 50FPS、成本打掉70%，魔芯MoWorld把世界模型带进产业时代
 
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/50fps成本打掉70魔芯moworld把世界模型带进产业时代.md`
 
@@ -3672,7 +3743,7 @@ MoWorld 刻意将自己区别于"视频生成模型"，而是定位为"空间模
 
 ---
 
-## Ch15.032 RL训练一层就够了！单层RL超越全参数训练，跨任务跨模型跨算法全部验证
+## Ch15.033 RL训练一层就够了！单层RL超越全参数训练，跨任务跨模型跨算法全部验证
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/rl训练一层就够了单层rl超越全参数训练跨任务跨模型跨算法全部验证.md`
 
@@ -3741,7 +3812,7 @@ MoWorld 刻意将自己区别于"视频生成模型"，而是定位为"空间模
 
 ---
 
-## Ch15.033 FAST：清华&滴滴自动驾驶强化学习并行训练框架
+## Ch15.034 FAST：清华&滴滴自动驾驶强化学习并行训练框架
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/fast-parallel-rl-training-tsinghua-didi-2026.md`
 
@@ -3856,7 +3927,7 @@ FAST 框架的底层思路——"用计算换时间"——适用于其他具有�
 
 ---
 
-## Ch15.034 GRPO遭遇瓶颈？G²RPO-A让自适应指导为小模型推理能力「开外挂」
+## Ch15.035 GRPO遭遇瓶颈？G²RPO-A让自适应指导为小模型推理能力「开外挂」
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/2026-05-06-GRPO遭遇瓶颈-G²RPO-A让自适应指导为小模型推理能力-开外挂--机器之心.md`
 
@@ -3972,7 +4043,7 @@ G²RPO-A 的核心创新包含两个关键组件：
 
 ---
 
-## Ch15.035 xOPD 全景梳理：16 篇论文拆解 On-Policy Distillation 的六个维度与教师角色演化主线
+## Ch15.036 xOPD 全景梳理：16 篇论文拆解 On-Policy Distillation 的六个维度与教师角色演化主线
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/xopd-on-policy-distillation-landscape-banana-2026.md`
 
@@ -4131,7 +4202,7 @@ Self-Distilled Reasoner 验证：full-vocab logit distillation > sampled-token p
 
 ---
 
-## Ch15.036 ACL 2026｜块越大，推理越差？扩散语言模型的新难题被T*破解了
+## Ch15.037 ACL 2026｜块越大，推理越差？扩散语言模型的新难题被T*破解了
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/acl-2026-diffusion-lm-block-size-reasoning-t-star.md`
 
@@ -4219,7 +4290,7 @@ ACL 2026 的这项工作挑战了 LLM 推理中"越长越好"的朴素直觉，�
 
 ---
 
-## Ch15.037 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍
+## Ch15.038 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md`
 
@@ -4316,7 +4387,7 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 
 ---
 
-## Ch15.038 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch15.039 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/nvidia-cosmos-fine-tuning-robot-video-generation.md`
 
@@ -4433,7 +4504,7 @@ warmup_steps: 100      # 渐进式学习率预热
 
 ---
 
-## Ch15.039 北航、北大和美团联合提出策略提升强化学习（PIRL/PIPO）
+## Ch15.040 北航、北大和美团联合提出策略提升强化学习（PIRL/PIPO）
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/pirl-pipo-policy-improvement-rl-buaa-pku-meituan-2026.md`
 
@@ -4518,7 +4589,7 @@ PIRL/PIPO 与在线策略蒸馏（如 [D-OPSD](https://github.com/QianJinGuo/wik
 
 ---
 
-## Ch15.040 强烈推荐的 7 个 神级 Python 库
+## Ch15.041 强烈推荐的 7 个 神级 Python 库
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/强烈推荐的-7-个-神级-python-库.md`
 
@@ -4637,7 +4708,7 @@ structlog 把日志从字符串流变成了结构化事件流：
 
 ---
 
-## Ch15.041 LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL
+## Ch15.042 LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL
 
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/llm-post-training-full-guide.md`
 
@@ -4712,7 +4783,7 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 
 ---
 
-## Ch15.042 SearchMaster：接地的受调节自博弈搜索 Agent 训练
+## Ch15.043 SearchMaster：接地的受调节自博弈搜索 Agent 训练
 
 > 📊 Level ⭐⭐⭐ | 7.1KB | `entities/searchmaster-grounded-regulated-self-play-jd-2026.md`
 
@@ -4786,7 +4857,7 @@ SearchMaster 与 Skill-SP（qwen-skill-self-play-hyman-2026 实体）同属 self
 
 ---
 
-## Ch15.043 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
+## Ch15.044 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
 
@@ -4891,7 +4962,7 @@ ZPPO 的实验结果进一步证实了一个趋势：naive knowledge distillatio
 
 ---
 
-## Ch15.044 Vime-Ascend — 基于 vLLM 的开源 RL 后训练框架（华为云昇腾版）
+## Ch15.045 Vime-Ascend — 基于 vLLM 的开源 RL 后训练框架（华为云昇腾版）
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/vime-ascend-rl-framework-modelarts-huawei.md`
 
@@ -4949,7 +5020,7 @@ Vime-ascend 的完整价值不仅体现在框架能力上，更在于它提供�
 
 ---
 
-## Ch15.045 百度文心大模型后训练进化（ERNIE 3.0→5.0）
+## Ch15.046 百度文心大模型后训练进化（ERNIE 3.0→5.0）
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/baidu-wenxin-post-training-evolution.md`
 
@@ -5008,7 +5079,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.046 Reinforcing Recursive Language Models | alphaXiv
+## Ch15.047 Reinforcing Recursive Language Models | alphaXiv
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/reinforcing-recursive-language-models-alphaxiv.md`
 
@@ -5051,7 +5122,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.047 时间序列预测增强方法总结：频域、分解、patch
+## Ch15.048 时间序列预测增强方法总结：频域、分解、patch
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/time-series-forecasting-augmentation-methods.md`
 
@@ -5097,7 +5168,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.048 AlphaEvolve交出一周年炸裂成绩单！AI自我改进不再科幻
+## Ch15.049 AlphaEvolve交出一周年炸裂成绩单！AI自我改进不再科幻
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md`
 
@@ -5145,7 +5216,7 @@ Allen Institute for AI的Nathan Lambert提出，随着AI系统复杂度增加，
 
 ---
 
-## Ch15.049 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
+## Ch15.050 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
 
@@ -5210,7 +5281,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 ---
 
-## Ch15.050 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
+## Ch15.051 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md`
 
@@ -5245,7 +5316,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 ---
 
-## Ch15.051 CDL Solver：用简洁几何描述语言桥接视觉与推理（CVPR 2026，北航）
+## Ch15.052 CDL Solver：用简洁几何描述语言桥接视觉与推理（CVPR 2026，北航）
 
 > 📊 Level ⭐⭐⭐ | 5.4KB | `entities/cvpr-2026-cdl-solver-concise-geometric-description-bridge-beihang.md`
 
@@ -5296,7 +5367,7 @@ CDL（Conditional Declaration Language）包含三种核心声明：**ConsCDL**�
 
 ---
 
-## Ch15.052 EMO: Pretraining mixture of experts for emergent modularity | Ai2
+## Ch15.053 EMO: Pretraining mixture of experts for emergent modularity | Ai2
 
 > 📊 Level ⭐⭐⭐ | 5.2KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
 
@@ -5337,7 +5408,7 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 
 ---
 
-## Ch15.053 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
+## Ch15.054 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/mobileforge-annotation-free-gui-agent-kuaishou-zju-2026.md`
 
@@ -5397,7 +5468,7 @@ HiFPO 将失败经验转化为训练信号，包含四条关键设计：
 
 ---
 
-## Ch15.054 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
+## Ch15.055 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/emces-icml2026-episodic-memory-controlled-experience-synthesis-rl.md`
 
@@ -5437,7 +5508,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.055 SkillOS
+## Ch15.056 SkillOS
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillos.md`
 
@@ -5493,7 +5564,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.056 Predicting Risk in Content Launches
+## Ch15.057 Predicting Risk in Content Launches
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
 
@@ -5529,7 +5600,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ---
 
-## Ch15.057 Vbot 具身基因组：跨本体智能继承（维他动力 秦海龙）
+## Ch15.058 Vbot 具身基因组：跨本体智能继承（维他动力 秦海龙）
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/vbot-embodied-genome-cross-embodiment-inheritance-qinhailong-2026.md`
 
@@ -5574,7 +5645,7 @@ ATOM 并非从零起步，它背后是已量产交付、走进真实用户生活
 
 ---
 
-## Ch15.058 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
+## Ch15.059 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
 
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/localdpo-cvpr2026-video-diffusion-local-preference-taobao.md`
 
@@ -5629,7 +5700,7 @@ LocalDPO 为视频生成模型的偏好对齐提供了一种高效、稳定且�
 
 ---
 
-## Ch15.059 Farewell Ai2
+## Ch15.060 Farewell Ai2
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/farewell-ai2.md`
 
@@ -5669,7 +5740,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.060 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
+## Ch15.061 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
 
@@ -5704,7 +5775,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.061 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.062 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 27.8KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -6085,7 +6156,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.062 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.063 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 22.3KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
 
@@ -6400,7 +6471,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.063 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.064 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
@@ -6474,7 +6545,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.064 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.065 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
 

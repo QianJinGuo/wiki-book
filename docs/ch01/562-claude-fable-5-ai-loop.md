@@ -31,7 +31,7 @@ Fable 5 发布中最重要的信号不是模型本身的性能提升，而是 An
 - **`/goal`**（Claude Code）：允许设定一个目标并让模型围绕评测反复迭代。
 - **Outcomes**（Claude Managed Agents）：通过独立的评分子 Agent 来验证任务完成度，评分发生在独立上下文窗口中，避免自我评判的偏差。
 
-这个转变的本质是：**从"提示"（一次性指令）转向"编排"（持续优化循环）**。这与 [Harness Engineering](../ch05/065-harness-engineering.html) 中关于"Agent 运行时"的理念完全一致——模型不再是独立的推理引擎，而是嵌入在一个包含反馈、记忆、验证的闭环系统中。
+这个转变的本质是：**从"提示"（一次性指令）转向"编排"（持续优化循环）**。这与 [Harness Engineering](../ch05/066-harness-engineering.html) 中关于"Agent 运行时"的理念完全一致——模型不再是独立的推理引擎，而是嵌入在一个包含反馈、记忆、验证的闭环系统中。
 
 ### Parameter Golf 实验：验证器子 Agent 优于自我批判
 
@@ -44,7 +44,7 @@ Fable 5 发布中最重要的信号不是模型本身的性能提升，而是 An
 
 为什么独立上下文窗口更好？因为模型在自己的输出上进行批判时，**容易受到"确认偏误"的影响**——它倾向于认为自己之前的推理是正确的。而验证器子 Agent 以"白板"状态进入，仅根据评分标准做客观判断。
 
-这是一个重要的工程启示：**在 Agent 系统中，验证和执行的上下文隔离是质量保障的关键设计模式**。这也呼应了 [Agent 评测方法论与体系设计](../ch03/019-agent.html) 中的"判据与执行分离"原则。
+这是一个重要的工程启示：**在 Agent 系统中，验证和执行的上下文隔离是质量保障的关键设计模式**。这也呼应了 [Agent 评测方法论与体系设计](../ch03/006-agent.html) 中的"判据与执行分离"原则。
 
 ### Fable 5 vs Opus 4.7：实验策略的质变
 
@@ -94,10 +94,10 @@ Fable 5 在 Continual Learning Bench 的 SQL 问答任务中表现出清晰的�
 ## 相关实体
 
 - [Claude Code Vs Kimi Vs Minimaxagent Teams 到底拼的是什么](../ch03/085-claude-code.html) — Agent 产品对比分析
-- [Agent的自演进被刚刚开源的Areal 20按下了加速键](../ch03/019-agent.html) — Agent 自我进化与循环
-- [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/019-agent.html) — Agent 落地工程实践
-- [Agent 评测方法论与体系设计](../ch03/019-agent.html) — Agent 评测体系设计
-- [Harness Engineering Survey 2026](../ch05/065-harness-engineering.html) — Harness Engineering 总览
+- [Agent的自演进被刚刚开源的Areal 20按下了加速键](../ch03/006-agent.html) — Agent 自我进化与循环
+- [Agent落地真相 协议 成本与进化 关于智能体从能跑通到能投产的讨论](../ch03/006-agent.html) — Agent 落地工程实践
+- [Agent 评测方法论与体系设计](../ch03/006-agent.html) — Agent 评测体系设计
+- [Harness Engineering Survey 2026](../ch05/066-harness-engineering.html) — Harness Engineering 总览
 
 ## 相关主题
 

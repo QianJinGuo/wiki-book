@@ -40,7 +40,7 @@ const messages: MessageParam[] = [{ role: "user", content: userInput }];while�
 
 ### 关联实体
 
-- [Harness 之后 状态边界与失败闭环 若飞](../ch05/077-harness.html)
+- [Harness 之后 状态边界与失败闭环 若飞](../ch05/091-harness.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](ch04/377-ai-agent.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
 - [Headroom Context Compression Agent Vibecoder](../ch06/044-headroom.html)

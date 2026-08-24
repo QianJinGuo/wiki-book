@@ -37,7 +37,7 @@ I am not sure what to call this. It is not a coworking space. It is not a coffee
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](../ch01/904-garry-tan.html)
 - [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki/blob/main/entities/defect-backlog-retention-report.md)
-- [Against Brain Damage](ch03/018-against-brain-damage.html)
+- [Against Brain Damage](ch03/019-against-brain-damage.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dictation-agents-human-workspace.md)
 

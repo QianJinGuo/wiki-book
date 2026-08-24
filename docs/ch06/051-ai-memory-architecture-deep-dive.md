@@ -564,7 +564,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 
 ## Related Entities
 
-- [Agent Memory 架构本质](../ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html) — Governance-centric view
+- [Agent Memory 架构本质](../ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html) — Governance-centric view
 - [Hermes Agent 记忆系统](ch06/014-hermes-agent-memory.html) — Production implementation deep-dive
 - [Memory in LLM Era — ICLR 2026](ch06/048-memory.html) — Academic framework and benchmarks
 - [Memory vs RAG](../ch04/180-agent-memory.html) — Systematic framework distinguishing memory from RAG

@@ -17,7 +17,7 @@ Meta 与 Hugging Face 合作发布 Muse Glimmer（30B 级），定位**本地规
 
 ## 工程启示
 
-Glimmer 的硬件门槛表（推理 1×H100 / LoRA SFT 1×H100 / Full SFT 8×H100 / GRPO 8×H100 4+4）是本地 Agentic 模型训练成本的最小可行参考，与 [量化](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) 结合可进一步下探单卡部署。属于 [Meta AI 开源竞争策略](../ch05/109-ai.html) 的本地化分支。
+Glimmer 的硬件门槛表（推理 1×H100 / LoRA SFT 1×H100 / Full SFT 8×H100 / GRPO 8×H100 4+4）是本地 Agentic 模型训练成本的最小可行参考，与 [量化](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) 结合可进一步下探单卡部署。属于 [Meta AI 开源竞争策略](../ch05/110-ai.html) 的本地化分支。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-muse-glimmer-local-agentic-multimodal-open-source.md)
 

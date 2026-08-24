@@ -357,9 +357,9 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [Claude Code vs OpenClaw Agent 记忆系统对比](ch06/008-claude-code-openclaw-memory-comparison.html)
 - [Agent Harness 上下文管理：聊天记录还是工作集](../ch05/043-agent-harness.html)
 - [Claude Code Subagents 详解：上下文污染隔离](../ch04/236-claude-code-subagents.html)
-- [Harness Engineering Framework](../ch05/065-harness-engineering.html)
+- [Harness Engineering Framework](../ch05/066-harness-engineering.html)
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)
-- [Agent Memory 架构本质](../ch04/520-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构本质](../ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agent Memory 模块化框架与评测](../ch04/180-agent-memory.html)
 - [深度拆解 Hermes 记忆系统：它修正了 OpenClaw 的哪层误区](../ch03/099-hermes-agent.html)
 

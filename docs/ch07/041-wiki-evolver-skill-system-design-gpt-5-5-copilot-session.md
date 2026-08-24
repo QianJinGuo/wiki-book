@@ -117,7 +117,7 @@ wiki-evolver 不是取代现有的 web-content-reviewer 和 llm-wiki，而是把
 
 这种分层设计避免了单个 Skill 过于复杂的问题，每个 Skill 有清晰的职责边界和升级路径。
 
-### 与 [Agent 记忆系统](../ch03/019-agent.html) 的关联
+### 与 [Agent 记忆系统](../ch03/006-agent.html) 的关联
 
 wiki-evolver 的 Knowledge Ladder 本质上是一个记忆系统的层次模型。从 raw source 到 Skill 的过程，就是从「被动记忆」到「主动认知」的演化。这与 Agent 记忆系统中「工作记忆 → 长期记忆 → 元认知」的三层架构有相似之处。
 
@@ -139,9 +139,9 @@ wiki-evolver 的 Knowledge Ladder 本质上是一个记忆系统的层次模型�
 
 ## 相关实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/019-agent.html)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/066-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)

@@ -50,7 +50,7 @@ Circle 同时承担技术部署者角色并积极囤积 HYPE 代币，显示出�
 ### 对交易员和投资者而言
 HYPE 的即时暴涨说明 Coinbase 入场对代币价格具有显著的信号意义。但需注意，这种短期涨幅往往包含大量情绪成分，协议实际收益的改善需要时间验证。关注 AQAv2 收益分享机制的落地情况及 USDC 在 Hyperliquid 上的实际流动性指标，是评估后续价值的重要依据。
 ## 相关实体
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/109-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch05/110-ai.html)
 - [From Doer To Director The Ai Mindset Shift](ch01/036-from-doer-to-director-the-ai-mindset-shift.html)
 - [Anthropic Puts Claude Agents On A Meter Across Its](ch01/1001-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](ch01/050-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)

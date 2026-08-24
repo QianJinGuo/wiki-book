@@ -38,9 +38,9 @@ BEACON 直接命中长程 RL 的信用分配病根：任务视野越长，里程
 ## 相关实体
 
 - → [Agentic RL 六框架实践地图](../ch04/314-agentic-rl.html)
-- → [信用分配 Credit Assignment](../ch03/019-agent.html)
-- → [SEED 自进化 OPD 长程 Agent RL](../ch03/019-agent.html)
-- → [Long-Horizon Agent 综述](../ch03/019-agent.html)
+- → [信用分配 Credit Assignment](../ch03/006-agent.html)
+- → [SEED 自进化 OPD 长程 Agent RL](../ch03/006-agent.html)
+- → [Long-Horizon Agent 综述](../ch03/006-agent.html)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/beacon-milestone-guided-policy-learning-long-horizon-agent-zju-2026.md)
 
 ---

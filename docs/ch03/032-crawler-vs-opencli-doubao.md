@@ -15,9 +15,9 @@
 ## 相关实体
 - [Notion Dev Platform](https://github.com/QianJinGuo/wiki/blob/main/entities/notion-dev-platform.md)
 - [Pi Mono Github](../ch01/1116-pi-mono-github.html)
-- [Cli Mcp Sdk Agent Tool Selection](ch03/019-agent.html)
+- [Cli Mcp Sdk Agent Tool Selection](ch03/006-agent.html)
 - [Openai Realtime Api Architecture](../ch01/127-openai-realtime-api.html)
-- [Browser Harness Github](../ch05/105-browser-harness-github.html)
+- [Browser Harness Github](../ch05/106-browser-harness-github.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crawler-vs-opencli-doubao.md)
 

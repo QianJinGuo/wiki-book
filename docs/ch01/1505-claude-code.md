@@ -31,7 +31,7 @@ Claude Code 源码拆解（by 无岳，阿里云开发者，2026-04-15）。核�
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 - [上下文隔离](https://github.com/QianJinGuo/wiki/blob/main/entities/context-isolation.md)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/109-ai.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](../ch05/110-ai.html)
 - [Agentium — 从零实现 Agent 系统的开源框架](ch01/1486-agentium-agent.html)
 - [17种Agent架构演进：控制流设计的完整演化史](../ch04/806-17-agent.html)
 - [Owner-Worker-Verifier 架构](ch01/1533-owner-worker-verifier.html)

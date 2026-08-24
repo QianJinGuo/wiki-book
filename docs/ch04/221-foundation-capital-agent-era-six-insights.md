@@ -132,8 +132,8 @@ Aparna 提出的"Agent as new hire"管理框架的真正价值在于：它把一
 *评审：Value 8 × Confidence 8 = 64 ✅ PASS | ★★★★*
 
 ## 相关实体
-- [Agent 自我改进的六条路](../ch03/019-agent.html)
-- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/019-agent.html)
+- [Agent 自我改进的六条路](../ch03/006-agent.html)
+- [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/006-agent.html)
 - [Agent 时代架构师技能指南](../ch03/077-skills.html)
 
 ---

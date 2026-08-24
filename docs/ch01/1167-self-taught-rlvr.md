@@ -48,9 +48,9 @@
 **CoPD落地路径**：对于已有独立expert的团队，建议先做mutual OPD双向蒸馏拉近行为模式，再进行各expert的持续RLVR能力拓展。overlap度量需嵌入训练流程实时追踪。
 ## 相关实体
 - [Llm Post Training Full Guide](ch01/1147-llm.html)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/109-ai.html)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch05/110-ai.html)
 - [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
-- [Baidu Wenxin Post Training Evolution](../ch05/109-ai.html)
+- [Baidu Wenxin Post Training Evolution](../ch05/110-ai.html)
 - [Vllm V0 To V1 Correctness Before Corrections](ch01/883-vllm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-taught-rlvr-jd-cii-2026.md)

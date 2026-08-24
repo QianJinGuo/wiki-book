@@ -2,7 +2,7 @@
 
 ## Ch09.016 DeepSeek Code Harness
 
-> 📊 Level ⭐⭐ | 43.8KB | `entities/deepseek-code-harness.md`
+> 📊 Level ⭐⭐ | 46.1KB | `entities/deepseek-code-harness.md`
 
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
@@ -14,7 +14,7 @@ Claude Code 的市场表现：
 - GitHub 公开提交量的 4%
 - 首次采购 AI 服务的企业中，Anthropic 面对 OpenAI 正面竞争赢下约 70% 订单
 - 不到一年跑出数十亿美元的年化收入
-- 约 27% 的任务是开发者没有这个工具时原本不会尝试的（任务边界扩大） See also [Harness Engineering](../ch05/065-harness-engineering.html)
+- 约 27% 的任务是开发者没有这个工具时原本不会尝试的（任务边界扩大） See also [Harness Engineering](../ch05/066-harness-engineering.html)
 
 ## DeepSeek 招聘详情
 **核心团队成员：**
@@ -252,6 +252,17 @@ DSH 用 node:worker_threads 跑模型写的编排代码：node:vm 同进程沙�
 3. **一手量化结果** — DSH 通过 8/10 任务（通过率 80%）；失败 extract-elf（outcome 0.1917，6 产物仅写出 2）与 chess-best-move（0.2）；2 项 verifier 通过但 outcome 0.50 封顶（qemu-startup/hf-model-inference 超时）；三维平均 outcome 0.74 / compliance 0.98 / process 0.83
 4. **AgentLoop 接入链路** — LoongSuite Pilot 非侵入注入 `$DSH_HOME/cordis.patch.yml`（Cordis 微内核插件机制直接应用），Session Log 事件流投影为 OpenTelemetry GenAI trace；评测器以 AGENT+Skill 形态挂载，评分与轨迹同源可审计
 5. **评测学理补充** — 评测结论度量"Harness+模型"组合能力（模型无关性）、Session Log 事件溯源保证过程性评估证据基础、极简模式提供受控可复现能力面
+
+## 第 10 来源 — DSH 生产可观测（腾讯云 Agent 可观测，2026-08-24 SUPP，v×c=56）
+
+> 来源：腾讯技术工程/腾讯云日志服务（trumphuang，v=7 c=8）。为 DSH 实体补充库内零覆盖的**可观测维度**（跨会话/跨机器汇聚、成本/耗时/失败回溯）。
+
+互补角度：
+1. **五层调用树** — 把一次 DSH 任务还原成带父子关系与时间区间的调用树：turn（任务）→ step → 模型调用 → 工具调用，与 DSH 实际执行结构一一对应；各层属性遵循 OpenTelemetry GenAI 语义约定，便于与既有可观测体系对齐、后续接入其他 Agent 框架保持同一口径。
+2. **状态树 + 延迟发射** — Agent 执行结构由模型运行时决定、层级深度不固定，而链路数据要求父子关系明确、时间区间完整；插件用状态树 + 延迟发射处理这一差异（事件流 → 状态树 → Span 发射 → 批量上报，batchMaxSize 32/flushIntervalMs 5000）。
+3. **DSH 自带观测 vs 缺口** — DSH 自带会话轨迹视图/Session 事件流落盘/工具调用检索，但作用域是本机、单会话、实时，过程数据是按时间排列的会话事件序列、无调用关系与时间占用统计；规模化后需跨机器汇聚、调用关系还原、长期留存。
+4. **接入链路** — tencentcloud-agentobs-sdk-dsh 插件（已发正式版、被 DSH 社区插件市场收录，支持 DSH >=0.1.0-rc.6 <0.2.0、Node.js >=22.19.0）以原生插件形态挂载在 DSH 能力插件层，对接运行时事件总线与流式管道；dsh plugin --profile web/headless/harness add。
+5. **规模化关注点** — 规模上来后三件事：耗时花在模型推理还是工具执行、Token 消耗集中在哪些会话/模型、失败中断发生在哪一步能否回溯；配合链路检索、聚合分析、告警仪表盘构成全景方案。
 
 ## 相关实体
 

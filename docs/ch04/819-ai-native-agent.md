@@ -59,7 +59,7 @@ AI Native 三大硬性标准：①全链路 AI 驱动（任何环节不能有人
 
 ### 共享黑板 vs 其他多 Agent 协作模式
 
-共享黑板的设计要点：Agent 互不感知（只认数据结构不认对方）→ 可随时增删不影响其他 Agent；Redis Hash + Lua 原子写 + 乐观锁 + ACL 角色隔离 + SSE 推送——把"协作"简化为"读写约定字段"。这与 [Harness 框架](../ch05/065-harness-engineering.html) 中状态外部化的思想一致：跨 Agent 状态显式外置到共享介质，而非在对话流中隐式传递。
+共享黑板的设计要点：Agent 互不感知（只认数据结构不认对方）→ 可随时增删不影响其他 Agent；Redis Hash + Lua 原子写 + 乐观锁 + ACL 角色隔离 + SSE 推送——把"协作"简化为"读写约定字段"。这与 [Harness 框架](../ch05/066-harness-engineering.html) 中状态外部化的思想一致：跨 Agent 状态显式外置到共享介质，而非在对话流中隐式传递。
 
 ### 安全左移与不可逆操作授权
 
@@ -75,10 +75,10 @@ AI Native 三大硬性标准：①全链路 AI 驱动（任何环节不能有人
 ## 相关实体
 
 - [算力风洞：GPU 集群的 AI Native 稳定性验证系统](../ch05/022-ai-native.html)——同属阿里 AI Native 稳定性体系，芯片级 GPU 仿真验证 vs 业务系统故障注入闭环，姊妹实践
-- [快手 RCA Agent：复杂业务场景排障 Agent](../ch03/019-agent.html)——诊断/根因分析 Agent 的同类实践，本文的诊断 Agent 是 RCA 的混沌工程场景应用
+- [快手 RCA Agent：复杂业务场景排障 Agent](../ch03/006-agent.html)——诊断/根因分析 Agent 的同类实践，本文的诊断 Agent 是 RCA 的混沌工程场景应用
 - [AWS DevOps Agent 故障演练](../ch11/296-aws-devops-agent.html)——云厂商故障演练 Agent 实践对照
-- [Harness Engineering 框架](../ch05/065-harness-engineering.html)——状态外部化/共享介质的协作思想同源
-- [Harness 减法工程（腾讯 tdsql-harness）](../ch05/077-harness.html)——不可逆动作授权边界与本文执行 Agent 唯一破坏性权限同构
+- [Harness Engineering 框架](../ch05/066-harness-engineering.html)——状态外部化/共享介质的协作思想同源
+- [Harness 减法工程（腾讯 tdsql-harness）](../ch05/091-harness.html)——不可逆动作授权边界与本文执行 Agent 唯一破坏性权限同构
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-ai-native-chaos-engineering-agent-corps-2026-08-06.md)
 

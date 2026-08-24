@@ -62,8 +62,8 @@ VC 喜欢平台（网络效应、高切换成本、拥有整个品类）。原�
 ## 相关实体
 
 - [AI-Native 分层思维](../ch05/022-ai-native.html) — AI 时代的产品思维框架
-- [Stripe Agent 经济基础设施](ch03/019-agent.html) — Stripe 的 Agent-first 产品实践
-- [Stripe Agent 基础设施（Emily Sands）](ch03/019-agent.html) — 支付原语的 agent 生态扩展
+- [Stripe Agent 经济基础设施](ch03/006-agent.html) — Stripe 的 Agent-first 产品实践
+- [Stripe Agent 基础设施（Emily Sands）](ch03/006-agent.html) — 支付原语的 agent 生态扩展
 - [AI-Native 研发组织设计](../ch05/022-ai-native.html) — 组织如何适应 AI 时代
 - [AI-Native 组织指南](../ch05/022-ai-native.html) — AI 时代的组织原则
 

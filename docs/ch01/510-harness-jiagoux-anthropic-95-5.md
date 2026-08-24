@@ -158,12 +158,12 @@ JiaGouX 建议避开"公司级聊天查数入口"，更小一点反而更稳。�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/065-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/066-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/019-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/254-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1605-anthropic.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1594-anthropic.html)
 - [Claude Code Dynamic Workflows Jiagoux Architect Perspective](../ch09/107-claude-code-dynamic-workflows.html)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/350-skill.html)
 - [Agent Skill Writing Evaluation](../ch04/614-agent-skill.html)

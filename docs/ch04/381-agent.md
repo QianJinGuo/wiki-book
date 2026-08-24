@@ -65,7 +65,7 @@ Agent 修改大刀阔斧、跨结构重写。方案是可观测对比、一键�
 
 - [知识库问答 @文档：从 DOM 方案到 ProseMirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)（vivo 同系列，编辑器底层）
 - [2 小时 0 行手写代码 VSCode 插件](../ch01/1212-claude.html)（AI 产出可审计资产）
-- [Harness Engineering](../ch05/065-harness-engineering.html)
+- [Harness Engineering](../ch05/066-harness-engineering.html)
 
 ---
 

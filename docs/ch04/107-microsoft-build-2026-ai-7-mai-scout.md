@@ -10,7 +10,7 @@
 **Microsoft Build 2026** 是微软的"AI 独立日"——从"AI 应用整合者"（依赖 OpenAI）转向**"全栈 AI 基础设施与模型提供者"**。核心发布：① **MAI-Thinking-1**（首个高级推理模型，350 亿活跃参数 / 1 万亿总参数 / SWE Bench Pro 与 Claude Opus 4.6 持平）② **6 款 MAI 系列模型**（Code / Image / Transcribe / Voice 等）③ **Scout**（基于 OpenClaw 框架的 365 智能体，可全天候自主运行）。**量子位补充全景视角**：④ **OpenClaw 登 Windows + MXC 沙箱** ⑤ **GitHub Copilot 独立桌面 App** ⑥ **Windows 开发者体验大升级** ⑦ **NVIDIA 合作 + Surface RTX Spark Dev Box**。
 
 ## 相关实体
-- [Microsoft Build 2026 Qbitai Full Scope](../ch05/109-ai.html)
+- [Microsoft Build 2026 Qbitai Full Scope](../ch05/110-ai.html)
 
 → [原文存档（AI 前线版）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-build-2026-mai-models-scout-agent.md)
 → [原文存档（量子位全景版）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-build-2026-qbitai-full-scope.md)
@@ -160,7 +160,7 @@
 - **共同点**：都是模型公司 + 自家 Harness 的全栈组合
 - **差异**：微软是"企业级 + 治理"（Intune + Entra + opt-in attestation），Kimi 是"本地桌面 + 用户账号"
 
-### vs [wow-harness v3](../ch05/077-harness.html)
+### vs [wow-harness v3](../ch05/091-harness.html)
 - v3 = 跨 session 事件时间线 + 概念图（**协议层**治理）
 - Scout = **企业身份 + 策略治理**（Entra + Intune）—— **企业治理层**变革
 - 共同点：都强调"治理"是 AI Agent 落地的关键
@@ -271,7 +271,7 @@
 
 ## 相关对照
 - [Kimi Work](../ch01/737-codex.html) —— 本地桌面 Agent + Vibe Working
-- [wow-harness v3](../ch05/077-harness.html) —— 跨 session 事件时间线
+- [wow-harness v3](../ch05/091-harness.html) —— 跨 session 事件时间线
 - [OpenClaw](../ch11/254-openclaw.html) —— 开源 AI 编程框架（Scout 基于它）
 - [Agent Harness 架构](../ch05/043-agent-harness.html) —— 7 层 harness 模型
 - [Agent Harness 上下文管理](../ch05/043-agent-harness.html) —— 工作集视角

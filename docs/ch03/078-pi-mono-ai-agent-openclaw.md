@@ -164,7 +164,7 @@ pi-mono 的流式事件架构天然支持实时 UI 更新（如终端差分渲�
 
 ## 相关
 - [Openclaw Prompt Context Harness](../ch11/254-openclaw.html) — OpenClaw 架构，pi-mono 是它的 Agent 执行引擎
-- [Harness Engineering Systematic Framework](../ch05/065-harness-engineering.html) — Harness Engineering 框架
+- [Harness Engineering Systematic Framework](../ch05/066-harness-engineering.html) — Harness Engineering 框架
 
 ## 相关实体
 

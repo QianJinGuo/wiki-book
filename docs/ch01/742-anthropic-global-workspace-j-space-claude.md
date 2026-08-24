@@ -29,7 +29,7 @@ Anthropic 发现 Claude 内部存在类似的分层结构：绝大部分激活�
 
 ## 与之前工作的关系
 
-这并非 Anthropic 第一次在模型可解释性上取得突破。此前，Anthropic 已通过 **Natural Language Autoencoders (NLAs)** 实现了将 AI 的内部想法转化为人类可读文字，以及通过稀疏自编码器（Sparse Autoencoders）和归因图（Attribution Graphs）等技术追踪输入到输出的因果链。 → [NLAs 读心术](ch01/1605-anthropic.html)、[Sparse Autoencoders](ch01/1600-sparse-autoencoders.html)
+这并非 Anthropic 第一次在模型可解释性上取得突破。此前，Anthropic 已通过 **Natural Language Autoencoders (NLAs)** 实现了将 AI 的内部想法转化为人类可读文字，以及通过稀疏自编码器（Sparse Autoencoders）和归因图（Attribution Graphs）等技术追踪输入到输出的因果链。 → [NLAs 读心术](ch01/1594-anthropic.html)、[Sparse Autoencoders](ch01/1600-sparse-autoencoders.html)
 
 J-Space 的发现更进一步——它不仅读取出了模型的内部活动，还揭示了这些活动的分层结构和「意识可达性」。
 

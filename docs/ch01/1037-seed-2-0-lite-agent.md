@@ -12,7 +12,7 @@
 - 「Claude Opus 4.7」→「Claude 四点七」
 
 ## 相关实体
-- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/019-agent.html)
+- [豆包 Seed 20 Lite升级给 Agent 装上眼睛和耳朵](../ch03/006-agent.html)
 - [Claude Code Prompt Context Harness](../ch09/073-claude-code-prompt.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/085-claude-code.html)
