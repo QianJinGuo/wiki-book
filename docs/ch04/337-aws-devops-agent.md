@@ -55,17 +55,17 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
 
 ## 相关实体
-- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](../ch11/296-aws-devops-agent.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1594-anthropic.html)
+- [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](../ch11/297-aws-devops-agent.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1609-anthropic.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/360-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 - [Agent orchestration](ch04/624-agent-orchestration.html)
 - [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](../ch07/050-aws-devops-agent-mcp-server.html)
-- [AWS Reinvent Game Demo 2024-25](../ch11/269-aws-reinvent-game-demo-2024-25.html)
+- [AWS Reinvent Game Demo 2024-25](../ch11/270-aws-reinvent-game-demo-2024-25.html)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [AgentCore Managed Harness](ch04/783-agentcore-harness.html)
+- [AgentCore Managed Harness](ch04/784-agentcore-harness.html)
 - [AI Agent 工程师能力地图](ch04/377-ai-agent.html)
-- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11/296-aws-devops-agent.html)
+- [aws devops agent 接入 aws 中国区（一）：partition 隔离与 mcp 单账号桥接](../ch11/297-aws-devops-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

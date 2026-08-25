@@ -49,7 +49,7 @@ $$P = f(I, C)$$
 4. 需要像代码库一样维护：版本控制、测试、治理
 
 ## 与现有知识的链接
-- → [Harness Context Management](../ch05/043-agent-harness.html) — Context作为Agent的工作集
+- → [Harness Context Management](../ch05/066-agent-harness.html) — Context作为Agent的工作集
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-context-layer-kgc-2026.md)
 
 ## 核心价值

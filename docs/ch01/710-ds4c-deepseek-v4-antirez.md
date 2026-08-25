@@ -140,10 +140,10 @@ ds4 的 README 提到需要针对该引擎"做足够的 agent 集成来确认它
 ds4 的 README 坦承使用 GPT 5.5 辅助开发，两个星期完成。这是一个有价值的参考点——有经验的工程师可以有效地使用 AI 辅助来加速实现，但 AI 辅助本身不能替代对系统设计的深度理解。
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/1381-deepseek-v4.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1381-deepseek-v4.html)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/1381-deepseek-v4.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/587-deepseek.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/1383-deepseek-v4.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1383-deepseek-v4.html)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](ch01/1383-deepseek-v4.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](ch01/1470-deepseek.html)
 *Last updated: 2026-05-20*
 
 *评审：Value 8 × Confidence 9 = 72 | ★★★★ | STRONG PASS*

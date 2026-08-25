@@ -110,14 +110,14 @@ D2L 看似优雅的"0 context 回答"实际上是以高幻觉率为代价的。�
 未来的 Memory 系统可能是分层的：RAG 提供精确细节检索，MSA 提供语义层面的快速匹配，参数记忆（如微调）提供任务特定的行为模式。三者的融合可能是下一代 Agent Memory 的方向。
 
 ## 相关实体
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/909-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/910-llm-wiki-obsidian-wiki-gbrain.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/077-skills.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](ch06/048-memory.html)
 - [SkillClaw](../ch04/564-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/006-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/019-hermes-skill.html)
 - [GBrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/1130-20.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](../ch01/1132-20.html)
 - [OpenHuman: AI Agent 持久记忆框架](../ch04/180-agent-memory.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 

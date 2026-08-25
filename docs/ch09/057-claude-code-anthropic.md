@@ -79,16 +79,16 @@ Claude Code agent 式搜索避开了 RAG 的过期索引问题，每个开发者
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/033-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1214-claude.html)
 
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/091-harness.html)
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Claude Code 源码深度解析（13 核心机制）](../ch03/085-claude-code.html)
 - [Claude Code 源码核心机制详解](../ch03/085-claude-code.html)
-- [柚漫剧 AI全流程提效拆解](../ch05/110-ai.html)
+- [柚漫剧 AI全流程提效拆解](../ch05/111-ai.html)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/085-claude-code.html)
-- [Claude Managed Agents 开发者指南](../ch04/634-claude-managed-agents.html)
+- [Claude Managed Agents 开发者指南](../ch04/635-claude-managed-agents.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/085-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 

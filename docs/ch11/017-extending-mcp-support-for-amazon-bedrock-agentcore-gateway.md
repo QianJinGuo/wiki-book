@@ -192,7 +192,7 @@ Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可�
 
 ## 相关实体
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/357-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/665-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/666-amazon-bedrock-agentcore.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/127-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Amazon Quick Bedrock Agentcore Finops Chat](ch11/143-amazon-quick-bedrock-agentcore-finops.html)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/503-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)

@@ -49,7 +49,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/377-ai-agent.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](ch01/638-claude-code-harness-deep-understanding.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/1594-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](ch01/1609-anthropic.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/581-anthropic-ai.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
@@ -63,7 +63,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/085-claude-code.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/315-anthropic-agent.html)
-- [Anthropic Computer Use 最佳实践](ch01/1216-anthropic-computer-use.html)
+- [Anthropic Computer Use 最佳实践](ch01/1218-anthropic-computer-use.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/091-harness.html)
 
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/006-agent.html)

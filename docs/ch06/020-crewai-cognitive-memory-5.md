@@ -98,7 +98,7 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 - **底层存储**：https://lancedb.com (LanceDB open source)
 
 ## 相关实体
-- [Memory Agent Systems Cobanov](../ch04/709-memory-agent-systems-cobanov.html)
+- [Memory Agent Systems Cobanov](../ch04/710-memory-agent-systems-cobanov.html)
 - [Stripe Sessions 2026 Ai Agents](../ch04/449-stripe-sessions-2026-ai-agents.html)
 - [Production Harness 12 Components Framework Comparison](../ch05/037-harness-12.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/291-hermes.html)

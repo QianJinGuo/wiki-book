@@ -35,7 +35,7 @@ Harness Engineering 尚未形成体系化标准，未来可能有两条路径：
 - [Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [数据 Agent 平台架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-agent-platform-architecture.md)
 - [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)
-- [阿里数据研发 Harness 工程](../ch05/066-harness-engineering.html)
+- [阿里数据研发 Harness 工程](../ch05/050-harness-engineering.html)
 - [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/数据研发multi-agent架构的harness工程实践.md)

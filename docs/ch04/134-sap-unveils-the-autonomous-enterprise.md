@@ -191,7 +191,7 @@ SAP 在 AI 时代选择了与 Anthropic、NVIDIA、Google Cloud、Microsoft、Pa
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-unveils-the-autonomous-enterprise.md)
 
-- [nature | anthropic：蒸馏过程潜意识传递行为偏好](../ch05/110-ai.html)
+- [nature | anthropic：蒸馏过程潜意识传递行为偏好](../ch05/111-ai.html)
 
 ## 参考文献
 

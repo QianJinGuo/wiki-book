@@ -104,7 +104,7 @@ Claude Code 自动扫描这些文件，根据 `description` 决定何时调用�
 
 ## 相关实体
 
-- [Harness Engineering Core Patterns Claude Code](../ch05/066-harness-engineering.html)
+- [Harness Engineering Core Patterns Claude Code](../ch05/050-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [Claude Code Harness Deep Understanding](../ch01/638-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/088-claude-code-harness.html)

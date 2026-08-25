@@ -35,8 +35,8 @@ Anthropic 内部真正领先的，不一定是模型本身，而是组织流程�
 - - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
 
 ## 关联阅读
-- [Agent Harness 框架](../ch05/043-agent-harness.html)
-- [上下文工作集](../ch05/043-agent-harness.html)
+- [Agent Harness 框架](../ch05/066-agent-harness.html)
+- [上下文工作集](../ch05/066-agent-harness.html)
 - [Subagents](../ch03/085-claude-code.html)
 -
 -

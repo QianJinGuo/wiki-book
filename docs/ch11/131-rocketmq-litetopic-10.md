@@ -66,7 +66,7 @@ Suspend 的 Broker 级实现确保了：被限流的 LiteTopic 不占用任何�
 
 ## 关联实体
 
-- [Harness Engineering](../ch05/066-harness-engineering.html)
+- [Harness Engineering](../ch05/050-harness-engineering.html)
 - [AI-Friendly 后端标准](../ch05/023-ai-friendly.html)
 - [Alitech 标准体系](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md)
 - [阿里云 LLM Wiki 实践](../ch06/026-llm-wiki.html)

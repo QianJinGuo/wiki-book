@@ -75,10 +75,10 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 - **跨境部署与合规**：如果面向全球用户提供服务，需要考虑数据驻留要求（GDPR、数据本地化等），此时 Serverless 部署形态的多租户架构更具优势
 
 ## 相关概念
-- → [Agent Harness Architecture](../ch05/043-agent-harness.html)
+- → [Agent Harness Architecture](../ch05/066-agent-harness.html)
 - → [Multi Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1221-openclaw-agent.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/1223-openclaw-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
@@ -89,9 +89,9 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
 
 ## 相关实体
-- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/254-openclaw.html)
-- [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/066-harness-engineering.html)
-- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/254-openclaw.html)
+- [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/255-openclaw.html)
+- [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/050-harness-engineering.html)
+- [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch11/255-openclaw.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/023-hermes-agent-vs-openclaw.html)
 - [AIAIGC峰会嘉宾阵容](ch04/623-aiaigc.html)
 - [OpenClaw 多智能体团队搭建实战经验](ch04/102-openclaw-multi-agent-team-practice-v2.html)

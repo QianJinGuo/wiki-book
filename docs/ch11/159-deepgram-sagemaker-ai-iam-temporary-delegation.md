@@ -70,7 +70,7 @@ Deepgram 在 SageMaker AI 上的自托管方案反映了 AI SaaS 行业的一个
 ## 相关实体
 
 - [AWS IDP Accelerator](ch11/308-aws-idp-accelerator.html) — AWS 上的文档处理加速器，另一个 AWS 托管服务的实践
-- [Claude Code 学术文献审阅](../ch03/084-claude-code.html) — AI 辅助运维的另一个视角
+- [Claude Code 学术文献审阅](../ch03/085-claude-code.html) — AI 辅助运维的另一个视角
 - [Amazon Bedrock](ch11/310-amazon-bedrock.html) — AWS 的托管 LLM 推理服务，与自托管方案形成对比
 - [Graviton Inference](https://github.com/QianJinGuo/wiki/blob/main/entities/graviton-inference.md) — AWS 自研芯片推理优化，与 SageMaker AI 的协同
 

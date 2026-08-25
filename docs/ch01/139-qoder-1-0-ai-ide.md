@@ -8,9 +8,9 @@
 -
 ## 相关实体
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/006-agent.html)
-- [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/893-chatgpt.html)
-- [Openai Three Voice Models Kill Simultaneous Translation](ch01/1000-openai.html)
-- [Baidu Confidential Computing Cpu Gpu Full Chain](../ch05/110-ai.html)
+- [Gpt 55来了我撤回了退订Chatgpt的决定](ch01/894-chatgpt.html)
+- [Openai Three Voice Models Kill Simultaneous Translation](ch01/1027-openai.html)
+- [Baidu Confidential Computing Cpu Gpu Full Chain](../ch05/111-ai.html)
 - [Tencent Hunyuan Hy3 Preview Open Source Agent](ch01/140-hy3-preview.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-1-0-release-ai-ide-agent-workbench.md)

@@ -17,7 +17,7 @@
 **不轻易改系统提示词**。会话中途记忆写入先落盘，不立刻修改当前 system prompt——保护 prompt cache。牺牲即时性，换缓存命中和提示词结构稳定。
 **压缩前 memory flush**：长会话压缩前，模型先提取"值得长期保存的事实"写入 durable memory，再压缩历史。**记忆压缩不是把历史变短，而是把任务状态迁移到更稳定的位置。**
 **记忆是提示词供应链**：写入前检查提示词注入、凭证泄露、SSH 后门等模式——因为 memory 内容未来可能进入 system prompt。
-这和 [Agent Harness 上下文管理：工作集视角](../ch05/043-agent-harness.html) 的判断一致：**窗口里留下来的，不应该是发生过的一切，而应该是下一轮推理真的要用的工作集**。
+这和 [Agent Harness 上下文管理：工作集视角](../ch05/066-agent-harness.html) 的判断一致：**窗口里留下来的，不应该是发生过的一切，而应该是下一轮推理真的要用的工作集**。
 
 ## vs OpenClaw：不是谁有记忆，而是谁把记忆放对了位置
 | | OpenClaw | Hermes |
@@ -61,7 +61,7 @@ Hermes 的记忆系统本质上是一套**分层成本治理**架构，而非单
 ## 关联阅读
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-vs-openclaw.md)
 - [深度拆解 Hermes Agent 记忆系统](ch06/014-hermes-agent-memory.html)
-- [memory agent systems cobanov](../ch04/709-memory-agent-systems-cobanov.html)
+- [memory agent systems cobanov](../ch04/710-memory-agent-systems-cobanov.html)
 - [AI Agent 记忆系统架构](../ch04/216-how-ai-agent-memory-works.html)
 -
 

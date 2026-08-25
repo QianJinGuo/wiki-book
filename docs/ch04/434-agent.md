@@ -60,8 +60,8 @@ Claude Code 的工具系统设计围绕一个核心洞察展开：**工具的风
 ## 相关实体
 
 - [AI Agent 工具数量陷阱](ch04/377-ai-agent.html) — 5 个边界清楚的工具胜过 20 个模糊工具，与 Claude Code 工具设计互补
-- [Agent Harness 架构设计与实现](../ch05/043-agent-harness.html) — 生产级 Agent 系统设计参考
-- [MCP 工具设计权衡](../ch01/1594-anthropic.html) — 工具接口设计的 Anthropic 视角
+- [Agent Harness 架构设计与实现](../ch05/066-agent-harness.html) — 生产级 Agent 系统设计参考
+- [MCP 工具设计权衡](../ch01/1609-anthropic.html) — 工具接口设计的 Anthropic 视角
 - [OpenClaw 工具总线与子 Agent 架构](../ch03/006-agent.html) — 同源思想的另一实现
 
 ---

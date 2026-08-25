@@ -56,7 +56,7 @@ MARP 构建 Agent Toolkit——"Terraform 式"的智能体定义部署工具：�
 
 - 架构立足 [AgentCore Managed Harness](ch04/299-agentcore-managed-harness.html) 与 Strands SDK——MARP 是 AgentCore 托管底座上的一个生产案例。
 - 报告生成本质是多智能体编排，对照 [Agent Orchestration 多智能体系统](ch04/624-agent-orchestration.html) 的模式分类。
-- 异步长任务 + 可观测流式输出属于生产级 Harness 工程范畴，参见 [Harness Engineering](../ch05/066-harness-engineering.html)。
+- 异步长任务 + 可观测流式输出属于生产级 Harness 工程范畴，参见 [Harness Engineering](../ch05/050-harness-engineering.html)。
 - 项目级凭证安全与 [Agent 记忆与上下文调度](ch04/180-agent-memory.html) 的无害权设计互补（权限/记忆都须按会话最小化）。
 
 ## 相关概念

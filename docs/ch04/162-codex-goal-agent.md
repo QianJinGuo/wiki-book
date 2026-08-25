@@ -90,7 +90,7 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 - [Cline releases open-source agent runtime SDK](ch04/593-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](../ch03/006-agent.html)
 
-- [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/1000-openai.html)
+- [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/1027-openai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 ### 目标状态机的本质：把"意图"变成"运行时对象"

@@ -14,7 +14,7 @@ Working Memory 对应 LLM 的[上下文窗口](../ch06/010-context-window-manage
 
 ### Long-term Memory（长期记忆）
 
-长期记忆解决跨会话信息持久化的问题。主流实现依赖**向量嵌入（Embeddings）+ 语义搜索**（semantic search）机制：将文本片段编码为高维向量，存入向量数据库（Vector Store，如 FAISS、Pinecone、Chroma），检索时通过相似度计算召回最相关的内容块（chunks）。这种范式本质上是[RAG](../ch01/1286-rag.html)的记忆版本——与标准 RAG 的区别在于记忆系统需要支持增量写入、自动遗忘策略以及与 Agent 动作的紧密绑定。
+长期记忆解决跨会话信息持久化的问题。主流实现依赖**向量嵌入（Embeddings）+ 语义搜索**（semantic search）机制：将文本片段编码为高维向量，存入向量数据库（Vector Store，如 FAISS、Pinecone、Chroma），检索时通过相似度计算召回最相关的内容块（chunks）。这种范式本质上是[RAG](../ch01/1288-rag.html)的记忆版本——与标准 RAG 的区别在于记忆系统需要支持增量写入、自动遗忘策略以及与 Agent 动作的紧密绑定。
 
 ### Episodic Memory（情景记忆）
 
@@ -22,7 +22,7 @@ Episodic Memory 记录特定事件或交互的历史片段——例如"上一次
 
 ### Semantic Memory（语义记忆）
 
-Semantic Memory 存储抽象的事实知识和概念——不依附于特定事件，而是跨实例通用的知识表示。例如"Python 是一种解释型语言"或"React 使用虚拟 DOM"。在 Agent 系统中，Semantic Memory 常通过[知识图谱](../ch01/1286-rag.html)实现，以三元组（主体-关系-客体）为存储单元，支持多跳推理和一致性查询。
+Semantic Memory 存储抽象的事实知识和概念——不依附于特定事件，而是跨实例通用的知识表示。例如"Python 是一种解释型语言"或"React 使用虚拟 DOM"。在 Agent 系统中，Semantic Memory 常通过[知识图谱](../ch01/1288-rag.html)实现，以三元组（主体-关系-客体）为存储单元，支持多跳推理和一致性查询。
 
 ### Procedural Memory（程序记忆）
 
@@ -102,7 +102,7 @@ Agent 记忆系统与多个相邻技术存在交集： 提供了长期记忆的�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-ai-agent-memory-works.md)
 
 - [Wiki Entities Architecture Map](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-entities-architecture-map.md)
-- [Video Rag Chunking Strategy Deephub Imba](../ch01/1286-rag.html)
+- [Video Rag Chunking Strategy Deephub Imba](../ch01/1288-rag.html)
 
 ---
 

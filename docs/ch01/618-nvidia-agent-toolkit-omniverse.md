@@ -50,7 +50,7 @@ NVIDIA Agent Toolkit 此前聚焦于软件领域的 AI 智能体构建（对话�
 
 Agent Toolkit + Omniverse 的核心创新在于让 AI 智能体自动化这些准备工作：智能体可以自动检查场景中哪些资产缺少物理属性、调用 CAD-to-SimReady 补全、验证传感器响应是否正确、标记场景中的问题——将"构建仿真环境"从一项需要专业工程师的技能工作，变成一个 AI 智能体可以自主完成的任务。
 
-这意味着物理 AI 开发的瓶颈将从"谁来做仿真"变为"谁定义仿真需求"——与 [Harness Engineering 范式](../ch05/066-harness-engineering.html) 中讨论的从"手动编排"到"意图驱动"的转变一致。
+这意味着物理 AI 开发的瓶颈将从"谁来做仿真"变为"谁定义仿真需求"——与 [Harness Engineering 范式](../ch05/050-harness-engineering.html) 中讨论的从"手动编排"到"意图驱动"的转变一致。
 
 ### "仿真就绪"作为 Agent 能力的可测量标准
 
@@ -79,7 +79,7 @@ Agent Toolkit + Omniverse 的核心创新在于让 AI 智能体自动化这些�
 - [NVIDIA Isaac Lab 机器人强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [NVIDIA BioNeMo Agent Toolkit](../ch04/013-nvidia-bionemo-agent-toolkit.html)
 - [NVIDIA Nemotron-3 多模态 Agent](../ch04/298-agentic.html)
-- [Harness Engineering 范式](../ch05/066-harness-engineering.html)
+- [Harness Engineering 范式](../ch05/050-harness-engineering.html)
 - Bedrock AgentCore 质量优化飞轮
 - [NVIDIA ENPIRE 机器人策略自改进](../ch04/298-agentic.html)
 

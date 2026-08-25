@@ -68,10 +68,10 @@ Memory Agent 判断是否需要注入记忆驱动的提醒（memory-grounded rem
 
 - [Agentic RL Frameworks Long-Horizon Wolfe 2026](ch04/314-agentic-rl.html)
 - [RoadmapBench Long-Horizon Benchmark](ch04/319-roadmapbench-long-horizon-agentic-software-development.html)
-- [Memory Agent Systems Cobanov](ch04/709-memory-agent-systems-cobanov.html)
+- [Memory Agent Systems Cobanov](ch04/710-memory-agent-systems-cobanov.html)
 - [Agent Memory Storage Six Schools](ch04/180-agent-memory.html)
 - [Self-Evolution GUI Agents Memory](../ch06/048-memory.html)
-- [State of Memory in Agent Harness Mem0 2026](../ch05/043-agent-harness.html)
+- [State of Memory in Agent Harness Mem0 2026](../ch05/066-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/remember-when-it-matters-proactive-memory-agent-long-horizon-wu-meta-2026.md)
 

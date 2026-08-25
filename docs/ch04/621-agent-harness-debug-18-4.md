@@ -30,7 +30,7 @@ HarnessFix 的第一步是构造 Harness-aware Trace Intermediate Representation
 
 - [Agent 自改进闭环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
 - [Agent 可观测性](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-observability.md)
-- [Agent Harness 生产可观测性](../ch05/043-agent-harness.html)
+- [Agent Harness 生产可观测性](../ch05/066-agent-harness.html)
 - [Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [评测 Harness 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 

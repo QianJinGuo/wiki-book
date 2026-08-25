@@ -88,14 +88,14 @@ Boris Cherny 报告自验证提升 2-3x 质量，但这是有代价的：每步�
 
 ## 相关实体
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/091-harness.html)
-- [Thin Harness Fat Skills](../ch05/102-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/103-thin-harness-fat-skills-ai.html)
 - [你不知道的 Agent 原理架构与工程实践](../ch04/444-agent-principle-architecture-engineering-practice.html)
 - [Design Patterns for AI Agents 2026](../ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-- [Agent Harness 架构](../ch05/043-agent-harness.html)
+- [Agent Harness 架构](../ch05/066-agent-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/091-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/066-harness-engineering.html)
+- [harness-engineering-systematic-explainer](../ch05/050-harness-engineering.html)
 - [Claude Code Dynamic Workflows Source Code Architecture](../ch09/107-claude-code-dynamic-workflows.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-structure-navigation.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)

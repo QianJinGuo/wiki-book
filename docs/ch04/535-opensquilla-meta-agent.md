@@ -37,7 +37,7 @@ OpenSquilla 的 Working/Episodic/Semantic/Raw 四层记忆结构，直接对标�
 OpenSquilla 通过 bundled ONNX inference 在设备上完成 embedding 计算，无需外部向量服务。这与  中"向量检索的语义近≠任务相关"问题形成互补：本地推理避免了数据外流，但 embedding 模型质量受限于本地算力。实战中需在隐私合规和模型精度间做明确权衡。
 
 ### 4. Syscall 隔离的容器替代方案
-Bubblewrap（Linux）+ Seatbelt（macOS）实现 syscall 级隔离，而非依赖 Docker。这类方案的优势在于：无容器运行时依赖、宿主机内核直接参与安全控制、overhead 更低。劣势是平台绑定强（Windows 无等效实现，文章中 Windows 默认为 no-op 安全模式）。[EdgeClaw](ch04/651-edgeclaw.html) 等项目采用类似思路，在边缘部署场景下更具实际价值。
+Bubblewrap（Linux）+ Seatbelt（macOS）实现 syscall 级隔离，而非依赖 Docker。这类方案的优势在于：无容器运行时依赖、宿主机内核直接参与安全控制、overhead 更低。劣势是平台绑定强（Windows 无等效实现，文章中 Windows 默认为 no-op 安全模式）。[EdgeClaw](ch04/652-edgeclaw.html) 等项目采用类似思路，在边缘部署场景下更具实际价值。
 
 ### 5. Microkernel 架构的插件经济学
 100 行核心 orchestrator + 5 行 duck-typed class 即完成插件开发，无 SDK、无 manifest。这种极简接口设计降低了贡献门槛，但长期看版本兼容性维护和插件质量治理会变成隐性成本。与 [OpenClaw 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的模块化思路相比，OpenSquilla 更激进但也更具实验性。

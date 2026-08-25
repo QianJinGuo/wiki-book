@@ -46,7 +46,7 @@
 - **短任务**（简单问答、工具调用、格式转换）→ 直接路由给轻量单模型
 - **长链路任务**（复杂推理）→ 调度多个候选模型协同处理
 
-这种"分类处理"策略在实际工程中至关重要——不是所有任务都需要多模型协作，过度使用会浪费算力和延迟。这与 [Agent Harness Dingtalk Recruitment](../ch05/043-agent-harness.html) 中 agent 的任务路由策略有异曲同工之处。
+这种"分类处理"策略在实际工程中至关重要——不是所有任务都需要多模型协作，过度使用会浪费算力和延迟。这与 [Agent Harness Dingtalk Recruitment](../ch05/066-agent-harness.html) 中 agent 的任务路由策略有异曲同工之处。
 
 ### Token 生成时间从 8.9ms 到 4.77ms 的技术路径
 
@@ -72,7 +72,7 @@
 
 1. **Agent 基础设施的设计应该以"Agent 生命周期"而非"模型推理"为中心**。Agent 需要长期在线、多轮交互、工具调用——这些需求对 CPU 算力、内存带宽和散热的要求与纯推理完全不同。评估 Agent 基础设施时，需要关注 Agent 承载密度而非仅仅是模型推理吞吐量。
 
-2. **"多模融合"比"单一最强模型"在复杂任务上更有效**。DRACO 测试中 53.9% vs 任何单模型的成绩，验证了"模型委员会"策略在复杂推理任务上的优势。对于 [Agent Harness Dingtalk Recruitment](../ch05/043-agent-harness.html) 等生产级 agent，可以考虑引入多模型评审机制。
+2. **"多模融合"比"单一最强模型"在复杂任务上更有效**。DRACO 测试中 53.9% vs 任何单模型的成绩，验证了"模型委员会"策略在复杂推理任务上的优势。对于 [Agent Harness Dingtalk Recruitment](../ch05/066-agent-harness.html) 等生产级 agent，可以考虑引入多模型评审机制。
 
 3. **软硬协同优化是当前 AI 基础设施的核心竞争力**。浪潮信息在算法（多 Token 预测）、精度（W4A8）、编译（JIT）三个维度的协同优化，比任何单一维度的突破都更有工程价值。
 
@@ -80,9 +80,9 @@
 
 ## 相关实体
 
-- [Agent Harness Dingtalk Recruitment](../ch05/043-agent-harness.html) — 企业级 Agent Harness 的生产部署，与浪潮信息的 Agent 基础设施方案互补
+- [Agent Harness Dingtalk Recruitment](../ch05/066-agent-harness.html) — 企业级 Agent Harness 的生产部署，与浪潮信息的 Agent 基础设施方案互补
 - [Lambda Microvms Vs Bedrock Agentcore Ai Agent Comparison](../ch11/096-lambda-microvms-vs-bedrock-agentcore-ai-agent.html) — Agent 基础设施的对比分析
-- [Tencent K8S Ray Ai Workload Scheduling](../ch11/153-k8s-ray-ai-workload.html) — 腾讯的 Agent 调度方案，与浪潮信息的 CPU+GPU 协同形成对照
+- [Tencent K8S Ray Ai Workload Scheduling](../ch11/154-k8s-ray-ai-workload.html) — 腾讯的 Agent 调度方案，与浪潮信息的 CPU+GPU 协同形成对照
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程化框架中的基础设施设计原则
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langchao-ocp-agent-infrastructure-2026.md)

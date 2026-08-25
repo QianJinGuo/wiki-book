@@ -68,7 +68,7 @@ Mollick 描述的真实工作流：
 
 Mollick 的总结："我感觉自己掌控着 AI 正在做的选择，因为 AI 检查了，它的工作是可见的。"
 
-**与 [Harness Engineering Core Patterns](../ch05/066-harness-engineering.html) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
+**与 [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
 
 ### 4. PhD 级智能的真实测试
 
@@ -190,11 +190,11 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
 - [GPT-5.4 Codex 进展](ch01/737-codex.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Karpathy Agentic Engineering 综述](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Agentic Engineering 综述](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
 - [AgentOps on Bedrock](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Yann Dubois OpenAI 后训练访谈](ch01/1000-openai.html)
+- [Yann Dubois OpenAI 后训练访谈](ch01/1027-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/016-wiki-evolver.html)
-- [AI Agent Harness 构建](ch01/1192-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/1194-ai-agent-harness.html)
 - [Harness 状态边界与失败闭环](../ch05/091-harness.html)
 - [Agent Vibecoder 上下文压缩](../ch06/044-headroom.html)
 - [腾讯混元 HY3 开源预览](ch01/140-hy3-preview.html)

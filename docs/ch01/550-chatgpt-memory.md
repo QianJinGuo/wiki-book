@@ -155,7 +155,7 @@ Canvas 被设计为"独立画布"而非对话线程的延伸，这是它与普�
 - [Obsidian](../ch06/028-obsidian.html) — 本地离线笔记
 ## 相关实体
 
-- [entrypoint hijacking](ch01/741-entrypoint-hijacking.html)
+- [entrypoint hijacking](ch01/742-entrypoint-hijacking.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
 
 ---

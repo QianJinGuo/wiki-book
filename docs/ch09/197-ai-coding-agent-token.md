@@ -74,7 +74,7 @@ AI Coding Agent Token 成本优化的完整五层模型：使用习惯→模型�
 
 ## 相关实体
 
-- [Harness Engineering](../ch05/066-harness-engineering.html)
+- [Harness Engineering](../ch05/050-harness-engineering.html)
 - [Claw-SWE-Bench](../ch05/091-harness.html) — Pareto 成本分析
 - [快手 RCA Agent](../ch03/006-agent.html) — Workflow 快思考+Agent 慢思考
 - [Skill 版本对比](../ch04/350-skill.html) — Token/时延门禁

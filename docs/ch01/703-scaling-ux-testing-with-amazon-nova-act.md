@@ -39,7 +39,7 @@ Nova Act 的工作方式完全不同：它通过分析网页截图理解页面�
 
 这个设计解决了传统测试中的一个根本问题：测试场景的知识分布在产品经理、设计师、开发者的头脑中，很少被系统化地转成可执行的测试用例。"文档→测试用例"的自动转化实际上是把组织的隐式产品知识显式化为可执行的验证流程。
 
-从架构角度看，这是 Agentic RAG 模式 的一个延伸应用：知识库不只是"回答问题"，而是"生成测试场景"。这与 [淘宝 RAG 全链路](ch01/1286-rag.html) 中的"从知识到行动"的思路异曲同工。
+从架构角度看，这是 Agentic RAG 模式 的一个延伸应用：知识库不只是"回答问题"，而是"生成测试场景"。这与 [淘宝 RAG 全链路](ch01/1288-rag.html) 中的"从知识到行动"的思路异曲同工。
 
 ### 三层粒度设计：对抗指令模糊性的工程实践
 
@@ -79,11 +79,11 @@ Nova Act 方案引入了一个精妙的设计维度：三级指令粒度。同�
 
 - [Amazon Nova Act HIPAA 合规](../ch04/597-amazon-nova-act-is-now-hipaa-eligible.html)
 - Agentic RAG 模式
-- [Amazon Bedrock AgentCore 浏览器能力](../ch04/665-amazon-bedrock-agentcore.html)
-- [RAG 全链路实践](ch01/1286-rag.html)
-- [Agent Harness 运行时模式](../ch05/043-agent-harness.html)
+- [Amazon Bedrock AgentCore 浏览器能力](../ch04/666-amazon-bedrock-agentcore.html)
+- [RAG 全链路实践](ch01/1288-rag.html)
+- [Agent Harness 运行时模式](../ch05/066-agent-harness.html)
 - [Bedrock Claude 缓存策略](../ch11/069-amazon-bedrock-claude-prompt-cache.html)
-- [Bedrock 商业智能 Agent](../ch04/665-amazon-bedrock-agentcore.html)
+- [Bedrock 商业智能 Agent](../ch04/666-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-ux-testing-with-amazon-nova-act-a-new-approach-to-us.md)
 

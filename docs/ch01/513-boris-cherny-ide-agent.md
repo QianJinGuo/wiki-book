@@ -52,7 +52,7 @@ Claude Code 的爆发曲线违反直觉：前半年几乎没有 PMF（Product-Ma
 - 代码作者是"人" → 代码作者是"Agent"，审查者是"人"
 - 实时响应（小补全）→ 长任务执行（小时级 multi-step loop）
 
-这与 [Harness Engineering Core Patterns](../ch05/066-harness-engineering.html) 中"控制面应当外置给人类"的工程原则一致——Human-in-the-Loop 不是降级方案，而是 Agent 系统设计的核心约束。
+这与 [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html) 中"控制面应当外置给人类"的工程原则一致——Human-in-the-Loop 不是降级方案，而是 Agent 系统设计的核心约束。
 
 ### 3. "coding is solved"的前提条件分析
 
@@ -175,14 +175,14 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - [两万字详解 Claude Code 源码核心机制](../ch03/085-claude-code.html)
 - [Claude Code Harness 深度解析](../ch05/088-claude-code-harness.html)
 - [Claude Code Harness 深度理解](ch01/638-claude-code-harness-deep-understanding.html)
-- [深入理解 Claude Code Agent Harness 构建之道](../ch05/043-agent-harness.html)
+- [深入理解 Claude Code Agent Harness 构建之道](../ch05/066-agent-harness.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/006-agent.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Anthropic 内部实践](ch01/358-1.html)
-- [DeepSeek V4 Flash Pro](ch01/1305-deepseek-v4-flash-pro.html)
-- [加速 LLM 模型加载与上下文窗口](ch01/1399-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
-- [大型表格模型基础](../ch05/110-ai.html)
+- [DeepSeek V4 Flash Pro](ch01/1307-deepseek-v4-flash-pro.html)
+- [加速 LLM 模型加载与上下文窗口](ch01/1401-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [大型表格模型基础](../ch05/111-ai.html)
 
 ---
 

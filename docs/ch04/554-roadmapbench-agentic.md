@@ -22,7 +22,7 @@ RoadmapBench 是由 Allen AI 提出的面向长周期 Agentic 软件开发的评
 
 ### 长周期任务对 Agent 架构的全新挑战
 
-RoadmapBench 揭示了一个根本性矛盾：现有 Agent 架构大多为短周期交互设计（单次工具调用→结果反馈→下一步决策），而长周期任务需要 Agent 在数百次工具调用中维持对项目全局的理解和一致的目标导向。 这与 [Agent Harness 上下文管理](../ch05/043-agent-harness.html) 中讨论的上下文窗口滑动问题密切相关——当修改跨越 51 个文件时，Agent 无法将所有相关代码同时保持在上下文中，必须依赖外部持久化机制。
+RoadmapBench 揭示了一个根本性矛盾：现有 Agent 架构大多为短周期交互设计（单次工具调用→结果反馈→下一步决策），而长周期任务需要 Agent 在数百次工具调用中维持对项目全局的理解和一致的目标导向。 这与 [Agent Harness 上下文管理](../ch05/066-agent-harness.html) 中讨论的上下文窗口滑动问题密切相关——当修改跨越 51 个文件时，Agent 无法将所有相关代码同时保持在上下文中，必须依赖外部持久化机制。
 
 ### 规划与执行的解耦
 
@@ -38,7 +38,7 @@ RoadmapBench 填补了从 SWE-Bench（单 bug fix）到 [Codex 六小时目标�
 
 ### 对 Harness 工程设计的启示
 
-RoadmapBench 的结果表明，单纯提升模型能力不足以解决长周期开发问题。Agent Harness 需要提供更强大的工作流管理、断点续传、版本控制和中间产物验证能力。 这与 [Agent Harness 架构](../ch05/043-agent-harness.html) 中讨论的生产级 Harness 设计要求高度一致。
+RoadmapBench 的结果表明，单纯提升模型能力不足以解决长周期开发问题。Agent Harness 需要提供更强大的工作流管理、断点续传、版本控制和中间产物验证能力。 这与 [Agent Harness 架构](../ch05/066-agent-harness.html) 中讨论的生产级 Harness 设计要求高度一致。
 
 ## 实践启示
 
@@ -54,9 +54,9 @@ RoadmapBench 的结果表明，单纯提升模型能力不足以解决长周期�
 
 ## 相关实体
 
-- [Agent Harness 架构](../ch05/043-agent-harness.html) — 生产级 Agent 运行基础设施的设计原则
+- [Agent Harness 架构](../ch05/066-agent-harness.html) — 生产级 Agent 运行基础设施的设计原则
 - [Codex 六小时目标运行](../ch09/068-codex-goal-six-hour-run.html) — 长链 Agent 执行的实际案例
-- [Agent Harness 上下文管理](../ch05/043-agent-harness.html) — 长周期任务中的上下文窗口管理技术
+- [Agent Harness 上下文管理](../ch05/066-agent-harness.html) — 长周期任务中的上下文窗口管理技术
 - [CMU PACE 代理评估](../ch03/006-agent.html) — 低成本 Agent 能力评估方法
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 分层 Harness 工程方法论
 - SWE-Bench Verified — 当前主流的单 bug fix Agent 基准

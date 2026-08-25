@@ -258,15 +258,15 @@ regression_failures | rejection_reason | review_notes
 | [Hermes Agent Skill Crossover Optimization](../ch01/521-hermes-agent-skill.html) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
 | [Skill Self Evolution Three Approaches](ch04/350-skill.html) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
 | [Agent Self Improvement Six Mechanisms](../ch03/006-agent.html) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
-| [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/110-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
+| [Ai Recursive Self Improvement Nanogpt Prime Intellect](../ch05/111-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
 | [Darwin Skill 2 Huashu](ch04/350-skill.html) | **Darwin Skill 2** | Darwin Skill 进化 |
 | [Embabel](../ch07/025-embabel.html) | **Embabel** | Embabel 自进化框架 |
 | [Pith Train Agent Native Moe Training Framework](../ch03/006-agent.html) | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](../ch03/099-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
 | [Hermes 9 Module Architecture](../ch01/291-hermes.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
-| [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/066-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
+| [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/050-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
 | [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/314-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
-| [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01/1237-auto-research.html) | **Deli Auto Research** | Continual learning + self-improvement |
+| [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01/1239-auto-research.html) | **Deli Auto Research** | Continual learning + self-improvement |
 | [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/085-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 
 ## 十四、关键金句

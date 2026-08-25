@@ -430,10 +430,10 @@ Harness Engineering 对效率的定义更接近**软件工程的总成本**：�
 ---
 
 ## 相关实体
-- [Harness Engineering](ch05/066-harness-engineering.html)
+- [Harness Engineering](ch05/050-harness-engineering.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](../ch04/242-ahe-agentic-harness-engineering.html)
-- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/066-harness-engineering.html)
-- [Harness Engineering Alibaba Java Case Study](ch05/066-harness-engineering.html)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](ch05/050-harness-engineering.html)
+- [Harness Engineering Alibaba Java Case Study](ch05/050-harness-engineering.html)
 - [Tencent Cdn Lego Harness](ch05/091-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qq-music-harness-engineering-monorepo-microservices.md)

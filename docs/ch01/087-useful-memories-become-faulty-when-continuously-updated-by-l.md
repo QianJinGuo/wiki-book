@@ -52,7 +52,7 @@ Complementary Learning Systems 理论要求快速 episodic 存储与慢速 schem
 ## 相关实体
 
 - [Build Live Translation Apps with gpt-realtime-translate](ch01/102-build-live-translation-apps-with-gpt-realtime-translate.html)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/893-chatgpt.html)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/894-chatgpt.html)
 - [GPT-5.4 is a big step for Codex](ch01/737-codex.html)
 
 ---

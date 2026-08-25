@@ -56,7 +56,7 @@ AgentScope 通过 ToolCallStartEvent、ToolCallDeltaEvent、ToolCallEndEvent 流
 - [WorkBuddy 产品架构](../ch03/006-agent.html) — 提示词与产品化视角，本文补充了工程实现视角
 - [AgentScope Java Harness](../ch03/058-agentscope-java-harness-framework-2-0-agent-harness.html) — AgentScope Java 版的企业级 Harness 实现，本文对应 Python 版实践
 - [WorkBuddy 记忆对比](ch04/346-mem0-vs-workbuddy-agent.html) — 记忆层面的比较分析
-- [OpenClaw vs WorkBuddy](../ch05/123-loop-engineering.html) — 工作流引擎对比
+- [OpenClaw vs WorkBuddy](../ch05/006-loop-engineering.html) — 工作流引擎对比
 
 ## 四层工具架构
 

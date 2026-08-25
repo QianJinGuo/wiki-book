@@ -50,7 +50,7 @@ LoongSuite 当前支持 8+ 框架的 Invocation 统一抽象值得参考——�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-genai-semconv-alibaba.md)
 
 ## 相关实体
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/066-harness-engineering.html)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/050-harness-engineering.html)
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
 - [你不知道的 Agent 原理架构与工程实践](ch04/444-agent-principle-architecture-engineering-practice.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)

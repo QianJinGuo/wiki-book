@@ -88,7 +88,7 @@ Codex 5.21 让 Agentic Engineering 真正可行——之前所有"AI 代理"工�
 - [Agent Self Improvement Six Mechanisms](../ch03/006-agent.html)
 - [Codex Goal Six Hour Run](ch09/068-codex-goal-six-hour-run.html)
 - [Four Sub Agent Patterns](../ch03/006-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/066-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/050-harness-engineering.html)
 
 ---
 

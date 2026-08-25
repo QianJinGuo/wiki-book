@@ -170,7 +170,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 ## 相关实体
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/085-claude-code.html)
 - [Claude Code Openclaw Usage Ettin](../ch09/043-claude-code-openclaw-usage-ettin.html)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/066-harness-engineering.html)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/050-harness-engineering.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/085-claude-code.html)
 - [Skill System Design Three Way Comparison](../ch04/350-skill.html)
 
@@ -179,7 +179,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 - [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
 - [agent资本市场：自主agent融资框架与批判](../ch03/006-agent.html)
 - [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](../ch03/085-claude-code.html)
-- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/254-openclaw.html)
+- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/255-openclaw.html)
 
 - [claude code 1.0.24 工具调用安全事故：静默删 .gitignore 与 redis flush 复盘](../ch03/085-claude-code.html)
 

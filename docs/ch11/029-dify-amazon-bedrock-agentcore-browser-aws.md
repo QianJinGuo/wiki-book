@@ -47,11 +47,11 @@ AgentCore Browser Viewer提供了实时的浏览器状态查看能力，使得�
 
 ## 相关实体
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/503-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/271-aws-bedrock-agentcore.html)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
+- [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/666-amazon-bedrock-agentcore.html)
+- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/272-aws-bedrock-agentcore.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/666-amazon-bedrock-agentcore.html)
 - [基于Bedrock Agentcore 实现智能成本分析与告警系统 | 亚马逊AWS官方博客](ch11/059-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/665-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/666-amazon-bedrock-agentcore.html)
 
 ---
 

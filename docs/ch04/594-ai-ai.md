@@ -69,7 +69,7 @@ L1个人工具 → L2团队助手 → L3流程节点 → L4数字员工 → L5�
 - [Ai Native Team Building Yexiaochai](../ch05/022-ai-native.html)
 - [Ai Native Team Building Failures Ceo Digital Twin Case](../ch05/022-ai-native.html)
 - from-system-of-record-to-system-of-intelligence.md-intelligence
-- [Anthropic Founders Playbook Huashu 2026](../ch01/1594-anthropic.html)
+- [Anthropic Founders Playbook Huashu 2026](../ch01/1609-anthropic.html)
 - [Ai Native Startup Cyberfund Guide](../ch05/022-ai-native.html)
 
 ---

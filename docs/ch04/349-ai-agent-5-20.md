@@ -120,7 +120,7 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1214-claude.html)
 
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
 

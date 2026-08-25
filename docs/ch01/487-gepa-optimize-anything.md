@@ -125,14 +125,14 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 5. **优先在 Generalization 模式构建可迁移 skill library**：对于需要在新问题上快速适配的场景（如 Agent skill 自动化），先用 Generalization 模式将优化结果固化为 skill，再用 Multi-Task 模式让 skill 在任务间互相增强^。
 
 ## 相关实体
-- [2026年最值得关注的15款开发者工具你用过几个](ch01/1588-15.html)
+- [2026年最值得关注的15款开发者工具你用过几个](ch01/1591-15.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
-- [腾讯研究院Ai速递 20260507](../ch05/110-ai.html)
+- [腾讯研究院Ai速递 20260507](../ch05/111-ai.html)
 - [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](../ch04/208-karpathy-ai.html)
-- [Kasra Blog Llm Hacking Empirical Test](ch01/1147-llm.html)
+- [Kasra Blog Llm Hacking Empirical Test](ch01/1149-llm.html)
 - [Hermes Agent V014 Architecture Shugex](../ch03/099-hermes-agent.html)
 ## 与 Hermes Agent Skill 互优化的关联
 

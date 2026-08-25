@@ -40,7 +40,7 @@
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/581-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch03/085-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](ch03/006-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1214-claude.html)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](ch03/085-claude-code.html)
 - [Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](../ch01/401-anthropic-prompt-caching-claude-code.html)

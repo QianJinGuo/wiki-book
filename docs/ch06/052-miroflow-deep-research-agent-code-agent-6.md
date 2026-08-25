@@ -245,7 +245,7 @@
 
 ## 9. 与已有 wiki 实体的关系
 
-### vs [Agent Harness 架构](../ch05/043-agent-harness.html)
+### vs [Agent Harness 架构](../ch05/066-agent-harness.html)
 - 7 层 harness 模型 = 抽象框架
 - **MiroFlow = "deep research 任务性质的脚手架"**——把 harness 设计哲学落到 deep research 任务上的**具体实现 + 工程决策**
 
@@ -318,7 +318,7 @@
 - **长期存活的 Jupyter Kernel 沙箱是 deep research 区别于 code agent 的关键基础设施**。整个 sandbox 生命周期内变量/import/函数定义在 kernel 内存里持续存在，后边轮的操作可以读之前操作的代码变量，返回 Jupyter execution 对象能带 matplotlib 图/DataFrame HTML 表/image 等复杂数据。这是 command 命令做不到的，也是 deep research 任务（需要分析数据、画图、读复杂文件）区别于 code agent（改用户本地代码）的本质需求 
 
 ## 相关对照
-- [Agent Harness 架构](../ch05/043-agent-harness.html) —— 7 层模型
+- [Agent Harness 架构](../ch05/066-agent-harness.html) —— 7 层模型
 - [Rein](../ch03/006-agent.html) —— Code Agent 架构
 - [wow-harness v3](../ch05/091-harness.html) —— 协议层治理
 - [MAC Skills + Hooks](../ch05/030-mac-multi-agent-coding-skills-hooks-harness-0-20.html) —— 工程师个人框架

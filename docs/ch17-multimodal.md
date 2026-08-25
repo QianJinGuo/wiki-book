@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **68 篇**实体，按深度递增排列。
+> 本章收录 **69 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 44 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 45 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
@@ -3813,7 +3813,57 @@ VLX-Go 采用两阶段训练：第一阶段基于离线轨迹数据学习，系�
 
 ---
 
-## Ch17.043 Introducing 1-bit and Ternary Bonsai Image Models
+## Ch17.043 OmniScientist：全模态全学科 AI Scientist（直接感知原始证据）
+
+> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/omniscientist-multimodal-ai-scientist-2026.md`
+
+# OmniScientist：全模态全学科 AI Scientist（直接感知原始证据）
+
+> 新加坡国立大学（NUS）与牛津大学团队（Bobo Li/Hao Fei 等）提出 OmniScientist，arXiv:2608.13558。核心主张：现有 AI-scientist 系统越来越 workflow-complete 却 evidence-incomplete——它们只在人类预处理后的文本/代码/标签/摘要上推理，丢失空间、时间、跨通道、过程性关系。OmniScientist 直接从异构原始证据做端到端跨学科研究，让感知贯穿完整科研生命周期。
+
+## 4 类科学证据家族
+
+按解释所需的主要推理方式把科学证据分成 4 个跨学科不变的家族（Table 2）：**Perceptual**（images/video/micrographs/radar/音频/3D）、**Symbolic**（文档/公式/序列/知识图谱/数学建模）、**Quantitative-statistical**（表/测量/分布/回归/显著性检验）、**Procedural/dynamic**（实验步骤/代码执行/agent traces/simulations/protocols）。关键洞见：产物都能序列化成 token 或通过代码访问，关键不是"什么能被序列化"而是"哪些关系能幸存于接口"——caption 丢局部空间结构、无序标量丢时间顺序。
+
+## 框架架构：感知层 + 3 Agent + 确定性管线
+
+一个 perception layer + 3 个自主 agent（Ideation/Experiment/Writeup）在确定性薄管线内运行，每阶段用 ReAct loop 交错观测、推理、行动，让证据塑造问题形成、实验设计、结果检查、科学论证。
+
+- **感知层（4.1）**：先按推理范式把产物归到证据家族，家族内 modality 定义精确表示；优先做原生数值分析（FFT 峰值/趋势点直接从原始产物提取），仅空间/结构模式必要时才视觉渲染，视觉感知预算受限。任务上下文动态决定用数值特征、视觉表示或两者
+- **Ideation（4.2）**：ReAct loop 建立 grounding → OpenAlex/Crossref 检索文献 → 至少 5 个候选 idea 评估 novelty/可行性 → 选最强定稿。Idea check 强制结构完整性、生成充分性、可执行性、泄漏/有效样本量检查，自动改写 overconfident 措辞（first→appears under-explored）
+- **Experiment（4.3）**：受控 run_python 环境迭代代码生成 + 调试循环，感知层检查原始输入或自产图。设计含至少 4 个分析（主假设 + baselines/ablation/mechanism/sensitivity 对照）。Rigour check（Algorithm 1）验证真实执行、每数字可溯到真实输出、多重比较校正（含 demoted tests）、anti-HARKing（headline 必须来自受支撑分析）
+- **Writeup（4.4）**：5 个结构规格固定 venue 风格（ML 带 Related Work/Limitations、生物医学末尾 Methods、化学合并 Results/Discussion），每节只从实验记录对应切片扩展，abstract 最后写保证数字一致；thesis planner 从受支撑分析选 headline；最终 meta-audit 检查 claim 对实验记录
+
+三阶段检查（Idea/Rigour/Claim）都针对同一 **execution record**（source of truth）审计而非 agent 写的文本；实验崩溃或 null 结果返回 ideation。
+
+## 评测：36 案例、5 学科、4 证据家族
+
+- **任务设定**：单一 specification file 指定 dataset/subject/target property + 原始数据，系统产出证据接地论文，方法学交给 agent。演示套件 5 学科家族、36 案例、每案例一个真实公开数据集（12 个符号回归方程到 500 万边生物医学知识图谱）。扩展到新学科只需写 specification file，核心引擎零改动
+- **模型**：reasoning backbone 驱动全部 3 阶段且是唯一被换组件；主用 Claude Sonnet 5，对比 GPT-5.6/GLM-5.2/Kimi K2.7/开源 Qwen3.5/Gemma-4。perception model 固定 Sonnet 5 不跟随 backbone（分数变化可归因于推理）。评分由 2 个家族外 judge（deepseek-v4-flash、gemini-2.5-flash-lite）
+- **指标**：7 维 0-10（5 标准同行评审 + multimodal grounding/factual accuracy），composite=均值。分数与长度相关性极小（ρ=0.16）抗 verbosity 偏差。完整 3 阶段执行成本 $0.03–$4.34
+- **主结果**：Sonnet 5 全部 36 案例完成、Overall 6.3（factual 7.7/soundness 7.0）；GLM-5.2 6.5、Kimi K2.7 6.2 接近；小模型明显下降。clarity 退化最小、factual/soundness 最贴 backbone 强度
+
+## 核心贡献：直接感知原始证据
+
+**盲眼消融**（Figure 7）：对比完整系统与只接收预计算标量特征、从不访问原始观测的盲眼变体——完整感知提升每个评测维度，最大增益在 multimodal grounding 和 scientific significance，其论文赢得 **85% 两两对比**。增益出现在科学实质：选择的问题、执行的分析、被证据支撑的结论。
+
+**代表性证据接地发现**：地震学从 750 条噪声 STEAD traces 发现 21.7% 实际携带相干瞬态信号；病理学 held-out tile 分解为肿瘤/基质/淋巴混合物；海洋生物声学时间带宽积单独恢复 32 物种功能分组；符号回归 Cramér–Rao 形式匹配测量指数方差（8/8 定律）；无监督尺度不变描述符聚类出 4 个 morphotypes；并揭示评测陷阱（leave-one-family-out 误差比 k-fold 高 3.1×–7.0×）和元数据泄漏（记录协议 0.60→0.35 崩溃出源）。
+
+**机制分析**：直接感知会影响问题选择、实验设计乃至最终研究路径，而不只是让论文写得更好——"看见"原始数据直接改变 AI 做什么研究。
+
+## 关联实体
+
+- [AutoResearch L0-L4](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md) — 科研 agent 全流程自动化的同主题框架
+- [Polaris 开源科研 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/polaris-zju-open-source-research-agent-2026.md) — 开源科研 agent 体系
+- [Spark-to-Paper 端到端论文生成](https://github.com/QianJinGuo/wiki/blob/main/entities/端到端论文生成系统假结论检出率92自动跑实验画图直出论文初稿.md) — 同主题端到端论文生成，含假结论检出
+- [SciAgentGym 科学工具基准](https://github.com/QianJinGuo/wiki/blob/main/entities/sciagentgym-benchmark-multi-step-scientific-tool-use.md) — 科研 agent 评测基准
+- [Google AI 科研助手](https://github.com/QianJinGuo/wiki/blob/main/entities/nature-ai-scientific-assistant-google-futurehouse.md) — 科研助理体系
+- [原文存档（论文）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/omniscientist-multimodal-ai-scientist-paper-2026.md)
+- [原文存档（Oscholar 解读）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/omniscientist-multimodal-ai-scientist-oscholar-2026.md)
+
+---
+
+## Ch17.044 Introducing 1-bit and Ternary Bonsai Image Models
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/bonsai-image-4b-1-bit-ternary.md`
 
@@ -3889,7 +3939,7 @@ Compression only matters if the model remains useful. We evaluated Bonsai Image 
 
 ---
 
-## Ch17.044 Normalizing Trajectory Models
+## Ch17.045 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/normalizing-trajectory-models.md`
 
@@ -3952,7 +4002,7 @@ Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致�
 
 ---
 
-## Ch17.045 火山引擎 RTM：超低延时直播技术
+## Ch17.046 火山引擎 RTM：超低延时直播技术
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/volcano-engine-rtm-low-latency-streaming.md`
 
@@ -4030,7 +4080,7 @@ ABR 不只是简单的码率切换机制，而是服务端和客户端协同的�
 
 ---
 
-## Ch17.046 SemVID：面向视频时序定位的训练免费 Token 剪枝（Evidence Chain）
+## Ch17.047 SemVID：面向视频时序定位的训练免费 Token 剪枝（Evidence Chain）
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/semvid-vtg-evidence-chain-token-pruning-eccv2026.md`
 
@@ -4077,7 +4127,7 @@ SemVID 是一个面向 Video Temporal Grounding（VTG）的 training-free token 
 
 ---
 
-## Ch17.047 Beyond Pixels / Latent-to-4D：从视频 latent 直接走向 4D 世界（浙大）
+## Ch17.048 Beyond Pixels / Latent-to-4D：从视频 latent 直接走向 4D 世界（浙大）
 
 > 📊 Level ⭐⭐⭐ | 6.0KB | `entities/beyond-pixels-latent-to-4d-zju-video-dit.md`
 
@@ -4121,7 +4171,7 @@ Beyond Pixels 提出 Latent-to-4D 框架，把视频 DiT 最终去噪的 VAE lat
 
 ---
 
-## Ch17.048 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.049 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
 
@@ -4208,7 +4258,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ---
 
-## Ch17.049 ai视频工具悄悄走到了第三阶段
+## Ch17.050 ai视频工具悄悄走到了第三阶段
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/ai视频工具悄悄走到了第三阶段.md`
 
@@ -4262,7 +4312,7 @@ RHTV作为第三阶段的先行者，其「画布原生」路线可能会对赛�
 
 ---
 
-## Ch17.050 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.051 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 5.6KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
@@ -4305,7 +4355,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.051 Stable Audio 3.0 开源音频生成模型
+## Ch17.052 Stable Audio 3.0 开源音频生成模型
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/stable-audio-3.md`
 
@@ -4362,7 +4412,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.052 PhyEdit：显式 3D 几何 Preview 指导 DiT 图像编辑（浙大 ReLER，ACM MM 2026）
+## Ch17.053 PhyEdit：显式 3D 几何 Preview 指导 DiT 图像编辑（浙大 ReLER，ACM MM 2026）
 
 > 📊 Level ⭐⭐⭐ | 4.9KB | `entities/phyedit-explicit-3d-geometry-preview-image-editing-acm-mm26-2026.md`
 
@@ -4407,7 +4457,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.053 扩散模型视觉生成一致性框架（2026 综述）
+## Ch17.054 扩散模型视觉生成一致性框架（2026 综述）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/diffusion-model-consistency-framework-2026-survey.md`
 
@@ -4471,7 +4521,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.054 CFT：一致特征传输的人像重打光（美图影像研究院 ECCV 2026）
+## Ch17.055 CFT：一致特征传输的人像重打光（美图影像研究院 ECCV 2026）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/cft-consistent-feature-transport-image-relighting-eccv-2026-meitu.md`
 
@@ -4518,7 +4568,7 @@ L₃ 的监督使用**身份与场景内容不同、但光照变换相同**的�
 
 ---
 
-## Ch17.055 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
+## Ch17.056 Om AI VLX-Seek: 3B 细粒度感知 VLM 架构
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/om-ai-vlx-seek-vlm-3b-fine-grained-perception-2026.md`
 
@@ -4584,7 +4634,7 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.056 FLUX 3 — Black Forest Labs 多模态流模型
+## Ch17.057 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -4646,7 +4696,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.057 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.058 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -4688,7 +4738,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.058 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.059 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
@@ -4731,7 +4781,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.059 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+## Ch17.060 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
@@ -4768,7 +4818,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.060 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.061 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4812,7 +4862,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.061 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.062 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4857,7 +4907,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.062 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.063 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4885,7 +4935,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.063 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
+## Ch17.064 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
 
 > 📊 Level ⭐⭐⭐ | 2.5KB | `entities/douyin-dme-multimodal-embedding-multimodal-retrieval.md`
 
@@ -4915,7 +4965,7 @@ DME 代表多模态表征从「纯检索排序信号」向「承载非对称语�
 
 ---
 
-## Ch17.064 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
+## Ch17.065 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md`
 
@@ -4941,7 +4991,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.065 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
+## Ch17.066 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
 
 > 📊 Level ⭐⭐⭐ | 2.2KB | `entities/eccv26-oral人物不能变姿势要对齐风格还得一致dyref突破多参考约束下的图像生成难题.md`
 
@@ -4965,7 +5015,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.066 Qwen-Image-3.0 — 落字成画，字字如印
+## Ch17.067 Qwen-Image-3.0 — 落字成画，字字如印
 
 > 📊 Level ⭐⭐⭐ | 1.4KB | `entities/qwen-image-30落字成画字字如印.md`
 
@@ -4987,7 +5037,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.067 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.068 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -5111,7 +5161,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.068 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.069 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

@@ -9,7 +9,7 @@ Explicit vs. Implicit in the Age of Intelligences — Le secrétaire de Fernand 
 
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](../ch03/085-claude-code.html)
-- [Agent Harness Architecture Design Production Guide](../ch05/043-agent-harness.html)
+- [Agent Harness Architecture Design Production Guide](../ch05/066-agent-harness.html)
 - [Three Rag Architectures Classic Graph Agentic](../ch04/298-agentic.html)
 - [Protocol H Hierarchical Agentic Rag Enterprise](../ch04/298-agentic.html)
 - [How Ai Agent Memory Works](../ch04/216-how-ai-agent-memory-works.html)
