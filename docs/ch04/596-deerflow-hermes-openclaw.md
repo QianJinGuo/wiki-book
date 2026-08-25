@@ -13,7 +13,7 @@
 ## 相关实体
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](../ch03/099-hermes-agent.html)
 - [Openclaw Hermes Source Code Agent Architecture Review](../ch01/418-openclaw-hermes.html)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/066-harness-engineering.html)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/050-harness-engineering.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch06/023-hermes-agent-vs-openclaw.html)
 - [Hermes Agent Deep Dive Alibaba](../ch03/099-hermes-agent.html)
 

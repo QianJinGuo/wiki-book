@@ -105,7 +105,7 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/006-agent.html)
 
 ## ## 相关实体
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/127-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/128-ai-coding.html)
 
 ---
 

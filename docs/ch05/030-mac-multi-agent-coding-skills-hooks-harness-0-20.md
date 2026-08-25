@@ -157,7 +157,7 @@
 - MAC = **预定义 Skills + 触发式 Hooks**（工程师自定义 SOP + 自动化机制）
 - 共同点：都强调"流程 = 数据"——workflow 是 skill 文件，hooks 是 code
 
-### vs [Agent Harness 架构](ch05/043-agent-harness.html)
+### vs [Agent Harness 架构](ch05/066-agent-harness.html)
 - 7 层 harness 模型 = 抽象框架
 - MAC = "**Skills 概率层 + Hooks 确定性层**"——harness 设计的**关键分层原则**
 - 共同点：都把 harness 视为多层叠加
@@ -192,7 +192,7 @@
 - [wow-harness v3](ch05/091-harness.html) —— 跨 session 治理
 - [高德 AI-Native 生产线](ch05/022-ai-native.html) —— 企业级 R&D 生产线
 - [Claude Code Dynamic Workflows](../ch09/107-claude-code-dynamic-workflows.html) —— 动态工作流
-- [Agent Harness 架构](ch05/043-agent-harness.html) —— 7 层模型
+- [Agent Harness 架构](ch05/066-agent-harness.html) —— 7 层模型
 - [Rein](../ch03/006-agent.html) —— 单 agent 架构
 - [Kimi Work](../ch01/737-codex.html) —— 本地 Agent
 

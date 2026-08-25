@@ -121,7 +121,7 @@ Jagged Frontier 的存在意味着 AI 和人类的能力域天然互补。管理
 Cochrane 案例的核心教训：追求 100% 自动化往往是错误的目标。GPT-4.1 两天完成 12 work-years 的系统性综述，即使有 <1% 的边缘错误，相比人类同行已经产生质的飞跃。**对于大量知识工作，98% 准确率+人类审核比 100% 准确率但无 AI 辅助更有实用价值**——前提是正确评估边缘 case 的实际影响。当你的业务流程中 AI 能处理的部分已经显著优于人类，停滞等待"完美 AI"反而是最差策略。
 
 ## 相关实体
-- [Ai Job Interview Model Evaluation Mollick](../ch05/110-ai.html)
+- [Ai Job Interview Model Evaluation Mollick](../ch05/111-ai.html)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 - [Management As Ai Superpower Mollick](../ch01/679-management-as-ai-superpower.html)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)

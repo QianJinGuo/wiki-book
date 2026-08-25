@@ -75,7 +75,7 @@
 
 ### 1. 从自由生成到约束执行：AI 工程化的范式转折
 
-Vibe Coding 代表的是一种"高自由度、高依赖人工审查"的 AI 使用模式——AI 生成大量代码，开发者审查、修改、合并。但在维护性工程场景中，这种模式失效了：升级涉及大量跨文件的协调修改，任何一处遗漏都会导致编译失败或运行异常，人的逐行审查成本变得无法承受。[Harness Engineering](ch05/066-harness-engineering.html) 提出的"构建约束先行"策略，本质上是把 AI 的工作方式从"自由生成→人工纠偏"转变为"预设边界→自动执行→自动验证"。小米的 JDK 升级案例是该范式转型的首个完整实证——它证明了在正确的约束体系内，AI 的可靠性能从"辅助工具"提升到"可信任的执行者"。
+Vibe Coding 代表的是一种"高自由度、高依赖人工审查"的 AI 使用模式——AI 生成大量代码，开发者审查、修改、合并。但在维护性工程场景中，这种模式失效了：升级涉及大量跨文件的协调修改，任何一处遗漏都会导致编译失败或运行异常，人的逐行审查成本变得无法承受。[Harness Engineering](ch05/050-harness-engineering.html) 提出的"构建约束先行"策略，本质上是把 AI 的工作方式从"自由生成→人工纠偏"转变为"预设边界→自动执行→自动验证"。小米的 JDK 升级案例是该范式转型的首个完整实证——它证明了在正确的约束体系内，AI 的可靠性能从"辅助工具"提升到"可信任的执行者"。
 
 ### 2. 维护性工程是 AI Agent 的理想场景
 
@@ -117,10 +117,10 @@ AI 的上下文窗口有限，一次性输入所有约束和参考信息会导�
 
 ## 相关实体
 
-- → [Harness Engineering](ch05/066-harness-engineering.html) — 本文是该方法论在维护性工程场景的完整实证
+- → [Harness Engineering](ch05/050-harness-engineering.html) — 本文是该方法论在维护性工程场景的完整实证
 - → [Agent Skill 规范、构建与设计模式](../ch04/614-agent-skill.html) — jdk-upgrade Skill 的设计与渐进式披露机制
-- → [Vibe Coding 与 AI 软件工程](../ch04/800-vibe-coding-ai.html) — Vibe Coding 概念背景，与本案例的"约束 vs 自由"对比
-- → [腾讯 Harness Engineering 团队实践](ch05/066-harness-engineering.html) — 同一方法论在不同组织的实践对比
+- → [Vibe Coding 与 AI 软件工程](../ch04/801-vibe-coding-ai.html) — Vibe Coding 概念背景，与本案例的"约束 vs 自由"对比
+- → [腾讯 Harness Engineering 团队实践](ch05/050-harness-engineering.html) — 同一方法论在不同组织的实践对比
 - → [ScarfBench：企业 Java 框架迁移 AI 评测](../ch04/377-ai-agent.html) — 企业级迁移场景的基准评测，与本案例互补
 - → [技能治理与 AI 注册中心](../ch04/350-skill.html) — Skill 的注册发现与版本管理机制
 - → [Regression Tax：技能如何损害 LLM Agent](../ch03/077-skills.html) — 缺乏反馈闭环导致的技能退化问题，与本案例的闭环设计形成对照

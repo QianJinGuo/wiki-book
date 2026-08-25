@@ -7,12 +7,12 @@
 ## 相关实体
 - [Anthropic 14 个 Agent Skills 设计模式](ch04/315-anthropic-agent.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](ch04/612-anthropic-google-agent-skills.html)
-- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/968-skills-anthropic-openai-comparison-frontend-design.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/634-claude-managed-agents.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1594-anthropic.html)
+- [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/969-skills-anthropic-openai-comparison-frontend-design.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](ch04/635-claude-managed-agents.html)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch01/1609-anthropic.html)
 - [Agent Skill 设计模式](ch04/033-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1214-claude.html)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/085-claude-code.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/085-claude-code.html)
@@ -33,7 +33,7 @@
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Anthropic Computer Use 最佳实践](../ch01/1216-anthropic-computer-use.html)
+- [Anthropic Computer Use 最佳实践](../ch01/1218-anthropic-computer-use.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/085-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/091-harness.html)
 

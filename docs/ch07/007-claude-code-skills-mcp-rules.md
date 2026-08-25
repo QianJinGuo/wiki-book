@@ -155,10 +155,10 @@ Skills 有两种执行模式，**Inline 是默认模式**，Fork 需要 Skill �
 
 - [Claude Code 架构解析：从 Skill 调用到 Prompt Cache](../ch03/085-claude-code.html)
 - [Anthropic MCP 最新博客：Token 成本解法 + Tool Search](ch07/017-anthropic-mcp.html)
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/066-harness-engineering.html)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/050-harness-engineering.html)
 - [Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/075-claude-code-agent.html)
 - [Claude Code Governance：软规则与项目级行为规范](../ch03/085-claude-code.html)
-- [Agent Harness Context Management：Working Set 策略](../ch05/043-agent-harness.html)
+- [Agent Harness Context Management：Working Set 策略](../ch05/066-agent-harness.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)

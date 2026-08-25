@@ -36,7 +36,7 @@
 
 ### 工具链与架构决策
 
-面向特赞这类企业场景，工具选型遵循 CLI／MCP／Skill 的三层决策框架：Skill 封装创意方法论（brief 拆解、风格迁移、审核 checklist 等流程经验），MCP 治理外部系统接入（DAM、版权库、审核 API 的发现、授权与审计），CLI 负责在具体运行环境批量执行。生产级数据、审批与审计诉求指向 MCP-like gateway，而非裸 CLI。这套分层正对应 GEA 架构中 Context + Orchestration 的重点：编排 Agent 网络，而非建造单一超级 Agent，也与 [Agent 生产级 Harness 工程实践](../ch05/043-agent-harness.html) 的治理取向一致。
+面向特赞这类企业场景，工具选型遵循 CLI／MCP／Skill 的三层决策框架：Skill 封装创意方法论（brief 拆解、风格迁移、审核 checklist 等流程经验），MCP 治理外部系统接入（DAM、版权库、审核 API 的发现、授权与审计），CLI 负责在具体运行环境批量执行。生产级数据、审批与审计诉求指向 MCP-like gateway，而非裸 CLI。这套分层正对应 GEA 架构中 Context + Orchestration 的重点：编排 Agent 网络，而非建造单一超级 Agent，也与 [Agent 生产级 Harness 工程实践](../ch05/066-agent-harness.html) 的治理取向一致。
 
 ## 实践启示
 
@@ -49,12 +49,12 @@
 
 ## 相关实体
 
-- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/1102-agent-ai.html)
-- [CUGA: IBM Research Enterprise Agent Harness](../ch05/043-agent-harness.html)
+- [当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈](../ch01/1104-agent-ai.html)
+- [CUGA: IBM Research Enterprise Agent Harness](../ch05/066-agent-harness.html)
 - [CLI、MCP 和 CLI+Skill，应该如何选？](ch04/350-skill.html)
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](ch04/526-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [Claude Managed Agents 新更新"专属云"模式：把Agent的手放回企业内部](ch04/634-claude-managed-agents.html)
-- [Agent 生产级 Harness 工程实践](../ch05/043-agent-harness.html)
+- [Claude Managed Agents 新更新"专属云"模式：把Agent的手放回企业内部](ch04/635-claude-managed-agents.html)
+- [Agent 生产级 Harness 工程实践](../ch05/066-agent-harness.html)
 - [企业级 Agent 编排](ch04/624-agent-orchestration.html)
 - [AI 原生公司转型路径](../ch05/022-ai-native.html)
 

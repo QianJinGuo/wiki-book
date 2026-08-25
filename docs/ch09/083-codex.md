@@ -106,7 +106,7 @@ Codex 的五层架构可以映射到人类组织的治理层级：
 - **安全不依赖记忆**：安全策略编码在 hooks/ 中，不会因忘记在提示词中提及而被绕过
 - **能力可编排**：Agent 的能力通过配置组合而非临时代码定义
 
-这与 [Harness Engineering](../ch05/066-harness-engineering.html) 的"工程化 AI 协作"理念一脉相承。
+这与 [Harness Engineering](../ch05/050-harness-engineering.html) 的"工程化 AI 协作"理念一脉相承。
 
 ### Hooks 层的安全价值被低估
 
@@ -134,8 +134,8 @@ Codex 的五层架构可以映射到人类组织的治理层级：
 
 - [Codex AGENTS.md 配置实践](../ch01/737-codex.html)
 - [古法程序员 Codex 三层 Skill 架构](../ch01/737-codex.html)
-- [Harness Engineering 实践](../ch05/066-harness-engineering.html)
-- [Agent Harness 上下文管理](../ch05/043-agent-harness.html)
+- [Harness Engineering 实践](../ch05/050-harness-engineering.html)
+- [Agent Harness 上下文管理](../ch05/066-agent-harness.html)
 - [Skill 驱动开发](../ch03/077-skills.html)
 
 ## 来源

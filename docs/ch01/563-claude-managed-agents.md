@@ -119,7 +119,7 @@ Agent SDK（`@anthropic-agents/sdk`）和 Managed Agents 解决的是同一类�
 
 ## Related
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html) — Claude Code 的本地 Harness 架构
-- [Agent Harness 上下文管理：工作集视角](../ch05/043-agent-harness.html) — 托管 Harness 与本地 Harness 的上下文管理对比
+- [Agent Harness 上下文管理：工作集视角](../ch05/066-agent-harness.html) — 托管 Harness 与本地 Harness 的上下文管理对比
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Managed Agents 的 Harness 工程背景
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-developer-guide.md)
 - [PM 视角原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-pm-jess-yan-managed-agents.md)

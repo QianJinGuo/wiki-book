@@ -49,7 +49,7 @@ MirrorCode 填补了 [Agent 评估基准](https://github.com/QianJinGuo/wiki/blo
 
 - [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
 - [LLM 基准全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-benchmark-landscape.md)
-- [Claude Opus 4.7](../ch01/1212-claude.html)
+- [Claude Opus 4.7](../ch01/1214-claude.html)
 - [Agentic RL 长时程实践](../ch04/314-agentic-rl.html)
 - [长时程 Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md)
 - [编码基准 reward hacking](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor-reward-hacking-coding-benchmarks.md)

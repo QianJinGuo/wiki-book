@@ -89,7 +89,7 @@ Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多�
 ### 相关实体
 
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Ai Job Interview Model Evaluation Mollick](../ch05/110-ai.html)
+- [Ai Job Interview Model Evaluation Mollick](../ch05/111-ai.html)
 - [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/632-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [Youre Building Agent Security In The Wrong Order](../ch03/006-agent.html)

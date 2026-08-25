@@ -2,31 +2,11 @@
 
 ## Ch11.217 构建 Serverless A2A 网关：Agent 发现、路由与访问控制
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md`
+> 📊 Level ⭐⭐ | 6.4KB | `entities/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md`
 
 # 构建 Serverless A2A 网关：Agent 发现、路由与访问控制
 
 > 本文基于 AWS Machine Learning Blog 的技术文章整理。原文介绍了如何在 AWS 上构建一个 serverless 的 Agent-to-Agent (A2A) 网关，实现 agent 的注册、发现、路由和访问控制，支持异构环境（AWS、非 AWS 云、混合环境）下的 agent 互联。
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("构建 Serverless A2A 网关：Agent 发…"))
-    背景与问题
-    三层架构
-      管理层（Management Layer）
-      控制层（Control Layer）
-      执行层（Execution Layer）
-    A2A 协议端点
-    安全考量
-      后端信任模型
-      Amazon Bedrock AgentCor…
-      私有部署
-    部署
-    相关实体
-```
 
 ## 背景与问题
 
@@ -39,7 +19,7 @@ mindmap
 
 结果是：新 agent 工作流上线慢、安全风险高、运维开销随 agent 数量平方增长。
 
-网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](../ch04/648-agentic.html)、[Lambda](../ch04/444-agentrun.html)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
+网关模式通过在 agent 前面放置单一入口点来解决这个问题，无论 agent 运行在 [ECS](../ch04/298-agentic.html)、[Lambda](../ch04/005-agentrun.html)、Bedrock AgentCore Runtime、非 AWS 云还是混合环境。
 
 ## 三层架构
 
@@ -74,6 +54,7 @@ mindmap
 网关支持 A2A 协议规范中的两种 binding：
 
 **A2A Native 端点**（JSON-RPC）：
+
 - `GET /agents/{agentId}/.well-known/agent-card.json` — 获取 agent 能力
 - `POST /agents/{agentId}` — 发送消息（buffered response）
 - `POST /agents/{agentId}` with `SendStreamingMessage` — SSE 流式响应
@@ -113,10 +94,10 @@ cd terraform && terraform apply
 
 ## 相关实体
 
-- [Agentic Overlays：从 REST 到 A2A 的企业转型](../ch04/648-agentic.html) — REST → A2A 过渡的互补方案
-- [Alibaba Cloud AgentRun 多 Agent A2A](../ch04/444-agentrun.html) — 不同云上的 A2A 实现
-- [AWS/Cisco A2A 安全方案](../ch04/030-ai-agent.html) — A2A 安全治理生态
-- [LangGraph A2A 对抗 Agent 团队](../ch04/202-langgraph.html) — A2A 协议的应用示例
+- [Agentic Overlays：从 REST 到 A2A 的企业转型](../ch04/298-agentic.html) — REST → A2A 过渡的互补方案
+- [Alibaba Cloud AgentRun 多 Agent A2A](../ch04/005-agentrun.html) — 不同云上的 A2A 实现
+- [AWS/Cisco A2A 安全方案](../ch04/377-ai-agent.html) — A2A 安全治理生态
+- [LangGraph A2A 对抗 Agent 团队](../ch04/271-langgraph.html) — A2A 协议的应用示例
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md)
 

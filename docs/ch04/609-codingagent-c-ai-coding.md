@@ -61,8 +61,8 @@
 ## 相关链接
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/end-to-end-codingagent-design-taobao-subsidy-2026-08-03.md)
-- 姊妹篇（大淘宝技术天猫 AI Coding 实践系列）：[场景营销前端 AI Coding — 从问题到方案](../ch05/127-ai-coding.html)、[知识基座：让"AI 越用越懂业务"的团队经验实践](../ch05/127-ai-coding.html)、[AI Native 视觉稿还原](../ch05/022-ai-native.html)
-- 相关主题：[Harness Engineering 让 Coding Agent 可靠完成长程任务](../ch05/066-harness-engineering.html)、[面向 Skills 编程：大淘宝企业购 5 阶段演进](../ch03/077-skills.html)
+- 姊妹篇（大淘宝技术天猫 AI Coding 实践系列）：[场景营销前端 AI Coding — 从问题到方案](../ch05/128-ai-coding.html)、[知识基座：让"AI 越用越懂业务"的团队经验实践](../ch05/128-ai-coding.html)、[AI Native 视觉稿还原](../ch05/022-ai-native.html)
+- 相关主题：[Harness Engineering 让 Coding Agent 可靠完成长程任务](../ch05/050-harness-engineering.html)、[面向 Skills 编程：大淘宝企业购 5 阶段演进](../ch03/077-skills.html)
 
 ---
 

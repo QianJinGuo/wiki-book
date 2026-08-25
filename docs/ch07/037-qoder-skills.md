@@ -94,7 +94,7 @@
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](ch07/019-hermes-skill.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/033-agent-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [Thin Harness Fat Skills](../ch05/102-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/103-thin-harness-fat-skills-ai.html)
 - [Code Intelligence Changelog](../ch04/600-code-intelligence-changelog.html)
 
 ---

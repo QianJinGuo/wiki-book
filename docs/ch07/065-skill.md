@@ -73,7 +73,7 @@
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/315-anthropic-agent.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/033-agent-skills.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](ch07/037-qoder-skills.html)
-- [Thin Harness Fat Skills](../ch05/102-thin-harness-fat-skills-ai.html)
+- [Thin Harness Fat Skills](../ch05/103-thin-harness-fat-skills-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ---

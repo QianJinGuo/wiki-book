@@ -76,7 +76,7 @@ HF 官方博客的 Inkling 发布页补充了**部署侧完整规格**（互补�
 
 ## 行业背景
 
-Thinking Machines Lab（估值约 500 亿美元）由前 OpenAI CTO Mira Murati、OpenAI 强化学习核心人物 John Schulman 以及 PyTorch 创始人 Soumith Chintala 联合创立。参见 [Neolab 浪潮分析](../ch05/110-ai.html)。
+Thinking Machines Lab（估值约 500 亿美元）由前 OpenAI CTO Mira Murati、OpenAI 强化学习核心人物 John Schulman 以及 PyTorch 创始人 Soumith Chintala 联合创立。参见 [Neolab 浪潮分析](../ch05/111-ai.html)。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinking-machines-inkling-975b-moe-open-weights-2026.md)
 

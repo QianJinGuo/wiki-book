@@ -44,7 +44,7 @@
 
 - [What the design-to-code loop unlocks](../ch09/006-design-to-code.html)
 - [Obsidian + Claude Code 集成指南](../ch09/156-obsidian-claude-code-integration-guide.html)
-- [柚漫剧 AI全流程提效拆解](../ch05/110-ai.html)
+- [柚漫剧 AI全流程提效拆解](../ch05/111-ai.html)
 
 ---
 

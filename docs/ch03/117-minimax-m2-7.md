@@ -13,7 +13,7 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 ## 相关实体
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/091-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/091-harness.html)
-- [Harness Engineering 第三代工程范式](../ch05/066-harness-engineering.html)
+- [Harness Engineering 第三代工程范式](../ch05/050-harness-engineering.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/091-harness.html)
 - [Cursor Harness Model Production Floor](../ch01/451-cursor-harness-model-production-floor.html)
 

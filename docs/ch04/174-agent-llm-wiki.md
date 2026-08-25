@@ -79,7 +79,7 @@
 
 ## 与既有实体的关系
 
-- 高德信息业务中心系列：本文与 [高德 AI Native 数据 Agent（NL2SQL）](ch04/469-data-agent.html)（#102，v=72）同一团队不同主题——数据 Agent 解决「查数据」，内容数字员工解决「查证据」；与 [CodeWiki](../ch01/1449-codewiki-llm.html)（代码知识库）互补——CodeWiki 是「代码 Wiki」层实现，本文给出它在上层工作台中的定位（实现导航）
+- 高德信息业务中心系列：本文与 [高德 AI Native 数据 Agent（NL2SQL）](ch04/469-data-agent.html)（#102，v=72）同一团队不同主题——数据 Agent 解决「查数据」，内容数字员工解决「查证据」；与 [CodeWiki](../ch01/1451-codewiki-llm.html)（代码知识库）互补——CodeWiki 是「代码 Wiki」层实现，本文给出它在上层工作台中的定位（实现导航）
 - RCA 对比：[快手 RCA Agent](../ch03/006-agent.html)（证据金字塔/Multi-Agent/告警噪声）与本文（RCA 五步 + 五类闸 + 证据信封）是两套独立框架——快手侧重排障 Agent 架构与防幻觉，本文侧重证据链组织与可复核输出结构
 - 知识工程：[Hermes Wiki 九步自生长](../ch01/291-hermes.html) 是个人 wiki 实践，本文 LLM Wiki 是企业知识场景四阶段（筛选/冲突/颗粒度/写回边界）——同一思路不同约束域
 - 证据导向：[腾讯知识 Harness](../ch05/091-harness.html) 与 [skill 安全](../ch01/390-trail-of-bits-skill-scanner-bypass.html) 同为「证据优先」工程哲学的实例

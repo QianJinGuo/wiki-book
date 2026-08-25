@@ -65,7 +65,7 @@ Seed 2.1 Pro 接入 Claude Code 框架的过程展示了**模型即插即用（p
 - [Claude Code Agent Engineering](../ch03/075-claude-code-agent.html)
 - [Coding Agent Quality Defense](../ch04/410-ai-coding-agent.html)
 - [Claude Code 记忆系统](../ch03/085-claude-code.html)
-- [Harness Engineering](../ch05/066-harness-engineering.html)
+- [Harness Engineering](../ch05/050-harness-engineering.html)
 - [Claude Code Skills Guide](../ch07/033-claude-code-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我把seed-21-pro塞进claude-code让它修我自己产品的bug.md)

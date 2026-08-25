@@ -132,7 +132,7 @@ PromotionGate 的门禁规则体现了几项关键的工程权衡：
 - [企业级 Skill 8 块最小骨架 + 8 条 checklist](ch04/350-skill.html) — 同作者 winty，侧重 Skill 本身的设计规范
 - [Skill Hell：Agent Skill 工程落地](ch04/461-skill-hell-agent-skill.html) — Skill 工程化的实践挑战
 - [Skill 编排的 6 种依赖关系](ch04/350-skill.html)
-- [Agent Harness 生产化](../ch05/043-agent-harness.html)
+- [Agent Harness 生产化](../ch05/066-agent-harness.html)
 - **Agent Skill 治理框架**
 - **AI 评估框架与 Harness**
 - **AI Skill 的 DevOps 管线**

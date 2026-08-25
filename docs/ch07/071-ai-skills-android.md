@@ -66,8 +66,8 @@ AI + Skills 模式在 154 个服务的规模化迁移中节省 **25 小时**（�
 
 - [Agent Skill Writing Guide](../ch04/614-agent-skill.html) — Skill 编写方法论
 - [Hermes Skill System](ch07/019-hermes-skill.html) — Hermes 技能系统
-- [Harness Engineering](../ch05/066-harness-engineering.html) — Harness 工程范式
-- [Thin Harness, Fat Skills](../ch05/102-thin-harness-fat-skills-ai.html) — 薄 Harness 厚 Skills 架构
+- [Harness Engineering](../ch05/050-harness-engineering.html) — Harness 工程范式
+- [Thin Harness, Fat Skills](../ch05/103-thin-harness-fat-skills-ai.html) — 薄 Harness 厚 Skills 架构
 - [如何将经验编码为 Skills](../ch03/077-skills.html) — 经验 → Skills 转化方法论
 - [Agent Skills vs 低代码平台](../ch04/033-agent-skills.html) — Skills 与低代码对比
 - [Skill Craft](ch07/062-skill-craft-claude-skill.html) — Skill 工艺学

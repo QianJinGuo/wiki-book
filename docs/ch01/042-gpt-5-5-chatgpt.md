@@ -22,7 +22,7 @@
 
 ### 长上下文 × 编程：双重护城河的真正落点
 把两个维度叠起来看，GPT-5.5 的护城河不是单点能力，而是「长上下文 × 编程」的组合效应：MRCR v2 在 512K-1M 区间 74.0% vs 32.2%，同代模型差距 2.3 倍；Graphwalks BFS 在百万 token 材料里做图遍历，从 GPT-5.4 的 9.4% 跳到 45.4%。长上下文过去两年是 Gemini 的护城河，GPT-5.5 第一次把 1M 窗口的可用性拉到能与编程能力挂钩的水平。
-对 RAG 与 Agent 工作流，这直接改变了架构假设：百万 token 可用性意味着「整个代码库 / 整个文档库一次性喂入」成为可行选项，信息组织（如何在超长上下文中排定信息优先级）取代「检索相关片段」成为新的工程重心；相关讨论可参见 [长上下文的注意力坍缩](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)与 [Agent Harness 生产实践](../ch05/043-agent-harness.html)。
+对 RAG 与 Agent 工作流，这直接改变了架构假设：百万 token 可用性意味着「整个代码库 / 整个文档库一次性喂入」成为可行选项，信息组织（如何在超长上下文中排定信息优先级）取代「检索相关片段」成为新的工程重心；相关讨论可参见 [长上下文的注意力坍缩](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)与 [Agent Harness 生产实践](../ch05/066-agent-harness.html)。
 
 ### 编程战场：在 Claude Code 的主场打攻防
 Terminal-Bench 是 Stanford/Hugging Face/Anthropic 相关团队的长命令行任务基准，过去一年是 Anthropic 系列模型的主场。GPT-5.5 从 GPT-5.4 的 75.1% 跃到 82.7%，同一数据集上领先 Opus 4.7 达 13 个百分点；发布稿强调的「stays on task significantly longer」「context across large systems」「significantly fewer tokens」四点，逐一对应 Claude Code 的核心卖点，叙事结构就是在和 Claude Code 正面掰。
@@ -45,7 +45,7 @@ Apollo Research 的 Impossible Coding Task 给模型一个实际上无解的编�
 
 ## 相关实体
 - [GPT-5.5 ProgramBench 首破：推理算力成为编程AI核心变量](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt-55-programbench-first-solve.md)
-- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/893-chatgpt.html)
+- [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](ch01/894-chatgpt.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-55来了我撤回了退订chatgpt的决定.md)
 

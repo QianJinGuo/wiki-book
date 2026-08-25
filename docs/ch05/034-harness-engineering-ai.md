@@ -78,10 +78,10 @@ OpenAI 的 3-7 人团队、5 个月、近 100 万行代码的实验，揭示了�
 - anthropic-claude-code — Anthropic的Code Agent实践（可参考 ）
 ## 相关实体
 - [Tencent Ai Team Knowledge Harness](ch05/091-harness.html)
-- [Harness Engineering Systematic Framework](ch05/066-harness-engineering.html)
-- [Harness Engineering](ch05/066-harness-engineering.html)
-- [Harness Engineering Comprehensive Guide Conardli](ch05/066-harness-engineering.html)
-- [Harness Engineering Alibaba Java Case Study](ch05/066-harness-engineering.html)
+- [Harness Engineering Systematic Framework](ch05/050-harness-engineering.html)
+- [Harness Engineering](ch05/050-harness-engineering.html)
+- [Harness Engineering Comprehensive Guide Conardli](ch05/050-harness-engineering.html)
+- [Harness Engineering Alibaba Java Case Study](ch05/050-harness-engineering.html)
 
 ---
 

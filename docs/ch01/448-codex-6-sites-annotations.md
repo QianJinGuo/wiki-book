@@ -87,7 +87,7 @@
 - [Codex 自主赚钱](ch01/737-codex.html)
 - [Claude Code vs Codex 上下文架构](../ch03/085-claude-code.html)
 - [Meta Skill](../ch07/029-meta-skill.html)（Skill 2.0 抽象）
-- [扣子 3.0 协作系统](ch01/1422-3-0.html)（同类协作产品）
+- [扣子 3.0 协作系统](ch01/1424-3-0.html)（同类协作产品）
 - [Embabel](../ch07/025-embabel.html)（可解释+类型系统集成）
 
 ## 深度分析

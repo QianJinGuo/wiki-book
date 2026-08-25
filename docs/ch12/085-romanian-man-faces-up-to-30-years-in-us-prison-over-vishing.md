@@ -90,7 +90,7 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 
 ## 相关实体
 
-- [Npm Supply Chain Compromise Postmortem](../ch05/110-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/111-ai.html)
 - [Cloudflare Glasswing Mythos Security](ch12/031-mythos.html)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Ath Agent Trust Handshake Protocol](../ch03/006-agent.html)

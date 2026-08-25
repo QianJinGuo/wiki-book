@@ -22,7 +22,7 @@
 
 百度搭子此次升级的核心技术亮点是 Harness 引擎引入的"环境路由"机制。系统根据任务的计算需求、响应速度要求和数据安全等级，在云端沙箱、本地沙箱以及 Chat 模式之间自动选择合适的执行环境：需要高算力时调用云端资源，强调低延迟或数据安全时切换到本地环境。这种动态环境编排机制使任务平均耗时降低 20%，Token 利用率提升 25%。
 
-从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角分析，环境路由本质上是将执行环境的异构性从用户侧抽象掉，让 Agent 在统一语义层上运行，底层资源调度由框架自动完成。这与 [Agent Harness 上下文管理工作集](../ch05/043-agent-harness.html) 的设计思路一致——将基础设施的复杂性封装在引擎层，暴露给上层应用的始终是简洁的编程接口。
+从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角分析，环境路由本质上是将执行环境的异构性从用户侧抽象掉，让 Agent 在统一语义层上运行，底层资源调度由框架自动完成。这与 [Agent Harness 上下文管理工作集](../ch05/066-agent-harness.html) 的设计思路一致——将基础设施的复杂性封装在引擎层，暴露给上层应用的始终是简洁的编程接口。
 
 ### 企业版 Skill 接入标准：Agent 互联的桥梁架构
 
@@ -59,7 +59,7 @@
 - [LingBot-VA 具身原生模型](https://github.com/QianJinGuo/wiki/blob/main/entities/全球首个具身原生世界动作模型来了.md)
 - [MCP 协议设计](../ch07/017-anthropic-mcp.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Agent Harness 上下文管理工作集](../ch05/043-agent-harness.html)
+- [Agent Harness 上下文管理工作集](../ch05/066-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚百度搭子全面升级要让agent接住人类90以上的活.md)
 

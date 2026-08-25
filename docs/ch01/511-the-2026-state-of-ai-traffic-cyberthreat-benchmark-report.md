@@ -145,7 +145,7 @@ AI 驱动的凭证填充要求企业重新审视登录安全策略：
 
 ## 相关实体
 
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html) — Karpathy 对 AI 时代安全问题的讨论
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html) — Karpathy 对 AI 时代安全问题的讨论
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html) — Agent 架构中的安全考量
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html) — AI 工具化的安全影响
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — 企业级 Agent 部署的安全考量

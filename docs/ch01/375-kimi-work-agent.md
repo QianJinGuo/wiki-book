@@ -154,7 +154,7 @@
 - Kimi Work = **本地桌面 + 用户账号 + 真实文件**（**单桌面全场景**）
 - 共同点：都强调"AI 套上家"的工程范式
 
-### vs [Agent Harness 架构](../ch05/043-agent-harness.html)
+### vs [Agent Harness 架构](../ch05/066-agent-harness.html)
 - 7 层 harness 模型是抽象框架
 - Kimi Work + WebBridge 是具体落地实现
 - 文章强化："**Harness 决定一切**"——比模型能力重要
@@ -190,9 +190,9 @@
 ## 相关对照
 - [wow-harness v3](../ch05/091-harness.html) —— 协议层治理
 - [PilotDeck](../ch03/006-agent.html) —— 多项目隔离
-- [Agent Harness 架构](../ch05/043-agent-harness.html) —— 7 层 harness 模型
+- [Agent Harness 架构](../ch05/066-agent-harness.html) —— 7 层 harness 模型
 - [Rein](../ch03/006-agent.html) —— 4 模块代码架构
-- [Agent Harness 上下文管理](../ch05/043-agent-harness.html) —— 工作集视角
+- [Agent Harness 上下文管理](../ch05/066-agent-harness.html) —— 工作集视角
 - [Karpathy Vibe Coding → Agentic Engineering](../ch04/298-agentic.html) —— Vibe Coding 原始定义
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-codex-vibe-working-paradigm-shift.md)

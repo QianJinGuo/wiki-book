@@ -47,7 +47,7 @@ Anthropic 的 Harness 方法论体现了从问题诊断到机制设计的完整�
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/085-claude-code.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/479-anthropic-claude-code.html)
 - [Claude Code Founder Harness 100 Lines](../ch03/085-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/043-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](../ch05/066-agent-harness.html)
 
 ---
 

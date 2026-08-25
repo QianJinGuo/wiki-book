@@ -113,22 +113,22 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/824-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/491-your-first-ai-agent-should-do-one-thing-badly.html)
 - [The Bitter Lesson Versus The Garbage Can](../ch04/409-the-bitter-lesson-versus-the-garbage-can.html)
 - [Management As Ai Superpower](ch01/679-management-as-ai-superpower.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/066-agent-harness.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Co Existence And The End Of Co Intelligence](ch01/872-co-existence-and-the-end-of-co-intelligence.html)
+- [Co Existence And The End Of Co Intelligence](ch01/873-co-existence-and-the-end-of-co-intelligence.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Model Context Protocol](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)
 - [an opinionated guide to using ai right now](../ch09/099-an-opinionated-guide-to-using-ai-right-now.html)
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch01/1212-claude.html)
-- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/937-9.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](ch01/1214-claude.html)
+- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](ch01/938-9.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

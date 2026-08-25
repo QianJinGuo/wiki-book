@@ -189,7 +189,7 @@ Claude 在被限定到实际与任务相关的代码库部分时工作得最好�
 
 ## 与 Agent Harness Engineering 的关系
 
-参见 [Agent Harness 架构](../ch05/043-agent-harness.html)（AHE框架）。
+参见 [Agent Harness 架构](../ch05/066-agent-harness.html)（AHE框架）。
 
 AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景扩展点实现，两者互补。AHE 的"三层可观测"在大型代码库场景对应 LSP+Hooks 的调试能力。
 
@@ -239,21 +239,21 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 ## 相关实体
 - [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
 
-- [Feishu Aily Agent Lobster](../ch04/629-aily-agent.html)
+- [Feishu Aily Agent Lobster](../ch04/630-aily-agent.html)
 - [Colaos Listenhub Agency Native Organization Juzi](https://github.com/QianJinGuo/wiki/blob/main/entities/colaos-listenhub-agency-native-organization-juzi.md)
 - [Red Sequoia Ai Summit Agi Declaration](../ch01/477-agi.html)
 - [Hermes Self Improving Overview Winty](../ch01/291-hermes.html)
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md)
 - [100 年压缩到 100 天红杉资本这就是 Agi](../ch01/477-agi.html)
 - [Stripe Agent Economic Infrastructure Emily Sands](../ch03/006-agent.html)
-- [Pilotdeck Data派Thu 2026](../ch01/1130-20.html)
+- [Pilotdeck Data派Thu 2026](../ch01/1132-20.html)
 - [Four Sub Agent Patterns](../ch03/006-agent.html)
-- [A Guide To Which Ai To Use In The Agentic Era](../ch01/843-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
+- [A Guide To Which Ai To Use In The Agentic Era](../ch01/844-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
 - [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](../ch03/006-agent.html)
 - [Cloud Agent Development Environments](../ch03/006-agent.html)
 - [Volcengine Data Agent Product Overview](../ch04/469-data-agent.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/377-ai-agent.html)
-- [Emergent Collaboration Ai High Quality Decision Agent Room](../ch04/814-agent-room.html)
+- [Emergent Collaboration Ai High Quality Decision Agent Room](../ch04/815-agent-room.html)
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](../ch03/006-agent.html)
 - [Agent Guide Core Concepts Overview](../ch03/006-agent.html)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch01/140-hy3-preview.html)
@@ -262,7 +262,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Kimi Work Beta Foundation Model Company Advantage](../ch01/579-kimi.html)
 - [Agent Paradigm Evolution Feipeng Alibaba](../ch03/006-agent.html)
 - [Hermes Agent Long Running Governance Five Cards Ruofei](../ch03/099-hermes-agent.html)
-- [Agentic Rl Token In Token Out Done Right C6Aaa4](../ch04/760-agentic-rl-token-in-token-out-done-right.html)
+- [Agentic Rl Token In Token Out Done Right C6Aaa4](../ch04/834-agentic-rl-token-in-token-out-done-right.html)
 - [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](../ch03/006-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [Kimi Work 300 Agent Cluster Yin John Agi Hunt](../ch01/333-agi-hunt.html)

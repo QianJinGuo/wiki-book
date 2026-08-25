@@ -24,7 +24,7 @@ Agnes AI 于 2026 年 7 月发布新一代文本模型 Agnes-2.5-Flash，定位�
 
 Agnes-2.5-Flash 的"不限期免费"策略并非简单的价格战，而是对当前 AI Coding 市场定价体系的一次结构性冲击。当前市场格局中，Claude Pro 月费 $20、GitHub Copilot $10-39/月、Cursor Pro $20/月——主流工具的年使用成本在 $120-480 区间。Agnes 将同等甚至更优的 Coding 能力以零边际成本提供，迫使竞争对手重新审视定价策略。
 
-这一策略的风险在于可持续性：模型推理成本（特别是长上下文场景下的 token 消耗）是否能够通过其他变现渠道（如企业版、Agnes-2.5-Pro 旗舰模型）覆盖。Agnes 的定价赌注是：免费基础层吸引海量用户打磨产品，企业高级特性作为利润中心。这与 [AI Coding 评估](../ch05/127-ai-coding.html) 体系中提到的"先规模后变现"策略一致。
+这一策略的风险在于可持续性：模型推理成本（特别是长上下文场景下的 token 消耗）是否能够通过其他变现渠道（如企业版、Agnes-2.5-Pro 旗舰模型）覆盖。Agnes 的定价赌注是：免费基础层吸引海量用户打磨产品，企业高级特性作为利润中心。这与 [AI Coding 评估](../ch05/128-ai-coding.html) 体系中提到的"先规模后变现"策略一致。
 
 ### Coding 能力的竞争定位
 
@@ -38,7 +38,7 @@ Agnes-2.5-Flash 的"不限期免费"策略并非简单的价格战，而是对�
 
 ### Agnes Harness 的技术架构启示
 
-Agnes-2.5-Flash 的实际表现不仅来自模型本身的改进，更来自 **Agnes Harness**——一套将模型能力、工具调用和项目理解串联在一起的 Agent 系统。这一架构与 [Harness Engineering 2026 全景](../ch05/066-harness-engineering.html) 中描述的"模型性能与工程框架协同增益"趋势一致。
+Agnes-2.5-Flash 的实际表现不仅来自模型本身的改进，更来自 **Agnes Harness**——一套将模型能力、工具调用和项目理解串联在一起的 Agent 系统。这一架构与 [Harness Engineering 2026 全景](../ch05/050-harness-engineering.html) 中描述的"模型性能与工程框架协同增益"趋势一致。
 
 具体而言，Agnes Harness 在以下方面提供了差异化能力：
 
@@ -69,10 +69,10 @@ Agnes-2.5-Flash 定位为"日常主力模型"，而 Agnes-2.5-Pro 面向"专业�
 
 ## 相关实体
 
-- [AI Coding 评估](../ch05/127-ai-coding.html)
-- [AI Coding 入门指南](../ch05/127-ai-coding.html)
+- [AI Coding 评估](../ch05/128-ai-coding.html)
+- [AI Coding 入门指南](../ch05/128-ai-coding.html)
 - [Claude Code 深度架构分析](../ch03/085-claude-code.html)
-- [Harness Engineering 2026 全景](../ch05/066-harness-engineering.html)
+- [Harness Engineering 2026 全景](../ch05/050-harness-engineering.html)
 - [Claude Code 技能封装](../ch07/033-claude-code-skills.html)
 - [Anthropic 输出验证瓶颈](ch09/104-anthropic-8x.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

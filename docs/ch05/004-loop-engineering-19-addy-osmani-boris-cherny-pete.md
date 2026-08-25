@@ -55,17 +55,17 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 ## 相关实体
 
-- [Agent Harness Architecture](ch05/043-agent-harness.html)
+- [Agent Harness Architecture](ch05/066-agent-harness.html)
 - [Claude Code 深度分析](../ch03/085-claude-code.html)
-- [Harness Engineering](ch05/066-harness-engineering.html)
+- [Harness Engineering](ch05/050-harness-engineering.html)
 - [Agent Self-Improvement](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-addy-osmani-challengehub.md)
 
 ---
 
-- [loop engineering: 把反馈循环放进工程现场](ch05/123-loop-engineering.html)
-- [循环工程 (loop engineering) — 清华 2026 框架](ch05/123-loop-engineering.html)
+- [loop engineering: 把反馈循环放进工程现场](ch05/006-loop-engineering.html)
+- [循环工程 (loop engineering) — 清华 2026 框架](ch05/006-loop-engineering.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
@@ -352,11 +352,11 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 
 ### 与其他实体的关系
 
-- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch05/127-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
-- **Evaluator 部件**与 [Harness 架构](ch05/043-agent-harness.html)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
+- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](ch05/128-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
+- **Evaluator 部件**与 [Harness 架构](ch05/066-agent-harness.html)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
 - **State 部件**与 [Hermes Loop 架构](../ch04/311-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
 - **reviewer agent 不允许直接修复**与 [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)的"生成器-验证器分离"模式一致
-- **18 字段设计表**与 [agent-harness 12 components 7 decisions](ch05/043-agent-harness.html)的"Harness 完整部件清单"互补——Harness 是"环境内规则"，Loop 是"环境外循环节奏"
+- **18 字段设计表**与 [agent-harness 12 components 7 decisions](ch05/066-agent-harness.html)的"Harness 完整部件清单"互补——Harness 是"环境内规则"，Loop 是"环境外循环节奏"
 
 ### 关键独到判断
 
@@ -975,7 +975,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 ### 与已有来源的关系
 
 - **SRE 黄金信号映射**（本来源独家）补全了第 6 来源"4 预算上限"的可观测维度：第 6 来源给预算上限（量化的停），本来源给黄金信号（量化的观）——两者形成"可观→可控"闭环
-- **熔断器类比**（本来源独家）与 [Harness Engineering」](ch05/066-harness-engineering.html) 的"多层重试"直接衔接：Harness 的多层重试从"工程落地"侧实现了熔断，本来源从"架构设计"侧给出了理论映射
+- **熔断器类比**（本来源独家）与 [Harness Engineering」](ch05/050-harness-engineering.html) 的"多层重试"直接衔接：Harness 的多层重试从"工程落地"侧实现了熔断，本来源从"架构设计"侧给出了理论映射
 - **三层架构的"倒序施工法"**（本来源独家）与第 4 来源"7 天试点模板"形成开工顺序共识：第 4 来源给时间表，本来源给**必建顺序**——运行账本 > 验证接口 > 触发入口
 - **Daily CI 分流模板**（本来源第 7 项）与第 6 来源"CI 分流 Loop 模板"互补——第 6 来源是"AI 修复 CI"，本来源是"AI 分类 CI 失败+写 triage 文档"，对应第 6 来源"提醒型 Loop"的分类——两个模板合起来覆盖了 CI 流水线的"诊断→修复"完整链路
 

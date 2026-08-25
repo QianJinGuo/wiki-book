@@ -68,13 +68,13 @@ Manus 是工艺典范：几百行手工 system prompts、明确的工作流脚�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/824-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/189-karpathy-vibe-coding-agentic-engineering.html)
 - [Management As Ai Superpower](../ch01/679-management-as-ai-superpower.html)
 - [Claude Code And What Comes Next](../ch01/574-claude-code-and-what-comes-next.html)
 - [Your First Ai Agent Should Do One Thing Badly](ch04/491-your-first-ai-agent-should-do-one-thing-badly.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/254-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-framework-comparison.md)
 - [Knowledge Graph RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/knowledge-graph-rag.md)

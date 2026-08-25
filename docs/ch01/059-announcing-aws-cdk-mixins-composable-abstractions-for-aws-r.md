@@ -47,7 +47,7 @@ Vended log delivery in CloudFormation requires coordinating three resources — 
 - [Announcing Aws Cdk Mixins Composable Abstractions For Aws Re](../ch11/024-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using Velero Amazon Web Se](../ch11/020-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 - [Introducing Claude Platform On Aws](ch01/685-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
-- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/159-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
+- [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/160-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch11/020-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)

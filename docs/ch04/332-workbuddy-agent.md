@@ -42,7 +42,7 @@ Loop Engineering 关注任务如何被触发、连续执行、验证结果、记
 
 - [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md)
 - [Harness 即产品面](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
-- [WorkBuddy 产品框架](../ch05/043-agent-harness.html)
+- [WorkBuddy 产品框架](../ch05/066-agent-harness.html)
 - [WorkBuddy Skill 全拆解](../ch07/068-workbuddy-skill.html)
 - [Harness Loop 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-loop-architecture.md)
 - [上下文管理系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)

@@ -289,7 +289,7 @@ Coding Agent 干活
 - 高德 = **多 agent 协作**（Coding Agent + 监督 Agent + 质量门禁 Agent）
 - 共同点：都强调"边界"是工程化关键
 
-### vs [Agent Harness 架构](../ch05/043-agent-harness.html)
+### vs [Agent Harness 架构](../ch05/066-agent-harness.html)
 - 7 层 harness 模型 = 抽象框架
 - 高德 = "**工具定义、中间件和长期记忆三个模块贡献了最大的性能增益**" —— Harness Engineering 实证
 
@@ -349,9 +349,9 @@ Coding Agent 干活
 - [wow-harness v3](../ch05/091-harness.html) —— 跨 session 治理
 - [Kimi Work](../ch01/737-codex.html) —— 本地 Agent
 - [Rein](../ch03/006-agent.html) —— 单 agent 架构
-- [Agent Harness 架构](../ch05/043-agent-harness.html) —— 7 层模型
+- [Agent Harness 架构](../ch05/066-agent-harness.html) —— 7 层模型
 - [Microsoft Build 2026](../ch03/006-agent.html) —— 全栈 AI
-- [Agent Harness 上下文管理](../ch05/043-agent-harness.html) —— 工作集视角
+- [Agent Harness 上下文管理](../ch05/066-agent-harness.html) —— 工作集视角
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 

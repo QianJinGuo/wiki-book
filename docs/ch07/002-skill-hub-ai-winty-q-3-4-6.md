@@ -252,7 +252,7 @@ winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是�
 
 winty 将 Skill 定位在"个人侧"与"工具侧"之间，并称之为"组织能力层"。这个描述有深刻的架构含义：**Skill 是对组织流程经验的结构化编码，而非硬编码的规则或松散的 Prompt 集合**。
 
-[Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](../ch05/102-thin-harness-fat-skills-ai.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
+[Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](../ch05/103-thin-harness-fat-skills-ai.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
 
 ### 4. 从"个人聪明"到"组织默认聪明"：新人入职问题的元问题
 

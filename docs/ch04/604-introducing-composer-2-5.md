@@ -71,7 +71,7 @@ Composer 2.5 强调的"effort calibration"（模型对任务难度的判断和�
 ### 5. 双版本定价策略的价值
 Cursor 的快速/默认双版本策略提供了一个商业参考：当你的模型能力足够强时，可以用相同 intelligence 的前提做 pricing segmentation，创造新的收入维度。
 ## 相关实体
-- [Nomshub Cursor Remote Tunnel Sandbox Breakout Straiker](../ch05/110-ai.html)
+- [Nomshub Cursor Remote Tunnel Sandbox Breakout Straiker](../ch05/111-ai.html)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](ch04/410-ai-coding-agent.html)
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/091-harness.html)
 - [Understand Anything Code Knowledge Graph Lum Jike](https://github.com/QianJinGuo/wiki/blob/main/entities/understand-anything-code-knowledge-graph-lum-jike.md)

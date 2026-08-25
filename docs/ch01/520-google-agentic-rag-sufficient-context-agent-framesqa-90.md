@@ -121,7 +121,7 @@ Vanilla RAG 是 "retrieve-once-then-generate" 模式，面对需要跨数据源�
 - [Sufficient Context in RAG (Google Research)](https://research.google/blog/deeper-insights-into-retrieval-augmented-generation-the-role-of-sufficient-context/)
 - [Gemini Enterprise Agent Platform announcement](https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform)
 - [Cross-Corpus Retrieval docs](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/cross-corpus-retrieval)
-- [RAG 技术框架的演进方向](ch01/1286-rag.html)（同主题已有 entity）
+- [RAG 技术框架的演进方向](ch01/1288-rag.html)（同主题已有 entity）
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-agentic-rag-sufficient-context-agent-framesqa.md)
 
 ## 相关实体

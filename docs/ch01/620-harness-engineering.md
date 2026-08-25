@@ -52,7 +52,7 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 - **可回溯**针对不同失败类型（UI还原偏差、API测试失败、跨阶段重试浪费）设计了不同的SOP路径，而非统一用"日志搜索"兜底
 - **可度量**通过双层Hook（业务级CLI + 平台级Hook Engine）汇聚数据，实现了Token/成本、耗时、重试率、代码改动量的量化追踪
 
-这与[钉钉招聘Agent](../ch05/043-agent-harness.html)中"可审计的Agent行为日志"的需求一致——在AI执行关键业务链时，可观测性不是运维锦上添花，而是信任AI的工程前提。
+这与[钉钉招聘Agent](../ch05/066-agent-harness.html)中"可审计的Agent行为日志"的需求一致——在AI执行关键业务链时，可观测性不是运维锦上添花，而是信任AI的工程前提。
 
 ### 4. 知识库作为AI长期记忆的运作机制
 
@@ -80,8 +80,8 @@ SpecWorker的管线设计体现了一个核心工程判断：**AI工作流编排
 
 - [Agent落地真相](../ch03/006-agent.html)
 - [Agent配置模型](../ch04/350-skill.html)
-- [钉钉招聘Agent](../ch05/043-agent-harness.html)
-- [AgentCore旅行分配系统](../ch04/783-agentcore-harness.html)
+- [钉钉招聘Agent](../ch05/066-agent-harness.html)
+- [AgentCore旅行分配系统](../ch04/784-agentcore-harness.html)
 - [QoderWork Skills开发实践](../ch03/077-skills.html)
 - [淘宝数字人Agentic架构](../ch04/298-agentic.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)

@@ -70,11 +70,11 @@ llama.cpp 与 vLLM 的对比揭示了两种不同的设计哲学。vLLM 专为�
 
 ## 相关实体
 
-- [llama.cpp 部署](../ch11/167-llama-cpp-deployment.html) — llama.cpp 推理引擎的部署实践和性能优化
+- [llama.cpp 部署](../ch11/168-llama-cpp-deployment.html) — llama.cpp 推理引擎的部署实践和性能优化
 - [Graviton 推理](https://github.com/QianJinGuo/wiki/blob/main/entities/graviton-inference.md) — AWS Graviton 处理器上的 LLM 推理优化
-- [MoE 架构](ch01/1446-moe-architecture.html) — Mixture-of-Experts 模型架构的原理和优势
+- [MoE 架构](ch01/1448-moe-architecture.html) — Mixture-of-Experts 模型架构的原理和优势
 - [量化技术](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) — 模型量化方法及其对推理性能的影响
-- [投机解码](ch01/1214-spec.html) — Speculative Decoding 与 MTP 的技术对比
+- [投机解码](ch01/1216-spec.html) — Speculative Decoding 与 MTP 的技术对比
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — AI 推理基础设施的工程化实践框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mtp-加速推理最佳实践在亚马逊云科技中国区使用-llamacpp-部署-qwen36-的实测指南.md)

@@ -132,7 +132,7 @@ Sean Ellis 测试（>40% 用户回答"如果不能继续使用会非常失望"�
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/033-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1212-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1214-claude.html)
 
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/085-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)

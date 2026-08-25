@@ -212,13 +212,13 @@ Claude Code 的六层记忆架构与软件工程中的权限模型高度对齐�
 ## 相关实体
 - [Claude Code Openclaw Memory Comparison](ch06/008-claude-code-openclaw-memory-comparison.html)
 - [Claude Code Openclaw Usage Ettin](../ch09/043-claude-code-openclaw-usage-ettin.html)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/066-harness-engineering.html)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/050-harness-engineering.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/479-anthropic-claude-code.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/085-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-openclaw-memory-comparison.md)
 
-- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/254-openclaw.html)
+- [从 openclaw 到 openhuman：私人 ai runtime 的雏形](../ch11/255-openclaw.html)
 
 ## 相关实体
 

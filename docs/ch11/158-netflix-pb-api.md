@@ -75,11 +75,11 @@ Graph Abstraction 通过 Data Gateway Control Plane 与 Netflix 大数据生态�
 Netflix 的 10M ops/sec + 毫秒级延迟 + 650TB 数据规模是特定业务需求驱动的。如果你的图场景 QPS 在 10K 级别，标准的 Neptune/JanusGraph 可能更经济。
 
 ## 相关实体
-- [High Throughput Graph Abstraction At Netflix](ch11/115-high-throughput-graph-abstraction-at-netflix-part-i.html)
+- [High Throughput Graph Abstraction At Netflix](ch11/114-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](ch11/104-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](ch11/103-netflix-nebula-archrules-java-archunit.html)
 
 ## 原文链接
 

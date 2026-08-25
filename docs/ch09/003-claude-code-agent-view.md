@@ -80,7 +80,7 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 
 ## 相关实体
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/066-agent-harness.html)
 - [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/085-claude-code.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch06/008-claude-code-openclaw-memory-comparison.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/084-obsidian-claude-code.html)
@@ -94,10 +94,10 @@ Agent View 上线前第三方社区已有一批多 Agent 管理工具（ Crystal
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch04/581-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1212-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1214-claude.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
-- [2026年最值得关注的15款开发者工具深度解读](../ch01/1588-15.html)
+- [2026年最值得关注的15款开发者工具深度解读](../ch01/1591-15.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

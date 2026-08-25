@@ -43,7 +43,7 @@ EchoGen 的双路径注入策略源于对主体信息构成的深刻理解：一
 
 EchoGen 对 CFG（Classifier-Free Guidance）的扩展反映了主体驱动生成中一个关键的实际需求：生成时需要在"主体保真度"与"文本对齐度"之间权衡。标准 CFG 只有一个引导强度系数（w），同时放大文本条件和无条件之间的差距。EchoGen 的双系数引导（文本 w_t、主体 w_s）让用户可以在推理时独立调节两个维度的控制强度。
 
-训练时的设计与此对应：以 10% 概率独立丢弃文本和丢弃主体条件，使模型学会在部分条件缺失的情况下正常生成。这不仅实现了推理时的动态控制切换，还使模型对条件扰动更具鲁棒性。这一设计思路与 [AI Coding 中的"违反就有后果"的闭环约束](../ch05/056-openspec.html) 有异曲同工之妙——都是通过在训练阶段引入"扰动"来提升系统的鲁棒性和可控性。
+训练时的设计与此对应：以 10% 概率独立丢弃文本和丢弃主体条件，使模型学会在部分条件缺失的情况下正常生成。这不仅实现了推理时的动态控制切换，还使模型对条件扰动更具鲁棒性。这一设计思路与 [AI Coding 中的"违反就有后果"的闭环约束](../ch05/057-openspec.html) 有异曲同工之妙——都是通过在训练阶段引入"扰动"来提升系统的鲁棒性和可控性。
 
 ### 与扩散模型效率优化的对比
 
@@ -69,9 +69,9 @@ EchoGen 的 5.2 秒推理延迟与 [SANA-Video 2.0](https://github.com/QianJinGu
 ## 相关实体
 
 - [SANA-Video 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/sana-video-2-hybrid-linear-attention-video-generation.md) — NVIDIA 的视频生成效率优化（扩散路线），与 EchoGen 的 VAR 路线形成对比
-- [MoE 架构](ch01/1446-moe-architecture.html) — 稀疏激活的架构效率路线，与 EchoGen 的范式效率路线互补
+- [MoE 架构](ch01/1448-moe-architecture.html) — 稀疏激活的架构效率路线，与 EchoGen 的范式效率路线互补
 - [量化技术](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) — 模型轻量化的另一维度，EchoGen 计划蒸馏至 0.1B 系列也属于轻量化范畴
-- [Speculative Decoding](ch01/1214-spec.html) — 推理加速方法，虽然用于 LLM，但其"推测 + 验证"的框架思路可以启发更多生成模型的加速设计
+- [Speculative Decoding](ch01/1216-spec.html) — 推理加速方法，虽然用于 LLM，但其"推测 + 验证"的框架思路可以启发更多生成模型的加速设计
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 从系统层面管理 AI 模型的质量-效率权衡
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/echogen-var-subject-driven-generation-iclr2026.md)
