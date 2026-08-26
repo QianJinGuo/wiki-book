@@ -51,9 +51,9 @@ Raven 不是孤立的 Agent，而是一条纵向栈的顶层：EverOS（开源 M
 ## 相关实体
 
 - [MemOS Hermes 记忆插件](../ch06/018-memos-hermes.html) — Hermes 的记忆插件系统，与 EverOS 记忆架构互补
-- [Mem0 vs WorkBuddy：Agent 记忆层对比](ch04/346-mem0-vs-workbuddy-agent.html) — 与 EverOS 的对比参考
+- [Mem0 vs WorkBuddy：Agent 记忆层对比](ch04/736-mem0-vs-workbuddy-agent.html) — 与 EverOS 的对比参考
 - [Agent 进化四阶段](../ch03/006-agent.html) — 阿里云的 Agent 进化框架，与 EverMind 的 L1-L4 可对照
-- [AgentScope Builder：企业级自进化 Agent Harness](ch04/803-self-evolving-agent.html) — 同为「自进化 Harness」定位的工业化对照
+- [AgentScope Builder：企业级自进化 Agent Harness](ch04/814-self-evolving-agent.html) — 同为「自进化 Harness」定位的工业化对照
 - [自进化 Agent 综述](ch04/289-self-evolving-agents.html) — 把 Raven 放进自进化 Agent 的学术谱系
 - [薄 Harness · 厚 Skills](../ch05/103-thin-harness-fat-skills-ai.html) — 「能力放技能库而非上下文」的架构范式，与 Raven 的技能库设计呼应
 

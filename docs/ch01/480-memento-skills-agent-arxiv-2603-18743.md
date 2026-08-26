@@ -10,7 +10,7 @@
 
 **核心洞察**：Memento-Skills 把经验固化成 **skill（技能包）**，而非原始轨迹。Skill 是有 `SKILL.md`、可执行脚本、辅助 prompt、declarative spec 的真正可复用工件——这让经验从不可见的隐式行为变成可审计、可版本化、可测试的显式资产。
 
-这与 [Context Engineering Three Memory Paradigms](../ch06/048-memory.html) 中描述的 RAG/MSA 等记忆范式形成鲜明对比：RAG 擅长精确回溯，但 skill 不是检索出来的，是**生成出来并固化下来的**。
+这与 [Context Engineering Three Memory Paradigms](../ch06/049-memory.html) 中描述的 RAG/MSA 等记忆范式形成鲜明对比：RAG 擅长精确回溯，但 skill 不是检索出来的，是**生成出来并固化下来的**。
 
 ## Memento-Skills 五步闭环
 
@@ -66,7 +66,7 @@ Biology/Humanities 提升最明显（可抽象程度高）。
 - GAIA：5 个 atomic skills → 41 个技能
 - HLE：5 个 atomic skills → 235 个技能（形成主题簇）
 
-技能库的增长模式很有意思：从少量通用 atomic skills 出发，通过 feedback 驱动分裂成专门化技能，最终形成有结构的主题簇。这与 [Memento Skills Agent Self Evolving](../ch04/500-memento-skills-agent.html) 描述的"将状态从 s_t 扩展为 x_t = (s_t, M_t)"的马尔可夫性重建在精神上一致——但 Memento-Skills 更强调技能作为一等公民的可维护性。
+技能库的增长模式很有意思：从少量通用 atomic skills 出发，通过 feedback 驱动分裂成专门化技能，最终形成有结构的主题簇。这与 [Memento Skills Agent Self Evolving](../ch04/502-memento-skills-agent.html) 描述的"将状态从 s_t 扩展为 x_t = (s_t, M_t)"的马尔可夫性重建在精神上一致——但 Memento-Skills 更强调技能作为一等公民的可维护性。
 
 ## 论文真正有价值的地方
 

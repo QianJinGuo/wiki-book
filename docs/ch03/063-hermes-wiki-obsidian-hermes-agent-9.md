@@ -230,15 +230,15 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [Karpathy LLM Wiki v2](../ch06/026-llm-wiki.html)（原始方法论）
   - [Karpathy LLM Wiki 第二大脑](../ch06/026-llm-wiki.html)
   - [Obsidian 工具概览](../ch06/028-obsidian.html)
-  - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/1009-claude-code-memory-setup-obsidian-graphify.html)
+  - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/1010-claude-code-memory-setup-obsidian-graphify.html)
 - **同 Hermes Agent 生态**：
   - [Hermes Skills + LLM Wiki 越用越懂你](../ch07/019-hermes-skill.html)（三层互相喂养）
   - [Hermes Agent 自进化机制源码解析](ch03/099-hermes-agent.html)
   - [Hermes Agent Memory System vs OpenClaw](../ch06/014-hermes-agent-memory.html)
 - **同上下文工程 / 记忆架构**：
   - [AI Coding Agent 记忆系统](../ch04/410-ai-coding-agent.html)
-  - [上下文工程三种记忆范式对比](../ch06/048-memory.html)
-  - [企业 AI 记忆 substrate 三层架构](../ch06/048-memory.html)
+  - [上下文工程三种记忆范式对比](../ch06/049-memory.html)
+  - [企业 AI 记忆 substrate 三层架构](../ch06/049-memory.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/obsidian-hermes-wiki-auto-growing-knowledge-network.md)
 

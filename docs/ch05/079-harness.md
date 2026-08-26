@@ -55,7 +55,7 @@ SSD 的工程取舍本质是给两类资产定价：spec、design doc、plan 只
 - [AI Coding 入门指南：如何更好地让 AI 真正帮你干活](ch05/128-ai-coding.html)
 - [Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch05/050-harness-engineering.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/050-harness-engineering.html)
-- [Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](../ch01/1216-spec.html)
+- [Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](../ch01/1217-spec.html)
 - [OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定](ch05/057-openspec.html)
 - [从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/128-ai-coding.html)
 

@@ -69,7 +69,7 @@ Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/088-claude-code-harness.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)

@@ -55,8 +55,8 @@
 
 ## 相关实体
 - [Servicenow Ui Is Dead Agent](../ch03/006-agent.html)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/526-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [The Ui Is Dead Long Live The Agent](ch04/526-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/528-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The Ui Is Dead Long Live The Agent](ch04/528-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/006-agent.html)
 - [Langchain Anatomy Agent Harness](../ch05/066-agent-harness.html)
 

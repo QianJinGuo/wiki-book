@@ -17,14 +17,14 @@
 
 ## 相关实体
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/006-agent.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/033-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/033-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/497-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/497-agent-skills.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](ch01/520-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
-- [Anthropic Google Agent Skills Design Patterns](../ch04/612-anthropic-google-agent-skills.html)
+- [Anthropic Google Agent Skills Design Patterns](../ch04/482-anthropic-google-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
 
-- [Design Md Google Stitch Voltagent Ai Design Agent](ch01/1104-agent-ai.html)
+- [Design Md Google Stitch Voltagent Ai Design Agent](ch01/1105-agent-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 

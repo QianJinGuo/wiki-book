@@ -2,7 +2,7 @@
 
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
-> 本章收录 **130 篇**实体，按深度递增排列。
+> 本章收录 **131 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 10 |
-| ⭐⭐ 工程师 | 需编程基础 | 118 |
+| ⭐⭐ 工程师 | 需编程基础 | 119 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
@@ -161,7 +161,8 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [124. Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare](ch12/124-drupal-to-release-urgent-core-security-updates-on-may-20-si)
 - [125. Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram](ch12/125-cyberscammers-are-bypassing-banks-security-with-illicit-too)
 - [126. DeepSecBench：评估 AI 模型在网络安全漏洞发现中的性能](ch12/126-deepsecbench-ai)
-- [127. Agent 审计：从海量噪音中捞出真风险](ch12/127-agent)
-- [128. A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens](ch12/128-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
-- [129. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/129-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
-- [130. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/130-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)
+- [127. Agent 提示词注入攻击防护实践（字节/火山引擎）](ch12/127-agent)
+- [128. Agent 审计：从海量噪音中捞出真风险](ch12/128-agent)
+- [129. A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens](ch12/129-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
+- [130. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/130-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
+- [131. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/131-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)

@@ -40,7 +40,7 @@ The author pushes back on the "tech industry is dying" narrative as missing the 
 6. **Treat transparency as selection and churn reduction.** Honest founder content gives prospects a clear view of whom they're trusting with part of their business and selects for customers who resonate with your decision-making philosophy — a shot at less churn and a bigger brand.
 
 ## 相关实体
-- [Software after AI](ch01/1003-software-after-ai.html)
+- [Software after AI](ch01/1004-software-after-ai.html)
 - [The repricing of software engineering labor](ch01/089-repricing-of-software-engineering-labor.html)
 - [Primitive is the product](../ch05/022-ai-native.html)
 - [The minimum viable unit of saleable software](https://github.com/QianJinGuo/wiki/blob/main/entities/minimum-viable-unit-saleable-software-brandur.md)

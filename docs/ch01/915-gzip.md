@@ -81,9 +81,9 @@ gzip 语言模型的产出不是连贯文本，但它明显"知道"原文的结�
 ## 相关实体
 
 - [随机鹦鹉：语言模型与意义](ch01/649-language-models-and-meaning.html) — 语言模型能力的哲学讨论
-- [LLM 的深层奥秘](ch01/1028-stochastic-parrot-deep-mystery-llms.html) — LLM 为什么能工作的不同视角
+- [LLM 的深层奥秘](ch01/1029-stochastic-parrot-deep-mystery-llms.html) — LLM 为什么能工作的不同视角
 - [LLM Thonking 推理努力研究](ch01/908-llm-thonking.html) — 压缩视角下的推理成本分析
-- [递归强化语言模型](ch01/1126-reinforcing-recursive-language-models-alphaxiv.html) — 语言模型训练的理论基础
+- [递归强化语言模型](ch01/1127-reinforcing-recursive-language-models-alphaxiv.html) — 语言模型训练的理论基础
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gzip-lm-compression-as-language-model.md)
 

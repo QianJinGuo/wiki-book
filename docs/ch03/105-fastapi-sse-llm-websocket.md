@@ -74,7 +74,7 @@ async def event_generator():
 
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/321-amazon-nova.html)
 - [Thinking Machines 交互模型（Interaction Models）](../ch04/329-thinking-machines-interaction-models.html)
-- [SGLang](../ch04/739-agent-assisted-sglang-ai-llm.html)
+- [SGLang](../ch04/748-agent-assisted-sglang-ai-llm.html)
 
 - [Fastapi Sse Llm Streaming Vs Websocket 5E4A458Abf18](../ch11/230-fastapi.html)
 ## 深度分析

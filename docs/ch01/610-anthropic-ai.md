@@ -58,8 +58,8 @@ Anthropic 整理的打造 **AI 原生创业公司**实用手册，针对 2026 �
 
 ## 相关页面
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-ai-native-startup-handbook.md)
-→ [Skill 写作基础指南](../ch04/614-agent-skill.html) — 与 Agent/Harness 工作流构建相关
-→ [Skill 写作进阶指南](../ch04/614-agent-skill.html) — 更深入的实践方法
+→ [Skill 写作基础指南](../ch04/619-agent-skill.html) — 与 Agent/Harness 工作流构建相关
+→ [Skill 写作进阶指南](../ch04/619-agent-skill.html) — 更深入的实践方法
 
 ## 深度分析
 ### 框架价值：从"创业神话"到"可编排的行动方案"
@@ -126,13 +126,13 @@ Sean Ellis 测试（>40% 用户回答"如果不能继续使用会非常失望"�
 
 ## 相关实体
 - [Claude Code Skills 实践与 Superpowers 利器推荐](ch01/707-claude-code-skills-superpowers.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/377-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/684-ai-agent.html)
 - [claude-code-agent-view](../ch09/003-claude-code-agent-view.html)
 - [Claude Opus 4.7 发布分析](ch01/548-claude-opus-4-7.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/033-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/497-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1214-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](ch01/1487-claude.html)
 
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/085-claude-code.html)
 - [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)

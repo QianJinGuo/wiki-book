@@ -66,7 +66,7 @@ OpenWorker 是 Andrew Ng（吴恩达）团队开源（MIT 许可）的本地优�
 ## 相关实体
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openworker-desktop-agent-local-first-architecture-ruofei-2026.md)
-- [从 Prompt 到 Graph：一文理解五层 Agent 工程](../ch01/1132-20.html)（同作者姊妹篇：五层框架 → OpenWorker 源码样本）
+- [从 Prompt 到 Graph：一文理解五层 Agent 工程](../ch01/1133-20.html)（同作者姊妹篇：五层框架 → OpenWorker 源码样本）
 - [WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构](../ch05/066-agent-harness.html)（对比对象）
 - [Fable 5 的信号：Agent 开始拼 Runtime](../ch01/475-claude-fable-5.html)（Runtime Contract 工程化拆解）
 - [Harness 之后：状态边界与失败闭环](../ch05/091-harness.html)（同作者可靠性续篇）

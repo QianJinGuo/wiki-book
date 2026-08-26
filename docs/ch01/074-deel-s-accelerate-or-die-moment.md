@@ -52,9 +52,9 @@ Deel 的增长引擎不是纯 PLG 也不是纯企业销售，而是「以产品�
 
 - [Running an AI-Native Engineering Org](ch01/060-running-an-ai-native-engineering-org.html)
 - [AI-Native 组织方法论（叶小钗）](../ch05/022-ai-native.html)
-- [Anthropic AI-Native Startup Handbook](../ch04/581-anthropic-ai.html)
+- [Anthropic AI-Native Startup Handbook](../ch04/584-anthropic-ai.html)
 - [SaaStr: Who's Winning Enterprise AI](../ch05/111-ai.html)
-- [AI 时代真正的护城河是组织能力](ch01/1070-ai-true-moat-organizational-capability.html)
+- [AI 时代真正的护城河是组织能力](ch01/1071-ai-true-moat-organizational-capability.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deels-accelerate-or-die-moment.md)
 

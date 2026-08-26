@@ -78,9 +78,9 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](ch01/1132-20.html)
+- [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](ch01/1133-20.html)
 - [the token economy](ch01/763-the-token-economy.html)
-- [Consumer Confidence](ch01/1621-consumer-confidence.html)
+- [Consumer Confidence](ch01/1625-consumer-confidence.html)
 
 ---
 

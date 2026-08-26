@@ -48,9 +48,9 @@ Temporal policies 使用 **Dogwood**——一种为 agent 及其工具设计的�
 ## 与其他实体关系
 
 - [Agent 安全三步法](../ch05/091-harness.html)：三步法把 Governance 放在 Identity 之前；temporal policy 正是 Governance 层的有状态实现形态，补充了"如何具体实施 governance"的机制细节
-- [Policy + Lambda interceptors](ch04/377-ai-agent.html)：stateless Cedar policy 的先行方案；temporal policy 是其有状态扩展（同一 Policy engine 之上）
-- [AI 工具投毒](ch04/360-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)：工具调用层面的攻击面；temporal policy 的 output-integrity 规则正是防御此类攻击的授权层手段
-- [AgentCore Harness](ch04/784-agentcore-harness.html)：temporal policies 运行于 AgentCore Gateway 外围，是 harness 安全边界的组成部分
+- [Policy + Lambda interceptors](ch04/684-ai-agent.html)：stateless Cedar policy 的先行方案；temporal policy 是其有状态扩展（同一 Policy engine 之上）
+- [AI 工具投毒](ch04/469-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)：工具调用层面的攻击面；temporal policy 的 output-integrity 规则正是防御此类攻击的授权层手段
+- [AgentCore Harness](ch04/795-agentcore-harness.html)：temporal policies 运行于 AgentCore Gateway 外围，是 harness 安全边界的组成部分
 
 ## 局限性
 

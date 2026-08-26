@@ -142,10 +142,10 @@ Tree Action模式的核心洞察是：**工具调用之间存在依赖关系**�
 
 ## 相关实体
 - [Agent Harness Architecture Design Production Guide](../ch05/066-agent-harness.html)
-- [Ai Agent Engineer Capability Map](ch04/377-ai-agent.html)
+- [Ai Agent Engineer Capability Map](ch04/684-ai-agent.html)
 - [Claude Code Agent Teams Task Decomposition Ruofei](../ch01/519-claude-code-agent-teams.html)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/006-agent.html)
-- [17 Agent Architectures Evolution](ch04/807-17-agent.html)
+- [17 Agent Architectures Evolution](ch04/818-17-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tmic-ai-xiaoxin-deepagent-architecture-evolution.md)
 

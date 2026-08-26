@@ -42,7 +42,7 @@ Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、
 1. 用数据代替情绪做平台决策：像 Hashimoto 一样持续记录故障对实际工作的影响（故障日记），积累一个月量级的数据后再判断是否迁移，避免单次宕机触发冲动决策。
 2. 识别真正的单点依赖：Git 分布式不等于协作基础设施分布式，issues、PR、CI 等集中托管环节才是真实风险面，退出规划应围绕这些依赖逐一展开。
 3. 迁移采取渐进双轨制：主仓库迁移 + 只读镜像保留，维持原 URL 与可见度，为社区适应和平台验证留出时间窗口。
-4. 评估替代平台时关注治理与所有权：GitLab、Forgejo 等自托管或社区所有权选项与商业平台的价值取向不同——选择托管方本质上是治理优先级的选择，例如 [GitLab 2026 裁员](ch01/1132-20.html) 显示替代平台同样面临商业压力。
+4. 评估替代平台时关注治理与所有权：GitLab、Forgejo 等自托管或社区所有权选项与商业平台的价值取向不同——选择托管方本质上是治理优先级的选择，例如 [GitLab 2026 裁员](ch01/1133-20.html) 显示替代平台同样面临商业压力。
 5. 高价值开源项目应预先制定「平台退出路线图」：包括依赖清单、镜像策略、社区沟通节奏，而非等到信任崩塌时仓促应对。
 6. 将平台商业收购史纳入可靠性评估的参照系：以 2018 年微软收购为节点观察宕机趋势，评估平台路线图与自身项目价值观的长期兼容性。
 
@@ -50,13 +50,13 @@ Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、
 
 - [Microsoft Copilot Studio Agent Governance](../ch03/006-agent.html)
 - [Microsoft Mxc Execution Containers Agent Sandbox Origin](../ch03/006-agent.html)
-- [Github Copilot Individual Plans Flex Allotments](ch01/1035-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
+- [Github Copilot Individual Plans Flex Allotments](ch01/1036-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
 - [Joyai Echo Long Video Framework Jd](../ch05/111-ai.html)
-- [Openchronicle Memory Layer](../ch06/048-memory.html)
+- [Openchronicle Memory Layer](../ch06/049-memory.html)
 - [github multilingual repositories dataset — 4000 万仓库多语言元数据](ch01/909-github.html)
 - [开源项目的消亡方式](ch01/143-dumb-ways-for-an-open-source-project-to-die.html)
 - [GitHub 平台安全事件](ch01/909-github.html)
-- [GitLab 2026 裁员](ch01/1132-20.html)
+- [GitLab 2026 裁员](ch01/1133-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-source-projects-leaving-github.md)
 

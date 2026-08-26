@@ -55,8 +55,8 @@ Agent 平台可能按用户/任务动态创建大量数据空间，负载差异�
 
 ## 关联实体
 
-- [Milvus 3.0 聚合下推](../ch01/1424-3-0.html) — 同主题向量库底层实现
-- [AliSQL 向量技术](../ch01/1379-alisql.html) — 阿里系传统数据库向量化
+- [Milvus 3.0 聚合下推](../ch01/1426-3-0.html) — 同主题向量库底层实现
+- [AliSQL 向量技术](../ch01/1380-alisql.html) — 阿里系传统数据库向量化
 - [Agent 记忆架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) — 记忆检索侧关联
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vector-storage-agent-retrieval-qianwen-aliyun-2026.md)
 

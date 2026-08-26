@@ -302,7 +302,7 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 - [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/085-claude-code.html)（session vs goal lifecycle 对照）
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/372-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
 - [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/085-claude-code.html)（Claude Code 100 行 loop 同主线）
-- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/667-agent-loop.html)（OpenClaw agent loop 对照）
+- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/675-agent-loop.html)（OpenClaw agent loop 对照）
 - [Mimo Code Xiaomi Coding Harness 2026](ch05/077-harness-2026.html)（MiMo Code Max Mode + Goal 机制同主线）
 - [Snowflake Agentic Enterprise Summit 2026](../ch04/298-agentic.html)（Snowflake — 可审计治理同主线）
 - [Hermes Agent Goal And Kanban](../ch04/372-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）

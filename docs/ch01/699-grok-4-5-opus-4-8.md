@@ -93,7 +93,7 @@ Grok Build（CLI）、API、xAI Console、Cursor、Office 插件五个入口同�
 - [Xai Grok Musk Training New Model Wechat](../ch04/210-xai-grok-musk.html) — xAI 训练动态
 - [Cursor Harness Model Production Floor](ch01/451-cursor-harness-model-production-floor.html) — Cursor Harness 模型生产
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/091-harness.html) — 模型与 Harness 关系分析
-- [Claude Fable 5 And New Ai Safety Fables](ch01/1191-claude-fable-5-and-new-ai-safety-fables.html) — Fable 5 模型安全寓言
+- [Claude Fable 5 And New Ai Safety Fables](ch01/1192-claude-fable-5-and-new-ai-safety-fables.html) — Fable 5 模型安全寓言
 - [Ai Cost Optimization Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-cost-optimization-framework.md) — AI 成本优化框架
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grok-45-上线opus-48-级能力四分之一价格.md)

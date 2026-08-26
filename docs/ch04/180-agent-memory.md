@@ -145,13 +145,13 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 记住：Memory 系统早期，先做到"像工程系统一样能查账"，再追求"像人一样记忆"。
 
 ## 相关实体
-- [Agent Memory 架构本质](ch04/521-perplexity-brain-self-improving-agent-memory-architecture.html)
-- [memory agent systems cobanov](ch04/710-memory-agent-systems-cobanov.html)
+- [Agent Memory 架构本质](ch04/523-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [memory agent systems cobanov](ch04/719-memory-agent-systems-cobanov.html)
 
 - [AI Agent 记忆系统架构](ch04/216-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch06/014-hermes-agent-memory.html)
 - [ai agent memory systems](ch04/180-agent-memory.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/444-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/445-agent-principle-architecture-engineering-practice.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/066-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/006-agent.html)

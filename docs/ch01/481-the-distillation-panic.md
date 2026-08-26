@@ -159,7 +159,7 @@ Anthropic 公开点名 3 家中国实验室的"蒸馏攻击"事件，作者认�
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html) — Agent 记忆系统的工程实践，涉及 persistent memory
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1400-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html) — NVIDIA Isaac Lab 规模化 RL，与 Nemotron 的蒸馏链条相关
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1401-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html) — NVIDIA Isaac Lab 规模化 RL，与 Nemotron 的蒸馏链条相关
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — NVIDIA Isaac + SageMaker 人形机器人 RL
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html) — OpenClaw 系统化教程
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/006-agent.html) — 视频 agent 多模态的另一前沿

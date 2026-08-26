@@ -2,7 +2,7 @@
 
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
-> 本章收录 **57 篇**实体，按深度递增排列。
+> 本章收录 **58 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 48 |
+| ⭐⭐ 工程师 | 需编程基础 | 49 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 
 ---
@@ -64,30 +64,31 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 - [028. Obsidian](ch06/028-obsidian)
 - [029. Your documentation is still in your Mum's filing cabinet](ch06/029-your-documentation-is-still-in-your-mum-s-filing-cabinet)
 - [030. 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地](ch06/030-agent-0)
-- [031. TencentDB Agent Memory 短期记忆压缩方案](ch06/031-tencentdb-agent-memory)
-- [032. ECC Continuous Learning：从工具调用轨迹到本能沉淀的持续学习闭环（homunculus 观察式本能提取）](ch06/032-ecc-continuous-learning-homunculus)
-- [033. AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单](ch06/033-aml-agent-memory-leaderboard-agent)
-- [034. Hermes Agent 三级 Memory 架构解析（One掌柜视角）](ch06/034-hermes-agent-memory-one)
-- [035. Building is just the beginning: Introducing Discoverability](ch06/035-building-is-just-the-beginning-introducing-discoverability)
-- [036. WorldTrace：视频世界模型的可寻址记忆（Addressable Memory for Video World Models）](ch06/036-worldtrace-addressable-memory-for-video-world-models)
-- [037. OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎](ch06/037-openjiuwen-autogenetic-memory-agent)
-- [038. MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](ch06/038-mfs-zilliztech-agent-harness-20)
-- [039. OpenChronicle — AI可复用记忆层](ch06/039-openchronicle-ai)
-- [040. Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件](ch06/040-qoder-harness)
-- [041. Claude Code Agent Memory Systems — L0~L3 四层记忆方案](ch06/041-claude-code-agent-memory-systems-l0-l3)
-- [042. Powering scientific discovery](ch06/042-powering-scientific-discovery)
-- [043. Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度](ch06/043-agent-vs)
-- [044. Headroom 是怎么省上下文的](ch06/044-headroom)
-- [045. 面向复杂业务场景的智能分析 Skills 架构设计与演进实践](ch06/045-skills)
-- [046. TencentDB Agent Memory：L0-L3 语义金字塔长期记忆](ch06/046-tencentdb-agent-memory-l0-l3)
-- [047. Skill 编排的 6 种依赖关系](ch06/047-skill-6)
-- [048. 参数化 Memory 漫谈（纯干货）](ch06/048-memory)
-- [049. Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）](ch06/049-loop-engineering-the-anthropic-playbook-agent-v2606)
-- [050. 别让Agent什么都记 上交×腾讯提出 AdaMem](ch06/050-agent-adamem)
-- [051. AI Memory Architecture: Deep Dive](ch06/051-ai-memory-architecture-deep-dive)
-- [052. MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](ch06/052-miroflow-deep-research-agent-code-agent-6)
-- [053. Agent Harness 上下文管理：工作集视角](ch06/053-agent-harness)
-- [054. MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战](ch06/054-minimax-token-agentos)
-- [055. Claude Code Subagent 上下文卫生](ch06/055-claude-code-subagent)
-- [056. 注意力塌缩与上下文管理](ch06/056-page-056)
-- [057. Claude Code Session 管理与 1M 上下文最佳实践](ch06/057-claude-code-session-1m)
+- [031. Agent 自进化四齿飞轮：评测→记忆→落地→控制（腾讯技术工程）](ch06/031-agent)
+- [032. TencentDB Agent Memory 短期记忆压缩方案](ch06/032-tencentdb-agent-memory)
+- [033. ECC Continuous Learning：从工具调用轨迹到本能沉淀的持续学习闭环（homunculus 观察式本能提取）](ch06/033-ecc-continuous-learning-homunculus)
+- [034. AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单](ch06/034-aml-agent-memory-leaderboard-agent)
+- [035. Hermes Agent 三级 Memory 架构解析（One掌柜视角）](ch06/035-hermes-agent-memory-one)
+- [036. Building is just the beginning: Introducing Discoverability](ch06/036-building-is-just-the-beginning-introducing-discoverability)
+- [037. WorldTrace：视频世界模型的可寻址记忆（Addressable Memory for Video World Models）](ch06/037-worldtrace-addressable-memory-for-video-world-models)
+- [038. OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎](ch06/038-openjiuwen-autogenetic-memory-agent)
+- [039. MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](ch06/039-mfs-zilliztech-agent-harness-20)
+- [040. OpenChronicle — AI可复用记忆层](ch06/040-openchronicle-ai)
+- [041. Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件](ch06/041-qoder-harness)
+- [042. Claude Code Agent Memory Systems — L0~L3 四层记忆方案](ch06/042-claude-code-agent-memory-systems-l0-l3)
+- [043. Powering scientific discovery](ch06/043-powering-scientific-discovery)
+- [044. Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度](ch06/044-agent-vs)
+- [045. Headroom 是怎么省上下文的](ch06/045-headroom)
+- [046. 面向复杂业务场景的智能分析 Skills 架构设计与演进实践](ch06/046-skills)
+- [047. TencentDB Agent Memory：L0-L3 语义金字塔长期记忆](ch06/047-tencentdb-agent-memory-l0-l3)
+- [048. Skill 编排的 6 种依赖关系](ch06/048-skill-6)
+- [049. 参数化 Memory 漫谈（纯干货）](ch06/049-memory)
+- [050. Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）](ch06/050-loop-engineering-the-anthropic-playbook-agent-v2606)
+- [051. 别让Agent什么都记 上交×腾讯提出 AdaMem](ch06/051-agent-adamem)
+- [052. AI Memory Architecture: Deep Dive](ch06/052-ai-memory-architecture-deep-dive)
+- [053. MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](ch06/053-miroflow-deep-research-agent-code-agent-6)
+- [054. Agent Harness 上下文管理：工作集视角](ch06/054-agent-harness)
+- [055. MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战](ch06/055-minimax-token-agentos)
+- [056. Claude Code Subagent 上下文卫生](ch06/056-claude-code-subagent)
+- [057. 注意力塌缩与上下文管理](ch06/057-page-057)
+- [058. Claude Code Session 管理与 1M 上下文最佳实践](ch06/058-claude-code-session-1m)

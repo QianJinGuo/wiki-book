@@ -16,7 +16,7 @@
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/108-harness-skill.html)
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/091-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/377-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/684-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 

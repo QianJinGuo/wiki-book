@@ -86,7 +86,7 @@ Numbat 通过 MDM 部署到 Perplexity 全公司的终端。Perplexity Computer�
 
 ## 相关实体
 
-- 参见 [Agent 工具投毒](../ch04/360-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 了解另一类 AI Agent 安全威胁——通过工具供应链投毒实现的攻击
+- 参见 [Agent 工具投毒](../ch04/469-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 了解另一类 AI Agent 安全威胁——通过工具供应链投毒实现的攻击
 - 参见 **Agent Harness 安全** 了解 harness 层安全防护的通用框架和设计模式
 - 参见 **Accidental Meltdown** 了解 agent 在非对抗场景下自发的危险行为模式
 - 参见 **Prompt Injection** 了解传统的对抗性输入攻击及防御手段

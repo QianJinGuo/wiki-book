@@ -17,11 +17,11 @@ AWS Bedrock AgentCore 是 AWS 推出的 Agent 基础设施平台，旨在为开�
 
 ## 相关实体
 
-- [AgentCore Harness GA](../ch04/592-amazon-bedrock-agentcore-harness-ga-api-agent.html)
-- [AgentCore Harness](../ch04/784-agentcore-harness.html)
+- [AgentCore Harness GA](../ch04/597-amazon-bedrock-agentcore-harness-ga-api-agent.html)
+- [AgentCore Harness](../ch04/795-agentcore-harness.html)
 - [AgentCore Identity Security](ch11/272-aws-bedrock-agentcore.html)
 - [Bedrock Multi-Agent](ch11/019-aws-bedrock.html)
-- [AgentCore Browser](../ch04/666-amazon-bedrock-agentcore.html)
+- [AgentCore Browser](../ch04/674-amazon-bedrock-agentcore.html)
 
 ## 深度分析
 

@@ -71,10 +71,10 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/在-rds-postgresql-中实现-rabitq-量化.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1149-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/1523-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/006-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/091-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/005-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/441-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/350-skill.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
@@ -83,7 +83,7 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 
 - [Hermes Agent /goal 长任务运行时架构](../ch04/372-hermes-agent-goal.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/099-hermes-agent.html)
-- [LoongSuite GenAI 可观测语义规范](../ch04/571-loongsuite-genai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/574-loongsuite-genai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/006-agent.html)
 - [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/128-ai-coding.html)
 - [卡片式对话的协议方案探索和思考](https://github.com/QianJinGuo/wiki/blob/main/entities/卡片式对话的协议方案探索和思考.md)

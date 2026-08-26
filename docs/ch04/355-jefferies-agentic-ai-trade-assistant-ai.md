@@ -74,10 +74,10 @@ Jefferies 已规划了清晰的演进路线图：全球推广到多种产品类�
 
 ## 相关实体
 
-- [Strands Agents](ch04/799-strands-agents.html) — 开源 Agent 编排 SDK
+- [Strands Agents](ch04/810-strands-agents.html) — 开源 Agent 编排 SDK
 - [Amazon Bedrock](../ch11/310-amazon-bedrock.html) — AWS 的托管基础模型服务
 - [MCP 协议](../ch07/095-mcp-protocol.html) — Model Context Protocol 的原理和应用
-- [金融行业 Agentic AI](ch04/117-agentic-ai.html) — AI Agent 在金融领域的应用实践
+- [金融行业 Agentic AI](ch04/710-agentic-ai.html) — AI Agent 在金融领域的应用实践
 - [Agent 驱动数据访问](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-driven-data-access.md) — Agent 通过自然语言实现的数据民主化
 - [交易桌面 AI](../ch01/187-trading-desk-ai.html) — 投行交易场景的 AI 应用
 

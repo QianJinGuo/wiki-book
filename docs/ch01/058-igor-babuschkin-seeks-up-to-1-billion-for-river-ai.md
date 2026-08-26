@@ -99,7 +99,7 @@ Forbes 的报道基于"多位知情人士"和"文件审查"（incorporation docu
 
 - [Igor Babuschkin River AI 融资（另一版本）](ch01/058-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Jensen Huang 投资英国 AI 初创](../ch05/111-ai.html)
-- [Anthropic 计费变更](ch01/1002-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html) — 推动 Knowledge Agent 等替代方案的经济因素
+- [Anthropic 计费变更](ch01/095-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html) — 推动 Knowledge Agent 等替代方案的经济因素
 - [模型规模推演](ch01/816-model-size-scaling-in-2023-2031.html) — 算力军备竞赛的技术背景
 - [从执行者到导演的 AI 心态转变](ch01/036-from-doer-to-director-the-ai-mindset-shift.html) — AI 时代的人才战略思考
 

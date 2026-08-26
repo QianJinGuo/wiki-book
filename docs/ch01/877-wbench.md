@@ -79,10 +79,10 @@ HY-World 1.5 在导航能力上超越所有闭源模型值得深度解读。这�
 
 ## 相关实体
 
-- [世界模型评测综述](ch01/1132-20.html) — 更广泛的 world model 评测方法
+- [世界模型评测综述](ch01/1133-20.html) — 更广泛的 world model 评测方法
 - **视频生成评测体系** — WBench 的视频评测技术背景
 - **具身智能评测** — 空间导航与交互的评测关联
-- [Kling 视频生成模型](ch01/1132-20.html) — WBench 评测的模型之一
+- [Kling 视频生成模型](ch01/1133-20.html) — WBench 评测的模型之一
 - **交互式视频生成技术** — WBench 所属的技术领域
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从月球漫步到赛博都市wbench测出了世界模型的边界.md)

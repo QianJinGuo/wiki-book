@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **28 篇**实体，按深度递增排列。
+> 本章收录 **30 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 8 |
+| ⭐⭐ 工程师 | 需编程基础 | 10 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 5 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 13 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
@@ -456,7 +456,112 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 
 ---
 
-## Ch19.006 The Complexity of Simplicity | Jim Nielsen's Notes
+## Ch19.006 AutoResearch 四种常见循环设计框架
+
+> 📊 Level ⭐⭐ | 6.9KB | `entities/autoresearch-four-loop-design-framework-2026.md`
+
+# AutoResearch 四种常见循环设计框架
+
+> AutoResearch = 基模 + Agent Loop。当基模固定时，方法循环设计成为竞争的本质。本文是白白小白（PaperWeekly）提出的 AutoResearch 循环设计分类学——四种常见循环范式 + 一套可复用的通用分析框架。
+
+## 四种循环范式
+
+| 循环范式 | 代表系统 | 核心特征 |
+|---|---|---|
+| 线性循环 Keep-or-Discard | Karpathy autoresearch（2025） | 单线程探索，好则保留坏则回退 |
+| 并行分支探索 | — | 同时探索多个方向 |
+| 失败经验结构化保存 | — | 记录失败原因避免死循环 |
+| 长时程策略 | — | 短时预算易陷入局部最优的替代 |
+
+**线性循环 Keep-or-Discard** 是最简单的设计：每次尝试一个想法，结果更好就保留，否则 git reset 回退。Karpathy 的 autoresearch 仅三个文件，循环逻辑由一个 Markdown 指令（program.md）定义，含「固定 5 分钟时间预算」这一关键约束——它迫使 Agent 思考哪些改动能在极短训练后产生可测量收益，淘汰需要长训练才见效的方案。
+
+该范式的结构性局限：①无法并行探索多个方向；②失败实验经验未结构化保存（可能反复尝试同一 idea 死循环）；③短时间约束容易让框架陷入局部最优。
+
+## 通用分析框架
+
+当出现新的 AutoResearch 方法时，可用该分析框架直接推导其优劣势：从循环拓扑（线性/并行/分层）、失败处理（回退/记录/重试）、时间预算约束、以及人类介入程度四个维度审视。
+
+## 深度分析
+
+### 竞争的本质：从基模转向循环设计
+
+AutoResearch = 基模 + Agent Loop。当基模（底层模型）趋于同质、固定之后，方法循环设计便成为竞争差异化的本质来源——谁能更好地组织探索、反馈与记忆，谁就能在同一基模上取得更好的研究产出。这解释了为什么 [Agent Loop 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) 会从一种实现细节上升为核心研究问题。
+
+### 四种范式是搜索拓扑的演化谱系
+
+四种循环并非并列选项，而是沿「搜索拓扑」维度递进演化的谱系：线性 Keep-or-Discard 每次只走一步、要么保留要么 git reset 回退；树搜索维护一棵解树，允许在任意历史节点重新出发，获得线性循环不具备的回溯能力；遗传进化池通过选择 + 突变（由 LLM 完成）维持种群多样性；异步多 Agent 则让多个独立搜索进程通过共享记忆间接协调。拓扑越复杂，单次实验的「失败成本」越低，但系统管理与解释成本越高。
+
+### 反馈信号的粒度决定学习上限
+
+反馈信号决定系统每次实验能学到多少。标量奖励只回答「好了多少」，不解释「为什么失败」，这也是 Karpathy 线性循环可解释性不足的根源；结构化指标提供多维评估；而 GEPA 用文本反馈取代标量奖励，让 LLM 阅读完整执行轨迹来诊断问题、归因原因，从而驱动更具针对性的突变。信息越丰富，下一步决策质量越高，但获取与处理的成本也随之上升——反馈粒度与成本之间存在根本权衡。
+
+### 记忆架构与决策主体是扩展性的两翼
+
+记忆架构决定系统能否从历史中学习：从无记忆、Git 历史、解树、文件系统池到知识图谱，结构化程度逐级提升。CORAL 将 [共享持久记忆](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) 拆为 attempts/notes/skills 三个目录，成为多 Agent 无需显式通信即可协调的基石。同时，决策主体从「人类硬编码搜索规则、LLM 仅作算子」逐步让渡给 Agent 自主判断（如 AI Scientist v2 抛弃公式化选择）。搜索能力的提升正沿着「拓扑 → 反馈 → 记忆 → 决策主体」四个维度同步展开。
+
+## 实践启示
+
+1. **从线性循环起步，用固定短时间预算约束 Agent。** Karpathy 仅三个文件、一个 Markdown 指令即可落地；「固定 5 分钟」的约束迫使 Agent 只保留能在极短训练后产生可测量收益的改动，天然淘汰需要长训练才见效的方案。小规模实验先从它开始。
+
+2. **需要并行探索或回溯时，升级到树搜索并用 UCB 平衡探索与利用。** 树搜索把解空间限制在一条线性路径上，可在任意历史节点重新出发；但贪婪策略会让早期优秀 Draft 的子树「饿死」其他方向，UCB 公式通过给访问次数少的节点「好奇心加分」维持探索。
+
+3. **用文本反馈补充甚至取代标量奖励。** 标量指标无法解释「为什么失败」。像 GEPA 那样先对候选做 rollout、记录完整执行轨迹，再让 LLM 阅读轨迹诊断归因，能显著提升突变方向的质量。
+
+4. **为失败与经验构建结构化记忆，避免死循环。** 线性循环的一大缺陷是失败经验未结构化保存、可能反复尝试同一 idea。参照 CORAL 将记忆拆为 attempts（评估记录）/notes（观察反思）/skills（可复用流程），按需读取以避免上下文过载。
+
+5. **多 Agent 场景用共享持久记忆协调，而非显式通信协议。** CORAL 让每个 Agent 在独立 git worktree 中运行、通过共享记忆间接协调——一个 Agent 的发现自然影响其他 Agent 的后续搜索，避免了显式通信带来的耦合成本。
+
+6. **用四维框架评估任何新 AutoResearch 方法。** 面对新方法时，直接从搜索拓扑（线性/树/池/异步）、反馈信号（标量/结构化/文本）、记忆架构、决策主体四个维度解构，即可快速推导其优劣势，而不必逐行读代码。
+
+## 关系与对比
+
+- [AutoResearch L0-L4](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md) 从科学发现能力分级切入，本文从循环拓扑切入——视角互补
+- [自改进 Agent 反馈循环](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-feedback-loop-self-improving-agents-introspection.md) 聚焦内省反馈循环，本文覆盖更宽的四种范式
+- [AutoResearch 多智能体软件](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-multi-agent-software.md) 强调多 Agent 协作，本文侧重单循环设计拓扑
+- [评估与失败元认知循环](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-eval-agent-failure-meta-cognitive-loop-2026.md) 与「失败经验结构化保存」范式直接相关
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch怎么设计四种常见循环一套通用框架.md)
+
+---
+
+## Ch19.007 Graph Engineering in the Era of LLM Agents：从个体智能到系统智能（综述）
+
+> 📊 Level ⭐⭐ | 6.2KB | `entities/graph-engineering-survey-system-intelligence-2026.md`
+
+# Graph Engineering in the Era of LLM Agents：从个体智能到系统智能（综述）
+
+> 15 家机构联合综述（吉林大学主导，63 页，arXiv:2608.21156）一手论文原文：提出三层智能（模型/个体/系统）演进框架，引入 Graph Engineering（任务组织/智能体协同/运行时状态管理）作为从个体智能到系统智能的桥梁，并以 Ontology Engineering 作为下一代系统智能的未来方向。
+
+## 核心命题：三层智能演进
+LLM 已从语言生成模型演化为能解决复杂长程任务的自主智能体，伴随一系列工程范式：Prompt Engineering（激发能力）、Context Engineering（管理信息访问）、Harness Engineering（组织外部工具资源）、Loop Engineering（持续反思与自我改进）。但真实世界任务复杂度上升后，个体智能的根本局限浮现——许多任务天然需要异构专业知识、相互依赖的子任务、并行执行、独立验证和持久状态，超出任何单个智能体的组织能力。智能必须分布到多个专职智能体并在系统层面组织，即**系统智能（System Intelligence）**。
+
+**三层智能框架**：模型智能（Model Intelligence，基础模型+Prompt/Context Engineering，天花板=无法跨调用保持状态/操作外部世界/持续接收环境反馈）→ 个体智能（Individual Intelligence，Agent = Loop（LLM+Harness），把模型变成能自主追目标的个体智能体，如 Claude Code/Codex）→ 系统智能（System Intelligence，把智能分散到多个专职智能体在系统层面组织）。
+
+## Graph Engineering：从个体智能到系统智能的桥梁
+不同于此前主要优化个体交互或智能体级行为的范式，Graph Engineering 聚焦于构建显式、动态、可演化的图结构来组织任务、智能体与运行状态。三个核心部分：
+
+- **任务组织（做什么）**：目标分解（Goal Decomposition）+ 工作流优化（Workflow Optimization），把模糊目标拆成可调度/可执行/可修改的子任务图，让什么能并行、什么必须等、怎么验证都一目了然。
+- **智能体协同（谁来做）**：智能体能力建模 + 智能体团队组织（相对稳定的"谁负责什么"）+ 多智能体通信（运行时动态的"此刻谁该跟谁说话"）。
+- **运行时状态管理（做得如何）**：状态记录 + 故障定位 + 失败恢复——整个系统智能中最关键也最易被忽视的部分，是系统的记忆和容错机制。
+
+**系统演化（System Evolution）**：跨应用领域成熟度不均——工作组织与智能体团队工程已常见，显式运行时状态管理渐增，但持久系统演化仍罕见（多数系统只在预定组织结构内适应执行，而非永久修订组织本身）。
+
+## 未来方向：Ontology Engineering（本体工程）
+图工程让关系显式，却保证不了系统中各方对同一概念理解一致——缺少统一语义，多智能体协作面临严重语义障碍（同一概念不同表示、目标/证据/状态定义不一致、沟通歧义）。本体工程用共享、机器可解释的实体/关系/约束模型统一目标、能力、证据与状态的定义。一个本体精确定义领域内三件事：类/实体、属性/关系、约束/公理，用 RDF、RDFS、OWL 编写——让本体不仅是文档，更是可执行的逻辑模型。它确保所有智能体对目标、证据、任务完成等核心概念有完全一致的理解。
+
+**图工程 vs 本体工程**：图工程管"连接关系"（谁连谁），本体工程管"概念一致性"（连接在语义上意味着什么、如何被一致解读）。图让关系显式，本体让含义一致，两者互补——图工程构建系统骨架，本体工程提供语义地基。
+
+其他关键方向：目标形成与价值对齐（Goal Formation and Value Alignment，让系统在共享目标上对齐）、共享语义与世界锚定（Shared Semantics and World Grounding）、衡量系统智能（Measuring System Intelligence，评估对象从单模型/单智能体扩展到多智能体系统的协调质量/任务完成度/状态一致性/演化能力）。
+
+## 评估、工程生态与应用
+评估按三层智能组织（模型/个体/系统各自基准与评测原则）。应用覆盖七类领域：软件工程与 IT 运维、科学发现与实验室自动化、医疗健康与临床决策支持、企业工作流与数字组织、通用数字智能体与个人自动化、社会与经济模拟、跨领域发现。
+
+## 相关
+Graph Engineering 主题已在库内多实体覆盖（如 [Graph Engineering：从单循环到多节点编排](https://github.com/QianJinGuo/wiki/blob/main/entities/graph-engineering-loop-to-graph-tencent.md)、[Codez Graph Engineering 精读](https://github.com/QianJinGuo/wiki/blob/main/entities/graph-engineering-codez-14-step-zhixin-2026.md)），但本篇为系统级综述论文原文，提出三层智能框架 + Graph Engineering 三维度 + Ontology Engineering 未来方向的完整体系，属于综述母版。Ontology Engineering 方向与 [Palantir Foundry 闭环操作范式（Ontology 三层）](https://github.com/QianJinGuo/wiki/blob/main/entities/palantir-foundry-closed-loop-ontology-open-source-mvp-2026.md)、[企业 AI 本体驱动 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-ai-ontology-agent-knowledge-governance.md) 呼应。→ [原文存档（论文 PDF）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-survey-system-intelligence-paper-2026.md)
+
+---
+
+## Ch19.008 The Complexity of Simplicity | Jim Nielsen's Notes
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/2026-05-06-2201.md`
 
@@ -504,7 +609,7 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 
 ---
 
-## Ch19.007 Lean Software Scaling Laws
+## Ch19.009 Lean Software Scaling Laws
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/lean-scaling.md`
 
@@ -547,7 +652,7 @@ But this does not follow: being a popular language with a lot of training data o
 
 ---
 
-## Ch19.008 Zero-Mem — LLM Agent 的零 Token 记忆操作
+## Ch19.010 Zero-Mem — LLM Agent 的零 Token 记忆操作
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/zero-mem-zero-token-memory-operations.md`
 
@@ -589,7 +694,7 @@ Zero-Mem 与「记忆即生成」的主流路线（如用 LLM 摘要/压缩记�
 
 ---
 
-## Ch19.009 arXiv 脱离康奈尔，正式独立为非营利组织
+## Ch19.011 arXiv 脱离康奈尔，正式独立为非营利组织
 
 > 📊 Level ⭐⭐ | 3.5KB | `entities/arxiv-independent-spinout-2026.md`
 
@@ -651,7 +756,7 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 
 ---
 
-## Ch19.010 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
+## Ch19.012 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
 
 > 📊 Level ⭐⭐⭐ | 22.8KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
 
@@ -978,7 +1083,7 @@ arXiv 2025 财年支出约 670 万美元，赤字 29.7 万美元。康奈尔面�
 
 ---
 
-## Ch19.011 LoopWM (Looped World Models)
+## Ch19.013 LoopWM (Looped World Models)
 
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/loopwm-looped-world-models.md`
 
@@ -1098,7 +1203,7 @@ v×c=56 的量子位文章（第 3 来源）与机器之心本篇同为大众科
 
 ---
 
-## Ch19.012 Count Anything - 文本引导的通用目标计数框架
+## Ch19.014 Count Anything - 文本引导的通用目标计数框架
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/arxiv-2605-30846-count-anything-2026.md`
 
@@ -1180,7 +1285,7 @@ Count Anything 的点集输出天然规避了上述三个问题。
 
 ---
 
-## Ch19.013 DeepMind Recirculation：冻结权重、深层激活回流释放性能
+## Ch19.015 DeepMind Recirculation：冻结权重、深层激活回流释放性能
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/deepmind-recirculation-transformer-layer-activation-feedback-2026.md`
 
@@ -1234,7 +1339,7 @@ Recirculation 不是可直接替代微调的通用方案，但证明一个可能
 
 ---
 
-## Ch19.014 GenCeption — 视频生成模型作为通用视觉学习器
+## Ch19.016 GenCeption — 视频生成模型作为通用视觉学习器
 
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/genception-video-gen-models-general-purpose-vision-learners-arxiv-2607.md`
 
@@ -1290,7 +1395,7 @@ GenCeption 在以下任务上达到或超越专门模型：
 
 ---
 
-## Ch19.015 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
+## Ch19.017 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
 > 📊 Level ⭐⭐⭐⭐ | 23.7KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
@@ -1547,7 +1652,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 ---
 
-## Ch19.016 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
+## Ch19.018 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
 > 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
@@ -1707,7 +1812,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 
 ---
 
-## Ch19.017 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
+## Ch19.019 Language Models Need Sleep: arxiv 2606.03979 持续学习 2 阶段范式
 
 > 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/arxiv-2606-03979-language-models-need-sleep.md`
 
@@ -1819,7 +1924,7 @@ Mind Lab LoRA 持续学习 (mind-lab-lora-continual-learning-system) 与本文�
 
 ---
 
-## Ch19.018 Natural Language Autoencoders (Anthropic)
+## Ch19.020 Natural Language Autoencoders (Anthropic)
 
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/anthropic-natural-language-autoencoders.md`
 
@@ -1901,7 +2006,7 @@ NLA 证明了"让模型解释自己的思维过程"这一思路的可行性，�
 
 ---
 
-## Ch19.019 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
+## Ch19.021 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
 
@@ -1992,7 +2097,7 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 
 ---
 
-## Ch19.020 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
+## Ch19.022 Light Interaction：无需重训、不改参数的交互式视频世界模型推理加速
 
 > 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/light-interaction-world-model-inference.md`
 
@@ -2087,7 +2192,7 @@ Light Interaction 的价值在于提出了一种更适合交互式生成的推�
 
 ---
 
-## Ch19.021 Qwen-AgentWorld: Language World Models for General Agents
+## Ch19.023 Qwen-AgentWorld: Language World Models for General Agents
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/qwen-agentworld-language-world-models.md`
 
@@ -2212,7 +2317,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ---
 
-## Ch19.022 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
+## Ch19.024 标题取得好，Accept跑不了：NeurIPS in ICML论文标题技巧
 
 > 📊 Level ⭐⭐⭐⭐ | 6.7KB | `entities/neurips-in-icml-paper-title-tips.md`
 
@@ -2288,7 +2393,7 @@ ICML 2026 上出现了一篇方法名为 "NeurIPS" 的论文——即标题缩�
 
 ---
 
-## Ch19.023 From AGI to ASI
+## Ch19.025 From AGI to ASI
 
 > 📊 Level ⭐⭐⭐⭐ | 6.5KB | `entities/arxiv-2606-12683-from-agi-to-asi.md`
 
@@ -2371,7 +2476,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.024 阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式
+## Ch19.026 阿里Qwen开源 Skill-SP：自博弈实现模型和Skill协同进化新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.1KB | `entities/qwen-skill-self-play-hyman-2026.md`
 
@@ -2414,7 +2519,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.025 LittleLearner：课程受控预训练——预训练过滤设定能力上限的实验证据
+## Ch19.027 LittleLearner：课程受控预训练——预训练过滤设定能力上限的实验证据
 
 > 📊 Level ⭐⭐⭐⭐ | 3.9KB | `entities/littlelearner-pedagogical-curriculum-llm-arxiv-2608-13545.md`
 
@@ -2454,7 +2559,7 @@ scaling、SFT+GRPO 后训练、in-context learning 都能放大**课程内**（i
 
 ---
 
-## Ch19.026 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
+## Ch19.028 BAAI Orca — 智源悟界 RoboBrain Next-State Prediction 世界模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/baai-orca-next-state-prediction-world-model.md`
 
@@ -2514,7 +2619,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.027 VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
+## Ch19.029 VISReg：Variance-Invariance-Sketching Regularization 攻克表征坍塌
 
 > 📊 Level ⭐⭐⭐⭐ | 2.9KB | `entities/lecun连续转发新作visreg攻克jepa世界模型表征坍塌核心难题.md`
 
@@ -2544,7 +2649,7 @@ Orca 不追求更好的 token 预测、帧生成或动作模仿，而是关注�
 
 ---
 
-## Ch19.028 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
+## Ch19.030 唐杰内部信曝光：两年死磕ASI！ — 智谱ASI路线图与Touch High计划
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.4KB | `entities/tangjie-zhipu-asi-internal-letter-2026.md`
 
