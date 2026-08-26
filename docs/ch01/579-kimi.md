@@ -26,7 +26,7 @@
 
 7月16日，月之暗面发布 Kimi K3，2.8万亿参数、100万token上下文、原生多模态立即引发行业震动。接下来72小时内，连锁反应依次展开：
 
-**第一波：模型实力验证。** K3在LMArena Frontend Code Arena取得全球第一，超越Claude Fable 5和GPT-5.6 Sol，第三方盲测中编程能力被公认已摸到Fable 5水平线。[Kimi K3这是 Deepseek 20 时刻](ch01/1470-deepseek.html)中有更详细的benchmark对比数据。
+**第一波：模型实力验证。** K3在LMArena Frontend Code Arena取得全球第一，超越Claude Fable 5和GPT-5.6 Sol，第三方盲测中编程能力被公认已摸到Fable 5水平线。[Kimi K3这是 Deepseek 20 时刻](ch01/803-deepseek.html)中有更详细的benchmark对比数据。
 
 **第二波：价格重估。** K3定价输入3美元/百万token、输出15美元/百万token，较Opus 4.8（输出25美元）和GPT-5.6 Sol（输出30美元）便宜近一半。这对Agent场景尤为关键——Agent是输出大户，K3在最烧钱的项目上直接打了五折。
 
@@ -92,11 +92,11 @@ K3 的成功不仅是月之暗面一家的胜利，更是中国 AI 模型公司�
 
 ## 相关实体
 
-- [Kimi K3 深度分析](ch01/1470-deepseek.html)
+- [Kimi K3 深度分析](ch01/803-deepseek.html)
 - [Kimi Work 通用 Agent](ch01/737-codex.html)
 - [模型公司做 Agent 的优势](ch01/579-kimi.html)
 - [xAI Grok 新一代模型](../ch04/210-xai-grok-musk.html)
-- [Seed Fable 5 评价](../ch04/694-fable-5.html)
+- [Seed Fable 5 评价](../ch04/702-fable-5.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-回应马斯克隔空宣战-xixiaoyao.md)
 

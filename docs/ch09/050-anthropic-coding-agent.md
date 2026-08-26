@@ -173,10 +173,10 @@ Top 25 大学 +40%、博士生 >25%、终身教授 ~10%——这些数字背后�
 4. **关注机构不平等的社会责任**：如果工具设计不关注公平性，AI 加剧不平等的社会效应会在学术领域快速显现。开发者在设计功能时应考虑：我的工具是缩小还是扩大了使用者之间的差距？
 
 ## 相关实体
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1609-anthropic.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/1609-anthropic.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/033-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/033-agent-skills.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/780-anthropic.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch01/780-anthropic.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/497-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/497-agent-skills.html)
 - [Anthropic 14 Skill Patterns Best Practices](../ch01/453-anthropic-14-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

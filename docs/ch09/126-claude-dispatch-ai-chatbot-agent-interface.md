@@ -66,9 +66,9 @@ AI 能力一直领先于 AI 可及性。Chatbot 格式在主动对抗用户。�
 ## 相关实体
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/255-openclaw.html)
 - [Skill System Design Three Way Comparison](../ch04/350-skill.html)
-- [Openclaw Agent Loop Design Patterns](../ch01/1223-openclaw-agent.html)
-- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1158-anthropic-claude.html)
-- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/377-ai-agent.html)
+- [Openclaw Agent Loop Design Patterns](../ch01/1224-openclaw-agent.html)
+- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/1159-anthropic-claude.html)
+- [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/684-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)
 

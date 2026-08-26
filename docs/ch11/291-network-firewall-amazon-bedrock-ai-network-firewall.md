@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1216-spec.html)
+- [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](../ch01/1217-spec.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -52,7 +52,7 @@ AWS Network Firewall 允许在同一个 Firewall Policy 下关联多个 Rule Gro
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)

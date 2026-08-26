@@ -224,12 +224,12 @@ M3-Agent 的双重记忆设计（Episodic + Semantic）对视频/音频理解场
 - [Agent Memory Architecture Ruofei](../ch04/180-agent-memory.html) — Agent 记忆架构（若飞）
 - [Agent Memory Modular Framework](../ch04/180-agent-memory.html) — Agent 记忆模块化框架
 - [Ai Agent Memory Systems](../ch04/180-agent-memory.html) — AI Agent 记忆系统
-- [Ai Memory Architecture Deep Dive](ch06/051-ai-memory-architecture-deep-dive.html) — 记忆架构深度分析
-- [Memory In The Llm Era Iclr2026](ch06/048-memory.html) — Memory in the LLM Era（架构层面四组件框架）
+- [Ai Memory Architecture Deep Dive](ch06/052-ai-memory-architecture-deep-dive.html) — 记忆架构深度分析
+- [Memory In The Llm Era Iclr2026](ch06/049-memory.html) — Memory in the LLM Era（架构层面四组件框架）
 - [Agentmemory Coding Agent Local Memory](ch06/005-agentmemory-coding-agent.html) — Coding Agent 本地记忆
 - [Claude Code 7 Layer Memory Architecture](../ch03/085-claude-code.html) — Claude Code 7 层记忆架构
 - [Agent Memory Storage Six Schools Wiki Compile Vs Raw Data Debate](../ch04/180-agent-memory.html) — 记忆存储六派之争
-- [Agentic Ai Infrastructure Practice Series Nine Context Engineering](../ch04/117-agentic-ai.html) — AWS Context Engineering（基础设施层）
+- [Agentic Ai Infrastructure Practice Series Nine Context Engineering](../ch04/710-agentic-ai.html) — AWS Context Engineering（基础设施层）
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/006-agent.html) — YAML 驱动的 Agent 评测
 - [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/006-agent.html) — 淘宝导购 Agent 评测
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-evaluation-landscape-taobao-survey.md) → [Agent Memory Evaluation Landscape Taobao Survey](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-evaluation-landscape-taobao-survey.md)

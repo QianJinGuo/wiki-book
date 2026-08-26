@@ -15,7 +15,7 @@ Claude Code的Skills实践及利器推荐：工欲善其事，必先利其器
 ## 相关实体
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/085-claude-code.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/085-claude-code.html)
-- [Code Review Graph](ch01/1116-code-review-graph-claude-code-6-8-token.html)
+- [Code Review Graph](ch01/1117-code-review-graph-claude-code-6-8-token.html)
 - [Claude Code Hackathon Winners 2026](../ch03/085-claude-code.html)
 - [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html)
 

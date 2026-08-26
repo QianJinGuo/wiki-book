@@ -262,7 +262,7 @@ GUI Agent 的感知模型是屏幕截图，动作空间是点击/滑动/输入�
 
 核心原因在于：MobileGym 仿真的是**状态转换逻辑**而非像素级视觉外观。Agent 在 MobileGym 中学习到的是"在某个界面执行某个操作后，目标状态会如何变化"——这与真实手机的逻辑完全一致，因为两者面对的是相同的 App 业务逻辑（微信消息发送、支付宝转账、小红书点赞）。
 
-[Se Ga Memory Augmented Self Evolution Gui Agents](../ch06/048-memory.html) 讨论的记忆增强自我进化框架同样依赖环境状态的可观测性和可复现性——这与 MobileGym 的 JSON 状态架构在哲学上高度一致，都是通过**结构化环境状态**来支撑 Agent 的学习和推理。
+[Se Ga Memory Augmented Self Evolution Gui Agents](../ch06/049-memory.html) 讨论的记忆增强自我进化框架同样依赖环境状态的可观测性和可复现性——这与 MobileGym 的 JSON 状态架构在哲学上高度一致，都是通过**结构化环境状态**来支撑 Agent 的学习和推理。
 
 ## 实践启示
 
@@ -300,7 +300,7 @@ MobileGym 证明了**浏览器内仿真**是实现高并发、低成本、移动
 
 ## 相关实体
 
-- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1585-icml-2026.html)
+- [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](../ch01/1546-icml-2026.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mobilegym-cas-mobile-agent-benchmark.md)
 

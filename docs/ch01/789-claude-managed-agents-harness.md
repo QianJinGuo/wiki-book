@@ -13,7 +13,7 @@ Claude Managed Agents官方Harness平台完整手册。本文来自 WeChat data-
 - **评分**: score=81
 
 ## 与现有知识库内容的关联
-- [Claude Managed Agents](../ch04/635-claude-managed-agents.html) — 托管 Harness 平台
+- [Claude Managed Agents](../ch04/830-claude-managed-agents.html) — 托管 Harness 平台
 - [Agent/Skills/Teams 架构演进与选型](../ch04/313-agent-skills-teams.html) — Anthropic Skills 认知一致性机制
 - [Skill 形式化理论](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) — Skill 的六元组定义与 DAG 步骤计划
 
@@ -81,19 +81,19 @@ MCP 服务器的价值在于复用现有生态。如果你已经有 Slack、GitH
 - **SHA256**: fac150d4db129656134597c4791bc1b54dea6601f52cefe3227537858581d609
 
 ## 相关实体
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/635-claude-managed-agents.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/830-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents 平台正式发布](ch01/396-anthropic-claude-managed-agents.html)
-- [Claude Managed Agents 开发者指南](../ch04/635-claude-managed-agents.html)
-- [claude managed agents official](../ch04/709-claude-managed-agents-official.html)
+- [Claude Managed Agents 开发者指南](../ch04/830-claude-managed-agents.html)
+- [claude managed agents official](../ch04/718-claude-managed-agents-official.html)
 
-- [obsidian claude code integration guide](../ch09/156-obsidian-claude-code-integration-guide.html)
-- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/506-anthropic-claude-agent.html)
+- [obsidian claude code integration guide](../ch09/157-obsidian-claude-code-integration-guide.html)
+- [Anthropic puts Claude agents on a meter across its subscriptions](../ch04/508-anthropic-claude-agent.html)
 - [Introducing Claude for Small Business](ch01/032-introducing-claude-for-small-business.html)
 - [Introducing Claude for Small Business](ch01/032-introducing-claude-for-small-business.html)
-- [Xero Announces Integration with Anthropic's Claude](ch01/1609-anthropic.html)
-- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1158-anthropic-claude.html)
+- [Xero Announces Integration with Anthropic's Claude](ch01/780-anthropic.html)
+- [Anthropic 首次揭秘下一代 Claude 怎么造](ch01/1159-anthropic-claude.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
-- [Anthropic Computer Use 最佳实践](ch01/1218-anthropic-computer-use.html)
+- [Anthropic Computer Use 最佳实践](ch01/1219-anthropic-computer-use.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

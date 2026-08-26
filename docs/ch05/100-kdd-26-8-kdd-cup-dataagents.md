@@ -29,14 +29,14 @@
 - 错误反馈、超时控制、自动重试机制提升长链路任务稳定性与容错
 - 异构数据处理：多模态视频理解子智能体 + 非结构化文档 ETL 子智能体，增强主智能体数据提取与综合分析
 
-获奖代码已在 GitHub 开源（`zhezh/kddcup2026_champion`）。该方案验证了 Agent Harness（工具编排 + 子智能体分工 + 容错机制）在复杂异构数据分析场景的有效性，与 [Agent Harness 上下文管理](ch05/066-agent-harness.html) 及 [Agent Orchestration](../ch04/624-agent-orchestration.html) 的工程实践同构。
+获奖代码已在 GitHub 开源（`zhezh/kddcup2026_champion`）。该方案验证了 Agent Harness（工具编排 + 子智能体分工 + 容错机制）在复杂异构数据分析场景的有效性，与 [Agent Harness 上下文管理](ch05/066-agent-harness.html) 及 [Agent Orchestration](../ch04/630-agent-orchestration.html) 的工程实践同构。
 
 ## 相关实体
 
-- [美团 LongCat 2.0](../ch04/487-longcat-2-0.html) — 美团大模型家族
-- [GenRec（Netflix）](../ch01/1149-llm.html) — 生成式推荐对照
+- [美团 LongCat 2.0](../ch04/488-longcat-2-0.html) — 美团大模型家族
+- [GenRec（Netflix）](../ch01/1523-llm.html) — 生成式推荐对照
 - [Discretizing Reward Models](../ch01/367-discretizing-reward-models.html) — 奖励模型离散化
-- [美团 LoHOSearch](../ch04/674-lohosearch.html) — Agent 搜索评测
+- [美团 LoHOSearch](../ch04/682-lohosearch.html) — Agent 搜索评测
 - [美团 Turing Agent 评估](../ch03/006-agent.html) — 同团队评估方法论
 - [Agent Harness 上下文管理](ch05/066-agent-harness.html) — Harness 工程实践
 

@@ -128,7 +128,7 @@ iOS/Android 端体验弱于桌面端，优化方案：
 
 ## 相关实体
 
-- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](../ch01/1132-20.html)
+- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](../ch01/1133-20.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
 
 - 核心写作和链接工作留在桌面端完成

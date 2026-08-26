@@ -49,10 +49,10 @@ Vibe Coding 与 Agentic Engineering 不是替代关系，而是**同一谱系的
 ## 相关实体
 
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview](../ch04/555-vibe-coding-agentic-engineering.html)
-- [无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](../ch01/1132-20.html)
+- [Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview](../ch04/557-vibe-coding-agentic-engineering.html)
+- [无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](../ch01/1133-20.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/189-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy：Vibe Coding 已死，Software 3.0 来了](../ch04/298-agentic.html)
 - [AI 写前端 ≠ 设计：Anomaly 创始人的哲学批判](../ch05/001-impeccable.html)
 - [7 个月 Vibe Coding 失败复盘：God Object 的诞生](../ch05/111-ai.html)

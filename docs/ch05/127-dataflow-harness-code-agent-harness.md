@@ -42,7 +42,7 @@ DataFlow-Harness 通过在以下三个层面施加约束来桥接 NL2Pipeline ga
 
 ## 相关实体
 
-- [Skill 安全评估](../ch01/1124-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill 安全评估](../ch01/1125-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Claude Code Harness 深度解析](ch05/088-claude-code-harness.html)
 - [阿里 Skill-Up Agent 技能评估](../ch04/366-alibaba-skill-up-agent-skill.html)
 - [CLAW SWE-bench Harness 评估](ch05/091-harness.html)

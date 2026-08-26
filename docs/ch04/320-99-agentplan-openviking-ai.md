@@ -91,7 +91,7 @@ OpenViking 的虚拟文件系统范式解决了这些问题：
 ## 相关实体
 
 - [AgentCore + OpenViking 搭建指南](../ch03/006-agent.html)
-- [火山引擎 Data Agent 产品概述](ch04/469-data-agent.html)
+- [火山引擎 Data Agent 产品概述](ch04/470-data-agent.html)
 - [火山引擎 Agentic 全栈数据管理](ch04/298-agentic.html)
 - [火山引擎 AI 搜索 Agent 架构](../ch03/006-agent.html)
 

@@ -19,7 +19,7 @@
 
 ## 与现有 Skill 体系的关系
 
-本文与 [Anthropic 官方 Agent Skills 设计模式](../ch01/1609-anthropic.html)、[Skill 设计 8 块清单](../ch04/350-skill.html)、[Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 同属 Skill/Harness 工程化议题——本文的差异化在于从**原理层**（触发/作用域/优先级）而非模式清单切入，并附真实工程案例。
+本文与 [Anthropic 官方 Agent Skills 设计模式](../ch01/780-anthropic.html)、[Skill 设计 8 块清单](../ch04/350-skill.html)、[Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 同属 Skill/Harness 工程化议题——本文的差异化在于从**原理层**（触发/作用域/优先级）而非模式清单切入，并附真实工程案例。
 
 ## 价值
 

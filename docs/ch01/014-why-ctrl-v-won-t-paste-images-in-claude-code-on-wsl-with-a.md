@@ -75,7 +75,7 @@ clip-listener.exe + wsl-clip-bridge + Alt+V 的组合体现了一个重要的工
 
 - [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch05/111-ai.html) — 同一技术文章系列的领域工程讨论
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同为 TLDR AI Newsletter 推荐的技术深度分析
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1132-20.html) — 系统内部机制调试方法
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1133-20.html) — 系统内部机制调试方法
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/023-build-agents-not-pipelines.html) — 软件工程实践讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 跨平台工程问题分析
 

@@ -67,9 +67,9 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 ## 相关实体
 
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/023-build-agents-not-pipelines.html) — 同一系列关于软件工程方法论的文章
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/1132-20.html) — 同为 TLDR AI Newsletter 推荐的深度技术分析
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](ch01/1133-20.html) — 同为 TLDR AI Newsletter 推荐的深度技术分析
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同一技术文章系列的姊妹篇
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1132-20.html) — 技术深度分析系列
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](ch01/1133-20.html) — 技术深度分析系列
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 安全与工程实践交叉话题
 
 ## 相关主题

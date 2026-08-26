@@ -45,7 +45,7 @@ BioNeMo Agent Toolkit 将生物学、化学、基因组学等领域的方法封�
 - **蛋白质设计**（de novo 蛋白设计）
 - **生物标志物发现**（与临床数据的关联分析）
 
-每种技能都是一个标准化接口，Agent 只需知道"输入什么、输出什么"，而不必理解底层的科学计算细节。这与 [Agent 团队协作模式](../ch01/1214-claude.html) 中讨论的"工具抽象层"理念一致——Agent 通过标准化工具接口获取领域能力，而非内化所有领域知识。
+每种技能都是一个标准化接口，Agent 只需知道"输入什么、输出什么"，而不必理解底层的科学计算细节。这与 [Agent 团队协作模式](../ch01/1487-claude.html) 中讨论的"工具抽象层"理念一致——Agent 通过标准化工具接口获取领域能力，而非内化所有领域知识。
 
 ### 科学 Agent 与传统 AI 的区别
 
@@ -83,7 +83,7 @@ NVIDIA 的核心竞争力在于其**底层硬件+软件栈+生态伙伴**的垂�
 
 ## 相关实体
 
-- [Agent Teams 与群聊模式](../ch01/1214-claude.html) — Agent 团队协作与工具抽象层设计
+- [Agent Teams 与群聊模式](../ch01/1487-claude.html) — Agent 团队协作与工具抽象层设计
 - [Harness Engineering 实践](../ch05/050-harness-engineering.html) — 生产级 Agent 的可靠性设计原则
 - [Agent 评测方法论与体系设计](../ch03/006-agent.html) — Agent 自主性分级与评测标准
 - [NVIDIA BlueField DPU 助力 AI 云](../ch05/111-ai.html) — NVIDIA 计算生态的另一重要产品线

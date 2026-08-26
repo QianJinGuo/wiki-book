@@ -49,11 +49,11 @@ v1 是 vLLM 的一次架构级重构：token 级调度器（token-based schedule
 
 ## 相关实体
 
-- [vLLM 高效推理](ch01/1584-ai-infra.html)
+- [vLLM 高效推理](ch01/1481-ai-infra.html)
 - [ServiceNow vLLM Correctness](ch01/884-vllm.html)
 - [vLLM v0 to v1 Correctness](ch01/884-vllm.html)
 - [量化技术](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md)
-- [投机解码](ch01/1216-spec.html)
+- [投机解码](ch01/1217-spec.html)
 - [SGLang 推理部署](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang-inference-deployment-practice-benchmark-tuning.md)
 - [llama.cpp 部署](../ch11/168-llama-cpp-deployment.html)
 

@@ -113,7 +113,7 @@ VISTA 填补了现有 Benchmark 的空白：SWE-bench 评测代码修复能力�
 - [RoadmapBench — 长周期 Agentic 软件开发评估](../ch04/319-roadmapbench-long-horizon-agentic-software-development.html) — 从版本升级角度看长周期编码能力
 - [Harness Engineering 的核心地位](../ch05/050-harness-engineering.html) — 工作流设计与模型能力的系统整合
 - [Agent Harness 综述](../ch05/066-agent-harness.html) — 同一模型在不同架构下的表现差异分析
-- [SWE-bench Agent 评估](../ch04/483-swe-bench-agent.html) — 传统代码修复 Benchmark 的方法论
+- [SWE-bench Agent 评估](../ch04/484-swe-bench-agent.html) — 传统代码修复 Benchmark 的方法论
 - [Design-to-Code](../ch09/006-design-to-code.html) — 从设计稿到代码的自动化转换技术
 - [Agent 评估系统指南](../ch03/006-agent.html) — 系统性 Agent 评估方法论
 

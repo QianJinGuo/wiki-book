@@ -166,7 +166,7 @@ Hermes 接入场景中，Gateway 把 capture、search、recall 暴露为 HTTP �
 - [Agent 记忆模块化框架](../ch04/180-agent-memory.html)
 - [Agent 夜间任务编排](../ch03/006-agent.html)
 - [注意力塌陷与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-- [TencentDB Agent Memory 长期记忆金字塔](ch06/009-tencentdb-agent-memory.html)
+- [TencentDB Agent Memory 长期记忆金字塔](ch06/032-tencentdb-agent-memory.html)
 - [Agent Harness 上下文管理工作集](../ch05/066-agent-harness.html)
 
 ## 来源

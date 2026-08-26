@@ -1,63 +1,80 @@
-# 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
+# AI Agent Skill 系统设计：淘宝技术工程实践
 
-## Ch04.540 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
+## Ch04.540 AI Agent Skill 系统设计：淘宝技术工程实践
 
-> 📊 Level ⭐⭐ | 7.0KB | `entities/aliyun-cms2-cli-skill-natural-language-observability.md`
+> 📊 Level ⭐⭐ | 7.0KB | `entities/skill-system-design-taobao-technology-2026.md`
 
-# 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
+# AI Agent Skill 系统设计：淘宝技术工程实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cms2-cli-skill-natural-language-observability.md)
+大淘宝技术（会员技术团队）系统阐述了 AI Agent Skill 系统的设计理念与工程实践。核心观点是将 Skill 视为**行为编程**而非文档，通过结构化设计（YAML+Markdown、DOT 流程图、检查表）和严格的约束机制（门控、合理化防御、说服原则）来规范 Agent 的行为。
 
-## 摘要
+## 核心洞察
 
-阿里云云原生团队（铖朴、珂帆）介绍了一种用 AI Agent Skill 驱动云监控可观测接入的新范式：以 `aliyun cms2` CLI 插件作为执行层，覆盖 CMS 2.0 整合的 APM、RUM、Prometheus 与告警管理四大能力，再把完整的 CLI 操作知识封装为 `alibabacloud-cms-manage` Skill，让用户用一句自然语言就能完成原本需要 8+ 条命令、跨多步参数传递的接入流程。
+### Skill 工程化的 6 个独特贡献
 
-## 核心要点
+1. **HARD-GATE 门控语法**：`<HARD-GATE>...</HARD-GATE>` 显式声明条件门，在条件满足前禁止后续动作。不同于软性建议，门控是**执行边界**，让 Skill 在关键路径上更像程序而非建议
+2. **自由度三级分级**：高（结构原则+示例）/中（模板+字段说明）/低（脚本确定性），附带具体场景映射。一个常见错误是把脆弱操作写成开放建议，另一个是把需要判断的任务写成死流程
+3. **前向测试（Forward Testing）协议**：用子代理模拟真实用户任务，但不泄露预设诊断和预期答案。测试污染的主要来源就是「审稿人模式」
+4. **合理化（Rationalization）防御**：AI Agent 在压力下会给跳过规则找到合理的借口。Skill 需要提前写出这些借口并给出反驳，这是人类文档思维和 Agent 行为编程的关键分水岭
+5. **DOT 流程图嵌入**：用 GraphViz DOT 格式直接在 SKILL.md 中嵌入可执行流程图，处理非线性判断、循环、回退等纯文本难以稳定的分支
+6. **平台适配策略**：写行为规则，用平台层适配具体工具名，平台能力不足时优雅降级
 
-- CMS 2.0（CloudMonitor Service）是阿里云统一可观测管理平台，整合了应用监控（APM）、前端监控（RUM）、Prometheus 服务与告警管理四类能力，面向从 Java 微服务到 AI Agent 的多样化应用形态。
-- `aliyun cms2` 是阿里云 CLI 的子命令插件（要求 CLI 版本 ≥ 3.3.15），覆盖 CMS 2.0 各模块的命令行操作，凭证复用 `aliyun configure` 配置。
-- CLI 接入统一遵循 6 步流程：获取账号 ID → 初始化 APM 基础设施（幂等）→ 获取接入凭证（LicenseKey、Endpoint）→ 注册应用服务 → 获取接入配置模板 → 验证接入。
-- APM 接入支持三种方式：ack-onepilot（K8s 容器自动注入）、手动自研探针、原生 OpenTelemetry；对主流 AI 框架提供开箱即用体验，可观测 LLM 调用耗时、Token 用量与 Agent 链路。
-- `alibabacloud-cms-manage` Skill 将 CLI 操作流程转化为 AI Agent 可执行的结构化工作流，核心链路为：意图解析 → 参数派生 → 命令编排 → 执行验证。
-- 安全上采用两阶段确认协议：只读命令（get/list）与 CMS 后端资源创建免确认，而 Patch 集群资源（如 `kubectl patch deployment`）必须经用户 yes/no 确认。
-- 演示场景中，LangChain 应用接入仅需一句自然语言，Agent 自动完成账号获取、集群信息派生、基础设施初始化、凭证获取、服务注册、组件状态检查、Deployment 查找等 8 个环节。
+### 「发现层 vs 执行层」分离原则
+
+`name` 和 `description` 是发现层（路由），正文是执行层。不要把触发条件放在正文里——Agent 在决定是否触发时看不到正文。`description` 也不能变成完整工作流摘要，否则 Agent 可能凭描述就开始执行。
+
+### 验证的完整链路
+
+```mermaid
+flowchart LR
+    A[写/修改 Skill] --> B[格式验证]
+    B --> C[前向测试]
+    C --> D{存在失败风险?}
+    D -->|是| A
+    D -->|否| E[交付]
+```
+
+## 与现有知识库的关联
+
+- [Skill 设计模式](ch04/350-skill.html) — **互补**：设计模式讲 Skill 内部结构组织（线性/Tool Wrapper/Generator 等），本文讲 Skill 的工程过程（创建/验证/门控/适配）
+- [Anthropic 14 个 Agent Skills 设计模式](ch04/315-anthropic-agent.html) — **互补**：Anthropic 14 模式讲 Skill 怎么写（渐进披露/上下文预算/排除条款等），本文补充了前向测试/门控/自由度分级等工程保障
+- [Anthropic Claude Skill 9 类任务分类法](../ch07/069-anthropic-claude-skill-9.html) — **互补**：9 类分类告诉你做什么类型的 Skill，本文告诉你怎么做和怎么验证
+- [Perplexity 内部 Skill 设计指南](ch04/350-skill.html) — Perplexity 的四维评价体系与本文的验证方法论可对照
 
 ## 深度分析
 
-### 从「命令记忆」到「流程知识」的封装
+### 行为编程 vs 文档写作：Skill 工程的范式转换
 
-文章的核心价值不在 CLI 本身，而在于把「接入知识」从人脑转移到 Skill 载体。6 步流程的真正痛点不是步骤多，而是 workspace、region、serviceName、language、attributes JSON 等参数需要在多条命令间精确传递，非高频使用 CLI 的运维人员极易出错。Skill 将这组操作固化为结构化工作流，本质上是把「该先做什么、参数从哪来、怎么验证」的隐性经验显性化——这与 Harness Engineering 的思路一脉相承：把反复出现的工程流程沉淀为可复用工具，而不是让 Agent 每次从零推理。
+这篇文章最核心的贡献不是具体的技巧，而是把 Skill 写作从「文档行为」重新定义为「行为编程」。这两者的区别是根本性的：
 
-### CLI 作为 Agent 工具层的现实优势
+- **文档思维**：把已知的背景知识完整写进去，让读者理解（人类审核时感觉"很清楚"）
+- **行为编程**：只补充 Agent 完成任务时缺少的程序性知识、资源边界和验证方式（Agent 执行时"更难走错"）
 
-相比直接编排云 API，CLI 封装对 Agent 更加友好：命令自带帮助自省（`--help`）、输出可结构化（`-o json`）、凭证复用既有配置、且支持幂等创建（`apm configuration create` 可重复执行）。示例中最关键的设计是「上下文自动补全」：Agent 通过 `sts get-caller-identity` 与 `cs describe-clusters` 自行派生 AccountId 和 regionId，用户无需手动提供任何环境信息。这正是自然语言驱动接入成立的前提——用户只表达意图，Agent 负责补齐执行所需的全部上下文。
+这个转换解释了为什么很多 Skill "写得很好但用起来不对"——它们通过了人类审稿，但没有通过 Agent 行为测试。HARD-GATE、合理化防御、前向测试这三个机制，本质上是把软件开发中的测试驱动理念移植到 Skill 工程中。
 
-### 安全边界的精细分级
+### HARD-GATE 的架构意义
 
-两阶段确认协议值得借鉴之处在于它不是「一刀切」：按操作影响面将命令分为三级——只读命令与 CMS 后端资源创建属于低风险，Agent 可直接执行；而 Patch 集群 Deployment 这类会改变线上资源的操作，必须展示执行计划并等待用户 yes/no。这种「默认信任 + 高风险确认」的分级模型，在效率与安全之间取得平衡，也为其他 Agent 执行敏感操作（安装组件、变更生产配置）提供了可复制的范式。
+HARD-GATE 语法是对 Anthropic "渐进披露"理念的工程化加强。Anthropic 说"信息要按需加载"，HARD-GATE 说"条件不满足就禁止执行"。两者的关系类似于正向约束和负向约束：渐进披露规定了**什么时候加载什么**，HARD-GATE 规定了**什么时候绝对不能做什么**。在安全敏感场景（删表、写生产、发消息），HARD-GATE 比渐进披露更有效。
 
-### ack-onepilot 的零侵入接入模式
+### 前向测试 vs 传统 QA 的差异
 
-K8s 场景采用 DaemonSet 在集群节点运行 Agent Pod，Deployment 打上指定 Label 后自动注入探针，应用无需修改代码或 Dockerfile。Patch 内容本质上是三个声明式 Label（`aliyun.com/app-language`、`armsPilotAutoEnable`、`armsPilotCreateAppName`）加 workspace 标注，通过 strategic merge patch 触发滚动更新并在 `rollout status` 处验证。这把「接入」从开发期的手工动作变成运行时声明式配置，叠加 Skill 自动化后，体验从「记命令、查参数、拼 JSON」压缩为一句自然语言描述。
+前向测试设计精巧地解决了 AI Agent 测试的一个根本矛盾：测试者不能既当命题人又当阅卷人。用子代理做前向测试时，如果子代理只有在看到你（测试设计者）的结论后才能成功，说明 Skill 本身不够清楚或者测试设置已经泄露答案。这个观点比传统软件测试的 "test oracle" 问题多了一层 AI 特有的「暗示污染」风险。
+
+### 合理化防御与说服原则
+
+合理化防御（提前写出 Agent 可能用来跳过规则的借口并给出反驳）是这篇文章最有原创性的洞察之一。它揭示了 AI Agent 和普通软件的本质区别：普通软件不会找借口，而 AI Agent 会。这意味着 Skill 不仅要在正常路径上引导 Agent，还要在异常压力路径上预先堵住「走捷径的合理化通道」。这在传统软件开发中没有对应概念，是 Agent 工程独有的设计模式。
 
 ## 实践启示
 
-1. 把高频、多参数、易错的运维流程封装为 Skill 或结构化工作流，是降低 AI Agent 落地门槛的务实路径；封装时应把参数派生逻辑交给 Agent（如 region、账号 ID 自动推断），而非要求用户提供完整上下文。
-2. 为 Agent 选工具时优先考虑 CLI：支持结构化输出、幂等创建、自带帮助自省的工具能显著降低编排复杂度，也便于复用既有凭证体系。
-3. 为 Agent 设计分级安全策略：区分只读、后端资源创建、集群变更三类操作，只对影响面最大的操作设置人工确认，避免「事事确认」拖垮交互体验。
-4. 容器场景优先采用 Label 驱动的零侵入注入（如 ack-onepilot），把接入变成声明式配置，从而以同一套流程覆盖多语言、多框架应用。
-5. 用真实端到端演示（用户一句话 → Agent 完整命令日志 → 控制台监控数据可见）作为 Skill 的验收标准，验证的不只是命令正确性，还有交互体验与安全确认流程的完备性。
+1. **从「先写后验」改为「先收集例子，再规划结构，最后写内容」**：不从抽象能力开始写 Skill，从具体触发场景开始
+2. **每个 Skill 都要有 HARD-GATE**：至少在关键路径上（写生产、改数据、发消息）加一个显式门控
+3. **前向测试用子代理 + 原始任务**：不给子代理任何你的预设结论，让它像真实用户一样执行
+4. **维护一个「合理化借口」清单**：每次测试发现 Agent 绕过了规则，把它的"理由"加到 Skill 的防御段落里
+5. **平台适配层放在 agents/ 目录**：`agents/openai.yaml` 等文件负责映射工具名，SKILL.md 只写行为规则
+6. **自由度由任务脆弱度决定，不由作者自信决定**：脆弱操作（旋转 PDF = 低自由度）和判断操作（写方案 = 高自由度）分开处理
 
-## 相关实体
-
-- [CLI Agent 时代](../ch03/006-agent.html)
-- [Harness Engineering](../ch05/050-harness-engineering.html)
-- [一行命令让 AI 自己找技能](../ch05/111-ai.html)
-- [Claude Code 团队部署与 Agent Harness](../ch05/066-agent-harness.html)
-- [下一代企业架构：CLI 流程与 Skill](ch04/350-skill.html)
-- [阿里云 LLM Wiki 实践](../ch06/026-llm-wiki.html)
-- [可观测与监控 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+## 原始存档
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-system-design-taobao-technology-2026.md)
 
 ---
 

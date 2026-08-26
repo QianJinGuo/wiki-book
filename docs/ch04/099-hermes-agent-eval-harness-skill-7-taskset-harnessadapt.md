@@ -266,7 +266,7 @@ regression_failures | rejection_reason | review_notes
 | [Hermes 9 Module Architecture](../ch01/291-hermes.html) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/050-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
 | [Slim Cuhk Skill Lifecycle Agentic Rl](ch04/314-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
-| [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01/1239-auto-research.html) | **Deli Auto Research** | Continual learning + self-improvement |
+| [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch01/1240-auto-research.html) | **Deli Auto Research** | Continual learning + self-improvement |
 | [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/085-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 
 ## 十四、关键金句

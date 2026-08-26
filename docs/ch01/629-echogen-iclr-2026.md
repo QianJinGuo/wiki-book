@@ -69,9 +69,9 @@ EchoGen 的 5.2 秒推理延迟与 [SANA-Video 2.0](https://github.com/QianJinGu
 ## 相关实体
 
 - [SANA-Video 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/sana-video-2-hybrid-linear-attention-video-generation.md) — NVIDIA 的视频生成效率优化（扩散路线），与 EchoGen 的 VAR 路线形成对比
-- [MoE 架构](ch01/1448-moe-architecture.html) — 稀疏激活的架构效率路线，与 EchoGen 的范式效率路线互补
+- [MoE 架构](ch01/1451-moe-architecture.html) — 稀疏激活的架构效率路线，与 EchoGen 的范式效率路线互补
 - [量化技术](https://github.com/QianJinGuo/wiki/blob/main/entities/quantization-techniques.md) — 模型轻量化的另一维度，EchoGen 计划蒸馏至 0.1B 系列也属于轻量化范畴
-- [Speculative Decoding](ch01/1216-spec.html) — 推理加速方法，虽然用于 LLM，但其"推测 + 验证"的框架思路可以启发更多生成模型的加速设计
+- [Speculative Decoding](ch01/1217-spec.html) — 推理加速方法，虽然用于 LLM，但其"推测 + 验证"的框架思路可以启发更多生成模型的加速设计
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 从系统层面管理 AI 模型的质量-效率权衡
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/echogen-var-subject-driven-generation-iclr2026.md)

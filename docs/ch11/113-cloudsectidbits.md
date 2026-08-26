@@ -42,7 +42,7 @@ CloudSecTidbits 是 Doyensec 的云安全研究系列，专门呈现「Web 技�
 ## 相关实体
 - [AgentCore Identity: 3-legged OAuth + Session Binding 的安全架构](ch11/272-aws-bedrock-agentcore.html)
 - [AWS IDP Accelerator](ch11/308-aws-idp-accelerator.html)
-- [Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock](../ch04/377-ai-agent.html)
+- [Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock](../ch04/684-ai-agent.html)
 - [AWS Continuum：机器速度的安全自动化](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-continuum-security-machine-speed.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](ch11/063-prowler-genai.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)

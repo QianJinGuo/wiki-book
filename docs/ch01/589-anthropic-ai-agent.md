@@ -49,7 +49,7 @@ Anthropic 开发的 Agent SDK 核心思想是：**不要让模型在单一对话
 - **突破谄媚效应**：调教一个严厉的批评者要比调教一个完美的创作者容易得多
 - **合同谈判机制（Contract Negotiation）**：生成器和评估器在磁盘上反复协商，确定什么才叫"功能完成"。评估器认为有漏洞就直接拒绝签署合同。只有双方达成书面一致后，构建才会真正开始
 
-这种模式与 [Anthropic 多智能体研究系统](../ch04/677-anthropic-multi-agent-research-system.html) 中的验证者-执行者分离思路一脉相承。
+这种模式与 [Anthropic 多智能体研究系统](../ch04/685-anthropic-multi-agent-research-system.html) 中的验证者-执行者分离思路一脉相承。
 
 ### 审美量化
 
@@ -134,7 +134,7 @@ Rakuten 观察到委派单位从小块任务上移到决策级——人的注意
 
 ## 相关实体
 
-- [Anthropic Multi Agent Research System](../ch04/677-anthropic-multi-agent-research-system.html)
+- [Anthropic Multi Agent Research System](../ch04/685-anthropic-multi-agent-research-system.html)
 - [Claude Code Large Codebase Team Deployment Agent Harness](../ch05/066-agent-harness.html)
 - [Hidden Technical Debt Agent Harness](../ch05/066-agent-harness.html)
 - [Long Running Agent Ralph Loop Harness Takeover](../ch05/014-agent-ralph-loop-harness.html)

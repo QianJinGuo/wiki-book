@@ -15,7 +15,7 @@
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/321-amazon-nova.html)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](../ch11/310-amazon-bedrock.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11/152-build-financial-document-processing-with-pulse-ai-and-amazon.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/377-ai-agent.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/684-ai-agent.html)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/902-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)
 
@@ -23,7 +23,7 @@
 - [Amazon Nova Forge Hyperparameter Tuning Art Science](../ch11/065-amazon-nova-forge.html)
 - [Object Detection With Amazon Nova 2 Lite](../ch11/123-amazon-nova-2-lite.html)
 - [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](../ch11/314-bedrock.html)
-- [Accelerate Llm Model Loading And Increase Context Windows Wi](ch01/1401-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
+- [Accelerate Llm Model Loading And Increase Context Windows Wi](ch01/1402-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
 - [用 Amazon Quick 加速日常数据工作](../ch11/241-amazon-quick.html)
 - [使用 Amazon Cognito 多区域复制提高应用程序韧性](../ch11/082-amazon-cognito.html)
 - [Amazon Quick Arns Cross Account Migration And Namespace Perm](../ch11/298-amazon-quick-arns-cross-account-migration-and-namespace-per.html)

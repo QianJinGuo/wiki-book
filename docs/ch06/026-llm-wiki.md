@@ -49,9 +49,9 @@ Schema 设计是 LLM Wiki 的质量上限，也是最大的风险点：Schema �
 
 ## 相关实体
 
-- [Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](../ch01/1132-20.html)
+- [Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](../ch01/1133-20.html)
 - [RAG vs LLM Wiki 深度对比：企业知识库架构选型指南](../ch01/046-rag-vs-llm-wiki.html)
-- [RAG Chunk Embedding Rerank Pipeline](../ch01/1288-rag.html)
+- [RAG Chunk Embedding Rerank Pipeline](../ch01/407-rag.html)
 - [构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](ch06/026-llm-wiki.html)
 - [手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你](../ch07/019-hermes-skill.html)
 - [LLM Wiki 架构](ch06/026-llm-wiki.html)
