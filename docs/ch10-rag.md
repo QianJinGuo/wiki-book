@@ -2,7 +2,7 @@
 
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
 
-> 本章收录 **45 篇**实体，按深度递增排列。
+> 本章收录 **46 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 8 |
-| ⭐⭐ 工程师 | 需编程基础 | 34 |
+| ⭐⭐ 工程师 | 需编程基础 | 35 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 
 ---
@@ -2615,7 +2615,52 @@ YC总裁Garry Tan开源的AI第二大脑，8层架构从"找得到"到"真正记
 
 ---
 
-## Ch10.030 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+## Ch10.030 阿里「架构师 Agent」— 复杂系统理解与结构化知识库驱动技术方案设计
+
+> 📊 Level ⭐⭐ | 5.2KB | `entities/alibaba-architect-agent-complex-system-understanding-2026.md`
+
+# 阿里「架构师 Agent」— 复杂系统理解与结构化知识库驱动技术方案设计
+
+## 核心命题
+
+让大型存量分布式系统成为 AI 可理解、可推理、可验证的工程系统，让 AI Agent 真正变成「架构师」。这是迈向 7×24 小时 Agentic Coding 的必经之路——跨复杂业务系统的架构理解与设计此前没有系统性解决方案。
+
+## 核心痛点：局部正确、整体错误
+AI 在复杂存量系统最常犯的不是语法/单测错误，而是"局部正确、整体错误"：逻辑写在不该承担职责的服务、加同步调用消耗核心链路超时预算、删看似冗余的兼容逻辑破坏老客户端。根源是**缺失跨系统架构上下文**——字段为什么不能删、历史分支为何保留、MQ 消息为何只能加字段不能改语义、接口为何不能网关层校验，这些事实散落在历史方案/事故复盘/配置平台/同事经验/未记录约定中。
+
+## 白纸 vs 旧城
+新系统（白纸）边界可新建/接口可新定/历史包袱少，AI 容易；存量系统（运行多年的城市）有四类知识同时影响方案设计：代码（部分实现事实）、文档（部分设计意图）、配置（运行时行为）、经验（没写下来的约束）。没有机制组织，AI 难以从 PRD 走到完整技术方案。技术方案设计是 AI Coding 的核心源头起点。
+
+## 知识库建设（承接《分解一座冰山》）
+
+### 首先对齐领域：结构化设计
+原始输入越精确，结论越精确高效。类似带新实习生给强结构化文档层层递进，而非丢文档库自己检索。人类架构师有 DDD 等方法论，架构应天然有领域边界、面向领域强结构化。
+
+### 反直觉设计：为什么不首推 RAG
+RAG 检索解决"从资料中找出可能相关内容"，不解决"AI 是否拿到做出完整工程判断所需的知识集合"。问题：①检索结果碎片化/上下文不完整；②低结构低密度碎片化资料统一检索得到"更容易搜索但依然杂乱"的仓库；③无法约束 AI 必须理解哪些方面。**固定结构提供"知识覆盖约束"**（解决一个业务问题至少理解哪些方面），RAG 只能"这里有些可能相关的资料"。RAG 适合长尾资料发现/历史定位/开放式问答/证据补充，作为知识骨架之外的扩展检索。
+
+### 蒸馏架构师的大脑：业务知识库
+开发 skill 把技术方案设计文档/技术稳定性梳理文档蒸馏成强结构化业务知识库（含下载分析交互图）。业务知识库以领域为边界，至少五类内容，给 AI 确定阅读路径（元语→场景→领域原则→实践）。
+
+### 知识正确性需要维护机制
+服务知识库与 Git Push/PR/版本发布联动，Hook/CI 按 Diff 识别受影响 API/对象/数据库/消息/配置/测试知识，生成待更新候选并校验。但不走向极端：对 API 契约/数据库语义/MQ Schema/状态机/历史兼容/安全策略等高风险知识，自动化负责发现变化/生成候选/阻止遗漏，**人负责确认语义**。业务知识库需人工沉淀 + 自动化校验两种互补机制。
+
+### 渐进式披露：四层知识路径
+分层四层（业务层/架构层/系统层/实现层），每层迭代频率递增，让下一步由前一步结论触发：业务层（为什么改/业务落在哪/元语对应哪些系统或API，business-knowledge+蒸馏）、架构层（涉及哪些系统/影响谁，aitom/服务图谱/接口依赖）、系统层、实现层。
+
+## 落地价值
+让 AI 对人依赖进一步降低，更快迈向 7×24 小时 Agentic Coding。把存量大型分布式系统从只存在于少数人脑中，变成 AI 可全方位理解、参与方案设计/研发执行/线上排查的工程系统。
+
+## 相关实体
+- → [后端系统「AI 知识库体系」建设实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-knowledge-base-system-backend-practice-alibaba-2026.md) — 同作者前作（知识库体系基础）
+- → [腾讯 AI Coding 深水区](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-ai-coding-deep-water-fact-vs-judgment-2026.md) — 同类 AI 工程化方法论
+- → [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-architect-agent-complex-system-understanding-2026.md)
+
+---
+
+## Ch10.031 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
@@ -2686,7 +2731,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ---
 
-## Ch10.031 How we built SmithDB’s inverted index for full-text search
+## Ch10.032 How we built SmithDB’s inverted index for full-text search
 
 > 📊 Level ⭐⭐ | 4.8KB | `entities/how-we-built-smithdb-s-inverted-index-for-full-text-search.md`
 
@@ -2737,7 +2782,7 @@ Across agent traces, the same JSON paths and token values repeat in virtually ev
 
 ---
 
-## Ch10.032 为OpenClaw配置网盘空间的最佳实践
+## Ch10.033 为OpenClaw配置网盘空间的最佳实践
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/openclaw-cloud-storage-config-guide-wechat.md`
 
@@ -2782,7 +2827,7 @@ PDS 的权限模型以 `domain_id` 为隔离边界。超级管理员通过手机
 
 ---
 
-## Ch10.033 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
+## Ch10.034 Common Crawl - Blog - Host- and Domain-Level Web Graphs April, May, and June 2026
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/common-crawl-blog-host-and-domain-level-web-graphs-april-may.md`
 
@@ -2825,7 +2870,7 @@ Please note that the text representation of the host-level graph is shipped in 2
 
 ---
 
-## Ch10.034 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
+## Ch10.035 Guardoc Health 医疗文档AI处理 — Amazon Nova 多模态 RAG 管线
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/guardoc-health-medical-document-processing-amazon-nova.md`
 
@@ -2888,7 +2933,7 @@ Guardoc 的部署效果量化案例：
 
 ---
 
-## Ch10.035 Task-Aware Knowledge Compression (TAKC)
+## Ch10.036 Task-Aware Knowledge Compression (TAKC)
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/task-aware-knowledge-compression-takc.md`
 
@@ -2945,7 +2990,7 @@ TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档
 
 ---
 
-## Ch10.036 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.037 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md`
 
@@ -2998,7 +3043,7 @@ TAKC 适用于知识库变化不频繁、查询模式可预测、需要跨文档
 
 ---
 
-## Ch10.037 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
+## Ch10.038 3 倍于 VectorDBBench 榜首，火山 Milvus 如何把向量检索拉到新高度
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/3-倍于-vectordbbench-榜首火山-milvus-如何把向量检索拉到新高度.md`
 
@@ -3039,7 +3084,7 @@ source_published: 2026年7月8日 17:00
 
 ---
 
-## Ch10.038 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
+## Ch10.039 GraphRAG 实测：朴素 RAG 调优可胜复杂图谱方案
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/graphrag-needed-aws-9-rag-comparison-2026.md`
 
@@ -3093,7 +3138,7 @@ AWS 生成式 AI 创新中心与 Cisco 联合研究，在 STaRK-Prime 数据集�
 
 ---
 
-## Ch10.039 Query-Aware Compression: RAG 成本优化的后检索过滤模式
+## Ch10.040 Query-Aware Compression: RAG 成本优化的后检索过滤模式
 
 > 📊 Level ⭐⭐ | 2.4KB | `entities/query-aware-rag-cost-compression-pattern.md`
 
@@ -3119,7 +3164,7 @@ RAG 检索通常调高召回率，返回大量潜在相关块（top-k 常见 5-2
 
 ---
 
-## Ch10.040 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
+## Ch10.041 WWW 2026 | 强化学习重塑GraphRAG，多跳推理F1提升83.81%
 
 > 📊 Level ⭐⭐ | 2.4KB | `entities/www-2026-强化学习重塑graphrag多跳推理f1提升8381.md`
 
@@ -3142,7 +3187,7 @@ RAG 检索通常调高召回率，返回大量潜在相关块（top-k 常见 5-2
 
 ---
 
-## Ch10.041 腾讯新研究：让Agent在语料中搜得更快、更准
+## Ch10.042 腾讯新研究：让Agent在语料中搜得更快、更准
 
 > 📊 Level ⭐⭐ | 1.1KB | `entities/rarg-relevance-aware-ripgrep-search-agent-tencent-2026.md`
 
@@ -3157,7 +3202,7 @@ RAG 检索通常调高召回率，返回大量潜在相关块（top-k 常见 5-2
 
 ---
 
-## Ch10.042 RAG for Documents
+## Ch10.043 RAG for Documents
 
 > 📊 Level ⭐⭐ | 0.6KB | `entities/rag-for-documents.md`
 
@@ -3174,7 +3219,7 @@ RAG 检索通常调高召回率，返回大量潜在相关块（top-k 常见 5-2
 
 ---
 
-## Ch10.043 Ettin Reranker Family
+## Ch10.044 Ettin Reranker Family
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 
@@ -3369,7 +3414,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ---
 
-## Ch10.044 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
+## Ch10.045 Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers
 
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/multi-vector-late-interaction-embedding-models-with-sentence.md`
 
@@ -3398,7 +3443,7 @@ cross-encoder 交互最早（query 与 doc 一起过模型，最准但 doc 无�
 
 ---
 
-## Ch10.045 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
+## Ch10.046 文件上传即可检索：实时多模态向量链路落地实践（字节跳动）
 
 > 📊 Level ⭐⭐⭐ | 1.7KB | `entities/file-upload-multimodal-vector-pipeline-real-time-2026-08-04.md`
 

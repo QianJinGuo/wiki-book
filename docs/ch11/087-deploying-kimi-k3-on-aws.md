@@ -87,13 +87,13 @@ Kimi K3 的部署矩阵从「只能选 AWS p6-b300」扩展为三硬件选项：
 
 ## 相关实体
 
-- [Kimi K3 2.8T Open Source Model 2026](../ch01/1422-kimi-k3.html) — Architectural deep dive on KDA, Attention Residuals, Stable LatentMoE, and GPU compiler innovations
-- [Kimi K3 2 8T Params Open Source](../ch01/890-kimi-k3-2-8t.html) — Coverage of the open-source release and model availability on Hugging Face
+- [Kimi K3 2.8T Open Source Model 2026](../ch01/1424-kimi-k3.html) — Architectural deep dive on KDA, Attention Residuals, Stable LatentMoE, and GPU compiler innovations
+- [Kimi K3 2 8T Params Open Source](../ch01/892-kimi-k3-2-8t.html) — Coverage of the open-source release and model availability on Hugging Face
 - [Kimi K3 The Open Weights Escalation](../ch01/608-kimi-k3-the-open-weights-escalation.html) — Industry analysis on geopolitical and competitive implications of open-weight 3T models
 - **SageMaker HyperPod** — SageMaker HyperPod managed infrastructure for large-scale ML workloads
-- [Vllm](../ch01/884-vllm.html) — The vLLM inference engine powering the Kimi K3 serving stack
-- [Moe Architecture](../ch01/1451-moe-architecture.html) — Mixture of Experts architecture pattern used by Kimi K3 and other large-scale models
-- [Amd Free Gpu Deepseek R1 Private Deployment](../ch01/803-deepseek.html) — AMD 上部署开源模型的先例
+- [Vllm](../ch01/886-vllm.html) — The vLLM inference engine powering the Kimi K3 serving stack
+- [Moe Architecture](../ch01/1453-moe-architecture.html) — Mixture of Experts architecture pattern used by Kimi K3 and other large-scale models
+- [Amd Free Gpu Deepseek R1 Private Deployment](../ch01/1475-deepseek.html) — AMD 上部署开源模型的先例
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deploying-kimi-k3-on-aws.md) · [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-k3-mi355x-amd-deployment-wafer.md)
 

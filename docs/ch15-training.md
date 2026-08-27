@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **65 篇**实体，按深度递增排列。
+> 本章收录 **67 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 16 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 42 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 44 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 
 ---
@@ -5408,7 +5408,48 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 
 ---
 
-## Ch15.054 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
+## Ch15.054 GeoRA — 面向 RLVR 优化几何的低秩适配方法（ACL 2026 杰出论文）
+
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/geora-geometry-aware-lora-rlvr-meituan-2026.md`
+
+# GeoRA — 面向 RLVR 优化几何的低秩适配方法（ACL 2026 杰出论文）
+
+## 核心命题
+
+RLVR（可验证奖励强化学习）与 SFT 的**优化几何存在本质差异**：SFT 通过改写权重主方向注入新信息，而 RLVR 更像受约束的优化，有效更新分散在稀疏子空间、倾向于避开预训练权重主方向。为 SFT 设计的低秩先验（LoRA/PiSSA/MiLoRA）直接搬到 RLVR 上构成**几何错位**，导致效果欠优、能力遗忘甚至训练崩溃。GeoRA 把低秩适配显式对齐到 RLVR 的更新几何，是**首个面向 RLVR 优化几何设计的低秩训练方法**，入选 ACL 2026 杰出论文奖（全球 18 篇）。
+
+## 方法：定位 + 压缩（三步骤）
+
+1. **构造几何子空间**：谱先验 M_Spec（对 W 做秩 r 低秩近似取低幅值区域，保稳定性）+ 欧氏先验 M_Euc（在原始 W 取接近零参数，保可塑性），共用稀疏率 ρ，取并集 W_Geo = W ⊙ (M_Spec ∪ M_Euc)。两掩码互补：Qwen3-8B ρ=0.2 各选中 20% 但交集仅 4.55%、Jaccard 0.128，消融证实去掉任一先验都掉性能。
+2. **低秩近似构造适配器**：对 W_Geo 做 SVD 取前 r 个奇异分量初始化 A_Geo/B_Geo（Eckart–Young 保证 Frobenius 最优）。核心区别：取 W_Geo 的 top-r 而非原始 W 的 top-r。四方法对照：LoRA 不看权重、PiSSA 看主方向、MiLoRA 看尾方向、**GeoRA 先换更合适的适配对象再取主方向**。
+3. **建立残差锚点**：W_res = W − (α/r)·B_Geo A_Geo 冻结。两个性质：初始化时函数不变（避免 RLVR 冷启动策略抖动污染 rollout 采样）；结构约束防止预训练表示被破坏。预处理一次性，训练计算图与标准 LoRA 完全一致。
+
+## 实验结果（DeepMath-103K GRPO，Qwen3-8B / Llama-3.1-8B）
+
+- **数学推理与 OOD**：ID 两个骨干都最强，Qwen3-8B AIME24 达 23.75%（略高于全参微调）；OOD 全参在 IFEval/TruthfulQA 明显回退而 GeoRA 基本无损，HumanEval 76.83→82.93 → 减少能力遗忘。
+- **医学/代码**：稳定优于低秩基线、与全参相当。
+- **收敛与稳定性**：全程领先、达高位性能更早；学习率宽区间维持高奖励（超参鲁棒）。
+- **计算效率**：vs 全参可训练参数 -99.5%、单步耗时 -19.9%、显存 -28.5%；对照 SparseFT（-68% 参数但 +10.8% 耗时）说明低秩稠密把参数效率真正转化为速度/显存收益。
+- **低秩结构分析**：三组奇异值谱证明"低秩是 RLVR 内在属性"——稀疏本身不带来低秩（随机噪声各向同性）；W_Geo 谱形类似预训练权重（可压缩）；全参 RLVR 实际更新 ΔW 也呈重尾谱。这解释了 GeoRA 只训练 0.5% 参数就与全参相当。
+
+## 业务落地：AI 骑手招聘 Agentic RL
+
+场景：AI 主动触达跟进候选人、多轮沟通识别意愿/顾虑/决策卡点、推进面试入职（约面/入职/ROI 可验证，适合 RLVR）。训练需求组合：基模大 + 长上下文（开销可观）+ 增量能力规模不大（低秩容量足够承载）。业务体感最早怀疑"为 SFT 设计的低秩先验未必适合 RLVR"：LoRA/PiSSA/MiLoRA 效果差异明显、学习率调大训练不稳甚至崩。
+
+落地结果：**效果与全参相当、相比 LoRA 提升约 12%；效率与 LoRA 相当、显存相比全参降低 54%**（配 QLoRA 可进一步降）。落地经验：随机 SVD 初始化（一次性预处理，72B <1 分钟）；利用函数不变性质省略参考模型存储（W = W_res + 初始适配器，低秩开销小即可现算准确参考策略）。
+
+## 独立贡献
+①揭示 RLVR 更新子空间稀疏但各向异性可压缩；②提出定位（双先验掩码）+压缩（截断 SVD）+残差锚点（函数不变）的低秩适配框架，避免几何错位与稀疏计算效率瓶颈；③1.5B-32B 多领域 RLVR 广泛验证 + 业务 Agentic RL 落地。
+
+## 相关实体
+- → [AWS GRPO RLVR SageMaker 数学推理](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — RLVR 训练工程实践
+- → [可验证奖励强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — RLVR 范式背景
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/geora-geometry-aware-lora-rlvr-meituan-2026.md)
+
+---
+
+## Ch15.055 MobileForge：无标注手机 GUI Agent 适配系统（快手、浙大）
 
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/mobileforge-annotation-free-gui-agent-kuaishou-zju-2026.md`
 
@@ -5468,7 +5509,49 @@ HiFPO 将失败经验转化为训练信号，包含四条关键设计：
 
 ---
 
-## Ch15.055 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
+## Ch15.056 GRACE：量化感知训练与知识蒸馏联合优化（ICML 2026）
+
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/icml-2026-grace-quantization-aware-distillation.md`
+
+# GRACE：量化感知训练与知识蒸馏联合优化（ICML 2026）
+
+## 核心命题
+
+模型压缩的两个环节——知识蒸馏（变小）与量化（变窄）——**不该分开做，因为它们优化的是同一个表示**。主流流水线"先蒸馏再 PTQ"在 8-bit 尚可、4-bit 明显掉点：蒸馏阶段不知道后面要被量化（学生学到的表示分布尖锐、离群值多，最不适合低比特）；量化阶段已无教师可用（PTQ 的误差无法再被纠正）。GRACE 在**同一目标下联合优化 QAT 与 KD**，让 2B 学生在 4-bit 下逼近 7B 全精度教师，入选 ICML 2026。
+
+## 核心洞察：让学生在"戴着镣铐"的状态下学
+
+信息瓶颈（IB）视角：低比特权重限制学生能承载的表示复杂度，学生不应复刻教师全部输出，而应有选择保留影响决策的信息。由此引出三个设计问题：哪些教师输出值得学（教师也会错）、除了输出分布还有什么值得对齐（视觉 token 关系结构）、蒸馏与量化目标怎么配平。
+
+## 方法：四个模块
+
+1. **GDKD（置信度门控输出对齐）**：用教师输出分布归一化熵构造门控权重——教师越确定蒸馏权重越高，越犹豫越低。理论由 Fano 不等式支撑（熵高 → 可达到错误率下界高）。蒸馏损失沿用解耦 KD 拆成目标类/非目标类分别加权。
+2. **RCKA（视觉 token 关系对齐）**：在 LLM 倒数第二层取视觉 token 表示，算 Gram 矩阵，用 CKA 度量师生关系结构一致性（CKA 对正交变换/缩放不敏感，适合学生维度低 + 量化扰动场景）。比对齐数值更稳，注意力可视化显示视觉定位能力更强。
+3. **自适应 IB 控制器**：把蒸馏/关系/任务三损失配平写成带约束优化（蒸馏损失 ≤ τ 前提下最小化任务损失），拉格朗日对偶上升动态更新乘子 β。是 IB 启发式设计，非严格 IB 实现。
+4. **分组 LSQ（量化参与训练）**：权重量化以可微形式参与前向，步长 LSQ 学习、对数空间参数化保正、分位数初始化避震荡；分组粒度 128，支持 W8G128 / W4G128。
+
+## 实验与结果
+
+- **Qwen2-VL 7B→2B**：4-bit GRACE 学生八项基准均值 68.0，超 BF16 学生基线 4.0 点、超最强 4-bit 方法 SPEED-Q 5.7 点、与 7B 全精度教师差压缩到 3.7 点内。BF16→4-bit 只掉 1.2 点，其他 PTQ 在 4-bit 平均掉在 61 附近。
+- **Qwen3-VL 8B→2B**：三档精度相对 BF16 基线（67.3）分别提升 9.4/8.6/7.7 点。
+- **真实 kernel 实测**：INT4 用 AWQ kernel、INT8 用 GPTQ kernel，精度与仿真一致；A100 上 LLaVA-1.5 7B INT4 相比 FP16 在显存/体积/吞吐三项有数倍收益（7B 解码访存受限，位宽下降直接转吞吐）。
+
+## 工程价值
+
+无需额外教师微调、不依赖专有校准集；四个模块可单独插入现有 QAT/KD 流程。代码与量化后权重全部开源（github ForeverBlue816/GRACE）。这是**联合压缩**（joint compression）思路的代表——把互为因果的两个压缩步骤放进同一优化目标，而非串行 pipeline。
+
+## 相关
+
+- [GeoRA：面向 RLVR 优化几何的 LoRA](https://github.com/QianJinGuo/wiki/blob/main/entities/geora-geometry-aware-lora-rlvr-meituan-2026.md)
+- [Bonsai-Image-4B 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/bonsai-image-4b-quantization.md)
+- [Anthropic 蒸馏行为特质](https://github.com/QianJinGuo/wiki/blob/main/entities/anthopic-distillation-behavioural-traits-nature.md)
+- [GLM-5.3 post-training](https://github.com/QianJinGuo/wiki/blob/main/entities/glm-53-post-training-technical-blog-zhipu-xhs-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icml-2026-grace-quantization-aware-distillation.md)
+
+---
+
+## Ch15.057 EMCES (ICML 2026) — Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/emces-icml2026-episodic-memory-controlled-experience-synthesis-rl.md`
 
@@ -5508,7 +5591,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.056 SkillOS
+## Ch15.058 SkillOS
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillos.md`
 
@@ -5564,7 +5647,7 @@ EMCES 是**首个将情景记忆引入可控扩散模型并用于指导强化学
 
 ---
 
-## Ch15.057 Predicting Risk in Content Launches
+## Ch15.059 Predicting Risk in Content Launches
 
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
 
@@ -5600,7 +5683,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ---
 
-## Ch15.058 Vbot 具身基因组：跨本体智能继承（维他动力 秦海龙）
+## Ch15.060 Vbot 具身基因组：跨本体智能继承（维他动力 秦海龙）
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/vbot-embodied-genome-cross-embodiment-inheritance-qinhailong-2026.md`
 
@@ -5645,7 +5728,7 @@ ATOM 并非从零起步，它背后是已量产交付、走进真实用户生活
 
 ---
 
-## Ch15.059 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
+## Ch15.061 LocalDPO — 面向视频扩散模型的局部细节偏好优化方法 (CVPR 2026)
 
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/localdpo-cvpr2026-video-diffusion-local-preference-taobao.md`
 
@@ -5700,7 +5783,7 @@ LocalDPO 为视频生成模型的偏好对齐提供了一种高效、稳定且�
 
 ---
 
-## Ch15.060 Farewell Ai2
+## Ch15.062 Farewell Ai2
 
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/farewell-ai2.md`
 
@@ -5740,7 +5823,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.061 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
+## Ch15.063 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
 
@@ -5775,7 +5858,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 
-## Ch15.062 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.064 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 27.8KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -6156,7 +6239,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.063 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.065 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 22.3KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
 
@@ -6471,7 +6554,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 ---
 
-## Ch15.064 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.066 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
@@ -6545,7 +6628,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.065 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.067 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
 

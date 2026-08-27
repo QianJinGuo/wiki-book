@@ -45,8 +45,8 @@ Google Workspace 此次推出的 Microsoft 用户导入功能，是其针对中�
 
 ## 相关实体
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
-- [Google Debuts Gemini Focused Updates At Io 2026](ch01/1133-20.html)
-- [Pi Mono Github](ch01/1119-pi-mono-github.html)
+- [Google Debuts Gemini Focused Updates At Io 2026](ch01/1135-20.html)
+- [Pi Mono Github](ch01/1121-pi-mono-github.html)
 - [Google 开发者福利每月免费领取 10 美金别忘了来领啊](ch01/358-1.html)
 - [Rag技术框架的演进方向](ch01/407-rag.html)
 

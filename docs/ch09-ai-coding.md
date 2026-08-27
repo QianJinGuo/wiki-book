@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **201 篇**实体，按深度递增排列。
+> 本章收录 **202 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 14 |
 | ⭐⭐ 工程师 | 需编程基础 | 181 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 5 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
 
@@ -236,3 +236,4 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [199. Dockerless: 免环境补丁验证器](ch09/199-dockerless)
 - [200. 用好 Qoder Credits：优化的不是花费多少，而是单位 Credits 的产出](ch09/200-qoder-credits-credits)
 - [201. GLM-5 Scaling Pain 推理复盘](ch09/201-glm-5-scaling-pain)
+- [202. Ornith-1.5：模型自出题、自搭脚手架、自跑轨迹的编码 RL 闭环](ch09/202-ornith-1-5-rl)

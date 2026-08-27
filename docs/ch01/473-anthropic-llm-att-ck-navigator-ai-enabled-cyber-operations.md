@@ -120,10 +120,10 @@ ARiES 采**加性评分**（0-100），三个维度：
 -
 ## 相关实体
 
-- [hackers accessed bwh hotels reservation system for months](../ch05/111-ai.html)
+- [hackers accessed bwh hotels reservation system for months](../ch05/113-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-llm-attck-navigator-cyber-operations.md)
 - → [同 Anthropic 红队研究：前沿模型 N-day 利用能力](../ch04/330-anthropic-n-days-frontier-agent-vulnerability-research.html)
-- → [Mythos 营销角度](ch01/780-anthropic.html)
+- → [Mythos 营销角度](ch01/1603-anthropic.html)
 - → [Cloudflare Glasswing 视角 Mythos 安全](../ch12/031-mythos.html)
 - → [Arctic Wolf SOC 机器速度运营](https://github.com/QianJinGuo/wiki/blob/main/entities/arctic-wolf-security-operations-machine-speed.md)
 - → MITRE ATT&CK 框架（V18，外部参考）

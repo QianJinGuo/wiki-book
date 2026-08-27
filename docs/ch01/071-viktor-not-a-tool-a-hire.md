@@ -16,7 +16,7 @@
 
 ## 相关实体
 
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/111-ai.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch05/113-ai.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/407-rag.html)
 
 ## 深度分析

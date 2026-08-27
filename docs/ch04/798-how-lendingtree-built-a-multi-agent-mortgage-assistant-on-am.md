@@ -21,7 +21,7 @@ Supervisor Agent 基于 LangGraph 构建为状态机，采用 **plan-and-execute
 ## 与 Wiki 现有知识的关联
 
 - 与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的编排层设计一致——Supervisor 承担 orchestration loop，Worker 承担工具调用
-- [LangGraph 状态机](ch04/271-langgraph.html) 是多智能体编排的具体实现载体
+- [LangGraph 状态机](ch04/272-langgraph.html) 是多智能体编排的具体实现载体
 - 与 [Smartsheet 远程 MCP Server](../ch07/001-mcp.html) 同属"生产级 MCP + Agent 架构"家族
 - MCP 协议生态背景见 [MCP 协议生态](https://github.com/QianJinGuo/wiki/blob/main/concepts/mcp-protocol-ecosystem.md)
 

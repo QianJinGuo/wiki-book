@@ -68,7 +68,7 @@ Mollick 描述的真实工作流：
 
 Mollick 的总结："我感觉自己掌控着 AI 正在做的选择，因为 AI 检查了，它的工作是可见的。"
 
-**与 [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
+**与 [Harness Engineering Core Patterns](../ch05/096-harness-engineering.html) 的对照**：harness engineering 的核心是"控制面应当外置给人类"——Antigravity 的 Inbox 模式正是这一原则的产品化实现。
 
 ### 4. PhD 级智能的真实测试
 
@@ -113,11 +113,11 @@ Mollick 给整篇文章的总结：
 
 > "三年前，我们对机器能写关于水獭的诗印象深刻。不到 1000 天后，我在与一个建立自己研究环境的 Agent 争论统计方法论。chatbot 时代正在变成数字同事时代。"
 
-**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
+**这一判断与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html) 形成跨作者印证**——两篇文章都指向同一个结论：AI 工具的产品形态正在从"对话窗口"迁移到"工作流伙伴"。
 
 ### 7. 与 OpenAI Codex 演进的方向对照
 
-Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/737-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
+Mollick 明确把 Antigravity 与 Claude Code、OpenAI Codex 并列——三大 Agent 编程工具共同验证了"通用 Agent + 代码执行"的产品范式。这与 [GPT-5.4 Codex 的进展](ch01/738-codex.html) 中关于 OpenAI Codex 演进方向的论述形成跨厂商印证。
 
 ## 实践启示
 
@@ -188,16 +188,16 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 ## 相关实体
 
 - [Code As Agent Harness Survey](../ch09/064-code-as-agent-harness.html)
-- [GPT-5.4 Codex 进展](ch01/737-codex.html)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [GPT-5.4 Codex 进展](ch01/738-codex.html)
+- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Karpathy Agentic Engineering 综述](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [AgentOps on Bedrock](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [AgentOps on Bedrock](../ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Yann Dubois OpenAI 后训练访谈](ch01/594-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/016-wiki-evolver.html)
-- [AI Agent Harness 构建](ch01/1195-ai-agent-harness.html)
-- [Harness 状态边界与失败闭环](../ch05/091-harness.html)
+- [AI Agent Harness 构建](ch01/1197-ai-agent-harness.html)
+- [Harness 状态边界与失败闭环](../ch05/080-harness.html)
 - [Agent Vibecoder 上下文压缩](../ch06/045-headroom.html)
-- [腾讯混元 HY3 开源预览](ch01/140-hy3-preview.html)
+- [腾讯混元 HY3 开源预览](ch01/142-hy3-preview.html)
 - [Agent 记忆系统工程实践](../ch03/006-agent.html)
 
 ---

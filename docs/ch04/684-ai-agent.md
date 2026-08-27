@@ -14,7 +14,7 @@
 - 产品形态：海报设计、视频生成、代码生成等多模态覆盖
 - 局限性：文章为产品介绍性质，缺乏独立评测与竞品对比
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](../ch05/091-harness.html)
+- [Wow Harness V3 Governance Protocol](../ch05/080-harness.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/006-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/291-hermes.html)

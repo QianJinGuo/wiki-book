@@ -24,7 +24,7 @@ AI 外呼从 FAQ 演进为 Agent 模式，需同时具备 FAQ（知识解答话�
 当前聚焦最终回复，下一步引入轨迹与日志评估（Trajectory + Trace）度量中间过程、建仿真环境自动化评测 Planning-Action 循环、构建"评测-归因-修复"闭环（将评估结果与意图理解偏差/API 传参错误/基模幻觉等根因关联，输出定向策略/Prompt 优化建议）。
 
 ## 相关
-与 [美团图灵 Agent 评测体系](../ch03/006-agent.html) 同为国内大厂自建 Agent 评测案例，但本文是 LLM-as-a-Judge 具体实现 + 系统性偏见消除 + 量化人机一致率，属于实现级新维度；与 [LLM-as-a-Verifier](../ch01/1523-llm.html)（学术验证框架）互补，本文为生产环境外呼业务落地。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-judge-agent-eval-offline-huolala-2026.md)
+与 [美团图灵 Agent 评测体系](../ch03/006-agent.html) 同为国内大厂自建 Agent 评测案例，但本文是 LLM-as-a-Judge 具体实现 + 系统性偏见消除 + 量化人机一致率，属于实现级新维度；与 [LLM-as-a-Verifier](../ch01/871-llm.html)（学术验证框架）互补，本文为生产环境外呼业务落地。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-judge-agent-eval-offline-huolala-2026.md)
 
 ---
 

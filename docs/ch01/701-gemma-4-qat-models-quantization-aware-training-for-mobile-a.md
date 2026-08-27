@@ -115,12 +115,12 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](../ch03/006-agent.html)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/430-gemma-4-multi-token-prediction-drafters.html)
-- [Google Ai Vulnerability Exploitation Threat Intel](../ch05/111-ai.html)
-- [Bonsai Image 4B 1 Bit Ternary](../ch05/111-ai.html)
+- [Google Ai Vulnerability Exploitation Threat Intel](../ch05/113-ai.html)
+- [Bonsai Image 4B 1 Bit Ternary](../ch05/113-ai.html)
 - [Stochastic Parrot Language Models And Meaning](ch01/649-language-models-and-meaning.html)
 
 - [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](https://github.com/QianJinGuo/wiki/blob/main/entities/nextie-alpha-cognitive-model-4b-on-device.md)
-- [notes on pretraining parallelisms and failed training runs.](../ch05/111-ai.html)
+- [notes on pretraining parallelisms and failed training runs.](../ch05/113-ai.html)
 
 ## 原文链接
 

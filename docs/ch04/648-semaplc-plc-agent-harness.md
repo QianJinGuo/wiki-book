@@ -48,7 +48,7 @@ SemaPLC 是「验证门控 Agent Harness」在工业代码生成领域的落地�
 - [Harness 门控评测](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-gate-evaluation.md)
 - [Agent 形式化验证 AI 代码](../ch03/006-agent.html)
 - [LLM-as-a-Verifier](../ch01/527-llm-as-a-verifier-a-general-purpose-verification-framework.html)
-- [从 Spec 驱动到环境验证驱动](../ch05/128-ai-coding.html)
+- [从 Spec 驱动到环境验证驱动](../ch05/129-ai-coding.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semaplc-verification-gated-agent-harness-plc-codegen-2026-08-26.md)
 

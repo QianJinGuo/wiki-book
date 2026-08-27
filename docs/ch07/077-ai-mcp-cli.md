@@ -62,8 +62,8 @@ MCP 放弃会引发：身份验证碎片化、无审计追踪、供应商锁定�
 - [Cli Mcp Skill Architecture Decision Vibecoder](../ch04/350-skill.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](../ch04/350-skill.html)
 - [Baixing Ontoz Enterprise Ontology Multi Agent](../ch03/006-agent.html)
-- [From Agent Protocol To Harness Skill](../ch04/525-from-agent-protocol-to-harness-skill.html)
-- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/780-anthropic.html)
+- [From Agent Protocol To Harness Skill](../ch04/526-from-agent-protocol-to-harness-skill.html)
+- [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch01/1603-anthropic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-ai-agents-mcp-cli-skills-stack-ayi.md)
 - [Mcp Server Patterns](https://github.com/QianJinGuo/wiki/blob/main/moc/mcp-server-patterns.md)

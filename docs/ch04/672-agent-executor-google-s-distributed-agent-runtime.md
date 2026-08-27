@@ -39,9 +39,9 @@ Agent Executor 的开放性设计——支持 LangChain/LangGraph、ADK、以及
 ## 相关实体
 - [Agentexecutorgooglesdistributedagentruntime](ch04/441-agentrun.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch01/520-google-agentic-rag-sufficient-context-agent-framesqa-90.html)
-- [A Bitter Lesson For Data Filtering E8807D](../ch01/1037-a-bitter-lesson-for-data-filtering.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/497-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/497-agent-skills.html)
+- [A Bitter Lesson For Data Filtering E8807D](../ch01/1039-a-bitter-lesson-for-data-filtering.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/496-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/496-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
 

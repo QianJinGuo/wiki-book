@@ -78,13 +78,13 @@ Karpathy 引用的那句话是本次访谈最值得反复咀嚼的命题：
 
 ## 相关实体
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/757-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/298-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/277-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](ch04/757-agentic.html)
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox Transparent](../ch09/055-coding-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/298-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch04/757-agentic.html)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](ch04/410-ai-coding-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)

@@ -21,10 +21,10 @@ type: entity
 
 ## 相关实体
 - [Openai Models Codex Amazon Bedrock Ga](../ch11/310-amazon-bedrock.html)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/988-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/902-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/990-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](ch01/904-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
-- [Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment](../ch05/111-ai.html)
+- [Amazon Sagemaker Qualcomm Ai Hub Edge Npu Deployment](../ch05/113-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 

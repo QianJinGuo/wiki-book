@@ -56,9 +56,9 @@ Agent 评测结构比传统评测复杂得多：需要先准备好工具、运�
 
 ## 相关实体
 - [Agent Engineering Principles Architecture Practice](../ch03/006-agent.html)
-- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/050-harness-engineering.html)
-- [Factory Mission Multi Agent Architecture](../ch01/1479-factory-mission-multi-agent-architecture.html)
-- [Harness Engineering Long Term Agent Tasks](../ch05/050-harness-engineering.html)
+- [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/096-harness-engineering.html)
+- [Factory Mission Multi Agent Architecture](../ch01/1481-factory-mission-multi-agent-architecture.html)
+- [Harness Engineering Long Term Agent Tasks](../ch05/096-harness-engineering.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/684-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-principle-architecture-engineering-practice.md)

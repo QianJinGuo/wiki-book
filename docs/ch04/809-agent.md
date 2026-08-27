@@ -12,8 +12,8 @@
 
 ## 与 Wiki 现有知识的关联
 
-- 与 [企业 AI Loop 落地五对象](ch04/611-ai-loop.html) 互补：本文聚焦"业务语义接入"，五对象聚焦企业落地框架
-- 状态机实现见 [LangGraph State Machine](ch04/271-langgraph.html)
+- 与 [企业 AI Loop 落地五对象](ch04/612-ai-loop.html) 互补：本文聚焦"业务语义接入"，五对象聚焦企业落地框架
+- 状态机实现见 [LangGraph State Machine](ch04/272-langgraph.html)
 - 权限与凭据隔离：[云 Agent 基础设施状态/代码/凭据隔离](../ch03/006-agent.html)
 - 架构总览见 [Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
 

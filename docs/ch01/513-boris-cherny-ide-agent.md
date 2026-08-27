@@ -52,7 +52,7 @@ Claude Code 的爆发曲线违反直觉：前半年几乎没有 PMF（Product-Ma
 - 代码作者是"人" → 代码作者是"Agent"，审查者是"人"
 - 实时响应（小补全）→ 长任务执行（小时级 multi-step loop）
 
-这与 [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html) 中"控制面应当外置给人类"的工程原则一致——Human-in-the-Loop 不是降级方案，而是 Agent 系统设计的核心约束。
+这与 [Harness Engineering Core Patterns](../ch05/096-harness-engineering.html) 中"控制面应当外置给人类"的工程原则一致——Human-in-the-Loop 不是降级方案，而是 Agent 系统设计的核心约束。
 
 ### 3. "coding is solved"的前提条件分析
 
@@ -98,7 +98,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - 传统调用：用户请求 → Agent 一次性回答 → 结束
 - Loop 模式：用户定义目标 → Agent 持续观察 → 执行任务 → 检测失败 → 自动修复 → 汇报进展 → 继续循环，直到目标达成或失败不可恢复
 
-这与 [Claude Code Harness 深度解析](../ch05/088-claude-code-harness.html) 中的 harness 设计哲学一致——harness 的核心价值就是为 Agent 提供持续运行的工程环境，而非一次性对话界面。
+这与 [Claude Code Harness 深度解析](../ch05/089-claude-code-harness.html) 中的 harness 设计哲学一致——harness 的核心价值就是为 Agent 提供持续运行的工程环境，而非一次性对话界面。
 
 ### 6. 治理边界问题的工程框架
 
@@ -122,7 +122,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - Karpathy（理论侧）：Software 3.0——执行层自动化后，方向层变得更重要
 - Boris（工程侧）：控制点迁移——人从写代码的人变成管 Agent 工作流的人
 
-这与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
+这与 [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html) 中的论述相互印证——"Vibe Coding"是 Agent 时代的临时形态，"Agentic Engineering"才是稳定形态。
 
 ## 实践启示
 
@@ -173,16 +173,16 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 ## 相关实体
 
 - [两万字详解 Claude Code 源码核心机制](../ch03/085-claude-code.html)
-- [Claude Code Harness 深度解析](../ch05/088-claude-code-harness.html)
+- [Claude Code Harness 深度解析](../ch05/089-claude-code-harness.html)
 - [Claude Code Harness 深度理解](ch01/638-claude-code-harness-deep-understanding.html)
-- [深入理解 Claude Code Agent Harness 构建之道](../ch05/066-agent-harness.html)
+- [深入理解 Claude Code Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/006-agent.html)
-- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Anthropic 内部实践](ch01/358-1.html)
 - [DeepSeek V4 Flash Pro](ch01/1308-deepseek-v4-flash-pro.html)
 - [加速 LLM 模型加载与上下文窗口](ch01/1402-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
-- [大型表格模型基础](../ch05/111-ai.html)
+- [大型表格模型基础](../ch05/113-ai.html)
 
 ---
 

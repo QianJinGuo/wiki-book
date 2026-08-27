@@ -82,12 +82,12 @@
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [Claude Opus 48 The System Card B8460F](ch01/1487-claude.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/066-agent-harness.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
+- [Claude Opus 48 The System Card B8460F](ch01/639-claude.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/006-agent.html)
 - [17 种 agent 架构演进](../ch04/818-17-agent.html)
-- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/298-agentic.html)
+- [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch04/757-agentic.html)
 - [Erik Schluntz: vibe coding 在生产环境](https://github.com/QianJinGuo/wiki/blob/main/entities/erik-schluntz-vibe-coding-in-production.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

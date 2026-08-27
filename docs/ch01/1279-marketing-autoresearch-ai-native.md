@@ -43,10 +43,10 @@
 ### 关联实体
 
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/780-anthropic.html)
-- [Harness 之后 状态边界与失败闭环 若飞](../ch05/091-harness.html)
-- [Ai Agent Harness Construction Akshay Baoyu](ch01/1195-ai-agent-harness.html)
-- [Harness Engineering Core Patterns Claude Code](../ch05/050-harness-engineering.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](ch01/1603-anthropic.html)
+- [Harness 之后 状态边界与失败闭环 若飞](../ch05/080-harness.html)
+- [Ai Agent Harness Construction Akshay Baoyu](ch01/1197-ai-agent-harness.html)
+- [Harness Engineering Core Patterns Claude Code](../ch05/096-harness-engineering.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/684-ai-agent.html)
 
 ## 实践启示

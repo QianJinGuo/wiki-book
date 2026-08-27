@@ -145,7 +145,7 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 **与本 entity 的关系**：Brain 是"write–manage–read 闭环"的产品化实例——write 阶段记录工作上下文，manage 阶段构建 context graph，read 阶段在新任务起点注入经验。
 
 ## 相关主题
-- [Agent Skill Writing](ch04/619-agent-skill.html) — Skill 是 Memory 系统持久化的载体之一
+- [Agent Skill Writing](ch04/620-agent-skill.html) — Skill 是 Memory 系统持久化的载体之一
 - [Anthropic Mcp Revisited](../ch07/017-anthropic-mcp.html) — MCP 作为 Agent 工具调用协议，与 Memory 的世界模型有交叉（环境约束信息）
 - [Gbrain](../ch01/437-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html) — Compiled Truth + Timeline 知识模型，与 Memory 的信念追踪机制相关
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-architecture-essence.md)
@@ -157,7 +157,7 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 - [AI Agent 记忆系统架构](ch04/216-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch06/014-hermes-agent-memory.html)
 - [ai agent memory systems](ch04/180-agent-memory.html)
-- [Personal AI 工作台：Claude 18 动作框架](../ch05/111-ai.html)
+- [Personal AI 工作台：Claude 18 动作框架](../ch05/113-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

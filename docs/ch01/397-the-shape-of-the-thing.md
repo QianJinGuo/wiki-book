@@ -201,20 +201,20 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Opus 48 The System Card B8460F](ch01/1487-claude.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Claude Opus 48 The System Card B8460F](ch01/639-claude.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/255-openclaw.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/050-harness-engineering.html)
-- [Agent Harness Engineering Survey 2026](../ch05/050-harness-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/096-harness-engineering.html)
+- [Agent Harness Engineering Survey 2026](../ch05/096-harness-engineering.html)
 - [Gpt 5 It Just Does Stuff](ch01/421-gpt-5-it-just-does-stuff.html)
 - [Andrej Karpathy Claude Md 134K Stars 2026](ch01/422-claude-md.html)
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- [Agentic Harness Engineering Ahe](../ch05/050-harness-engineering.html)
-- [Agent Harness Architecture](../ch05/066-agent-harness.html)
+- [Agentic Harness Engineering Ahe](../ch05/096-harness-engineering.html)
+- [Agent Harness Architecture](../ch05/043-agent-harness.html)
 
 ---
 

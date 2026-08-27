@@ -39,7 +39,7 @@ Amazon EC2 P5en（2 × p5en.48xlarge，NVIDIA H200）+ AWS ParallelCluster + Ama
 
 ## 相关
 
-- [RLVR 概念](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md) / [Self-taught RLVR](ch01/1170-self-taught-rlvr.html) / [可验证奖励 RL](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) / [合成数据](https://github.com/QianJinGuo/wiki/blob/main/concepts/synthetic-data-generation.md)
+- [RLVR 概念](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md) / [Self-taught RLVR](ch01/1172-self-taught-rlvr.html) / [可验证奖励 RL](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) / [合成数据](https://github.com/QianJinGuo/wiki/blob/main/concepts/synthetic-data-generation.md)
 
 ---
 

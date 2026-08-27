@@ -9,10 +9,10 @@
 07 七、落地路径：成熟度模型与五步实施建议
 
 ## 相关实体
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/780-anthropic.html)
-- [Introducing Claude Platform On Aws](../ch01/685-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
-- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/1487-claude.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/505-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](../ch01/1603-anthropic.html)
+- [Introducing Claude Platform On Aws](../ch01/162-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Aws 一周综述Aws Transform 上线一周年Aws 云端 Claude Platformec2 M3 Ultr](../ch01/639-claude.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/506-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Openclaw Multi 4](ch11/255-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-aidl-paradigm-shift-platform-driven-data-engineering.md)

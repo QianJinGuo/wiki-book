@@ -117,7 +117,7 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - 分布式执行
 
 ## 相关实体
-- [Anthropic Generator-Evaluator Harness](../ch01/780-anthropic.html) — 另一种评测闭环思路
+- [Anthropic Generator-Evaluator Harness](../ch01/1603-anthropic.html) — 另一种评测闭环思路
 - [Superpowers](../ch01/707-claude-code-skills-superpowers.html) — Agent 工作流规范
 - [Skill Writing Patterns](ch04/350-skill.html) — Skill 质量评估相关
 - [LBS-IntentBench — 首个真实出行隐式意图评测基准](ch04/353-lbs-intentbench.html)

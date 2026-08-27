@@ -44,8 +44,8 @@ Mythos 5 的多轮实验中观察到 agent 自发组织"应用性能锦标赛"�
 ## 相关实体
 
 - [Anthropic Multi Agent Research System](ch04/685-anthropic-multi-agent-research-system.html) — 同项目早期评估方法论研究
-- [Cursor AI Swarm](../ch05/111-ai.html) — swarm 模式工程实践
-- [Agent Orchestration](ch04/630-agent-orchestration.html) — 编排架构对照
+- [Cursor AI Swarm](../ch05/113-ai.html) — swarm 模式工程实践
+- [Agent Orchestration](ch04/631-agent-orchestration.html) — 编排架构对照
 - [Agent 演化三路线收敛](../ch03/006-agent.html) — 演化视角的趋同分析
 - [Mode Collapse 研究](../ch01/299-verbalized-sampling-prompt-engineering-icml2026-mode-collaps.html) — 输出坍缩机制对照
 - [多智能体协作体系](../ch03/085-claude-code.html) — 协作设计实践

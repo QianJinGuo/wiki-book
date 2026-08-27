@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **35 篇**实体，按深度递增排列。
+> 本章收录 **37 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 20 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 9 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
 
 ---
 
@@ -1897,7 +1897,80 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.033 人形之外：擎羽把“身体”变成具身智能的新变量（柔性具身智能 + Fi0 跨本体基础模型）
+## Ch18.033 Noe-0 世界动作模型（无本体数据训练）
+
+> 📊 Level ⭐⭐⭐⭐ | 4.8KB | `entities/noe-0-world-action-model-no-teleop-noematrix-2026.md`
+
+# Noe-0 世界动作模型（无本体数据训练）
+
+穹彻智能（Noematrix）2026-08-26 发布具身智能预训练模型 **Noe-0**——训练全链路采用**无本体数据**的世界动作模型（World Action Model, WAM），证明了完全不依赖传统遥操作数据也能完成具身世界模型的预训练、后训练并在真实机器人上形成执行任务的能力。
+
+## 核心范式：全链路无本体数据
+
+传统遥操数据在集中场地标准化工位采集（相似桌面、有限物体、预设任务流程），本质是为数据采集人为构造的环境。Noe-0 的所有自采训练数据都来自人在真实环境中直接完成操作的记录——超 50 个城市、数十万小时、数十万种任务类型。
+
+关键设计是**预训练与后训练始终沿用同一种无本体数据路线**。若预训练用无本体数据、后训练切回遥操作数据，两阶段会出现数据分布和动作模式的断层——模型在预训练学到的自然操作规律，需要在后训练重新适配一套不匹配的动作表达。Noe-0 从预训练到后训练保持数据范式连续，避免后训练成为链路能力瓶颈。
+
+## WAM 架构与跨本体迁移
+
+Noe-0 采用 World Action Model 架构（对应「VLAs are dead, long live World Action Models」路线，见 [WAM](https://github.com/QianJinGuo/wiki/blob/main/entities/4d-wam-world-action-model-3d-trajectory-alignment-2026.md)），以视频预测作为核心高层学习目标：接收连续历史帧与状态信息，预测未来视觉状态，同时把状态变化理解转化为可执行动作。动作侧模型规模相对较小，更换末端构型时无需重训整套模型。
+
+穹彻团队发现：即使采集数据与推理部署之间存在本体差异，**Pixel Prediction 依然能显著提升跨本体迁移**。原因在于像素预测提供隐式反事实推理——模型必须区分哪些视觉变化与任务完成相关、哪些只是本体外观或背景差异，从而过滤掉本体绑定的表面信息、抓取驱动任务进展的物理本质。
+
+## AI-Native 数据基础设施
+
+穹彻强调「分布规模化」而非「数据量规模化」：`Distributional Scaling = More Data × More Tasks × More Objects × More Spaces × More Real-world Variation`。为了支撑全链路无本体数据，团队打造了 RoboPocket + Data Agent 的数据管线。
+
+- **RoboPocket**：端侧采集入口，覆盖 50+ 城市、18 省级行政区，三组传感器（左右手+头部）采集视觉与动作轨迹；累计数十万小时，峰值 1000+ 采集员同时参与。任务由采集者在真实场景自主产生（煮面、接线装配、填充缝隙等），产生「数十万小时对应数十万种任务类型、平均每种约 1 小时」的广度远大于深度的数据特征。
+- **Data Agent**：连接数据管理者与分散采集员的智能体，覆盖任务生成、数据查询统计、质量问题处理、通知推送、权限管控五项功能，把 AI 嵌入任务产生→采集→质量改进的完整管理闭环。
+
+## 定位与关联
+
+Noe-0 与已有具身世界模型实体同属 WAM/无本体/跨本体前沿：[LingBot-VA 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/全球首个具身原生世界动作模型来了.md)（蚂蚁灵波具身原生 WAM）、[CurrentWorld-0](https://github.com/QianJinGuo/wiki/blob/main/entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md)（跨本体多模态物理世界模型）、[VBot 跨本体基因](https://github.com/QianJinGuo/wiki/blob/main/entities/vbot-embodied-genome-cross-embodiment-inheritance-qinhailong-2026.md)。其「无本体数据 + WAM 完美匹配」的结论与数据基础设施视角，可与 [具身数据市场](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md)、[具身智能创业](https://github.com/QianJinGuo/wiki/blob/main/entities/zhuji-dynamics-pre-ipo-embodied-ai-2026.md) 对照。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/突破遥操瓶颈全新无本体数据世界动作模型noe-0发布.md)
+
+---
+
+## Ch18.034 TrAct：视觉轨迹作为机器人控制与世界模型之间的共同语言（李飞飞团队）
+
+> 📊 Level ⭐⭐⭐⭐ | 4.0KB | `entities/feifei-li-tract-visual-tracks-robot-world-model.md`
+
+# TrAct：视觉轨迹作为机器人控制与世界模型之间的共同语言（李飞飞团队）
+
+## 核心命题
+
+机器人动作指令适合让机器人执行，却未必适合让世界模型预测未来——动作是低维、与具体本体绑定的控制指令（Franka 和 UR5 即便完成相似操作也可能需要不同指令），且同一动作的视觉结果取决于场景几何/物体状态/接触动态。李飞飞、吴佳俊团队提出把**视觉轨迹（Visual Tracks）**放在策略模型与世界模型之间作为信息接口：策略同时输出动作和对应视觉轨迹，世界模型根据轨迹预演未来，让"先预演再行动"进入任务评估闭环。
+
+## 架构：VLAT → TWM → VLAC
+
+- **VLAT**（建立在 π0.5 上）：根据当前观测 + 语言指令，联合生成多组动作与视觉轨迹（成对输出，轨迹非由动作转换）。视觉轨迹描述任务相关点随时间在图像空间中的二维运动（夹爪 7 关键点 + 腕部视角 5×5 均匀采样场景点）。
+- **TWM**（轨迹条件世界模型）：以 Stable Video Diffusion 为骨干，ControlNet 把视觉轨迹编码为空间控制条件，生成未来视频。对照的**AWM**是动作条件世界模型，用相同预训练/微调数据。
+- **VLAC**：候选视频生成后按任务指令逐一打分，执行最高分对应动作（每决策步仿真采样 20 组、真机 16 组）。
+
+## 关键结果
+
+- **仿真**：LIBERO-INTEGRAL 上 π0.5 成功率 27% → VLAT 44% → +AWM 49% → **TrAct 55%**；三随机种子平均 54.7% vs VLAT+AWM 49.0%（95% CI 不重叠）。跨本体 Franka→UR5：π0.5 17% → **TrAct 50%**。
+- **真机**（Franka 400 演示微调）：π0.5 / VLAT+AWM / TrAct 平均成功率 49% / 66% / **76%**；未见背景下差距更大（关柜门 VLAT+AWM 40% vs TrAct 70%）。
+- **视频预测质量**：TWM 在五项视频指标全优于 AWM（仿真外部视角 PSNR 15.12→24.51、FVD 129→38）。
+
+## 技术价值
+
+TrAct 的贡献不在"换了个模型"，而在**换了一层信息接口**：视觉轨迹是一种跨本体的"共同语言"——一头连机器人控制、一头连世界模型的未来预测。统一轨迹表示还让 DROID 机器人数据与 EgoDex 人类第一视角视频共享同一轨迹预测目标（人手动作与机器人动作无法用同一控制参数表示，只用轨迹监督）。扩大预训练数据后 TrAct+ 在最难 5 个 UR5 任务上 32%→38%。
+
+## 相关
+
+- [掩码视觉动作（李飞飞团队世界模型）](https://github.com/QianJinGuo/wiki/blob/main/entities/feifei-li-masked-visual-actions-world-model-2026.md)
+- [CurrentWorld 跨本体物理世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md)
+- [DriveTeach-VLA 图像轨迹驾驶](https://github.com/QianJinGuo/wiki/blob/main/entities/eccv-2026自驾vla-scaling有戏了北航清华driveteach-vla用图像轨迹打通驾驶场景与基模预训练.md)
+- [Amap ABOT Earth 3D 原生世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
+- [EgoSuite-Open100K 具身视频数据](https://github.com/QianJinGuo/wiki/blob/main/entities/egosuite-open100k-embodied-human-video-data-open-source-2026.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/feifei-li-tract-visual-tracks-robot-world-model.md)
+
+---
+
+## Ch18.035 人形之外：擎羽把“身体”变成具身智能的新变量（柔性具身智能 + Fi0 跨本体基础模型）
 
 > 📊 Level ⭐⭐⭐⭐ | 3.9KB | `entities/人形之外擎羽柔性具身智能-fi0-跨本体基础模型.md`
 
@@ -1938,7 +2011,7 @@ Fi0 建立在基础判断上：**机器人对任务和物理世界的理解应�
 
 ---
 
-## Ch18.034 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+## Ch18.036 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md`
 
@@ -1970,7 +2043,7 @@ Being-H0.8 是一套带触觉的隐式世界—动作模型：**预训练阶段*
 
 ---
 
-## Ch18.035 LeRobot v0.6.0 — Imagine, Evaluate, Improve
+## Ch18.037 LeRobot v0.6.0 — Imagine, Evaluate, Improve
 
 > 📊 Level ⭐⭐⭐⭐ | 1.8KB | `entities/lerobot-v060-imagine-evaluate-improve.md`
 

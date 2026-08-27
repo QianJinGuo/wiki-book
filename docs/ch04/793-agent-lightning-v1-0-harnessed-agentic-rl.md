@@ -28,7 +28,7 @@ v1.0 是一个约 3500 行代码的轻量框架，支持任意 agent harness，�
 
 ## 与既有知识的关联
 
-该框架属于 Agentic RL 后训练领域，可对照 [Agentic RL 框架与实践](ch04/314-agentic-rl.html)、[AReaL 2.0](ch04/314-agentic-rl.html)、[AgentEnv 执行环境](ch04/678-agentenv-agentic-rl.html) 等既有积累；其「harness 拥有环境循环、trainer 只观察 request-response」的解耦思路与 [NVIDIA Polar Agentic RL Harness Proxy](ch04/314-agentic-rl.html) 高度一致。harness 作为训练参与方的视角可对照 [Agent Harness 架构](../ch05/066-agent-harness.html) 与 [CUHK Slim Skill Lifecycle](ch04/314-agentic-rl.html)，范式层面纳入 [LLM RL 算法演进](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) 与 [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)。
+该框架属于 Agentic RL 后训练领域，可对照 [Agentic RL 框架与实践](ch04/315-agentic-rl.html)、[AReaL 2.0](ch04/315-agentic-rl.html)、[AgentEnv 执行环境](ch04/678-agentenv-agentic-rl.html) 等既有积累；其「harness 拥有环境循环、trainer 只观察 request-response」的解耦思路与 [NVIDIA Polar Agentic RL Harness Proxy](ch04/315-agentic-rl.html) 高度一致。harness 作为训练参与方的视角可对照 [Agent Harness 架构](../ch05/043-agent-harness.html) 与 [CUHK Slim Skill Lifecycle](ch04/315-agentic-rl.html)，范式层面纳入 [LLM RL 算法演进](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) 与 [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-lightning-v1-harnessed-agentic-rl-arxiv-2608-17528.md)
 

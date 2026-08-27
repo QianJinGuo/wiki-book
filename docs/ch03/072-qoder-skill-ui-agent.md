@@ -78,7 +78,7 @@ Widget 运行在 `sandbox="allow-scripts allow-forms"` 的 iframe 中，**不加
 ### 输出端 Dashboard
 Agent 执行完数据分析任务后，把结果渲染成 Dashboard：关键指标卡片 + 趋势折线图 + 留存曲线 + 响应时间分布图并排对比。
 
-## 与 [Agent Skill Writing](../ch04/619-agent-skill.html) 的关系
+## 与 [Agent Skill Writing](../ch04/620-agent-skill.html) 的关系
 Skill UI 是 Skill 编写规范的自然延伸：
 
 - **** 定义了 Skill 的 CLI 层（SKILL.md + scripts/ + references/）
@@ -147,7 +147,7 @@ Skill UI 的案例中，设计方向面板经过了三轮增强（初版→加�
 
 ## 相关实体
 
-- [qoder 团队知识引擎](../ch01/974-qoder.html)
+- [qoder 团队知识引擎](../ch01/976-qoder.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
 
 ## 相关主题

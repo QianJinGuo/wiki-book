@@ -51,8 +51,8 @@
 
 - [Cloudflare × Anthropic Glasswing：AI 漏洞研究能力跃升](../ch12/031-mythos.html)
 - [AI Agent 安全攻防综述](ch04/684-ai-agent.html)
-- [npm 供应链投毒复盘](../ch05/111-ai.html)
-- [Thinkst Package Proxy：供应链防护](../ch05/111-ai.html)
+- [npm 供应链投毒复盘](../ch05/113-ai.html)
+- [Thinkst Package Proxy：供应链防护](../ch05/113-ai.html)
 - [Akamai 收购 AI 浏览器安全公司 LayerX](../ch01/050-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Entry Point Hijacking：入口点劫持](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 

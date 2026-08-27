@@ -22,7 +22,7 @@ Agent 场景中输出要被真实执行，再小的 bug 也会影响整个流程
 
 - 扩散模型架构：[扩散模型架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md)
 - 扩散语言模型推理：[ACL 2026 扩散 LM block size 推理](../ch01/202-acl-2026.html)
-- Agentic 扩散视频：[A2RD Agentic 扩散长视频](ch04/298-agentic.html)
+- Agentic 扩散视频：[A2RD Agentic 扩散长视频](ch04/757-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/全球首个agentic扩散模型来了边行动边纠错128k上下文追平自回归.md)
 

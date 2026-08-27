@@ -60,7 +60,7 @@ AnySearch 的"Agent 原生"不仅体现在算法层面，更体现在工程层�
 - **自动容错**：单路数据源异常自动切换可用路径，不阻塞整体搜索流程
 - **超时管控**：确保 Agent 不会因为搜索卡死而阻塞任务链条
 
-这些工程能力对于将 AnySearch 集成到 [Agent Harness Dingtalk Recruitment](../ch05/066-agent-harness.html) 或 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 等生产级 agent 系统中至关重要——企业级 agent 对搜索的可靠性要求远高于个人用户。
+这些工程能力对于将 AnySearch 集成到 [Agent Harness Dingtalk Recruitment](../ch05/043-agent-harness.html) 或 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 等生产级 agent 系统中至关重要——企业级 agent 对搜索的可靠性要求远高于个人用户。
 
 ### 市场定位与竞争格局
 
@@ -74,7 +74,7 @@ AnySearch 的"Agent 原生"不仅体现在算法层面，更体现在工程层�
 
 1. **Agent 基础设施的竞争已经从"模型"转向"信息获取"**。当模型能力趋于同质化，搜索（信息获取链路）将成为 Agent 差异化竞争力的核心来源。如果你的 Agent 搜得不准，再聪明的推理也无济于事。
 
-2. **重新设计 Agent 的信息输入格式比优化输出更重要**。AnySearch 的结构化输出让 Agent 省去了从 HTML/链接中提取信息的 token 消耗。在 [Agent Harness Dingtalk Recruitment](../ch05/066-agent-harness.html) 等生产级 agent 系统中，这种 token 优化直接转化为成本优势。
+2. **重新设计 Agent 的信息输入格式比优化输出更重要**。AnySearch 的结构化输出让 Agent 省去了从 HTML/链接中提取信息的 token 消耗。在 [Agent Harness Dingtalk Recruitment](../ch05/043-agent-harness.html) 等生产级 agent 系统中，这种 token 优化直接转化为成本优势。
 
 3. **垂直数据源是 Agent 搜索的护城河**。AnySearch 连接了 20+ 垂直领域数据源，这意味着它在法律、金融、代码等特定场景下拥有通用搜索引擎无法匹敌的信息质量。
 
@@ -82,7 +82,7 @@ AnySearch 的"Agent 原生"不仅体现在算法层面，更体现在工程层�
 
 ## 相关实体
 
-- [Agent Harness Dingtalk Recruitment](../ch05/066-agent-harness.html) — 企业级 Agent Harness，可将 AnySearch 作为搜索工具集成
+- [Agent Harness Dingtalk Recruitment](../ch05/043-agent-harness.html) — 企业级 Agent Harness，可将 AnySearch 作为搜索工具集成
 - [Lambda Microvms Vs Bedrock Agentcore Ai Agent Comparison](../ch11/096-lambda-microvms-vs-bedrock-agentcore-ai-agent.html) — Agent 基础设施对比，搜索是其中关键组件
 - [AnySearch 原始报道](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anysearch-agent-search-product-hunt-2026.md) — AnySearch 的产品管线与接入方式
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 工程化框架中的信息获取层设计

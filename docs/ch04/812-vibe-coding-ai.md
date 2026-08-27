@@ -15,7 +15,7 @@
 - 团队级落地：[AI Native 公司转型](../ch05/022-ai-native.html)、[AI Native 开发工作流](../ch05/022-ai-native.html)
 - 分层思考实践：[Dan Shipper 分层思考](../ch05/022-ai-native.html)
 - 组织设计：[AI Native 研发组织设计](../ch05/022-ai-native.html)
-- 个人 AI 编码范式对比：[Vibe Coding 内省](../ch01/1133-20.html)
+- 个人 AI 编码范式对比：[Vibe Coding 内省](../ch01/1135-20.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-vibe-coding-到-ai-原生研发团队一套能落地的工程实践.md)
 

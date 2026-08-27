@@ -16,7 +16,7 @@ Claude Code、Amazon Bedrock、Kiro CLI
 ## 相关实体
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch04/830-claude-managed-agents.html)
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/066-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群](../ch03/085-claude-code.html)
 - [Claude Code Agent View](../ch09/003-claude-code-agent-view.html)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](ch11/314-bedrock.html)

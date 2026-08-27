@@ -112,11 +112,11 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 ## 相关实体
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/085-claude-code.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/1487-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/639-claude.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/006-agent.html)
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
-- [Agent Harness 架构](../ch05/066-agent-harness.html)
+- [Agent Harness 架构](../ch05/043-agent-harness.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/006-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/836-karpathy-vibe-coding-agentic-engineering.html)
@@ -125,18 +125,18 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/085-claude-code.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/497-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](ch04/496-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/085-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/085-claude-code.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/091-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/080-harness.html)
 - [Claude Code MCP Server](../ch07/032-claude-code-mcp-server.html)
 
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/050-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/096-harness-engineering.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/006-agent.html)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/091-harness.html)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/091-harness.html)
+- [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/080-harness.html)
+- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/080-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/006-agent.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/050-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/096-harness-engineering.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 - [Agent 原理、架构与工程实践](../ch03/006-agent.html)
 - [为什么多数 Agent POC 无法上生产](https://github.com/QianJinGuo/wiki/blob/main/queries/why-agent-poc-fails-production.md) — POC 到生产的六大系统性鸿沟

@@ -65,8 +65,8 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ## 关联
 
-- [Introducing Claude Tag](../ch01/1484-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
-- [Anthropic Knowledge Work Plugins 分析](../ch01/780-anthropic.html) — Skills 的渐进式披露，MFS 用不同方式解决相同问题
+- [Introducing Claude Tag](../ch01/1486-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
+- [Anthropic Knowledge Work Plugins 分析](../ch01/1603-anthropic.html) — Skills 的渐进式披露，MFS 用不同方式解决相同问题
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — MFS 作为 Agent 上下文 harness 的基础设施层
 
 ---

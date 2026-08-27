@@ -26,7 +26,7 @@ Incendium 项目展示了 MS-RPC 模糊测试的方法论演进：通过递归�
 5. **Canary + ETW 实时告警组合**：在 fuzzing 时使用可识别前缀（`incendiumrocks_`）作为 canary，配合 ETW 实时监控 file/registry 操作，实时捕获哪些 RPC 程序/端点触发了哪些路径，是高效缩小攻击面的方法。
 
 ## 相关资源
-- [Agent Memory 架构](../ch04/523-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构](../ch04/524-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Claude Managed Agents 开发者指南](../ch04/830-claude-managed-agents.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/incendium-fuzzing-ms-rpc.md)
 

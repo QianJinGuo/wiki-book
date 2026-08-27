@@ -38,7 +38,7 @@ Foundry 不是又一个数据仓库，Palantir 给它的定位是"操作系统"�
 落地路线：语义核心 4-6 周、动能层 4 周、动态层 6 周、反馈与 UX 4 周、治理可观测 3 周——4-5 人的数据/ML 团队约 4-5 个月跑通。真正成本在维护：每年花 10-15% 工程量在本体演化、模型重训、集成升级上，但五年龄 MVP 积累的本体和反馈数据是任何新起项目买不来的护城河。工程哲学：**先有语义再长 Agent，不是先有 Agent 再补语义**——没有语义层的 Agent 像没有地图的跑车，跑得快但不知道往哪拐。
 
 ## 相关
-与 [企业 AI 本体驱动 Agent 与知识治理](../ch03/006-agent.html)、[向量库·知识图谱·本体论](../ch01/407-rag.html) 同为"本体语义层"主题；本文贡献是 Foundry 的闭环操作范式 + Ontology 三层 + 开源 MVP 落地。与 [Lyft 语义层](https://github.com/QianJinGuo/wiki/blob/main/entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md) 同为语义层实践。与 [AI 时代真正的护城河不是大模型](../ch01/1523-llm.html) 互补（该实体讲 Palantir Forward Deployment 组织护城河，本文讲 Foundry 语义层+闭环技术护城河）。→ [原文存档（rebootingwithai）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/palantir-foundry-closed-loop-ontology-open-source-mvp-reboot2026.md)、[原文存档（KGGPT）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/palantir-foundry-open-source-replica-kggpt-2026.md)
+与 [企业 AI 本体驱动 Agent 与知识治理](../ch03/006-agent.html)、[向量库·知识图谱·本体论](../ch01/407-rag.html) 同为"本体语义层"主题；本文贡献是 Foundry 的闭环操作范式 + Ontology 三层 + 开源 MVP 落地。与 [Lyft 语义层](https://github.com/QianJinGuo/wiki/blob/main/entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md) 同为语义层实践。与 [AI 时代真正的护城河不是大模型](../ch01/871-llm.html) 互补（该实体讲 Palantir Forward Deployment 组织护城河，本文讲 Foundry 语义层+闭环技术护城河）。→ [原文存档（rebootingwithai）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/palantir-foundry-closed-loop-ontology-open-source-mvp-reboot2026.md)、[原文存档（KGGPT）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/palantir-foundry-open-source-replica-kggpt-2026.md)
 
 ---
 

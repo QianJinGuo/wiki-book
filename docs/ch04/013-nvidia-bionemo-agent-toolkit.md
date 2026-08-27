@@ -50,7 +50,7 @@ BioNeMo Agent Toolkit 的架构设计遵循"基础模型 + 科学工具 + 智能
 
 BioNeMo Agent Toolkit 代表了 AI 在科学研究中的应用从"工具辅助"到"智能体驱动"的范式转变。传统科研计算模式中，研究人员需要手动操作多个科学工具和库，在数据准备、参数调优、结果分析等环节花费大量精力。BioNeMo Agent Toolkit 通过智能体编排，将多步骤科学工作流自动化——从问题定义、数据采集、模型选择到结果解释，智能体可以端到端地执行科研任务。
 
-这与 [Agent Harness 架构](../ch05/066-agent-harness.html) 中的"编排-执行-反馈"循环模式高度一致，但将应用场景从软件开发延展到了科学计算领域。
+这与 [Agent Harness 架构](../ch05/043-agent-harness.html) 中的"编排-执行-反馈"循环模式高度一致，但将应用场景从软件开发延展到了科学计算领域。
 
 ### 生态集成策略的价值
 
@@ -76,9 +76,9 @@ BioNeMo Agent Toolkit 代表了 AI 在科学研究中的应用从"工具辅助"�
 
 - [NVIDIA Nemotron-3：Agent、RAG、语音与安全](../ch03/006-agent.html)
 - [NVIDIA NeMo AutoModel 微调](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemo-automodel-fine-tuning.md)
-- [NVIDIA 安全本地 Agent：NemoClaw 与 OpenClaw](ch04/513-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [NVIDIA 安全本地 Agent：NemoClaw 与 OpenClaw](ch04/514-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Hermes Agent 技能设计分析](../ch01/521-hermes-agent-skill.html)
-- [Agent Harness 架构](../ch05/066-agent-harness.html)
+- [Agent Harness 架构](../ch05/043-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-发布-bionemo-agent-toolkit加速科学发现的智能体工具.md)
 

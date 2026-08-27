@@ -97,7 +97,7 @@ AI让每个角色成为"超级个体"，但完整工作的推进并未因此变�
 - [Agent Loop 工程手册](../ch05/006-loop-engineering.html) — 腾讯陈进关于Agent Loop未解问题的探讨
 - [Agentic Loop Engineering 工程手册](../ch05/006-loop-engineering.html) — Loop工程化的实证框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent工程化的支撑框架
-- [腾讯Harness Engineering落地规范](../ch05/050-harness-engineering.html) — 腾讯团队的工程化规范实践
+- [腾讯Harness Engineering落地规范](../ch05/096-harness-engineering.html) — 腾讯团队的工程化规范实践
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/揭秘如何打造一支凌晨3点还在交付的ai军团.md)
 

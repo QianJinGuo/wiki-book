@@ -47,7 +47,7 @@ AgentLoop 在模型之外构建一层可持续更新的经验系统：接收 Age
 - [Agent 自改进闭环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
 - [评测 Harness 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
 - [AgentTeams 与 AgentLoop](ch04/362-agentloop.html)
-- [携程 LLM 测试数据生成](../ch01/1152-ctgan-llm.html)
+- [携程 LLM 测试数据生成](../ch01/1154-ctgan-llm.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让-agent-越用越准成本越来越低agentloop-的-agent-经验自进化闭环.md)
 

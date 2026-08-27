@@ -92,13 +92,13 @@ Mollick 认为这是"ChatGPT 发布以来人们使用 AI 方式的最重要变�
 
 ## 相关主题
 
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/828-ai-mollick.html) — Mollick 2026-06 范式转换叙事（同一作者更新的 agentic 时代框架）
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/830-ai-mollick.html) — Mollick 2026-06 范式转换叙事（同一作者更新的 agentic 时代框架）
 - [Management As Ai Superpower Mollick](../ch01/679-management-as-ai-superpower.html) — 管理作为 AI 超级能力（同一作者，同期但不同议题）
 - [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md) — GPT-5 "It Just Does Stuff"（同一作者，模型能力侧写）
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-guide-to-which-ai-to-use-in-the-agentic-era.md)
 ## 相关实体
 
-- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](../ch01/1487-claude.html)
+- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](../ch01/639-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

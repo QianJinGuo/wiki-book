@@ -18,7 +18,7 @@ Alaya Lab、中国科学技术大学与上海创智学院联合推出的 **Alaya
 
 ## 定位与意义
 
-- 与 [CurrentWorld-0](../ch01/1474-0.html)、[BAAI Orca](../ch05/111-ai.html)、[A2RD](ch04/298-agentic.html) 等世界模型同属持续生成/长时程阵营，但 EVOKE 的关键差异化是把记忆显式外置为以位姿为索引的状态银行，从而把"跑多久"与"能记多少"解耦。
+- 与 [CurrentWorld-0](../ch01/265-0.html)、[BAAI Orca](../ch05/113-ai.html)、[A2RD](ch04/757-agentic.html) 等世界模型同属持续生成/长时程阵营，但 EVOKE 的关键差异化是把记忆显式外置为以位姿为索引的状态银行，从而把"跑多久"与"能记多少"解耦。
 - 对 Agent/具身方向的意义：外置状态银行 + 固定上下文上界，为长时程物理世界模拟与实时响应提供了一个可落地的成本约束方案。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alaya-evoke-hour-level-video-world-model.md)

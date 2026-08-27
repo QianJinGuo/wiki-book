@@ -26,9 +26,9 @@
 
 其四象限模型（容错空间 × 行动复杂度）和 Agent 成功三前提是对之前多个 Loop Engineering 话题（如 [Loop Engineering Feedback Control System](../ch05/006-loop-engineering.html)、[Loop Engineering Concept Analysis Feixue Ali 2026](../ch05/006-loop-engineering.html)、[Loop Engineering Langchain Four Layer Loopcraft](../ch05/006-loop-engineering.html)）的有益补充——它们提供了工程视角的 Why 和 When，本文补充了市场视角的 Who 和 Where。
 
-文章也巧妙回应了"为什么跑出来的是 Coding Agent 和 AI 客服"这个问题：因为它们天然存在于高度结构化的数字环境，且容易做到可观测性。这与 [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/006-agent.html) 中论述的 Agent 演进阶段互为印证，也与 [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/091-harness.html) 中的 Harness 工程框架一脉相承。
+文章也巧妙回应了"为什么跑出来的是 Coding Agent 和 AI 客服"这个问题：因为它们天然存在于高度结构化的数字环境，且容易做到可观测性。这与 [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/006-agent.html) 中论述的 Agent 演进阶段互为印证，也与 [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/080-harness.html) 中的 Harness 工程框架一脉相承。
 
-文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 [Harness Engineering](../ch05/050-harness-engineering.html) 中描述的工程框架形成互补。
+文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 [Harness Engineering](../ch05/096-harness-engineering.html) 中描述的工程框架形成互补。
 
 ## 实践启示
 
@@ -45,8 +45,8 @@
 - [Loop Engineering Langchain Four Layer Loopcraft](../ch05/006-loop-engineering.html)
 - [Loop Engineering Deep Dive Mengzhaosixi 2026](../ch05/006-loop-engineering.html)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/006-agent.html)
-- [Harness Engineering](../ch05/050-harness-engineering.html)
-- [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/091-harness.html)
+- [Harness Engineering](../ch05/096-harness-engineering.html)
+- [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/080-harness.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/255-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md)

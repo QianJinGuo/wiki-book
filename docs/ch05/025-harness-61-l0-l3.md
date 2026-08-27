@@ -120,10 +120,10 @@ Addy 定位：**AGENTS.md = 一份「你还没修掉的摩擦」的清单**。ag
 ## 相关实体
 
 - [Harness 组件保质期——Model-Harness Fit 与 Build to Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)——「每个组件编码一个假设」的保质期框架最早由本 wiki 从 Anthropic 长任务 harness 设计聚合而成；本文给出该框架的团队实测版（tdsql-harness 61% 删减 + L0-L3 四层归属）与到期检测机制（绑定防御的失败模式）
-- [Harness Engineering 的未来——什么会消失，什么不会](ch05/050-harness-engineering.html)——郭美青「主权线」框架（被取代的答 how，不被取代的答 whether）；本文的 L0-L3 是更细的四层归属，可互补对照
-- [认知债与意图债](ch05/111-ai.html)——本文引入 Addy 三债区分（技术债/认知债/意图债），并论证 agent 把意图债从慢性变急性
+- [Harness Engineering 的未来——什么会消失，什么不会](ch05/096-harness-engineering.html)——郭美青「主权线」框架（被取代的答 how，不被取代的答 whether）；本文的 L0-L3 是更细的四层归属，可互补对照
+- [认知债与意图债](ch05/113-ai.html)——本文引入 Addy 三债区分（技术债/认知债/意图债），并论证 agent 把意图债从慢性变急性
 - [Claude Code 上下文工程——Thariq 的语境工程](../ch03/085-claude-code.html)——本文引用其「删掉 80% 系统提示词」与六个转变（规则→判据等），是同一转向的团队落地版
-- [Harness Engineering Deletable Worksite（若飞）](ch05/080-harness-engineering-deletable-worksite-ruofei.html)——巨型约束文件变负担、Vercel 删 80% 工具成功率反升，与本文减法转向互证
+- [Harness Engineering Deletable Worksite（若飞）](ch05/081-harness-engineering-deletable-worksite-ruofei.html)——巨型约束文件变负担、Vercel 删 80% 工具成功率反升，与本文减法转向互证
 - [Addy Osmani 的工程实践系列](ch05/006-loop-engineering.html)——back pressure、棘轮法、意图债、只有人能继承后果等概念的原始出处
 - [Harness Gate 评估](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-gate-evaluation.md)——本文 gate 数量上限 = 人能真判的上限，是对 gate 设计的新约束
 

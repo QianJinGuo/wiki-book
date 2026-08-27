@@ -156,7 +156,7 @@ Auto Memory 不用向量检索而用 LLM 驱动选取——这意味着你可以
 ## 相关主题
 - [Claude Code 架构](../ch03/085-claude-code.html) — Claude Code 完整架构分析
 - [context window management comparison](../ch06/010-context-window-management-comparison.html) — 多框架上下文管理对比（Aparna Dhinakura）
-- [Claude Code Harness Deep Dive](../ch05/088-claude-code-harness.html) — Founder Park 深度分析（含 Auto-compaction）
+- [Claude Code Harness Deep Dive](../ch05/089-claude-code-harness.html) — Founder Park 深度分析（含 Auto-compaction）
 
 ## 相关实体
 

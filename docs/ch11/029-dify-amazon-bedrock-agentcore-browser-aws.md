@@ -46,7 +46,7 @@ AgentCore Browser Viewer提供了实时的浏览器状态查看能力，使得�
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-agentcore-browser-information-retrieval-and-analysis-capabilities/)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/505-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/506-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](ch11/272-aws-bedrock-agentcore.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)

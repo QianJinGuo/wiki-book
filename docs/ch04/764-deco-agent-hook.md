@@ -52,8 +52,8 @@ DECO 的护栏体系与主流框架对比：
 
 ## 关联条目
 
-- [Harness Engineering 阿里 Java 实践](../ch05/050-harness-engineering.html) — 企业级 Harness 工程另一视角
-- [腾讯混元 Hy3 Agent 产品](../ch01/140-hy3-preview.html) — 腾讯同系的 Agent 产品发展
+- [Harness Engineering 阿里 Java 实践](../ch05/096-harness-engineering.html) — 企业级 Harness 工程另一视角
+- [腾讯混元 Hy3 Agent 产品](../ch01/142-hy3-preview.html) — 腾讯同系的 Agent 产品发展
 - [腾讯 K8s + Ray AI Workload 调度](../ch11/154-k8s-ray-ai-workload.html) — 腾讯另一生产级 AI 系统实践
 
 ## 退出

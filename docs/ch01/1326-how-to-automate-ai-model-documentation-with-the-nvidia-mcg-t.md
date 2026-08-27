@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
-- [reducing container cold start times using soci index on dlam](ch01/1430-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
+- [reducing container cold start times using soci index on dlam](ch01/1432-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](ch01/1270-steering.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 
@@ -34,10 +34,10 @@ How to Automate AI Model Documentation with the NVIDIA MCG Toolkit 涉及archite
 - **code趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1401-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 

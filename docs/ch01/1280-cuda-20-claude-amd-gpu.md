@@ -28,9 +28,9 @@ CUDA 护城河的构成不只是编译器与数学库，更是「一代代工程
 ## 相关实体
 
 - [AMD跑GLM 5.2，成本只要英伟达一半](https://github.com/QianJinGuo/wiki/blob/main/entities/amd跑glm-52成本只要英伟达一半.md)
-- [AMD 免费 GPU 私有部署 DeepSeek R1](ch01/803-deepseek.html)
+- [AMD 免费 GPU 私有部署 DeepSeek R1](ch01/1475-deepseek.html)
 - [Agent-Oriented Infra](../ch03/006-agent.html)
-- [Agentic Scheduler](../ch04/298-agentic.html)
+- [Agentic Scheduler](../ch04/757-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cuda-20年护城河一个周末崩了-claude独自跑通amd新gpu.md)
 

@@ -34,7 +34,7 @@
 - 同样的 GPT-5.4 在 Karpathy autoresearch（线性循环）下 vs AIDE（树搜索）下产出的论文质量差异巨大
 - 同样的 Claude Opus 在 AI Scientist v2（树搜索 + Agent 自主选择）下 vs CORAL（异步多 Agent）下，产出效率完全不同
 
-这呼应了 [Nathan 评测 GPT 5.4 时的核心论点](../ch01/737-codex.html)：模型权重之外的"系统"才是真正的差异化来源。Agent Loop 就是研究的"系统"。
+这呼应了 [Nathan 评测 GPT 5.4 时的核心论点](../ch01/738-codex.html)：模型权重之外的"系统"才是真正的差异化来源。Agent Loop 就是研究的"系统"。
 
 ### 二、四种循环的工程取舍
 
@@ -151,7 +151,7 @@
 ## 相关实体
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](../ch01/594-openai.html)
-- [What Comes Next With Open Models](../ch01/1462-what-comes-next-with-open-models.html)
+- [What Comes Next With Open Models](../ch01/1464-what-comes-next-with-open-models.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Multi-Agent Orchestration](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-orchestration.md)
 - **Monte Carlo Tree Search**
