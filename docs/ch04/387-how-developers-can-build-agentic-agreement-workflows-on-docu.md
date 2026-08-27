@@ -118,7 +118,7 @@ IAM Toolkit（CLI）将 Agreement Manager 配置版本化、自动化，这意�
 
 ## 相关实体
 - [Ai Native Startup Cyberfund Guide](../ch05/022-ai-native.html)
-- [How To Build Audio Transcription Agent](ch04/588-how-to-build-audio-transcription-agent.html)
+- [How To Build Audio Transcription Agent](ch04/589-how-to-build-audio-transcription-agent.html)
 - [我用 Skillmd 做了一个简历生成器](ch04/350-skill.html)
 - [Servicenow Ui Is Dead Agent](../ch03/006-agent.html)
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/006-agent.html)

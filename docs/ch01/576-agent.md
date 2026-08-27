@@ -98,7 +98,7 @@ LangSmith Deployment 支持触发器基础设施，包括 cron 定时任务和 w
 
 ## 相关实体
 
-- [Agent 生产化 Harness](../ch05/066-agent-harness.html) — 循环工程的生产落地方案
+- [Agent 生产化 Harness](../ch05/043-agent-harness.html) — 循环工程的生产落地方案
 - **Hermes Agent Cron Jobs** — 事件驱动循环在 Hermes Agent 中的实现
 - [Agent 评测框架](../ch03/006-agent.html) — 与验证循环的设计哲学相通
 - [Claude Code Loop Engineering](ch01/335-claude-code-loop.html) — 循环工程在编程 Agent 中的实践

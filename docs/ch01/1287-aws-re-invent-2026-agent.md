@@ -60,7 +60,7 @@ DeepSeek上线识图模式并开始灰测，网页版和App均可体验，标志
 
 - [Hermes Agent V014 Architecture Shugex](../ch03/099-hermes-agent.html)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/424-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/140-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/142-hy3-preview.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/255-openclaw.html)
 - [Deepseek V4 Training 58 Page Paper Deep Dive](ch01/1384-deepseek-v4.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html)

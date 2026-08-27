@@ -47,7 +47,7 @@
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/1401-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Qy_Zacztcs1Ql3Bifmbmgg](ch01/358-1.html)
-- [天猫新品营销技术团队Ai编码实战指南上 V2](../ch05/111-ai.html)
+- [天猫新品营销技术团队Ai编码实战指南上 V2](../ch05/113-ai.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/255-openclaw.html)
 
 ## 实践启示

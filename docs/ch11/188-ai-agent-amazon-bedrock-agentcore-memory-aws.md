@@ -17,7 +17,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、AgentCore
 - [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/674-amazon-bedrock-agentcore.html)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](ch11/152-build-financial-document-processing-with-pulse-ai-and-amazon.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/505-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/506-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)
 

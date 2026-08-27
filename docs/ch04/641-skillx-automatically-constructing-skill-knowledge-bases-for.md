@@ -12,9 +12,9 @@
 
 ## 相关实体
 - [Skillos Learning Skill Curation For Self Evolving Agents](ch04/200-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/289-self-evolving-agents.html)
+- [Skill Os Learning Skill Curation Self Evolving Agents](ch04/290-self-evolving-agents.html)
 - [Airbyte Agents](ch04/695-airbyte-agents-a-new-era-for-airbyte-airbyte.html)
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1125-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/1127-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/127-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillx-zhejiang-university.md)

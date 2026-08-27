@@ -91,7 +91,7 @@ Dynamic workflows 是官方博客中最容易被低估的部分。它把编排�
 
 ## 关联条目
 
-- [Harness 即后端：当 Agent 基础设施消解于统一原语](../ch05/091-harness.html) — Loop Engineering 的底层架构视角
+- [Harness 即后端：当 Agent 基础设施消解于统一原语](../ch05/080-harness.html) — Loop Engineering 的底层架构视角
 - [Agent 落地真相](../ch03/006-agent.html) — Agent 从可用到可靠的生产化路径
 - [Skill Hub MVP 评估与发布](../ch04/350-skill.html) — Skill 生命周期管理的工程实践
 - [Skill 编排的六大依赖](../ch04/350-skill.html) — Skill 间的依赖与编排模式

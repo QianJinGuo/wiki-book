@@ -81,7 +81,7 @@ OBI 在实际接入中解决了三个典型问题：
 
 ## 相关实体
 
-- [OBI 零代码 AI 可观测性](ch01/1133-20.html)
+- [OBI 零代码 AI 可观测性](ch01/1135-20.html)
 - [Agent 可观测性五层架构](../ch03/006-agent.html)
 - [LangFuse Agent 评估追踪](../ch03/006-agent.html)
 - [Cilium Tetragon eBPF 安全](ch01/407-rag.html)

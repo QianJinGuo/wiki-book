@@ -17,7 +17,7 @@
 - [Automate Schema Generation for Intelligent Document Processing](ch11/185-automate-schema-generation-for-intelligent-document-processi.html)
 - [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/558-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/684-ai-agent.html)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/902-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/904-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/036-amazon-bedrock-api.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

@@ -49,15 +49,15 @@ Skill description 被定义为"70% 的工作"：不是关键词堆叠，而是�
 
 好的：aiAddOn 接入 11 骨架文件 5 分钟生成、12 反模式 checklist 拦 3 个潜在问题；check-docs-sync 发版前发现设计文档锚点路径变更。不好的：绕过率 8 条，策略"宁可漏触发也不过度触发"（过度触发让开发者烦，长期降低主动使用率）。灰色的：GAP 10 文件 agent Edit 过 0 落 commit、8 文件 commit 0 来自 agent——原因杂（agent 改对但本地重写/改 90% 剩 10% 手写/完全错放弃），数据噪声大但逼人正视"模型输出 ≠ 实际落地"。
 
-ROI：Fermi 估算年度节省 40–80 人天 vs 维护月度 1–2 人天，但数字代表上限非默认值（前提：范式被遵守、skill 被触发、报告被复盘）。与 [tdsql-harness 减法工程](../ch05/091-harness.html) 的"L0-L3 归属 + 意图债"互补：那边回答"什么该留"，本文回答"留的东西怎么落地为组织能力并度量"。
+ROI：Fermi 估算年度节省 40–80 人天 vs 维护月度 1–2 人天，但数字代表上限非默认值（前提：范式被遵守、skill 被触发、报告被复盘）。与 [tdsql-harness 减法工程](../ch05/080-harness.html) 的"L0-L3 归属 + 意图债"互补：那边回答"什么该留"，本文回答"留的东西怎么落地为组织能力并度量"。
 
 ## 相关实体
 
-- → [高德 Harness/SDD 团队 AI 研发范式](../ch05/128-ai-coding.html)：同为团队级 AI Coding 组织化实践（高德走 harness 治理 + SDD/ATDD 流程；天猫走范式 + Skill + Hook 观测闭环），不同执行路径
-- → [天猫 AI Coding 胶水编程](../ch05/128-ai-coding.html)：同团队同系列（业务出码采纳率 97.9%），本文是其工程化体系侧
+- → [高德 Harness/SDD 团队 AI 研发范式](../ch05/129-ai-coding.html)：同为团队级 AI Coding 组织化实践（高德走 harness 治理 + SDD/ATDD 流程；天猫走范式 + Skill + Hook 观测闭环），不同执行路径
+- → [天猫 AI Coding 胶水编程](../ch05/129-ai-coding.html)：同团队同系列（业务出码采纳率 97.9%），本文是其工程化体系侧
 - → [阿里云 AgentLoop 自进化飞轮](../ch04/362-agentloop.html)：同为"飞轮"式工程化体系（AgentLoop 是平台级 skill 治理飞轮，天猫是团队级范式+观测闭环）
 - → [美团图灵评测方法论](../ch03/006-agent.html)：同为评测/度量方法（美团评 Agent 输出，天猫测体系落地）
-- → [腾讯 tdsql-harness 减法工程](../ch05/091-harness.html)：同为第一方团队工程实践（腾讯答"什么该留"，天猫答"怎么落地为组织能力"）
+- → [腾讯 tdsql-harness 减法工程](../ch05/080-harness.html)：同为第一方团队工程实践（腾讯答"什么该留"，天猫答"怎么落地为组织能力"）
 
 ---
 

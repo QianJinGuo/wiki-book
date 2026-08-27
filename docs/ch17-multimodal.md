@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **69 篇**实体，按深度递增排列。
+> 本章收录 **70 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 18 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 45 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 46 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
@@ -4634,7 +4634,48 @@ VLX-Seek-3B 在多项基准上超越更大参数量的模型：
 
 ---
 
-## Ch17.057 FLUX 3 — Black Forest Labs 多模态流模型
+## Ch17.057 ECCV 2026｜OmniColor：统一多模态线稿上色框架
+
+> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/eccv-2026-omnicolor-multimodal-lineart-colorization-polyu.md`
+
+# ECCV 2026｜OmniColor：统一多模态线稿上色框架
+
+## 核心命题
+
+动画/美术生产中，线稿上色的难点不是"涂颜色"，而是**多条件输入的协同控制**——现实创作中控制信号总是混合出现（文字描述、稀疏颜色提示、角色参考图、近期/远期历史帧），且彼此可能冲突（参考图想保持角色风格、局部色块涂鸦却要求某区域改色）。现有方法大多围绕单一或少量控制信号设计，缺少统一机制理解多条件输入下的控制对齐。ECCV 2026 接收的 OmniColor 提出把复杂控制信号拆成两类（空间对齐条件 vs 语义参考条件），据此设计针对性编码/训练/冗余消除/自适应门控，支持**任意组合**的多模态线稿上色。
+
+## 方法：条件二分 + 差异化处理
+
+- **条件二分**：空间对齐条件（输入线稿、颜色提示、近期历史帧）与目标图像存在强空间对应；语义参考条件（文本描述、角色身份参考图、长期历史帧）提供抽象语义约束、不要求逐像素对齐。
+- **双编码器（空间对齐条件）**：VAE 编码器保留颜色边界/高频细节 + VLM 编码器提取局部语义，让模型既关注线条/色块位置又理解局部语义归属（头发/衣服/背景）。
+- **仅 VLM 编码（语义参考条件）**：压缩后的语义 token 已够表达关键属性，减少 token 数提升推理效率。
+
+## 三个关键模块
+
+1. **Dense Feature Alignment（DFA）**：用 DINOv3 提取预测/真实图像稠密特征做 MSE 对齐，强化空间约束；因早期生成噪声大，监督限制在较晚去噪阶段。
+2. **Temporal Redundancy Elimination（TRE）**：相邻帧大量重复静止内容。把参考帧分 patch、按颜色直方图相似度过滤冗余区域，连通域分析取最小包围框，只编码"发生变动的局部区域"。
+3. **Adaptive Spatial-Semantic Gating（AS-Gate）**：根据空间分支信息密度动态调节语义分支影响（空间约束强则降低语义干扰），集成进 MMDiT 注意力结构，用零初始化 LoRA 保证训练初期接近恒等映射。
+
+## 实验与结果
+
+基于 25 部高质量动画构建训练数据（12 万对样本）；测试集 6 部未见动画（305 视频片段 + 900 图像样本）。与三类方法比较在相同输入下表现更高，且支持控制信号自由组合。身份参考在旋转/镜头推拉/视角变化下仍能稳定保持角色面部/发色/服饰一致。
+
+## 技术定位
+
+OmniColor 属于**受控图像/视频生成**子领域——以线稿为结构底、多模态信号为控制输入的生成任务。与一般文生图不同，核心难点在"结构与语义控制的解耦 + 条件冲突消解"，对需要强一致性约束的生成式视觉应用有方法论参考价值。论文/代码均开源（arxiv 2603.27531 / github zhangxulu1996/OmniColor）。
+
+## 相关
+
+- [CFT 图像重打光](https://github.com/QianJinGuo/wiki/blob/main/entities/cft-consistent-feature-transport-image-relighting-eccv-2026-meitu.md)
+- [DyRef 多参考图像生成](https://github.com/QianJinGuo/wiki/blob/main/entities/eccv26-oral人物不能变姿势要对齐风格还得一致dyref突破多参考约束下的图像生成难题.md)
+- [OmniShow 统一多模态视频生成](https://github.com/QianJinGuo/wiki/blob/main/entities/omnishow-unified-multimodal-video-generation-icml-2026.md)
+- [Alaya 小时级视频世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/alaya-evoke-hour-level-video-world-model.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/eccv-2026-omnicolor-multimodal-lineart-colorization-polyu.md)
+
+---
+
+## Ch17.058 FLUX 3 — Black Forest Labs 多模态流模型
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md`
 
@@ -4696,7 +4737,7 @@ FLUX 3 代表了视频生成领域向**统一多模态基础模型**方向的重
 
 ---
 
-## Ch17.058 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
+## Ch17.059 vivo MagicBokeh — CVPR 2026 Best Paper Finalist，统一扩散框架长焦虚化
 
 > 📊 Level ⭐⭐⭐ | 3.8KB | `entities/vivo-magicbokeh-cvpr-2026-generative-bokeh-diffusion.md`
 
@@ -4738,7 +4779,7 @@ MagicBokeh 的探索意义在于：它不是把生成模型当作后期修图工
 
 ---
 
-## Ch17.059 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
+## Ch17.060 20种机器人本体通吃！蚂蚁新一代VLA具身大脑刚刚开源了
 
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/20种机器人本体通吃蚂蚁新一代vla具身大脑刚刚开源了.md`
 
@@ -4781,7 +4822,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.060 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+## Ch17.061 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
@@ -4818,7 +4859,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.061 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
+## Ch17.062 掩码视觉动作（Masked Visual Actions）——李飞飞团队世界模型
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/feifei-li-masked-visual-actions-world-model-2026.md`
 
@@ -4862,7 +4903,7 @@ source_published: 2026年7月8日 11:02
 
 ---
 
-## Ch17.062 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
+## Ch17.063 CoLT (Chain of Latent Thoughts): ECCV 2026 — 3步潜思维链加速多模态推理20+倍
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md`
 
@@ -4907,7 +4948,7 @@ CoLT（Chain of Latent Thoughts，潜思维链）将多模态大模型（MLLM）
 
 ---
 
-## Ch17.063 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
+## Ch17.064 MoKus: Cross-Modal Knowledge Transfer for Knowledge-Aware Concept Customization
 
 > 📊 Level ⭐⭐⭐ | 3.2KB | `entities/mokus-cross-modal-knowledge-transfer.md`
 
@@ -4935,7 +4976,7 @@ MoKus introduces a new task where, given reference images and multiple natural l
 
 ---
 
-## Ch17.064 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
+## Ch17.065 抖音 DME — Douyin Multimodal Embedding 多模态表征模型
 
 > 📊 Level ⭐⭐⭐ | 2.5KB | `entities/douyin-dme-multimodal-embedding-multimodal-retrieval.md`
 
@@ -4965,7 +5006,7 @@ DME 代表多模态表征从「纯检索排序信号」向「承载非对称语�
 
 ---
 
-## Ch17.065 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
+## Ch17.066 CurrentWorld-0 — 跨本体多视角多模态物理世界模型
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md`
 
@@ -4991,7 +5032,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.066 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
+## Ch17.067 DyRef：ECCV'26 Oral 多参考约束下的动态图像生成优化框架
 
 > 📊 Level ⭐⭐⭐ | 2.2KB | `entities/eccv26-oral人物不能变姿势要对齐风格还得一致dyref突破多参考约束下的图像生成难题.md`
 
@@ -5015,7 +5056,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.067 Qwen-Image-3.0 — 落字成画，字字如印
+## Ch17.068 Qwen-Image-3.0 — 落字成画，字字如印
 
 > 📊 Level ⭐⭐⭐ | 1.4KB | `entities/qwen-image-30落字成画字字如印.md`
 
@@ -5037,7 +5078,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.068 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.069 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -5161,7 +5202,7 @@ CurrentWorld-0 与 [李飞飞世界模型](https://github.com/QianJinGuo/wiki/bl
 
 ---
 
-## Ch17.069 GenCeption — Video Generation Models are General-Purpose Vision Learners
+## Ch17.070 GenCeption — Video Generation Models are General-Purpose Vision Learners
 
 > 📊 Level ⭐⭐⭐⭐ | 3.2KB | `entities/genception-video-generation-general-purpose-vision-learner-2026.md`
 

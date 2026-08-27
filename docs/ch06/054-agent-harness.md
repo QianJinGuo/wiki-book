@@ -126,7 +126,7 @@
 |------|---------|
 || [Sub-Agent vs Agent Team](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sub-agent-vs-agent-team-selection-guide.md) | 多 Agent 架构先看上下文边界 |
 || [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-subagents-context-hygiene.md) | Subagent 是 Harness 的上下文卫生工具 |
-|| [Harness Engineering 系统梳理](../ch05/050-harness-engineering.html) | Harness 是把经验沉淀成下一轮默认存在的能力 |
+|| [Harness Engineering 系统梳理](../ch05/096-harness-engineering.html) | Harness 是把经验沉淀成下一轮默认存在的能力 |
 **上下文管理决定系统能不能持续协作。**
 
 ## 深度分析

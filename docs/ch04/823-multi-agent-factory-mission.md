@@ -58,7 +58,7 @@ Factory Mission 选择 4/5 而放弃 Direct Communication 的决策揭示了一�
 
 配合机制是**结构化 Handoff**——Worker 做完 feature 时填写详细文档：完成项 / 未完成项 / 跑过哪些命令及退出码 / 发现的问题 / SOP 遵守情况。**关键原则：错误在里程碑边界被捕获，纠错工作被明确界定，不依赖 Agent "记得"发生过什么，靠强制写下来。**
 
-这一设计与 [Harness 状态边界与失败闭环](../ch05/091-harness.html) 中强调的"边界即文档"的工程哲学一致——Agent 系统的可靠性不来自 Agent 自身的记忆，而来自跨边界时强制落盘的中间表示。
+这一设计与 [Harness 状态边界与失败闭环](../ch05/080-harness.html) 中强调的"边界即文档"的工程哲学一致——Agent 系统的可靠性不来自 Agent 自身的记忆，而来自跨边界时强制落盘的中间表示。
 
 ### 4. "串行优于并行"的反直觉结论
 
@@ -81,7 +81,7 @@ Luke 的模型选择策略（"Droid Whispering"）遵循**角色 × 模型能力
 
 **更深一层**：刻意用**不同模型厂商**做验证，避免同一份训练数据带来的同向偏见。Luke 直接点出："你被某一家模型锁定，这个家族最弱的能力就是你系统的天花板。"
 
-这与 [AgentOps on Bedrock](ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
+这与 [AgentOps on Bedrock](ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
 
 ### 6. 声明式编排：用 Prompt 写逻辑而非代码
 
@@ -89,7 +89,7 @@ Mission 的编排逻辑几乎全写在 prompt 和 skill 里，避免硬编码状
 
 Worker 行为由 Orchestrator 每个 Mission 动态定义的 skill 驱动，确定性代码层非常薄，只做 bookkeeping（跑验证、交接阻塞时进度）。Luke 的总结极其精炼："**mission 负责提供纪律，模型负责提供智能。**"
 
-这与 [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html) 中关于"声明式优先于命令式"的设计原则形成强对应——编排层应当尽量薄，复杂逻辑让模型在 prompt 中处理，这样模型升级能自动带动系统升级。
+这与 [Harness Engineering Core Patterns](../ch05/096-harness-engineering.html) 中关于"声明式优先于命令式"的设计原则形成强对应——编排层应当尽量薄，复杂逻辑让模型在 prompt 中处理，这样模型升级能自动带动系统升级。
 
 ### 7. Mission 克隆 Slack 的实战数字揭示的真相
 
@@ -144,12 +144,12 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 
 - [Factory Missions Multi-Agent Shipping](ch04/222-factory-missions.html)——同主题的姊妹篇
 - [Claude Code Agent Teams 任务分解](../ch01/519-claude-code-agent-teams.html)——任务分解策略的另一视角
-- [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html)——声明式编排的工程哲学
+- [Harness Engineering Core Patterns](../ch05/096-harness-engineering.html)——声明式编排的工程哲学
 - [OpenClaw 多 Agent 团队实践](ch04/102-openclaw-multi-agent-team-practice-v2.html)——多 Agent 落地的国内实践
 - [Claude Managed Agents 企业自托管](ch04/830-claude-managed-agents.html)——Multi-Agent 的企业部署形态
 - [Agent 记忆系统工程实践](../ch03/006-agent.html)——过程资产积累的方向
-- [Harness 状态边界与失败闭环](../ch05/091-harness.html)——边界即文档的工程哲学
-- [AgentOps on Bedrock](ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)——多模型编排降低单点故障
+- [Harness 状态边界与失败闭环](../ch05/080-harness.html)——边界即文档的工程哲学
+- [AgentOps on Bedrock](ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)——多模型编排降低单点故障
 
 ---
 

@@ -26,7 +26,7 @@ MemSlides 是清华和上交联合提出的一种层级记忆驱动的 AI Slide 
 
 MemSlides 的核心贡献不在于提出了新的生成模型或更大的训练数据，而在于将 **Presentation Authoring** 重新定义为一个 **Stateful Multi-Turn Authoring Problem**，而非一次性的 Source-to-Slides Conversion Task。
 
-这一视角转换与 [Agent 记忆架构](ch04/523-perplexity-brain-self-improving-agent-memory-architecture.html) 中讨论的"记忆即状态管理"理念高度一致。在 LLM-based Agent 系统中，记忆的核心挑战从来不是"能否记住"，而是"该记住什么、该遗忘什么、何时从哪层记忆读取"。MemSlides 的三层分级（Profile ↔ Working ↔ Episodic）给出了一个针对创作领域的具体实现方案。
+这一视角转换与 [Agent 记忆架构](ch04/524-perplexity-brain-self-improving-agent-memory-architecture.html) 中讨论的"记忆即状态管理"理念高度一致。在 LLM-based Agent 系统中，记忆的核心挑战从来不是"能否记住"，而是"该记住什么、该遗忘什么、何时从哪层记忆读取"。MemSlides 的三层分级（Profile ↔ Working ↔ Episodic）给出了一个针对创作领域的具体实现方案。
 
 ### Three-Tier Memory 的生命周期差异
 
@@ -36,7 +36,7 @@ MemSlides 的核心贡献不在于提出了新的生成模型或更大的训练�
 | Task Template | 单任务 | 任务开始时选定 | 中 |
 | Working Memory | 当前会话 | 每轮反馈后更新 | 最高（当前显式指令） |
 
-这种分层设计隐含着一条重要原则：**当前显式反馈 > 任务模板 > 长期用户画像**。当三层信号冲突时，用户的即时反馈享有最高优先级。这与 [Harness 上下文管理工作集](../ch05/066-agent-harness.html) 中的层级化上下文优先级设计一脉相承。
+这种分层设计隐含着一条重要原则：**当前显式反馈 > 任务模板 > 长期用户画像**。当三层信号冲突时，用户的即时反馈享有最高优先级。这与 [Harness 上下文管理工作集](../ch05/043-agent-harness.html) 中的层级化上下文优先级设计一脉相承。
 
 ### 工具记忆：Agent 技能迁移的关键
 
@@ -75,8 +75,8 @@ Guard 阶段的存在尤为关键——它引入了**局部验证可靠性**这�
 
 ## 相关实体
 
-- [Agent 记忆架构](ch04/523-perplexity-brain-self-improving-agent-memory-architecture.html) — 层级化 Agent 记忆设计的通用框架，MemSlides 是其幻灯片生成领域的具体实例
-- [Harness 上下文管理工作集](../ch05/066-agent-harness.html) — 上下文优先级分层与 MemSlides 的三层记忆优先级设计一致
+- [Agent 记忆架构](ch04/524-perplexity-brain-self-improving-agent-memory-architecture.html) — 层级化 Agent 记忆设计的通用框架，MemSlides 是其幻灯片生成领域的具体实例
+- [Harness 上下文管理工作集](../ch05/043-agent-harness.html) — 上下文优先级分层与 MemSlides 的三层记忆优先级设计一致
 - [Agent 记忆力工程税](ch04/180-agent-memory.html) — 讨论经验迁移的结构化成本，与工具记忆复用直接相关
 - [Agent 评测方法论与体系设计](../ch03/006-agent.html) — MemSlides 的 Plan-Act-Guard 评测方法可纳入更广泛的 Agent 评测框架
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化中的执行 contract 与验证机制

@@ -764,7 +764,7 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 - [Agentic Payment X402 Bedrock Agentcore](ch11/059-bedrock-agentcore.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-agentcore-payment-x402-agent.md)
-- [Ai Research Assistant From Idea To App](../ch05/111-ai.html)
+- [Ai Research Assistant From Idea To App](../ch05/113-ai.html)
 
 ## 第 2 来源 — Solv Labs 可验证可审计的 Agent 支付（2026-08-13 MERGE）
 

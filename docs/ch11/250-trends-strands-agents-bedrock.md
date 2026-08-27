@@ -72,7 +72,7 @@ TReNDS 处理健康相关研究数据（可能涉及 HIPAA），数据驻留是�
 - [快手 RCA Agent](../ch03/006-agent.html)：同样面向根因分析自动化，快手版更侧重 LLM 推理链与人工确认闭环，本文侧重事件触发（CloudWatch 订阅过滤）+ 工具检索设计
 - [Agentic Incident Triage](ch11/241-amazon-quick.html)：事件分类/分诊场景，本文是深度调查（源码级）场景
 - [Agent 可观测性](../ch03/006-agent.html)：本文是"用 agent 做应用可观测性"的反向用例
-- [AgentCore Harness](../ch04/597-amazon-bedrock-agentcore-harness-ga-api-agent.html)：同 AWS Agent 生态
+- [AgentCore Harness](../ch04/598-amazon-bedrock-agentcore-harness-ga-api-agent.html)：同 AWS Agent 生态
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-trends-automates-root-cause-analysis-with-amazon-bedrock.md)
 

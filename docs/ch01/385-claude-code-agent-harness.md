@@ -41,7 +41,7 @@
 
 **这一论断颠覆了"Agent = 强模型"的简化叙事**。模型能力固然关键，但生产级 Agent 系统的工程复杂度绝大部分来自 harness 层：上下文组装、缓存优化、权限控制、工具并发、状态管理、错误恢复、压缩策略、终止判断。
 
-这与 [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html) 中"Harness 是 Agent 系统的工程价值所在"的论断一致——模型是引擎，harness 是底盘、传动、刹车、仪表盘的整套工程组合。
+这与 [Harness Engineering Core Patterns](../ch05/096-harness-engineering.html) 中"Harness 是 Agent 系统的工程价值所在"的论断一致——模型是引擎，harness 是底盘、传动、刹车、仪表盘的整套工程组合。
 
 ### 2. 上下文组装：缓存分层是性能的关键
 
@@ -172,7 +172,7 @@ Claude Code 不是用一种方式处理上下文膨胀，而是分层处理：
 
 历史教训：1,279 个会话连续失败 3,000+ 次，每天浪费 25 万次 API 调用——**任何自动化机制都必须有熔断**。
 
-这与 [Harness 状态边界与失败闭环](../ch05/091-harness.html) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
+这与 [Harness 状态边界与失败闭环](../ch05/080-harness.html) 中关于"边界即熔断点"的工程哲学一致——失败应当被显式处理，而非无限循环。
 
 ### 9. Plan Mode：行为引导而非权限关闭
 
@@ -223,7 +223,7 @@ async function* queryLoop() {
 - **可暂停/继续**：中间可以随时暂停再继续
 - **State 对象传递**：每轮决策影响下轮行为
 
-这与 [Claude Code Harness Deep Dive](../ch05/088-claude-code-harness.html) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
+这与 [Claude Code Harness Deep Dive](../ch05/089-claude-code-harness.html) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
 
 ### 12. 工具调用的"上下文修改函数"
 
@@ -302,19 +302,19 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 ## 相关实体
 
 - [两万字详解 Claude Code 源码核心机制](../ch03/085-claude-code.html)
-- [Claude Code Harness 深度解析](../ch05/088-claude-code-harness.html)
+- [Claude Code Harness 深度解析](../ch05/089-claude-code-harness.html)
 - [Claude Code Harness 深度理解](ch01/638-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/006-agent.html)
-- [Harness Engineering Core Patterns](../ch05/050-harness-engineering.html)
-- [Harness 状态边界与失败闭环](../ch05/091-harness.html)
+- [Harness Engineering Core Patterns](../ch05/096-harness-engineering.html)
+- [Harness 状态边界与失败闭环](../ch05/080-harness.html)
 - [Factory Mission Multi-Agent 系统](../ch03/006-agent.html)
 - [Claude Managed Agents 企业自托管](../ch04/830-claude-managed-agents.html)
 - [OpenClaw 多 Agent 团队实践](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - [OpenClaw 完全指南](../ch11/255-openclaw.html)
 - [OpenClaw 多智能体团队搭建经验](../ch11/255-openclaw.html)
 - [Headroom Context Compression](../ch06/045-headroom.html)
-- [AI Agent Harness 构建](ch01/1195-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/1197-ai-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

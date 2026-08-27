@@ -77,7 +77,7 @@ Google 发布了网站 agent-ready 指南，明确包含视觉 UI 优化（Agent
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](ch04/674-amazon-bedrock-agentcore.html)
 - [Your AI Agents Are Already Inside the Perimeter](ch04/684-ai-agent.html)
 - [Chrome Enterprise Policies on Amazon Bedrock AgentCore](../ch11/139-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [AI-powered honeypots](../ch01/096-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
+- [AI-powered honeypots](../ch01/097-ai-powered-honeypots-turning-the-tables-on-malicious-ai-age.html)
 - [Securing AI agents: AWS and Cisco AI Defense](ch04/684-ai-agent.html)
 
 ---

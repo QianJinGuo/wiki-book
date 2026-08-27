@@ -38,7 +38,7 @@ Loongsuite Pilot Sls Ai Coding Metrics Practice 涉及agent领域的核心技术
 - **ai-coding趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/255-openclaw.html)

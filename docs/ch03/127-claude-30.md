@@ -88,11 +88,11 @@ Filesystem MCP + Brave Search MCP构建了一个完整的读写-搜索闭环。C
 - 90天：专职分析师级理解
 
 ## 相关实体
-- [Harness Engineering Jk Launcher Baijiajie](../ch05/050-harness-engineering.html)
-- [New Ai Lock In](../ch01/812-the-new-ai-lock-in.html)
+- [Harness Engineering Jk Launcher Baijiajie](../ch05/096-harness-engineering.html)
+- [New Ai Lock In](../ch01/814-the-new-ai-lock-in.html)
 - [Loop Engineering Addy Osmani Challengehub](../ch05/006-loop-engineering.html)
 - [Kiro Mcp Rds Mysql Upgrade](../ch07/001-mcp.html)
-- [Yumanju Ai Full Flow Efficiency](../ch05/111-ai.html)
+- [Yumanju Ai Full Flow Efficiency](../ch05/113-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

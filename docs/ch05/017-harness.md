@@ -141,8 +141,8 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 ## 与其他实体的关系
 
 - **基础理论**：
-  - [Harness Engineering Survey](ch05/050-harness-engineering.html)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
-  - [Harness Engineering — ETCLOVG Taxonomy](ch05/050-harness-engineering.html)（七层分类的独立条目）
+  - [Harness Engineering Survey](ch05/096-harness-engineering.html)（CMU/Yale/Johns Hopkins，ETCLOVG 七层分类的源头）
+  - [Harness Engineering — ETCLOVG Taxonomy](ch05/096-harness-engineering.html)（七层分类的独立条目）
 - **同作者系列**：
   - Ralph Loop 与可接管 Harness（2026-05-10）（2026-05-10，三类漂移 + 可接手标准）
   - Hermes 5 张卡治理框架（2026-06-01）（2026-06-01，don't automate slop）
@@ -150,10 +150,10 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
   - [Agent Memory 架构：过去影响未来](../ch04/180-agent-memory.html)（记忆预算的更早版本）
 - **互补实践**：
   - [Codex /goal Runtime](../ch04/247-codex-goal-agent.html)（任务级状态文件 GOAL.md/PLAN.md/PROGRESS.md）
-  - [Anthropic 长时运行 Agent 架构](../ch01/780-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
+  - [Anthropic 长时运行 Agent 架构](../ch01/1603-anthropic.html)（对抗式设计 + 合同谈判 + 审美量化）
   - [六条经验：让 AI 编码 Agent 变得可控](../ch04/410-ai-coding-agent.html)（Martin Fowler 反馈环共识）
-  - [Harness design for long running apps](ch05/091-harness.html)（Anthropic 官方长任务 Harness 解读）
-  - [Martin Fowler：非确定性进了研发链路](ch05/091-harness.html)（前馈/反馈原文）
+  - [Harness design for long running apps](ch05/080-harness.html)（Anthropic 官方长任务 Harness 解读）
+  - [Martin Fowler：非确定性进了研发链路](ch05/080-harness.html)（前馈/反馈原文）
 - **概念图**：
   - [Long-Running Agent 架构三大模式与演进路径](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md)
 

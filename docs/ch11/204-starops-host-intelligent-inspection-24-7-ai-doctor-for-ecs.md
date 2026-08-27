@@ -12,7 +12,7 @@ STAROps 的名字代表运维四层理念：全域感知（Sense）、目标导�
 
 ## 与 RUM 智能巡检的姊妹关系
 
-主机智能巡检与 [STAROps RUM Intelligent Inspection](../ch01/1217-spec.html) 是同一平台下的两个互补能力：RUM 巡检关注**用户体验层**（页面、业务路径、设备段的体验退化灰色地带），主机智能巡检关注**基础设施层**（主机内核态与硬件层的隐患）。二者共同构成 STAROps 巡检能力矩阵。
+主机智能巡检与 [STAROps RUM Intelligent Inspection](../ch01/1218-spec.html) 是同一平台下的两个互补能力：RUM 巡检关注**用户体验层**（页面、业务路径、设备段的体验退化灰色地带），主机智能巡检关注**基础设施层**（主机内核态与硬件层的隐患）。二者共同构成 STAROps 巡检能力矩阵。
 
 ## 分层架构：STAROps 编排 + SysOM 深度诊断
 
@@ -61,8 +61,8 @@ STAROps 与阿里云操作系统控制台的运维组件 **SysOM** 分工协作�
 
 ---
 ## 关联
-- 姊妹能力: [STAROps RUM Intelligent Inspection](../ch01/1217-spec.html)
-- 姊妹能力: [STAROps UModel 数字孪生 + OpenAPI 嵌入（客户集成模式）](../ch01/1133-20.html)
+- 姊妹能力: [STAROps RUM Intelligent Inspection](../ch01/1218-spec.html)
+- 姊妹能力: [STAROps UModel 数字孪生 + OpenAPI 嵌入（客户集成模式）](../ch01/1135-20.html)
 - 平台: [阿里云 Agentic Cloud](../ch04/442-agentic-cloud.html)
 
 ---

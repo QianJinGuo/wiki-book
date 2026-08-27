@@ -147,12 +147,12 @@ OpenAI 的经验（大量规则塞进 AGENTS.md 会失败）和 Claude Code 的�
 - [AI Skill 测评指标体系](../ch01/660-ai-skill.html)
 
 ## Related
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/050-harness-engineering.html)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/096-harness-engineering.html)
 
 - [RAG 全链路技术详解：从文档加载到 Ragas 评估](../ch01/407-rag.html)
 - [AgentCore Managed Harness](../ch04/795-agentcore-harness.html)
-- [Agent Harness 解析：智能体架构深度拆解](ch05/066-agent-harness.html)
-- [From Agent Protocol to Harness Skill](../ch04/525-from-agent-protocol-to-harness-skill.html)
+- [Agent Harness 解析：智能体架构深度拆解](ch05/043-agent-harness.html)
+- [From Agent Protocol to Harness Skill](../ch04/526-from-agent-protocol-to-harness-skill.html)
 - [Claude Code 架构深度解析](../ch03/085-claude-code.html)
 - [Agent Memory 架构解析](../ch04/180-agent-memory.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](../ch11/255-openclaw.html)

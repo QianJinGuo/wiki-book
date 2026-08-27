@@ -55,7 +55,7 @@ SCTP 与 TCP 的关键差异在于多宿主关联（multi-homing）：一个连�
 - [Fragnesia：Linux 内核 LPE（ESP-in-TCP）](../ch01/407-rag.html)
 - [Autonomous Vulnerability Hunting with MCP](../ch12/061-autonomous-vulnerability-hunting-with-mcp.html)
 - [Anthropic N-days：前沿 Agent 漏洞研究](ch04/330-anthropic-n-days-frontier-agent-vulnerability-research.html)
-- [AI 漏洞研究的历史重演视角](../ch05/111-ai.html)
+- [AI 漏洞研究的历史重演视角](../ch05/113-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/linux-内核藏了-18-年的漏洞这次-ai-比所有人先找到.md)
 

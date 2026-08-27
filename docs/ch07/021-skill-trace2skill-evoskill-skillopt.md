@@ -141,7 +141,7 @@ SkillEvo 从**进化梯度的持续供给**角度补全自进化路线（腾讯�
 ## 相关实体
 
 - [SkillOpt: 像训练神经网络一样训练 Skill](../ch05/033-skillopt.html)
-- [Agent Skills 综合调查](../ch04/497-agent-skills.html)
+- [Agent Skills 综合调查](../ch04/496-agent-skills.html)
 - [Hermes Agent 自进化](../ch03/099-hermes-agent.html)
 - [Agent 自改进六机制](../ch03/006-agent.html)
 - [阿里 Agentic Cloud](../ch04/442-agentic-cloud.html)

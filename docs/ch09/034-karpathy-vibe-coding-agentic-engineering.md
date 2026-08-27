@@ -135,11 +135,11 @@ Karpathy 的例子很具体：他不再记 NumPy 和 PyTorch 之间 API 的细�
 
 ## 相关实体
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/298-agentic.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/277-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch04/757-agentic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

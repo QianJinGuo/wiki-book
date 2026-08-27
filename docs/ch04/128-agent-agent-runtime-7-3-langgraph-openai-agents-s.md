@@ -112,20 +112,20 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 **同主题(Agent Runtime)**:
 
 - vs **[若飞 Fable 5 Runtime Contract 工程化拆解](../ch01/475-claude-fable-5.html)** — 若飞文是**Runtime Contract 框架**(Task Brief 9 字段 / 能力路由 8 维度 / 状态账本 5 类),**深度工程协议视角**;本文是**7 职责概念入门视角** + **3 主流框架对比**。两者**完全互补**: 若飞 = Runtime **如何被设计** (契约层);二曲线 = Runtime **包含什么职责** + **用什么框架实现** (职责 + 工具层)
-- vs **[阿里云云原生安全护栏三域演进](../ch05/111-ai.html)** — 那是从云资源到 AI 模型到模型间路由的**三域护栏**;本文的"风险控制"职责是 Guardrail 的**单点实现**视角
+- vs **[阿里云云原生安全护栏三域演进](../ch05/113-ai.html)** — 那是从云资源到 AI 模型到模型间路由的**三域护栏**;本文的"风险控制"职责是 Guardrail 的**单点实现**视角
 
 **Agent Loop / Context / Tool 系列**(本文 7 职责的前 3 块与这些 entity 强相关):
 
 - vs **[阿里云 Agent 演化四阶段六维度](../ch03/006-agent.html)** — 阿里云是**演化阶段视角**;本文是**职责解剖视角**。两者都讲 Runtime 但切入维度不同
-- vs **[Harness Engineering Framework](../ch05/050-harness-engineering.html)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
-- vs **[Agent Harness 架构设计与生产实践](../ch05/066-agent-harness.html)** — Production 视角更全;本文是入门视角
+- vs **[Harness Engineering Framework](../ch05/096-harness-engineering.html)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
+- vs **[Agent Harness 架构设计与生产实践](../ch05/043-agent-harness.html)** — Production 视角更全;本文是入门视角
 
 **框架生态**(本文 3 主流框架):
 
 - vs **[Google Agent Executor Distributed Runtime](ch04/441-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/396-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
 - vs **[Amazon Bedrock AgentCore Runtime 深度分析](ch04/674-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](ch04/795-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/299-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[AgentCore Harness](ch04/795-agentcore-harness.html)** / **[AgentCore Managed Harness](ch04/300-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -151,15 +151,15 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 3. Router 是复杂度的分水岭:简单 Agent 用提示词路由,复杂 Agent 才需要显式 Router
 
-本文将 Router 定性为"复杂 Agent 扩展层"而非第 8 个必备职责，这一判断具有重要的工程意义：**Router 的必要性是 Agent 复杂度阈值的结果，而不是功能丰富度的标志**。这与 [Agent Harness 架构设计与生产实践](../ch05/066-agent-harness.html) 的"按需引入复杂度"原则一致 — 过早引入 Router 会增加不必要的状态空间，早期 Agent 应该用提示词 + 工具选择承担简单分发。
+本文将 Router 定性为"复杂 Agent 扩展层"而非第 8 个必备职责，这一判断具有重要的工程意义：**Router 的必要性是 Agent 复杂度阈值的结果，而不是功能丰富度的标志**。这与 [Agent Harness 架构设计与生产实践](../ch05/043-agent-harness.html) 的"按需引入复杂度"原则一致 — 过早引入 Router 会增加不必要的状态空间，早期 Agent 应该用提示词 + 工具选择承担简单分发。
 
 ### 4. Trace ↔ 可观测性 是同一数据流的两个齿轮,必须配套设计
 
-本文清晰区分了 **Trace（记录）和 Observability（分析）**：Trace 提供原始执行链路数据，Observability 在这些数据之上构建监控与告警。[langgraph-state-machine-under-the-hood](ch04/271-langgraph.html) 等框架的实践也印证了这一点 — 没有 Trace，Observability 就是无源之水；没有 Observability，Trace 只是无人阅读的日志。两者是 Runtime 可观测性职责的不可分割两面。
+本文清晰区分了 **Trace（记录）和 Observability（分析）**：Trace 提供原始执行链路数据，Observability 在这些数据之上构建监控与告警。[langgraph-state-machine-under-the-hood](ch04/272-langgraph.html) 等框架的实践也印证了这一点 — 没有 Trace，Observability 就是无源之水；没有 Observability，Trace 只是无人阅读的日志。两者是 Runtime 可观测性职责的不可分割两面。
 
 ### 5. Runtime 是模型可替换性的工程底座,与"Token 资本"哲学异曲同工
 
-本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](../ch12/002-token.html) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](../ch05/050-harness-engineering.html) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
+本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](../ch12/002-token.html) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](../ch05/096-harness-engineering.html) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
 
 ## 实践启示(5 条 actionable)
 
@@ -173,7 +173,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 - **本文是入门视角**: 7 职责是"至少要有"清单,不是"全部要有"清单 — 真实生产 Runtime 远比 7 职责复杂
 - **3 主流框架对比浅尝辄止**: LangGraph / OpenAI SDK / 自研的 trade-off 仅 1-2 句,深度对比需各框架官方文档
-- **未涉及 prompt injection / 越权 / 隐私等高级 Guardrail**: 本文风险控制仅 1 段;深度安全参考 [阿里云安全护栏三域](../ch05/111-ai.html)
+- **未涉及 prompt injection / 越权 / 隐私等高级 Guardrail**: 本文风险控制仅 1 段;深度安全参考 [阿里云安全护栏三域](../ch05/113-ai.html)
 - **本文发布于 2026-06-05,早于若飞 Runtime Contract 文(2026-06-14)**: 时间上若飞受本文"Runtime 是什么"基础铺垫,后提出"Runtime Contract"上层抽象 — 形成"概念 → 协议"演化的 9 天跨度
 - **系列第 5-13 篇未发布**: 7 职责对应的 Memory / HITL / Guardrail / Trace 等深度篇未出,读者需补充
 
@@ -197,10 +197,10 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026.md)
 - [若飞 Fable 5 Runtime Contract](../ch01/475-claude-fable-5.html)
-- [阿里云安全护栏三域](../ch05/111-ai.html)
+- [阿里云安全护栏三域](../ch05/113-ai.html)
 - [阿里云 Agent 演化四阶段](../ch03/006-agent.html)
-- [Harness Engineering Framework](../ch05/050-harness-engineering.html)
-- [Agent Harness 架构设计与生产实践](../ch05/066-agent-harness.html)
+- [Harness Engineering Framework](../ch05/096-harness-engineering.html)
+- [Agent Harness 架构设计与生产实践](../ch05/043-agent-harness.html)
 - [Google Agent Executor Runtime](ch04/441-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/396-anthropic-claude-managed-agents.html)
 - [Amazon Bedrock AgentCore Runtime](ch04/674-amazon-bedrock-agentcore.html)

@@ -99,7 +99,7 @@ OpenAI 在 2026 年 5 月对 **Codex** 进行了重大升级，标志着它从"�
 - 产生大量难以审查的代码变更
 - 跨多个 commit 引入难以回滚的副作用
 
-参见 [天猫团队实战指南](../ch05/111-ai.html)中"AI 一直无法输出正确结果，在错误中不断循环"的"改不动"痛点——这在长周期任务中会被放大。
+参见 [天猫团队实战指南](../ch05/113-ai.html)中"AI 一直无法输出正确结果，在错误中不断循环"的"改不动"痛点——这在长周期任务中会被放大。
 
 ### 3. Locked Use 是 Computer Use 的物理空间扩展
 
@@ -128,7 +128,7 @@ OpenAI 的产品策略路径开始清晰：
 3. 用 Codex 的能力扩张到"所有需要操作电脑的知识工作"
 4. 用 ChatGPT for PowerPoint 这类插件回头反向渗透传统办公软件
 
-这与 [同期 a16z 对话 Roblox PM](../ch05/111-ai.html) "工具型 App 首当其冲被 Agent 入口替代" 的判断完全一致。
+这与 [同期 a16z 对话 Roblox PM](../ch05/113-ai.html) "工具型 App 首当其冲被 Agent 入口替代" 的判断完全一致。
 
 ### 5. 增长 hack：用 quota reset 强化用户增长
 
@@ -185,12 +185,12 @@ Appshots（屏幕感知） + /goal（长周期自主） + Locked Use（物理边
 ## 关联实体
 
 - [Nanobot Agent Framework Architecture Deep Dive](../ch03/006-agent.html) — subagent / 长周期任务的极简框架样本
-- [腾讯研究院Ai速递 20260506](../ch05/111-ai.html) — 同期 AI 行业全景，含"工具型 App 消亡"判断
-- [天猫新品营销技术团队Ai编码实战指南上](../ch05/111-ai.html) — AI 编码全流程工程化方法论
+- [腾讯研究院Ai速递 20260506](../ch05/113-ai.html) — 同期 AI 行业全景，含"工具型 App 消亡"判断
+- [天猫新品营销技术团队Ai编码实战指南上](../ch05/113-ai.html) — AI 编码全流程工程化方法论
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html) — 锯齿智能与 Codex 能力组合
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html) — 锯齿智能与 Codex 能力组合
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
-- [Agent Harness Context Management Working Set](../ch05/066-agent-harness.html) — Appshots 引发的 working set 管理新挑战
+- [Agent Harness Context Management Working Set](../ch05/043-agent-harness.html) — Appshots 引发的 working set 管理新挑战
 
 ## 信号判断
 

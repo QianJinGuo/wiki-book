@@ -23,7 +23,7 @@
 
 - [Agent 数据治理模式](../ch03/006-agent.html) 聚焦数据库凭证安全，本文聚焦企业级构建吞吐量和 Snowflake 集成
 - [CrewAI 小步快跑](../ch03/006-agent.html) 聚焦开发方法论，本文聚焦数据治理和平台集成
-- [Agent 安全三步序列](../ch05/091-harness.html) 聚焦安全，本文聚焦数据所在处的 Agent 构建
+- [Agent 安全三步序列](../ch05/080-harness.html) 聚焦安全，本文聚焦数据所在处的 Agent 构建
 
 ## 实践启示
 
@@ -35,9 +35,9 @@
 
 - [Agent 数据治理模式](../ch03/006-agent.html)
 - [CrewAI 小步快跑](../ch03/006-agent.html)
-- [Agent 安全三步序列](../ch05/091-harness.html)
-- [Agentium Agent 框架](../ch01/1491-agentium-agent.html)
-- [Snowflake Agentic Enterprise Summit](ch04/298-agentic.html)
+- [Agent 安全三步序列](../ch05/080-harness.html)
+- [Agentium Agent 框架](../ch01/1493-agentium-agent.html)
+- [Snowflake Agentic Enterprise Summit](ch04/757-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-build-agents-where-data-already-lives.md)
 

@@ -26,7 +26,7 @@ OT 环境的安全目标与 IT 存在根本性分歧。IT 安全的首要目标�
 Sandworm 的能力演进呈现出清晰的"IT 渗透 → 物理破坏"升级路径。2015 年 12 月，该组织以 BlackEnergy 恶意软件配合钓鱼邮件与远程访问工具入侵乌克兰电网调度系统，造成大范围停电；2016 年 12 月，其使用的 Industroyer/CrashOverride 恶意软件直接向变电站断路器发送破坏性指令，实现攻击流程自动化，被视为首个专为攻击电网而设计的恶意软件。此后 Sandworm 持续活跃，从 NotPetya 事件到对北美与欧洲能源设施的入侵，再到近期对 OT 目标的系统性渗透，表明其已从"偶发破坏"转向"建制化的 OT 作战能力"。而其每一次战术升级，都领先于多数关基运营者的防御更新节奏。
 
 ### Industry 4.0 攻击面扩张与空气隔离的消解
-传统 OT 安全长期依赖一个朴素假设：物理隔离即安全。工业网络与办公网络断开，攻击者即便攻破 IT 也无法触及控制层。但 Industry 4.0、智能制造、预测性维护与远程运维等浪潮正在系统性消解这道边界——OT 数据需要上云分析、工程师需要远程接入、供应链需要数据互通，于是 OT 设备通过网关、VPN 与云平台逐步暴露到企业网络乃至互联网。工业物联网（IIoT）设备普遍缺乏安全设计，固件与通信协议漏洞频出，[4G 工业路由器等边缘设备](../ch01/1133-20.html)的脆弱性更放大了暴露面。攻击者不再需要"突破空气隔离"，只需沿日益融合的 IT/OT 数据链路顺流而下，从企业网一侧渗透到控制网——空气隔离从"默认防线"退化为"需要主动构建并持续验证的配置项"。
+传统 OT 安全长期依赖一个朴素假设：物理隔离即安全。工业网络与办公网络断开，攻击者即便攻破 IT 也无法触及控制层。但 Industry 4.0、智能制造、预测性维护与远程运维等浪潮正在系统性消解这道边界——OT 数据需要上云分析、工程师需要远程接入、供应链需要数据互通，于是 OT 设备通过网关、VPN 与云平台逐步暴露到企业网络乃至互联网。工业物联网（IIoT）设备普遍缺乏安全设计，固件与通信协议漏洞频出，[4G 工业路由器等边缘设备](../ch01/1135-20.html)的脆弱性更放大了暴露面。攻击者不再需要"突破空气隔离"，只需沿日益融合的 IT/OT 数据链路顺流而下，从企业网一侧渗透到控制网——空气隔离从"默认防线"退化为"需要主动构建并持续验证的配置项"。
 
 ### OT 防御实践：从边界思维到纵深防御
 面对国家级对手，关基防御必须放弃"边界安全"的单点思维。首先，无法完全隔离的系统要实施严格的网络分段（network segmentation），在 IT/OT 边界部署防火墙与单向网关（data diode），只放行必要协议；其次，采用深度防御（defense-in-depth）架构，在物理层、网络层、主机层与控制层分别设防，使单层失守不致全盘崩溃；再次，建立 OT 专属的事件响应计划——OT 事故的处置优先级与 IT 不同，"保持工艺安全"往往优先于"取证保全"；最后，部署能理解 ICS 协议的持续监控，传统 IT SIEM 无法识别异常的 Modbus 写入或控制指令序列，需要协议感知的 OT 流量分析与行为基线化。NIST SP 800-213r1 等 IoT 安全指南为此类实践提供了可操作基线。
@@ -45,7 +45,7 @@ Sandworm 的能力演进呈现出清晰的"IT 渗透 → 物理破坏"升级路�
 - [Sandworm 转向 OT：Nozomi 遥测报告](https://github.com/QianJinGuo/wiki/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md) — 姊妹实体，提供 2025–2026 年针对 10 个工业组织的攻击遥测数据
 - [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](ch12/001-cisa-urges-critical-infrastructure-firms-to-fortify-before.html) — 监管层面对关基威胁的预警响应
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md) — 美国关基保护产业联盟动向
-- [A Route to Root in a 4G Industrial Router](../ch01/1133-20.html) — OT 边缘设备真实漏洞案例
+- [A Route to Root in a 4G Industrial Router](../ch01/1135-20.html) — OT 边缘设备真实漏洞案例
 - [NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines](ch12/065-nist-sp-800-213r1-iot-product-cybersecurity-guidelines.html) — IoT/OT 产品安全基线标准
 - [Linux Foundation 携手业界推出 Akrites 保护关键开源软件](../ch01/051-linux-foundation-and-industry-leaders-launch-akrites-to-defe.html) — 关键基础设施供应链防御倡议
 

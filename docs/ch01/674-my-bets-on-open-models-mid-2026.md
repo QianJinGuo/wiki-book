@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [dean ball on open models and government control](ch01/1056-dean-ball-on-open-models-and-government-control.html)
+- [dean ball on open models and government control](ch01/1058-dean-ball-on-open-models-and-government-control.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/my-bets-on-open-models-mid-2026.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -86,7 +86,7 @@ RL 训练时代真正的新护城河不是公开 benchmark 上的分数，而是
 
 ## 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)

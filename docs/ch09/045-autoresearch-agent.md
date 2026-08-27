@@ -102,7 +102,7 @@ Ralph Wiggum 方法的每轮循环是独立的——新上下文重新开始，�
 program.md 定义了 Agent 的权限边界和操作规范，本质上是给 Agent 的"研究章程/操作手册"。权限边界的清晰定义（如不可修改 go.mod/.github/、不可推送远程、不可删除文件）防止 Agent 越界操作，同时保留了其自主修改 internal/ 和 cmd/ 的能力。这种"最小权限+最大自主"的设计是 Harness Engineering 思想的具体实践。
 
 ### 5. 与 Harness Engineering 的深层联系
-本项目本质上是**软件开发场景的 Harness Engineering**：program.md = 宪法级约束，审核评分 = 量化验收标准，反馈驱动 = 自动化修正循环。Codex/Claude 在 Harness 内自主运行，评分达标前不退出。这与 [Harness Engineering Long Term Agent Tasks](../ch05/050-harness-engineering.html) 描述的"让 Agent 产出可预期、可衡量、可持续"高度一致。
+本项目本质上是**软件开发场景的 Harness Engineering**：program.md = 宪法级约束，审核评分 = 量化验收标准，反馈驱动 = 自动化修正循环。Codex/Claude 在 Harness 内自主运行，评分达标前不退出。这与 [Harness Engineering Long Term Agent Tasks](../ch05/096-harness-engineering.html) 描述的"让 Agent 产出可预期、可衡量、可持续"高度一致。
 
 ### 6. 质量优先级设计的工程考量
 5 维度权重分配（正确性35%、测试25%、代码质量20%、安全10%、性能10%）反映了软件工程的质量优先级：功能正确最重要，测试其次，代码规范第三，安全和性能各占一席之地。这个权重体系不是拍脑袋而是工程实践的沉淀——错误的功能比性能问题更致命，测试覆盖不足会在未来引发更多回归。
@@ -132,13 +132,13 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 ## 相关主题
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — 自进化机制与 AutoResearch 的"只保留改进"思想同源
 -  — Harness Engineering 让 Agent 产出可预期、可衡量、可持续
-- [Thin Harness Fat Skills](../ch05/103-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
+- [Thin Harness Fat Skills](../ch05/105-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
 ## 相关实体
 - [快手首个打工人Agent](../ch03/006-agent.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/006-agent.html)
-- [factory mission multi agent architecture](../ch01/1479-factory-mission-multi-agent-architecture.html)
+- [factory mission multi agent architecture](../ch01/1481-factory-mission-multi-agent-architecture.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
@@ -149,7 +149,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 - [Claude Code 设计原则与对照分析](../ch03/085-claude-code.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/085-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
-- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/091-harness.html)
+- [Harness如何支撑Agent在生产环境稳定运行？](../ch05/080-harness.html)
 - [Agent 原理、架构与工程实践](../ch03/006-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 

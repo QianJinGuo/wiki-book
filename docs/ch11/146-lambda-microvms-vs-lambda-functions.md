@@ -74,8 +74,8 @@ Lambda Functions 的 SnapStart 可以缓解 Java 等语言的初始化延迟，�
 
 - [AgentCore 多Agent系统AWS实现](../ch04/795-agentcore-harness.html)
 - [Backend for Agent 架构](../ch03/006-agent.html)
-- [腾讯 Harness Engineering 探索之旅](../ch05/050-harness-engineering.html)
-- [企业级 Agent 编排](../ch04/630-agent-orchestration.html)
+- [腾讯 Harness Engineering 探索之旅](../ch05/096-harness-engineering.html)
+- [企业级 Agent 编排](../ch04/631-agent-orchestration.html)
 - [AI 原生企业转型](../ch05/022-ai-native.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lambda-microvms-vs-lambda-functions全方位深度对比.md)

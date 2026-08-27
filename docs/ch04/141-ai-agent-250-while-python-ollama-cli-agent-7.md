@@ -238,7 +238,7 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 
 - [从零复刻 Claude Code](../ch03/085-claude-code.html) — ConardLi 的 30 模块**路线图**（roadmap）
 - 本文 — 7 模块**完整可运行实现**（minimal 250-line implementation with Ollama）
-- [Harness Engineering 框架](../ch05/050-harness-engineering.html) — Anthropic/OpenAI 抽象框架
+- [Harness Engineering 框架](../ch05/096-harness-engineering.html) — Anthropic/OpenAI 抽象框架
 - [Claude Code Harness 深度理解](../ch01/638-claude-code-harness-deep-understanding.html) — 生产级深度
 
 两者互补：ConardLi 给"我要做哪些 30 件事"的路线，本文给"这 7 件事怎么做、能跑、可改"的具体代码。
@@ -257,7 +257,7 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 
 ### 3. 斜杠命令是分层架构的最小实践
 
-斜杠命令将元操作（系统控制）与内容操作（LLM 处理）在 Python 层分离，不需要 LLM 介入。这个设计体现了一个关键工程原则：**不要让模型处理可以通过确定性代码完成的事情**。在 [Harness Engineering Framework](../ch05/050-harness-engineering.html) 中，这个原则扩展为"硬约束 vs 软约束"的区分——凡是可以通过规则引擎或 Python 代码确定处理的事情，都不应该消耗模型的上下文和推理预算。斜杠命令是这个原则在最简形态下的实现。
+斜杠命令将元操作（系统控制）与内容操作（LLM 处理）在 Python 层分离，不需要 LLM 介入。这个设计体现了一个关键工程原则：**不要让模型处理可以通过确定性代码完成的事情**。在 [Harness Engineering Framework](../ch05/096-harness-engineering.html) 中，这个原则扩展为"硬约束 vs 软约束"的区分——凡是可以通过规则引擎或 Python 代码确定处理的事情，都不应该消耗模型的上下文和推理预算。斜杠命令是这个原则在最简形态下的实现。
 
 ### 4. active_skill_content 是状态压缩下人格保持的最小解
 

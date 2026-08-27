@@ -74,7 +74,7 @@ CIO Dive 的核心受众是技术管理者，因此报道着重于组织层面�
 - [[entities/gbhackers-sandworm-shift-from-it-breaches]
 - [[entities/hs.playerzero-ai-code-review]
 - [[entities/code-simulation-for-enterprise-engineering-playerz]
-- [DeepMind AI Pointer — 交互范式变革](../ch05/111-ai.html)
+- [DeepMind AI Pointer — 交互范式变革](../ch05/113-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/engineering-roles-shift-from-developing-code-to-ma.md)
 

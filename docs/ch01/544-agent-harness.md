@@ -87,15 +87,15 @@ Boris Cherny 报告自验证提升 2-3x 质量，但这是有代价的：每步�
 8. **框架选择决策树**：需要确定性长流程 → LangGraph；需要多角色协作 → CrewAI；需要最大化定制灵活性 → 自己实现笨循环（Anthropic SDK）；需要快速原型且不确定长期需求 → OpenAI Agents SDK。
 
 ## 相关实体
-- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/091-harness.html)
-- [Thin Harness Fat Skills](../ch05/103-thin-harness-fat-skills-ai.html)
+- [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/080-harness.html)
+- [Thin Harness Fat Skills](../ch05/105-thin-harness-fat-skills-ai.html)
 - [你不知道的 Agent 原理架构与工程实践](../ch04/445-agent-principle-architecture-engineering-practice.html)
 - [Design Patterns for AI Agents 2026](../ch04/148-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 
-- [Agent Harness 架构](../ch05/066-agent-harness.html)
-- [Agent架构关键变化：Harness正在成为新后端](../ch05/091-harness.html)
-- [harness-engineering-systematic-explainer](../ch05/050-harness-engineering.html)
+- [Agent Harness 架构](../ch05/043-agent-harness.html)
+- [Agent架构关键变化：Harness正在成为新后端](../ch05/080-harness.html)
+- [harness-engineering-systematic-explainer](../ch05/096-harness-engineering.html)
 - [Claude Code Dynamic Workflows Source Code Architecture](../ch09/107-claude-code-dynamic-workflows.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-structure-navigation.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)

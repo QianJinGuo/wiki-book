@@ -34,7 +34,7 @@ skill-up 已在集团内部承接真实业务 Skill 评测。一次「重型端�
 - [阿里 SkillUp Agent Skill 评测](ch04/366-alibaba-skill-up-agent-skill.html)
 - [Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
 - [评测 Harness 设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
-- [Agent Harness Skill 系统实践](../ch05/066-agent-harness.html)
+- [Agent Harness Skill 系统实践](../ch05/043-agent-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里开源-skill-up让-agent-skill-可评测可回归.md)
 

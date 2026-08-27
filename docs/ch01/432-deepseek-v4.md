@@ -152,7 +152,7 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - 之前中国 LLM 的标签是"工程优化 + 性价比"
 - V4 之后中国 LLM 也有了自己的"架构创新"标签——mHC / CSA / HCA 都有理论贡献
 
-这与 [DeepSeek MoE 并行策略](ch01/803-deepseek.html)、[DeepSeek 成本迁移系统层 KV Cache Harness](ch01/803-deepseek.html)、[DeepSeek V4 Training 58-page Paper Deep Dive](ch01/1384-deepseek-v4.html) 等文章形成完整图景。
+这与 [DeepSeek MoE 并行策略](ch01/1475-deepseek.html)、[DeepSeek 成本迁移系统层 KV Cache Harness](ch01/1475-deepseek.html)、[DeepSeek V4 Training 58-page Paper Deep Dive](ch01/1384-deepseek-v4.html) 等文章形成完整图景。
 
 ### 六、与其他 V4 解读的关系
 
@@ -183,8 +183,8 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - [DeepSeek V4 Flash Means LLM Steering is Interesting Again](ch01/1337-deepseek-v4-flash-means-llm-steering-is-interesting-again.html)
 - [DeepSeek V4 DS4C / Antirez 本地推理](../ch09/056-deepseek-v4-ds4c-antirez.html)
 - [DeepSeek V4 Training 58-page Paper Deep Dive](ch01/1384-deepseek-v4.html)
-- [DeepSeek MoE 并行策略](ch01/803-deepseek.html)
-- [DeepSeek 成本迁移系统层 KV Cache Harness](ch01/803-deepseek.html)
+- [DeepSeek MoE 并行策略](ch01/1475-deepseek.html)
+- [DeepSeek 成本迁移系统层 KV Cache Harness](ch01/1475-deepseek.html)
 - [DeepSeek Code Harness](../ch09/016-deepseek-code-harness.html)
 - [DeepSeek Code Harness 竞争者 Tina](../ch09/016-deepseek-code-harness.html)
 - [17 种 agent 架构演进](../ch04/818-17-agent.html)

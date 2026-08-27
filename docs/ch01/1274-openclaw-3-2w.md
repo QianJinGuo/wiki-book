@@ -45,9 +45,9 @@
 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/023-ai-friendly.html)
-- [Ai Agent Harness Construction Akshay Baoyu](ch01/1195-ai-agent-harness.html)
-- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/111-ai.html)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/111-ai.html)
+- [Ai Agent Harness Construction Akshay Baoyu](ch01/1197-ai-agent-harness.html)
+- [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch05/113-ai.html)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch05/113-ai.html)
 - [Hermes Agent V014 Architecture Shugex](../ch03/099-hermes-agent.html)
 
 ## 实践启示

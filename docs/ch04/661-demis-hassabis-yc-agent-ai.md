@@ -12,7 +12,7 @@
 - 不存在的问题：他不认为几年后会有人说当前路线走错了
 
 ## 相关实体
-- [Wow Harness V3 Governance Protocol](../ch05/091-harness.html)
+- [Wow Harness V3 Governance Protocol](../ch05/080-harness.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/006-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/291-hermes.html)

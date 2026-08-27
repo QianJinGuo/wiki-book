@@ -48,8 +48,8 @@
 ## 相关链接
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-agent-kernel-cloudbase-tencent-2026-08-03.md)
-- 同平台姊妹篇：[Agent Loop Engineering 手册（腾讯）](../ch05/006-loop-engineering.html)、[WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构（腾讯技术工程）](../ch05/066-agent-harness.html)
-- 相关主题：[Agent Harness 12 组件 7 决策](../ch05/066-agent-harness.html)、[AgentScope 2.0：Managed Agents 底座 Harness](../ch05/091-harness.html)
+- 同平台姊妹篇：[Agent Loop Engineering 手册（腾讯）](../ch05/006-loop-engineering.html)、[WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构（腾讯技术工程）](../ch05/043-agent-harness.html)
+- 相关主题：[Agent Harness 12 组件 7 决策](../ch05/043-agent-harness.html)、[AgentScope 2.0：Managed Agents 底座 Harness](../ch05/080-harness.html)
 
 ---
 

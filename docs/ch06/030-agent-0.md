@@ -87,10 +87,10 @@ Speculative Decoding 的 SpecFog 方案将推理速度从 50 提升到 120 token
 ## 相关实体
 
 - [Agent 评测方法论与体系设计](../ch03/006-agent.html) — 更通用的 Agent 评测体系设计
-- [Agent 生产化 Harness](../ch05/066-agent-harness.html) — 与医疗 Agent 的生产化工程模式有交叉
+- [Agent 生产化 Harness](../ch05/043-agent-harness.html) — 与医疗 Agent 的生产化工程模式有交叉
 - [RAG 向量与知识图谱融合](../ch01/407-rag.html) — Agentic RAG 的技术背景
 - **推测解码技术** (Speculative Decoding) — SpecFog 所在的技术谱系
-- [Agent 生产化工程范式](../ch05/066-agent-harness.html) — 与蚂蚁的 Badcase 驱动研发范式相关
+- [Agent 生产化工程范式](../ch05/043-agent-harness.html) — 与蚂蚁的 Badcase 驱动研发范式相关
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ant-group-medical-agent-afu-qcon-2026.md)
 

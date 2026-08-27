@@ -153,14 +153,14 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 
 ## 相关实体
 - [Deepseek Code Harness](../ch09/016-deepseek-code-harness.html)
-- [Openclacky Harness Prompt Cache](ch05/091-harness.html)
+- [Openclacky Harness Prompt Cache](ch05/080-harness.html)
 - [Deepseek V4 Ds4C Antirez Local Inference Qbitai](../ch09/056-deepseek-v4-ds4c-antirez.html)
-- [Deepseek Moe Parallel Strategy](../ch01/803-deepseek.html)
+- [Deepseek Moe Parallel Strategy](../ch01/1475-deepseek.html)
 - [Deepseek V4 Triton Fp4 Optimization](../ch01/656-deepseek-v4-triton-fp4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
 
-- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](ch05/111-ai.html)
+- [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](ch05/113-ai.html)
 
 ## 相关链接
 

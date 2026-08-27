@@ -56,7 +56,7 @@ HiClaw v1.1.0 是该项目从"单容器玩具"向"企业级 Cloud Native 产品"
 - [Hiclaw V110 K8S Hermes Worker](../ch01/291-hermes.html)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/372-hermes-agent-goal.html)
 - [Hermes 9 Module Architecture Winty](../ch01/291-hermes.html)
-- [Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移](../ch05/111-ai.html)
+- [Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移](../ch05/113-ai.html)
 - [Pi Agent Framework](../ch04/416-pi-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)

@@ -66,7 +66,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 - [快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)
 - [CI&T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/674-amazon-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/505-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/506-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
 

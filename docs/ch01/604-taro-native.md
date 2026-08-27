@@ -77,10 +77,10 @@ Taro Native的渲染架构与React Native高度相似：JavaScript/模板层运�
 
 ## 相关实体
 
-- [Harness Engineering探索之旅](../ch05/050-harness-engineering.html)
+- [Harness Engineering探索之旅](../ch05/096-harness-engineering.html)
 - [淘天AI友好后端标准](../ch05/023-ai-friendly.html)
 - [淘天后端标准](https://github.com/QianJinGuo/wiki/blob/main/entities/alitech-standards.md)
-- [阿里巴巴NL2SQL Harness工程](../ch05/050-harness-engineering.html)
+- [阿里巴巴NL2SQL Harness工程](../ch05/096-harness-engineering.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - AI原生工程
 

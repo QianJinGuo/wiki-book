@@ -208,7 +208,7 @@ Forrester 2026 年的分析指出，最先进的组织正在将 Journey Map 从�
 ## 相关实体
 - [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/user-interviews-guide-pro.md)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03/021-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
-- [Npm Supply Chain Compromise Postmortem](../ch05/111-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch05/113-ai.html)
 - [Cloudflare Glasswing Mythos Security](../ch12/031-mythos.html)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

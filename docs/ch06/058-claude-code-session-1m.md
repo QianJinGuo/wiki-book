@@ -43,7 +43,7 @@
 
 ## 与相关概念的关联
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md) — 架构上下文压缩机制的源码级实现
-- [Agent Harness 上下文管理：工作集视角](../ch05/066-agent-harness.html) — 上下文≠聊天记录，工作集视角下的四框架对比
+- [Agent Harness 上下文管理：工作集视角](../ch05/043-agent-harness.html) — 上下文≠聊天记录，工作集视角下的四框架对比
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — 开源 Agent 的上下文管理策略对比
 
 ## 参考

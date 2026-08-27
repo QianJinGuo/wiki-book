@@ -91,7 +91,7 @@ Agentic Retrieval 的多 KB 路由功能依赖一个精妙的设计：retriever 
 - [Bedrock AgentCore 运行时](ch04/674-amazon-bedrock-agentcore.html)
 - [Bedrock 跨区域推理](../ch11/310-amazon-bedrock.html)
 - RAG 框架对比
-- [三种 RAG 架构](ch04/298-agentic.html)
+- [三种 RAG 架构](ch04/757-agentic.html)
 - RAG 检索增强生成
 - [知识库构建](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-base-construction.md)
 

@@ -96,7 +96,7 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 
 **工作流级封装 vs 原子级工具**：Skill 的可链式调用代表了一种新的抽象层次——工作流级封装。对比 [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html) 中描述的原子级 tool-use，Skill 更适合复杂多步骤流程（如"代码 review → 生成测试 → 修复 lint"流水线），而 tool 适合单点操作。两者可以共存，Skill 调用 tool，tool 执行原子步骤。
 
-**项目级与全局级的分层治理模型**：Skill 的两层部署结构（.claude/skills/ vs ~/.claude/skills/）本质上是"团队标准 + 个人偏好"的分层治理，与软件工程中"项目本地依赖 vs 全局依赖"的思路一致。参见 [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html) 中提到的 vibe coding 趋势，这种分层设计让 AI 工作流既可团队共享标准化，又可个人灵活定制，是工程化落地的关键平衡点。
+**项目级与全局级的分层治理模型**：Skill 的两层部署结构（.claude/skills/ vs ~/.claude/skills/）本质上是"团队标准 + 个人偏好"的分层治理，与软件工程中"项目本地依赖 vs 全局依赖"的思路一致。参见 [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html) 中提到的 vibe coding 趋势，这种分层设计让 AI 工作流既可团队共享标准化，又可个人灵活定制，是工程化落地的关键平衡点。
 
 ## 实践启示
 
@@ -110,11 +110,11 @@ description: 按标准流程 review API 代码，发现问题列出修复建议
 ## 关联实体
 
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/066-agent-harness.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/043-agent-harness.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/006-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch11/255-openclaw.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Claude Code Deep Architecture Analysis](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)

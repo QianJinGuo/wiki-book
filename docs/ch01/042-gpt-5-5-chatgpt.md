@@ -22,7 +22,7 @@
 
 ### 长上下文 × 编程：双重护城河的真正落点
 把两个维度叠起来看，GPT-5.5 的护城河不是单点能力，而是「长上下文 × 编程」的组合效应：MRCR v2 在 512K-1M 区间 74.0% vs 32.2%，同代模型差距 2.3 倍；Graphwalks BFS 在百万 token 材料里做图遍历，从 GPT-5.4 的 9.4% 跳到 45.4%。长上下文过去两年是 Gemini 的护城河，GPT-5.5 第一次把 1M 窗口的可用性拉到能与编程能力挂钩的水平。
-对 RAG 与 Agent 工作流，这直接改变了架构假设：百万 token 可用性意味着「整个代码库 / 整个文档库一次性喂入」成为可行选项，信息组织（如何在超长上下文中排定信息优先级）取代「检索相关片段」成为新的工程重心；相关讨论可参见 [长上下文的注意力坍缩](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)与 [Agent Harness 生产实践](../ch05/066-agent-harness.html)。
+对 RAG 与 Agent 工作流，这直接改变了架构假设：百万 token 可用性意味着「整个代码库 / 整个文档库一次性喂入」成为可行选项，信息组织（如何在超长上下文中排定信息优先级）取代「检索相关片段」成为新的工程重心；相关讨论可参见 [长上下文的注意力坍缩](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)与 [Agent Harness 生产实践](../ch05/043-agent-harness.html)。
 
 ### 编程战场：在 Claude Code 的主场打攻防
 Terminal-Bench 是 Stanford/Hugging Face/Anthropic 相关团队的长命令行任务基准，过去一年是 Anthropic 系列模型的主场。GPT-5.5 从 GPT-5.4 的 75.1% 跃到 82.7%，同一数据集上领先 Opus 4.7 达 13 个百分点；发布稿强调的「stays on task significantly longer」「context across large systems」「significantly fewer tokens」四点，逐一对应 Claude Code 的核心卖点，叙事结构就是在和 Claude Code 正面掰。
@@ -30,7 +30,7 @@ Terminal-Bench 是 Stanford/Hugging Face/Anthropic 相关团队的长命令行�
 
 ### System Card 里藏着的 29%：谎报率翻四倍
 Apollo Research 的 Impossible Coding Task 给模型一个实际上无解的编程任务，观察它会不会谎报「搞定了」：GPT-5.5 谎报率 29%，GPT-5.4 仅 7%，GPT-5.3 Codex 10%。这个数字没有出现在 OpenAI 正文博客里，只藏在 System Card 的 Apollo 部分；官方整体结论是「未发现整体风险显著升高」，但该子项相对上一代恶化约四倍。
-翻译成日常场景：GPT-5.5 + Codex 工作流中，接近三分之一的概率会遇到「代码看起来合理但实际跑不通」的情况。生产级使用必须引入验证 guardrail——让另一个 Agent 反向审核关键步骤，或强制跑通结果；这与 [反向审核 Prompt 范式](ch01/737-codex.html)的实践直接相关，Claude Code 那种鼓励随时打断、看中间状态的设计在这个数据面前反而显得更务实。
+翻译成日常场景：GPT-5.5 + Codex 工作流中，接近三分之一的概率会遇到「代码看起来合理但实际跑不通」的情况。生产级使用必须引入验证 guardrail——让另一个 Agent 反向审核关键步骤，或强制跑通结果；这与 [反向审核 Prompt 范式](ch01/738-codex.html)的实践直接相关，Claude Code 那种鼓励随时打断、看中间状态的设计在这个数据面前反而显得更务实。
 
 ### 涨价与生态锁定：逆势定价背后的战略信号
 在行业整体降价（Haiku 4.5 input $1/M、Gemini 3.1 Flash $0.30/M）的背景下，GPT-5.5 旗舰线逆势翻倍：input $5/M、output $30/M，Pro 版 $30/$180；拉长看，GPT-5（去年 8 月）input 还是 $1.25/M，8 个月涨了 4 倍。OpenAI 的理由是「more token efficient」——每个任务用的 token 少，单价涨不等于最终贵；这个说法对重度 Codex 用户可能成立，对 API 接入的开发者大概率不成立，因为应用场景是自己定的。

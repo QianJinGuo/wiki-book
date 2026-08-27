@@ -92,7 +92,7 @@ DeepSeek 用坐标（x, y）解决：每一步都是精确数值，没有歧义�
 
 - F_TwG：专门训 thinking with grounding（用框思考）
 - F_TwP：专门训 thinking with pointing（用点思考）
-分开训的原因：避免模式冲突（用框和用点的思维方式有差异，混在一起训会互相干扰） See also [Karpathy Vibe Coding To Agentic Engineering](../ch04/298-agentic.html)
+分开训的原因：避免模式冲突（用框和用点的思维方式有差异，混在一起训会互相干扰） See also [Karpathy Vibe Coding To Agentic Engineering](../ch04/757-agentic.html)
 
 ### Stage 3: Specialized RL（专家化强化学习）
 算法：GRPO（V4 论文同款）

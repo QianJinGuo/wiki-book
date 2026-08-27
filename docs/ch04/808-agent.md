@@ -15,7 +15,7 @@
 - 与 [Agent 自我改进六机制](../ch03/006-agent.html) 同主题但机制不同：六机制是分类学框架，本文是具体的"自出题"实现路径
 - 与 [自进化评估器瓶颈](../ch03/006-agent.html) 互补：本文侧重技能生成侧，评估器瓶颈侧重验证侧
 - 企业级落地见 [AgentScope Builder 自进化 Harness](ch04/814-self-evolving-agent.html)
-- 递归自我改进的理论背景见 [AI 递归自我改进](../ch05/111-ai.html)
+- 递归自我改进的理论背景见 [AI 递归自我改进](../ch05/113-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent开始自我进化会出题会反思还会自己长出新技能.md)
 

@@ -213,7 +213,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - Agent 自进化
 
 ## 相关实体
-- [Hermes Agent Loop Architecture](ch04/311-hermes-agent-loop.html)
+- [Hermes Agent Loop Architecture](ch04/312-hermes-agent-loop.html)
 - [Small Hermes Self Evolving Agent Architecture](ch04/814-self-evolving-agent.html)
 - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/099-hermes-agent.html)
 - [Hermes Observability Aliyun](../ch01/291-hermes.html)
@@ -230,7 +230,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 > Original: https://x.com/IBuzovskyi/status/2064377155476193362
 > Date: 2026-06-12 09:53
 
-本来源是 [第 1 来源 winty 源码解剖](ch04/311-hermes-agent-loop.html) 的**同主题 1 个月后的演进**——把"Hermes 单一主循环"扩展为**"8 个 Loop 跨时间尺度同时运行"**的复利系统。本来源补全了第 1 来源**未涉及的**关键维度: 跨 Loop 复利 / FlowZap 4 类 taxonomy / 迭代预算分层 / 可中断 API / ThreadPoolExecutor 并发。
+本来源是 [第 1 来源 winty 源码解剖](ch04/312-hermes-agent-loop.html) 的**同主题 1 个月后的演进**——把"Hermes 单一主循环"扩展为**"8 个 Loop 跨时间尺度同时运行"**的复利系统。本来源补全了第 1 来源**未涉及的**关键维度: 跨 Loop 复利 / FlowZap 4 类 taxonomy / 迭代预算分层 / 可中断 API / ThreadPoolExecutor 并发。
 
 ### 核心数据
 
@@ -318,7 +318,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - **Skill Loop** 与 [Hermes Skill System](../ch07/019-hermes-skill.html) 直接对应 — Hermes 技能系统
 - **Reflection Loop** 与 [Hermes Self Improving Loop Winty](../ch01/291-hermes.html) 直接对应 — Hermes 自进化
 - **Orchestration Loop** 与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/099-hermes-agent.html) 互补 — Loop 视角 vs Operator 视角
-- **Core Loop / Ralph Loop** 与 [Hermes Agent Loop Architecture](ch04/311-hermes-agent-loop.html) 直接对应 — 主循环概念
+- **Core Loop / Ralph Loop** 与 [Hermes Agent Loop Architecture](ch04/312-hermes-agent-loop.html) 直接对应 — 主循环概念
 - **Core Loop 9 步** 与 [Hermes Agent Goal And Kanban](ch04/372-hermes-agent-goal.html) 的 `/goal` + kanban 集成直接对应 — 同一架构的两种视角
 
 ### 关键独到判断
@@ -326,7 +326,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - **8 Loop 复利是 Hermes 与其他 agent framework 的本质差距**: 单 Loop 看不出价值,8 Loop 叠在一起形成复利
 - **FlowZap 4 类 taxonomy 是业界首个系统化 Loop 分类法**: Retry/Reflection/Memory/Skill 是 Loop 设计的"自然认知映射"
 - **Core Loop 9 步补全 winty 5 阶段**: 更具体到每步代码定位(`prompt_builder.py` / compression 检查 / prompt caching markers 等)
-- **迭代预算三层分层**: session 90 / subagent 50 / Ralph 20 — 三层独立预算,互不干扰(对比 [Hermes Agent Loop Architecture](ch04/311-hermes-agent-loop.html) 早期版本 25/50 轮简化)
+- **迭代预算三层分层**: session 90 / subagent 50 / Ralph 20 — 三层独立预算,互不干扰(对比 [Hermes Agent Loop Architecture](ch04/312-hermes-agent-loop.html) 早期版本 25/50 轮简化)
 - **可中断 API call 是工程底线**: interrupt event + 放弃 API 线程 — 比 winty 早期版本"用户打断处理"更精细
 - **40% 提速是 Loop 复利的可量化证据**: TokenMix benchmark 是 Loop 系统价值的"客观度量",其他 framework 应学这种度量
 

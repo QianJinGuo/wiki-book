@@ -88,7 +88,7 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 *Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)*
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/505-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](ch04/506-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/137-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/272-aws-bedrock-agentcore.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/272-aws-bedrock-agentcore.html)
@@ -102,10 +102,10 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](ch04/674-amazon-bedrock-agentcore.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/139-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/947-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/949-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/321-amazon-nova.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/996-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/998-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [AgentCore Managed Harness](ch04/795-agentcore-harness.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/314-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch04/674-amazon-bedrock-agentcore.html)
