@@ -86,11 +86,11 @@ Context建设落在数据工程、AI产品、治理三个团队的交叉地带�
 > [!contradiction] 参见 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-context-layer-kgc-2026.md) — 持更乐观的飞轮预期
 
 ## 相关实体
-- [OpenHuman: AI Agent 持久记忆框架](../ch04/180-agent-memory.html)
-- [AI Coding Agent 记忆系统](../ch04/410-ai-coding-agent.html)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04/179-agent-memory.html)
+- [AI Coding Agent 记忆系统](../ch04/409-ai-coding-agent.html)
 - [Claude Code Agent 工程设计](../ch03/075-claude-code-agent.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/416-pi-agent.html)
+- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/415-pi-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

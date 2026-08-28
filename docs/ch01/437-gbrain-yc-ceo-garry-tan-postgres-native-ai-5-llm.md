@@ -137,26 +137,26 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 - [AgentBrowser](../ch09/080-agent-browser-claude-code-qoderwork.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch06/049-memory.html)
 - [Agent 自我改进的六条路](../ch03/006-agent.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/1135-20.html)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](ch01/1139-20.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [SkillClaw](../ch04/568-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/019-hermes-skill.html)
-- [OpenHuman: AI Agent 持久记忆框架](../ch04/180-agent-memory.html)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04/179-agent-memory.html)
 - [上下文工程 - 三种Memory方案对比](../ch06/049-memory.html)
 
 - [AutoCLI](../ch03/132-autocli.html)
-- [阿里巴巴 Aone 面向 Agent 的研发模式探索](../ch04/110-aone-agentic.html)
+- [阿里巴巴 Aone 面向 Agent 的研发模式探索](../ch04/109-aone-agentic.html)
 - [CLI-Anything](../ch03/106-cli-anything.html)
-- [AgentRun](../ch04/441-agentrun.html)
+- [AgentRun](../ch04/005-agentrun.html)
 - [OpenCLI](../ch03/095-opencli.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [24h打工人](../ch03/006-agent.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/912-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](ch01/913-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/099-hermes-agent.html)
 - [Agent 原理、架构与工程实践](../ch03/006-agent.html)
 - [AI Agent 工程师能力地图](../ch04/684-ai-agent.html)
 
-- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/180-agent-memory.html)
+- [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/179-agent-memory.html)
 
 ## 第 3 来源：术哥无界 v0.42.44.0 源码深度解析
 

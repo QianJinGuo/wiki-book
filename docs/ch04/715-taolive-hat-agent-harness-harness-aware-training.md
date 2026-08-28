@@ -35,9 +35,9 @@ HAT 的核心是把 Harness 状态（Skills、工具 schema、提示结构、交
 
 ## 与既有 Harness/Agentic-RL 工作的关系
 
-- 与 [Agent Lightning v1.0（Harnessed Agentic RL）](ch04/315-agentic-rl.html) 同为「让训练感知 Harness」的 arxiv 工作，但路线不同：Lightning 是轻量框架 + agentic RL，TaoLive HAT 是三阶段 HSA 训练方法论，强调**可演化 Harness 下的泛化保持**。
+- 与 [Agent Lightning v1.0（Harnessed Agentic RL）](ch04/314-agentic-rl.html) 同为「让训练感知 Harness」的 arxiv 工作，但路线不同：Lightning 是轻量框架 + agentic RL，TaoLive HAT 是三阶段 HSA 训练方法论，强调**可演化 Harness 下的泛化保持**。
 - 属于 [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 在「训练侧」的延伸——多数 harness 工作聚焦运行时编排（[Agent Harness 工程综述](../ch05/096-harness-engineering.html)），HAT 补上了「模型如何与动态 Harness 一起训练」这一环。
-- 与 [Agentic RL 七课](ch04/315-agentic-rl.html)、[CUHK SLIM（Skill 生命周期）](ch04/315-agentic-rl.html) 同属 agentic RL 后训练谱系。
+- 与 [Agentic RL 七课](ch04/314-agentic-rl.html)、[CUHK SLIM（Skill 生命周期）](ch04/314-agentic-rl.html) 同属 agentic RL 后训练谱系。
 
 ## 启示
 

@@ -43,7 +43,7 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 - **相关实体**: 浏览器安全与隐私
 
 ## 相关实体
-- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](ch12/125-cyberscammers-are-bypassing-banks-security-with-illicit-too.html)
+- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](ch12/101-cyberscammers-are-bypassing-banks-security-with-illicit-too.html)
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](ch12/017-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [Ai_Threat_Readiness_Framework](../ch05/113-ai.html)
 - [Npm Supply Chain Compromise Postmortem](../ch05/113-ai.html)

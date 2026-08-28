@@ -56,10 +56,10 @@ AgentRun 开放平台提出的用户组（User Group）→ 用户（User）→ �
 配置系统默认配额与用户级自定义配额相结合，实现事前预警、事后审计。节省模式（按量付费、页面关闭即回收）和多档算力规格选择，帮助企业将非必要 Token 消耗降低 30%-50%。
 
 ## 相关实体
-- [我用 Skillmd 做了一个简历生成器](ch04/350-skill.html)
+- [我用 Skillmd 做了一个简历生成器](ch04/349-skill.html)
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/077-skills.html)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](ch04/496-agent-skills.html)
-- [Aliyun Agentrun 2Line Integration](ch04/441-agentrun.html)
+- [Aliyun Agentrun 2Line Integration](ch04/005-agentrun.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](ch04/496-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-从能用到管好中间差了什么.md)

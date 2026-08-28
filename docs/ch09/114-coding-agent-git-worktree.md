@@ -80,7 +80,7 @@ Coding Agent 提升代码生成和任务执行速度，却不会让并发竞争�
 
 ## 相关实体
 
-- [Codex Goal Agent](../ch04/247-codex-goal-agent.html) — Coding Agent 运行时
+- [Codex Goal Agent](../ch04/246-codex-goal-agent.html) — Coding Agent 运行时
 - [Claude Code Agentic Harness 设计模式](../ch03/075-claude-code-agent.html) — Sub-Agent 编排体系
 - [端到端 CodingAgent 设计](../ch04/030-codingagent.html) — 另一团队 CodingAgent 工程化
 - [Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) — 驾驭工程约束 Agent 行为

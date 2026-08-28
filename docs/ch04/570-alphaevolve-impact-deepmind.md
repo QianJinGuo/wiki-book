@@ -12,7 +12,7 @@ AlphaEvolve: Gemini-powered coding agent scaling impact across fields — Google
 - [Alphaevolve Deepmind Discovery Agent](../ch03/006-agent.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](ch04/506-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/277-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](ch04/276-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaevolve-impact-deepmind.md)
 

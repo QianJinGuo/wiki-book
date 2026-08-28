@@ -52,7 +52,7 @@ ECC（Everything Claude Code）的 continuous-learning 模块实现了**「homun
 
 ## 相关概念
 - [Skill 工程原则](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-engineering-principles.md)
-- [技能自演化三种路径](../ch04/350-skill.html)
+- [技能自演化三种路径](../ch04/349-skill.html)
 - [Memento 自演化 Agent](../ch04/503-memento-skills-agent.html)
 - [SkillOpt 技能文档训练](../ch05/033-skillopt.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ecc-continuous-learning-homunculus-observation-instinct-aliexpress-2026-08-21.md)

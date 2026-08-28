@@ -209,7 +209,7 @@ Hermes的Smart Approval是**分诊导向**：先用LLM判断危险等级，再�
 ## 相关实体
 - [Hermes Agent Vs Openclaw Comparison](../ch06/023-hermes-agent-vs-openclaw.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch11/255-openclaw.html)
-- [Skill System Design Three Way Comparison](../ch04/350-skill.html)
+- [Skill System Design Three Way Comparison](../ch04/349-skill.html)
 - [Hermes Agent Memory System Vs Openclaw](../ch06/014-hermes-agent-memory.html)
 - [Openclaw Prompt Context Harness](../ch11/255-openclaw.html)
 

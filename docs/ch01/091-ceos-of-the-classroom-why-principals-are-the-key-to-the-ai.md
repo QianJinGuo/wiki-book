@@ -30,11 +30,11 @@ Salesforce 高管以 Oakland 学区二十余年教育者视角指出，K-12 教�
 
 ### 校长作为「学校的 CEO」：灵活资金与信任机制
 
-Principal Innovation Fund 的核心设计不是金额，而是权力结构：把决策权下放给最了解学校需求的人。相比「资助方定义指标、学校证明 impact」的传统模式，非限定资金让校长以教育者专业判断主导投入方向。这与 [管理作为 AI 时代的超能力](ch01/679-management-as-ai-superpower.html) 的判断一致——AI 转型中组织成败的关键往往不是技术本身，而是拥有判断力的管理者；校长正是学校这一「组织」的 AI 转型管理者。
+Principal Innovation Fund 的核心设计不是金额，而是权力结构：把决策权下放给最了解学校需求的人。相比「资助方定义指标、学校证明 impact」的传统模式，非限定资金让校长以教育者专业判断主导投入方向。这与 [管理作为 AI 时代的超能力](ch01/680-management-as-ai-superpower.html) 的判断一致——AI 转型中组织成败的关键往往不是技术本身，而是拥有判断力的管理者；校长正是学校这一「组织」的 AI 转型管理者。
 
 ### 从效率工具到 agentic 时代：AI 与教师的角色重构
 
-Summit 上的讨论发生了范式转移：从「把 AI 当作效率工具」转向理解其在 [新 agentic 时代](ch01/830-ai-mollick.html) 中的角色。Agentic AI 的即时价值在于接管学校的「autonomic core」——沉重的行政与日常事务，直接缓解教师 burnout；但 Salesforce Futures VP Mick Costigan 提醒，设计 holistic 教育未来时必须超越简单的时间节省，转向培养算法无法复制的「人类特质」。AI 的 [Jagged AI Frontier](../ch05/113-ai.html)——擅长 legible 可指定任务、不擅长高语境与伦理判断——恰好与教师的核心能力互补，这一边界应当被显式纳入课程与分工设计。
+Summit 上的讨论发生了范式转移：从「把 AI 当作效率工具」转向理解其在 [新 agentic 时代](ch01/831-ai-mollick.html) 中的角色。Agentic AI 的即时价值在于接管学校的「autonomic core」——沉重的行政与日常事务，直接缓解教师 burnout；但 Salesforce Futures VP Mick Costigan 提醒，设计 holistic 教育未来时必须超越简单的时间节省，转向培养算法无法复制的「人类特质」。AI 的 [Jagged AI Frontier](../ch05/113-ai.html)——擅长 legible 可指定任务、不擅长高语境与伦理判断——恰好与教师的核心能力互补，这一边界应当被显式纳入课程与分工设计。
 
 ### Agentic harness：教育场景的 AI 治理新框架
 
@@ -53,8 +53,8 @@ Summit 上的讨论发生了范式转移：从「把 AI 当作效率工具」转
 - [Toto 2.0: Time series forecasting enters the scaling era](../ch11/189-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [The best argument I've heard for why AI won't take your job](../ch05/113-ai.html)
 - [Jagged AI Frontier](../ch05/113-ai.html)
-- [Agentic AI 与人类共存范式](ch01/830-ai-mollick.html)
-- [管理作为 AI 时代的超能力](ch01/679-management-as-ai-superpower.html)
+- [Agentic AI 与人类共存范式](ch01/831-ai-mollick.html)
+- [管理作为 AI 时代的超能力](ch01/680-management-as-ai-superpower.html)
 - [Canvas 泄露事件：教育平台安全的警钟](../ch12/034-canvas-breach-disrupts-schools-colleges-nationwide.html)
 - [Salesforce 无头软件化](ch01/358-1.html)
 

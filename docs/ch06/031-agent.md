@@ -29,7 +29,7 @@
 落地解决"改什么、怎么生成修复、怎么安全上线"；控制是"方向盘和刹车"，确保进化方向不跑偏。评测是闭环输入源，Skill/Prompt 更新后必须能被评测验证，验证结果反哺下一轮——链路断任何一环飞轮都转不起来。
 
 ## 相关
-与 [Agent 自进化评估瓶颈（外置 evaluator）](../ch03/006-agent.html)、[Skill 四层验证体系](../ch01/660-ai-skill.html)、[美团图灵 Agent 评测体系](../ch03/006-agent.html) 呼应（本文为整合四齿飞轮的体系级方法论）；与 [阿里 AgentLoop 自进化飞轮](../ch04/362-agentloop.html)、[Hermes 自进化闭环](../ch01/291-hermes.html) 同为自进化飞轮主题。与 [AutoSDK 可观测与自进化闭环](../ch01/1135-20.html) 互补（该篇讲可观测地基，本篇讲评测-记忆-落地-控制全链条）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-self-evolution-four-gear-flywheel-tencent-2026.md)
+与 [Agent 自进化评估瓶颈（外置 evaluator）](../ch03/006-agent.html)、[Skill 四层验证体系](../ch01/661-ai-skill.html)、[美团图灵 Agent 评测体系](../ch03/006-agent.html) 呼应（本文为整合四齿飞轮的体系级方法论）；与 [阿里 AgentLoop 自进化飞轮](../ch04/361-agentloop.html)、[Hermes 自进化闭环](../ch01/291-hermes.html) 同为自进化飞轮主题。与 [AutoSDK 可观测与自进化闭环](../ch01/1139-20.html) 互补（该篇讲可观测地基，本篇讲评测-记忆-落地-控制全链条）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-self-evolution-four-gear-flywheel-tencent-2026.md)
 
 ---
 

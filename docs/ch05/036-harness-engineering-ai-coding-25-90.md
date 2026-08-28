@@ -78,7 +78,7 @@
 - [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](ch05/096-harness-engineering.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/080-harness.html)
 - [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/350-skill.html)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch04/349-skill.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 ## 深度分析

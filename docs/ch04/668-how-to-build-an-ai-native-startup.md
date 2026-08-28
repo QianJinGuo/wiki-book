@@ -51,7 +51,7 @@ Stepan Gershuni 在 cyber.fund 发布的这篇创始人指南，提出了 AI 原
 
 ## 相关实体
 - [Agent Harness Architecture Design Production Guide](../ch05/043-agent-harness.html)
-- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/757-agentic.html)
+- [Schemaflow Openai Cookbook Staged Agentic Workflow](ch04/298-agentic.html)
 - [How To Build Audio Transcription Agent](ch04/589-how-to-build-audio-transcription-agent.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/022-ai-native.html)
 - [Harness Engineering Comprehensive Guide Conardli](../ch05/096-harness-engineering.html)

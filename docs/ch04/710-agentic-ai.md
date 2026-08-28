@@ -46,7 +46,7 @@
 
 ## 关联
 
-- [AI Infra 运维智能体基准](../ch01/1590-ai-infra.html) — Agent 评测与精度保障
+- [AI Infra 运维智能体基准](../ch01/1593-ai-infra.html) — Agent 评测与精度保障
 - [Spec as AIOS：AI-Native 架构](../ch05/022-ai-native.html) — 阿里巴巴系 AI Native 实践，与维纳的推理数据生成互补
 - [Lilian Weng Harness Engineering — RSI 从 Harness 开始](../ch05/096-harness-engineering.html) — Harness 自进化方向与维纳的闭环反馈理念相通
 

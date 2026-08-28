@@ -24,13 +24,13 @@
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](../ch05/113-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch01/291-hermes.html)
 - [Hermes Agent vs OpenClaw 对比分析](../ch06/023-hermes-agent-vs-openclaw.html)
-- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/350-skill.html)
+- [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](ch04/349-skill.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](../ch11/255-openclaw.html)
 - [OpenCLAW 完全指南](../ch11/255-openclaw.html)
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/725-openclaw-agent.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/726-openclaw-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/085-claude-code.html)
 - [Agent 上下文窗口管理对比](../ch06/010-context-window-management-comparison.html)
-- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/350-skill.html)
+- [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](ch04/349-skill.html)
 
 ## 深度分析
 **嘉宾构成反映AIGC产业发展三大趋势**

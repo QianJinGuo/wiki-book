@@ -172,7 +172,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 - [Claude Code Openclaw Usage Ettin](../ch09/043-claude-code-openclaw-usage-ettin.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/096-harness-engineering.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/085-claude-code.html)
-- [Skill System Design Three Way Comparison](../ch04/350-skill.html)
+- [Skill System Design Three Way Comparison](../ch04/349-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-openclaw-memory-comparison.md)
 

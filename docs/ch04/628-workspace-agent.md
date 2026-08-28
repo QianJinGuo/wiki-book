@@ -28,7 +28,7 @@ Workspace 能不能越来越好用，关键在 summarize skill（迭代收尾写
 核心产品 Workspace，文档组织三层，沉淀 20 个 skill 分六组覆盖需求讨论→开发验收→排障→封线→资产沉淀完整链路，Workflow 四阶段 Spec Driven Development。示例：Bug 修复（diagnosing-bugs 定位→to-icafe-card 建卡→spec-workflow 走方案设计/开发/验收/收尾四步→Patch+交付报告）；新功能开发（spec-workflow 走 spec driven 流程）。
 
 ## 相关
-与 [AI-Native 组织方法论（SDD）](../ch05/022-ai-native.html)、[Lattice Harness 团队 SDD 实践](../ch05/129-ai-coding.html)、[Spec as AIOS（AGENTS.md 类）](../ch05/022-ai-native.html) 同属 spec-driven/组织工程主题；本文贡献是「面向 Agent 的组织资产基座」——不存快照只存索引 + knowledge/activity 两层 + summarize 写回闭环。与 [组织能力护城河](../ch01/1073-ai-true-moat-organizational-capability.html)、[AI 时代护城河不是大模型](../ch01/871-llm.html) 互补（组织资产 vs 组织能力）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workspace-organizational-asset-base-baidu-2026.md)
+与 [AI-Native 组织方法论（SDD）](../ch05/022-ai-native.html)、[Lattice Harness 团队 SDD 实践](../ch05/129-ai-coding.html)、[Spec as AIOS（AGENTS.md 类）](../ch05/022-ai-native.html) 同属 spec-driven/组织工程主题；本文贡献是「面向 Agent 的组织资产基座」——不存快照只存索引 + knowledge/activity 两层 + summarize 写回闭环。与 [组织能力护城河](../ch01/1077-ai-true-moat-organizational-capability.html)、[AI 时代护城河不是大模型](../ch01/1156-llm.html) 互补（组织资产 vs 组织能力）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workspace-organizational-asset-base-baidu-2026.md)
 
 ---
 

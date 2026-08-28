@@ -72,18 +72,8 @@ Optimizing model training on [Amazon SageMaker AI](<https://aws.amazon.com/sagem
 
 ## Ch15.004 What I’ve been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
-> 📊 Level ⭐⭐ | 15.1KB | `entities/interconnects-what-ive-been-building-atom-report-post-training-course-finishing-my-book-and-on.md`
+> 📊 Level ⭐⭐ | 14.8KB | `entities/interconnects-what-ive-been-building-atom-report-post-training-course-finishing-my-book-and-on.md`
 
-type: entity
-- raw/articles/what-ive-been-building-atom-report-post-training-course-fini
-tags: [interconnects]
-- article
-title: 'What I’ve been building: ATOM Report, post-training course, finishing my book,
-  and ongoing research'
-type: entity
-updated: 2026-08-01
----
-type: entity
 # What I’ve been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 ## 相关实体

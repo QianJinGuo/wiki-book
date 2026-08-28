@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **37 篇**实体，按深度递增排列。
+> 本章收录 **38 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 20 |
+| ⭐⭐ 工程师 | 需编程基础 | 21 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
 
@@ -781,7 +781,56 @@ LingBot-Vision 的"空间原生"定位与 [具身智能](https://github.com/Qian
 
 ---
 
-## Ch18.012 Unitree's IPO Filing: The State of the Robotics Market
+## Ch18.012 被高估的视触觉：VBTS 技术路线批判与具身触觉产业反思
+
+> 📊 Level ⭐⭐ | 7.1KB | `entities/vision-based-tactile-sensor-overrated-critique-2026.md`
+
+# 被高估的视触觉：VBTS 技术路线批判与具身触觉产业反思
+
+## 核心命题
+
+视触觉传感器（Vision-Based Tactile Sensor, VBTS）是触觉赛道热度最高的方向，但其热度建立在**视觉算法外溢与低硬件门槛**之上，而非触觉测量能力的根本突破。从技术渊源、性能边界、工业可落地性看，它属于「非原生、附庸式」技术路线，不适合作为机器人规模化力觉感知的基础设施。
+
+## 学术繁荣的三点根源
+
+- **视觉红利下的低门槛狂欢**：自 GelSight 时代至今，VBTS 底层仍依赖小体积 CMOS 摄像头模组成像，整体能力无本质提升——视觉传感器产业高度成熟，产品多沿用摄像头成熟方案，淘宝/方案商随手可得。
+- **视觉算法外溢**：ResNet/CNN（特征提取骨干）、U-Net（弹性体形变图→三维形状/力图）、Optical Flow（标记点位移→受力推算）三大算法全部来自视觉领域。领域整体「拿来主义」——针对触觉物理本质尚无独立于视觉体系的原创算法范式。
+- **产业低壁垒高同质化**：核心元器件 CMOS 由少数国际巨头主导（国内能自主供应不到 10 家），研发商本质是「在别人成品之上的系统集成」；微型摄像头+光源+透明弹性体+标记点即可搭原型，高校学生短期即可自研并低价销售。数十家公司基于同源开源算法开发，核心性能难拉开差距，长期「厂商林立、同质化内卷」，未出现头部企业。
+
+## 工业可落地的四道硬门槛
+
+1. **最小焦距约束与结构厚度**：有透镜方案厚度普遍 10mm+，系统厚重、模块化程度低；无透镜方案引入光学畸变。灵巧手指尖空间被电机/减速器/腱绳占满，刚性体积需求挤压机械设计空间。
+2. **刚性形态限制部署边界**：依赖封闭光学腔体与刚性成像基底，天然不具柔性，只能部署于平面/小曲率接触区（夹爪、指尖），无法像电子皮肤覆盖躯干、关节、曲面。原理上锁死部署规模。
+3. **多摄像头架构的系统性崩溃**：双手五指+掌心约需近 30 个模组；30 路并发需 160+ TOPS 算力（外挂服务器、功耗超百瓦），击穿毫秒级实时控制延迟底线（力反演端到端数十毫秒 vs 柔顺控制闭环 1-4ms）；30 根线束无法通过手指根部数毫米中空模组，「视觉通路增加→走线无解→算力扩大→功耗爆炸→成本抬高→部署受限」死循环。
+4. **弹性体「零和博弈」**：弹性体越软灵敏度越高、成像越清晰，但越易老化撕裂；硬化则微观形变信号被抹平，灵敏度大幅衰减。「软则灵、硬则钝」死结使传感器在真实产线必然面临光学特性随蠕变/磨损漂移，长期可靠性无从谈起。
+
+## 力感知的底层逻辑缺陷
+
+- **二维投影与欠定逆问题**：把三维形变压缩进二维图像再反演力分布，是典型欠定逆问题——多点/边缘接触时光度立体法误差积累、法向切向力混叠，误差源于二维观测信息缺失，难以算法消除。
+- **图像分辨率≠测力分辨率**：像素数只是光学采样单元，有效测力点密度受弹性体形变传递衰减、算法反演多解性、力解耦极限三重物理约束硬性上限锁死。堆像素反而因冗余光学噪声劣化 SNR。
+- **灵敏度与耐久不可兼得**（结构性矛盾）：「精密但脆弱」与「皮实但平庸」两极，无法诞生兼具高灵敏度与长寿命的工业级标准品。以弹性体失效为标志的测量失准才是判定耐久度的唯一标准——摄像头亮着只是「视觉假象」下的虚假存活。
+- **力精度动态落差**：压力引起的标记点位移集中在接触区边缘像素，中心几乎不动，可用像素极少；采样受相机物理帧率（30-60fps）锁死，远低于压阻式 kHz 级响应——抓取瞬间冲击、高频振动被完全遗漏，「通过百叶窗观察闪电」。
+- **光路遮挡与温漂**：油污粉尘改变反射率、弹性体蠕变老化、LED 光衰、水汽凝结、温漂（弹性体模量+LED 发光+相机暗电流三重复合漂移）——精度优势高度依赖「表面洁净、材料恒定、光源稳定」的理想假设。
+
+## 结论：担不起物理 AI 核心感知基础设施
+
+视触觉受限于原理层面的精度天花板、批量制造一致性短板、系统集成体积约束与长期运行可靠性瓶颈，被高估为具备规模化落地能力的核心触觉感知方案。它把本该轻量低功耗的触觉末梢异化为 GPU 供养的视频监控系统，在机器人本体（对体积/功耗/实时性/成本极度敏感）上完全矛盾，只能作为实验室研究、视觉纹理展示等特定场景的方案。
+
+## 相关概念
+
+- [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)
+- [机器人具身 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md)
+- [TouchWorld 触觉基础模型（反方观点）](https://github.com/QianJinGuo/wiki/blob/main/entities/poxiaointelligent-tactile-robot-foundation-model-2026.md)
+- [具身数据产业格局](https://github.com/QianJinGuo/wiki/blob/main/entities/embodied-ai-data-market-landscape-97-players-44-billion-2026.md)
+- [CurrentWorld-0 物理世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/currentworld-0-cross-embodiment-multimodal-physical-world-model.md)
+
+> [!contradiction] 参见 持相反观点：[TouchWorld](https://github.com/QianJinGuo/wiki/blob/main/entities/poxiaointelligent-tactile-robot-foundation-model-2026.md) 认为触觉基础模型 + 灵巧操作可行且取得 65% 真机成功率；本文认为视触觉路线原理上无法支撑规模化落地。两文对「触觉感知在具身智能中的地位」结论相左，判断依据是路线选择（视触觉 vs 其他触觉路线）与任务场景（灵巧操作 vs 全身物理交互）。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vision-based-tactile-sensor-overrated-critique-2026.md)
+
+---
+
+## Ch18.013 Unitree's IPO Filing: The State of the Robotics Market
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/unitree-ipo-robotics-market.md`
 
@@ -851,7 +900,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.013 蔚蓝BabyAlpha A3消费级机器狗
+## Ch18.014 蔚蓝BabyAlpha A3消费级机器狗
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/weilan-babyalpha-a3.md`
 
@@ -939,7 +988,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.014 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
+## Ch18.015 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
 > 📊 Level ⭐⭐ | 5.1KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
 
@@ -1018,7 +1067,7 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 ---
 
-## Ch18.015 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
+## Ch18.016 Xiaomi-Robotics-1: 10万小时训出开箱即用机器人基座模型，探索具身智能 Scaling 效应
 
 > 📊 Level ⭐⭐ | 4.7KB | `entities/xiaomi-robotics-1-embodied-base-model-scaling-2026.md`
 
@@ -1068,7 +1117,7 @@ Xiaomi-Robotics-1 验证了一条面向 [具身智能](https://github.com/QianJi
 
 ---
 
-## Ch18.016 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
+## Ch18.017 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 
@@ -1132,7 +1181,7 @@ Physical AI is moving from research into production.
 
 ---
 
-## Ch18.017 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
+## Ch18.018 MiniCPM-Robot：面壁智能开源具身智能 VLA 模型系列
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/waic-minicpm-1-5b-model-2026.md`
 
@@ -1168,7 +1217,7 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 
 ---
 
-## Ch18.018 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+## Ch18.019 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
 
 > 📊 Level ⭐⭐ | 3.7KB | `entities/weilan-babyalpha-a3-machine-dog.md`
 
@@ -1235,7 +1284,7 @@ RobotTrack 基于面壁 MiniCPM4-0.5B 模型加 MLP 结构训练，参数规模�
 
 ---
 
-## Ch18.019 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
+## Ch18.020 原力灵机 DM0.5：4B 具身基础模型，Zero-Shot 提升 31%
 
 > 📊 Level ⭐⭐ | 3.6KB | `entities/lingbot-dm05-4b-embodied-foundation-model-zero-shot-2026.md`
 
@@ -1285,7 +1334,7 @@ DM0.5 将 VLA（视觉-语言-动作）模型从精心搭建的"剧本环境"推
 
 ---
 
-## Ch18.020 LiOS 端云协同基础设施：具身智能柔性操作与虚实迁移（招商局狮子山人工智能实验室）
+## Ch18.021 LiOS 端云协同基础设施：具身智能柔性操作与虚实迁移（招商局狮子山人工智能实验室）
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/lios-end-cloud-robotics-infrastructure-vla-sim2real-simba-2026.md`
 
@@ -1319,7 +1368,7 @@ DM0.5 将 VLA（视觉-语言-动作）模型从精心搭建的"剧本环境"推
 
 ---
 
-## Ch18.021 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
+## Ch18.022 机器人端杯子之前在想什么？Afford-VLA：先找到杯子最趁手的那块区域
 
 > 📊 Level ⭐⭐ | 3.3KB | `entities/机器人端杯子之前在想什么afford-vla先找到杯子最趁手的那块区域.md`
 
@@ -1349,7 +1398,7 @@ Afford-VLA 包含三个关键步骤：
 
 ---
 
-## Ch18.022 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
+## Ch18.023 TouchWorld: 触觉基础模型与灵巧操作 — 破晓智能/哈工大
 
 > 📊 Level ⭐⭐ | 3.1KB | `entities/poxiaointelligent-tactile-robot-foundation-model-2026.md`
 
@@ -1379,7 +1428,7 @@ TouchWorld 的核心架构包含 Predictive（触觉目标预测）和 Reactive�
 
 ---
 
-## Ch18.023 Grabette — 开源机器人操作数据采集系统
+## Ch18.024 Grabette — 开源机器人操作数据采集系统
 
 > 📊 Level ⭐⭐ | 1.2KB | `entities/grabette-open-system-robot-manipulation-data.md`
 
@@ -1401,7 +1450,7 @@ Grabette 是面向**机器人操作数据录制**的开源系统——解决具�
 
 ---
 
-## Ch18.024 具身智能空间视觉死穴，终于被最新顶会彻底解决！
+## Ch18.025 具身智能空间视觉死穴，终于被最新顶会彻底解决！
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/具身智能空间视觉死穴终于被最新顶会彻底解决.md`
 
@@ -1477,7 +1526,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.025 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
+## Ch18.026 小米开源 Xiaomi-Robotics-U0：让具身数据进入大规模生成时代
 
 > 📊 Level ⭐⭐⭐ | 2.7KB | `entities/小米开源-xiaomi-robotics-u0让具身数据进入大规模生成时代.md`
 
@@ -1500,7 +1549,7 @@ VLA 模型在标准评测中动辄 90%+ 的成功率，但相机视角轻微变�
 
 ---
 
-## Ch18.026 Handroid：同一套硬件在人形机器人与灵巧手之间重构（UNC+Stanford）
+## Ch18.027 Handroid：同一套硬件在人形机器人与灵巧手之间重构（UNC+Stanford）
 
 > 📊 Level ⭐⭐⭐ | 2.3KB | `entities/handroid-reconfigurable-robot-dexterous-hand-humanoid-unc-stanford-2026.md`
 
@@ -1531,7 +1580,7 @@ Handroid 是北卡罗来纳大学教堂山分校与斯坦福大学提出的可�
 
 ---
 
-## Ch18.027 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
+## Ch18.028 ICRA'26双奖加冕！华人博士生重新定义机器人长时程操控
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/icra26-symskill-robot-long-horizon-manipulation.md`
 
@@ -1604,7 +1653,7 @@ SymSkill 的成功呼应了具身智能领域的一个重要趋势：从"端到�
 
 ---
 
-## Ch18.028 具身原生世界动作模型（Embodied World Action Model）
+## Ch18.029 具身原生世界动作模型（Embodied World Action Model）
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/全球首个具身原生世界动作模型来了.md`
 
@@ -1667,7 +1716,7 @@ LingBot-VA 2.0 的推理架构采用异步 Foresight 推理机制——"边想�
 
 ---
 
-## Ch18.029 景烁科技 — 具身智能数据基础设施
+## Ch18.030 景烁科技 — 具身智能数据基础设施
 
 > 📊 Level ⭐⭐⭐⭐ | 6.4KB | `entities/jingshuo-tech-embodied-ai-data-infrastructure-2026.md`
 
@@ -1737,7 +1786,7 @@ SkillForge 的核心产品理念是「数据基础设施即服务」——客户
 
 ---
 
-## Ch18.030 10万小时训出开箱即用机器人基座模型：Xiaomi-Robotics-1 探索具身智能 Scaling 效应
+## Ch18.031 10万小时训出开箱即用机器人基座模型：Xiaomi-Robotics-1 探索具身智能 Scaling 效应
 
 > 📊 Level ⭐⭐⭐⭐ | 6.0KB | `entities/xiaomi-robotics-1-具身智能-scaling.md`
 
@@ -1778,7 +1827,7 @@ Xiaomi-Robotics-1 采用"预训练 + 后训练"两阶段范式。预训练阶段
 
 ---
 
-## Ch18.031 NVIDIA ASPIRE：机器人技能库与持续学习新范式
+## Ch18.032 NVIDIA ASPIRE：机器人技能库与持续学习新范式
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/nvidia-aspire-robot-skill-library-code-as-policy.md`
 
@@ -1850,7 +1899,7 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.032 对话郎咸朋：昆仑行具身智能的物理因果世界模型与数据编译路线
+## Ch18.033 对话郎咸朋：昆仑行具身智能的物理因果世界模型与数据编译路线
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/对话郎咸朋用机器人创业重做一次百万智驾量产.md`
 
@@ -1897,7 +1946,7 @@ Jim Fan 提出的持续学习新范式触及了深度学习的根基：训练不
 
 ---
 
-## Ch18.033 Noe-0 世界动作模型（无本体数据训练）
+## Ch18.034 Noe-0 世界动作模型（无本体数据训练）
 
 > 📊 Level ⭐⭐⭐⭐ | 4.8KB | `entities/noe-0-world-action-model-no-teleop-noematrix-2026.md`
 
@@ -1932,7 +1981,7 @@ Noe-0 与已有具身世界模型实体同属 WAM/无本体/跨本体前沿：[L
 
 ---
 
-## Ch18.034 TrAct：视觉轨迹作为机器人控制与世界模型之间的共同语言（李飞飞团队）
+## Ch18.035 TrAct：视觉轨迹作为机器人控制与世界模型之间的共同语言（李飞飞团队）
 
 > 📊 Level ⭐⭐⭐⭐ | 4.0KB | `entities/feifei-li-tract-visual-tracks-robot-world-model.md`
 
@@ -1970,7 +2019,7 @@ TrAct 的贡献不在"换了个模型"，而在**换了一层信息接口**：�
 
 ---
 
-## Ch18.035 人形之外：擎羽把“身体”变成具身智能的新变量（柔性具身智能 + Fi0 跨本体基础模型）
+## Ch18.036 人形之外：擎羽把“身体”变成具身智能的新变量（柔性具身智能 + Fi0 跨本体基础模型）
 
 > 📊 Level ⭐⭐⭐⭐ | 3.9KB | `entities/人形之外擎羽柔性具身智能-fi0-跨本体基础模型.md`
 
@@ -2011,7 +2060,7 @@ Fi0 建立在基础判断上：**机器人对任务和物理世界的理解应�
 
 ---
 
-## Ch18.036 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
+## Ch18.037 Being-H0.8：50万小时视频训出的首个隐式触觉世界—动作模型
 
 > 📊 Level ⭐⭐⭐⭐ | 3.0KB | `entities/世界模型有触觉了50万小时视频训出首个隐式触觉世界动作模型.md`
 
@@ -2043,7 +2092,7 @@ Being-H0.8 是一套带触觉的隐式世界—动作模型：**预训练阶段*
 
 ---
 
-## Ch18.037 LeRobot v0.6.0 — Imagine, Evaluate, Improve
+## Ch18.038 LeRobot v0.6.0 — Imagine, Evaluate, Improve
 
 > 📊 Level ⭐⭐⭐⭐ | 1.8KB | `entities/lerobot-v060-imagine-evaluate-improve.md`
 

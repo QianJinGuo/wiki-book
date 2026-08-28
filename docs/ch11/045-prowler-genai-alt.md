@@ -71,13 +71,13 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](ch11/069-amazon-bedrock-claude-prompt-cache.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](ch11/310-amazon-bedrock.html)
 
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/113-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/949-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/112-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/951-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/674-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](ch11/160-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/314-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/998-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/1000-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/139-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/航班变更信息智能识别解决方案.md)

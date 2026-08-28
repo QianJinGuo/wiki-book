@@ -13,10 +13,10 @@ GitHub: https://github.com/Openbmb/edgeclaw
 - **本地模型派**：数据安全但能力受限
 
 ## 相关实体
-- [我用 Skillmd 做了一个简历生成器](ch04/350-skill.html)
-- [Aliyun Agentrun 2Line Integration](ch04/441-agentrun.html)
-- [Computer Use 45X More Expensive Than Structured Apis](ch04/347-computer-use-45x-more-expensive-than-structured-apis.html)
-- [2 Year 25 Ai Projects Summary](../ch01/1356-5-ai.html)
+- [我用 Skillmd 做了一个简历生成器](ch04/349-skill.html)
+- [Aliyun Agentrun 2Line Integration](ch04/005-agentrun.html)
+- [Computer Use 45X More Expensive Than Structured Apis](ch04/346-computer-use-45x-more-expensive-than-structured-apis.html)
+- [2 Year 25 Ai Projects Summary](../ch01/1360-5-ai.html)
 - [Agent 从能用到管好中间差了什么](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/edgeclaw-bemit-lobster.md)

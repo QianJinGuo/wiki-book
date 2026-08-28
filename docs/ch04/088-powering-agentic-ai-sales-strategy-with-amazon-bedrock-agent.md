@@ -251,7 +251,7 @@ AWS 明确建议从生产流量在线评估开始，而非先构建离线测试�
 构建跨 Agent 边界的 HITL 工作流时，Field Advisor 选择了纯粹基于 Strands Interrupt 的代码方案，而非独立服务+消息队列+轮询。这一决策的依据是：框架原生能力已足够，且状态持久化由 Session Manager 管理。对于企业 AI 系统，这意味着 HITL 的核心是"状态暂停/恢复"的语义，而非基础设施组件。团队应优先探索框架边界能力，而非默认构建独立服务。
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch04/385-aws-security-agent.html)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch04/384-aws-security-agent.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch05/113-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/310-amazon-bedrock.html)
 - [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](../ch12/002-token.html)

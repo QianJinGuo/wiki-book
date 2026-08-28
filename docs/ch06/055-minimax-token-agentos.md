@@ -122,8 +122,8 @@ MiniMax M2.5 及其背后的 Forge 架构所解决的，正是 Agent 场景下�
 ## 相关主题
 
 - [Minimax M2 7 Self Evolution](../ch03/117-minimax-m2-7.html) — MiniMax 自我进化机制
-- [Openclaw Multi Agent Team Practice](../ch04/102-openclaw-multi-agent-team-practice-v2.html) — OpenClaw AgentOS 实践
-- [Ai Agent Memory Systems](../ch04/180-agent-memory.html) — Agent 记忆管理方案对比
+- [Openclaw Multi Agent Team Practice](../ch04/101-openclaw-multi-agent-team-practice-v2.html) — OpenClaw AgentOS 实践
+- [Ai Agent Memory Systems](../ch04/179-agent-memory.html) — Agent 记忆管理方案对比
 
 ## 深度分析
 
@@ -172,7 +172,7 @@ Agent 场景的关键特征是执行效率与结果质量同等重要。 复合�
 ## 关联阅读
 
 - [Minimax M2 7 Self Evolution](../ch03/117-minimax-m2-7.html) — MiniMax 自我进化机制，提供了 M2 系列在模型层面的自我优化路径，与 Forge 系统架构形成互补
-- [Openclaw Multi Agent Team Practice](../ch04/102-openclaw-multi-agent-team-practice-v2.html) — OpenClaw AgentOS 实践，Peter Steinberger 的 OpenClaw 是本文 AgentOS 理念的重要实践源头
+- [Openclaw Multi Agent Team Practice](../ch04/101-openclaw-multi-agent-team-practice-v2.html) — OpenClaw AgentOS 实践，Peter Steinberger 的 OpenClaw 是本文 AgentOS 理念的重要实践源头
 
 ## 相关实体
 

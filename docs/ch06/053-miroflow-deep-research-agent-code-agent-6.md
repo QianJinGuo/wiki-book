@@ -324,8 +324,8 @@
 - [MAC Skills + Hooks](../ch05/030-mac-multi-agent-coding-skills-hooks-harness-0-20.html) —— 工程师个人框架
 - [高德 AI-Native 生产线](../ch05/022-ai-native.html) —— 企业级 R&D
 - [晓斌 Agent-Oriented Infra](../ch03/006-agent.html) —— 哲学框架
-- [Kimi Work](../ch01/738-codex.html) —— 本地 Agent
-- [ANOLISA v0.3](../ch04/757-agentic.html) —— 阿里 Agentic OS
+- [Kimi Work](../ch01/739-codex.html) —— 本地 Agent
+- [ANOLISA v0.3](../ch04/298-agentic.html) —— 阿里 Agentic OS
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/miroflow-deep-research-agent-harness-mirothinker.md)
 

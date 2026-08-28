@@ -117,7 +117,7 @@ curl -fsSL https://raw.githubusercontent.com/MemTensor/MemOS/openclaw-local-plug
 |---------|--------|
 || [Hermes Agent](../ch03/099-hermes-agent.html) | MemOS 是 Hermes 的记忆插件，解决 Hermes 记忆乱的痛点 |
 || [Claude Code 架构解析](../ch03/085-claude-code.html) | Claude Code 的 Query Loop 含上下文管理，和 MemOS 的记忆注入思路一致 |
-|| [AgentCore Harness](../ch04/795-agentcore-harness.html) | AgentCore 管运行时，MemOS 管记忆，是不同维度的 Agent 基础设施 |
+|| [AgentCore Harness](../ch04/794-agentcore-harness.html) | AgentCore 管运行时，MemOS 管记忆，是不同维度的 Agent 基础设施 |
 **核心洞察**：Harness Engineering（AgentCore）和记忆工程（MemOS）是 Agent 走向生产的两个不同维度——前者管"运行"，后者管"记忆"。
 
 ## Related

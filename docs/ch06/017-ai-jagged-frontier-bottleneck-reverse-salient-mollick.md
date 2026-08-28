@@ -123,7 +123,7 @@ Cochrane 案例的核心教训：追求 100% 自动化往往是错误的目标�
 ## 相关实体
 - [Ai Job Interview Model Evaluation Mollick](../ch05/113-ai.html)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
-- [Management As Ai Superpower Mollick](../ch01/679-management-as-ai-superpower.html)
+- [Management As Ai Superpower Mollick](../ch01/680-management-as-ai-superpower.html)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
 

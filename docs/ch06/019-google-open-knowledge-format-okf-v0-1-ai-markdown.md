@@ -188,7 +188,7 @@ OKF 不是要替代 Karpathy Wiki / Obsidian Wiki / GBrain，而是**给它们�
 
 ## 关联引用
 
-→ [LLM Wiki / Obsidian Wiki / GBrain 自组织自进化](../ch01/912-llm-wiki-obsidian-wiki-gbrain.html) — 同领域不同项目对比
+→ [LLM Wiki / Obsidian Wiki / GBrain 自组织自进化](../ch01/913-llm-wiki-obsidian-wiki-gbrain.html) — 同领域不同项目对比
 → [Karpathy LLM Wiki 第二大脑 (awkthole)](ch06/026-llm-wiki.html) — Karpathy Wiki 详细解析
 → [Karpathy LLM Wiki v2 (2026)](ch06/026-llm-wiki.html) — Karpathy Wiki 2026 更新
 → [LLM Wiki Architecture](ch06/026-llm-wiki.html) — LLM Wiki 架构

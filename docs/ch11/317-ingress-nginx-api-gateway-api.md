@@ -88,7 +88,7 @@ Gateway API 在跨命名空间路由上引入 **ReferenceGrant**——必须由�
 - [Aliyun Cloud Native Safety Guardrails Three Domains](../ch05/113-ai.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch11/255-openclaw.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1401-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/1405-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 
 ---
 

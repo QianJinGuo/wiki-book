@@ -108,7 +108,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - [Agent Memory Architecture](../ch04/524-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — Agent 记忆生命周期哲学
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/639-claude.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/1492-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

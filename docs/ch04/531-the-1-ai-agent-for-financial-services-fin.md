@@ -43,7 +43,7 @@ Fin 展示了一条垂直行业 Agent 的完整商业化路径：用"最高准�
 ## 相关实体
 - [Intercom（Fin）推出管理另一个 AI Agent 的 Agent](ch04/508-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
 - [Agentic AI in Finance](ch04/710-agentic-ai.html)
-- [Stripe Financial Compliance AI Agent：生产级经验](ch04/396-stripe-financial-compliance-ai-agent-production-lessons.html)
+- [Stripe Financial Compliance AI Agent：生产级经验](ch04/395-stripe-financial-compliance-ai-agent-production-lessons.html)
 - [AFAC2026 金融AI武道大会](ch04/684-ai-agent.html)
 - [厦门国际银行数创金融杯 RAG 方案](../ch01/407-rag.html)
 - [Agent Reliability：Context Drift 与 Tool Hallucination](../ch03/006-agent.html)

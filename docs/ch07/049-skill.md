@@ -16,7 +16,7 @@
 - 适用前提：任务输出能被**客观判对错**（结论收敛、有标准答案）——安全审计的二元输出天然满足，开放式任务不适用
 - 架构原则：诊断/验证/回滚/黑名单全交给可复查的规则，LLM 只负责把诊断转写成 diff
 
-与 [Agent 评测闭环](../ch03/006-agent.html) 和 [Skill-Up 评测框架](../ch04/366-alibaba-skill-up-agent-skill.html) 同一主题域：skill 可评测可回归是 2026 年 agent 工程的核心收敛方向。
+与 [Agent 评测闭环](../ch03/006-agent.html) 和 [Skill-Up 评测框架](../ch04/365-alibaba-skill-up-agent-skill.html) 同一主题域：skill 可评测可回归是 2026 年 agent 工程的核心收敛方向。
 
 ## 深度分析
 

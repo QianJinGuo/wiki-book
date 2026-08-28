@@ -48,9 +48,9 @@ The remaining examples show how UX should bend to the kind of content a site car
 ## 相关实体
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](ch01/407-rag.html)
 - [How we made WINDOW JOIN parallel and vectorized](ch01/038-how-we-made-window-join-parallel-and-vectorized.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1505-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/1508-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [How Dropbox uses MCP and Dash to close the design-to-code gap](../ch07/001-mcp.html)
-- [Scaling UX testing with Amazon Nova Act](ch01/703-scaling-ux-testing-with-amazon-nova-act.html)
+- [Scaling UX testing with Amazon Nova Act](ch01/704-scaling-ux-testing-with-amazon-nova-act.html)
 - [Designing A Better Lou: Reducing cognitive load through design, content, and systems](https://github.com/QianJinGuo/wiki/blob/main/entities/designing-better-lou-cognitive-load-design-systems.md)
 
 ---

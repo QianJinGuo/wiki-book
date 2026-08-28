@@ -71,11 +71,11 @@ AI + Skills 模式在 154 个服务的规模化迁移中节省 **25 小时**（�
 - [如何将经验编码为 Skills](../ch03/077-skills.html) — 经验 → Skills 转化方法论
 - [Agent Skills vs 低代码平台](../ch04/496-agent-skills.html) — Skills 与低代码对比
 - [Skill Craft](ch07/062-skill-craft-claude-skill.html) — Skill 工艺学
-- [Skill Engineering as Algorithm](../ch04/350-skill.html) — Skill 工程即算法
+- [Skill Engineering as Algorithm](../ch04/349-skill.html) — Skill 工程即算法
 - [Anthropic 14 Skill Patterns](../ch01/453-anthropic-14-skill.html) — Anthropic 技能设计模式
 - [百度网盘 KMP 迁移三层架构](../ch03/006-agent.html) — 同类跨平台迁移案例
 - [SkillX 分层技能库](ch07/060-skillx.html) — 分层技能库架构
-- [Skill Hub 组织资产](../ch04/350-skill.html) — 组织级技能管理中心
+- [Skill Hub 组织资产](../ch04/349-skill.html) — 组织级技能管理中心
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skills-middleware-migration-android-harmonyos-taobao-2026.md)
 

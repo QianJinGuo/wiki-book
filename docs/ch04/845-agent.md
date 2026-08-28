@@ -63,11 +63,11 @@
 
 ## 相关实体
 
-- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/222-factory-missions.html)
-- [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/1107-agent-ai.html)
+- [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](ch04/221-factory-missions.html)
+- [AutoResearch 异步多 Agent AI 寒武纪新阶段](../ch01/1111-agent-ai.html)
 - [Anthropic Multi Agent Research System](ch04/685-anthropic-multi-agent-research-system.html)
 - [Code as Agent Harness 综述](../ch09/064-code-as-agent-harness.html)
-- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/290-self-evolving-agents.html)
+- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch04/289-self-evolving-agents.html)
 - [AWS Bedrock 多智能体协作指南](../ch11/019-aws-bedrock.html)
 - [Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？](../ch03/006-agent.html)
 - [Agent vs Workflow：控制权连续谱与生产级选型框架](ch04/788-agent-vs-workflow.html)

@@ -67,7 +67,7 @@ AMI Labs获得10亿美元融资并选择JEPA路线，表明世界模型已经从
 5. **LLM仍有价值的场景**：LeCun明确承认LLM在编程和数学等符号操作领域是有效的，因为这些领域的"预测下一个符号"与"理解逻辑"存在实质性重叠。AI团队应该在这些领域继续发挥LLM的优势，而不是试图用LLM替代所有推理任务。
 ## 相关实体
 - [Baixing Ontoz Enterprise Ontology Multi Agent](../ch03/006-agent.html)
-- [Tsinghua Self Evolving Skill Agent](ch04/194-skill-agent.html)
+- [Tsinghua Self Evolving Skill Agent](ch04/193-skill-agent.html)
 - [直播预约 数据引擎具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/006-agent.html)
 - [Nvidia Gamma World Multi Agent World Model](ch04/044-agent-world.html)

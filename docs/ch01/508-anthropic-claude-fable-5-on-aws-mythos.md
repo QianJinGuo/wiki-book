@@ -136,7 +136,7 @@ Fable 5 的发布代表了一种新的模型发布策略：**将安全保护作�
 
 ### 数据合规的隐性成本
 
-30 天数据留存 + 人工审查的要求对于有严格数据主权要求的行业（如欧洲 GDPR 合规企业）意味着 Fable 5 可能不是即插即用的解决方案。企业在评估 Fable 5 时需要将"合规评估周期"纳入部署时间表。这与 [Skill Hub Organization Asset Winty](../ch04/350-skill.html) 中提到的"企业 AI 落地隐形 Tax"概念一致：看不见的合规成本往往被低估。
+30 天数据留存 + 人工审查的要求对于有严格数据主权要求的行业（如欧洲 GDPR 合规企业）意味着 Fable 5 可能不是即插即用的解决方案。企业在评估 Fable 5 时需要将"合规评估周期"纳入部署时间表。这与 [Skill Hub Organization Asset Winty](../ch04/349-skill.html) 中提到的"企业 AI 落地隐形 Tax"概念一致：看不见的合规成本往往被低估。
 
 ## 实践启示
 
@@ -165,7 +165,7 @@ Fable 5 是"有保护措施的 Mythos 级功能"，而非"无限制的 Mythos"�
 - [Hermes Agent Skills Source Code Analysis Shuge](../ch04/537-hermes-agent-skills.html)
 - [Skill Rm Qwen Agent Skill Reward Model](../ch04/620-agent-skill.html)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/085-claude-code.html)
-- [Skill Hub Organization Asset Winty](../ch04/350-skill.html)
+- [Skill Hub Organization Asset Winty](../ch04/349-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

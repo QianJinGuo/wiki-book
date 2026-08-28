@@ -222,11 +222,11 @@
 
 ## 相关实体
 
-- [Skill Design Patterns](../ch04/350-skill.html) — 5 种核心设计模式(模式/结构视角)
-- [Skill Development Guide Linyi](../ch04/350-skill.html) — 工程教程/保姆级(工程实现视角)
+- [Skill Design Patterns](../ch04/349-skill.html) — 5 种核心设计模式(模式/结构视角)
+- [Skill Development Guide Linyi](../ch04/349-skill.html) — 工程教程/保姆级(工程实现视角)
 - [Agent Skill Writing Practices](../ch04/620-agent-skill.html) — 高质量编写规范(写作规范视角)
-- [Skill Writing Patterns Best Practices](../ch04/350-skill.html) — 7 个顶级 Skill 提炼模式
-- [Skill Design Spec 8 Block Checklist Winty](../ch04/350-skill.html) — 8 块检查清单
+- [Skill Writing Patterns Best Practices](../ch04/349-skill.html) — 7 个顶级 Skill 提炼模式
+- [Skill Design Spec 8 Block Checklist Winty](../ch04/349-skill.html) — 8 块检查清单
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
 

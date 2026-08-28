@@ -68,7 +68,7 @@ CLAUDE.md 文件从根目录向下逐层加载：
 
 **@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
 
-这与 [Claude Code Harness Deep Understanding](ch01/638-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
+这与 [Claude Code Harness Deep Understanding](ch01/639-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
 
 ### 4. 完整上下文包：用户消息只是冰山一角
 
@@ -303,18 +303,18 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 
 - [两万字详解 Claude Code 源码核心机制](../ch03/085-claude-code.html)
 - [Claude Code Harness 深度解析](../ch05/089-claude-code-harness.html)
-- [Claude Code Harness 深度理解](ch01/638-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness 深度理解](ch01/639-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/006-agent.html)
 - [Harness Engineering Core Patterns](../ch05/096-harness-engineering.html)
 - [Harness 状态边界与失败闭环](../ch05/080-harness.html)
 - [Factory Mission Multi-Agent 系统](../ch03/006-agent.html)
 - [Claude Managed Agents 企业自托管](../ch04/830-claude-managed-agents.html)
-- [OpenClaw 多 Agent 团队实践](../ch04/102-openclaw-multi-agent-team-practice-v2.html)
+- [OpenClaw 多 Agent 团队实践](../ch04/101-openclaw-multi-agent-team-practice-v2.html)
 - [OpenClaw 完全指南](../ch11/255-openclaw.html)
 - [OpenClaw 多智能体团队搭建经验](../ch11/255-openclaw.html)
 - [Headroom Context Compression](../ch06/045-headroom.html)
-- [AI Agent Harness 构建](ch01/1197-ai-agent-harness.html)
+- [AI Agent Harness 构建](ch01/1201-ai-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---

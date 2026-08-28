@@ -51,11 +51,11 @@ WorldTrace 构建两层 KV cache：逐字近期窗口 + $N_s$ 个 summary slots�
 
 ## 相关实体
 
-- [李飞飞掩码视觉动作世界模型](../ch01/1135-20.html) — 同为世界模型方向，WorldTrace 聚焦记忆寻址而非动作预测
+- [李飞飞掩码视觉动作世界模型](../ch01/1139-20.html) — 同为世界模型方向，WorldTrace 聚焦记忆寻址而非动作预测
 - [BAAI Orca 世界模型](../ch05/113-ai.html) — 下一状态预测范式对照
-- [A2RD 长视频自回归扩散](../ch04/757-agentic.html) — 长视频生成的自回归一致性
-- [The great memory panic of 2026](../ch01/1162-the-great-memory-panic-of-2026.html) — 记忆/上下文基础设施的行业视角
-- [高德 Abot Earth 3D 原生世界模型](../ch01/1302-3d.html)
+- [A2RD 长视频自回归扩散](../ch04/298-agentic.html) — 长视频生成的自回归一致性
+- [The great memory panic of 2026](../ch01/1166-the-great-memory-panic-of-2026.html) — 记忆/上下文基础设施的行业视角
+- [高德 Abot Earth 3D 原生世界模型](../ch01/1306-3d.html)
 
 ## 相关概念
 

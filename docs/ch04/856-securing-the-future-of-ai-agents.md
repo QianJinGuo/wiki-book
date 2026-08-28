@@ -82,7 +82,7 @@ D1-D4 × R1-R3 的矩阵为不同风险等级的部署场景提供了明确的�
 
 ## 相关实体
 
-- [Agentic 渗透测试法律问题](ch04/757-agentic.html) — Agent 安全的法律维度
+- [Agentic 渗透测试法律问题](ch04/298-agentic.html) — Agent 安全的法律维度
 - [GlassWASM 恶意软件](https://github.com/QianJinGuo/wiki/blob/main/entities/glasswasm-webassembly-malware-open-vsx.md) — 供应链安全威胁案例
 - [CVE 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/getting-cve-without-shipping-slop.md) — 安全漏洞发现的实操视角
 - [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架

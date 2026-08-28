@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/674-amazon-bedrock-agentcore.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/357-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/356-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/674-amazon-bedrock-agentcore.html)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04/674-amazon-bedrock-agentcore.html)
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/674-amazon-bedrock-agentcore.html)

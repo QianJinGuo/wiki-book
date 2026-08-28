@@ -53,7 +53,7 @@ Hermes 的记忆系统本质上是一套**分层成本治理**架构，而非单
    - 压缩前有没有状态迁移？→ durable state extraction 先于压缩执行
 
 ## 与相关条目的关系
-- [Agent Memory 模块化框架与评测](../ch04/180-agent-memory.html) — 学术视角（ICLR 2026），四组件统一框架
+- [Agent Memory 模块化框架与评测](../ch04/179-agent-memory.html) — 学术视角（ICLR 2026），四组件统一框架
 -  — write-manage-read 三链路闭环，六维度记忆单元
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw 薄抽象+显式控制流原始设计
 -  — 工作集视角，session/harness/sandbox 解耦
@@ -62,14 +62,14 @@ Hermes 的记忆系统本质上是一套**分层成本治理**架构，而非单
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-vs-openclaw.md)
 - [深度拆解 Hermes Agent 记忆系统](ch06/014-hermes-agent-memory.html)
 - [memory agent systems cobanov](../ch04/719-memory-agent-systems-cobanov.html)
-- [AI Agent 记忆系统架构](../ch04/216-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](../ch04/215-how-ai-agent-memory-works.html)
 -
 
-- [ai agent memory systems](../ch04/180-agent-memory.html)
+- [ai agent memory systems](../ch04/179-agent-memory.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-architecture.md)
 
-- [Agent Memory 架构解析](../ch04/180-agent-memory.html)
+- [Agent Memory 架构解析](../ch04/179-agent-memory.html)
 
 ---
 

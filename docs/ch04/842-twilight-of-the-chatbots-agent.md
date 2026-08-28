@@ -34,7 +34,7 @@ Mollick 引用了三个关键评估框架来量化 AI 的 Agent 能力增长：
 2. **AISI 自主能力评估**：英国政府 AI 安全研究所对 AI 自主网络能力的官方测评
 3. **AA-Briefcase 测试**：模拟复杂的多周咨询任务，评估 AI 在多种分析任务中的综合表现
 
-值得注意的是，Mollick 将中国开源权重模型也纳入分析，发现它们在 AA-Briefcase 上呈现自己的指数曲线，落后美国闭源模型约 6-12 个月。这一框架与 [Mollick 的 Co-Existence 框架](../ch01/830-ai-mollick.html) 中的"能力阶梯"概念一脉相承。
+值得注意的是，Mollick 将中国开源权重模型也纳入分析，发现它们在 AA-Briefcase 上呈现自己的指数曲线，落后美国闭源模型约 6-12 个月。这一框架与 [Mollick 的 Co-Existence 框架](../ch01/831-ai-mollick.html) 中的"能力阶梯"概念一脉相承。
 
 ### 从"外行聊天"到"专家委托"的范式转换
 
@@ -66,8 +66,8 @@ Mollick 指出，Agent 的优势不仅来自底层模型的进步，还来自"�
 
 ## 相关实体
 
-- [Co-Existence：AI Agent 化范式的演变](../ch01/830-ai-mollick.html)
-- [使用 Mythos 的真实体验](ch04/397-what-it-feels-like-to-work-with-mythos.html)
+- [Co-Existence：AI Agent 化范式的演变](../ch01/831-ai-mollick.html)
+- [使用 Mythos 的真实体验](ch04/396-what-it-feels-like-to-work-with-mythos.html)
 - [Harness Engineering 探索之旅](../ch05/096-harness-engineering.html)
 - [Hermes Agent Skill 设计分析](../ch01/521-hermes-agent-skill.html)
 

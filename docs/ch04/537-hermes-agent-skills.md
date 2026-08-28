@@ -16,9 +16,9 @@ Hermes Agent 的 Skills 闭环系统实现了"经验提取→知识存储→智�
 
 ## 相关实体
 - [Hermes Agent Deep Dive Alibaba](../ch03/099-hermes-agent.html)
-- [Skill System Design Three Way Comparison](ch04/350-skill.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
-- [Agent Skills Teams Architecture Evolution Selection Guide](ch04/314-agent-skills-teams.html)
+- [Skill System Design Three Way Comparison](ch04/349-skill.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/371-hermes-agent-goal.html)
+- [Agent Skills Teams Architecture Evolution Selection Guide](ch04/313-agent-skills-teams.html)
 - [Hermes Agent K2 6 Multi Agent](../ch03/099-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-deep-dive.md)

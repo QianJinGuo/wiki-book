@@ -34,7 +34,7 @@ Marvis 选择端云混布路线是一个面向未来的技术赌注。在当前�
 
 大多数 AI 产品的架构演化路径是从单一 Agent + Skill 积累开始的——简单、清晰、迭代快。Marvis 选择从第一天起 Multi-Agent，原因是其底层能力本就分属不同领域：端侧文件知识库、与英特尔/微软对操作系统的理解、应用宝操作 APP 的运行能力。如果全部塞在一个模型里，会导致上下文爆炸、任务只能串行不能并行、调度极度复杂。
 
-Multi-Agent 架构也带来了更高的指令遵循率要求——主子 Agent 之间的信息传递、结果传递、卡片传递都需要精确的协议设计。团队必须严格测试市面上每款模型在 Marvis 场景中的效果质量达标后才会开放模型切换选项。这种「三层隔离能力 + 严格适配测试」的设计哲学，与 [AgentCore 的 Agent 调度设计](../ch04/795-agentcore-harness.html) 中强调的「调度协议比 Agent 能力本身更重要」形成了有趣的对照。
+Multi-Agent 架构也带来了更高的指令遵循率要求——主子 Agent 之间的信息传递、结果传递、卡片传递都需要精确的协议设计。团队必须严格测试市面上每款模型在 Marvis 场景中的效果质量达标后才会开放模型切换选项。这种「三层隔离能力 + 严格适配测试」的设计哲学，与 [AgentCore 的 Agent 调度设计](../ch04/794-agentcore-harness.html) 中强调的「调度协议比 Agent 能力本身更重要」形成了有趣的对照。
 
 ### 从「告诉你该怎么做」到「直接帮你做了」
 
@@ -46,7 +46,7 @@ Marvis 与市面其他 AI 助手的本质差异在于执行力的跃迁。大模
 
 在「小白开箱即用」和「用户严格授权」之间，Marvis 做出了一个有意思的选择：宁可牺牲便利性，哪怕觉得「咋一直让我点确认」，也坚持让用户自己圈定白名单范围并主动点击授权后才开始工作。不授权就不体验这部分能力。
 
-这种「主权优先」的设计哲学在端侧模型的支持下变得可行——数据不需要传到云端处理，因此严格授权不会牺牲功能质量。这也验证了一个重要原则：**在 Agent 产品设计中，用户的信任比短期留更重要。** 与 [Claude Code 的遥测争议](../ch01/479-anthropic-claude-code.html) 形成对比，Marvis 的端侧 + 严格授权模式在隐私敏感场景具有天然优势。
+这种「主权优先」的设计哲学在端侧模型的支持下变得可行——数据不需要传到云端处理，因此严格授权不会牺牲功能质量。这也验证了一个重要原则：**在 Agent 产品设计中，用户的信任比短期留更重要。** 与 [Claude Code 的遥测争议](../ch01/802-anthropic-claude-code.html) 形成对比，Marvis 的端侧 + 严格授权模式在隐私敏感场景具有天然优势。
 
 ### 意想不到的用户场景
 
@@ -62,11 +62,11 @@ Marvis 上线后出现了大量团队未曾预料的使用场景：写小说（�
 
 ## 相关实体
 
-- [AgentCore Trip Allocation](../ch04/795-agentcore-harness.html)
-- [Agent 配置组合](../ch04/350-skill.html)
+- [AgentCore Trip Allocation](../ch04/794-agentcore-harness.html)
+- [Agent 配置组合](../ch04/349-skill.html)
 - [Backend AI-Friendly 标准](../ch05/023-ai-friendly.html)
-- [Claude Code 遥测与安全](../ch01/479-anthropic-claude-code.html)
-- [GrowBrain 淘宝内容成长引擎](../ch04/757-agentic.html)
+- [Claude Code 遥测与安全](../ch01/802-anthropic-claude-code.html)
+- [GrowBrain 淘宝内容成长引擎](../ch04/298-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/marvis-multi-agent-desktop-tool-tencent-2026-07-15.md)
 

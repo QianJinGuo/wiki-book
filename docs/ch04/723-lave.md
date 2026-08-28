@@ -43,7 +43,7 @@ LAVE 的核心思想是 **Lookahead-then-Verify**（先前瞻，再验证）：
 
 - [Baddlm Diffusion Language Model Backdoor 2026](../ch01/890-baddlm.html) — 扩散语言模型后门攻击
 - [D Opsd Diffusion Llm On Policy Self Distillation](../ch01/181-d-opsd.html) — 扩散 LLM 在线自蒸馏
-- [Residual Context Diffusion Apple Ml 2026 07](../ch01/1135-20.html) — Apple 残差上下文扩散
+- [Residual Context Diffusion Apple Ml 2026 07](../ch01/1139-20.html) — Apple 残差上下文扩散
 - [Diffusion Model Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/diffusion-model-architecture.md) — 扩散模型架构
 - [Speculative Decoding](https://github.com/QianJinGuo/wiki/blob/main/concepts/speculative-decoding.md) — 推测解码（并行解码的相邻领域）
 

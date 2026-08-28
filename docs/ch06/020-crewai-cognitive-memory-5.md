@@ -99,10 +99,10 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 
 ## 相关实体
 - [Memory Agent Systems Cobanov](../ch04/719-memory-agent-systems-cobanov.html)
-- [Stripe Sessions 2026 Ai Agents](../ch04/450-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](../ch04/449-stripe-sessions-2026-ai-agents.html)
 - [Production Harness 12 Components Framework Comparison](../ch05/037-harness-12.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch01/291-hermes.html)
-- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/180-agent-memory.html)
+- [Agent Memory Architecture Past Influence Future Ruofei](../ch04/179-agent-memory.html)
 
 ## 原文链接
 

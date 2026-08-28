@@ -201,10 +201,10 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 ## 相关实体
 
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/006-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/836-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Opus 48 The System Card B8460F](ch01/639-claude.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/192-karpathy-vibe-coding-agentic-engineering.html)
+- [Claude Opus 48 The System Card B8460F](ch01/1492-claude.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch11/255-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch11/255-openclaw.html)

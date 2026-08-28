@@ -40,8 +40,8 @@
 
 ## 相关实体
 - [Agentic AI 在金融领域](../ch04/710-agentic-ai.html)
-- [Stripe 金融合规 AI 生产经验](../ch04/396-stripe-financial-compliance-ai-agent-production-lessons.html)
-- [Agent 审计风险与噪声](../ch04/362-agentloop.html)
+- [Stripe 金融合规 AI 生产经验](../ch04/395-stripe-financial-compliance-ai-agent-production-lessons.html)
+- [Agent 审计风险与噪声](../ch04/361-agentloop.html)
 - [AI 合规](https://github.com/QianJinGuo/wiki/blob/main/concepts/legal-ai-compliance.md)
 - [负责任 AI 治理](https://github.com/QianJinGuo/wiki/blob/main/concepts/responsible-ai-governance.md)
 

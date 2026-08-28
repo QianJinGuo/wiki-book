@@ -51,10 +51,10 @@
 ## 相关实体
 - [memory agent systems cobanov](../ch04/719-memory-agent-systems-cobanov.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch06/014-hermes-agent-memory.html)
-- [AI Agent 记忆系统架构](../ch04/216-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](../ch04/215-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch06/014-hermes-agent-memory.html)
 
-- [ai agent memory systems](../ch04/180-agent-memory.html)
+- [ai agent memory systems](../ch04/179-agent-memory.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
 ## 深度分析

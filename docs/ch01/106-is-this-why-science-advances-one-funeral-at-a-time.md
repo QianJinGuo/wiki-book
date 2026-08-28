@@ -51,10 +51,10 @@ Max Planck 的"科学随葬礼前进"获得了一个更精确的机制化诠释�
 
 ## 相关实体
 
-- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/1077-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](ch01/078-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [AI in Cybersecurity Training Resources | SANS Institute](../ch05/113-ai.html)
 - [Omniscientist：多模态 AI 科学家](../ch05/113-ai.html)
-- [AutoResearch 四循环设计框架](ch01/1135-20.html)
+- [AutoResearch 四循环设计框架](ch01/1139-20.html)
 - [科学方法与 AI 研究](https://github.com/QianJinGuo/wiki/blob/main/concepts/scientific-method-ai-research.md)
 
 ---

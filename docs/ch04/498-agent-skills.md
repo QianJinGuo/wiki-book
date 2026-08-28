@@ -38,7 +38,7 @@
 事实获取与模型推理分离（可信工具提供事实，模型比较/归因/生成建议，结果保留数据来源/适用标准/版本信息）。评测门槛和回退能力发布前设计（异常时停止扩量并恢复上一稳定版本）。人机协同边界：高置信度/低风险/可复审自动处理；高价值商品/争议标准/低置信度人工确认。自治不是"完全无人"，而是把人的时间从重复执行转移到目标/边界/例外判断。
 
 ## 相关
-与 [高德 Push 发送门控 Agent（约束工程）](../ch05/096-harness-engineering.html)、[AutoSDK AI-Native 流水线](../ch05/022-ai-native.html) 同为高德第一方 Agent 实践；本文贡献是供给质量治理 + 非对称进化（稳定执行/旁路进化）+ 业务 Skills 外化。与 [Skill 进化框架](../ch07/011-ai-skill-evolution.html)、[Skill 迭代评测（孙成鑫）](ch04/350-skill.html)、[Evermind Raven 自进化 Harness](ch04/814-self-evolving-agent.html)、[Hermes 自进化闭环](../ch01/291-hermes.html) 呼应（同为进化机制，本文为业务侧非对称进化）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-supply-quality-agent-asymmetric-evolution-2026.md)
+与 [高德 Push 发送门控 Agent（约束工程）](../ch05/096-harness-engineering.html)、[AutoSDK AI-Native 流水线](../ch05/022-ai-native.html) 同为高德第一方 Agent 实践；本文贡献是供给质量治理 + 非对称进化（稳定执行/旁路进化）+ 业务 Skills 外化。与 [Skill 进化框架](../ch07/011-ai-skill-evolution.html)、[Skill 迭代评测（孙成鑫）](ch04/349-skill.html)、[Evermind Raven 自进化 Harness](ch04/813-self-evolving-agent.html)、[Hermes 自进化闭环](../ch01/291-hermes.html) 呼应（同为进化机制，本文为业务侧非对称进化）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-supply-quality-agent-asymmetric-evolution-2026.md)
 
 ---
 
