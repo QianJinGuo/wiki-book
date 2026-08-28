@@ -50,7 +50,7 @@
 ## 原文链接
 
 ## 相关实体
-- [agentops: operationalize agentic ai at scale with amazon bed](../ch04/303-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [agentops: operationalize agentic ai at scale with amazon bed](../ch04/307-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [how baz improved its ai agent code review accuracy using ama](../ch09/188-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.html)
 - [extending mcp support for amazon bedrock agentcore gateway](../ch04/674-amazon-bedrock-agentcore.html)
 

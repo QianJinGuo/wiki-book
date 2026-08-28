@@ -12,11 +12,11 @@
 **2.1 从 Chat 到 Agent：推理延迟会被"复合放大"**
 
 ## 相关实体
-- [Ai Skill Skill Creator 源码拆解](ch04/375-skill-skill.html)
+- [Ai Skill Skill Creator 源码拆解](ch04/374-skill-skill.html)
 - [Harness Engineering Systematic Explainer](../ch05/096-harness-engineering.html)
 - [Didi Eagle 3 Speculative Decoding Agents](../ch09/055-coding-agent.html)
-- [Langsmith Trajectory Evals](../ch01/1020-langsmith-trajectory-evals.html)
-- [Ai Skill Metrics System](../ch01/660-ai-skill.html)
+- [Langsmith Trajectory Evals](../ch01/1022-langsmith-trajectory-evals.html)
+- [Ai Skill Metrics System](../ch01/661-ai-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
 

@@ -265,7 +265,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 
 ### 与多租户 / Serverless Agent
 - [OpenClaw → Bedrock AgentCore 多租户迁移](../ch04/674-amazon-bedrock-agentcore.html) = 阿里云/AWS 的多租户 serverless 路径，**关注迁移路径**
-- [AgentScope Builder](../ch04/814-self-evolving-agent.html) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
+- [AgentScope Builder](../ch04/813-self-evolving-agent.html) = 阿里云 Harness 框架 + 平台化，**关注 harness 框架**
 - [Stripe Agent 经济基础设施 5 套图谱](../ch03/006-agent.html) = 关注 **agent 经济层基础设施**（支付/钱包/订阅），**与本文 runtime 隔离互补**
 
 ### 与 RAG / Agent 评估
@@ -277,7 +277,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 - **本文 = 关注 execution boundary 内的多租户隔离**——**两者维度不同，但思想相通**："默认不可信 + 强制隔离 + 边界归一"
 
 ### 与阿里云 Agentic Cloud
-- [阿里云 Agentic Cloud](../ch04/442-agentic-cloud.html) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
+- [阿里云 Agentic Cloud](../ch04/441-agentic-cloud.html) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
 - **本文 = 关注平台对内的工程化**（snapshot + hot-swap + 凭据隔离）——**关注平台自身的建设**
 
 ## 实战检查清单（4 条铁律 → 9 项检查）

@@ -246,7 +246,7 @@ winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是�
 - **放得开** ≈ 灰度发布（Canary Deployment）+ Feature Flag
 - **收得回** ≈ 回滚机制（Rollback）+ 监控告警（Observability）
 
-这与 [技能设计模式](../ch04/350-skill.html) 的要求一致——Skill 本质上是结构化的 Prompt + 工具链 + 执行策略，需要被当作**可执行软件**而非静态文档来治理。这也解释了为什么 [AI Skill 演进框架](ch07/011-ai-skill-evolution.html) 强调 Skill 的版本化和可测试性是不可妥协的基础要求。
+这与 [技能设计模式](../ch04/349-skill.html) 的要求一致——Skill 本质上是结构化的 Prompt + 工具链 + 执行策略，需要被当作**可执行软件**而非静态文档来治理。这也解释了为什么 [AI Skill 演进框架](ch07/011-ai-skill-evolution.html) 强调 Skill 的版本化和可测试性是不可妥协的基础要求。
 
 ### 3. 组织资产视角下的 Skill 定位：第三层抽象
 
@@ -262,9 +262,9 @@ winty 将 Skill 定位在"个人侧"与"工具侧"之间，并称之为"组织�
 
 ### 5. 平台型与业务型的张力：Skill Hub 的权力结构
 
-中台收口型模式的失败（平台定义能力，业务方只能用现成的；新需求要排期）揭示了 Skill Hub 治理中一个深层矛盾：**平台提供方与业务消费方之间的权力博弈**。这个问题在 [Skill System Design Three Way Comparison](../ch04/350-skill.html) 中有详细讨论。
+中台收口型模式的失败（平台定义能力，业务方只能用现成的；新需求要排期）揭示了 Skill Hub 治理中一个深层矛盾：**平台提供方与业务消费方之间的权力博弈**。这个问题在 [Skill System Design Three Way Comparison](../ch04/349-skill.html) 中有详细讨论。
 
-winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用）实际上是一种**联邦式治理模型**：Hub 提供基础设施和治理框架，但 Skill 的所有权属于业务团队。这与传统的"中台把所有能力收到平台团队"模式有本质区别——[Skill Complete Guide Alibaba](../ch04/350-skill.html) 中阿里云 tangram 模型的"企业级 Skill 管理中心"也采用了类似的分层所有权设计，平台管治理，业务方管内容。
+winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用）实际上是一种**联邦式治理模型**：Hub 提供基础设施和治理框架，但 Skill 的所有权属于业务团队。这与传统的"中台把所有能力收到平台团队"模式有本质区别——[Skill Complete Guide Alibaba](../ch04/349-skill.html) 中阿里云 tangram 模型的"企业级 Skill 管理中心"也采用了类似的分层所有权设计，平台管治理，业务方管内容。
 
 ## 实践启示
 
@@ -281,7 +281,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 2. **高频流程**：代码评审、发版检查、环境配置 → 第二批
 3. **低频但关键**：灾难恢复、故障排查手册 → 第三批
 
-这个优先级参考了 [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/350-skill.html) 中的"关键路径识别"方法：把组织中最不容出错的那类操作先用 Skill 固化起来，形成组织默认的正确做法。个人偏好类操作（如编辑器偏好）留在个人 Memory，不进入 Hub——Hub 的治理成本应该花在值得治理的地方。
+这个优先级参考了 [Agent Reliability Engineering Skillify Continuous Improvement](../ch04/349-skill.html) 中的"关键路径识别"方法：把组织中最不容出错的那类操作先用 Skill 固化起来，形成组织默认的正确做法。个人偏好类操作（如编辑器偏好）留在个人 Memory，不进入 Hub——Hub 的治理成本应该花在值得治理的地方。
 
 ### 3. 给每个 Skill 配置"最小评估集"，不要等到质量完美再发布
 
@@ -297,13 +297,13 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 - **团队分支（team-xxx）**：特定团队的定制 Skill，不进入官方 Hub
 - **重大分歧时走 Fork**：在 Fork 上各自演进，核心接口保持兼容
 
-参考 [Skill Formal Theory Survey](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) 中关于 Skill 可组合性的讨论，以及 [Skill Design Spec 8 Block Checklist Winty](../ch04/350-skill.html) 中的结构化模板，Fork 的边界应该在"场景定制"层面而非"核心逻辑"层面——核心逻辑应该在主线收敛，场景差异通过参数或条件分支来处理。
+参考 [Skill Formal Theory Survey](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) 中关于 Skill 可组合性的讨论，以及 [Skill Design Spec 8 Block Checklist Winty](../ch04/349-skill.html) 中的结构化模板，Fork 的边界应该在"场景定制"层面而非"核心逻辑"层面——核心逻辑应该在主线收敛，场景差异通过参数或条件分支来处理。
 
 ### 5. 建立 Skill Hub 与现有工程流程的嵌入点，防止 Hub 成为孤岛
 
 **实践警示**：Skill Hub 如果只是"另一个工具"，很快会被团队遗忘。**必须将 Skill Hub 与现有工程流程深度嵌入**：
 
-- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](../ch04/290-self-evolving-agents.html) 中提到的"技能编排"思路）
+- CI/CD 流水线触发时，自动调用相关 Skill 进行检查（[Skill Os Learning Skill Curation Self Evolving Agents](../ch04/289-self-evolving-agents.html) 中提到的"技能编排"思路）
 - 代码评审 Agent 默认加载 Skill Hub 中的团队规范 Skill
 - 新项目初始化时，Agent 自动从 Hub 拉取该项目类型对应的 Skill 集
 
@@ -349,7 +349,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 
 1. frontmatter · 2. When to use · 3. Do not use when · 4. Inputs · 5. Steps · 6. Verification · 7. Failure handling · 8. Pitfalls
 
-> **这 8 块都得有。少一块即拒。** ——与 [Skill Design Spec 8 Block Checklist Winty](../ch04/350-skill.html) 中的 8 块结构完全对齐
+> **这 8 块都得有。少一块即拒。** ——与 [Skill Design Spec 8 Block Checklist Winty](../ch04/349-skill.html) 中的 8 块结构完全对齐
 
 ### 类别三：安全合规
 

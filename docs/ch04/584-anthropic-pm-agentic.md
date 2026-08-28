@@ -68,11 +68,11 @@ METR 测出 41x（16 个月）：Sonnet 3.5 (new) 21 分钟 → Opus 4.6 的 12 
 - [Claude Code 搜索架构](../ch03/085-claude-code.html)
 - [Cat Wu: Claude Code PM 工作流](../ch03/085-claude-code.html)
 - [AutoResearch 多 Agent 开发](../ch03/006-agent.html)
-- [Agent Memory 模块化框架](ch04/180-agent-memory.html)
+- [Agent Memory 模块化框架](ch04/179-agent-memory.html)
 - [AI Team 知识 Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)
 
 ## 相关实体
-- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/1603-anthropic.html)
+- [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](../ch01/783-anthropic.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---

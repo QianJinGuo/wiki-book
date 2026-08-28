@@ -72,7 +72,7 @@ GitHub 路由到 AWS 不是孤例。TechCrunch 报道 Google 同意从 2026 年 
 
 - [AWS GRPO RLVR SageMaker](ch11/112-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
 - [Foundation Model Building Blocks](../ch03/097-foundation-model-building-blocks.html) — 通用基础组件
-- [750B MoE PD 分离推理 EFA vs RoCE](../ch01/265-0.html) — AWS 上的 MoE 推理对比
+- [750B MoE PD 分离推理 EFA vs RoCE](../ch01/1479-0.html) — AWS 上的 MoE 推理对比
 - [NVIDIA Blackwell MLPerf Training 6.0](../ch05/113-ai.html) — Blackwell 训练性能基准
 - [5237660](ch11/013-5237660-1.html) — Sovereign Cloud 相关实体
 

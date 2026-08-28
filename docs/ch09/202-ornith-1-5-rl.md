@@ -44,9 +44,9 @@ Ornith-1.0（2026-06）已把 agent 脚手架（AI 解题时的工作台：工�
 
 ## 相关实体与概念
 
-- [阿里 Qwen Skill-SP 自博弈](../ch04/350-skill.html) — 同属 self-play 训练范式
-- [SearchMaster 接地自博弈](../ch01/1135-20.html) — 同属自博弈搜索 Agent 训练
-- [Agentic RL 框架实践](../ch04/315-agentic-rl.html)
+- [阿里 Qwen Skill-SP 自博弈](../ch04/349-skill.html) — 同属 self-play 训练范式
+- [SearchMaster 接地自博弈](../ch01/1139-20.html) — 同属自博弈搜索 Agent 训练
+- [Agentic RL 框架实践](../ch04/314-agentic-rl.html)
 - [GRPO 策略优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/grpo-policy-optimization-2026.md)
 - [强化微调 RFT](https://github.com/QianJinGuo/wiki/blob/main/concepts/reinforcement-fine-tuning-rft.md)
 - [合成数据生成](https://github.com/QianJinGuo/wiki/blob/main/concepts/synthetic-data-generation.md)

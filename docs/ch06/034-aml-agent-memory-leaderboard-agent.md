@@ -12,7 +12,7 @@
 
 ## 评测设计：机制隔离是核心创新
 
-AML 与既有记忆基准（[Agent-Memory 评测全景](../ch04/180-agent-memory.html) 覆盖的 MUSE/LOCOMO/MemoryAgentBench 等 9 大方案）的关键区别在于**机制级变量控制**：
+AML 与既有记忆基准（[Agent-Memory 评测全景](../ch04/179-agent-memory.html) 覆盖的 MUSE/LOCOMO/MemoryAgentBench 等 9 大方案）的关键区别在于**机制级变量控制**：
 
 - **统一提供生成模型和评分模型**，将参评方案的发挥空间集中在检索与召回环节——避免"最终效果分不清来自底层模型还是记忆模块"的经典混淆问题
 - **双维度矩阵**：类型分文本记忆/代码记忆两条赛道 × 组别分学术方法榜/商业产品榜
@@ -46,11 +46,11 @@ AML 首期榜单发布后 48 小时内，GitHub、Hugging Face 及 Twitter/X 等
 
 ## 相关实体
 
-- [Agent-Memory 评测全景（9 大方案）](../ch04/180-agent-memory.html) — 2026-06 综述，AML 是其"机制隔离"路线的后继基准
-- [Mem0/Letta/Zep/VoltMem 对比](../ch04/180-agent-memory.html)
-- [Agent 记忆架构本质](../ch04/180-agent-memory.html)
-- [记忆存储工程实践](../ch04/180-agent-memory.html)
-- [AI Agent 记忆系统](../ch04/180-agent-memory.html)
+- [Agent-Memory 评测全景（9 大方案）](../ch04/179-agent-memory.html) — 2026-06 综述，AML 是其"机制隔离"路线的后继基准
+- [Mem0/Letta/Zep/VoltMem 对比](../ch04/179-agent-memory.html)
+- [Agent 记忆架构本质](../ch04/179-agent-memory.html)
+- [记忆存储工程实践](../ch04/179-agent-memory.html)
+- [AI Agent 记忆系统](../ch04/179-agent-memory.html)
 - [Agent 记忆架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md)
 - [Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md)
 

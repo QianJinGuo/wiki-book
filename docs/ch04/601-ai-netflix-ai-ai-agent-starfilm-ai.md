@@ -37,10 +37,10 @@ Starfilm的出现折射出一个根本性的转变：AI视频工具正从"炫技
 
 ## 相关实体
 - [Ai 内容创作开始进入画布 Agent时代](../ch03/006-agent.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/467-score-by-collisions-patch-by-panic.html)
-- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/350-skill.html)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/1603-anthropic.html)
-- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/1163-google-adds-llms-txt-check-to-chrome-lighthouse.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](ch04/466-score-by-collisions-patch-by-panic.html)
+- [Alibabacloud Cms Manage Skill Natural Language Observability](ch04/349-skill.html)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](../ch01/783-anthropic.html)
+- [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/1167-google-adds-llms-txt-check-to-chrome-lighthouse.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/starfilm-ai-agent-ai-short-film-platform.md)
 

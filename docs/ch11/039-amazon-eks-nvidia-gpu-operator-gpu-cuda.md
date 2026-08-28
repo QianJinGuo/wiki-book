@@ -182,7 +182,7 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 | [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](ch11/310-amazon-bedrock.html) | Nemoclaw 安全沙箱 + Bedrock 混合推理 | 应用层，本文是底层 driver 管理 |
 | [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md) | EKS 日志采集 + S3 Parquet + Kiro CLI | 同样使用 Kiro CLI 但场景是日志，不是 GPU 运维 |
 | [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](../ch07/001-mcp.html) | Kiro + OpenSearch MCP | MCP 通用方法论，本文是 GPU + EKS MCP 应用 |
-| [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](../ch04/458-pod.html) | SageMaker HyperPod MIG 虚拟化 | SageMaker 路径，与 EKS 路径平行 |
+| [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](../ch04/457-pod.html) | SageMaker HyperPod MIG 虚拟化 | SageMaker 路径，与 EKS 路径平行 |
 
 **本文填补的空白**：EKS + GPU Operator + 自定义 driver 管理的完整版本矩阵 + 失败模式实证 + AI 运维闭环。现有 entities 中无 GPU Operator 主题覆盖。
 
@@ -193,8 +193,8 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 - [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](ch11/310-amazon-bedrock.html)
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](../ch07/001-mcp.html)
-- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](../ch04/458-pod.html)
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/684-ai-agent.html)
+- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](../ch04/457-pod.html)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch11/255-openclaw.html)
 - [Openclaw Amazon Bedrock Eks Printer Qc](ch11/310-amazon-bedrock.html)
 
 ---

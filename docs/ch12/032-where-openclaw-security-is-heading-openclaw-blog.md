@@ -38,7 +38,7 @@ Precision 是这种体系的核心要求：噪音规则比无规则更危险，�
 
 ### 5. 运行时状态重构：减少攻击面而非加固边界
 文章提及 SQLite 运行时状态重构（sessions、transcripts、scheduler state、plugin state 移入类型化数据库），其安全动机在于**消除文件系统访问**：最安全的文件系统调用是根本不调用。这是攻击面减少（attack surface reduction）而非边界加固（boundary hardening）的思路——不是让文件系统调用更安全，而是不做文件系统调用。
-Loose files 作为运行时状态存储存在的问题：文件可能被篡改、误删、路径遍历、或因权限配置错误暴露。类型化数据库（SQLite）提供清晰的所有权边界、事务支持和结构化查询 。这一方向与 [Skill System Design Three Way Comparison](../ch04/350-skill.html) 中记录的 ClawHub 恶意 Skill 问题相关——若运行时状态通过文件系统暴露，恶意 Skill 理论上可操纵这些文件。
+Loose files 作为运行时状态存储存在的问题：文件可能被篡改、误删、路径遍历、或因权限配置错误暴露。类型化数据库（SQLite）提供清晰的所有权边界、事务支持和结构化查询 。这一方向与 [Skill System Design Three Way Comparison](../ch04/349-skill.html) 中记录的 ClawHub 恶意 Skill 问题相关——若运行时状态通过文件系统暴露，恶意 Skill 理论上可操纵这些文件。
 
 ## 实践启示
 ### 对 Agent 系统开发者
@@ -58,7 +58,7 @@ Loose files 作为运行时状态存储存在的问题：文件可能被篡改�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/where-openclaw-security-is-heading-openclaw-blog.md)
 
 ## 相关实体
-- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/725-openclaw-agent.html)
+- [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch01/726-openclaw-agent.html)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki/blob/main/concepts/the-agency-model-dangers.md)
 

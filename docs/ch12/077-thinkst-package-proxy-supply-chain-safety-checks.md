@@ -2,25 +2,11 @@
 
 ## Ch12.077 Thinkst Package Proxy: Supply Chain Safety Checks
 
-> 📊 Level ⭐⭐ | 6.7KB | `entities/thinkst-package-proxy-supply-chain-security.md`
+> 📊 Level ⭐⭐ | 7.1KB | `entities/thinkst-package-proxy-supply-chain-security.md`
 
 # Thinkst Package Proxy: Supply Chain Safety Checks
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinkst-package-proxy-supply-chain-security.md)
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("Thinkst Package Proxy: Suppl…"))
-    深度分析
-      10 天窗口的安全博弈论
-      代理模式 vs 包装器模式
-      Agent 时代的供应链风险放大
-    实践启示
-    相关实体
-```
 
 ## 摘要
 
@@ -66,6 +52,7 @@ Package Proxy (Cloudflare Worker)
 ```
 
 **关键设计决策**：选择代理而非包管理器包装器（wrapper），因为：
+
 - 不需要在多处添加新依赖，只需配置变更
 - 统一检查覆盖不同版本的包管理器（`uv` 的「上周发布的包」vs `pip` 的 `--uploaded-prior-to` 固定时间戳）
 - 可通过后台全量部署，无需改变开发者工作流

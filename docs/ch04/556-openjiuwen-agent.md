@@ -20,7 +20,7 @@
 
 ## 效果
 
-KV Cache 从被动管理走向主动协同，首 token 时延砍半、推理存储占用下降 25%。与 [openJiuwen 自进化记忆](../ch06/038-openjiuwen-autogenetic-memory-agent.html) 同属 openJiuwen 平台家族；技术上属于 [Prefill/Decode 分离](../ch01/871-llm.html) 同方向的 Agent 侧调度优化。
+KV Cache 从被动管理走向主动协同，首 token 时延砍半、推理存储占用下降 25%。与 [openJiuwen 自进化记忆](../ch06/038-openjiuwen-autogenetic-memory-agent.html) 同属 openJiuwen 平台家族；技术上属于 [Prefill/Decode 分离](../ch01/1156-llm.html) 同方向的 Agent 侧调度优化。
 
 ## 深度分析
 

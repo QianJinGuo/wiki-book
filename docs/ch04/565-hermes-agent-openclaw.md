@@ -10,8 +10,8 @@
 ## 相关实体
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](ch04/674-amazon-bedrock-agentcore.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch06/023-hermes-agent-vs-openclaw.html)
-- [Skill System Design Three Way Comparison](ch04/350-skill.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/372-hermes-agent-goal.html)
+- [Skill System Design Three Way Comparison](ch04/349-skill.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](ch04/371-hermes-agent-goal.html)
 - [Hermes Agent K2 6 Multi Agent](../ch03/099-hermes-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)

@@ -31,7 +31,7 @@
 ## 关联
 
 - 相关概念: [具身智能前沿](https://github.com/QianJinGuo/wiki/blob/main/concepts/embodied-intelligence-frontier.md)、[机器人具身 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/robotics-embodied-ai.md)、[人在环路 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/human-in-the-loop-ai.md)、[Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-architecture.md)
-- 相关实体: [具身原生大模型](../ch01/871-llm.html)、[高德 AI 陪伴 Agent 架构](../ch03/006-agent.html)、[CurrentWorld-0 跨本体物理世界模型](../ch01/265-0.html)
+- 相关实体: [具身原生大模型](../ch01/1156-llm.html)、[高德 AI 陪伴 Agent 架构](../ch03/006-agent.html)、[CurrentWorld-0 跨本体物理世界模型](../ch01/1479-0.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/combodied-agents-human-centric-agentic-ai-2026.md)
 

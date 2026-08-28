@@ -55,7 +55,7 @@
 - [视觉还原 AI 技术](../ch05/113-ai.html)
 - [淘宝前端 AI 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/taobao-frontend-practices.md)
 - [Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判](../ch05/001-impeccable.html)
-- [AE 到可运行代码：大淘宝 AI 动画全链路方案](../ch01/1135-20.html)
+- [AE 到可运行代码：大淘宝 AI 动画全链路方案](../ch01/1139-20.html)
 - [设计系统的新作者：从 Agent 读到 Agent 写](../ch03/006-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/design-to-code-loop-figma.md)

@@ -78,7 +78,7 @@
 - [Claude Code Integration Other Tools](../ch03/085-claude-code.html)
 - [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
 - [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
-- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/639-claude.html)
+- [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](ch01/1492-claude.html)
 
 ---
 

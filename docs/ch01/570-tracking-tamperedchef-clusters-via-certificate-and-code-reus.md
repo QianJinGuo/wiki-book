@@ -132,8 +132,8 @@ TamperedChef攻击链展现出高度结构化的入侵策略：
 
 ## 相关实体
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/441-agentrun.html)
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/1135-20.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/005-agentrun.html)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](ch01/1139-20.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch05/113-ai.html)
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/611-scaling.html)
 

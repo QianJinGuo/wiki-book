@@ -51,7 +51,7 @@ Anthropic 是 Action Fabric 的首个设计合作伙伴，Claude Cowork 直接�
 - [ServiceNow 同题实体：The UI is dead, long live the agent](../ch03/006-agent.html)
 - [同文完整 slug 实体](ch04/529-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Salesforce 主动砍掉了界面（a16z）](../ch01/358-1.html)
-- [Headless Software：Agent 时代软件界面何去何从](ch04/161-headless-software-agent.html)
+- [Headless Software：Agent 时代软件界面何去何从](ch04/160-headless-software-agent.html)
 - [Model Context Protocol (MCP)](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
 - [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md)
 

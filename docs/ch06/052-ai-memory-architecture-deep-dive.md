@@ -567,7 +567,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 - [Agent Memory 架构本质](../ch04/524-perplexity-brain-self-improving-agent-memory-architecture.html) — Governance-centric view
 - [Hermes Agent 记忆系统](ch06/014-hermes-agent-memory.html) — Production implementation deep-dive
 - [Memory in LLM Era — ICLR 2026](ch06/049-memory.html) — Academic framework and benchmarks
-- [Memory vs RAG](../ch04/180-agent-memory.html) — Systematic framework distinguishing memory from RAG
+- [Memory vs RAG](../ch04/179-agent-memory.html) — Systematic framework distinguishing memory from RAG
 - [向量数据库必要性反思](../ch03/085-claude-code.html) — Critical re-examination of vector database role in agent memory
 
 ## References

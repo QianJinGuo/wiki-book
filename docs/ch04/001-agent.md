@@ -115,7 +115,7 @@ AI 原生创业公司每周改进一次自己的操作系统。
 
 ## 相关实体
 - [Ai Native Startup Cyberfund Guide](../ch05/022-ai-native.html)
-- [Ai Agent Harness Construction Akshay](../ch01/1197-ai-agent-harness.html)
+- [Ai Agent Harness Construction Akshay](../ch01/1201-ai-agent-harness.html)
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/080-harness.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04/684-ai-agent.html)
 - [Guide Ai Agents Models Apps Harnesses Mollick](ch04/684-ai-agent.html)

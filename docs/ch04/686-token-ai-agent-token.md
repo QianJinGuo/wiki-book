@@ -25,7 +25,7 @@
 
 ### 3. 工具注册过载（MCP schema 开销）
 - 同时挂 20+ 个 MCP 工具，每轮对话光工具 schema 就烧 3-5k token，什么活没干钱先没了。**规则：只挂当前任务需要的工具，成本直接砍一大半。**
-- 与 [GitHub Agentic Token 效率](ch04/757-agentic.html) 的"消灭未使用的 MCP 工具注册"（40 工具 → 每轮 10-15KB schema 开销）同源。
+- 与 [GitHub Agentic Token 效率](ch04/298-agentic.html) 的"消灭未使用的 MCP 工具注册"（40 工具 → 每轮 10-15KB schema 开销）同源。
 
 ### 4. Agent 跑偏与无成本感知重试
 - Agent 开始胡扯时等待"自我修正" → 越修越离谱，token 蹭蹭涨。**规则：发现不对劲立即掐断（"断"字诀）。**
@@ -36,9 +36,9 @@
 
 ## 与现有实体关系
 
-- [GitHub Agentic Token 效率](ch04/757-agentic.html) — 基础设施层（API proxy 审计/Optimizer 自动裁剪），本实体是使用层（开发者日常行为反模式）
+- [GitHub Agentic Token 效率](ch04/298-agentic.html) — 基础设施层（API proxy 审计/Optimizer 自动裁剪），本实体是使用层（开发者日常行为反模式）
 - [Claude Code token 成本对比](../ch03/085-claude-code.html) — harness 间 token 差异（最多 30 倍），本实体是单 harness 内使用习惯的浪费
-- [Token 不经济](../ch01/1135-20.html) — 经济学视角，本实体是工程实践视角
+- [Token 不经济](../ch01/1139-20.html) — 经济学视角，本实体是工程实践视角
 - [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程是 Token 刺客的核心解药
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-token-刺客-token浪费反模式-2026-07-23.md)

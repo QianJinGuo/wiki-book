@@ -30,7 +30,7 @@ NVIDIA Agent Toolkit 此前聚焦于软件领域的 AI 智能体构建（对话�
 
 这一扩展的直接结果：AI 智能体现在可以理解 3D 场景的结构、材质的物理属性、传感器的信号特性。这不是简单的"加一个计算机视觉模型"——它需要智能体理解三维空间中的因果规律：物体的质量如何影响碰撞结果、不同材质的摩擦系数如何影响运动轨迹、不同传感器在不同光照条件下的输出差异。
 
-这实际上是对 [NVIDIA Agentic Systems](../ch04/757-agentic.html) 中"极端协同设计"理念的具体化——智能体不仅是辅助设计的工具，更是仿真环境的构建者和验证者。
+这实际上是对 [NVIDIA Agentic Systems](../ch04/298-agentic.html) 中"极端协同设计"理念的具体化——智能体不仅是辅助设计的工具，更是仿真环境的构建者和验证者。
 
 ### ovrtx、ovphysx、CAD-to-SimReady：三个库分别解决什么问题
 
@@ -74,14 +74,14 @@ Agent Toolkit + Omniverse 的核心创新在于让 AI 智能体自动化这些�
 
 ## 相关实体
 
-- [NVIDIA Agentic Systems 极端协同设计](../ch04/757-agentic.html)
+- [NVIDIA Agentic Systems 极端协同设计](../ch04/298-agentic.html)
 - [NVIDIA Cosmos 机器人视频生成](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
 - [NVIDIA Isaac Lab 机器人强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [NVIDIA BioNeMo Agent Toolkit](../ch04/013-nvidia-bionemo-agent-toolkit.html)
-- [NVIDIA Nemotron-3 多模态 Agent](../ch04/757-agentic.html)
+- [NVIDIA BioNeMo Agent Toolkit](../ch04/387-nvidia-bionemo-agent-toolkit.html)
+- [NVIDIA Nemotron-3 多模态 Agent](../ch04/298-agentic.html)
 - [Harness Engineering 范式](../ch05/096-harness-engineering.html)
 - Bedrock AgentCore 质量优化飞轮
-- [NVIDIA ENPIRE 机器人策略自改进](../ch04/757-agentic.html)
+- [NVIDIA ENPIRE 机器人策略自改进](../ch04/298-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agent-toolkit-扩展全新-omniverse-库赋能-ai-智能体构建仿真就绪世界.md)
 

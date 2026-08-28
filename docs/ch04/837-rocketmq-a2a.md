@@ -66,7 +66,7 @@ Supervisor 和 Worker 各自拥有独立状态机，通过 MQ 消息驱动转换
 
 ### 生产 MAS 的瓶颈在消息与可靠性层，而非模型层
 
-论文的核心判断是：当 MAS 从 Demo 走向生产，决定成败的往往不是 Agent 的推理能力或 Prompt 质量，而是通信与状态语义是否被当作一等公民治理。 突发流量治理、会话隔离、故障恢复、可审计性——这四类问题没有一项能被更强的模型或更细的角色拆分所解决，它们属于 [production agent engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 中「承重结构」的范畴，与 [可靠性工程](ch04/301-building-reliable-agentic-ai-systems.html) 的视角一致：Agent 逻辑编排只是上层，底层的消息投递、持久化与恢复语义才是规模化协作的隐性成本。
+论文的核心判断是：当 MAS 从 Demo 走向生产，决定成败的往往不是 Agent 的推理能力或 Prompt 质量，而是通信与状态语义是否被当作一等公民治理。 突发流量治理、会话隔离、故障恢复、可审计性——这四类问题没有一项能被更强的模型或更细的角色拆分所解决，它们属于 [production agent engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 中「承重结构」的范畴，与 [可靠性工程](ch04/300-building-reliable-agentic-ai-systems.html) 的视角一致：Agent 逻辑编排只是上层，底层的消息投递、持久化与恢复语义才是规模化协作的隐性成本。
 
 ### LiteTopic：以「低成本会话隔离」换取控制面可扩展性
 

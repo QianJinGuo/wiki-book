@@ -79,14 +79,14 @@ Karpathy 的"bits"框架揭示了 AI Agent 时代程序员价值重构的核心�
 
 ## 相关实体
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](ch04/536-introducing-aimap-security-testing-for-ai-agent-bishop-f.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/469-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/359-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
 - [十年老技术开发的 AI Agent 探索之路](ch04/684-ai-agent.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](ch04/496-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md)
 
-- [ai agent memory systems](ch04/180-agent-memory.html)
+- [ai agent memory systems](ch04/179-agent-memory.html)
 
 ---
 

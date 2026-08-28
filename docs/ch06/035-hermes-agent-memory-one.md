@@ -48,7 +48,7 @@
 
 ## 相关实体
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [AI Agent 记忆系统架构](../ch04/216-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](../ch04/215-how-ai-agent-memory-works.html)
 - [Hermes Agent 记忆系统深度拆解](ch06/014-hermes-agent-memory.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 

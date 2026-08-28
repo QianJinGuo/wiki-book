@@ -289,7 +289,7 @@ MPA 在标准基准上赢下 35/40 端点、平均误差再降 5.4%——这些�
 - [from agi to asi](ch01/477-agi.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mira-mpa-deep-principle-ai4s-40-sota.md)
 - [ai4s 2026 h1 跨学科前沿全景（弦论泰斗、ai 提速百倍、与](../ch05/113-ai.html)
-- [nature丨google和futurehouse同日登刊，把ai科学助理推到科研前线](ch01/645-nature-ai.html)
+- [nature丨google和futurehouse同日登刊，把ai科学助理推到科研前线](ch01/646-nature-ai.html)
 
 ---
 

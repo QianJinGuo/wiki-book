@@ -59,7 +59,7 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 
 ## 与现有实体的关系
 
-### 与 [Skill Design Patterns](../ch04/350-skill.html) 的关系
+### 与 [Skill Design Patterns](../ch04/349-skill.html) 的关系
 
 - skill-design-patterns = 设计维度（5 种 SKILL.md 写作模式）
 - trail-of-bits 实体 = 攻击维度（SKILL.md 怎么被恶意构造）
@@ -184,7 +184,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 ---
 
 **相关实体**：
-- [Skill Design Patterns](../ch04/350-skill.html) — skill 的设计维度（与攻击维度互补）
+- [Skill Design Patterns](../ch04/349-skill.html) — skill 的设计维度（与攻击维度互补）
 - [Skillsieve Agent Skill Security](../ch04/564-skillsieve-agent-skill.html) — 企业级 skill 安全实践
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/080-harness.html) — agent 安全的通用框架
 - [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) — prompt injection 的防御思路

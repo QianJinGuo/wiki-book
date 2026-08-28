@@ -16,7 +16,7 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Cline releases open-source agent runtime SDK](../ch04/441-agentrun.html)
+- [Cline releases open-source agent runtime SDK](../ch04/005-agentrun.html)
 - [Spring AI AI Agent Demo](../ch03/006-agent.html)
 - [SkillX — 层次化技能知识库](../ch07/060-skillx.html)
 

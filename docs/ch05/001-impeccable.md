@@ -158,9 +158,9 @@ npx impeccable detect --json .
 
 ## 关联阅读
 - [Agent Skill 编写指南](../ch04/620-agent-skill.html) —— skill 格式规范与渐进式披露机制
-- [Karpathy Vibe Coding → Agentic Engineering](../ch04/757-agentic.html) —— Vibe Coding 原始定义与 Software 3.0 演化
-- [Claude Design Skill](../ch01/1376-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
-- [前端 Design Skills 全景对比](../ch01/972-skills-anthropic-openai-comparison-frontend-design.html) —— Anthropic vs OpenAI 设计 skill 生态比较
+- [Karpathy Vibe Coding → Agentic Engineering](../ch04/298-agentic.html) —— Vibe Coding 原始定义与 Software 3.0 演化
+- [Claude Design Skill](../ch01/1380-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
+- [前端 Design Skills 全景对比](../ch01/974-skills-anthropic-openai-comparison-frontend-design.html) —— Anthropic vs OpenAI 设计 skill 生态比较
 
 ---
 

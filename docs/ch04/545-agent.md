@@ -62,8 +62,8 @@
 - [Agentic Harness Engineering](../ch05/096-harness-engineering.html)
 - [Agentic AI 系统架构](../ch05/110-harness-skill.html)
 - [Token 成本控制](../ch09/055-coding-agent.html)
-- [A2A 企业级协议](ch04/757-agentic.html)
-- [Agent 环境工程](ch04/757-agentic.html)
+- [A2A 企业级协议](ch04/298-agentic.html)
+- [Agent 环境工程](ch04/298-agentic.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-protocol-cost-evolution-roundtable-2026.md)
 

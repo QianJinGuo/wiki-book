@@ -781,8 +781,6 @@ PosterReward 的工程实现分为两条互补路径：
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/llava-onevision-2-full-frame-rate-vlm.md`
 
-provenance_state: inferred
-confidence: 0.8
 ## 核心问题
 **视频被当作一组图片处理——巨大的浪费。**
 

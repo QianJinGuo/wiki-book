@@ -12,7 +12,7 @@ Opens in a new window Opens an external website Opens an external website in a n
 - [Amazon Turns Alexa Into Its Next Storefront](ch01/084-amazon-turns-alexa-into-its-next-storefront.html)
 - Senators Query Credit Bureaus On Bnpl 1
 - [Openai Realtime Api Architecture](ch01/129-openai-realtime-api.html)
-- [Tencent Ai Infra Backend Engineer Huangrunpeng](ch01/1590-ai-infra.html)
+- [Tencent Ai Infra Backend Engineer Huangrunpeng](ch01/1593-ai-infra.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/block-leans-into-its-ai-future-payments-dive.md)
 

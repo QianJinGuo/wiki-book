@@ -54,10 +54,10 @@ HiClaw v1.1.0 是该项目从"单容器玩具"向"企业级 Cloud Native 产品"
 5. **升级前备份 workers-registry.json**：虽然 v1.1.0 提供了从 `workers-registry.json` 到 CRD 的自动迁移，但建议在执行升级前对原文件进行备份，以防迁移过程中出现意外中断导致数据丢失。
 ## 相关实体
 - [Hiclaw V110 K8S Hermes Worker](../ch01/291-hermes.html)
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/372-hermes-agent-goal.html)
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/371-hermes-agent-goal.html)
 - [Hermes 9 Module Architecture Winty](../ch01/291-hermes.html)
 - [Ai 驱动的大数据工程 从平台驱动到 Aidlc 的范式迁移](../ch05/113-ai.html)
-- [Pi Agent Framework](../ch04/416-pi-agent.html)
+- [Pi Agent Framework](../ch04/415-pi-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)
 

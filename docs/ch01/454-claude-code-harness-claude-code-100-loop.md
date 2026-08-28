@@ -93,17 +93,17 @@ Boris 预测将涌现 10 倍数量创业公司。小团队能做出大公司量�
 - [Claude Code](https://claude.ai/code)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/871-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](ch01/407-rag.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/006-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/080-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/441-agentrun.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/757-agentic.html)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/350-skill.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/005-agentrun.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/298-agentic.html)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch04/349-skill.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/096-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch11/255-openclaw.html)
 
-- [Hermes Agent /goal 长任务运行时架构](../ch04/372-hermes-agent-goal.html)
+- [Hermes Agent /goal 长任务运行时架构](../ch04/371-hermes-agent-goal.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/099-hermes-agent.html)
 - [LoongSuite GenAI 可观测语义规范](../ch04/575-loongsuite-genai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/006-agent.html)

@@ -42,9 +42,9 @@ Zvi 建议的实践模式：
 - Sol 适合"已知如何做的任务"，Fable 适合"需要想清楚再做的任务"
 
 ## 相关实体
-- [GPT-5.6 Sol/Terra/Luna 分层定价](../ch01/738-codex.html)
-- [GPT-5.6 Preview System Card](../ch01/736-gpt-5-6-preview-system-card-community-detection-benchmar.html)
-- [Claude Opus 4.8 System Card (Zvi)](../ch01/1607-claude-opus-4-8.html)
+- [GPT-5.6 Sol/Terra/Luna 分层定价](../ch01/739-codex.html)
+- [GPT-5.6 Preview System Card](../ch01/737-gpt-5-6-preview-system-card-community-detection-benchmar.html)
+- [Claude Opus 4.8 System Card (Zvi)](../ch01/1610-claude-opus-4-8.html)
 
 ## 深度分析
 

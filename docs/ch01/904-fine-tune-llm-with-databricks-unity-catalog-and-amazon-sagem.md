@@ -10,8 +10,8 @@
 - Source: https://aws.amazon.com/blogs/machine-learning/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker-ai/
 
 ## 相关实体
-- [基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客](../ch04/458-pod.html)
-- [LLM-as-Judge: RFT的6步法官设计方法论](ch01/871-llm.html)
+- [基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客](../ch04/457-pod.html)
+- [LLM-as-Judge: RFT的6步法官设计方法论](ch01/1156-llm.html)
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](../ch11/321-amazon-nova.html)
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/321-amazon-nova.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/684-ai-agent.html)

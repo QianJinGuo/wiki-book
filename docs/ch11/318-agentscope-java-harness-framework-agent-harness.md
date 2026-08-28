@@ -53,7 +53,7 @@ Local      Remote     Sandbox
 
 ## 相关实体
 - [Harness Engineering 系统梳理](../ch05/096-harness-engineering.html)
-- [OpenHuman: AI Agent 持久记忆框架](../ch04/180-agent-memory.html)
+- [OpenHuman: AI Agent 持久记忆框架](../ch04/179-agent-memory.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 ## 深度分析

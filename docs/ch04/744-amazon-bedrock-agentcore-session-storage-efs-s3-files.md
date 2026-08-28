@@ -38,8 +38,8 @@ AgentCore 的数据持久化文件系统在以下场景中尤为关键：
 
 - [AWS Bedrock AgentCore](../ch11/272-aws-bedrock-agentcore.html) — AgentCore 整体架构
 - [突破上下文窗口壁垒](ch04/674-amazon-bedrock-agentcore.html) — AgentCore 上下文管理
-- [结构化记忆与元数据过滤](ch04/470-data-agent.html) — AgentCore 记忆系统
-- [Agent 记忆工程税](ch04/180-agent-memory.html) — 记忆系统的工程挑战
+- [结构化记忆与元数据过滤](ch04/469-data-agent.html) — AgentCore 记忆系统
+- [Agent 记忆工程税](ch04/179-agent-memory.html) — 记忆系统的工程挑战
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-agentcore-数据持久化文件系统session-storage-和-amazon-e.md)
 

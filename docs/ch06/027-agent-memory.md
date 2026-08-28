@@ -86,9 +86,9 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 - **专有模型**：针对文档编码任务训练专用 encoder-decoder，直接输出权重而非通过 hypernetwork 映射
 
 ## 相关实体
-- [AI Agent 记忆系统架构](../ch04/216-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](../ch04/215-how-ai-agent-memory-works.html)
 - [LLM Wiki 架构](ch06/026-llm-wiki.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/912-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/913-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch03/099-hermes-agent.html)
 - [AI Agent 工程师能力地图](../ch04/684-ai-agent.html)
 

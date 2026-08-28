@@ -69,7 +69,7 @@ PACE 的最实际价值在于改变了 Agent 开发的迭代节奏：
 
 4. **定期重新标定**：随着新模型架构的出现，定期（如每季度）重新运行 PACE 的标定流程，确保选题集合仍然代表当前模型分布。
 
-5. **与 RoadmapBench 等长周期基准互补使用**：PACE 擅长快速排序，[RoadmapBench](ch04/319-roadmapbench-long-horizon-agentic-software-development.html) 等长周期基准测试深度能力——两者结合使用可在成本和评估深度之间取得平衡。
+5. **与 RoadmapBench 等长周期基准互补使用**：PACE 擅长快速排序，[RoadmapBench](ch04/318-roadmapbench-long-horizon-agentic-software-development.html) 等长周期基准测试深度能力——两者结合使用可在成本和评估深度之间取得平衡。
 
 ## 参考
 

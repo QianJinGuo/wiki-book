@@ -32,10 +32,10 @@
 - [Claude Code Loop Engineering Guide](../ch09/181-claude-code-loop-engineering.html) — Claude Code Loop Engineering 指南
 - [Claude Code Loop Control Rights Four Levels](../ch01/335-claude-code-loop.html) — Loop 权限控制的四个层次
 - [Anthropic 8X Output Verification Bottleneck Fiona Fung](../ch09/104-anthropic-8x.html) — Agent 验证瓶颈讨论
-- [Anthropic Claude Code Large Scale Code Migration 2026](../ch01/479-anthropic-claude-code.html) — Anthropic 大规模代码迁移实践
+- [Anthropic Claude Code Large Scale Code Migration 2026](../ch01/802-anthropic-claude-code.html) — Anthropic 大规模代码迁移实践
 - [Agentic Loop Engineering Handbook Empirical Framework](ch05/006-loop-engineering.html) — Loop Engineering 经验框架
 - [Ai Agent Loops Claude Code Codex](../ch03/085-claude-code.html) — AI Agent 循环模式
-- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/1603-anthropic.html) — Dynamic Workflows 与 Ultracode
+- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](../ch01/783-anthropic.html) — Dynamic Workflows 与 Ultracode
 - [Harness Engineering](ch05/096-harness-engineering.html) — Harness Engineering 概念体系
 - [Claude Code 27 Tips Engineering Upgrade Jiagoux 2026](../ch01/334-claude-code-27.html) — Claude Code 工程实践技巧
 

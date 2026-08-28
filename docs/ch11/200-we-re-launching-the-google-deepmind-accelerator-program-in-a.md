@@ -64,10 +64,10 @@ APAC 既是全球经济增长引擎，也是气候变化最脆弱的区域之一
 
 ## 相关实体
 
-- [Intelligent Radiology Workflow Optimization With Ai Agents](../ch04/407-intelligent-radiology-workflow-optimization-with-ai-agents.html)
+- [Intelligent Radiology Workflow Optimization With Ai Agents](../ch04/406-intelligent-radiology-workflow-optimization-with-ai-agents.html)
 - [Amazon Nova Act Is Now Hipaa Eligible](../ch04/603-amazon-nova-act-is-now-hipaa-eligible.html)
-- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/998-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01/949-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](../ch01/1000-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01/951-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](ch11/139-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-deepmind-accelerator-asia-pacific.md)

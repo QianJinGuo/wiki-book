@@ -186,9 +186,9 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/014-agent-ralph-loop-harness.html) | [{{BASE_URL}}/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei]({{BASE_URL}}/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei)|
 | Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05/043-agent-harness.html) | [{{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit]({{BASE_URL}}/raw/articles/harness-production-agent-engineering-deficit)|
 | 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05/037-harness-12.html) | [{{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison]({{BASE_URL}}/raw/articles/production-harness-12-components-framework-comparison)|
-| 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05/075-harness-engineering-10-8-checklist-15.html) | [{{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026]({{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026)|
-| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/137-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
-| Better-Harness | [Better Harness Eval Trace Methodology](ch05/148-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
+| 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05/076-harness-engineering-10-8-checklist-15.html) | [{{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026]({{BASE_URL}}/raw/articles/harness-engineering-10-step-practical-guide-2026)|
+| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/138-harness-100-cache-agent.html) | [{{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit]({{BASE_URL}}/raw/articles/openclacky-harness-engineering-100-percent-cache-hit)|
+| Better-Harness | [Better Harness Eval Trace Methodology](ch05/149-better-harness-agent-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
 
 ### 4.4 Memory 精读清单
 
@@ -236,7 +236,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 营销策略 Agent | [Data Agent Product Design](ch04/470-data-agent.html) | [{{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent]({{BASE_URL}}/raw/articles/volcengine-data-agent-marketing-strategy-agent)|
 | TiDB Cloud Agent-native Database | [Tidb Cloud Agent Database](ch11/057-tidb-cloud-agent-native-kimi-k2-6.html) | [{{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513]({{BASE_URL}}/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513)|
 | ClickHouse 大规模摄取 | [Clickhouse Ingestion At Scale An Open Source Zepto Engineering Story](https://github.com/QianJinGuo/wiki/blob/main/entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) | [{{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story]({{BASE_URL}}/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story)|
-| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/1133-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
+| Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch01/1135-20.html) | [{{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18]({{BASE_URL}}/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18)|
 
 ### 4.8 工程师期必须完成的 4 个项目
 
@@ -355,7 +355,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | AI Skill 测评报告 | [Ai Skill 测评报告解读](ch07/081-ai-skill.html) | [{{BASE_URL}}/raw/articles/ai-skill-测评报告解读]({{BASE_URL}}/raw/articles/ai-skill-测评报告解读)|
-| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/574-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
+| LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch04/575-loongsuite-genai.html) | [{{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地]({{BASE_URL}}/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地)|
 | Agent-EvalKit | [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](ch11/027-agent-evalkit-aws-cli-agent.html) | [{{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit]({{BASE_URL}}/raw/articles/evaluate-ai-agents-systematically-with-agent-evalkit)|
 | AgentEval YAML | [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/214-agenteval-yaml-agent.html) | 先读实体页：`docs/ch04/141-agenteval-yaml-agent.md` |
 | Claw-SWE-Bench | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch09/067-claw-swe-bench-harness-agent.html) | [{{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm]({{BASE_URL}}/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm)|
@@ -413,7 +413,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 |---|---|---|
 | RLHF / Post-training / ATOM | [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](ch09/115-ai.html) | [{{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini]({{BASE_URL}}/raw/articles/what-ive-been-building-atom-report-post-training-course-fini)|
 | NVIDIA Blackwell MLPerf Training | [Nvidia Blackwell Mlperf Training 6 0 Benchmark Results 2026 06](ch09/115-ai.html) | [{{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06]({{BASE_URL}}/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06)|
-| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1546-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
+| PRISM 并行残差迭代序列模型 | [Icml 2026 Prism Parallel Residual Iterative Sequence Model](ch01/1591-icml-2026.html) | [{{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model]({{BASE_URL}}/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model)|
 
 ### 6.3 推理优化精读清单
 
@@ -429,7 +429,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Recursive 自动化 AI 研究 | [Recursive Automated Ai Research First Steps 2026](ch09/115-ai.html) | [{{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026]({{BASE_URL}}/raw/articles/recursive-automated-ai-research-first-steps-2026)|
-| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/1133-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
+| NeurIPS Pangram 事件 | [Neurips 2026 Pangram Controversy](ch01/1135-20.html) | [{{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy]({{BASE_URL}}/raw/articles/neurips-2026-pangram-desk-reject-controversy)|
 | Agent 自我改进六条路 | `docs/ch04/047-agent.md` | 先读实体页 |
 | Hermes Agent Eval Harness | `docs/ch04/035-hermes-agent-eval-harness-skill-7-taskset-harnessadapt.md` | 先读实体页 |
 | MUSE-Autoskill | `docs/ch04/046-muse-autoskill-bytebrain-agent-arxiv-2605-27366.md` | 先读实体页 |

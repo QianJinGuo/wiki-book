@@ -4,8 +4,6 @@
 
 > 📊 Level ⭐⭐ | 14.1KB | `entities/epiplexity-finite-compute-information-theory.md`
 
-provenance_state: inferred
-confidence: 0.8
 ## 核心定义
 **Epiplexity**（认知复杂度）：损失曲线中，loss 下降部分所代表的结构性信息——模型通过训练真正学到的、可复用的、可迁移的知识。
 

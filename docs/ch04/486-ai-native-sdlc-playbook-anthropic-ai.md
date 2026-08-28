@@ -58,7 +58,7 @@
 ## 关联
 
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)、[Coding Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)、[SDD 规范驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/sdd-specification-driven-development-harness.md)
-- 相关实体: [AI-DLC（紫讯）](../ch05/022-ai-native.html)、[采用 AI Coding Agent 的六课](ch04/410-ai-coding-agent.html)、[Agentic AI 系统架构](../ch05/110-harness-skill.html)
+- 相关实体: [AI-DLC（紫讯）](../ch05/022-ai-native.html)、[采用 AI Coding Agent 的六课](ch04/409-ai-coding-agent.html)、[Agentic AI 系统架构](../ch05/110-harness-skill.html)
 
 → [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-sdlc-playbook-anthropic-2026.md)
 → [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-sdlc-playbook-lugong-aicodinglab-2026-08-24.md)

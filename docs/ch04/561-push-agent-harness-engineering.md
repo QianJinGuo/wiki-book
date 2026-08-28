@@ -28,7 +28,7 @@
 4. **信任像贷款一样渐进释放**：初始权限严格限制，靠持续稳定运行"赚取"更大操作空间（等同 RL 探索/利用权衡）。
 
 ## 相关
-与 [AutoSDK AI-Native 流水线（高德）](../ch05/022-ai-native.html)、[AutoSDK 可观测与自进化闭环（高德）](../ch01/1135-20.html) 同为高德第一方系列；与 [Harness Engineering](../ch05/096-harness-engineering.html)、[Agent 可观测性五层](../ch03/006-agent.html) 呼应。本文贡献是 Agent 驱动线上决策系统的完整案例：发送门控（Whether 决策）+ 三代架构 + 约束工程（9 项硬检查/离散动作空间/无状态调度/渐进信任/蒸馏闭环）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-push-agent-gate-control-harness-engineering-2026.md)
+与 [AutoSDK AI-Native 流水线（高德）](../ch05/022-ai-native.html)、[AutoSDK 可观测与自进化闭环（高德）](../ch01/1139-20.html) 同为高德第一方系列；与 [Harness Engineering](../ch05/096-harness-engineering.html)、[Agent 可观测性五层](../ch03/006-agent.html) 呼应。本文贡献是 Agent 驱动线上决策系统的完整案例：发送门控（Whether 决策）+ 三代架构 + 约束工程（9 项硬检查/离散动作空间/无状态调度/渐进信任/蒸馏闭环）。→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-push-agent-gate-control-harness-engineering-2026.md)
 
 ---
 

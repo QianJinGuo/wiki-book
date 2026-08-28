@@ -118,8 +118,8 @@ Ethan 给出的核心警示：
 
 ## 相关实体
 
-- [Gpt 54 Is A Big Step For Codex](ch01/738-codex.html)
-- [Yann Dubois Openai Post Training Matt Turck Interview](ch01/594-openai.html)
+- [Gpt 54 Is A Big Step For Codex](ch01/739-codex.html)
+- [Yann Dubois Openai Post Training Matt Turck Interview](ch01/1006-openai.html)
 - **Prompt Engineering**
 - **Deep Research**
 - **Multi-Modal Agent**

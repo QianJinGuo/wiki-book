@@ -157,10 +157,10 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 
 ## 相关实体
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/096-harness-engineering.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/638-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/639-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/085-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/006-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/836-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](ch04/192-karpathy-vibe-coding-agentic-engineering.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/006-agent.html)
 - [Claude Code 设计原则与对照分析](../ch03/085-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/080-harness.html)
@@ -186,7 +186,7 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1-million-exposed-ai-services-hackernews.md)
 
-- [Agent Memory 架构解析](ch04/180-agent-memory.html)
+- [Agent Memory 架构解析](ch04/179-agent-memory.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 
 ---
