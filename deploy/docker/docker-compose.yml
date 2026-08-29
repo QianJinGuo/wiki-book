@@ -1,7 +1,7 @@
 services:
   wiki-book:
     build:
-      context: .
+      context: ../..
       dockerfile: deploy/docker/Dockerfile
       network: host
     container_name: wiki-book
