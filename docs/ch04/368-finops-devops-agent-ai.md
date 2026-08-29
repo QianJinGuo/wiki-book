@@ -1,5 +1,7 @@
 # FinOps + DevOps 双Agent 协作：AI驱动的云成本优化实战
 
+## Ch04.368 FinOps + DevOps 双Agent 协作：AI驱动的云成本优化实战
+
 > 📊 Level ⭐⭐ | 5.2KB | `entities/finops-devops-dual-agent-cost-optimization.md`
 
 # FinOps + DevOps 双Agent 协作：AI驱动的云成本优化实战

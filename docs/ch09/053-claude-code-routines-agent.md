@@ -1,5 +1,7 @@
 # Claude Code Routines：从工具到队友的主动 Agent 模式
 
+## Ch09.053 Claude Code Routines：从工具到队友的主动 Agent 模式
+
 > 📊 Level ⭐⭐ | 9.8KB | `entities/claude-code-routines-proactive-agent.md`
 
 ## 背景案例：Sarah 的文档困境

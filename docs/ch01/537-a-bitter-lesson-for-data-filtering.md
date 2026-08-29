@@ -1,5 +1,7 @@
 # A Bitter Lesson for Data Filtering
 
+## Ch01.537 A Bitter Lesson for Data Filtering
+
 > 📊 Level ⭐⭐ | 6.1KB | `entities/a-bitter-lesson-for-data-filtering-e8807d.md`
 
 # A Bitter Lesson for Data Filtering

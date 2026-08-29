@@ -52,4 +52,4 @@ For "full attacks" like HAWK (runnable code), verification is easy. For speedup 
 - **For scientists**: A powerful collaborator who can talk through problems. Questions about credit and review remain.
 - **For the world**: Models are very intelligent and capable, getting better at a fast clip. But they are not super-intelligent yet — "like swimming in a pond where the ground drops off sharply."
 
-^[https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/]
+^[raw/articles/anthropic-claude-mythos-cryptanalysis-hawk-aes-matthew-green.md]

@@ -1,5 +1,7 @@
 # AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
 
+## Ch04.193 AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
+
 > 📊 Level ⭐⭐ | 10.6KB | `entities/agentops-operationalize-agentic-ai-amazon-bedrock.md`
 
 # AgentOps: Operationalize agentic AI at scale with Amazon Bedrock
@@ -83,7 +85,7 @@ Aris Tsakpinis is a Senior Specialist Solutions Architect for Generative AI focu
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](423-ai-agent.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](308-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 

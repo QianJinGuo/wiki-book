@@ -1,5 +1,7 @@
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系（出海企业数字大脑 / Palantir 中国类比）
 
+## Ch04.116 百型智能 OntoZ：企业本体论 + 群智能体协同体系（出海企业数字大脑 / Palantir 中国类比）
+
 > 📊 Level ⭐⭐ | 13.7KB | `entities/baixing-ontoz-enterprise-ontology-multi-agent.md`
 
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系

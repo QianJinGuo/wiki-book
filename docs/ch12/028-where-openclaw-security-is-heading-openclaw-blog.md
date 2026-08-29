@@ -1,5 +1,7 @@
 # Where OpenClaw Security Is Heading — OpenClaw Blog
 
+## Ch12.028 Where OpenClaw Security Is Heading — OpenClaw Blog
+
 > 📊 Level ⭐⭐ | 10.8KB | `entities/where-openclaw-security-is-heading-openclaw-blog.md`
 
 ## 核心要点

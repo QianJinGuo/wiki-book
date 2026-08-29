@@ -1,5 +1,7 @@
 # AI实践｜基于 Spring AI 从0到1构建 AI Agent
 
+## Ch04.364 AI实践｜基于 Spring AI 从0到1构建 AI Agent
+
 > 📊 Level ⭐⭐ | 5.5KB | `entities/spring-ai-aiagentdemo.md`
 
 # AI实践｜基于 Spring AI 从0到1构建 AI Agent

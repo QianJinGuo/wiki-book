@@ -1,5 +1,7 @@
 # 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
 
+## Ch01.405 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
+
 > 📊 Level ⭐⭐ | 8.1KB | `entities/coze-3-0-local-agent-codex-claude-code-project.md`
 
 # 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
@@ -38,7 +40,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 ### 两条多 Agent 路线的编排哲学之争
 
-文章把 Dynamic Workflows（Opus 4.8）与扣子 3.0 放在一起对比：前者用脚本编排上百个子 Agent，追求快和规模；后者强调"人 + 云 Agent + 本地 Agent 同一项目"，像带小团队一样 @ 点名接力。分歧的本质是编排哲学——中心化脚本调度，还是人机混合的自组织协作。作者倾向后者："与其干等一个什么都会的万能 AI，不如现在就带一支各有专长、@一下就接力上的小队。"这与 [多智能体协作循环](../ch04/348-loop-engineering.html)、[本地编码 Agent](../ch09/038-coding-agent.html) 等方向共享同一个判断：单模型能力不再是瓶颈，分工、交接与组织方式才是决定产出的变量。
+文章把 Dynamic Workflows（Opus 4.8）与扣子 3.0 放在一起对比：前者用脚本编排上百个子 Agent，追求快和规模；后者强调"人 + 云 Agent + 本地 Agent 同一项目"，像带小团队一样 @ 点名接力。分歧的本质是编排哲学——中心化脚本调度，还是人机混合的自组织协作。作者倾向后者："与其干等一个什么都会的万能 AI，不如现在就带一支各有专长、@一下就接力上的小队。"这与 [多智能体协作循环](../ch04/349-loop-engineering.html)、[本地编码 Agent](../ch09/038-coding-agent.html) 等方向共享同一个判断：单模型能力不再是瓶颈，分工、交接与组织方式才是决定产出的变量。
 
 ## 实践启示
 
@@ -53,8 +55,8 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 - [本地编码 Agent 的使用实践](../ch09/038-coding-agent.html)
 - [Claude 做方案，Codex 写代码：多模型协作交接](339-claude.html)
-- [AI 军团式多智能体协作循环](../ch04/348-loop-engineering.html)
-- [Strands 多智能体框架](../ch04/295-hands-free-first-notice-of-loss-using-strands-agents-and-am.html)
+- [AI 军团式多智能体协作循环](../ch04/349-loop-engineering.html)
+- [Strands 多智能体框架](../ch04/296-hands-free-first-notice-of-loss-using-strands-agents-and-am.html)
 - [OpenClaw 多智能体团队搭建](../ch04/176-openclaw.html)
 - [Claude Code 源码核心机制](../ch03/057-claude-code.html)
 - [Harness 工程](../ch05/057-harness-engineering.html)

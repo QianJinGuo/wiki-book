@@ -1,5 +1,7 @@
 # HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS
 
+## Ch09.030 HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS
+
 > 📊 Level ⭐⭐ | 13.9KB | `entities/http2-hpack-bomb-codex-ai-discovery-32gb-dos.md`
 
 # HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS

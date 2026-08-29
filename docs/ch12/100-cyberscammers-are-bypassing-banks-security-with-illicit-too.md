@@ -1,5 +1,7 @@
 # Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram
 
+## Ch12.100 Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram
+
 > 📊 Level ⭐⭐ | 2.4KB | `entities/2026-04-15.md`
 
 # Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram
@@ -28,7 +30,7 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch04/176-openclaw.html)
 

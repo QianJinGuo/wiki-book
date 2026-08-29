@@ -1,5 +1,7 @@
 # Bleeding Llama：Ollama 未授权内存泄漏漏洞
 
+## Ch12.012 Bleeding Llama：Ollama 未授权内存泄漏漏洞
+
 > 📊 Level ⭐⭐ | 20.6KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)

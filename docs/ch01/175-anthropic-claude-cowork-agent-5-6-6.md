@@ -1,5 +1,7 @@
 # Anthropic Claude Cowork 知识工作 Agent 任务边界 — 5 筛选信号 + 6 阶段工作流 + 6 企业控制点
 
+## Ch01.175 Anthropic Claude Cowork 知识工作 Agent 任务边界 — 5 筛选信号 + 6 阶段工作流 + 6 企业控制点
+
 > 📊 Level ⭐⭐ | 18.0KB | `entities/anthropic-claude-cowork-task-boundary-5-signals-6-stages.md`
 
 # Anthropic Claude Cowork 知识工作 Agent 任务边界

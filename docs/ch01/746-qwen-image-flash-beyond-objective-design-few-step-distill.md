@@ -1,5 +1,7 @@
 # Qwen-Image-Flash: Beyond Objective Design — Few-step Distillation Training Recipe
 
+## Ch01.746 Qwen-Image-Flash: Beyond Objective Design — Few-step Distillation Training Recipe
+
 > 📊 Level ⭐⭐⭐ | 13.1KB | `entities/qwen-image-flash-beyond-objective-design.md`
 
 # Qwen-Image-Flash: Beyond Objective Design
@@ -72,7 +74,7 @@ The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** ap
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Bonsai Image 4B 1 Bit Ternary](../ch04/135-ai.html)
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](448-llm.html)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/270-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/289-agentrun.html)
 - [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
 
 ## 关键引用

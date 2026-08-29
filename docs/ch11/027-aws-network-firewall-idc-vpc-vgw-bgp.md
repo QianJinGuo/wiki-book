@@ -1,5 +1,7 @@
 # AWS Network Firewall 审查 IDC-VPC 流量：VGW 架构 + BGP 路由传播实验
 
+## Ch11.027 AWS Network Firewall 审查 IDC-VPC 流量：VGW 架构 + BGP 路由传播实验
+
 > 📊 Level ⭐⭐ | 14.9KB | `entities/aws-network-firewall-vgw-bgp-traffic-inspection.md`
 
 > [!abstract]

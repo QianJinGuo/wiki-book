@@ -1,5 +1,7 @@
 # model half-life
 
+## Ch01.556 model half-life
+
 > 📊 Level ⭐⭐ | 5.7KB | `entities/model-half-life-aifoc.md`
 
 ## 摘要

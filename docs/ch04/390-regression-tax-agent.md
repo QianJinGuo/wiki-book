@@ -1,5 +1,7 @@
 # Regression Tax: 技能包导致 Agent 性能退化的系统性分析
 
+## Ch04.390 Regression Tax: 技能包导致 Agent 性能退化的系统性分析
+
 > 📊 Level ⭐⭐ | 4.5KB | `entities/regression-tax-skills-hurt-llm-agents.md`
 
 # Regression Tax: 技能包导致 Agent 性能退化的系统性分析

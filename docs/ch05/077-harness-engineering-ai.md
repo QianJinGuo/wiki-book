@@ -1,6 +1,8 @@
 # Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
 
-> 📊 Level ⭐⭐⭐ | 62.1KB | `entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md`
+## Ch05.077 Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
+
+> 📊 Level ⭐⭐⭐ | 62.3KB | `entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md`
 
 [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md)
 
@@ -373,7 +375,7 @@ AI Coding 不是"让 AI 替你写代码"，而是重新  定义  人与 AI 协�
 **第一阶段（会用）的核心是建立基础能力**。全员掌握全流程、对抗式 CR 和安全规则。这个阶段的目标是让团队成员能够稳定地使用 AI Coding 工具，而不是追求效率提升。
 **第二阶段（会建）的核心是沉淀团队知识**。骨干成员开始编写团队专属 Skill，通过 A/B 实验验证效果。这个阶段的目标是将个人经验转化为可复用的团队资产。
 **第三阶段（会进化）的核心是实现自我迭代**。迈向 Harness 自动化，推动跨团队知识共享，构建 AI 协作飞轮。这个阶段的目标是让系统本身具备持续改进的能力，而不是依赖个体推动。
-> [!contradiction] 参见  持相反观点，认为 AI Coding 的核心瓶颈不在工程体系而在模型能力本身。
+> [!contradiction] 参见 [Harness Engineering 规范主页·中央矛盾](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering.md) ——反方观点（AI Coding 的核心瓶颈不在工程体系而在模型能力本身）长期无独立页面，现由规范主页收留双方论据并持续跟踪裁决。
 
 ## 相关实体
 - [Harness Engineering Alibaba Java Case Study](057-harness-engineering.html)

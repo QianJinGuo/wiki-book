@@ -1,5 +1,7 @@
 # DeepSeek-V4深度拆解：一篇论文同时做了五件大事
 
+## Ch01.456 DeepSeek-V4深度拆解：一篇论文同时做了五件大事
+
 > 📊 Level ⭐⭐ | 7.3KB | `entities/deepseek-v4.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)

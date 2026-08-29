@@ -1,5 +1,7 @@
 # Self-Evolving Agents 系统性综述（厦门大学等多机构联合）
 
+## Ch04.177 Self-Evolving Agents 系统性综述（厦门大学等多机构联合）
+
 > 📊 Level ⭐⭐ | 11.0KB | `entities/self-evolving-agents-survey-papersagent.md`
 
 [Self Evolving Agents Survey Papersagent](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-evolving-agents-survey-papersagent.md)

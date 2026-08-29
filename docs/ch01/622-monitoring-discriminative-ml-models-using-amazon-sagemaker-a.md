@@ -1,5 +1,7 @@
 # Monitoring discriminative ML models using Amazon SageMaker AI with MLflow
 
+## Ch01.622 Monitoring discriminative ML models using Amazon SageMaker AI with MLflow
+
 > 📊 Level ⭐⭐ | 4.0KB | `entities/monitoring-discriminative-ml-models-using-amazon-sagemaker-a.md`
 
 # Monitoring discriminative ML models using Amazon SageMaker AI with MLflow

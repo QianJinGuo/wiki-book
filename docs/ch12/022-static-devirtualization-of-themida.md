@@ -1,5 +1,7 @@
 # Static Devirtualization of Themida
 
+## Ch12.022 Static Devirtualization of Themida
+
 > 📊 Level ⭐⭐ | 13.1KB | `entities/2026.md`
 
 # Static Devirtualization of Themida

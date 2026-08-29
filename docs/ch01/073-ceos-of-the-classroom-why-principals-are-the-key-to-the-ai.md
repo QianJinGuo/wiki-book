@@ -1,5 +1,7 @@
 # CEOs of the classroom: Why principals are the key to the AI era
 
+## Ch01.073 CEOs of the classroom: Why principals are the key to the AI era
+
 > 📊 Level ⭐ | 7.2KB | `entities/principals-ai-education.md`
 
 # CEOs of the classroom: Why principals are the key to the AI era

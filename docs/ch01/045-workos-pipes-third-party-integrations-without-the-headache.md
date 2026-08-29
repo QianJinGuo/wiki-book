@@ -1,5 +1,7 @@
 # WorkOS Pipes: Third-party integrations without the headache
 
+## Ch01.045 WorkOS Pipes: Third-party integrations without the headache
+
 > 📊 Level ⭐ | 8.0KB | `entities/workos-pipes-third-party-integrations.md`
 
 ## 核心要点

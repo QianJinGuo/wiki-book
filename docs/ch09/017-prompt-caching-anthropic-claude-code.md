@@ -1,5 +1,7 @@
 # Prompt Caching 工程实践 — Anthropic Claude Code 经验总结
 
+## Ch09.017 Prompt Caching 工程实践 — Anthropic Claude Code 经验总结
+
 > 📊 Level ⭐⭐ | 16.8KB | `entities/anthropic-prompt-caching-claude-code.md`
 
 ## 核心约束：Prompt Caching = 前缀匹配

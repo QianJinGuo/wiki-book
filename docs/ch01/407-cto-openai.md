@@ -1,5 +1,7 @@
 # 奥特曼最险一战：前女CTO当庭翻脸，OpenAI权斗彻底打到台前
 
+## Ch01.407 奥特曼最险一战：前女CTO当庭翻脸，OpenAI权斗彻底打到台前
+
 > 📊 Level ⭐⭐ | 8.1KB | `entities/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md`
 
 ## 核心要点
@@ -32,7 +34,7 @@
 - [Yann Dubois Openai Post Training Matt Turck Interview](316-openai.html)
 - [Codex Sites Cloudflare Worker One Click Deploy Geekhome](391-codex.html)
 - [Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md)
-- [Gpt 5 It Just Does Stuff](180-gpt-5-it-just-does-stuff.html)
+- [Gpt 5 It Just Does Stuff](179-gpt-5-it-just-does-stuff.html)
 - [Three Years From Gpt 3 To Gemini 3](193-three-years-from-gpt-3-to-gemini-3.html)
 - [Openai Symphony Codex Orchestration Linear Control Plane Tutuai](316-openai.html)
 - [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](316-openai.html)

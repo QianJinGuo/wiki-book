@@ -1,5 +1,7 @@
 # Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
 
+## Ch09.005 Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
+
 > 📊 Level ⭐⭐ | 30.9KB | `entities/claude-code-large-codebase-harness-configuration.md`
 
 # Claude Code 大型代码库套具配置
@@ -249,7 +251,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [A Guide To Which Ai To Use In The Agentic Era](../ch01/439-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
 - [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](../ch03/004-agent.html)
 - [Cloud Agent Development Environments](../ch03/004-agent.html)
-- [Volcengine Data Agent Product Overview](../ch04/291-data-agent.html)
+- [Volcengine Data Agent Product Overview](../ch04/292-data-agent.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/423-ai-agent.html)
 - [Emergent Collaboration Ai High Quality Decision Agent Room](../ch04/449-agent-room.html)
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](../ch03/004-agent.html)
@@ -264,19 +266,19 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](../ch03/004-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 - [Kimi Work 300 Agent Cluster Yin John Agi Hunt](../ch03/004-agent.html)
-- [Your First Ai Agent Should Do One Thing Badly](../ch04/298-your-first-ai-agent-should-do-one-thing-badly.html)
-- [A Missing Layer In Agentic Systems](../ch04/275-a-missing-layer-in-agentic-systems.html)
+- [Your First Ai Agent Should Do One Thing Badly](../ch04/299-your-first-ai-agent-should-do-one-thing-badly.html)
+- [A Missing Layer In Agentic Systems](../ch04/276-a-missing-layer-in-agentic-systems.html)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](../ch04/005-announcing-genkit-middleware-intercept-extend-and-harden.html)
 - [Hermes Agent Soul Md Personality Shugex](../ch04/161-hermes-agent.html)
 - [Lessons From 2 Billion Agentic Workflows](../ch03/004-agent.html)
 - [Local Vs Cloud Agent Onsite Context Debate Xingxiaozhao](../ch03/004-agent.html)
-- [Volcengine Data Agent Marketing Strategy Agent](../ch04/291-data-agent.html)
+- [Volcengine Data Agent Marketing Strategy Agent](../ch04/292-data-agent.html)
 - [Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486](../ch03/004-agent.html)
 - [Hermes Agent Self Evolution 源码解析](../ch04/161-hermes-agent.html)
-- [Real Ai Agents And Real Work](../ch04/185-real-ai-agents-and-real-work.html)
-- [Volcengine Data Agent Intelligent Query Agent](../ch04/291-data-agent.html)
+- [Real Ai Agents And Real Work](../ch04/183-real-ai-agents-and-real-work.html)
+- [Volcengine Data Agent Intelligent Query Agent](../ch04/292-data-agent.html)
 - [Hermes Agent Tool System Analysis](../ch04/161-hermes-agent.html)
-- [How To Build Agents Where Data Already Lives](../ch04/343-how-to-build-agents-where-data-already-lives.html)
+- [How To Build Agents Where Data Already Lives](../ch04/344-how-to-build-agents-where-data-already-lives.html)
 - [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](../ch04/423-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 

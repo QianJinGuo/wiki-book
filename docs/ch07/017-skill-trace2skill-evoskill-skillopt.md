@@ -1,5 +1,7 @@
 # Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
 
+## Ch07.017 Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
+
 > 📊 Level ⭐⭐ | 12.6KB | `entities/skill-self-evolution-three-approaches.md`
 
 # Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
@@ -139,10 +141,10 @@ SkillEvo 从**进化梯度的持续供给**角度补全自进化路线（腾讯�
 ## 相关实体
 
 - [SkillOpt: 像训练神经网络一样训练 Skill](../ch05/028-skillopt.html)
-- [Agent Skills 综合调查](../ch04/300-agent-skills.html)
+- [Agent Skills 综合调查](../ch04/301-agent-skills.html)
 - [Hermes Agent 自进化](../ch04/161-hermes-agent.html)
 - [Agent 自改进六机制](../ch03/004-agent.html)
-- [阿里 Agentic Cloud](../ch04/271-agentic-cloud.html)
+- [阿里 Agentic Cloud](../ch04/272-agentic-cloud.html)
 - [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
 
 ---

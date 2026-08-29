@@ -1,5 +1,7 @@
 # Archera • Insured cloud commitments for AWS, Azure, and Google
 
+## Ch11.155 Archera • Insured cloud commitments for AWS, Azure, and Google
+
 > 📊 Level ⭐⭐ | 6.6KB | `entities/3rdfsmp.md`
 
 ## 核心要点
@@ -83,7 +85,7 @@ Archera 的保险模式本质上利用了云消费的可预测性特征。大部
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
 
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](163-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
 
 ---

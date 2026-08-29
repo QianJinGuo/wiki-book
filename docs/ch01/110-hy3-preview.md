@@ -1,5 +1,7 @@
 # 腾讯混元Hy3-preview发布
 
+## Ch01.110 腾讯混元Hy3-preview发布
+
 > 📊 Level ⭐ | 4.9KB | `entities/tencent-hunyuan-hy3-preview-open-source-agent.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)
@@ -16,7 +18,7 @@
 
 ## 相关实体
 - [Cline releases open-source agent runtime SDK](../ch03/004-agent.html)
-- [Cline releases open-source agent runtime SDK](../ch04/345-cline-releases-open-source-agent-runtime-sdk.html)
+- [Cline releases open-source agent runtime SDK](../ch04/346-cline-releases-open-source-agent-runtime-sdk.html)
 
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)
 

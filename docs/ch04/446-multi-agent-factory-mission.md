@@ -1,5 +1,7 @@
 # Multi-Agent 架构：Factory Mission 系统的方法论
 
+## Ch04.446 Multi-Agent 架构：Factory Mission 系统的方法论
+
 > 📊 Level ⭐⭐⭐ | 15.3KB | `entities/multi-agent-mission-factory-luke-aiengineer.md`
 
 # Multi-Agent 架构：Factory Mission 系统的方法论
@@ -79,7 +81,7 @@ Luke 的模型选择策略（"Droid Whispering"）遵循**角色 × 模型能力
 
 **更深一层**：刻意用**不同模型厂商**做验证，避免同一份训练数据带来的同向偏见。Luke 直接点出："你被某一家模型锁定，这个家族最弱的能力就是你系统的天花板。"
 
-这与 [AgentOps on Bedrock](193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
+这与 [AgentOps on Bedrock](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 中关于"多模型编排降低单点故障"的设计哲学一致——异构性是鲁棒性的来源。
 
 ### 6. 声明式编排：用 Prompt 写逻辑而非代码
 
@@ -147,7 +149,7 @@ Luke 公开的 Mission 实战数字值得仔细解读：
 - [Claude Managed Agents 企业自托管](../ch01/294-claude-managed-agents.html)——Multi-Agent 的企业部署形态
 - [Agent 记忆系统工程实践](../ch03/004-agent.html)——过程资产积累的方向
 - [Harness 状态边界与失败闭环](../ch05/008-harness.html)——边界即文档的工程哲学
-- [AgentOps on Bedrock](193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)——多模型编排降低单点故障
+- [AgentOps on Bedrock](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)——多模型编排降低单点故障
 
 ---
 

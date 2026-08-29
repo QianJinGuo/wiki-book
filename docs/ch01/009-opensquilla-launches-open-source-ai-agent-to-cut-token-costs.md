@@ -1,5 +1,7 @@
 # OpenSquilla launches open-source AI agent to cut token costs
 
+## Ch01.009 OpenSquilla launches open-source AI agent to cut token costs
+
 > 📊 Level ⭐ | 11.5KB | `entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md`
 
 ## 核心要点
@@ -14,11 +16,11 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Cline releases open-source agent runtime SDK](../ch04/270-agentrun.html)
+- [Cline releases open-source agent runtime SDK](../ch04/289-agentrun.html)
 - [Spring AI AI Agent Demo](../ch03/004-agent.html)
 - [SkillX — 层次化技能知识库](../ch07/054-skill.html)
 
-- [intercom, now called fin, launches an ai agent whose only jo](../ch04/305-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
+- [intercom, now called fin, launches an ai agent whose only jo](../ch04/306-intercom-now-called-fin-launches-an-ai-agent-whose-only-jo.html)
 
 ## 深度分析
 ### 核心问题诊断：为什么大多数 Agent 部署在浪费 Token？

@@ -1,5 +1,7 @@
 # CLI系列④·选型CLI、MCP还是API？
 
+## Ch07.060 CLI系列④·选型CLI、MCP还是API？
+
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cli-mcp-sdk-agent-tool-selection.md`
 
 # CLI系列④·选型CLI、MCP还是API？
@@ -11,7 +13,7 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 
 ## 相关实体
 - [Cli Mcp Skill Architecture Decision Vibecoder](054-skill.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/270-agentrun.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/289-agentrun.html)
 - [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/423-ai-agent.html)
 - [Pi Mono Github](../ch01/471-github.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/135-amazon-bedrock.html)

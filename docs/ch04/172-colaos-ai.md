@@ -1,5 +1,7 @@
 # ColaOS 与 AI 原生组织
 
+## Ch04.172 ColaOS 与 AI 原生组织
+
 > 📊 Level ⭐⭐ | 11.2KB | `entities/colaos-listenhub-agency-native-organization-juzi.md`
 
 # ColaOS 与 AI 原生组织

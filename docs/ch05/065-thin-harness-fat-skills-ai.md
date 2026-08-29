@@ -1,5 +1,7 @@
 # Thin Harness, Fat Skills：AI工程架构的本质
 
+## Ch05.065 Thin Harness, Fat Skills：AI工程架构的本质
+
 > 📊 Level ⭐⭐ | 5.5KB | `entities/thin-harness-fat-skills.md`
 
 ## 核心理念：Latent vs Deterministic 空间分离

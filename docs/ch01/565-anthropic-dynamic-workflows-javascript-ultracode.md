@@ -1,5 +1,7 @@
 # Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode 模式 + /deep-research + 保存复用
 
+## Ch01.565 Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode 模式 + /deep-research + 保存复用
+
 > 📊 Level ⭐⭐ | 5.5KB | `entities/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md`
 
 # Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode 模式 + /deep-research + 保存复用

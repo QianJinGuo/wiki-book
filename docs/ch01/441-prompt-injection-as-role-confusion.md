@@ -1,5 +1,7 @@
 # Prompt Injection as Role Confusion
 
+## Ch01.441 Prompt Injection as Role Confusion
+
 > 📊 Level ⭐⭐ | 7.6KB | `entities/role-confusion-github-io.md`
 
 # Prompt Injection as Role Confusion

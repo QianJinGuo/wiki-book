@@ -1,5 +1,7 @@
 # Claude Code 七种自定义方法：官方全景指南
 
+## Ch09.049 Claude Code 七种自定义方法：官方全景指南
+
 > 📊 Level ⭐⭐ | 10.6KB | `entities/claude-code-seven-customization-methods-anthropic-official.md`
 
 # Claude Code 七种自定义方法：官方全景指南

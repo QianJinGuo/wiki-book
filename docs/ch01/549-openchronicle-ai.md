@@ -1,5 +1,7 @@
 # OpenChronicle：把AI记忆变成可复用的基础设施
 
+## Ch01.549 OpenChronicle：把AI记忆变成可复用的基础设施
+
 > 📊 Level ⭐⭐ | 5.8KB | `entities/openchronicle-opensource-memory-layer.md`
 
 # OpenChronicle：把AI记忆变成可复用的基础设施
@@ -12,7 +14,7 @@ GitHub: https://github.com/Einsia/OpenChronicle
 - [Agent Self Improvement Six Mechanisms](../ch03/004-agent.html)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](167-agi.html)
 - [Vayne Lw Personal Agent System](../ch03/004-agent.html)
-- [Chatgpt Memory](286-chatgpt-memory.html)
+- [Chatgpt Memory](287-chatgpt-memory.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07/054-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openchronicle-opensource-memory-layer.md)

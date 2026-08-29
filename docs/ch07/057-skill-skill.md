@@ -1,5 +1,7 @@
 # 龙虾之父教你省钱：开源Skill给你的Skill减肥
 
+## Ch07.057 龙虾之父教你省钱：开源Skill给你的Skill减肥
+
 > 📊 Level ⭐⭐ | 5.8KB | `entities/steipete-skill-cleaner-liangzide.md`
 
 # 龙虾之父教你省钱：开源Skill给你的Skill减肥

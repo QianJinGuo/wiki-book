@@ -1,5 +1,7 @@
 # Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview
 
+## Ch01.218 Vibe Coding and Agentic Engineering Convergence: Simon Willison Interview
+
 > 📊 Level ⭐⭐ | 14.6KB | `entities/vibe-coding-agentic-engineering-convergence-simon-willison.md`
 
 > Source: Heavybit High Leverage Podcast Ep. 9, "The AI Coding Paradigm Shift with Simon Willison". Compiled by InfoQ 宇琪/Tina, 2026-05-19. Original: https://www.heavybit.com/library/podcasts/high-leverage/ep-9-the-ai-coding-paradigm-shift-with-simon-willison

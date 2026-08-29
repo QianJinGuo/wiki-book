@@ -1,5 +1,7 @@
 # Tokenomics: the 62.5-minute rule for Claude's cache
 
+## Ch01.344 Tokenomics: the 62.5-minute rule for Claude's cache
+
 > 📊 Level ⭐⭐ | 9.5KB | `entities/tokenomics-the-625-minute-rule-for-claudes-cache.md`
 
 ## 核心结论

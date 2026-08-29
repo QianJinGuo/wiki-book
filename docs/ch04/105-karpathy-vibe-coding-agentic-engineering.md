@@ -1,5 +1,7 @@
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
+## Ch04.105 Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
+
 > 📊 Level ⭐⭐ | 14.5KB | `entities/karpathy-vibe-coding-to-agentic-engineering.md`
 
 ## 核心论点
@@ -83,7 +85,7 @@ Karpathy 引用的那句话是本次访谈最值得反复咀嚼的命题：
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch03/004-agent.html)
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox Transparent](../ch09/038-coding-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](251-ai-coding-agent.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](252-ai-coding-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

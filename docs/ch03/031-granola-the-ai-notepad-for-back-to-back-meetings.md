@@ -1,5 +1,7 @@
 # Granola — The AI Notepad for back-to-back meetings
 
+## Ch03.031 Granola — The AI Notepad for back-to-back meetings
+
 > 📊 Level ⭐ | 3.8KB | `entities/granola-the-ai-notepad-for-backtoback-meetings.md`
 
 ## 核心要点

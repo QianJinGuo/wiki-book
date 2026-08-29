@@ -1,5 +1,7 @@
 # 让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义Self-TaughtRLVR
 
+## Ch01.714 让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义Self-TaughtRLVR
+
 > 📊 Level ⭐⭐ | 2.3KB | `entities/self-taught-rlvr-jd-cii-2026.md`
 
 # 让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义Self-TaughtRLVR

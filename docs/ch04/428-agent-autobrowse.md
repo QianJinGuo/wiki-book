@@ -1,5 +1,7 @@
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 
+## Ch04.428 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
+
 > 📊 Level ⭐⭐ | 2.7KB | `entities/autobrowse-browser-agent-persistent-skills-sense-ai.md`
 
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
@@ -28,7 +30,7 @@ Browserbase 的 Kyle Jeong 提出的概念。
 
 ### 关联实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](176-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](176-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](176-openclaw.html)

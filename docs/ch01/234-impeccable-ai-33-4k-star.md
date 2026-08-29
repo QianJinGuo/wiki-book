@@ -1,5 +1,7 @@
 # Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析
 
+## Ch01.234 Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析
+
 > 📊 Level ⭐⭐ | 13.7KB | `entities/impeccable-frontend-design-skill-harness-vibecoder.md`
 
 # Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析
@@ -142,8 +144,8 @@ Live 模式的价值是把"AI 输出"从单向的"修改文件"变成双向的"�
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/054-skill.html)
-- [Agent Skill Writing Evaluation](283-agent-skill.html)
-- [Agent Skill Writing](283-agent-skill.html)
+- [Agent Skill Writing Evaluation](284-agent-skill.html)
+- [Agent Skill Writing](284-agent-skill.html)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/008-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)

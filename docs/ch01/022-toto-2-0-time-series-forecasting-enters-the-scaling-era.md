@@ -1,5 +1,7 @@
 # Toto 2.0: Time series forecasting enters the scaling era
 
+## Ch01.022 Toto 2.0: Time series forecasting enters the scaling era
+
 > 📊 Level ⭐ | 9.3KB | `entities/toto-2.md`
 
 ## 核心要点

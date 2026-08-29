@@ -1,5 +1,7 @@
 # Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 
+## Ch05.003 Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
+
 > 📊 Level ⭐⭐ | 37.1KB | `entities/harness-engineering.md`
 
 ## 核心命题
@@ -147,7 +149,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
 - [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
 - [Harness Engineering Theory To Practice Helen](057-harness-engineering.html)
-- [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01/215-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
+- [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01/214-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)

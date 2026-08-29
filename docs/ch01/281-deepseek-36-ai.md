@@ -1,5 +1,7 @@
 # 所有实验室都怕字节，所有人都在夸DeepSeek！美国研究员36小时中国AI行
 
+## Ch01.281 所有实验室都怕字节，所有人都在夸DeepSeek！美国研究员36小时中国AI行
+
 > 📊 Level ⭐⭐ | 11.7KB | `entities/chinese-ai-lab-insights-nathan.md`
 
 ## 核心要点

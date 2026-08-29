@@ -1,5 +1,7 @@
 # SkillsUI
 
+## Ch03.073 SkillsUI
+
 > 📊 Level ⭐⭐ | 7.4KB | `entities/skillsui.md`
 
 ## Overview

@@ -1,5 +1,7 @@
 # 你不知道的 Agent：原理、架构与工程实践
 
+## Ch01.478 你不知道的 Agent：原理、架构与工程实践
+
 > 📊 Level ⭐⭐ | 7.0KB | `entities/你不知道的-agent原理架构与工程实践.md`
 
 ## 核心要点
@@ -26,7 +28,7 @@
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/115-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](288-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/300-agent-skills.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/301-agent-skills.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/054-skill.html)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/057-claude-code.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/057-harness-engineering.html)
@@ -38,7 +40,7 @@
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [吴恩达：AI 将最先杀死前端](../ch04/135-ai.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/300-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/301-agent-skills.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch04/135-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](https://github.com/QianJinGuo/wiki/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)

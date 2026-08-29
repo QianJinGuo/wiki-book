@@ -1,5 +1,7 @@
 # 使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？
 
+## Ch04.233 使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？
+
 > 📊 Level ⭐⭐ | 9.2KB | `entities/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md`
 
 ## 核心要点
@@ -51,7 +53,7 @@ Anthropic Skills 的渐进式加载策略在此场景中展现了独特的优势
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/448-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/008-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](270-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](289-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/054-skill.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)

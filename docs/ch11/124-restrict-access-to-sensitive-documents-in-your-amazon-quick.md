@@ -1,5 +1,7 @@
 # Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3
 
+## Ch11.124 Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3
+
 > 📊 Level ⭐⭐ | 7.9KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-quick-knowledge-bases-for-.md`
 
 ## 核心要点

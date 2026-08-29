@@ -1,5 +1,7 @@
 # Wi-Fi 8 is closer than you think
 
+## Ch03.035 Wi-Fi 8 is closer than you think
+
 > 📊 Level ⭐⭐ | 19.8KB | `entities/wi-fi-8-is-closer-than-you-think.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-is-closer-than-you-think.md)
@@ -205,7 +207,7 @@ SMD 漫游是 Wi-Fi 8 对企业网络体验影响最大的功能，但支持程�
 
 ---
 
-**关联概念**：[Wi-Fi 8 技术解析](046-wi-fi-8.html) | [Wi-Fi 8 详情](035-wi-fi-8-is-closer-than-you-think.html) | [Wi-Fi 8 NetworkWorld](035-wi-fi-8-is-closer-than-you-think.html)
+**关联概念**：[Wi-Fi 8 技术解析](047-wi-fi-8.html) | [Wi-Fi 8 详情](035-wi-fi-8-is-closer-than-you-think.html) | [Wi-Fi 8 NetworkWorld](035-wi-fi-8-is-closer-than-you-think.html)
 
 ---
 

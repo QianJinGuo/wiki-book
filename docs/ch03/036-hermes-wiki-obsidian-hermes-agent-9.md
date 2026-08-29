@@ -1,5 +1,7 @@
 # Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法
 
+## Ch03.036 Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法
+
 > 📊 Level ⭐⭐ | 19.0KB | `entities/hermes-wiki-9-step-auto-growing-knowledge-network.md`
 
 ## 概述
@@ -234,7 +236,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [Hermes Agent 自进化机制源码解析](../ch04/161-hermes-agent.html)
   - [Hermes Agent Memory System vs OpenClaw](../ch04/161-hermes-agent.html)
 - **同上下文工程 / 记忆架构**：
-  - [AI Coding Agent 记忆系统](../ch04/251-ai-coding-agent.html)
+  - [AI Coding Agent 记忆系统](../ch04/252-ai-coding-agent.html)
   - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
   - [企业 AI 记忆 substrate 三层架构](../ch04/135-ai.html)
 

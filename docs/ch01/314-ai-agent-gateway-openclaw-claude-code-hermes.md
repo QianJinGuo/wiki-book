@@ -1,12 +1,14 @@
 # AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比
 
+## Ch01.314 AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比
+
 > 📊 Level ⭐⭐ | 10.5KB | `entities/gateway-architecture-openclaw-claude-hermes-comparison.md`
 
 ## 评分
 - **价值**：8/10 — 三框架 Gateway 设计哲学横向对比，视角独特，技术细节准确（端口号/bindings 配置/适配器数量）
 - **置信度**：8/10 — 公众号原创，源码级细节，与公开文档一致
 - **乘积**：64 — strong ★★★★
-- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04/346-deerflow-hermes-openclaw.html) 互补（整体选型 vs Gateway 专深）
+- **策略对齐**：与 [DeerFlow vs Hermes vs OpenClaw](../ch04/347-deerflow-hermes-openclaw.html) 互补（整体选型 vs Gateway 专深）
 
 ## 与现有 wiki 的关系
 - **互补**：现有  侧重整体选型（三步选型法+效率五维表格），本文聚焦 **Gateway 单一架构层次的三框架深对比**

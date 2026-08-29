@@ -1,5 +1,7 @@
 # DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了
 
+## Ch01.724 DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了
+
 > 📊 Level ⭐⭐ | 2.2KB | `entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md`
 
 # DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了
@@ -25,7 +27,7 @@ DeepSeek 研究员陈德里（Deli Chen）和 AI 合作的第二篇论文，聚�
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 
 ## 相关实体

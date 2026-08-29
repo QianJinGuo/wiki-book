@@ -1,5 +1,7 @@
 # AWS DevOps Agent 实战：云网络故障自主调查与修复建议
 
+## Ch04.214 AWS DevOps Agent 实战：云网络故障自主调查与修复建议
+
 > 📊 Level ⭐⭐ | 9.9KB | `entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md`
 
 ## 核心要点
@@ -57,7 +59,7 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
 - [AI tool poisoning exposes a major flaw in enterprise agent security](225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
-- [Agent orchestration](360-agent-orchestration.html)
+- [Agent orchestration](241-agent-orchestration.html)
 - [AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](../ch07/041-aws-devops-agent-mcp-server.html)
 - [AWS Reinvent Game Demo 2024-25](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinvent-game-demo-2024-25.md)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)

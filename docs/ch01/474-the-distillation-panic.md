@@ -1,5 +1,7 @@
 # The distillation panic
 
+## Ch01.474 The distillation panic
+
 > 📊 Level ⭐⭐ | 7.1KB | `entities/interconnects-the-distillation-panic.md`
 
 # The distillation panic

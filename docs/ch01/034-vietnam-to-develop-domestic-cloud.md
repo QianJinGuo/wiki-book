@@ -1,5 +1,7 @@
 # Vietnam to develop domestic cloud
 
+## Ch01.034 Vietnam to develop domestic cloud
+
 > 📊 Level ⭐ | 8.6KB | `entities/vietnamtodevelopdomesticcloud.md`
 
 # Vietnam to develop domestic cloud
@@ -52,9 +54,9 @@ Decision 808 最值得玩味的不是目标本身，而是它暴露的现状：�
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [Vietnam domestic cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
-- [Vietnam to develop domestic cloud](../ch11/141-vietnam-to-develop-domestic-cloud.html)
-- [Vietnam ... government workloads](../ch11/163-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
-- [Vietnam ... government workloads（完整 slug）](../ch11/163-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam to develop domestic cloud](../ch11/142-vietnam-to-develop-domestic-cloud.html)
+- [Vietnam ... government workloads](../ch11/162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam ... government workloads（完整 slug）](../ch11/162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Sovereign cloud is only possible if you're Chinese or American: Gartner](https://github.com/QianJinGuo/wiki/blob/main/entities/5237660-sovereign-cloud-gartner.md)
 - [Cloud Infrastructure 导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cloud-infrastructure.md)
 - [Security Landscape 导航](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)

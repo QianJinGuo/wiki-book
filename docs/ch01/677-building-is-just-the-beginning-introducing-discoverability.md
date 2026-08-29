@@ -1,5 +1,7 @@
 # Building is just the beginning: Introducing Discoverability | Lovable
 
+## Ch01.677 Building is just the beginning: Introducing Discoverability | Lovable
+
 > 📊 Level ⭐⭐ | 2.7KB | `entities/lovable-building-is-just-the-beginning-introducing-discoverability.md`
 
 # Building is just the beginning: Introducing Discoverability | Lovable

@@ -1,5 +1,7 @@
 # ARA — Agent-Native Research Artifact（37 作者，arXiv 2604.24658，PDF 范式终结提案）
 
+## Ch04.120 ARA — Agent-Native Research Artifact（37 作者，arXiv 2604.24658，PDF 范式终结提案）
+
 > 📊 Level ⭐⭐ | 13.5KB | `entities/ara-agent-native-research-artifact-37authors.md`
 
 # ARA — Agent-Native Research Artifact
@@ -50,7 +52,7 @@ ARA 类工作推动的是整个研究工具链的演进——从文献搜索到�
 - [Kimi K2 Tidb Agent Database Huangdongxu 20260513](../ch03/004-agent.html)
 - [Anthropic Multi Agent Research System](../ch03/004-agent.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/018-ai-native.html)
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](270-agentrun.html)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](289-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ara-agent-native-research-artifact-37authors.md)
 

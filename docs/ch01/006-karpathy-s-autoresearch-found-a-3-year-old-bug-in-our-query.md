@@ -1,5 +1,7 @@
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
 
+## Ch01.006 Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
+
 > 📊 Level ⭐ | 14.3KB | `entities/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md`
 
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
@@ -84,7 +86,7 @@ PostHog 正在将 hackathon 手工喂入模式升级为全自动 pipeline：① 
 
 ## 相关实体
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](038-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/270-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/289-agentrun.html)
 - [Running An Ai Native Engineering Org](044-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](123-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)

@@ -1,5 +1,7 @@
 # Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南
 
+## Ch01.245 Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南
+
 > 📊 Level ⭐⭐ | 13.2KB | `entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
@@ -81,7 +83,7 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [claude managed agents](294-claude-managed-agents.html)
 - [Claude Managed Agents 开发者指南](294-claude-managed-agents.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/300-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/301-agent-skills.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/004-agent.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch04/135-ai.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
@@ -97,7 +99,7 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch04/161-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/008-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/270-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/289-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/057-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch04/176-openclaw.html)

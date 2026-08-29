@@ -1,5 +1,7 @@
 # From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
 
+## Ch12.004 From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
+
 > 📊 Level ⭐ | 8.8KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
 
 ## 深度分析

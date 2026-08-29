@@ -1,5 +1,7 @@
 # How to Write an Effective Software Design Document
 
+## Ch01.077 How to Write an Effective Software Design Document
+
 > 📊 Level ⭐ | 7.2KB | `entities/excerpts-write-an-effective-design-doc.md`
 
 # How to Write an Effective Software Design Document

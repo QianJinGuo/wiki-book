@@ -1,5 +1,7 @@
 # Claude Code 上下文工程 —— Anthropic 团队的工程实践
 
+## Ch01.488 Claude Code 上下文工程 —— Anthropic 团队的工程实践
+
 > 📊 Level ⭐⭐ | 6.9KB | `entities/claude-code-context-engineering-anthropic-thariq.md`
 
 # Claude Code 上下文工程 —— Anthropic 团队的工程实践

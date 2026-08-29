@@ -1,5 +1,7 @@
 # Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
 
+## Ch07.054 Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
+
 > 📊 Level ⭐⭐ | 5.9KB | `entities/skill-version-comparison-five-principles-winty.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-version-comparison-five-principles-winty.md)
@@ -100,7 +102,7 @@ YAML 结构化模板（关键字段）：
 ## 相关实体
 
 - [Skill 版本管理五大原则](054-skill.html) — 同作者同系列，版本管理侧
-- [Agent Skill 写作评估](../ch01/283-agent-skill.html)
+- [Agent Skill 写作评估](../ch01/284-agent-skill.html)
 - [Harness Engineering](../ch05/057-harness-engineering.html)
 - [Claw-SWE-Bench](../ch05/008-harness.html) — harness 独立评测基准
 - [Agent Eval WalleZhang](../ch03/004-agent.html) — YAML 驱动评估框架

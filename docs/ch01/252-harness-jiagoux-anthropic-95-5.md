@@ -1,5 +1,7 @@
 # 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界
 
+## Ch01.252 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界
+
 > 📊 Level ⭐⭐ | 12.8KB | `entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md`
 
 # 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界
@@ -164,7 +166,7 @@ JiaGouX 建议避开"公司级聊天查数入口"，更小一点反而更稳。�
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/135-ai.html)
 - [Claude Code Dynamic Workflows Jiagoux Architect Perspective](../ch09/069-claude-code-dynamic-workflows.html)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/054-skill.html)
-- [Agent Skill Writing Evaluation](283-agent-skill.html)
+- [Agent Skill Writing Evaluation](284-agent-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)

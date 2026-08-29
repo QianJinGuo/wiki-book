@@ -1,5 +1,7 @@
 # DeepSeek V4是怎么训练出来的？58页论文深入解读
 
+## Ch01.684 DeepSeek V4是怎么训练出来的？58页论文深入解读
+
 > 📊 Level ⭐⭐ | 2.5KB | `entities/deepseek-v4-training-58-page-paper-deep-dive.md`
 
 # DeepSeek V4是怎么训练出来的？58页论文深入解读
@@ -25,7 +27,7 @@ DeepSeek V4是怎么训练出来的？58页论文深入解读 涉及agent领域�
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 
 ## 相关实体
 

@@ -1,5 +1,7 @@
 # How harnesses and post-training close the open-weight bug-finding gap
 
+## Ch01.204 How harnesses and post-training close the open-weight bug-finding gap
+
 > 📊 Level ⭐⭐ | 15.4KB | `entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md`
 
 # How harnesses and post-training close the open-weight bug-finding gap

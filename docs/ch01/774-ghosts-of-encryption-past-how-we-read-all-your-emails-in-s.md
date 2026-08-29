@@ -1,5 +1,7 @@
 # Ghosts of Encryption Past – How we Read All Your Emails in Salesforce Marketing Cloud › Searchlight Cyber
 
+## Ch01.774 Ghosts of Encryption Past – How we Read All Your Emails in Salesforce Marketing Cloud › Searchlight Cyber
+
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/slcyber-io-research-center-ghosts-of-encryption-past-salesforce-exacttarget.md`
 
 ## 深度分析
@@ -15,7 +17,7 @@ Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTar
 ## 相关实体
 - [Detect Ai Agent Traffic](../ch04/423-ai-agent.html)
 - [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
-- [Oz Multi Harness Cloud Agent Orchestration](../ch04/360-agent-orchestration.html)
+- [Oz Multi Harness Cloud Agent Orchestration](../ch04/241-agent-orchestration.html)
 - [Langgraph State Machine Under The Hood](../ch04/165-langgraph.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 

@@ -1,5 +1,7 @@
 # GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究
 
+## Ch12.037 GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究
+
 > 📊 Level ⭐⭐ | 9.7KB | `entities/auditing-gitlab-cicd-kill-chain-black-hills-2026.md`
 
 # GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究

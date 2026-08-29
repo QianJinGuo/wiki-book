@@ -1,5 +1,7 @@
 # LLM-as-a-Verifier: A General-Purpose Verification
 
+## Ch01.297 LLM-as-a-Verifier: A General-Purpose Verification
+
 > 📊 Level ⭐⭐ | 11.0KB | `entities/llm-as-a-verifier-a-general-purpose-verification.md`
 
 # LLM-as-a-Verifier: A General-Purpose Verification

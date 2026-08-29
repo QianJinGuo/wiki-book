@@ -1,5 +1,7 @@
 # Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
 
+## Ch04.091 Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
+
 > 📊 Level ⭐⭐ | 15.5KB | `entities/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md`
 
 # Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
@@ -157,7 +159,7 @@ RAG 里的迭代 ≠ Agent 里的 ReAct 循环：
 - [原文链接](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md)
 - [Agent 记忆系统的工程实践](../ch03/004-agent.html)
 - [Karpathy: 从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [AgentOps: Amazon Bedrock 上的 Agent 运维](193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [AgentOps: Amazon Bedrock 上的 Agent 运维](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - 谷歌研究博客: https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/
 - Gemini Enterprise: https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/cross-corpus-retrieval
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)

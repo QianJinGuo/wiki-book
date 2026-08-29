@@ -1,5 +1,7 @@
 # LLM 自我提升系统综述 — Yang 等 113 页四阶段闭环框架（Zesearch NLP Lab）
 
+## Ch01.740 LLM 自我提升系统综述 — Yang 等 113 页四阶段闭环框架（Zesearch NLP Lab）
+
 > 📊 Level ⭐⭐⭐ | 18.5KB | `entities/llm-self-improvement-system-survey-zesearch-nlp-2026.md`
 
 ## 概述

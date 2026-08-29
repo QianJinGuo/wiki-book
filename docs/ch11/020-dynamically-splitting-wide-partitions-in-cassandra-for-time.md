@@ -1,5 +1,7 @@
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
 
+## Ch11.020 Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
+
 > 📊 Level ⭐⭐ | 16.9KB | `entities/netflix-cassandra-wide-partition-dynamic-splitting.md`
 
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
@@ -206,11 +208,11 @@ Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition �
 ## 来源
 
 ## 相关实体
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](163-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam Domestic Cloud](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
 - [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/636-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
 - [Toto 2](143-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](163-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
 

@@ -1,5 +1,7 @@
 # Kimi Work Beta：通用 Agent 一定来自模型公司
 
+## Ch04.139 Kimi Work Beta：通用 Agent 一定来自模型公司
+
 > 📊 Level ⭐⭐ | 12.4KB | `entities/kimi-work-beta-foundation-model-company-advantage.md`
 
 # Kimi Work Beta：通用 Agent 一定来自模型公司

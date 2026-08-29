@@ -1,5 +1,7 @@
 # Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
 
+## Ch04.159 Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
+
 > 📊 Level ⭐⭐ | 11.7KB | `entities/amazon-quick-research-agentic-multi-source-citation.md`
 
 # Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
@@ -136,7 +138,7 @@ Amazon Quick Research 的核心设计不是一次性检索，而是将**研究�
 - [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11/211-bedrock.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/014-build-an-enterprise-observability-solution-for-amazon-quick.html)
-- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/162-aderant-transforms-cloud-operations-with-amazon-quick.html)
+- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/163-aderant-transforms-cloud-operations-with-amazon-quick.html)
 
 ---
 

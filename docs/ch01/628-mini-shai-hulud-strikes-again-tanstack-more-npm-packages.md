@@ -1,5 +1,7 @@
 # Mini Shai-Hulud Strikes Again: TanStack + more npm Packages Compromised
 
+## Ch01.628 Mini Shai-Hulud Strikes Again: TanStack + more npm Packages Compromised
+
 > 📊 Level ⭐⭐ | 3.8KB | `entities/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md`
 
 ## 核心要点

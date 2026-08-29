@@ -1,5 +1,7 @@
 # Rethinking Search as Code Generation
 
+## Ch01.242 Rethinking Search as Code Generation
+
 > 📊 Level ⭐⭐ | 13.4KB | `entities/perplexity-search-as-code-generation.md`
 
 # Rethinking Search as Code Generation

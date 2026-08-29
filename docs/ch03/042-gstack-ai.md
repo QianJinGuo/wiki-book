@@ -1,5 +1,7 @@
 # gstack — AI协作开发工作流 & 复杂度棘轮
 
+## Ch03.042 gstack — AI协作开发工作流 & 复杂度棘轮
+
 > 📊 Level ⭐⭐ | 14.1KB | `entities/gstack-ai-workflow.md`
 
 # gstack

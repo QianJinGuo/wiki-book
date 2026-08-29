@@ -1,5 +1,7 @@
 # JoyAI-Echo：京东开源长音视频生成框架（5 分钟一致性 + 7.5x DMD 加速 + Director Agent）
 
+## Ch04.062 JoyAI-Echo：京东开源长音视频生成框架（5 分钟一致性 + 7.5x DMD 加速 + Director Agent）
+
 > 📊 Level ⭐⭐ | 18.3KB | `entities/joyai-echo-long-video-framework-jd.md`
 
 # JoyAI-Echo：京东开源长音视频生成框架
@@ -156,7 +158,7 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 —
 - 视频 Agent 范式 — [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/004-agent.html)
 - 记忆架构在多模态的延伸 — [Chatgpt Dreaming V3 Long Term Memory Architecture](../ch01/699-chatgpt-dreaming-v3.html)（同 2026-06 发布，Dreaming 强调"会话级记忆"，JoyAI-Echo 强调"角色级记忆"——都是"长期记忆"概念在不同模态的工程化）
-- 多模态记忆库设计 — [Agent Memory Architecture](320-perplexity-brain-self-improving-agent-memory-architecture.html)
+- 多模态记忆库设计 — [Agent Memory Architecture](321-perplexity-brain-self-improving-agent-memory-architecture.html)
 —
 
 ## 深度分析

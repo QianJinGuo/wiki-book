@@ -1,5 +1,7 @@
 # Thrive Capital Bets $100 Million on Shopify's AI Future
 
+## Ch01.104 Thrive Capital Bets $100 Million on Shopify's AI Future
+
 > 📊 Level ⭐ | 5.5KB | `entities/thrive-capital-bets-100-million-on-shopifys-ai-future.md`
 
 ## 核心要点

@@ -1,5 +1,7 @@
 # Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客
 
+## Ch09.070 Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客
+
 > 📊 Level ⭐⭐ | 8.2KB | `entities/claude-code-open-source-model-enterprise-practice.md`
 
 ## 概述

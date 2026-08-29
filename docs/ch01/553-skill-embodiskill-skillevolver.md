@@ -1,5 +1,7 @@
 # 清华自进化Skill双星：EmbodiSkill + SkillEvolver
 
+## Ch01.553 清华自进化Skill双星：EmbodiSkill + SkillEvolver
+
 > 📊 Level ⭐⭐ | 5.8KB | `entities/tsinghua-self-evolving-skill-agent.md`
 
 ## 核心问题

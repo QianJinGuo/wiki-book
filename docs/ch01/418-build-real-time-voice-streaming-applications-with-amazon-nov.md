@@ -1,5 +1,7 @@
 # Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC
 
+## Ch01.418 Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC
+
 > 📊 Level ⭐⭐ | 7.9KB | `entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md`
 
 ## 核心要点
@@ -18,7 +20,7 @@
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/031-amazon-bedrock-api.html)
 
 - [Www A16Z News Need Series C Call A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/www-a16z-news-need-series-c-call-a16z.md)
-- [Amazon Nova Forge Hyperparameter Tuning Art Science](../ch11/050-amazon-nova-forge.html)
+- [Amazon Nova Forge Hyperparameter Tuning Art Science](../ch11/049-amazon-nova-forge.html)
 - [Object Detection With Amazon Nova 2 Lite](../ch11/096-amazon-nova-2-lite.html)
 - [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](../ch11/211-bedrock.html)
 - [Accelerate Llm Model Loading And Increase Context Windows Wi](695-accelerate-llm-model-loading-and-increase-context-windows-wi.html)

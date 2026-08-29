@@ -1,5 +1,7 @@
 # SAP Unveils the Autonomous Enterprise
 
+## Ch04.079 SAP Unveils the Autonomous Enterprise
+
 > 📊 Level ⭐⭐ | 16.5KB | `entities/sap-unveils-autonomous-enterprise.md`
 
 ## 核心架构：SAP Business AI Platform
@@ -100,10 +102,10 @@ SAP 将 AI 采用与云转型绑定的策略值得所有企业软件厂商参考
 Autonomous Suite 的分阶段落地（从 RISE 客户第一年的 3 个 Assistants 到 GROW 客户的完整组合）体现了企业 AI 部署的谨慎原则。对于计划引入第三方 AI 能力的企业，建议建立完整的上线机制：1）分阶段灰度放量（从试点团队/场景开始，逐步扩展到全组织）；2）每个阶段设明确的质量卡口（准确率、响应时间、业务指标影响）；3）保留实时回滚能力（新版本出问题可秒级切换回旧版本）。企业 AI 的容错空间远小于消费级 AI，必须建立与SAP同等级别的稳定性保障体系。
 
 ## 相关实体
-- [Sap Unveils The Autonomous Enterprise](079-sap-unveils-the-autonomous-enterprise.html)
-- [News Sap Com Sap Unveils The Autonomous Enterprise](079-sap-unveils-the-autonomous-enterprise.html)
+- [Sap Unveils The Autonomous Enterprise](059-sap-unveils-the-autonomous-enterprise.html)
+- [News Sap Com Sap Unveils The Autonomous Enterprise](059-sap-unveils-the-autonomous-enterprise.html)
 - [Enterprise Software Moats Agent Era](../ch03/004-agent.html)
-- [The Ui Is Dead Long Live The Agent](286-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The Ui Is Dead Long Live The Agent](403-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](135-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-unveils-autonomous-enterprise.md)

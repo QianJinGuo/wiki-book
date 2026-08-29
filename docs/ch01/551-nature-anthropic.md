@@ -1,5 +1,7 @@
 # Nature | Anthropic：蒸馏过程潜意识传递行为偏好
 
+## Ch01.551 Nature | Anthropic：蒸馏过程潜意识传递行为偏好
+
 > 📊 Level ⭐⭐ | 5.8KB | `entities/anthopic-distillation-behavioural-traits-nature.md`
 
 # Nature | Anthropic：蒸馏过程潜意识传递行为偏好
@@ -9,9 +11,9 @@
 1. **多种行为偏好均可潜意识传递**，包括一些不安全的行为偏好
 
 ## 相关实体
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/300-agent-skills.html)
-- [Sap Unveils The Autonomous Enterprise](../ch04/079-sap-unveils-the-autonomous-enterprise.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/300-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/301-agent-skills.html)
+- [Sap Unveils The Autonomous Enterprise](../ch04/059-sap-unveils-the-autonomous-enterprise.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/301-agent-skills.html)
 - [Anthropic Mythos Bug Hunting Marketing](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mythos-bug-hunting-marketing.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 

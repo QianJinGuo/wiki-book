@@ -1,5 +1,7 @@
 # How We’d Market to Software Developers at Startups
 
+## Ch01.688 How We’d Market to Software Developers at Startups
+
 > 📊 Level ⭐⭐ | 2.5KB | `entities/how-wed-market-to-software-developers-at-startups-20260606.md`
 
 # How We’d Market to Software Developers at Startups
@@ -27,7 +29,7 @@ How We’d Market to Software Developers at Startups 涉及article领域的核�
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [E9Ffy3R5Kwa1Ja5Pywbbrg](https://github.com/QianJinGuo/wiki/blob/main/entities/e9ffy3r5kwa1ja5pywbbrg.md)
 
 ---

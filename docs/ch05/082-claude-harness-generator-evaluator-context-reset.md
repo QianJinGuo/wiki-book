@@ -1,5 +1,7 @@
 # Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进
 
+## Ch05.082 Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进
+
 > 📊 Level ⭐⭐⭐ | 19.2KB | `entities/harness-generator-evaluator-anthropic.md`
 
 ## 概述

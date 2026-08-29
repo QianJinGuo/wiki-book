@@ -1,5 +1,7 @@
 # AI phishing attacks are on the rise — Are you prepared? | Bitwarden
 
+## Ch12.092 AI phishing attacks are on the rise — Are you prepared? | Bitwarden
+
 > 📊 Level ⭐⭐ | 5.0KB | `entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md`
 
 ## 核心要点
@@ -18,7 +20,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
-- [Interpol Operation Ramz Mena Cybercrime](039-interpol-operation-ramz-mena-cybercrime-networks.html)
+- [Interpol Operation Ramz Mena Cybercrime](038-interpol-operation-ramz-mena-cybercrime-networks.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 ### 攻击规模的几何级增长

@@ -1,5 +1,7 @@
 # GitHub Breached — Employee Device Hack Led to Exfiltration
 
+## Ch12.091 GitHub Breached — Employee Device Hack Led to Exfiltration
+
 > 📊 Level ⭐⭐ | 5.0KB | `entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md`
 
 ## 核心要点
@@ -10,7 +12,7 @@
 ## 相关实体
 - [Github Investigating Teampcp Claimed 17Cc77](../ch01/471-github.html)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](../ch01/583-google-adds-llms-txt-check-to-chrome-lighthouse.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/285-score-by-collisions-patch-by-panic.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/286-score-by-collisions-patch-by-panic.html)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/168-rag.html)
 

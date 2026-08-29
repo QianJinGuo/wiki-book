@@ -1,5 +1,7 @@
 # Pipes – WorkOS Docs
 
+## Ch01.070 Pipes – WorkOS Docs
+
 > 📊 Level ⭐ | 7.3KB | `entities/pipes-workos-docs.md`
 
 # Pipes – WorkOS Docs

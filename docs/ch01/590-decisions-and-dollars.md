@@ -1,5 +1,7 @@
 # Decisions and Dollars
 
+## Ch01.590 Decisions and Dollars
+
 > 📊 Level ⭐⭐ | 5.1KB | `entities/decisions-and-dollars-agent-economics-data-fintech.md`
 
 # Decisions and Dollars

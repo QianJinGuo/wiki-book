@@ -1,5 +1,7 @@
 # Inngest - AI in Production: The 2026 Benchmark Report
 
+## Ch01.414 Inngest - AI in Production: The 2026 Benchmark Report
+
 > 📊 Level ⭐⭐ | 8.0KB | `entities/inngest-ai-in-production-the-2026-benchmark-report.md`
 
 ## 核心要点

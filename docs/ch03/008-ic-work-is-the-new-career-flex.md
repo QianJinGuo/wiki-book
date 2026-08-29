@@ -1,5 +1,7 @@
 # IC work is the new career flex
 
+## Ch03.008 IC work is the new career flex
+
 > 📊 Level ⭐ | 10.6KB | `entities/p-ic-work-is-the-new-career-flex.md`
 
 ## 核心要点

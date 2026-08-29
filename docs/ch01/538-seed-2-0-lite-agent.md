@@ -1,5 +1,7 @@
 # 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
 
+## Ch01.538 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
+
 > 📊 Level ⭐⭐ | 6.1KB | `entities/doubao-seed-2-lite-agent-multimodal.md`
 
 # 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵

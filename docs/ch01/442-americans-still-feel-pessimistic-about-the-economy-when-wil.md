@@ -1,5 +1,7 @@
 # Americans still feel pessimistic about the economy. When will it change?
 
+## Ch01.442 Americans still feel pessimistic about the economy. When will it change?
+
 > 📊 Level ⭐⭐ | 7.6KB | `entities/consumer-confidence-economy-cnbc.md`
 
 ## 核心要点
@@ -78,7 +80,7 @@
 
 - [Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
 - [the token economy](002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [Consumer Confidence](787-consumer-confidence.html)
+- [Consumer Confidence](788-consumer-confidence.html)
 
 ---
 

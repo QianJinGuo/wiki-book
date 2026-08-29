@@ -1,5 +1,7 @@
 # Direct Connect (DX) 迁移最佳实践
 
+## Ch01.436 Direct Connect (DX) 迁移最佳实践
+
 > 📊 Level ⭐⭐ | 7.6KB | `entities/direct-connect-dx-迁移最佳实践.md`
 
 # Direct Connect (DX) 迁移最佳实践

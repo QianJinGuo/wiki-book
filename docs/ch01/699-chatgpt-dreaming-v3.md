@@ -1,5 +1,7 @@
 # ChatGPT 的'失忆症'终于被治好了！Dreaming V3 让大模型拥有长期记忆
 
+## Ch01.699 ChatGPT 的'失忆症'终于被治好了！Dreaming V3 让大模型拥有长期记忆
+
 > 📊 Level ⭐⭐ | 2.4KB | `entities/chatgpt-dreaming-v3-long-term-memory-openai.md`
 
 # ChatGPT 的'失忆症'终于被治好了！Dreaming V3 让大模型拥有长期记忆

@@ -1,5 +1,7 @@
 # 两万字详解Claude Code源码核心机制
 
+## Ch01.638 两万字详解Claude Code源码核心机制
+
 > 📊 Level ⭐⭐ | 3.4KB | `entities/两万字详解claude-code源码核心机制.md`
 
 # 两万字详解Claude Code源码核心机制
@@ -31,7 +33,7 @@ source_published: 2026-04-01
 - [Hermes Agent V014 Architecture Shugex](../ch04/161-hermes-agent.html)
 - [Claude Code Team 10 Tips Boris Data派Thu](../ch03/057-claude-code.html)
 - [Hermes Agent Soul Md Personality Shugex](../ch04/161-hermes-agent.html)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/259-pi-agent.html)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/260-pi-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/135-ai.html)
 

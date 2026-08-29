@@ -1,5 +1,7 @@
 # A Route to Root in a 4G Industrial Router
 
+## Ch01.631 A Route to Root in a 4G Industrial Router
+
 > 📊 Level ⭐⭐ | 3.6KB | `entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md`
 
 ## 深度分析
@@ -29,7 +31,7 @@
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](628-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/270-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/289-agentrun.html)
 
 ---
 

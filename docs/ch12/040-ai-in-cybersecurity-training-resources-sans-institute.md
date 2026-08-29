@@ -1,5 +1,7 @@
 # AI in Cybersecurity Training Resources | SANS Institute
 
+## Ch12.040 AI in Cybersecurity Training Resources | SANS Institute
+
 > 📊 Level ⭐⭐ | 9.4KB | `entities/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md`
 
 # SANS Institute AI 安全培训体系
@@ -117,7 +119,7 @@ SANS 的 AI 安全培训体系与 wiki 中的多个概念和实体存在交叉�
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — AI 安全控制作为 harness 的一部分
 - [Cloudflare 临时账户](../ch04/423-ai-agent.html) — Agent 认证安全
 - [AFine CSP HTML Injection](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md) — 安全漏洞案例
-- [Building Reliable Agentic AI Systems](../ch04/188-building-reliable-agentic-ai-systems.html) — AI 系统可靠性工程
+- [Building Reliable Agentic AI Systems](../ch04/189-building-reliable-agentic-ai-systems.html) — AI 系统可靠性工程
 - [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — SEC573 课程中涉及的协议
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md)

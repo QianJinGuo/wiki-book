@@ -1,5 +1,7 @@
 # Reducing container cold start times using SOCI index on DLAMI and DLC
 
+## Ch01.711 Reducing container cold start times using SOCI index on DLAMI and DLC
+
 > 📊 Level ⭐⭐ | 2.3KB | `entities/reducing-container-cold-start-times-using-soci-index-on-dlam.md`
 
 # Reducing container cold start times using SOCI index on DLAMI and DLC

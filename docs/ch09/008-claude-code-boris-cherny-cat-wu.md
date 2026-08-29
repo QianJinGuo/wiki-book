@@ -1,5 +1,7 @@
 # Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
 
+## Ch09.008 Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
+
 > 📊 Level ⭐⭐ | 26.4KB | `entities/claude-code-first-year-retrospective-boris-cat-2026.md`
 
 # Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
@@ -207,7 +209,7 @@ Claude Code 用一年时间，从两个 Slack 点赞走到了一个 PM 在写代
 
 ## 相关实体
 
-- [Loop Engineering Addy Osmani Challengehub](../ch04/348-loop-engineering.html) — Loop 架构的工程实践
+- [Loop Engineering Addy Osmani Challengehub](../ch04/349-loop-engineering.html) — Loop 架构的工程实践
 - [Boris Cherny 新访谈开发工具正在从 Ide 变成 Agent 控制台](../ch03/004-agent.html) — Boris Cherny 对开发工具演进方向的判断
 - [Claude Opus 4 7 Launch](../ch01/591-claude-opus-4-7.html) — Opus 4.7 的能力跃升
 - [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch07/054-skill.html) — Skills 系统的架构设计

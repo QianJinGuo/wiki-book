@@ -1,5 +1,7 @@
 # NVIDIA XR AI：AR 眼镜与 XR 设备的 AI Agent 基础设施
 
+## Ch04.413 NVIDIA XR AI：AR 眼镜与 XR 设备的 AI Agent 基础设施
+
 > 📊 Level ⭐⭐ | 3.7KB | `entities/nvidia-xr-ai-ar-glasses-agent-infrastructure.md`
 
 # NVIDIA XR AI：AR/XR 设备的 AI Agent 基础设施

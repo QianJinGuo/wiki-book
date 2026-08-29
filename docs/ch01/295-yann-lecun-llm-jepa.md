@@ -1,5 +1,7 @@
 # Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
 
+## Ch01.295 Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
+
 > 📊 Level ⭐⭐ | 11.1KB | `entities/yann-lecun-llm-not-intelligence-jepa.md`
 
 # Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
@@ -98,7 +100,7 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
-- [better decisions at scale: how mathematical optimization del](../ch11/129-better-decisions-at-scale-how-mathematical-optimization-del.html)
+- [better decisions at scale: how mathematical optimization del](../ch11/130-better-decisions-at-scale-how-mathematical-optimization-del.html)
 - [farewell ai2](../ch04/135-ai.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](489-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch04/135-ai.html)

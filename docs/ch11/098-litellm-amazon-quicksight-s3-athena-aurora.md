@@ -1,5 +1,7 @@
 # LiteLLM + Amazon QuickSight 数据可视化配置：S3 + Athena + Aurora 三层数据源
 
+## Ch11.098 LiteLLM + Amazon QuickSight 数据可视化配置：S3 + Athena + Aurora 三层数据源
+
 > 📊 Level ⭐⭐ | 9.2KB | `entities/litellm-amazon-quicksight-visualization-configuration.md`
 
 > [!abstract]

@@ -1,5 +1,7 @@
 # Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
 
+## Ch04.075 Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
+
 > 📊 Level ⭐⭐ | 16.9KB | `entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md`
 
 # Boris Cherny 新访谈：IDE → Agent 控制台
@@ -80,7 +82,7 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/004-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](300-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](301-agent-skills.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/339-claude.html)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](157-anthropic-google-agent-skills.html)
@@ -100,7 +102,7 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/057-claude-code.html)
-- [Claude Code MCP Server](../ch07/026-claude-code-mcp-server.html)
+- [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 - [Anthropic 14 个 Agent Skills 设计模式](077-anthropic-agent.html)
 - [Anthropic Computer Use 最佳实践](../ch01/601-anthropic-computer-use.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)

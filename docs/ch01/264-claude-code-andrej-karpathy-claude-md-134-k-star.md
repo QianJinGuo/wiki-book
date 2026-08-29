@@ -1,5 +1,7 @@
 # 最佳 Claude Code 配置：Andrej Karpathy 的 CLAUDE.md，134+k star了！
 
+## Ch01.264 最佳 Claude Code 配置：Andrej Karpathy 的 CLAUDE.md，134+k star了！
+
 > 📊 Level ⭐⭐ | 12.3KB | `entities/andrej-karpathy-claude-md-134k-stars-2026.md`
 
 ## 深度分析

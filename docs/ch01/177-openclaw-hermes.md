@@ -1,5 +1,7 @@
 # OpenClaw与Hermes源码架构对比
 
+## Ch01.177 OpenClaw与Hermes源码架构对比
+
 > 📊 Level ⭐⭐ | 17.6KB | `entities/openclaw-hermes-source-code-agent-architecture-review.md`
 
 ## 核心洞察

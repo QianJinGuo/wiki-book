@@ -1,5 +1,7 @@
 # A Framework for AI Threat Readiness
 
+## Ch12.003 A Framework for AI Threat Readiness
+
 > 📊 Level ⭐ | 10.3KB | `entities/ai_threat_readiness_framework.md`
 
 ## 核心要点
@@ -50,7 +52,7 @@ AI 代码分析需要分层策略，而不是对所有代码一视同仁。首�
 框架最后强调了治理的重要性：建立明确的 ownership、定义预期结果、并用清晰的指标追踪进度。这些指标包括 SLA 遵守率、异常数量、资产和环境覆盖范围、以及针对定义安全结果的进展。
 关键实践：建立定义清晰的委员会、角色和决策流程；定义结果和关键指标以追踪进展并向执行层报告；创建策略、SLA 和异常流程以确保风险被一致地处理。指标体系应该覆盖从暴露发现到修复完成的全流程时间（MTTR），以及各层次的覆盖率。
 ## 相关实体
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/270-agentrun.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/289-agentrun.html)
 - [Where Openclaw Security Is Heading Openclaw Blog](028-where-openclaw-security-is-heading-openclaw-blog.html)
 - [Vietnamtodevelopdomesticcloud](../ch01/668-opd.html)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)

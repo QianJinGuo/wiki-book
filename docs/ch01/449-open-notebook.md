@@ -1,5 +1,7 @@
 # Open Notebook
 
+## Ch01.449 Open Notebook
+
 > 📊 Level ⭐⭐ | 7.4KB | `entities/open-notebook.md`
 
 # Open Notebook

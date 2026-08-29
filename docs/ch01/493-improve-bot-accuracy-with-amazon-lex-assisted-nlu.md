@@ -1,5 +1,7 @@
 # Improve bot accuracy with Amazon Lex Assisted NLU
 
+## Ch01.493 Improve bot accuracy with Amazon Lex Assisted NLU
+
 > 📊 Level ⭐⭐ | 6.8KB | `entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
@@ -29,7 +31,7 @@
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/217-amazon-nova.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/211-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/383-amazon-bedrock-agentcore.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/308-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11/211-bedrock.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/048-prowler-genai.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11/135-amazon-bedrock.html)

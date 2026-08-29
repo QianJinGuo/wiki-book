@@ -1,5 +1,7 @@
 # Why Internally-Built AI Fails Fund Accounting Audits
 
+## Ch01.548 Why Internally-Built AI Fails Fund Accounting Audits
+
 > 📊 Level ⭐⭐ | 5.8KB | `entities/ai-fails-fund-accounting-audits.md`
 
 # Why Internally-Built AI Fails Fund Accounting Audits

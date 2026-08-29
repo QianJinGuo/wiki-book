@@ -1,5 +1,7 @@
 # 用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客
 
+## Ch04.132 用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客
+
 > 📊 Level ⭐⭐ | 13.0KB | `entities/building-enterprise-agentic-ai-with-kiro-on-aws.md`
 
 ## 概述

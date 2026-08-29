@@ -1,5 +1,7 @@
 # Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限
 
+## Ch05.033 Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限
+
 > 📊 Level ⭐⭐ | 15.3KB | `entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)
@@ -78,7 +80,7 @@ Cursor 另外看了两个代理指标：
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](008-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](008-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/270-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/289-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](057-harness-engineering.html)
@@ -92,7 +94,7 @@ Cursor 另外看了两个代理指标：
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [吴恩达：AI 将最先杀死前端](../ch04/135-ai.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/300-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/301-agent-skills.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](../ch04/135-ai.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](035-agent-harness.html)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](https://github.com/QianJinGuo/wiki/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)

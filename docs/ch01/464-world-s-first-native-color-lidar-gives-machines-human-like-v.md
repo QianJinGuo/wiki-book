@@ -1,5 +1,7 @@
 # World’s first native color LiDAR gives machines human-like vision
 
+## Ch01.464 World’s first native color LiDAR gives machines human-like vision
+
 > 📊 Level ⭐⭐ | 7.2KB | `entities/technology-ouster-rev8-native-color-lidar.md`
 
 # World’s first native color LiDAR gives machines human-like vision
@@ -55,7 +57,7 @@ Ouster 并非没有对手：全球出货量领先的 Hesai 在 Rev8 发布前几
 - [Amap ABot Earth 0.5：3D 原生世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
 - 具身智能与机器人
 - Vision-Language Models
-- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/165-tether-launches-developer-grants-program-for-local-first-ai.html)
+- [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/166-tether-launches-developer-grants-program-for-local-first-ai.html)
 
 ---
 

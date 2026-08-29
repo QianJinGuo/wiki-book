@@ -1,5 +1,7 @@
 # Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变
 
+## Ch09.076 Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变
+
 > 📊 Level ⭐⭐ | 7.5KB | `entities/claude-dispatch-interfaces-mollick.md`
 
 # Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变
@@ -65,7 +67,7 @@ AI 能力一直领先于 AI 可及性。Chatbot 格式在主动对抗用户。�
 - [Gateway Architecture Openclaw Claude Hermes Comparison](../ch04/176-openclaw.html)
 - [Skill System Design Three Way Comparison](../ch07/054-skill.html)
 - [Openclaw Agent Loop Design Patterns](../ch04/384-agent-loop.html)
-- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/786-anthropic-claude.html)
+- [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/787-anthropic-claude.html)
 - [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/423-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-dispatch-and-the-power-of-interfaces.md)

@@ -1,5 +1,7 @@
 # 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 
+## Ch05.006 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
+
 > 📊 Level ⭐⭐ | 28.0KB | `entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md`
 
 # 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering

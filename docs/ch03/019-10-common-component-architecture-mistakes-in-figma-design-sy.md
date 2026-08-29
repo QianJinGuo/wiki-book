@@ -1,5 +1,7 @@
 # 10 common component architecture mistakes in Figma design systems
 
+## Ch03.019 10 common component architecture mistakes in Figma design systems
+
 > 📊 Level ⭐ | 7.0KB | `entities/component-architecture-mistakes-figma-zeroheight.md`
 
 ## 核心要点

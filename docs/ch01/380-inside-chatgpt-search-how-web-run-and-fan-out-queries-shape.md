@@ -1,5 +1,7 @@
 # Inside ChatGPT Search: how web.run and fan-out queries shape results
 
+## Ch01.380 Inside ChatGPT Search: how web.run and fan-out queries shape results
+
 > 📊 Level ⭐⭐ | 8.7KB | `entities/chatgpt-search-web-run-fanout-searchengineland.md`
 
 ## 核心要点
@@ -74,7 +76,7 @@ ChatGPT Search 区分「实时网络信息」和「预训练知识」，并只�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
-- [Building web search-enabled agents with Strands and Exa](../ch04/338-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Building web search-enabled agents with Strands and Exa](../ch04/339-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Why and how to implement an AI asset rationalization strategy](../ch04/135-ai.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/423-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)

@@ -1,5 +1,7 @@
 # Everything a Senior Engineer Needs to Know About What's Inside an LLM
 
+## Ch01.772 Everything a Senior Engineer Needs to Know About What's Inside an LLM
+
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/senior-engineer-guide-inside-llm.md`
 
 # Everything a Senior Engineer Needs to Know About What's Inside an LLM

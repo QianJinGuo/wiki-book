@@ -1,6 +1,8 @@
 # The Shape of the Thing
 
-> 📊 Level ⭐⭐ | 22.5KB | `entities/the-shape-of-the-thing.md`
+## Ch01.159 The Shape of the Thing
+
+> 📊 Level ⭐⭐ | 22.6KB | `entities/the-shape-of-the-thing.md`
 
 # The Shape of the Thing
 
@@ -202,13 +204,13 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Opus 48 The System Card B8460F](339-claude.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Agent Harness Engineering Survey 2026](../ch05/057-harness-engineering.html)
-- [Gpt 5 It Just Does Stuff](180-gpt-5-it-just-does-stuff.html)
+- [Gpt 5 It Just Does Stuff](179-gpt-5-it-just-does-stuff.html)
 - [Andrej Karpathy Claude Md 134K Stars 2026](181-claude-md.html)
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - [Agentic Harness Engineering Ahe](../ch05/057-harness-engineering.html)

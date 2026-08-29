@@ -1,5 +1,7 @@
 # Thinking Machines 交互模型（Interaction Models）
 
+## Ch04.207 Thinking Machines 交互模型（Interaction Models）
+
 > 📊 Level ⭐⭐ | 10.1KB | `entities/thinking-machines-interaction-models.md`
 
 ## 核心定位

@@ -1,5 +1,7 @@
 # Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits
 
+## Ch05.088 Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits
+
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/superpowers-6-reviewer-anti-cheating-shuge-2026.md`
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-6-reviewer-anti-cheating-shuge-2026.md)
@@ -73,7 +75,7 @@ subagent 读文件而非接收粘贴。controller context 只剩一行路径。*
 
 - reviewer 重写是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 在 multi-agent review 场景的具体实现
 - progress ledger 与 [Agent 记忆系统设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) 模式一致
-- 委托代理隔离 → [Loop Engineering](../ch04/348-loop-engineering.html) 中 evaluator 与 executor 分离的同构解法
+- 委托代理隔离 → [Loop Engineering](../ch04/349-loop-engineering.html) 中 evaluator 与 executor 分离的同构解法
 - "harder to game" → 对应 [对抗验证](https://github.com/QianJinGuo/wiki/blob/main/entities/adversarial-verification.md) 原则
 
 ---

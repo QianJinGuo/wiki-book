@@ -1,5 +1,7 @@
 # 复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复教AI写代码
 
+## Ch09.091 复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复教AI写代码
+
 > 📊 Level ⭐⭐ | 6.2KB | `entities/claude-code-self-repair-hooks-memory-config.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-self-repair-hooks-memory-config.md)

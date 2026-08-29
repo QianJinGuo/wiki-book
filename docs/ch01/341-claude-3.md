@@ -1,5 +1,7 @@
 # Claude 发布官方报告，承认存在 3 处质量退化问题
 
+## Ch01.341 Claude 发布官方报告，承认存在 3 处质量退化问题
+
 > 📊 Level ⭐⭐ | 9.6KB | `entities/claude-发布官方报告承认存在-3-处质量退化问题.md`
 
 ## 核心要点
@@ -59,7 +61,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/057-claude-code.html)
-- [Claude Code MCP Server](../ch07/026-claude-code-mcp-server.html)
+- [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Anthropic Computer Use 最佳实践](601-anthropic-computer-use.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)

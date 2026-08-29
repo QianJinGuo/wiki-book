@@ -1,5 +1,7 @@
 # OpenAI models and Codex on Amazon Bedrock are now generally available
 
+## Ch11.203 OpenAI models and Codex on Amazon Bedrock are now generally available
+
 > 📊 Level ⭐⭐ | 2.4KB | `entities/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md`
 
 # OpenAI models and Codex on Amazon Bedrock are now generally available
@@ -26,7 +28,7 @@ GPT-5.
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)

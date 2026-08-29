@@ -1,5 +1,7 @@
 # What’s New with vSphere in VMware Cloud Foundation 9.1?
 
+## Ch11.035 What’s New with vSphere in VMware Cloud Foundation 9.1?
+
 > 📊 Level ⭐⭐ | 13.5KB | `entities/whats-new-with-vsphere-9-1.md`
 
 # vSphere in VCF 9.1 新特性解析
@@ -199,7 +201,7 @@ vMotion 加密一直是 CPU 开销的大户——即便使用 AES-NI，8 个并�
 - [Cloud Agent Infrastructure Creaoai State Code Credential Isolation 20260606](../ch03/004-agent.html)
 - [Llm Raiders How To Repel](../ch01/448-llm.html)
 - [Amazon Bedrock Api Security Guide](../ch12/031-amazon-bedrock-api.html)
-- [Aderant Transforms Cloud Operations With Amazon Quick](162-aderant-transforms-cloud-operations-with-amazon-quick.html)
+- [Aderant Transforms Cloud Operations With Amazon Quick](163-aderant-transforms-cloud-operations-with-amazon-quick.html)
 - [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch04/135-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/whats-new-with-vsphere-9-1.md)

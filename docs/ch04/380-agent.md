@@ -1,5 +1,7 @@
 # Agent 工程原理、架构与实践
 
+## Ch04.380 Agent 工程原理、架构与实践
+
 > 📊 Level ⭐⭐ | 4.9KB | `entities/agent-engineering-principles-architecture-practice.md`
 
 # agent-engineering-principles-architecture-practice
@@ -35,7 +37,7 @@ Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
 5. **先建评测体系再优化 Agent**：区分 Pass@k（探索能力上限）和 Pass^k（上线回归），按确定性选择评分器（代码 > 模型 > 人工）
 
 ## 相关实体
-- [Agent Principle Architecture Engineering Practice](274-agent-principle-architecture-engineering-practice.html)
+- [Agent Principle Architecture Engineering Practice](275-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/057-harness-engineering.html)
 - [Factory Mission Multi Agent Architecture](../ch01/747-factory-mission-multi-agent-architecture.html)
 - [Harness Engineering Long Term Agent Tasks](../ch05/057-harness-engineering.html)

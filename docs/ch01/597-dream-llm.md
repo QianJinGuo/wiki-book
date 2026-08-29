@@ -1,5 +1,7 @@
 # DREAM：用冻结 LLM 的自回归预测训练稠密检索器，无需标注正负样本
 
+## Ch01.597 DREAM：用冻结 LLM 的自回归预测训练稠密检索器，无需标注正负样本
+
 > 📊 Level ⭐⭐ | 4.9KB | `entities/dream-dense-retrieval-autoregressive-modeling-challengehub-2026.md`
 
 ## 核心概述

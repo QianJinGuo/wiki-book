@@ -1,5 +1,7 @@
 # Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈
 
+## Ch09.040 Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈
+
 > 📊 Level ⭐⭐ | 12.1KB | `entities/cat-wu-anthropic-pm-interview.md`
 
 ## 核心洞察

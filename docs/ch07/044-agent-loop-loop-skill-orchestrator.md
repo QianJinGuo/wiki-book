@@ -1,5 +1,7 @@
 # Agent Loop 架构三层模型：Loop + Skill + Orchestrator
 
+## Ch07.044 Agent Loop 架构三层模型：Loop + Skill + Orchestrator
+
 > 📊 Level ⭐⭐ | 7.9KB | `entities/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md)
@@ -107,9 +109,9 @@ Van Horn 框架 Stage 5 的五个挑战：
 ## 与现有知识的关联
 
 - [Inngest 产品概述](../ch01/550-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.html)——本文是 CTO 的架构愿景，产品概述侧重功能特性
-- [Loop Engineering (Addy Osmani)](../ch04/348-loop-engineering.html)——Osmani 拆解 loop 内部构成模块，本文把 loop 放进耐久执行层
-- [Loop Engineering 反馈控制系统](../ch04/348-loop-engineering.html)——反馈控制的前提是耐久执行层提供可靠 checkpoint
-- [Agent Loop 工程手册](../ch04/348-loop-engineering.html)——8 问框架与本文三层模型互补
+- [Loop Engineering (Addy Osmani)](../ch04/349-loop-engineering.html)——Osmani 拆解 loop 内部构成模块，本文把 loop 放进耐久执行层
+- [Loop Engineering 反馈控制系统](../ch04/349-loop-engineering.html)——反馈控制的前提是耐久执行层提供可靠 checkpoint
+- [Agent Loop 工程手册](../ch04/349-loop-engineering.html)——8 问框架与本文三层模型互补
 - [Harness Engineering 框架](../ch05/057-harness-engineering.html)——三层中 Orchestrator 层对应 Harness 的运行时职责
 - [Self-Harness](../ch05/008-harness.html)——自建 Skill agent 是 Self-Harness 的工程实现路径
 - [Agentic Environment Engineering](../ch03/004-agent.html)——Environment 决定反馈质量，Orchestrator 决定执行耐久性

@@ -1,5 +1,7 @@
 # 微软等提出 SkillOpt：把 Skill 当成模型一样训练
 
+## Ch01.445 微软等提出 SkillOpt：把 Skill 当成模型一样训练
+
 > 📊 Level ⭐⭐ | 7.5KB | `entities/skillopt-microsoft-train-skill-hyman's-blog.md`
 
 # 微软等提出 SkillOpt：把 Skill 当成模型一样训练
@@ -51,7 +53,7 @@ SkillOpt 最有价值的抽象，是把模型训练的那套流程整体平移�
 - [SkillOpt](../ch05/028-skillopt.html) — 本方法的主条目
 - [SkillOpt — 微软训练 Skill 文档的方法论](../ch05/028-skillopt.html)（论文精读版）
 - [别再手写 Skill 了！微软最新研究：像神经网络一样训练 Skill](../ch05/028-skillopt.html)（同主题另一篇报道）
-- [SkillOpt-Lite：一行 Vibe 指令加速 Agent 技能自进化](283-agent-skill.html)
+- [SkillOpt-Lite：一行 Vibe 指令加速 Agent 技能自进化](284-agent-skill.html)
 - [Regression Tax：技能包导致 Agent 性能退化的系统性分析](../ch03/050-skills.html)
 - [清华自进化 Skill 双星：EmbodiSkill + SkillEvolver](../ch04/110-skill-agent.html)
 - [AgentENV：面向大规模 Agentic RL 的智能体执行环境](../ch04/386-agentenv-agentic-rl.html)

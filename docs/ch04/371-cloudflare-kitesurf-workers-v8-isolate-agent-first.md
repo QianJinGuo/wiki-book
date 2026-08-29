@@ -1,5 +1,7 @@
 # Cloudflare Kitesurf：运行在 Workers V8 isolate 上的 agent-first 浏览器
 
+## Ch04.371 Cloudflare Kitesurf：运行在 Workers V8 isolate 上的 agent-first 浏览器
+
 > 📊 Level ⭐⭐ | 5.1KB | `entities/cloudflare-kitesurf-agent-first-browser-workers-2026.md`
 
 # Cloudflare Kitesurf：运行在 Workers V8 isolate 上的 agent-first 浏览器
@@ -39,7 +41,7 @@ Chromium 胜在墙钟（JIT 已见该页），Kitesurf 胜在 CPU/内存（决�
 
 ## 与既有 AI 浏览器的关系
 
-区别于 [AI 浏览器三条技术路线](../ch05/018-ai-native.html)（侧栏/Agent/AI 原生）的路线分类：Kitesurf 是 AI 原生路线的**具体工程实现**——用 Workers isolate 替代 Chromium 进程模型，把 agent 关注的指标（token/成本/可扩展性）作为首要设计目标。与 [agent-browser](269-chromium-blink-v8-agent-browser-use.html) 概念互补：后者定义 agent 浏览器应具备的能力，Kitesurf 给出在无进程模型环境下如何构建的方案。
+区别于 [AI 浏览器三条技术路线](../ch05/018-ai-native.html)（侧栏/Agent/AI 原生）的路线分类：Kitesurf 是 AI 原生路线的**具体工程实现**——用 Workers isolate 替代 Chromium 进程模型，把 agent 关注的指标（token/成本/可扩展性）作为首要设计目标。与 [agent-browser](270-chromium-blink-v8-agent-browser-use.html) 概念互补：后者定义 agent 浏览器应具备的能力，Kitesurf 给出在无进程模型环境下如何构建的方案。
 
 ## 当前边界与路线
 

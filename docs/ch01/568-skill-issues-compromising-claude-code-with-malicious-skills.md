@@ -1,5 +1,7 @@
 # Skill Issues: Compromising Claude Code with malicious skills & agents -- Part 1
 
+## Ch01.568 Skill Issues: Compromising Claude Code with malicious skills & agents -- Part 1
+
 > 📊 Level ⭐⭐ | 5.5KB | `entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md`
 
 ## 核心要点

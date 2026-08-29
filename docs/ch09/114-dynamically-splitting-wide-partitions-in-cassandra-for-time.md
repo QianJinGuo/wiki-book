@@ -1,5 +1,7 @@
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
 
+## Ch09.114 Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
+
 > 📊 Level ⭐⭐ | 2.3KB | `entities/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md`
 
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
@@ -23,7 +25,7 @@ Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads 涉
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 
 ## 相关实体

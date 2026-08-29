@@ -1,5 +1,7 @@
 # Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
 
+## Ch11.204 Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
+
 > 📊 Level ⭐⭐ | 2.3KB | `entities/bedrock-agentcore-secrets-manager-identity.md`
 
 # Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
@@ -21,7 +23,7 @@ AI agents are only as powerful as the tools they can access.
 ### 关联实体
 
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch04/176-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)

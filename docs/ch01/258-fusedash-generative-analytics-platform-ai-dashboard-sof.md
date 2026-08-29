@@ -1,5 +1,7 @@
 # Fusedash -  Generative Analytics Platform | AI Dashboard Software
 
+## Ch01.258 Fusedash -  Generative Analytics Platform | AI Dashboard Software
+
 > 📊 Level ⭐⭐ | 12.5KB | `entities/fusedash-generative-analytics-platform.md`
 
 ## 核心要点

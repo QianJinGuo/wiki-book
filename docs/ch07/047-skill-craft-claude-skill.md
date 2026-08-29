@@ -1,5 +1,7 @@
 # Skill Craft — Claude Skill 质量工程框架
 
+## Ch07.047 Skill Craft — Claude Skill 质量工程框架
+
 > 📊 Level ⭐⭐ | 7.8KB | `entities/skill-craft.md`
 
 ## 7 类系统性失效模式

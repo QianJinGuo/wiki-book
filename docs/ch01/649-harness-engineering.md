@@ -1,5 +1,7 @@
 # 深入浅出 Harness Engineering 之核心模式与理念
 
+## Ch01.649 深入浅出 Harness Engineering 之核心模式与理念
+
 > 📊 Level ⭐⭐ | 3.1KB | `entities/harness-engineering-core-patterns-claude-code.md`
 
 # 深入浅出 Harness Engineering 之核心模式与理念
@@ -34,7 +36,7 @@
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 
 ---

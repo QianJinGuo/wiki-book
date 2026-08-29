@@ -1,5 +1,7 @@
 # AI Agent 架构设计（七）：Skills 系统设计（OpenClaw、Claude Code、Hermes Agent 对比）
 
+## Ch01.176 AI Agent 架构设计（七）：Skills 系统设计（OpenClaw、Claude Code、Hermes Agent 对比）
+
 > 📊 Level ⭐⭐ | 17.7KB | `entities/skill-system-design-three-way-comparison.md`
 
 ## Skills 的本质：Agent 的专业经验

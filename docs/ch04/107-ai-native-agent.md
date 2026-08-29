@@ -1,5 +1,7 @@
 # AI Native 团队协同：知识底座＋Agent＋人三层闭环
 
+## Ch04.107 AI Native 团队协同：知识底座＋Agent＋人三层闭环
+
 > 📊 Level ⭐⭐ | 14.3KB | `entities/ai-native-team-collaboration-knowledge-base-agent-human-taobao-2026.md`
 
 # AI Native 团队协同：知识底座＋Agent＋人三层闭环

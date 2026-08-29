@@ -1,5 +1,7 @@
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 
+## Ch01.647 Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
+
 > 📊 Level ⭐⭐ | 3.2KB | `entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md`
 
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
@@ -10,7 +12,7 @@
 - [dynamically splitting wide partitions in cassandra for time](../ch11/020-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
 - [interconnects ai p open and closed models are on different](../ch04/135-ai.html)
 - [reducing container cold start times using soci index on dlam](711-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
-- [state of routing in model serving](../ch11/151-state-of-routing-in-model-serving.html)
+- [state of routing in model serving](../ch11/152-state-of-routing-in-model-serving.html)
 - [the distillation panic](474-the-distillation-panic.html)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)

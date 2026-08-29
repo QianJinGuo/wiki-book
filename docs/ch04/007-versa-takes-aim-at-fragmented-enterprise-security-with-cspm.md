@@ -1,5 +1,7 @@
 # Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls
 
+## Ch04.007 Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls
+
 > 📊 Level ⭐ | 6.5KB | `entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)

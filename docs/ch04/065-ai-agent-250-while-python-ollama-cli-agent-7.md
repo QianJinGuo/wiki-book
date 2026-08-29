@@ -1,5 +1,7 @@
 # AI Agent 的内核是 250 行 while 循环：用 Python + Ollama 从零搭建 CLI Agent 的 7 阶段教程
 
+## Ch04.065 AI Agent 的内核是 250 行 while 循环：用 Python + Ollama 从零搭建 CLI Agent 的 7 阶段教程
+
 > 📊 Level ⭐⭐ | 18.0KB | `entities/minimal-cli-agent-250-line-python-ollama-7-stages.md`
 
 # AI Agent 的内核是 250 行 while 循环：从零搭建 CLI Agent 的 7 阶段教程

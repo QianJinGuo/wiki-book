@@ -1,5 +1,7 @@
 # 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！
 
+## Ch09.060 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！
+
 > 📊 Level ⭐⭐ | 8.9KB | `entities/understand-anything-code-knowledge-graph-lum-jike.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/understand-anything-code-knowledge-graph-lum-jike.md)
@@ -52,7 +54,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 ## 相关实体
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)
 - [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/004-agent.html)
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/251-ai-coding-agent.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/252-ai-coding-agent.html)
 - [Rag技术框架的演进方向](../ch01/168-rag.html)
 - [Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具

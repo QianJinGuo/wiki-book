@@ -1,5 +1,7 @@
 # Disgruntled researcher releases two more Microsoft zero-days
 
+## Ch12.067 Disgruntled researcher releases two more Microsoft zero-days
+
 > 📊 Level ⭐⭐ | 7.0KB | `entities/disgruntled-researcher-microsoft-zero-days.md`
 
 ## 核心要点
@@ -45,7 +47,7 @@ Dead man's switch 的存在意味着简单地切断研究者和企业的联系�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [Cline releases open-source agent runtime SDK](../ch04/270-agentrun.html)
+- [Cline releases open-source agent runtime SDK](../ch04/289-agentrun.html)
 - [LLM raiders and how to repel them](../ch01/448-llm.html) — AI 基础设施安全的另一个威胁向量
 
 ---

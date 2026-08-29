@@ -1,5 +1,7 @@
 # Boris Cherny — 从 IDE 到 Agent 控制台
 
+## Ch03.053 Boris Cherny — 从 IDE 到 Agent 控制台
+
 > 📊 Level ⭐⭐ | 11.6KB | `entities/boris-cherny-ide-to-agent-console.md`
 
 ## 人物背景
@@ -109,9 +111,9 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - [两万字详解Claude Code源码核心机制](057-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](057-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/300-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](057-claude-code.html)
-- [Claude Code MCP Server](../ch07/026-claude-code-mcp-server.html)
+- [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/339-claude.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](057-claude-code.html)

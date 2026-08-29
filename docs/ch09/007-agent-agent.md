@@ -1,5 +1,7 @@
 # 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层
 
+## Ch09.007 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层
+
 > 📊 Level ⭐⭐ | 27.0KB | `entities/business-agent-augmentation-layer-practitioner-methodology-20260606.md`
 
 ## 概述
@@ -308,7 +310,7 @@ business_agent_profile:
 
 ## 相关实体
 
-- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/348-loop-engineering.html)
+- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/349-loop-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 

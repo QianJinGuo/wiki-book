@@ -1,5 +1,7 @@
 # We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7
 
+## Ch01.106 We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7
+
 > 📊 Level ⭐ | 5.2KB | `entities/wetesteddeepseekv4proandflashagainstclau.md`
 
 ## 核心要点

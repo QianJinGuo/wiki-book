@@ -1,5 +1,7 @@
 # The UI is dead, long live the agent: ServiceNow goes headless and opens its platform
 
+## Ch04.403 The UI is dead, long live the agent: ServiceNow goes headless and opens its platform
+
 > 📊 Level ⭐⭐ | 3.9KB | `entities/servicenow-ui-is-dead-agent.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-ui-is-dead-agent.md)
@@ -22,9 +24,9 @@ Headless 架构的采用标志着企业软件竞争逻辑的根本转变。传�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-ui-is-dead-agent.md)
 
 ## 相关实体
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](286-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless](286-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](286-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](403-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless](403-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](403-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 
 ---
 

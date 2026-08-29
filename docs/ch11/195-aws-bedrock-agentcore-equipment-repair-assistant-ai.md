@@ -1,5 +1,7 @@
 # AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
 
+## Ch11.195 AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
+
 > 📊 Level ⭐⭐ | 3.8KB | `entities/aws-bedrock-agentcore-equipment-repair-assistant.md`
 
 # AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
@@ -48,7 +50,7 @@
 ## 原文链接
 
 ## 相关实体
-- [agentops: operationalize agentic ai at scale with amazon bed](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [agentops: operationalize agentic ai at scale with amazon bed](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [how baz improved its ai agent code review accuracy using ama](../ch09/111-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.html)
 - [extending mcp support for amazon bedrock agentcore gateway](../ch04/383-amazon-bedrock-agentcore.html)
 

@@ -1,5 +1,7 @@
 # Tokenomics: the 62.5-minute rule for Claude's cache
 
+## Ch01.047 Tokenomics: the 62.5-minute rule for Claude's cache
+
 > 📊 Level ⭐ | 7.9KB | `entities/anthropic_cache_tokenomics.md`
 
 # Tokenomics: the 62.5-minute rule for Claude's cache

@@ -1,5 +1,7 @@
 # Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It
 
+## Ch01.136 Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It
+
 > 📊 Level ⭐ | 3.1KB | `entities/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md`
 
 # Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It

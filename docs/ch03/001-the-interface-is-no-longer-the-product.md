@@ -1,5 +1,7 @@
 # The Interface Is No Longer the Product
 
+## Ch03.001 The Interface Is No Longer the Product
+
 > 📊 Level ⭐ | 15.3KB | `entities/interface-commoditization-ai-era.md`
 
 ### From Agents That Use Apps to Apps Built for Agents

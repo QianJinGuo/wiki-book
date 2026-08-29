@@ -1,5 +1,7 @@
 # Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare
 
+## Ch12.099 Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare
+
 > 📊 Level ⭐⭐ | 3.4KB | `entities/drupal-core-security-drupal-to-release-urgent-core-security.md`
 
 ## 核心要点

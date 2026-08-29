@@ -1,5 +1,7 @@
 # Multi-tenant LLM Analytics 三层安全架构
 
+## Ch01.586 Multi-tenant LLM Analytics 三层安全架构
+
 > 📊 Level ⭐⭐ | 5.1KB | `entities/multi-tenant-llm-analytics-row-level-security-aws.md`
 
 # Multi-tenant LLM Analytics 三层安全架构

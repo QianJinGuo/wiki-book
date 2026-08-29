@@ -1,5 +1,7 @@
 # Google Debuts Gemini-Focused Updates at I/O 2026
 
+## Ch01.092 Google Debuts Gemini-Focused Updates at I/O 2026
+
 > 📊 Level ⭐ | 6.5KB | `entities/google-debuts-gemini-focused-updates-at-io-2026.md`
 
 ## 概述

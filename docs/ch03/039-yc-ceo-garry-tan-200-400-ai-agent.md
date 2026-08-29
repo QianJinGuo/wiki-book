@@ -1,5 +1,7 @@
 # YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践
 
+## Ch03.039 YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践
+
 > 📊 Level ⭐⭐ | 16.7KB | `entities/yc-ceo-garry-tan-200-dollar-vs-4-million.md`
 
 ## 人物背景

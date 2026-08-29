@@ -1,5 +1,7 @@
 # Simplify model selection in Amazon Bedrock with the open source Model Profiler
 
+## Ch11.182 Simplify model selection in Amazon Bedrock with the open source Model Profiler
+
 > 📊 Level ⭐⭐ | 4.7KB | `entities/simplify-model-selection-in-amazon-bedrock-with-the-open-sou.md`
 
 # Simplify model selection in Amazon Bedrock with the open source Model Profiler

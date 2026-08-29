@@ -1,5 +1,7 @@
 # OpenAI Realtime API 架构首次公开
 
+## Ch01.102 OpenAI Realtime API 架构首次公开
+
 > 📊 Level ⭐ | 5.8KB | `entities/openai-realtime-api-architecture.md`
 
 # OpenAI Realtime API 架构首次公开
@@ -11,7 +13,7 @@
 ## 相关实体
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](512-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Openai Gpt Realtime Voice Models Qbitai](316-openai.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/270-agentrun.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/289-agentrun.html)
 - [Pi Mono Github](471-github.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 

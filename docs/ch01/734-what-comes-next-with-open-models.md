@@ -1,5 +1,7 @@
 # What comes next with open models
 
+## Ch01.734 What comes next with open models
+
 > 📊 Level ⭐⭐⭐ | 31.2KB | `entities/interconnects-what-comes-next-with-open-models.md`
 
 # What comes next with open models

@@ -1,5 +1,7 @@
 # Page not found | Microsoft Copilot Blog
 
+## Ch04.392 Page not found | Microsoft Copilot Blog
+
 > 📊 Level ⭐⭐ | 4.4KB | `entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md`
 
 # Page not found | Microsoft Copilot Blog
@@ -10,7 +12,7 @@
 - [Microsoft Agent Framework Python Full Guide Zizhi](../ch03/004-agent.html)
 - [Servicenow Ui Is Dead Agent](../ch03/004-agent.html)
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/004-agent.html)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](300-agent-skills.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](301-agent-skills.html)
 - [Garry Tan Yc Ceo](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)

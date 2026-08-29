@@ -1,5 +1,7 @@
 # Loop Engineering 半年实战拆解：claude-ship 开源自进化开发系统
 
+## Ch01.642 Loop Engineering 半年实战拆解：claude-ship 开源自进化开发系统
+
 > 📊 Level ⭐⭐ | 3.2KB | `entities/loop-engineering-6-month-practice-claude-ship-peakstone.md`
 
 ## 核心概述
@@ -52,7 +54,7 @@ git clone https://github.com/Peakstone-Labs/claude-ship.git && cd claude-ship &&
 
 - [从 SDD 到 Lattice Harness](../ch05/076-ai-coding.html) — 另一团队级 AI Coding 闭环实践
 - [《Loop Engineering橙皮书》](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-06-17--Loop-Engineering橙皮书-发布-免费-开源-花叔.md) — Loop Engineering 概念框架
-- [Agent Loop 工程手册 8 个未解问题](../ch04/348-loop-engineering.html) — 腾讯云陈进 Loop Engineering 解读
+- [Agent Loop 工程手册 8 个未解问题](../ch04/349-loop-engineering.html) — 腾讯云陈进 Loop Engineering 解读
 
 ---
 

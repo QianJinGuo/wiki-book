@@ -1,5 +1,7 @@
 # ChatGPT官宣26位未来之星
 
+## Ch01.064 ChatGPT官宣26位未来之星
+
 > 📊 Level ⭐ | 7.4KB | `entities/chatgpt-26-future-stars.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-26-future-stars.md)

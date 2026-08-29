@@ -1,5 +1,7 @@
 # AI Friendly 架构设计：后端系统面向无人值守开发时代的标准与路径
 
+## Ch05.019 AI Friendly 架构设计：后端系统面向无人值守开发时代的标准与路径
+
 > 📊 Level ⭐⭐ | 19.2KB | `entities/ai-friendly-architecture-design.md`
 
 # AI Friendly架构设计

@@ -1,5 +1,7 @@
 # 多模态评估器：MLLM-as-Judge 图文评估
 
+## Ch01.239 多模态评估器：MLLM-as-Judge 图文评估
+
 > 📊 Level ⭐⭐ | 13.5KB | `entities/multimodal-evaluators-mllm-as-judge-image-to-text.md`
 
 # Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals

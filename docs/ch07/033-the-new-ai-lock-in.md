@@ -1,5 +1,7 @@
 # The new AI lock-in
 
+## Ch07.033 The new AI lock-in
+
 > 📊 Level ⭐⭐ | 9.6KB | `entities/new-ai-lock-in.md`
 
 ## 核心要点

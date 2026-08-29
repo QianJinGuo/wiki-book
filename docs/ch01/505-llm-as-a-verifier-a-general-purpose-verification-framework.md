@@ -1,5 +1,7 @@
 # LLM-as-a-Verifier: A General-Purpose Verification Framework
 
+## Ch01.505 LLM-as-a-Verifier: A General-Purpose Verification Framework
+
 > 📊 Level ⭐⭐ | 6.6KB | `entities/llm-as-a-verifier-a-general-purpose-verification-framework.md`
 
 # LLM-as-a-Verifier: A General-Purpose Verification Framework
@@ -49,7 +51,7 @@ LLM-as-a-Verifier 是斯坦福 AI Lab 与 UC Berkeley Sky Computing Lab 联合�
 - [LLM-as-a-Verifier（同源实体）](297-llm-as-a-verifier-a-general-purpose-verification.html)
 - [Verifier 驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
 - [RLVR：可验证推理强化学习](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)
-- [LLM-as-a-Judge 实践案例](215-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
+- [LLM-as-a-Judge 实践案例](214-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
 - [SWE-bench Agent 评估方法论](../ch03/004-agent.html)
 - Agent 评估基准体系
 - [LLM 研究前沿 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)

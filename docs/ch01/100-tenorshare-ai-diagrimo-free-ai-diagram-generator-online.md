@@ -1,5 +1,7 @@
 # Tenorshare AI Diagrimo​ - Free AI Diagram Generator Online
 
+## Ch01.100 Tenorshare AI Diagrimo​ - Free AI Diagram Generator Online
+
 > 📊 Level ⭐ | 5.9KB | `entities/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md`
 
 ## 核心要点

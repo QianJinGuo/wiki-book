@@ -1,5 +1,7 @@
 # The new AI lock-in
 
+## Ch01.424 The new AI lock-in
+
 > 📊 Level ⭐⭐ | 7.8KB | `entities/new-lock.md`
 
 # The new AI lock-in
@@ -49,10 +51,10 @@ Model Context Protocol 是有用的：它把模型连接工具与数据源的成
 ## 相关实体
 
 - [Model Context Protocol (MCP)](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
-- [企业级 Agent 编排](../ch04/360-agent-orchestration.html)
+- [企业级 Agent 编排](../ch04/241-agent-orchestration.html)
 - [Claude Cowork](339-claude.html)
 - [LangGraph](../ch04/165-langgraph.html)
-- [Agent 编排](../ch04/360-agent-orchestration.html)
+- [Agent 编排](../ch04/241-agent-orchestration.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-lock.md)
 

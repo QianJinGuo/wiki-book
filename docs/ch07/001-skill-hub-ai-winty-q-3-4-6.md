@@ -1,5 +1,7 @@
 # Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理
 
+## Ch07.001 Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理
+
 > 📊 Level ⭐⭐ | 41.8KB | `entities/skill-hub-organization-asset-winty.md`
 
 # Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）
@@ -285,7 +287,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 
 **关键实践**：每个 Skill 在进入 Hub 时，至少需要准备一个**最小可用测试集**（哪怕是 5-10 个历史输入输出对），用于后续版本比较。
 
-这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](../ch01/283-agent-skill.html) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
+这是"测得准"的最小实现——不是说要有一整套复杂的 Benchmark，而是每次 Skill 改动后能自动跑历史回放、生成正确率报告，证明新版本不比旧版本差。[Agent Skill Writing Evaluation](../ch01/284-agent-skill.html) 中提到的"基于回放的回归评估"是这个思路的技术实现。**不要等到 Skill 质量完美再进 Hub**——进 Hub 本身就是让 Skill 接受组织检验的开始。
 
 ### 4. 设计 Skill 的 Fork / 分支策略，明确所有权边界
 

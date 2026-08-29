@@ -1,5 +1,7 @@
 # OpenAI Codex Sites：AI 一句话建站部署，Cloudflare Worker + D1 + R2 全套（极客之家译介）
 
+## Ch01.689 OpenAI Codex Sites：AI 一句话建站部署，Cloudflare Worker + D1 + R2 全套（极客之家译介）
+
 > 📊 Level ⭐⭐ | 2.5KB | `entities/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md`
 
 # OpenAI Codex Sites：AI 一句话建站部署，Cloudflare Worker + D1 + R2 全套（极客之家译介）

@@ -1,5 +1,7 @@
 # Agent Reliability: Context Drift & Tool Calling Hallucination
 
+## Ch04.138 Agent Reliability: Context Drift & Tool Calling Hallucination
+
 > 📊 Level ⭐⭐ | 12.5KB | `entities/agent-reliability-context-drift-tool-hallucination.md`
 
 ## 核心问题
@@ -93,10 +95,10 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
-- [你不知道的 Agent 原理架构与工程实践](274-agent-principle-architecture-engineering-practice.html)
-- [AI Coding Agent 记忆系统](251-ai-coding-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](275-agent-principle-architecture-engineering-practice.html)
+- [AI Coding Agent 记忆系统](252-ai-coding-agent.html)
 - [柚漫剧 AI 全流程提效拆解](135-ai.html)
-- [Agent Skill 设计模式](300-agent-skills.html)
+- [Agent Skill 设计模式](301-agent-skills.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)

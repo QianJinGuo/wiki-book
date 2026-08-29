@@ -1,5 +1,7 @@
 # AgentScope Java 2.0：企业级分布式 Harness 框架
 
+## Ch11.209 AgentScope Java 2.0：企业级分布式 Harness 框架
+
 > 📊 Level ⭐⭐⭐ | 27.5KB | `entities/agentscope-java-2.0-enterprise-distributed-harness.md`
 
 # AgentScope Java 2.0：企业级分布式 Harness 框架
@@ -322,7 +324,7 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 
 ### 事件流架构的可观测性设计
 
-将所有 Middleware 的输入输出抽象为统一事件流，是实现完整可观测性的关键。Kafka/Pulsar 作为事件总线，支持实时追踪、回放分析和指标聚合三个层次的观测需求。[Loop Engineering](../ch04/348-loop-engineering.html) 中也强调了"过程可观测性"对长程 Agent 任务的重要性——Agent 的决策过程往往是隐式的，只有记录完整的事件轨迹才能真正做到事后分析和问题定位。
+将所有 Middleware 的输入输出抽象为统一事件流，是实现完整可观测性的关键。Kafka/Pulsar 作为事件总线，支持实时追踪、回放分析和指标聚合三个层次的观测需求。[Loop Engineering](../ch04/349-loop-engineering.html) 中也强调了"过程可观测性"对长程 Agent 任务的重要性——Agent 的决策过程往往是隐式的，只有记录完整的事件轨迹才能真正做到事后分析和问题定位。
 
 ### Open SWE 与 AgentScope 的殊途同归
 
@@ -340,7 +342,7 @@ AbstractFileSystem 将租户隔离从进程/容器级别降低到接口级别，
 - [Iii Dev Worker Trigger Function](../ch01/307-iii-dev.html)
 - [AgentScope Java Harness Framework 42KB](../ch05/008-harness.html) — 同 AgentScope Java 2.0 早期综述
 - [AgentScope Builder](../ch05/035-agent-harness.html) — 同生态自进化视角
-- [Loop Engineering](../ch04/348-loop-engineering.html) — 同样强调"组织级流程约束"
+- [Loop Engineering](../ch04/349-loop-engineering.html) — 同样强调"组织级流程约束"
 - [MXC Execution Containers](../ch04/135-ai.html) — 类似沙箱机制对比
 - [Agent Harness Engineering Survey](../ch05/057-harness-engineering.html) — Harness 行业全景
 
@@ -364,7 +366,7 @@ Middleware 链的执行顺序直接影响安全性和正确性。Auth Middleware
 
 ### 5. Workspace 应作为代码仓库的一部分进行版本化管理
 
-工作区目录（AGENTS.md、MEMORY.md、skills/、subagents/）应当与应用程序代码一起存储在同一个 Git 仓库中，进行版本化管理。这样做有两个好处：团队规范以文件形式生效（commit-style skill），且 CI 可以验证 Workspace 配置的正确性。参见 [Loop Engineering](../ch04/348-loop-engineering.html) 对"团队规范即代码"理念的强调。
+工作区目录（AGENTS.md、MEMORY.md、skills/、subagents/）应当与应用程序代码一起存储在同一个 Git 仓库中，进行版本化管理。这样做有两个好处：团队规范以文件形式生效（commit-style skill），且 CI 可以验证 Workspace 配置的正确性。参见 [Loop Engineering](../ch04/349-loop-engineering.html) 对"团队规范即代码"理念的强调。
 
 ---
 

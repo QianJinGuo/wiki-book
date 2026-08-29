@@ -1,5 +1,7 @@
 # 一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架
 
+## Ch04.051 一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架
+
 > 📊 Level ⭐⭐ | 20.2KB | `entities/agent-harness-12-components-7-decisions.md`
 
 # 一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架

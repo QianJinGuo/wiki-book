@@ -1,5 +1,7 @@
 # Agent 自我改进的六条路
 
+## Ch04.036 Agent 自我改进的六条路
+
 > 📊 Level ⭐⭐ | 24.0KB | `entities/agent-self-improvement-six-mechanisms.md`
 
 ## 概述
@@ -139,8 +141,8 @@ graph TB
 ## 相关实体
 - [foundation capital agent era six insights](134-foundation-capital-agent-era-six-insights.html)
 - [Hermes Agent 自进化机制源码解析](161-hermes-agent.html)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](306-memento-skills-agent.html)
-- [AI Coding Agent 记忆系统](251-ai-coding-agent.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](307-memento-skills-agent.html)
+- [AI Coding Agent 记忆系统](252-ai-coding-agent.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/008-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/004-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
@@ -160,7 +162,7 @@ graph TB
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](135-ai.html)
 - [GBrain](../ch01/194-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
-- [SkillClaw](333-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](334-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/016-hermes-skill.html)
 - [OpenHuman: AI Agent 持久记忆框架](133-agent-memory.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)

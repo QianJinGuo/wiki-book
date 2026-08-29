@@ -1,5 +1,7 @@
 # 从 pi-main 源码拆解：顶尖 AI Agent 的工程设计（17 维度全解）
 
+## Ch04.144 从 pi-main 源码拆解：顶尖 AI Agent 的工程设计（17 维度全解）
+
 > 📊 Level ⭐⭐ | 12.3KB | `entities/pi-main-agent-engineering-17-dimensions.md`
 
 [Pi Main Agent Engineering 17 Dimensions](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-main-agent-engineering-17-dimensions.md)
@@ -148,7 +150,7 @@ pi 的扩展性验证了一个原则：**核心引擎只暴露最小必要接口
 
 ## 相关实体
 - [Ai 内容创作开始进入画布 Agent时代](../ch03/004-agent.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](285-score-by-collisions-patch-by-panic.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](286-score-by-collisions-patch-by-panic.html)
 - [Alibabacloud Cms Manage Skill Natural Language Observability](../ch07/054-skill.html)
 - [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](https://github.com/QianJinGuo/wiki/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)
 - [Starfilm Ai Agent Ai Short Film Platform](423-ai-agent.html)

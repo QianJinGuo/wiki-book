@@ -1,5 +1,7 @@
 # How AI changes software P&L
 
+## Ch01.074 How AI changes software P&L
+
 > 📊 Level ⭐ | 7.2KB | `entities/gptomics-com-how-ai-changes-software-p-l.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gptomics-com-how-ai-changes-software-p-l.md)

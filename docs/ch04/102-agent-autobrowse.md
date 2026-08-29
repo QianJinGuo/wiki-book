@@ -1,5 +1,7 @@
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 
+## Ch04.102 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
+
 > 📊 Level ⭐⭐ | 15.0KB | `entities/autobrowse-browserbase-persistent-skill-files.md`
 
 ## 背景：探索税（Discovery Tax）
@@ -35,7 +37,7 @@ Agent 读自己的 trace，对自身行为做元认知反思：
 - 在哪里卡住了？
 - 在哪里靠猜测蒙混过关？
 - 哪些步骤消耗了不必要的 token？
-- 有没有可以用更轻量的确定性工具替代的步骤？ See also [Agent Memory Architecture](320-perplexity-brain-self-improving-agent-memory-architecture.html)
+- 有没有可以用更轻量的确定性工具替代的步骤？ See also [Agent Memory Architecture](321-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ### 第四步：迭代（Iterate）
 外层循环维护一个 `strategy.md` 文件——相当于 Agent 的学习笔记。每次迭代结束把观察写进去，下次迭代开始时 Agent 先读这份笔记，从上次的改进成果出发。**知识在迭代间叠加**，而不是每次从零归零。

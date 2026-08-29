@@ -1,5 +1,7 @@
 # Open and Closed Models Are on Different Exponentials
 
+## Ch01.496 Open and Closed Models Are on Different Exponentials
+
 > 📊 Level ⭐⭐ | 6.8KB | `entities/interconnects-ai-p-open-and-closed-models-are-on-different.md`
 
 # Open and Closed Models Are on Different Exponentials

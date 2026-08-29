@@ -1,5 +1,7 @@
 # LLM RL中的熵 Part 2: 熵对训练的调控
 
+## Ch01.730 LLM RL中的熵 Part 2: 熵对训练的调控
+
 > 📊 Level ⭐⭐⭐ | 33.5KB | `entities/llm-rl中的熵-part-2-熵对训练的调控.md`
 
 ## 背景：为什么要在训练中调控熵？

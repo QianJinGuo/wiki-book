@@ -1,5 +1,7 @@
 # Skill 版本管理五大原则：从越改越差到持续演进
 
+## Ch07.042 Skill 版本管理五大原则：从越改越差到持续演进
+
 > 📊 Level ⭐⭐ | 8.2KB | `entities/skill-version-management-semantic-versioning-practices-winty.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-version-management-semantic-versioning-practices-winty.md)

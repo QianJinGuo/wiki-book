@@ -1,5 +1,7 @@
 # Hermes Agent 记忆系统
 
+## Ch04.175 Hermes Agent 记忆系统
+
 > 📊 Level ⭐⭐ | 11.0KB | `entities/hermes-agent-memory-system-architecture.md`
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-architecture.md)

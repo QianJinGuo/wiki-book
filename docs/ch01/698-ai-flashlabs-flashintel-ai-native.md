@@ -1,5 +1,7 @@
 # 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
 
+## Ch01.698 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
+
 > 📊 Level ⭐⭐ | 2.4KB | `entities/flashlabs-vertical-ai-startup-pivot.md`
 
 # 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
@@ -29,7 +31,7 @@ Jasper 案例：18个月冲到15亿美元估值，GPT原生能力开放后 ARR �
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch04/176-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 
 ## 相关实体
 

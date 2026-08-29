@@ -1,5 +1,7 @@
 # Agent Executor, Google's distributed Agent Runtime
 
+## Ch01.386 Agent Executor, Google's distributed Agent Runtime
+
 > 📊 Level ⭐⭐ | 8.7KB | `entities/agentexecutorgooglesdistributedagentruntime.md`
 
 ## 核心要点
@@ -15,8 +17,8 @@
 
 ## 相关实体
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/004-agent.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/300-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/300-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/301-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/301-agent-skills.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [Anthropic Google Agent Skills Design Patterns](../ch04/157-anthropic-google-agent-skills.html)
 

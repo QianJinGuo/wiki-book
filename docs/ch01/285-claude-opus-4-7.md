@@ -1,5 +1,7 @@
 # Claude Opus 4.7 发布分析
 
+## Ch01.285 Claude Opus 4.7 发布分析
+
 > 📊 Level ⭐⭐ | 11.6KB | `entities/claude-opus-4-7-launch.md`
 
 ## 核心升级
@@ -105,7 +107,7 @@
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/057-claude-code.html)
 - [claude-code-agent-view](../ch03/048-claude-code-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/300-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/423-ai-agent.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](557-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)

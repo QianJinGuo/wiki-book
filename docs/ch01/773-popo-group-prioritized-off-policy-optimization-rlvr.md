@@ -1,5 +1,7 @@
 # POPO (Group Prioritized Off-Policy Optimization)：清华 RLVR 训练高效组级回放框架
 
+## Ch01.773 POPO (Group Prioritized Off-Policy Optimization)：清华 RLVR 训练高效组级回放框架
+
 > 📊 Level ⭐⭐⭐ | 3.9KB | `entities/tsinghua-popo-group-prioritized-off-policy-optimization-rlvr.md`
 
 ## 核心概述

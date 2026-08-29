@@ -1,5 +1,7 @@
 # LangSmith Engine: Trace-Based Self-Improving Agent
 
+## Ch04.028 LangSmith Engine: Trace-Based Self-Improving Agent
+
 > 📊 Level ⭐⭐ | 26.7KB | `entities/langsmith-engine-self-improving-agent-trace-based.md`
 
 # LangSmith Engine: Trace-Based Self-Improving Agent

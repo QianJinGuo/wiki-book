@@ -1,5 +1,7 @@
 # Mistral OCR 4: SOTA OCR for Document Intelligence
 
+## Ch01.552 Mistral OCR 4: SOTA OCR for Document Intelligence
+
 > 📊 Level ⭐⭐ | 5.8KB | `entities/mistral-ai-news-ocr-4.md`
 
 # Mistral OCR 4: SOTA OCR for Document Intelligence

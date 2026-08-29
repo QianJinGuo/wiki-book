@@ -1,5 +1,7 @@
 # ICLR 2026 Scenethesis：英伟达 & 普渡大学用 Agent 闭环实现文生 3D
 
+## Ch01.327 ICLR 2026 Scenethesis：英伟达 & 普渡大学用 Agent 闭环实现文生 3D
+
 > 📊 Level ⭐⭐ | 10.1KB | `entities/3citzkdleedm0olz9wudrg.md`
 
 # ICLR 2026 Scenethesis：英伟达 & 普渡大学用 Agent 闭环实现文生 3D

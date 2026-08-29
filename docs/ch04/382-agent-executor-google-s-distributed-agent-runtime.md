@@ -1,5 +1,7 @@
 # Agent Executor, Google's distributed Agent Runtime
 
+## Ch04.382 Agent Executor, Google's distributed Agent Runtime
+
 > 📊 Level ⭐⭐ | 4.9KB | `entities/agent-executor-googles-distributed-agent-runtime-da1bb4.md`
 
 ## 核心要点
@@ -35,11 +37,11 @@ Agent Executor 的开放性设计——支持 LangChain/LangGraph、ADK、以及
 - **通过 A2A 协议实现跨组织 agent 协作**：Agent2Agent Protocol 的开放性意味着不同组织开发的 agent 可以互操作。在设计 agent 系统时，应考虑支持 A2A 以便未来与其他供应商的 agent 无缝集成。
 
 ## 相关实体
-- [Agentexecutorgooglesdistributedagentruntime](270-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](289-agentrun.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [A Bitter Lesson For Data Filtering E8807D](../ch01/537-a-bitter-lesson-for-data-filtering.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](300-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](300-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](301-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](301-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
 

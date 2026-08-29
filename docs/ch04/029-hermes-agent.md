@@ -1,5 +1,7 @@
 # Hermes Agent 自进化源码分析
 
+## Ch04.029 Hermes Agent 自进化源码分析
+
 > 📊 Level ⭐⭐ | 26.4KB | `entities/hermes-agent-self-evolving-source-analysis.md`
 
 前言笔者之前讲解了claude code这一code agent脚手架(两万字详解Claude Code源码核心机制)，和cc相比，最近大火的 hermes agent 定位则是更加日常的、通用的agent脚手架，体现在system prompt内容（强调用来完成问答、代码、分析、创作、工具执行等全场景任务）、工具集设计（更加丰富的Web 与浏览器工具、文本&语音等多模态工具）、多平台使用（Telegram、Discord、微信等多平台发送消息、调用远端执行后段）等方面。hermes agent更加强调是其"自进化（self-improve）"机制，本文将会基于hermes agent，讲解如果想让agent脚手架具备自进化能力，需要配套构建哪些机制。
@@ -85,7 +87,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 
 ## 相关实体
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](135-ai.html)
-- [AI Coding Agent 记忆系统](251-ai-coding-agent.html)
+- [AI Coding Agent 记忆系统](252-ai-coding-agent.html)
 - [AI Agent 记忆系统架构](131-how-ai-agent-memory-works.html)
 - [Self-Evolving Agents 系统性综述](181-self-evolving-agents.html)
 - [Hermes Agent 记忆系统深度拆解](161-hermes-agent.html)
@@ -93,7 +95,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-- [SkillClaw](333-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](334-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/016-hermes-skill.html)
 - [GBrain](../ch01/194-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)

@@ -1,5 +1,7 @@
 # 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
 
+## Ch04.026 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
+
 > 📊 Level ⭐⭐ | 26.8KB | `entities/skill-formal-theory-survey-10papers.md`
 
 [Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-formal-theory-survey-10papers.md)
@@ -254,7 +256,7 @@ PrefixSpan/CloSpan只能挖掘**行为模式**，无法挖掘**语义意图**。
 - [Ai Skill Skill Creator 源码拆解](234-skill-skill.html)
 - [Hermes Skill System Winty](../ch07/016-hermes-skill.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](../ch05/057-harness-engineering.html)
-- [Agent Skill Writing Guide](../ch01/283-agent-skill.html)
+- [Agent Skill Writing Guide](../ch01/284-agent-skill.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](423-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-formal-theory-survey-10papers.md)

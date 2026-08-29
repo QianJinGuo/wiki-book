@@ -1,5 +1,7 @@
 # DeepSeek V4 DS4C Antirez 本地推理实践
 
+## Ch09.037 DeepSeek V4 DS4C Antirez 本地推理实践
+
 > 📊 Level ⭐⭐ | 12.5KB | `entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md`
 
 # DeepSeek V4 本地推理：antirez 的专属高速公路

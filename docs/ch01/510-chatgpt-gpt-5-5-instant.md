@@ -1,5 +1,7 @@
 # ChatGPT默认模型大升级，GPT-5.5 Instant正式上线：新增记忆来源功能
 
+## Ch01.510 ChatGPT默认模型大升级，GPT-5.5 Instant正式上线：新增记忆来源功能
+
 > 📊 Level ⭐⭐ | 6.6KB | `entities/chatgpt默认模型大升级gpt-55-instant正式上线新增记忆来源功能.md`
 
 ## 深度分析

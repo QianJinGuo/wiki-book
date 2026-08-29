@@ -1,5 +1,7 @@
 # Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例
 
+## Ch11.059 Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例
+
 > 📊 Level ⭐⭐ | 11.2KB | `entities/aws-bedrock-serverless-async-inference-multimodal.md`
 
 ["Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例"](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-serverless-async-inference-multimodal.md)
@@ -145,7 +147,7 @@ SQS 和 Lambda 的成本结构：
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/383-amazon-bedrock-agentcore.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/383-amazon-bedrock-agentcore.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/383-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/308-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](135-amazon-bedrock.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](135-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
 
 ---

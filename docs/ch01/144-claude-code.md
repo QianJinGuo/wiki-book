@@ -1,5 +1,7 @@
 # Claude Code 源码核心机制详解
 
+## Ch01.144 Claude Code 源码核心机制详解
+
 > 📊 Level ⭐⭐ | 31.6KB | `entities/claude-code-core-internals.md`
 
 ## 核心设计亮点
@@ -252,7 +254,7 @@ Hooks 系统是 Claude Code 区别于其他框架最显著的能力，但它同�
 - [Lessons from Building Claude Code: Seeing like an Agent](../ch03/057-claude-code.html)
 - [Claude Code vs OpenClaw Agent 记忆系统对比](../ch03/057-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](../ch03/057-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/243-claude-code-subagent.html)
+- [Claude Code Subagent 上下文卫生](../ch04/244-claude-code-subagent.html)
 - [深度拆解 Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/048-claude-code-agent.html)
 - [Claude Code 架构深度解析](../ch03/057-claude-code.html)
 - [From Agent Protocol to Harness Skill](../ch05/067-harness-skill.html)
@@ -262,7 +264,7 @@ Hooks 系统是 Claude Code 区别于其他框架最显著的能力，但它同�
 - [Claude Code 设计原则与对照分析](../ch03/057-claude-code.html)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](../ch07/006-claude-code-skills-mcp-rules.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/057-claude-code.html)
-- [Claude Code MCP Server](../ch07/026-claude-code-mcp-server.html)
+- [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)

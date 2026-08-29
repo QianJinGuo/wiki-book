@@ -1,5 +1,7 @@
 # How far behind are open models? (LessWrong 2026-05)
 
+## Ch01.362 How far behind are open models? (LessWrong 2026-05)
+
 > 📊 Level ⭐⭐ | 9.1KB | `entities/how-far-behind-are-open-models-2026.md`
 
 # How far behind are open models? (LessWrong 2026-05)
@@ -145,7 +147,7 @@ Public benchmark 由于数据公开且分数透明，开源社区可以针对性
 
 ## 相关实体
 - [Mollick Ai 32 Otters Benchmark](403-mollick-ai-32.html)
-- [Some Ideas For What Comes Next May 2026](788-some-ideas-for-what-comes-next-may-2026-interconnects.html)
+- [Some Ideas For What Comes Next May 2026](789-some-ideas-for-what-comes-next-may-2026-interconnects.html)
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/004-agent.html)
 - [Langsmith Evaluation Concepts](https://github.com/QianJinGuo/wiki/blob/main/entities/langsmith-evaluation-concepts.md)

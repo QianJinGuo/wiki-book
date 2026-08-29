@@ -1,5 +1,7 @@
 # Thinking Machines Lab
 
+## Ch01.487 Thinking Machines Lab
+
 > 📊 Level ⭐⭐ | 6.9KB | `entities/thinking-machines-lab.md`
 
 ## 核心信息

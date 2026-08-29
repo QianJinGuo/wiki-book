@@ -1,5 +1,7 @@
 # LangChain用Agent做销售获客，3个月转化率提升2.5倍，看完后我发现，国内 Agent 落地的方法都错了
 
+## Ch01.365 LangChain用Agent做销售获客，3个月转化率提升2.5倍，看完后我发现，国内 Agent 落地的方法都错了
+
 > 📊 Level ⭐⭐ | 9.0KB | `entities/langchain用agent做销售获客3个月转化率提升25倍看完后我发现国内-agent-落地的方法都错了.md`
 
 # LangChain 用 Agent 做销售获客，3个月转化率提升2.5倍

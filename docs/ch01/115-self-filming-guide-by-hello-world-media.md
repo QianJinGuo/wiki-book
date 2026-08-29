@@ -1,5 +1,7 @@
 # Self-Filming Guide by Hello World Media
 
+## Ch01.115 Self-Filming Guide by Hello World Media
+
 > 📊 Level ⭐ | 4.6KB | `entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md`
 
 ## 核心要点

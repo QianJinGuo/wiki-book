@@ -1,5 +1,7 @@
 # Open Defense Initiative | depthfirst
 
+## Ch01.547 Open Defense Initiative | depthfirst
+
 > 📊 Level ⭐⭐ | 5.9KB | `entities/open-defense-initiative-depthfirst.md`
 
 # Open Defense Initiative | depthfirst

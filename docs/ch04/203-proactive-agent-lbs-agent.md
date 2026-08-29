@@ -1,5 +1,7 @@
 # 高德Proactive Agent — LBS场景时空思考型主动服务Agent
 
+## Ch04.203 高德Proactive Agent — LBS场景时空思考型主动服务Agent
+
 > 📊 Level ⭐⭐ | 10.2KB | `entities/amap-proactive-agent-lbs-spacetime.md`
 
 ## 核心定位

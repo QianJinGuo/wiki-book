@@ -1,5 +1,7 @@
 # 让 Agent 自主完成任务
 
+## Ch01.383 让 Agent 自主完成任务
+
 > 📊 Level ⭐⭐ | 8.7KB | `entities/cli-anything-wechat-demo.md`
 
 # 让 Agent 自主完成任务
@@ -84,7 +86,7 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Tencentdb Agent Memory Context Offloading](../ch04/133-agent-memory.html)
 - [agent 开发范式演进：从环境工程出发](../ch03/004-agent.html)

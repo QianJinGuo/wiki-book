@@ -1,5 +1,7 @@
 # NVIDIA GPU Kernel 翻译：Cute / Python / Julia
 
+## Ch03.037 NVIDIA GPU Kernel 翻译：Cute / Python / Julia
+
 > 📊 Level ⭐⭐ | 17.5KB | `entities/nvidia-gpu-kernel-translation-cute-python-julia.md`
 
 # Automating GPU Kernel Translation with AI Agents: cuTile Python to cuTile.jl | NVIDIA Technical Blog

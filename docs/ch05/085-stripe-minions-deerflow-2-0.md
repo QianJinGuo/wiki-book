@@ -1,5 +1,7 @@
 # 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论
 
+## Ch05.085 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论
+
 > 📊 Level ⭐⭐⭐ | 14.3KB | `entities/wall-not-model-harness-three-case-studies-stripe-deerflow-ant.md`
 
 # 墙比模型更重要：三家公司独立得出同一结论

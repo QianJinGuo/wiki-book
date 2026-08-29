@@ -1,5 +1,7 @@
 # FastContext（微软开源 Coding Agent 仓库探索子代理）
 
+## Ch09.117 FastContext（微软开源 Coding Agent 仓库探索子代理）
+
 > 📊 Level ⭐⭐⭐ | 12.4KB | `entities/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md`
 
 # FastContext（微软开源 Coding Agent 仓库探索子代理）
@@ -120,7 +122,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md)
 
 - [Headroom 是怎么省上下文的](../ch03/004-agent.html)（VibeCoder 上下文优化系列前篇：工具输出字节级压缩；FastContext 偏仓库探索分工，角度互补）
-- [AI Coding Agent 质量防御的五个控制机制](../ch04/251-ai-coding-agent.html)
+- [AI Coding Agent 质量防御的五个控制机制](../ch04/252-ai-coding-agent.html)
 - [Coding Agent 在百度的落地实践](038-coding-agent.html)
 - [AgentMemory：Coding Agent 本地记忆](015-agentmemory-coding-agent.html)
 - [阿里 LoongSuite Pilot：Coding Agent 从黑盒到透明](038-coding-agent.html)

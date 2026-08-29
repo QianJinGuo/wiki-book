@@ -1,5 +1,7 @@
 # 三剑合璧Quick Suite + Agent Core + Kiro联动实践：海外物流报价助手实战 | 亚马逊AWS官方博客
 
+## Ch11.015 三剑合璧Quick Suite + Agent Core + Kiro联动实践：海外物流报价助手实战 | 亚马逊AWS官方博客
+
 > 📊 Level ⭐⭐ | 21.7KB | `entities/quick-suite-agent-core-kiro-logistics-quote-assistant.md`
 
 ## 概述

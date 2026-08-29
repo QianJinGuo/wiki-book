@@ -1,5 +1,7 @@
 # Harness如何支撑Agent在生产环境稳定运行？
 
+## Ch04.112 Harness如何支撑Agent在生产环境稳定运行？
+
 > 📊 Level ⭐⭐ | 14.2KB | `entities/harness-production-agent-engineering-deficit.md`
 
 ## 核心概念：工程赤字（Engineering Deficit）
@@ -123,11 +125,11 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](300-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](301-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/057-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/057-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
-- [Claude Code MCP Server](../ch07/026-claude-code-mcp-server.html)
+- [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
 
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/004-agent.html)

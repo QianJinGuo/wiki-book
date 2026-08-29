@@ -1,5 +1,7 @@
 # Qoder 1.0正式发布！从AI IDE迈向智能体自主开发工作台
 
+## Ch01.109 Qoder 1.0正式发布！从AI IDE迈向智能体自主开发工作台
+
 > 📊 Level ⭐ | 5.0KB | `entities/qoder-1-0-release-ai-ide-agent-workbench.md`
 
 ## 核心要点

@@ -1,5 +1,7 @@
 # SkillOpt-Lite：一行Vibe指令加速Agent技能自进化
 
+## Ch04.412 SkillOpt-Lite：一行Vibe指令加速Agent技能自进化
+
 > 📊 Level ⭐⭐ | 3.8KB | `entities/skillopt-lite-zero-order-agent-skill-optimization.md`
 
 # SkillOpt-Lite：一行Vibe指令加速Agent技能自进化

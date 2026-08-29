@@ -1,5 +1,7 @@
 # LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
+## Ch01.425 LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
+
 > 📊 Level ⭐⭐ | 7.8KB | `entities/blog-ai-chat-llmreaper.md`
 
 # LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions

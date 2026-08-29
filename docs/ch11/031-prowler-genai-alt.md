@@ -1,5 +1,7 @@
 # 基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）
 
+## Ch11.031 基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）
+
 > 📊 Level ⭐⭐ | 14.3KB | `entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
@@ -64,7 +66,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](217-amazon-nova.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/308-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](211-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](135-amazon-bedrock.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](135-amazon-bedrock.html)

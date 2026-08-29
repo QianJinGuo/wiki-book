@@ -1,5 +1,7 @@
 # SEO is a product, AEO is brand
 
+## Ch01.410 SEO is a product, AEO is brand
+
 > 📊 Level ⭐⭐ | 8.0KB | `entities/p-seo-is-a-product-aeo-is-brand.md`
 
 # SEO is a product, AEO is brand

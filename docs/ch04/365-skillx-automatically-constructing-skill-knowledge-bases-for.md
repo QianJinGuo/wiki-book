@@ -1,5 +1,7 @@
 # SkillX: Automatically Constructing Skill Knowledge Bases for Agents
 
+## Ch04.365 SkillX: Automatically Constructing Skill Knowledge Bases for Agents
+
 > 📊 Level ⭐⭐ | 5.4KB | `entities/skillx-zhejiang-university.md`
 
 # SkillX: Automatically Constructing Skill Knowledge Bases for Agents

@@ -1,5 +1,7 @@
 # 使用 Amazon Cognito 多区域复制提高应用程序韧性
 
+## Ch11.201 使用 Amazon Cognito 多区域复制提高应用程序韧性
+
 > 📊 Level ⭐⭐ | 2.6KB | `entities/使用-amazon-cognito-多区域复制提高应用程序韧性.md`
 
 # 使用 Amazon Cognito 多区域复制提高应用程序韧性
@@ -19,7 +21,7 @@
 
 ### 关联实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)

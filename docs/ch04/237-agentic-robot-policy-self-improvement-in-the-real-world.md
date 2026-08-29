@@ -1,5 +1,7 @@
 # Agentic Robot Policy Self-Improvement in the Real World
 
+## Ch04.237 Agentic Robot Policy Self-Improvement in the Real World
+
 > 📊 Level ⭐⭐ | 9.1KB | `entities/nvidia-enpire-agentic-robot-policy-self-improvement.md`
 
 # Agentic Robot Policy Self-Improvement in the Real World

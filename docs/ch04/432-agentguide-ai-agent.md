@@ -1,5 +1,7 @@
 # AgentGuide AI Agent 核心概念速查
 
+## Ch04.432 AgentGuide AI Agent 核心概念速查
+
 > 📊 Level ⭐⭐ | 2.5KB | `entities/agent-guide-core-concepts-overview.md`
 
 # AgentGuide AI Agent 核心概念速查

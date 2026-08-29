@@ -1,5 +1,7 @@
 # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
 
+## Ch01.619 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
+
 > 📊 Level ⭐⭐ | 4.2KB | `entities/ai-friendly-architecture-design-taobao.md`
 
 # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
@@ -14,7 +16,7 @@
 - [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
 - [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](../ch03/004-agent.html)
 - [垂类 ai 创企的自救：flashlabs 从 flashintel 到 ai native](../ch04/135-ai.html)
-- [from silos to service topology: why netflix built a real-tim](../ch11/006-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
+- [from silos to service topology: why netflix built a real-tim](../ch11/116-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
 - [nemotron 3.5 content safety: customizable multimodal safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)
 - [perplexity 首次公开了内部 skill 设计指南](../ch07/054-skill.html)
 - [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)

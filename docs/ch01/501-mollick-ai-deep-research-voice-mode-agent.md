@@ -1,5 +1,7 @@
 # Mollick 实用 AI 选型指南：模型选择·Deep Research·Voice Mode·Agent 工作流
 
+## Ch01.501 Mollick 实用 AI 选型指南：模型选择·Deep Research·Voice Mode·Agent 工作流
+
 > 📊 Level ⭐⭐ | 6.7KB | `entities/using-ai-right-now-mollick-quick-guide.md`
 
 # Mollick 实用 AI 选型指南：模型选择·Deep Research·Voice Mode·Agent 工作流

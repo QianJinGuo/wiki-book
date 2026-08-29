@@ -1,5 +1,7 @@
 # Enterprise Software Moats in the Agent Era — 系统性护城河分析框架
 
+## Ch04.160 Enterprise Software Moats in the Agent Era — 系统性护城河分析框架
+
 > 📊 Level ⭐⭐ | 11.6KB | `entities/enterprise-software-moats-agent-era.md`
 
 ## 核心问题
@@ -106,7 +108,7 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [快手首个打工人Agent](../ch03/004-agent.html)
 - [from](../ch01/195-from-system-of-record-to-system-of-intelligence.html)
 - [From System Of Record To System Of Intelligence](../ch01/195-from-system-of-record-to-system-of-intelligence.html)
-- [meet customers where they are: agentforce contact center now](316-meet-customers-where-they-are-agentforce-contact-center-now.html)
+- [meet customers where they are: agentforce contact center now](317-meet-customers-where-they-are-agentforce-contact-center-now.html)
 
 ---
 

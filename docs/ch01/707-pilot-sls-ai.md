@@ -1,5 +1,7 @@
 # 龙套件 Pilot SLS AI 编程指标实践
 
+## Ch01.707 龙套件 Pilot SLS AI 编程指标实践
+
 > 📊 Level ⭐⭐ | 2.3KB | `entities/loongsuite-pilot-sls-ai-coding-metrics-practice.md`
 
 # Loongsuite Pilot Sls Ai Coding Metrics Practice

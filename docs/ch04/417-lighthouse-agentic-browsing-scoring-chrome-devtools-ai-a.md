@@ -1,5 +1,7 @@
 # Lighthouse Agentic Browsing Scoring — Chrome DevTools 为 AI Agent 交互评估网站
 
+## Ch04.417 Lighthouse Agentic Browsing Scoring — Chrome DevTools 为 AI Agent 交互评估网站
+
 > 📊 Level ⭐⭐ | 3.5KB | `entities/lighthouse-agentic-browsing-scoring.md`
 
 # Lighthouse Agentic Browsing Scoring

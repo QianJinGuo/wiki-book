@@ -46,7 +46,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "长上下文成本优化成为 2026 年 LLM 架构设计的主线；2026 年发布的新一代开源模型（Gemma 4、Laguna XS.2、ZAYA1-8B、DeepSeek V4）不约而同地将「降低长上下文推理成本」作为架构核心目标。这并非通过简单缩小模型参数量实现，而是通过大量结构级精细优化——跨层 KV 共享、分层注意力预算、压缩注意力等——在保持模型容量的同时减少计算和存储开销。这标志着 LLM 架构设计从「能力优先」向「效率与能力并重」的转型",
-     "words": 17857,
+     "words": 17750,
      "level": 3
     },
     {
@@ -57,7 +57,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "How LLMs Actually Work: 0xkato Transformer Walkthrough；📊 Level ⭐⭐⭐ | 8.8KB | entities/how-llms-actually-work-0xkato.md。",
-     "words": 4938,
+     "words": 4870,
      "level": 3
     },
     {
@@ -68,7 +68,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "TokenSpeed 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 Claude Code、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。；推理优化是 Agent 落地的关键瓶颈：选择 LLM 服务商或部署方案时，推理延迟应作为核心评估维度，尤其在 Coding Age。",
-     "words": 4012,
+     "words": 3935,
      "level": 2
     }
    ],
@@ -116,7 +116,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "Subagents机制揭示了当前AI编程工具的一个核心工程挑战：上下文污染问题。当Claude Code运行超过半小时后，主窗口可能积累80k token的噪音——搜索结果、日志、目录列表等一次性信息填满了窗口，而真正重要的项目事实和决策依据反而被稀释。这种\"变脏\"的过程不是简单的上下文溢出，而是信息密度的恶化。；Subagent的核心价值在于主动的信息过滤和压缩。它不是简单地把任务分派给多个Agent，而是建立了一种上下文工作区的边界管理机制：探索性工作在独立窗口完成，主窗口只接收高密度的结论。Kaxil Naik的那句\"Harness matters more than the model\"点出了本质——模型能力固然重要，但长任务能否稳定运行更多取决于外围的工程结构",
-     "words": 19029,
+     "words": 18981,
      "level": 3
     },
     {
@@ -127,7 +127,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "Amazon Nova 2 内容审核实战指南；Prompt engineering 在内容审核中的应用。",
-     "words": 5030,
+     "words": 4970,
      "level": 2
     },
     {
@@ -138,7 +138,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "原文发表于 AI 研究者 @engkhairallah1 的 Twitter/X 帖子，核心主张是：当前大多数\"提示词合集\"过于泛化（\"帮我写博客\"\"总结这段文字\"），它们是 wish（愿望） 而非 prompt（提示词）。真正的工程化提示词包含五个要素——角色设定、上下文约束、输出格式、质量标准、具体示例——并且在 Claude、ChatGPT、Gemini 三大模型上都做过交叉验证。；覆盖六大场景：写作与内容（10）、分析与策略（10）、技术开发（10）、生产力（5）、数据解读（5）、沟通（5），共 40 个模板",
-     "words": 4461,
+     "words": 4430,
      "level": 2
     }
    ],
@@ -180,7 +180,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Harness 模式正在成为 Agent 架构的\"操作系统层\"。传统的 Agent 实现将工具调用、知识检索、输出验证都耦合在 prompt 和代码中；Harness 模式将这些能力抽象为可配置组件，Agent 本身变成声明式描述而非过程式代码。这一转变使得 Agent 的能力升级可以从\"重写 Agent\"变为\"更新 Harness 配置\"，大幅提升迭代效率。；Multi-Agent 协作模式从\"固定流水线\"演进到\"动态组织\"。2025 年的 Multi-Agent 主要是固定角色（研究员、写作、审核）的顺序 pipeline；2026 年的新模式允许 Agent 根据任务动态决定角色数量、协作拓扑和消息协议。这带来更高的灵活性的同时，也引入了协调复杂性和通信开销的新挑战",
-     "words": 6277,
+     "words": 6189,
      "level": 2
     },
     {
@@ -191,7 +191,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）；📊 Level ⭐⭐⭐ | 31.0KB | entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md。",
-     "words": 14744,
+     "words": 14617,
      "level": 3
     },
     {
@@ -202,7 +202,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Insight 1: Agent Loop 的 5 阶段抽象揭示了当前主流框架的共同范式；不同框架（Hermes、LangGraph、Cursor、Claude Code）命名不同，但本质都是这 5 个阶段：接收输入、拼装 Prompt、调用模型、执行工具、检查退出。这种一致性说明当前的 Agent 设计已经形成了相对稳定的设计模式",
-     "words": 11905,
+     "words": 11856,
      "level": 2
     }
    ],
@@ -250,7 +250,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Browser Use：为 Agent 构建 Runtime Harness；📊 Level ⭐⭐ | 15.8KB | entities/browser-use-runtime-harness.md。",
-     "words": 6717,
+     "words": 6665,
      "level": 2
     },
     {
@@ -261,7 +261,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "📊 Level ⭐⭐ | 16.0KB | entities/codex-goal-agent-runtime.md；/goal 把一个长期目标放进了 Codex 的运行时里：目标有状态，过程有记账，完成要审计，预算到了要收束",
-     "words": 7077,
+     "words": 7037,
      "level": 2
     },
     {
@@ -272,7 +272,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Agent Harness 架构设计与实现：生产级 Agent 系统落地指南；📊 Level ⭐⭐ | 39.3KB | entities/agent-harness-architecture-design-production-guide.md。",
-     "words": 16866,
+     "words": 16814,
      "level": 2
     }
    ],
@@ -320,7 +320,7 @@
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "\"注入位置\"是理解 Rules/MCP/Skills 本质差异的第一性原理；源码分析揭示的底层逻辑远比表面功能描述更清晰：Rules、MCP、Skills 的核心区别不在于\"能做什么\"（功能层面），而在于\"信息在 API 请求中占据什么位置\"（架构层面）。Rules 通过 prependUserContext() 注入 messages（被动，每次 API 调用自动携带）；MCP 同时占据 tools[] 和 system 两个位置（主动调用，Server 级指南在 system 动态区）；Skills 通过 tooluse 触发后在 Inline 模式下注入 messages（主动调用但执行是提示词注入）。这三个位置（messages、tools[]、system）的组合差异，导致了完全不同的工程特性：Rul。",
-     "words": 10325,
+     "words": 10274,
      "level": 2
     },
     {
@@ -331,7 +331,7 @@
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "CLI、MCP 和 Skill 代表了三个不同层次的抽象：；CLI 是执行原语，负责在特定运行环境里完成具体操作。",
-     "words": 4016,
+     "words": 3976,
      "level": 2
     },
     {
@@ -342,7 +342,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "MCP · Skill · Agent · LLM · Harness — 一张图讲清：Agentic AI 系统如何真正落地；📊 Level ⭐⭐ | 11.1KB | entities/agentic-ai-system-architecture-harness-skill-mcp.md。",
-     "words": 4670,
+     "words": 4593,
      "level": 2
     }
    ],
@@ -390,7 +390,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "一、harness boundary 是 memory 系统的根本限制。九大 harness 共同面临的五个短板（bounded local 存储、keyword 式检索、memory 不跨 harness、staleness 处理弱、isolation 不够），本质上都来自\"数据不出 harness\"这个边界约束。这不是任何一家公司工程能力不足的问题，而是单 harness 架构的固有局限。跨 harness 的 memory layer 之所以难，不是因为技术复杂，而是因为行业没有动力去标准化。；二、现有 memory benchmark 偏重 recall 而非 decision quality，是系统性偏差。LoCoMo 只有 10 段对话、很多题不需要 memory；LongMemEval 覆盖 ex。",
-     "words": 7333,
+     "words": 7263,
      "level": 2
     },
     {
@@ -401,7 +401,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 executecode 单工具设计；📊 Level ⭐⭐⭐ | 23.5KB | entities/cpu-cache-analogy-agent-context-management-liwen.md。",
-     "words": 9514,
+     "words": 9444,
      "level": 3
     },
     {
@@ -412,7 +412,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Agent Memory 不是\"把聊天记录存起来\"，而是一个完整的 write–manage–read 闭环，决定什么信息被允许持续影响未来决策。核心问题不是容量，而是治理——谁被允许持续影响未来",
-     "words": 5808,
+     "words": 5777,
      "level": 2
     }
    ],
@@ -460,7 +460,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "架构决策：双向注意力是关键。 生成式 Gemini 模型使用单向注意力，而 embedding 任务需要双向上下文来完整理解输入。Gemini Embedding 2 通过双向 Transformer 结构解决这一问题，配合 Mean Pooling + 线性投影输出 3072 维向量，并通过 Matryoshka Representation Learning 支持 768/1536/3072 维自适应压缩，兼顾精度与效率。；两阶段训练：先拉方向，再精修。 PFT 阶段用大 batch 把模型从「偏生成」往「偏编码」拉；FT 阶段带 hard negative 精修真正的多模态统一空间。NCE 风格对比学习 + batch 内负例的设计使跨模态对齐更紧密。Model Soup 权重平均多任务结果，有效对冲多任。",
-     "words": 3134,
+     "words": 3066,
      "level": 3
     },
     {
@@ -471,7 +471,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）；渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗。",
-     "words": 3546,
+     "words": 3494,
      "level": 2
     },
     {
@@ -482,7 +482,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "文章深入解析 RAG 全链路各环节，批判\"蒸馏同事 Skill\"现象。很多所谓蒸馏，蒸馏出来的是 Workflow 而非判断力/经验。Skill 的本质是教 AI 做事流程，而非赋予 AI 做判断的能力。RAG 各环节调优顺序：分块 - 向量化 - 召回 - 重排。；数据处理是核心：不要把未经整理的资料一股脑上传到知识库。在上传前就做好文档格式处理（优先 Markdown 和结构化文本，扫描件和图片风险很高）、噪音清理（页眉页脚、水印、版权声明、过期条款、内部备注）、版本校验（制度之间是否有冲突）",
-     "words": 4722,
+     "words": 4674,
      "level": 2
     }
    ],
@@ -536,7 +536,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解；📊 Level ⭐⭐ | 21.2KB | entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md。",
-     "words": 10068,
+     "words": 9993,
      "level": 2
     },
     {
@@ -547,7 +547,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐ | 19.8KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
-     "words": 9448,
+     "words": 9357,
      "level": 2
     },
     {
@@ -558,7 +558,7 @@
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval；📊 Level ⭐⭐⭐ | 26.6KB | entities/microsoft-agent-framework-tools-overview-provider-matrix.md。",
-     "words": 14194,
+     "words": 14110,
      "level": 3
     }
    ],
@@ -612,7 +612,7 @@
      "chapter": "ch05",
      "chapterName": "Harness 工程",
      "essence": "Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台（Git Submodule + Agent Handoff + Chrome DevTools MCP）；📊 Level ⭐⭐ | 17.1KB | entities/harness-engineering-practical-17ge-versus-6-subagent.md。",
-     "words": 9086,
+     "words": 8974,
      "level": 2
     },
     {
@@ -623,7 +623,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "OpenClaw（龙虾）的价值不在于\"它能做什么\"，而在于\"你需要它为你做什么\"。 从单一 Agent 上线到搭建六专精智能体加一主管的七人团队，作者实现了从 AI 日报生成、股票分析、图片创作到代码开发的日常任务自动化、零人工干预。；从单体 Agent 到多智能体团队的设计范式转变。本文最核心的洞见在于揭示了\"专精胜于全能\"的多智能体架构哲学。当单一 Agent 尝试承担所有功能时，会同时遭遇上下文污染（注意力分散于异质任务）、技能冲突（最小权限原则被破坏）和人设冲突（截然不同的行为模式难以共存）。这三条挑战分别从认知、权限和个性三个维度证伪了单体 Agent 的可行性，而多智能体团队通过 Workspace 隔离从根本上规避了这些问题",
-     "words": 9756,
+     "words": 9705,
      "level": 2
     },
     {
@@ -634,7 +634,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "双层编排的架构价值：框架层（Deep Agents）和基础设施层（AgentCore）的职责分离是本文的核心设计模式\"多 Agent 协作编排\"。框架层负责 subagent 的生命周期管理、生成和消息路由，基础设施层提供隔离的 MicroVM 执行环境。这种分层使编排逻辑与执行环境可以独立演进——框架可以在不同后端 runtime 间迁移，而不必重写编排策略。；Subagent 并发压缩时间的本质：三个 research subagent 并行执行将端到端耗时从串行的 12-18 分钟压缩至 4-6 分钟（3x 提升）。这一收益的来源不是并发本身，而是 coordinator 只接收结构化摘要而非原始网页内容，从而保持 context window 高效利用Harness Context Window Man。",
-     "words": 6587,
+     "words": 6507,
      "level": 2
     }
    ],
@@ -688,7 +688,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "张雁飞在 Databend Meetup 2026 北京站的演讲，提出\"Trace 即 Evals\"的核心主张 — AI Agent 的稳定性、成本归因和效果评估，必须建立在完整执行轨迹之上。文章用 Claude Code、Evot、Pi 等 Agent 对比案例，梳理了从 Prompt Engineering、Context Engineering 到 Harness Engineering 的演进。；AI Agent 落地的三大难题：稳定性（相同输入不同输出）、成本归因（无法追踪 Token 去向）、效果评估（缺乏可复现的基准）。",
-     "words": 3741,
+     "words": 3685,
      "level": 2
     },
     {
@@ -699,7 +699,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "成本降低 100 倍：单模型完整 Agent 评测需数千美元和数天时间，PACE 仅需不到 1% 的成本即可获得高度相关的预测分数；自动选题：从 19 个非 Agent 基准（覆盖 11 类能力）中自动选出最具预测力的 100 道题，无需人工设计。",
-     "words": 3031,
+     "words": 2967,
      "level": 2
     },
     {
@@ -710,7 +710,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件；📊 Level ⭐⭐ | 3.9KB | entities/agent-self-evolution-evaluator-bottleneck.md。",
-     "words": 1907,
+     "words": 1853,
      "level": 2
     }
    ],
@@ -764,7 +764,7 @@
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化；📊 Level ⭐⭐ | 29.3KB | entities/mimo-code-xiaomi-coding-harness-2026.md。",
-     "words": 16353,
+     "words": 16279,
      "level": 2
     },
     {
@@ -775,7 +775,7 @@
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "Codex 5.21 把 Appshots（Mac 窗口截图直传）、/goal 目标模式、浏览器标注增强、锁屏后继续工作四块拼图连成完整链路。AI 编程助手的角色从\"代码生成器\"切换到\"电脑工作代理\"——人从\"逐步指挥\"变成\"设目标和把关\"，AI 负责执行、试错、长任务推进。；Appshots 把\"看见现场\"成本降到几乎为零：Mac 当前窗口截图 + 可读取文本一键发给 Codex，省去\"截图-复制-文字解释\"三步。",
-     "words": 3647,
+     "words": 3602,
      "level": 2
     },
     {
@@ -786,7 +786,7 @@
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客；📊 Level ⭐⭐ | 6.0KB | entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md。",
-     "words": 2788,
+     "words": 2705,
      "level": 2
     }
    ],
@@ -840,7 +840,7 @@
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作；📊 Level ⭐⭐ | 13.0KB | entities/tidb-cloud-agent-database.md。",
-     "words": 4973,
+     "words": 4916,
      "level": 2
     },
     {
@@ -851,7 +851,7 @@
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "NL2SQL 的三大生产环境挑战是这篇实践的核心洞察：；概率性输出：即使 temperature=0，LLM 的输出也是\"大概率相同\"而非\"确定相同\"。在需要审计的财务报表场景，这不可接受",
-     "words": 2566,
+     "words": 2477,
      "level": 2
     },
     {
@@ -862,7 +862,7 @@
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "为什么 Chroma 的 100 万向量阈值如此关键：Chroma 的 Python HTTP 客户端封包瓶颈和合并层（bitmap merge layer）设计在数据量超过 100 万时开始暴露结构性缺陷。20ms → 200ms 的延迟不稳定性不是配置问题，而是架构上限。这意味着 Chroma 本质上是一套\"嵌入式原型数据库\"，而非生产级向量存储。 ^[\"从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)\"]；Qdrant 的 Segment 设计哲学值得深入理解：Segment 分段（可追加 vs 不可追加）+ WAL（预写日志）+ 后台合段，这三者的组合解决了向量数据库中最难的问题——在线索引重建时不阻塞查询。这是 Chroma 完全。",
-     "words": 3518,
+     "words": 3480,
      "level": 2
     }
    ],
@@ -916,7 +916,7 @@
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "Pathfinding Labs 的核心创新在于将 Terraform 模块封装为可一键部署的攻击实验环境，这种\"验证驱动生成\"的模式解决了云安全知识共享中长期存在的一个根本矛盾：文档描述的攻击路径与实际可利用环境之间存在巨大鸿沟。在 pathfinding.cloud 诞生初期，团队为每一条 IAM 权限提升路径编写 Terraform 模块来验证其可行性，这一被动验证步骤最终演变为拥有 100+ 独立实验的完整平台，说明真正可复现的安全知识必须经过工程化验证才能交付信任。；项目名称直接引用 John Lambert 的经典格言，揭示了云安全攻防不对等的技术根源：防御者以资产和身份列表组织视图，而真实攻击者构建的是一张权限关系图。当一个攻击者从初始 foothold 经过多跳角色链到达目标数据时，他所穿越的每。",
-     "words": 5833,
+     "words": 5738,
      "level": 2
     },
     {
@@ -927,7 +927,7 @@
      "chapter": "ch12",
      "chapterName": "安全与治理",
      "essence": "建立分层防御体系：金融科技企业在引入 AI 安全测试工具时，应建立\"自动化覆盖广度 + 人类专家攻深度\"的分层防御体系：AI 负责日常扫描和版本发布前的全面检测，人类专家则专注更深层的攻击链挖掘和安全众测场景，两者形成互补而非替代关系 。；重视应用上下文准备：在接入 AI 安全工具前，应提前准备完整的应用上下文材料（API 文档、关键业务流程说明、用户/商户角色矩阵），并建立上下文材料的持续更新机制。上传完整上下文是提升越权漏洞和业务逻辑漏洞检测精准度性价比最高的优化项",
-     "words": 15104,
+     "words": 15050,
      "level": 2
     },
     {
@@ -938,7 +938,7 @@
      "chapter": "ch12",
      "chapterName": "安全与治理",
      "essence": "地缘政治驱动：CISA 发布 CI Fortify 指南的核心背景是担忧中国可能在美国介入台海冲突时，对西方关键基础设施发动网络 sabotage；Volt Typhoon 预警：中国的 Volt Typhoon 黑客行动已被确认在西方关键基础设施中部署了持久化访问，为潜在 disruption 做准备。",
-     "words": 4378,
+     "words": 4269,
      "level": 1
     }
    ],
@@ -998,7 +998,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "Yann Dubois（OpenAI Post-Training Frontiers 联合负责人）与纽约 VC Matt Turck（FirstMark Capital）的深度访谈，涵盖 GPT-5.5 发布内幕后训练团队的运作机制、强化学习从\"竞赛玩具\"转向\"现实生产力\"的关键转折、预训练是否撞墙的争论、以及 OpenAI 对持续学习、Harness 工程化、模型评估等核心议题的判断。对构建 Agent 系统、后训练流水线、RL 训练循环的从业者有直接参考价值。；可靠性跨过临界点：Yann 认为 AI 的进步其实一直是连续的，但人们的感受像台阶函数，因为 Agent 模型的每步出错概率降到足够低后，使用体验发生质变",
-     "words": 4164,
+     "words": 4105,
      "level": 2
     },
     {
@@ -1009,7 +1009,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "📊 Level ⭐⭐⭐ | 33.5KB | entities/llm-rl中的熵-part-2-熵对训练的调控.md；LLM 的 RL 训练面临一个根本张力：足够的熵让模型保持探索能力（避免过早收敛到次优策略），但太高的熵又会让模型难以学到有意义的模式",
-     "words": 12677,
+     "words": 12638,
      "level": 3
     },
     {
@@ -1020,7 +1020,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "POPO (Group Prioritized Off-Policy Optimization)：清华 RLVR 训练高效组级回放框架；📊 Level ⭐⭐⭐ | 3.9KB | entities/tsinghua-popo-group-prioritized-off-policy-optimization-rlvr.md。",
-     "words": 2256,
+     "words": 2175,
      "level": 3
     }
    ],
@@ -1074,7 +1074,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent 提供实时网页搜索能力。底层是 Amazon 自建的数百亿文档索引，持续分钟级刷新，查询流量不离开 AWS。定价 $7/1,000 次查询。；→ 原文存档 (GA 公告) | → 原文存档 (中国区实战教程)。",
-     "words": 5748,
+     "words": 5685,
      "level": 2
     },
     {
@@ -1085,7 +1085,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
-     "words": 3962,
+     "words": 3915,
      "level": 2
     },
     {
@@ -1096,7 +1096,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "See source article for full content.；工具调用模式从硬编码流程转向模型驱动决策 — Strands Agents 的核心理念是让 LLM 决定何时调用哪些工具，而非预设执行顺序。agent loop 通过积累对话历史（每一步 tool call 及其结果）形成上下文，使得多步骤研究任务可以在单一调用内完成多轮 search→extract→synthesize。这种模式与传统 if-this-then-that 的工作流引擎有本质区别，模型成为 runtime 的调度者而非脚本的奴隶",
-     "words": 3465,
+     "words": 3396,
      "level": 2
     }
    ],
@@ -1192,7 +1192,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）；渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗。",
-     "words": 3546,
+     "words": 3494,
      "level": 2
     },
     {
@@ -1203,7 +1203,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "三层技能设计重构经验复用粒度。 SkillX 将 Agent 经验垂直分解为 Planning Skills（任务规划层）、Functional Skills（子任务工具调用层）和 Atomic Skills（底层工具使用模式层），同时每层内部支持水平分解（如分解为多个 Functional Skills 并行执行）。这种多维分解使跨任务的经验复用成为可能——一个任务的 Planning Skill 可以迁移到另一个任务，而无需重新学习底层工具使用模式。；迭代精炼机制解决技能质量维护问题。 传统经验学习方法（如 A-Mem、AWM、ExpeL）将经验以原始形式存储，容易积累噪声和质量参差。SkillX 的 Iterative Skills Refinement 通过 merge、filter 和 update。",
-     "words": 2853,
+     "words": 2772,
      "level": 2
     },
     {
@@ -1214,7 +1214,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "双层编排的架构价值：框架层（Deep Agents）和基础设施层（AgentCore）的职责分离是本文的核心设计模式\"多 Agent 协作编排\"。框架层负责 subagent 的生命周期管理、生成和消息路由，基础设施层提供隔离的 MicroVM 执行环境。这种分层使编排逻辑与执行环境可以独立演进——框架可以在不同后端 runtime 间迁移，而不必重写编排策略。；Subagent 并发压缩时间的本质：三个 research subagent 并行执行将端到端耗时从串行的 12-18 分钟压缩至 4-6 分钟（3x 提升）。这一收益的来源不是并发本身，而是 coordinator 只接收结构化摘要而非原始网页内容，从而保持 context window 高效利用Harness Context Window Man。",
-     "words": 6587,
+     "words": 6507,
      "level": 2
     }
    ],

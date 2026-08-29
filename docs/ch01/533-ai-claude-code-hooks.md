@@ -1,5 +1,7 @@
 # 打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南
 
+## Ch01.533 打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南
+
 > 📊 Level ⭐⭐ | 6.2KB | `entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md`
 
 ## 深度分析

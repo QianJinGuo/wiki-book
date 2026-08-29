@@ -1,5 +1,7 @@
 # What marketing can learn from IT about running complex technology
 
+## Ch03.076 What marketing can learn from IT about running complex technology
+
 > 📊 Level ⭐⭐ | 7.0KB | `entities/what-marketing-can-learn-from-it-about-running-complex-technology.md`
 
 ## 核心要点
@@ -11,7 +13,7 @@
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
 - [B2B Email Marketing What Still Works](../ch01/126-b2b-email-marketing-what-still-works.html)
 - [What Do Your Startup Advisors Say About You Charlie Odonnell   Coach Author Vc](https://github.com/QianJinGuo/wiki/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
-- [From Kubernetes Dev Setup To Production What Actually Change](../ch11/073-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
+- [From Kubernetes Dev Setup To Production What Actually Change](../ch11/072-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-marketing-can-learn-from-it-about-running-complex-technology.md)
 

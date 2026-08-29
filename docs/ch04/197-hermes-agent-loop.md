@@ -1,5 +1,7 @@
 # Hermes Agent Loop 架构
 
+## Ch04.197 Hermes Agent Loop 架构
+
 > 📊 Level ⭐⭐ | 10.5KB | `entities/hermes-agent-loop-architecture.md`
 
 ## 5 阶段主循环

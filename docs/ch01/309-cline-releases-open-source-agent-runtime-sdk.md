@@ -1,5 +1,7 @@
 # Cline releases open-source agent runtime SDK
 
+## Ch01.309 Cline releases open-source agent runtime SDK
+
 > 📊 Level ⭐⭐ | 10.7KB | `entities/cline-agent-runtime-sdk.md`
 
 # Cline releases open-source agent runtime SDK
@@ -105,7 +107,7 @@ Cline 的核心差异化在于：(1) 把 agent loop 做成 portable kernel；(2)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html) — Agent 记忆系统的工程实践，与"持久化在文件系统"理念呼应
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html) — 从 vibe coding 到 agentic engineering 的范式跃迁
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html) — Vibe Coding 与 Agentic Engineering 的同源访谈
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — AWS Bedrock AgentOps 的规模化运营实践
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — AWS Bedrock AgentOps 的规模化运营实践
 - [Claude Code Harness Deep Understanding](336-claude-code-harness-deep-understanding.html) — Claude Code harness 的另一深度解析
 - [Claude Code Harness Deep Dive Founder Park](../ch05/058-claude-code-harness.html) — 同主题的另一种解读视角
 - [scaling archunit with nebula archrules](../ch11/213-scaling-archunit-with-nebula-archrules.html)

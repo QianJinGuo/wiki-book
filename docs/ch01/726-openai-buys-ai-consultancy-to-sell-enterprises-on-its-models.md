@@ -1,5 +1,7 @@
 # OpenAI buys AI consultancy to sell enterprises on its models
 
+## Ch01.726 OpenAI buys AI consultancy to sell enterprises on its models
+
 > 📊 Level ⭐⭐ | 2.1KB | `entities/5238213.md`
 
 # OpenAI buys AI consultancy to sell enterprises on its models
@@ -36,7 +38,7 @@ Search
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 
 ---
 

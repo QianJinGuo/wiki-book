@@ -1,5 +1,7 @@
 # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
 
+## Ch01.626 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
+
 > 📊 Level ⭐⭐ | 3.8KB | `entities/tencent-hunyuan-hy3-preview-open-source.md`
 
 # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
@@ -37,7 +39,7 @@
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 
 ---

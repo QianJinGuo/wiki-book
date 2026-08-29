@@ -1,5 +1,7 @@
 # 深度拆解：AI 智能体 Harness 的构造【译】
 
+## Ch04.398 深度拆解：AI 智能体 Harness 的构造【译】
+
 > 📊 Level ⭐⭐ | 4.2KB | `entities/ai-agent-harness-construction-akshay-baoyu.md`
 
 # 深度拆解：AI 智能体 Harness 的构造【译】
@@ -10,14 +12,14 @@
 - [canvas hackers shinyhunters say their official domain was su](135-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](../ch12/010-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
 - [democratizing machine learning at netflix: building the mode](../ch11/207-democratizing-machine-learning-at-netflix-building-the-mode.html)
-- [from silos to service topology: why netflix built a real-tim](../ch11/006-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
+- [from silos to service topology: why netflix built a real-tim](../ch11/116-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
 - [llmreaper - dom based ai conversation exfiltration via brows](../ch12/014-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [building is just the beginning: introducing discoverability](../ch01/677-building-is-just-the-beginning-introducing-discoverability.html)
 - [nemotron 3.5 content safety: customizable multimodal safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)
 - [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](https://github.com/QianJinGuo/wiki/blob/main/entities/neurips-2026-pangram-desk-reject-controversy.md)
 - [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)
 - [scaling camera file processing at netflix](../ch11/011-scaling-camera-file-processing-at-netflix.html)
-- [state of routing in model serving](../ch11/151-state-of-routing-in-model-serving.html)
+- [state of routing in model serving](../ch11/152-state-of-routing-in-model-serving.html)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01/657-steering.html)
 - [the recent history of ai in 32 otters](../ch01/433-the-recent-history-of-ai-in-32-otters.html)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](135-ai.html)
